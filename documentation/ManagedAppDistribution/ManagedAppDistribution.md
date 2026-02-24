@@ -11,7 +11,7 @@ Manage the distribution of apps within an organization.
 
 #### Overview
 
- are featured, downloadable apps that an enterprise, educational, or other institution provides to its employees or students. The Managed App Distribution framework allows developers of device management solutions to vend these managed apps. The framework verifies that someone initiated an app installation, provides status and download progress, and can launch the app once it’s downloaded.
+*Managed apps* are featured, downloadable apps that an enterprise, educational, or other institution provides to its employees or students. The Managed App Distribution framework allows developers of device management solutions to vend these managed apps. The framework verifies that someone initiated an app installation, provides status and download progress, and can launch the app once it’s downloaded.
 
 > ❗ **Important**: The [`Managed App Installation UI`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.managed-app-distribution.install-ui) entitlement is required to use this framework.
 

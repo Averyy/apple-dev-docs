@@ -29,7 +29,7 @@ This method returns [`true`](https://developer.apple.com/documentation/Swift/tru
 
 ## Parameters
 
-- `itemTime`: The item time to query. The time value is relative to the   object with which the receiver is associated.
+- `itemTime`: The item time to query. The time value is relative to the [`AVPlayerItem`](avplayeritem.md) object with which the receiver is associated.
 
 ## See Also
 

@@ -19,8 +19,8 @@ struct ImagePresentationComponent
 `ImagePresentationComponent` supports the presentation of three different kinds of images in RealityKit:
 
 - A traditional 2D image.
-- A , which is a stereoscopic photo with additional spatial metadata, as captured on iPhone 15 Pro or later and Apple Vision Pro.
-- A , which is a 3D image generated from an existing 2D image or photo.
+- A *spatial photo*, which is a stereoscopic photo with additional spatial metadata, as captured on iPhone 15 Pro or later and Apple Vision Pro.
+- A *spatial scene*, which is a 3D image generated from an existing 2D image or photo.
 
 To present a 2D image or a spatial photo, create a new `ImagePresentationComponent` from a local file URL for the existing image, or from an existing `CGImageSource`.
 

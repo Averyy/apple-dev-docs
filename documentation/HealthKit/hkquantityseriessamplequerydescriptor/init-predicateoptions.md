@@ -21,8 +21,8 @@ init(predicate: HKSamplePredicate<HKQuantitySample>, options: HKQuantitySeriesSa
 
 ## Parameters
 
-- `predicate`: A predicate that defines the set of series samples that the query returns. For a list of convenience methods for building predicates, see  .
-- `options`: A set of options for the query. For a list of possible values, see  .
+- `predicate`: A predicate that defines the set of series samples that the query returns. For a list of convenience methods for building predicates, see [`HKQuery`](hkquery.md).
+- `options`: A set of options for the query. For a list of possible values, see [`HKQuantitySeriesSampleQueryDescriptor.Options`](hkquantityseriessamplequerydescriptor/options-swift.struct.md).
 
 ## See Also
 

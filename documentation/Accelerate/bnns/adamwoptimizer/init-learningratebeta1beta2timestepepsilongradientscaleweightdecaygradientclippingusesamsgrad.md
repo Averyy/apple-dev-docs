@@ -23,9 +23,9 @@ init(learningRate: Float = 0.001, beta1: Float = 0.9, beta2: Float = 0.999, time
 ## Parameters
 
 - `learningRate`: A value that specifies the learning rate.
-- `beta1`: A value that specifies the first-moment constant, in the range   to  .
-- `beta2`: A value that specifies the second-moment constant, in the range   to  .
-- `timeStep`: A value that’s at least   and represents the optimizer’s current time.
+- `beta1`: A value that specifies the first-moment constant, in the range `0` to `1`.
+- `beta2`: A value that specifies the second-moment constant, in the range `0` to `1`.
+- `timeStep`: A value that’s at least `1` and represents the optimizer’s current time.
 - `epsilon`: The epsilon value you use to improve numerical stability.
 - `gradientScale`: A value that specifies the gradient scaling factor.
 - `weightDecay`: The weight decay coefficient.

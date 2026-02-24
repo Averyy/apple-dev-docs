@@ -24,8 +24,8 @@ Use this method to make changes to the currently visible items at runtime. Calli
 
 ## Parameters
 
-- `items`: The array of   objects to display.
-- `animated`: A Boolean indicating whether changes should be animated. Specify   to animate changes or   to display the new items without animations. When animations are enabled, the tab bar fades out removed items and fades in new items, adjusting the spacing between items as needed.
+- `items`: The array of [`UITabBarItem`](uitabbaritem.md) objects to display.
+- `animated`: A Boolean indicating whether changes should be animated. Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate changes or [`false`](https://developer.apple.com/documentation/Swift/false) to display the new items without animations. When animations are enabled, the tab bar fades out removed items and fades in new items, adjusting the spacing between items as needed.
 
 ## See Also
 

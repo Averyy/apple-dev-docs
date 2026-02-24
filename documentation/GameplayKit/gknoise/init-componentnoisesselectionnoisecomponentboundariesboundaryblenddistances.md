@@ -38,9 +38,9 @@ In this example, if the first value in the `blendDistances` array is `0.1`, the 
 ## Parameters
 
 - `noises`: The array of noise objects to combine.
-- `selectionNoise`: A noise object whose values determine which object from the   array contributes to which region of the generated output.
-- `componentBoundaries`: The count of this array must be one less than the count of the   array.
-- `blendDistances`: The count of this array must be one less than the count of the   array (matching the count of the   array).
+- `selectionNoise`: A noise object whose values determine which object from the `noises` array contributes to which region of the generated output.
+- `componentBoundaries`: An array of numbers specifying which values in the `selectionNoise` field correspond to which noise object in the `noises` array. The count of this array must be one less than the count of the `noises` array.
+- `blendDistances`: An array of numbers specifying the breadth of a smooth transition for each boundary specified in the `componentBoundaries` array. The count of this array must be one less than the count of the `noises` array (matching the count of the `componentBoundaries` array).
 
 ## See Also
 

@@ -31,7 +31,7 @@ The default implementation of this method will reject non-alphabet characters, i
 ## Parameters
 
 - `base64Data`: A Base64, UTF-8 encoded data object.
-- `options`: A mask that specifies options for Base64 decoding the data. Possible values are given in  .
+- `options`: A mask that specifies options for Base64 decoding the data. Possible values are given in [`NSData.Base64DecodingOptions`](nsdata/base64decodingoptions.md).
 
 ## See Also
 

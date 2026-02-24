@@ -12,7 +12,7 @@ The macOS 10.14.4 SDK provides support for developing apps for Macs running macO
 
 ###### Known Issues
 
-- VoiceOver may no longer be able to access web content when moving backward or forward through the current Safari tab’s history. (48831713)  In Safari, select Preferences > Advanced > “Show Develop menu in menu bar”, then deselect Develop > Experimental Features > “Swap Processes on Cross-Site Navigation”.
+- VoiceOver may no longer be able to access web content when moving backward or forward through the current Safari tab’s history. (48831713) **Workaround:** In Safari, select Preferences > Advanced > “Show Develop menu in menu bar”, then deselect Develop > Experimental Features > “Swap Processes on Cross-Site Navigation”.
 
 ##### App Store
 
@@ -32,7 +32,7 @@ StoreKit introduces a new array of [`SKProductDiscount`](https://developer.apple
 
 ###### Known Issues
 
-- After updating to Safari 12.1 from Safari 10.1.2, web pages might not display. (47335741)  Run the following command in Terminal: `defaults delete com.apple.Safari` > ⚠️ **Warning**: You will lose your previous Safari settings after running the command above.
+- After updating to Safari 12.1 from Safari 10.1.2, web pages might not display. (47335741) **Workaround:** Run the following command in Terminal: `defaults delete com.apple.Safari` > ⚠️ **Warning**: You will lose your previous Safari settings after running the command above.
 
 ## See Also
 

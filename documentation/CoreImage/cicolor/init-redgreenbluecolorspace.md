@@ -32,7 +32,7 @@ This will return null if the `CGColorSpace` is not `kCGColorSpaceModelRGB`. The 
 - `red`: The color’s unpremultiplied red component value.
 - `green`: The color’s unpremultiplied green component value.
 - `blue`: The color’s unpremultiplied blue component value.
-- `colorSpace`: The color’s   which must have  .
+- `colorSpace`: The color’s `CGColorSpace` which must have `kCGColorSpaceModelRGB`.
 
 ## See Also
 

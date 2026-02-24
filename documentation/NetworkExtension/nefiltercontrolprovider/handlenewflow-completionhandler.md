@@ -27,7 +27,7 @@ NEFilterControlProvider subclasses must override this method.
 
 ## Parameters
 
-- `flow`: A   object containing details about the flow of network content.
+- `flow`: A `NEFilterFlow` object containing details about the flow of network content.
 - `completionHandler`: A block to be executed when the rules have been updated.
 
 ## See Also

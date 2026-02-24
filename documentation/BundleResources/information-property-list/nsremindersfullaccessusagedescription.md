@@ -13,6 +13,10 @@ A message that tells people why the app is requesting access to read and write t
 - visionOS 1.0+
 - watchOS 10.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the person’s reminder data.

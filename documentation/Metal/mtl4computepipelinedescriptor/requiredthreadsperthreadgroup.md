@@ -23,7 +23,7 @@ var requiredThreadsPerThreadgroup: MTLSize { get set }
 
 When you set this value, you are responsible for ensuring that the `threadsPerThreadgroup` argument of any compute dispatch matches it.
 
-Setting this property is optional, except in cases where the pipeline uses .
+Setting this property is optional, except in cases where the pipeline uses *CooperativeTensors*.
 
 This property’s default value is `0`, which disables its effect.
 

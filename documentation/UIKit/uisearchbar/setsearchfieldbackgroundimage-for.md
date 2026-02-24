@@ -20,8 +20,8 @@ func setSearchFieldBackgroundImage(_ backgroundImage: UIImage?, for state: UICon
 
 ## Parameters
 
-- `backgroundImage`: The search text field image to use for  .
-- `state`: Valid states are   and  .
+- `backgroundImage`: The search text field image to use for `state`.
+- `state`: A control state. Valid states are [`normal`](uicontrol/state-swift.struct/normal.md) and [`disabled`](uicontrol/state-swift.struct/disabled.md).
 
 ## See Also
 

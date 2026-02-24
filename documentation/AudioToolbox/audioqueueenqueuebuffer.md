@@ -25,14 +25,18 @@ A result code. See Result Codes.
 
 #### Discussion
 
-Audio queue callbacks use this function to reenqueue buffers—placing them “last in line” in a buffer queue. A playback (or ) callback reenqueues a buffer after the buffer is filled with fresh audio data (typically from a file). A recording (or ) callback reenqueues a buffer after the buffer’s contents were written (typically to a file).
+Audio queue callbacks use this function to reenqueue buffers—placing them “last in line” in a buffer queue. A playback (or *output*) callback reenqueues a buffer after the buffer is filled with fresh audio data (typically from a file). A recording (or *input*) callback reenqueues a buffer after the buffer’s contents were written (typically to a file).
 
 ## Parameters
 
 - `inAQ`: The audio queue that owns the audio queue buffer.
 - `inBuffer`: The audio queue buffer to add to the buffer queue.
-- `inNumPacketDescs`: The number of packets of audio data in the   parameter. Use a value of   for any of the following situations:
-- `inPacketDescs`: An array of packet descriptions. Use a value of   for any of the following situations:
+- `inNumPacketDescs`: The number of packets of audio data in the `inBuffer` parameter. Use a value of `0` for any of the following situations: - When playing a constant bit rate (CBR) format.
+- When the audio queue is a recording (input) audio queue.
+- When the buffer you are reenqueuing was allocated with the [`AudioQueueAllocateBufferWithPacketDescriptions(_:_:_:_:)`](audioqueueallocatebufferwithpacketdescriptions(_:_:_:_:).md) function. In this case, your callback should describe the buffer’s packets in the buffer’s `mPacketDescriptions` and `mPacketDescriptionCount` fields.
+- `inPacketDescs`: An array of packet descriptions. Use a value of `NULL` for any of the following situations: - When playing a constant bit rate (CBR) format.
+- When the audio queue is an input (recording) audio queue.
+- When the buffer you are reenqueuing was allocated with the [`AudioQueueAllocateBufferWithPacketDescriptions(_:_:_:_:)`](audioqueueallocatebufferwithpacketdescriptions(_:_:_:_:).md) function. In this case, your callback should describe the buffer’s packets in the buffer’s `mPacketDescriptions` and `mPacketDescriptionCount` fields.
 
 ## See Also
 

@@ -20,7 +20,7 @@ Returns the layout attribute.
 
 ## Parameters
 
-- `orientation`: The attribute for orientation.  specifies the possible values.
+- `orientation`: The attribute for orientation. [`NSLayoutConstraint.Orientation`](nslayoutconstraint/orientation.md)specifies the possible values.
 
 ## See Also
 

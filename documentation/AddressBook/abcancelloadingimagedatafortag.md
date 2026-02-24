@@ -20,7 +20,7 @@ Use the [`ABBeginLoadingImageDataForClient(_:_:_:)`](abbeginloadingimagedataforc
 
 ## Parameters
 
-- `tag`: Used to track an asynchronous fetch. This parameter should have been returned from a previous call to the   function.
+- `tag`: Used to track an asynchronous fetch. This parameter should have been returned from a previous call to the [`ABBeginLoadingImageDataForClient(_:_:_:)`](abbeginloadingimagedataforclient(_:_:_:).md) function.
 
 ## See Also
 

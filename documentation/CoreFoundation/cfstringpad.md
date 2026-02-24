@@ -41,9 +41,9 @@ results in `aMutStr` containing “abc”.
 ## Parameters
 
 - `theString`: The string to modify.
-- `padString`: A string containing the characters with which to fill the extended character buffer. Pass   to truncate the string.
-- `length`: The new length of  . If this length is greater than the current length, padding takes place; if it is less, truncation takes place.
-- `indexIntoPad`: The index of the character in   with which to begin padding. If you are truncating the string represented by the object, this parameter is ignored.
+- `padString`: A string containing the characters with which to fill the extended character buffer. Pass `NULL` to truncate the string.
+- `length`: The new length of `theString`. If this length is greater than the current length, padding takes place; if it is less, truncation takes place.
+- `indexIntoPad`: The index of the character in `padString` with which to begin padding. If you are truncating the string represented by the object, this parameter is ignored.
 
 ## See Also
 

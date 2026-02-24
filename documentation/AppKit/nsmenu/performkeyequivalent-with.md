@@ -20,7 +20,7 @@ Returns [`true`](https://developer.apple.com/documentation/Swift/true) if `event
 
 ## Parameters
 
-- `event`: An   object that represents a key-equivalent event.
+- `event`: An [`NSEvent`](nsevent.md) object that represents a key-equivalent event.
 
 ## See Also
 

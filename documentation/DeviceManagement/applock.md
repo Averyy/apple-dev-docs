@@ -81,6 +81,10 @@ Only use an app lock payload after installing the target app.
 - [object AppLock.App](applock/app-data.dictionary.md)
   The only app available for use on the iOS device.
 
+## Properties
+
+- `App` (AppLock.App) *(required)*: A dictionary that contains information about the app.
+
 ## See Also
 
 - [object AssociatedDomains](associateddomains.md)

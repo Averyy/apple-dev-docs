@@ -33,7 +33,7 @@ This is the designated initializer for the [`NSValue`](nsvalue.md) class.
 ## Parameters
 
 - `value`: A pointer to data to be stored in the new value object.
-- `type`: The Objective-C type of  , as provided by the   compiler directive. Do not hard-code this parameter as a C string.
+- `type`: The Objective-C type of `value`, as provided by the `@encode()` compiler directive. Do not hard-code this parameter as a C string.
 
 ## See Also
 

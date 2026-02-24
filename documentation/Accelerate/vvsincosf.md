@@ -24,7 +24,36 @@ func vvsincosf(_: UnsafeMutablePointer<Float>, _: UnsafeMutablePointer<Float>, _
 
 ##### Parameters
 
+- **parameter 1**: The sines output array, *z*.
+- **parameter 2**: The cosines output array, *y*.
+- **parameter 3**: The input array, *x*.
+- **parameter 4**: The number of elements in the arrays.
+
 The following code shows an example of using [`vvsincosf(_:_:_:_:)`](vvsincosf(_:_:_:_:).md).
+
+**Swift**:
+
+```swift
+let pi = Float.pi
+var x: [Float] = [-pi * 0.5, 0, pi * 0.5]
+var y = [Float](repeating: 0, count: x.count)
+var z = [Float](repeating: 0, count: x.count)
+var n = Int32(x.count)
+ 
+vvsincosf(&z, &y, &x, &n)
+```
+
+**Objective-C**:
+
+```objc
+float x[] = {-M_PI_2, 0, M_PI_2};
+float y[3];
+float z[3];
+int n = 3;
+ 
+vvsincosf(z, y, x, &n);
+
+```
 
 ## See Also
 

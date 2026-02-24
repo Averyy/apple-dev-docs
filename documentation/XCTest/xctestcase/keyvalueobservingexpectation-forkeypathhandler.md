@@ -34,7 +34,7 @@ You can use [`XCTAssert`](xctassert.md) and related APIs in the block to report 
 
 - `objectToObserve`: The object to observe.
 - `keyPath`: The key path to observe.
-- `handler`: An optional   block. If you don’t provide a handler block, the first change to the key path of the observed object fulfills the expectation.
+- `handler`: An optional [`XCTKVOExpectation.Handler`](xctkvoexpectation/handler-swift.typealias.md) block. If you don’t provide a handler block, the first change to the key path of the observed object fulfills the expectation.
 
 ## See Also
 

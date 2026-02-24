@@ -25,7 +25,7 @@ A Boolean value that indicates whether the JavaScript context is inspectable.
 
 ## Parameters
 
-- `ctx`: The   to check whether it’s inspectable.
+- `ctx`: The [`JSGlobalContextRef`](jsglobalcontextref.md) to check whether it’s inspectable.
 
 ## Topics
 

@@ -35,7 +35,7 @@ This action is reversible; it tells the child to execute the reverse of the acti
 ## Parameters
 
 - `action`: The action to execute.
-- `name`: The name of a child object. See the   property on the   object.
+- `name`: The name of a child object. See the [`name`](sknode/name.md) property on the [`SKNode`](sknode.md) object.
 
 
 ---

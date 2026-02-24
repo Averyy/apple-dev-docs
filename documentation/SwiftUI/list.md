@@ -73,7 +73,7 @@ var body: some View {
 
 ##### Supporting Selection in Lists
 
-To make members of a list selectable, provide a binding to a selection variable. Binding to a single instance of the list data’s `Identifiable.ID` type creates a single-selection list. Binding to a [`Set`](https://developer.apple.com/documentation/Swift/Set) creates a list that supports multiple selections. The following example shows how to add multiselect to the previous example:
+To make members of a list selectable, provide a binding to a selection variable. Binding to a single instance of the list data’s `Identifiable.ID` type creates a single-selection list. Binding to a [`Set`](https://developer.apple.com/documentation/Swift/Set) with a type that matches the list data’s `Identifiable.ID` type creates a list that supports multiple selections. The following example shows how to add multiselect to the previous example:
 
 ```swift
 struct Ocean: Identifiable, Hashable {

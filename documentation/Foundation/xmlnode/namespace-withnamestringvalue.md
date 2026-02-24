@@ -29,7 +29,7 @@ Applications linked on macOS 10.6 or later will throw an exception if the `name`
 
 ## Parameters
 
-- `name`: A string that is the name of the namespace. Specify an empty string for   to get the default namespace.
+- `name`: A string that is the name of the namespace. Specify an empty string for `name` to get the default namespace.
 - `stringValue`: A string that identifies the URI associated with the namespace.
 
 ## See Also

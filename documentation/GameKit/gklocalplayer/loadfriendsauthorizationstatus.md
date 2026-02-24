@@ -26,7 +26,8 @@ func loadFriendsAuthorizationStatus() async throws -> GKFriendsAuthorizationStat
 
 ## Parameters
 
-- `completionHandler`: An error occurs if you don’t add the   key to the information property list file.
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameters: - **`authorizationStatus`**: A status that indicates if the player authorized or denied your game access to their friends list.
+- **`error`**: Describes an error if it occurs, or `nil` if the operation completes. An error occurs if you don’t add the [`NSGKFriendListUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSGKFriendListUsageDescription) key to the information property list file.
 
 ## See Also
 

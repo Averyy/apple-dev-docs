@@ -25,8 +25,8 @@ init(operation: UnsafePointer<CChar>, alpha: Float, beta: Float, iA_desc: BNNSND
 - `operation`: The string that describes the operation.
 - `alpha`: Scaling that the operation applies to the result.
 - `beta`: A value, that must be either 0.0 or 1.0, you use to scale the existing output before the operation adds it to the result.
-- `iA_desc`: The descriptor of input matrix  .
-- `iB_desc`: The descriptor of input matrix  .
+- `iA_desc`: The descriptor of input matrix *A*.
+- `iB_desc`: The descriptor of input matrix *B*.
 - `o_desc`: The descriptor of the output.
 
 

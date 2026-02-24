@@ -30,7 +30,7 @@ Use [`whitespaces`](nscharacterset/whitespaces.md) or [`whitespacesAndNewlines`]
 
 ## Parameters
 
-- `set`: A character set containing the characters to remove from the receiver.   must not be  .
+- `set`: A character set containing the characters to remove from the receiver. `set` must not be `nil`.
 
 ## See Also
 

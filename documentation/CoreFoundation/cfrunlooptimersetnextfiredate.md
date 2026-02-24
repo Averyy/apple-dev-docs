@@ -27,7 +27,7 @@ Resetting a timer’s next firing time is a relatively expensive operation and s
 ## Parameters
 
 - `timer`: The run loop timer to modify.
-- `fireDate`: The new firing time for  .
+- `fireDate`: The new firing time for `timer`.
 
 ## See Also
 

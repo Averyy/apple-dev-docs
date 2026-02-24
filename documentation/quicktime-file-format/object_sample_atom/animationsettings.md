@@ -22,6 +22,17 @@ enum QTVRAnimationSettings {
 };
 ```
 
+**Constant Descriptions**
+
+- **`kQTVRObjectAnimateViewFramesOn`**: The animation setting to play all frames in the current view state.
+- **`kQTVRObjectPalindromeViewFramesOn`**: The animation setting to play a back-and-forth animation of the frames of the current view state.
+- **`kQTVRObjectStartFirstViewFrameOn`**: The animation setting to play the frame animation starting with the first frame in the view (that is, at the view start time).
+- **`kQTVRObjectAnimateViewsOn`**: The animation setting to play all views of the current object in the default row of views.
+- **`kQTVRObjectPalindromeViewsOn`**: The animation setting to play a back-and-forth animation of all views of the current object in the default row of views.
+- **`kQTVRObjectSyncViewToFrameRate`**: The animation setting to synchronize the view animation to the frame animation and use the same options as for frame animation.
+- **`kQTVRObjectDontLoopViewFramesOn`**: The animation setting to stop playing the frame animation in the current view at the end.
+- **`kQTVRObjectPlayEveryViewFrameOn`**: The animation setting to play every view frame regardless of play rate. The play rate is used to adjust the duration in which a frame appears but no frames are skipped so the rate is not exact.
+
 ## See Also
 
 - [majorVersion](object_sample_atom/majorversion.md)

@@ -38,7 +38,7 @@ The only exception to this is if the track that owns the MusicEvent is looping. 
 ## Parameters
 
 - `inSequence`: The music sequence that you want to add a user callback function to.
-- `inCallback`: A reference to your callback function. Use   to remove a registered callback function.
+- `inCallback`: A reference to your callback function. Use `NULL` to remove a registered callback function.
 - `inClientData`: Your data that the music sequence provides back to your callback function when it is invoked.
 
 ## See Also

@@ -30,7 +30,7 @@ Use this method to help estimate an appropriate size for a new heap before you c
 
 ## Parameters
 
-- `descriptor`: An   instance.
+- `descriptor`: An [`MTLAccelerationStructureDescriptor`](mtlaccelerationstructuredescriptor.md) instance.
 
 ## See Also
 

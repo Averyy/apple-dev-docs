@@ -22,7 +22,7 @@ A new view that applies the hover effect to `self` whenever the view is hovered,
 ## Parameters
 
 - `effect`: The effect to apply to this view.
-- `group`: An optional   the effect should belong to.
+- `group`: An optional `HoverEffectGroup` the effect should belong to.
 - `isEnabled`: Whether this effect is enabled or not.
 
 ## See Also

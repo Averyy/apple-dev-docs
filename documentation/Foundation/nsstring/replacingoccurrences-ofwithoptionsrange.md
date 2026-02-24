@@ -27,9 +27,9 @@ A new string in which all occurrences of `target`, matched using `options`, in `
 ## Parameters
 
 - `target`: The string to replace.
-- `replacement`: The string with which to replace  .
-- `options`: A mask of options to use when comparing   with the receiver. Pass   to specify no options.
-- `searchRange`: The range in the receiver in which to search for  .
+- `replacement`: The string with which to replace `target`.
+- `options`: A mask of options to use when comparing `target` with the receiver. Pass `0` to specify no options.
+- `searchRange`: The range in the receiver in which to search for `target`.
 
 ## See Also
 

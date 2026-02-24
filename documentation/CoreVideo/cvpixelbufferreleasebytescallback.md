@@ -26,10 +26,31 @@ When you create a pixel buffer using [`CVPixelBufferCreateWithBytes(_:_:_:_:_:_:
 
 You define a callback function as shown below:
 
+**Swift**:
+
+```swift
+// Define a function to call when the pixel buffer is freed.
+let releaseCallback: CVPixelBufferReleaseBytesCallback = { releaseRefCon, baseAddress in
+    guard let baseAddress = baseAddress else { return }
+    free(UnsafeMutableRawPointer(mutating: baseAddress))
+    // Perform additional cleanup as needed.
+}
+```
+
+**Objective-C**:
+
+```objc
+// Define a function to call when the pixel buffer is freed.
+void releaseCallback(void *releaseRefCon, const void *baseAddress) {
+    free((void *)baseAddress);
+    // Perform additional cleanup as needed.
+}
+```
+
 ## Parameters
 
-- `releaseRefCon`: A pointer to application-defined data. This pointer is the same as that passed in the   parameter of  .
-- `baseAddress`: A pointer to the base address of the memory holding the pixels. This pointer is the same as that passed in the   parameter of  .
+- `releaseRefCon`: A pointer to application-defined data. This pointer is the same as that passed in the `releaseRefCon` parameter of [`CVPixelBufferCreateWithBytes(_:_:_:_:_:_:_:_:_:_:)`](cvpixelbuffercreatewithbytes(_:_:_:_:_:_:_:_:_:_:).md).
+- `baseAddress`: A pointer to the base address of the memory holding the pixels. This pointer is the same as that passed in the `baseAddress` parameter of [`CVPixelBufferCreateWithBytes(_:_:_:_:_:_:_:_:_:_:)`](cvpixelbuffercreatewithbytes(_:_:_:_:_:_:_:_:_:_:).md).
 
 ## See Also
 

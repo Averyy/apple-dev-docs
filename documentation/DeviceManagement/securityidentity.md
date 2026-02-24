@@ -47,6 +47,12 @@ Specify `com.apple.configuration.security.identity` as the declaration type.
 }
 ```
 
+## Properties
+
+- `AllowAllAppsAccess` (boolean): If `true`, apps can access the private key.
+- `CredentialAssetReference` (string) *(required)*: The identifier of an asset declaration that contains the identity to install.
+- `KeyIsExtractable` (boolean): If `true`, the private key is extractable in the keychain.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

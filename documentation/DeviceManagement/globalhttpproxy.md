@@ -82,6 +82,17 @@ There can only be one payload of this type on the device at any time.
 </plist>
 ```
 
+## Properties
+
+- `ProxyCaptiveLoginAllowed` (boolean): If `true`, allows the device to bypass the proxy server to display the login page for captive networks.
+- `ProxyPACFallbackAllowed` (boolean): If `true`, allows connecting directly to the destination if the proxy autoconfiguration (PAC) file is unreachable.
+- `ProxyPACURL` (string): The URL of the PAC file that defines the proxy configuration. Starting in iOS 13 and macOS 10.15, only URLs that begin with `http://` or `https://` are allowed. This is only used if `ProxyType` is set to `Automatic`, and is ignored if `ProxyType` is set to `Manual`.
+- `ProxyPassword` (string): The password used to authenticate to the proxy server. The device only uses this if `ProxyType` is set to `Manual`, and ignores it if `ProxyType` is set to `Automatic`.
+- `ProxyServer` (string): The proxy server’s network address. The device requires this if `ProxyType` is set to `Manual`, and ignores it if `ProxyType` is set to `Automatic`.
+- `ProxyServerPort` (integer): The proxy server’s port number. The device requires this if `ProxyType` is set to `Manual`, and ignores this if `ProxyType` is set to `Automatic`.
+- `ProxyType` (string): The proxy type. For a manual proxy type, the profile contains the proxy server address, including its port, and optionally a user name and password. For an auto proxy type, you can enter a PAC URL.
+- `ProxyUsername` (string): The user name used to authenticate to the proxy server. The device only uses this if `ProxyType` is set to `Manual`, and ignores it if `ProxyType` is set to `Automatic`.
+
 ## See Also
 
 - [object DNSProxy](dnsproxy.md)

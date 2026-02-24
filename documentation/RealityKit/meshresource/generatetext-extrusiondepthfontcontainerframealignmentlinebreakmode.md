@@ -27,11 +27,11 @@ The text mesh.
 ## Parameters
 
 - `string`: The text to render.
-- `extrusionDepth`: The extent, in meters, of the extruded text in the   z-axis direction.
+- `extrusionDepth`: The extent, in meters, of the extruded text in the z-axis direction.
 - `font`: The font to use. The font size is in meters.
-- `containerFrame`: Use a frame size of   to tell the method to create a frame large enough to   contain the generated text.
+- `containerFrame`: The size, in meters, of the text frame in the local coordinate system where the text is laid out. The text frame has the same origin as the local coordinate system. Use a frame size of `(0,0)` to tell the method to create a frame large enough to contain the generated text.
 - `alignment`: How the text should be aligned in the text frame.
-- `lineBreakMode`: How the text should wrap when reaching a frame   boundary.
+- `lineBreakMode`: How the text should wrap when reaching a frame boundary.
 
 
 ---

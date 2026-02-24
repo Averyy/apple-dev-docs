@@ -29,7 +29,7 @@ The number of elements in the certificate array may not be more than 10.
 
 ## Parameters
 
-- `certificates`: An array of   objects. The EAP peer uses these certificates to evaluate the trust of the server certificate chain.
+- `certificates`: An array of [`SecCertificate`](https://developer.apple.com/documentation/Security/SecCertificate) objects. The EAP peer uses these certificates to evaluate the trust of the server certificate chain.
 
 ## See Also
 

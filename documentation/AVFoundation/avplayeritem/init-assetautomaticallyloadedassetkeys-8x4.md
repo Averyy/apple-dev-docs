@@ -30,8 +30,8 @@ The value of each key in `automaticallyLoadedAssetKeys` will automatically be lo
 
 ## Parameters
 
-- `asset`: An instance of  .
-- `automaticallyLoadedAssetKeys`: An array of strings, each representing a property defined by  .
+- `asset`: An instance of [`AVAsset`](avasset.md).
+- `automaticallyLoadedAssetKeys`: An array of strings, each representing a property defined by [`AVAsset`](avasset.md).
 
 ## See Also
 

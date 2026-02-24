@@ -21,7 +21,7 @@ Create a new WebView.
 
 ## Parameters
 
-- `page`: The   that should be associated with this  . It is a programming error to create multiple  s with the same  .
+- `page`: The [`WebPage`](webpage.md) that should be associated with this [`WebView`](webview-swift.struct.md). It is a programming error to create multiple [`WebView`](webview-swift.struct.md)s with the same [`WebPage`](webpage.md).
 
 ## See Also
 

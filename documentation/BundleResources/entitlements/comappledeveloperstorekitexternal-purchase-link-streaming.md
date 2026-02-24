@@ -9,6 +9,10 @@ An entitlement that grants a qualifying music-streaming app the ability to commu
 - iOS 18.2+
 - iPadOS 18.2+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 This entitlement enables qualifying music-streaming apps to communicate and promote offers.

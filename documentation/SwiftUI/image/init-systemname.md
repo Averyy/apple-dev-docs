@@ -28,7 +28,7 @@ To create a custom symbol image from your app’s asset catalog, use [`init(_:bu
 
 ## Parameters
 
-- `systemName`: The name of the system symbol image.   Use the SF Symbols app to look up the names of system symbol images.
+- `systemName`: The name of the system symbol image. Use the SF Symbols app to look up the names of system symbol images.
 
 ## See Also
 

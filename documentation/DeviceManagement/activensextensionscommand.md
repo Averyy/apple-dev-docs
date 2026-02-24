@@ -20,6 +20,11 @@ object ActiveNSExtensionsCommand
 - [object ActiveNSExtensionsCommand.Command](activensextensionscommand/command-data.dictionary.md)
   The command to get a list of active extensions for a user on a device.
 
+## Properties
+
+- `Command` (ActiveNSExtensionsCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object ActiveNSExtensionsResponse](activensextensionsresponse.md)

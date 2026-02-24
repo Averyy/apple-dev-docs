@@ -8,6 +8,10 @@ A Boolean value indicating whether the user can install and run the watchOS app 
 **Availability**:
 - watchOS 6.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Xcode automatically includes this key in the WatchKit extension’s information property list and sets its value to `YES` when you create a project using the iOS App with Watch App template. When you set the value of this key to `YES`, the app doesn’t need its iOS companion app to operate properly. Users can choose to install the iOS app, the watchOS app, or both.

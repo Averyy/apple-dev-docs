@@ -43,8 +43,8 @@ Toggle(sources: $alarms, isOn: \.isOn) {
 
 ## Parameters
 
-- `sources`: A collection of values used as the source for rendering the   Toggle’s state.
-- `isOn`: The key path of the values that determines whether the toggle   is on, mixed or off.
+- `sources`: A collection of values used as the source for rendering the Toggle’s state.
+- `isOn`: The key path of the values that determines whether the toggle is on, mixed or off.
 - `label`: A view that describes the purpose of the toggle.
 
 ## See Also

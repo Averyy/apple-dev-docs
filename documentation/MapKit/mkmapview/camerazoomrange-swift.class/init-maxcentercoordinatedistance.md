@@ -25,7 +25,7 @@ The constant, [`MKMapCameraZoomDefault`](mkmapcamerazoomdefault.md), specifies t
 
 ## Parameters
 
-- `maxDistance`: To increase how far out the user can zoom, use a larger distance value. To decrease how far out the user can zoom, use a smaller distance value.
+- `maxDistance`: The maximum distance the user can zoom out on a map based on its center point, measured in meters. To increase how far out the user can zoom, use a larger distance value. To decrease how far out the user can zoom, use a smaller distance value.
 
 ## See Also
 

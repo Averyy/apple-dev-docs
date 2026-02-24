@@ -26,6 +26,11 @@ object DeleteUserCommand
 - [object DeleteUserCommand.Command](deleteusercommand/command-data.dictionary.md)
   The command to delete a user’s account from a device.
 
+## Properties
+
+- `Command` (DeleteUserCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object DeleteUserResponse](deleteuserresponse.md)

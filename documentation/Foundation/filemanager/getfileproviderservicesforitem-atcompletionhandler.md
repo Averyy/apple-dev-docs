@@ -89,7 +89,8 @@ For more information, see [`Defining the Service’s Protocol`](nsfileproviderse
 ## Parameters
 
 - `url`: The file URL of a document or directory.
-- `completionHandler`: A block that is called on an anonymous background queue. The system passes this block the following parameters:
+- `completionHandler`: A block that is called on an anonymous background queue. The system passes this block the following parameters: - **`services`**: If the request is successful, this property contains a dictionary with zero or more [`NSFileProviderServiceName`](nsfileproviderservicename.md) keys and their corresponding [`NSFileProviderService`](nsfileproviderservice.md) values; otherwise, it is set to `nil`.
+- **`error`**: If an error occurs, this property contains an object that describes the error; otherwise, it is set to `nil`.
 
 ## See Also
 

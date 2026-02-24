@@ -21,8 +21,8 @@ init(sourceFrame: VTFrameProcessorFrame, destinationFrame: VTFrameProcessorFrame
 
 ## Parameters
 
-- `sourceFrame`: Current source frame; must be non  .
-- `destinationFrame`: User-allocated pixel buffer that receives the scaled processor output; must be non  .
+- `sourceFrame`: Current source frame; must be non `nil`.
+- `destinationFrame`: User-allocated pixel buffer that receives the scaled processor output; must be non `nil`.
 
 
 ---

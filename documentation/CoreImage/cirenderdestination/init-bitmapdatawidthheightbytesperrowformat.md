@@ -29,11 +29,11 @@ The destination’s [`colorSpace`](ciimage/colorspace.md) property will default 
 
 ## Parameters
 
-- `data`: Pointer to raw bits of a client-managed buffer that is at least (  *  ) bytes in size.
+- `data`: Pointer to raw bits of a client-managed buffer that is at least (`bytesPerRow` * `height`) bytes in size.
 - `width`: Width of the bitmap image in pixels.
 - `height`: Height of the bitmap image in pixels.
 - `bytesPerRow`: Number of bytes per row of data.
-- `format`: Color format specifying how the colors are laid out in memory (for example,  ).
+- `format`: Color format specifying how the colors are laid out in memory (for example, [`RGBA8`](ciformat/rgba8.md)).
 
 ## See Also
 

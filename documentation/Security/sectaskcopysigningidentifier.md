@@ -22,7 +22,7 @@ A string representing the code signing identifier for the task, or `NULL` on err
 ## Parameters
 
 - `task`: The task whose code signing identifier you want.
-- `error`: A pointer that the function uses to provide an error object with details if an error occurs. The caller becomes responsible for the object’s memory. Pass   to ignore the error.
+- `error`: A pointer that the function uses to provide an error object with details if an error occurs. The caller becomes responsible for the object’s memory. Pass `NULL` to ignore the error.
 
 
 ---

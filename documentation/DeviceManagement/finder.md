@@ -84,6 +84,18 @@ Specify `com.apple.finder` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `ProhibitBurn` (boolean): If `true`, the system disables the Finder’s burn support.
+- `ProhibitConnectTo` (boolean): If `true`, the system disables Connect to Server.
+- `ProhibitEject` (boolean): If `true`, the system disables Eject.
+- `ProhibitGoToFolder` (boolean): If `true`, the system disables Go to Folder.
+- `ShowExternalHardDrivesOnDesktop` (boolean): If `false`, the system doesn’t show external hard drives on the Desktop.
+- `ShowHardDrivesOnDesktop` (boolean): If `false`, the system doesn’t show internal hard drives on the Desktop.
+- `ShowMountedServersOnDesktop` (boolean): If `false`, the system doesn’t show mounted file servers on the Desktop.
+- `ShowRemovableMediaOnDesktop` (boolean): If `false`, the system doesn’t show removable media items on the Desktop.
+- `WarnOnEmptyTrash` (boolean): If `false`, the system doesn’t warn the user before emptying the trash.
+
 ## See Also
 
 - [object Accessibility](accessibility.md)

@@ -37,9 +37,9 @@ When linking against the iOS 13 SDK or later, your implementation of this method
 
 ## Parameters
 
-- `registry`: The   instance responsible for the delegate callback.
+- `registry`: The [`PKPushRegistry`](pkpushregistry.md) instance responsible for the delegate callback.
 - `payload`: The push payload sent by a developer via APNs server API.
-- `type`: This is a   constant, which is present in  .
+- `type`: This is a [`PKPushType`](pkpushtype.md) constant, which is present in `[registry desiredPushTypes]`.
 - `completion`: The notification’s completion handler. Execute this block when you finish processing the notification.
 
 

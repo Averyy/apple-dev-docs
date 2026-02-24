@@ -20,7 +20,7 @@ case dataSource(MLHandPoseClassifier.DataSource)
 
 ## Parameters
 
-- `dataSource`: An   instance.
+- `dataSource`: An [`MLHandPoseClassifier.DataSource`](mlhandposeclassifier/datasource.md) instance.
 
 ## See Also
 

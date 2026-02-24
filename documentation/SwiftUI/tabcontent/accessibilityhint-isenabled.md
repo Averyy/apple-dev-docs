@@ -41,7 +41,7 @@ var body: some View {
 ## Parameters
 
 - `hint`: The accessibility hint to apply.
-- `isEnabled`: If true the accessibility hint is applied; otherwise the   accessibility hint is unchanged.
+- `isEnabled`: If true the accessibility hint is applied; otherwise the accessibility hint is unchanged.
 
 
 ---

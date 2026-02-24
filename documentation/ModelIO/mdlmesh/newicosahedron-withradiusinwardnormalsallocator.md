@@ -32,8 +32,8 @@ The `inwardNormals` parameter determines the direction of generated vertex norma
 ## Parameters
 
 - `radius`: The distance from the icosahedron’s center to any one of its vertices.
-- `inwardNormals`:   to generate normal vectors pointing toward the center of the icosahedron;   to generate normal vectors pointing outward.
-- `allocator`: An object responsible for allocating mesh vertex data. If  , Model I/O  uses an internal allocator object.
+- `inwardNormals`: [`true`](https://developer.apple.com/documentation/Swift/true) to generate normal vectors pointing toward the center of the icosahedron; [`false`](https://developer.apple.com/documentation/Swift/false) to generate normal vectors pointing outward.
+- `allocator`: An object responsible for allocating mesh vertex data. If `nil`, Model I/O  uses an internal allocator object.
 
 ## See Also
 

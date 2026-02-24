@@ -24,7 +24,7 @@ The default implementation of this method does nothing. Subclasses can override 
 
 ## Parameters
 
-- `newSuperview`: A view object that will be the new superview of the receiver. This object may be  .
+- `newSuperview`: A view object that will be the new superview of the receiver. This object may be `nil`.
 
 ## See Also
 

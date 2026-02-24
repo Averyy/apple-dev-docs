@@ -22,11 +22,13 @@ A Core Video result code. See [`Core Video Constants`](core-video-constants.md) 
 
 ## Parameters
 
-- `allocator`: The allocator to use to create the Core Video OpenGL buffer. Pass   to specify the default allocator.
+- `allocator`: The allocator to use to create the Core Video OpenGL buffer. Pass `NULL` to specify the default allocator.
 - `width`: The width of the buffer in pixels.
 - `height`: The height of the buffer in pixels.
-- `attributes`: A Core Foundation dictionary containing other desired attributes of the buffer (texture target, internal format, max mipmap level, etc.). May be  . The following attribute values are assumed if you do not explicitly define them:
-- `bufferOut`: On output,   points to the newly created OpenGL buffer.
+- `attributes`: A Core Foundation dictionary containing other desired attributes of the buffer (texture target, internal format, max mipmap level, etc.). May be `NULL`. The following attribute values are assumed if you do not explicitly define them: - `kCVOpenGLBufferTarget` = `GL_TEXTURE_RECTANGLE_EXT`
+- `kCVOpenGLBufferInternalFormat` = `GL_RGBA`
+- `kCVOpenGLBufferMaximumMipmapLevel` = 0
+- `bufferOut`: On output, `bufferOut` points to the newly created OpenGL buffer.
 
 ## See Also
 

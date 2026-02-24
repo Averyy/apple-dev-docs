@@ -16,9 +16,68 @@ The following is an example of a symmetric sparse matrix:
 
 Because this sparse matrix is symmetric, define it with the arrays below that describe its lower triangle. For example, the value `9.5` is in row 2, column 2.
 
+**Swift**:
+
+```swift
+row =      [ 0,   1,   3,    1,    2,   3,   2,   3]
+column =   [ 0,   0,   0,    1,    1,   1,   2,   3]
+values =   [10.0, 1.0, 2.5, 12.0, -0.3, 1.1, 9.5, 6.0] 
+```
+
+**Objective-C**:
+
+```objc
+int row[] =       { 0,   1,   3,    1,    2,   3,   2,   3};
+int column[] =    { 0,   0,   0,    1,    1,   1,   2,   3};
+double values[] = {10.0, 1.0, 2.5, 12.0, -0.3, 1.1, 9.5, 6.0};
+```
+
 Use the `attributes` parameter to specify that the matrix is symmetric and the items in the values array derive from the lower triangle.
 
 The following code defines the attributes and creates the sparse matrix instance:
+
+**Swift**:
+
+```swift
+var attributes = SparseAttributes_t()
+attributes.triangle = SparseLowerTriangle
+attributes.kind = SparseSymmetric  
+ 
+var row: [Int32] =      [ 0,   1,   3,    1,    2,   3,   2,   3]
+var column: [Int32] =   [ 0,   0,   0,    1,    1,   1,   2,   3]
+var values =            [10.0, 1.0, 2.5, 12.0, -0.3, 1.1, 9.5, 6.0] 
+         
+let blockCount = 8
+let blockSize = 1
+ 
+let A = SparseConvertFromCoordinate(4, 4,
+                                    blockCount, UInt8(blockSize),
+                                    attributes,
+                                    &row, &column,
+                                    &values)
+```
+
+**Objective-C**:
+
+```objc
+SparseAttributes_t attributes = {
+    .triangle = SparseLowerTriangle,
+    .kind = SparseSymmetric
+};
+ 
+int row[] =       { 0,   1,   3,    1,    2,   3,   2,   3};
+int column[] =    { 0,   0,   0,    1,    1,   1,   2,   3};
+double values[] = {10.0, 1.0, 2.5, 12.0, -0.3, 1.1, 9.5, 6.0};
+ 
+long blockCount = 8;
+UInt8 blockSize = 1;
+ 
+SparseMatrix_Double A = SparseConvertFromCoordinate(4, 4,
+                                                    blockCount, blockSize,
+                                                    attributes,
+                                                    row, column,
+                                                    values);
+```
 
 ##### Manage Invalid and Duplicate Entries
 

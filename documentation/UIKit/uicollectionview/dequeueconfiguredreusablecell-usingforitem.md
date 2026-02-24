@@ -25,7 +25,7 @@ A configured reusable cell object.
 
 ## Parameters
 
-- `registration`: The cell registration for configuring the cell object. See  .
+- `registration`: The cell registration for configuring the cell object. See [`UICollectionView.CellRegistration`](uicollectionview/cellregistration.md).
 - `indexPath`: The index path that specifies the location of the cell in the collection view.
 - `item`: The item that provides data for the cell.
 

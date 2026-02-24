@@ -22,9 +22,9 @@ func CFStringAppendPascalString(_ theString: CFMutableString!, _ pStr: ConstStr2
 
 ## Parameters
 
-- `theString`: The string to which the characters in   are appended. If this value is not a CFMutableString object, an assertion is raised.
+- `theString`: The string to which the characters in `pStr` are appended. If this value is not a CFMutableString object, an assertion is raised.
 - `pStr`: A Pascal string buffer.
-- `encoding`: The string encoding of the characters in  .
+- `encoding`: The string encoding of the characters in `pStr`.
 
 ## See Also
 

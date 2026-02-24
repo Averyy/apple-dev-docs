@@ -24,7 +24,7 @@ init(for forTypes: any PersistentModel.Type..., isStoredInMemoryOnly: Bool = fal
 ## Parameters
 
 - `forTypes`: A list of persistent model types.
-- `isStoredInMemoryOnly`: A Boolean value that determines whether the   associated persistent storage is ephemeral and exists only in memory. The   default value is  .
+- `isStoredInMemoryOnly`: A Boolean value that determines whether the associated persistent storage is ephemeral and exists only in memory. The default value is `false`.
 
 ## See Also
 

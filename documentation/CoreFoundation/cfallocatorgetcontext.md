@@ -26,8 +26,8 @@ An allocator’s context, a structure of type `CFAllocatorContext`, holds pointe
 
 ## Parameters
 
-- `allocator`: The allocator to examine. Pass   to obtain the context of the default allocator.
-- `context`: On return, contains the context of  .
+- `allocator`: The allocator to examine. Pass `NULL` to obtain the context of the default allocator.
+- `context`: On return, contains the context of `allocator`.
 
 
 ---

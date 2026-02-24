@@ -33,8 +33,8 @@ var body: some View {
 
 ## Parameters
 
-- `payload`: A closure that will be called on request of the items   by the shortcut or service.
-- `onEdit`: A closure that will be called after the shortcut or   service completes with its output data. This should replace the   selected subpart that was exported with  . Return   to   indicate that there was a failure to receive the items.
+- `payload`: A closure that will be called on request of the items by the shortcut or service.
+- `onEdit`: A closure that will be called after the shortcut or service completes with its output data. This should replace the selected subpart that was exported with `onExport`. Return `false` to indicate that there was a failure to receive the items.
 
 ## See Also
 

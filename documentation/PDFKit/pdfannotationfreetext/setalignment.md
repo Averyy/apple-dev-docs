@@ -16,7 +16,7 @@ func setAlignment(_ alignment: NSTextAlignment)
 
 ## Parameters
 
-- `alignment`: Send  ,  , or   to set the horizontal alignment of text within the bounds of the annotation.
+- `alignment`: Send `NSLeftTextAlignment`, `NSRightTextAlignment`, or `NSCenterTextAlignment` to set the horizontal alignment of text within the bounds of the annotation.
 
 ## See Also
 

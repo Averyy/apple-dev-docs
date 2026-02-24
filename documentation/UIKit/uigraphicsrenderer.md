@@ -32,6 +32,18 @@ Consider creating a subclass any time you need to create multiple Core Graphics 
 
 To create a subclass of [`UIGraphicsRenderer`](uigraphicsrenderer.md), first import the appropriate submodule or header, as shown in the following code.
 
+**Swift**:
+
+```swift
+import UIKit.UIGraphicsRendererSubclass
+```
+
+**Objective-C**:
+
+```objc
+#import <UIKit/UIGraphicsRendererSubclass.h>
+```
+
 A graphics renderer manages a pool of Core Graphics contexts that are reused with repeated uses of the renderer. The renderer creates these [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) objects using the [`context(with:)`](uigraphicsrenderer/context(with:).md) class method, and then wraps each of them in an instance of the class returned by the [`rendererContextClass()`](uigraphicsrenderer/renderercontextclass().md) class method. You must therefore override these two methods in your graphics renderer subclass.
 
 To perform drawing actions on a Core Graphics context, call the [`runDrawingActions(_:completionActions:)`](uigraphicsrenderer/rundrawingactions(_:completionactions:).md) method, providing two blocks. Both of these blocks have a [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md) argument, providing access to a Core Graphics context.

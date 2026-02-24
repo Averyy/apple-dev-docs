@@ -45,14 +45,14 @@ You can use the same workspace memory for a group of images that are different s
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the  ,  , and   fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass   to instruct the function to allocate, use, and then free its own temporary buffer.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass `nil` to instruct the function to allocate, use, and then free its own temporary buffer.
 - `percent_low`: The percentage of pixels that the operation maps to the lowest end of the transformed image’s histogram.
 - `percent_high`: The percentage of pixels that the operation maps to the highest end of the transformed image’s histogram.
 - `histogram_entries`: The number of histogram entries.
-- `minVal`: The minimum pixel value. The operation assigns pixel values less than   to the first histogram entry.
-- `maxVal`: The maximum pixel value. The operation assigns pixel values greater than   to the last histogram entry.
-- `flags`: To instruct the function to return the minimum size of the workspace memory, set the   flag.
+- `minVal`: The minimum pixel value. The operation assigns pixel values less than `minVal` to the first histogram entry.
+- `maxVal`: The maximum pixel value. The operation assigns pixel values greater than `maxVal` to the last histogram entry.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md). To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag.
 
 ## See Also
 

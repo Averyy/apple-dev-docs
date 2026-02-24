@@ -30,9 +30,9 @@ The data to be loaded must conform to the file type indicated by the `inFileType
 ## Parameters
 
 - `inSequence`: The music sequence to load the data into.
-- `inData`: The contents of a valid file loaded into a   object.
-- `inFileTypeHint`: Provides a hint to the system about the file type referenced by the   parameter.
-- `inFlags`: Flags that specify how the data should be parsed, and how it should be assigned to tracks. See  .
+- `inData`: The contents of a valid file loaded into a `CFData` object.
+- `inFileTypeHint`: Provides a hint to the system about the file type referenced by the `inFileRef` parameter.
+- `inFlags`: Flags that specify how the data should be parsed, and how it should be assigned to tracks. See [`MusicSequenceLoadFlags`](musicsequenceloadflags.md).
 
 ## See Also
 

@@ -27,8 +27,8 @@ Upon starting activity updates, the motion activity manager reports changes to i
 
 ## Parameters
 
-- `queue`: The operation queue on which to execute the specified   block. You can specify a custom queue or use the operation queue associated with your app’s main thread. This parameter must not be  .
-- `handler`: The block to execute when a change in the current type of motion is detected. For information about the parameters of this block, see  . This property must not be  .
+- `queue`: The operation queue on which to execute the specified `handler` block. You can specify a custom queue or use the operation queue associated with your app’s main thread. This parameter must not be `nil`.
+- `handler`: The block to execute when a change in the current type of motion is detected. For information about the parameters of this block, see [`CMMotionActivityHandler`](cmmotionactivityhandler.md). This property must not be `nil`.
 
 ## See Also
 

@@ -26,7 +26,7 @@ A copy of the specified color, using the specified alpha value. In Objective-C, 
 
 ## Parameters
 
-- `alpha`: A value that specifies the desired opacity of the copy. Values outside the range   are clamped to   or  .
+- `alpha`: A value that specifies the desired opacity of the copy. Values outside the range `[0,1]` are clamped to `0` or `1`.
 
 ## See Also
 

@@ -32,9 +32,9 @@ The `timingArrayOut` must be allocated by the caller, and the number of entries 
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
-- `numSampleTimingEntries`: Number of entries in  .``
-- `timingArrayOut`: On output, points to an array of   structs to receive the timing info.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
+- `numSampleTimingEntries`: Number of entries in `timingArray`.``
+- `timingArrayOut`: On output, points to an array of `CMSampleTimingInfo` structs to receive the timing info.
 - `timingArrayEntriesNeededOut`: Number of entries needed for the result.
 
 ## See Also

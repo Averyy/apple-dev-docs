@@ -20,7 +20,7 @@ Either [`NSOKButton`](https://developer.apple.com/documentation/AppKit/NSOKButto
 
 ## Parameters
 
-- `inOptions`: A dictionary of options that describe the configuration to use for the filter browser user interface. For the possible keys you can supply see    and the constant  .
+- `inOptions`: A dictionary of options that describe the configuration to use for the filter browser user interface. For the possible keys you can supply see  [`Filter Browser Option Keys`](filter-browser-option-keys.md) and the constant [`IKUISizeFlavor`](ikuisizeflavor.md).
 
 ## See Also
 

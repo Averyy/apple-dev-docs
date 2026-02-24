@@ -22,7 +22,7 @@ The framework invokes this method on the VM’s queue.
 
 ## Parameters
 
-- `display`: The   whose state is changing.
+- `display`: The [`VZGraphicsDisplay`](vzgraphicsdisplay.md) whose state is changing.
 
 ## See Also
 

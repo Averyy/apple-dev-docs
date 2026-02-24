@@ -27,10 +27,10 @@ If you override this method, you may choose to return a different type of data f
 
 ## Parameters
 
-- `contents`: If the object encapsulating the document data is of some other type, you should override this method or   to perform the actual writing of the data.
+- `contents`: The document data to write to disk. Typically, the data is encapsulated by an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object (if a flat file) or an [`FileWrapper`](https://developer.apple.com/documentation/Foundation/FileWrapper) object (if a file package). If the object encapsulating the document data is of some other type, you should override this method or [`writeContents(_:andAttributes:safelyTo:for:)`](uidocument/writecontents(_:andattributes:safelyto:for:).md) to perform the actual writing of the data.
 - `url`: A file URL specifying the location of the document file in the application sandbox.
-- `saveOperation`: A constant that indicates whether the document file is being written the first time or whether it is being overwritten. See   for details.
-- `originalContentsURL`: A file URL specifying the previous location of the document file (if not  ).
+- `saveOperation`: A constant that indicates whether the document file is being written the first time or whether it is being overwritten. See [`UIDocument.SaveOperation`](uidocument/saveoperation.md) for details.
+- `originalContentsURL`: A file URL specifying the previous location of the document file (if not `nil`).
 
 ## See Also
 

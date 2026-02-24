@@ -22,8 +22,8 @@ init(scope: CKSyncEngine.FetchChangesOptions.Scope = .all, operationGroup: CKOpe
 
 ## Parameters
 
-- `scope`: The scope in which to fetch changes. Defaults to  .
-- `operationGroup`: The operation group to use for the underlying CloudKit operations. If  , a default operation group will be created.
+- `scope`: The scope in which to fetch changes. Defaults to [`CKSyncEngine.FetchChangesOptions.Scope.all`](cksyncengine-5sie5/fetchchangesoptions/scope-swift.enum/all.md).
+- `operationGroup`: The operation group to use for the underlying CloudKit operations. If `nil`, a default operation group will be created.
 
 
 ---

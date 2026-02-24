@@ -26,8 +26,8 @@ A copy of `url` with the last path component deleted. Ownership follows the crea
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
-- `url`: The   object whose last path component you want to delete.
+- `allocator`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `url`: The `CFURL` object whose last path component you want to delete.
 
 ## See Also
 

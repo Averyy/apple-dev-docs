@@ -27,9 +27,9 @@ This is a convenience function that adds a rounded rectangle to a path, starting
 ## Parameters
 
 - `rect`: A rectangle, specified in user space coordinates.
-- `cornerSize`: The size of the corners, specified in user space   coordinates.
-- `style`: The corner style. Defaults to the   style   if not specified.
-- `transform`: An affine transform to apply to the rectangle   before adding to the path. Defaults to the identity   transform if not specified.
+- `cornerSize`: The size of the corners, specified in user space coordinates.
+- `style`: The corner style. Defaults to the `continous` style if not specified.
+- `transform`: An affine transform to apply to the rectangle before adding to the path. Defaults to the identity transform if not specified.
 
 ## See Also
 

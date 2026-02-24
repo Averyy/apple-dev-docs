@@ -20,7 +20,7 @@ The framework initializes the pixel dimensions and pixel density based on the sp
 
 ## Parameters
 
-- `screen`: The screen on which you intend to present the   for the display.
+- `screen`: The screen on which you intend to present the [`VZVirtualMachineView`](vzvirtualmachineview.md) for the display.
 - `sizeInPoints`: The intended logical size of the display.
 
 ## See Also

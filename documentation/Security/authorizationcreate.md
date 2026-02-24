@@ -37,10 +37,14 @@ When your application no longer needs the authorization reference, use the funct
 
 ## Parameters
 
-- `rights`: A pointer to a set of authorization rights you create. Pass   if the application requires no rights at this time.
-- `environment`: An   structure used when authorizing or preauthorizing rights.   Not used in OS X v10.2 and earlier.   In macOS 10.3 and later, you can pass icon or prompt data to be used in the authentication dialog box.   In macOS 10.4 and later, you can also pass a user name and password in order to authorize a user without user interaction. Possible values for this parameter are listed in  .   The data passed in this parameter is not stored in the authorization reference; it is used only during authorization. If you are not passing any data in this parameter, pass the constant  .   For a list of possible keys in the authorization set, see  . For the data structure itself, see  .
-- `flags`: A bit mask constructed at the bitwise   of one or more   for specifying authorization options. Use one of the following option sets:
-- `authorization`: A pointer to an authorization reference. On return, this parameter refers to the authorization session the Security Server creates. Pass   if you require a function result but no authorization reference.
+- `rights`: A pointer to a set of authorization rights you create. Pass `nil` if the application requires no rights at this time.
+- `environment`: An [`AuthorizationItemSet`](authorizationitemset.md) structure used when authorizing or preauthorizing rights. Not used in OS X v10.2 and earlier. In macOS 10.3 and later, you can pass icon or prompt data to be used in the authentication dialog box. In macOS 10.4 and later, you can also pass a user name and password in order to authorize a user without user interaction. Possible values for this parameter are listed in `Security.framework/Headers/AuthorizationTags.h`. The data passed in this parameter is not stored in the authorization reference; it is used only during authorization. If you are not passing any data in this parameter, pass the constant [`kAuthorizationEmptyEnvironment`](kauthorizationemptyenvironment.md). For a list of possible keys in the authorization set, see [`Authorization Name Tags`](authorization-name-tags.md). For the data structure itself, see [`AuthorizationItemSet`](authorizationitemset.md).
+- `flags`: A bit mask constructed at the bitwise `OR` of one or more [`AuthorizationFlags`](authorizationflags.md) for specifying authorization options. Use one of the following option sets: - Use the constant [`kAuthorizationFlagDefaults`](authorizationflags/kauthorizationflagdefaults.md) if no options are necessary.
+- Use the [`extendRights`](authorizationflags/extendrights.md) flag to request rights. You can also add the [`interactionAllowed`](authorizationflags/interactionallowed.md) flag to allow user interaction.
+- Specify the [`partialRights`](authorizationflags/partialrights.md) and [`extendRights`](authorizationflags/extendrights.md) flags to request partial rights. You can also add the [`interactionAllowed`](authorizationflags/interactionallowed.md) flag to allow user interaction.
+- Specify the [`preAuthorize`](authorizationflags/preauthorize.md) and [`extendRights`](authorizationflags/extendrights.md) flags to preauthorize rights.
+- Specify the [`destroyRights`](authorizationflags/destroyrights.md) flag to prevent the Security Server from preserving the rights obtained during this call.
+- `authorization`: A pointer to an authorization reference. On return, this parameter refers to the authorization session the Security Server creates. Pass `nil` if you require a function result but no authorization reference.
 
 
 ---

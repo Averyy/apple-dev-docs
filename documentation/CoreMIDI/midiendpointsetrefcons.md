@@ -33,8 +33,8 @@ A typical use is for one `refCon` to refer to a device, and a second to refer to
 ## Parameters
 
 - `endpt`: The endpoint to set the data on.
-- `ref1`: The first  .
-- `ref2`: The second  .
+- `ref1`: The first `refCon`.
+- `ref2`: The second `refCon`.
 
 ## See Also
 

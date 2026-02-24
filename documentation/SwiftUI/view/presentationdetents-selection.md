@@ -47,8 +47,8 @@ struct ContentView: View {
 
 ## Parameters
 
-- `detents`: A set of supported detents for the sheet.   If you provide more that one detent, people can drag the sheet   to resize it.
-- `selection`: A   to the currently selected detent.   Ensure that the value matches one of the detents that you   provide for the   parameter.
+- `detents`: A set of supported detents for the sheet. If you provide more that one detent, people can drag the sheet to resize it.
+- `selection`: A [`Binding`](binding.md) to the currently selected detent. Ensure that the value matches one of the detents that you provide for the `detents` parameter.
 
 ## See Also
 

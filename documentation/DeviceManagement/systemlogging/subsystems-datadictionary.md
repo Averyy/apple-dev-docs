@@ -18,6 +18,10 @@ A dictionary enabling the logging level for subsystems. See `Customizing Logging
 object SystemLogging.Subsystems
 ```
 
+## Properties
+
+- `ANY` (any): TBD
+
 ## See Also
 
 - [object SystemLogging.Processes](systemlogging/processes-data.dictionary.md)

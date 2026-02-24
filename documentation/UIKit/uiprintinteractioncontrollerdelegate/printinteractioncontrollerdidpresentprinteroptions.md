@@ -19,7 +19,7 @@ optional func printInteractionControllerDidPresentPrinterOptions(_ printInteract
 
 ## Parameters
 
-- `printInteractionController`: The shared instance of   that is managing the print job.
+- `printInteractionController`: The shared instance of [`UIPrintInteractionController`](uiprintinteractioncontroller.md) that is managing the print job.
 
 ## See Also
 

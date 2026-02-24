@@ -68,7 +68,7 @@ override func providePlaceholder(at url: URL, completionHandler: @escaping (Erro
 ## Parameters
 
 - `url`: The URL of a shared document.
-- `completionHandler`: The completion handler takes the following parameter:
+- `completionHandler`: A block that the system calls after the placeholder is created. The completion handler takes the following parameter: - **error**: If the placeholder was successfully written to disk, this value is `nil`. Otherwise, it holds an `NSError` object describing the error.
 
 ## See Also
 

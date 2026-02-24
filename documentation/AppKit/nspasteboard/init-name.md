@@ -24,7 +24,7 @@ Other names can be assigned to create private pasteboards for other purposes.
 
 ## Parameters
 
-- `name`: The name of the pasteboard. The names of standard pasteboards are given in  .
+- `name`: The name of the pasteboard. The names of standard pasteboards are given in `Pasteboard Names`.
 
 ## See Also
 

@@ -20,8 +20,8 @@ func setDelegate(_ delegate: (any CXProviderDelegate)?, queue: dispatch_queue_t?
 
 ## Parameters
 
-- `delegate`: An object conforming to the   protocol.
-- `queue`: If  , delegate methods are performed on the main queue.
+- `delegate`: An object conforming to the `CXProviderDelegate` protocol.
+- `queue`: The queue on which to execute delegate methods. If `nil`, delegate methods are performed on the main queue. > ❗ **Important**:  Any queue specified is stored as a weak reference.
 
 
 ---

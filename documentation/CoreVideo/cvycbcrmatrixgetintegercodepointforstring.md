@@ -26,7 +26,7 @@ The code point corresponding to the YCbCr matrix string, or `2` (unknown) if the
 
 ## Parameters
 
-- `yCbCrMatrixString`: A Core Video YCbCr matrix string. See   for possible values.
+- `yCbCrMatrixString`: A Core Video YCbCr matrix string. See [`Image Buffer YCbCr Matrix Constants`](image-buffer-ycbcr-matrix-constants.md) for possible values.
 
 ## See Also
 

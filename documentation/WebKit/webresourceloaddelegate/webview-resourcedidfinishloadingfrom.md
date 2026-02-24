@@ -21,7 +21,7 @@ The `identifier` parameter is used to track the resource being loaded by `dataSo
 ## Parameters
 
 - `sender`: The web view that sent this message.
-- `identifier`: An identifier object used to track the resource being loaded by  .
+- `identifier`: An identifier object used to track the resource being loaded by `dataSource`.
 - `dataSource`: The data source for this web view.
 
 ## See Also

@@ -27,8 +27,8 @@ A pointer to the internal buffer of unread data for `stream`, if possible; `NULL
 ## Parameters
 
 - `stream`: The stream to examine.
-- `maxBytesToRead`: The maximum number of bytes to read. If greater than  ,   limits the number of bytes read; if   or less, all available bytes are read.
-- `numBytesRead`: On return, contains the length of returned buffer. If   is not open or has encountered an error,   is set to  .
+- `maxBytesToRead`: The maximum number of bytes to read. If greater than `0`, `maxBytesToRead` limits the number of bytes read; if `0` or less, all available bytes are read.
+- `numBytesRead`: On return, contains the length of returned buffer. If `stream` is not open or has encountered an error, `numBytesRead` is set to `-1`.
 
 ## See Also
 

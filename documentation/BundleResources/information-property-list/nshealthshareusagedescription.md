@@ -10,6 +10,10 @@ A message that explains to people why the app requests permission to read sample
 - iPadOS 8.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the someone’s health data.

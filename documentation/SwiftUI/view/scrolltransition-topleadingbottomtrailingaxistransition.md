@@ -23,9 +23,9 @@ func scrollTransition(topLeading: ScrollTransitionConfiguration, bottomTrailing:
 
 ## Parameters
 
-- `topLeading`: The configuration that drives the transition when   the view is about to appear at the top edge of a vertical   scroll view, or the leading edge of a horizont scroll view.
-- `bottomTrailing`: The configuration that drives the transition when   the view is about to appear at the bottom edge of a vertical   scroll view, or the trailing edge of a horizont scroll view.
-- `axis`: The axis of the containing scroll view over which the   transition will be applied. The default value of   uses the   axis of the innermost containing scroll view, or   if   the innermost scroll view is scrollable along both axes.
+- `topLeading`: The configuration that drives the transition when the view is about to appear at the top edge of a vertical scroll view, or the leading edge of a horizont scroll view.
+- `bottomTrailing`: The configuration that drives the transition when the view is about to appear at the bottom edge of a vertical scroll view, or the trailing edge of a horizont scroll view.
+- `axis`: The axis of the containing scroll view over which the transition will be applied. The default value of `nil` uses the axis of the innermost containing scroll view, or `.vertical` if the innermost scroll view is scrollable along both axes.
 - `transition`: The transition to apply.
 
 ## See Also

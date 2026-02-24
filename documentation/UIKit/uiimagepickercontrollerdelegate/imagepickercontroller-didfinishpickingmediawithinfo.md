@@ -30,7 +30,7 @@ Implementation of this method is optional, but expected.
 ## Parameters
 
 - `picker`: The controller object managing the image picker interface.
-- `info`: A dictionary containing the original image and the edited image, if an image was picked; or a filesystem URL for the movie, if a movie was picked. The dictionary also contains any relevant editing information. The keys for this dictionary are listed in  .
+- `info`: A dictionary containing the original image and the edited image, if an image was picked; or a filesystem URL for the movie, if a movie was picked. The dictionary also contains any relevant editing information. The keys for this dictionary are listed in [`UIImagePickerController.InfoKey`](uiimagepickercontroller/infokey.md).
 
 ## See Also
 

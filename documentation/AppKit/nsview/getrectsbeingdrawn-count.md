@@ -24,8 +24,8 @@ You should send this message only from within a [`draw(_:)`](nsview/draw(_:).md)
 
 ## Parameters
 
-- `rects`: On return, contains a list of nonoverlapping rectangles defining areas to be drawn in. The rectangles returned in   are in the coordinate space of the view.
-- `count`: On return, the number of rectangles in the   list.
+- `rects`: On return, contains a list of nonoverlapping rectangles defining areas to be drawn in. The rectangles returned in `rects` are in the coordinate space of the view.
+- `count`: On return, the number of rectangles in the `rects` list.
 
 ## See Also
 

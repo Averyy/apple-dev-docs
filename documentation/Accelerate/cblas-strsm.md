@@ -34,16 +34,16 @@ In either case, the results overwrite the values of matrix `B` in `X`.
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
 - `SIDE`: Determines the order in which the matrix and vector should be multiplied.
-- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are   or  .
-- `TRANSA`: Specifies whether to use matrix A (  or  ) or the transpose of A ( ,  ,  , or  ).
-- `DIAG`: Specifies whether the matrix is unit triangular. Possible values are   (unit triangular) or   (not unit triangular).
-- `M`: The number of rows in matrix  .
-- `N`: The number of columns in matrix  .
-- `ALPHA`: Scaling factor for matrix  .
-- `A`: Triangular matrix  .
-- `LDA`: The leading dimension of matrix  .
-- `B`: On entry, matrix  . Overwritten on return by matrix  .
-- `LDB`: The leading dimension of matrix  .
+- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are `'U'` or `'L'`.
+- `TRANSA`: Specifies whether to use matrix A (`'N'` or `'n'`) or the transpose of A (`'T'`, `'t'`, `'C'`, or `'c'`).
+- `DIAG`: Specifies whether the matrix is unit triangular. Possible values are `'U'` (unit triangular) or `'N'` (not unit triangular).
+- `M`: The number of rows in matrix `B`.
+- `N`: The number of columns in matrix `B`.
+- `ALPHA`: Scaling factor for matrix `A`.
+- `A`: Triangular matrix `A`.
+- `LDA`: The leading dimension of matrix `A`.
+- `B`: On entry, matrix `B`. Overwritten on return by matrix `X`.
+- `LDB`: The leading dimension of matrix `B`.
 
 ## See Also
 

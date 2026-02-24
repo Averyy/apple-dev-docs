@@ -29,6 +29,8 @@ This method applies a preconfigured set of effects that imitate black-and-white 
 
 The photo effect noir filter uses the following property:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in a black-and-white image:
 
 ```swift

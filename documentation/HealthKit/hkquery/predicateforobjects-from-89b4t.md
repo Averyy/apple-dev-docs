@@ -27,6 +27,25 @@ A predicate that matches all the objects created by any of the provided sources.
 
 Use this convenience method to create a predicate that finds all the objects from a specified set of apps or devices. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+let fromSources = HKQuery.predicateForObjectsFromSources(sources)
+ 
+let explicitFromSources =
+    NSPredicate(format: "%K IN %@", HKPredicateKeyPathSource, sources)
+```
+
+**Objective-C**:
+
+```objc
+NSPredicate *fromSources = [HKQuery predicateForObjectsFromSources:sources];
+ 
+NSPredicate *explicitFromSources = [NSPredicate predicateWithFormat:@"%K IN %@",
+                                   HKPredicateKeyPathSource,
+                                   sources];
+```
+
 ## Parameters
 
 - `sources`: A set of sources that have saved data to the HealthKit store.

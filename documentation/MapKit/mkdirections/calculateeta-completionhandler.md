@@ -28,7 +28,7 @@ If you call this method while a previous request is in process, this method call
 
 ## Parameters
 
-- `completionHandler`: The block to execute when the travel-time estimate is ready or when an error occurs. This parameter can’t be  .
+- `completionHandler`: The block to execute when the travel-time estimate is ready or when an error occurs. This parameter can’t be `nil`.
 
 ## See Also
 

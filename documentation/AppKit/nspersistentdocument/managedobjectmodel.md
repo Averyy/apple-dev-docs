@@ -27,7 +27,7 @@ NSManagedObjectModel *model = [[NSManagedObjectModel alloc] initWithContentsOfUR
 
 ##### Special Considerations
 
-In applications built in OS X v10.4, by default the Core Data framework creates a merged model from all the models found in the application bundle .
+In applications built in OS X v10.4, by default the Core Data framework creates a merged model from all the models found in the application bundle *and the frameworks against which the application is linked*.
 
 ## See Also
 

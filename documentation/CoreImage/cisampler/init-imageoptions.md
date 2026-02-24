@@ -22,7 +22,7 @@ init(image im: CIImage, options dict: [AnyHashable : Any]? = nil)
 ## Parameters
 
 - `im`: The image to initialize the sampler with.
-- `dict`: A dictionary that contains options specified as key-value pairs. See  .
+- `dict`: A dictionary that contains options specified as key-value pairs. See [`Sampler Option Keys`](sampler-option-keys.md).
 
 ## See Also
 

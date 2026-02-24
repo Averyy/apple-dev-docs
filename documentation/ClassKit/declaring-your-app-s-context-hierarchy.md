@@ -10,7 +10,7 @@ After you design a context hierarchy for your app, tell ClassKit about it to mak
 
 ##### Assign a Unique Identifier to Each Context
 
-Begin by giving each context a string identifier that’s unique among its siblings. For example, the chapters of a book might have the identifiers `chapter-1`, `chapter-2`, `chapter-3` and so on. This enables you to position each context within the hierarchy using an array of string identifiers—an —that traces exactly one route from an ancestor context to one of its descendants.
+Begin by giving each context a string identifier that’s unique among its siblings. For example, the chapters of a book might have the identifiers `chapter-1`, `chapter-2`, `chapter-3` and so on. This enables you to position each context within the hierarchy using an array of string identifiers—an *identifier path*—that traces exactly one route from an ancestor context to one of its descendants.
 
 Identifiers only need to be unique among contexts with the same parent. So you might declare a `section-2` context for each of `chapter-1` and `chapter-2` because the complete identifier path uniquely identifies each section. But you can only declare one `section-2` context for a given chapter.
 

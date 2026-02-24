@@ -26,7 +26,7 @@ An initialized snapshotter object.
 
 ## Parameters
 
-- `options`: The options to use when capturing the map imagery. See  . This parameter may not be  .
+- `options`: The options to use when capturing the map imagery. See [`MKMapSnapshotter.Options`](mkmapsnapshotter/options.md). This parameter may not be `nil`.
 
 ## See Also
 

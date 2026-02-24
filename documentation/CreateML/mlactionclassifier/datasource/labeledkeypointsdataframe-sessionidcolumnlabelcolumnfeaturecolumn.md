@@ -20,7 +20,7 @@ The data frame must contain a column of session identifiers, a column of labels,
 
 ## Parameters
 
-- `dataFrame`: A   containing keypoints and labels.
+- `dataFrame`: A `DataFrame` containing keypoints and labels.
 - `sessionIdColumn`: The name of the column containing session identifiers. Defaults to “session_id”.
 - `labelColumn`: The name of the column containing the labels. Defaults to “label”.
 - `featureColumn`: The name of the column containing the keypoints. Defaults to “keypoints”.

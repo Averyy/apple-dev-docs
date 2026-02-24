@@ -30,7 +30,7 @@ You can import a credential from a token created with [`gss_export_cred(_:_:_:)`
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `token`: The token containing the data that represents the credential.
-- `cred_handle`: A pointer to a credential that the function uses to return the credential. Free the credential’s memory with   when you are done with it.
+- `cred_handle`: A pointer to a credential that the function uses to return the credential. Free the credential’s memory with [`gss_release_cred(_:_:)`](gss_release_cred(_:_:).md) when you are done with it.
 
 ## See Also
 

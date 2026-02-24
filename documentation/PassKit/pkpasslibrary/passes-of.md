@@ -25,7 +25,7 @@ An array of passes of the specified type.
 
 ## Parameters
 
-- `passType`: One of the pass types in  .
+- `passType`: One of the pass types in [`PKPassType`](pkpasstype.md).
 
 ## See Also
 

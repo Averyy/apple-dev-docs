@@ -16,7 +16,7 @@ func setMatrixClass(_ factoryId: AnyClass)
 
 ## Parameters
 
-- `factoryId`: The matrix class (  or an   subclass) used in the browser’s columns.
+- `factoryId`: The matrix class (`NSMatrix` or an `NSMatrix` subclass) used in the browser’s columns.
 
 ## See Also
 

@@ -35,8 +35,8 @@ Calling this method doesn’t block the thread while the system is prompting the
 
 ## Parameters
 
-- `mediaType`: A media type for which to check the authorization status. The supported media types are   and  .
-- `handler`: Return control to the main queue or   before performing user interface updates.
+- `mediaType`: A media type for which to check the authorization status. The supported media types are [`video`](avmediatype/video.md) and [`audio`](avmediatype/audio.md).
+- `handler`: A callback the system invokes with a Boolean value that indicates whether the user granted or denied access to your app. Return control to the main queue or [`MainActor`](https://developer.apple.com/documentation/Swift/MainActor) before performing user interface updates.
 
 ## See Also
 

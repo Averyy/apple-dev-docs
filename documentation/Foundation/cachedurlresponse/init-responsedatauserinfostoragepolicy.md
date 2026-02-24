@@ -28,7 +28,7 @@ A cached URL response object, containing the response and data.
 
 - `response`: The response to cache.
 - `data`: The data to cache.
-- `userInfo`: An optional dictionary of user information. May be  .
+- `userInfo`: An optional dictionary of user information. May be `nil`.
 - `storagePolicy`: The storage policy for the cached response.
 
 ## See Also

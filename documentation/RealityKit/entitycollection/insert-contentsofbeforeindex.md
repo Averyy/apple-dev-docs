@@ -27,7 +27,7 @@ mutating func insert<S>(contentsOf sequence: S, beforeIndex index: Int) where S 
 ## Parameters
 
 - `sequence`: A sequence of entities to add to the collection.
-- `index`: The index of an entity to insert in front   of. If   is provided, the   entities will be appended.
+- `index`: The index of an entity to insert in front of. If `endIndex` is provided, the entities will be appended.
 
 
 ---

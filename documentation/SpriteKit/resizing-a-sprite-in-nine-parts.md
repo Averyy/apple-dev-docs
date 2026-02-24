@@ -13,7 +13,7 @@ The size of the sprite node’s [`frame`](sknode/frame.md) property is determine
 
 For example, if the sprite node’s base size is 32 x 32 pixels and it has an [`xScale`](sknode/xscale.md) value of 1.0 and a [`yScale`](sknode/yscale.md) value of 2.0, the size of its frame is 32 x 64 pixels.
 
-> **Note**:  The scaling values of the sprite node’s ancestors in the scene are also used to scale it. This changes the effective size of the sprite without changing its actual frame value. See .
+> **Note**:  The scaling values of the sprite node’s ancestors in the scene are also used to scale it. This changes the effective size of the sprite without changing its actual frame value. See *A Node Applies Many of Its Properties to Its Descendants*.
 
 When a sprite node’s frame is larger than its texture, the texture is stretched to cover its frame. Normally, the texture is stretched uniformly across the frame, as shown in the following figure.
 
@@ -33,6 +33,23 @@ The following figure shows a close-up view of a texture you might use to draw a 
 ![A stretchable button texture](https://docs-assets.developer.apple.com/published/78e21216dc794a904298a7a7d04ad735/media-2983059%402x.png)
 
 The following code shows how this button sprite would be initialized. The [`centerRect`](skspritenode/centerrect.md) property is computed based on the design of the texture.
+
+**Swift**:
+
+```swift
+let button = SKSpriteNode(imageNamed: "stretchable_button.png")
+button.centerRect = CGRect(x: 12.0/28.0,
+                           y: 12.0/28.0,
+                           width: 4.0/28.0,
+                           height: 4.0/28.0)
+```
+
+**Obj-C**:
+
+```objc
+SKSpriteNode *button = [SKSpriteNode spriteNodeWithImageNamed:@"stretchable_button.png"];
+button.centerRect = CGRectMake(12.0/28.0, 12.0/28.0, 4.0/28.0, 4.0/28.0);
+```
 
 The following figure shows that the corners remain the same, even when the button is drawn at different sizes.
 

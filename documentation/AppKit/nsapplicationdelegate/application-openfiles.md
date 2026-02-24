@@ -22,7 +22,7 @@ Identical to [`application(_:openFile:)`](nsapplicationdelegate/application(_:op
 ## Parameters
 
 - `sender`: The application object associated with the delegate.
-- `filenames`: An array of   objects containing the names of the files to open..
+- `filenames`: An array of `NSString` objects containing the names of the files to open..
 
 ## See Also
 

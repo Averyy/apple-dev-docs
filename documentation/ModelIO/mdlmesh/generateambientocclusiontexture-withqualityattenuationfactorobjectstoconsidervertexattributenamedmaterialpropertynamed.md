@@ -33,8 +33,8 @@ The `bakeQuality` parameter controls the fidelity and performance of the AO calc
 
 ## Parameters
 
-- `bakeQuality`: A value between   and   that determines the fidelity and performance of AO calculation. Higher values produce more accurate output at the cost of more processing time and memory usage.
-- `attenuationFactor`: A value between   and   that scales the strength of the AO effect. Higher values result in higher contrast when the AO texture is used for shading.
+- `bakeQuality`: A value between `0.0` and `1.0` that determines the fidelity and performance of AO calculation. Higher values produce more accurate output at the cost of more processing time and memory usage.
+- `attenuationFactor`: A value between `0.0` and `1.0` that scales the strength of the AO effect. Higher values result in higher contrast when the AO texture is used for shading.
 - `objectsToConsider`: An array of other objects in the scene that should affect static ambient lighting for the mesh.
 - `vertexAttributeName`: The name of the vertex attribute for storing generated texture coordinate data.
 - `materialPropertyName`: The name of the material for storing the generated texture image.

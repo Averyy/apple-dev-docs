@@ -26,7 +26,7 @@ func contains(_ p: CGPoint) -> Bool
 
 ## Parameters
 
-- `p`: A   to test against.
+- `p`: A `CGPoint` to test against.
 
 ## See Also
 

@@ -3,7 +3,7 @@
 **Framework**: GameplayKit  
 **Kind**: class
 
-An AI that chooses moves in turn-based games using a  strategy.
+An AI that chooses moves in turn-based games using a *deterministic* strategy.
 
 **Availability**:
 - iOS 9.0+
@@ -70,7 +70,7 @@ For more information about describing your gameplay model and using strategists,
 - [protocol GKStrategist](gkstrategist.md)
   A general interface for objects that provide artificial intelligence for use in turn-based (and similar) games.
 - [class GKMonteCarloStrategist](gkmontecarlostrategist.md)
-  An AI that chooses moves in turn-based games using a  strategy.
+  An AI that chooses moves in turn-based games using a *probabilistic* strategy.
 - [protocol GKGameModel](gkgamemodel.md)
   Implement this protocol to describe your gameplay model so that a strategist object can plan game moves.
 - [protocol GKGameModelPlayer](gkgamemodelplayer.md)

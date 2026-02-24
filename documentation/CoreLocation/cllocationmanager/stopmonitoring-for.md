@@ -23,7 +23,7 @@ If the specified region object is not currently being monitored, this method has
 
 ## Parameters
 
-- `region`: The region object currently being monitored. This parameter must not be  .
+- `region`: The region object currently being monitored. This parameter must not be `nil`.
 
 ## See Also
 

@@ -35,7 +35,7 @@ This method supersedes [`application(_:shouldSaveApplicationState:)`](uiapplicat
 ## Parameters
 
 - `application`: The singleton app object.
-- `coder`: A keyed archiver where you can store high-level state information. The coder’s   property is set to  , and any objects you encode must adopt  .
+- `coder`: A keyed archiver where you can store high-level state information. The coder’s [`requiresSecureCoding`](https://developer.apple.com/documentation/Foundation/NSCoder/requiresSecureCoding) property is set to [`true`](https://developer.apple.com/documentation/Swift/true), and any objects you encode must adopt [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding).
 
 ## See Also
 

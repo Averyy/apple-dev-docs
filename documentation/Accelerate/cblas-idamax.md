@@ -32,7 +32,7 @@ Returns an index in the range 0..N-1 corresponding with the element with the lar
 
 - `N`: Number of elements in the vector.
 - `X`: The vector.
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
 
 ## See Also
 

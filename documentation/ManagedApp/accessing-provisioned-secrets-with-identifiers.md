@@ -12,13 +12,13 @@ Specify the secrets your app requires for device management features, receive se
 
 #### Overview
 
-Some device management features rely on , that is, secure credentials provisioned by an administrator (MDM admin) for your app, such as passwords, certificates, and identities. Secrets can support:
+Some device management features rely on *secrets*, that is, secure credentials provisioned by an administrator (MDM admin) for your app, such as passwords, certificates, and identities. Secrets can support:
 
 - Automatically logging in a person
 - Cryptographic signing
 - Certificate pinning to improve trust evaluation of servers and signatures
 
-Your app accesses secrets by their identifier using the framework supplied secret  classes. Each provider offers a list of identifiers that catalogs all the currently available secrets, of a particular type, that an MDM admin provisions. You can access secrets using predefined identifiers, or identifiers that you add to your app’s configuration.
+Your app accesses secrets by their identifier using the framework supplied secret *provider* classes. Each provider offers a list of identifiers that catalogs all the currently available secrets, of a particular type, that an MDM admin provisions. You can access secrets using predefined identifiers, or identifiers that you add to your app’s configuration.
 
 The provider’s list of identifiers is an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence). If your app requires notification when the available secrets change, or if your app supports dynamic lists of secrets, iterate the sequence for the lifetime of the app using `for await`.
 

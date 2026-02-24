@@ -35,7 +35,7 @@ Alternatively, if you want to present a familiar GameKit interface, instead pres
 
 ## Parameters
 
-- `handler`: This block receives the following parameter:
+- `handler`: The block that GameKit calls when a person using SharePlay wants to join the group activity. GameKit invokes this handler for each player that joins until your app, or the player, stops showing the group activity in SharePlay. This block receives the following parameter: - **`player`**: A player who wants to join the group activity.
 
 ## See Also
 

@@ -22,7 +22,7 @@ optional func cameraStreamControl(_ cameraStreamControl: HMCameraStreamControl, 
 ## Parameters
 
 - `cameraStreamControl`: The stream control responsible for the camera stream.
-- `error`: If the stream stops because of an error, this is an error object with details;   otherwise.
+- `error`: If the stream stops because of an error, this is an error object with details; `nil` otherwise.
 
 ## See Also
 

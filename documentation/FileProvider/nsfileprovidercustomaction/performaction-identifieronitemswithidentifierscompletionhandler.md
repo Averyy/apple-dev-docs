@@ -28,9 +28,9 @@ Define the custom actions in the File Provider Extension’s `Info.plist` file, 
 
 ## Parameters
 
-- `actionIdentifier`: The identifier for the requested custom action from the extension’s   file.
+- `actionIdentifier`: The identifier for the requested custom action from the extension’s `Info.plist` file.
 - `itemIdentifiers`: A list of item identifiers affected by the action.
-- `completionHandler`: A block that you call after completing the specified action. You pass the following parameters:
+- `completionHandler`: A block that you call after completing the specified action. You pass the following parameters: - **error**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 
 ---

@@ -25,7 +25,7 @@ This method uses [`NSIntegralRectWithOptions(_:_:)`](https://developer.apple.com
 ## Parameters
 
 - `rect`: The input rectangle in global screen coordinates.
-- `options`: Specifies the alignment options. See   for possible values.
+- `options`: Specifies the alignment options. See [`AlignmentOptions`](https://developer.apple.com/documentation/Foundation/AlignmentOptions) for possible values.
 
 ## See Also
 

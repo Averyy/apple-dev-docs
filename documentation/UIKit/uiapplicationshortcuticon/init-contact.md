@@ -34,7 +34,7 @@ When providing a set of contact quick actions, ensure that every one of them has
 
 ## Parameters
 
-- `contact`: The   contact object to derive the icon from.
+- `contact`: The [`CNContact`](https://developer.apple.com/documentation/Contacts/CNContact) contact object to derive the icon from.
 
 ## See Also
 

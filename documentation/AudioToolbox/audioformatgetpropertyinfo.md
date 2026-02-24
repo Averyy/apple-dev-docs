@@ -25,7 +25,7 @@ A result code. Returns `noErr` if successful.
 
 ## Parameters
 
-- `inPropertyID`: An   constant.
+- `inPropertyID`: An `AudioFormatPropertyID` constant.
 - `inSpecifierSize`: The size of the specifier data.
 - `inSpecifier`: A buffer of data used as an input argument for querying some of the properties.
 - `outPropertyDataSize`: The the size in bytes of the current value of the property. To get the property value, you need a buffer of this size.

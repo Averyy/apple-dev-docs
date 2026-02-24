@@ -21,7 +21,7 @@ func willHighlight(foundTextRange: UITextRange, document: Self.DocumentIdentifie
 ## Parameters
 
 - `foundTextRange`: The text range to highlight.
-- `document`: A string that uniquely identifies the document containing the text range.   when searching a single document.
+- `document`: A string that uniquely identifies the document containing the text range. `Nil` when searching a single document.
 
 ## See Also
 

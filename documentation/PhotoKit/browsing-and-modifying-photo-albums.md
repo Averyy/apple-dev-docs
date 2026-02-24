@@ -216,7 +216,7 @@ DispatchQueue.global(qos: .userInitiated).async {
 }
 ```
 
-After the user picks a filter, the app applies it and outputs the saved asset immediately. There’s no UI state for having chosen—but not yet committed—an edit. As such, there’s no role for reading adjustment data to resume in-progress edits, since PhotoBrowse has no notion of . However, it’s still good practice to write adjustment data so that potential future versions of the app—or other apps that understand your adjustment data format—could make use of it.
+After the user picks a filter, the app applies it and outputs the saved asset immediately. There’s no UI state for having chosen—but not yet committed—an edit. As such, there’s no role for reading adjustment data to resume in-progress edits, since PhotoBrowse has no notion of *in-progress*. However, it’s still good practice to write adjustment data so that potential future versions of the app—or other apps that understand your adjustment data format—could make use of it.
 
 ##### Create a New Album
 

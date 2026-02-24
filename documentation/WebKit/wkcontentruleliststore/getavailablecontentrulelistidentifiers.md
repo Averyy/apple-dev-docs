@@ -20,7 +20,7 @@ func availableIdentifiers() async -> [String]?
 
 ## Parameters
 
-- `completionHandler`: A completion handler block to call with the results. This block has no return value and takes the following parameter:
+- `completionHandler`: A completion handler block to call with the results. This block has no return value and takes the following parameter: - **identifierArray**: An array of strings, each of which corresponds to an identifier for a rule list in the data store. Use each string to look up the associated [`WKContentRuleList`](wkcontentrulelist.md) object. If the data store has no rule lists, the array is empty.
 
 ## See Also
 

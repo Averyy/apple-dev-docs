@@ -21,7 +21,7 @@ class UIGestureRecognizer
 
 #### Overview
 
-A  decouples the logic for recognizing a sequence of touches (or other input) and acting on that recognition. When one of these objects recognizes a common gesture or, in some cases, a change in the gesture, it sends an action message to each designated target object.
+A *gesture recognizer* decouples the logic for recognizing a sequence of touches (or other input) and acting on that recognition. When one of these objects recognizes a common gesture or, in some cases, a change in the gesture, it sends an action message to each designated target object.
 
 The concrete subclasses of [`UIGestureRecognizer`](uigesturerecognizer.md) are the following:
 
@@ -39,6 +39,20 @@ The [`UIGestureRecognizer`](uigesturerecognizer.md) class defines a set of commo
 A gesture recognizer operates on touches hit-tested to a specific view and all of that view’s subviews. It thus must be associated with that view. To make that association you must call the [`UIView`](uiview.md) method [`addGestureRecognizer(_:)`](uiview/addgesturerecognizer(_:).md). A gesture recognizer doesn’t participate in the view’s responder chain.
 
 A gesture recognizer has one or more target-action pairs associated with it. If there are multiple target-action pairs, they’re discrete, and not cumulative. Recognition of a gesture results in the dispatch of an action message to a target for each of the associated pairs. The action methods invoked must conform to one of the following signatures:
+
+**Swift**:
+
+```swift
+@IBAction func myActionMethod()
+@IBAction func myActionMethod(_ sender: UIGestureRecognizer)
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction)handleGesture;
+- (IBAction)handleGesture:(UIGestureRecognizer *)gestureRecognizer;
+```
 
 Methods conforming to the latter signature permit the target in some cases to query the gesture recognizer sending the message for additional information. For example, the target could ask a [`UIRotationGestureRecognizer`](uirotationgesturerecognizer.md) object for the angle of rotation (in radians) since the last invocation of the action method for this gesture. Clients of gesture recognizers can also ask for the location of a gesture by calling [`location(in:)`](uigesturerecognizer/location(in:).md) or [`location(ofTouch:in:)`](uigesturerecognizer/location(oftouch:in:).md).
 

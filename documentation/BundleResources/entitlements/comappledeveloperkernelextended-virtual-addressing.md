@@ -10,6 +10,10 @@ A Boolean value that indicates whether the app may access an extended address sp
 - iPadOS 14.0+
 - tvOS 14.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Use this entitlement if your app has specific needs that require a larger addressable space. For example, games that memory map assets to stream to the GPU may benefit from a larger address space.

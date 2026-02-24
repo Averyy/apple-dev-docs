@@ -25,7 +25,7 @@ Returns `true` if the location is in the range otherwise `false` .
 
 ## Parameters
 
-- `location`: An  .
+- `location`: An [`NSTextLocation`](nstextlocation.md).
 
 ## See Also
 

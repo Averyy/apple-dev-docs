@@ -32,8 +32,8 @@ func vImageGetPerspectiveWarp(_ srcPoints: UnsafePointer<(Float, Float)>, _ dest
 
 - `srcPoints`: The four source points.
 - `destPoints`: The four destination points.
-- `transform`: On output, a   structure that describes the transformation from the source points to the destination points.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass  ; otherwise, pass  .
+- `transform`: On output, a [`vImage_PerpsectiveTransform`](vimage_perpsectivetransform.md) structure that describes the transformation from the source points to the destination points.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
 
 ## See Also
 

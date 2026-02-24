@@ -28,7 +28,7 @@ If the value is `nil`, subscription stores will never show a sign in button. You
 
 ## Parameters
 
-- `action`: The action to perform. Pass   to remove the sign in action for   subscription stores within this view. The default value is  .
+- `action`: The action to perform. Pass `nil` to remove the sign in action for subscription stores within this view. The default value is `nil`.
 
 ## See Also
 

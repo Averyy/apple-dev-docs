@@ -25,7 +25,7 @@ protocol MTL4RenderCommandEncoder : MTL4CommandEncoder
 
 #### Overview
 
-A render pass draws a scene, or a component within a scene, to its render , the outputs of a render pass. You can render to those outputs with various approaches, including techniques that apply the following:
+A render pass draws a scene, or a component within a scene, to its render *attachments*, the outputs of a render pass. You can render to those outputs with various approaches, including techniques that apply the following:
 
 - Primitive drawing
 - Mesh drawing

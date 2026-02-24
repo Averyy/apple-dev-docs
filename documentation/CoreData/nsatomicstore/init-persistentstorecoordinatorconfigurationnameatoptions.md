@@ -34,8 +34,8 @@ It’s your responsibility to load the store’s metadata during initialization 
 
 - `coordinator`: The persistent store coordinator.
 - `configurationName`: The name of the store’s configuration in the managed object model.
-- `url`: The URL of the store to load. This value can’t be  .
-- `options`: A dictionary that contains the store’s options. For possible values, see  .
+- `url`: The URL of the store to load. This value can’t be `nil`.
+- `options`: A dictionary that contains the store’s options. For possible values, see [`Store options`](store-options.md).
 
 
 ---

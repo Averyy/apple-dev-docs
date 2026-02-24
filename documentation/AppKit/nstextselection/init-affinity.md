@@ -17,7 +17,7 @@ convenience init(_ location: any NSTextLocation, affinity: NSTextSelection.Affin
 ## Parameters
 
 - `location`: The text location
-- `affinity`: One of the possible   options.
+- `affinity`: One of the possible [`NSTextSelection.Affinity`](nstextselection/affinity-swift.enum.md) options.
 
 ## See Also
 

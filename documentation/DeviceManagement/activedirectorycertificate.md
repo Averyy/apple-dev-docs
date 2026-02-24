@@ -78,6 +78,25 @@ To get a certificate from a Microsoft CA, follow the instructions at [`Request a
 </plist>
 ```
 
+## Properties
+
+- `AllowAllAppsAccess` (boolean): If `true`, gives apps access to the private key. Available in macOS 10.10 and later.
+- `CertificateAcquisitionMechanism` (string): This value is most commonly `RPC`; if using web enrollment, use `HTTP`. Available in macOS 10.8 and later.
+- `CertificateAuthority` (string): The name of the certificate authority (CA), which is determined from the common name (CN) of the Active Directory entry. Available in macOS 10.8 and later. Valid values: - CN=
+- CN=`Certification Authorities`
+- CN=`Public Key Services`
+- CN=`Services`
+- CN=`Configuration`
+- CN=
+- `CertificateRenewalTimeInterval` (integer): The number of days in advance of certificate expiration that the notification center notifies the user.
+- `CertServer` (string) *(required)*: The fully qualified host name of the CA.
+- `CertTemplate` (string) *(required)*: The certificate template for your environment. The default user certificate value is `User`. The default computer certificate value is `Machine`.
+- `Description` (string): A user-friendly description of the certification identity.
+- `EnableAutoRenewal` (boolean): If `true`, the certificate obtained with this payload attempts auto-renewal. Auto-renewal can only be used with device Active Directory certificate payloads. Available in macOS 10.13.4 and later.
+- `KeyIsExtractable` (boolean): If `true`, the system allows exporting the private key. Available in macOS 10.10 and later.
+- `Keysize` (integer): The RSA key size for the certificate signing request (CSR). Available in macOS 10.11 and later.
+- `PromptForCredentials` (boolean): If `true`, the system prompts the user for credentials when is installs the profile. This key applies only to user certificates with the Manual Download profile delivery method. Omit this key for computer certificates. Available in macOS 10.8 and later.
+
 ## See Also
 
 - [object ACMECertificate](acmecertificate.md)

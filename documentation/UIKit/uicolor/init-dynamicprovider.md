@@ -28,7 +28,7 @@ Use this method to create a color object whose component values change based on 
 
 ## Parameters
 
-- `dynamicProvider`: A block that determines the appropriate color values based on the specified traits. This block returns a   object and takes a single parameter:
+- `dynamicProvider`: A block that determines the appropriate color values based on the specified traits. This block returns a [`UIColor`](uicolor.md) object and takes a single parameter: - **traits**: The trait collection to use when generating the color information. Always use the traits in this collection, and not the traits of the current environment, when determining the color information.
 
 
 ---

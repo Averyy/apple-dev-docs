@@ -22,7 +22,7 @@ func initialMaxStreamDataUnidirectional(_ initialMaxStreamDataUni: Int) -> QUIC
 
 ## Parameters
 
-- `initialMaxStreamDataUni`: The value to use for the    transport parameter on a QUIC   connection.
+- `initialMaxStreamDataUni`: The value to use for the `initial_max_stream_data_uni` transport parameter on a QUIC connection.
 
 
 ---

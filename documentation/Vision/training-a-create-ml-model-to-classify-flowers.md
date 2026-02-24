@@ -44,7 +44,7 @@ If you’re using photos taken on an iOS device to train your model, you can use
 
 1. In Xcode, open `ImageClassifierPlayground.playground` and display the Assistant Editor.
 2. Click Run on the last line of the Swift Playground; this opens the Create ML training environment.
-3. Place the training images you’d like to use into named folders (such as ).
+3. Place the training images you’d like to use into named folders (such as *Agapanthus*).
 4. Drag the set of folders into the Assistant Editor to perform image training.
 
 For more information about configuring the resultant model, as well as screenshots of the Create ML UI, see [`Creating an Image Classifier Model`](https://developer.apple.comhttps://developer.apple.com/documentation/createml/creating-an-image-classifier-model).

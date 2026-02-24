@@ -36,7 +36,7 @@ where `position` is the user-space coordinates of the pixel applied to the shade
 ## Parameters
 
 - `shader`: The shader defining the filled colors.
-- `bounds`: The rect used to define any   arguments   of the shader.
+- `bounds`: The rect used to define any `bounds` arguments of the shader.
 
 
 ---

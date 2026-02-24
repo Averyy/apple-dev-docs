@@ -36,8 +36,8 @@ If you use [`alertWithMessageText:defaultButton:alternateButton:otherButton:info
 
 - `window`: The parent window for the sheet.
 - `delegate`: The delegate for the modal-dialog session.
-- `didEndSelector`: Message the alert sends to   after the user responds but before the sheet is dismissed.
-- `contextInfo`: Contextual data passed to   in   message.
+- `didEndSelector`: Message the alert sends to `modalDelegate` after the user responds but before the sheet is dismissed.
+- `contextInfo`: Contextual data passed to `modalDelegate` in `didEndSelector` message.
 
 ## See Also
 

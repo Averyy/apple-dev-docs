@@ -7,6 +7,10 @@
 - iOS 12.0+
 - iPadOS 12.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [com.apple.developer.carplay-audio](entitlements/com.apple.developer.carplay-audio.md)

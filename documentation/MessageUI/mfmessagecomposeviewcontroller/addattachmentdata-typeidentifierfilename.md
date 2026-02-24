@@ -27,8 +27,8 @@ This method is especially useful when the attachment you want to add to a messag
 
 ## Parameters
 
-- `attachmentData`: Content in the form of an   object to attach to the message. Must not be  .
-- `uti`: A valid Uniform Type Identifier (UTI) appropriate for the attachment data. See  . Must not be  .
+- `attachmentData`: Content in the form of an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object to attach to the message. Must not be `nil`.
+- `uti`: A valid Uniform Type Identifier (UTI) appropriate for the attachment data. See [`Uniform Type Identifiers Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009257). Must not be `nil`.
 - `filename`: The name to present to the user, in the message UI, for the data attachment.
 
 ## See Also

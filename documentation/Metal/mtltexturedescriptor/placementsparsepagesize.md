@@ -21,7 +21,7 @@ var placementSparsePageSize: MTLSparsePageSize { get set }
 
 #### Discussion
 
-Set this property to a non-zero value to create a .
+Set this property to a non-zero value to create a *placement sparse texture*.
 
 Placement sparse textures are instances of [`MTLTexture`](mtltexture.md) that you assign memory to using a [`MTLHeap`](mtlheap.md) instance of type [`MTLHeapType.placement`](mtlheaptype/placement.md) and a [`maxCompatiblePlacementSparsePageSize`](mtlheapdescriptor/maxcompatibleplacementsparsepagesize.md) at least as large as the [`MTLSparsePageSize`](mtlsparsepagesize.md) value you assign to this property.
 

@@ -27,8 +27,8 @@ SwiftUI ignores this image for accessibility purposes.
 ## Parameters
 
 - `cgImage`: The base graphical image.
-- `scale`: The scale factor for the image,   with a value like  ,  , or  .
-- `orientation`: The orientation of the image. The default is   .
+- `scale`: The scale factor for the image, with a value like `1.0`, `2.0`, or `3.0`.
+- `orientation`: The orientation of the image. The default is [`Image.Orientation.up`](image/orientation/up.md).
 
 ## See Also
 

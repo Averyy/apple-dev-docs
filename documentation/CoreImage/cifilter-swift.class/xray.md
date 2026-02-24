@@ -29,6 +29,8 @@ This method applies a preconfigured set of effects that imitate a photo being sc
 
 The X-ray filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds an X-ray effect to the input image:
 
 ```swift

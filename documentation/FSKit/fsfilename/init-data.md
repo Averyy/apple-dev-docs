@@ -20,7 +20,7 @@ This initializer copies up to `name.length` characters of the sequence pointed t
 
 ## Parameters
 
-- `name`: The data object containing the character sequence to use for the filename. The sequence terminates if a   character exists prior to  .
+- `name`: The data object containing the character sequence to use for the filename. The sequence terminates if a `NUL` character exists prior to `name.length`.
 
 ## See Also
 

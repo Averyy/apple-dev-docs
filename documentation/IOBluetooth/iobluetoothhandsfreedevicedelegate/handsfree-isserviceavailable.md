@@ -17,7 +17,7 @@ optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, isServiceAvailabl
 ## Parameters
 
 - `device`: The connected Bluetooth hands-free phone or headset.
-- `isServiceAvailable`: The new service level. For possible values, see  .
+- `isServiceAvailable`: The new service level. For possible values, see [`IOBluetoothHandsFreeIndicatorService`](iobluetoothhandsfreeindicatorservice.md).
 
 ## See Also
 

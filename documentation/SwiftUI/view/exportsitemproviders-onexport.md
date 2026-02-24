@@ -21,8 +21,8 @@ If the associated view supports selection, the exported item should reflect that
 
 ## Parameters
 
-- `contentTypes`: The types of content that the view supports exporting.   An empty array means the view does not currently support exporting.
-- `onExport`: A closure that will be called on request of the items   by the shortcut or service.
+- `contentTypes`: The types of content that the view supports exporting. An empty array means the view does not currently support exporting.
+- `onExport`: A closure that will be called on request of the items by the shortcut or service.
 
 ## See Also
 

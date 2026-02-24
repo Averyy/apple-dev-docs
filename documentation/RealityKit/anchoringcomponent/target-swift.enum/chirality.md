@@ -29,7 +29,7 @@ enum Chirality
 
 ## See Also
 
-- [Happy Beam](../visionOS/happybeam.md)
+- [Happy Beam](../visionos/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
 - [AnchoringComponent.Target.HandLocation](anchoringcomponent/target-swift.enum/handlocation.md)
   Defines the locations of tracked hands to look for.

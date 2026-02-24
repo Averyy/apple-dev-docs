@@ -31,7 +31,7 @@ Locale objects use key-value pairs to store property values. Use this function t
 ## Parameters
 
 - `locale`: The locale object to examine.
-- `key`: The key for which to obtain the corresponding value. Possible values are described in  .
+- `key`: The key for which to obtain the corresponding value. Possible values are described in [`Locale Property Keys`](locale-property-keys.md).
 
 ## See Also
 

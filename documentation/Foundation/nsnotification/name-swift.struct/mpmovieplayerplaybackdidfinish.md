@@ -23,7 +23,7 @@ The `userInfo` dictionary of this notification contains the [`MPMoviePlayerPlayb
 
 The movie player whose state has changed is available as the object associated with the notification.
 
-This notification is  sent when a movie is displaying in fullscreen mode and the user taps Done. The Done button pauses playback and causes the movie player to exit fullscreen mode. To detect this scenario, register for other notifications such as [`MPMoviePlayerDidExitFullscreen`](nsnotification/name-swift.struct/mpmovieplayerdidexitfullscreen.md).
+This notification is *not* sent when a movie is displaying in fullscreen mode and the user taps Done. The Done button pauses playback and causes the movie player to exit fullscreen mode. To detect this scenario, register for other notifications such as [`MPMoviePlayerDidExitFullscreen`](nsnotification/name-swift.struct/mpmovieplayerdidexitfullscreen.md).
 
 ## See Also
 

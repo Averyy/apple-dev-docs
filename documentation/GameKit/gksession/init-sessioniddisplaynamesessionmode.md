@@ -26,9 +26,9 @@ Only sessions running with the same `sessionID` are visible to your session.
 
 ## Parameters
 
-- `sessionID`: A unique string that identifies your application. Your   should be the short name of an approved Bonjour service type. If  , the session uses the application’s bundle identifier to create a   string.
-- `name`: A string identifying the user to display to other peers. If  , the session uses the device name.
-- `mode`: The mode the session should run in. See   for possible values.
+- `sessionID`: A unique string that identifies your application. Your `sessionID` should be the short name of an approved Bonjour service type. If `nil`, the session uses the application’s bundle identifier to create a `sessionID` string.
+- `name`: A string identifying the user to display to other peers. If `nil`, the session uses the device name.
+- `mode`: The mode the session should run in. See [`GKSessionMode`](gksessionmode.md) for possible values.
 
 
 ---

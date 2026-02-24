@@ -27,7 +27,7 @@ The requested record.
 
 - `inRecordType`: The type of the record.
 - `inRecordName`: The name of the record.
-- `inAttributes`: An array of record attributes to be cached before the record is returned. Can be  .
+- `inAttributes`: An array of record attributes to be cached before the record is returned. Can be `nil`.
 
 ## See Also
 

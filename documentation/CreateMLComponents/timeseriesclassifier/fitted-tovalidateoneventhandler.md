@@ -29,8 +29,8 @@ The training process partitions the input into random batches according to the b
 
 ## Parameters
 
-- `input`: A sequence of annotated features for training. Each feature’s shape should be  .
-- `validation`: A sequence of annotated features for validating. Each feature’s shape should be  .
+- `input`: A sequence of annotated features for training. Each feature’s shape should be `[sequenceLength, featureSize]`.
+- `validation`: A sequence of annotated features for validating. Each feature’s shape should be `[sequenceLength, featureSize]`.
 - `eventHandler`: An event handler.
 
 ## See Also

@@ -38,11 +38,11 @@ If this callback is `NULL`, calling your object as a function throws an exceptio
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `function`: A   that is the function to call.
-- `thisObject`: A   that is the   variable in the function’s scope.
-- `argumentCount`: An integer count of the number of arguments in  .
-- `arguments`: A   array of the arguments to pass to the function.
-- `exception`: A pointer to a   to return an exception in, if any.
+- `function`: A [`JSObjectRef`](jsobjectref.md) that is the function to call.
+- `thisObject`: A [`JSObjectRef`](jsobjectref.md) that is the `this` variable in the function’s scope.
+- `argumentCount`: An integer count of the number of arguments in `arguments`.
+- `arguments`: A `JSValue` array of the arguments to pass to the function.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to return an exception in, if any.
 
 ## See Also
 

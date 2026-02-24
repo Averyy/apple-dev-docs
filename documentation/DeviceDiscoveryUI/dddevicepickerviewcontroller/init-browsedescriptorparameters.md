@@ -20,8 +20,8 @@ Creates a view controller that displays the other, available devices on your loc
 
 ## Parameters
 
-- `browseDescriptor`: A descriptor for your application service. To create an application service descriptor, call   and provide a name for the service.
-- `parameters`: Parameters for your network connection. Use   to create a default set of parameters that create an encrypted connection with the other devices. You can also add     to provide an application-level messaging protocol.
+- `browseDescriptor`: A descriptor for your application service. To create an application service descriptor, call `NWBrowser.Descriptor.applicationService(name:options:)` and provide a name for the service.
+- `parameters`: Parameters for your network connection. Use [`applicationService`](https://developer.apple.com/documentation/Network/NWParameters/applicationService) to create a default set of parameters that create an encrypted connection with the other devices. You can also add `a` [`NWProtocolFramer`](https://developer.apple.com/documentation/Network/NWProtocolFramer) to provide an application-level messaging protocol.
 
 ## See Also
 

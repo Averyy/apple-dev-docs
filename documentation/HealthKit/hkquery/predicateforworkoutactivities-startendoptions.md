@@ -40,7 +40,7 @@ HKQuery.predicateForWorkouts(activityPredicate: recentActivityPredicate)
 
 - `startDate`: The start date for the target time interval.
 - `endDate`: The end date for the target time interval.
-- `options`: A constant that specifies how HealthKit compares the sample’s start and end date with the target time interval. For a list of possible values, see  .
+- `options`: A constant that specifies how HealthKit compares the sample’s start and end date with the target time interval. For a list of possible values, see [`HKQueryOptions`](hkqueryoptions.md).
 
 ## See Also
 

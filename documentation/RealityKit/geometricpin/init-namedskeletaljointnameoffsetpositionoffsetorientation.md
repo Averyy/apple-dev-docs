@@ -25,10 +25,10 @@ The current animated joint transform defines the position and orientation of the
 
 ## Parameters
 
-- `name`: Name of the   in the namespace of the owning entity.
+- `name`: Name of the `GeometricPin` in the namespace of the owning entity.
 - `skeletalJointName`: Name of the skeletal joint that this pin attaches to.
-- `offsetPosition`: Adjustment of the   position in the coordinate frame of the joint.
-- `offsetOrientation`: Adjustment of the   orientation in the coordinate frame of the joint.
+- `offsetPosition`: Adjustment of the `GeometricPin` position in the coordinate frame of the joint.
+- `offsetOrientation`: Adjustment of the `GeometricPin` orientation in the coordinate frame of the joint.
 
 
 ---

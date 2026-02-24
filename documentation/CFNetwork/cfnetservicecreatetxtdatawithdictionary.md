@@ -35,7 +35,7 @@ This function is thread safe.
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the current default allocator.
 - `keyValuePairs`: CFDictionaryRef containing the key/value pairs that are to be placed in a TXT record. Each key must be a CFStringRef and each value should be a CFDataRef or a CFStringRef. (See the discussion below for additional information about values that are CFStringRefs.) This function fails if any other data types are provided. The length of a key and its value should not exceed 255 bytes.
 
 ## See Also

@@ -25,8 +25,8 @@ A [`JSStringRef`](jsstringref.md) that contains `chars`. Ownership follows [`The
 
 ## Parameters
 
-- `chars`: The buffer of Unicode characters to copy into the new  .
-- `numChars`: The number of characters to copy from the buffer that   points to.
+- `chars`: The buffer of Unicode characters to copy into the new [`JSStringRef`](jsstringref.md).
+- `numChars`: The number of characters to copy from the buffer that `chars` points to.
 
 ## See Also
 

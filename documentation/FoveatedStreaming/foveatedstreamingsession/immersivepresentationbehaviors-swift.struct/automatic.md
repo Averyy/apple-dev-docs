@@ -11,7 +11,7 @@ Opens the immersive space when the session connects or resumes and dismisses the
 ## Declaration
 
 ```swift
-static func automatic(_ open: OpenFoveatedStreamingSpaceAction, _ dismiss: DismissImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors
+static func automatic(_ open: OpenImmersiveSpaceAction, _ dismiss: DismissImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors
 ```
 
 ## Parameters

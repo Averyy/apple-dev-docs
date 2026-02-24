@@ -31,7 +31,7 @@ Each type of stream can define a set of properties that either describe or confi
 ## Parameters
 
 - `stream`: The stream to examine.
-- `propertyName`: The name of the stream property to obtain. The available properties for standard Core Foundation streams are listed in  .
+- `propertyName`: The name of the stream property to obtain. The available properties for standard Core Foundation streams are listed in [`CFStream`](cfstream.md).
 
 ## See Also
 

@@ -25,7 +25,7 @@ On return, the caller takes ownership of the memory pointed to by the `subscript
 ## Parameters
 
 - `client`: The client to query.
-- `count`: On return, the number of items in the   array.
+- `count`: On return, the number of items in the `subscriptions` array.
 - `subscriptions`: An array of subscribed event types.
 
 ## See Also

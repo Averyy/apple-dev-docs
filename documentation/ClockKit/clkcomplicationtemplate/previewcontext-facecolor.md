@@ -16,7 +16,7 @@ func previewContext(faceColor: CLKComplicationTemplate.PreviewFaceColor = .multi
 
 ## Parameters
 
-- `faceColor`: The tint color for the face. If you omit this parameter, it defaults to a full-color face. For a list of valid face colors, see  .
+- `faceColor`: The tint color for the face. If you omit this parameter, it defaults to a full-color face. For a list of valid face colors, see [`CLKComplicationTemplate.PreviewFaceColor`](clkcomplicationtemplate/previewfacecolor.md).
 
 ## See Also
 

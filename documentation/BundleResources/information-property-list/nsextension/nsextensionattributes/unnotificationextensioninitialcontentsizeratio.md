@@ -9,6 +9,10 @@ The initial size of the view controller’s view for an app extension, expressed
 - iOS 10.0+
 - iPadOS 10.0+
 
+
+
+**Type**: number
+
 ## See Also
 
 - [IDMessageFilterExtensionNetworkURL](information-property-list/nsextension/nsextensionattributes/idmessagefilterextensionnetworkurl.md)

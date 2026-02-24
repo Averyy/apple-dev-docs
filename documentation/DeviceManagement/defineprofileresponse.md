@@ -18,6 +18,11 @@ object DefineProfileResponse
 ### Dictionaries
 - [object DefineProfileResponse.Devices](defineprofileresponse/devices-data.dictionary.md)
 
+## Properties
+
+- `devices` (DefineProfileResponse.Devices)
+- `profile_uuid` (string)
+
 ## See Also
 
 - [object DefineProfileResponse.Devices](defineprofileresponse/devices-data.dictionary.md)

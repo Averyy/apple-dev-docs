@@ -30,7 +30,7 @@ The duration of the `CMBufferQueue` is the sum of all the individual            
 
 ## Parameters
 
-- `queue`:   being interrogated.
+- `queue`: `CMBufferQueue` being interrogated.
 
 ## See Also
 

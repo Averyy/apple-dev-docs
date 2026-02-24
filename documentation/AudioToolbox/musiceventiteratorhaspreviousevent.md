@@ -26,7 +26,7 @@ A result code.
 ## Parameters
 
 - `inIterator`: The music event iterator whose state you want to know about.
-- `outHasPrevEvent`: On output,   (nonzero) if there is an event closer to the start of the music track than the music event iterator’s current position;   (zero) otherwise.
+- `outHasPrevEvent`: On output, `true` (nonzero) if there is an event closer to the start of the music track than the music event iterator’s current position; `false` (zero) otherwise.
 
 ## See Also
 

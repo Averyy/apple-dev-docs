@@ -30,7 +30,7 @@ A CFData object containing the XML data. Ownership follows the [`The Create Rule
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new data object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new data object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `propertyList`: The property list to convert. This may be any of the standard property list objects, for example a CFArray or a CFDictionary object.
 
 ## See Also

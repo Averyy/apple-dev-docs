@@ -30,21 +30,21 @@ Some of the parameters specified in this call override equivalent pixel buffer a
 
 ## Parameters
 
-- `allocator`: The allocator to use for creating the buffer pool. Pass   for the   parameter to use the default allocator. See   for additional values you can use.
+- `allocator`: The allocator to use for creating the buffer pool. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) for the `allocator` parameter to use the default allocator. See [`Predefined Allocators`](https://developer.apple.com/documentation/CoreFoundation/predefined-allocators) for additional values you can use.
 - `width`: The width of the pixel buffer, in pixels.
 - `height`: The height of the pixel buffer, in pixels.
-- `pixelFormatType`: The pixel format identified by its respective four-character code (type  ).
-- `dataPtr`: A pointer to a plane descriptor block if applicable, or   if it is not.
-- `dataSize`: The size of the memory if the planes are contiguous, or   if it is not.
+- `pixelFormatType`: The pixel format identified by its respective four-character code (type `OSType`).
+- `dataPtr`: A pointer to a plane descriptor block if applicable, or `NULL` if it is not.
+- `dataSize`: The size of the memory if the planes are contiguous, or `NULL` if it is not.
 - `numberOfPlanes`: The number of planes.
 - `planeBaseAddress`: The array of base addresses for the planes.
 - `planeWidth`: The array of plane widths.
 - `planeHeight`: The array of plane heights.
 - `planeBytesPerRow`: The array of plane bytes-per-row values.
-- `releaseCallback`: The callback function that gets called when the pixel buffer is destroyed. This callback allows the owner of the pixels to free the memory. See   for more information.
+- `releaseCallback`: The callback function that gets called when the pixel buffer is destroyed. This callback allows the owner of the pixels to free the memory. See [`CVPixelBufferReleaseBytesCallback`](cvpixelbufferreleasebytescallback.md) for more information.
 - `releaseRefCon`: A pointer to user data identifying the pixel buffer. This value is passed to your pixel buffer release callback.
-- `pixelBufferAttributes`: A dictionary with additional attributes for a a pixel buffer. This parameter is optional. See   for more details.
-- `pixelBufferOut`: On output, the newly created pixel buffer. Ownership follows the  .
+- `pixelBufferAttributes`: A dictionary with additional attributes for a a pixel buffer. This parameter is optional. See [`Pixel Buffer Attribute Keys`](pixel-buffer-attribute-keys.md) for more details.
+- `pixelBufferOut`: On output, the newly created pixel buffer. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 

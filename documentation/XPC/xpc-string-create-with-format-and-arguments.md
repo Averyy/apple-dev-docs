@@ -26,7 +26,7 @@ A new string object.
 
 ## Parameters
 
-- `fmt`: The  -style format string from which to construct the final C-string to be boxed.
+- `fmt`: The `printf(3)`-style format string from which to construct the final C-string to be boxed.
 - `ap`: A pointer to the arguments which correspond to those specified in the format string.
 
 ## See Also

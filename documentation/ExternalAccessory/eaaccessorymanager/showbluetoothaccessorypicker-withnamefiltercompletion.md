@@ -30,7 +30,7 @@ On iOS devices, this method synchronously displays an alert containing the list 
 
 ## Parameters
 
-- `predicate`: The predicate is evaluated using the name of the Bluetooth accessory. The picker displays only devices with names that match the predicate. If you specify  , this method displays all discovered accessories.
+- `predicate`: The predicate is evaluated using the name of the Bluetooth accessory. The picker displays only devices with names that match the predicate. If you specify `nil`, this method displays all discovered accessories.
 - `completion`: A completion block to execute when the picker is dismissed. Use this block to track any errors that might occur during the pairing process.
 
 ## See Also

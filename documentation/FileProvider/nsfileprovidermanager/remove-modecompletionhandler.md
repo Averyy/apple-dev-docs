@@ -26,8 +26,8 @@ class func remove(_ domain: NSFileProviderDomain, mode: NSFileProviderManager.Do
 ## Parameters
 
 - `domain`: The domain to remove.
-- `mode`: An option that determines how the system handles user data. For a complete list of options, see  .
-- `completionHandler`: A block that the system calls after removing the domain. It takes the following parameter:
+- `mode`: An option that determines how the system handles user data. For a complete list of options, see [`NSFileProviderManager.DomainRemovalMode`](nsfileprovidermanager/domainremovalmode.md).
+- `completionHandler`: A block that the system calls after removing the domain. It takes the following parameter: - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

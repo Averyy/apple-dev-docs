@@ -38,7 +38,7 @@ You can configure an background session to schedule transfers at the discretion 
 
 ## Parameters
 
-- `identifier`: The unique identifier for the configuration object. This parameter must not be   or an empty string.
+- `identifier`: The unique identifier for the configuration object. This parameter must not be `nil` or an empty string.
 
 ## See Also
 

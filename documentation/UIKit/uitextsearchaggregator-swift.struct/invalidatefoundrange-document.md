@@ -24,7 +24,7 @@ Call this method to invalidate a text range when removing or changing text in th
 ## Parameters
 
 - `range`: The text range to remove from the set of matches.
-- `document`: A string that uniquely identifies the document containing the text range.   when searching a single document.
+- `document`: A string that uniquely identifies the document containing the text range. `Nil` when searching a single document.
 
 ## See Also
 

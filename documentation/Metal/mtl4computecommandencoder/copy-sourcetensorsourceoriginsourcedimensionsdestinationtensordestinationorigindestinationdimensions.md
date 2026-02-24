@@ -26,8 +26,8 @@ If the `sourceTensor` and `destinationTensor` instances are not aliasable, this 
 
 ## Parameters
 
-- `sourceTensor`: An   instance the command copies data from.
-- `destinationTensor`: An   instance the command copies data to.
+- `sourceTensor`: An [`MTLTensor`](mtltensor.md) instance the command copies data from.
+- `destinationTensor`: An [`MTLTensor`](mtltensor.md) instance the command copies data to.
 
 ## See Also
 

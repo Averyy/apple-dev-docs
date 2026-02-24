@@ -24,8 +24,8 @@ This function retrieves the status of a specified keychain. You can use this fun
 
 ## Parameters
 
-- `keychain`: A keychain object of the keychain whose status you wish to determine for the user session. Pass   to obtain the status of the default keychain.
-- `keychainStatus`: On return, a pointer to the status of the specified keychain. See   for valid status constants.
+- `keychain`: A keychain object of the keychain whose status you wish to determine for the user session. Pass `NULL` to obtain the status of the default keychain.
+- `keychainStatus`: On return, a pointer to the status of the specified keychain. See [`SecKeychainStatus`](seckeychainstatus.md) for valid status constants.
 
 
 ---

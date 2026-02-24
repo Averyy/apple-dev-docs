@@ -31,7 +31,7 @@ You can create placemark objects manually for entities for which you already hav
 ## Parameters
 
 - `coordinate`: The geographic coordinate to associate with the placemark.
-- `addressDictionary`: A dictionary containing keys and values from an Address Book record. For a list of strings that you can use for the keys of this dictionary, see the “Address Property” constants in  . All of the keys in should be at the top level of the dictionary.
+- `addressDictionary`: A dictionary containing keys and values from an Address Book record. For a list of strings that you can use for the keys of this dictionary, see the “Address Property” constants in `ABPerson`. All of the keys in should be at the top level of the dictionary.
 
 ## See Also
 

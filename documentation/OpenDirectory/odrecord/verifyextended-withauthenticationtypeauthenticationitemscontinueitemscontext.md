@@ -22,9 +22,9 @@ func verifyExtended(withAuthenticationType inType: String!, authenticationItems 
 ## Parameters
 
 - `inType`: The authentication type.
-- `inItems`: An array of   or   objects to be used in the authentication process.
-- `outItems`: An array of   objects returned from the authentication process, if any are returned;   otherwise.
-- `outContext`: The proper context if the authentication attempt requires a context;   otherwise. If not  , then more calls must be made with the Context to continue the authentication.
+- `inItems`: An array of `NSString` or `NSData` objects to be used in the authentication process.
+- `outItems`: An array of `NSData` objects returned from the authentication process, if any are returned; `nil` otherwise.
+- `outContext`: The proper context if the authentication attempt requires a context; `nil` otherwise. If not `nil`, then more calls must be made with the Context to continue the authentication.
 
 ## See Also
 

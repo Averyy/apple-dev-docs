@@ -21,7 +21,7 @@ An initialized `NSXMLDocument` object, or  `nil` if initialization fails for any
 
 ## Parameters
 
-- `element`: An   object representing an XML element.
+- `element`: An [`XMLElement`](xmlelement.md) object representing an XML element.
 
 ## See Also
 

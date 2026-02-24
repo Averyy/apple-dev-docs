@@ -31,7 +31,7 @@ Because this method does not return error information, it has been deprecated as
 ## Parameters
 
 - `path`: The path for a symbolic link.
-- `otherpath`: The path to which   should refer.
+- `otherpath`: The path to which `path` should refer.
 
 ## See Also
 

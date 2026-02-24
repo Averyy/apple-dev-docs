@@ -21,7 +21,7 @@ protocol CIFilterConstructor
 
 #### Overview
 
-Objects implementing this protocol are called —they produce new instances of [`CIFilter`](cifilter-swift.class.md) subclasses when filters are requested by name. You can create a filter constructor to provide new, custom filters that other Core Image clients can discover using the `CIFilter` class. Normally, you create and register custom filters by packaging them as Image Units (see [`Packaging and Loading Image Units`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_image_units/ci_image_units.html#//apple_ref/doc/uid/TP30001185-CH7)), but you can use this protocol to provide new filters within your app that are compositions of existing filters.
+Objects implementing this protocol are called *filter constructors*—they produce new instances of [`CIFilter`](cifilter-swift.class.md) subclasses when filters are requested by name. You can create a filter constructor to provide new, custom filters that other Core Image clients can discover using the `CIFilter` class. Normally, you create and register custom filters by packaging them as Image Units (see [`Packaging and Loading Image Units`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_image_units/ci_image_units.html#//apple_ref/doc/uid/TP30001185-CH7)), but you can use this protocol to provide new filters within your app that are compositions of existing filters.
 
 To provide custom filters using this protocol, you must:
 

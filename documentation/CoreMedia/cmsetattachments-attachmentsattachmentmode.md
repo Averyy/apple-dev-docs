@@ -26,7 +26,7 @@ func CMSetAttachments(_ target: CMAttachmentBearer, attachments theAttachments: 
 
 ## Parameters
 
-- `target`: The target   to set the attachment to.
+- `target`: The target `CMAttachmentBearer` to set the attachment to.
 - `theAttachments`: The attachments to set, in the form of a Core Foundation dictionary.
 - `attachmentMode`: Specifies the attachment mode for this attachment. A particular attachment key can only exist in a single mode at a time.
 

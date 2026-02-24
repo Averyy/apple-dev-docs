@@ -26,7 +26,7 @@ The default implementation first calls the method [`compositionAttributes(at:)`]
 
 ## Parameters
 
-- `style`: A style, which should be one of the following values:  ,  , or  . See the   header file for the definition of these values.
+- `style`: A style, which should be one of the following values: [`kTSMHiliteSelectedRawText`](https://developer.apple.com/documentation/coreservices/ktsmhiliteselectedrawtext), [`kTSMHiliteConvertedText`](https://developer.apple.com/documentation/coreservices/ktsmhiliteconvertedtext), or [`kTSMHiliteSelectedConvertedText`](https://developer.apple.com/documentation/coreservices/ktsmhiliteselectedconvertedtext). See the `AERegistry.h` header file for the definition of these values.
 - `range`: The range (that is, a clause) to mark.
 
 ## See Also

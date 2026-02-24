@@ -31,7 +31,7 @@ A point is contained within the path of a graphics context if the point is insid
 ## Parameters
 
 - `point`: The point to check, specified in user space units.
-- `mode`: A path drawing mode. See  .
+- `mode`: A path drawing mode. See [`CGPathDrawingMode`](cgpathdrawingmode.md).
 
 ## See Also
 

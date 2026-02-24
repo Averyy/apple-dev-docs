@@ -32,9 +32,9 @@ When applying a filter kernel, the region of interest (ROI) is the area of sourc
 ## Parameters
 
 - `extent`: The extent of the output image.
-- `callback`: A block or closure that computes the region of interest for a given rectangle of destination image pixels. See  .
+- `callback`: A block or closure that computes the region of interest for a given rectangle of destination image pixels. See [`CIKernelROICallback`](cikernelroicallback.md).
 - `image`: The input image to be processed by the warp kernel.
-- `args`: An array of arguments to pass to the kernel routine. The type of each object in the array must be compatible with the corresponding parameter declared in the kernel routine source code. For details, see  .
+- `args`: An array of arguments to pass to the kernel routine. The type of each object in the array must be compatible with the corresponding parameter declared in the kernel routine source code. For details, see [`Core Image Kernel Language Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CIKernelLangRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004397).
 
 
 ---

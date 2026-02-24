@@ -17,8 +17,8 @@ func setConfiguration(_ configuration: SCContentSharingPickerConfiguration?, for
 
 ## Parameters
 
-- `configuration`: The configuration to set for the given capture stream. When this value is  , changes the stream configuration to use  .
-- `stream`: The capture stream to set a configuration for. When this value is  , applies to all currently active streams.
+- `configuration`: The configuration to set for the given capture stream. When this value is `nil`, changes the stream configuration to use [`defaultConfiguration`](sccontentsharingpicker/defaultconfiguration-9v5sa.md).
+- `stream`: The capture stream to set a configuration for. When this value is `nil`, applies to all currently active streams.
 
 ## See Also
 

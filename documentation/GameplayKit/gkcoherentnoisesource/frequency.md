@@ -23,7 +23,7 @@ var frequency: Double { get set }
 
 The effect of this property varies for each coherent noise source class. Generally, increasing frequency increases the number of (and decreases the size of) visible features in any given unit area of a generated noise map. The default value is `1.0`.
 
-Coherent noise is composed from several applications of a pseudorandom function. Each successive application, or , increases in frequency and decreases in amplitude relative to the previous octave. This combination of many octaves produces the fractal appearance that makes coherent noise resemble natural phenomena like clouds, stone, and water. This property controls the base frequency of the noise function; the [`octaveCount`](gkcoherentnoisesource/octavecount.md), [`lacunarity`](gkcoherentnoisesource/lacunarity.md), and (for some subclasses) [`persistence`](gkperlinnoisesource/persistence.md) properties determine how the frequencies of successive octaves change.
+Coherent noise is composed from several applications of a pseudorandom function. Each successive application, or *octave*, increases in frequency and decreases in amplitude relative to the previous octave. This combination of many octaves produces the fractal appearance that makes coherent noise resemble natural phenomena like clouds, stone, and water. This property controls the base frequency of the noise function; the [`octaveCount`](gkcoherentnoisesource/octavecount.md), [`lacunarity`](gkcoherentnoisesource/lacunarity.md), and (for some subclasses) [`persistence`](gkperlinnoisesource/persistence.md) properties determine how the frequencies of successive octaves change.
 
 ## See Also
 

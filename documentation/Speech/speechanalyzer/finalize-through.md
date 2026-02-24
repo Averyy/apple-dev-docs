@@ -29,7 +29,7 @@ If the given time has already been finalized (it pre-dates the volatile range), 
 
 ## Parameters
 
-- `through`: If  , finalizes up to and including the last audio the analyzer   taken from the input sequence, and if the analyzer has not taken any audio from the input sequence, this method does nothing.
+- `through`:  Finalizes up to and including the given time-code. If the analyzer hasn’t already taken that audio from the input sequence, the method waits until analysis proceeds to that audio before finalizing. If `nil`, finalizes up to and including the last audio the analyzer *has* taken from the input sequence, and if the analyzer has not taken any audio from the input sequence, this method does nothing.
 
 ## See Also
 

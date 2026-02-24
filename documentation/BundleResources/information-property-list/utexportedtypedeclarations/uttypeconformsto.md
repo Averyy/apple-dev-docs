@@ -11,6 +11,10 @@ The Uniform Type Identifier types that this type conforms to.
 - macOS 10.7+
 - visionOS 1.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [UTTypeDescription](information-property-list/utexportedtypedeclarations/uttypedescription.md)

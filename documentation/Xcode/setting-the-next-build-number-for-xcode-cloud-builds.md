@@ -6,7 +6,7 @@ Start numbering builds from a custom build number for your existing Mac app to a
 
 #### Overview
 
-Xcode Cloud assigns a build number to each build it performs. A  is an integer value that Xcode Cloud automatically increases with each build, starting from `1`. Your first Xcode Cloud build’s build number is `1`, the second build’s build number is `2`, the third build’s build number is `3`, and so on.
+Xcode Cloud assigns a build number to each build it performs. A *build number* is an integer value that Xcode Cloud automatically increases with each build, starting from `1`. Your first Xcode Cloud build’s build number is `1`, the second build’s build number is `2`, the third build’s build number is `3`, and so on.
 
 For all apps except existing macOS apps, use the default value of `1` for Xcode Cloud builds. For existing Mac apps, start the build number from a different value than `1`.
 

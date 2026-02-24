@@ -28,9 +28,9 @@ To determine whether a GPU supports memory barriers, see the [`Metal feature set
 
 ## Parameters
 
-- `scope`: An   instance that represents the resource types the barrier synchronizes operations on.
-- `after`: The render stages of previous draw commands that modify resources of the types that   defines.
-- `before`: The render stages of subsequent draw commands that read or modify resources of the types that   defines.
+- `scope`: An [`MTLBarrierScope`](mtlbarrierscope.md) instance that represents the resource types the barrier synchronizes operations on.
+- `after`: The render stages of previous draw commands that modify resources of the types that `scope` defines.
+- `before`: The render stages of subsequent draw commands that read or modify resources of the types that `scope` defines.
 
 ## See Also
 

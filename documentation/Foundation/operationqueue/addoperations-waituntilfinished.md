@@ -29,7 +29,7 @@ Once added, the specified `operation` remains in the queue until its [`isFinishe
 ## Parameters
 
 - `ops`: The operations to be added to the queue.
-- `wait`: If  , the current thread is blocked until all of the specified operations finish executing. If  , the operations are added to the queue and control returns immediately to the caller.
+- `wait`: If [`true`](https://developer.apple.com/documentation/Swift/true), the current thread is blocked until all of the specified operations finish executing. If [`false`](https://developer.apple.com/documentation/Swift/false), the operations are added to the queue and control returns immediately to the caller.
 
 ## See Also
 

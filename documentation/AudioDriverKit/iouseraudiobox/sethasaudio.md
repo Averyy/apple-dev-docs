@@ -26,7 +26,7 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `in_has_audio`:   if the box supports audio; otherwise,  .
+- `in_has_audio`: `true` if the box supports audio; otherwise, `false`.
 
 ## See Also
 

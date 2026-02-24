@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-A property that defines the content in a text input area as a prefix or title, such as .
+A property that defines the content in a text input area as a prefix or title, such as *Dr*.
 
 **Availability**:
 - macOS 14.0+
@@ -19,7 +19,7 @@ static let namePrefix: NSTextContentType
 - [static let name: NSTextContentType](nstextcontenttype/name.md)
   A property that defines the content in a text input area as a name.
 - [static let nameSuffix: NSTextContentType](nstextcontenttype/namesuffix.md)
-  A property that defines the content in a text input area as a suffix, such as .
+  A property that defines the content in a text input area as a suffix, such as *Jr*.
 - [static let givenName: NSTextContentType](nstextcontenttype/givenname.md)
   A property that defines the content in a text input area as a first name.
 - [static let middleName: NSTextContentType](nstextcontenttype/middlename.md)

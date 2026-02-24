@@ -22,7 +22,7 @@ For example, set the semantic content attribute on a [`WKInterfaceGroup`](wkinte
 
 ## Parameters
 
-- `semanticContentAttribute`: The object’s semantic content attribute. For a list of possible values, see  .
+- `semanticContentAttribute`: The object’s semantic content attribute. For a list of possible values, see [`WKInterfaceSemanticContentAttribute`](wkinterfacesemanticcontentattribute.md).
 
 
 ---

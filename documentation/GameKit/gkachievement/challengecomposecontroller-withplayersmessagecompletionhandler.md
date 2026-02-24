@@ -30,7 +30,7 @@ The view controller returned is presented modally from the top view controller. 
 
 ## Parameters
 
-- `playerIDs`: An array of   objects that contains the player identifiers that the challenge is to be sent to.
+- `playerIDs`: An array of `NSString` objects that contains the player identifiers that the challenge is to be sent to.
 - `message`: The message that is sent to other players. This message can be edited by the player.
 - `completionHandler`: A block to be called after the view controller has been displayed. Contains the reason the handler was called and all player identifiers that the challenge was sent to.
 

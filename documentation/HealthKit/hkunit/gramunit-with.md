@@ -27,9 +27,22 @@ A HealthKit unit for measuring mass based on grams and the given prefix.
 
 This method is used to create prefixed versions of grams, typically kilogram units, as shown below.
 
+**Swift**:
+
+```swift
+let kg = HKUnit.gramUnitWithMetricPrefix(.Kilo)
+let kg = HKUnit.gramUnitWithMetricPrefix(.Kilo)
+```
+
+**Objective-C**:
+
+```objc
+HKUnit *kg = [HKUnit gramUnitWithMetricPrefix:HKMetricPrefixKilo];
+```
+
 ## Parameters
 
-- `prefix`: A valid metric prefix value. For the complete list of prefix values, see  .
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](hkmetricprefix.md).
 
 ## See Also
 

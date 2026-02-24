@@ -8,6 +8,10 @@ A Boolean value that indicates whether the bundle is a watchOS app.
 **Availability**:
 - watchOS 1.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Xcode automatically includes this key in the WatchKit app’s information property list when you create a watchOS project from a template.

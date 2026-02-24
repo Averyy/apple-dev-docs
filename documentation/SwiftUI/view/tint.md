@@ -54,7 +54,7 @@ Some controls adapt to the tint color differently based on their style, the curr
 
 ## Parameters
 
-- `tint`: The tint   to apply.
+- `tint`: The tint [`Color`](color.md) to apply.
 
 ## See Also
 

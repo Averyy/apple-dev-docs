@@ -44,11 +44,11 @@ struct FoveatedStreamingSampleApp: App {
 
 A [`FoveatedStreamingSession`](foveatedstreamingsession.md) allows you to establish a connection with a streaming endpoint, manage the connection life cycle, and access bidirectional data channels for custom data exchange.
 
-The sample initializes the foveated streaming session directly in the main app structure so it’s accessible to the [`FoveatedStreamingSpace`](foveatedstreamingspace.md).
+The sample initializes the foveated streaming session directly in the main app structure so it’s accessible to the [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace).
 
 #### Define a Foveated Streaming Space
 
-Create an immersive space to display streamed content for the session by defining a [`FoveatedStreamingSpace`](foveatedstreamingspace.md) in the app’s body:
+Create an immersive space to display streamed content for the session by defining an [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace) in the app’s body:
 
 ```swift
 struct FoveatedStreamingSampleApp: App {
@@ -60,7 +60,7 @@ struct FoveatedStreamingSampleApp: App {
         
         // ...
         
-        FoveatedStreamingSpace(session: session) {
+        ImmersiveSpace(foveatedStreaming: session) {
             // ...
         }
         .immersionStyle(selection: .constant(.progressive), in: .progressive)
@@ -76,9 +76,9 @@ You can optionally add native [`RealityKit`](https://developer.apple.com/documen
 
 The [`FoveatedStreamingSession`](foveatedstreamingsession.md) provides three ways to connect to a streaming endpoint:
 
--  Automatically discover nearby computers that are ready to stream content.
--  Manually connect to a computer on your local network using its IP address and port.
--  Manually connect to a remote streaming endpoint using its URL and port.
+- **System discovery:** Automatically discover nearby computers that are ready to stream content.
+- **Local:** Manually connect to a computer on your local network using its IP address and port.
+- **Remote:** Manually connect to a remote streaming endpoint using its URL and port.
 
 System discovery allows the person to automatically connect to a streaming endpoint without having to specify its IP address. This is the recommended connection method for people in close proximity to their streaming computer and its display.
 
@@ -92,36 +92,51 @@ try await session.connect(endpoint: .systemDiscovered)
 
 Upon calling this method, visionOS presents the person with system UI that allows them to select a device from a list of nearby computers that are ready to stream content.
 
-Alternatively, you can connect to a streaming endpoint directly by entering its IP address and port.
+Alternatively, a person can connect to a streaming endpoint directly by entering its IP address and port.
 
-![A screenshot of a Connect to Stream dialog box showing the Local IP tab selected. The interface displays a computer monitor icon, two input fields containing 0.0.0.255 and port 59696, and a blue Connect button at the bottom.](https://docs-assets.developer.apple.com/published/964ecc3cfa2d68a3c58d87bd3585b1a9/connect-with-ip-address%402x.png)
+![A screenshot of a Connect to Stream dialog box showing the Local IP tab selected. The interface displays a computer monitor icon, two input fields containing 1.1.1.1 and port 55000, and a blue Connect button at the bottom.](https://docs-assets.developer.apple.com/published/964ecc3cfa2d68a3c58d87bd3585b1a9/connect-with-ip-address%402x.png)
 
-Initiate a direct connection with the [`local(ipAddress:port:)`](foveatedstreamingsession/endpoint/local(ipaddress:port:).md) endpoint:
-
-```swift
-try await session.connect(endpoint: .local(ipAddress: ipAddress, port: port))
-```
-
-The sample initializes the IP address and port variables with [`AppStorage`](https://developer.apple.com/documentation/SwiftUI/AppStorage) so that the person doesn’t have to reenter them each time they use the app:
+The sample initializes the IP address and port variables with [`AppStorage`](https://developer.apple.com/documentation/SwiftUI/AppStorage) so that the person doesn’t have to reenter them each time they use the app. The sample also converts them to [`IPv4Address`](https://developer.apple.com/documentation/Network/IPv4Address) and [`NWEndpoint.Port`](https://developer.apple.com/documentation/Network/NWEndpoint/Port) objects to validate them:
 
 ```swift
 @AppStorage("ipAddress") private var ipAddress: String = "0.0.0.0"
 @AppStorage("port") private var port: Int = 55000
+
+// ...
+
+var networkIPAddress: IPAddress? {
+    IPv4Address(ipAddress)
+}
+
+var networkPort: NWEndpoint.Port? {
+    NWEndpoint.Port(String(port))
+}
+
+var isIPAddressAndPortValid: Bool {
+    networkPort != nil && networkIPAddress != nil
+}
 ```
 
-You can also connect to a remote streaming endpoint by entering its server name.
+The sample initiates a direct connection with the [`local(ipAddress:port:)`](foveatedstreamingsession/endpoint/local(ipaddress:port:).md) endpoint:
+
+```swift
+try await session.connect(endpoint: .local(ipAddress: networkIPAddress, port: networkPort))
+```
+
+A person can also connect to a remote streaming endpoint that you host in the cloud.
 
 ![A screenshot of a Connect to a Stream dialog box showing the Remote tab selected. The interface displays a network icon, a dropdown picker containing the text Example Endpoint, and a blue Connect button at the bottom.](https://docs-assets.developer.apple.com/published/cbd7c29048740b26836ac0a196addeb0/connect-with-remote-server%402x.png)
 
-Initiate a remote connection with the [`remote(serverName:)`](foveatedstreamingsession/endpoint/remote(servername:).md) endpoint:
+The sample initiates a remote connection with the [`remote(serverName:signalingHeaders:)`](foveatedstreamingsession/endpoint/remote(servername:signalingheaders:).md) endpoint:
 
 ```swift
-try await session.connect(endpoint: .remote(serverName: serverName))
+try await session.connect(endpoint: .remote(serverName: serverName, 
+                                            signalingHeaders: ["test-header": "my-test"]))
 ```
 
-> **Note**: To connect to a specific remote server, add an entry to the [`ApprovedStreamingEndpoints`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/ApprovedStreamingEndpoints) dictionary in your app’s `Info.plist` file with the server’s name as the key and the server’s URL as the value. The framework looks up the server URL from the `ApprovedStreamingEndpoints` dictionary with the server name you pass to the remote endpoint.
+Connect to a specific remote server by adding an entry to the [`ApprovedStreamingEndpoints`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/ApprovedStreamingEndpoints) dictionary in your app’s `Info.plist` file with the server’s name as the key and the server’s URL as the value. The framework looks up the server URL from the `ApprovedStreamingEndpoints` dictionary with the server name you pass to the remote endpoint. You can use signaling headers to authenticate and manage the connection. For more information, see [`Connecting to a streaming function with a client`](https://developer.apple.comhttps://docs.nvidia.com/cloud-functions/user-guide/latest/cloud-function/function-creation.html#connecting-to-a-streaming-function-with-a-client).
 
-For the `.systemDiscovered` and `.local` connection methods, visionOS then has the person scan a QR code on the device they connected to. This performs authentication if it’s their first time establishing a connection to that streaming endpoint. For more information on how to authenticate a connection with Apple Vision Pro from your streaming application, see [`Establishing foveated streaming sessions with Apple Vision Pro`](establishing-foveated-streaming-sessions-with-apple-vision-pro.md).
+After initiating a connection with the `.systemDiscovered` and `.local` connection methods, visionOS then has the person scan a QR code on the device they connected to. This performs authentication if it’s their first time establishing a connection to that streaming endpoint. For more information on how to authenticate a connection with Apple Vision Pro from your streaming application, see [`Establishing foveated streaming sessions with Apple Vision Pro`](establishing-foveated-streaming-sessions-with-apple-vision-pro.md).
 
 After authenticating, visionOS displays a modal asking the person whether they want to begin sharing information about the approximate region where they’re looking and start streaming or cancel the connection. If the person cancels the connection, the [`connect(endpoint:)`](foveatedstreamingsession/connect(endpoint:).md) method throws a [`FoveatedStreamingSession.DisconnectReason`](foveatedstreamingsession/disconnectreason.md) error.
 
@@ -196,7 +211,7 @@ class StreamActions {
 }
 ```
 
-The sample makes `FoveatedStreamingSession.Endpoint` available in the simulator by declaring a mock version of it in a custom `FoveatedStreamingSimulator` framework that targets the simulator.
+The sample makes the `FoveatedStreamingSession.Endpoint` symbol available in the simulator by declaring a mock version of it in a custom `FoveatedStreamingSimulator` framework that targets the simulator.
 
 In the main app structure, the sample passes a `StreamActions` object to the environment with methods that invoke the respective [`FoveatedStreamingSession`](foveatedstreamingsession.md) methods:
 
@@ -247,9 +262,11 @@ private struct StreamConnectionView: View {
                 case .systemDiscovered:
                     try await streamActions.connect(.systemDiscovered)
                 case .local:
-                    try await streamActions.connect(.local(ipAddress: ipAddress, port: port))
+                    guard let networkIPAddress, let networkPort else { return }
+                    try await streamActions.connect(.local(ipAddress: networkIPAddress, port: networkPort))
                 case .remote:
-                    try await streamActions.connect(.remote(serverName: serverName))
+                    try await streamActions.connect(.remote(serverName: serverName,
+                                                            signalingHeaders: ["test-header": "my-test"]))
             }
             // ...
         }
@@ -279,14 +296,14 @@ This decouples views from being dependent on [`FoveatedStreamingSession`](foveat
 
 #### Display the Streamed Content
 
-To show the streamed content after the app establishes a connection to a streaming endpoint, open the `FoveatedStreamingSpace`.
+To show the streamed content after the app establishes a connection to a streaming endpoint, open the `ImmersiveSpace`.
 
-You can open the `FoveatedStreamingSpace` manually with the [`openFoveatedStreamingSpace`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/openFoveatedStreamingSpace) environment variable, or you can set the [`immersivePresentationBehaviors`](foveatedstreamingsession/immersivepresentationbehaviors-swift.property.md) of the [`FoveatedStreamingSession`](foveatedstreamingsession.md) to define when the session automatically opens and dismisses the streaming space.
+You can open the `ImmersiveSpace` manually with the [`openImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/openImmersiveSpace) environment variable, or you can set the [`immersivePresentationBehaviors`](foveatedstreamingsession/immersivepresentationbehaviors-swift.property.md) of the [`FoveatedStreamingSession`](foveatedstreamingsession.md) to define when the session automatically opens and dismisses the streaming space.
 
 The sample automatically opens the streaming space when the session connects or resumes, and automatically closes it when the session pauses or disconnects by setting its [`immersivePresentationBehaviors`](foveatedstreamingsession/immersivepresentationbehaviors-swift.property.md) to [`automatic(_:_:)`](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/automatic(_:_:).md):
 
 ```swift
-@Environment(\.openFoveatedStreamingSpace) var openFoveatedStreamingSpace
+@Environment(\.openImmersiveSpace) var openImmersiveSpace
 @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
 @Environment(FoveatedStreamingSession.self) var session
 
@@ -295,7 +312,7 @@ The sample automatically opens the streaming space when the session connects or 
 private func setImmersivePresentationBehavior() {     
    // Automatically present the foveated streaming space when the session connects or resumes,
    // and hide it when the session pauses or disconnects.    
-   session.immersivePresentationBehaviors = .automatic(openFoveatedStreamingSpace, dismissImmersiveSpace) 
+   session.immersivePresentationBehaviors = .automatic(openImmersiveSpace, dismissImmersiveSpace) 
 }
 ```
 
@@ -361,7 +378,8 @@ struct ContentView: View {
         .onChange(of: session.status) {
             if case .disconnected(let disconnectReason) = session.status,
                disconnectReason != .appInitiatedDisconnect,
-               disconnectReason != .unauthorized {
+               disconnectReason != .unauthorized,
+               disconnectReason != .endpointInitiatedDisconnect {
                 disconnectReasonDescription = disconnectReason.errorDescription
                 isShowingDisconnectAlert = true
             }
@@ -369,11 +387,12 @@ struct ContentView: View {
         .alert(disconnectReasonDescription ?? "Unknown Reason", isPresented: $isShowingDisconnectAlert) {
             Button("OK") { }
         }
+        // ...
     }
 }
 ```
 
-The sample app doesn’t display an error message when the `DisconnectReason` is either [`appInitiatedDisconnect`](foveatedstreamingsession/disconnectreason/appinitiateddisconnect.md) or [`unauthorized`](foveatedstreamingsession/disconnectreason/unauthorized.md) as these are caused intentionally by the person using the app. For design guidance on when to display alerts, see Human Interface Guidelines > [`Alerts`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/alerts).
+The sample app doesn’t display an error message when the `DisconnectReason` is [`appInitiatedDisconnect`](foveatedstreamingsession/disconnectreason/appinitiateddisconnect.md), [`unauthorized`](foveatedstreamingsession/disconnectreason/unauthorized.md), or [`endpointInitiatedDisconnect`](foveatedstreamingsession/disconnectreason/endpointinitiateddisconnect.md) as these are caused intentionally by the person using the app. For design guidance on when to display alerts, see Human Interface Guidelines > [`Alerts`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/alerts).
 
 #### Manage Streaming Controls
 
@@ -675,14 +694,14 @@ class MessageChannelModel {
 }
 ```
 
-The `setUpMessageChannel` method calls [`getMessageChannel(_:)`](foveatedstreamingsession/getmessagechannel(_:).md) to get a [`FoveatedStreamingSession.MessageChannel`](foveatedstreamingsession/messagechannel.md) object for channels it doesn’t already hold a reference to:
+The `setUpMessageChannel` method calls [`messageChannel(for:)`](foveatedstreamingsession/messagechannel(for:).md) to get a [`FoveatedStreamingSession.MessageChannel`](foveatedstreamingsession/messagechannel.md) object for channels it doesn’t already hold a reference to:
 
 ```swift
 
 private func setUpMessageChannel(for channelId: FoveatedStreamingSession.MessageChannel.ID) {
     // Skip channels that are already set up.
     guard availableChannels[channelId] == nil,
-            let messageChannel = session.getMessageChannel(channelId) else {
+            let messageChannel = session.messageChannel(for: channelId) else {
         return
     }
     // Save the channel.
@@ -709,11 +728,11 @@ private func startReceivingMessages(for channel: FoveatedStreamingSession.Messag
 }
 ```
 
-The sample sends messages by calling [`sendServerMessage(_:)`](foveatedstreamingsession/messagechannel/sendservermessage(_:).md) when a person presses a button in the `MessageChannelView`:
+The sample sends messages by calling [`sendMessage(_:)`](foveatedstreamingsession/messagechannel/sendmessage(_:).md) when a person presses a button in the `MessageChannelView`:
 
 ```swift
 private func sendMessage(message: Data, channel: FoveatedStreamingSession.MessageChannel) throws {
-    try channel.sendServerMessage(message)
+    try channel.sendMessage(message)
 }
 ```
 
@@ -722,7 +741,7 @@ While this sample sends and receives messages as strings, consider utilizing a s
 ## See Also
 
 - [Streaming a CloudXR application to Apple Vision Pro with foveation](streaming-a-cloudxr-application-to-apple-vision-pro-with-foveation.md)
-  Integrate NVIDIA CloudXR™ and the streaming manager protocol into your desktop or cloud application to stream high-fidelity spatial content to Apple Vision Pro.
+  Integrate NVIDIA CloudXR™ and the session management connection protocol into your desktop or cloud application to stream high-fidelity spatial content to Apple Vision Pro.
 - [Establishing foveated streaming sessions with Apple Vision Pro](establishing-foveated-streaming-sessions-with-apple-vision-pro.md)
   Discover, pair, and manage streaming sessions between Apple Vision Pro and local streaming endpoints by implementing the session management connection protocol.
 

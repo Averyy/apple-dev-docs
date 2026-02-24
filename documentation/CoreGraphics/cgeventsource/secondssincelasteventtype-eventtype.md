@@ -21,8 +21,8 @@ The time in seconds since the previous input event of the specified type.
 
 ## Parameters
 
-- `stateID`: The source state to access. Pass one of the constants listed in  .
-- `eventType`: The event type to access. To get the elapsed time since the previous input event—keyboard, mouse, or tablet—specify  .
+- `stateID`: The source state to access. Pass one of the constants listed in [`CGEventSourceStateID`](cgeventsourcestateid.md).
+- `eventType`: The event type to access. To get the elapsed time since the previous input event—keyboard, mouse, or tablet—specify `kCGAnyInputEventType`.
 
 ## See Also
 

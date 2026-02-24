@@ -61,8 +61,8 @@ To see examples that don’t require an explicit tag, see [`Picker`](picker.md).
 
 ## Parameters
 
-- `tag`: A    value to use as the view’s tag.
-- `includeOptional`: If the tag value for   should   also be set.
+- `tag`: A [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) value to use as the view’s tag.
+- `includeOptional`: If the tag value for `Optional<V>` should also be set.
 
 ## See Also
 

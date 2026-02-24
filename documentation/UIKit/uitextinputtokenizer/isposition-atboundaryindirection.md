@@ -27,7 +27,7 @@ func isPosition(_ position: UITextPosition, atBoundary granularity: UITextGranul
 
 - `position`: A text-position object that represents a location in a document.
 - `granularity`: A constant that indicates a certain granularity of text unit.
-- `direction`: A constant that indicates a direction relative to  . The constant can be of type UITextStorageDirection or UITextLayoutDirection.
+- `direction`: A constant that indicates a direction relative to `position`. The constant can be of type UITextStorageDirection or UITextLayoutDirection.
 
 ## See Also
 

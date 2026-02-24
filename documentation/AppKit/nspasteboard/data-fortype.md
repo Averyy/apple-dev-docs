@@ -34,7 +34,7 @@ For standard text data types such as string, RTF, and RTFD, the text data from e
 
 ## Parameters
 
-- `dataType`: The type of data you want to read from the pasteboard. This value should be one of the types returned by   or  .
+- `dataType`: The type of data you want to read from the pasteboard. This value should be one of the types returned by [`types`](nspasteboard/types.md) or [`availableType(from:)`](nspasteboard/availabletype(from:).md).
 
 ## See Also
 

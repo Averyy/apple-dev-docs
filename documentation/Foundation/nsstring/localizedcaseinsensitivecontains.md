@@ -26,7 +26,7 @@ func localizedCaseInsensitiveContains(_ str: String) -> Bool
 
 ## Parameters
 
-- `str`: The string to search for. This value must not be  .
+- `str`: The string to search for. This value must not be `nil`.
 
 ## See Also
 

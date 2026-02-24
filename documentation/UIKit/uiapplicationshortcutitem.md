@@ -31,12 +31,41 @@ To register an array of Home Screen dynamic quick actions, set the value of your
 
 To change your app’s Home Screen dynamic quick actions, replace your app object’s [`shortcutItems`](uiapplication/shortcutitems.md) array by setting a new value for the property. As a convenience for working with registered quick actions, this class has a mutable subclass, [`UIMutableApplicationShortcutItem`](uimutableapplicationshortcutitem.md). The following code snippet illustrates one way to use the [`mutableCopy()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/mutableCopy()) method, along with mutable quick actions, to change the title of a dynamic Home Screen quick action:
 
+**Swift**:
+
+```swift
+var shortcutItems = UIApplication.shared.shortcutItems ?? []
+if let existingShortcutItem = shortcutItems.first {
+    guard let mutableShortcutItem = existingShortcutItem.mutableCopy() as? UIMutableApplicationShortcutItem
+        else { preconditionFailure("Expected a UIMutableApplicationShortcutItem") }
+    guard let index = shortcutItems.index(of: existingShortcutItem)
+        else { preconditionFailure("Expected a valid index") }
+
+    mutableShortcutItem.localizedTitle = "New Title"
+    shortcutItems[index] = mutableShortcutItem
+    UIApplication.shared.shortcutItems = shortcutItems
+}
+```
+
+**Objective-C**:
+
+```objc
+    NSArray <UIApplicationShortcutItem *> *existingShortcutItems = [[UIApplication sharedApplication] shortcutItems];
+    UIApplicationShortcutItem *existingShortcutItem = [existingShortcutItems firstObject];
+    NSMutableArray <UIApplicationShortcutItem *> *updatedShortcutItems = [existingShortcutItems mutableCopy];
+    UIMutableApplicationShortcutItem *mutableShortcutItem = [existingShortcutItem mutableCopy];
+    NSInteger index = [existingShortcutItems indexOfObject:existingShortcutItem];
+    [mutableShortcutItem setLocalizedTitle: @"New Title"];
+    [updatedShortcutItems replaceObjectAtIndex: index withObject: mutableShortcutItem];
+    [[UIApplication sharedApplication] setShortcutItems: updatedShortcutItems];
+```
+
 ##### Dynamic and Static Quick Actions
 
-Although immutable, a [`UIApplicationShortcutItem`](uiapplicationshortcutitem.md) instance is considered  to distinguish it from a  quick action you specify at build time.
+Although immutable, a [`UIApplicationShortcutItem`](uiapplicationshortcutitem.md) instance is considered *dynamic* to distinguish it from a *static* quick action you specify at build time.
 
-- Define Home Screen  quick actions using this class. Your code creates dynamic quick actions, and registers them with your app object, at runtime.
-- Define Home Screen  quick actions in the [`UIApplicationShortcutItems`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW36) array in your Xcode project’s `Info.plist` file, as described in the [`iOS Keys`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252) chapter in [`Information Property List Key Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009247). The system registers your static quick actions when your app is installed.
+- Define Home Screen *dynamic* quick actions using this class. Your code creates dynamic quick actions, and registers them with your app object, at runtime.
+- Define Home Screen *static* quick actions in the [`UIApplicationShortcutItems`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW36) array in your Xcode project’s `Info.plist` file, as described in the [`iOS Keys`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252) chapter in [`Information Property List Key Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009247). The system registers your static quick actions when your app is installed.
 
 The system limits the number of quick actions displayed when a user presses a Home Screen app icon. Within the limited set of displayed quick action titles, your static quick actions are shown first, starting at the topmost position in the list. If your static items don’t consume the permissible number for display and you’ve also defined dynamic quick actions using this class, then one or more of your dynamic quick actions is displayed.
 

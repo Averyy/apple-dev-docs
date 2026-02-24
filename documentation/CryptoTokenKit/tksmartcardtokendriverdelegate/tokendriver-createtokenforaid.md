@@ -29,7 +29,7 @@ The token created for the Smart Card, or `nil` if an error occurs or the delegat
 
 - `driver`: The Smart Card token driver.
 - `smartCard`: The detected Smart Card.
-- `AID`: The ISO 7816-4 application identifier that is selected on the Smart Card. If the   attributes is not present in the Smart Card token extension property list, no application is selected.
+- `AID`: The ISO 7816-4 application identifier that is selected on the Smart Card. If the `com.apple.ctk.aid` attributes is not present in the Smart Card token extension property list, no application is selected.
 
 
 ---

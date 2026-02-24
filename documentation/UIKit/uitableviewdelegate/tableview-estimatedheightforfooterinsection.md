@@ -33,7 +33,7 @@ Providing an estimate the height of section footers can improve the user experie
 ## Parameters
 
 - `tableView`: The table view requesting this information.
-- `section`: An index number identifying a section of   .
+- `section`: An index number identifying a section of `tableView` .
 
 ## See Also
 

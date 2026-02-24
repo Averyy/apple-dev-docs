@@ -23,8 +23,8 @@ func setObject(_ object: (any __CKRecordObjCValue)?, forKey key: String)
 
 ## Parameters
 
-- `object`: The object to store using the specified key. It must be one of the data types in  . You receive an error if you use a data type that CloudKit doesn’t support. If you specify  , CloudKit removes any object that the record associates with the key.
-- `key`: The key to associate with  . Use this key to retrieve the value later. A key must consist of one or more alphanumeric characters and must start with a letter. CloudKit permits the use of underscores, but not spaces. Avoid using a key that matches the name of any property of  .
+- `object`: The object to store using the specified key. It must be one of the data types in [`Supported Data Types`](ckrecord#Supported-Data-Types.md). You receive an error if you use a data type that CloudKit doesn’t support. If you specify `nil`, CloudKit removes any object that the record associates with the key.
+- `key`: The key to associate with `object`. Use this key to retrieve the value later. A key must consist of one or more alphanumeric characters and must start with a letter. CloudKit permits the use of underscores, but not spaces. Avoid using a key that matches the name of any property of `CKRecord`.
 
 ## See Also
 

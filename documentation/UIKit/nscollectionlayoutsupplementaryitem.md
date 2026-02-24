@@ -27,7 +27,66 @@ If you want to create a header or footer for your layout or its sections, use a 
 
 Each type of supplementary item must have a unique element kind. Consider tracking these strings together in a way that makes it straightforward to identify each element, for example:
 
+**Swift**:
+
+```swift
+struct ElementKind {
+    static let badge = "badge-element-kind"
+    static let background = "background-element-kind"
+    static let sectionHeader = "section-header-element-kind"
+    static let sectionFooter = "section-footer-element-kind"
+    static let layoutHeader = "layout-header-element-kind"
+    static let layoutFooter = "layout-footer-element-kind"
+}
+```
+
+**Objective-C**:
+
+```objc
+NSString* const ELEMENT_KIND_BADGE = @"badge-element-kind";
+NSString* const ELEMENT_KIND_BACKGROUND = @"background-element-kind";
+NSString* const ELEMENT_KIND_SECTION_HEADER = @"section-header-element-kind";
+NSString* const ELEMENT_KIND_SECTION_FOOTER = @"section-footer-element-kind";
+NSString* const ELEMENT_KIND_LAYOUT_HEADER = @"layout-header-element-kind";
+NSString* const ELEMENT_KIND_LAYOUT_FOOTER = @"layout-footer-element-kind";
+```
+
 Add supplementary items to an item by passing in an array of supplementary items when you construct the item:
+
+**Swift**:
+
+```swift
+let itemSize = NSCollectionLayoutSize(widthDimension: .absolute(44),
+                                     heightDimension: .absolute(44))
+    
+let badgeAnchor = NSCollectionLayoutAnchor(edges: [.top, .trailing],
+                                fractionalOffset: CGPoint(x: 0.3, y: -0.3))
+   
+let badgeSize = NSCollectionLayoutSize(widthDimension: .absolute(20),
+                                      heightDimension: .absolute(20))
+    
+let badge = NSCollectionLayoutSupplementaryItem(layoutSize: badgeSize,
+                                               elementKind: ElementKind.badge,
+                                           containerAnchor: badgeAnchor)
+    
+let item = NSCollectionLayoutItem(layoutSize: itemSize,
+                          supplementaryItems: [badge])
+```
+
+**Objective-C**:
+
+```objc
+NSCollectionLayoutSize *itemSize = [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension absoluteDimension:44.0] heightDimension:[NSCollectionLayoutDimension absoluteDimension:44.0]];
+
+NSCollectionLayoutAnchor *badgeAnchor = [NSCollectionLayoutAnchor layoutAnchorWithEdges: NSDirectionalRectEdgeTop|NSDirectionalRectEdgeTrailing fractionalOffset:CGPointMake(0.3, -0.3)];
+
+NSCollectionLayoutSize *badgeSize = [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension absoluteDimension:20.0] heightDimension:[NSCollectionLayoutDimension absoluteDimension:20.0]];
+
+NSCollectionLayoutSupplementaryItem *badge = [NSCollectionLayoutSupplementaryItem supplementaryItemWithLayoutSize:badgeSize elementKind:ELEMENT_KIND_BADGE containerAnchor:badgeAnchor];
+
+NSCollectionLayoutItem *item = [NSCollectionLayoutItem itemWithLayoutSize:itemSize supplementaryItems:@[badge]];
+
+```
 
 ## Topics
 

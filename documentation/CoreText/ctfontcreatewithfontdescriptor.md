@@ -31,8 +31,8 @@ The `size` and `matrix` parameters override any specified in the font descriptor
 ## Parameters
 
 - `descriptor`: A font descriptor containing attributes that specify the requested font.
-- `size`: The point size for the font reference. If   is specified, the default font size of   is used.  This parameter is optional.
-- `matrix`: The transformation matrix for the font.  In most cases, set this parameter to be  .  If   is specified, the identity matrix is used.  This parameter is optional.
+- `size`: The point size for the font reference. If `0.0` is specified, the default font size of `12.0` is used.  This parameter is optional.
+- `matrix`: The transformation matrix for the font.  In most cases, set this parameter to be `NULL`.  If `NULL` is specified, the identity matrix is used.  This parameter is optional.
 
 ## See Also
 

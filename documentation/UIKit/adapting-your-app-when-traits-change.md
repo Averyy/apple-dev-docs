@@ -73,6 +73,9 @@ registerForTraitChanges(UITraitCollection.systemTraitsAffectingColorAppearance) 
 
 Other useful semantic trait sets include:
 
+- **[`systemTraitsAffectingImageLookup`](uitraitcollection/systemtraitsaffectingimagelookup-4jv5.md)**: A list of traits that affect which image variant to display.
+- **[`systemTraitsAffectingColorAppearance`](uitraitcollection/systemtraitsaffectingcolorappearance-64z7q.md)**: A list of traits that affect colors and appearance.
+
 Trait registrations remain active for the lifetime of the object that created them. When the view or view controller deallocates, UIKit automatically removes all associated trait registrations, eliminating the need for manual cleanup in most cases.
 
 If you need to unregister before deallocation, store the [`UITraitChangeRegistration`](uitraitchangeregistration.md) token the registration method returns and call the [`unregisterForTraitChanges(_:)`](uitraitchangeobservable-67e94/unregisterfortraitchanges(_:).md) method:

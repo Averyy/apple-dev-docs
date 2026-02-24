@@ -66,8 +66,8 @@ After dequeueing the appropriate view in your data source method, configure its 
 
 Collection views provide two prefetching techniques you can use to improve responsiveness:
 
--  prepares cells in advance of the time they’re required. When a collection view requires a large number of cells simultaneously — for example, a new row of cells in grid layout — the cells are requested earlier than the time required for display. Cell rendering is therefore spread across multiple layout passes, resulting in a smoother scrolling experience. Cell prefetching is enabled by default.
--  provides a mechanism whereby you’re notified of the data requirements of a collection view in advance of the requests for cells. This is useful if the content of your cells relies on an expensive data loading process, such as a network request. Assign an object that conforms to the [`UICollectionViewDataSourcePrefetching`](uicollectionviewdatasourceprefetching.md) protocol to the [`prefetchDataSource`](uicollectionview/prefetchdatasource.md) property to receive notifications of when to prefetch data for cells.
+- *Cell prefetching* prepares cells in advance of the time they’re required. When a collection view requires a large number of cells simultaneously — for example, a new row of cells in grid layout — the cells are requested earlier than the time required for display. Cell rendering is therefore spread across multiple layout passes, resulting in a smoother scrolling experience. Cell prefetching is enabled by default.
+- *Data prefetching* provides a mechanism whereby you’re notified of the data requirements of a collection view in advance of the requests for cells. This is useful if the content of your cells relies on an expensive data loading process, such as a network request. Assign an object that conforms to the [`UICollectionViewDataSourcePrefetching`](uicollectionviewdatasourceprefetching.md) protocol to the [`prefetchDataSource`](uicollectionview/prefetchdatasource.md) property to receive notifications of when to prefetch data for cells.
 
 ##### Reorder Items Interactively
 

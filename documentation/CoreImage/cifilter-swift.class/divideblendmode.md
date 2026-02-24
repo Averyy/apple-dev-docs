@@ -29,6 +29,9 @@ This method applies the divide-blend mode filter to an image. The effect divides
 
 The divide-blend mode filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that brightens and inverts colors in the background image:
 
 ```swift

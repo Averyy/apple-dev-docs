@@ -23,8 +23,8 @@ func SparseMultiply(_ A: SparseMatrix_Complex_Double, _ X: DenseMatrix_Complex_D
 ## Parameters
 
 - `A`: (Input) sparse matrix.
-- `X`: (Input) dense matrix. Inner dimensions of   and   must match.
-- `Y`: (Output) dense matrix. Dimensions must match the outer dimensions   of   and  . Overwritten with their product.
+- `X`: (Input) dense matrix. Inner dimensions of `A` and `X` must match.
+- `Y`: (Output) dense matrix. Dimensions must match the outer dimensions of `A` and `X`. Overwritten with their product.
 
 ## See Also
 

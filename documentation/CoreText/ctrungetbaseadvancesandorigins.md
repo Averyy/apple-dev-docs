@@ -31,9 +31,9 @@ The displacement of the current glyph’s origin from the starting position dete
 ## Parameters
 
 - `runRef`: The run that contains the base advances and origins you wish to copy.
-- `range`: The range of values to be copied. If the length of the range is set to  , the copy operation continues from the range’s start index to the end of the run.
-- `advancesBuffer`: The buffer to which the base advances will be copied, or  . If not  , the buffer must allow for at least as many elements as specified by the range’s length.
-- `originsBuffer`: The buffer to which the origins will be copied, or  . If not  , the buffer must allow for at least as many elements as specified by the range’s length.
+- `range`: The range of values to be copied. If the length of the range is set to `0`, the copy operation continues from the range’s start index to the end of the run.
+- `advancesBuffer`: The buffer to which the base advances will be copied, or `NULL`. If not `NULL`, the buffer must allow for at least as many elements as specified by the range’s length.
+- `originsBuffer`: The buffer to which the origins will be copied, or `NULL`. If not `NULL`, the buffer must allow for at least as many elements as specified by the range’s length.
 
 ## See Also
 

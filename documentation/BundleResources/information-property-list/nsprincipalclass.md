@@ -8,6 +8,10 @@ The name of the bundle’s main executable class.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 The system uses the class identified by this key to set the [`principalClass`](https://developer.apple.com/documentation/Foundation/Bundle/principalClass) property of a bundle when it’s loaded.

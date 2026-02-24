@@ -20,7 +20,7 @@ Registering an `NSView` object for dragged types automatically makes it a candid
 
 ## Parameters
 
-- `newTypes`: An array of  . See   for descriptions of the pasteboard type identifiers.
+- `newTypes`: An array of [`Uniform Type Identifier`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/UniformTypeIdentifier.html#//apple_ref/doc/uid/TP40008195-CH60). See [`System-Declared Uniform Type Identifiers`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html#//apple_ref/doc/uid/TP40009259) for descriptions of the pasteboard type identifiers.
 
 ## See Also
 

@@ -29,7 +29,7 @@ If you named your callback function `MyAUInputSamplesInOutputCallback`, you woul
 
 ##### Discussion
 
-When your application uses a  or pitch-shifting audio unit, it may not be clear which input samples are represented in a buffer of output samples. This callback function addresses this issue by providing the input sample number corresponding to the first sample in an output buffer.
+When your application uses a *varispeed* or pitch-shifting audio unit, it may not be clear which input samples are represented in a buffer of output samples. This callback function addresses this issue by providing the input sample number corresponding to the first sample in an output buffer.
 
 ## Parameters
 

@@ -29,7 +29,7 @@ In this example, these audio file names give a sound classifier at least two cla
 
 ## Parameters
 
-- `at`: URL: The URL to a folder in the file system that contains audio files. The data source uses the   first component of each audio file’s name as its classification label.
+- `at`: URL: The URL to a folder in the file system that contains audio files. The data source uses the first component of each audio file’s name as its classification label.
 
 ## See Also
 

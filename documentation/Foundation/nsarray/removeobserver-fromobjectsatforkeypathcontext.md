@@ -28,7 +28,7 @@ func removeObserver(_ observer: NSObject, fromObjectsAt indexes: IndexSet, forKe
 
 - `observer`: The object to remove as an observer.
 - `indexes`: The index set.
-- `keyPath`: A key-path, relative to the array, for which   is registered to receive KVO change notifications. This value must not be  .
+- `keyPath`: A key-path, relative to the array, for which `observer` is registered to receive KVO change notifications. This value must not be `nil`.
 - `context`: The context passed to the notifications.
 
 ## See Also

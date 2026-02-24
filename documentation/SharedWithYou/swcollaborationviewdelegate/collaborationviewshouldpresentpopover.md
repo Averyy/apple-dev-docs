@@ -24,7 +24,7 @@ optional func collaborationViewShouldPresentPopover(_ collaborationView: SWColla
 
 ## Parameters
 
-- `collaborationView`: The related  .
+- `collaborationView`: The related `SWCollaborationView`.
 
 ## See Also
 

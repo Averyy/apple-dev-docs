@@ -25,12 +25,9 @@ class MPSNDArrayMultiaryKernel
 ### Instance Methods
 - [func encode(to: (any MTLComputeCommandEncoder)?, commandBuffer: any MTLCommandBuffer, sourceArrays: [MPSNDArray], destinationArray: MPSNDArray)](mpsndarraymultiarykernel/encode(to:commandbuffer:sourcearrays:destinationarray:).md)
 - [func encode(to: any MTLCommandBuffer, sourceArrays: [MPSNDArray]) -> MPSNDArray](mpsndarraymultiarykernel/encode(to:sourcearrays:).md)
-- [func encode(to: any MTL4CommandBuffer, sourceArrays: [MPSNDArray], destinationArray: MPSNDArray)](mpsndarraymultiarykernel/encode(to:sourcearrays:destinationarray:)-7y4kw.md)
-- [func encode(to: any MTLCommandBuffer, sourceArrays: [MPSNDArray], destinationArray: MPSNDArray)](mpsndarraymultiarykernel/encode(to:sourcearrays:destinationarray:)-816vf.md)
-- [func encode(to: any MTLCommandBuffer, sourceArrays: [MPSNDArray], resultState: MPSState?, destinationArray: MPSNDArray)](mpsndarraymultiarykernel/encode(to:sourcearrays:resultstate:destinationarray:)-4rdxz.md)
-- [func encode(to: any MTL4CommandBuffer, sourceArrays: [MPSNDArray], resultState: MPSState?, destinationArray: MPSNDArray)](mpsndarraymultiarykernel/encode(to:sourcearrays:resultstate:destinationarray:)-9acjx.md)
+- [func encode(to: any MTLCommandBuffer, sourceArrays: [MPSNDArray], destinationArray: MPSNDArray)](mpsndarraymultiarykernel/encode(to:sourcearrays:destinationarray:).md)
+- [func encode(to: any MTLCommandBuffer, sourceArrays: [MPSNDArray], resultState: MPSState?, destinationArray: MPSNDArray)](mpsndarraymultiarykernel/encode(to:sourcearrays:resultstate:destinationarray:).md)
 - [func encode(to: any MTLCommandBuffer, sourceArrays: [MPSNDArray], resultState: AutoreleasingUnsafeMutablePointer<MPSState?>?, outputStateIsTemporary: Bool) -> MPSNDArray](mpsndarraymultiarykernel/encode(to:sourcearrays:resultstate:outputstateistemporary:).md)
-- [func encode(toMTL4CommandEncoder: (any MTL4ComputeCommandEncoder)?, mtl4commandBuffer: any MTL4CommandBuffer, sourceArrays: [MPSNDArray], destinationArray: MPSNDArray)](mpsndarraymultiarykernel/encode(tomtl4commandencoder:mtl4commandbuffer:sourcearrays:destinationarray:).md)
 
 ## Relationships
 

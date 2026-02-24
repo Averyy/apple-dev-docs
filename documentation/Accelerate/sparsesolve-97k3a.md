@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Solves the equation  for vectors of single-precision values using the specified iterative method.
+Solves the equation *Ax = b* for vectors of single-precision values using the specified iterative method.
 
 **Availability**:
 - iOS 11.0+
@@ -70,18 +70,18 @@ On return, x`Values` contains the values `[1.0, 2.0, 3.0]`.
 ## Parameters
 
 - `method`: The iterative method.
-- `A`: The matrix  .
-- `b`: The vector  .
-- `x`: The vector  .
+- `A`: The matrix *A*.
+- `b`: The vector *b*.
+- `x`: The vector *x*.
 
 ## See Also
 
 - [func SparseSolve(SparseIterativeMethod, SparseMatrix_Double, DenseVector_Double, DenseVector_Double) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:)-7f1sp.md)
-  Solves the equation  for vectors of double-precision values using the specified iterative method.
+  Solves the equation *Ax = b* for vectors of double-precision values using the specified iterative method.
 - [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Double, DenseVector_Double) -> Void, DenseVector_Double, DenseVector_Double) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:)-26fae.md)
-  Solves the equation  for vectors of double-precision values, treating  as an operator and using the specified iterative method.
+  Solves the equation *Ax = b* for vectors of double-precision values, treating *A* as an operator and using the specified iterative method.
 - [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Float, DenseVector_Float) -> Void, DenseVector_Float, DenseVector_Float) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:)-9yhgp.md)
-  Solves the equation  for vectors of single-precision values, treating  as an operator and using the specified iterative method.
+  Solves the equation *Ax = b* for vectors of single-precision values, treating *A* as an operator and using the specified iterative method.
 
 
 ---

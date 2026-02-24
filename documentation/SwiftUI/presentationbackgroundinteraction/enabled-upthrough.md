@@ -26,7 +26,7 @@ At detents larger than the one you specify, SwiftUI disables interaction.
 
 ## Parameters
 
-- `detent`: The largest detent at which people can interact with   the view behind the presentation.
+- `detent`: The largest detent at which people can interact with the view behind the presentation.
 
 ## See Also
 

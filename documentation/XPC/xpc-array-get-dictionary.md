@@ -27,7 +27,7 @@ The object at the specified index within the array or `NULL` if the given object
 ## Parameters
 
 - `xarray`: The array object which is to be examined.
-- `index`: The index of the value to obtain. This value must lie within the range of indexes as specified in  .
+- `index`: The index of the value to obtain. This value must lie within the range of indexes as specified in [`xpc_array_set_value(_:_:_:)`](xpc_array_set_value(_:_:_:).md).
 
 ## See Also
 

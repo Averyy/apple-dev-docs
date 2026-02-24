@@ -22,8 +22,8 @@ func CFUserNotificationUpdate(_ userNotification: CFUserNotification!, _ timeout
 
 - `userNotification`: The user notification to update.
 - `timeout`: The new timeout value for the dialog.
-- `flags`: A set of flags describing the type of notification to display. See   for details.
-- `dictionary`: A description of the elements to display in the notification dialog. The possible keys are listed in  .
+- `flags`: A set of flags describing the type of notification to display. See [`CFUserNotificationCreate(_:_:_:_:_:)`](cfusernotificationcreate(_:_:_:_:_:).md) for details.
+- `dictionary`: A description of the elements to display in the notification dialog. The possible keys are listed in [`Dialog Description Keys`](dialog-description-keys.md).
 
 ## See Also
 

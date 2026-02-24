@@ -32,7 +32,7 @@ CMTime(value: avAudioTime.sampleTime, timescale: CMTimeScale(avAudioTime.sampleR
 ## Parameters
 
 - `buffer`: An audio buffer.
-- `bufferStartTime`: The time-code of the start of the audio buffer. If  , this audio buffer is assumed to start immediately after the previous buffer (or at time-code zero if there is no previous buffer). The   can have a different timescale than the sample rate of the audio data.
+- `bufferStartTime`: The time-code of the start of the audio buffer. If `nil`, this audio buffer is assumed to start immediately after the previous buffer (or at time-code zero if there is no previous buffer). The `CMTime` can have a different timescale than the sample rate of the audio data.
 
 ## See Also
 

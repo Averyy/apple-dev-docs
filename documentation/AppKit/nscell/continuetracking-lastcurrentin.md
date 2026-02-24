@@ -26,7 +26,7 @@ This method is invoked in [`trackMouse(with:in:of:untilMouseUp:)`](nscell/trackm
 
 - `lastPoint`: Contains either the initial location of the cursor when tracking began or the previous current point.
 - `currentPoint`: The current location of the cursor.
-- `controlView`: The   object managing the receiver.
+- `controlView`: The `NSControl` object managing the receiver.
 
 ## See Also
 

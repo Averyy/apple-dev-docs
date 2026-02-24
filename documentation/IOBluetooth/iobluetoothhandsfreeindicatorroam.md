@@ -18,6 +18,9 @@ let IOBluetoothHandsFreeIndicatorRoam: String
 
 The possible values for the roaming status indicator are:
 
+- **`0`**: The phone is connected to the customer’s carrier network.
+- **`1`**: The phone isn’t connected to the customer’s carrier network.
+
 ## See Also
 
 - [let IOBluetoothHandsFreeIndicatorSignal: String](iobluetoothhandsfreeindicatorsignal.md)

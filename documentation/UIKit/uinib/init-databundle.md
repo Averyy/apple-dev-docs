@@ -31,7 +31,7 @@ The preferred mechanism for instantiating [`UINib`](uinib.md) objects is with [`
 ## Parameters
 
 - `data`: A block of memory that contains nib data.
-- `bundleOrNil`: The bundle in which to search for resources referenced by the nib. If you specify  , this method looks for the nib file in the main bundle.
+- `bundleOrNil`: The bundle in which to search for resources referenced by the nib. If you specify `nil`, this method looks for the nib file in the main bundle.
 
 ## See Also
 

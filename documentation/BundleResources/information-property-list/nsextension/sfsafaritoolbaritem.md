@@ -8,6 +8,10 @@ The items to add to the toolbar for a Safari extension.
 **Availability**:
 - macOS 10.11.5+
 
+
+
+**Type**: object
+
 ## Topics
 
 ### Toolbar Item Configuration

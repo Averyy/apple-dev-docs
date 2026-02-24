@@ -28,8 +28,8 @@ UIKit calls this method before calling the [`touchesBegan(_:with:)`](uigesturere
 
 ## Parameters
 
-- `gestureRecognizer`: An instance of a subclass of the abstract base class  .
-- `touch`: A   object from the current multi-touch sequence.
+- `gestureRecognizer`: An instance of a subclass of the abstract base class [`UIGestureRecognizer`](uigesturerecognizer.md).
+- `touch`: A [`UITouch`](uitouch.md) object from the current multi-touch sequence.
 
 ## See Also
 

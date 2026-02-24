@@ -29,7 +29,7 @@ This method raises an exception if you pass an invalid `depthDataType` value.
 
 ## Parameters
 
-- `depthDataType`: The data type to convert to. This value must be one of the formats present in the   array.
+- `depthDataType`: The data type to convert to. This value must be one of the formats present in the [`availableDepthDataTypes`](avdepthdata/availabledepthdatatypes-472g0.md) array.
 
 ## See Also
 

@@ -26,8 +26,8 @@ init(contentsOf url: URL, options: Data.ReadingOptions = []) throws
 
 ## Parameters
 
-- `url`: The   to read.
-- `options`: Options for the read operation. Default value is  .
+- `url`: The `URL` to read.
+- `options`: Options for the read operation. Default value is `[]`.
 
 
 ---

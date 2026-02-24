@@ -24,7 +24,7 @@ func hv_vm_map_space(_ asid: hv_vm_space_t, _ uva: hv_uvaddr_t, _ gpa: hv_gpaddr
 - `uva`: The page-aligned virtual address in the current task.
 - `gpa`: The page-aligned address in the guest physical address space.
 - `size`: The size in bytes of the region to map.
-- `flags`: One of either  ,   or   permissions of the region.
+- `flags`: One of either `READ`, `WRITE` or `EXECUTE` permissions of the region.
 
 ## See Also
 

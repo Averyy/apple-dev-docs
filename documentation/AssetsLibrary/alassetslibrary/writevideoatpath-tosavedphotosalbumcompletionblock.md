@@ -20,7 +20,7 @@ func writeVideoAtPath(toSavedPhotosAlbum videoPathURL: URL!) async throws -> URL
 ## Parameters
 
 - `videoPathURL`: An URL that points to a video file.
-- `completionBlock`: For a description of the block, see  .
+- `completionBlock`: The block invoked after the save operation completes. For a description of the block, see [`ALAssetsLibraryWriteVideoCompletionBlock`](alassetslibrarywritevideocompletionblock.md).
 
 ## See Also
 

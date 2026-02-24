@@ -24,8 +24,8 @@ Widgets displayed as [`NCWidgetDisplayMode.compact`](ncwidgetdisplaymode/compact
 
 ## Parameters
 
-- `activeDisplayMode`: The new active display mode. See   for possible values.
-- `maxSize`: A   object that represents the new maximum size this widget can have.
+- `activeDisplayMode`: The new active display mode. See [`NCWidgetDisplayMode`](ncwidgetdisplaymode.md) for possible values.
+- `maxSize`: A [`CGSize`](https://developer.apple.com/documentation/CoreFoundation/CGSize) object that represents the new maximum size this widget can have.
 
 ## See Also
 

@@ -20,7 +20,7 @@ func load(_ composition: QCComposition!) -> Bool
 
 ## Parameters
 
-- `composition`: The   object to load.
+- `composition`: The [`QCComposition`](qccomposition.md) object to load.
 
 ## See Also
 

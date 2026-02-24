@@ -20,7 +20,7 @@ The alternate button is typically labelled “Cancel”. The alternate button di
 
 ## Parameters
 
-- `title`: The new title for the alternate button. If this method is not called, or if   is set to  , the button is not shown.
+- `title`: The new title for the alternate button. If this method is not called, or if `title` is set to `nil`, the button is not shown.
 
 ## See Also
 

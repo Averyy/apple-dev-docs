@@ -30,10 +30,10 @@ This function is used to replace bytes in a `CMBlockBuffer's` memory blocks with
 
 ## Parameters
 
-- `sourceBytes`: Memory block from which bytes are copied into the destination  .
-- `destinationBuffer`:   whose range of bytes will be replaced by the  .
-- `offsetIntoDestination`: Offset within the destination   at which replacement should begin.
-- `dataLength`: Number of bytes to be replaced, starting at  , in the  .
+- `sourceBytes`: Memory block from which bytes are copied into the destination `CMBlockBuffer`.
+- `destinationBuffer`: `CMBlockBuffer` whose range of bytes will be replaced by the `sourceBytes`.
+- `offsetIntoDestination`: Offset within the destination `CMBlockBuffer` at which replacement should begin.
+- `dataLength`: Number of bytes to be replaced, starting at `offsetIntoDestination`, in the `destinationBuffer`.
 
 ## See Also
 

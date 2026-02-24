@@ -24,7 +24,7 @@ The x- and z-axes match the longitude and latitude directions as measured by Loc
 
 ![None](https://docs-assets.developer.apple.com/published/43ed9c7be6301ec1d30c268015670bf6/media-2891462%402x.png)
 
-Although this option fixes the  of the three coordinate axes to real-world directions, the  of the coordinate system’s origin is still relative to the device, matching the device’s position as of when the session configuration is first run.
+Although this option fixes the *directions* of the three coordinate axes to real-world directions, the *location* of the coordinate system’s origin is still relative to the device, matching the device’s position as of when the session configuration is first run.
 
 > **Note**:  Using gravity and heading alignment requires tracking the device’s geographic location. Your app’s Info.plist must include user-facing text for the [`NSLocationUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSLocationUsageDescription) or [`NSLocationWhenInUseUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSLocationWhenInUseUsageDescription) key so that the user can grant your app permission for location tracking.
 

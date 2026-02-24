@@ -30,13 +30,13 @@ An outline view works well as part of a primary-detail user interface. When the 
 
 ![A diagram depicting the two split-view items on each side of the sample’s user interface for NSSplitViewController. The OutlineViewController on the left shows a hierarchal outline representation, and the DetailViewController on the right shows a blank box.](https://docs-assets.developer.apple.com/published/eb5a7a6bccaecff9d5c25bbea46f036d/sourceview-diagram%402x.png)
 
-In a primary-detail user interface, the list view on the left must remain the same size when the split view grows or shrinks, while the detail view on the right changes size. To implement this behavior, the app uses the  on the split-view items. The view with the lowest holding priority is the first to increase its width as the split view grows or shrinks. To keep the left split-view item from growing, set its holding priority to `200`, and set the item on the right to `199`.
+In a primary-detail user interface, the list view on the left must remain the same size when the split view grows or shrinks, while the detail view on the right changes size. To implement this behavior, the app uses the *holding priority* on the split-view items. The view with the lowest holding priority is the first to increase its width as the split view grows or shrinks. To keep the left split-view item from growing, set its holding priority to `200`, and set the item on the right to `199`.
 
 ![A diagram depicting the two split view items on each side of the sample’s user interface for NSSplitViewController. The split-view item on the right has a lower holding priority than the one on the left.](https://docs-assets.developer.apple.com/published/1f28555eeee8353d160b81c01da087a0/sourceview-diagram2%402x.png)
 
 ##### Define Hierarchical Content with a Tree Controller
 
-The [`NSTreeController`](nstreecontroller.md) class is the data source for the outline view. It acts as the controller when binding [`NSOutlineView`](nsoutlineview.md) to its hierarchical collection of objects. These objects represent , which the `Node` class implements.
+The [`NSTreeController`](nstreecontroller.md) class is the data source for the outline view. It acts as the controller when binding [`NSOutlineView`](nsoutlineview.md) to its hierarchical collection of objects. These objects represent *nodes*, which the `Node` class implements.
 
 A node represents either a container or a document. A container node groups other nodes together. Each container node has its own unique identifier, whereas document nodes have an empty identifier with no children.
 
@@ -90,7 +90,7 @@ Users drag and drop nodes from within the outline view to rearrange them, or dra
 
 ##### Add a Contextual Menu
 
-The outline view uses contextual menus, or , that provide access to frequently used commands. Control-clicking an outline view node opens its contextual menu. The `NSOutlineView` [`menu(for:)`](nsview/menu(for:).md) function creates these contextual menus. Override this function with the [`NSOutlineView`](nsoutlineview.md) subclass to return a contextual menu. The contextual menu operations are: add, remove, and rename.
+The outline view uses contextual menus, or *shortcut menus*, that provide access to frequently used commands. Control-clicking an outline view node opens its contextual menu. The `NSOutlineView` [`menu(for:)`](nsview/menu(for:).md) function creates these contextual menus. Override this function with the [`NSOutlineView`](nsoutlineview.md) subclass to return a contextual menu. The contextual menu operations are: add, remove, and rename.
 
 ##### Integrate with the Edit Menu
 

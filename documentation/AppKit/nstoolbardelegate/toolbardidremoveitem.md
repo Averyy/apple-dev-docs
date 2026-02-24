@@ -24,7 +24,7 @@ Use this method to update data structures related to your toolbar items.
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named [`didRemoveItemNotification`](nstoolbar/didremoveitemnotification.md).
 
 ## See Also
 

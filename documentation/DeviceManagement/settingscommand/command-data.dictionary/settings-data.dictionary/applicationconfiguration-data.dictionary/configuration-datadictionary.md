@@ -19,6 +19,10 @@ A dictionary that contains the configurations to apply to the app.
 object SettingsCommand.Command.Settings.ApplicationConfiguration.Configuration
 ```
 
+## Properties
+
+- `ANY` (any): A dictionary that contains configurations.
+
 
 ---
 

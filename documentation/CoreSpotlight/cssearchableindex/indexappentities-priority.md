@@ -28,8 +28,8 @@ Call this method as an alternative to creating and indexing [`CSSearchableItem`]
 
 ## Parameters
 
-- `appEntities`: One or more app entities you want to donate to Spotlight. Each entity must   conform to the   protocol.
-- `priority`: The importance of these donated items relative to your app’s other items.   If you don’t specify a priority, this method assigns a priority of 0 to the items.   Specify a higher number to prioritize the entities over other items you add to the index.   The App Intents system uses priorities to determine what items to show in suggestions and other places.
+- `appEntities`: One or more app entities you want to donate to Spotlight. Each entity must conform to the [`IndexedEntity`](https://developer.apple.com/documentation/AppIntents/IndexedEntity) protocol.
+- `priority`: The importance of these donated items relative to your app’s other items. If you don’t specify a priority, this method assigns a priority of 0 to the items. Specify a higher number to prioritize the entities over other items you add to the index. The App Intents system uses priorities to determine what items to show in suggestions and other places.
 
 ## See Also
 

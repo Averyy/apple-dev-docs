@@ -31,9 +31,9 @@ When your implementation of this class method is called, use the provided `input
 
 ## Parameters
 
-- `inputs`: An array of   that the class consumes to produce its output.   The   may be larger than the rect returned by  .
-- `arguments`: The arguments dictionary that was passed to  .
-- `outputs`: An array   that the   must provide results to.
+- `inputs`: An array of `id<CIImageProcessorInput>` that the class consumes to produce its output. The `input.region` may be larger than the rect returned by [`roi(forInput:arguments:outputRect:)`](ciimageprocessorkernel/roi(forinput:arguments:outputrect:).md).
+- `arguments`: The arguments dictionary that was passed to [`apply(withExtent:inputs:arguments:)`](ciimageprocessorkernel/apply(withextent:inputs:arguments:).md).
+- `outputs`: An array `id<CIImageProcessorOutput>` that the `CIImageProcessorKernel` must provide results to.
 
 
 ---

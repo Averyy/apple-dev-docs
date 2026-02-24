@@ -8,6 +8,10 @@ A Boolean that indicates whether the app supports additional header fields in re
 **Availability**:
 - macOS 10.15+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Set the corresponding value to `YES` to indicate that your browser uses the [`additionalHeaderFields`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSessionRequest/additionalHeaderFields) property of an [`ASWebAuthenticationSessionRequest`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSessionRequest).

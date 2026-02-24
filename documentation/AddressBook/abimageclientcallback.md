@@ -20,9 +20,9 @@ Use the [`ABBeginLoadingImageDataForClient(_:_:_:)`](abbeginloadingimagedataforc
 
 ## Parameters
 
-- `imageData`: The image data in Quicktime compatible format that was loaded from an asynchronous fetch.   if the fetch failed.
-- `tag`: The tracking number for this fetch that should have been obtained from a previous call to the   function.
-- `info`: An untyped pointer to program-defined data that was passed to the   function.
+- `imageData`: The image data in Quicktime compatible format that was loaded from an asynchronous fetch. `NULL` if the fetch failed.
+- `tag`: The tracking number for this fetch that should have been obtained from a previous call to the [`ABBeginLoadingImageDataForClient(_:_:_:)`](abbeginloadingimagedataforclient(_:_:_:).md) function.
+- `info`: An untyped pointer to program-defined data that was passed to the [`ABBeginLoadingImageDataForClient(_:_:_:)`](abbeginloadingimagedataforclient(_:_:_:).md) function.
 
 
 ---

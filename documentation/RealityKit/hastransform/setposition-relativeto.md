@@ -22,8 +22,8 @@ Sets the position of the entity relative to the given reference entity.
 
 ## Parameters
 
-- `position`: A new position, relative to  .
-- `referenceEntity`: The entity that defines a frame of reference. Set   this to   to indicate world space.
+- `position`: A new position, relative to `referenceEntity`.
+- `referenceEntity`: The entity that defines a frame of reference. Set this to `nil` to indicate world space.
 
 ## See Also
 

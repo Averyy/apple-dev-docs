@@ -26,8 +26,8 @@ You cannot call this function until after you have called the [`CMSDecoderFinali
 
 ## Parameters
 
-- `cmsDecoder`: The CMSDecoder reference returned by the   function.
-- `certsOut`: On return, points to an array of   objects. Returns   if the message does not contain any certificates (the message was encrypted but not signed); this is not considered an error. You must use the   function to free this reference when you are finished using it.
+- `cmsDecoder`: The CMSDecoder reference returned by the `CMSDecoderCreate` function.
+- `certsOut`: On return, points to an array of `SecCertificateRef` objects. Returns `NULL` if the message does not contain any certificates (the message was encrypted but not signed); this is not considered an error. You must use the `CFRelease` function to free this reference when you are finished using it.
 
 ## See Also
 

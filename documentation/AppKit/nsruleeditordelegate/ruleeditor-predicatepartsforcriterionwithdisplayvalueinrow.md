@@ -24,7 +24,7 @@ A dictionary representing the parts of the predicate determined by the given cri
 - `editor`: The rule editor that sent the message.
 - `criterion`: The criterion for which the predicate parts are required.
 - `value`: The display value.
-- `row`: The row number of  .
+- `row`: The row number of `criterion`.
 
 ## See Also
 

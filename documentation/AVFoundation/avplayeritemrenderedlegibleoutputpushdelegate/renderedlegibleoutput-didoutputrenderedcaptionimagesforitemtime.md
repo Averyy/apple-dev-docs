@@ -20,7 +20,7 @@ optional func renderedLegibleOutput(_ output: AVPlayerItemRenderedLegibleOutput,
 ## Parameters
 
 - `output`: The rendered legible output object.
-- `captionImages`: An array of   objects. A caption object consists of a   and its associated position, in pixels, relative to the video frame.
+- `captionImages`: An array of [`AVRenderedCaptionImage`](avrenderedcaptionimage.md) objects. A caption object consists of a [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) and its associated position, in pixels, relative to the video frame.
 - `itemTime`: The item time at which to present the caption images.
 
 

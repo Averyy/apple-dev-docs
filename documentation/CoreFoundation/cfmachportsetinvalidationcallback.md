@@ -27,7 +27,7 @@ If `port` is already invalid, `callout` is invoked immediately.
 ## Parameters
 
 - `port`: The CFMachPort object to modify.
-- `callout`: The callback function to invoke when   is invalidated. Pass   to remove a callback.
+- `callout`: The callback function to invoke when `port` is invalidated. Pass `NULL` to remove a callback.
 
 ## See Also
 

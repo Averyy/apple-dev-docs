@@ -21,9 +21,9 @@ init?(startPoint: simd_double2, segments: [PHASEEnvelopeSegment])
 
 #### Discussion
 
-For an empty `segments` argument, the resulting envelope contains one segment where the end point matches the start point. If the `segments` argument contains more than one segment, the resulting [`segments`](phaseenvelope/segments.md) array sorts in ascending order on the  value.
+For an empty `segments` argument, the resulting envelope contains one segment where the end point matches the start point. If the `segments` argument contains more than one segment, the resulting [`segments`](phaseenvelope/segments.md) array sorts in ascending order on the *x* value.
 
-> ❗ **Important**:  The start point’s  value must be less than or equal to the segment with the lowest  value of all other `segments`, otherwise this function returns `nil`.
+> ❗ **Important**:  The start point’s *x* value must be less than or equal to the segment with the lowest *x* value of all other `segments`, otherwise this function returns `nil`.
 
 ## Parameters
 

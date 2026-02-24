@@ -22,7 +22,7 @@ The number of selection keys determines how many candidates are displayed per pa
 
 ## Parameters
 
-- `keyCodes`: An array of   objects where each   object represents a virtual key code. The input controller maps these key codes to characters that are displayed either across the top of the candidates, if the candidates are laid out horizontally, or along the left edge of the candidates, if they are aligned vertically.
+- `keyCodes`: An array of `NSNumber` objects where each `NSNumber` object represents a virtual key code. The input controller maps these key codes to characters that are displayed either across the top of the candidates, if the candidates are laid out horizontally, or along the left edge of the candidates, if they are aligned vertically.
 
 ## See Also
 

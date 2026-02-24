@@ -32,7 +32,7 @@ A subset of the given handles known to the system.
 
 ## Parameters
 
-- `handles`: A set of communication handles, such as email addresses,   phone numbers, user names, or any other set of personal identifiers.
+- `handles`: A set of communication handles, such as email addresses, phone numbers, user names, or any other set of personal identifiers.
 
 ## See Also
 

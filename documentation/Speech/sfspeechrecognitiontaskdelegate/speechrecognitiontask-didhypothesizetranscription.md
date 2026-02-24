@@ -24,8 +24,8 @@ This method is called for all recognitions, including partial recognitions.
 
 ## Parameters
 
-- `task`: The speech recognition task (an   object) that represents the request.
-- `transcription`: The hypothesized transcription in an   object.
+- `task`: The speech recognition task (an [`SFSpeechRecognitionTask`](sfspeechrecognitiontask.md) object) that represents the request.
+- `transcription`: The hypothesized transcription in an [`SFTranscription`](sftranscription.md) object.
 
 
 ---

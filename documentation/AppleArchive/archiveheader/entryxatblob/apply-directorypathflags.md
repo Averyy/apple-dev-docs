@@ -23,7 +23,7 @@ func apply(directory: FilePath, path: FilePath, flags: ArchiveFlags = []) throws
 ## Parameters
 
 - `directory`: The base directory of the filesystem object.
-- `path`: The path, relative to  , to target filesystem object.
+- `path`: The path, relative to `directory`, to target filesystem object.
 - `flags`: Flags that control the behavior of the operation.
 
 

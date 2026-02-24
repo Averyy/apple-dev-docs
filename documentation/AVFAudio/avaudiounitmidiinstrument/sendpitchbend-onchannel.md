@@ -25,8 +25,8 @@ If this method isn’t invoked, then the system uses the default pitch bend valu
 
 ## Parameters
 
-- `pitchbend`: Value of the pitchbend. The valid range of values is   to  .
-- `channel`: The channel number to send the event to. The valid range of values is   to  .
+- `pitchbend`: Value of the pitchbend. The valid range of values is `0` to `16383`.
+- `channel`: The channel number to send the event to. The valid range of values is `0` to `15`.
 
 ## See Also
 

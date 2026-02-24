@@ -28,7 +28,7 @@ If `rl` does not contain `timer` in `mode`, this function does nothing.
 
 - `rl`: The run loop to modify.
 - `timer`: The run loop timer to remove.
-- `mode`: The run loop mode of   from which to remove  . Use the constant   to remove   from the set of objects monitored by all the common modes.
+- `mode`: The run loop mode of `rl` from which to remove `timer`. Use the constant [`commonModes`](cfrunloopmode/commonmodes.md) to remove `timer` from the set of objects monitored by all the common modes.
 
 ## See Also
 

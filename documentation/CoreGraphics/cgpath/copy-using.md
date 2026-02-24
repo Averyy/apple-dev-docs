@@ -26,7 +26,7 @@ A new, immutable copy of the path. You are responsible for releasing this object
 
 ## Parameters
 
-- `transform`: A pointer to an affine transformation matrix, or   if no transformation is needed. If specified, Core Graphics applies the transformation to all elements of the new path.
+- `transform`: A pointer to an affine transformation matrix, or `NULL` if no transformation is needed. If specified, Core Graphics applies the transformation to all elements of the new path.
 
 ## See Also
 

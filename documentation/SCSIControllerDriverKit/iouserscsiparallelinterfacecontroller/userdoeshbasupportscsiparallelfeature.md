@@ -25,7 +25,7 @@ The SCSI parallel interconnect standard defines the features that `theValue` spe
 ## Parameters
 
 - `theValue`: The SCSI parallel interconnect (SPI) feature to check.
-- `result`: A pointer to a Boolean value. On return, set this value to   if it supports the feature, and   if it doesn’t.
+- `result`: A pointer to a Boolean value. On return, set this value to `true` if it supports the feature, and `false` if it doesn’t.
 
 ## See Also
 

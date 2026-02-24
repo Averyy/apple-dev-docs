@@ -22,7 +22,7 @@ The object corresponding to the item at the specified index in the given combo b
 
 An `NSComboBoxCell` object uses this method to populate the items displayed in its pop-up list.
 
-> ❗ **Important**:  While this method is marked as `@optional` in the protocol, .
+> ❗ **Important**:  While this method is marked as `@optional` in the protocol, **you must implement this method if you are not providing the data for the combo box using using Cocoa bindings**.
 
 ## Parameters
 

@@ -53,8 +53,8 @@ The following code shows an example of using this function:
 
 ## Parameters
 
-- `vector`: The input vector,  .
-- `scalar`: The input scalar value,  .
+- `vector`: The input vector, `A`.
+- `scalar`: The input scalar value, `B`.
 
 ## See Also
 

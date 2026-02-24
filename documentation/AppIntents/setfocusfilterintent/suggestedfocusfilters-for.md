@@ -27,7 +27,7 @@ A list of suggested focus configurations where the first one is the most suggest
 
 ## Parameters
 
-- `context`: The focus configuration context which the suggested configurations   could be determined from.
+- `context`: The focus configuration context which the suggested configurations could be determined from.
 
 ## See Also
 

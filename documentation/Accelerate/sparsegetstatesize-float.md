@@ -27,10 +27,10 @@ The size of the required state space, in bytes.
 ## Parameters
 
 - `method`: The method to return required state space size for.
-- `preconditioner`: Set to   if your subsequent calls to   use a preconditioner.
-- `m`: The number of rows in matrix  .
-- `n`: The number of columns in matrix  .
-- `nrhs`: The number of columns in matrices   and  .
+- `preconditioner`: Set to `true` if your subsequent calls to `SparseIterate` use a preconditioner.
+- `m`: The number of rows in matrix *A*.
+- `n`: The number of columns in matrix *A*.
+- `nrhs`: The number of columns in matrices *B* and *X*.
 
 ## See Also
 

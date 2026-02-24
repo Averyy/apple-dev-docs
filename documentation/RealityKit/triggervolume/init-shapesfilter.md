@@ -22,7 +22,7 @@ Creates a trigger volume with the given composite shape and collision filter.
 
 ## Parameters
 
-- `shapes`: A collection of shapes which taken together define the   composite shape of the trigger volume.
+- `shapes`: A collection of shapes which taken together define the composite shape of the trigger volume.
 - `filter`: A collision filter that lets you differentiate among collision groups.
 
 ## See Also

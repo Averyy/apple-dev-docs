@@ -27,7 +27,7 @@ The default implementation of this method calls the animator object’s [`animat
 
 ## Parameters
 
-- `didComplete`:   if the transition to the presented view controller completed successfully or   if the original view controller is still being displayed.
+- `didComplete`: [`true`](https://developer.apple.com/documentation/Swift/true) if the transition to the presented view controller completed successfully or [`false`](https://developer.apple.com/documentation/Swift/false) if the original view controller is still being displayed.
 
 ## See Also
 

@@ -24,7 +24,7 @@ The [`UIFocusSystem`](uifocussystem.md) object that manages the state for the sp
 
 ## Parameters
 
-- `environment`: The object whose state you want to return. Specify the view, view controller, or window whose state you want. You can also specify any other object that adopts the   protocol.
+- `environment`: The object whose state you want to return. Specify the view, view controller, or window whose state you want. You can also specify any other object that adopts the [`UIFocusEnvironment`](uifocusenvironment.md) protocol.
 
 ## See Also
 

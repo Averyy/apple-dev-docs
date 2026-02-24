@@ -28,6 +28,25 @@ Listing 1 creates a trigger that delivers its notification every morning at 8:30
 
 Listing 1. Creating a trigger that repeats at a specific time
 
+**Swift**:
+
+```swift
+var date = DateComponents()
+date.hour = 8
+date.minute = 30 
+let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
+```
+
+**Objective-C**:
+
+```objc
+NSDateComponents* date = [[NSDateComponents alloc] init];
+date.hour = 8;
+date.minute = 30; 
+UNCalendarNotificationTrigger* trigger = [UNCalendarNotificationTrigger
+                     triggerWithDateMatchingComponents:date repeats:YES];
+```
+
 ## Topics
 
 ### Creating a Calendar Trigger

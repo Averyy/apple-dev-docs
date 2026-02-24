@@ -24,7 +24,7 @@ Implement this method if your app supports attributes that aren’t represented 
 
 ## Parameters
 
-- `conversionHandler`: A handler block that you execute to retrieve the new attributes selected by the user. This block returns a dictionary containing the new values to apply to the text selection, and it takes the following parameter:
+- `conversionHandler`: A handler block that you execute to retrieve the new attributes selected by the user. This block returns a dictionary containing the new values to apply to the text selection, and it takes the following parameter: - **attributes**: The dictionary of attributes that your app supports for the selected text. Specify all of the attributes and their current values.
 
 
 ---

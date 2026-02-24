@@ -34,6 +34,9 @@ This method applies the source-over compositing filter to an image. The effect c
 
 The source-over compositing filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in both of the input images becoming visible with no subtraction:
 
 ```swift

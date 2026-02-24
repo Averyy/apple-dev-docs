@@ -30,9 +30,9 @@ This method is equivalent to [`urls(forResourcesWithExtension:subdirectory:)`](b
 
 ## Parameters
 
-- `ext`: If you specify an empty string or  , the extension is assumed not to exist and all of the files in   are returned.
+- `ext`: The filename extension of the files to locate. If you specify an empty string or `nil`, the extension is assumed not to exist and all of the files in `subpath` are returned.
 - `subpath`: The name of the bundle subdirectory to search.
-- `localizationName`: The language ID for the localization. This parameter should correspond to the name of one of the bundle’s language-specific resource directories without the   extension.
+- `localizationName`: The language ID for the localization. This parameter should correspond to the name of one of the bundle’s language-specific resource directories without the `.lproj` extension.
 
 ## See Also
 

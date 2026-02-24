@@ -23,7 +23,7 @@ By the time the map view calls this method, MapKit has added the specified views
 ## Parameters
 
 - `mapView`: The map view that adds the overlay views.
-- `overlayViews`: An array of   objects representing the views that the map view adds.
+- `overlayViews`: An array of [`MKOverlayView`](mkoverlayview.md) objects representing the views that the map view adds.
 
 ## See Also
 

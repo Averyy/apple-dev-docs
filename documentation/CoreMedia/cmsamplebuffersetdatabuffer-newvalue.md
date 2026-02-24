@@ -31,7 +31,7 @@ If successful, this operation retains the `dataBuffer`. This allows the caller t
 ## Parameters
 
 - `sbuf`: The sample buffer being modified.
-- `dataBuffer`:   of data being associated with.
+- `dataBuffer`: `CMBlockBuffer` of data being associated with.
 
 ## See Also
 

@@ -24,8 +24,8 @@ Newly initialized alert view.
 
 - `title`: The string that appears in the receiver’s title bar.
 - `message`: Descriptive text that provides more details than the title.
-- `delegate`: The receiver’s delegate or   if it doesn’t have a delegate.
-- `cancelButtonTitle`: Using this argument is equivalent to setting the cancel button index to the value returned by invoking   specifying this title.
+- `delegate`: The receiver’s delegate or `nil` if it doesn’t have a delegate.
+- `cancelButtonTitle`: The title of the cancel button or `nil` if there’s no cancel button. Using this argument is equivalent to setting the cancel button index to the value returned by invoking [`addButton(withTitle:)`](uialertview/addbutton(withtitle:).md) specifying this title.
 
 ## See Also
 

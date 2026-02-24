@@ -49,12 +49,12 @@ struct StepperView: View {
 
 ## Parameters
 
-- `value`: A   to a value that you provide.
-- `bounds`: A closed range that describes the upper and lower bounds   permitted by the stepper.
-- `step`: The amount to increment or decrement the stepper when the   user clicks or taps the stepper’s increment or decrement buttons,   respectively.
-- `format`: A format style of type   to use when converting between   the string the user edits and the underlying value of type   . If   can’t perform the conversion, the   stepper leaves   unchanged. If the user stops editing the   text in an invalid state, the stepper updates the text to the last   known valid value.
+- `value`: A [`Binding`](binding.md) to a value that you provide.
+- `bounds`: A closed range that describes the upper and lower bounds permitted by the stepper.
+- `step`: The amount to increment or decrement the stepper when the user clicks or taps the stepper’s increment or decrement buttons, respectively.
+- `format`: A format style of type `F` to use when converting between the string the user edits and the underlying value of type `F.FormatInput`. If `format` can’t perform the conversion, the stepper leaves `value` unchanged. If the user stops editing the text in an invalid state, the stepper updates the text to the last known valid value.
 - `label`: A view describing the purpose of this stepper.
-- `onEditingChanged`: A closure that’s called when editing begins and   ends. For example, on iOS, the user may touch and hold the increment   or decrement buttons on a stepper which causes the execution   of the   closure at the start and end of   the gesture.
+- `onEditingChanged`: A closure that’s called when editing begins and ends. For example, on iOS, the user may touch and hold the increment or decrement buttons on a stepper which causes the execution of the `onEditingChanged` closure at the start and end of the gesture.
 
 ## See Also
 

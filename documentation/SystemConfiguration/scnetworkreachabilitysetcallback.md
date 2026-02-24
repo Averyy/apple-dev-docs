@@ -26,8 +26,8 @@ func SCNetworkReachabilitySetCallback(_ target: SCNetworkReachability, _ callout
 ## Parameters
 
 - `target`: The network reference associated with the address or name to be checked for reachability.
-- `callout`: The function to be called when the reachability of the target changes. If  , the current client for the target is removed.
-- `context`: The reachability context associated with the callout. This value may be  .
+- `callout`: The function to be called when the reachability of the target changes. If `NULL`, the current client for the target is removed.
+- `context`: The reachability context associated with the callout. This value may be `NULL`.
 
 ## See Also
 

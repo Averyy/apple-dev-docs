@@ -21,7 +21,7 @@ func finish(withComposedTaggedBuffers taggedBuffers: [CMTaggedDynamicBuffer])
 
 ## Parameters
 
-- `taggedBuffers`: The tagged buffers containing the composed tagged buffers. The tagged buffers must be compatible with the outputBufferDescription specified in the video composition. The outputBufferDescription must not be nil when calling this function.   NOTE: If   is not empty, then   must be called with one of the spatial configurations. An exception will be thrown otherwise. Also, all pixel buffers must be associated with the same spatial configuration. An exception will be thrown otherwise.
+- `taggedBuffers`: The tagged buffers containing the composed tagged buffers. The tagged buffers must be compatible with the outputBufferDescription specified in the video composition. The outputBufferDescription must not be nil when calling this function. NOTE: If `AVVideoComposition/spatialConfigurations` is not empty, then `attach(spatialVideoConfiguration:to:)` must be called with one of the spatial configurations. An exception will be thrown otherwise. Also, all pixel buffers must be associated with the same spatial configuration. An exception will be thrown otherwise.
 
 ## See Also
 

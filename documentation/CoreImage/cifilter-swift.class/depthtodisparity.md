@@ -29,6 +29,8 @@ This method applies the depth-to-disparity filter. The filter takes depth data a
 
 The depth-to-disparity filter uses the following property:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that generates a depth map image:
 
 ```swift

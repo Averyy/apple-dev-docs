@@ -11,6 +11,10 @@ A Boolean value that indicates whether the app handles Siri requests.
 - visionOS 1.0+
 - watchOS 3.2+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 The App Store requires the presence of this entitlement for iOS or watchOS apps containing Intents app extensions that handle any Siri requests other than shortcut requests. To add the entitlement to your app, enable the Siri capability in Xcode.

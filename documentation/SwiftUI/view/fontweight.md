@@ -27,7 +27,7 @@ A view that uses the font weight you specify.
 
 ## Parameters
 
-- `weight`: One of the available font weights.   Providing   removes the effect of any font weight   modifier applied higher in the view hierarchy.
+- `weight`: One of the available font weights. Providing `nil` removes the effect of any font weight modifier applied higher in the view hierarchy.
 
 ## See Also
 

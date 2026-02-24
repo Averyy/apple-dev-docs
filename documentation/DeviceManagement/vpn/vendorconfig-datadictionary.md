@@ -18,6 +18,13 @@ The vendor-specific configuration dictionary.
 object VPN.VendorConfig
 ```
 
+## Properties
+
+- `Group` (string): The group to connect to on the head end. Valid for Cisco AnyConnect and Cisco Legacy AnyConnect. Not available in watchOS.
+- `LoginGroupOrDomain` (string): The login group or domain. Valid only for SonicWALL Mobile Connect. Not available in watchOS.
+- `Realm` (string): The Kerberos realm name, which needs to be properly capitalized. Valid only for Juniper SSL and Pulse Secure. Not available in watchOS.
+- `Role` (string): The role to select when connecting to the server. Valid only for Juniper SSL and Pulse Secure. Not available in watchOS.
+
 ## See Also
 
 - [object VPN.AlwaysOn](vpn/alwayson-data.dictionary.md)

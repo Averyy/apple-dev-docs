@@ -26,8 +26,8 @@ init(bitsPerComponent: UInt32, bitsPerPixel: UInt32, colorSpace: Unmanaged<CGCol
 - `bitsPerPixel`: The number of bits that represents one pixel.
 - `colorSpace`: A description of the position of the pixel data in the image, relative to a reference XYZ color space.
 - `bitmapInfo`: The component information that describes the color channels.
-- `version`: Reserved for future expansion — pass   here.
-- `decode`: The decode array for the image. See   for more information.
+- `version`: Reserved for future expansion — pass `0` here.
+- `decode`: The decode array for the image. See [`decode`](vimage_cgimageformat/decode.md) for more information.
 - `renderingIntent`: A rendering intent constant that specifies how Core Graphics handles colors that aren’t within the destination color space gamut.
 
 ## See Also

@@ -20,7 +20,7 @@ var kAudioSessionCategory_AmbientSound: Int { get }
 
 #### Discussion
 
-This category is appropriate for “play along” style apps, such as a virtual piano that a user plays over iPod audio. When you use this category, audio from other apps mixes with your audio. Your audio is silenced by screen locking and by the Silent switch (called the  on iPhone).
+This category is appropriate for “play along” style apps, such as a virtual piano that a user plays over iPod audio. When you use this category, audio from other apps mixes with your audio. Your audio is silenced by screen locking and by the Silent switch (called the *Ring/Silent switch* on iPhone).
 
 This category is equivalent to the [`ambient`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Category-swift.struct/ambient) category provided in the AVFoundation framework.
 

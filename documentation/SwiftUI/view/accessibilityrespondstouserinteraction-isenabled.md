@@ -27,8 +27,8 @@ If this is not set, the value is inferred from the traits of the Accessibility e
 
 ## Parameters
 
-- `respondsToUserInteraction`: Whether the view responds to user   interaction.
-- `isEnabled`: If true the accessibility interaction state is applied;   otherwise the accessibility interaction state is unchanged.
+- `respondsToUserInteraction`: Whether the view responds to user interaction.
+- `isEnabled`: If true the accessibility interaction state is applied; otherwise the accessibility interaction state is unchanged.
 
 ## See Also
 

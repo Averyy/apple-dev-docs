@@ -20,7 +20,7 @@ The Core Animation layer.
 
 ## Parameters
 
-- `layerType`: A layer type. See  .
+- `layerType`: A layer type. See [`Overlay Types`](overlay-types.md).
 
 ## See Also
 

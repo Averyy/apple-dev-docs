@@ -8,6 +8,10 @@ A Boolean value that indicates whether the app may have read-only access to file
 **Availability**:
 - macOS 10.7+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 To add this entitlement to your app, enable the App Sandbox capability in Xcode and set User Selected File to Read Only.

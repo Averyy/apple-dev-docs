@@ -47,7 +47,7 @@ In addition, an agent delegate can implement the [`agentWillUpdate(_:)`](gkagent
 
 > 💡 **Tip**:  If you use the [`GKSKNodeComponent`](gksknodecomponent.md) class to manage the relationship between an entity and a SpriteKit node,  set your [`GKSKNodeComponent`](gksknodecomponent.md) instance as the delegate for that entity’s agent, and GameplayKit will automatically synchronize the agent and its SpriteKit representation.
 
-> **Note**:  The simulation responsible for agent movement is based on realistic physical behaviors; however, this simulation is  connected to the physics subsystems in SpriteKit, SceneKit, or any other graphics engine. For example, setting the [`mass`](gkagent/mass.md) property of an agent does not affect the collision behavior of any SpriteKit physics bodies.
+> **Note**:  The simulation responsible for agent movement is based on realistic physical behaviors; however, this simulation is *not* connected to the physics subsystems in SpriteKit, SceneKit, or any other graphics engine. For example, setting the [`mass`](gkagent/mass.md) property of an agent does not affect the collision behavior of any SpriteKit physics bodies.
 
 ## Topics
 

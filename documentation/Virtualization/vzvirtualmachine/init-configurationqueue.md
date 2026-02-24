@@ -20,7 +20,7 @@ An initialized VM object.
 
 ## Parameters
 
-- `configuration`: The configuration of the VM. The configuration must be valid, and you can verify that it’s valid by calling its   method. The VM stores a copy of the configuration.
+- `configuration`: The configuration of the VM. The configuration must be valid, and you can verify that it’s valid by calling its [`validate()`](vzvirtualmachineconfiguration/validate().md) method. The VM stores a copy of the configuration.
 - `queue`: The serial dispatch queue for the VM. You must perform all VM-related operations on the specified queue, and the VM executes callbacks and delegate methods on the queue. If the queue isn’t serial, the behavior isn’t defined.
 
 ## See Also

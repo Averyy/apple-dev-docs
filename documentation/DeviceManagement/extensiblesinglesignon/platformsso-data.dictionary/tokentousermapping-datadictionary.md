@@ -14,6 +14,11 @@ The attribute mapping to use when creating users, or for authorization.
 object ExtensibleSingleSignOn.PlatformSSO.TokenToUserMapping
 ```
 
+## Properties
+
+- `AccountName` (string): The claim name to use for the user’s account name.
+- `FullName` (string): The claim name to use for the user’s full name.
+
 ## See Also
 
 - [object ExtensibleSingleSignOn.PlatformSSO.AuthorizationGroups](extensiblesinglesignon/platformsso-data.dictionary/authorizationgroups-data.dictionary.md)

@@ -30,12 +30,12 @@ This method makes the same calls to file presenters, and has the same general wa
 
 ## Parameters
 
-- `readingURL`: A URL identifying the file or directory to read. If other objects or processes are acting on the item at the URL, the actual URL passed to the block in the   parameter may be different than the one in this parameter.
-- `readingOptions`: One of the reading options described in  . If you pass   for this parameter, the   method of relevant file presenters is called before your block executes.
-- `writingURL`: A URL identifying the file or directory to write. If other objects or processes are acting on the item at the URL, the actual URL passed to the block in the   parameter may be different than the one in this parameter.
-- `writingOptions`: One of the writing options described in  . The options you specify partially determine how file presenters are notified and how this file coordinator object waits to execute your block.
-- `outError`: On input, a pointer to a pointer for an error object. If a file presenter encounters an error while preparing for this operation, that error is returned in this parameter and the block in the   parameter is not executed. If you cancel this operation before the   block is executed, this parameter contains an error object on output.
-- `readerWriter`: A   containing the read and write operations you want to perform in a coordinated manner. This block receives   objects containing the URLs of the items to read and write and returns no value. Always use the URLs passed into the block instead of the values in the   and   parameters.
+- `readingURL`: A URL identifying the file or directory to read. If other objects or processes are acting on the item at the URL, the actual URL passed to the block in the `readerWriter` parameter may be different than the one in this parameter.
+- `readingOptions`: One of the reading options described in [`NSFileCoordinator.ReadingOptions`](nsfilecoordinator/readingoptions.md). If you pass `0` for this parameter, the [`savePresentedItemChanges(completionHandler:)`](nsfilepresenter/savepresenteditemchanges(completionhandler:).md) method of relevant file presenters is called before your block executes.
+- `writingURL`: A URL identifying the file or directory to write. If other objects or processes are acting on the item at the URL, the actual URL passed to the block in the `readerWriter` parameter may be different than the one in this parameter.
+- `writingOptions`: One of the writing options described in [`NSFileCoordinator.WritingOptions`](nsfilecoordinator/writingoptions.md). The options you specify partially determine how file presenters are notified and how this file coordinator object waits to execute your block.
+- `outError`: On input, a pointer to a pointer for an error object. If a file presenter encounters an error while preparing for this operation, that error is returned in this parameter and the block in the `readerWriter` parameter is not executed. If you cancel this operation before the `readerWriter` block is executed, this parameter contains an error object on output.
+- `readerWriter`: A [`Block object`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) containing the read and write operations you want to perform in a coordinated manner. This block receives [`NSURL`](nsurl.md) objects containing the URLs of the items to read and write and returns no value. Always use the URLs passed into the block instead of the values in the `readingURL` and `writingURL` parameters.
 
 ## See Also
 

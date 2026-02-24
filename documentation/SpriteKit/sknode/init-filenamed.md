@@ -34,7 +34,7 @@ If you call this method on a subclass of the [`SKScene`](skscene.md) class and t
 
 ## Parameters
 
-- `filename`: The name of the file, without a file extension. The file must be in the app’s main bundle and have a   filename extension.
+- `filename`: The name of the file, without a file extension. The file must be in the app’s main bundle and have a `.sks` filename extension.
 
 ## See Also
 

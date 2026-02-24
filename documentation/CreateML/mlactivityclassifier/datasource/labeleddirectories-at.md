@@ -26,7 +26,7 @@ Next, gather all the activity directories into a directory and pass its [`URL`](
 
 ## Parameters
 
-- `at`: A   of a directory in the file system   that contains directories, each named with an activity label for the sensor data files.
+- `at`: A [`URL`](https://developer.apple.com/documentation/Foundation/URL) of a directory in the file system that contains directories, each named with an activity label for the sensor data files.
 
 ## See Also
 

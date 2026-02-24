@@ -49,7 +49,7 @@ Users choose one of the room type descriptors when adding an event to their cale
 
 ## Parameters
 
-- `completionHandler`: A completion handler that you call after you determine the available rooms. If you provide an array with one or more room type descriptors, pass   for the error parameter. Conversely, if you provide an error object, pass   for the array parameter.
+- `completionHandler`: A completion handler that you call after you determine the available rooms. If you provide an array with one or more room type descriptors, pass `nil` for the error parameter. Conversely, if you provide an error object, pass `nil` for the array parameter.
 
 
 ---

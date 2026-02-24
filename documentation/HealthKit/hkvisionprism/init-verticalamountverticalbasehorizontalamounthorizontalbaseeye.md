@@ -21,11 +21,11 @@ init(verticalAmount: HKQuantity, verticalBase: HKPrismBase, horizontalAmount: HK
 
 ## Parameters
 
-- `verticalAmount`: The vertical strength of the correction, measured in   units.
-- `verticalBase`: The orientation of the vertical correction. This value can be either   or  .
-- `horizontalAmount`: The horizontal strength of the correction, measured in   units.
-- `horizontalBase`: The orientation of the horizontal correction. This value can be either   or  .
-- `eye`: A value indicating which eye the correction applies to:   or  .
+- `verticalAmount`: The vertical strength of the correction, measured in [`prismDiopter()`](hkunit/prismdiopter().md) units.
+- `verticalBase`: The orientation of the vertical correction. This value can be either [`HKPrismBase.up`](hkprismbase/up.md) or [`HKPrismBase.down`](hkprismbase/down.md).
+- `horizontalAmount`: The horizontal strength of the correction, measured in [`prismDiopter()`](hkunit/prismdiopter().md) units.
+- `horizontalBase`: The orientation of the horizontal correction. This value can be either [`HKPrismBase.in`](hkprismbase/in.md) or [`HKPrismBase.out`](hkprismbase/out.md).
+- `eye`: A value indicating which eye the correction applies to: [`HKVisionEye.left`](hkvisioneye/left.md) or [`HKVisionEye.right`](hkvisioneye/right.md).
 
 ## See Also
 

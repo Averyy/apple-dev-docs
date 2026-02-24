@@ -27,8 +27,8 @@ The lengths of `aRange` and `otherRange` don’t have to be equal: If `aRange` i
 ## Parameters
 
 - `range`: The range of objects to be replaced in (or removed from) the receiving array.
-- `otherArray`: The array of objects from which to select replacements for the objects in  .
-- `otherRange`: The range of objects be selected from   as replacements for the objects in  .
+- `otherArray`: The array of objects from which to select replacements for the objects in `aRange`.
+- `otherRange`: The range of objects be selected from `otherArray` as replacements for the objects in `aRange`.
 
 ## See Also
 

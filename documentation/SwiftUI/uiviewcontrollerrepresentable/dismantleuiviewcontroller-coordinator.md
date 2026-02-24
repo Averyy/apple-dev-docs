@@ -27,7 +27,7 @@ Use this method to perform additional clean-up work related to your custom view 
 ## Parameters
 
 - `uiViewController`: Your custom view controller object.
-- `coordinator`: The custom coordinator instance you use to communicate   changes back to SwiftUI. If you do not use a custom coordinator, the   system provides a default instance.
+- `coordinator`: The custom coordinator instance you use to communicate changes back to SwiftUI. If you do not use a custom coordinator, the system provides a default instance.
 
 
 ---

@@ -31,7 +31,7 @@ All view controllers implement this method. If they do not show the view control
 
 ## Parameters
 
-- `vc`: The view controller to display in the secondary location of the split view interface. If you specify   for this parameter or if this view controller is the same as the one it would replace, this method does nothing.
+- `vc`: The view controller to display in the secondary location of the split view interface. If you specify `nil` for this parameter or if this view controller is the same as the one it would replace, this method does nothing.
 - `sender`: The view or view controller that made the request.
 
 ## See Also

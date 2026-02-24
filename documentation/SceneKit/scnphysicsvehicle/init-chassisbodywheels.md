@@ -33,7 +33,7 @@ For a behavior to take effect, you must add it to the physics simulation by call
 ## Parameters
 
 - `chassisBody`: A physics body to serve as the vehicle’s chassis.
-- `wheels`: An array of   objects representing the vehicle’s wheels. A vehicle must have at least one wheel.
+- `wheels`: An array of [`SCNPhysicsVehicleWheel`](scnphysicsvehiclewheel.md) objects representing the vehicle’s wheels. A vehicle must have at least one wheel.
 
 
 ---

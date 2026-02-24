@@ -26,9 +26,9 @@ A result code. See Result Codes.
 ## Parameters
 
 - `inAQ`: The audio queue whose current time you want to get.
-- `inTimeline`: The audio queue timeline object to which timeline discontinuities are reported. Use   if the audio queue does not have an associated timeline object.
-- `outTimeStamp`: On output, the current audio queue time. The   field represents audio queue time in terms of the audio queue sample rate, relative to when the queue started or will start.
-- `outTimelineDiscontinuity`: A timeline discontinuity may occur, for example, if the sample rate is changed for the audio hardware device associated with an audio queue.
+- `inTimeline`: The audio queue timeline object to which timeline discontinuities are reported. Use `NULL` if the audio queue does not have an associated timeline object.
+- `outTimeStamp`: On output, the current audio queue time. The `mSampleTime` field represents audio queue time in terms of the audio queue sample rate, relative to when the queue started or will start.
+- `outTimelineDiscontinuity`: On output, `true` if there has been a timeline discontinuity, or `false` if there has been no discontinuity. If the audio queue does not have an associated timeline object, this parameter is always `NULL`. A timeline discontinuity may occur, for example, if the sample rate is changed for the audio hardware device associated with an audio queue.
 
 ## See Also
 

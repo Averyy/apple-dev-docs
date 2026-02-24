@@ -26,7 +26,7 @@ func addPointer(_ pointer: UnsafeMutableRawPointer?)
 
 ## Parameters
 
-- `pointer`: The pointer to add. This value may be  .
+- `pointer`: The pointer to add. This value may be `NULL`.
 
 ## See Also
 

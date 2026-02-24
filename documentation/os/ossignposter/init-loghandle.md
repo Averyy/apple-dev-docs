@@ -22,7 +22,7 @@ init(logHandle: OSLog)
 
 ## Parameters
 
-- `logHandle`: The log that provides a subsystem and category for the signposter to use. For more information, see  .
+- `logHandle`: The log that provides a subsystem and category for the signposter to use. For more information, see [`OSLog`](oslog.md).
 
 ## See Also
 

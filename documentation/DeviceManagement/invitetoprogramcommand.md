@@ -22,6 +22,11 @@ object InviteToProgramCommand
 - [object InviteToProgramCommand.Command](invitetoprogramcommand/command-data.dictionary.md)
   The command to invite a user to join the Volume Purchase Program (VPP).
 
+## Properties
+
+- `Command` (InviteToProgramCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object InviteToProgramResponse](invitetoprogramresponse.md)

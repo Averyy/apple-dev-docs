@@ -28,6 +28,48 @@ This command isn’t supported on a Mac with Apple silicon.
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>Password</key>
+        <string>password</string>
+        <key>RequestType</key>
+        <string>VerifyFirmwarePassword</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_VerifyFirmwarePassword</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_VerifyFirmwarePassword</string>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>E84CD517-CB37-52F7-988C-DB5137B604B8</string>
+    <key>VerifyFirmwarePassword</key>
+    <dict>
+        <key>PasswordVerified</key>
+        <true/>
+    </dict>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -35,6 +77,10 @@ This command isn’t supported on a Mac with Apple silicon.
   The command to verify the firmware password on a device.
 - [object VerifyFirmwarePasswordResponse](verifyfirmwarepasswordresponse.md)
   A response from the device after it processes the command to verify the firmware password on a device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

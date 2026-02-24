@@ -25,8 +25,8 @@ init(lineWidth: CGFloat = 1, lineCap: CGLineCap = .butt, lineJoin: CGLineJoin = 
 - `lineWidth`: The width of the segment.
 - `lineCap`: The endpoint style of a segment.
 - `lineJoin`: The join type of a segment.
-- `miterLimit`: The threshold used to determine whether to use a bevel   instead of a miter at a join.
-- `dash`: The lengths of painted and unpainted segments used to make a   dashed line.
+- `miterLimit`: The threshold used to determine whether to use a bevel instead of a miter at a join.
+- `dash`: The lengths of painted and unpainted segments used to make a dashed line.
 - `dashPhase`: How far into the dash pattern the line starts.
 
 

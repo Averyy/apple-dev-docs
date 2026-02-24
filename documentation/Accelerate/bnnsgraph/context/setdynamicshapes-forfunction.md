@@ -22,8 +22,8 @@ func setDynamicShapes(_ shapes: [BNNSGraph.Shape], forFunction function: String?
 
 ## Parameters
 
-- `shapes`: This function reads input shapes with a nonzero rank, and uses the constant or default value from the source model for input shapes with a zero rank. The function generates an error for shapes with a nonzero value that doesn’t match the source model.
-- `function`: The function. Specify as   if the graph only contains one function.
+- `shapes`: An array of input shapes in the same order as you pass to [`BNNSGraphContextExecute(_:_:_:_:_:_:)`](bnnsgraphcontextexecute(_:_:_:_:_:_:).md). This function reads input shapes with a nonzero rank, and uses the constant or default value from the source model for input shapes with a zero rank. The function generates an error for shapes with a nonzero value that doesn’t match the source model.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
 
 ## See Also
 

@@ -32,7 +32,7 @@ To implement this method in your own `MainActorMessage` conformance, use the pro
 
 ## Parameters
 
-- `message`: The posted  .
+- `message`: The posted `MainActorMessage`.
 
 ## See Also
 

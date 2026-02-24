@@ -22,7 +22,7 @@ init(count: Int = 1)
 
 ## Parameters
 
-- `count`: The required number of taps to complete the tap   gesture.
+- `count`: The required number of taps to complete the tap gesture.
 
 ## See Also
 

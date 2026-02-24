@@ -21,7 +21,7 @@ func hv_vm_config_set_el2_enabled(_ config: hv_vm_config_t, _ el2_enabled: Bool)
 ## Parameters
 
 - `config`: The VM’s configuration object
-- `el2_enabled`: A Boolean value that indicates whether the specified configure enables EL2. The framework writes this value on success; otherwise  .
+- `el2_enabled`: A Boolean value that indicates whether the specified configure enables EL2. The framework writes this value on success; otherwise `nil`.
 
 ## See Also
 

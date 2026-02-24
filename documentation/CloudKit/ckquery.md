@@ -48,7 +48,7 @@ The predicates you create for your query objects must follow these rules:
 - Key names in predicates correspond to fields in the currently evaluated record. Key names can include the names of the record’s metadata properties, such as `creationDate`, or any data fields you add to the record. You can’t use key paths to specify fields in related records.
 - Predicates support the following variable substitution strings: - Use `%@` for value objects, such as strings, numbers, and dates.
 - Use `%K` for the name of a field. This substitution variable indicates that the system uses the substitution string to look up a field name.
-- With one exception, the `CONTAINS` operator is only for testing list membership. The exception is when you use it to perform full-text searches in conjunction with the `self` key path. The `self` key path causes the server to look in searchable string-based fields for the specified token string. For example, a predicate string of `@"self contains 'blue'"` searches for the word  in all fields that you mark for inclusion in full-text searches. You can’t use the `self` key path to search in fields with a type that isn’t a string.
+- With one exception, the `CONTAINS` operator is only for testing list membership. The exception is when you use it to perform full-text searches in conjunction with the `self` key path. The `self` key path causes the server to look in searchable string-based fields for the specified token string. For example, a predicate string of `@"self contains 'blue'"` searches for the word *blue* in all fields that you mark for inclusion in full-text searches. You can’t use the `self` key path to search in fields with a type that isn’t a string.
 - You can combine the `ANY` and `SOME` aggregate operators with the `IN` and `CONTAINS` operators to perform list membership tests.
 - The `distanceToLocation:fromLocation:` operator function performs a radius-based location comparison and that comparison must determine whether the location value is inside the circular area you provide. You can’t use it to search for locations outside the specified circular area. Location indexes have a resolution of no less than 10 km.
 - CloudKit doesn’t support the `ALL` aggregate operator.
@@ -83,7 +83,7 @@ CKReference* recordToMatch = [[CKReference alloc] initWithRecordID:employeeID ac
 NSPredicate* predicate = [NSPredicate predicateWithFormat:@"employee == %@", recordToMatch];
 ```
 
-To match the contents of a field to a specific value, use a predicate similar to the ones in Listing 2. All of the listed predicates generate the same set of results, which in the example means that the `favoriteColors` field contains the value . The value in the field must match the value you specify in the predicate exactly. String-based comparisons are case-insensitive, but otherwise, all comparisons must be an exact match of the specified value.
+To match the contents of a field to a specific value, use a predicate similar to the ones in Listing 2. All of the listed predicates generate the same set of results, which in the example means that the `favoriteColors` field contains the value *red*. The value in the field must match the value you specify in the predicate exactly. String-based comparisons are case-insensitive, but otherwise, all comparisons must be an exact match of the specified value.
 
 Listing 2. Matching a field to a specific value
 
@@ -105,7 +105,7 @@ predicate = [NSPredicate predicateWithFormat:@"ANY { 'red', 'green' } = favorite
 predicate = [NSPredicate predicateWithFormat:@"favoriteColor IN { 'red', 'green' }"];
 ```
 
-For fields that contain string values, you can match the beginning portion of the string using the `BEGINSWITH` operator as Listing 4 shows. You can’t use other string comparison operators, such as `CONTAINS` or `ENDSWITH`. When using this operator, the field must contain a string value and must start with the string you specify. Matches are case-sensitive. In the examples, the predicate matches records where the `favoriteColors` field contains the strings , , or ` `` `` `.
+For fields that contain string values, you can match the beginning portion of the string using the `BEGINSWITH` operator as Listing 4 shows. You can’t use other string comparison operators, such as `CONTAINS` or `ENDSWITH`. When using this operator, the field must contain a string value and must start with the string you specify. Matches are case-sensitive. In the examples, the predicate matches records where the `favoriteColors` field contains the strings *red*, *reddish*, or *red*` `*green*` `*duct*` `*tape*.
 
 Listing 4. Matching a field that starts with a string value
 

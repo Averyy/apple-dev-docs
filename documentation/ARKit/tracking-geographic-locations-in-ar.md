@@ -16,7 +16,7 @@ In this sample app, the user marks spots on a map or camera feed to create a col
 
 Geotracking configuration ([`ARGeoTrackingConfiguration`](argeotrackingconfiguration.md)) combines GPS, the device’s compass, and world-tracking features in AR to track specific geographic locations. By giving ARKit a latitude and longitude (and optionally, altitude), the sample app declares interest in a specific location on the map.
 
-During a geotracking session, ARKit marks this location in the form of a  ([`ARGeoAnchor`](argeoanchor.md)) and continually refines its position in the camera feed as the user moves about. ARKit provides the location anchor’s coordinates with respect to the scene, which allows the app to render virtual content at its real-world location or trigger other interactions.
+During a geotracking session, ARKit marks this location in the form of a *location anchor* ([`ARGeoAnchor`](argeoanchor.md)) and continually refines its position in the camera feed as the user moves about. ARKit provides the location anchor’s coordinates with respect to the scene, which allows the app to render virtual content at its real-world location or trigger other interactions.
 
 For example, when the user approaches a location anchor, an app may reveal a virtual signpost that explains a historic event that occurred there. Or, to form a street route, an app could render a virtual anchor in a series of location anchors that connect.
 
@@ -51,7 +51,7 @@ As an AR app, the sample project renders location anchors using an [`ARView`](ht
 
 To place location anchors with precision, geotracking requires a better understanding of the user’s geographic location than is possible with GPS alone. Based on a particular GPS coordinate, ARKit downloads batches of imagery that depict the physical environment in that area and assist the session with determining the user’s precise geographic location.
 
-This  captures the view mostly from public streets and routes accessible by car. As a result, geotracking doesn’t support areas within the city that are gated or accessible only to pedestrians, as ARKit lacks localization imagery there.
+This *localization imagery* captures the view mostly from public streets and routes accessible by car. As a result, geotracking doesn’t support areas within the city that are gated or accessible only to pedestrians, as ARKit lacks localization imagery there.
 
 Because localization imagery depicts specific regions on the map, geotracking only supports areas where Apple has collected localization imagery in advance. Before starting a session, the sample project checks whether geotracking supports the user’s location by calling [`checkAvailability(completionHandler:)`](argeotrackingconfiguration/checkavailability(completionhandler:).md).
 

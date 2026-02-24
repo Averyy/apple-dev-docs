@@ -20,7 +20,7 @@ This method updates the values in the [`isDocumentEdited`](nsdocument/isdocument
 
 ## Parameters
 
-- `changeCountToken`: An object encapsulating the document changes, returned from  .
+- `changeCountToken`: An object encapsulating the document changes, returned from [`changeCountToken(for:)`](nsdocument/changecounttoken(for:).md).
 - `saveOperation`: The type of save operation.
 
 ## See Also

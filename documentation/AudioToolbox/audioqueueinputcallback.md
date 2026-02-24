@@ -29,12 +29,12 @@ You specify a recording audio queue callback when calling the [`AudioQueueNewInp
 
 ## Parameters
 
-- `inUserData`: The custom data you’ve specified in the   parameter of the   function. Typically, this includes format and state information for the audio queue.
+- `inUserData`: The custom data you’ve specified in the `inUserData` parameter of the [`AudioQueueNewInput(_:_:_:_:_:_:_:)`](audioqueuenewinput(_:_:_:_:_:_:_:).md) function. Typically, this includes format and state information for the audio queue.
 - `inAQ`: The recording audio queue that invoked the callback.
 - `inBuffer`: An audio queue buffer, newly filled by the recording audio queue, containing the new audio data your callback needs to write.
 - `inStartTime`: The sample time for the start of the audio queue buffer. This parameter is not used in basic recording.
-- `inNumberPacketDescriptions`: The number of packets of audio data sent to the callback in the   parameter. When recording in a constant bit rate (CBR) format, the audio queue sets this parameter to  .
-- `inPacketDescs`: For compressed formats that require packet descriptions, the set of packet descriptions produced by the encoder for audio data in the   parameter. When recording in a CBR format, the audio queue sets this parameter to  .
+- `inNumberPacketDescriptions`: The number of packets of audio data sent to the callback in the `inBuffer` parameter. When recording in a constant bit rate (CBR) format, the audio queue sets this parameter to `NULL`.
+- `inPacketDescs`: For compressed formats that require packet descriptions, the set of packet descriptions produced by the encoder for audio data in the `inBuffer` parameter. When recording in a CBR format, the audio queue sets this parameter to `NULL`.
 
 ## See Also
 

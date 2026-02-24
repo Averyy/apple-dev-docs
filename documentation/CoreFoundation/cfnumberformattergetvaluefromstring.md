@@ -28,8 +28,8 @@ func CFNumberFormatterGetValueFromString(_ formatter: CFNumberFormatter!, _ stri
 
 - `formatter`: The number formatter to use.
 - `string`: The string to parse.
-- `rangep`: A reference to a range that specifies the substring of    to be parsed. If  , the whole string is parsed. Upon return, contains the range of the actual extent of the parse (may be less than the given range).
-- `numberType`: The type of value that   references. Valid values are listed in  .
+- `rangep`: A reference to a range that specifies the substring of  `string` to be parsed. If `NULL`, the whole string is parsed. Upon return, contains the range of the actual extent of the parse (may be less than the given range).
+- `numberType`: The type of value that `valuePtr` references. Valid values are listed in [`CFNumberType`](cfnumbertype.md).
 - `valuePtr`: Upon return, contains a number or value representing the string in the specified format. You are responsible for releasing this value.
 
 ## See Also

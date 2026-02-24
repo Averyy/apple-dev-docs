@@ -23,7 +23,7 @@ Applies an impulse to the physics body at its center of mass.
 ## Parameters
 
 - `impulse`: An impulse in newton seconds.
-- `referenceEntity`: The reference entity that defines the coordinate   space in which   is defined.
+- `referenceEntity`: The reference entity that defines the coordinate space in which `impulse` is defined.
 
 ## See Also
 

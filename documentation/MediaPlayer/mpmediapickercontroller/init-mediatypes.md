@@ -22,7 +22,7 @@ A new media item picker.
 
 ## Parameters
 
-- `mediaTypes`: A set representing the media types for the media item picker. See the   enumeration.
+- `mediaTypes`: A set representing the media types for the media item picker. See the [`MPMediaType`](mpmediatype.md) enumeration.
 
 
 ---

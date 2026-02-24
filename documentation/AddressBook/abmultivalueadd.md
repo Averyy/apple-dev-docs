@@ -25,9 +25,9 @@ This function performs no type checking and will let you adda value whose type d
 ## Parameters
 
 - `multiValue`: The multi-value list you wish to modify.
-- `value`: An object representing a value in a multi-value list–it must be of the correct type. For example, if   is the value for a property of type  , then   needs to be a CFString object. See Property Types for a list of supported types in a multi-value list(see descriptions of the   constants). If   is  , this function raises an exception.
-- `label`: The label for  —it need not be unique. If   is  , this function raises an exception.
-- `outIdentifier`: If   is added successfully, this parameter returns the new identifier.
+- `value`: An object representing a value in a multi-value list–it must be of the correct type. For example, if `multiValue` is the value for a property of type [`kABMultiStringProperty`](kabmultistringproperty.md), then `value` needs to be a CFString object. See Property Types for a list of supported types in a multi-value list(see descriptions of the `kABMulti...` constants). If `value` is `NULL`, this function raises an exception.
+- `label`: The label for `value`—it need not be unique. If `label` is `NULL`, this function raises an exception.
+- `outIdentifier`: If `value` is added successfully, this parameter returns the new identifier.
 
 ## See Also
 

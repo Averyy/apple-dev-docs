@@ -27,6 +27,24 @@ A new, complex unit.
 
 This method creates a new, complex unit by raising the unit this method is called on by the given power. This task is often only one step in a series of operations. For example, you can use this method to create a meters-per-second-squared unit as shown below.
 
+**Swift**:
+
+```swift
+let meters = HKUnit.meterUnit()
+let seconds = HKUnit.secondUnit()
+let squaredSeconds = seconds.unitRaisedToPower(2)
+let metersPerSecondSquared = meters.unitDividedByUnit(squaredSeconds)
+```
+
+**Objective-C**:
+
+```objc
+HKUnit *meters = [HKUnit meterUnit];
+HKUnit *seconds = [HKUnit secondUnit];
+HKUnit *squaredSeconds = [seconds unitRaisedToPower:2];
+HKUnit *metersPerSecondSquared = [meters unitDividedByUnit:squaredSeconds];
+```
+
 ## Parameters
 
 - `power`: The power by which to raise the unit.

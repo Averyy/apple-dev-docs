@@ -20,7 +20,7 @@ Use this method to initiate phone calls or send messages. The URL you open is se
 
 ## Parameters
 
-- `url`: A URL that supports the   or   scheme. For information about the format of these URL schemes, see  .
+- `url`: A URL that supports the `tel:` or `sms:` scheme. For information about the format of these URL schemes, see [`Apple URL Scheme Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007899).
 
 
 ---

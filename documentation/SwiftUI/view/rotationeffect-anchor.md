@@ -40,7 +40,7 @@ Text("Rotation by passing an angle in degrees")
 ## Parameters
 
 - `angle`: The angle by which to rotate the view.
-- `anchor`: A unit point within the view about which to   perform the rotation. The default value is  .
+- `anchor`: A unit point within the view about which to perform the rotation. The default value is [`center`](unitpoint/center.md).
 
 ## See Also
 

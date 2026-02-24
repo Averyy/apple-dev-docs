@@ -25,7 +25,7 @@ This method registers the data provider to be messaged to provide the data for a
 ## Parameters
 
 - `dataProvider`: A pasteboard data provider.
-- `types`: An array of strings indicating the UTIs for the data representations   may provide.
+- `types`: An array of strings indicating the UTIs for the data representations `dataProvider` may provide.
 
 
 ---

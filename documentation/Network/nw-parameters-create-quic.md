@@ -22,7 +22,7 @@ func nw_parameters_create_quic(_ configure_quic: @escaping nw_parameters_configu
 
 ## Parameters
 
-- `configure_quic`: A Swift closure, or an Objective-C block, that receives an   instance. Provide a custom block and call the various   functions on this instance to customize connection and listener parameters. If you want to use default parameters, pass   for this value. This method doesn’t support passing   to disable the protocol.
+- `configure_quic`: A Swift closure, or an Objective-C block, that receives an [`nw_protocol_options_t`](nw_protocol_options_t.md) instance. Provide a custom block and call the various `nw_quic_set…` functions on this instance to customize connection and listener parameters. If you want to use default parameters, pass `NW_PARAMETERS_DEFAULT_CONFIGURATION` for this value. This method doesn’t support passing `NW_PARAMETERS_DISABLE_PROTOCOL` to disable the protocol.
 
 ## See Also
 

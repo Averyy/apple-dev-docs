@@ -21,7 +21,7 @@ The following two samples demonstrate basic compute passes:
 
 ##### Kernel Arguments and Argument Tables
 
-Compute commands that execute your code on GPU call  in your Metal shader, annotated with `[[kernel]]`. Each kernel has associated argument tables, such as the buffer argument table `[[buffer(n)]]`, used to access data associated with kernel arguments. In addition to annotations describing any argument table, some kernel arguments need information on their address space. For more information, see the following sections of the [`Metal Shading Language Specification (PDF):`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf)
+Compute commands that execute your code on GPU call *kernel functions* in your Metal shader, annotated with `[[kernel]]`. Each kernel has associated argument tables, such as the buffer argument table `[[buffer(n)]]`, used to access data associated with kernel arguments. In addition to annotations describing any argument table, some kernel arguments need information on their address space. For more information, see the following sections of the [`Metal Shading Language Specification (PDF):`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf)
 
 - For compute kernels, Section 5.1.3
 - For function argument tables, Section 5.2
@@ -49,7 +49,7 @@ When using resident resources, avoid data corruption by using an appropriate [`M
 
 ##### Using Tile Memory in a Compute Pass
 
-Apple family GPUs offer fast, integrated graphics memory called  that’s shared between subsequent passes for fast access to data. Compute passes can reserve this memory space for threadgroup memory or imageblock memory, giving your compute functions the ability to access temporary data at low latency across your shaders.
+Apple family GPUs offer fast, integrated graphics memory called *tile memory* that’s shared between subsequent passes for fast access to data. Compute passes can reserve this memory space for threadgroup memory or imageblock memory, giving your compute functions the ability to access temporary data at low latency across your shaders.
 
 For more information see the following sections of the [`Metal Shading Language Specification (PDF):`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf):
 

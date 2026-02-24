@@ -28,8 +28,8 @@ Compare two `sec_protocol_options_t` instances.
 
 ## Parameters
 
-- `optionsA`: A   instance.
-- `optionsB`: A   instance.
+- `optionsA`: A `sec_protocol_options_t` instance.
+- `optionsB`: A `sec_protocol_options_t` instance.
 
 
 ---

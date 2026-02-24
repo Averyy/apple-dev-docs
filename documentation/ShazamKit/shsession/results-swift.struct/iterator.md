@@ -34,7 +34,7 @@ struct Iterator
 ## See Also
 
 - [func makeAsyncIterator() -> SHSession.Results.Iterator](shsession/results-swift.struct/makeasynciterator.md)
-  Creates an asynchronous iterate that produces results from an asynchronous sequence.
+  Creates an asynchronous iterator that produces results from an asynchronous sequence.
 - [SHSession.Results.Element](shsession/results-swift.struct/element.md)
   A set of results that a session result object returns.
 

@@ -24,7 +24,7 @@ Your delegate implementation must adopt this method to opt into deferred photo p
 ## Parameters
 
 - `output`: The output instance.
-- `deferredPhotoProxy`: A   instance that contains a proxy   as a placeholder for the final image.
+- `deferredPhotoProxy`: A [`AVCaptureDeferredPhotoProxy`](avcapturedeferredphotoproxy.md) instance that contains a proxy [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) as a placeholder for the final image.
 - `error`: If the system couldn’t create the photo proxy, or any of the underlying intermediate files, an error object that describes the failure.
 
 ## See Also

@@ -28,9 +28,9 @@ On success, the display resolution, mirroring mode, and available display modes 
 ## Parameters
 
 - `display`: The identifier of the display being configured.
-- `stereo`: Pass   if you want to enable stereo operation. To disable it, pass  .
-- `forceBlueLine`: When in stereo operation, a display may need to generate a special stereo sync signal as part of the video output.  The sync signal consists of a blue line that occupies the first 25% of the last scan line (for the left eye view), and the first 75% of the last scan line (for the right eye view). The remainder of the scan line is black. To force the display to generate this sync signal, pass  ; otherwise pass  .
-- `option`: A constant that specifies the scope of the display configuration changes. For more information, see  .
+- `stereo`: Pass `true` if you want to enable stereo operation. To disable it, pass `false`.
+- `forceBlueLine`: When in stereo operation, a display may need to generate a special stereo sync signal as part of the video output.  The sync signal consists of a blue line that occupies the first 25% of the last scan line (for the left eye view), and the first 75% of the last scan line (for the right eye view). The remainder of the scan line is black. To force the display to generate this sync signal, pass `true`; otherwise pass `false`.
+- `option`: A constant that specifies the scope of the display configuration changes. For more information, see `Display Configuration Scopes`.
 
 ## See Also
 

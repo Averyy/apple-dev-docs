@@ -26,7 +26,7 @@ If `oldLayer` is not in the receiver’s [`sublayers`](calayer/sublayers.md) arr
 ## Parameters
 
 - `oldLayer`: The layer to be replaced.
-- `newLayer`: The layer with which to replace  .
+- `newLayer`: The layer with which to replace `oldLayer`.
 
 ## See Also
 

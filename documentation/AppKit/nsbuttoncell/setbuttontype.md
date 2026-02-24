@@ -24,7 +24,7 @@ Note that there is no `-buttonType` method. The set method sets various button p
 
 ## Parameters
 
-- `type`: A constant specifying the type of button. This can be one of the constants defined in  .
+- `type`: A constant specifying the type of button. This can be one of the constants defined in [`NSButton.ButtonType`](nsbutton/buttontype.md).
 
 ## See Also
 

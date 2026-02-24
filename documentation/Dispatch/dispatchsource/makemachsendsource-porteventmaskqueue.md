@@ -31,7 +31,7 @@ After creating the dispatch source, use the methods of the [`DispatchSourceProto
 ## Parameters
 
 - `port`: A Mach port with a send or send-once right.
-- `eventMask`: The events you want to monitor. For a list of possible values, see  .
+- `eventMask`: The events you want to monitor. For a list of possible values, see [`DispatchSource.MachSendEvent`](dispatchsource/machsendevent.md).
 - `queue`: The dispatch queue to use when executing the installed handlers.
 
 ## See Also

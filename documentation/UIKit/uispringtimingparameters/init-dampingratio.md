@@ -28,7 +28,7 @@ This method sets the initial velocity of any animated properties to `0.0`.
 
 ## Parameters
 
-- `ratio`: The damping ratio for controlling the spring’s behavior. For more damping and less oscillation, specify a value of  . For less damping and more oscillation, specify values closer to  .
+- `ratio`: The damping ratio for controlling the spring’s behavior. For more damping and less oscillation, specify a value of `1`. For less damping and more oscillation, specify values closer to `0`.
 
 ## See Also
 

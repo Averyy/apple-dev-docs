@@ -26,13 +26,13 @@ The identified object, if its known to the context; otherwise, a fault with its 
 
 #### Discussion
 
-If the context doesn’t recognize the specified object, this method returns a  — a placeholder object that doesn’t load its properties until your code accesses them. The context then fetches the corresponding values from the persistent store and uses those values to turn the fault into a fully realized object.
+If the context doesn’t recognize the specified object, this method returns a *fault* — a placeholder object that doesn’t load its properties until your code accesses them. The context then fetches the corresponding values from the persistent store and uses those values to turn the fault into a fully realized object.
 
 When this method returns a fault, Core Data makes no attempts to verify the existence of the underlying object in the persistent store. If the object doesn’t exist when the context tries to the fetch the object’s values, the framework throws an exception.
 
 ## Parameters
 
-- `objectID`: The identifier of the object to retrieve. For more information, see  .
+- `objectID`: The identifier of the object to retrieve. For more information, see [`NSManagedObjectID`](nsmanagedobjectid.md).
 
 ## See Also
 

@@ -23,7 +23,7 @@ This method is similar to [`edit(withFrame:in:editor:delegate:event:)`](nscell/e
 - `rect`: The bounding rectangle of the cell.
 - `controlView`: The control that manages the cell.
 - `textObj`: The field editor to use for editing the cell.
-- `delegate`: The object to use as a delegate for the field editor (  parameter). This delegate object receives various   delegation and notification methods during the course of editing the cell’s contents.
+- `delegate`: The object to use as a delegate for the field editor (`textObj` parameter). This delegate object receives various `NSText` delegation and notification methods during the course of editing the cell’s contents.
 - `selStart`: The start of the text selection.
 - `selLength`: The length of the text range.
 

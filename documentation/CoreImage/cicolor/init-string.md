@@ -29,7 +29,7 @@ On macOS before 10.10, the CIColor’s color space will be Generic RGB.
 
 ## Parameters
 
-- `representation`: A string that contains color and alpha float values.   For example, the string:   indicates an RGB color whose components   are 50% red, 70% green, 30% blue, and 100% opaque.   If the string contains only 3 float values, the alpha component will be    If the string contains no float values, then   will be returned.
+- `representation`: A string that contains color and alpha float values. For example, the string: `"0.5 0.7 0.3 1.0"` indicates an RGB color whose components are 50% red, 70% green, 30% blue, and 100% opaque. If the string contains only 3 float values, the alpha component will be `1.0` If the string contains no float values, then `/CIColor/clearColor` will be returned.
 
 ## See Also
 

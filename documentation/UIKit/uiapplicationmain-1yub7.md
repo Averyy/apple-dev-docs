@@ -34,10 +34,10 @@ Despite the declared return type, this function never returns.
 
 ## Parameters
 
-- `argc`: The count of arguments in  ; this usually is the corresponding parameter to  .
-- `argv`: A variable list of arguments; this usually is the corresponding parameter to  .
-- `principalClassName`: The name of the   class or subclass. If you specify  ,   is assumed.
-- `delegateClassName`: The name of the class from which the application delegate is instantiated. If   designates a subclass of  , you may designate the subclass as the delegate; the subclass instance receives the application-delegate messages. Specify   if you load the delegate object from your application’s main nib file.
+- `argc`: The count of arguments in `argv`; this usually is the corresponding parameter to `main`.
+- `argv`: A variable list of arguments; this usually is the corresponding parameter to `main`.
+- `principalClassName`: The name of the [`UIApplication`](uiapplication.md) class or subclass. If you specify `nil`, `UIApplication` is assumed.
+- `delegateClassName`: The name of the class from which the application delegate is instantiated. If `principalClassName` designates a subclass of [`UIApplication`](uiapplication.md), you may designate the subclass as the delegate; the subclass instance receives the application-delegate messages. Specify `nil` if you load the delegate object from your application’s main nib file.
 
 ## See Also
 

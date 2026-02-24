@@ -26,8 +26,8 @@ Any mutation on the new `ManagedAudioChannelLayout` will perform a copy of the `
 
 ## Parameters
 
-- `audioChannelLayoutPointer`: A pointer to an existing   .
-- `deallocator`: A closure that will be called when    is no longer used.
+- `audioChannelLayoutPointer`: A pointer to an existing `AudioChanneLayout`.
+- `deallocator`: A closure that will be called when `audioChannelLayoutPointer` is no longer used.
 
 
 ---

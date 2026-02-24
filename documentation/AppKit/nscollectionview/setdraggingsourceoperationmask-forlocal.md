@@ -23,7 +23,7 @@ You typically will invoke this method, and not override it.
 ## Parameters
 
 - `dragOperationMask`: The types of drag operations allowed.
-- `localDestination`: If  , mask applies when the drag destination object is in the same application as the receiver; if  , mask applies when the destination object is outside the receiver’s application.
+- `localDestination`: If [`true`](https://developer.apple.com/documentation/Swift/true), mask applies when the drag destination object is in the same application as the receiver; if [`false`](https://developer.apple.com/documentation/Swift/false), mask applies when the destination object is outside the receiver’s application.
 
 ## See Also
 

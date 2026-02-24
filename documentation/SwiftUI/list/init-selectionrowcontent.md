@@ -24,7 +24,7 @@ Creates a list that computes its rows on demand from an underlying collection of
 
 - `data`: The identifiable data for computing the list.
 - `selection`: A binding to a selected value.
-- `rowContent`: A view builder that creates the view for a single row of   the list.
+- `rowContent`: A view builder that creates the view for a single row of the list.
 
 ## See Also
 

@@ -28,8 +28,8 @@ func delete<T>(model: T.Type, where predicate: Predicate<T>? = nil, includeSubcl
 ## Parameters
 
 - `model`: The type of the model to remove.
-- `predicate`: The logical condition to use when determining if the context should remove a particular model. The default value is  .
-- `includeSubclasses`: A Boolean value that indicates whether the context includes subclasses of the specified model type when evaluating models to remove. The default value is  .
+- `predicate`: The logical condition to use when determining if the context should remove a particular model. The default value is `nil`.
+- `includeSubclasses`: A Boolean value that indicates whether the context includes subclasses of the specified model type when evaluating models to remove. The default value is `true`.
 
 ## See Also
 

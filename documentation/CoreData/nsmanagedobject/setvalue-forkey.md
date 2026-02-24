@@ -30,7 +30,7 @@ This method is overridden by `NSManagedObject` to access the managed object’s 
 
 ## Parameters
 
-- `value`: The new value for the property specified by  .
+- `value`: The new value for the property specified by `key`.
 - `key`: The name of one of the receiver’s properties.
 
 ## See Also

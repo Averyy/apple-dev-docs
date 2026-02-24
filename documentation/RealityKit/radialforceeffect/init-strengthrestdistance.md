@@ -22,7 +22,7 @@ init(strength: Double, restDistance: Double)
 ## Parameters
 
 - `strength`: The magnitude of the spring effect—a larger strength simulates a stiffer spring.
-- `restDistance`: Objects at this distance will receive zero radial force.   Otherwise they will gravitate toward this distance along the radial direction.   Objects will be attracted to the origin directly if this property is set to zero.
+- `restDistance`: Objects at this distance will receive zero radial force. Otherwise they will gravitate toward this distance along the radial direction. Objects will be attracted to the origin directly if this property is set to zero.
 
 
 ---

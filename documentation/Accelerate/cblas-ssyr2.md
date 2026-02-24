@@ -29,15 +29,15 @@ Calculates `A + alpha*x*y`.
 ## Parameters
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
-- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are   or  .
-- `N`: Order of matrix  ; number of elements in vector  .
-- `ALPHA`: Scaling factor to multiply   by.
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
-- `Y`: Vector  .
-- `INCY`: Stride within  . For example, if   is 7, every 7th element is used.
-- `A`: Matrix  .
-- `LDA`: Leading dimension of array containing matrix  .
+- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are `'U'` or `'L'`.
+- `N`: Order of matrix `A`; number of elements in vector `x`.
+- `ALPHA`: Scaling factor to multiply `x` by.
+- `X`: Vector `x`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
+- `Y`: Vector `y`.
+- `INCY`: Stride within `Y`. For example, if `incY` is 7, every 7th element is used.
+- `A`: Matrix `A`.
+- `LDA`: Leading dimension of array containing matrix `A`.
 
 ## See Also
 

@@ -23,6 +23,9 @@ var inviteeResponseHandler: ((String, GKInviteeResponse) -> Void)? { get set }
 
 The block takes the following parameters:
 
+- ***playerID***: The identifier for the player.
+- ***GKInviteeResponse***: The nature of the response. See [`GKInviteeResponse`](gkinviteeresponse.md).
+
 An invitee response handler is called whenever you programmatically invite specific players to join a match. It is called once for each player invited to the match. Typically, your game uses the responses to update the custom user interface. For example, you want the player to be able to perform any of the following tasks:
 
 - Start the match.

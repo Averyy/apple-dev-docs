@@ -22,7 +22,7 @@ The animated images associated with the interface objects may have any number of
 
 ## Parameters
 
-- `coordinatedAnimations`: An array of objects that conform to the   protocol. The objects in this array should be displaying an animated image. Specify   to remove all coordinated objects from the picker.
+- `coordinatedAnimations`: An array of objects that conform to the [`WKImageAnimatable`](wkimageanimatable.md) protocol. The objects in this array should be displaying an animated image. Specify `nil` to remove all coordinated objects from the picker.
 
 ## See Also
 

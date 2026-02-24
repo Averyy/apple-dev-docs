@@ -29,6 +29,9 @@ This method applies the height-field from the mask filter to an image. The effec
 
 The height field from mask filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in the text having a shading effect:
 
 ```swift

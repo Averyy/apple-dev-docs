@@ -24,6 +24,10 @@ var positionDidChangeHandler: ((any GCPhysicalInputElement, any GCSwitchPosition
 
 The block’s parameters are:
 
+- **`element`**: The element whose position changes.
+- **`input`**: The input object that represents the position.
+- **`position`**: The new position of the element.
+
 ## See Also
 
 - [var position: Int](gcswitchpositioninput/position.md)

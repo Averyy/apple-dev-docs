@@ -30,7 +30,7 @@ If you registered a class for the specified `identifier` and a new cell must be 
 
 ## Parameters
 
-- `identifier`: A string identifying the cell object to be reused. This parameter must not be  .
+- `identifier`: A string identifying the cell object to be reused. This parameter must not be `nil`.
 
 ## See Also
 

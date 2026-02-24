@@ -23,7 +23,8 @@ class func loadPlayers(forIdentifiers identifiers: [String], withCompletionHandl
 ## Parameters
 
 - `identifiers`: The identifiers for the players to load.
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameters: - ***players***: The players that GameKit successfully loads. If an error occurs, this array may contain just the player data that GameKit is able to load.
+- ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 
 ---

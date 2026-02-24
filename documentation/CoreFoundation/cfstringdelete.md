@@ -27,7 +27,7 @@ The characters after the deleted range are adjusted to “fill in” the gap.
 ## Parameters
 
 - `theString`: A string from which characters are to be deleted.
-- `range`: The range of characters in   to delete.
+- `range`: The range of characters in `theString` to delete.
 
 ## See Also
 

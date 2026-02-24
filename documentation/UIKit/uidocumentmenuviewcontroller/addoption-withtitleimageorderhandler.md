@@ -20,7 +20,7 @@ func addOption(withTitle title: String, image: UIImage?, order: UIDocumentMenuOr
 
 - `title`: The custom menu item’s title.
 - `image`: The custom menu item’s image.
-- `order`: The position of this menu item. See   for possible values.
+- `order`: The position of this menu item. See [`UIDocumentMenuOrder`](uidocumentmenuorder.md) for possible values.
 - `handler`: A block that is called when the user selects this custom menu item.
 
 ## See Also

@@ -26,8 +26,8 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `in_sample_rates`: A pointer to a buffer of   values containing the available sample rates.
-- `in_num_rates`: The number of sample rates in   buffer.
+- `in_sample_rates`: A pointer to a buffer of `double` values containing the available sample rates.
+- `in_num_rates`: The number of sample rates in `in_sample_rates` buffer.
 
 ## See Also
 

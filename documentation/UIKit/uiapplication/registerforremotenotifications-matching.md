@@ -24,7 +24,7 @@ iOS does not display or play notification types specified in the notification pa
 
 ## Parameters
 
-- `types`: A bit mask specifying the types of notifications the app accepts. For a list of values, see  .
+- `types`: A bit mask specifying the types of notifications the app accepts. For a list of values, see [`UIRemoteNotificationType`](uiremotenotificationtype.md).
 
 ## See Also
 

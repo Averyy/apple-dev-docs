@@ -27,7 +27,7 @@ The default implementation of this method parses the report data and notifies at
 
 - `report`: A memory descriptor that describes the report.
 - `reportType`: The type of report.
-- `options`: Options to specify in the request. No options are currently supported, and the default value is  .
+- `options`: Options to specify in the request. No options are currently supported, and the default value is `0`.
 
 ## See Also
 

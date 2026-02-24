@@ -31,8 +31,8 @@ If you are stopping an asynchronous search, before calling this function, call [
 
 ## Parameters
 
-- `browser`: The CFNetServiceBrowser that was used to start the search; cannot be  .
-- `error`: A pointer to a   structure that will be passed to the callback function associated with this CFNetServiceBrowser (if the search is being conducted in asynchronous mode) or that is pointed to by the   parameter when   or   returns (if the search is being conducted in synchronous mode). Set the   field to   and the   field to an appropriate value.
+- `browser`: The CFNetServiceBrowser that was used to start the search; cannot be `NULL`.
+- `error`: A pointer to a [`CFStreamError`](https://developer.apple.com/documentation/CoreFoundation/CFStreamError) structure that will be passed to the callback function associated with this CFNetServiceBrowser (if the search is being conducted in asynchronous mode) or that is pointed to by the `error` parameter when [`CFNetServiceBrowserSearchForDomains(_:_:_:)`](cfnetservicebrowsersearchfordomains(_:_:_:).md) or [`CFNetServiceBrowserSearchForServices(_:_:_:_:)`](cfnetservicebrowsersearchforservices(_:_:_:_:).md) returns (if the search is being conducted in synchronous mode). Set the `domain` field to `kCFStreamErrorDomainCustom` and the `error` field to an appropriate value.
 
 ## See Also
 

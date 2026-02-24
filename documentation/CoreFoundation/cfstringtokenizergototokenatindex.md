@@ -31,7 +31,7 @@ You can obtain the range and attribute of the token calling [`CFStringTokenizerG
 ## Parameters
 
 - `tokenizer`: A CFStringTokenizer object.
-- `index`: The index of a character in the string for  .
+- `index`: The index of a character in the string for `tokenizer`.
 
 ## See Also
 

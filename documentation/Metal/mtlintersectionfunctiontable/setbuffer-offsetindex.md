@@ -22,7 +22,7 @@ func setBuffer(_ buffer: (any MTLBuffer)?, offset: Int, index: Int)
 
 ## Parameters
 
-- `buffer`: The   object to set in the argument table.
+- `buffer`: The [`MTLBuffer`](mtlbuffer.md) object to set in the argument table.
 - `offset`: Where the data begins, in bytes, from the start of the buffer.
 - `index`: An index in the function table’s buffer argument table.
 

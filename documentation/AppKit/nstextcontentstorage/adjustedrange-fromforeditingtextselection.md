@@ -25,7 +25,7 @@ When `textRange` is intersecting or following the current edited range, the meth
 ## Parameters
 
 - `textRange`: The text range.
-- `forEditingTextSelection`: A Boolean value that indicates if   is for the text selection associated with the edit session.
+- `forEditingTextSelection`: A Boolean value that indicates if `textRange` is for the text selection associated with the edit session.
 
 ## See Also
 

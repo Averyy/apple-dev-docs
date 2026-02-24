@@ -27,10 +27,37 @@ A predicate that matches category samples based on the provided expression. This
 
 Use this convenience method to create a predicate that checks a category sample’s value. The following listing uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+let asleep = HKQuery.predicateForCategorySamplesWithOperatorType(
+    .EqualToPredicateOperatorType,
+    value: HKCategoryValueSleepAnalysis.Asleep.rawValue)
+ 
+let explicitAsleep =
+    NSPredicate(format: "%K == %d",
+                HKPredicateKeyPathCategoryValue,
+                HKCategoryValueSleepAnalysis.Asleep.rawValue)
+```
+
+**Objective-C**:
+
+```objc
+NSPredicate *asleep =
+    [HKQuery
+     predicateForCategorySamplesWithOperatorType:NSEqualToPredicateOperatorType
+     value:HKCategoryValueSleepAnalysisAsleep];
+ 
+NSPredicate *explicitAsleep =
+    [NSPredicate predicateWithFormat:@"%K == %d",
+     HKPredicateKeyPathCategoryValue,
+     HKCategoryValueSleepAnalysisAsleep];
+```
+
 ## Parameters
 
-- `operatorType`: The type of operation to perform when matching the category sample’s value against the target value. For a list of possible operators, see  .
-- `value`: The category sample’s target value. Use an enumeration value appropriate for the type of category samples you are working with. For example, a predicate for sleep analysis samples use values from the   enumeration.
+- `operatorType`: The type of operation to perform when matching the category sample’s value against the target value. For a list of possible operators, see [`NSComparisonPredicate.Operator.contains`](https://developer.apple.com/documentation/Foundation/NSComparisonPredicate/Operator/contains).
+- `value`: The category sample’s target value. Use an enumeration value appropriate for the type of category samples you are working with. For example, a predicate for sleep analysis samples use values from the [`HKCategoryValueSleepAnalysis`](hkcategoryvaluesleepanalysis.md) enumeration.
 
 ## See Also
 

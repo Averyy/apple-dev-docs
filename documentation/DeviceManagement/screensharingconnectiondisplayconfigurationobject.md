@@ -14,6 +14,11 @@ The display configuration for this connection.
 object ScreenSharingConnectionDisplayConfigurationObject
 ```
 
+## Properties
+
+- `DisplayType` (string) *(required)*: The type of display for the connection, which has these allowed values: - `Virtual1`: Create one virtual display.
+- `Virtual2`: Create two virtual displays.
+
 
 ---
 

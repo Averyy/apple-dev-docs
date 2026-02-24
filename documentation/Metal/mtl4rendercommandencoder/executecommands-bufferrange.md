@@ -21,8 +21,8 @@ func executeCommands(buffer: any MTLIndirectCommandBuffer, range: Range<Int>)
 
 ## Parameters
 
-- `buffer`: An   instance that contains other commands the current command runs.
-- `range`: A span of integers that represent the command entries in buffer the current command runs.   The number of commands needs to be less than or equal to  .
+- `buffer`: An [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance that contains other commands the current command runs.
+- `range`: A span of integers that represent the command entries in buffer the current command runs. The number of commands needs to be less than or equal to `16,384`.
 
 ## See Also
 

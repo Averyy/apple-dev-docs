@@ -24,7 +24,7 @@ Use this method to create an image provider with only a one-piece image. The res
 
 ## Parameters
 
-- `onePieceImage`: The image to display. The image must be a template image, where only the alpha channel is used to define the image contents. This parameter must not be  .
+- `onePieceImage`: The image to display. The image must be a template image, where only the alpha channel is used to define the image contents. This parameter must not be `nil`.
 
 ## See Also
 

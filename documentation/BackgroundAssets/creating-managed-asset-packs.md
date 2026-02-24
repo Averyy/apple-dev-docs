@@ -18,6 +18,10 @@ Group assets that you want to download together into asset packs. For example, c
 
 Decide on a download policy for each asset pack, which the system uses to manage the assets on a device:
 
+- **`essential`**: Downloads the asset pack as part of the app’s installation process. The asset-pack download contributes to the overall download progress that people see in the App Store, in TestFlight, and on the Home Screen (in iOS, iPadOS, and tvOS) or in the Home View (in visionOS).
+- **`prefetch`**: Downloads the asset pack during the app’s installation process, but lets it continue in the background after installation finishes.
+- **`onDemand’**: Downloads the asset pack only when you explicitly use an API to request the asset pack.
+
 For example, choose `essential` for the tutorial asset pack so that people can run the tutorial immediately after installing your game without delay.
 
 For limits on asset packs hosted by Apple, see [`Apple-hosted asset pack size limits`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/apple-hosted-asset-pack-size-limits) in App Store Connect Help.

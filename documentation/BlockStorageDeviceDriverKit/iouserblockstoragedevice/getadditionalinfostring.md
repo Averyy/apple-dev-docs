@@ -20,7 +20,7 @@ A value that indicates the get-additional-info result. Return [`kIOReturnSuccess
 
 ## Parameters
 
-- `additionalInfo`: An in/out   parameter. On output, populate this structure with the additional info string.
+- `additionalInfo`: An in/out [`DeviceString`](devicestring.md) parameter. On output, populate this structure with the additional info string.
 
 ## See Also
 

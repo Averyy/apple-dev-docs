@@ -27,7 +27,7 @@ If the requested attribute has not been fetched before, it is fetched in order t
 
 - `record`: The record.
 - `attribute`: The attribute.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

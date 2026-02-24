@@ -32,8 +32,8 @@ Note that internal memory allocations may occur in the case of pivoted factoriza
 
 - `Matrix`: The matrix to factorize.
 - `nfoptions`: Numeric factor options, for example pivoting parameters.
-- `factorStorage`: A pointer to space used to store the factorization   of size at least   bytes. This storage   should not be altered by the user during the lifetime of the return   value. This memory must be 16-byte aligned (any allocation returned   by malloc() has this property).
-- `workspace`: A pointer to a workspace of size at least    bytes. This workspace may be   reused or destroyed by the user as soon as the function returns.   This memory must be 16-byte aligned (any allocation returned   by   has this property).
+- `factorStorage`: A pointer to space used to store the factorization of size at least `SymbolicFactor.factorSize_Float * 2` bytes. This storage should not be altered by the user during the lifetime of the return value. This memory must be 16-byte aligned (any allocation returned by malloc() has this property).
+- `workspace`: A pointer to a workspace of size at least `SymbolicFactor.workspaceSize_Float * 2` bytes. This workspace may be reused or destroyed by the user as soon as the function returns. This memory must be 16-byte aligned (any allocation returned by `malloc()` has this property).
 
 ## See Also
 

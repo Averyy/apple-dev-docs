@@ -36,7 +36,7 @@ After calling this method, any prior calls to [`useResidencySet(_:)`](mtl4comman
 
 ## Parameters
 
-- `allocator`:   to attach to.
+- `allocator`: [`MTL4CommandAllocator`](mtl4commandallocator.md) to attach to.
 
 
 ---

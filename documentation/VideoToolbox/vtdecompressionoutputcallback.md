@@ -25,13 +25,13 @@ When you create a decompression session, you pass in a callback function to be c
 
 ## Parameters
 
-- `decompressionOutputRefCon`: The callback’s reference value, copied from the   field of the   structure.
-- `sourceFrameRefCon`: The frame’s reference value, copied from the   argument to  .
-- `status`:   if decompression was successful; an error code if decompression was not successful.
-- `infoFlags`: If the   bit is set, it is safe for the client to modify the imageBuffer.
-- `imageBuffer`: The decompressed frame, if decompression was successful; otherwise,  .
-- `presentationTimeStamp`: The frame’s presentation timestamp, which is determined by calling  ; otherwise,   if the timestamp is not available.
-- `presentationDuration`: The frame’s presentation duration, which is determined by calling  ; otherwise,   if the timestamp is not available.
+- `decompressionOutputRefCon`: The callback’s reference value, copied from the `decompressionOutputRefCon` field of the [`VTDecompressionOutputCallbackRecord`](vtdecompressionoutputcallbackrecord.md) structure.
+- `sourceFrameRefCon`: The frame’s reference value, copied from the `sourceFrameRefCon` argument to `VTDecompressionSessionDecodeFrame`.
+- `status`: `noErr` if decompression was successful; an error code if decompression was not successful.
+- `infoFlags`: Information about the decode operation. The [`asynchronous`](vtdecodeinfoflags/asynchronous.md) bit may be set if the decode ran asynchronously. The [`frameDropped`](vtdecodeinfoflags/framedropped.md) bit may be set if the frame was dropped. If the [`imageBufferModifiable`](vtdecodeinfoflags/imagebuffermodifiable.md) bit is set, it is safe for the client to modify the imageBuffer.
+- `imageBuffer`: The decompressed frame, if decompression was successful; otherwise, `NULL`. > ❗ **Important**:  The video decompressor may still be referencing the `imageBuffer` returned in this callback if the [`imageBufferModifiable`](vtdecodeinfoflags/imagebuffermodifiable.md) flag is not set.  Unless this flag is set, it is not safe to modify the returned `imageBuffer`.
+- `presentationTimeStamp`: The frame’s presentation timestamp, which is determined by calling [`CMSampleBufferGetOutputPresentationTimeStamp(_:)`](https://developer.apple.com/documentation/CoreMedia/CMSampleBufferGetOutputPresentationTimeStamp(_:)); otherwise, `kCMTimeInvalid` if the timestamp is not available.
+- `presentationDuration`: The frame’s presentation duration, which is determined by calling [`CMSampleBufferGetOutputDuration(_:)`](https://developer.apple.com/documentation/CoreMedia/CMSampleBufferGetOutputDuration(_:)); otherwise, `kCMTimeInvalid` if the timestamp is not available.
 
 ## See Also
 

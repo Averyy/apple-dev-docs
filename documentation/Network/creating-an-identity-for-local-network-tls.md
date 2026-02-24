@@ -6,7 +6,7 @@ Learn how to create and use a digital identity in your application for local net
 
 #### Overview
 
-In the context of Transport Layer Security (TLS), a  is a cryptographic asset that contains a certificate and an associated private key for encrypting network traffic sent between a client and a server. Creating a digital identity for iOS or macOS is done so clients can communicate using TLS over the internet or a local network.
+In the context of Transport Layer Security (TLS), a *digital identity* is a cryptographic asset that contains a certificate and an associated private key for encrypting network traffic sent between a client and a server. Creating a digital identity for iOS or macOS is done so clients can communicate using TLS over the internet or a local network.
 
 In this scenario, a server accepts client connections on a local network. While this article focuses on local network TLS, you can apply many of the concepts for other use cases. For example, setting up TLS with a certificate obtained from third-party Certificate Authority or configuring any system that needs to establish chain of trust to a root certificate.
 

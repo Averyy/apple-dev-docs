@@ -25,7 +25,7 @@ A value representing options to use only forced captions, allow system locale to
 
 ## Parameters
 
-- `domain`: The domain to retrieve the preference value from. See  . Pass   unless the system defaults are needed for comparison.
+- `domain`: The domain to retrieve the preference value from. See [`MACaptionAppearanceDomain`](macaptionappearancedomain.md). Pass [`MACaptionAppearanceDomain.user`](macaptionappearancedomain/user.md) unless the system defaults are needed for comparison.
 
 ## See Also
 

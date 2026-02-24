@@ -26,7 +26,7 @@ An initialized `NSXMLParser` object or `nil` if an error occurs.
 
 ## Parameters
 
-- `url`: An   object specifying a URL. The URL must be fully qualified and refer to a scheme that is supported by the   class.
+- `url`: An [`NSURL`](nsurl.md) object specifying a URL. The URL must be fully qualified and refer to a scheme that is supported by the `NSURL` class.
 
 ## See Also
 

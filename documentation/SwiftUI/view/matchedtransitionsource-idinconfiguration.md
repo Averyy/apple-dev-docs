@@ -35,8 +35,8 @@ MyView()
 
 ## Parameters
 
-- `id`: The identifier, often derived from the identifier of   the data being displayed by the view.
-- `namespace`: The namespace in which defines the  . New   namespaces are created by adding an   variable   to a   type and reading its value in the view’s body   method.
+- `id`: The identifier, often derived from the identifier of the data being displayed by the view.
+- `namespace`: The namespace in which defines the `id`. New namespaces are created by adding an [`Namespace`](namespace.md) variable to a [`View`](view.md) type and reading its value in the view’s body method.
 - `configuration`: A closure that you can use to apply styling to the source.
 
 ## See Also

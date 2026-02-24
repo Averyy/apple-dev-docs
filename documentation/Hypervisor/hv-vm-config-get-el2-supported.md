@@ -20,7 +20,7 @@ func hv_vm_config_get_el2_supported(_ el2_supported: UnsafeMutablePointer<Bool>)
 
 ## Parameters
 
-- `el2_supported`: A pointer to a Boolean value that indicates whether the current platform supports EL2. The framework writes this value on success; otherwise,  .
+- `el2_supported`: A pointer to a Boolean value that indicates whether the current platform supports EL2. The framework writes this value on success; otherwise, `nil`.
 
 ## See Also
 

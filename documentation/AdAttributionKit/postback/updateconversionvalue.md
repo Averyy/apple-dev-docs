@@ -25,7 +25,7 @@ static func updateConversionValue(_ postbackUpdate: PostbackUpdate) async throws
 
 ## Parameters
 
-- `postbackUpdate`: A   structure that describes the new conversion values and associated   conversion types.
+- `postbackUpdate`: A `PostbackUpdate` structure that describes the new conversion values and associated conversion types.
 
 
 ---

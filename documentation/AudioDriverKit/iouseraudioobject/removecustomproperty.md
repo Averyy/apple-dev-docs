@@ -20,7 +20,7 @@ virtual kern_return_t RemoveCustomProperty(IOUserAudioCustomProperty *in_custom_
 
 ## Parameters
 
-- `in_custom_property`: An   object to remove from the  .
+- `in_custom_property`: An [`IOUserAudioCustomProperty`](iouseraudiocustomproperty.md) object to remove from the [`IOUserAudioObject`](iouseraudioobject.md).
 
 ## See Also
 

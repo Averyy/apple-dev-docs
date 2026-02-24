@@ -31,8 +31,8 @@ When your app deactivates a session, the return value is [`false`](https://devel
 
 ## Parameters
 
-- `active`: Specify   to activate your app’s audio session, or   to deactivate it.
-- `options`: An integer bit mask containing one or more constants from the   enumeration.
+- `active`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to activate your app’s audio session, or [`false`](https://developer.apple.com/documentation/Swift/false) to deactivate it.
+- `options`: An integer bit mask containing one or more constants from the [`AVAudioSession.SetActiveOptions`](avaudiosession/setactiveoptions.md) enumeration.
 
 ## Topics
 

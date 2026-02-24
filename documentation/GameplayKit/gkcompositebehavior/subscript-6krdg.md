@@ -29,7 +29,7 @@ The order of individual behaviors in a composite behavior is undefined. However,
 
 ## Parameters
 
-- `idx`: An index in the composite behavior’s list of individual behaviors; it must be less than the value of the   property.
+- `idx`: An index in the composite behavior’s list of individual behaviors; it must be less than the value of the [`behaviorCount`](gkcompositebehavior/behaviorcount.md) property.
 
 ## See Also
 

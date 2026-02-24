@@ -22,7 +22,7 @@ init(unsafeBuffer: sending CVPixelBuffer)
 
 ## Parameters
 
-- `unsafeBuffer`: Owership of this buffer is transferred to the new instance. This buffer is   copied   and must not be modified after this call.
+- `unsafeBuffer`: Owership of this buffer is transferred to the new instance. This buffer is *not* copied and must not be modified after this call.
 
 
 ---

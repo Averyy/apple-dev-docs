@@ -24,9 +24,9 @@ This method is called when the system-provided configuration view has been dismi
 
 ## Parameters
 
-- `browser`: The instance of   that is generating the event.
-- `accessory`: The   object whose configuration process has completed.
-- `status`: The status of the completed configuration process. See   for possible values.
+- `browser`: The instance of [`EAWiFiUnconfiguredAccessoryBrowser`](eawifiunconfiguredaccessorybrowser.md) that is generating the event.
+- `accessory`: The [`EAWiFiUnconfiguredAccessory`](eawifiunconfiguredaccessory.md) object whose configuration process has completed.
+- `status`: The status of the completed configuration process. See [`EAWiFiUnconfiguredAccessoryConfigurationStatus`](eawifiunconfiguredaccessoryconfigurationstatus.md) for possible values.
 
 ## See Also
 

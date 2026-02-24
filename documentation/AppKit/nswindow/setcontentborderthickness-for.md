@@ -24,8 +24,9 @@ The `contentBorder` does not include the title bar or toolbar, so a textured win
 
 ## Parameters
 
-- `thickness`: The thickness for  , in points.
-- `edge`: The border whose thickness to set:
+- `thickness`: The thickness for `edge`, in points.
+- `edge`: The border whose thickness to set: - `NSMaxYEdge`: Top border.
+- `NSMinYEdge`: Bottom border.
 
 ## See Also
 

@@ -31,7 +31,7 @@ Subclasses can implement this method to add other information to the cost. For e
 
 ## Parameters
 
-- `node`: A node from this node’s   list.
+- `node`: A node from this node’s [`connectedNodes`](gkgraphnode/connectednodes.md) list.
 
 ## See Also
 

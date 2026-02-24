@@ -20,8 +20,8 @@ init(item: Data, account: Data? = nil)
 
 ## Parameters
 
-- `item`: The   of the item linked by this  .
-- `account`: The   of the Account to which this   belongs, if any. Defaults to  .
+- `item`: The [`id`](asimportableitem/id.md) of the item linked by this `LinkedItem`.
+- `account`: The [`id`](asimportableaccount/id.md) of the Account to which this `LinkedItem` belongs, if any. Defaults to `nil`.
 
 
 ---

@@ -13,7 +13,7 @@ init(delegate: (any XCTWaiterDelegate)?)
 
 ## Parameters
 
-- `delegate`: The   that wait events should be sent to.
+- `delegate`: The [`XCTWaiterDelegate`](xctwaiterdelegate.md) that wait events should be sent to.
 
 
 ---

@@ -28,7 +28,7 @@ The inferred bins.
 ## Parameters
 
 - `data`: The given data values.
-- `desiredCount`: The desired number of bins for the given data.   If  , infer the number of bins automatically from data using   capped at 200.
+- `desiredCount`: The desired number of bins for the given data. If `nil`, infer the number of bins automatically from data using [`Scott’s normal reference rule`](https://developer.apple.comhttps://doi.org/10.1093/biomet/66.3.605) capped at 200.
 
 
 ---

@@ -18,6 +18,9 @@ For each executable or dynamic library in an app that uses a required reason API
 
 Each dictionary in the `NSPrivacyAccessedAPITypes` array needs to contain these keys and values:
 
+- **[`NSPrivacyAccessedAPIType`](app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitype.md)**: A string that identifies the category of required reason APIs your app uses. The value you provide must be one of the values listed in the sections below.
+- **[`NSPrivacyAccessedAPITypeReasons`](app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitypereasons.md)**: An array of strings that identifies the reasons your app uses the APIs. The values you provide must be the values associated with the accessed API type in the sections below.
+
 The categories of required reason APIs, which APIs are in each category, and the reasons you can include in a privacy manifest are described in the documentation for the dictionary keys.
 
 > **Note**:  Apple continually reviews the list of required reason APIs and reasons for usage, and will update this article from time to time. If your app uses required reason API to provide benefits to the people using the app, for a reason that isn’t listed here, [`submit a request for a new approved reason`](https://developer.apple.comhttps://developer.apple.com/contact/request/privacy-manifest-reason/).

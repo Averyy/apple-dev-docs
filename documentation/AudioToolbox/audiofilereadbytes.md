@@ -32,7 +32,7 @@ This function returns `eofErr` when the read operation encounters the end of the
 ## Parameters
 
 - `inAudioFile`: The audio file whose bytes of audio data you want to read.
-- `inUseCache`: Set to   if you want to cache the data. You should cache reads and writes if you read or write the same portion of a file multiple times. To request that the data not be cached, if possible, set to  . You should not cache reads and writes if you read or write data from a file only once.
+- `inUseCache`: Set to `true` if you want to cache the data. You should cache reads and writes if you read or write the same portion of a file multiple times. To request that the data not be cached, if possible, set to `false`. You should not cache reads and writes if you read or write data from a file only once.
 - `inStartingByte`: The byte offset of the audio data you want to be returned.
 - `ioNumBytes`: On input, a pointer to the number of bytes to read. On output, a pointer to the number of bytes actually read.
 - `outBuffer`: A pointer to user-allocated memory large enough for the requested bytes.

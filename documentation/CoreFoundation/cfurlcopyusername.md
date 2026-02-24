@@ -26,7 +26,7 @@ The user name, or `NULL` if no user name exists. In some cases, this function ma
 
 ## Parameters
 
-- `anURL`: The   object to examine.
+- `anURL`: The `CFURL` object to examine.
 
 ## See Also
 

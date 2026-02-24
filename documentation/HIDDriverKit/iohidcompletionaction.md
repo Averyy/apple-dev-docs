@@ -17,8 +17,8 @@ typedef void (*)(void *, void *, int, unsigned int) IOHIDCompletionAction;
 
 ## Parameters
 
-- `target`: The target specified in the   struct.
-- `parameter`: The parameter specified in the   struct.
+- `target`: The target specified in the `IOHIDCompletion` struct.
+- `parameter`: The parameter specified in the `IOHIDCompletion` struct.
 - `status`: The completion status.
 
 ## See Also

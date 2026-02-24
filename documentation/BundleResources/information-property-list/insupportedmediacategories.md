@@ -11,6 +11,10 @@ Types of media supported by your app’s media-playing intents.
 - tvOS 14.0+
 - visionOS 1.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 Specify one or more media categories to allow Siri to invoke your app’s intent handling when a user asks to play media. Use `INMediaCategoryGeneral` for media that doesn’t fit into any of the other categories, like white noise or sound effects.

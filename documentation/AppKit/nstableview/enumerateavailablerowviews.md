@@ -24,7 +24,8 @@ It is preferred to use this method to efficiently make changes over all views th
 
 ## Parameters
 
-- `handler`: The   takes two arguments:
+- `handler`: The `Block` to apply to elements in the set. The `Block` takes two arguments: - **rowView**: The view for the row.
+- **row**: The index of the row.
 
 
 ---

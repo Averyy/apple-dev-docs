@@ -17,7 +17,7 @@ func CTFontCollectionSetExclusionDescriptors(_ collection: CTMutableFontCollecti
 ## Parameters
 
 - `collection`: The font collection reference.
-- `descriptors`: An array of   objects. This parameter can be  .
+- `descriptors`: An array of [`CTFontDescriptor`](ctfontdescriptor.md) objects. This parameter can be `NULL`.
 
 ## See Also
 

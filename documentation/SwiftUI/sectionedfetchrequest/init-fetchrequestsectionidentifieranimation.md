@@ -52,9 +52,9 @@ If you only need to configure the request’s section identifier, predicate, and
 
 ## Parameters
 
-- `fetchRequest`: An     instance that describes the search criteria for retrieving data   from the persistent store.
-- `sectionIdentifier`: A key path that SwiftUI applies to the    type to get an object’s section identifier.
-- `animation`: The animation to use for user interface changes that   result from changes to the fetched results.
+- `fetchRequest`: An [`NSFetchRequest`](https://developer.apple.com/documentation/CoreData/NSFetchRequest) instance that describes the search criteria for retrieving data from the persistent store.
+- `sectionIdentifier`: A key path that SwiftUI applies to the `Result` type to get an object’s section identifier.
+- `animation`: The animation to use for user interface changes that result from changes to the fetched results.
 
 ## See Also
 

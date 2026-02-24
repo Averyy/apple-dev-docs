@@ -68,7 +68,7 @@ let validPageCountTable = table[pagesColumn]
 
 ## Parameters
 
-- `mask`: An untyped column indicating whether rows should be removed (a   default value) or included (any nondefault value) in the derived table.
+- `mask`: An untyped column indicating whether rows should be removed (a default value) or included (any nondefault value) in the derived table.
 
 
 ---

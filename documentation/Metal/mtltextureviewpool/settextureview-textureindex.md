@@ -26,7 +26,7 @@ The [`MTLResourceID`](mtlresourceid.md) of a newly created texture view in this 
 
 ## Parameters
 
-- `texture`: An   instance for which to copy its texture view.
+- `texture`: An [`MTLTexture`](mtltexture.md) instance for which to copy its texture view.
 - `index`: An index of a slot in this texture pool into which this method copies the texture view.
 
 

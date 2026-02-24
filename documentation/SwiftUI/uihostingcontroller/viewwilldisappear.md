@@ -25,7 +25,7 @@ SwiftUI calls this method before removing the hosting controller’s root view f
 
 ## Parameters
 
-- `animated`: If  , the view is being removed   using an animation.
+- `animated`: If `true`, the view is being removed using an animation.
 
 ## See Also
 

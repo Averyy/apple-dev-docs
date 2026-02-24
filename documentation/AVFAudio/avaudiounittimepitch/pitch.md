@@ -21,7 +21,7 @@ var pitch: Float { get set }
 
 #### Discussion
 
-The audio unit measures the pitch in , a logarithmic value you use for measuring musical intervals. One octave is equal to 1200 cents. One musical semitone is equal to 100 cents.
+The audio unit measures the pitch in *cents*, a logarithmic value you use for measuring musical intervals. One octave is equal to 1200 cents. One musical semitone is equal to 100 cents.
 
 The default value is `0``.0`. The range of values is `-2400` to `2400`.
 

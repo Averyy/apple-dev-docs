@@ -16,8 +16,8 @@ func selectRowIndexes(_ indexes: IndexSet, inColumn column: Int)
 
 ## Parameters
 
-- `indexes`: Rows to be selected in column  .
-- `column`: Column in which to select rows  .
+- `indexes`: Rows to be selected in column `columnIndex`.
+- `column`: Column in which to select rows `rowIndexes`.
 
 ## See Also
 

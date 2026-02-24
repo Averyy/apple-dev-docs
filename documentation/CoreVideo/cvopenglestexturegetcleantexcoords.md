@@ -23,10 +23,10 @@ This function automatically takes into account whether or not the texture is fli
 ## Parameters
 
 - `image`: The OpenGLES texture-based image buffer whose normalized texture coordinates are desired.
-- `lowerLeft`: An array of two  s where the   and   normalized texture coordinates of the lower left corner of the image will be stored.
-- `lowerRight`: An array of two  s where the   and   normalized texture coordinates of the lower right corner of the image will be stored.
-- `upperRight`: An array of two  s where the   and   normalized texture coordinates of the upper right corner of the image will be stored.
-- `upperLeft`: An array of two  s where the   and   normalized texture coordinates of the upper left corner of the image will be stored.
+- `lowerLeft`: An array of two `GLfloat`s where the `s` and `t` normalized texture coordinates of the lower left corner of the image will be stored.
+- `lowerRight`: An array of two `GLfloat`s where the `s` and `t` normalized texture coordinates of the lower right corner of the image will be stored.
+- `upperRight`: An array of two `GLfloat`s where the `s` and `t` normalized texture coordinates of the upper right corner of the image will be stored.
+- `upperLeft`: An array of two `GLfloat`s where the `s` and `t` normalized texture coordinates of the upper left corner of the image will be stored.
 
 ## See Also
 

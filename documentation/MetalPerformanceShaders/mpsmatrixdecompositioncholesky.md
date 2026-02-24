@@ -21,13 +21,16 @@ class MPSMatrixDecompositionCholesky
 
 #### Overview
 
-This kernel computes one of the following factorizations of a matrix :
+This kernel computes one of the following factorizations of a matrix *A*:
+
+- *A = LLᵀ*
+- *A = UᵀU*
 
 where:
 
--  is a symmetric positive-definite matrix for which the factorization is to be computed
--  is the lower triangular matrix
--  is the upper triangular matrix
+- *A* is a symmetric positive-definite matrix for which the factorization is to be computed
+- *L* is the lower triangular matrix
+- *U* is the upper triangular matrix
 
 ## Topics
 

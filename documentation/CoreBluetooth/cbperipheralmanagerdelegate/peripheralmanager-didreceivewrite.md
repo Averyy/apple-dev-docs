@@ -29,7 +29,7 @@ When you respond to a write request, note that the first parameter of the [`resp
 ## Parameters
 
 - `peripheral`: The peripheral manager that received the request.
-- `requests`: A list of one or more   objects, each representing a request to write the value of a characteristic.
+- `requests`: A list of one or more [`CBATTRequest`](cbattrequest.md) objects, each representing a request to write the value of a characteristic.
 
 ## See Also
 

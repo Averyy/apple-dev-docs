@@ -20,8 +20,8 @@ A value that indicates whether the request for muted paths succeeded or failed w
 
 ## Parameters
 
-- `client`: A previously-created client. If the call succeeds, the   structure contains paths muted for this client.
-- `muted_paths`: On output, a structure that contains the muted paths. You must dispose of this memory by calling  .
+- `client`: A previously-created client. If the call succeeds, the `muted_paths` structure contains paths muted for this client.
+- `muted_paths`: On output, a structure that contains the muted paths. You must dispose of this memory by calling [`es_release_muted_paths(_:)`](es_release_muted_paths(_:).md).
 
 ## See Also
 

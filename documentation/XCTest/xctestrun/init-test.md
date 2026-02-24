@@ -17,7 +17,7 @@ A test run for the provided test.
 
 ## Parameters
 
-- `test`: An   instance.
+- `test`: An [`XCTest`](xctest.md) instance.
 
 
 ---

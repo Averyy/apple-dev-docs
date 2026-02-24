@@ -8,6 +8,10 @@ The webpages a Safari extension can access.
 **Availability**:
 - macOS 10.11.5+
 
+
+
+**Type**: object
+
 ## Topics
 
 ### Access Configuration

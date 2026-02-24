@@ -23,8 +23,8 @@ The configuration to use for the separators at `indexPath`.
 
 ## Parameters
 
-- `indexPath`: The   of the cell to configure separators for.
-- `sectionSeparatorConfiguration`: The list section’s separator configuration for the cell at  . This configuration contains the values for separator visibility and insets according to the current state of the item.
+- `indexPath`: The [`IndexPath`](https://developer.apple.com/documentation/Foundation/IndexPath) of the cell to configure separators for.
+- `sectionSeparatorConfiguration`: The list section’s separator configuration for the cell at `indexPath`. This configuration contains the values for separator visibility and insets according to the current state of the item.
 
 ## See Also
 

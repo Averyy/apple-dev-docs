@@ -22,8 +22,8 @@ An `NSXMLElement` object or `nil` if the object couldn’t be created.
 ## Parameters
 
 - `name`: A string that is the name (tag identifier) of the element.
-- `children`: An array of   objects or   objects of kinds  ,  ,  , and  . Specify   if there are no children to add to this node object.
-- `attributes`: An array of   objects of kind  . Specify   if there are no attributes to add to this node object.
+- `children`: An array of `NSXMLElement` objects or `NSXMLNode` objects of kinds [`XMLNode.Kind.element`](xmlnode/kind-swift.enum/element.md), [`XMLNode.Kind.processingInstruction`](xmlnode/kind-swift.enum/processinginstruction.md), [`XMLNode.Kind.comment`](xmlnode/kind-swift.enum/comment.md), and [`XMLNode.Kind.text`](xmlnode/kind-swift.enum/text.md). Specify `nil` if there are no children to add to this node object.
+- `attributes`: An array of `NSXMLNode` objects of kind [`XMLNode.Kind.attribute`](xmlnode/kind-swift.enum/attribute.md). Specify `nil` if there are no attributes to add to this node object.
 
 ## See Also
 

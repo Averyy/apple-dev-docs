@@ -22,7 +22,7 @@ static let removed: AnimationCompletionCriteria
 
 #### Discussion
 
-If a subsequent change occurs that creates additional animations on properties with `removed` completion callbacks registered, then those callbacks will only fire when  of the created animations are complete.
+If a subsequent change occurs that creates additional animations on properties with `removed` completion callbacks registered, then those callbacks will only fire when *all* of the created animations are complete.
 
 ## See Also
 

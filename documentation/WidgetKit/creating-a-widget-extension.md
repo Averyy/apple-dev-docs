@@ -8,7 +8,7 @@ Display your app’s content in a convenient, informative widget on various devi
 
 Widgets display relevant, glanceable content that people can quickly access for more details. Your app can provide a variety of widgets, letting people focus on the information that’s most important to them.
 
-A good way to get started with widgets and WidgetKit is by adding a  widget to your app. A static widget doesn’t need any configuration by a person. For example, a static widget might show a stock market summary, or the next event on the person’s calendar. The  the widget shows is dynamic, but the  of data it shows is fixed. Consider the information your app presents, and choose something that people would find useful to see at a glance on their device.
+A good way to get started with widgets and WidgetKit is by adding a *static* widget to your app. A static widget doesn’t need any configuration by a person. For example, a static widget might show a stock market summary, or the next event on the person’s calendar. The *data* the widget shows is dynamic, but the *type* of data it shows is fixed. Consider the information your app presents, and choose something that people would find useful to see at a glance on their device.
 
 Widgets can display data in many sizes, from small watch complications or Dynamic Island presentations, to extra large iPad and macOS widgets. The example that follows below focuses on a single size widget, the small system size, or [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md). The example widget displays the status of a hypothetical game such as the health level of a character.
 
@@ -39,6 +39,10 @@ For more information about these other widget configurations, refer to [`Making 
 ##### Add Configuration Details
 
 To configure a static widget, provide the following information:
+
+- **`kind`**: A string that identifies the widget. This is an identifier you choose, and should be descriptive of what the widget represents.
+- **`provider`**: An object that conforms to [`TimelineProvider`](timelineprovider.md) and produces a *timeline* that tells WidgetKit when to render the widget. A timeline is a sequence that contains a custom [`TimelineEntry`](timelineentry.md) type you define. The entries in this sequence identify the date when you want WidgetKit to update the widget’s content and includes properties your widget’s view needs to render in the custom type.
+- **`content`**: A closure that contains SwiftUI views. WidgetKit invokes this to render the widget’s content, passing a `TimelineEntry` parameter from the provider.
 
 Use modifiers to provide additional configuration details, including a display name, a description, and the families the widget supports. The following code shows a widget that provides general status for a game:
 
@@ -114,7 +118,7 @@ For more information about generating timelines, refer to [`Keeping a widget up 
 
 ##### Generate a Preview for the Widget Gallery
 
-In order for people to be able to use your widget, it needs to be available in the widget gallery. To show your widget in the widget gallery, WidgetKit asks the provider for a  that displays generic data. WidgetKit makes this request by calling the provider’s [`getSnapshot(in:completion:)`](timelineprovider/getsnapshot(in:completion:).md) method with the `context` parameter’s [`isPreview`](timelineprovidercontext/ispreview.md) property set to `true`.
+In order for people to be able to use your widget, it needs to be available in the widget gallery. To show your widget in the widget gallery, WidgetKit asks the provider for a *preview snapshot* that displays generic data. WidgetKit makes this request by calling the provider’s [`getSnapshot(in:completion:)`](timelineprovider/getsnapshot(in:completion:).md) method with the `context` parameter’s [`isPreview`](timelineprovidercontext/ispreview.md) property set to `true`.
 
 In response, you need to create the preview snapshot quickly. If your widget would normally need assets or information that takes time to generate or fetch from a server, use sample data instead.
 
@@ -179,6 +183,9 @@ To let people decide whether a widget should show sensitive data on a locked dev
 If a person chooses to hide privacy sensitive content, WidgetKit renders a placeholder or redactions you configure. To configure redactions, implement the [`redacted(reason:)`](https://developer.apple.com/documentation/SwiftUI/View/redacted(reason:)) callback, read out the [`privacy`](https://developer.apple.com/documentation/SwiftUI/RedactionReasons/privacy) property, and provide custom placeholder views. You can also choose to render a view as unredacted with the [`unredacted()`](https://developer.apple.com/documentation/SwiftUI/View/unredacted()) view modifier.
 
 As an alternative to marking individual views as privacy sensitive, for example, if your entire widget content is privacy sensitive, you can add the Data Protection capability to your widget extension. Until a person unlocks their device to match the privacy level you chose, WidgetKit displays a placeholder instead of the widget content. First, enable the Data Protection capability for your widget extension in Xcode, then set the [`Data Protection Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.default-data-protection) entitlement to the value that fits the level of privacy you want to offer:
+
+- **`NSFileProtectionComplete`**: WidgetKit hides widget content when the device is locked. Additionally, iOS widgets aren’t available as iPhone widgets on Mac.
+- **`NSFileProtectionCompleteUnlessOpen`**: WidgetKit hides widget content when the device is passcode locked. Additionally, iOS widgets aren’t available as iPhone widgets on Mac.
 
 If you choose the `NSFileProtectionCompleteUntilFirstUserAuthentication` or `NSFileProtectionNone` protection level for your widget extension:
 

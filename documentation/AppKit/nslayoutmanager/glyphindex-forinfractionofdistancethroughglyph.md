@@ -32,9 +32,9 @@ As part of its implementation, this method calls [`fractionOfDistanceThroughGlyp
 
 ## Parameters
 
-- `point`: The point for which to return the glyph, in coordinates of  .
+- `point`: The point for which to return the glyph, in coordinates of `container`.
 - `container`: The container in which the returned glyph is laid out.
-- `partialFraction`: If not  , on output, the fraction of the distance between the location of the glyph returned and the location of the next glyph.
+- `partialFraction`: If not `NULL`, on output, the fraction of the distance between the location of the glyph returned and the location of the next glyph.
 
 ## See Also
 

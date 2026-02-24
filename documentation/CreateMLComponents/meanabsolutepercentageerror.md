@@ -30,7 +30,7 @@ If an empty `AnnotatedPrediction` is supplied, the result will be NaN.
 
 ## Parameters
 
-- `annotatedPredictions`: An   object.
+- `annotatedPredictions`: An `AnnotatedPrediction` object.
 
 ## See Also
 

@@ -24,11 +24,11 @@ A newly initialized [`UIBarButtonItem`](uibarbuttonitem.md).
 
 ## Parameters
 
-- `image`: The item’s image. If  , an image doesn’t appear.
-- `landscapeImagePhone`: The image to use for the item in landscape bars in the   idiom.
-- `style`: The style of the item. For possible values, see  .
-- `target`: The object that receives the   message.
-- `action`: The action to send to   when a person selects this item.
+- `image`: The item’s image. If `nil`, an image doesn’t appear.
+- `landscapeImagePhone`: The image to use for the item in landscape bars in the [`UIUserInterfaceIdiom.phone`](uiuserinterfaceidiom/phone.md) idiom.
+- `style`: The style of the item. For possible values, see [`UIBarButtonItem.Style`](uibarbuttonitem/style-swift.enum.md).
+- `target`: The object that receives the `action` message.
+- `action`: The action to send to `target` when a person selects this item.
 
 ## See Also
 

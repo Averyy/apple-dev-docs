@@ -11,6 +11,10 @@ An array of strings containing developer-specified task identifiers in reverse U
 - tvOS 13.0+
 - visionOS 1.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [class BGTaskScheduler](../BackgroundTasks/BGTaskScheduler.md)

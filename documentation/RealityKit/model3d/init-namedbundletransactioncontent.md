@@ -36,9 +36,9 @@ To add transitions when you change the name, apply an identifier to the [`Model3
 ## Parameters
 
 - `name`: The name of the USD or Reality file to display.
-- `bundle`: The Bundle used to look up the model by name. If not   provided, defaults to the app’s main bundle.
+- `bundle`: The Bundle used to look up the model by name. If not provided, defaults to the app’s main bundle.
 - `transaction`: The transaction to use when the phase changes.
-- `content`: A closure that takes the load phase as an input, and   returns the view to display for the specified phase.
+- `content`: A closure that takes the load phase as an input, and returns the view to display for the specified phase.
 
 ## See Also
 

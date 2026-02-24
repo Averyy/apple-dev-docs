@@ -20,12 +20,12 @@ static kern_return_t Create(IOUserNetworkPacketBufferPool *pool, OSObject *owner
 
 ## Parameters
 
-- `pool`: The buffer pool containing the memory for the network packets. This parameter must not be  .
+- `pool`: The buffer pool containing the memory for the network packets. This parameter must not be `NULL`.
 - `owner`: The object to use as the owner of the queue.
 - `capacity`: The number of packets in the queue.
-- `queueId`: An identifier for you to use to distinguish the queue from other queues. Specify   if you don’t use this parameter.
+- `queueId`: An identifier for you to use to distinguish the queue from other queues. Specify `0` if you don’t use this parameter.
 - `dispatchQueue`: The dispatch queue on which to execute tasks.
-- `queue`: On return, the new queue object. It is a programmer error to specify   for this parameter.
+- `queue`: On return, the new queue object. It is a programmer error to specify `NULL` for this parameter.
 
 ## See Also
 

@@ -44,7 +44,7 @@ To learn more about presenting rich links and accelerating the share sheet, see 
 
 ## Parameters
 
-- `activityViewController`: The   object requesting information about the item that the user wants to share.
+- `activityViewController`: The [`UIActivityViewController`](uiactivityviewcontroller.md) object requesting information about the item that the user wants to share.
 
 
 ---

@@ -33,7 +33,7 @@ Based on the authorization status, your application might display or hide its UI
 
 ## Parameters
 
-- `entityType`: Set to  .
+- `entityType`: Set to [`CNEntityType`](cnentitytype.md).
 
 ## See Also
 

@@ -26,6 +26,24 @@ When this method is called, call the [`activate()`](wcsession/activate().md) met
 
 Listing 1. Handling the deactivation of the session
 
+**Swift**:
+
+```swift
+func sessionDidDeactivate(session: WCSession) {
+    // Begin the activation process for the new Apple Watch.
+    WCSession.defaultSession().activateSession()
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)sessionDidDeactivate:(WCSession *)session {
+   // Begin the activation process for the new Apple Watch.
+   [[WCSession defaultSession] activateSession];
+}
+```
+
 ## Parameters
 
 - `session`: The session object whose activation state changed.

@@ -31,7 +31,7 @@ If you have the contents of a scene file but not the file itself (for example, i
 ## Parameters
 
 - `url`: The URL identifying the scene.
-- `options`: A dictionary containing options that affect scene loading. See   for available keys and values. Pass   to use default options.
+- `options`: A dictionary containing options that affect scene loading. See `Scene Loading Options` for available keys and values. Pass `nil` to use default options.
 
 ## See Also
 

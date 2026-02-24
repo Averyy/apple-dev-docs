@@ -26,7 +26,7 @@ In your `creator` block, create the view controller using your custom constructo
 
 ## Parameters
 
-- `creator`: If you return   from your block, this method creates the view controller using the default   method.
+- `creator`: A block that contains your custom creation code for the view controller. Use this block to create the view controller, initialize it with the provided coder object and any custom information you require, and return the result. This block returns a new view controller object and takes the following parameter: - **coder**: The coder object that contains the storyboard data to use when configuring the view controller. If you return `nil` from your block, this method creates the view controller using the default [`init(coder:)`](nsviewcontroller/init(coder:).md) method.
 
 ## See Also
 

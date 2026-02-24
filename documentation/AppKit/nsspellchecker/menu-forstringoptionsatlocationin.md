@@ -20,9 +20,9 @@ A menu suitable for displaying as a contextual menu, or adding to another contex
 
 ## Parameters
 
-- `result`: The   instance for the checked string.
+- `result`: The [`NSTextCheckingResult`](https://developer.apple.com/documentation/Foundation/NSTextCheckingResult) instance for the checked string.
 - `checkedString`: The string that has been checked.
-- `options`: The options dictionary allows clients to pass in information associated with the document. See   for possible key-value pairs.
+- `options`: The options dictionary allows clients to pass in information associated with the document. See `Spell Checking Option Dictionary Keys` for possible key-value pairs.
 - `location`: The location, in the view’s coordinate system, to display the menu.
 - `view`: The view object over which to display the contextual menu.
 

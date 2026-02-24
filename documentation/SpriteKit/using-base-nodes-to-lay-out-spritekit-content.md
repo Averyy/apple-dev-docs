@@ -6,7 +6,7 @@ Use nonvisual nodes to define the layout of a scene.
 
 #### Overview
 
-Each onscreen element in SpriteKit is referred to as a . Nodes are either visual elements or containers of other nodes. You set up the appearance of a SpriteKit scene by adding nodes alongside and on top of each other in a hierarchical form. Collectively, this structure is referred to as the  or the .
+Each onscreen element in SpriteKit is referred to as a *node*. Nodes are either visual elements or containers of other nodes. You set up the appearance of a SpriteKit scene by adding nodes alongside and on top of each other in a hierarchical form. Collectively, this structure is referred to as the *node tree* or the *node hierarchy*.
 
 These are the basic nonvisual nodes in SpriteKit:
 

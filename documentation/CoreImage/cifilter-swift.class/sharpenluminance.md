@@ -29,6 +29,10 @@ This method applies the sharpen luminance filter to an image. The effect increas
 
 The bicubic sharpen luminance filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`sharpness`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in detail from the sign in the image to be more visible:
 
 ```swift

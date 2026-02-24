@@ -32,7 +32,7 @@ Set the verify block.
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A `sec_protocol_options_t` instance.
 
 
 ---

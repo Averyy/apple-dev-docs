@@ -28,8 +28,8 @@ func addObserver(_ observer: NSObject, forKeyPath keyPath: String, options: NSKe
 
 - `observer`: The object to register for KVO notifications.
 - `keyPath`: The key path, relative to the array, of the property to observe. This value must not be nil.
-- `options`: A combination of   values that specifies what is included in observation notifications.
-- `context`: Arbitrary data that is passed to observer in  .
+- `options`: A combination of [`NSKeyValueObservingOptions`](nskeyvalueobservingoptions.md) values that specifies what is included in observation notifications.
+- `context`: Arbitrary data that is passed to observer in [`observeValue(forKeyPath:of:change:context:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/observeValue(forKeyPath:of:change:context:)).
 
 ## See Also
 

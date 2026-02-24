@@ -25,7 +25,7 @@ Screen recording can be unavailable due to unsupported hardware, the user’s de
 
 ## Parameters
 
-- `screenRecorder`: The   instance that has changed state.
+- `screenRecorder`: The [`RPScreenRecorder`](rpscreenrecorder.md) instance that has changed state.
 
 ## See Also
 

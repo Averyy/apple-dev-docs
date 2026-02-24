@@ -29,7 +29,7 @@ struct CVMutablePixelBuffer
 - [init(CVPixelBufferCreationAttributes) throws](cvmutablepixelbuffer/init(_:).md)
   Creates a CVPixelBuffer with given attributes. It allocates the necessary memory based on the dimensions, pixel format and extended pixels described in the `CVPixelBuffer/Attributes`.
 - [init(unsafeBacking: IOSurface, matching: CVPixelBufferCreationAttributes) throws](cvmutablepixelbuffer/init(unsafebacking:matching:).md)
-  Creates a CVPixelBuffer backed by the given `ioSurface`. The CVPixelBuffer will retain the `ioSurface`.  If you are using IOSurface to share CVPixelBuffers between processes and those CVPixelBuffers are allocated via a CVPixelBufferPool, it is important that the CVPixelBufferPool does not reuse CVPixelBuffers whose IOSurfaces are still in use in other processes. CoreVideo and IOSurface will take care of this for if you use IOSurfaceCreateMachPort and IOSurfaceLookupFromMachPort, but NOT if you pass IOSurfaceIDs.
+  Creates a CVPixelBuffer backed by the given `ioSurface`. The CVPixelBuffer will retain the `ioSurface`. **IMPORTANT** If you are using IOSurface to share CVPixelBuffers between processes and those CVPixelBuffers are allocated via a CVPixelBufferPool, it is important that the CVPixelBufferPool does not reuse CVPixelBuffers whose IOSurfaces are still in use in other processes. CoreVideo and IOSurface will take care of this for if you use IOSurfaceCreateMachPort and IOSurfaceLookupFromMachPort, but NOT if you pass IOSurfaceIDs.
 - [init(unsafeBuffer: sending CVPixelBuffer)](cvmutablepixelbuffer/init(unsafebuffer:).md)
   Initialize a mutable pixel buffer by transferring existing CVPixelBuffer value.
 ### Instance Methods

@@ -21,9 +21,9 @@ init(role: ButtonRole?, intent: some AppIntent, @ViewBuilder label: () -> Label)
 
 ## Parameters
 
-- `role`: An optional semantic role describing the button. A value of    means that the button doesn’t have an assigned role.
-- `intent`: The   to execute.
-- `label`: A view that describes the purpose of the button’s  .
+- `role`: An optional semantic role describing the button. A value of `nil` means that the button doesn’t have an assigned role.
+- `intent`: The `AppIntent` to execute.
+- `label`: A view that describes the purpose of the button’s `action`.
 
 ## See Also
 

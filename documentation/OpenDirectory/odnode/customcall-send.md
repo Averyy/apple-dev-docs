@@ -26,7 +26,7 @@ The result of the custom call.
 ## Parameters
 
 - `inCustomCode`: The custom code to send to the node.
-- `inSendData`: Data required by  . Can be  .
+- `inSendData`: Data required by `inCustomCode`. Can be `nil`.
 
 ## See Also
 

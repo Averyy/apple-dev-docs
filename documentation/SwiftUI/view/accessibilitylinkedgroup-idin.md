@@ -27,8 +27,8 @@ This can be useful to allow quickly jumping between content in a list and the sa
 
 ## Parameters
 
-- `id`: A hashable identifier used to separate sets of linked elements   within the same namespace. Elements with matching   and    will be linked together.
-- `namespace`: The namespace to use to organize linked accessibility   elements. All elements marked with   in this   namespace and with the specified   will be linked together.
+- `id`: A hashable identifier used to separate sets of linked elements within the same namespace. Elements with matching `namespace` and `id` will be linked together.
+- `namespace`: The namespace to use to organize linked accessibility elements. All elements marked with `accessibilityLink` in this namespace and with the specified `id` will be linked together.
 
 ## See Also
 

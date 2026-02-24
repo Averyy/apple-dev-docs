@@ -26,8 +26,8 @@ The panel chooses the appropriate screen depending on where the panel is or, if 
 
 ## Parameters
 
-- `screen`: This parameter isn’t currently used—pass  .
-- `options`: This parameter isn’t currently used—pass  .
+- `screen`: This parameter isn’t currently used—pass `nil`.
+- `options`: This parameter isn’t currently used—pass `nil`.
 
 ## See Also
 

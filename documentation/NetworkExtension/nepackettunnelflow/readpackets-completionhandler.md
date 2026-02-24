@@ -25,7 +25,7 @@ Each call to this method results in a single execution of the completion handler
 
 ## Parameters
 
-- `completionHandler`: A Swift closure or an ObjectiveC block that runs when some packets are read from the TUN interface.   The packets that were read are passed to this block in the   array.   The protocol numbers of the packets that were read are passed to this block in the   array.   Each packet has a protocol number in the corresponding index in the   array.   The protocol numbers are given in host byte order.   Valid protocol numbers include   and  .   See  .
+- `completionHandler`: A Swift closure or an ObjectiveC block that runs when some packets are read from the TUN interface. The packets that were read are passed to this block in the `packets` array. The protocol numbers of the packets that were read are passed to this block in the `protocols` array. Each packet has a protocol number in the corresponding index in the `protocols` array. The protocol numbers are given in host byte order. Valid protocol numbers include `AF_INET` and `AF_INET6`. See `/usr/include/sys/socket.h`.
 
 ## See Also
 

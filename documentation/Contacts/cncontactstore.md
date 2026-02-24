@@ -49,7 +49,7 @@ Because `CNContactStore` fetch methods perform I/O, it’s recommended that you 
 - [func enumerateContacts(with: CNContactFetchRequest, usingBlock: (CNContact, UnsafeMutablePointer<ObjCBool>) -> Void) throws](cncontactstore/enumeratecontacts(with:usingblock:).md)
   Returns a Boolean value that indicates whether the enumeration of all contacts matching a contact fetch request executes successfully.
 - [func unifiedMeContactWithKeys(toFetch: [any CNKeyDescriptor]) throws -> CNContact](cncontactstore/unifiedmecontactwithkeys(tofetch:).md)
-  Fetches the unified contact that’s the  card.
+  Fetches the unified contact that’s the *me* card.
 - [func unifiedContact(withIdentifier: String, keysToFetch: [any CNKeyDescriptor]) throws -> CNContact](cncontactstore/unifiedcontact(withidentifier:keystofetch:).md)
   Fetches a unified contact for the specified contact identifier.
 - [func unifiedContacts(matching: NSPredicate, keysToFetch: [any CNKeyDescriptor]) throws -> [CNContact]](cncontactstore/unifiedcontacts(matching:keystofetch:).md)

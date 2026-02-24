@@ -31,7 +31,7 @@ See also:
 
 ## Parameters
 
-- `children`: The behavior to use when creating or   transforming an accessibility element.   The default is 
+- `children`: The behavior to use when creating or transforming an accessibility element. The default is [`ignore`](accessibilitychildbehavior/ignore.md)
 
 ## See Also
 

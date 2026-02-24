@@ -22,8 +22,8 @@ init(signOf: Decimal, magnitudeOf magnitude: Decimal)
 
 ## Parameters
 
-- `signOf`: A   to use for the sign of the newly-created  .
-- `magnitude`: A   to use for the magnitude of the newly-created  .
+- `signOf`: A [`Decimal`](decimal.md) to use for the sign of the newly-created [`Decimal`](decimal.md).
+- `magnitude`: A [`Decimal`](decimal.md) to use for the magnitude of the newly-created [`Decimal`](decimal.md).
 
 ## See Also
 

@@ -28,8 +28,8 @@ If you implement both this method and the [`pickerView(_:attributedTitleForRow:f
 ## Parameters
 
 - `pickerView`: An object representing the picker view requesting the data.
-- `row`: A zero-indexed number identifying a row of  . Rows are numbered top-to-bottom.
-- `component`: A zero-indexed number identifying a component of  . Components are numbered left-to-right.
+- `row`: A zero-indexed number identifying a row of `component`. Rows are numbered top-to-bottom.
+- `component`: A zero-indexed number identifying a component of `pickerView`. Components are numbered left-to-right.
 
 ## See Also
 

@@ -25,8 +25,8 @@ The system initially uses a portal effect that replaces passthrough in a portion
 
 ## Parameters
 
-- `initialAmount`: The initial amount of immersion used for this   instance of the style. If  , a system default will be used.   The value must be within the range defined by this style.
-- `aspectRatio`: The aspect ratio of the portal.   If  , a system default of landscape will be used.
+- `initialAmount`: The initial amount of immersion used for this instance of the style. If `nil`, a system default will be used. The value must be within the range defined by this style.
+- `aspectRatio`: The aspect ratio of the portal. If `nil`, a system default of landscape will be used.
 
 
 ---

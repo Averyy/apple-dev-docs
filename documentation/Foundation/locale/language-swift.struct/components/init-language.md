@@ -22,7 +22,7 @@ init(language: Locale.Language)
 
 ## Parameters
 
-- `language`: A   instance. This initializer copies over the language code, script, and region from the provided language.
+- `language`: A [`Locale.Language`](locale/language-swift.struct.md) instance. This initializer copies over the language code, script, and region from the provided language.
 
 ## See Also
 

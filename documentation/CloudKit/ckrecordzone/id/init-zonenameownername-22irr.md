@@ -26,8 +26,8 @@ A new record zone ID.
 
 ## Parameters
 
-- `zoneName`: The name that identifies the record zone. Zone names consist of up to 255 ASCII characters, and don’t start with an underscore. To specify the default zone of the current database, use   . This parameter must not be   or an empty string.
-- `ownerName`: The user who creates the record zone. To specify the current user, use  . If you provide   or an empty string for this parameter, the method throws an exception.
+- `zoneName`: The name that identifies the record zone. Zone names consist of up to 255 ASCII characters, and don’t start with an underscore. To specify the default zone of the current database, use  [`defaultZoneName`](ckrecordzone/id/defaultzonename.md). This parameter must not be `nil` or an empty string.
+- `ownerName`: The user who creates the record zone. To specify the current user, use [`CKCurrentUserDefaultName`](ckcurrentuserdefaultname.md). If you provide `nil` or an empty string for this parameter, the method throws an exception.
 
 
 ---

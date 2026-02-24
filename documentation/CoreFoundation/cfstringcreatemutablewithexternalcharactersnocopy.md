@@ -38,11 +38,11 @@ This function should be used in special circumstances where you want to create a
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the string. Pass   or   to use the current default allocator.
-- `chars`: The Unicode character buffer for the new  . Before calling, create this buffer on the stack or heap and optionally initialize it with Unicode character data. Upon return, the created   object keeps its own copy of the pointer to this buffer. You may pass in   if there is no initial buffer being provided.
-- `numChars`: The number of characters initially in the Unicode buffer pointed to by  .
-- `capacity`: The capacity of the external buffer ( ); that is, the maximum number of Unicode characters that can be stored. This value should be   if no initial buffer is provided.
-- `externalCharactersAllocator`: .
+- `alloc`: The allocator to use to allocate memory for the string. Pass `NULL` or `kCFAllocatorDefault` to use the current default allocator.
+- `chars`: The Unicode character buffer for the new `CFMutableString`. Before calling, create this buffer on the stack or heap and optionally initialize it with Unicode character data. Upon return, the created `CFString` object keeps its own copy of the pointer to this buffer. You may pass in `NULL` if there is no initial buffer being provided.
+- `numChars`: The number of characters initially in the Unicode buffer pointed to by `chars`.
+- `capacity`: The capacity of the external buffer (`chars`); that is, the maximum number of Unicode characters that can be stored. This value should be `0` if no initial buffer is provided.
+- `externalCharactersAllocator`: The allocator to use to reallocate the external buffer when editing takes place and for deallocating the buffer when string is deallocated. If the default allocator is suitable for these purposes, pass `NULL`.  To manage the buffer yourself, pass `kCFAllocatorNull` .
 
 ## See Also
 

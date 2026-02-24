@@ -24,7 +24,7 @@ init(selection: Binding<Date>, in range: ClosedRange<Date>, displayedComponents:
 
 - `selection`: The date value being displayed and selected.
 - `range`: The inclusive range of selectable dates.
-- `displayedComponents`: The date components that user is able to   view and edit. Defaults to  . On watchOS,   if   or   are included with   , only   is displayed.
+- `displayedComponents`: The date components that user is able to view and edit. Defaults to `[.hourAndMinute, .date]`. On watchOS, if `.hourAndMinute` or `.hourMinuteAndSecond` are included with `.date`, only `.date` is displayed.
 - `label`: A view that describes the use of the date.
 
 ## See Also

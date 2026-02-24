@@ -23,7 +23,7 @@ You should not need to invoke this method directly. Subclasses may override this
 ## Parameters
 
 - `cellFrame`: A rectangle defining the receiver’s frame area.
-- `controlView`: The view object that contains this cell (usually an   object).
+- `controlView`: The view object that contains this cell (usually an [`NSControl`](nscontrol.md) object).
 
 ## See Also
 

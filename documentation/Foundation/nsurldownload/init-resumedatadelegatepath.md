@@ -35,7 +35,7 @@ If your app explicitly paused the download, wait until it is appropriate to cont
 ## Parameters
 
 - `resumeData`: Specifies the data to resume downloading.
-- `delegate`: The   class maintains a strong reference to this delegate object.
+- `delegate`: The delegate for the download. This object will receive delegate messages as the download progresses. Delegate messages will be sent on the thread which calls this method. For the download to work correctly the calling thread’s run loop must be operating in the default run loop mode. The `NSURLDownload` class maintains a strong reference to this delegate object.
 - `path`: The location for the downloaded data.
 
 ## See Also

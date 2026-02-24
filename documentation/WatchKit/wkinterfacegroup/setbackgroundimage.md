@@ -16,7 +16,7 @@ func setBackgroundImage(_ image: UIImage?)
 
 ## Parameters
 
-- `image`: The background image to be displayed behind all items in the group. Specifying   removes the existing image, causing the background color to show through. You may specify an image object that contains multiple images running as an animation.
+- `image`: The background image to be displayed behind all items in the group. Specifying `nil` removes the existing image, causing the background color to show through. You may specify an image object that contains multiple images running as an animation.
 
 ## See Also
 

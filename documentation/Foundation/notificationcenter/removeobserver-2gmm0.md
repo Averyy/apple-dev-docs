@@ -22,7 +22,7 @@ func removeObserver(_ token: NotificationCenter.ObservationToken)
 
 ## Parameters
 
-- `token`: A unique token representing a specific observer in a specific notification center. You receive this type from prior calls to  .
+- `token`: A unique token representing a specific observer in a specific notification center. You receive this type from prior calls to `addObserver(of:for:using:)`.
 
 ## See Also
 

@@ -16,7 +16,7 @@ init(rawValue: Int)
 
 ## Parameters
 
-- `rawValue`: The raw value with which to create the   hosting window options.
+- `rawValue`: The raw value with which to create the hosting window options.
 
 ## See Also
 

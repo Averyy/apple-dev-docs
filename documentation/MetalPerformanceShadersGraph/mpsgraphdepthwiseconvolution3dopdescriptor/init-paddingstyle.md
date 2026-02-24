@@ -25,7 +25,7 @@ The descriptor on autoreleasepool.
 
 ## Parameters
 
-- `paddingStyle`: See   property.
+- `paddingStyle`: See `paddingStyle` property.
 
 
 ---

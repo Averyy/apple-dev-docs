@@ -22,7 +22,7 @@ static let disableMotionBlur: ARView.RenderOptions
 
 #### Discussion
 
-A video stream consists of a sequence of images. Each image in the sequence represents a short, but non-zero period of time. Fast-moving, real-world objects captured within a frame can experience a visual smearing, known as .
+A video stream consists of a sequence of images. Each image in the sequence represents a short, but non-zero period of time. Fast-moving, real-world objects captured within a frame can experience a visual smearing, known as *motion blur*.
 
 By default, virtual objects that appear in the scene don’t experience motion blur. Instead, they exist at exactly one point in the frame for any given image in the image sequence. RealityKit offers an effect that introduces motion blur for virtual objects, taking into account the relative motion of the camera and the object.
 

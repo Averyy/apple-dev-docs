@@ -27,14 +27,17 @@ The completion handler takes a single [`Result`](https://developer.apple.com/doc
 
 When present, the tuple contains the following named elements:
 
-If you specify `resultsLimit` and the number of matched records exceeds that value, CloudKit provides only that number of records and a  — an object that marks a specific location in the full search results. To retrieve the next subset of search results, execute this method again and pass the provided cursor from previous execution.
+- **`matchResults`**: An array of tuples. Each tuple includes a record identifier and a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding matched record, or an error that describes why CloudKit can’t provide that record. For example, if CloudKit fails to materialize an asset field, it returns an error instead of a partial record. CloudKit sorts the array according to the query’s sort descriptors.
+- **`queryCursor`**: A cursor if the number of results exceeds `resultsLimit`; otherwise, `nil`.
+
+If you specify `resultsLimit` and the number of matched records exceeds that value, CloudKit provides only that number of records and a *cursor* — an object that marks a specific location in the full search results. To retrieve the next subset of search results, execute this method again and pass the provided cursor from previous execution.
 
 For information on a more configurable way to search a database, see [`CKQueryOperation`](ckqueryoperation.md).
 
 ## Parameters
 
 - `queryCursor`: The cursor that identifies, within the full search results, the location of the next subset of results to retrieve.
-- `desiredKeys`: The fields to include on each fetched record. To include all fields, specify  ; to fetch only system fields, specify an empty array.
+- `desiredKeys`: The fields to include on each fetched record. To include all fields, specify `nil`; to fetch only system fields, specify an empty array.
 - `resultsLimit`: The maximum number of records to return in a single set of results.
 - `completionHandler`: The closure to execute with the search results.
 

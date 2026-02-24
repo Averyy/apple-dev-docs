@@ -27,9 +27,21 @@ A HealthKit unit for measuring time based on seconds and the provided prefix.
 
 This method is used to create prefixed versions of seconds. Common uses include creating millisecond units, as shown below.
 
+**Swift**:
+
+```swift
+let ms = HKUnit.secondUnitWithMetricPrefix(.Milli)
+```
+
+**Objective-C**:
+
+```objc
+HKUnit *ms = [HKUnit secondUnitWithMetricPrefix:HKMetricPrefixMilli];
+```
+
 ## Parameters
 
-- `prefix`: A valid metric prefix value. For the complete list of prefix values, see  .
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](hkmetricprefix.md).
 
 ## See Also
 

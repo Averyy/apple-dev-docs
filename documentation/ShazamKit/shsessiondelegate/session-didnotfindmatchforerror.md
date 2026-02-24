@@ -32,7 +32,7 @@ You can retry the match if the error indicates an issue in communicating with th
 
 - `session`: The session object that performs the match.
 - `signature`: The query signature to use for the match.
-- `error`: The error that occurs; otherwise,  , which indicates that there’s no match.
+- `error`: The error that occurs; otherwise, `nil`, which indicates that there’s no match.
 
 ## See Also
 

@@ -30,13 +30,13 @@ The array returned by this function will not contain stale CFBundle references.
 
 ##### Special Considerations
 
-The [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029) applies both to the array returned and to the bundles in the array. In order to properly dispose of the returned value, you must release the array  any bundles returned in the array.
+The [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029) applies both to the array returned and to the bundles in the array. In order to properly dispose of the returned value, you must release the array *and* any bundles returned in the array.
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `directoryURL`: The location of the directory to search for valid bundles.
-- `bundleType`: The abstract type of the bundles to locate and create. The type is expressed as a filename extension, such as  . Pass   to create CFBundle objects for bundles of any type.
+- `bundleType`: The abstract type of the bundles to locate and create. The type is expressed as a filename extension, such as `bundle`. Pass `NULL` to create CFBundle objects for bundles of any type.
 
 ## See Also
 

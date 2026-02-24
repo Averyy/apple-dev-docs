@@ -25,7 +25,7 @@ func hasMediaType(_ mediaType: AVMediaType) -> Bool
 
 ## Parameters
 
-- `mediaType`: A media type, such as  ,  , or  .
+- `mediaType`: A media type, such as [`video`](avmediatype/video.md), [`audio`](avmediatype/audio.md), or [`muxed`](avmediatype/muxed.md).
 
 ## See Also
 

@@ -24,7 +24,7 @@ The desired window object or `nil` if the window could not be found.
 
 ## Parameters
 
-- `windowNum`: The unique window number associated with the desired   object.
+- `windowNum`: The unique window number associated with the desired [`NSWindow`](nswindow.md) object.
 
 ## See Also
 

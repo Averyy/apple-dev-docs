@@ -32,7 +32,7 @@ This function works only on a single thread. If you want your application to rea
 ## Parameters
 
 - `inExtAudioFile`: The extended audio file object that represents the file you want to read.
-- `ioNumberFrames`: On input, the number of frames to read from the file. On output, the number of frames actually read. Fewer frames may be read than were requested. For example, the supplied buffers may not be large enough to accommodate the requested data. If   frames are returned, end-of-file was reached.
+- `ioNumberFrames`: On input, the number of frames to read from the file. On output, the number of frames actually read. Fewer frames may be read than were requested. For example, the supplied buffers may not be large enough to accommodate the requested data. If `0` frames are returned, end-of-file was reached.
 - `ioData`: One or more buffers into which the audio data is read.
 
 ## See Also

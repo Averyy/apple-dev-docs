@@ -20,8 +20,8 @@ The new NSColor object or `nil` if the specified conversion cannot be done.
 
 ## Parameters
 
-- `name`: The name of the color space containing the new   object. If   is  , the most appropriate color space is used.
-- `deviceDescription`: If   is  , the current device (as obtained from the currently lockFocus’ed view’s window or, if printing, the current printer) is used.
+- `name`: The name of the color space containing the new `NSColor` object. If `colorSpace` is `nil`, the most appropriate color space is used.
+- `deviceDescription`: The device description. Device descriptions can be obtained from windows, screens, and printers with the `deviceDescription` method. If `deviceDescription` is `nil`, the current device (as obtained from the currently lockFocus’ed view’s window or, if printing, the current printer) is used.
 
 ## See Also
 

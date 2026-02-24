@@ -66,6 +66,10 @@ Specify `loginwindow` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `DisableLoginItemsSuppression` (boolean): If `true`, the system prevents the user from disabling login item launches by using the Shift key.
+
 ## See Also
 
 - [object LoginItemsManagedItems](loginitemsmanageditems.md)

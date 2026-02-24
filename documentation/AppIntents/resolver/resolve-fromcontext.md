@@ -28,7 +28,7 @@ The converted value, or `nil` if conversion fails.
 ## Parameters
 
 - `input`: The value to convert.
-- `context`: Contextual resolution information, including resolution source and information   about the associated parameter if applicable.
+- `context`: Contextual resolution information, including resolution source and information about the associated parameter if applicable.
 
 ## See Also
 

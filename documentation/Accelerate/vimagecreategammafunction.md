@@ -34,9 +34,9 @@ The gamma correction functions that use a [`GammaFunction`](gammafunction.md) ob
 
 ## Parameters
 
-- `gamma`: The gamma value when   is   or  .
-- `gamma_type`: A constant that specifies the gamma type. See  .
-- `flags`: Reserved for future use. Pass  .
+- `gamma`: The gamma value when `gamma_type` is [`kvImageGamma_UseGammaValue`](kvimagegamma_usegammavalue.md) or [`kvImageGamma_UseGammaValue_half_precision`](kvimagegamma_usegammavalue_half_precision.md).
+- `gamma_type`: A constant that specifies the gamma type. See [`Gamma function types`](1584480-gamma-function-types.md).
+- `flags`: Reserved for future use. Pass [`kvImageNoFlags`](kvimagenoflags.md).
 
 ## See Also
 

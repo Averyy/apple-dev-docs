@@ -24,7 +24,7 @@ When this method is called, it creates a new background task to handle the reque
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: A block to be called after the score is reported. The block receives the following parameter: - ***error***: If an error occurred, this parameter holds an error object that describes the problem. If the score was successfully reported, this parameter’s value is `nil`.
 
 ## See Also
 

@@ -32,9 +32,9 @@ Use this function for all audio data format conversions except for the special c
 - `inAudioConverter`: The audio converter to use for format conversion.
 - `inInputDataProc`: A callback function that supplies audio data to convert. This callback is invoked repeatedly as the converter is ready for new input data.
 - `inInputDataProcUserData`: Custom data for use by your application when receiving a callback invocation.
-- `ioOutputDataPacketSize`: On input, the size of the output buffer (in the   parameter), expressed in number packets in the audio converter’s output format. On output, the number of packets of converted data that were written to the output buffer.
+- `ioOutputDataPacketSize`: On input, the size of the output buffer (in the `outOutputData` parameter), expressed in number packets in the audio converter’s output format. On output, the number of packets of converted data that were written to the output buffer.
 - `outOutputData`: On output, the converted audio data.
-- `outPacketDescription`: On input, must point to a block of memory capable of holding the number of packet descriptions specified in the   parameter. (See   for functions that let you determine whether an audio format uses packet descriptions). If not   on output and if the audio converter’s output format uses packet descriptions, then this parameter contains an array of packet descriptions.
+- `outPacketDescription`: On input, must point to a block of memory capable of holding the number of packet descriptions specified in the `ioOutputDataPacketSize` parameter. (See *Audio Format Services Reference* for functions that let you determine whether an audio format uses packet descriptions). If not `NULL` on output and if the audio converter’s output format uses packet descriptions, then this parameter contains an array of packet descriptions.
 
 ## See Also
 

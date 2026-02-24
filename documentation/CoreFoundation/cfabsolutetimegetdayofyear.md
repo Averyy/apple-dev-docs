@@ -27,7 +27,7 @@ An integer (`1-366`) representing the day of the year specified by `at`.
 ## Parameters
 
 - `at`: The absolute time to convert.
-- `tz`: The time zone to use for time correction. Pass   for GMT.
+- `tz`: The time zone to use for time correction. Pass `NULL` for GMT.
 
 ## See Also
 

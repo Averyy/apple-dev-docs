@@ -18,7 +18,7 @@ final func accept<Handler>(_ sessionRequestHandler: () -> Handler) -> AccessoryT
 
 ## Parameters
 
-- `sessionRequestHandler`: A closure that produces an   to handle session events.
+- `sessionRequestHandler`: A closure that produces an [`AccessoryTransportSession.EventHandler`](accessorytransportsession/eventhandler.md) to handle session events.
 
 ## See Also
 

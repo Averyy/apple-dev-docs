@@ -26,9 +26,9 @@ If the `dspys` array is `NULL`, this function ignores the `maxDisplays` paramete
 ## Parameters
 
 - `rect`: The location and size of a rectangle in the global display coordinate space. The origin is the upper-left corner of the main display.
-- `maxDisplays`: The size of the   array. This value determines the maximum number of displays that can be returned in the   parameter. Generally, you should specify a number greater than 0 for this parameter. If you specify 0, the value returned in   is undefined and this function sets the   parameter to  .
+- `maxDisplays`: The size of the `displays` array. This value determines the maximum number of displays that can be returned in the `displays` parameter. Generally, you should specify a number greater than 0 for this parameter. If you specify 0, the value returned in `matchingDisplayCount` is undefined and this function sets the `displays` parameter to `NULL`.
 - `displays`: A pointer to storage provided by the caller for an array of display IDs. On return, the array contains a list of displays whose bounds intersect the specified rectangle.
-- `matchingDisplayCount`: A pointer to a display count variable provided by the caller. On return, this variable contains the number of displays that were returned in the   parameter. You must provide a non-  value for this parameter.
+- `matchingDisplayCount`: A pointer to a display count variable provided by the caller. On return, this variable contains the number of displays that were returned in the `displays` parameter. You must provide a non-`NULL` value for this parameter.
 
 ## See Also
 

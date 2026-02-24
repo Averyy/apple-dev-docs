@@ -26,7 +26,7 @@ This callback is called as a plug-in is being loaded. This provides the plugin t
 
 ## Parameters
 
-- `plugIn`: The   object that is engaged in dynamic registration. When using in C++, this parameter functions as a   pointer for the plug-in.
+- `plugIn`: The `CFPlugIn` object that is engaged in dynamic registration. When using in C++, this parameter functions as a `this` pointer for the plug-in.
 
 ## See Also
 

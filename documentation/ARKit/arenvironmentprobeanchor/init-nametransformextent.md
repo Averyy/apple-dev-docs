@@ -23,8 +23,8 @@ Use the [`add(anchor:)`](arsession/add(anchor:).md) method to begin tracking you
 ## Parameters
 
 - `name`: A descriptive name for the anchor. ARKit doesn’t display the name to users, but your app can use it to identify anchors for debugging.
-- `transform`: World coordinate space in ARKit always follows a right-handed convention, but is oriented based on the session configuration. For details, see  .
-- `extent`: An environment probe anchor may have an infinite extent, which indicates that its texture is a global lighting environment, or a finite extent, which indicates that its texture represents the local lighting conditions in a specific area of the scene.
+- `transform`: A matrix that encodes the position, orientation, and scale of the anchor, relative to the world coordinate space of the AR session in which you place the anchor. World coordinate space in ARKit always follows a right-handed convention, but is oriented based on the session configuration. For details, see [`Understanding World Tracking`](understanding-world-tracking.md).
+- `extent`: The area around the anchor’s position that contains the textrure. An environment probe anchor may have an infinite extent, which indicates that its texture is a global lighting environment, or a finite extent, which indicates that its texture represents the local lighting conditions in a specific area of the scene.
 
 ## See Also
 

@@ -31,7 +31,7 @@ For loading to continue, the delegate must call the completion handler, passing 
 - `session`: The session containing the delayed request.
 - `task`: The task handling the delayed request.
 - `request`: The request that was delayed.
-- `completionHandler`: A completion handler to perform the request. The completion handler takes two parameters: a disposition that tells the task how to proceed, and a new request object that is only used if the disposition is  .
+- `completionHandler`: A completion handler to perform the request. The completion handler takes two parameters: a disposition that tells the task how to proceed, and a new request object that is only used if the disposition is [`URLSession.DelayedRequestDisposition.useNewRequest`](urlsession/delayedrequestdisposition/usenewrequest.md).
 
 ## See Also
 

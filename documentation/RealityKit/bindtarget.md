@@ -23,7 +23,7 @@ enum BindTarget
 
 This structure describes a reference to an animated property. The property may be a transform, collection of joint transforms, an arbitrary named property of an entity, or the property of a nested entity.
 
-For nested entities, the [`BindTarget.path(_:)`](bindtarget/path(_:).md) case returns a [`BindPath`](bindpath.md) instance that contains an array of  ([`BindPath.Part`](bindpath/part.md)). Each part identifies one or more nested, named entities or scenes, followed by the property to animate.
+For nested entities, the [`BindTarget.path(_:)`](bindtarget/path(_:).md) case returns a [`BindPath`](bindpath.md) instance that contains an array of *parts* ([`BindPath.Part`](bindpath/part.md)). Each part identifies one or more nested, named entities or scenes, followed by the property to animate.
 
 ## Topics
 

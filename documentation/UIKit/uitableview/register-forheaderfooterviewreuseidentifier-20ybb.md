@@ -26,8 +26,8 @@ If you previously registered a class or nib file with the same reuse identifier,
 
 ## Parameters
 
-- `aClass`: The class of the header or footer view that you want to register. You must specify either   or a subclass of it.
-- `identifier`: The reuse identifier for the header or footer view. This parameter must not be   and must not be an empty string.
+- `aClass`: The class of the header or footer view that you want to register. You must specify either [`UITableViewHeaderFooterView`](uitableviewheaderfooterview.md) or a subclass of it.
+- `identifier`: The reuse identifier for the header or footer view. This parameter must not be `nil` and must not be an empty string.
 
 ## See Also
 

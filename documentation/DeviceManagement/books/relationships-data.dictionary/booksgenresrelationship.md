@@ -13,6 +13,12 @@
 object Books.Relationships.BooksGenresRelationship
 ```
 
+## Properties
+
+- `data` ([Genres]) *(required)*
+- `href` (string)
+- `next` (string)
+
 
 ---
 

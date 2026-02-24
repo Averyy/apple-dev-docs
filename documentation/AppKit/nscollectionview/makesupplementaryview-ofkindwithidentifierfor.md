@@ -27,9 +27,9 @@ This method looks for a recycled supplementary view of the specified type and re
 
 ## Parameters
 
-- `elementKind`: The kind of supplementary view to create. This value is defined by the layout object. This parameter must not be an empty string or  .
-- `identifier`: The reuse identifier for the specified item. This is the identifier you specified when registering the supplementary view. This parameter must not be  .
-- `indexPath`: The index path specifying the location of the supplementary view. The data source object receives this information in its   method and you should just pass it along.
+- `elementKind`: The kind of supplementary view to create. This value is defined by the layout object. This parameter must not be an empty string or `nil`.
+- `identifier`: The reuse identifier for the specified item. This is the identifier you specified when registering the supplementary view. This parameter must not be `nil`.
+- `indexPath`: The index path specifying the location of the supplementary view. The data source object receives this information in its [`collectionView(_:viewForSupplementaryElementOfKind:at:)`](nscollectionviewdatasource/collectionview(_:viewforsupplementaryelementofkind:at:).md) method and you should just pass it along.
 
 ## See Also
 

@@ -67,7 +67,7 @@ Assuming the engine has started, call the engine’s method, [`playPattern(from:
 try engine?.playPattern(from: URL(fileURLWithPath: path))
 ```
 
-This method of playback follows a  model; each haptic pattern plays until it reaches its end, then stops automatically.
+This method of playback follows a *fire and forget* model; each haptic pattern plays until it reaches its end, then stops automatically.
 
 Once the haptic starts playing, you can’t stop it, and pressing other buttons layers those haptics on top of any existing haptic patterns in the middle of playback. This layering allows you to combine a haptic pattern with a more continuous intent, like the rumble of thunder, with a more impulse-driven haptic pattern built from transient taps, like the strike of lightning.
 

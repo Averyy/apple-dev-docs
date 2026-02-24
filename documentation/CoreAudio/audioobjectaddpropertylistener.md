@@ -26,7 +26,7 @@ Registers the given AudioObjectPropertyListenerProc to receive notifications whe
 ## Parameters
 
 - `inObjectID`: The AudioObject to register the listener with.
-- `inAddress`: The AudioObjectPropertyAddresses indicating which property the listener   should be notified about.
+- `inAddress`: The AudioObjectPropertyAddresses indicating which property the listener should be notified about.
 - `inListener`: The AudioObjectPropertyListenerProc to call.
 - `inClientData`: A pointer to client data that is passed to the listener when it is called.
 

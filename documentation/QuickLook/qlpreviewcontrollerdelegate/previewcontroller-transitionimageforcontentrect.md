@@ -27,7 +27,7 @@ A [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) object th
 
 ## Parameters
 
-- `controller`: The   that’s requesting the image for the preview item.
+- `controller`: The [`QLPreviewController`](qlpreviewcontroller.md) that’s requesting the image for the preview item.
 - `item`: The item to preview or dismiss.
 - `contentRect`: The rectangle within the image that represents the document content. For icons, for example, the document content rectangle is typically smaller than the icon rectangle itself.
 

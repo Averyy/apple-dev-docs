@@ -32,7 +32,7 @@ func VTSessionCopyProperty(_ session: VTSession, key propertyKey: CFString, allo
 - `session`: A Video Toolbox session object.
 - `propertyKey`: The key for the property to retrieve.
 - `allocator`: An allocator suitable for use when copying property values.
-- `propertyValueOut`: Points to a variable to receive the property value, which must be a CF-registered type – the caller may call   on it to identify which specific type. The caller must release the this property value.
+- `propertyValueOut`: Points to a variable to receive the property value, which must be a CF-registered type – the caller may call [`CFGetTypeID(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFGetTypeID(_:)) on it to identify which specific type. The caller must release the this property value.
 
 ## See Also
 

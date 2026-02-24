@@ -16,6 +16,10 @@ A dictionary that contains details about a declarative managed app extension’s
 object StatusAppManagedListManagedConfiguration_ExtensionConfigStateObject
 ```
 
+## Properties
+
+- `ANY` (StatusAppManagedListManagedConfigurationStateObject): The bundle identifier of the managed app extension.
+
 ## See Also
 
 - [object StatusAppManagedListManagedConfigurationStateObject](statusappmanagedlistmanagedconfigurationstateobject.md)

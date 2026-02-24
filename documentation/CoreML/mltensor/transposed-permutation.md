@@ -36,7 +36,7 @@ y.shape // is [2, 1, 3]
 
 ## Parameters
 
-- `permutation`: An array of integers defining the permutation, must be of length   and define   a valid permutation.
+- `permutation`: An array of integers defining the permutation, must be of length `rank` and define a valid permutation.
 
 ## See Also
 

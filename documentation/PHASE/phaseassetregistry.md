@@ -23,6 +23,9 @@ class PHASEAssetRegistry
 
 This class manages audio by registering two types of assets throughout the app’s life cycle:
 
+- **[`PHASESoundAsset`](phasesoundasset.md)**: A sound asset identifies the particular audio data that your app intends to play.
+- **[`PHASESoundEventNodeAsset`](phasesoundeventnodeasset.md)**: A sound event asset provides audio with an avenue to the output device, and either represents a single sound or a dynamic set of sounds that play individually, depending on the app’s state.
+
 When you’re done with a sound asset, call [`unregisterAsset(identifier:completion:)`](phaseassetregistry/unregisterasset(identifier:completion:).md) to free up its system resources.
 
 ## Topics

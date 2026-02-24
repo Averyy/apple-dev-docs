@@ -42,6 +42,12 @@ This payload is deprecated as of macOS 11.
 - [object MediaManagementAllowedMedia.Unmount-controls](mediamanagementallowedmedia/unmount-controls-data.dictionary.md)
   A dictionary to control volume unmounting.
 
+## Properties
+
+- `logout-eject` (MediaManagementAllowedMedia.Logout-eject): The media type dictionary that defines volumes to eject when the user logs out.
+- `mount-controls` (MediaManagementAllowedMedia.Mount-controls): The media type dictionary that controls volume mounting.
+- `unmount-controls` (MediaManagementAllowedMedia.Unmount-controls): The media type dictionary that controls volume unmounting.
+
 ## See Also
 
 - [object AIMAccount](aimaccount.md)

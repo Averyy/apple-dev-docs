@@ -24,7 +24,7 @@ Use a container concentric radius to allow each individual corner to resolve to 
 
 ## Parameters
 
-- `radius`: A   that represents a radius to apply to each corner.
+- `radius`: A [`UICornerRadius`](uicornerradius-swift.struct.md) that represents a radius to apply to each corner.
 
 ## See Also
 

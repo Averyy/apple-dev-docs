@@ -26,8 +26,8 @@ You cannot call this function until after you have called the `CMSDecoderFinaliz
 
 ## Parameters
 
-- `cmsDecoder`: The CMSDecoder reference returned by the   function.
-- `isEncryptedOut`: Returns   if the message was encrypted.
+- `cmsDecoder`: The CMSDecoder reference returned by the `CMSDecoderCreate` function.
+- `isEncryptedOut`: Returns `TRUE` if the message was encrypted.
 
 ## See Also
 

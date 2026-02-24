@@ -29,7 +29,7 @@ The system calls this method when the user taps or clicks on the remediation lin
 
 ## Parameters
 
-- `flow`: An   object containing information about the flow.
+- `flow`: An [`NEFilterFlow`](nefilterflow.md) object containing information about the flow.
 
 
 ---

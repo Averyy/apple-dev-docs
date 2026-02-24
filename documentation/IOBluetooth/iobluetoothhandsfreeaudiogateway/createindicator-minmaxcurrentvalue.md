@@ -16,7 +16,13 @@ func createIndicator(_ indicatorName: String!, min minValue: Int32, max maxValue
 
 ## Parameters
 
-- `indicatorName`: The name of the indicator. Use one of the following constants:
+- `indicatorName`: The name of the indicator. Use one of the following constants: - [`IOBluetoothHandsFreeIndicatorService`](iobluetoothhandsfreeindicatorservice.md)
+- [`IOBluetoothHandsFreeIndicatorCall`](iobluetoothhandsfreeindicatorcall.md)
+- [`IOBluetoothHandsFreeIndicatorCallSetup`](iobluetoothhandsfreeindicatorcallsetup.md)
+- [`IOBluetoothHandsFreeIndicatorCallHeld`](iobluetoothhandsfreeindicatorcallheld.md)
+- [`IOBluetoothHandsFreeIndicatorSignal`](iobluetoothhandsfreeindicatorsignal.md)
+- [`IOBluetoothHandsFreeIndicatorRoam`](iobluetoothhandsfreeindicatorroam.md)
+- [`IOBluetoothHandsFreeIndicatorBattChg`](iobluetoothhandsfreeindicatorbattchg.md)
 - `minValue`: The minimum value for the indicator.
 - `maxValue`: The maximum value for the indicator.
 - `currentValue`: The current value of the indicator.

@@ -22,8 +22,8 @@ The bitmap produced by this method is transparent (that is, has an alpha value o
 
 ## Parameters
 
-- `rect`: A rectangle defining the region to be drawn into  .
-- `bitmapImageRep`: An   object. For pixel-format compatibility,   should have been obtained from  .
+- `rect`: A rectangle defining the region to be drawn into `bitmapImageRep`.
+- `bitmapImageRep`: An [`NSBitmapImageRep`](nsbitmapimagerep.md) object. For pixel-format compatibility, `bitmapImageRep` should have been obtained from [`bitmapImageRepForCachingDisplay(in:)`](nsview/bitmapimagerepforcachingdisplay(in:).md).
 
 ## See Also
 

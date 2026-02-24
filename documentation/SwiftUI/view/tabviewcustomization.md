@@ -69,7 +69,7 @@ TabView {
 
 ## Parameters
 
-- `customization`: The customization object to store   user customization in.
+- `customization`: The customization object to store user customization in.
 
 ## See Also
 

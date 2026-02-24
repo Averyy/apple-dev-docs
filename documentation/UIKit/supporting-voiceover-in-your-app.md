@@ -36,9 +36,9 @@ To replicate the experience of someone who is solely relying on VoiceOver, test 
 
 To audit your app, check that you can access every element and that the ordering of those elements is what you intend. Take note of which elements VoiceOver can or can’t access. Also, pay attention when you find it difficult to perform a task because you assume it’s reliant on visuals. For example, when you’re navigating back to your app’s initial view, or you’re sharing content with another app or user, how can you use VoiceOver to make it accessible? While auditing your app, here are some common issues to look for:
 
--  VoiceOver doesn’t recognize custom UI elements by default. You need to add additional accessibility information to those elements.
--  VoiceOver reads from the leading to the trailing edge. If you want VoiceOver to read your elements in a different order, use groups to facilitate navigation that makes sense for your app.
--  A UI that depends on visual cues may look nice, but it can be unusable for a VoiceOver user. For example, VoiceOver doesn’t detect if a confirmation button turns from gray to green when the user selects it. VoiceOver may only describe the element and not its current state. Make sure that VoiceOver says whether the button is in a selected state.
+- **Add accessibility information for your app’s elements.** VoiceOver doesn’t recognize custom UI elements by default. You need to add additional accessibility information to those elements.
+- **Group elements so that VoiceOver navigates through them in the correct order.** VoiceOver reads from the leading to the trailing edge. If you want VoiceOver to read your elements in a different order, use groups to facilitate navigation that makes sense for your app.
+- **Include descriptive text for VoiceOver to read.** A UI that depends on visual cues may look nice, but it can be unusable for a VoiceOver user. For example, VoiceOver doesn’t detect if a confirmation button turns from gray to green when the user selects it. VoiceOver may only describe the element and not its current state. Make sure that VoiceOver says whether the button is in a selected state.
 
 When you know which areas need improvements, start adding greater VoiceOver support to your app.
 

@@ -27,7 +27,7 @@ A dictionary representation of the time.
 ## Parameters
 
 - `time`: A time from which to create a dictionary.
-- `allocator`: An allocator with which to create the dictionary. Pass   to use the default allocator.
+- `allocator`: An allocator with which to create the dictionary. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the default allocator.
 
 ## See Also
 

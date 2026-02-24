@@ -29,6 +29,12 @@ This method applies a line screen filter to an image. The effect generates a mon
 
 The line screen filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`angle`**: A `float` representing the angle of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`width`**: A `float` representing the distance between lines in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`sharpness`**: A `float` representing the sharpness of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that creates a monochrome image containing small lines of detail on a black background:
 
 ```swift

@@ -26,7 +26,7 @@ A new string containing the characters of the receiver from the one at `anIndex`
 
 ## Parameters
 
-- `from`: Raises an   if (  - 1) lies beyond the end of the receiver.
+- `from`: An index. The value must lie within the bounds of the receiver, or be equal to the length of the receiver. Raises an [`rangeException`](nsexceptionname/rangeexception.md) if (`anIndex` - 1) lies beyond the end of the receiver.
 
 ## See Also
 

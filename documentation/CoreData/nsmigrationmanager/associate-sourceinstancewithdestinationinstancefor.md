@@ -29,8 +29,8 @@ This method is called in the default implementation of `NSEntityMigrationPolicy`
 ## Parameters
 
 - `sourceInstance`: A source managed object.
-- `destinationInstance`: The destination manage object for  .
-- `entityMapping`: The entity mapping to use to associate   with the object in  .
+- `destinationInstance`: The destination manage object for `sourceInstance`.
+- `entityMapping`: The entity mapping to use to associate `sourceInstance` with the object in `destinationInstances`.
 
 ## See Also
 

@@ -24,9 +24,42 @@ This method defines the relationship `first attribute <= (m * second attribute) 
 
 The constraints produced by the following two examples are identical.
 
+**Swift**:
+
+```swift
+// Creating a constraint using NSLayoutConstraint
+NSLayoutConstraint(item: button,
+                   attribute: .Width,
+                   relatedBy: .LessThanOrEqual,
+                   toItem: button,
+                   attribute: .Height,
+                   multiplier: 2.0,
+                   constant: 40.0).isActive = true
+ 
+// Creating the same constraint using constraintLessThanOrEqualToAnchor:multiplier:constant:
+button.widthAnchor.constraintLessThanOrEqualToAnchor(button.heightAnchor, multiplier: 2.0, constant: 40.0).isActive = true
+```
+
+**Objective-C**:
+
+```objc
+// Creating a constraint using NSLayoutConstraint
+[NSLayoutConstraint
+ constraintWithItem:self.button
+ attribute:NSLayoutAttributeWidth
+ relatedBy:NSLayoutRelationLessThanOrEqual
+ toItem:self.button
+ attribute:NSLayoutAttributeHeight
+ multiplier:2.0
+ constant:40.0].active = YES;
+ 
+// Creating the same constraint using constraintLessThanOrEqualToAnchor:multiplier:constant:
+[self.button.widthAnchor constraintLessThanOrEqualToAnchor:self.button.heightAnchor multiplier:2.0 constant: 40.0].active = YES;
+```
+
 ## Parameters
 
-- `anchor`: A dimension anchor from an   or   object.
+- `anchor`: A dimension anchor from an [`NSView`](nsview.md) or [`NSLayoutGuide`](nslayoutguide.md) object.
 - `m`: The multiplier constant for the constraint.
 - `c`: The constant offset for this relationship.
 

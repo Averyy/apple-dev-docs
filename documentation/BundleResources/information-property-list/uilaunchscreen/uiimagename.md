@@ -9,6 +9,10 @@ The name of an image to display during app launch.
 - iOS 14.0+
 - iPadOS 14.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Provide a value for this key that’s the name of an image in your asset catalog. You use the same string for the value that you might use when calling the [`init(named:)`](https://developer.apple.com/documentation/UIKit/UIImage/init(named:)) initializer of [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage). Because the image comes from your asset catalog, you can use slicing to provide a small image that works on many different platforms.

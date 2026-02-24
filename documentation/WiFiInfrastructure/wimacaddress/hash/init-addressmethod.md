@@ -18,7 +18,7 @@ init?(address: WIMACAddress, method: WIMACAddress.Hash.Method = .sha256)
 ## Parameters
 
 - `address`: The MAC Address to hash.
-- `method`: The method to use to generate the hash. Defaults to  .
+- `method`: The method to use to generate the hash. Defaults to `.sha256`.
 
 
 ---

@@ -24,9 +24,9 @@ A new `NSTextSelection`, or `nil` if the text selection is not found.
 
 ## Parameters
 
-- `selectionGranularity`: One of the available   options.
+- `selectionGranularity`: One of the available [`NSTextSelection.Granularity`](nstextselection/granularity-swift.enum.md) options.
 - `point`: The point that encloses the text.
-- `location`: An   that describes the container.
+- `location`: An [`NSTextLocation`](nstextlocation.md) that describes the container.
 
 ## See Also
 

@@ -22,8 +22,8 @@ init<Value>(format: Format, lenient: Bool = true) where Format == FloatingPointF
 
 ## Parameters
 
-- `format`: A configured   that describes the percent string format to parse.
-- `lenient`: A Boolean value that indicates whether the parse strategy should permit some discrepencies when parsing. Defaults to  .
+- `format`: A configured [`FloatingPointFormatStyle.Percent`](floatingpointformatstyle/percent.md) that describes the percent string format to parse.
+- `lenient`: A Boolean value that indicates whether the parse strategy should permit some discrepencies when parsing. Defaults to `true`.
 
 ## See Also
 

@@ -73,7 +73,7 @@ Subviews are proxies to the view they represent, which means that modifiers that
 ## Parameters
 
 - `view`: The view to get the subviews of.
-- `transform`: A closure that constructs a view from the collection of   subviews.
+- `transform`: A closure that constructs a view from the collection of subviews.
 
 
 ---

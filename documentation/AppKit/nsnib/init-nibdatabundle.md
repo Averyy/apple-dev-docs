@@ -21,7 +21,7 @@ The initialized `NSNib` object or `nil` if there were errors during initializati
 ## Parameters
 
 - `nibData`: The nib data.
-- `bundle`: The bundle for locating resources. If  , the main application bundle is used.
+- `bundle`: The bundle for locating resources. If `nil`, the main application bundle is used.
 
 ## See Also
 

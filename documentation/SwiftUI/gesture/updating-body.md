@@ -35,8 +35,8 @@ Use this callback to update transient UI state as described in [`Adding interact
 
 ## Parameters
 
-- `state`: A binding to a view’s   property.
-- `body`: The callback that SwiftUI invokes as the gesture’s value   changes. Its   parameter is the updated state of the   gesture. The   parameter is the previous state of the   gesture, and the   is the context of the gesture.
+- `state`: A binding to a view’s [`GestureState`](gesturestate.md) property.
+- `body`: The callback that SwiftUI invokes as the gesture’s value changes. Its `currentState` parameter is the updated state of the gesture. The `gestureState` parameter is the previous state of the gesture, and the `transaction` is the context of the gesture.
 
 ## See Also
 

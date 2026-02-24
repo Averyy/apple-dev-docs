@@ -24,8 +24,10 @@ func readData(ofMinLength minBytes: Int, maxLength maxBytes: Int, timeout: TimeI
 
 - `minBytes`: The minimum number of bytes to read.
 - `maxBytes`: The maximum number of bytes to read.
-- `timeout`: A timeout for reading bytes. If the read is not completed within the specified interval, the read is canceled and the   is called with an error. Pass   to prevent a read from timing out.
-- `completionHandler`: This completion handler takes the following parameters:
+- `timeout`: A timeout for reading bytes. If the read is not completed within the specified interval, the read is canceled and the `completionHandler` is called with an error. Pass `0` to prevent a read from timing out.
+- `completionHandler`: The completion handler to call when all bytes are read, or an error occurs. This handler is executed on the delegate queue. This completion handler takes the following parameters: - **`data`**: The data read from the stream.
+- **`atEOF`**: Whether or not the stream reached end-of-file (EOF), such that no more data can be read.
+- **`error`**: An error object that indicates why the read failed, or `nil` if the read was successful.
 
 ## See Also
 

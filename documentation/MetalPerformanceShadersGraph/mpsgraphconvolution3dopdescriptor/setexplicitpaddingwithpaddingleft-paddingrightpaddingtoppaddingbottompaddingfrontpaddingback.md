@@ -21,11 +21,11 @@ func setExplicitPaddingWithPaddingLeft(_ paddingLeft: Int, paddingRight: Int, pa
 
 ## Parameters
 
-- `paddingLeft`: See   property.
-- `paddingRight`: See   property.
-- `paddingTop`: See   property.
-- `paddingBottom`: See   property.
-- `paddingFront`: See   property.
+- `paddingLeft`: See [`paddingLeft`](mpsgraphconvolution3dopdescriptor/paddingleft.md) property.
+- `paddingRight`: See [`paddingRight`](mpsgraphconvolution3dopdescriptor/paddingright.md) property.
+- `paddingTop`: See [`paddingTop`](mpsgraphconvolution3dopdescriptor/paddingtop.md) property.
+- `paddingBottom`: See [`paddingBottom`](mpsgraphconvolution3dopdescriptor/paddingbottom.md) property.
+- `paddingFront`: See [`paddingFront`](mpsgraphconvolution3dopdescriptor/paddingfront.md) property.
 
 
 ---

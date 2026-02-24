@@ -30,7 +30,7 @@ When using this method, and the destination object does not implement an accesso
 
 ## Parameters
 
-- `value`: The value for the property identified by  .
+- `value`: The value for the property identified by `keyPath`.
 - `keyPath`: A key path of the form relationship.property (with one or more relationships): for example “department.name” or “department.manager.lastName.”
 
 ## See Also

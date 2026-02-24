@@ -9,6 +9,10 @@ A Boolean value that indicates whether the system initially hides the status bar
 - iOS 2.0+
 - iPadOS 2.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 If `YES`, the system hides the status bar. If `NO`, it displays the status bar.

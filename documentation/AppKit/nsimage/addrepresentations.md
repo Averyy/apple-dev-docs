@@ -22,7 +22,7 @@ Representations added by this method are retained by the receiver. Image represe
 
 ## Parameters
 
-- `imageReps`: An array of   objects.
+- `imageReps`: An array of `NSImageRep` objects.
 
 ## See Also
 

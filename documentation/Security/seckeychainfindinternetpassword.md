@@ -28,21 +28,21 @@ This function automatically calls the function [`SecKeychainUnlock(_:_:_:_:)`](s
 
 ## Parameters
 
-- `keychainOrArray`: A reference to an array of keychains to search, a single keychain or   to search the user’s default keychain search list.
-- `serverNameLength`: The length of the   character string.
+- `keychainOrArray`: A reference to an array of keychains to search, a single keychain or `NULL` to search the user’s default keychain search list.
+- `serverNameLength`: The length of the `serverName` character string.
 - `serverName`: A UTF-8 encoded character string representing the server name.
-- `securityDomainLength`: The length of the   character string.
-- `securityDomain`: A UTF-8 encoded character string representing the security domain. This parameter is optional, as not all protocols require it. Pass   if it is not required.
-- `accountNameLength`: The length of the   character string.
+- `securityDomainLength`: The length of the `securityDomain` character string.
+- `securityDomain`: A UTF-8 encoded character string representing the security domain. This parameter is optional, as not all protocols require it. Pass `NULL` if it is not required.
+- `accountNameLength`: The length of the `accountName` character string.
 - `accountName`: A UTF-8 encoded character string representing the account name.
-- `pathLength`: The length of the   character string.
+- `pathLength`: The length of the `path` character string.
 - `path`: A UTF-8 encoded character string representing the path.
-- `port`: The TCP/IP port number. Pass   to ignore the port number.
-- `protocol`: The protocol associated with this password. See   for a description of possible values.
-- `authenticationType`: The authentication scheme used. See   for a description of possible values. Pass the constant  , to specify the default authentication scheme.
-- `passwordLength`: On return, the length of the buffer pointed to by  .
-- `passwordData`: On return, a pointer to a buffer containing the password data. Pass   if you want to obtain the item object but not the password data. In this case, you must also pass   in the   parameter. You should use the   function to free the memory pointed to by this parameter.
-- `itemRef`: On return, a pointer to the item object of the Internet password. You are responsible for releasing your reference to this object. Pass   if you don’t want to obtain this object.
+- `port`: The TCP/IP port number. Pass `0` to ignore the port number.
+- `protocol`: The protocol associated with this password. See [`SecProtocolType`](secprotocoltype.md) for a description of possible values.
+- `authenticationType`: The authentication scheme used. See [`SecAuthenticationType`](secauthenticationtype.md) for a description of possible values. Pass the constant `kSecAuthenticationTypeDefault`, to specify the default authentication scheme.
+- `passwordLength`: On return, the length of the buffer pointed to by `passwordData`.
+- `passwordData`: On return, a pointer to a buffer containing the password data. Pass `NULL` if you want to obtain the item object but not the password data. In this case, you must also pass `NULL` in the `passwordLength` parameter. You should use the [`SecKeychainItemFreeContent(_:_:)`](seckeychainitemfreecontent(_:_:).md) function to free the memory pointed to by this parameter.
+- `itemRef`: On return, a pointer to the item object of the Internet password. You are responsible for releasing your reference to this object. Pass `NULL` if you don’t want to obtain this object.
 
 
 ---

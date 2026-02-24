@@ -40,8 +40,8 @@ For more information on loading entities, see [`Loading entities from a file`](l
 
 ## Parameters
 
-- `name`: The base name of the file to load.  An extension isn’t required,   but you can provide one to resolve collisions.  In the presence of a collision,   the provided name resolves with the following order of precedence:   [ ,  ,  ,  ].
-- `bundle`: The bundle containing the file. Use   to search the app’s   main bundle.
+- `name`: The base name of the file to load.  An extension isn’t required, but you can provide one to resolve collisions.  In the presence of a collision, the provided name resolves with the following order of precedence: [`.usdz`, `.usd`, `.usdc`, `.usda`].
+- `bundle`: The bundle containing the file. Use `nil` to search the app’s main bundle.
 
 ## See Also
 

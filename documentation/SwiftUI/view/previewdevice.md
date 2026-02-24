@@ -51,7 +51,7 @@ Additionally, you can use the following values for macOS platform development:
 
 ## Parameters
 
-- `value`: A device to use for preview, or   to let Xcode   automatically choose a device based on the run destination.
+- `value`: A device to use for preview, or `nil` to let Xcode automatically choose a device based on the run destination.
 
 ## See Also
 

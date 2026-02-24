@@ -29,7 +29,7 @@ In this method’s implementation, perform your app’s rendering on the [`layer
 ## Parameters
 
 - `link`: A Metal display link instance the system notifies.
-- `update`: An update instance that contains the time the system intends to update the display, a   instance, and a deadline to call its   method.
+- `update`: An update instance that contains the time the system intends to update the display, a [`CAMetalDrawable`](cametaldrawable.md) instance, and a deadline to call its [`present()`](https://developer.apple.com/documentation/Metal/MTLDrawable/present()) method.
 
 
 ---

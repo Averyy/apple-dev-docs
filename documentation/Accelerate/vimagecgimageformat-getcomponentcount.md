@@ -26,7 +26,7 @@ The number of color and alpha channels in the image.
 
 ## Parameters
 
-- `format`: A valid   structure.
+- `format`: A valid [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure.
 
 ## See Also
 

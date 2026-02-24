@@ -13,6 +13,10 @@ The type of bundle.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key consists of a four-letter code for the bundle type. For apps, the code is `APPL`, for frameworks, it’s `FMWK`, and for bundles, it’s `BNDL`. The default value is derived from the bundle extension or, if it can’t be derived, the default value is `BNDL`.

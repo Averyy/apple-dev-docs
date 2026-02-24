@@ -28,7 +28,7 @@ Get the PSKs supported by the local instance.
 
 ## Parameters
 
-- `metadata`: A   instance.
+- `metadata`: A `sec_protocol_metadata_t` instance.
 - `handler`: A block to invoke one or more times with tuples of dispatch_data_t objects carrying PSKs and their corresponding identities.
 
 

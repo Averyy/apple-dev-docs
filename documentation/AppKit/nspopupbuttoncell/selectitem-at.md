@@ -22,7 +22,7 @@ Subclassers can override this method to catch all select calls.
 
 ## Parameters
 
-- `index`: The index of the item you want to select, or   you want to deselect all menu items.
+- `index`: The index of the item you want to select, or `-1` you want to deselect all menu items.
 
 ## See Also
 

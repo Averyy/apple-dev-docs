@@ -27,9 +27,9 @@ In order for the dialog to appear, `isPresented` must be `true`. When the operat
 
 - `isPresented`: A binding to whether the dialog should be shown.
 - `documents`: The in-memory documents to export.
-- `contentTypes`: The list of supported content types which can   be exported. If not provided,    are used.
-- `onCompletion`: A callback that will be invoked when the operation has   succeeded or failed. The   indicates whether   the operation succeeded or failed.
-- `onCancellation`: A callback that will be invoked   if the user cancels the operation.
+- `contentTypes`: The list of supported content types which can be exported. If not provided, `FileDocument.writableContentTypes` are used.
+- `onCompletion`: A callback that will be invoked when the operation has succeeded or failed. The `result` indicates whether the operation succeeded or failed.
+- `onCancellation`: A callback that will be invoked if the user cancels the operation.
 
 ## See Also
 

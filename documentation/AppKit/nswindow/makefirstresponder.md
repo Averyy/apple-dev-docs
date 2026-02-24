@@ -30,7 +30,7 @@ Use [`initialFirstResponder`](nswindow/initialfirstresponder.md) to the set the 
 
 ## Parameters
 
-- `responder`: The responder to set as the window’s first responder.   makes the window its first responder.
+- `responder`: The responder to set as the window’s first responder. `nil` makes the window its first responder.
 
 ## See Also
 

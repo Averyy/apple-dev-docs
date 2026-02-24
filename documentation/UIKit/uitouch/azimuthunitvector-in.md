@@ -28,7 +28,7 @@ It is less expensive to get the azimuth unit vector than the azimuth angle. If y
 
 ## Parameters
 
-- `view`: The view that contains the stylus’s touch. Pass   to get the unit vector for the azimuth that is relative to the touch’s window.
+- `view`: The view that contains the stylus’s touch. Pass `nil` to get the unit vector for the azimuth that is relative to the touch’s window.
 
 ## See Also
 

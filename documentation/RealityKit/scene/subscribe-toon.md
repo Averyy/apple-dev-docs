@@ -26,9 +26,9 @@ An object that represents the subscription to this event stream.
 
 ## Parameters
 
-- `event`: The event type to subscribe to.   For example   or  .
-- `sourceObject`: An optional source for the event, such as an entity or a scene.   Set to   to listen for all events of the event type within the  .
-- `handler`: A closure that runs when the   occurs.
+- `event`: The event type to subscribe to. For example [`SceneEvents.Update`](sceneevents/update.md) or [`ComponentEvents.DidAdd`](componentevents/didadd.md).
+- `sourceObject`: An optional source for the event, such as an entity or a scene. Set to `nil` to listen for all events of the event type within the [`Scene`](scene.md).
+- `handler`: A closure that runs when the `event` occurs.
 
 ## See Also
 

@@ -26,8 +26,8 @@ If the delegate doesn’t define this method, the menu is populated to find out 
 ## Parameters
 
 - `menu`: The menu object sending the delegation message.
-- `event`: An   object representing a key-down event.
-- `target`: Return by reference the target object for the menu item that corresponds to the event. Specify   to request the menu’s target.
+- `event`: An [`NSEvent`](nsevent.md) object representing a key-down event.
+- `target`: Return by reference the target object for the menu item that corresponds to the event. Specify `nil` to request the menu’s target.
 - `action`: Return by reference the action selector for the menu item that corresponds to the event.
 
 ## See Also

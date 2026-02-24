@@ -26,7 +26,7 @@ When Assistive Access is enabled, the given view is used as the root view of the
 
 ## Parameters
 
-- `content`: A closure that creates the content for the   app when Assistive Access is enabled.
+- `content`: A closure that creates the content for the app when Assistive Access is enabled.
 
 
 ---

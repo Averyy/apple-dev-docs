@@ -23,7 +23,7 @@ func completeSavePasswordRequest() async -> Bool
 
 ## Parameters
 
-- `completionHandler`: An optional block your extension can provide to perform any cleanup work after the system has captured the results.   The expired parameter is true if the system decides to prematurely end a previous non-expiration invocation of the completion handler.
+- `completionHandler`: An optional block your extension can provide to perform any cleanup work after the system has captured the results. The expired parameter is true if the system decides to prematurely end a previous non-expiration invocation of the completion handler.
 
 
 ---

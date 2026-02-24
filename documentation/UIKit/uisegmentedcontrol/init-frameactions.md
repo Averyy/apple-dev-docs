@@ -25,7 +25,7 @@ Segments prefer images over titles when the action contains both. Selecting a se
 ## Parameters
 
 - `frame`: A rectangle that specifies the segmented control’s frame in a superview’s coordinate system.
-- `actions`: An array of   objects.
+- `actions`: An array of [`UIAction`](uiaction.md) objects.
 
 ## See Also
 

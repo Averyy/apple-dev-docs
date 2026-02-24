@@ -25,10 +25,10 @@ By making this call, the Core Image framework ensures that any needed kernels ar
 
 ## Parameters
 
-- `image`:   to prepare to render.
-- `fromRect`: A   defining the region to render.
-- `destination`: The   to which you are preparing to render.
-- `atPoint`: The   at which you are preparing to render.
+- `image`: [`CIImage`](ciimage.md) to prepare to render.
+- `fromRect`: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) defining the region to render.
+- `destination`: The [`CIRenderDestination`](cirenderdestination.md) to which you are preparing to render.
+- `atPoint`: The [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) at which you are preparing to render.
 
 ## See Also
 

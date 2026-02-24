@@ -23,6 +23,9 @@ This property stores an optional handler block you use to selectively start the 
 
 Your handler block returns a Boolean that indicates whether to start the interaction. Return [`true`](https://developer.apple.com/documentation/Swift/true) to start the interaction or [`false`](https://developer.apple.com/documentation/Swift/false) to ignore the interaction and return the [`UIBandSelectionInteraction`](uibandselectioninteraction.md) object to the [`UIBandSelectionInteraction.State.possible`](uibandselectioninteraction/state-swift.enum/possible.md) state. The interaction object passes the following points to your handler:
 
+- **interaction**: The [`UIBandSelectionInteraction`](uibandselectioninteraction.md) object that’s ready to start the interaction.
+- **point**: The starting point of the interaction, in your view’s coordinate space. You might use this value to prevent someone from starting interactions in disabled items or from specific regions of your view.
+
 
 ---
 

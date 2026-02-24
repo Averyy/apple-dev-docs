@@ -22,8 +22,11 @@ func loadMediaSelectionGroup(for mediaCharacteristic: AVMediaCharacteristic) asy
 
 ## Parameters
 
-- `mediaCharacteristic`: A media characteristic to load the available media selection options for. The supported characterisics are:
-- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters:
+- `mediaCharacteristic`: A media characteristic to load the available media selection options for. The supported characterisics are: - [`audible`](avmediacharacteristic/audible.md) to return the group of available options for audio media in various languages and for various purposes, such as descriptive audio
+- [`legible`](avmediacharacteristic/legible.md) to return the group of available options for subtitles in various languages and for various purposes
+- [`visual`](avmediacharacteristic/visual.md) to return the group of available options for video media
+- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters: - **mediaSelectionGroup**: The loaded media selection group, or `nil` if no group is available or if an error occurs.
+- **error**: An error object if the request fails; otherwise, `nil`.
 
 ## See Also
 

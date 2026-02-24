@@ -26,7 +26,7 @@ A row that provides a drop destination for a drag operation of the specified typ
 ## Parameters
 
 - `payloadType`: The expected type of the dropped models.
-- `action`: A closure that takes the dropped content and responds   with   if the drop operation was successful; otherwise, return   .
+- `action`: A closure that takes the dropped content and responds with `true` if the drop operation was successful; otherwise, return `false`.
 
 ## See Also
 

@@ -34,8 +34,8 @@ This method performs the same task as the [`fileManager(_:shouldProceedAfterErro
 
 - `fileManager`: The file manager object that attempted to copy the item.
 - `error`: The error that occurred during the attempt to copy.
-- `srcURL`: The URL or a file or directory that   is attempting to copy.
-- `dstURL`: The URL or a file or directory to which   is attempting to copy.
+- `srcURL`: The URL or a file or directory that `fileManager` is attempting to copy.
+- `dstURL`: The URL or a file or directory to which `fileManager` is attempting to copy.
 
 ## See Also
 

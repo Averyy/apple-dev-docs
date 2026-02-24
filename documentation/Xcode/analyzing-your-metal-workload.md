@@ -58,7 +58,13 @@ With profiling data, the Debug navigator displays the percentage of samples from
 
 The Metal debugger automatically generates a number of recommendations, called Insights, and includes them at the bottom of the Summary viewer to help you improve your Metal workload. The Insights information includes the following categories:
 
+- **Memory**: Memory insights provide recommendations to reduce the amount of GPU memory that your workload uses. By default, Xcode sorts the recommendations by the amount of memory saved, so you can focus on the biggest potential wins first. In the following example, setting the wrong storage mode results in an additional 10.2 MB of GPU memory usage. The developer of this app can save that memory by following the advice and switching to memoryless.
+
 ![A screenshot of the Insights section in the Summary viewer showing a memory insight.](https://docs-assets.developer.apple.com/published/54302fcdad52b0e9ae97a1b5b68baa14/gputools-metal-debugger-sp-insights%402x.png)
+
+- **Bandwidth**: Bandwidth insights provide recommendations to reduce the amount of memory bandwidth, which is particularly important on Apple GPUs. Transfers to and from external memory often result in decreased power efficiency and slower performance. To learn more, see [`Tailor your apps for Apple GPUs and tile-based deferred rendering`](https://developer.apple.com/documentation/Metal/tailor-your-apps-for-apple-gpus-and-tile-based-deferred-rendering).
+- **Performance**: Performance insights provide recommendations to increase your app’s performance by avoiding expensive and redundant operations in the rendering pipeline.
+- **API Usage**: API Usage insights provide recommendations to improve your Metal API usage. Fewer API calls can lead to less CPU time. In the following example, you can see that the vertex and fragment buffers are redundantly bound for each draw command:
 
 ![A screenshot of the Insights section in the Summary viewer showing an API usage insight.](https://docs-assets.developer.apple.com/published/e780d4fe50f19ebe89a78e2d2b428a15/gputools-metal-debugger-sp-api-usage%402x.png)
 
@@ -73,6 +79,10 @@ Use the filter bar at the bottom of the Debug navigator to adjust filtering crit
 When there are two or more filter terms, you can click the filter button to choose whether to match any or all of the terms. For any filter term, you can click it to choose to include or exclude resources that match that term.
 
 The following additional filter tools appear to the right:
+
+- **Show only related stack frames**: After capturing a fresh GPU trace, you can inspect the call stack for each Metal command. This allows filtering for the stack frames in your project.
+- **Show only calls with issues**: This allows filtering for just the Metal commands with insights from the Metal debugger.
+- **Show only markers and commands**: This allows filtering for Metal commands like draw commands, compute dispatches, and blit operations.
 
 ## See Also
 

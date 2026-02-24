@@ -29,9 +29,9 @@ init?(id: String, jointNames: [String], inverseBindPoseMatrices: [simd_float4x4]
 
 - `id`: The unique name of this skeleton.
 - `jointNames`: The names of each joint.
-- `inverseBindPoseMatrices`: The matrix which, for each joint, transforms from model   space (bind pose) to the local space of that joint.
-- `restPoseTransforms`: The transform from each joint’s local space to its parent’s local   space, used when the joint is not animated. If not specified, the rest pose is assumed to   be the same as the bind pose, and is computed from the inverse bind pose matrices.
-- `parentIndices`: The index of each joint’s parent, or nil if that joint has no parent.   If this array is not provided, the parent of each joint is inferred from its name (e.g.   a joint named   is parented to a joint named  ).
+- `inverseBindPoseMatrices`: The matrix which, for each joint, transforms from model space (bind pose) to the local space of that joint.
+- `restPoseTransforms`: The transform from each joint’s local space to its parent’s local space, used when the joint is not animated. If not specified, the rest pose is assumed to be the same as the bind pose, and is computed from the inverse bind pose matrices.
+- `parentIndices`: The index of each joint’s parent, or nil if that joint has no parent. If this array is not provided, the parent of each joint is inferred from its name (e.g. a joint named `root/hips_joint` is parented to a joint named `root`).
 
 
 ---

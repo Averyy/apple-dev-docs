@@ -20,11 +20,11 @@ An object representing the newly-created store.
 
 ## Parameters
 
-- `storeIdentifier`: If this value is   then the method imports the records for the first store found.
+- `storeIdentifier`: The identifier for a store. If this value is `nil` then the method imports the records for the first store found.
 - `externalRecordsURL`: The location of the directory containing external records.
-- `destinationURL`: There should be no existing store at this location, as the store will be created from scratch (appending to an existing store is not allowed).
-- `options`: A dictionary containing key-value pairs that specify whether the store should be read-only, and whether (for an XML store) the XML file should be validated against the DTD before it is read. For key definitions, see  .
-- `storeType`: A string constant (such as  ) that specifies the type of the new store—see  .
+- `destinationURL`: An URL object that specifies the location for the new store. There should be no existing store at this location, as the store will be created from scratch (appending to an existing store is not allowed).
+- `options`: A dictionary containing key-value pairs that specify whether the store should be read-only, and whether (for an XML store) the XML file should be validated against the DTD before it is read. For key definitions, see [`Store options`](store-options.md).
+- `storeType`: A string constant (such as `NSSQLiteStoreType`) that specifies the type of the new store—see [`Persistent Store Types`](persistent-store-types.md).
 
 ## See Also
 

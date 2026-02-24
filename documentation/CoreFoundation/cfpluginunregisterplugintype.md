@@ -30,7 +30,7 @@ Used by a plug-in or host when performing dynamic registration.
 
 ## Parameters
 
-- `factoryUUID`: The   object representing the factory function for the type to unregister.
+- `factoryUUID`: The `CFUUID` object representing the factory function for the type to unregister.
 - `typeUUID`: The UUID type to unregister.
 
 ## See Also

@@ -23,7 +23,7 @@ typealias ENGetUserTraveledHandler = (Bool, (any Error)?) -> Void
 ## Parameters
 
 - `traveled`: Indicates whether the user has traveled.
-- `error`: A successful invocation if  ; otherwise, the error that occured.
+- `error`: A successful invocation if `nil`; otherwise, the error that occured.
 
 ## See Also
 

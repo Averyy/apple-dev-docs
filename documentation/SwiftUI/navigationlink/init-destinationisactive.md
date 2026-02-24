@@ -25,7 +25,7 @@ init(_ titleKey: LocalizedStringKey, destination: Destination, isActive: Binding
 
 - `titleKey`: A localized string key for creating a text label.
 - `destination`: A view for the navigation link to present.
-- `isActive`: A binding to a Boolean value that indicates whether    is currently presented.
+- `isActive`: A binding to a Boolean value that indicates whether `destination` is currently presented.
 
 ## See Also
 

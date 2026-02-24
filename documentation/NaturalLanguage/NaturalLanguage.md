@@ -22,11 +22,11 @@ The Natural Language framework provides a variety of natural language processing
 
 Use this framework to perform tasks like:
 
-- , automatically detecting the language of a piece of text.
-- , breaking up a piece of text into linguistic units or tokens.
-- , marking up individual words with their part of speech.
-- , deducing a word’s stem based on its morphological analysis.
-- , identifying tokens as names of people, places, or organizations.
+- *Language identification*, automatically detecting the language of a piece of text.
+- *Tokenization*, breaking up a piece of text into linguistic units or tokens.
+- *Parts-of-speech tagging*, marking up individual words with their part of speech.
+- *Lemmatization*, deducing a word’s stem based on its morphological analysis.
+- *Named entity recognition*, identifying tokens as names of people, places, or organizations.
 
 You can also use this framework with Create ML to train and deploy custom natural language models. For more information, see [`Creating a text classifier model`](https://developer.apple.com/documentation/CreateML/creating-a-text-classifier-model) and doc:creating-a-word-tagger-model.
 
@@ -60,7 +60,7 @@ You can also use this framework with Create ML to train and deploy custom natura
 - [class NLContextualEmbedding](nlcontextualembedding.md)
   A model that computes sequences of embedding vectors for natural language utterances.
 - [struct NLContextualEmbeddingKey](nlcontextualembeddingkey.md)
-  Contextual embedding keys.
+  This class defines properties that you can filter or search for contextual embeddings.
 - [struct NLScript](nlscript.md)
   The writing scripts that the Natural Language framework supports.
 ### Natural language models

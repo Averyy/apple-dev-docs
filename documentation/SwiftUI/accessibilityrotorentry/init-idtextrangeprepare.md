@@ -22,10 +22,10 @@ init(_ label: LocalizedStringResource, id: ID, textRange: Range<String.Index>? =
 
 ## Parameters
 
-- `label`: Localized string used to show this Rotor entry   to users.
-- `id`: Used to find the UI element associated with this   Rotor entry. This identifier should be used within a  ,   either in a   or using an   call.
-- `textRange`: Optional range of text associated with this Rotor   entry. This should be a range within text that is set as the   accessibility label or accessibility value of the associated   element.
-- `prepare`: Optional closure to run before a Rotor entry   is navigated to, to prepare the UI as needed. This can be used to   bring the UI element on-screen if it isn’t already, and SwiftUI   is not able to automatically scroll to it.
+- `label`: Localized string used to show this Rotor entry to users.
+- `id`: Used to find the UI element associated with this Rotor entry. This identifier should be used within a `scrollView`, either in a `ForEach` or using an `id` call.
+- `textRange`: Optional range of text associated with this Rotor entry. This should be a range within text that is set as the accessibility label or accessibility value of the associated element.
+- `prepare`: Optional closure to run before a Rotor entry is navigated to, to prepare the UI as needed. This can be used to bring the UI element on-screen if it isn’t already, and SwiftUI is not able to automatically scroll to it.
 
 ## See Also
 

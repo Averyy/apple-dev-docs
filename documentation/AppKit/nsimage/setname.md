@@ -26,7 +26,7 @@ When naming an image using this method, it is convention not to include filename
 
 ## Parameters
 
-- `string`: The name to associate with the receiver. Specify   if you want to remove the image from the image cache.
+- `string`: The name to associate with the receiver. Specify `nil` if you want to remove the image from the image cache.
 
 ## See Also
 

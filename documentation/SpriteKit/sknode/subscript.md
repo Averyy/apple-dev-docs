@@ -30,7 +30,7 @@ An array of `SKNode` objects that match the name. If no matching nodes are found
 
 ## Parameters
 
-- `name`: The name to search for. This may be either the literal name of the node or a customized search string. See  .
+- `name`: The name to search for. This may be either the literal name of the node or a customized search string. See `Searching the Node Tree`.
 
 ## See Also
 

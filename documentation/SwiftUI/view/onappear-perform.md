@@ -35,7 +35,7 @@ The exact moment that SwiftUI calls this method depends on the specific view typ
 
 ## Parameters
 
-- `action`: The action to perform. If   is  , the   call has no effect.
+- `action`: The action to perform. If `action` is `nil`, the call has no effect.
 
 ## See Also
 

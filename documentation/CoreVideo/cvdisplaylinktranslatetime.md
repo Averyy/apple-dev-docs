@@ -26,8 +26,8 @@ Note that the display link has to be running for this call to succeed.
 ## Parameters
 
 - `displayLink`: The display link whose time base should be used to do the translation.
-- `inTime`: A pointer to a   structure containing the source time to translate.
-- `outTime`: A pointer to a   structure into which the target time is written. Before calling, you must set the version field (currently  ) to indicate which version of the structure you want. You should also set the   field to specify which representations to translate to.
+- `inTime`: A pointer to a `CVTimeStamp` structure containing the source time to translate.
+- `outTime`: A pointer to a `CVTimeStamp` structure into which the target time is written. Before calling, you must set the version field (currently `0`) to indicate which version of the structure you want. You should also set the `flags` field to specify which representations to translate to.
 
 ## See Also
 

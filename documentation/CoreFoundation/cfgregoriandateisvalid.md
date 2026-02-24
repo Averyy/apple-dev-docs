@@ -27,7 +27,7 @@ func CFGregorianDateIsValid(_ gdate: CFGregorianDate, _ unitFlags: CFOptionFlags
 ## Parameters
 
 - `gdate`: The CFGregorianDate structure whose fields to validate.
-- `unitFlags`: A mask that specifies which Gregorian unit fields to validate. See   for a list of values from which to construct the mask.
+- `unitFlags`: A mask that specifies which Gregorian unit fields to validate. See [`CFGregorianUnitFlags`](cfgregorianunitflags.md) for a list of values from which to construct the mask.
 
 ## See Also
 

@@ -29,7 +29,7 @@ By using AUGraphGetNodeCount in conjunction with this call, you can iterate thro
 
 ## Parameters
 
-- `inGraph`: The   object to get the node from.
+- `inGraph`: The `AUGraph` object to get the node from.
 - `inIndex`: The index of the node to get.
 - `outNode`: On output, the node at the specified index.
 

@@ -35,8 +35,8 @@ Use this method to retrieve entries quickly and efficiently from an index set. Y
 ## Parameters
 
 - `indexBuffer`: Index buffer to fill.
-- `bufferSize`: Maximum size of  .
-- `range`: Index range to compare with indexes in the index set;   represents all the indexes in the index set. Indexes in the index range and in the index set are copied to  . On output, the range of indexes not copied to  .
+- `bufferSize`: Maximum size of `indexBuffer`.
+- `range`: Index range to compare with indexes in the index set; `nil` represents all the indexes in the index set. Indexes in the index range and in the index set are copied to `indexBuffer`. On output, the range of indexes not copied to `indexBuffer`.
 
 ## See Also
 

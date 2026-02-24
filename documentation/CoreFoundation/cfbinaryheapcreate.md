@@ -26,10 +26,10 @@ A new `CFBinaryHeap` object. Ownership follows the [`The Create Rule`](https://d
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `capacity`: The maximum number of values that can be contained by the binary heap. The binary heap starts empty and can grow to this number of values. If this parameter is  , the binary heap’s maximum capacity is limited only by memory.
-- `callBacks`: A pointer to a   structure initialized with the callbacks that operate on the values placed into the binary heap. If the binary heap will be holding   objects, pass the   constant. This functions makes a copy of the contents of the callbacks structure, so that a pointer to a structure on the stack can be passed in, or can be reused for multiple binary heap creations. This callbacks parameter may not be  .
-- `compareContext`: Not used. Pass  .
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `capacity`: The maximum number of values that can be contained by the binary heap. The binary heap starts empty and can grow to this number of values. If this parameter is `0`, the binary heap’s maximum capacity is limited only by memory.
+- `callBacks`: A pointer to a [`CFBinaryHeapCallBacks`](cfbinaryheapcallbacks.md) structure initialized with the callbacks that operate on the values placed into the binary heap. If the binary heap will be holding `CFString` objects, pass the [`kCFStringBinaryHeapCallBacks`](kcfstringbinaryheapcallbacks.md) constant. This functions makes a copy of the contents of the callbacks structure, so that a pointer to a structure on the stack can be passed in, or can be reused for multiple binary heap creations. This callbacks parameter may not be `NULL`.
+- `compareContext`: Not used. Pass `NULL`.
 
 ## See Also
 

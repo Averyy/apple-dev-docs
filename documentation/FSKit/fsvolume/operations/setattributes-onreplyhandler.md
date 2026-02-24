@@ -31,7 +31,7 @@ If the caller attepts to sest an attribute not supported by the on-disk file sys
 
 - `newAttributes`: A request containing the attributes to set.
 - `item`: The item on which to set the attributes.
-- `reply`: A block or closure to indicate success or failure. If setting attributes succeeds, pass an   with the item’s updated attributes and a   error. If setting attributes fails, pass the relevant error as the second parameter; FSKit ignores any   in this case. For an   Swift implementation, there’s no reply handler; simply return the   or throw an error.
+- `reply`: A block or closure to indicate success or failure. If setting attributes succeeds, pass an [`FSItem.Attributes`](fsitem/attributes.md) with the item’s updated attributes and a `nil` error. If setting attributes fails, pass the relevant error as the second parameter; FSKit ignores any [`FSItem.Attributes`](fsitem/attributes.md) in this case. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSItem.Attributes`](fsitem/attributes.md) or throw an error.
 
 ## See Also
 

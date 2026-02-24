@@ -21,7 +21,7 @@ class func remove(listener: any GKGameSessionEventListener)
 
 ## Parameters
 
-- `listener`: The   that is to be removed.
+- `listener`: The `GKGameSessionEventListener` that is to be removed.
 
 ## See Also
 

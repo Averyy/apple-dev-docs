@@ -22,9 +22,9 @@ struct SparseLSMROptions
 
 #### Overview
 
-LSMR is a minimal residual (MINRES) method for solving least squares. Use LSMR to solve equations of the form  where an exact solution doesn’t exist. The returned solution minimizes ‖  ‖₂.
+LSMR is a minimal residual (MINRES) method for solving least squares. Use LSMR to solve equations of the form *Ax = b* where an exact solution doesn’t exist. The returned solution minimizes ‖ *b-Ax* ‖₂.
 
-Although LSMR is equivalent to applying MINRES to the normal equations  in exact arithmetic, it has superior numerical behavior and is the preferred method. Due to the implicit squaring of the condition of  in the normal equations, LSMR may struggle to converge in single precision. Use double-precision arithmetic where possible.
+Although LSMR is equivalent to applying MINRES to the normal equations *A__ᵀ__Ax = A__ᵀ__b* in exact arithmetic, it has superior numerical behavior and is the preferred method. Due to the implicit squaring of the condition of *A* in the normal equations, LSMR may struggle to converge in single precision. Use double-precision arithmetic where possible.
 
 For symmetric positive-definite systems, use [`SparseConjugateGradient(_:)`](sparseconjugategradient(_:).md). For square, full-rank unsymmetric or indefinite equations, use [`SparseGMRES(_:)`](sparsegmres(_:).md).
 
@@ -37,9 +37,9 @@ For symmetric positive-definite systems, use [`SparseConjugateGradient(_:)`](spa
   Returns a new LSMR options structure using the specified parameters.
 ### Inspecting LSMR Options
 - [var atol: Double](sparselsmroptions/atol.md)
-  The absolute tolerance (default test) or  tolerance (Fong-Saunders test).
+  The absolute tolerance (default test) or *A* tolerance (Fong-Saunders test).
 - [var btol: Double](sparselsmroptions/btol.md)
-  The  tolerance (Fong-Saunders test only).
+  The *B* tolerance (Fong-Saunders test only).
 - [var conditionLimit: Double](sparselsmroptions/conditionlimit.md)
   The condition number limit (Fong-Saunders test only).
 - [var convergenceTest: SparseLSMRConvergenceTest_t](sparselsmroptions/convergencetest.md)

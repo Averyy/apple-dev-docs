@@ -24,7 +24,7 @@ The pixel buffer that contains the mask.
 
 ## Parameters
 
-- `instances`: An indexed set of selected instances, where   is the background.
+- `instances`: An indexed set of selected instances, where `0` is the background.
 
 ## See Also
 

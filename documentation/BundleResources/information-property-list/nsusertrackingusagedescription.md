@@ -11,9 +11,13 @@ A message that informs the user why an app is requesting permission to use data 
 - tvOS 14.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
-If your app calls the App Tracking Transparency API, you must provide custom text, known as a , which displays as a system-permission alert request. The usage-description string tells the user why the app is requesting permission to use data for tracking the user or the device. The user has the option to grant or deny the authorization request. If you don’t include a usage-description string, your app may crash when a user first launches it.
+If your app calls the App Tracking Transparency API, you must provide custom text, known as a *usage-description string*, which displays as a system-permission alert request. The usage-description string tells the user why the app is requesting permission to use data for tracking the user or the device. The user has the option to grant or deny the authorization request. If you don’t include a usage-description string, your app may crash when a user first launches it.
 
 Make sure your app requests permission to track sometime before tracking occurs. This could be at first launch or when using certain features in your app. For example, when signing on with a third-party SSO. For more information on asking permission to track, see [`User privacy and data use`](https://developer.apple.comhttps://developer.apple.com/app-store/user-privacy-and-data-use/).
 

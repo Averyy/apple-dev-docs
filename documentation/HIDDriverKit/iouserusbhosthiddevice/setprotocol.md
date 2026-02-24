@@ -25,7 +25,7 @@ At startup, the [`Start`](iouserusbhosthiddevice/start.md) method sets the proto
 
 ## Parameters
 
-- `protocol`: The protocol to use for the device. Specify   to use the boot protocol or   to use the report protocol.
+- `protocol`: The protocol to use for the device. Specify `0` to use the boot protocol or `1` to use the report protocol.
 
 ## See Also
 

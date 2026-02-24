@@ -27,7 +27,7 @@ A dictionary representation of a time mapping.
 ## Parameters
 
 - `mapping`: The time mapping for which to create a dictionary representation.
-- `allocator`: An allocator to use to create a dictionary. Pass   to use the default allocator.
+- `allocator`: An allocator to use to create a dictionary. Pass `kCFAllocatorDefault` to use the default allocator.
 
 ## See Also
 

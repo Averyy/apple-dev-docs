@@ -29,6 +29,10 @@ This method applies the blend with red mask filter to an image. The effect uses 
 
 The blend with red mask filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`maskImage`**: An image that masks an area on the background image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in the replacement of green in the mask image with the detail of the input image:
 
 ```swift

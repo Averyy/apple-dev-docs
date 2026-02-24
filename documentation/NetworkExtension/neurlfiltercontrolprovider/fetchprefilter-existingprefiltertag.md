@@ -57,7 +57,7 @@ Your provider implementation can return the complete Bloom filter data if the Bl
 
 ## Parameters
 
-- `existingPrefilterTag`: The tag of the current Bloom filter.  The system passes the tag of the last fetched Bloom filter, or   for the initial fetch. Your implementation can use this tag to decide if a Bloom filter update is necessary.  If an update isn’t necessary, return   to tell the system to continue using the current Bloom filter.
+- `existingPrefilterTag`: The tag of the current Bloom filter.  The system passes the tag of the last fetched Bloom filter, or `nil` for the initial fetch. Your implementation can use this tag to decide if a Bloom filter update is necessary.  If an update isn’t necessary, return `nil` to tell the system to continue using the current Bloom filter.
 
 ## See Also
 

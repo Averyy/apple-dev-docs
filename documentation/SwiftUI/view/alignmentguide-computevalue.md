@@ -58,8 +58,8 @@ Changing the alignment of one view may have effects on surrounding views. Here t
 
 ## Parameters
 
-- `g`: A   value at which to base the offset.
-- `computeValue`: A closure that returns the offset value to apply to   this view.
+- `g`: A [`HorizontalAlignment`](horizontalalignment.md) value at which to base the offset.
+- `computeValue`: A closure that returns the offset value to apply to this view.
 
 ## See Also
 

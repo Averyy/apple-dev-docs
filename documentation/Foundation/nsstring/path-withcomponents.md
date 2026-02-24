@@ -30,7 +30,7 @@ This method doesn’t clean up the path created; use [`standardizingPath`](nsstr
 
 ## Parameters
 
-- `components`: An array of   objects representing a file path. To create an absolute path, use a slash mark (” ”) as the first component. To include a trailing path divider, use an empty string as the last component.
+- `components`: An array of `NSString` objects representing a file path. To create an absolute path, use a slash mark (”`/`”) as the first component. To include a trailing path divider, use an empty string as the last component.
 
 ## See Also
 

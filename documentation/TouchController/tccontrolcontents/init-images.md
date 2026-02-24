@@ -21,7 +21,7 @@ A new `TCControlContents` instance.
 
 ## Parameters
 
-- `images`: An array of   objects to use for the contents.
+- `images`: An array of `TCControlImage` objects to use for the contents.
 
 
 ---

@@ -17,6 +17,12 @@ Parameters that the system uses to generate the token.
 object GetTokenRequest.TokenParameters
 ```
 
+## Properties
+
+- `PhoneUDID` (string): The identifier of the phone paired to the watch. Required by the `com.apple.watch.pairing` service type.
+- `SecurityToken` (string): A security token to generate the server token. Required by the `com.apple.watch.pairing` service type.
+- `WatchUDID` (string): The identifier of the watch paired to the phone. Required by the `com.apple.watch.pairing` service type.
+
 
 ---
 

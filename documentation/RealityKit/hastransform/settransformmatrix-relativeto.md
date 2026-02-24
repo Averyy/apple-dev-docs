@@ -26,8 +26,8 @@ The [`Transform`](transform.md) component can’t represent all transforms that 
 
 ## Parameters
 
-- `transform`: A 4x4 transform matrix, given relative to  .
-- `referenceEntity`: The entity that defines a frame of reference. Set   this to   to indicate world space.
+- `transform`: A 4x4 transform matrix, given relative to `referenceEntity`.
+- `referenceEntity`: The entity that defines a frame of reference. Set this to `nil` to indicate world space.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Solves the system  using the supplied single-precision factorization of , without any internal memory allocations.
+Solves the system *AX = B* using the supplied single-precision factorization of *A*, without any internal memory allocations.
 
 **Availability**:
 - iOS 11.0+
@@ -92,23 +92,23 @@ let xValues = [Float](unsafeUninitializedCapacity: n) {
 
 On return, `xValues` contains the values `[1.0, 2.0, 3.0, 10.0, 20.0, 30.0]`.
 
-If the factorization is , the function returns the solution of minimum norm  for underdetermined systems.
+If the factorization is *A = QR*, the function returns the solution of minimum norm *‖ x ‖₂* for underdetermined systems.
 
-If the factorization is , the function returns the least squares solution  for overdetermined systems.
+If the factorization is *A = QR*, the function returns the least squares solution *minₓ ‖ AX - B ‖₂* for overdetermined systems.
 
-If the factorization is [`SparseFactorizationCholeskyAtA`](sparsefactorizationcholeskyata.md), the factorization is of , and the solution that returns is for the system .
+If the factorization is [`SparseFactorizationCholeskyAtA`](sparsefactorizationcholeskyata.md), the factorization is of *AᵀA*, and the solution that returns is for the system *AᵀAX = B*.
 
 ## Parameters
 
-- `Factored`: The factorization of  .
+- `Factored`: The factorization of *A*.
 - `B`: The right-hand-side, B.
 - `X`: The matrix for returning solutions.
-- `workspace`: The scratch space of size          , where   is the number of right-hand-sides to find solutions for.
+- `workspace`: The scratch space of size [`solveWorkspaceRequiredStatic`](sparseopaquefactorization_float/solveworkspacerequiredstatic.md) `+` `nrhs` `*` [`solveWorkspaceRequiredPerRHS`](sparseopaquefactorization_float/solveworkspacerequiredperrhs.md), where *n_rhs* is the number of right-hand-sides to find solutions for.
 
 ## See Also
 
 - [func SparseSolve(SparseOpaqueFactorization_Double, DenseMatrix_Double, DenseMatrix_Double, UnsafeMutableRawPointer)](sparsesolve(_:_:_:_:)-7aj3g.md)
-  Solves the system  using the supplied double-precision factorization of , without any internal memory allocations.
+  Solves the system *AX = B* using the supplied double-precision factorization of *A*, without any internal memory allocations.
 
 
 ---

@@ -8,6 +8,10 @@ A Boolean value indicating whether your app may interact with USB devices.
 **Availability**:
 - macOS 10.7+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Use this key to allow your sandboxed app to interact with USB devices through USB device access APIs.

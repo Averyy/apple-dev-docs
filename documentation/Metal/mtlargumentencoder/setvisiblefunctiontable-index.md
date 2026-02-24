@@ -23,7 +23,7 @@ func setVisibleFunctionTable(_ visibleFunctionTable: (any MTLVisibleFunctionTabl
 ## Parameters
 
 - `visibleFunctionTable`: A visible-function table the method encodes.
-- `index`: The index of a visible-function table within the argument buffer.   The value corresponds to either the index ID of a declaration in   Metal Shading Language (MSL) or the   property of   an   instance.
+- `index`: The index of a visible-function table within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
 
 ## See Also
 

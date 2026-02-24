@@ -22,8 +22,8 @@ Before showing the menu, be sure to position it relative to the selection. See [
 
 ## Parameters
 
-- `menuVisible`:   if the menu should be shown,   if it should be hidden.
-- `animated`:   if the showing or hiding of the menu should be animated, otherwise  .
+- `menuVisible`: [`true`](https://developer.apple.com/documentation/Swift/true) if the menu should be shown, [`false`](https://developer.apple.com/documentation/Swift/false) if it should be hidden.
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) if the showing or hiding of the menu should be animated, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

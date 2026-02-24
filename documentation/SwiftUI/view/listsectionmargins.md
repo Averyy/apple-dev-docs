@@ -32,8 +32,8 @@ For sections that have headers or footers, the section margins are applied aroun
 
 ## Parameters
 
-- `edges`: The set of edges to pad for sections in this view. The   default is  .
-- `length`: An amount, given in points, to pad section on the   specified edges.
+- `edges`: The set of edges to pad for sections in this view. The default is [`all`](edge/set/all.md).
+- `length`: An amount, given in points, to pad section on the specified edges.
 
 ## See Also
 

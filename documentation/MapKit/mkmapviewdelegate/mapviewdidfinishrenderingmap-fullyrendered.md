@@ -26,7 +26,7 @@ This method lets you know when the map view finishes rendering all of the curren
 ## Parameters
 
 - `mapView`: The map view rendering its tiles.
-- `fullyRendered`: This parameter is   if the map view is able to render all tiles completely, or   if errors prevent the map view from rendering all tiles.
+- `fullyRendered`: This parameter is [`true`](https://developer.apple.com/documentation/Swift/true) if the map view is able to render all tiles completely, or [`false`](https://developer.apple.com/documentation/Swift/false) if errors prevent the map view from rendering all tiles.
 
 ## See Also
 

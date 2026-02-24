@@ -18,6 +18,10 @@ A custom HTTP header key field name.
 object Relay.Relay.AdditionalHTTPHeaderFields
 ```
 
+## Properties
+
+- `ANY` (string) *(required)*: The HTTP header field value for the corresponding header field name.
+
 
 ---
 

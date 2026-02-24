@@ -9,6 +9,10 @@ A list of FeliCa system codes that the app supports.
 - iOS 13.0+
 - iPadOS 13.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 Each system code must be a discrete value. The wild card value (0xFF) isn’t allowed.

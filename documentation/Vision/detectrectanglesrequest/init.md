@@ -20,7 +20,7 @@ init(_ revision: DetectRectanglesRequest.Revision? = nil)
 
 ## Parameters
 
-- `revision`: The specific algorithm or implementation revision that’s used to perform the   request.
+- `revision`: The specific algorithm or implementation revision that’s used to perform the request.
 
 
 ---

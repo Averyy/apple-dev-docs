@@ -23,7 +23,7 @@ The velocity of the translation gesture, in the space of the specified entity, i
 
 ## Parameters
 
-- `entity`: The entity in whose space the velocity of the translation gesture is computed.   A   entity will result in world space.
+- `entity`: The entity in whose space the velocity of the translation gesture is computed. A `nil` entity will result in world space.
 
 ## See Also
 

@@ -83,6 +83,10 @@ The system only allows installation of one profile of this type, and it requires
 - [object AutonomousSingleAppMode.AllowedApplicationsItem](autonomoussingleappmode/allowedapplicationsitem.md)
   A dictionary that specifies an app that can be granted access to the Accessibilty APIs.
 
+## Properties
+
+- `AllowedApplications` ([AutonomousSingleAppMode.AllowedApplicationsItem]) *(required)*: An array of dictionaries that specifies the apps that the system grants access to the Accessibility APIs.
+
 ## See Also
 
 - [object AppLock](applock.md)

@@ -26,7 +26,7 @@ The tab view customization is typically not added to `SceneStorage`, but instead
 
 ## Parameters
 
-- `wrappedValue`: The default value if the customization   is not available for the given key.
+- `wrappedValue`: The default value if the customization is not available for the given key.
 - `key`: A key used to save and restore the value.
 
 

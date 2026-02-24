@@ -25,7 +25,7 @@ This method uses `getNextDescriptorWithType` to fetch the next interface associa
 ## Parameters
 
 - `configurationDescriptor`: A configuration descriptor that contains the descriptors to iterate through.
-- `currentDescriptor`: A descriptor pointer within the bounds of the configuration descriptor, or  .
+- `currentDescriptor`: A descriptor pointer within the bounds of the configuration descriptor, or `NULL`.
 
 ## See Also
 

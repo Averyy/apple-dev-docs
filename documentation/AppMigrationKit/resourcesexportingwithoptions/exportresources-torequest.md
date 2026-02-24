@@ -22,7 +22,7 @@ Implement this method in your app extension to export files from your app to the
 
 ## Parameters
 
-- `archiver`: An archiver to receive files from your app. Call   with each item to export.
+- `archiver`: An archiver to receive files from your app. Call [`appendItem(at:pathInArchive:)`](resourcesarchiver/appenditem(at:pathinarchive:).md) with each item to export.
 - `request`: A request object that describes the destination of the migration.
 
 ## See Also

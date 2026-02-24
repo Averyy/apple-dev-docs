@@ -26,7 +26,7 @@ The character identifier of the given glyph info object.
 
 ## Parameters
 
-- `glyphInfo`: The glyph info from which to get the character identifier. May not be  .
+- `glyphInfo`: The glyph info from which to get the character identifier. May not be `NULL`.
 
 ## See Also
 

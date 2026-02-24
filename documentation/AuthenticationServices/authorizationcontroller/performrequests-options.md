@@ -30,7 +30,7 @@ The framework checks each authorization request in the array against the credent
 ## Parameters
 
 - `requests`: An array of supported authorization requests.
-- `options`: Additional options that customize the request’s behavior. For more information, see  .
+- `options`: Additional options that customize the request’s behavior. For more information, see [`ASAuthorizationController.RequestOptions`](asauthorizationcontroller/requestoptions.md).
 
 ## See Also
 

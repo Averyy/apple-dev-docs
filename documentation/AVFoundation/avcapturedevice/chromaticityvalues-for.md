@@ -29,7 +29,7 @@ Each change in the structure supports values between `1.0` and [`maxWhiteBalance
 
 ## Parameters
 
-- `whiteBalanceGains`: The white balance gain values. You can’t specify a value of  .
+- `whiteBalanceGains`: The white balance gain values. You can’t specify a value of [`currentWhiteBalanceGains`](avcapturedevice/currentwhitebalancegains.md).
 
 ## See Also
 

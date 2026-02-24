@@ -22,7 +22,7 @@ static var geoJSON: UTType { get }
 
 #### Discussion
 
- public.geojson
+**UTI:** public.geojson
 
 
 ---

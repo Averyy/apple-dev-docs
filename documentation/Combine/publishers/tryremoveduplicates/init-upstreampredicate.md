@@ -23,7 +23,7 @@ init(upstream: Upstream, predicate: @escaping (Publishers.TryRemoveDuplicates<Up
 ## Parameters
 
 - `upstream`: The publisher from which this publisher receives elements.
-- `predicate`: An error-throwing closure to evaluate whether two elements are equivalent, for purposes of filtering. Return   from this closure to indicate that the second element is a duplicate of the first. If this closure throws an error, the publisher terminates with the thrown error.
+- `predicate`: An error-throwing closure to evaluate whether two elements are equivalent, for purposes of filtering. Return `true` from this closure to indicate that the second element is a duplicate of the first. If this closure throws an error, the publisher terminates with the thrown error.
 
 
 ---

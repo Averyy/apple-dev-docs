@@ -20,7 +20,8 @@ Thickness of the given border, in points.
 
 ## Parameters
 
-- `edge`: The border whose thickness to get:
+- `edge`: The border whose thickness to get: - `NSMaxYEdge`: Top border.
+- `NSMinYEdge`: Bottom border.
 
 ## See Also
 

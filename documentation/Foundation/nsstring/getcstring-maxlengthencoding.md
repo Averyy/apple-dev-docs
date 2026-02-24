@@ -32,9 +32,9 @@ You can use [`canBeConverted(to:)`](nsstring/canbeconverted(to:).md) to check wh
 
 ## Parameters
 
-- `buffer`: Upon return, contains the converted C-string plus the   termination byte. The buffer must include room for   bytes.
-- `maxBufferCount`: The maximum number of bytes in the string to return in buffer (  the   termination byte).
-- `encoding`: The encoding for the returned C string. For possible values, see  .
+- `buffer`: Upon return, contains the converted C-string plus the `NULL` termination byte. The buffer must include room for `maxBufferCount` bytes.
+- `maxBufferCount`: The maximum number of bytes in the string to return in buffer (*including* the `NULL` termination byte).
+- `encoding`: The encoding for the returned C string. For possible values, see [`NSStringEncoding`](nsstringencoding.md).
 
 ## See Also
 

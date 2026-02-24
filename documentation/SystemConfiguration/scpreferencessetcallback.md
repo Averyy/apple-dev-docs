@@ -25,8 +25,8 @@ This function is called when the changes to the preferences have been committed 
 ## Parameters
 
 - `prefs`: The preferences session.
-- `callout`: The function to be called when the preferences have been changed or applied. If  , the current callback is removed.
-- `context`: The context associated with the callback function. See   for more information about this structure.
+- `callout`: The function to be called when the preferences have been changed or applied. If `NULL`, the current callback is removed.
+- `context`: The context associated with the callback function. See [`SCPreferencesContext`](scpreferencescontext.md) for more information about this structure.
 
 ## See Also
 

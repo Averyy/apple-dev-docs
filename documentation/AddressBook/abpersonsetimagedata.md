@@ -24,7 +24,7 @@ func ABPersonSetImageData(_ person: ABPersonRef!, _ imageData: CFData!) -> Bool
 ## Parameters
 
 - `person`: The person whose image data you wish to set.
-- `imageData`: The image data to use as the image for  .
+- `imageData`: The image data to use as the image for `person`.
 
 ## See Also
 

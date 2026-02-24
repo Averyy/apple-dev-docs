@@ -22,7 +22,7 @@ A gesture recognizer monitors events that occur in its view (and any subviews) b
 
 ## Parameters
 
-- `event`: An object encapsulating information about the tablet-point event. Tablet-point events describe the current state of a pointing device that is in proximity to its tablet, reflecting changes such as location, pressure, tilt, and rotation. For more information, see  .
+- `event`: An object encapsulating information about the tablet-point event. Tablet-point events describe the current state of a pointing device that is in proximity to its tablet, reflecting changes such as location, pressure, tilt, and rotation. For more information, see [`NSEvent`](nsevent.md).
 
 ## See Also
 

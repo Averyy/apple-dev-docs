@@ -22,6 +22,10 @@ func vvcbrtf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: UnsafeP
 
 ##### Parameters
 
+- **y**: (output) Output vector of size `*n`. `y[i]` is set to `cbrt(x[i])`.
+- **x**: (input) Input vector of size `*n`.
+- **n**: (input) The number of elements in the vectors `x` and `y`.
+
 ## See Also
 
 - [func vsinf(vFloat) -> vFloat](vsinf(_:).md)

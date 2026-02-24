@@ -27,6 +27,13 @@ A 1-pixel-high image containing the calculated histogram`.`
 
 This filter calculates histograms of the `red,``green,``blue,` and `alpha` colors for the specified area of an image. A base two-logarithm function is applied to the values before binning. The `count` property controls the number of bins (or width) of the histogram. The histogram is scaled so that all the values sum to `scale`.
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that specifies the subregion of the image you want to process.
+- **`scale`**: The scale value for the histogram values. If the scale is `1`, then the bins in the resulting image sum to `1`.
+- **`count`**: The number of bins for the histogram. This value determines the width of the output image. Minimum value `1`, and maximum value `2048`.
+- **`minimumStop`**: The minimum of the range of color channel values in the logarithmic histogram image. Defaults to `-10`.
+- **`maximumStop`**: The maximum of the range of color channel values in the logarithmic histogram image. Defaults to 4.
+
 The following code creates a filter that results in a 1-pixel-tall image with a width of 256. The pixel color components contain the logarithmic histogram values:
 
 ```swift

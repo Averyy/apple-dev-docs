@@ -18,14 +18,14 @@ Integrate hardware sensing features to produce augmented reality apps and games.
 
 #### Overview
 
- (AR) describes user experiences that add 2D or 3D elements to the live view from a device’s sensors in a way that makes those elements appear to inhabit the real world. ARKit combines device motion tracking, world tracking, scene understanding, and display conveniences to simplify building an AR experience.
+*Augmented reality* (AR) describes user experiences that add 2D or 3D elements to the live view from a device’s sensors in a way that makes those elements appear to inhabit the real world. ARKit combines device motion tracking, world tracking, scene understanding, and display conveniences to simplify building an AR experience.
 
 ![An illustration showing a robot and a futuristic greenhouse.](https://docs-assets.developer.apple.com/published/a5209042ade8072b9689305fab0840a9/arkit-hero%402x.png)
 
 ## Topics
 
 ### visionOS
-- [Setting up access to ARKit data](../visionOS/setting-up-access-to-arkit-data.md)
+- [Setting up access to ARKit data](../visionos/setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
 - [class ARKitSession](arkitsession.md)
   The main entry point for receiving data from ARKit.

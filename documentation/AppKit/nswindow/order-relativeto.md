@@ -16,8 +16,9 @@ func order(_ place: NSWindow.OrderingMode, relativeTo otherWin: Int)
 
 ## Parameters
 
-- `place`: -  : The window is removed from the screen list and   is ignored.
-- `otherWin`: The number of the window the window is to be placed in front of or behind. Pass   to place the window in front of (when   is  ) or behind (when   is  ) all other windows in its level.
+- `place`: - [`NSWindow.OrderingMode.out`](nswindow/orderingmode/out.md): The window is removed from the screen list and `otherWin` is ignored. - [`NSWindow.OrderingMode.above`](nswindow/orderingmode/above.md): The window is ordered immediately in front of the window whose window number is `otherWin`
+- [`NSWindow.OrderingMode.below`](nswindow/orderingmode/below.md): The window is placed immediately behind the window represented by `otherWin`.
+- `otherWin`: The number of the window the window is to be placed in front of or behind. Pass `0` to place the window in front of (when `place` is `NSWindowAbove`) or behind (when `place` is `NSWindowBelow`) all other windows in its level.
 
 ## See Also
 

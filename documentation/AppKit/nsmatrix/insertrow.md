@@ -22,7 +22,7 @@ If the number of rows or columns in the receiver has been changed with [`renewRo
 
 ## Parameters
 
-- `row`: The location at which to insert the new row. If this is greater than the number of rows in the receiver, enough rows are created to expand the receiver to be   rows high.
+- `row`: The location at which to insert the new row. If this is greater than the number of rows in the receiver, enough rows are created to expand the receiver to be `row` rows high.
 
 ## See Also
 

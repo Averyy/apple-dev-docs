@@ -303,6 +303,13 @@ You can configure a compatible macOS device to be both a controller and a device
 </plist>
 ```
 
+## Properties
+
+- `ControllerCACertificateUUIDs` ([string]): An array of payload UUIDs containing CA certificates that devices use to evaluate trust of controller certificates. This key configures the device to accept the [`LOMDeviceRequestCommand`](lomdevicerequestcommand.md) from MDM and then send it to the target device. This certificate must contain the Key Usage attributes of Digital Signature, Key Encipherment and Data Encipherment. As well as the Extended Key Usage attributes of Server Authentication and Client Authentication.
+- `ControllerCertificateUUID` (string): The UUID certificate for the LOM controller. This key configures the device to accept the [`LOMDeviceRequestCommand`](lomdevicerequestcommand.md) from MDM and then send it to the target device.
+- `DeviceCACertificateUUIDs` ([string]): An array of payload UUIDs containing CA certificates that controllers use to evaluate trust of device certificates.
+- `DeviceCertificateUUID` (string): The UUID certificate for the device. This key indicates the device can receive `PowerON`, `PowerOFF`, and `Reset` requests from a LOM controller. This certificate must contain the Key Usage attributes of Digital Signature, Key Encipherment and Data Encipherment. As well as the Extended Key Usage attributes of Server Authentication and Client Authentication.
+
 ## See Also
 
 - [object EducationConfiguration](educationconfiguration.md)

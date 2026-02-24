@@ -37,7 +37,7 @@ To add an environment resource to your Xcode project, see [`EnvironmentResource`
 ## Parameters
 
 - `name`: The image name without the file extension.
-- `bundle`: The bundle to search for the resource. Use   to indicate the app’s bundle.
+- `bundle`: The bundle to search for the resource. Use `nil` to indicate the app’s bundle.
 
 ## See Also
 

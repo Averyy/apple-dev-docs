@@ -25,8 +25,8 @@ A [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString
 
 ## Parameters
 
-- `alloc`: The   parameter to pass to  .
-- `string`: The   to copy into the new  .
+- `alloc`: The `alloc` parameter to pass to `CFStringCreate`.
+- `string`: The [`JSStringRef`](jsstringref.md) to copy into the new [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString).
 
 ## See Also
 

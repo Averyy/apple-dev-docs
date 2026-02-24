@@ -26,7 +26,7 @@ Metal takes a snapshot of the resources in the argument table when you make disp
 
 ## Parameters
 
-- `argumentTable`: A   to set on the command encoder.
+- `argumentTable`: A [`MTL4ArgumentTable`](mtl4argumenttable.md) to set on the command encoder.
 
 ## See Also
 

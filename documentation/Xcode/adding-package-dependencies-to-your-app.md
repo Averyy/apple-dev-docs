@@ -30,7 +30,11 @@ If you’ve added a source control account in Xcode’s settings and you haven�
 
 ##### Decide on Package Requirements
 
-When you enter the package dependency’s URL or pick a Swift package from the list of packages, choose one of three . Package requirements determine the allowed versions of the package dependency in your project, and Xcode updates your package dependency based on the requirement that you choose.
+When you enter the package dependency’s URL or pick a Swift package from the list of packages, choose one of three *package requirements*. Package requirements determine the allowed versions of the package dependency in your project, and Xcode updates your package dependency based on the requirement that you choose.
+
+- **Version**: Decide whether your project accepts updates to a package dependency up to the next major version or up to the next minor version. To be more restrictive, select a specific version range or an exact version. Major versions tend to have more significant changes than minor versions, and may require you to modify your code when they update. The version rule requires Swift packages to conform to semantic versioning. To learn more about the semantic versioning standard, visit [`Semantic Versioning 2.0.0`](https://developer.apple.comhttps://semver.org). Selecting the version requirement is the recommended way to add a package dependency. It allows you to create a balance between restricting changes and obtaining improvements and features.
+- **Branch**: Select the name of the branch for your package dependency to follow. Use branch-based dependencies when you’re developing multiple packages in tandem and don’t want to publish versions of your package dependencies.
+- **Commit**: Select the commit hash for your package dependency to follow. Choosing this option isn’t recommended, and you should only use this option in exceptional cases. While pinning your package dependency to a specific commit ensures that the package dependency doesn’t change and your code remains stable, you don’t receive any updates. If you worry about the stability of a remote package, consider one of the more restrictive options of the version-based requirement.
 
 After you choose a package requirement, Xcode resolves and fetches the package dependency. Select the package’s products that you need, and add them to targets in your project.
 
@@ -79,13 +83,13 @@ class ViewController: UIViewController {
 
 ##### Edit a Package Dependency
 
-You can’t edit the content of your package dependencies directly. If you want to make changes to a package dependency, you need to add it as a  to your project. See [`Editing a package dependency as a local package`](editing-a-package-dependency-as-a-local-package.md) to learn how you can override a package dependency with a local package and make edits.
+You can’t edit the content of your package dependencies directly. If you want to make changes to a package dependency, you need to add it as a *local package* to your project. See [`Editing a package dependency as a local package`](editing-a-package-dependency-as-a-local-package.md) to learn how you can override a package dependency with a local package and make edits.
 
 ##### Coordinate Package Versions Across Your Team
 
 When collaborating on a project, make sure everyone uses the same version of a package dependency. When you add a package dependency to a project, Xcode creates the `Package.resolved` file. It lists the specific Git commits to which each package dependency resolves and the [`checksum`](https://developer.apple.com/documentation/PackageDescription/Target/checksum) of each binary dependency. Commit this file in Git to ensure that everyone is using the same version of a package dependency.
 
-> 💡 **Tip**: You can find the `Package.resolved` file inside your .`xcodeproj` directory at `.xcodeproj/project.workspace/xcshareddata/swiftpm/Package.resolved`.
+> 💡 **Tip**: You can find the `Package.resolved` file inside your .`xcodeproj` directory at *[appName]*`.xcodeproj/project.workspace/xcshareddata/swiftpm/Package.resolved`.
 
 ##### Delete a Package Dependency
 

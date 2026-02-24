@@ -23,7 +23,7 @@ init(rank: Int, shape: UnsafeMutablePointer<UInt64>?)
 ## Parameters
 
 - `rank`: The rank of the tensor and number of elements in array shape.
-- `shape`: Array with a count of   that contains the sizes of each dimension.
+- `shape`: Array with a count of [`rank`](bnns_graph_shape_t/rank.md) that contains the sizes of each dimension.
 
 ## See Also
 

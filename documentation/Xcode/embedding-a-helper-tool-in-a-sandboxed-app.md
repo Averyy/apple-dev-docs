@@ -33,7 +33,7 @@ In the organizer, delete the new archive, just to reset to the original state.
 
 ##### Create the Helper Tool Target
 
-With the app target in the project building correctly, it’s time to create a helper tool target so you can embed its product into the app. To start, create a new target from the macOS > Command Line Tool template. Name this `ToolX`, where the  stands for .
+With the app target in the project building correctly, it’s time to create a helper tool target so you can embed its product into the app. To start, create a new target from the macOS > Command Line Tool template. Name this `ToolX`, where the *X* stands for *built with Xcode*.
 
 In the General tab of the tool target editor, clear the Deployment Target field. This configures the tool target to inherit its deployment target (macOS 10.15) from the project.
 
@@ -145,7 +145,7 @@ Create a new directory and change into it:
 % cd ToolC
 ```
 
-Here  stands for .
+Here *C* stands for *built with Clang*.
 
 Create a source file in the directory that looks like this:
 

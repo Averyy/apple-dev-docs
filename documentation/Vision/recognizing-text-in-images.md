@@ -10,7 +10,11 @@ One of Vision’s many powerful features is its ability to detect and recognize 
 
 Vision’s text-recognition capabilities operate using one of these paths:
 
+- **Fast**: The fast path uses the framework’s character-detection capabilities to find individual characters, and then uses a small machine learning model to recognize individual characters and words. This approach is similar to traditional optical character recognition (OCR).
+
 For example code using the fast path, see [`Extracting phone numbers from text in images`](extracting-phone-numbers-from-text-in-images.md).
+
+- **Accurate**: The accurate path uses a neural network to find text in terms of strings and lines, and then performs further analysis to find individual words and sentences. This approach is much more in line with how humans read text.
 
 For example code using the accurate path, see [`Structuring Recognized Text on a Document`](https://developer.apple.com/documentation/visionkit/structuring_recognized_text_on_a_document).
 

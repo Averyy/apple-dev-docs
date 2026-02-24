@@ -24,7 +24,7 @@ An array of dictionaries of labeled audio files. Each dictionary key is a label 
 
 ## Parameters
 
-- `proportions`: An array of proportions, each in the range  .
+- `proportions`: An array of proportions, each in the range `[0.0, 1.0]`.
 - `generator`: A random-number generator.
 
 ## See Also

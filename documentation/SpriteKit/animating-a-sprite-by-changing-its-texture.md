@@ -10,6 +10,25 @@ A sprite’s texture property points to its current texture. You can change this
 
 Because animation is a common task, you can use actions to animate a series of textures on a sprite. The following code shows how to use an array of frames created to animate a sprite’s texture.
 
+**Swift**:
+
+```swift
+let walkAnimation = SKAction.animate(with: monsterWalkTextures,
+                                     timePerFrame: 0.1)
+
+node.run(walkAnimation)
+// insert other code here to move the monster.
+```
+
+**Obj-C**:
+
+```objc
+SKAction *walkAnimation = [SKAction animateWithTextures:monsterWalkTextures timePerFrame:0.1]
+
+[monster runAction:walkAnimation];
+// insert other code here to move the monster.
+```
+
 SpriteKit provides you with the option of animating a sprite’s texture. It doesn’t impose a specific design on your animation system. This means you need to determine what kinds of animations a sprite may need and then design your own animation system to switch between those animations at runtime. For example, a monster might have walk, fight, idle, and death animation sequences—and it’s up to you to decide when to switch between these sequences.
 
 

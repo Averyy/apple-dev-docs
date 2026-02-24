@@ -29,7 +29,7 @@ You can use this method on any entity, but it’s particularly useful for orient
 - `target`: The target position to look at.
 - `position`: The new position of the entity.
 - `upVector`: The up direction of the entity after moving.
-- `referenceEntity`: The entity that defines a frame of reference. Set this to    to indicate world space.
+- `referenceEntity`: The entity that defines a frame of reference. Set this to `nil` to indicate world space.
 
 ## See Also
 

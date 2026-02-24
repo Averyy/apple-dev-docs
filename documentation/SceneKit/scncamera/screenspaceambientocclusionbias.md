@@ -22,7 +22,7 @@ var screenSpaceAmbientOcclusionBias: CGFloat { get set }
 
 #### Discussion
 
-Ambient occlusion is an effect that improves material shading by calculating the amounts of ambient light that reach various parts of a surface, creating shadows on parts of a geometry where incoming light is obscured by other parts of the geometry. (You can provide pre-rendered ambient occlusion effects for a material using its [`ambientOcclusion`](scnmaterial/ambientocclusion.md) property.)  (SSAO) provides a real-time approximation of this effect for the entire scene viewed through the camera.
+Ambient occlusion is an effect that improves material shading by calculating the amounts of ambient light that reach various parts of a surface, creating shadows on parts of a geometry where incoming light is obscured by other parts of the geometry. (You can provide pre-rendered ambient occlusion effects for a material using its [`ambientOcclusion`](scnmaterial/ambientocclusion.md) property.) *Screen-space ambient occlusion* (SSAO) provides a real-time approximation of this effect for the entire scene viewed through the camera.
 
 This [`screenSpaceAmbientOcclusionBias`](scncamera/screenspaceambientocclusionbias.md) value is used in an intermediate stage of calculating the SSAO effect, and measures a distance in scene units. Increasing or decreasing this value from its default of 0.03 can help to offset unrealistic effects produced by changing other SSAO settings.
 

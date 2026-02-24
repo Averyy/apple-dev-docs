@@ -20,7 +20,7 @@ You may apply this pointer style to a single view or a view hierarchy using the 
 
 ## Parameters
 
-- `directions`: The vertical directions in which a row can be   resized.
+- `directions`: The vertical directions in which a row can be resized.
 
 ## See Also
 

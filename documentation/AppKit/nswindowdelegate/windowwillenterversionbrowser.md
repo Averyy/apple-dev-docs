@@ -17,7 +17,7 @@ optional func windowWillEnterVersionBrowser(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: An   notification.
+- `notification`: An [`willEnterVersionBrowserNotification`](nswindow/willenterversionbrowsernotification.md) notification.
 
 ## See Also
 

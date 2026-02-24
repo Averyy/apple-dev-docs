@@ -40,7 +40,7 @@ If an error occurs, this function returns `NULL` and populates the object pointe
 
 - `url`: The URL.
 - `keys`: An array of property keys for the desired resource properties.
-- `error`: The error that occurred if one or more resource values could not be retrieved.  This parameter is optional. If you are not interested in receiving error information, you can pass  .
+- `error`: The error that occurred if one or more resource values could not be retrieved.  This parameter is optional. If you are not interested in receiving error information, you can pass `nil`.
 
 ## See Also
 

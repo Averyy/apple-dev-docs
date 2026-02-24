@@ -27,7 +27,7 @@ You can call this method repeatedly to create multiple PDFs, each of which has i
 ## Parameters
 
 - `url`: The URL where the complete PDF file is saved.
-- `actions`: A   closure that, when invoked by the renderer, executes a set of drawing instructions to create the output PDF.
+- `actions`: A [`UIGraphicsPDFRenderer.DrawingActions`](uigraphicspdfrenderer/drawingactions.md) closure that, when invoked by the renderer, executes a set of drawing instructions to create the output PDF.
 
 ## See Also
 

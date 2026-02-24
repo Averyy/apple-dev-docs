@@ -22,7 +22,7 @@ static func result<Value, Content>(value: Value, @ViewBuilder content: () -> Con
 
 ## Parameters
 
-- `value`: The value produced by the 
+- `value`: The value produced by the `AppIntent`
 - `content`: A custom View to display the result
 
 

@@ -6,6 +6,8 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
+---
+
 #### Overview
 
 Xcode 13.2.1 includes SDKs for iOS 15.2, iPadOS 15.2, tvOS 15.2, watchOS 8.3, and macOS Monterey 12.1. The Xcode 13.2.1 release supports on-device debugging for iOS 9 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 13.2.1 requires a Mac running macOS 11.3 Big Sur or later.

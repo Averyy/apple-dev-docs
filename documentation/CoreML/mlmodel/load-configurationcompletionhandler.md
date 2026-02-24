@@ -24,7 +24,7 @@ class func load(asset: MLModelAsset, configuration: MLModelConfiguration) async 
 
 - `asset`: The compiled model asset derived from in-memory or on-disk Core ML model.
 - `configuration`: The model configuration that holds options for loading the model.
-- `handler`: The completion handler invoked when the load completes. A valid   returns on success, or an error if failure.
+- `handler`: The completion handler invoked when the load completes. A valid [`MLModel`](mlmodel.md) returns on success, or an error if failure.
 
 ## See Also
 

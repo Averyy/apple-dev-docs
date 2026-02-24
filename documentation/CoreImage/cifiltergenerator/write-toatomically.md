@@ -25,7 +25,7 @@ Use this method to save your filter chain to a file for later use.
 ## Parameters
 
 - `aURL`: A  location for the file generator file.
-- `flag`: Pass   to specify that Core Image should create an interim file to avoid overwriting an existing file.
+- `flag`: Pass `true` to specify that Core Image should create an interim file to avoid overwriting an existing file.
 
 
 ---

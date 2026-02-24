@@ -28,7 +28,7 @@ The format of this dictionary is identical to that provided by the [`ARFaceAncho
 
 ## Parameters
 
-- `blendShapes`: A dictionary of blend shape coefficients describing a facial expression in terms of the positions of specific facial features. For any coefficient not specified in this dictionary, ARKit assumes a value of  .
+- `blendShapes`: A dictionary of blend shape coefficients describing a facial expression in terms of the positions of specific facial features. For any coefficient not specified in this dictionary, ARKit assumes a value of `0.0`.
 
 
 ---

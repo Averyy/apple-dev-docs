@@ -26,7 +26,7 @@ A decimal currency format style modified to use the specified presentation.
 
 ## Parameters
 
-- `p`: A currency presentation value, such as   or  .
+- `p`: A currency presentation value, such as [`isoCode`](currencyformatstyleconfiguration/presentation/isocode.md) or [`fullName`](currencyformatstyleconfiguration/presentation/fullname.md).
 
 ## See Also
 

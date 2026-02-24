@@ -29,8 +29,8 @@ Codec properties are classified as either global properties, which remain the sa
 
 ## Parameters
 
-- `inCodec`: An audio codec object. Because an audio codec object is a Component Manger component instance, you can use the Component Manager (for example, the functions   and OpenAComponent) to obtain an audio codec object.
-- `inPropertyID`: Property ID of the property whose value you want to set. Settable codec property IDs are listed in  .
+- `inCodec`: An audio codec object. Because an audio codec object is a Component Manger component instance, you can use the Component Manager (for example, the functions [`FindNextComponent`](https://developer.apple.com/documentation/coreservices/1516552-findnextcomponent) and OpenAComponent) to obtain an audio codec object.
+- `inPropertyID`: Property ID of the property whose value you want to set. Settable codec property IDs are listed in [`Instance Codec Properties`](1494111-instance-codec-properties.md).
 - `inPropertyDataSize`: Size in bytes of the property value data.
 - `inPropertyData`: Pointer to the data buffer containing the property value.
 

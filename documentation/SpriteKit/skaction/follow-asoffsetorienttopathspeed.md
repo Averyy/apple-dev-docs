@@ -33,8 +33,8 @@ This action is reversible; the resulting action creates a reversed path and then
 ## Parameters
 
 - `path`: A path to follow.
-- `offset`: If  , the points in the path are relative offsets to the node’s starting position. If  , the points in the node are absolute coordinate values.
-- `orient`: If  , the node’s   property animates so that the node turns to follow the path. If  , the   property of the node is unchanged.
+- `offset`: If [`true`](https://developer.apple.com/documentation/Swift/true), the points in the path are relative offsets to the node’s starting position. If [`false`](https://developer.apple.com/documentation/Swift/false), the points in the node are absolute coordinate values.
+- `orient`: If [`true`](https://developer.apple.com/documentation/Swift/true), the node’s [`zRotation`](sknode/zrotation.md) property animates so that the node turns to follow the path. If [`false`](https://developer.apple.com/documentation/Swift/false), the [`zRotation`](sknode/zrotation.md) property of the node is unchanged.
 - `speed`: The speed at which the node should move, in points per second.
 
 ## See Also

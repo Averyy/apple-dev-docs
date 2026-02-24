@@ -28,7 +28,7 @@ After receiving an instance of this type, use its methods to configure an XPC co
 
 ## Parameters
 
-- `configuration`: A type that contains the identity of the app extension and additional   configuration details. The initializer copies the information it needs from your configuration   structure and doesn’t maintain a reference to it.
+- `configuration`: A type that contains the identity of the app extension and additional configuration details. The initializer copies the information it needs from your configuration structure and doesn’t maintain a reference to it.
 
 ## See Also
 

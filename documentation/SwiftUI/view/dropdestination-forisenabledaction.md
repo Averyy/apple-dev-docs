@@ -52,7 +52,7 @@ func animateDrop(at: CGPoint) { ... }
 
 - `type`: The expected type of the dropped models.
 - `isEnabled`: The Boolean value indicating if the view accepts drop interactions.
-- `action`: A closure that takes the dropped content and responds   appropriately. The first parameter to   contains   the dropped items. The second parameter contains the drop session description.
+- `action`: A closure that takes the dropped content and responds appropriately. The first parameter to `action` contains the dropped items. The second parameter contains the drop session description.
 
 
 ---

@@ -22,8 +22,8 @@ init<C>(selection: Binding<SelectionValue>, @TabContentBuilder<SelectionValue> c
 
 ## Parameters
 
-- `selection`: The selection in the TabView. The value of this   binding must match the   of the tabs in  .
-- `content`: The   content.
+- `selection`: The selection in the TabView. The value of this binding must match the `value` of the tabs in `content`.
+- `content`: The [`Tab`](tab.md) content.
 
 ## See Also
 

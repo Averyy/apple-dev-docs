@@ -29,8 +29,8 @@ To add a method to a protocol using this function, the protocol must be under co
 - `proto`: The protocol you want to add a method to.
 - `name`: The name of the method you want to add.
 - `types`: A C string representing the signature of the method you want to add.
-- `isRequiredMethod`: A Boolean indicating whether the method is a required method of the   protocol. If  , the method is a required method; if  , the method is an optional method.
-- `isInstanceMethod`: A Boolean indicating whether the method is an instance method. If  , the method is an instance method; if  , the method is a class method.
+- `isRequiredMethod`: A Boolean indicating whether the method is a required method of the `proto` protocol. If [`YES`](yes.md), the method is a required method; if [`NO`](no.md), the method is an optional method.
+- `isInstanceMethod`: A Boolean indicating whether the method is an instance method. If [`YES`](yes.md), the method is an instance method; if [`NO`](no.md), the method is a class method.
 
 ## See Also
 

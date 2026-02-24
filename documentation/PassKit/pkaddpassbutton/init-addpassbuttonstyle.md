@@ -23,7 +23,7 @@ Returns a [`PKAddPassButton`](pkaddpassbutton.md) instance with the specified st
 
 ## Parameters
 
-- `style`: The button’s style. For a complete list of styles, see  .
+- `style`: The button’s style. For a complete list of styles, see [`PKAddPassButtonStyle`](pkaddpassbuttonstyle.md).
 
 
 ---

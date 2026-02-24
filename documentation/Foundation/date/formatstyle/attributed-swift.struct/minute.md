@@ -22,7 +22,7 @@ func minute(_ format: Date.FormatStyle.Symbol.Minute = .defaultDigits) -> Date.F
 
 ## Parameters
 
-- `format`: Set the symbol representation or pass   to remove it.
+- `format`: Set the symbol representation or pass `nil` to remove it.
 
 
 ---

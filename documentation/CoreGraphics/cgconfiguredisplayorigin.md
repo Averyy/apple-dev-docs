@@ -29,7 +29,7 @@ If you use this function to change the origin of a mirrored display, the mirrore
 
 ## Parameters
 
-- `config`: A display configuration that you acquire by calling  .
+- `config`: A display configuration that you acquire by calling [`CGBeginDisplayConfiguration(_:)`](cgbegindisplayconfiguration(_:).md).
 - `display`: The identifier of the display to configure.
 - `x`: The desired x-coordinate for the upper-left corner of the display.
 - `y`: The desired y-coordinate for the upper-left corner of the display.

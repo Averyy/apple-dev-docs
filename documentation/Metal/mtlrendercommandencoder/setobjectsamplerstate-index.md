@@ -26,8 +26,8 @@ By default, the sampler state at each index is `nil`.
 
 ## Parameters
 
-- `sampler`: An   instance the command assigns to an entry in the object shader argument table for sampler states.
-- `index`: An integer that represents the entry in the object argument table for sampler states that stores a record of  .
+- `sampler`: An [`MTLSamplerState`](mtlsamplerstate.md) instance the command assigns to an entry in the object shader argument table for sampler states.
+- `index`: An integer that represents the entry in the object argument table for sampler states that stores a record of `sampler`.
 
 ## See Also
 

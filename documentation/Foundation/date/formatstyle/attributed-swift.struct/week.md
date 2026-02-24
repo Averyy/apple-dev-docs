@@ -22,7 +22,7 @@ func week(_ format: Date.FormatStyle.Symbol.Week = .defaultDigits) -> Date.Forma
 
 ## Parameters
 
-- `format`: Set the symbol representation or pass   to remove it.
+- `format`: Set the symbol representation or pass `nil` to remove it.
 
 
 ---

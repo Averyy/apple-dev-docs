@@ -32,9 +32,9 @@ If your app is presenting the file’s contents to the user, it must have an act
 
 ## Parameters
 
-- `flag`:   to move the item to iCloud or   to remove it from iCloud (if it is there currently).
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) to move the item to iCloud or [`false`](https://developer.apple.com/documentation/Swift/false) to remove it from iCloud (if it is there currently).
 - `url`: The URL of the item (file or directory) that you want to store in iCloud.
-- `destinationURL`: When moving a file into iCloud, this is the location in iCloud at which to store the file or directory. This URL must be constructed from a URL returned by the   method, which you use to retrieve the desired iCloud container directory. The URL you specify may contain additional subdirectories so that you can organize your files hierarchically in iCloud. However, you are responsible for creating those intermediate subdirectories (using the   class) in your iCloud container directory. When moving a file  , this is the location on the local device.
+- `destinationURL`: When moving a file into iCloud, this is the location in iCloud at which to store the file or directory. This URL must be constructed from a URL returned by the [`url(forUbiquityContainerIdentifier:)`](filemanager/url(forubiquitycontaineridentifier:).md) method, which you use to retrieve the desired iCloud container directory. The URL you specify may contain additional subdirectories so that you can organize your files hierarchically in iCloud. However, you are responsible for creating those intermediate subdirectories (using the [`FileManager`](filemanager.md) class) in your iCloud container directory. When moving a file *out of iCloud*, this is the location on the local device.
 
 ## See Also
 

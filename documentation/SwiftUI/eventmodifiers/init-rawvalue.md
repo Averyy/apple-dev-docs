@@ -22,7 +22,7 @@ init(rawValue: Int)
 
 ## Parameters
 
-- `rawValue`: The raw value with which to create the key   modifier.
+- `rawValue`: The raw value with which to create the key modifier.
 
 ## See Also
 

@@ -42,9 +42,9 @@ Text("Rotation by passing an angle in degrees")
 ## Parameters
 
 - `angle`: The angle by which to rotate the content.
-- `axis`: The axis of rotation, specified as a tuple with named   elements for each of the three spatial dimensions.
-- `anchor`: A unit point within the content about which to perform   the rotation. The default value is  .
-- `perspective`: The relative vanishing point for the rotation. The   default is  .
+- `axis`: The axis of rotation, specified as a tuple with named elements for each of the three spatial dimensions.
+- `anchor`: A unit point within the content about which to perform the rotation. The default value is [`center`](unitpoint3d/center.md).
+- `perspective`: The relative vanishing point for the rotation. The default is `1`.
 
 ## See Also
 

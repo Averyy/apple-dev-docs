@@ -27,7 +27,7 @@ Don’t call this method yourself. The [`Start`](iouserhiddevice/start.md) metho
 
 ## Parameters
 
-- `provider`: The   provider for this object.
+- `provider`: The `IOService` provider for this object.
 
 ## See Also
 

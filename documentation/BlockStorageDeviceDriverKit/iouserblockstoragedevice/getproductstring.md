@@ -20,7 +20,7 @@ A value that indicates the get-product-string result. Return [`kIOReturnSuccess`
 
 ## Parameters
 
-- `product`: An in/out   parameter. On output, populate this structure with the product string.
+- `product`: An in/out [`DeviceString`](devicestring.md) parameter. On output, populate this structure with the product string.
 
 ## See Also
 

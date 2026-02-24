@@ -19,7 +19,7 @@ init(header: mach_msg_header_t, addr: UInt64, size: UInt64, value: UInt64, trail
 - `header`: The Mach message header.
 - `addr`: The address of the I/O write.
 - `size`: The size of the value written.
-- `value`: The value written to  .
+- `value`: The value written to `addr`.
 - `trailer`: The Mach message trailer.
 
 ## See Also

@@ -30,8 +30,8 @@ If `extension` is an empty string or `nil`, the returned pathname is the first o
 
 ## Parameters
 
-- `name`: If you specify  , the method returns the first resource file it finds with the specified extension.
-- `ext`: If   is an empty string or  , the extension is assumed not to exist and the file URL is the first file encountered that exactly matches  .
+- `name`: The name of the resource file. If you specify `nil`, the method returns the first resource file it finds with the specified extension.
+- `ext`: The extension of the resource file. If `extension` is an empty string or `nil`, the extension is assumed not to exist and the file URL is the first file encountered that exactly matches `name`.
 
 ## See Also
 

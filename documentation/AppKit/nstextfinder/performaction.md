@@ -28,7 +28,7 @@ When invoking the [`validateAction(_:)`](nstextfinder/validateaction(_:).md) and
 
 ## Parameters
 
-- `op`: The text finding action. See   for the possible values.
+- `op`: The text finding action. See [`NSTextFinder.Action`](nstextfinder/action.md) for the possible values.
 
 ## See Also
 

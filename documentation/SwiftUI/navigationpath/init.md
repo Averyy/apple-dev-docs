@@ -22,7 +22,7 @@ init(_ codable: NavigationPath.CodableRepresentation)
 
 ## Parameters
 
-- `codable`: A value describing the contents of the new path in a   serializable format.
+- `codable`: A value describing the contents of the new path in a serializable format.
 
 ## See Also
 

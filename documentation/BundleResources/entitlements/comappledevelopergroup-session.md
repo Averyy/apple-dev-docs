@@ -12,6 +12,12 @@ A Boolean value that indicates whether the app may implement shared group experi
 - tvOS 15.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
+**Default**: `YES`
+
 #### Discussion
 
 To add this entitlement to your app, enable the Group Activities capability in Xcode. This entitlement applies only to apps.

@@ -24,7 +24,7 @@ var wantsDepthOfField: Bool { get set }
 
 This value is [`false`](https://developer.apple.com/documentation/Swift/false) by default, disabling depth-of-field effects.
 
-Enabling this property causes SceneKit to render blur effects that model those created by a physical camera device (also known as ). That is, objects in the scene appear more or less blurry depending on their distance from the camera and the camera’s [`focusDistance`](scncamera/focusdistance.md), and the intensity and style of the blur effect depend on the [`fStop`](scncamera/fstop.md) and [`apertureBladeCount`](scncamera/aperturebladecount.md) properties.
+Enabling this property causes SceneKit to render blur effects that model those created by a physical camera device (also known as *bokeh*). That is, objects in the scene appear more or less blurry depending on their distance from the camera and the camera’s [`focusDistance`](scncamera/focusdistance.md), and the intensity and style of the blur effect depend on the [`fStop`](scncamera/fstop.md) and [`apertureBladeCount`](scncamera/aperturebladecount.md) properties.
 
 > **Note**:  For best results, also enable the [`wantsHDR`](scncamera/wantshdr.md) property when using depth-of-field effects. High Dynamic Range rendering provides high contrast for distant bright points in the scene, creating more pronounced bokeh effects.
 

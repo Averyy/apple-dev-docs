@@ -22,7 +22,7 @@ func argumentPosition(forFunction function: String? = nil, argument: String) -> 
 
 ## Parameters
 
-- `function`: The function. Specify as   if the graph only contains one function.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
 - `argument`: The name of the input or output argument.
 
 ## See Also

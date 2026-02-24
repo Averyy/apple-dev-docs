@@ -29,6 +29,11 @@ This method applies the stretch crop filter to an image. This effect distorts an
 
 The stretch crop filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`centerStretchAmount`**: A `float` representing the amount of stretching of the center of the image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`size`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the desired size of the output image.
+- **`cropAmount`**: A `float` representing the amount of cropping you apply to achieve the target size as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in a smaller image that’s distorted and cropped to be the defined size:
 
 ```swift

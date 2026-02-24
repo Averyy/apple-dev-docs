@@ -37,9 +37,9 @@ The `allocator` parameter controls vertex data allocation for the mesh. For exam
 - `radialSegments`: The number of points to generate around the horizontal circumference of the ellipsoid (that is, its cross-section in the xz-plane). A larger number of points increases rendering fidelity but decreases rendering performance.
 - `verticalSegments`: The number of points to generate along the height of the ellipsoid. A larger number of points increases rendering fidelity but decreases rendering performance.
 - `geometryType`: The type of geometric primitive — triangles or quads — from which to construct the mesh.
-- `inwardNormals`:   to generate normal vectors pointing toward the center of the ellipsoid;   to generate normal vectors pointing outward.
-- `hemisphere`:   to generate only the upper half of the ellipsoid or sphere (a dome);   to generate a complete ellipsoid or sphere.
-- `allocator`: An object responsible for allocating mesh vertex data. If  , Model I/O  uses an internal allocator object.
+- `inwardNormals`: [`true`](https://developer.apple.com/documentation/Swift/true) to generate normal vectors pointing toward the center of the ellipsoid; [`false`](https://developer.apple.com/documentation/Swift/false) to generate normal vectors pointing outward.
+- `hemisphere`: [`true`](https://developer.apple.com/documentation/Swift/true) to generate only the upper half of the ellipsoid or sphere (a dome); [`false`](https://developer.apple.com/documentation/Swift/false) to generate a complete ellipsoid or sphere.
+- `allocator`: An object responsible for allocating mesh vertex data. If `nil`, Model I/O  uses an internal allocator object.
 
 ## See Also
 

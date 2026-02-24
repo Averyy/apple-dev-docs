@@ -26,7 +26,7 @@ Use an [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) instance’s me
 
 ## Parameters
 
-- `dispatchType`: An   instance that indicates whether the compute pass the encoder creates runs commands serially or concurrently.
+- `dispatchType`: An [`MTLDispatchType`](mtldispatchtype.md) instance that indicates whether the compute pass the encoder creates runs commands serially or concurrently.
 
 ## See Also
 

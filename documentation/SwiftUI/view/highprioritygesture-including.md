@@ -55,7 +55,7 @@ struct HighPriorityGestureExample: View {
 ## Parameters
 
 - `gesture`: A gesture to attach to the view.
-- `mask`: A value that controls how adding this gesture to the view   affects other gestures recognized by the view and its subviews.   Defaults to  .
+- `mask`: A value that controls how adding this gesture to the view affects other gestures recognized by the view and its subviews. Defaults to [`all`](gesturemask/all.md).
 
 ## See Also
 

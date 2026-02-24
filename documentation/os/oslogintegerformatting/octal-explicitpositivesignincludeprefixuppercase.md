@@ -26,8 +26,8 @@ A custom octal format for integers.
 
 ## Parameters
 
-- `explicitPositiveSign`: A Boolean value that indicates whether to display a plus ( ) sign in front of positive integers.
-- `includePrefix`: A Boolean that indicates whether to include a leading   for octal numbers.
+- `explicitPositiveSign`: A Boolean value that indicates whether to display a plus (`+`) sign in front of positive integers.
+- `includePrefix`: A Boolean that indicates whether to include a leading `0o` for octal numbers.
 - `uppercase`: A Boolean value that indicates whether to uppercase numerals that are greater than 9.
 
 ## See Also

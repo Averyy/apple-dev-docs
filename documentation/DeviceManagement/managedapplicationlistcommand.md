@@ -25,6 +25,11 @@ object ManagedApplicationListCommand
 - [object ManagedApplicationListCommand.Command](managedapplicationlistcommand/command-data.dictionary.md)
   The command to get the status of all managed apps on a device.
 
+## Properties
+
+- `Command` (ManagedApplicationListCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object ManagedApplicationListResponse](managedapplicationlistresponse.md)

@@ -14,9 +14,9 @@ Recurrence is applicable to both calendar events and reminders. Unlike with recu
 
 You can create a recurrence rule with a simple daily, weekly, monthly, or yearly pattern using the [`init(recurrenceWith:interval:end:)`](ekrecurrencerule/init(recurrencewith:interval:end:).md) method. You provide three values to this method:
 
--  This is a value of type [`EKRecurrenceFrequency`](ekrecurrencefrequency.md) that indicates whether the recurrence rule is daily, weekly, monthly, or yearly.
--  This is an integer greater than `0` that specifies how often a pattern repeats. For example, if the recurrence rule is a weekly recurrence rule and its interval is `1`, then the pattern repeats every week. If the recurrence rule is a monthly recurrence rule and its interval is `3`, then the pattern repeats every three months.
--  This optional parameter is an instance of the [`EKRecurrenceEnd`](ekrecurrenceend.md) class, which indicates when the recurrence rule ends. The recurrence end can be based on a specific end date or on an amount of occurrences. If you don’t want to specify an end for the recurrence rule, pass `nil`.
+- **The recurrence frequency.** This is a value of type [`EKRecurrenceFrequency`](ekrecurrencefrequency.md) that indicates whether the recurrence rule is daily, weekly, monthly, or yearly.
+- **The recurrence interval.** This is an integer greater than `0` that specifies how often a pattern repeats. For example, if the recurrence rule is a weekly recurrence rule and its interval is `1`, then the pattern repeats every week. If the recurrence rule is a monthly recurrence rule and its interval is `3`, then the pattern repeats every three months.
+- **The recurrence end.** This optional parameter is an instance of the [`EKRecurrenceEnd`](ekrecurrenceend.md) class, which indicates when the recurrence rule ends. The recurrence end can be based on a specific end date or on an amount of occurrences. If you don’t want to specify an end for the recurrence rule, pass `nil`.
 
 ##### Create a Complex Rule
 

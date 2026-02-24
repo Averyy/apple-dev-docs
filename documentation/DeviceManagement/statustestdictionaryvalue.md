@@ -38,6 +38,10 @@ object StatusTestDictionaryValue
 - [object StatusTestDictionaryValueDictionaryObject](statustestdictionaryvaluedictionaryobject.md)
   A status value for the test status item dictionary.
 
+## Properties
+
+- `test.dictionary-value` (StatusTestDictionaryValueDictionaryObject) *(required)*: The test status dictionary value.
+
 ## See Also
 
 - [object StatusTestArrayValue](statustestarrayvalue.md)

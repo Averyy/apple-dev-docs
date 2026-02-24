@@ -26,7 +26,7 @@ An empty `SchedulerTimeType`.
 
 ## Parameters
 
-- `n`: The amount to advance by. The   ignores this value.
+- `n`: The amount to advance by. The `ImmediateScheduler` ignores this value.
 
 ## See Also
 

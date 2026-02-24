@@ -27,7 +27,7 @@ Use the implementation of your method to respond to any interrupts that occurred
 
 - `action`: The action object that handles the interrupt event.
 - `count`: The number of interrupts that occurred.
-- `time`: The time at which the interrupt occurred. The system collects this value using the   function.
+- `time`: The time at which the interrupt occurred. The system collects this value using the [`mach_absolute_time`](mach_absolute_time.md) function.
 
 ## See Also
 

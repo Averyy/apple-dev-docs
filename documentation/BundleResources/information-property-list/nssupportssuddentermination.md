@@ -8,6 +8,10 @@ A Boolean value indicating whether the system may terminate the app to log out o
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [LSGetAppDiedEvents](information-property-list/lsgetappdiedevents.md)

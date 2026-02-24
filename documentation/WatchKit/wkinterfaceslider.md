@@ -20,9 +20,33 @@ You configure the appearance of sliders in your storyboard file, including the i
 
 Do not subclass or create instances of this class yourself. Instead, define outlets in your interface controller class and connect them to the corresponding objects in your storyboard file. For example, to refer to a slider object in your interface, define a property with the following syntax in your interface controller class:
 
+**Swift**:
+
+```swift
+@IBOutlet weak var mySlider: WKInterfaceSlider!
+```
+
+**Objective-C**:
+
+```objc
+@property (weak, nonatomic) IBOutlet WKInterfaceSlider* mySlider;
+```
+
 During the initialization of your interface controller, WatchKit creates a new instance of this class and assigns it to your outlet. At that point, you can use the object in your outlet to make changes to the onscreen slider.
 
 When the user changes the value of a slider, WatchKit delivers the new value to the slider’s action method. The format of a slider’s action method is as follows:
+
+**Swift**:
+
+```swift
+@IBAction func sliderAction(value: Float)
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction)sliderAction:(float)value
+```
 
 Declare a method of this form in the interface controller class used to receive the slider’s new value. You can change the method name to anything you like. When configuring the slider in Xcode, connect its selector to your custom action method.
 

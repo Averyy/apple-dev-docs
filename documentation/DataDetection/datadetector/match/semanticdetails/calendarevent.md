@@ -22,7 +22,7 @@ case calendarEvent(DataDetector.Match.SemanticDetails.CalendarEvent)
 
 ## Parameters
 
-- `CalendarEvent`: A   structure.
+- `CalendarEvent`: A [`DataDetector.Match.SemanticDetails.CalendarEvent`](datadetector/match/semanticdetails/calendarevent.md) structure.
 
 
 ---

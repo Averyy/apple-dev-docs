@@ -26,11 +26,11 @@ func cblas_cdotu_sub(_ N: __LAPACK_int, _ X: OpaquePointer?, _ INCX: __LAPACK_in
 
 ## Parameters
 
-- `N`: The length of vectors   and  .
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
-- `Y`: Vector  .
-- `INCY`: Stride within  . For example, if   is 7, every 7th element is used.
+- `N`: The length of vectors `X` and `Y`.
+- `X`: Vector `X`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
+- `Y`: Vector `Y`.
+- `INCY`: Stride within `Y`. For example, if `incY` is 7, every 7th element is used.
 - `DOTU`: The result vector.
 
 ## See Also

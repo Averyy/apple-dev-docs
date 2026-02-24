@@ -27,7 +27,7 @@ In iOS, use a [`CLCircularRegion`](clcircularregion.md) object to manage geograp
 
 - `center`: The center point of the region.
 - `radius`: The distance (measured in meters) from the center point that marks the boundary of the region.
-- `identifier`: A unique identifier to associate with the region object. You use this identifier to differentiate regions within your application. This value must not be  .
+- `identifier`: A unique identifier to associate with the region object. You use this identifier to differentiate regions within your application. This value must not be `nil`.
 
 ## See Also
 

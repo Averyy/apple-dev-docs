@@ -28,21 +28,21 @@ This function automatically calls the function [`SecKeychainUnlock(_:_:_:_:)`](s
 
 ## Parameters
 
-- `keychain`: A reference to the keychain in which to store an Internet password. Pass   to specify the user’s default keychain.
-- `serverNameLength`: The length of the   character string.
+- `keychain`: A reference to the keychain in which to store an Internet password. Pass `NULL` to specify the user’s default keychain.
+- `serverNameLength`: The length of the `serverName` character string.
 - `serverName`: A UTF-8 encoded character string representing the server name.
-- `securityDomainLength`: The length of the   character string.
+- `securityDomainLength`: The length of the `securityDomain` character string.
 - `securityDomain`: A UTF-8 encoded character string representing the security domain. This parameter is optional. Pass NULL if the protocol does not require it.
-- `accountNameLength`: The length of the   character string.
+- `accountNameLength`: The length of the `accountName` character string.
 - `accountName`: A UTF-8 encoded character string representing the account name.
-- `pathLength`: The length of the   character string.
+- `pathLength`: The length of the `path` character string.
 - `path`: A UTF-8 encoded character string representing the path.
-- `port`: The TCP/IP port number. If no specific port number is associated with this password, pass  .
-- `protocol`: The protocol associated with this password. See   for a description of possible values.
-- `authenticationType`: The authentication scheme used. See   for a description of possible values. Pass the constant  , to specify the default authentication scheme.
-- `passwordLength`: The length of the   buffer.
+- `port`: The TCP/IP port number. If no specific port number is associated with this password, pass `0`.
+- `protocol`: The protocol associated with this password. See [`SecProtocolType`](secprotocoltype.md) for a description of possible values.
+- `authenticationType`: The authentication scheme used. See [`SecAuthenticationType`](secauthenticationtype.md) for a description of possible values. Pass the constant `kSecAuthenticationTypeDefault`, to specify the default authentication scheme.
+- `passwordLength`: The length of the `passwordData` buffer.
 - `passwordData`: A pointer to a buffer containing the password data to be stored in the keychain.
-- `itemRef`: On return, a pointer to a reference to the new keychain item. Pass   if you don’t want to obtain this object. You must allocate the memory for this pointer. You must call the   function to release this object when you are finished using it.
+- `itemRef`: On return, a pointer to a reference to the new keychain item. Pass `NULL` if you don’t want to obtain this object. You must allocate the memory for this pointer. You must call the `CFRelease` function to release this object when you are finished using it.
 
 
 ---

@@ -17,7 +17,7 @@ func render(using encoder: any MTLRenderCommandEncoder)
 
 ## Parameters
 
-- `encoder`: The   to use for rendering.
+- `encoder`: The `MTLRenderCommandEncoder` to use for rendering.
 
 ## See Also
 

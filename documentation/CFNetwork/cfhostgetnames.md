@@ -29,8 +29,8 @@ This function gets the names in a thread-safe way, but the resulting data is not
 
 ## Parameters
 
-- `theHost`: The host to examine. The host must have been previously resolved. (To resolve a host, call  .) This value must not be  .
-- `hasBeenResolved`: On return, contains   if names were available, otherwise  . This value may be  .
+- `theHost`: The host to examine. The host must have been previously resolved. (To resolve a host, call [`CFHostStartInfoResolution(_:_:_:)`](cfhoststartinforesolution(_:_:_:).md).) This value must not be `NULL`.
+- `hasBeenResolved`: On return, contains `TRUE` if names were available, otherwise `FALSE`. This value may be `NULL`.
 
 ## See Also
 

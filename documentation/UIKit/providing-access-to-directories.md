@@ -8,7 +8,7 @@ Use a document picker to access the content of a directory outside your app’s 
 
 In iOS 12 and earlier, users can open and interact with files outside the app’s container. The [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md) and [`UIDocumentPickerViewController`](uidocumentpickerviewcontroller.md) provide access to files in the system’s local file provider, in iCloud, or in third-party services that use a File Provider extension. Users can select multiple files at a time — but they need to select each file individually.
 
-In iOS 13, users can select a directory from any of the available file providers using a [`UIDocumentPickerViewController`](uidocumentpickerviewcontroller.md). The document picker returns a  for the directory that permits your app to access content outside its container. In this case, the URL lets your app recursively access the directory and all of its contents, which includes accessing any new items you add to the directory in the future. Your app can even save a bookmark for this URL, letting it access the directory the next time it launches.
+In iOS 13, users can select a directory from any of the available file providers using a [`UIDocumentPickerViewController`](uidocumentpickerviewcontroller.md). The document picker returns a *security-scoped URL* for the directory that permits your app to access content outside its container. In this case, the URL lets your app recursively access the directory and all of its contents, which includes accessing any new items you add to the directory in the future. Your app can even save a bookmark for this URL, letting it access the directory the next time it launches.
 
 ##### Ask the User to Select a Directory
 

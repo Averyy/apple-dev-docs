@@ -27,8 +27,8 @@ An absolute time value equal to the sum of `at` and `units`.
 ## Parameters
 
 - `at`: The absolute time to which the interval is added.
-- `tz`: The time zone to use for time correction. Pass   for GMT.
-- `units`: The time interval to add to  .
+- `tz`: The time zone to use for time correction. Pass `NULL` for GMT.
+- `units`: The time interval to add to `at`.
 
 ## See Also
 

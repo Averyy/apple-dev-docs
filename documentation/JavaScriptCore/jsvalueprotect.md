@@ -28,7 +28,7 @@ You can protect a value multiple times and must unprotect it an equal number of 
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `value`: The   to protect.
+- `value`: The [`JSValueRef`](jsvalueref.md) to protect.
 
 ## See Also
 

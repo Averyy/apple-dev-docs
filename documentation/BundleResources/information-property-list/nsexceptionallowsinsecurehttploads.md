@@ -11,6 +11,12 @@ A Boolean value indicating whether to allow insecure HTTP loads.
 - macOS 10.11+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 Set the value for this key to `YES` to allow insecure HTTP loads for the given domain, or to be able to loosen the server trust evaluation requirements for HTTPS connections to the domain, as described in [`Performing manual server trust authentication`](https://developer.apple.com/documentation/Foundation/performing-manual-server-trust-authentication).

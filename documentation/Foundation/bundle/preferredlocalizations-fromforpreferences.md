@@ -36,7 +36,7 @@ This method doesn’t return all localizations in order of user preference. To g
 ## Parameters
 
 - `localizationsArray`: An array of identifiers, each corresponding to a localization that a bundle can support.
-- `preferencesArray`: If this parameter is  , the method uses the current user’s language preferences.
+- `preferencesArray`: An array of BCP 47 language codes corresponding to a user’s preferred languages. If this parameter is `nil`, the method uses the current user’s language preferences.
 
 ## See Also
 

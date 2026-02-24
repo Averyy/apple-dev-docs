@@ -35,8 +35,8 @@ Every identifier in the [`BGTaskSchedulerPermittedIdentifiers`](https://develope
 ## Parameters
 
 - `identifier`: A string containing the identifier of the task.
-- `queue`: A queue for executing the task. Pass   to use a default background queue.
-- `launchHandler`: The system runs the block of code for the launch handler when it launches the app in the background. The block takes a single parameter, a   object used for assigning an expiration handler and for setting a completion status. The block has no return value.
+- `queue`: A queue for executing the task. Pass `nil` to use a default background queue.
+- `launchHandler`: The system runs the block of code for the launch handler when it launches the app in the background. The block takes a single parameter, a [`BGTask`](bgtask.md) object used for assigning an expiration handler and for setting a completion status. The block has no return value.
 
 ## See Also
 

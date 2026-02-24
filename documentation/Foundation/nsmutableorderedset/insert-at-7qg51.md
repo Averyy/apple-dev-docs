@@ -27,7 +27,7 @@ If the object is already a member, this method has no effect. If the specified i
 ## Parameters
 
 - `object`: The object to insert into the set’s content.
-- `idx`: The index in the mutable ordered set at which to insert  . This value must not be greater than the count of elements in the array.
+- `idx`: The index in the mutable ordered set at which to insert `object`. This value must not be greater than the count of elements in the array. > ❗ **Important**:  Important: Raises an [`rangeException`](nsexceptionname/rangeexception.md) if `idx` is greater than the number of elements in the mutable ordered set.
 
 ## See Also
 

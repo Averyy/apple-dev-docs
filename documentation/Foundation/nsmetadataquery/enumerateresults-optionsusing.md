@@ -26,7 +26,7 @@ This method disables the query at the start of the iteration and reenables it up
 
 ## Parameters
 
-- `opts`: Options for the enumeration. For a complete list of options, see  .
+- `opts`: Options for the enumeration. For a complete list of options, see [`NSEnumerationOptions`](nsenumerationoptions.md).
 - `block`: The block to execute for each current result.
 
 ## See Also

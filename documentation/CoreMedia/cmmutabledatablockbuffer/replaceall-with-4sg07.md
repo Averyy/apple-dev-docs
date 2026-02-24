@@ -22,7 +22,7 @@ mutating func replaceAll(with bytes: UnsafeRawBufferPointer)
 
 ## Parameters
 
-- `bytes`: The replacement data. This must have the same   as the block buffer.
+- `bytes`: The replacement data. This must have the same `count` as the block buffer.
 
 
 ---

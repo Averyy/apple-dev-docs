@@ -26,7 +26,7 @@ In versions of iOS prior to version 3.0, this method is called only when the sel
 
 ## Parameters
 
-- `tabBarController`: The tab bar controller containing  .
+- `tabBarController`: The tab bar controller containing `viewController`.
 - `viewController`: The view controller that the user selected. In iOS v3.0 and later, this could be the same view controller that was already selected.
 
 ## See Also

@@ -36,7 +36,7 @@ By default, VoiceOver voices punctuation based on surrounding context.
 
 ## Parameters
 
-- `value`: A Boolean value that you set to   if   VoiceOver should speak all punctuation in the text. Defaults to  .
+- `value`: A Boolean value that you set to `true` if VoiceOver should speak all punctuation in the text. Defaults to `true`.
 
 ## See Also
 

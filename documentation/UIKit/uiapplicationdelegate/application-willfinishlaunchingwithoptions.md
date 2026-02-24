@@ -42,7 +42,7 @@ In some cases, a person launches your app with a Home Screen quick action. To en
 ## Parameters
 
 - `application`: The singleton app object.
-- `launchOptions`: A dictionary indicating the reason the person or system launched the app. The contents of this dictionary may be empty in situations where a person launched the app directly. If the app supports scenes, this is  . For information about the possible keys in this dictionary and how to handle them, see  .
+- `launchOptions`: A dictionary indicating the reason the person or system launched the app. The contents of this dictionary may be empty in situations where a person launched the app directly. If the app supports scenes, this is `nil`. For information about the possible keys in this dictionary and how to handle them, see [`UIApplication.LaunchOptionsKey`](uiapplication/launchoptionskey.md).
 
 ## See Also
 

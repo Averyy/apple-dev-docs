@@ -21,7 +21,7 @@ This method clears the specified ranges in the resource’s buffer cache by writ
 ## Parameters
 
 - `rangesToClear`: The metadata ranges to clear.
-- `withDelayedWrites`: A Boolean value that determines whether to perform the clear operation with delayed writes. The delay works in the same manner as  . When using delayed writes, the client can flush the metadata with   or  . The system also flushes stale data in the buffer cache periodically.
+- `withDelayedWrites`: A Boolean value that determines whether to perform the clear operation with delayed writes. The delay works in the same manner as [`delayedMetadataWriteFrom:startingAt:length:error:`](fsblockdeviceresource/delayedmetadatawritefrom:startingat:length:error:.md). When using delayed writes, the client can flush the metadata with [`metadataFlush()`](fsblockdeviceresource/metadataflush().md) or [`asynchronousMetadataFlush()`](fsblockdeviceresource/asynchronousmetadataflush().md). The system also flushes stale data in the buffer cache periodically.
 
 ## See Also
 

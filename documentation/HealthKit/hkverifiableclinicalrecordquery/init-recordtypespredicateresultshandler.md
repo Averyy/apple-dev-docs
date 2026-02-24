@@ -21,8 +21,10 @@ init(recordTypes: [String], predicate: NSPredicate?, resultsHandler: @escaping @
 ## Parameters
 
 - `recordTypes`: The types of records that the query returns.
-- `predicate`: A predicate that limits the results that they query returns. Pass   to receive all records of the specified type.
-- `resultsHandler`: This block takes the following parameters:
+- `predicate`: A predicate that limits the results that they query returns. Pass `nil` to receive all records of the specified type.
+- `resultsHandler`: A block that the HealthKit store calls after it finishes executing the query. This block takes the following parameters: - **`query`**: A reference to the query that called this block.
+- **`records`**: An array containing the verifiable health records found by the query, or `nil` if an error occurs.
+- **`error`**: If an error occurs, an object describing the error; otherwise, it’s `nil`.
 
 ## See Also
 

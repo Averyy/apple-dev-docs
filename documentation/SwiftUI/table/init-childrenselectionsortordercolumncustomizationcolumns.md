@@ -26,7 +26,7 @@ Each column in the table that should participate in customization is required to
 ## Parameters
 
 - `data`: The identifiable data for computing the table rows.
-- `children`: A key path to a property whose non-  value gives the   children of  , and whose   value represents a leaf row of   the hierarchy, which is not capable of having children.
+- `children`: A key path to a property whose non-`nil` value gives the children of `data`, and whose `nil` value represents a leaf row of the hierarchy, which is not capable of having children.
 - `selection`: A binding to a set that identifies selected rows IDs.
 - `sortOrder`: A binding to the ordered sorting of columns.
 - `columnCustomization`: A binding to the state of columns.

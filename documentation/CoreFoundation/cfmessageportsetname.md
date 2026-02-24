@@ -31,7 +31,7 @@ Other threads and processes can connect to a named message port with [`CFMessage
 ## Parameters
 
 - `ms`: The local message port to examine.
-- `newName`: The new name for  .
+- `newName`: The new name for `ms`.
 
 ## See Also
 

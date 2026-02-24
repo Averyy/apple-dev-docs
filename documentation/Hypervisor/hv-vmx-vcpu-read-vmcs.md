@@ -25,8 +25,8 @@ func hv_vmx_vcpu_read_vmcs(_ vcpu: hv_vcpuid_t, _ field: UInt32, _ value: Unsafe
 ## Parameters
 
 - `vcpu`: The ID of the vCPU.
-- `field`: The ID of the VMCS field. For a list of possible values, see   .
-- `value`: The value from  , on output.
+- `field`: The ID of the VMCS field. For a list of possible values, see  [`Virtual Machine Control Structure (VMCS) Field IDs`](virtual-machine-control-structure-vmcs-field-ids.md).
+- `value`: The value from `field`, on output.
 
 ## See Also
 

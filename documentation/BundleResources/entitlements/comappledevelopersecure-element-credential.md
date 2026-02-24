@@ -9,6 +9,12 @@ A Boolean value that indicates whether your app can use the SecureElementCredent
 - iOS 18.1+
 - iPadOS 18.1+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 ## See Also
 
 - [com.apple.developer.secure-element-credential.default-contactless-app](entitlements/com.apple.developer.secure-element-credential.default-contactless-app.md)

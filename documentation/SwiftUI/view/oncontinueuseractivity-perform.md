@@ -33,8 +33,8 @@ UI frameworks traditionally pass Universal Links to your app using a user activi
 
 ## Parameters
 
-- `activityType`: The type of activity that the   closure   handles. Be sure that this string matches one of the values that   you list in the     array in your app’s Information Property List.
-- `action`: A closure that SwiftUI calls when your app receives a user   activity of the specified type. The closure takes the activity as   an input parameter.
+- `activityType`: The type of activity that the `action` closure handles. Be sure that this string matches one of the values that you list in the [`NSUserActivityTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSUserActivityTypes) array in your app’s Information Property List.
+- `action`: A closure that SwiftUI calls when your app receives a user activity of the specified type. The closure takes the activity as an input parameter.
 
 ## See Also
 

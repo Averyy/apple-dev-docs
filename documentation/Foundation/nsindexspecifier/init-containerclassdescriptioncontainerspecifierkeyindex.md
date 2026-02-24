@@ -28,7 +28,7 @@ Invokes the super class’s [`init(containerClassDescription:containerSpecifier:
 - `classDesc`: Description for the container of the collection.
 - `container`: Container of the collection.
 - `property`: Name of the collection.
-- `index`: The object within the   collection the index specifier is to identify.
+- `index`: The object within the `key` collection the index specifier is to identify.
 
 ## See Also
 

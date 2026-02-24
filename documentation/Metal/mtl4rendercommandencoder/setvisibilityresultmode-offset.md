@@ -26,8 +26,8 @@ You use the `mode` parameter to enable or disable the visibility test, and deter
 
 ## Parameters
 
-- `mode`: A   that configures which visibility test results   the render pass saves to a buffer, or disables visibility testing.
-- `offset`: A location, in bytes, relative to the start of    The GPU stores   the result of a visibility test at  , which needs to be a multiple of  .
+- `mode`: A [`MTLVisibilityResultMode`](mtlvisibilityresultmode.md) that configures which visibility test results the render pass saves to a buffer, or disables visibility testing.
+- `offset`: A location, in bytes, relative to the start of [`visibilityResultBuffer`](mtl4renderpassdescriptor/visibilityresultbuffer.md) The GPU stores the result of a visibility test at `offset`, which needs to be a multiple of `8`.
 
 
 ---

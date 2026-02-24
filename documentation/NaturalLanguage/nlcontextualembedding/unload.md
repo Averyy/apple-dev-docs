@@ -3,7 +3,7 @@
 **Framework**: Natural Language  
 **Kind**: method
 
-Unloads the embedding model.
+The instance method that unloads the embedding model.
 
 **Availability**:
 - iOS 17.0+
@@ -23,7 +23,7 @@ func unload()
 ## See Also
 
 - [func load() throws](nlcontextualembedding/load.md)
-  Loads the embedding model.
+  The instance method that loads the embedding model.
 
 
 ---

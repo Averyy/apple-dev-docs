@@ -89,7 +89,7 @@ If `objects` or `indexes` is `nil`, this method will raises an exception.
 ## Parameters
 
 - `objects`: An array of objects to insert into the receiving array.
-- `indexes`: The indexes at which the objects in   should be inserted. The count of locations in   must equal the count of  . For more details, see the Discussion.
+- `indexes`: The indexes at which the objects in `objects` should be inserted. The count of locations in `indexes` must equal the count of `objects`. For more details, see the Discussion.
 
 ## See Also
 

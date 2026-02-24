@@ -34,7 +34,7 @@ The method may produce an error if the GPU driver has exhausted its underlying r
 
 ## Parameters
 
-- `descriptor`: An   instance.
+- `descriptor`: An [`MTLCounterSampleBufferDescriptor`](mtlcountersamplebufferdescriptor.md) instance.
 
 ## See Also
 

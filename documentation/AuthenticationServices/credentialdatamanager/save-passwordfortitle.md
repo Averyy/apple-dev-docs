@@ -24,7 +24,7 @@ This functionality is equivalent to the saving behavior that occurs when submitt
 
 > **Note**: `ASAuthorizationError` if the system failed to accept the update.
 
-> **Note**: The scope’s URL must be listed as an associated domain for Web Credentials for the current app  the app must have the `com.apple.developer.web-browser` entitlement.
+> **Note**: The scope’s URL must be listed as an associated domain for Web Credentials for the current app *or* the app must have the `com.apple.developer.web-browser` entitlement.
 
 ## Parameters
 

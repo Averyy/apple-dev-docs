@@ -9,6 +9,10 @@ A key that defines a URL that AdAttributionKit uses to deliver copies of ad attr
 - iOS 17.4+
 - iPadOS 17.4+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Use this key to specify a URL to receive copies of postbacks. For more information, see [`Configuring an advertised app`](https://developer.apple.com/documentation/AdAttributionKit/configuring-an-advertised-app).

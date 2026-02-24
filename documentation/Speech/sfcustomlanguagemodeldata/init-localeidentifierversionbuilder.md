@@ -25,7 +25,7 @@ The `SFCustomLanguageModelData` class accumulates language model training and cu
 
 ## Parameters
 
-- `locale`: The region and language of the training data (must match with the locale used to construct the   later)
+- `locale`: The region and language of the training data (must match with the locale used to construct the `SFSpeechRecognizer` later)
 - `identifier`: Used to uniquely identify the resulting language model on the device where it will be processed
 - `version`: Used to distinguish different versions of the language model on the device where it will be processed
 - `builder`: A DataInsertableBuilder object that yields DataInsertable objects

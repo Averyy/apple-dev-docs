@@ -19,7 +19,7 @@ For more information about the languages and locales that Apple Intelligence sup
 
 #### Prompt the Model in the Language You Prefer
 
-Write your app’s built-in prompts in the language with which you normally write code, if Apple Intelligence supports that language. Translate your prompts into a supported language if your preferred language isn’t supported. In the code below,  inputs need to be in supported language for the model to understand, including all `Generable` types and descriptions:
+Write your app’s built-in prompts in the language with which you normally write code, if Apple Intelligence supports that language. Translate your prompts into a supported language if your preferred language isn’t supported. In the code below, *all* inputs need to be in supported language for the model to understand, including all `Generable` types and descriptions:
 
 ```swift
 @Generable(description: "Basic profile information about a cat")
@@ -71,7 +71,7 @@ If your app supports languages or locales that Apple Intelligence doesn’t, hel
 
 #### Use Instructions to Set the Locale and Language
 
-For locales other than United States English, you can improve response quality by telling the model which locale to use by detailing a set of [`Instructions`](instructions.md). Start with the  phrase in English. This special phrase comes from the model’s training, and reduces the possibility of hallucinations in multilingual situations:
+For locales other than United States English, you can improve response quality by telling the model which locale to use by detailing a set of [`Instructions`](instructions.md). Start with the *exact* phrase in English. This special phrase comes from the model’s training, and reduces the possibility of hallucinations in multilingual situations:
 
 ```swift
 func localeInstructions(for locale: Locale = Locale.current) -> String {

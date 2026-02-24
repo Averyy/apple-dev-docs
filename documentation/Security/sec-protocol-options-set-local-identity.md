@@ -24,8 +24,8 @@ Set the local identity to be used for this protocol instance.
 
 ## Parameters
 
-- `options`: A   instance.
-- `identity`: A   instance carrying the private key and certificate.
+- `options`: A `sec_protocol_options_t` instance.
+- `identity`: A `sec_identity_t` instance carrying the private key and certificate.
 
 
 ---

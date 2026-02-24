@@ -41,7 +41,8 @@ After you get the identifier, you call the [`attestKey(_:clientDataHash:completi
 
 ## Parameters
 
-- `completionHandler`: A closure that the method calls upon completion with   the following parameters:
+- `completionHandler`: A closure that the method calls upon completion with the following parameters: - `keyId`:  An identifier that you use to refer to the key. The framework securely stores the key in the Secure Enclave.
+- `error`:  A [`DCError`](dcerror-swift.struct.md) instance that indicates the reason for failure, or `nil` on success.
 
 ## See Also
 

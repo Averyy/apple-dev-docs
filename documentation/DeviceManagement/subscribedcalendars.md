@@ -72,6 +72,15 @@ Specify `com.apple.subscribedcalendar.account` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `SubCalAccountDescription` (string): The description of the account.
+- `SubCalAccountHostName` (string) *(required)*: The server’s address.
+- `SubCalAccountPassword` (string): The user’s password.
+- `SubCalAccountUsername` (string): The user’s user name.
+- `SubCalAccountUseSSL` (boolean): If `true`, the system enables SSL.
+- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+
 ## See Also
 
 - [object Accounts](accounts.md)

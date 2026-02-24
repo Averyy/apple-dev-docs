@@ -53,7 +53,7 @@ Text("Purple border outside the view bounds.")
 
 ## Parameters
 
-- `content`: A value that conforms to the   protocol,   like a   or  , that SwiftUI   uses to fill the border.
+- `content`: A value that conforms to the [`ShapeStyle`](shapestyle.md) protocol, like a [`Color`](color.md) or [`HierarchicalShapeStyle`](hierarchicalshapestyle.md), that SwiftUI uses to fill the border.
 - `width`: The thickness of the border. The default is 1 pixel.
 
 ## See Also

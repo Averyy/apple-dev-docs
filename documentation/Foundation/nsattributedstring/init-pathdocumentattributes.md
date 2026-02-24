@@ -25,7 +25,7 @@ The contents of `path` will be examined to best load the file in whatever format
 ## Parameters
 
 - `path`: The path to an RTF or RTFD file.
-- `dict`: An in-out dictionary containing document-level attributes described in  . May be  , in which case no document attributes are returned.
+- `dict`: An in-out dictionary containing document-level attributes described in `Document Attributes`. May be `NULL`, in which case no document attributes are returned.
 
 ## See Also
 

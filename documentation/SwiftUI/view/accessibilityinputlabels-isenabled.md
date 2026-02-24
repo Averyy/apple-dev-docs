@@ -30,7 +30,7 @@ Provide labels in descending order of importance. Voice Control and Full Keyboar
 ## Parameters
 
 - `inputLabelKeys`: The accessibility input labels to apply.
-- `isEnabled`: If true the accessibility input labels are applied;   otherwise the accessibility input labels are unchanged.
+- `isEnabled`: If true the accessibility input labels are applied; otherwise the accessibility input labels are unchanged.
 
 ## See Also
 

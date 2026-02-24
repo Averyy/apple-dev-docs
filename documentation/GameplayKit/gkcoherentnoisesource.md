@@ -21,7 +21,7 @@ class GKCoherentNoiseSource
 
 #### Overview
 
-In general,  is randomness across a (one-, two-, three-, or many-dimensional) domain—for example, you can create noise by filling an image with values from a random number generator. Unlike such truly random noise,  is consistent and smooth: you can always generate the same output from a specific seed value, and small variations across the domain create only small variations in noise values.
+In general, *noise* is randomness across a (one-, two-, three-, or many-dimensional) domain—for example, you can create noise by filling an image with values from a random number generator. Unlike such truly random noise, *coherent noise* is consistent and smooth: you can always generate the same output from a specific seed value, and small variations across the domain create only small variations in noise values.
 
 You don’t instantiate or work directly with this class. Instead, the concrete subclasses of [`GKCoherentNoiseSource`](gkcoherentnoisesource.md) each provide a different style of coherent noise.
 

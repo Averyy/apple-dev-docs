@@ -8,7 +8,7 @@ Initialize your app’s data structures, prepare your app to run, and respond to
 
 The system launches your app when the user taps your app’s icon on the Home Screen. If your app requested specific events, the system might also launch your app in the background to handle those events.
 
-All apps have an associated process and at least one scene, which the [`UIApplication`](uiapplication.md) and [`UIScene`](uiscene.md) objects represent. Apps also have an  — an object that conforms to the [`UIApplicationDelegate`](uiapplicationdelegate.md) protocol — which responds to important events happening within that process. Even an app that implements the scene life cycle uses an app delegate to manage fundamental events like launch and termination. At launch time, UIKit automatically creates the [`UIApplication`](uiapplication.md) object and your app delegate. It then starts your app’s main event loop before connecting to one or more of your app’s scenes.
+All apps have an associated process and at least one scene, which the [`UIApplication`](uiapplication.md) and [`UIScene`](uiscene.md) objects represent. Apps also have an *app delegate object* — an object that conforms to the [`UIApplicationDelegate`](uiapplicationdelegate.md) protocol — which responds to important events happening within that process. Even an app that implements the scene life cycle uses an app delegate to manage fundamental events like launch and termination. At launch time, UIKit automatically creates the [`UIApplication`](uiapplication.md) object and your app delegate. It then starts your app’s main event loop before connecting to one or more of your app’s scenes.
 
 ##### Provide a Launch Storyboard
 

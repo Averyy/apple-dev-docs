@@ -31,7 +31,7 @@ The method throws an error (Swift) or returns an error (Objective-C) if the anal
 ## Parameters
 
 - `request`: A sound analysis request.
-- `observer`: An   instance that receives the analyzer’s results. The analyzer maintains a weak reference to the observer.
+- `observer`: An [`SNResultsObserving`](snresultsobserving.md) instance that receives the analyzer’s results. The analyzer maintains a weak reference to the observer.
 
 ## See Also
 

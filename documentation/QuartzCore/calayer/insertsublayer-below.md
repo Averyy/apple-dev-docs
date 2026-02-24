@@ -26,7 +26,7 @@ If `sublayer` is not in the receiver’s [`sublayers`](calayer/sublayers.md) arr
 ## Parameters
 
 - `layer`: The sublayer to be inserted into the current layer.
-- `sibling`: An existing sublayer in the current layer. The layer in   is inserted before this layer in the   array, and thus appears behind it visually.
+- `sibling`: An existing sublayer in the current layer. The layer in `aLayer` is inserted before this layer in the [`sublayers`](calayer/sublayers.md) array, and thus appears behind it visually.
 
 ## See Also
 

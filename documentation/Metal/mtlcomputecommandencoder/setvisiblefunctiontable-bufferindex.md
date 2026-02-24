@@ -22,7 +22,7 @@ func setVisibleFunctionTable(_ visibleFunctionTable: (any MTLVisibleFunctionTabl
 
 ## Parameters
 
-- `visibleFunctionTable`: The   to bind.
+- `visibleFunctionTable`: The [`MTLVisibleFunctionTable`](mtlvisiblefunctiontable.md) to bind.
 - `bufferIndex`: The index the function table binds to in the buffer argument table.
 
 ## See Also

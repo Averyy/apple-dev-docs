@@ -1,4 +1,4 @@
-# tvOS 26.4 Beta Release Notes
+# tvOS 26.4 Beta 2 Release Notes
 
 **Framework**: tvOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The tvOS 26.4 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 26.4 beta. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
+The tvOS 26.4 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 26.4 beta 2. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
 
 ##### Background Assets
 
@@ -17,7 +17,7 @@ The tvOS 26.4 SDK provides support to develop tvOS apps for Apple TV devices run
 
 ###### Known Issues
 
-- Apps might crash when downloading asset packs.  (169648111)  If an app crashes due to this issue, then relaunch it. The app should then have local access to the asset pack that it was downloading when it crashed.
+- Apps might crash when downloading asset packs.  (169648111) **Workaround:** If an app crashes due to this issue, then relaunch it. The app should then have local access to the asset pack that it was downloading when it crashed.
 
 ##### Networking
 
@@ -31,6 +31,10 @@ The tvOS 26.4 SDK provides support to develop tvOS apps for Apple TV devices run
 
 - New fields [`revocationType`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/revocationtype-swift.property) and [`revocationPercentage`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/revocationpercentage) have been added to [`Transaction`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction).  (148858551)
 
+###### Resolved Issues
+
+- Fixed: Purchase Intents might not be emitted from the intents sequence when the app is launched from the background.  (168958783) (FB21767675)
+
 ##### Swiftui
 
 ###### Resolved Issues
@@ -39,7 +43,7 @@ The tvOS 26.4 SDK provides support to develop tvOS apps for Apple TV devices run
 
 ###### Known Issues
 
-- Multiple implicit SwiftUI animations (triggered by `RealityViewContent.animate` or `Entity.animate`) that modify a RealityKit component’s properties, are combined only when the implicit animations target the same set of component properties. For example, if you initiate an implicit animation on Transform.scale and then initiate an implicit animation on Transform.scale and Transform.translation then the animations affecting the scale property will be independent of each other, and will not combine. In this case, the most recently initiated animation will overwrite the scale property.  (169723142)  Ensure the same component properties are animated by subsequent implicit animations when possible.
+- Multiple implicit SwiftUI animations (triggered by `RealityViewContent.animate` or `Entity.animate`) that modify a RealityKit component’s properties, are combined only when the implicit animations target the same set of component properties. For example, if you initiate an implicit animation on Transform.scale and then initiate an implicit animation on Transform.scale and Transform.translation then the animations affecting the scale property will be independent of each other, and will not combine. In this case, the most recently initiated animation will overwrite the scale property.  (169723142) **Workaround:** Ensure the same component properties are animated by subsequent implicit animations when possible.
 
 ## See Also
 

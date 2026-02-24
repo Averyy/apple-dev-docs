@@ -24,7 +24,7 @@ Use this method to start or resume a training session you get from [`makeTrainin
 
 ## Parameters
 
-- `session`: An   instance that represents the training session.
+- `session`: An [`MLTrainingSession`](mltrainingsession.md) instance that represents the training session.
 
 ## See Also
 

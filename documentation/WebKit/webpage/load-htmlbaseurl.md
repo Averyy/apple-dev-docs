@@ -32,7 +32,7 @@ This method sets the source of this load request for app activity data to NSURLR
 ## Parameters
 
 - `html`: The string to use as the contents of the webpage.
-- `baseURL`: The base URL to use when the system resolves relative URLs within the HTML string. By default, this is  .
+- `baseURL`: The base URL to use when the system resolves relative URLs within the HTML string. By default, this is `about:blank`.
 
 ## See Also
 

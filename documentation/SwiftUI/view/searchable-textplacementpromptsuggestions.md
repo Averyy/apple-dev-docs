@@ -28,9 +28,9 @@ For more information about using searchable modifiers, see [`Adding a search int
 ## Parameters
 
 - `text`: The text to display and edit in the search field.
-- `placement`: Where the search field should attempt to be   placed based on the containing view hierarchy.
-- `prompt`: A key for the localized prompt of the search field   which provides users with guidance on what to search for.
-- `suggestions`: A view builder that produces content that   populates a list of suggestions.
+- `placement`: Where the search field should attempt to be placed based on the containing view hierarchy.
+- `prompt`: A key for the localized prompt of the search field which provides users with guidance on what to search for.
+- `suggestions`: A view builder that produces content that populates a list of suggestions.
 
 
 ---

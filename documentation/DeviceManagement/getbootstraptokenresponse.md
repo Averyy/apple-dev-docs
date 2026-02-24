@@ -17,6 +17,10 @@ The get bootstrap token response details.
 object GetBootstrapTokenResponse
 ```
 
+## Properties
+
+- `BootstrapToken` (data): The current bootstrap token data for the device.
+
 ## See Also
 
 - [object GetBootstrapTokenRequest](getbootstraptokenrequest.md)

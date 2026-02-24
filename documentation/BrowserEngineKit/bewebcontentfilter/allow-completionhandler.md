@@ -20,7 +20,7 @@ Adds blocked URL to built-in web content filter’s allowlist.
 ## Parameters
 
 - `url`: The URL to be added.
-- `completionHandler`: The completion block to be called when the add   operation is complete, with result of the operation. Result is YES if the url is added   successfully, and NO if it isn’t.
+- `completionHandler`: The completion block to be called when the add operation is complete, with result of the operation. Result is YES if the url is added successfully, and NO if it isn’t.
 
 
 ---

@@ -16,7 +16,7 @@ func setMaxAnimationFrameRate(_ maxFPS: Float)
 
 ## Parameters
 
-- `maxFPS`: A frame rate in frames per second. Pass   to specify no limit to the maximum value.
+- `maxFPS`: A frame rate in frames per second. Pass `0.0` to specify no limit to the maximum value.
 
 ## See Also
 

@@ -189,6 +189,12 @@ The following table describes each parameter in the `SessionStatusDidChange` mes
 
 Status values for the `SessionStatusDidChange` message include:
 
+- **`WAITING`**: The streaming provider is ready to connect to the endpoint, but the `MediaStreamIsReady` message hasn’t been sent.
+- **`CONNECTING`**: The streaming provider is connecting to the remote endpoint. This can be reached from the `PAUSED` state.
+- **`CONNECTED`**: The streaming provider is connected and streaming. This state always follows the `CONNECTING` state.
+- **`PAUSED`**: The streaming session is active, but the streaming provider’s connection has been disconnected, such as when the person takes off their Apple Vision Pro. This state is recoverable and considered normal.
+- **`DISCONNECTED`**: The streaming session is fully disconnected. This status may also be sent during pairing if the person cancels pairing.
+
 > **Note**: Dismiss the QR code as soon as you receive the `SessionStatusDidChange` message. If pairing failed, the state will be `DISCONNECTED`.
 
 #### Request a Session Disconnect
@@ -222,7 +228,7 @@ Keep your streaming application running after it receives a `SessionStatusDidCha
 ## See Also
 
 - [Streaming a CloudXR application to Apple Vision Pro with foveation](streaming-a-cloudxr-application-to-apple-vision-pro-with-foveation.md)
-  Integrate NVIDIA CloudXR™ and the streaming manager protocol into your desktop or cloud application to stream high-fidelity spatial content to Apple Vision Pro.
+  Integrate NVIDIA CloudXR™ and the session management connection protocol into your desktop or cloud application to stream high-fidelity spatial content to Apple Vision Pro.
 - [Creating a foveated streaming client on visionOS](creating-a-foveated-streaming-client-on-visionos.md)
   Build a visionOS app that streams high-fidelity immersive content from a computer or the cloud using the Foveated Streaming framework.
 

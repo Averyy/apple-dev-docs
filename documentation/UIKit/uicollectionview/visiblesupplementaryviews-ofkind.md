@@ -24,7 +24,7 @@ An array of the visible supplementary views. If no supplementary views are visib
 
 ## Parameters
 
-- `elementKind`: The kind of supplementary view to locate. This value is defined by the layout object. This parameter must not be  .
+- `elementKind`: The kind of supplementary view to locate. This value is defined by the layout object. This parameter must not be `nil`.
 
 ## See Also
 

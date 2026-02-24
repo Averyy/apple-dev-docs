@@ -70,6 +70,12 @@ Specify `com.apple.MCX` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `RequireAdminForAirPortNetworkChange` (boolean): If `true`, requires administrator authorization for network changes.
+- `RequireAdminForIBSS` (boolean): If `true`, requires administrator authorization to enable IBSS.
+- `RequireAdminToTurnAirPortOnOff` (boolean): If `true`, requires administrator authorization to turn Wi-Fi on or off.
+
 ## See Also
 
 - [object Cellular](cellular.md)

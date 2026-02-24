@@ -28,7 +28,7 @@ This is a convenience call, because the run could be drawn by accessing the glyp
 
 - `run`: The run to draw.
 - `context`: The context into which to draw the run.
-- `range`: The portion of the run to draw. If the length of the range is set to  , then the draw operation continues from the start index of the range to the end of the run.
+- `range`: The portion of the run to draw. If the length of the range is set to `0`, then the draw operation continues from the start index of the range to the end of the run.
 
 ## See Also
 

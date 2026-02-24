@@ -8,6 +8,12 @@ A Boolean value indicating whether your app may use a shared coordinate space.
 **Availability**:
 - visionOS 26.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 The Shared Coordinate Space access entitlement provides an app with access to the same shared space that the Nearby FaceTime API provides, without the requirement to use a FaceTime call.  This feature provides an app with the ability to share a coordinate space with other devices in the same physical space as each other to create shared spaces and objects between the devices.

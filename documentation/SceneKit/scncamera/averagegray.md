@@ -22,7 +22,7 @@ var averageGray: CGFloat { get set }
 
 #### Discussion
 
-When using a High Dynamic Range (HDR) camera, SceneKit applies a process called  to translate the wide range of luminance values in the visible scene to the narrower range of brightness values that can be shown on a display. SceneKit determines a tone mapping curve from the [`minimumExposure`](scncamera/minimumexposure.md), [`maximumExposure`](scncamera/maximumexposure.md), [`exposureOffset`](scncamera/exposureoffset.md), and [`whitePoint`](scncamera/whitepoint.md) properties, along with this property which serves as a constant estimate of scene luminance.
+When using a High Dynamic Range (HDR) camera, SceneKit applies a process called *tone mapping* to translate the wide range of luminance values in the visible scene to the narrower range of brightness values that can be shown on a display. SceneKit determines a tone mapping curve from the [`minimumExposure`](scncamera/minimumexposure.md), [`maximumExposure`](scncamera/maximumexposure.md), [`exposureOffset`](scncamera/exposureoffset.md), and [`whitePoint`](scncamera/whitepoint.md) properties, along with this property which serves as a constant estimate of scene luminance.
 
 The default value is `0.18`. By setting this property to a higher or lower value, you can compensate for scenes with darker or brighter content. Alternatively, by setting the [`wantsExposureAdaptation`](scncamera/wantsexposureadaptation.md) property, you can allow SceneKit to automatically adjust exposure as the visible contents of the scene change.
 

@@ -6,7 +6,7 @@ Enable communication and data sharing between multiple installed apps created by
 
 #### Overview
 
-An  allows multiple apps developed by the same team to access one or more shared containers. It also enables additional interprocess communication (IPC) between those apps using Mach IPC, POSIX semaphores and shared memory, and UNIX domain sockets, among other IPC mechanisms. In macOS, app groups can facilitate communication between sandboxed apps, and between sandboxed and nonsandboxed apps. Apps can belong to one or more app groups. You can also use an app group to share data between an app extension or App Clip and its host app.
+An *app group* allows multiple apps developed by the same team to access one or more shared containers. It also enables additional interprocess communication (IPC) between those apps using Mach IPC, POSIX semaphores and shared memory, and UNIX domain sockets, among other IPC mechanisms. In macOS, app groups can facilitate communication between sandboxed apps, and between sandboxed and nonsandboxed apps. Apps can belong to one or more app groups. You can also use an app group to share data between an app extension or App Clip and its host app.
 
 Before creating an app group, follow the steps in [`Add a capability`](adding-capabilities-to-your-app#Add-a-capability.md) to add the [`App Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.application-groups) to your app’s target.
 

@@ -33,8 +33,8 @@ You can use this behavior to create an effect of an item sliding in a specific d
 ## Parameters
 
 - `item`: The dynamic item connected by the attachment behavior.
-- `point`: The initial anchor point for the item. Specify this point in the coordinate system of the dynamic animator’s reference view. For more information about coordinate systems, see  .
-- `axis`: The axis of translation, along which the item’s anchor point slides. The magnitude of the vector is ignored. Use the   property to define the distance that the anchor point can travel along the vector.
+- `point`: The initial anchor point for the item. Specify this point in the coordinate system of the dynamic animator’s reference view. For more information about coordinate systems, see [`UIDynamicAnimator`](uidynamicanimator.md).
+- `axis`: The axis of translation, along which the item’s anchor point slides. The magnitude of the vector is ignored. Use the [`attachmentRange`](uiattachmentbehavior/attachmentrange.md) property to define the distance that the anchor point can travel along the vector.
 
 ## See Also
 

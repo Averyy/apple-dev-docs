@@ -30,9 +30,9 @@ After `interval` seconds have elapsed, the timer fires, executing `block`.
 
 ## Parameters
 
-- `interval`: The number of seconds between firings of the timer. If   is less than or equal to  , this method chooses the nonnegative value of   seconds instead.
-- `repeats`: If  , the timer will repeatedly reschedule itself until invalidated. If  , the timer will be invalidated after it fires.
-- `block`: The block takes a single   parameter and has no return value.
+- `interval`: The number of seconds between firings of the timer. If `interval` is less than or equal to `0.0`, this method chooses the nonnegative value of `0.0001` seconds instead.
+- `repeats`: If `true`, the timer will repeatedly reschedule itself until invalidated. If `false`, the timer will be invalidated after it fires.
+- `block`: A block to be executed when the timer fires. The block takes a single `NSTimer` parameter and has no return value.
 
 ## See Also
 

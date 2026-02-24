@@ -27,7 +27,7 @@ A new CGImage. In Objective-C, you’re responsible for releasing this object by
 ## Parameters
 
 - `source`: A data provider supplying JPEG-encoded data.
-- `decode`: The decode array for the image. Typically a decode array is unnecessary, and you should pass  .
+- `decode`: The decode array for the image. Typically a decode array is unnecessary, and you should pass `NULL`.
 - `shouldInterpolate`: A Boolean value that specifies whether interpolation should occur. The interpolation setting specifies whether a pixel-smoothing algorithm should be applied to the image.
 - `intent`: A CGColorRenderingIntent constant that specifies how to handle colors that are not located within the gamut of the destination color space of a graphics context.
 

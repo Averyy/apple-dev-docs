@@ -29,7 +29,7 @@ This method returns the image synchronously.
 ## Parameters
 
 - `requestedTime`: A time within the asset timeline for which to create an image.
-- `actualTime`: If you’re not interested in this information, pass  .
+- `actualTime`: Upon return, contains the time at which the image was actually generated. If you’re not interested in this information, pass `NULL`.
 
 ## See Also
 

@@ -35,9 +35,9 @@ You later evaluate the combined data and signature with the corresponding public
 ## Parameters
 
 - `key`: The private key to use in creating the signature.
-- `algorithm`: The signing algorithm to use. Use one of the signing algorithms listed in  . You can use the   function to test that the key is suitable for the algorithm.
+- `algorithm`: The signing algorithm to use. Use one of the signing algorithms listed in [`SecKeyAlgorithm`](seckeyalgorithm.md). You can use the [`SecKeyIsAlgorithmSupported(_:_:_:)`](seckeyisalgorithmsupported(_:_:_:).md) function to test that the key is suitable for the algorithm.
 - `dataToSign`: The data whose signature you want.
-- `error`: The address of a   object. If an error occurs, this is set to point at an error instance that describes the failure.
+- `error`: The address of a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) object. If an error occurs, this is set to point at an error instance that describes the failure.
 
 
 ---

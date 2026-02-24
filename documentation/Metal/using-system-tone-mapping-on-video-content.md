@@ -10,6 +10,36 @@ When processing video content, you usually want to work in a linear color space.
 
 The code below creates a Metal layer with an extended linear BT.2020 color space and metadata that applies an HDR10 tone mapping based on the reference display.
 
+**Swift**:
+
+```swift
+let metalLayer = CAMetalLayer()
+metalLayer.wantsExtendedDynamicRangeContent = true
+metalLayer.pixelFormat = .rgba16Float
+
+let name = CGColorSpace.extendedLinearITUR_2020
+metalLayer.colorspace = CGColorSpace(name: name)
+
+let edrMetadata = CAEDRMetadata(minLuminance: 0.5, maxLuminance: 1000, opticalOutputScale: 100)
+metalLayer.edrMetadata = edrMetadata
+```
+
+**Objective-C**:
+
+```objective-c
+CAMetalLayer *metalLayer = [CAMetalLayer new];
+metalLayer.wantsExtendedDynamicRangeContent = YES;
+metalLayer.pixelFormat = MTLPixelFormatRGBA16Float;
+
+const CFStringRef name = kCGColorSpaceExtendedLinearITUR_2020;
+CGColorSpaceRef colorspace = CGColorSpaceCreateWithName(name);
+metalLayer.colorspace = colorspace;
+
+CGColorSpaceRelease(colorspace);
+CAEDRMetadata *edrMetaData = [CAEDRMetadata HDR10MetadataWithMinLuminance: 0.005 maxLuminance: 1000 opticalOutputScale: 100];
+metalLayer.EDRMetadata = edrMetaData;
+```
+
 Your rendering code needs to generate pixel values consistent with the EDR metadata object. For example, in the above code, the `opticalOutputScale` was set to `100`, so a pixel value of `1.0` corresponds to `100` nits. For more information, see [`CAEDRMetadata`](https://developer.apple.com/documentation/QuartzCore/CAEDRMetadata).
 
 ## See Also

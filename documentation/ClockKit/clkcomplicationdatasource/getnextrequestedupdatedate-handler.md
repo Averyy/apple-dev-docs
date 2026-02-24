@@ -24,7 +24,7 @@ If you don’t implement this method, ClockKit doesn’t schedule your complicat
 
 ## Parameters
 
-- `handler`: The handler to execute with the next date at which to run your complication code. This block has no return value and takes the following parameter:
+- `handler`: The handler to execute with the next date at which to run your complication code. This block has no return value and takes the following parameter: - **`updateDate`**: The date after which you’d like your complication to run again. If you specify `nil`, ClockKit doesn’t schedule a new update time for your complication. You can still trigger updates manually.
 
 ## See Also
 

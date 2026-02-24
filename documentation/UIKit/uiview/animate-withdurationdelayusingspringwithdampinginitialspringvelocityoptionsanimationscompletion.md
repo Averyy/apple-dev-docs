@@ -20,13 +20,13 @@ class func animate(withDuration duration: TimeInterval, delay: TimeInterval, usi
 
 ## Parameters
 
-- `duration`: The total duration of the animations, measured in seconds. If you specify a negative value or  , the changes are made without animating them.
-- `delay`: The amount of time (measured in seconds) to wait before beginning the animations. Specify a value of   to begin the animations immediately.
-- `dampingRatio`: To smoothly decelerate the animation without oscillation, use a value of  . Employ a damping ratio closer to zero to increase oscillation.
-- `velocity`: A value of   corresponds to the total animation distance traversed in one second. For example, if the total animation distance is 200 points and you want the start of the animation to match a view velocity of 100 pt/s, use a value of  .
-- `options`: A mask of options indicating how you want to perform the animations. For a list of valid constants, see  .
-- `animations`: A block object containing the changes to commit to the views. This is where you programmatically change any animatable properties of the views in your view hierarchy. This block takes no parameters and has no return value. This parameter must not be  .
-- `completion`: A block object to be executed when the animation sequence ends. This block has no return value and takes a single Boolean argument that indicates whether or not the animations actually finished before the completion handler was called. If the duration of the animation is 0, this block is performed at the beginning of the next run loop cycle. This parameter may be  .
+- `duration`: The total duration of the animations, measured in seconds. If you specify a negative value or `0`, the changes are made without animating them.
+- `delay`: The amount of time (measured in seconds) to wait before beginning the animations. Specify a value of `0` to begin the animations immediately.
+- `dampingRatio`: The damping ratio for the spring animation as it approaches its quiescent state. To smoothly decelerate the animation without oscillation, use a value of `1`. Employ a damping ratio closer to zero to increase oscillation.
+- `velocity`: The initial spring velocity. For smooth start to the animation, match this value to the view’s velocity as it was prior to attachment. A value of `1` corresponds to the total animation distance traversed in one second. For example, if the total animation distance is 200 points and you want the start of the animation to match a view velocity of 100 pt/s, use a value of `0.5`.
+- `options`: A mask of options indicating how you want to perform the animations. For a list of valid constants, see [`UIView.AnimationOptions`](uiview/animationoptions.md).
+- `animations`: A block object containing the changes to commit to the views. This is where you programmatically change any animatable properties of the views in your view hierarchy. This block takes no parameters and has no return value. This parameter must not be `NULL`.
+- `completion`: A block object to be executed when the animation sequence ends. This block has no return value and takes a single Boolean argument that indicates whether or not the animations actually finished before the completion handler was called. If the duration of the animation is 0, this block is performed at the beginning of the next run loop cycle. This parameter may be `NULL`.
 
 ## See Also
 

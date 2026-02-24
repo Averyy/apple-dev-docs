@@ -94,7 +94,7 @@ When the user has enabled the Sensitive Content Warning setting, keep the user i
 - Display the UI in an unobstructive manner, such as inline with other content instead of using the full screen.
 - Provide intervention as the app receives sensitive content from the network but allow the app to transmit unchecked content over the network.
 
-For example, by providing a blurred version of the potentially sensitive image in its normal location, Messages on iOS 17 and later implements  intervention. Messages also keeps the information presented in the UI brief by providing a one-word button to display the image, and an icon button for more options.
+For example, by providing a blurred version of the potentially sensitive image in its normal location, Messages on iOS 17 and later implements *inline* intervention. Messages also keeps the information presented in the UI brief by providing a one-word button to display the image, and an icon button for more options.
 
 ![An image of an iPhone displaying the Messages app. The app presents a conversation that contains an image the user received from a contact. The image is blurred, and contains text that reads: This may be sensitive. The image view contains two buttons, from which a callout extends that reads: Brief UI. The first button resides in the upper right corner of the image and contains a warning triangle. The second button resides in the lower right corner and contains the text Show. ](https://docs-assets.developer.apple.com/published/aff13ca2aebbe4383e6af0e5f6ed8d3e/detecting_nudity_in_media_and_providing_intervention_options-2%402x.png)
 

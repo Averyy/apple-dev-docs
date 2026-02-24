@@ -22,9 +22,9 @@ init(specific: AppShortcutParameterPresentationTitleString<Intent, Value, Parame
 
 ## Parameters
 
-- `specific`: An   representing the specific title of the  .   Example:  .
-- `generic`: A   representing the generic title of the  . Example:  .
-- `table`: An optional   representing the table to use when localizing the title.
+- `specific`: An `AppShortcutParameterPresentationTitleString` representing the specific title of the `AppShortcutParameterPresentation`. Example: `"Call \(\.$person)"`.
+- `generic`: A `StaticString` representing the generic title of the `AppShortcutParameterPresentation`. Example: `"Call Person..."`.
+- `table`: An optional `StaticString` representing the table to use when localizing the title.
 
 
 ---

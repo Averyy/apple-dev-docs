@@ -16,7 +16,7 @@ init(attributedString: NSAttributedString?)
 
 ## Parameters
 
-- `attributedString`: An  .
+- `attributedString`: An [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString).
 
 
 ---

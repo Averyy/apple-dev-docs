@@ -29,6 +29,14 @@ This method applies the page curl transition filter to an image. The effect tran
 
 The page curl transition filter uses the following properties:
 
+- **`inputImage`**: The starting image with the type [`CIImage`](ciimage.md).
+- **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
+- **`backsideImage`**: An image used as the backside of the curl with the type [`CIImage`](ciimage.md).
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) representing the size of the effect.
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`angle`**: A `float` representing the angle of the motion of the curl as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the radius of the curl as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that produces a page curling back to reveal the target image.
 
 ```swift

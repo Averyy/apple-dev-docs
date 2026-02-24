@@ -44,10 +44,10 @@ struct ScrollableViewWithSideBar: View {
 
 ## Parameters
 
-- `edge`: The horizontal edge of the view to inset by the width of   , to make space for  .
-- `alignment`: The alignment guide used to position    vertically.
-- `spacing`: Extra distance placed between the two views, or   nil to use the default amount of spacing.
-- `content`: A view builder function providing the view to   display in the inset space of the modified view.
+- `edge`: The horizontal edge of the view to inset by the width of `content`, to make space for `content`.
+- `alignment`: The alignment guide used to position `content` vertically.
+- `spacing`: Extra distance placed between the two views, or nil to use the default amount of spacing.
+- `content`: A view builder function providing the view to display in the inset space of the modified view.
 
 ## See Also
 

@@ -20,7 +20,7 @@ init(id: AssignedWorkDocument.ID, assignableDocument: AssignableDocument, partDa
 ## Parameters
 
 - `id`: The ID of this document.
-- `partData`: A dictionary of part IDs to   objects   that contain the parts data.
+- `partData`: A dictionary of part IDs to [`MergeablePartData`](mergeablepartdata.md) objects that contain the parts data.
 
 ## See Also
 

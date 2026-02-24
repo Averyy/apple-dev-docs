@@ -22,8 +22,8 @@ Returns a placeholder menu element that is replaced with elements provided from 
 
 ## Parameters
 
-- `identifier`: An identifier for this deferred element that responders can check to determine which elements   to provide.
-- `shouldCacheItems`: Whether or not the deferred element caches items. Passing in @c YES causes this deferred element to   ask the responder chain for elements only once, when the element is first encountered in a menu.   Passing in @c NO asks the responder chain for elements every time the element is displayed.
+- `identifier`: An identifier for this deferred element that responders can check to determine which elements to provide.
+- `shouldCacheItems`: Whether or not the deferred element caches items. Passing in @c YES causes this deferred element to ask the responder chain for elements only once, when the element is first encountered in a menu. Passing in @c NO asks the responder chain for elements every time the element is displayed.
 
 ## See Also
 

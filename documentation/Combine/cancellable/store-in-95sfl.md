@@ -22,7 +22,7 @@ func store(in set: inout Set<AnyCancellable>)
 
 ## Parameters
 
-- `set`: The set in which to store this  .
+- `set`: The set in which to store this [`Cancellable`](cancellable.md).
 
 ## See Also
 

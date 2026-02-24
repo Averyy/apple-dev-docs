@@ -25,7 +25,7 @@ A length formatter unit value. For a list of possible length formatter unit valu
 
 ## Parameters
 
-- `unit`: A valid HealthKit unit object.  If the unit is not a length unit, this method throws an exception ( ).
+- `unit`: A valid HealthKit unit object.  If the unit is not a length unit, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
 
 ## See Also
 

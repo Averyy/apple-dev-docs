@@ -31,7 +31,7 @@ After creating the dispatch source, use the methods of the [`DispatchSourceProto
 ## Parameters
 
 - `identifier`: The process identifier of the process you want to monitor.
-- `eventMask`: The set of events you want to monitor. For a list of possible values, see  .
+- `eventMask`: The set of events you want to monitor. For a list of possible values, see [`DispatchSource.ProcessEvent`](dispatchsource/processevent.md).
 - `queue`: The dispatch queue to use when executing the installed handlers.
 
 ## See Also

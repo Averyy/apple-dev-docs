@@ -28,7 +28,7 @@ Use this function for scenarios where timecode metadata needs to span a custom i
 
 ## Parameters
 
-- `timecode`: The   instance providing the timecode details for the metadata sample.
+- `timecode`: The [`AVCaptureTimecode`](avcapturetimecode.md) instance providing the timecode details for the metadata sample.
 - `duration`: The duration that the metadata sample buffer should represent.
 
 ## See Also

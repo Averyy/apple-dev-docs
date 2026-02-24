@@ -30,12 +30,52 @@ Not all locale property keys have values with display name values.
 
 You can use the [`identifier`](nslocale/key/identifier.md) key to get the name of a locale in the language of another locale, as illustrated in the following examples.
 
+**Swift**:
+
+```swift
+let frLocale = NSLocale(localeIdentifier: "fr_FR")
+print(frLocale.displayNameForKey(NSLocaleIdentifier, value: "fr_FR")!)
+// "français (France)"
+print(frLocale.displayNameForKey(NSLocaleIdentifier, value: "en_US")!)
+// "anglais (États-Unis)"
+```
+
+**Objective-C**:
+
+```objc
+NSLocale *frLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"fr_FR"];
+NSLog(@"%@", [frLocale displayNameForKey:NSLocaleIdentifier value:@"fr_FR"]);
+// "français (France)"
+NSLog(@"%@", [frLocale displayNameForKey:NSLocaleIdentifier value:@"en_US"]);
+// "anglais (États-Unis)"
+```
+
 The following example uses the `en_GB` locale.
+
+**Swift**:
+
+```swift
+let gbLocale = NSLocale(localeIdentifier: "en_GB")
+print(gbLocale.displayNameForKey(NSLocaleIdentifier, value: "fr_FR")!)
+// "French (France)"
+print(gbLocale.displayNameForKey(NSLocaleIdentifier, value: "en_US")!)
+// "English (United States)"
+```
+
+**Objective-C**:
+
+```objc
+NSLocale *gbLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_GB"];
+NSLog(@"%@", [gbLocale displayNameForKey:NSLocaleIdentifier value:@"fr_FR"]);
+// "French (France)"
+NSLog(@"%@", [gbLocale displayNameForKey:NSLocaleIdentifier value:@"en_US"]);
+// "English (United States)"
+```
 
 ## Parameters
 
-- `key`: The locale property key of  . For possible values, see  .
-- `value`: A value for  .
+- `key`: The locale property key of `value`. For possible values, see [`NSLocale.Key`](nslocale/key.md).
+- `value`: A value for `key`.
 
 ## See Also
 

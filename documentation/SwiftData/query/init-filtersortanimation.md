@@ -42,9 +42,9 @@ struct RecipeList: View {
 
 ## Parameters
 
-- `filter`: A predicate on 
+- `filter`: A predicate on `Element`
 - `descriptors`: Sort orders for the result.
-- `animation`: The animation to use for user interface changes that   result from changes to the fetched results.
+- `animation`: The animation to use for user interface changes that result from changes to the fetched results.
 
 ## See Also
 

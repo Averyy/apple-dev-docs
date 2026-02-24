@@ -22,7 +22,7 @@ var previousFailureCount: Int { get }
 
 #### Discussion
 
-The previous failure count includes failures from  protection spaces, not just the current one.
+The previous failure count includes failures from *all* protection spaces, not just the current one.
 
 ## See Also
 

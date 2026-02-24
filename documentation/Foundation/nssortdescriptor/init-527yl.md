@@ -23,7 +23,7 @@ convenience init<Compared>(_ sortDescriptor: SortDescriptor<Compared>) where Com
 
 ## Parameters
 
-- `sortDescriptor`: The   to convert.
+- `sortDescriptor`: The `SortDescriptor` to convert.
 
 
 ---

@@ -20,7 +20,7 @@ A new inset content object containing the specified set of items.
 
 ## Parameters
 
-- `items`: An array of   objects representing the content that you want to display in the top shelf. This method stores a copy of the array.
+- `items`: An array of [`TVTopShelfItem`](tvtopshelfitem.md) objects representing the content that you want to display in the top shelf. This method stores a copy of the array.
 
 
 ---

@@ -27,7 +27,8 @@ You can call this method multiple times to incrementally add metadata to the wor
 
 - `UUID`: The workout activity’s universally unique identifier (UUID).
 - `metadata`: A dictionary containing the metadata keys and values to add to the workout activity.
-- `completion`: The callback handler takes the following parameters:
+- `completion`: A callback handler that the system calls after updating the workout activity. The system calls the callback handler on an anonymous background queue. The callback handler takes the following parameters: - **success**: Contains [`true`](https://developer.apple.com/documentation/Swift/true) if the builder successfully updates the activity.
+- **error**: If the `success` parameter is [`false`](https://developer.apple.com/documentation/Swift/false), this parameter contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

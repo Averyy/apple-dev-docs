@@ -32,7 +32,7 @@ If the URL’s path component is empty, this method returns an empty string.
 
 ## Parameters
 
-- `percentEncoded`: A Boolean value that indicates whether the URL percent-encodes any unreserved characters. Defaults to  .
+- `percentEncoded`: A Boolean value that indicates whether the URL percent-encodes any unreserved characters. Defaults to `true`.
 
 ## See Also
 

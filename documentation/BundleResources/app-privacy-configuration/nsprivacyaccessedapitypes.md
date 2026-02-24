@@ -18,6 +18,10 @@ A list of dictionaries that report the privacy accessed API your app or third-pa
 
 - [Describing use of required reason API](describing-use-of-required-reason-api.md)
 
+
+
+**Type**: dictionary 
+
 #### Overview
 
 For more information, see [`Describing use of required reason API`](describing-use-of-required-reason-api.md).

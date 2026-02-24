@@ -24,6 +24,10 @@ func vvacos(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsafe
 
 ##### Parameters
 
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
 The calculated values are in the range `[0, pi]`.
 
 If `x` is `1`, the result is `+0`.

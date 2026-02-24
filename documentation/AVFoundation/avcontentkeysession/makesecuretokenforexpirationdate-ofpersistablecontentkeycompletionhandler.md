@@ -23,7 +23,8 @@ func makeSecureTokenForExpirationDate(ofPersistableContentKey persistableContent
 ## Parameters
 
 - `persistableContentKeyData`: The previously created persistable content key data.
-- `handler`: A block called after the secure token is ready.
+- `handler`: A block called after the secure token is ready. - **secureTokenData**: The new secure token.
+- **error**: A parameter that holds the error object that explains the error. If no error occurred, the value of this parameter is `nil`.
 
 ## See Also
 

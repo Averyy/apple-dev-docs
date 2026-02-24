@@ -27,8 +27,8 @@ A dictionary that contains the auxiliary data, or `NULL` if an error occurs.
 ## Parameters
 
 - `isrc`: The image source that contains the image data.
-- `index`: The zero-based index into the images of the image source. If the index is invalid, this method returns  .
-- `auxiliaryImageDataType`: The auxiliary data to retrieve. For a list of possible values, see   and  .
+- `index`: The zero-based index into the images of the image source. If the index is invalid, this method returns `NULL`.
+- `auxiliaryImageDataType`: The auxiliary data to retrieve. For a list of possible values, see [`Auxiliary Image Data`](individual-image-properties#Auxiliary-Image-Data.md) and [`Auxiliary Data Types`](individual-image-properties#Auxiliary-Data-Types.md).
 
 ## See Also
 

@@ -30,7 +30,7 @@ This function is called by the system when a filtering decision needs to be made
 
 ## Parameters
 
-- `flow`: An   object containing information about the new flow.
+- `flow`: An [`NEFilterFlow`](nefilterflow.md) object containing information about the new flow.
 
 ## See Also
 

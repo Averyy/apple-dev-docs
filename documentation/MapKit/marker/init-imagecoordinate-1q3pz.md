@@ -24,7 +24,7 @@ Creates a marker at the given location with an image displayed as the balloon’
 ## Parameters
 
 - `titleResource`: The localized string for the title.
-- `image`: The name of the image resource to look up and use as   the marker balloon’s glyph.
+- `image`: The name of the image resource to look up and use as the marker balloon’s glyph.
 - `coordinate`: The coordinate to display the marker at.
 
 

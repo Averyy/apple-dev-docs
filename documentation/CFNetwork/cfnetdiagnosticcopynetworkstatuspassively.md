@@ -35,8 +35,8 @@ This function is thread safe as long as another thread does not alter the same C
 
 ## Parameters
 
-- `details`: CFNetDiagnosticRef, created by   or  , for which the Network Diagnostics status is to be obtained.
-- `description`: If not  , upon return contains a localized string containing a description of the current network status. Ownership follows the  .
+- `details`: CFNetDiagnosticRef, created by [`CFNetDiagnosticCreateWithStreams(_:_:_:)`](cfnetdiagnosticcreatewithstreams(_:_:_:).md) or [`CFNetDiagnosticCreateWithURL(_:_:)`](cfnetdiagnosticcreatewithurl(_:_:).md), for which the Network Diagnostics status is to be obtained.
+- `description`: If not `NULL`, upon return contains a localized string containing a description of the current network status. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 

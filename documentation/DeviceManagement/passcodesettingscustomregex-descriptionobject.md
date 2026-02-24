@@ -14,6 +14,10 @@ A dictionary that contains supported OS language IDs for the keys and values tha
 object PasscodeSettingsCustomRegex_DescriptionObject
 ```
 
+## Properties
+
+- `ANY` (string): A localized description.
+
 
 ---
 

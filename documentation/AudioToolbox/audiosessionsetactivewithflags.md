@@ -27,14 +27,14 @@ When another active audio session does not allow mixing, attempting to activate 
 
 ## Parameters
 
-- `active`: Pass   to activate your application’s audio session, or   to deactivate it.
-- `inFlags`: A bitmapped value containing one or more flags from the   enumeration.
+- `active`: Pass `true` to activate your application’s audio session, or `false` to deactivate it.
+- `inFlags`: A bitmapped value containing one or more flags from the [`Audio Session Activation Flags`](1618357-audio-session-activation-flags.md) enumeration.
 
 ## See Also
 
 - [func AudioFileReadPackets(AudioFileID, Bool, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioStreamPacketDescription>?, Int64, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer?) -> OSStatus](audiofilereadpackets(_:_:_:_:_:_:_:).md)
   Reads a fixed duration of audio data from an audio file.
-- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:).md)
+- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:_:).md)
   The UIImage of the audio component’s icon.
 - [func AudioComponentGetLastActiveTime(AudioComponent) -> CFAbsoluteTime](audiocomponentgetlastactivetime(_:).md)
   The time at which the application publishing the component was last active.

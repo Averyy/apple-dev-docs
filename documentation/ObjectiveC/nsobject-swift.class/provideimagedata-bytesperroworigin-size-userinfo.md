@@ -32,7 +32,7 @@ That this callback always requests the full image data regardless of what is act
 
 ## Parameters
 
-- `data`: A pointer to image data. Note that   refers to the first byte of the requested subimage, not the larger image buffer.
+- `data`: A pointer to image data. Note that `data[0]` refers to the first byte of the requested subimage, not the larger image buffer.
 - `rowbytes`: The number of bytes per row.
 - `width`: The width of the image data.
 - `height`: The height of the image data.

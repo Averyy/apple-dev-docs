@@ -76,7 +76,7 @@ OSSystemExtensionManager.shared.submitRequest(request)
 
 > **Note**: This call may prompt a System Extension Blocked dialog, which explains that `DriverKitSampleApp` tried to install a new system extension. To complete the installation, open System Settings and go to the Privacy & Security section. Find the section that explains that the system blocked `NetworkingDriverKitSampleApp`, and click Allow to complete the installation. To confirm installation of the `NullDriver` extension, run `systemextensionsctl list` in Terminal.
 
-After installation, the driver appears in System Settings as Ethernet Adapter (enXX), where  is a number, like `en17`. You can also see the extension in Terminal with the command `systemextensionsctl list`, which lists all running system extensions. When the driver is running, it has an entry like the following, but with a different `teamID` value:
+After installation, the driver appears in System Settings as Ethernet Adapter (enXX), where *XX* is a number, like `en17`. You can also see the extension in Terminal with the command `systemextensionsctl list`, which lists all running system extensions. When the driver is running, it has an entry like the following, but with a different `teamID` value:
 
 ```None
 ~ % systemextensionsctl list

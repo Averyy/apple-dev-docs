@@ -28,8 +28,8 @@ When the receiver is asked to draw the image, it sends the specified message to 
 
 ## Parameters
 
-- `selector`: The selector to call when it is time to draw the image. The method should take a single parameter of type   that represents the   object that initiated drawing. The method must draw the image starting at the point (0, 0) in the current coordinate system.
-- `delegate`: The delegate object that responds to the selector in  .
+- `selector`: The selector to call when it is time to draw the image. The method should take a single parameter of type `id` that represents the [`NSCustomImageRep`](nscustomimagerep.md) object that initiated drawing. The method must draw the image starting at the point (0, 0) in the current coordinate system.
+- `delegate`: The delegate object that responds to the selector in `aMethod`.
 
 ## See Also
 

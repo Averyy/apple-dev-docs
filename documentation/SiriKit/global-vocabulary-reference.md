@@ -10,6 +10,9 @@ The `AppIntentVocabulary.plist` file in your iOS app contains examples of how us
 
 The Root dictionary of the `AppIntentVocabulary.plist` file contains the following keys:
 
+- **`ParameterVocabularies`**: (Optional) An array of dictionaries that define the custom terms that apply to all users of your app. For information about specifying custom terms, see [`Parameter Vocabularies`](parameter-vocabularies.md).
+- **`IntentPhrases`**: (Optional, but recommended) An array of dictionaries containing the example phrases for users. Siri displays these phrases and they guide and help Siri understand how users engage your app’s intents. For information on providing example phrases, see [`Intent Phrases`](intent-phrases.md).
+
 > ❗ **Important**:  During development, Xcode syncs your vocabulary with Siri, which uses the vocabulary to interpret requests from the version of your app on your development device. Ingestion of your vocabulary data isn’t instantaneous, though, so you may need to wait a minute or two before testing your Siri capabilities.
 
 ## Topics

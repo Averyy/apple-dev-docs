@@ -26,7 +26,7 @@ The exact moment that SwiftUI calls this method depends on the specific content 
 
 ## Parameters
 
-- `action`: The action to perform. If   is  , the   call has no effect.
+- `action`: The action to perform. If `action` is `nil`, the call has no effect.
 
 
 ---

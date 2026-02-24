@@ -37,7 +37,7 @@ The following is an example implementation of this method. It changes the item s
 
 - `sharingService`: The sharing service.
 - `items`: The items being shared.
-- `sharingContentScope`: The sharing content scope. The sharing scope can be modified from the default value of   by setting a different value in the out parameter  . See   for supported values.
+- `sharingContentScope`: The sharing content scope. The sharing scope can be modified from the default value of [`NSSharingService.SharingContentScope.item`](nssharingservice/sharingcontentscope/item.md) by setting a different value in the out parameter `sharingContentScope`. See [`NSSharingService.SharingContentScope`](nssharingservice/sharingcontentscope.md) for supported values.
 
 ## See Also
 

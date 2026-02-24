@@ -10,7 +10,7 @@ Find the main colors in an image by implementing k-means clustering using the Ac
 
 #### Overview
 
-The Accelerate framework provides libraries that allow you to extract a specified number (`k`) of average colors in an image. This sample code app computes these colors using the . The k-means algorithm finds the `k` dominant colors by `k` random centroids that define the centers of color clusters in the source image. The algorithm finds the closest colors to each centroid and updates each centroid to the average value of the closest colors. The process iterates over this step until the solution converges.
+The Accelerate framework provides libraries that allow you to extract a specified number (`k`) of average colors in an image. This sample code app computes these colors using the *k-means algorithm*. The k-means algorithm finds the `k` dominant colors by `k` random centroids that define the centers of color clusters in the source image. The algorithm finds the closest colors to each centroid and updates each centroid to the average value of the closest colors. The process iterates over this step until the solution converges.
 
 The image below shows the sample code app. The source image is on the left and a 3D point cloud of the color distribution is on the right. At the bottom of the image is a set of swatches that show the `k` dominant colors in the image.
 
@@ -120,7 +120,7 @@ Given the following two rows represent the eight 2D colors:
 [ 6.0, 1.0, 0.0, 2.0, 7.0, 5.0, 2.0, 3.0 ]    // Green-blue color values for colors 0...7.
 ```
 
-The following matrix shows the distances squared. The top row represents the distances to centroid  and the bottom row represents the distances to centroid :
+The following matrix shows the distances squared. The top row represents the distances to centroid *A* and the bottom row represents the distances to centroid *B*:
 
 ```None
 [ 9.0, 34.0, 37.0, 16.0, 17.0,  5.0, 25.0, 10.0,        // For centroid _A_.

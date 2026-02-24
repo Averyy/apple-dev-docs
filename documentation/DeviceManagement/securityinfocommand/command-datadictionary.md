@@ -19,6 +19,11 @@ The command to get security-related information about a device.
 object SecurityInfoCommand.Command
 ```
 
+## Properties
+
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

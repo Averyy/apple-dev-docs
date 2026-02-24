@@ -21,7 +21,7 @@ A new `WASubscriber/Devices` including the selected devices.
 
 ## Parameters
 
-- `pairedDevices`: A   dictionary holding a snapshot  of paired devices to use for this operation.
+- `pairedDevices`: A [`WASubscriberBrowser.Devices`](wasubscriberbrowser/devices.md) dictionary holding a snapshot  of paired devices to use for this operation.
 
 ## See Also
 

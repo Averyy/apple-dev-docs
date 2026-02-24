@@ -8,11 +8,15 @@ The name of an icon for display when the extension appears as a Quick Action in 
 **Availability**:
 - macOS 10.14+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key is used in conjunction with the [`NSExtensionServiceAllowsTouchBarItem`](information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowstouchbaritem.md) key.
 
-Set the [`NSExtensionServiceTouchBarIconName`](information-property-list/nsextension/nsextensionattributes/nsextensionservicetouchbariconname.md) key’s value to a system icon name or the name of an icon within the extension bundle. This icon should be a : a monochromatic image with transparency, anti-aliasing, and no drop shadow that uses a mask to define its shape. For design guidance, see [`Human Interface Guidelines > macOS > Custom Icons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/macos/icons-and-images/custom-icons/). If no icon is specified, a default icon is used.
+Set the [`NSExtensionServiceTouchBarIconName`](information-property-list/nsextension/nsextensionattributes/nsextensionservicetouchbariconname.md) key’s value to a system icon name or the name of an icon within the extension bundle. This icon should be a *template image*: a monochromatic image with transparency, anti-aliasing, and no drop shadow that uses a mask to define its shape. For design guidance, see [`Human Interface Guidelines > macOS > Custom Icons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/macos/icons-and-images/custom-icons/). If no icon is specified, a default icon is used.
 
 ## See Also
 

@@ -1,9 +1,9 @@
-# ==(_:_:)
+# <(_:_:)
 
 **Framework**: Spatial  
 **Kind**: op
 
-Returns a Boolean value indicating whether two angles are equal.
+Returns `true` if `lhs.radians` is less than `rhs.radians`.
 
 **Availability**:
 - iOS 26.0+
@@ -17,19 +17,14 @@ Returns a Boolean value indicating whether two angles are equal.
 ## Declaration
 
 ```swift
-static func == (lhs: Angle2DFloat, rhs: Angle2DFloat) -> Bool
+static func < (lhs: Angle2DFloat, rhs: Angle2DFloat) -> Bool
 ```
 
 #### Discussion
 
-Note that this operator compares the raw value of each angle and doesn’t normalize the values. For example, 360° does  0°.
-
-## Parameters
-
-- `lhs`: The first angle to compare.
-- `rhs`: The second angle to compare.
+Note that this operator compares the raw value of each angle and doesn’t normalize the values. For example, 360° does **not** 0°.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spatial/angle2dfloat/==(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/angle2dfloat/_(_:_:))*

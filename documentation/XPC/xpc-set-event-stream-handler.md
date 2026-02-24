@@ -21,8 +21,8 @@ Multiple calls to this function for the same event stream will result in undefin
 ## Parameters
 
 - `stream`: The name of the event stream for which this handler will be invoked.
-- `targetq`: The GCD queue to which the event handler block will be submitted. This parameter may be NULL, in which case the connection’s target queue will be the default target queue of  , defined as  .
-- `handler`: The event handler block. The event which this block receives as its first parameter will always be a dictionary which contains the   key. The value for this key will be a string whose value is the name assigned to the XPC event specified in the  . Future keys may be added to this dictionary.
+- `targetq`: The GCD queue to which the event handler block will be submitted. This parameter may be NULL, in which case the connection’s target queue will be the default target queue of `libdispatch`, defined as `DISPATCH_TARGET_QUEUE_DEFAULT`.
+- `handler`: The event handler block. The event which this block receives as its first parameter will always be a dictionary which contains the [`XPC_EVENT_KEY_NAME`](xpc_event_key_name-swift.var.md) key. The value for this key will be a string whose value is the name assigned to the XPC event specified in the `launchd.plist`. Future keys may be added to this dictionary.
 
 ## See Also
 

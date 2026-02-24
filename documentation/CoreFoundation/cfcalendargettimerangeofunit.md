@@ -31,10 +31,10 @@ The function may fail if, for example, you try to get the range of a `kCFCalenda
 ## Parameters
 
 - `calendar`: The calendar to examine.
-- `unit`: A calendar unit (for valid values, see  ).
+- `unit`: A calendar unit (for valid values, see [`CFCalendarUnit`](cfcalendarunit.md)).
 - `at`: An absolute time.
-- `startp`: Upon return, contains the beginning of the calendar unit specified by   that contains the time  .
-- `tip`: Upon return, contains the duration of the calendar unit specified by   that contains the time  .
+- `startp`: Upon return, contains the beginning of the calendar unit specified by `unit` that contains the time `at`.
+- `tip`: Upon return, contains the duration of the calendar unit specified by `unit` that contains the time `at`.
 
 ## See Also
 

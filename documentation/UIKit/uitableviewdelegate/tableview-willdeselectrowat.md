@@ -29,7 +29,7 @@ This method is only called if there is an existing selection when the user tries
 ## Parameters
 
 - `tableView`: A table view informing the delegate about the impending deselection.
-- `indexPath`: An index path locating the row in   to be deselected.
+- `indexPath`: An index path locating the row in `tableView` to be deselected.
 
 ## See Also
 

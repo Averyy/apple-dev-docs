@@ -26,8 +26,8 @@ A new data table.
 ## Parameters
 
 - `with`: Another data table to merge with this data table.
-- `columnsNamed`: If you do not provide any column names, the method uses all the columns present in both tables.
-- `type`: The type of   operation, which are equivalent to SQL   types.
+- `columnsNamed`: The name of the columns to perform the `join` operation on. The method merges all rows with matching values in these columns. If you do not provide any column names, the method uses all the columns present in both tables.
+- `type`: The type of `join` operation, which are equivalent to SQL `join` types.
 
 ## See Also
 

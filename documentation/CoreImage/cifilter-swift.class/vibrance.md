@@ -29,6 +29,9 @@ This method applies the vibrance filter to an image. The effect adjusts the satu
 
 The vibrance filter uses the following properties:
 
+- **`amount`**: A `float` representing the amount to adjust the saturation with the type [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds darkness to the input image:
 
 ```swift

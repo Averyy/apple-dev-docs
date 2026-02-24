@@ -26,7 +26,7 @@ An array of models is allowed for the case where multiple models need to be used
 
 ## Parameters
 
-- `models`: Array of   objects to be used with this tagger.
+- `models`: Array of [`NLModel`](nlmodel.md) objects to be used with this tagger.
 - `tagScheme`: The tag scheme the models would be used with.
 
 ## See Also

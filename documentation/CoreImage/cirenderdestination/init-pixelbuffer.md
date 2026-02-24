@@ -29,7 +29,7 @@ The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property w
 
 ## Parameters
 
-- `pixelBuffer`: The   render target.
+- `pixelBuffer`: The [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) render target.
 
 ## See Also
 

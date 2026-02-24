@@ -35,11 +35,11 @@ If the number of currently-inserted views in the group with `isSource = true` is
 
 ## Parameters
 
-- `id`: The identifier, often derived from the identifier of   the data being displayed by the view.
-- `namespace`: The namespace in which defines the  . New   namespaces are created by adding an   variable   to a   type and reading its value in the view’s body   method.
+- `id`: The identifier, often derived from the identifier of the data being displayed by the view.
+- `namespace`: The namespace in which defines the `id`. New namespaces are created by adding an `@Namespace` variable to a [`View`](view.md) type and reading its value in the view’s body method.
 - `properties`: The properties to copy from the source view.
-- `anchor`: The relative location in the view used to produce   its shared position value.
-- `isSource`: True if the view should be used as the source of   geometry for other views in the group.
+- `anchor`: The relative location in the view used to produce its shared position value.
+- `isSource`: True if the view should be used as the source of geometry for other views in the group.
 
 ## See Also
 

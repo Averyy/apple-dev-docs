@@ -134,7 +134,7 @@ overlayViewController?.renderer.enqueueFrame(
 
 #### Display the Remote Users Camera Feed
 
-AR Stream defines an [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView) subclass, `OverlayViewController`, that displays the remote user’s camera feed on top of the [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) by placing a  (PiP) view at the bottom left of the screen.
+AR Stream defines an [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView) subclass, `OverlayViewController`, that displays the remote user’s camera feed on top of the [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) by placing a *picture-in-picture* (PiP) view at the bottom left of the screen.
 
 ![A screenshot of the app at launch that displays the camera feed of the user’s AR experience at full size. At the bottom left, the app overlays a smaller view — or PiP view — that represents the camera feed of the remote user’s experience.](https://docs-assets.developer.apple.com/published/10a488f59f21fe469045f05871130c14/ar-streaming-pip-view.jpg)
 

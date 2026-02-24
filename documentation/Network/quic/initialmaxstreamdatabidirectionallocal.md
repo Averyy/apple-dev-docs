@@ -22,7 +22,7 @@ func initialMaxStreamDataBidirectionalLocal(_ initialMaxStreamDataBidiLocal: Int
 
 ## Parameters
 
-- `initialMaxStreamDataBidiLocal`: The value to use for the    transport parameter on a QUIC   connection.
+- `initialMaxStreamDataBidiLocal`: The value to use for the `initial_max_stream_data_bidi_local` transport parameter on a QUIC connection.
 
 
 ---

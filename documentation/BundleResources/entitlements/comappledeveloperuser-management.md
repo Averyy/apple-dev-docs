@@ -8,6 +8,10 @@ The entitlement for distinguishing between multiple user accounts on Apple TV.
 **Availability**:
 - tvOS 13.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 To configure the entitlement, add the User Management capability on your app’s target in Xcode and select the checkbox for each privilege your app requires. For more details about adding a capability, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).

@@ -29,7 +29,7 @@ Don’t use this method for updates at frame-rate frequency. For frequent textur
 ## Parameters
 
 - `cgImage`: The source image.
-- `options`: Options that specify the type of texture to create. To preserve   usage, specify the same semantic.
+- `options`: Options that specify the type of texture to create. To preserve `TextureResource` usage, specify the same semantic.
 
 ## See Also
 

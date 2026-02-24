@@ -20,12 +20,12 @@ An array of text selections.
 
 ## Parameters
 
-- `point`: A   that represents the location of the tap or click.
-- `containerLocation`: A  .
-- `anchors`: An array of   objects.
-- `modifiers`: One or more   options.
+- `point`: A `CGPoint` that represents the location of the tap or click.
+- `containerLocation`: A `NSTextLocation that describes the contasiner location`.
+- `anchors`: An array of `NSTextSelection` objects.
+- `modifiers`: One or more [`NSTextSelectionNavigation.Modifier`](nstextselectionnavigation/modifier.md) options.
 - `selecting`: A Boolean value that indicates if the selection is in drag session.
-- `bounds`: A   that defines the view area in the container’s coordinate system that can interact with events.
+- `bounds`: A `CGRect` that defines the view area in the container’s coordinate system that can interact with events.
 
 ## See Also
 

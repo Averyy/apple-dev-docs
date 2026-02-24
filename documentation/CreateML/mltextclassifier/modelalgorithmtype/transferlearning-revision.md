@@ -25,7 +25,7 @@ case transferLearning(MLTextClassifier.FeatureExtractorType, revision: Int?)
 ## Parameters
 
 - `_`: Feature extractor to be used by the transfer learning algorithm.
-- `revision`: The algorithm version. The only supported version is 1. If   defaults to the latest version.
+- `revision`: The algorithm version. The only supported version is 1. If `nil` defaults to the latest version.
 
 ## See Also
 

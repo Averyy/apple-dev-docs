@@ -27,7 +27,7 @@ Otherwise, if you don’t pass it a session, it won’t behave the same way as e
 
 ## Parameters
 
-- `audioSession`: The shared audio session, if you’re already using one in your app, to sync with the created engine. For example, pass in   if you’re using audio from  . Pass in   to use default   audio behavior.
+- `audioSession`: The shared audio session, if you’re already using one in your app, to sync with the created engine. For example, pass in [`sharedInstance()`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/sharedInstance()) if you’re using audio from [`AVAudioSession`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession). Pass in `nil` to use default [`UIKit`](https://developer.apple.com/documentation/UIKit) audio behavior.
 
 ## See Also
 

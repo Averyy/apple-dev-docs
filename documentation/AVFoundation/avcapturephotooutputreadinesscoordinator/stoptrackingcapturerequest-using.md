@@ -20,7 +20,7 @@ func stopTrackingCaptureRequest(using settingsUniqueID: Int64)
 
 ## Parameters
 
-- `settingsUniqueID`: The   value of the related photo settings object.
+- `settingsUniqueID`: The [`uniqueID`](avcapturephotosettings/uniqueid.md) value of the related photo settings object.
 
 ## See Also
 

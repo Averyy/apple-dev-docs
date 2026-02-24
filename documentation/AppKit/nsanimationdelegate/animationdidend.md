@@ -21,7 +21,7 @@ When an `NSAnimation` object reaches the end of its planned duration, it has a p
 
 ## Parameters
 
-- `animation`: The   instance that completed its run.
+- `animation`: The `NSAnimation` instance that completed its run.
 
 ## See Also
 

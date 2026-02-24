@@ -25,7 +25,7 @@ A HealthKit unit for measuring pressure based on pascals and the provided prefix
 
 ## Parameters
 
-- `prefix`: A valid metric prefix value. For the complete list of prefix values, see  .
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](hkmetricprefix.md).
 
 ## See Also
 

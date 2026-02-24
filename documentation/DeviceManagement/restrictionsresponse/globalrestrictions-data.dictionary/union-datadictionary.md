@@ -24,6 +24,10 @@ object RestrictionsResponse.GlobalRestrictions.Union
 - [object RestrictionsResponse.GlobalRestrictions.Union.ANY restriction name](restrictionsresponse/globalrestrictions-data.dictionary/union-data.dictionary/any-restriction-name-data.dictionary.md)
   A dictionary that contains unioned restriction parameters.
 
+## Properties
+
+- `ANY restriction name` (RestrictionsResponse.GlobalRestrictions.Union.ANY restriction name): The unioned restriction parameters.
+
 ## See Also
 
 - [object RestrictionsResponse.GlobalRestrictions.Intersection](restrictionsresponse/globalrestrictions-data.dictionary/intersection-data.dictionary.md)

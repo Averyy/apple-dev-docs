@@ -29,8 +29,8 @@ You should not assume that this method will be called on a specific thread. In a
 ## Parameters
 
 - `output`: The capture file output that is receiving the media data.
-- `sampleBuffer`: A   object containing the sample data and additional information about the sample, such as its format and presentation time.
-- `connection`: The   object attached to the file output from which the sample data was received.
+- `sampleBuffer`: A `CMSampleBuffer` object containing the sample data and additional information about the sample, such as its format and presentation time.
+- `connection`: The [`AVCaptureConnection`](avcaptureconnection.md) object attached to the file output from which the sample data was received.
 
 ## See Also
 

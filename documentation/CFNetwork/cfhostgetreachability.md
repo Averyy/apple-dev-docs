@@ -29,8 +29,8 @@ This function gets reachability information in a thread-safe way, but the result
 
 ## Parameters
 
-- `theHost`: The host whose reachability is to be obtained. The host must have been previously resolved. (To resolve a host, call  .) This value must not be  .
-- `hasBeenResolved`: On return, contains   if the reachability was available, otherwise   . This value may be  .
+- `theHost`: The host whose reachability is to be obtained. The host must have been previously resolved. (To resolve a host, call [`CFHostStartInfoResolution(_:_:_:)`](cfhoststartinforesolution(_:_:_:).md).) This value must not be `NULL`.
+- `hasBeenResolved`: On return, contains `TRUE` if the reachability was available, otherwise  `FALSE`. This value may be `NULL`.
 
 ## See Also
 

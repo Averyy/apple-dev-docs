@@ -28,8 +28,8 @@ Set the key update block.
 
 ## Parameters
 
-- `options`: A   instance.
-- `key_update_block`: A   block.
+- `options`: A `sec_protocol_options_t` instance.
+- `key_update_block`: A `sec_protocol_key_update_t` block.
 
 
 ---

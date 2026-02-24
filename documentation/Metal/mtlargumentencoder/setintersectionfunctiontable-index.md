@@ -23,7 +23,7 @@ func setIntersectionFunctionTable(_ intersectionFunctionTable: (any MTLIntersect
 ## Parameters
 
 - `intersectionFunctionTable`: An intersection-function table the method encodes.
-- `index`: An index of an intersection-function table within the argument buffer.   The value corresponds to either the index ID of a declaration in   Metal Shading Language (MSL) or the   property of   an   instance.
+- `index`: An index of an intersection-function table within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
 
 ## See Also
 

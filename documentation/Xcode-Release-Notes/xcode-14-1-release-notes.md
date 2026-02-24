@@ -6,6 +6,8 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
+---
+
 #### Overview
 
 Xcode 14.1 includes Swift 5.7 and SDKs for iOS 16.1, iPadOS 16.1, tvOS 16.1, watchOS 9.1, and macOS Ventura. The Xcode 14.1 release supports on-device debugging in iOS 11 and later, tvOS 11 and later, and watchOS 4 and later. Xcode 14.1 requires a Mac running macOS Monterey 12.5 or later.
@@ -21,14 +23,14 @@ Xcode 14.1 includes Swift 5.7 and SDKs for iOS 16.1, iPadOS 16.1, tvOS 16.1, wat
 ###### Known Issues
 
 - After Running a widget extension, users will need to manually start the debugging session with Debug -> Attach to Process. (99285608)
-- RealityKit’s FromToByAnimation may cause an app built with iOS 16 or macOS 13 SDKs to fail to launch on iOS 15 or macOS 12. (100228035) : Use the non-deprecated FromToByAnimation initializer which takes a `bindTarget:` parameter. If you encounter an ambiguous use error with the OrbitAnimation, using a `bindTarget:` parameter will resolve the ambiguity.
-- App Shortcuts don’t support the use of compiler directives such as `#if` within the definition of the `appShortcuts` list. (100468932) : Avoid the use of compiler directives in App Shortcuts definitions. Consider having a AppShortcutProvider unique to each platform if there are differences in App Shortcuts between platforms.
+- RealityKit’s FromToByAnimation may cause an app built with iOS 16 or macOS 13 SDKs to fail to launch on iOS 15 or macOS 12. (100228035) **Workaround**: Use the non-deprecated FromToByAnimation initializer which takes a `bindTarget:` parameter. If you encounter an ambiguous use error with the OrbitAnimation, using a `bindTarget:` parameter will resolve the ambiguity.
+- App Shortcuts don’t support the use of compiler directives such as `#if` within the definition of the `appShortcuts` list. (100468932) **Workaround**: Avoid the use of compiler directives in App Shortcuts definitions. Consider having a AppShortcutProvider unique to each platform if there are differences in App Shortcuts between platforms.
 
 ##### Build System
 
 ###### Known Issues
 
-- When removing a condition from the variant editor, the value won’t be persisted. (98149034) : Use the Build Settings Editor to remove the condition.
+- When removing a condition from the variant editor, the value won’t be persisted. (98149034) **Workaround**: Use the Build Settings Editor to remove the condition.
 
 ##### Interface Builder
 
@@ -44,7 +46,7 @@ Xcode 14.1 includes Swift 5.7 and SDKs for iOS 16.1, iPadOS 16.1, tvOS 16.1, wat
 
 ###### Known Issues
 
-- Previously released simulators may not appear in Platforms pane after logging out and back in. (100815609) : Rebooting the system restores the list of previously released simulators.
+- Previously released simulators may not appear in Platforms pane after logging out and back in. (100815609) **Workaround**: Rebooting the system restores the list of previously released simulators.
 
 ##### Source Control
 

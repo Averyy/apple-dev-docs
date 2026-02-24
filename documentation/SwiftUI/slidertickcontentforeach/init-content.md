@@ -22,8 +22,8 @@ init<V>(_ data: Data, @SliderTickBuilder<V> content: @escaping (Data.Element) ->
 
 ## Parameters
 
-- `data`: The identified data that the   instance   uses to create slider ticks dynamically.
-- `content`: The builder that creates ticks dynamically for each   element.
+- `data`: The identified data that the [`ForEach`](foreach.md) instance uses to create slider ticks dynamically.
+- `content`: The builder that creates ticks dynamically for each element.
 
 
 ---

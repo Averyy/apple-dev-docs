@@ -30,7 +30,7 @@ This function must be called by the owning thread.
 
 - `vcpu`: The instance of the vCPU.
 - `msr`: The ID of the MSR.
-- `flags`: The permission for  .
+- `flags`: The permission for `msr`.
 
 ## See Also
 

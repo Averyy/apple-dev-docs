@@ -25,7 +25,7 @@ Call [`enableStreams()`](iousbhostpipe/enablestreams().md) before this method.
 
 ## Parameters
 
-- `streamID`: A stream ID in the range of 1 to  . Retrieve   can by calling   with the  .
+- `streamID`: A stream ID in the range of 1 to *n*. Retrieve *n* can by calling [`IOUSBGetEndpointMaxStreams(_:_:_:)`](iousbgetendpointmaxstreams(_:_:_:).md) with the [`IOUSBEndpointDescriptor`](https://developer.apple.com/documentation/iokit/iousbendpointdescriptor).
 
 ## See Also
 

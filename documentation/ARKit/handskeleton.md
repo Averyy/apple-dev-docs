@@ -43,7 +43,7 @@ struct HandSkeleton
 
 ## See Also
 
-- [Happy Beam](../visionOS/happybeam.md)
+- [Happy Beam](../visionos/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
 - [class HandTrackingProvider](handtrackingprovider.md)
   A source of live data about the position of a person’s hands and hand joints.

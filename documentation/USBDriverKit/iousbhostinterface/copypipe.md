@@ -24,8 +24,8 @@ If the specified pipe doesn’t exist yet, but is part of the interface, this me
 
 ## Parameters
 
-- `address`: The address of the pipe you want. Get the address for a specific pipe from the   field of the appropriate   structure.
-- `pipe`: A variable in which to store the   object. It’s your responsibility to release this object when you finish using it.
+- `address`: The address of the pipe you want. Get the address for a specific pipe from the [`bEndpointAddress`](iousbendpointdescriptor/bendpointaddress.md) field of the appropriate [`IOUSBEndpointDescriptor`](iousbendpointdescriptor.md) structure.
+- `pipe`: A variable in which to store the [`IOUSBHostPipe`](iousbhostpipe.md) object. It’s your responsibility to release this object when you finish using it.
 
 
 ---

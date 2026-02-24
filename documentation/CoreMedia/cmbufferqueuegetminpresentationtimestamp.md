@@ -30,7 +30,7 @@ The search for earliest presentation timstamp is performed in                thi
 
 ## Parameters
 
-- `queue`:   being interrogated.
+- `queue`: `CMBufferQueue` being interrogated.
 
 ## See Also
 

@@ -26,9 +26,9 @@ func scaledBy(x: Float = 1, y: Float = 1, z: Float = 1) -> Size3DFloat
 
 ## Parameters
 
-- `x`: The scale factor on the   dimension.
-- `y`: The scale factor on the   dimension.
-- `z`: The scale factor on the   dimension.
+- `x`: The scale factor on the `x` dimension.
+- `y`: The scale factor on the `y` dimension.
+- `z`: The scale factor on the `z` dimension.
 
 
 ---

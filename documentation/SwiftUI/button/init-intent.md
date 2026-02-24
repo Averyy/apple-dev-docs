@@ -27,8 +27,8 @@ To initialize a button with a string variable, use [`init(_:intent:)`](button/in
 
 ## Parameters
 
-- `titleKey`: The key for the button’s localized title, that describes   the purpose of the button’s  .
-- `intent`: The   to execute.
+- `titleKey`: The key for the button’s localized title, that describes the purpose of the button’s `intent`.
+- `intent`: The `AppIntent` to execute.
 
 ## See Also
 

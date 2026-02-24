@@ -27,33 +27,126 @@ Interoperating with Metal and OpenGL requires macOS 10.13 or greater or iOS 11 o
 
 To create an interoperable texture, select a Core Video  pixel format, a Metal pixel format, and an OpenGL internal format that are compatible with each other. This sample provides you with a table preloaded with compatible options, and selects one based on the desired Metal pixel format:
 
+```objective-c
+for(int i = 0; i < AAPLNumInteropFormats; i++) {
+    if(pixelFormat == AAPLInteropFormatTable[i].mtlFormat) {
+        return &AAPLInteropFormatTable[i];
+    }
+}
+```
+
 ##### Create an Interoperable Texture
 
 Use a `CVPixelBuffer` as an interoperable texture to get a shared memory backing that’s synchronized across both renderers. To create the `CVPixelBuffer`, provide your Core Video  pixel format and enable OpenGL and Metal compatibility:
+
+```objective-c
+NSDictionary* cvBufferProperties = @{
+    (__bridge NSString*)kCVPixelBufferOpenGLCompatibilityKey : @YES,
+    (__bridge NSString*)kCVPixelBufferMetalCompatibilityKey : @YES,
+};
+CVReturn cvret = CVPixelBufferCreate(kCFAllocatorDefault,
+                        size.width, size.height,
+                        _formatInfo->cvPixelFormat,
+                        (__bridge CFDictionaryRef)cvBufferProperties,
+                        &_CVPixelBuffer);
+```
 
 ##### Create an Opengl Texture From the Pixel Buffer in Macos
 
 Start by creating an OpenGL Core Video texture cache from the pixel buffer:
 
+```objective-c
+cvret  = CVOpenGLTextureCacheCreate(
+                kCFAllocatorDefault,
+                nil,
+                _openGLContext.CGLContextObj,
+                _CGLPixelFormat,
+                nil,
+                &_CVGLTextureCache);
+```
+
 Then, create a `CVPixelBuffer`-backed OpenGL texture image from the texture cache:
 
+```objective-c
+cvret = CVOpenGLTextureCacheCreateTextureFromImage(
+                kCFAllocatorDefault,
+                _CVGLTextureCache,
+                _CVPixelBuffer,
+                nil,
+                &_CVGLTexture);
+```
+
 Finally, get an OpenGL texture name from the `CVPixelBuffer`-backed OpenGL texture image:
+
+```objective-c
+_openGLTexture = CVOpenGLTextureGetName(_CVGLTexture);
+```
 
 ##### Create an Opengl Es Texture From the Pixel Buffer in Ios
 
 Start by creating an OpenGL `ES` Core Video  texture cache from the pixel buffer:
 
+```objective-c
+cvret = CVOpenGLESTextureCacheCreate(kCFAllocatorDefault,
+                nil,
+                _openGLContext,
+                nil,
+                &_CVGLTextureCache);
+```
+
 Then, create a `CVPixelBuffer`-backed OpenGL `ES` texture image from the texture cache:
 
+```objective-c
+cvret = CVOpenGLESTextureCacheCreateTextureFromImage(kCFAllocatorDefault,
+                _CVGLTextureCache,
+                _CVPixelBuffer,
+                nil,
+                GL_TEXTURE_2D,
+                _formatInfo->glInternalFormat,
+                _size.width, _size.height,
+                _formatInfo->glFormat,
+                _formatInfo->glType,
+                0,
+                &_CVGLTexture);
+```
+
 Finally, get an OpenGL `ES` texture name from the `CVPixelBuffer`-backed OpenGL `ES` texture image:
+
+```objective-c
+_openGLTexture = CVOpenGLESTextureGetName(_CVGLTexture);
+```
 
 ##### Create a Metal Texture From the Pixel Buffer
 
 Start by instantiating a Metal texture cache as follows:
 
+```objective-c
+cvret = CVMetalTextureCacheCreate(
+                kCFAllocatorDefault,
+                nil,
+                _metalDevice,
+                nil,
+                &_CVMTLTextureCache);
+```
+
 Then, create a `CVPixelBuffer`-backed Metal texture image from the texture cache:
 
+```objective-c
+cvret = CVMetalTextureCacheCreateTextureFromImage(
+                kCFAllocatorDefault,
+                _CVMTLTextureCache,
+                _CVPixelBuffer, nil,
+                _formatInfo->mtlFormat,
+                _size.width, _size.height,
+                0,
+                &_CVMTLTexture);
+```
+
 Finally, get a Metal texture using the Core Video  Metal texture reference:
+
+```objective-c
+_metalTexture = CVMetalTextureGetTexture(_CVMTLTexture);
+```
 
 ##### Draw Metal Content in an Opengl View
 

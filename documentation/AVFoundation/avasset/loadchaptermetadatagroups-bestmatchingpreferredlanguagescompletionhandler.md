@@ -30,8 +30,9 @@ You can use the [`metadataItems(from:filteredAndSortedAccordingToPreferredLangua
 
 ## Parameters
 
-- `preferredLanguages`: An array of language identifiers in order of preference, each of which is an IETF BCP 47 (RFC 4646) language identifier. Call    to retrieve the list of languates the user prefers.
-- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters:
+- `preferredLanguages`: An array of language identifiers in order of preference, each of which is an IETF BCP 47 (RFC 4646) language identifier. Call  [`preferredLanguages`](https://developer.apple.com/documentation/Foundation/Locale/preferredLanguages) to retrieve the list of languates the user prefers.
+- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters: - **metadataGroups**: An array of metadata groups, which may be empty if no groups exist for the specified languages. The value is `nil` if an error occurs.
+- **error**: An error object if the request fails; otherwise, `nil`.
 
 ## See Also
 

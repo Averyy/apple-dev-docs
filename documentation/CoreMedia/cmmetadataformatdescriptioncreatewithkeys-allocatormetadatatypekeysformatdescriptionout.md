@@ -26,10 +26,12 @@ A result code. Returns `noErr` if successful.
 
 ## Parameters
 
-- `allocator`:   to be used. Pass   or   to use the default allocator.
+- `allocator`: `CFAllocator` to be used. Pass `NULL` or `kCFAllocatorDefault` to use the default allocator.
 - `metadataType`: The type of metadata (kCMMetadataFormatType_Boxed).
-- `keys`: Array of metadata keys. Each key is a dictionary of key properties. The required properties are:
-- `formatDescriptionOut`: Returns newly created metadata  .
+- `keys`: Array of metadata keys. Each key is a dictionary of key properties. The required properties are: - `kCMMetadataFormatDescriptionKey_Namespace`
+- `kCMMetadataFormatDescriptionKey_Value`
+- `kCMMetadataFormatDescriptionKey_LocalID`
+- `formatDescriptionOut`: Returns newly created metadata `CMFormatDescription`.
 
 ## See Also
 

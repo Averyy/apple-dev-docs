@@ -28,17 +28,17 @@ The `flipped` parameter lets you reorient the contents of each image when drawin
 
 - `frame`: The rectangle (specified in the current coordinate system) in which to draw the images.
 - `topLeftCorner`: The image to display in the top-left corner.
-- `topEdgeFill`: The image used to tile the space between the   and   images.
+- `topEdgeFill`: The image used to tile the space between the `topLeftCorner` and `topRightCorner` images.
 - `topRightCorner`: The image to display in the top-right corner.
-- `leftEdgeFill`: The image used to tile the space between the   and   images.
+- `leftEdgeFill`: The image used to tile the space between the `topLeftCorner` and `bottomLeftCorner` images.
 - `centerFill`: The image used to tile the center area between the other eight images.
-- `rightEdgeFill`: The image used to tile the space between the   and   images.
+- `rightEdgeFill`: The image used to tile the space between the `topRightCorner` and `bottomRightCorner` images.
 - `bottomLeftCorner`: The image to display in the bottom-left corner.
-- `bottomEdgeFill`: The image used to tile the space between the   and   images.
+- `bottomEdgeFill`: The image used to tile the space between the `bottomLeftCorner` and `bottomRightCorner` images.
 - `bottomRightCorner`: The image to display in the bottom-right corner.
 - `op`: The compositing operation to use when rendering the images.
 - `alphaFraction`: The alpha value to apply to the rendered image. This value can range between 0.0 and 1.0, with 0.0 being fully transparent and 1.0 being fully opaque.
-- `flipped`: Specify   if you are drawing the images in a flipped coordinate system; otherwise, specify  .
+- `flipped`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if you are drawing the images in a flipped coordinate system; otherwise, specify [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

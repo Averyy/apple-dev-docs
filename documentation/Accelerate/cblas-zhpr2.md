@@ -29,14 +29,14 @@ Calcuates `alpha*x*conjg(y') + conjg(alpha)*y*conjg(x') + A`, and stores the res
 ## Parameters
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
-- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are   or  .
-- `N`: Order of matrix   and the number of elements in vectors   and  .
-- `ALPHA`: Scaling factor that vector   is multiplied by.
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
-- `Y`: Vector  .
-- `INCY`: Stride within  . For example, if   is 7, every 7th element is used.
-- `AP`: Matrix   in packed storage format. Overwritten by the results on return.
+- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are `'U'` or `'L'`.
+- `N`: Order of matrix `A` and the number of elements in vectors `x` and `y`.
+- `ALPHA`: Scaling factor that vector `x` is multiplied by.
+- `X`: Vector `x`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
+- `Y`: Vector `y`.
+- `INCY`: Stride within `Y`. For example, if `incY` is 7, every 7th element is used.
+- `AP`: Matrix `A` in packed storage format. Overwritten by the results on return.
 
 ## See Also
 

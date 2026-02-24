@@ -27,7 +27,7 @@ A view that fixes this view at its ideal size in the dimensions specified by `ho
 
 #### Discussion
 
-This function behaves like [`fixedSize()`](view/fixedsize().md), except with `fixedSize(horizontal:vertical:)` the fixing of the axes can be optionally specified in one or both dimensions. For example, if you horizontally fix a text view before wrapping it in the frame view, you’re telling the text view to maintain its ideal . The view calculates this to be the space needed to represent the entire string.
+This function behaves like [`fixedSize()`](view/fixedsize().md), except with `fixedSize(horizontal:vertical:)` the fixing of the axes can be optionally specified in one or both dimensions. For example, if you horizontally fix a text view before wrapping it in the frame view, you’re telling the text view to maintain its ideal *width*. The view calculates this to be the space needed to represent the entire string.
 
 ```swift
 Text("A single line of text, too long to fit in a box.")
@@ -42,8 +42,8 @@ This can result in the view exceeding the parent’s bounds, which may or may no
 
 ## Parameters
 
-- `horizontal`: A Boolean value that indicates whether to fix the width   of the view.
-- `vertical`: A Boolean value that indicates whether to fix the height   of the view.
+- `horizontal`: A Boolean value that indicates whether to fix the width of the view.
+- `vertical`: A Boolean value that indicates whether to fix the height of the view.
 
 ## See Also
 

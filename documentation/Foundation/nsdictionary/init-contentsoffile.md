@@ -30,7 +30,7 @@ The dictionary representation in the file identified by `path` must contain only
 
 ## Parameters
 
-- `path`: A full or relative pathname. The file identified by   must contain a string representation of a property list whose root object is a dictionary.
+- `path`: A full or relative pathname. The file identified by `path` must contain a string representation of a property list whose root object is a dictionary.
 
 ## See Also
 

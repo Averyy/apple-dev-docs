@@ -34,7 +34,7 @@ For an example of how and when to use this method, see [`Converting a GPU’s co
 - `sampleBuffer`: A counter sample buffer source that contains the sample data.
 - `range`: A range that indicates which of the buffer’s samples the command resolves.
 - `destinationBuffer`: A destination buffer where the command stores the data it resolves.
-- `destinationOffset`: A starting offset, in bytes, within   where the blit pass writes the first byte of the data it resolves.
+- `destinationOffset`: A starting offset, in bytes, within `destinationBuffer` where the blit pass writes the first byte of the data it resolves.
 
 ## See Also
 

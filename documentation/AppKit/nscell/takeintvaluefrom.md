@@ -20,7 +20,7 @@ Use the [`takeIntegerValueFrom(_:)`](nscell/takeintegervaluefrom(_:).md) method 
 
 ## Parameters
 
-- `sender`: The object from which to take the value. This object must implement the   property.
+- `sender`: The object from which to take the value. This object must implement the [`intValue`](nscell/intvalue.md) property.
 
 ## See Also
 

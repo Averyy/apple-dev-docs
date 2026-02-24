@@ -28,14 +28,14 @@ For more information about the conversion windows corresponding to each postback
 
 ## Parameters
 
-- `version`:  , the SKAdNetwork version. For more information about versions, see  .
-- `adNetworkIdentifier`: Your ad network identifier. For the test environment, you may use any lowercased value. You must use the same value to verify the signature after you receive the postback on your server. Also, use the same ad network identifier in the   of the source app in the testing environment.
+- `version`: [`SKAdTestPostbackVersion`](skadtestpostbackversion.md), the SKAdNetwork version. For more information about versions, see [`SKAdNetwork release notes`](https://developer.apple.com/documentation/StoreKit/skadnetwork-release-notes).
+- `adNetworkIdentifier`: Your ad network identifier. For the test environment, you may use any lowercased value. You must use the same value to verify the signature after you receive the postback on your server. Also, use the same ad network identifier in the `Info.plist` of the source app in the testing environment.
 - `sourceIdentifier`: Four digits that represent the ad campaign.
 - `appStoreItemIdentifier`: The App Store item identifier of the advertised app.
-- `sourceAppStoreItemIdentifier`: The App Store item identifier of the app that displays the ad. This value is   in the testing environment.
+- `sourceAppStoreItemIdentifier`: The App Store item identifier of the app that displays the ad. This value is `0` in the testing environment.
 - `sourceDomain`: The domain of the website that displays the ad.
-- `fidelityType`: A value of   indicates a view-through ad presentation; a value of   indicates a StoreKit-rendered ad or a web ad.
-- `isRedownload`: SKAdNetwork version 2.0 and later. In the production environment, a Boolean flag that indicates that the customer redownloaded and reinstalled the app when the value is  .
+- `fidelityType`: A value of `0` indicates a view-through ad presentation; a value of `1` indicates a StoreKit-rendered ad or a web ad.
+- `isRedownload`: SKAdNetwork version 2.0 and later. In the production environment, a Boolean flag that indicates that the customer redownloaded and reinstalled the app when the value is `true`.
 - `postbackURL`: A URL on your server where you can receive test postbacks.
 
 ## See Also

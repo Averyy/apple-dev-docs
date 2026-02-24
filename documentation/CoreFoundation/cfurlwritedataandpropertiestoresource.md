@@ -33,9 +33,9 @@ If `url` uses an http scheme, an http `PUT` request is sent to the resource with
 ## Parameters
 
 - `url`: The resource to write.
-- `dataToWrite`: The data to write. Pass   to write only properties.
-- `propertiesToWrite`: The properties to write. Pass   to write only data. See   and   for the list of available properties.
-- `errorCode`: Upon return,   if successful, otherwise contains an error code indicating the nature of the problem. See   for a list of possible error codes.
+- `dataToWrite`: The data to write. Pass `NULL` to write only properties.
+- `propertiesToWrite`: The properties to write. Pass `NULL` to write only data. See [`File URL Properties`](file-url-properties.md) and [`HTTP URL Properties`](http-url-properties.md) for the list of available properties.
+- `errorCode`: Upon return, `0` if successful, otherwise contains an error code indicating the nature of the problem. See [`CFURLError`](cfurlerror.md) for a list of possible error codes.
 
 ## See Also
 

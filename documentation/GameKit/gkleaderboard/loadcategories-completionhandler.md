@@ -23,7 +23,9 @@ When you call this method, it creates a new background task to handle the reques
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block to call after retrieving the categories from the server. The block receives the following parameters: - ***categories***: An array of `NSString` objects that provides the categories to your game. If an error occurs, this value may be non-`nil`. In this case, the array holds whatever data GameKit downloads before the error occurs.
+- ***titles***: An array of `NSString` objects that provides localized titles for each category. If an error occurs, this value may be non-`nil`. In this case, the array holds whatever data GameKit downloads before the error occurs.
+- ***error***: If an error occurs, this error object describes the error. If the operation completes successfully, the value is `nil`.
 
 ## See Also
 

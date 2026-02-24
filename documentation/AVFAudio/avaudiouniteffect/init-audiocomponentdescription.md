@@ -25,7 +25,7 @@ A new `AVAudioUnitEffect` instance.
 
 ## Parameters
 
-- `audioComponentDescription`: The   must be one of these types  ,  ,  ,  , or  .
+- `audioComponentDescription`: The description of the audio unit to create. The `audioComponentDescription` must be one of these types `kAudioUnitType_Effect`, `kAudioUnitType_MusicEffect`, `kAudioUnitType_Panner`, `kAudioUnitType_RemoteEffect`, or `kAudioUnitType_RemoteMusicEffect`.
 
 
 ---

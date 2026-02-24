@@ -25,7 +25,7 @@ Use the returned value as the maximum number of views to retrieve from the [`cp_
 
 ## Parameters
 
-- `drawable_target`: Whether this is intended for   or  drawable
+- `drawable_target`: Whether this is intended for `built_in` or `recorder`drawable
 
 
 ---

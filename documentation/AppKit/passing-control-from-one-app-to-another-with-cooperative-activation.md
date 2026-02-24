@@ -16,6 +16,20 @@ Cooperative activation addresses this problem by making app activation a request
 
 When your app needs focus, call [`activate()`](nsapplication/activate().md) on your app’s [`shared`](nsapplication/shared.md) instance, or its shorthand version `NSApp`:
 
+**Swift**:
+
+```swift
+// Call this function when you want your app to request activation for itself.
+NSApp.activate()
+```
+
+**Objective-C**:
+
+```objc
+// Call this function when you want your app to request activation for itself.
+[NSApp activate];
+```
+
 Calling this function sends a message to the system requesting activation for the app. Requesting activation doesn’t guarantee your app gains focus. People ultimately decide which apps gain focus by activating them through their device’s user interface. But if, after considering the user’s intent and larger system context, the system honors your app’s request, your app activates.
 
 ##### Transfer Control From One App to Another By Yielding and Then Activating
@@ -35,9 +49,75 @@ For example, to pass control from your active app to another target app (such as
 2. Yield to the target app by calling [`yieldActivation(to:)`](nsapplication/yieldactivation(to:).md), passing the target app instance.
 3. Then activate the target by calling [`activate()`](nsapplication/activate().md) on the target app instance.
 
+**Swift**:
+
+```swift
+// When you want to pass control to another application.
+
+// Get an instance of the app you want to activate.
+if let targetApp = NSRunningApplication.runningApplications(withBundleIdentifier:
+                                                                "com.apple.TextEdit").first {
+    // Yield to it.
+    NSApp.yieldActivation(to:targetApp)
+    
+    // Then activate it.
+    targetApp.activate()
+}
+```
+
+**Objective-C**:
+
+```objc
+// When you want to pass control from your app to another.
+
+// Get an instance to the app you want to activate.
+NSArray<NSRunningApplication *> *targetApps = [NSRunningApplication runningApplicationsWithBundleIdentifier:@"com.apple.TextEdit"];
+NSRunningApplication *targetApp = [targetApps firstObject];
+
+if (targetApp != nil) {
+    // Yield to it.
+    [NSApp yieldActivationToApplication: targetApp];
+    
+    // Then activate it.
+    [targetApp activateWithOptions:0];
+}
+```
+
 Alternatively, if the app you want to pass control to isn’t currently running, call [`yieldActivation(toApplicationWithBundleIdentifier:)`](nsapplication/yieldactivation(toapplicationwithbundleidentifier:).md) on the `NSApp` instance, passing in the bundle identifier of the target app you want to activate.
 
+**Swift**:
+
+```swift
+// Call this function from the active process.
+// Yield to the app using the app's bundleIdentifier.
+NSApp.yieldActivation(toApplicationWithBundleIdentifier: "com.example.targetApp")
+```
+
+**Objective-C**:
+
+```objc
+// Call this function from the active process.
+// Yield to the app using the app's bundleIdentifier.
+[NSApp yieldActivationToApplicationWithBundleIdentifier: @"com.example.targetApp"];
+```
+
 Then call [`activate()`](nsapplication/activate().md) on the target app when it’s ready to gain focus.
+
+**Swift**:
+
+```swift
+// Call this function from the target process.
+// Have the app activate itself when it's ready.
+NSApp.activate()
+```
+
+**Objective-C**:
+
+```objc
+// Call this function from the target process.
+// Have the app activate itself when it's ready.
+[NSApp activate];
+```
 
 Choosing between [`NSRunningApplication`](nsrunningapplication.md) or [`NSApplication`](nsapplication.md) for activation depends on which app you want to initiate the activation. Use `NSRunningApplication` if you want the active app to control when the target app activates. Use `NSApplication` (or `NSApp`) if you want the target app to activate itself.
 

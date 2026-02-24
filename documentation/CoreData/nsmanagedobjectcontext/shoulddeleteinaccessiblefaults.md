@@ -22,7 +22,7 @@ var shouldDeleteInaccessibleFaults: Bool { get set }
 
 #### Discussion
 
-Use this property to control how the context behaves when it encounters an  — an object with no underlying data in the persistent store. For example, you might fetch an object that has a to-many relationship, but then a background context deletes the related objects from the store before you traverse that relationship.
+Use this property to control how the context behaves when it encounters an *inaccessible fault* — an object with no underlying data in the persistent store. For example, you might fetch an object that has a to-many relationship, but then a background context deletes the related objects from the store before you traverse that relationship.
 
 When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the context returns a managed object with the following characteristics:
 

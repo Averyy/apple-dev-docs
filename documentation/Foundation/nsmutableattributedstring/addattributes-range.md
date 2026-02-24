@@ -26,7 +26,7 @@ You may assign any name/value pair you wish to a range of characters. Raises an 
 
 ## Parameters
 
-- `attrs`: A dictionary containing the attributes to add. Attribute keys can be supplied by another framework or can be custom ones you define. For information about the system-supplied attribute keys, see the Constants section in  .
+- `attrs`: A dictionary containing the attributes to add. Attribute keys can be supplied by another framework or can be custom ones you define. For information about the system-supplied attribute keys, see the Constants section in [`NSAttributedString`](nsattributedstring.md).
 - `range`: The range of characters to which the specified attributes apply.
 
 ## See Also

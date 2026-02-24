@@ -31,8 +31,8 @@ The file system representation format is described in [`File System Programming 
 ## Parameters
 
 - `path`: A null-terminated C string in file system representation containing the path to represent as a URL. If this path is a relative path, it is treated as being relative to the current working directory.
-- `isDir`:   if the last path part is a directory, otherwise  .
-- `baseURL`: The base URL for the new URL object. This must be a file URL. If   is absolute, this URL is ignored.
+- `isDir`: [`true`](https://developer.apple.com/documentation/Swift/true) if the last path part is a directory, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- `baseURL`: The base URL for the new URL object. This must be a file URL. If `path` is absolute, this URL is ignored.
 
 ## See Also
 

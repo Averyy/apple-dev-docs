@@ -75,7 +75,7 @@ On return, the output tensor contains the values `[11, 22, 33, 44, 55, 66, 77, 8
 
 - `name`: The name of the argument.
 - `dataType`: The argument’s data type.
-- `shape`: An array of integers or closed ranges that define the sizes of each   dimension of the argument. Pass a negative value to specify a flexible dimension.
+- `shape`: An array of integers or closed ranges that define the sizes of each dimension of the argument. Pass a negative value to specify a flexible dimension.
 - `intent`: A constant that specifies whether the argument is input, output, or in-out.
 
 

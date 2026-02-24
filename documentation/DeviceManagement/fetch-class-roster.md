@@ -17,6 +17,10 @@ Obtain a list of classes the server manages.
 - [object RosterClassResponse](rosterclassresponse.md)
   The response that contains a list of classes.
 
+## Endpoint
+
+`POST https://mdmenrollment.apple.com/roster/class`
+
 ## Request Body
 
 The object containing the request information.

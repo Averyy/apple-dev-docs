@@ -25,8 +25,8 @@ On iOS, if the font descriptors can’t be found, the system presents the user w
 
 ## Parameters
 
-- `fontDescriptors`: An array of font descriptors to make available to the process.  The keys for describing the fonts may be a combination of  ,  , or  .
-- `completionHandler`: A block called after the request operation completes. This block takes a   parameter that contains an array of descriptors that couldn’t be resolved or found. The array can be empty if all descriptors resolved.
+- `fontDescriptors`: An array of font descriptors to make available to the process.  The keys for describing the fonts may be a combination of [`kCTFontNameAttribute`](kctfontnameattribute.md), [`kCTFontFamilyNameAttribute`](kctfontfamilynameattribute.md), or [`kCTFontRegistrationUserInfoAttribute`](kctfontregistrationuserinfoattribute.md).
+- `completionHandler`: A block called after the request operation completes. This block takes a `unresolvedFontDescriptors` parameter that contains an array of descriptors that couldn’t be resolved or found. The array can be empty if all descriptors resolved.
 
 ## See Also
 

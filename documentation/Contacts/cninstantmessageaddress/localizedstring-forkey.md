@@ -25,7 +25,7 @@ A string containing the localized property name.
 
 ## Parameters
 
-- `key`: The address property key. Specify   or  .
+- `key`: The address property key. Specify [`CNInstantMessageAddressUsernameKey`](cninstantmessageaddressusernamekey.md) or [`CNInstantMessageAddressServiceKey`](cninstantmessageaddressservicekey.md).
 
 ## See Also
 

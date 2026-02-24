@@ -28,9 +28,9 @@ This method is intended as an override point for image representation subclasses
 
 ## Parameters
 
-- `proposedDestRect`: On output, the   may have been altered. This is because a   is necessarily pixel-integral, while an   is not. In order to produce a   for rect   without distortion or double-antialiasing, we may have to produce a 5x5  , and also inflate the  . Drawing the   in the out-value   is the same as drawing the   in the in-value of proposed rect.
-- `context`: A graphics context. Can be  .
-- `hints`: An optional dictionary of hints that provide more context for selecting or generating the image. See   for a summary of the possible key-value pairs.
+- `proposedDestRect`: On input, the proposed destination rectangle for drawing the image. If `nil`, it defaults to the smallest pixel-integral rectangle containing `{{0,0}, self.size}`. The `proposedDestRect` is in user space in the reference context. On output, the `proposedDestRect` may have been altered. This is because a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) is necessarily pixel-integral, while an [`NSImage`](nsimage.md) is not. In order to produce a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) for rect `(0.5, 0.5, 4.0, 4.0)` without distortion or double-antialiasing, we may have to produce a 5x5 `CGImage`, and also inflate the `proposedDestRect`. Drawing the `CGImage` in the out-value `proposedDestRect` is the same as drawing the [`NSImage`](nsimage.md) in the in-value of proposed rect.
+- `context`: A graphics context. Can be `nil`.
+- `hints`: An optional dictionary of hints that provide more context for selecting or generating the image. See [`NSImageRep.HintKey`](nsimagerep/hintkey.md) for a summary of the possible key-value pairs.
 
 
 ---

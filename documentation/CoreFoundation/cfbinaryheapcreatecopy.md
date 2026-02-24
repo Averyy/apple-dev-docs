@@ -26,8 +26,8 @@ A new `CFBinaryHeap` object holding the same values as `heap`. The new binary he
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `capacity`: The maximum number of values that can be contained by the binary heap. The binary heap starts with the same number of values as   and can grow to this number of values. If this parameter is  , the binary heap’s maximum capacity is limited only by memory. If nonzero,   must be large enough to hold all the values in  .
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `capacity`: The maximum number of values that can be contained by the binary heap. The binary heap starts with the same number of values as `heap` and can grow to this number of values. If this parameter is `0`, the binary heap’s maximum capacity is limited only by memory. If nonzero, `capacity` must be large enough to hold all the values in `heap`.
 - `heap`: The binary heap which is to be copied. The values from the binary heap are copied as pointers into the new binary heap (that is, the values themselves are copied, not that to which the values point, if anything). However, the values are also retained by the new binary heap.
 
 ## See Also

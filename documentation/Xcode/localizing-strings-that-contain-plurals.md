@@ -30,7 +30,7 @@ Next, add the plural rules and variants to the development language version of t
 
 In the Project navigator, select the `.stringsdict` file. If it appears as a group, select the development language version of the file (the language appears in parentheses). Because a `.stringsdict` file is a property list, it appears in the property editor by default. To edit the `.stringsdict` file using the source editor, Control-click it and choose Open As > Source Code.
 
-A new `.stringsdict` file contains a dictionary with plural variants for a single formatted string. For each formatted string in your app that contains a numeric value, enter the formatted string as the key and a  dictionary as the value with the following key-value pairs:
+A new `.stringsdict` file contains a dictionary with plural variants for a single formatted string. For each formatted string in your app that contains a numeric value, enter the formatted string as the key and a *plural variant* dictionary as the value with the following key-value pairs:
 
 | Key | Value |
 | --- | --- |
@@ -63,7 +63,7 @@ For example, enter separate dictionaries for the user-facing formatted strings y
 </plist>
 ```
 
-The variable dictionary for each formatted string determines which string returns from the [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) structure, [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) macro, or similar API in your code. It contains a key-value pair for each grammatical plural variant in the language, called a .
+The variable dictionary for each formatted string determines which string returns from the [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) structure, [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) macro, or similar API in your code. It contains a key-value pair for each grammatical plural variant in the language, called a *category*.
 
 For example, the following `.stringsdict` file with English localization contains plural variants for the `zero`, `one`, and `other` categories. For the `%d home(s) found` formatted string, the API returns `No homes found` for `0`, `%d home found `for` 1`, and `%d homes found` for `other` values.
 

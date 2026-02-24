@@ -24,7 +24,7 @@ The default implementation of this method does nothing. Subclasses can override 
 
 ## Parameters
 
-- `newWindow`: The window object that will be at the root of the receiver’s new view hierarchy. This parameter may be  .
+- `newWindow`: The window object that will be at the root of the receiver’s new view hierarchy. This parameter may be `nil`.
 
 ## See Also
 

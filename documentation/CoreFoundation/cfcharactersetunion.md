@@ -22,7 +22,7 @@ func CFCharacterSetUnion(_ theSet: CFMutableCharacterSet!, _ theOtherSet: CFChar
 
 ## Parameters
 
-- `theSet`: The source character set, modified by union with  .
+- `theSet`: The source character set, modified by union with `theOtherSet`.
 - `theOtherSet`: The character set with which the union is formed.
 
 ## See Also

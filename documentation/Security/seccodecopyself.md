@@ -27,7 +27,7 @@ If the code calling this function is either a dedicated host or has called the [
 
 ## Parameters
 
-- `flags`: Optional flags; see   for possible values. Pass   for standard behavior.
+- `flags`: Optional flags; see [`SecCSFlags`](seccsflags.md) for possible values. Pass [`kSecCSDefaultFlags`](seccsflags/kseccsdefaultflags.md) for standard behavior.
 - `self`: On return, a code object representing the caller.
 
 ## See Also

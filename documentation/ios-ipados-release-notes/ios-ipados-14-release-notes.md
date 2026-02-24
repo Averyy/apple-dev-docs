@@ -72,7 +72,7 @@ The iOS & iPadOS 14 SDK provides support to develop apps for iPhone, iPad, and i
 
 ###### Known Issues
 
-- Spotlight might not appear as expected. (64121178)  Restart your device.
+- Spotlight might not appear as expected. (64121178) **Workaround:** Restart your device.
 
 ##### Key Value Observing
 
@@ -97,7 +97,7 @@ The iOS & iPadOS 14 SDK provides support to develop apps for iPhone, iPad, and i
 - New APIs are available for using `os_log` from Swift as part of the framework `os`: - A new type, [`Logger`](https://developer.apple.com/documentation/os/Logger), can be instantiated using a subsystem and category and provides methods for logging at different levels (`Logger.debug`, `Logger.error`, `Logger.fault`).
 - The `Logger` APIs support specifying most formatting and privacy options supported by legacy  [`Logging`](https://developer.apple.com/documentation/os/logging) APIs.
 - The new APIs provide significant performance improvements over the legacy APIs.
-- You can now pass Swift string interpolation to the [`os_log`](https://developer.apple.com/documentation/os/os_log) function.  The new APIs can’t be back deployed; however, the existing `os_log` API remains available for back deployment. (22539144)
+- You can now pass Swift string interpolation to the [`os_log`](https://developer.apple.com/documentation/os/os_log) function. **Note:** The new APIs can’t be back deployed; however, the existing `os_log` API remains available for back deployment. (22539144)
 
 ##### Maps
 
@@ -145,7 +145,7 @@ You can use `INMediaUserContext`, [`Core Spotlight`](https://developer.apple.com
 
 - The [`KeyboardShortcut`](https://developer.apple.com/documentation/SwiftUI/KeyboardShortcut) modifier and [`commands(content:)`](https://developer.apple.com/documentation/SwiftUI/Scene/commands(content:)) aren’t currently functional. (65704705)
 - Rebuilding against the iOS 14 SDK will modify instances of [`custom(_:size:)`](https://developer.apple.com/documentation/SwiftUI/Font/custom(_:size:)) to scale with dynamic type. To create a font which doesn’t scale with dynamic type, use [`custom(_:fixedSize:)`](https://developer.apple.com/documentation/SwiftUI/Font/custom(_:fixedSize:)). (51463566)
-- The [`SignInWithAppleButton`](https://developer.apple.com/documentation/AuthenticationServices/SignInWithAppleButton) view expands to fill its container. (64136568)  Apply a frame modifier.
+- The [`SignInWithAppleButton`](https://developer.apple.com/documentation/AuthenticationServices/SignInWithAppleButton) view expands to fill its container. (64136568) **Workaround:** Apply a frame modifier.
 
 ###### New Features
 
@@ -257,7 +257,7 @@ struct QuickNoteDocument : FileDocument {
 
 ###### Known Issues
 
-- Apps using JSONKit might quit unexpectedly on launch. Some forks of JSONKit hardcode private, pointer-representation details, which are subject to change. (60290929)  Use [`JSONSerialization`](https://developer.apple.com/documentation/Foundation/JSONSerialization) instead.
+- Apps using JSONKit might quit unexpectedly on launch. Some forks of JSONKit hardcode private, pointer-representation details, which are subject to change. (60290929) **Workaround:** Use [`JSONSerialization`](https://developer.apple.com/documentation/Foundation/JSONSerialization) instead.
 - `fstab` has been removed. You can no longer use Filesystem contents outside of an app’s sandbox for validation. (61098152)
 - Apps using the NativeScript framework might quit unexpectedly on launch. NativeScript performs an unsafe operation to determine if an arbitrary pointer is an Objective-C object pointer. You can temporarily resolve this issue by using `object_getClass` instead of reading the `isa` directly; however, update this code to avoid checking whether arbitrary pointers are Objective-C object pointers. (62913064)
 
@@ -277,7 +277,7 @@ struct QuickNoteDocument : FileDocument {
 
 ###### Known Issues
 
-- [`isPassLibraryAvailable()`](https://developer.apple.com/documentation/PassKit/PKPassLibrary/isPassLibraryAvailable()) doesn’t ensure uniform availability of pass library functionality between platforms and devices. (60697880)  Call a more specific API to check available functionality, such as [`canAddPasses()`](https://developer.apple.com/documentation/PassKit/PKAddPassesViewController/canAddPasses()).
+- [`isPassLibraryAvailable()`](https://developer.apple.com/documentation/PassKit/PKPassLibrary/isPassLibraryAvailable()) doesn’t ensure uniform availability of pass library functionality between platforms and devices. (60697880) **Workaround:** Call a more specific API to check available functionality, such as [`canAddPasses()`](https://developer.apple.com/documentation/PassKit/PKAddPassesViewController/canAddPasses()).
 
 ###### New Features
 
@@ -306,12 +306,12 @@ API_AVAILABLE(macos(10.16), ios(14.0), watchos(7.0))
 
 ###### Known Issues
 
-- When the parent app of a widget has been granted Selected Photos access, an alert might appear each time the widget runs. (66398732)  Add `PHPhotoLibraryPreventAutomaticLimitedAccessAlert = YES` to the Info.plist of the widget extension.
+- When the parent app of a widget has been granted Selected Photos access, an alert might appear each time the widget runs. (66398732) **Workaround:** Add `PHPhotoLibraryPreventAutomaticLimitedAccessAlert = YES` to the Info.plist of the widget extension.
 - All widgets must be rebuilt using the iOS & iPadOS 14 beta 4 SDK or later, and won’t run on previous versions of iOS & iPadOS 14 beta. (65290210)
-- Some widgets might disappear from your Home Screen after updating to iOS & iPadOS 14 beta 2 or later. (64823469)  Add the missing widgets back to your Home Screen.
-- You can’t resize an existing widget. (63500799)  Remove the widget and re-add it at the desired size.
+- Some widgets might disappear from your Home Screen after updating to iOS & iPadOS 14 beta 2 or later. (64823469) **Workaround:** Add the missing widgets back to your Home Screen.
+- You can’t resize an existing widget. (63500799) **Workaround:** Remove the widget and re-add it at the desired size.
 - You might need to reconfigure your widgets after updating to iOS & iPadOS 14 Beta 3 or later. (65485709)
-- The Weather widget might appear blank after updating to iOS 14 beta 6 or later. (66782070)  Tap the widget to open the Weather app, then return to the widget on the Home screen.
+- The Weather widget might appear blank after updating to iOS 14 beta 6 or later. (66782070) **Workaround:** Tap the widget to open the Weather app, then return to the widget on the Home screen.
 
 ## See Also
 

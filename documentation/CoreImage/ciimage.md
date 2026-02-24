@@ -31,6 +31,32 @@ You use `CIImage` objects in conjunction with other Core Image classes—such as
 
 Although a `CIImage` object has image data associated with it, it is not an image. You can think of a `CIImage` object as an image “recipe.” A `CIImage` object has all the information necessary to produce an image, but Core Image doesn’t actually render an image until it is told to do so. This lazy evaluation allows Core Image to operate as efficiently as possible. To show a `CIImage` object as an on-screen image, you can display it as a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) in [`UIImageView`](https://developer.apple.com/documentation/UIKit/UIImageView):
 
+**Swift**:
+
+```swift
+guard let imageURL = Bundle.main.url(forResource: "YourJPEGName", withExtension: "JPG") else {
+    print("Could not find image")
+    return
+}
+guard let let ciImage = CIImage(contentsOf: imageURL) else {
+    print("Could not create CIImage")
+    return
+}
+let uiImage = UIImage(ciImage: ciImage)
+let imageView = UIImageView(image: uiImage)    
+self.view.addSubview(imageView)
+```
+
+**Objective-C**:
+
+```objc
+NSURL* imageURL = [[NSBundle mainBundle] URLForResource:@"YourJPEGName" withExtension:@"JPG"];
+CIImage* ciImage = [CIImage imageWithContentsOfURL:imageURL];
+UIImage* uiImage = [UIImage imageWithCIImage:ciImage];
+UIImageView* imageView = [[UIImageView alloc] initWithImage:uiImage];
+[self.view addSubview:imageView];
+```
+
 `CIContext`  and `CIImage` objects are immutable, which means each can be shared safely among threads. Multiple threads can use the same GPU or CPU `CIContext` object to render `CIImage` objects.  However, this is not the case for `CIFilter` objects, which are mutable. A `CIFilter` object cannot be shared safely among threads.  If you app is multithreaded, each thread must create its own `CIFilter` objects. Otherwise, your app could behave unexpectedly.
 
 Core Image also provides auto-adjustment methods. These methods analyze an image for common deficiencies and return a set of filters to correct those deficiencies. The filters are preset with values for improving image quality by altering values for skin tones, saturation, contrast, and shadows and for removing red-eye or other artifacts caused by flash. (See Getting Autoadjustment Filters.)

@@ -8,13 +8,13 @@ Expand the market for your app by supporting multiple languages and regions.
 
 Localization is the process of translating and adapting your app into multiple languages and regions. Localize your app to provide access for users who speak a variety of languages, and who download from different App Store territories.
 
-First,  your code with APIs that automatically format and translate strings correctly for the language and region. Then add support for content that includes plural nouns and verbs by following language plural rules to increase the accuracy of your translations.
+First, *internationalize* your code with APIs that automatically format and translate strings correctly for the language and region. Then add support for content that includes plural nouns and verbs by following language plural rules to increase the accuracy of your translations.
 
 ##### Translate and Adapt Your App
 
 In Xcode, localization refers specifically to the set of resources for a specific language and region that you support.
 
-You add a localization to your project and select the resources you want to include for that language and region. Export the localization and send the files to , who translate the user-facing text and adapt resources for particular cultures and regions. Finally, you import the localized files and test the app in that language and region directly in Xcode.
+You add a localization to your project and select the resources you want to include for that language and region. Export the localization and send the files to *localizers*, who translate the user-facing text and adapt resources for particular cultures and regions. Finally, you import the localized files and test the app in that language and region directly in Xcode.
 
 When you release a localized version of your app, you can also localize the App Store information in App Store Connect for the specific territories where you offer your app.
 

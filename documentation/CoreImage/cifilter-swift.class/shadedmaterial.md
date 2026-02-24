@@ -29,6 +29,10 @@ This method applies the shaded material filter to an image. The effect produces 
 
 The shaded material filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`shadingImage`**: An image representing the color shading effect with type [`CIImage`](ciimage.md).
+- **`scale`**: A `float` representing the strength of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in an image containing glossy text by applying the shading image.
 
 ```swift

@@ -20,7 +20,7 @@ init(_ hoverEffect: HoverEffectComponent.HoverEffect)
 
 ## Parameters
 
-- `hoverEffect`: A hover effect that defines   the visualization of this component.
+- `hoverEffect`: A hover effect that defines the visualization of this component.
 
 
 ---

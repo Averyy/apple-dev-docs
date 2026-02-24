@@ -40,9 +40,9 @@ Standard JavaScript practice calls for objects that implement the [`callAsConstr
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `constructor`: The   that is the target of the   expression.
-- `possibleInstance`: The   to test to determine if it’s an instance of  .
-- `exception`: A pointer to a   to return an exception in, if any.
+- `constructor`: The [`JSObjectRef`](jsobjectref.md) that is the target of the `instanceof` expression.
+- `possibleInstance`: The [`JSValueRef`](jsvalueref.md) to test to determine if it’s an instance of `constructor`.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to return an exception in, if any.
 
 ## See Also
 

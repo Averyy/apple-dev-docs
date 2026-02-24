@@ -17,7 +17,7 @@ func setAllowsSleeping(_ allowed: Bool) throws
 
 ## Parameters
 
-- `allowed`: A Bool where true indicates that the process will allow the CPU to   idle sleep even if there is audio IO in progress.
+- `allowed`: A Bool where true indicates that the process will allow the CPU to idle sleep even if there is audio IO in progress.
 
 
 ---

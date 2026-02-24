@@ -29,8 +29,8 @@ The resume call fails with [`featureUnsupported`](cocoaerror/featureunsupported.
 ## Parameters
 
 - `url`: The URL of the item for which to resume sync.
-- `behavior`: A   value that tells the file manager how to handle conflicts between local and remote versions of files.
-- `completionHandler`: A closure or block that the framework calls when the resume action completes. It receives a single   parameter to indicate an error that prevented the resume action; the value is   if the resume succeeded. In Swift, you can omit the completion handler and catch the thrown error instead.
+- `behavior`: A [`NSFileManagerResumeSyncBehavior`](nsfilemanagerresumesyncbehavior.md) value that tells the file manager how to handle conflicts between local and remote versions of files.
+- `completionHandler`: A closure or block that the framework calls when the resume action completes. It receives a single [`NSError`](nserror.md) parameter to indicate an error that prevented the resume action; the value is `nil` if the resume succeeded. In Swift, you can omit the completion handler and catch the thrown error instead.
 
 ## See Also
 

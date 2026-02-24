@@ -29,6 +29,10 @@ This method applies a 1 x 9 convolution filter to the `RGBA` components of an im
 
 The convolution-9-vertical filter uses the following properties:
 
+- **`bias`**: A `float` representing the value that’s added to each output pixel as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`weights`**: A [`CIVector`](civector.md) representing the convolution kernel.
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 > **Note**:  When using a nonzero `bias` value, the output image has an infinite extent. You should crop the output image before attempting to render it.
 
 The following code creates a filter that detects edges in the input image:

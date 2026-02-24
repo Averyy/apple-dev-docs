@@ -21,10 +21,10 @@ An [`MLDataTable`](mldatatable.md) containing columns with user identifiers, ite
 ## Parameters
 
 - `fromUsers`: An array of user identifiers.
-- `maxCount`: The maximum number of recommendations per user. The default is  .
-- `restrictingToItems`: An array of item identifiers that defines the only values the recommender can use this   set of recommendations. By default, the parameter is  , meaning there are no restrictions.
-- `userItemObservations`: A data table of user-item observations to exclude from recommendations. The default   is  , meaning no observations are excluded. The column names for the user identifiers and item   identifiers must be the same as those provided in the training data.
-- `excludingObserved`: Set this value to   to omit training data from the recommendations, or   to   include them. The default is  .
+- `maxCount`: The maximum number of recommendations per user. The default is `10`.
+- `restrictingToItems`: An array of item identifiers that defines the only values the recommender can use this set of recommendations. By default, the parameter is `nil`, meaning there are no restrictions.
+- `userItemObservations`: A data table of user-item observations to exclude from recommendations. The default is `nil`, meaning no observations are excluded. The column names for the user identifiers and item identifiers must be the same as those provided in the training data.
+- `excludingObserved`: Set this value to `true` to omit training data from the recommendations, or `false` to include them. The default is `true`.
 
 ## See Also
 

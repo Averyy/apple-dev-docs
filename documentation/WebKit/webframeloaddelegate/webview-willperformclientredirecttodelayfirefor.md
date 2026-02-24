@@ -22,7 +22,7 @@ Delegates might implement this method to display progress while a client redirec
 
 - `sender`: The web view containing the frame.
 - `URL`: The redirect location.
-- `seconds`: The number of seconds from   before the redirect will be fired.
+- `seconds`: The number of seconds from `date` before the redirect will be fired.
 - `date`: The date and time to call the redirect.
 - `frame`: The frame where the redirect occurred.
 

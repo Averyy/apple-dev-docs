@@ -26,7 +26,8 @@ class func loadAchievements() async throws -> [GKAchievement]
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block that GameKit calls when this method loads the achievements. The block receives the following parameters: - **`achievements`**: The achievements that you previously reported progress for the local player.
+- **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

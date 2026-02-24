@@ -26,7 +26,7 @@ FFERR_INVALIDPARAM
 ## Parameters
 
 - `deviceReference`: An opaque reference handle to the device object that is be disposed of. This handle is obtained from a previous call to FFCreateDevice.
-- `property`: FFPROP_FFGAIN
+- `property`: The following property values are defined for a FF device (see FFDeviceSetForceFeedbackProperty for details): FFPROP_AUTOCENTER FFPROP_FFGAIN
 - `pValue`: Address of the location where the value associated with the property is to be stored. GetForceFeedbackProperty assumes that the pointer is valid, although it will perform a size check before writing the data to pValue
 - `valueSize`: Size, in bytes, of data area pointed to by pValue. Size is compared to expected property size, and the function fails if a mismatch occurs.
 

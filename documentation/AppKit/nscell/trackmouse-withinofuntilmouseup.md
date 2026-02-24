@@ -28,8 +28,8 @@ This method first invokes [`startTracking(at:in:)`](nscell/starttracking(at:in:)
 
 - `event`: The event that caused the mouse tracking to occur.
 - `cellFrame`: The receiver’s frame rectangle.
-- `controlView`: The view containing the receiver. This is usually an   object.
-- `flag`: If  , mouse tracking continues until the user releases the mouse button. If  , tracking continues until the cursor leaves the tracking rectangle, specified by the   parameter, regardless of the mouse button state. See the discussion for more information.
+- `controlView`: The view containing the receiver. This is usually an `NSControl` object.
+- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), mouse tracking continues until the user releases the mouse button. If [`false`](https://developer.apple.com/documentation/Swift/false), tracking continues until the cursor leaves the tracking rectangle, specified by the `cellFrame` parameter, regardless of the mouse button state. See the discussion for more information.
 
 ## See Also
 

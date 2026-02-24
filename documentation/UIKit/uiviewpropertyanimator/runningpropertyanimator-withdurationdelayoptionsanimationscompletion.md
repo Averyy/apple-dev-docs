@@ -30,9 +30,9 @@ This method creates the property animator object, configures it, and calls its [
 
 - `duration`: The duration of the animation, in seconds.
 - `delay`: The number of seconds to wait before starting the animations. Specify 0 to begin the animations immediately.
-- `options`: The options to apply to the animations. You can specify most options, but transition-related options and options related to the animation direction are ignored. For a list of options, see  .
+- `options`: The options to apply to the animations. You can specify most options, but transition-related options and options related to the animation direction are ignored. For a list of options, see [`UIView.AnimationOptions`](uiview/animationoptions.md).
 - `animations`: The block containing the animations. This block has no return value and takes no parameters. Use this block to modify any animatable properties of your view. Those properties are animated from their current values to the new values using the specified animation parameters.
-- `completion`: The block to execute when the animations finish. You can use this block to perform any final actions. This block has no return value and takes the following parameter:
+- `completion`: The block to execute when the animations finish. You can use this block to perform any final actions. This block has no return value and takes the following parameter: - **finalPosition**: The ending position of the animations. Use this value to determine whether the animations stopped at the beginning, end, or somewhere in the middle.
 
 ## See Also
 

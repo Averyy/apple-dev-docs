@@ -22,7 +22,7 @@ case type1
 
 #### Discussion
 
-This is documented in , which is available from [`http://partners.adobe.com/`](https://developer.apple.comhttp://partners.adobe.com/).
+This is documented in *Adobe Type 1 Font Format*, which is available from [`http://partners.adobe.com/`](https://developer.apple.comhttp://partners.adobe.com/).
 
 ## See Also
 

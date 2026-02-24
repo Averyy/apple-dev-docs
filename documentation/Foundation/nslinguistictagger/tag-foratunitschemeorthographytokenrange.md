@@ -31,8 +31,8 @@ This is a convenience method for initializing a linguistic tagger, setting the [
 ## Parameters
 
 - `string`: The position of the initial character.
-- `charIndex`: The linguistic unit. See   for possible values.
-- `unit`: The tag scheme. See   for possible values.
+- `charIndex`: The linguistic unit. See [`NSLinguisticTaggerUnit`](nslinguistictaggerunit.md) for possible values.
+- `unit`: The tag scheme. See [`NSLinguisticTagScheme`](nslinguistictagscheme.md) for possible values.
 - `scheme`: A pointer to the token range.
 
 ## See Also

@@ -28,8 +28,8 @@ Set the PSK selection block.
 
 ## Parameters
 
-- `options`: A   instance.
-- `psk_selection_block`: A   block.
+- `options`: A `sec_protocol_options_t` instance.
+- `psk_selection_block`: A `sec_protocol_pre_shared_key_selection_t` block.
 
 
 ---

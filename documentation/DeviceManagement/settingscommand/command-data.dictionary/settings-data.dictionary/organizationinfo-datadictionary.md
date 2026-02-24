@@ -25,6 +25,11 @@ object SettingsCommand.Command.Settings.OrganizationInfo
 - [object SettingsCommand.Command.Settings.OrganizationInfo.OrganizationInfo](settingscommand/command-data.dictionary/settings-data.dictionary/organizationinfo-data.dictionary/organizationinfo-data.dictionary.md)
   A dictionary that contains information about the organization operating the MDM server.
 
+## Properties
+
+- `Item` (string) *(required)*: The string that defines this setting type.
+- `OrganizationInfo` (SettingsCommand.Command.Settings.OrganizationInfo.OrganizationInfo): A dictionary that contains information about the organization operating the MDM server. Omit this setting to remove existing information.
+
 ## See Also
 
 - [object SettingsCommand.Command.Settings.AccessibilitySettings](settingscommand/command-data.dictionary/settings-data.dictionary/accessibilitysettings-data.dictionary.md)

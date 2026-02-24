@@ -35,7 +35,7 @@ text.skipsTranslation = true
 
 ## Parameters
 
-- `keyPath`: A key path to a property in the   scope.
+- `keyPath`: A key path to a property in the `TranslationAttributes` scope.
 
 
 ---

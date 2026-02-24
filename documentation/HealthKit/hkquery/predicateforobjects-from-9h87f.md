@@ -29,6 +29,25 @@ When creating the device objects for this predicate, only pass in values for the
 
 The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+let fromDevices = HKQuery.predicateForObjectsFromDevices(devices)
+ 
+let explicitFromDevices =
+    NSPredicate(format: "%K IN %@", HKPredicateKeyPathDevice, devices)
+```
+
+**Objective-C**:
+
+```objc
+NSPredicate *fromDevices = [HKQuery predicateForObjectsFromDevices:devices];
+ 
+NSPredicate *explicitFromDevices = [NSPredicate predicateWithFormat:@"%K IN %@",
+                                    HKPredicateKeyPathDevice,
+                                    devices];
+```
+
 ## Parameters
 
 - `devices`: A set of devices that have generated the data for objects stored in the HealthKit store.

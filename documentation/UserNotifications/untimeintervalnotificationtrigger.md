@@ -28,6 +28,21 @@ Listing 1 creates a trigger that delivers its notification one time after 30 min
 
 Listing 1. Creating a trigger that fires in 30 minutes
 
+**Swift**:
+
+```swift
+// Fire in 30 minutes (60 seconds times 30)
+let trigger = UNTimeIntervalNotificationTrigger(timeInterval: (30*60), repeats: false)
+```
+
+**Objective-C**:
+
+```objc
+// Fire in 30 minutes (60 seconds times 30)
+UNTimeIntervalNotificationTrigger* trigger = [UNTimeIntervalNotificationTrigger
+                     triggerWithTimeInterval:(30*60) repeats: NO];
+```
+
 ## Topics
 
 ### Creating a Time Interval Trigger

@@ -26,7 +26,8 @@ The system performs this request asynchronously. After the user has finished res
 
 ## Parameters
 
-- `completion`: A block that is called after the user finishes responding to the request. This block is passed the following parameters:
+- `completion`: A block that is called after the user finishes responding to the request. This block is passed the following parameters: - **success**: A Boolean value that indicates whether the user responded to the prompt (if any). This value does not indicate whether permission was actually granted. This parameter is [`false`](https://developer.apple.com/documentation/Swift/false) if the user canceled the prompt without selecting permissions; otherwise, [`true`](https://developer.apple.com/documentation/Swift/true).
+- **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`.
 
 ## See Also
 

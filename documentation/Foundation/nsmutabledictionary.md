@@ -30,7 +30,21 @@ The `NSMutableDictionary` class declares the programmatic interface to objects t
 
 ##### Setting Values Using Subscripting
 
-In addition to the provided instance methods, such as [`setObject(_:forKey:)`](nsmutabledictionary/setobject(_:forkey:).md), you can access `NSDictionary` values by their keys using .
+In addition to the provided instance methods, such as [`setObject(_:forKey:)`](nsmutabledictionary/setobject(_:forkey:).md), you can access `NSDictionary` values by their keys using *subscripting*.
+
+**Swift**:
+
+```swift
+let value = "someValue"
+mutableDictionary["someKey"] = value
+```
+
+**Objective-C**:
+
+```objc
+id value = @"someValue";
+mutableDictionary[@"someKey"] = value;
+```
 
 ##### Subclassing Notes
 

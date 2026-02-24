@@ -28,7 +28,7 @@ This may be called before the connection is ready, in which case the send will b
 
 - `content`: A string to send.
 - `builder`: A builder for specifying metadata about the content to send.
-- `handler`: A handler that will be invoked immediately, and will be passed a closure   that should be called repeatedly until all text content is sent.   Intermediate invocations of the send closure must be invoked with    set to false. The last call to the send closure must be   invoked with   set to true.
+- `handler`: A handler that will be invoked immediately, and will be passed a closure that should be called repeatedly until all text content is sent. Intermediate invocations of the send closure must be invoked with `isComplete` set to false. The last call to the send closure must be invoked with `isComplete` set to true.
 
 
 ---

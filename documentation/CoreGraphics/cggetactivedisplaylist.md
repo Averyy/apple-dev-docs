@@ -27,9 +27,9 @@ Note that when using hardware mirroring between displays, only the primary displ
 
 ## Parameters
 
-- `maxDisplays`: The size of the   array. This value determines the maximum number of displays the list includes.
-- `activeDisplays`: A pointer to storage you provide for an array of display IDs. On return, the array contains a list of active displays. If you pass  , on return the display count contains the total number of active displays.
-- `displayCount`: A pointer to a display count variable you provide. On return, the display count contains the actual number of displays the function added to the   array. This value is at most  .
+- `maxDisplays`: The size of the `activeDisplays` array. This value determines the maximum number of displays the list includes.
+- `activeDisplays`: A pointer to storage you provide for an array of display IDs. On return, the array contains a list of active displays. If you pass `NULL`, on return the display count contains the total number of active displays.
+- `displayCount`: A pointer to a display count variable you provide. On return, the display count contains the actual number of displays the function added to the `activeDisplays` array. This value is at most `maxDisplays`.
 
 ## See Also
 

@@ -38,7 +38,7 @@ This affects all system button styles, as well as automatically affects custom `
 
 ## Parameters
 
-- `behavior`: A value of   means that buttons should   enable repeating behavior and a value of   means that buttons   should disallow repeating behavior.
+- `behavior`: A value of `enabled` means that buttons should enable repeating behavior and a value of `disabled` means that buttons should disallow repeating behavior.
 
 ## See Also
 

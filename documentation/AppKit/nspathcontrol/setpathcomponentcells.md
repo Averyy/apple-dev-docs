@@ -20,7 +20,7 @@ Each item in the array must be an instance of `NSPathComponentCell` or a subclas
 
 ## Parameters
 
-- `cells`: An array of   objects.
+- `cells`: An array of `NSPathComponentCell` objects.
 
 ## See Also
 

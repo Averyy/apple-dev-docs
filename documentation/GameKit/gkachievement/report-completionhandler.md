@@ -28,7 +28,7 @@ When this method is called, it creates a new background task to handle the reque
 
 ## Parameters
 
-- `completionHandler`: The block takes the following parameter:
+- `completionHandler`: A block to be called after the operation completes. The block takes the following parameter: - ***error***: If the operation was successful, this value is `nil`; otherwise, this parameter holds an object that describes the problem that occurred.
 
 ## See Also
 

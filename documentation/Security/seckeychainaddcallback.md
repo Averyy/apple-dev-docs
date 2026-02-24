@@ -26,8 +26,8 @@ For that reason, it is inadvisable for your program to depend on delivery of not
 
 ## Parameters
 
-- `callbackFunction`: A pointer to your keychain event callback function, described in  .
-- `eventMask`: A bit mask indicating the keychain events of which your application wishes to be notified. See   for valid values. Keychain Services tests this mask to determine the keychain events that you wish to receive, and passes these events in the   parameter of your callback function.
+- `callbackFunction`: A pointer to your keychain event callback function, described in [`SecKeychainCallback`](seckeychaincallback.md).
+- `eventMask`: A bit mask indicating the keychain events of which your application wishes to be notified. See [`SecKeychainEventMask`](seckeychaineventmask.md) for valid values. Keychain Services tests this mask to determine the keychain events that you wish to receive, and passes these events in the `keychainEvent` parameter of your callback function.
 - `userContext`: A pointer to application-defined storage that will be passed to your callback function. Your application can use this to associate any particular call of this function with any particular call of your keychain event callback function.
 
 

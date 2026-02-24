@@ -20,7 +20,7 @@ func go(toBackForwardItem item: WebHistoryItem!) -> Bool
 
 ## Parameters
 
-- `item`: The index of the location to load. This method sets the current item in the back-forward list to  .
+- `item`: The index of the location to load. This method sets the current item in the back-forward list to `item`.
 
 ## See Also
 

@@ -340,7 +340,7 @@ You can use Quartz Display Services to:
 
 - [Quartz Display Services Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/QuartzDisplayServicesConceptual/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004316)
 - [Quartz Event Services](quartz-event-services.md)
-  Provides features for managing —filters for observing and altering the stream of low-level user input events in macOS.
+  Provides features for managing *event taps*—filters for observing and altering the stream of low-level user input events in macOS.
 - [Quartz Window Services](quartz-window-services.md)
   Provides information about the windows managed by the macOS window server.
 

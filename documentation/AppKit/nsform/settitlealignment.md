@@ -20,7 +20,7 @@ The default alignment is `NSRightTextAlignment`.
 
 ## Parameters
 
-- `mode`: The alignment can be one of the following constants:  ,  , or  .
+- `mode`: The alignment can be one of the following constants: `NSRightTextAlignment`, `NSCenterTextAlignment`, or `NSLeftTextAlignment`.
 
 ## See Also
 

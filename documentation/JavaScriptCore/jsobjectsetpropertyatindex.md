@@ -26,10 +26,10 @@ Calling [`JSObjectSetPropertyAtIndex(_:_:_:_:_:)`](jsobjectsetpropertyatindex(_:
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The   with the property you want to set.
+- `object`: The [`JSObjectRef`](jsobjectref.md) with the property you want to set.
 - `propertyIndex`: The property’s name as a number.
-- `value`: A   to use as the property’s value.
-- `exception`: A pointer to a   to store an exception in, if any. Pass   to discard any exception.
+- `value`: A [`JSValueRef`](jsvalueref.md) to use as the property’s value.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 

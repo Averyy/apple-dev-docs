@@ -29,7 +29,7 @@ This method returns an instance of the [`HKCorrelationType`](hkcorrelationtype.m
 
 ## Parameters
 
-- `identifier`: A correlation type identifier. For a list of valid identifiers, see  .
+- `identifier`: A correlation type identifier. For a list of valid identifiers, see [`HKCorrelationTypeIdentifier`](hkcorrelationtypeidentifier.md).
 
 ## See Also
 

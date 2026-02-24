@@ -20,7 +20,7 @@ convenience init?(alpha: Float, transposesX: Bool, transposesY: Bool)
 
 ## Parameters
 
-- `alpha`: A scalar value you specify to scale the left-hand side,  .
+- `alpha`: A scalar value you specify to scale the left-hand side, `C = alpha x A x B`.
 - `transposesX`: A Boolean that specifies whether you choose to transpose the last two dimensions of x.
 - `transposesY`: A Boolean that specifies whether you choose to transpose the last two dimensions of y.
 

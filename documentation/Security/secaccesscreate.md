@@ -24,9 +24,9 @@ Use this method to create a default access instance containing three ACL entries
 
 ![Diagram showing the contents of the default access instance, including three entries, each with specific operations and trusted apps.](https://docs-assets.developer.apple.com/published/7bb43362f99e782e9a44a92221966583/media-2983147%402x.png)
 
--  Determines who can modify the access instance, because it contains the [`kSecACLAuthorizationChangeACL`](ksecaclauthorizationchangeacl.md) authorization. The owner entry’s list of trusted apps is empty, so the user is always prompted for permission if someone tries to change the access instance. All access instances must have exactly one owner entry, so this item can’t be removed, although you can modify it.
--  Applies to operations not considered secure, namely encrypting data. This ACL entry trusts all apps by default, because its array of trusted apps is set to `nil`.
--  Applies to operations that are considered sensitive, such as decrypting, signing, deriving keys, and exporting keys. The method applies the list of apps given in the `trustedlist` parameter to this entry. If you set `trustedlist` to `nil`, the list of trusted apps contains only the calling app.
+- **Owner entry.** Determines who can modify the access instance, because it contains the [`kSecACLAuthorizationChangeACL`](ksecaclauthorizationchangeacl.md) authorization. The owner entry’s list of trusted apps is empty, so the user is always prompted for permission if someone tries to change the access instance. All access instances must have exactly one owner entry, so this item can’t be removed, although you can modify it.
+- **Safe entry.** Applies to operations not considered secure, namely encrypting data. This ACL entry trusts all apps by default, because its array of trusted apps is set to `nil`.
+- **Restricted entry.** Applies to operations that are considered sensitive, such as decrypting, signing, deriving keys, and exporting keys. The method applies the list of apps given in the `trustedlist` parameter to this entry. If you set `trustedlist` to `nil`, the list of trusted apps contains only the calling app.
 
 ##### Retrieving and Modifying Acl Entries
 
@@ -36,9 +36,9 @@ You then apply the fully configured access instance to a keychain item by settin
 
 ## Parameters
 
-- `descriptor`: This isn’t necessarily the name that appears in the Keychain Access app.
-- `trustedlist`: Use   to trust only the calling app. Use an empty array to indicate no apps are trusted.
-- `accessRef`: On return, points to the new access instance. In Objective-C, call   to release this instance when you are finished using it.
+- `descriptor`: The name of the keychain item as it should appear in security dialogs, such as when an untrusted app tries to gain access to the item and the system prompts the user for permission. Use a name that gives users enough information to make a decision about this item. If you only store one item, a simple description like “Server password” might be sufficient. If you store many similar items, you might need to be more specific. This isn’t necessarily the name that appears in the Keychain Access app.
+- `trustedlist`: An array of [`SecTrustedApplication`](sectrustedapplication.md) instances specifying which apps should be allowed to access the item for restricted operations without triggering confirmation dialogs. Use `nil` to trust only the calling app. Use an empty array to indicate no apps are trusted.
+- `accessRef`: On return, points to the new access instance. In Objective-C, call [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to release this instance when you are finished using it.
 
 
 ---

@@ -35,7 +35,7 @@ This method is invoked before a document is parsed. The substituted class must b
 
 ## Parameters
 
-- `cls`: A   object identifying an NSXML class that is to be replaced by your custom class.
+- `cls`: A `Class` object identifying an NSXML class that is to be replaced by your custom class.
 
 ## See Also
 

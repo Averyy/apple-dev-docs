@@ -17,9 +17,9 @@ Suite failures are most commonly reported during suite-level setup and teardown.
 
 ## Parameters
 
-- `testSuite`: The test suite that failed. Additional information about the suite can be retrieved from the test suite’s associated  .
+- `testSuite`: The test suite that failed. Additional information about the suite can be retrieved from the test suite’s associated [`XCTestRun`](xctestrun.md).
 - `description`: A textual description of the failure.
-- `filePath`: The path to the file in the failure occurred, or   if the file path is unknown.
+- `filePath`: The path to the file in the failure occurred, or `nil` if the file path is unknown.
 - `lineNumber`: The line number on which the failure was reported.
 
 ## See Also

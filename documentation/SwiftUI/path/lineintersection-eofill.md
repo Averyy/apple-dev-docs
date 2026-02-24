@@ -33,7 +33,7 @@ Intersected subpaths that are clipped create open subpaths. Closed subpaths that
 ## Parameters
 
 - `other`: The path to intersect.
-- `eoFill`: Whether to use the even-odd rule for determining   which areas to treat as the interior of the paths (if true),   or the non-zero rule (if false).
+- `eoFill`: Whether to use the even-odd rule for determining which areas to treat as the interior of the paths (if true), or the non-zero rule (if false).
 
 ## See Also
 

@@ -30,7 +30,7 @@ Calling the function [`CFPreferencesSetAppValue(_:_:_:)`](cfpreferencessetappval
 
 ## Parameters
 
-- `applicationID`: The ID of the application whose preferences to write to storage, typically  . Do not pass   or  . Takes the form of a Java package name,  .
+- `applicationID`: The ID of the application whose preferences to write to storage, typically [`kCFPreferencesCurrentApplication`](kcfpreferencescurrentapplication.md). Do not pass `NULL` or [`kCFPreferencesAnyApplication`](kcfpreferencesanyapplication.md). Takes the form of a Java package name, `com.foosoft`.
 
 ## See Also
 

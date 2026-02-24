@@ -30,7 +30,7 @@ After initialization, use the [`setViewControllers(_:direction:animated:completi
 
 - `style`: The style for transitions between pages.
 - `navigationOrientation`: The orientation of the page-by-page navigation.
-- `options`: A dictionary of options. For keys, see  .
+- `options`: A dictionary of options. For keys, see [`UIPageViewController.OptionsKey`](uipageviewcontroller/optionskey.md).
 
 ## See Also
 

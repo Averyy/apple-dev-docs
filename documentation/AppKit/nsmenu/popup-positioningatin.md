@@ -29,7 +29,7 @@ If `view` is `nil`, the location is interpreted in the screen coordinate system.
 ## Parameters
 
 - `item`: The menu item to be positioned at the specified location in the view.
-- `location`: The location in the   coordinate system to display the menu item.
+- `location`: The location in the `view` coordinate system to display the menu item.
 - `view`: The view to display the menu item over.
 
 ## See Also

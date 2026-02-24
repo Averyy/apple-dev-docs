@@ -16,6 +16,12 @@ A dictionary that contains details about a declarative managed app’s managed c
 object StatusAppManagedListManagedConfigurationStateObject
 ```
 
+## Properties
+
+- `state` (string) *(required)*: The managed configuration status. - `unknown`: The managed configuration has not been read
+- `invalid`: The managed configuration was read and deemed to be invalid
+- `valid`: The managed configuration was read and deemed to be valid
+
 ## See Also
 
 - [object StatusAppManagedListManagedConfiguration_ExtensionConfigStateObject](statusappmanagedlistmanagedconfiguration_extensionconfigstateobject.md)

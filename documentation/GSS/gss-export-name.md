@@ -25,8 +25,8 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
-- `input_name`: The mechanism name to export. You typically obtain a name in this format from either the   or the   function.
-- `exported_name`: A buffer the function fills with a contiguous octet format version of the name. Release the buffer with a call to   when you are done with it.
+- `input_name`: The mechanism name to export. You typically obtain a name in this format from either the [`gss_accept_sec_context(_:_:_:_:_:_:_:_:_:_:_:)`](gss_accept_sec_context(_:_:_:_:_:_:_:_:_:_:_:).md) or the [`gss_canonicalize_name(_:_:_:_:)`](gss_canonicalize_name(_:_:_:_:).md) function.
+- `exported_name`: A buffer the function fills with a contiguous octet format version of the name. Release the buffer with a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md) when you are done with it.
 
 ## See Also
 

@@ -26,7 +26,7 @@ The initialized calendar, or `nil` if the identifier is unknown (if, for example
 
 ## Parameters
 
-- `ident`: The identifier for the new calendar. For valid identifiers, see  .
+- `ident`: The identifier for the new calendar. For valid identifiers, see `Calendar Identifiers`.
 
 ## See Also
 

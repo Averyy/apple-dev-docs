@@ -23,7 +23,7 @@ virtual kern_return_t SetEnableWithCompletion(bool enable, IODispatchSourceCance
 
 ## Parameters
 
-- `enable`: A Boolean value that indicates whether to enable the dispatch source. Specify   to enable the dispatch source, or   to disable it.
+- `enable`: A Boolean value that indicates whether to enable the dispatch source. Specify `true` to enable the dispatch source, or `false` to disable it.
 - `handler`: An optional block to execute when disabling the dispatch source. The dispatch source executes it after all pending interrupts finish executing.
 
 ## See Also

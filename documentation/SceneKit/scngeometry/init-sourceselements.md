@@ -32,8 +32,8 @@ Each [`SCNGeometryElement`](scngeometryelement.md) object describes how vertices
 
 ## Parameters
 
-- `sources`: An array of   objects describing vertices in the geometry and their attributes.
-- `elements`: An array of   objects describing how to connect the geometry’s vertices.
+- `sources`: An array of [`SCNGeometrySource`](scngeometrysource.md) objects describing vertices in the geometry and their attributes.
+- `elements`: An array of [`SCNGeometryElement`](scngeometryelement.md) objects describing how to connect the geometry’s vertices.
 
 
 ---

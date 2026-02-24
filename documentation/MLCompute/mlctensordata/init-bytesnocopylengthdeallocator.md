@@ -25,7 +25,7 @@ A new `MLCTensorData` instance.
 ## Parameters
 
 - `bytes`: A buffer that contains data.
-- `length`: The number of bytes you want to reference from  . This number must not exceed the length of  .
+- `length`: The number of bytes you want to reference from `bytes`. This number must not exceed the length of `bytes`.
 - `deallocator`: A callback to invoke after the system deallocates the object instance.
 
 ## See Also

@@ -30,7 +30,7 @@ This method raises an [`invalidArgumentException`](nsexceptionname/invalidargume
 
 ## Parameters
 
-- `path`: A path to a file that contains an object graph previously encoded by  .
+- `path`: A path to a file that contains an object graph previously encoded by `NSKeyedArchiver`.
 
 ## See Also
 

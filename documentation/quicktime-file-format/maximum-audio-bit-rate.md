@@ -4,6 +4,11 @@
 
 #### Overview
 
+- **Containing profile atom**: Track (sound), movie
+- **`part-ID`**: `0x20202020` (universal feature)
+- **`feature-code`**: `'mabr'`
+- **`feature-value`**: Unsigned `int(32)` indicating maximum audio bit rate in bits per second
+
 #### Feature Values
 
 The value is an unsigned 32-bit integer indicating the maximum audio bit rate in bits per second that must be supported to guarantee playback of the audio. The actual maximum bit rate may be smaller, so a reader should not display this as the current bit rate.

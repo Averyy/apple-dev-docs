@@ -22,7 +22,7 @@ func attach(_ spatialVideoConfiguration: AVSpatialVideoConfiguration, to pixelBu
 ## Parameters
 
 - `spatialVideoConfiguration`: The spatial configuration to associate with the pixel buffer.
-- `pixelBuffer`: The pixel buffer to associate with the spatial configuration.   NOTE: The spatial configuration must be one of the spatial configurations specified in the AVVideoComposition’s spatialConfigurations property. An exception will be thrown otherwise.   NOTE: All pixel buffers from the custom compositor must be associated with the same spatial configuration. An exception will be thrown otherwise.   Specify a value of .nonSpatial for spatialVideoConfiguration to indicate the video is not spatial, but note that a .nonSpatial configuration must be in the   property or an exception will be thrown.
+- `pixelBuffer`: The pixel buffer to associate with the spatial configuration. NOTE: The spatial configuration must be one of the spatial configurations specified in the AVVideoComposition’s spatialConfigurations property. An exception will be thrown otherwise. NOTE: All pixel buffers from the custom compositor must be associated with the same spatial configuration. An exception will be thrown otherwise. Specify a value of .nonSpatial for spatialVideoConfiguration to indicate the video is not spatial, but note that a .nonSpatial configuration must be in the `AVVideoComposition/spatialConfigurations` property or an exception will be thrown.
 
 ## See Also
 

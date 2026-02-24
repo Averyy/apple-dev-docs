@@ -11,6 +11,10 @@ A collection of certificates that App Transport Security expects when connecting
 - macOS 11.0+
 - visionOS 1.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 The value for this optional key is a dictionary with keys that specify the domain names for which you want to set the expected certificates. The value for each domain name key is another dictionary that configures the expected certificates for that domain.

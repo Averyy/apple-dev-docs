@@ -20,7 +20,7 @@ The image below shows an example of a magnitude response curve that boosts low f
 
 This sample code project is a peaking EQ filter implemented with a vDSP biquadratic filter that’s delivered as an audio unit extension. You can use the code in this project as the basis for writing audio units that use the [`vDSP`](vdsp.md) library.
 
-This project is based on the Audio Unit Extension App Xcode template and uses the  audio unit type. This type of audio unit accepts an audio input and produces an audio output. The template provides an audio pass-through effect with a signal parameter to adjust the gain of the audio that passes through the audio unit.
+This project is based on the Audio Unit Extension App Xcode template and uses the *Effect* audio unit type. This type of audio unit accepts an audio input and produces an audio output. The template provides an audio pass-through effect with a signal parameter to adjust the gain of the audio that passes through the audio unit.
 
 For more information about creating audio unit extensions, see [`Creating an audio unit extension`](https://developer.apple.com/documentation/AVFAudio/creating-an-audio-unit-extension).
 

@@ -27,8 +27,8 @@ If you pass `nil` to the handler, the system generates a default placeholder tem
 
 ## Parameters
 
-- `complication`: The complication tied to the request. Use the complication family information in this object to determine which set of templates are valid. For example, if the complication family is  , you’d instantiate the   class for your template.
-- `handler`: The handler to execute with the template. This block has no return value and takes the following parameter:
+- `complication`: The complication tied to the request. Use the complication family information in this object to determine which set of templates are valid. For example, if the complication family is [`CLKComplicationFamily.utilitarianLarge`](clkcomplicationfamily/utilitarianlarge.md), you’d instantiate the [`CLKComplicationTemplateUtilitarianLargeFlat`](clkcomplicationtemplateutilitarianlargeflat.md) class for your template.
+- `handler`: The handler to execute with the template. This block has no return value and takes the following parameter: - **template**: The template object containing your placeholder data. The data in this template is cached and displayed for your complication.
 
 ## See Also
 

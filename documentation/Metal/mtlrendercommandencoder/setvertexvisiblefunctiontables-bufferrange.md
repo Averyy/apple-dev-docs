@@ -27,8 +27,8 @@ By default, the visible function table at each index is `nil`.
 
 ## Parameters
 
-- `functionTables`: An array of   instances the command assigns to entries in the vertex shader argument table for visible function tables.
-- `bufferRange`: A span of integers that represent the entries in the vertex shader argument table for visible function tables. Each entry stores a record of the corresponding element in  .
+- `functionTables`: An array of [`MTLVisibleFunctionTable`](mtlvisiblefunctiontable.md) instances the command assigns to entries in the vertex shader argument table for visible function tables.
+- `bufferRange`: A span of integers that represent the entries in the vertex shader argument table for visible function tables. Each entry stores a record of the corresponding element in `functionTables`.
 
 ## See Also
 

@@ -11,7 +11,7 @@ Creating a Thread Border Router enabled app or device requires configuring your 
 1. Xcode provides a Manage Thread Network Credentials capability for use while your app is under development.
 2. Once your app is feature complete, ensure that its operation and specifications conform to the Thread device test plan.
 3. Before submitting your app for approval and sale on the App Store, apply for a Thread Network distribution entitlement.
-4. Optionally, apply to use the  badge to alert people to your app’s ability to work with Apple Home.
+4. Optionally, apply to use the *Works with Apple Home* badge to alert people to your app’s ability to work with Apple Home.
 
 #### Create and Configure Your Xcode Project for Development
 
@@ -48,7 +48,7 @@ United States
 
 #### Apply for the Works with Apple Home Badge
 
-Optionally, you can also request the  badge for your Thread Border Router. This badge assures customers that your product works well with Apple Home.
+Optionally, you can also request the *Works with Apple Home* badge for your Thread Border Router. This badge assures customers that your product works well with Apple Home.
 
 To request permission to use the badge on your product and in marketing materials, follow these steps:
 

@@ -24,6 +24,11 @@ object DeviceConfiguredCommand
 - [object DeviceConfiguredCommand.Command](deviceconfiguredcommand/command-data.dictionary.md)
   The command to inform the device that it can allow the user to continue in Setup Assistant.
 
+## Properties
+
+- `Command` (DeviceConfiguredCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object DeviceConfiguredResponse](deviceconfiguredresponse.md)

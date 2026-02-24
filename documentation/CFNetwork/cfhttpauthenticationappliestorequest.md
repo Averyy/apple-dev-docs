@@ -30,7 +30,7 @@ If this function returns `TRUE`, you can use `auth` to provide authentication in
 ## Parameters
 
 - `auth`: The CFHTTPAuthentication object to examine.
-- `request`: Request that   is to be tested against.
+- `request`: Request that `auth` is to be tested against.
 
 ## See Also
 

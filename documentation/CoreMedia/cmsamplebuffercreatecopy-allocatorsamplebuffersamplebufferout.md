@@ -30,9 +30,9 @@ The copy is shallow: scalar properties (sizes and timing) are copied directly, t
 
 ## Parameters
 
-- `allocator`: The allocator to use for allocating the   object. Pass   to use the default allocator.
-- `sbuf`:   being copied.
-- `sampleBufferOut`: On output, points to the newly created copy of  .
+- `allocator`: The allocator to use for allocating the `CMSampleBuffer` object. Pass `kCFAllocatorDefault` to use the default allocator.
+- `sbuf`: `CMSampleBuffer` being copied.
+- `sampleBufferOut`: On output, points to the newly created copy of `CMSampleBuffer`.
 
 ## See Also
 

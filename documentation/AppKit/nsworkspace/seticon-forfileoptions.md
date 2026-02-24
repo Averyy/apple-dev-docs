@@ -30,7 +30,7 @@ You can safely call this method from any of your app’s threads, but you must c
 
 - `image`: The image to use as the icon for the file or directory.
 - `fullPath`: The full path of the file or directory.
-- `options`: The icon representations to generate from the image. You specify this value by combining the appropriate   constants, using the C bitwise   operator. Specify   if you want to generate icons in all available icon representation formats.
+- `options`: The icon representations to generate from the image. You specify this value by combining the appropriate [`NSWorkspace.IconCreationOptions`](nsworkspace/iconcreationoptions.md) constants, using the C bitwise `OR` operator. Specify `0` if you want to generate icons in all available icon representation formats.
 
 ## See Also
 

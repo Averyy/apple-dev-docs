@@ -27,10 +27,10 @@ A dictionary that contains the attributes of `str` at the specified location. Ow
 ## Parameters
 
 - `aStr`: The attributed string to examine.
-- `loc`: The location in   at which to determine the attributes. It is a programming error for   to specify a location outside the bounds of  .
+- `loc`: The location in `str` at which to determine the attributes. It is a programming error for `loc` to specify a location outside the bounds of `str`.
 - `attrName`: The name of the attribute whose value you want to determine.
-- `inRange`: The range in   within which you want to find the longest effective range of the attributes at  .   must not exceed the bounds of  .
-- `longestEffectiveRange`: If not  , upon return contains the maximal range within   over which the exact same set of attributes apply. The returned range is clipped to  .
+- `inRange`: The range in `str` within which you want to find the longest effective range of the attributes at `loc`. `inRange` must not exceed the bounds of `str`.
+- `longestEffectiveRange`: If not `NULL`, upon return contains the maximal range within `inRange` over which the exact same set of attributes apply. The returned range is clipped to `inRange`.
 
 ## See Also
 

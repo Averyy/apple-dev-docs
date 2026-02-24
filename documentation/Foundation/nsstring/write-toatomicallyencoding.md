@@ -38,7 +38,7 @@ The methods [`init(contentsOfFile:usedEncoding:)`](nsstring/init(contentsoffile:
 ## Parameters
 
 - `url`: The URL to which to write the receiver. Only file URLs are supported.
-- `useAuxiliaryFile`: The   parameter is ignored if   is not of a type that can be accessed atomically.
+- `useAuxiliaryFile`: If [`true`](https://developer.apple.com/documentation/Swift/true), the receiver is written to an auxiliary file, and then the auxiliary file is renamed to `url`. If [`false`](https://developer.apple.com/documentation/Swift/false), the receiver is written directly to `url`. The [`true`](https://developer.apple.com/documentation/Swift/true) option guarantees that `url`, if it exists at all, won’t be corrupted even if the system should crash during writing. The `useAuxiliaryFile` parameter is ignored if `url` is not of a type that can be accessed atomically.
 - `enc`: The encoding to use for the output.
 
 ## See Also

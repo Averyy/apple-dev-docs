@@ -28,7 +28,7 @@ After instantiating a configuration object, you must also set its [`cardholderNa
 
 ## Parameters
 
-- `encryptionScheme`: The encryption scheme to be used in this request. For a list of possible values, see  .
+- `encryptionScheme`: The encryption scheme to be used in this request. For a list of possible values, see [`PKEncryptionScheme`](pkencryptionscheme.md).
 
 ## See Also
 

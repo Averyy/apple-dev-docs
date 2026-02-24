@@ -24,7 +24,7 @@ The returned point can be passed to a subsequent invocation of [`cascadeTopLeft(
 
 ## Parameters
 
-- `topLeftPoint`: The new top-left point, in screen coordinates, for the window. When  , the window is not moved, except as needed to constrain to the visible screen
+- `topLeftPoint`: The new top-left point, in screen coordinates, for the window. When [`NSZeroPoint`](https://developer.apple.com/documentation/Foundation/NSZeroPoint), the window is not moved, except as needed to constrain to the visible screen
 
 ## See Also
 

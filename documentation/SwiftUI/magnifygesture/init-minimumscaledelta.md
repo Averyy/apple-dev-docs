@@ -20,7 +20,7 @@ init(minimumScaleDelta: CGFloat = 0.01)
 
 ## Parameters
 
-- `minimumScaleDelta`: The minimum scale delta required before   the gesture starts.
+- `minimumScaleDelta`: The minimum scale delta required before the gesture starts.
 
 ## See Also
 

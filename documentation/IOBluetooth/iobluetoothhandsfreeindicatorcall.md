@@ -18,6 +18,9 @@ let IOBluetoothHandsFreeIndicatorCall: String
 
 The possible values for the call indicator are:
 
+- **`0`**: No calls are active.
+- **`1`**: A call is active.
+
 ## See Also
 
 - [let IOBluetoothHandsFreeIndicatorCallHeld: String](iobluetoothhandsfreeindicatorcallheld.md)

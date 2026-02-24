@@ -32,7 +32,8 @@ The command generates with scaled images for all levels up to the highest mipmap
 
 ## Parameters
 
-- `texture`: A texture instance the command generates mipmaps for that has:
+- `texture`: A texture instance the command generates mipmaps for that has: - A [`mipmapLevelCount`](mtltexture/mipmaplevelcount.md) property that’s greater than `1`
+- A [`pixelFormat`](mtltexture/pixelformat.md) that’s color-renderable and color-filterable
 
 
 ---

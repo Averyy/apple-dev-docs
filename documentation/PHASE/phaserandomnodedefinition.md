@@ -31,6 +31,56 @@ This class can model real-world cases where an event varies slightly, such as wh
 
 The following code creates an instance of this class that selects from three different footstep sounds. The weights determine that an uncommon footstep noise plays half as frequently as the common footstep. And a third footstep noise plays 10% of the time.
 
+**Swift**:
+
+```swift
+// Create several nodes from prior-registered footstep sound assets.
+let footstep1 = PHASESamplerNodeDefinition(
+    soundAssetIdentifier: "footstep1",
+    mixerDefinition: myMixer, identifier: "footstep1")
+let footstep2 = PHASESamplerNodeDefinition(
+    soundAssetIdentifier: "footstep2",
+    mixerDefinition: myMixer, identifier: "footstep2")
+let footstep3 = PHASESamplerNodeDefinition(
+    soundAssetIdentifier: "footstep3",    
+    mixerDefinition: myMixer, identifier: "footstep3")
+
+// Create the random node.
+let randomNode = PHASERandomNodeDefinition(identifier: "randomNode")
+
+// Connect leaf nodes to the tree and set the weights. 
+randomNode.addSubtree(footstep1, weight: 10)
+randomNode.addSubtree(footstep2, weight: 5)
+randomNode.addSubtree(footstep3, weight: 1)
+```
+
+**Objective-C**:
+
+```objc
+// Create several nodes from prior-registered footstep sound assets.
+PHASESamplerNodeDefinition* footstep1 = 
+    [[PHASESamplerNodeDefinition alloc] 
+        initWithSoundAssetUID:@"footstep1" 
+        mixerDefinition:mixNode uid:@"footstep1"];
+PHASESamplerNodeDefinition* footstep2 = 
+    [[PHASESamplerNodeDefinition alloc] 
+        initWithSoundAssetUID:@"footstep2" 
+        mixerDefinition:mixNode uid:@"footstep2"];
+PHASESamplerNodeDefinition* footstep3 = 
+    [[PHASESamplerNodeDefinition alloc] 
+        initWithSoundAssetUID:@"footstep3" 
+        mixerDefinition:mixNode uid:@"footstep3"];
+
+// Create the random node.
+PHASERandomNodeDefinition* randomNode = 
+    [[PHASERandomNodeDefinition alloc] initWithUID:@"randomNode"];
+
+// Connect leaf nodes to the tree and set the weights. 
+[randomNode addSubtree:footstep1 weight:@10];
+[randomNode addSubtree:footstep2 weight:@5];
+[randomNode addSubtree:footstep3 weight:@1];
+```
+
 ## Topics
 
 ### Creating a Node

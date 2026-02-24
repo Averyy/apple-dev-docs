@@ -60,7 +60,7 @@ Each of the properties of a progress object, including [`totalUnitCount`](progre
 
 ##### Reporting Progress for Multiple Operations
 
-Sometimes, your code may need to report the  progress of an operation that consists of several suboperations. To accomplish this, your code can report the progress of each suboperation by building up a tree of progress objects.
+Sometimes, your code may need to report the *overall* progress of an operation that consists of several suboperations. To accomplish this, your code can report the progress of each suboperation by building up a tree of progress objects.
 
 The [`Progress`](progress.md) reporting mechanism supports a loosely coupled relationship between progress objects. Suboperations don’t need to know anything about the containing progress item — you can create new progress objects as suboperations of another progress instance. When you assign a progress instance, the system allocates a portion of the containing progress instance’s pending unit count. When the suboperation’s progress object completes, the containing progress object’s [`completedUnitCount`](progress/completedunitcount.md) property automatically increases by a predefined amount.
 

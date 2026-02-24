@@ -19,7 +19,7 @@ func removeToken(at tokenIndex: Int)
 
 ## Parameters
 
-- `tokenIndex`: Within the   array, the index of the token you want to remove.
+- `tokenIndex`: Within the [`tokens`](uisearchtextfield/tokens.md) array, the index of the token you want to remove.
 
 ## See Also
 

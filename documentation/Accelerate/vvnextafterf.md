@@ -24,6 +24,11 @@ func vvnextafterf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: Un
 
 ##### Parameters
 
+- **parameter 1**: The output array, *z*.
+- **parameter 2**: The input array, *y*.
+- **parameter 3**: The direction array, *x*.
+- **parameter 4a**: The number of elements in the arrays.
+
 Not all values can be represented as a floating-point value of a given precision. This function sets a value in `z[i]` that is either minimally larger than the value in `y[i]` (if `x[i]` is larger than `y[i]`) or minimally smaller than the value in `y[i]` (if `x[i]` is smaller than `y[i]`).
 
 ## See Also

@@ -23,7 +23,7 @@ struct WAPublishableService
 
 You specify the services your app uses in `Info.plist` via a dictionary under the [`WiFiAwareServices`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WiFiAwareServices) key:
 
-- Each  in that dictionary is the full service name of a service, and the  is a dictionary of configuration properties for that service.
+- Each *key* in that dictionary is the full service name of a service, and the *value* is a dictionary of configuration properties for that service.
 - If the configuration dictionary contains the `Publishable` key, the system creates a `WAPublishableService` is created for that service and makes it available in [`allServices`](wapublishableservice/allservices.md).
 
 ## Topics

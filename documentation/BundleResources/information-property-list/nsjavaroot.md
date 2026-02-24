@@ -9,6 +9,10 @@ The root directory for the app’s Java class files.
 - macOS 10.0+
 
 
+
+**Type**: string
+
+
 ---
 
 *[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/information-property-list/nsjavaroot)*

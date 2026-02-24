@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: var
 
-The column AMD ordering for .
+The column AMD ordering for *AᵀA*.
 
 **Availability**:
 - iOS 11.0+

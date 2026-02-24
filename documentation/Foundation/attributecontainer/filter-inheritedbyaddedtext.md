@@ -26,7 +26,7 @@ A copy of the attribute container with only attributes whose `inheritedByAddedTe
 
 ## Parameters
 
-- `inheritedByAddedText`: An   value to filter. Attributes matching this value are included in the returned container.
+- `inheritedByAddedText`: An `inheritedByAddedText` value to filter. Attributes matching this value are included in the returned container.
 
 
 ---

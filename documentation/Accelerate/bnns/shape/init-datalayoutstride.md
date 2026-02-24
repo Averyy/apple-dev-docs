@@ -24,6 +24,15 @@ init(_ size: [Int], dataLayout: BNNS.DataLayout? = nil, stride: [Int]? = nil)
 
 Pass `nil` to `dataLayout` to have `init(size:dataLayout:stride:)` return a shape with the default layout for the rank that’s equal to the count of `size`. The default layouts for each dimensionality are:
 
+- **1D**: [`BNNS.DataLayout.vector`](bnns/datalayout/vector.md)
+- **2D**: [`BNNS.DataLayout.matrixFirstMajor`](bnns/datalayout/matrixfirstmajor.md)
+- **3D**: [`BNNS.DataLayout.tensor3DFirstMajor`](bnns/datalayout/tensor3dfirstmajor.md)
+- **4D**: [`BNNS.DataLayout.tensor4DFirstMajor`](bnns/datalayout/tensor4dfirstmajor.md)
+- **5D**: [`BNNS.DataLayout.tensor5DFirstMajor`](bnns/datalayout/tensor5dfirstmajor.md)
+- **6D**: [`BNNS.DataLayout.tensor6DFirstMajor`](bnns/datalayout/tensor6dfirstmajor.md)
+- **7D**: [`BNNS.DataLayout.tensor7DFirstMajor`](bnns/datalayout/tensor7dfirstmajor.md)
+- **8D**: [`BNNS.DataLayout.tensor8DFirstMajor`](bnns/datalayout/tensor8dfirstmajor.md)
+
 This initializer interprets a stride value of `0` to mean that values are contiguous for that axis.
 
 ## Parameters

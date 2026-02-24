@@ -43,7 +43,7 @@ uploadTask.resume()
 
 You provide the streaming data to the upload task as an [`InputStream`](inputstream.md). The task reads data from this stream and uploads it to the destination.
 
-A good way to provide data to the input stream is to use a  of streams. The bound pair contains an [`OutputStream`](outputstream.md) that you write data to. Thanks to the binding of the streams, the data you write to the output stream is made available to the input stream, which the task can then read from. [`Figure 1`](url_loading_system/uploading_streams_of_data#3037791.md) shows this arrangement.
+A good way to provide data to the input stream is to use a *bound pair* of streams. The bound pair contains an [`OutputStream`](outputstream.md) that you write data to. Thanks to the binding of the streams, the data you write to the output stream is made available to the input stream, which the task can then read from. [`Figure 1`](url_loading_system/uploading_streams_of_data#3037791.md) shows this arrangement.
 
 ![Flow diagram showing how data written by an app to the output stream of a bound pair goes into a buffer, then to the bound pair’s input stream, then to the upload task, which sends it to the destination.](https://docs-assets.developer.apple.com/published/728fc05165a30da39231203ed8de4121/media-3037791%402x.png)
 

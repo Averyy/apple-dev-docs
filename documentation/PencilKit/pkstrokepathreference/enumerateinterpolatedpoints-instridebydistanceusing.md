@@ -22,7 +22,8 @@ func enumerateInterpolatedPoints(in range: __PKFloatRange, strideByDistance dist
 
 - `range`: The parametric range to enumerate points in.
 - `distanceStep`: The distance to step between points.
-- `block`: The block to execute for each point. This block takes two parameters:
+- `block`: The block to execute for each point. This block takes two parameters: - `point` —The interpolated point on the spline.
+- `stop` —A reference to a Boolean value. Setting the value to `YES` within the block stops further enumeration, but the that block continues to run until it’s finished.
 
 ## See Also
 

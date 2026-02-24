@@ -110,7 +110,7 @@ An app is responsible for managing the badge number displayed on its icon. For e
 - [class UIPopoverController](uipopovercontroller.md)
   An object that manages the presentation of content in a popover.
 - [class UIPreviewAction](uipreviewaction.md)
-  A preview action, or , that displays below a peek when a user swipes the peek upward.
+  A preview action, or *peek quick action*, that displays below a peek when a user swipes the peek upward.
 - [class UIPreviewActionGroup](uipreviewactiongroup.md)
   A group of one or more child quick actions, each an instance of the preview action class.
 - [class UISearchDisplayController](uisearchdisplaycontroller.md)

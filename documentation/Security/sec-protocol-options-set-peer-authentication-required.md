@@ -24,7 +24,7 @@ Enable or disable peer authentication. Clients default to true, whereas servers 
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A `sec_protocol_options_t` instance.
 - `peer_authentication_required`: Flag to enable or disable mandatory peer authentication.
 
 

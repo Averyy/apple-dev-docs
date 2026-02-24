@@ -24,7 +24,7 @@ Your application can call the [`SecKeychainGetVersion(_:)`](seckeychaingetversio
 
 ## Parameters
 
-- `returnVers`: On return, a pointer to the version number of keychain services installed on the current system. See   for a list of values.
+- `returnVers`: On return, a pointer to the version number of keychain services installed on the current system. See `Keychain Settings Version` for a list of values.
 
 
 ---

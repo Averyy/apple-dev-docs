@@ -23,7 +23,7 @@ func CFSetGetValues(_ theSet: CFSet!, _ values: UnsafeMutablePointer<UnsafeRawPo
 ## Parameters
 
 - `theSet`: The set to examine.
-- `values`: A C array of pointer-sized values to be filled with values from  . The value must be a valid C array of the appropriate type and of a size at least equal to the count of  ). If the values are Core Foundation objects, ownership follows the  .
+- `values`: A C array of pointer-sized values to be filled with values from `theSet`. The value must be a valid C array of the appropriate type and of a size at least equal to the count of `theSet`). If the values are Core Foundation objects, ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 

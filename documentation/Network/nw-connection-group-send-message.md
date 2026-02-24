@@ -24,7 +24,7 @@ func nw_connection_group_send_message(_ group: nw_connection_group_t, _ content:
 
 - `group`: The connection group you use to send.
 - `content`: The data to send.
-- `endpoint`: An optional endpoint that specifies a member of the group that receives the data. If the endpoint is  , the data will be sent to the entire group.
+- `endpoint`: An optional endpoint that specifies a member of the group that receives the data. If the endpoint is `nil`, the data will be sent to the entire group.
 - `context`: The metadata that defines how the message is sent.
 - `completion`: A completion that notifies you when the connection group has processed and sent the data.
 

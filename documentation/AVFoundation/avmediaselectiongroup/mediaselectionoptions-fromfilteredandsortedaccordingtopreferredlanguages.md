@@ -26,8 +26,8 @@ An array of [`AVMediaSelectionOption`](avmediaselectionoption.md) objects that m
 
 ## Parameters
 
-- `mediaSelectionOptions`: An array of   objects to be filtered and sorted.
-- `preferredLanguages`: An array of   objects, each of which contains a canonicalized IETF BCP 47 language identifier. The strings should be sorted in order of preference, with the string corresponding to the most preferred language as the first element in the array. Typically, you retrieve these strings using the   class method of the   class.
+- `mediaSelectionOptions`: An array of [`AVMediaSelectionOption`](avmediaselectionoption.md) objects to be filtered and sorted.
+- `preferredLanguages`: An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which contains a canonicalized IETF BCP 47 language identifier. The strings should be sorted in order of preference, with the string corresponding to the most preferred language as the first element in the array. Typically, you retrieve these strings using the [`preferredLanguages`](https://developer.apple.com/documentation/Foundation/NSLocale/preferredLanguages) class method of the [`NSLocale`](https://developer.apple.com/documentation/Foundation/NSLocale) class.
 
 ## See Also
 

@@ -21,7 +21,7 @@ convenience init(blendMetaParameterDefinition: PHASENumberMetaParameterDefinitio
 
 ## Parameters
 
-- `blendMetaParameterDefinition`: A maximum value for the blend range. The sound event’s blend meta parameter across a range from   to this value produces an active cross-fade along the child nodes.
+- `blendMetaParameterDefinition`: A maximum value for the blend range. The sound event’s blend meta parameter across a range from `0` to this value produces an active cross-fade along the child nodes.
 - `identifier`: A unique name for the blend node.
 
 ## See Also

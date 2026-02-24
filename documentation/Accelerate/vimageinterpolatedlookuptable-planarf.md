@@ -68,12 +68,12 @@ print(destination.array)
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the  ,  , and   fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `table`: A lookup table that contains   values.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the `height`, `width`, and `rowBytes` fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `table`: A lookup table that contains [`Pixel_F`](pixel_f.md) values.
 - `tableEntries`: The number of values in the lookup table.
-- `maxFloat`: A value of type  .
-- `minFloat`: A value of type  .
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass  .
+- `maxFloat`: A value of type `float`.
+- `minFloat`: A value of type `float`.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md).
 
 ## See Also
 

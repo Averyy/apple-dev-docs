@@ -24,10 +24,10 @@ To mute all events from a process, use [`es_mute_process(_:_:)`](es_mute_process
 
 ## Parameters
 
-- `client`: A previously-created client. If the call succeeds, this client no longer receives events that match the types in the   array from the process indicated by  .
+- `client`: A previously-created client. If the call succeeds, this client no longer receives events that match the types in the `events` array from the process indicated by `audit_token`.
 - `audit_token`: The audit token that indicates the process to mute.
 - `events`: An array of event types to mute.
-- `event_count`: The number of members in the   array.
+- `event_count`: The number of members in the `events` array.
 
 ## See Also
 

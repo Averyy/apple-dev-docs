@@ -8,6 +8,9 @@ Determine the authorization your app needs to access location data.
 
 The authorization status that your app has determines if and when it receives location events. There are two types of authorization your app can request:
 
+- **When In Use**: Your app can use all location services and receive events while the app is in use. In general, iOS apps are considered in use when they’re in the foreground or running in the background with the background location usage indicator enabled.
+- **Always**: Your app can use all location services and receive events even if the user is not aware that your app is running. If your app isn’t running, the system launches your app and delivers the event.
+
 ##### Prefer When in Use Authorization
 
 Whenever possible, request only When In Use authorization. This mode has powerful features, allowing your app to:
@@ -36,6 +39,12 @@ Keep in mind that asking for authorization doesn’t guarantee your app will rec
 > **Note**:  If your app requests and receives When In Use authorization, you can make a separate request for Always authorization later. However, apps may make only one request for Always authorization.
 
 While all platforms support When In Use authorization, the availability and functionality of Always authorization varies, as follows:
+
+- **tvOS**: Only supports When In Use authorization
+- **watchOS**: Typically, apps only need When In Use authorization. The watch face context is effectively always in use; if you’re developing a complication, your app likely needs only When In Use authorization. Core location API doesn’t provide launching behavior for watchOS.
+- **macOS**: Core Location automatically prompts the user for permission when you start any location service; you don’t have to request authorization. Users can either allow or deny authorization. When In Use and Always authorizations are functionally equivalent.
+- **Mac Catalyst**: Your UIKit code can and should request the authorization that makes sense on iOS; the same choice will work when the app runs on the Mac. When In Use and Always authorizations are functionally equivalent on the Mac.
+- **iOS**: Supports When In Use and Always authorization.
 
 ##### Request Authorization for Apps Running in Ios 12 and Earlier
 

@@ -16,7 +16,7 @@ optional func releaseRenderedTexture(_ name: GLuint, forCGLContext cgl_ctx: CGLC
 
 #### Discussion
 
-Your OpenGL code should save and restore all states  for those that are part of `GL_CURRENT_BIT` (vertex position, color, texture, and so on). Also use CGL macros instead of changing the current context, by including this statement:
+Your OpenGL code should save and restore all states *except* for those that are part of `GL_CURRENT_BIT` (vertex position, color, texture, and so on). Also use CGL macros instead of changing the current context, by including this statement:
 
 `#import <OpenGL/CGLMacro.h>`
 

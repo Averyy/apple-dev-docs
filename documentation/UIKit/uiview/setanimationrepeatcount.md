@@ -25,7 +25,7 @@ If you pass the [`repeat`](uiview/animationoptions/repeat.md) option to the [`an
 
 ## Parameters
 
-- `repeatCount`: The number of times animations repeat. This value can be a fraction. If you specify the value  , the animation is performed once without repeating.
+- `repeatCount`: The number of times animations repeat. This value can be a fraction. If you specify the value `0`, the animation is performed once without repeating.
 
 ## See Also
 

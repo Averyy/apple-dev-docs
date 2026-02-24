@@ -26,7 +26,7 @@ A `CFURL` object representing the base URL of `anURL`. Ownership follows the get
 
 ## Parameters
 
-- `anURL`: The   object to examine.
+- `anURL`: The `CFURL` object to examine.
 
 ## See Also
 

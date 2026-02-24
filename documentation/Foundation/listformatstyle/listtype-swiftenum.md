@@ -28,9 +28,9 @@ The possible values of a [`listType`](listformatstyle/listtype-swift.property.md
 
 ### List types
 - [ListFormatStyle.ListType.and](listformatstyle/listtype-swift.enum/and.md)
-  Specifies an  list type.
+  Specifies an *and* list type.
 - [ListFormatStyle.ListType.or](listformatstyle/listtype-swift.enum/or.md)
-  Specifies an  list type.
+  Specifies an *or* list type.
 
 ## Relationships
 

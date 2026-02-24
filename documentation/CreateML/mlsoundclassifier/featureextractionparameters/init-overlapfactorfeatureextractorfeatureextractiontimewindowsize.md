@@ -20,9 +20,9 @@ init(overlapFactor: Double = __Defaults.overlapFactor, featureExtractor: MLSound
 
 ## Parameters
 
-- `overlapFactor`: A portion of overlap between consecutive audio analysis windows. The value must be in   the range  .
+- `overlapFactor`: A portion of overlap between consecutive audio analysis windows. The value must be in the range `[0.0, 1.0)`.
 - `featureExtractor`: An algorithm type the session uses to extract features from audio files.
-- `featureExtractionTimeWindowSize`: A time duration, in seconds, the feature-extraction session uses for   each audio sample it reads from an audio file in a dataset. The value must be in the range   .
+- `featureExtractionTimeWindowSize`: A time duration, in seconds, the feature-extraction session uses for each audio sample it reads from an audio file in a dataset. The value must be in the range `[0.5, 15.0]`.
 
 ## See Also
 

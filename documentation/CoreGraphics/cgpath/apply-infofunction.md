@@ -26,8 +26,8 @@ For each element in the specified path, Core Graphics calls the applier function
 
 ## Parameters
 
-- `info`: A pointer to the user data that Core Graphics will pass to the function being applied, or  .
-- `function`: A pointer to the function to apply. See   for more information.
+- `info`: A pointer to the user data that Core Graphics will pass to the function being applied, or `NULL`.
+- `function`: A pointer to the function to apply. See [`CGPathApplierFunction`](cgpathapplierfunction.md) for more information.
 
 ## See Also
 

@@ -33,8 +33,8 @@ After initiating a reverse-geocoding request, do not attempt to initiate another
 ## Parameters
 
 - `location`: The location object containing the coordinate data to look up.
-- `locale`: The locale to use when returning the address information. You might specify a value for this parameter when you want the address returned in a locale that differs from the user’s current language settings. Specify   to use the user’s default locale information.
-- `completionHandler`: The handler block to execute with the results. The geocoder executes this handler regardless of whether the request was successful or unsuccessful. For more information on the format of this block, see  .
+- `locale`: The locale to use when returning the address information. You might specify a value for this parameter when you want the address returned in a locale that differs from the user’s current language settings. Specify `nil` to use the user’s default locale information.
+- `completionHandler`: The handler block to execute with the results. The geocoder executes this handler regardless of whether the request was successful or unsuccessful. For more information on the format of this block, see [`CLGeocodeCompletionHandler`](clgeocodecompletionhandler.md).
 
 ## See Also
 

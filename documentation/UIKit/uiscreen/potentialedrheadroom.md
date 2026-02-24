@@ -19,7 +19,7 @@ var potentialEDRHeadroom: CGFloat { get }
 
 #### Discussion
 
- is the ratio of the luminance of the screen’s brightest white to the luminance of standard dynamic range (SDR) white, in the screen’s native color space. The screen’s maximum headroom can change depending on its configuration, such as when [`referenceDisplayModeStatus`](uiscreen/referencedisplaymodestatus-swift.property.md) changes.
+*Headroom* is the ratio of the luminance of the screen’s brightest white to the luminance of standard dynamic range (SDR) white, in the screen’s native color space. The screen’s maximum headroom can change depending on its configuration, such as when [`referenceDisplayModeStatus`](uiscreen/referencedisplaymodestatus-swift.property.md) changes.
 
 You can query this property even when the screen isn’t displaying extended dynamic range (EDR) content.
 

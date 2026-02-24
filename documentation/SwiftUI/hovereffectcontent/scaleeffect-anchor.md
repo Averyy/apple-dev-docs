@@ -20,8 +20,8 @@ An effect that scales the view’s rendered output.
 
 ## Parameters
 
-- `scale`: The amount to scale the view in the view in both the horizontal   and vertical directions.
-- `anchor`: The point with a default of   that   defines the location within the view from which to apply the   transformation.
+- `scale`: The amount to scale the view in the view in both the horizontal and vertical directions.
+- `anchor`: The point with a default of [`center`](unitpoint/center.md) that defines the location within the view from which to apply the transformation.
 
 
 ---

@@ -54,7 +54,7 @@ The modifier operates by setting the [`multilineTextAlignment`](environmentvalue
 
 ## Parameters
 
-- `alignment`: A value that you use to align multiple lines of   text within a view.
+- `alignment`: A value that you use to align multiple lines of text within a view.
 
 ## See Also
 

@@ -27,8 +27,8 @@ Passing an empty array for `inValueOrValues` deletes the attribute.
 
 - `record`: The record.
 - `attribute`: The attribute type to set.
-- `valueOrValues`: The value or values. Can be of type   or  , or a   containing elements of type   and  .
-- `error`: An error reference for error details. Can be  .
+- `valueOrValues`: The value or values. Can be of type `CFStringRef` or `CFDataRef`, or a `CFArrayRef` containing elements of type `CFStringRef` and `CFDataRef`.
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

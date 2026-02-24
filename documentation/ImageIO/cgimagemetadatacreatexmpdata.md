@@ -31,7 +31,7 @@ Use this function to create sidecar files with metadata for image formats that d
 ## Parameters
 
 - `metadata`: The metadata object to serialize. The function converts all tags in this object to XMP data.
-- `options`: Additional options for the serialization process. Options aren’t currently supported, so specify  .
+- `options`: Additional options for the serialization process. Options aren’t currently supported, so specify `NULL`.
 
 
 ---

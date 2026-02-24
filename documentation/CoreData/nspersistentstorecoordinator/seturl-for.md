@@ -30,7 +30,7 @@ For atomic stores, this method alters the location to which the next save operat
 
 ## Parameters
 
-- `url`: The new location for  .
+- `url`: The new location for `store`.
 - `store`: A persistent store associated with the receiver.
 
 ## See Also

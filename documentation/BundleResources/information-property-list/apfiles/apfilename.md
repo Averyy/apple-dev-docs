@@ -8,6 +8,10 @@ The name of the file or folder to install.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [APDisplayedAsContainer](information-property-list/apfiles/apdisplayedascontainer.md)

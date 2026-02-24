@@ -22,7 +22,7 @@ func declineAskToBuyTransaction(identifier: Int) throws
 
 ## Parameters
 
-- `identifier`: The transaction   of an Ask to Buy transaction.
+- `identifier`: The transaction [`identifier`](sktesttransaction/identifier.md) of an Ask to Buy transaction.
 
 ## See Also
 

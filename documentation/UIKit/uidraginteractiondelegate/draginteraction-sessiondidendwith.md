@@ -25,7 +25,7 @@ Since the session has ended, your app should return to its normal appearance.
 
 - `interaction`: The interaction that called this method.
 - `session`: The current drag session.
-- `operation`: A type that describes the drop operation. If the operation is   or  , the data transfer begins.
+- `operation`: A type that describes the drop operation. If the operation is [`UIDropOperation.copy`](uidropoperation/copy.md) or [`UIDropOperation.move`](uidropoperation/move.md), the data transfer begins.
 
 ## See Also
 

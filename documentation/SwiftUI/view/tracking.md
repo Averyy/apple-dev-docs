@@ -27,7 +27,7 @@ A view where text has the specified amount of tracking.
 
 ## Parameters
 
-- `tracking`: The amount of additional space, in points, that   the view should add to each character cluster after layout. Value of    sets the tracking to the system default value.
+- `tracking`: The amount of additional space, in points, that the view should add to each character cluster after layout. Value of `0` sets the tracking to the system default value.
 
 ## See Also
 

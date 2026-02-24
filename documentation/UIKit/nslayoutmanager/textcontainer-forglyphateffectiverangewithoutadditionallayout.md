@@ -31,8 +31,8 @@ Overriding this method is not recommended. Any changes to the returned glyph ran
 ## Parameters
 
 - `glyphIndex`: Index of a glyph in the returned container.
-- `effectiveGlyphRange`: If not  , on output, points to the whole range of glyphs that are in the returned container.
-- `flag`: If  , glyph generation and layout are not performed, so this option should not be used unless layout is known to be complete for the range in question, or unless noncontiguous layout is enabled; if  , both are performed as needed.
+- `effectiveGlyphRange`: If not `NULL`, on output, points to the whole range of glyphs that are in the returned container.
+- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), glyph generation and layout are not performed, so this option should not be used unless layout is known to be complete for the range in question, or unless noncontiguous layout is enabled; if [`false`](https://developer.apple.com/documentation/Swift/false), both are performed as needed.
 
 ## See Also
 

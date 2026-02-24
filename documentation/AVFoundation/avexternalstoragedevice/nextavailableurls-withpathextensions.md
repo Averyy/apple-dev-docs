@@ -36,6 +36,29 @@ Your app can request authorization before calling the method if [`authorizationS
 
 To access one of the security-scoped URLs the method returns, you need to call the [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/URL/startAccessingSecurityScopedResource()), and [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/URL/stopAccessingSecurityScopedResource()) methods before and after your code.
 
+**Swift**:
+
+```swift
+securityScopedURL.startAccessingSecurityScopedResource()
+
+// Your code that accesses the URL goes in between the start and stop calls.
+...
+
+securityScopedURL.stopAccessingSecurityScopedResource()
+```
+
+**Objective-C**:
+
+```objc
+[securityScopedURL startAccessingSecurityScopedResource];
+
+// Your code that accesses the URL goes in between the start and stop calls.
+...
+
+[securityScopedURL stopAccessingSecurityScopedResource];
+
+```
+
 ## Parameters
 
 - `extensionArray`: An array of path extensions the method generates URLs for.

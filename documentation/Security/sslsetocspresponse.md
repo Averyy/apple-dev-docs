@@ -24,7 +24,7 @@ A result code. See [`Secure Transport Result Codes`](secure-transport-result-cod
 ## Parameters
 
 - `context`: A session context.
-- `response`: A non-    instance containing the bytes of the OCSP response.
+- `response`: A non-`NULL` [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) instance containing the bytes of the OCSP response.
 
 
 ---

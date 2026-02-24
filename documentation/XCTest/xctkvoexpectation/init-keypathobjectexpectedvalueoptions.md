@@ -25,7 +25,7 @@ init(keyPath: String, object: Any, expectedValue: Any?, options: NSKeyValueObser
 - `keyPath`: The key path to observe.
 - `object`: The object to observe.
 - `expectedValue`: The expected value for the observed key path.
-- `options`: An array of   that determine the values to return as part of the observed key path’s change dictionary.
+- `options`: An array of [`NSKeyValueObservingOptions`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions) that determine the values to return as part of the observed key path’s change dictionary.
 
 ## See Also
 

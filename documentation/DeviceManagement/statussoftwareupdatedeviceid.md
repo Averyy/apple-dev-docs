@@ -31,6 +31,10 @@ object StatusSoftwareUpdateDeviceID
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS |
 | Allowed in user scope | NA |
 
+## Properties
+
+- `softwareupdate.device-id` (string) *(required)*: The device identifier to use when looking up available software updates via `https://gdmf.apple.com/v2/pmv`.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

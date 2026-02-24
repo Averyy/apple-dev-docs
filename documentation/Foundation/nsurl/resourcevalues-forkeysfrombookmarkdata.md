@@ -26,7 +26,7 @@ A dictionary of the requested resource values contained in `bookmarkData`.
 
 ## Parameters
 
-- `keys`: An array of names of URL resource properties. In addition to the standard, system-defined resource properties, you can also request any custom properties that you provided when you created the bookmark. See the   method for details.
+- `keys`: An array of names of URL resource properties. In addition to the standard, system-defined resource properties, you can also request any custom properties that you provided when you created the bookmark. See the [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](nsurl/bookmarkdata(options:includingresourcevaluesforkeys:relativeto:).md) method for details.
 - `bookmarkData`: The bookmark data from which you want to retrieve resource values.
 
 ## See Also

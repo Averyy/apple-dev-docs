@@ -24,7 +24,7 @@ Concrete subclasses must implement this method. A concrete implementation must i
 
 ## Parameters
 
-- `lineFragmentOrigin`: The upper-left corner of line fragment rectangle. On return,   contains the next origin.
+- `lineFragmentOrigin`: The upper-left corner of line fragment rectangle. On return, `lineFragmentOrigin` contains the next origin.
 
 ## See Also
 

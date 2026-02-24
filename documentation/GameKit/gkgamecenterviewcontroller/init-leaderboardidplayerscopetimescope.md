@@ -27,7 +27,7 @@ The initialized view controller.
 
 - `leaderboardID`: The identifier for the leaderboard to display.
 - `playerScope`: The type of players to display in the leaderboard.
-- `timeScope`: For recurring leaderboards, this method ignores the time scope parameter and displays the data for the current occurrence instead.
+- `timeScope`: The time period for the data to display in a classic leaderboard. For recurring leaderboards, this method ignores the time scope parameter and displays the data for the current occurrence instead.
 
 ## See Also
 

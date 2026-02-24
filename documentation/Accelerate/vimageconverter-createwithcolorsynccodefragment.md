@@ -36,11 +36,14 @@ If `codeFragment` is `NULL`, no colorspace conversion or correction is done. In 
 
 ## Parameters
 
-- `codeFragment`: A code fragment created with  .
-- `srcFormat`: A pointer to a populated   structure describing the image format of the source image. If the   value is  , sRGB is used as the default value. The   value is retained by this function and is released when the   is destroyed.
-- `destFormat`: A pointer to a populated   structure describing the image format of the destination image. If the   value is  , sRGB is used as the default value. The   value is retained by this function and is released when the   is destroyed.
-- `backgroundColor`: An array of floats to be used as a background color if one is needed. The   range is assumed to be  . The channel ordering and number of color channels must match the natural order of the destination colorspace (for example, RGB or CMYK). The   value may be   if no background color is needed.
-- `flags`: The options to use when performing this operation. The following flags are supported:
+- `codeFragment`: A code fragment created with [`ColorSyncTransformCopyProperty(_:_:_:)`](https://developer.apple.com/documentation/ColorSync/ColorSyncTransformCopyProperty(_:_:_:)).
+- `srcFormat`: A pointer to a populated [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure describing the image format of the source image. If the [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) value is `NULL`, sRGB is used as the default value. The [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) value is retained by this function and is released when the [`vImageConverter`](vimageconverter.md) is destroyed.
+- `destFormat`: A pointer to a populated [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure describing the image format of the destination image. If the [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) value is `NULL`, sRGB is used as the default value. The [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) value is retained by this function and is released when the [`vImageConverter`](vimageconverter.md) is destroyed.
+- `backgroundColor`: An array of floats to be used as a background color if one is needed. The `backgroundColor` range is assumed to be `[0,1]`. The channel ordering and number of color channels must match the natural order of the destination colorspace (for example, RGB or CMYK). The `backgroundColor` value may be `NULL` if no background color is needed.
+- `flags`: The options to use when performing this operation. The following flags are supported: | Name | Description |
+| --- | --- |
+| [`kvImagePrintDiagnosticsToConsole`](kvimageprintdiagnosticstoconsole.md) | Prints a debug message if the operation fails. |
+| [`kvImageDoNotTile`](kvimagedonottile.md) | Operates as if [`kvImageDoNotTile`](kvimagedonottile.md) was passed to [`vImageConvert_AnyToAny(_:_:_:_:_:)`](vimageconvert_anytoany(_:_:_:_:_:).md). |
 
 ## See Also
 

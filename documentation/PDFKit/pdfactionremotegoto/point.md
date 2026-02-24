@@ -25,7 +25,7 @@ Page space is a 72-dpi coordinate system with the origin at the lower-left corne
 
 ## Parameters
 
-- `point`: The point on the remote page to go to. If either the x value or the y value of the point is  , no position on the page is specified.
+- `point`: The point on the remote page to go to. If either the x value or the y value of the point is `kPDFDestinationUnspecifiedValue`, no position on the page is specified.
 
 
 ---

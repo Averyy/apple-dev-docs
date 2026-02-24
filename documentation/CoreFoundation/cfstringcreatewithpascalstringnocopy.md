@@ -40,10 +40,10 @@ If an error occurs during the creation of the string, then `pStr` is not dealloc
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new string. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `pStr`: The Pascal string to be used to create the string.
 - `encoding`: The encoding of the characters in the Pascal string.
-- `contentsDeallocator`: The CFAllocator object to use to deallocate the external string buffer when it is no longer needed. Pass   or   to request the default allocator for this purpose. If the buffer does not need to be deallocated, or if you want to assume responsibility for deallocating the buffer (and not have the string deallocate it), pass  .
+- `contentsDeallocator`: The CFAllocator object to use to deallocate the external string buffer when it is no longer needed. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to request the default allocator for this purpose. If the buffer does not need to be deallocated, or if you want to assume responsibility for deallocating the buffer (and not have the string deallocate it), pass [`kCFAllocatorNull`](kcfallocatornull.md).
 
 ## See Also
 

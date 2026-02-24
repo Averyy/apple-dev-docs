@@ -17,7 +17,7 @@ func setNominalSampleRate(_ sampleRate: Double) throws
 
 ## Parameters
 
-- `sampleRate`: A Double that indicates the current nominal sample rate of the   device.
+- `sampleRate`: A Double that indicates the current nominal sample rate of the device.
 
 
 ---

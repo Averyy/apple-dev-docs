@@ -39,7 +39,7 @@ SwiftUI prevents document edits during the snapshot operation to ensure that the
 
 ## Parameters
 
-- `contentType`: The content type that you create the   document snapshot for.
+- `contentType`: The content type that you create the document snapshot for.
 
 ## See Also
 

@@ -27,7 +27,7 @@ The system invokes this callback when some aspect of the current MIDI setup chan
 ## Parameters
 
 - `message`: A structure that contains information about what changed.
-- `refCon`: The client’s  , passed to  .
+- `refCon`: The client’s `refCon`, passed to [`MIDIClientCreate(_:_:_:_:)`](midiclientcreate(_:_:_:_:).md).
 
 ## See Also
 

@@ -22,7 +22,7 @@ Asks the system to create a placeholder for the downloaded file in the person’
 
 ## Parameters
 
-- `placeholderType`: The type of the file for which the system creates a placeholder. If this is  , the system chooses a type based on the download’s filename extension.
+- `placeholderType`: The type of the file for which the system creates a placeholder. If this is `nil`, the system chooses a type based on the download’s filename extension.
 - `finalFileCreatedHandler`: A closure you use to receive the location of the downloaded file in the person’s Downloads folder.
 
 ## See Also

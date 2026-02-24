@@ -32,7 +32,7 @@ The manager sets the value `expirationHandler` to `nil` after the handler comple
 
 ## Parameters
 
-- `expirationHandler`: The handler may be called before the background process uses the full amount of its allocated time.
+- `expirationHandler`: The expiration handler takes no arguments and has no return value. Use the handler to cancel any ongoing work and to do any required cleanup in as short a time as possible. The handler may be called before the background process uses the full amount of its allocated time.
 
 ## See Also
 

@@ -25,7 +25,7 @@ The component instance must be of the same [`GKComponent`](gkcomponent.md) subcl
 
 ## Parameters
 
-- `component`: An instance of a   subclass.
+- `component`: An instance of a [`GKComponent`](gkcomponent.md) subclass.
 
 ## See Also
 

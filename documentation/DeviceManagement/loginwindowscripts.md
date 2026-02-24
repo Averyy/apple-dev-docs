@@ -87,6 +87,13 @@ The MCX login and logout managed-scripts payload contains information about exec
 - [object LoginWindowScripts.ScriptsItems](loginwindowscripts/scriptsitems.md)
   A dictionary of login scripts.
 
+## Properties
+
+- `loginscripts` ([LoginWindowScripts.ScriptsItems]): An array of one or more dictionaries of scripts to run at user login time.
+- `logoutscripts` ([LoginWindowScripts.ScriptsItems]): An array of one or more dictionaries of scripts to run at user logout time.
+- `skipLoginHook` (boolean): If `true`, the system doesn’t execute the login scripts during login.
+- `skipLogoutHook` (boolean): If `true`, the system doesn’t execute the logout scripts during logout.
+
 ## See Also
 
 - [object LoginItemsManagedItems](loginitemsmanageditems.md)

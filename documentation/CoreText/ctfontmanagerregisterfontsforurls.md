@@ -27,8 +27,8 @@ Returns `true` if registration of all font URLs was successful, otherwise `false
 ## Parameters
 
 - `fontURLs`: Array of font URLs.
-- `scope`: Scope constant defining the availability and lifetime of the registration. See   for values to pass for this parameter.
-- `errors`: Pointer to an array of CFError objects which, in case of failed registration, contain error information. Each error contains a CFArray of font URLs corresponding to  . These URLs represent the font files that caused the error and were not successfully registered. The array must be released by the caller. Can be  .
+- `scope`: Scope constant defining the availability and lifetime of the registration. See [`CTFontManagerScope`](ctfontmanagerscope.md) for values to pass for this parameter.
+- `errors`: Pointer to an array of CFError objects which, in case of failed registration, contain error information. Each error contains a CFArray of font URLs corresponding to [`kCTFontManagerErrorFontURLsKey`](kctfontmanagererrorfonturlskey.md). These URLs represent the font files that caused the error and were not successfully registered. The array must be released by the caller. Can be `NULL`.
 
 ## See Also
 

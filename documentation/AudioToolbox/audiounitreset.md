@@ -36,8 +36,8 @@ This function clears memory. It does not allocate or free memory resources.
 ## Parameters
 
 - `inUnit`: The audio unit whose render state you are resetting.
-- `inScope`: The audio unit scope, typically set to  .
-- `inElement`: The audio unit element, typically set to  .
+- `inScope`: The audio unit scope, typically set to `kAudioUnitScope_Global`.
+- `inElement`: The audio unit element, typically set to `0`.
 
 ## See Also
 

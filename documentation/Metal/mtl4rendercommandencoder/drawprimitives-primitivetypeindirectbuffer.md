@@ -32,8 +32,8 @@ Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of 
 
 ## Parameters
 
-- `primitiveType`: A   representing how the command interprets vertex argument data.
-- `indirectBuffer`: GPUAddress of a   instance with data that matches the layout of the    structure. You are responsible for ensuring that the   alignment of this address is 4 bytes.
+- `primitiveType`: A [`MTLPrimitiveType`](mtlprimitivetype.md) representing how the command interprets vertex argument data.
+- `indirectBuffer`: GPUAddress of a [`MTLBuffer`](mtlbuffer.md) instance with data that matches the layout of the [`MTLDrawPrimitivesIndirectArguments`](mtldrawprimitivesindirectarguments.md) structure. You are responsible for ensuring that the alignment of this address is 4 bytes.
 
 ## See Also
 

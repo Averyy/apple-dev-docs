@@ -38,11 +38,11 @@ The container will only be created once. New values that are passed to the `mode
 
 ## Parameters
 
-- `modelType`: The model type defining the schema used to create the   model container.
+- `modelType`: The model type defining the schema used to create the model container.
 - `inMemory`: Whether the container should store data only in memory.
-- `isAutosaveEnabled`:   if autosave is enabled.
-- `isUndoEnabled`: Use   in the environment to manage undo   operations for the model container.
-- `onSetup`: A callback that will be invoked when the creation of the   container has has succeeded or failed.
+- `isAutosaveEnabled`: `true` if autosave is enabled.
+- `isUndoEnabled`: Use `undoManager` in the environment to manage undo operations for the model container.
+- `onSetup`: A callback that will be invoked when the creation of the container has has succeeded or failed.
 
 ## See Also
 

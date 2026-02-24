@@ -20,7 +20,7 @@ An initialized `NSPrinter` object, or `nil` if the specified printer was not ava
 
 ## Parameters
 
-- `type`: A string describing the make and model information. You can get this string using the   method.
+- `type`: A string describing the make and model information. You can get this string using the [`printerTypes`](nsprinter/printertypes.md) method.
 
 ## See Also
 

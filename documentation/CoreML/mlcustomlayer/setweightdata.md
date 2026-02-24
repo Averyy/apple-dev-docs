@@ -33,7 +33,7 @@ The data encoded in the `weights` field of the `.mlmodel` file is loaded and pas
 
 ## Parameters
 
-- `weights`: The data encoded in the   field of the model specification.
+- `weights`: The data encoded in the `weights` field of the model specification.
 
 ## See Also
 

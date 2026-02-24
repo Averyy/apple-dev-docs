@@ -23,7 +23,7 @@ init(initialValue: Value, reset: @escaping (Value, inout Transaction) -> Void)
 ## Parameters
 
 - `initialValue`: An initial state value.
-- `reset`: A closure that provides a  .
+- `reset`: A closure that provides a [`Transaction`](transaction.md).
 
 ## See Also
 

@@ -24,7 +24,7 @@ The framework calls this method to query the driver extension class to determine
 
 ## Parameters
 
-- `value`: A pointer to a   value. On return, set this value to the highest LUN the controller can address.
+- `value`: A pointer to a `uint64_t` value. On return, set this value to the highest LUN the controller can address.
 
 ## See Also
 

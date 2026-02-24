@@ -30,7 +30,7 @@ Calling this function can increase the rate at which RealityKit calls the [`upda
 ## Parameters
 
 - `query`: The query identifying which entities you want to fetch.
-- `condition`: How often the   is updated (if the query is not empty).
+- `condition`: How often the [`System`](system.md) is updated (if the query is not empty).
 
 
 ---

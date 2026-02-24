@@ -24,9 +24,9 @@ An [`MLTrainingSession`](mltrainingsession.md) that represents the action classi
 
 ## Parameters
 
-- `trainingData`: An   instance.
-- `parameters`: An    instance you use to configure the model for the training session.
-- `sessionParameters`: An   instance you use   to configure the training session.
+- `trainingData`: An [`MLHandPoseClassifier.DataSource`](mlhandposeclassifier/datasource.md) instance.
+- `parameters`: An [`MLHandPoseClassifier.ModelParameters`](mlhandposeclassifier/modelparameters-swift.struct.md) instance you use to configure the model for the training session.
+- `sessionParameters`: An [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you use to configure the training session.
 
 ## See Also
 

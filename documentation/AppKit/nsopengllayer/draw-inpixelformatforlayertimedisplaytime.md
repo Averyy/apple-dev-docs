@@ -23,7 +23,7 @@ This method is called when a new frame needs to be generated for the layer time 
 - `context`: The NSOpenGLContext in to which the OpenGL content would be drawn.
 - `pixelFormat`: The pixel format used when the context was created.
 - `t`: The current layer time.
-- `ts`: The display timestamp associated with timeInterval. Can be  .
+- `ts`: The display timestamp associated with timeInterval. Can be `null`.
 
 ## See Also
 

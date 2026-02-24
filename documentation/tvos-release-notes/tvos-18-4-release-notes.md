@@ -38,7 +38,7 @@ The tvOS 18.4 SDK provides support to develop tvOS apps for Apple TV devices run
 
 ###### Known Issues
 
-- Calling `isEligibleForIntroOffer(for:)` will return false if there is no user account signed in.  (146119524)  The user should sign in with their App Store account to request introductory offer eligibility.
+- Calling `isEligibleForIntroOffer(for:)` will return false if there is no user account signed in.  (146119524) **Workaround:** The user should sign in with their App Store account to request introductory offer eligibility.
 
 ###### Deprecations
 

@@ -25,9 +25,9 @@ Because this sample app relies on using Wi-Fi Aware to make a network connection
 1. Launch the app on two nearby devices.
 2. Tap Host Simulation on one device to start it in publisher mode.
 3. Tap View Simulation on the other device to start it in subscriber mode.
-4. Pair the devices. - Tap  on both devices.
+4. Pair the devices. - Tap **+** on both devices.
 - On the subscriber device, select the publisher device to pair with, and follow the on-screen steps to complete the pairing.
-- After the pairing is complete, each device shows the other device under the  section. Dismiss the pairing views on both devices.
+- After the pairing is complete, each device shows the other device under the *Paired Devices* section. Dismiss the pairing views on both devices.
 5. Connect the devices. - On the publisher device, tap Advertise.
 - On the subscriber device, tap Discover & Connect.
 
@@ -53,7 +53,7 @@ The sample app uses the Wi-Fi Aware framework with the addition of the [`com.app
 
 ##### Declare and Access Services
 
-For an app to perform any Wi-Fi Aware operations, it needs to declare the services that it intends to use for publishing and subscribing. The sample app declares the  service in its `Info.plist` with `Publishable` and `Subscribable` keys:
+For an app to perform any Wi-Fi Aware operations, it needs to declare the services that it intends to use for publishing and subscribing. The sample app declares the *_sat-simulation._udp* service in its `Info.plist` with `Publishable` and `Subscribable` keys:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -122,7 +122,7 @@ DevicePairingView(.wifiAware(.connecting(to: .simulationService, from: .userSpec
 }
 ```
 
-To perform pairing, tap the  button in the app on the two devices, one running in publisher mode and the other in subscriber mode.
+To perform pairing, tap the **+** button in the app on the two devices, one running in publisher mode and the other in subscriber mode.
 
 ##### Access Paired Devices
 
@@ -251,7 +251,7 @@ connection.onStateUpdate { connection, state in
 
 On the subscriber side, the `WAEndpoint` instances the app receives from the `NetworkBrowser` are connectable when the app passes them to the `NetworkConnection`. To set up a connection to a discovered endpoint using `NetworkConnection`, the app provides the endpoint of interest and sets the Wi-Fi Aware performance mode and traffic service class. It also sets up a connection state update handler similar to the publisher.
 
-The sample app connects to the first endpoint that’s discovered, provides the  service, and stops the browser after making the first connection. Although this particular design of connecting to the first available endpoint works for the sample app’s use case, most apps typically review the discovered endpoint and make a connection only if required.
+The sample app connects to the first endpoint that’s discovered, provides the *_sat-simulation._udp* service, and stops the browser after making the first connection. Although this particular design of connecting to the first available endpoint works for the sample app’s use case, most apps typically review the discovered endpoint and make a connection only if required.
 
 ```swift
 let connection = NetworkConnection(
@@ -277,7 +277,7 @@ connection.onStateUpdate { connection, state in
 
 ##### Send Data to Connected Devices
 
-The publisher instance of the sample app sends the coordinates of the  in the local simulation to all connected devices, for every frame:
+The publisher instance of the sample app sends the coordinates of the *satellite* in the local simulation to all connected devices, for every frame:
 
 ```swift
 func send(_ event: NetworkEvent, to connection: WiFiAwareConnection) async {

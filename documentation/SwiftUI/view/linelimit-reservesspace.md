@@ -39,7 +39,7 @@ GroupBox {
 ## Parameters
 
 - `limit`: The line limit.
-- `reservesSpace`: Whether text reserves space so that   it always occupies the height required to display the specified   number of lines.
+- `reservesSpace`: Whether text reserves space so that it always occupies the height required to display the specified number of lines.
 
 ## See Also
 

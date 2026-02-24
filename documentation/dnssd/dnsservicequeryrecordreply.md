@@ -22,13 +22,13 @@ typealias DNSServiceQueryRecordReply = (DNSServiceRef?, DNSServiceFlags, UInt32,
 
 ## Parameters
 
-- `sdRef`: The DNSServiceRef initialized by  .
-- `flags`: Possible values are   and kDNSServiceFlagsAdd. The Add flag is NOT set for PTR records with a ttl of 0, i.e. “Remove” events.
+- `sdRef`: The DNSServiceRef initialized by [`DNSServiceQueryRecord(_:_:_:_:_:_:_:_:)`](dnsservicequeryrecord(_:_:_:_:_:_:_:_:).md).
+- `flags`: Possible values are [`kDNSServiceFlagsMoreComing`](kdnsserviceflagsmorecoming.md) and kDNSServiceFlagsAdd. The Add flag is NOT set for PTR records with a ttl of 0, i.e. “Remove” events.
 - `interfaceIndex`: The interface on which the query was resolved (the index for a given interface is determined via the if_nametoindex() family of calls). See “Constants for specifying an interface index” for more details.
-- `errorCode`: Will be   on success, otherwise will indicate the failure that occurred. Other parameters are undefined if errorCode is nonzero.
+- `errorCode`: Will be [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success, otherwise will indicate the failure that occurred. Other parameters are undefined if errorCode is nonzero.
 - `fullname`: The resource record’s full domain name.
 - `rrtype`: The resource record’s type (e.g. kDNSServiceType_PTR, kDNSServiceType_SRV, and so on).
-- `rrclass`: The class of the resource record (usually  ).
+- `rrclass`: The class of the resource record (usually [`kDNSServiceClass_IN`](kdnsserviceclass_in.md)).
 - `rdlen`: The length, in bytes, of the resource record rdata.
 - `rdata`: The raw rdata of the resource record.
 - `ttl`: If the client wishes to cache the result for performance reasons, the TTL indicates how long the client may legitimately hold onto this result, in seconds. After the TTL expires, the client should consider the result no longer valid, and if it requires this data again, it should be re-fetched with a new query. Of course, this only applies to clients that cancel the asynchronous operation when they get a result. Clients that leave the asynchronous operation running can safely assume that the data remains valid until they get another callback telling them otherwise.

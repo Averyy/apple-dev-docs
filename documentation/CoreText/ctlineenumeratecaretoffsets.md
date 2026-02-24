@@ -23,7 +23,7 @@ func CTLineEnumerateCaretOffsets(_ line: CTLine, _ block: @escaping (Double, CFI
 ## Parameters
 
 - `line`: The line to enumerate.
-- `block`: The block to invoke once for each logical caret edge in the line, in left-to-right visual order. The block’s   parameter is relative to the line origin. The block’s   parameter specifies logical order.
+- `block`: The block to invoke once for each logical caret edge in the line, in left-to-right visual order. The block’s `offset` parameter is relative to the line origin. The block’s `leadingEdge` parameter specifies logical order.
 
 ## See Also
 

@@ -26,7 +26,7 @@ This method works in single-line, baseline rendering configuration by default. I
 
 - `size`: The size of the rectangle to draw in.
 - `options`: String drawing options.
-- `attributes`: A dictionary of text attributes to be applied to the string. These are the same attributes that can be applied to an   object, but in the case of   objects, the attributes apply to the entire string, rather than ranges within the string.
+- `attributes`: A dictionary of text attributes to be applied to the string. These are the same attributes that can be applied to an `NSAttributedString` object, but in the case of `NSString` objects, the attributes apply to the entire string, rather than ranges within the string.
 
 ## See Also
 

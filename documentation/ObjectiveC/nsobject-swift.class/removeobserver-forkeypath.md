@@ -29,7 +29,7 @@ Be sure to invoke this method (or [`removeObserver(_:forKeyPath:context:)`](nsob
 ## Parameters
 
 - `observer`: The object to remove as an observer.
-- `keyPath`: A key-path, relative to the object receiving this message, for which   is registered to receive KVO change notifications.
+- `keyPath`: A key-path, relative to the object receiving this message, for which `observer` is registered to receive KVO change notifications.
 
 ## See Also
 

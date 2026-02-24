@@ -27,7 +27,7 @@ All three strings should be kept as brief as possible to ensure they display wel
 ## Parameters
 
 - `eventStatusText`: Up to three separate strings for event status may be displayed.
-- `eventStatusImage`: An optional event status image for this event, if it applies to this event. For example,   a baseball game could display a representation of the bases and outs, indicating   how many bases are loaded and the number of outs in the current inning.
+- `eventStatusImage`: An optional event status image for this event, if it applies to this event. For example, a baseball game could display a representation of the bases and outs, indicating how many bases are loaded and the number of outs in the current inning.
 - `eventClock`: The event timer, if it applies to this event. See @c CPNowPlayingSportsClock.
 
 

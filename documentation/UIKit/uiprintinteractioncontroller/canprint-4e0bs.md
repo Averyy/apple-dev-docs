@@ -27,7 +27,7 @@ You should call this method to test a data object prior to assigning it to [`pri
 
 ## Parameters
 
-- `data`: An instance of the   class that contains PDF data or an image in a format supported by the Image I/O framework. See   in   for a list of the supported image formats.
+- `data`: An instance of the [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) class that contains PDF data or an image in a format supported by the Image I/O framework. See [`View Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503) in [`View Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503) for a list of the supported image formats.
 
 ## See Also
 

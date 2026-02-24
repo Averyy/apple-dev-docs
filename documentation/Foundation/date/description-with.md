@@ -26,7 +26,7 @@ A string representation of the `Date`, using the given locale, or if the locale 
 
 ## Parameters
 
-- `locale`: A  . If you pass  ,   formats the date in the same way as the   property.
+- `locale`: A `Locale`. If you pass `nil`, `Date` formats the date in the same way as the `description` property.
 
 ## See Also
 

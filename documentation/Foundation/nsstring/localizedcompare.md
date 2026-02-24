@@ -32,7 +32,7 @@ This method uses the current locale.
 
 ## Parameters
 
-- `string`: This value must not be  . If this value is  , the behavior is undefined and may change in future versions of macOS.
+- `string`: The string with which to compare the receiver. This value must not be `nil`. If this value is `nil`, the behavior is undefined and may change in future versions of macOS.
 
 ## See Also
 

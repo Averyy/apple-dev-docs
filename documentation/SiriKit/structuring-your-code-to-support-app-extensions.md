@@ -12,8 +12,8 @@ Lightweight extensions that don’t include most of your app’s code can respon
 
 If your app and app extension share services, consider structuring your code in the following way:
 
--  A private shared framework lets you place the code for accessing your services in one code module and use that code from multiple targets. Shared frameworks minimize the size of both executables and make testing easier by ensuring that each executable uses the same code path.
--  Put relevant images and data files into a shared container so your app and app extension can use them. You enable shared container support in the Capabilities tab of each target.
+- **Implement your core services in a private shared framework.** A private shared framework lets you place the code for accessing your services in one code module and use that code from multiple targets. Shared frameworks minimize the size of both executables and make testing easier by ensuring that each executable uses the same code path.
+- **Use a shared container to store common resources.** Put relevant images and data files into a shared container so your app and app extension can use them. You enable shared container support in the Capabilities tab of each target.
 
 ## See Also
 

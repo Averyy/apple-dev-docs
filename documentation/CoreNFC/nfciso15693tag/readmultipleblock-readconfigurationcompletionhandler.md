@@ -22,7 +22,7 @@ Performs read operation using Read Multiple Blocks command (0x23 command code) a
 ## Parameters
 
 - `readConfiguration`: Configuration For the Read Multiple Blocks command.
-- `completionHandler`: Completion handler called when the operation is completed.  error is nil if operation succeeds.   A @link NFCISO15693TagResponseErrorKey @link/ in NSError userInfo dictionary is returned when the tag   responded to the command with an error, and the error code value is defined in ISO15693-3 specification.   Successfully read data blocks will be returned from NSData object.  All blocks are concatenated into the NSData object.
+- `completionHandler`: Completion handler called when the operation is completed.  error is nil if operation succeeds. A @link NFCISO15693TagResponseErrorKey @link/ in NSError userInfo dictionary is returned when the tag responded to the command with an error, and the error code value is defined in ISO15693-3 specification. Successfully read data blocks will be returned from NSData object.  All blocks are concatenated into the NSData object.
 
 
 ---

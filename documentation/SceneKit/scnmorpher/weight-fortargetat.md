@@ -30,7 +30,7 @@ Target geometries and their weights determine the current form of the surface pr
 
 ## Parameters
 
-- `targetIndex`: The index of a geometry in the morpher’s   array.
+- `targetIndex`: The index of a geometry in the morpher’s [`targets`](scnmorpher/targets.md) array.
 
 ## See Also
 

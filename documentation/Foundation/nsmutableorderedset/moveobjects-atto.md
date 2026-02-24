@@ -24,6 +24,40 @@ func moveObjects(at indexes: IndexSet, to idx: Int)
 
 For example, the following code results in the contents of `mySet` being equal to `["a", "c", "b", "d", "e"]:`
 
+**Swift**:
+
+```swift
+let movedObjectIndexes = NSMutableIndexSet()
+movedObjectIndexes.addIndex(1)
+movedObjectIndexes.addIndex(3)
+ 
+let mySet = NSMutableOrderedSet(capacity: 5)
+mySet.addObject("a")
+mySet.addObject("b")
+mySet.addObject("c")
+mySet.addObject("d")
+mySet.addObject("e")
+ 
+mySet.moveObjectsAtIndexes(movedObjectIndexes, toIndex: 2)
+```
+
+**Objective-C**:
+
+```objc
+NSMutableIndexSet *movedObjectIndexes = [NSMutableIndexSet indexSet];
+[movedObjectIndexes addIndex: 1];
+[movedObjectIndexes addIndex: 3];
+ 
+NSMutableOrderedSet *mySet = [NSMutableOrderedSet orderedSetWithCapacity:5];
+[mySet addObject:@"a"];
+[mySet addObject:@"b"];
+[mySet addObject:@"c"];
+[mySet addObject:@"d"];
+[mySet addObject:@"e"];
+ 
+[mySet moveObjectsAtIndexes:movedObjectIndexes toIndex:2];
+```
+
 ## Parameters
 
 - `indexes`: The indexes of the objects to move.

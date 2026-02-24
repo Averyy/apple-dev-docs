@@ -22,8 +22,8 @@ static func += (lhs: inout AttributedString, rhs: AttributedString)
 
 ## Parameters
 
-- `lhs`: An attributed string. After the operation, the value of this string is the original   string with   appended to it.
-- `rhs`: An attributed string to append to  .
+- `lhs`: An attributed string. After the operation, the value of this string is the original `lhs` string with `rhs` appended to it.
+- `rhs`: An attributed string to append to `lhs`.
 
 ## See Also
 

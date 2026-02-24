@@ -21,7 +21,7 @@ init(argumentIndex argument: Int)
 
 ## Parameters
 
-- `argument`: The index of the parameter in the  stitched function’s parameter list. The first parameter is  , the second is  , and so on.
+- `argument`: The index of the parameter in the  stitched function’s parameter list. The first parameter is `0`, the second is `1`, and so on.
 
 
 ---

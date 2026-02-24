@@ -25,7 +25,7 @@ The system invokes the passed-in block when a progress object calls [`publish()`
 ## Parameters
 
 - `url`: The URL of the file to observe.
-- `publishingHandler`: A closure that the system invokes when a progress object that represents a file operation matching the specified URL calls  .
+- `publishingHandler`: A closure that the system invokes when a progress object that represents a file operation matching the specified URL calls [`publish()`](progress/publish().md).
 
 ## See Also
 

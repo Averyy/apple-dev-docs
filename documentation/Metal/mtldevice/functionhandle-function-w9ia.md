@@ -26,7 +26,7 @@ A [`MTLFunctionHandle`](mtlfunctionhandle.md) instance  for a binary function th
 
 ## Parameters
 
-- `function`: A   instance representing the function binary.
+- `function`: A [`MTL4BinaryFunction`](mtl4binaryfunction.md) instance representing the function binary.
 
 
 ---

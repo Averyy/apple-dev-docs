@@ -37,7 +37,7 @@ The iOS & iPadOS 17.2 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- While streaming a Fitness+ workout via AirPlay, real-time metrics might be missing if the stream was started through the AirPlay button in the top left corner of the video player.  (118467046)  Use the AirPlay button located in the bottom right corner of the video player to start the stream.
+- While streaming a Fitness+ workout via AirPlay, real-time metrics might be missing if the stream was started through the AirPlay button in the top left corner of the video player.  (118467046) **Workaround:** Use the AirPlay button located in the bottom right corner of the video player to start the stream.
 
 ##### Imessage Contact Key Verification
 
@@ -76,7 +76,7 @@ The iOS & iPadOS 17.2 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- Landscape mode is not supported for Journaling Suggestions API.  (117154771)  Please use Portrait mode only.
+- Landscape mode is not supported for Journaling Suggestions API.  (117154771) **Workaround:** Please use Portrait mode only.
 
 ##### Messages
 
@@ -140,7 +140,7 @@ The iOS & iPadOS 17.2 SDK provides support to develop apps for iPhone and iPad r
 ###### Resolved Issues
 
 - Fixed: Resolved a possible Swift access conflict crash that could occur with toolbar items.  (113992797)
-- Fixed: To prevent unintentional implicit dependency cycles, ImageRenderer no longer sends Observable updates when the image it produces changes. This change  affect the behavior when a dependency is explicitly declared by observing the ImageRenderer’s publisher.  (116836341)
+- Fixed: To prevent unintentional implicit dependency cycles, ImageRenderer no longer sends Observable updates when the image it produces changes. This change **does not** affect the behavior when a dependency is explicitly declared by observing the ImageRenderer’s publisher.  (116836341)
 
 ##### Widgetkit
 

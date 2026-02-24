@@ -26,8 +26,8 @@ A color object.
 
 ## Parameters
 
-- `gray`: A grayscale value (  -  ).
-- `alpha`: An alpha value (  -  ).
+- `gray`: A grayscale value (`0.0` - `1.0`).
+- `alpha`: An alpha value (`0.0` - `1.0`).
 
 ## See Also
 

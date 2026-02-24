@@ -84,7 +84,7 @@ extension UpdatableDrawingClassifier {
 You create an [`MLUpdateTask`](mlupdatetask.md) by passing the following to an initializer:
 
 - An [`MLBatchProvider`](mlbatchprovider.md) that contains your update data
-- The location of the compiled model youʼd like to update (`.mlmodelc`)
+- The location of the compiled model youʼd like to update (*ModelName*`.mlmodelc`)
 - An [`MLModelConfiguration`](mlmodelconfiguration.md), if applicable
 - A completion handler with a single [`MLUpdateContext`](mlupdatecontext.md) parameter
 
@@ -102,7 +102,7 @@ guard let updateTask = try? MLUpdateTask(forModelAt: url,
 }
 ```
 
-> ❗ **Important**: An update task can only update a  model file—one whose name ends with `.mlmodelc`.
+> ❗ **Important**: An update task can only update a *compiled* model file—one whose name ends with `.mlmodelc`.
 
 ##### Run the Update Task
 

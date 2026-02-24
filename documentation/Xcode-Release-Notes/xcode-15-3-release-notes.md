@@ -22,13 +22,13 @@ Xcode 15.3 includes SDKs for iOS 17.4, iPadOS 17.4, tvOS 17.4, watchOS 10.4, mac
  Code: 401
  Failure Reason: runtime profile not found using "System" match policy
  Recovery Suggestion: Download the com.apple.CoreSimulator.SimRuntime.iOS-17-2 simulator runtime from the Xcode 
-``` (127498625)  To resume using the simulator, please reboot your Mac.  After rebooting, check Xcode Preferences → Platforms to ensure that the simulator runtime you would like to use is still installed.  If it is missing, use the Get button to download it again.
+``` (127498625) **Workaround:** To resume using the simulator, please reboot your Mac.  After rebooting, check Xcode Preferences → Platforms to ensure that the simulator runtime you would like to use is still installed.  If it is missing, use the Get button to download it again.
 
 ##### App Intents
 
 ###### Known Issues
 
-- AppIntents may fail to execute when the target’s minimum deployment target is iOS 15.0 or earlier  (123798206) (FB13664020)  Add the ENABLE_APPINTENTS_DEPLOYMENT_AWARE_PROCESSING=NO build flag to your target(s)
+- AppIntents may fail to execute when the target’s minimum deployment target is iOS 15.0 or earlier  (123798206) (FB13664020) **Workaround:** Add the ENABLE_APPINTENTS_DEPLOYMENT_AWARE_PROCESSING=NO build flag to your target(s)
 
 ##### Apple Clang Compiler
 
@@ -131,7 +131,7 @@ Xcode 15.3 includes SDKs for iOS 17.4, iPadOS 17.4, tvOS 17.4, watchOS 10.4, mac
 
 ###### Known Issues
 
-- The Metal Debugger will not work with connected devices in Xcode versions earlier than 15.3 when Xcode 15.3 or later is installed on the same system.  (121627817)  If Xcode 15.3 or later has been installed, use Xcode 15.3 or later when requiring the Metal Debugger to work with connected devices.
+- The Metal Debugger will not work with connected devices in Xcode versions earlier than 15.3 when Xcode 15.3 or later is installed on the same system.  (121627817) **Workaround:** If Xcode 15.3 or later has been installed, use Xcode 15.3 or later when requiring the Metal Debugger to work with connected devices.
 
 ##### Previews
 
@@ -155,7 +155,7 @@ Xcode 15.3 includes SDKs for iOS 17.4, iPadOS 17.4, tvOS 17.4, watchOS 10.4, mac
 
 ###### Known Issues
 
-- Calling [`MobileDocumentReaderSession.requestDocument(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/proximityreader/mobiledocumentreadersession/requestdocument(_:)) or [`PaymentCardReaderSession.readPaymentCard(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/proximityreader/paymentcardreadersession/readpaymentcard(_:)-8jol5) from the iOS Simulator results in `unknown` or `readCancelled` errors being thrown.  (123651094)  Test your app on a physical iOS device or use Xcode 15.2 to debug your app on the iOS Simulator.
+- Calling [`MobileDocumentReaderSession.requestDocument(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/proximityreader/mobiledocumentreadersession/requestdocument(_:)) or [`PaymentCardReaderSession.readPaymentCard(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/proximityreader/paymentcardreadersession/readpaymentcard(_:)-8jol5) from the iOS Simulator results in `unknown` or `readCancelled` errors being thrown.  (123651094) **Workaround:** Test your app on a physical iOS device or use Xcode 15.2 to debug your app on the iOS Simulator.
 
 ##### Signing Distribution
 
@@ -168,8 +168,8 @@ Xcode 15.3 includes SDKs for iOS 17.4, iPadOS 17.4, tvOS 17.4, watchOS 10.4, mac
 
 ###### Known Issues
 
-- When attempting to boot a simulator device shortly after installing its runtime or updating to a new version of macOS, Gatekeeper scanning may temporarily prevent boot.  This can appear as an “Unable to boot the Simulator” or “-308” error.  (118038020)  Wait a few minutes before trying the operation again to allow Gatekeeper to complete its scan.
-- When attempting to boot a simulator device after an XProtect update is installed, Gatekeeper scanning may temporarily prevent boot.  This can appear as an “Unable to boot the Simulator” or “-308” error.  (124035288)  Wait a few minutes before trying the operation again to allow Gatekeeper to complete its scan.
+- When attempting to boot a simulator device shortly after installing its runtime or updating to a new version of macOS, Gatekeeper scanning may temporarily prevent boot.  This can appear as an “Unable to boot the Simulator” or “-308” error.  (118038020) **Workaround:** Wait a few minutes before trying the operation again to allow Gatekeeper to complete its scan.
+- When attempting to boot a simulator device after an XProtect update is installed, Gatekeeper scanning may temporarily prevent boot.  This can appear as an “Unable to boot the Simulator” or “-308” error.  (124035288) **Workaround:** Wait a few minutes before trying the operation again to allow Gatekeeper to complete its scan.
 
 ##### Storekit
 

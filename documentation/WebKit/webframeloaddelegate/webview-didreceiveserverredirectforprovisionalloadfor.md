@@ -16,7 +16,7 @@ optional func webView(_ sender: WebView!, didReceiveServerRedirectForProvisional
 
 #### Discussion
 
-A  is when one URL location is redirected to another. Additional information about the new request can be obtained from the data source of `frame`.
+A *server redirect* is when one URL location is redirected to another. Additional information about the new request can be obtained from the data source of `frame`.
 
 ## Parameters
 

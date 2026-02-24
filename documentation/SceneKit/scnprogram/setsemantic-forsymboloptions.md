@@ -32,7 +32,7 @@ To use the coordinate transformations defined by the scene’s node hierarchy an
 
 - `semantic`: A SceneKit semantic identifier. See Geometry Semantic Identifiers and Rendering Transform Keys for possible values.
 - `symbol`: The name declared in the program’s GLSL source code for the vertex attribute or uniform variable to be associated with the semantic.
-- `options`: A dictionary of options affecting the semantic. See   for applicable keys and values.
+- `options`: A dictionary of options affecting the semantic. See `Program Semantic Options` for applicable keys and values.
 
 ## See Also
 

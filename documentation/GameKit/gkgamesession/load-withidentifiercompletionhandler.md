@@ -22,7 +22,8 @@ class func load(withIdentifier identifier: String) async throws -> GKGameSession
 ## Parameters
 
 - `identifier`: A unique string that identifies the game session to be loaded.
-- `completionHandler`: A block that is called after the game session has been loaded.
+- `completionHandler`: A block that is called after the game session has been loaded. - **session**: The `GKGameSession` object associated with the specified identifier.
+- **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is nil. See `GameKit Constants` for a list of error codes specific to GameKit.
 
 ## See Also
 

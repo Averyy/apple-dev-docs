@@ -32,8 +32,8 @@ An [`MLJob`](mljob.md) that represents the image classifier training session.
 ## Parameters
 
 - `trainingData`: Data source for training.
-- `parameters`: Model training parameters. See   for the defaults.
-- `sessionParameters`: Training session parameters. See   for the defaults.
+- `parameters`: Model training parameters. See [`MLImageClassifier.ModelParameters`](mlimageclassifier/modelparameters-swift.struct.md) for the defaults.
+- `sessionParameters`: Training session parameters. See [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) for the defaults.
 
 ## See Also
 

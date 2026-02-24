@@ -30,7 +30,7 @@ This function does not resolve the URL against its base, nor does it replace per
 
 ## Parameters
 
-- `anURL`: The   object to examine.
+- `anURL`: The `CFURL` object to examine.
 
 ## See Also
 

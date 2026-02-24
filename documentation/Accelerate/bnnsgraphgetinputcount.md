@@ -27,7 +27,7 @@ The number of input arguments, or `SIZE_T_MAX` if the query fails.
 ## Parameters
 
 - `graph`: The compiled graph object.
-- `function`: The function. Specify as   if the graph only contains one function.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
 
 ## See Also
 

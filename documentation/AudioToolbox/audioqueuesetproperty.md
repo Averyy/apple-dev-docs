@@ -26,7 +26,7 @@ A result code. See Result Codes.
 ## Parameters
 
 - `inAQ`: The audio queue that you want to set a property value on.
-- `inID`: The ID of the property whose value you want to set. See  .
+- `inID`: The ID of the property whose value you want to set. See [`AudioQueuePropertyID`](audioqueuepropertyid.md).
 - `inData`: The property value to set.
 - `inDataSize`: The size of the property data.
 

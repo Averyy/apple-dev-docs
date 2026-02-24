@@ -49,7 +49,7 @@ let texture = SKTexture(data: data,
 
 ## Parameters
 
-- `pixelData`: An   object that holds the bitmap data. The pixels must be 32 bpp, 8bpc (unsigned integer) RGBA pixel data. The color components should have been already multiplied by the alpha value.
+- `pixelData`: An `NSData` object that holds the bitmap data. The pixels must be 32 bpp, 8bpc (unsigned integer) RGBA pixel data. The color components should have been already multiplied by the alpha value.
 - `size`: The size of the new texture in points.
 
 ## See Also

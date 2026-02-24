@@ -17,7 +17,7 @@ optional func windowDidExitFullScreen(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named [`didExitFullScreenNotification`](nswindow/didexitfullscreennotification.md).
 
 ## See Also
 

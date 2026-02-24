@@ -21,7 +21,7 @@ var containsHeader: Bool
 
 #### Discussion
 
-Set `containsHeader` to `false` when the first row in a CSV contains usable data. Because every column in a data table needs a name, `MLDataTable` names the columns `X1`, `X2`, … `X` in the same order as they appear in the CSV file.
+Set `containsHeader` to `false` when the first row in a CSV contains usable data. Because every column in a data table needs a name, `MLDataTable` names the columns `X1`, `X2`, … `X`*n* in the same order as they appear in the CSV file.
 
 ## See Also
 

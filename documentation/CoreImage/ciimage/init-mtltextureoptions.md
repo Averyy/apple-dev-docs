@@ -30,7 +30,7 @@ To render the image using Metal, use this image with a Metal-based [`CIContext`]
 ## Parameters
 
 - `texture`: The Metal texture from which to use image data.
-- `options`: A dictionary specifying image options. (See  .)
+- `options`: A dictionary specifying image options. (See `Image Dictionary Keys`.)
 
 ## See Also
 

@@ -23,8 +23,8 @@ Setting the switch to either position doesn’t result in an action message bein
 
 ## Parameters
 
-- `on`:   if the switch should be turned to the on position;   if it should be turned to the off position. If the switch is already in the designated position, nothing happens.
-- `animated`:   to animate the “flipping” of the switch; otherwise  .
+- `on`: [`true`](https://developer.apple.com/documentation/Swift/true) if the switch should be turned to the on position; [`false`](https://developer.apple.com/documentation/Swift/false) if it should be turned to the off position. If the switch is already in the designated position, nothing happens.
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the “flipping” of the switch; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

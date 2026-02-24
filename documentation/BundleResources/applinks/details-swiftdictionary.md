@@ -23,6 +23,11 @@ object applinks.Details
 
 The object optionally contains any of these keys:
 
+- **`appID`**: An application identifier that specifies the app that can handle the universal links in the `components` array.
+- **`appIDs`**: An array of application identifiers that specify the apps that can handle the universal links in the `components` array.
+- **`components`**: An array of components that define the universal link URLs an app can handle.
+- **`defaults`**: A dictionary for defining the default settings to use for all universal links pattern matching in the components array.
+
 Use `appID` or `appIDs` to specify the applications that can access the specific URLs you define in the associated `components` array. You specify each application identifier in the following format:
 
 ```javascript
@@ -50,6 +55,13 @@ This example code shows a universal links details object in an association file:
 ### URL components
 - [object applinks.Details.Components](applinks/details-swift.dictionary/components-swift.dictionary.md)
   Patterns that define the universal links an app can open.
+
+## Properties
+
+- `appID` (string)
+- `appIDs` ([string])
+- `components` ([applinks.Details.Components])
+- `defaults` (applinks.Defaults)
 
 
 ---

@@ -18,10 +18,10 @@ init(rating: NSNumber?, maximumRating: NSNumber?, title: String?, detail: String
 
 ## Parameters
 
-- `rating`: A number in the range of 0 to  . The number must be an increment of 0.5.
+- `rating`: A number in the range of 0 to `maximumRating`. The number must be an increment of 0.5.
 - `maximumRating`: A whole number in the range of 1 to 5 that specifies the maximum rating that the item allows.
 - `title`: The text that the template displays as the item’s title.
-- `detail`: The text that the template displays below or beside the title, depending on the template’s layout. See   for more information.
+- `detail`: The text that the template displays below or beside the title, depending on the template’s layout. See [`CPInformationTemplateLayout`](cpinformationtemplatelayout.md) for more information.
 
 
 ---

@@ -22,11 +22,11 @@ func BNNSDirectApplyBroadcastMatMul(_ transA: Bool, _ transB: Bool, _ alpha: Flo
 
 ## Parameters
 
-- `transA`: A Boolean value that transposes the last two dimensions of matrix  .
-- `transB`: A Boolean value that transposes the last two dimensions of matrix  .
+- `transA`: A Boolean value that transposes the last two dimensions of matrix *A*.
+- `transB`: A Boolean value that transposes the last two dimensions of matrix *B*.
 - `alpha`: A value to scale the result.
-- `inputA`: The descriptor of matrix  .
-- `inputB`: The descriptor of matrix  .
+- `inputA`: The descriptor of matrix *A*.
+- `inputB`: The descriptor of matrix *B*.
 - `output`: The descriptor of the output.
 - `filter_params`: The filter runtime parameters.
 

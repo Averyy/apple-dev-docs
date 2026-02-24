@@ -33,8 +33,8 @@ Pass `nil` for both `startDate` and `endDate` to get all incomplete reminders in
 
 ## Parameters
 
-- `startDate`: The start date of the range of reminders fetched, or   for all incomplete reminders before  .
-- `endDate`: The end date of the range of reminders fetched, or   for all incomplete reminders after  .
+- `startDate`: The start date of the range of reminders fetched, or `nil` for all incomplete reminders before `endDate`.
+- `endDate`: The end date of the range of reminders fetched, or `nil` for all incomplete reminders after `startDate`.
 - `calendars`: An array of calendars to search.
 
 ## See Also

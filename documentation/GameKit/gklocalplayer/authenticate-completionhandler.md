@@ -21,7 +21,7 @@ For more information, see [`Authenticating a player`](authenticating-a-player.md
 
 ## Parameters
 
-- `completionHandler`: The block takes the following parameter:
+- `completionHandler`: A block to call when the player initializes or when an error occurs. The block takes the following parameter: - **error**: This parameter is `nil` if the player successfully initializes. Otherwise, it contains an error object that describes the error that occurrs.
 
 ## See Also
 

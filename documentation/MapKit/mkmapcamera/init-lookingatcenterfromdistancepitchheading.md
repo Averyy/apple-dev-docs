@@ -32,8 +32,8 @@ You can obtain the altitude of the camera by multiplying `distance` by the cosin
 
 - `centerCoordinate`: The coordinate point on which the framework centers the map.
 - `distance`: The line-of-sight distance from the camera to the center coordinate of the map.
-- `pitch`: The viewing angle of the camera, in degrees. A value of   results in a camera that points straight down at the map. Angles greater than   result in a camera that pitches toward the horizon by the specified number of degrees.
-- `heading`: The heading of the camera (in degrees) relative to true north. The value   means that the top edge of the map view corresponds to true north. The value   means the top of the map points due east. The value   means the top of the map points due south, and so on.
+- `pitch`: The viewing angle of the camera, in degrees. A value of `0` results in a camera that points straight down at the map. Angles greater than `0` result in a camera that pitches toward the horizon by the specified number of degrees.
+- `heading`: The heading of the camera (in degrees) relative to true north. The value `0` means that the top edge of the map view corresponds to true north. The value `90` means the top of the map points due east. The value `180` means the top of the map points due south, and so on.
 
 ## See Also
 

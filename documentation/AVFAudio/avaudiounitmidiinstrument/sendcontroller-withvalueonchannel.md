@@ -21,9 +21,9 @@ func sendController(_ controller: UInt8, withValue value: UInt8, onChannel chann
 
 ## Parameters
 
-- `controller`: Specifies a standard MIDI controller number. The valid range is   to  .
-- `value`: Value for the controller. The valid range is   to  .
-- `channel`: The channel number to send the event to. The valid range is   to  .
+- `controller`: Specifies a standard MIDI controller number. The valid range is `0` to `127`.
+- `value`: Value for the controller. The valid range is `0` to `127`.
+- `channel`: The channel number to send the event to. The valid range is `0` to `15`.
 
 ## See Also
 

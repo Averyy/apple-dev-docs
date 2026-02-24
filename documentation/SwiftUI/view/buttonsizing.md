@@ -57,7 +57,7 @@ struct CustomButtonStyle: ButtonStyle {
 
 ## Parameters
 
-- `sizing`: A button sizing behavior that may be used to   influence the primary axis size of buttons capable of adapting to it.
+- `sizing`: A button sizing behavior that may be used to influence the primary axis size of buttons capable of adapting to it.
 
 
 ---

@@ -17,7 +17,7 @@ optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, signalStrength: N
 ## Parameters
 
 - `device`: The connected Bluetooth hands-free phone or headset.
-- `signalStrength`: The new value of the signal strength indicator. For possible values, see  .
+- `signalStrength`: The new value of the signal strength indicator. For possible values, see [`IOBluetoothHandsFreeIndicatorSignal`](iobluetoothhandsfreeindicatorsignal.md).
 
 ## See Also
 

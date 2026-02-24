@@ -23,7 +23,7 @@ class func report(_ scores: [GKLeaderboardScore], withEligibleChallenges challen
 
 - `scores`: An array of scores to report.
 - `challenges`: An array of challenges that GameKit associates with the reported scores.
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: A block that GameKit calls when this method completes. The block receives the following parameter: - ***error***: If an error occurs, this object describes the error. If the operation completed successfully, this value is `nil`.
 
 ## See Also
 

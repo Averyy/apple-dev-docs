@@ -34,7 +34,7 @@ If `scrollDisabled(true)` has been applied to this view, scrolling will be disab
 
 ## Parameters
 
-- `behavior`: Whether scrolling should be enabled or disabled for this   input.
+- `behavior`: Whether scrolling should be enabled or disabled for this input.
 - `input`: The input for which to enable or disable scrolling.
 
 ## See Also

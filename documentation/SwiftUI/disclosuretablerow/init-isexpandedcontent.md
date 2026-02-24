@@ -21,7 +21,7 @@ init<Value>(_ value: Value, isExpanded: Binding<Bool>? = nil, @TableRowBuilder<V
 ## Parameters
 
 - `value`: The value of the disclosable table row.
-- `isExpanded`: A binding to a Boolean value that determines the group’s   expansion state (expanded or collapsed).
+- `isExpanded`: A binding to a Boolean value that determines the group’s expansion state (expanded or collapsed).
 - `content`: The table row shown when the disclosure group expands.
 
 

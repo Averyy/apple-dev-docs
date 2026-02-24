@@ -99,7 +99,7 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 ###### Known Issues
 
-- Create ML may crash or hang on launch on devices with macos 14.0 beta 7.  (113703568)  Use macos 14 beta 6 or earlier
+- Create ML may crash or hang on launch on devices with macos 14.0 beta 7.  (113703568) **Workaround:** Use macos 14 beta 6 or earlier
 
 ##### Documentation
 
@@ -230,7 +230,7 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 ###### Resolved Issues
 
-- Fixed: * - SwiftUI `ToolbarContent` in Catalyst apps Optimized for Mac was previously bridged into the Mac toolbar (`NSToolbar`) dependent on whether the view containing the toolbar content filled the entire scene (width and height matched within a small floating point margin). In macOS 14.0 and later, toolbar content is now bridged into the Mac toolbar if the heights approximately match . In practice this might change a Catalyst app that had two `NavigationStack`s side by side with toolbar content. Prior to macOS 14.0, neither stack would have its toolbar content bridged into the Mac toolbar and all toolbar content would be in the toolbar of the `NavigationStack`s themselves. On and after macOS 14.0, the leading stack will have its toolbar content bridged, while the trailing stack’s content will stay in the stack’s toolbar.  (108519092)
+- Fixed: **Catalyst Optimized for Mac:* - SwiftUI `ToolbarContent` in Catalyst apps Optimized for Mac was previously bridged into the Mac toolbar (`NSToolbar`) dependent on whether the view containing the toolbar content filled the entire scene (width and height matched within a small floating point margin). In macOS 14.0 and later, toolbar content is now bridged into the Mac toolbar if the heights approximately match *and only the leading edge aligns with the scene’s leading edge*. In practice this might change a Catalyst app that had two `NavigationStack`s side by side with toolbar content. Prior to macOS 14.0, neither stack would have its toolbar content bridged into the Mac toolbar and all toolbar content would be in the toolbar of the `NavigationStack`s themselves. On and after macOS 14.0, the leading stack will have its toolbar content bridged, while the trailing stack’s content will stay in the stack’s toolbar.  (108519092)
 
 ##### Maps
 
@@ -257,7 +257,7 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 ###### Known Issues
 
-- The Catch up affordance might display incorrectly.  (109468262)  Leave and return to the affected conversation.
+- The Catch up affordance might display incorrectly.  (109468262) **Workaround:** Leave and return to the affected conversation.
 
 ##### Metal Ray Tracing
 
@@ -462,7 +462,7 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 ###### Known Issues
 
-- SwiftData models with implicitly unwrapped optional properties will generate a compiler error that all stored properties were not set.  (114140139)  Set the value of non-relationship stored properties in the initializer, and mark relationship properties as optional.
+- SwiftData models with implicitly unwrapped optional properties will generate a compiler error that all stored properties were not set.  (114140139) **Workaround:** Set the value of non-relationship stored properties in the initializer, and mark relationship properties as optional.
 
 ##### Swiftui
 
@@ -558,8 +558,8 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 ###### Known Issues
 
-- `View.defaultFocus(_:_:)` isn’t reliable with text controls.  (109750983)  Manually update focus state bindings from an action passed to `View.onAppear(perform:)`.
-- On iOS, using an `Observable` object’s property as a selection value of a `List` inside `NavigationSplitView` may cause a “Simultaneous accesses to …” error when a list selection is made via tap gesture.  (113978783) (FB12981860)  There is no current workaround for `Observable` properties. Alternatives include factoring out the selection value into separate state stored outside the object, or using `ObservableObject` instead.
+- `View.defaultFocus(_:_:)` isn’t reliable with text controls.  (109750983) **Workaround:** Manually update focus state bindings from an action passed to `View.onAppear(perform:)`.
+- On iOS, using an `Observable` object’s property as a selection value of a `List` inside `NavigationSplitView` may cause a “Simultaneous accesses to …” error when a list selection is made via tap gesture.  (113978783) (FB12981860) **Workaround:** There is no current workaround for `Observable` properties. Alternatives include factoring out the selection value into separate state stored outside the object, or using `ObservableObject` instead.
 
 ##### Swiftui Navigation
 

@@ -22,6 +22,18 @@ Adopting Journaling Suggestions delivers an enhanced privacy experience in your 
 
 When your app attempts to display the picker for the first time, a sheet appears that introduces Journaling Suggestions. If the person taps Turn On Journaling Suggestions, the picker displays, and includes an information privacy banner. The banner explains that your app only has access to the suggestions the person chooses to write about or saves to the app. The person can tap the X to close the banner, or they can tap Learn More, which presents a sheet that goes into more detail about Private Access.
 
+**Consent sheet**:
+
+![A screenshot of the Journaling Suggestions consent sheet. Text that introduces the concept of Journaling Suggestions resides above a series of buttons. The first button reads About Journaling Suggestions & Privacy. The second reads Turn On Journaling Suggestions. And the last reads Customize.](https://docs-assets.developer.apple.com/published/0106baa2574c8456ae89331df5109953/presenting-the-suggestions-picker-and-processing-a-selection-2%402x.png)
+
+**Privacy banner**:
+
+![A screenshot of the journaling suggestions picker that features a privacy banner. A title in the banner reads Private Access to Suggestions,  there's an X button to the right of the title. Below the title reads Journal only has access to the suggestions you choose to write about. A button below reads Learn More.](https://docs-assets.developer.apple.com/published/939fb6ecd2eaa5125ab15a9669167fbb/presenting-the-suggestions-picker-and-processing-a-selection-3%402x.png)
+
+**Private Access sheet**:
+
+![A screenshot of the Private Access sheet. A title at top reads Private Access & Suggestions. Related explanatory text follows with a Done button that resides at bottom.](https://docs-assets.developer.apple.com/published/2c442331ca12b2b056ba3731da37a540/presenting-the-suggestions-picker-and-processing-a-selection-4%402x.png)
+
 > **Note**: The Journaling Suggestions consent sheet displays once per device, so it doesn’t appear if the person already viewed it, either by launching Journal, or by launching another app that uses Journaling Suggestions.
 
 Suggestion data requires careful handling. To further preserve user privacy, follow the advice outlined in the [`Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/programs/apple-developer-program-license-agreement/#sensitive-content-analysis-framework).
@@ -58,7 +70,7 @@ struct Example: View {
 
 The picker fills with suggestions that include various types of personal experiences. When a person makes a selection, the system provides the chosen suggestion to your app’s `onCompletion` handler. Check the `suggestion` argument’s [`items`](journalingsuggestion/items.md) property to process the selection. Each [`JournalingSuggestion.ItemContent`](journalingsuggestion/itemcontent.md) item conforms to [`JournalingSuggestionAsset`](journalingsuggestionasset.md) and is one of following types:
 
-| Type |  |
+| Type | **Description** |
 | --- | --- |
 | [`JournalingSuggestion.Photo`](journalingsuggestion/photo.md) | An image from a person’s library, including the date captured. |
 | [`JournalingSuggestion.Workout`](journalingsuggestion/workout.md) | Information about a workout that a person completes, including calories burnt, distance covered, a route they took, average heart rate, start and end time, and an icon for the type of workout. |

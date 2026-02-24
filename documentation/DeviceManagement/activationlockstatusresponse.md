@@ -13,6 +13,11 @@
 object ActivationLockStatusResponse
 ```
 
+## Properties
+
+- `response_status` (string)
+- `serial_number` (string)
+
 ## See Also
 
 - [object ActivationLockRequest](activationlockrequest.md)

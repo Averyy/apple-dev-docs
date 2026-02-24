@@ -21,6 +21,7 @@ class func controllers() -> [GCController]
 
 ## Mentions
 
+- [Discovering game controllers](discovering-game-controllers.md)
 - [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
 
 #### Return Value

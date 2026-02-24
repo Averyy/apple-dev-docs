@@ -25,8 +25,8 @@ func setSamplerStates(_ samplers: [(any MTLSamplerState)?], range: Range<Int>)
 
 ## Parameters
 
-- `samplers`: An array of   instance to bind to the sampler argument table.
-- `range`: The sampler table indicies to bind each of the   to, in the order they appear.
+- `samplers`: An array of [`MTLSamplerState`](mtlsamplerstate.md) instance to bind to the sampler argument table.
+- `range`: The sampler table indicies to bind each of the `samplers` to, in the order they appear.
 
 ## See Also
 

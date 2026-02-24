@@ -30,7 +30,7 @@ A result code. See Result Codes.
 - `inWriteFunc`: A callback function called when the audio file object wants to write data.
 - `inGetSizeFunc`: A callback function called when the audio file object wants to know the file size.
 - `inSetSizeFunc`: A callback function called when the audio file object wants to set the file size.
-- `inFileTypeHint`: A hint about the type of the designated file. For files with no filename extension and without a type easily or uniquely determined from the data (ADTS,AC3), use this hint to indicate the file type. Otherwise, pass   for this parameter. The hint is only available in macOS versions 10.3.1 or greater. In versions prior to OS X 10.3.1, opening files such files fails.
+- `inFileTypeHint`: A hint about the type of the designated file. For files with no filename extension and without a type easily or uniquely determined from the data (ADTS,AC3), use this hint to indicate the file type. Otherwise, pass `0` for this parameter. The hint is only available in macOS versions 10.3.1 or greater. In versions prior to OS X 10.3.1, opening files such files fails.
 - `outAudioFile`: On output, a pointer to the newly opened file.
 
 ## See Also

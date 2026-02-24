@@ -22,9 +22,9 @@ init(bytesNoCopy bytes: UnsafeMutableRawPointer, length: Int, freeWhenDone b: Bo
 
 ## Parameters
 
-- `bytes`: A buffer containing data for the new object. If   is  ,   must point to a memory block allocated with  .
-- `length`: The number of bytes to hold from  . This value must not exceed the length of  .
-- `b`: If  , the returned object takes ownership of the   pointer and frees it on deallocation.
+- `bytes`: A buffer containing data for the new object. If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true), `bytes` must point to a memory block allocated with `malloc`.
+- `length`: The number of bytes to hold from `bytes`. This value must not exceed the length of `bytes`.
+- `b`: If [`true`](https://developer.apple.com/documentation/Swift/true), the returned object takes ownership of the `bytes` pointer and frees it on deallocation.
 
 ## See Also
 

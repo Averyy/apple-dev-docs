@@ -28,6 +28,9 @@ func sampleTimestamps() -> (cpu: MTLTimestamp, gpu: MTLTimestamp)
 
 A tuple that contains the CPU and GPU timestamps.
 
+- **`cpu`**: A timestamp from the CPU.
+- **`gpu`**: A timestamp from the GPU the device instance represents.
+
 #### Discussion
 
 For an example of how and when to use corresponding timestamps from the CPU and GPU, see [`Converting GPU timestamps into CPU time`](converting-gpu-timestamps-into-cpu-time.md).

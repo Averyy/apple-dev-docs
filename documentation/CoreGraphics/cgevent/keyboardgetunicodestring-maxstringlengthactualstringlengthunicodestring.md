@@ -21,9 +21,9 @@ When you call this function and specify a `NULL` string or a maximum string leng
 
 ## Parameters
 
-- `maxStringLength`: The length of the array you provide in the   parameter.
-- `actualStringLength`: A pointer to a   variable. On return, the variable contains the actual count of Unicode characters in the event data.
-- `unicodeString`: A pointer to a   array. You are responsible for allocating storage for the array. On return, your array contains the Unicode string associated with the specified event.
+- `maxStringLength`: The length of the array you provide in the `unicodeString` parameter.
+- `actualStringLength`: A pointer to a `UniCharCount` variable. On return, the variable contains the actual count of Unicode characters in the event data.
+- `unicodeString`: A pointer to a `UniChar` array. You are responsible for allocating storage for the array. On return, your array contains the Unicode string associated with the specified event.
 
 ## See Also
 

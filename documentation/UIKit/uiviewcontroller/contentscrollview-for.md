@@ -40,7 +40,7 @@ override func contentScrollView(for edge: NSDirectionalRectEdge) -> UIScrollView
 
 ## Parameters
 
-- `edge`: The edge the scroll view observes for alignment,   or  . Passing any other value raises an exception.
+- `edge`: The edge the scroll view observes for alignment, [`top`](nsdirectionalrectedge/top.md) or [`bottom`](nsdirectionalrectedge/bottom.md). Passing any other value raises an exception.
 
 ## See Also
 

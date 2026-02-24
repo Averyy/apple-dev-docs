@@ -27,7 +27,7 @@ Don’t override this method directly. Instead, implement your custom initializa
 
 ## Parameters
 
-- `provider`: The provider object that matches the current service. This method requires that the provider be an   object, and returns an error if it isn’t. The system retains this object for the duration of the   method. The system continues to retain the object if your service starts successfully, releasing it only after calling your service’s   method.
+- `provider`: The provider object that matches the current service. This method requires that the provider be an [`IOUSBHostInterface`](https://developer.apple.com/documentation/USBDriverKit/IOUSBHostInterface) object, and returns an error if it isn’t. The system retains this object for the duration of the `Start` method. The system continues to retain the object if your service starts successfully, releasing it only after calling your service’s [`Stop`](iouserhideventservice/stop.md) method.
 
 ## See Also
 

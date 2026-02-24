@@ -24,6 +24,9 @@ If the system determines the status of the app, this method returns `true` if th
 
 To reduce the likelihood that users face continuous requests to set a browser as their default, this API only tells the browser app if it’s the default up to four times in a year. If you call the method too frequently, it throws an error with the domain [`UIApplicationCategoryDefaultErrorDomain`](uiapplicationcategorydefaulterrordomain.md) and the code [`rateLimited`](uiapplication/categorydefaulterror/ratelimited.md). The error’s user information dictionary contains these keys:
 
+- **[`statusLastProvidedDateErrorKey`](uiapplication/categorydefaulterror/statuslastprovideddateerrorkey.md)**: The date at which the app most recently received a `true` or `false` response from this method.
+- **[`retryAvailableDateErrorKey`](uiapplication/categorydefaulterror/retryavailabledateerrorkey.md)**: The date at which the app can next request an updated response.
+
 ## Parameters
 
 - `category`: The type of app for which you test whether your app is the default.

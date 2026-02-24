@@ -23,9 +23,9 @@ This method is invoked when a push notification has been received for the specif
 
 ## Parameters
 
-- `registry`: The   instance responsible for the delegate callback.
+- `registry`: The [`PKPushRegistry`](pkpushregistry.md) instance responsible for the delegate callback.
 - `payload`: The push payload sent by a developer via APNS server API.
-- `type`: This is a   constant, which is present in  .
+- `type`: This is a [`PKPushType`](pkpushtype.md) constant, which is present in `[registry desiredPushTypes]`.
 
 
 ---

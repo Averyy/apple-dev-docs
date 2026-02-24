@@ -26,7 +26,7 @@ The formatted postal address.
 ## Parameters
 
 - `postalAddress`: The postal address to format.
-- `style`: The postal formatting style to use. For a list of possible values, see  .
+- `style`: The postal formatting style to use. For a list of possible values, see [`CNPostalAddressFormatterStyle`](cnpostaladdressformatterstyle.md).
 
 ## See Also
 

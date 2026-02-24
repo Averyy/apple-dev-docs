@@ -25,7 +25,7 @@ For each pixel in an image, the filter applies the following function:
 
 ![f(x) = x if x >= 0 | a * x if x < 0](https://docs-assets.developer.apple.com/published/3594c12f5cf297de5d13dd1755397c23/media-2903544%402x.png)
 
-This filter is called  in CNN literature. Some CNN literature defines   as `max(0, x)`. If you want this behavior, simply set the `a` property to `0`.
+This filter is called *l__eaky ReLU* in CNN literature. Some CNN literature defines *classical* *ReLU* as `max(0, x)`. If you want this behavior, simply set the `a` property to `0`.
 
 ## Topics
 

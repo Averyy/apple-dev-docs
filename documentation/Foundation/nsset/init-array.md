@@ -26,7 +26,7 @@ An initialized set with the contents of `array`. The returned set might be diffe
 
 ## Parameters
 
-- `array`: An array of objects to add to the new set. If the same object appears more than once in  , it is represented only once in the returned set. Each object receives a   message as it is added to the set.
+- `array`: An array of objects to add to the new set. If the same object appears more than once in `array`, it is represented only once in the returned set. Each object receives a [`retain`](https://developer.apple.com/documentation/ObjectiveC/NSObject-c.protocol/retain) message as it is added to the set.
 
 ## See Also
 

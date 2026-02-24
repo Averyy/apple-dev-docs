@@ -53,7 +53,7 @@ let d = vDSP.multiply(addition: (a, b),
 
 The following table summarizes the basic arithmetic functions available in vDSP. All functions are available in single- and double-precision variants.
 
-In the  column, a subscript (for example, `a[i]`) indicates a vector, and no subscript (for example, `a`) indicates a scalar value.
+In the *Operation* column, a subscript (for example, `a[i]`) indicates a vector, and no subscript (for example, `a`) indicates a scalar value.
 
 | Operation | Function |
 | --- | --- |

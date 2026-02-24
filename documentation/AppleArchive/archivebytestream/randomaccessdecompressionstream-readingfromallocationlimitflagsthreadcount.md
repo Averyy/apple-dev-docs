@@ -33,9 +33,9 @@ Pass `allocationLimit` as a hint to control the stream’s memory allocation for
 ## Parameters
 
 - `compressedStream`: An input stream that provides compressed data.
-- `allocationLimit`: The requested memory allocation size, in bytes. Set to   for lowest memory footprint or   for best performance.
+- `allocationLimit`: The requested memory allocation size, in bytes. Set to `0` for lowest memory footprint or [`max`](https://developer.apple.com/documentation/Swift/Int/max) for best performance.
 - `flags`: Flags that control the behavior of the operation.
-- `threadCount`: The number of worker threads that the operation uses, set to   for default.
+- `threadCount`: The number of worker threads that the operation uses, set to `0` for default.
 
 ## See Also
 

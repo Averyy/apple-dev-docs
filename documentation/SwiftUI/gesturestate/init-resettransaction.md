@@ -22,7 +22,7 @@ init(resetTransaction: Transaction = Transaction())
 
 ## Parameters
 
-- `resetTransaction`: A transaction that provides metadata for   view updates.
+- `resetTransaction`: A transaction that provides metadata for view updates.
 
 ## See Also
 

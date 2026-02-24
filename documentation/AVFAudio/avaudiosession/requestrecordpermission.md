@@ -43,7 +43,7 @@ AVAudioSession.sharedInstance().requestRecordPermission { granted in
 
 ## Parameters
 
-- `response`: When you call this method, if the user previously granted or denied recording permission, the block executes immediately without displaying a recording permission alert. If the user hasn’t yet granted or denied permission when you call this method, the system displays a recording permission alert and executes the block after the user responds to it.
+- `response`: A block, of type `PermissionBlock`, whose sole parameter contains a Boolean value indicating whether the user granted or denied permission to record. When you call this method, if the user previously granted or denied recording permission, the block executes immediately without displaying a recording permission alert. If the user hasn’t yet granted or denied permission when you call this method, the system displays a recording permission alert and executes the block after the user responds to it.
 
 ## See Also
 

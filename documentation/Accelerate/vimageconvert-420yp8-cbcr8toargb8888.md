@@ -28,11 +28,11 @@ func vImageConvert_420Yp8_CbCr8ToARGB8888(_ srcYp: UnsafePointer<vImage_Buffer>,
 
 - `srcYp`: The source vImage buffer that contains the Yp channel.
 - `srcCbCr`: The source vImage buffer that contains the CbCr channels.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the  ,  , and   fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `info`: A   structure that describes the conversion matrix, the range of the input and output pixels from the matrix, and clamping information.
-- `permuteMap`: An array of four 8-bit integers with the values  ,  ,  , and 3, in some order. Each value specifies the channel from the source image that the function copies to the destination channel at the corresponding index.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `info`: A [`vImage_YpCbCrToARGB`](vimage_ypcbcrtoargb.md) structure that describes the conversion matrix, the range of the input and output pixels from the matrix, and clamping information.
+- `permuteMap`: An array of four 8-bit integers with the values `0`, `1`, `2`, and 3, in some order. Each value specifies the channel from the source image that the function copies to the destination channel at the corresponding index.
 - `alpha`: The constant destination alpha value.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass  ; otherwise, pass  .
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
 
 ## See Also
 

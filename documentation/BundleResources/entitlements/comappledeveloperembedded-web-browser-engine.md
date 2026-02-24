@@ -9,11 +9,20 @@ An entitlement that enables an app to embed an alternative browser engine.
 - iOS 17.4+
 - iPadOS 17.4+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 Add this entitlement to your app’s code signature if your app isn’t a web browser, but it embeds an alternative browser engine for in-app browsing.
 
 To use the entitlement, request it from Apple. The steps to request the entitlement vary by geographic region:
+
+- **European Union**: To request the entitlement in the EU, see [`Using alternative browser engines in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines).
+- **Japan**: To request the entitlement in Japan, see [`Using alternative browser engines in Japan`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines-jp).
 
 You also need to include the [`Embedded Browser Engine Association Entitlement`](entitlements/com.apple.developer.embedded-web-browser-engine.engine-association.md) entitlement to specify whether you own the embedded alternative browser engine.
 

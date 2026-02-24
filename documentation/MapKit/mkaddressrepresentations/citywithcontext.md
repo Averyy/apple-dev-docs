@@ -22,7 +22,7 @@ func cityWithContext(_ style: MKAddressRepresentations.ContextStyle) -> String?
 
 ## Parameters
 
-- `style`: The   to apply.
+- `style`: The [`MKAddressRepresentations.ContextStyle`](mkaddressrepresentations/contextstyle.md) to apply.
 
 ## See Also
 

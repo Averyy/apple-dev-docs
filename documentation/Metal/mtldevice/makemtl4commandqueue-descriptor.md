@@ -26,7 +26,7 @@ A [`MTL4CommandQueue`](mtl4commandqueue.md) instance, or `nil` if the function f
 
 ## Parameters
 
-- `descriptor`: A   instance that configures the    instance.
+- `descriptor`: A [`MTL4CommandQueueDescriptor`](mtl4commandqueuedescriptor.md) instance that configures the [`MTL4CommandQueue`](mtl4commandqueue.md) instance.
 
 
 ---

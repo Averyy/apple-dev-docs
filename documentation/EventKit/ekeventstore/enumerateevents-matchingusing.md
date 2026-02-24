@@ -27,8 +27,8 @@ This method is synchronous. For asynchronous behavior, run the method on another
 
 ## Parameters
 
-- `predicate`: A search predicate created with  .
-- `block`: The closure to call for each event. The callback must match the signature defined by  .
+- `predicate`: A search predicate created with [`predicateForEvents(withStart:end:calendars:)`](ekeventstore/predicateforevents(withstart:end:calendars:).md).
+- `block`: The closure to call for each event. The callback must match the signature defined by [`EKEventSearchCallback`](ekeventsearchcallback.md).
 
 ## See Also
 

@@ -65,10 +65,12 @@ print(fileURLs)
 
 ## Parameters
 
-- `url`: The location of the directory for which you want an enumeration. This URL must not be a symbolic link that points to the desired directory. You can use the   method to resolve any symlinks in the URL.
-- `keys`: An array of keys that identify the properties that you want pre-fetched for each item in the enumeration. The values for these keys are cached in the corresponding   objects. You may specify nil for this parameter. For a list of keys you can specify, see  .
-- `mask`: Options for the enumeration. For a list of valid options, see  .
-- `handler`: If you specify   for this parameter, the enumerator object continues to enumerate items as if you had specified a block that returned  .
+- `url`: The location of the directory for which you want an enumeration. This URL must not be a symbolic link that points to the desired directory. You can use the [`resolvingSymlinksInPath`](nsurl/resolvingsymlinksinpath.md) method to resolve any symlinks in the URL.
+- `keys`: An array of keys that identify the properties that you want pre-fetched for each item in the enumeration. The values for these keys are cached in the corresponding [`NSURL`](nsurl.md) objects. You may specify nil for this parameter. For a list of keys you can specify, see [`URLResourceKey`](urlresourcekey.md).
+- `mask`: Options for the enumeration. For a list of valid options, see [`FileManager.DirectoryEnumerationOptions`](filemanager/directoryenumerationoptions.md).
+- `handler`: An optional error handler block for the file manager to call when an error occurs. The handler block should return true if you want the enumeration to continue or false if you want the enumeration to stop. The block takes the following parameters: | url | A `URL` that identifies the item for which the error occurred. |
+| --- | --- |
+| error | An [`NSError`](nserror.md) object that contains information about the error. | If you specify `nil` for this parameter, the enumerator object continues to enumerate items as if you had specified a block that returned `true`.
 
 ## See Also
 

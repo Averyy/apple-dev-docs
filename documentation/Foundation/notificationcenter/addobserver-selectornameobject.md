@@ -31,9 +31,9 @@ If your app targets iOS 9.0 and later or macOS 10.11 and later, you do not need 
 ## Parameters
 
 - `observer`: An object to register as an observer.
-- `aSelector`: A selector that specifies the message the receiver sends   to alert it to the notification posting. The method that   specifies must have one and only one argument (an instance of  ).
-- `aName`: When  , the sender doesn’t use notification names as criteria for the delivery.
-- `anObject`: When  , the notification center doesn’t use sender names as criteria for delivery.
+- `aSelector`: A selector that specifies the message the receiver sends `observer` to alert it to the notification posting. The method that `aSelector` specifies must have one and only one argument (an instance of `NSNotification`).
+- `aName`: The name of the notification to register for delivery to the observer. Specify a notification name to deliver only entries with this notification name. When `nil`, the sender doesn’t use notification names as criteria for the delivery.
+- `anObject`: The object that sends notifications to the observer. Specify a notification sender to deliver only notifications from this sender. When `nil`, the notification center doesn’t use sender names as criteria for delivery.
 
 ## See Also
 

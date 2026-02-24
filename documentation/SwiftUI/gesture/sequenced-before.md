@@ -27,7 +27,7 @@ A gesture that’s a sequence of two gestures.
 
 ## Parameters
 
-- `other`: A gesture you want to combine with another gesture to   create a new, sequenced gesture.
+- `other`: A gesture you want to combine with another gesture to create a new, sequenced gesture.
 
 ## See Also
 

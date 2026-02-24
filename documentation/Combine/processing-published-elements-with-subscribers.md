@@ -31,7 +31,7 @@ Fortunately, many commonly used publishers, such as publishers associated with u
 
 To control the rate at which the publisher sends elements to your subscriber, create a custom implementation of the [`Subscriber`](subscriber.md) protocol. Use your implementation to specify demands that you know your subscriber can keep up with. As the subscriber receives elements, it can request more by returning a new demand value to [`receive(_:)`](subscriber/receive(_:).md), or by calling [`request(_:)`](subscription/request(_:).md) on the subscription. With either, your subscriber can then fine-tune the number of elements the publisher can send it at any given time.
 
-This concept of controlling flow by signaling a subscriber’s readiness to receive elements is called .
+This concept of controlling flow by signaling a subscriber’s readiness to receive elements is called *back pressure*.
 
 Each publisher keeps track of its current unsatisfied demand, meaning how many more elements a subscriber has requested. Even automated sources like Foundation’s [`Timer.TimerPublisher`](https://developer.apple.com/documentation/Foundation/Timer/TimerPublisher) only produce elements when they have pending demand. The following example code illustrates this behavior.
 

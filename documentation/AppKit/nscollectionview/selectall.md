@@ -23,7 +23,7 @@ This method consults the delegate object regarding the selection. Specifically, 
 
 ## Parameters
 
-- `sender`: The object that requested the action. You may specify   for this property.
+- `sender`: The object that requested the action. You may specify `nil` for this property.
 
 ## See Also
 

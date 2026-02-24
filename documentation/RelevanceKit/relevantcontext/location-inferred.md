@@ -32,7 +32,7 @@ To indicate relevance at an inferred location, request a person’s permission t
 
 ## Parameters
 
-- `inferred`: Location information that the system infers from a person’s behavior. For example, the system could infer   that a person is at work or at school.
+- `inferred`: Location information that the system infers from a person’s behavior. For example, the system could infer that a person is at work or at school.
 
 ## See Also
 

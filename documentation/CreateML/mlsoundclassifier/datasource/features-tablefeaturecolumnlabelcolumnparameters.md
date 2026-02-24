@@ -24,10 +24,10 @@ Use [`extractFeatures(trainingData:parameters:sessionParameters:)`](mlsoundclass
 
 ## Parameters
 
-- `table`: An   instance that contains labeled audio data.
+- `table`: An [`MLDataTable`](mldatatable.md) instance that contains labeled audio data.
 - `featureColumn`: The name of the column that contains the audio features.
 - `labelColumn`: The name of the column that contains the audio labels.
-- `parameters`: An   instance you use to configure the   feature-extraction phase.
+- `parameters`: An [`MLSoundClassifier.FeatureExtractionParameters`](mlsoundclassifier/featureextractionparameters.md) instance you use to configure the feature-extraction phase.
 
 ## See Also
 

@@ -21,6 +21,12 @@ object ResponseErrorInfo
 - [object Asset](asset.md)
   A product in the store.
 
+## Properties
+
+- `assets` ([Asset]): The requested assets that result in an error.
+- `clientUserIds` ([string]): The requested users that result in an error.
+- `serialNumbers` ([string]): The requested devices that result in an error.
+
 
 ---
 

@@ -27,7 +27,8 @@ func loadPreviousOccurrence() async throws -> GKLeaderboard?
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block that GameKit calls when this method loads the leaderboard. The block receives the following parameters: - **leaderboard**: The previous occurrence of this leaderboard that the player submits a score to, or the most recent occurrence if GameKit can’t find the previous one.
+- **error**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

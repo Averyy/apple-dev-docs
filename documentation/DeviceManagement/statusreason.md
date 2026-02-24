@@ -28,6 +28,12 @@ Each status item defines its own set of `code`, `description`, and `details` val
 ### Dictionaries
 - [object StatusReason.ErrorDetails](statusreason/errordetails.md)
 
+## Properties
+
+- `Code` (string) *(required)*
+- `Description` (string)
+- `Details` (StatusReason.ErrorDetails)
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

@@ -19,9 +19,9 @@ Creates a hierarchical list that identifies its rows based on a key path to the 
 
 - `data`: The data for populating the list.
 - `id`: The key path to the data model’s identifier.
-- `children`: A key path to a property whose non-  value gives the   children of  . A non-  but empty value denotes a node capable   of having children that is currently childless, such as an empty   directory in a file system. On the other hand, if the property at the   key path is  , then   is treated as a leaf node in the tree,   like a regular file in a file system.
+- `children`: A key path to a property whose non-`nil` value gives the children of `data`. A non-`nil` but empty value denotes a node capable of having children that is currently childless, such as an empty directory in a file system. On the other hand, if the property at the key path is `nil`, then `data` is treated as a leaf node in the tree, like a regular file in a file system.
 - `selection`: A binding to a non optional selected value.
-- `rowContent`: A view builder that creates the view for a single row of   the list.
+- `rowContent`: A view builder that creates the view for a single row of the list.
 
 ## See Also
 

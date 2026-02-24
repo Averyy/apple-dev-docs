@@ -22,7 +22,7 @@ For more information about the Journaling Suggestions picker, see: doc:presentin
 
 ## Parameters
 
-- `isPresented`: A binding to a   value that determines whether to show the picker.
+- `isPresented`: A binding to a `Bool` value that determines whether to show the picker.
 - `onCompletion`: Code that you supply, which processes any suggestions that a person may choose in the picker.
 
 

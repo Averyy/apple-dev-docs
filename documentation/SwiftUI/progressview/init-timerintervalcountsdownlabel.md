@@ -50,8 +50,8 @@ The progress view provided by this initializer uses a text label that automatica
 ## Parameters
 
 - `timerInterval`: The date range over which the view progresses.
-- `countsDown`: A Boolean value that determines whether the view   empties or fills as time passes. If   (the default), the   view empties.
-- `label`: An optional view that describes the purpose of the progress   view.
+- `countsDown`: A Boolean value that determines whether the view empties or fills as time passes. If `true` (the default), the view empties.
+- `label`: An optional view that describes the purpose of the progress view.
 
 ## See Also
 

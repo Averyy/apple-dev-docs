@@ -21,7 +21,7 @@ A new array containing ABRecord objects representing all the records that match 
 ## Parameters
 
 - `addressBook`: The address book for the logged-in user.
-- `search`: The search element that specifies the query. If   is  , this function raises an exception. Create an ABSearchElement object using the record specific functions:   or  . See   for more functions that create compound queries.
+- `search`: The search element that specifies the query. If `search` is `NULL`, this function raises an exception. Create an ABSearchElement object using the record specific functions: [`ABGroupCreateSearchElement(_:_:_:_:_:)`](abgroupcreatesearchelement(_:_:_:_:_:).md) or [`ABPersonCreateSearchElement(_:_:_:_:_:)`](abpersoncreatesearchelement(_:_:_:_:_:).md). See `ABSearchElement C` for more functions that create compound queries.
 
 ## See Also
 

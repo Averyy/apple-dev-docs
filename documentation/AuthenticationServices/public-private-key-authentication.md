@@ -8,9 +8,9 @@ Register and authenticate users with passkeys and security keys, without using p
 
 Eliminating passwords simplifies account creation and authentication for apps and websites. Additionally, it reduces risks that arise from the reuse of one password across multiple services, brute force attacks, and social engineering that bad actors use to obtain credential information. By implementing public-private authentication according to the [`W3C Web Authentication`](https://developer.apple.comhttps://www.w3.org/TR/webauthn-2/) specification, your users no longer need to remember complicated passwords or rely on password managers.
 
-Instead of using a password, your macOS, iOS, or iPadOS device, known as the , generates a public-private key pair at account creation time, and sends the public key to the server. The server, known as the , holds the public key for subsequent authentication, and uses  to challenge the authenticator to prove its identity is valid.
+Instead of using a password, your macOS, iOS, or iPadOS device, known as the *authenticator*, generates a public-private key pair at account creation time, and sends the public key to the server. The server, known as the *relying party*, holds the public key for subsequent authentication, and uses *assertion* to challenge the authenticator to prove its identity is valid.
 
-There are two forms of public-private key authentication:  and  With passkeys, the device stores its public-private key pair in the user’s iCloud Keychain and syncs the keys across the user’s devices. Security keys store the public-private key pair on a physical medium, such as a security card or a USB key.
+There are two forms of public-private key authentication: *passkeys* and *security keys.* With passkeys, the device stores its public-private key pair in the user’s iCloud Keychain and syncs the keys across the user’s devices. Security keys store the public-private key pair on a physical medium, such as a security card or a USB key.
 
 ## Topics
 

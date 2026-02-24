@@ -42,8 +42,8 @@ ScrollView {
 ## Parameters
 
 - `idType`: The type of Identity provided by the subviews.
-- `threshold`: The amount required to be visible within the viewport of the   the scrollview before the   is fired.  By default when the view   has crossed more than 50% on-screen, the action will be called.
-- `action`: The action which will be called when the views within the   scroll view cross the provided threshold. The callback will include   which views are considered visible.
+- `threshold`: The amount required to be visible within the viewport of the the scrollview before the `action` is fired.  By default when the view has crossed more than 50% on-screen, the action will be called.
+- `action`: The action which will be called when the views within the scroll view cross the provided threshold. The callback will include which views are considered visible.
 
 ## See Also
 

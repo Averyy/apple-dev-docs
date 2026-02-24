@@ -22,11 +22,11 @@ func copy(sourceBuffer: any MTLBuffer, sourceOffset: Int, destinationBuffer: any
 
 ## Parameters
 
-- `sourceBuffer`: An   instance the command copies data from.
-- `sourceOffset`: A byte offset within   the command copies from.
-- `destinationBuffer`: An   instance the command copies data to.
-- `destinationOffset`: A byte offset within   the command copies to.
-- `size`: The number of bytes the command copies from   to  .
+- `sourceBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance the command copies data from.
+- `sourceOffset`: A byte offset within `sourceBuffer` the command copies from.
+- `destinationBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance the command copies data to.
+- `destinationOffset`: A byte offset within `destinationBuffer` the command copies to.
+- `size`: The number of bytes the command copies from `sourceBuffer` to `destinationBuffer`.
 
 
 ---

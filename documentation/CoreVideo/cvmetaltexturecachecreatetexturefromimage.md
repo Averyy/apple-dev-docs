@@ -52,12 +52,12 @@ CVMetalTextureCacheCreateTextureFromImage(kCFAllocatorDefault, textureCache, pix
 - `allocator`: The memory allocator for the texture.
 - `textureCache`: The texture cache used to create and manage the texture.
 - `sourceImage`: The Core Video image buffer from which to create a Metal texture.
-- `textureAttributes`: A dictionary specifying options for creating the texture from the cache, or   to use default options.
+- `textureAttributes`: A dictionary specifying options for creating the texture from the cache, or `NULL` to use default options.
 - `pixelFormat`: The Metal pixel format constant describing the image buffer’s data.
 - `width`: The width, in pixels, of the texture image.
 - `height`: The height, in pixels, of the texture image.
 - `planeIndex`: If the image buffer is planar, the index of the plane from which to map texture data. Ignored for non-planar image buffers.
-- `textureOut`: Upon return, contains the newly created Metal texture buffer. When this value is  , an error occurred in texture creation.
+- `textureOut`: Upon return, contains the newly created Metal texture buffer. When this value is `NULL`, an error occurred in texture creation.
 
 ## See Also
 

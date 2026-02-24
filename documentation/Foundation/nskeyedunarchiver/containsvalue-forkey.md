@@ -26,7 +26,7 @@ func containsValue(forKey key: String) -> Bool
 
 ## Parameters
 
-- `key`: A key in the archive within the current decoding scope.   must not be  .
+- `key`: A key in the archive within the current decoding scope. `key` must not be `nil`.
 
 ## See Also
 

@@ -66,6 +66,14 @@ Specify `com.apple.MCX` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `cachedaccounts.askForSecureTokenAuthBypass` (boolean): If `true`, the system bypasses the secure token authorization dialog. This dialog only appears on APFS volumes.
+- `cachedaccounts.expiry.delete.disusedSeconds` (integer): The minimum number of seconds a mobile account can exist before the system makes an automatic attempt to remove the mobile account. Set to `0` to attempt removing it at the next login or logout. Set to `-1` to never attempt removing the mobile account.
+- `cachedaccounts.WarnOnCreate.allowNever` (boolean): If `true`, the system allows the user to stop the prompts about mobile account creation every time the user logs in. This key is only valid if `com.apple.cachedaccounts.WarnOnCreate` is `true`.
+- `com.apple.cachedaccounts.CreateAtLogin` (boolean): If `true`, the system creates the mobile account at login time.
+- `com.apple.cachedaccounts.WarnOnCreate` (boolean): If `true`, the system asks the user whether to create the mobile account and it allows the user to not create it.
+
 ## See Also
 
 - [object Accounts](accounts.md)

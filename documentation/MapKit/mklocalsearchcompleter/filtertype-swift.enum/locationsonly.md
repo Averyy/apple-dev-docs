@@ -21,9 +21,9 @@ case locationsOnly
 ## See Also
 
 - [MKLocalSearchCompleter.FilterType.locationsAndQueries](mklocalsearchcompleter/filtertype-swift.enum/locationsandqueries.md)
-  Points of interest and query suggestions. Specify this value when you want both map-based points of interest and common query terms used to find locations. For example, the search string `cof` yields a completion for .
+  Points of interest and query suggestions. Specify this value when you want both map-based points of interest and common query terms used to find locations. For example, the search string `cof` yields a completion for *coffee*.
 - [MKLocalSearchCompleter.FilterType.locationsAndQueries](mklocalsearchcompleter/filtertype-swift.enum/locationsandqueries.md)
-  Points of interest and query suggestions. Specify this value when you want both map-based points of interest and common query terms used to find locations. For example, the search string `cof` yields a completion for .
+  Points of interest and query suggestions. Specify this value when you want both map-based points of interest and common query terms used to find locations. For example, the search string `cof` yields a completion for *coffee*.
 
 
 ---

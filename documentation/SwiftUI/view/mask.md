@@ -38,7 +38,7 @@ Image(systemName: "envelope.badge.fill")
 
 ## Parameters
 
-- `mask`: The view whose alpha the rendering system applies to   the specified view.
+- `mask`: The view whose alpha the rendering system applies to the specified view.
 
 ## See Also
 

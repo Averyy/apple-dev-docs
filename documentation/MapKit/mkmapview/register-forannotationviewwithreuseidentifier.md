@@ -27,8 +27,8 @@ When you register an annotation view class using this method, the [`dequeueReusa
 
 ## Parameters
 
-- `viewClass`: The class of an annotation view that you use in your map. The class needs to be a subclass of  .
-- `identifier`: The reuse identifier to associate with the specified class. This parameter can’t be   or an empty string.
+- `viewClass`: The class of an annotation view that you use in your map. The class needs to be a subclass of [`MKAnnotationView`](mkannotationview.md).
+- `identifier`: The reuse identifier to associate with the specified class. This parameter can’t be `nil` or an empty string.
 
 ## See Also
 

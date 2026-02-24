@@ -116,6 +116,10 @@ If you configure a workflow to archive an app, the Deployment Preparation settin
 
 Choose from the following options:
 
+- **None**: The exported app archive isn’t eligible for distribution with TestFlight or for release on the App Store. Use this setting if you don’t configure the workflow to distribute an app.
+- **TestFlight (Internal Testing Only)**: The exported app archive is eligible for distribution to testers with TestFlight. Because the app archive isn’t eligible for release on the App Store, use this setting to prepare the exported app archive for distribution within your team or for distribution to internal testers with TestFlight. For example, choose it for nightly builds, pull requests, or development branches.
+- **TestFlight and App Store**: The exported app archive is eligible for distribution to testers with TestFlight and for release on the App Store. Choose this option for builds you distribute to external testers and that you plan to make available on the App Store. Note that external testing is subject to beta app review.
+
 To add an archive action to a workflow:
 
 1. Open or create a workflow in Xcode or in the Xcode Cloud tab in [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com).

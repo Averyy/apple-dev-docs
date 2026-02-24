@@ -24,8 +24,8 @@ A configured instance of `InputValues`.
 
 ## Parameters
 
-- `saltInput1`: The input the system uses when generating  .
-- `saltInput2`: If specified, the input when generating  . If not specified,   is  .
+- `saltInput1`: The input the system uses when generating `first`.
+- `saltInput2`: If specified, the input when generating `second`. If not specified, `second` is `nil`.
 
 
 ---

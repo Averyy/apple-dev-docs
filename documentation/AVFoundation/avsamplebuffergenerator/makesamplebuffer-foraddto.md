@@ -35,7 +35,7 @@ The request may fail based on generator configuration or file format.
 ## Parameters
 
 - `request`: A sample buffer creation request.
-- `batch`: A batch object to contain the output sample buffer. You must create this object by calling   on the same instance of   or an error occurs.
+- `batch`: A batch object to contain the output sample buffer. You must create this object by calling [`makeBatch()`](avsamplebuffergenerator/makebatch().md) on the same instance of [`AVSampleBufferGenerator`](avsamplebuffergenerator.md) or an error occurs.
 
 ## See Also
 

@@ -22,7 +22,7 @@ init(range: Range<String.Index>)
 
 ## Parameters
 
-- `range`: A range of   representing the selection.
+- `range`: A range of `String.Index` representing the selection.
 
 
 ---

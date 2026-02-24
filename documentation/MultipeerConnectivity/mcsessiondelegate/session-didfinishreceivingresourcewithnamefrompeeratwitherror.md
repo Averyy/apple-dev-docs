@@ -29,8 +29,8 @@ The file referenced by `resourceURL` is a temporary file. Your app must either r
 - `session`: The session through which the data was received.
 - `resourceName`: The name of the resource, as provided by the sender.
 - `peerID`: The peer ID of the sender.
-- `localURL`: An   object that provides the location of a temporary file containing the received data.
-- `error`: An error object indicating what went wrong if the file was not received successfully, or  .
+- `localURL`: An `NSURL` object that provides the location of a temporary file containing the received data.
+- `error`: An error object indicating what went wrong if the file was not received successfully, or `nil`.
 
 ## See Also
 

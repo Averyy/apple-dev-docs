@@ -20,7 +20,7 @@ Turning on automatic text replacement enables automatic substitution of a variet
 
 ## Parameters
 
-- `sender`: The control sending the message. May be  .
+- `sender`: The control sending the message. May be `nil`.
 
 ## See Also
 

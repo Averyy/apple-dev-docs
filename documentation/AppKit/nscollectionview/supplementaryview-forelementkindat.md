@@ -24,7 +24,7 @@ For efficiency, the collection view does not create supplementary views until th
 
 ## Parameters
 
-- `elementKind`: The kind of the supplementary views you want returned. The layout object defines the kinds of supplementary views it supports. This parameter must not be  .
+- `elementKind`: The kind of the supplementary views you want returned. The layout object defines the kinds of supplementary views it supports. This parameter must not be `nil`.
 - `indexPath`: The index path whose supplementary view you want.
 
 ## See Also

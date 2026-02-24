@@ -20,8 +20,8 @@ The point converted to the coordinate system of the view.
 
 ## Parameters
 
-- `point`: A point specifying a location in the coordinate system of  .
-- `view`: The view with   in its coordinate system. Both   and the view must belong to the same   object, and that window must not be  . If   is  , this method converts from window coordinates instead.
+- `point`: A point specifying a location in the coordinate system of `view`.
+- `view`: The view with `point` in its coordinate system. Both `view` and the view must belong to the same [`NSWindow`](nswindow.md) object, and that window must not be `nil`. If `view` is `nil`, this method converts from window coordinates instead.
 
 ## See Also
 

@@ -22,6 +22,14 @@ object Books
   The attributes for a books resource.
 - [object Books.Relationships](books/relationships-data.dictionary.md)
 
+## Properties
+
+- `attributes` (Books.Attributes): The attributes for the books resource type.
+- `href` (string) *(required)*: A relative location for the books resource.
+- `id` (string) *(required)*: The identifier for the books resource.
+- `relationships` (Books.Relationships): The relationships from books to other resources.
+- `type` (string) *(required)*: The type of the resource. The only allowed value is `books`.
+
 ## See Also
 
 - [object Artwork](artwork.md)

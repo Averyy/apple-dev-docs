@@ -29,7 +29,7 @@ This callback can also return `false` for views that handle Apple Pencil events 
 ## Parameters
 
 - `interaction`: The text view asking if it can start receiving user input.
-- `location`: The location of the text view as a   in the view’s coordinate system.
+- `location`: The location of the text view as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the view’s coordinate system.
 
 ## See Also
 

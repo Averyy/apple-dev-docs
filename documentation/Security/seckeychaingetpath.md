@@ -21,8 +21,8 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 ## Parameters
 
 - `keychain`: A reference to a keychain whose path you wish to obtain.
-- `ioPathLength`: On return, the string length of  , not including the null termination.
-- `pathName`: On entry, a pointer to a buffer that you have allocated. On return, the buffer contains POSIX path of the keychain as a null-terminated UTF-8 encoded string. The function returns   if the provided buffer is too small to hold the string with the null terminator byte.
+- `ioPathLength`: On entry, a pointer to a variable containing the length (in bytes) of the buffer specified by `pathName`. On return, the string length of `pathName`, not including the null termination.
+- `pathName`: On entry, a pointer to a buffer that you have allocated. On return, the buffer contains POSIX path of the keychain as a null-terminated UTF-8 encoded string. The function returns [`errSecBufferTooSmall`](errsecbuffertoosmall.md) if the provided buffer is too small to hold the string with the null terminator byte.
 
 
 ---

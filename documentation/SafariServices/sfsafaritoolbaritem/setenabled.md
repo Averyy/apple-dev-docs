@@ -20,7 +20,7 @@ func setEnabled(_ enabled: Bool)
 
 ## Parameters
 
-- `enabled`:   to enable the toolbar item; otherwise  .
+- `enabled`: `true` to enable the toolbar item; otherwise `false`.
 
 ## See Also
 

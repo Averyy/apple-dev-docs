@@ -43,7 +43,7 @@ do {
 
 ## Parameters
 
-- `algorithm`: The algorithm to use to compress the data. For a list of available algorithms, see  .
+- `algorithm`: The algorithm to use to compress the data. For a list of available algorithms, see [`NSData.CompressionAlgorithm`](nsdata/compressionalgorithm.md).
 
 ## See Also
 

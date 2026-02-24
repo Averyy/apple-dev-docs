@@ -25,7 +25,7 @@ The caller is responsible for adding the button to the view hierarchy and for se
 ## Parameters
 
 - `b`: The type of standard window button to return.
-- `styleMask`: The window style for which   is to be sized. See    for the list of allowable values.
+- `styleMask`: The window style for which `b` is to be sized. See [`NSWindow.StyleMask`](nswindow/stylemask-swift.struct.md)  for the list of allowable values.
 
 ## See Also
 

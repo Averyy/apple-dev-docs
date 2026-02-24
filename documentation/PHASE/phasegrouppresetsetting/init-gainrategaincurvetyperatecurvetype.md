@@ -21,8 +21,8 @@ init(gain: Double, rate: Double, gainCurveType: PHASECurveType, rateCurveType: P
 
 ## Parameters
 
-- `gain`: The volume of audio playback. See  .
-- `rate`: The playback speed for audio. See  .
+- `gain`: The volume of audio playback. See [`gain`](phasegrouppresetsetting/gain.md).
+- `rate`: The playback speed for audio. See [`rate`](phasegrouppresetsetting/rate.md).
 - `gainCurveType`: A rate of change for the setting’s volume.
 - `rateCurveType`: A rate of change for the setting’s playback speed.
 

@@ -10,6 +10,10 @@ A string an app defines to identify the action.
 - iPadOS 15.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Core Spotlight includes the value of this key in the `userInfo` dictionary of the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) when it invokes the app.

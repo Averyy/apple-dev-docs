@@ -46,8 +46,8 @@ To create a background with other [`View`](view.md) types — or with a stack of
 
 ## Parameters
 
-- `shape`: An instance of a type that conforms to    that SwiftUI draws behind the view using the    shape style.
-- `fillStyle`: The   to use when drawing the shape.   The default style uses the nonzero winding number rule and   antialiasing.
+- `shape`: An instance of a type that conforms to [`InsettableShape`](insettableshape.md) that SwiftUI draws behind the view using the [`background`](shapestyle/background.md) shape style.
+- `fillStyle`: The [`FillStyle`](fillstyle.md) to use when drawing the shape. The default style uses the nonzero winding number rule and antialiasing.
 
 ## See Also
 

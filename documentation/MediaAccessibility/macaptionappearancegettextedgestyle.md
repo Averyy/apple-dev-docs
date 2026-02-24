@@ -25,8 +25,8 @@ The preferred text edge style, such as Raised or Drop Shadow. See [`MACaptionApp
 
 ## Parameters
 
-- `domain`: The domain to retrieve the preference value from. See  . Pass   unless the system defaults are needed for comparison.
-- `behavior`: A pointer to memory. On return, this memory holds the caption appearance behavior for this preference setting. For possible values see  . Pass   when you do not need the behavior setting.
+- `domain`: The domain to retrieve the preference value from. See [`MACaptionAppearanceDomain`](macaptionappearancedomain.md). Pass [`MACaptionAppearanceDomain.user`](macaptionappearancedomain/user.md) unless the system defaults are needed for comparison.
+- `behavior`: A pointer to memory. On return, this memory holds the caption appearance behavior for this preference setting. For possible values see [`MACaptionAppearanceBehavior`](macaptionappearancebehavior.md). Pass `NULL` when you do not need the behavior setting.
 
 ## See Also
 

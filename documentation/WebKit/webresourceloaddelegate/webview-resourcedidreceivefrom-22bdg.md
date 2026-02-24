@@ -16,12 +16,12 @@ optional func webView(_ sender: WebView!, resource identifier: Any!, didReceive 
 
 #### Discussion
 
-In some rare cases, multiple responses may be received for a single resource. This happens in the case of multipart/x-mixed-replace, also known as a . In this case, delegates should assume that the progress of loading this resource restarts, and the expected content length may change.
+In some rare cases, multiple responses may be received for a single resource. This happens in the case of multipart/x-mixed-replace, also known as a *server push*. In this case, delegates should assume that the progress of loading this resource restarts, and the expected content length may change.
 
 ## Parameters
 
 - `sender`: The web view that sent this message.
-- `identifier`: An identifier object used to track the resource being loaded by  .
+- `identifier`: An identifier object used to track the resource being loaded by `dataSource`.
 - `response`: The reply that was received.
 - `dataSource`: The data source for this web view.
 

@@ -8,6 +8,10 @@ The label for the Safari extension’s toolbar item.
 **Availability**:
 - macOS 10.11.5+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [Action](information-property-list/nsextension/sfsafaritoolbaritem/action.md)

@@ -51,7 +51,7 @@ When the value changes, the new version of the closure will be called, so any ca
 
 - `feedback`: Which type of feedback to play.
 - `trigger`: A value to monitor for changes to determine when to play.
-- `condition`: A closure to determine whether to play the feedback when    changes.
+- `condition`: A closure to determine whether to play the feedback when `trigger` changes.
 
 ## See Also
 

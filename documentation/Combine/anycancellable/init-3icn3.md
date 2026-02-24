@@ -22,7 +22,7 @@ init(_ cancel: @escaping () -> Void)
 
 ## Parameters
 
-- `cancel`: A closure that the   method executes.
+- `cancel`: A closure that the `cancel()` method executes.
 
 ## See Also
 

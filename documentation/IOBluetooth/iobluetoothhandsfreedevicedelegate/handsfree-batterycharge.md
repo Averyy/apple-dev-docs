@@ -17,7 +17,7 @@ optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, batteryCharge: NS
 ## Parameters
 
 - `device`: The connected Bluetooth hands-free phone or headset.
-- `batteryCharge`: The new value of the battery level indicator. For possible values, see  .
+- `batteryCharge`: The new value of the battery level indicator. For possible values, see [`IOBluetoothHandsFreeIndicatorBattChg`](iobluetoothhandsfreeindicatorbattchg.md).
 
 ## See Also
 

@@ -22,7 +22,7 @@ Use the [`keychain()`](sfkeychainsavepanel/keychain().md) method to obtain the k
 
 ## Parameters
 
-- `path`: The path to the folder where the keychain is created. Specify   for  .
+- `path`: The path to the folder where the keychain is created. Specify `nil` for `~/Library/Keychains`.
 - `name`: The keychain name to be automatically displayed in the Save As field of the panel.
 
 ## See Also

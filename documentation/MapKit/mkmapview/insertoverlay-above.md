@@ -26,7 +26,7 @@ This method inserts the overlay into the [`MKOverlayLevel.aboveLabels`](mkoverla
 ## Parameters
 
 - `overlay`: The overlay object to insert.
-- `sibling`: An existing object in the   array. This object needs to exist in the array and can’t be  .
+- `sibling`: An existing object in the [`overlays`](mkmapview/overlays.md) array. This object needs to exist in the array and can’t be `nil`.
 
 ## See Also
 

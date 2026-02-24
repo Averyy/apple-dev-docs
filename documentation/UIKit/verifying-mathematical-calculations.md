@@ -10,7 +10,7 @@ Math operations are affected by numbers in the 64-bit runtime. Review the accura
 
 ##### Verify the Accuracy of Signed Math Operations
 
-C and similar languages use a set of  to determine whether to treat the top bit in an integer as a sign bit when the value is assigned to a variable of larger width. The sign extension rules are as follows:
+C and similar languages use a set of *sign extension rules* to determine whether to treat the top bit in an integer as a sign bit when the value is assigned to a variable of larger width. The sign extension rules are as follows:
 
 1. Unsigned values are zero extended (not sign extended) when promoted to a larger type.
 2. Signed values are always sign extended when promoted to a larger type, even if the resulting type is unsigned.
@@ -50,9 +50,9 @@ The solution is to cast the initial value to a `long` integer before the shift. 
 
 When working with bit masks with 64-bit values, follow these tips to avoid inadvertently getting 32-bit values.
 
- If you’re shifting through the bits stored in a variable of type `long` integer, use the `LONG_BIT` value to determine the number of bits. The result of a shift that exceeds the length of a variable is architecture dependent.
+**Don’t assume that a data type has a particular length.** If you’re shifting through the bits stored in a variable of type `long` integer, use the `LONG_BIT` value to determine the number of bits. The result of a shift that exceeds the length of a variable is architecture dependent.
 
- Be careful when using bit masks with long integers, because the width differs between 32-bit and 64-bit runtimes. There are two ways to create a bit mask, depending on whether you want it to be zero extended or one extended:
+**Use inverted bit masks, if needed.** Be careful when using bit masks with long integers, because the width differs between 32-bit and 64-bit runtimes. There are two ways to create a bit mask, depending on whether you want it to be zero extended or one extended:
 
 - If you want the bit mask value to contain zeros in the upper 32 bits in the 64-bit runtime, the usual fixed-width bit mask works as expected, because it’s extended in an unsigned fashion to a 64-bit quantity.
 - If you want the bit mask value to contain ones in the upper bits, write the bit mask as the bitwise inverse of its inverse.

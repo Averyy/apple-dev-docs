@@ -22,6 +22,10 @@ Get a list of the declarations available on the server.
 - [object DeclarationItemsResponse](declarationitemsresponse.md)
   The set of available declarations on the server.
 
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/checkin`
+
 ## See Also
 
 - [Declarative Management](declarative-management.md)

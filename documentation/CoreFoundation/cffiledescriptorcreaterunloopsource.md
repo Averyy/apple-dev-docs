@@ -30,9 +30,9 @@ The context for the new runloop (see [`CFRunLoopSourceCreate(_:_:_:)`](cfrunloop
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new bag and its storage for values. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new bag and its storage for values. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `f`: A CFFileDescriptor.
-- `order`: The order for the new run loop (see  ).
+- `order`: The order for the new run loop (see [`CFRunLoopSourceCreate(_:_:_:)`](cfrunloopsourcecreate(_:_:_:).md)).
 
 
 ---

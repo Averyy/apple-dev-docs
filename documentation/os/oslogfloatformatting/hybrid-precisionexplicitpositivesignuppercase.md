@@ -27,8 +27,8 @@ A custom hybrid format for floating-point numbers.
 ## Parameters
 
 - `precision`: The maximum number of digits to display to the right of the decimal point.
-- `explicitPositiveSign`: A Boolean value that indicates whether to display a plus ( ) sign in front of positive numbers.
-- `uppercase`: A Boolean value that indicates whether to uppercase letters that are part of the floating-point number. For example, it determines the capitalization of the exponent indicator   in the number  , or the letters in special values such as   and  .
+- `explicitPositiveSign`: A Boolean value that indicates whether to display a plus (`+`) sign in front of positive numbers.
+- `uppercase`: A Boolean value that indicates whether to uppercase letters that are part of the floating-point number. For example, it determines the capitalization of the exponent indicator `e` in the number `1.0e9`, or the letters in special values such as `NaN` and `Inf`.
 
 ## See Also
 

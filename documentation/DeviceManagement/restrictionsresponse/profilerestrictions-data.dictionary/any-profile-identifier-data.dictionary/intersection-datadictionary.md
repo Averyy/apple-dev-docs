@@ -24,6 +24,10 @@ object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Intersect
 - [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Intersection.ANY restriction name](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary/intersection-data.dictionary/any-restriction-name-data.dictionary.md)
   A dictionary that contains intersected restriction parameters.
 
+## Properties
+
+- `ANY restriction name` (RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Intersection.ANY restriction name): The intersected restriction parameters.
+
 ## See Also
 
 - [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.RestrictedBool](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary/restrictedbool-data.dictionary.md)

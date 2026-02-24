@@ -29,7 +29,9 @@ PassKit may execute the completion Swift closure or an Objective-C block on an a
 
 - `signData`: The opaque value to sign.
 - `secureElementPass`: The Secure Element pass that PassKit uses to generate the signature.
-- `completion`: A Swift closure or an Objective-C block that PassKit runs when the process finishes.
+- `completion`: A Swift closure or an Objective-C block that PassKit runs when the process finishes. - **`signedData`**: The signed value.
+- **`signature`**: The cryptographic signature that PassKit uses to sign the value.
+- **`error`**: If the process fails, an error that describes the failure; otherwise, `nil`.
 
 
 ---

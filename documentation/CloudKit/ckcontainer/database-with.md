@@ -22,7 +22,7 @@ func database(with databaseScope: CKDatabase.Scope) -> CKDatabase
 
 ## Parameters
 
-- `databaseScope`: The database’s scope. See   for the available options.
+- `databaseScope`: The database’s scope. See [`CKDatabase.Scope`](ckdatabase/scope.md) for the available options.
 
 ## See Also
 

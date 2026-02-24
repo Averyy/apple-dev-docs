@@ -26,12 +26,12 @@ If you are interested in loading only the resource data or the resource’s prop
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new   and   objects returned in   and  . Pass   or kCFAllocatorDefault to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new `CFData` and `CFDictionary` objects returned in `resourceData` and `properties`. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `url`: The URL referring to the data and/or properties you wish to load.
-- `resourceData`: On return, contains a   object containing the data referred to by  . Ownership follows the  .
-- `properties`: On return, a pointer to a   object containing the resource properties referred to by  . Ownership follows the  .
-- `desiredProperties`: A list of the properties you wish to obtain and return in  . See   and   for the list of available properties.
-- `errorCode`:   if successful, otherwise an error code indicating the nature of the problem. See   for a list of possible error codes.
+- `resourceData`: On return, contains a `CFData` object containing the data referred to by `url`. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+- `properties`: On return, a pointer to a `CFDictionary` object containing the resource properties referred to by `url`. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+- `desiredProperties`: A list of the properties you wish to obtain and return in `properties`. See [`File URL Properties`](file-url-properties.md) and [`HTTP URL Properties`](http-url-properties.md) for the list of available properties.
+- `errorCode`: `0` if successful, otherwise an error code indicating the nature of the problem. See [`CFURLError`](cfurlerror.md) for a list of possible error codes.
 
 ## See Also
 

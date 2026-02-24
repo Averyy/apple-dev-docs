@@ -39,6 +39,59 @@ Refer to the following sections to determine supported channels and requirements
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>RequestType</key>
+        <string>ManagedApplicationList</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_ManagedApplicationList</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0080_ManagedApplicationList</string>
+    <key>ManagedApplicationList</key>
+    <dict>
+        <key>com.acme.myenterpriseapp</key>
+        <dict>
+            <key>ExternalVersionIdentifier</key>
+            <integer>0</integer>
+            <key>HasConfiguration</key>
+            <false/>
+            <key>HasFeedback</key>
+            <false/>
+            <key>IsValidated</key>
+            <true/>
+            <key>ManagementFlags</key>
+            <integer>0</integer>
+            <key>Status</key>
+            <string>Managed</string>
+        </dict>
+    </dict>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>00008020-000915083C80012E</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -46,6 +99,10 @@ Refer to the following sections to determine supported channels and requirements
   The command to get the status of all managed apps on a device.
 - [object ManagedApplicationListResponse](managedapplicationlistresponse.md)
   A response from the device after it processes the command to get the status of all managed apps on a device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

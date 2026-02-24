@@ -24,7 +24,7 @@ func element(matching elementType: XCUIElement.ElementType, identifier: String?)
 ## Parameters
 
 - `elementType`: The element type to match.
-- `identifier`: An optional identifier string to match against any one of each element’s identifying properties:  ,  ,  ,  , or  .
+- `identifier`: An optional identifier string to match against any one of each element’s identifying properties: [`identifier`](xcuielementattributes/identifier.md), [`title`](xcuielementattributes/title.md), [`label`](xcuielementattributes/label.md), [`value`](xcuielementattributes/value.md), or [`placeholderValue`](xcuielementattributes/placeholdervalue.md).
 
 ## See Also
 

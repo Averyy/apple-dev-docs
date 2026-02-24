@@ -30,6 +30,18 @@ When the action executes, the audio node’s obstruction animates from its curre
 
 This action is reversible; the reverse is created as if the following code is executed:
 
+**Swift**:
+
+```swift
+let action = SKAction.changeObstruction(by: -v, duration: sec)
+```
+
+**Obj-C**:
+
+```objc
+[SKAction changeObstructionBy: -v duration: sec];
+```
+
 ## Parameters
 
 - `v`: The amount to change the obstruction by, in decibels.

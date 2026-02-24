@@ -22,8 +22,8 @@ convenience init(_ keyPath: KeyPath<Subject, Property>, @EntityQueryComparatorsB
 
 ## Parameters
 
-- `keyPath`: The keypath to the property that this EntityQueryProperty applies to. The target   property type determines which comparator modifiers will be available.
-- `comparators`: The set of   that this property supports being queried by.
+- `keyPath`: The keypath to the property that this EntityQueryProperty applies to. The target property type determines which comparator modifiers will be available.
+- `comparators`: The set of `EntityQueryComparators` that this property supports being queried by.
 
 ## See Also
 

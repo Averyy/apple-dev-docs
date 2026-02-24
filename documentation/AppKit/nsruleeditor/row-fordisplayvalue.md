@@ -24,7 +24,7 @@ This method searches each row via pointer equality for the given display value, 
 
 ## Parameters
 
-- `displayValue`: The display value (string, view, or menu item) of an item in the receiver. This value must not be  .
+- `displayValue`: The display value (string, view, or menu item) of an item in the receiver. This value must not be `nil`. > ❗ **Important**:  Raises `NSInvalidArgumentException` if `displayValue` is `nil`.
 
 ## See Also
 

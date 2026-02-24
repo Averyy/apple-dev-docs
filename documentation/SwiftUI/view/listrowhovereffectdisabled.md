@@ -25,7 +25,7 @@ By default, `List` rows have built-in hover effects in visionOS. In some cases, 
 
 ## Parameters
 
-- `disabled`: A Boolean value that determines whether the   containing list row should display its default hover effect.
+- `disabled`: A Boolean value that determines whether the containing list row should display its default hover effect.
 
 ## See Also
 

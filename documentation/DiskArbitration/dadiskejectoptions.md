@@ -1,34 +1,25 @@
 # DADiskEjectOptions
 
-**Framework**: Disk Arbitration  
-**Kind**: typealias
+**Framework**: Disk Arbitration
 
 Options for DADiskEject().
 
-**Availability**:
-- Mac Catalyst 13.0+
-- macOS 10.4+
+## Topics
 
-## Declaration
-
-```swift
-typealias DADiskEjectOptions = UInt32
-```
+### Constants
+- [var kDADiskEjectOptionDefault: Int](kdadiskejectoptiondefault.md)
 
 ## See Also
 
-- [typealias DADiskClaimOptions](dadiskclaimoptions.md)
+- [Global Variables](global-variables.md)
+- [DADiskClaimOptions](dadiskclaimoptions.md)
   Options for DADiskClaim().
 - [typealias DADiskMountOptions](dadiskmountoptions.md)
   Options for DADiskMount().
-- [typealias DADiskOptions](dadiskoptions.md)
-  Options for DADiskGetOptions() and DADiskSetOptions().
 - [typealias DADiskRenameOptions](dadiskrenameoptions.md)
   Options for DADiskRename().
 - [typealias DADiskUnmountOptions](dadiskunmountoptions.md)
   Options for DADiskUnmount().
-- [typealias DAReturn](dareturn.md)
-  A return code.
 
 
 ---

@@ -23,7 +23,7 @@ func CFBitVectorSetAllBits(_ bv: CFMutableBitVector!, _ value: CFBit)
 ## Parameters
 
 - `bv`: The bit vector to modify.
-- `value`: The bit value to which to set all bits in  .
+- `value`: The bit value to which to set all bits in `bv`.
 
 ## See Also
 

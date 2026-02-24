@@ -32,8 +32,8 @@ However, you might need to create authentication challenge objects when adding s
 
 ## Parameters
 
-- `challenge`: The challenge that you want to copy. Usually, this is a challenge received by an existing   subclass that you are subclassing.
-- `sender`: The sender that you want to use for the new object. Typically, the sender is the instance of your custom   subclass that called this method.
+- `challenge`: The challenge that you want to copy. Usually, this is a challenge received by an existing [`URLProtocol`](urlprotocol.md) subclass that you are subclassing.
+- `sender`: The sender that you want to use for the new object. Typically, the sender is the instance of your custom [`URLProtocol`](urlprotocol.md) subclass that called this method.
 
 ## See Also
 

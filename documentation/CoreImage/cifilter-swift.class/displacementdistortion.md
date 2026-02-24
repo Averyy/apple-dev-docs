@@ -29,6 +29,10 @@ This method applies the displacement distortion filter to an image. This effect 
 
 The displacement distortion filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`displacementImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`scale`**: A `float` representing the scaling the filter uses to apply the texture to the input image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that applies the grayscale values of the displacement image to the input image:
 
 ```swift

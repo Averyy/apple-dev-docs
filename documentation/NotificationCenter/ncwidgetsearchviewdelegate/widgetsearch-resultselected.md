@@ -22,7 +22,7 @@ When this method returns, the search view controller is dismissed.
 ## Parameters
 
 - `controller`: The widget’s search view controller.
-- `object`: The object in the search view controller’s   array that represents the search result chosen by the user.
+- `object`: The object in the search view controller’s [`searchResults`](ncwidgetsearchviewcontroller/searchresults.md) array that represents the search result chosen by the user.
 
 ## See Also
 

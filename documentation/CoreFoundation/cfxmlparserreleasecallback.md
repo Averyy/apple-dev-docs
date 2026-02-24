@@ -16,7 +16,7 @@ typealias CFXMLParserReleaseCallBack = (UnsafeRawPointer?) -> Void
 
 ## Parameters
 
-- `info`: The program-defined context data you specified in the   structure when creating the parser.
+- `info`: The program-defined context data you specified in the [`CFXMLParserContext`](cfxmlparsercontext.md) structure when creating the parser.
 
 ## See Also
 

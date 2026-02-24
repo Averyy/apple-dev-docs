@@ -18,6 +18,18 @@ class WKInterfaceHMCamera
 
 Do not subclass or create instances of this class yourself. Instead, define an outlet in your interface controller class and connect it to the corresponding object in your storyboard file. For example, to refer to a camera interface object in your interface, define a property with the following syntax in your interface controller class:
 
+**Swift**:
+
+```swift
+@IBOutlet weak var myCamera: WKInterfaceHMCamera!
+```
+
+**Objective-C**:
+
+```objc
+@property (weak, nonatomic) IBOutlet WKInterfaceHMCamera* myCamera;
+```
+
 During the initialization of your interface controller, WatchKit creates the camera interface object and assigns it to its associated outlet. At that point, you can use the camera interface object to change to the onscreen content.
 
 The camera interface object in your Watch app must be connected to a [`WKInterfaceHMCamera`](wkinterfacehmcamera.md) outlet in your WatchKit extension for the camera to be visible in your watchOS app’s user interface.

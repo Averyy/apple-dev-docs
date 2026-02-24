@@ -25,11 +25,11 @@ For an existing scroll view, you can simply use the [`contentSize`](nsscrollview
 ## Parameters
 
 - `fSize`: The frame size in screen coordinates.
-- `horizontalScrollerClass`: The class used as the horizontal scroller. A value of   specifies that no horizontal scroller is used.
-- `verticalScrollerClass`: The class used as the vertical scroller. A value of   specifies that no horizontal scroller is used.
-- `type`: Specifies the appearance of the style of the scroll view’s border. See   for a list of possible values.
-- `controlSize`: The control size. The possible values are specified in  .   is not supported.
-- `scrollerStyle`: Specifies the scroll style. See   for supported values.
+- `horizontalScrollerClass`: The class used as the horizontal scroller. A value of `nil` specifies that no horizontal scroller is used.
+- `verticalScrollerClass`: The class used as the vertical scroller. A value of `nil` specifies that no horizontal scroller is used.
+- `type`: Specifies the appearance of the style of the scroll view’s border. See [`NSBorderType`](nsbordertype.md) for a list of possible values.
+- `controlSize`: The control size. The possible values are specified in [`NSControl.ControlSize`](nscontrol/controlsize-swift.enum.md). [`NSMiniControlSize`](nsminicontrolsize.md) is not supported.
+- `scrollerStyle`: Specifies the scroll style. See [`NSScroller.Style`](nsscroller/style.md) for supported values.
 
 ## See Also
 

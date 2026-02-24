@@ -27,7 +27,7 @@ func copyBytes(to pointer: UnsafeMutablePointer<UInt8>, from range: Range<Data.I
 ## Parameters
 
 - `pointer`: A pointer to the buffer you wish to copy the bytes into.
-- `range`: The range in the   to copy.
+- `range`: The range in the `Data` to copy.
 
 ## See Also
 

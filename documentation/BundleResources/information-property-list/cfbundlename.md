@@ -17,6 +17,10 @@ A user-visible short name for the bundle.
 
 - [Managing your app’s information property list values](managing-your-app-s-information-property-list.md)
 
+
+
+**Type**: string
+
 #### Discussion
 
 This name can contain up to 15 characters. The system may display it to users if [`CFBundleDisplayName`](information-property-list/cfbundledisplayname.md) isn’t set.

@@ -24,8 +24,8 @@ An `OSStatus` result code.
 
 ## Parameters
 
-- `pkt`: A   that contains universal MIDI packet (UMP) SysEx data.
-- `groupIndex`: The target group index, from   to  .
+- `pkt`: A [`MIDIEventPacket`](midieventpacket.md) that contains universal MIDI packet (UMP) SysEx data.
+- `groupIndex`: The target group index, from `0` to `15`.
 - `outData`: When successful, a reference byte stream of extracted SysEx data.
 
 ## See Also

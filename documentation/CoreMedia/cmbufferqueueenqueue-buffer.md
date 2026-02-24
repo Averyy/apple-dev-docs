@@ -30,7 +30,7 @@ The buffer is retained by the queue, so the client can safely release the buffer
 
 ## Parameters
 
-- `queue`: The   on which to enqueue the buffer.
+- `queue`: The `CMBufferQueue` on which to enqueue the buffer.
 - `buf`: The buffer to enqueue.
 
 ## See Also

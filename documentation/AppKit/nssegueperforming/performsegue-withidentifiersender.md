@@ -23,7 +23,7 @@ Typically, a segue is triggered by a user action, such as clicking a button. In 
 
 ## Parameters
 
-- `identifier`: In Interface Builder, you can provide an identifier string to a segue using the inspector. Pass this string to this parameter.
+- `identifier`: The string that uniquely identifies the segue in the storyboard file. In Interface Builder, you can provide an identifier string to a segue using the inspector. Pass this string to this parameter. > **Note**:  This method throws an [`Exception handling`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/ExceptionHandling.html#//apple_ref/doc/uid/TP40008195-CH18) if there is no segue with the specified identifier or if the identifier is `nil`.
 - `sender`: The object that you want to use to initiate the segue. This parameter makes the object available to your implementation during the segue.
 
 ## See Also

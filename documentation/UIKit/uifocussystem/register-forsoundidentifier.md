@@ -27,7 +27,7 @@ To play your custom sounds, override the [`soundIdentifierForFocusUpdate(in:)`](
 ## Parameters
 
 - `soundFileURL`: A URL specifying the location of a sound file. The sound file must be local to the current device and must not point to a resource on a remote server. Sound files must be less than 30 seconds in length and must be in a format recognized by the system.
-- `identifier`: The identifier for the sound. You use this value later to tell the focus engine which sounds you want to play. Do not specify one of the UIKit sound identifiers (such as  ); doing so will cause an immediate assertion failure and crash your app.
+- `identifier`: The identifier for the sound. You use this value later to tell the focus engine which sounds you want to play. Do not specify one of the UIKit sound identifiers (such as [`default`](uifocussoundidentifier/default.md)); doing so will cause an immediate assertion failure and crash your app.
 
 
 ---

@@ -23,7 +23,7 @@ For a successful connection, this method sets the [`sourcePort`](vzvirtiosocketc
 ## Parameters
 
 - `port`: The destination port number in the guest operating system.
-- `completionHandler`: The block to execute with the results of the connection attempt. This block has no return value and takes the following parameter:
+- `completionHandler`: The block to execute with the results of the connection attempt. This block has no return value and takes the following parameter: - **result**: The result of the connection attempt. On a successful attempt, this value is the [`VZVirtioSocketConnection`](vzvirtiosocketconnection.md) object to use for communications. On an unsuccessful attempt, this value is the error object that indicates why the connection failed.
 
 ## See Also
 

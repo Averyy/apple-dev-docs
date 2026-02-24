@@ -35,7 +35,7 @@ Note that if the reference count of the underlying object is not exactly one (i.
 ## Parameters
 
 - `Matrix`: The matrix to be factorized.
-- `workspace`: A pointer to a workspace of size at least    bytes.   This memory must be 16-byte aligned (any allocation returned   by   has this property).   This workspace may be reused or destroyed by the user as soon as the   function returns.
+- `workspace`: A pointer to a workspace of size at least `Factorization->symbolicFactorization.workspaceSize_Double * 2` bytes. This memory must be 16-byte aligned (any allocation returned by `malloc` has this property). This workspace may be reused or destroyed by the user as soon as the function returns.
 
 ## See Also
 

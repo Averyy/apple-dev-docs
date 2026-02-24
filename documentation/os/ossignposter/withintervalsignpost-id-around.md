@@ -50,8 +50,8 @@ signposter.withIntervalSignpost("Account Reconciliation", id: signpostID,
 ## Parameters
 
 - `name`: The signpost’s name.
-- `id`: The signpost’s ID. The default value is  .
-- `message`: The interpolated string that the signposter attaches to the signpost. Each of the message’s interpolations can specify individual formatting and privacy options. For more information, see  .
+- `id`: The signpost’s ID. The default value is [`exclusive`](ossignpostid/exclusive.md).
+- `message`: The interpolated string that the signposter attaches to the signpost. Each of the message’s interpolations can specify individual formatting and privacy options. For more information, see [`Message Argument Formatters`](message-argument-formatters.md).
 - `task`: The closure around which to create the signposted interval.
 
 ## See Also

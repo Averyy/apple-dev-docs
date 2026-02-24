@@ -20,7 +20,7 @@ func removeRenderingAttribute(_ renderingAttribute: NSAttributedString.Key, for 
 
 ## Parameters
 
-- `renderingAttribute`: The   attribute to remove
+- `renderingAttribute`: The [`NSAttributedString.Key`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key) attribute to remove
 - `textRange`: The range over which to remove the rendering attribute.
 
 ## See Also

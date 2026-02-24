@@ -26,7 +26,7 @@ Returns a CFString object that represents the specified PDF string as a text str
 
 ## Parameters
 
-- `string`: A PDF string. If this value is  , it will cause an error.
+- `string`: A PDF string. If this value is `NULL`, it will cause an error.
 
 ## See Also
 

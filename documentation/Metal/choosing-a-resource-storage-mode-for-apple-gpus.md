@@ -16,11 +16,44 @@ The [`MTLStorageMode.memoryless`](mtlstoragemode/memoryless.md) mode defines til
 
 The storage mode you choose depends on how you plan to use Metal resources:
 
+- **Populate and update on the CPU**: Data shared by the CPU and GPU. Use [`MTLStorageMode.shared`](mtlstoragemode/shared.md). The CPU and GPU share data. This is the default for buffer and texture storage.
+- **Access exclusively on the GPU**: Data owned by the GPU. Use [`MTLStorageMode.private`](mtlstoragemode/private.md). Choose the mode if you populate your resource with the GPU through a compute, render, or blit pass. This case is common for render targets, intermediary resources, or texture streaming. For guidance on how to copy data to a private resource, see [`Copying data to a private resource`](copying-data-to-a-private-resource.md).
+- **Populate on CPU and access frequently on GPU**: Shared integrated memory for the CPU and GPU. Use [`MTLStorageMode.shared`](mtlstoragemode/shared.md).
+- **Temporary texture contents for GPU passes**: Memory held by the GPU for textures within or between passes. Use [`MTLStorageMode.memoryless`](mtlstoragemode/memoryless.md). Memoryless mode only works for textures, and stores temporary resources in tiled memory for high performance. An example is a depth or stencil texture thatʼs used only within a single pass and isnʼt needed in an earlier or later rendering stage.
+
 For information on setting storage modes in your app, see [`Setting resource storage modes`](setting-resource-storage-modes.md).
 
 ##### Create a Memoryless Render Target
 
 To create a memoryless render target, set the [`storageMode`](mtltexturedescriptor/storagemode.md) property of an [`MTLTextureDescriptor`](mtltexturedescriptor.md) to [`MTLStorageMode.memoryless`](mtlstoragemode/memoryless.md) and use this descriptor to create a new [`MTLTexture`](mtltexture.md). Then set this new texture as the [`texture`](mtlrenderpassattachmentdescriptor/texture.md) property of an [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md).
+
+**Swift**:
+
+```swift
+let memorylessDescriptor = MTLTextureDescriptor.texture2DDescriptor(pixelFormat: .r16Float,
+                                                                    width: 256,
+                                                                    height: 256,
+                                                                    mipmapped: true)
+memorylessDescriptor.storageMode = .memoryless
+let memorylessTexture = device.makeTexture(descriptor: memorylessDescriptor)
+
+let renderPassDescriptor = MTLRenderPassDescriptor()
+renderPassDescriptor.depthAttachment.texture = memorylessTexture
+```
+
+**Objective-C**:
+
+```objective-c
+MTLTextureDescriptor *memorylessDescriptor = [MTLTextureDescriptor texture2DDescriptorWithPixelFormat:MTLPixelFormatR16Float
+                                                                                                width:256
+                                                                                               height:256
+                                                                                            mipmapped:YES];
+memorylessDescriptor.storageMode = MTLStorageModeMemoryless;
+id <MTLTexture> memorylessTexture = [_device newTextureWithDescriptor:memorylessDescriptor];
+    
+MTLRenderPassDescriptor *renderPassDescriptor = [MTLRenderPassDescriptor renderPassDescriptor];
+renderPassDescriptor.depthAttachment.texture = memorylessTexture;
+```
 
 See [`Rendering a scene with deferred lighting in Objective-C`](rendering-a-scene-with-deferred-lighting-in-objective-c.md) for an example of an app that uses a memoryless render target.
 

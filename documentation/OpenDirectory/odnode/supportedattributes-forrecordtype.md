@@ -27,7 +27,7 @@ If `inRecordType` is `nil`, this function returns all attribute types supported 
 
 ## Parameters
 
-- `inRecordType`: The record type to list supported attribute types for. Can be  .
+- `inRecordType`: The record type to list supported attribute types for. Can be `nil`.
 
 ## See Also
 

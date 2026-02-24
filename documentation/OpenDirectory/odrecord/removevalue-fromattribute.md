@@ -21,7 +21,7 @@ func removeValue(_ inValue: Any!, fromAttribute inAttribute: String!) throws
 
 ## Parameters
 
-- `inValue`: The value. Should be of type   or  .
+- `inValue`: The value. Should be of type `NSString` or `NSData`.
 - `inAttribute`: The attribute.
 
 ## See Also

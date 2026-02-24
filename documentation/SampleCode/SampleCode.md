@@ -29,8 +29,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Communicate with nearby devices over a secure, high-throughput, low-latency connection by using Wi-Fi Aware.
 - [Building rich SwiftUI text experiences](../SwiftUI/building-rich-swiftui-text-experiences.md)
   Build an editor for formatted text using SwiftUI text editor views and attributed strings.
-- [Canyon Crosser: Building a volumetric hike-planning app](../visionOS/canyon-crosser-building-a-volumetric-hike-planning-app.md)
-  Create a hike planning app using SwiftUI and RealityKit.
 - [Capturing Cinematic video](../AVFoundation/capturing-cinematic-video.md)
   Capture video with an adjustable depth of field and focus points.
 - [Capturing Spatial Audio in your iOS app](../AVFoundation/capturing-spatial-audio-in-your-ios-app.md)
@@ -81,16 +79,10 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Shift electric vehicle charging schedules to times when the grid is cleaner and potentially less expensive.
 - [Performing fast account creation with passkeys](../AuthenticationServices/performing-fast-account-creation-with-passkeys.md)
   Allow people to quickly create an account with passkeys and associated domains.
-- [Petite Asteroids: Building a volumetric visionOS game](../visionOS/petite-asteroids-building-a-volumetric-visionos-game.md)
-  Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - [Playing immersive media with AVKit](../AVKit/playing-immersive-media-with-avkit.md)
   Adopt the system playback interface to provide an immersive video watching experience.
-- [Playing immersive media with RealityKit](../visionOS/playing-immersive-media-with-realitykit.md)
-  Create an immersive video playback experience with RealityKit.
 - [Presenting images in RealityKit](../RealityKit/presenting-images-in-realitykit.md)
   Create and display spatial scenes in RealityKit
-- [Combining blit and compute operations in a single pass](../Metal/combining-blit-and-compute-operations-in-a-single-pass.md)
-  Run concurrent blit commands and then a compute dispatch in a single pass with a unified compute encoder.
 - [Recognizing tables within a document](../Vision/recognize-tables-within-a-document.md)
   Scan a document that contains a table and extract its content in a formatted way.
 - [Rendering hover effects in Metal immersive apps](../CompositorServices/rendering_hover_effects_in_metal_immersive_apps.md)
@@ -173,6 +165,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
 ### Accessibility
 - [Accessibility design for Mac Catalyst](../Accessibility/accessibility_design_for_mac_catalyst.md)
   Improve navigation in your app by using keyboard shortcuts and accessibility containers.
+- [Creating accessible views](../SwiftUI/creating-accessible-views.md)
+  Make your app accessible to everyone by applying accessibility modifiers to your SwiftUI views.
 - [Delivering an exceptional accessibility experience](../Accessibility/delivering_an_exceptional_accessibility_experience.md)
   Make improvements to your app’s interaction model to support assistive technologies such as VoiceOver.
 - [Enhancing the accessibility of your SwiftUI app](../Accessibility/enhancing-the-accessibility-of-your-swiftui-app.md)
@@ -198,7 +192,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Support HTTP resumable upload protocol in SwiftNIO by translating resumable uploads to regular uploads.
 - [Continuing User Activities with Handoff](../Foundation/continuing-user-activities-with-handoff.md)
   Define and manage which of your app’s activities can be continued between devices.
-- [Displaying Human-Friendly Content](../foundation/displaying_human-friendly_content.md)
+- [Displaying Human-Friendly Content](../Foundation/displaying-human-friendly-content.md)
   Convert data into readable strings or Swift objects using formatters.
 - [Fruta: Building a feature-rich app with SwiftUI](../AppClip/fruta-building-a-feature-rich-app-with-swiftui.md)
   Create a shared codebase to build a multiplatform app that offers widgets and an App Clip.
@@ -208,7 +202,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Display content and provide services in an AR experience with App Clip Codes.
 - [Synchronizing App Preferences with iCloud](../Foundation/synchronizing-app-preferences-with-icloud.md)
   Store app preferences in iCloud and share them among instances of your app running on a user’s connected devices.
-- [Using JSON with Custom Types](../foundation/archives_and_serialization/using_json_with_custom_types.md)
+- [Using JSON with custom types](../Foundation/using-json-with-custom-types.md)
   Encode and decode JSON data, regardless of its structure, using Swift’s JSON support.
 ### App Intents and SiriKit
 - [Accelerating app interactions with App Intents](../AppIntents/AcceleratingAppInteractionsWithAppIntents.md)
@@ -309,6 +303,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Find all the automation accessories in the primary home and control their state.
 - [Linking Data Between Two Core Data Stores](../CoreData/linking-data-between-two-core-data-stores.md)
   Organize data in two different stores and implement a link between them.
+- [Loading and displaying a large data feed](../SwiftUI/loading-and-displaying-a-large-data-feed.md)
+  Consume data in the background, and lower memory use by batching imports and preventing duplicate records.
 - [Managing location-based reminders](../EventKit/managing-location-based-reminders.md)
   Access reminders set up with geofence-enabled alarms on a person’s calendars.
 - [Offering Apple Pay in Your App](../PassKit/offering-apple-pay-in-your-app.md)
@@ -654,6 +650,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Determine which pixels are visible in a scene by using a depth texture.
 - [Capturing Metal commands programmatically](../Metal/capturing-metal-commands-programmatically.md)
   Invoke a Metal frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
+- [Combining blit and compute operations in a single pass](../Metal/combining-blit-and-compute-operations-in-a-single-pass.md)
+  Run concurrent blit commands and then a compute dispatch in a single pass with a unified compute encoder.
 - [Control the ray tracing process using intersection queries](../Metal/control-the-ray-tracing-process-using-intersection-queries.md)
   Explicitly enumerate a ray’s intersections with acceleration structures by creating an intersection query object.
 - [Creating a 3D application with hydra rendering](../Metal/creating-a-3d-application-with-hydra-rendering.md)
@@ -704,8 +702,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Use advanced Metal features such as indirect command buffers, sparse textures, and variable rate rasterization to implement complex rendering techniques.
 - [Performing calculations on a GPU](../Metal/performing-calculations-on-a-gpu.md)
   Use Metal to find GPUs and perform calculations on them.
-- [Combining blit and compute operations in a single pass](../Metal/combining-blit-and-compute-operations-in-a-single-pass.md)
-  Run concurrent blit commands and then a compute dispatch in a single pass with a unified compute encoder.
 - [Processing HDR images with Metal](../Metal/processing-hdr-images-with-metal.md)
   Implement a post-processing pipeline using the latest features on Apple GPUs.
 - [Reading pixel data from a drawable texture](../Metal/reading-pixel-data-from-a-drawable-texture.md)
@@ -726,6 +722,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Use layer selection to reduce the number of render passes needed to generate an environment map.
 - [Rendering terrain dynamically with argument buffers](../Metal/rendering-terrain-dynamically-with-argument-buffers.md)
   Use argument buffers to render terrain in real time with a GPU-driven pipeline.
+- [Running a machine learning model on the GPU timeline](../Metal/running-a-machine-learning-model-on-the-gpu-timeline.md)
+  Dispatch model inference commands with a machine learning pass in a Metal 4 command buffer.
 - [Selecting device objects for compute processing](../Metal/selecting-device-objects-for-compute-processing.md)
   Switch dynamically between multiple GPUs to efficiently execute a compute-intensive simulation.
 - [Selecting device objects for graphics rendering](../Metal/selecting-device-objects-for-graphics-rendering.md)
@@ -893,8 +891,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Code along with the WWDC presenter to transform an app with SwiftData.
 - [Building a great Mac app with SwiftUI](../SwiftUI/building-a-great-mac-app-with-swiftui.md)
   Create engaging SwiftUI Mac apps by incorporating side bars, tables, toolbars, and several other popular user interface elements.
-- [Declaring a custom view](../SwiftUI/Declaring-a-Custom-View.md)
-  Define views and assemble them into a view hierarchy.
 - [Composing custom layouts with SwiftUI](../SwiftUI/composing-custom-layouts-with-swiftui.md)
   Arrange views in your app’s interface using layout tools that SwiftUI provides.
 - [Controlling the timing and movements of your animations](../SwiftUI/Controlling-the-timing-and-movements-of-your-animations.md)
@@ -909,6 +905,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Add scroll effects, rich color treatments, custom transitions, and advanced effects using shaders and a text renderer.
 - [Customizing window styles and state-restoration behavior in macOS](../SwiftUI/Customizing-window-styles-and-state-restoration-behavior-in-macOS.md)
   Configure how your app’s windows look and function in macOS to provide an engaging and more coherent experience.
+- [Declaring a custom view](../SwiftUI/Declaring-a-Custom-View.md)
+  Define views and assemble them into a view hierarchy.
 - [Enhancing your app’s content with tab navigation](../SwiftUI/Enhancing-your-app-content-with-tab-navigation.md)
   Keep your app content front and center while providing quick access to navigation using the tab bar.
 - [Focus Cookbook: Supporting and enhancing focus-driven interactions in your SwiftUI app](../SwiftUI/Focus-Cookbook-sample.md)
@@ -1162,85 +1160,75 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Training a Create ML Model to Classify Flowers](../Vision/training-a-create-ml-model-to-classify-flowers.md)
   Train a flower classifier using Create ML in Swift Playgrounds, and apply the resulting model to real-time image classification using Vision.
 ### visionOS
-- [Accessing the main camera](../visionOS/accessing-the-main-camera.md)
+- [Accessing the main camera](../visionos/accessing-the-main-camera.md)
   Add camera-based features to enterprise apps.
-- [Adding a depth effect to text in visionOS](../visionOS/adding-a-depth-effect-to-text-in-visionOS.md)
+- [Adding a depth effect to text in visionOS](../visionos/adding-a-depth-effect-to-text-in-visionos.md)
   Create text that expands out of a window using stacked SwiftUI text views.
-- [Animating hand models in visionOS](../visionOS/animating-hand-models-in-visionOS.md)
-  Substitute a person’s hands with custom models in a fully immersive space.
-- [Applying mesh to real-world surroundings](../visionOS/applying-mesh-to-real-world-surroundings.md)
+- [Applying mesh to real-world surroundings](../visionos/applying-mesh-to-real-world-surroundings.md)
   Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
-- [BOT-anist](../visionOS/BOT-anist.md)
+- [BOT-anist](../visionos/bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
-- [Building an immersive media viewing experience](../visionOS/building-an-immersive-media-viewing-experience.md)
+- [Building an immersive media viewing experience](../visionos/building-an-immersive-media-viewing-experience.md)
   Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
-- [Building local experiences with room tracking](../visionOS/building-local-experiences-with-room-tracking.md)
-  Use room tracking in visionOS to provide custom interactions with physical spaces.
-- [Connecting iPadOS and visionOS apps over the local network](../visionOS/connecting-ipados-and-visionos-apps-over-the-local-network.md)
-  Build an iPadOS companion app to control your visionOS app.
-- [Creating 2D shapes with SwiftUI](../visionOS/creating-2d-shapes-in-visionos-with-swiftui.md)
+- [Creating 2D shapes with SwiftUI](../visionos/creating-2d-shapes-in-visionos-with-swiftui.md)
   Draw two-dimensional shapes in your visionOS app with SwiftUI shapes or with your custom shapes.
-- [Creating 3D entities with RealityKit](../visionOS/creating-3d-entities-with-realitykit.md)
-  Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.
-- [Creating 3D models as movable windows](../visionOS/creating-a-volumetric-window-in-visionos.md)
+- [Creating 3D models as movable windows](../visionos/creating-a-volumetric-window-in-visionos.md)
   Display 3D content with a volumetric window that people can move.
-- [Creating a 3D painting space](../visionOS/creating-a-painting-space-in-visionos.md)
+- [Creating a 3D painting space](../visionos/creating-a-painting-space-in-visionos.md)
   Implement a painting canvas entity, and update its mesh to represent a stroke.
-- [Creating an immersive space in visionOS](../visionOS/creating-immersive-spaces-in-visionos-with-swiftui.md)
+- [Creating a foveated streaming client on visionOS](../FoveatedStreaming/creating-a-foveated-streaming-client-on-visionos.md)
+  Build a visionOS app that streams high-fidelity immersive content from a computer or the cloud using the Foveated Streaming framework.
+- [Creating an immersive space in visionOS](../visionos/creating-immersive-spaces-in-visionos-with-swiftui.md)
   Enhance your visionOS app by adding an immersive space using RealityKit.
-- [Creating an interactive 3D model in visionOS](../visionOS/creating-an-interactable-3d-model-in-visionos.md)
+- [Creating an interactive 3D model in visionOS](../visionos/creating-an-interactable-3d-model-in-visionos.md)
   Display an interactive car model using gestures in a reality view.
-- [Creating SwiftUI windows in visionOS](../visionOS/creating-a-new-swiftui-window-in-visionos.md)
+- [Creating SwiftUI windows in visionOS](../visionos/creating-a-new-swiftui-window-in-visionos.md)
   Display and manage multiple SwiftUI windows in your visionOS app.
-- [Destination Video](../visionOS/destination-video.md)
+- [Destination Video](../visionos/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Diorama](../visionOS/diorama.md)
+- [Diorama](../visionos/diorama.md)
   Design scenes for your visionOS app using Reality Composer Pro.
-- [Displaying a 3D environment through a portal](../visionOS/displaying-a-3D-environment-through-a-portal.md)
+- [Displaying a 3D environment through a portal](../visionos/displaying-a-3d-environment-through-a-portal.md)
   Implement a portal window that displays a 3D environment and simulates entering a portal by using RealityKit.
-- [Displaying an entity that follows a person’s view](../visionOS/displaying-a-3D-object-that-moves-to-stay-in-a-person's-view.md)
+- [Displaying an entity that follows a person’s view](../visionos/displaying-a-3d-object-that-moves-to-stay-in-a-person's-view.md)
   Create an entity that tracks and follows head movement in an immersive scene.
-- [Displaying a stereoscopic image](../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
+- [Displaying a stereoscopic image](../visionos/displaying-a-stereoscopic-image-in-visionos.md)
   Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
-- [Displaying text in visionOS](../visionOS/displaying-text-in-visionOS.md)
+- [Displaying text in visionOS](../visionos/displaying-text-in-visionos.md)
   Create styled text in a window using SwiftUI.
-- [Displaying video from connected devices](../visionOS/displaying-video-from-connected-devices.md)
+- [Displaying video from connected devices](../visionos/displaying-video-from-connected-devices.md)
   Show video from devices connected with the Developer Strap in your visionOS app.
-- [Drawing in the air and on surfaces with a spatial stylus](../visionOS/drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
-  Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
-- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](../visionos/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
-- [Exploring object tracking with ARKit](../visionOS/exploring_object_tracking_with_arkit.md)
+- [Exploring object tracking with ARKit](../visionos/exploring_object_tracking_with_arkit.md)
   Find and track real-world objects in visionOS using reference objects trained with Create ML.
-- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+- [Generating procedural textures](../visionos/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
-- [Happy Beam](../visionOS/happybeam.md)
+- [Happy Beam](../visionos/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
-- [Hello World](../visionOS/World.md)
+- [Hello World](../visionos/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Implementing adjustable material](../visionOS/implementing-adjustable-material-in-visionos.md)
+- [Implementing adjustable material](../visionos/implementing-adjustable-material-in-visionos.md)
   Update the adjustable parameters of a 3D model in visionOS.
-- [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md)
-  Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
-- [Incorporating real-world surroundings in an immersive experience](../visionOS/incorporating-real-world-surroundings-in-an-immersive-experience.md)
+- [Incorporating real-world surroundings in an immersive experience](../visionos/incorporating-real-world-surroundings-in-an-immersive-experience.md)
   Create an immersive experience by making your app’s content respond to the local shape of the world.
-- [Locating and decoding barcodes in 3D space](../visionOS/locating-and-decoding-barcodes-in-3d-space.md)
+- [Locating and decoding barcodes in 3D space](../visionos/locating-and-decoding-barcodes-in-3d-space.md)
   Create engaging, hands-free experiences based on barcodes in a person’s surroundings.
-- [Object tracking with Reality Composer Pro experiences](../visionOS/object-tracking-with-reality-composer-pro-experiences.md)
+- [Object tracking with Reality Composer Pro experiences](../visionos/object-tracking-with-reality-composer-pro-experiences.md)
   Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
-- [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
+- [Obscuring virtual items in a scene behind real-world items](../visionos/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
   Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
-- [Placing content on detected planes](../visionOS/placing-content-on-detected-planes.md)
+- [Placing content on detected planes](../visionos/placing-content-on-detected-planes.md)
   Detect horizontal surfaces like tables and floors, as well as vertical planes like walls and doors.
-- [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](../visionos/placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
-- [Playing spatial audio](../visionOS/playing-spatial-audio-in-visionos.md)
+- [Playing spatial audio](../visionos/playing-spatial-audio-in-visionos.md)
   Create and adjust spatial audio in visionOS with RealityKit.
-- [Swift Splash](../visionOS/swift-splash.md)
+- [Swift Splash](../visionos/swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
-- [Tracking and visualizing hand movement](../visionOS/tracking-and-visualizing-hand-movement.md)
+- [Tracking and visualizing hand movement](../visionos/tracking-and-visualizing-hand-movement.md)
   Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
-- [Tracking specific points in world space](../visionOS/tracking-points-in-world-space.md)
+- [Tracking specific points in world space](../visionos/tracking-points-in-world-space.md)
   Retrieve the position and orientation of anchors your app stores in ARKit.
 ### Watch
 - [Building a productivity app for Apple Watch](../watchOS-Apps/building-a-productivity-app-for-apple-watch.md)

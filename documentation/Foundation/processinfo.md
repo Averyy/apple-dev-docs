@@ -22,7 +22,19 @@ class ProcessInfo
 
 #### Overview
 
-Each process has a single, shared [`ProcessInfo`](processinfo.md) object known as a  that can return information such as arguments, environment variables, host name, and process name. The [`processInfo`](processinfo/processinfo.md) class method returns the shared agent for the current process. For example, the following line returns the [`ProcessInfo`](processinfo.md) object, which then provides the name of the current process:
+Each process has a single, shared [`ProcessInfo`](processinfo.md) object known as a *process information agent* that can return information such as arguments, environment variables, host name, and process name. The [`processInfo`](processinfo/processinfo.md) class method returns the shared agent for the current process. For example, the following line returns the [`ProcessInfo`](processinfo.md) object, which then provides the name of the current process:
+
+**Swift**:
+
+```swift
+let processName = ProcessInfo.processInfo.processName
+```
+
+**Objective-C**:
+
+```objc
+NSString *processName = [[NSProcessInfo processInfo] processName];
+```
 
 > **Note**:  [`ProcessInfo`](processinfo.md) is thread-safe in macOS 10.7 and later.
 
@@ -32,7 +44,7 @@ The [`ProcessInfo`](processinfo.md) class also includes the [`operatingSystemVer
 
 ##### Manage Activities
 
-The system has heuristics to improve battery life, performance, and responsiveness of applications for the benefit of the user. You can use the following methods to manage  that give hints to the system that your application has special requirements:
+The system has heuristics to improve battery life, performance, and responsiveness of applications for the benefit of the user. You can use the following methods to manage *activities* that give hints to the system that your application has special requirements:
 
 - [`beginActivity(options:reason:)`](processinfo/beginactivity(options:reason:).md)
 - [`endActivity(_:)`](processinfo/endactivity(_:).md)
@@ -42,8 +54,8 @@ In response to creating an activity, the system disables some or all of the heur
 
 You use activities when your application performs a long-running operation. If the activity can take different amounts of time (for example, calculating the next move in a chess game), it should use this API to ensure correct behavior when the amount of data or the capabilities of the user’s computer varies. Activities fall into two major categories:
 
--  activities are explicitly started by the user. Examples include exporting or downloading a user-specified file.
--  activities perform the normal operations of your application and aren’t explicitly started by the user. Examples include autosaving, indexing, and automatic downloading of files.
+- *User-initiated* activities are explicitly started by the user. Examples include exporting or downloading a user-specified file.
+- *Background* activities perform the normal operations of your application and aren’t explicitly started by the user. Examples include autosaving, indexing, and automatic downloading of files.
 
 In addition, if your application requires high priority input/output (I/O), you can include the [`latencyCritical`](processinfo/activityoptions/latencycritical.md) flag (using a bitwise `OR`). You should only use this flag for activities like audio or video recording that require high priority I/O.
 
@@ -53,7 +65,41 @@ Be aware that failing to end these activities for an extended period of time can
 
 You can also use this API to control automatic termination or sudden termination (see [`Support Sudden Termination`](processinfo#Support-Sudden-Termination.md)). For example, the following code brackets the work to protect it from sudden termination:
 
+**Swift**:
+
+```swift
+let activity = ProcessInfo.processInfo.beginActivity(
+    options: .automaticTerminationDisabled, 
+    reason: "Good Reason")
+// Perform some work.
+ProcessInfo.processInfo.endActivity(activity)
+```
+
+**Objective-C**:
+
+```objc
+id activity = [[NSProcessInfo processInfo] beginActivityWithOptions:NSActivityAutomaticTerminationDisabled reason:@"Good Reason"];
+// Perform some work.
+[[NSProcessInfo processInfo] endActivity:activity];
+```
+
 The above example is equivalent to the following code, which uses the [`disableAutomaticTermination(_:)`](processinfo/disableautomatictermination(_:).md) method:
+
+**Swift**:
+
+```swift
+ProcessInfo.processInfo.disableAutomaticTermination("Good Reason")
+// Perform some work.
+ProcessInfo.processInfo.enableAutomaticTermination("Good Reason")
+```
+
+**Objective-C**:
+
+```objc
+[[NSProcessInfo processInfo] disableAutomaticTermination:@"Good Reason"];
+// Perform some work.
+[[NSProcessInfo processInfo] enableAutomaticTermination:@"Good Reason"];
+```
 
 Because this API returns an object, it may be easier to pair begins and ends than when using the automatic termination API. If your app deallocates the object before the [`endActivity(_:)`](processinfo/endactivity(_:).md) call, the activity ends automatically.
 
@@ -84,7 +130,7 @@ print (long)[[NSClassFromString(@"NSProcessInfo") processInfo] _suddenTerminatio
 
 ##### Monitor Thermal State to Adjust App Performance
 
- indicates the level of heat generated by logic components as they run apps. As the thermal state increases, the system decreases heat by reducing the speed of the processors. Optimize your app’s performance by monitoring the thermal state and reducing system usage as the thermal state increases. Query the current state with [`thermalState`](processinfo/thermalstate-swift.property.md) to determine if your app needs to reduce system usage. You can register the [`thermalStateDidChangeNotification`](processinfo/thermalstatedidchangenotification.md) for notifications of a change in thermal state. For recommended actions, see [`ProcessInfo.ThermalState`](processinfo/thermalstate-swift.enum.md).
+*Thermal state* indicates the level of heat generated by logic components as they run apps. As the thermal state increases, the system decreases heat by reducing the speed of the processors. Optimize your app’s performance by monitoring the thermal state and reducing system usage as the thermal state increases. Query the current state with [`thermalState`](processinfo/thermalstate-swift.property.md) to determine if your app needs to reduce system usage. You can register the [`thermalStateDidChangeNotification`](processinfo/thermalstatedidchangenotification.md) for notifications of a change in thermal state. For recommended actions, see [`ProcessInfo.ThermalState`](processinfo/thermalstate-swift.enum.md).
 
 ## Topics
 

@@ -26,7 +26,7 @@ Before a view modified with this method appears, a task will start in the backgr
 
 ## Parameters
 
-- `groupID`: The subscription group ID to get the status for. The task restarts whenever this   parameter changes.
+- `groupID`: The subscription group ID to get the status for. The task restarts whenever this parameter changes.
 - `priority`: The task priority to use when creating the task.
 - `action`: The action to perform when the task’s state changes.
 

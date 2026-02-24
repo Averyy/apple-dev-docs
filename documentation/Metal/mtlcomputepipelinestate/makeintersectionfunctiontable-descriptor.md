@@ -26,7 +26,7 @@ A new intersection function table, or `nil` if an error occurred in creation.
 
 ## Parameters
 
-- `descriptor`: An   instance that configures the created table.
+- `descriptor`: An [`MTLIntersectionFunctionTableDescriptor`](mtlintersectionfunctiontabledescriptor.md) instance that configures the created table.
 
 ## See Also
 

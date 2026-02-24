@@ -26,7 +26,7 @@ An operation queue scheduler time advanced by the given interval from [`date`](o
 
 ## Parameters
 
-- `n`: The time interval to advance   by.
+- `n`: The time interval to advance [`date`](operationqueue/schedulertimetype/date.md) by.
 
 ## See Also
 

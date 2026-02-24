@@ -22,7 +22,7 @@ func setVisibleMapRect(_ mapRect: MKMapRect, animated animate: Bool)
 ## Parameters
 
 - `mapRect`: The map rectangle to make visible in the map view.
-- `animate`: Specify   if you want the map view to animate the transition to the new map rectangle or   if you want the map to center on the specified rectangle immediately.
+- `animate`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if you want the map view to animate the transition to the new map rectangle or [`false`](https://developer.apple.com/documentation/Swift/false) if you want the map to center on the specified rectangle immediately.
 
 ## See Also
 

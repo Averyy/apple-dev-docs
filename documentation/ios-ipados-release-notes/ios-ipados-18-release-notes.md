@@ -214,8 +214,8 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- If a pregnancy sample is deleted on a device that is not on iOS 18, users are not prompted to remove pregnancy data from MedicalID if applicable.   (129296194)  Manually delete pregnancy data from Medical ID.
-- In Cycle Tracking, if a pregnancy sample is edited or created on a device different than where pregnancy onboarding was completed, Medical ID might not display pregnancy information correctly.  (130784441)  Edit Medical ID to add pregnancy information.
+- If a pregnancy sample is deleted on a device that is not on iOS 18, users are not prompted to remove pregnancy data from MedicalID if applicable.   (129296194) **Workaround:** Manually delete pregnancy data from Medical ID.
+- In Cycle Tracking, if a pregnancy sample is edited or created on a device different than where pregnancy onboarding was completed, Medical ID might not display pregnancy information correctly.  (130784441) **Workaround:** Edit Medical ID to add pregnancy information.
 
 ##### Healthkit
 
@@ -225,13 +225,13 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- With the introduction of Swift 6 this year, developers who update their projects to use Swift 6 might have issues with their apps, which can lead to app crashes when executing a variety of HealthKit API calls.  (131794283)  Annotate your callbacks in code with @sendable, NS_SWIFT_SENDABLE, or use pre-Swift 6 versions of the language.
+- With the introduction of Swift 6 this year, developers who update their projects to use Swift 6 might have issues with their apps, which can lead to app crashes when executing a variety of HealthKit API calls.  (131794283) **Workaround:** Annotate your callbacks in code with @sendable, NS_SWIFT_SENDABLE, or use pre-Swift 6 versions of the language.
 
 ##### Home App
 
 ###### Known Issues
 
-- If a user has multiple devices running beta 1 or 2 and onboarded Home with a Utility account, the account might get offboarded when one device is upgraded to beta 3.  (130850945)  Re-onboard Home Utility account, only after upgrading all devices to beta 3.
+- If a user has multiple devices running beta 1 or 2 and onboarded Home with a Utility account, the account might get offboarded when one device is upgraded to beta 3.  (130850945) **Workaround:** Re-onboard Home Utility account, only after upgrading all devices to beta 3.
 
 ##### Home Screen
 
@@ -514,7 +514,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- When using `SubscriptionStorePicker` within a container view, the window bar doesn’t work correctly.   (117701666)  Return `SubscriptionStorePicker` as a top level view from `makeBody(configuration:)` method, instead of using it within a container.
+- When using `SubscriptionStorePicker` within a container view, the window bar doesn’t work correctly.   (117701666) **Workaround:** Return `SubscriptionStorePicker` as a top level view from `makeBody(configuration:)` method, instead of using it within a container.
 
 ###### Deprecations
 
@@ -682,7 +682,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Users with an Apple Watch might be prompted to reauthorize Connected Accounts in Wallet on iPhone.  (129127520)  Wait for iPhone and Apple Watch to synchornize. If the issue persists after several minutes, try reauthorizing the connection on iPhone.
+- Users with an Apple Watch might be prompted to reauthorize Connected Accounts in Wallet on iPhone.  (129127520) **Workaround:** Wait for iPhone and Apple Watch to synchornize. If the issue persists after several minutes, try reauthorizing the connection on iPhone.
 
 ##### Watch Faces
 
@@ -715,7 +715,7 @@ The iOS & iPadOS 18 SDK provides support to develop apps for iPhone and iPad run
 ###### Known Issues
 
 - For control widgets that specify both a subtitle and value, Control Center displays only the subtitle.  (127906735)
-- Images used in a ControlWidgetConfiguration that are loaded from the app extension’s bundle might glitch when using a symbol effect content transition.  (131789007)  Apply the .contentTransition(.identity) view modifier to the Image.
+- Images used in a ControlWidgetConfiguration that are loaded from the app extension’s bundle might glitch when using a symbol effect content transition.  (131789007) **Workaround:** Apply the .contentTransition(.identity) view modifier to the Image.
 
 ##### Widgets
 

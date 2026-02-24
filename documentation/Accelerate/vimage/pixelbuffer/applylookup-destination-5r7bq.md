@@ -84,7 +84,7 @@ The images below show an example grayscale source image on the left and the tran
 
 ## Parameters
 
-- `lookupTable`: A lookup table that contains 256   ARGB values. The function discards the alpha component.
+- `lookupTable`: A lookup table that contains 256 [`Pixel_8888`](pixel_8888.md) ARGB values. The function discards the alpha component.
 - `destination`: The destination pixel buffer.
 
 ## See Also

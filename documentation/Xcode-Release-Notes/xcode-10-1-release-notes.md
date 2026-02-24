@@ -72,7 +72,7 @@ Xcode 10.1 includes SDKs for iOS 12.1, watchOS 5.1, macOS 10.14.1, and tvOS 12.1
 
 ###### Known Issues
 
-- If another process, such as `simctl`, shuts down a simulated device while Simulator is open, Simulator doesn’t reconnect to it properly when the device is next booted. If you have multiple versions of Xcode installed, you might experience this issue when running Simulator in those other versions. (44629720)  Quit and relaunch Simulator. To quit without shutting down all simulators, hold Option and choose Simulator > Quit Simulator…, then choose “Keep Running” in the dialog that appears.
+- If another process, such as `simctl`, shuts down a simulated device while Simulator is open, Simulator doesn’t reconnect to it properly when the device is next booted. If you have multiple versions of Xcode installed, you might experience this issue when running Simulator in those other versions. (44629720) **Workaround:** Quit and relaunch Simulator. To quit without shutting down all simulators, hold Option and choose Simulator > Quit Simulator…, then choose “Keep Running” in the dialog that appears.
 
 ##### Swift Compiler
 
@@ -91,7 +91,7 @@ extension SomeProtocol {
   
 // Might be miscompiled, deallocating SomeClass() too early.
 SomeClass().someNonmutatingProperty.x = 42
-```  Break the operation up into multiple statements so that the `get` and `set` operations occur in different statements: ```swift
+``` **Workaround:** Break the operation up into multiple statements so that the `get` and `set` operations occur in different statements: ```swift
 let someObject = SomeClass()
 // First get the nonmutating property value.
 var temp = someObject.someNonmutatingProperty
@@ -148,7 +148,7 @@ f([NSObject.self, NSString.self])
 
 ###### Known Issues
 
-- Profiling tests does not behave correctly when test parallelization is enabled. (44836817)  Disable parallel testing while profiling by navigating to Product > Scheme > Edit Scheme… > Test > Info. Select the Options button next to your test target, and disable the “Execute in parallel” checkbox.
+- Profiling tests does not behave correctly when test parallelization is enabled. (44836817) **Workaround:** Disable parallel testing while profiling by navigating to Product > Scheme > Edit Scheme… > Test > Info. Select the Options button next to your test target, and disable the “Execute in parallel” checkbox.
 
 ###### Resolved Issues
 

@@ -58,7 +58,7 @@ If you want to specify the input directly in terms of width and height, use [`de
 
 ## See Also
 
-- [Positioning and sizing windows](../visionOS/positioning-and-sizing-windows.md)
+- [Positioning and sizing windows](../visionos/positioning-and-sizing-windows.md)
   Influence the initial geometry of windows that your app presents.
 - [func defaultSize(width: CGFloat, height: CGFloat) -> some Scene](scene/defaultsize(width:height:).md)
   Sets a default width and height for a window.

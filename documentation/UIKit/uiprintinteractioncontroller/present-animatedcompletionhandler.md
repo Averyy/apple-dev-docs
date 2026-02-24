@@ -25,8 +25,8 @@ If you call this method when the printing options are already displayed, `UIPrin
 
 ## Parameters
 
-- `animated`:   to animate the display of the sheet,   to display the sheet immediately.
-- `completion`: A block of type   that you implement to handle the conclusion of the print job (for instance, to reset state) and to handle any errors encountered in printing.
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the display of the sheet, [`false`](https://developer.apple.com/documentation/Swift/false) to display the sheet immediately.
+- `completion`: A block of type [`UIPrintInteractionController.CompletionHandler`](uiprintinteractioncontroller/completionhandler.md) that you implement to handle the conclusion of the print job (for instance, to reset state) and to handle any errors encountered in printing.
 
 ## See Also
 

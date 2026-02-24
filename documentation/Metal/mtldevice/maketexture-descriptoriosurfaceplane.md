@@ -26,9 +26,9 @@ A new [`MTLTexture`](mtltexture.md) instance if the method completed successfull
 
 ## Parameters
 
-- `descriptor`: An   instance.
-- `iosurface`: An   instance.
-- `plane`: A plane within i  the method sets as the texture’s underlying data.
+- `descriptor`: An [`MTLTextureDescriptor`](mtltexturedescriptor.md) instance.
+- `iosurface`: An `IOSurfaceRef` instance.
+- `plane`: A plane within i`osurface` the method sets as the texture’s underlying data.
 
 ## See Also
 

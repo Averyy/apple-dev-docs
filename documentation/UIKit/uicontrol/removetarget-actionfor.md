@@ -26,9 +26,9 @@ Although the `action` parameter is not considered when stopping the delivery of 
 
 ## Parameters
 
-- `target`: A target object registered with the control. Specify   to remove the specified control events for all target objects.
-- `action`: A selector identifying a registered action method. You may specify   for this parameter.
-- `controlEvents`: A bitmask specifying the control events that you want to remove for the specified   object. For a list of possible constants, see  .
+- `target`: A target object registered with the control. Specify `nil` to remove the specified control events for all target objects.
+- `action`: A selector identifying a registered action method. You may specify `nil` for this parameter.
+- `controlEvents`: A bitmask specifying the control events that you want to remove for the specified `target` object. For a list of possible constants, see [`UIControl.Event`](uicontrol/event.md).
 
 ## See Also
 

@@ -47,7 +47,7 @@ When adding your scene to an [`ARView`](arview.md), instead of adding it directl
 
 Since the scene root and physics origin are siblings in this hierarchy, you can apply separate transforms to each of them. Doing so allows you to adjust the scale of the physics calculations to increase the size of the tiny objects relative to the physics origin. To do that, scale the physics origin by the inverse of the desired amount of change. To calculate the inverse, divide `1.0` by the desired scale value. For example, if you want to scale up a physics simulation so that it behaves as if it’s 10 times larger, apply a scale transform to the physics origin of `0.1`.
 
-Adjusting the scale of the physics origin increases the size of the simulated entities  for the physics simulation. It has no effect on how RealityKit renders the entities.
+Adjusting the scale of the physics origin increases the size of the simulated entities *only* for the physics simulation. It has no effect on how RealityKit renders the entities.
 
 ## See Also
 

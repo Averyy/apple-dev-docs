@@ -23,7 +23,7 @@ This sample code project shows how to provide an exceptional accessibility exper
 
 ##### Get Started
 
-To see the sample app in action, use Xcode to build and run the app on your iOS device. Be sure to turn on VoiceOver, which you can do from Settings under .
+To see the sample app in action, use Xcode to build and run the app on your iOS device. Be sure to turn on VoiceOver, which you can do from Settings under *General > Accessibility > VoiceOver*.
 
 ##### Improve Carousel Navigation
 
@@ -106,9 +106,9 @@ override var accessibilityViewIsModal: Bool {
 
 ##### Group Labels
 
-When referring to separate elements belonging in the same context, it’s essential to convey a single set of information about the items. For example, the sample app displays a title label, such as , and a value label, such as the dog’s name. These are two separate elements— and —but they are part of the same context.
+When referring to separate elements belonging in the same context, it’s essential to convey a single set of information about the items. For example, the sample app displays a title label, such as *NAME*, and a value label, such as the dog’s name. These are two separate elements—*title* and *value*—but they are part of the same context.
 
-To place these two elements into the same accessibility context, use [`UIAccessibilityElement`](https://developer.apple.com/documentation/UIKit/UIAccessibilityElement) to encapsulate the information from each label. For example, the sample project’s [`DogStatsView`](https://developer.apple.comx-source-tag://DogStatsView) groups each  and  label combination into accessibility elements. The project also sets the [`accessibilityLabel`](https://developer.apple.com/documentation/UIKit/UIAccessibilityElement/accessibilityLabel) with the text from the two [`UILabel`](https://developer.apple.com/documentation/UIKit/UILabel) objects, and sets [`accessibilityFrameInContainerSpace`](https://developer.apple.com/documentation/UIKit/UIAccessibilityElement/accessibilityFrameInContainerSpace) to a frame containing both labels. This allows VoiceOver to recognize each  label pairing as a single accessibility element. In turn, the user hears the title and value each time a  accessibility element has focus.
+To place these two elements into the same accessibility context, use [`UIAccessibilityElement`](https://developer.apple.com/documentation/UIKit/UIAccessibilityElement) to encapsulate the information from each label. For example, the sample project’s [`DogStatsView`](https://developer.apple.comx-source-tag://DogStatsView) groups each *title* and *value* label combination into accessibility elements. The project also sets the [`accessibilityLabel`](https://developer.apple.com/documentation/UIKit/UIAccessibilityElement/accessibilityLabel) with the text from the two [`UILabel`](https://developer.apple.com/documentation/UIKit/UILabel) objects, and sets [`accessibilityFrameInContainerSpace`](https://developer.apple.com/documentation/UIKit/UIAccessibilityElement/accessibilityFrameInContainerSpace) to a frame containing both labels. This allows VoiceOver to recognize each *title-value* label pairing as a single accessibility element. In turn, the user hears the title and value each time a *title-value* accessibility element has focus.
 
 ```swift
 var elements = [UIAccessibilityElement]()

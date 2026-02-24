@@ -22,7 +22,7 @@ Changes to the alpha value of an object are animatable.
 
 ## Parameters
 
-- `alpha`: A floating-point number in the range   to  , where   represents totally transparent and   represents totally opaque.
+- `alpha`: A floating-point number in the range `0.0` to `1.0`, where `0.0` represents totally transparent and `1.0` represents totally opaque.
 
 ## See Also
 

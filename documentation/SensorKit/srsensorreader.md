@@ -26,7 +26,7 @@ When an app calls [`startRecording()`](srsensorreader/startrecording().md), the 
 
 To fetch a sensor’s data, pass a request object to the [`fetch(_:)`](srsensorreader/fetch(_:).md) function. [`SRFetchRequest`](srfetchrequest.md) specifies a time range that defines the age of the data, and a device, such as a phone or a watch, from which to collect the data. Use [`fetchDevices()`](srsensorreader/fetchdevices().md) to list the available devices, and use the time convenience-functions in Defining the Time Range to specify the time range.
 
-If the fetch query succeeds, the framework notifies the delegate with [`sensorReader(_:didCompleteFetch:)`](srsensorreaderdelegate/sensorreader(_:didcompletefetch:).md). The delegate receives sensor data in the form of  from [`sensorReader(_:fetching:didFetchResult:)`](srsensorreaderdelegate/sensorreader(_:fetching:didfetchresult:).md). A fetch result’s [`sample`](srfetchresult/sample.md) type is different depending on the particular sensor for the reader. For a mapping of sensors to their samples, see [`Sample types`](srfetchresult/sample#Sample-types.md).
+If the fetch query succeeds, the framework notifies the delegate with [`sensorReader(_:didCompleteFetch:)`](srsensorreaderdelegate/sensorreader(_:didcompletefetch:).md). The delegate receives sensor data in the form of *samples* from [`sensorReader(_:fetching:didFetchResult:)`](srsensorreaderdelegate/sensorreader(_:fetching:didfetchresult:).md). A fetch result’s [`sample`](srfetchresult/sample.md) type is different depending on the particular sensor for the reader. For a mapping of sensors to their samples, see [`Sample types`](srfetchresult/sample#Sample-types.md).
 
 ## Topics
 

@@ -18,7 +18,7 @@ class FSResource
 
 `FSResource` is a base class to represent the various possible sources of data for a file system. These range from dedicated storage devices like hard drives and flash storage to network connections, and beyond. Subclasses define behavior specific to a given kind of resource, such as [`FSBlockDeviceResource`](fsblockdeviceresource.md) for disk partition (IOMedia) file systems. These file systems are typical disk file systems such as HFS, APFS, ExFAT, ext2fs, or NTFS.
 
-A resource’s type also determines its life cycle. Resources based on block storage devices come into being when the system probes the media underlying the volumes and container. Other kinds of resources, like those based on URLs, might have different life cycles. For example, a resource based on a `file://` URL might iniitalize when a person uses the “Connect to server” command in the macOS Finder.
+A resource’s type also determines its life cycle. Resources based on block storage devices come into being when the system probes the media underlying the volumes and container. Other kinds of resources, like those based on URLs, might have different life cycles. For example, a resource based on a `file://` URL might initialize when a person uses the “Connect to server” command in the macOS Finder.
 
 ##### Proxying Resources
 

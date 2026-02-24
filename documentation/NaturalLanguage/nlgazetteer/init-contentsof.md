@@ -26,7 +26,7 @@ Use this initializer to create an [`NLGazetteer`](nlgazetteer.md) from an `.mlmo
 
 ## Parameters
 
-- `url`: The location of the .  file that contains a gazetteer.
+- `url`: The location of the .`mlmodel` file that contains a gazetteer.
 
 ## See Also
 

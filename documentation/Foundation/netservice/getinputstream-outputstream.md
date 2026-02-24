@@ -27,12 +27,12 @@ func getInputStream(_ inputStream: UnsafeMutablePointer<InputStream?>?, outputSt
 
 After this method is called, no delegate callbacks are called by the receiver.
 
-> **Note**:  If automatic reference counting is not used, the input and output streams returned through the parameters are , which means that you are responsible for releasing them to avoid memory leaks.
+> **Note**:  If automatic reference counting is not used, the input and output streams returned through the parameters are *retained*, which means that you are responsible for releasing them to avoid memory leaks.
 
 ## Parameters
 
-- `inputStream`: Upon return, the input stream for the receiver. Pass   if you do not need this stream.
-- `outputStream`: Upon return, the output stream for the receiver. Pass   if you do not need this stream.
+- `inputStream`: Upon return, the input stream for the receiver. Pass `NULL` if you do not need this stream.
+- `outputStream`: Upon return, the output stream for the receiver. Pass `NULL` if you do not need this stream.
 
 ## See Also
 

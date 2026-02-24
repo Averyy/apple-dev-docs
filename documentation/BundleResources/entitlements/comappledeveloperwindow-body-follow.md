@@ -8,6 +8,12 @@ A Boolean value indicating whether your app’s windows will follow the person.
 **Availability**:
 - visionOS 26.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 When a person installs an app that has the Follow Mode for Windows entitlement configured, all standard windows on Vision Pro (windows which include all standard chrome, such as the grabber bar and close ‘x’ button) across all apps on the system have the Follow Mode permission enabled on them.  When Follow Mode is enabled for a window, it locks itself in place relative to the person’s body. When the person then moves to a new location, the window will follow along with them, and then “land” itself in the same place relative to their body which is same behavior when enabling Follow Mode for that window.

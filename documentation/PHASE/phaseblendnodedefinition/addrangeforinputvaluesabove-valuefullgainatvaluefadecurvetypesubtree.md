@@ -22,7 +22,7 @@ func addRangeForInputValuesAbove(value: Double, fullGainAtValue: Double, fadeCur
 ## Parameters
 
 - `value`: The value below which the child node blends.
-- `fullGainAtValue`: A threshold such that the node applies a fade curve to the child node’s gain when the blend parameter is between   and this value.
+- `fullGainAtValue`: A threshold such that the node applies a fade curve to the child node’s gain when the blend parameter is between `value` and this value.
 - `fadeCurveType`: An option that determines a rate of change for the child node’s gain over the fade range.
 - `subtree`: A child node to blend.
 

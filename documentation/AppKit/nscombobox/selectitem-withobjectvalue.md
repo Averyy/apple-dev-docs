@@ -20,7 +20,7 @@ This method logs a warning if [`usesDataSource`](nscombobox/usesdatasource.md) r
 
 ## Parameters
 
-- `object`: The object to select in the pop-up list.  Objects are considered equal if they have the same id or if   returns  .
+- `object`: The object to select in the pop-up list.  Objects are considered equal if they have the same id or if `isEqual:` returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

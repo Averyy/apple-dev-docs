@@ -19,7 +19,7 @@ init(target: Any?, action: Selector)
 
 ## Parameters
 
-- `target`: An optional  .
+- `target`: An optional `NSSliderAccessory`.
 
 ## See Also
 

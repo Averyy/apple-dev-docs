@@ -29,11 +29,14 @@ After instantiating the query, call the [`HKHealthStore`](hkhealthstore.md) clas
 
 ## Parameters
 
-- `type`: The type of sample to search for. This query supports all sample types. Specifically, you can pass any concrete subclass of the   class (the  ,  ,  ,  and   classes).
-- `predicate`: A predicate that filters the samples returned by the query.  Pass   to receive all the new samples of the specified type.
+- `type`: The type of sample to search for. This query supports all sample types. Specifically, you can pass any concrete subclass of the [`HKSampleType`](hksampletype.md) class (the [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md),  and [`HKCorrelationType`](hkcorrelationtype.md) classes).
+- `predicate`: A predicate that filters the samples returned by the query.  Pass `nil` to receive all the new samples of the specified type.
 - `anchor`: The anchor returned by the previous anchored object query. The anchor value corresponds to the last sample that was returned by the previous anchored object query. The new query returns only objects newer than that sample.
-- `limit`: The maximum number of samples received by the query. To receive all of the new samples, pass  .
-- `handler`: A block that is called when the query finishes executing. This block takes the following parameters:
+- `limit`: The maximum number of samples received by the query. To receive all of the new samples, pass [`HKObjectQueryNoLimit`](hkobjectquerynolimit.md).
+- `handler`: A block that is called when the query finishes executing. This block takes the following parameters: - **query**: A reference to the query calling this block.
+- **results**: An array containing the samples returned by this query, or `nil` if an error occurred.
+- **newAnchor**: A value corresponding to the last sample in the results array. Subsequent anchor queries can use this value to receive only the samples that have been saved and the objects that have been deleted since this query completed.
+- **error**: If an error occurs, this parameter contains an object describing the error; otherwise, it is `nil`.
 
 ## Topics
 

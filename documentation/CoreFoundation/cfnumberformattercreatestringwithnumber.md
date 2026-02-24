@@ -26,7 +26,7 @@ A new string that represents the given number in the specified format. Returns `
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `formatter`: The number formatter to use.
 - `number`: The number from which to create a string representation.
 

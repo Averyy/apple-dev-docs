@@ -25,8 +25,8 @@ This method will fail when the game session’s player limit has already been re
 
 ## Parameters
 
-- `state`: The   to be assigned to the player.
-- `completionHandler`: A block that is called after the connect state has been set.
+- `state`: The `GKConnectionState` to be assigned to the player.
+- `completionHandler`: A block that is called after the connect state has been set. - **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is nil. See `GameKit Constants` for a list of error codes specific to GameKit.
 
 ## See Also
 

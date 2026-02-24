@@ -15,7 +15,7 @@ typealias FFCommandFlag = UInt32
 
 #### Discussion
 
-Command flags for .
+Command flags for **FFDeviceSendForceFeedbackCommand()**.
 
 ## See Also
 

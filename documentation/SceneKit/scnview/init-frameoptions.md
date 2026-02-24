@@ -27,7 +27,7 @@ An initialized view object, or `nil` if the object couldn’t be created.
 ## Parameters
 
 - `frame`: The frame rectangle for the view, measured in points and specified in the coordinate system of its superview.
-- `options`: Rendering options for the view. See  .
+- `options`: Rendering options for the view. See [`SCNView`](scnview.md).
 
 ## See Also
 

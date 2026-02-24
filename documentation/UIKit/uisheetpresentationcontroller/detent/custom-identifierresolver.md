@@ -20,7 +20,7 @@ Creates a custom detent for a sheet by computing its value according to the prop
 ## Parameters
 
 - `identifier`: An identifier for the detent. Specify a unique identifier for each custom detent for a sheet. If you don’t specify an identifier, the system generates a random identifier.
-- `resolver`: Don’t set any properties on   during the execution of this closure.
+- `resolver`: A closure for resolving the detent value with an input of type [`UISheetPresentationControllerDetentResolutionContext`](uisheetpresentationcontrollerdetentresolutioncontext.md). The value you return from this closure is a height within the safe area of the sheet. For example, return `200` for a detent with a height of `200` plus [`safeAreaInsets`](uiview/safeareainsets.md).[`bottom`](uiedgeinsets/bottom.md) when the sheet is edge-attached, or `200` when the sheet is floating. Return `nil` to specify that the detent is inactive according to the provided context. If the closure depends on any external inputs, call [`invalidateDetents()`](uisheetpresentationcontroller/invalidatedetents().md) on the sheet when the external inputs change. Don’t set any properties on [`UISheetPresentationController`](uisheetpresentationcontroller.md) during the execution of this closure.
 
 ## See Also
 

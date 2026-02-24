@@ -30,8 +30,8 @@ Call the [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewitherror(_:_:).md)
 
 ## Parameters
 
-- `trust`: The trust management object for the certificate that has been evaluated.  Use the   function to create a trust management object and the   function to evaluate the certificate chain.
-- `ix`: The index number of the requested certificate. Index numbers start at 0 for the leaf certificate and end at the anchor (or the last certificate if no anchor was found). Use the   function to get the total number of certificates in the chain.
+- `trust`: The trust management object for the certificate that has been evaluated.  Use the [`SecTrustCreateWithCertificates(_:_:_:)`](sectrustcreatewithcertificates(_:_:_:).md) function to create a trust management object and the [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewitherror(_:_:).md) function to evaluate the certificate chain.
+- `ix`: The index number of the requested certificate. Index numbers start at 0 for the leaf certificate and end at the anchor (or the last certificate if no anchor was found). Use the [`SecTrustGetCertificateCount(_:)`](sectrustgetcertificatecount(_:).md) function to get the total number of certificates in the chain.
 
 
 ---

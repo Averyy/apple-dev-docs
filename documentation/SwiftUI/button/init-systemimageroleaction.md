@@ -27,9 +27,9 @@ This initializer creates a [`Label`](label.md) view on your behalf, and treats t
 
 ## Parameters
 
-- `titleKey`: The key for the button’s localized title, that describes   the purpose of the button’s  .
+- `titleKey`: The key for the button’s localized title, that describes the purpose of the button’s `action`.
 - `systemImage`: The name of the image resource to lookup.
-- `role`: An optional semantic role describing the button. A value of    means that the button doesn’t have an assigned role.
+- `role`: An optional semantic role describing the button. A value of `nil` means that the button doesn’t have an assigned role.
 - `action`: The action to perform when the user triggers the button.
 
 ## See Also

@@ -34,8 +34,8 @@ It’s safe for multiple threads to call this method on different tracks at the 
 ## Parameters
 
 - `sampleBuffer`: The sample buffer to be appended.
-- `outDecodeTime`: A pointer to a   structure to receive the decode time in the media of the first sample appended from the sample buffer. Pass   if the information is not needed.
-- `outPresentationTime`: A pointer to a   structure to receive the presentation time in the media of the first sample appended from the sample buffer. Pass   if the information is not needed.
+- `outDecodeTime`: A pointer to a [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) structure to receive the decode time in the media of the first sample appended from the sample buffer. Pass `NULL` if the information is not needed.
+- `outPresentationTime`: A pointer to a [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) structure to receive the presentation time in the media of the first sample appended from the sample buffer. Pass `NULL` if the information is not needed.
 
 ## See Also
 

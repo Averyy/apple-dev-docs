@@ -22,7 +22,7 @@ Removes and returns the anchor at the specified position.
 
 ## Parameters
 
-- `index`: The position of the anchor to remove.   Use a valid index of the collection.
+- `index`: The position of the anchor to remove. Use a valid index of the collection.
 
 ## See Also
 

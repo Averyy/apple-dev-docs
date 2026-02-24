@@ -24,7 +24,7 @@ When you send this message, the device initiates the registration process with A
 
 ## Parameters
 
-- `types`: A bit mask specifying the types of notifications the app accepts. See   for valid bit-mask values.
+- `types`: A bit mask specifying the types of notifications the app accepts. See [`NSApplication.RemoteNotificationType`](nsapplication/remotenotificationtype.md) for valid bit-mask values.
 
 ## See Also
 

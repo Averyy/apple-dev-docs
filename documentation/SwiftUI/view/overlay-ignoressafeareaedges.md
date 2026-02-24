@@ -67,8 +67,8 @@ If you want to specify a [`View`](view.md) or a stack of views as the overlay ra
 
 ## Parameters
 
-- `style`: An instance of a type that conforms to   that   SwiftUI layers in front of the modified view.
-- `edges`: The set of edges for which to ignore safe area insets   when adding the overlay. The default value is  .   Specify an empty set to respect safe area insets on all edges.
+- `style`: An instance of a type that conforms to [`ShapeStyle`](shapestyle.md) that SwiftUI layers in front of the modified view.
+- `edges`: The set of edges for which to ignore safe area insets when adding the overlay. The default value is [`all`](edge/set/all.md). Specify an empty set to respect safe area insets on all edges.
 
 ## See Also
 

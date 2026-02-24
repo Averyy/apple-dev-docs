@@ -26,7 +26,7 @@ Use an [`MTLAccelerationStructureCommandEncoder`](mtlaccelerationstructurecomman
 
 ## Parameters
 
-- `descriptor`: An   instance that configures the   the method returns.
+- `descriptor`: An [`MTLAccelerationStructurePassDescriptor`](mtlaccelerationstructurepassdescriptor.md) instance that configures the [`MTLAccelerationStructureCommandEncoder`](mtlaccelerationstructurecommandencoder.md) the method returns.
 
 ## See Also
 

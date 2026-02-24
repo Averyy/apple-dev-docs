@@ -29,9 +29,9 @@ This function cannot be called with a session created with a [`VTDecompressionOu
 ## Parameters
 
 - `session`: The decompression session.
-- `sampleBuffer`: A   object containing one or more video frames.
-- `decodeFlags`: If both flags are clear, the decompression shall complete and your output callback function will be called before   returns. If either flag is set,   may return before the output callback function is called.
-- `infoFlagsOut`: Pass   if you do not want to receive this information.
+- `sampleBuffer`: A [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) object containing one or more video frames.
+- `decodeFlags`: A bitfield of directives to the decompression session and decoder. The [`kVTDecodeFrame_EnableAsynchronousDecompression`](vtdecodeframeflags/kvtdecodeframe_enableasynchronousdecompression.md) bit indicates whether the video decoder may decompress the frame asynchronously. The [`kVTDecodeFrame_EnableTemporalProcessing`](vtdecodeframeflags/kvtdecodeframe_enabletemporalprocessing.md) bit indicates whether the decoder may delay calls to the output callback so as to enable processing in temporal (display) order. If both flags are clear, the decompression shall complete and your output callback function will be called before `VTDecompressionSessionDecodeFrame` returns. If either flag is set, `VTDecompressionSessionDecodeFrame` may return before the output callback function is called.
+- `infoFlagsOut`: A [`VTEncodeInfoFlags`](vtencodeinfoflags.md) pointer to receive information about the decode operation. The [`asynchronous`](vtdecodeinfoflags/asynchronous.md) bit may be set if the decode is (or was) running asynchronously. The [`frameDropped`](vtdecodeinfoflags/framedropped.md) bit may be set if the frame was dropped (synchronously). Pass `NULL` if you do not want to receive this information.
 - `completionHandler`: The closure to be called when decoding the frame is completed. If the VTDecompressionSessionDecodeFrame call returns an error, the closure will not be called.
 
 ## See Also

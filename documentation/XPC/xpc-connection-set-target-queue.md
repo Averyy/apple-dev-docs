@@ -33,7 +33,7 @@ Despite this seeming inconsistency, the XPC runtime guarantees that, when the ta
 ## Parameters
 
 - `connection`: The connection object which is to be manipulated.
-- `targetq`: The GCD queue to which the event handler block will be submitted. This parameter may be  , in which case the connection’s target queue will be the default target queue of  , defined as  .
+- `targetq`: The GCD queue to which the event handler block will be submitted. This parameter may be `NULL`, in which case the connection’s target queue will be the default target queue of `libdispatch`, defined as `DISPATCH_TARGET_QUEUE_DEFAULT`.
 
 ## See Also
 

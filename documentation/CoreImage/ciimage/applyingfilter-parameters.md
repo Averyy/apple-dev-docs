@@ -36,8 +36,8 @@ Calling this method is equivalent to the following sequence of steps:
 
 ## Parameters
 
-- `filterName`: The name of the filter to apply, as used when creating a   instance with the   method.
-- `params`: A dictionary whose key-value pairs are set as input values to the filter. Each key is a constant that specifies the name of an input parameter for the filter, and the corresponding value is the value for that parameter. See   for built-in filters and their allowed parameters.
+- `filterName`: The name of the filter to apply, as used when creating a [`CIFilter`](cifilter-swift.class.md) instance with the [`init(name:)`](cifilter-swift.class/init(name:).md) method.
+- `params`: A dictionary whose key-value pairs are set as input values to the filter. Each key is a constant that specifies the name of an input parameter for the filter, and the corresponding value is the value for that parameter. See [`Core Image Filter Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/uid/TP40004346) for built-in filters and their allowed parameters.
 
 ## See Also
 

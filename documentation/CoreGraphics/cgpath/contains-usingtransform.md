@@ -31,8 +31,8 @@ A point is contained in a path if it would be inside the painted region when the
 ## Parameters
 
 - `point`: The point to check.
-- `rule`: The rule for determining which areas to treat as the interior of the path. Defaults to the   rule if not specified.
-- `transform`: An affine transform to apply to the point before checking for containment in the path. Defaults to the   transform if not specified.
+- `rule`: The rule for determining which areas to treat as the interior of the path. Defaults to the [`CGPathFillRule.winding`](cgpathfillrule/winding.md) rule if not specified.
+- `transform`: An affine transform to apply to the point before checking for containment in the path. Defaults to the [`CGAffineTransformIdentity`](cgaffinetransformidentity.md) transform if not specified.
 
 ## See Also
 

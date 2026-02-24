@@ -31,10 +31,10 @@ This initializer does not generate texel data; the [`MDLNoiseTexture`](mdlnoiset
 
 ## Parameters
 
-- `smoothness`: A value that indicates how similar neighboring texels will be in the resulting texture. The value should be between   and  . A value of   generates a smooth surface.
-- `name`: The   property for the new texture object.
+- `smoothness`: A value that indicates how similar neighboring texels will be in the resulting texture. The value should be between `0.0` and `1.0`. A value of `1.0` generates a smooth surface.
+- `name`: The [`name`](mdlnamed/name.md) property for the new texture object.
 - `textureDimensions`: The texel dimensions (width and height) of the texture image.
-- `channelEncoding`: The data format for each channel value per texel—for example, 8-bit integer or 32-bit floating point. For possible values, see  .
+- `channelEncoding`: The data format for each channel value per texel—for example, 8-bit integer or 32-bit floating point. For possible values, see [`MDLTextureChannelEncoding`](mdltexturechannelencoding.md).
 
 ## See Also
 

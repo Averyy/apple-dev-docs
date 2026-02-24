@@ -28,9 +28,9 @@ Use this method when you want to prioritize the view’s constraints when determ
 
 ## Parameters
 
-- `targetSize`: The size that you prefer for the view. To obtain a view that is as small as possible, specify the constant  . To obtain a view that is as large as possible, specify the constant  .
-- `horizontalFittingPriority`: The priority for horizontal constraints. Specify   to get a width that is as close as possible to the width value of  .
-- `verticalFittingPriority`: The priority for vertical constraints. Specify   to get a height that is as close as possible to the height value of  .
+- `targetSize`: The size that you prefer for the view. To obtain a view that is as small as possible, specify the constant [`layoutFittingCompressedSize`](uiview/layoutfittingcompressedsize.md). To obtain a view that is as large as possible, specify the constant [`layoutFittingExpandedSize`](uiview/layoutfittingexpandedsize.md).
+- `horizontalFittingPriority`: The priority for horizontal constraints. Specify [`fittingSizeLevel`](uilayoutpriority/fittingsizelevel.md) to get a width that is as close as possible to the width value of `targetSize`.
+- `verticalFittingPriority`: The priority for vertical constraints. Specify [`fittingSizeLevel`](uilayoutpriority/fittingsizelevel.md) to get a height that is as close as possible to the height value of `targetSize`.
 
 ## See Also
 

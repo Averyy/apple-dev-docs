@@ -28,8 +28,8 @@ This property cannot be modified once the query has been executed. If you assign
 ## Parameters
 
 - `query`: A reference to the query calling this block.
-- `updatedActivitySummaries`: An array containing the new or modified summaries, or   if an error occurred.
-- `error`: If an error occurs, this parameter contains an object describing the error; otherwise, it is  .
+- `updatedActivitySummaries`: An array containing the new or modified summaries, or `nil` if an error occurred.
+- `error`: If an error occurs, this parameter contains an object describing the error; otherwise, it is `nil`.
 
 
 ---

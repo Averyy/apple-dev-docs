@@ -24,7 +24,7 @@ func CGImageSourceUpdateDataProvider(_ isrc: CGImageSource, _ provider: CGDataPr
 
 - `isrc`: The image source to modify.
 - `provider`: The new data provider. The new data provider must provide all the previous data supplied to the image source and any additional new data.
-- `final`: A Boolean value that indicates whether the   parameter provides the complete data set. Specify   if the data is complete or   if it isn’t.
+- `final`: A Boolean value that indicates whether the `provider` parameter provides the complete data set. Specify `true` if the data is complete or `false` if it isn’t.
 
 ## See Also
 

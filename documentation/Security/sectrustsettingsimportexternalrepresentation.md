@@ -25,8 +25,8 @@ Trust settings for a certificate are associated with the hash of the certificate
 
 ## Parameters
 
-- `domain`: The trust settings domain into which you want to import trust settings. For possible values, see  .
-- `trustSettings`: An external representation of the trust settings (created by the   function) that you want to import.
+- `domain`: The trust settings domain into which you want to import trust settings. For possible values, see [`SecTrustSettingsDomain`](sectrustsettingsdomain.md).
+- `trustSettings`: An external representation of the trust settings (created by the [`SecTrustSettingsCreateExternalRepresentation(_:_:)`](sectrustsettingscreateexternalrepresentation(_:_:).md) function) that you want to import.
 
 
 ---

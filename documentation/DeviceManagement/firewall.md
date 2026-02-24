@@ -85,6 +85,15 @@ If more than one profile contains this payload, the system uses the most restric
 - [object Firewall.ApplicationsItem](firewall/applicationsitem.md)
   A dictionary of details for apps.
 
+## Properties
+
+- `AllowSigned` (boolean): If `true`, the system allows built-in software to receive incoming connections. Available in macOS 12.3 and later. > **Note**:  The system ensures that `AllowSigned` always has a value. If missing from the payload, the system sets it to `true`.
+- `AllowSignedApp` (boolean): If `true`, the system allows downloaded signed software to receive incoming connections. Available in macOS 12.3 and later. > **Note**:  The system ensures that `AllowSignedApp` always has a value. If missing from the payload, the system sets it to `true`.
+- `Applications` ([Firewall.ApplicationsItem]): The list of apps with connections that the firewall controls.
+- `BlockAllIncoming` (boolean): If `true`, the system enables blocking all incoming connections.
+- `EnableFirewall` (boolean) *(required)*: If `true`, the system enables the firewall.
+- `EnableStealthMode` (boolean): If `true`, the system enables stealth mode.
+
 ## See Also
 
 - [object Cellular](cellular.md)

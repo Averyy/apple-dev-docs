@@ -36,7 +36,7 @@ Be sure to set the input option [`nodePreserveWhitespace`](xmlnode/options/nodep
 
 ## Parameters
 
-- `comments`:   to preserve comments,   otherwise.
+- `comments`: [`true`](https://developer.apple.com/documentation/Swift/true) to preserve comments, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

@@ -21,7 +21,7 @@ var itemIdentifiers: [NSTouchBarItem.Identifier] { get }
 
 If the user has not customized the bar, this property’s value is the same as that of the [`defaultItemIdentifiers`](nstouchbar/defaultitemidentifiers.md) property.
 
-The system  archive this property.
+The system *does not* archive this property.
 
 ## See Also
 

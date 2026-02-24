@@ -25,7 +25,7 @@ To draw a cropped portion of a paper data model, modify the `bounds` of the pape
 ## Parameters
 
 - `context`: The graphics context to render into.
-- `frame`: The rectangle (in the coordinate system of the graphics context) in which   to draw the paper.
+- `frame`: The rectangle (in the coordinate system of the graphics context) in which to draw the paper.
 - `options`: The rendering options.
 
 

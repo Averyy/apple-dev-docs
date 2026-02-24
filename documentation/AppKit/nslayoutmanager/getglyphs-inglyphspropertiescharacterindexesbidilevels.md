@@ -26,9 +26,9 @@ Each pointer passed in should either be `NULL` or else point to sufficient memor
 
 - `glyphRange`: The range of glyphs to fill in.
 - `glyphBuffer`: On output, the sequence of glyphs in the given glyph range.
-- `props`: If not  , on output, the glyph properties corresponding to the filled-in glyphs.
-- `charIndexBuffer`: If not  , on output, the indexes of the original characters corresponding to the given glyph range. Note that a glyph at index 1 is not necessarily mapped to the character at index 1, since a glyph may be for a ligature or accent.
-- `bidiLevelBuffer`: If not  , on output, the direction of each glyph for bidirectional text. The values range from 0 to 61 as defined by Unicode Standard Annex #9. An even value means the glyph goes left-to-right, and an odd value means the glyph goes right-to-left.
+- `props`: If not `NULL`, on output, the glyph properties corresponding to the filled-in glyphs.
+- `charIndexBuffer`: If not `NULL`, on output, the indexes of the original characters corresponding to the given glyph range. Note that a glyph at index 1 is not necessarily mapped to the character at index 1, since a glyph may be for a ligature or accent.
+- `bidiLevelBuffer`: If not `NULL`, on output, the direction of each glyph for bidirectional text. The values range from 0 to 61 as defined by Unicode Standard Annex #9. An even value means the glyph goes left-to-right, and an odd value means the glyph goes right-to-left.
 
 ## See Also
 

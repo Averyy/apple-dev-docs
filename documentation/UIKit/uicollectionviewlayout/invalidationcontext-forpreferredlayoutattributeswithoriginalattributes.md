@@ -30,7 +30,7 @@ Subclasses can override this method and use it to perform additional configurati
 
 ## Parameters
 
-- `preferredAttributes`: The layout attributes returned by the cell’s   method.
+- `preferredAttributes`: The layout attributes returned by the cell’s [`preferredLayoutAttributesFitting(_:)`](uicollectionreusableview/preferredlayoutattributesfitting(_:).md) method.
 - `originalAttributes`: The attributes that the layout object originally suggested for the cell.
 
 ## See Also

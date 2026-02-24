@@ -24,7 +24,7 @@ Override this method and use it to configure your driver for the specified media
 
 ## Parameters
 
-- `mediaType`: The media type to use for network communication. This type must be one that you declared previous when calling the   method.
+- `mediaType`: The media type to use for network communication. This type must be one that you declared previous when calling the [`ReportAvailableMediaTypes`](iousernetworkethernet/reportavailablemediatypes.md) method.
 
 ## See Also
 

@@ -22,9 +22,9 @@ static var linkPresentationMetadata: UTType { get }
 
 #### Discussion
 
- com.apple.linkpresentation.metadata
+**UTI:** com.apple.linkpresentation.metadata
 
- public.data
+**conforms to:** public.data
 
 
 ---

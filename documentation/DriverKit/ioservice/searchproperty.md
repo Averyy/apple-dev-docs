@@ -28,9 +28,9 @@ This method searches for the property in the current service first, followed by 
 ## Parameters
 
 - `name`: The name of the property as a c-string.
-- `plane`: The name of the registry plane to search. The method uses this value only when you include   in the   parameter. If you don’t include that option, you may specify   for this parameter.
-- `options`: Options to use during the search. Specify   to expand the search to include all parent services. If you don’t specify  , this method looks for the property only in the current service.
-- `property`: If the specified property is found, this method puts the value in the provided variable; you are responsible for releasing that value. If the specified property isn’t found, this method sets the value of your variable to  .
+- `plane`: The name of the registry plane to search. The method uses this value only when you include [`kIOServiceSearchPropertyParents`](kioservicesearchpropertyparents.md) in the `options` parameter. If you don’t include that option, you may specify `NULL` for this parameter.
+- `options`: Options to use during the search. Specify [`kIOServiceSearchPropertyParents`](kioservicesearchpropertyparents.md) to expand the search to include all parent services. If you don’t specify [`kIOServiceSearchPropertyParents`](kioservicesearchpropertyparents.md), this method looks for the property only in the current service.
+- `property`: A variable in which to store the value of the property. It is a programmer error to specify `NULL` for this parameter. If the specified property is found, this method puts the value in the provided variable; you are responsible for releasing that value. If the specified property isn’t found, this method sets the value of your variable to `NULL`.
 
 ## See Also
 

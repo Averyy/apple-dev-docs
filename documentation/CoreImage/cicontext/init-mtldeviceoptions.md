@@ -30,7 +30,7 @@ Use this method to choose a specific Metal device for rendering when a system co
 ## Parameters
 
 - `device`: The Metal device object to use for rendering.
-- `options`: A dictionary that contains options for creating a   object. You can pass any of the keys defined in   along with the appropriate value.
+- `options`: A dictionary that contains options for creating a [`CIContext`](cicontext.md) object. You can pass any of the keys defined in [`CIContextOption`](cicontextoption.md) along with the appropriate value.
 
 ## See Also
 

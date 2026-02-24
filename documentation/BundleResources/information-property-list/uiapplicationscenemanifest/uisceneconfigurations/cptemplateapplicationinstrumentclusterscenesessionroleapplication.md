@@ -9,6 +9,10 @@ Configurations for scenes you use to display navigation content on a CarPlay Ins
 - iOS 15.4+
 - iPadOS 15.4+
 
+
+
+**Type**: dictionary 
+
 #### Discussion
 
 After setting [`CPSupportsInstrumentClusterNavigationScene`](information-property-list/uiapplicationscenemanifest/cpsupportsinstrumentclusternavigationscene.md) to `YES`, use this key to specify a scene configuration when displaying navigation content in the CarPlay Instrument Cluster.

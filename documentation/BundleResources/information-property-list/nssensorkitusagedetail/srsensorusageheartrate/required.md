@@ -9,6 +9,12 @@ A Boolean value that indicates whether your app’s study relies on this sensor.
 - iOS 17.0+
 - iPadOS 17.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 The system checks the value for this property when the user declines the access prompt for this sensor. If you set the value of this property to `true`, the system forgoes installing your app. If `false`, the system withholds the sensor’s data but installs your app assuming your study can continue at a limited capacity without the sensor’s data.

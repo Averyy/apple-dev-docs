@@ -27,7 +27,7 @@ For details about the types returned for each pattern, see [`UIPasteboard.Detect
 
 - `patterns`: The patterns to detect on the pasteboard.
 - `itemSet`: An index set with each integer value identifying a pasteboard item positionally in the pasteboard. Pass in nil to request all pasteboard items.
-- `completionHandler`: A closure that the system invokes after detecting patterns on the pasteboard. The closure receives a   instance that contains either an array of dictionaries with the patterns and the associated values found on the pasteboard or an error if detection failed. If   contains an array, the index of each element in the array corresponds to the pasteboard item index specified in  .
+- `completionHandler`: A closure that the system invokes after detecting patterns on the pasteboard. The closure receives a `Result` instance that contains either an array of dictionaries with the patterns and the associated values found on the pasteboard or an error if detection failed. If `Result` contains an array, the index of each element in the array corresponds to the pasteboard item index specified in `itemSet`.
 
 ## See Also
 

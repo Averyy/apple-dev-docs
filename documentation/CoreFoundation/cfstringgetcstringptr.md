@@ -33,7 +33,7 @@ Whether or not this function returns a valid pointer or `NULL` depends on many f
 ## Parameters
 
 - `theString`: The string whose contents you wish to access.
-- `encoding`: The string encoding to which the character contents of   should be converted. The encoding must specify an 8-bit encoding.
+- `encoding`: The string encoding to which the character contents of `theString` should be converted. The encoding must specify an 8-bit encoding.
 
 ## See Also
 

@@ -28,7 +28,7 @@ func stopRecording(withOutput url: URL) async throws
 ## Parameters
 
 - `url`: The output URL.
-- `completionHandler`: The completion handler the system calls when the movie is written to the specified output URL. If an error occured, the system passes the completion handler an   that indicates the reason the operation failed.
+- `completionHandler`: The completion handler the system calls when the movie is written to the specified output URL. If an error occured, the system passes the completion handler an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) that indicates the reason the operation failed.
 
 ## See Also
 

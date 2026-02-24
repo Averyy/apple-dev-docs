@@ -33,8 +33,8 @@ You cannot use this initializer to publish a service. This initializer passes an
 
 ## Parameters
 
-- `domain`: You can also use a   object to obtain a list of possible domains in which you can discover and resolve services.
-- `type`:  must contain both the service type and transport layer information. To ensure that the mDNS responder searches for services, as opposed to hosts, prefix both the service name and transport layer name with an underscore character (”_”). For example, to search for an HTTP service on TCP, you would use the type string “ ”. Note that the period character at the end of the string, which indicates that the domain name is an absolute name, is required.
+- `domain`: The domain for the service. To resolve in the default domains, pass in an empty string (`@""`). To limit resolution to the local domain, use `@"local."`. If you are creating this object to resolve a service whose information your app stored previously, you should set this to the domain in which the service was originally discovered. You can also use a `NSNetServiceBrowser` object to obtain a list of possible domains in which you can discover and resolve services.
+- `type`: The network service type. `type` must contain both the service type and transport layer information. To ensure that the mDNS responder searches for services, as opposed to hosts, prefix both the service name and transport layer name with an underscore character (”_”). For example, to search for an HTTP service on TCP, you would use the type string “`_http._tcp.`”. Note that the period character at the end of the string, which indicates that the domain name is an absolute name, is required.
 - `name`: The name of the service to resolve.
 
 ## See Also

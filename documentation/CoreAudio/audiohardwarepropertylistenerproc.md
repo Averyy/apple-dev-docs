@@ -26,7 +26,7 @@ Note that the same functionality is provided by AudioObjectPropertyListenerProc.
 ## Parameters
 
 - `inPropertyID`: The AudioHardwarePropertyID of the property that changed.
-- `inClientData`: A pointer to client data established when the listener proc was registered   with the AudioSystemObject.
+- `inClientData`: A pointer to client data established when the listener proc was registered with the AudioSystemObject.
 
 ## See Also
 

@@ -20,8 +20,8 @@ init(_ title: Text, id: String, @ViewBuilder content: () -> Content)
 
 ## Parameters
 
-- `title`: The   view to use in the utility window’s title bar.   Provide a title that describes the purpose of the utility window.
-- `id`: An unique string identifier that you can use to open the utility   window.
+- `title`: The [`Text`](text.md) view to use in the utility window’s title bar. Provide a title that describes the purpose of the utility window.
+- `id`: An unique string identifier that you can use to open the utility window.
 - `content`: The view content to display in the utility window.
 
 

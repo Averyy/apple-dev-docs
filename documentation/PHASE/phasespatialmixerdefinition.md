@@ -27,7 +27,7 @@ class PHASESpatialMixerDefinition
 
 This class enables the app to define a relationship between a source and listener in six degrees of freedom: orientation (roll, pitch, yaw) and a 3D position (x, y, z).
 
-The framework plays back an audio source with  (see [`distanceModelParameters`](phasespatialmixerdefinition/distancemodelparameters.md)), direct path transmission effects and any combination of environmental effects, such as reverb (see [`PHASESpatialPipeline`](phasespatialpipeline.md)), and directivity (see [`listenerDirectivityModelParameters`](phasespatialmixerdefinition/listenerdirectivitymodelparameters.md)). 
+The framework plays back an audio source with *distance modeling* (see [`distanceModelParameters`](phasespatialmixerdefinition/distancemodelparameters.md)), direct path transmission effects and any combination of environmental effects, such as reverb (see [`PHASESpatialPipeline`](phasespatialpipeline.md)), and directivity (see [`listenerDirectivityModelParameters`](phasespatialmixerdefinition/listenerdirectivitymodelparameters.md)). 
 
 The result enables an app to implement directive point or omnidirectional sound sources — with or without direction, respectively — and volumetric sources with a defined shape.
 

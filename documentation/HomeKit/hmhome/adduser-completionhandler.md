@@ -18,7 +18,8 @@ func addUser() async throws -> HMUser
 
 ## Parameters
 
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **user**: The user that was added to the home.
+- **error**: `nil` on success; otherwise, error object indicating the reason for failure. `error.userInfo[HMUserFailedAccessoriesKey]` contains more information in case of failure. See [`HMUserFailedAccessoriesKey`](hmuserfailedaccessorieskey.md) for more details.
 
 ## See Also
 

@@ -35,7 +35,7 @@ If you don’t implement this method, you must provide scene-configuration data 
 ## Parameters
 
 - `application`: The singleton app object.
-- `connectingSceneSession`: The session object associated with the scene. This object contains the initial configuration data loaded from the app’s   file, if any.
+- `connectingSceneSession`: The session object associated with the scene. This object contains the initial configuration data loaded from the app’s `Info.plist` file, if any.
 - `options`: System-specific options for configuring the scene.
 
 ## See Also

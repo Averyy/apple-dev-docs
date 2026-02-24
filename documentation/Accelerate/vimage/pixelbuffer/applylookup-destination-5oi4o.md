@@ -84,7 +84,7 @@ The images below show an example grayscale source image on the left and the tran
 
 ## Parameters
 
-- `lookupTable`: A lookup table that contains 256   values.
+- `lookupTable`: A lookup table that contains 256 [`Pixel_16U`](pixel_16u.md) values.
 - `destination`: The destination pixel buffer.
 
 ## See Also

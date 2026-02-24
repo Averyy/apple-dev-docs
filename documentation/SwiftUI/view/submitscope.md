@@ -41,7 +41,7 @@ Form {
 
 ## Parameters
 
-- `isBlocking`: A Boolean that indicates whether this scope is   actively blocking submission triggers from reaching higher submission   actions.
+- `isBlocking`: A Boolean that indicates whether this scope is actively blocking submission triggers from reaching higher submission actions.
 
 ## See Also
 

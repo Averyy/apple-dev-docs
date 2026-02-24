@@ -22,7 +22,7 @@ The authentication is controlled using the provided authentication context. When
 ## Parameters
 
 - `title`: Title shown below the authentication view.
-- `context`:    instance to control the authentication.
+- `context`: `LAContext`  instance to control the authentication.
 
 
 ---

@@ -37,12 +37,12 @@ for t = 0 to T-1
 
 ## Parameters
 
-- `source`: A tensor that contains the source data   with the data layout [T,N,I].   In case   and   then the layout is [T,N,H] and   for   and   the layout is [T,N,2H].
-- `recurrentWeight`: A tensor containing the recurrent weights  . For   the layout is [2,H,H] and otherwise it is [H,H].
-- `inputWeight`: A tensor containing the input weights matrix   - optional, if missing the operation assumes a diagonal unit-matrix.   For   the layout is [2H,I] and otherwise it is [H,I].
-- `bias`: A tensor containing the bias   - optional, if missing the operation assumes zeroes. For   the layout is [2H] and otherwise it is [H].
-- `initState`: The initial internal state of the RNN   - optional, if missing the operation assumes zeroes. For   the layout is [N,2H] and otherwise it is [N,H].
-- `mask`: A tensor containing the mask   - optional, if missing the operation assumes ones. This is useful for dropout support.
+- `source`: A tensor that contains the source data `x[t]` with the data layout [T,N,I]. In case `inputWeight = nil` and `bidirectional = NO` then the layout is [T,N,H] and for `inputWeight = nil` and `bidirectional = YES` the layout is [T,N,2H].
+- `recurrentWeight`: A tensor containing the recurrent weights `R`. For `bidirectional` the layout is [2,H,H] and otherwise it is [H,H].
+- `inputWeight`: A tensor containing the input weights matrix `W` - optional, if missing the operation assumes a diagonal unit-matrix. For `bidirectional` the layout is [2H,I] and otherwise it is [H,I].
+- `bias`: A tensor containing the bias `b` - optional, if missing the operation assumes zeroes. For `bidirectional` the layout is [2H] and otherwise it is [H].
+- `initState`: The initial internal state of the RNN `h[-1]` - optional, if missing the operation assumes zeroes. For `bidirectional` the layout is [N,2H] and otherwise it is [N,H].
+- `mask`: A tensor containing the mask `m` - optional, if missing the operation assumes ones. This is useful for dropout support.
 - `descriptor`: A descriptor that defines the parameters for the RNN operation.
 - `name`: The name for the operation.
 

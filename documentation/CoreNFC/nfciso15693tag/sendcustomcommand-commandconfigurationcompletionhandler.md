@@ -22,7 +22,7 @@ Send a manufacturer dependent custom command using command code range from 0xA0 
 ## Parameters
 
 - `commandConfiguration`: Configuration for the Manufacturer Custom Command.
-- `completionHandler`: Completion handler called when the operation is completed.  error is nil if operation succeeds.   A @link NFCISO15693TagResponseErrorKey @link/ in NSError userInfo dictionary is returned when the tag   responded to the command with an error, and the error code value is defined in ISO15693-3 specification.
+- `completionHandler`: Completion handler called when the operation is completed.  error is nil if operation succeeds. A @link NFCISO15693TagResponseErrorKey @link/ in NSError userInfo dictionary is returned when the tag responded to the command with an error, and the error code value is defined in ISO15693-3 specification.
 
 
 ---

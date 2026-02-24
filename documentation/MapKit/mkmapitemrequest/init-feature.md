@@ -19,7 +19,7 @@ convenience init(feature: MapFeature)
 
 ## Parameters
 
-- `feature`: The   to use to initialize the map item request.
+- `feature`: The [`MapFeature`](mapfeature.md) to use to initialize the map item request.
 
 ## See Also
 

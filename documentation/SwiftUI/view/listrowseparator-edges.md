@@ -42,7 +42,7 @@ To change the color of a row separators, use [`listRowSeparatorTint(_:edges:)`](
 ## Parameters
 
 - `visibility`: The visibility of this row’s separators.
-- `edges`: The set of row edges for which this preference applies.   The list style might already decide to not display separators for   some edges, typically the top edge. The default is   .
+- `edges`: The set of row edges for which this preference applies. The list style might already decide to not display separators for some edges, typically the top edge. The default is [`all`](verticaledge/set/all.md).
 
 ## See Also
 

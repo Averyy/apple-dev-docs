@@ -18,7 +18,7 @@ Setter on the device object that tells the host that the stream formats for the 
 
 ## Parameters
 
-- `in_wants_stream_formats_restored`: Bool value indicating if the host should or should not restore the stream formats for the device   A value of false indicates that the stream formats for the device should NOT be saved/restored   A value of true indicated that the stream formats for the device should be saved/restored
+- `in_wants_stream_formats_restored`: Bool value indicating if the host should or should not restore the stream formats for the device A value of false indicates that the stream formats for the device should NOT be saved/restored A value of true indicated that the stream formats for the device should be saved/restored
 
 
 ---

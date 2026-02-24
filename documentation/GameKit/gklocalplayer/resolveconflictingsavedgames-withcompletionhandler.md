@@ -30,7 +30,7 @@ Implement the [`player(_:hasConflictingSavedGames:)`](gksavedgamelistener/player
 
 - `conflictingSavedGames`: The saved games that contain the conflicts.
 - `data`: The correct game data to save.
-- `handler`: For example, if there are five saved game files with the same filename, but only three are in  , this parameter contains the three saved games you provide and the two saved games GameKit finds.
+- `handler`: The block that this method calls when it completes the request. The block receives the following parameters: - **savedGames**: The resolved saved games that you include in `conflictingSavedGames`, and any other saved games GameKit finds with conflicts that you don’t include in `conflictingSavedGames`. For example, if there are five saved game files with the same filename, but only three are in `conflictingSavedGames`, this parameter contains the three saved games you provide and the two saved games GameKit finds. - **error**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

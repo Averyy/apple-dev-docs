@@ -26,7 +26,7 @@ If the store action for the given color attachment was set to [`MTLStoreAction.u
 
 ## Parameters
 
-- `storeAction`: The desired store action for the color attachment. This value can’t be  .
+- `storeAction`: The desired store action for the color attachment. This value can’t be [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md).
 - `colorAttachmentIndex`: The index of the color attachment.
 
 ## See Also

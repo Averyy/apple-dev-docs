@@ -30,8 +30,8 @@ This function creates an empty (that is, content-less) CFMutableString object. Y
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new string. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `maxLength`: The maximum number of Unicode characters that can be stored by the returned string. Pass   if there should be no character limit. Note that initially the string still has a length of  ; this parameter simply specifies what the maximum size is. CFMutableString might try to optimize its internal storage by paying attention to this value.
+- `alloc`: The allocator to use to allocate memory for the new string. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `maxLength`: The maximum number of Unicode characters that can be stored by the returned string. Pass `0` if there should be no character limit. Note that initially the string still has a length of `0`; this parameter simply specifies what the maximum size is. CFMutableString might try to optimize its internal storage by paying attention to this value.
 
 ## See Also
 

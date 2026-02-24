@@ -8,6 +8,10 @@ A Boolean value that indicates whether to match the driver against block storage
 **Availability**:
 - macOS 12.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Add this entitlement to every BlockStorageDeviceDriverKit driver you create. You must request this entitlement from Apple. For information about how to request the entitlement, see [`System Extensions and DriverKit`](https://developer.apple.comhttps://developer.apple.com/system-extensions/).

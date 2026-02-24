@@ -27,7 +27,7 @@ A new layer data structure.
 ## Parameters
 
 - `data`: Pointer to layer values (weights, bias), layout and size are specific to each layer.
-- `data_type`: Storage data type for the values stored in  .
+- `data_type`: Storage data type for the values stored in [`data`](bnnslayerdata/data.md).
 - `data_scale`: Conversion scale for values, used for integer data types only, ignored for indexed and float data types.
 - `data_bias`: Conversion bias for values, used for integer data types only, ignored for indexed and float data types.
 - `data_table`: Conversion table (256 values) for indexed floating point data, used for indexed data types only.

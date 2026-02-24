@@ -22,7 +22,7 @@ func setValue(_ value: Any?, forKey key: String)
 
 ## Parameters
 
-- `value`: The value for the property identified by  .
+- `value`: The value for the property identified by `key`.
 - `key`: The name of one of the properties of the set’s members.
 
 ## See Also

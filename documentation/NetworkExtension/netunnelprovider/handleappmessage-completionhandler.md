@@ -28,7 +28,7 @@ Use this method to communicate information between the Tunnel Provider and the T
 ## Parameters
 
 - `messageData`: The message data sent by the tunnel provider extension’s containing app.
-- `completionHandler`: A block to be executed by the Tunnel Provider when it is finished handling the message. It may be nil, in which case the containing app does not expect a reply. The provider can send information back to the containing app via the   parameter.
+- `completionHandler`: A block to be executed by the Tunnel Provider when it is finished handling the message. It may be nil, in which case the containing app does not expect a reply. The provider can send information back to the containing app via the `responseData` parameter.
 
 
 ---

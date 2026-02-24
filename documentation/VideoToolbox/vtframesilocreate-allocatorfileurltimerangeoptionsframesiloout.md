@@ -27,11 +27,11 @@ Call [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRe
 
 ## Parameters
 
-- `allocator`: An allocator for the frame silo.  Pass   to use the default allocator.
-- `fileURL`: The URL of the backing file for the   object. If you pass   for  , VideoToolbox will pick a unique temporary file name.
+- `allocator`: An allocator for the frame silo.  Pass `NULL` to use the default allocator.
+- `fileURL`: The URL of the backing file for the `VTFrameSilo` object. If you pass `NULL` for `fileURL`, VideoToolbox will pick a unique temporary file name.
 - `timeRange`: The valid time range for the frame silo. Must be valid for progress reporting.
-- `options`: Reserved, pass  .
-- `frameSiloOut`: Points to a   to receive the newly created object. Call   to release your retain on the created VTFrameSilo object when you are done with it.
+- `options`: Reserved, pass `NULL`.
+- `frameSiloOut`: Points to a [`VTFrameSilo`](vtframesilo.md) to receive the newly created object. Call `CFRelease` to release your retain on the created VTFrameSilo object when you are done with it.
 
 
 ---

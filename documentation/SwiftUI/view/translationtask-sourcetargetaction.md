@@ -20,9 +20,9 @@ func translationTask(source: Locale.Language? = nil, target: Locale.Language? = 
 
 #### Discussion
 
-This task provides an instance of `TranslationSession` to use to perform translations.
+This task provides an instance of [`TranslationSession`](https://developer.apple.com/documentation/Translation/TranslationSession)  to use to perform translations.
 
-If you need to perform new translations again with the same `source` and `target` language, it’s better to use [`translationTask(_:action:)`](View/translationTask(_:action:).md) and call [`invalidate()`](https://developer.apple.com/documentation/Translation/TranslationSession/Configuration/invalidate()).
+To perform new translations with the same `source` and `target` language, use [`translationTask(_:action:)`](View/translationTask(_:action:).md) and call [`invalidate()`](https://developer.apple.com/documentation/Translation/TranslationSession/Configuration/invalidate()).
 
 For example, you can translate when content appears:
 
@@ -45,7 +45,7 @@ For example, you can translate when content appears:
                          let response = try await session.translate(sourceText)
                          targetText = response.targetText
                      } catch {
-                         // code to handle error
+                         // Handle any errors.
                      }
                  }
              }
@@ -53,13 +53,13 @@ For example, you can translate when content appears:
  }
 ```
 
-The system throws a `fatalError` if you use a `TranslationSession` instance after the attached view disappears or if you use it after changing the `source` or `target` parameters. This causes the `action` closure to provide a new `TranslationSession` instance.
+The system throws a `fatalError` if you use a [`TranslationSession`](https://developer.apple.com/documentation/Translation/TranslationSession) instance after the attached view disappears or if you use it after changing the `source` or `target` parameters. This causes the `action` closure to provide a new instance.
 
 ## Parameters
 
-- `source`: The language the source content is in. If this is  , the session tries to   identify the language and prompts the person to pick the source language if it’s unclear. All   text translated within the session should be in the same source language. Changing this   value cancels previous tasks and creates a new session to perform translations again.
-- `target`: The language to translate content into. A   value means the session picks a   target according to the person’s   and the  .   Changing this value cancels previous tasks and creates a new one to perform   translations again.
-- `action`: A closure that runs when the view first appears and when   or    change.  It provides a   instance to perform   one or multiple translations.
+- `source`: The language the source content is in. If this is `nil`, the session tries to identify the language and prompts the person to pick the source language if it’s unclear. All text translated within the session should be in the same source language. Changing this value cancels previous tasks and creates a new session to perform translations again.
+- `target`: The language to translate content into. A `nil` value means the session picks a target according to the person’s `Locale.preferredLanguages` and the `source`. Changing this value cancels previous tasks and creates a new one to perform translations again.
+- `action`: A closure that runs when the view first appears and when `source` or `target` change.  It provides a [`TranslationSession`](https://developer.apple.com/documentation/Translation/TranslationSession) instance to perform one or multiple translations.
 
 ## See Also
 

@@ -31,8 +31,8 @@ This method is used by the layout mechanism and should be invoked only during ty
 ## Parameters
 
 - `fragmentRect`: The rectangle of the line fragment.
-- `glyphRange`: The range of glyphs to be associated with  .
-- `usedRect`: The portion of   that actually contains glyphs or other marks that are drawn (including the text container’s line fragment padding. Must be equal to or contained within  .
+- `glyphRange`: The range of glyphs to be associated with `fragmentRect`.
+- `usedRect`: The portion of `fragmentRect` that actually contains glyphs or other marks that are drawn (including the text container’s line fragment padding. Must be equal to or contained within `fragmentRect`.
 
 ## See Also
 

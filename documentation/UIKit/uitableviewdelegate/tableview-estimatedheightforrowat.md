@@ -33,7 +33,7 @@ Providing an estimate the height of rows can improve the user experience when lo
 ## Parameters
 
 - `tableView`: The table view requesting this information.
-- `indexPath`: An index path that locates a row in  .
+- `indexPath`: An index path that locates a row in `tableView`.
 
 ## See Also
 

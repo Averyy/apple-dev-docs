@@ -25,7 +25,7 @@ Call this function to disconnect the mouse from the cursor. When you call this f
 
 ## Parameters
 
-- `connected`: Pass   to connect the mouse and cursor; otherwise, pass  .
+- `connected`: Pass [`true`](https://developer.apple.com/documentation/Swift/true) to connect the mouse and cursor; otherwise, pass [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

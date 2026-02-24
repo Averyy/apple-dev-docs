@@ -33,7 +33,7 @@ If `url` is a directory, this method recursively creates file wrappers for each 
 ## Parameters
 
 - `url`: URL of the file-system node the file wrapper is to represent.
-- `options`: Option flags for reading the node located at  . See   for possible values.
+- `options`: Option flags for reading the node located at `url`. See [`FileWrapper.ReadingOptions`](filewrapper/readingoptions.md) for possible values.
 
 ## See Also
 

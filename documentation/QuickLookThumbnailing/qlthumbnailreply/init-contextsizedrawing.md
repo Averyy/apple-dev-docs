@@ -28,8 +28,8 @@ Use this initializer if you’re drawing the thumbnail using [`Core Graphics`](h
 
 ## Parameters
 
-- `contextSize`: The system scales the context size to the   class’s   property. For example, if you pass a   of   to this method, the size of the context is  .
-- `drawingBlock`: Return   if you successfully drew the thumbnail into the context. Return   otherwise.
+- `contextSize`: The desired size of the context that you pass to the drawing block. Set this value as close as possible to the [`QLFileThumbnailRequest`](qlfilethumbnailrequest.md) class’s [`maximumSize`](qlfilethumbnailrequest/maximumsize.md) value and greater than or equal to its [`minimumSize`](qlfilethumbnailrequest/minimumsize.md) value. This parameter indicates the preferred size of the thumbnail. The context’s width or its height matches the `width` or `height` of the [`maximumSize`](qlfilethumbnailrequest/maximumsize.md), or, ideally, both. The system scales the context size to the [`QLFileThumbnailRequest`](qlfilethumbnailrequest.md) class’s [`scale`](qlfilethumbnailrequest/scale.md) property. For example, if you pass a `contextSize` of `CGSize(10, 10)` to this method, the size of the context is `(scale * 10, scale * 10)`.
+- `drawingBlock`: The context for drawing the thumbnail. The block takes the following parameter: - **context**: A context of type [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) that uses the coordinate system provided by [`Core Graphics`](https://developer.apple.com/documentation/CoreGraphics). Return [`true`](https://developer.apple.com/documentation/Swift/true) if you successfully drew the thumbnail into the context. Return [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

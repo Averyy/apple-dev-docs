@@ -20,8 +20,8 @@ init(mapItem: MKMapItem?, displaysMap: Bool)
 
 ## Parameters
 
-- `mapItem`: The map item to display, or   to indicate the item is loading.
-- `displaysMap`: Specify   to display an inline map with the place information. Specify   only if the application is already displaying a map view elsewhere.
+- `mapItem`: The map item to display, or `nil` to indicate the item is loading.
+- `displaysMap`: Specify `true` to display an inline map with the place information. Specify `false` only if the application is already displaying a map view elsewhere.
 
 ## See Also
 

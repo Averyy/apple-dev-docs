@@ -20,7 +20,7 @@ This method’s default behavior is to pass this message on to the selected cell
 
 ## Parameters
 
-- `notification`: The   notification.
+- `notification`: The [`textDidChangeNotification`](nscontrol/textdidchangenotification.md) notification.
 
 ## See Also
 

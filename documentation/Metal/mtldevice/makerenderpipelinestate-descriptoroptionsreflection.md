@@ -30,9 +30,9 @@ Use the graphics-rendering pipeline state to configure a render pass by calling 
 
 ## Parameters
 
-- `descriptor`: An   instance.
-- `options`: An   instance that represents the reflection information you want the method to generate.
-- `reflection`: Pass   in either language when you don’t need reflection data.   Otherwise on return, if the method completes successfully,   it assigns an   instance to the pointee,   which contains the details about the function arguments.
+- `descriptor`: An [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) instance.
+- `options`: An [`MTLPipelineOption`](mtlpipelineoption.md) instance that represents the reflection information you want the method to generate.
+- `reflection`: In Swift, an optional pointer to an [`MTLAutoreleasedRenderPipelineReflection`](mtlautoreleasedrenderpipelinereflection.md) optional. In Objective-C, a pointer to an [`MTLAutoreleasedRenderPipelineReflection`](mtlautoreleasedrenderpipelinereflection.md) instance. Pass `nil` in either language when you don’t need reflection data. Otherwise on return, if the method completes successfully, it assigns an [`MTLRenderPipelineReflection`](mtlrenderpipelinereflection.md) instance to the pointee, which contains the details about the function arguments.
 
 ## See Also
 

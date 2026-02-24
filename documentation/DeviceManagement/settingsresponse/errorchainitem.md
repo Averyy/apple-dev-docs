@@ -19,6 +19,13 @@ A dictionary that describes an error chain item.
 object SettingsResponse.ErrorChainItem
 ```
 
+## Properties
+
+- `ErrorCode` (integer) *(required)*: The error code.
+- `ErrorDomain` (string) *(required)*: The error domain.
+- `LocalizedDescription` (string) *(required)*: A description of the error in the device’s localized language.
+- `USEnglishDescription` (string): A description of the error in U.S. English.
+
 ## See Also
 
 - [object SettingsResponse.Settings](settingsresponse/settings-data.dictionary.md)

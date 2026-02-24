@@ -23,8 +23,8 @@ init(url: URL, cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy, ti
 ## Parameters
 
 - `url`: The URL for the request.
-- `cachePolicy`: The cache policy for the request. The default is  .
-- `timeoutInterval`: The timeout interval for the request. The default is  . See the commentary for the   for more information on timeout intervals.
+- `cachePolicy`: The cache policy for the request. The default is [`NSURLRequest.CachePolicy.useProtocolCachePolicy`](nsurlrequest/cachepolicy-swift.enum/useprotocolcachepolicy.md).
+- `timeoutInterval`: The timeout interval for the request. The default is `60.0`. See the commentary for the [`timeoutInterval`](nsurlrequest/timeoutinterval.md) for more information on timeout intervals.
 
 
 ---

@@ -29,12 +29,12 @@ Calculates `alpha*x*conjg(x') + A` and stores the result in `A`.
 ## Parameters
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
-- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are   or  .
-- `N`: Order of matrix   and the number of elements in vector  .
-- `ALPHA`: Scaling factor that vector   is multiplied by.
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
-- `A`: Matrix  . Overwritten by results on return.
+- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are `'U'` or `'L'`.
+- `N`: Order of matrix `A` and the number of elements in vector `x`.
+- `ALPHA`: Scaling factor that vector `x` is multiplied by.
+- `X`: Vector `x`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
+- `A`: Matrix `A`. Overwritten by results on return.
 
 ## See Also
 

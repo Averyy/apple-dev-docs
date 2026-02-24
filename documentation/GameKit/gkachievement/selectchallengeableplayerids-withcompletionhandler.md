@@ -24,8 +24,9 @@ When this method is called, it creates a new background task to handle the reque
 
 ## Parameters
 
-- `playerIDs`: An array of   objects containing a list of players. The list of players is used to find those players that are eligible to earn the achievement.
-- `completionHandler`: The block receives the following parameters:
+- `playerIDs`: An array of `NSString` objects containing a list of players. The list of players is used to find those players that are eligible to earn the achievement.
+- `completionHandler`: A block to be called when the download is completed. The block receives the following parameters: - ***challengeablePlayerIDs***: An array of player identifiers representing the players in the original array that are able to complete the challenge. If an error occurred, this parameter may be non-`nil`, in which case the array holds whatever achievement information Game Kit was able to fetch.
+- ***error***: If an error occurred, this object describes the error. If the operation completed successfully, this value is `nil`.
 
 ## See Also
 

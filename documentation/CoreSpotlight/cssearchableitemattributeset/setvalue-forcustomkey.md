@@ -20,7 +20,7 @@ func setValue(_ value: (any NSSecureCoding)?, forCustomKey key: CSCustomAttribut
 
 ## Parameters
 
-- `value`: The value of the custom attribute. Values must be common property list types, such as  ,  ,  ,  , or  , or an array of property list types.
+- `value`: The value of the custom attribute. Values must be common property list types, such as [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull), [`NSData`](https://developer.apple.com/documentation/Foundation/NSData), or [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate), or an array of property list types.
 - `key`: The custom attribute key.
 
 ## See Also

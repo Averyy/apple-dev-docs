@@ -6,7 +6,7 @@ You can decode and apply Apple’s HDR gain map to your own images.
 
 #### Overview
 
-You can apply Apple high dynamic range (HDR) effect to digital photography images without using Apple SDKs. You compute the Apple HDR gain map from the image’s auxiliary data and then apply it to the image. The  is an 8-bit, single-channel luminance map that’s stored with an image.
+You can apply Apple high dynamic range (HDR) effect to digital photography images without using Apple SDKs. You compute the Apple HDR gain map from the image’s auxiliary data and then apply it to the image. The *Apple HDR gain map* is an 8-bit, single-channel luminance map that’s stored with an image.
 
 ##### Extract the Existing Hdr Gain Map From the Image
 

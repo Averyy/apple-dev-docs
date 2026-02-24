@@ -32,7 +32,7 @@ The properties on the children, such as mass or friction, are ignored. Only the 
 
 ## Parameters
 
-- `bodies`: An array of   objects. The objects must be volume-based physics bodies. (You may not use a compound body created using this method in the array.)
+- `bodies`: An array of [`SKPhysicsBody`](skphysicsbody.md) objects. The objects must be volume-based physics bodies. (You may not use a compound body created using this method in the array.)
 
 
 ---

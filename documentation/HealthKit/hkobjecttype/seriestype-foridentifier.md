@@ -29,7 +29,7 @@ This method returns an instance of the [`HKSeriesType`](hkseriestype.md) concret
 
 ## Parameters
 
-- `identifier`: A series type identifier. In iOS 11 and watchOS 4, there is only one series type identifier:  .
+- `identifier`: A series type identifier. In iOS 11 and watchOS 4, there is only one series type identifier: [`HKWorkoutRouteTypeIdentifier`](hkworkoutroutetypeidentifier.md).
 
 ## See Also
 

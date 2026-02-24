@@ -26,7 +26,7 @@ Returns a [`MapCamera`](mapcamera.md) with the framing region and pitch you spec
 
 ## Parameters
 
-- `item`: The   to frame.
+- `item`: The [`MKMapItem`](mkmapitem.md) to frame.
 - `allowPitch`: A Boolean value that indicates whether you can pitch the camera to frame the content.
 
 ## See Also

@@ -23,6 +23,11 @@ typealias AUInputHandler = (UnsafeMutablePointer<AudioUnitRenderActionFlags>, Un
 
 The block takes the following parameters:
 
+- **actionFlags**: The pointer to the action flags.
+- **timestamp**: The HAL time at which the input data will be rendered. If there is a sample rate conversion or time compression/expansion downstream, the sample time will not be valid.
+- **frameCount**: The number of sample frames of input available.
+- **inputBusNumber**: The index of the input bus from which input is available.
+
 The input data is obtained by calling the render block of the audio unit. The audio unit is not provided since it is not safe to message an Objective-C object in a real-time context.
 
 ## See Also

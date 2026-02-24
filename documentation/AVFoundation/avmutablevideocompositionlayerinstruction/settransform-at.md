@@ -25,7 +25,7 @@ Sets a fixed transform to apply from the specified time until the next time at w
 
 ## Parameters
 
-- `transform`: The transform to be applied at  .
+- `transform`: The transform to be applied at `time`.
 - `time`: A time value within the time range of the composition instruction.
 
 ## See Also

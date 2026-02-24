@@ -21,8 +21,8 @@ typealias CompletionHandler = (NSAttributedString?, [NSAttributedString.Document
 ## Parameters
 
 - `attributedString`: The attributed string, or nil if the method couldn’t create the string.
-- `attributes`: A dictionary containing document-level attributes. This parameter is   if the document doesn’t have any attributes.
-- `error`: An error object if an error occurred, or   if the method returned the string successfully.
+- `attributes`: A dictionary containing document-level attributes. This parameter is `nil` if the document doesn’t have any attributes.
+- `error`: An error object if an error occurred, or `nil` if the method returned the string successfully.
 
 ## See Also
 

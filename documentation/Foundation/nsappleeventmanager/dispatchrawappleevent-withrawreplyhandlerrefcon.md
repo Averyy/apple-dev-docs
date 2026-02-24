@@ -21,7 +21,7 @@ The `theReply` parameter always specifies a reply Apple event, never `nil`. Howe
 
 The `handlerRefcon` parameter provides 4 bytes of data to the handler; a common use for this parameter is to pass a pointer to additional data.
 
-This method is primarily intended for Cocoa’s internal use. Note that  an event means routing an event to an appropriate handler in the current application. You cannot use this method to  an event to other applications.
+This method is primarily intended for Cocoa’s internal use. Note that *dispatching* an event means routing an event to an appropriate handler in the current application. You cannot use this method to *send* an event to other applications.
 
 
 ---

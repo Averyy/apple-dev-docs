@@ -16,8 +16,8 @@ func setEnabled(_ enabled: Bool, forSegment segment: Int)
 
 ## Parameters
 
-- `enabled`:   to enable the segment; otherwise,   to disable it.
-- `segment`: The index of the segment you want to enable or disable. This method raises an exception ( ) if the index is out of bounds.
+- `enabled`: [`true`](https://developer.apple.com/documentation/Swift/true) to enable the segment; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) to disable it.
+- `segment`: The index of the segment you want to enable or disable. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if the index is out of bounds.
 
 ## See Also
 

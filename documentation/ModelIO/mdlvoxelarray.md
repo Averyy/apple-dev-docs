@@ -3,7 +3,7 @@
 **Framework**: Model I/O  
 **Kind**: class
 
-A model of a 3D object’s solid volume as a collection of , or cubic units.
+A model of a 3D object’s solid volume as a collection of *voxels*, or cubic units.
 
 **Availability**:
 - iOS 9.0+

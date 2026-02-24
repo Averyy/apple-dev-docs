@@ -21,7 +21,7 @@ An initialized positional specifier with the position specified by `position` re
 
 ## Parameters
 
-- `position`: The position for the new specifier relative to  .
+- `position`: The position for the new specifier relative to `specifier`.
 - `specifier`: The reference specifier.
 
 ## See Also

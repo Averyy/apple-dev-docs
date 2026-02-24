@@ -20,7 +20,7 @@ static void Log(const char *message, IODispatchLogFunction output);
 ## Parameters
 
 - `message`: A C string that contains the message to add to the log file.
-- `output`: The function address to use for logging the content. The address of   is suitable for use.
+- `output`: The function address to use for logging the content. The address of [`IOLog`](iolog.md) is suitable for use.
 
 ## See Also
 

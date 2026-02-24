@@ -28,7 +28,7 @@ Consumable in-app purchases will always pass `nil` to `action`. For auto-renewab
 
 ## Parameters
 
-- `productID`: The product ID to get the entitlement for. The task restarts whenever this   parameter changes.
+- `productID`: The product ID to get the entitlement for. The task restarts whenever this parameter changes.
 - `priority`: The task priority to use when creating the task.
 - `action`: The action to perform when the task’s state changes.
 

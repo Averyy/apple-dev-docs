@@ -31,10 +31,10 @@ This method is the designated initializer.
 
 ## Parameters
 
-- `domain`: You can also use a   object to obtain a list of possible domains in which you can publish your service.
-- `type`:  must contain both the service type and transport layer information. To ensure that the mDNS responder searches for services, as opposed to hosts, prefix both the service name and transport layer name with an underscore character (”_”). For example, to search for an HTTP service on TCP, you would use the type string “ ”. Note that the period character at the end of the string, which indicates that the domain name is an absolute name, is required.
-- `name`: The name by which the service is identified to the network. The name must be unique. If you pass the empty string ( ), the system automatically advertises your service using the computer name as the service name.
-- `port`: If your app is listening for connections on its own, the value of   must be a port number acquired by your application for the service.
+- `domain`: The domain for the service. To use the default registration domains, pass in an empty string (`@""`). To limit registration to the local domain, use `@"local."`. You can also use a `NSNetServiceBrowser` object to obtain a list of possible domains in which you can publish your service.
+- `type`: The network service type. `type` must contain both the service type and transport layer information. To ensure that the mDNS responder searches for services, as opposed to hosts, prefix both the service name and transport layer name with an underscore character (”_”). For example, to search for an HTTP service on TCP, you would use the type string “`_http._tcp.`”. Note that the period character at the end of the string, which indicates that the domain name is an absolute name, is required.
+- `name`: The name by which the service is identified to the network. The name must be unique. If you pass the empty string (`@""`), the system automatically advertises your service using the computer name as the service name.
+- `port`: The port on which the service is published. If you specify the `NSNetServiceListenForConnections` flag, you may pass zero (`0`), in which case the service automatically allocates an arbitrary (ephemeral) port for your service. When the delegate’s [`netServiceDidPublish(_:)`](netservicedelegate/netservicedidpublish(_:).md) is called, you can determine the actual port chosen by calling the service object’s [`NetService`](netservice.md) method or accessing the corresponding property. If your app is listening for connections on its own, the value of `port` must be a port number acquired by your application for the service.
 
 ## See Also
 

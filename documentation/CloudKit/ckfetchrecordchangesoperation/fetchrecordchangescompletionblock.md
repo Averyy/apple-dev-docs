@@ -24,6 +24,10 @@ var fetchRecordChangesCompletionBlock: ((CKServerChangeToken?, Data?, (any Error
 
 The block returns no value and takes the following parameters:
 
+- **`serverChangeToken`**: The new change token from the server. You can store this token locally and use it during subsequent fetch operations to limit the results to records that the system changes after executing the operation.
+- **`clientChangeToken`**: The most recent client change token from the device. If the change token isn’t the most recent change token you provided, the server might not have received the associated changes.
+- **`operationError`**: An error object that contains information about a problem, or `nil` if the system successfully retrieves the changes.
+
 When implementing this block, check the [`moreComing`](ckfetchrecordchangesoperation/morecoming.md) property of the operation object to verify that the server was able to deliver all results. If that property is [`true`](https://developer.apple.com/documentation/Swift/true), you must create another operation object using the value in the `serverChangeToken` parameter to fetch any remaining changes.
 
 The operation object executes this block only once at the conclusion of the operation. It executes after all individual change blocks, but before the operation’s completion block. The block executes serially with respect to the other progress blocks of the operation.

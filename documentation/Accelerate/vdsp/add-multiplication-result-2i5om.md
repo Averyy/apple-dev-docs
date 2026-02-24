@@ -56,9 +56,9 @@ The following code shows an example of using this function:
 
 ## Parameters
 
-- `multiplication`: A tuple that contains the vectors   and   in  .
-- `vector`: The input scalar value   in  .
-- `result`: The output vector   in  .
+- `multiplication`: A tuple that contains the vectors `A` and `B` in `D = (A * B) + C`.
+- `vector`: The input scalar value `C` in `D = (A * B) + C`.
+- `result`: The output vector `D` in `D = (A * B) + C`.
 
 ## See Also
 

@@ -15,6 +15,10 @@ The response to a storefront request.
 object StorefrontsResponse
 ```
 
+## Properties
+
+- `data` ([Storefronts]) *(required)*: The collection of storefronts for the request.
+
 
 ---
 

@@ -20,7 +20,7 @@ You normally do not call this method explicitly. It is called by the Application
 
 ## Parameters
 
-- `frame`: The cell’s rectangle, specified in points in the coordinate system of the view in the   parameter.
+- `frame`: The cell’s rectangle, specified in points in the coordinate system of the view in the `controlView` parameter.
 - `controlView`: The view in which to display the pop-up button’s menu.
 
 ## See Also

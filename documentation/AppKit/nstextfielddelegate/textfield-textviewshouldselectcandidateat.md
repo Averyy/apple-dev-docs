@@ -19,7 +19,7 @@ optional func textField(_ textField: NSTextField, textView: NSTextView, shouldSe
 
 - `textField`: The text field that sent the message.
 - `textView`: The text view that sent the message.
-- `index`: The index that represents the start of the candidate text to evaluate, or   if no candidate is to be selected.
+- `index`: The index that represents the start of the candidate text to evaluate, or `NSNotFound` if no candidate is to be selected.
 
 ## See Also
 

@@ -31,8 +31,8 @@ This function is used to copy bytes out of a `CMBlockBuffer` into a provided pie
 ## Parameters
 
 - `theSourceBuffer`: The buffer from which data will be copied into the destination.
-- `offsetToData`: Offset within the source   at which the copy should begin.
-- `dataLength`: Number of bytes to copy, starting at  , within the source  . Must not be zero.
+- `offsetToData`: Offset within the source `CMBlockBuffer` at which the copy should begin.
+- `dataLength`: Number of bytes to copy, starting at `offsetToData`, within the source `CMBlockBuffer`. Must not be zero.
 - `destination`: Memory into which the data should be copied.
 
 ## See Also

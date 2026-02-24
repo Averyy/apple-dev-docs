@@ -34,7 +34,8 @@ The error parameter is used only for debugging purposes. The error is logged but
 
 - `lastUsedDate`: The date and time when the item was last used. This value is used as the sort key for the Recents list.
 - `itemIdentifier`: The item’s persistent identifier.
-- `completionHandler`: A block that takes the following parameters:
+- `completionHandler`: A block that takes the following parameters: - **`recentlyUsedItem`**: A file provider item that represents the changed item, or `nil` if an error occurred.
+- **`error`**: An error object. If an error occurs, pass in an object that describes the error; otherwise, set it to `nil`.
 
 ## See Also
 

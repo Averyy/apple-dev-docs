@@ -24,8 +24,8 @@ If `property` isa multi-value list property, this method checks to see if the va
 ## Parameters
 
 - `record`: The record you wish to modify.
-- `property`: The property whose value you wish to set. May be a pre-defined or program-defined property. See   for a list of properties all records have, and specific ABRecord derived opaque types for any additional properties. If  , this function raises an exception.
-- `value`: The new value for   in  . If   or not the correct type, this function raises an exception.
+- `property`: The property whose value you wish to set. May be a pre-defined or program-defined property. See `Common Properties` for a list of properties all records have, and specific ABRecord derived opaque types for any additional properties. If `NULL`, this function raises an exception.
+- `value`: The new value for `property` in `record`. If `NULL` or not the correct type, this function raises an exception.
 
 ## See Also
 

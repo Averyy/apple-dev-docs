@@ -24,8 +24,8 @@ func CGImageDestinationAddImageFromSource(_ idst: CGImageDestination, _ isrc: CG
 
 - `idst`: The image destination to modify.
 - `isrc`: An image source that contains the image.
-- `index`: The index of the image in the image source. Specify a valid, zero-based index into the images of the image source. If the index is invalid, this method returns  .
-- `properties`: An optional dictionary that specifies additional image property information. The added image automatically inherits the properties found in the image source. Use this dictionary to add properties to the image, or to modify one of the inherited properties. To remove an inherited property altogether, specify   for the property’s value. For a list of possible values, see   and  .
+- `index`: The index of the image in the image source. Specify a valid, zero-based index into the images of the image source. If the index is invalid, this method returns `NULL`.
+- `properties`: An optional dictionary that specifies additional image property information. The added image automatically inherits the properties found in the image source. Use this dictionary to add properties to the image, or to modify one of the inherited properties. To remove an inherited property altogether, specify `NULL` for the property’s value. For a list of possible values, see [`Image Properties`](image-properties.md) and [`Configuring the Image Behaviors`](cgimagedestination#Configuring-the-Image-Behaviors.md).
 
 ## See Also
 

@@ -26,7 +26,7 @@ An `NSString` object initialized by copying the characters from `aString`. The r
 
 ## Parameters
 
-- `aString`: The string from which to copy characters. This value must not be  .
+- `aString`: The string from which to copy characters. This value must not be `nil`. > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `aString` is `nil`.
 
 ## See Also
 

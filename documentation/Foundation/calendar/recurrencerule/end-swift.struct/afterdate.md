@@ -22,7 +22,7 @@ static func afterDate(_ date: Date) -> Calendar.RecurrenceRule.End
 
 ## Parameters
 
-- `date`: The date on which the event may last occur. No   further occurrences will be found after that
+- `date`: The date on which the event may last occur. No further occurrences will be found after that
 
 
 ---

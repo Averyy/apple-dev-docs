@@ -8,6 +8,10 @@ The text to display for the context menu item.
 **Availability**:
 - macOS 10.11.5+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [Command](information-property-list/nsextension/sfsafaricontextmenu/command.md)

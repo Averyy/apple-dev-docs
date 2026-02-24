@@ -30,7 +30,7 @@ The array representation at the location identified by `aURL` must contain only 
 
 ## Parameters
 
-- `url`: The location of the file containing a string representation of a mutable array produced by the   method.
+- `url`: The location of the file containing a string representation of a mutable array produced by the [`write(to:atomically:)`](nsarray/write(to:atomically:).md) method.
 
 ## See Also
 

@@ -31,7 +31,7 @@ The number of bytes that the encoding actually ends up requiring when converting
 ## Parameters
 
 - `length`: The number of Unicode characters to evaluate.
-- `encoding`: The string encoding for the number of characters specified by  .
+- `encoding`: The string encoding for the number of characters specified by `length`.
 
 ## See Also
 

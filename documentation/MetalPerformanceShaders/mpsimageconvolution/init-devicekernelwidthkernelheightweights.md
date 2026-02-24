@@ -28,7 +28,7 @@ An initialized convolution filter object.
 - `device`: The Metal device the filter will run on.
 - `kernelWidth`: The width of the kernel. Must be an odd number.
 - `kernelHeight`: The height of the kernel. Must be an odd number.
-- `kernelWeights`: A pointer to an array of   values to be used as the kernel. These values should be in row-major order.
+- `kernelWeights`: A pointer to an array of `kernelWidth * kernelHeight` values to be used as the kernel. These values should be in row-major order.
 
 
 ---

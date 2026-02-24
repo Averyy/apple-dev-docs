@@ -23,7 +23,7 @@ var ambientOcclusion: PhysicallyBasedMaterial.AmbientOcclusion { get set }
 
 Ambient occlusion represents the entity’s exposure to ambient light.
 
-Specify ambient occlusion using a UV-mapped image called an . A value of black (`0.0`) represents parts of the model that receive less ambient light because that part of the model is a crevice, dent, or recessed area, or because another part of the same entity is preventing ambient light from reaching it. Ambient occlusion values of white (`1.0`) represent flat portions of the model that receive full ambient light. You generate ambient occlusion maps using a 3D software package.
+Specify ambient occlusion using a UV-mapped image called an *ambient occlusion map*. A value of black (`0.0`) represents parts of the model that receive less ambient light because that part of the model is a crevice, dent, or recessed area, or because another part of the same entity is preventing ambient light from reaching it. Ambient occlusion values of white (`1.0`) represent flat portions of the model that receive full ambient light. You generate ambient occlusion maps using a 3D software package.
 
 The following code loads an ambient occlusion map:
 

@@ -21,7 +21,7 @@ func SCNetworkServiceSetEnabled(_ service: SCNetworkService, _ enabled: Bool) ->
 ## Parameters
 
 - `service`: The network service to enable or disable.
-- `enabled`: Pass   if the service should be enabled;   otherwise.
+- `enabled`: Pass `TRUE` if the service should be enabled; `FALSE` otherwise.
 
 ## See Also
 

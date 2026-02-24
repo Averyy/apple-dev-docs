@@ -20,7 +20,7 @@ func updateItem(usingCurrentState item: any UIDynamicItem)
 
 #### Discussion
 
-A dynamic animator automatically reads the initial state (position and rotation) of each dynamic item you add to it, and then takes responsibility for updating the item’s state. If you actively change the state of a dynamic item  you’ve added it to a dynamic animator, call this method to ask the animator to read and incorporate the new state.
+A dynamic animator automatically reads the initial state (position and rotation) of each dynamic item you add to it, and then takes responsibility for updating the item’s state. If you actively change the state of a dynamic item *after* you’ve added it to a dynamic animator, call this method to ask the animator to read and incorporate the new state.
 
 ## Parameters
 

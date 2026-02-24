@@ -25,7 +25,7 @@ Create an `XCTOSSignpostMetric` that records the time that elapses between the b
 
 ## Parameters
 
-- `subsystem`: The   subsystem that logs the signpost events.
+- `subsystem`: The [`OSLog`](https://developer.apple.com/documentation/os/OSLog) subsystem that logs the signpost events.
 - `category`: The log category for the logged signpost events.
 - `name`: The name of the signpost.
 

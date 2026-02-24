@@ -24,7 +24,7 @@ A new trait collection containing only the interface style trait.
 
 ## Parameters
 
-- `userInterfaceStyle`: The interface style for the trait collection. For a list of possible values, see  .
+- `userInterfaceStyle`: The interface style for the trait collection. For a list of possible values, see [`UIUserInterfaceStyle`](uiuserinterfacestyle.md).
 
 ## See Also
 

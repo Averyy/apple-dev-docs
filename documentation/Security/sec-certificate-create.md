@@ -28,7 +28,7 @@ Create an ARC-able `sec_certificate_t` instance from a `SecCertificateRef`.
 
 ## Parameters
 
-- `certificate`: A   instance.
+- `certificate`: A `SecCertificateRef` instance.
 
 
 ---

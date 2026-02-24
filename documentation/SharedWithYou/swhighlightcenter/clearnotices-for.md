@@ -20,7 +20,7 @@ func clearNotices(for highlight: SWCollaborationHighlight)
 
 ## Parameters
 
-- `highlight`: The   that contains the notices.
+- `highlight`: The [`SWHighlightEvent`](swhighlightevent.md) that contains the notices.
 
 ## See Also
 

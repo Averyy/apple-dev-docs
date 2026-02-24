@@ -26,8 +26,8 @@ Starts IO for the given AudioDeviceIOProcID and aligns the IO cycle of the Audio
 ## Parameters
 
 - `inDevice`: The AudioDevice to start the IOProc on.
-- `inProcID`: The AudioDeviceIOProcID to start. Note that this can be NULL, which starts   the hardware regardless of whether or not there are any IOProcs registered.
-- `ioRequestedStartTime`: A pointer to an AudioTimeStamp that, on entry, is the requested time to   start the IOProc. On exit, it will be the actual time the IOProc will start.
+- `inProcID`: The AudioDeviceIOProcID to start. Note that this can be NULL, which starts the hardware regardless of whether or not there are any IOProcs registered.
+- `ioRequestedStartTime`: A pointer to an AudioTimeStamp that, on entry, is the requested time to start the IOProc. On exit, it will be the actual time the IOProc will start.
 - `inFlags`: A UInt32 containing flags that modify how this function behaves.
 
 ## See Also

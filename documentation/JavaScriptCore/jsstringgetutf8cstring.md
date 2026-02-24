@@ -25,8 +25,8 @@ The number of bytes the system writes into `buffer` (including the null-terminat
 
 ## Parameters
 
-- `string`: The source  .
-- `buffer`: The destination byte buffer to copy a null-terminated UTF-8 representation of   into. On return,   contains a UTF-8 string representation of  . If   is too small,   contains only partial results. If   isn’t at least   bytes in size, the conversion results in undefined behavior.
+- `string`: The source [`JSStringRef`](jsstringref.md).
+- `buffer`: The destination byte buffer to copy a null-terminated UTF-8 representation of `string` into. On return, `buffer` contains a UTF-8 string representation of `string`. If `bufferSize` is too small, `buffer` contains only partial results. If `buffer` isn’t at least `bufferSize` bytes in size, the conversion results in undefined behavior.
 - `bufferSize`: The size of the external buffer in bytes.
 
 ## See Also

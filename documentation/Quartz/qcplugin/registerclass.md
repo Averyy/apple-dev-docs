@@ -20,7 +20,7 @@ You call this method only if the code for your custom patch is mixed with your a
 
 ## Parameters
 
-- `aClass`: The   subclass.
+- `aClass`: The `QCPlugIn` subclass.
 
 ## See Also
 

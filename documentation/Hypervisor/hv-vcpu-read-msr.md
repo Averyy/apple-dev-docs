@@ -26,7 +26,7 @@ This function must be called by the owning thread.
 
 - `vcpu`: The instance of the vCPU.
 - `msr`: The ID of the MSR.
-- `value`: The value of  , on output.
+- `value`: The value of `msr`, on output.
 
 ## See Also
 

@@ -51,8 +51,8 @@ The default focus preference is limited to the focusable ancestor that matches t
 
 ## Parameters
 
-- `prefersDefaultFocus`: A Boolean value that indicates whether this   view prefers to receive focus by default. The default value,  ,   causes the view to receive focus by default.
-- `namespace`: The namespace associated with the focus scope within   which this view prefers default focus.
+- `prefersDefaultFocus`: A Boolean value that indicates whether this view prefers to receive focus by default. The default value, `true`, causes the view to receive focus by default.
+- `namespace`: The namespace associated with the focus scope within which this view prefers default focus.
 
 ## See Also
 

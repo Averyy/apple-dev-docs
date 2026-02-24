@@ -26,8 +26,8 @@ The render pipeline applies `frontReferenceValue` to front-facing primitives and
 
 ## Parameters
 
-- `frontReferenceValue`: A stencil test comparison value the render pipeline applies   to front-facing primitives.
-- `backReferenceValue`: A stencil test comparison value the render pipeline applies   to back-facing primitives.
+- `frontReferenceValue`: A stencil test comparison value the render pipeline applies to front-facing primitives.
+- `backReferenceValue`: A stencil test comparison value the render pipeline applies to back-facing primitives.
 
 ## See Also
 

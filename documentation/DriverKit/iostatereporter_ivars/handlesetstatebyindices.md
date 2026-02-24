@@ -29,10 +29,10 @@ Locking: Caller must ensure that the reporter (data) lock is held.
 
 ## Parameters
 
-- `channel_index`: 
-- `new_state_index`: 
-- `last_intransition`: 
-- `prev_state_residency`: 
+- `channel_index`: - 0.., available from getChannelIndex()
+- `new_state_index`: - New state for the channel
+- `last_intransition`: - to remove: time of most recent entry
+- `prev_state_residency`: - to remove: time spent in previous state
 
 
 ---

@@ -26,7 +26,7 @@ This method raises an `NSPrintOperationExistsException` if there is already a pr
 
 - `view`: The view containing the data to be turned into PDF data.
 - `rect`: The portion of the view (specified in points in the view’s coordinate space) to be rendered as PDF data.
-- `data`: An empty   object. After the job is run, this object contains the PDF data.
+- `data`: An empty `NSMutableData` object. After the job is run, this object contains the PDF data.
 - `printInfo`: The print settings to use when generating the PDF data.
 
 ## See Also

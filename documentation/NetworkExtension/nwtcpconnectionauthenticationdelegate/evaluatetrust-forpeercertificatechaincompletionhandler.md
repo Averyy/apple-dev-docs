@@ -27,7 +27,7 @@ The caller can implement this optional protocol method to set up custom policies
 
 - `connection`: The connection sending this message
 - `peerCertificateChain`: The connection peer’s certificate chain
-- `completion`: The caller is responsible for keeping the argument object valid for the duration of the completion handler invocation.
+- `completion`: The completion handler for passing the [`SecTrust`](https://developer.apple.com/documentation/Security/SecTrust) object to the connection. The `SecTrustRef` object `trust` is required and must not be `nil`. It will be evaluated using [`SecTrustEvaluate(_:_:)`](https://developer.apple.com/documentation/Security/SecTrustEvaluate(_:_:)) if necessary. The caller is responsible for keeping the argument object valid for the duration of the completion handler invocation.
 
 ## See Also
 

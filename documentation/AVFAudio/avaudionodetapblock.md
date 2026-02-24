@@ -26,7 +26,7 @@ typealias AVAudioNodeTapBlock = (AVAudioPCMBuffer, AVAudioTime) -> Void
 
 ## Parameters
 
-- `buffer`: A buffer of audio the system captures from the output of an audio node
+- `buffer`: A buffer of audio the system captures from the output of an audio node`.`
 - `when`: The time the system captures the buffer.
 
 ## See Also

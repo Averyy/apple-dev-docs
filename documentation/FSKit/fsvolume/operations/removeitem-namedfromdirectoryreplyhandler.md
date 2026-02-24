@@ -24,7 +24,7 @@ Don’t actually remove the item object itself in your implementation; instead, 
 - `item`: The item to remove.
 - `name`: The name of the item to remove.
 - `directory`: The directory from which to remove the item.
-- `reply`: A block or closure to indicate success or failure. If removal fails, pass an error as the one parameter to the reply handler. If removal succeeds, pass  . For an   Swift implementation, there’s no reply handler; simply throw an error or return normally.
+- `reply`: A block or closure to indicate success or failure. If removal fails, pass an error as the one parameter to the reply handler. If removal succeeds, pass `nil`. For an `async` Swift implementation, there’s no reply handler; simply throw an error or return normally.
 
 ## See Also
 

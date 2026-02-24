@@ -27,7 +27,7 @@ Returns nil when the input is not recognized as valid Base-64.
 ## Parameters
 
 - `base64String`: The string to parse.
-- `options`: Encoding options. Default value is  .
+- `options`: Encoding options. Default value is `[]`.
 
 
 ---

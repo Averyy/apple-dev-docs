@@ -36,6 +36,10 @@ On success, the server needs to respond with a `200 OK` status. Don’t assume t
 - [object AuthenticateRequest](authenticaterequest.md)
   The authenticate request details.
 
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/checkin`
+
 ## Request Body
 
 The request object the system sends for the `Authenticate` request.

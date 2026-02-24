@@ -20,8 +20,8 @@ func CMAudioDeviceClockCreateFromAudioDeviceID(allocator: CFAllocator?, deviceID
 
 ## Parameters
 
-- `allocator`: Allocator for the new clock; pass   or   to use the default allocator.
-- `deviceID`: The   of the device for which to create a clock.
+- `allocator`: Allocator for the new clock; pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) or `NULL` to use the default allocator.
+- `deviceID`: The [`AudioDeviceID`](https://developer.apple.com/documentation/CoreAudio/AudioDeviceID) of the device for which to create a clock.
 - `clockOut`: Upon return, a pointer to the newly created clock.
 
 ## See Also

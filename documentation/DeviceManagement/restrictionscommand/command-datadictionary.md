@@ -18,6 +18,12 @@ The command to get a list of restrictions on the device.
 object RestrictionsCommand.Command
 ```
 
+## Properties
+
+- `ProfileRestrictions` (boolean): If `true`, the device reports restrictions from each profile. This value is available in iOS 4 and later, and tvOS 6.1 and later.
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

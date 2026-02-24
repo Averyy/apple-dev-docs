@@ -9,6 +9,8 @@ A 32-bit integer containing flags.
 
 One flag is currently defined.
 
+- **Movie is self-contained**: If the least-significant bit is set to `1`, the movie is self-contained. This requires that the parent movie contain a movie header atom as well as a reference movie atom. In other words, the current `'moov'` atom must contain both a `'rmra'` atom and a `'mvhd'` atom. To resolve this data reference, an application uses the movie defined in the movie header atom, ignoring the remainder of the fields in this data reference atom, which are used only to specify external movies.
+
 ## See Also
 
 - [Size](reference_movie_data_reference_atom/size.md)

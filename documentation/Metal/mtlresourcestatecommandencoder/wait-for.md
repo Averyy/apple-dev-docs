@@ -27,7 +27,7 @@ The GPU driver evaluates the fences that apply to the pass and the commands that
 
 ## Parameters
 
-- `fence`: An   instance to pause execution on until updated.
+- `fence`: An [`MTLFence`](mtlfence.md) instance to pause execution on until updated.
 
 ## See Also
 

@@ -43,11 +43,11 @@ _ = vImageHistogramCalculation_PlanarF(&buffer,
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `histogram`: The collection that contains   elements that receives the histogram data.
+- `histogram`: The collection that contains `histogram_entries` elements that receives the histogram data.
 - `histogram_entries`: The number of histogram entries.
-- `minVal`: The minimum pixel value. The operation assigns pixel values less than   to the first histogram entry.
-- `maxVal`: The maximum pixel value. The operation assigns pixel values greater than   to the last histogram entry.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass  ; otherwise, pass  .
+- `minVal`: The minimum pixel value. The operation assigns pixel values less than `minVal` to the first histogram entry.
+- `maxVal`: The maximum pixel value. The operation assigns pixel values greater than `maxVal` to the last histogram entry.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
 
 ## See Also
 

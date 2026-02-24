@@ -22,7 +22,7 @@ init(timeInterval: TimeInterval, since date: Date)
 
 ## Parameters
 
-- `timeInterval`: The number of seconds to add to  . A negative value means the receiver will be earlier than  .
+- `timeInterval`: The number of seconds to add to `date`. A negative value means the receiver will be earlier than `date`.
 - `date`: The reference date.
 
 ## See Also

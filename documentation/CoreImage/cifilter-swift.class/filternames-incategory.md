@@ -25,7 +25,7 @@ An array that contains all published names of the filter in a category.
 
 ## Parameters
 
-- `category`: A string object that specifies one of the filter categories defined in  .
+- `category`: A string object that specifies one of the filter categories defined in [`Filter Category Keys`](filter-category-keys.md).
 
 ## See Also
 

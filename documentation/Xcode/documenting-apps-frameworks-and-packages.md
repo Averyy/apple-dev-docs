@@ -6,7 +6,7 @@ Create developer documentation from in-source comments, add articles with code s
 
 #### Overview
 
-DocC, or , makes it easy to produce rich and engaging developer documentation for your apps, frameworks, and packages. The compiler builds documentation by combining in-source comments with extension files, articles, and other resources that live alongside your project in Xcode.
+DocC, or *Documentation Compiler*, makes it easy to produce rich and engaging developer documentation for your apps, frameworks, and packages. The compiler builds documentation by combining in-source comments with extension files, articles, and other resources that live alongside your project in Xcode.
 
 The compiler integrates directly with Xcode to enhance your existing workflow, including code completion, Quick Help, and more.
 

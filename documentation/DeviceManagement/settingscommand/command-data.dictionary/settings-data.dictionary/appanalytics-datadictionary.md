@@ -15,6 +15,11 @@ A dictionary that contains settings for sharing app analytics.
 object SettingsCommand.Command.Settings.AppAnalytics
 ```
 
+## Properties
+
+- `Enabled` (boolean) *(required)*: If `true`, enable sharing app analytics with app developers. If `false`, disable sharing app analytics.
+- `Item` (string) *(required)*: A string that identifies this setting.
+
 ## See Also
 
 - [object SettingsCommand.Command.Settings.AccessibilitySettings](settingscommand/command-data.dictionary/settings-data.dictionary/accessibilitysettings-data.dictionary.md)

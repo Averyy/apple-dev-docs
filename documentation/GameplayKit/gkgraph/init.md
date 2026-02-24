@@ -31,7 +31,7 @@ For more information, see [`GameplayKit Programming Guide`](https://developer.ap
 
 ## Parameters
 
-- `nodes`: An array of graph node objects—instances of   or of one of its subclasses containing geometry information.
+- `nodes`: An array of graph node objects—instances of [`GKGraphNode`](gkgraphnode.md) or of one of its subclasses containing geometry information.
 
 
 ---

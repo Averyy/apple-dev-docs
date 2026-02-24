@@ -25,7 +25,7 @@ A new placeholder cell object.
 
 - `insertionIndexPath`: The index path at which to insert the placeholder cell.
 - `reuseIdentifier`: The reuse identifier to use when dequeueing the cell. A cell with the specified identifier must be registered with the table prior to inserting the placeholder cell. You can register cells in your storyboard file or programmatically.
-- `rowHeight`: The initial height of the cell. Specify   if your table uses estimated row heights and the placeholder cell is self-sizing.
+- `rowHeight`: The initial height of the cell. Specify [`automaticDimension`](uitableview/automaticdimension.md) if your table uses estimated row heights and the placeholder cell is self-sizing.
 
 
 ---

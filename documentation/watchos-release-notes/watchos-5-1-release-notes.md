@@ -12,7 +12,7 @@ The watchOS 5.1 SDK provides support for developing watchOS apps for Apple Watch
 
 ###### Known Issues
 
-- Color Circular faces reset to Color Dial when you update from the first watchOS 5.1 beta to beta 2 or later. (44841456)  Customize the face back to Color Circular after you update.
+- Color Circular faces reset to Color Dial when you update from the first watchOS 5.1 beta to beta 2 or later. (44841456) **Workaround:** Customize the face back to Color Circular after you update.
 
 ## See Also
 

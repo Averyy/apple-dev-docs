@@ -21,11 +21,11 @@ func evaluate(x: Double) -> Double
 
 #### Return Value
 
-The curve’s height for the argument  value.
+The curve’s height for the argument *x* value.
 
 ## Parameters
 
-- `x`: A value within the envelope’s domain. The envelope clamps this parameter to a value within  .
+- `x`: A value within the envelope’s domain. The envelope clamps this parameter to a value within [`domain`](phaseenvelope/domain.md).
 
 ## See Also
 

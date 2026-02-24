@@ -32,10 +32,10 @@ This method performs the same task as the [`fileManager(_:shouldProceedAfterErro
 
 ## Parameters
 
-- `fileManager`: The   object that sent this message.
+- `fileManager`: The `NSFileManager` object that sent this message.
 - `error`: The error that occurred during the attempt to copy.
-- `srcPath`: The path or a file or directory that   is attempting to copy.
-- `dstPath`: The path or a file or directory to which   is attempting to copy.
+- `srcPath`: The path or a file or directory that `fileManager` is attempting to copy.
+- `dstPath`: The path or a file or directory to which `fileManager` is attempting to copy.
 
 ## See Also
 

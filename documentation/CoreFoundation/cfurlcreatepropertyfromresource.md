@@ -26,10 +26,10 @@ This is a convenience function for retrieving individual property values which c
 
 ## Parameters
 
-- `alloc`: The allocator to use to to allocate memory for the new   object for the requested property. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `url`: The   object referring to the resource whose properties are loaded.
-- `property`: The name of the property you wish to load. Pass one of the provided string constants indicating the property. See   and   for the list of available properties.
-- `errorCode`: On return,   if successful, otherwise an error code indicating the nature of the problem. See   for a list of possible error codes.
+- `alloc`: The allocator to use to to allocate memory for the new `CFType` object for the requested property. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `url`: The `CFURL` object referring to the resource whose properties are loaded.
+- `property`: The name of the property you wish to load. Pass one of the provided string constants indicating the property. See [`File URL Properties`](file-url-properties.md) and [`HTTP URL Properties`](http-url-properties.md) for the list of available properties.
+- `errorCode`: On return, `0` if successful, otherwise an error code indicating the nature of the problem. See [`CFURLError`](cfurlerror.md) for a list of possible error codes.
 
 ## See Also
 

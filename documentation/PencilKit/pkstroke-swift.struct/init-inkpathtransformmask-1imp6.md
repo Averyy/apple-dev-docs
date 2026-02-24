@@ -20,9 +20,9 @@ init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform = .identity, m
 
 ## Parameters
 
-- `ink`: The   the framework uses to render this stroke.
+- `ink`: The [`PKInk`](pkink-swift.struct.md) the framework uses to render this stroke.
 - `path`: The B-spline path that describes this stroke.
-- `transform`: The   to apply to this stroke.
+- `transform`: The [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) to apply to this stroke.
 - `mask`: The pretransform mask the framework uses to clip the rendering of the stroke.
 
 ## See Also

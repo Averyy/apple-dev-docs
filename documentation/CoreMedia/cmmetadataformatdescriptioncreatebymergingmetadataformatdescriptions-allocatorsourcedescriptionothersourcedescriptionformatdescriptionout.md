@@ -25,7 +25,7 @@ func CMMetadataFormatDescriptionCreateByMergingMetadataFormatDescriptions(alloca
 - `allocator`: Allocator to use for allocating the CMBlockBuffer object. May be NULL.
 - `sourceDescription`: The metadata format description to merge.
 - `otherSourceDescription`: Another metadata format description to merged
-- `formatDescriptionOut`: Returns newly created metadata  .
+- `formatDescriptionOut`: Returns newly created metadata `CMFormatDescription`.
 
 ## See Also
 

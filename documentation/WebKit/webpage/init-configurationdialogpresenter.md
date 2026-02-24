@@ -21,7 +21,7 @@ convenience init(configuration: WebPage.Configuration = Configuration(), dialogP
 
 ## Parameters
 
-- `configuration`: A   value to use when initializing the page.
+- `configuration`: A [`WebPage.Configuration`](webpage/configuration.md) value to use when initializing the page.
 - `dialogPresenter`: A dialog presenter which controls how JavaScript dialogs are handled.
 
 ## See Also

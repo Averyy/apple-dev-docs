@@ -26,8 +26,8 @@ Each of these methods calls this method in turn. User interaction is blocked dur
 
 ## Parameters
 
-- `viewController`: The other view controller to present from the view controller.
-- `animator`: The animation delegate to employ for presentation and dismissal of the other view controller. The animator that you specify is retained until the   method is called and the dismissal animation completes.
+- `viewController`: The other view controller to present from the view controller. > **Note**:  The view controller you provide in this parameter must not already be visible elsewhere, or else this method raises an exception. The view in the presented view controller must have a window, or else this method raises an exception.
+- `animator`: The animation delegate to employ for presentation and dismissal of the other view controller. The animator that you specify is retained until the [`dismiss(_:)`](nsviewcontroller/dismiss(_:)-91my5.md) method is called and the dismissal animation completes. > **Note**:  This parameter’s value must not be `nil`, or else this method raises an exception.
 
 ## See Also
 

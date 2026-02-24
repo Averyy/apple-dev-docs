@@ -22,8 +22,8 @@ Sets the scale factor of the entity relative to the given reference entity.
 
 ## Parameters
 
-- `scale`: A new scale factor, relative to  .
-- `referenceEntity`: The entity that defines a frame of reference. Set   this to   to indicate world space.
+- `scale`: A new scale factor, relative to `referenceEntity`.
+- `referenceEntity`: The entity that defines a frame of reference. Set this to `nil` to indicate world space.
 
 ## See Also
 

@@ -24,7 +24,7 @@ An attribute set that represents an item of the specified content type.
 
 ## Parameters
 
-- `contentType`: The type of the content. For example,   or  .
+- `contentType`: The type of the content. For example, [`png`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/png) or [`movie`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/movie).
 
 
 ---

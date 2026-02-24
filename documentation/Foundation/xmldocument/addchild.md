@@ -17,7 +17,7 @@ func addChild(_ child: XMLNode)
 
 ## Parameters
 
-- `child`: The   object to be added.
+- `child`: The [`XMLNode`](xmlnode.md) object to be added.
 
 ## See Also
 

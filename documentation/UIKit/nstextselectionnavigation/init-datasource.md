@@ -20,7 +20,7 @@ init(dataSource: any NSTextSelectionDataSource)
 
 ## Parameters
 
-- `dataSource`: An  .
+- `dataSource`: An `NSTextSelectionDataSource`.
 
 
 ---

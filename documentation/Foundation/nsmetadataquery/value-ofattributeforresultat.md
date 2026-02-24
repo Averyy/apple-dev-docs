@@ -26,7 +26,7 @@ Value for `attrName` in the result object at `idx` in the query result array.
 
 ## Parameters
 
-- `attrName`: The attribute of the result object at   being inquired about. The attribute must be specified in  , as a sorting key in a specified sort descriptor, or as one of the grouping attributes specified set for the query.
+- `attrName`: The attribute of the result object at `idx` being inquired about. The attribute must be specified in [`valueListAttributes`](nsmetadataquery/valuelistattributes.md), as a sorting key in a specified sort descriptor, or as one of the grouping attributes specified set for the query.
 - `idx`: The index of the desired return object in the query results array.
 
 ## See Also

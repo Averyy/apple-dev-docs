@@ -15,7 +15,7 @@ With drag and drop in iOS, users can drag items from one onscreen location to an
 
 > **Note**:  Prior to iOS 15, drag-and-drop activities on iPhone can take place in a single app but not between two apps.
 
-The app from which an item is dragged is the . The app on which an item is dropped is the . For drag and drop in a single app, that app plays both roles simultaneously. The complete user action from start to finish — using system-mediated gestures — is a . A , by contrast, is an object that’s managed by the system and that manages the items the user is dragging.
+The app from which an item is dragged is the *source app*. The app on which an item is dropped is the *destination app*. For drag and drop in a single app, that app plays both roles simultaneously. The complete user action from start to finish — using system-mediated gestures — is a *drag activity*. A *drag session*, by contrast, is an object that’s managed by the system and that manages the items the user is dragging.
 
 When dragging is in progress, the source and destination apps continue to run normally and support user interaction. A user can invoke the Dock, return to the Home screen, open a second app in Split View, and even start another drag activity.
 

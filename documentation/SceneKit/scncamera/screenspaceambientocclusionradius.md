@@ -22,7 +22,7 @@ var screenSpaceAmbientOcclusionRadius: CGFloat { get set }
 
 #### Discussion
 
-Ambient occlusion is an effect that improves material shading by calculating the amounts of ambient light that reach various parts of a surface, creating shadows on parts of a geometry where incoming light is obscured by other parts of the geometry. (You can provide pre-rendered ambient occlusion effects for a material using its [`ambientOcclusion`](scnmaterial/ambientocclusion.md) property.)  (SSAO) provides a real-time approximation of this effect for the entire scene viewed through the camera.
+Ambient occlusion is an effect that improves material shading by calculating the amounts of ambient light that reach various parts of a surface, creating shadows on parts of a geometry where incoming light is obscured by other parts of the geometry. (You can provide pre-rendered ambient occlusion effects for a material using its [`ambientOcclusion`](scnmaterial/ambientocclusion.md) property.) *Screen-space ambient occlusion* (SSAO) provides a real-time approximation of this effect for the entire scene viewed through the camera.
 
 SSAO effects work by storing relevant scene geometry information for each pixel, and using that information to produce per-pixel shading effects. This [`screenSpaceAmbientOcclusionRadius`](scncamera/screenspaceambientocclusionradius.md) property determines the area in scene space to consider around each pixel for determining the amount of incoming ambient light blocked by surrounding geometry (and thus the amount of shadow effect to apply). The default value is 5; smaller values cause SSAO effects to apply only to finer geometry details, while larger values affect coarser details.
 

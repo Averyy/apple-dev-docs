@@ -27,7 +27,7 @@ This is a convenience method that uses the default logical comparison type of [`
 
 ## Parameters
 
-- `value`: The property value that you want to match when you query the Music library. For example, if you specify the   constant in the   parameter, in this parameter you supply a string containing the artist name.
+- `value`: The property value that you want to match when you query the Music library. For example, if you specify the [`MPMediaItemPropertyArtist`](mpmediaitempropertyartist.md) constant in the `forProperty` parameter, in this parameter you supply a string containing the artist name.
 - `property`: A property to use to build a media property predicate. See Media item types and keys.
 
 ## See Also

@@ -20,7 +20,7 @@ A new item collection object containing the specified `items`.
 
 ## Parameters
 
-- `items`: The array of   objects to put in the collection.
+- `items`: The array of [`TVTopShelfItem`](tvtopshelfitem.md) objects to put in the collection.
 
 
 ---

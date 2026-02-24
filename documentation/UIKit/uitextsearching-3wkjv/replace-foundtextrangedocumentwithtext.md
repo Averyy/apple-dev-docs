@@ -25,7 +25,7 @@ When [`supportsTextReplacement`](uitextsearching-3wkjv/supportstextreplacement.m
 ## Parameters
 
 - `foundTextRange`: The text range to replace.
-- `document`: A string that uniquely identifies a document when searching multiple documents, or   when searching a single document.
+- `document`: A string that uniquely identifies a document when searching multiple documents, or `nil` when searching a single document.
 - `withText`: The string to replace the text with.
 
 ## See Also

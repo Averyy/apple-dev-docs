@@ -27,7 +27,7 @@ The split view controller calls this method when the system completes showing on
 ## Parameters
 
 - `svc`: The split view controller whose column the system completed showing.
-- `column`: The column the system completed showing. See   for possible values.
+- `column`: The column the system completed showing. See [`UISplitViewController.Column`](uisplitviewcontroller/column.md) for possible values.
 
 ## See Also
 

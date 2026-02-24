@@ -17,7 +17,7 @@ optional func textViewDidChangeTypingAttributes(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named [`didChangeTypingAttributesNotification`](nstextview/didchangetypingattributesnotification.md).
 
 ## See Also
 

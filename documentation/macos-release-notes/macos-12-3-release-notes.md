@@ -30,7 +30,7 @@ The macOS 12.3 SDK provides support to develop apps for Mac computers running ma
 
 ###### Known Issues
 
-- Collaboration scenarios might not work when the user configures the system to a right-to-left language. (89078453)  Use [`iWork.com`](https://developer.apple.comiWork.com) to collaborate in Safari using a right-to-left language.
+- Collaboration scenarios might not work when the user configures the system to a right-to-left language. (89078453) **Workaround:** Use [`iWork.com`](https://developer.apple.comiWork.com) to collaborate in Safari using a right-to-left language.
 
 ##### Kernel
 

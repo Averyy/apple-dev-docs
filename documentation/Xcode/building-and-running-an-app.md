@@ -12,7 +12,7 @@ When you run an app after a successful build, Xcode launches the app on the devi
 
 ##### Configure a Target for Your App
 
-Xcode determines how to build apps and other products from your project’s target information. A  contains the tasks required to create an executable, and the settings to use to build it. For example, an app target might contain the list of files to compile, the resources to copy into the app’s bundle, and other steps needed to configure the app.
+Xcode determines how to build apps and other products from your project’s target information. A *target* contains the tasks required to create an executable, and the settings to use to build it. For example, an app target might contain the list of files to compile, the resources to copy into the app’s bundle, and other steps needed to configure the app.
 
 When you create a new project from a template, you choose a default target, which Xcode configures using the information you provide. You can add new targets to your project at any time to create additional products.
 
@@ -20,7 +20,7 @@ For more information, see [`Configuring a new target in your project`](configuri
 
 ##### Select a Scheme for Your Target
 
-A  is a collection of settings that specify which targets to build, the build configuration to use, and the executable environment for the running product. Xcode creates schemes for most targets automatically, and you can create additional schemes to customize the build and execution options. For example, you might create a new scheme to pass additional launch arguments to your app.
+A *build scheme* is a collection of settings that specify which targets to build, the build configuration to use, and the executable environment for the running product. Xcode creates schemes for most targets automatically, and you can create additional schemes to customize the build and execution options. For example, you might create a new scheme to pass additional launch arguments to your app.
 
 To build an app, or any other target, choose a scheme that contains the target. Xcode displays the selected scheme in the toolbar of your project window. To change the selected scheme, click the scheme name and choose a new one from the pop-up menu.
 

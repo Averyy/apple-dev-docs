@@ -31,7 +31,7 @@ Note that values returned from this function are immutable, even if you have rec
 ## Parameters
 
 - `key`: The preference key whose value to obtain.
-- `applicationID`: The identifier of the application whose preferences to search, typically  . Do not pass   or  . Takes the form of a Java package name,  .
+- `applicationID`: The identifier of the application whose preferences to search, typically [`kCFPreferencesCurrentApplication`](kcfpreferencescurrentapplication.md). Do not pass `NULL` or [`kCFPreferencesAnyApplication`](kcfpreferencesanyapplication.md). Takes the form of a Java package name, `com.foosoft`.
 
 ## See Also
 

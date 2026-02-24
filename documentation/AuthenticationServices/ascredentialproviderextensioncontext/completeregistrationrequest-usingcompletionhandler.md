@@ -25,7 +25,7 @@ The synchronous version of this method calls its completion handler with [`backg
 ## Parameters
 
 - `credential`: The credential your extension created in response to the registration request.
-- `completionHandler`: An optional block your extension can provide to perform any cleanup work after the system has used the credential. The expired parameter is   if the system decides to prematurely end a previous non-expiration invocation of the completion handler.
+- `completionHandler`: An optional block your extension can provide to perform any cleanup work after the system has used the credential. The expired parameter is [`true`](https://developer.apple.com/documentation/Swift/true) if the system decides to prematurely end a previous non-expiration invocation of the completion handler.
 
 ## See Also
 

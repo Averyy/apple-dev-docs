@@ -85,6 +85,10 @@ Specify `com.apple.security.certificaterevocation` as the payload type.
 - [object CertificateRevocation.SubjectPublicKeyInfoHashDict](certificaterevocation/subjectpublickeyinfohashdict.md)
   A dictionary of hashed public keys.
 
+## Properties
+
+- `EnabledForCerts` ([CertificateRevocation.SubjectPublicKeyInfoHashDict]): An array of certificates that the system checks for revocation. Specifying a certificate authority (CA) enables revocation checking for all certificates chaining up to that CA. It’s not necessary to specify trusted root certificates because they’re implicitly specified. See [`https://support.apple.com/en-us/HT209143`](https://developer.apple.comhttps://support.apple.com/en-us/HT209143) for the available trusted root certificates for Apple operating systems.
+
 ## See Also
 
 - [object ACMECertificate](acmecertificate.md)

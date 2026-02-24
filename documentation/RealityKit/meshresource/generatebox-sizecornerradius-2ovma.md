@@ -28,8 +28,8 @@ The method centers the box at the entity’s origin and aligns the box’s faces
 
 ## Parameters
 
-- `size`: The length of the box’s width, height, and depth, in meters,   along the x-, y-, and z-axis, respectively.
-- `cornerRadius`: The radius of each corner’s circular arc, in meters.   Values for   can be, at most, equal to   .   For example, if the box’s dimensions are   x   x  ,   the corner radius needs to be in the range  .
+- `size`: The length of the box’s width, height, and depth, in meters, along the x-, y-, and z-axis, respectively.
+- `cornerRadius`: The radius of each corner’s circular arc, in meters. Values for `cornerRadius` can be, at most, equal to `min(size.x, size.y, size.z) / 2.0`. For example, if the box’s dimensions are `3.0` x `4.0` x `5.0`, the corner radius needs to be in the range `[0.0, 1.5]`.
 
 ## See Also
 

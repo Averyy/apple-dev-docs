@@ -14,7 +14,7 @@ Generate thumbnails for common file types and add a Thumbnail Extension to your 
 
 #### Overview
 
-You may want to create a miniature representation, or , of a file and its contents to display within your app. The QuickLookThumbnailing framework provides an API to generate thumbnails using the [`QLThumbnailGenerator`](qlthumbnailgenerator.md) object. It can generate thumbnails for common file types, including:
+You may want to create a miniature representation, or *thumbnail*, of a file and its contents to display within your app. The QuickLookThumbnailing framework provides an API to generate thumbnails using the [`QLThumbnailGenerator`](qlthumbnailgenerator.md) object. It can generate thumbnails for common file types, including:
 
 - Images
 - Live Photos

@@ -26,7 +26,7 @@ A shading instance composed from the given instances.
 
 ## Parameters
 
-- `array`: An array of shading instances. The array must   contain at least one element.
+- `array`: An array of shading instances. The array must contain at least one element.
 
 ## See Also
 

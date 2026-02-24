@@ -36,9 +36,9 @@ This method behaves like [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewit
 
 ## Parameters
 
-- `trust`: The trust management object to evaluate. A trust management object includes the certificate to be verified plus the policy or policies to be used in evaluating trust. It can optionally also include other certificates to be used in verifying the first certificate. Use the   function to create a trust management object.
+- `trust`: The trust management object to evaluate. A trust management object includes the certificate to be verified plus the policy or policies to be used in evaluating trust. It can optionally also include other certificates to be used in verifying the first certificate. Use the [`SecTrustCreateWithCertificates(_:_:_:)`](sectrustcreatewithcertificates(_:_:_:).md) function to create a trust management object.
 - `queue`: The dispatch queue on which the result block should execute. You must call the method from the same queue.
-- `result`: A closure that the method calls to report the result of trust evaluation. The method calls the closure exactly once if the method returns  , and not at all otherwise. The method might call the closure synchronously in some cases, before returning.
+- `result`: A closure that the method calls to report the result of trust evaluation. The method calls the closure exactly once if the method returns [`errSecSuccess`](errsecsuccess.md), and not at all otherwise. The method might call the closure synchronously in some cases, before returning.
 
 
 ---

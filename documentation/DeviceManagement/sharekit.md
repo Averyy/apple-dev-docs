@@ -30,6 +30,11 @@ Specify `com.apple.ShareKitHelper` as the payload type.
 | Allowed in user enrollment | NA |
 | Allow multiple payloads | NA |
 
+## Properties
+
+- `SHKAllowedShareServices` ([string]): The list of plugin IDs that show up in the user’s Share menu. If this array exists, only these items are permitted.
+- `SHKDeniedShareServices` ([string]): The list of plugin IDs that won’t show up in the user’s Share menu. This key is used only if there is no `SHKAllowedShareServices` key.
+
 ## See Also
 
 - [object AIMAccount](aimaccount.md)

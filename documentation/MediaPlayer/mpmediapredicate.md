@@ -19,7 +19,7 @@ class MPMediaPredicate
 
 #### Overview
 
-In media queries, a  is a statement of a logical condition that you want to test each media item against. The system returns the media items that satisfy the condition in the query result. Use this class’s concrete subclass, described in [`MPMediaPropertyPredicate`](mpmediapropertypredicate.md), to define the filter in a media query to retrieve a subset of media items from the library. For more information about media queries, see [`MPMediaQuery`](mpmediaquery.md).
+In media queries, a *predicate* is a statement of a logical condition that you want to test each media item against. The system returns the media items that satisfy the condition in the query result. Use this class’s concrete subclass, described in [`MPMediaPropertyPredicate`](mpmediapropertypredicate.md), to define the filter in a media query to retrieve a subset of media items from the library. For more information about media queries, see [`MPMediaQuery`](mpmediaquery.md).
 
 ## Relationships
 

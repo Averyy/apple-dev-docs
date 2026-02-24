@@ -31,8 +31,8 @@ This function creates a PDF drawing environment to your specifications. When you
 ## Parameters
 
 - `consumer`: The data consumer to receive the PDF output data.
-- `mediaBox`: A pointer to a rectangle that defines the size and location of the PDF page, or  . The origin of the rectangle should typically be  . Core Graphics uses this rectangle as the default bounds of the page’s media box. If you pass  , Core Graphics uses a default page size of 8.5 by 11 inches (612 by 792 points).
-- `auxiliaryInfo`: A dictionary that specifies any additional information to be used by the PDF context when generating the PDF file, or  . The dictionary is retained by the new context, so on return you may safely release it. See   for keys you can include in the dictionary.
+- `mediaBox`: A pointer to a rectangle that defines the size and location of the PDF page, or `NULL`. The origin of the rectangle should typically be `(0,0)`. Core Graphics uses this rectangle as the default bounds of the page’s media box. If you pass `NULL`, Core Graphics uses a default page size of 8.5 by 11 inches (612 by 792 points).
+- `auxiliaryInfo`: A dictionary that specifies any additional information to be used by the PDF context when generating the PDF file, or `NULL`. The dictionary is retained by the new context, so on return you may safely release it. See [`Auxiliary Dictionary Keys`](auxiliary-dictionary-keys.md) for keys you can include in the dictionary.
 
 ## See Also
 

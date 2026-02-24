@@ -32,7 +32,7 @@ func submitScore(_ score: Int, context: Int, player: GKPlayer) async throws
 - `score`: The score that the player earns.
 - `context`: An integer value that your game uses.
 - `player`: The player who earns the score.
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block that GameKit calls when this method adds the score. The block receives the following parameters: - **error**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

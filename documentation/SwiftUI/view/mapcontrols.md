@@ -57,7 +57,7 @@ Map()
 
 ## Parameters
 
-- `content`: A view builder returning the controls you wish your 
+- `content`: A view builder returning the controls you wish your `Map`
 
 ## See Also
 

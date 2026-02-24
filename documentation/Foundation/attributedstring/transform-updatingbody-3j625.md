@@ -26,8 +26,8 @@ If updating the provided ranges is not possible (tracking failed) then this func
 
 ## Parameters
 
-- `ranges`: A list of ranges to track throughout the   closure. The updated array (after the function is called) is guaranteed to be the same size as the provided array. Updated ranges are located at the same indices as their respective original ranges in the input   array.
-- `body`: A mutating operation, or set of operations, to perform on the value of  . The value of   is provided to the closure as an   that the closure should mutate directly. Do not capture the value of   in the provided closure - the closure should mutate the provided   copy.
+- `ranges`: A list of ranges to track throughout the `body` closure. The updated array (after the function is called) is guaranteed to be the same size as the provided array. Updated ranges are located at the same indices as their respective original ranges in the input `ranges` array.
+- `body`: A mutating operation, or set of operations, to perform on the value of `self`. The value of `self` is provided to the closure as an `inout AttributedString` that the closure should mutate directly. Do not capture the value of `self` in the provided closure - the closure should mutate the provided `inout` copy.
 
 
 ---

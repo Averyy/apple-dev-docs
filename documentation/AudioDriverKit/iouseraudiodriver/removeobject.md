@@ -24,7 +24,7 @@ If the remove succeeds, the object’s reference count decrements by one. The ca
 
 ## Parameters
 
-- `in_object`: The   to remove from the driver.
+- `in_object`: The [`IOUserAudioObjectID`](audiodriverkit/iouseraudioobjectid.md) to remove from the driver.
 
 ## See Also
 

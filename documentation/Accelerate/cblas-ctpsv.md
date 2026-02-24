@@ -29,13 +29,13 @@ Solves the system of equations `A*X=B` or `A'*X=B`, depending on the value of `T
 ## Parameters
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
-- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are   or  .
-- `TRANSA`: Specifies whether to use matrix A (  or  ) or the transpose of A ( ,  ,  , or  ).
-- `DIAG`: Specifies whether the matrix is unit triangular. Possible values are   (unit triangular) or   (not unit triangular).
-- `N`: Order of matrix  .
-- `AP`: Matrix   (in packed storage format).
-- `X`: Contains vector   on entry. Overwritten with vector   on return.
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
+- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are `'U'` or `'L'`.
+- `TRANSA`: Specifies whether to use matrix A (`'N'` or `'n'`) or the transpose of A (`'T'`, `'t'`, `'C'`, or `'c'`).
+- `DIAG`: Specifies whether the matrix is unit triangular. Possible values are `'U'` (unit triangular) or `'N'` (not unit triangular).
+- `N`: Order of matrix `A`.
+- `AP`: Matrix `A` (in packed storage format).
+- `X`: Contains vector `B` on entry. Overwritten with vector `X` on return.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
 
 ## See Also
 

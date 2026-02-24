@@ -27,7 +27,7 @@ A Core Foundation dictionary with all attachments identified by keys, or [`nil`]
 ## Parameters
 
 - `buffer`: The buffer whose attachments you want to retrieve.
-- `attachmentMode`: The mode of the attachments you want to retrieve. See   for possible values.
+- `attachmentMode`: The mode of the attachments you want to retrieve. See [`CVAttachmentMode`](cvattachmentmode.md) for possible values.
 
 ## See Also
 

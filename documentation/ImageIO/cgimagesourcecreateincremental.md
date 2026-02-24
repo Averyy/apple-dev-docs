@@ -30,7 +30,7 @@ This function creates an empty image source container, which you use to accumula
 
 ## Parameters
 
-- `options`: A dictionary that specifies additional creation options. For a list of possible values, see  .
+- `options`: A dictionary that specifies additional creation options. For a list of possible values, see [`Specifying the Read Options`](cgimagesource#Specifying-the-Read-Options.md).
 
 ## See Also
 

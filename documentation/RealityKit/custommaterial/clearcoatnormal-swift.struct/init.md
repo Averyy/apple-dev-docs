@@ -20,7 +20,7 @@ init(_ value: PhysicallyBasedMaterial.ClearcoatNormal)
 
 ## Parameters
 
-- `value`: The   object from a  .
+- `value`: The `ClearcoatNormal` object from a `PhysicallyBasedMaterial`.
 
 
 ---

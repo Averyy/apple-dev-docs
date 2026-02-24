@@ -29,6 +29,9 @@ This method applies the edge work filter to an image. The effect creates a styli
 
 The edge work filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in a monochrome image with the edges of objects highlighted:
 
 ```swift

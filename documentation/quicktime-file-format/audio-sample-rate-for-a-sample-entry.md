@@ -4,6 +4,11 @@
 
 #### Overview
 
+- **Containing profile atom**: Track (sound), movie
+- **`part-ID`**: `0x20202020` (universal feature)
+- **`feature-code`**: `'ausr'`
+- **`feature-value`**: Unsigned `int(32)` holding the audio sample rate in units per second (for example, `44100` for 44.1 kHz)
+
 #### Feature Values
 
 This feature value is an unsigned 32-bit integer holding the audio sample rate in units per seconds (cycles per second). The value should be rounded up to the nearest integer if it has a fractional portion.

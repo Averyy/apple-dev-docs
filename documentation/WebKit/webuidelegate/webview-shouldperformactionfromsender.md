@@ -25,7 +25,7 @@ This method allows the delegate to control the web view’s behavior when action
 ## Parameters
 
 - `webView`: The web view that sent the message.
-- `action`: The action to perform. See   for information on actions a web view can perform.
+- `action`: The action to perform. See [`WebView`](webview-swift.class.md) for information on actions a web view can perform.
 - `sender`: The object that sent the action.
 
 ## See Also

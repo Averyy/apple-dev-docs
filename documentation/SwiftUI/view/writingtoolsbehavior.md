@@ -29,7 +29,7 @@ Use this view modifier to customize or disable the Writing Tools editing experie
 
 ## Parameters
 
-- `behavior`: The Writing Tools behavior for text and text input in the   environment.
+- `behavior`: The Writing Tools behavior for text and text input in the environment.
 
 ## See Also
 

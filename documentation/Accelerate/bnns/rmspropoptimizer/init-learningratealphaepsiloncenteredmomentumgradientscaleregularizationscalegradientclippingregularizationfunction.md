@@ -23,7 +23,7 @@ init(learningRate: Float = 1e-2, alpha: Float = 0.99, epsilon: Float = 1e-8, cen
 ## Parameters
 
 - `learningRate`: A value that specifies the learning rate.
-- `alpha`: A constant that specifies smoothing, in the range   to  .
+- `alpha`: A constant that specifies smoothing, in the range `0` to `1`.
 - `epsilon`: A term that the optimizer adds to the denominator.
 - `centered`: A Boolean value that specifies whether to use the centered variant.
 - `momentum`: The rate of momentum decay.

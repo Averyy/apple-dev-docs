@@ -30,7 +30,7 @@ Apply contrast to a view to increase or decrease the separation between similar 
 
 ## Parameters
 
-- `amount`: The intensity of color contrast to apply. negative   values invert colors in addition to applying contrast.
+- `amount`: The intensity of color contrast to apply. negative values invert colors in addition to applying contrast.
 
 ## See Also
 

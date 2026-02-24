@@ -30,6 +30,18 @@ When the action executes, the field node’s [`strength`](skfieldnode/strength.m
 
 This action is reversible; the reverse is created as if the following code is executed:
 
+**Swift**:
+
+```swift
+let action = SKAction.strength(by: -strength, duration: sec)
+```
+
+**Obj-C**:
+
+```objc
+[SKAction strengthBy: -strength duration: sec];
+```
+
 ## Parameters
 
 - `strength`: The value to add to the field.

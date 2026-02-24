@@ -14,6 +14,10 @@ For Apple use only.
 object Dock.StaticItem.Tile-data.File-data
 ```
 
+## Properties
+
+- `ANY` (any): For Apple use only.
+
 
 ---
 

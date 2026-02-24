@@ -22,7 +22,7 @@ case deny
 
 #### Discussion
 
-This value indicates that the user explicitly chose to not trust a certificate in the chain, usually by clicking the appropriate button in a certificate trust panel. Your app should  trust the chain. The Keychain Access utility refers to this value as “Never Trust.”
+This value indicates that the user explicitly chose to not trust a certificate in the chain, usually by clicking the appropriate button in a certificate trust panel. Your app should *not* trust the chain. The Keychain Access utility refers to this value as “Never Trust.”
 
 
 ---

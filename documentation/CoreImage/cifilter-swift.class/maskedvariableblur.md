@@ -33,6 +33,10 @@ This method applies the masked variable blur to an image. The effect blurs the i
 
 The masked variable blur filter uses the following properties:
 
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`mask`**: An image that masks an area on the input image with the type [`CIImage`](ciimage.md).
+- **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
+
 The following code creates a filter that adds a blur to the bottom of the input image:
 
 ```swift

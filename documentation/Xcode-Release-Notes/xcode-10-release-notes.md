@@ -65,7 +65,7 @@ See [`Build System Release Notes for Xcode 10`](build-system-release-notes-for-x
 
 ###### New Features
 
-- The Command Line Tools package installs the macOS system headers inside the macOS SDK. Software that compiles with the installed tools will search for headers within the macOS SDK provided by either Xcode at: `/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk` or the Command Line Tools at: `/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk` depending on which is selected using `xcode-select`. The command line tools will search the SDK for system headers by default. However, some software may fail to build correctly against the SDK and require macOS headers to be installed in the base system under `/usr/include`. If you are the maintainer of such software, we encourage you to update your project to work with the SDK or file a bug report for issues that are preventing you from doing so. As a workaround, an extra package is provided which will install the headers to the base system. In a future release, this package will no longer be provided. You can find this package at: `/Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg` To make sure that you’re using the intended version of the command line tools, run `xcode-select -s`  or `xcode select -s /Library/Developer/CommandLineTools` after installing.
+- The Command Line Tools package installs the macOS system headers inside the macOS SDK. Software that compiles with the installed tools will search for headers within the macOS SDK provided by either Xcode at: `/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk` or the Command Line Tools at: `/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk` depending on which is selected using `xcode-select`. The command line tools will search the SDK for system headers by default. However, some software may fail to build correctly against the SDK and require macOS headers to be installed in the base system under `/usr/include`. If you are the maintainer of such software, we encourage you to update your project to work with the SDK or file a bug report for issues that are preventing you from doing so. As a workaround, an extra package is provided which will install the headers to the base system. In a future release, this package will no longer be provided. You can find this package at: `/Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg` To make sure that you’re using the intended version of the command line tools, run `xcode-select -s` ** or `xcode select -s /Library/Developer/CommandLineTools` after installing.
 
 ##### Create Ml
 
@@ -118,8 +118,8 @@ See [`Build System Release Notes for Xcode 10`](build-system-release-notes-for-x
 
 ###### Known Issues
 
-- Devices running iOS 12 may fail to take screenshots requested from Xcode’s Devices window. (42873539)  Take the screenshot on the device.
-- Running a WatchKit app with Xcode 10 that was built with a previous version of Xcode can give an installation error “The WatchKit app has an invalid stub executable.” (40567857)  Clean the build folder and run the app again.
+- Devices running iOS 12 may fail to take screenshots requested from Xcode’s Devices window. (42873539) **Workaround:** Take the screenshot on the device.
+- Running a WatchKit app with Xcode 10 that was built with a previous version of Xcode can give an installation error “The WatchKit app has an invalid stub executable.” (40567857) **Workaround:** Clean the build folder and run the app again.
 
 ##### Documentation Viewer
 
@@ -138,9 +138,9 @@ See [`Build System Release Notes for Xcode 10`](build-system-release-notes-for-x
 
 ###### Known Issues
 
-- Instruments may fail to launch if Xcode has not finished preparing any attached devices for development. (43066159)  Wait for Xcode’s device setup phase to complete and then open Instruments.
+- Instruments may fail to launch if Xcode has not finished preparing any attached devices for development. (43066159) **Workaround:** Wait for Xcode’s device setup phase to complete and then open Instruments.
 - Instruments may not profile library or framework unit tests in iOS simulator. (39334812)
-- When stopping a recording that includes signposts (e.g. [`pointsOfInterest`](https://developer.apple.com/documentation/os/OSLog/Category/pointsOfInterest), [`os_signpost(_:dso:log:name:signpostID:)`](https://developer.apple.com/documentation/os/os_signpost(_:dso:log:name:signpostID:)-2oz8u), or [`os_log(_:dso:log:_:_:)`](https://developer.apple.com/documentation/os/os_log(_:dso:log:_:_:)) instruments), the recording button may not reactivate for an extended period of time. (43361649)  Launch Console on your Mac, select the target device, and leave Console running. This connection between Console and the target will be enough keep Instruments from hanging at the end of a recording.
+- When stopping a recording that includes signposts (e.g. [`pointsOfInterest`](https://developer.apple.com/documentation/os/OSLog/Category/pointsOfInterest), [`os_signpost(_:dso:log:name:signpostID:)`](https://developer.apple.com/documentation/os/os_signpost(_:dso:log:name:signpostID:)-2oz8u), or [`os_log(_:dso:log:_:_:)`](https://developer.apple.com/documentation/os/os_log(_:dso:log:_:_:)) instruments), the recording button may not reactivate for an extended period of time. (43361649) **Workaround:** Launch Console on your Mac, select the target device, and leave Console running. This connection between Console and the target will be enough keep Instruments from hanging at the end of a recording.
 
 ###### Resolved Issues
 
@@ -176,7 +176,7 @@ See [`Interface Builder Release Notes for Xcode 10`](interface-builder-release-n
 
 ###### Known Issues
 
-- Switching to a non-default toolchain while in a playground may cause Xcode to crash. (43659135)  Switch back to the default toolchain and then open the playground.
+- Switching to a non-default toolchain while in a playground may cause Xcode to crash. (43659135) **Workaround:** Switch back to the default toolchain and then open the playground.
 
 ###### Resolved Issues
 
@@ -214,7 +214,7 @@ See [`Interface Builder Release Notes for Xcode 10`](interface-builder-release-n
 
 ###### Known Issues
 
-- Video output might stop playing on external displays if using keyboard commands for fast forward and rewind. (41917187)  Pull down the control panel from the top-right corner of the screen and then hide it again.
+- Video output might stop playing on external displays if using keyboard commands for fast forward and rewind. (41917187) **Workaround:** Pull down the control panel from the top-right corner of the screen and then hide it again.
 - Synchronization between the macOS pasteboard and pasteboards in simulated devices can sometimes fail. (36036706, 38052949, 41916640)
 - The OS can take several minutes to boot for the first time in a simulator. (40535421)
 - On macOS 10.14, Simulator might prompt for Microphone access at launch or when first interacting with the microphone in a simulator (for example, by using Siri). If you decline permissions, simulator audio sessions will not be able to use audio input of any kind, regardless of the permissions granted inside a simulator. Use the macOS System Preferences, Security & Privacy preference pane to change this setting. Your application must still be granted Microphone permission inside the simulator as well. macOS applies its permission policy to Simulator application as a whole, across all simulator runtime versions and all applications inside a simulator. Each simulator applies permission policies to individual applications just like devices. (40113388)
@@ -233,7 +233,7 @@ See [`Interface Builder Release Notes for Xcode 10`](interface-builder-release-n
 
 ###### Known Issues
 
-- Xcode doesn’t support ed25519 encrypted SSH keypairs. (40912136)  Use an SSH key pair that uses a different form of encryption.
+- Xcode doesn’t support ed25519 encrypted SSH keypairs. (40912136) **Workaround:** Use an SSH key pair that uses a different form of encryption.
 
 ###### Resolved Issues
 

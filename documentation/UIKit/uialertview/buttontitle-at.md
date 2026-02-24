@@ -22,7 +22,7 @@ The title of the button specified by index `buttonIndex`.
 
 ## Parameters
 
-- `buttonIndex`: The index of the button. The button indices start at  .
+- `buttonIndex`: The index of the button. The button indices start at `0`.
 
 ## See Also
 

@@ -21,7 +21,7 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 ## Parameters
 
 - `itemRef`: A keychain item object.
-- `keychainRef`: On return, a pointer to a keychain object referencing the given keychain item. You must call the   function to release this object when you are finished using it.
+- `keychainRef`: On return, a pointer to a keychain object referencing the given keychain item. You must call the `CFRelease` function to release this object when you are finished using it.
 
 
 ---

@@ -30,7 +30,7 @@ By default, the provided name value is used to name the persistent store and is 
 
 ## Parameters
 
-- `name`: The name of the   object.
+- `name`: The name of the [`NSPersistentContainer`](nspersistentcontainer.md) object.
 
 ## See Also
 

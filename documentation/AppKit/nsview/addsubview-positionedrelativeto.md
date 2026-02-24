@@ -23,8 +23,8 @@ The view retains `aView`. If you use [`removeFromSuperview()`](nsview/removefrom
 ## Parameters
 
 - `view`: The view object to add to the view as a subview.
-- `place`: An   constant specifying the position of the   relative to  . Valid values are   or  .
-- `otherView`: The other view   is to be positioned relative to. If   is   (or isn’t a subview of the view),   is added above or below all of its new siblings.
+- `place`: An `enum` constant specifying the position of the `aView` relative to `otherView`. Valid values are `NSWindowAbove` or `NSWindowBelow`.
+- `otherView`: The other view `aView` is to be positioned relative to. If `otherView` is `nil` (or isn’t a subview of the view), `aView` is added above or below all of its new siblings.
 
 ## See Also
 

@@ -16,8 +16,8 @@ func start(options: VZVirtualMachineStartOptions) async throws
 
 ## Parameters
 
-- `options`: A   object that describes controlling startup behavior of a VM using  .
-- `completionHandler`: The block to call with the results of the startup attempt. This block has no return value and has one   object as its parameter:
+- `options`: A [`VZVirtualMachineStartOptions`](vzvirtualmachinestartoptions.md) object that describes controlling startup behavior of a VM using [`VZMacOSBootLoader`](vzmacosbootloader.md).
+- `completionHandler`: The block to call with the results of the startup attempt. This block has no return value and has one [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object as its parameter: - **error**: A result type that contains an error object when the VM fails to start.
 
 ## See Also
 

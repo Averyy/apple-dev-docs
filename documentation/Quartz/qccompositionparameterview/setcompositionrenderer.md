@@ -20,7 +20,7 @@ If the renderer is a [`QCView`](qcview.md) object, the view track the compositio
 
 ## Parameters
 
-- `renderer`: A   object, either  ,  , or  . Pass   to unset this renderer.
+- `renderer`: A `QCCompositionRenderer` object, either [`QCView`](qcview.md), [`QCRenderer`](qcrenderer.md), or [`QCCompositionLayer`](qccompositionlayer.md). Pass `nil` to unset this renderer.
 
 ## See Also
 

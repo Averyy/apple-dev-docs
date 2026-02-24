@@ -10,6 +10,10 @@ A message that tells people why the app is requesting access to their location i
 - iPadOS 11.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Use this key if your iOS app accesses location information only when running in the foreground. If your app needs location information when in the background, use [`NSLocationAlwaysAndWhenInUseUsageDescription`](information-property-list/nslocationalwaysandwheninuseusagedescription.md) instead. For more information, see [`Choosing the  Location Services Authorization to Request`](choosing-the-location-services-authorization-to-request.md).

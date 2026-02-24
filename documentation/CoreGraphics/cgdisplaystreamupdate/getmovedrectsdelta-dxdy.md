@@ -17,8 +17,8 @@ The delta values describe the offset from the moved rectangles back to the sourc
 
 ## Parameters
 
-- `dx`: A pointer to a   to store the x component of the movement delta
-- `dy`: A pointer to a   to store the y component of the movement delta
+- `dx`: A pointer to a `CGFloat` to store the x component of the movement delta
+- `dy`: A pointer to a `CGFloat` to store the y component of the movement delta
 
 ## See Also
 

@@ -16,8 +16,8 @@ func getPeriodicDelay(_ delay: UnsafeMutablePointer<Float>, interval: UnsafeMuta
 
 ## Parameters
 
-- `delay`: On return, the amount of time (in seconds) the button will pause before starting to periodically send action messages to the target object. The default delay is taken from a user’s default (60 seconds maximum). If the user hasn’t specified a default value,   defaults to 0.4 seconds,
-- `interval`: On return, the amount of time (in seconds) the button will pause between sending each action message. The default interval is taken from a user’s default (60 seconds maximum). If the user hasn’t specified a default value,   defaults to 0.075 seconds.
+- `delay`: On return, the amount of time (in seconds) the button will pause before starting to periodically send action messages to the target object. The default delay is taken from a user’s default (60 seconds maximum). If the user hasn’t specified a default value, `delay` defaults to 0.4 seconds,
+- `interval`: On return, the amount of time (in seconds) the button will pause between sending each action message. The default interval is taken from a user’s default (60 seconds maximum). If the user hasn’t specified a default value, `interval` defaults to 0.075 seconds.
 
 ## See Also
 

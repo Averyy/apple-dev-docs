@@ -32,8 +32,8 @@ Note that the DNSServiceAddRecord/UpdateRecord/RemoveRecord are *NOT* thread-saf
 
 ## Parameters
 
-- `sdRef`: A DNSServiceRef initialized by  .
-- `RecordRef`: A pointer to an uninitialized DNSRecordRef. Upon succesfull completion of this call, this ref may be passed to   or  . If the above DNSServiceRef is passed to  , RecordRef is also invalidated and may not be used further.
+- `sdRef`: A DNSServiceRef initialized by [`DNSServiceRegister(_:_:_:_:_:_:_:_:_:_:_:_:)`](dnsserviceregister(_:_:_:_:_:_:_:_:_:_:_:_:).md).
+- `RecordRef`: A pointer to an uninitialized DNSRecordRef. Upon succesfull completion of this call, this ref may be passed to [`DNSServiceUpdateRecord(_:_:_:_:_:_:)`](dnsserviceupdaterecord(_:_:_:_:_:_:).md) or [`DNSServiceRemoveRecord(_:_:_:)`](dnsserviceremoverecord(_:_:_:).md). If the above DNSServiceRef is passed to [`DNSServiceRefDeallocate(_:)`](dnsservicerefdeallocate(_:).md), RecordRef is also invalidated and may not be used further.
 - `flags`: Currently ignored, reserved for future use.
 - `rrtype`: The type of the record (e.g. kDNSServiceType_TXT, kDNSServiceType_SRV, and so on).
 - `rdlen`: The length, in bytes, of the rdata.

@@ -19,8 +19,9 @@ func addTrigger(_ trigger: HMTrigger) async throws
 
 ## Parameters
 
-- `trigger`: The name of the new trigger. Must not be  , and must not be the name of a trigger already in the home.
-- `completion`: The block executed after the request is processed.
+- `trigger`: The name of the new trigger. Must not be `nil`, and must not be the name of a trigger already in the home.
+- `completion`: The block executed after the request is processed. - **trigger**: The newly created trigger.
+- **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

@@ -8,6 +8,10 @@ A Boolean value that indicates whether the driver communicates with human interf
 **Availability**:
 - macOS 10.15+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 This entitlement gives your driver permission to interact with the hardware for a human interface device.

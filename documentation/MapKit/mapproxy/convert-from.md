@@ -27,7 +27,7 @@ Returns a [`CLLocationCoordinate2D`](https://developer.apple.com/documentation/C
 ## Parameters
 
 - `point`: The point to convert.
-- `space`: The reference coordinate space for  .
+- `space`: The reference coordinate space for `point`.
 
 ## See Also
 

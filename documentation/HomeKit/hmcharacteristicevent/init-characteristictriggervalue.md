@@ -28,7 +28,7 @@ Use a characteristic that supports notification; otherwise this initializer thro
 ## Parameters
 
 - `characteristic`: The characteristic that the event is observing.
-- `triggerValue`: The value of the characteristic that triggers the event. Specifying   causes the event to fire every time the value of the characteristic changes.
+- `triggerValue`: The value of the characteristic that triggers the event. Specifying `nil` causes the event to fire every time the value of the characteristic changes.
 
 
 ---

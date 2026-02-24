@@ -21,7 +21,7 @@ The returned string includes the string representations of all children.
 
 ## Parameters
 
-- `options`: One or more   constants identifying an output option; bit-OR multiple constants together.  See Constants for a list of valid constants for specifying output options.
+- `options`: One or more `enum` constants identifying an output option; bit-OR multiple constants together.  See Constants for a list of valid constants for specifying output options.
 
 ## See Also
 

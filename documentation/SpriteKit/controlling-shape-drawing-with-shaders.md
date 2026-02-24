@@ -19,11 +19,54 @@ Shape nodes have two additional stroke-related properties that extend the proper
 
 By dividing the distance along the path by the total length of the path, you get the normalized position (between `0` and `1`) of each point along a shape node’s path and use it to construct the color of each pixel along the shape node’s stroke. The following code shows how you create a custom shader to do this:
 
+**Swift**:
+
+```swift
+let gradientShader = SKShader(source: "void main() {" +
+    "float normalisedPosition = v_path_distance / u_path_length;" +
+    "gl_FragColor = vec4(normalisedPosition, normalisedPosition, 0.0, 1.0);" +
+    "}")
+let squareShapeNode = SKShapeNode(rectOf: CGSize(width: 610, height: 200),
+                                  cornerRadius: 25)
+squareShapeNode.fillColor = .clear
+squareShapeNode.lineWidth = 20
+squareShapeNode.strokeShader = gradientShader
+```
+
+**Obj-C**:
+
+```objc
+void main() {
+    float normalisedPosition = v_path_distance / u_path_length;
+    gl_FragColor = vec4(normalisedPosition, normalisedPosition, 0.0, 1.0);
+}
+```
+
 The generated shape node looks like this:
 
 ![Shape node with graduated stroke](https://docs-assets.developer.apple.com/published/35f8287ee6831d82f4014a12c6c0af3f/media-2647280%402x.png)
 
 Alternatively, by casting both symbols to integers and using the modulo operator, you get the same shape node with a shader that generates a dashed line, as shown in the following code:
+
+**Swift**:
+
+```swift
+let dashedShader = SKShader(source: "void main() {" +
+    "int stripe = int(u_path_length) / 150;" +
+    "int h = int(v_path_distance) / stripe % 2;" +
+    "gl_FragColor = float4(h);" +
+    "}")
+```
+
+**Obj-C**:
+
+```objc
+void main() {
+    int stripe = int(u_path_length) / 150;
+    int h = int(v_path_distance) / stripe % 2;
+    gl_FragColor = float4(h);
+}
+```
 
 The generated shape node looks like this:
 
@@ -34,6 +77,39 @@ The generated shape node looks like this:
 You create a custom fill for a shape node by writing shader code and embedding it within an [`SKShader`](skshader.md) object. Assigning the shader to the [`fillShader`](skshapenode/fillshader.md) property overrides the appearance that would otherwise be defined by [`fillColor`](skshapenode/fillcolor.md) and [`fillTexture`](skshapenode/filltexture.md).
 
 The following shader code demonstrates filling a shape node with a simple checkerboard texture. Inside the shader, the variables `h` and `v` would, on their own, form horizontal and vertical stripes. The exclusive or operator, `^`, creates the checkerboard pattern from those stripes.
+
+**Swift**:
+
+```swift
+let checkerboardShader = SKShader(source: "void main() {" +
+    "int size = 20;" +
+    "int h = int(v_tex_coord.x * u_texture_size.x) / size % 2;" +
+    "int v = int(v_tex_coord.y * u_texture_size.y) / size % 2;" +
+    "gl_FragColor = float4(v ^ h, v ^ h, v ^ h, 1.0);" +
+    "}")
+   
+let size = CGSize(width: 610, height: 200)
+   
+checkerboardShader.uniforms = [
+    SKUniform(name: "u_texture_size",
+              vectorFloat2: vector_float2(Float(size.width), Float(size.height)))
+]
+   
+let squareShapeNode = SKShapeNode(rectOf: size,
+                                  cornerRadius: 25)
+squareShapeNode.fillShader = checkerboardShader
+```
+
+**Obj-C**:
+
+```objc
+void main() {
+    int size = 20;
+    int h = int(v_tex_coord.x * u_texture_size.x) / size % 2;
+    int v = int(v_tex_coord.y * u_texture_size.y) / size % 2;
+    gl_FragColor = float4(v ^ h, v ^ h, v ^ h, 1.0);
+}
+```
 
 The generated shape node looks like this:
 

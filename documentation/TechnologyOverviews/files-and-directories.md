@@ -8,6 +8,8 @@ The file system stores data files, apps, and the operating system itself. All di
 
 Most disks attached to Apple devices use [`About Apple File System`](https://developer.apple.com/documentation/Foundation/about-apple-file-system) (APFS) for the underlying disk format. APFS offers modern features like cloning, snapshots, space sharing, fast directory sizing, atomic safe-save operations, and sparse files. Because disks can adopt file systems other than APFS, use system frameworks like [`Foundation`](https://developer.apple.com/documentation/Foundation) to access files and directories. These frameworks provide a consistent API that handles differences between disk formats.
 
+---
+
 #### File Directory and Bundle Concepts
 
 Apple platforms adopt specific conventions for files and directories, and it’s easier to write file-related code when you know these conventions.
@@ -16,23 +18,55 @@ Apple platforms adopt specific conventions for files and directories, and it’s
 
 To specify the location of a file or directory, create a [`URL`](https://developer.apple.com/documentation/Foundation/URL) with the path to the item. Build your path from the directory names that precede the item’s location. When creating paths, adopt the following best practices:
 
--  Some platforms require you to put files in [`Well-known directories`](files-and-directories#Well-known-directories.md), and starting your path with a well-known directory is always the best approach. For example, iOS apps put files into the app’s container directory. Choose one of these directories instead of building a path from the current working directory or the root of the file system.
--  When building a path from text strings, use a forward-slash (/) character to separate directory and filenames. You can use your string to create a corresponding [`URL`](https://developer.apple.com/documentation/Foundation/URL) for the file or directory.
--  APFS is case insensitive by default, but people can configure APFS to be case sensitive. Building your code to handle case-sensitive names lets you run safely on any system.
--  The system uses filename extensions to route files to appropriate apps. It also uses them as a hint for the file’s contents.
--  A file or directory can have a second name, known as its , which you show only from your app’s interface. The system shows [`displayName(atPath:)`](https://developer.apple.com/documentation/Foundation/FileManager/displayName(atPath:)) to create a more friendly view of the file system. For example, the display name for a file might hide the filename extension. If your app shows file and directory names in its interface, show display names when they’re available. Never use display names in file paths or in code that accesses the file system.
+- **Start each path from a well-known directory.** Some platforms require you to put files in [`Well-known directories`](files-and-directories#Well-known-directories.md), and starting your path with a well-known directory is always the best approach. For example, iOS apps put files into the app’s container directory. Choose one of these directories instead of building a path from the current working directory or the root of the file system.
+- **Separate path components with forward-slash characters.** When building a path from text strings, use a forward-slash (/) character to separate directory and filenames. You can use your string to create a corresponding [`URL`](https://developer.apple.com/documentation/Foundation/URL) for the file or directory.
+- **Assume directory and filenames are case sensitive.** APFS is case insensitive by default, but people can configure APFS to be case sensitive. Building your code to handle case-sensitive names lets you run safely on any system.
+- **Include filename extensions for all files.** The system uses filename extensions to route files to appropriate apps. It also uses them as a hint for the file’s contents.
+- **Show display names only from your interface.** A file or directory can have a second name, known as its *display name*, which you show only from your app’s interface. The system shows [`displayName(atPath:)`](https://developer.apple.com/documentation/Foundation/FileManager/displayName(atPath:)) to create a more friendly view of the file system. For example, the display name for a file might hide the filename extension. If your app shows file and directory names in its interface, show display names when they’re available. Never use display names in file paths or in code that accesses the file system.
 
 ##### Well Known Directories
 
 The system organizes system files, apps, and all other content into well-known locations, each with a specific purpose. Use each directory only for its intended purpose.
 
+- **Container directory**: Because most apps run in a sandbox, an app’s container directory is the place to put most [`applicationDirectory`](https://developer.apple.com/documentation/Foundation/URL/applicationDirectory) and documents. The system creates container directories automatically for apps running in iOS, iPadOS, tvOS, visionOS, and watchOS. In macOS, the system creates container directories only for [`Accessing files from the macOS App Sandbox`](https://developer.apple.com/documentation/Security/accessing-files-from-the-macos-app-sandbox). The container directory contains additional subdirectories for storing [`applicationSupportDirectory`](https://developer.apple.com/documentation/Foundation/URL/applicationSupportDirectory), [`cachesDirectory`](https://developer.apple.com/documentation/Foundation/URL/cachesDirectory), and someone’s [`documentsDirectory`](https://developer.apple.com/documentation/Foundation/URL/documentsDirectory). An app can create additional directories inside any of these directories to organize content.
+- **Documents directory**: Inside the app’s container directory is a directory for storing a person’s [`documentsDirectory`](https://developer.apple.com/documentation/Foundation/URL/documentsDirectory). Use this directory specifically for files that someone creates as part of using your app. For macOS apps without a sandbox, this directory points to the `Documents` directory for the currently logged-in account.
+- **Temporary directory**: Most container directories also contain a place to put [`temporaryDirectory`](https://developer.apple.com/documentation/Foundation/URL/temporaryDirectory) that you create. Create files in this location, and delete them when you no longer need them.
+- **Shared directories**: An app with the proper entitlements can gain access to an app-specific directory in a person’s [`Make your app’s content available on multiple devices`](shared-data#Make-your-apps-content-available-on-multiple-devices.md) and use that directory to store content with the person’s other devices. If you build a suite of apps, or share files between an app and app extension, you can also create an [`Share content on the same device`](shared-data#Share-content-on-the-same-device.md) to share content between different processes on the same device.
+
 Get paths for other well-known directories from the [`URL`](https://developer.apple.com/documentation/Foundation/URL) or [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) type. macOS in particular has many more well-known directories, most of which people can access directly from the Finder or Terminal apps. You might use one of these locations in specific circumstances. For example, you might want to put an item directly into the home directory of the logged-in account. You rarely use these locations outside of macOS apps.
 
 ##### Bundles
 
-A  is a directory that the system presents to people as a single file. Bundles simplify people’s interactions with apps, app extensions, and other bundled items. For example, interacting with an app launches that app instead of showing you the app’s code and resource files.
+A *bundle* is a directory that the system presents to people as a single file. Bundles simplify people’s interactions with apps, app extensions, and other bundled items. For example, interacting with an app launches that app instead of showing you the app’s code and resource files.
 
 Bundle directories have specific structures, which are similar but can vary from one platform to another. In macOS, bundles are more hierarchical, with code, resources, and other types of content in dedicated directories. In iOS, iPadOS, tvOS, visionOS, and watchOS, bundles use a flatter organizational structure for simplicity. Bundle-related APIs use the platform-specific structure to locate resources. For example, when an app [`Supporting multiple languages in your app`](https://developer.apple.com/documentation/Xcode/supporting-multiple-languages-in-your-app), the APIs look for localized resources in language-specific project directories, which have an ISO 639 language code and an `.lproj` extension for the directory name.
+
+**macOS**:
+
+```swift
+MyApp.app
+    Contents
+        MacOS
+            MyApp
+        PkgInfo
+        Resources
+            Assets.car
+            en.lproj
+            de.lproj
+            ...
+```
+
+**Other platforms**:
+
+```swift
+MyApp.app
+    Assets.car
+    MyApp
+    PkgInfo
+    en.lproj
+    de.lproj
+    ...
+```
 
 Although bundles have a well-defined structure, you don’t need to know the details of this structure to create or use them. Xcode automatically creates bundle structures for you at build time, and places code and other resources in appropriate locations. To retrieve items from a bundle, use a [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) type to request the URL of the item you want first. This type searches the bundle for the requested resource, taking platform differences and language settings into account.
 
@@ -40,7 +74,7 @@ The Info pane of your project in Xcode also contains static information about yo
 
 ##### File Packages
 
-Like a bundle, a  is a directory that the system presents to people as a single file. You use file packages to implement custom file formats, especially when those formats contain multiple different types of data. For example, a word processor document type that contains one or more files with text and separate files for images and media can keep those resources separate using a file package.
+Like a bundle, a *file package* is a directory that the system presents to people as a single file. You use file packages to implement custom file formats, especially when those formats contain multiple different types of data. For example, a word processor document type that contains one or more files with text and separate files for images and media can keep those resources separate using a file package.
 
 Unlike bundles, file packages have no predefined structure, so you’re responsible for determining the contents and organization of your app’s file packages. To define a custom document type, [`Managing your app’s information property list values`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list) to the Info pane of your project in Xcode. To turn a document type into a package, add the [`LSTypeIsPackage`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDocumentTypes/LSTypeIsPackage) key to its definition.
 
@@ -50,6 +84,8 @@ An [`Managing assets with asset catalogs`](https://developer.apple.com/documenta
 
 ![A screenshot of the UIKit catalog sample code project that shows one of the images in the project's asset catalog.](https://docs-assets.developer.apple.com/published/87cb298c66a5e5f21cdb3ce6f7010ad2/asset-catalog%402x.png)
 
+---
+
 #### Read Write and Manage Files and Directories
 
 System-provided objects minimize the time you spend reading, writing, and managing files directly. In a document-based app, [`FileDocument`](https://developer.apple.com/documentation/SwiftUI/FileDocument), [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument), and [`NSDocument`](https://developer.apple.com/documentation/AppKit/NSDocument) automatically read and write the underlying file for you, and support autosave operations and your app’s menus. Similarly, [`Image`](https://developer.apple.com/documentation/SwiftUI/Image), [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage), and [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) types read image files and provide you with an object you can use directly in your app. These types let you focus on using the data, and are often more efficient than managing the files yourself.
@@ -58,13 +94,48 @@ When working with custom file types, or files the system doesn’t natively supp
 
 When you need to read and write files, you have several options. You can do so all at once using a [`Data`](https://developer.apple.com/documentation/Foundation/Data) type, or you can open a file and read it incrementally using a [`FileHandle`](https://developer.apple.com/documentation/Foundation/FileHandle) object or the POSIX APIs. If you have a custom type that uses a file package, manage the files in that package using a [`FileWrapper`](https://developer.apple.com/documentation/Foundation/FileWrapper) object.
 
+**Data object**:
+
+```swift
+let filePathURL = ... // A path to a new file.
+let objectToSave = ... // The object to save.
+do {
+    // Create a Data object and write it atomically to disk.
+    let data = try NSKeyedArchiver.archivedData(withRootObject: objectToSave, requiringSecureCoding: true)
+    try data.write(to: filePathURL, options: .atomic)
+    print("File written successfully.")
+}
+catch {
+    print("File not written.")
+}
+```
+
+**File handle**:
+
+```swift
+let filePathURL = ... // A path to an existing file.
+do {
+    // Open a file handle and read data from it.
+    let fileHandle = try FileHandle(forReadingFrom: filePathURL)
+    let fileContents = try fileHandle.readToEnd()
+    print("File read successfully.")
+}
+catch {
+    print("File not read.")
+}
+```
+
 If your app shares files with other processes, [`Coordinate access to shared files`](shared-data#Coordinate-access-to-shared-files.md) to ensure file integrity. If your app shares files with an app extension or another process, or if you read and write files from someone’s iCloud storage, you must use file coordinators.
+
+---
 
 #### Download Large Files in the Background
 
 When people buy your app from the App Store, they want to be able to download it quickly and try it out. If your app has large data files that it doesn’t need right away, consider downloading them separately after your app is already on someone’s device. A game might ship with the assets for the first level and download assets for other levels separately. Similarly, you might choose to download a large language model separately, so you can update it later.
 
 To support background downloads, store your files on your company’s servers or on the App Store. Adopt the [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets) framework and use it to schedule downloads. If your app needs files at first launch, configure a [`Creating managed asset packs`](https://developer.apple.com/documentation/BackgroundAssets/creating-managed-asset-packs) for the system to download right away. Provide an [`Downloading essential assets in the background`](https://developer.apple.com/documentation/BackgroundAssets/downloading-essential-assets-in-the-background) to track the download progress of your app’s files.
+
+---
 
 #### Protect the Files You Create
 

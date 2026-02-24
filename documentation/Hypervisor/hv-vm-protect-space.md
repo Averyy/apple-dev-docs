@@ -23,7 +23,7 @@ func hv_vm_protect_space(_ asid: hv_vm_space_t, _ gpa: hv_gpaddr_t, _ size: Int,
 - `asid`: The address space ID.
 - `gpa`: The page aligned address in the guest physical address space.
 - `size`: The size in bytes of the region to unmap.
-- `flags`: The new  ,   and   permissions of the region.
+- `flags`: The new `READ`, `WRITE` and `EXECUTE` permissions of the region.
 
 ## See Also
 

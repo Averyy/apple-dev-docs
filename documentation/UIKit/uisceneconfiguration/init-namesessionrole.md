@@ -28,8 +28,8 @@ After creating a scene-configuration object, supply values for the [`sceneClass`
 
 ## Parameters
 
-- `name`: The app-specific name you want to assign to the scene. For scenes you specify in your Info.plist file, this value corresponds to the string assigned to the   key.
-- `sessionRole`: The role of the scene. For a list of possible roles, see  .
+- `name`: The app-specific name you want to assign to the scene. For scenes you specify in your Info.plist file, this value corresponds to the string assigned to the [`UISceneConfigurationName`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UISceneConfigurations/UIWindowSceneSessionRoleApplication/UISceneConfigurationName) key.
+- `sessionRole`: The role of the scene. For a list of possible roles, see [`UISceneSession.Role`](uiscenesession/role-swift.struct.md).
 
 
 ---

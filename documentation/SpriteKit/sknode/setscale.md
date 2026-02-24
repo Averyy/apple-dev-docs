@@ -22,7 +22,7 @@ func setScale(_ scale: CGFloat)
 
 ## Parameters
 
-- `scale`: The new value to use for the node’s   and   properties.
+- `scale`: The new value to use for the node’s [`xScale`](sknode/xscale.md) and [`yScale`](sknode/yscale.md) properties.
 
 ## See Also
 

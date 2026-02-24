@@ -36,7 +36,7 @@ The text system calls the method repeatedly when a gesture requires the text vie
 
 ## Parameters
 
-- `point`: The location to which to autoscroll, in the coordinate system of your view’s  .
+- `point`: The location to which to autoscroll, in the coordinate system of your view’s [`textInputView`](betextinput/textinputview.md).
 
 ## See Also
 

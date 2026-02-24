@@ -13,6 +13,10 @@ A Boolean value indicating whether the Cocoa app supports high-resolution displa
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [UIAppSupportsHDR](information-property-list/uiappsupportshdr.md)

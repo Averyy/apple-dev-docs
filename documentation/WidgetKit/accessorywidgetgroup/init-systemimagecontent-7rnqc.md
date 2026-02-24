@@ -21,7 +21,7 @@ This initializer creates a `Label` view on your behalf, and treats the label sim
 
 ## Parameters
 
-- `titleKey`: A string for the  ’s label.
+- `titleKey`: A string for the `AccessoryWidgetGroup`’s label.
 - `systemImage`: The name of the image resource to lookup.
 - `content`: A view builder for the content of the accessory group.
 

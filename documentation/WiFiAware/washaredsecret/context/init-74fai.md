@@ -25,7 +25,7 @@ Custom contexts may use any data. Set the same byte value on the local and remot
 
 ## Parameters
 
-- `data`: The data to use as the underlying context, which must be greater than or equal to   bytes long.
+- `data`: The data to use as the underlying context, which must be greater than or equal to `3` bytes long.
 
 
 ---

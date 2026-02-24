@@ -15,9 +15,9 @@ func enumerateAssets(at indexSet: IndexSet!, options: NSEnumerationOptions = [],
 
 ## Parameters
 
-- `indexSet`: The index set must not specify any indexes exceeding  .
+- `indexSet`: The indexes of the assets to enumerate. The index set must not specify any indexes exceeding [`numberOfAssets()`](alassetsgroup/numberofassets().md).
 - `options`: Options for the enumeration.
-- `enumerationBlock`: The block to invoke using each of the assets in the group at the indexes in  .
+- `enumerationBlock`: The block to invoke using each of the assets in the group at the indexes in `indexSet`.
 
 ## See Also
 

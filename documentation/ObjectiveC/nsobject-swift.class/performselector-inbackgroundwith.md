@@ -26,8 +26,8 @@ This method creates a new thread in your application, putting your application i
 
 ## Parameters
 
-- `aSelector`: A   that identifies the method to invoke. The method should not have a significant return value and should take a single argument of type id, or no arguments.
-- `arg`: The argument to pass to the method when it is invoked. Pass   if the method does not take an argument.
+- `aSelector`: A [`Selector`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Selector.html#//apple_ref/doc/uid/TP40008195-CH48) that identifies the method to invoke. The method should not have a significant return value and should take a single argument of type id, or no arguments.
+- `arg`: The argument to pass to the method when it is invoked. Pass `nil` if the method does not take an argument.
 
 ## See Also
 

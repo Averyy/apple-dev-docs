@@ -26,8 +26,8 @@ Returns `true` if the owner ID was stored in the address pointed to by `owner`, 
 
 ## Parameters
 
-- `fileSec`: The   object.
-- `owner`: The address of an integer of type  .
+- `fileSec`: The `CFFileSecurityRef` object.
+- `owner`: The address of an integer of type `uid_t`.
 
 ## See Also
 

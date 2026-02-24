@@ -27,7 +27,7 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `input_name`: The name to convert.
 - `mech_type`: The mechanism for which the name should be converted.
-- `output_name`: A pointer the function uses to return the canonicalized name. Release the name with a call to the   function when you are done with it.
+- `output_name`: A pointer the function uses to return the canonicalized name. Release the name with a call to the [`gss_release_name(_:_:)`](gss_release_name(_:_:).md) function when you are done with it.
 
 ## See Also
 

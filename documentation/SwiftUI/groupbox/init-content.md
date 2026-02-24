@@ -21,8 +21,8 @@ init(_ titleKey: LocalizedStringKey, @ViewBuilder content: () -> Content)
 
 ## Parameters
 
-- `titleKey`: The key for the group box’s title, which describes the   content of the group box.
-- `content`: A   that produces the content for the   group box.
+- `titleKey`: The key for the group box’s title, which describes the content of the group box.
+- `content`: A [`ViewBuilder`](viewbuilder.md) that produces the content for the group box.
 
 ## See Also
 

@@ -29,7 +29,7 @@ If a subview’s height must be a multiple of a certain number, use this method 
 
 - `splitView`: The split view that sends the message.
 - `proposedPosition`: The cursor’s current position, and the proposed position of the divider.
-- `dividerIndex`: The index of the divider the user is moving, with the first divider being   and increasing from top to bottom (or left to right).
+- `dividerIndex`: The index of the divider the user is moving, with the first divider being `0` and increasing from top to bottom (or left to right).
 
 
 ---

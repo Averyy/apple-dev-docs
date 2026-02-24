@@ -20,14 +20,14 @@ Vector `y` is multiplied by `beta`. Matrix `a` is multiplied by `alpha`. Then if
 
 ## Parameters
 
-- `forma`: Selects the variant computation to be performed: ‘T’ causes the transpose  of matrix   to be used, ‘N’ causes   itself to be used.
-- `m`: Number of rows in  . If   = ‘N’,   is the length of vector  ; if   = ‘T’,   is the length of vector  ; must be a multiple of 4.
-- `n`: Number of columns in  . If   = ‘N’,   is the length of vector  ; if   = ‘T’,   is the length of vector  ; must be a multiple of 4.
-- `alpha`: Scalar multiplier for matrix  .
-- `a`:   by   matrix with elements of type  .
-- `x`: Vector with elements of type  .
-- `beta`: Scalar multiplier for vector  .
-- `y`: Destination vector with   elements of type  .
+- `forma`: Selects the variant computation to be performed: ‘T’ causes the transpose  of matrix `a` to be used, ‘N’ causes `a` itself to be used.
+- `m`: Number of rows in `a`. If `forma` = ‘N’, `m` is the length of vector `y`; if `forma` = ‘T’, `m` is the length of vector `x`; must be a multiple of 4.
+- `n`: Number of columns in `a`. If `forma` = ‘N’, `m` is the length of vector `x`; if `forma` = ‘T’, `m` is the length of vector `y`; must be a multiple of 4.
+- `alpha`: Scalar multiplier for matrix `a`.
+- `a`: `m` by `n` matrix with elements of type `float`.
+- `x`: Vector with elements of type `float`.
+- `beta`: Scalar multiplier for vector `y`.
+- `y`: Destination vector with `n` elements of type `float`.
 
 ## See Also
 

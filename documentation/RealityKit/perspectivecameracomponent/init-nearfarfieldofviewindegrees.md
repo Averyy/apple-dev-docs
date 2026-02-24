@@ -21,8 +21,8 @@ init(near: Float = 0.01, far: Float = .infinity, fieldOfViewInDegrees: Float = 6
 
 ## Parameters
 
-- `near`: The minimum distance in meters from the camera that the camera   can see.
-- `far`: The maximum distance in meters from the camera that the camera   can see.
+- `near`: The minimum distance in meters from the camera that the camera can see.
+- `far`: The maximum distance in meters from the camera that the camera can see.
 - `fieldOfViewInDegrees`: The camera’s field of view, in degrees.
 
 ## See Also

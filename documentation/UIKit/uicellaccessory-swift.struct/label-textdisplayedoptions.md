@@ -29,8 +29,8 @@ Use this cell accessory to display a short string of text, like a small number s
 ## Parameters
 
 - `text`: The text for the label to display.
-- `displayed`: The cell-editing states that the label accessory appears in. This parameter has a default value of  .
-- `options`: Configuration options for the label. See   for possible configuration options.
+- `displayed`: The cell-editing states that the label accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.always`](uicellaccessory-swift.struct/displayedstate/always.md).
+- `options`: Configuration options for the label. See [`UICellAccessory.LabelOptions`](uicellaccessory-swift.struct/labeloptions.md) for possible configuration options.
 
 ## See Also
 

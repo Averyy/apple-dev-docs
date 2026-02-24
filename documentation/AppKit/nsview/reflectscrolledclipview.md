@@ -20,7 +20,7 @@ func reflectScrolledClipView(_ clipView: NSClipView)
 
 ## Parameters
 
-- `clipView`: The   object whose superview is to be notified.
+- `clipView`: The [`NSClipView`](nsclipview.md) object whose superview is to be notified.
 
 ## See Also
 

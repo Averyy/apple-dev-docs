@@ -25,8 +25,8 @@ After the focus is updated to a new view, the focus engine calls this method on 
 
 ## Parameters
 
-- `context`: An instance of   containing metadata of the focus related update.
-- `coordinator`: An instance of   used for coordinating focus-related animations.
+- `context`: An instance of [`UIFocusUpdateContext`](uifocusupdatecontext.md) containing metadata of the focus related update.
+- `coordinator`: An instance of [`UIFocusAnimationCoordinator`](uifocusanimationcoordinator.md) used for coordinating focus-related animations.
 
 
 ---

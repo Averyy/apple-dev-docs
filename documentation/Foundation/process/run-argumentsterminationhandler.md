@@ -21,7 +21,7 @@ An initialized `NSTask` object with the environment of the current process.
 ## Parameters
 
 - `url`: The URL for the executable.
-- `arguments`: An array of   objects that supplies the arguments to the task. If   is  , the system raises an  .
+- `arguments`: An array of `NSString` objects that supplies the arguments to the task. If `arguments` is `nil`, the system raises an `NSInvalidArgumentException`.
 - `terminationHandler`: The system invokes this completion block when the task has completed.
 
 ## See Also

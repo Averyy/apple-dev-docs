@@ -29,7 +29,7 @@ When posting an item the service may provide for a separate subject field and da
 ## Parameters
 
 - `activityViewController`: The activity view controller object requesting information about the data item.
-- `activityType`: The selected activity type; may be  .
+- `activityType`: The selected activity type; may be `nil`.
 
 ## See Also
 

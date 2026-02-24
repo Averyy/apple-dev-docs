@@ -1,4 +1,4 @@
 Completed scraping Core Audio!
-Total pages scraped: 0
-Pages skipped (unchanged): 850
+Total pages scraped: 848
+Pages skipped (unchanged): 2
 Pages failed: 0

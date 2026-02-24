@@ -22,8 +22,8 @@ Location of the first flagged grammatical unit within `string`.
 
 - `sender`: Spell server satisfying a grammatical analysis request.
 - `stringToCheck`: String to analyze.
-- `language`: Language use in  . When  , the language selected in the Spelling panel is used.
-- `details`: On output, dictionaries describing grammar-analysis details within the flagged grammatical unit. See the   class for information about these dictionaries.
+- `language`: Language use in `string`. When `nil`, the language selected in the Spelling panel is used.
+- `details`: On output, dictionaries describing grammar-analysis details within the flagged grammatical unit. See the [`NSSpellServer`](nsspellserver.md) class for information about these dictionaries.
 
 ## See Also
 

@@ -3,7 +3,7 @@
 **Framework**: Address Book  
 **Kind**: var
 
-Search for elements that are  within a time interval (in seconds) forward from today.
+Search for elements that are *not* within a time interval (in seconds) forward from today.
 
 **Availability**:
 - macOS ?+

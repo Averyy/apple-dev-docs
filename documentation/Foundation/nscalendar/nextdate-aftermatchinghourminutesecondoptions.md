@@ -30,7 +30,7 @@ A new `NSDate` object.
 - `hourValue`: The value for the hour component.
 - `minuteValue`: The value for the minute component.
 - `secondValue`: The value for the second component.
-- `options`: Options for the calculation. For possible values, see  .
+- `options`: Options for the calculation. For possible values, see [`NSCalendar.Options`](nscalendar/options.md).
 
 ## See Also
 

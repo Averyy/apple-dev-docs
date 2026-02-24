@@ -6,7 +6,7 @@ Prepare your app to discover and control a Matter device.
 
 #### Overview
 
-If you want your app to interact with a Matter device, you need to commission it.  a Matter device makes it a part of your , which is a collection of Matter devices that communicate with each other.
+If you want your app to interact with a Matter device, you need to commission it. *Commissioning* a Matter device makes it a part of your *fabric*, which is a collection of Matter devices that communicate with each other.
 
 You can securely commission a Matter device using certificates. Generate your own certificates using [`MTRCertificates`](mtrcertificates.md) or another process. Alternatively, you can provide a root [`MTRKeypair`](mtrkeypair.md), and the Matter framework generates certificates for you.
 

@@ -27,7 +27,7 @@ If `encodingInvalidCharacters` is `true`, this initializer tries to encode the s
 ## Parameters
 
 - `URLString`: The URL string to parse.
-- `encodingInvalidCharacters`: A Boolean value that indicates whether the initializer attempts to encode any invalid characters in  .
+- `encodingInvalidCharacters`: A Boolean value that indicates whether the initializer attempts to encode any invalid characters in `URLString`.
 
 ## See Also
 

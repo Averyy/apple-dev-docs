@@ -26,8 +26,8 @@ Returns `true` if the group ID was stored in the address pointed to by `group`, 
 
 ## Parameters
 
-- `fileSec`: The   object.
-- `group`: The address of an integer of type  .
+- `fileSec`: The `CFFileSecurityRef` object.
+- `group`: The address of an integer of type `gid_t`.
 
 ## See Also
 

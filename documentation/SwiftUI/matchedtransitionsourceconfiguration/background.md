@@ -26,7 +26,7 @@ During a zoom transition, the background color fills the interpolated shape as i
 
 ## Parameters
 
-- `style`: The color to apply behind the content within the   matched transition source..
+- `style`: The color to apply behind the content within the matched transition source..
 
 
 ---

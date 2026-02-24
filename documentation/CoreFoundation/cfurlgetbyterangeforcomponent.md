@@ -30,9 +30,9 @@ This function is intended to be used in conjunction with the [`CFURLGetBytes(_:_
 
 ## Parameters
 
-- `url`: The URL containing  .
-- `component`: The type of component in   whose range you want to obtain. See   for possible values.
-- `rangeIncludingSeparators`: Specifies the range of   including the sequences that separate component from the previous and next components. If there is no previous or next components, this function will match the range of the component itself. If   does not contain  ,   is set to the location where the component would be inserted.
+- `url`: The URL containing `component`.
+- `component`: The type of component in `anURL` whose range you want to obtain. See [`CFURLComponentType`](cfurlcomponenttype.md) for possible values.
+- `rangeIncludingSeparators`: Specifies the range of `component` including the sequences that separate component from the previous and next components. If there is no previous or next components, this function will match the range of the component itself. If `anURL` does not contain `component`, `rangeIncludingSeparators` is set to the location where the component would be inserted.
 
 ## See Also
 

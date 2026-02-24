@@ -24,9 +24,9 @@ optional func screenRecorder(_ screenRecorder: RPScreenRecorder, didStopRecordin
 
 ## Parameters
 
-- `screenRecorder`: The   instance.
-- `error`: An   describing why the recording stopped.
-- `previewViewController`: An   interface object that is returned if anything at all was recorded. The interface allows the user to preview and edit the recording.
+- `screenRecorder`: The [`RPScreenRecorder`](rpscreenrecorder.md) instance.
+- `error`: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) describing why the recording stopped.
+- `previewViewController`: An [`RPPreviewViewController`](rppreviewviewcontroller.md) interface object that is returned if anything at all was recorded. The interface allows the user to preview and edit the recording.
 
 ## See Also
 

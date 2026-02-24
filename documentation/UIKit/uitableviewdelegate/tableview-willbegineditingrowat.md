@@ -26,7 +26,7 @@ This method is called when the user swipes horizontally across a row; as a conse
 ## Parameters
 
 - `tableView`: The table view providing this information.
-- `indexPath`: An index path locating the row in  .
+- `indexPath`: An index path locating the row in `tableView`.
 
 ## See Also
 

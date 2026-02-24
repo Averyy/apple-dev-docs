@@ -24,8 +24,8 @@ This is the designated initializer for the `QLPreviewView` class.
 
 ## Parameters
 
-- `frame`: The frame rectangle for the initialized   object.
-- `style`: The desired style for the   object. For a list of possible styles, see  .
+- `frame`: The frame rectangle for the initialized `QLPreviewView` object.
+- `style`: The desired style for the `QLPreviewView` object. For a list of possible styles, see [`QLPreviewViewStyle`](qlpreviewviewstyle.md).
 
 ## See Also
 

@@ -18,6 +18,10 @@ To manage your components, choose Xcode > Settings and click Components in the s
 
 There are three types of components:
 
+- **Platform Support**: The platforms that you can develop your apps for.
+- **Other Components**: Optional Xcode features you can enable and disable.
+- **Other Installed Platforms**: Simulator runtimes for different devices and OS releases that you can run your app on.
+
 To download and install a component in any of these sections, click the Get button next to the component.
 
 To remove or disable components you no longer use and recover their storage space, click the Info button next to the component. In the dialog that appears, click Delete or Turn Off depending on the component.

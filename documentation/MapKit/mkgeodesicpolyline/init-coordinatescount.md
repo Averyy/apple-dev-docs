@@ -27,7 +27,7 @@ A new geodesic polyline object.
 ## Parameters
 
 - `coords`: A pointer to the array of coordinates that define the path.
-- `count`: The number of items in the   array.
+- `count`: The number of items in the `coords` array.
 
 ## See Also
 

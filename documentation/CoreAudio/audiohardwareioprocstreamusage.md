@@ -17,6 +17,10 @@ struct AudioHardwareIOProcStreamUsage
 
 #### Overview
 
+- **`mIOProc`**: The IOProc whose stream usage is being specified.
+- **`mNumberStreams`**: The number of streams being specified.
+- **`mStreamIsOn`**: An array of UInt32’s whose length is specified by mNumberStreams. Each element of the array corresponds to a stream. A value of 0 means the stream is not to be enabled. Any other value means the stream is to be used.
+
 ## Topics
 
 ### Initializers

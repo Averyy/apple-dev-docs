@@ -20,7 +20,7 @@ In Swift, you can either call this method and pass a completion handler closure,
 
 ## Parameters
 
-- `completionHandler`: A block or closure that executes when FSKit finishes its fetch process. If the fetch succeeds, the first parameter contains an array of   instances that identify installed modules. If the fetch fails, the second parameter contains an error detailing the failure.
+- `completionHandler`: A block or closure that executes when FSKit finishes its fetch process. If the fetch succeeds, the first parameter contains an array of [`FSModuleIdentity`](fsmoduleidentity.md) instances that identify installed modules. If the fetch fails, the second parameter contains an error detailing the failure.
 
 ## See Also
 

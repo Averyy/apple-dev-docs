@@ -30,8 +30,8 @@ This method uses a sliding window to chunk the input features and validation fea
 
 ## Parameters
 
-- `input`: A sequence of annotated features. Each feature’s shape should be   and each   annotation’s shape should be  .
-- `validation`: A sequence of annotated validation features. The feature and annotation shapes should be the   same as the input parameter.
+- `input`: A sequence of annotated features. Each feature’s shape should be `[featureSize]` and each annotation’s shape should be `[annotationSize]`.
+- `validation`: A sequence of annotated validation features. The feature and annotation shapes should be the same as the input parameter.
 - `eventHandler`: An event handler.
 
 ## See Also

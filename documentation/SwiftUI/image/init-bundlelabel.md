@@ -23,8 +23,8 @@ init(_ name: String, bundle: Bundle? = nil, label: Text)
 ## Parameters
 
 - `name`: The name of the image resource to lookup
-- `bundle`: The bundle to search for the image resource. If  ,   SwiftUI uses the main  . Defaults to  .
-- `label`: The label associated with the image. SwiftUI uses the label   for accessibility.
+- `bundle`: The bundle to search for the image resource. If `nil`, SwiftUI uses the main `Bundle`. Defaults to `nil`.
+- `label`: The label associated with the image. SwiftUI uses the label for accessibility.
 
 ## See Also
 

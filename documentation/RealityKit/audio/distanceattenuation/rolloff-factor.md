@@ -29,7 +29,7 @@ The case’s default value is `1.0`, which attenuates spatial audio as the liste
 
 ## Parameters
 
-- `factor`: The attenuation model’s loss strength factor in the range of  .
+- `factor`: The attenuation model’s loss strength factor in the range of `[0, Double.infinity]`.
 
 
 ---

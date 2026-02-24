@@ -26,7 +26,7 @@ The number of elements that the queue can hold. Returns `0` if there is an error
 
 ## Parameters
 
-- `queue`: The queue the function is interrogating. Must not be  .
+- `queue`: The queue the function is interrogating. Must not be `NULL`.
 
 ## See Also
 

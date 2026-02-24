@@ -28,7 +28,7 @@ GameplayKit provides two strategist classes, and you can also use this protocol 
 GameplayKit provides two strategist classes:
 
 - The [`GKMinmaxStrategist`](gkminmaxstrategist.md) class uses a numeric score for each possible game model state, and performs an exhaustive tree search to find moves that maximize the player’s score while minimizing opponent scores. This strategy can result in optimal gameplay, but requires a scoring method for game models and has a performance cost that increases greatly with game complexity.
-- The [`GKMonteCarloStrategist`](gkmontecarlostrategist.md) class performs a randomized, probabilistic search for winning end states. This strategy doesn’t always choose the  possible move, but is likely to choose  moves, and has a low performance cost even for very complex games. In addition, the Monte Carlo strategy is concerned only with whether a game model state represents a win, so you don’t need to implement a scoring method.
+- The [`GKMonteCarloStrategist`](gkmontecarlostrategist.md) class performs a randomized, probabilistic search for winning end states. This strategy doesn’t always choose the *best* possible move, but is likely to choose *good* moves, and has a low performance cost even for very complex games. In addition, the Monte Carlo strategy is concerned only with whether a game model state represents a win, so you don’t need to implement a scoring method.
 
 ##### Using a Strategist
 
@@ -65,9 +65,9 @@ For more information about describing your gameplay model and using strategists,
 ## See Also
 
 - [class GKMinmaxStrategist](gkminmaxstrategist.md)
-  An AI that chooses moves in turn-based games using a  strategy.
+  An AI that chooses moves in turn-based games using a *deterministic* strategy.
 - [class GKMonteCarloStrategist](gkmontecarlostrategist.md)
-  An AI that chooses moves in turn-based games using a  strategy.
+  An AI that chooses moves in turn-based games using a *probabilistic* strategy.
 - [protocol GKGameModel](gkgamemodel.md)
   Implement this protocol to describe your gameplay model so that a strategist object can plan game moves.
 - [protocol GKGameModelPlayer](gkgamemodelplayer.md)

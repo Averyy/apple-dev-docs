@@ -34,8 +34,8 @@ The visionOS 26.1 SDK provides support for developing apps for Apple Vision Pro 
 
 ###### Known Issues
 
-- Logitech Muse might stop spatial tracking during usage, despite showing as connected in Settings.  (154905373)  Turn Bluetooth off and on, power cycle the Logitech Muse, and reboot Vision Pro.
-- Setting down Logitech Muse outside of Vision Pro’s field of view might cause Vision Pro to no longer receive pinch inputs from the hand that had been holding Muse.  (160816595)  Pick Muse back up and set it down within Vision Pro’s field of view.
+- Logitech Muse might stop spatial tracking during usage, despite showing as connected in Settings.  (154905373) **Workaround:** Turn Bluetooth off and on, power cycle the Logitech Muse, and reboot Vision Pro.
+- Setting down Logitech Muse outside of Vision Pro’s field of view might cause Vision Pro to no longer receive pinch inputs from the hand that had been holding Muse.  (160816595) **Workaround:** Pick Muse back up and set it down within Vision Pro’s field of view.
 
 ##### Swiftui
 
@@ -45,7 +45,7 @@ The visionOS 26.1 SDK provides support for developing apps for Apple Vision Pro 
 
 ## See Also
 
-- [visionOS 26.4 Beta Release Notes](visionos-26_4-release-notes.md)
+- [visionOS 26.4 Beta 2 Release Notes](visionos-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [visionOS 26.3 Release Notes](visionos-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

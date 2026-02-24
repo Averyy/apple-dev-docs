@@ -111,8 +111,8 @@ extension View {
 
 ## Parameters
 
-- `keyPath`: A key path that indicates the property of the    structure to update.
-- `value`: The new value to set for the item specified by  .
+- `keyPath`: A key path that indicates the property of the [`ContainerValues`](containervalues.md) structure to update.
+- `value`: The new value to set for the item specified by `keyPath`.
 
 ## See Also
 

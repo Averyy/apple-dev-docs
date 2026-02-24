@@ -16,7 +16,7 @@ func setVisibilityPriority(_ priority: NSStackView.VisibilityPriority, for view:
 
 #### Discussion
 
-When Auto Layout reduces the stack view’s size (such as when a user reduces the size of the window containing the stack view), causing one or more views to no longer fit, the stack view detaches views in order of increasing . A view with lower visibility priority detaches before a view with higher visibility priority. A set of views with identical, detachable visibility priority are all detached or reattached together. A view with the highest possible visibility priority never detaches.
+When Auto Layout reduces the stack view’s size (such as when a user reduces the size of the window containing the stack view), causing one or more views to no longer fit, the stack view detaches views in order of increasing *visibility priority*. A view with lower visibility priority detaches before a view with higher visibility priority. A set of views with identical, detachable visibility priority are all detached or reattached together. A view with the highest possible visibility priority never detaches.
 
 A view in a detached state is not present in the stack view’s view hierarchy, but it still consumes memory.
 
@@ -26,8 +26,8 @@ To allow a view to detach as needed by the stack view, set a visibility priority
 
 ## Parameters
 
-- `priority`: The visibility priority for a specified view. Valid values are those in the   enumeration.
-- `view`: The view whose visibility priority you are setting.
+- `priority`: The visibility priority for a specified view. Valid values are those in the [`NSStackView.VisibilityPriority`](nsstackview/visibilitypriority.md) enumeration.
+- `view`: The view whose visibility priority you are setting. > ❗ **Important**:  If you attempt to set visibility priority for a view that is not in the stack view, the system raises an exception.
 
 ## See Also
 

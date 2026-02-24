@@ -11,6 +11,12 @@ A Boolean value that indicates whether the app can enable custom adapters for th
 - macOS 26.0+
 - visionOS 26.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 Before submitting an app with this entitlement to the App Store, you must get permission to use the entitlement. To apply for the entitlement, log in to your Apple Developer Account with an Account Holder role and fill out the [`request form`](https://developer.apple.comhttps://developer.apple.com/contact/request/foundation-models-framework-adapter-entitlement/).

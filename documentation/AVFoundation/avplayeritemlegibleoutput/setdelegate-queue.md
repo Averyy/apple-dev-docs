@@ -25,7 +25,7 @@ Because the delegate is held using a zeroing-weak reference, it is safe to deall
 
 ## Parameters
 
-- `delegate`: An object conforming to the   protocol.
+- `delegate`: An object conforming to the [`AVPlayerItemLegibleOutputPushDelegate`](avplayeritemlegibleoutputpushdelegate.md) protocol.
 - `delegateQueue`: A dispatch queue on which all delegate methods will be called.
 
 ## See Also

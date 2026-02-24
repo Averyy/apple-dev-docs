@@ -23,7 +23,7 @@ class func showPreferencesForExtension(withIdentifier identifier: String) async 
 ## Parameters
 
 - `identifier`: The identifier for a Safari app extension in your app bundle.
-- `completionHandler`: A completion handler called after the operation completes. The completion handler takes the following parameter:
+- `completionHandler`: A completion handler called after the operation completes. The completion handler takes the following parameter: - **error**: If an error occurred, this parameter describes the error. If the operation succeeded, this parameter holds `nil`.
 
 ## See Also
 

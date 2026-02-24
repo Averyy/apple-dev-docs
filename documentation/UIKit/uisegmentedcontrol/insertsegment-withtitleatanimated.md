@@ -21,8 +21,8 @@ func insertSegment(withTitle title: String?, at segment: Int, animated: Bool)
 ## Parameters
 
 - `title`: A string to use as the segment’s title.
-- `segment`: The method inserts the new segment just before the designated one.
-- `animated`:   if the insertion of the new segment must be animated, otherwise  .
+- `segment`: An index number identifying a segment in the control. `segment` must be a number in the range 0 to the number of segments ([`numberOfSegments`](uisegmentedcontrol/numberofsegments.md)) inclusive; the segmented control pins values exceeding this upper range to the last segment. The method inserts the new segment just before the designated one.
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) if the insertion of the new segment must be animated, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

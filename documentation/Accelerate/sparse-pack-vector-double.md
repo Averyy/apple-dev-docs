@@ -26,31 +26,31 @@ The number of nonzero values written. On success, `y` and `indy` are updated wit
 
 #### Discussion
 
-Pack the first `nz` nonzero values and indices from the dense vector  and place them in `y` and `indy`. If less than `nz` nonzero elements are found in the `N` elements of `x`, then the last `nz - actual_nonzero_count` elements of `y` and `indy` are unused. The number of indices written can range from `0` to `nz` values and the number written is returned.
+Pack the first `nz` nonzero values and indices from the dense vector *x* and place them in `y` and `indy`. If less than `nz` nonzero elements are found in the `N` elements of `x`, then the last `nz - actual_nonzero_count` elements of `y` and `indy` are unused. The number of indices written can range from `0` to `nz` values and the number written is returned.
 
 > ❗ **Important**:  Apple provides the BLAS and LAPACK libraries under the Accelerate framework to be in line with LAPACK 3.9.1. Starting with iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26, and watchOS 26, the libraries are in line with LAPACK 3.12.0. These new interfaces provide additional functionality, as well as a new ILP64 interface. To use the new interfaces, define `ACCELERATE_NEW_LAPACK` before including the Accelerate or vecLib headers. For ILP64 interfaces, also define `ACCELERATE_LAPACK_ILP64`. For Swift projects, specify `ACCELERATE_NEW_LAPACK=1` and `ACCELERATE_LAPACK_ILP64=1` as preprocessor macros in Xcode build settings.
 
 ## Parameters
 
-- `N`: The number of elements in the dense vector  .
-- `nz`: The number of nonzero values to collect.  If less than   nonzero elements are found in the   elements of  , then the last   of   and   are unused.
-- `x`: Pointer to the dense vector  .
-- `incx`: Increment between valid values in the dense vector  . Negative strides are supported.
-- `y`: The destination dense storage of nonzero values of  . Expected to be of size   elements.
-- `indy`: The destination dense storage of nonzero indices of  .  Expected to be of size   elements.
+- `N`: The number of elements in the dense vector *x*.
+- `nz`: The number of nonzero values to collect.  If less than `nz` nonzero elements are found in the `N` elements of *x*, then the last `nz - actual_nonzero_count` of `y` and `indy` are unused.
+- `x`: Pointer to the dense vector *x*.
+- `incx`: Increment between valid values in the dense vector *x*. Negative strides are supported.
+- `y`: The destination dense storage of nonzero values of *x*. Expected to be of size `nz` elements.
+- `indy`: The destination dense storage of nonzero indices of *x*.  Expected to be of size `nz` elements.
 
 ## See Also
 
 - [func sparse_get_vector_nonzero_count_double(sparse_dimension, UnsafePointer<Double>!, sparse_stride) -> Int](sparse_get_vector_nonzero_count_double(_:_:_:).md)
-  Returns the number of nonzero values in the double-precision dense vector .
+  Returns the number of nonzero values in the double-precision dense vector *x*.
 - [func sparse_get_vector_nonzero_count_float(sparse_dimension, UnsafePointer<Float>!, sparse_stride) -> Int](sparse_get_vector_nonzero_count_float(_:_:_:).md)
-  Returns the number of nonzero values in the single-precision dense vector .
+  Returns the number of nonzero values in the single-precision dense vector *x*.
 - [func sparse_pack_vector_float(sparse_dimension, sparse_dimension, UnsafePointer<Float>!, sparse_stride, UnsafeMutablePointer<Float>!, UnsafeMutablePointer<sparse_index>!) -> Int](sparse_pack_vector_float(_:_:_:_:_:_:).md)
   Packs nonzero values from a single-precision dense vector to a destination array.
 - [func sparse_unpack_vector_double(sparse_dimension, sparse_dimension, Bool, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<Double>!, sparse_stride)](sparse_unpack_vector_double(_:_:_:_:_:_:_:).md)
-  Extracts elements from the sparse vector  into the corresponding location in the dense vector , with both vectors containing double-precision values.
+  Extracts elements from the sparse vector *x* into the corresponding location in the dense vector *y*, with both vectors containing double-precision values.
 - [func sparse_unpack_vector_float(sparse_dimension, sparse_dimension, Bool, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<Float>!, sparse_stride)](sparse_unpack_vector_float(_:_:_:_:_:_:_:).md)
-  Extracts elements from the sparse vector  into the corresponding location in the dense vector , with both vectors containing single-precision values.
+  Extracts elements from the sparse vector *x* into the corresponding location in the dense vector *y*, with both vectors containing single-precision values.
 
 
 ---

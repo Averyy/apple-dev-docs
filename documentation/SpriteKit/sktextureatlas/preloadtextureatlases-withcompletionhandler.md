@@ -30,7 +30,7 @@ SpriteKit creates a background task that loads the texture data from all of the 
 
 ## Parameters
 
-- `textureAtlases`: An array of   objects.
+- `textureAtlases`: An array of [`SKTextureAtlas`](sktextureatlas.md) objects.
 - `completionHandler`: A block called after all of the texture atlases are loaded.
 
 ## See Also

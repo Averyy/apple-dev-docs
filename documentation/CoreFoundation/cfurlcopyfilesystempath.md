@@ -30,8 +30,8 @@ This function returns the URL’s path as a file system path for a given path st
 
 ## Parameters
 
-- `anURL`: The   object whose path you want to obtain.
-- `pathStyle`: The operating system path style to be used to create the path. See   for a list of possible values.
+- `anURL`: The `CFURL` object whose path you want to obtain.
+- `pathStyle`: The operating system path style to be used to create the path. See [`CFURLPathStyle`](cfurlpathstyle.md) for a list of possible values.
 
 ## See Also
 

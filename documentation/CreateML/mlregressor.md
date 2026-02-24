@@ -30,7 +30,7 @@ For example, when estimating housing prices on Mars, a regressor can interpolate
 
 In this case, there are no data points with three solar panels, but the regressor can make an informed prediction about the housing price.
 
-When you create an [`MLRegressor`](mlregressor.md), Create ML inspects your data and automatically chooses a specific regressor (see ).
+When you create an [`MLRegressor`](mlregressor.md), Create ML inspects your data and automatically chooses a specific regressor (see *Supporting Regressor Types*).
 
 ## Topics
 

@@ -31,7 +31,7 @@ If `flag` is [`false`](https://developer.apple.com/documentation/Swift/false), t
 ## Parameters
 
 - `fd`: The POSIX file descriptor with which to initialize the file handle.
-- `closeopt`:   if the returned file handle object should take ownership of the file descriptor and close it for you or   if you want to maintain ownership of the file descriptor.
+- `closeopt`: [`true`](https://developer.apple.com/documentation/Swift/true) if the returned file handle object should take ownership of the file descriptor and close it for you or [`false`](https://developer.apple.com/documentation/Swift/false) if you want to maintain ownership of the file descriptor.
 
 ## See Also
 

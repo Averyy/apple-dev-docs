@@ -33,7 +33,7 @@ When replacing the contents of the file, this method does not normally replace t
 ## Parameters
 
 - `url`: The file whose contents you want to replace. If the file at this URL does not exist, a new file is created at the location.
-- `options`: Specify   to overwrite the file in place; otherwise, specify one of the constants described in  .
+- `options`: Specify `0` to overwrite the file in place; otherwise, specify one of the constants described in [`NSFileVersion.ReplacingOptions`](nsfileversion/replacingoptions.md).
 
 ## See Also
 

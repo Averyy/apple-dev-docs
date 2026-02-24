@@ -30,9 +30,9 @@ The system calls this method when it receives new credentials (including a push 
 
 ## Parameters
 
-- `registry`: The   instance responsible for the delegate callback.
+- `registry`: The [`PKPushRegistry`](pkpushregistry.md) instance responsible for the delegate callback.
 - `pushCredentials`: The push credentials that can be used to send pushes to the device for the specified push type.
-- `type`: One of the requested notification types. This type is present in the   property of the push registry.
+- `type`: One of the requested notification types. This type is present in the [`desiredPushTypes`](pkpushregistry/desiredpushtypes.md) property of the push registry.
 
 ## See Also
 

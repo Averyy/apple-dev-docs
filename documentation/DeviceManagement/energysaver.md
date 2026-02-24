@@ -144,6 +144,14 @@ Specify `com.apple.MCX` as the payload type.
 - [object EnergySaver.Com.apple.EnergySaver.portable.BatteryPower](energysaver/com.apple.energysaver.portable.batterypower-data.dictionary.md)
   The laptop battery power Energy Saver settings.
 
+## Properties
+
+- `com.apple.EnergySaver.desktop.ACPower` (EnergySaver.Com.apple.EnergySaver.desktop.ACPower): The settings for a desktop computer.
+- `com.apple.EnergySaver.desktop.Schedule` (EnergySaver.Com.apple.EnergySaver.desktop.Schedule): The schedule for turning a computer on and off.
+- `com.apple.EnergySaver.portable.ACPower` (EnergySaver.Com.apple.EnergySaver.portable.ACPower): The settings for a laptop computer using AC power.
+- `com.apple.EnergySaver.portable.BatteryPower` (EnergySaver.Com.apple.EnergySaver.portable.BatteryPower): The settings for a laptop computer using battery power.
+- `SleepDisabled` (boolean): If `true`, disables sleep.
+
 ## See Also
 
 - [object Declarations](declarations.md)

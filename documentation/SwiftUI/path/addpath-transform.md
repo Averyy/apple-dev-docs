@@ -27,7 +27,7 @@ If the `path` parameter is a non-empty empty path, its elements are appended in 
 ## Parameters
 
 - `path`: The path to add.
-- `transform`: An affine transform to apply to the path   parameter before adding to this path. Defaults to the   identity transform if not specified.
+- `transform`: An affine transform to apply to the path parameter before adding to this path. Defaults to the identity transform if not specified.
 
 ## See Also
 

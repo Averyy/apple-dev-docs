@@ -28,7 +28,7 @@ If `inValue` does not exist, `true` is returned and no error is set.
 - `record`: The record.
 - `attribute`: The attribute.
 - `value`: The value to remove.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

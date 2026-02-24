@@ -23,6 +23,10 @@ Specify `com.apple.globalethernet.managed` as the payload type.
 
 This payload’s contents contain these profile-specific keys:
 
+- **Interface (String)**: This payload uses the value `GlobalEthernet`.
+- **EAPClientConfiguration ([`WiFi.EAPClientConfiguration`](wifi/eapclientconfiguration-data.dictionary.md))**: The dictionary that defines the enterprise profile for the network.
+- **SetupModes (String)**: The type of connection mode, which is either `System` or `Loginwindow`. `System` is the default.
+
 ##### Profile Availability
 
 |  |  |
@@ -99,6 +103,10 @@ This payload’s contents contain these profile-specific keys:
 </dict>
 </plist>
 ```
+
+## Properties
+
+- `ANY` (any): Keys relevant to 802.1X configuration. User enrollment payloads don’t support the various proxy keys, including `ProxyType`, `ProxyServer`, `ProxyServerPort`, `ProxyUsername`, `ProxyPassword`, `ProxyPACURL` and `ProxyPACFallbackAllowed`.
 
 ## See Also
 

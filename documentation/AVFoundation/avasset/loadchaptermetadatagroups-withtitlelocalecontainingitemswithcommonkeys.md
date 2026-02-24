@@ -35,7 +35,7 @@ You can use the [`metadataItems(from:filteredAndSortedAccordingToPreferredLangua
 ## Parameters
 
 - `locale`: The locale of the chapter metadata to load.
-- `commonKeys`: An array of common   values to include in the returned array. The framework currently only supports the   key.
+- `commonKeys`: An array of common [`AVMetadataKey`](avmetadatakey.md) values to include in the returned array. The framework currently only supports the [`commonKeyArtwork`](avmetadatakey/commonkeyartwork.md) key.
 
 ## See Also
 

@@ -35,9 +35,9 @@ If `groups` is greater than 1, the layer uses input, output, weights, and bias f
 
 ## Parameters
 
-- `i_desc`: The descriptor of the input. The data type of the input must be  .
-- `w_desc`: The descriptor of the weights. The data type of the weights must be  ,  ,  , or  .
-- `o_desc`: The descriptor of the output. The data type of the output must be  .
+- `i_desc`: The descriptor of the input. The data type of the input must be [`BNNSDataLayoutImageCHW`](bnnsdatalayoutimagechw.md).
+- `w_desc`: The descriptor of the weights. The data type of the weights must be [`BNNSDataLayoutConvolutionWeightsOIHW`](bnnsdatalayoutconvolutionweightsoihw.md), [`BNNSDataLayoutConvolutionWeightsOIHrWr`](bnnsdatalayoutconvolutionweightsoihrwr.md), [`BNNSDataLayoutConvolutionWeightsIOHrWr`](bnnsdatalayoutconvolutionweightsiohrwr.md), or [`BNNSDataLayoutConvolutionWeightsOIHW_Pack32`](bnnsdatalayoutconvolutionweightsoihw_pack32.md).
+- `o_desc`: The descriptor of the output. The data type of the output must be [`BNNSDataLayoutImageCHW`](bnnsdatalayoutimagechw.md).
 - `bias`: The descriptor of the bias.
 - `activation`: The activation function that the layer applies to the output.
 - `x_stride`: The width increment of the input image.

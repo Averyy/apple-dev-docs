@@ -29,8 +29,8 @@ Use this method to change the scene displayed in a SceneKit view (or other rende
 
 - `scene`: The new scene to be displayed.
 - `transition`: An object that specifies the duration and style of the animated transition.
-- `pointOfView`: The node to use as the   property when displaying the new scene.
-- `completionHandler`: This block takes no parameters and has no return value.
+- `pointOfView`: The node to use as the [`pointOfView`](scnscenerenderer/pointofview.md) property when displaying the new scene.
+- `completionHandler`: A block that SceneKit calls after the transition animation has completed. This block takes no parameters and has no return value.
 
 ## See Also
 

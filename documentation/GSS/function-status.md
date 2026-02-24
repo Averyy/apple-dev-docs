@@ -12,6 +12,10 @@ The minor status code provides additional information, often mechanism-specific,
 
 Three bitfields bundled together make up major status codes in a single [`OM_uint32`](om_uint32.md) value. These fields are:
 
+- **The calling error**: A generic GSS-API error in the most significant 8 bits.
+- **The routine error**: An error specific to the routine in the next 8 bits.
+- **Supplementary Information**: Additional information about the error in the lower 16 bits.
+
 When a function successfully runs to completion, it returns zero for all of these fields. As a convenience, you can compare the result directly with the status code [`GSS_S_COMPLETE`](gss_s_complete.md) to test for this condition.
 
 ![Diagram of the three bitfields that make up the status codes in a value: the 8 bit calling error, the 8 bit routine error, and the 16 bit supplementary information.](https://docs-assets.developer.apple.com/published/e80920a4de046d204e8222153b7debcf/media-3402053%402x.png)

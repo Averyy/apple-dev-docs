@@ -29,6 +29,10 @@ This method applies the false color filter to an image. The effect maps the lumi
 
 The false color filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`color0`**: A [`CIColor`](cicolor.md) representing the first color to use for the color ramp.
+- **`color1`**: A [`CIColor`](cicolor.md) representing the second color to use for the color ramp.
+
 The following code creates a filter that replaces the colors of the input image resulting in blue and yellow colors:
 
 ```swift

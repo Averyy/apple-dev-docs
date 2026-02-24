@@ -22,9 +22,9 @@ static var css: UTType { get }
 
 #### Discussion
 
- public.css
+**UTI:** public.css
 
- public.text
+**conforms to:** public.text
 
 
 ---

@@ -107,6 +107,11 @@ Specify `com.apple.security.pem` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `PayloadCertificateFileName` (string): The file name of the enclosed certificate.
+- `PayloadContent` (data) *(required)*: The binary representation of the payload, encoded in Base64.
+
 ## See Also
 
 - [object ACMECertificate](acmecertificate.md)

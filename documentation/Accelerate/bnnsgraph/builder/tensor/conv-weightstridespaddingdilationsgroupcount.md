@@ -28,9 +28,9 @@ This operation assumes the source tensor is in  `(N, C, spatial dimensions...)` 
 
 - `weight`: The convolution weights.
 - `strides`: An array that contains the kernel stride for each spatial dimension.
-- `padding`: An enumeration that specifies that the operation computes the padding from   the input and output shapes. If you specify  , pass twice the number of spatial dimensions.
+- `padding`: An enumeration that specifies that the operation computes the padding from the input and output shapes. If you specify `custom`, pass twice the number of spatial dimensions.
 - `dilations`: An array that contains the kernel dilation for each spatial dimension.
-- `groupCount`: The number of convolution groups. Pass   to specify non-grouped   convolution.
+- `groupCount`: The number of convolution groups. Pass `1` to specify non-grouped convolution.
 
 
 ---

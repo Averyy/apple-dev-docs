@@ -26,7 +26,7 @@ The `NSPointerFunctions` object, initialized with the given options.
 
 ## Parameters
 
-- `options`: The options for the new   object.
+- `options`: The options for the new `NSPointerFunctions` object.
 
 ## See Also
 

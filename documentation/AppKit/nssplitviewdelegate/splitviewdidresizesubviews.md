@@ -23,7 +23,7 @@ The default notification center invokes this method after the split view resizes
 
 ## Parameters
 
-- `notification`: A notification named  , which posts after a change to the size of some or all subviews of a split view.
+- `notification`: A notification named [`didResizeSubviewsNotification`](nssplitview/didresizesubviewsnotification.md), which posts after a change to the size of some or all subviews of a split view.
 
 ## See Also
 

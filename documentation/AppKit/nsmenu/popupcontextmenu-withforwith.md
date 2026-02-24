@@ -21,9 +21,9 @@ Specifying a font using the font parameter is discouraged. Instead, set the menu
 ## Parameters
 
 - `menu`: The menu object to use for the contextual menu.
-- `event`: An   object representing the event.
+- `event`: An [`NSEvent`](nsevent.md) object representing the event.
 - `view`: The view object over which to display the contextual menu.
-- `font`: An   object representing the font for the contextual menu. If you pass in   for the font, the method uses the default font for  .
+- `font`: An [`NSFont`](nsfont.md) object representing the font for the contextual menu. If you pass in `nil` for the font, the method uses the default font for `menu`.
 
 ## See Also
 

@@ -22,8 +22,8 @@ func CMDoesBigEndianSoundDescriptionRequireLegacyCBRSampleTableLayout(_ soundDes
 
 ## Parameters
 
-- `soundDescriptionBlockBuffer`:   containing SoundDescription data structure in big-endian byte ordering.
-- `flavor`:   constant or   for QuickTimeMovie flavor.
+- `soundDescriptionBlockBuffer`: `CMBlockBuffer` containing SoundDescription data structure in big-endian byte ordering.
+- `flavor`: `kCMSoundDescriptionFlavor` constant or `NULL` for QuickTimeMovie flavor.
 
 ## See Also
 

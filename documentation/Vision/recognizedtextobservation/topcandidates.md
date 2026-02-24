@@ -20,7 +20,7 @@ func topCandidates(_ maxCandidateCount: Int) -> [RecognizedText]
 
 ## Parameters
 
-- `maxCandidateCount`: The maximum number of candidates to return, up to  .
+- `maxCandidateCount`: The maximum number of candidates to return, up to `10`.
 
 ## See Also
 

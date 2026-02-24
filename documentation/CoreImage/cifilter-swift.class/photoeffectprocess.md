@@ -29,6 +29,8 @@ This method applies a preconfigured set of effects that imitate vintage photogra
 
 The photo effect process filter uses the following property:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds a lower contrast to the input image:
 
 ```swift

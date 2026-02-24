@@ -26,7 +26,7 @@ See [`NSSortDescriptor`](nssortdescriptor.md) for additional information.
 
 ## Parameters
 
-- `sortDescriptors`: An array containing the   objects to use to sort the receiving array’s contents.
+- `sortDescriptors`: An array containing the `NSSortDescriptor` objects to use to sort the receiving array’s contents.
 
 ## See Also
 

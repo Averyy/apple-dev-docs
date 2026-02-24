@@ -30,9 +30,9 @@ This function uses a `CFURLRef` type rather than the `FSRef` type used by the de
 ## Parameters
 
 - `inFileRef`: The fully specified path of the file to create or initialize.
-- `inFileType`: The type of audio file to create.  See   for constants that can be used.
+- `inFileType`: The type of audio file to create.  See [`AudioFileTypeID`](audiofiletypeid.md) for constants that can be used.
 - `inFormat`: A pointer to the structure that describes the format of the data.
-- `inFlags`: Relevant flags for creating or opening the file. If   is set, it erases an existing file. If the flag is not set, the function fails fails if the URL is an existing file.
+- `inFlags`: Relevant flags for creating or opening the file. If [`eraseFile`](audiofileflags/erasefile.md) is set, it erases an existing file. If the flag is not set, the function fails fails if the URL is an existing file.
 - `outAudioFile`: On output, a pointer to a newly created or initialized file.
 
 ## See Also

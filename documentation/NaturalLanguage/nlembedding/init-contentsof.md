@@ -26,7 +26,7 @@ Use this initializer to create a word embedding from an `.mlmodel` file saved by
 
 ## Parameters
 
-- `url`: The location of the .  file that contains a word embedding.
+- `url`: The location of the .`mlmodel` file that contains a word embedding.
 
 ## See Also
 

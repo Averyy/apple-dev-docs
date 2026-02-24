@@ -20,7 +20,7 @@ Use this method when you already have image data in the raw PNG or JPG format. T
 
 ## Parameters
 
-- `imageData`: A data object containing the image data in its native format. Specifying   removes the existing image, causing the watch interface to display nothing in the space previously occupied by the image.
+- `imageData`: A data object containing the image data in its native format. Specifying `nil` removes the existing image, causing the watch interface to display nothing in the space previously occupied by the image.
 
 ## See Also
 

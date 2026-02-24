@@ -8,6 +8,10 @@ A Boolean value indicating whether the app is a watch-only app.
 **Availability**:
 - watchOS 6.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Xcode automatically includes this key in the WatchKit extension’s information property list and sets its value to `YES` when you create a project using the Watch App template. When you set the value of this key to `YES`, the app is only available on Apple Watch, with no related iOS app.

@@ -27,8 +27,8 @@ Generating the dictionaries for system windows is a relatively expensive operati
 
 ## Parameters
 
-- `option`: The options describing which window dictionaries to return. Typical options let you return dictionaries for all windows or for windows above or below the window specified in the   parameter. For more information, see  .
-- `relativeToWindow`: The ID of the window to use as a reference point when determining which other window dictionaries to return. For options that do not require a reference window, this parameter can be  .
+- `option`: The options describing which window dictionaries to return. Typical options let you return dictionaries for all windows or for windows above or below the window specified in the `relativeToWindow` parameter. For more information, see [`Window List Option Constants`](window-list-option-constants.md).
+- `relativeToWindow`: The ID of the window to use as a reference point when determining which other window dictionaries to return. For options that do not require a reference window, this parameter can be [`kCGNullWindowID`](kcgnullwindowid.md).
 
 ## See Also
 

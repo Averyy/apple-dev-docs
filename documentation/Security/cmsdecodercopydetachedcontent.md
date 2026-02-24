@@ -20,8 +20,8 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 
 ## Parameters
 
-- `cmsDecoder`: The CMSDecoder reference returned by the   function.
-- `detachedContentOut`: On return, points to the data reference specified by an earlier call to the   function. Returns a NULL data reference if no detached content has been specified. You must use the   function to free this reference when you are finished using it.
+- `cmsDecoder`: The CMSDecoder reference returned by the `CMSDecoderCreate` function.
+- `detachedContentOut`: On return, points to the data reference specified by an earlier call to the `CMSDecoderSetDetachedContent` function. Returns a NULL data reference if no detached content has been specified. You must use the `CFRelease` function to free this reference when you are finished using it.
 
 ## See Also
 

@@ -22,9 +22,9 @@ func drawMeshThreads(_ threadsPerGrid: MTLSize, threadsPerObjectThreadgroup: MTL
 
 ## Parameters
 
-- `threadsPerGrid`: For object shaders, the value doesn’t need to be a multiple of  .
-- `threadsPerObjectThreadgroup`: An   instance that represents the number of threads in an object shader threadgroup, if applicable.
-- `threadsPerMeshThreadgroup`: An   instance that represents the number of threads in a mesh shader threadgroup.
+- `threadsPerGrid`: An [`MTLSize`](mtlsize.md) instance that represents the number of threads for each grid dimension. For mesh shaders, the command rounds the value down to the nearest multiple of `threadsPerMeshThreadgroup` for each dimension. For object shaders, the value doesn’t need to be a multiple of `threadsPerObjectThreadgroup`.
+- `threadsPerObjectThreadgroup`: An [`MTLSize`](mtlsize.md) instance that represents the number of threads in an object shader threadgroup, if applicable.
+- `threadsPerMeshThreadgroup`: An [`MTLSize`](mtlsize.md) instance that represents the number of threads in a mesh shader threadgroup.
 
 ## See Also
 

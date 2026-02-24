@@ -26,7 +26,7 @@ Do not call this method multiple times in quick succession. If the haptic engine
 
 ## Parameters
 
-- `type`: The type of haptic feedback to play. Always use the defined haptic types for their intended purposes. For a list of possible values, see  .
+- `type`: The type of haptic feedback to play. Always use the defined haptic types for their intended purposes. For a list of possible values, see [`WKHapticType`](wkhaptictype.md).
 
 ## See Also
 

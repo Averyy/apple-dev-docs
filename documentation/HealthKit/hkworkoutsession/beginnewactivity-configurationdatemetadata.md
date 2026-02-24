@@ -31,7 +31,7 @@ HealthKit may also set the data source’s [`typesToCollect`](hkliveworkoutdatas
 
 ## Parameters
 
-- `workoutConfiguration`: The configuration information for the activity. For   workouts, the activity’s configuration must use the  ,  , or   activity types. For interval training, the activity’s configuration must use the same activity type as the containing workout.
+- `workoutConfiguration`: The configuration information for the activity. For [`HKWorkoutActivityType.swimBikeRun`](hkworkoutactivitytype/swimbikerun.md) workouts, the activity’s configuration must use the [`HKWorkoutActivityType.swimming`](hkworkoutactivitytype/swimming.md), [`HKWorkoutActivityType.cycling`](hkworkoutactivitytype/cycling.md), or [`HKWorkoutActivityType.running`](hkworkoutactivitytype/running.md) activity types. For interval training, the activity’s configuration must use the same activity type as the containing workout.
 - `date`: The activity’s start date and time.
 - `metadata`: Metadata that provides additional information about the activity.
 

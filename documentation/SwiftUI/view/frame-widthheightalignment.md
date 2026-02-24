@@ -64,9 +64,9 @@ In the example above, the text is positioned at the top, leading corner of the f
 
 ## Parameters
 
-- `width`: A fixed width for the resulting view. If   is  ,   the resulting view assumes this view’s sizing behavior.
-- `height`: A fixed height for the resulting view. If   is  ,   the resulting view assumes this view’s sizing behavior.
-- `alignment`: The alignment of this view inside the resulting frame.   Note that most alignment values have no apparent effect when the   size of the frame happens to match that of this view.
+- `width`: A fixed width for the resulting view. If `width` is `nil`, the resulting view assumes this view’s sizing behavior.
+- `height`: A fixed height for the resulting view. If `height` is `nil`, the resulting view assumes this view’s sizing behavior.
+- `alignment`: The alignment of this view inside the resulting frame. Note that most alignment values have no apparent effect when the size of the frame happens to match that of this view.
 
 ## See Also
 

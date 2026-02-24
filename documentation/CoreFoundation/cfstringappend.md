@@ -26,7 +26,7 @@ This function reallocates the backing store of `theString` to accommodate the ne
 
 ## Parameters
 
-- `theString`: The string to which   is appended. If   is not a CFMutableString object, an assertion is raised.
+- `theString`: The string to which `appendedString` is appended. If `theString` is not a CFMutableString object, an assertion is raised.
 - `appendedString`: The string to append.
 
 ## See Also

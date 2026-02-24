@@ -21,6 +21,20 @@ var mainParticipantConfiguration: AEAssessmentParticipantConfiguration { get }
 
 Use this property to get and customize the app-specific configuration that’s applied to your own app. For example, you can set the [`allowsNetworkAccess`](aeassessmentparticipantconfiguration/allowsnetworkaccess.md) property for your own app:
 
+**Swift**:
+
+```swift
+let config = AEAssessmentConfiguration()
+config.mainParticipantConfiguration.allowsNetworkAccess = false
+```
+
+**Objective-C**:
+
+```objc
+AEAssessmentConfiguration *config = [[AEAssessmentConfiguration alloc] init];
+[config mainParticipantConfiguration].allowsNetworkAccess = NO;
+```
+
 ## See Also
 
 - [func setConfiguration(AEAssessmentParticipantConfiguration, for: AEAssessmentApplication)](aeassessmentconfiguration/setconfiguration(_:for:).md)

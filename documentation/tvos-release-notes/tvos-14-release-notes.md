@@ -27,7 +27,7 @@ The tvOS 14 SDK provides support to develop tvOS apps for Apple TV devices runni
 - New APIs are available for using `os_log` from Swift as part of the framework `os`: - A new type, [`Logger`](https://developer.apple.com/documentation/os/Logger), can be instantiated using a subsystem and category, and provides methods for logging at different levels (`Logger.debug`, `Logger.error`, `Logger.fault`).
 - The `Logger` APIs support specifying most formatting and privacy options supported by legacy  [`Logging`](https://developer.apple.com/documentation/os/logging) APIs.
 - The new APIs provide significant performance improvements over the legacy APIs.
-- You can now pass Swift string interpolation to the [`os_log`](https://developer.apple.com/documentation/os/os_log) function.  The new APIs can’t be back deployed; however, the existing `os_log` API remains available for back deployment. (22539144)
+- You can now pass Swift string interpolation to the [`os_log`](https://developer.apple.com/documentation/os/os_log) function. **Note:** The new APIs can’t be back deployed; however, the existing `os_log` API remains available for back deployment. (22539144)
 
 ##### Swiftui
 

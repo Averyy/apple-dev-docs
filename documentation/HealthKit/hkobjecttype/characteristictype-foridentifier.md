@@ -29,7 +29,7 @@ This method returns an instance of the [`HKCharacteristicType`](hkcharacteristic
 
 ## Parameters
 
-- `identifier`: A characteristic type identifier. For a list of valid identifiers, see  .
+- `identifier`: A characteristic type identifier. For a list of valid identifiers, see [`HKCharacteristicTypeIdentifier`](hkcharacteristictypeidentifier.md).
 
 ## See Also
 

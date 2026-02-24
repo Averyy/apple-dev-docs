@@ -16,9 +16,9 @@ func changeWindowsItem(_ win: NSWindow, title string: String, filename isFilenam
 
 ## Parameters
 
-- `win`: The window whose title you want to change in the Window menu. If   is not in the Window menu, this method adds it.
-- `string`: The string to display for the window’s menu item. How the string is interpreted is dependent on the value in the   parameter.
-- `isFilename`: If  ,   appears literally in the menu; otherwise,   is assumed to be a converted pathname with the name of the file preceding the path (the way the   method   shows a title)
+- `win`: The window whose title you want to change in the Window menu. If `aWindow` is not in the Window menu, this method adds it.
+- `string`: The string to display for the window’s menu item. How the string is interpreted is dependent on the value in the `isFilename` parameter.
+- `isFilename`: If [`false`](https://developer.apple.com/documentation/Swift/false), `aString` appears literally in the menu; otherwise, `aString` is assumed to be a converted pathname with the name of the file preceding the path (the way the `NSWindow` method [`setTitleWithRepresentedFilename(_:)`](nswindow/settitlewithrepresentedfilename(_:).md) shows a title)
 
 ## See Also
 

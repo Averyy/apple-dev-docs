@@ -26,7 +26,7 @@ For specific information about what the returned point represents, see the speci
 
 ## Parameters
 
-- `view`: The view whose coordinate system you want to use for determining the location of the gesture. Specify   to return the point in the coordinate system of the window.
+- `view`: The view whose coordinate system you want to use for determining the location of the gesture. Specify `nil` to return the point in the coordinate system of the window.
 
 
 ---

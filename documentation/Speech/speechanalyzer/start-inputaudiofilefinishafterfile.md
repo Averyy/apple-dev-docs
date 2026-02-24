@@ -26,7 +26,7 @@ This method stops the autonomous analysis of the previous input sequence. To ens
 ## Parameters
 
 - `audioFile`: An AVAudioFile opened for reading.
-- `finishAfterFile`: If  , the analysis will automatically finish after the audio file has been fully processed. Equivalent to calling  .
+- `finishAfterFile`: If `true`, the analysis will automatically finish after the audio file has been fully processed. Equivalent to calling [`finalizeAndFinishThroughEndOfInput()`](speechanalyzer/finalizeandfinishthroughendofinput().md).
 
 ## See Also
 

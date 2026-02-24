@@ -33,6 +33,13 @@ This method applies the color matrix filter to an image. The effect calculates t
 
 The color matrix filter uses the following properties:
 
+- **`rVector`**: A [`CIVector`](civector.md) representing the amount of red to multiply the source color values by.
+- **`gVector`**: A [`CIVector`](civector.md) representing the amount of green to multiply the source color values by.
+- **`bVector`**: A [`CIVector`](civector.md) representing the amount of blue to multiply the source color values by.
+- **`aVector`**: A [`CIVector`](civector.md) representing the amount of alpha to multiply the source color values by.
+- **`biasVector`**: A [`CIVector`](civector.md) representing the amount of each vector that’s added to each color component.
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds a green hue to the input image:
 
 ```swift

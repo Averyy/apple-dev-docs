@@ -10,9 +10,9 @@ QT atoms are an enhanced data structure that provide a more general-purpose stor
 
 This allows multiple child atoms of the same type to be specified through identification numbers. It also makes it possible to parse the contents of a QT atom of unknown type, by walking the tree of its child atoms.
 
-QT atoms are normally wrapped in an , a data structure with a header containing a lock count. Each atom container contains exactly one  atom, which is the QT atom. Atom containers are not atoms, and are not found in the hierarchy of atoms that makes up a QuickTime movie file. Atom containers may be found as data structures inside some atoms, however. Examples include media input maps and media property atoms.
+QT atoms are normally wrapped in an *atom container*, a data structure with a header containing a lock count. Each atom container contains exactly one *root* atom, which is the QT atom. Atom containers are not atoms, and are not found in the hierarchy of atoms that makes up a QuickTime movie file. Atom containers may be found as data structures inside some atoms, however. Examples include media input maps and media property atoms.
 
-> ❗ **Important**: An  is  the same as a . An atom container is a , not an atom.
+> ❗ **Important**: An *atom container* is *not* the same as a *container atom*. An atom container is a *container*, not an atom.
 
 The following figure depicts the layout of a QT atom. Each QT atom starts with a QT atom container header, followed by the root atom. The root atom’s type is the QT atom’s type. The root atom contains any other atoms that are part of the structure.
 
@@ -22,7 +22,17 @@ Each container atom starts with a QT atom header followed by the atom’s conten
 
 A QT atom container header contains the following data:
 
+- **Reserved**: A 10-byte element that must be set to `0`.
+- **Lock count**: A 16-bit integer that must be set to `0`.
+
 Each QT atom header contains the following data:
+
+- **Size**: A 32-bit integer that indicates the size of the atom in bytes, including both the QT atom header and the atom’s contents. If the atom is a leaf atom, then this field contains the size of the single atom. The size of container atoms includes all of the contained atoms. You can walk the atom tree using the size and child count fields.
+- **Type**: A 32-bit integer that contains the type of the atom. If this is the root atom, the type value is set to `'sean'`.
+- **Atom ID**: A 32-bit integer that contains the atom’s ID value. This value must be unique among its siblings. The root atom always has an atom ID value of `1`.
+- **Reserved**: A 16-bit integer that must be set to `0`.
+- **Child count**: A 16-bit integer that specifies the number of child atoms that an atom contains. This count includes only immediate children. If this field is set to `0`, the atom is a leaf atom and contains only data.
+- **Reserved**: A 32-bit integer that must be set to `0`.
 
 #### Qt Atom Containers
 

@@ -26,7 +26,7 @@ The buffer’s contents are in an uninitialized state.
 
 ## Parameters
 
-- `commandBuffer`: The    you intend to use for reading.   RealityKit waits for the command buffer to complete before discarding the buffer.
+- `commandBuffer`: The [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) you intend to use for reading. RealityKit waits for the command buffer to complete before discarding the buffer.
 
 ## See Also
 

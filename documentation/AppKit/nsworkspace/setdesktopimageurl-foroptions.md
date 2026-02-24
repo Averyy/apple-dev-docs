@@ -24,9 +24,9 @@ You must call this method from your app’s main thread.
 
 ## Parameters
 
-- `url`: A file URL to the image. The URL must not be  .
+- `url`: A file URL to the image. The URL must not be `nil`.
 - `screen`: The screen on which to set the desktop image.
-- `options`: The options dictionary may contain any of the keys in  , which control how the image is scaled on the screen.
+- `options`: The options dictionary may contain any of the keys in [`NSWorkspace.DesktopImageOptionKey`](nsworkspace/desktopimageoptionkey.md), which control how the image is scaled on the screen.
 
 ## See Also
 

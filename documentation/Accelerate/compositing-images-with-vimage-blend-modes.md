@@ -6,7 +6,7 @@ Combine two images by using blend modes to create a single output.
 
 #### Overview
 
-vImage provides a suite of functions for compositing two source images into one output. These  functions implement different algorithms to determine the output color. For example, the multiply blend mode sets each output pixel as the product of the two corresponding input pixels.
+vImage provides a suite of functions for compositing two source images into one output. These *blend mode* functions implement different algorithms to determine the output color. For example, the multiply blend mode sets each output pixel as the product of the two corresponding input pixels.
 
 The blend mode functions work on 8-bit RGBA source images in a premultiplied format. You can convert a nonpremultiplied buffer to a premultiplied format by using [`vImagePremultiplyData_RGBA8888(_:_:_:)`](vimagepremultiplydata_rgba8888(_:_:_:).md).
 

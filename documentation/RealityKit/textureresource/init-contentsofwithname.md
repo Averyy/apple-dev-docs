@@ -23,7 +23,7 @@ Asynchronously creates a texture resource from a file URL.
 ## Parameters
 
 - `url`: The path or address of the file to load into the texture resource.
-- `resourceName`: A unique name the method assigns to the resource it loads,   for use in network synchronization.
+- `resourceName`: A unique name the method assigns to the resource it loads, for use in network synchronization.
 
 ## See Also
 

@@ -27,7 +27,7 @@ If the new state is different than the device’s current state, this method pla
 
 ## Parameters
 
-- `powerFlags`: The new power state for the device. Typically, you specify only   for this parameter. For a list of all possible values, see  .
+- `powerFlags`: The new power state for the device. Typically, you specify only [`kIOServicePowerCapabilityLow`](kioservicepowercapabilitylow.md) for this parameter. For a list of all possible values, see [`Service Power Capabilities`](3325571-service_power_capabilities.md).
 
 ## See Also
 

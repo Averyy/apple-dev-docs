@@ -33,7 +33,7 @@ Invoke this method with `NULL` as `stringValue` to simply scan past a given stri
 ## Parameters
 
 - `string`: The string for which to scan at the current scan location.
-- `result`: Upon return, if the receiver contains a string equivalent to   at the current scan location, contains a string equivalent to  .
+- `result`: Upon return, if the receiver contains a string equivalent to `string` at the current scan location, contains a string equivalent to `string`.
 
 ## See Also
 

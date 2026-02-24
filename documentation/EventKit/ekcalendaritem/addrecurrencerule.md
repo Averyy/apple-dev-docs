@@ -30,7 +30,7 @@ The implementation only supports a single recurrence rule. Adding a recurrence r
 
 ## Parameters
 
-- `rule`: The rule to be added to  .
+- `rule`: The rule to be added to [`recurrenceRules`](ekcalendaritem/recurrencerules.md).
 
 ## See Also
 

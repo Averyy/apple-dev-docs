@@ -22,8 +22,8 @@ func CFPreferencesRemoveSuitePreferencesFromApp(_ applicationID: CFString, _ sui
 
 ## Parameters
 
-- `applicationID`: The ID of the application from which to remove suite preferences, typically  . Do not pass   or  . Takes the form of a Java package name,  .
-- `suiteID`: The ID of the application suite preferences to remove. Takes the form of a Java package name,  .
+- `applicationID`: The ID of the application from which to remove suite preferences, typically [`kCFPreferencesCurrentApplication`](kcfpreferencescurrentapplication.md). Do not pass `NULL` or [`kCFPreferencesAnyApplication`](kcfpreferencesanyapplication.md). Takes the form of a Java package name, `com.foosoft`.
+- `suiteID`: The ID of the application suite preferences to remove. Takes the form of a Java package name, `com.foosoft`.
 
 ## See Also
 

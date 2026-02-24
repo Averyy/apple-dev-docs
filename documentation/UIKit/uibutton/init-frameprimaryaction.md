@@ -21,7 +21,7 @@ convenience init(frame: CGRect, primaryAction: UIAction?)
 ## Parameters
 
 - `frame`: The frame rectangle for the view, measured in points.
-- `primaryAction`: The action to perform when the button is selected. The button registers this action for the   control event and sets the title and image properties to the action’s title and image.
+- `primaryAction`: The action to perform when the button is selected. The button registers this action for the [`primaryActionTriggered`](uicontrol/event/primaryactiontriggered.md) control event and sets the title and image properties to the action’s title and image.
 
 ## See Also
 

@@ -31,7 +31,7 @@ UIHostingConfiguration {
 
 ## Parameters
 
-- `edges`: The edges to apply the insets. Any edges not specified will   use the system default values. The default value is   .
+- `edges`: The edges to apply the insets. Any edges not specified will use the system default values. The default value is [`all`](edge/set/all.md).
 - `insets`: The insets to apply.
 
 

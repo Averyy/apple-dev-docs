@@ -23,7 +23,7 @@ static func result<Value>(value: Value, opensIntent: some AppIntent, snippetInte
 ## Parameters
 
 - `value`: The value that the app intent returns after completion.
-- `opensIntent`: An app intent to open the originating app and show the   intent’s result.   additional functionality.
+- `opensIntent`: An app intent to open the originating app and show the intent’s result. additional functionality.
 - `snippetIntent`: An app intent that displays an interactive snippet.
 
 

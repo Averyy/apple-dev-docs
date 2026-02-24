@@ -31,8 +31,8 @@ If `biggerUnit` is not logically bigger than `smallerUnit` in the calendar, or t
 ## Parameters
 
 - `calendar`: The calendar to examine.
-- `smallerUnit`: A calendar unit. For valid values see  .
-- `biggerUnit`: A calendar unit. For valid values see  .
+- `smallerUnit`: A calendar unit. For valid values see [`CFCalendarUnit`](cfcalendarunit.md).
+- `biggerUnit`: A calendar unit. For valid values see [`CFCalendarUnit`](cfcalendarunit.md).
 - `at`: An absolute time.
 
 ## See Also

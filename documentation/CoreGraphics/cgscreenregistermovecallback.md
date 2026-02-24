@@ -31,7 +31,7 @@ This function is implemented in macOS 10.4.3 and later.
 ## Parameters
 
 - `callback`: A pointer to the callback function to be registered.
-- `userInfo`: A pointer to user-defined data, or  . The   argument is passed back to the callback function each time it’s invoked.
+- `userInfo`: A pointer to user-defined data, or `NULL`. The `userInfo` argument is passed back to the callback function each time it’s invoked.
 
 ## See Also
 

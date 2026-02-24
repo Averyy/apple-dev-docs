@@ -22,7 +22,7 @@ Operates on the selected range if the receiver contains rich text. For plain tex
 
 ## Parameters
 
-- `sender`: The control that sent the message; may be  .
+- `sender`: The control that sent the message; may be `nil`.
 
 ## See Also
 

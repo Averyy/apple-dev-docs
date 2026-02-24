@@ -27,7 +27,7 @@ The delegate uses this message to compile a list of unavailable domains. It shou
 
 - `browser`: Sender of this delegate message.
 - `domainString`: Name of the domain that became unavailable.
-- `moreComing`:   when   is waiting for additional domains.   when there are no additional domains.
+- `moreComing`: [`true`](https://developer.apple.com/documentation/Swift/true) when `netServiceBrowser` is waiting for additional domains. [`false`](https://developer.apple.com/documentation/Swift/false) when there are no additional domains.
 
 ## See Also
 

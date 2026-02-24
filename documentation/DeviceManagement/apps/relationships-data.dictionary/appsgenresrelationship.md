@@ -13,6 +13,12 @@
 object Apps.Relationships.AppsGenresRelationship
 ```
 
+## Properties
+
+- `data` ([Genres]) *(required)*
+- `href` (string)
+- `next` (string)
+
 
 ---
 

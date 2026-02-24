@@ -26,7 +26,7 @@ The initialized `NEIPv6Settings` object.
 ## Parameters
 
 - `addresses`: An array of IPv6 address strings. These IPv6 addresses will be assigned to the tunnel’s TUN interface.
-- `networkPrefixLengths`: An array of IPv6 network prefix lengths. Each prefix length in this array is combined with the IP address in the corresponding index in   to specify an IPv6 network that the TUN interface is (virtually) connected to. Each prefix length must be set to an integer between 0 and 128.
+- `networkPrefixLengths`: An array of IPv6 network prefix lengths. Each prefix length in this array is combined with the IP address in the corresponding index in `addresses` to specify an IPv6 network that the TUN interface is (virtually) connected to. Each prefix length must be set to an integer between 0 and 128.
 
 
 ---

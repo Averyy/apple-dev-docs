@@ -24,7 +24,7 @@ init(unsafeUninitializedShape shape: [Int], scalarType: any MLTensorScalar.Type,
 
 - `shape`: The dimensions of the tensor.
 - `scalarType`: The scalar type.
-- `initializer`: A closure which will be called to initialize the underlying memory of the tensor. Scalars expected to be   stored contiguously in first-major order.
+- `initializer`: A closure which will be called to initialize the underlying memory of the tensor. Scalars expected to be stored contiguously in first-major order.
 
 ## See Also
 

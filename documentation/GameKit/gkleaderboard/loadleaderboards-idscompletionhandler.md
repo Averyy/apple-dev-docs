@@ -28,7 +28,8 @@ class func loadLeaderboards(IDs leaderboardIDs: [String]?) async throws -> [GKLe
 ## Parameters
 
 - `leaderboardIDs`: An array of leaderboard IDs that Game Center uses.
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block that GameKit calls when this method loads the leaderboards. The block receives the following parameters: - **leaderboards**: The leaderboards that match the IDs.
+- **error**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

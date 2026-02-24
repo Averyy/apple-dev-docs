@@ -21,11 +21,11 @@ class MPSMatrixSolveCholesky
 
 #### Overview
 
-This kernel finds the solution matrix to the system , where:
+This kernel finds the solution matrix to the system *AX=B*, where:
 
--  is a symmetric positive-definite matrix
--  is the resulting matrix of solutions
--  is the array of right-hand-sides for which the equations are to be solved
+- *A* is a symmetric positive-definite matrix
+- *X* is the resulting matrix of solutions
+- *B* is the array of right-hand-sides for which the equations are to be solved
 
 ## Topics
 

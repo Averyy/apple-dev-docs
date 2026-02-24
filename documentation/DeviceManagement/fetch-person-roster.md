@@ -19,6 +19,10 @@ In addition to instructors and students, this list may contain additional people
 - [object RosterPersonResponse](rosterpersonresponse.md)
   The response that contains the people in the organization.
 
+## Endpoint
+
+`POST https://mdmenrollment.apple.com/roster/class/person`
+
 ## Request Body
 
 The object containing the request information.

@@ -72,7 +72,7 @@ The iOS & iPadOS 26.1 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- Siri Voice preview might default to legacy pt-BR voices, rather than new pt-PT options.  (155929981)  Select Voice 2 as your new Siri voice. Ask Siri a question, and you will hear the new pt-PT offering.
+- Siri Voice preview might default to legacy pt-BR voices, rather than new pt-PT options.  (155929981) **Workaround:** Select Voice 2 as your new Siri voice. Ask Siri a question, and you will hear the new pt-PT offering.
 - The initial pt-PT Siri Voices have pronunciation and word stress issues. Your feedback is appreciated.  (160205691)
 
 ##### Swiftui
@@ -100,11 +100,11 @@ The iOS & iPadOS 26.1 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- WebKit outputs a crash stacktrace to `stderr` when `decidePolicyFor navigationAction` returns `.cancel`.  (156957269)  This trace does not represent a bug in the application, and can be safely ignored.
+- WebKit outputs a crash stacktrace to `stderr` when `decidePolicyFor navigationAction` returns `.cancel`.  (156957269) **Workaround:** This trace does not represent a bug in the application, and can be safely ignored.
 
 ## See Also
 
-- [iOS & iPadOS 26.4 Beta Release Notes](ios-ipados-26_4-release-notes.md)
+- [iOS & iPadOS 26.4 Beta 2 Release Notes](ios-ipados-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [iOS & iPadOS 26.3 Release Notes](ios-ipados-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

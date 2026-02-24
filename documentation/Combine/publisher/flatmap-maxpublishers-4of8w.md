@@ -26,7 +26,7 @@ A publisher that transforms elements from an upstream  publisher into a publishe
 
 ## Parameters
 
-- `maxPublishers`: Specifies the maximum number of concurrent publisher subscriptions, or   if unspecified.
+- `maxPublishers`: Specifies the maximum number of concurrent publisher subscriptions, or [`unlimited`](subscribers/demand/unlimited.md) if unspecified.
 - `transform`: A closure that takes an element as a parameter and returns a publisher that produces elements of that type.
 
 ## See Also

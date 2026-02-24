@@ -46,7 +46,8 @@ let customAction = SKAction.customAction(withDuration: 2.0) {
 ## Parameters
 
 - `duration`: The duration of the action, in seconds.
-- `block`: The block to run. The block takes the following parameters:
+- `block`: The block to run. The block takes the following parameters: - **node**: The node on which the action is running.
+- **elapsedTime**: The amount of time that has passed in the animation.
 
 ## See Also
 

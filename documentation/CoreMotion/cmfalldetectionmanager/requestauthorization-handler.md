@@ -20,7 +20,7 @@ As soon as the user authorizes fall detection, the system calls the delegate’s
 
 ## Parameters
 
-- `handler`: The system passes the following parameter:
+- `handler`: A block that is called by the system after the user accepts or declines the authorization request. The system passes the following parameter: - **`status`**: The authorization status chosen by the user.
 
 ## See Also
 

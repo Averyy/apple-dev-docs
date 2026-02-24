@@ -25,7 +25,7 @@ func applyingGaussianBlur(sigma: Double) -> CIImage
 
 ## Parameters
 
-- `sigma`: The sigma of the gaussian blur to apply to the receiver.   If the sigma is very small (less than  ) then the receiver is returned.
+- `sigma`: The sigma of the gaussian blur to apply to the receiver. If the sigma is very small (less than `0.16`) then the receiver is returned.
 
 ## See Also
 

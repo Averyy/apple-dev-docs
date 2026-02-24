@@ -30,7 +30,7 @@ You can use this type in Swift instead of a [`Dictionary`](https://developer.app
 
 The `NSDictionary` class declares the programmatic interface to objects that manage immutable associations of keys and values. For example, an interactive form could be represented as a dictionary, with the field names as keys, corresponding to user-entered values.
 
-Use this class or its subclass [`NSMutableDictionary`](nsmutabledictionary.md) when you need a convenient and efficient way to retrieve data associated with an arbitrary key. `NSDictionary` creates static dictionaries, and `NSMutableDictionary` creates dynamic dictionaries. (For convenience, the term  refers to any instance of one of these classes without specifying its exact class membership.)
+Use this class or its subclass [`NSMutableDictionary`](nsmutabledictionary.md) when you need a convenient and efficient way to retrieve data associated with an arbitrary key. `NSDictionary` creates static dictionaries, and `NSMutableDictionary` creates dynamic dictionaries. (For convenience, the term *dictionary* refers to any instance of one of these classes without specifying its exact class membership.)
 
 A key-value pair within a dictionary is called an entry. Each entry consists of one object that represents the key and a second object that is that key’s value. Within a dictionary, the keys are unique. That is, no two keys in a single dictionary are equal (as determined by [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:))). In general, a key can be any object (provided that it conforms to the `NSCopying` protocol—see below), but note that when using key-value coding the key must be a string (see [`Accessing Object Properties`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/BasicPrinciples.html#//apple_ref/doc/uid/20002170)). Neither a key nor a value can be `nil`; if you need to represent a null value in a dictionary, you should use [`NSNull`](nsnull.md).
 
@@ -38,7 +38,29 @@ A key-value pair within a dictionary is called an entry. Each entry consists of 
 
 ##### Creating Nsdictionary Objects Using Dictionary Literals
 
-In addition to the provided initializers, such as [`init(objects:forKeys:)`](nsdictionary/init(objects:forkeys:).md), you can create an `NSDictionary` object using a .
+In addition to the provided initializers, such as [`init(objects:forKeys:)`](nsdictionary/init(objects:forkeys:).md), you can create an `NSDictionary` object using a *dictionary literal*.
+
+**Swift**:
+
+```swift
+let dictionary: NSDictionary = [
+    "anObject" : someObject,
+    "helloString" : "Hello, World!",
+    "magicNumber" : 42,
+    "aValue" : someValue
+]
+```
+
+**Objective-C**:
+
+```objc
+NSDictionary *dictionary = @{
+       @"anObject" : someObject,
+    @"helloString" : @"Hello, World!",
+    @"magicNumber" : @42,
+         @"aValue" : someValue
+};
+```
 
 In Objective-C, the compiler generates code that makes an underlying call to the [`dictionaryWithObjects:forKeys:count:`](nsdictionary/dictionarywithobjects:forkeys:count:.md) method.
 
@@ -57,11 +79,40 @@ In Swift, the `NSDictionary` class conforms to the `DictionaryLiteralConvertible
 
 ##### Accessing Values Using Subscripting
 
-In addition to the provided instance methods, such as [`object(forKey:)`](nsdictionary/object(forkey:).md), you can access `NSDictionary` values by their keys using .
+In addition to the provided instance methods, such as [`object(forKey:)`](nsdictionary/object(forkey:).md), you can access `NSDictionary` values by their keys using *subscripting*.
+
+**Swift**:
+
+```swift
+let value = dictionary["helloString"]
+```
+
+**Objective-C**:
+
+```objc
+id value = dictionary[@"helloString"];
+```
 
 ##### Enumerating Entries Using for in Loops
 
-In addition to the provided instance methods, such as [`enumerateKeysAndObjects(_:)`](nsdictionary/enumeratekeysandobjects(_:).md), you can enumerate `NSDictionary` entries using .
+In addition to the provided instance methods, such as [`enumerateKeysAndObjects(_:)`](nsdictionary/enumeratekeysandobjects(_:).md), you can enumerate `NSDictionary` entries using *for-in loops*.
+
+**Swift**:
+
+```swift
+for (key, value) in dictionary {
+    print("Value: \(value) for key: \(key)")
+}
+```
+
+**Objective-C**:
+
+```objc
+for (NSString *key in dictionary) {
+    id value = dictionary[key];
+    NSLog(@"Value: %@ for key: %@", value, key);
+}
+```
 
 In Objective-C, `NSDictionary` conforms to the [`NSFastEnumeration`](nsfastenumeration.md) protocol.
 

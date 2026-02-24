@@ -26,7 +26,7 @@ When using a graphics context that supports multiple pages, you should call this
 
 ## Parameters
 
-- `mediaBox`: A rectangle defining the bounds of the new page, expressed in units of the default user space, or  . These bounds supersede any supplied for the media box when you created the context. If you pass  , Core Graphics uses the rectangle you supplied for the media box when the graphics context was created.
+- `mediaBox`: A rectangle defining the bounds of the new page, expressed in units of the default user space, or `NULL`. These bounds supersede any supplied for the media box when you created the context. If you pass `NULL`, Core Graphics uses the rectangle you supplied for the media box when the graphics context was created.
 
 ## See Also
 

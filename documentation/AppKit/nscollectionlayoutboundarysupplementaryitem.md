@@ -20,7 +20,63 @@ A boundary supplementary item is a specialized type of supplementary item ([`NSC
 
 Each type of supplementary item must have a unique element kind. Consider tracking these strings together in a way that makes it straightforward to identify each element, for example:
 
+**Swift**:
+
+```swift
+struct ElementKind {
+    static let badge = "badge-element-kind"
+    static let background = "background-element-kind"
+    static let sectionHeader = "section-header-element-kind"
+    static let sectionFooter = "section-footer-element-kind"
+    static let layoutHeader = "layout-header-element-kind"
+    static let layoutFooter = "layout-footer-element-kind"
+}
+```
+
+**Objective-C**:
+
+```objc
+NSString* const ELEMENT_KIND_BADGE = @"badge-element-kind";
+NSString* const ELEMENT_KIND_BACKGROUND = @"background-element-kind";
+NSString* const ELEMENT_KIND_SECTION_HEADER = @"section-header-element-kind";
+NSString* const ELEMENT_KIND_SECTION_FOOTER = @"section-footer-element-kind";
+NSString* const ELEMENT_KIND_LAYOUT_HEADER = @"layout-header-element-kind";
+NSString* const ELEMENT_KIND_LAYOUT_FOOTER = @"layout-footer-element-kind";
+```
+
 Add boundary supplementary items to a section by setting that section’s [`boundarySupplementaryItems`](nscollectionviewcompositionallayoutconfiguration/boundarysupplementaryitems.md) property:
+
+**Swift**:
+
+```swift
+let section = NSCollectionLayoutSection(group: group)
+
+let headerFooterSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                             heightDimension: .estimated(44))
+    
+let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerFooterSize,
+                                                               elementKind: ElementKind.sectionHeader,
+                                                                 alignment: .top)
+let sectionFooter = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerFooterSize,
+                                                               elementKind: ElementKind.sectionFooter,
+                                                                 alignment: .bottom)
+    
+section.boundarySupplementaryItems = [sectionHeader, sectionFooter]
+```
+
+**Objective-C**:
+
+```objc
+NSCollectionLayoutSection *section = [NSCollectionLayoutSection sectionWithGroup:group];
+
+NSCollectionLayoutSize *headerFooterSize = [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension fractionalWidthDimension:1.0] heightDimension:[NSCollectionLayoutDimension absoluteDimension:44.0]];
+
+NSCollectionLayoutBoundarySupplementaryItem *sectionHeader = [NSCollectionLayoutBoundarySupplementaryItem boundarySupplementaryItemWithLayoutSize: headerFooterSize elementKind: ELEMENT_KIND_SECTION_HEADER alignment: NSRectAlignmentTop];
+
+NSCollectionLayoutBoundarySupplementaryItem *sectionFooter = [NSCollectionLayoutBoundarySupplementaryItem boundarySupplementaryItemWithLayoutSize: headerFooterSize elementKind: ELEMENT_KIND_SECTION_FOOTER alignment: NSRectAlignmentBottom];
+
+[section setBoundarySupplementaryItems: @[sectionHeader, sectionFooter]];
+```
 
 ## Topics
 

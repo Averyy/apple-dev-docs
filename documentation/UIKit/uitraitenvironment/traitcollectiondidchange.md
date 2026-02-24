@@ -44,7 +44,7 @@ At the beginning of your implementation, call `super` to ensure that interface e
 
 ## Parameters
 
-- `previousTraitCollection`: The   object before the interface environment changed.
+- `previousTraitCollection`: The [`UITraitCollection`](uitraitcollection.md) object before the interface environment changed.
 
 
 ---

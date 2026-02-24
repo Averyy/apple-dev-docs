@@ -20,6 +20,11 @@ object ManagedPreferences.PayloadContent.ANY
 - [object ManagedPreferences.PayloadContent.ANY.Settings](managedpreferences/payloadcontent-data.dictionary/any-data.dictionary/settings.md)
   The dictionary of forced settings.
 
+## Properties
+
+- `Forced` ([ManagedPreferences.PayloadContent.ANY.Settings]): The dictionary of forced settings.
+- `Set-Once` ([ManagedPreferences.PayloadContent.ANY.Settings]): The dictionary of one-time settings.
+
 
 ---
 

@@ -21,7 +21,7 @@ init(boundingBox: NormalizedRect, revision: DetectFaceRectanglesRequest.Revision
 ## Parameters
 
 - `boundingBox`: The bounding box of the detected face.
-- `revision`: The revision of the   that provided the bounding box.
+- `revision`: The revision of the [`DetectFaceRectanglesRequest`](detectfacerectanglesrequest.md) that provided the bounding box.
 
 ## See Also
 

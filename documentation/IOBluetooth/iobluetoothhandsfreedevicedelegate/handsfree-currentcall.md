@@ -17,7 +17,7 @@ optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, currentCall: [Any
 ## Parameters
 
 - `device`: The connected Bluetooth hands-free phone or headset.
-- `currentCall`: A dictionary with the incoming SMS message. For dictionary keys, see  .
+- `currentCall`: A dictionary with the incoming SMS message. For dictionary keys, see [`Current Call Information Constants`](current-call-information-constants.md).
 
 ## See Also
 

@@ -4,6 +4,11 @@
 
 #### Overview
 
+- **Containing profile atom**: Track (sound), movie
+- **`part-ID`**: `0x20202020` (universal feature)
+- **`feature-code`**: `'mp4a'`
+- **`feature-value`**: Unsigned `int(32)` where least significant 5 bits hold the `AudioObjectType` as found in the `AudioSpecificInfo` (as defined in specification ISO/IEC 14496-3, subclause 1.6) found in the esds of the MPEG-4 audio codec (QuickTime type `'mp4a'`) sample description
+
 #### Feature Values
 
 The least significant 5 bits hold the value. The most significant 27 bits of the feature value should be set to `0`.

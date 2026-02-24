@@ -22,9 +22,9 @@ static var dng: UTType { get }
 
 #### Discussion
 
- com.adobe.raw-image
+**UTI:** com.adobe.raw-image
 
- public.image
+**conforms to:** public.image
 
 
 ---

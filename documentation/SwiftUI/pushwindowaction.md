@@ -80,7 +80,7 @@ Use the other two options to target a [`WindowGroup`](windowgroup.md) and provid
 
 ## See Also
 
-- [Presenting windows and spaces](../visionOS/presenting-windows-and-spaces.md)
+- [Presenting windows and spaces](../visionos/presenting-windows-and-spaces.md)
   Open and close the scenes that make up your app’s interface.
 - [var supportsMultipleWindows: Bool](environmentvalues/supportsmultiplewindows.md)
   A Boolean value that indicates whether the current platform supports opening multiple windows.

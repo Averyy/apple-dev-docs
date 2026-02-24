@@ -22,7 +22,7 @@ init(_ label: LocalizedStringResource)
 
 ## Parameters
 
-- `label`: Localized text describing to the user what   is contained in this additional information entry. For example:   “orientation”. This will also be used as the identifier.
+- `label`: Localized text describing to the user what is contained in this additional information entry. For example: “orientation”. This will also be used as the identifier.
 
 ## See Also
 

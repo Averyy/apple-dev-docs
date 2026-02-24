@@ -27,6 +27,25 @@ A predicate that matches the specified objects based on their UUIDs.
 
 HealthKit assigns a UUID to each object when it is saved to the HealthKit store. HealthKit uses these IDs to uniquely identify objects from the store. Use this convenience method to create a predicate that checks an object’s UUID against the provided set of UUIDs. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+let uuids = HKQuery.predicateForObjectsWithUUIDs(myUUIDs)
+ 
+let explicitUUIDs =
+    NSPredicate(format: "%K IN %@", HKPredicateKeyPathUUID, myUUIDs)
+```
+
+**Objective-C**:
+
+```objc
+NSPredicate *uuids = [HKQuery predicateForObjectsWithUUIDs:myUUIDs];
+ 
+NSPredicate *explicitUUIDs = [NSPredicate predicateWithFormat:@"%K IN %@",
+                              HKPredicateKeyPathUUID,
+                              myUUIDs];
+```
+
 ## Parameters
 
 - `UUIDs`: The set of UUIDs to be matched.

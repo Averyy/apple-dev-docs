@@ -20,7 +20,7 @@ Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `
 
 ## Parameters
 
-- `traitMask`: The font attributes to apply. For information about the font traits you can apply, see  .
+- `traitMask`: The font attributes to apply. For information about the font traits you can apply, see [`NSFontManager`](https://developer.apple.com/documentation/AppKit/NSFontManager).
 - `range`: The range of characters.
 
 ## See Also

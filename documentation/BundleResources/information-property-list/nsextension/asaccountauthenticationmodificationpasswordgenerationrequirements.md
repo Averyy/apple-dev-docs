@@ -10,6 +10,10 @@ The rules the system satisfies when generating a strong password for your extens
 - iPadOS 14.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 For more information about the format and content of this value, see [`Customizing Password AutoFill rules`](https://developer.apple.com/documentation/Security/customizing-password-autofill-rules).

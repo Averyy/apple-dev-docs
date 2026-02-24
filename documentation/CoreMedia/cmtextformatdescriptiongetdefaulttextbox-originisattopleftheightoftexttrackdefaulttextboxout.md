@@ -31,8 +31,8 @@ Within a text track, text is rendered within a text box.  There is a default tex
 ## Parameters
 
 - `desc`: FormatDescription being interrogated.
-- `originIsAtTopLeft`: Pass false if the   will be used in an environment where (0,0) is at the bottom-left corner of an enclosing rectangle and y coordinates increase as you go up.
-- `heightOfTextTrack`: If   is false, pass the height of the enclosing text track or destination.                                    This value will be used to properly compute the default text box for the given origin. Ignored if   is true.
+- `originIsAtTopLeft`: Pass true if the `CGRect` will be used in an environment where (0,0) is at the top-left corner of an enclosing rectangle and y coordinates increase as you go down. Pass false if the `CGRect` will be used in an environment where (0,0) is at the bottom-left corner of an enclosing rectangle and y coordinates increase as you go up.
+- `heightOfTextTrack`: If `originIsAtTopLeft` is false, pass the height of the enclosing text track or destination.                                    This value will be used to properly compute the default text box for the given origin. Ignored if `originIsAtTopLeft` is true.
 - `defaultTextBoxOut`: On output, receives the default text box.
 
 ## See Also

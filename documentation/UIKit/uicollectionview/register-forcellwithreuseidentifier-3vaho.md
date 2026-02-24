@@ -27,7 +27,7 @@ If you previously registered a class or nib file with the same reuse identifier,
 ## Parameters
 
 - `cellClass`: The class of a cell that you want to use in the collection view.
-- `identifier`: The reuse identifier to associate with the specified class. This parameter must not be   and must not be an empty string.
+- `identifier`: The reuse identifier to associate with the specified class. This parameter must not be `nil` and must not be an empty string.
 
 ## See Also
 

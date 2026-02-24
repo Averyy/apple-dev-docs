@@ -21,7 +21,7 @@ init?(mapRect: MKMapRect)
 
 ## Parameters
 
-- `mapRect`: The   that describes the camera boundary.
+- `mapRect`: The [`MKMapRect`](mkmaprect.md) that describes the camera boundary.
 
 ## See Also
 

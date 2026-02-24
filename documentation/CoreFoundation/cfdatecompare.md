@@ -26,9 +26,9 @@ A [`CFComparisonResult`](cfcomparisonresult.md) value that indicates whether `th
 
 ## Parameters
 
-- `theDate`: The date to compare to  .
-- `otherDate`: The date to compare to  .
-- `context`: Unused. Pass  .
+- `theDate`: The date to compare to `otherDate`.
+- `otherDate`: The date to compare to `theDate`.
+- `context`: Unused. Pass `NULL`.
 
 ## See Also
 

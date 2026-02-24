@@ -23,8 +23,9 @@ Returns a [`VSAccountManagerResult`](vsaccountmanagerresult.md) object that your
 
 ## Parameters
 
-- `request`: A   object that contains the information that your app requests.
-- `completionHandler`: The closure that the account manager executes after the request completes. This closure has no return value and takes the following parameters:
+- `request`: A [`VSAccountMetadataRequest`](vsaccountmetadatarequest.md) object that contains the information that your app requests.
+- `completionHandler`: The closure that the account manager executes after the request completes. This closure has no return value and takes the following parameters: - **metadata**: A [`VSAccountMetadata`](vsaccountmetadata.md) object that contains the requested information if the request was successful.
+- **error**: An error object that contains information about a problem, or `nil` if the operation completed successfully.
 
 ## See Also
 

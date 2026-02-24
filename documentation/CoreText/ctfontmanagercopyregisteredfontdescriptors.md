@@ -23,7 +23,7 @@ An array of font descriptors registered by the app. The array may be empty if no
 
 ## Parameters
 
-- `scope`: A scope constant that defines the availability and lifetime of the registration. If you specify  , only macOS can return fonts registered by any process. Other platforms can only return font descriptors registered by the app’s process. See   for more details.
+- `scope`: A scope constant that defines the availability and lifetime of the registration. If you specify [`CTFontManagerScope.persistent`](ctfontmanagerscope/persistent.md), only macOS can return fonts registered by any process. Other platforms can only return font descriptors registered by the app’s process. See [`CTFontManagerScope`](ctfontmanagerscope.md) for more details.
 - `enabled`: A Boolean value that indicates whether to return registered font descriptors that are enabled or disabled.
 
 ## See Also

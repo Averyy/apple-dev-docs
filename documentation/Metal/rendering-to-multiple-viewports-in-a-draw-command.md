@@ -14,6 +14,24 @@ A viewport defines a subsection of the render targets that you want a drawing co
 
 All GPUs in the macOS family support multiple viewports. Multiple viewports are available in the Apple GPU family starting with family 5. Test for support using the code below:
 
+**Swift**:
+
+```swift
+func supportsMultipleViewports() -> Bool {
+    return device.supportsFamily(MTLGPUFamily.mac2) || device.supportsFamily(MTLGPUFamily.apple5)
+}
+```
+
+**Objective-C**:
+
+```objective-c
+- (Boolean) supportsMultipleViewports
+{
+    return [_device supportsFamily: MTLGPUFamilyMac1 ] ||
+           [_device supportsFamily: MTLGPUFamilyApple5 ];
+}
+```
+
 For the maximum number of viewports you can use with each GPU family, see:
 
 - [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf)
@@ -50,6 +68,20 @@ The rasterization stage uses the selected viewport and associated scissor rectan
 ##### Specify Viewports and Scissor Rectangles in Your Draw Command
 
 Call [`setViewports(_:)`](mtlrendercommandencoder/setviewports(_:).md) to specify multiple viewports and [`setScissorRects(_:)`](mtlrendercommandencoder/setscissorrects(_:).md) to specify scissor rectangles:
+
+**Swift**:
+
+```swift
+renderEncoder.setViewports(viewPortsArray)
+renderEncoder.setScissorRects(scissorRectsArray)
+```
+
+**Objective-C**:
+
+```objective-c
+[renderEncoder setViewports:viewPortsArray count:4];
+[renderEncoder setScissorRects:scissorRectsArray count:4];
+```
 
 Specify the same number of scissor rectangles and viewports. Coordinate your code that encodes render commands with the code in your shaders such that the indices that your shader generates are within the range of provided values.
 

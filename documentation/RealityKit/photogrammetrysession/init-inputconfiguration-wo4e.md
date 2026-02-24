@@ -25,7 +25,7 @@ Creates a new session instance using all images in the specified [`URL`](https:/
 
 ## Parameters
 
-- `input`: The directory   containing a folder of images to use as reconstruction inputs.
+- `input`: The directory [`URL`](https://developer.apple.com/documentation/Foundation/URL) containing a folder of images to use as reconstruction inputs.
 - `configuration`: The configuration to use for this session.
 
 ## See Also

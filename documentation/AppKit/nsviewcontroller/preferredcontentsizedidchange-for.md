@@ -20,7 +20,7 @@ Override this method if you want to adjust layout when a child view controller o
 
 ## Parameters
 
-- `viewController`: The view controller whose   property value changed.
+- `viewController`: The view controller whose [`preferredContentSize`](nsviewcontroller/preferredcontentsize.md) property value changed.
 
 ## See Also
 

@@ -39,7 +39,7 @@ You can also incorporate calls to `CFShow` in a test version of your code to pri
 
 ## Parameters
 
-- `obj`: A Core Foundation object derived from CFType. If   is not a Core Foundation object, an assertion is raised.
+- `obj`: A Core Foundation object derived from CFType. If `obj` is not a Core Foundation object, an assertion is raised.
 
 ## See Also
 

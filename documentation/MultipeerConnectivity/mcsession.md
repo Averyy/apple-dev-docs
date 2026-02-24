@@ -50,7 +50,7 @@ If instead of using the framework’s browser and advertiser objects to perform 
 
 Each peer should serialize its own local `MCPeerID` object with `NSKeyedArchiver`, and the receiving peer should unserialize it with `NSKeyedUnarchiver`.
 
-> ❗ **Important**:  Do not attempt to construct a peer ID object for a nonlocal peer using [`init(displayName:)`](mcpeerid/init(displayname:).md). A peer ID object must be constructed .
+> ❗ **Important**:  Do not attempt to construct a peer ID object for a nonlocal peer using [`init(displayName:)`](mcpeerid/init(displayname:).md). A peer ID object must be constructed *on the device that it represents*.
 
 1. Exchange connection data. After you have obtained the nearby peer’s ID object, call [`nearbyConnectionData(forPeer:withCompletionHandler:)`](mcsession/nearbyconnectiondata(forpeer:withcompletionhandler:).md) to obtain a connection data object specific to that nearby peer.
 

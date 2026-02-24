@@ -25,7 +25,7 @@ The framwork calls this method on your delegate when the provider calls the [`re
 ## Parameters
 
 - `manager`: The local push manager that receives the call.
-- `userInfo`: A dictionary of custom information that the provider supplied in its call to  .
+- `userInfo`: A dictionary of custom information that the provider supplied in its call to [`reportIncomingCall(userInfo:)`](neapppushprovider/reportincomingcall(userinfo:).md).
 
 
 ---

@@ -30,7 +30,7 @@ You would declare the get-descent function like this if you were to name it `MyG
 
 ## Parameters
 
-- `refCon`: The reference-constant value supplied to the   function when the run delegate was created.
+- `refCon`: The reference-constant value supplied to the [`CTRunDelegateCreate(_:_:)`](ctrundelegatecreate(_:_:).md) function when the run delegate was created.
 
 ## See Also
 

@@ -8,7 +8,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 AppKit in macOS 10.14 includes new features, as well as API changes and deprecations. For information about earlier releases, see [`AppKit Release Notes for macOS 10.13`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/AppKit/RN-AppKit/).
 
-Pay special attention to the additions and changes described in  and .
+Pay special attention to the additions and changes described in *Supporting Dark Mode* and *Swift and Objective-C API Enhancements*.
 
 ##### Supporting Dark Mode
 
@@ -74,7 +74,7 @@ If you use `.rtf` or `.rtfd` files to supply text for the credits area, the file
 
 ##### Accent Colors
 
-macOS 10.14 introduces a new user preference called the . Use this color to tint the colorful parts of system controls, selection materials, and focus rings. A new system color, [`controlAccentColor`](https://developer.apple.com/documentation/AppKit/NSColor/controlAccentColor), draws dynamically using the user’s current preferred accent color. Your app’s views are automatically redrawn when the accent color changes.
+macOS 10.14 introduces a new user preference called the *accent color*. Use this color to tint the colorful parts of system controls, selection materials, and focus rings. A new system color, [`controlAccentColor`](https://developer.apple.com/documentation/AppKit/NSColor/controlAccentColor), draws dynamically using the user’s current preferred accent color. Your app’s views are automatically redrawn when the accent color changes.
 
 [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor) uses the new [`withSystemEffect(_:)`](https://developer.apple.com/documentation/AppKit/NSColor/withSystemEffect(_:)) method to include built-in effects for states like [`NSColor.SystemEffect.pressed`](https://developer.apple.com/documentation/AppKit/NSColor/SystemEffect/pressed), [`NSColor.SystemEffect.disabled`](https://developer.apple.com/documentation/AppKit/NSColor/SystemEffect/disabled), and [`NSColor.SystemEffect.rollover`](https://developer.apple.com/documentation/AppKit/NSColor/SystemEffect/rollover). This method produces a dynamically modified version of the color, applying effects that are tuned for the appearance of the current drawing context. These effects update automatically as the appearance context changes.
 
@@ -115,7 +115,7 @@ To center multiple items together, you can specify an [`NSToolbarItemGroup`](htt
 
 ###### Layer Backed Views
 
-Windows in apps linked against the macOS 10.14 SDK are displayed using Core Animation when the app is running in macOS 10.14. This  mean that all views are layer-backed; rather, it means that all views are either layer-backed or draw into a shared layer with other layers.
+Windows in apps linked against the macOS 10.14 SDK are displayed using Core Animation when the app is running in macOS 10.14. This *doesn’t* mean that all views are layer-backed; rather, it means that all views are either layer-backed or draw into a shared layer with other layers.
 
 This change should be mostly invisible to most apps, but you might notice one or more subtle changes as a result.
 
@@ -127,7 +127,7 @@ Views that return `true` from [`wantsUpdateLayer`](https://developer.apple.com/d
 
 ###### Deprecated Underline Styles and Their Replacements
 
-The following [`NSUnderlineStyle`](https://developer.apple.com/documentation/UIKit/NSUnderlineStyle) members are soft deprecated as of macOS 10.14.  means that the members are still available, but that they’re slated for deprecation and using them in new code is discouraged.
+The following [`NSUnderlineStyle`](https://developer.apple.com/documentation/UIKit/NSUnderlineStyle) members are soft deprecated as of macOS 10.14. *Soft deprecation* means that the members are still available, but that they’re slated for deprecation and using them in new code is discouraged.
 
 - `NSUnderlinePatternSolid` is replaced by [`NSUnderlineStylePatternSolid`](https://developer.apple.com/documentation/UIKit/NSUnderlineStyle/NSUnderlineStylePatternSolid).
 - `NSUnderlinePatternDot` is replaced by [`patternDot`](https://developer.apple.com/documentation/UIKit/NSUnderlineStyle/patternDot).
@@ -154,9 +154,9 @@ Use the new [`performValidatedReplacement(in:with:)`](https://developer.apple.co
 
 For apps linked on macOS 10.14 and later, [`NSTextField`](https://developer.apple.com/documentation/AppKit/NSTextField) instances in an [`NSTableRowView`](https://developer.apple.com/documentation/AppKit/NSTableRowView) no longer infer the [`NSView.BackgroundStyle.emphasized`](https://developer.apple.com/documentation/AppKit/NSView/BackgroundStyle/emphasized) interior background style for their associated [`NSTextFieldCell`](https://developer.apple.com/documentation/AppKit/NSTextFieldCell) instances based on the background color. The inferred style now depends on whether you set [`drawsBackground`](https://developer.apple.com/documentation/AppKit/NSTextFieldCell/drawsBackground).
 
-Text fields that  draw their own backgrounds now infer [`interiorBackgroundStyle`](https://developer.apple.com/documentation/AppKit/NSTableRowView/interiorBackgroundStyle) based on [`backgroundStyle`](https://developer.apple.com/documentation/AppKit/NSTableCellView/backgroundStyle). These text fields get the emphasized interior background style by default if they’re inside a selected table row. Setting [`backgroundStyle`](https://developer.apple.com/documentation/AppKit/NSTableCellView/backgroundStyle) for these text fields propagates that style to the interior background style.
+Text fields that *don’t* draw their own backgrounds now infer [`interiorBackgroundStyle`](https://developer.apple.com/documentation/AppKit/NSTableRowView/interiorBackgroundStyle) based on [`backgroundStyle`](https://developer.apple.com/documentation/AppKit/NSTableCellView/backgroundStyle). These text fields get the emphasized interior background style by default if they’re inside a selected table row. Setting [`backgroundStyle`](https://developer.apple.com/documentation/AppKit/NSTableCellView/backgroundStyle) for these text fields propagates that style to the interior background style.
 
-Text fields that  draw their own backgrounds get the [`NSView.BackgroundStyle.normal`](https://developer.apple.com/documentation/AppKit/NSView/BackgroundStyle/normal) interior background style by default even if they’re inside a selected table row. If you want the emphasized interior background style, override [`interiorBackgroundStyle`](https://developer.apple.com/documentation/AppKit/NSTableRowView/interiorBackgroundStyle) on the text field’s cell to return [`NSView.BackgroundStyle.emphasized`](https://developer.apple.com/documentation/AppKit/NSView/BackgroundStyle/emphasized).
+Text fields that *do* draw their own backgrounds get the [`NSView.BackgroundStyle.normal`](https://developer.apple.com/documentation/AppKit/NSView/BackgroundStyle/normal) interior background style by default even if they’re inside a selected table row. If you want the emphasized interior background style, override [`interiorBackgroundStyle`](https://developer.apple.com/documentation/AppKit/NSTableRowView/interiorBackgroundStyle) on the text field’s cell to return [`NSView.BackgroundStyle.emphasized`](https://developer.apple.com/documentation/AppKit/NSView/BackgroundStyle/emphasized).
 
 ###### Nsrulerview and Nstextfinder View Sizing
 
@@ -245,7 +245,7 @@ The affected typedefs are now declared using the new `NS_SWIFT_BRIDGED_TYPEDEF` 
 
 ##### New Formal Protocols
 
-AppKit now provides formal `@protocol` declarations for sets of methods that were formerly declared as , which are categories on [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) or some other class. Here are the new protcols:
+AppKit now provides formal `@protocol` declarations for sets of methods that were formerly declared as *informal protocols*, which are categories on [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) or some other class. Here are the new protcols:
 
 - [`NSColorChanging`](https://developer.apple.com/documentation/AppKit/NSColorChanging)
 - [`NSFontChanging`](https://developer.apple.com/documentation/AppKit/NSFontChanging)

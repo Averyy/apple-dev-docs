@@ -28,7 +28,7 @@ This field creates a directional gravitational force that applies uniformly to a
 
 ## Parameters
 
-- `direction`: The vector indicating the direction of the gravitational force. You can change this value later by modifying the   property.
+- `direction`: The vector indicating the direction of the gravitational force. You can change this value later by modifying the [`direction`](uifieldbehavior/direction.md) property.
 
 ## See Also
 

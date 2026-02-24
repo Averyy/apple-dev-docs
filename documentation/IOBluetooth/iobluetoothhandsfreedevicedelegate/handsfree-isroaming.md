@@ -17,7 +17,7 @@ optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, isRoaming: NSNumb
 ## Parameters
 
 - `device`: The connected Bluetooth hands-free phone or headset.
-- `isRoaming`: The new value of the roaming indicator. For possible values, see  .
+- `isRoaming`: The new value of the roaming indicator. For possible values, see [`IOBluetoothHandsFreeIndicatorRoam`](iobluetoothhandsfreeindicatorroam.md).
 
 ## See Also
 

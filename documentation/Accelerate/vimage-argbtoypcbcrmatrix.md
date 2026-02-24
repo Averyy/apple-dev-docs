@@ -39,21 +39,21 @@ The vImage library uses this matrix to convert from RGB to YpCbCr using the foll
   Creates a 3 x 3 zero matrix for converting RGB to Y’CbCr.
 ### Conversion matrix elements
 - [var R_Yp: Float](vimage_argbtoypcbcrmatrix/r_yp.md)
-  The  value in the conversion matrix.
+  The *R_Yp* value in the conversion matrix.
 - [var G_Yp: Float](vimage_argbtoypcbcrmatrix/g_yp.md)
-  The  value in the conversion matrix.
+  The *G_Yp* value in the conversion matrix.
 - [var B_Yp: Float](vimage_argbtoypcbcrmatrix/b_yp.md)
-  The  value in the conversion matrix.
+  The *B_Yp* value in the conversion matrix.
 - [var R_Cb: Float](vimage_argbtoypcbcrmatrix/r_cb.md)
-  The  value in the conversion matrix.
+  The *R_Cb* value in the conversion matrix.
 - [var G_Cb: Float](vimage_argbtoypcbcrmatrix/g_cb.md)
-  The  value in the conversion matrix.
+  The *G_Cb* value in the conversion matrix.
 - [var B_Cb_R_Cr: Float](vimage_argbtoypcbcrmatrix/b_cb_r_cr.md)
-  The  value in the conversion matrix.
+  The *B_Cb_R_Cr* value in the conversion matrix.
 - [var G_Cr: Float](vimage_argbtoypcbcrmatrix/g_cr.md)
-  The  value in the conversion matrix.
+  The *G_Cr* value in the conversion matrix.
 - [var B_Cr: Float](vimage_argbtoypcbcrmatrix/b_cr.md)
-  The  value in the conversion matrix.
+  The *B_Cr* value in the conversion matrix.
 ### Conversion matrices
 - [var kvImage_ARGBToYpCbCrMatrix_ITU_R_709_2: UnsafePointer<vImage_ARGBToYpCbCrMatrix>!](kvimage_argbtoypcbcrmatrix_itu_r_709_2.md)
   RGB-to-Y’CbCr conversion matrix for ITU Recommendation BT.709-2.

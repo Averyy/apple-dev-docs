@@ -46,9 +46,9 @@ class RemoteImage {
 
 ## Parameters
 
-- `options`: A list of options to apply to the attached property to customize its behavior. For possible values, see  .
-- `originalName`: The previous name of the attribute, if it’s different to the one in the current schema version. The default value is  .
-- `hashModifier`: A unique hash value that represents the most recent version of the attached property. The default value is  .
+- `options`: A list of options to apply to the attached property to customize its behavior. For possible values, see [`Schema.Attribute.Option`](schema/attribute/option.md).
+- `originalName`: The previous name of the attribute, if it’s different to the one in the current schema version. The default value is `nil`.
+- `hashModifier`: A unique hash value that represents the most recent version of the attached property. The default value is `nil`.
 
 ## See Also
 

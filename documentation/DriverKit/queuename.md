@@ -34,7 +34,7 @@ TxComplete (OSAction            *action,
 
 ## Parameters
 
-- `name`: The name of the instance variable that contains an   object.
+- `name`: The name of the instance variable that contains an [`IODispatchQueue`](iodispatchqueue.md) object.
 
 ## See Also
 

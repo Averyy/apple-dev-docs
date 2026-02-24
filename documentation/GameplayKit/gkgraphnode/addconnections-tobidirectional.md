@@ -26,7 +26,7 @@ In GameplayKit, the connections between nodes in a graph are directional. For ex
 ## Parameters
 
 - `nodes`: The list of nodes to which to form connections.
-- `bidirectional`:   to create a connection in both directions;   to create only connections from this node to each of the specified nodes.
+- `bidirectional`: [`true`](https://developer.apple.com/documentation/Swift/true) to create a connection in both directions; [`false`](https://developer.apple.com/documentation/Swift/false) to create only connections from this node to each of the specified nodes.
 
 ## See Also
 

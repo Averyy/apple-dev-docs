@@ -28,7 +28,7 @@ You can override this method to perform additional tasks associated with dismiss
 
 ## Parameters
 
-- `animated`: If  , the disappearance of the view was animated.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), the disappearance of the view was animated.
 
 ## See Also
 

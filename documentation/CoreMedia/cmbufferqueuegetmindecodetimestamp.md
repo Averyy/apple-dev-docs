@@ -30,7 +30,7 @@ The search for earliest decode timstamp is performed in this API.               
 
 ## Parameters
 
-- `queue`:   being interrogated.
+- `queue`: `CMBufferQueue` being interrogated.
 
 ## See Also
 

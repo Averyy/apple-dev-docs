@@ -22,8 +22,8 @@ func CMSampleBufferHasDataFailed(_ sbuf: CMSampleBuffer, statusOut: UnsafeMutabl
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
-- `statusOut`: Points to an   to receive a status code describing the failure. Pass   if you don’t want this information.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
+- `statusOut`: Points to an `OSStatus` to receive a status code describing the failure. Pass `NULL` if you don’t want this information.
 
 ## See Also
 

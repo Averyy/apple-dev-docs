@@ -31,13 +31,18 @@ Objects that adopt the [`UITextInput`](uitextinput.md) protocol maintain informa
 - Reporting text positions and text ranges
 - Responding to queries layout and writing direction
 - Performing hit-testing — returning text positions and ranges for a specific point
-- Providing the system with rectangles for highlighting ranges of text and drawing the , a glyph that represents the insertion point during text entry
+- Providing the system with rectangles for highlighting ranges of text and drawing the *caret*, a glyph that represents the insertion point during text entry
 
 In addition, a [`UITextInput`](uitextinput.md) object maintains ranges for selected text and marked text. Marked text, a part of multistage text input, represents provisionally inserted text that the user has yet to confirm. The range of marked text always contains a range of selected text, which might be a range of characters or the caret. Multistage text input is a requirement when the language is ideographic and the keyboard is phonetic.
 
 ##### Integrate with the Text Input System
 
 The [`UITextInput`](uitextinput.md) protocol works with other classes and protocols to integrate text-processing apps with the text input system:
+
+- **[`UITextPosition`](uitextposition.md) and [`UITextRange`](uitextrange.md) classes**: All [`UITextInput`](uitextinput.md)-conforming document classes must create custom subclasses of these classes. A [`UITextPosition`](uitextposition.md) object represents a position in a text container. A [`UITextRange`](uitextrange.md) object, which encapsulates beginning and ending [`UITextPosition`](uitextposition.md) objects, represents a range of characters in the text container.
+- **[`UITextInputTokenizer`](uitextinputtokenizer.md) protocol and [`UITextInputStringTokenizer`](uitextinputstringtokenizer.md) class**: The [`UITextInputTokenizer`](uitextinputtokenizer.md) protocol defines an interface for tokenizing input text. The [`UITextInputStringTokenizer`](uitextinputstringtokenizer.md) class is a default implementation of this protocol.
+- **[`UITextInputDelegate`](uitextinputdelegate.md) protocol**: The text input system automatically assigns its own text input delegate (which conforms to this protocol) to the [`UITextInput`](uitextinput.md)-conforming document object. This text input delegate allows document objects to inform the input system of changes in text and selection.
+- **[`UIKeyInput`](uikeyinput.md) protocol**: Implement this protocol to allow text entry and deletion at an insertion point.
 
 ##### Customize Keyboard Behavior
 

@@ -25,7 +25,7 @@ You can override this method if you want custom document-opening behavior, but i
 
 ## Parameters
 
-- `completionHandler`: The block is invoked on the main queue.
+- `completionHandler`: A block with code to execute after the open operation concludes. The block returns no value and has one parameter: - **`success`**: [`true`](https://developer.apple.com/documentation/Swift/true) if the open operation succeeds, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The block is invoked on the main queue.
 
 ## See Also
 

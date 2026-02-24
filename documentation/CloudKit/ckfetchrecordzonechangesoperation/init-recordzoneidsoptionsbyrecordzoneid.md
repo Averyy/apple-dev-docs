@@ -27,7 +27,7 @@ CloudKit configures the operation for retrieving all of the record zones that yo
 ## Parameters
 
 - `recordZoneIDs`: The IDs of the record zones that you want to query for changes.
-- `optionsByRecordZoneID`: A dictionary that maps record zone IDs to their corresponding options. You can specify   for this parameter.
+- `optionsByRecordZoneID`: A dictionary that maps record zone IDs to their corresponding options. You can specify `nil` for this parameter.
 
 ## See Also
 

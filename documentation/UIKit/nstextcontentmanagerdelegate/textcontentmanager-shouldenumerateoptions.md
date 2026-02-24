@@ -25,8 +25,8 @@ A Boolean value that informs the framework to skip this `textElement`  in the en
 ## Parameters
 
 - `textContentManager`: The content manager.
-- `textElement`: The   to evaluate.
-- `options`: One of the available   options.
+- `textElement`: The [`NSTextElement`](nstextelement.md) to evaluate.
+- `options`: One of the available `NSTextElementProviderEnumerationOptions` options.
 
 
 ---

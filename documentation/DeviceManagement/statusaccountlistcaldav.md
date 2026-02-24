@@ -36,6 +36,10 @@ object StatusAccountListCalDAV
 - [object StatusAccountListCalDAVAccountObject](statusaccountlistcaldavaccountobject.md)
   A status report of the client’s Calendar account details.
 
+## Properties
+
+- `account.list.caldav` ([StatusAccountListCalDAVAccountObject]) *(required)*: A list of status values for the Calendar accounts.
+
 ## See Also
 
 - [object StatusAccountListCardDAV](statusaccountlistcarddav.md)

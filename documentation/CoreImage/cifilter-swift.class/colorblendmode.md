@@ -29,6 +29,9 @@ This method applies the color-blend mode filter to an image. The effect creates 
 
 The color-blend mode filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that replaces the colors the image:
 
 ```swift

@@ -22,7 +22,7 @@ convenience init?(fromRemoteNotificationDictionary notificationDictionary: [AnyH
 
 ## Parameters
 
-- `notificationDictionary`: The push notification’s payload data. Use the dictionary that the system provides to your app delegate’s   method. This parameter must not be  .
+- `notificationDictionary`: The push notification’s payload data. Use the dictionary that the system provides to your app delegate’s [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didReceiveRemoteNotification:fetchCompletionHandler:)) method. This parameter must not be `nil`.
 
 
 ---

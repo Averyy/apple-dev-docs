@@ -11,6 +11,10 @@ A list of service providers and the devices that they support.
 - tvOS 16.0+
 - watchOS 9.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 Use this key to define which devices [`DeviceDiscoveryUI`](https://developer.apple.com/documentation/DeviceDiscoveryUI) can connect with. The application services’s [`Browses`](information-property-list/nsapplicationservices/browses.md) key takes an array of dictionaries, where each dictionary contains a unique identifier, a usage description string, and a list of supported operating systems. You can define more than one application service for your apps. Each service has its own identifier, and can connect to a different subset of devices.
@@ -47,6 +51,10 @@ Set these in your tvOS app target’s Info tab, or in its `Info.plist` file.
 </dict>
  
 ```
+
+- **`NSApplicationServiceIdentifier`**: A string that identifies your application service. You can use any string for your service, but you must use the same string for both your tvOS app and the iOS, iPadOS, and watchOS apps.
+- **`NSApplicationServiceUsageDescription`**: A string that describes why you want to access the other devices. This is displayed to the user in the picker view.
+- **`NSApplicationServicePlatformSupport`**: This is an array that contains strings representing the types of devices your application service can connect to. The valid values are `“iOS”`, `“iPadOS”`, and `“watchOS”`.
 
 You can use the human-readable key names in Xcode’s property list editor.
 

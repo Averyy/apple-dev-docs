@@ -21,7 +21,7 @@ init(_ rawValue: Int)
 
 ## Parameters
 
-- `rawValue`: An integer that represents the desired priority. The system considers a high value more important than a low one. Provide a value that’s in the range   to  .
+- `rawValue`: An integer that represents the desired priority. The system considers a high value more important than a low one. Provide a value that’s in the range [`min`](https://developer.apple.com/documentation/Swift/Int/min) to [`max`](https://developer.apple.com/documentation/Swift/Int/max).
 
 ## See Also
 

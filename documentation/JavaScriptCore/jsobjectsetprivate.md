@@ -29,7 +29,7 @@ The default object class doesn’t allocate storage for private data. Only objec
 
 ## Parameters
 
-- `object`: The   with the private data you want to set.
+- `object`: The [`JSObjectRef`](jsobjectref.md) with the private data you want to set.
 - `data`: A pointer to set as the object’s private data.
 
 ## See Also

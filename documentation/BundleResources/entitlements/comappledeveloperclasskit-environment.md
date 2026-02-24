@@ -11,6 +11,10 @@ The ClassKit development or production environment for an education app that wor
 - macOS 11.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key specifies the ClassKit environment your app uses to share data with Apple’s Schoolwork app.

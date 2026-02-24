@@ -31,7 +31,7 @@ To run the sample code project:
 
 ##### Create a Gesture Recognizer for Drawing
 
-The sample project uses a , which reacts when a person presses and holds a touch for a minimum period of time, to draw strokes with Apple Pencil.
+The sample project uses a *long-press gesture recognizer*, which reacts when a person presses and holds a touch for a minimum period of time, to draw strokes with Apple Pencil.
 
 The app implements the `DrawGestureRecognizer` subclass, which extends the capabilities of its superclass [`UILongPressGestureRecognizer`](uilongpressgesturerecognizer.md) to track the `currentTouch` and `currentEvent`. These additional properties provide the information necessary to implement high-fidelity drawing.
 
@@ -76,7 +76,7 @@ To render the strokes on the canvas, the sample calls `updatePath(point: CGPoint
 
 ##### Create a Gesture Recognizer for Hover Preview
 
-The sample project uses a hover gesture recognizer to generate a visual preview of the stroke before Apple Pencil touches down on the iPad screen. A  reacts when a pointer from a pointing device such as Apple Pencil moves over a user-interface element. When a person hovers the Apple Pencil a short distance above the iPad screen, the app generates a preview.
+The sample project uses a hover gesture recognizer to generate a visual preview of the stroke before Apple Pencil touches down on the iPad screen. A *hover gesture recognizer* reacts when a pointer from a pointing device such as Apple Pencil moves over a user-interface element. When a person hovers the Apple Pencil a short distance above the iPad screen, the app generates a preview.
 
 The sample project creates an instance of [`UIHoverGestureRecognizer`](uihovergesturerecognizer.md) to handle the hover gesture.
 
@@ -92,7 +92,7 @@ guard !isDrawing else { return }
 
 ##### Update the Hover Preview
 
-The sample changes the opacity, or , of the hover preview effect according to the distance the Apple Pencil hovers above the iPad screen. When Apple Pencil is farther from the screen, the preview alpha is lower, which makes the visual effect more subtle. When Apple Pencil is closer to the screen, the preview alpha is higher, which makes the visual effect more prominent.
+The sample changes the opacity, or *alpha*, of the hover preview effect according to the distance the Apple Pencil hovers above the iPad screen. When Apple Pencil is farther from the screen, the preview alpha is lower, which makes the visual effect more subtle. When Apple Pencil is closer to the screen, the preview alpha is higher, which makes the visual effect more prominent.
 
 The sample calculates the preview alpha value in the `hoverGesture(_:)` method using the following values:
 

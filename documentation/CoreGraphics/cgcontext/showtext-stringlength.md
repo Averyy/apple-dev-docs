@@ -23,7 +23,7 @@ Core Graphics uses font data provided by the system to map each byte of the arra
 ## Parameters
 
 - `string`: An array of characters to draw.
-- `length`: The length of the array specified in the   parameter.
+- `length`: The length of the array specified in the `bytes` parameter.
 
 ## See Also
 

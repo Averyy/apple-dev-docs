@@ -23,7 +23,7 @@ func playbackCoordinator(_ coordinator: AVDelegatingPlaybackCoordinator, didIssu
 ## Parameters
 
 - `coordinator`: The playback coordinator that issues the command.
-- `playCommand`: The command to execute. Before performing it, verify that its   property value matches the item that you’re currently playing. If the command isn’t valid for the current item, ignore it and call the completion handler.
+- `playCommand`: The command to execute. Before performing it, verify that its [`expectedCurrentItemIdentifier`](avdelegatingplaybackcoordinatorplaybackcontrolcommand/expectedcurrentitemidentifier.md) property value matches the item that you’re currently playing. If the command isn’t valid for the current item, ignore it and call the completion handler.
 - `completionHandler`: A completion handler that your app must call when it finishes handling the command, either successfully or after beginning a suspension if it can’t handle the command currently.
 
 ## See Also

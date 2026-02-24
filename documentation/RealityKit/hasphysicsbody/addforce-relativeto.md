@@ -27,7 +27,7 @@ The physics simulator applies the added force until the end of the frame interva
 ## Parameters
 
 - `force`: A force in newtons.
-- `referenceEntity`: The reference entity that defines the coordinate   space in which   is defined.
+- `referenceEntity`: The reference entity that defines the coordinate space in which `force` is defined.
 
 ## See Also
 

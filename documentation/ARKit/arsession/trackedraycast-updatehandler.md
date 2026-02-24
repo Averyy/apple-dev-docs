@@ -24,7 +24,7 @@ When you’re ready to stop a tracked ray cast, call [`stopTracking()`](artracke
 
 ## Parameters
 
-- `query`: The ray-cast query that ARKit will repeat. If you use a standard renderer, you ask the standard renderer to provide the ray-cast query; see Finding Real-World Surfaces of  . If you use a custom renderer, you create a ray-cast query by specifying a point on a particular frame; see   in  .
+- `query`: The ray-cast query that ARKit will repeat. If you use a standard renderer, you ask the standard renderer to provide the ray-cast query; see Finding Real-World Surfaces of [`ARSCNView`](arscnview.md). If you use a custom renderer, you create a ray-cast query by specifying a point on a particular frame; see `Finding Real-World Surfaces` in [`ARFrame`](arframe.md).
 - `updateHandler`: A closure you provide that ARKit calls every time it has an updated ray-cast result for you. Use this opportunity to update the position of any virtual content your app may have placed using the prior results of the tracked ray cast. ARKit invokes this closure on your session’s delegate queue.
 
 ## See Also

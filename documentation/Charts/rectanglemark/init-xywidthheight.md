@@ -48,8 +48,8 @@ Chart(data) {
 
 - `x`: The value plotted with x.
 - `y`: The value plotted with y.
-- `width`: The rectangle width.  If   is not specified, then 70% of the step size will be used. If there is no step size a default width (in pts) will be used.
-- `height`: The rectangle height.  If   is not specified, then 70% of the step size will be used. If there is no step size a default height (in pts) will be used.
+- `width`: The rectangle width.  If `width` is not specified, then 70% of the step size will be used. If there is no step size a default width (in pts) will be used.
+- `height`: The rectangle height.  If `height` is not specified, then 70% of the step size will be used. If there is no step size a default height (in pts) will be used.
 
 ## See Also
 

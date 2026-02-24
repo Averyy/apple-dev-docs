@@ -34,7 +34,7 @@ If more than one child share the same name, the first node discovered is returne
 
 ## Parameters
 
-- `name`: The name to search for. This may be either the literal name of the node or a customized search string. See  .
+- `name`: The name to search for. This may be either the literal name of the node or a customized search string. See `Searching the Node Tree`.
 
 ## See Also
 

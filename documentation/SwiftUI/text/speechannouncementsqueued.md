@@ -26,7 +26,7 @@ Use this modifier when you want affect the order in which the accessibility syst
 
 ## Parameters
 
-- `value`: A Boolean value that determines if VoiceOver speaks   changes to text immediately or enqueues them behind existing speech.   Defaults to  .
+- `value`: A Boolean value that determines if VoiceOver speaks changes to text immediately or enqueues them behind existing speech. Defaults to `true`.
 
 ## See Also
 

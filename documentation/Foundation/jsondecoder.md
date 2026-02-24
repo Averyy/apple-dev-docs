@@ -95,6 +95,8 @@ print(product.name) // Prints "Durian"
 
 ## See Also
 
+- [Using JSON with custom types](using-json-with-custom-types.md)
+  Encode and decode JSON data, regardless of its structure, using Swift’s JSON support.
 - [class JSONEncoder](jsonencoder.md)
   An object that encodes instances of a data type as JSON objects.
 - [class JSONSerialization](jsonserialization.md)

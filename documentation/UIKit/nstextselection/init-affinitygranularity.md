@@ -21,8 +21,8 @@ init(_ textRanges: [NSTextRange], affinity: NSTextSelection.Affinity, granularit
 ## Parameters
 
 - `textRanges`: An array of text ranges.
-- `affinity`: One of the available   options.
-- `granularity`: One of the available   options.
+- `affinity`: One of the available [`NSTextSelection.Affinity`](nstextselection/affinity-swift.enum.md) options.
+- `granularity`: One of the available [`NSTextSelection.Granularity`](nstextselection/granularity-swift.enum.md) options.
 
 ## See Also
 

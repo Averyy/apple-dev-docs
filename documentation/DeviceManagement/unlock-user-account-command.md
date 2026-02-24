@@ -24,6 +24,43 @@ Refer to the following sections to determine supported channels and requirements
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>RequestType</key>
+        <string>UnlockUserAccount</string>
+        <key>UserName</key>
+        <string>graham</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_UnlockUserAccount</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_UnlockUserAccount</string>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>91FE0F6E-F91C-589A-95E6-02835CE7126D</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -31,6 +68,10 @@ Refer to the following sections to determine supported channels and requirements
   The command to unlock a user account that the system locked because of too many failed password attempts.
 - [object UnlockUserAccountResponse](unlockuseraccountresponse.md)
   A response from the device after it processes the command to unlock a user account that the system locked because of too many failed password attempts.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

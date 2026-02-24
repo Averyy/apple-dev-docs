@@ -22,7 +22,8 @@ func enumerateLines(_ block: @escaping (String, UnsafeMutablePointer<ObjCBool>) 
 
 ## Parameters
 
-- `block`: The block takes two arguments:
+- `block`: The block executed for the enumeration. The block takes two arguments: - **line**: The current line of the string being enumerated. The line contains just the contents of the line, without the line terminators. See [`getLineStart(_:end:contentsEnd:for:)`](nsstring/getlinestart(_:end:contentsend:for:).md) for a discussion of line terminators.
+- **stop**: A reference to a Boolean value that the block can use to stop the enumeration by setting `*stop = YES`; it should not touch `*stop` otherwise.
 
 ## See Also
 

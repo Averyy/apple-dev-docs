@@ -26,10 +26,10 @@ This function performs no type checking. It allows the addition of values whose 
 
 ## Parameters
 
-- `multiValue`: The multivalue property to add   and   to.
-- `value`: The value to add to  .
-- `label`: The label for  .
-- `outIdentifier`: The address at which to place the identifier of the added value. Pass   to ignore the identifier.
+- `multiValue`: The multivalue property to add `value` and `label` to.
+- `value`: The value to add to `multiValue`.
+- `label`: The label for `value`.
+- `outIdentifier`: The address at which to place the identifier of the added value. Pass `NULL` to ignore the identifier.
 
 ## See Also
 

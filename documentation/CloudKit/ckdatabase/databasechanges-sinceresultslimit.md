@@ -24,17 +24,22 @@ func databaseChanges(since changeToken: CKServerChangeToken?, resultsLimit: Int?
 
 A tuple with the following named elements:
 
+- **`modifications`**: An array of database modifications that occur after the time that `changeToken` denotes. Each modification contains details about a modified record zone.
+- **`deletions`**: An array of database deletions that occur after the time that `changeToken` denotes. Each deletion contains details about a deleted or purged record zone.
+- **`changeToken`**: The change token that corresponds to the fetch results’ most recent change.
+- **`moreComing`**: A Boolean value that indicates whether the server has additional changes for you to fetch.
+
 #### Discussion
 
 This method fetches record zone changes in a database, which includes new record zones, changed zones — including deleted or purged zones — and zones that contain record changes. It throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account.
 
-Along with the fetched changes, CloudKit supplies a , which is an opaque token that denotes a specific point in the database’s history. Store this token and provide it the next time you execute this method. Change tokens conform to [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) and are safe to cache on-disk. Don’t infer any behavior or order from a token’s contents.
+Along with the fetched changes, CloudKit supplies a *change token*, which is an opaque token that denotes a specific point in the database’s history. Store this token and provide it the next time you execute this method. Change tokens conform to [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) and are safe to cache on-disk. Don’t infer any behavior or order from a token’s contents.
 
 For information on a more configurable way to fetch database changes, see [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md).
 
 ## Parameters
 
-- `changeToken`: The change token from the previous execution of this method. If this is your app’s first fetch, or you want to refetch every change in the database’s history, specify  .
+- `changeToken`: The change token from the previous execution of this method. If this is your app’s first fetch, or you want to refetch every change in the database’s history, specify `nil`.
 - `resultsLimit`: The maximum number of changes to return. The server may use a limit lower than this value.
 
 ## See Also

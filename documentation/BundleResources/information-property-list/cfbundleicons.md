@@ -12,6 +12,10 @@ Information about all of the icons used by the app.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: object
+
 ## Topics
 
 ### Property List Keys

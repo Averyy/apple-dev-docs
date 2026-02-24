@@ -22,7 +22,7 @@ init(mesh: MeshResource, modelID: String? = nil, instances: LowLevelInstanceData
 ## Parameters
 
 - `mesh`: The mesh resource to instance.
-- `modelID`: The name of the model to use. Set to   if there is only one model in the mesh resource.
+- `modelID`: The name of the model to use. Set to `nil` if there is only one model in the mesh resource.
 - `instances`: The instance data containing the number of instances, and the transforms for each instance.
 - `bounds`: The bounding box to use for the instance group this part draws.
 

@@ -22,13 +22,15 @@ func cblas_sgemv(_ ORDER: CBLAS_ORDER, _ TRANSA: CBLAS_TRANSPOSE, _ M: __LAPACK_
 
 #### Discussion
 
-This function multiplies  (after transposing `A`, if needed) and multiplies the resulting matrix by `alpha`. It then multiplies vector `Y` by `beta`. It stores the sum of these two products in vector `Y`.
+This function multiplies *A * X* (after transposing `A`, if needed) and multiplies the resulting matrix by `alpha`. It then multiplies vector `Y` by `beta`. It stores the sum of these two products in vector `Y`.
 
 Thus, it calculates either
 
+*Y ← αAX + βY*
+
 or
 
-``
+*Y ← αA_T_X + βY*``
 
 with optional use of the transposed form of `A`.
 
@@ -37,15 +39,15 @@ with optional use of the transposed form of `A`.
 ## Parameters
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
-- `TRANSA`: Specifies whether to transpose matrix  .
-- `M`: Number of rows in matrix  .
-- `N`: Number of columns in matrix  .
-- `ALPHA`: Scaling factor for the product of matrix   and vector  .
+- `TRANSA`: Specifies whether to transpose matrix `A`.
+- `M`: Number of rows in matrix `A`.
+- `N`: Number of columns in matrix `A`.
+- `ALPHA`: Scaling factor for the product of matrix `A` and vector `X`.
 - `A`: Matrix A.
-- `LDA`: The size of the first dimension of matrix  . For a matrix   that uses column-major ordering, the value is the number of rows  . For a matrix that uses row-major ordering, the value is the number of columns  .
+- `LDA`: The size of the first dimension of matrix `A`. For a matrix `A[M][N]` that uses column-major ordering, the value is the number of rows `M`. For a matrix that uses row-major ordering, the value is the number of columns `N`.
 - `X`: Vector X.
-- `INCX`: Stride within  . For example, if   is 7, every seventh element is used.
-- `BETA`: Scaling factor for vector  .
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every seventh element is used.
+- `BETA`: Scaling factor for vector `Y`.
 - `Y`: Vector Y
 - `INCY`: Stride within Y. For example, if incY is 7, every seventh element is used.
 

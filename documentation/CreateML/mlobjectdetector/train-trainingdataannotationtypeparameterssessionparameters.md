@@ -22,8 +22,8 @@ An [`MLJob`](mljob.md) that represents the object-detector training session.
 
 - `trainingData`: The annotated images the task uses to train the object detector.
 - `annotationType`: The format your data source uses for its image annotations.
-- `parameters`: An   instance you use to set the model   configuration settings for the training session.
-- `sessionParameters`: An   instance you use to configure the training session.
+- `parameters`: An [`MLObjectDetector.ModelParameters`](mlobjectdetector/modelparameters-swift.struct.md) instance you use to set the model configuration settings for the training session.
+- `sessionParameters`: An [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you use to configure the training session.
 
 ## See Also
 

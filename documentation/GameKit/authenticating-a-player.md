@@ -8,7 +8,7 @@ Confirm player credentials and device capabilities and check for account restric
 
 To identify themselves and access their game data from all their devices, players create a Game Center account that includes a profile with an avatar and nickname. A single account allows players to sign in to Game Center once and use the same credentials for all Game Center games on their device.
 
-In the GameKit framework, you use player objects to post scores, award achievements, build leaderboards, and start multiplayer games. The  ([`GKLocalPlayer`](gklocalplayer.md)) represents the user playing your game and other  ([`GKPlayer`](gkplayer.md)) may be friends, recent matches, or global players of your and other games.
+In the GameKit framework, you use player objects to post scores, award achievements, build leaderboards, and start multiplayer games. The *local player* ([`GKLocalPlayer`](gklocalplayer.md)) represents the user playing your game and other *players* ([`GKPlayer`](gkplayer.md)) may be friends, recent matches, or global players of your and other games.
 
 Before you access any Game Center data, you must verify that the local player signed in to Game Center on the device. Check if the player has any account restrictions and adjust your game accordingly. On Apple TV, your game can also support the ability to switch between user accounts.
 

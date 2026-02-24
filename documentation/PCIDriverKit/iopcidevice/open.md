@@ -25,7 +25,7 @@ This method gives the specified [`IOService`](https://developer.apple.com/docume
 
 ## Parameters
 
-- `forClient`: The service object that is opening the session. Typically, you specify your driver’s custom   object.
+- `forClient`: The service object that is opening the session. Typically, you specify your driver’s custom [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService) object.
 - `options`: Additional options for opening the session.
 
 ## See Also

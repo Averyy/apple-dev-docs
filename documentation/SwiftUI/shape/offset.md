@@ -39,7 +39,7 @@ Circle()
 
 ## Parameters
 
-- `offset`: The amount, in points, by which you offset the   shape. Negative numbers are to the left and up; positive numbers are   to the right and down.
+- `offset`: The amount, in points, by which you offset the shape. Negative numbers are to the left and up; positive numbers are to the right and down.
 
 ## See Also
 

@@ -22,7 +22,7 @@ func setString(_ aString: String)
 
 ## Parameters
 
-- `aString`: The string with which to replace the receiver’s content.   must not be  .
+- `aString`: The string with which to replace the receiver’s content. `aString` must not be `nil`.
 
 ## See Also
 

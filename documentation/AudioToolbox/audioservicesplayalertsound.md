@@ -23,9 +23,9 @@ func AudioServicesPlayAlertSound(_ inSystemSoundID: SystemSoundID)
 
 Depending on the particular iOS device, this function plays a short sound and may invoke vibration. Calling this function does the following on various iOS devices:
 
-- —plays the specified sound. If the user has configured the Settings application for vibration on ring, also invokes vibration. However, the device does  vibrate if your app’s audio session is configured with the  [`playAndRecord`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Category-swift.struct/playAndRecord) or [`record`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Category-swift.struct/record) audio session category. This ensures that vibration doesn’t interfere with audio recording. For an explanation of audio session categories, see [`Categories Express Audio Roles`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007875-CH1-SW4).
-- —plays a short alert melody.
-- —plays the specified sound.
+- *iPhone*—plays the specified sound. If the user has configured the Settings application for vibration on ring, also invokes vibration. However, the device does *not* vibrate if your app’s audio session is configured with the  [`playAndRecord`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Category-swift.struct/playAndRecord) or [`record`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Category-swift.struct/record) audio session category. This ensures that vibration doesn’t interfere with audio recording. For an explanation of audio session categories, see [`Categories Express Audio Roles`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007875-CH1-SW4).
+- *iPod touch, original*—plays a short alert melody.
+- *iPod touch, 2nd generation and newer*—plays the specified sound.
 
 In iOS, the duration of the sound to be played must not be more than 30 seconds.
 
@@ -37,7 +37,7 @@ To play a short sound not used as an alert, use [`AudioServicesPlaySystemSound(_
 
 ## Parameters
 
-- `inSystemSoundID`: Before using this function, call the   function to obtain a system sound.
+- `inSystemSoundID`: The system sound object to play as an alert. Before using this function, call the [`AudioServicesCreateSystemSoundID(_:_:)`](audioservicescreatesystemsoundid(_:_:).md) function to obtain a system sound.
 
 ## See Also
 

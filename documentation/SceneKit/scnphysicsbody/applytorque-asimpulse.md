@@ -36,7 +36,7 @@ As with all physical quantities in SceneKit, you need not use realistic force an
 ## Parameters
 
 - `torque`: The direction and magnitude of the torque (in newton-meters) or of the change of angular momentum (in newton-meter-seconds), relative to the world coordinate space of the scene.
-- `impulse`:   to apply an instantaneous change in angular momentum;   to apply a torque that affects the body at the end of the simulation step.
+- `impulse`: [`true`](https://developer.apple.com/documentation/Swift/true) to apply an instantaneous change in angular momentum; [`false`](https://developer.apple.com/documentation/Swift/false) to apply a torque that affects the body at the end of the simulation step.
 
 ## See Also
 

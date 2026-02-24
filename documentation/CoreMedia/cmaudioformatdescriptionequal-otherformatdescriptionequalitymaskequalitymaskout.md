@@ -30,10 +30,10 @@ Bits in `equalityMask` specify the caller’s interest in the equality of variou
 
 ## Parameters
 
-- `formatDescription`: The   being compared.
-- `otherFormatDescription`: The   to which it is being compared.
+- `formatDescription`: The `CMAudioFormatDescription` being compared.
+- `otherFormatDescription`: The `CMAudioFormatDescription` to which it is being compared.
 - `equalityMask`: Mask specifying which parts of the descriptions to compare.
-- `equalityMaskOut`: Pointer to variable that will be written with the results that represent the parts that are equal. Can be  .
+- `equalityMaskOut`: Pointer to variable that will be written with the results that represent the parts that are equal. Can be `nil`.
 
 ## See Also
 

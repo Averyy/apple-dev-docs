@@ -23,7 +23,7 @@ func CFDictionaryRemoveValue(_ theDict: CFMutableDictionary!, _ key: UnsafeRawPo
 ## Parameters
 
 - `theDict`: The dictionary to modify.
-- `key`: The key of the value to remove from  . If a key which matches   is present in  , the key-value pair is removed from the dictionary, otherwise this function does nothing (“remove if present”).
+- `key`: The key of the value to remove from `theDict`. If a key which matches `key` is present in `theDict`, the key-value pair is removed from the dictionary, otherwise this function does nothing (“remove if present”).
 
 ## See Also
 

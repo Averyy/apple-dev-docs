@@ -14,6 +14,10 @@ The dictionary of settings.
 object ManagedPreferences.PayloadContent.ANY.Settings.Mcx_preference_settings
 ```
 
+## Properties
+
+- `ANY` (any): The setting/value pairs.
+
 
 ---
 

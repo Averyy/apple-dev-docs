@@ -34,7 +34,7 @@ Logs with the prefix [RealityKit File Compatibility Info] will be posted to the 
 
 ## Parameters
 
-- `url`: The location URL in the file system where you want to save the   file.
+- `url`: The location URL in the file system where you want to save the `.reality` file.
 
 
 ---

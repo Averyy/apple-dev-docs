@@ -17,7 +17,7 @@ init(countdownDuration: Alarm.CountdownDuration? = nil, schedule: Alarm.Schedule
 
 ## Parameters
 
-- `countdownDuration`: The optional countdown duration. When   set to a non-nil value, a countdown shows in the Lock Screen for the specified duration.
+- `countdownDuration`: The optional countdown duration. When set to a non-nil value, a countdown shows in the Lock Screen for the specified duration.
 - `schedule`: The schedule that determines when the alarm alerts.
 - `attributes`: The attributes of the alarm.
 - `stopIntent`: The intent to execute when a person stops the countdown.

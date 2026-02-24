@@ -16,7 +16,7 @@ When someone connects an MFi accessory to their iPhone or iPad using a physical 
 
 #### Build Drivers to Support Custom Hardware Features
 
-Macs and iPads provide USB ports for connecting external devices, and some devices support other types of ports. When someone attaches a device to the computer, the system searches for a driver capable of communicating with that device. If you develop custom hardware, create a  () to tell the system what services your device offers and how to communicate with it.
+Macs and iPads provide USB ports for connecting external devices, and some devices support other types of ports. When someone attaches a device to the computer, the system searches for a driver capable of communicating with that device. If you develop custom hardware, create a *driver extension* (*dext*) to tell the system what services your device offers and how to communicate with it.
 
 To simplify driver development, Apple operating systems contain a set of default drivers capable of communicating with devices that adopt industry-standard protocols. If your device adopts only standard protocols, create a [`Implementing drivers, system extensions, and kexts`](https://developer.apple.com/documentation/kernel/implementing_drivers_system_extensions_and_kexts#3616855) to specify the protocols it supports. If your device extends the basic features or adds custom protocols, add code to your dext to support those custom features.
 

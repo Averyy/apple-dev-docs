@@ -44,7 +44,31 @@ When drawing text for your menus and labels:
 - Update the text size when the user changes the preferred content size.
 - Make the text no smaller than the recommended minimum text size for each platform so it’s readable on all devices.
 
-The system uses points to measure font size.  are a logical unit independent from the physical screen size and resolution. If necessary, use the following code to convert a font size from points to drawable pixels:
+The system uses points to measure font size. *Points* are a logical unit independent from the physical screen size and resolution. If necessary, use the following code to convert a font size from points to drawable pixels:
+
+**Swift**:
+
+```swift
+func sizeOfFontInDrawablePixels(with layer: CAMetalLayer, fontSizeInPoints: CGFloat) -> CGFloat {
+    // Calculates how many drawable pixels are in one abstract point.
+    // Assumes the CAMetalLayer.contentsGravity is set to its default value of 'resize'.
+    let pixelsInPoint = Double(layer.drawableSize.width / layer.bounds.size.width)
+    let fontSizeInPixels = pixelsInPoint * fontSizeInPoints
+    return fontSizeInPixels
+}
+```
+
+**Objective-C**:
+
+```objective-c
+- (CGFloat)sizeOfFontInDrawablePixelsWithLayer:(CAMetalLayer *)layer fontSizeInPoints:(CGFloat)fontSizeInPoints {
+    // Calculates how many drawable pixels are in one abstract point.
+    // Assumes the CAMetalLayer.contentsGravity is set to its default value of 'kCAGravityResize'.
+    CGFloat pixelsInPoint = layer.drawableSize.width / layer.bounds.size.width;
+    CGFloat fontSizeInPixels = pixelsInPoint * fontSizeInPoints;
+    return fontSizeInPixels;
+}
+```
 
 ##### Handle Multiple Interaction Methods
 

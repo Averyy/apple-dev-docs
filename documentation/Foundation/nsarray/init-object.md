@@ -28,6 +28,18 @@ An array containing the single element `anObject`.
 
 Alternatively, you can use array literal syntax in Objective-C or Swift to create an array containing a given object:
 
+**Swift**:
+
+```swift
+let array: NSArray = ["Hello, world!"]
+```
+
+**Objective-C**:
+
+```objc
+NSArray *array = @[@"Hello, world!"];
+```
+
 ## Parameters
 
 - `anObject`: An object.

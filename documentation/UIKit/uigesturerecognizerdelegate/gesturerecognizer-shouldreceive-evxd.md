@@ -28,8 +28,8 @@ UIKit calls this method once before either the [`gestureRecognizer(_:shouldRecei
 
 ## Parameters
 
-- `gestureRecognizer`: An instance of a subclass of the abstract base class  .
-- `event`: A   object from the current press or touch sequence.
+- `gestureRecognizer`: An instance of a subclass of the abstract base class [`UIGestureRecognizer`](uigesturerecognizer.md).
+- `event`: A [`UIEvent`](uievent.md) object from the current press or touch sequence.
 
 ## See Also
 

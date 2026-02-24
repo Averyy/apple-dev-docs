@@ -22,8 +22,8 @@ init(_ name: String, bundle: Bundle? = nil)
 
 ## Parameters
 
-- `name`: The name of the image resource to lookup, as well as the   localization key with which to label the image.
-- `bundle`: The bundle to search for the image resource and localization   content. If  , SwiftUI uses the main  . Defaults to  .
+- `name`: The name of the image resource to lookup, as well as the localization key with which to label the image.
+- `bundle`: The bundle to search for the image resource and localization content. If `nil`, SwiftUI uses the main `Bundle`. Defaults to `nil`.
 
 ## See Also
 

@@ -28,7 +28,7 @@ The peer ID provided to this delegate method can be used to invite the nearby pe
 
 - `browser`: The browser object that found the nearby peer.
 - `peerID`: The unique ID of the peer that was found.
-- `info`: The info dictionary advertised by the discovered peer. For more information on the contents of this dictionary, see the documentation for   in  .
+- `info`: The info dictionary advertised by the discovered peer. For more information on the contents of this dictionary, see the documentation for [`init(peer:discoveryInfo:serviceType:)`](mcnearbyserviceadvertiser/init(peer:discoveryinfo:servicetype:).md) in [`MCNearbyServiceAdvertiser`](mcnearbyserviceadvertiser.md).
 
 ## See Also
 

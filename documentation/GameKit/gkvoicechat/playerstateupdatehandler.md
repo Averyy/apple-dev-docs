@@ -22,6 +22,9 @@ var playerStateUpdateHandler: (String, GKVoiceChat.PlayerState) -> Void { get se
 
 Your game sets this property with a block that GameKit calls when the state of any participant in the chat changes (including the local player). The block receives the following parameters:
 
+- **`playerID`**: The player identifier for the player whose status changed.
+- **`state`**: The new state of the player. See [`GKVoiceChat.PlayerState`](gkvoicechat/playerstate.md).
+
 ## See Also
 
 - [var playerIDs: [String]?](gkvoicechat/playerids.md)

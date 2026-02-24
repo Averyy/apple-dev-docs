@@ -37,7 +37,7 @@ The save operation used in this case is never `NSAutosaveOperation`; `NSSaveToOp
 - `url`: The location to which the document contents are written.
 - `typeName`: The string that identifies the document type.
 - `saveOperation`: The type of save operation.
-- `absoluteOriginalContentsURL`: The location of the previously saved copy of the document (if not  ).
+- `absoluteOriginalContentsURL`: The location of the previously saved copy of the document (if not `nil`).
 
 ## See Also
 

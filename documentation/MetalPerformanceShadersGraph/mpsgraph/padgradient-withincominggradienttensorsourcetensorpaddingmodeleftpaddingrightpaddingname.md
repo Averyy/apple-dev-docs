@@ -28,8 +28,8 @@ A valid MPSGraphTensor object.
 - `incomingGradientTensor`: The input gradient tensor.
 - `sourceTensor`: The input tensor of the forward pass.
 - `paddingMode`: The parameter that defines the padding mode.
-- `leftPadding`: The parameter that defines how much padding the operation applies to the input tensor before each dimension - must be of size  .
-- `rightPadding`: The parameter that defines how much padding the operation applies to the input tensor after each dimension - must be of size  .
+- `leftPadding`: The parameter that defines how much padding the operation applies to the input tensor before each dimension - must be of size `rank(tensor)`.
+- `rightPadding`: The parameter that defines how much padding the operation applies to the input tensor after each dimension - must be of size `rank(tensor)`.
 - `name`: The name for the operation.
 
 

@@ -20,7 +20,7 @@ init(count: Int, elements: gss_OID!)
 
 ## Parameters
 
-- `count`: The number of object identifiers in the   array.
+- `count`: The number of object identifiers in the `elements` array.
 - `elements`: An array containing the identifiers with which to initialize the new set.
 
 ## See Also

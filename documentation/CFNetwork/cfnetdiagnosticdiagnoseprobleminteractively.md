@@ -33,7 +33,7 @@ This function is thread safe as long as another thread does not alter the same C
 
 ## Parameters
 
-- `details`: A network diagnostics object, created by   or  , for which the window is to be opened.
+- `details`: A network diagnostics object, created by [`CFNetDiagnosticCreateWithStreams(_:_:_:)`](cfnetdiagnosticcreatewithstreams(_:_:_:).md) or [`CFNetDiagnosticCreateWithURL(_:_:)`](cfnetdiagnosticcreatewithurl(_:_:).md), for which the window is to be opened.
 
 ## See Also
 

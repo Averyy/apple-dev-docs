@@ -32,7 +32,7 @@ Classes derived from the Foundation framework `NSObject` class can obtain the cl
 
 ## Parameters
 
-- `cls`: A pointer to an   data structure. Pass the class definition for which you wish to obtain the version.
+- `cls`: A pointer to an [`Class`](class.md) data structure. Pass the class definition for which you wish to obtain the version.
 
 ## See Also
 

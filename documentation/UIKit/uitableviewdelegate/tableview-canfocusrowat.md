@@ -29,7 +29,7 @@ The functionality of this delegate method is equivalent to overriding the cellâ€
 ## Parameters
 
 - `tableView`: The table view requesting this information.
-- `indexPath`: An index path locating a row in  .
+- `indexPath`: An index path locating a row in `tableView`.
 
 ## See Also
 

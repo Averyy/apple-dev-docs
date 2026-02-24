@@ -82,7 +82,7 @@ processB(signpostID, 49)
 
 - `name`: The signpost’s name.
 - `state`: The returned interval state from the matching begin call.
-- `message`: The interpolated string that the signposter attaches to the signpost. Each of the message’s interpolations can specify individual formatting and privacy options. For more information, see  .
+- `message`: The interpolated string that the signposter attaches to the signpost. Each of the message’s interpolations can specify individual formatting and privacy options. For more information, see [`Message Argument Formatters`](message-argument-formatters.md).
 
 ## See Also
 

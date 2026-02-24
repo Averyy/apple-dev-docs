@@ -31,7 +31,7 @@ The returned string is based on the characters of the receiver. For example, if 
 ## Parameters
 
 - `str`: The string with which to compare the receiver.
-- `mask`: Options for the comparison. The following search options may be specified by combining them with the C bitwise   operator:  ,  . See   for details on these options.
+- `mask`: Options for the comparison. The following search options may be specified by combining them with the C bitwise `OR` operator: `NSCaseInsensitiveSearch`, `NSLiteralSearch`. See [`String Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/introStrings.html#//apple_ref/doc/uid/10000035i) for details on these options.
 
 ## See Also
 

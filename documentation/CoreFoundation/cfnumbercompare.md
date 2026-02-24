@@ -40,7 +40,7 @@ The following rules apply:
 
 - `number`: The first CFNumber object to compare.
 - `otherNumber`: The second CFNumber object to compare.
-- `context`: Pass  .
+- `context`: Pass `NULL`.
 
 
 ---

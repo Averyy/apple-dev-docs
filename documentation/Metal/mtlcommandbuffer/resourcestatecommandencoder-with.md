@@ -26,7 +26,7 @@ Use an [`MTLResourceStateCommandEncoder`](mtlresourcestatecommandencoder.md) ins
 
 ## Parameters
 
-- `resourceStatePassDescriptor`: An   instance that configures the   the method returns.
+- `resourceStatePassDescriptor`: An [`MTLResourceStatePassDescriptor`](mtlresourcestatepassdescriptor.md) instance that configures the [`MTLResourceStateCommandEncoder`](mtlresourcestatecommandencoder.md) the method returns.
 
 ## See Also
 

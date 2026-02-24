@@ -9,6 +9,10 @@ A string value that specifies a system version after which the system ignores th
 - iOS 26.2+
 - iPadOS 26.2+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Use this key only if you’ve already updated your app so that it no longer uses [`UIRequiresFullScreen`](information-property-list/uirequiresfullscreen.md) in later versions of iOS. Add the key, then specify in which version of iOS you want the system to begin ignoring the [`UIRequiresFullScreen`](information-property-list/uirequiresfullscreen.md) key. The system ignores the key starting in the version you specify and in later versions of iOS.

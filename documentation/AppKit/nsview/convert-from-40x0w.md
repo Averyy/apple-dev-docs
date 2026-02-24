@@ -27,7 +27,7 @@ You can also use this method to get a view’s current magnification or zoom lev
 ## Parameters
 
 - `size`: The size (width and height) in view’s coordinate system.
-- `view`: The view with   in its coordinate system. Both   and the view must belong to the same   object, and that window must not be  . If   is  , this method converts from window coordinates instead.
+- `view`: The view with `size` in its coordinate system. Both `view` and the view must belong to the same [`NSWindow`](nswindow.md) object, and that window must not be `nil`. If `view` is `nil`, this method converts from window coordinates instead.
 
 ## See Also
 

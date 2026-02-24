@@ -30,7 +30,7 @@ A list of entities at `point`. Returns an empty array if no entities were found.
 ## Parameters
 
 - `point`: A point in the provided coordinate space.
-- `space`: The 2D coordinate space in which to interpret the  .
+- `space`: The 2D coordinate space in which to interpret the `point`.
 
 
 ---

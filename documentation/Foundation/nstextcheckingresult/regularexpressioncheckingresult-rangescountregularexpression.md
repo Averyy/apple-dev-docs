@@ -27,7 +27,7 @@ Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingres
 ## Parameters
 
 - `ranges`: A C array of ranges, which must have at least one element, and the first element represents the overall range.
-- `count`: The number of items in the   array.
+- `count`: The number of items in the `ranges` array.
 - `regularExpression`: The regular expression.
 
 ## See Also

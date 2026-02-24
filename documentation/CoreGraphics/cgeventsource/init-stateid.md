@@ -25,7 +25,7 @@ If two or more event sources are using the same source state and one of them is 
 
 ## Parameters
 
-- `stateID`: The event state table to use for this event source. Pass one of the constants listed in  .
+- `stateID`: The event state table to use for this event source. Pass one of the constants listed in [`CGEventSourceStateID`](cgeventsourcestateid.md).
 
 ## See Also
 

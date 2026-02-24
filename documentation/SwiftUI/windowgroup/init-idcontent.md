@@ -28,9 +28,9 @@ The window group uses the specified content as a template to create each window 
 
 ## Parameters
 
-- `title`: The   view to use for the group’s title.
-- `id`: A string that uniquely identifies the window group. Identifiers   must be unique among the window groups in your app.
-- `content`: A closure that creates the content for each instance   of the group.
+- `title`: The [`Text`](text.md) view to use for the group’s title.
+- `id`: A string that uniquely identifies the window group. Identifiers must be unique among the window groups in your app.
+- `content`: A closure that creates the content for each instance of the group.
 
 ## See Also
 

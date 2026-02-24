@@ -4,6 +4,11 @@
 
 #### Overview
 
+- **Containing profile atom**: Track (video), movie
+- **`part-ID`**: `0x20202020` (universal feature)
+- **`feature-code`**: `'mp4v'`
+- **`feature-value`**: Unsigned `int(32)` where the least significant 4 bits holds the v`isual_object_type` as found in the `VisualObject` (as defined in specification ISO/IEC 14496-2, subclause 6.2.2) found in the esds of the MPEG-4 video codec (QuickTime type `'mp4v'`) sample description
+
 #### Feature Values
 
 The least significant 4 bits hold the value. The most significant 28 bits of the feature value should be set to `0`.

@@ -33,8 +33,8 @@ If the load operation fails, `Model3D` continues to display the placeholder. To 
 ## Parameters
 
 - `url`: The URL of the model to display.
-- `content`: A closure that takes the loaded model as an input, and   returns the view to show. You can return the model directly, or   modify it as needed before returning it.
-- `placeholder`: A closure that returns the view to show until the   load operation completes successfully.
+- `content`: A closure that takes the loaded model as an input, and returns the view to show. You can return the model directly, or modify it as needed before returning it.
+- `placeholder`: A closure that returns the view to show until the load operation completes successfully.
 
 ## See Also
 

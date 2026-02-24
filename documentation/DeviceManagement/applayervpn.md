@@ -232,6 +232,19 @@ This profile defines per-app VPN behavior and applies only to VPN services of ty
 </plist>
 ```
 
+## Properties
+
+- `AssociatedDomains` ([string]): An array with entries that must each specify a domain that triggers this VPN. The domains must also be part of the `apple-app-site-association` file, as described in [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains). Available in iOS 14 and later, and macOS 11 and later.
+- `CalendarDomains` ([string]): An array with entries that must each specify a domain that triggers this VPN connection in Calendar. Each entry is in the format `www.apple.com`. This property is deprecated in iOS 13.4 and later; use the `VPNUUID` property of the [`CalDAV`](caldav.md) payload instead.
+- `CellularSliceUUID` (string): A string representing the data network name (DNN) or app category identifying a Cellular Slice. The device forces the VPN tunnel to use the specified Cellular Slice.
+- `ContactsDomains` ([string]): An array with entries that must each specify a domain that triggers this VPN connection in Contacts. Each entry is in the format `www.apple.com`. This property is deprecated in iOS 13.4 and later; use the `VPNUUID` property of the [`CardDAV`](carddav.md) payload instead.
+- `ExcludedDomains` ([string]): An array with entries that each specify a domain that doesn’t trigger this VPN for connections to the domain. Available in iOS 14 and later, and macOS 11 and later.
+- `MailDomains` ([string]): An array with entries that must each specify a domain that triggers this VPN connection in Mail. Each entry is in the format `www.apple.com`. This property is deprecated in iOS 13.4 and later; use the `VPNUUID` property of the [`Mail`](mail.md) or [`ExchangeActiveSync`](exchangeactivesync.md) payload instead.
+- `OnDemandMatchAppEnabled` (boolean): If `true`, automatically connects the VPN when associated apps for this per-app VPN service initiate network communication. Otherwise, the user must initiate the connection manually before those apps can initiate network communication. If this key isn’t present, the value of the `OnDemandEnabled` key determines the status of per-app VPN On Demand.
+- `SafariDomains` ([string]): An array with entries that must each specify a domain that triggers the VPN connection in Safari. Each entry is in the format `www.apple.com`.
+- `SMBDomains` ([string]): An array of SMB domains that’s accessible through this VPN connection. Available in iOS 13 and later.
+- `VPNUUID` (string) *(required)*: A globally unique identifier for this VPN configuration.
+
 ## See Also
 
 - [object AppToAppLayerVPNMapping](apptoapplayervpnmapping.md)

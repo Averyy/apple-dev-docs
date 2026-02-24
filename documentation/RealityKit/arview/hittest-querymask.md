@@ -31,7 +31,7 @@ The method ignores entities that lack a [`CollisionComponent`](collisioncomponen
 
 - `point`: A point in the view’s coordinate system.
 - `query`: The query type.
-- `mask`: A collision mask that can be used to prevent hits with certain   objects.
+- `mask`: A collision mask that can be used to prevent hits with certain objects.
 
 ## See Also
 

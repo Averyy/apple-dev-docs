@@ -29,7 +29,7 @@ Quick Look updates the value of the selection binding to match the URL of the fi
 
 ## Parameters
 
-- `selection`: A   to an element that’s part of the items collection. This is the URL that you currently want to preview.
+- `selection`: A [`Binding`](Binding.md) to an element that’s part of the items collection. This is the URL that you currently want to preview.
 - `items`: A collection of URLs to preview.
 
 ## See Also

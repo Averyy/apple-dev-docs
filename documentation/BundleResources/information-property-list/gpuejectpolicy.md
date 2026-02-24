@@ -8,6 +8,10 @@ The preferred system action when an external GPU is connected from the system.
 **Availability**:
 - macOS 10.14+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [UIAppSupportsHDR](information-property-list/uiappsupportshdr.md)

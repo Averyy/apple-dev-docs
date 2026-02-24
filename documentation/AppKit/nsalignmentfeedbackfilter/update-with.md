@@ -20,7 +20,7 @@ This method informs the feedback filter about a new event to be filtered, which 
 
 ## Parameters
 
-- `event`: An event ( ) to be filtered, which matches an event type returned by the   method.
+- `event`: An event ([`NSEvent`](nsevent.md)) to be filtered, which matches an event type returned by the [`inputEventMask`](nsalignmentfeedbackfilter/inputeventmask.md) method.
 
 ## See Also
 

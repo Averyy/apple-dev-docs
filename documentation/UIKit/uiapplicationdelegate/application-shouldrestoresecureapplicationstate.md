@@ -33,7 +33,7 @@ This method supersedes [`application(_:shouldRestoreApplicationState:)`](uiappli
 ## Parameters
 
 - `application`: The singleton app object.
-- `coder`: A keyed archiver containing the app’s previously saved state. The coder’s   property is set to  , and any objects you decode must adopt  .
+- `coder`: A keyed archiver containing the app’s previously saved state. The coder’s [`requiresSecureCoding`](https://developer.apple.com/documentation/Foundation/NSCoder/requiresSecureCoding) property is set to [`true`](https://developer.apple.com/documentation/Swift/true), and any objects you decode must adopt [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding).
 
 ## See Also
 

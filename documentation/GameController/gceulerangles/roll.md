@@ -21,7 +21,7 @@ var roll: Double
 
 #### Discussion
 
-A  is a rotation around the z-axis that passes through the controller from its top to bottom. The sign of the roll follows the right-hand rule. If you point your right thumb along the positive axis, the curl of your other fingers points in the positive direction around that axis.
+A *roll* is a rotation around the z-axis that passes through the controller from its top to bottom. The sign of the roll follows the right-hand rule. If you point your right thumb along the positive axis, the curl of your other fingers points in the positive direction around that axis.
 
 ## See Also
 

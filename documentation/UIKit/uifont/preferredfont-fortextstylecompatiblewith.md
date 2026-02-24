@@ -30,7 +30,7 @@ Because fonts are immutable, any element that adjusts for an updated content siz
 
 ## Parameters
 
-- `style`: The text style for which to return a font. See   for recognized values.
+- `style`: The text style for which to return a font. See [`UIFont.TextStyle`](uifont/textstyle.md) for recognized values.
 - `traitCollection`: The traits to use when determining which font to return.
 
 ## See Also

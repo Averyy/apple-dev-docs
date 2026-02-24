@@ -33,7 +33,7 @@ You must call the [`CVPixelBufferLockBaseAddress(_:_:)`](cvpixelbufferlockbasead
 ## Parameters
 
 - `pixelBuffer`: The pixel buffer whose base address you want to unlock.
-- `unlockFlags`: Either   or  ; see   for discussion.
+- `unlockFlags`: Either [`readOnly`](cvpixelbufferlockflags/readonly.md) or `0`; see [`CVPixelBufferLockFlags`](cvpixelbufferlockflags.md) for discussion.
 
 ## See Also
 

@@ -23,7 +23,7 @@ An activation configuration you can use to request a window scene.
 
 ## Parameters
 
-- `interaction`: The   requesting a configuration.
+- `interaction`: The [`UIWindowScene.ActivationInteraction`](uiwindowscene/activationinteraction.md) requesting a configuration.
 - `location`: The location in the view of the interaction requesting a configuration.
 
 ## See Also

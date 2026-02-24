@@ -43,8 +43,8 @@ value: .textureResource(texture3D))
 
 ## Parameters
 
-- `slices`: The source images, one per depth index.   All images need to be square, and of equal size and format.
-- `resourceName`: A unique name for syncing the texture resource across the network.   The name is empty if you don’t include one.
+- `slices`: The source images, one per depth index. All images need to be square, and of equal size and format.
+- `resourceName`: A unique name for syncing the texture resource across the network. The name is empty if you don’t include one.
 - `options`: A configuration for generating the texture.
 
 

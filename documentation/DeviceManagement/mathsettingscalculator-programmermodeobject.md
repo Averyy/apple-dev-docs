@@ -14,6 +14,10 @@ The declaration to configure programmer mode in the calculator app.
 object MathSettingsCalculator_ProgrammerModeObject
 ```
 
+## Properties
+
+- `Enabled` (boolean) *(required)*: Controls whether the mode is enabled.
+
 ## See Also
 
 - [object MathSettingsCalculator_BasicModeObject](mathsettingscalculator_basicmodeobject.md)

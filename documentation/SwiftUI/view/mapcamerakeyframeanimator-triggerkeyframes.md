@@ -28,7 +28,7 @@ If the user performs a gesture while the animation is in progress, the animation
 ## Parameters
 
 - `trigger`: A value to observe for changes.
-- `keyframes`: A keyframes builder closure that is called when starting   a new keyframe animation. The current map camera is provided as the   only parameter.
+- `keyframes`: A keyframes builder closure that is called when starting a new keyframe animation. The current map camera is provided as the only parameter.
 
 ## See Also
 

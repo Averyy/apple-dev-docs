@@ -27,7 +27,7 @@ func getGlyphBBoxes(glyphs: UnsafePointer<CGGlyph>, count: Int, bboxes: UnsafeMu
 ## Parameters
 
 - `glyphs`: A array of glyphs.
-- `count`: The number of items in the   array.
+- `count`: The number of items in the `glyphs` array.
 - `bboxes`: On return, the bounding boxes for each glyph.
 
 ## See Also

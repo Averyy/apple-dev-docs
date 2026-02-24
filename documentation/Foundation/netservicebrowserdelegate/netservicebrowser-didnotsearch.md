@@ -22,7 +22,7 @@ optional func netServiceBrowser(_ browser: NetServiceBrowser, didNotSearch error
 ## Parameters
 
 - `browser`: Sender of this delegate message.
-- `errorDict`: Dictionary with the reasons the search was unsuccessful. Use the dictionary keys   and   to retrieve the error information from the dictionary.
+- `errorDict`: Dictionary with the reasons the search was unsuccessful. Use the dictionary keys [`errorCode`](netservice/errorcode-swift.type.property.md) and [`errorDomain`](netservice/errordomain.md) to retrieve the error information from the dictionary.
 
 ## See Also
 

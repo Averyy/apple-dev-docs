@@ -27,7 +27,7 @@ The delegate can verify the changed state of the text storage object and make ch
 ## Parameters
 
 - `textStorage`: The text storage object processing edits.
-- `editedMask`: The types of edits to do:  ,  , or both.
+- `editedMask`: The types of edits to do: [`editedAttributes`](nstextstorage/editactions/editedattributes.md), [`editedCharacters`](nstextstorage/editactions/editedcharacters.md), or both.
 - `editedRange`: The range in the original string (before the edit).
 - `delta`: The length delta for the editing changes.
 

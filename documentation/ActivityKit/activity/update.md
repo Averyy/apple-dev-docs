@@ -27,7 +27,7 @@ Use this function to update the Live Activity while your app is in the foregroun
 
 ## Parameters
 
-- `content`: The updated dynamic content for the Live Activity. The size of its    property can’t exceed 4KB in size.
+- `content`: The updated dynamic content for the Live Activity. The size of its [`state`](activitycontent/state.md) property can’t exceed 4KB in size.
 
 ## See Also
 

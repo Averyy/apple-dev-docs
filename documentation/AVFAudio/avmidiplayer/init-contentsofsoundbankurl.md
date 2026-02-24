@@ -26,7 +26,7 @@ A new MIDI player, or [`nil`](https://developer.apple.com/documentation/Objectiv
 ## Parameters
 
 - `inURL`: The URL of the file to play.
-- `bankURL`: The URL of the sound bank. The sound bank must be in SoundFont2 or DLS format. In macOS, you can pass   for the bank URL argument to use the default sound bank. In iOS, you must always pass a valid bank file.
+- `bankURL`: The URL of the sound bank. The sound bank must be in SoundFont2 or DLS format. In macOS, you can pass [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) for the bank URL argument to use the default sound bank. In iOS, you must always pass a valid bank file.
 
 ## See Also
 

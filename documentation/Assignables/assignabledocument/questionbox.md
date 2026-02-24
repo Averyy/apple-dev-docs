@@ -31,7 +31,7 @@ struct QuestionBox
 
 ##### Comparing Question Boxes
 
-- ``==(:)`
+- ``==(*:*:)`
 
 ##### Hashing the Question Box
 

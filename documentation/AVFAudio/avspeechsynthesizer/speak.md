@@ -26,7 +26,7 @@ func speak(_ utterance: AVSpeechUtterance)
 
 ## Parameters
 
-- `utterance`: An   instance that contains text to speak.
+- `utterance`: An [`AVSpeechUtterance`](avspeechutterance.md) instance that contains text to speak.
 
 ## See Also
 

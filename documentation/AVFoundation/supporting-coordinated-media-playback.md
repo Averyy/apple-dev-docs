@@ -190,7 +190,7 @@ After the local device catches up with group playback, the sample ends the suspe
 
 ## See Also
 
-- [Destination Video](../visionOS/destination-video.md)
+- [Destination Video](../visionos/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 - [class AVPlaybackCoordinator](avplaybackcoordinator.md)
   An object that coordinates the playback of players in a connected group.

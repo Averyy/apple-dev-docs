@@ -28,7 +28,7 @@ Use this method to create a view controller object to present programmatically. 
 
 ## Parameters
 
-- `identifier`: If the specified identifier does not exist in the storyboard file, this method raises an exception.
+- `identifier`: An identifier string that uniquely identifies the view controller in the storyboard file. At design time, put this same string in the Storyboard ID attribute of your view controller in Interface Builder. This identifier is not a property of the view controller object itself. The storyboard uses it to locate the appropriate data for your view controller. If the specified identifier does not exist in the storyboard file, this method raises an exception.
 
 ## See Also
 

@@ -41,7 +41,7 @@ Note: The behavior is a preference and does not always have to be honored by the
 
 ## Parameters
 
-- `behavior`: A immersive environment behavior that should be applied by   the system when this scene opens.
+- `behavior`: A immersive environment behavior that should be applied by the system when this scene opens.
 
 
 ---

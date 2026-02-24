@@ -26,7 +26,7 @@ func hasMediaCharacteristic(_ mediaCharacteristic: AVMediaCharacteristic) -> Boo
 
 ## Parameters
 
-- `mediaCharacteristic`: The media characteristic of interest, for example,  ,  , or  .
+- `mediaCharacteristic`: The media characteristic of interest, for example, [`visual`](avmediacharacteristic/visual.md), [`audible`](avmediacharacteristic/audible.md), or [`legible`](avmediacharacteristic/legible.md).
 
 ## See Also
 

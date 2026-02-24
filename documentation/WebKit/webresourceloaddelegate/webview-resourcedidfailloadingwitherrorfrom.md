@@ -21,7 +21,7 @@ Delegates might implement this method to display or log a detailed error message
 ## Parameters
 
 - `sender`: The web view that sent this message.
-- `identifier`: An identifier object used to track the resource being loaded by  .
+- `identifier`: An identifier object used to track the resource being loaded by `dataSource`.
 - `error`: The error that occurred loading that resource.
 - `dataSource`: The data source for this web view.
 

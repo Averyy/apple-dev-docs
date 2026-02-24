@@ -8,6 +8,9 @@ Ensure that your small system family widget works well in StandBy and CarPlay.
 
 People can choose your small system family widgets from the widget gallery in StandBy or CarPlay:
 
+- **On iPhone in StandBy**: The Lock Screen shows two widgets side by side on a dark background. WidgetKit uses your [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md) widget and scales it to fit half of the screen.
+- **In CarPlay**: Widgets appear in one or more stacks to the left of the CarPlay Home Screen, in full color and with the background removed.
+
 Because widgets in StandBy appear similar to widgets in CarPlay, when you ensure your widget supports one, it automatically supports the other. To support StandBy and CarPlay appearances, update your small widget:
 
 - Make the background removable.

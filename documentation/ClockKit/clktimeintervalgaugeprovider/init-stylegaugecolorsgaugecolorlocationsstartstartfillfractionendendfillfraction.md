@@ -31,13 +31,13 @@ If you provide both colors and locations, then the `gaugeColors` and `gaugeColor
 
 ## Parameters
 
-- `style`: The style defining the gauge’s visual appearance. For a list of valid styles, see  .
+- `style`: The style defining the gauge’s visual appearance. For a list of valid styles, see [`CLKGaugeProviderStyle`](clkgaugeproviderstyle.md).
 - `gaugeColors`: The gauge’s colors. These colors are displayed as a gradient.
-- `gaugeColorLocations`: The location of each color along the gauge. Locations are values between   and  . If  , the colors are evenly spaced along the gauge.
+- `gaugeColorLocations`: The location of each color along the gauge. Locations are values between `0.0` and `1.0`. If `nil`, the colors are evenly spaced along the gauge.
 - `startDate`: The start time and date.
-- `startFillFraction`: The starting position for the gague. This is a value between   and  .
+- `startFillFraction`: The starting position for the gague. This is a value between `0.0` and `1.0`.
 - `endDate`: The end time and date. This value must be later than or equal to the start date.
-- `endFillFraction`: The end position of the gague. This is a value between   and  .
+- `endFillFraction`: The end position of the gague. This is a value between `0.0` and `1.0`.
 
 ## See Also
 

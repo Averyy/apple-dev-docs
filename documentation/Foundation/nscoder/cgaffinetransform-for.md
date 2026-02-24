@@ -29,7 +29,7 @@ In general, you should use this function only to convert strings that were previ
 
 ## Parameters
 
-- `string`: A string whose contents are of the form “{ ,  ,  ,  ,  ,  }”, where  ,  ,  ,  ,  , and   are the floating-point component values of the   data structure. An example of a valid string is @”{1,0,0,1,2.5,3.0}”. The string is not localized, so items are always separated with a comma. For information about the position of each value in the transform array, see  .
+- `string`: A string whose contents are of the form “{*a*, *b*, *c*, *d*, *tx*, *ty*}”, where *a*, *b*, *c*, *d*, *tx*, and *ty* are the floating-point component values of the [`CGAffineTransform`](https://developer.apple.com/documentation/CoreGraphics/cgaffinetransform) data structure. An example of a valid string is @”{1,0,0,1,2.5,3.0}”. The string is not localized, so items are always separated with a comma. For information about the position of each value in the transform array, see [`CGAffineTransform`](https://developer.apple.com/documentation/CoreGraphics/cgaffinetransform).
 
 ## See Also
 

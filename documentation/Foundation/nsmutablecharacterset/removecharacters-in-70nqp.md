@@ -22,7 +22,7 @@ func removeCharacters(in aRange: NSRange)
 
 ## Parameters
 
-- `aRange`: The range of characters to remove.    is the value of the first character to remove;   is the value of the last. If   is  , this method has no effect.
+- `aRange`: The range of characters to remove. `aRange.location` is the value of the first character to remove; `aRange.location + aRange.length – 1` is the value of the last. If `aRange.length` is `0`, this method has no effect.
 
 ## See Also
 

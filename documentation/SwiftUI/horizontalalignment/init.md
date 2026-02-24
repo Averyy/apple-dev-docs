@@ -40,7 +40,7 @@ Every horizontal alignment instance that you create needs a unique identifier. F
 
 ## Parameters
 
-- `id`: The type of an identifier that uniquely identifies a   horizontal alignment.
+- `id`: The type of an identifier that uniquely identifies a horizontal alignment.
 
 ## See Also
 

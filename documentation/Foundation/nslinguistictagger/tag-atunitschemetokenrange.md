@@ -27,8 +27,8 @@ Returns the tag for the requested tag scheme and linguistic unit, or `nil`. If a
 ## Parameters
 
 - `charIndex`: The position of the initial character.
-- `unit`: The linguistic unit. See   for possible values.
-- `scheme`: The tag scheme. See   for possible values.
+- `unit`: The linguistic unit. See [`NSLinguisticTaggerUnit`](nslinguistictaggerunit.md) for possible values.
+- `scheme`: The tag scheme. See [`NSLinguisticTagScheme`](nslinguistictagscheme.md) for possible values.
 - `tokenRange`: A pointer to the token range.
 
 ## See Also

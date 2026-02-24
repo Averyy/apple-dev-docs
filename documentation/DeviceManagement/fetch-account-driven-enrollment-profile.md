@@ -15,6 +15,10 @@ Fetch the Account-Driven Enrollment profile that the MDM server sets, which incl
 - [object GetAccountDrivenEnrollmentProfileResponse](getaccountdrivenenrollmentprofileresponse.md)
   The details for an account-driven enrollment profile.
 
+## Endpoint
+
+`GET https://mdmenrollment.apple.com/account-driven-enrollment/profile`
+
 ## See Also
 
 - [Assign Account-Driven Enrollment Service Discovery](assign-account-driven-enrollment-profile.md)

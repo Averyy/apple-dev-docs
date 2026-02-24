@@ -22,7 +22,7 @@ Loads an AudioFileResource synchronously.
 
 #### Discussion
 
-> ❗ **Important**: The name provided  be unique.
+> ❗ **Important**: The name provided **must** be unique.
 
 
 ---

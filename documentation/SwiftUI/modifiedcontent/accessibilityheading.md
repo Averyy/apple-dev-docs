@@ -29,7 +29,7 @@ The default heading level if you don’t use this modifier is [`AccessibilityHea
 
 ## Parameters
 
-- `level`: The heading level to associate with this element   from the available   levels.
+- `level`: The heading level to associate with this element from the available [`AccessibilityHeadingLevel`](accessibilityheadinglevel.md) levels.
 
 
 ---

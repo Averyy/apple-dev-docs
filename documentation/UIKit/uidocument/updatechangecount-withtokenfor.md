@@ -25,8 +25,8 @@ You implement the [`changeCountToken(for:)`](uidocument/changecounttoken(for:).m
 
 ## Parameters
 
-- `changeCountToken`: An object to use as a change-count token.   obtained this token earlier by calling  .
-- `saveOperation`: A constant that indicates whether the save operation is writing a new file or overwriting an existing one. See   for descriptions of these constants.
+- `changeCountToken`: An object to use as a change-count token. `UIDocument` obtained this token earlier by calling [`changeCountToken(for:)`](uidocument/changecounttoken(for:).md).
+- `saveOperation`: A constant that indicates whether the save operation is writing a new file or overwriting an existing one. See [`UIDocument.SaveOperation`](uidocument/saveoperation.md) for descriptions of these constants.
 
 ## See Also
 

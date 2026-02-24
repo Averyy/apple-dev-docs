@@ -26,7 +26,7 @@ This function changes the preference domain for all subsequent function calls; f
 
 ## Parameters
 
-- `domain`: The keychain preference domain to set. See   for possible domain values.
+- `domain`: The keychain preference domain to set. See [`SecPreferencesDomain`](secpreferencesdomain.md) for possible domain values.
 
 
 ---

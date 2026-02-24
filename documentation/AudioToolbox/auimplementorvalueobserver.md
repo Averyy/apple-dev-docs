@@ -25,6 +25,9 @@ This block is only of interest to audio unit subclasses.
 
 The block takes the following parameters:
 
+- **param**: The parameter that was changed.
+- **value**: The current value of the parameter.
+
 ## See Also
 
 - [var implementorValueObserver: AUImplementorValueObserver](auparameternode/implementorvalueobserver.md)

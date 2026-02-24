@@ -29,6 +29,12 @@ This method applies the bokeh blur filter to an image. The effect targets a circ
 
 The bokeh blur filter uses the following properties:
 
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`ringSize`**: A `float` representing the ring size of the bokeh as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`ringAmount`**: A `float` representing the emphasis at the ring of the bokeh as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`softness`**: A `float` representing the softness of the bokeh effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
+
 The following code creates a filter that adds a softer blur to the input image:
 
 ```swift

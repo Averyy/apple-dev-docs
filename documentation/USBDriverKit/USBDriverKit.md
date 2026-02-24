@@ -69,6 +69,7 @@ Develop your driver by subclassing [`IOService`](https://developer.apple.com/doc
 - [kUSBHostPortPropertyProtocolRevision1](kusbhostportpropertyprotocolrevision1.md)
 - [kUSBHostPortPropertyProtocolRevision2](kusbhostportpropertyprotocolrevision2.md)
 - [kUSBHostPortPropertyProtocolRevision3](kusbhostportpropertyprotocolrevision3.md)
+- [kUSBHostPortPropertyProtocolRevision4](kusbhostportpropertyprotocolrevision4.md)
 - [kUSBHostPortPropertyTransportState](kusbhostportpropertytransportstate.md)
 - [kUSBHostPortPropertyUSB2ExternalRemoteWake](kusbhostportpropertyusb2externalremotewake.md)
 - [kUSBHostPortPropertyUSB2Repeater](kusbhostportpropertyusb2repeater.md)
@@ -76,7 +77,9 @@ Develop your driver by subclassing [`IOService`](https://developer.apple.com/doc
 ### Enumeration Cases
 - [kIOUSBLinkSpeed10Gbps](kiousblinkspeed10gbps.md)
 - [kIOUSBLinkSpeed20Gbps](kiousblinkspeed20gbps.md)
+- [kIOUSBLinkSpeed40Gbps](kiousblinkspeed40gbps.md)
 - [kIOUSBLinkSpeed5Gbps](kiousblinkspeed5gbps.md)
+- [kIOUSBLinkSpeed80Gbps](kiousblinkspeed80gbps.md)
 - [kIOUSBLinkSpeedFull](kiousblinkspeedfull.md)
 - [kIOUSBLinkSpeedHigh](kiousblinkspeedhigh.md)
 - [kIOUSBLinkSpeedLow](kiousblinkspeedlow.md)

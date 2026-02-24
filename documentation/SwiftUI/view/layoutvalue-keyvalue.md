@@ -55,8 +55,8 @@ If you perform layout operations in a type that conforms to the [`Layout`](layou
 
 ## Parameters
 
-- `key`: The type of the key that you want to set a value for.   Create the key as a type that conforms to the    protocol.
-- `value`: The value to assign to the key for this view.   The value must be of the type that you establish for the key’s   associated value when you implement the key’s    property.
+- `key`: The type of the key that you want to set a value for. Create the key as a type that conforms to the [`LayoutValueKey`](layoutvaluekey.md) protocol.
+- `value`: The value to assign to the key for this view. The value must be of the type that you establish for the key’s associated value when you implement the key’s [`defaultValue`](layoutvaluekey/defaultvalue.md) property.
 
 ## See Also
 

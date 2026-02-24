@@ -16,6 +16,10 @@ Use encrypted fields to offer data encryption to your users in your CloudKit-bas
 
 CloudKit offers multiple database types, but not all databases support encryption.
 
+- **Private database**: Stores data that belongs to a specific iCloud account, so iCloud supports account-based data encryption.
+- **Shared database**: Stores data that the data owner shares with the current user as a shared participant, so iCloud supports account-based data encryption.
+- **Public database**: Stores data that all users of your app can see, so account-based data encryption isn’t necessary.
+
 ##### Protect Users
 
 CloudKit encrypts data with the key material in the user’s iCloud Keychain. If the user loses access to iCloud Keychain, CloudKit can’t access the key material that it previously used to encrypt the data, so iCloud can’t decrypt it.

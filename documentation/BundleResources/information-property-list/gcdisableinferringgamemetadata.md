@@ -10,6 +10,10 @@ A Boolean value that indicates whether the Games app excludes game information f
 - iPadOS 26.4+ (Beta)
 - macOS 26.4+ (Beta)
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 For games distributed outside of the App Store, the Games app infers game details by using Siri’s knowledge graph. Set this key to `YES` to opt-out of that behavior and remove those details from your game detail page in the Games app.

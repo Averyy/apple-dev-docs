@@ -29,7 +29,7 @@ Components are the basis for customizable file format and object graph support i
 
 ## Parameters
 
-- `protocol`: The protocol for which to retrieve a component. This protocol must extend the   protocol.
+- `protocol`: The protocol for which to retrieve a component. This protocol must extend the [`MDLComponent`](mdlcomponent.md) protocol.
 
 ## See Also
 

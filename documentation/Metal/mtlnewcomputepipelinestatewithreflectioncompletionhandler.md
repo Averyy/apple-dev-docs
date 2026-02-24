@@ -21,9 +21,9 @@ typealias MTLNewComputePipelineStateWithReflectionCompletionHandler = ((any MTLC
 
 ## Parameters
 
-- `computePipelineState`: An   instance if the method completes successfully; otherwise  .
-- `reflection`: An   instance if the method completes successfully; otherwise  .
-- `error`: On return, if an error occurs, a pointer to an error information instance; otherwise  .
+- `computePipelineState`: An [`MTLComputePipelineState`](mtlcomputepipelinestate.md) instance if the method completes successfully; otherwise `nil`.
+- `reflection`: An [`MTLComputePipelineReflection`](mtlcomputepipelinereflection.md) instance if the method completes successfully; otherwise `nil`.
+- `error`: On return, if an error occurs, a pointer to an error information instance; otherwise `nil`.
 
 ## See Also
 

@@ -17,7 +17,7 @@ func getSimilarItems(fromItems: [any MLIdentifier], maxCount: Int = 10) throws -
 ## Parameters
 
 - `fromItems`: An array of item identifiers.
-- `maxCount`: The maximum number of similar items per item in the    column. The default is  .
+- `maxCount`: The maximum number of similar items per item in the `fromItems` column. The default is `10`.
 
 ## See Also
 

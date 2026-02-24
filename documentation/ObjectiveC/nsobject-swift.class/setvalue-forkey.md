@@ -30,7 +30,7 @@ In a reference-counted environment, if the instance variable is accessed directl
 
 ## Parameters
 
-- `value`: The value for the property identified by  .
+- `value`: The value for the property identified by `key`.
 - `key`: The name of one of the receiver’s properties.
 
 ## See Also

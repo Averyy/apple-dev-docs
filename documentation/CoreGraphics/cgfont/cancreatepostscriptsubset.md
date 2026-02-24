@@ -26,7 +26,7 @@ Returns `true` if a subset in the PostScript format can be created for the font;
 
 #### Discussion
 
-For more information on PostScript format, see , which is available from [`http://partners.adobe.com/`](https://developer.apple.comhttp://partners.adobe.com/).
+For more information on PostScript format, see *Adobe Type 1 Font Format*, which is available from [`http://partners.adobe.com/`](https://developer.apple.comhttp://partners.adobe.com/).
 
 ## Parameters
 

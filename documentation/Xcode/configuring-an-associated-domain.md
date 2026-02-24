@@ -51,13 +51,13 @@ The following table describes the services that associated domains support:
 
 ##### Provide an Apple App Site Association File
 
-When the user installs your app that contains associated domains, the system fetches the corresponding  (AASA) file from an Apple-managed content delivery network (CDN) and uses its JSON contents to verify those associated domains. If the CDN doesn’t store a copy of that file, or has an outdated version, it automatically connects to your server and retrieves the latest version.
+When the user installs your app that contains associated domains, the system fetches the corresponding *Apple App Site Association* (AASA) file from an Apple-managed content delivery network (CDN) and uses its JSON contents to verify those associated domains. If the CDN doesn’t store a copy of that file, or has an outdated version, it automatically connects to your server and retrieves the latest version.
 
 After you define your app’s associated domains in Xcode, you must create this file and serve it using HTTPS from your website’s `.well-known` directory. For more information, see [`Add the associated domain file to your website`](supporting-associated-domains#Add-the-associated-domain-file-to-your-website.md).
 
 ##### Enable Alternate Mode for Unreachable Servers
 
-If you use a private web server while developing your app that’s unreachable from the public internet, enable  — an option you specify that allows the system to bypass Apple’s CDN and fetch the AASA file directly from your web server.
+If you use a private web server while developing your app that’s unreachable from the public internet, enable *alternate mode* — an option you specify that allows the system to bypass Apple’s CDN and fetch the AASA file directly from your web server.
 
 Follow these steps to enable alternate mode on a specific associated domain:
 

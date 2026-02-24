@@ -25,7 +25,7 @@ A new memory buffer for mesh data.
 
 ## Parameters
 
-- `type`:   to create a buffer for a mesh’s vertex attribute data, or   to create a buffer for a submesh’s index data.
+- `type`: [`MDLMeshBufferType.vertex`](mdlmeshbuffertype/vertex.md) to create a buffer for a mesh’s vertex attribute data, or [`MDLMeshBufferType.index`](mdlmeshbuffertype/index.md) to create a buffer for a submesh’s index data.
 - `data`: The initial data to copy into the buffer.
 
 ## See Also

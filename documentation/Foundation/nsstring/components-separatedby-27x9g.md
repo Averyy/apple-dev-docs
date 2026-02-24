@@ -30,7 +30,7 @@ The substrings in the array appear in the order they did in the receiver. Adjace
 
 ## Parameters
 
-- `separator`: A character set containing the characters to use to split the receiver. Must not be  .
+- `separator`: A character set containing the characters to use to split the receiver. Must not be `nil`.
 
 ## See Also
 

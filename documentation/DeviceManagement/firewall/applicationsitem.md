@@ -14,6 +14,11 @@ A dictionary of details for apps.
 object Firewall.ApplicationsItem
 ```
 
+## Properties
+
+- `Allowed` (boolean) *(required)*: If `true`, the system allows connections for the app.
+- `BundleID` (string) *(required)*: The bundle identifier for the app.
+
 
 ---
 

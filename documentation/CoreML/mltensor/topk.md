@@ -3,7 +3,7 @@
 **Framework**: Core ML  
 **Kind**: method
 
-Returns the  largest values along the last axis of the tensor.
+Returns the *k* largest values along the last axis of the tensor.
 
 **Availability**:
 - iOS 18.0+

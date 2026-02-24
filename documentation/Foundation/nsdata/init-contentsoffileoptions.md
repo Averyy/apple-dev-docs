@@ -31,7 +31,7 @@ A data object initialized by reading into it the data from the file specified by
 ## Parameters
 
 - `path`: The absolute path of the file from which to read data.
-- `readOptionsMask`: A mask that specifies options for reading the data. Constant components are described in  .
+- `readOptionsMask`: A mask that specifies options for reading the data. Constant components are described in [`NSData.ReadingOptions`](nsdata/readingoptions.md).
 
 ## See Also
 

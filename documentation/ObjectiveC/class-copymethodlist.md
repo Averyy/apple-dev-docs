@@ -35,7 +35,7 @@ To get the implementations of methods that may be implemented by superclasses, u
 ## Parameters
 
 - `cls`: The class you want to inspect.
-- `outCount`: On return, contains the length of the returned array. If   is  , the length is not returned.
+- `outCount`: On return, contains the length of the returned array. If `outCount` is `NULL`, the length is not returned.
 
 ## See Also
 

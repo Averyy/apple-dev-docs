@@ -24,7 +24,7 @@ It is safe to call this method from any thread of your app.
 
 ## Parameters
 
-- `bundleIdentifier`: The bundle identifier string. This value corresponds to the value in the   key of the app’s   file. For example, the bundle identifier of the TextEdit app is  .
+- `bundleIdentifier`: The bundle identifier string. This value corresponds to the value in the `CFBundleIdentifier` key of the app’s `Info.plist` file. For example, the bundle identifier of the TextEdit app is `com.apple.TextEdit`.
 
 ## See Also
 

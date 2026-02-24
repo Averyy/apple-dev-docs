@@ -26,7 +26,7 @@ func GCGamepadSnapShotDataV100FromNSData(_ snapshotData: UnsafeMutablePointer<GC
 ## Parameters
 
 - `snapshotData`: A pointer to memory to fill with the shapshot data.
-- `data`: An   object that contains recorded data. Often, this is obtained by calling the   method of a   object.
+- `data`: An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object that contains recorded data. Often, this is obtained by calling the [`snapshotData`](gcgamepadsnapshot/snapshotdata.md) method of a [`GCGamepadSnapshot`](gcgamepadsnapshot.md) object.
 
 ## See Also
 

@@ -27,8 +27,8 @@ A view that calls `action` when elements are inserted into the original view.
 
 ## Parameters
 
-- `supportedContentTypes`: An array of UTI types that the dynamic   view supports.
-- `action`: A closure that SwiftUI invokes when elements are added to   the view. The closure takes two arguments: The first argument is the   offset relative to the dynamic view’s underlying collection of data.   The second argument is an array of    items that   represents the data that you want to insert.
+- `supportedContentTypes`: An array of UTI types that the dynamic view supports.
+- `action`: A closure that SwiftUI invokes when elements are added to the view. The closure takes two arguments: The first argument is the offset relative to the dynamic view’s underlying collection of data. The second argument is an array of [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) items that represents the data that you want to insert.
 
 
 ---

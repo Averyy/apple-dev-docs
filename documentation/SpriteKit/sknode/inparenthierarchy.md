@@ -26,7 +26,7 @@ func inParentHierarchy(_ parent: SKNode) -> Bool
 
 ## Parameters
 
-- `parent`: An   object to test against.
+- `parent`: An `SKNode` object to test against.
 
 ## See Also
 

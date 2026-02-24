@@ -26,7 +26,7 @@ Use the compute pipeline state to configure a compute pass by calling the [`setC
 
 ## Parameters
 
-- `computeFunction`: An   instance.
+- `computeFunction`: An [`MTLFunction`](mtlfunction.md) instance.
 
 ## See Also
 

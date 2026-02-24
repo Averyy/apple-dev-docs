@@ -30,7 +30,7 @@ This function leaves any percent escape sequences intact. For decomposable URLs,
 
 ## Parameters
 
-- `anURL`: The   object to examine.
+- `anURL`: The `CFURL` object to examine.
 
 ## See Also
 

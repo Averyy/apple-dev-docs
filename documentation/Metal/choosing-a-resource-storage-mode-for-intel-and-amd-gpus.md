@@ -6,7 +6,7 @@ Select an appropriate storage mode for your textures and buffers on AMD and Inte
 
 #### Overview
 
-A Mac can have multiple GPUs, each with a unified or discrete memory model. In a , the CPU and the GPU share system memory. However, CPU and GPU access to that memory depends on the storage mode you choose for your resources. In a , system memory is separate from video memory. System memory is accessible to both the CPU and the GPU, but video memory is accessible only to the GPU.
+A Mac can have multiple GPUs, each with a unified or discrete memory model. In a *unified memory model*, the CPU and the GPU share system memory. However, CPU and GPU access to that memory depends on the storage mode you choose for your resources. In a *discrete memory model*, system memory is separate from video memory. System memory is accessible to both the CPU and the GPU, but video memory is accessible only to the GPU.
 
 The Metal framework’s resource storage mode API works for both unified and discrete memory models, so you don’t need to write specific code for either.
 

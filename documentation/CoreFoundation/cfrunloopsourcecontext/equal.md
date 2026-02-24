@@ -30,8 +30,8 @@ An equality test callback for your program-defined `info` pointer. Can be `NULL`
 
 ## Parameters
 
-- `info1`: The   member of the   or   structure that was used when creating the first run loop source to test.
-- `info2`: The   member of the   or   structure that was used when creating the second run loop source to test.
+- `info1`: The `info` member of the [`CFRunLoopSourceContext`](cfrunloopsourcecontext.md) or [`CFRunLoopSourceContext1`](cfrunloopsourcecontext1.md) structure that was used when creating the first run loop source to test.
+- `info2`: The `info` member of the [`CFRunLoopSourceContext`](cfrunloopsourcecontext.md) or [`CFRunLoopSourceContext1`](cfrunloopsourcecontext1.md) structure that was used when creating the second run loop source to test.
 
 ## See Also
 

@@ -76,11 +76,11 @@ _geometry.position.xy = sincos(u_time);
 _geometry.position.z = intensity;
 ```
 
-1.  You can provide your own inputs to a shader modifier by declaring custom variables. Because the syntax differs between Metal and OpenGL shaders, you must include both declarations for your shader modifier to be usable with both rendering technologies. To pass values into custom variables at render time, see [`Providing Custom Inputs to a Shader Modifier`](scnshadable#Providing-Custom-Inputs-to-a-Shader-Modifier.md).
-2.  If your shader modifier benefits from factoring common code into functions, place their definitions here. If you include custom functions in your snippet, you must place the `#pragma body` directive between your function definitions and the main body of the snippet.
-3.  As noted above, the `#pragma body` directive separates custom function definitions from the main body of the snippet. If the snippet contains no function definitions, you may omit this directive.
+1. **Custom variables declarations.** You can provide your own inputs to a shader modifier by declaring custom variables. Because the syntax differs between Metal and OpenGL shaders, you must include both declarations for your shader modifier to be usable with both rendering technologies. To pass values into custom variables at render time, see [`Providing Custom Inputs to a Shader Modifier`](scnshadable#Providing-Custom-Inputs-to-a-Shader-Modifier.md).
+2. **Custom global functions.** If your shader modifier benefits from factoring common code into functions, place their definitions here. If you include custom functions in your snippet, you must place the `#pragma body` directive between your function definitions and the main body of the snippet.
+3. **Pragma directives.** As noted above, the `#pragma body` directive separates custom function definitions from the main body of the snippet. If the snippet contains no function definitions, you may omit this directive.
 
-By default, SceneKit automatically uses material properties to determine whether an object should be rendered with partial transparency and uses this information to optimize rendering performance. Use the `#pragma transparent` or `#pragma opaque` directive to override SceneKit’s setting. 4.  Place the main body of your shader modifier code at the end of the code snippet.
+By default, SceneKit automatically uses material properties to determine whether an object should be rendered with partial transparency and uses this information to optimize rendering performance. Use the `#pragma transparent` or `#pragma opaque` directive to override SceneKit’s setting. 4. **Code Snippet.** Place the main body of your shader modifier code at the end of the code snippet.
 
 One shader modifier snippet affects both Metal and OpenGL (or OpenGL ES) rendering—SceneKit automatically translates GLSL syntax to Metal shader syntax before inserting your code snippet into its own shader program. (For some simple shader modifiers, SceneKit can insert the same code snippet into either shader language without translation.)
 

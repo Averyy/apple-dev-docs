@@ -21,8 +21,8 @@ func MACaptionAppearanceSetDisplayType(_ domain: MACaptionAppearanceDomain, _ di
 
 ## Parameters
 
-- `domain`: The domain to retrieve the preference value from. See  . Pass   unless the system defaults are needed for comparison.
-- `displayType`: A value representing options to use only forced captions, to allow system locale to override the language of the audio track, or to choose the best available captioning track from CC, SDH, or subtitles. See  .
+- `domain`: The domain to retrieve the preference value from. See [`MACaptionAppearanceDomain`](macaptionappearancedomain.md). Pass [`MACaptionAppearanceDomain.user`](macaptionappearancedomain/user.md) unless the system defaults are needed for comparison.
+- `displayType`: A value representing options to use only forced captions, to allow system locale to override the language of the audio track, or to choose the best available captioning track from CC, SDH, or subtitles. See [`MACaptionAppearanceDisplayType`](macaptionappearancedisplaytype.md).
 
 ## See Also
 

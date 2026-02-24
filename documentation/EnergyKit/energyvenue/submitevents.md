@@ -23,7 +23,7 @@ The submission may contain events for multiple devices. The system throws [`Ener
 
 ## Parameters
 
-- `events`: An array of   conforming  load events to send.
+- `events`: An array of [`ElectricalLoadEventProtocol`](electricalloadeventprotocol.md) conforming  load events to send.
 
 
 ---

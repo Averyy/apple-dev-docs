@@ -28,7 +28,7 @@ Certain account types (such as Facebook) require an options dictionary. This met
 ## Parameters
 
 - `accountType`: The account type.
-- `options`: A dictionary of options, if options are required by the account type; otherwise,  .
+- `options`: A dictionary of options, if options are required by the account type; otherwise, `nil`.
 - `completion`: The handler to call when the request has completed. The handler is called on an arbitrary queue.
 
 ## See Also

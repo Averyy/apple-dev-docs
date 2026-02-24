@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-Specifies that character references (`&#``;`) should not be resolved for XML output of this node.
+Specifies that character references (`&#`*nnn*`;`) should not be resolved for XML output of this node.
 
 **Availability**:
 - Mac Catalyst 13.0+

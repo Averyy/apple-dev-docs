@@ -21,7 +21,7 @@ func JSPropertyNameArrayRelease(_ array: JSPropertyNameArrayRef!)
 
 ## Parameters
 
-- `array`: The   to release.
+- `array`: The [`JSPropertyNameArrayRef`](jspropertynamearrayref.md) to release.
 
 ## See Also
 

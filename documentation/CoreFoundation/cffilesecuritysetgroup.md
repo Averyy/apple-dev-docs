@@ -26,8 +26,8 @@ Returns `true` if the group ID was successfully set, otherwise `false`.
 
 ## Parameters
 
-- `fileSec`: The   object to modify.
-- `group`: An integer of type  .
+- `fileSec`: The `CFFileSecurityRef` object to modify.
+- `group`: An integer of type `gid_t`.
 
 ## See Also
 

@@ -30,8 +30,8 @@ Both the `x` and `y` multiplication factors halve their respective dimension’s
 
 ## Parameters
 
-- `x`: The multiplication factor used to resize this shape along its   x-axis.
-- `y`: The multiplication factor used to resize this shape along its   y-axis.
+- `x`: The multiplication factor used to resize this shape along its x-axis.
+- `y`: The multiplication factor used to resize this shape along its y-axis.
 
 ## See Also
 

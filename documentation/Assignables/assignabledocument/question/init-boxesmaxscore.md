@@ -19,8 +19,8 @@ init(boxes: [AssignableDocument.QuestionBox], maxScore: Double? = nil)
 
 ## Parameters
 
-- `boxes`: The question boxes associated with this   question. Treated as a set.
-- `maxScore`: An optional maximum score value   for this question.
+- `boxes`: The question boxes associated with this question. Treated as a set.
+- `maxScore`: An optional maximum score value for this question.
 
 
 ---

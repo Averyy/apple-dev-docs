@@ -21,7 +21,7 @@ For example, a chart that plots vehicle weight against fuel efficiency by countr
 - The visual size of each data point corresponds to the car’s MSRP.
 - The color of each data point corresponds to the car’s country of origin.
 
-To create an audio graph of your chart, first set up a representation of each of your data points based on the information in your data model. Use that array of data points to create a — a container that describes a collection of data points. Simple data sets might only have one series of data; more complex data sets might have multiple series.
+To create an audio graph of your chart, first set up a representation of each of your data points based on the information in your data model. Use that array of data points to create a *series descriptor*— a container that describes a collection of data points. Simple data sets might only have one series of data; more complex data sets might have multiple series.
 
 ```swift
 let cars = generateData()

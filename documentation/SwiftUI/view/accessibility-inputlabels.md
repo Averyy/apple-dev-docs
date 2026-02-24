@@ -29,7 +29,7 @@ Provide labels in descending order of importance. Voice Control and Full Keyboar
 
 ## Parameters
 
-- `inputLabels`: An array of   elements to use as input labels.
+- `inputLabels`: An array of [`Text`](text.md) elements to use as input labels.
 
 ## See Also
 

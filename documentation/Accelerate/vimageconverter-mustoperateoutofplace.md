@@ -33,9 +33,9 @@ In-place operation is considered to mean `srcs[i].data = dests[i].data` and `src
 ## Parameters
 
 - `converter`: The converter to check to determine if it’s capable of operating in place.
-- `srcs`: The list of source buffers you plan to use with  . This parameter may be  .
-- `dests`: The list of destination buffers you plan to use with  . This parameter may be  .
-- `flags`: The flags you’ll pass to  .
+- `srcs`: The list of source buffers you plan to use with [`vImageConvert_AnyToAny(_:_:_:_:_:)`](vimageconvert_anytoany(_:_:_:_:_:).md). This parameter may be `NULL`.
+- `dests`: The list of destination buffers you plan to use with [`vImageConvert_AnyToAny(_:_:_:_:_:)`](vimageconvert_anytoany(_:_:_:_:_:).md). This parameter may be `NULL`.
+- `flags`: The flags you’ll pass to [`vImageConvert_AnyToAny(_:_:_:_:_:)`](vimageconvert_anytoany(_:_:_:_:_:).md).
 
 ## See Also
 

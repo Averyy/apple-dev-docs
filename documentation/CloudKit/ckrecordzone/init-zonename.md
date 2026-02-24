@@ -32,7 +32,7 @@ Don’t use this method to create a `CKRecordZone` object that corresponds to a 
 
 ## Parameters
 
-- `zoneName`: If this parameter is   or is an empty string, the method throws an exception.
+- `zoneName`: The name of the new zone. Zone names inside a user’s private database are unique, consist of up to 255 ASCII characters, and don’t start with an underscore. One way to satisfy the uniqueness of zone names is to create a string from a Universally Unique Identifier (UUID), but you can also use other techniques. If this parameter is `nil` or is an empty string, the method throws an exception.
 
 ## See Also
 

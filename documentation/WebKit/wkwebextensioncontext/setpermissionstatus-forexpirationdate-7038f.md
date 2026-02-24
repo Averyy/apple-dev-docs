@@ -28,7 +28,7 @@ Passing a `nil` expiration date will be treated as a distant future date. Only [
 
 - `status`: The new permission status to set for the given match pattern.
 - `pattern`: The match pattern for which to set the status.
-- `expirationDate`: The expiration date for the new permission status, or   for distant future.
+- `expirationDate`: The expiration date for the new permission status, or `nil` for distant future.
 
 ## See Also
 

@@ -22,6 +22,12 @@ func converted(to _: CGColorSpace, intent: CGColorRenderingIntent, options: CFDi
 
 ##### Parameters
 
+- **CGColorSpaceRef**: The destination color space.
+- **to**: The destination color space.
+- **intent**: The mechanism to use to match the color when the color is outside the gamut of the new color space.
+- **color**: The color to convert.
+- **options**: A dictionary of options used to convert the color. Currently, you should pass `NULL`.
+
 ##### Returns
 
 A new color in the destination color space that matches (or closely approximates) the source color.

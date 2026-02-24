@@ -10,6 +10,10 @@ A dictionary that contains localized URLs to an external website for account cre
 - iPadOS 15.4+
 - tvOS 16.4+
 
+
+
+**Type**: object
+
 #### Discussion
 
 Use this information property list key if your app has the [`com.apple.developer.storekit.external-link.account`](entitlements/com.apple.developer.storekit.external-link.account.md) entitlement. Each key is a string that is a lowercase ISO 3166-1 alpha-2 country code, the value for which is a URL to the localized version of the external website for that locale. The dictionary must contain a key with the string `*` that maps to a default URL.
@@ -29,6 +33,10 @@ The following shows a property list with a default URL and a specific URL for th
 </dict>
 </plist>
 ```
+
+## Properties
+
+- `Any Key` (string)
 
 ## See Also
 

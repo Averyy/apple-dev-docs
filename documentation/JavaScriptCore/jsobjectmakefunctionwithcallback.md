@@ -26,8 +26,8 @@ A [`JSObjectRef`](jsobjectref.md) that is a function. The object’s prototype i
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `name`: A   that contains the function’s name. The system uses this when converting the function to a string. Pass   to create an anonymous function.
-- `callAsFunction`: The   to invoke when calling the function.
+- `name`: A [`JSStringRef`](jsstringref.md) that contains the function’s name. The system uses this when converting the function to a string. Pass `NULL` to create an anonymous function.
+- `callAsFunction`: The [`JSObjectCallAsFunctionCallback`](jsobjectcallasfunctioncallback.md) to invoke when calling the function.
 
 ## See Also
 

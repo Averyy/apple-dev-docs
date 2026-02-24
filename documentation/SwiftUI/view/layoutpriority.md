@@ -48,7 +48,7 @@ A parent layout offers the child views with the highest layout priority all the 
 
 ## Parameters
 
-- `value`: The priority by which a parent layout apportions   space to the child.
+- `value`: The priority by which a parent layout apportions space to the child.
 
 ## See Also
 

@@ -31,8 +31,8 @@ The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property w
 
 ## Parameters
 
-- `texture`: The   object for rendering with   of  .
-- `commandBuffer`: An optional   to use for rendering to the   destination.
+- `texture`: The [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) object for rendering with [`MTLTextureType`](https://developer.apple.com/documentation/Metal/MTLTextureType) of [`MTLTextureType.type2D`](https://developer.apple.com/documentation/Metal/MTLTextureType/type2D).
+- `commandBuffer`: An optional [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) to use for rendering to the [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) destination.
 
 ## See Also
 

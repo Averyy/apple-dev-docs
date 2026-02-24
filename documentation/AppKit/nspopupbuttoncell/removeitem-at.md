@@ -16,7 +16,7 @@ func removeItem(at index: Int)
 
 ## Parameters
 
-- `index`: The zero-based index indicating which item to remove. Specifying   removes the item at the top of the menu. The index must be valid and non-negative.
+- `index`: The zero-based index indicating which item to remove. Specifying `0` removes the item at the top of the menu. The index must be valid and non-negative.
 
 ## See Also
 

@@ -27,7 +27,7 @@ A new polyline object.
 ## Parameters
 
 - `points`: The array of map points defining the shape. The initializer copies the data in this array to the new object.
-- `count`: The number of items in the   array.
+- `count`: The number of items in the `points` array.
 
 ## See Also
 

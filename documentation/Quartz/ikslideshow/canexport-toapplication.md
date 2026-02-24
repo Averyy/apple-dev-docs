@@ -20,7 +20,7 @@ class func canExport(toApplication applicationBundleIdentifier: String!) -> Bool
 
 ## Parameters
 
-- `applicationBundleIdentifier`: The bundle identifier of the application that you want to export the slideshow to. See  .
+- `applicationBundleIdentifier`: The bundle identifier of the application that you want to export the slideshow to. See [`Bundle Identifiers`](bundle-identifiers.md).
 
 ## See Also
 

@@ -32,9 +32,9 @@ Use the [`canImportFileExtension(_:)`](mdlasset/canimportfileextension(_:).md) m
 ## Parameters
 
 - `URL`: A URL specifying the location an asset file.
-- `vertexDescriptor`: An object describing the vertex data format to be loaded from the asset, or   to use the asset’s vertex buffers as found in the file.
-- `bufferAllocator`: The allocator object to use for loading mesh data from the asset, or   to use a default allocator.
-- `preserveTopology`: If  , Model I/O uses the asset’s submesh index buffers as found in the file, using the appropriate   value for each submesh and generating   buffers as needed for variable-topology submeshes. If  , Model I/O reformats index buffers to create triangle submeshes.
+- `vertexDescriptor`: An object describing the vertex data format to be loaded from the asset, or `nil` to use the asset’s vertex buffers as found in the file.
+- `bufferAllocator`: The allocator object to use for loading mesh data from the asset, or `nil` to use a default allocator.
+- `preserveTopology`: If [`true`](https://developer.apple.com/documentation/Swift/true), Model I/O uses the asset’s submesh index buffers as found in the file, using the appropriate [`MDLGeometryType`](mdlgeometrytype.md) value for each submesh and generating [`MDLSubmeshTopology`](mdlsubmeshtopology.md) buffers as needed for variable-topology submeshes. If [`false`](https://developer.apple.com/documentation/Swift/false), Model I/O reformats index buffers to create triangle submeshes.
 - `error`: Upon return, an object describing any errors that occur while loading the asset.
 
 ## See Also

@@ -9,6 +9,10 @@ An entitlement that lets your app make registration and assertion requests for p
 - Mac Catalyst 16.3+
 - macOS 13.3+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Only add this entitlement if your app can act as a user’s web browser.

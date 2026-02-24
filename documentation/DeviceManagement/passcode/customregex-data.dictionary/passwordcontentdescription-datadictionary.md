@@ -14,6 +14,10 @@ Descriptions of the policy, localized to supported locales.
 object Passcode.CustomRegex.PasswordContentDescription
 ```
 
+## Properties
+
+- `ANY` (string): A localized description.
+
 
 ---
 

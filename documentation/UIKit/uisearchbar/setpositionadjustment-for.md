@@ -24,7 +24,7 @@ Use this method to adjust the position of an icon within the search text field.
 
 ## Parameters
 
-- `adjustment`: The offset to use for the icon identified by  .
+- `adjustment`: The offset to use for the icon identified by `icon`.
 - `icon`: An icon identifier constant.
 
 ## See Also

@@ -24,7 +24,7 @@ Call this method to selectively reload only the specified items. This causes the
 
 ## Parameters
 
-- `indexPaths`: An array of   objects identifying the items you want to update.
+- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects identifying the items you want to update.
 
 ## See Also
 

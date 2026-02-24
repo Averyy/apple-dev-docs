@@ -40,8 +40,8 @@ If the closure is called with an error, log the error for debugging purposes, an
 
 ## Parameters
 
-- `purposeKey`: A key in the   dictionary of the app’s   file.  The value for this key is an app-provided string that describes the reason for accessing location data with full accuracy.  To localize a usage description, add an entry to your   file with the same key you provide for this parameter.
-- `completion`: A closure to execute after authorization status changes. This closure takes a single   parameter, which is   if the prompt was displayed to the user, or an error object describing why the prompt couldn’t be displayed.
+- `purposeKey`: A key in the [`NSLocationTemporaryUsageDescriptionDictionary`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationTemporaryUsageDescriptionDictionary) dictionary of the app’s `Info.plist` file.  The value for this key is an app-provided string that describes the reason for accessing location data with full accuracy.  To localize a usage description, add an entry to your `InfoPlist.strings` file with the same key you provide for this parameter.
+- `completion`: A closure to execute after authorization status changes. This closure takes a single `error` parameter, which is `nil` if the prompt was displayed to the user, or an error object describing why the prompt couldn’t be displayed.
 
 ## See Also
 

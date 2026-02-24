@@ -26,6 +26,9 @@ Returns a vector that contains the result of `cos(x)` for each value (`x`) in th
 
 ##### Parameters
 
+- **parameter 1**: the source vector.
+- **parameter 2**: the output vector.
+
 ## See Also
 
 - [func vsinf(vFloat) -> vFloat](vsinf(_:).md)

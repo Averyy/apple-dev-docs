@@ -2,7 +2,7 @@
 
 **Framework**: Foveated Streaming
 
-Integrate NVIDIA CloudXR™ and the streaming manager protocol into your desktop or cloud application to stream high-fidelity spatial content to Apple Vision Pro.
+Integrate NVIDIA CloudXR™ and the session management connection protocol into your desktop or cloud application to stream high-fidelity spatial content to Apple Vision Pro.
 
 #### Overview
 
@@ -12,9 +12,9 @@ Foveated Streaming allows your endpoint to stream high quality content only wher
 
 To enable streaming, integrate the following three components:
 
--  Download the OpenXR-compliant runtime from NVIDIA and integrate it into your streaming application.
--  When streaming from a local device, implement a protocol to handle device discovery, authentication, and session state management between your streaming application and Apple Vision Pro.
--  Build a visionOS app that connects to your streaming application, displays the streamed content in an immersive space, and enables people to interact with both the streamed content and `RealityKit` elements.
+- **NVIDIA CloudXR Runtime:** Download the OpenXR-compliant runtime from NVIDIA and integrate it into your streaming application.
+- **Session management connection protocol:** When streaming from a local device, implement a protocol to handle device discovery, authentication, and session state management between your streaming application and Apple Vision Pro.
+- **Apple Vision Pro client app:** Build a visionOS app that connects to your streaming application, displays the streamed content in an immersive space, and enables people to interact with both the streamed content and `RealityKit` elements.
 
 #### Add the Cloudxr Runtime to Your Application
 
@@ -22,7 +22,7 @@ Download the [`CloudXR SDK`](https://developer.apple.comhttps://catalog.ngc.nvid
 
 For an example implementation, see the [`StreamingSession-OpenXRSample`](https://developer.apple.comhttps://github.com/apple/StreamingSession/tree/main/StreamingSession-OpenXRSample/).
 
-#### Implement the Streaming Manager Protocol
+#### Implement the Session Management Connection Protocol
 
 Make your streaming application discoverable to Apple Vision Pro by broadcasting a Bonjour service with the following name:
 
@@ -50,7 +50,7 @@ Display streamed content by building a visionOS app with the Foveated Streaming 
 
 - Initializes a [`FoveatedStreamingSession`](foveatedstreamingsession.md).
 - Connects to a `FoveatedStreamingSession.Endpoint`.
-- Presents the streamed content in a [`FoveatedStreamingSpace`](foveatedstreamingspace.md).
+- Presents the streamed content in an [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace).
 - Manages the connection life cycle and handles errors.
 
 You can use the Foveated Streaming App template in Xcode to get started quickly. To do so, create a new project in Xcode by choosing File > New > Project. Navigate to the Multiplatform section of the template chooser, and select the Foveated Streaming App template:

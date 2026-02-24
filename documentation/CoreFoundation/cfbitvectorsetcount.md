@@ -27,7 +27,7 @@ If `bv` was created with a fixed capacity, you cannot increase its size beyond t
 ## Parameters
 
 - `bv`: The bit vector to modify.
-- `count`: The new size for  . If   is greater than the current size of  , the additional bit values are set to  .
+- `count`: The new size for `bv`. If `count` is greater than the current size of `bv`, the additional bit values are set to `0`.
 
 ## See Also
 

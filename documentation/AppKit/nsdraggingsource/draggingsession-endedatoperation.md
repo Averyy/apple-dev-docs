@@ -19,7 +19,7 @@ optional func draggingSession(_ session: NSDraggingSession, endedAt screenPoint:
 
 - `session`: The dragging session.
 - `screenPoint`: The point where the drag ended, in screen coordinates.
-- `operation`: The drag operation. See   for drag operation types.
+- `operation`: The drag operation. See [`NSDragOperation`](nsdragoperation.md) for drag operation types.
 
 ## See Also
 

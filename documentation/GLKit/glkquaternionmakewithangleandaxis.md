@@ -24,9 +24,9 @@ A new quaternion.
 ## Parameters
 
 - `radians`: The angle of the rotation in radians (a positive angle is counterclockwise).
-- `x`: The   component of the axis.
-- `y`: The   component of the axis.
-- `z`: The   component of the axis.
+- `x`: The `x` component of the axis.
+- `y`: The `y` component of the axis.
+- `z`: The `z` component of the axis.
 
 ## See Also
 

@@ -21,7 +21,7 @@ There are several kinds of message that might be sent during a conversion proces
 
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to  .
+- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(info:callbacks:options:)`](cgpsconverter/init(info:callbacks:options:).md).
 - `message`: A string containing the message from the PostScript conversion process.
 
 

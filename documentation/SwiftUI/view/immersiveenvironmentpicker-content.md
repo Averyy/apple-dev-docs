@@ -48,7 +48,7 @@ struct SystemPlayerView: UIViewControllerRepresentable {
 
 Items will be donated to media players (like [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController)) downstream in the hierarchy.
 
-> **Note**: View the sample code in [`Building an immersive media viewing experience`](https://developer.apple.com/documentation/visionOS/building-an-immersive-media-viewing-experience) to see an immersive space in action.
+> **Note**: View the sample code in [`Building an immersive media viewing experience`](https://developer.apple.com/documentation/visionos/building-an-immersive-media-viewing-experience) to see an immersive space in action.
 
 
 ---

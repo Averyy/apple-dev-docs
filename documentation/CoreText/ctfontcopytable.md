@@ -27,7 +27,7 @@ A retained reference to the font table data as a [`CFData`](https://developer.ap
 ## Parameters
 
 - `font`: The font reference.
-- `table`: The font table identifier as a   constant. See   for possible values.
+- `table`: The font table identifier as a [`CTFontTableTag`](ctfonttabletag.md) constant. See [`CTFontTableTag`](ctfonttabletag.md) for possible values.
 - `options`: The font table options.
 
 ## See Also

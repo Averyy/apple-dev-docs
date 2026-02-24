@@ -21,7 +21,7 @@ init(values: (Float, Float, Float, Float, Float, Float, Float, Float, Float, Flo
 
 ## Parameters
 
-- `values`: The strength values for possible trigger positions. Each value is between   and  , where   is the minimum and   is the maximum strength.
+- `values`: The strength values for possible trigger positions. Each value is between `0` and `1`, where `0` is the minimum and `1` is the maximum strength.
 
 ## See Also
 

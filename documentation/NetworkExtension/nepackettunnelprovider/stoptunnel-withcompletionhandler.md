@@ -29,7 +29,7 @@ Do not use this method to stop the tunnel from the Packet Tunnel Provider. Use `
 
 ## Parameters
 
-- `reason`: An   code indicating why the tunnel is being stopped. Possible codes are listed in  .
+- `reason`: An `NEProviderStopReason` code indicating why the tunnel is being stopped. Possible codes are listed in [`NEProvider`](neprovider.md).
 - `completionHandler`: A block that must be executed when the tunnel is fully stopped.
 
 ## See Also

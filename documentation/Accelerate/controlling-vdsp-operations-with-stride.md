@@ -6,7 +6,7 @@ Operate selectively on the elements of a vector at regular intervals.
 
 #### Overview
 
-Many functions in vDSP provide support for specifying a  (that is, the distance between the elements that functions read from or write to) for a particular vector. For example, if you want to access consecutive elements, use a stride of `1` (referred to as a ). If you want to access every third element, for example to work with the red channel in interleaved RGB data, use a stride of `3`. If you want to access every second element, for example to work with a single audio channel in interleaved stereo audio data, use a stride of `2`.
+Many functions in vDSP provide support for specifying a *stride* (that is, the distance between the elements that functions read from or write to) for a particular vector. For example, if you want to access consecutive elements, use a stride of `1` (referred to as a *unit stride*). If you want to access every third element, for example to work with the red channel in interleaved RGB data, use a stride of `3`. If you want to access every second element, for example to work with a single audio channel in interleaved stereo audio data, use a stride of `2`.
 
 Typically, you use a unit stride. Use other strides to, for example, operate along a column of a matrix, where the stride is the number of elements per row.
 

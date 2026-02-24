@@ -25,7 +25,7 @@ The case uses the newest version of [`MLSoundClassifier.ModelParameters.FeatureP
 ## Parameters
 
 - `type`: An Audio Feature Print extractor type.
-- `revision`: A version of the extractor you pass to  .
+- `revision`: A version of the extractor you pass to `type`.
 
 ## See Also
 

@@ -26,7 +26,7 @@ It is safe to call this function concurrently on two or more threads as long as 
 
 ## Parameters
 
-- `anchors`: On return, points to an array of certificate objects for trusted anchor (root) certificates, which is the default set of anchors for the caller. In Objective-C, call the   function to release the   object when you are finished with it.
+- `anchors`: On return, points to an array of certificate objects for trusted anchor (root) certificates, which is the default set of anchors for the caller. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release the [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) object when you are finished with it.
 
 ## See Also
 

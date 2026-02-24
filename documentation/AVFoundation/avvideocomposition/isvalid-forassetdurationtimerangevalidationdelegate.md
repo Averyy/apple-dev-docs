@@ -25,10 +25,10 @@ func isValid(for tracks: [AVAssetTrack], assetDuration duration: CMTime, timeRan
 
 ## Parameters
 
-- `tracks`: Pass a reference to an asset’s tracks if you wish to validate the track IDs of the layer instructions against the asset’s tracks. Pass   to skip that validation. This method throws an exception if the tracks aren’t all from the same asset.
-- `duration`: Pass the asset duration to validate the time ranges of the instructions. Pass   to skip that validation.
-- `timeRange`: The composition only validates those instructions with time ranges that overlap with the specified time range. To validate all instructions that the composition may use for playback or other processing, regardless of time range, pass  .
-- `validationDelegate`: A delegate that handles validation requests. May be  .
+- `tracks`: Pass a reference to an asset’s tracks if you wish to validate the track IDs of the layer instructions against the asset’s tracks. Pass `nil` to skip that validation. This method throws an exception if the tracks aren’t all from the same asset.
+- `duration`: Pass the asset duration to validate the time ranges of the instructions. Pass [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid) to skip that validation.
+- `timeRange`: The composition only validates those instructions with time ranges that overlap with the specified time range. To validate all instructions that the composition may use for playback or other processing, regardless of time range, pass `CMTimeRange(start: .zero, end: .positiveInfinity)`.
+- `validationDelegate`: A delegate that handles validation requests. May be `nil`.
 
 ## See Also
 

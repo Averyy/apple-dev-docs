@@ -27,7 +27,7 @@ This method is effective only if you’ve previously archived this object with t
 ## Parameters
 
 - `object`: The object to encode.
-- `key`: The key with which to associate the encoded value. This value must not be  .
+- `key`: The key with which to associate the encoded value. This value must not be `nil`.
 
 ## See Also
 

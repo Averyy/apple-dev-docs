@@ -26,7 +26,7 @@ Set the date and time of the first entry in a timeline to the current date and t
 ## Parameters
 
 - `entries`: An array of timeline entries.
-- `policy`: The policy that determines the earliest date and time   WidgetKit requests a new timeline from a timeline provider.
+- `policy`: The policy that determines the earliest date and time WidgetKit requests a new timeline from a timeline provider.
 
 
 ---

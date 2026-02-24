@@ -24,13 +24,13 @@ This method searches the descriptor cache for the descriptor that matches the sp
 
 ## Parameters
 
-- `type`: The descriptor type to find. For a list of possible types, see  .
-- `length`: A pointer to a variable containing the size of the descriptor you want to fetch. Typically, you use the   keyword to specify the size of the descriptor structure you want. On return, this method replaces that value with the actual size of the descriptor, which might include additional child descriptors. Use the returned value when fetching variable-length configuration or BOS descriptors, or when fetching nonstandard descriptor types.
+- `type`: The descriptor type to find. For a list of possible types, see [`tIOUSBDescriptorType`](tiousbdescriptortype.md).
+- `length`: A pointer to a variable containing the size of the descriptor you want to fetch. Typically, you use the `sizeof` keyword to specify the size of the descriptor structure you want. On return, this method replaces that value with the actual size of the descriptor, which might include additional child descriptors. Use the returned value when fetching variable-length configuration or BOS descriptors, or when fetching nonstandard descriptor types.
 - `index`: The descriptor’s index value.
 - `languageID`: The descriptor language ID.
-- `requestType`: The request type to use. For a list of possible values, see  .
-- `requestRecipient`: The request recipient to use. For a list of possible values, see  .
-- `descriptor`: A pointer to a variable. On output, this variable contains the retrieved descriptor. The descriptor must be the same size, or larger than, the input value in the   parameter.
+- `requestType`: The request type to use. For a list of possible values, see [`tIOUSBDeviceRequestTypeValue`](tiousbdevicerequesttypevalue.md).
+- `requestRecipient`: The request recipient to use. For a list of possible values, see [`tIOUSBDeviceRequestRecipientValue`](tiousbdevicerequestrecipientvalue.md).
+- `descriptor`: A pointer to a variable. On output, this variable contains the retrieved descriptor. The descriptor must be the same size, or larger than, the input value in the `length` parameter.
 
 ## See Also
 

@@ -24,7 +24,7 @@ Retains the `Cancellable` as long as the entity is active (see `Entity.isActive`
 
 This method does nothing if the entity is already inactive.
 
-Internally, this method stores an `AnyCancellable` in a transient component of the entity. The component is removed when the  event for this entity is received.
+Internally, this method stores an `AnyCancellable` in a transient component of the entity. The component is removed when the *deactivate* event for this entity is received.
 
 
 ---

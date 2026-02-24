@@ -33,7 +33,7 @@ Use this method to specify the height of custom header views returned by your [`
 ## Parameters
 
 - `tableView`: The table view requesting this information.
-- `section`: An index number identifying a section of   .
+- `section`: An index number identifying a section of `tableView` .
 
 ## See Also
 

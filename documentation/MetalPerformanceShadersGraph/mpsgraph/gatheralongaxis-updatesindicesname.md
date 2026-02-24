@@ -31,7 +31,7 @@ Gather values from `updatesTensor` along the specified `axis` at indices in `ind
 
 - `axis`: The axis to gather from. Negative values wrap around
 - `updatesTensor`: The input tensor to gather values from
-- `indicesTensor`: Int32 or Int64 tensor used to index 
+- `indicesTensor`: Int32 or Int64 tensor used to index `updatesTensor`
 - `name`: The name for the operation.
 
 

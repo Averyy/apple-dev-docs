@@ -34,8 +34,8 @@ Seeking is constrained by the collection of seekable time ranges. If you seek to
 ## Parameters
 
 - `time`: The time to which to seek.
-- `toleranceBefore`: Pass   to request sample accurate seeking (this may incur additional decoding delay).
-- `toleranceAfter`: Pass   to request sample accurate seeking (this may incur additional decoding delay).
+- `toleranceBefore`: The temporal tolerance before `time`. Pass [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero) to request sample accurate seeking (this may incur additional decoding delay).
+- `toleranceAfter`: The temporal tolerance after `time`. Pass [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero) to request sample accurate seeking (this may incur additional decoding delay).
 - `completionHandler`: The block to invoke when the seek operation has finished.
 
 ## See Also

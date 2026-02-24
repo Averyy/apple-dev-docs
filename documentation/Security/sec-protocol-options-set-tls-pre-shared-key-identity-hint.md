@@ -24,7 +24,7 @@ Set the PSK identity hint to use by servers when negotiating a PSK ciphersuite. 
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A `sec_protocol_options_t` instance.
 - `psk_identity_hint`: A dispatch_data_t containing a PSK identity hint.
 
 

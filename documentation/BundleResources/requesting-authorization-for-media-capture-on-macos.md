@@ -29,6 +29,63 @@ For each key, provide a message that explains to the user why your app needs to 
 
 Always test the [`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice) [`authorizationStatus(for:)`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/authorizationStatus(for:)) method before setting up a capture session. If the user has not yet granted or denied capture permission, the authorization status is [`AVAuthorizationStatus.notDetermined`](https://developer.apple.com/documentation/AVFoundation/AVAuthorizationStatus/notDetermined). In this case, use the [`requestAccess(for:completionHandler:)`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/requestAccess(for:completionHandler:)) method to have macOS prompt the user:
 
+**Swift**:
+
+```swift
+switch AVCaptureDevice.authorizationStatus(for: .video) {
+    case .authorized: // The user has previously granted access to the camera.
+        self.setupCaptureSession()
+    
+    case .notDetermined: // The user has not yet been asked for camera access.
+        AVCaptureDevice.requestAccess(for: .video) { granted in
+            if granted {
+                self.setupCaptureSession()
+            }
+        }
+    
+    case .denied: // The user has previously denied access.
+        return
+
+    case .restricted: // The user can't grant access due to restrictions.
+        return
+}
+```
+
+**Objective-C**:
+
+```objc
+// Request permission to access the camera and microphone.
+switch ([AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo])
+{
+    case AVAuthorizationStatusAuthorized:
+    {
+        // The user has previously granted access to the camera.
+        [self setupCaptureSession];
+        break;
+    }
+    case AVAuthorizationStatusNotDetermined:
+    {
+        // The app hasn't yet asked the user for camera access.
+        [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
+            if (granted) {
+                [self setupCaptureSession];
+            }
+        }];
+        break;
+    }
+    case AVAuthorizationStatusDenied:
+    {
+        // The user has previously denied access.
+        return;
+    }
+    case AVAuthorizationStatusRestricted:
+    {
+        // The user can't grant access due to restrictions.
+        return;
+    }
+}
+```
+
 The [`requestAccess(for:completionHandler:)`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/requestAccess(for:completionHandler:)) method is asynchronous: Your app continues running while macOS shows the permission alert. When the user responds, the system calls your completion handler. If the completion handler’s success parameter is [`true`](https://developer.apple.com/documentation/Swift/true), you can proceed to set up and start a capture session.
 
 > **Note**:  Call [`requestAccess(for:completionHandler:)`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/requestAccess(for:completionHandler:)) before starting capture, but only at a time that’s appropriate for your app. For example, if photo or video recording isn’t the main focus of your app, check for camera permission only when the user invokes your app’s camera-related features.

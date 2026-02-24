@@ -23,7 +23,7 @@ func chartSymbolScale<Domain>(domain: Domain) -> some View where Domain : ScaleD
 
 ## Parameters
 
-- `domain`: The possible data values plotted as symbols in the   chart. You can define the domain with an array for   categorical values (e.g.,  )
+- `domain`: The possible data values plotted as symbols in the chart. You can define the domain with an array for categorical values (e.g., `["A", "B", "C"]`)
 
 ## See Also
 

@@ -17,7 +17,7 @@ init(rawValue: UInt32)
 
 ## Parameters
 
-- `rawValue`: The bitwise   of one or more of the event mask constants used to initialize an event mask
+- `rawValue`: The bitwise `OR` of one or more of the event mask constants used to initialize an event mask
 
 
 ---

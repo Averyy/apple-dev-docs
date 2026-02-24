@@ -23,7 +23,7 @@ nonisolated func perform<T>(schedule: NSManagedObjectContext.ScheduledTaskType =
 
 ## Parameters
 
-- `schedule`: The required execution schedule. For more information, see  .
+- `schedule`: The required execution schedule. For more information, see [`NSManagedObjectContext.ScheduledTaskType`](nsmanagedobjectcontext/scheduledtasktype.md).
 - `block`: The closure to perform.
 
 ## See Also

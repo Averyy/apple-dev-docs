@@ -25,7 +25,7 @@ The origin of the rectangle returned from this method is the first glyph origin.
 ## Parameters
 
 - `size`: The size of the rectangle to draw in.
-- `options`: The string drawing options. See   for the possible values.
+- `options`: The string drawing options. See [`NSStringDrawingOptions`](https://developer.apple.com/documentation/UIKit/NSStringDrawingOptions) for the possible values.
 
 ## See Also
 

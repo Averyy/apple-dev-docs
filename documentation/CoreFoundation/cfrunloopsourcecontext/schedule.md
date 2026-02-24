@@ -22,7 +22,7 @@ var schedule: ((UnsafeMutableRawPointer?, CFRunLoop?, CFRunLoopMode?) -> Void)!
 
 ## Parameters
 
-- `info`: The   member of the   structure that was used when creating the run loop source.
+- `info`: The `info` member of the [`CFRunLoopSourceContext`](cfrunloopsourcecontext.md) structure that was used when creating the run loop source.
 - `rl`: The run loop in which the source is being scheduled.
 - `mode`: The run loop mode in which the source is being scheduled.
 

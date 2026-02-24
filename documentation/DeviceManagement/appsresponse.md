@@ -15,6 +15,10 @@ A response that contains the resource objects for the request.
 object AppsResponse
 ```
 
+## Properties
+
+- `data` ([Apps]) *(required)*
+
 ## See Also
 
 - [object UnauthorizedResponse](unauthorizedresponse.md)

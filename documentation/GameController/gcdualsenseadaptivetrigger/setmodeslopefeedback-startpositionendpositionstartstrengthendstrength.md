@@ -21,10 +21,10 @@ func setModeSlopeFeedback(startPosition: Float, endPosition: Float, startStrengt
 
 ## Parameters
 
-- `startPosition`: The effect’s start position, which is a value between   and   , where   is the minimum and   is the maximum trigger tilt.
-- `endPosition`: The effect’s end position, which is a value between   and   , where   is the minimum and   is the maximum trigger tilt. This value must be greater than  .
-- `startStrength`: The effect’s start strength, which is a value between   and  , where   is the minimum or off value, and   is the maximum strength.
-- `endStrength`: The effect’s end strength, which is a value between   and  , where   is the minimum or off value, and   is the maximum strength.
+- `startPosition`: The effect’s start position, which is a value between `0` and `1` , where `0` is the minimum and `1` is the maximum trigger tilt.
+- `endPosition`: The effect’s end position, which is a value between `0` and `1` , where `0` is the minimum and `1` is the maximum trigger tilt. This value must be greater than `startPosition`.
+- `startStrength`: The effect’s start strength, which is a value between `0` and `1`, where `0` is the minimum or off value, and `1` is the maximum strength.
+- `endStrength`: The effect’s end strength, which is a value between `0` and `1`, where `0` is the minimum or off value, and `1` is the maximum strength.
 
 ## See Also
 

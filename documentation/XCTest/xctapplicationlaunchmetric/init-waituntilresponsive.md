@@ -22,7 +22,7 @@ init(waitUntilResponsive: Bool)
 
 ## Parameters
 
-- `waitUntilResponsive`: If  , the metric tracks time until the app has displayed its first frame and completed all extended launch tasks that   starts.
+- `waitUntilResponsive`: A Boolean that enables the metric to track time until the main thread is responsive after displaying the first frame. If `false`, the metric tracks time until the app has displayed its first frame and completed all extended launch tasks that [`extendLaunchMeasurement(forTaskID:)`](https://developer.apple.com/documentation/MetricKit/MXMetricManager/extendLaunchMeasurement(forTaskID:)) starts.
 
 ## See Also
 

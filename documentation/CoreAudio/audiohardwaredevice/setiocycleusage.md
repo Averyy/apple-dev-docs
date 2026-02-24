@@ -17,7 +17,7 @@ func setIOCycleUsage(_ usage: Float) throws
 
 ## Parameters
 
-- `usage`: A Float whose range is from 0 to 1. This value indicates how much of   the client portion of the IO cycle the process will use.
+- `usage`: A Float whose range is from 0 to 1. This value indicates how much of the client portion of the IO cycle the process will use.
 
 
 ---

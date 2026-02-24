@@ -103,7 +103,7 @@ buffer.withUnsafeRegionOfInterest(roi) { buf in
 ## Parameters
 
 - `regionOfInterest`: The region of interest.
-- `body`: A closure with a   parameter that references the region of interest.
+- `body`: A closure with a [`vImage.PixelBuffer`](vimage/pixelbuffer.md) parameter that references the region of interest.
 
 
 ---

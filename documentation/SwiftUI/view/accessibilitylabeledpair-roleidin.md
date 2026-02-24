@@ -27,9 +27,9 @@ Use `accessibilityLabeledPair` with a role of `AccessibilityLabeledPairRole.labe
 
 ## Parameters
 
-- `role`: Determines whether this element should be used as the label   in the pair, or the content in the pair.
-- `id`: The identifier for the label / content pair. Elements with   matching identifiers within the same namespace will be paired   together.
-- `namespace`: The namespace used to organize label and content. Label   and content under the same namespace with matching identifiers will   be paired together.
+- `role`: Determines whether this element should be used as the label in the pair, or the content in the pair.
+- `id`: The identifier for the label / content pair. Elements with matching identifiers within the same namespace will be paired together.
+- `namespace`: The namespace used to organize label and content. Label and content under the same namespace with matching identifiers will be paired together.
 
 ## See Also
 

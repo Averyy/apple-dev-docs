@@ -29,7 +29,7 @@ The player looper doesn’t use the player item you specify for playback, and in
 
 - `player`: A queue player to control playback.
 - `itemToLoop`: A player item to loop.
-- `loopRange`: The player item time range to loop. Passing a value of   is equivalent to a time range of [0, player item’s duration].
+- `loopRange`: The player item time range to loop. Passing a value of [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange/invalid) is equivalent to a time range of [0, player item’s duration].
 - `itemOrdering`: A value that indicates whether the looper inserts replica items before or after existing items in the specified queue player.
 
 ## Topics

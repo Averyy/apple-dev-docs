@@ -20,7 +20,7 @@ init(checkpoint: MLCheckpoint) throws
 
 ## Parameters
 
-- `checkpoint`: An   instance from a hand pose training session.
+- `checkpoint`: An [`MLCheckpoint`](mlcheckpoint.md) instance from a hand pose training session.
 
 
 ---

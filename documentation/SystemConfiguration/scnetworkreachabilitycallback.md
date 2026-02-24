@@ -22,7 +22,7 @@ typealias SCNetworkReachabilityCallBack = (SCNetworkReachability, SCNetworkReach
 ## Parameters
 
 - `target`: The network target being monitored for changes.
-- `flags`: The flags representing the reachability status of the network address or name (see   for information about these flags).
+- `flags`: The flags representing the reachability status of the network address or name (see [`SCNetworkReachabilityFlags`](scnetworkreachabilityflags.md) for information about these flags).
 - `info`: A C pointer to a user-specified block of data.
 
 

@@ -6,7 +6,7 @@ Automatically build, test, and distribute your apps with Xcode Cloud to verify c
 
 #### Overview
 
-Xcode Cloud lets you adopt  (CI/CD), a standard software development practice that helps you develop and maintain your code and deliver apps to testers and users. Xcode Cloud is a CI/CD system that combines the tools you use to create apps and frameworks for Apple platforms: [`Xcode`](https://developer.apple.comhttps://developer.apple.com/xcode/), [`TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/), and [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com).
+Xcode Cloud lets you adopt *continuous integration and delivery* (CI/CD), a standard software development practice that helps you develop and maintain your code and deliver apps to testers and users. Xcode Cloud is a CI/CD system that combines the tools you use to create apps and frameworks for Apple platforms: [`Xcode`](https://developer.apple.comhttps://developer.apple.com/xcode/), [`TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/), and [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com).
 
 ![A conceptual illustration that shows how Xcode Cloud builds a project and distributes an app to all kinds of devices.](https://docs-assets.developer.apple.com/published/83d5c07a9e6a7ebcf6780c5e25d0947a/Xcode-Cloud-Hero%402x.png)
 

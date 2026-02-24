@@ -24,8 +24,8 @@ The point converted to the coordinate system of the current window.
 
 ## Parameters
 
-- `point`: A point specifying a location in the coordinate system of  .
-- `window`: The source window containing the specified  . Specify   to convert the point from the logical coordinate system of the screen, which is measured in points.
+- `point`: A point specifying a location in the coordinate system of `window`.
+- `window`: The source window containing the specified `point`. Specify `nil` to convert the point from the logical coordinate system of the screen, which is measured in points.
 
 ## See Also
 

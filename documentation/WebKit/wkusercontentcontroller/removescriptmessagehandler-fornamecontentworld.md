@@ -21,7 +21,7 @@ func removeScriptMessageHandler(forName name: String, contentWorld: WKContentWor
 ## Parameters
 
 - `name`: The name of the message handler to remove. If no message handler with this name exists in the user content controller, this method does nothing.
-- `contentWorld`: The content world from which to remove the message handler. For more information about content worlds, see  .
+- `contentWorld`: The content world from which to remove the message handler. For more information about content worlds, see [`WKContentWorld`](wkcontentworld.md).
 
 ## See Also
 

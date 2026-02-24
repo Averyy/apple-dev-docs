@@ -34,7 +34,7 @@ If another seek request is already in progress when you call this method, the co
 ## Parameters
 
 - `date`: The time to which to seek.
-- `completionHandler`: The block to invoke when the seek operation has either been completed or been interrupted. The block takes one argument:
+- `completionHandler`: The block to invoke when the seek operation has either been completed or been interrupted. The block takes one argument: - **finished**: Indicates whether the seek operation completed.
 
 ## See Also
 

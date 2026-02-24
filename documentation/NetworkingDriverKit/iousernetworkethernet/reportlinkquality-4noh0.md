@@ -24,7 +24,7 @@ Call this method to make the system aware of changes in the quality of the link 
 
 ## Parameters
 
-- `linkQuality`: The quality of the link between your driver and the device. For a list of possible values, see the constants in  .
+- `linkQuality`: The quality of the link between your driver and the device. For a list of possible values, see the constants in [`IOUserNetworkLinkQuality`](iousernetworklinkquality.md).
 
 ## See Also
 

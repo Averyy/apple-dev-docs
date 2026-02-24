@@ -57,7 +57,7 @@ If the model’s `suggestedVenues` begins as an empty array, the interface doesn
 
 ## Parameters
 
-- `suggestions`: A view builder that produces content that   populates a list of suggestions.
+- `suggestions`: A view builder that produces content that populates a list of suggestions.
 
 ## See Also
 

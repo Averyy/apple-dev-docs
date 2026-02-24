@@ -9,6 +9,10 @@ The contexts that an iMessage app or sticker pack supports.
 - iOS 12.0+
 - iPadOS 12.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [IDMessageFilterExtensionNetworkURL](information-property-list/nsextension/nsextensionattributes/idmessagefilterextensionnetworkurl.md)

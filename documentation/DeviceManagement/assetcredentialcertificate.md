@@ -47,6 +47,11 @@ Specify `com.apple.asset.credential.certificate` as the declaration type.
 - [object AssetCredentialCertificateReferenceObject](assetcredentialcertificatereferenceobject.md)
   The external reference for an asset-credential certificate.
 
+## Properties
+
+- `Authentication` (AssetCredentialCertificateAuthenticationObject): The server authentication details.
+- `Reference` (AssetCredentialCertificateReferenceObject) *(required)*: The external reference. Ensure that the asset data uses a media type of `application/pkcs1` or `application/pem` to correctly identify the type of encoded certificate. If the asset data includes a `ContentType` sub-key, set it to the corresponding media type.
+
 ## See Also
 
 - [object AssetCredentialACME](assetcredentialacme.md)

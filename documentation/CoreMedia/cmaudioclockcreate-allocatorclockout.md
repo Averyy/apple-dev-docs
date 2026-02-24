@@ -31,7 +31,7 @@ You can use this clock as the [`sourceClock`](https://developer.apple.com/docume
 
 ## Parameters
 
-- `allocator`: Allocator for the new clock; pass   or   to use the default allocator.
+- `allocator`: Allocator for the new clock; pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) or `nil` to use the default allocator.
 - `clockOut`: Upon return, a pointer to the newly created clock.
 
 ## See Also

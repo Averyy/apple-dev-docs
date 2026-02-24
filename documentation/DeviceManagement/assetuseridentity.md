@@ -37,6 +37,11 @@ Specify `com.apple.asset.useridentity` as the declaration type.
 }
 ```
 
+## Properties
+
+- `EmailAddress` (string): The email address of the user.
+- `FullName` (string): The user’s full name.
+
 ## See Also
 
 - [object AssetCredentialACME](assetcredentialacme.md)

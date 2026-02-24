@@ -20,11 +20,15 @@ var attenuationDurationThresholds: [NSNumber] { get set }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.6 and later.
 
-Signal attenuation and duration are measurable aspects of exposure risk. Set threshold values to configure the degree to which the signal loss between two devices for a specific duration signifies a potential exposure. Four categories are described in [`ENExposureConfiguration`](enexposureconfiguration.md): , , , and .
+Signal attenuation and duration are measurable aspects of exposure risk. Set threshold values to configure the degree to which the signal loss between two devices for a specific duration signifies a potential exposure. Four categories are described in [`ENExposureConfiguration`](enexposureconfiguration.md): *immediate*, *near*, *medium*, and *other*.
 
 ![Illustration showing the immediate attenuation threshold atop the immediate and near categories, the near attenuation threshold atop the near and medium categories, and the medium attenuation threshold atop the medium and other categories.](https://docs-assets.developer.apple.com/published/bb22dd39361dd13e579f70e52b2780b9/media-3699755%402x.png)
 
 The following entries in the `attenuationDurationThresholds` array correspond to three thresholds for the four categories:
+
+- **`attenuationDurationThresholds[0]`**: The immediate duration threshold. The framework sums the duration of exposures for which the attenuation is less than or equal to `attenuationDurationThresholds[0]`. The default value is `50`.
+- **`attenuationDurationThresholds[1]`**: The near attenuation threshold. The framework sums the duration of exposures for which the attenuation is greater than `attenuationDurationThresholds[0]` and less than or equal to `attenuationDurationThresholds[1]`. The default value is `70`.
+- **`attenuationDurationThresholds[2]`**: The medium attenuation threshold. The framework sums the duration of exposures for which the attenuation is greater than `attenuationDurationThresholds[1]` and less than or equal to `attenuationDurationThresholds[2]`. The default value is `90`.
 
 Attenuation values greater than `attenuationDurationThresholds[2]` accumulate into the “other” category.
 

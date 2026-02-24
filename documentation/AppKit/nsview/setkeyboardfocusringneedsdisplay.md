@@ -16,7 +16,7 @@ func setKeyboardFocusRingNeedsDisplay(_ rect: NSRect)
 
 ## Parameters
 
-- `rect`: The rectangle of the control or cell defining the area around the focus ring.   will be expanded to include the focus ring for invalidation.
+- `rect`: The rectangle of the control or cell defining the area around the focus ring. `rect` will be expanded to include the focus ring for invalidation.
 
 ## See Also
 

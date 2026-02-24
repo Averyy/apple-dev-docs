@@ -22,10 +22,10 @@ func drawMeshThreadgroups(indirectBuffer: any MTLBuffer, indirectBufferOffset: I
 
 ## Parameters
 
-- `indirectBuffer`: An   instance with data that matches the layout of the   structure.
-- `indirectBufferOffset`: See the   to check for offset alignment requirements for buffers in   and   address space.
-- `threadsPerObjectThreadgroup`: An   instance that represents the number of threads in an object shader threadgroup, if applicable.
-- `threadsPerMeshThreadgroup`: An   instance that represents the number of threads in a mesh shader threadgroup.
+- `indirectBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance with data that matches the layout of the [`MTLDispatchThreadgroupsIndirectArguments`](mtldispatchthreadgroupsindirectarguments.md) structure.
+- `indirectBufferOffset`: An integer that represents the location, in bytes, from the start of `indirectBuffer` where the indirect arguments structure begins. See the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) to check for offset alignment requirements for buffers in `device` and `constant` address space.
+- `threadsPerObjectThreadgroup`: An [`MTLSize`](mtlsize.md) instance that represents the number of threads in an object shader threadgroup, if applicable.
+- `threadsPerMeshThreadgroup`: An [`MTLSize`](mtlsize.md) instance that represents the number of threads in a mesh shader threadgroup.
 
 ## See Also
 

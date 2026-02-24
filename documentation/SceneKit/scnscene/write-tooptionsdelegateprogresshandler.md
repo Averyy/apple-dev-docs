@@ -37,9 +37,9 @@ If the scene references external resources, such as image files used in material
 
 ## Parameters
 
-- `url`: The URL to write the scene file to. This URL must use the   scheme.
-- `options`: A dictionary of options affecting scene loading, or   for default options. For available keys, see Scene Loading Options.
-- `delegate`: A delegate object to customize export of external resources used by the scene. Pass   for default export of external resources.
+- `url`: The URL to write the scene file to. This URL must use the `file` scheme.
+- `options`: A dictionary of options affecting scene loading, or `nil` for default options. For available keys, see Scene Loading Options.
+- `delegate`: A delegate object to customize export of external resources used by the scene. Pass `nil` for default export of external resources.
 - `progressHandler`: A block that SceneKit calls repeatedly to report progress of the export operation.
 
 ## See Also

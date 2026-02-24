@@ -20,8 +20,8 @@ kern_return_t RemoveControlValueDescriptions(const IOUserAudioSelectorValueDescr
 
 ## Parameters
 
-- `in_value_descriptions`: An array of   values to remove as the value descriptions for the selector.
-- `in_num_value_descriptions`: The number of descriptions in  .
+- `in_value_descriptions`: An array of [`IOUserAudioSelectorValueDescription`](iouseraudioselectorvaluedescription.md) values to remove as the value descriptions for the selector.
+- `in_num_value_descriptions`: The number of descriptions in `in_value_descriptions`.
 
 ## See Also
 

@@ -26,6 +26,8 @@ Returns a vector of floating-point values, each of which is the result of roundi
 
 ##### Parameters
 
+- **A**: The input vector.
+
 ## See Also
 
 - [func vceilf(vFloat) -> vFloat](vceilf(_:).md)

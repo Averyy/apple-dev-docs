@@ -20,7 +20,7 @@ init(largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput? = nil
 
 ## Parameters
 
-- `largeBlob`: Input for the WebAuthn   extension.
+- `largeBlob`: Input for the WebAuthn `largeBlob` extension.
 - `prf`: Input for the WebAuthn PRF extension.
 
 ## See Also

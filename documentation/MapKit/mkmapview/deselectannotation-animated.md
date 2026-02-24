@@ -22,7 +22,7 @@ func deselectAnnotation(_ annotation: (any MKAnnotation)?, animated: Bool)
 ## Parameters
 
 - `annotation`: The annotation object to deselect.
-- `animated`: If  , the map view animates the callout view offscreen.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), the map view animates the callout view offscreen.
 
 ## See Also
 

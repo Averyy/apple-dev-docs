@@ -27,8 +27,8 @@ You can add zero or more attachments to a message before you display the message
 
 ## Parameters
 
-- `attachmentURL`: The file URL for the attachment. Must not be  .
-- `alternateFilename`: OK to use a   value, in which case the attachment’s actual filename is displayed in the message UI.
+- `attachmentURL`: The file URL for the attachment. Must not be `nil`.
+- `alternateFilename`: If you supply a string here, the message UI uses it for the attachment. Use an alternate filename to better describe the attachment or to make the name more readable. OK to use a `nil` value, in which case the attachment’s actual filename is displayed in the message UI.
 
 ## See Also
 

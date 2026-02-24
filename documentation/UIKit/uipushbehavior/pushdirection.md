@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: property
 
-The direction of the force vector for the behavior, expressed as  and  components and using standard UIKit geometry.
+The direction of the force vector for the behavior, expressed as *x* and *y* components and using standard UIKit geometry.
 
 **Availability**:
 - iOS 7.0+
@@ -24,7 +24,7 @@ The default `x` and `y` values of the push direction vector are each `0.0`. A va
 
 Setting either direction component to a negative value reverses the direction of force for the component.
 
-Whether you express a push behavior’s push direction in terms of ,  components or with an angle (by using the [`angle`](uipushbehavior/angle.md) property), the alternate, equivalent value updates automatically.
+Whether you express a push behavior’s push direction in terms of *x*, *y* components or with an angle (by using the [`angle`](uipushbehavior/angle.md) property), the alternate, equivalent value updates automatically.
 
 ## See Also
 

@@ -24,18 +24,20 @@ var convergenceTest: SparseLSMRConvergenceTest_t
 
 For [`SparseLSMRCTDefault`](sparselsmrctdefault.md), iterations stop when:
 
+- *‖ Aᵀ(b-Ax) ‖₂ < [`rtol`](sparselsmroptions/rtol.md) * ‖ Aᵀ(b-Ax_₀) ‖₂ + [`atol`](sparselsmroptions/atol.md)*
+
 For [`SparseLSMRCTFongSaunders`](sparselsmrctfongsaunders.md), iterations stop when any of the following occur:
 
--     ( is an estimate)
--              ( is an estimate)
-- Estimated condition of 
+- *‖ b-Ax ‖₂ < [`btol`](sparselsmroptions/btol.md) * ‖ b ‖₂ + [`atol`](sparselsmroptions/atol.md) * ‖ A ‖₂ ‖ x ‖₂*    (*‖A‖₂* is an estimate)
+- *‖ Aᵀ (b-Ax) ‖₂ < [`atol`](sparselsmroptions/atol.md) * ‖ A ‖₂ * ‖ A-bx ‖₂*             (*‖A‖₂* is an estimate)
+- Estimated condition of *matrix >= [`conditionLimit`](sparselsmroptions/conditionlimit.md)*
 
 ## See Also
 
 - [var atol: Double](sparselsmroptions/atol.md)
-  The absolute tolerance (default test) or  tolerance (Fong-Saunders test).
+  The absolute tolerance (default test) or *A* tolerance (Fong-Saunders test).
 - [var btol: Double](sparselsmroptions/btol.md)
-  The  tolerance (Fong-Saunders test only).
+  The *B* tolerance (Fong-Saunders test only).
 - [var conditionLimit: Double](sparselsmroptions/conditionlimit.md)
   The condition number limit (Fong-Saunders test only).
 - [struct SparseLSMRConvergenceTest_t](sparselsmrconvergencetest_t.md)

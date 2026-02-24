@@ -36,7 +36,7 @@ Loading an [`Entity`](entity.md) with this method blocks the main actor because 
 ## Parameters
 
 - `name`: The base name of the file to load, omitting the filename extension.
-- `bundle`: The bundle containing the file. Use   to search the app’s   main bundle.
+- `bundle`: The bundle containing the file. Use `nil` to search the app’s main bundle.
 
 ## See Also
 

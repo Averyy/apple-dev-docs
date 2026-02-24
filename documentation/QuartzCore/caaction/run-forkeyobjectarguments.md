@@ -22,9 +22,9 @@ func run(forKey event: String, object anObject: Any, arguments dict: [AnyHashabl
 
 ## Parameters
 
-- `event`: The identifier of the action. The identifier may be a key or key path relative to  , an arbitrary external action, or one of the action identifiers defined in  .
+- `event`: The identifier of the action. The identifier may be a key or key path relative to `anObject`, an arbitrary external action, or one of the action identifiers defined in [`CALayer`](calayer.md).
 - `anObject`: The layer on which the action should occur.
-- `dict`: A dictionary containing parameters associated with this event. May be  .
+- `dict`: A dictionary containing parameters associated with this event. May be `nil`.
 
 ## See Also
 

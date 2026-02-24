@@ -20,7 +20,7 @@ The certificate details can be shown or hidden depending on whether the user cli
 
 ## Parameters
 
-- `disclosed`: Pass   to open the disclosure triangle and disclose the view, or   to close it and hide the view.
+- `disclosed`: Pass [`true`](https://developer.apple.com/documentation/Swift/true) to open the disclosure triangle and disclose the view, or [`false`](https://developer.apple.com/documentation/Swift/false) to close it and hide the view.
 
 ## See Also
 

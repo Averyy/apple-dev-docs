@@ -29,8 +29,8 @@ For an example of an implementation of this method, see [`Using Text Kit to Draw
 
 ## Parameters
 
-- `position`: A custom   object that represents a location in a document.
-- `offset`: A character offset from  . It can be a positive or negative value.
+- `position`: A custom [`UITextPosition`](uitextposition.md) object that represents a location in a document.
+- `offset`: A character offset from `position`. It can be a positive or negative value.
 
 ## See Also
 

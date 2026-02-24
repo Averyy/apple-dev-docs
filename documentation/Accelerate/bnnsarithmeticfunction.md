@@ -77,7 +77,7 @@ struct BNNSArithmeticFunction
   An operation that selects elements from either its second or third input based on the corresponding value of its first input.
 ### Exponential and Logarithmic Functions
 - [var BNNSArithmeticExp: BNNSArithmeticFunction](bnnsarithmeticexp.md)
-  An operation that calculates the element-wise result of  raised to the power of its input.
+  An operation that calculates the element-wise result of *e* raised to the power of its input.
 - [var BNNSArithmeticExp2: BNNSArithmeticFunction](bnnsarithmeticexp2.md)
   An operation that calculates the element-wise result of 2 raised to the power of its input.
 - [var BNNSArithmeticLog: BNNSArithmeticFunction](bnnsarithmeticlog.md)

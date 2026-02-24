@@ -26,7 +26,7 @@ When calculating the new camera position and orientation, this method assumes th
 ## Parameters
 
 - `boundingBox`: The region, in world space coordinates, to be made visible to the camera.
-- `setNearAndFar`: If  , the camera also adjusts its   and   properties to place the specified region entirely within the camera’s viewing frustum. If  , those properties remain unchanged, and the specified region may therefore lie outside the camera’s near and far limits.
+- `setNearAndFar`: If [`true`](https://developer.apple.com/documentation/Swift/true), the camera also adjusts its [`nearVisibilityDistance`](mdlcamera/nearvisibilitydistance.md) and [`farVisibilityDistance`](mdlcamera/farvisibilitydistance.md) properties to place the specified region entirely within the camera’s viewing frustum. If [`false`](https://developer.apple.com/documentation/Swift/false), those properties remain unchanged, and the specified region may therefore lie outside the camera’s near and far limits.
 
 ## See Also
 

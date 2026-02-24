@@ -6,7 +6,7 @@ Metadata that specifies whether an animation plays automatically on load.
 
 #### Overview
 
-Set the [`autoPlay`](autoplay.md) metadata on the document’s , that is, the outermost container for scene description. For more information about setting stage metadata, see [`UsdStage`](https://developer.apple.comhttps://openusd.org/docs/api/class_usd_stage.html) > Stage Metadata.
+Set the [`autoPlay`](autoplay.md) metadata on the document’s *stage*, that is, the outermost container for scene description. For more information about setting stage metadata, see [`UsdStage`](https://developer.apple.comhttps://openusd.org/docs/api/class_usd_stage.html) > Stage Metadata.
 
 Set a value of `true` to play an animation automatically when the scene loads. If this property is `false`, the animation won’t play on load. If an asset omits the `autoPlay` property, the animation plays on load for backward-compatibility.
 

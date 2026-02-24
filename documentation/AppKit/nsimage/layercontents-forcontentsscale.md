@@ -24,7 +24,7 @@ Use this method in situations where you want to use the image as the contents of
 
 ## Parameters
 
-- `layerContentsScale`: The scale factor for the resulting image. Obtain the value for this parameter by calling the   method.
+- `layerContentsScale`: The scale factor for the resulting image. Obtain the value for this parameter by calling the [`recommendedLayerContentsScale(_:)`](nsimage/recommendedlayercontentsscale(_:).md) method.
 
 ## See Also
 

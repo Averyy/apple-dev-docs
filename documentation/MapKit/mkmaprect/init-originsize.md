@@ -22,8 +22,8 @@ init(origin: MKMapPoint, size: MKMapSize)
 
 ## Parameters
 
-- `origin`: The origin of the map rectangle as an  .
-- `size`: The size of the map rectangle as an  .
+- `origin`: The origin of the map rectangle as an [`MKMapPoint`](mkmappoint.md).
+- `size`: The size of the map rectangle as an [`MKMapSize`](mkmapsize.md).
 
 ## See Also
 

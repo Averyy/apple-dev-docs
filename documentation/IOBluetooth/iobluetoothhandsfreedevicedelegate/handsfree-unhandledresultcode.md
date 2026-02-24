@@ -17,7 +17,7 @@ optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, unhandledResultCo
 ## Parameters
 
 - `device`: The connected Bluetooth hands-free phone or headset.
-- `resultCode`: A string containing the result code. The   strings are stripped from the beginning and end.
+- `resultCode`: A string containing the result code. The `“/r/n”` strings are stripped from the beginning and end.
 
 ## See Also
 

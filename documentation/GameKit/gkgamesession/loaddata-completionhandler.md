@@ -21,7 +21,8 @@ func loadData() async throws -> Data
 
 ## Parameters
 
-- `completionHandler`: A block that is called after the game session data has been loaded.
+- `completionHandler`: A block that is called after the game session data has been loaded. - **data**: A `Data` object containing the app’s saved data.
+- **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is nil. See `GameKit Constants` for a list of error codes specific to GameKit.
 
 ## See Also
 

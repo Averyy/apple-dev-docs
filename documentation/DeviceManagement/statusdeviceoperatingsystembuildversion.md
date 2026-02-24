@@ -32,6 +32,10 @@ object StatusDeviceOperatingSystemBuildVersion
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
+## Properties
+
+- `device.operating-system.build-version` (string) *(required)*: The operating system’s build version on the device, such as `18F132`.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

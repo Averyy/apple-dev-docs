@@ -33,7 +33,7 @@ Note that the dictionary of settings is dependent on the current configuration o
 ## Parameters
 
 - `videoCodecType`: The video codec type to write.
-- `outputFileType`: The Uniform Type Identifier of the file type to write. See   for supported types.
+- `outputFileType`: The Uniform Type Identifier of the file type to write. See `File Format UTIs` for supported types.
 
 ## See Also
 

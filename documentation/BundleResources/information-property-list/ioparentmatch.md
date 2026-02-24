@@ -6,6 +6,10 @@
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: object
+
 ## See Also
 
 - [IOPropertyMatch](information-property-list/iopropertymatch.md)

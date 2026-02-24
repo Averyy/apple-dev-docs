@@ -16,7 +16,7 @@ func takeObjectValueFrom(_ sender: Any?)
 
 ## Parameters
 
-- `sender`: The object from which to take the value. This object must support the   property.
+- `sender`: The object from which to take the value. This object must support the [`objectValue`](nscell/objectvalue.md) property.
 
 ## See Also
 

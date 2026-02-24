@@ -14,6 +14,11 @@ A dictionary that specifies an app that can be granted access to the Accessibilt
 object AutonomousSingleAppMode.AllowedApplicationsItem
 ```
 
+## Properties
+
+- `BundleIdentifier` (string) *(required)*: The unique bundle identifier. If two dictionaries contain the same `BundleIdentifier` value but a different `TeamIdentifier` value, an error occurs and the profile won’t be installed.
+- `TeamIdentifier` (string) *(required)*: The developer’s team identifier that the system used when it signed the app.
+
 
 ---
 

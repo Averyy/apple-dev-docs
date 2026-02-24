@@ -21,9 +21,9 @@ The created session.
 
 ## Parameters
 
-- `allocator`: The memory allocator to use. If  , the default allocator is used.
+- `allocator`: The memory allocator to use. If `NULL`, the default allocator is used.
 - `options`: A dictionary of options to associate with the session.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

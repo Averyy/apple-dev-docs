@@ -26,7 +26,7 @@ This initializer has the same behavior as the [`init(wrappedValue:)`](state/init
 
 ## Parameters
 
-- `value`: An initial value to store in the state   property.
+- `value`: An initial value to store in the state property.
 
 ## See Also
 

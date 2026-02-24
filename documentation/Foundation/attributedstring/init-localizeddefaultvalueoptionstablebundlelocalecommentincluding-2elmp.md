@@ -26,12 +26,12 @@ Use this initializer instead of [`init(localized:options:table:bundle:locale:com
 
 ## Parameters
 
-- `key`: The key for a string in the table that   identifies.
-- `defaultValue`: The localized string for the development locale. For other locales, the string uses this value if a localized string for   isn’t found in the table.
+- `key`: The key for a string in the table that `table` identifies.
+- `defaultValue`: The localized string for the development locale. For other locales, the string uses this value if a localized string for `key` isn’t found in the table.
 - `options`: Options that affect the handling of attributes.
-- `table`: The bundle’s string table to search. If   is   or is an empty string, the method attempts to use the table in  . The default is  .
-- `bundle`: The bundle to use for looking up strings. If  , an app searches its main bundle. The default is  .
-- `locale`: The locale of the localized string to retrieve. If  , this initializer uses the current locale. The default is  .
+- `table`: The bundle’s string table to search. If `table` is `nil` or is an empty string, the method attempts to use the table in `Localizable.strings`. The default is `nil`.
+- `bundle`: The bundle to use for looking up strings. If `nil`, an app searches its main bundle. The default is `nil`.
+- `locale`: The locale of the localized string to retrieve. If `nil`, this initializer uses the current locale. The default is `nil`.
 - `comment`: The comment to place above the key-value pair in the strings file. This parameter provides the translator with some context about the localized string’s presentation to the user.
 - `scope`: An attribute scope to associate with the attributed string.
 

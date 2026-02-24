@@ -52,7 +52,7 @@ struct Opacity: View {
 
 ## Parameters
 
-- `opacity`: A value between 0 (fully transparent) and 1 (fully   opaque).
+- `opacity`: A value between 0 (fully transparent) and 1 (fully opaque).
 
 ## See Also
 

@@ -68,7 +68,7 @@ There are some transient errors that the sync engine handles automatically behin
 
 When the sync engine encounters one of these errors, it waits for the system to be in a good state, and tries again. For example, if the server sends back a [`CKError.Code.requestRateLimited`](ckerror/code/requestratelimited.md) error, the sync engine respects this throttle and tries again after the error’s retry-after time.
 
-`CKSyncEngine` does  handle errors that require application-specific logic. For example, if you try to save a record and get a [`CKError.Code.serverRecordChanged`](ckerror/code/serverrecordchanged.md), you need to handle that error yourself. There are plenty of errors that the sync engine cannot handle on your behalf, see [`CKError`](ckerror.md) for a list of all the possible errors.
+`CKSyncEngine` does *not* handle errors that require application-specific logic. For example, if you try to save a record and get a [`CKError.Code.serverRecordChanged`](ckerror/code/serverrecordchanged.md), you need to handle that error yourself. There are plenty of errors that the sync engine cannot handle on your behalf, see [`CKError`](ckerror.md) for a list of all the possible errors.
 
 ##### Accounts
 

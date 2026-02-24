@@ -18,7 +18,7 @@ static func predicate(availableSince startDate: Date, until endDate: Date? = nil
 ## Parameters
 
 - `startDate`: The date to start collecting account balances.
-- `endDate`: The date to end collection account balances. This parameter is optional. If this parameter isn’t included, the method returns all account balances since the  .
+- `endDate`: The date to end collection account balances. This parameter is optional. If this parameter isn’t included, the method returns all account balances since the `startDate`.
 
 ## See Also
 

@@ -26,7 +26,7 @@ The map coordinate at the specified point.
 ## Parameters
 
 - `point`: The point you want to convert.
-- `view`: The view that serves as the reference coordinate system for the   parameter.
+- `view`: The view that serves as the reference coordinate system for the `point` parameter.
 
 ## See Also
 

@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: property
 
-The  value in the conversion matrix.
+The *B_Yp* value in the conversion matrix.
 
 **Availability**:
 - iOS ?+
@@ -23,19 +23,19 @@ var B_Yp: Float
 ## See Also
 
 - [var R_Yp: Float](vimage_argbtoypcbcrmatrix/r_yp.md)
-  The  value in the conversion matrix.
+  The *R_Yp* value in the conversion matrix.
 - [var G_Yp: Float](vimage_argbtoypcbcrmatrix/g_yp.md)
-  The  value in the conversion matrix.
+  The *G_Yp* value in the conversion matrix.
 - [var R_Cb: Float](vimage_argbtoypcbcrmatrix/r_cb.md)
-  The  value in the conversion matrix.
+  The *R_Cb* value in the conversion matrix.
 - [var G_Cb: Float](vimage_argbtoypcbcrmatrix/g_cb.md)
-  The  value in the conversion matrix.
+  The *G_Cb* value in the conversion matrix.
 - [var B_Cb_R_Cr: Float](vimage_argbtoypcbcrmatrix/b_cb_r_cr.md)
-  The  value in the conversion matrix.
+  The *B_Cb_R_Cr* value in the conversion matrix.
 - [var G_Cr: Float](vimage_argbtoypcbcrmatrix/g_cr.md)
-  The  value in the conversion matrix.
+  The *G_Cr* value in the conversion matrix.
 - [var B_Cr: Float](vimage_argbtoypcbcrmatrix/b_cr.md)
-  The  value in the conversion matrix.
+  The *B_Cr* value in the conversion matrix.
 
 
 ---

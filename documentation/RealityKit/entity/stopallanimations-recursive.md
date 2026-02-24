@@ -22,7 +22,7 @@ Stops all playing of animations on this entity.
 
 ## Parameters
 
-- `recursive`: Indicates whether to also stop animations on all   descendants of the entity.
+- `recursive`: Indicates whether to also stop animations on all descendants of the entity.
 
 ## See Also
 

@@ -23,7 +23,7 @@ class func setValueTransformer(_ transformer: ValueTransformer?, forName name: N
 ## Parameters
 
 - `transformer`: The transformer to register.
-- `name`: The name for  .
+- `name`: The name for `transformer`.
 
 ## See Also
 

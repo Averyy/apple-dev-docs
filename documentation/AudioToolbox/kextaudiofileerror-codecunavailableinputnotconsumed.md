@@ -3,7 +3,7 @@
 **Framework**: Audio Toolbox  
 **Kind**: var
 
-The [`ExtAudioFileWrite(_:_:_:)`](extaudiofilewrite(_:_:_:).md) function was interrupted and the last buffer that you provided was  successfully written to disk.
+The [`ExtAudioFileWrite(_:_:_:)`](extaudiofilewrite(_:_:_:).md) function was interrupted and the last buffer that you provided was *not* successfully written to disk.
 
 **Availability**:
 - iOS ?+

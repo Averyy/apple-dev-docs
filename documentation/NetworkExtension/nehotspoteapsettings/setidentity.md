@@ -27,7 +27,7 @@ Your app must store `SecIdentity` in the keychain access group $`(Team​Identif
 
 ## Parameters
 
-- `identity`: The EAP peer identity, a   object that contains a   object and an associated   object.
+- `identity`: The EAP peer identity, a `SecIdentityRef` object that contains a `SecKeyRef` object and an associated `SecCertificateRef` object.
 
 ## See Also
 

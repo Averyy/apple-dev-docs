@@ -22,7 +22,7 @@ This method ignores names that don’t correspond to monitored activities.
 
 ## Parameters
 
-- `activities`: The names of the activities. If the array is empty or no   are explicitly specified,   this method stops monitoring all activities.
+- `activities`: The names of the activities. If the array is empty or no `activities` are explicitly specified, this method stops monitoring all activities.
 
 ## See Also
 

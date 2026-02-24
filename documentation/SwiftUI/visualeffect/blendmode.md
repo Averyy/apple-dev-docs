@@ -30,7 +30,7 @@ Use `blendMode(_:)` to combine overlapping views and use a different visual effe
 
 ## Parameters
 
-- `blendMode`: The   for compositing.
+- `blendMode`: The [`BlendMode`](blendmode.md) for compositing.
 
 
 ---

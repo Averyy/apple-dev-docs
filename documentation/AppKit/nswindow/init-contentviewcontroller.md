@@ -24,7 +24,7 @@ This method creates a basic window object that is titled, closable, resizable, a
 
 ## Parameters
 
-- `contentViewController`: The view controller that provides the main content view for the window. The window’s   property is set to  .
+- `contentViewController`: The view controller that provides the main content view for the window. The window’s [`contentView`](nswindow/contentview.md) property is set to `contentViewController``.view`.
 
 ## See Also
 

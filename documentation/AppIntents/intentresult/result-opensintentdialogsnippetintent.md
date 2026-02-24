@@ -22,7 +22,7 @@ static func result(opensIntent: some AppIntent, dialog: IntentDialog, snippetInt
 
 ## Parameters
 
-- `opensIntent`: An app intent to open the originating app and show the   intent’s result.
+- `opensIntent`: An app intent to open the originating app and show the intent’s result.
 - `dialog`: A custom success dialog
 - `snippetIntent`: The intent responsible for presenting a snippet for this result
 

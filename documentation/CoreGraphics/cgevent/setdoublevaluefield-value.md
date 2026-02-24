@@ -23,7 +23,7 @@ In cases where the field’s value is represented within the event by a fixed po
 
 ## Parameters
 
-- `field`: A field in the specified event. Pass one of the constants listed in  .
+- `field`: A field in the specified event. Pass one of the constants listed in [`CGEventField`](cgeventfield.md).
 - `value`: The new value of the specified field.
 
 ## See Also

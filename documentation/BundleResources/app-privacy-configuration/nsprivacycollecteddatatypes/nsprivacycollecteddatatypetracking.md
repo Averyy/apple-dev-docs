@@ -18,6 +18,10 @@ A Boolean that indicates whether your app or third-party SDK uses this data type
 
 - [Describing data use in privacy manifests](describing-data-use-in-privacy-manifests.md)
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [NSPrivacyCollectedDataTypeLinked](app-privacy-configuration/nsprivacycollecteddatatypes/nsprivacycollecteddatatypelinked.md)

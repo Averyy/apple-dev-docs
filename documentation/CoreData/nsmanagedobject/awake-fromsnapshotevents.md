@@ -30,7 +30,7 @@ If you want to set attribute values and need to avoid emitting key-value observa
 
 ## Parameters
 
-- `flags`: For possible values, see  .
+- `flags`: A bit mask of [`didChangeValue(forKey:)`](nsmanagedobject/didchangevalue(forkey:).md) constants to denote the event or events that led to the method being invoked. For possible values, see [`NSSnapshotEventType`](nssnapshoteventtype.md).
 
 ## See Also
 

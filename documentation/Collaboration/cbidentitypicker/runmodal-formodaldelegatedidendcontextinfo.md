@@ -29,7 +29,7 @@ where the `identityPicker` argument is the identity picker object, the `returnCo
 - `window`: The parent window for the sheet.
 - `delegate`: The delegate for the modal session.
 - `didEndSelector`: A message sent to the delegate after the user responds but before the sheet is dismissed.
-- `contextInfo`: Contextual data passed to the delegate in the   message.
+- `contextInfo`: Contextual data passed to the delegate in the `didEndSelector` message.
 
 ## See Also
 

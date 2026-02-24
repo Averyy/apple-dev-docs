@@ -34,8 +34,8 @@ Create a sparse matrix object that is stored in block-entry format and is ready 
 
 - `Mb`: The number of rows in terms of blocks of the matrix.  Must be greater than 0.
 - `Nb`: The number of columns in terms of blocks of the matrix.  Must be greater than 0.
-- `K`: Array containing row dimensions of the blocks.  The  ’th row in terms of blocks will have a dimension  .   is expected to hold   elements. All values of   are expected to be greater than 0.
-- `L`: Array containing column dimensions of the blocks.  The  ’th column in terms of blocks will have a dimension  .   is expected to hold Nb elements. All values of   are expected to be greater than 0.
+- `K`: Array containing row dimensions of the blocks.  The `i`’th row in terms of blocks will have a dimension `K[i]`. `K` is expected to hold `Mb` elements. All values of `K` are expected to be greater than 0.
+- `L`: Array containing column dimensions of the blocks.  The `j`’th column in terms of blocks will have a dimension `L[j]`. `L` is expected to hold Nb elements. All values of `L` are expected to be greater than 0.
 
 ## See Also
 

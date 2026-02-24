@@ -23,7 +23,7 @@ Image representing the visible cells identified by rowIndexes.
 - `rowIndexes`: Rows the user is dragging.
 - `column`: Column with the rows the user is dragging.
 - `event`: Mouse drag event.
-- `dragImageOffset`: Offset for the returned image:
+- `dragImageOffset`: Offset for the returned image: - [`NSZeroPoint`](https://developer.apple.com/documentation/Foundation/NSZeroPoint): The image is centered under the pointer.
 
 ## See Also
 

@@ -28,8 +28,8 @@ An item in the data source in the specified table column of the view.
 ## Parameters
 
 - `tableView`: The table view that sent the message.
-- `tableColumn`: A column in  .
-- `row`: The row of the item in  .
+- `tableColumn`: A column in `aTableView`.
+- `row`: The row of the item in `aTableColumn`.
 
 ## See Also
 

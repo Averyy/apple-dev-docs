@@ -20,7 +20,7 @@ Call this method before accessing the Font panel in any way, such as in your app
 
 ## Parameters
 
-- `factoryId`: The new font panel factory class, which should be a subclass of  .
+- `factoryId`: The new font panel factory class, which should be a subclass of `NSFontPanel`.
 
 ## See Also
 

@@ -30,7 +30,7 @@ Use [`combineLatest(_:_:)`](publisher/combinelatest(_:_:)-5crqg.md) when you wan
 
 > 💡 **Tip**: The combined publisher doesn’t produce elements until each of its upstream publishers publishes at least one element.
 
-The combined publisher passes through any requests to  upstream publishers. However, it still obeys the demand-fulfilling rule of only sending the request amount downstream. If the demand isn’t [`unlimited`](subscribers/demand/unlimited.md), it drops values from upstream publishers. It implements this by using a buffer size of 1 for each upstream, and holds the most-recent value in each buffer.
+The combined publisher passes through any requests to *all* upstream publishers. However, it still obeys the demand-fulfilling rule of only sending the request amount downstream. If the demand isn’t [`unlimited`](subscribers/demand/unlimited.md), it drops values from upstream publishers. It implements this by using a buffer size of 1 for each upstream, and holds the most-recent value in each buffer.
 
 All upstream publishers need to finish for this publisher to finish. If an upstream publisher never publishes a value, this publisher never finishes.
 

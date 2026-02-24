@@ -26,7 +26,7 @@ Methods in the [`IMKStateSetting`](imkstatesetting.md) and [`IMKMouseHandling`](
 
 - `server`: The server object for the controller.
 - `delegate`: The delegate object.
-- `inputClient`: The client object that will send messages to the controller using the server object. The client object must confirm to the   protocol.
+- `inputClient`: The client object that will send messages to the controller using the server object. The client object must confirm to the `IMKTextInput` protocol.
 
 
 ---

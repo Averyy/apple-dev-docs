@@ -28,6 +28,11 @@ object ClearPasscodeCommand
 - [object ClearPasscodeCommand.Command](clearpasscodecommand/command-data.dictionary.md)
   The command to remove the passcode from a device.
 
+## Properties
+
+- `Command` (ClearPasscodeCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object ClearPasscodeResponse](clearpasscoderesponse.md)

@@ -18,6 +18,11 @@ For design guidance, see [`Human Interface Guidelines > Technologies > Wallet`](
 
 Before you request information from an ID in Wallet, you create an object to describe the elements you need. Your app can only request the elements your entitlement grants. There are a few identity document descriptor options:
 
+- **[`PKIdentityDriversLicenseDescriptor`](pkidentitydriverslicensedescriptor.md)**: For requesting information from a person’s state or mobile driver’s license.
+- **[`PKIdentityNationalIDCardDescriptor`](pkidentitynationalidcarddescriptor.md)**: For requesting information from their national identificaton card, and add the elements to the request.
+- **[`PKIdentityPhotoIDDescriptor`](pkidentityphotoiddescriptor.md)**: For requesting information from a digital ID.
+- **[`PKIdentityAnyOfDescriptor`](pkidentityanyofdescriptor.md)**: For requesting information for more than one identity document.
+
 For each element, you specify your intent to store the resulting data by using [`mayStore(days:)`](pkidentityintenttostore/maystore(days:).md), [`mayStore`](pkidentityintenttostore/maystore.md), or [`willNotStore`](pkidentityintenttostore/willnotstore.md). Upon request, the system presents the information for a person to review in a system sheet.
 
 The framework allows for requesting the Boolean [`age(atLeast:)`](pkidentityelement/age(atleast:).md) element for any age between `1` and `125` only if the issuer includes it. If an app requests [`age(atLeast:)`](pkidentityelement/age(atleast:).md) and the `age_over_XX` element isn’t present in the mobile driver’s license, the framework falls back to a request for the age element.
@@ -25,6 +30,78 @@ The framework allows for requesting the Boolean [`age(atLeast:)`](pkidentityelem
 An app can’t include both an [`age(atLeast:)`](pkidentityelement/age(atleast:).md) element and an [`age`](pkidentityelement/age.md) element in the same request.
 
 The following code shows how you create the different identity document descriptors:
+
+**PKIdentityDriversLicenseDescriptor**:
+
+```swift
+    let driversLicenseDescriptor = PKIdentityDriversLicenseDescriptor()
+    driversLicenseDescriptor.addElements(
+        [.age(atLeast: 18)],
+        intentToStore: .willNotStore
+    )
+    driversLicenseDescriptor.addElements(
+        [.givenName, 
+        .familyName,
+        .portrait],
+        intentToStore: .mayStore(days: 30)
+    )
+```
+
+**PKIdentityNationalIDCardDescriptor**:
+
+```swift
+    let nationalIDCardDescriptor = PKIdentityNationalIDCardDescriptor()
+    nationalIDCardDescriptor.addElements(
+        [.age(atLeast: 18)],
+        intentToStore: .willNotStore
+    )
+    nationalIDCardDescriptor.addElements(
+        [.givenName, 
+        .familyName,
+        .portrait],
+        intentToStore: .mayStore(days: 30)
+    )
+```
+
+**PKIdentityPhotoIDDescriptor**:
+
+```swift
+    let identityPhotoIDDescriptor = PKIdentityPhotoIDDescriptor()
+    identityPhotoIDDescriptor.addElements(
+        [.age(atLeast: 18)],
+        intentToStore: .willNotStore
+    )
+    identityPhotoIDDescriptor.addElements(
+        [.documentNumber, 
+        .issuingAuthority,
+        .familyName,
+        .givenName],
+        intentToStore: .mayStore(days: 30)
+    )
+```
+
+**PKIdentityOfAnyDescriptor**:
+
+```swift
+    let identityPhotoIDDescriptor = PKIdentityPhotoIDDescriptor()
+    identityPhotoIDDescriptor.addElements(
+        [.documentNumber, 
+        .issuingAuthority,
+        .familyName,
+        .givenName],
+        intentToStore: .mayStore(days: 30)
+    )
+
+    let driversLicenseDescriptor = PKIdentityDriversLicenseDescriptor()
+    driversLicenseDescriptor.addElements(
+        [.givenName, 
+        .familyName,
+        .portrait],
+        intentToStore: .mayStore(days: 30)
+    )
+
+   let anyDescriptor = PKIdentityAnyOfDescriptor(descriptors: [identityPhotoIDDescriptor, driversLicenseDescriptor])
+```
 
 To check whether the identity document you describe is available to request, create a [`PKIdentityAuthorizationController`](pkidentityauthorizationcontroller.md) and call [`checkCanRequestDocument(_:completion:)`](pkidentityauthorizationcontroller/checkcanrequestdocument(_:completion:).md). If the document exists, show a [`PKIdentityButton`](pkidentitybutton.md) to allow the user to begin the authorization request.
 

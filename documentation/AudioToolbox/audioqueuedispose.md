@@ -30,7 +30,7 @@ Disposing of an audio queue also disposes of its resources, including its buffer
 ## Parameters
 
 - `inAQ`: The audio queue you want to dispose of.
-- `inImmediate`: If you pass  , the audio queue is disposed of immediately (that is, synchronously). If you pass  , disposal does not take place until all enqueued buffers are processed (that is, asynchronously).
+- `inImmediate`: If you pass `true`, the audio queue is disposed of immediately (that is, synchronously). If you pass `false`, disposal does not take place until all enqueued buffers are processed (that is, asynchronously).
 
 ## See Also
 

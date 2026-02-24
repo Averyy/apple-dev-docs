@@ -28,7 +28,7 @@ This method returns a size value for the view that optimally satisfies the viewâ
 
 ## Parameters
 
-- `targetSize`: The size that you prefer for the view. To obtain a view that is as small as possible, specify the constant  . To obtain a view that is as large as possible, specify the constant  .
+- `targetSize`: The size that you prefer for the view. To obtain a view that is as small as possible, specify the constant [`layoutFittingCompressedSize`](uiview/layoutfittingcompressedsize.md). To obtain a view that is as large as possible, specify the constant [`layoutFittingExpandedSize`](uiview/layoutfittingexpandedsize.md).
 
 ## See Also
 

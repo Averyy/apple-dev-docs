@@ -43,8 +43,8 @@ To avoid false positives during culling, transform should have broader tangents 
 ## Parameters
 
 - `convention`: The normalized device coordinate axes convention used.
-- `increaseTangents`: The requested increased tangents   for computing the projection transform. Values should be positive.
-- `depthRange`: The requested depth range   for computing the projection transform. Values should be positive.
+- `increaseTangents`: The requested increased tangents for computing the projection transform. Values should be positive.
+- `depthRange`: The requested depth range for computing the projection transform. Values should be positive.
 
 
 ---

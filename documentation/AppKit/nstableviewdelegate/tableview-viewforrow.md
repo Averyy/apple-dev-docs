@@ -34,7 +34,7 @@ The autoresizing mask of the returned view will automatically be set to [`height
 ## Parameters
 
 - `tableView`: The table view that sent the message.
-- `tableColumn`: The table column. (If the row is a group row,   is  .)
+- `tableColumn`: The table column. (If the row is a group row, `tableColumn` is `nil`.)
 - `row`: The row index.
 
 ## See Also

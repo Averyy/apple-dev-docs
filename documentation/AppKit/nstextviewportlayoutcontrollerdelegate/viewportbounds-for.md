@@ -21,7 +21,7 @@ A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect).
 
 ## Parameters
 
-- `textViewportLayoutController`: The  .
+- `textViewportLayoutController`: The [`NSTextViewportLayoutController`](nstextviewportlayoutcontroller.md).
 
 ## See Also
 

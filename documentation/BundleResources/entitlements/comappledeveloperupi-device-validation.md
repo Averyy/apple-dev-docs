@@ -9,6 +9,12 @@ A Boolean value that indicates whether your app can use UPI device enrollment fo
 - iOS 17.0+
 - iPadOS 17.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 The Unified Payments Interface (UPI) system, developed by the National Payments Corporation of India (NPCI), supports mobile-app financial transactions. This entitlement allows your app to display a non-editable Messages share sheet with a predefined recipient and token, and includes methods to verify the token was successfully transmitted to the carrier network.

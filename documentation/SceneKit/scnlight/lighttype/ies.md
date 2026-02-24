@@ -33,7 +33,7 @@ For more information about photometric lights, see the [`iesProfileURL`](scnligh
 - [static let directional: SCNLight.LightType](scnlight/lighttype/directional.md)
   A light source with a uniform direction and constant intensity.
 - [static let omni: SCNLight.LightType](scnlight/lighttype/omni.md)
-  An omnidirectional light, also known as a .
+  An omnidirectional light, also known as a *point light*.
 - [static let probe: SCNLight.LightType](scnlight/lighttype/probe.md)
   A sample of the environment around a point in a scene to be used in environment-based lighting.
 - [static let spot: SCNLight.LightType](scnlight/lighttype/spot.md)

@@ -17,6 +17,10 @@ A custom dictionary for the filtering service plug-in.
 object WebContentFilter.VendorConfig
 ```
 
+## Properties
+
+- `ANY` (any) *(required)*: The custom key/value pairs for the filtering service.
+
 ## See Also
 
 - [object WebContentFilter.AllowListBookmarksItem](webcontentfilter/allowlistbookmarksitem.md)

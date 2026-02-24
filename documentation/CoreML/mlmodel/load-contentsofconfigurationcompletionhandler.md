@@ -24,11 +24,47 @@ class func load(contentsOf url: URL, configuration: MLModelConfiguration = MLMod
 
 Use this method to load a model asynchronously. Core ML calls your completion handler after it successfully loads the model, or encounters an error attempting to load it.
 
+**Swift**:
+
+```swift
+MLModel.load(contentsOf: modelURL) { result in
+    switch result {
+    case .success(let loadedModel):
+        print("Successfully loaded model `\(loadedModel)`.")
+
+        // Use the loaded model for predictions.
+        // ...
+
+    case .failure(let error):
+        print("Error loading model: \(error).")
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+[MLModel loadContentsOfURL:modelURL
+             configuration:[[MLModelConfiguration alloc] init]
+         completionHandler:^(MLModel *loadedModel,
+                             NSError *error) {
+    if (nil == loadedModel) {
+        NSLog(@"Error loading model`: %@", (nil != error) ? error : modelURL);
+        return;
+    }
+
+    NSLog(@"Successfully loaded model at: %@", modelURL);
+
+    // Use the loaded model for predictions.
+    // ...
+}];
+```
+
 In Swift, if the model loaded successfully, you can use the instance from the [`Result.success(_:)`](https://developer.apple.com/documentation/Swift/Result/success(_:)) associated value; otherwise, use the [`Result.failure(_:)`](https://developer.apple.com/documentation/Swift/Result/failure(_:)) associated value to address the error. In Objective-C, you can use the [`MLModel`](mlmodel.md) instance in your completion hander; otherwise, use the [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) instance to address the error.  See [`MLModelError.Code`](mlmodelerror-swift.struct/code.md) for the list of error codes.
 
 ## Parameters
 
-- `url`: The path to a compiled model file ( ), typically with the   that   returns.
+- `url`: The path to a compiled model file (*ModelName*`.mlmodelc`), typically with the `URL` that [`compileModel(at:)`](mlmodel/compilemodel(at:)-6442s.md) returns.
 - `configuration`: The runtime settings for the new model instance.
 - `handler`: A closure the method calls when it finishes loading the model.
 

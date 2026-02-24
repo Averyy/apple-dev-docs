@@ -29,7 +29,7 @@ If you previously called the [`SSLSetPeerDomainName(_:_:_:)`](sslsetpeerdomainna
 
 - `context`: An SSL session context reference.
 - `peerName`: On return, points to the peer domain name.
-- `peerNameLen`: A pointer to the length of the peer domain name. Before calling this function, retrieve the peer domain name length by calling the function  .
+- `peerNameLen`: A pointer to the length of the peer domain name. Before calling this function, retrieve the peer domain name length by calling the function [`SSLGetPeerDomainNameLength(_:_:)`](sslgetpeerdomainnamelength(_:_:).md).
 
 
 ---

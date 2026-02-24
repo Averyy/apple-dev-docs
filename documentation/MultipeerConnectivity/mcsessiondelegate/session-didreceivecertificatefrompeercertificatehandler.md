@@ -30,9 +30,9 @@ For information about validating certificates, read [`Cryptographic Services Gui
 ## Parameters
 
 - `session`: The session that the nearby peer wishes to join.
-- `certificate`: If the nearby peer did not provide a security identity, then this parameter’s value is  .
+- `certificate`: A certificate chain, presented as an array of SecCertificateRef certificate objects. The first certificate in this chain is the peer’s certificate, which is derived from the identity that the peer provided when it called the [`init(peer:securityIdentity:encryptionPreference:)`](mcsession/init(peer:securityidentity:encryptionpreference:).md) method. The other certificates are the (optional) additional chain certificates provided in that same array. If the nearby peer did not provide a security identity, then this parameter’s value is `nil`.
 - `peerID`: The peer ID of the sender.
-- `certificateHandler`: Your app should call this handler with a value of   if the nearby peer should be allowed to join the session, or   otherwise.
+- `certificateHandler`: Your app should call this handler with a value of [`true`](https://developer.apple.com/documentation/Swift/true) if the nearby peer should be allowed to join the session, or [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

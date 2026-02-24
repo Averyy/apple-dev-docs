@@ -26,7 +26,7 @@ This method may perform an alternate action—for example, insert a different no
 
 - `webView`: The web view that the user is editing.
 - `node`: The content to insert.
-- `range`: The portion of the content that is replaced with  .
+- `range`: The portion of the content that is replaced with `node`.
 - `action`: Indicates the type of user action that initiated the insertion.
 
 ## See Also

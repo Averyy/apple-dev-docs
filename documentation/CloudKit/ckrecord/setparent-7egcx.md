@@ -26,7 +26,7 @@ This method creates and sets a [`CKRecord.Reference`](ckrecord/reference.md) obj
 
 ## Parameters
 
-- `parentRecordID`: The   object for the record that you want to set as this record’s parent.
+- `parentRecordID`: The [`CKRecord.ID`](ckrecord/id.md) object for the record that you want to set as this record’s parent.
 
 ## See Also
 

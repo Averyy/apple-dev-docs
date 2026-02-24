@@ -15,6 +15,12 @@ A URL object.
 object Url
 ```
 
+## Properties
+
+- `http_method` ([string]): Possible values: GET, POST, PUT, DELETE.
+- `limit` (Limit): The limit for the URL.
+- `uri` (string): URI for the API.
+
 ## See Also
 
 - [object Device](device.md)

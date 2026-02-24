@@ -24,7 +24,7 @@ Set the minimum support TLS version.
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A `sec_protocol_options_t` instance.
 - `version`: A tls_protocol_version_t enum value.
 
 

@@ -23,11 +23,11 @@ A value of type `NSSpringLoadingOptions` to enable or disable spring-loading. A 
 
 This method is called periodically as a drag changes position within the bounds of a spring-loaded destination or the `draggingInfo` changes during the drag. It returns a value of type `NSSpringLoadingOptions` to enable or disable spring-loading for the destination. If this method is not implemented, then spring-loading is enabled or disabled for the destination based on the return value of the `springLoadingEntered:` method.
 
-Note that you  implement either this method or [`springLoadingEntered(_:)`](nsspringloadingdestination/springloadingentered(_:).md) to enable spring-loading.
+Note that you *must* implement either this method or [`springLoadingEntered(_:)`](nsspringloadingdestination/springloadingentered(_:).md) to enable spring-loading.
 
 ## Parameters
 
-- `draggingInfo`: An object of type  , which provides information about the drag event, including the dragged data.
+- `draggingInfo`: An object of type `NSDraggingInfo`, which provides information about the drag event, including the dragged data.
 
 ## See Also
 

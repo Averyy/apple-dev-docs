@@ -29,7 +29,7 @@ After you create the task, you must start it by calling its [`resume()`](urlsess
 
 ## Parameters
 
-- `service`: A   object used to determine the endpoint of the TCP/IP connection. This network service is resolved before any data is read or written to the resulting stream task.
+- `service`: A [`NetService`](netservice.md) object used to determine the endpoint of the TCP/IP connection. This network service is resolved before any data is read or written to the resulting stream task.
 
 ## See Also
 

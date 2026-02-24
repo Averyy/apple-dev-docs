@@ -26,7 +26,7 @@ Alternatively, you can implement the [`view(_:nodeFor:)`](arskviewdelegate/view(
 
 ## Parameters
 
-- `view`: The   object rendering the scene.
+- `view`: The [`ARSKView`](arskview.md) object rendering the scene.
 - `node`: The newly added SpriteKit node.
 - `anchor`: The AR anchor corresponding to the node.
 

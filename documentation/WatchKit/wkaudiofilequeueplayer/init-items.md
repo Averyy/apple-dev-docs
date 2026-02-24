@@ -24,7 +24,7 @@ The contents of the `items` property represent the initial items to play but you
 
 ## Parameters
 
-- `items`: An array of   objects representing the assets to play. The order of the objects queue corresponds to the playback order of the assets.
+- `items`: An array of [`WKAudioFilePlayerItem`](wkaudiofileplayeritem.md) objects representing the assets to play. The order of the objects queue corresponds to the playback order of the assets.
 
 
 ---

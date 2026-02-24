@@ -21,7 +21,7 @@ The `value` parameter is valid for symbols that support variable rendering.
 ## Parameters
 
 - `name`: The name of the symbol image.
-- `value`: The value the system uses to customize the symbol’s content, between   and  .
+- `value`: The value the system uses to customize the symbol’s content, between `0` and `1`.
 
 ## See Also
 

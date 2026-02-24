@@ -26,7 +26,7 @@ If the specified annotation isn’t onscreen, and, therefore, doesn’t have an 
 ## Parameters
 
 - `annotation`: The annotation object to select.
-- `animated`: If  , the map view animates the callout view into position.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), the map view animates the callout view into position.
 
 ## See Also
 

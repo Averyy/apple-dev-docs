@@ -24,7 +24,7 @@ protocol URLAuthenticationChallengeSender : NSObjectProtocol, Sendable
 
 The methods in the protocol are generally sent by a delegate in response to receiving a [`connection(_:didReceive:)`](nsurlconnectiondelegate/connection(_:didreceive:).md): or [`download(_:didReceive:)`](nsurldownloaddelegate/download(_:didreceive:)-1pc0v.md):. The different methods provide different ways of responding to authentication challenges.
 
-> ❗ **Important**:  This protocol is  for use with the legacy [`NSURLConnection`](nsurlconnection.md) and [`NSURLDownload`](nsurldownload.md) classes. It should not be used with [`URLSession`](urlsession.md)-based code, for which you respond to authentication challenges by passing [`URLSession.AuthChallengeDisposition`](urlsession/authchallengedisposition.md) constants to the provided completion handler blocks.
+> ❗ **Important**:  This protocol is *only* for use with the legacy [`NSURLConnection`](nsurlconnection.md) and [`NSURLDownload`](nsurldownload.md) classes. It should not be used with [`URLSession`](urlsession.md)-based code, for which you respond to authentication challenges by passing [`URLSession.AuthChallengeDisposition`](urlsession/authchallengedisposition.md) constants to the provided completion handler blocks.
 
 ## Topics
 

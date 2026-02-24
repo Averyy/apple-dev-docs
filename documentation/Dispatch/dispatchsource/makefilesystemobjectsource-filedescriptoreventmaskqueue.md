@@ -31,7 +31,7 @@ After creating the dispatch source, use the methods of the [`DispatchSourceProto
 ## Parameters
 
 - `fileDescriptor`: A file descriptor pointing to an open file or socket.
-- `eventMask`: The set of events you want to monitor. For a list of possible values, see  .
+- `eventMask`: The set of events you want to monitor. For a list of possible values, see [`DispatchSource.FileSystemEvent`](dispatchsource/filesystemevent.md).
 - `queue`: The dispatch queue to use when executing the installed handlers.
 
 ## See Also

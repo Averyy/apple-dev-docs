@@ -31,7 +31,10 @@ If your app needs more precise control of the APDU format, use [`init(data:)`](n
 - `p1Parameter`: The P1 parameter byte value.
 - `p2Parameter`: The P2 parameter byte value.
 - `data`: The data to transmit. The APDU object specifies the length of the transmission data in the Lc field.
-- `expectedResponseLength`: The expected response data length (Le) in bytes. The value should be one of the following:
+- `expectedResponseLength`: The expected response data length (Le) in bytes. The value should be one of the following: - A length between 1 and 65536 inclusively.
+- –1 when you expect no response data.
+- 256 to send `00` as the short Le field value, assuming the data field is less than 256 bytes.
+- 65536 to send `0000` as the extended Le field.
 
 ## See Also
 

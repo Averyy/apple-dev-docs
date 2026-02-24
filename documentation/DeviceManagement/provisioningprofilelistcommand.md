@@ -29,6 +29,11 @@ object ProvisioningProfileListCommand
 - [object ProvisioningProfileListCommand.Command](provisioningprofilelistcommand/command-data.dictionary.md)
   The command to get a list of installed provisioning profiles on a device.
 
+## Properties
+
+- `Command` (ProvisioningProfileListCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object ProvisioningProfileListResponse](provisioningprofilelistresponse.md)

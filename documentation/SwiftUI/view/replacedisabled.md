@@ -55,7 +55,7 @@ VStack {
 
 ## Parameters
 
-- `isDisabled`: A Boolean value that indicates whether text   replacement in the find and replace interface is disabled.
+- `isDisabled`: A Boolean value that indicates whether text replacement in the find and replace interface is disabled.
 
 ## See Also
 

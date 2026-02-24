@@ -27,7 +27,7 @@ This method may incur additional I/O to collect the requested media data asynchr
 
 ## Parameters
 
-- `collector`: An instance of  .
+- `collector`: An instance of [`AVPlayerItemMediaDataCollector`](avplayeritemmediadatacollector.md).
 
 ## See Also
 

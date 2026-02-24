@@ -12,7 +12,7 @@ Control the information you receive from your tests at different stages in the s
 
 ![A graph that demonstrates the components of an Xcode project that Xcode uses to determine the test activities: the test plan, scheme, test target, and product target.](https://docs-assets.developer.apple.com/published/fb97d06a00af6ecfbd44b2bb7f03d5d6/organizing-tests-hero%402x.png)
 
-With [`Swift Testing`](https://developer.apple.com/documentation/Testing), you can declare and add , annotations that identify tests that share common characteristics, to your tests.
+With [`Swift Testing`](https://developer.apple.com/documentation/Testing), you can declare and add *tags*, annotations that identify tests that share common characteristics, to your tests.
 
 You might add tags to specify:
 
@@ -38,7 +38,7 @@ If your product has multiple targets — like an iOS app that contains a static
 
 ##### Create Test Plans to Organize the Tests for a Scheme
 
-A  is a document in your Xcode project that describes which tests Xcode should run when a developer invokes the test action, shown in the figure below, and the configurations Xcode uses to run the tests.
+A *test plan* is a document in your Xcode project that describes which tests Xcode should run when a developer invokes the test action, shown in the figure below, and the configurations Xcode uses to run the tests.
 
 ![A graph that demonstrates that a test plan defines which test suites and functions Xcode should run in the test action.](https://docs-assets.developer.apple.com/published/e0d2c677e6d19db8eb5dab4a06e54fd6/organizing-tests-test-plan%402x.png)
 
@@ -90,6 +90,36 @@ Each test plan contains one or more configurations that tell Xcode how to set up
 ![A screenshot of Xcode, showing the test plan configuration editor.](https://docs-assets.developer.apple.com/published/cbdf4697b741d31cb64de2281186a857/organizing-tests-configurations%402x.png)
 
 The values you can specify in a test plan configuration are:
+
+- **Arguments Passed on Launch**: Command-line arguments to the product under test.
+- **Environment Variables**: Values set in the tested product’s environment.
+- **Target for Variable Expansion**: The target that Xcode should use as a basis for expanding build settings. For a list of the settings available, see [`Build settings reference`](build-settings-reference.md).
+- **Application Language**: The language used for localized strings in the product under test, or System Language to use the language specified in System Settings.
+- **Application Region**: The region used for locale settings in the product under test, or System Region to use the region specified in System Settings.
+- **Simulated Location**: The location returned when using location services during tests. Specify a location, None to use the location of the device running test, or a GPX file to simulate traveling a route during tests.
+- **Automatic Screen Capture**: Specify whether the UI Automation test runner captures screenshots as it runs tests, and whether it deletes screenshots for passing tests.
+- **Preferred Capture Format**: Specify whether the UI Automation test runner captures video or screenshots.
+- **Localization Screenshots**: Gather screenshots of your app for localizers. For more information, see [`Creating screenshots of your app for localizers`](creating-screenshots-of-your-app-for-localizers.md).
+- **Distribution**: The method of distribution to use for the product under test.
+- **Attachments**: Gather attachments with augmented information about test behavior. For more information, see [`attachments`](https://developer.apple.com/documentation/XCTest/XCTIssueReference/attachments).
+- **Collect Test Diagnostics on Failure**: Collect diagnostic information in any situation where a test fails, only when testing with `xcodebuild`, or never.
+- **Execution Order**: Control whether Xcode runs tests in alphabetical order, or picks a random order each time. Running tests in a random order can uncover situations where your test’s behavior depends on actions taken in other tests.
+- **Test Timeouts**: Control whether tests automatically fail after a set amount of time.
+- **Default Test Execution Time Allowance(s)**: The number of seconds a test runs for by default before it automatically fails. The minimum value you can set is 60 seconds. Override this setting for an individual test by calling [`executionTimeAllowance`](https://developer.apple.com/documentation/XCTest/XCTestCase/executionTimeAllowance). This value is ignored if Test Timeouts is set to No.
+- **Maximum Test Execution Time Allowance(s)**: The maximum number of seconds a test can run for before it automatically fails. The minimum value you can set is 60 seconds. A test times out after the maximum test execution time allowance has elapsed, even if the test requests a longer execution time using [`executionTimeAllowance`](https://developer.apple.com/documentation/XCTest/XCTestCase/executionTimeAllowance). This value is ignored if Test Timeouts is set to No.
+- **Test Repetition Mode**: Choose whether tests are run once, repeated until they fail, repeated until they pass, or run a set number of times.
+- **Maximum Test Repetitions**: The highest number of times a test is repeatedly run.
+- **Relaunch Tests for Each Repetition**: Whether Xcode launches a new process for each test repetition.
+- **Code Coverage**: Collect code coverage metrics during test runs.
+- **Address Sanitizer**: Detect out-of-bounds access to memory, memory used after it has been freed, and other incorrect memory use.
+- **Thread Sanitizer**: Detect thread-related race conditions.
+- **Undefined Behavior Sanitizer**: Detect issues related to undefined behavior in the C programming language.
+- **Main Thread Checker**: Detect issues caused by using API on background threads that should only be used on the main thread.
+- **Malloc Scribble**: Write a specific value to freed memory, to support detecting incorrect use of freed memory.
+- **Malloc Guard Edges**: Add guard pages before and after large allocations, to support detecting out-of-bounds memory use.
+- **Guard Malloc**: Use a substitute version of the memory allocator with additional detection for incorrect memory uses.
+- **Zombie Objects**: Replace deallocated objects with zombies that crash your app when they receive Objective-C messages.
+- **Malloc Stack Logging**: Record the function call stack whenever memory is allocated.
 
 For more information on the address sanitizer, thread sanitizer, undefined behavior sanitizer, and main thread checker, see [`Diagnosing memory, thread, and crash issues early`](diagnosing-memory-thread-and-crash-issues-early.md).
 

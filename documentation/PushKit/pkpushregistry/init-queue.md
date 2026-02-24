@@ -25,7 +25,7 @@ A `PKPushRegistry` object that you can use to register for push tokens and use t
 
 ## Parameters
 
-- `queue`: The dispatch queue on which to execute the delegate methods. It is recommended that you specify a serial queue for this parameter. Specify   to execute the delegate methods on the app’s main queue.
+- `queue`: The dispatch queue on which to execute the delegate methods. It is recommended that you specify a serial queue for this parameter. Specify `nil` to execute the delegate methods on the app’s main queue.
 
 
 ---

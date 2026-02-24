@@ -22,7 +22,7 @@ Creates a deferred menu element provider with an asynchronous block.
 
 ## Parameters
 
-- `elementProvider`: An asynchronous element provider block. Call this block’s completion handler when the responder’s   menu items are available.
+- `elementProvider`: An asynchronous element provider block. Call this block’s completion handler when the responder’s menu items are available.
 
 
 ---

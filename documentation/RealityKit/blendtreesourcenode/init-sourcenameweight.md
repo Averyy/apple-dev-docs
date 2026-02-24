@@ -23,7 +23,7 @@ init(source: any AnimationDefinition, name: String = "", weight: BlendWeight = .
 
 - `source`: The blend node’s animation.
 - `name`: A textual name for the blend node.
-- `weight`: A normalized percentage that designates how much effect this   node has compared to peer nodes.
+- `weight`: A normalized percentage that designates how much effect this node has compared to peer nodes.
 
 
 ---

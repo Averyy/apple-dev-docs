@@ -27,7 +27,7 @@ Use this method to authorize or preauthorize a single right.
 ## Parameters
 
 - `rightName`: The name of an authorization right.
-- `flags`: A bit mask for specifying authorization options. See   for details about possible flag values.
+- `flags`: A bit mask for specifying authorization options. See [`obtain(withRights:flags:environment:authorizedRights:)`](sfauthorization/obtain(withrights:flags:environment:authorizedrights:).md) for details about possible flag values.
 
 ## See Also
 

@@ -6,7 +6,7 @@ Reveal ray intersection bottlenecks by examining your acceleration structures.
 
 #### Overview
 
-An  is a data structure that Metal uses to accelerate ray intersection tests on the GPU. The Metal debugger allows you to inspect an acceleration structure with the Acceleration Structure viewer. After opening an acceleration structure, you can view it and its associated properties, along with various highlights.
+An *acceleration structure* is a data structure that Metal uses to accelerate ray intersection tests on the GPU. The Metal debugger allows you to inspect an acceleration structure with the Acceleration Structure viewer. After opening an acceleration structure, you can view it and its associated properties, along with various highlights.
 
 ##### Navigate Your Acceleration Structure
 
@@ -59,17 +59,32 @@ You can view your acceleration structure with different highlights to emphasize 
 
 ![A screenshot of the Highlight button in the control bar.](https://docs-assets.developer.apple.com/published/67b59204fc585cc830eb173705423f96/gputools-metal-debugger-asv-highlight-button%402x.png)
 
+- **Bounding Volume Traversals**: You can use the Bounding Volume Traversals mode to highlight areas of your scene that are more expensive to traverse. Xcode color-codes the number of traversals it takes to intersect your acceleration structure on a scale from white (fewer traversals) to dark blue (more traversals). As you move the pointer around the viewport, the inspector (at the bottom left) updates several traversal statistics for the pixel under the pointer, along with the corresponding minimum and maximum values in the viewport.
+
 ![A screenshot of the Acceleration Structure viewer displaying the scene with the Bounding Volume Traversals highlight mode.](https://docs-assets.developer.apple.com/published/e4bc456de22233ed709c0fc7491f5267/gputools-metal-debugger-asv-highlight-bbox%402x.png)
+
+- **All Node Traversal**: You can use the All Node Traversal mode to highlight the expensive parts of your scene that may be occluded.
+Xcode uses the same color-coding as the Bounding Volume Traversals highlight, but doesn’t stop traversing when it hits a surface. In the example below, you can see the eyes inside the ninja’s head:
 
 ![A screenshot of the Acceleration Structure viewer displaying the scene with the All Node Traversal highlight mode.](https://docs-assets.developer.apple.com/published/a1cb8db61a0cc3e4a3bcc03894c26b71/gputools-metal-debugger-asv-highlight-xray%402x.png)
 
+- **Acceleration Structures**: This mode highlights different primitive acceleration structures. The inspector shows the primitive acceleration structure index as you move the pointer around the viewport.
+
 ![A screenshot of the Acceleration Structure viewer displaying the scene with the Acceleration Structures highlight mode.](https://docs-assets.developer.apple.com/published/b34d043fc06005ea999b6daf64d36773/gputools-metal-debugger-asv-highlight-as%402x.png)
+
+- **Geometries**: This mode highlights different geometries within primitive acceleration structures. The inspector shows the `geometry_id` attribute as you move the pointer around the viewport. For more information, see [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 
 ![A screenshot of the Acceleration Structure viewer displaying the scene with the Geometries highlight mode.](https://docs-assets.developer.apple.com/published/4edcfa2b215c9ace161d660f4e859f5e/gputools-metal-debugger-asv-highlight-geometry%402x.png)
 
+- **Primitives**: This mode highlights different primitives within primitive acceleration structures. The inspector shows the `geometry_id` and `primitive_id` attributes as you move the pointer around the viewport. For more information, see [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
+
 ![A screenshot of the Acceleration Structure viewer displaying the scene with the Primitives highlight mode.](https://docs-assets.developer.apple.com/published/adfafb31bebd191d4f3c76253f4a555b/gputools-metal-debugger-asv-highlight-primitive%402x.png)
 
+- **Instances**: This mode highlights different instances of primitive acceleration structures. The inspector shows the `instance_id` attribute as you move the pointer around the viewport. For more information, see [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
+
 ![A screenshot of the Acceleration Structure viewer displaying the scene with the Instances highlight mode.](https://docs-assets.developer.apple.com/published/cc33b4bc87725d7553d8b0c912eb319f/gputools-metal-debugger-asv-highlight-instance%402x.png)
+
+- **Intersection Functions**: This mode highlights different intersection functions.  The inspector shows the intersection function index as you move the pointer around the viewport.
 
 ![A screenshot of the Acceleration Structure viewer displaying the scene with the Intersection Functions highlight mode.](https://docs-assets.developer.apple.com/published/000a4d59d8704be9b6e8fa27907cb51f/gputools-metal-debugger-asv-highlight-intersection-function%402x.png)
 

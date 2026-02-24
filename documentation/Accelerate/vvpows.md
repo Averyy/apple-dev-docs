@@ -22,6 +22,10 @@ func vvpows(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsafe
 
 ##### Parameters
 
+- **y**: (output) Output vector of size `*n`. `y[i]` is set to `cbrt(x[i])`.
+- **x**: (input) Input vector of size `*n`.
+- **n**: (input) The number of elements in the vectors `x` and `y`.
+
 ## See Also
 
 - [func vexpf(vFloat) -> vFloat](vexpf(_:).md)

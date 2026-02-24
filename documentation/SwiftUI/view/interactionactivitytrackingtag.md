@@ -62,7 +62,7 @@ struct Home: View {
 
 ## Parameters
 
-- `tag`: The tag used to track user interactions   hosted by this view as activities.
+- `tag`: The tag used to track user interactions hosted by this view as activities.
 
 ## See Also
 

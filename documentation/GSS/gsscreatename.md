@@ -24,9 +24,9 @@ A GSS name for the given buffer and type, or `NULL` on failure. Release this obj
 
 ## Parameters
 
-- `name`: A name buffer describing the credential. The buffer is either a   or a   containing the name.
-- `name_type`: An OID name type constant, such as  .
-- `error`: A   pointer that the function sets to point at a new error object if the function call fails, or   to ignore the error. If the error exists, it describes the reason for the failure, and you are responsible for releasing it with  .
+- `name`: A name buffer describing the credential. The buffer is either a `CFDataRef` or a `CFStringRef` containing the name.
+- `name_type`: An OID name type constant, such as [`GSS_C_NT_USER_NAME`](gss_c_nt_user_name.md).
+- `error`: A `CFErrorRef` pointer that the function sets to point at a new error object if the function call fails, or `NULL` to ignore the error. If the error exists, it describes the reason for the failure, and you are responsible for releasing it with `CFRelease`.
 
 ## See Also
 

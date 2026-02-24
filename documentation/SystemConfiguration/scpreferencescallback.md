@@ -22,7 +22,7 @@ typealias SCPreferencesCallBack = (SCPreferences, SCPreferencesNotification, Uns
 ## Parameters
 
 - `prefs`: The preferences session.
-- `notificationType`: The type of notification, such as changes committed or changes applied. See   for information about possible values.
+- `notificationType`: The type of notification, such as changes committed or changes applied. See [`SCPreferencesNotification`](scpreferencesnotification.md) for information about possible values.
 - `info`: A C pointer to a user-specified block of data.
 
 ## Topics

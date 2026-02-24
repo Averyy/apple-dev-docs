@@ -29,7 +29,7 @@ For example, if the user maps a physical press of A button , B button, and X but
 
 ## Parameters
 
-- `elementAlias`: The name of the input element too which physical input elements remap. For possible values, see  .
+- `elementAlias`: The name of the input element too which physical input elements remap. For possible values, see [`Extended gamepad input names`](extended-gamepad-input-names.md).
 
 ## See Also
 

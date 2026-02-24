@@ -20,7 +20,7 @@ This method posts the [`registryDidChangeNotification`](nsimagerep/registrydidch
 
 ## Parameters
 
-- `imageRepClass`: The   object for an   subclass.
+- `imageRepClass`: The `Class` object for an `NSImageRep` subclass.
 
 ## See Also
 

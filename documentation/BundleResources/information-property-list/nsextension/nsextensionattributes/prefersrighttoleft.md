@@ -9,6 +9,10 @@ A Boolean value indicating whether a keyboard extension supports right-to-left l
 - iOS 8.0+
 - iPadOS 8.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [IDMessageFilterExtensionNetworkURL](information-property-list/nsextension/nsextensionattributes/idmessagefilterextensionnetworkurl.md)

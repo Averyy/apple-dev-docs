@@ -28,7 +28,7 @@ An initialized kernel object.
 - `device`: The Metal device the filter will run on.
 - `thresholdValue`: The threshold value to use.
 - `maximumValue`: The maximum value to use.
-- `transform`: The color transform to use. This matrix is an array of 3 floats that defaults to the   standard: 
+- `transform`: The color transform to use. This matrix is an array of 3 floats that defaults to the *BT.601/JPEG* standard: `{0.299f, 0.587f, 0.114f}`
 
 
 ---

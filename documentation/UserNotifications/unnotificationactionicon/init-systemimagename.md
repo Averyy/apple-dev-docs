@@ -26,7 +26,7 @@ An action icon that the system initializes with the system symbol image that you
 
 ## Parameters
 
-- `systemImageName`: The name of the system symbol image. Use the SF Symbols app to look up the names of system symbol images. Download this app from the design resources page at  .
+- `systemImageName`: The name of the system symbol image. Use the SF Symbols app to look up the names of system symbol images. Download this app from the design resources page at [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com/design/resources/).
 
 ## See Also
 

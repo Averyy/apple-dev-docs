@@ -21,8 +21,8 @@ Use this component when you want to present a modal that is anchored to an entit
 
 ## Parameters
 
-- `configuration`: A configuration that specifies the modality,   appearance, and behavior of the presentation.
-- `content`: The SwiftUI view hierarchy that you want to present with   the component.
+- `configuration`: A configuration that specifies the modality, appearance, and behavior of the presentation.
+- `content`: The SwiftUI view hierarchy that you want to present with the component.
 
 
 ---

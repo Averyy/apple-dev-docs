@@ -21,7 +21,7 @@ init(_ titleKey: LocalizedStringKey, @ViewBuilder content: @escaping () -> Conte
 
 ## Parameters
 
-- `titleKey`: The key for the localized label of   that describes   the content of the disclosure group.
+- `titleKey`: The key for the localized label of `self` that describes the content of the disclosure group.
 - `content`: The content shown when the disclosure group expands.
 
 ## See Also

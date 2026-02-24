@@ -30,7 +30,19 @@ NSMutableArray is “toll-free bridged” with its Core Foundation counterpart, 
 
 ##### Accessing Values Using Subscripting
 
-In addition to the provided instance methods, such as [`replaceObject(at:with:)`](nsmutablearray/replaceobject(at:with:).md), you can access `NSArray` values by their indexes using .
+In addition to the provided instance methods, such as [`replaceObject(at:with:)`](nsmutablearray/replaceobject(at:with:).md), you can access `NSArray` values by their indexes using *subscripting*.
+
+**Swift**:
+
+```swift
+mutableArray[3] = "someValue"
+```
+
+**Objective-C**:
+
+```objc
+mutableArray[3] = @"someValue";
+```
 
 ##### Subclassing Notes
 

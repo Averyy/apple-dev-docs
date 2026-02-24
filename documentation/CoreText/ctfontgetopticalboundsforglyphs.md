@@ -32,8 +32,8 @@ Fonts may specify the optical edges of glyphs that can be used to make the edges
 
 - `font`: The font reference.
 - `glyphs`: An array of glyphs.
-- `boundingRects`: An array of  s to receive the computed glyph bounds. This parameter can be  , in which case the function only calculates the overall bounding rectangle.
-- `count`: The capacity of the   and   buffers.
+- `boundingRects`: An array of [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect)s to receive the computed glyph bounds. This parameter can be `NULL`, in which case the function only calculates the overall bounding rectangle.
+- `count`: The capacity of the `glyphs` and `boundingRects` buffers.
 - `options`: Reserved, set to zero.
 
 ## See Also

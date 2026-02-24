@@ -20,7 +20,7 @@ If the value in `itemIndex` exceeds the number of items in the array, the picker
 
 ## Parameters
 
-- `itemIndex`: The index of the item to select. This index represents the index into the array of items you set using the   method.
+- `itemIndex`: The index of the item to select. This index represents the index into the array of items you set using the [`setItems(_:)`](wkinterfacepicker/setitems(_:).md) method.
 
 ## See Also
 

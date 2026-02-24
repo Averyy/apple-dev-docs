@@ -8,9 +8,17 @@ Text for a Services menu item.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 The dictionary key is `default` with a string value.
+
+## Properties
+
+- `default` (string) *(required)*
 
 ## See Also
 

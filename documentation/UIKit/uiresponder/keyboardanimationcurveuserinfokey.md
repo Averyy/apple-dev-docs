@@ -24,6 +24,54 @@ The value for this key is an [`NSNumber`](https://developer.apple.com/documentat
 
 Before using this value, convert the animation curve constant to [`UIView.AnimationOptions`](uiview/animationoptions.md), which you can pass to one of UIKit’s animation methods, such as [`animate(withDuration:animations:completion:)`](uiview/animate(withduration:animations:completion:).md).
 
+**Swift**:
+
+```swift
+// Get the animation curve constant and the duration for your animation.
+guard let animationCurve = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? UInt,
+      let animationDuration = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double else { return }
+
+// Convert the animation curve constant to animation options.
+let animationOptions = UIView.AnimationOptions(rawValue: animationCurve << 16)
+
+// Perform your animation.
+UIView.animate(withDuration: animationDuration,
+               delay: 0,
+               options: animationOptions) {
+    // Specify what to animate. For example, calling layoutIfNeeded animates a change to
+    // the view's constraints.
+    self.view.layoutIfNeeded()
+} completion: { _ in
+    // Use the completion handler to perform anything that needs to happen after the keyboard
+    // frame finishes animating, such as scrolling your text view after the animation completes.
+}
+```
+
+**Objective-C**:
+
+```objc
+// Convert the animation curve constant to animation options.
+UIViewAnimationOptions options = (UIViewAnimationOptions)[[userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey]
+                          integerValue] << 16;
+
+// Get the duration for your animation.
+CGFloat duration = [[userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
+
+// Perform your animation.
+[UIView animateWithDuration:duration
+                      delay:0.0
+                    options:options
+                 animations:^{
+    // Specify what to animate. For example, calling layoutIfNeeded animates a change 
+    // to the view's constraints.
+    [self.view layoutIfNeeded]; 
+}
+                 completion:^(BOOL finished) {
+    // Use the completion handler to perform anything that needs to happen after the keyboard
+    // frame finishes animating, such as scrolling your text view after the animation completes.
+}];
+```
+
 ## See Also
 
 - [class let keyboardAnimationDurationUserInfoKey: String](uiresponder/keyboardanimationdurationuserinfokey.md)

@@ -28,7 +28,7 @@ This function takes an index. If you have an identifier, use the [`ABMultiValueG
 
 - `multiValue`: The multivalue property containing the label to replace.
 - `label`: The new label.
-- `index`: Raises an exception when out of bounds.
+- `index`: The location, in `multiValue`, of the label to replace. Raises an exception when out of bounds.
 
 ## See Also
 

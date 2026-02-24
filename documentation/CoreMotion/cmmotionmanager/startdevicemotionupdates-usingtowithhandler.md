@@ -24,9 +24,9 @@ You must call [`stopDeviceMotionUpdates()`](cmmotionmanager/stopdevicemotionupda
 
 ## Parameters
 
-- `referenceFrame`: A constant identifying the reference frame to use for device-motion updates. It’s your responsibility to specify a reference frame that’s available on the current device. Call   to determine which reference frames are currently available.
+- `referenceFrame`: A constant identifying the reference frame to use for device-motion updates. It’s your responsibility to specify a reference frame that’s available on the current device. Call [`availableAttitudeReferenceFrames()`](cmmotionmanager/availableattitudereferenceframes().md) to determine which reference frames are currently available.
 - `queue`: An operation queue provided by the caller. Because the processed events might arrive at a high rate, using the main operation queue is not recommended.
-- `handler`: A block that is invoked with each update to handle new device-motion data. The block must conform to the   type.
+- `handler`: A block that is invoked with each update to handle new device-motion data. The block must conform to the [`CMDeviceMotionHandler`](cmdevicemotionhandler.md) type.
 
 ## See Also
 

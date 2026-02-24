@@ -21,7 +21,7 @@ optional func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidCha
 ## Parameters
 
 - `searchBar`: The search bar that was tapped.
-- `selectedScope`: The index of the selected scope button (see  ).
+- `selectedScope`: The index of the selected scope button (see [`selectedScopeButtonIndex`](uisearchbar/selectedscopebuttonindex.md)).
 
 
 ---

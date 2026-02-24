@@ -30,11 +30,11 @@ The input buffer (`plainText`) can be the same as the output buffer (`cipherText
 ## Parameters
 
 - `key`: Public key with which to encrypt the data.
-- `padding`: The type of padding to use. Possible values are listed in  . Typically,   is used, which adds PKCS1 padding before encryption. If you specify  , the data is encrypted as-is.
+- `padding`: The type of padding to use. Possible values are listed in [`SecPadding`](secpadding.md). Typically, [`PKCS1`](secpadding/pkcs1.md) is used, which adds PKCS1 padding before encryption. If you specify [`kSecPaddingNone`](secpadding/ksecpaddingnone.md), the data is encrypted as-is.
 - `plainText`: The data to encrypt.
-- `plainTextLen`: Length in bytes of the data in the   buffer. This must be less than or equal to the value returned by the   function. When PKCS1 padding is performed, the maximum length of data that can be encrypted is 11 bytes less than the value returned by the   function ( ).
+- `plainTextLen`: Length in bytes of the data in the `plainText` buffer. This must be less than or equal to the value returned by the [`SecKeyGetBlockSize(_:)`](seckeygetblocksize(_:).md) function. When PKCS1 padding is performed, the maximum length of data that can be encrypted is 11 bytes less than the value returned by the [`SecKeyGetBlockSize(_:)`](seckeygetblocksize(_:).md) function (`secKeyGetBlockSize() - 11`).
 - `cipherText`: On return, the encrypted text.
-- `cipherTextLen`: On entry, the size of the buffer provided in the   parameter. On return, the amount of data actually placed in the buffer.
+- `cipherTextLen`: On entry, the size of the buffer provided in the `cipherText` parameter. On return, the amount of data actually placed in the buffer.
 
 
 ---

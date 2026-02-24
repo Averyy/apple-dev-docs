@@ -31,7 +31,7 @@ The concrete class implementing this protocol determines the initial contents of
 ## Parameters
 
 - `length`: The size, in bytes, of the buffer to create.
-- `type`: Use   to create a buffer for a mesh’s vertex attribute data, or   to create a buffer for a submesh’s index data.
+- `type`: Use [`MDLMeshBufferType.vertex`](mdlmeshbuffertype/vertex.md) to create a buffer for a mesh’s vertex attribute data, or [`MDLMeshBufferType.index`](mdlmeshbuffertype/index.md) to create a buffer for a submesh’s index data.
 
 ## See Also
 

@@ -118,7 +118,7 @@ nearbyFaceWithClassification(to: result.worldTransform.position) { (centerOfFace
     // ...
 ```
 
-The mesh consists of triangles, called . ARKit assigns a classification for each face, and the app searches through the mesh for a face near the intersection point. If the face has a classification, the app displays it onscreen. Because this routine involves extensive processing, the sample processes the mesh faces asynchronously, so the renderer doesn’t stall.
+The mesh consists of triangles, called *faces*. ARKit assigns a classification for each face, and the app searches through the mesh for a face near the intersection point. If the face has a classification, the app displays it onscreen. Because this routine involves extensive processing, the sample processes the mesh faces asynchronously, so the renderer doesn’t stall.
 
 ```swift
 DispatchQueue.global().async {
@@ -189,7 +189,7 @@ if let centerOfFace = centerOfFace {
 
 ##### Occlude Virtual Content with a Mesh
 
- is a feature where parts of the real world cover an app’s virtual content, from the camera’s perspective. To achieve this illusion, RealityKit checks for any meshes in front of virtual content, viewed by the user, and omits drawing any part of the virtual content obscured by those meshes. The sample enables occlusion by adding the [`ARView.Environment.SceneUnderstanding.Options`](https://developer.apple.com/documentation/RealityKit/ARView/Environment-swift.struct/SceneUnderstanding-swift.struct/Options-swift.struct) option to the environment’s [`sceneUnderstanding`](https://developer.apple.com/documentation/RealityKit/ARView/Environment-swift.struct/sceneUnderstanding-swift.property) property.
+*Occlusion* is a feature where parts of the real world cover an app’s virtual content, from the camera’s perspective. To achieve this illusion, RealityKit checks for any meshes in front of virtual content, viewed by the user, and omits drawing any part of the virtual content obscured by those meshes. The sample enables occlusion by adding the [`ARView.Environment.SceneUnderstanding.Options`](https://developer.apple.com/documentation/RealityKit/ARView/Environment-swift.struct/SceneUnderstanding-swift.struct/Options-swift.struct) option to the environment’s [`sceneUnderstanding`](https://developer.apple.com/documentation/RealityKit/ARView/Environment-swift.struct/sceneUnderstanding-swift.property) property.
 
 ```swift
 arView.environment.sceneUnderstanding.options.insert(.occlusion)

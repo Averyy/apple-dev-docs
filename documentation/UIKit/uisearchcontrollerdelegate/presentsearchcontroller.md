@@ -24,7 +24,7 @@ The system calls this method when the user begins editing in the search controll
 
 ## Parameters
 
-- `searchController`: The   object to present.
+- `searchController`: The [`UISearchController`](uisearchcontroller.md) object to present.
 
 ## See Also
 

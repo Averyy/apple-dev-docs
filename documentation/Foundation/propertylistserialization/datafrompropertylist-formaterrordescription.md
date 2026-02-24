@@ -31,8 +31,8 @@ This method is obsolete and will be deprecated soon. Use [`data(fromPropertyList
 ## Parameters
 
 - `plist`: A property list object.
-- `format`: A property list format. For possible values, see  .
-- `errorString`: Upon return, if the conversion is successful,   is  . If the conversion fails, upon return contains a string describing the nature of the error.
+- `format`: A property list format. For possible values, see [`PropertyListSerialization.PropertyListFormat`](propertylistserialization/propertylistformat.md).
+- `errorString`: Upon return, if the conversion is successful, `errorString` is `nil`. If the conversion fails, upon return contains a string describing the nature of the error.
 
 ## See Also
 

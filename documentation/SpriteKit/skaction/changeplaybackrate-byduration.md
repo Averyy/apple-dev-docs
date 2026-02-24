@@ -30,9 +30,21 @@ When the action executes, the audio node’s playback rate animates from its cur
 
 This action is reversible; the reverse is created as if the following code is executed:
 
+**Swift**:
+
+```swift
+let action = SKAction.changePlaybackRate(by: -v, duration: sec)
+```
+
+**Obj-C**:
+
+```objc
+[SKAction changePlaybackRateBy: -v duration: sec];
+```
+
 ## Parameters
 
-- `v`: The amount to change the playback rate by. A playback rate of   represents normal speed.
+- `v`: The amount to change the playback rate by. A playback rate of `1.0` represents normal speed.
 - `duration`: The duration of the animation, in seconds.
 
 ## See Also

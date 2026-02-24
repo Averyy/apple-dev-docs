@@ -47,7 +47,7 @@ To obtain the string representation, this method invokes `NSString`’s   [`init
 
 ## Parameters
 
-- `locale`: An object containing locale information with which to format the description. Use   if you don’t want the description formatted.
+- `locale`: An object containing locale information with which to format the description. Use `nil` if you don’t want the description formatted.
 
 ## See Also
 

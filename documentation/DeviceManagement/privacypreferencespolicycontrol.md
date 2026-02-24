@@ -88,6 +88,10 @@ Specify `com.apple.TCC.configuration-profile-policy` as the payload type.
 - [object PrivacyPreferencesPolicyControl.Services](privacypreferencespolicycontrol/services-data.dictionary.md)
   The privacy policy control services dictionary that controls access on a per app basis.
 
+## Properties
+
+- `Services` (PrivacyPreferencesPolicyControl.Services) *(required)*: A dictionary whose keys are limited to the privacy policy control services.  In the case of conflicting specifications, the most restrictive setting (deny) is used.
+
 
 ---
 

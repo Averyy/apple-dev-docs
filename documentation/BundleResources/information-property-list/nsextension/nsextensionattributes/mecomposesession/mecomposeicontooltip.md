@@ -6,6 +6,10 @@
 **Availability**:
 - macOS 12.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [MEComposeIcon](information-property-list/nsextension/nsextensionattributes/mecomposesession/mecomposeicon.md)

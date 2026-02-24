@@ -33,6 +33,13 @@ This method applies the bar swipe transition filter to an image. The effect tran
 
 The bar swipe transition filter uses the following properties:
 
+- **`inputImage`**: The starting image with the type [`CIImage`](ciimage.md).
+- **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`angle`**: A `float` representing the angle of the motion as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`width`**: A `float` representing the width of the bars in pixels as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`barOffset`**: A `float` representing the offset of one bar in relation to others as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that produces falling bars from the input image to transition to the target image:
 
 ```swift

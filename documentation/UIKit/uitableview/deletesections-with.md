@@ -25,7 +25,7 @@ When this method when is called in an animation block defined by the [`beginUpda
 ## Parameters
 
 - `sections`: An index set that specifies the sections to delete from the table view. If a section exists after the specified index location, it is moved up one index location.
-- `animation`: A constant that either specifies the kind of animation to perform when deleting the section or requests no animation. See   for descriptions of the constants.
+- `animation`: A constant that either specifies the kind of animation to perform when deleting the section or requests no animation. See [`UITableView.RowAnimation`](uitableview/rowanimation.md) for descriptions of the constants.
 
 ## See Also
 

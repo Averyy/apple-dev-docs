@@ -26,7 +26,7 @@ Unregisters the given AudioObjectPropertyListenerBlock from receiving notificati
 ## Parameters
 
 - `inObjectID`: The AudioObject to unregister the listener from.
-- `inAddress`: The AudioObjectPropertyAddress indicating from which property the listener   should be removed.
+- `inAddress`: The AudioObjectPropertyAddress indicating from which property the listener should be removed.
 - `inDispatchQueue`: The dispatch queue on which the listener block was being dispatched to.
 - `inListener`: The AudioObjectPropertyListenerBlock being removed.
 

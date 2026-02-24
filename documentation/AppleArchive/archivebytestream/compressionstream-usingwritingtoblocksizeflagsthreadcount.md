@@ -40,7 +40,7 @@ Good values for `blockSize` are between 256 KB and 16 MB. The 1 MB default value
 - `compressedStream`: An output stream that receives compressed data, the operation only calls write methods.
 - `blockSize`: The compression block size, in bytes.
 - `flags`: Flags that control the behavior of the operation.
-- `threadCount`: The number of worker threads that the operation uses, set to   for default.
+- `threadCount`: The number of worker threads that the operation uses, set to `0` for default.
 
 ## See Also
 

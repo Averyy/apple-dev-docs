@@ -32,7 +32,7 @@ Case transformations aren’t guaranteed to be symmetrical or to produce strings
 
 ## Parameters
 
-- `locale`: The locale. For strings presented to users, pass the current locale ([   ]). To use the system locale, pass  .
+- `locale`: The locale. For strings presented to users, pass the current locale ([[`NSLocale`](nslocale.md) [`current`](nslocale/current.md)]). To use the system locale, pass `nil`.
 
 ## See Also
 

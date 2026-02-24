@@ -17,7 +17,7 @@ func ABSetMe(_ addressBook: ABAddressBookRef!, _ moi: ABPersonRef!)
 ## Parameters
 
 - `addressBook`: The address book for the logged-in user.
-- `moi`: The ABPerson object that represents the logged-in user. Pass   if you don’t want a record to represent the logged-in user.
+- `moi`: The ABPerson object that represents the logged-in user. Pass `NULL` if you don’t want a record to represent the logged-in user.
 
 ## See Also
 

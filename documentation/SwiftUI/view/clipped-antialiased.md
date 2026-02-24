@@ -47,7 +47,7 @@ Text("This long text string is clipped")
 
 ## Parameters
 
-- `antialiased`: A Boolean value that indicates whether the   rendering system applies smoothing to the edges of the clipping   rectangle.
+- `antialiased`: A Boolean value that indicates whether the rendering system applies smoothing to the edges of the clipping rectangle.
 
 ## See Also
 

@@ -26,7 +26,7 @@ A result code.
 ## Parameters
 
 - `inIterator`: The music event iterator whose state you want to know about.
-- `outHasCurEvent`: On output,   (nonzero) if there is an event at the music event iterator’s current position;   (zero) otherwise.
+- `outHasCurEvent`: On output, `true` (nonzero) if there is an event at the music event iterator’s current position; `false` (zero) otherwise.
 
 ## See Also
 

@@ -31,7 +31,7 @@ After your method writes the data to the pasteboard, a remote message is sent to
 ## Parameters
 
 - `pboard`: The pasteboard to receive your data.
-- `types`: An array of   objects listing the types of data that you should write to the pasteboard. You should write data to the pasteboard for as many of the types as you support.
+- `types`: An array of `NSString` objects listing the types of data that you should write to the pasteboard. You should write data to the pasteboard for as many of the types as you support.
 
 ## See Also
 

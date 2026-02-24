@@ -24,8 +24,8 @@ The returned text provider uses the default calendar and time zone information f
 
 ## Parameters
 
-- `startDate`: The start date for the time range. This parameter must not be  .
-- `endDate`: The end date for the time range. The specified date must come after the date in the   parameter. This parameter must not be  .
+- `startDate`: The start date for the time range. This parameter must not be `nil`.
+- `endDate`: The end date for the time range. The specified date must come after the date in the `startDate` parameter. This parameter must not be `nil`.
 
 ## See Also
 

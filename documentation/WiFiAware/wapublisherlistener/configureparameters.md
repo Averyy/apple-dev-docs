@@ -17,7 +17,7 @@ func configureParameters(_ parameters: NWParameters)
 
 ## Parameters
 
-- `parameters`: The   to configure.
+- `parameters`: The `NWParameters` to configure.
 
 ## See Also
 

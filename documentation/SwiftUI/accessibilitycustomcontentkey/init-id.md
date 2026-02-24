@@ -22,8 +22,8 @@ init(_ label: LocalizedStringResource, id: String)
 
 ## Parameters
 
-- `label`: Localized text describing to the user what   is contained in this additional information entry. For example:   “orientation”.
-- `id`: String used to identify the additional   information entry to SwiftUI. Adding an entry will replace any previous   value with the same identifier.
+- `label`: Localized text describing to the user what is contained in this additional information entry. For example: “orientation”.
+- `id`: String used to identify the additional information entry to SwiftUI. Adding an entry will replace any previous value with the same identifier.
 
 ## See Also
 

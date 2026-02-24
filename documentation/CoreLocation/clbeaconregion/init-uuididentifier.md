@@ -19,8 +19,8 @@ init(uuid: UUID, identifier: String)
 
 ## Parameters
 
-- `uuid`: A   that identifies the beacons to target.
-- `identifier`: A unique identifier to associate with the returned region object. You use this identifier to differentiate regions within your app. This value can’t be 
+- `uuid`: A [`NSUUID`](https://developer.apple.com/documentation/Foundation/NSUUID) that identifies the beacons to target.
+- `identifier`: A unique identifier to associate with the returned region object. You use this identifier to differentiate regions within your app. This value can’t be `nil.`
 
 ## See Also
 

@@ -23,8 +23,8 @@ func ODRecordAddValue(_ record: ODRecordRef!, _ attribute: String!, _ value: CFT
 
 - `record`: The record.
 - `attribute`: The attribute.
-- `value`: The value to add to the attribute. Can be a   object or a   object.
-- `error`: An error reference for error details. Can be  .
+- `value`: The value to add to the attribute. Can be a `CFStringRef` object or a `CFDataRef` object.
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

@@ -26,7 +26,7 @@ The command converts `scale` to a half-precision floating-point value before it 
 
 ## Parameters
 
-- `scale`: The value of   can’t be negative, infinite, equal to   (not a number), or a denormalized number.
+- `scale`: A positive, normal floating-point scale factor the render pass applies to the per-patch tessellation factors. The value of `scale` can’t be negative, infinite, equal to `NaN` (not a number), or a denormalized number.
 
 ## See Also
 

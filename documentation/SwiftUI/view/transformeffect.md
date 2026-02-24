@@ -39,7 +39,7 @@ Text("Projection effect using transforms")
 
 ## Parameters
 
-- `transform`: A    to   apply to the view.
+- `transform`: A [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) to apply to the view.
 
 ## See Also
 

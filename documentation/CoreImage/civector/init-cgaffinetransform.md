@@ -29,7 +29,7 @@ The `CGAffineTransform` structure’s `a`, `b`, `c`, `c`, `tx` and `ty` values a
 
 ## Parameters
 
-- `t`: The   structure.
+- `t`: The `CGAffineTransform` structure.
 
 ## See Also
 

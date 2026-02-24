@@ -6,7 +6,7 @@ Select a suitable iterative method to solve a system.
 
 #### Overview
 
-Sparse Iterative methods solve  through an iterative process that only requires multiplication by  or . However, if  is numerically difficult, the iterative process may fail to converge to a solution. Even for problems where the process converges, it may do so slowly. You can fix both of these issues through the application of a problem-specific preconditioner that approximates the inverse of .
+Sparse Iterative methods solve *Ax = b* through an iterative process that only requires multiplication by *A* or *A__ᵀ*. However, if *A* is numerically difficult, the iterative process may fail to converge to a solution. Even for problems where the process converges, it may do so slowly. You can fix both of these issues through the application of a problem-specific preconditioner that approximates the inverse of *A*.
 
 ## Topics
 

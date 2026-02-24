@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Solves the system  using the supplied single-precision factorization of , in place.
+Solves the system *Ax = b* using the supplied single-precision factorization of *A*, in place.
 
 **Availability**:
 - iOS 11.0+
@@ -62,21 +62,21 @@ bValues.withUnsafeMutableBufferPointer { bPtr in
 
 On return, `bValues` contains the values `[1.0, 2.0, 3.0]`.
 
-If the factorization is , the function returns the solution of minimum norm  for underdetermined systems.
+If the factorization is *A = QR*, the function returns the solution of minimum norm *‖ x ‖₂* for underdetermined systems.
 
-If the factorization is , the function returns the least squares solution  for overdetermined systems.
+If the factorization is *A = QR*, the function returns the least squares solution *minₓ ‖ AX - B ‖₂* for overdetermined systems.
 
-If the factorization is [`SparseFactorizationCholeskyAtA`](sparsefactorizationcholeskyata.md), the factorization is of , and the solution that returns is for the system .
+If the factorization is [`SparseFactorizationCholeskyAtA`](sparsefactorizationcholeskyata.md), the factorization is of *AᵀA*, and the solution that returns is for the system *AᵀAX = B*.
 
 ## Parameters
 
 - `Factored`: The factored matrix to solve.
-- `xb`: On input, the vector  . On return, the function overwrites with the vector  . If   has dimension  , this parameter must have length  , where  .
+- `xb`: On input, the vector *b*. On return, the function overwrites with the vector *x*. If *A* has dimension *m x n*, this parameter must have length *k*, where *k = max(m,n)*.
 
 ## See Also
 
 - [func SparseSolve(SparseOpaqueFactorization_Double, DenseVector_Double)](sparsesolve(_:_:)-pofy.md)
-  Solves the system  using the supplied double-precision factorization of .
+  Solves the system *Ax = x* using the supplied double-precision factorization of *A*.
 
 
 ---

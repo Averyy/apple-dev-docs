@@ -32,7 +32,7 @@ When you schedule a notification request containing the attachment, the system m
 ## Parameters
 
 - `identifier`: The unique identifier of the attachment. Use this string to identify the attachment later. If you specify an empty string, this method creates a unique identifier string for you.
-- `URL`: The URL of the file you want to attach to the notification. The URL must be a file URL and the file must be readable by the current process. This parameter must not be  . For a list of supported file types, see  .
+- `URL`: The URL of the file you want to attach to the notification. The URL must be a file URL and the file must be readable by the current process. This parameter must not be `nil`. For a list of supported file types, see [`Supported File Types`](unnotificationattachment#Supported-File-Types.md).
 - `options`: A dictionary of options related to the attached file. Use the options to specify meta information about the attachment, such as the clipping rectangle to use for the resulting thumbnail.
 
 ## See Also

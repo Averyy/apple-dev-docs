@@ -27,7 +27,7 @@ All channels added to the reporter will be represented in the resulting legend e
 
 Legends must be published together as an array under the `kIOReportLegendKey` in the I/O Kit registry.  The [`IOReportLegend`](ioreportlegend.md) class can be used to properly combine legend entries from multiple reporters as well as to put channels into groups of interest to observers.  When published, individual legend entries share characteristics such as group and sub-group.  Multiple [`IOReporter`](ioreporter.md) instances are required to produce independent legend entries which can then be published with different characteristics.
 
-Drivers wishing to publish legends should do so as part of their `::start()` routine.  As superclasses  have installed legend entries, any existing existing legend should be retrieved and IOReportLegend used to merge it with the new entries.
+Drivers wishing to publish legends should do so as part of their `::start()` routine.  As superclasses *may* have installed legend entries, any existing existing legend should be retrieved and IOReportLegend used to merge it with the new entries.
 
 Recommendations for best practices are forthcoming.
 

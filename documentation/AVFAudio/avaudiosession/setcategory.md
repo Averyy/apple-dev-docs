@@ -27,7 +27,7 @@ The audio session’s category defines how the app uses audio. Typically, you se
 
 ## Parameters
 
-- `category`: The category to apply to the audio session. See   for supported category values.
+- `category`: The category to apply to the audio session. See [`AVAudioSession.Category`](avaudiosession/category-swift.struct.md) for supported category values.
 
 ## See Also
 

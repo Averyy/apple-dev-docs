@@ -24,7 +24,7 @@ class let argumentDomain: String
 
 When someone launches your app from Xcode or the command-line, they can override setting values using command-line arguments. The defaults system stores those overrides in this domain, which is volatile and resets with each app launch. Values in this domain override most other domains, including your app-specific settings.
 
-To specify custom settings from the command line, add the `-default` parameter to your command-line invocation followed by a  string with the key and value you want to set.
+To specify custom settings from the command line, add the `-default` parameter to your command-line invocation followed by a *key=value* string with the key and value you want to set.
 
 ## See Also
 

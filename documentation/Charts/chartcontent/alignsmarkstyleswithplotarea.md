@@ -27,7 +27,7 @@ Marks map unit-point coordinates within the plot area’s bounds.
 
 ## Parameters
 
-- `aligns`: A Boolean value that indicates whether to align   this item’s styles with the plotting area.
+- `aligns`: A Boolean value that indicates whether to align this item’s styles with the plotting area.
 
 ## See Also
 

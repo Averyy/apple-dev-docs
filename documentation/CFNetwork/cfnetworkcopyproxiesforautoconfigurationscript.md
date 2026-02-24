@@ -33,7 +33,7 @@ The keys for username and password are optional and are present only if the user
 
 ## Parameters
 
-- `proxyAutoConfigurationScript`: A   containing the code of the autoconfiguration script to execute.
+- `proxyAutoConfigurationScript`: A `CFString` containing the code of the autoconfiguration script to execute.
 - `targetURL`: The URL your application intends to access.
 - `error`: The address of an error object reference that is overwritten on return if an error occurs.
 

@@ -30,8 +30,8 @@ If `path1` and `path2` are directories, the contents are the list of files and s
 
 ## Parameters
 
-- `path1`: The path of a file or directory to compare with the contents of  .
-- `path2`: The path of a file or directory to compare with the contents of  .
+- `path1`: The path of a file or directory to compare with the contents of `path2`.
+- `path2`: The path of a file or directory to compare with the contents of `path1`.
 
 ## See Also
 

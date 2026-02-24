@@ -10,6 +10,12 @@ An entitlement to enable a location-sharing app to query someone’s location in
 - iPadOS 7.0+
 - macOS 10.9+
 
+
+
+**Type**: boolean
+
+**Default**: `true`
+
 #### Discussion
 
 This entitlement enables your app to monitor for Apple Push Notification service (APNs) pushes with the `location` push type, and receive pushes in your Location Push Service Extension. For more information about the `location` push type, see [`Sending notification requests to APNs`](https://developer.apple.com/documentation/UserNotifications/sending-notification-requests-to-apns).

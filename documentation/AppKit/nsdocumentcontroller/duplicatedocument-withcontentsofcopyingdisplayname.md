@@ -33,8 +33,8 @@ In most cases, an app does not need to call this method directly.
 ## Parameters
 
 - `url`: The URL locating the document from which contents of the new document are copied.
-- `duplicateByCopying`: If  , the contents located at the passed-in URL are copied into a file located in the directory used for the autosaved contents of untitled documents.
-- `displayNameOrNil`: If not   then this value is used to derive a display name for the new document that does not match one that is already in use by an open document.
+- `duplicateByCopying`: If [`true`](https://developer.apple.com/documentation/Swift/true), the contents located at the passed-in URL are copied into a file located in the directory used for the autosaved contents of untitled documents.
+- `displayNameOrNil`: If not `nil` then this value is used to derive a display name for the new document that does not match one that is already in use by an open document.
 
 ## See Also
 

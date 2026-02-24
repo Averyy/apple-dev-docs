@@ -25,8 +25,8 @@ func hv_vcpu_read_register(_ vcpu: hv_vcpuid_t, _ reg: hv_x86_reg_t, _ value: Un
 ## Parameters
 
 - `vcpu`: The instance of the vCPU.
-- `reg`: The ID of the register. For possible values, see  .
-- `value`: The value of the register  , on output.
+- `reg`: The ID of the register. For possible values, see [`hv_x86_reg_t`](hv_x86_reg_t.md).
+- `value`: The value of the register `reg`, on output.
 
 ## See Also
 

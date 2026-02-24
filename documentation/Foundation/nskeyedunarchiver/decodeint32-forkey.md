@@ -30,7 +30,7 @@ If the archived value was encoded with a different size but is still an integer,
 
 ## Parameters
 
-- `key`: A key in the archive within the current decoding scope.   must not be  .
+- `key`: A key in the archive within the current decoding scope. `key` must not be `nil`.
 
 ## See Also
 

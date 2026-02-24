@@ -42,8 +42,8 @@ Model3D(named: "robot")
 ## Parameters
 
 - `angle`: The angle by which to rotate the view’s content.
-- `axis`: The axis of rotation, specified as a tuple with named   elements for each of the three spatial dimensions.
-- `anchor`: The unit point within the view about which to perform   the rotation. The default value is  .
+- `axis`: The axis of rotation, specified as a tuple with named elements for each of the three spatial dimensions.
+- `anchor`: The unit point within the view about which to perform the rotation. The default value is [`center`](unitpoint3d/center.md).
 
 ## See Also
 

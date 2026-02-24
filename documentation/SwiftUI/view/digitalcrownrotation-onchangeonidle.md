@@ -35,9 +35,9 @@ struct DigitalCrown: View {
 
 ## Parameters
 
-- `binding`: A binding to a value that updates as the user   rotates the Digital Crown. The implicit range is   .
+- `binding`: A binding to a value that updates as the user rotates the Digital Crown. The implicit range is `(-infinity, +infinity)`.
 - `onChange`: A block that is called as the Digital Crown is rotated.
-- `onIdle`: A block that is called when the Digital Crown has settled to   an idle state.
+- `onIdle`: A block that is called when the Digital Crown has settled to an idle state.
 
 ## See Also
 

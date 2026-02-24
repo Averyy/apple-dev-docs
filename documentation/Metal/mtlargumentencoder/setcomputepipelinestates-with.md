@@ -21,7 +21,7 @@ func setComputePipelineStates(_ pipelines: UnsafePointer<(any MTLComputePipeline
 ## Parameters
 
 - `pipelines`: An array of pipeline states the method encodes.
-- `range`: A range of indices within the argument buffer for each element in  .   The values correspond to either the index IDs of declarations in   Metal Shading Language (MSL) or the   property   of   instances.
+- `range`: A range of indices within the argument buffer for each element in `pipelines`. The values correspond to either the index IDs of declarations in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instances.
 
 ## See Also
 

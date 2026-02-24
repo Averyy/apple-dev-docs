@@ -21,7 +21,7 @@ init(_ value: some ConvertibleToGeneratedContent, id: GenerationID)
 ## Parameters
 
 - `value`: The underlying value.
-- `id`: The   for this content.
+- `id`: The [`GenerationID`](generationid.md) for this content.
 
 ## See Also
 

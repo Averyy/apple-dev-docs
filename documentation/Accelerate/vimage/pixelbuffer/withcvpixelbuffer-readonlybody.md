@@ -38,8 +38,8 @@ src.withCVPixelBuffer(readOnly: false) { cvPixelBuffer in
 
 ## Parameters
 
-- `readOnly`: A Boolean value that specifies whether the function locks the   with the   flag. If the closure doesn’t modify the data, set this parameter to  .
-- `body`: A closure with a   parameter that points to the underlying pixel buffer image data.
+- `readOnly`: A Boolean value that specifies whether the function locks the [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) with the [`readOnly`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferLockFlags/readOnly) flag. If the closure doesn’t modify the data, set this parameter to `true`.
+- `body`: A closure with a [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) parameter that points to the underlying pixel buffer image data.
 
 ## See Also
 

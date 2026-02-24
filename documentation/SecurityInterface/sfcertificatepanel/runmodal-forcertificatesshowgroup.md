@@ -24,8 +24,8 @@ The behavior of this method is somewhat different in macOS 10.4 and later versus
 
 ## Parameters
 
-- `certificates`: The certificates to display. Pass an   containing one or more objects of type   in this parameter. The first certificate in the array must be the leaf certificate. The other certificates (if any) can be included in any order.
-- `showGroup`: Specifies whether additional certificates (other than the leaf certificate) are displayed. To show only a single certificate, specify only one   in the array and set   to  .
+- `certificates`: The certificates to display. Pass an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) containing one or more objects of type [`SecCertificate`](https://developer.apple.com/documentation/Security/SecCertificate) in this parameter. The first certificate in the array must be the leaf certificate. The other certificates (if any) can be included in any order.
+- `showGroup`: Specifies whether additional certificates (other than the leaf certificate) are displayed. To show only a single certificate, specify only one [`SecCertificate`](https://developer.apple.com/documentation/Security/SecCertificate) in the array and set `showGroup` to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

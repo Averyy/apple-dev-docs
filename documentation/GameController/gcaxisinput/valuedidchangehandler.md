@@ -24,6 +24,10 @@ var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCAxisInput, Float)
 
 The block’s parameters are:
 
+- **`element`**: The element whose value changed.
+- **`input`**: The input object that changed.
+- **`value`**: The value of the axis at the time the input object calls this handler.
+
 ## See Also
 
 - [var value: Float](gcaxisinput/value.md)

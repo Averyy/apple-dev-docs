@@ -16,7 +16,7 @@ func setBezeled(_ flag: Bool)
 
 ## Parameters
 
-- `flag`:   to display a bezel around all entries; otherwise,   to show no bezel around all entries.
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) to display a bezel around all entries; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) to show no bezel around all entries.
 
 ## See Also
 

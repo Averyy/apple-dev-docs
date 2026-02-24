@@ -30,7 +30,7 @@ Note that both the string and the attributes dictionary are copied. The specifie
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new attributed string. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new attributed string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `str`: A string that specifies the characters to use in the new attributed string. This value is copied.
 - `attributes`: A dictionary that contains the attributes to apply to the new attributed string. This value is copied.
 

@@ -16,13 +16,33 @@ HealthKit also uses pairs of closely related classes that you need to use togeth
 
 HealthKit saves a variety of data types in the HealthKit Store:
 
+- **Characteristic data**: Characteristics that typically don’t change, such as the user’s birthdate, blood type, biological sex, and skin type. You can read this data directly from the HealthKit store, using the [`dateOfBirth()`](hkhealthstore/dateofbirth().md), [`bloodType()`](hkhealthstore/bloodtype().md), [`biologicalSex()`](hkhealthstore/biologicalsex().md), and [`fitzpatrickSkinType()`](hkhealthstore/fitzpatrickskintype().md) methods. Your application can’t save characteristic data. The user must enter or modify this data using the Health app.
+- **Sample data**: Samples that represent a measurement at a particular point in time. All sample classes are subclasses of the [`HKSample`](hksample.md) class, which is a subclass of the [`HKObject`](hkobject.md) class. For more information, see [`Samples`](samples.md).
+- **Workout data**: Samples that store information about fitness and exercise activities. While [`HKWorkout`](hkworkout.md) is a subclass of [`HKSample`](hksample.md), it behaves somewhat differently than other sample subclasses. For more information, see Workout data.
+- **Source data**: Information about a sample’s source. The [`HKSourceRevision`](hksourcerevision.md) object contains information about the app or device that saved the sample. The [`HKDevice`](hkdevice.md) object contains information about the hardware device that generated the data.
+- **Deleted objects**: An object that represents a sample after something deletes it from the HealthKit store. HealthKit uses an [`HKDeletedObject`](hkdeletedobject.md) instance to temporarily store the UUID of deleted samples. You can use deleted objects to respond when the user or another app deletes an object. For more information, see [`HKAnchoredObjectQuery`](hkanchoredobjectquery.md) and [`HKDeletedObject`](hkdeletedobject.md).
+
 ##### Properties of Objects and Samples
 
 The [`HKObject`](hkobject.md) class is the superclass of all HealthKit sample types. All [`HKObject`](hkobject.md) subclasses are immutable. Each object has the following properties:
 
+- **UUID**: A unique identifier for that particular entry.
+- **Metadata**: A dictionary containing additional information about the entry. The metadata can contain both predefined and custom keys. The predefined keys facilitate the sharing of data between apps. Custom keys help extend a given HealthKit object type, adding app-specific data to the entry.
+- **Source Revision**: The source of the sample. The source can be a device that directly saves data into HealthKit or an app. HealthKit automatically records each object’s source and version when it saves the data to the HealthKit store. This property is available only on objects retrieved from the store.
+- **Device**: The hardware device that generated the data stored in this sample.
+
 The [`HKSample`](hksample.md) class is a subclass of [`HKObject`](hkobject.md). Sample objects represent data at a particular point in time, and all sample objects are subclasses of the [`HKSample`](hksample.md) class. They have the following properties:
 
+- **Type**: The sample type, such as a sleep analysis sample, a height sample, or a step count sample.
+- **Start date**: The sample’s start time.
+- **End date**: The sample’s end time. If the sample represents a single point in time, the end time should equal the start time. If the sample represents data collected over a time interval, the end time should occur after the start time.
+
 Samples are further divided into four concrete subclasses:
+
+- **Category samples**: Data that can you can classify into a finite set of categories. See [`HKCategorySample`](hkcategorysample.md).
+- **Quantity samples**: Data that you can store as numeric values. Quantity samples are the most common data types in HealthKit. These include the user’s height and weight, as well as other data such as the number of steps taken, the user’s temperature, and their pulse rate. See [`HKQuantitySample`](hkquantitysample.md).
+- **Correlations**: Composite data containing one or more samples. HealthKit uses correlations to represent food and blood pressure. You should always use a correlation when creating food or blood pressure data. See [`HKCorrelation`](hkcorrelation.md).
+- **Workouts**: Data representing a physical activity, like running, swimming, or even play. Workouts often have *type*, *duration*, *distance*, and *energy burned* properties. You can also associate a workout with additional, fine-grained samples. Unlike correlations, the workout doesn’t contain these samples; however, you can query for them using the workout. For more information, see [`HKWorkout`](hkworkout.md).
 
 ##### Threading
 

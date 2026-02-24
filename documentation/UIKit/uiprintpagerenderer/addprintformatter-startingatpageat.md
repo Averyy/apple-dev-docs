@@ -23,8 +23,8 @@ You can dissociate a print formatter from its page renderer by calling the [`rem
 
 ## Parameters
 
-- `formatter`: The   object to add to the page renderer. A print formatter can be an instance of  ,  , or  .
-- `pageIndex`: The index identifying the first page with which the print formatter should be associated with. This value overrides the   property of the print formatter.
+- `formatter`: The [`UIPrintFormatter`](uiprintformatter.md) object to add to the page renderer. A print formatter can be an instance of [`UISimpleTextPrintFormatter`](uisimpletextprintformatter.md), [`UIMarkupTextPrintFormatter`](uimarkuptextprintformatter.md), or [`UIViewPrintFormatter`](uiviewprintformatter.md).
+- `pageIndex`: The index identifying the first page with which the print formatter should be associated with. This value overrides the [`startPage`](uiprintformatter/startpage.md) property of the print formatter.
 
 ## See Also
 

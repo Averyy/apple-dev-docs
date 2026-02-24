@@ -27,7 +27,7 @@ You should rarely need to use this method, however. The [`scroll(_:)`](nsview/sc
 ## Parameters
 
 - `rect`: A rectangle defining a region of the view.
-- `delta`: A   structure that specifies an offset from  ’s origin.
+- `delta`: A `NSSize` structure that specifies an offset from `aRect`’s origin.
 
 ## See Also
 

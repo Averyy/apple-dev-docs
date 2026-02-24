@@ -24,7 +24,7 @@ FSKit guarantees that for every [`FSItem`](fsitem.md) returned by the volume, a 
 ## Parameters
 
 - `item`: The item to reclaim.
-- `reply`: A block or closure to indicate success or failure. If removal fails, pass an error as the one parameter to the reply handler. If removal succeeds, pass  . For an   Swift implementation, there’s no reply handler; simply throw an error or return normally.
+- `reply`: A block or closure to indicate success or failure. If removal fails, pass an error as the one parameter to the reply handler. If removal succeeds, pass `nil`. For an `async` Swift implementation, there’s no reply handler; simply throw an error or return normally.
 
 ## See Also
 

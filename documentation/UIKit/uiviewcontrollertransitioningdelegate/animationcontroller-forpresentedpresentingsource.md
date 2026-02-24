@@ -33,8 +33,8 @@ For information on implementing your transition animator object, see [`UIViewCon
 ## Parameters
 
 - `presented`: The view controller object that is about to be presented onscreen.
-- `presenting`: The view controller that is presenting the view controller in the   parameter. The object in this parameter could be the root view controller of the window, a parent view controller that is marked as defining the current context, or the last view controller that was presented. This view controller may or may not be the same as the one in the   parameter.
-- `source`: The view controller whose   method was called.
+- `presenting`: The view controller that is presenting the view controller in the `presented` parameter. The object in this parameter could be the root view controller of the window, a parent view controller that is marked as defining the current context, or the last view controller that was presented. This view controller may or may not be the same as the one in the `source` parameter.
+- `source`: The view controller whose [`present(_:animated:completion:)`](uiviewcontroller/present(_:animated:completion:).md) method was called.
 
 ## See Also
 

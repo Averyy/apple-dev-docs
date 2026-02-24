@@ -24,8 +24,8 @@ A reference to a specified record of `inNode`.
 - `node`: The node.
 - `recordType`: The type of the record.
 - `recordName`: The name of the record.
-- `attributes`: An array of directory attributes to be copied in addition to the record. Can be  .
-- `error`: An error reference for error details. Can be  .
+- `attributes`: An array of directory attributes to be copied in addition to the record. Can be `NULL`.
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

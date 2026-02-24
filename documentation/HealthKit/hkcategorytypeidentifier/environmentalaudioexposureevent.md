@@ -21,7 +21,7 @@ static let environmentalAudioExposureEvent: HKCategoryTypeIdentifier
 
 #### Discussion
 
-Apple Watch saves a [`environmentalAudioExposureEvent`](hkcategorytypeidentifier/environmentalaudioexposureevent.md) sample when it generates a , sent when the average sound level reaches or exceeds a specified threshold for three minutes. Apple Watch doesn’t record or save any sounds. Users can enable or disable these notifications, or set the threshold from Settings > Noise.
+Apple Watch saves a [`environmentalAudioExposureEvent`](hkcategorytypeidentifier/environmentalaudioexposureevent.md) sample when it generates a *noise notification*, sent when the average sound level reaches or exceeds a specified threshold for three minutes. Apple Watch doesn’t record or save any sounds. Users can enable or disable these notifications, or set the threshold from Settings > Noise.
 
 Environmental audio exposure event samples are read-only. You can request permission to read the samples using this identifier, but you can’t request authorization to share them. This means you can’t save new environmental audio exposure events to the HealthKit store. To add test data in iOS Simulator, open the Health app and select Browse > Hearing > Noise Notifications > Add Data.
 

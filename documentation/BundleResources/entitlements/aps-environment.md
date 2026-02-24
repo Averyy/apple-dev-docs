@@ -12,6 +12,10 @@ The environment for push notifications.
 - visionOS 1.0+
 - watchOS 3.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key specifies whether to use the development or production Apple Push Notification service (APNs) environment when registering for push notifications.

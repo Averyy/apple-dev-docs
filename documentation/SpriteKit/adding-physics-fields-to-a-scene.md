@@ -12,11 +12,59 @@ A physics field is a node that is placed inside your scene’s node tree. When t
 
 The following code shows one of these fields, a linear gravity field. In this example, a field node replaces the default gravity provided by the scene’s physics world. First, the scene’s default gravity is disabled. Then, the scene creates a linear gravity field with a vector pointing toward the bottom of the screen and gives the node a strength equal to Earth’s gravity. Finally, it adds the node to itself.
 
+**Swift**:
+
+```swift
+physicsWorld.gravity = CGVector(dx:0, dy: 0);
+
+
+let gravityVector = vector_float3(0,-1,0);
+
+
+let gravityNode = SKFieldNode.linearGravityField(withVector: gravityVector)
+
+
+gravityNode.strength = 9.8
+
+
+addChild(gravityNode)
+```
+
+**Obj-C**:
+
+```objc
+self.physicsWorld.gravity = CGVectorMake(0,0);
+
+
+vector_float3 gravityVector = {0,-1,0};
+
+
+SKFieldNode *gravityNode = [SKFieldNode linearGravityFieldWithVector: gravityVector];
+
+
+gravityNode.strength = 9.8;
+
+
+[self addChild:gravityNode];
+```
+
 Here are some reasons you might use a field node rather than the default gravity:
 
 - To vary the strength and direction of gravity independently of each other.
 - To vary the strength of the field using actions.
 - To change the direction of gravity by rotating the field node.
+
+**Swift**:
+
+```swift
+gravityNode.zRotation = CGFloat.pi // Flip gravity.
+```
+
+**Obj-C**:
+
+```objc
+gravityNode.zRotation = M_PI; // Flip gravity.
+```
 
 - To enable and disable gravity using the field node’s [`isEnabled`](skfieldnode/isenabled.md) property, without changing the field node’s [`strength`](skfieldnode/strength.md) or direction.
 
@@ -28,12 +76,72 @@ Field nodes are categorized just like physics bodies. Similarly, physics bodies 
 
 The following code creates a category for gravity effects. When a planet is created, a separate radial gravity field node is added to it as a child, and is configured to use the gravity category. Whenever a new physics body is created, the body’s mask is configured to determine which fields should affect it. Ships are affected by gravity, and missiles are affected by force fields.
 
+**Swift**:
+
+```swift
+let gravityCategory: UInt32 = 0x1 << 0
+let shieldCategory: UInt32 = 0x1 << 1
+...
+let gravity = SKFieldNode.radialGravityField()
+gravity.strength = 3
+gravity.categoryBitMask = gravityCategory
+planet.addChild(gravity)
+...
+ship.physicsBody?.fieldBitMask = gravityCategory
+...
+missile.physicsBody?.fieldBitMask = shieldCategory
+```
+
+**Obj-C**:
+
+```objc
+static const uint32_t gravityCategory     =  0x1 << 0;
+static const uint32_t shieldCategory      =  0x1 << 1;
+...
+SKFieldNode *gravity = [SKFieldNode radialGravityField];
+gravity.strength = 3;
+gravity.categoryBitMask = gravityCategory;
+[planet addChild:gravity];
+...
+ship.physicsBody.fieldBitMask = gravityCategory;
+...
+missile.physicsBody.fieldBitMask = shieldCategory;
+```
+
 In this example, the force field is a shield object that deflects incoming missiles. You could implement the shield by creating another radial gravity field, but physics bodies are repelled by negative field strength. You probably wouldn’t want the field to affect the whole scene, either—only nearby missiles. In this case, you would define the area that a field affects by using these properties:
 
 - A field node’s region property determines the area where the field can affect things. By default, this region covers the entire scene. However, you can choose to give the region a finite shape instead. For the forcefield, a circular area is fine, but other shapes are possible. You can even construct them using constructive set geometry (CSG).
 - A field node’s falloff property determines how fast the field loses its strength. You can choose to have the field not lose strength at all or you can choose to have it fall off more quickly than the default. For a radial gravity field, the default is to have it drop off based on the square of the distance to the other body’s center. Not all field types are affected by the [`falloff`](skfieldnode/falloff.md) property.
 
 The following code adds a temporary force field to the rocket ship. The field node is created and configured to repel missiles. Then a circular region is added to limit the area affected by the node, and the field is configured so that its strength drops off more quickly as a function of distance. Finally, the field should weaken and disappear so that the ship is not invulnerable. The field is weakened using an action that first animates a drop in strength to nothing, and then removes the shield node. In an actual game, the shield effect might be embellished with a graphical effect rendered on top of the ship.
+
+**Swift**:
+
+```swift
+let shield = SKFieldNode.radialGravityField()
+shield.strength = -5
+shield.categoryBitMask = shieldCategory
+shield.region = SKRegion(radius: 100)
+shield.falloff = 4
+shield.run(SKAction.sequence([
+    SKAction.strength(to: 0, duration: 2.0),
+    SKAction.removeFromParent()
+    ]))
+ship.addChild(shield)
+```
+
+**Obj-C**:
+
+```objc
+SKFieldNode *shield = [SKFieldNode radialGravityField];
+shield.strength = -5;
+shield.categoryBitMask = shieldCategory;
+shield.region = [[SKRegion alloc] initWithRadius:100];
+shield.falloff = 4;
+[shield runAction:[SKAction sequence:@[
+    [SKAction strengthTo:0 duration:2.0],      [SKAction removeFromParent]]]];
+[ship addChild:shield];
+```
 
 
 ---

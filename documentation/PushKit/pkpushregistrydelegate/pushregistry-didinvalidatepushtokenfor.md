@@ -25,8 +25,8 @@ The system calls this method when a previously provided push token is no longer 
 
 ## Parameters
 
-- `registry`: The   instance responsible for the delegate callback.
-- `type`: This is a   constant, which is present in  .
+- `registry`: The [`PKPushRegistry`](pkpushregistry.md) instance responsible for the delegate callback.
+- `type`: This is a [`PKPushType`](pkpushtype.md) constant, which is present in `[registry desiredPushTypes]`.
 
 ## See Also
 

@@ -28,7 +28,7 @@ This method has no effect if it is called with an authentication challenge that 
 ## Parameters
 
 - `credential`: The credential to use for authentication.
-- `challenge`: The challenge for which to use  .
+- `challenge`: The challenge for which to use `credential`.
 
 ## See Also
 

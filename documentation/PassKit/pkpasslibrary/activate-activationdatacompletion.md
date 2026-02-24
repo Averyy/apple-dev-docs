@@ -26,7 +26,8 @@ You must provision the Secure Element pass and make sure it’s in the [`PKSecur
 
 - `secureElementPass`: The Secure Element pass to activate.
 - `activationData`: A cryptographic value that the activation process requires.
-- `completion`: A closure that PassKit executes after it attempts activation.
+- `completion`: A closure that PassKit executes after it attempts activation. - **`success`**: A value that indicates whether activation is successful..
+- **`error`**: If activation fails, an error that describes the failure; otherwise, otherwise, `nil`.
 
 ## See Also
 

@@ -10,6 +10,10 @@
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [UIPrerenderedIcon](information-property-list/cfbundleicons/cfbundlealternateicons/appiconreferencename/uiprerenderedicon.md)

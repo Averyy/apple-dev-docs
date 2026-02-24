@@ -29,7 +29,7 @@ This convenience function calculates the minimum amount of space needed in the o
 
 ## Parameters
 
-- `sourceFormat`: The pixel format of the source image, corresponding to the   object of the   method.
+- `sourceFormat`: The pixel format of the source image, corresponding to the `sourceTexture` object of the [`encode(to:sourceTexture:histogram:histogramOffset:)`](mpsimagehistogram/encode(to:sourcetexture:histogram:histogramoffset:).md) method.
 
 ## See Also
 

@@ -60,9 +60,10 @@ For more information on the background delivery completion handler, see [`HKObse
 
 ## Parameters
 
-- `type`: The type of data to observe. This object can be a   ,  ,  , or  .   is not a supported type for background delivery.
-- `frequency`: The maximum frequency of the updates. The system wakes your app from the background at most once per time period specified. For a complete list of valid frequencies, see  .
-- `completion`: A block that this method calls as soon as it enables background delivery. It passes the following parameters:
+- `type`: The type of data to observe. This object can be a [`HKCharacteristicType`](hkcharacteristictype.md) , [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), or [`HKWorkoutType`](hkworkouttype.md). [`HKCorrelationType`](hkcorrelationtype.md) is not a supported type for background delivery.
+- `frequency`: The maximum frequency of the updates. The system wakes your app from the background at most once per time period specified. For a complete list of valid frequencies, see [`HKUpdateFrequency`](hkupdatefrequency.md).
+- `completion`: A block that this method calls as soon as it enables background delivery. It passes the following parameters: - **`success`**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/Swift/true) if the system successfully enabled background delivery; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- **`error`**: An error object. If an error occurred, this object contains information about the error; otherwise, it is `nil`.
 
 ## See Also
 

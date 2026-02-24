@@ -39,9 +39,9 @@ You must not specify the [`commonModes`](cfrunloopmode/commonmodes.md) constant 
 
 ## Parameters
 
-- `mode`: The run loop mode to run.   can be any arbitrary CFString. You do not need to explicitly create a run loop mode, although a run loop mode needs to contain at least one source or timer to run.
-- `seconds`: The length of time to run the run loop. If  , only one pass is made through the run loop before returning; if multiple sources or timers are ready to fire immediately, only one (possibly two if one is a version 0 source) will be fired, regardless of the value of  .
-- `returnAfterSourceHandled`: A flag indicating whether the run loop should exit after processing one source. If  , the run loop continues processing events until   has passed.
+- `mode`: The run loop mode to run. `mode` can be any arbitrary CFString. You do not need to explicitly create a run loop mode, although a run loop mode needs to contain at least one source or timer to run.
+- `seconds`: The length of time to run the run loop. If `0`, only one pass is made through the run loop before returning; if multiple sources or timers are ready to fire immediately, only one (possibly two if one is a version 0 source) will be fired, regardless of the value of `returnAfterSourceHandled`.
+- `returnAfterSourceHandled`: A flag indicating whether the run loop should exit after processing one source. If `false`, the run loop continues processing events until `seconds` has passed.
 
 ## See Also
 

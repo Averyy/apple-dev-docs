@@ -22,8 +22,8 @@ This method can be used for implementing the same functionality as the `NSTextVi
 
 ## Parameters
 
-- `attrString`: The attributed string for which to show the definition. If the view is an instance of NSTextView, the   can be  , in which case the text view will automatically supply values suitable for displaying definitions for the specified range within its text content.
-- `textBaselineOrigin`: Specifies the baseline origin of   in the view’s coordinate system.
+- `attrString`: The attributed string for which to show the definition. If the view is an instance of NSTextView, the `attrString` can be `nil`, in which case the text view will automatically supply values suitable for displaying definitions for the specified range within its text content.
+- `textBaselineOrigin`: Specifies the baseline origin of `attrString` in the view’s coordinate system.
 
 ## See Also
 

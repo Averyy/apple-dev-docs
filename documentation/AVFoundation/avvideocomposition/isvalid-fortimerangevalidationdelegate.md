@@ -32,9 +32,9 @@ This method raises an exception if the delegate modifies the video composition�
 
 ## Parameters
 
-- `asset`: Pass   to skip that validation.
-- `timeRange`: A time range over which to validate instructions. The method validates only instructions with time ranges that overlap with this time range. To validate all instructions that you can use for playback or other processing, regardless of time range, pass  .
-- `validationDelegate`: Pass   if you don’t require the details.
+- `asset`: An asset object, if you require validating the time ranges of the instructions against the duration of the asset and the track IDs of the layer instructions against the asset’s tracks. Pass `nil` to skip that validation.
+- `timeRange`: A time range over which to validate instructions. The method validates only instructions with time ranges that overlap with this time range. To validate all instructions that you can use for playback or other processing, regardless of time range, pass `CMTimeRange(start: .zero, duration: .positiveInfinity)`.
+- `validationDelegate`: An object that adopts the [`AVVideoCompositionValidationHandling`](avvideocompositionvalidationhandling.md) protocol to receive detailed information about problematic sections of a video composition during processing. Pass `nil` if you don’t require the details.
 
 ## See Also
 

@@ -20,8 +20,8 @@ If the split view controller’s view finishes loading, and the split view item 
 
 ## Parameters
 
-- `splitViewItem`: The split view item to add.
-- `index`: The index position for adding the split view item in the   array.
+- `splitViewItem`: The split view item to add. > ❗ **Important**:  Before you add a split view item, it must be non-`nil` and it must have an associated view controller, or the system throws an exception.
+- `index`: The index position for adding the split view item in the [`splitViewItems`](nssplitviewcontroller/splitviewitems.md) array. > ❗ **Important**:  If the index value is out of bounds (less than `0` or greater than the count of the array), the system throws an exception.
 
 ## See Also
 

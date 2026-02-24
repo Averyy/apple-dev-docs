@@ -24,9 +24,9 @@ An OSStatus result code.
 
 ## Parameters
 
-- `endpt`: The endpoint with the   to return.
-- `ref1`: On exit, the first  .
-- `ref2`: On exit, the second  .
+- `endpt`: The endpoint with the `refCons` to return.
+- `ref1`: On exit, the first `refCon`.
+- `ref2`: On exit, the second `refCon`.
 
 ## See Also
 

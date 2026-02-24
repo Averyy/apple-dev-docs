@@ -22,18 +22,18 @@ func SparseMultiply(_ Subfactor: SparseOpaqueSubfactor_Complex_Double, _ X: Dens
 
 ## Parameters
 
-- `Subfactor`: (Input) The subfactor to multiply by, as returned by   .
+- `Subfactor`: (Input) The subfactor to multiply by, as returned by `SparseCreateSubfactor()`.
 
 ## See Also
 
 - [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseVector_Double)](sparsemultiply(_:_:)-8ehhn.md)
-  Performs the multiply operation , in place on a vector of double-precision values.
+  Performs the multiply operation *Y = Subfactor * X*, in place on a vector of double-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Float, DenseVector_Float)](sparsemultiply(_:_:)-7l3sr.md)
-  Performs the multiply operation , in place on a vector of single-precision values.
+  Performs the multiply operation *Y = Subfactor * X*, in place on a vector of single-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseVector_Double, DenseVector_Double)](sparsemultiply(_:_:_:)-6abql.md)
-  Performs the multiply operation  on a vector of double-precision values.
+  Performs the multiply operation *Y = Subfactor * X* on a vector of double-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Float, DenseVector_Float, DenseVector_Float)](sparsemultiply(_:_:_:)-2h425.md)
-  Performs the multiply operation   on a vector of single-precision values.
+  Performs the multiply operation *Y = Subfactor ** *X* on a vector of single-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Complex_Double, DenseMatrix_Complex_Double)](sparsemultiply(_:_:)-3s0hu.md)
   Perform the multiply operation `Y = Subfactor * X` in place for complex double values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Complex_Double, DenseVector_Complex_Double)](sparsemultiply(_:_:)-9fn7j.md)

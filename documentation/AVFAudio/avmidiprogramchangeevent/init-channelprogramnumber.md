@@ -25,8 +25,8 @@ The instrument this chooses depends on [`AVMIDIControlChangeEvent.MessageType.ba
 
 ## Parameters
 
-- `channel`: The MIDI channel for the message, between   and  .
-- `programNumber`: The program number to send, between   and  .
+- `channel`: The MIDI channel for the message, between `0` and `15`.
+- `programNumber`: The program number to send, between `0` and `127`.
 
 
 ---

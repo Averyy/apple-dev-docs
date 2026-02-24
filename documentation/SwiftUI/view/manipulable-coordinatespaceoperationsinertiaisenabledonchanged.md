@@ -30,11 +30,11 @@ Model3D(named: "ToyRocket")
 
 ## Parameters
 
-- `coordinateSpace`: The coordinate space of the manipulation gesture   event locations.
-- `operations`: The set of allowed operations that can be applied when   a person manipulates this view.
-- `inertia`: The inertia of this view that defines how much it resists   being manipulated.
-- `isEnabled`: The Boolean value that indicates whether the manipulation   gesture added by this view modifier is enabled or not.
-- `onChanged`: The action to perform with each new manipulation gesture   event.
+- `coordinateSpace`: The coordinate space of the manipulation gesture event locations.
+- `operations`: The set of allowed operations that can be applied when a person manipulates this view.
+- `inertia`: The inertia of this view that defines how much it resists being manipulated.
+- `isEnabled`: The Boolean value that indicates whether the manipulation gesture added by this view modifier is enabled or not.
+- `onChanged`: The action to perform with each new manipulation gesture event.
 
 
 ---

@@ -27,7 +27,7 @@ The orthography for the location.
 ## Parameters
 
 - `charIndex`: The character index to begin examination.
-- `effectiveRange`: An NSRangePointer that, upon completion, contains the range of the orthography containing  .
+- `effectiveRange`: An NSRangePointer that, upon completion, contains the range of the orthography containing `charIndex`.
 
 ## See Also
 

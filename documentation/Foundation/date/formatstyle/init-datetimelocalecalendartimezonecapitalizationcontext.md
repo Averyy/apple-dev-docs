@@ -28,12 +28,12 @@ Date style values are [`complete`](date/formatstyle/datestyle/complete.md), [`lo
 
 ## Parameters
 
-- `date`: The   used to create the string representation of the date.
-- `time`: The   used to create the string representation of the date.
-- `locale`: The   used to create the string representation of the date.
-- `calendar`: The   used to create the string representation of the date.
-- `timeZone`: The   used to create the string representation of the date.
-- `capitalizationContext`: The   used to create the string representation of the date.
+- `date`: The [`Date.FormatStyle.DateStyle`](date/formatstyle/datestyle.md) used to create the string representation of the date.
+- `time`: The [`Date.FormatStyle.TimeStyle`](date/formatstyle/timestyle.md) used to create the string representation of the date.
+- `locale`: The [`Locale`](locale.md) used to create the string representation of the date.
+- `calendar`: The [`Calendar`](calendar.md) used to create the string representation of the date.
+- `timeZone`: The [`TimeZone`](timezone.md) used to create the string representation of the date.
+- `capitalizationContext`: The [`FormatStyleCapitalizationContext`](formatstylecapitalizationcontext.md) used to create the string representation of the date.
 
 
 ---

@@ -27,7 +27,7 @@ Override this method if your service supports communication though an external u
 
 ## Parameters
 
-- `type`: The type passed to  .
+- `type`: The type passed to [`IOServiceOpen(_:_:_:_:)`](https://developer.apple.com/documentation/iokit/1514515-ioserviceopen).
 - `userClient`: A pointer to a variable for returning the new user client object. Upon the successful creation of the user client object, assign it to this variable.
 
 ## See Also

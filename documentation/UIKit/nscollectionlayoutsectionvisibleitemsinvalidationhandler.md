@@ -22,6 +22,26 @@ typealias NSCollectionLayoutSectionVisibleItemsInvalidationHandler = ([any NSCol
 
 Each section of a collection view layout can have a visible items invalidation handler. You use this handler to perform custom animations on the items currently visible within the bounds of that section. The handler is called before each layout cycle, any time an animation occurs in that section due to changes such as adding or removing items, scrolling the section, or rotating the device.
 
+**Swift**:
+
+```swift
+let section = NSCollectionLayoutSection(group: group)
+    
+section.visibleItemsInvalidationHandler = { visibleItems, scrollOffset, layoutEnvironment in
+    // Perform animations on the visible items.
+}
+```
+
+**Objective-C**:
+
+```objc
+NSCollectionLayoutSection *section = [NSCollectionLayoutSection sectionWithGroup:group];
+
+[section setVisibleItemsInvalidationHandler:^(NSArray<id<NSCollectionLayoutVisibleItem>> *visibleItems, CGPoint contentOffset, id<NSCollectionLayoutEnvironment> layoutEnvironment) {
+    // Perform animations on the visible items.
+}];
+```
+
 ## See Also
 
 - [protocol NSCollectionLayoutVisibleItem](nscollectionlayoutvisibleitem.md)

@@ -18,7 +18,59 @@ static let announcementRequested: NSAccessibility.Notification
 
 This notification requires a `userInfo` dictionary with the key [`announcement`](nsaccessibility-swift.struct/notificationuserinfokey/announcement.md) and a localized string containing the announcement. To help an assistive app determine the importance of the announcement, add the appropriate [`priority`](nsaccessibility-swift.struct/notificationuserinfokey/priority.md) to the `userInfo` dictionary.
 
+**Swift**:
+
+```swift
+let announcement = "The input was invalid."
+NSAccessibility.post(
+    element: NSApp.mainWindow as Any,
+    notification: .announcementRequested,
+    userInfo: [
+        .announcement: announcement,
+        .priority: NSAccessibilityPriorityLevel.medium.rawValue
+    ])
+```
+
+**Objective-C**:
+
+```objc
+NSString *announcement = @"The input was invalid.";
+NSAccessibilityPostNotificationWithUserInfo(NSApp, NSAccessibilityAnnouncementRequestedNotification, @{
+    NSAccessibilityAnnouncementKey : announcement,
+    NSAccessibilityPriorityKey : @(NSAccessibilityPriorityMedium) 
+});
+```
+
 If you need more control over how your announcements are pronounced, such as including punctuation or setting the spoken language, you can use [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString). For a list of available string attributes, see [`NSAttributedString.Key`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key).
+
+**Swift**:
+
+```swift
+let announcement = NSAttributedString(
+    string: "pain",
+    attributes: [.accessibilityLanguage: "fr"]
+)
+NSAccessibility.post(
+    element: NSApp.mainWindow as Any,
+    notification: .announcementRequested,
+    userInfo: [
+        .announcement: announcement,
+        .priority: NSAccessibilityPriorityLevel.medium.rawValue
+    ])
+```
+
+**Objective-C**:
+
+```objc
+NSAttributedString *announcement =
+    [[NSAttributedString alloc] initWithString:@"pain" attributes: @{
+    NSAccessibilityLanguageTextAttribute : @"fr"
+}];
+NSAccessibilityPostNotificationWithUserInfo(NSApp, NSAccessibilityAnnouncementRequestedNotification, @{
+    NSAccessibilityAnnouncementKey : announcement,
+    NSAccessibilityPriorityKey : @(NSAccessibilityPriorityMedium)
+});
+```
 
 ## See Also
 

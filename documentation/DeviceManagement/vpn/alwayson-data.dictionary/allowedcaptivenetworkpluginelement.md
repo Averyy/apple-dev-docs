@@ -16,6 +16,10 @@ The dictionary for captive network configurations.
 object VPN.AlwaysOn.AllowedCaptiveNetworkPluginElement
 ```
 
+## Properties
+
+- `BundleIdentifier` (string) *(required)*: The bundle identifier for the app that’s allowed on the captive network.
+
 ## See Also
 
 - [object VPN.AlwaysOn.ApplicationExceptionElement](vpn/alwayson-data.dictionary/applicationexceptionelement.md)

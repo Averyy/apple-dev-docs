@@ -28,7 +28,7 @@ Use this method to provide an accessibility label for a view that doesn’t disp
 ## Parameters
 
 - `label`: The accessibility label to apply.
-- `isEnabled`: If true the accessibility label is applied; otherwise   the accessibility label is unchanged.
+- `isEnabled`: If true the accessibility label is applied; otherwise the accessibility label is unchanged.
 
 ## See Also
 

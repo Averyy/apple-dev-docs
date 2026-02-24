@@ -6,7 +6,7 @@ Position sound from a specific direction and automatically raise or lower volume
 
 #### Overview
 
-Audio that adjusts its volume based on distance to a specific reference point is called . Spatial audio transmits sound from a particular location, or source, in a specific direction that you define by describing the sound’s 3D position and orientation. Your app can leverage spatial audio to define the point of reference, or define a listener as a player in a game. For example, to indicate that a horn resides on the left-hand side of a scene, PHASE outputs audio more through the left speaker.
+Audio that adjusts its volume based on distance to a specific reference point is called *spatial audio*. Spatial audio transmits sound from a particular location, or source, in a specific direction that you define by describing the sound’s 3D position and orientation. Your app can leverage spatial audio to define the point of reference, or define a listener as a player in a game. For example, to indicate that a horn resides on the left-hand side of a scene, PHASE outputs audio more through the left speaker.
 
 PHASE spatial audio accommodates a scene layout in several ways: by observing objects in the scene, the shape of the sound’s source, obstructions, and the point of reference of a listener. To complement obstacles and indoor locations in your scene, you can use spatial audio to layer environmental effects, for example, a reflection or reverberation, on top of spatial sounds.
 
@@ -30,20 +30,20 @@ var chessPiecePose: simd_float4x4 = matrix_identity_float4x4
 
 ##### Define the Location From Which Sound Plays
 
-The first type of object you define in the PHASE scene describes a location from which sound originates, such as a chess piece that makes a shuffling noise as it slides to a location on the board. A source emanates sound from a single point in space, or a . To produce sound at a point in the scene, create a [`PHASESource`](phasesource.md) with the engine parameter, for example:
+The first type of object you define in the PHASE scene describes a location from which sound originates, such as a chess piece that makes a shuffling noise as it slides to a location on the board. A source emanates sound from a single point in space, or a *voluminous area*. To produce sound at a point in the scene, create a [`PHASESource`](phasesource.md) with the engine parameter, for example:
 
 ```swift
 let chessPiecePointSource = PHASESource(engine: engine)
 ```
 
-Then, add the source to the scene by handing it to the engine. You can add an object as a child to any other object by calling [`addChild(_:)`](phaseobject/addchild(_:).md) on the parent. The result models a scene as a connected graph of objects, or an . The following code adds the chess piece as child of the engine’s root:
+Then, add the source to the scene by handing it to the engine. You can add an object as a child to any other object by calling [`addChild(_:)`](phaseobject/addchild(_:).md) on the parent. The result models a scene as a connected graph of objects, or an *object hierarchy*. The following code adds the chess piece as child of the engine’s root:
 
 ```swift
 do { try engine.rootObject.addChild(chessPiecePointSource) } 
 catch { print ("Failed to add a child object to the scene.") }
 ```
 
-PHASE interprets object positions in the coordinate space of the parent, which for the root object is the coordinate space of the scene, or the  space. Set an object’s position by assigning the transform’s first three elements of the last column. The following code sets a chess piece’s position to `(0,0,-6)`, which is 6 meters in front of the world origin `(0,0,0)`:
+PHASE interprets object positions in the coordinate space of the parent, which for the root object is the coordinate space of the scene, or the *world* space. Set an object’s position by assigning the transform’s first three elements of the last column. The following code sets a chess piece’s position to `(0,0,-6)`, which is 6 meters in front of the world origin `(0,0,0)`:
 
 ```swift
 chessPiecePose.columns.3.z -= 6.0
@@ -138,7 +138,7 @@ catch { print ("Failed to add a child object to the scene.") }
 
 ##### Describe the Output Pipeline
 
-As one of the final stages in audio playback configuration, the app specifies the particular object, or , that combines in-flight audio signals for transmission to the output device. For spatial audio, the app creates a spatial mixer, [`PHASESpatialMixerDefinition`](phasespatialmixerdefinition.md). The following code defines a spatial mixer for two sources:
+As one of the final stages in audio playback configuration, the app specifies the particular object, or *mixer*, that combines in-flight audio signals for transmission to the output device. For spatial audio, the app creates a spatial mixer, [`PHASESpatialMixerDefinition`](phasespatialmixerdefinition.md). The following code defines a spatial mixer for two sources:
 
 ```swift
 let chessPieceSpatialMixer = PHASESpatialMixerDefinition(
@@ -158,7 +158,7 @@ PHASE attenuates sound over the distance between a source and a listener by obse
 
 > ❗ **Important**:  Without a distance model, the spatial mixer plays sound at a constant level, disregarding the distance between the source and the listener.
 
-For more information about distance modeling and its various types,  and , see [`Spatial Mixing`](spatial-mixing.md).
+For more information about distance modeling and its various types, *geometric* and *envelope*, see [`Spatial Mixing`](spatial-mixing.md).
 
 [`PHASEGeometricSpreadingDistanceModelParameters`](phasegeometricspreadingdistancemodelparameters.md) is a model that simulates sound loss over distance realistically. The distance model [`rolloffFactor`](phasegeometricspreadingdistancemodelparameters/rollofffactor.md) emphasizes or deemphasizes this model. At `1.0`, sound that emanates between the source and listener loses 6 dB every time distance doubles. At `2.0`, the loss doubles. At `0.5`, the loss halves, and so on. The following code defines a geometric spatial model for the scene’s spatial mixers:
 

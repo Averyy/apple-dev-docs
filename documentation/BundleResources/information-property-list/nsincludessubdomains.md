@@ -11,6 +11,12 @@ A Boolean value that indicates whether to extend the configuration to subdomains
 - macOS 10.11+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 You can include this key in any of the domain-specific dictionaries that you add to the [`NSExceptionDomains`](information-property-list/nsapptransportsecurity/nsexceptiondomains.md) and [`NSPinnedDomains`](information-property-list/nsapptransportsecurity/nspinneddomains.md) dictionaries. Adding the [`NSIncludesSubdomains`](information-property-list/nsincludessubdomains.md) key affects the applicability of the other configuration in the same domain-specific dictionary. The key is optional, with a default value of `NO`.

@@ -17,7 +17,7 @@ typealias CGPSConverterProgressCallback = (UnsafeMutableRawPointer?) -> Void
 
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to  .
+- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(info:callbacks:options:)`](cgpsconverter/init(info:callbacks:options:).md).
 
 
 ---

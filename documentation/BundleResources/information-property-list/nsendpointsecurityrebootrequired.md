@@ -6,6 +6,10 @@
 **Availability**:
 - macOS 10.15+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [NSEndpointSecurityEarlyBoot](information-property-list/nsendpointsecurityearlyboot.md)

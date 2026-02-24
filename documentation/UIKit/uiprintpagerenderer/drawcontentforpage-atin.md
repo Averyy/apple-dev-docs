@@ -26,7 +26,7 @@ The system configures this method for drawing to the current graphics context ac
 ## Parameters
 
 - `pageIndex`: The index of the page on which to draw content.
-- `contentRect`: The area in which to draw content, in the coordinate system of the printable rectangle. This area is equal to   minus   and  .
+- `contentRect`: The area in which to draw content, in the coordinate system of the printable rectangle. This area is equal to [`printableRect`](uiprintpagerenderer/printablerect.md) minus [`headerHeight`](uiprintpagerenderer/headerheight.md) and [`footerHeight`](uiprintpagerenderer/footerheight.md).
 
 ## See Also
 

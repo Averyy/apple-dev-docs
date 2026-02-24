@@ -24,6 +24,9 @@ var recipientResponseHandler: ((GKPlayer, GKInviteRecipientResponse) -> Void)? {
 
 The block receives the following parameters:
 
+- **`player`**: The player who receives the invitation.
+- **`GKInviteeRecipientResponse`**: The player’s response to the invitation.
+
 GameKit calls this handler once for each player who receives an invitation to join the match. You can use this handler to update your interface to show the individual player responses.
 
 ## See Also

@@ -29,9 +29,9 @@ The protocol you want to add the property to must be under construction—alloca
 - `proto`: The protocol you want to add a property to.
 - `name`: The name of the property you want to add.
 - `attributes`: An array of property attributes.
-- `attributeCount`: The number of properties in  .
-- `isRequiredProperty`: A Boolean indicating whether the property’s accessor methods are required methods of the   protocol. If  , the property’s accessor methods are required methods; if  , the property’s accessor methods are optional methods.
-- `isInstanceProperty`: A Boolean indicating whether the property’s accessor methods are instance methods. If  , the property’s accessor methods are instance methods.   is the only value allowed for a property. As a result, if you set this value to  , the property will not be added to the protocol.
+- `attributeCount`: The number of properties in `attributes`.
+- `isRequiredProperty`: A Boolean indicating whether the property’s accessor methods are required methods of the `proto` protocol. If [`YES`](yes.md), the property’s accessor methods are required methods; if [`NO`](no.md), the property’s accessor methods are optional methods.
+- `isInstanceProperty`: A Boolean indicating whether the property’s accessor methods are instance methods. If [`YES`](yes.md), the property’s accessor methods are instance methods. [`YES`](yes.md) is the only value allowed for a property. As a result, if you set this value to [`NO`](no.md), the property will not be added to the protocol.
 
 ## See Also
 

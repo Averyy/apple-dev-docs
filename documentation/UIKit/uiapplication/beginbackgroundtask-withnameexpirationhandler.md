@@ -41,7 +41,7 @@ This method can be safely called on a non-main thread. To extend the execution t
 
 ## Parameters
 
-- `taskName`: The name to display in the debugger when viewing the background task. If you specify   for this parameter, the method generates a name based on the name of the calling function or method.
+- `taskName`: The name to display in the debugger when viewing the background task. If you specify `nil` for this parameter, the method generates a name based on the name of the calling function or method.
 - `handler`: A handler to be called shortly before the app’s remaining background time reaches 0. Use this handler to clean up and mark the end of the background task. Failure to end the task explicitly will result in the termination of the app. The system calls the handler synchronously on the main thread, blocking the app’s suspension momentarily.
 
 ## See Also

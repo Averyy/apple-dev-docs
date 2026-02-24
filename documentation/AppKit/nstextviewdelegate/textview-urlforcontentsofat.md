@@ -26,7 +26,7 @@ The returned `NSURL` object is used by the text view to provide default behavior
 ## Parameters
 
 - `textView`: The text view sending the message.
-- `textAttachment`: The text attachment object containing an   object that holds the contents of the attached file.
+- `textAttachment`: The text attachment object containing an `NSFileWrapper` object that holds the contents of the attached file.
 - `charIndex`: The character index of the text attachment.
 
 ## See Also

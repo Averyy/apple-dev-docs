@@ -22,7 +22,7 @@ static func result<Value, Content>(value: Value, view: Content = EmptyView()) ->
 
 ## Parameters
 
-- `value`: The value produced by the 
+- `value`: The value produced by the `AppIntent`
 - `view`: A custom View to display the result
 
 

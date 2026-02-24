@@ -32,7 +32,7 @@ To ask the class whether it, rather than its instances, can respond to a particu
 
 ## Parameters
 
-- `aSelector`: A  .
+- `aSelector`: A [`Selector`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Selector.html#//apple_ref/doc/uid/TP40008195-CH48).
 
 
 ---

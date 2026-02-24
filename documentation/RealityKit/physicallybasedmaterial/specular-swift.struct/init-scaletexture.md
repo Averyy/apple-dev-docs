@@ -21,7 +21,7 @@ init(scale: Float = 1.0, texture: PhysicallyBasedMaterial.Texture? = nil)
 
 #### Discussion
 
-RealityKit automatically draws  for physically based materials using the values of various properties, primarily [`roughness`](physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
+RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
 
 ![An illustration showing a sphere and a cube with rounded corners.](https://docs-assets.developer.apple.com/published/0b83dd2d5721a30ef708e7bf6420620b/PhysicallyBasedMaterial-Specular-swift-struct-init%28scale%3Atexture%3A%29-1%402x.png)
 
@@ -33,7 +33,7 @@ If you specify `texture`, RealityKit calculates the `specular` for the entity by
 
 ## Parameters
 
-- `scale`: A value from 0.0 to 1.0 to use as the specular value for   the material.
+- `scale`: A value from 0.0 to 1.0 to use as the specular value for the material.
 - `texture`: An optional UV-mapped image texture.
 
 ## See Also

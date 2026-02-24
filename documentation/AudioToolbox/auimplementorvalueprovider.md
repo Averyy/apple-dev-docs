@@ -27,6 +27,8 @@ The block returns the current value of the parameter.
 
 The block takes the following parameters:
 
+- **param**: The parameter to query.
+
 ## See Also
 
 - [var implementorValueProvider: AUImplementorValueProvider](auparameternode/implementorvalueprovider.md)

@@ -25,7 +25,7 @@ An initialized circle renderer object.
 
 ## Parameters
 
-- `circle`: The circle overlay containing the information about the circular area for the renderer to draw. The renderer maintains a strong reference to the object you provide. This parameter can’t be  .
+- `circle`: The circle overlay containing the information about the circular area for the renderer to draw. The renderer maintains a strong reference to the object you provide. This parameter can’t be `nil`.
 
 
 ---

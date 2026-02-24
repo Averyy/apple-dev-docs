@@ -21,10 +21,10 @@ func SCNetworkInterfaceCopyMediaOptions(_ interface: SCNetworkInterface, _ curre
 ## Parameters
 
 - `interface`: The network interface.
-- `current`: On output, a dictionary representing the currently requested media options (subtype, options). If  , the current options are not returned.
-- `active`: On output, a dictionary representing the active media options (subtype, options). If  , the active options are not returned.
-- `available`: On output, an array representing the possible media options (subtype, options). If  , the current options are not returned.
-- `filter`: A Boolean value indicating whether the available options should be filtered to exclude those options which would not normally be requested by a user/admin (for example,  ).
+- `current`: On output, a dictionary representing the currently requested media options (subtype, options). If `NULL`, the current options are not returned.
+- `active`: On output, a dictionary representing the active media options (subtype, options). If `NULL`, the active options are not returned.
+- `available`: On output, an array representing the possible media options (subtype, options). If `NULL`, the current options are not returned.
+- `filter`: A Boolean value indicating whether the available options should be filtered to exclude those options which would not normally be requested by a user/admin (for example, `hw-loopback`).
 
 ## See Also
 

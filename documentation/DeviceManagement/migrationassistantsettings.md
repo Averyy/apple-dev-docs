@@ -54,6 +54,14 @@ This configuration provides settings for a Mac to Mac migration.
 }
 ```
 
+## Properties
+
+- `ExcludedAccounts` ([string]): An array of strings that represent the user account short names the system excludes from migration..
+- `ExcludedPaths` ([string]): An array of strings that represent paths relative to the user’s home directory that the system excludes from migration. For example, to exclude the “Excluded” directory in the “Documents” folder of a user’s home directory, use “Documents/Excluded”.
+- `RequiredPaths` ([string]): An array of strings that represent paths relative to the user’s home directory that the system excludes from migration. For example, to require the “Required” directory in the “Documents” folder of a user’s home directory, use “Documents/Required”.
+- `ShouldDoManagedMigration` (boolean) *(required)*: If `true`, the device manages Migration Assistant.
+- `ShouldMigrateSecurityPrivacySettings` (boolean) *(required)*: If `true`, the system migrates Security & Privacy settings.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

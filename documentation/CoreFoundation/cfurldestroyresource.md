@@ -30,8 +30,8 @@ If `url` uses an http scheme, an http `DELETE` request is sent to the resource. 
 
 ## Parameters
 
-- `url`: The   object of the resource to destroy.
-- `errorCode`: On return,   if successful, otherwise an error code indicating the nature of the problem. See   for a list of possible error codes.
+- `url`: The `CFURL` object of the resource to destroy.
+- `errorCode`: On return, `0` if successful, otherwise an error code indicating the nature of the problem. See [`CFURLError`](cfurlerror.md) for a list of possible error codes.
 
 ## See Also
 

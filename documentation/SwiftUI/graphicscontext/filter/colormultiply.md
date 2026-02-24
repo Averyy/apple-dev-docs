@@ -26,7 +26,7 @@ A filter that multiplies color components.
 
 ## Parameters
 
-- `color`: The color that the filter uses for the multiplication   operation.
+- `color`: The color that the filter uses for the multiplication operation.
 
 ## See Also
 

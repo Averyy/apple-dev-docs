@@ -23,7 +23,7 @@ case byGlobalNorm(threshold: Float, globalNorm: Float = 0)
 ## Parameters
 
 - `threshold`: The maximum Euclidean norm.
-- `globalNorm`: An optional value for a known global Euclidean norm. Set to   to specify that the function computes the norm.
+- `globalNorm`: An optional value for a known global Euclidean norm. Set to `0` to specify that the function computes the norm.
 
 ## See Also
 

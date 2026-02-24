@@ -42,7 +42,7 @@ context.setLineWidth(point.magnitude)
 
 ##### Create a Visualization of Apple Pencils Altitude and Azimuth
 
-Touch Canvas contains a visualization of the altitude and azimuth for Apple Pencil as you draw on the screen when the  mode is enabled.  This visualization is a diagram which continuously updates based on Apple Pencil’s motion.
+Touch Canvas contains a visualization of the altitude and azimuth for Apple Pencil as you draw on the screen when the *Debug* mode is enabled.  This visualization is a diagram which continuously updates based on Apple Pencil’s motion.
 
 ![Diagram of how the sample project visualizes Apple Pencil's altitude and azimuth](https://docs-assets.developer.apple.com/published/1e2dab6bc1b272990b169850a701abf9/azimuth-altitude%402x.png)
 
@@ -86,7 +86,7 @@ dotPositionTransform = dotPositionTransform.concatenating(centeringTransform)
 
 Touch Canvas contains a debug drawing mode that allows you to view the operation of the properties in detail for different types of input, such as the difference between strokes drawn at different speeds with Apple Pencil. The debug mode enables the interactive diagram for altitude and azimuth, and changes the color of individual line segments to identify if the [`UIEvent`](uievent.md) for the line segment included data from [`predictedTouches(for:)`](uievent/predictedtouches(for:).md) or [`coalescedTouches(for:)`](uievent/coalescedtouches(for:).md).
 
-The sample uses the double-tap feature of the second generation Apple Pencil to toggle  mode when the user configures the preferred double tap action to switch tools. The sample app ignores the other preferred actions. See [`Apple Pencil interactions`](apple-pencil-interactions.md) for more information.
+The sample uses the double-tap feature of the second generation Apple Pencil to toggle *Debug* mode when the user configures the preferred double tap action to switch tools. The sample app ignores the other preferred actions. See [`Apple Pencil interactions`](apple-pencil-interactions.md) for more information.
 
 ```swift
 func pencilInteractionDidTap(_ interaction: UIPencilInteraction) {

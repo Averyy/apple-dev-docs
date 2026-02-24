@@ -7,6 +7,11 @@ An atom that expresses profiles or feature codes for features that occur in the 
 
 #### Overview
 
+- **Atom type**: `'prfl'`
+- **Container**: Movie atom (`'moov'`) or track atom (`'trak'`)
+- **Mandatory**: No
+- **Quantity**: Zero or one
+
 At the movie level, the profile atom must occur within the movie atom before the movie header atom. A reader may stop the search for the profile atom once the profile atom or the movie header atom is found. Because new atoms may be introduced into the movie atom (type `'moov'`) in the future, a reader must not expect the first child atom of the movie atom to be either the profile (type `'prfl'`) or the movie header (`'mvhd'`) atom. This rule allows for new atoms in the future but still accommodates readers that do not want to perform an exhaustive enumeration of all the child atoms in a movie atom.
 
 The profile atom expresses profiles or feature codes for features that occur in the movie. The list is not necessarily exhaustive, and there may be multiple profile values recorded for the same profile code. For example, if there are two independent sequences of MPEG-4 video in the movie, using different profile-level IDs, both might be recorded here.

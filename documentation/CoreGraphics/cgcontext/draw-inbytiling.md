@@ -28,7 +28,7 @@ This method scales the image (disproportionately, if necessary) to fit the bound
 
 - `image`: The image to draw.
 - `rect`: The rectangle, in user space coordinates, in which to draw the image.
-- `byTiling`: If   (the default), this method draws a single copy of the image in the area defined by the   parameter.
+- `byTiling`: If [`true`](https://developer.apple.com/documentation/Swift/true), this method fills the context’s entire clipping region by tiling many copies of the image, and the `rect` parameter defines the origin and size of the tiling pattern. If [`false`](https://developer.apple.com/documentation/Swift/false) (the default), this method draws a single copy of the image in the area defined by the `rect` parameter.
 
 ## See Also
 

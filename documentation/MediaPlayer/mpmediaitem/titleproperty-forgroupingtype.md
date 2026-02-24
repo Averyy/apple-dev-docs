@@ -25,6 +25,18 @@ The title key for the group type.
 
 Use this convenience method to obtain the key for the title that corresponds to a specified grouping type. For example, the following statement obtains the title key for the album grouping type:
 
+**Swift**:
+
+```swift
+let titleIDKey = [MPMediaItem.persistentIDProperty(forGroupingType: MPMediaGrouping.album)]
+```
+
+**Objective-C**:
+
+```objc
+NSString *titleIDKey = [MPMediaItem titlePropertyForGroupingType: MPMediaGroupingAlbum];
+```
+
 You could then obtain the specific title that you want by using the [`value(forProperty:)`](mpmediaentity/value(forproperty:).md) method. [`MPMediaGrouping`](mpmediagrouping.md) describes grouping keys.
 
 ## Parameters

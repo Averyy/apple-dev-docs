@@ -24,10 +24,10 @@ A newly initialized [`UIBarButtonItem`](uibarbuttonitem.md).
 
 ## Parameters
 
-- `title`: The item’s title. If  , a title doesn’t appear.
-- `style`: The style of the item. For possible values, see  .
-- `target`: The object that receives the   message.
-- `action`: The action to send to   when a person selects this item.
+- `title`: The item’s title. If `nil`, a title doesn’t appear.
+- `style`: The style of the item. For possible values, see [`UIBarButtonItem.Style`](uibarbuttonitem/style-swift.enum.md).
+- `target`: The object that receives the `action` message.
+- `action`: The action to send to `target` when a person selects this item.
 
 ## See Also
 

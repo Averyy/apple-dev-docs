@@ -25,8 +25,8 @@ Evaluating a [`GKRuleSystem`](gkrulesystem.md) object tests each of its rules, w
 
 A rule has two parts: a predicate and an action.
 
-- The rule’s  determines whether the rule has been satisfied, within the context of a given rule system. Evaluating a rule’s predicate typically involves examining information in the rule sytem’s [`state`](gkrulesystem/state.md) dictionary or testing the membership grade of facts claimed by the system (see the [`facts`](gkrulesystem/facts.md) property in [`GKRuleSystem`](gkrulesystem.md) for details).
-- The rule’s  is executed if and only if the rule’s predicate is satisfied. Rule actions typically involve asserting or retracting facts in the system (see the [`GKRuleSystem`](gkrulesystem.md) methods listed in Asserting and Retracting Facts) or modifying information in the system’s [`state`](gkrulesystem/state.md) dictionary.
+- The rule’s *predicate* determines whether the rule has been satisfied, within the context of a given rule system. Evaluating a rule’s predicate typically involves examining information in the rule sytem’s [`state`](gkrulesystem/state.md) dictionary or testing the membership grade of facts claimed by the system (see the [`facts`](gkrulesystem/facts.md) property in [`GKRuleSystem`](gkrulesystem.md) for details).
+- The rule’s *action* is executed if and only if the rule’s predicate is satisfied. Rule actions typically involve asserting or retracting facts in the system (see the [`GKRuleSystem`](gkrulesystem.md) methods listed in Asserting and Retracting Facts) or modifying information in the system’s [`state`](gkrulesystem/state.md) dictionary.
 
 There are multiple ways to create rules for use in a rule system, each with its own advantages.
 
@@ -38,7 +38,7 @@ For more information about rules and rule systems, read [`Rule Systems`](https:/
 
 ##### Subclassing Notes
 
-GameplayKit evaluates rules in the context of a [`GKRuleSystem`](gkrulesystem.md) object, so custom rule classes should be —that is, they generally should not carry independent state that affects their predicate or action.
+GameplayKit evaluates rules in the context of a [`GKRuleSystem`](gkrulesystem.md) object, so custom rule classes should be *functional*—that is, they generally should not carry independent state that affects their predicate or action.
 
 ###### Methods to Override
 

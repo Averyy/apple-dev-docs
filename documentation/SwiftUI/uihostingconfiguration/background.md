@@ -31,7 +31,7 @@ UIHostingConfiguration {
 
 ## Parameters
 
-- `style`: The shape style to be used as the background of the   cell.
+- `style`: The shape style to be used as the background of the cell.
 
 ## See Also
 

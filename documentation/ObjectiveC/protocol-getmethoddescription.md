@@ -32,8 +32,8 @@ If the protocol does not contain the specified method, returns an `objc_method_d
 
 - `proto`: A protocol.
 - `aSel`: A selector
-- `isRequiredMethod`: A Boolean value that indicates whether   is a required method.
-- `isInstanceMethod`: A Boolean value that indicates whether   is an instance method.
+- `isRequiredMethod`: A Boolean value that indicates whether `aSel` is a required method.
+- `isInstanceMethod`: A Boolean value that indicates whether `aSel` is an instance method.
 
 ## See Also
 

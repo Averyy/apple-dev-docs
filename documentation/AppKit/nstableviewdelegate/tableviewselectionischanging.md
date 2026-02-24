@@ -21,7 +21,7 @@ This method is called only when mouse events—and not keyboard events—are cha
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named [`selectionIsChangingNotification`](nstableview/selectionischangingnotification.md).
 
 ## See Also
 

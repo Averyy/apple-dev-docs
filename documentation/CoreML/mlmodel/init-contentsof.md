@@ -28,7 +28,7 @@ If the wrapper class doesn’t meet your app’s needs or you need to customize 
 
 ## Parameters
 
-- `url`: The path to a compiled model file ( ), typically with the   that   returns.
+- `url`: The path to a compiled model file (*ModelName*`.mlmodelc`), typically with the `URL` that [`compileModel(at:)`](mlmodel/compilemodel(at:)-6442s.md) returns.
 
 ## See Also
 

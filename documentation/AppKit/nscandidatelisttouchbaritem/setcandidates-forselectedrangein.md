@@ -21,7 +21,7 @@ The item uses the block in the [`attributedStringForCandidate`](nscandidatelistt
 ## Parameters
 
 - `candidates`: The array of candidates you wish to display in the candidate list item.
-- `selectedRange`: A range ( ) within the string that the candidates represent.
+- `selectedRange`: A range ([`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange-c.struct)) within the string that the candidates represent.
 - `originalString`: The original string from which the candidate list was derived.
 
 ## See Also

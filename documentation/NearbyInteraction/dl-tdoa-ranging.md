@@ -6,7 +6,7 @@ Use anchor devices to improve the accuracy of indoor positioning.
 
 #### Overview
 
-Downlink Time-Difference-of-Arrival (DL-DTOA) is a system that allows the Nearby Interaction framework to interact with fixed Ultra-wide band (UWB) devices — known as  — in an indoor space to increase the accuracy of positioning by measuring the time difference of arrival of signals from multiple anchors to an iOS device.
+Downlink Time-Difference-of-Arrival (DL-DTOA) is a system that allows the Nearby Interaction framework to interact with fixed Ultra-wide band (UWB) devices — known as *anchors* — in an indoor space to increase the accuracy of positioning by measuring the time difference of arrival of signals from multiple anchors to an iOS device.
 
 #### Add the Entitlement to Your App
 

@@ -9,6 +9,10 @@ A string name of the alternative browser engine that your app embeds.
 - iOS 17.4+
 - iPadOS 17.4+
 
+
+
+**Type**: string
+
 #### Discussion
 
 If your app isn’t a browser app, but embeds an alternative browser engine, add this property to your app’s target in Xcode and set the value to the name of the alternative browser engine.

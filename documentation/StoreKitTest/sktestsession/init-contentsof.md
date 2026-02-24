@@ -28,7 +28,7 @@ To return all settings in the test session to the states defined in this StoreKi
 
 ## Parameters
 
-- `fileURL`: A file URL for a configuration file with a .  extension.
+- `fileURL`: A file URL for a configuration file with a .`storekit` extension.
 
 ## See Also
 

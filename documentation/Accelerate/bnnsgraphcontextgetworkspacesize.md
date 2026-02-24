@@ -33,7 +33,7 @@ Note that the workspace size may not be proportional with the dynamic size. That
 ## Parameters
 
 - `context`: The graph context.
-- `function`: The function. Specify as   if the graph only contains one function.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
 
 ## See Also
 

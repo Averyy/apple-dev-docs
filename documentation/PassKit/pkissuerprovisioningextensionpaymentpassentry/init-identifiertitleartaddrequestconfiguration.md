@@ -23,7 +23,7 @@ init?(identifier: String, title: String, art: CGImage, addRequestConfiguration c
 - `identifier`: The value that you use to identify the card.
 - `title`: The name for the pass the system displays to the user when they add or select the card.
 - `art`: The image that the system displays to the user when they add or select the card.
-- `configuration`: The configuration that an   uses to create a secure pass.
+- `configuration`: The configuration that an [`PKAddSecureElementPassViewController`](pkaddsecureelementpassviewcontroller.md) uses to create a secure pass.
 
 
 ---

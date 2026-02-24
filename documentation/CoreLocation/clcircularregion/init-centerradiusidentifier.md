@@ -31,7 +31,7 @@ When defining a geographic region, remember that the location manager doesn’t 
 
 - `center`: The center point of the geographic region to monitor.
 - `radius`: The distance (measured in meters) from the center point of the geographic region to the edge of the circular boundary.
-- `identifier`: A unique identifier to associate with the region object. You use this identifier to differentiate regions within your app. This value can’t be  .
+- `identifier`: A unique identifier to associate with the region object. You use this identifier to differentiate regions within your app. This value can’t be `nil`.
 
 
 ---

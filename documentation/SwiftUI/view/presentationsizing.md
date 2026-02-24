@@ -61,7 +61,7 @@ struct ContentView: View {
 
 ## Parameters
 
-- `sizing`: A value dictating size to propose to presentation content   and how the presentation responds to changes in content size.
+- `sizing`: A value dictating size to propose to presentation content and how the presentation responds to changes in content size.
 
 ## See Also
 

@@ -23,8 +23,8 @@ A view that sets whether a view is focusable, and triggers `onFocusChange` when 
 
 ## Parameters
 
-- `isFocusable`: A Boolean value that indicates whether this view is   focusable.
-- `onFocusChange`: A closure that’s called whenever this view either gains   or loses focus. The Boolean parameter to   is   when   the view is in focus; otherwise, it’s  .
+- `isFocusable`: A Boolean value that indicates whether this view is focusable.
+- `onFocusChange`: A closure that’s called whenever this view either gains or loses focus. The Boolean parameter to `onFocusChange` is `true` when the view is in focus; otherwise, it’s `false`.
 
 ## See Also
 

@@ -28,7 +28,7 @@ This method changes the render command encoder’s store action for the depth at
 
 ## Parameters
 
-- `storeAction`: A store action for the depth attachment that can’t be  .
+- `storeAction`: A store action for the depth attachment that can’t be [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md).
 
 ## See Also
 

@@ -30,8 +30,8 @@ The `contentType` provided must be included within the document type’s `writab
 - `isPresented`: A binding to whether the interface should be shown.
 - `document`: The in-memory document to export.
 - `contentType`: The content type to use for the exported file.
-- `defaultFilename`: If provided, the default name to use for the   exported file, which will the user will have an opportunity to edit   prior to the export.
-- `onCompletion`: A callback that will be invoked when the operation has   has succeeded or failed.
+- `defaultFilename`: If provided, the default name to use for the exported file, which will the user will have an opportunity to edit prior to the export.
+- `onCompletion`: A callback that will be invoked when the operation has has succeeded or failed. - **result**: A `Result` indicating whether the operation succeeded or failed.
 
 ## See Also
 

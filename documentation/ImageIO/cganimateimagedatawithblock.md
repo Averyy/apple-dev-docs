@@ -31,7 +31,7 @@ The function executes the provided `block` for each frame of the animation. By d
 ## Parameters
 
 - `data`: The image data to animate.
-- `options`: Additional playback options. Include the   or   keys to override the timing information in the image file. Include the   key to specify the index of the first image in the animation.
+- `options`: Additional playback options. Include the [`kCGImageAnimationDelayTime`](kcgimageanimationdelaytime.md) or [`kCGImageAnimationLoopCount`](kcgimageanimationloopcount.md) keys to override the timing information in the image file. Include the [`kCGImageAnimationStartIndex`](kcgimageanimationstartindex.md) key to specify the index of the first image in the animation.
 - `block`: The animation block to execute for each image frame. The system executes this block on the main queue, and at the intervals indicated by the image’s delay time metadata. Use this block to display the provided image in your interface.
 
 ## See Also

@@ -58,7 +58,7 @@ The following Metal code demonstrates how to retrieve `scale` and `texture` in a
 
 ## Parameters
 
-- `value`: The     property from a  .
+- `value`: The [`clearcoatRoughness`](physicallybasedmaterial/clearcoatroughness-swift.property.md) property from a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md).
 
 ## See Also
 

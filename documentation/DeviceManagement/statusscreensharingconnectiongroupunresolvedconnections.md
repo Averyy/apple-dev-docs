@@ -33,6 +33,10 @@ object StatusScreenSharingConnectionGroupUnresolvedConnections
 - [object StatusScreenSharingConnectionGroupUnresolvedConnectionsUnresolvedGroupObject](statusscreensharingconnectiongroupunresolvedconnectionsunresolvedgroupobject.md)
   A status item that contains an unresolved connection group.
 
+## Properties
+
+- `screensharing.connection.group.unresolved-connection` ([StatusScreenSharingConnectionGroupUnresolvedConnectionsUnresolvedGroupObject]) *(required)*: A status item that contains an array of unresolved connection groups.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

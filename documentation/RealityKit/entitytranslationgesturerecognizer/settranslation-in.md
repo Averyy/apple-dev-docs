@@ -20,7 +20,7 @@ Sets the translation of the receiver in the entity’s coordinate space
 ## Parameters
 
 - `translation`: A point that identifies the new translation value.
-- `entity`: An entity in whose space the translation is to occur.   A   entity will result in world space.
+- `entity`: An entity in whose space the translation is to occur. A `nil` entity will result in world space.
 
 ## See Also
 

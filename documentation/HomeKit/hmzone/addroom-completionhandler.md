@@ -20,7 +20,7 @@ func addRoom(_ room: HMRoom) async throws
 ## Parameters
 
 - `room`: The room to add; must be in the same home as the zone.
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

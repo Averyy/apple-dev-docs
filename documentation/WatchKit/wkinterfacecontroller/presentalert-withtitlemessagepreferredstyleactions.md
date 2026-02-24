@@ -31,7 +31,7 @@ Only one action or alert sheet may be visible at a time. If you call this method
 - `title`: The title of the alert. Use this string to convey the intent of your alert.
 - `message`: The text to display for the body of the alert. Use this string to display secondary information related to the alert.
 - `preferredStyle`: The preferred style of the sheet. Use the available constants to specify the type of sheet (alert or action) to display and the configuration of the buttons.
-- `actions`: An array of   objects that describe the custom buttons to display. The array must contain at least one button. For the   style, the array must contain exactly two buttons. The block associated with each button should dismiss the sheet in addition to performing any other tasks.
+- `actions`: An array of [`WKAlertAction`](wkalertaction.md) objects that describe the custom buttons to display. The array must contain at least one button. For the [`WKAlertControllerStyle.sideBySideButtonsAlert`](wkalertcontrollerstyle/sidebysidebuttonsalert.md) style, the array must contain exactly two buttons. The block associated with each button should dismiss the sheet in addition to performing any other tasks.
 
 ## See Also
 

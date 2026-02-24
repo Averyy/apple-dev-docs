@@ -25,8 +25,8 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success or [`GSS_S
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
-- `mech`: The mechanism to examine, or   to examine all mechanisms.
-- `mech_attr`: A pointer the function uses to return the list of mechanism attributes supported by the mechanism. See Mechanisms and Authentication in   for a list of possible values. Pass   to ignore this output. If you do receive a set, release its memory with a call to   when you are done with it.
+- `mech`: The mechanism to examine, or [`GSS_C_NO_OID`](gss_c_no_oid.md) to examine all mechanisms.
+- `mech_attr`: A pointer the function uses to return the list of mechanism attributes supported by the mechanism. See Mechanisms and Authentication in [`Security Mechanisms`](security-mechanisms.md) for a list of possible values. Pass `NULL` to ignore this output. If you do receive a set, release its memory with a call to [`gss_release_oid_set(_:_:)`](gss_release_oid_set(_:_:).md) when you are done with it.
 
 ## See Also
 

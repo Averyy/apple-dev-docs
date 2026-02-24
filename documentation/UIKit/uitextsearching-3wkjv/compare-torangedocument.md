@@ -30,7 +30,7 @@ The system calls this method during a find session to determine which [`UITextRa
 
 - `foundRange`: The range of characters in a text container to compare from.
 - `toRange`: The range of characters in a text container to compare to.
-- `document`: A string that uniquely identifies the document containing the text ranges.   when searching a single document.
+- `document`: A string that uniquely identifies the document containing the text ranges. `Nil` when searching a single document.
 
 ## See Also
 

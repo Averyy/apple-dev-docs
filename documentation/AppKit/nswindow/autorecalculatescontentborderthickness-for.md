@@ -20,7 +20,8 @@ func autorecalculatesContentBorderThickness(for edge: NSRectEdge) -> Bool
 
 ## Parameters
 
-- `edge`: The border to check:
+- `edge`: The border to check: - `NSMaxYEdge`: Top border.
+- `NSMinYEdge`: Bottom border.
 
 ## See Also
 

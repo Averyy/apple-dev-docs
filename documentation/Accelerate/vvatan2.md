@@ -24,6 +24,11 @@ func vvatan2(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsaf
 
 ##### Parameters
 
+- **parameter 1**: The output array, *z*.
+- **parameter 2**: The input array, *y*.
+- **parameter 3**: The input array, *x*.
+- **parameter 4**: The number of elements in the arrays.
+
 The signs of both arguments are used to determine the quadrant of the calculated value.
 
 The following special values of `x` and `y` produce the given value of `z`:

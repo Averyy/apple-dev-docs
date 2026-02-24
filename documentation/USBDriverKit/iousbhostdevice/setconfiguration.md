@@ -24,8 +24,8 @@ This method terminates all previously configured child interfaces and sets the n
 
 ## Parameters
 
-- `bConfigurationValue`: The configuration to select. You can get this value from the   field of the   structure.
-- `matchInterfaces`: A Boolean value indicating whether you want the system to perform matching on the interfaces of the new configuration. Specify   to skip the matching process.
+- `bConfigurationValue`: The configuration to select. You can get this value from the [`bConfigurationValue`](iousbconfigurationdescriptor/bconfigurationvalue.md) field of the [`IOUSBConfigurationDescriptor`](iousbconfigurationdescriptor.md) structure.
+- `matchInterfaces`: A Boolean value indicating whether you want the system to perform matching on the interfaces of the new configuration. Specify [`false`](https://developer.apple.com/documentation/Swift/false) to skip the matching process.
 
 
 ---

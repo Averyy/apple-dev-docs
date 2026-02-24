@@ -25,7 +25,7 @@ The delegate is sent this message just after `animation` receives a [`start()`](
 
 ## Parameters
 
-- `animation`: The   object that was just started.
+- `animation`: The `NSAnimation` object that was just started.
 
 ## See Also
 

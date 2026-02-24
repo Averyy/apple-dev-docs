@@ -41,7 +41,7 @@ When testing your app’s location-handling logic, you don’t need to use [`CLL
 
 ##### Set a Simulated Location for Ui Automation
 
-In your UI automation tests, update the simulated device location by setting the shared [`XCUIDevice`](https://developer.apple.com/documentation/XCTest/XCUIDevice) location to an instance of [`XCUILocation`](https://developer.apple.com/documentation/XCTest/XCUILocation).
+In your UI automation tests, update the simulated device location by setting the shared [`XCUIDevice`](https://developer.apple.com/documentation/XCUIAutomation/XCUIDevice) location to an instance of [`XCUILocation`](https://developer.apple.com/documentation/XCUIAutomation/XCUILocation).
 
 ```swift
 import XCTest

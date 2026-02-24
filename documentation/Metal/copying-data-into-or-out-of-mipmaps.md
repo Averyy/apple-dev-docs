@@ -12,6 +12,31 @@ When you copy data between resources, and the source or destination is a texture
 
 When you copy data from system memory into a texture, using the [`replace(region:mipmapLevel:withBytes:bytesPerRow:)`](mtltexture/replace(region:mipmaplevel:withbytes:bytesperrow:).md) or similar method, state which mipmap is the destination of that copy.
 
+**Swift**:
+
+```swift
+// Create a 3D region, where image is a CGContext instance.
+let image = <#CGContext#>
+let region: MTLRegion = MTLRegionMake3D(0, 0, 0, image.width, image.height, 1)
+
+// Replace the region in the texture.
+texture.replace(region: region, mipmapLevel: 0, withBytes: image.data!, bytesPerRow: image.bytesPerRow)
+```
+
+**Objective-C**:
+
+```objective-c
+MTLRegion region = {
+    { 0, 0, 0 },                   // MTLOrigin
+    {image.width, image.height, 1} // MTLSize
+};
+
+[texture replaceRegion:region
+           mipmapLevel:0
+             withBytes:image.data.bytes
+           bytesPerRow:bytesPerRow];
+```
+
 Call this routine once for each mipmap you want to fill, changing the region to match the size of the mipmap level you’re writing to.
 
 ##### Copy Mipmap Data Between Metal Resources
@@ -23,6 +48,29 @@ To copy all matching data between two textures, encode a command using the [`cop
 To copy a selection of mipmaps from one texture to another, use the [`copy(from:sourceSlice:sourceLevel:to:destinationSlice:destinationLevel:sliceCount:levelCount:)`](mtlblitcommandencoder/copy(from:sourceslice:sourcelevel:to:destinationslice:destinationlevel:slicecount:levelcount:).md) method. Specify the first source mipmap level and first destination mipmap level, both of which need to have the same dimensions. Also specify the number of mipmap levels you want to copy.
 
 For example, the following code assumes that the destination texture is twice as large in both dimensions as the source texture. Mipmap `1` in the destination matches the size of the source mipmap `0`, so the code passes `0` as the source level and `1` as the destination level. It also passes `5` as the level count to copy `5` mipmaps.
+
+**Swift**:
+
+```swift
+// Copy mipmap data between MTLTexture instances.
+let source = <#MTLTexture#>, destination = <#MTLTexture#>
+            
+encoder.copy(from: source, sourceSlice: 0, sourceLevel: 0, to: destination, destinationSlice: 0,
+             destinationLevel: 1, sliceCount: 1, levelCount: 5)
+```
+
+**Objective-C**:
+
+```objective-c
+[encoder copyFromTexture: source
+    sourceSlice: 0
+    sourceLevel: 0
+    toTexture: destination
+    destinationSlice: 0
+    destinationLevel: 1
+    sliceCount: 1
+    levelCount: 5];
+```
 
 If you need to copy data between buffers and textures, encode a separate blit command for each mipmap level to copy. See [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md) for other methods that copy data to and from textures.
 

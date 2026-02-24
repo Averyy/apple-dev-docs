@@ -27,8 +27,8 @@ This initializer throws an error if the format style fails to parse the string i
 ## Parameters
 
 - `value`: A string that contains a formatted decimal value.
-- `format`: A format style that describes percent formatting conventions used by the string. The initializer uses this format’s   to parse the string.
-- `lenient`: A Boolean value that indicates whether the parse strategy should permit some discrepancies when parsing. Defaults to  .
+- `format`: A format style that describes percent formatting conventions used by the string. The initializer uses this format’s [`Decimal.ParseStrategy`](decimal/parsestrategy.md) to parse the string.
+- `lenient`: A Boolean value that indicates whether the parse strategy should permit some discrepancies when parsing. Defaults to `true`.
 
 ## See Also
 

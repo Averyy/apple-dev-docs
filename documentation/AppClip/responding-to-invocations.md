@@ -8,7 +8,7 @@ Add code to respond to invocations and offer a focused launch experience.
 
 A great launch experience that helps the user complete a task quickly is the key to a successful App Clip. Upon launch, your App Clip needs to be aware of the user’s context and update its UI accordingly. For example, an App Clip might provide functionality to order donuts from a local donut shop with multiple physical locations. Instead of making the user select a location before displaying the donut menu, the App Clip recognizes the user’s context and updates its UI accordingly. The user doesn’t have to select a location, and can complete their task — ordering donuts — with fewer taps.
 
-To enable the App Clip to respond to the user’s context upon launch, the system makes the  available to the App Clip. Configuring the launch experience of your App Clip and choosing invocation URLs are key tasks when creating an App Clip. However, configuring invocation URLs in App Store Connect isn’t enough to provide a streamlined launch experience. You also need to add code to your App Clip that handles the invocation URL and updates its UI.
+To enable the App Clip to respond to the user’s context upon launch, the system makes the *invocation URL* available to the App Clip. Configuring the launch experience of your App Clip and choosing invocation URLs are key tasks when creating an App Clip. However, configuring invocation URLs in App Store Connect isn’t enough to provide a streamlined launch experience. You also need to add code to your App Clip that handles the invocation URL and updates its UI.
 
 ##### Leveraging the Invocation Url
 

@@ -26,8 +26,8 @@ This method adds `value` and `key` to the dictionary using [`setObject(_:forKey:
 
 ## Parameters
 
-- `value`: The value for  .
-- `key`: The key for  . Note that when using key-value coding, the key must be a string (see  ).
+- `value`: The value for `key`.
+- `key`: The key for `value`. Note that when using key-value coding, the key must be a string (see [`Accessing Object Properties`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/BasicPrinciples.html#//apple_ref/doc/uid/20002170)).
 
 ## See Also
 

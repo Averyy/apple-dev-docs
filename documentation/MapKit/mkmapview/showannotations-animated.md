@@ -26,7 +26,7 @@ Calling this method updates the value in the [`region`](mkmapview/region.md) pro
 ## Parameters
 
 - `annotations`: The annotations that you want to be visible on the map.
-- `animated`: Specify   if you want the map view to animate the region change, or   if you want the map to display the new region immediately without animations.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if you want the map view to animate the region change, or [`false`](https://developer.apple.com/documentation/Swift/false) if you want the map to display the new region immediately without animations.
 
 ## See Also
 

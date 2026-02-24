@@ -17,7 +17,7 @@ func CTFontCollectionSetQueryDescriptors(_ collection: CTMutableFontCollection, 
 ## Parameters
 
 - `collection`: The font collection reference.
-- `descriptors`: An array of   objects. Passing in   represents an empty collection, which sets the matching descriptors to  .
+- `descriptors`: An array of [`CTFontDescriptor`](ctfontdescriptor.md) objects. Passing in `NULL` represents an empty collection, which sets the matching descriptors to `NULL`.
 
 ## See Also
 

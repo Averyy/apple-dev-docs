@@ -33,8 +33,8 @@ Deferred updates are delivered only when the system enters a low power state. De
 
 ## Parameters
 
-- `distance`: The distance (in meters) from the current location that must be travelled before event delivery resumes. To specify an unlimited distance, pass the   constant.
-- `timeout`: The amount of time (in seconds) from the current time that must pass before event delivery resumes. To specify an unlimited amount of time, pass the   constant.
+- `distance`: The distance (in meters) from the current location that must be travelled before event delivery resumes. To specify an unlimited distance, pass the [`CLLocationDistanceMax`](cllocationdistancemax.md) constant.
+- `timeout`: The amount of time (in seconds) from the current time that must pass before event delivery resumes. To specify an unlimited amount of time, pass the [`CLTimeIntervalMax`](cltimeintervalmax.md) constant.
 
 ## See Also
 

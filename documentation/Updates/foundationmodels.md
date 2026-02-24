@@ -12,7 +12,7 @@ Browse notable changes in [`Foundation Models`](https://developer.apple.com/docu
 
 - Use the latest on-device large language model that improves instruction-following and tool-calling abilities. Because the model changes when a person updates to iOS 26.4, iPadOS 26.4, macOS 26.4, and visionOS 26.4, test your prompts with the new model to verify your app’s behavior. If necessary, update and maintain prompts for each model version.
 - Reduce the possibility of blocking benign content with improved guardrails for [`SystemLanguageModel`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel).
-- Measure how many tokens your prompt, instructions, or entire session transcript uses with [`tokenUsage(for:)`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel/tokenUsage(for:)).
+- Measure how many tokens your prompt, instructions, or entire session transcript uses with [`tokenCount(for:)`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel/tokenCount(for:)).
 - Use the [`contextSize`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel/contextSize) property to get the maximum context size — in tokens — that the [`SystemLanguageModel`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel) supports.
 - Use the `#Playground` macro in Xcode to view an estimate of the usage of 4,096 tokens in the available context window. When you run the canvas, the output displays Input Token Count and Response Token Count separately.
 

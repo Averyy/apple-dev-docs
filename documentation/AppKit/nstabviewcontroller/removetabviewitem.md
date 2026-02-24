@@ -20,7 +20,7 @@ Use this method to remove a tab view item from the tab view interface. Removing 
 
 ## Parameters
 
-- `tabViewItem`: The tab view item to remove. If this parameter is   or the item does not belong to the tab view controller, this method throws an exception.
+- `tabViewItem`: The tab view item to remove. If this parameter is `nil` or the item does not belong to the tab view controller, this method throws an exception.
 
 ## See Also
 

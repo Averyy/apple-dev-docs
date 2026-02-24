@@ -22,9 +22,9 @@ optional func unknownPersonViewController(_ personViewController: ABUnknownPerso
 
 ## Parameters
 
-- `person`: The person   is displaying.
+- `person`: The person `unknownPersonViewController` is displaying.
 - `property`: The property whose value the user selected.
-- `identifier`: The identifier for the value the user selected if   is a multivalue property; otherwise,  .
+- `identifier`: The identifier for the value the user selected if `property` is a multivalue property; otherwise, `kABMultiValueInvalidIdentifier`.
 
 ## See Also
 

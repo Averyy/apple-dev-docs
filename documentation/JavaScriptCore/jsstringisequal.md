@@ -25,8 +25,8 @@ func JSStringIsEqual(_ a: JSStringRef!, _ b: JSStringRef!) -> Bool
 
 ## Parameters
 
-- `a`: The first   to test.
-- `b`: The second   to test.
+- `a`: The first [`JSStringRef`](jsstringref.md) to test.
+- `b`: The second [`JSStringRef`](jsstringref.md) to test.
 
 ## See Also
 

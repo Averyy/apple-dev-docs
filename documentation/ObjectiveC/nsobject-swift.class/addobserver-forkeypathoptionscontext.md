@@ -26,10 +26,10 @@ Neither the object receiving this message, nor `observer`, are retained. An obje
 
 ## Parameters
 
-- `observer`: The object to register for KVO notifications. The observer must implement the key-value observing method  .
-- `keyPath`: The key path, relative to the object receiving this message, of the property to observe. This value must not be  .
-- `options`: A combination of the   values that specifies what is included in observation notifications. For possible values, see  .
-- `context`: Arbitrary data that is passed to   in  .
+- `observer`: The object to register for KVO notifications. The observer must implement the key-value observing method [`observeValue(forKeyPath:of:change:context:)`](nsobject-swift.class/observevalue(forkeypath:of:change:context:).md).
+- `keyPath`: The key path, relative to the object receiving this message, of the property to observe. This value must not be `nil`.
+- `options`: A combination of the `NSKeyValueObservingOptions` values that specifies what is included in observation notifications. For possible values, see [`NSKeyValueObservingOptions`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions).
+- `context`: Arbitrary data that is passed to `observer` in [`observeValue(forKeyPath:of:change:context:)`](nsobject-swift.class/observevalue(forkeypath:of:change:context:).md).
 
 ## See Also
 

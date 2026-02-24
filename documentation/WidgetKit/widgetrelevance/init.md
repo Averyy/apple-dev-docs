@@ -21,7 +21,7 @@ init(_ attributes: [WidgetRelevanceAttribute<Configuration>])
 
 ## Parameters
 
-- `attributes`: A collection of   describing when this   type of widget could be relevant.
+- `attributes`: A collection of `WidgetRelevanceAttribute` describing when this type of widget could be relevant.
 
 
 ---

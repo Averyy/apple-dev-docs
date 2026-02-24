@@ -18,8 +18,8 @@ init(totalCountdownDuration: TimeInterval, previouslyElapsedDuration: TimeInterv
 ## Parameters
 
 - `totalCountdownDuration`: The total duration of the countdown.
-- `previouslyElapsedDuration`: The amount of time that has passed. If the countdown was   never paused or resumed, the value is zero.
-- `startDate`: The date that the countdown started. If the countdown was never paused, the date is when the   countdown started.
+- `previouslyElapsedDuration`: The amount of time that has passed. If the countdown was never paused or resumed, the value is zero.
+- `startDate`: The date that the countdown started. If the countdown was never paused, the date is when the countdown started.
 - `fireDate`: The date at which the countdown starts.
 
 ## See Also

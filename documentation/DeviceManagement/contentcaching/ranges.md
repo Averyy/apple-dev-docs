@@ -14,6 +14,12 @@ A range of IP addresses to cache.
 object ContentCaching.Ranges
 ```
 
+## Properties
+
+- `first` (string) *(required)*: The first IP address in the range.
+- `last` (string) *(required)*: The last IP address in the range.
+- `type` (string): The IP address type.
+
 
 ---
 

@@ -28,10 +28,10 @@ If no feedback token is returned, don’t perform the vertical alignment or requ
 
 ## Parameters
 
-- `view`: The view ( ) in which the object was moved.
-- `previousY`: The vertical location ( ) of the object prior to its move.
-- `alignedY`: The new vertical location ( ) of the object if alignment occurs.
-- `defaultY`: The current vertical location ( ) of the object. This is where the user actually moved the object. This location may be offset from the location of the cursor.
+- `view`: The view ([`NSView`](nsview.md)) in which the object was moved.
+- `previousY`: The vertical location ([`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct)) of the object prior to its move.
+- `alignedY`: The new vertical location ([`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct)) of the object if alignment occurs.
+- `defaultY`: The current vertical location ([`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct)) of the object. This is where the user actually moved the object. This location may be offset from the location of the cursor.
 
 ## See Also
 

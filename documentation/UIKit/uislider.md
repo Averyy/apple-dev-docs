@@ -27,7 +27,7 @@ class UISlider
 
 #### Overview
 
-As you move the  of a slider, it passes its updated value to any actions attached to it. The appearance of sliders is configurable; you can tint the track and the thumb, and provide images to appear at the ends of the slider. You can add sliders to your interface programmatically or by using Interface Builder.
+As you move the *thumb* of a slider, it passes its updated value to any actions attached to it. The appearance of sliders is configurable; you can tint the track and the thumb, and provide images to appear at the ends of the slider. You can add sliders to your interface programmatically or by using Interface Builder.
 
 The following image shows the terms used to describe the constituent parts of a [`UISlider`](uislider.md) object in a left-to-right configuration.
 
@@ -48,13 +48,29 @@ By default, the slider sends value-changed events continuously as the user moves
 
 You connect a slider to your action method by using the [`addTarget(_:action:for:)`](uicontrol/addtarget(_:action:for:).md) method or by creating a connection in Interface Builder. The signature of an action method takes one of three forms, as shown in the following code. Choose the form that provides the information that you need to respond to the value change in the slider.
 
+**Swift**:
+
+```swift
+@IBAction func doSomething()
+@IBAction func doSomething(sender: UISlider)
+@IBAction func doSomething(sender: UISlider, forEvent event: UIEvent)
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction)doSomething;
+- (IBAction)doSomething:(id)sender;
+- (IBAction)doSomething:(id)sender forEvent:(UIEvent*)event;
+```
+
 ##### Debug Sliders
 
 When debugging issues with sliders, follow these tips to avoid common pitfalls:
 
--  When customizing slider appearance with images or tint, use one option or the other, but not both. Conflicting settings for track and thumb appearance are resolved in favor of the most recently set value. For example, setting a new minimum track image for any state clears any custom tint color you may have provided for minimum track images. Similarly, setting the thumb tint color removes any custom thumb images associated with the slider.
--  If you try to programmatically set a slider’s current value to be below the minimum or above the maximum, it’s set to the minimum or maximum instead. However, if you set the value beyond the range of the minimum or maximum in Interface Builder, the minimum or minimum values are updated instead.
--  If you use custom track and thumb images for your slider, remember to set an image for every possible [`UIControl.State`](uicontrol/state-swift.struct.md). Any control state that doesn’t have a corresponding custom image assigned to it displays the standard image instead. If you set one custom image, be sure to set them all.
+- **Use either a custom tint color or a custom image, but not both.** When customizing slider appearance with images or tint, use one option or the other, but not both. Conflicting settings for track and thumb appearance are resolved in favor of the most recently set value. For example, setting a new minimum track image for any state clears any custom tint color you may have provided for minimum track images. Similarly, setting the thumb tint color removes any custom thumb images associated with the slider.
+- **The current value must be between the minimum and maximum values.** If you try to programmatically set a slider’s current value to be below the minimum or above the maximum, it’s set to the minimum or maximum instead. However, if you set the value beyond the range of the minimum or maximum in Interface Builder, the minimum or minimum values are updated instead.
+- **Set custom images for all control states.** If you use custom track and thumb images for your slider, remember to set an image for every possible [`UIControl.State`](uicontrol/state-swift.struct.md). Any control state that doesn’t have a corresponding custom image assigned to it displays the standard image instead. If you set one custom image, be sure to set them all.
 
 ##### Configure Slider Attributes in Interface Builder
 

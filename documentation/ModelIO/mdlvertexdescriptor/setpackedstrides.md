@@ -25,7 +25,7 @@ This method examines the [`offset`](mdlvertexattribute/offset.md) property of ea
 
 For example, consider a vertex buffer with three attributes: position, normal, and texture coordinate. The position and normal attributes each contain 3-component floating-point vectors for each vertex, and the texture coordinate attribute contains a 2-component floating-point vector for each vertex. The data size for the each of the first two attributes is 12 bytes (4 bytes per component), and the data size for the third is 8 bytes (4 bytes per component). Therefore, if the offset of each attributes is set such that there is no padding between the data for each, the minimum stride that leaves no padding between vertices is 32 bytes (the sum of the sizes of all three attributes).
 
-To describe a fully packed vertex buffer, call this method  calling the [`setPackedOffsets()`](mdlvertexdescriptor/setpackedoffsets().md) method.
+To describe a fully packed vertex buffer, call this method *after* calling the [`setPackedOffsets()`](mdlvertexdescriptor/setpackedoffsets().md) method.
 
 ## See Also
 

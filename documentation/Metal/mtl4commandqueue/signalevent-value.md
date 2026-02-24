@@ -22,8 +22,8 @@ func signalEvent(_ event: any MTLEvent, value: UInt64)
 
 ## Parameters
 
-- `event`:   to signal.
-- `value`: The value to signal the   with.
+- `event`: [`MTLEvent`](mtlevent.md) to signal.
+- `value`: The value to signal the [`MTLEvent`](mtlevent.md) with.
 
 
 ---

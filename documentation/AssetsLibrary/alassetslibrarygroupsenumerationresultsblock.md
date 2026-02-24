@@ -15,6 +15,9 @@ typealias ALAssetsLibraryGroupsEnumerationResultsBlock = (ALAssetsGroup?, Unsafe
 
 The block parameters are defined as follows:
 
+- **group**: The current asset group in the enumeration.
+- **stop**: A pointer to a boolean value; set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop enumeration.
+
 ## See Also
 
 - [typealias ALAssetsGroupType](alassetsgrouptype.md)

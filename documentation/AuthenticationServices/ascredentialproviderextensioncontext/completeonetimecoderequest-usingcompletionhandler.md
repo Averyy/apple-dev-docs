@@ -29,7 +29,7 @@ After calling this method, the system dismisses the associated view controller.
 ## Parameters
 
 - `credential`: The OTP credential chosen by the person.
-- `completionHandler`: Optional work that the extension performs as a background priority task after the request completes. The   parameter is   if the system prematurely terminates a previous non-expiration invocation of the  .
+- `completionHandler`: Optional work that the extension performs as a background priority task after the request completes. The `expired` parameter is `YES` if the system prematurely terminates a previous non-expiration invocation of the `completionHandler`.
 
 ## See Also
 

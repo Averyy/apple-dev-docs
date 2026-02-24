@@ -50,6 +50,192 @@ A VM must be in a [`VZVirtualMachine.State.stopped`](vzvirtualmachine/state-swif
 
 The example below shows the complete process for installing and running a macOS VM:
 
+**Swift**:
+
+```swift
+    // Load the latest image.
+    guard let restoreImage = try? await VZMacOSRestoreImage.latestSupported
+    else {
+        fatalError("No restore image is supported.")
+    }
+
+    // restoreImage came from latestSupported, its URL property refers
+    // to an image on the network.
+    // Download the image to the local filesystem.
+    guard let (location, _) = try? await
+            URLSession.shared.download(from: restoreImage.url) else {
+                fatalError("""
+                           Failed to download the macOS image from the network.
+                           """)
+    }
+
+    // VZMacOSInstaller must be called with a URL corresponding to a local file.
+    let localRestoreImageDirectoryURL =
+    URL(fileURLWithPath: "*set to the directory where the restore image" 
+        "should be stored*")
+    let localRestoreImageURL = localRestoreImageDirectoryURL
+        .appendingPathComponent(restoreImage.url.lastPathComponent)
+
+    guard ((try? FileManager.default.moveItem(at: location, to:
+                                                localRestoreImageURL)) != nil)
+    else {
+        fatalError("Failed to move the macOS image to its destination.")
+    }
+
+    // This image came from VZMacOSRestoreImage.latestSupported,
+    // mostFeaturefulSupportedConfiguration should not be nil.
+    let configurationRequirements =
+        restoreImage.mostFeaturefulSupportedConfiguration!
+
+    // Construct a VZVirtualMachineConfiguration that satisfies the
+    // configuration requirements.
+    let configuration = VZVirtualMachineConfiguration()
+
+    // The following are minimum values; you can use larger values.
+    configuration.cpuCount = configurationRequirements.minimumSupportedCPUCount
+    configuration.memorySize =
+        configurationRequirements.minimumSupportedMemorySize
+
+    configuration.bootLoader = VZMacOSBootLoader()
+
+    // Set up a valid Mac platform configuration for the restore image.
+    let hardwareModel = configurationRequirements.hardwareModel
+    let macPlatformConfiguration = VZMacPlatformConfiguration()
+    let auxiliaryStorageURL = URL(fileURLWithPath:
+        "*set to the path where the auxiliary storage should be stored*")
+    guard let auxiliaryStorage = try? VZMacAuxiliaryStorage(creatingStorageAt:
+                auxiliaryStorageURL,
+                hardwareModel: hardwareModel,
+                options: []) else {
+                fatalError("Failed to create auxiliary storage.")
+    }
+    macPlatformConfiguration.auxiliaryStorage = auxiliaryStorage
+    macPlatformConfiguration.hardwareModel = hardwareModel
+    configuration.platform = macPlatformConfiguration
+
+    fatalError(
+        """
+        *set up storageDevices, graphicsDevices, pointingDevices,
+        keyboards, etc. here*
+        """)
+
+    guard ((try? configuration.validate()) != nil) else {
+        fatalError("Virtual machine configuration is invalid.")
+    }
+
+    let virtualMachine = VZVirtualMachine(configuration: configuration)
+    let installer = VZMacOSInstaller(virtualMachine: virtualMachine,
+                                     restoringFromImageAt: localRestoreImageURL)
+    installer.install(completionHandler: { (result: Result) in
+        if case let .failure(error) = result {
+            fatalError("Installation failure: \(error)")
+        } else {
+            // Installation was successful.
+        }
+    })
+
+    // Observe progress using installer.progress object.
+    installer.progress.observe(\.fractionCompleted, options: [.initial, .new]) {
+        (progress, change) in
+        print("Installation progress: \(change.newValue! * 100).")
+    }
+
+}
+```
+
+**Objective-C**:
+
+```objc
+// Load the latest image.
+[VZMacOSRestoreImage fetchLatestSupportedWithCompletionHandler:^(VZMacOSRestoreImage *restoreImage, NSError *error) {
+    if (error) {
+        [NSException raise:NSGenericException format:@"No restore image is supported."];
+    }
+    downloadAndInstallRestoreImage(restoreImage);
+}];
+
+void downloadAndInstallRestoreImage(VZMacOSRestoreImage *restoreImage) {
+    // Since restoreImage came from latestSupported, its URL property 
+    //refers to a restore image on the network.
+    // Download the restore image to the local filesystem.
+    [[NSURLSession sharedSession] downloadTaskWithURL:restoreImage.URL completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
+        if (error) {
+            [NSException raise:NSGenericException format:
+               @"Failed to download the restore image from the network."];
+        }
+
+        // VZMacOSInstaller must be called with a URL that corresponds to a 
+        // local file.
+        NSURL *localRestoreImageDirectoryURL = [NSURL fileURLWithPath:
+              @"*set to the directory where the restore image should be stored*"];
+        NSURL *localRestoreImageURL = [localRestoreImageDirectoryURL URLByAppendingPathComponent:restoreImage.URL.lastPathComponent];
+
+        if (![[NSFileManager defaultManager] moveItemAtURL:location 
+        toURL:localRestoreImageURL error:nil]) {
+            [NSException raise:NSGenericException format:@"Failed to move the restore image to its destination."];
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            installLocalRestoreImage(restoreImage, localRestoreImageURL);
+        });
+    }];
+}
+
+void installLocalRestoreImage(VZMacOSRestoreImage *remoteRestoreImage, 
+        NSURL *localRestoreImageURL) {
+    // Since this restore image came from -[VZMacOSRestoreImage 
+    // fetchLatestSupportedWithCompletionHandler:], 
+    // mostFeaturefulSupportedConfiguration should not be nil.
+    VZMacOSConfigurationRequirements *configurationRequirements = remoteRestoreImage.mostFeaturefulSupportedConfiguration;
+
+    // Construct a VZVirtualMachineConfiguration that satisfies the configuration requirements.
+    VZVirtualMachineConfiguration *configuration = [[VZVirtualMachineConfiguration alloc] init];
+
+    // The following are minimum values; you can use larger values if desired.
+    configuration.CPUCount = configurationRequirements.minimumSupportedCPUCount;
+    configuration.memorySize = configurationRequirements.minimumSupportedMemorySize;
+
+    configuration.bootLoader = [[VZMacOSBootLoader alloc] init];
+
+    // Set up a valid Mac platform configuration for the restore image.
+    VZMacHardwareModel *hardwareModel = configurationRequirements.hardwareModel;
+    VZMacPlatformConfiguration *macPlatformConfiguration = [[VZMacPlatformConfiguration alloc] init];
+    NSURL *auxiliaryStorageURL = [NSURL fileURLWithPath:@"*set to the path where "
+                                  "the auxiliary storage should be stored*"];
+    VZMacAuxiliaryStorage *auxiliaryStorage = [[VZMacAuxiliaryStorage alloc] initCreatingStorageAtURL:auxiliaryStorageURL
+                                                                                        hardwareModel:hardwareModel
+                                                                                              options:0
+                                                                                                error:nil];
+    if (auxiliaryStorage == nil) {
+        [NSException raise:NSGenericException format:
+        @"Failed to create auxiliary storage."];
+    }
+    macPlatformConfiguration.auxiliaryStorage = auxiliaryStorage;
+    macPlatformConfiguration.hardwareModel = hardwareModel;
+    configuration.platform = macPlatformConfiguration;
+
+    // Set other configuration properties as necessary.
+    [NSException raise:NSGenericException format:@"*set up storageDevices,"
+        " graphicsDevices, pointingDevices, keyboards, etc. here*"];
+
+    assert([configuration validateWithError:nil]);
+
+    VZVirtualMachine *virtualMachine = [[VZVirtualMachine alloc] initWithConfiguration:configuration];
+    VZMacOSInstaller *installer = [[VZMacOSInstaller alloc] initWithVirtualMachine:virtualMachine restoreImageURL:localRestoreImageURL];
+    [installer installWithCompletionHandler:^(NSError *error) {
+        if (error) {
+            [NSException raise:NSGenericException format:@"Installation failure: %@", error];
+        } else {
+            // Installation was successful.
+        }
+    }];
+
+    // Observe progress using installer.progress object.
+    [installer.progress addObserver:observer forKeyPath:@"fractionCompleted" 
+        options:NSKeyValueObservingOptionInitial | 
+        NSKeyValueObservingOptionNew context:nil];
+}
+```
+
 ## See Also
 
 - [Running macOS in a virtual machine on Apple silicon](running-macos-in-a-virtual-machine-on-apple-silicon.md)

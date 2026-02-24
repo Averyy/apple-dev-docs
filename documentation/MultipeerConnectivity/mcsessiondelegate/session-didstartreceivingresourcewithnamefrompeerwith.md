@@ -25,7 +25,7 @@ func session(_ session: MCSession, didStartReceivingResourceWithName resourceNam
 - `session`: The session that started receiving the resource.
 - `resourceName`: The name of the resource, as provided by the sender.
 - `peerID`: The sender’s peer ID.
-- `progress`: An   object that can be used to cancel the transfer or queried to determine how far the transfer has progressed.
+- `progress`: An `NSProgress` object that can be used to cancel the transfer or queried to determine how far the transfer has progressed.
 
 ## See Also
 

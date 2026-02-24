@@ -16,7 +16,7 @@ Returns the maximum context size (in tokens) supported by the model.
 
 ```swift
 @backDeployed(before: iOS 26.4, macOS 26.4, visionOS 26.4)
-final var contextSize: Int { get async throws }
+final var contextSize: Int { get }
 ```
 
 #### Return Value

@@ -25,8 +25,8 @@ This initializer creates a [`Text`](text.md) view for you, and treats the title 
 ## Parameters
 
 - `text`: The column’s label.
-- `value`: The path to the property associated with the column,   to display verbatim as text in each row of a table,   and the key path used to create a sort comparator when   sorting the column.
-- `comparator`: The   used to order the string values.
+- `value`: The path to the property associated with the column, to display verbatim as text in each row of a table, and the key path used to create a sort comparator when sorting the column.
+- `comparator`: The `SortComparator` used to order the string values.
 
 ## See Also
 

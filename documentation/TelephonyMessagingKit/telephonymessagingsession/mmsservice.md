@@ -18,7 +18,7 @@ final var mmsService: MMSService { get }
 
 ## Mentions
 
-- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
+- [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
 
 ## See Also
 

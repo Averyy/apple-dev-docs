@@ -81,8 +81,8 @@ On return, the `indices` array contains the values `[7, 2, 4, 6]` and the distan
 
 - `max_n_samples`: The maximum number of data points.
 - `n_features`: The number of features or dimensions of each data point.
-- `n_neighbors`: The number of nearest neighbors that a subsequent call to   calculates.
-- `data_type`: The data type of the data points. This must be either   or  .
+- `n_neighbors`: The number of nearest neighbors that a subsequent call to [`BNNSNearestNeighborsGetInfo(_:_:_:_:)`](bnnsnearestneighborsgetinfo(_:_:_:_:).md) calculates.
+- `data_type`: The data type of the data points. This must be either `BNNSDataTypeFloat32` or `BNNSDataTypeFloat16`.
 - `filter_params`: The filter runtime parameters.
 
 ## See Also

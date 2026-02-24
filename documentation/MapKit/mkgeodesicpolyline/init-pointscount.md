@@ -27,7 +27,7 @@ A new geodesic polyline object.
 ## Parameters
 
 - `points`: A pointer to the array of map points that define the path.
-- `count`: The number of items in the   array.
+- `count`: The number of items in the `points` array.
 
 ## See Also
 

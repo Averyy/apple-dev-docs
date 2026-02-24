@@ -37,7 +37,7 @@ MyEditorView()
 
 ## Parameters
 
-- `width`: The preferred fixed width for the inspector if   presented as a trailing column.
+- `width`: The preferred fixed width for the inspector if presented as a trailing column.
 
 ## See Also
 

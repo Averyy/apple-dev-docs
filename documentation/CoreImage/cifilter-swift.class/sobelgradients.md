@@ -27,6 +27,8 @@ A [`CIImage`](ciimage.md) containing the Sobel gradients.
 
 This filter applies the Sobel operator to the color components of the input image. You would typically use the Sobel filter as part of an edge-detection algorithm for performing.
 
+- **`inputImage`**: A [`CIImage`](ciimage.md) containing the image to process.
+
 The following code applies the [`sobelGradients()`](cifilter-swift.class/sobelgradients().md) filter to an image.
 
 ```swift

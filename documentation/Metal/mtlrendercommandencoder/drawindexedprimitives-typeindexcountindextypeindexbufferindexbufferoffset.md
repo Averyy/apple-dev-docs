@@ -28,11 +28,11 @@ The method records the encoder’s current rendering state and resources the com
 
 ## Parameters
 
-- `primitiveType`: See the   method and its siblings for more information about setting an entry in the vertex shader argument table for buffers.
-- `indexCount`: An integer that represents the number of vertices the command reads from  .
-- `indexType`: An   instance that represents the index’s format, including   and  .
-- `indexBuffer`: An   instance that contains the   vertex indices of the   format.
-- `indexBufferOffset`: An integer that represents the location that’s a multiple of the index size from the start of   where the vertex indices begin.
+- `primitiveType`: An [`MTLPrimitiveType`](mtlprimitivetype.md) instance that represents how the command interprets vertex argument data. See the [`setVertexBuffer(_:offset:index:)`](mtlrendercommandencoder/setvertexbuffer(_:offset:index:).md) method and its siblings for more information about setting an entry in the vertex shader argument table for buffers.
+- `indexCount`: An integer that represents the number of vertices the command reads from `indexBuffer`.
+- `indexType`: An [`MTLIndexType`](mtlindextype.md) instance that represents the index’s format, including [`MTLIndexType.uint16`](mtlindextype/uint16.md) and [`MTLIndexType.uint32`](mtlindextype/uint32.md).
+- `indexBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance that contains the `indexCount` vertex indices of the `indexType` format.
+- `indexBufferOffset`: An integer that represents the location that’s a multiple of the index size from the start of `indexBuffer` where the vertex indices begin.
 
 ## See Also
 

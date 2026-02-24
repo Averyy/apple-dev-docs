@@ -24,7 +24,7 @@ The title for the specified state. If no attributed title has been set for the s
 
 ## Parameters
 
-- `state`: The state that uses the styled title. The possible values are described in  .
+- `state`: The state that uses the styled title. The possible values are described in [`UIControl.State`](uicontrol/state-swift.struct.md).
 
 ## See Also
 

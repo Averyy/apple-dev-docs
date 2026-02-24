@@ -25,7 +25,7 @@ This method invalidates layout for all subsequent `NSTextContainer` objects, and
 ## Parameters
 
 - `container`: The text container to insert.
-- `index`: The index in the series of text containers at which to insert  .
+- `index`: The index in the series of text containers at which to insert `aTextContainer`.
 
 ## See Also
 

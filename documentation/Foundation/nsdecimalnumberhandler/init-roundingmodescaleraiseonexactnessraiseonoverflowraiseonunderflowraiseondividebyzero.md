@@ -30,12 +30,12 @@ See the [`NSDecimalNumberBehaviors`](nsdecimalnumberbehaviors.md) protocol speci
 
 ## Parameters
 
-- `roundingMode`: The rounding mode to use. There are four possible values:  ,  ,  , and  .
+- `roundingMode`: The rounding mode to use. There are four possible values: `NSRoundUp`, `NSRoundDown`, `NSRoundPlain`, and `NSRoundBankers`.
 - `scale`: The number of digits a rounded value should have after its decimal point.
-- `exact`: If  , in the event of an exactness error the handler will raise an exception, otherwise it will ignore the error and return control to the calling method.
-- `overflow`: If  , in the event of an overflow error the handler will raise an exception, otherwise it will ignore the error and return control to the calling method
-- `underflow`: If  , in the event of an underflow error the handler will raise an exception, otherwise it will ignore the error and return control to the calling method
-- `divideByZero`: If  , in the event of a divide by zero error the handler will raise an exception, otherwise it will ignore the error and return control to the calling method
+- `exact`: If [`true`](https://developer.apple.com/documentation/Swift/true), in the event of an exactness error the handler will raise an exception, otherwise it will ignore the error and return control to the calling method.
+- `overflow`: If [`true`](https://developer.apple.com/documentation/Swift/true), in the event of an overflow error the handler will raise an exception, otherwise it will ignore the error and return control to the calling method
+- `underflow`: If [`true`](https://developer.apple.com/documentation/Swift/true), in the event of an underflow error the handler will raise an exception, otherwise it will ignore the error and return control to the calling method
+- `divideByZero`: If [`true`](https://developer.apple.com/documentation/Swift/true), in the event of a divide by zero error the handler will raise an exception, otherwise it will ignore the error and return control to the calling method
 
 
 ---

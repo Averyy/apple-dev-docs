@@ -10,6 +10,9 @@ Smart Stacks efficiently organize multiple widgets to show useful content at jus
 
 On iPhone and iPad, people create Smart Stacks on their Home Screen with options for surfacing widgets in a Smart Stack:
 
+- ****Smart Rotate****: Automatically rotates widgets to the top of the stack when they have timely, relevant information to show.
+- ****Widget Suggestions****: Automatically propose widgets that a person doesn’t already have in their stack, perhaps exposing them to widgets they don’t even know exist.
+
 On Apple Watch, people rely more on the Smart Stack to intelligently display widgets that best fit their personal context. Additionally, they can configure their favorite widgets to appear in the Smart Stack and pin them to a fixed position.
 
 To make sure the system can accurately determine your widget’s importance to someone, provide contextual and behavioral clues in your timeline provider with [`RelevanceKit`](https://developer.apple.com/documentation/RelevanceKit) and [`App Intents`](https://developer.apple.com/documentation/AppIntents).
@@ -65,7 +68,7 @@ A score of zero (`0`) or lower indicates that a widget isn’t relevant, and Wid
 
 ##### Donate App Intents for Increased Visibility on Iphone and Ipad
 
-To help the system determine your widget’s relevance, donate app intents to provide the system with  about a person’s current in-app actions. When you donate app intents, the system learns how and when people interact with your app and compares your donated app intents with app intents of configured widgets in the Smart Stack. If it finds a widget with a matching app intent, it can automatically rotate to it when a person typically looks for that information. If someone hasn’t configured a matching widget in a Smart Stack, the system can automatically suggest your widget with the configuration that matches your donated app intent. This process increases the visibility of your widget.
+To help the system determine your widget’s relevance, donate app intents to provide the system with *behavioral clues* about a person’s current in-app actions. When you donate app intents, the system learns how and when people interact with your app and compares your donated app intents with app intents of configured widgets in the Smart Stack. If it finds a widget with a matching app intent, it can automatically rotate to it when a person typically looks for that information. If someone hasn’t configured a matching widget in a Smart Stack, the system can automatically suggest your widget with the configuration that matches your donated app intent. This process increases the visibility of your widget.
 
 For example, a tour guide app displays information for cities around the world, such as popular tourist attractions, restaurants, and upcoming festivals throughout the year. The app offers several configurable widgets that display these details. To offer configurable widgets, the app’s widget configurations make use of custom intents, such as `CityInfoAppIntent`, `AttractionAppIntent`, `RestaurantAppIntent`, and `FestivalAppIntent`. As people interact with the app, the app donates these app intents to inform Smart Rotate and Widget Suggestions in Smart Stacks.
 
@@ -83,9 +86,12 @@ Continuing the example with the tour guide app, a person frequently uses the app
 
 ##### Choose How to Provide Relevance Clues on Apple Watch
 
-On Apple Watch, widgets automatically appear in the Smart Stack based on  it requests from your widget — as opposed to behavioral cues your app provides that inform the Smart Stack on iPhone and iPad. When a person’s context matches one of your widget’s contextual clues, such as their location or bedtime, or an inferred  location such as their workplace, the Smart Stack may show your widget more prominently.
+On Apple Watch, widgets automatically appear in the Smart Stack based on *contextual clues* it requests from your widget — as opposed to behavioral cues your app provides that inform the Smart Stack on iPhone and iPad. When a person’s context matches one of your widget’s contextual clues, such as their location or bedtime, or an inferred  location such as their workplace, the Smart Stack may show your widget more prominently.
 
 In watchOS, you can choose between two options to provide relevance information:
+
+- ****Using a timeline****: Provide relevance information using your timeline provider to enable watchOS to intelligently display one widget in the Smart Stack when it matches a person’s context. Additionally, people can configure your widget to appear in the Smart Stack and pin it to a fixed position.
+- ****Using a relevance entries provider****: watchOS widgets can use a [`RelevanceConfiguration`](relevanceconfiguration.md) and a [`RelevanceEntriesProvider`](relevanceentriesprovider.md) to provide widget data and relevance clues. Using a a relevance entries provider instead of a timeline provider, watchOS can intelligently show a widget in the Smart Stack for each relevance clue that matches a person’s context, making your app’s content more visible. For example, a weather widget might provide a relevance clue for someone’s current location and a second relevance clue when it’s time to leave for an upcoming trip. As a result, the widget might appear in the Smart Stack twice, showing different weather data. One widget shows weather data for their current physical location, the other shows weather data for the destination of their trip shortly before they have to leave. However, people can’t configure widgets that use a `RelevanceConfiguration` to appear in the Smart Stack, add them to the Smart Stack, or pin them to a fixed location.
 
 Provide relevance clues in your timeline provider if your widget’s data changes on a relatively predicable schedule and always has timely data to display. Provide relevance clues using a relevance entries provider if your widget should automatically show information for one of the available [`RelevantContext`](https://developer.apple.com/documentation/RelevanceKit/RelevantContext) clues. Additionally, choose a [`RelevanceEntriesProvider`](relevanceentriesprovider.md) if your widget should appear automatically in the Smart Stack several times or if it shouldn’t appear in the Smart Stack unless it matches a person’s context. For example, a widget might only be relevant at a person’s inferred work location and not at their inferred home location.
 

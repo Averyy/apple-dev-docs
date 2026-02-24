@@ -25,7 +25,7 @@ A new column.
 
 ## Parameters
 
-- `mask`: A Boolean column indicating whether elements should be kept   ( ) or removed ( ) in the derived column.
+- `mask`: A Boolean column indicating whether elements should be kept (`true`) or removed (`false`) in the derived column.
 
 ## See Also
 

@@ -20,7 +20,7 @@ You cannot use this method to alter the height of tables or separator items. Cha
 
 ## Parameters
 
-- `width`: The width of the object relative to its immediate container. This value represents the percentage of the container’s width. This value must be between   and  , and values outside of that range are clamped to the minimum or maximum value.
+- `width`: The width of the object relative to its immediate container. This value represents the percentage of the container’s width. This value must be between `0.0` and `1.0`, and values outside of that range are clamped to the minimum or maximum value.
 - `adjustment`: The amount (in points) to add or subtract from the relative width. Positive values increase the width of the item and negative values decrease it.
 
 ## See Also

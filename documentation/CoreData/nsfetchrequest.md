@@ -29,6 +29,16 @@ An instance of [`NSFetchRequest`](nsfetchrequest.md) collects the criteria neede
 
 You can also specify other aspects of a fetch request:
 
+- **[`fetchLimit`](nsfetchrequest/fetchlimit.md)**: The maximum number of objects that a request returns
+- **[`fetchOffset`](nsfetchrequest/fetchoffset.md)**: The number of objects to skip
+- **[`affectedStores`](nsfetchrequest/affectedstores.md)**: Which data stores the request accesses
+- **[`resultType`](nsfetchrequest/resulttype.md)**: Whether the fetch returns managed objects, object IDs, dictionaries, or a count
+- **[`includesPropertyValues`](nsfetchrequest/includespropertyvalues.md) and**: Whether objects are fully populated with their properties
+- **[`returnsObjectsAsFaults`](nsfetchrequest/returnsobjectsasfaults.md)**: Whether the objects are faults
+- **[`includesSubentities`](nsfetchrequest/includessubentities.md)**: Whether the fetch includes subentities of the fetched entity
+- **[`propertiesToFetch`](nsfetchrequest/propertiestofetch.md)**: Which properties to fetch
+- **[`includesPendingChanges`](nsfetchrequest/includespendingchanges.md)**: Whether to include unsaved changes
+
 Use [`execute()`](nsfetchrequest/execute().md) to perform the fetch directly on the managed object context that’s associated with the current queue. Or use one of the [`NSManagedObjectContext`](nsmanagedobjectcontext.md) methods such as [`perform(_:)`](nsmanagedobjectcontext/perform(_:).md) to execute the fetch.
 
 > **Note**:  When you execute an instance of [`NSFetchRequest`](nsfetchrequest.md), it always accesses the underlying persistent stores to retrieve the latest results.

@@ -47,7 +47,7 @@ If the primary workout session is still running, it automatically tries to recon
 ## Parameters
 
 - `workoutSession`: The mirrored workout session that disconnected.
-- `error`: If an error caused the disconnection, then this parameter contains the error value. Otherwise, it’s  .
+- `error`: If an error caused the disconnection, then this parameter contains the error value. Otherwise, it’s `nil`.
 
 ## See Also
 

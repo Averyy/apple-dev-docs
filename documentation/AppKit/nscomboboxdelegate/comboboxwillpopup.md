@@ -17,7 +17,7 @@ optional func comboBoxWillPopUp(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named [`willPopUpNotification`](nscombobox/willpopupnotification.md).
 
 ## See Also
 

@@ -29,7 +29,7 @@ The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property w
 
 ## Parameters
 
-- `surface`: The   render target.
+- `surface`: The `IOSurface` render target.
 
 ## See Also
 

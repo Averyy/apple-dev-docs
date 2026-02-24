@@ -26,11 +26,11 @@ The value that results from evaluating `script`, or `NULL` if the system throws 
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `script`: A   that contains the script to evaluate.
-- `thisObject`: The object to use as   or   to use the global object as  .
-- `sourceURL`: A   that contains a URL for the script’s source file. The system only uses this when reporting exceptions. Pass   to omit source file information in exceptions.
-- `startingLineNumber`: An integer value that specifies the script’s starting line number in the file at  . The system only uses this when reporting exceptions.
-- `exception`: A pointer to a   to store an exception in, if any. Pass   to discard any exception.
+- `script`: A [`JSStringRef`](jsstringref.md) that contains the script to evaluate.
+- `thisObject`: The object to use as `this` or `NULL` to use the global object as `this`.
+- `sourceURL`: A [`JSStringRef`](jsstringref.md) that contains a URL for the script’s source file. The system only uses this when reporting exceptions. Pass `NULL` to omit source file information in exceptions.
+- `startingLineNumber`: An integer value that specifies the script’s starting line number in the file at `sourceURL`. The system only uses this when reporting exceptions.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 

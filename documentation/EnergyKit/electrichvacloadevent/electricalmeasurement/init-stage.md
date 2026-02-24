@@ -19,7 +19,7 @@ init(stage: Int)
 
 ## Parameters
 
-- `stage`:   indicates that the electrical device is idle.   indicates that it’s consuming or generating the most power it’s capable of.
+- `stage`: `0` indicates that the electrical device is idle. `100` indicates that it’s consuming or generating the most power it’s capable of.
 
 ## See Also
 

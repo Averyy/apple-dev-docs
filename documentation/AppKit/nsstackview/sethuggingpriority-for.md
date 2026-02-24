@@ -28,8 +28,9 @@ The value of the hugging priority also affects spacing between views and between
 
 ## Parameters
 
-- `huggingPriority`: The Auto Layout priority for the stack view to minimize its size. The default value is  . Other valid values are those in the   enumeration.
-- `orientation`: The horizontal or vertical user interface axis for which you’re setting the stack view’s hugging priority; one of the constants from the   enumeration.
+- `huggingPriority`: The Auto Layout priority for the stack view to minimize its size. The default value is [`defaultLow`](nslayoutconstraint/priority-swift.struct/defaultlow.md). Other valid values are those in the [`NSLayoutConstraint.Priority`](nslayoutconstraint/priority-swift.struct.md) enumeration.
+- `orientation`: The horizontal or vertical user interface axis for which you’re setting the stack view’s hugging priority; one of the constants from the [`NSUserInterfaceLayoutOrientation`](nsuserinterfacelayoutorientation.md) enumeration. - To specify horizontal-axis hugging for any stack view (whether it uses vertical or horizontal layout), use the [`NSUserInterfaceLayoutOrientation.horizontal`](nsuserinterfacelayoutorientation/horizontal.md) constant.
+- To specify vertical-axis hugging for any stack view  (whether it uses vertical or horizontal layout), use the [`NSUserInterfaceLayoutOrientation.vertical`](nsuserinterfacelayoutorientation/vertical.md) constant.
 
 ## See Also
 

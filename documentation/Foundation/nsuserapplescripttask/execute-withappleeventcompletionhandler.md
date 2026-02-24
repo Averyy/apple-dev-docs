@@ -25,7 +25,7 @@ If the script completed normally, the completion handler’s `error` parameter w
 ## Parameters
 
 - `event`: The Apple event.
-- `handler`: The completion handler Block that returns the result or an error. See  .
+- `handler`: The completion handler Block that returns the result or an error. See [`NSUserAppleScriptTask.CompletionHandler`](nsuserapplescripttask/completionhandler.md).
 
 ## See Also
 

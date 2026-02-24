@@ -14,11 +14,11 @@ You can formulate questions about this data that you’d like to answer, like wh
 
 |  | Cube | Sphere | Pyramid | Total |
 | --- | --- | --- | --- | --- |
-|  | 1 | 2 | 0 | 3 |
-|  | 1 | 1 | 2 | 4 |
-|  | 1 | 1 | 1 | 3 |
-|  | 2 | 0 | 1 | 3 |
-|  | 5 | 4 | 4 | 13 |
+| **Pink** | 1 | 2 | 0 | 3 |
+| **Yellow** | 1 | 1 | 2 | 4 |
+| **Purple** | 1 | 1 | 1 | 3 |
+| **Green** | 2 | 0 | 1 | 3 |
+| **Total** | 5 | 4 | 4 | 13 |
 
 However, in many cases, a more effective data representation is a chart. A chart allows you to communicate large amounts of information all at once. The kind of chart that you create and the way you configure the chart depend on what you want to show. To create a chart with Swift Charts, define your data and initialize a [`Chart`](chart.md) view with marks and data properties. Then use modifiers to customize different components of the chart, like the legend, axes, and scale.
 

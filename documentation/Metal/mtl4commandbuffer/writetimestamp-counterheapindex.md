@@ -28,8 +28,8 @@ You are responsible for ensuring the `counterHeap` is of type [`MTL4CounterHeapT
 
 ## Parameters
 
-- `counterHeap`:   to write the timestamp into.
-- `index`: The index within the   that Metal writes the timestamp to.
+- `counterHeap`: [`MTL4CounterHeap`](mtl4counterheap.md) to write the timestamp into.
+- `index`: The index within the [`MTL4CounterHeap`](mtl4counterheap.md) that Metal writes the timestamp to.
 
 
 ---

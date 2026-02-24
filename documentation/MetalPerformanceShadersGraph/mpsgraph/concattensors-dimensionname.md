@@ -30,7 +30,7 @@ Concatenates all input tensors along the specified dimension. All inputs must be
 ## Parameters
 
 - `tensors`: The tensors to concatenate.
-- `dimensionIndex`: The dimension to concatenate across, must be in range:  .
+- `dimensionIndex`: The dimension to concatenate across, must be in range: `-rank <= dimension < rank`.
 - `name`: The name for the operation.
 
 

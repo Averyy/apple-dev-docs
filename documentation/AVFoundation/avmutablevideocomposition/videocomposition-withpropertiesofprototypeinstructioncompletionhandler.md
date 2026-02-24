@@ -21,7 +21,7 @@ class func videoComposition(withPropertiesOf asset: AVAsset, prototypeInstructio
 
 ## Parameters
 
-- `asset`: The asset for which to create a video composition. Load the asset’s   and   properties before invoking this method.
+- `asset`: The asset for which to create a video composition. Load the asset’s [`duration`](avasset/duration.md) and [`tracks`](avasset/tracks.md) properties before invoking this method.
 - `prototypeInstruction`: A video composition instruction to use as a prototype.
 - `completionHandler`: A block the system calls when it finishes creating the new video composition.
 

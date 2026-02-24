@@ -22,7 +22,7 @@ init(_ multiArray: MLMultiArray)
 
 ## Parameters
 
-- `multiArray`: An   with the same underlying type as the shaped array type.
+- `multiArray`: An [`MLMultiArray`](mlmultiarray.md) with the same underlying type as the shaped array type.
 
 ## See Also
 

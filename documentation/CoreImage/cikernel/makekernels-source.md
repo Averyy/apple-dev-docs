@@ -29,7 +29,7 @@ The Core Image Kernel Language is a dialect of the OpenGL Shading Language. See 
 
 ## Parameters
 
-- `string`: A program in the Core Image Kernel Language that contains one or more routines, each of which is marked using the   keyword.
+- `string`: A program in the Core Image Kernel Language that contains one or more routines, each of which is marked using the `kernel` keyword.
 
 ## See Also
 

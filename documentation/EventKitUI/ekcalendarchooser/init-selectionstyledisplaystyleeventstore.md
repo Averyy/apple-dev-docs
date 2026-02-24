@@ -23,8 +23,8 @@ The initialized calendar chooser.
 
 ## Parameters
 
-- `selectionStyle`: Determines whether to allow selection of multiple calendars. Possible values are described in  .
-- `displayStyle`: Determines which calendars to display. Possible values are described in  .
+- `selectionStyle`: Determines whether to allow selection of multiple calendars. Possible values are described in [`EKCalendarChooserSelectionStyle`](ekcalendarchooserselectionstyle.md).
+- `displayStyle`: Determines which calendars to display. Possible values are described in [`EKCalendarChooserDisplayStyle`](ekcalendarchooserdisplaystyle.md).
 - `eventStore`: The event store to which the calendars belong.
 
 ## See Also

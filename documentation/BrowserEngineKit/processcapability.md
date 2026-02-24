@@ -24,6 +24,10 @@ enum ProcessCapability
 
 To grant a capability to an extension, call the `grantCapability(_:)` method for the relevant process:
 
+- **Web content extension**: [`grantCapability(_:)`](webcontentprocess/grantcapability(_:).md)
+- **Networking extension**: [`grantCapability(_:)`](networkingprocess/grantcapability(_:).md)
+- **Rendering extension**: [`grantCapability(_:)`](renderingprocess/grantcapability(_:).md)
+
 These methods return a [`ProcessCapability.Grant`](processcapability/grant.md) object. When your extension no longer needs the capability, call [`invalidate()`](processcapability/grant/invalidate().md).
 
 ## Topics

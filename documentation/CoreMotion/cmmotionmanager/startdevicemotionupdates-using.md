@@ -24,7 +24,7 @@ You can get the latest device-motion data through the [`deviceMotion`](cmmotionm
 
 ## Parameters
 
-- `referenceFrame`: A constant identifying the reference frame to use for device-motion updates. It’s your responsibility to specify a reference frame that’s available on the current device. Call   to determine which reference frames are currently available.
+- `referenceFrame`: A constant identifying the reference frame to use for device-motion updates. It’s your responsibility to specify a reference frame that’s available on the current device. Call [`availableAttitudeReferenceFrames()`](cmmotionmanager/availableattitudereferenceframes().md) to determine which reference frames are currently available.
 
 ## See Also
 

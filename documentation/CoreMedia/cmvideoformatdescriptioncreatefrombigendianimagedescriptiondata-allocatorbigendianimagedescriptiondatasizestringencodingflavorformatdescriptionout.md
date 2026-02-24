@@ -22,12 +22,12 @@ func CMVideoFormatDescriptionCreateFromBigEndianImageDescriptionData(allocator: 
 
 ## Parameters
 
-- `allocator`: Allocator to use for allocating the   object. May be  .
+- `allocator`: Allocator to use for allocating the `CMVideoFormatDescription` object. May be `NULL`.
 - `imageDescriptionData`: ImageDescription data structure in big-endian byte ordering.
 - `size`: Size of ImageDescription data structure.
-- `stringEncoding`: Pass   or  .
-- `flavor`:   constant or   for QuickTimeMovie flavor.
-- `formatDescriptionOut`: Receives new  .
+- `stringEncoding`: Pass [`CFStringGetSystemEncoding()`](https://developer.apple.com/documentation/CoreFoundation/CFStringGetSystemEncoding()) or `GetApplicationTextEncoding()`.
+- `flavor`: `kCMImageDescriptionFlavor` constant or `NULL` for QuickTimeMovie flavor.
+- `formatDescriptionOut`: Receives new `CMVideoFormatDescription`.
 
 ## See Also
 

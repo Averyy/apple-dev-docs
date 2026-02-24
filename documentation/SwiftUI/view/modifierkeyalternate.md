@@ -65,8 +65,8 @@ Button("Save", ...) // ⌘ S
 
 ## Parameters
 
-- `modifiers`: The modifier keys to associate with the alternate view.   While all these keys are held, SwiftUI will replace the modified   view with this alternate one.
-- `alternate`: A view builder for constructing the modified view’s   alternate when matching modifier keys are pressed.
+- `modifiers`: The modifier keys to associate with the alternate view. While all these keys are held, SwiftUI will replace the modified view with this alternate one.
+- `alternate`: A view builder for constructing the modified view’s alternate when matching modifier keys are pressed.
 
 ## See Also
 

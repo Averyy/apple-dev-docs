@@ -25,8 +25,8 @@ This method does nothing if the associated controller isn’t a snapshot (its [`
 
 ## Parameters
 
-- `xAxis`: A normalized value of the x-axis ranging from   to  .
-- `yAxis`: A normalized value for the y-axis ranging from   to  .
+- `xAxis`: A normalized value of the x-axis ranging from `-1` to `1`.
+- `yAxis`: A normalized value for the y-axis ranging from `-1` to `1`.
 
 
 ---

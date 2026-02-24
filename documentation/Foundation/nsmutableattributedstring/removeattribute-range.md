@@ -26,7 +26,7 @@ Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `
 
 ## Parameters
 
-- `name`: A string specifying the attribute name to remove. Attribute keys can be supplied by another framework or can be custom ones you define. For information about where to find the system-supplied attribute keys, see the overview section in  .
+- `name`: A string specifying the attribute name to remove. Attribute keys can be supplied by another framework or can be custom ones you define. For information about where to find the system-supplied attribute keys, see the overview section in [`NSAttributedString`](nsattributedstring.md).
 - `range`: The range of characters from which the specified attribute is removed.
 
 ## See Also

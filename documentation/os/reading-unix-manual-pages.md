@@ -6,7 +6,7 @@ Use the Terminal app to read the documentation for low-level UNIX tools and APIs
 
 #### Overview
 
-The UNIX online manual, known as the , documents low-level UNIX command-line tools, APIs, and file formats. If you’re working at the lowest levels of the system, don’t miss out on this rich source of information.
+The UNIX online manual, known as the *man pages*, documents low-level UNIX command-line tools, APIs, and file formats. If you’re working at the lowest levels of the system, don’t miss out on this rich source of information.
 
 ##### Display a Man Page in the Terminal App
 
@@ -32,7 +32,7 @@ If you want to get the man page for the `open` system call, specify section 2.
 $ man 2 open
 ```
 
-If you’re not sure which section to use, do a keyword search using the `-k` option. For example, the following command shows all the man pages that mention .
+If you’re not sure which section to use, do a keyword search using the `-k` option. For example, the following command shows all the man pages that mention *open*.
 
 ```bash
 $ man -k open

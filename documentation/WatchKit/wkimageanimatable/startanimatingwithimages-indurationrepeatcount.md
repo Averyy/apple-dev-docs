@@ -21,9 +21,9 @@ This method animates a subset of the images associated with the current image in
 
 ## Parameters
 
-- `imageRange`: The range of images to be animated. The value   indicates the first image in the sequence, the value   the second image, and so on.
+- `imageRange`: The range of images to be animated. The value `0` indicates the first image in the sequence, the value `1` the second image, and so on.
 - `duration`: The time (in seconds) over which to animate a single loop of the images. Positive values cause the animation to start at the first frame in the sequence and end on the last frame. Negative values causes the animation to play in reverse order and end on the first frame in the sequence.
-- `repeatCount`: The number of times to repeat the animation loop. Specify   to animate the images indefinitely.
+- `repeatCount`: The number of times to repeat the animation loop. Specify `0` to animate the images indefinitely.
 
 ## See Also
 

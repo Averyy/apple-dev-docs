@@ -24,8 +24,8 @@ init<I>(_ title: Text, item: I, subject: Text? = nil, message: Text? = nil, prev
 
 - `title`: The title of the share action.
 - `item`: The item to share.
-- `subject`: A title for the item to show when sharing to activities   that support a subject field.
-- `message`: A description of the item to show when sharing to   activities that support a message field. Activities may   support attributed text or HTML strings.
+- `subject`: A title for the item to show when sharing to activities that support a subject field.
+- `message`: A description of the item to show when sharing to activities that support a message field. Activities may support attributed text or HTML strings.
 - `preview`: A representation of the item to render in a preview.
 
 ## See Also

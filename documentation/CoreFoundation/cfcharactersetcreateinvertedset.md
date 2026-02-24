@@ -26,7 +26,7 @@ A new character set that is the invert of `theSet`. Ownership follows the [`The 
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `theSet`: The character set from which to create an inverted set.
 
 ## See Also

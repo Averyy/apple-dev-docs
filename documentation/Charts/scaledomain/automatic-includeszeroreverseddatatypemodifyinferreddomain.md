@@ -49,7 +49,7 @@ Note that the `modifyInferredDomain` closure is used as part of the automatic sc
 
 ## Parameters
 
-- `includesZero`: Whether the scale domain should include zero (only   applicable for numerical values).
+- `includesZero`: Whether the scale domain should include zero (only applicable for numerical values).
 - `reversed`: Whether the scale domain should be reversed (e.g., 100 … 0).
 - `dataType`: The type of a data value in the domain.
 - `modifyInferredDomain`: A closure that modifies the automatically inferred domain.

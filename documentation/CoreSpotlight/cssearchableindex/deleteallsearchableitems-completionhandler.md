@@ -26,7 +26,7 @@ func deleteAllSearchableItems() async throws
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: The block that’s called when the request has been journaled by the index (“journaled” means that the index makes a note that it has to perform this operation). Note that the request may not have completed. The block receives the following parameter: - **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is `nil`.
 
 ## See Also
 

@@ -10,6 +10,10 @@ A Boolean value indicating whether the Action extension is presented in full scr
 - iPadOS 8.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [NSExtensionMainStoryboard](information-property-list/nsextension/nsextensionmainstoryboard.md)

@@ -26,9 +26,9 @@ If this array isn’t `nil`, [`ignoreRowsAndColumns`](sparsesymbolicfactoroption
 
 The row and column indices are for the actual matrix, not its block structure, so `0` indicates the first row, not the first `blockSize` rows.
 
-In the symmetric case (Cholesky, ), each entry indicates that the system needs to ignore the matching row and column.
+In the symmetric case (Cholesky, *LDLᵀ*), each entry indicates that the system needs to ignore the matching row and column.
 
-In the unsymmetric case (QR, Cholesky ), consider the matrix, `A`, given the value `m`, with one of the following definitions:
+In the unsymmetric case (QR, Cholesky *AᵀA*), consider the matrix, `A`, given the value `m`, with one of the following definitions:
 
 - `m = A.structure.rowCount * A.blockSize` if `A` isn’t a transposed matrix
 - `m = A.structure.columnCount * A.blockSize` if `A` is a transposed matrix

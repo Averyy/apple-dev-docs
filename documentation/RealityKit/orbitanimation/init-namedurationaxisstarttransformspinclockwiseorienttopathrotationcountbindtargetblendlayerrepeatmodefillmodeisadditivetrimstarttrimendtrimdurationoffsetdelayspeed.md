@@ -23,16 +23,16 @@ init(name: String = "", duration: TimeInterval = 1.0, axis: SIMD3<Float> = .init
 
 - `name`: A textual name for the animation.
 - `duration`: The elapsed time for one complete rotation.
-- `axis`: A 3D vector that points in the direction of the axis around   which to rotate.
+- `axis`: A 3D vector that points in the direction of the axis around which to rotate.
 - `startTransform`: The orbiting entity’s beginning position.
-- `spinClockwise`: A Boolean value that indicates whether the object   orbits the center point in the clockwise direction.
-- `orientToPath`: A Boolean value that indicates whether the orbiting   object updates its orientation during the animation to orient itself   along the rotation path.
-- `rotationCount`: The number of times to rotate the target entity before   stopping.
-- `bindTarget`: A textual name that identifies the particular property   that animates.
-- `blendLayer`: The order in which the framework composites the animation   into the view.
+- `spinClockwise`: A Boolean value that indicates whether the object orbits the center point in the clockwise direction.
+- `orientToPath`: A Boolean value that indicates whether the orbiting object updates its orientation during the animation to orient itself along the rotation path.
+- `rotationCount`: The number of times to rotate the target entity before stopping.
+- `bindTarget`: A textual name that identifies the particular property that animates.
+- `blendLayer`: The order in which the framework composites the animation into the view.
 - `repeatMode`: An option that determines how the animation repeats.
 - `fillMode`: The playback behavior outside of the normal duration.
-- `isAdditive`: A Boolean value that indicates whether the animation   builds on the current state of the target entity or resets the state   before running.
+- `isAdditive`: A Boolean value that indicates whether the animation builds on the current state of the target entity or resets the state before running.
 - `trimStart`: The optional time, in seconds, at which the animation plays.
 - `trimEnd`: The optional time, in seconds, at which the animation stops.
 - `trimDuration`: An optional duration that overrides the calculated duration.

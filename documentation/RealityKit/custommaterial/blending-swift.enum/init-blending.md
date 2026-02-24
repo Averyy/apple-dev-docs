@@ -20,7 +20,7 @@ init(blending value: PhysicallyBasedMaterial.Blending)
 
 ## Parameters
 
-- `value`: The blending property from a  .
+- `value`: The blending property from a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md).
 
 
 ---

@@ -54,9 +54,9 @@ The following code shows an example of using this function:
 
 ## Parameters
 
-- `vector`: The input vector,  .
-- `scalar`: The input scalar value,  .
-- `result`: The output vector,  .
+- `vector`: The input vector, `A`.
+- `scalar`: The input scalar value, `B`.
+- `result`: The output vector, `C`.
 
 ## See Also
 

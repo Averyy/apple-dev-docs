@@ -16,7 +16,7 @@ Some apps, such as book and magazine readers, text editors, and games, may need 
 
 ##### Implement a Custom Shaped Text Container
 
-When laying out a line of text, TextKit calls the  [`lineFragmentRect(forProposedRect:at:writingDirection:remaining:)`](nstextcontainer/linefragmentrect(forproposedrect:at:writingdirection:remaining:).md) method from [`NSTextContainer`](nstextcontainer.md) to determine the position and size of the line, which TextKit calls a . By creating a subclass of `NSTextContainer` to return a custom line fragment rectangle in the method, apps can implement a custom-shaped text container.
+When laying out a line of text, TextKit calls the  [`lineFragmentRect(forProposedRect:at:writingDirection:remaining:)`](nstextcontainer/linefragmentrect(forproposedrect:at:writingdirection:remaining:).md) method from [`NSTextContainer`](nstextcontainer.md) to determine the position and size of the line, which TextKit calls a *line fragment rectangle*. By creating a subclass of `NSTextContainer` to return a custom line fragment rectangle in the method, apps can implement a custom-shaped text container.
 
 This sample uses the `CircleTextContainer` class to implement a circular text container. To calculate a line fragment rectangle that fits in the inscribed circle of the container’s bounds, the class calls the implementation of `super` to retrieve the default rectangle, then adjusts its `origin.x` and `width` according to the current line origin and container size.
 
@@ -104,7 +104,7 @@ textView.textContainer.exclusionPaths = [translatedCirclePath]
 
 ##### Substitute Glyphs Without Changing the Text Storage
 
-When a text container doesn’t have enough space to display text, apps may need a way to indicate that the container has additional, or , text. A standard text container can use the  [`lineBreakMode`](nstextcontainer/linebreakmode.md) property from  `NSTextContainer` to add an ending ellipsis that helps handle this situation, but the property doesn’t completely support custom-shaped containers like `CircleTextContainer`.
+When a text container doesn’t have enough space to display text, apps may need a way to indicate that the container has additional, or *overflow*, text. A standard text container can use the  [`lineBreakMode`](nstextcontainer/linebreakmode.md) property from  `NSTextContainer` to add an ending ellipsis that helps handle this situation, but the property doesn’t completely support custom-shaped containers like `CircleTextContainer`.
 
 To show an overflow indicator in its circular text container, as well as to demonstrate TextKit’s capability of glyph substitutions and layout adjustment, this sample substitutes the glyphs of the container’s ending characters with an ellipsis, and makes it the container’s last visible glyph.
 

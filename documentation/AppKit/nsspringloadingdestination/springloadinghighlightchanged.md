@@ -24,7 +24,7 @@ During a spring-loaded operation, a destination may initiate animated highlighti
 
 ## Parameters
 
-- `draggingInfo`: An object of type  , which provides information about the drag event, including a highlighting style to apply.
+- `draggingInfo`: An object of type `NSDraggingInfo`, which provides information about the drag event, including a highlighting style to apply.
 
 ## See Also
 

@@ -44,6 +44,25 @@ In your drawing method, you obtain a render pass descriptor from the view, rende
 
 Each [`MTKView`](mtkview.md) is backed by a [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer). In your renderer, implement the [`MTKViewDelegate`](mtkviewdelegate.md) protocol to interact with a MetalKit view. Call the MetalKit view’s [`currentRenderPassDescriptor`](mtkview/currentrenderpassdescriptor.md) property to obtain a render pass descriptor configured for the current frame:
 
+**Swift**:
+
+```swift
+// BEGIN encoding your onscreen render pass.
+// Obtain a render pass descriptor generated from the drawable's texture.
+// (`currentRenderPassDescriptor` implicitly obtains the current drawable.)
+// If there's a valid render pass descriptor, use it to render to the current drawable.
+if let onscreenDescriptor = view.currentRenderPassDescriptor
+```
+
+**Objective-C**:
+
+```objc
+// BEGIN encoding your onscreen render pass.
+// Obtain a render pass descriptor generated from the drawable's texture.
+// (`currentRenderPassDescriptor` implicitly obtains the current drawable.)
+MTLRenderPassDescriptor* onscreenDescriptor = view.currentRenderPassDescriptor;
+```
+
 When you read this property, Core Animation implicitly obtains a drawable for the current frame and stores it in the [`currentDrawable`](mtkview/currentdrawable.md) property. It then configures a render pass descriptor to draw into that drawable, including any depth, stencil, and antialiasing textures as necessary. The view configures this render pass using the default store and load actions. You can adjust the descriptor further before using it to create a [`MTLRenderCommandEncoder`](https://developer.apple.com/documentation/Metal/MTLRenderCommandEncoder).
 
 Obtain drawables as late as possible; preferably, immediately before encoding your onscreen render pass.
@@ -51,6 +70,53 @@ Obtain drawables as late as possible; preferably, immediately before encoding yo
 ##### Registering the Drawables Presentation
 
 After rendering the contents, you must present the drawable to update the view’s contents. The most convenient way to present the content is to call the [`present(_:)`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer/present(_:)) method on the command buffer. Then, call the [`commit()`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer/commit()) method to submit the command buffer to a GPU:
+
+**Swift**:
+
+```swift
+if let onscreenDescriptor = view.currentRenderPassDescriptor,
+let onscreenCommandEncoder = onscreenCommandBuffer.makeRenderCommandEncoder(descriptor: onscreenDescriptor) {
+    /* Set render state and resources.
+       ...
+     */
+    /* Issue draw calls.
+       ...
+     */
+    onscreenCommandEncoder.endEncoding()
+    // END encoding your onscreen render pass.
+    
+    // Register the drawable's presentation.
+    if let currentDrawable = view.currentDrawable {
+        onscreenCommandBuffer.present(currentDrawable)
+    }
+}
+
+// Finalize your onscreen CPU work and commit the command buffer to a GPU.
+onscreenCommandBuffer.commit()
+```
+
+**Objective-C**:
+
+```objc
+// If there's a valid render pass descriptor, use it to render to the current drawable.
+if(onscreenDescriptor != nil) {
+    id<MTLRenderCommandEncoder> onscreenCommandEncoder = [onscreenCommandBuffer renderCommandEncoderWithDescriptor:onscreenDescriptor];
+    /* Set render state and resources.
+       ...
+     */
+    /* Issue draw calls.
+       ...
+     */
+    [onscreenCommandEncoder endEncoding];
+    // END encoding your onscreen render pass.
+
+    // Register the drawable's presentation.
+    [onscreenCommandBuffer presentDrawable:view.currentDrawable];
+}
+
+// Finalize your onscreen CPU work and commit the command buffer to a GPU.
+[onscreenCommandBuffer commit];
+```
 
 When a command queue schedules a command buffer for execution, the drawable tracks all render or write requests on itself in that command buffer. The operating system doesn’t present the drawable onscreen until the commands have finished executing. By asking the command buffer to present the drawable, you guarantee that presentation happens after the command queue has scheduled this command buffer. Don’t wait for the command buffer to finish executing before registering the drawable’s presentation.
 

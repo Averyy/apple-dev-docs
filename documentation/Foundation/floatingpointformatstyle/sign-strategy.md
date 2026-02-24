@@ -38,7 +38,7 @@ let alwaysNums = nums.map { alwaysStyle.format($0) } // ["-2.1", "-1.2", "0", "+
 
 ## Parameters
 
-- `strategy`: The sign display strategy to apply to the format style, such as   or  .
+- `strategy`: The sign display strategy to apply to the format style, such as [`automatic`](numberformatstyleconfiguration/signdisplaystrategy/automatic.md) or [`never`](numberformatstyleconfiguration/signdisplaystrategy/never.md).
 
 ## See Also
 

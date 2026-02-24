@@ -26,8 +26,8 @@ Views can have only one superview. If `view` already has a superview and that vi
 
 ## Parameters
 
-- `view`: The view to insert. This value cannot be  .
-- `index`: The index in the array of the   property at which to insert the view. Subview indices start at   and cannot be greater than the number of subviews.
+- `view`: The view to insert. This value cannot be `nil`.
+- `index`: The index in the array of the [`subviews`](uiview/subviews.md) property at which to insert the view. Subview indices start at `0` and cannot be greater than the number of subviews.
 
 ## See Also
 

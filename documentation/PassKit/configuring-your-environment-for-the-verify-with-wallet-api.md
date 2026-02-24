@@ -15,8 +15,8 @@ To request a digital ID stored in Apple Wallet, you use the [`PKIdentityNational
 After you add the `in-app-identity-presentment` entitlement, you’ll set up your developer account. Complete the following steps in the Certificates, Identifiers, & Profiles section of the Apple Developer website:
 
 1. Create a merchant ID. If you already have a merchant ID you use for Apple Pay, you can reuse it here.
-2. Create an  for your merchant ID. This certificate shows up in the  tab on the  page. Note that your server uses the private key of the encryption certificate to decrypt the encrypted data returned from the API.
-3. Add the `In App Identity Presentment` capability to your App ID. This capability appears in the  tab of the  page.
+2. Create an *Identity Access Certificate* for your merchant ID. This certificate shows up in the *Identity* tab on the *Edit or Configure a Merchant ID* page. Note that your server uses the private key of the encryption certificate to decrypt the encrypted data returned from the API.
+3. Add the `In App Identity Presentment` capability to your App ID. This capability appears in the *Additional Capabilities* tab of the *Edit your App ID Configuration* page.
 4. Add the ‘In App Identity Presentment Merchant IDs’ capability to your App ID and select the associated Merchant IDs.
 5. Generate a new provisioning profile with these changes.
 

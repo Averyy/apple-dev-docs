@@ -24,7 +24,7 @@ Attempting to change the selection may cause a `commitEditing` message which fai
 
 ## Parameters
 
-- `indexPaths`: An array of   objects specifying the selected objects.
+- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects specifying the selected objects.
 
 ## See Also
 

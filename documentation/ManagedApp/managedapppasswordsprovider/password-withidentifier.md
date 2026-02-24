@@ -36,7 +36,7 @@ The MDM server can change the available passwords at any time. When that happens
 
 ## Parameters
 
-- `identifier`: The identifier of the requested password. This function throws   if the value you supply isn’t currently in  .
+- `identifier`: The identifier of the requested password. This function throws [`ManagedAppError.invalidIdentifier`](managedapperror/invalididentifier.md) if the value you supply isn’t currently in [`identifiers`](managedappidentitiesprovider/identifiers.md).
 
 
 ---

@@ -20,7 +20,7 @@ convenience init?(pollingOption: NFCTagReaderSession.PollingOption, delegate: an
 
 - `pollingOption`: One or more options specifying the type of tags that the reader session scans for and detects.
 - `delegate`: An object that handles callbacks from the reader session.
-- `queue`: A dispatch queue that the reader session uses when making callbacks to the delegate. When queue is  , the session creates and uses a serial dispatch queue.
+- `queue`: A dispatch queue that the reader session uses when making callbacks to the delegate. When queue is `nil`, the session creates and uses a serial dispatch queue.
 
 ## See Also
 

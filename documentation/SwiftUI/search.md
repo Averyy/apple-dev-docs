@@ -6,7 +6,7 @@ Enable people to search for text or other content within your app.
 
 #### Overview
 
-To present a search field in your app, create and manage storage for search text and optionally for discrete search terms known as . Then bind the storage to the search field by applying the searchable view modifier to a view in your app.
+To present a search field in your app, create and manage storage for search text and optionally for discrete search terms known as *tokens*. Then bind the storage to the search field by applying the searchable view modifier to a view in your app.
 
 ![None](https://docs-assets.developer.apple.com/published/366a90bfb4ab3aea60848d447e01a437/search-hero%402x.png)
 

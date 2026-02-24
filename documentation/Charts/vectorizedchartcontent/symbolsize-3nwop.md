@@ -23,7 +23,7 @@ func symbolSize(_ area: KeyPath<Self.DataElement, CGFloat>) -> some VectorizedCh
 
 ## Parameters
 
-- `area`: The perceived area in square points.   For example, a square with 10 points on each side has an area of 100 square points.
+- `area`: The perceived area in square points. For example, a square with 10 points on each side has an area of 100 square points.
 
 ## See Also
 

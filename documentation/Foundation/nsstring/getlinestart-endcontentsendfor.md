@@ -39,10 +39,10 @@ This method detects all invalid ranges (including those with negative lengths). 
 
 ## Parameters
 
-- `startPtr`: Upon return, contains the index of the first character of the line containing the beginning of  . Pass   if you do not need this value (in which case the work to compute the value isn’t performed).
-- `lineEndPtr`: Upon return, contains the index of the first character past the terminator of the line containing the end of  . Pass   if you do not need this value (in which case the work to compute the value isn’t performed).
-- `contentsEndPtr`: Upon return, contains the index of the first character of the terminator of the line containing the end of  . Pass   if you do not need this value (in which case the work to compute the value isn’t performed).
-- `range`: Raises an   if   is invalid.
+- `startPtr`: Upon return, contains the index of the first character of the line containing the beginning of `aRange`. Pass `NULL` if you do not need this value (in which case the work to compute the value isn’t performed).
+- `lineEndPtr`: Upon return, contains the index of the first character past the terminator of the line containing the end of `aRange`. Pass `NULL` if you do not need this value (in which case the work to compute the value isn’t performed).
+- `contentsEndPtr`: Upon return, contains the index of the first character of the terminator of the line containing the end of `aRange`. Pass `NULL` if you do not need this value (in which case the work to compute the value isn’t performed).
+- `range`: A range within the receiver. The value must not exceed the bounds of the receiver. Raises an `NSRangeException` if `aRange` is invalid.
 
 ## See Also
 

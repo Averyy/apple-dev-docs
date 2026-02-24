@@ -24,6 +24,11 @@ object ManagedApplicationFeedbackCommand
 - [object ManagedApplicationFeedbackCommand.Command](managedapplicationfeedbackcommand/command-data.dictionary.md)
   The command to get app feedback from a managed app on the device.
 
+## Properties
+
+- `Command` (ManagedApplicationFeedbackCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object ManagedApplicationFeedbackResponse](managedapplicationfeedbackresponse.md)

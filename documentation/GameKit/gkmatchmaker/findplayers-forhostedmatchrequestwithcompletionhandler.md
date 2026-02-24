@@ -27,7 +27,8 @@ On iOS 6, if the match request’s [`playersToInvite`](gkmatchrequest/playerstoi
 ## Parameters
 
 - `request`: The configuration for the desired match.
-- `completionHandler`: A block to call when GameKit creates the match. This block receives the following parameters:
+- `completionHandler`: A block to call when GameKit creates the match. This block receives the following parameters: - ***playerIDs***: If matchmaking was successful, this parameter contains an array of `NSString` objects containing the players to connect into the match. Otherwise, this parameter is `nil`.
+- ***error***: If matchmaking was successful, this parameter contains `nil`. Otherwise, this parameter holds an error object that describes the error that occurred.
 
 ## See Also
 

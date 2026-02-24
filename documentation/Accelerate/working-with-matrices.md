@@ -6,7 +6,7 @@ Solve simultaneous equations and transform points in space.
 
 #### Overview
 
-A matrix is a 2D array of values arranged in rows and columns. The simd library provides support for matrices of up to four rows and four columns, containing 16 elements. It uses a  naming convention; for example, a [`simd_double4x2`](https://developer.apple.com/documentation/simd/simd_double4x2) is a matrix containing four columns and two rows.
+A matrix is a 2D array of values arranged in rows and columns. The simd library provides support for matrices of up to four rows and four columns, containing 16 elements. It uses a *column major* naming convention; for example, a [`simd_double4x2`](https://developer.apple.com/documentation/simd/simd_double4x2) is a matrix containing four columns and two rows.
 
 The simd library provides initializers that include options for creating matrices from either rows or columns from the appropriately sized vectors. For example, the following code uses two vectors of four elements to create a 2 x 4 matrix and a 4 x 2 matrix:
 
@@ -37,7 +37,7 @@ The following examples show a few common uses of matrices.
 
 ##### Solve Simultaneous Equations
 
-You can use matrices to solve simultaneous equations of the form ; for example, to find  and  in the following equations:
+You can use matrices to solve simultaneous equations of the form *AX = B*; for example, to find *x* and *y* in the following equations:
 
 ```c
  2x + 4y = 2
@@ -59,7 +59,7 @@ Then create a vector containing the right-side values:
 let b = simd_double2(2, 14)
 ```
 
-To find the values of  and , multiply the inverse of the matrix `a` with the vector `b`:
+To find the values of *x* and *y*, multiply the inverse of the matrix `a` with the vector `b`:
 
 ```swift
 let x = simd_mul(a.inverse, b)
@@ -71,13 +71,13 @@ The result, `x`, is a two-element vector containing `(x = -2.6, y = 1.8)`.
 
 Matrices provide a convenient way to transform (translate, rotate, and scale) points in 2D and 3D space.
 
-The following image shows point  translated to , rotated to , and scaled to :
+The following image shows point *A* translated to *B*, rotated to *C*, and scaled to *D*:
 
 ![Graphic showing a 2D point translated, rotated, and scaled. Using the translate matrix, point A at coordinates 3, 2 is translated to point B at coordinates 4, 5. Using the rotate matrix, point B at 4, 5 is rotated to point C at 0.964102, 6.33013. Using the scale matrix, point C at 0.964102, 6.33013 is scaled to point D at 7.71282, 7.91266.](https://docs-assets.developer.apple.com/published/0b379dabbfd3bdeb1460adbbc97ccca2/media-2972223%402x.png)
 
 By representing 2D coordinates as a three-element vector, you can transform points using matrix multiplication. Typically, the third component of the vector, `z`, is set to 1, which indicates that the vector represents a position in space.
 
-For example, the vector shown as  in the preceding illustration is defined as a [`simd_float3`](https://developer.apple.com/documentation/simd/simd_float3) with the following code:
+For example, the vector shown as **A** in the preceding illustration is defined as a [`simd_float3`](https://developer.apple.com/documentation/simd/simd_float3) with the following code:
 
 ```swift
 let positionVector = simd_float3(x: 3, y: 2, z: 1)
@@ -116,7 +116,7 @@ let translationMatrix = makeTranslationMatrix(tx: 1, ty: 3)
 let translatedVector = translationMatrix * positionVector
 ```
 
-The resulting `translatedVector` has the values `(x: 4.0, y: 5.0, z: 1.0)`, shown as  in the illustration above.
+The resulting `translatedVector` has the values `(x: 4.0, y: 5.0, z: 1.0)`, shown as **B** in the illustration above.
 
 ###### Rotate
 
@@ -152,7 +152,7 @@ let rotationMatrix = makeRotationMatrix(angle: radians)
 let rotatedVector = rotationMatrix * translatedVector
 ```
 
-The resulting `rotatedVector` has the values `(x: 0.964102, y: 6.33013, z: 1.0)`, shown as  in the illustration above.
+The resulting `rotatedVector` has the values `(x: 0.964102, y: 6.33013, z: 1.0)`, shown as **C** in the illustration above.
 
 ###### Scale
 
@@ -184,7 +184,7 @@ let scaleMatrix = makeScaleMatrix(xScale: 8, yScale: 1.25)
 let scaledVector = scaleMatrix * rotatedVector
 ```
 
-The resulting `scaledVector` has the values `(x: 7.71282, y: 7.91266, z: 1.0)`, shown as  in the illustration above.
+The resulting `scaledVector` has the values `(x: 7.71282, y: 7.91266, z: 1.0)`, shown as **D** in the illustration above.
 
 The three transform matrices can be multiplied together and the product multiplied with the position vector to get the same result:
 

@@ -28,10 +28,10 @@ func cblas_sdsdot(_ N: __LAPACK_int, _ ALPHA: Float, _ X: UnsafePointer<Float>?,
 
 - `N`: The number of elements in the vectors.
 - `ALPHA`: The initial value to add to the dot product.
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
-- `Y`: Vector  .
-- `INCY`: Stride within  . For example, if   is 7, every 7th element is used.
+- `X`: Vector `X`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
+- `Y`: Vector `Y`.
+- `INCY`: Stride within `Y`. For example, if `incY` is 7, every 7th element is used.
 
 ## See Also
 

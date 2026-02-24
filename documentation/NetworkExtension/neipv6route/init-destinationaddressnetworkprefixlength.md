@@ -25,8 +25,8 @@ The initialized `NEIPv6Route` object.
 
 ## Parameters
 
-- `address`: An IPv6 address string. This string is combined with   to specify the destination network of the route.
-- `networkPrefixLength`: An IPv6 network prefix length. This number is combined with   to specify the destination network of the route. The network prefix length must be an integer between 0 and 128.
+- `address`: An IPv6 address string. This string is combined with `networkPrefixLength` to specify the destination network of the route.
+- `networkPrefixLength`: An IPv6 network prefix length. This number is combined with `address` to specify the destination network of the route. The network prefix length must be an integer between 0 and 128.
 
 ## See Also
 

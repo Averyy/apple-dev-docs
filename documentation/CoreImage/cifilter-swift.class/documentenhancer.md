@@ -29,6 +29,9 @@ This method applies the document enhancer filter to an image. The effect removes
 
 The document enhancer filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`amount`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that adds brightness to the input image:
 
 ```swift

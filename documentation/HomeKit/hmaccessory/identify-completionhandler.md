@@ -25,7 +25,7 @@ Accessories typically identify themselves by briefly doing something the user ca
 
 ## Parameters
 
-- `completion`: Block that is invoked once the request is processed.
+- `completion`: Block that is invoked once the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

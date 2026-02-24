@@ -23,9 +23,9 @@ func CFDataReplaceBytes(_ theData: CFMutableData!, _ range: CFRange, _ newBytes:
 ## Parameters
 
 - `theData`: A CFMutableData object. If you pass an immutable CFData object, the behavior is not defined.
-- `range`: The range of bytes (that is, the starting byte and the number of bytes from that point) to delete from  ’s byte buffer.
+- `range`: The range of bytes (that is, the starting byte and the number of bytes from that point) to delete from `theData`’s byte buffer.
 - `newBytes`: A pointer to the buffer containing the replacement bytes.
-- `newLength`: The number of bytes in the byte buffer  .
+- `newLength`: The number of bytes in the byte buffer `newBytes`.
 
 ## See Also
 

@@ -13,6 +13,10 @@ A message that tells people why the app needs access to Bluetooth.
 - visionOS 1.0+
 - watchOS 6.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key is required if your app uses the device’s Bluetooth interface.

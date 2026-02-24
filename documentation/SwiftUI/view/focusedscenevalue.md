@@ -64,7 +64,7 @@ extension FocusedValues {
 
 ## Parameters
 
-- `keyPath`: The key path to associate   with when adding   it to the existing table of published focus values.
+- `keyPath`: The key path to associate `value` with when adding it to the existing table of published focus values.
 - `value`: The focus value to publish.
 
 ## See Also

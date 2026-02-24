@@ -8,7 +8,7 @@ Suggest shortcuts users may want to add to Siri or combine with other actions in
 
 When the user performs an action in your app, donate a shortcut that accelerates user access to the action. Siri shows these donated interactions to the user in places such as Spotlight search and the Lock Screen.
 
-However, sometimes there are actions in your app the user hasn’t performed that might be of interest to them. For example, perhaps your soup-ordering app features a special soup every day. The user has never ordered the daily soup special, but they might be interested in the option to add a  shortcut to Siri. Your app can provide this option by making a shortcut suggestion.
+However, sometimes there are actions in your app the user hasn’t performed that might be of interest to them. For example, perhaps your soup-ordering app features a special soup every day. The user has never ordered the daily soup special, but they might be interested in the option to add a *soup-of-the-day* shortcut to Siri. Your app can provide this option by making a shortcut suggestion.
 
 > **Note**:  A donated interaction or suggested shortcut containing a system intent defines a specific action. The user can’t customize the parameters of such an action in the Shortcuts app. Instead, define a custom intent. For more information on defining custom intents, see [`Adding User Interactivity with Siri Shortcuts and the Shortcuts App`](adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md).
 
@@ -41,7 +41,7 @@ Provide shortcut suggestions that represent actions that pertain to the user. Th
 
 To update the shortcut suggestion list, replace the existing list by calling [`setShortcutSuggestions(_:)`](https://developer.apple.com/documentation/intents/invoiceshortcutcenter/setshortcutsuggestions(_:)) and passing in a new list of suggestions. If you want to remove all suggestions made by your app, call the same method, passing in an empty array.
 
-Changes to the list of shortcut suggestions don’t affect shortcuts the user adds to Siri. For instance, if the user adds the suggested  shortcut to Siri and the app removes the suggestion from the list some time later, that shortcut is still available to the user.
+Changes to the list of shortcut suggestions don’t affect shortcuts the user adds to Siri. For instance, if the user adds the suggested *order favorite beverage* shortcut to Siri and the app removes the suggestion from the list some time later, that shortcut is still available to the user.
 
 ## See Also
 

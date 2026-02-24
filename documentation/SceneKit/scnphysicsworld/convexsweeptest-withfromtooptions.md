@@ -45,10 +45,10 @@ if (contacts.count == 0) {
 
 ## Parameters
 
-- `shape`: A physics shape. This shape must enclose a convex volume. For details on creating shapes that satisfy this requirement, see  .
+- `shape`: A physics shape. This shape must enclose a convex volume. For details on creating shapes that satisfy this requirement, see [`SCNPhysicsShape`](scnphysicsshape.md).
 - `from`: A transform matrix representing the initial position and orientation of the shape.
 - `to`: A transform matrix representing the final position and orientation of the shape.
-- `options`: A dictionary of options affecting the test, or   to use default options. For applicable keys and the possible values, see  .
+- `options`: A dictionary of options affecting the test, or `nil` to use default options. For applicable keys and the possible values, see `Physics Test Options Keys`.
 
 ## See Also
 

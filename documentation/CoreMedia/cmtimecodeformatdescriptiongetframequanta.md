@@ -22,7 +22,7 @@ func CMTimeCodeFormatDescriptionGetFrameQuanta(_ timeCodeFormatDescription: CMTi
 
 ## Parameters
 
-- `timeCodeFormatDescription`:   being interrogated.
+- `timeCodeFormatDescription`: [`CMTimeCodeFormatDescription`](cmtimecodeformatdescription.md) being interrogated.
 
 ## See Also
 

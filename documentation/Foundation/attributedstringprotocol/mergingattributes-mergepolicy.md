@@ -27,7 +27,7 @@ An attributed string from merging the attributed string’s attributes with thos
 ## Parameters
 
 - `attributes`: The attribute container with the attributes to merge.
-- `mergePolicy`: A policy to use when resolving conflicts between this string’s attributes and those in  .
+- `mergePolicy`: A policy to use when resolving conflicts between this string’s attributes and those in `attributes`.
 
 ## See Also
 

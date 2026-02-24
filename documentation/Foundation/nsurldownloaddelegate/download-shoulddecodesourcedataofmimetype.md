@@ -25,7 +25,7 @@ The delegate may receive this message more than once if the file has been encode
 ## Parameters
 
 - `download`: The URL download object sending the message.
-- `encodingType`: The type of encoding used by the downloaded file. The supported encoding formats are MacBinary ( ), Binhex ( ) and gzip ( ).
+- `encodingType`: The type of encoding used by the downloaded file. The supported encoding formats are MacBinary (`"application/macbinary"`), Binhex (`"application/mac-binhex40"`) and gzip (`"application/gzip"`).
 
 ## See Also
 

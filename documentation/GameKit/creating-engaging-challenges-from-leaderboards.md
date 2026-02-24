@@ -30,7 +30,7 @@ To learn more about the information you enter in App Store Connect, see [`Challe
 
 Players can use the Games app to create challenges and invite their friends to play. After a player creates a challenge, you use the standard reporting methods — [`submitScore(_:context:player:completionHandler:)`](gkleaderboard/submitscore(_:context:player:completionhandler:).md) — for reporting updates to the leaderboard you associate with the challenge. For more information about getting and submitting leaderboard scores, see [`Encourage progress and competition with leaderboards`](encourage-progress-and-competition-with-leaderboards.md).
 
-If you have a leaderboard that only tracks a player’s personal best or all-time score, you can still use it for a challenge. Submit the most recent score with every attempt, but set the leaderboard’s  to . This setting only displays the player’s best score on the leaderboard, but also allows challenges to count the player’s most recent score submissions during the course of the challenge.
+If you have a leaderboard that only tracks a player’s personal best or all-time score, you can still use it for a challenge. Submit the most recent score with every attempt, but set the leaderboard’s *Score Submission Type* to *Best Score*. This setting only displays the player’s best score on the leaderboard, but also allows challenges to count the player’s most recent score submissions during the course of the challenge.
 
 To help players navigate to the correct place when exploring your game, check your challenge definition to apply UI decorations.
 

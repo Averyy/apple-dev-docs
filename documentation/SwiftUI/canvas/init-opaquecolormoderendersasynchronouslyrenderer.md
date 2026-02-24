@@ -43,10 +43,10 @@ For information about using a context to draw into a canvas, see [`GraphicsConte
 
 ## Parameters
 
-- `opaque`: A Boolean that indicates whether the canvas is fully   opaque. You might be able to improve performance by setting this   value to  , but then drawing a non-opaque image into the   context produces undefined results. The default is  .
-- `colorMode`: A working color space and storage format of the canvas.   The default is  .
-- `rendersAsynchronously`: A Boolean that indicates whether the canvas   can present its contents to its parent view asynchronously. The   default is  .
-- `renderer`: A closure in which you conduct immediate mode drawing.   The closure takes two inputs: a context that you use to issue   drawing commands and a size — representing the current   size of the canvas — that you can use to customize the content.   The canvas calls the renderer any time it needs to redraw the   content.
+- `opaque`: A Boolean that indicates whether the canvas is fully opaque. You might be able to improve performance by setting this value to `true`, but then drawing a non-opaque image into the context produces undefined results. The default is `false`.
+- `colorMode`: A working color space and storage format of the canvas. The default is [`ColorRenderingMode.nonLinear`](colorrenderingmode/nonlinear.md).
+- `rendersAsynchronously`: A Boolean that indicates whether the canvas can present its contents to its parent view asynchronously. The default is `false`.
+- `renderer`: A closure in which you conduct immediate mode drawing. The closure takes two inputs: a context that you use to issue drawing commands and a size — representing the current size of the canvas — that you can use to customize the content. The canvas calls the renderer any time it needs to redraw the content.
 
 ## See Also
 

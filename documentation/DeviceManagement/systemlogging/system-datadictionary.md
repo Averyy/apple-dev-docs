@@ -18,6 +18,10 @@ This dictionary has one key, `Enable-Private-Data`. Setting that value to `true`
 object SystemLogging.System
 ```
 
+## Properties
+
+- `ANY` (any): TBD
+
 ## See Also
 
 - [object SystemLogging.Processes](systemlogging/processes-data.dictionary.md)

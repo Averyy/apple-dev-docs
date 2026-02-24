@@ -28,7 +28,7 @@ If the value for `property` is invalid, this function returns `NULL`.
 ## Parameters
 
 - `record`: The record whose value you wish to obtain.
-- `property`: The property name in   whose value you wish to obtain. May be a pre-defined or program-defined property. See   for a list of properties all records have, and specific ABRecord derived opaque types for any additional properties.
+- `property`: The property name in `record` whose value you wish to obtain. May be a pre-defined or program-defined property. See `Common Properties` for a list of properties all records have, and specific ABRecord derived opaque types for any additional properties.
 
 ## See Also
 

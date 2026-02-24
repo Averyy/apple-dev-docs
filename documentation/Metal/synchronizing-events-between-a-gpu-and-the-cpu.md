@@ -16,6 +16,77 @@ The following figure and code show a shareable event that synchronizes GPU work 
 
 ![Timeline diagram that shows shareable synchronization events for a GPU and the CPU, and the work that the GPU and CPU do.](https://docs-assets.developer.apple.com/published/982692fdd01837bd9a1ab0ec43a73c87/synchronizing-events-between-a-gpu-and-the-cpu-1%402x.png)
 
+**Swift**:
+
+```swift
+func setupGPUCPUEvent() {
+    // Shareable event
+    sharedEvent = device.makeSharedEvent()
+    
+    // Shareable event listener
+    let myQueue = DispatchQueue(label: "com.example.apple-samplecode.MyQueue")
+    sharedEventListener = MTLSharedEventListener(dispatchQueue: myQueue)
+}
+
+func synchronizeGPUCPUEvent() {
+    guard
+        let sharedEvent = sharedEvent,
+        let sharedEventListener = sharedEventListener,
+        let commandBuffer = commandQueue.makeCommandBuffer()
+        else { return }
+    
+    // Register CPU work
+    sharedEvent.notify(sharedEventListener, atValue: 2) { (sEvent, value) in
+        /* Do CPU work */
+        sEvent.signaledValue = 3
+    }
+    
+    // Encode GPU work
+    /* Encode GPU work part 1 */
+    commandBuffer.encodeSignalEvent(sharedEvent, value: 1)
+    /* Encode GPU work part 2 */
+    commandBuffer.encodeSignalEvent(sharedEvent, value: 2)
+    commandBuffer.encodeWaitForEvent(sharedEvent, value: 3)
+    /* Encode GPU work part 3 */
+    commandBuffer.commit()
+}
+```
+
+**Objective-C**:
+
+```objective-c
+- (void)setupGPUCPUEvent
+{
+    // Shareable event
+    _sharedEvent = [_device newSharedEvent];
+    
+    // Shareable event listener
+    dispatch_queue_t myQueue = dispatch_queue_create("com.example.apple-samplecode.MyQueue", NULL);
+    _sharedEventListener = [[MTLSharedEventListener alloc] initWithDispatchQueue:myQueue];
+}
+
+- (void)renderFrame
+{
+    // Register CPU work
+    [_sharedEvent notifyListener:_sharedEventListener
+                         atValue:2
+                           block:^(id<MTLSharedEvent> sharedEvent, uint64_t value) {
+        /* Do CPU work */
+        sharedEvent.signaledValue = 3;
+    }];
+    
+    // Encode GPU work
+    id<MTLCommandBuffer> commandBuffer = [_commandQueue commandBuffer];
+    /* Encode GPU work part 1 */
+    [commandBuffer encodeSignalEvent:_sharedEvent value:1];
+    /* Encode GPU work part 2 */
+    [commandBuffer encodeSignalEvent:_sharedEvent value:2];
+    [commandBuffer encodeWaitForEvent:_sharedEvent value:3];
+    /* Encode GPU work part 3 */
+    [commandBuffer commit];
+}
+```
+
 The setup code creates a shareable event and a listener object. Listener objects are used to dispatch notifications to the app when the event is signaled.
 
 The work for this task is shared between the GPU and the CPU. As you can see in the figure above, the code needs to execute in the following order:

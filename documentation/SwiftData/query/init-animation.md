@@ -23,8 +23,8 @@ Create a query with a SwiftData fetch descriptor.
 
 ## Parameters
 
-- `descriptor`: A  .
-- `animation`: The animation to use for user interface changes that   result from changes to the fetched results.
+- `descriptor`: A `SwiftData.FetchDescriptor`.
+- `animation`: The animation to use for user interface changes that result from changes to the fetched results.
 
 ## See Also
 

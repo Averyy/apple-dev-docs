@@ -20,7 +20,7 @@ An initialized player object.
 
 ## Parameters
 
-- `item`: The player item containing the audio asset to play. This parameter must not be  .
+- `item`: The player item containing the audio asset to play. This parameter must not be `nil`.
 
 ## See Also
 

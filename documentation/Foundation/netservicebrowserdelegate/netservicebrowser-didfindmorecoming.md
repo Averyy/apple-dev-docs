@@ -30,8 +30,8 @@ If the delegate chooses to resolve `netService`, it should retain `netService` a
 ## Parameters
 
 - `browser`: Sender of this delegate message.
-- `service`: Network service found by  . The delegate can use this object to connect to and use the service.
-- `moreComing`:   when   is waiting for additional services.   when there are no additional services.
+- `service`: Network service found by `netServiceBrowser`. The delegate can use this object to connect to and use the service.
+- `moreComing`: [`true`](https://developer.apple.com/documentation/Swift/true) when `netServiceBrowser` is waiting for additional services. [`false`](https://developer.apple.com/documentation/Swift/false) when there are no additional services.
 
 ## See Also
 

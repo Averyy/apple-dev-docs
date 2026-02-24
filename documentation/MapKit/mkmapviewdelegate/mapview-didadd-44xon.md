@@ -26,7 +26,7 @@ By the time the map view calls this method, MapKit has added the specified views
 ## Parameters
 
 - `mapView`: The map view that adds the annotation views.
-- `views`: An array of   objects representing the views that the map view adds.
+- `views`: An array of `MKAnnotationView` objects representing the views that the map view adds.
 
 ## See Also
 

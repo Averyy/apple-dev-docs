@@ -25,7 +25,7 @@ The initialized day of the week.
 
 ## Parameters
 
-- `dayOfTheWeek`: The day of the week. Values range from   to  , with Sunday being  .
+- `dayOfTheWeek`: The day of the week. Values range from `1` to `7`, with Sunday being `1`.
 - `weekNumber`: The week number.
 
 ## See Also

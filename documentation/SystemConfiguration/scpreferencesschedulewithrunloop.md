@@ -21,8 +21,8 @@ func SCPreferencesScheduleWithRunLoop(_ prefs: SCPreferences, _ runLoop: CFRunLo
 ## Parameters
 
 - `prefs`: The preferences session.
-- `runLoop`: The run loop on which the notification should be scheduled. Do not pass  .
-- `runLoopMode`: The run loop mode with which to schedule the notification. Do not pass  .
+- `runLoop`: The run loop on which the notification should be scheduled. Do not pass `NULL`.
+- `runLoopMode`: The run loop mode with which to schedule the notification. Do not pass `NULL`.
 
 ## See Also
 

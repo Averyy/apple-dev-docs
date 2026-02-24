@@ -26,7 +26,7 @@ For possible time code flags see [`Time Code Flags`](time-code-flags.md).
 
 ## Parameters
 
-- `desc`:   being interrogated.
+- `desc`: `CMTimeCodeFormatDescription` being interrogated.
 
 ## See Also
 

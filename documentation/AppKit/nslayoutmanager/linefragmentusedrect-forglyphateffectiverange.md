@@ -29,7 +29,7 @@ Overriding this method is not recommended. If the line fragment used rectangle n
 ## Parameters
 
 - `glyphIndex`: The glyph for which to return the line fragment used rectangle.
-- `effectiveGlyphRange`: If not  , on output, the range for all glyphs in the line fragment.
+- `effectiveGlyphRange`: If not `NULL`, on output, the range for all glyphs in the line fragment.
 
 ## See Also
 

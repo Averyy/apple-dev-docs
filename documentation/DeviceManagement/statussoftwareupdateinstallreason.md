@@ -37,6 +37,10 @@ object StatusSoftwareUpdateInstallReason
 - [object StatusSoftwareUpdateInstallReasonDictionaryObject](statussoftwareupdateinstallreasondictionaryobject.md)
   A status report that contains details about the reason for a pending software update.
 
+## Properties
+
+- `softwareupdate.install-reason` (StatusSoftwareUpdateInstallReasonDictionaryObject) *(required)*: Details about the reason for a pending software update.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

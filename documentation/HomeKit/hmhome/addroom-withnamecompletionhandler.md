@@ -19,8 +19,9 @@ func addRoom(named roomName: String) async throws -> HMRoom
 
 ## Parameters
 
-- `roomName`: The name of the new room. Must not be  , and must not be the name of a room already in the home.
-- `completion`: The block executed after the request is processed.
+- `roomName`: The name of the new room. Must not be `nil`, and must not be the name of a room already in the home.
+- `completion`: The block executed after the request is processed. - **room**: The newly created room.
+- **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

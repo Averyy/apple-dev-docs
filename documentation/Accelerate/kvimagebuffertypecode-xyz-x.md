@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: var
 
-If the image has a XYZ color model, the buffer contains the  channel.
+If the image has a XYZ color model, the buffer contains the *X* channel.
 
 **Availability**:
 - iOS 7.0+

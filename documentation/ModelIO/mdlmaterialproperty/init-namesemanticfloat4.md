@@ -29,8 +29,8 @@ A 4-component vector can also be used to store RGBA color values. In this case, 
 
 ## Parameters
 
-- `name`: A descriptive name for the material property. For details, see the   property.
-- `semantic`: The semantic meaning for the material property’s value. For details, see the   property.
+- `name`: A descriptive name for the material property. For details, see the [`name`](mdlmaterialproperty/name.md) property.
+- `semantic`: The semantic meaning for the material property’s value. For details, see the [`semantic`](mdlmaterialproperty/semantic.md) property.
 - `value`: The 4-component floating-point vector value for the material property.
 
 ## See Also

@@ -21,9 +21,9 @@ func GLKMatrixStackRotate(_ stack: GLKMatrixStack, _ radians: Float, _ x: Float,
 
 - `stack`: A matrix stack.
 - `radians`: The angle of the rotation (a positive angle is counterclockwise).
-- `x`: The   coordinate of the rotation axis.
-- `y`: The   coordinate of the rotation axis.
-- `z`: The   coordinate of the rotation axis.
+- `x`: The `x` coordinate of the rotation axis.
+- `y`: The `y` coordinate of the rotation axis.
+- `z`: The `z` coordinate of the rotation axis.
 
 ## See Also
 

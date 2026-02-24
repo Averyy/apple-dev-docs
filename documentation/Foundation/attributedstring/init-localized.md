@@ -28,7 +28,7 @@ The attributed string contains attributes of type [`AttributeScopes.FoundationAt
 
 ## Parameters
 
-- `resource`: A   that provides the localization key, table, bundle, and locale.
+- `resource`: A [`LocalizedStringResource`](localizedstringresource.md) that provides the localization key, table, bundle, and locale.
 
 ## See Also
 

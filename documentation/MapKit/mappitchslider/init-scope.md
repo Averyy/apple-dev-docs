@@ -18,7 +18,7 @@ Creates a new map pitch slider with the scope you specify.
 
 ## Parameters
 
-- `scope`: A   value that identifies this namespace and that you use to associate this control with a map instance.
+- `scope`: A [`Namespace.ID`](https://developer.apple.com/documentation/SwiftUI/Namespace/ID) value that identifies this namespace and that you use to associate this control with a map instance.
 
 
 ---

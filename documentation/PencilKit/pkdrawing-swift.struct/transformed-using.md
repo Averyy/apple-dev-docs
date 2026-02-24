@@ -24,7 +24,7 @@ A new drawing with the provided `transform` applied.
 
 ## Parameters
 
-- `transform`: The   to apply to the contents of this drawing.
+- `transform`: The [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) to apply to the contents of this drawing.
 
 ## See Also
 

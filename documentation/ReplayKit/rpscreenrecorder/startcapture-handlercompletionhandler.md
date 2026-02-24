@@ -27,8 +27,10 @@ func startCapture(handler captureHandler: ((CMSampleBuffer, RPSampleBufferType, 
 
 ## Parameters
 
-- `captureHandler`: A block that is called continuously during screen capture.
-- `completionHandler`: A block that is called when screen capture has started.
+- `captureHandler`: A block that is called continuously during screen capture. - **sampleBuffer**: A [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/cmsamplebuffer-api) object containing either audio or video data.
+- **bufferType**: An [`RPSampleBufferType`](rpsamplebuffertype.md) identifying the media type of the recorded sample.
+- **error**: Contains an error code if screen capture failed to start. Otherwise, the value of this parameter is `nil`.
+- `completionHandler`: A block that is called when screen capture has started. - **error**: If an error occurred, this parameter holds an object that explains the error. Otherwise, the value of this parameter is `nil`. See [`RPRecordingErrorCode`](rprecordingerrorcode.md) for a list of error codes to ReplayKit.
 
 ## See Also
 

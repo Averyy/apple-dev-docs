@@ -83,14 +83,14 @@ const int * const valuePtr = &value1;   // Stored in __DATA_CONST
 
 ###### Known Issues
 
-- Incremental builds to may fail to `codesign` properly for non-source related changes to your project, such as resource file modifications, which can result in the app failing to launch. (41254808)  Change a source file within the same target to trigger the `codesign` process, or perform a clean build.
+- Incremental builds to may fail to `codesign` properly for non-source related changes to your project, such as resource file modifications, which can result in the app failing to launch. (41254808) **Workaround:** Change a source file within the same target to trigger the `codesign` process, or perform a clean build.
 - Updating your iOS app for Mac Catalyst might show new error diagnostics stating that certain frameworks or functionality is not available on the Mac. If one of these diagnostics is shown erroneously, you can disable it by setting the `VALIDATE_WORKSPACE` build setting to `NO`. (50607174)
-- The new build system doesn’t evaluate a leading tilde (`~`) in paths in build settings to the user’s home directory. (41339901)  Use `$(HOME)` instead.
-- If a target enables `RUN_CLANG_STATIC_ANALYZER`, then single file processing commands — such as Compile, Preprocess, Show Assembly — won’t work correctly because they generate the static analyzer output file rather than the appropriate output. (43340227)  Disable RUN_CLANG_STATIC_ANALYZER in the target.
-- If the build of an app-hosted test target — where `TEST_HOST` is defined — fails, subsequent builds may fail when signing the app product because the test target is incomplete and unsigned when the initial signing of the app occurs. (43402096)  Perform a clean build. Or, manually delete the unsigned test bundle from inside the app target’s product and rebuild.
+- The new build system doesn’t evaluate a leading tilde (`~`) in paths in build settings to the user’s home directory. (41339901) **Workaround:** Use `$(HOME)` instead.
+- If a target enables `RUN_CLANG_STATIC_ANALYZER`, then single file processing commands — such as Compile, Preprocess, Show Assembly — won’t work correctly because they generate the static analyzer output file rather than the appropriate output. (43340227) **Workaround:** Disable RUN_CLANG_STATIC_ANALYZER in the target.
+- If the build of an app-hosted test target — where `TEST_HOST` is defined — fails, subsequent builds may fail when signing the app product because the test target is incomplete and unsigned when the initial signing of the app occurs. (43402096) **Workaround:** Perform a clean build. Or, manually delete the unsigned test bundle from inside the app target’s product and rebuild.
 - Targets which override the Architectures and Valid Architectures build settings for iOS may need to remove or conditionalize the overrides to build correctly for Mac Catalyst. (51074742)
-- When using Xcode on macOS 10.15, some files — especially `.xib` files and storyboard files — might be copied rather than compiled, resulting in an incorrect build product. (49351105)  In the File Inspector for the file which is being copied, toggle the Type popup away from Default -  then back to Default. This resets the file type in the project file to the correct type and enables the build system to match it to the correct tool to process it.
-- When building for the first time users may get a popup stating that SimulatorTrampoline would like access to Desktop Files because `ibtool` running in simulator needs access to these files to compile storyboards. (51114450)  Allow access to the files in the prompt.
+- When using Xcode on macOS 10.15, some files — especially `.xib` files and storyboard files — might be copied rather than compiled, resulting in an incorrect build product. (49351105) **Workaround:** In the File Inspector for the file which is being copied, toggle the Type popup away from Default - ** then back to Default. This resets the file type in the project file to the correct type and enables the build system to match it to the correct tool to process it.
+- When building for the first time users may get a popup stating that SimulatorTrampoline would like access to Desktop Files because `ibtool` running in simulator needs access to these files to compile storyboards. (51114450) **Workaround:** Allow access to the files in the prompt.
 
 ###### Resolved Issues
 
@@ -100,7 +100,7 @@ const int * const valuePtr = &value1;   // Stored in __DATA_CONST
 
 ###### Known Issues
 
-- When using the Command Line Tools as the active Developer directory, some users may experience random crashes in the Swift compiler. (53582696)  Execute the command `sudo rm -f /Library/Developer/CommandLineTools/usr/lib/swift/macosx/libswift*.dylib` in Terminal.
+- When using the Command Line Tools as the active Developer directory, some users may experience random crashes in the Swift compiler. (53582696) **Workaround:** Execute the command `sudo rm -f /Library/Developer/CommandLineTools/usr/lib/swift/macosx/libswift*.dylib` in Terminal.
 
 ###### Deprecations
 
@@ -129,7 +129,7 @@ const int * const valuePtr = &value1;   // Stored in __DATA_CONST
 
 ###### Known Issues
 
-- Apps importing the Create ML framework may not launch if they are compiled by Xcode 11. This doesn’t impact existing apps. (53795065)  Add the file `libswiftCreateML.tbd` in the ‘Link Library with Libraries’ section.
+- Apps importing the Create ML framework may not launch if they are compiled by Xcode 11. This doesn’t impact existing apps. (53795065) **Workaround:** Add the file `libswiftCreateML.tbd` in the ‘Link Library with Libraries’ section.
 
 ###### Resolved Issues
 
@@ -169,8 +169,8 @@ defaults write com.apple.dt.lldb DefaultPythonVersion 2
 
 - Console output for Previews is only shown when debugging Live Previews in the Simulator. (49891045)
 - In watchOS 6, an `apns-push-type` key is required in the APNs request header. Specify `alert` or `background` for the type of notification being sent. The template APNs files in Xcode don’t contain this header by default. (50709418)
-- Debugging symbols might be unavailable for Apple Watch. (26995636)  Verify that you have a working internet connection and that you’re signed into your Apple ID in Preferences > Accounts.
-- Debugging a watch app in a watchOS simulator might fail the first time the simulator boots. (50263836)  Wait until the watch simulator finishes booting, then start debugging it again.
+- Debugging symbols might be unavailable for Apple Watch. (26995636) **Workaround:** Verify that you have a working internet connection and that you’re signed into your Apple ID in Preferences > Accounts.
+- Debugging a watch app in a watchOS simulator might fail the first time the simulator boots. (50263836) **Workaround:** Wait until the watch simulator finishes booting, then start debugging it again.
 
 ###### Resolved Issues
 
@@ -226,7 +226,7 @@ defaults write com.apple.dt.lldb DefaultPythonVersion 2
 - The [`NSStackView`](https://developer.apple.com/documentation/AppKit/NSStackView) inspector now allows configuring negative spacing. (49012055)
 - [`NSSwitch`](https://developer.apple.com/documentation/AppKit/NSSwitch) is available when running on macOS 10.15. (47566686)
 - Cells in a [`UITableView`](https://developer.apple.com/documentation/UIKit/UITableView) can now self size with Auto Layout constrained views in the canvas. To opt into the behavior for existing table views, enable “Automatic” for the table view estimated item size, and “Automatic” for cell’s height in the Size inspector. (35735970)
-- [`NSView`](https://developer.apple.com/documentation/AppKit/NSView) and [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) have a layout mode option in the Size inspector to explicitly opt into “translates autoresizing mask into constraints”. The default setting is “Automatic”, which is the existing behavior. “Automatic” implies that “translate autoresizing mask into constraints” is  when a view affect by constraints in the storyboard or `.xib` file, but  if unconstrained. (37352354)
+- [`NSView`](https://developer.apple.com/documentation/AppKit/NSView) and [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) have a layout mode option in the Size inspector to explicitly opt into “translates autoresizing mask into constraints”. The default setting is “Automatic”, which is the existing behavior. “Automatic” implies that “translate autoresizing mask into constraints” is *off* when a view affect by constraints in the storyboard or `.xib` file, but *on* if unconstrained. (37352354)
 - Improved the reliability of Auto Layout constraint generation with “Add Missing Constraints”. (43694622)
 - The contents of a [`UIScrollView`](https://developer.apple.com/documentation/UIKit/UIScrollView) are scrollable within the canvas, once its subviews are fully constrained with Auto Layout constraints. (44727961)
 - Cells in a [`UICollectionView`](https://developer.apple.com/documentation/UIKit/UICollectionView) can now self size with Auto Layout constrained views in the canvas. To opt into the behavior for existing collection views, enable “Automatic” for the collection view’s estimated size, and “Automatic” for cell’s size from the Size inspector. If deploying before iOS 13, you can activate self sizing collection view cells by calling [`performBatchUpdates(_:completion:)`](https://developer.apple.com/documentation/UIKit/UICollectionView/performBatchUpdates(_:completion:)) during [`viewDidLoad()`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidLoad()). (45617083)
@@ -268,7 +268,7 @@ func makeDogController(coder: NSCoder, sender: Any?, segueIdentifier: String?)
 - If a glyph has a light and dark mode representation, the dark mode representation won’t be picked up in the storyboard. (50354204)
 - UIKit menus configured in Interface Builder are available at runtime on macOS, but not on iOS. (51077651)
 - The iOS status bar is not displayed in the Interface Builder canvas. (48639919)
-- There is an issue with [`UITabBarController`](https://developer.apple.com/documentation/UIKit/UITabBarController) where decoding an instance from a storyboard will create some extra views at the left end of the screen. Developers may remove these by applying a workaround. (55310448) : To remove the extraneous views from Storyboard, create a subclass of a [`UITabBarController`](https://developer.apple.com/documentation/UIKit/UITabBarController) and add the following snippet in the class’s [`init(coder:)`](https://developer.apple.com/documentation/UIKit/UIViewController/init(coder:)) method: ```swift
+- There is an issue with [`UITabBarController`](https://developer.apple.com/documentation/UIKit/UITabBarController) where decoding an instance from a storyboard will create some extra views at the left end of the screen. Developers may remove these by applying a workaround. (55310448) **Workaround**: To remove the extraneous views from Storyboard, create a subclass of a [`UITabBarController`](https://developer.apple.com/documentation/UIKit/UITabBarController) and add the following snippet in the class’s [`init(coder:)`](https://developer.apple.com/documentation/UIKit/UIViewController/init(coder:)) method: ```swift
 class WorkaroundTabBarController: UITabBarController {
   required init?(coder: NSCoder) {
       super.init(coder: coder)
@@ -347,10 +347,10 @@ class WorkaroundTabBarController: UITabBarController {
 
 ###### Known Issues
 
-- A new project that contains a USDz file and was never manually saved will have missing USDz objects when opened after an autosave. (53565602)  Manually save and re-open the project.
-- The [`RealityKit`](https://developer.apple.com/documentation/RealityKit) [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) class isn’t found at runtime when loading a storyboard if its module isn’t specified in Interface Builder. The following error message displays in the Xcode console: “Unknown class ARView in Interface Builder file.” (50840767)  [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) is a Swift view class, and requires both its class name ([`ARView`](https://developer.apple.com/documentation/RealityKit/ARView)) and module ([`RealityKit`](https://developer.apple.com/documentation/RealityKit)) to be specified in the Interface Builder inspector.
-- RealityKit’s [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) class is not found at runtime when loading a storyboard if RealityKit isn’t otherwise used within the Xcode project. The following error message displays in the Xcode console: “Unknown class _TtC10RealityKit6ARView in Interface Builder file.” (50900969)  This issue occurs if you import RealityKit and define an `@IBOutlet` with a type of [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView), but don’t otherwise use RealityKit symbols in your project. To ensure that RealityKit is loaded at runtime with this configuration, manually add RealityKit to your target’s Link Binary with Libraries build phase.
-- The Rename menu item isn’t enabled when scene, object, or behavior is selected. (54274819) : You can rename scenes and objects using the Name field in the Properties inspector. You can rename behaviors by right-clicking the behavior and selecting Rename from the contextual menu.
+- A new project that contains a USDz file and was never manually saved will have missing USDz objects when opened after an autosave. (53565602) **Workaround:** Manually save and re-open the project.
+- The [`RealityKit`](https://developer.apple.com/documentation/RealityKit) [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) class isn’t found at runtime when loading a storyboard if its module isn’t specified in Interface Builder. The following error message displays in the Xcode console: “Unknown class ARView in Interface Builder file.” (50840767) **Workaround:** [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) is a Swift view class, and requires both its class name ([`ARView`](https://developer.apple.com/documentation/RealityKit/ARView)) and module ([`RealityKit`](https://developer.apple.com/documentation/RealityKit)) to be specified in the Interface Builder inspector.
+- RealityKit’s [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) class is not found at runtime when loading a storyboard if RealityKit isn’t otherwise used within the Xcode project. The following error message displays in the Xcode console: “Unknown class _TtC10RealityKit6ARView in Interface Builder file.” (50900969) **Workaround:** This issue occurs if you import RealityKit and define an `@IBOutlet` with a type of [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView), but don’t otherwise use RealityKit symbols in your project. To ensure that RealityKit is loaded at runtime with this configuration, manually add RealityKit to your target’s Link Binary with Libraries build phase.
+- The Rename menu item isn’t enabled when scene, object, or behavior is selected. (54274819) **Workaround**: You can rename scenes and objects using the Name field in the Properties inspector. You can rename behaviors by right-clicking the behavior and selecting Rename from the contextual menu.
 
 ###### Resolved Issues
 
@@ -364,8 +364,8 @@ class WorkaroundTabBarController: UITabBarController {
 
 ###### Known Issues
 
-- When editing bots for a project that authenticates with SSH, Xcode Server may disable some project-specific settings. (51009722)  Either replace repositories in the Repositories tab when editing the bot or use HTTPS-based authentication with your Xcode Server integrations.
-- Xcode Server can cause a crash when a bot is created from the context menu of any integration. (51082255)  Create bots from the context menu of the server or from the Product menu in Xcode.
+- When editing bots for a project that authenticates with SSH, Xcode Server may disable some project-specific settings. (51009722) **Workaround:** Either replace repositories in the Repositories tab when editing the bot or use HTTPS-based authentication with your Xcode Server integrations.
+- Xcode Server can cause a crash when a bot is created from the context menu of any integration. (51082255) **Workaround:** Create bots from the context menu of the server or from the Product menu in Xcode.
 - Build issues occurring in a source file built by multiple targets may be marked resolved and reintroduced on every integration. (46523551)
 
 ###### Resolved Issues
@@ -381,9 +381,9 @@ class WorkaroundTabBarController: UITabBarController {
 
 ###### Known Issues
 
-- If your iPad app uses private entitlements, those entitlements may not be available for use in your Mac Catalyst app. (51599125)  Generate a new entitlements file for your Mac Catalyst app and exclude the unavailable entitlements by following these steps:  Select your entitlements file in the project navigator then select File > Duplicate.  Give your Mac Catalyst entitlements file a unique name and save it.  Remove any unavailable private entitlements from your new Mac Catalyst entitlements file.  Navigate to your Mac Catalyst app’s build settings in the project editor and locate the Code Signing Entitlements build setting.  Expand the build setting so that you can view its value for all build configurations. For each of your build configurations, click the plus (+) button to add a conditional setting.  From the popup button in each conditional setting, select Any macOS, then edit the conditional setting’s value to refer to the name of your new Mac Catalyst entitlements file.
-- The archive action does not code sign command-line executable products from Swift packages. (48717735)  Manually sign archived executables using the `codesign` tool before distributing them.
-- Mac provisioning profiles that you have manually installed using the bot editor’s Signing tab will be installed using the wrong file extension, causing integrations to fail. (47636041)  Sign into your bot user’s account and rename the affected profiles in the `~/Library/MobileDevice/Provisioning Profiles` directory.
+- If your iPad app uses private entitlements, those entitlements may not be available for use in your Mac Catalyst app. (51599125) **Workaround:** Generate a new entitlements file for your Mac Catalyst app and exclude the unavailable entitlements by following these steps: **1.** Select your entitlements file in the project navigator then select File > Duplicate. **2.** Give your Mac Catalyst entitlements file a unique name and save it. **3.** Remove any unavailable private entitlements from your new Mac Catalyst entitlements file. **4.** Navigate to your Mac Catalyst app’s build settings in the project editor and locate the Code Signing Entitlements build setting. **5.** Expand the build setting so that you can view its value for all build configurations. For each of your build configurations, click the plus (+) button to add a conditional setting. **6.** From the popup button in each conditional setting, select Any macOS, then edit the conditional setting’s value to refer to the name of your new Mac Catalyst entitlements file.
+- The archive action does not code sign command-line executable products from Swift packages. (48717735) **Workaround:** Manually sign archived executables using the `codesign` tool before distributing them.
+- Mac provisioning profiles that you have manually installed using the bot editor’s Signing tab will be installed using the wrong file extension, causing integrations to fail. (47636041) **Workaround:** Sign into your bot user’s account and rename the affected profiles in the `~/Library/MobileDevice/Provisioning Profiles` directory.
 
 ###### Resolved Issues
 
@@ -398,7 +398,7 @@ class WorkaroundTabBarController: UITabBarController {
 xcrun simctl status_bar <device> override --time "9:41" --batteryState charged --batteryLevel 100
 ``` See `xcrun simctl help status_bar` for the full range of options. (51697821)
 - Metal is available in iOS 13 and tvOS 13 simulators when running on macOS 10.15. Metal code is executed on the host Mac GPU, and is significantly faster than simulated OpenGL code. (System APIs in watchOS 6.0 simulators are also GPU accelerated.) The APIs in SceneKit, CoreAnimation, and other system frameworks abstract many differences between GPUs, reducing the need for device-specific code. When running on earlier versions of macOS or in an environment where Metal is not available, simulators continue to use software rendered OpenGL. If your Mac has multiple GPUs, use the File menu in Simulator to select which GPU to use. If the GPU in use becomes unavailable, any simulators using it automatically shut down. (18430676)
-- Xcode no longer creates every available iOS simulator device by default. Instead a set of the most commonly used devices are created. To create other devices — or multiple instances of a device — open the Devices window, select Simulators, click the  button, enter a name, and select the relevant device type and OS version. In Terminal, execute the `xcrun simctl create <name> <device type> <OS version>` command, for example `xcrun simctl create "My iPhone 7" "iPhone 7" iOS13.0`. (49428617)
+- Xcode no longer creates every available iOS simulator device by default. Instead a set of the most commonly used devices are created. To create other devices — or multiple instances of a device — open the Devices window, select Simulators, click the **+** button, enter a name, and select the relevant device type and OS version. In Terminal, execute the `xcrun simctl create <name> <device type> <OS version>` command, for example `xcrun simctl create "My iPhone 7" "iPhone 7" iOS13.0`. (49428617)
 - [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer) is available in iOS 13 and tvOS 13 simulators. (45101325)
 - iOS 13, watchOS 6, and tvOS 13 simulators now have a `dyld` shared cache. This improves simulator launch times and reduces the number of open file handles used by simulator processes. If you report an issue you believe is related to the shared cache, include a `simctl diagnose` and the output of launching your program with `DYLD_PRINT_LIBRARIES=1`. (13632739) > **Note**: A missing symbol crash may now mention the shared cache but this is not a shared cache bug. The message is merely informing you that the shared cache was consulted when searching for the symbol.
 - `simctl` now accepts short aliases for runtime names. This means you can create a new iPhone X simulator with a command like `simctl create 'iPhone X' iOS13`. (41089607)
@@ -410,12 +410,12 @@ xcrun simctl status_bar <device> override --time "9:41" --batteryState charged -
 
 ###### Known Issues
 
-- Simulator doesn’t distribute the load if multiple GPUs in a system match the chosen GPU policy. Only the first matching GPU, as returned by [`MTLCopyAllDevices()`](https://developer.apple.com/documentation/Metal/MTLCopyAllDevices()), is used. (50608554)  You may see higher performance by locating the simulator window on the display directly connected to the GPU the simulator is using, which avoids copying across GPUs. > **Note**: As with any app that leverages the GPU, the performance behavior for an externally connected display varies depending on workload.
-- Video recording of the iOS 13, tvOS 13, and watchOS 6 simulator through `xcrun simctl io `` recordVideo` returns an error instead of recording video. (50625716)
-- watchOS simulators don’t honor a breakpoint on a cold boot. (51148192)  Completely boot the simulator before launching the app you’re debugging.
-- iCould Drive isn’t supported in iOS 13.0 and earlier simulator runtimes when running on macOS Catalina 10.15. Logging into iCloud on impacted simulators will result in `bird` terminating and relaunching in a cycle. (51392951) : Log out of iCloud in impacted simulators to halt the crash cycle.
-- Simulated devices running iOS 13 may fail to enable an external display or CarPlay display, instead displaying a black window. (53966664) : Close the window and try again. If that fails restart the affected simulator.
-- When running UI tests in a simulated device on a macOS host with slow hardware the test runner process may get killed by the CPU watchdog. (54136015) : Free up resources so the simulated device has faster I/O. You can also extend the watchdog timeouts by setting a user default in the relevant simulator. Boot the simulator, then run: ```shell
+- Simulator doesn’t distribute the load if multiple GPUs in a system match the chosen GPU policy. Only the first matching GPU, as returned by [`MTLCopyAllDevices()`](https://developer.apple.com/documentation/Metal/MTLCopyAllDevices()), is used. (50608554) **Workaround:** You may see higher performance by locating the simulator window on the display directly connected to the GPU the simulator is using, which avoids copying across GPUs. > **Note**: As with any app that leverages the GPU, the performance behavior for an externally connected display varies depending on workload.
+- Video recording of the iOS 13, tvOS 13, and watchOS 6 simulator through `xcrun simctl io `**` recordVideo` returns an error instead of recording video. (50625716)
+- watchOS simulators don’t honor a breakpoint on a cold boot. (51148192) **Workaround:** Completely boot the simulator before launching the app you’re debugging.
+- iCould Drive isn’t supported in iOS 13.0 and earlier simulator runtimes when running on macOS Catalina 10.15. Logging into iCloud on impacted simulators will result in `bird` terminating and relaunching in a cycle. (51392951) **Workaround**: Log out of iCloud in impacted simulators to halt the crash cycle.
+- Simulated devices running iOS 13 may fail to enable an external display or CarPlay display, instead displaying a black window. (53966664) **Workaround**: Close the window and try again. If that fails restart the affected simulator.
+- When running UI tests in a simulated device on a macOS host with slow hardware the test runner process may get killed by the CPU watchdog. (54136015) **Workaround**: Free up resources so the simulated device has faster I/O. You can also extend the watchdog timeouts by setting a user default in the relevant simulator. Boot the simulator, then run: ```shell
 xcrun simctl spawn <device> defaults write com.apple.springboard FBLaunchWatchdogScale
 ``` This must be set on each simulator. Erasing a simulator will reset this setting.
 - Attempting to create an MIDINetworkSession in a simulated device running iOS 13 won’t succeed. (54484923)
@@ -447,7 +447,7 @@ xcrun simctl spawn <device> defaults write com.apple.springboard FBLaunchWatchdo
 - Viewing the changes for a revision of a file from the source control log inspector may fail if that file has since been renamed. (49673170)
 - Filtering packages in the Add Package assistant isn’t supported for Bitbucket Cloud or Bitbucket Server hosted accounts. (47290085)
 - Filtering packages in the Add Package assistant isn’t supported for GitLab or GitLab Self-Managed hosted accounts. (47290125)
-- When using `xcodebuild`, resolving packages may fail to verify SSH fingerprints unless that fingerprint is already in the `~/.ssh/known_hosts` file. (50686014)  SSH into the host and verify the fingerprint from the command line before using `xcodebuild`, or manually add the host fingerprint to the `~/.ssh/known_hosts` file.
+- When using `xcodebuild`, resolving packages may fail to verify SSH fingerprints unless that fingerprint is already in the `~/.ssh/known_hosts` file. (50686014) **Workaround:** SSH into the host and verify the fingerprint from the command line before using `xcodebuild`, or manually add the host fingerprint to the `~/.ssh/known_hosts` file.
 
 ###### Resolved Issues
 
@@ -668,7 +668,7 @@ func takesNoEscape(_ fn: () -> ()) {
 
 - The `NEHotspotConfigurationError` enum from the [`Network Extension`](https://developer.apple.com/documentation/NetworkExtension) framework changed from `NS_ENUM` to `NS_ERROR_ENUM`, which can cause compiler errors in existing Swift code that uses the enum. For example, in code like this: ```swift
 let code = NEHotspotConfigurationError(rawValue: errorCode)
-``` You will see the error message: “error: incorrect argument label in call (have ‘rawValue:’, expected ‘_nsError:’).” (54134493) : Replace references of `NEHotspotConfigurationError` with [`NEHotspotConfigurationError`](https://developer.apple.com/documentation/NetworkExtension/NEHotspotConfigurationError). For the above example, change the code to: ```swift
+``` You will see the error message: “error: incorrect argument label in call (have ‘rawValue:’, expected ‘_nsError:’).” (54134493) **Workaround**: Replace references of `NEHotspotConfigurationError` with [`NEHotspotConfigurationError`](https://developer.apple.com/documentation/NetworkExtension/NEHotspotConfigurationError). For the above example, change the code to: ```swift
 let code = NEHotspotConfigurationError.Code(rawValue: errorCode)
 ```
 
@@ -699,26 +699,26 @@ subscript(a x: Int, a y: Int) -> Int {}
 - Deploying SwiftUI previews to a device in a project with a deployment prior to iOS 10 will fail, even if the device is running iOS 13. SwiftUI previews can only be deployed to devices when the deployment target of the project is iOS 10+, and the device is running iOS 13. (52121546)
 - The software keyboard doesn’t appear in previews. (35615536)
 - Code changes you make while running an on-device preview might display the Home screen briefly while the app relaunches. (48208765)
-- Pinching to zoom is unavailable in live previews. (51183125)  Exit live mode or use the zoom controls in the canvas or editor menu.
+- Pinching to zoom is unavailable in live previews. (51183125) **Workaround:** Exit live mode or use the zoom controls in the canvas or editor menu.
 - Static previews for iOS, tvOS, and watchOS don’t support SceneKit, MapKit, and Metal views, and experience a delay when rendering updates. (50965310)
 - Previews in packages always perform a full build of the active scheme. (51030302)
-- [`HStack`](https://developer.apple.com/documentation/SwiftUI/HStack) and [`VStack`](https://developer.apple.com/documentation/SwiftUI/VStack) inspectors don’t support custom layout guides. (49710501)  Use the source editor for custom layout guides.
-- The attribute inspector doesn’t allow specifying flexible frames. (51310989) : Use the source editor to work with the frame inspector when specifying flexible size information.
+- [`HStack`](https://developer.apple.com/documentation/SwiftUI/HStack) and [`VStack`](https://developer.apple.com/documentation/SwiftUI/VStack) inspectors don’t support custom layout guides. (49710501) **Workaround:** Use the source editor for custom layout guides.
+- The attribute inspector doesn’t allow specifying flexible frames. (51310989) **Workaround**: Use the source editor to work with the frame inspector when specifying flexible size information.
 - Entering live preview mode in the canvas might take several seconds the first time. (46505269)
-- Previews may fail or update incorrectly when switching between files. (50841287)  Add a newline to the end of the active file, then click Resume in the banner that appears.
-- The attributes inspector stays visible after the canvas closes, gets stuck on the last selected item, and doesn’t function. (50958316)  Reopen the canvas or switch to a different file.
-- Previews don’t appear in the canvas for `private` and `fileprivate` structures that conform to [`PreviewProvider`](https://developer.apple.com/documentation/SwiftUI/PreviewProvider). (47011316)  Remove the `private` or `fileprivate` access control from your conforming type.
+- Previews may fail or update incorrectly when switching between files. (50841287) **Workaround:** Add a newline to the end of the active file, then click Resume in the banner that appears.
+- The attributes inspector stays visible after the canvas closes, gets stuck on the last selected item, and doesn’t function. (50958316) **Workaround:** Reopen the canvas or switch to a different file.
+- Previews don’t appear in the canvas for `private` and `fileprivate` structures that conform to [`PreviewProvider`](https://developer.apple.com/documentation/SwiftUI/PreviewProvider). (47011316) **Workaround:** Remove the `private` or `fileprivate` access control from your conforming type.
 - Previews might take several seconds to update when switching devices in the run destination selector the first time. (47562171)
 - Previews might temporarily show the incorrect device chrome when switching devices using the run destination from the Scheme pop-up menu. (49496647)
-- Undo is unavailable in the canvas. (49651153)  Bring the source editor into focus and perform the undo there.
+- Undo is unavailable in the canvas. (49651153) **Workaround:** Bring the source editor into focus and perform the undo there.
 - Text view doesn’t display properly in tvOS playgrounds. (54148259)
 - SwiftUI has an API that lets you change the value type of [`Binding`](https://developer.apple.com/documentation/SwiftUI/Binding) to [`AnyHashable`](https://developer.apple.com/documentation/Swift/AnyHashable): ```swift
 let someBinding: Binding<String> = ...
 
 let typeErasedBinding = Binding<AnyHashable>(someBinding)
 ``` Attempting to use this API fails at compile time with a linker error on watchOS 6. (53769896)
-- Apps containing SwiftUI inside a Swift package crash on launch on devices running iOS versions earlier than iOS 13. (53706729) : When back-deploying to an OS that doesn’t contain the SwiftUI framework, add `-weak_framework SwiftUI` to the Other Linker Flags setting in the Build Settings tab. See [`Frameworks and Weak Linking`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPFrameworks/Concepts/WeakLinking.html#//apple_ref/doc/uid/20002378) for more information on weak linking a framework. Note that this workaround doesn’t apply when using dynamically-linked Swift packages which import SwiftUI.
-- Xcode Previews fast turnaround may not work in some files. (48091832) : If you encounter issues using Xcode Previews, you can try disabling hot-swapping per file using the Editor > Previews menu. You will still be able to use previews, but without the faster turnaround that hot-swapping provides.
+- Apps containing SwiftUI inside a Swift package crash on launch on devices running iOS versions earlier than iOS 13. (53706729) **Workaround**: When back-deploying to an OS that doesn’t contain the SwiftUI framework, add `-weak_framework SwiftUI` to the Other Linker Flags setting in the Build Settings tab. See [`Frameworks and Weak Linking`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPFrameworks/Concepts/WeakLinking.html#//apple_ref/doc/uid/20002378) for more information on weak linking a framework. Note that this workaround doesn’t apply when using dynamically-linked Swift packages which import SwiftUI.
+- Xcode Previews fast turnaround may not work in some files. (48091832) **Workaround**: If you encounter issues using Xcode Previews, you can try disabling hot-swapping per file using the Editor > Previews menu. You will still be able to use previews, but without the faster turnaround that hot-swapping provides.
 
 ###### Resolved Issues
 
@@ -741,23 +741,23 @@ let typeErasedBinding = Binding<AnyHashable>(someBinding)
 
 ###### Known Issues
 
-- There is no explicit command-line option to build a Swift Package using `xcodebuild`. (45575820)  Run `xcodebuild -workspace .` in the directory containing the `Package.swift` file.
+- There is no explicit command-line option to build a Swift Package using `xcodebuild`. (45575820) **Workaround:** Run `xcodebuild -workspace .` in the directory containing the `Package.swift` file.
 - Previews aren’t supported for standalone packages. (51072409)
 - Swift packages don’t support adding resource files — such as images, storyboards, or audio — in a target. ([`SR-2866`](https://developer.apple.comhttps://bugs.swift.org/browse/SR-2866), 33389529)
 - Swift packages don’t support processing localized strings files. (48190792)
 - Moving a local package in a project will convert it into a folder reference. (50320585)
-- A package product that is linked into both app and its test target results in duplicated symbols. (50348625)  Link a package product only in the app or test target.
-- The scheme that’s autogenerated for a Swift package isn’t automatically updated when the package adds or removes targets. (50586754)  Delete the scheme from the `swiftpm/xcode/xcshareddata/xcschemes` directory inside the package directory, then reopen the package to automatically generate a new scheme.
+- A package product that is linked into both app and its test target results in duplicated symbols. (50348625) **Workaround:** Link a package product only in the app or test target.
+- The scheme that’s autogenerated for a Swift package isn’t automatically updated when the package adds or removes targets. (50586754) **Workaround:** Delete the scheme from the `swiftpm/xcode/xcshareddata/xcschemes` directory inside the package directory, then reopen the package to automatically generate a new scheme.
 - Targets of a Swift package build with debug-conditional settings if the build configuration selected in the scheme is not named Debug or Release. (50696202)
-- Removing a local package reference from a workspace removes its package products from all Xcode targets in the workspace, even when other references to that local package remain in the workspace. (50706448)  Add package product references back to the relevant targets.
+- Removing a local package reference from a workspace removes its package products from all Xcode targets in the workspace, even when other references to that local package remain in the workspace. (50706448) **Workaround:** Add package product references back to the relevant targets.
 - Previewing code in Swift packages which are not referenced by the active scheme and not being linked into an app target is not supported and shows an incorrect error message. (50909384)
-- Test targets of newly-created Swift packages fail to build for watchOS because XCTest is unavailable on watchOS. (51054894)  Surround any code in watchOS test targets which references the XCTest framework or its APIs with conditional compilation statements. For example: ```swift
+- Test targets of newly-created Swift packages fail to build for watchOS because XCTest is unavailable on watchOS. (51054894) **Workaround:** Surround any code in watchOS test targets which references the XCTest framework or its APIs with conditional compilation statements. For example: ```swift
 #if !os(watchOS)
 // XCTest code
 #endif
 ```
-- WatchOS apps which are embedded in an iOS app will not build successfully if they depend on any system library targets from Swift packages. (54579347) : Add the watchOS app explicitly to the scheme being built, clean the build folder and build again.
-- If an iOS, tvOS, or watchOS app uses a Swift Package that builds a dynamic library, it cannot be submitted to the App Store. (55564324) : Modify the Package manifest to build a static library.
+- WatchOS apps which are embedded in an iOS app will not build successfully if they depend on any system library targets from Swift packages. (54579347) **Workaround**: Add the watchOS app explicitly to the scheme being built, clean the build folder and build again.
+- If an iOS, tvOS, or watchOS app uses a Swift Package that builds a dynamic library, it cannot be submitted to the App Store. (55564324) **Workaround**: Modify the Package manifest to build a static library.
 
 ###### Resolved Issues
 
@@ -804,7 +804,7 @@ func testFirstNameNotEmpty() throws {
 
 ###### Known Issues
 
-- The `XCTUnwrap` API is only available in primary test bundle targets and not in other libraries or frameworks. (51117167)  Move any library code that makes use of `XCTUnwrap` to your primary test bundle target or manually modify the following build settings in affected targets: ```text
+- The `XCTUnwrap` API is only available in primary test bundle targets and not in other libraries or frameworks. (51117167) **Workaround:** Move any library code that makes use of `XCTUnwrap` to your primary test bundle target or manually modify the following build settings in affected targets: ```text
 SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks"
 
 LIBRARY_SEARCH_PATHS = "$(inherited) $(PLATFORM_DIR)/Developer/usr/lib"
@@ -823,7 +823,7 @@ SWIFT_INCLUDE_PATHS = "$(inherited) $(PLATFORM_DIR)/Developer/usr/lib"
 
 ###### Known Issues
 
-- watchOS applications built with the watchOS 6 SDK and a deployment target of watchOS 5.3 will crash on launch. (55360395) : Set the `__WKEXTENSIONMAIN_LEGACY_TARGET_5_3` build setting to “legacy,” or use another deployment target instead of 5.3.
+- watchOS applications built with the watchOS 6 SDK and a deployment target of watchOS 5.3 will crash on launch. (55360395) **Workaround**: Set the `__WKEXTENSIONMAIN_LEGACY_TARGET_5_3` build setting to “legacy,” or use another deployment target instead of 5.3.
 
 ## See Also
 

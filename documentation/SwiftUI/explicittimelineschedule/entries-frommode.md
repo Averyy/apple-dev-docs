@@ -30,8 +30,8 @@ A [`TimelineView`](timelineview.md) that you create with a schedule calls this [
 
 ## Parameters
 
-- `startDate`: The date from which the sequence begins. This   particular implementation of the protocol method ignores the start   date.
-- `mode`: The mode for the update schedule. This particular   implementation of the protocol method ignores the mode.
+- `startDate`: The date from which the sequence begins. This particular implementation of the protocol method ignores the start date.
+- `mode`: The mode for the update schedule. This particular implementation of the protocol method ignores the mode.
 
 
 ---

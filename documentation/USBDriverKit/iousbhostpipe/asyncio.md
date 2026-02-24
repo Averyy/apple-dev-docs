@@ -27,7 +27,7 @@ This method performs an appropriate USB I/O request on the device and notifies y
 - `dataBuffer`: The data buffer to use for the request. When transferring data to the device, this buffer contains the data to send. When receiving data from the device, this buffer is empty initially.
 - `dataBufferLength`: The length of the data buffer.
 - `completion`: An action object containing the callback method to execute when the transfer finishes.
-- `completionTimeoutMs`: The timeout value in milliseconds. Specify   if you don’t want the request to time out. You must specify   when transferring data on an interrupt endpoint.
+- `completionTimeoutMs`: The timeout value in milliseconds. Specify `0` if you don’t want the request to time out. You must specify `0` when transferring data on an interrupt endpoint.
 
 ## See Also
 

@@ -21,8 +21,8 @@ func executeCommandsInBuffer(_ buffer: any MTLIndirectCommandBuffer, range: Rang
 
 ## Parameters
 
-- `buffer`: The   instance containing the commands to execute.
-- `range`: The range of commands to execute.   When running on Metal devices that belong to the   GPU family, the maximum length of the range is 0x4000 (16,384) commands.   Metal devices that belong to an Apple silicon family, such as  , don’t have this limitation.
+- `buffer`: The [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance containing the commands to execute.
+- `range`: The range of commands to execute. When running on Metal devices that belong to the [`MTLGPUFamily.mac2`](mtlgpufamily/mac2.md) GPU family, the maximum length of the range is 0x4000 (16,384) commands. Metal devices that belong to an Apple silicon family, such as [`MTLGPUFamily.apple10`](mtlgpufamily/apple10.md), don’t have this limitation.
 
 ## See Also
 

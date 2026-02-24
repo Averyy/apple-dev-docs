@@ -31,9 +31,9 @@ This function is useful when you need your own copy of a CFString object’s cha
 ## Parameters
 
 - `theString`: The string to examine.
-- `buffer`: The Pascal string buffer into which to copy the  . The buffer must be at least   bytes in length. On return, contains the converted characters. If there is an error in conversion, the buffer contains only partial results.
-- `bufferSize`: The length of the local   in bytes (accounting for the length byte).
-- `encoding`: The string encoding to which the character contents of   should be converted.
+- `buffer`: The Pascal string buffer into which to copy the `theString`. The buffer must be at least `bufferSize` bytes in length. On return, contains the converted characters. If there is an error in conversion, the buffer contains only partial results.
+- `bufferSize`: The length of the local `buffer` in bytes (accounting for the length byte).
+- `encoding`: The string encoding to which the character contents of `theString` should be converted.
 
 ## See Also
 

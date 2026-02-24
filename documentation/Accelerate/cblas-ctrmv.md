@@ -29,14 +29,14 @@ Multiplies `A*X` or `A'*X`, depending on the value of `TransA`.
 ## Parameters
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
-- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are   or  .
-- `TRANSA`: Specifies whether to use matrix A (  or  ) or the transpose of A ( ,  ,  , or  ).
-- `DIAG`: Specifies whether the matrix is unit triangular. Possible values are   (unit triangular) or   (not unit triangular).
-- `N`: Order of matrix  .
-- `A`: Matrix  .
-- `LDA`: Leading dimension of matrix  .
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
+- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are `'U'` or `'L'`.
+- `TRANSA`: Specifies whether to use matrix A (`'N'` or `'n'`) or the transpose of A (`'T'`, `'t'`, `'C'`, or `'c'`).
+- `DIAG`: Specifies whether the matrix is unit triangular. Possible values are `'U'` (unit triangular) or `'N'` (not unit triangular).
+- `N`: Order of matrix `A`.
+- `A`: Matrix `A`.
+- `LDA`: Leading dimension of matrix `A`.
+- `X`: Vector `X`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
 
 ## See Also
 

@@ -20,7 +20,7 @@ func setItems(_ items: [[String : Any]], options: [UIPasteboard.OptionsKey : Any
 ## Parameters
 
 - `items`: An array of items to add to the pasteboard.
-- `options`: The privacy options to apply to all the items on the pasteboard. The available options are described in  .
+- `options`: The privacy options to apply to all the items on the pasteboard. The available options are described in [`UIPasteboard.OptionsKey`](uipasteboard/optionskey.md).
 
 ## See Also
 

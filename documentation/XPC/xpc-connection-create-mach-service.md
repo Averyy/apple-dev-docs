@@ -27,8 +27,8 @@ This method will succeed even if the named service does not exist. This is becau
 
 ## Parameters
 
-- `name`: The name of the remote service with which to connect. The service name must exist in a Mach bootstrap that is accessible to the process and be advertised in a  .
-- `targetq`: The GCD queue to which the event handler block will be submitted. This parameter may be  , in which case the connection’s target queue will be the default target queue of  , defined as  . The target queue may be changed later with a call to  .
+- `name`: The name of the remote service with which to connect. The service name must exist in a Mach bootstrap that is accessible to the process and be advertised in a `launchd.plist`.
+- `targetq`: The GCD queue to which the event handler block will be submitted. This parameter may be `NULL`, in which case the connection’s target queue will be the default target queue of `libdispatch`, defined as `DISPATCH_TARGET_QUEUE_DEFAULT`. The target queue may be changed later with a call to [`xpc_connection_set_target_queue(_:_:)`](xpc_connection_set_target_queue(_:_:).md).
 - `flags`: Additional attributes with which to create the connection.
 
 ## See Also

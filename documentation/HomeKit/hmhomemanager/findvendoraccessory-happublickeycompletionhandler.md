@@ -27,7 +27,7 @@ An error will be returned if this method is used before available homes have bee
 
 ## Parameters
 
-- `hapPublicKey`: The HAP Long Term Public Key of the accessory.   This has a length of 32 bytes. Refer to the   HomeKit Accessory Protocol Specification for details.
+- `hapPublicKey`: The HAP Long Term Public Key of the accessory. This has a length of 32 bytes. Refer to the HomeKit Accessory Protocol Specification for details.
 
 
 ---

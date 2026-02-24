@@ -31,7 +31,7 @@ If the path is a 2D path, this method is still functional, but returns 3D vector
 
 ## Parameters
 
-- `index`: The index of the vertex to return, between   and the   value.
+- `index`: The index of the vertex to return, between `0` and the [`numPoints`](gkpath/numpoints.md) value.
 
 ## See Also
 

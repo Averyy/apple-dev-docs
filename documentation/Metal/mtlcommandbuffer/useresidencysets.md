@@ -29,7 +29,7 @@ Each command buffer can maintain a list of up to 32 different residency sets. Se
 
 ## Parameters
 
-- `residencySets`: An array of residency sets, each of which contains resource allocations, such as  ,  , and   instances.
+- `residencySets`: An array of residency sets, each of which contains resource allocations, such as [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), and [`MTLHeap`](mtlheap.md) instances.
 
 ## See Also
 

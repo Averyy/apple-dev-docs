@@ -21,7 +21,7 @@ init(cullDistance: Double)
 
 ## Parameters
 
-- `cullDistance`: The distance beyond which the framework doesn’t process a sound source. The value must be greater than or equal to  .
+- `cullDistance`: The distance beyond which the framework doesn’t process a sound source. The value must be greater than or equal to `1`.
 
 
 ---

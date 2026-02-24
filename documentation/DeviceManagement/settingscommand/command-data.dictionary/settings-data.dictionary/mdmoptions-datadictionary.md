@@ -23,6 +23,11 @@ object SettingsCommand.Command.Settings.MDMOptions
 - [object SettingsCommand.Command.Settings.MDMOptions.MDMOptions](settingscommand/command-data.dictionary/settings-data.dictionary/mdmoptions-data.dictionary/mdmoptions-data.dictionary.md)
   A dictionary that contains MDM options.
 
+## Properties
+
+- `Item` (string) *(required)*: The string that defines this setting type.
+- `MDMOptions` (SettingsCommand.Command.Settings.MDMOptions.MDMOptions) *(required)*: A dictionary of MDM options.
+
 ## See Also
 
 - [object SettingsCommand.Command.Settings.AccessibilitySettings](settingscommand/command-data.dictionary/settings-data.dictionary/accessibilitysettings-data.dictionary.md)

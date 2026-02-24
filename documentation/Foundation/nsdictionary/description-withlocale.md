@@ -28,7 +28,7 @@ If each key in the dictionary responds to `compare:`, the entries are listed in 
 
 ## Parameters
 
-- `locale`: On iOS and macOS 10.5 and later, either an instance of   or an   object may be used for  . In OS X v10.4 and earlier it must be an instance of  .
+- `locale`: An object that specifies options used for formatting each of the dictionary’s keys and values; pass `nil` if you don’t want them formatted. On iOS and macOS 10.5 and later, either an instance of `NSDictionary` or an `NSLocale` object may be used for `locale`. In OS X v10.4 and earlier it must be an instance of `NSDictionary`.
 
 ## See Also
 

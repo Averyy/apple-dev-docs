@@ -27,7 +27,7 @@ The offset from the current pen position for the flush operation.
 ## Parameters
 
 - `line`: The line from which to obtain a flush position.
-- `flushFactor`: Determines the type of flushness. A   of   or less indicates left flush. A   of   or more indicates right flush. Flush factors between   and   indicate varying degrees of center flush, with a value of   being totally center flush.
+- `flushFactor`: Determines the type of flushness. A `flushFactor` of `0` or less indicates left flush. A `flushFactor` of `1.0` or more indicates right flush. Flush factors between `0` and `1.0` indicate varying degrees of center flush, with a value of `0.5` being totally center flush.
 - `flushWidth`: Specifies the width to which the flushness operation should apply.
 
 ## See Also

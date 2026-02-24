@@ -19,7 +19,7 @@ func setSelected(_ selected: Bool, at index: Int)
 
 ## Parameters
 
-- `selected`: If  , indicates whether to select a subitem,   otherwise.
+- `selected`: If `true`, indicates whether to select a subitem, `false` otherwise.
 - `index`: The index location of the subitem.
 
 ## See Also

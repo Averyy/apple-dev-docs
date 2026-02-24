@@ -37,7 +37,7 @@ Specifically, associating an NSFileCoordinator with an NSFilePresenter accomplis
 
 ## Parameters
 
-- `filePresenterOrNil`: The file presenter object that is initiating some action on its file or directory. This object is assumed to be performing the relevant file or directory operations and therefore does not receive notifications about those operations from the returned file coordinator object. This parameter may be  .
+- `filePresenterOrNil`: The file presenter object that is initiating some action on its file or directory. This object is assumed to be performing the relevant file or directory operations and therefore does not receive notifications about those operations from the returned file coordinator object. This parameter may be `nil`.
 
 
 ---

@@ -36,9 +36,9 @@ If you call this function to retrieve a value that is a Core Foundation object, 
 ## Parameters
 
 - `inPropertyID`: The property whose value you want.
-- `inSpecifierSize`: The size of the buffer pointed to by the   parameter. Pass   if no specifier buffer is required.
-- `inSpecifier`: A pointer to a specifier buffer, if such a buffer is required by the property about which you want information. Pass   if no specifier is required.
-- `ioPropertyDataSize`: On input, the size, in bytes, of the buffer pointed to by the   parameter. Call the   function to find out the size required for this buffer. On output, the number of bytes written to the buffer.
+- `inSpecifierSize`: The size of the buffer pointed to by the `inSpecifier` parameter. Pass `0` if no specifier buffer is required.
+- `inSpecifier`: A pointer to a specifier buffer, if such a buffer is required by the property about which you want information. Pass `NULL` if no specifier is required.
+- `ioPropertyDataSize`: On input, the size, in bytes, of the buffer pointed to by the `outPropertyData` parameter. Call the [`AudioServicesGetPropertyInfo(_:_:_:_:_:)`](audioservicesgetpropertyinfo(_:_:_:_:_:).md) function to find out the size required for this buffer. On output, the number of bytes written to the buffer.
 - `outPropertyData`: On output, the property value.
 
 ## See Also

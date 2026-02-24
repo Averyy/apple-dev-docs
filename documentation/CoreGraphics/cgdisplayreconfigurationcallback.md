@@ -54,7 +54,7 @@ Your callback function should avoid attempting to change display configurations 
 
 - `display`: The display being reconfigured.
 - `flags`: Flags that indicate which display configuration parameters are changing.
-- `userInfo`: The   argument passed to the function   when the callback function is registered.
+- `userInfo`: The `userInfo` argument passed to the function [`CGDisplayRegisterReconfigurationCallback(_:_:)`](cgdisplayregisterreconfigurationcallback(_:_:).md) when the callback function is registered.
 
 ## See Also
 

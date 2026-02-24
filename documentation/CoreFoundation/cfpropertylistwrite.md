@@ -28,9 +28,9 @@ The number of bytes written to `stream`. If an error occurs, returns `0`.
 
 - `propertyList`: The property list to write out.
 - `stream`: The CFWriteStream to which to write the data. The stream must be opened and configured.
-- `format`: A CFPropertyListFormat constant to specify the data format. See   for possible values.
-- `options`: This parameter is currently unused and should be set to  .
-- `error`: If this parameter is non-NULL, if an error occurs, on return this will contain a CFError error describing the problem. Ownership follows the  .
+- `format`: A CFPropertyListFormat constant to specify the data format. See [`CFPropertyListFormat`](cfpropertylistformat.md) for possible values.
+- `options`: This parameter is currently unused and should be set to `0`.
+- `error`: If this parameter is non-NULL, if an error occurs, on return this will contain a CFError error describing the problem. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 

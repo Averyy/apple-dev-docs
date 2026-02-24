@@ -16,7 +16,7 @@ init(textContentManager: NSTextContentManager?)
 
 ## Parameters
 
-- `textContentManager`: The   to apply to this text element.
+- `textContentManager`: The [`NSTextContentManager`](nstextcontentmanager.md) to apply to this text element.
 
 
 ---

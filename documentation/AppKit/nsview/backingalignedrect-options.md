@@ -25,7 +25,7 @@ Uses the [`NSIntegralRectWithOptions(_:_:)`](https://developer.apple.com/documen
 ## Parameters
 
 - `rect`: The rectangle in the view’s interior coordinate system.
-- `options`: The alignment options. See   for possible values. (Note that although the alignment options specify integral values, the rectangle returned by this method is pixel-aligned.)
+- `options`: The alignment options. See [`AlignmentOptions`](https://developer.apple.com/documentation/Foundation/AlignmentOptions) for possible values. (Note that although the alignment options specify integral values, the rectangle returned by this method is pixel-aligned.)
 
 ## See Also
 

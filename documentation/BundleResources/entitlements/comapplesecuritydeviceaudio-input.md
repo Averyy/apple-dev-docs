@@ -8,6 +8,10 @@ A Boolean value that indicates whether the app may record audio using the built-
 **Availability**:
 - macOS 10.7+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 To add this entitlement to your app, first enable the Hardened Runtime capability in Xcode, and then under Resource Access, select Audio Input.

@@ -8,6 +8,10 @@ The webpages that the style sheet can’t be injected into.
 **Availability**:
 - macOS 10.11.5+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [Allowed URL Patterns](information-property-list/nsextension/sfsafaristylesheet/allowed-url-patterns.md)

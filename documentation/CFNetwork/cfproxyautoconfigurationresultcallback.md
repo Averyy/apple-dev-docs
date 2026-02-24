@@ -21,8 +21,8 @@ typealias CFProxyAutoConfigurationResultCallback = (UnsafeMutableRawPointer, CFA
 
 ## Parameters
 
-- `client`: The client reference originally passed in the   parameter of the   or   call that triggered this callback.
-- `proxyList`: The list of proxies returned by the autoconfiguration script. This list is in a format suitable for passing to   (with the added guarantee that no entries will ever be autoconfiguration URL entries). If an error occurs, this value will be  .
+- `client`: The client reference originally passed in the `clientContext` parameter of the `CFNetworkExecuteProxyAutoConfigurationScript` or `CFNetworkExecuteProxyAutoConfigurationURL` call that triggered this callback.
+- `proxyList`: The list of proxies returned by the autoconfiguration script. This list is in a format suitable for passing to `CFProxyCopyProxiesForURL` (with the added guarantee that no entries will ever be autoconfiguration URL entries). If an error occurs, this value will be `NULL`. > **Note**:  If you want to keep this list, you must retain it when your callback receives it.
 - `error`: An error object that indicates any error that may have occurred. If no error occurred, this value will be NULL.
 
 ## See Also

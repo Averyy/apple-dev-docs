@@ -25,7 +25,7 @@ An temporal sequence of predictions. Each prediction’s shape is `[forecastWind
 
 ## Parameters
 
-- `input`: A temporal sequence of features. Each feature’s shape must be  .
+- `input`: A temporal sequence of features. Each feature’s shape must be `[featureSize]`.
 - `eventHandler`: An event handler.
 
 

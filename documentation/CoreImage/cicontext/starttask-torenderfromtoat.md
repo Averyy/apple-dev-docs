@@ -31,11 +31,27 @@ You must use an [`MTLTexture`](https://developer.apple.com/documentation/Metal/M
 
 This call returns as soon as it enqueues all work required to render the image on the context’s device. In many situations, after issuing a render, you may need to wait for it to complete. In these cases, use the returned [`CIRenderTask`](cirendertask.md) as follows:
 
+**Swift**:
+
+```swift
+let renderTask = try context.startTask(toRender: image, from: fromRect, to: destination, at: point)
+
+let renderInfo = try renderTask.waitUntilCompleted()
+```
+
+**Objective-C**:
+
+```objc
+CIRenderTask* task = [context startTaskToRender:image fromRect:fromRect toDestination:renderDestination atPoint:point error:&error];
+
+CIRenderInfo* info = [task waitUntilCompletedAndReturnError:&error];
+```
+
 ## Parameters
 
-- `image`: A   to render.
+- `image`: A [`CIImage`](ciimage.md) to render.
 - `fromRect`: The part of the image to render, as if cropped.
-- `destination`: A   into which to render the image.
+- `destination`: A [`CIRenderDestination`](cirenderdestination.md) into which to render the image.
 - `atPoint`: An origin point in the destination at which to place the image.
 
 ## See Also

@@ -37,13 +37,13 @@ The [`CFStringCreateExternalRepresentation(_:_:_:_:)`](cfstringcreateexternalrep
 ## Parameters
 
 - `theString`: The string upon which to operate.
-- `range`: The range of characters in   to process. The specified range must not exceed the length of the string.
+- `range`: The range of characters in `theString` to process. The specified range must not exceed the length of the string.
 - `encoding`: The string encoding of the characters to copy to the byte buffer. 8, 16, and 32-bit encodings are supported.
-- `lossByte`: A character (for example, ‘?’) that should be substituted for characters that cannot be converted to the specified encoding. Pass   if you do not want lossy conversion to occur.
-- `isExternalRepresentation`:   if you want the result to be in an “external representation” format, otherwise  . In an “external representation” format, the result may contain a byte order marker (BOM) specifying endianness and this function might have to perform byte swapping.
-- `buffer`: The byte buffer into which the converted characters are written. The buffer can be allocated on the heap or stack. Pass   if you do not want conversion to take place but instead want to know if conversion will succeed (the function result is greater than  ) and, if so, how many bytes are required ( ).
-- `maxBufLen`: The size of   and the maximum number of bytes that can be written to it.
-- `usedBufLen`: On return, the number of converted bytes actually in  . You may pass   if you are not interested in this information.
+- `lossByte`: A character (for example, ‘?’) that should be substituted for characters that cannot be converted to the specified encoding. Pass `0` if you do not want lossy conversion to occur.
+- `isExternalRepresentation`: `true` if you want the result to be in an “external representation” format, otherwise `false`. In an “external representation” format, the result may contain a byte order marker (BOM) specifying endianness and this function might have to perform byte swapping.
+- `buffer`: The byte buffer into which the converted characters are written. The buffer can be allocated on the heap or stack. Pass `NULL` if you do not want conversion to take place but instead want to know if conversion will succeed (the function result is greater than `0`) and, if so, how many bytes are required (`usedBufLen`).
+- `maxBufLen`: The size of `buffer` and the maximum number of bytes that can be written to it.
+- `usedBufLen`: On return, the number of converted bytes actually in `buffer`. You may pass `NULL` if you are not interested in this information.
 
 ## See Also
 

@@ -9,6 +9,10 @@ A Boolean that specifies whether the launch image should respect the safe area i
 - iOS 14.0+
 - iPadOS 14.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [UIColorName](information-property-list/uilaunchscreens/uilaunchscreendefinitions/uicolorname.md)

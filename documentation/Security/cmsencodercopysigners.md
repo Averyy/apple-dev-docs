@@ -20,8 +20,8 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 
 ## Parameters
 
-- `cmsEncoder`: The CMSEncoder reference returned by the   function.
-- `signersOut`: On return, points to an array of identity objects of type   of the signers of the message. If the   function has not been called for this message, this function returns a   array. You must use the   function to free this reference when you are finished using it.
+- `cmsEncoder`: The CMSEncoder reference returned by the [`CMSEncoderCreate(_:)`](cmsencodercreate(_:).md) function.
+- `signersOut`: On return, points to an array of identity objects of type [`SecIdentity`](secidentity.md) of the signers of the message. If the [`CMSEncoderAddSigners(_:_:)`](cmsencoderaddsigners(_:_:).md) function has not been called for this message, this function returns a `NULL` array. You must use the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free this reference when you are finished using it.
 
 ## See Also
 

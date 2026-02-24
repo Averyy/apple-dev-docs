@@ -22,13 +22,13 @@ This sample app shows you how to set up your camera for live capture, incorporat
 
 Although implementing AV live capture is similar from one capture app to another, configuring the camera to work best with Vision algorithms involves some subtle differences.
 
-  This sample app feeds camera output from AVFoundation into the main view controller.  Start by configuring an  [`AVCaptureSession`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avcapturesession):
+**Configure the camera to use for capture.**  This sample app feeds camera output from AVFoundation into the main view controller.  Start by configuring an  [`AVCaptureSession`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avcapturesession):
 
 ```swift
 private let session = AVCaptureSession()
 ```
 
- It’s important to choose the right resolution for your app.  Don’t simply select the highest resolution available if your app doesn’t require it.  It’s better to select a lower resolution so Vision can process results more efficiently.  Check the model parameters in Xcode to find out if your app requires a resolution smaller than 640 x 480 pixels.
+**Set your device and session resolution.** It’s important to choose the right resolution for your app.  Don’t simply select the highest resolution available if your app doesn’t require it.  It’s better to select a lower resolution so Vision can process results more efficiently.  Check the model parameters in Xcode to find out if your app requires a resolution smaller than 640 x 480 pixels.
 
 Set the camera resolution to the nearest resolution that is greater than or equal to the resolution of images used in the model:
 
@@ -47,6 +47,8 @@ session.sessionPreset = .vga640x480 // Model image size is smaller.
 
 Vision will perform the remaining scaling.
 
+**Add video input to your session by adding the camera as a device:**
+
 ```swift
 guard session.canAddInput(deviceInput) else {
     print("Could not add video device input to the session")
@@ -55,6 +57,8 @@ guard session.canAddInput(deviceInput) else {
 }
 session.addInput(deviceInput)
 ```
+
+**Add video output to your session, being sure to specify the pixel format:**
 
 ```swift
 if session.canAddOutput(videoDataOutput) {
@@ -70,7 +74,7 @@ if session.canAddOutput(videoDataOutput) {
 }
 ```
 
-  The camera will stop working if the buffer queue overflows available memory.  To simplify buffer management, in the capture output, Vision blocks the call for as long as the previous request requires.  As a result, AVFoundation may drop frames, if necessary.  The sample app keeps a queue size of 1; if a Vision request is already queued up for processing when another becomes available, skip it instead of holding on to extras.
+**Process every frame, but don’t hold on to more than one Vision request at a time.**  The camera will stop working if the buffer queue overflows available memory.  To simplify buffer management, in the capture output, Vision blocks the call for as long as the previous request requires.  As a result, AVFoundation may drop frames, if necessary.  The sample app keeps a queue size of 1; if a Vision request is already queued up for processing when another becomes available, skip it instead of holding on to extras.
 
 ```swift
 let captureConnection = videoDataOutput.connection(with: .video)
@@ -86,6 +90,8 @@ do {
     print(error)
 }
 ```
+
+**Commit the session configuration:**
 
 ```swift
 session.commitConfiguration()

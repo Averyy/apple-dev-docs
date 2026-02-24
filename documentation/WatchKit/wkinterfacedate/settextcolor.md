@@ -16,7 +16,7 @@ func setTextColor(_ color: UIColor?)
 
 ## Parameters
 
-- `color`: The custom color to be applied to the time string. Specifying   removes the custom color and returns the text to the color specified in the storyboard file. The default text color is white.
+- `color`: The custom color to be applied to the time string. Specifying `nil` removes the custom color and returns the text to the color specified in the storyboard file. The default text color is white.
 
 ## See Also
 

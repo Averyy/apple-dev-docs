@@ -26,7 +26,7 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `src_name`: The name to duplicate.
-- `dest_name`: A pointer the function uses to return the copied name. Release the name using a call to the   function when you are done with it.
+- `dest_name`: A pointer the function uses to return the copied name. Release the name using a call to the [`gss_release_name(_:_:)`](gss_release_name(_:_:).md) function when you are done with it.
 
 ## See Also
 

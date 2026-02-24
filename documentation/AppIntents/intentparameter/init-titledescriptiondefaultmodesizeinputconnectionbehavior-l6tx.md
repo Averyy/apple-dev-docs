@@ -25,7 +25,7 @@ convenience init(title: LocalizedStringResource, description: LocalizedStringRes
 - `title`: A word or short phrase summarizing this parameter.
 - `description`: Additional details about this parameter.
 - `defaultValue`: The default value for this parameter. People can specify a different value.
-- `mode`: The user interface that appears when a person chooses a value for this parameter. Default value is  .
+- `mode`: The user interface that appears when a person chooses a value for this parameter. Default value is `.contact`.
 - `size`: The size of the array you specify to limit the amount of values.
 - `inputConnectionBehavior`: An enum that indicates how this parameter receives the output from a preceding app intent.
 

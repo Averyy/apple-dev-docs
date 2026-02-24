@@ -20,10 +20,10 @@ A new font reference for an [`ATSFontRef`](atsfontref.md) with the specified siz
 
 ## Parameters
 
-- `platformFont`: A valid   object.
-- `size`: The point size for the font reference. If   is specified the default font size of 12.0 is used.
-- `matrix`: The transformation matrix for the font.  In most cases, set this parameter to be  .  If  , the identity matrix is used. Optional.
-- `attributes`: A   containing additional attributes that should be matched. Optional.
+- `platformFont`: A valid [`ATSFontRef`](atsfontref.md) object.
+- `size`: The point size for the font reference. If `0.0` is specified the default font size of 12.0 is used.
+- `matrix`: The transformation matrix for the font.  In most cases, set this parameter to be `NULL`.  If `NULL`, the identity matrix is used. Optional.
+- `attributes`: A [`CTFontDescriptor`](ctfontdescriptor.md) containing additional attributes that should be matched. Optional.
 
 ## See Also
 

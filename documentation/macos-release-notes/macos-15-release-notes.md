@@ -129,7 +129,7 @@ The macOS 15 SDK provides support to develop apps for Mac computers running Sequ
 
 ###### Known Issues
 
-- 3D object views in Create ML might stop rendering correctly, causing occasional flickering or appearing fully blacked out. This will not negatively impact training.  (132026726)  To view object and object dimensions in viewport again, restart Create ML.
+- 3D object views in Create ML might stop rendering correctly, causing occasional flickering or appearing fully blacked out. This will not negatively impact training.  (132026726) **Workaround:** To view object and object dimensions in viewport again, restart Create ML.
 
 ##### Directoryservice
 
@@ -181,7 +181,7 @@ The macOS 15 SDK provides support to develop apps for Mac computers running Sequ
 
 ###### Known Issues
 
-- If you have a device using iOS 18.0 beta 3 and one using macOS 15.0 beta 4, clicking a notification on your iPhone might result in timeout of a new iPhone Mirroring connection or interruption of an existing connection.  (131780502)  Update both iPhone and Mac to beta 4 or higher.
+- If you have a device using iOS 18.0 beta 3 and one using macOS 15.0 beta 4, clicking a notification on your iPhone might result in timeout of a new iPhone Mirroring connection or interruption of an existing connection.  (131780502) **Workaround:** Update both iPhone and Mac to beta 4 or higher.
 
 ##### Logging
 
@@ -371,7 +371,7 @@ The macOS 15 SDK provides support to develop apps for Mac computers running Sequ
 
 ###### Known Issues
 
-- When using `SubscriptionStorePicker` within a container view, the window bar doesn’t work correctly.   (117701666)  Return `SubscriptionStorePicker` as a top level view from `makeBody(configuration:)` method, instead of using it within a container.
+- When using `SubscriptionStorePicker` within a container view, the window bar doesn’t work correctly.   (117701666) **Workaround:** Return `SubscriptionStorePicker` as a top level view from `makeBody(configuration:)` method, instead of using it within a container.
 
 ###### Deprecations
 
@@ -500,7 +500,7 @@ The macOS 15 SDK provides support to develop apps for Mac computers running Sequ
 
 ###### Known Issues
 
-- On macOS views presented on a stack with `navigationDestination(for:destination)` might fail to update contents.  (110118681)  Use a different style of navigation link to present the view that must update like `.navigationDestination(isPresented:destination)` or `NavigationLink(_:destination)`.
+- On macOS views presented on a stack with `navigationDestination(for:destination)` might fail to update contents.  (110118681) **Workaround:** Use a different style of navigation link to present the view that must update like `.navigationDestination(isPresented:destination)` or `NavigationLink(_:destination)`.
 - SwiftUI Animations in AppKit - `NSAnimationContext.animate(using:change:completion:)` might not work for some keypaths and might not merge correctly.  (129178630)
 
 ##### System Integrity Protection
@@ -551,7 +551,7 @@ The macOS 15 SDK provides support to develop apps for Mac computers running Sequ
 
 ###### Known Issues
 
-- Installing the latest beta of macOS in a virtual machine on a host Mac running macOS Sonoma might fail.  (109234128)  Install the latest beta of Xcode prior to installing the latest beta of macOS.
+- Installing the latest beta of macOS in a virtual machine on a host Mac running macOS Sonoma might fail.  (109234128) **Workaround:** Install the latest beta of Xcode prior to installing the latest beta of macOS.
 - Users will not be able to use Mail App on macOS VMs.  (127248244)
 
 ##### Voiceover

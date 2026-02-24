@@ -22,7 +22,7 @@ When you set a custom background tint color, consider setting a custom text colo
 
 ## Parameters
 
-- `color`: The background tint color to apply. To use the system’s default background material,   pass  .
+- `color`: The background tint color to apply. To use the system’s default background material, pass `nil`.
 
 ## See Also
 

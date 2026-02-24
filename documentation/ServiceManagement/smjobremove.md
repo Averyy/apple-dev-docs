@@ -27,11 +27,11 @@ If the job is currently running, it conditionally blocks until the running proce
 
 ## Parameters
 
-- `domain`: The job’s domain (for example,  ).
+- `domain`: The job’s domain (for example, [`kSMDomainSystemLaunchd`](ksmdomainsystemlaunchd.md)).
 - `jobLabel`: The label identifier of the job to remove.
-- `auth`: An   containing the   right if the specified domain is  .
-- `wait`: Pass   to block until the process for the specified job has exited.
-- `outError`: An output reference to a   describing the specific error when removing the job, or   if no error occurred. It’s the responsibility of the app to release the error reference. This argument can be  .
+- `auth`: An `AuthorizationRef` containing the [`kSMRightModifySystemDaemons`](ksmrightmodifysystemdaemons.md) right if the specified domain is [`kSMDomainSystemLaunchd`](ksmdomainsystemlaunchd.md).
+- `wait`: Pass `true` to block until the process for the specified job has exited.
+- `outError`: An output reference to a `CFErrorRef` describing the specific error when removing the job, or `NULL` if no error occurred. It’s the responsibility of the app to release the error reference. This argument can be `NULL`.
 
 ## See Also
 

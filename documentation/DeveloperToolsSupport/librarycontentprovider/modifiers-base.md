@@ -33,7 +33,7 @@ Xcode adds the [`LibraryItem`](libraryitem.md) instances returned by your implem
 
 ## Parameters
 
-- `base`: An instance to apply modifiers to when declaring a library   item.
+- `base`: An instance to apply modifiers to when declaring a library item.
 
 ## See Also
 

@@ -29,6 +29,11 @@ object SecurityInfoCommand
 - [object SecurityInfoCommand.Command](securityinfocommand/command-data.dictionary.md)
   The command to get security-related information about a device.
 
+## Properties
+
+- `Command` (SecurityInfoCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object SecurityInfoResponse](securityinforesponse.md)

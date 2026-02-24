@@ -33,7 +33,7 @@ init(learning_rate: Float, momentum: Float, gradient_scale: Float, regularizatio
 - `clip_gradients_min`: The minimum clipping value for clipping by value.
 - `clip_gradients_max`: The maximum clipping value for clipping by value.
 - `clip_gradients_max_norm`: The maximum Euclidean norm for clipping by norm and clipping by global norm.
-- `clip_gradients_use_norm`: An optional value for a known Euclidean norm for clipping by global norm. Set to   to specify that the function computes the norm.
+- `clip_gradients_use_norm`: An optional value for a known Euclidean norm for clipping by global norm. Set to `0` to specify that the function computes the norm.
 
 ## See Also
 

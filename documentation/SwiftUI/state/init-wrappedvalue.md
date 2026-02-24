@@ -45,7 +45,7 @@ var body: some View {
 
 ## Parameters
 
-- `value`: An initial value to store in the state   property.
+- `value`: An initial value to store in the state property.
 
 ## See Also
 

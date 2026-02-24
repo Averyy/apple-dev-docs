@@ -21,10 +21,10 @@ func sendProgramChange(_ program: UInt8, bankMSB: UInt8, bankLSB: UInt8, onChann
 
 ## Parameters
 
-- `program`: Specifies the program (preset) number within the bank to load. The valid range is   to  .
-- `bankMSB`: Specifies the most significant byte value for the bank to select. The valid range is   to  .
-- `bankLSB`: Specifies the least significant byte value for the bank to select. The valid range is   to  .
-- `channel`: The channel number to send the event to. The valid range is   to  .
+- `program`: Specifies the program (preset) number within the bank to load. The valid range is `0` to `127`.
+- `bankMSB`: Specifies the most significant byte value for the bank to select. The valid range is `0` to `127`.
+- `bankLSB`: Specifies the least significant byte value for the bank to select. The valid range is `0` to `127`.
+- `channel`: The channel number to send the event to. The valid range is `0` to `15`.
 
 ## See Also
 

@@ -29,6 +29,11 @@ This method applies the light tunnel filter to an image. This effect distorts th
 
 The light tunnel filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`center`**: A set of coordinates marking the center of the light tunnel as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`radius`**: A `float` representing the amount of pixels the filter uses to create the light tunnel as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **rotation**: A `float` representing the rotation angle of the light tunnel as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that generates a swirling pattern from the input image:
 
 ```swift

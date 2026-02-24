@@ -145,6 +145,10 @@ Specify `com.apple.vpn.managed.appmapping` as the payload type.
 - [object AppToAppLayerVPNMapping.AppLayerVPNMappingItem](apptoapplayervpnmapping/applayervpnmappingitem.md)
   A dictionary defining a per-app VPN relationship.
 
+## Properties
+
+- `AppLayerVPNMapping` ([AppToAppLayerVPNMapping.AppLayerVPNMappingItem]) *(required)*: The array of VPN mapping dictionaries.
+
 ## See Also
 
 - [object AppLayerVPN](applayervpn.md)

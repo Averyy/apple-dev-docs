@@ -23,9 +23,9 @@ For Swift code, explicitly built modules improves the debugging experience.
 
 When explicitly building module dependencies, compilation is divided into three distinct stages:
 
-- : The compiler scans the input source files to determine which modules they depend upon. For C and Objective-C sources, this work is performed by a per-file dependency scanning task. When compiling Swift sources, the compiler scans all module sources during its planning task.
-- : When dependency scanning is complete, the results are communicated to the Xcode build system. The build system invokes the Clang and Swift compilers to build modules in dependency order, with unrelated modules built in parallel.
-- : The primary compilation unit is compiled using the module dependencies that were built.
+- **Dependency scanning**: The compiler scans the input source files to determine which modules they depend upon. For C and Objective-C sources, this work is performed by a per-file dependency scanning task. When compiling Swift sources, the compiler scans all module sources during its planning task.
+- **Module compilation**: When dependency scanning is complete, the results are communicated to the Xcode build system. The build system invokes the Clang and Swift compilers to build modules in dependency order, with unrelated modules built in parallel.
+- **Source compilation**: The primary compilation unit is compiled using the module dependencies that were built.
 
 In addition to appearing as distinct steps in the build log, you can also review the tasks in the build timeline:
 

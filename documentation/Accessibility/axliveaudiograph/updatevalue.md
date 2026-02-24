@@ -22,7 +22,7 @@ class func updateValue(_ value: Double)
 
 ## Parameters
 
-- `value`: A normalized value in the range [ ,  ], where   represents the minimum   displayable y-axis value for your data series, and   represents the maximum displayable   y-axis value for your data series.
+- `value`: A normalized value in the range [`0.0`, `1.0`], where `0.0` represents the minimum displayable y-axis value for your data series, and `1.0` represents the maximum displayable y-axis value for your data series.
 
 
 ---

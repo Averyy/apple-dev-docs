@@ -22,7 +22,7 @@ init(wrappedValue: Value)
 
 ## Parameters
 
-- `wrappedValue`: A wrapped value for the gesture state   property.
+- `wrappedValue`: A wrapped value for the gesture state property.
 
 ## See Also
 

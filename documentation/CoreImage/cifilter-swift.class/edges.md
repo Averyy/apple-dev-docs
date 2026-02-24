@@ -29,6 +29,9 @@ This method applies the edges filter to an image. The effect uses the `intensity
 
 The edges filter uses the following property:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in a darker image with the edges of objects highlighted with the colors of the input image:
 
 ```swift

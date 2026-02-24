@@ -25,8 +25,8 @@ Typically, the index tells the delegate to reindex its searchable data and clear
 
 ## Parameters
 
-- `searchableIndex`: The index in which to reindex the searchable data. The delegate or app extension should pass   to  .
-- `acknowledgementHandler`: The delegate or app extension must call the acknowledgement handler after all client state information has been saved, so that the indexer can call this method again in case of a crash.
+- `searchableIndex`: The index in which to reindex the searchable data. The delegate or app extension should pass `searchableIndex` to [`indexSearchableItems(_:completionHandler:)`](cssearchableindex/indexsearchableitems(_:completionhandler:).md).
+- `acknowledgementHandler`: The handler to call after all client state has been saved. Note that if the app passes client state information in a batch (for example, by calling [`endBatch(withClientState:completionHandler:)`](cssearchableindex/endbatch(withclientstate:completionhandler:).md)), the acknowledgement handler can be called immediately. The delegate or app extension must call the acknowledgement handler after all client state information has been saved, so that the indexer can call this method again in case of a crash.
 
 ## See Also
 

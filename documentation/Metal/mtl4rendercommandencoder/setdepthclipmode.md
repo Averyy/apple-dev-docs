@@ -22,7 +22,7 @@ func setDepthClipMode(_ depthClipMode: MTLDepthClipMode)
 
 ## Parameters
 
-- `depthClipMode`:   to set.
+- `depthClipMode`: [`MTLDepthClipMode`](mtldepthclipmode.md) to set.
 
 ## See Also
 

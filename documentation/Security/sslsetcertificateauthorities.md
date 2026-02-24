@@ -25,8 +25,8 @@ Each successive call to this function with the `replaceExisting` parameter set t
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `certificateOrArray`: A value of type  , or a value of type   containing an array of   values, representing one or more certificates to be added to the server’s list of acceptable certification authorities (CAs).
-- `replaceExisting`: A Boolean value specifying whether to replace or append the current set of certification authorities. If this value is  , the specified certificates replace the existing list of acceptable CAs, if any. If  , the specified certificates are appended to the existing list of.
+- `certificateOrArray`: A value of type `SecCertificateRef`, or a value of type `CFArray` containing an array of `SecCertificateRef` values, representing one or more certificates to be added to the server’s list of acceptable certification authorities (CAs).
+- `replaceExisting`: A Boolean value specifying whether to replace or append the current set of certification authorities. If this value is `true`, the specified certificates replace the existing list of acceptable CAs, if any. If `false`, the specified certificates are appended to the existing list of.
 
 ## See Also
 

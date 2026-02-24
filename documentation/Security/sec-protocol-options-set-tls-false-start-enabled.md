@@ -24,7 +24,7 @@ Enable or disable TLS False Start.
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A `sec_protocol_options_t` instance.
 - `false_start_enabled`: Flag to enable or disable TLS False Start.
 
 

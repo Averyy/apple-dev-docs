@@ -27,7 +27,7 @@ The system launches the app, as needed, before calling this method.
 ## Parameters
 
 - `application`: The shared app object.
-- `cloudKitShareMetadata`: Information about the CloudKit data that is now available to the app. Use this object to retrieve information about the   object and the associated records that are now available.
+- `cloudKitShareMetadata`: Information about the CloudKit data that is now available to the app. Use this object to retrieve information about the [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) object and the associated records that are now available.
 
 
 ---

@@ -20,6 +20,11 @@ object AccountConfigurationCommand
 - [object AccountConfigurationCommand.Command](accountconfigurationcommand/command-data.dictionary.md)
   The command to create and configure a local administrator account on a device.
 
+## Properties
+
+- `Command` (AccountConfigurationCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object AccountConfigurationResponse](accountconfigurationresponse.md)

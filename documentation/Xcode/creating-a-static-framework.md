@@ -26,7 +26,7 @@ To add a new framework target:
 
 ![A sheet displays the available templates for a new target. The multiplatform framework template is selected.](https://docs-assets.developer.apple.com/published/143b7c7bd31699fa966b3c1041d09ebc/creating-a-static-framework-1%402x.png)
 
-When you create a new framework target from a template, Xcode adds a target that builds a dynamic framework automatically. It also adds an umbrella header to the target. The header’s name is generated from your framework name, followed by a period (.) and the letter . For example, if you name your framework SampleFramework, Xcode automatically adds a header file with the name `SampleFramework.h` to the target.
+When you create a new framework target from a template, Xcode adds a target that builds a dynamic framework automatically. It also adds an umbrella header to the target. The header’s name is generated from your framework name, followed by a period (.) and the letter *h*. For example, if you name your framework SampleFramework, Xcode automatically adds a header file with the name `SampleFramework.h` to the target.
 
 ##### Convert the New Framework Target From Dynamic to Static
 
@@ -63,6 +63,26 @@ Additionally, add your public headers to your framework umbrella header.
 ##### Build Analyze and Test Your Framework
 
 Build, analyze, and test your static framework for each platform that it supports. The example below shows the bundle structure of `SampleFramework` after building it for iOS:
+
+**Image**:
+
+![A screenshot that shows the bundle structure of a static framework.](https://docs-assets.developer.apple.com/published/a7e347ff002f2a6a7a2c14348b811cd6/creating-a-static-framework-5%402x.png)
+
+**Bundle structure**:
+
+```shell
+SampleFramework.framework/
+    _CodeSignature/
+        ...
+    Headers/
+        ...
+    Modules/
+        ...
+    Info.plist 
+    SampleFramework
+    PrivacyInfo.xcprivacy
+    ...
+```
 
 To test your static framework, create a release build of your framework, then embed it in an app that utilizes it. For more information about creating a release build of your static framework, see [`Testing a release build`](testing-a-release-build.md). Build and run the test app.
 

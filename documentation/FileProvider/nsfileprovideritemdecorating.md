@@ -48,7 +48,16 @@ You define decorations in the File Provider extension’s `Info.plist` file by a
 
 Use the following keys to define the decorations:
 
+- **`Identifier`**: The decoration’s identifier.
+- **`BadgeImageType`**: A UTI for the item’s badge. To define the badge, create a new UTI that conforms to `com.apple.icon-decoration.badge` and set its icon.
+- **`Label`**: A localizable title for the item. For example, the system displays a title in detail views and VoiceOver.
+- **`Category`**: A string that defines the location of the badge image.
+
 The `Category` value must be one of the following:
+
+- **`Badge`**: The system displays the badge image on top of the item’s icon. It only displays the first `Badge` image.
+- **`Sharing`**: The system displays the badge image below the icon. It only displays the first `Sharing` image.
+- **`FolderBadge`**: Only available on folder items. The system embosses the image over the folder icon. It only displays the first `FolderBadge` image.
 
 ## Topics
 

@@ -43,7 +43,7 @@ The [`setViewport(_:)`](mtlrendercommandencoder/setviewport(_:).md) method is eq
 
 ## Parameters
 
-- `viewports`: An array of   instances the command applies to the render pipeline for transformations and clipping.
+- `viewports`: An array of [`MTLViewport`](mtlviewport.md) instances the command applies to the render pipeline for transformations and clipping.
 
 ## See Also
 

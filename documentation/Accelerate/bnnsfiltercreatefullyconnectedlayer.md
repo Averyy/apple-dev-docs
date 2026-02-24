@@ -26,10 +26,10 @@ A BNNSFilter object representing a fully connected filter configured with the sp
 
 ## Parameters
 
-- `in_desc`: Pointer to a   struct describing the input
-- `out_desc`: Pointer to a   struct describing the output
-- `layer_params`: Pointer to a   struct describing the layer parameters
-- `filter_params`: Pointer to a   struct describing the filter parameters
+- `in_desc`: Pointer to a `BNNSVectorDescriptor` struct describing the input
+- `out_desc`: Pointer to a `BNNSVectorDescriptor` struct describing the output
+- `layer_params`: Pointer to a `BNNSFullyConnectedLayerParameters` struct describing the layer parameters
+- `filter_params`: Pointer to a `BNNSFilterParameters` struct describing the filter parameters
 
 ## See Also
 

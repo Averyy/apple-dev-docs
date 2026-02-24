@@ -22,7 +22,8 @@ The value for the temporary attribute named `attrName` of the character at index
 
 - `attrName`: The name of a temporary attribute.
 - `location`: The index for which to return attributes. This value must not exceed the bounds of the receiver.
-- `range`: The range isn’t necessarily the maximum range covered by  , and its extent is implementation-dependent. If you need the maximum range, use  . If you don’t need this value, pass  .
+- `range`: If non-`NULL`: - If the named attribute exists at `location`, on output, contains the range over which the named attribute’s value applies.
+- If the named attribute does not exist at `location`, on output, contains the range over which the attribute does not exist. The range isn’t necessarily the maximum range covered by `attrName`, and its extent is implementation-dependent. If you need the maximum range, use [`temporaryAttribute(_:atCharacterIndex:longestEffectiveRange:in:)`](nslayoutmanager/temporaryattribute(_:atcharacterindex:longesteffectiverange:in:).md). If you don’t need this value, pass `NULL`.
 
 ## See Also
 

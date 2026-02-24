@@ -19,6 +19,11 @@ object RevokeAssetsRequest
 
 - [Managing Assets](managing-assets.md)
 
+## Properties
+
+- `clientUserIds` ([string]): The set of identifiers for users in your organization.
+- `serialNumbers` ([string]): The set of identifiers for devices in your organization.
+
 ## See Also
 
 - [object EventResponse](eventresponse.md)

@@ -9,6 +9,10 @@ The user interfaces to show while an app launches in response to different URL s
 - iOS 14.0+
 - iPadOS 14.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 You use this key if your app supports launching in response to one or more URL schemes, and if you want to provide different launch screens for different launch triggers. If you need only one launch screen, use [`UILaunchScreen`](information-property-list/uilaunchscreen.md) instead.

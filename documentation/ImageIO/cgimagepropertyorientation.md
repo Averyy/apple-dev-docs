@@ -33,6 +33,72 @@ For example, the pixel data for an image captured by an iOS device camera is enc
 
 The [`CGImagePropertyOrientation`](cgimagepropertyorientation.md) type covers the same set of orientation names available in from the [`UIImage.Orientation`](https://developer.apple.com/documentation/UIKit/UIImage/Orientation) type, but the underlying numeric values of each type do not match. (For example, the “left mirrored” orientation has an underlying value of 5 in [`CGImagePropertyOrientation`](cgimagepropertyorientation.md), but an underlying value of 7 in [`UIImage.Orientation`](https://developer.apple.com/documentation/UIKit/UIImage/Orientation).) If you have an orientation value in one type and need a semantically equivalent value in the other, use a function such as those below to produce the same-named value in the other type:
 
+**Swift**:
+
+```swift
+extension CGImagePropertyOrientation {
+    init(_ uiOrientation: UIImage.Orientation) {
+        switch uiOrientation {
+            case .up: self = .up
+            case .upMirrored: self = .upMirrored
+            case .down: self = .down
+            case .downMirrored: self = .downMirrored
+            case .left: self = .left
+            case .leftMirrored: self = .leftMirrored
+            case .right: self = .right
+            case .rightMirrored: self = .rightMirrored
+        @unknown default:
+            fatalError()
+        }
+    }
+}
+extension UIImage.Orientation {
+    init(_ cgOrientation: CGImagePropertyOrientation) {
+        switch cgOrientation {
+            case .up: self = .up
+            case .upMirrored: self = .upMirrored
+            case .down: self = .down
+            case .downMirrored: self = .downMirrored
+            case .left: self = .left
+            case .leftMirrored: self = .leftMirrored
+            case .right: self = .right
+            case .rightMirrored: self = .rightMirrored
+        @unknown default:
+            fatalError()
+        }
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+CGImagePropertyOrientation CGImagePropertyOrientationForUIImageOrientation(UIImageOrientation uiOrientation) {
+    switch (uiOrientation) {
+        case UIImageOrientationUp: return kCGImagePropertyOrientationUp;
+        case UIImageOrientationDown: return kCGImagePropertyOrientationDown;
+        case UIImageOrientationLeft: return kCGImagePropertyOrientationLeft;
+        case UIImageOrientationRight: return kCGImagePropertyOrientationRight;
+        case UIImageOrientationUpMirrored: return kCGImagePropertyOrientationUpMirrored;
+        case UIImageOrientationDownMirrored: return kCGImagePropertyOrientationDownMirrored;
+        case UIImageOrientationLeftMirrored: return kCGImagePropertyOrientationLeftMirrored;
+        case UIImageOrientationRightMirrored: return kCGImagePropertyOrientationRightMirrored;
+    }
+}
+UIImageOrientation UIImageOrientationForCGImagePropertyOrientation(CGImagePropertyOrientation cgOrientation) {
+    switch (cgOrientation) {
+        case kCGImagePropertyOrientationUp: return UIImageOrientationUp;
+        case kCGImagePropertyOrientationDown: return UIImageOrientationDown;
+        case kCGImagePropertyOrientationLeft: return UIImageOrientationLeft;
+        case kCGImagePropertyOrientationRight: return UIImageOrientationRight;
+        case kCGImagePropertyOrientationUpMirrored: return UIImageOrientationUpMirrored;
+        case kCGImagePropertyOrientationDownMirrored: return UIImageOrientationDownMirrored;
+        case kCGImagePropertyOrientationLeftMirrored: return UIImageOrientationLeftMirrored;
+        case kCGImagePropertyOrientationRightMirrored: return UIImageOrientationRightMirrored;
+    }
+}
+```
+
 ##### Working with Raw Tiffexif Numeric Values
 
 Some APIs describe image orientation with basic integer values, intended for interpretation according to the TIFF and Exif specifications. The [`CGImagePropertyOrientation`](cgimagepropertyorientation.md) type simply defines symbolic names for those values, so you can convert to and from the raw numeric type with C type-cast syntax or the inherited [`init(rawValue:)`](https://developer.apple.com/documentation/Swift/RawRepresentable/init(rawValue:)) initializer and [`rawValue`](https://developer.apple.com/documentation/Swift/RawRepresentable/rawValue-swift.property) property in Swift.

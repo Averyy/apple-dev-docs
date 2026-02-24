@@ -23,8 +23,8 @@ Note that a single rectangle may occupy multiple displays, either by overlapping
 
 ## Parameters
 
-- `count`: The number of rectangles in the   parameter.
-- `rectArray`: A list of the rectangles in the refreshed areas, specified in the global display coordinate space. The origin is the upper-left corner of the main display. You should not modify or deallocate memory pointed to by  .
+- `count`: The number of rectangles in the `rectArray` parameter.
+- `rectArray`: A list of the rectangles in the refreshed areas, specified in the global display coordinate space. The origin is the upper-left corner of the main display. You should not modify or deallocate memory pointed to by `rectArray`.
 - `userParameter`: The user data you specify when you register this callback.
 
 ## See Also

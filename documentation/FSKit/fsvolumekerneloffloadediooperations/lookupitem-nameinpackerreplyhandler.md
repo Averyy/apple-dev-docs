@@ -24,7 +24,7 @@ This method allows the module to opportunistically supply extents, avoiding futu
 - `name`: The name of the file to look up.
 - `directory`: The directory in which to look up the file.
 - `packer`: An extent packer you use to pack the file’s allocated disk space.
-- `reply`: A block or closure to indicate success or failure. If lookup succeeds, pass the found   and its  , along with a   error. If lookup fails, pass the relevant error as the third parameter; FSKit ignores any   or   in this case. For an   Swift implementation, there’s no reply handler; instead, return a tuple of the   and its   or throw an error.
+- `reply`: A block or closure to indicate success or failure. If lookup succeeds, pass the found [`FSItem`](fsitem.md) and its [`FSFileName`](fsfilename.md), along with a `nil` error. If lookup fails, pass the relevant error as the third parameter; FSKit ignores any [`FSItem`](fsitem.md) or [`FSFileName`](fsfilename.md) in this case. For an `async` Swift implementation, there’s no reply handler; instead, return a tuple of the [`FSItem`](fsitem.md) and its [`FSFileName`](fsfilename.md) or throw an error.
 
 ## See Also
 

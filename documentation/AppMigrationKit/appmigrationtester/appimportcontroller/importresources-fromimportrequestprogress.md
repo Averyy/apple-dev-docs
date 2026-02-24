@@ -22,8 +22,8 @@ Clean your app state before starting an import test, since the app extension run
 ## Parameters
 
 - `extractedResourceURL`: A file URL pointing to a directory that contains the resources to import.
-- `importRequest`: An optional migration request instance to pass to the app extension’s import method. If this value is  , the framework uses a default request. This value defaults to  .
-- `progress`: An optional   object the extension uses to report its progress back to the unit test. This value defaults to  .
+- `importRequest`: An optional migration request instance to pass to the app extension’s import method. If this value is `nil`, the framework uses a default request. This value defaults to `nil`.
+- `progress`: An optional [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) object the extension uses to report its progress back to the unit test. This value defaults to `nil`.
 
 
 ---

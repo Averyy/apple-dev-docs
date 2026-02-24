@@ -28,8 +28,8 @@ The default behavior of [`UIScrollView`](uiscrollview.md) is to invoke the [`UIR
 
 ## Parameters
 
-- `touches`: A set of   instances that represent the touches for the starting phase of the event represented by  .
-- `event`: An object representing the event to which the touch objects in   belong.
+- `touches`: A set of [`UITouch`](uitouch.md) instances that represent the touches for the starting phase of the event represented by `event`.
+- `event`: An object representing the event to which the touch objects in `touches` belong.
 - `view`: The subview in the content where the touch-down gesture occurred.
 
 ## See Also

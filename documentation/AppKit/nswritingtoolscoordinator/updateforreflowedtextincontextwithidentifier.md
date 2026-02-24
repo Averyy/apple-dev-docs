@@ -26,7 +26,7 @@ If a text change affects the text inside a context object, call the [`updateRang
 
 ## Parameters
 
-- `contextID`: The unique identifier of the context object affected   by the change. Pass the identifier for the context object that comes   after the changes.
+- `contextID`: The unique identifier of the context object affected by the change. Pass the identifier for the context object that comes after the changes.
 
 ## See Also
 

@@ -21,8 +21,8 @@ Do not free the array. It is managed automatically by the update and disposed of
 
 ## Parameters
 
-- `rectType`: The rectangles you are interested in. See  .
-- `rectCount`: A pointer to a  . This value must not be  . On return, this location is updated to contain the  number of rectangles in the returned array.
+- `rectType`: The rectangles you are interested in. See [`CGDisplayStreamUpdateRectType`](cgdisplaystreamupdaterecttype.md).
+- `rectCount`: A pointer to a `size_t`. This value must not be `NULL`. On return, this location is updated to contain the  number of rectangles in the returned array.
 
 ## See Also
 

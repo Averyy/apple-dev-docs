@@ -34,7 +34,8 @@ When the GPU device reaches the signal command that this method encodes, Metal u
 
 ## Parameters
 
-- `event`: Otherwise, the method can signal only command buffers from the same GPU device.
+- `event`: An [`MTLEvent`](mtlevent.md) instance the GPU driver signals between passes as it runs the command buffer. If `event` is an [`MTLSharedEvent`](mtlsharedevent.md) instance, the update: - Signals any command buffers waiting for the shared event, including those on other GPU devices
+- Invokes any notification handlers waiting for the shared event (see [`notify(_:atValue:block:)`](mtlsharedevent/notify(_:atvalue:block:).md)) Otherwise, the method can signal only command buffers from the same GPU device.
 - `value`: A value that’s greater than or equal to the event’s current value; otherwise, the command has no effect.
 
 ## See Also

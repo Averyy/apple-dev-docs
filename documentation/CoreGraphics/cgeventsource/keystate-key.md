@@ -21,7 +21,7 @@ If `true`, the key is down. If `false`, the key is up.
 
 ## Parameters
 
-- `stateID`: The source state to access. Pass one of the constants listed in  .
+- `stateID`: The source state to access. Pass one of the constants listed in [`CGEventSourceStateID`](cgeventsourcestateid.md).
 - `key`: The virtual key code to test.
 
 ## See Also

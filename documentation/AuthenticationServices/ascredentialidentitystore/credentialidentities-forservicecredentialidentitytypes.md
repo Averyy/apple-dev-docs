@@ -24,8 +24,8 @@ An array of previously saved credential identities that match the identifier and
 
 ## Parameters
 
-- `serviceIdentifier`: An   that limits results to only that service. Pass   to get credential identities for all services. Defaults to  .
-- `credentialIdentityTypes`: An array of   that limits results to only those types. Pass   to get credential identities for all types. Defaults to  .
+- `serviceIdentifier`: An [`ASCredentialServiceIdentifier`](ascredentialserviceidentifier.md) that limits results to only that service. Pass `nil` to get credential identities for all services. Defaults to `nil`.
+- `credentialIdentityTypes`: An array of [`ASCredentialIdentityStore.IdentityTypes`](ascredentialidentitystore/identitytypes.md) that limits results to only those types. Pass `[]` to get credential identities for all types. Defaults to `[]`.
 
 ## See Also
 

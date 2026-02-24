@@ -26,7 +26,7 @@ This method is called in a variety of situations. For example, it is called shor
 
 ## Parameters
 
-- `deposited`: If  , the drop terminated successfully; if   the drop failed.
+- `deposited`: If [`true`](https://developer.apple.com/documentation/Swift/true), the drop terminated successfully; if [`false`](https://developer.apple.com/documentation/Swift/false) the drop failed.
 
 ## See Also
 

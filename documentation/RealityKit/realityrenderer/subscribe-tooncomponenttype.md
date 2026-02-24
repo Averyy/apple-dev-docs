@@ -25,10 +25,10 @@ An object that represents the subscription to this event stream.
 
 ## Parameters
 
-- `event`: The event type to subscribe to.   For example   or  .
-- `sourceObject`: An optional source for the event, such as an entity or a scene.   Set to   to listen for all events of the event type within the  .
-- `componentType`: An optional component type to filter events to if the event is of the type  .   Set to   to listen for all events of the event type within the  .
-- `handler`: A closure that runs when the   occurs.
+- `event`: The event type to subscribe to. For example [`SceneEvents.Update`](sceneevents/update.md) or [`ComponentEvents.DidAdd`](componentevents/didadd.md).
+- `sourceObject`: An optional source for the event, such as an entity or a scene. Set to `nil` to listen for all events of the event type within the [`RealityRenderer`](realityrenderer.md).
+- `componentType`: An optional component type to filter events to if the event is of the type [`ComponentEvents`](componentevents.md). Set to `nil` to listen for all events of the event type within the [`RealityRenderer`](realityrenderer.md).
+- `handler`: A closure that runs when the `event` occurs.
 
 
 ---

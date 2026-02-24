@@ -26,7 +26,7 @@ An [`NSUserActivity`](nsuseractivity.md) object.
 
 ## Parameters
 
-- `activityType`: The type of the activity. The value is a developer-defined string in reverse-DNS format by convention, for example,  .
+- `activityType`: The type of the activity. The value is a developer-defined string in reverse-DNS format by convention, for example, `com.myCompany.myEditor.editing`.
 
 ## See Also
 

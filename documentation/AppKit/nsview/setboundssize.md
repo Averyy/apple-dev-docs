@@ -24,7 +24,7 @@ After calling this method, `NSView` creates an internal transform (or appends th
 
 ## Parameters
 
-- `newSize`: An   structure specifying the new width and height of the view’s bounds rectangle.
+- `newSize`: An `NSSize` structure specifying the new width and height of the view’s bounds rectangle.
 
 ## See Also
 

@@ -10,6 +10,18 @@ Use plug-ins to extend macOS authorization services to perform authorizations in
 
 You must import this API explicitly:
 
+**Swift**:
+
+```swift
+import Security.AuthorizationPlugin
+```
+
+**Objective-C**:
+
+```objc
+#import <Security/AuthorizationPlugin.h>       
+```
+
 > **Note**:  When your plug-in needs to interact with the user, subclass the [`SFAuthorizationPluginView`](https://developer.apple.com/documentation/SecurityInterface/SFAuthorizationPluginView) class to maintain the look and feel of the system authentication dialogs.
 
 ## Topics

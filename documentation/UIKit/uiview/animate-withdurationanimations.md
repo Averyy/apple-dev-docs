@@ -26,8 +26,8 @@ During an animation, user interactions are temporarily disabled for the views be
 
 ## Parameters
 
-- `duration`: The total duration of the animations, measured in seconds. If you specify a negative value or  , the changes are made without animating them.
-- `animations`: A block object containing the changes to commit to the views. This is where you programmatically change any animatable properties of the views in your view hierarchy. This block takes no parameters and has no return value. This parameter must not be  .
+- `duration`: The total duration of the animations, measured in seconds. If you specify a negative value or `0`, the changes are made without animating them.
+- `animations`: A block object containing the changes to commit to the views. This is where you programmatically change any animatable properties of the views in your view hierarchy. This block takes no parameters and has no return value. This parameter must not be `NULL`.
 
 ## See Also
 

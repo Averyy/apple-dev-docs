@@ -30,7 +30,7 @@ The first descriptor specifies the primary key path to be used in sorting the re
 
 ## Parameters
 
-- `sortDescriptors`: An array of   objects.
+- `sortDescriptors`: An array of `NSSortDescriptor` objects.
 
 ## See Also
 

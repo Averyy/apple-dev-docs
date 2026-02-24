@@ -8,6 +8,12 @@ A Boolean value that indicates whether the app captures USB devices and uses the
 **Availability**:
 - macOS 10.10+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 The entitlement is required to use the [`IOUSBHost`](https://developer.apple.com/documentation/IOUSBHost) APIs for USB device capture.

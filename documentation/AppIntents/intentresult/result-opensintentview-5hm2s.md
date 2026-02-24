@@ -22,7 +22,7 @@ static func result<Content>(opensIntent: some AppIntent, view: Content = EmptyVi
 
 ## Parameters
 
-- `opensIntent`: An   to shows the result of current intent
+- `opensIntent`: An `AppIntent` to shows the result of current intent
 - `view`: A custom View to display the result
 
 

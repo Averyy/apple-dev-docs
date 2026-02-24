@@ -26,8 +26,8 @@ An image source. You’re responsible for releasing this type using [`CFRelease`
 
 ## Parameters
 
-- `data`: The data object from which to read. For more information on data objects, see   and  .
-- `options`: A dictionary that specifies additional creation options. For a list of possible values, see  .
+- `data`: The data object from which to read. For more information on data objects, see [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) and [`Data Objects`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBinaryData/DataObjects.html#//apple_ref/doc/uid/20000171).
+- `options`: A dictionary that specifies additional creation options. For a list of possible values, see [`Specifying the Read Options`](cgimagesource#Specifying-the-Read-Options.md).
 
 ## See Also
 

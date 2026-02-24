@@ -21,8 +21,8 @@ The delegate typically implements this method to perform some animation effect f
 
 ## Parameters
 
-- `animation`: A running   object that has reached a progress mark.
-- `progress`: A   value (typed as  ) that indicates a progress mark of  .
+- `animation`: A running `NSAnimation` object that has reached a progress mark.
+- `progress`: A `float` value (typed as `NSAnimationProgress`) that indicates a progress mark of `animation`.
 
 
 ---

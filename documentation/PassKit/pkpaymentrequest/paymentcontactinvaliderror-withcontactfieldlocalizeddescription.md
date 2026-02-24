@@ -27,7 +27,7 @@ The error you provide and its optional message appear on the Apple Pay sheet. Th
 
 ## Parameters
 
-- `field`: A value from   that indicates which part of the contact information has an error.
+- `field`: A value from [`PKContactField`](pkcontactfield.md) that indicates which part of the contact information has an error.
 - `localizedDescription`: Optional. Provide a localized, user-facing error message string to help the user resolve the error.
 
 ## See Also

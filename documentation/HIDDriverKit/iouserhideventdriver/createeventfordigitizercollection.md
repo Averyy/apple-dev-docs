@@ -25,7 +25,7 @@ This method creates an `IOHIDEvent` object with any updated digitizer values tha
 
 ## Parameters
 
-- `collection`: A collection of   objects, each of which contains digitizer information to include in the event object.
+- `collection`: A collection of [`IOHIDElement`](iohidelement.md) objects, each of which contains digitizer information to include in the event object.
 - `timestamp`: The timestamp of the input report.
 - `reportID`: The report ID.
 

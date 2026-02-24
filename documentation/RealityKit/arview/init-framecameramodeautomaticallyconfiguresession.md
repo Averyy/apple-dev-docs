@@ -20,8 +20,8 @@ Creates an AR view with the specified dimensions, camera mode, and session confi
 ## Parameters
 
 - `frameRect`: The frame rectangle for the view, measured in points.
-- `cameraMode`: An indication of whether to use the device’s camera or   a virtual one.
-- `automaticallyConfigureSession`: An indication of whether to use an   AR session with configuration that’s updated automatically based on   camera mode and scene anchors. Set this value to   if you want   to run the session manually with your own configuration.
+- `cameraMode`: An indication of whether to use the device’s camera or a virtual one.
+- `automaticallyConfigureSession`: An indication of whether to use an AR session with configuration that’s updated automatically based on camera mode and scene anchors. Set this value to `false` if you want to run the session manually with your own configuration.
 
 ## See Also
 

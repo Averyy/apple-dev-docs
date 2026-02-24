@@ -20,9 +20,9 @@ func exceptionHandler(_ sender: NSExceptionHandler!, shouldLogException exceptio
 
 ## Parameters
 
-- `sender`: The   object sending the message.
-- `exception`: An   object describing the exception to be evaluated.
-- `aMask`: The bit mask indicating the types of exceptions logged by the   object. See Logging and Handling Constants and System Hang Constants for descriptions of the possible   constants.
+- `sender`: The [`NSExceptionHandler`](https://developer.apple.com/documentation/ExceptionHandling/NSExceptionHandler) object sending the message.
+- `exception`: An [`NSException`](https://developer.apple.com/documentation/Foundation/NSException) object describing the exception to be evaluated.
+- `aMask`: The bit mask indicating the types of exceptions logged by the [`NSExceptionHandler`](https://developer.apple.com/documentation/ExceptionHandling/NSExceptionHandler) object. See Logging and Handling Constants and System Hang Constants for descriptions of the possible `enum` constants.
 
 
 ---

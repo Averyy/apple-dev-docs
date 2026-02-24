@@ -13,6 +13,10 @@ A message that tells people why the app is requesting access to read and write t
 - visionOS 1.0+
 - watchOS 10.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 If your app needs to create calendar events but doesn’t need to read them, use [`NSCalendarsWriteOnlyAccessUsageDescription`](information-property-list/nscalendarswriteonlyaccessusagedescription.md). If your app runs on iOS 17 or later and presents an [`EKEventEditViewController`](https://developer.apple.com/documentation/EventKitUI/EKEventEditViewController) to allow people to create calendar events, you don’t need to request calendar access.

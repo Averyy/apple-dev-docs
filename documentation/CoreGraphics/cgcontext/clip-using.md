@@ -32,7 +32,7 @@ Unlike the current path, the current clipping path is part of the graphics state
 
 ## Parameters
 
-- `rule`: This parameter defaults to the   rule if unspecified.
+- `rule`: The rule for determining which areas to treat as the interior of the path. See [`CGPathFillRule`](cgpathfillrule.md). This parameter defaults to the [`CGPathFillRule.winding`](cgpathfillrule/winding.md) rule if unspecified.
 
 ## See Also
 

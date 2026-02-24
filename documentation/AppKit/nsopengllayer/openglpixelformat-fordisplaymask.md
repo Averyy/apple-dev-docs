@@ -24,7 +24,7 @@ You must include an NSOpenGLPFAScreenMask specification in the pixel format attr
 
 ## Parameters
 
-- `mask`: A mask specifying the displays the returned   must be suitable for.
+- `mask`: A mask specifying the displays the returned [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) must be suitable for.
 
 ## See Also
 

@@ -31,8 +31,8 @@ This method is the designated initializer for the [`CBCentralManager`](cbcentral
 ## Parameters
 
 - `delegate`: The delegate that receives the central events.
-- `queue`: The dispatch queue used to dispatch the central role events. If the value is  , the central manager dispatches central role events using the main queue.
-- `options`: An optional dictionary that contains initialization options for a central manager. For available options, see  .
+- `queue`: The dispatch queue used to dispatch the central role events. If the value is `nil`, the central manager dispatches central role events using the main queue.
+- `options`: An optional dictionary that contains initialization options for a central manager. For available options, see [`Central Manager Initialization Options`](central-manager-initialization-options.md).
 
 ## See Also
 

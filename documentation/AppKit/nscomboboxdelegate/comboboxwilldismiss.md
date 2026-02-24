@@ -17,7 +17,7 @@ optional func comboBoxWillDismiss(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named [`willDismissNotification`](nscombobox/willdismissnotification.md).
 
 ## See Also
 

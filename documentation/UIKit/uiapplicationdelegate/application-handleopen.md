@@ -33,7 +33,7 @@ There is no equivalent notification for this delegation method.
 ## Parameters
 
 - `application`: Your singleton app object.
-- `url`: An object representing a URL (Universal Resource Locator). See the appendix of   for Apple-registered schemes for URLs.
+- `url`: An object representing a URL (Universal Resource Locator). See the appendix of [`App Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007072) for Apple-registered schemes for URLs.
 
 ## See Also
 

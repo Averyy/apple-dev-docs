@@ -23,7 +23,7 @@ mutating func merge(_ other: AttributeContainer, mergePolicy: AttributedString.A
 ## Parameters
 
 - `other`: The attribute container with the attributes to merge.
-- `mergePolicy`: A policy to use when resolving conflicts between this string’s attributes and those in  .
+- `mergePolicy`: A policy to use when resolving conflicts between this string’s attributes and those in `other`.
 
 ## See Also
 

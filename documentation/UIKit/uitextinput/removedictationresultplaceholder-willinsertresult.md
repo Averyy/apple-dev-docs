@@ -27,7 +27,7 @@ If the value in the `willInsertResult` parameter is [`false`](https://developer.
 ## Parameters
 
 - `placeholder`: The placeholder object that is no longer needed.
-- `willInsertResult`: The value of this parameter is   if the dictation value was generated successfully or   if an error occurred.
+- `willInsertResult`: The value of this parameter is [`true`](https://developer.apple.com/documentation/Swift/true) if the dictation value was generated successfully or [`false`](https://developer.apple.com/documentation/Swift/false) if an error occurred.
 
 ## See Also
 

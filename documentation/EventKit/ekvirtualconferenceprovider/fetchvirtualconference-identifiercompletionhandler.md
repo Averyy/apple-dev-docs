@@ -76,7 +76,7 @@ If your provider is unable to provide the virtual conference details, call the c
 ## Parameters
 
 - `identifier`: The identifier for the room that the user chose for the virtual conference.
-- `completionHandler`: A completion handler that you call after you determine the available rooms. If you provide a virtual conference descriptor, pass   for the error parameter. Conversely, if you provide an error object, pass   for the virtual conference descriptor.
+- `completionHandler`: A completion handler that you call after you determine the available rooms. If you provide a virtual conference descriptor, pass `nil` for the error parameter. Conversely, if you provide an error object, pass `nil` for the virtual conference descriptor.
 
 
 ---

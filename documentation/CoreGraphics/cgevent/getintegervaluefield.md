@@ -21,7 +21,7 @@ A 64-bit integer representation of the current value of the specified field.
 
 ## Parameters
 
-- `field`: A field in the specified event. Pass one of the constants listed in  .
+- `field`: A field in the specified event. Pass one of the constants listed in [`CGEventField`](cgeventfield.md).
 
 ## See Also
 

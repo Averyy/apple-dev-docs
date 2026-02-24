@@ -31,8 +31,8 @@ An `NSData` object containing `plist` in the format specified by `format`.
 ## Parameters
 
 - `plist`: A property list object.
-- `format`: A property list format. For possible values, see  .
-- `opt`: The   parameter is currently unused. No options should be specified.
+- `format`: A property list format. For possible values, see [`PropertyListSerialization.PropertyListFormat`](propertylistserialization/propertylistformat.md).
+- `opt`: The `opt` parameter is currently unused. No options should be specified.
 
 ## See Also
 

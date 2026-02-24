@@ -30,8 +30,8 @@ AudioChannelLayouts are optional; this API returns `NULL` if one doesn’t exist
 
 ## Parameters
 
-- `desc`:   being interrogated.
-- `sizeOut`: Pointer to variable that will be written with the size of the layout. Can be  .
+- `desc`: `CMFormatDescription` being interrogated.
+- `sizeOut`: Pointer to variable that will be written with the size of the layout. Can be `NULL`.
 
 ## See Also
 

@@ -9,6 +9,10 @@ A Boolean value indicating whether user interactions in a custom notification ar
 - iOS 12.0+
 - iPadOS 12.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [IDMessageFilterExtensionNetworkURL](information-property-list/nsextension/nsextensionattributes/idmessagefilterextensionnetworkurl.md)

@@ -24,8 +24,8 @@ A configured checkmark cell accessory. This accessory is a checkmark with the de
 
 ## Parameters
 
-- `displayed`: The cell-editing states that the checkmark appears in. This parameter has a default value of  .
-- `options`: Configuration options for the checkmark. See   for possible configuration options.
+- `displayed`: The cell-editing states that the checkmark appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.always`](uicellaccessory-swift.struct/displayedstate/always.md).
+- `options`: Configuration options for the checkmark. See [`UICellAccessory.CheckmarkOptions`](uicellaccessory-swift.struct/checkmarkoptions.md) for possible configuration options.
 
 ## See Also
 

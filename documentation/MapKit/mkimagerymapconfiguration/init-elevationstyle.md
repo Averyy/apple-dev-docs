@@ -21,7 +21,7 @@ convenience init(elevationStyle: MKMapConfiguration.ElevationStyle)
 
 ## Parameters
 
-- `elevationStyle`: One of the   elevation styles.
+- `elevationStyle`: One of the [`MKMapConfiguration.ElevationStyle`](mkmapconfiguration/elevationstyle-swift.enum.md) elevation styles.
 
 ## See Also
 

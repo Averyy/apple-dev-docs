@@ -23,7 +23,7 @@ init(cgColor: CGColor, intensity: Float = 26963.76, attenuationRadius: Float = 1
 
 - `cgColor`: The color of the light.
 - `intensity`: The light’s brightness.
-- `attenuationRadius`: The distance from the light source where its intensity reaches zero.   Any objects at or beyond this distance do not receive illumination.
+- `attenuationRadius`: The distance from the light source where its intensity reaches zero. Any objects at or beyond this distance do not receive illumination.
 
 
 ---

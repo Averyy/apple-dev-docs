@@ -26,10 +26,10 @@ The number of bytes written to the stream, or `0` if an error occurs.
 
 ## Parameters
 
-- `obj`: The object to write to  .
-- `stream`: The stream should be open and configured.
-- `opt`: See   for possible values.
-- `error`: If an error occurs, upon return contains an   object with code   that describes the problem.
+- `obj`: The object to write to `stream`.
+- `stream`: The stream to which to write. The stream should be open and configured.
+- `opt`: Options for writing the JSON data. See [`JSONSerialization.WritingOptions`](jsonserialization/writingoptions.md) for possible values.
+- `error`: If an error occurs, upon return contains an `NSError` object with code [`NSPropertyListWriteInvalidError`](nspropertylistwriteinvaliderror-swift.var.md) that describes the problem.
 
 ## See Also
 

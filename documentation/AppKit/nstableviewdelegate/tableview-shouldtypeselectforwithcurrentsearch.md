@@ -27,7 +27,7 @@ Typically, this is called from the [`NSTableView`](nstableview.md) `keyDown:` im
 
 - `tableView`: The table view that sent the message.
 - `event`: The event.
-- `searchString`: The search string or   if no type select has began.
+- `searchString`: The search string or `nil` if no type select has began.
 
 ## See Also
 

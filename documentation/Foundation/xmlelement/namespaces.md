@@ -17,7 +17,7 @@ var namespaces: [XMLNode]? { get set }
 
 ## Parameters
 
-- `namespaces`: An array of   objects of kind  .  If there are namespace nodes with the same prefix, the first attribute with that prefix is used. Send this message with   as   to remove all namespace nodes.
+- `namespaces`: An array of [`XMLNode`](xmlnode.md) objects of kind [`XMLNode.Kind.namespace`](xmlnode/kind-swift.enum/namespace.md).  If there are namespace nodes with the same prefix, the first attribute with that prefix is used. Send this message with `namespaces` as `nil` to remove all namespace nodes.
 
 ## See Also
 

@@ -28,7 +28,7 @@ During the animation of an image, the system calls this block for each successiv
 
 - `index`: The index of the image in the file.
 - `image`: The image to display.
-- `stop`: A Boolean flag set to   on input. To stop the animation, set the value of this parameter to  .
+- `stop`: A Boolean flag set to `false` on input. To stop the animation, set the value of this parameter to `true`.
 
 ## See Also
 

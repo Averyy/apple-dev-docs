@@ -70,6 +70,14 @@ Specify `com.apple.airplay.security` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `AccessType` (string) *(required)*: The access policy for AirPlay. `ANY` allows connections from both Ethernet, Wi-Fi, and Apple Wireless Direct Link. `WIFI_ONLY` allows connections only from devices on the same Ethernet or Wi-Fi network as Apple TV.
+- `Password` (string): The AirPlay password; required if `SecurityType` is `PASSWORD`.
+- `SecurityType` (string) *(required)*: The security policy for AirPlay. Allowed values: - **`PASSCODE_ONCE`**: Requires an onscreen passcode on first connection from a device. Subsequent connections from the same device aren’t prompted.
+- **`PASSCODE_ALWAYS`**: Requires an onscreen passcode for every AirPlay connection. After an AirPlay connection ends, the system allows reconnecting within 30 seconds without a password.
+- **`PASSWORD`**: Requires the passphrase set for `Password`. > **Note**:  `NONE` was deprecated in tvOS 11.3. Existing profiles that use `NONE` get the `PASSWORD_ONCE` behavior.
+
 ## See Also
 
 - [object AirPlay](airplay.md)

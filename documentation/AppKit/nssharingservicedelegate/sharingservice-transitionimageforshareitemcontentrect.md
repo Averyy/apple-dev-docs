@@ -38,7 +38,7 @@ A sample implementation of this method:
 
 - `sharingService`: The sharing service.
 - `item`: The shared item.
-- `contentRect`: The content rectangle is the frame of the actual content inside the transition image, excluding all decorations. For example, if the transition image is a QuickLook thumbnail, the value would be  .
+- `contentRect`: The content rectangle is the frame of the actual content inside the transition image, excluding all decorations. For example, if the transition image is a QuickLook thumbnail, the value would be `QLThumbnailGetContentRect`.
 
 ## See Also
 

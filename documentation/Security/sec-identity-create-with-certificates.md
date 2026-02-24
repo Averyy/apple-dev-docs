@@ -28,8 +28,8 @@ Create an ARC-able `sec_identity_t` instance from a `SecIdentityRef` and array o
 
 ## Parameters
 
-- `identity`: A   instance.
-- `certificates`: An array of   instances.
+- `identity`: A `SecIdentityRef` instance.
+- `certificates`: An array of `SecCertificateRef` instances.
 
 
 ---

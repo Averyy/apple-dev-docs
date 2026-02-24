@@ -32,12 +32,12 @@ Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of 
 
 ## Parameters
 
-- `primitiveType`: A   representing how the command interprets vertex argument data.
-- `indexCount`: An integer that represents the number of vertices the command reads from  .
-- `indexType`: A   instance that represents the index format.
-- `indexBuffer`: GPUAddress of a   instance that contains   indices of   format.   You are responsible for ensuring this address is aligned to 2 bytes if the   format is   , and aligned to 4 bytes if the format is   .
-- `indexBufferLength`: An integer that represents the length of  , in bytes. You are responsible for   ensuring this this size is a multiple of 2 if the   format is  ,   and a multiple of 4 if the format is  .   Metal disregards this value and assigns   to the   attribute for all primitives that   require loading indices at a byte offset of   or greater.
-- `instanceCount`: An integer that represents the number of times the command draws   with    vertices.
+- `primitiveType`: A [`MTLPrimitiveType`](mtlprimitivetype.md) representing how the command interprets vertex argument data.
+- `indexCount`: An integer that represents the number of vertices the command reads from `indexBuffer`.
+- `indexType`: A [`MTLIndexType`](mtlindextype.md) instance that represents the index format.
+- `indexBuffer`: GPUAddress of a [`MTLBuffer`](mtlbuffer.md) instance that contains `indexCount` indices of `indexType` format. You are responsible for ensuring this address is aligned to 2 bytes if the `indexType` format is [`MTLIndexType.uint16`](mtlindextype/uint16.md), and aligned to 4 bytes if the format is [`MTLIndexType.uint32`](mtlindextype/uint32.md).
+- `indexBufferLength`: An integer that represents the length of `indexBuffer`, in bytes. You are responsible for ensuring this this size is a multiple of 2 if the `indexType` format is [`MTLIndexType.uint16`](mtlindextype/uint16.md), and a multiple of 4 if the format is [`MTLIndexType.uint32`](mtlindextype/uint32.md). Metal disregards this value and assigns `0` to the `vertex_id` attribute for all primitives that require loading indices at a byte offset of `indexBufferLength` or greater.
+- `instanceCount`: An integer that represents the number of times the command draws `primitiveType` with `indexCount` vertices.
 
 ## See Also
 

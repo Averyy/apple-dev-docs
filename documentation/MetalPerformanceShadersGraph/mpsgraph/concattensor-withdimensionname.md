@@ -31,7 +31,7 @@ Concatenates two input tensors along the specified dimension. Tensors must be br
 
 - `tensor`: The first tensor to concatenate.
 - `tensor2`: The second tensor to concatenate.
-- `dimensionIndex`: The dimension to concatenate across, must be in range:  .
+- `dimensionIndex`: The dimension to concatenate across, must be in range: `-rank <= dimension < rank`.
 - `name`: The name for the operation.
 
 

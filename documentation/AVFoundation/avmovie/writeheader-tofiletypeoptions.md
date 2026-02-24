@@ -23,7 +23,7 @@ func writeHeader(to URL: URL, fileType: AVFileType, options: AVMovieWritingOptio
 
 - `URL`: The URL indicating where to write the movie header.
 - `fileType`: A UTI that indicates the specific file format for the movie header.
-- `options`: The   constants whose bits specify the options for writing the movie header.
+- `options`: The [`AVMovieWritingOptions`](avmoviewritingoptions.md) constants whose bits specify the options for writing the movie header.
 
 ## See Also
 

@@ -22,7 +22,7 @@ static func result<Value, Intent>(value: Value, actionButtonIntent: Intent, acti
 
 ## Parameters
 
-- `value`: The value produced by the 
+- `value`: The value produced by the `AppIntent`
 
 
 ---

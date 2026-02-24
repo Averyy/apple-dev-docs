@@ -41,8 +41,8 @@ Always return a vector with the same orientation as the input.  If input is vect
 ## Parameters
 
 - `vector`: The vector to be sliced.
-- `vector_first`: The index of the source vector element that will become the first element   of the new slice vector.
-- `vector_stride`: The offset in the source vector between elements that will be consecutive in   the new slice vector.
+- `vector_first`: The index of the source vector element that will become the first element of the new slice vector.
+- `vector_stride`: The offset in the source vector between elements that will be consecutive in the new slice vector.
 - `slice_length`: The length of the resulting slice vector.
 
 ## See Also

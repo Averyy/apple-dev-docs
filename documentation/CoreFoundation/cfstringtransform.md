@@ -31,9 +31,9 @@ The transformation represented by `transform` is applied to the given range of `
 ## Parameters
 
 - `string`: The string to transform.
-- `range`: A pointer to the range over which the transformation is applied.   causes the whole string to be transformed. On return,   is modified to reflect the new range corresponding to the original range.
-- `transform`: A CFString object that identifies the transformation to apply. For a list of valid values, see  . In macOS 10.4 and later, you can also use any valid ICU transform ID defined in the  .
-- `reverse`: A Boolean that, if  , specifies that the inverse transform should be used (if it exists).
+- `range`: A pointer to the range over which the transformation is applied. `NULL` causes the whole string to be transformed. On return, `range` is modified to reflect the new range corresponding to the original range.
+- `transform`: A CFString object that identifies the transformation to apply. For a list of valid values, see [`Transform Identifiers for CFStringTransform`](transform-identifiers-for-cfstringtransform.md). In macOS 10.4 and later, you can also use any valid ICU transform ID defined in the [`ICU User Guide for Transforms`](https://developer.apple.comhttp://icu.sourceforge.net/userguide/Transform.html).
+- `reverse`: A Boolean that, if `true`, specifies that the inverse transform should be used (if it exists).
 
 ## See Also
 

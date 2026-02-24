@@ -23,7 +23,7 @@ This method uses the provided report data to update the [`IOHIDElement`](iohidel
 
 - `timestamp`: The timestamp of the report.
 - `report`: A pointer to the bytes of the report.
-- `reportLength`: The number of bytes in the   parameter.
+- `reportLength`: The number of bytes in the `report` parameter.
 - `type`: The report type.
 - `reportID`: The unique ID associated with the report.
 

@@ -19,6 +19,14 @@ The metadata for an application or package manifest item.
 object ManifestURL.ItemsItem.Metadata
 ```
 
+## Properties
+
+- `bundle-identifier` (string) *(required)*: The bundle identifier of the app or package manifest item.
+- `bundle-version` (string): The bundle version of the app or package manifest item.
+- `kind` (string) *(required)*: The type of manifest item. For an app or package, this needs to be `software`.
+- `subtitle` (string): The name of the app or package developer.
+- `title` (string) *(required)*: The title of the app or package being installed.
+
 ## See Also
 
 - [object ManifestURL.ItemsItem.AssetsItem](manifesturl/itemsitem/assetsitem.md)

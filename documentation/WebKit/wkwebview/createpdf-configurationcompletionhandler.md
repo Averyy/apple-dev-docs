@@ -22,7 +22,8 @@ Generates PDF data from the web view’s contents asynchronously.
 ## Parameters
 
 - `configuration`: The object that specifies the portion of the web view to capture as PDF data.
-- `completionHandler`: The completion handler to call when the data is ready. This block has no return value and takes the following parameters:
+- `completionHandler`: The completion handler to call when the data is ready. This block has no return value and takes the following parameters: - **pdfDocumentData**: A data object that contains the PDF data to use for rendering the contents of the web view.
+- **error**: An error object if a problem occurred, or `nil` on success.
 
 ## See Also
 

@@ -3,7 +3,7 @@
 **Framework**: ARKit  
 **Kind**: property
 
-The coefficient describing closure of the lips .
+The coefficient describing closure of the lips *independent of jaw position*.
 
 **Availability**:
 - iOS 11.0+

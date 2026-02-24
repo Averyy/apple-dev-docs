@@ -37,9 +37,9 @@ This function is thread safe.
 
 ## Parameters
 
-- `monitor`: CFNetServiceMonitor, created by calling  , that is to be started.
-- `recordType`: CFNetServiceMonitorType that specified the type of record to monitor. For possible values, see  .
-- `error`: Pointer to a   structure. If an error occurs, on output, the structure’s   field will be set to the error code’s domain and the   field will be set to an appropriate error code. Set this parameter to   if you don’t want to receive the error code and its domain.
+- `monitor`: CFNetServiceMonitor, created by calling [`CFNetServiceMonitorCreate(_:_:_:_:)`](cfnetservicemonitorcreate(_:_:_:_:).md), that is to be started.
+- `recordType`: CFNetServiceMonitorType that specified the type of record to monitor. For possible values, see [`CFNetServiceMonitorType`](cfnetservicemonitortype.md).
+- `error`: Pointer to a [`CFStreamError`](https://developer.apple.com/documentation/CoreFoundation/CFStreamError) structure. If an error occurs, on output, the structure’s `domain` field will be set to the error code’s domain and the `error` field will be set to an appropriate error code. Set this parameter to `NULL` if you don’t want to receive the error code and its domain.
 
 ## See Also
 

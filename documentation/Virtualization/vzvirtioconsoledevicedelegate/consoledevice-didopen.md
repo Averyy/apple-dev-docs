@@ -21,7 +21,7 @@ Be sure to process or flush any pending data from the [`VZVirtioConsolePort`](vz
 ## Parameters
 
 - `consoleDevice`: The console port’s console device.
-- `consolePort`: The   port that the framework opened.
+- `consolePort`: The [`VZVirtioConsolePort`](vzvirtioconsoleport.md) port that the framework opened.
 
 ## See Also
 

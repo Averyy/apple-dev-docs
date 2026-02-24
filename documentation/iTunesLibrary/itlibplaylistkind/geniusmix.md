@@ -18,13 +18,13 @@ case geniusMix
 ## See Also
 
 - [ITLibPlaylistKind.regular](itlibplaylistkind/regular.md)
-  A standard playlist that the user or iTunes creates, such as , , , or .
+  A standard playlist that the user or iTunes creates, such as *Music*, *Movies*, *Pop Mix*, or *My Awesome Playlist*.
 - [ITLibPlaylistKind.smart](itlibplaylistkind/smart.md)
-  A playlist with contents that iTunes generates by evaluating a set of rules, such as  or .
+  A playlist with contents that iTunes generates by evaluating a set of rules, such as *90s Music* or *Songs from 1999*.
 - [ITLibPlaylistKind.genius](itlibplaylistkind/genius.md)
   A playlist iTunes creates of songs that go well with a song the user specifies.
 - [ITLibPlaylistKind.folder](itlibplaylistkind/folder.md)
-  A playlist folder that the user or iTunes creates, such as  or .
+  A playlist folder that the user or iTunes creates, such as *My Playlist Folder* or *Genius Mixes*.
 
 
 ---

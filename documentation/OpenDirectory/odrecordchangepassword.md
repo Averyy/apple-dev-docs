@@ -22,9 +22,9 @@ func ODRecordChangePassword(_ record: ODRecordRef!, _ oldPassword: CFString!, _ 
 ## Parameters
 
 - `record`: The record.
-- `oldPassword`: The record’s old password. Pass   if the record has no old password.
+- `oldPassword`: The record’s old password. Pass `NULL` if the record has no old password.
 - `newPassword`: The record’s new password.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

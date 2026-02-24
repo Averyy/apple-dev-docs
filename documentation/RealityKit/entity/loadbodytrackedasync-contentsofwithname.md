@@ -24,7 +24,7 @@ A resource loader that publishes the root entity in the loaded file as a [`BodyT
 ## Parameters
 
 - `url`: A file URL representing the file to load.
-- `resourceName`: A unique name the method assigns to the resource it loads,   for use in network synchronization.
+- `resourceName`: A unique name the method assigns to the resource it loads, for use in network synchronization.
 
 ## See Also
 

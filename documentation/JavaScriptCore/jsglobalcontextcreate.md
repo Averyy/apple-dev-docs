@@ -31,7 +31,7 @@ In WebKit 4 and later, the system creates the context in a unique context group.
 
 ## Parameters
 
-- `globalObjectClass`: The class to use when creating the global object. Pass   to use the default object class.
+- `globalObjectClass`: The class to use when creating the global object. Pass `NULL` to use the default object class.
 
 ## See Also
 

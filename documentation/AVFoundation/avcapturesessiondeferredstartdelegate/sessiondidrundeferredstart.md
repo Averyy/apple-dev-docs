@@ -21,7 +21,7 @@ func sessionDidRunDeferredStart(_ session: AVCaptureSession)
 
 ## Parameters
 
-- `session`: The   instance that runs the deferred start.
+- `session`: The [`AVCaptureSession`](avcapturesession.md) instance that runs the deferred start.
 
 ## See Also
 

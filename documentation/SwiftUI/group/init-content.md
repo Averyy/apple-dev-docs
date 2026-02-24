@@ -22,7 +22,7 @@ init(@AccessibilityRotorContentBuilder content: () -> Content)
 
 ## Parameters
 
-- `content`: The result builder that generates Rotor content for   the group.
+- `content`: The result builder that generates Rotor content for the group.
 
 
 ---

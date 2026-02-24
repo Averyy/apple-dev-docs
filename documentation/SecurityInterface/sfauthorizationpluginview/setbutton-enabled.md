@@ -17,7 +17,7 @@ func setButton(_ inButtonType: SFButtonType, enabled inEnabled: Bool)
 ## Parameters
 
 - `inButtonType`: The type of the button.
-- `inEnabled`:   to enable the button,   to disable the button.
+- `inEnabled`: [`true`](https://developer.apple.com/documentation/Swift/true) to enable the button, [`false`](https://developer.apple.com/documentation/Swift/false) to disable the button.
 
 ## See Also
 

@@ -26,13 +26,25 @@ An object the focus debugger uses to store the results that it formats for displ
 
 Call this method from the `lldb` debugger using the following command. In the example, `obj` corresponds to an object that adopts the [`UIFocusEnvironment`](uifocusenvironment.md) protocol.
 
+**Swift**:
+
+```swift
+po UIFocusDebugger.focusGroups(for: obj)
+```
+
+**Objective-C**:
+
+```objc
+po [UIFocusDebugger focusGroupsForEnvironment:obj]
+```
+
 The method returns the full hierarchy of focus groups for the focus environment object provided.
 
 > **Note**:  This method replaces the `checkFocusGroup(for:)` method, which is functionally equivalent.
 
 ## Parameters
 
-- `environment`: The object you want to generate a focus group hierarchy for. Specify the focus system, view, view controller, or window whose state you want. You can also specify any other object that adopts the   protocol.
+- `environment`: The object you want to generate a focus group hierarchy for. Specify the focus system, view, view controller, or window whose state you want. You can also specify any other object that adopts the [`UIFocusEnvironment`](uifocusenvironment.md) protocol.
 
 ## See Also
 

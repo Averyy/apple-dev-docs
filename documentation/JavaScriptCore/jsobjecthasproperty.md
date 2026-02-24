@@ -25,8 +25,8 @@ func JSObjectHasProperty(_ ctx: JSContextRef!, _ object: JSObjectRef!, _ propert
 
 ## Parameters
 
-- `object`: The   to test.
-- `propertyName`: A   that contains the property’s name.
+- `object`: The [`JSObjectRef`](jsobjectref.md) to test.
+- `propertyName`: A [`JSStringRef`](jsstringref.md) that contains the property’s name.
 
 ## See Also
 

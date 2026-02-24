@@ -12,6 +12,10 @@ A Boolean value indicating whether the app’s icon files already incorporate a 
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [CFBundleIconFiles](information-property-list/cfbundleicons/cfbundleprimaryicon/cfbundleiconfiles.md)

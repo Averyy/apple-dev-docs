@@ -27,9 +27,9 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `context_handle`: The context used to send the message.
 - `input_message_buffer`: A buffer containing the protected message from the peer.
-- `output_message_buffer`: A buffer the function uses to return the unwrapped message. Release the buffer using a call to   when you are done with it.
-- `conf_state`: A pointer the function uses to indicate what protection had been applied to the message. A value of zero indicates only integrity checking. A non-zero value indicates both integrity checking and confidentiality. Pass   to ignore this output.
-- `qop_state`: A pointer the function uses to return the quality of protection setting. See Quality of Protection Constants in   for valid values. Pass   to ignore this output.
+- `output_message_buffer`: A buffer the function uses to return the unwrapped message. Release the buffer using a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md) when you are done with it.
+- `conf_state`: A pointer the function uses to indicate what protection had been applied to the message. A value of zero indicates only integrity checking. A non-zero value indicates both integrity checking and confidentiality. Pass `NULL` to ignore this output.
+- `qop_state`: A pointer the function uses to return the quality of protection setting. See Quality of Protection Constants in [`Object Identifiers`](object-identifiers.md) for valid values. Pass `NULL` to ignore this output.
 
 ## See Also
 

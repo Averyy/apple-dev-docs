@@ -21,7 +21,7 @@ convenience init(_ identifier: HKDocumentTypeIdentifier)
 
 ## Parameters
 
-- `identifier`: An identifier that specifies the type of document to store in the sample. For a complete list of document type identifiers, see  .
+- `identifier`: An identifier that specifies the type of document to store in the sample. For a complete list of document type identifiers, see [`HKDocumentTypeIdentifier`](hkdocumenttypeidentifier.md).
 
 
 ---

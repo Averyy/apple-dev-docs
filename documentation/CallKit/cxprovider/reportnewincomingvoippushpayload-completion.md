@@ -35,8 +35,8 @@ To call this method, your notification service extension must have the [`com.app
 
 ## Parameters
 
-- `dictionaryPayload`: A dictionary containing additional data about the incoming call. All keys and values in the dictionary must implement the   protocol.
-- `completion`: A block that CallKit executes after allowing or disallowing the call. CallKit executes the block on a private serial queue. The completion handler takes the following parameter:
+- `dictionaryPayload`: A dictionary containing additional data about the incoming call. All keys and values in the dictionary must implement the [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) protocol.
+- `completion`: A block that CallKit executes after allowing or disallowing the call. CallKit executes the block on a private serial queue. The completion handler takes the following parameter: - **`error`**: When the system disallows a call, it sets this parameter to an error object that contains information about why it disallowed the call; otherwise it’s `nil`.
 
 ## See Also
 

@@ -13,6 +13,10 @@
 object GenresResponse
 ```
 
+## Properties
+
+- `data` ([Genres]) *(required)*
+
 ## See Also
 
 - [object UnauthorizedResponse](unauthorizedresponse.md)

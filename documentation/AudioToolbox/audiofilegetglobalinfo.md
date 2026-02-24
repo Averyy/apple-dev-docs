@@ -35,9 +35,9 @@ If you call this function to retrieve a value that is a Core Foundation object, 
 
 ## Parameters
 
-- `inPropertyID`: The property whose value you want to get. For possible values, see  .
+- `inPropertyID`: The property whose value you want to get. For possible values, see [`Audio File Global Info Properties`](1576495-audio-file-global-info-propertie.md).
 - `inSpecifierSize`: The size of the specifier data.
-- `inSpecifier`: A pointer to a  , which, in this context, is a pointer to a buffer containing some data that is different for each property. The type of the data required is described in the description of each property.
+- `inSpecifier`: A pointer to a *specifier*, which, in this context, is a pointer to a buffer containing some data that is different for each property. The type of the data required is described in the description of each property.
 - `ioDataSize`: On input, a pointer to the size of the buffer specified in the outPropertyData parameter. On output, a pointer to the number of bytes written to the buffer.
 - `outPropertyData`: A pointer to the buffer in which to write the property data.
 

@@ -18,13 +18,13 @@ The visionOS 2.1 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- Presenter controls are inaccessible or difficult to access while presenting. This issue impacts the ability to bring up the Light Table to navigate to a different slide, bring up the Drawing Tools and Presenter Display, access the Live Video source, access the presenters list when using Multi-Presenter, enable/disable Auto Dimming, access the Slideshow Tips and advance the presentation/go back a slide.  (134967350)  Tap to advance the presentation. Long press then swipe to the right to go back a slide. Access the Slideshow Tips using Keynote Help via the Help menu in the app toolbar.
+- Presenter controls are inaccessible or difficult to access while presenting. This issue impacts the ability to bring up the Light Table to navigate to a different slide, bring up the Drawing Tools and Presenter Display, access the Live Video source, access the presenters list when using Multi-Presenter, enable/disable Auto Dimming, access the Slideshow Tips and advance the presentation/go back a slide.  (134967350) **Workaround:** Tap to advance the presentation. Long press then swipe to the right to go back a slide. Access the Slideshow Tips using Keynote Help via the Help menu in the app toolbar.
 
 ##### Realitykit Graphics
 
 ###### Known Issues
 
-- When a translucent SwiftUI view and translucent `ModelEntity` are positioned at the same point in space using `RealityViewAttachment`, a visual flickering may occur.  (135906908)  Add a `ModelSortGroupComponent` to the ModelEntity and set its `group` using [`ModelSortGroup.PlanarUIPlacement`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/modelsortgroup/planaruiplacement-swift.enum?changes=_9)
+- When a translucent SwiftUI view and translucent `ModelEntity` are positioned at the same point in space using `RealityViewAttachment`, a visual flickering may occur.  (135906908) **Workaround:** Add a `ModelSortGroupComponent` to the ModelEntity and set its `group` using [`ModelSortGroup.PlanarUIPlacement`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/modelsortgroup/planaruiplacement-swift.enum?changes=_9)
 
 ##### Storekit
 

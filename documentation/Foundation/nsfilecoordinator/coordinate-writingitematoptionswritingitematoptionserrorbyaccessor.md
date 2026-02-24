@@ -30,12 +30,12 @@ This method makes the same calls to file presenters, and has the same general wa
 
 ## Parameters
 
-- `url1`: A URL identifying the first file or directory to write. If other objects or processes are acting on the item at the URL, the actual URL passed to the block in the   parameter may be different from the one in this parameter.
-- `options1`: One of the writing options described in  .
-- `url2`: A URL identifying the other file or directory to write. If other objects or processes are acting on the item at the URL, the actual URL passed to the block in the   parameter may be different from the one in this parameter.
-- `options2`: One of the writing options described in  . The options you specify partially determine how file presenters are notified and how this file coordinator object waits to execute your block.
-- `outError`: On input, a pointer to a pointer for an error object. If a file presenter encounters an error while preparing for this operation, that error is returned in this parameter and the block in the   parameter is not executed. If you cancel this operation before the   block is executed, this parameter contains an error object on output.
-- `writer`: A   containing the write operations you want to perform in a coordinated manner. This block receives   objects containing the URLs of the items to write and returns no value. Always use the URLs passed into the block instead of the values in the   and   parameters.
+- `url1`: A URL identifying the first file or directory to write. If other objects or processes are acting on the item at the URL, the actual URL passed to the block in the `writer` parameter may be different from the one in this parameter.
+- `options1`: One of the writing options described in [`NSFileCoordinator.WritingOptions`](nsfilecoordinator/writingoptions.md).
+- `url2`: A URL identifying the other file or directory to write. If other objects or processes are acting on the item at the URL, the actual URL passed to the block in the `writer` parameter may be different from the one in this parameter.
+- `options2`: One of the writing options described in [`NSFileCoordinator.WritingOptions`](nsfilecoordinator/writingoptions.md). The options you specify partially determine how file presenters are notified and how this file coordinator object waits to execute your block.
+- `outError`: On input, a pointer to a pointer for an error object. If a file presenter encounters an error while preparing for this operation, that error is returned in this parameter and the block in the `writer` parameter is not executed. If you cancel this operation before the `writer` block is executed, this parameter contains an error object on output.
+- `writer`: A [`Block object`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) containing the write operations you want to perform in a coordinated manner. This block receives [`NSURL`](nsurl.md) objects containing the URLs of the items to write and returns no value. Always use the URLs passed into the block instead of the values in the `url1` and `url2` parameters.
 
 ## See Also
 

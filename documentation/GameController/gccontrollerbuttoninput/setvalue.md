@@ -25,7 +25,7 @@ This method does nothing if the associated controller isn’t a snapshot (its [`
 
 ## Parameters
 
-- `value`: A normalized number between   (minimum pressure) and   (maximum pressure).
+- `value`: A normalized number between `0.0` (minimum pressure) and `1.0` (maximum pressure).
 
 
 ---

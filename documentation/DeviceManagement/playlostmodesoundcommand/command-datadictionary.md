@@ -15,6 +15,11 @@ The command to play the Lost Mode sound on a device that’s in Lost Mode.
 object PlayLostModeSoundCommand.Command
 ```
 
+## Properties
+
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

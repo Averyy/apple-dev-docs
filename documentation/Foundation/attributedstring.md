@@ -27,7 +27,7 @@ Attributed strings are character strings that have attributes for individual cha
 
 ##### String Attributes
 
-You can apply an attribute to an entire string, or to a range within the string. The string represents each range with consistent attributes as a .
+You can apply an attribute to an entire string, or to a range within the string. The string represents each range with consistent attributes as a *run*.
 
 [`AttributedString`](attributedstring.md) uses subscripts and dynamic member lookup to simplify working with attributes from your call points. In its most verbose form, you set an attribute by creating an [`AttributeContainer`](attributecontainer.md) and merging it into an existing attributed string, like this:
 

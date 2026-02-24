@@ -32,7 +32,7 @@ This method returns the current location of a [`UITouch`](uitouch.md) object in 
 
 ## Parameters
 
-- `view`: The view object in whose coordinate system you want the touch located. A custom view that is handling the touch may specify   to get the touch location in its own coordinate system. Pass   to get the touch location in the window’s coordinates.
+- `view`: The view object in whose coordinate system you want the touch located. A custom view that is handling the touch may specify `self` to get the touch location in its own coordinate system. Pass `nil` to get the touch location in the window’s coordinates.
 
 ## See Also
 

@@ -30,12 +30,12 @@ SwiftUI produces the shadow by blurring the alpha channel of the object receivin
 
 ## Parameters
 
-- `color`: A   that tints the shadow.
-- `radius`: A measure of how far the shadow extends from the edges   of the content receiving the shadow.
+- `color`: A [`Color`](color.md) that tints the shadow.
+- `radius`: A measure of how far the shadow extends from the edges of the content receiving the shadow.
 - `x`: An amount to translate the shadow horizontally.
 - `y`: An amount to translate the shadow vertically.
-- `blendMode`: The   to use   when blending the shadow into the background layer.
-- `options`: A set of options that you can use to customize the   process of adding the shadow. Use one or more of the options   in  .
+- `blendMode`: The [`GraphicsContext.BlendMode`](graphicscontext/blendmode-swift.struct.md) to use when blending the shadow into the background layer.
+- `options`: A set of options that you can use to customize the process of adding the shadow. Use one or more of the options in [`GraphicsContext.ShadowOptions`](graphicscontext/shadowoptions.md).
 
 
 ---

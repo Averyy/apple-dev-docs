@@ -32,14 +32,14 @@ Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of 
 
 ## Parameters
 
-- `primitiveType`: A   representing how the command interprets vertex argument data.
-- `indexCount`: An integer that represents the number of vertices the command reads from  .
-- `indexType`: A   instance that represents the index format.
-- `indexBuffer`: GPUAddress of a   instance that contains   indices of   format.   You are responsible for ensuring this address is aligned to 2 bytes if the   format is   , and aligned to 4 bytes if the format is   .
-- `indexBufferLength`: An integer that represents the length of  , in bytes. You are responsible for   ensuring this this size is a multiple of 2 if the   format is  ,   and a multiple of 4 if the format is  .   If this draw call causes Metal to read indices at or beyond the  , Metal   continues to execute them assigning a value of   to the   attribute.
-- `instanceCount`: An integer that represents the number of times the command draws   with    vertices.
-- `baseVertex`: The lowest value the command passes to your vertex shader functions’s parameter with the    attribute. Metal disregards this value and assigns   to the   attribute for all   primitives that require loading indices at a byte offset of   or greater.
-- `baseInstance`: The lowest value the command passes to your vertex shader’s parameter with the   attribute.
+- `primitiveType`: A [`MTLPrimitiveType`](mtlprimitivetype.md) representing how the command interprets vertex argument data.
+- `indexCount`: An integer that represents the number of vertices the command reads from `indexBuffer`.
+- `indexType`: A [`MTLIndexType`](mtlindextype.md) instance that represents the index format.
+- `indexBuffer`: GPUAddress of a [`MTLBuffer`](mtlbuffer.md) instance that contains `indexCount` indices of `indexType` format. You are responsible for ensuring this address is aligned to 2 bytes if the `indexType` format is [`MTLIndexType.uint16`](mtlindextype/uint16.md), and aligned to 4 bytes if the format is [`MTLIndexType.uint32`](mtlindextype/uint32.md).
+- `indexBufferLength`: An integer that represents the length of `indexBuffer`, in bytes. You are responsible for ensuring this this size is a multiple of 2 if the `indexType` format is [`MTLIndexType.uint16`](mtlindextype/uint16.md), and a multiple of 4 if the format is [`MTLIndexType.uint32`](mtlindextype/uint32.md). If this draw call causes Metal to read indices at or beyond the `indexBufferLength`, Metal continues to execute them assigning a value of `0` to the `vertex_id` attribute.
+- `instanceCount`: An integer that represents the number of times the command draws `primitiveType` with `indexCount` vertices.
+- `baseVertex`: The lowest value the command passes to your vertex shader functions’s parameter with the `vertex_id` attribute. Metal disregards this value and assigns `0` to the `vertex_id` attribute for all primitives that require loading indices at a byte offset of `indexBufferLength` or greater.
+- `baseInstance`: The lowest value the command passes to your vertex shader’s parameter with the `instance_id` attribute.
 
 ## See Also
 

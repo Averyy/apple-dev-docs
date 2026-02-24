@@ -29,9 +29,9 @@ A [`CIDetector`](cidetector.md) object can potentially create and hold a signifi
 
 ## Parameters
 
-- `type`: A string indicating the kind of detector you are interested in. See  .
+- `type`: A string indicating the kind of detector you are interested in. See [`Detector Types`](detector-types.md).
 - `context`: A Core Image context that the detector can use when analyzing an image.
-- `options`: A dictionary containing details on how you want the detector to be configured. See  .
+- `options`: A dictionary containing details on how you want the detector to be configured. See [`Detector Configuration Keys`](detector-configuration-keys.md).
 
 
 ---

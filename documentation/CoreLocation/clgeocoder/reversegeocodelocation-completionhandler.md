@@ -37,7 +37,7 @@ After initiating a reverse-geocoding request, do not attempt to initiate another
 ## Parameters
 
 - `location`: The location object containing the coordinate data to look up.
-- `completionHandler`: The handler block to execute with the results. The geocoder executes this handler regardless of whether the request was successful or unsuccessful. For more information on the format of this block, see  .
+- `completionHandler`: The handler block to execute with the results. The geocoder executes this handler regardless of whether the request was successful or unsuccessful. For more information on the format of this block, see [`CLGeocodeCompletionHandler`](clgeocodecompletionhandler.md).
 
 ## See Also
 

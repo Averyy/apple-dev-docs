@@ -78,10 +78,10 @@ In both cases, this function sets the buffer’s width, height, and row bytes pr
 
 ## Parameters
 
-- `buf`: A valid empty   structure.
+- `buf`: A valid empty [`vImage_Buffer`](vimage_buffer.md) structure.
 - `height`: The height of the image.
 - `width`: The width of the image.
-- `pixelBits`: The number of bits in a pixel of image data. If   isn’t divisible by 8,   pads each row of pixels to a multiple of a byte. This ensures that two rows don’t share the same byte, and all rows start at the beginning of a byte.
+- `pixelBits`: The number of bits in a pixel of image data. If `pixelBits` isn’t divisible by 8, [`vImageBuffer_Init(_:_:_:_:_:)`](vimagebuffer_init(_:_:_:_:_:).md) pads each row of pixels to a multiple of a byte. This ensures that two rows don’t share the same byte, and all rows start at the beginning of a byte.
 - `flags`: The options to use when performing this operation.
 
 ## See Also

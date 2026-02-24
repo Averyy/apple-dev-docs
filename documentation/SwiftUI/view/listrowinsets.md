@@ -58,7 +58,7 @@ When applying multiple `listRowInsets` modifiers, modifiers with the same edges 
 ## Parameters
 
 - `edges`: The edges to set the insets to.
-- `length`: An amount, given in points, to set the insets to on   the specified edges.
+- `length`: An amount, given in points, to set the insets to on the specified edges.
 
 
 ---

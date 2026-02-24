@@ -20,8 +20,8 @@ This method returns the color stop information that was used to create the recei
 
 ## Parameters
 
-- `color`: On input, a pointer to a color object. On output, the color at the specified index in the receiver’s color array. You may specify   if you are not interested in this parameter.
-- `location`: On input, a pointer to a floating point number. On output, contains the location value associated with the color. This value is between 0.0 and 1.0. It is used to determine the position of the color relative to the start and end points of the gradient. You may specify   if you are not interested in this parameter.
+- `color`: On input, a pointer to a color object. On output, the color at the specified index in the receiver’s color array. You may specify `nil` if you are not interested in this parameter.
+- `location`: On input, a pointer to a floating point number. On output, contains the location value associated with the color. This value is between 0.0 and 1.0. It is used to determine the position of the color relative to the start and end points of the gradient. You may specify `NULL` if you are not interested in this parameter.
 - `index`: The index of the color you want.
 
 ## See Also

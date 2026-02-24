@@ -27,7 +27,7 @@ The value associated with `key` in `theDict`, or `NULL` if no key-value pair mat
 ## Parameters
 
 - `theDict`: The dictionary to examine.
-- `key`: The key for which to find a match in  . The key hash and equal callbacks provided when the dictionary was created are used to compare. If the hash callback was  , the key is treated as a pointer and converted to an integer. If the equal callback was  , pointer equality (in C, ==) is used. If  , or any of the keys in  , is not understood by the equal callback, the behavior is undefined.
+- `key`: The key for which to find a match in `theDict`. The key hash and equal callbacks provided when the dictionary was created are used to compare. If the hash callback was `NULL`, the key is treated as a pointer and converted to an integer. If the equal callback was `NULL`, pointer equality (in C, ==) is used. If `key`, or any of the keys in `theDict`, is not understood by the equal callback, the behavior is undefined.
 
 ## See Also
 

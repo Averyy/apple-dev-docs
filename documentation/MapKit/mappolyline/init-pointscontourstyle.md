@@ -23,7 +23,7 @@ init(points: [MKMapPoint], contourStyle: MapPolyline.ContourStyle = .straight)
 ## Parameters
 
 - `points`: The points to trace the path between.
-- `contourStyle`: The   to use.
+- `contourStyle`: The [`MapPolyline.ContourStyle`](mappolyline/contourstyle.md) to use.
 
 ## See Also
 

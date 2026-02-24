@@ -36,7 +36,7 @@ If the result is [`false`](https://developer.apple.com/documentation/Swift/false
 ## Parameters
 
 - `resourceLoader`: The resource loader.
-- `renewalRequest`: An instance of   that provides information about the requested resource.
+- `renewalRequest`: An instance of `AVAssetResourceRenewalRequest` that provides information about the requested resource.
 
 ## See Also
 

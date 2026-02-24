@@ -8,9 +8,9 @@ Get assets, asset collections, and collection lists matching a specified query.
 
 Instances of the model classes [`PHAsset`](https://developer.apple.com/documentation/photos/phasset), [`PHAssetCollection`](https://developer.apple.com/documentation/photos/phassetcollection), and [`PHCollectionList`](https://developer.apple.com/documentation/photos/phcollectionlist) represent the items a user works with in the Photos app:
 
-- : Images, videos, and Live Photos
-- : Albums or Moments
-- : Album folders or Moment clusters
+- **Assets**: Images, videos, and Live Photos
+- **Collections of assets**: Albums or Moments
+- **Lists of collections**: Album folders or Moment clusters
 
 Instances of these classes are read-only and immutable, and contain only metadata. Use these classes to fetch a set of objects matching a specified query.
 

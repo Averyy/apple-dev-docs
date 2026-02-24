@@ -11,6 +11,12 @@ A Boolean value indicating whether App Transport Security restrictions are disab
 - macOS 10.11+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 Set this key’s value to `YES` to disable App Transport Security (ATS) restrictions for all domains not specified in the [`NSExceptionDomains`](information-property-list/nsapptransportsecurity/nsexceptiondomains.md) dictionary. Domains you specify in that dictionary aren’t affected by this key’s value.

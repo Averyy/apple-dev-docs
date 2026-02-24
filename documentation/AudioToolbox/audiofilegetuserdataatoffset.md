@@ -31,7 +31,7 @@ See [`AudioFileGetUserDataSize64(_:_:_:_:)`](audiofilegetuserdatasize64(_:_:_:_:
 
 - `inAudioFile`: The audio file whose chunk you want to get data from.
 - `inUserDataID`: The four-character code of the designated chunk.
-- `inIndex`: An index that specifies which chunk with the four-character code specified in the   parameter you want to query.
+- `inIndex`: An index that specifies which chunk with the four-character code specified in the `inUserDataID` parameter you want to query.
 - `inOffset`: An offset from the first byte of the chunk to the first byte to get.
 - `ioUserDataSize`: On input, a pointer to the size of the buffer that contains the designated chunk. On output, a pointer to the size of bytes that the system copied to the buffer.
 - `outUserData`: A pointer to a buffer in which to copy the chunk data.

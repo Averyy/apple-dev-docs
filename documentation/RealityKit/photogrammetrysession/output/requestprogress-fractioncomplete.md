@@ -20,7 +20,7 @@ case requestProgress(PhotogrammetrySession.Request, fractionComplete: Double)
 ## Parameters
 
 - `Request`: The request in progress.
-- `fractionComplete`: A number from   to   indicating the current progress for the request.
+- `fractionComplete`: A number from `0.0` to `1.0` indicating the current progress for the request.
 
 ## See Also
 

@@ -8,6 +8,10 @@ One or more system-specific or device-specific resources that your driver requir
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 The value of this key is a string or an array of strings. Each string contains the name of a resource that must be published in the global resource list before the system loads the driver. For example, specify `IOBSD` to prevent the system from loading your driver until after the BSD kernel is available.

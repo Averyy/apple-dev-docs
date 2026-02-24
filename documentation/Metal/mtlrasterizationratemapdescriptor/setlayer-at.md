@@ -25,7 +25,7 @@ Calling this method is equivalent to using array subscript syntax.
 
 ## Parameters
 
-- `layer`: A description of a layer to add to the rate map descriptor. Use   to remove the layer at that index.
+- `layer`: A description of a layer to add to the rate map descriptor. Use `nil` to remove the layer at that index.
 - `layerIndex`: The index to put the new layer description in.
 
 ## See Also

@@ -27,7 +27,7 @@ Use a block of this type when making a call to [`SecTrustEvaluateAsync(_:_:_:)`]
 ## Parameters
 
 - `trustRef`: The trust that was evaluated.
-- `trustResult`: The result of the trust evaluation. See   for a list of possible values.
+- `trustResult`: The result of the trust evaluation. See [`SecTrustResultType`](sectrustresulttype.md) for a list of possible values.
 
 
 ---

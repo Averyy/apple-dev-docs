@@ -23,8 +23,8 @@ func CFDataAppendBytes(_ theData: CFMutableData!, _ bytes: UnsafePointer<UInt8>!
 ## Parameters
 
 - `theData`: A CFMutableData object. If you pass an immutable CFData object, the behavior is not defined.
-- `bytes`: A pointer to the buffer of bytes to be added to  .
-- `length`: The number of bytes in the byte buffer  .
+- `bytes`: A pointer to the buffer of bytes to be added to `theData`.
+- `length`: The number of bytes in the byte buffer `bytes`.
 
 ## See Also
 

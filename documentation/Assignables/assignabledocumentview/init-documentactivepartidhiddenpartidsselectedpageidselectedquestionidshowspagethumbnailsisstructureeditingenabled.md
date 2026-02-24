@@ -41,13 +41,13 @@ Displays an `AssignableDocument`.
 
 ## Parameters
 
-- `document`: A binding to the   to present in the view.
-- `activePartID`: The   to enable user interaction on.
-- `hiddenPartIDs`: A set of  s to hide on this view. Treated as a set.
+- `document`: A binding to the [`AssignableDocumentView.Document`](assignabledocumentview/document.md) to present in the view.
+- `activePartID`: The `PartID` to enable user interaction on.
+- `hiddenPartIDs`: A set of `PartID`s to hide on this view. Treated as a set.
 - `selectedPageID`: A binding to the selected page id.
 - `selectedQuestionID`: A binding to the selected question id.
 - `showsPageThumbnails`: Controls showing or hiding the document pages thumbnail previews.
-- `isStructureEditingEnabled`: Controls access to actions that allow changing the structure   of the document on the page thumbnail view contextual menu (i.e. add/duplicate/move/remove pages).
+- `isStructureEditingEnabled`: Controls access to actions that allow changing the structure of the document on the page thumbnail view contextual menu (i.e. add/duplicate/move/remove pages).
 
 
 ---

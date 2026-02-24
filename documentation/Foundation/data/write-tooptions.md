@@ -23,7 +23,7 @@ func write(to url: URL, options: Data.WritingOptions = []) throws
 ## Parameters
 
 - `url`: The location to write the data into.
-- `options`: Options for writing the data. Default value is  .
+- `options`: Options for writing the data. Default value is `[]`.
 
 ## See Also
 

@@ -34,8 +34,8 @@ See also [`CFStringCreateArrayBySeparatingStrings(_:_:_:)`](cfstringcreatearrayb
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new string. Pass   or   to use the current default allocator.
-- `theArray`: An array of CFString objects to concatenate.  This value should not be  .
+- `alloc`: The allocator to use to allocate memory for the new string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `theArray`: An array of CFString objects to concatenate.  This value should not be `NULL`.
 - `separatorString`: The string to insert between the substrings in the returned string. This value is commonly a whitespace character such as a tab or a newline (carriage return). If this value is not a valid CFString object, an assertion is raised.
 
 ## See Also

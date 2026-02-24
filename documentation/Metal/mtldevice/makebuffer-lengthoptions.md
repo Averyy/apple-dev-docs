@@ -32,7 +32,7 @@ A new [`MTLBuffer`](mtlbuffer.md) instance if the method completed successfully;
 ## Parameters
 
 - `length`: The size of the new buffer, in bytes.
-- `options`: An   instance that sets the buffer’s storage and hazard-tracking modes. See   and   for more information.
+- `options`: An [`MTLResourceOptions`](mtlresourceoptions.md) instance that sets the buffer’s storage and hazard-tracking modes. See [`Resource fundamentals`](resource-fundamentals.md) and [`Setting resource storage modes`](setting-resource-storage-modes.md) for more information.
 
 ## See Also
 

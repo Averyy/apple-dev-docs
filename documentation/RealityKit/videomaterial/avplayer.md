@@ -22,7 +22,7 @@ The material’s video playback controller.
 
 #### Discussion
 
-Use this property to control animation playback for a video texture. This property allows you to play or pause the movie,  (in other words, skip to) a specific part of the movie, or to change the movie’s playback rate. The following code demonstrates pausing the texture’s video and restarting it from the beginning of the movie file:
+Use this property to control animation playback for a video texture. This property allows you to play or pause the movie, *seek to* (in other words, skip to) a specific part of the movie, or to change the movie’s playback rate. The following code demonstrates pausing the texture’s video and restarting it from the beginning of the movie file:
 
 ```swift
 myMaterial.avPlayer.pause()

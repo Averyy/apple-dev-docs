@@ -17,7 +17,7 @@ func setPowerHint(_ hint: AudioHardwarePowerHint) throws
 
 ## Parameters
 
-- `hint`: An AudioHardwarePowerHint enum indicating how aggressive the system can   be with optimizations that save power.
+- `hint`: An AudioHardwarePowerHint enum indicating how aggressive the system can be with optimizations that save power.
 
 
 ---

@@ -19,7 +19,8 @@ func readNDEF() async throws -> NFCNDEFMessage
 
 ## Parameters
 
-- `completionHandler`: The session calls   on the dispatch queue provided when creating the  .
+- `completionHandler`: The handler invoked by the reader session that provides the NDEF message. The handler has the following parameters: - **message**: An [`NFCNDEFMessage`](nfcndefmessage.md) object, or `nil` if an error occurs while retrieving the message.
+- **error**: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object if the read request fails; otherwise, `nil`. The session calls `completionHandler` on the dispatch queue provided when creating the [`NFCNDEFReaderSession`](nfcndefreadersession.md).
 
 
 ---

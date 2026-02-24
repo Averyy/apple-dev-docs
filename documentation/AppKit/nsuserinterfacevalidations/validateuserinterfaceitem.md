@@ -22,7 +22,7 @@ func validateUserInterfaceItem(_ item: any NSValidatedUserInterfaceItem) -> Bool
 
 ## Parameters
 
-- `item`: The user interface item to validate. You can send   the   and   messages.
+- `item`: The user interface item to validate. You can send `anItem` the [`action`](nsvalidateduserinterfaceitem/action.md) and [`tag`](nsvalidateduserinterfaceitem/tag.md) messages.
 
 ## See Also
 

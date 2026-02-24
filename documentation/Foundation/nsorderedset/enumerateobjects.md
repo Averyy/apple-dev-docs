@@ -22,7 +22,9 @@ func enumerateObjects(_ block: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Voi
 
 ## Parameters
 
-- `block`: The block returns a Boolean value that indicates whether   passed the test.
+- `block`: The block to apply to elements in the ordered set. The block takes three arguments: - **idx**: The element in the set.
+- **idx**: The index of the item in the set.
+- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop further processing of the set. The `stop` argument is an out-only argument. You should only ever set this value to [`true`](https://developer.apple.com/documentation/Swift/true) within the block. The block returns a Boolean value that indicates whether `obj` passed the test.
 
 ## See Also
 

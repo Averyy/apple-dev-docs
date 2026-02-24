@@ -27,7 +27,7 @@ A [`ConcentricRectangle`](concentricrectangle.md) with all four corners set to c
 ## Parameters
 
 - `corners`: The corner style for all four corners.
-- `isUniform`: Should the corner style on each corner be applied   individually or uniformly.
+- `isUniform`: Should the corner style on each corner be applied individually or uniformly.
 
 
 ---

@@ -18,7 +18,7 @@ init(_ inkType: PKInk.InkType, color: NSColor = NSColor.black)
 
 ## Parameters
 
-- `inkType`: The type of ink represented by one of the available   enumerations.
+- `inkType`: The type of ink represented by one of the available [`PKInkingTool.InkType`](pkinkingtool-swift.struct/inktype-swift.enum.md) enumerations.
 - `color`: The color of the ink, defaults to black.
 
 ## See Also

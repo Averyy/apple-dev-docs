@@ -25,6 +25,10 @@ object ManageUsersRequest
 - [object RequestUser](requestuser.md)
   The requested user in the organization.
 
+## Properties
+
+- `users` ([RequestUser]) *(required)*: The set of users to manage.
+
 ## See Also
 
 - [object EventResponse](eventresponse.md)

@@ -30,8 +30,8 @@ You use this method to add cap values to an image or to change the existing cap 
 
 ## Parameters
 
-- `leftCapWidth`: The value to use for the left cap width. Specify   if you want the entire image to be horizontally stretchable. For a discussion of how a non-zero value affects the image, see the   property.
-- `topCapHeight`: The value to use for the top cap height. Specify   if you want the entire image to be vertically stretchable. For a discussion of how a non-zero value affects the image, see the   property.
+- `leftCapWidth`: The value to use for the left cap width. Specify `0` if you want the entire image to be horizontally stretchable. For a discussion of how a non-zero value affects the image, see the [`leftCapWidth`](uiimage/leftcapwidth.md) property.
+- `topCapHeight`: The value to use for the top cap height. Specify `0` if you want the entire image to be vertically stretchable. For a discussion of how a non-zero value affects the image, see the [`topCapHeight`](uiimage/topcapheight.md) property.
 
 ## See Also
 

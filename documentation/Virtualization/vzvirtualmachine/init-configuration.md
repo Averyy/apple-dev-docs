@@ -24,7 +24,7 @@ This VM uses your app’s main queue for all operations. You must perform all VM
 
 ## Parameters
 
-- `configuration`: The configuration of the VM. The configuration must be valid, and you can verify that it’s valid by calling its   method. The VM stores a copy of the configuration.
+- `configuration`: The configuration of the VM. The configuration must be valid, and you can verify that it’s valid by calling its [`validate()`](vzvirtualmachineconfiguration/validate().md) method. The VM stores a copy of the configuration.
 
 ## See Also
 

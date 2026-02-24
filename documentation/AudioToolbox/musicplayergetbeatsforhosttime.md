@@ -31,7 +31,7 @@ This function is valid only if the music player is playing. For converting betwe
 
 - `inPlayer`: The music player that you are querying.
 - `inHostTime`: The host time that you want the beat number for.
-- `outBeats`: On output, the beat number associated with the   value.
+- `outBeats`: On output, the beat number associated with the `inHostTime` value.
 
 ## See Also
 

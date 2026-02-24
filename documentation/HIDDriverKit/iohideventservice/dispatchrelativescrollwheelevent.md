@@ -29,8 +29,8 @@ Call this method from your event service to dispatch a scroll-wheel event to the
 - `dx`: The delta X value.
 - `dy`: The delta Y value.
 - `dz`: The delta Z value.
-- `options`: Additional options for scrolling-related events. Specify   for no options. For a list of other values, see  .
-- `accelerate`: Scroll events are subject to an acceleration algorithm. Pass in   if you don’t wish to have acceleration logic applied to the scroll event.
+- `options`: Additional options for scrolling-related events. Specify `0` for no options. For a list of other values, see [`IOHIDScrollEventOptions`](iohidscrolleventoptions.md).
+- `accelerate`: Scroll events are subject to an acceleration algorithm. Pass in `false` if you don’t wish to have acceleration logic applied to the scroll event.
 
 ## See Also
 

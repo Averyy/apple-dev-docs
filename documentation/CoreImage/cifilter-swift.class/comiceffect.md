@@ -29,6 +29,8 @@ This method applies the comic effect filter to an image. The effect simulates a 
 
 The comic effect filter uses the following property:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in the image appearing image in comic book style.
 
 ```swift

@@ -24,7 +24,7 @@ This method is called by default when handling of an error (including any user i
 ## Parameters
 
 - `error`: An error object encapsulating information about the error.
-- `recovered`:   if you recovered from the error, otherwise  .
+- `recovered`: [`true`](https://developer.apple.com/documentation/Swift/true) if you recovered from the error, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

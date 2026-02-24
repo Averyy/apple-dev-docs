@@ -16,7 +16,7 @@ func setDefaultValue(_ value: Any!, forInputKey key: String!)
 
 ## Parameters
 
-- `value`: This default value overrides any initial value existing for composition input parameters with this key. Pass   to clear the default value.
+- `value`: This default value overrides any initial value existing for composition input parameters with this key. Pass `nil` to clear the default value.
 - `key`: The input parameter key whose default value you want to set.
 
 ## See Also

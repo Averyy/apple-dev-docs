@@ -6,7 +6,7 @@ Provide your users a convenient connection to the Game Center dashboard.
 
 #### Overview
 
-You can add an  to your game that provides a way for players to manage their profile, and view leaderboards, achievements, and challenges.
+You can add an *access point* to your game that provides a way for players to manage their profile, and view leaderboards, achievements, and challenges.
 
 The access point initially shows player highlights, like how many achievements they’ve earned and where they stand in leaderboards. Then the access point collapses into the player’s avatar and remains on your game’s screen. When the player taps or clicks the avatar, GameKit displays the dashboard so players can drill down into the details of their Game Center data, including more highlights and statistics. You can choose where to display the access point, and select the highlights to display.
 

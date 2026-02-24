@@ -26,10 +26,10 @@ mutating func appendInterpolation<T>(_ value: @autoclosure @escaping () -> T, al
 
 ## Parameters
 
-- `value`: The interpolated type, which the system automatically wraps in a closure. The type itself doesn’t appear in the log message. Instead, the system incorporates the textual representation the type provides through its implementation of the   protocol.
-- `align`: The alignment and minimum number of columns to use when the system renders the value in a log message. For more information, see  . The default value is  .
-- `privacy`: The privacy level of the value, which the system applies when it renders the value in a log message. For more information, see  . The default value is  .
-- `attributes`: Additional information about the value. Tools that process log messages interpret these attributes, which you typically provide as key-value pairs. For example, Instruments processes any  e_ngineering types_ you embed in this value. For more information, see  .
+- `value`: The interpolated type, which the system automatically wraps in a closure. The type itself doesn’t appear in the log message. Instead, the system incorporates the textual representation the type provides through its implementation of the [`CustomStringConvertible`](https://developer.apple.com/documentation/Swift/CustomStringConvertible) protocol.
+- `align`: The alignment and minimum number of columns to use when the system renders the value in a log message. For more information, see [`OSLogStringAlignment`](oslogstringalignment.md). The default value is [`none`](oslogstringalignment/none.md).
+- `privacy`: The privacy level of the value, which the system applies when it renders the value in a log message. For more information, see [`OSLogPrivacy`](oslogprivacy.md). The default value is [`auto`](oslogprivacy/auto.md).
+- `attributes`: Additional information about the value. Tools that process log messages interpret these attributes, which you typically provide as key-value pairs. For example, Instruments processes any  e_ngineering types_ you embed in this value. For more information, see [`Instruments Developer Help`](https://developer.apple.comhttps://help.apple.com/instruments/developer/mac/current/#/devcd5016d31).
 
 ## See Also
 

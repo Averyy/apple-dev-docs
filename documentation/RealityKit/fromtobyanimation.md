@@ -21,7 +21,7 @@ struct FromToByAnimation<Value> where Value : AnimatableData
 
 #### Overview
 
-To animate an entity or scene, this structure gradually changes a parameter’s value over time. You can specify a  value, which represents the animated property’s initial value at the beginning of the animation. You can also specify a  value, which determines the value of the property at the end of the animation. Alternatively, you can set a  value. The framework adds the  value to the property’s initial state to calculate the value at the end of the animation.
+To animate an entity or scene, this structure gradually changes a parameter’s value over time. You can specify a *from* value, which represents the animated property’s initial value at the beginning of the animation. You can also specify a *to* value, which determines the value of the property at the end of the animation. Alternatively, you can set a *by* value. The framework adds the *by* value to the property’s initial state to calculate the value at the end of the animation.
 
 To specify the property that this struct animates, define `bindTarget` in the intializer,
 
@@ -30,6 +30,14 @@ To specify the property that this struct animates, define `bindTarget` in the in
 ##### Configure the Animation Inputs
 
 This animation supports varying input combinations, which exhibit the following behavior. When you specify:
+
+- **A *from* and *to* value**: The animation interpolates between *from* and *to*, and ignores the *by* value.
+- **A *from* and *by* value**: The animation interpolates between *from* and the sum of *from* and *by*.
+- **Only a *from* value**: The animation interpolates between *from* and the default source value.
+- **Only a *to* value**: The animation interpolates between the default source value and *to*.
+- **A *to* and *by* value**: The animation starts at *by* subtracted from _to _and completes at *to*.
+- **Only a *by* value**: The animation interpolates between the default source value and the sum of default source value and *by*.
+- **No *from*, *to*, or *by* value**: The animation interpolates between the default source value and the default target value.
 
 The default source value is the base value of the of animated property. If multiple animations target the property, then the framework observes the output of the previous animation as the subsequent animation’s default source value. The default target value is the base value of the animated property.
 

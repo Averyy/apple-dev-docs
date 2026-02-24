@@ -21,7 +21,7 @@ var maximumValueImage: UIImage? { get set }
 
 The image you specify must fit within the bounding rectangle returned by the [`maximumValueImageRect(forBounds:)`](uislider/maximumvalueimagerect(forbounds:).md) method. If it doesn’t, the slider scales the image to fit. In addition, the slider lengthens or shortens its track as needed to accommodate the image in its bounding rectangle.
 
-Because  is a semantic concept, in a right-to-left interface, the slider automatically flips the image placement, always placing it at the trailing end of the slider’s track.
+Because *maximum* is a semantic concept, in a right-to-left interface, the slider automatically flips the image placement, always placing it at the trailing end of the slider’s track.
 
 The default value of this property is `nil`.
 

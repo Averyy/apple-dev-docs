@@ -27,7 +27,7 @@ The child tree at `idx`. Ownership follows the [`The Get Rule`](https://develope
 ## Parameters
 
 - `tree`: The tree to examine.
-- `idx`: The index of the child obtain. The value must be less than the number of children in  .
+- `idx`: The index of the child obtain. The value must be less than the number of children in `tree`.
 
 ## See Also
 

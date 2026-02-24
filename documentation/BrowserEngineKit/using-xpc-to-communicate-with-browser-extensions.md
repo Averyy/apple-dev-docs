@@ -137,6 +137,12 @@ The sending and receiving process can each set a single lightweight code require
 
 For each XPC connection on which you set a lightweight code requirement, call one of the functions below to define the lightweight code requirement and attach it to the connection. Each function returns `0` if it sets the lightweight code requirement, or another value if it encounters an error.
 
+- **[`xpc_connection_set_peer_entitlement_exists_requirement(_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_entitlement_exists_requirement(_:_:))**: A specific entitlement needs to exist in the executable’s code signature.
+- **[`xpc_connection_set_peer_entitlement_matches_value_requirement(_:_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_entitlement_matches_value_requirement(_:_:_:))**: A specific entitlement needs to exist in the executable’s code signature, and have the given value.
+- **[`xpc_connection_set_peer_team_identity_requirement(_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_team_identity_requirement(_:_:))**: The executable needs to be signed with a developer code-signing identity issued by Apple, an enterprise code-signing identity, or an identity suitable for Developer ID, Testflight, or App Store distribution, by the identified developer team. The signing identifier needs to have the specified value. The signing identifier is usually an app’s Bundle ID, or a similar string for non-app executables; pass `nil` if any executable by the developer team is appropriate.
+- **[`xpc_connection_set_peer_platform_identity_requirement(_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_platform_identity_requirement(_:_:))**: The executable needs to be signed by Apple, with the given signing identifier.
+- **[`xpc_connection_set_peer_code_signing_requirement(_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_code_signing_requirement(_:_:))**: The executable needs to satisfy the lightweight code requirement you supply as a dictionary in the `lwcr` parameter.
+
 It’s an error to call multiple functions that set lightweight code requirements on the same XPC connection, or the same function more than once. If you do, the operating system terminates your process.
 
 For example, to require that the executable’s code signature contains the browser rendering extension entitlement with a value of `com.example.browserapp`:

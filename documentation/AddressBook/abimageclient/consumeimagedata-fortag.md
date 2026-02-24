@@ -21,8 +21,8 @@ In the case of a multithreaded application, this method is always called on the 
 
 ## Parameters
 
-- `data`: You can use this image data with the   method of the   class.
-- `tag`: The tag returned from a previous call to the     method.
+- `data`: A pointer to a data object that will be set to an `NSImage`/QuickTime compatible format, or `nil` if no image could be found. You can use this image data with the `initWithData:` method of the `NSImage` class.
+- `tag`: The tag returned from a previous call to the `ABPerson` [`beginLoadingImageData(for:)`](abperson/beginloadingimagedata(for:).md) method.
 
 
 ---

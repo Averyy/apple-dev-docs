@@ -26,7 +26,7 @@ This approach allows the comparison to be based on some outside parameter, such 
 
 ## Parameters
 
-- `compare`: The function’s parameters are two objects to compare and the context parameter,  . The function should return   if the first element is smaller than the second,   if the first element is larger than the second, and   if the elements are equal.
+- `compare`: The comparison function to use to compare two elements at a time. The function’s parameters are two objects to compare and the context parameter, `context`. The function should return `NSOrderedAscending` if the first element is smaller than the second, `NSOrderedDescending` if the first element is larger than the second, and `NSOrderedSame` if the elements are equal.
 - `context`: The context argument to be passed to the compare function.
 
 ## See Also

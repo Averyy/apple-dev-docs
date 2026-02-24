@@ -28,7 +28,7 @@ func customRoutingController(_ controller: AVCustomRoutingController, handle eve
 
 - `controller`: A custom routing controller.
 - `event`: The routing event to handle.
-- `completionHandler`: A completion handler to call after processing the event. Pass   to the completion handler if the activation, reactivation, or deactivation of the route succeeds, and  , otherwise.
+- `completionHandler`: A completion handler to call after processing the event. Pass [`true`](https://developer.apple.com/documentation/Swift/true) to the completion handler if the activation, reactivation, or deactivation of the route succeeds, and [`false`](https://developer.apple.com/documentation/Swift/false), otherwise.
 
 ## See Also
 

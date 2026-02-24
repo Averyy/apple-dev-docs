@@ -8,6 +8,10 @@ The preferred initial scene session role for your app.
 **Availability**:
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 The system references this key to determine the preferred initial scene session role to create the first scene for your app. If you specify [`UISceneSessionRoleImmersiveSpaceApplication`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication.md) or [`CPSceneSessionRoleImmersiveSpaceApplication`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cpscenesessionroleimmersivespaceapplication.md), the system creates an immersive space scene which connects to your application at launch. To define the style that [`UISceneSessionRoleImmersiveSpaceApplication`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication.md) uses initially, use the [`UISceneInitialImmersionStyle`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication/uisceneinitialimmersionstyle.md) key.

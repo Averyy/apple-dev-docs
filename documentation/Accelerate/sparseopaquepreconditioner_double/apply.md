@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: property
 
-A function that calculates , where  is the preconditioner.
+A function that calculates *Y = PX*, where *P* is the preconditioner.
 
 **Availability**:
 - iOS ?+
@@ -22,7 +22,7 @@ var apply: (UnsafeMutableRawPointer, CBLAS_TRANSPOSE, DenseMatrix_Double, DenseM
 
 #### Discussion
 
-The function has some approximation to .
+The function has some approximation to *A⁻¹*.
 
 ## See Also
 

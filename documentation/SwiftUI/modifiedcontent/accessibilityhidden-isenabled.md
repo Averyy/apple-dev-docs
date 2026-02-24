@@ -24,7 +24,7 @@ func accessibilityHidden(_ hidden: Bool, isEnabled: Bool) -> ModifiedContent<Con
 ## Parameters
 
 - `hidden`: Whether to hide this view from accessibility features.
-- `isEnabled`: If true the accessibility hidden state is applied;   otherwise the accessibility hidden state is unchanged.
+- `isEnabled`: If true the accessibility hidden state is applied; otherwise the accessibility hidden state is unchanged.
 
 
 ---

@@ -16,7 +16,7 @@ class NSTableViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType> w
 
 #### Overview
 
-A  object is a specialized type of data source that works together with your table view object. It provides the behavior you need to manage updates to your table view’s data and UI in a simple, efficient way. It also conforms to the [`NSTableViewDataSource`](nstableviewdatasource.md) protocol.
+A *diffable data source* object is a specialized type of data source that works together with your table view object. It provides the behavior you need to manage updates to your table view’s data and UI in a simple, efficient way. It also conforms to the [`NSTableViewDataSource`](nstableviewdatasource.md) protocol.
 
 To fill a table view with data:
 

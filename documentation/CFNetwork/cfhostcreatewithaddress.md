@@ -33,7 +33,7 @@ This function is thread safe.
 
 ## Parameters
 
-- `addr`: A CFDataRef object containing a   structure for the address of the host. This value must not be  .
+- `addr`: A CFDataRef object containing a `sockaddr` structure for the address of the host. This value must not be `NULL`.
 
 ## See Also
 

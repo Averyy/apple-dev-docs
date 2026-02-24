@@ -26,6 +26,52 @@ You create an [`MKLocalSearch.Request`](mklocalsearch/request.md) object when yo
 
 When creating an MKLocalSearch.Request object yourself, set the [`naturalLanguageQuery`](mklocalsearch/request/naturallanguagequery.md) property to an appropriate search string, as in the following example:
 
+**Swift**:
+
+```swift
+let searchRequest = MKLocalSearch.Request()
+searchRequest.naturalLanguageQuery = "coffee"
+
+// Set the region to an associated map view's region.
+searchRequest.region = myMapView.region
+
+let search = MKLocalSearch(request: searchRequest)
+search.start { (response, error) in
+    guard let response = response else {
+        // Handle the error.
+    }
+    
+    for item in response.mapItems {
+        if let name = item.name,
+            let location = item.placemark.location {
+            print("\(name): \(location.coordinate.latitude),\(location.coordinate.longitude)")
+        }
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+MKLocalSearchRequest *searchRequest = [[MKLocalSearchRequest alloc] init];
+searchRequest.naturalLanguageQuery = @"coffee";
+
+// Set the region to an associated map view's region.
+searchRequest.region = self.myMapView.region;
+
+MKLocalSearch *search = [[MKLocalSearch alloc] initWithRequest:searchRequest];
+[search startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error) {
+    if (response) {
+        for (MKMapItem *item in response.mapItems) {
+            CLLocationCoordinate2D coordinate = item.placemark.coordinate;
+            NSLog(@"%@: %f,%f", item.name, coordinate.latitude, coordinate.longitude);
+        }
+    } else if (error) {
+        // Handle the error.
+    }
+}];
+```
+
 If your app uses an [`MKLocalSearchCompleter`](mklocalsearchcompleter.md) object to implement autocomplete support for user-supplied search strings, initialize your search request using the search completion that the user selects. In that case, use the [`init(completion:)`](mklocalsearch/request/init(completion:).md) method instead of the [`init()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/init()) method to initialize your search request object. The completion object automatically provides the value for the [`naturalLanguageQuery`](mklocalsearch/request/naturallanguagequery.md) property.
 
 ## Topics

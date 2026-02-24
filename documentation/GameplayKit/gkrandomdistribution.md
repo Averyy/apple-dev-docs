@@ -25,7 +25,7 @@ class GKRandomDistribution
 
 You choose the algorithm that randomizes source values for a distribution by initializing it with an instance of any class that implements the [`GKRandom`](gkrandom.md) protocol, such as a basic random source (a subclass of [`GKRandomSource`](gkrandomsource.md)) or another random distribution. The [`GKRandomDistribution`](gkrandomdistribution.md) class itself implements a uniform distribution—for more specialized distributions use one of the subclasses [`GKGaussianDistribution`](gkgaussiandistribution.md) and [`GKShuffledDistribution`](gkshuffleddistribution.md).
 
-In a  distribution, the probability of generating any number in a specified range (between the values of the distribution’s [`lowestValue`](gkrandomdistribution/lowestvalue.md) and [`highestValue`](gkrandomdistribution/highestvalue.md) properties) is approximately equal. In other words, there is no bias toward any possible outcome. To generate random numbers in this range, use the methods from the [`GKRandom`](gkrandom.md) protocol listed in Generating Random Numbers below.
+In a *uniform* distribution, the probability of generating any number in a specified range (between the values of the distribution’s [`lowestValue`](gkrandomdistribution/lowestvalue.md) and [`highestValue`](gkrandomdistribution/highestvalue.md) properties) is approximately equal. In other words, there is no bias toward any possible outcome. To generate random numbers in this range, use the methods from the [`GKRandom`](gkrandom.md) protocol listed in Generating Random Numbers below.
 
 For more information on choosing and using randomizers in GameplayKit, read [`Randomization`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/RandomSources.html#//apple_ref/doc/uid/TP40015172-CH9) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
@@ -89,7 +89,7 @@ For more information on choosing and using randomizers in GameplayKit, read [`Ra
 - [class GKMersenneTwisterRandomSource](gkmersennetwisterrandomsource.md)
   A basic random number generator implementing the Mersenne Twister algorithm, which is more random, but slower than the default random source.
 - [class GKGaussianDistribution](gkgaussiandistribution.md)
-  A generator for random numbers that follow a  (also known as a ) across multiple samplings.
+  A generator for random numbers that follow a *Gaussian distribution* (also known as a *normal distribution*) across multiple samplings.
 - [class GKShuffledDistribution](gkshuffleddistribution.md)
   A generator for random numbers that are uniformly distributed across many samplings, but where short sequences of similar values are unlikely.
 

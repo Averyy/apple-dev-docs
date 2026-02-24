@@ -26,8 +26,8 @@ To disable the scroll edge appearance for one or more edges, override [`contentS
 
 ## Parameters
 
-- `scrollView`: The scroll view to observe. If  , the view controller determines a scroll view automatically.
-- `edge`: The edge to observe for scroll view content alignment. Pass   or   to set the scroll view for a specific edge, or pass   to set the scroll view for all edges.
+- `scrollView`: The scroll view to observe. If `nil`, the view controller determines a scroll view automatically.
+- `edge`: The edge to observe for scroll view content alignment. Pass [`top`](nsdirectionalrectedge/top.md) or [`bottom`](nsdirectionalrectedge/bottom.md) to set the scroll view for a specific edge, or pass [`all`](nsdirectionalrectedge/all.md) to set the scroll view for all edges.
 
 ## See Also
 

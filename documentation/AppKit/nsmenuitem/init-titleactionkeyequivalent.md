@@ -24,9 +24,9 @@ For instances of the `NSMenuItem` class, the default initial state is `NSOffStat
 
 ## Parameters
 
-- `string`: The title of the menu item. This value must not be   (if there is no title, specify an empty  ).
-- `selector`: The action selector to be associated with the menu item. This value must be a valid selector or  .
-- `charCode`: A string representing a keyboard key to be used as the key equivalent. This value must not be   (if there is no key equivalent, specify an empty  ).
+- `string`: The title of the menu item. This value must not be `nil` (if there is no title, specify an empty `NSString`).
+- `selector`: The action selector to be associated with the menu item. This value must be a valid selector or `NULL`.
+- `charCode`: A string representing a keyboard key to be used as the key equivalent. This value must not be `nil` (if there is no key equivalent, specify an empty `NSString`).
 
 ## See Also
 

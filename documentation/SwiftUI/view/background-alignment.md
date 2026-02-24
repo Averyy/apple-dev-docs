@@ -60,7 +60,7 @@ struct Frontmost: View {
 ## Parameters
 
 - `background`: The view to draw behind this view.
-- `alignment`: The alignment with a default value of    that you use to position the background view.
+- `alignment`: The alignment with a default value of [`center`](alignment/center.md) that you use to position the background view.
 
 ## See Also
 

@@ -28,7 +28,7 @@ Each command queue has a fixed number of command buffers for its lifetime (see [
 
 ## Parameters
 
-- `descriptor`: An   instance that configures the   the method returns.
+- `descriptor`: An [`MTLCommandBufferDescriptor`](mtlcommandbufferdescriptor.md) instance that configures the [`MTLCommandBuffer`](mtlcommandbuffer.md) the method returns.
 
 ## See Also
 

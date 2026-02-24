@@ -20,7 +20,7 @@ When items are inserted, deleted, or moved, the collection view calls this metho
 
 ## Parameters
 
-- `updateItems`: An array of   objects that identify the changes being made.
+- `updateItems`: An array of [`NSCollectionViewUpdateItem`](nscollectionviewupdateitem.md) objects that identify the changes being made.
 
 ## See Also
 

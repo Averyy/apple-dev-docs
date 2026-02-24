@@ -24,8 +24,8 @@ An new `NSTextLocation`, or `nil` of the offset exceeds the bounds of the text.
 
 ## Parameters
 
-- `location`: An   in the text element.
-- `offset`: An offset of the number of characters to or from  .
+- `location`: An [`NSTextLocation`](nstextlocation.md) in the text element.
+- `offset`: An offset of the number of characters to or from `location`.
 
 ## See Also
 

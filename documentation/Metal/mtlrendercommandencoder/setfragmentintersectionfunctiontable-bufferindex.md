@@ -26,8 +26,8 @@ By default, the intersection function table at each index is `nil`.
 
 ## Parameters
 
-- `intersectionFunctionTable`: An   instance the command assigns to an entry in the fragment shader argument table for intersection function tables.
-- `bufferIndex`: An integer that represents the entry in the fragment shader argument table for intersection function tables that stores a record of  .
+- `intersectionFunctionTable`: An [`MTLIntersectionFunctionTable`](mtlintersectionfunctiontable.md) instance the command assigns to an entry in the fragment shader argument table for intersection function tables.
+- `bufferIndex`: An integer that represents the entry in the fragment shader argument table for intersection function tables that stores a record of `intersectionFunctionTable`.
 
 ## See Also
 

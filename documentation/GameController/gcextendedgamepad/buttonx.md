@@ -3,7 +3,7 @@
 **Framework**: Game Controller  
 **Kind**: property
 
-The left face button that uses  or another indicator as its label.
+The left face button that uses *X* or another indicator as its label.
 
 **Availability**:
 - iOS 7.0+
@@ -32,11 +32,11 @@ The face buttons in the extended gamepad profile may be either analog or digital
 - [var buttonHome: GCControllerButtonInput?](gcextendedgamepad/buttonhome.md)
   The main menu button element that players use to enter the secondary menu and pause the game.
 - [var buttonA: GCControllerButtonInput](gcextendedgamepad/buttona.md)
-  The bottom face button that uses  or another indicator as its label.
+  The bottom face button that uses *A* or another indicator as its label.
 - [var buttonB: GCControllerButtonInput](gcextendedgamepad/buttonb.md)
-  The right face button that uses  or another indicator as its label.
+  The right face button that uses *B* or another indicator as its label.
 - [var buttonY: GCControllerButtonInput](gcextendedgamepad/buttony.md)
-  The top face button that uses  or another indicator as its label.
+  The top face button that uses *Y* or another indicator as its label.
 
 
 ---

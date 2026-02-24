@@ -37,6 +37,37 @@ When your app finishes with a display link, call [`invalidate()`](cadisplaylink/
 
 The code listing below shows how to create a display link and add it to the current run loop. The display link invokes the step function, which prints the target timestamp with each screen update.
 
+**Swift**:
+
+```swift
+func createDisplayLink() {
+    let displaylink = CADisplayLink(target: self,
+                                    selector: #selector(step))
+    
+    displaylink.add(to: .current,
+                    forMode: .defaultRunLoopMode)
+}
+     
+func step(displaylink: CADisplayLink) {
+    print(displaylink.targetTimestamp)
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)createDisplayLink {
+    CADisplayLink *displayLink = [CADisplayLink displayLinkWithTarget:self
+                                                             selector:@selector(step:)];
+    [displayLink addToRunLoop:[NSRunLoop currentRunLoop]
+                      forMode:NSRunLoopCommonModes];
+}
+
+- (void)step:(CADisplayLink *)sender {
+    NSLog(@"%f", sender.targetTimestamp);
+}
+```
+
 You shouldn’t subclass [`CADisplayLink`](cadisplaylink.md).
 
 ##### Preferred and Actual Frame Rates
@@ -48,6 +79,20 @@ In iOS 15, frame rate availability can change due to the system factoring in the
 The system rounds, to the nearest factor, preferred frame rates that aren’t a divisor of the maximum frame rate. For example, setting a preferred frame rate to either 26 or 35 frames per second on a device with a maximum refresh rate of 60 frames per second yields an actual frame rate of 30 times per second.
 
 The code listing below shows how to calculate the actual frame rate by dividing 1 by your display link’s [`timestamp`](cadisplaylink/timestamp.md) subtracted from its [`targetTimestamp`](cadisplaylink/targettimestamp.md).
+
+**Swift**:
+
+```swift
+// Calculate the actual frame rate.
+let actualFramesPerSecond = 1 / (displaylink.targetTimestamp - displaylink.timestamp)
+```
+
+**Objective-C**:
+
+```objc
+// Calculate the actual frame rate.
+double actualFramesPerSecond = 1 / (displaylink.targetTimestamp - displaylink.timestamp);
+```
 
 > **Note**:  If your app needs more control over refresh rate to ensure smooth rendering of frames, use [`CAMetalDisplayLink`](cametaldisplaylink.md) and the information from [`CAMetalLayer`](cametallayer.md) instances to render frames.
 

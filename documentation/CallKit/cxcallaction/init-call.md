@@ -24,7 +24,7 @@ A new action for the specified call UUID.
 
 ## Parameters
 
-- `callUUID`: The unique identifier for the associated   object.
+- `callUUID`: The unique identifier for the associated [`CXCall`](cxcall.md) object.
 
 ## See Also
 

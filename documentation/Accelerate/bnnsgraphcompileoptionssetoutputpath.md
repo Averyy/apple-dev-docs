@@ -33,7 +33,7 @@ Note that the [`BNNSGraphCompileOptionsSetOutputFD(_:_:)`](bnnsgraphcompileoptio
 ## Parameters
 
 - `options`: The compilation options object.
-- `path`: The destination file path. Pass   to reset to the default behavior of strictly in-memory graph generation.
+- `path`: The destination file path. Pass `nil` to reset to the default behavior of strictly in-memory graph generation.
 
 ## See Also
 

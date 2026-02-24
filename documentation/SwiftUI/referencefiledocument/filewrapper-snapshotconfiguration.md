@@ -41,7 +41,7 @@ SwiftUI disables document edits during the snapshot to ensure that the documentâ
 ## Parameters
 
 - `snapshot`: The document snapshot to save.
-- `configuration`: Information about a file that already exists for the   document, if any.
+- `configuration`: Information about a file that already exists for the document, if any.
 
 ## See Also
 

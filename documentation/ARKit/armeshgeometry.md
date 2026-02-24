@@ -18,7 +18,7 @@ class ARMeshGeometry
 
 #### Overview
 
-The information in this class holds the geometry data for a single anchor of the scene mesh. Each vertex in the anchor’s mesh represents one connection point. Every three-vertex combination forms a unique triangle called a . Each face includes an outside-directional normal and a [`classification`](armeshgeometry/classification.md). If ARKit cannot classify a particular face, the value is `0`, –– the raw value for [`ARMeshClassification.none`](armeshclassification/none.md).
+The information in this class holds the geometry data for a single anchor of the scene mesh. Each vertex in the anchor’s mesh represents one connection point. Every three-vertex combination forms a unique triangle called a *face*. Each face includes an outside-directional normal and a [`classification`](armeshgeometry/classification.md). If ARKit cannot classify a particular face, the value is `0`, –– the raw value for [`ARMeshClassification.none`](armeshclassification/none.md).
 
 ## Topics
 

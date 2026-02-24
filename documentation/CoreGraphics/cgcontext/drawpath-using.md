@@ -26,7 +26,7 @@ The current path is cleared as a side effect of calling this function.
 
 ## Parameters
 
-- `mode`: A path drawing mode constant— ,  ,  ,  , or  . For a discussion of these constants, see  .
+- `mode`: A path drawing mode constant—[`CGPathDrawingMode.fill`](cgpathdrawingmode/fill.md), [`CGPathDrawingMode.eoFill`](cgpathdrawingmode/eofill.md), [`CGPathDrawingMode.stroke`](cgpathdrawingmode/stroke.md), [`CGPathDrawingMode.fillStroke`](cgpathdrawingmode/fillstroke.md), or [`CGPathDrawingMode.eoFillStroke`](cgpathdrawingmode/eofillstroke.md). For a discussion of these constants, see [`CGPath`](cgpath.md).
 
 ## See Also
 

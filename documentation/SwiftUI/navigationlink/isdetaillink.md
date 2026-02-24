@@ -33,7 +33,7 @@ The `isDetailLink` modifier only affects view-destination links. Links that pres
 
 ## Parameters
 
-- `isDetailLink`: A Boolean value that specifies whether this   link presents its destination as the detail component when used in a   multi-column navigation view.
+- `isDetailLink`: A Boolean value that specifies whether this link presents its destination as the detail component when used in a multi-column navigation view.
 
 
 ---

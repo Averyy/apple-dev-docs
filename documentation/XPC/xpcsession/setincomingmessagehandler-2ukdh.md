@@ -27,7 +27,7 @@ func setIncomingMessageHandler<Message>(_ incomingMessageHandler: @escaping @Sen
 
 ## Parameters
 
-- `incomingMessageHandler`: A closure that the session invokes when it receives messages. The closure has a parameter that contains the message from the client, and optionally returns an encodable reply message to returns to the client. If the closure returns  , you can use   to reply asynchronously after the closure completes.
+- `incomingMessageHandler`: A closure that the session invokes when it receives messages. The closure has a parameter that contains the message from the client, and optionally returns an encodable reply message to returns to the client. If the closure returns [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0), you can use [`send(message:)`](xpcsession/send(message:).md) to reply asynchronously after the closure completes.
 
 ## See Also
 

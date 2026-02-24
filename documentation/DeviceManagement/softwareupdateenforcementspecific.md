@@ -60,6 +60,13 @@ This configuration enforces a software update to a specific OS version and build
 }
 ```
 
+## Properties
+
+- `DetailsURL` (string): The URL of a web page that shows details that the organization provides about the enforced software update.
+- `TargetBuildVersion` (string): The target build version to update the device to by the appropriate time, for example, `20A242`. Use the build version for testing during seeding periods. The build version can include a supplemental version identifier, for example, `20A242a`.
+- `TargetLocalDateTime` (string) *(required)*: The local date time value that specifies when to force install the software update. Use the format `yyyy-mm-ddThh:mm:ss`, which is derived from RFC3339 but doesn’t include a time zone offset. If the user doesn’t trigger the software update before this time, the device force installs it.
+- `TargetOSVersion` (string) *(required)*: The target OS version to update the device to by the appropriate time. This is the OS version number, for example, `16.1`.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

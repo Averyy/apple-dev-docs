@@ -23,7 +23,7 @@ A `NEFilterNewFlowVerdict` object.
 
 ## Parameters
 
-- `urlAppendMapKey`: The key in the Filter Control Provider’s   dictionary corresponding to the string to append to the new flow’s request URL.
+- `urlAppendMapKey`: The key in the Filter Control Provider’s [`urlAppendStringMap`](nefiltercontrolprovider/urlappendstringmap.md) dictionary corresponding to the string to append to the new flow’s request URL.
 
 ## See Also
 

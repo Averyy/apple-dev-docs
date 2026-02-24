@@ -24,7 +24,7 @@ This method returns [`true`](https://developer.apple.com/documentation/Swift/tru
 
 ## Parameters
 
-- `compression`: A TIFF compression type. For more information, see the constants in  .
+- `compression`: A TIFF compression type. For more information, see the constants in [`NSBitmapImageRep.TIFFCompression`](nsbitmapimagerep/tiffcompression.md).
 
 ## See Also
 

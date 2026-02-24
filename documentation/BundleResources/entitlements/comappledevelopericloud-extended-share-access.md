@@ -14,6 +14,10 @@ An array of strings that represent the types of information an app can request a
 - visionOS 26.0+
 - watchOS 26.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 To add this entitlement, your app needs to use [`CloudKit`](https://developer.apple.com/documentation/CloudKit) to implement a collaborative multi-user sharing feature with a custom sharing UI that displays information about sharing participants.

@@ -22,6 +22,15 @@ Each server entry corresponds to a server that supports a different version of t
 - [object WellKnown](wellknown.md)
   A list of available servers used for authentication.
 
+## Endpoint
+
+`GET https://yourmdmhost.example.com/.well-known/com.apple.remotemanagement`
+
+## Parameters
+
+- `model-family` (string)
+- `user-identifier` (string)
+
 ## See Also
 
 - [object EnrollmentSSODocument](enrollmentssodocument.md)

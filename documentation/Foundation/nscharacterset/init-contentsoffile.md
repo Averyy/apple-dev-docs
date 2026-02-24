@@ -32,7 +32,7 @@ To read a bitmap representation from any file, use the `NSData` method[`dataWith
 
 ## Parameters
 
-- `fName`: A path to a file containing a bitmap representation of a character set. The path name must end with the extension  .
+- `fName`: A path to a file containing a bitmap representation of a character set. The path name must end with the extension `.bitmap`.
 
 ## See Also
 

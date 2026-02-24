@@ -31,7 +31,7 @@ For more information, see [`GameplayKit Programming Guide`](https://developer.ap
 
 ## Parameters
 
-- `source`: A randomizer that produces raw random values for use by the distribution. A randomizer is any object implementing the   protocol, which can be a random source algorithm such as the   class or another random distribution.
+- `source`: A randomizer that produces raw random values for use by the distribution. A randomizer is any object implementing the [`GKRandom`](gkrandom.md) protocol, which can be a random source algorithm such as the [`GKARC4RandomSource`](gkarc4randomsource.md) class or another random distribution.
 - `lowestInclusive`: The lowest value to be produced by the distribution.
 - `highestInclusive`: The highest value to be produced by the distribution.
 

@@ -21,7 +21,7 @@ This method adds an image to the map at the specified geographic location. The i
 ## Parameters
 
 - `location`: The location at which to display the image.
-- `image`: The image to display at the specified location. If the value of this parameter is  , the map adds a red pin at the specified location.
+- `image`: The image to display at the specified location. If the value of this parameter is `nil`, the map adds a red pin at the specified location.
 - `offset`: The offset (in points) at which to place the center of the image. Normally, the center point of an annotation image is placed at the specified location on the map. Use this parameter to reposition the image relative to that point. Positive offset values move the annotation image down and to the right, while negative values move it up and to the left.
 
 ## See Also

@@ -52,7 +52,7 @@ The iOS & iPadOS 15.5 SDK provides support to develop apps for iPhone, iPad, and
 
 - You can only pair up to five Matter accessories in a home. (77933589)
 - The iOS device that initiates pairing needs to be logged in to the same iCloud account as the home hub. Only the owner of a home, not an invited user, can pair Matter accessories. (76012945)
-- Adding a Matter accessory to a third-party app fails if an Apple Home doesn’t exist. (80341813)  Launch the Home App and create a Home first.
+- Adding a Matter accessory to a third-party app fails if an Apple Home doesn’t exist. (80341813) **Workaround:** Launch the Home App and create a Home first.
 
 ###### Resolved Issues
 
@@ -63,7 +63,7 @@ The iOS & iPadOS 15.5 SDK provides support to develop apps for iPhone, iPad, and
 
 ###### Known Issues
 
-- Purchasing or downloading content again from the iTunes Store and TV app might fail on some devices. (86772291)  Rebooting the device may resolve the issue.
+- Purchasing or downloading content again from the iTunes Store and TV app might fail on some devices. (86772291) **Workaround:** Rebooting the device may resolve the issue.
 
 ##### Libc++
 
@@ -86,7 +86,7 @@ The iOS & iPadOS 15.5 SDK provides support to develop apps for iPhone, iPad, and
 
 ###### Known Issues
 
-- A conversation transcript won’t scroll after viewing a photo in QuickLook. (87855403)  Back out of the conversation and then reopen it to restore scrolling.
+- A conversation transcript won’t scroll after viewing a photo in QuickLook. (87855403) **Workaround:** Back out of the conversation and then reopen it to restore scrolling.
 
 ##### Phone
 
@@ -133,7 +133,7 @@ The iOS & iPadOS 15.5 SDK provides support to develop apps for iPhone, iPad, and
 
 ###### Known Issues
 
-- When testing with StoreKit Testing in Xcode, the following APIs don’t work in the simulator: [`presentCodeRedemptionSheet()`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueue/presentCodeRedemptionSheet()), [`paymentQueueShouldShowPriceConsent(_:)`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueueDelegate/paymentQueueShouldShowPriceConsent(_:)), and [`showPriceConsentIfNeeded()`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueue/showPriceConsentIfNeeded()). (85982859)  Test these APIs using an iOS device.
+- When testing with StoreKit Testing in Xcode, the following APIs don’t work in the simulator: [`presentCodeRedemptionSheet()`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueue/presentCodeRedemptionSheet()), [`paymentQueueShouldShowPriceConsent(_:)`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueueDelegate/paymentQueueShouldShowPriceConsent(_:)), and [`showPriceConsentIfNeeded()`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueue/showPriceConsentIfNeeded()). (85982859) **Workaround:** Test these APIs using an iOS device.
 
 ##### Uikit
 

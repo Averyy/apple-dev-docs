@@ -27,7 +27,7 @@ For apps that opt in to the state preservation and restoration feature, Core Blu
 ## Parameters
 
 - `peripheral`: The peripheral manager undergoing state restoration.
-- `dict`: A dictionary that contains information about the peripheral manager, which the system preserved when the app terminated. For the available keys to this dictionary, see  .
+- `dict`: A dictionary that contains information about the peripheral manager, which the system preserved when the app terminated. For the available keys to this dictionary, see [`Peripheral Manager State Restoration Options`](peripheral-manager-state-restoration-options.md).
 
 ## See Also
 

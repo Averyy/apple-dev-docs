@@ -42,9 +42,9 @@ The `Mobile Agent Moved` signpost marks transitions; it’s the same signpost th
 As a result, there are four possible logical steps the modeler must consider when processing a signpost:
 
 1. If it’s a `Mobile Agent Exec` signpost, assert a new execution bookkeeping fact.
-2. If it’s a `Mobile Agent Exec` signpost  a previous  bookkeeping fact is present in working memory, then close the transition interval.
+2. If it’s a `Mobile Agent Exec` signpost *and* a previous *transition* bookkeeping fact is present in working memory, then close the transition interval.
 3. If it’s a `Mobile Agent Moved` signpost, assert a new transition bookkeeping fact.
-4. If it’s a `Mobile Agent Moved` signpost  a previous  bookkeeping fact is present in working memory, then close the execution interval.
+4. If it’s a `Mobile Agent Moved` signpost *and* a previous *execution* bookkeeping fact is present in working memory, then close the execution interval.
 
 Implementing the four steps requires the use of CLIPS Conditional Elements (CEs). Examples of CEs include `and`, `or`, and `not`. As the names imply, these CEs activate when all, any, or none of their input expressions are satisfied, respectively. `ExecutionAndTransitionModeling` uses these CEs to build rules that match the four possible cases.
 
@@ -194,7 +194,7 @@ Takes two 32-bit INTEGER arguments and concatenates them to create a single 64-b
 
 ##### Memory to String
 
-Treats its INTEGER arguments as a run of continuous memory values and extracts a UTF8 encoded string from it. The function automatically detects if the run of INTEGERs are 32-bit or 64-bit, assuming that the run is consistently one or the other, but  a mixture of both. The UTF8 encoding convention allows us to reliably make that determination with little overhead.
+Treats its INTEGER arguments as a run of continuous memory values and extracts a UTF8 encoded string from it. The function automatically detects if the run of INTEGERs are 32-bit or 64-bit, assuming that the run is consistently one or the other, but *not* a mixture of both. The UTF8 encoding convention allows us to reliably make that determination with little overhead.
 
 Note: you cannot pass a multifield value in as a single argument. On failure, this function will return the symbol `sentinel`.
 

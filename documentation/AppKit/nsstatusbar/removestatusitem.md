@@ -20,7 +20,7 @@ Status items to the left of the specified one in the status bar shift to the rig
 
 ## Parameters
 
-- `item`: The   object to remove.
+- `item`: The `NSStatusItem` object to remove.
 
 ## See Also
 

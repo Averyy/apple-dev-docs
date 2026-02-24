@@ -25,7 +25,7 @@ When using `CGImageDestination` functions to write depth data (along with image 
 
 ## Parameters
 
-- `outAuxDataType`: On output, either   or  , depending on the depth data’s type.
+- `outAuxDataType`: On output, either [`kCGImageAuxiliaryDataTypeDisparity`](https://developer.apple.com/documentation/ImageIO/kCGImageAuxiliaryDataTypeDisparity) or [`kCGImageAuxiliaryDataTypeDepth`](https://developer.apple.com/documentation/ImageIO/kCGImageAuxiliaryDataTypeDepth), depending on the depth data’s type.
 
 ## See Also
 

@@ -20,9 +20,9 @@ init(position: VideoReader.CameraConfiguration.Position = .front, pixelFormat: V
 
 ## Parameters
 
-- `position`: The position of the camera. The default value is  . For devices with just one camera this value is ignored.
-- `pixelFormat`: The pixel format of the camera frames. The default is  .
-- `resolution`: The camera resolution. The default values is  .
+- `position`: The position of the camera. The default value is `.front`. For devices with just one camera this value is ignored.
+- `pixelFormat`: The pixel format of the camera frames. The default is `.bgra32`.
+- `resolution`: The camera resolution. The default values is `.high`.
 - `frameRate`: The camera frame rate. The default value is 30.0 frames per second.
 
 ## See Also

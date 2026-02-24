@@ -24,7 +24,7 @@ Enable or disable TLS (1.2 and prior) session renegotiation. This defaults to `t
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A `sec_protocol_options_t` instance.
 - `renegotiation_enabled`: Flag to enable or disable TLS (1.2 and prior) session renegotiation.
 
 

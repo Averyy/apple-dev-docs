@@ -35,6 +35,10 @@ The template creates a `Provider` structure that adopts the `TimelineProvider` o
 
 In each of the protocol methods, your app needs to create and return one or more [`TimelineEntry`](timelineentry.md) instances:
 
+- **[`placeholder(in:)`](timelineprovider/placeholder(in:).md)**: Returns a single entry for your complication’s placeholder. By default, the system redacts all the content in the placeholder’s widget.
+- **[`getSnapshot(in:completion:)`](timelineprovider/getsnapshot(in:completion:).md)**: Returns a single timeline entry for your app.
+- **[`getTimeline(in:completion:)`](timelineprovider/gettimeline(in:completion:).md)**: Returns an array of timeline entries. WidgetKit uses this timeline to automatically update your complication over time.
+
 The template provides a timeline entry that contains the date when the system should display it. Add any extra properties that you need for your complications.
 
 ```swift

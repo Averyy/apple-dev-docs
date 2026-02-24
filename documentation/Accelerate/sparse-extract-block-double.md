@@ -32,12 +32,12 @@ Extract the `bi,bj`’th block from the sparse matrix `A`.
 
 ## Parameters
 
-- `A`: The sparse matrix,  , which must have been created with   or  .   is returned if not met.   holds block dimensions (fixed or variable) set with matrix object creation routine.
-- `bi`: The block row index for value extraction. Indices are 0 based (first block of matrix is  ).  Indices expected to be in the bounds of matrix dimensions, undefined behavior if not met.
-- `bj`: The block column index for value extraction. Indices are 0 based (first block of matrix is  ).  Indices expected to be in the bounds of matrix dimensions, undefined behavior if not met.
-- `row_stride`: The row stride in number of elements to move from one row to the next for the block  .
-- `col_stride`: The column stride in number of elements to move from one column to the next for the block  .
-- `val`: Pointer to dense block to place the extracted values.  Expected to be of size   where   is the block size for the matrix object at block index  . This dimensions is set at matrix object creation time.
+- `A`: The sparse matrix, *A*, which must have been created with [`sparse_matrix_block_create_double(_:_:_:_:)`](sparse_matrix_block_create_double(_:_:_:_:).md) or [`sparse_matrix_variable_block_create_double(_:_:_:_:)`](sparse_matrix_variable_block_create_double(_:_:_:_:).md). [`SPARSE_ILLEGAL_PARAMETER`](sparse_illegal_parameter.md) is returned if not met. `A` holds block dimensions (fixed or variable) set with matrix object creation routine.
+- `bi`: The block row index for value extraction. Indices are 0 based (first block of matrix is `A[0,0]`).  Indices expected to be in the bounds of matrix dimensions, undefined behavior if not met.
+- `bj`: The block column index for value extraction. Indices are 0 based (first block of matrix is `A[0,0]`).  Indices expected to be in the bounds of matrix dimensions, undefined behavior if not met.
+- `row_stride`: The row stride in number of elements to move from one row to the next for the block `val`.
+- `col_stride`: The column stride in number of elements to move from one column to the next for the block `val`.
+- `val`: Pointer to dense block to place the extracted values.  Expected to be of size `K * L` where `K * L` is the block size for the matrix object at block index `bi,bj`. This dimensions is set at matrix object creation time.
 
 ## See Also
 

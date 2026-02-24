@@ -33,8 +33,8 @@ Specific selections made by the [`AVPlayerItem`](avplayeritem.md) instance using
 
 ## Parameters
 
-- `criteria`: An instance of   that specifies the selection criteria.
-- `mediaCharacteristic`: The media characteristic for which the selection criteria are to be applied. Supported values include  ,  , and  . See Media Characteristics in the  .
+- `criteria`: An instance of [`AVPlayerMediaSelectionCriteria`](avplayermediaselectioncriteria.md) that specifies the selection criteria.
+- `mediaCharacteristic`: The media characteristic for which the selection criteria are to be applied. Supported values include [`audible`](avmediacharacteristic/audible.md), [`legible`](avmediacharacteristic/legible.md), and [`visual`](avmediacharacteristic/visual.md). See Media Characteristics in the `AVFoundation Constants`.
 
 ## See Also
 

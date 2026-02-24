@@ -46,7 +46,7 @@ struct ContentView: View {
 
 ## Parameters
 
-- `cornerRadius`: The corner radius, or   to use the system   default.
+- `cornerRadius`: The corner radius, or `nil` to use the system default.
 
 ## See Also
 

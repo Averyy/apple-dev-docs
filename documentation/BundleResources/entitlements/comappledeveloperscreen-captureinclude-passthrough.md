@@ -8,6 +8,12 @@ A Boolean value that indicates whether an app can include passthrough in screen 
 **Availability**:
 - visionOS 2.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 To optimize the viewing of displayed content for passthrough, Apple Vision Pro adjusts its refresh rate to 90 Hz, 96 Hz, or 100 Hz to account for physical environment changes, such as lighting. A flicker sensor and visionOS algorithms work to reduce passthrough artifacts, especially those that can be seen on physical displays due to varying lighting conditions. Apps don’t affect passthrough latency.

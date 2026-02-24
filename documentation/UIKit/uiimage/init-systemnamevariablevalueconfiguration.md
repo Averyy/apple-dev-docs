@@ -36,7 +36,7 @@ To look up the names of system symbol images, download the SF Symbols app from [
 ## Parameters
 
 - `name`: The name of the system symbol image.
-- `variableValue`: The value the system uses to customize the image content, between   and  .
+- `variableValue`: The value the system uses to customize the image content, between `0` and `1`.
 - `configuration`: The image configuration the system applies to the image.
 
 ## See Also

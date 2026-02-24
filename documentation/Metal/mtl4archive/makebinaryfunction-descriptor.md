@@ -26,7 +26,7 @@ A new GPU binary function instance if the method succeeds; otherwise `nil`.
 
 ## Parameters
 
-- `descriptor`: A configuration that tells the method which GPU function to   make into a binary function and which options to apply when compiling it.
+- `descriptor`: A configuration that tells the method which GPU function to make into a binary function and which options to apply when compiling it.
 
 
 ---

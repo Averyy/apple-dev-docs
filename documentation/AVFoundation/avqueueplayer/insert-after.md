@@ -24,7 +24,7 @@ func insert(_ item: AVPlayerItem, after afterItem: AVPlayerItem?)
 ## Parameters
 
 - `item`: The item to insert into the queue.
-- `afterItem`: The player item in the queue to follow. Pass   to append the item to the queue.
+- `afterItem`: The player item in the queue to follow. Pass `nil` to append the item to the queue.
 
 ## See Also
 

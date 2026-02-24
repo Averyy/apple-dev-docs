@@ -10,6 +10,10 @@ A predicate that determines whether a File Provider extension action appears in 
 - iPadOS 11.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [NSExtensionFileProviderActionIdentifier](information-property-list/nsextension/nsextensionfileprovideractions/nsextensionfileprovideractionidentifier.md)

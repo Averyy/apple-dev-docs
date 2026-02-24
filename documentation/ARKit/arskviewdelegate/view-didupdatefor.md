@@ -22,7 +22,7 @@ Depending on the session configuration, ARKit may automatically update anchors i
 
 ## Parameters
 
-- `view`: The   object rendering the scene.
+- `view`: The [`ARSKView`](arskview.md) object rendering the scene.
 - `node`: The updated SpriteKit node.
 - `anchor`: The AR anchor corresponding to the node.
 

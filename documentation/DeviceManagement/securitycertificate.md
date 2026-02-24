@@ -47,6 +47,10 @@ Specify `com.apple.configuration.security.certificate` as the declaration type.
 }
 ```
 
+## Properties
+
+- `CredentialAssetReference` (string) *(required)*: The identifier of an asset declaration that contains the certificate to install.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

@@ -44,8 +44,8 @@ See the first code example in [`RuleMark`](rulemark.md) for the setup of the str
 
 ## Parameters
 
-- `xStart`: The x start position. If   is   the rule will start at the leading edge of the plotting area.
-- `xEnd`: The x end position. If   is   the rule will end at the trailing edge of the plotting area.
+- `xStart`: The x start position. If `xStart` is `nil` the rule will start at the leading edge of the plotting area.
+- `xEnd`: The x end position. If `xEnd` is `nil` the rule will end at the trailing edge of the plotting area.
 - `y`: The value plotted with y.
 
 

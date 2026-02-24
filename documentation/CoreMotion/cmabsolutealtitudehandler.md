@@ -26,8 +26,8 @@ You pass a block of this type to the altimeter object’s [`startAbsoluteAltitud
 
 ## Parameters
 
-- `altitudeData`: The current altitude for the device. If there’s an error generating the data, this parameter is  .
-- `error`: The error object. Returns   if the altimeter successfully delivers the altitude data. When an error occurs, you can use the information in the provided object to recover the data or to alert the user.
+- `altitudeData`: The current altitude for the device. If there’s an error generating the data, this parameter is `nil`.
+- `error`: The error object. Returns `nil` if the altimeter successfully delivers the altitude data. When an error occurs, you can use the information in the provided object to recover the data or to alert the user.
 
 ## See Also
 

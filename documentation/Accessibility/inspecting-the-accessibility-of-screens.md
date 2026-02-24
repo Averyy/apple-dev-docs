@@ -18,11 +18,24 @@ In Accessibility Inspector, the target menu displays a list of connected devices
 
 Once you select your app, Accessibility Inspector displays detailed information about the accessibility properties of the current screen and focused element. The following images show the inspection of an app with the Quote element selected, and the corresponding iOS app showing the Quote element highlighted in green:
 
+**Accessibility Inspector window**:
+
+![The accessibility inspector inspecting an app with the Quote button selected.](https://docs-assets.developer.apple.com/published/6b8f456f85928baa8a78e6f33426c197/accessibility-inspector-window-for-quote%402x.png)
+
+**Corresponding iOS app**:
+
+![An iOS app being inspected by Accessibility Inspector. The Quote button is highlighted by a green rectangle that indicates it's the current target of inspection.](https://docs-assets.developer.apple.com/published/1192ccce7d0d1de86d82bf893894e186/quote-button-highlighted-in-green%402x.png)
+
 ##### Inspect Individual Elements
 
-You choose which element to inspect with the  button or by pressing Option Space to toggle inspection mode. While in inspection mode, interact with the element you want to inspect to select it. For example, in macOS, click the element to select it. Similarly, in iOS, tap the element to select it.
+You choose which element to inspect with the *Target an element* button or by pressing Option Space to toggle inspection mode. While in inspection mode, interact with the element you want to inspect to select it. For example, in macOS, click the element to select it. Similarly, in iOS, tap the element to select it.
 
 Accessibility Inspector displays information about the element you select in several sections:
+
+- **Basic**: The most important accessibility information for an element.
+- **Actions**: Interactions available for the current element, such as Activate, Scroll left or right, or accessibility custom actions.
+- **Element**: Detailed accessibility properties for the current element.
+- **Hierarchy**: Information about the view hierarchy on the current screen that leads from the root to the currently selected element.
 
 Each screen in your app has the potential to contain accessibility issues; periodically navigate through your app during development and check for issues. If you find an inaccessible element, focus Accessibility Inspector on that element, examine its values, and trigger its actions to find the problem. For more information, see [`Performing accessibility audits for your app`](performing-accessibility-audits-for-your-app.md).
 

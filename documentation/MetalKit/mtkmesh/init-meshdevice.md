@@ -25,7 +25,7 @@ A new MetalKit mesh object, or `nil` if an error occured.
 
 #### Discussion
 
-This initializer does  initialize any children meshes of the Model I/O mesh.
+This initializer does *not* initialize any children meshes of the Model I/O mesh.
 
 All vertex buffers in the source Model I/O mesh and the index buffer of each of its submeshes must have been created with a [`MTKMeshBufferAllocator`](mtkmeshbufferallocator.md) object.
 

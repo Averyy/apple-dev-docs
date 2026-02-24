@@ -27,7 +27,7 @@ A sample using this method can be found in [`Working With Mutable Binary Data`](
 ## Parameters
 
 - `bytes`: A buffer containing data to append to the receiver’s content.
-- `length`: The number of bytes from   to append.
+- `length`: The number of bytes from `bytes` to append.
 
 ## See Also
 

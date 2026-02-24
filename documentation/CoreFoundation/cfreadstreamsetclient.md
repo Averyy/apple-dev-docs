@@ -35,9 +35,9 @@ Although all Core Foundation streams currently support asynchronous notification
 ## Parameters
 
 - `stream`: The stream to modify.
-- `streamEvents`: The set of events for which the client should receive callbacks. The events are listed in  . If you pass  , the current client for   is removed.
-- `clientCB`: The client callback function to be called when one of the events requested in   occurs. If  , the current client for   is removed.
-- `clientContext`: A structure holding contextual information for the stream client. The function copies the information out of the structure, so the memory pointed to by   does not need to persist beyond the function call. If  , the current client for   is removed.
+- `streamEvents`: The set of events for which the client should receive callbacks. The events are listed in [`CFStreamEventType`](cfstreameventtype.md). If you pass [`kCFStreamEventNone`](cfstreameventtype/kcfstreameventnone.md), the current client for `stream` is removed.
+- `clientCB`: The client callback function to be called when one of the events requested in `streamEvents` occurs. If `NULL`, the current client for `stream` is removed.
+- `clientContext`: A structure holding contextual information for the stream client. The function copies the information out of the structure, so the memory pointed to by `clientContext` does not need to persist beyond the function call. If `NULL`, the current client for `stream` is removed.
 
 ## See Also
 

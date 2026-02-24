@@ -40,7 +40,7 @@ Only scroll indicators that you configure to be visible flash. To flash scroll i
 
 ## Parameters
 
-- `onAppear`: A Boolean value that indicates whether the scroll   indicators flash when the scroll view appears.
+- `onAppear`: A Boolean value that indicates whether the scroll indicators flash when the scroll view appears.
 
 ## See Also
 

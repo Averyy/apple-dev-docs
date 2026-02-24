@@ -24,6 +24,18 @@ Your WatchKit extension uses interface objects to manipulate the visual elements
 
 Do not subclass or create instances of this class, or any of its subclasses, yourself. Instead, define outlets in your interface controller class and connect them to the corresponding objects in your storyboard file. For example, to refer to a button in your interface, define a property with the following syntax in your interface controller class:
 
+**Swift**:
+
+```swift
+@IBOutlet weak var button: WKInterfaceButton!
+```
+
+**Objective-C**:
+
+```objc
+@property (weak, nonatomic) IBOutlet WKInterfaceButton* myButton;
+```
+
 At runtime, WatchKit creates the appropriate interface objects and assigns them to the outlets in your interface controller.
 
 WatchKit provides one-way communication between the interface objects in your extension and the corresponding interface elements in your watchOS app. You can set the values of an interface object, but you cannot get the current values. If you want to know the current value of an attribute, you must save the value yourself.

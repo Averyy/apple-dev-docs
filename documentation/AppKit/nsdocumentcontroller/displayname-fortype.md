@@ -43,7 +43,7 @@ BinaryFile = "Binary file format";
 
 ## Parameters
 
-- `typeName`: The name of a document type, specified by   in the application’s   file.
+- `typeName`: The name of a document type, specified by `CFBundleTypeName` in the application’s `Info.plist` file.
 
 ## See Also
 

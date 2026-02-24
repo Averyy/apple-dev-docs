@@ -22,13 +22,13 @@ When a call to [`AsyncIOBundled`](iousbhostpipe/asynciobundled.md) finishes, the
 
 ## Parameters
 
-- `action`: A pointer to the   object of the request.
+- `action`: A pointer to the [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) object of the request.
 - `ioCompletionIndex`: The index of the first ring element that the system transferred.
 - `ioCompletionCount`: The number of successfully transferred elements.
-- `actualByteCountArray`: An array of integers, each of which contains the amount of data that the method transferred for an element. The first integer in the array contains the length of the buffer for the element at the index  . The next integer contains the length of the buffer for the next element in the ring, and so on.
-- `actualByteCountArrayCount`: The number of elements in the   parameter. The value in this parameter must match the value in  .
+- `actualByteCountArray`: An array of integers, each of which contains the amount of data that the method transferred for an element. The first integer in the array contains the length of the buffer for the element at the index `ioCompletionIndex`. The next integer contains the length of the buffer for the next element in the ring, and so on.
+- `actualByteCountArrayCount`: The number of elements in the `actualByteCountArray` parameter. The value in this parameter must match the value in `ioCompletionCount`.
 - `statusArray`: An array of status values for each transfer.
-- `statusArrayCount`: The number of elements in the   parameter. The value in this parameter must match the value in  .
+- `statusArrayCount`: The number of elements in the `statusArray` parameter. The value in this parameter must match the value in `ioCompletionCount`.
 
 ## See Also
 

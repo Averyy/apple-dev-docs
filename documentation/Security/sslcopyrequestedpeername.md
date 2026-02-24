@@ -28,7 +28,7 @@ Use the `peerNameLen` returned by this function when calling the [`SSLCopyReques
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `peerName`: The fully qualified domain name of the peer—for example,  . The name is in the form of a C string, except that   termination is optional.
+- `peerName`: The fully qualified domain name of the peer—for example, `store.apple.com`. The name is in the form of a C string, except that `NULL` termination is optional.
 - `peerNameLen`: On return, points to the length of the peer domain name.
 
 

@@ -4,6 +4,11 @@
 
 #### Overview
 
+- **Containing profile atom**: Track (sound), movie
+- **`part-ID`**: `0x20202020` (universal feature)
+- **`feature-code`**: `'afmt'`
+- **`feature-value`**: Unsigned `int(32)` (a four-character-code) holding the QuickTime audio codec type copied from `SoundDescription` structure’s `dataFormat` field
+
 #### Feature Values
 
 This is the four-character-code found in a sound sample description.

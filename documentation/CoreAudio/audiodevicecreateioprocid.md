@@ -29,7 +29,7 @@ AudioDeviceIOProcIDs allow for the client to register the same function pointer 
 
 - `inDevice`: The AudioDevice to register the IOProc with.
 - `inProc`: The AudioDeviceIOProc to register.
-- `inClientData`: A pointer to client data that is passed back to the IOProc when it is   called.
+- `inClientData`: A pointer to client data that is passed back to the IOProc when it is called.
 - `outIOProcID`: The newly created AudioDeviceIOProcID.
 
 ## See Also

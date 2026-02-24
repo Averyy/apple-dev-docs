@@ -30,7 +30,7 @@ A new `Text.LineStyle` or `nil` when `nsUnderlineStyle` contains styles not supp
 
 ## Parameters
 
-- `nsUnderlineStyle`: A value of    to wrap with  .
+- `nsUnderlineStyle`: A value of `NSUnderlineStyle` to wrap with `Text.LineStyle`.
 
 ## See Also
 

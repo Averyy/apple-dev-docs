@@ -30,7 +30,7 @@ This function is used by a plug-in or host when performing dynamic registration.
 
 ## Parameters
 
-- `factoryUUID`: The   object representing the factory function that can create the type being registered.
+- `factoryUUID`: The `CFUUID` object representing the factory function that can create the type being registered.
 - `typeUUID`: The UUID type to register.
 
 ## See Also

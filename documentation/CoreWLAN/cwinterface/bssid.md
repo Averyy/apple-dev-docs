@@ -16,7 +16,7 @@ func bssid() -> String?
 
 #### Discussion
 
-Dynamically queries the interface for the current BSSID. Returns a UTF-8 string formatted as <00:00:00:00:00:00>, or  in the case of an error, or if the interface is not participating in a network.
+Dynamically queries the interface for the current BSSID. Returns a UTF-8 string formatted as <00:00:00:00:00:00>, or *nil* in the case of an error, or if the interface is not participating in a network.
 
 ## See Also
 

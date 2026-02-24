@@ -48,7 +48,7 @@ for iteration in 0 ..< configuration.maximumIterationCount {
 ## Parameters
 
 - `model`: The model to update.
-- `input`: A shaped array of windowed features. The shape should be   .
+- `input`: A shaped array of windowed features. The shape should be `[batchSize, inputWindowSize, featureSize]`.
 
 ## See Also
 

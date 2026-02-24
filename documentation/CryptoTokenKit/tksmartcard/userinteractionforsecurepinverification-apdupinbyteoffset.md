@@ -34,7 +34,7 @@ Once the interaction has been successfully completed, the results are available 
 
 - `PINFormat`: The PIN format descriptor.
 - `APDU`: The Application Protocol Data Unit (APDU) used by the Smart Card to fill in PIN data.
-- `PINByteOffset`: The offset, in bytes, within the Application Protocol Data Unit (APDU) field to mark a location of a PIN block for filling in the entered PIN.
+- `PINByteOffset`: The offset, in bytes, within the Application Protocol Data Unit (APDU) field to mark a location of a PIN block for filling in the entered PIN. > ❗ **Important**:  This parameter is not currently used. Pass `0`.
 
 ## See Also
 

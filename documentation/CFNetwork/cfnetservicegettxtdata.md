@@ -33,7 +33,7 @@ This function gets the data in a thread-safe way, but the data itself is not saf
 
 ## Parameters
 
-- `theService`: Reference for the network service whose TXT record data is to be obtained; cannot be  . Note that in order to get TXT record data, you must resolve   by calling   or   before calling this function.
+- `theService`: Reference for the network service whose TXT record data is to be obtained; cannot be `NULL`. Note that in order to get TXT record data, you must resolve `theService` by calling [`CFNetServiceResolve`](cfnetserviceresolve.md) or [`CFNetServiceResolveWithTimeout(_:_:_:)`](cfnetserviceresolvewithtimeout(_:_:_:).md) before calling this function.
 
 ## See Also
 

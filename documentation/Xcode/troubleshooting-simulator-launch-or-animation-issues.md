@@ -36,6 +36,10 @@ If you need to increase the maximum number of open files, run the command `sudo 
 
 In some cases slow scrolling or animation is due to the simulator. Use the items in Debug > Graphics Quality Override to check if this is an issue.
 
+- **Device Default**: Use the default graphics quality for the device.
+- **Low Quality**: Force low-quality graphics. This choice results in faster scrolling and animation if Simulator is the cause.
+- **High Quality**: Force high-quality graphics.
+
 ##### Report Bugs
 
 For issues that may be part of Simulator or a simulated device, please file a bug through the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com/bug-reporting/).

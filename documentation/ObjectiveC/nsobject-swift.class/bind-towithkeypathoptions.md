@@ -16,10 +16,10 @@ func bind(_ binding: NSBindingName, to observable: Any, withKeyPath keyPath: Str
 
 ## Parameters
 
-- `binding`: The key path for a property of the receiver previously exposed using the   method.
+- `binding`: The key path for a property of the receiver previously exposed using the [`exposeBinding(_:)`](nsobject-swift.class/exposebinding(_:).md) method.
 - `observable`: The bound-to object.
-- `keyPath`: A key path to a property reachable from  . The elements in the path must be key-value observing compliant (see  ).
-- `options`: A dictionary containing options for the binding, such as placeholder objects or an   identifier as described in Constants. This value is optional—pass   to specify no options.
+- `keyPath`: A key path to a property reachable from `observableController`. The elements in the path must be key-value observing compliant (see [`Key-Value Observing Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i)).
+- `options`: A dictionary containing options for the binding, such as placeholder objects or an `NSValueTransformer` identifier as described in Constants. This value is optional—pass `nil` to specify no options.
 
 ## See Also
 

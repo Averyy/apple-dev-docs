@@ -23,7 +23,7 @@ You set the default leaderboard in App Store Connect when you configure your gam
 ## Parameters
 
 - `categoryID`: The category ID string for one of your game’s leaderboards.
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: A block to call when the request completes. The block receives the following parameter: - **error**: If an error occurs, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is `nil`.
 
 ## See Also
 

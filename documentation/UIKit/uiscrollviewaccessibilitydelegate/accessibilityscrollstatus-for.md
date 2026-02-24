@@ -24,7 +24,7 @@ A custom status string for the current offset.
 
 #### Discussion
 
-For example, in a user interface that scrolls through the books in a bookcase, you could return “Books 10 through 20”. By default, VoiceOver announces “Page  of ” while scrolling.
+For example, in a user interface that scrolls through the books in a bookcase, you could return “Books 10 through 20”. By default, VoiceOver announces “Page *X* of *Y*” while scrolling.
 
 Use the [`accessibilityAttributedScrollStatus(for:)`](uiscrollviewaccessibilitydelegate/accessibilityattributedscrollstatus(for:).md) method if portions of your string should be spoken in a different language.
 

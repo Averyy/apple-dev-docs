@@ -28,7 +28,7 @@ Returning [`true`](https://developer.apple.com/documentation/Swift/true) is guar
 ## Parameters
 
 - `gestureRecognizer`: The gesture recognizer that might need to wait to recognize its gesture. This is the object with which the delegate is associated.
-- `otherGestureRecognizer`: The gesture recognizer that must fail before the object in   can recognize its gesture.
+- `otherGestureRecognizer`: The gesture recognizer that must fail before the object in `gestureRecognizer` can recognize its gesture.
 
 ## See Also
 

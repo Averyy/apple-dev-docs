@@ -27,7 +27,7 @@ An array of nodes whose bounding boxes intersect the view frustum defined by the
 
 #### Discussion
 
-Any node containing a camera or spotlight may serve as a point of view (see the [`pointOfView`](scnscenerenderer/pointofview.md) property for details). Such a node defines a —a portion of the scene’s coordinate space, shaped like a truncated pyramid, that encloses all points visible from that point of view.
+Any node containing a camera or spotlight may serve as a point of view (see the [`pointOfView`](scnscenerenderer/pointofview.md) property for details). Such a node defines a *viewing frustum*—a portion of the scene’s coordinate space, shaped like a truncated pyramid, that encloses all points visible from that point of view.
 
 Use this method find all nodes whose content lies within the viewing frustum defined by another node (which may or may not be the scene renderer’s current [`pointOfView`](scnscenerenderer/pointofview.md) node).
 
@@ -35,7 +35,7 @@ Note that this method does not perform occlusion testing. That is, the returned 
 
 ## Parameters
 
-- `pointOfView`: A node defining a point of view, as used by the   property.
+- `pointOfView`: A node defining a point of view, as used by the [`pointOfView`](scnscenerenderer/pointofview.md) property.
 
 ## See Also
 

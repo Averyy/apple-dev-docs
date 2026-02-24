@@ -50,6 +50,10 @@ For more information, see [`Analyzing draw command and compute dispatch performa
 
 There are a few interesting metrics you can investigate when beginning to optimize your workload:
 
+- **Counters in the Performance Limiters counter set**: Use limiters as clues to offload work to underutilized subsystems on the GPU to help eliminate stalls in a particular subsystem. For more information, see [`Reducing shader bottlenecks`](reducing-shader-bottlenecks.md).
+
+- **Vertices counter in the Vertices counter set**: Check whether the number of vertices from a render pass or a draw command matches what you expect.
+
 Sometimes, counters data may only hint at a problem, and you can benefit by leveraging additional Metal tools. For example, if your fragment shader time is unexpectedly high, you can use the Shader editor to discover which specific lines in your fragment shader are slowing down the execution. For more information, see [`Inspecting shaders`](inspecting-shaders.md).
 
 ## See Also

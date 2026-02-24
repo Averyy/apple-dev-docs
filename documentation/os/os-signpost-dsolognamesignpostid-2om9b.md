@@ -27,7 +27,7 @@ func os_signpost(_ type: OSSignpostType, dso: UnsafeRawPointer = #dsohandle, log
 - `name`: The name of the signpost.
 - `signpostID`: A signpost identifier you use to disambiguate between signposts with the same name.
 - `format`: A constant string or format string that produces a human-readable log message.
-- `arguments`: Additional arguments to substitute into the   string parameter. Pass the expected number of arguments in the order that they appear in the string. If   is a constant string, don’t include any additional arguments.
+- `arguments`: Additional arguments to substitute into the `format` string parameter. Pass the expected number of arguments in the order that they appear in the string. If `format` is a constant string, don’t include any additional arguments.
 
 ## See Also
 

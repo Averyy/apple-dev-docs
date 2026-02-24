@@ -26,7 +26,7 @@ If `inNode` does not support checking for supported record types, all possible r
 ## Parameters
 
 - `node`: The node.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

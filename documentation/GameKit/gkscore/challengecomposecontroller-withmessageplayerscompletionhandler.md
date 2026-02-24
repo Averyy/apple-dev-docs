@@ -32,7 +32,7 @@ When this method is called, it creates a new background task to handle the reque
 ## Parameters
 
 - `message`: The preformatted, player-editable message that is being sent to other players.
-- `players`: An array of   objects that contains the player identifiers that the challenge is to be sent to.
+- `players`: An array of [`GKPlayer`](gkplayer.md) objects that contains the player identifiers that the challenge is to be sent to.
 - `completionHandler`: A block to be called after the view controller has been displayed. Contains the reason the handler was called and all player identifiers that the challenge was sent to.
 
 ## See Also

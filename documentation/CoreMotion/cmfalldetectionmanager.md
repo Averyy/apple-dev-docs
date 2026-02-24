@@ -16,7 +16,7 @@ class CMFallDetectionManager
 
 #### Overview
 
-In Series 4 and later, Apple Watch can detect when a wearer falls, and contact emergency services if necessary. Using the `CMFallDetectionManager`, your app can request the user’s authorization, and set up a delegate to receive notifications about these . For more information, see [`Use fall detection with Apple Watch`](https://developer.apple.comhttps://support.apple.com/en-us/HT208944).
+In Series 4 and later, Apple Watch can detect when a wearer falls, and contact emergency services if necessary. Using the `CMFallDetectionManager`, your app can request the user’s authorization, and set up a delegate to receive notifications about these *fall detection events*. For more information, see [`Use fall detection with Apple Watch`](https://developer.apple.comhttps://support.apple.com/en-us/HT208944).
 
 > ❗ **Important**:  To use this API, you must include the [`NSFallDetectionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSFallDetectionUsageDescription) key in your app’s `Info.plist` file and provide a usage description string for the key. The description appears in the prompt that the user receives when the system asks to access fall detection data for your app. If you don’t include a usage description string, your app crashes when you call this API.
 

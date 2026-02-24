@@ -28,7 +28,7 @@ func JSValueIsEqual(_ ctx: JSContextRef!, _ a: JSValueRef!, _ b: JSValueRef!, _ 
 - `ctx`: The execution context to use.
 - `a`: The first value to test.
 - `b`: The second value to test.
-- `exception`: A pointer to a   to store an exception in, if any. Pass   to discard any exception.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 

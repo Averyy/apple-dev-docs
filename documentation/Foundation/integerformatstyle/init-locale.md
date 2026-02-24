@@ -34,7 +34,7 @@ To format a single integer, you can use the [`BinaryInteger`](https://developer.
 
 ## Parameters
 
-- `locale`: The locale to use when formatting or parsing integers. Defaults to  .
+- `locale`: The locale to use when formatting or parsing integers. Defaults to [`autoupdatingCurrent`](locale/autoupdatingcurrent.md).
 
 
 ---

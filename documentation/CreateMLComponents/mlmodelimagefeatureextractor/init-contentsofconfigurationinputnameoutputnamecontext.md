@@ -23,8 +23,8 @@ init(contentsOf url: URL, configuration: MLModelConfiguration, inputName: String
 
 - `url`: URL of the .mlmodel file.
 - `configuration`: The model configuration of the CoreML model.
-- `inputName`: The name of the input which the   expects.
-- `outputName`: The name of the output from the  .
+- `inputName`: The name of the input which the `model` expects.
+- `outputName`: The name of the output from the `model`.
 - `context`: The Core Image context.
 
 ## See Also

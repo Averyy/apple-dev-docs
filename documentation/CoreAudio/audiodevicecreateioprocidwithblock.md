@@ -27,8 +27,8 @@ Creates an AudioDeviceIOProcID from an AudioDeviceIOBlock
 
 - `outIOProcID`: The newly created AudioDeviceIOProcID.
 - `inDevice`: The AudioDevice to register the Block with.
-- `inDispatchQueue`: The dispatch queue on which the IOBlock will be dispatched. All   IOBlocks are dispatched synchronously. Note that this dispatch queue will be   retained until a matching call to AudioDeviceDestroyIOProcID is made. If   this value is NULL, then the IOBlock will be directly invoked.
-- `inIOBlock`: The AudioDeviceIOBlock to register.  Note that this block will be   Block_copy’d and the reference maintained until a matching call to   AudioDeviceDestroyIOProcID is made.
+- `inDispatchQueue`: The dispatch queue on which the IOBlock will be dispatched. All IOBlocks are dispatched synchronously. Note that this dispatch queue will be retained until a matching call to AudioDeviceDestroyIOProcID is made. If this value is NULL, then the IOBlock will be directly invoked.
+- `inIOBlock`: The AudioDeviceIOBlock to register.  Note that this block will be Block_copy’d and the reference maintained until a matching call to AudioDeviceDestroyIOProcID is made.
 
 ## See Also
 

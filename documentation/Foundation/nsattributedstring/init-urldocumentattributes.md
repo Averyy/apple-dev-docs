@@ -24,8 +24,8 @@ The contents of `aURL` are examined to best load the file in whatever format itâ
 
 ## Parameters
 
-- `url`: An   object specifying the document to load.
-- `dict`: An in-out dictionary containing document-level attributes described in  . May be  , in which case no document attributes are returned.
+- `url`: An `NSURL` object specifying the document to load.
+- `dict`: An in-out dictionary containing document-level attributes described in `Document Attributes`. May be `NULL`, in which case no document attributes are returned.
 
 ## See Also
 

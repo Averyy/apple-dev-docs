@@ -40,10 +40,10 @@ If an error occurs during the creation of the string, then `cStr` is not dealloc
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new string. Pass   or   to use the current default allocator.
-- `cStr`: The  -terminated C string to be used to create the CFString object.  The string must use an 8-bit encoding.
+- `alloc`: The allocator to use to allocate memory for the new string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `cStr`: The `NULL`-terminated C string to be used to create the CFString object.  The string must use an 8-bit encoding.
 - `encoding`: The encoding of the characters in the C string. The encoding must specify an 8-bit encoding.
-- `contentsDeallocator`: The CFAllocator object to use to deallocate the external string buffer when it is no longer needed. You can pass   or   to request the default allocator for this purpose. If the buffer does not need to be deallocated, or if you want to assume responsibility for deallocating the buffer (and not have the CFString object deallocate it), pass  .
+- `contentsDeallocator`: The CFAllocator object to use to deallocate the external string buffer when it is no longer needed. You can pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to request the default allocator for this purpose. If the buffer does not need to be deallocated, or if you want to assume responsibility for deallocating the buffer (and not have the CFString object deallocate it), pass [`kCFAllocatorNull`](kcfallocatornull.md).
 
 ## See Also
 

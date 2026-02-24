@@ -33,7 +33,8 @@ The provider block is executed synchronously at the time when a corresponding pr
 ## Parameters
 
 - `errorDomain`: The error domain of the provider.
-- `provider`: A block to be executed synchronously at the time a corresponding property is accessed.
+- `provider`: A block to be executed synchronously at the time a corresponding property is accessed. - **err**: The error object that is being accessed.
+- **userInfoKey**: The user info key corresponding to the accessed property.
 
 ## See Also
 

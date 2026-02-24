@@ -35,7 +35,7 @@ Apple Watch Series 3 and later estimates the user’s VO2max by measuring the us
 
 The user must wear their Apple Watch for at least one day before the system can generate the first [`vo2Max`](hkquantitytypeidentifier/vo2max.md) sample. Additionally, the system doesn’t generate a [`vo2Max`](hkquantitytypeidentifier/vo2max.md) sample on the user’s first workout.
 
-Apple Watch estimates  based on sub-maximal predictions rather than . Users don’t need to achieve peak heart rate to receive an estimate; however, the system does need to estimate their peak heart rate. Users who take medications that may reduce their peak heart rate can toggle a medication switch in the Health app to enable more accurate VO2max estimates.
+Apple Watch estimates *VO2max* based on sub-maximal predictions rather than *peakVO2*. Users don’t need to achieve peak heart rate to receive an estimate; however, the system does need to estimate their peak heart rate. Users who take medications that may reduce their peak heart rate can toggle a medication switch in the Health app to enable more accurate VO2max estimates.
 
 ## Topics
 

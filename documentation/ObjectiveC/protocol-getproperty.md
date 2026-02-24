@@ -28,8 +28,8 @@ The property specified by `name`, `isRequiredProperty`, and `isInstanceProperty`
 
 - `proto`: A protocol.
 - `name`: The name of a property.
-- `isRequiredProperty`: A Boolean value that indicates whether   is a required property.
-- `isInstanceProperty`: A Boolean value that indicates whether   is an instance property.
+- `isRequiredProperty`: A Boolean value that indicates whether `name` is a required property.
+- `isInstanceProperty`: A Boolean value that indicates whether `name` is an instance property.
 
 ## See Also
 

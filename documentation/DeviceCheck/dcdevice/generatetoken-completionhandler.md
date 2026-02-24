@@ -34,7 +34,8 @@ Your server uses the generated token in its requests to get or set the persisten
 
 ## Parameters
 
-- `completion`: A completion block that includes the following parameters:
+- `completion`: A completion block that includes the following parameters: - `token`:  An ephemeral token that identifies the current device.
+- `error`: The error that occurred, if any.
 
 
 ---

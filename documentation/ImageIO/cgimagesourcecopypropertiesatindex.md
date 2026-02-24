@@ -27,8 +27,8 @@ A dictionary that contains the properties associated with the image. See `CGImag
 ## Parameters
 
 - `isrc`: The image source that contains the image data.
-- `index`: The zero-based index into the images of the image source. If the index is invalid, this method returns  .
-- `options`: A dictionary you can use to request additional options. For a list of possible values, see  .
+- `index`: The zero-based index into the images of the image source. If the index is invalid, this method returns `NULL`.
+- `options`: A dictionary you can use to request additional options. For a list of possible values, see [`Specifying the Read Options`](cgimagesource#Specifying-the-Read-Options.md).
 
 ## See Also
 

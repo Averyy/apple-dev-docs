@@ -25,8 +25,8 @@ In macOS 10.4 and later, if there are multiple selections, this method acts on t
 ## Parameters
 
 - `charRange`: The range of characters to select. This range must begin and end on glyph boundaries and not split base glyphs and their nonspacing marks.
-- `affinity`: The selection affinity for the selection. See   for more information about how affinities work.
-- `stillSelectingFlag`:   to behave appropriately for a continuing selection where the user is still dragging the mouse,   otherwise. If  , the receiver doesn’t send notifications or remove the marking from its marked text. If  , the receiver posts an   to the default notification center and removes the marking from marked text if the new selection is greater than the marked region.
+- `affinity`: The selection affinity for the selection. See [`selectionAffinity`](nstextview/selectionaffinity.md) for more information about how affinities work.
+- `stillSelectingFlag`: [`true`](https://developer.apple.com/documentation/Swift/true) to behave appropriately for a continuing selection where the user is still dragging the mouse, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. If [`true`](https://developer.apple.com/documentation/Swift/true), the receiver doesn’t send notifications or remove the marking from its marked text. If [`false`](https://developer.apple.com/documentation/Swift/false), the receiver posts an [`didChangeSelectionNotification`](nstextview/didchangeselectionnotification.md) to the default notification center and removes the marking from marked text if the new selection is greater than the marked region.
 
 ## See Also
 

@@ -22,11 +22,11 @@ An application’s extension receives a callback once the combination of specifi
 
 ## Parameters
 
-- `applications`: An optional list of applications to include in the event. A small subset of popular App Store   apps have known associated web domains that get included implicitly. For example, an event that includes   an app implicitly includes usage of the app’s web domain.
+- `applications`: An optional list of applications to include in the event. A small subset of popular App Store apps have known associated web domains that get included implicitly. For example, an event that includes an app implicitly includes usage of the app’s web domain.
 - `categories`: An optional list of categories to include in the event.
 - `webDomains`: An optional list of web domains to include in the event. Some web domains have associated apps included implicitly.
-- `threshold`: The amount of time that results in a callback to a  .
-- `includesPastActivity`: Whether the system takes into account the person’s device activity before your app starts monitoring the event.   For example, if your app calls   at 1:30pm with a schedule   of 1:00pm to 2:00pm, then this boolean determines whether any activity between 1:00 PM and 1:30 PM will contribute to its threshold.
+- `threshold`: The amount of time that results in a callback to a [`DeviceActivityMonitor`](deviceactivitymonitor.md).
+- `includesPastActivity`: Whether the system takes into account the person’s device activity before your app starts monitoring the event. For example, if your app calls [`startMonitoring(_:during:events:)`](deviceactivitycenter/startmonitoring(_:during:events:).md) at 1:30pm with a schedule of 1:00pm to 2:00pm, then this boolean determines whether any activity between 1:00 PM and 1:30 PM will contribute to its threshold.
 
 
 ---

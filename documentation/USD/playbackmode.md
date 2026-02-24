@@ -6,7 +6,7 @@ Metadata that controls animation idling until a behavior takes over.
 
 #### Overview
 
-Set the `playbackMode` metadata on the document’s , that is, the outermost container for scene description. For more information about setting stage metadata, see [`UsdStage`](https://developer.apple.comhttps://openusd.org/docs/api/class_usd_stage.html) > Stage Metadata.
+Set the `playbackMode` metadata on the document’s *stage*, that is, the outermost container for scene description. For more information about setting stage metadata, see [`UsdStage`](https://developer.apple.comhttps://openusd.org/docs/api/class_usd_stage.html) > Stage Metadata.
 
 When an asset specifies playback metadata and a start animation, the animation plays automatically and loops until a trigger executes the `StartAnimationAction`. After the start animation completes, the asset’s behaviors ([`Preliminary_Behavior`](preliminary-behavior.md)) take control of the animation. If you don’t define a start animation for the asset, this property indicates whether an animation should restart after it finishes playing.
 
@@ -19,6 +19,9 @@ uniform token playbackMode = "loop" (
 ```
 
 ##### Playback Modes
+
+- **`none`**: Runs a start animation only once until the system fires an animation trigger.
+- **`loop`**: Plays a start animation on a loop until the system fires an animation trigger.
 
 ##### Specify an Initial Idling Animation
 

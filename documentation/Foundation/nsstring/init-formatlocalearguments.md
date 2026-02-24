@@ -42,9 +42,9 @@ See [`String Programming Guide`](https://developer.apple.comhttps://developer.ap
 
 ## Parameters
 
-- `format`: A format string. See   for examples of how to use this method, and   for a list of format specifiers. This value must not be  .
-- `locale`: For legacy support, this may be an instance of   containing locale information.
-- `argList`: A list of arguments to substitute into  .
+- `format`: A format string. See [`Formatting String Objects`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/Articles/FormatStrings.html#//apple_ref/doc/uid/20000943) for examples of how to use this method, and [`String Format Specifiers`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFStrings/formatSpecifiers.html#//apple_ref/doc/uid/TP40004265) for a list of format specifiers. This value must not be `nil`. > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `format` is `nil`.
+- `locale`: An [`NSLocale`](nslocale.md) object specifying the locale to use. To use the current locale (specified by user preferences), pass [[`NSLocale`](nslocale.md) [`current`](nslocale/current.md)]. To use the system locale, pass `nil`. For legacy support, this may be an instance of `NSDictionary` containing locale information.
+- `argList`: A list of arguments to substitute into `format`.
 
 ## See Also
 

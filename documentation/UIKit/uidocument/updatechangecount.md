@@ -23,7 +23,7 @@ Calling this method can affect the value returned by [`hasUnsavedChanges`](uidoc
 
 ## Parameters
 
-- `change`: A constant that indicates whether a change has been made, cleared, undone, or redone. See   for more information.
+- `change`: A constant that indicates whether a change has been made, cleared, undone, or redone. See [`UIDocument.ChangeKind`](uidocument/changekind.md) for more information.
 
 ## See Also
 

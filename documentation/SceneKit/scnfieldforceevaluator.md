@@ -28,6 +28,12 @@ You use this type of block to create a custom physics field with the [`customFie
 
 The block takes the following parameters:
 
+- **position**: The position of the object affected by the field, in the local coordinate space of the node containing the field.
+- **velocity**: The velocity of the object affected by the field, relative to the local coordinate space of the node containing the field.
+- **mass**: The mass of the object affected by the field. (See the [`mass`](scnphysicsbody/mass.md) property for physics bodies and the [`particleMass`](scnparticlesystem/particlemass.md) property for particle systems.)
+- **charge**: The electrical charge of the object affected by the field. (See the [`charge`](scnphysicsbody/charge.md) property for physics bodies and the [`particleCharge`](scnparticlesystem/particlecharge.md) property for particle systems.)
+- **time**: The elapsed time, in seconds, since the last simulation step.
+
 Your block uses these parameters to compute and return an [`SCNVector3`](scnvector3.md) force vector, which SceneKit then applies to the object affected by the field.
 
 ## See Also

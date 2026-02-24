@@ -137,7 +137,7 @@ The app and daemon are independent, so you can sign them in either order.
 
 #### Configure Your Entitlements
 
-A code signature can include  — key-value pairs that grant an executable permission to use a service or technology. When macOS runs a process, it grants that process the entitlements that its executable’s code signature claims. For more information, see [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements).
+A code signature can include *entitlements* — key-value pairs that grant an executable permission to use a service or technology. When macOS runs a process, it grants that process the entitlements that its executable’s code signature claims. For more information, see [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements).
 
 > ❗ **Important**: Don’t apply entitlements to library code.  It doesn’t do anything useful and can prevent your code from running.
 

@@ -27,9 +27,9 @@ The value for the constraint is calculated as (`srcAttr` * `scale`) + `offset`).
 
 - `attr`: The attribute of the layer for which to create a new constraint.
 - `srcId`: The name of the layer that this constraint is calculated relative to.
-- `srcAttr`: The attribute of   the constraint is calculated relative to.
-- `m`: The amount to scale the value of  .
-- `c`: The offset added to the value of  .
+- `srcAttr`: The attribute of `srcLayer` the constraint is calculated relative to.
+- `m`: The amount to scale the value of `srcAttr`.
+- `c`: The offset added to the value of `srcAttr`.
 
 ## See Also
 

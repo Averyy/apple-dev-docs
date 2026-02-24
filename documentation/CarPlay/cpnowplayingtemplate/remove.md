@@ -22,7 +22,7 @@ You must register an observer using the [`add(_:)`](cpnowplayingtemplate/add(_:)
 
 ## Parameters
 
-- `observer`: An object that implements the   protocol.
+- `observer`: An object that implements the [`CPNowPlayingTemplateObserver`](cpnowplayingtemplateobserver.md) protocol.
 
 ## See Also
 

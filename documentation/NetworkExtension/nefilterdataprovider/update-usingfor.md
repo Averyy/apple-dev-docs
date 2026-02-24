@@ -17,8 +17,8 @@ func update(_ flow: NEFilterSocketFlow, using verdict: NEFilterDataVerdict, for 
 ## Parameters
 
 - `flow`: The NEFilterSocketFlow to update the verdict for.
-- `verdict`: An   instance.   This must be an   or    verdict, or a data verdict created with the   Swift initializer or  ObjectiveC type method,   .
-- `direction`: The direction to which the verdict applies.   Pass   to update the verdict for both the inbound and outbound directions.   This parameter has no effect if the verdict is  .
+- `verdict`: An [`NEFilterDataVerdict`](nefilterdataverdict.md) instance. This must be an [`allow()`](nefilterdataverdict/allow().md) or [`drop()`](nefilterdataverdict/drop().md) verdict, or a data verdict created with the Swift initializer or  ObjectiveC type method, [`init(passBytes:peekBytes:)`](nefilterdataverdict/init(passbytes:peekbytes:).md).
+- `direction`: The direction to which the verdict applies. Pass [`NETrafficDirection.any`](netrafficdirection/any.md) to update the verdict for both the inbound and outbound directions. This parameter has no effect if the verdict is [`drop()`](nefilterdataverdict/drop().md).
 
 
 ---

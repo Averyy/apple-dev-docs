@@ -32,6 +32,12 @@ The system calls this method to request an enumerator for the specified item.
 
 Possible item identifiers include:
 
+- **[`rootContainer`](nsfileprovideritemidentifier/rootcontainer.md)**: The system passes this identifier when the user begins browsing your file provider’s content.
+- **A directory’s [`itemIdentifier`](nsfileprovideritemprotocol/itemidentifier.md)**: The system requests a new enumerator each time the user opens a new directory.
+- **[`workingSet`](nsfileprovideritemidentifier/workingset.md)**: The system can request an enumerator so that it can sync the working set in the background.
+- **A document’s [`itemIdentifier`](nsfileprovideritemprotocol/itemidentifier.md)**: The system subscribes to live updates by requesting an enumerator for a document.
+- **The [`trashContainer`](nsfileprovideritemidentifier/trashcontainer.md) directory.**: The system passes this identifier when the user browses the contents of the trash. If your File Provider extension doesn’t support moving items to the trash, your implementation should throw or return an error.
+
 Your implementation should create and return an [`NSFileProviderEnumerator`](nsfileproviderenumerator.md) object that provides the requested content.
 
 ##### Handle Errors

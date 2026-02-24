@@ -22,9 +22,9 @@ class MLImageConstraint
 
 #### Overview
 
-In CoreML, an  is a collection of pixels represented by [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) (Swift) or [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) (Objective-C). An  is a model input or output that accepts or produces, respectively, an image bundled in an [`MLFeatureValue`](mlfeaturevalue.md). `MLImageConstraint` defines the image feature’s limitations for the images within an `MLFeatureValue`.
+In CoreML, an *image* is a collection of pixels represented by [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) (Swift) or [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) (Objective-C). An *image feature* is a model input or output that accepts or produces, respectively, an image bundled in an [`MLFeatureValue`](mlfeaturevalue.md). `MLImageConstraint` defines the image feature’s limitations for the images within an `MLFeatureValue`.
 
-If a model has an image feature for an input or output, the model author uses an  by creating an [`MLFeatureDescription`](mlfeaturedescription.md). The feature description for an image input or output has:
+If a model has an image feature for an input or output, the model author uses an *image feature description* by creating an [`MLFeatureDescription`](mlfeaturedescription.md). The feature description for an image input or output has:
 
 - Its [`type`](mlfeaturedescription/type.md) property set to [`MLFeatureType.image`](mlfeaturetype/image.md)
 - Its [`imageConstraint`](mlfeaturedescription/imageconstraint.md) property set to an [`MLImageConstraint`](mlimageconstraint.md) instance configured to the image feature’s size and format

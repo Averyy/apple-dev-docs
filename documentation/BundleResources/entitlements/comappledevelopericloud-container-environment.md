@@ -13,6 +13,10 @@ The development or production environment to use for the iCloud containers.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [com.apple.developer.icloud-container-development-container-identifiers](entitlements/com.apple.developer.icloud-container-development-container-identifiers.md)

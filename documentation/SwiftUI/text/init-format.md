@@ -42,7 +42,7 @@ var body: some View {
 ## Parameters
 
 - `input`: The underlying value to display.
-- `format`: A format style of type   to convert the underlying value   of type   to an attributed string representation.
+- `format`: A format style of type `F` to convert the underlying value of type `F.FormatInput` to an attributed string representation.
 
 ## See Also
 

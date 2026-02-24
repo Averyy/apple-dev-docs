@@ -20,7 +20,7 @@ var summaryVariants: [String] { get }
 
 When creating the [`CPRouteChoice`](cproutechoice.md) object, localize each variant for display to the user. The system displays the first variant that fits into the available screen space, so arrange the variants from most to least preferred display order. The array contains at least one variant.
 
-An example variant summary is 
+An example variant summary is *Via I-280 South.*
 
 ## See Also
 

@@ -65,11 +65,11 @@ The symbol inputs, like all other elements that you draw to the canvas, lack ind
 
 ## Parameters
 
-- `opaque`: A Boolean that indicates whether the canvas is fully   opaque. You might be able to improve performance by setting this   value to  , but then drawing a non-opaque image into the   context produces undefined results. The default is  .
-- `colorMode`: A working color space and storage format of the canvas.   The default is  .
-- `rendersAsynchronously`: A Boolean that indicates whether the canvas   can present its contents to its parent view asynchronously. The   default is  .
-- `renderer`: A closure in which you conduct immediate mode drawing.   The closure takes two inputs: a context that you use to issue   drawing commands and a size — representing the current   size of the canvas — that you can use to customize the content.   The canvas calls the renderer any time it needs to redraw the   content.
-- `symbols`: A   that you use to supply SwiftUI views to   the canvas for use during drawing. Uniquely tag each view   using the   modifier, so that you can find them from   within your renderer using the    method.
+- `opaque`: A Boolean that indicates whether the canvas is fully opaque. You might be able to improve performance by setting this value to `true`, but then drawing a non-opaque image into the context produces undefined results. The default is `false`.
+- `colorMode`: A working color space and storage format of the canvas. The default is [`ColorRenderingMode.nonLinear`](colorrenderingmode/nonlinear.md).
+- `rendersAsynchronously`: A Boolean that indicates whether the canvas can present its contents to its parent view asynchronously. The default is `false`.
+- `renderer`: A closure in which you conduct immediate mode drawing. The closure takes two inputs: a context that you use to issue drawing commands and a size — representing the current size of the canvas — that you can use to customize the content. The canvas calls the renderer any time it needs to redraw the content.
+- `symbols`: A [`ViewBuilder`](viewbuilder.md) that you use to supply SwiftUI views to the canvas for use during drawing. Uniquely tag each view using the `View/tag(_:)` modifier, so that you can find them from within your renderer using the [`resolveSymbol(id:)`](graphicscontext/resolvesymbol(id:).md) method.
 
 ## See Also
 

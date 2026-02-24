@@ -24,8 +24,8 @@ The tvOS 13 SDK provides support for developing tvOS apps for Apple TV devices r
 
 ###### Known Issues
 
-- [`MKMarkerAnnotationView`](https://developer.apple.com/documentation/MapKit/MKMarkerAnnotationView) doesn’t render the default glyph image. (52143655)  Set the [`glyphImage`](https://developer.apple.com/documentation/MapKit/MKMarkerAnnotationView/glyphImage) property on [`MKMarkerAnnotationView`](https://developer.apple.com/documentation/MapKit/MKMarkerAnnotationView) instances.
-- [`MKMarkerAnnotationView`](https://developer.apple.com/documentation/MapKit/MKMarkerAnnotationView) doesn’t render the markers for annotations using the default tint color. (51908728)  Set the [`markerTintColor`](https://developer.apple.com/documentation/MapKit/MKMarkerAnnotationView/markerTintColor) property on [`MKMarkerAnnotationView`](https://developer.apple.com/documentation/MapKit/MKMarkerAnnotationView) instances.
+- [`MKMarkerAnnotationView`](https://developer.apple.com/documentation/MapKit/MKMarkerAnnotationView) doesn’t render the default glyph image. (52143655) **Workaround:** Set the [`glyphImage`](https://developer.apple.com/documentation/MapKit/MKMarkerAnnotationView/glyphImage) property on [`MKMarkerAnnotationView`](https://developer.apple.com/documentation/MapKit/MKMarkerAnnotationView) instances.
+- [`MKMarkerAnnotationView`](https://developer.apple.com/documentation/MapKit/MKMarkerAnnotationView) doesn’t render the markers for annotations using the default tint color. (51908728) **Workaround:** Set the [`markerTintColor`](https://developer.apple.com/documentation/MapKit/MKMarkerAnnotationView/markerTintColor) property on [`MKMarkerAnnotationView`](https://developer.apple.com/documentation/MapKit/MKMarkerAnnotationView) instances.
 
 ##### Networking
 

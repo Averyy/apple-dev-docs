@@ -26,8 +26,8 @@ Use this initializer when your app interacts with a Bluetooth accessory that’s
 
 ## Parameters
 
-- `accessoryData`: The accessory’s configuration data formatted to the  .
-- `identifier`: The accessory’s Bluetooth peer identifier. For more information, see    .
+- `accessoryData`: The accessory’s configuration data formatted to the [`Ultra Wideband (UWB) third-party device specification`](https://developer.apple.comhttps://developer.apple.com/nearby-interaction).
+- `identifier`: The accessory’s Bluetooth peer identifier. For more information, see [`CBPeer`](https://developer.apple.com/documentation/CoreBluetooth/CBPeer) [`identifier`](https://developer.apple.com/documentation/CoreBluetooth/CBPeer/identifier).
 
 ## See Also
 

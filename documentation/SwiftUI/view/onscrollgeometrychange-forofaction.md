@@ -61,9 +61,10 @@ For responding to non-scroll geometry changes, see the [`onGeometryChange(for:of
 
 ## Parameters
 
-- `type`: The type of value transformed from a  .
-- `transform`: A closure that transforms a    to your type.
-- `action`: A closure to run when the transformed data changes.
+- `type`: The type of value transformed from a [`ScrollGeometry`](scrollgeometry.md).
+- `transform`: A closure that transforms a [`ScrollGeometry`](scrollgeometry.md) to your type.
+- `action`: A closure to run when the transformed data changes. - **oldValue**: The old value that failed the comparison check.
+- **newValue**: The new value that failed the comparison check.
 
 ## See Also
 

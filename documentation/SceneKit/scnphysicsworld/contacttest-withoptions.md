@@ -31,7 +31,7 @@ SceneKit sends messages to the physics world’s contactdelegate object only whe
 ## Parameters
 
 - `body`: The body to test for contact.
-- `options`: A dictionary of options affecting the test, or   to use default options. For applicable keys and the possible values, see  .
+- `options`: A dictionary of options affecting the test, or `nil` to use default options. For applicable keys and the possible values, see `Physics Test Options Keys`.
 
 ## See Also
 

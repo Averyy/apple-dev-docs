@@ -11,6 +11,10 @@ The names of the intent classes your app can’t handle when the user locks the 
 - tvOS 14.0+
 - visionOS 1.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 To specify this information in Xcode, add the intent class name to your app target’s Supported Intents in the Project Editor. Then set the Authentication level to Restricted While Locked.

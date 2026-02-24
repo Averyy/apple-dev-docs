@@ -23,7 +23,7 @@ Adds the specified entity as a child to this entity.
 ## Parameters
 
 - `child`: The child entity to add to the collection.
-- `preservingWorldTransform`:   to preserve the world transform.   to   preserve the relative transform. (Use   if the   model should keep its effective location and size in the   scene!)
+- `preservingWorldTransform`: `true` to preserve the world transform. `false` to preserve the relative transform. (Use `true` if the model should keep its effective location and size in the scene!)
 
 ## See Also
 

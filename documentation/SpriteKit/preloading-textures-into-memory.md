@@ -14,6 +14,31 @@ This process happens automatically in the background, but it isn’t free. If to
 
 The following code shows how to preload an array of [`SKTexture`](sktexture.md) objects. The [`preload(_:withCompletionHandler:)`](sktexture/preload(_:withcompletionhandler:).md) method calls the completion handler after all of the textures are loaded into memory. In this example, all of the textures for a particular level of the game are preloaded in a single operation. When the textures are all in memory, the completion handler is called. It creates the scene and presents it. (You need to add code to provide these texture objects to the scene; that code isn’t shown here).
 
+**Swift**:
+
+```swift
+SKTexture.preload(textureArrayForLevel1) {
+    // The textures are loaded into memory. Start the level.
+    let gameScene = GamePlayScene(size: CGSize(width: 768, height: 1024))
+    
+    if let spriteView = view as? SKView {
+        spriteView.presentScene(gameScene)
+    }
+}
+```
+
+**Obj-C**:
+
+```objc
+[SKTexture preloadTextures:textureArrayForLevel1 withCompletionHandler:^
+    {
+        // The textures are loaded into memory. Start the level.
+        GamePlayScene* gameScene = [[GamePlayScene alloc] initWithSize:CGSizeMake(768,1024)];
+        SKView *spriteView = (SKView *) self.view;
+        [spriteView presentScene: gameScene];
+    }];
+```
+
 ##### Choose a Time to Preload
 
 Because you are intimately familiar with the design of your game or app, you are the best person to know when new textures are needed. The exact design of your preloading code is going to depend on your game engine. Here are a few possible designs to consider:

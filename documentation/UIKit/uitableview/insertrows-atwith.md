@@ -27,7 +27,7 @@ When this method is called in an animation block defined by the [`beginUpdates()
 ## Parameters
 
 - `indexPaths`: An array of index path objects, each representing a row index and section index that together identify a row in the table view.
-- `animation`: A constant that either specifies the kind of animation to perform when inserting the cell or requests no animation. See   for descriptions of the constants.
+- `animation`: A constant that either specifies the kind of animation to perform when inserting the cell or requests no animation. See [`UITableView.RowAnimation`](uitableview/rowanimation.md) for descriptions of the constants.
 
 ## See Also
 

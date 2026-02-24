@@ -13,6 +13,12 @@ The app’s role with respect to the document type.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
+**Default**: `None`
+
 ## See Also
 
 - [CFBundleTypeIconFile](information-property-list/cfbundledocumenttypes/cfbundletypeiconfile.md)

@@ -25,7 +25,7 @@ To obtain a copy of the issuer’s distinguished name in a format suitable for d
 ## Parameters
 
 - `certificate`: The certificate from which the issuer’s distinguished name should be copied.
-- `error`: A pointer to a   variable where an error object is stored upon failure. If not  , the caller is responsible for checking this variable and releasing the resulting object if it exists.
+- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) variable where an error object is stored upon failure. If not `NULL`, the caller is responsible for checking this variable and releasing the resulting object if it exists.
 
 
 ---

@@ -17,7 +17,7 @@ init(nsImage: NSImage)
 
 ## Parameters
 
-- `nsImage`: The AppKit image to wrap with a SwiftUI  .   instance.
+- `nsImage`: The AppKit image to wrap with a SwiftUI [`Image`](image.md). instance.
 
 ## See Also
 

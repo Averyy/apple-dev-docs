@@ -23,7 +23,7 @@ init<S, T>(_ other: T, including scope: KeyPath<AttributeScopes, S.Type>) where 
 ## Parameters
 
 - `other`: An attributed string or attributed substring.
-- `scope`: An   key path that identifies an attribute scope to associate with the attributed string.
+- `scope`: An [`AttributeScopes`](attributescopes.md) key path that identifies an attribute scope to associate with the attributed string.
 
 ## See Also
 

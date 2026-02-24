@@ -46,6 +46,14 @@ ProductList(departmentId: departmentId, productId: $productId)
 
 SwiftUI uses the binding and views to add a [`Picker`](picker.md) to the search field. By default, the picker appears below the search field in macOS when search is active, or in iOS when someone starts entering text into the search field:
 
+**macOS**:
+
+![A macOS window with three navigation panes. The pane on the left lists the items, Produce, Frozen, and Bakery. The middle pane has a picker at the top with the choices, Fruit and Vegetable, and Vegetable is selected. The middle pane lists products, all of which are vegetables. The pane on the right has the placeholder text Select a Product. The toolbar has a search field in the upper right of the window that has the placeholder text, Search.](https://docs-assets.developer.apple.com/published/e49076b4593cc5d57e091ed1aea38750/Search-scope-1-macOS%402x.png)
+
+**iOS**:
+
+![A part of an iOS screen that shows a search field with the placeholder text, Search. A picker appears below the search field with two choices, Fruit and Vegetable, and Vegetable is selected. A list of vegetables appears below the picker.](https://docs-assets.developer.apple.com/published/e296820cd7fddd3124b322c265a0d1ba/Search-scope-1-iOS%402x.png)
+
 You can change when the picker appears by using the [`searchScopes(_:activation:_:)`](view/searchscopes(_:activation:_:).md) modifier instead, and supplying one of the [`SearchScopeActivation`](searchscopeactivation.md) values, like [`onTextEntry`](searchscopeactivation/ontextentry.md) or [`onSearchPresentation`](searchscopeactivation/onsearchpresentation.md).
 
 To ensure that the picker operates correctly, match the type of the scope binding with the type of each view’s tag. In the above example, both the `scope` input and the tags for each view have the type `ProductScope`.

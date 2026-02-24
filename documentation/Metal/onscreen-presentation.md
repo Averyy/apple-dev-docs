@@ -8,7 +8,7 @@ Show the output from a GPU’s rendering pass to the user in your app.
 
 A texture contains visual data that you may want to display onscreen, such as a filtered image or a frame of animation in a game. To display a texture on a device’s screen, you need to create or acquire a drawable texture from [`Core Animation`](https://developer.apple.com/documentation/QuartzCore).
 
-In Metal, a  is a texture that bridges the display subsystem within [`Core Animation`](https://developer.apple.com/documentation/QuartzCore) to Metal. You can use a drawable as the output of a render pass and then present it to a display with its [`MTLDrawable`](mtldrawable.md) protocol.
+In Metal, a *drawable* is a texture that bridges the display subsystem within [`Core Animation`](https://developer.apple.com/documentation/QuartzCore) to Metal. You can use a drawable as the output of a render pass and then present it to a display with its [`MTLDrawable`](mtldrawable.md) protocol.
 
 > **Note**:  You can’t present a texture you directly create in Metal unless you copy its content to a drawable using a blit pass (see [`Blit passes`](blit-passes.md)).
 

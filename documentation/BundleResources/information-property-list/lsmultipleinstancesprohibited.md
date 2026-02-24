@@ -8,6 +8,10 @@ A Boolean value indicating whether more than one user can launch the app simulta
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [UIRequiredDeviceCapabilities](information-property-list/uirequireddevicecapabilities.md)

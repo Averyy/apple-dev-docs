@@ -21,7 +21,7 @@ The encoded number of streams.
 
 #### Discussion
 
-This method parses endpoint descriptors and returns the number of supported streams as  in .
+This method parses endpoint descriptors and returns the number of supported streams as *n* in *(2^n)*.
 
 ## Parameters
 

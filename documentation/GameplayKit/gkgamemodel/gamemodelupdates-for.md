@@ -26,7 +26,7 @@ An array of instances of your game’s move class (a custom class implementing t
 
 #### Discussion
 
-Your implementation of the [`GKGameModelUpdate`](gkgamemodelupdate.md) protocol, or , should add properties or methods that describe a move in terms of your game. In this method, you create one instance of your move class for each move currently allowed to the specified player, filling in each instance’s custom properties with the information that describes that move. GameplayKit calls this method to speculate about possible future moves and their effects, using a copy of the active game board.
+Your implementation of the [`GKGameModelUpdate`](gkgamemodelupdate.md) protocol, or *move class*, should add properties or methods that describe a move in terms of your game. In this method, you create one instance of your move class for each move currently allowed to the specified player, filling in each instance’s custom properties with the information that describes that move. GameplayKit calls this method to speculate about possible future moves and their effects, using a copy of the active game board.
 
 For example, in a Tic-Tac-Toe game, the move class would identify which of the nine spaces on the board to place a mark in. Your [`gameModelUpdates(for:)`](gkgamemodel/gamemodelupdates(for:).md) method would create an instance of the move class for each space not already marked. Your implementation should also take into account whether any moves are possible at all—if the game has already been won or has resulted in a draw, this method should return `nil`.
 
@@ -36,7 +36,7 @@ This method should return `nil` if the specified player is not valid or if no mo
 
 ## Parameters
 
-- `player`: An instance of your game’s player class (a custom class implementing the   protocol) representing the player whose moves are to be evaluated.
+- `player`: An instance of your game’s player class (a custom class implementing the [`GKGameModelPlayer`](gkgamemodelplayer.md) protocol) representing the player whose moves are to be evaluated.
 
 ## See Also
 

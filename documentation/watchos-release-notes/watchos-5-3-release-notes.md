@@ -12,7 +12,7 @@ The watchOS 5.3 SDK provides support for developing watchOS apps for Apple Watch
 
 ###### Known Issues
 
-- Devices running watchOS 5.3 don’t appear as available for development in Xcode 10.2.1. (50638444)  Run the following command in Terminal: ```None
+- Devices running watchOS 5.3 don’t appear as available for development in Xcode 10.2.1. (50638444) **Workaround:** Run the following command in Terminal: ```None
 defaults write com.apple.dt.Xcode Enable43515398 -bool YES
 ```
 

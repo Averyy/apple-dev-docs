@@ -24,7 +24,7 @@ This is the first function in a sequence of encoder functions that you call to s
 
 ## Parameters
 
-- `cmsEncoderOut`: On return, points to a CMSEncoder reference. You must use the   function to free this reference when you are finished using it.
+- `cmsEncoderOut`: On return, points to a CMSEncoder reference. You must use the `CFRelease` function to free this reference when you are finished using it.
 
 
 ---

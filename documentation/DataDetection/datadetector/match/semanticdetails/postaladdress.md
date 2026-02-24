@@ -22,7 +22,7 @@ case postalAddress(DataDetector.Match.SemanticDetails.PostalAddress)
 
 ## Parameters
 
-- `PostalAddress`: A   structure.
+- `PostalAddress`: A [`DataDetector.Match.SemanticDetails.PostalAddress`](datadetector/match/semanticdetails/postaladdress.md) structure.
 
 
 ---

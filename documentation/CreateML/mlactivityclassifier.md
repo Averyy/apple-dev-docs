@@ -16,7 +16,7 @@ struct MLActivityClassifier
 
 #### Overview
 
-An activity classifier is a machine-learning model that your app can use to categorize user , based on the motion of the user’s device.
+An activity classifier is a machine-learning model that your app can use to categorize user *activities*, based on the motion of the user’s device.
 
 You create an activity classifier by gathering a training dataset of a device’s motion sensors, such as the accelerometer and gyroscope on an Apple Watch. For example, you can create an activity classifier that recognizes a person waving, shaking hands, or throwing a ball by gathering the motion-sensor data from people performing those activities.
 

@@ -32,7 +32,7 @@ Audio nodes have input and output busses ([`AVAudioNodeBus`](avaudionodebus.md))
 - `node2`: The destination audio node.
 - `bus1`: The output bus of the source audio node.
 - `bus2`: The input bus of the destination audio node.
-- `format`: If not  , the engine uses this value for the format of the source audio node’s output bus. In all cases, the engine matches the format of the destination audio node’s input bus to the source audio node’s output bus.
+- `format`: If not `NULL`, the engine uses this value for the format of the source audio node’s output bus. In all cases, the engine matches the format of the destination audio node’s input bus to the source audio node’s output bus.
 
 ## See Also
 

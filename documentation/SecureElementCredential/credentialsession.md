@@ -23,6 +23,10 @@ actor CredentialSession
 
 Create a credential session with the [`startSession()`](credentialsession/startsession().md) method. After you start a session, the session has three states:
 
+- **Management**: In this default state, you can list, add, and delete credentials in the Secure Element.
+- **Wired**: The wired state allows you to exchange data with a credential-corresponding entity (an *applet*) in the Secure Element.
+- **Card Emulation**: In the card emulation state, your credential can communicate with a contactless card reader.
+
 The framework provides SwiftUI and UIKit user interfaces for your app to display while using the wired and card emulation states.
 
 You can read the current state at any time from the [`state`](credentialsession/state-swift.property.md) property. The [`eventStream`](credentialsession/eventstream.md) property provides an [`AsyncStream`](https://developer.apple.com/documentation/Swift/AsyncStream) of events from both your own actions on credentials and outside sources like detecting an NFC reader’s RF field.

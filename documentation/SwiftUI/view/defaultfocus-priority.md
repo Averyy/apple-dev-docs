@@ -47,9 +47,9 @@ WindowGroup {
 
 ## Parameters
 
-- `binding`: A focus state binding to update when evaluating default   focus in the modified view hierarchy.
+- `binding`: A focus state binding to update when evaluating default focus in the modified view hierarchy.
 - `value`: The value to set the binding to during evaluation.
-- `priority`: An indication of how to prioritize the preferred default   focus target when focus moves into the modified view hierarchy.   The default value is  , which means the preference will   be given priority when focus is being initialized or relocated   programmatically, but not when responding to user-directed   navigation commands.
+- `priority`: An indication of how to prioritize the preferred default focus target when focus moves into the modified view hierarchy. The default value is `automatic`, which means the preference will be given priority when focus is being initialized or relocated programmatically, but not when responding to user-directed navigation commands.
 
 ## See Also
 

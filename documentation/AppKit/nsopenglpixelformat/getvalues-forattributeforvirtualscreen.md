@@ -20,9 +20,9 @@ Because the value for an attribute may be different on each virtual screen, the 
 
 ## Parameters
 
-- `vals`: On input, a pointer to a   variable. On output, the variable contains the value of the requested attribute.
+- `vals`: On input, a pointer to a `long` variable. On output, the variable contains the value of the requested attribute.
 - `attrib`: The requested attribute. For a list of attribute constants, see the table in Constants.
-- `screen`: The screen from which you want to retrieve the attribute. This parameter must be a value between 0 and the number of virtual screens ( ) minus 1.
+- `screen`: The screen from which you want to retrieve the attribute. This parameter must be a value between 0 and the number of virtual screens ([`numberOfVirtualScreens`](nsopenglpixelformat/numberofvirtualscreens.md)) minus 1.
 
 ## See Also
 

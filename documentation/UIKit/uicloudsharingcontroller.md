@@ -31,7 +31,7 @@ The [`UICloudSharingController`](uicloudsharingcontroller.md) view controller cl
 - Stop participating (if the user is a participant)
 - Stop sharing with all participants (if the user is the owner of the shared record)
 
-The controller provides these different actions to the user based on the user’s role. If the user is the individual sharing the record (where the record is an instance of [`CKRecord`](https://developer.apple.com/documentation/CloudKit/CKRecord) representing the data to share), then the user is called the . A user who has access to the shared record and isn’t the owner is known as a . There’s no need for you to specify the user’s role. The controller determines the role automatically.
+The controller provides these different actions to the user based on the user’s role. If the user is the individual sharing the record (where the record is an instance of [`CKRecord`](https://developer.apple.com/documentation/CloudKit/CKRecord) representing the data to share), then the user is called the *owner*. A user who has access to the shared record and isn’t the owner is known as a *participant*. There’s no need for you to specify the user’s role. The controller determines the role automatically.
 
 ##### Inviting Participants to a New Share
 
@@ -42,6 +42,97 @@ After creating the controller, you present it. The controller displays the Invit
 However, before the owner can send the share link, CloudKit must generate the link. This link generation happens when saving a new [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) record, but when do you save it? You save the share record in the `preparationHandler:`.
 
 After the owner’s selections are complete, the controller invokes the preparation handler provided in the initializer call. In the handler, you create a new [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) instance, initializing it with the [`CKRecord`](https://developer.apple.com/documentation/CloudKit/CKRecord) instance that represents the data to share. (This record is called the “root record.”) Next, you save the share and root records using [`CKModifyRecordsOperation`](https://developer.apple.com/documentation/CloudKit/CKModifyRecordsOperation). Finally, you return the shared record to the controller or return an error if the save failed. See the following code for an example of this in action.
+
+**Swift**:
+
+```swift
+func presentCloudSharingController(_ sender: Any) {  guard
+    let barButtonItem = sender as? UIBarButtonItem,
+    let rootRecord = self.recordToShare else {
+    return
+  }
+  
+  let cloudSharingController = UICloudSharingController { [weak self] (controller, completion: @escaping (CKShare?, CKContainer?, Error?) -> Void) in
+    guard let `self` = self else {
+      return
+    }
+    self.share(rootRecord: rootRecord, completion: completion)
+  }
+  
+  if let popover = cloudSharingController.popoverPresentationController {
+    popover.barButtonItem = barButtonItem
+  }
+  self.present(cloudSharingController, animated: true) {}
+}
+ 
+func share(rootRecord: CKRecord, completion: @escaping (CKShare?, CKContainer?, Error?) -> Void) {
+  let shareRecord = CKShare(rootRecord: rootRecord)
+  let recordsToSave = [rootRecord, shareRecord]
+  let container = CKContainer.default()
+  let privateDatabase = container.privateCloudDatabase
+  let operation = CKModifyRecordsOperation(recordsToSave: recordsToSave, recordIDsToDelete: []) 
+  operation.perRecordCompletionBlock = { (record, error) in
+    if let error = error {
+      print("CloudKit error: \(error.localizedDescription)")
+    }
+  }
+  
+  operation.modifyRecordsCompletionBlock = { (savedRecords, deletedRecordIDs, error) in
+    if let error = error {
+      completion(nil, nil, error)
+    } else {
+      completion(shareRecord, container, nil)
+    }
+  }
+ 
+  privateDatabase.add(operation)
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)presentCloudSharingController:(id)sender
+{
+  CKRecord *rootRecord = [self recordToShare];
+  if (rootRecord == nil || [sender isKindOfClass:[UIBarButtonItem class]] == NO) {
+    return;
+  }
+  UICloudSharingController *cloudSharingController = [[UICloudSharingController alloc] initWithPreparationHandler:^(UICloudSharingController * _Nonnull controller, void (^ _Nonnull preparationCompletionHandler)(CKShare * _Nullable, CKContainer * _Nullable, NSError * _Nullable)) {
+    
+    [self shareRootRecord:rootRecord completion:preparationCompletionHandler];
+     
+  }];
+  
+  UIPopoverPresentationController *popover = [cloudSharingController popoverPresentationController];
+  if (popover) {
+    [popover setBarButtonItem:sender];
+  }
+  [self presentViewController:cloudSharingController animated:YES completion:nil];
+}
+- (void)shareRootRecord:(CKRecord *)rootRecord completion:(void (^)(CKShare * _Nullable share, CKContainer * _Nullable container, NSError * _Nullable error))completion
+{
+  CKShare *shareRecord = [[CKShare alloc] initWithRootRecord:rootRecord];
+  NSArray *recordsToSave = @[rootRecord, shareRecord];
+  CKContainer *container = [CKContainer defaultContainer];
+  CKDatabase *privateDatabase = [container privateCloudDatabase];
+  
+  CKModifyRecordsOperation *operation = [[CKModifyRecordsOperation alloc] initWithRecordsToSave:recordsToSave recordIDsToDelete:@[]];
+  [operation setPerRecordCompletionBlock:^(CKRecord * _Nullable record, NSError * _Nullable error) {
+    if (error) {
+      NSLog(@"%@", [error localizedDescription]);
+    }
+  }];
+  [operation setModifyRecordsCompletionBlock:^(NSArray<CKRecord *> * _Nullable savedRecords, NSArray<CKRecordID *> * _Nullable deletedRecordIDs, NSError * _Nullable error) {
+    if (error) {
+      NSLog(@"%@", [error localizedDescription]);
+    }
+    completion(shareRecord, container, error);
+  }];
+  
+  [privateDatabase addOperation:operation];
+}
+```
 
 ##### Adding and Removing Participants From an Existing Share
 
@@ -73,6 +164,50 @@ After you create the controller, present it to show the People screen. From this
 > ❗ **Important**:  Presenting the Cloud sharing controller in an iPad app without setting the popover presentation controller causes a run-time error.
 
 The following code shows an example of setting the [`popoverPresentationController`](uiviewcontroller/popoverpresentationcontroller.md) before presenting a Cloud sharing controller.
+
+**Swift**:
+
+```swift
+func presentCloudSharingController(_ sender: Any) {  guard
+    let barButtonItem = sender as? UIBarButtonItem,
+    let rootRecord = self.recordToShare else {
+    return
+  }
+  
+  let cloudSharingController = UICloudSharingController { (controller, completion: @escaping (CKShare?, CKContainer?, Error?) -> Void) in    
+    // Save the share and root records.
+    // Call completion(share, container, error) handler.
+  }
+  
+  if let popover = cloudSharingController.popoverPresentationController {
+    popover.barButtonItem = barButtonItem
+  }
+  self.present(cloudSharingController, animated: true) {}
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)presentCloudSharingController:(id)sender
+{
+  if ([self recordToShare] == nil || [sender isKindOfClass:[UIBarButtonItem class]] == NO) {
+    return;
+  }
+  
+  UICloudSharingController *cloudSharingController = [[UICloudSharingController alloc] initWithPreparationHandler:^(UICloudSharingController * _Nonnull controller, void (^ _Nonnull preparationCompletionHandler)(CKShare * _Nullable, CKContainer * _Nullable, NSError * _Nullable)) {
+    // Save the share and root records
+    // Call preparationCompletionHandler(share, container, error);
+  }];
+  
+  UIPopoverPresentationController *popover = [cloudSharingController popoverPresentationController];
+  if (popover) {
+    [popover setBarButtonItem:sender];
+  }
+
+  [self presentViewController:cloudSharingController animated:YES completion:nil];
+}
+```
 
 ##### Configuring the Controller
 

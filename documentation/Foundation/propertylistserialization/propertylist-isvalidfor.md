@@ -27,7 +27,7 @@ class func propertyList(_ plist: Any, isValidFor format: PropertyListSerializati
 ## Parameters
 
 - `plist`: A property list object.
-- `format`: A property list format. For possible values, see  .
+- `format`: A property list format. For possible values, see [`PropertyListSerialization.PropertyListFormat`](propertylistserialization/propertylistformat.md).
 
 
 ---

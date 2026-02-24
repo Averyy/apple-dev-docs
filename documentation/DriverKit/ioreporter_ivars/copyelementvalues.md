@@ -29,8 +29,8 @@ Locking: Caller must ensure that the reporter (data) lock is held.
 
 ## Parameters
 
-- `element_index`: 
-- `elementValues`: 
+- `element_index`: - Index of the element to return values from
+- `elementValues`: - For returning the content of element values
 
 
 ---

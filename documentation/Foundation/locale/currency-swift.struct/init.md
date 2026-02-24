@@ -22,7 +22,7 @@ init(_ identifier: String)
 
 ## Parameters
 
-- `identifier`: The currency’s BCP 47 identifier, like   for US dollars, or   for Japanese yen.
+- `identifier`: The currency’s BCP 47 identifier, like `usd` for US dollars, or `jpy` for Japanese yen.
 
 
 ---

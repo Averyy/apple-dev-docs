@@ -24,7 +24,7 @@ This method always returns [`kIOReturnError`](https://developer.apple.com/docume
 
 ## Parameters
 
-- `in_custom_property`: An   object to remove from the  .
+- `in_custom_property`: An [`IOUserAudioCustomProperty`](iouseraudiocustomproperty.md) object to remove from the [`IOUserAudioCustomProperty`](iouseraudiocustomproperty.md).
 
 ## See Also
 

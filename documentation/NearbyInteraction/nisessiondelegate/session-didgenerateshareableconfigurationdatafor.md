@@ -29,7 +29,7 @@ The system invokes this callback only for sessions that run an accessory configu
 
 - `session`: The session that produced the configuration data.
 - `shareableConfigurationData`: The data to share with the accessory.
-- `object`: A representation of the accessory as an  .
+- `object`: A representation of the accessory as an [`NINearbyObject`](ninearbyobject.md).
 
 ## See Also
 

@@ -30,12 +30,12 @@ The returned trigger token can be passed to `CMBufferQueueTestTrigger` and `CMBu
 
 ## Parameters
 
-- `queue`:   on which the trigger is being set.
-- `callback`: Callback to be called when the trigger condition becomes true. Can be  , if client intends only to explicitly test the condition.  if   is   this parameter cannot be   otherwise the trigger would be meaningless.
-- `refcon`: Refcon to be passed to the triggerCallback. Can be   if the callback doesn’t need it, or is                                                            itself  .
+- `queue`: `CMBufferQueue` on which the trigger is being set.
+- `callback`: Callback to be called when the trigger condition becomes true. Can be `NULL`, if client intends only to explicitly test the condition.  if `triggerTokenOut` is `NULL` this parameter cannot be `NULL` otherwise the trigger would be meaningless.
+- `refcon`: Refcon to be passed to the triggerCallback. Can be `NULL` if the callback doesn’t need it, or is                                                            itself `NULL`.
 - `condition`: The condition to be tested when evaluating the trigger.
 - `time`: The time value to compare against when evaluating the trigger. Must be numeric (ie. not invalid, indefinite, or infinite), except for certain trigger conditions which ignores it (eg, kCMBufferQueueTrigger_WhenMinPresentationTimeStampChanges).
-- `triggerTokenOut`: Address where created trigger token will be written. Can be  , if client has no need to explicitly test or remove the trigger. Cannot be   when triggerCallback is  ,  since the trigger would be meaningless then.
+- `triggerTokenOut`: Address where created trigger token will be written. Can be `NULL`, if client has no need to explicitly test or remove the trigger. Cannot be `NULL` when triggerCallback is `NULL`,  since the trigger would be meaningless then.
 
 ## See Also
 

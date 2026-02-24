@@ -27,9 +27,46 @@ A workout activity.
 
 The workout’s duration is calculated from its start and end times. The workout’s total distance, total energy burned, workout events, device, and metadata are all set to `nil`.
 
+**Swift**:
+
+```swift
+let basketball = HKWorkout(activityType:HKWorkoutActivityType.Basketball,
+                           startDate: start, endDate: end)
+ 
+ 
+healthStore.saveObject(basketball) { (success, error) -> Void in
+    guard success else {
+        // Perform proper error handling here...
+        fatalError("*** An error occurred while saving this " +
+            "workout: \(error?.localizedDescription)")
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+HKWorkout *basketball =
+[HKWorkout workoutWithActivityType:HKWorkoutActivityTypeBasketball
+                         startDate:start
+                           endDate:end];
+ 
+[self.healthStore
+ saveObject:basketball
+ withCompletion:^(BOOL success, NSError *error) {
+ 
+     if (!success) {
+         // Perform proper error handling here...
+         NSLog(@"*** An error occurred while saving this "
+               @"workout: %@ ***", error.localizedDescription);
+     }
+ 
+ }];
+```
+
 ## Parameters
 
-- `workoutActivityType`: The type of activity being performed during the workout. For a list of possible activity types, see  .
+- `workoutActivityType`: The type of activity being performed during the workout. For a list of possible activity types, see [`HKWorkoutActivityType`](hkworkoutactivitytype.md).
 - `startDate`: The date and time when the activity started.
 - `endDate`: The date and time when the activity ended. This date must be equal to or later than the start date.
 

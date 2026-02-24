@@ -6,7 +6,7 @@ Remove your donations from Siri.
 
 #### Overview
 
-If your app donated a shortcut containing information that the user has since deleted, your app should delete the donation. For example, let’s say that a user sends a message to a contact using your messaging app. Your app donates the  shortcut that includes information about the contact. Later, the user deletes that contact from the app. The app should delete the donations it made that included the contact information.
+If your app donated a shortcut containing information that the user has since deleted, your app should delete the donation. For example, let’s say that a user sends a message to a contact using your messaging app. Your app donates the *send message* shortcut that includes information about the contact. Later, the user deletes that contact from the app. The app should delete the donations it made that included the contact information.
 
 When a user deletes data from an app, they expect the data to be gone for good. This means removing the data from the app as well as from the system—if the system has knowledge of that data. It’s important for your app to honor this unspoken agreement with the user: to maintain privacy and trust at all times.
 

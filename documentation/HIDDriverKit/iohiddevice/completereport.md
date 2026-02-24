@@ -21,9 +21,9 @@ Call this method upon completion of the [`getReport`](iohiddevice/getreport.md) 
 
 ## Parameters
 
-- `action`: The action passed to the   or   methods.
+- `action`: The action passed to the `getReport` or `setReport` methods.
 - `status`: The completion status.
-- `actualByteCount`: The size of the buffer sent to the   or   methods.
+- `actualByteCount`: The size of the buffer sent to the `getReport` or `setReport` methods.
 
 ## See Also
 

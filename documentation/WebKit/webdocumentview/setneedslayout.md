@@ -21,7 +21,7 @@ A view conforming to this protocol should store the most recent value of this fl
 
 ## Parameters
 
-- `flag`: Sets whether the receiver needs to update its layout in the next call to its   method.
+- `flag`: Sets whether the receiver needs to update its layout in the next call to its [`draw(_:)`](https://developer.apple.com/documentation/AppKit/NSView/draw(_:)) method.
 
 ## See Also
 

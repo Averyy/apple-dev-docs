@@ -22,7 +22,7 @@ An instance of [`MERAWProcessingParameter.SubGroup`](merawprocessingparameter/su
 
 - `name`: A localized human-readable name for the parameter, suitable for displaying in application UI.
 - `description`: A localized description of the parameter, suitable for displaying in a tool tip or similar explanatory UI.
-- `parameters`: The array of   objects in the sub group.
+- `parameters`: The array of [`MERAWProcessingParameter`](merawprocessingparameter.md) objects in the sub group.
 
 
 ---

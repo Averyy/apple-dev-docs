@@ -22,7 +22,7 @@ func store<C>(in collection: inout C) where C : RangeReplaceableCollection, C.El
 
 ## Parameters
 
-- `collection`: The collection in which to store this  .
+- `collection`: The collection in which to store this [`Cancellable`](cancellable.md).
 
 ## See Also
 

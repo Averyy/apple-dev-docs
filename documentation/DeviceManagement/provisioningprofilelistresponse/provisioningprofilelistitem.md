@@ -19,6 +19,12 @@ A dictionary that describes a provisioning profile list item.
 object ProvisioningProfileListResponse.ProvisioningProfileListItem
 ```
 
+## Properties
+
+- `ExpiryDate` (date): The expiry date of the provisioning profile.
+- `Name` (string) *(required)*: The display name of the provisioning profile.
+- `UUID` (string) *(required)*: The unique identifier for the provisioning profile.
+
 ## See Also
 
 - [object ProvisioningProfileListResponse.ErrorChainItem](provisioningprofilelistresponse/errorchainitem.md)

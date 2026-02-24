@@ -34,8 +34,8 @@ For more information, see [`Core Bluetooth Programming Guide`](https://developer
 
 ## Parameters
 
-- `UUID`: A 128-bit UUID that identifies the characteristic. You must use only one of the two currently supported descriptor types:   or  . For more details about these descriptor types, see  .
-- `value`: The descriptor value to cache. You must provide a non-  value. Once published, you can’t update the value dynamically.
+- `UUID`: A 128-bit UUID that identifies the characteristic. You must use only one of the two currently supported descriptor types: [`CBUUIDCharacteristicUserDescriptionString`](cbuuidcharacteristicuserdescriptionstring.md) or [`CBUUIDCharacteristicFormatString`](cbuuidcharacteristicformatstring.md). For more details about these descriptor types, see [`CBUUID`](cbuuid.md).
+- `value`: The descriptor value to cache. You must provide a non-`nil` value. Once published, you can’t update the value dynamically.
 
 
 ---

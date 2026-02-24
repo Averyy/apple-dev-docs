@@ -16,11 +16,11 @@ For more information on the key archive file formats, see [`Setting Up a Key Ser
 
 Exposure Notifications Express works by reading configuration values for a PHA from Apple Business Registry (ABR). It uses these configuration values to locate a PHA’s servers and to adjust its calculations and behavior based on the values entered by that PHA. In order to support key upload and download in Exposure Notifications Express, you must configure the following values:
 
-- : The `tekPublishInterval` parameter identifies how often your server publishes new key archives, which are specified in increments of 10 minutes.
-- : The `tekLocalDownloadIndexFile` parameter points to an index of key archives that are currently available from the key server.
-- : The `tekLocalDownloadBasePath` value contains the base URL you use to retrieve key archives listed in the local download index. Exposure Notifications Express appends entries from the local download index file to this value to create a URL that points to the referenced file.
-- : The `callbackIntervalInMin` parameter indicates how often iOS checks the key server for new archive files.
-- : The `tekUploadURL` value points to the key server’s upload endpoint.
+- **Publish Interval**: The `tekPublishInterval` parameter identifies how often your server publishes new key archives, which are specified in increments of 10 minutes.
+- **Local Download Index File**: The `tekLocalDownloadIndexFile` parameter points to an index of key archives that are currently available from the key server.
+- **Local Download Base Path**: The `tekLocalDownloadBasePath` value contains the base URL you use to retrieve key archives listed in the local download index. Exposure Notifications Express appends entries from the local download index file to this value to create a URL that points to the referenced file.
+- **Callback Interval in Minutes**: The `callbackIntervalInMin` parameter indicates how often iOS checks the key server for new archive files.
+- **Key Upload URL**: The `tekUploadURL` value points to the key server’s upload endpoint.
 
 For a complete list of the configuration options available with Exposure Notifications Express, see [`Configuring Exposure Notifications`](configuring-exposure-notifications.md).
 
@@ -42,9 +42,28 @@ To support Exposure Notifications Express key uploads, a key server must impleme
 
 The request dictionary uses the keys listed below:
 
+- **`temporaryExposureKeys`**: An array of temporary exposure keys (*see below*).**Required**.
+- **`healthAuthorityID`**: An identifier string for the mobile application that submits the keys or a unique string that identifies the PHA when using Exposure Notifications Express.**Required**.
+- **`verificationPayload`**: The verification certificate from the test verification server.
+- **`hmacKey`**: A device-generated string containing a secret code the key server uses to recalculate the HMAC value.
+- **`symptomOnsetInterval`**: An integer representing the interval number that aligns with the symptom onset date.
+- **`revisionToken`**: An opaque string the key server returned in a previous call to this endpoint. If included, the key server uses this token to apply the data in the uploaded keys as an update to existing keys. When Exposure Notifications Express uploads only new keys, this field will contain an empty string.**Required**.
+- **`padding`**: Random data iOS may populate to obscure the request size. Don’t process data in this field.
+
 The `temporaryExposureKeys`array contains one JSON dictionary per key being uploaded. The per-exposure-key dictionary supports the keys listed below:
 
+- **`key`**: The 16-byte exposure key as a Base64-encoded string. If a key is not exactly 16 bytes in length, the key server rejects the entire request, not just the key that is too long.**Required**.
+- **`rollingStartNumber`**: An integer representing the interval number when the key’s`EKRollingPeriod`started.**Required**.
+- **`rollingPeriod`**: An integer representing the duration for which the key is valid, expressed as a number of ten–minute intervals.**Required**.
+- **`transmissionRisk`**: Risk of transmission associated with the person from which this key came. This field is deprecated and may be removed in a future release.
+
 The key server responds to these requests by returning a JSON dictionary that describes the result in the response body. The response dictionary uses the keys listed below.
+
+- **`revisionToken`**: A revision token string you use during future key uploads if the diagnosis associated with the uploaded keys changes.
+- **`insertedExposures`**: An integer representing the number of exposure keys the key server added to its database.
+- **`error`**: If the server encounters an error while processing the request, this string contains a description of the problem.
+- **`errorCode`**: If the server encounters an error while processing the request, this string contains a code that describes the error.
+- **`padding`**: String the server may populate with random data to obscure the response size. Don’t process data in this field.
 
 ## See Also
 

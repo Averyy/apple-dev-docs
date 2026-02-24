@@ -29,8 +29,8 @@ User name and service are required to initialize [`CNInstantMessageAddress`](cni
 
 ## Parameters
 
-- `username`: The user name with which to initialize the   object.
-- `service`: The service with which to Initialize the   object.
+- `username`: The user name with which to initialize the [`CNInstantMessageAddress`](cninstantmessageaddress.md) object.
+- `service`: The service with which to Initialize the [`CNInstantMessageAddress`](cninstantmessageaddress.md) object.
 
 
 ---

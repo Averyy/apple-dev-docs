@@ -26,6 +26,9 @@ To add a Smart App Banner to your website, include the following meta tag in the
 
 You can include two comma-separated parameters in the content attribute:
 
+- **`app-id`**: Required. Your app’s unique identifier. To find your app ID from [`App Store Marketing Tools`](https://developer.apple.comhttps://tools.applemediaservices.com/app-store), type the name of your app in the Search field, and select the appropriate country or region and media type. In the results, select your app. In the detail view for your app, find the Content Link. Your app ID is the number between `id` and `?`. Alternatively, select your app in App Store Connect. Under General, select App Information, then find your app ID in the General Information section that opens in the middle of the screen; your app ID is listed as Apple ID.
+- **`app-argument`**: Optional. A URL that provides context to your native app. If you include the URL and the user has your app installed, they can jump from your website to the corresponding position in your iOS app.
+
 Typically, it’s beneficial to retain navigational context because:
 
 - If the user is deep within the navigational hierarchy of your website, you can pass the document’s entire URL, and then parse it in your app to reroute the user to the correct location in your app.

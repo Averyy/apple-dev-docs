@@ -25,7 +25,7 @@ This parameter can be an event parameter or a dynamic parameter. A fixed value i
 
 A dynamic value indicates that the start time of the decrease can change. For example, a value of `0` indicates that the decay time is at its default value. Positive values up to `1.0` increase the decay time exponentially, while negative values down to `-1.0` decrease the decay time exponentially.
 
-Haptic intensity responds to this parameter. For example, the following graphic shows the intensity of a haptic pattern in gray. At the beginning, the haptic pattern’s intensity increases from zero to its final value over a certain amount of time; this duration is called the . As the haptic pattern reaches its end, the intensity gradually transitions to zero over a certain amount of time; this duration is called the .
+Haptic intensity responds to this parameter. For example, the following graphic shows the intensity of a haptic pattern in gray. At the beginning, the haptic pattern’s intensity increases from zero to its final value over a certain amount of time; this duration is called the *attack*. As the haptic pattern reaches its end, the intensity gradually transitions to zero over a certain amount of time; this duration is called the *decay*.
 
 ![A series of lines showing how a haptic pattern ramps down in intensity for various values of decay.](https://docs-assets.developer.apple.com/published/772b8a678caa044cf704d0316bcfde5f/media-3199008%402x.png)
 

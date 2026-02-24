@@ -34,7 +34,7 @@ When the GPU device reaches the wait command that this method encodes into the b
 
 ## Parameters
 
-- `event`: If   is an   instance, a command buffer from any GPU device can signal this command buffer. Otherwise, only command buffers from the same GPU device can signal this command buffer.
+- `event`: An [`MTLEvent`](mtlevent.md) instance the GPU driver waits for between passes as it runs the command buffer. If `event` is an [`MTLSharedEvent`](mtlsharedevent.md) instance, a command buffer from any GPU device can signal this command buffer. Otherwise, only command buffers from the same GPU device can signal this command buffer.
 - `value`: The event’s smallest value that allows the GPU to continue running the remaining passes in the command buffer.
 
 ## See Also

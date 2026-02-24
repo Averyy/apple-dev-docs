@@ -20,8 +20,8 @@ A value that indicates whether the request for muted processes succeeded or fail
 
 ## Parameters
 
-- `client`: A previously-created client. If the call succeeds, the   structure contains processes muted for this client.
-- `muted_processes`: On output, a structure that contains the muted processes. You must dispose of this memory by calling  .
+- `client`: A previously-created client. If the call succeeds, the `processes` structure contains processes muted for this client.
+- `muted_processes`: On output, a structure that contains the muted processes. You must dispose of this memory by calling [`es_release_muted_processes(_:)`](es_release_muted_processes(_:).md).
 
 ## See Also
 

@@ -17,6 +17,16 @@ A dictionary of AirPrint printer details.
 object AirPrint.AirPrintItem
 ```
 
+## Properties
+
+- `ForceTLS` (boolean): If `true`, AirPrint connections are secured by Transport Layer Security (TLS). Available only in iOS 11 and later.
+- `IPAddress` (string) *(required)*: The IP address or hostname of the AirPrint destination.
+- `Port` (integer): The listening port of the AirPrint destination. Available only in iOS 11 and later.
+- `ResourcePath` (string) *(required)*: The resource path associated with the printer. This path corresponds to the `rp` parameter of the `_ipps.tcp` Bonjour record. For example: - `printers/Canon_MG5300_series`
+- `printers/Xerox_Phaser_7600`
+- `ipp/print`
+- `Epson_IPP_Printer`
+
 
 ---
 

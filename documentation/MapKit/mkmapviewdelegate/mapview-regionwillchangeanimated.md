@@ -26,7 +26,7 @@ The framework calls this method at the beginning of a change to the map’s visi
 ## Parameters
 
 - `mapView`: The map view with the visible region that’s about to change.
-- `animated`: If  , the map view animates the change to the new region. If  , the map view makes the change immediately.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), the map view animates the change to the new region. If [`false`](https://developer.apple.com/documentation/Swift/false), the map view makes the change immediately.
 
 ## See Also
 

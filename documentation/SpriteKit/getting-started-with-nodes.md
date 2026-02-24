@@ -20,7 +20,7 @@ The `SKNode` class does not perform any drawing of its own. However, many `SKNod
 
 All nodes are responder objects that can respond directly to user interaction with the node onscreen. See [`Controlling User Interaction on Nodes`](controlling-user-interaction-on-nodes.md). You can also convert between coordinate systems and perform hit testing to determine which nodes a point lies in, and perform intersections between nodes in the tree to determine if their physical areas overlap.
 
-Any node in the tree may run , which are used to animate the properties of a node, add or remove nodes, play sounds, or perform other custom tasks. Actions are the heart of the animation system in SpriteKit. See [`Getting Started with Actions`](getting-started-with-actions.md).
+Any node in the tree may run **actions**, which are used to animate the properties of a node, add or remove nodes, play sounds, or perform other custom tasks. Actions are the heart of the animation system in SpriteKit. See [`Getting Started with Actions`](getting-started-with-actions.md).
 
 A node can support a physics body, which is an object that simulates the physical properties of the object. When a node has a physics body, the physics simulation automatically computes a new position for the physics body and then moves and rotates the node to match that position. See [`Getting Started with Physics`](getting-started-with-physics.md).
 

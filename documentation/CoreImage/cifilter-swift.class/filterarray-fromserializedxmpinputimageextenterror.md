@@ -21,9 +21,9 @@ class func filterArray(fromSerializedXMP xmpData: Data, inputImageExtent extent:
 
 ## Parameters
 
-- `xmpData`: The XMP data created previously by calling  .
+- `xmpData`: The XMP data created previously by calling [`serializedXMP(from:inputImageExtent:)`](cifilter-swift.class/serializedxmp(from:inputimageextent:).md).
 - `extent`: The extent of the image from which the XMP data was extracted.
-- `outError`: The address of an   object for receiving errors, otherwise  .
+- `outError`: The address of an `NSError` object for receiving errors, otherwise `nil`.
 
 ## See Also
 

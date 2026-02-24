@@ -43,7 +43,7 @@ var body: some View {
 ## Parameters
 
 - `inputLabelKeys`: The accessibility input labels to apply.
-- `isEnabled`: If true the accessibility input labels are applied;   otherwise the accessibility input labels are unchanged.
+- `isEnabled`: If true the accessibility input labels are applied; otherwise the accessibility input labels are unchanged.
 
 
 ---

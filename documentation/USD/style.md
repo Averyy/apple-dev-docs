@@ -10,6 +10,10 @@ The default value is `basic`.
 
 ##### Styles
 
+- **`basic`**: Animates with steady motion.
+- **`playful`**: Animates with whimsical motion.
+- **`wild`**: Animates with sporadic motion.
+
 ##### Declaration
 
 ```other

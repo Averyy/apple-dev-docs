@@ -19,6 +19,26 @@ When a video node is created, its [`size`](skvideonode/size.md) property is init
 
 The following code initializes the video node using a video file stored in the app bundle and then adds the node to the scene. It calls the node’s [`play()`](skvideonode/play().md) method to start the video playback.
 
+**Swift**:
+
+```swift
+let sample = SKVideoNode(fileNamed: "sample.mov")
+sample.position = CGPoint(x: frame.midX,
+                          y: frame.midY)
+addChild(sample)
+sample.play()
+```
+
+**Obj-C**:
+
+```objc
+SKVideoNode *sample = [SKVideoNode videoNodeWithFileNamed:@"sample.mov"];
+sample.position = CGPointMake(CGRectGetMidX(self.frame),
+                              CGRectGetMidY(self.frame));
+[self addChild: sample];
+[sample play];
+```
+
 You control playback using the node’s [`play()`](skvideonode/play().md) and [`pause()`](skvideonode/pause().md) methods.
 
 If you need more precise control over the video playback behavior, you can use AVFoundation to create an [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) object for your video content and then use this object to initialize the [`SKVideoNode`](skvideonode.md) node. Then, instead of using the node’s playback methods, you use the [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) object to control playback. The video content is automatically displayed in the video node. For more information, see [`AVFoundation Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/00_Introduction.html#//apple_ref/doc/uid/TP40010188).

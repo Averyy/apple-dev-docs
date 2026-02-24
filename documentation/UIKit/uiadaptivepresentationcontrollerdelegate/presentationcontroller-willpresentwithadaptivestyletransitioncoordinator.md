@@ -25,7 +25,7 @@ When a size class change occurs, UIKit calls this method to let you know how the
 ## Parameters
 
 - `presentationController`: The presentation controller that is managing the adaptivity change.
-- `style`: The new presentation style. If the presentation style is not changing, this parameter is set to  .
+- `style`: The new presentation style. If the presentation style is not changing, this parameter is set to [`UIModalPresentationStyle.none`](uimodalpresentationstyle/none.md).
 - `transitionCoordinator`: The transition coordinator that is managing the transition.
 
 ## See Also

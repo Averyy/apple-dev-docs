@@ -27,7 +27,7 @@ func sectionIndexLabel(_ label: Text?) -> some View
 
 ## Parameters
 
-- `label`: The label to display in the section index, or    to display no label for this section.
+- `label`: The label to display in the section index, or `nil` to display no label for this section.
 
 ## See Also
 

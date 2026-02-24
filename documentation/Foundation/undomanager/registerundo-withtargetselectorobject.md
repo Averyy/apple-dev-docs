@@ -58,9 +58,9 @@ garden.manager.undo()
 
 ## Parameters
 
-- `target`: The undo manager maintains an unowned reference to   to prevent retain cycles.
+- `target`: The target of the undo operation. The undo manager maintains an unowned reference to `target` to prevent retain cycles.
 - `selector`: The selector for the undo operation.
-- `object`: The undo manager maintains a strong reference to  .
+- `object`: The argument sent with the selector. The undo manager maintains a strong reference to `anO``bject`.
 
 ## See Also
 

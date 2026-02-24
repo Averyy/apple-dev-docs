@@ -24,7 +24,7 @@ An object that contains the localized versions for a specific string.
 
 ## Parameters
 
-- `localizedStrings`: A dictionary in which each key-value pair consists of a language designator and a localized string. For example, you might pass in a dictionary like  .
+- `localizedStrings`: A dictionary in which each key-value pair consists of a language designator and a localized string. For example, you might pass in a dictionary like `@{@"en":@"Email Message"}`.
 
 
 ---

@@ -23,7 +23,7 @@ A dictionary containing details about `inNode` corresponding to keys specified b
 
 - `node`: The node.
 - `keys`: An array of keys corresponding to the values returned in the dictionary.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

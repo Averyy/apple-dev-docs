@@ -25,7 +25,7 @@ This function always provides information for all controls that support push upd
 
 ## Parameters
 
-- `controls`: Information about controls that support push   updates.
+- `controls`: Information about controls that support push updates.
 
 
 ---

@@ -6,6 +6,8 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
+---
+
 #### Overview
 
 Xcode 12.5.1 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and macOS Big Sur 11.3. The Xcode 12.5.1 release supports on-device debugging for iOS 9 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 12.5.1 requires a Mac running macOS Big Sur 11 or later.
@@ -26,7 +28,7 @@ Xcode 12.5.1 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, an
 
 ###### Known Issues
 
-- When you select Upload Key after you clone a repository from a source control provider and associate a locally-generated key with that repository, Xcode doesn’t upload the key. (78824500) : Add the key using the source control provider’s website.
+- When you select Upload Key after you clone a repository from a source control provider and associate a locally-generated key with that repository, Xcode doesn’t upload the key. (78824500) **Workaround**: Add the key using the source control provider’s website.
 
 ##### Swift Packages
 
@@ -37,7 +39,7 @@ Xcode 12.5.1 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, an
 
 ###### Known Issues
 
-- Authentication may fail when using Xcode Server with Swift Packages. (77331504) : Add `-scmProvider xcode` to the `xcodebuild` arguments in the bot’s configuration.
+- Authentication may fail when using Xcode Server with Swift Packages. (77331504) **Workaround**: Add `-scmProvider xcode` to the `xcodebuild` arguments in the bot’s configuration.
 
 ##### Testing
 
@@ -48,7 +50,7 @@ Xcode 12.5.1 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, an
 ###### Known Issues
 
 - UI interruption monitors don’t work in watchOS. (59571331)
-- UI Test Recording fails to generate code for iOS Simulator targets if recording starts after code execution stops at a breakpoint. (77924295) : With no breakpoint set, place your cursor within a test method and press the record button.
+- UI Test Recording fails to generate code for iOS Simulator targets if recording starts after code execution stops at a breakpoint. (77924295) **Workaround**: With no breakpoint set, place your cursor within a test method and press the record button.
 
 ## See Also
 

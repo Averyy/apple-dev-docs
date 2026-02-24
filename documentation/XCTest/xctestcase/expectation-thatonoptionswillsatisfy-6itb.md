@@ -25,8 +25,8 @@ Creates and returns an expectation for the test case.
 
 - `keyPath`: The key path for the observed property, relative to the observed object.
 - `observedObject`: The object to observe the property on.
-- `options`: A combination of values that specify what to include in observation notifications. For possible values, see  .
-- `predicate`: A closure that evaluates the observed object. If  , the first observed change fulfills the expectation.
+- `options`: A combination of values that specify what to include in observation notifications. For possible values, see [`NSKeyValueObservingOptions`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions).
+- `predicate`: A closure that evaluates the observed object. If `nil`, the first observed change fulfills the expectation.
 
 ## See Also
 

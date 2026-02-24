@@ -29,7 +29,7 @@ This is the designated initializer for this class. Using `init` raises an except
 
 ## Parameters
 
-- `keysToFetch`: An array of contact property keys and/or key descriptors from contacts objects to be fetched in the returned contacts. For a list of possible keys, see  .
+- `keysToFetch`: An array of contact property keys and/or key descriptors from contacts objects to be fetched in the returned contacts. For a list of possible keys, see [`Contact Keys`](contact-keys.md).
 
 ## See Also
 

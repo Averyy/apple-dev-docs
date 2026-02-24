@@ -29,7 +29,7 @@ This method is called when the user has selected a new payment card.  Use this d
 
 - `controller`: The payment authorization controller.
 - `paymentMethod`: The new payment method.
-- `completion`: This block takes the following parameters:
+- `completion`: The completion block to call with the updated payment summary items. This block takes the following parameters: - **`summaryItems`**: An updated array of summary items that include any changes due to fees or credit card surcharges associated with the payment method.
 
 ## See Also
 

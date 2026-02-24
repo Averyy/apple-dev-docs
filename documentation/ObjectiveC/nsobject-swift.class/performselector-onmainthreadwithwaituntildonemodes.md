@@ -34,10 +34,10 @@ This method registers with the runloop of its current context, and depends on th
 
 ## Parameters
 
-- `aSelector`: A   that identifies the method to invoke. The method should not have a significant return value and should take a single argument of type id, or no arguments.
-- `arg`: The argument to pass to the method when it is invoked. Pass   if the method does not take an argument.
-- `wait`: If the current thread is also the main thread, and you pass  , the message is performed immediately, otherwise the perform is queued to run the next time through the run loop.
-- `array`: An array of strings that identifies the modes in which it is permissible to perform the specified selector. This array must contain at least one string. If you specify   or an empty array for this parameter, this method returns without performing the specified selector. For information about run loop modes, see   in  .
+- `aSelector`: A [`Selector`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Selector.html#//apple_ref/doc/uid/TP40008195-CH48) that identifies the method to invoke. The method should not have a significant return value and should take a single argument of type id, or no arguments.
+- `arg`: The argument to pass to the method when it is invoked. Pass `nil` if the method does not take an argument.
+- `wait`: A Boolean that specifies whether the current thread blocks until after the specified selector is performed on the receiver on the main thread. Specify [`YES`](yes.md) to block this thread; otherwise, specify [`NO`](no.md) to have this method return immediately. If the current thread is also the main thread, and you pass [`YES`](yes.md), the message is performed immediately, otherwise the perform is queued to run the next time through the run loop.
+- `array`: An array of strings that identifies the modes in which it is permissible to perform the specified selector. This array must contain at least one string. If you specify `nil` or an empty array for this parameter, this method returns without performing the specified selector. For information about run loop modes, see [`Run Loops`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/RunLoopManagement/RunLoopManagement.html#//apple_ref/doc/uid/10000057i-CH16) in [`Threading Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i).
 
 ## See Also
 

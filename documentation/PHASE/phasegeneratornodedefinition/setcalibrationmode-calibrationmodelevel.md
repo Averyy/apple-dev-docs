@@ -21,7 +21,7 @@ func setCalibrationMode(calibrationMode: PHASECalibrationMode, level: Double)
 
 ## Parameters
 
-- `calibrationMode`: A given strategy for sound pressure level. For a consistent user experience across platforms and output devices, choose   or  .
+- `calibrationMode`: A given strategy for sound pressure level. For a consistent user experience across platforms and output devices, choose [`PHASECalibrationMode.absoluteSpl`](phasecalibrationmode/absolutespl.md) or [`PHASECalibrationMode.relativeSpl`](phasecalibrationmode/relativespl.md).
 - `level`: The loudness. The calibration mode determines this value’s unit and range.
 
 ## See Also

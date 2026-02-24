@@ -66,6 +66,10 @@ Specify `com.apple.preference.users` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `DisableUsingiCloudPassword` (boolean): If `true`, disables the iCloud password for local accounts.
+
 ## See Also
 
 - [object GlobalPreferences](globalpreferences.md)

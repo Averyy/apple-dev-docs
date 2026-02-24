@@ -26,7 +26,7 @@ This function sets the alpha value parameter for the specified graphics context.
 
 ## Parameters
 
-- `alpha`: A value that specifies the opacity level. Values can range from   (transparent) to   (opaque). Values outside this range are clipped to   or  .
+- `alpha`: A value that specifies the opacity level. Values can range from `0.0` (transparent) to `1.0` (opaque). Values outside this range are clipped to `0.0` or `1.0`.
 
 ## See Also
 

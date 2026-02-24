@@ -21,7 +21,7 @@ case sigmoid
 
 #### Discussion
 
-Also known as an , the sigmoid curve’s path movement is slow at either end and quick in the middle.
+Also known as an *s-curve*, the sigmoid curve’s path movement is slow at either end and quick in the middle.
 
 ## See Also
 

@@ -26,7 +26,7 @@ The range of the first occurrence of `str` in the receiver. Returns `{``NSNotFou
 
 ## Parameters
 
-- `str`: The string to search for. This value must not be  .
+- `str`: The string to search for. This value must not be `nil`.
 
 ## See Also
 

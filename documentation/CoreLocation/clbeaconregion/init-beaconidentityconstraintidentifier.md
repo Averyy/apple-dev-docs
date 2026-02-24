@@ -19,8 +19,8 @@ init(beaconIdentityConstraint: CLBeaconIdentityConstraint, identifier: String)
 
 ## Parameters
 
-- `beaconIdentityConstraint`: A   that describes the characteristics of beacons for the framework to target.
-- `identifier`: A unique identifier to associate with the returned region object. You use this identifier to differentiate regions within your app. This value can’t be  .
+- `beaconIdentityConstraint`: A [`CLBeaconIdentityConstraint`](clbeaconidentityconstraint.md) that describes the characteristics of beacons for the framework to target.
+- `identifier`: A unique identifier to associate with the returned region object. You use this identifier to differentiate regions within your app. This value can’t be `nil`.
 
 ## See Also
 

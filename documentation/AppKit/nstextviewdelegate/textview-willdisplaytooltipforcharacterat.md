@@ -27,7 +27,7 @@ The tooltip string is the value of the [`toolTip`](https://developer.apple.com/d
 
 - `textView`: The text view sending the message.
 - `tooltip`: The proposed tooltip to display.
-- `characterIndex`: The location in  .
+- `characterIndex`: The location in `textView`.
 
 
 ---

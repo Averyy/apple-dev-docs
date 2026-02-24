@@ -34,7 +34,7 @@ Clients may provide an optional `completionHandler` to be notified when the sche
 
 - `renderer`: 
 - `time`: The time on the timebase’s timeline at which the renderer should be removed. If the time is in the past, the renderer is immediately removed.
-- `completionHandler`: An optional block to invoke when the renderer is removed from the synchronizer. The block takes one argument:
+- `completionHandler`: An optional block to invoke when the renderer is removed from the synchronizer. The block takes one argument: - **didRemoveRenderer**: A Boolean value indicating the whether the renderer was removed.
 
 ## See Also
 

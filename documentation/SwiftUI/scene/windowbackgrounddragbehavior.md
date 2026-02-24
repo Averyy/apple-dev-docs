@@ -42,7 +42,7 @@ Applying the [`enabled`](windowinteractionbehavior/enabled.md) behavior is equiv
 
 ## Parameters
 
-- `behavior`: The behavior of dragging the modified window by its   background.
+- `behavior`: The behavior of dragging the modified window by its background.
 
 ## See Also
 

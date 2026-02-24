@@ -21,6 +21,9 @@ typealias ACAccountStoreSaveCompletionHandler = (Bool, (any Error)?) -> Void
 
 The completion handler parameters are:
 
+- **`success`**: A Boolean value indicating whether the operation is successful. [`true`](https://developer.apple.com/documentation/Swift/true) if the operation is successful; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- **`error`**: An error, if one occurred.
+
 ## See Also
 
 - [func saveAccount(ACAccount!, withCompletionHandler: ((Bool, (any Error)?) -> Void)!)](acaccountstore/saveaccount(_:withcompletionhandler:).md)

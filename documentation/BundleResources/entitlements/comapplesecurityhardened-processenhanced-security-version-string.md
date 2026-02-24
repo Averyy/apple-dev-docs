@@ -11,6 +11,12 @@ The entitlement required for an executable to opt in to enhanced security protec
 - macOS 26.4+ (Beta)
 - visionOS 26.4+ (Beta)
 
+
+
+**Type**: string
+
+**Default**: `*`
+
 #### Discussion
 
 The default value for this entitlement is the `*` wildcard.

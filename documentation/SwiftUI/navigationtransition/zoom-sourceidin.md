@@ -25,8 +25,8 @@ Indicate the source view using the `View/matchedTransitionSource(id:namespace:)`
 
 ## Parameters
 
-- `sourceID`: The identifier you provide to a corresponding    modifier.
-- `namespace`: The namespace where you define the  . You can create   new namespaces by adding the   attribute   to a   type, then reading its value in the view’s body   method.
+- `sourceID`: The identifier you provide to a corresponding `matchedTransitionSource` modifier.
+- `namespace`: The namespace where you define the `id`. You can create new namespaces by adding the [`Namespace`](namespace.md) attribute to a [`View`](view.md) type, then reading its value in the view’s body method.
 
 ## See Also
 

@@ -26,8 +26,8 @@ A new CFTree object. Ownership follows the [`The Create Rule`](https://developer
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new tree. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `context`: The   structure to be copied and used as the context of the new tree. The information pointer will be retained by the tree if a retain function is provided. If this value is not a valid C pointer to a   structure-sized block of storage, the result is undefined. If the version number of the storage is not a valid   version number, the result is undefined.
+- `allocator`: The allocator to use to allocate memory for the new tree. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `context`: The [`CFTreeContext`](cftreecontext.md) structure to be copied and used as the context of the new tree. The information pointer will be retained by the tree if a retain function is provided. If this value is not a valid C pointer to a [`CFTreeContext`](cftreecontext.md) structure-sized block of storage, the result is undefined. If the version number of the storage is not a valid [`CFTreeContext`](cftreecontext.md) version number, the result is undefined.
 
 
 ---

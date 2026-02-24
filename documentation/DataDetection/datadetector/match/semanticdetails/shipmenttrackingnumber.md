@@ -22,7 +22,7 @@ case shipmentTrackingNumber(DataDetector.Match.SemanticDetails.ShipmentTrackingN
 
 ## Parameters
 
-- `ShipmentTrackingNumber`: A   structure.
+- `ShipmentTrackingNumber`: A [`DataDetector.Match.SemanticDetails.ShipmentTrackingNumber`](datadetector/match/semanticdetails/shipmenttrackingnumber.md) structure.
 
 
 ---

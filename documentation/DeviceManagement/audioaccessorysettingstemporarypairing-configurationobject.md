@@ -21,6 +21,10 @@ object AudioAccessorySettingsTemporaryPairing_ConfigurationObject
 - [object AudioAccessorySettingsTemporaryPairing_Configuration_UnpairingTimeObject](audioaccessorysettingstemporarypairing_configuration_unpairingtimeobject.md)
   A dictionary that describes when the device automatically unpairs temporarily paired audio accessories.
 
+## Properties
+
+- `UnpairingTime` (AudioAccessorySettingsTemporaryPairing_Configuration_UnpairingTimeObject) *(required)*: A dictionary that describes when the device automatically unpairs temporarily paired audio accessories.
+
 
 ---
 

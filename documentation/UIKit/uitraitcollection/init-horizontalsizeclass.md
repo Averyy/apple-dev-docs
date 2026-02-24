@@ -24,7 +24,7 @@ A new trait collection containing only a specified horizontal size class trait.
 
 ## Parameters
 
-- `horizontalSizeClass`: A   value specifying the horizontal size class for the new trait collection.
+- `horizontalSizeClass`: A [`UIUserInterfaceSizeClass`](uiuserinterfacesizeclass.md) value specifying the horizontal size class for the new trait collection.
 
 ## See Also
 

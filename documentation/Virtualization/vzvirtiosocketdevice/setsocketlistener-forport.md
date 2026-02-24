@@ -20,7 +20,7 @@ You can register the same listener object on multiple ports. When the guest oper
 
 ## Parameters
 
-- `listener`: The   object to monitor the port. This object replaces the previous listener object, if any.
+- `listener`: The [`VZVirtioSocketListener`](vzvirtiosocketlistener.md) object to monitor the port. This object replaces the previous listener object, if any.
 - `port`: The port number to monitor.
 
 ## See Also

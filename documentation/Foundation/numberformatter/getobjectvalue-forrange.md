@@ -32,9 +32,9 @@ If there is an error, this method calls `control(_:didFailToFormatString:errorDe
 
 ## Parameters
 
-- `obj`: On return, contains an instance of   or   based on the current value of the   property. Returns   by reference if conversion failed.
-- `string`: A string object with the range of characters specified in   that is used to create  .
-- `rangep`: A range of characters in  . On return, contains the actual range of characters used to create the object.
+- `obj`: On return, contains an instance of [`NSDecimalNumber`](nsdecimalnumber.md) or [`NSNumber`](nsnumber.md) based on the current value of the [`generatesDecimalNumbers`](numberformatter/generatesdecimalnumbers.md) property. Returns `nil` by reference if conversion failed.
+- `string`: A string object with the range of characters specified in `rangep` that is used to create `anObject`.
+- `rangep`: A range of characters in `aString`. On return, contains the actual range of characters used to create the object.
 
 ## See Also
 

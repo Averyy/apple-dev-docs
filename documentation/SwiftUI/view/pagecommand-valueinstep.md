@@ -37,9 +37,9 @@ struct GuideView: View {
 
 ## Parameters
 
-- `value`: A   to the value to modify when the user pages   up or down.
-- `bounds`: A closed range that specifies the upper and lower   bounds of  .
-- `step`: The amount by which to increment or decrement  .   Defaults to 1.
+- `value`: A [`Binding`](binding.md) to the value to modify when the user pages up or down.
+- `bounds`: A closed range that specifies the upper and lower bounds of `value`.
+- `step`: The amount by which to increment or decrement `value`. Defaults to 1.
 
 ## See Also
 

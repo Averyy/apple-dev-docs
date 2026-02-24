@@ -20,7 +20,7 @@ struct MLObjectDetector
 
 #### Overview
 
-Use an [`MLObjectDetector`](mlobjectdetector.md) task to train a machine learning model that can identify items, or , within an image. For example, you can train an object detector to recognize breakfast items on a table, such as bananas, croissants, and beverages.
+Use an [`MLObjectDetector`](mlobjectdetector.md) task to train a machine learning model that can identify items, or *objects*, within an image. For example, you can train an object detector to recognize breakfast items on a table, such as bananas, croissants, and beverages.
 
 You create an object detector training it with a combination of images and annotations for each object within an image. Then save it as a Core ML model and use it in your app to recognize similar items.
 

@@ -30,7 +30,7 @@ If the `getPresentationTimeStamp` callback is `NULL`, `kCMTimeInvalid` will be r
 
 ## Parameters
 
-- `queue`:   being interrogated.
+- `queue`: `CMBufferQueue` being interrogated.
 
 ## See Also
 

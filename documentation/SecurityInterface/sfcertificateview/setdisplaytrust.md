@@ -20,7 +20,7 @@ Certificate trust settings are not displayed by default. To show the certificate
 
 ## Parameters
 
-- `display`: Pass   to display the trust settings, or   to hide them.
+- `display`: Pass [`true`](https://developer.apple.com/documentation/Swift/true) to display the trust settings, or [`false`](https://developer.apple.com/documentation/Swift/false) to hide them.
 
 ## See Also
 

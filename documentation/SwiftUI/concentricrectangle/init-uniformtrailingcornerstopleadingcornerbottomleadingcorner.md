@@ -22,7 +22,7 @@ init(uniformTrailingCorners: Edge.Corner.Style = .concentric, topLeadingCorner: 
 
 ## Parameters
 
-- `uniformTrailingCorners`: The corner style to be applied to the   trailing two corners uniformly.
+- `uniformTrailingCorners`: The corner style to be applied to the trailing two corners uniformly.
 - `topLeadingCorner`: The corner style for the top leading corner.
 - `bottomLeadingCorner`: The corner style for the bottom leading corner.
 

@@ -26,7 +26,7 @@ Use this initializer when you want to match a known SSID prefix, but don’t hav
 
 - `SSIDPrefix`: A prefix string to match the SSID of a WPA/WPA2 enterprise Wi-Fi network. This value must be between 3 and 32 characters.
 - `passphrase`: The network’s passphrase credential: for WPA or WPA2 personal networks, 8-63 characters; for static 64-bit WEP, 10 hexadecimal digits; for static 128-bit WEP, 26 hexadecimal digits.
-- `isWEP`: If  , the network is WEP Wi-Fi; otherwise it is a WPA or WPA2 personal Wi-Fi network.
+- `isWEP`: If [`true`](https://developer.apple.com/documentation/Swift/true), the network is WEP Wi-Fi; otherwise it is a WPA or WPA2 personal Wi-Fi network.
 
 ## See Also
 

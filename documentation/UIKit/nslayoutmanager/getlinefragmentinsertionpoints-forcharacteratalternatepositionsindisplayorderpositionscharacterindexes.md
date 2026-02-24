@@ -29,8 +29,8 @@ The method allows clients to obtain all insertion points for a line fragment in 
 ## Parameters
 
 - `charIndex`: The character index of one character within the line fragment.
-- `aFlag`: If  , returns alternate, rather than primary, insertion points.
-- `dFlag`: If  , returns insertion points in display, rather than logical, order.
+- `aFlag`: If [`true`](https://developer.apple.com/documentation/Swift/true), returns alternate, rather than primary, insertion points.
+- `dFlag`: If [`true`](https://developer.apple.com/documentation/Swift/true), returns insertion points in display, rather than logical, order.
 - `positions`: On output, the positions of the insertion points, in the order specified.
 - `charIndexes`: On output, the indexes of the characters corresponding to the returned insertion points.
 

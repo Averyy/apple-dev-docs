@@ -31,7 +31,7 @@ Use this modifier on leaf views rather than container views. The animation appli
 
 ## Parameters
 
-- `animation`: The animation to apply to animatable values   within this view.
+- `animation`: The animation to apply to animatable values within this view.
 
 
 ---

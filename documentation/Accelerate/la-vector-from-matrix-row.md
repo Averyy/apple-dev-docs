@@ -26,6 +26,9 @@ The resulting vector is a 1 x cols(matrix) vector.
 
 ##### Parameters
 
+- **matrix**: Matrix from which to create the row vector.
+- **matrix_row**: The zero-based index of the row to create the vector from.
+
 Creates a vector from the specified row of the matrix.  If the value for matrix_row is less than zero or greater than rows(matrix)-1, [`LA_INVALID_PARAMETER_ERROR`](la_invalid_parameter_error.md) is returned.
 
 If matrix is a splat, [`LA_INVALID_PARAMETER_ERROR`](la_invalid_parameter_error.md) is returned.

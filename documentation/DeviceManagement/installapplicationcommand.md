@@ -25,6 +25,11 @@ object InstallApplicationCommand
 - [object InstallApplicationCommand.Command](installapplicationcommand/command-data.dictionary.md)
   The command to install a third-party app on a device.
 
+## Properties
+
+- `Command` (InstallApplicationCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object InstallApplicationResponse](installapplicationresponse.md)

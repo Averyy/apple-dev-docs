@@ -10,9 +10,9 @@ Siri can predict shortcuts to actions that a user may want to perform using your
 
 ##### Donate Shortcuts at the Right Time
 
-Donate a shortcut each time the user performs the action in your app. Make one, and only one, donation per action at the time the user performs the action. If the user performs the same action again, make another donation. For example, if the user can order soup from a restaurant using your app, donate a shortcut for the  action after the user places their order. If the user places another order, then make another  donation.
+Donate a shortcut each time the user performs the action in your app. Make one, and only one, donation per action at the time the user performs the action. If the user performs the same action again, make another donation. For example, if the user can order soup from a restaurant using your app, donate a shortcut for the *order soup* action after the user places their order. If the user places another order, then make another *order soup* donation.
 
-However, don’t make more than one shortcut donation for an action at the time the user performs the action. Additionally, don’t make donations for actions the user hasn’t completed in your app; if the user never places an order for soup, don’t donate a shortcut for the  action.
+However, don’t make more than one shortcut donation for an action at the time the user performs the action. Additionally, don’t make donations for actions the user hasn’t completed in your app; if the user never places an order for soup, don’t donate a shortcut for the *order soup* action.
 
 Your app can make donations using one of the following objects:
 

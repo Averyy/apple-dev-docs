@@ -24,7 +24,7 @@ A true value indicates the device isn’t included in the normal list of devices
 
 ## Parameters
 
-- `in_is_hidden`:   if the device is hidden; otherwise,  .
+- `in_is_hidden`: `true` if the device is hidden; otherwise, `false`.
 
 ## See Also
 

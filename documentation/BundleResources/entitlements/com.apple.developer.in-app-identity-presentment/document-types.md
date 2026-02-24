@@ -7,6 +7,10 @@
 - iOS 16.0+
 - iPadOS 16.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [elements](entitlements/com.apple.developer.in-app-identity-presentment/elements.md)

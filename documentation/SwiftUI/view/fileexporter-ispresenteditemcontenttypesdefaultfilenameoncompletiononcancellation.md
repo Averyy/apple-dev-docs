@@ -27,9 +27,9 @@ In order for the interface to appear `isPresented` must be set to `true`. When t
 
 - `isPresented`: A binding to whether the interface should be shown.
 - `item`: The item to be saved on disk.
-- `contentTypes`: The optional content types to use for the exported file.   If empty, SwiftUI uses the content types from the    property provided for   conformance.
-- `onCompletion`: A callback that will be invoked when the operation   has succeeded or failed.
-- `onCancellation`: A callback that will be invoked   if the operation was cancelled.
+- `contentTypes`: The optional content types to use for the exported file. If empty, SwiftUI uses the content types from the `transferRepresentation` property provided for `Transferable` conformance.
+- `onCompletion`: A callback that will be invoked when the operation has succeeded or failed.
+- `onCancellation`: A callback that will be invoked if the operation was cancelled.
 
 ## See Also
 

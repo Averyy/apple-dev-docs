@@ -25,7 +25,7 @@ This method is invoked when a web view attempts to become the first responder or
 ## Parameters
 
 - `webView`: The web view that the user is editing.
-- `range`: The section of the begin-editing request; used to determine if editing is allowed. Typically,   is not the current selection but may becomes the current selection if this method returns  .
+- `range`: The section of the begin-editing request; used to determine if editing is allowed. Typically, `range` is not the current selection but may becomes the current selection if this method returns [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

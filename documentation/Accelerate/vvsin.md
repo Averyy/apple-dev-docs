@@ -24,11 +24,39 @@ func vvsin(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: UnsafeP
 
 ##### Parameters
 
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
 If `x` is `+/-0`, the result preserves the signed zero.
 
 If `x` is `+/-inf`, the result is `NaN`.
 
 The following code shows an example of using [`vvsin(_:_:_:)`](vvsin(_:_:_:).md).
+
+**Swift**:
+
+```swift
+let pi = Double.pi
+var x: [Double] = [-pi * 0.5, 0, pi * 0.5]
+var y = [Double](repeating: 0, count: x.count)
+var n = Int32(x.count)
+vvsin(&y, &x, &n)
+ 
+print(y) // [-1.0, 0.0, 1.0]
+```
+
+**Objective-C**:
+
+```objc
+double x[] = {-M_PI_2, 0, M_PI_2};
+double y[3];
+int n = 3;
+ 
+vvsin(y, x, &n);
+ 
+NSLog(@"y: [%lf, %lf, %lf]", y[0], y[1], y[2]);
+```
 
 ## See Also
 

@@ -36,9 +36,9 @@ Use these options to implement parallel encoding of render passes across multipl
 - [init(rawValue: UInt)](mtl4renderencoderoptions/init(rawvalue:).md)
 ### Type Properties
 - [static var resuming: MTL4RenderEncoderOptions](mtl4renderencoderoptions/resuming.md)
-  Configures the render pass to as .
+  Configures the render pass to as *resuming*.
 - [static var suspending: MTL4RenderEncoderOptions](mtl4renderencoderoptions/suspending.md)
-  Configures the render pass as .
+  Configures the render pass as *suspending*.
 
 ## Relationships
 

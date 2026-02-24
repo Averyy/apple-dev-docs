@@ -16,6 +16,10 @@ Updates a specific sign-in token to a new value.
 
 Use this endpoint to update a specific [`VSUserAccountManager.AutoSignInToken`](https://developer.apple.com/documentation/videosubscriberaccount/vsuseraccountmanager/autosignintoken-swift.struct) to a new [`value`](https://developer.apple.com/documentation/videosubscriberaccount/vsautosignintoken/value).
 
+## Endpoint
+
+`POST https://api.storekit-sandbox.itunes.apple.com/account/v1/autoSignIn/update`
+
 ## Request Body
 
 The request body that contains the old sign-in token and the new sign-in token.

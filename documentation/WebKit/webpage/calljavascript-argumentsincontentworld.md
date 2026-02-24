@@ -47,10 +47,10 @@ return p;
 
 ## Parameters
 
-- `functionBody`: The JavaScript string to use as the function body. This method treats the string as an anonymous   JavaScript function body and calls it with the named arguments in the   parameter.
-- `arguments`: A dictionary of the arguments to pass to the function call. Each key in the dictionary corresponds   to the name of an argument in the   string, and the value of that key is the value to use during   the evaluation of the code. Supported value types are  ,  ,  , and arrays, dictionaries,   and optional values of those types.
-- `frame`: The frame in which to evaluate the JavaScript code. Specify   to target the main frame. If this   frame is no longer valid when script evaluation begins, this function throws an error with the    code.
-- `contentWorld`: The namespace in which to evaluate the JavaScript code. This parameter doesn’t apply to changes   you make in the underlying web content, such as the document’s DOM structure. Those changes remain visible to   all scripts, regardless of which content world you specify. For more information about content worlds, see  .
+- `functionBody`: The JavaScript string to use as the function body. This method treats the string as an anonymous JavaScript function body and calls it with the named arguments in the `arguments` parameter.
+- `arguments`: A dictionary of the arguments to pass to the function call. Each key in the dictionary corresponds to the name of an argument in the `functionBody` string, and the value of that key is the value to use during the evaluation of the code. Supported value types are `Numeric`, `String`, `Date`, and arrays, dictionaries, and optional values of those types.
+- `frame`: The frame in which to evaluate the JavaScript code. Specify `nil` to target the main frame. If this frame is no longer valid when script evaluation begins, this function throws an error with the `WKError.Code.javaScriptInvalidFrameTarget` code.
+- `contentWorld`: The namespace in which to evaluate the JavaScript code. This parameter doesn’t apply to changes you make in the underlying web content, such as the document’s DOM structure. Those changes remain visible to all scripts, regardless of which content world you specify. For more information about content worlds, see `WKContentWorld`.
 
 
 ---

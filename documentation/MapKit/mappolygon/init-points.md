@@ -22,7 +22,7 @@ init(points: [MKMapPoint])
 
 ## Parameters
 
-- `points`: An array of   points that make up the vertices of the polygon.
+- `points`: An array of [`MKMapPoint`](mkmappoint.md) points that make up the vertices of the polygon.
 
 ## See Also
 

@@ -21,7 +21,7 @@ The type of `property` as defined in [`ABPropertyType`](abpropertytype.md). If `
 ## Parameters
 
 - `addressBook`: The address book for the logged-in user.
-- `recordType`: The record type that contains  : kABGroupRecordType or kABPersonRecordType.
+- `recordType`: The record type that contains `property`: kABGroupRecordType or kABPersonRecordType.
 - `property`: The property whose type you wish to obtain.
 
 ## See Also

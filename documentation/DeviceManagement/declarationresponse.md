@@ -25,6 +25,13 @@ object DeclarationResponse
 ### Dictionaries
 - [object DeclarationResponse.DeclarationPayload](declarationresponse/declarationpayload.md)
 
+## Properties
+
+- `Identifier` (string) *(required)*
+- `Payload` (DeclarationResponse.DeclarationPayload) *(required)*
+- `ServerToken` (string) *(required)*
+- `Type` (string) *(required)*
+
 
 ---
 

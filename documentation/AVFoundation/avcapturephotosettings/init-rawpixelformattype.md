@@ -29,7 +29,7 @@ Requesting RAW format capture adds requirements for other photo settings: for de
 
 ## Parameters
 
-- `rawPixelFormatType`: The Bayer RAW pixel format type to use for capture. This value must be one of the format identifiers listed in the   array of your photo capture output.
+- `rawPixelFormatType`: The Bayer RAW pixel format type to use for capture. This value must be one of the format identifiers listed in the [`availableRawPhotoPixelFormatTypes`](avcapturephotooutput/availablerawphotopixelformattypes-5fatm.md) array of your photo capture output.
 
 ## See Also
 

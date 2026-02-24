@@ -30,10 +30,14 @@ This function creates a [`vImageConverter`](vimageconverter.md) instance that’
 
 ## Parameters
 
-- `srcFormat`: The   structure that describes the pixel format associated with the source buffers.
-- `destFormat`: The   structure that describes the pixel format associated with the destination image buffers.
-- `backgroundColor`: In cases where the source format has an alpha channel and the destination doesn’t (or is   or  ) the conversion removes the alpha channel by flattening it against an opaque background color. The background color is specified as three   values corresponding to red, green, and blue in sRGB.
-- `flags`: The options to use when performing this operation. The following flags are supported:
+- `srcFormat`: The [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure that describes the pixel format associated with the source buffers.
+- `destFormat`: The [`vImageCVImageFormat`](vimagecvimageformat.md) structure that describes the pixel format associated with the destination image buffers.
+- `backgroundColor`: In cases where the source format has an alpha channel and the destination doesn’t (or is [`CGImageAlphaInfo.noneSkipFirst`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/noneSkipFirst) or [`CGImageAlphaInfo.noneSkipLast`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/noneSkipLast)) the conversion removes the alpha channel by flattening it against an opaque background color. The background color is specified as three [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) values corresponding to red, green, and blue in sRGB.
+- `flags`: The options to use when performing this operation. The following flags are supported: | Name | Description |
+| --- | --- |
+| [`kvImagePrintDiagnosticsToConsole`](kvimageprintdiagnosticstoconsole.md) | Prints a debug message if the operation fails. |
+| [`kvImageHighQualityResampling`](kvimagehighqualityresampling.md) | Instructs the converter to spend extra time to achieve better image quality in cases where chroma is upsampled or downsampled as part of the conversion. |
+| [`kvImageDoNotTile`](kvimagedonottile.md) | Operates as if [`kvImageDoNotTile`](kvimagedonottile.md) was passed to [`vImageConvert_AnyToAny(_:_:_:_:_:)`](vimageconvert_anytoany(_:_:_:_:_:).md). |
 
 ## See Also
 

@@ -17,7 +17,7 @@ func addNamespace(_ aNamespace: XMLNode)
 
 ## Parameters
 
-- `aNamespace`: An XML node object of kind  . If the receiver already has a namespace with the same name,   is not added.
+- `aNamespace`: An XML node object of kind [`XMLNode.Kind.namespace`](xmlnode/kind-swift.enum/namespace.md). If the receiver already has a namespace with the same name, `aNamespace` is not added.
 
 ## See Also
 

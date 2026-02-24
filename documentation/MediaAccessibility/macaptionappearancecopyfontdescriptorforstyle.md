@@ -25,9 +25,9 @@ The name of the preferred font for the specified style.
 
 ## Parameters
 
-- `domain`: The domain to retrieve the preference value from. See  . Pass   unless the system defaults are needed for comparison.
-- `behavior`: A pointer to memory. On return, this memory holds the caption appearance behavior for this preference setting. For possible values see  . Pass   when you do not need the behavior setting.
-- `fontStyle`: A font style, such as cursive or small caps, see  .
+- `domain`: The domain to retrieve the preference value from. See [`MACaptionAppearanceDomain`](macaptionappearancedomain.md). Pass [`MACaptionAppearanceDomain.user`](macaptionappearancedomain/user.md) unless the system defaults are needed for comparison.
+- `behavior`: A pointer to memory. On return, this memory holds the caption appearance behavior for this preference setting. For possible values see [`MACaptionAppearanceBehavior`](macaptionappearancebehavior.md). Pass `NULL` when you do not need the behavior setting.
+- `fontStyle`: A font style, such as cursive or small caps, see [`MACaptionAppearanceFontStyle`](macaptionappearancefontstyle.md).
 
 ## See Also
 

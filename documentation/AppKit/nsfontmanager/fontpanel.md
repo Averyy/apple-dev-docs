@@ -20,7 +20,7 @@ The application’s shared Font panel object.
 
 ## Parameters
 
-- `create`: If  , the Font panel object is created if necessary; if  , it is not.
+- `create`: If [`true`](https://developer.apple.com/documentation/Swift/true), the Font panel object is created if necessary; if [`false`](https://developer.apple.com/documentation/Swift/false), it is not.
 
 ## See Also
 

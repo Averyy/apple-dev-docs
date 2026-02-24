@@ -23,7 +23,7 @@ class AVAudioSessionDataSourceDescription
 
 You obtain data source descriptions from the shared [`AVAudioSession`](avaudiosession.md) object or the [`AVAudioSessionPortDescription`](avaudiosessionportdescription.md) objects corresponding to its input and output ports. Only built-in microphone ports on certain devices support the location, orientation, and polar pattern properties. If a port doesn’t support these features, the value of its [`dataSources`](avaudiosessionportdescription/datasources.md) property is `nil`.
 
-This class is especially useful for differentiating between microphone configurations on devices having more than one built-in microphone. Such devices may also support signal processing features for spatial filtering, or , in which the system makes the device more sensitive to audio signals from a particular direction. See `Data Source Polar Patterns` for more information.
+This class is especially useful for differentiating between microphone configurations on devices having more than one built-in microphone. Such devices may also support signal processing features for spatial filtering, or *beamforming*, in which the system makes the device more sensitive to audio signals from a particular direction. See `Data Source Polar Patterns` for more information.
 
 ## Topics
 

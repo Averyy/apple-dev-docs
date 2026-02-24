@@ -124,7 +124,7 @@ The Model I/O framework provides a system-level understanding of 3D model assets
   The general interface for classes that manage local coordinate space transforms for 3D objects
 ### Volumetric Representations
 - [class MDLVoxelArray](mdlvoxelarray.md)
-  A model of a 3D object’s solid volume as a collection of , or cubic units.
+  A model of a 3D object’s solid volume as a collection of *voxels*, or cubic units.
 ### Reference
 - [Model I/O Data Types](model-i-o-data-types.md)
 - [Model I/O Structures](model-i-o-structures.md)

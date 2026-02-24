@@ -24,7 +24,7 @@ The reader session restarts polling when the detected tag moves from the session
 ## Parameters
 
 - `session`: The reader session that calls this method.
-- `responses`: An array of   objects. The order of the response objects follows the sequence of   sent to the tag by the reader session.
+- `responses`: An array of [`NFCVASResponse`](nfcvasresponse.md) objects. The order of the response objects follows the sequence of `GET VAS DATA` sent to the tag by the reader session.
 
 ## See Also
 

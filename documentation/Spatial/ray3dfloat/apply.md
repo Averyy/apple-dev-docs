@@ -22,7 +22,7 @@ mutating func apply(_ pose: Pose3DFloat)
 
 ## Parameters
 
-- `pose`: The pose.   This function rotate’s the ray’s direction by the pose’s rotation and sets the ray’s origin to the pose’s position.
+- `pose`: The pose. This function rotate’s the ray’s direction by the pose’s rotation and sets the ray’s origin to the pose’s position.
 
 
 ---

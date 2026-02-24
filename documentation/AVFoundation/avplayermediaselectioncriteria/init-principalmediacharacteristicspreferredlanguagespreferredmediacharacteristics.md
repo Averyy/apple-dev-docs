@@ -26,9 +26,9 @@ Principal media characteristics, when present, override language preferences whe
 
 ## Parameters
 
-- `principalMediaCharacteristics`: An array of media characteristics that are essential to selecting media with the characteristic. This value may be  .
-- `preferredLanguages`: An array of language identifier strings, in order of preference. This value may be  .
-- `preferredMediaCharacteristics`: An array of media characteristics, in order of preference. This value may be  .
+- `principalMediaCharacteristics`: An array of media characteristics that are essential to selecting media with the characteristic. This value may be `nil`.
+- `preferredLanguages`: An array of language identifier strings, in order of preference. This value may be `nil`.
+- `preferredMediaCharacteristics`: An array of media characteristics, in order of preference. This value may be `nil`.
 
 ## See Also
 

@@ -21,9 +21,9 @@ init(shapes: [ShapeResource], mode: CollisionComponent.Mode = .default, filter: 
 
 ## Parameters
 
-- `shapes`: The collection of shapes that collectively define the outer   dimensions of the associated entity for the purposes of collision   detection.
+- `shapes`: The collection of shapes that collectively define the outer dimensions of the associated entity for the purposes of collision detection.
 - `mode`: The mode of the collision component.
-- `filter`: A filter that limits the other entities with which the entity   can collide.
+- `filter`: A filter that limits the other entities with which the entity can collide.
 
 
 ---

@@ -24,7 +24,7 @@ A result code. See [`Secure Transport Result Codes`](secure-transport-result-cod
 ## Parameters
 
 - `context`: The session context.
-- `protocols`: An array of ASCII-encoded strings representing the supported protocols, such as  . See   for more details.
+- `protocols`: An array of ASCII-encoded strings representing the supported protocols, such as `http/1.1`. See [`RFC 7301`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7301) for more details.
 
 
 ---

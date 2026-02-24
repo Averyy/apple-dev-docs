@@ -22,7 +22,7 @@ func withUnsafePointer<Result>(_ body: (UnsafePointer<AudioChannelLayout>) throw
 
 ## Parameters
 
-- `body`: A closure that is called with a pointer to the backing   .
+- `body`: A closure that is called with a pointer to the backing `AudioChannelLayout`.
 
 
 ---

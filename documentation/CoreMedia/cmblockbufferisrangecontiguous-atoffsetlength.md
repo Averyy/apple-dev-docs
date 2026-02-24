@@ -30,7 +30,7 @@ Determines whether the specified range within the given `CMBlockBuffer` is conti
 
 ## Parameters
 
-- `theBuffer`:   to examine. Must not be  .
+- `theBuffer`: `CMBlockBuffer` to examine. Must not be `NULL`.
 - `offset`: Offset within the buffer’s offset range.
 - `length`: Desired number of bytes to access at offset. If zero, the number of bytes available at offset (dataLength – offset), contiguous or not, is used.
 

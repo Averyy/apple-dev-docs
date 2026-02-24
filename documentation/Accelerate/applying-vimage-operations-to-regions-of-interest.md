@@ -6,7 +6,7 @@ Limit the effect of vImage operations to rectangular regions of interest.
 
 #### Overview
 
-You can apply vImage operations, such as blurs and color transforms, to specified rectangular areas in an image, commonly referred to as  (ROI). Limiting the effect of an operation is useful when, for example, you want to overlay user interface elements on top of a blurred part of an image to make them stand out.
+You can apply vImage operations, such as blurs and color transforms, to specified rectangular areas in an image, commonly referred to as *regions of interest* (ROI). Limiting the effect of an operation is useful when, for example, you want to overlay user interface elements on top of a blurred part of an image to make them stand out.
 
 The following image is an example of the effects possible when you use the techniques in this article. The image shows a single photograph with a portrait-format ROI that the code has desaturated and a landscape-format ROI that the code has blurred.
 

@@ -19,7 +19,7 @@ func passEntries() async -> [PKIssuerProvisioningExtensionPassEntry]
 
 ## Parameters
 
-- `completion`: A completion handler that the system calls to find the list of passes available to add to an iPhone. This handler takes the following parameter:
+- `completion`: A completion handler that the system calls to find the list of passes available to add to an iPhone. This handler takes the following parameter: - **`entries`**: An array [`PKIssuerProvisioningExtensionPassEntry`](pkissuerprovisioningextensionpassentry.md) items that represents the passes that are available to add to Wallet.
 
 ## See Also
 

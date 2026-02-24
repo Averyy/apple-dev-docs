@@ -22,7 +22,7 @@ When a correction is automatically proposed, the user may respond in one of seve
 
 ## Parameters
 
-- `response`: The user’s response. The possible values are shown in  .
+- `response`: The user’s response. The possible values are shown in [`NSSpellChecker.CorrectionResponse`](nsspellchecker/correctionresponse.md).
 - `correction`: The corrected word.  This should match the original correction.
 - `word`: The original word.  This should match the original correction.
 - `language`: The language being edited. This should match the original correction.

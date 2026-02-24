@@ -41,7 +41,7 @@ It is more efficient to use `nil` than to pass an array of all the property keys
 
 ## Parameters
 
-- `keys`: An array containing names of properties of the receiver, or  .
+- `keys`: An array containing names of properties of the receiver, or `nil`.
 
 ## See Also
 

@@ -23,8 +23,8 @@ func chartLineStyleScale<Domain, Range>(domain: Domain, range: Range) -> some Vi
 
 ## Parameters
 
-- `domain`: The possible data values plotted as line   styles in the chart. You can define the domain with an array for   categorical values (e.g.,  )
-- `range`: The range of line styles that correspond to the   scale domain.
+- `domain`: The possible data values plotted as line styles in the chart. You can define the domain with an array for categorical values (e.g., `["A", "B", "C"]`)
+- `range`: The range of line styles that correspond to the scale domain.
 
 ## See Also
 

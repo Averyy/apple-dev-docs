@@ -13,6 +13,11 @@
 object Books.Attributes.Offers.Download
 ```
 
+## Properties
+
+- `type` (string) *(required)*
+- `url` (string) *(required)*
+
 ## See Also
 
 - [object Books.Attributes.Offers.Assets](books/attributes-data.dictionary/offers-data.dictionary/assets-data.dictionary.md)

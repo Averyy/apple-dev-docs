@@ -34,7 +34,7 @@ If you want to apply a graphical effect, such as blur, to a snapshot, use the [`
 
 ## Parameters
 
-- `afterUpdates`: A Boolean value that specifies whether the snapshot should be taken after recent changes have been incorporated. Pass the value   to capture the screen in its current state, which might not include recent changes.
+- `afterUpdates`: A Boolean value that specifies whether the snapshot should be taken after recent changes have been incorporated. Pass the value [`false`](https://developer.apple.com/documentation/Swift/false) to capture the screen in its current state, which might not include recent changes.
 
 ## See Also
 

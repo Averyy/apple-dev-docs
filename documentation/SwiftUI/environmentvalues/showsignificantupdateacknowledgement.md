@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-An action that shows a system sheet for significant update acknowledgements.
+An action that shows a system sheet for significant update acknowledgments.
 
 **Availability**:
 - iOS 26.4+ (Beta)
@@ -18,7 +18,7 @@ var showSignificantUpdateAcknowledgement: SignificantUpdateAction { get }
 
 #### Discussion
 
-Call this action from a [`Button`](Button.md) or [`onAppear(perform:)`](View/onAppear(perform:).md) to inform people about significant app changes that require their acknowledgement.
+Call this action from a [`Button`](Button.md) or [`onAppear(perform:)`](View/onAppear(perform:).md) to inform people about significant app changes that require their acknowledgment.
 
 
 ---

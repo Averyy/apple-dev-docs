@@ -30,11 +30,11 @@ The new path is created so that filling the new path draws the same pixels as st
 
 ## Parameters
 
-- `lineWidth`: The line width to use, in user space units. The value must be greater than  .
-- `lineCap`: The line cap style to render. (For equivalent   drawing methods, the default style is  .)
-- `lineJoin`: The line join style to render. (For equivalent   drawing methods, the default style is  .)
-- `miterLimit`: A value that limits how sharp individual corners in the path can be when using the   line join style. When the ratio of a the length required for a mitered corner to the line width exceeds this value, that corner uses the   style instead.
-- `transform`: An affine transform to apply to the path before dashing. Defaults to the   transform if not specified.
+- `lineWidth`: The line width to use, in user space units. The value must be greater than `0`.
+- `lineCap`: The line cap style to render. (For equivalent [`CGContext`](cgcontext.md) drawing methods, the default style is [`CGLineCap.butt`](cglinecap/butt.md).)
+- `lineJoin`: The line join style to render. (For equivalent [`CGContext`](cgcontext.md) drawing methods, the default style is [`CGLineJoin.miter`](cglinejoin/miter.md).)
+- `miterLimit`: A value that limits how sharp individual corners in the path can be when using the [`CGLineJoin.miter`](cglinejoin/miter.md) line join style. When the ratio of a the length required for a mitered corner to the line width exceeds this value, that corner uses the [`CGLineJoin.bevel`](cglinejoin/bevel.md) style instead.
+- `transform`: An affine transform to apply to the path before dashing. Defaults to the [`CGAffineTransformIdentity`](cgaffinetransformidentity.md) transform if not specified.
 
 ## See Also
 

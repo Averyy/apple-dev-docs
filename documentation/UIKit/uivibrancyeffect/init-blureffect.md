@@ -28,7 +28,7 @@ When you create a new vibrancy effect, use the same [`UIBlurEffect`](uiblureffec
 
 ## Parameters
 
-- `blurEffect`: The   used by the blurred view the vibrancy effect is attached to.
+- `blurEffect`: The [`UIBlurEffect`](uiblureffect.md) used by the blurred view the vibrancy effect is attached to.
 
 ## See Also
 

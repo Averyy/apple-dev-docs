@@ -20,7 +20,7 @@ virtual kern_return_t GetSpeed(uint8_t *speed) const;
 
 ## Parameters
 
-- `speed`: A pointer to a variable. On output, the variable contains the operational speed of the device. For a list of possible values, see  .
+- `speed`: A pointer to a variable. On output, the variable contains the operational speed of the device. For a list of possible values, see [`tIOUSBHostConnectionSpeed`](tiousbhostconnectionspeed.md).
 
 ## See Also
 

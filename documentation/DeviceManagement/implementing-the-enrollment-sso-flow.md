@@ -70,7 +70,7 @@ After this step is complete, the client continues with processing the actions in
 
 #### Test the Enrollment Sso App
 
-Developers can test their Enrollment SSO app with the account-driven enrollment flow prior to submitting the app for App Store deployment by using a  variant of the Enrollment SSO JSON document described above.
+Developers can test their Enrollment SSO app with the account-driven enrollment flow prior to submitting the app for App Store deployment by using a *test mode* variant of the Enrollment SSO JSON document described above.
 
 To use test mode, the developer needs to enable the Enrollment SSO option in the Developer section of the Settings app on their device.
 

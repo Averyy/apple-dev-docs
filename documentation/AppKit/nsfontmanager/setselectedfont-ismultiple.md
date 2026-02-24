@@ -21,7 +21,7 @@ An object that manipulates fonts should invoke this method whenever it becomes f
 ## Parameters
 
 - `fontObj`: The font to set as selected.
-- `flag`: If  , the Font panel indicates that more than one font is contained in the selection; if  , it does not.
+- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), the Font panel indicates that more than one font is contained in the selection; if [`false`](https://developer.apple.com/documentation/Swift/false), it does not.
 
 ## See Also
 

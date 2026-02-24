@@ -25,13 +25,13 @@ A valid MPSGraphImToColOpDescriptor on autoreleasepool.
 
 ## Parameters
 
-- `kernelWidth`: See   property.
-- `kernelHeight`: See   property.
-- `strideInX`: See   property.
-- `strideInY`: See   property.
-- `dilationRateInX`: See   property.
-- `dilationRateInY`: See   property.
-- `dataLayout`: See   property.
+- `kernelWidth`: See `kernelWidth` property.
+- `kernelHeight`: See `kernelHeight` property.
+- `strideInX`: See `strideInX` property.
+- `strideInY`: See `strideInY` property.
+- `dilationRateInX`: See `dilationRateInX` property.
+- `dilationRateInY`: See `dilationRateInY` property.
+- `dataLayout`: See `dataLayout` property.
 
 
 ---

@@ -24,7 +24,7 @@ A [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) 
 
 ## Parameters
 
-- `mech`: The underlying mechanism in use. For example, use   for Kerberos. Use   if none is available.
+- `mech`: The underlying mechanism in use. For example, use [`GSS_KRB5_MECHANISM`](gss_krb5_mechanism.md) for Kerberos. Use [`GSS_C_NO_OID`](gss_c_no_oid.md) if none is available.
 - `major_status`: Major status code from a failed GSS-API function call.
 - `minor_status`: Minor status code from a failed GSS-API function call.
 

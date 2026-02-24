@@ -27,7 +27,7 @@ func CVBufferHasAttachment(_ buffer: CVBuffer, _ key: CFString) -> Bool
 ## Parameters
 
 - `buffer`: A Core Video buffer to query.
-- `key`: A string that identifies the attachment, which can be of any  .
+- `key`: A string that identifies the attachment, which can be of any [`CFTypeRef`](https://developer.apple.com/documentation/CoreFoundation/CFTypeRef).
 
 ## See Also
 

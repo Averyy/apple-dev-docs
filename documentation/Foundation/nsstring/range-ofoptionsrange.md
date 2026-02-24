@@ -53,8 +53,8 @@ may differ if equivalent composed character sequences are matched.
 ## Parameters
 
 - `searchString`: The string for which to search.
-- `mask`: A mask specifying search options. The following options may be specified by combining them with the C bitwise   operator:  ,  ,  , and  . See   for details on these options.
-- `rangeOfReceiverToSearch`: is invalid.
+- `mask`: A mask specifying search options. The following options may be specified by combining them with the C bitwise `OR` operator: `NSCaseInsensitiveSearch`, `NSLiteralSearch`, `NSBackwardsSearch`, and `NSAnchoredSearch`. See [`String Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/introStrings.html#//apple_ref/doc/uid/10000035i) for details on these options.
+- `rangeOfReceiverToSearch`: The range within the receiver for which to search for `aString`. Raises an `NSRangeException` if `rangeOfReceiverToSearch` is invalid.
 
 ## See Also
 

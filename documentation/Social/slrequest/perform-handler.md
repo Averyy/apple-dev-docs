@@ -19,7 +19,7 @@ func perform(handler: SLRequestHandler!)
 
 ## Parameters
 
-- `handler`: The handler to call when the request is done. The parameters for this handler are described in  . This handler is not guaranteed to be called on any particular thread and should not be nil.
+- `handler`: The handler to call when the request is done. The parameters for this handler are described in [`SLRequestHandler`](slrequesthandler.md). This handler is not guaranteed to be called on any particular thread and should not be nil.
 
 ## See Also
 

@@ -32,7 +32,7 @@ If no input sources or timers are attached to the run loop, this method exits im
 
 ## Parameters
 
-- `mode`: The mode in which to run. You may specify custom modes or use one of the modes listed in  .
+- `mode`: The mode in which to run. You may specify custom modes or use one of the modes listed in `Run Loop Modes`.
 - `limitDate`: The date until which to block.
 
 ## See Also

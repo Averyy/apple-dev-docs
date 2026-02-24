@@ -13,6 +13,10 @@ The app group identifier that you share between your app and the extension that 
 - tvOS 26.0+
 - visionOS 26.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [BAUsesAppleHosting](information-property-list/bausesapplehosting.md)

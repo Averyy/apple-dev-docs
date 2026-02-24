@@ -29,7 +29,7 @@ This will not take effect if a specific interface is required. Applicable when a
 
 ## Parameters
 
-- `included`: True if peer-to-peer interfaces should   be included, false otherwise.
+- `included`: True if peer-to-peer interfaces should be included, false otherwise.
 
 
 ---

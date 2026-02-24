@@ -17,7 +17,7 @@ optional func applicationDidChangeScreenParameters(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: A notification named  . Calling the   method of this notification returns the   object itself.
+- `notification`: A notification named [`didChangeScreenParametersNotification`](nsapplication/didchangescreenparametersnotification.md). Calling the [`object`](https://developer.apple.com/documentation/Foundation/NSNotification/object) method of this notification returns the `NSApplication` object itself.
 
 
 ---

@@ -35,7 +35,7 @@ To use the newly created physics shape, create a physics body with the the [`ini
 ## Parameters
 
 - `geometry`: A geometry object.
-- `options`: A dictionary of options affecting the level of detail of the physics shape, or   to use default options. For applicable keys and their possible values, see  .
+- `options`: A dictionary of options affecting the level of detail of the physics shape, or `nil` to use default options. For applicable keys and their possible values, see `Shape Creation Options Keys`.
 
 ## See Also
 

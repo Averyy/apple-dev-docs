@@ -21,7 +21,7 @@ By default, this method sets the window containing a web view to be resizable. I
 ## Parameters
 
 - `sender`: The web view that sent the message.
-- `resizable`: If  , the web view’s window can be resized; if  , the window is not resizable.
+- `resizable`: If [`true`](https://developer.apple.com/documentation/Swift/true), the web view’s window can be resized; if [`false`](https://developer.apple.com/documentation/Swift/false), the window is not resizable.
 
 ## See Also
 

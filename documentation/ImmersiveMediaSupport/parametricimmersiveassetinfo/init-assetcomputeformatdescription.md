@@ -20,8 +20,8 @@ init(asset: AVURLAsset, computeFormatDescription: Bool = true) async throws
 
 ## Parameters
 
-- `asset`: The original  .
-- `computeFormatDescription`: A flag that indicates whether to run the calculation for converting the   asset. Opt-out for a quick check if the content is convertible, result is stored in isAssetConvertible.
+- `asset`: The original `AVURLAsset`.
+- `computeFormatDescription`: A flag that indicates whether to run the calculation for converting the `ParametricImmersive` asset. Opt-out for a quick check if the content is convertible, result is stored in isAssetConvertible.
 
 
 ---

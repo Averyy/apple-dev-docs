@@ -23,7 +23,7 @@ On iPad, this method presents the action sheet in a popover and adds the toolbar
 ## Parameters
 
 - `item`: The bar button item from which the action sheet originates.
-- `animated`: Specify   to animate the presentation of the action sheet or   to present it immediately without any animation effects.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the presentation of the action sheet or [`false`](https://developer.apple.com/documentation/Swift/false) to present it immediately without any animation effects.
 
 ## See Also
 

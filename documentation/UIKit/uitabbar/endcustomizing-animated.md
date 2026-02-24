@@ -26,7 +26,7 @@ You rarely need to call this method. Typically, the user dismisses the modal vie
 
 ## Parameters
 
-- `animated`: If  , animate the dismissal of the interface.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), animate the dismissal of the interface.
 
 ## See Also
 

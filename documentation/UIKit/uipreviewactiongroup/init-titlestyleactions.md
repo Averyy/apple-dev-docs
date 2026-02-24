@@ -24,8 +24,8 @@ A newly initialized peek quick action group with your specified title, style, an
 ## Parameters
 
 - `title`: The peek quick action group’s title
-- `style`: When the system presents the group’s submenu, each child quick action is displayed using its own style. The available styles are described in the UIPreviewActionStyle enumeration in  .
-- `actions`: An array of   objects, displayed as the child quick actions for the peek quick action group.
+- `style`: The style for the peek quick action group. When the system presents the group’s submenu, each child quick action is displayed using its own style. The available styles are described in the UIPreviewActionStyle enumeration in [`UIPreviewActionItem`](uipreviewactionitem.md).
+- `actions`: An array of [`UIPreviewAction`](uipreviewaction.md) objects, displayed as the child quick actions for the peek quick action group.
 
 
 ---

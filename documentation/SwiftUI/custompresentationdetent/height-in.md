@@ -27,7 +27,7 @@ The height of the detent, or `nil` if the detent should be inactive based on the
 
 ## Parameters
 
-- `context`: Information that can help to determine the   height of the detent.
+- `context`: Information that can help to determine the height of the detent.
 
 ## See Also
 

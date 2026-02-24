@@ -33,8 +33,8 @@ Pass `nil` for both `startDate` and `endDate` to get all complete reminders in t
 
 ## Parameters
 
-- `startDate`: The start date of the range of reminders fetched, or   for all completed reminders before  .
-- `endDate`: The end date of the range of reminders fetched, or   for all completed reminders after  .
+- `startDate`: The start date of the range of reminders fetched, or `nil` for all completed reminders before `endDate`.
+- `endDate`: The end date of the range of reminders fetched, or `nil` for all completed reminders after `startDate`.
 - `calendars`: An array of calendars to search.
 
 ## See Also

@@ -25,7 +25,7 @@ Use this method to retrieve the access instance from a keychain item. Alternativ
 ## Parameters
 
 - `itemRef`: A keychain item.
-- `access`: On return, points to the keychain item’s access instance. Call the   method to release this access instance when you are finished using it.
+- `access`: On return, points to the keychain item’s access instance. Call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) method to release this access instance when you are finished using it.
 
 
 ---

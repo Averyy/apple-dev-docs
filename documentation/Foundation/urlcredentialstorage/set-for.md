@@ -28,7 +28,7 @@ If you override this method, also override [`set(_:for:task:)`](urlcredentialsto
 
 ## Parameters
 
-- `credential`: The credential to add. If a credential with the same user name already exists in  , then   replaces the existing object.
+- `credential`: The credential to add. If a credential with the same user name already exists in `space`, then `credential` replaces the existing object.
 - `space`: The protection space to which to add the credential.
 
 ## See Also

@@ -31,9 +31,9 @@ struct SparseSymbolicFactorOptions
 | [`SparseOrderDefault`](sparseorderdefault.md) | The default ordering ([`SparseOrderAMD`](sparseorderamd.md) for symmetric and [`SparseOrderCOLAMD`](sparseordercolamd.md) for unsymmetric factorizations). |
 | --- | --- |
 | [`SparseOrderUser`](sparseorderuser.md) | The user-supplied ordering, or identity if [`order`](sparsesymbolicfactoroptions/order.md) is `null`. |
-| [`SparseOrderAMD`](sparseorderamd.md) | Approximate minimum degree (AMD) ordering. There’s a large overhead cost if you use it for QR-based factorization due to explicit formation of . |
-| [`SparseOrderMetis`](sparseordermetis.md) | METIS nested dissection ordering. There’s a large overhead cost if you use it for QR-based factorization due to explicit formation of . |
-| [`SparseOrderCOLAMD`](sparseordercolamd.md) | The column AMD ordering for . This isn’t valid for symmetric factorizations (use [`SparseOrderAMD`](sparseorderamd.md) instead). |
+| [`SparseOrderAMD`](sparseorderamd.md) | Approximate minimum degree (AMD) ordering. There’s a large overhead cost if you use it for QR-based factorization due to explicit formation of *AᵀA*. |
+| [`SparseOrderMetis`](sparseordermetis.md) | METIS nested dissection ordering. There’s a large overhead cost if you use it for QR-based factorization due to explicit formation of *AᵀA*. |
+| [`SparseOrderCOLAMD`](sparseordercolamd.md) | The column AMD ordering for *AᵀA*. This isn’t valid for symmetric factorizations (use [`SparseOrderAMD`](sparseorderamd.md) instead). |
 
 ## Topics
 

@@ -22,10 +22,10 @@ init(items: Data, subject: Text? = nil, message: Text? = nil, preview: @escaping
 ## Parameters
 
 - `items`: The items to share.
-- `subject`: A title for the items to show when sharing to activities   that support a subject field.
-- `message`: A description of the items to show when sharing to   activities that support a message field. Activities may   support attributed text or HTML strings.
-- `preview`: A closure that returns a representation of each item to   render in a preview.
-- `label`: A view builder that produces a label that describes the   share action.
+- `subject`: A title for the items to show when sharing to activities that support a subject field.
+- `message`: A description of the items to show when sharing to activities that support a message field. Activities may support attributed text or HTML strings.
+- `preview`: A closure that returns a representation of each item to render in a preview.
+- `label`: A view builder that produces a label that describes the share action.
 
 ## See Also
 

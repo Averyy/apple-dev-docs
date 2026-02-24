@@ -27,7 +27,7 @@ To remove an overlay from a map, use the [`removeOverlay(_:)`](mkmapview/removeo
 
 ## Parameters
 
-- `overlay`: The overlay object to add. This object needs to conform to the   protocol.
+- `overlay`: The overlay object to add. This object needs to conform to the [`MKOverlay`](mkoverlay.md) protocol.
 
 ## See Also
 

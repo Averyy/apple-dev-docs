@@ -8,6 +8,12 @@ A Boolean that indicates whether the app manages virtual network interfaces with
 **Availability**:
 - macOS 10.10+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 The entitlement is required to use the [`vmnet`](https://developer.apple.com/documentation/vmnet) APIs.

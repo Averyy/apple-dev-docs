@@ -29,6 +29,13 @@ This method applies the depth of field filter to an image. The effect simulates 
 
 The depth of field filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`point0`**: A set of coordinates marking the first point to be focused on as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`point1`**: A set of coordinates marking the second point to be focused on as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`unsharpMaskRadius`**: A `float` representing the radius of the unsharpened mask effect applied to the in-focus area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`unsharpMaskIntensity`**: A `float` representing the intensity of the unsharp mask effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in the center cilantro being in focus while gradually blurring to the top and bottom of the image:
 
 ```swift

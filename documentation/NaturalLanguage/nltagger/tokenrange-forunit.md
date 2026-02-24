@@ -28,7 +28,7 @@ The smallest possible range that contains all of the tokens of the specified lin
 ## Parameters
 
 - `range`: The range within the string to search for tokens.
-- `unit`: The linguistic unit. For possible values, see  .
+- `unit`: The linguistic unit. For possible values, see [`NLTokenUnit`](nltokenunit.md).
 
 ## See Also
 

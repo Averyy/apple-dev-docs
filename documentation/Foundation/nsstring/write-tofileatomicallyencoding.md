@@ -39,9 +39,9 @@ The methods [`init(contentsOfFile:usedEncoding:)`](nsstring/init(contentsoffile:
 
 ## Parameters
 
-- `path`: The file to which to write the receiver. If   contains a tilde ( ) character, you must expand it with   before invoking this method.
-- `useAuxiliaryFile`: If  , the receiver is written to an auxiliary file, and then the auxiliary file is renamed to  . If  , the receiver is written directly to  . The   option guarantees that  , if it exists at all, won’t be corrupted even if the system should crash during writing.
-- `enc`: The encoding to use for the output. For possible values, see  .
+- `path`: The file to which to write the receiver. If `path` contains a tilde (`~`) character, you must expand it with [`expandingTildeInPath`](nsstring/expandingtildeinpath.md) before invoking this method.
+- `useAuxiliaryFile`: If [`true`](https://developer.apple.com/documentation/Swift/true), the receiver is written to an auxiliary file, and then the auxiliary file is renamed to `path`. If [`false`](https://developer.apple.com/documentation/Swift/false), the receiver is written directly to `path`. The [`true`](https://developer.apple.com/documentation/Swift/true) option guarantees that `path`, if it exists at all, won’t be corrupted even if the system should crash during writing.
+- `enc`: The encoding to use for the output. For possible values, see [`NSStringEncoding`](nsstringencoding.md).
 
 ## See Also
 

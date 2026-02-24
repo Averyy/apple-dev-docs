@@ -30,7 +30,7 @@ In macOS, this method creates both standard and high-resolution representations 
 
 ## Parameters
 
-- `completionHandler`: The block to call with the resulting snapshot. This snapshotter executes this block on the app’s main thread and can’t be  .
+- `completionHandler`: The block to call with the resulting snapshot. This snapshotter executes this block on the app’s main thread and can’t be `nil`.
 
 ## See Also
 

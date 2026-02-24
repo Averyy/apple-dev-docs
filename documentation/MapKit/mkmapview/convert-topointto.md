@@ -26,7 +26,7 @@ The point (in the appropriate view or window coordinate system) corresponding to
 ## Parameters
 
 - `coordinate`: The map coordinate that you want to find the corresponding point for.
-- `view`: The view where you want to locate the specified map coordinate. If this parameter is  , the method specifies the returned point in the window’s coordinate system. If   isn’t  , the point belongs to the same window as the map view.
+- `view`: The view where you want to locate the specified map coordinate. If this parameter is `nil`, the method specifies the returned point in the window’s coordinate system. If `view` isn’t `nil`, the point belongs to the same window as the map view.
 
 ## See Also
 

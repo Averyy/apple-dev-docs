@@ -26,7 +26,7 @@ This init will make sure that all memory referenced by `unsafeBlockBuffer` is al
 
 ## Parameters
 
-- `unsafeBlockBuffer`: The   which will be subsumed by the new instance.
+- `unsafeBlockBuffer`: The [`CMBlockBuffer`](cmblockbuffer.md) which will be subsumed by the new instance.
 
 
 ---

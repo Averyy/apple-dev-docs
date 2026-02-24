@@ -38,8 +38,8 @@ await z.shapedArray(of: Float.self) // is [1, 5, 3]
 
 ## Parameters
 
-- `replacement`: The replacement values where   is  .
-- `mask`: The Boolean mask that determines whether the corresponding element / row should be taken from    (if the element in   is  ) or   (if  ).
+- `replacement`: The replacement values where `mask` is `true`.
+- `mask`: The Boolean mask that determines whether the corresponding element / row should be taken from `self` (if the element in `mask` is `false`) or `other` (if `true`).
 
 ## See Also
 

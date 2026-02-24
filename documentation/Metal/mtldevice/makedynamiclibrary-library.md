@@ -26,7 +26,7 @@ A new [`MTLDynamicLibrary`](mtldynamiclibrary.md) instance if the method complet
 
 ## Parameters
 
-- `library`: An   instance.
+- `library`: An [`MTLLibrary`](mtllibrary.md) instance.
 
 ## See Also
 

@@ -29,7 +29,9 @@ This method generates a custom barcode as an image. The effect uses barcode desc
 
 The barcode generator uses the following property:
 
-The following code creates a filter that generates a QR code containing the text 
+- **`barcodeDescriptor`**: An instance of [`CIBarcodeDescriptor`](cibarcodedescriptor.md) with the input parameters supplied.
+
+The following code creates a filter that generates a QR code containing the text *Johnny Appleseed.*
 
 ```swift
 func barcode(inputMessage: Data) -> CIImage {

@@ -23,7 +23,7 @@ init(frameWidth: Int, frameHeight: Int, scaleFactor: Float)
 
 - `frameWidth`: Width of source frame in pixels.
 - `frameHeight`: Height of source frame in pixels.
-- `scaleFactor`: The scale factor to apply. This must be a supported value that   returns.
+- `scaleFactor`: The scale factor to apply. This must be a supported value that [`supportedScaleFactorsForFrameWidth:frameHeight:`](vtlowlatencysuperresolutionscalerconfiguration/supportedscalefactorsforframewidth:frameheight:.md) returns.
 
 
 ---

@@ -26,7 +26,7 @@ A `nil` terminated array of classes. You must free the array with `free()`.
 
 ## Parameters
 
-- `outCount`: An integer pointer used to store the number of classes returned by this function in the list. This parameter may be  .
+- `outCount`: An integer pointer used to store the number of classes returned by this function in the list. This parameter may be `nil`.
 
 ## See Also
 

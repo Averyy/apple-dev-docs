@@ -24,7 +24,7 @@ A preference domain is a set of security-related preferences, such as the defaul
 
 ## Parameters
 
-- `domain`: On return, a pointer to the keychain preference domain. See   for possible domain values.
+- `domain`: On return, a pointer to the keychain preference domain. See [`SecPreferencesDomain`](secpreferencesdomain.md) for possible domain values.
 
 
 ---

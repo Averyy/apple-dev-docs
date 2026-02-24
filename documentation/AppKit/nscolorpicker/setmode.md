@@ -21,7 +21,7 @@ In grayscale-alpha, red-green-blue, cyan-magenta-yellow-black, and hue-saturatio
 
 ## Parameters
 
-- `mode`: A constant specifying the color picking mode. These constants are defined in  .
+- `mode`: A constant specifying the color picking mode. These constants are defined in `AppKit/NSColorPanel.h`.
 
 
 ---

@@ -32,8 +32,8 @@ This call may block if I/O is required to determine values for the requested `pr
 
 ## Parameters
 
-- `propertyKeys`: An array of keys that identify the file properties that you want pre-fetched for each volume. For each returned URL, the values for these keys are cached in the corresponding   objects. You may specify   for this parameter. For a list of keys you can specify, see Common File System Resource Keys.
-- `options`: Option flags for the enumeration. For a list of possible values, see  .
+- `propertyKeys`: An array of keys that identify the file properties that you want pre-fetched for each volume. For each returned URL, the values for these keys are cached in the corresponding [`NSURL`](nsurl.md) objects. You may specify `nil` for this parameter. For a list of keys you can specify, see Common File System Resource Keys.
+- `options`: Option flags for the enumeration. For a list of possible values, see [`FileManager.VolumeEnumerationOptions`](filemanager/volumeenumerationoptions.md).
 
 ## See Also
 

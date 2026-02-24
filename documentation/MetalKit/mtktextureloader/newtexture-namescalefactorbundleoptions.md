@@ -26,9 +26,9 @@ A fully loaded and initialized Metal texture, or `nil` if an error occurred.
 ## Parameters
 
 - `name`: The name of a texture in an asset catalog.
-- `scaleFactor`: In macOS, pass the   value of the window where you plan to display texture content.
+- `scaleFactor`: The scale factor of texture to request. In iOS and tvOS, pass the [`contentsScale`](https://developer.apple.com/documentation/QuartzCore/CALayer/contentsScale) value of the view where you plan to display texture content. In macOS, pass the [`backingScaleFactor`](https://developer.apple.com/documentation/AppKit/NSWindow/backingScaleFactor) value of the window where you plan to display texture content.
 - `bundle`: The resource bundle containing the asset catalog to load textures from.
-- `options`: When using this method, the texture loader ignores the  ,  ,  , and   options.
+- `options`: A dictionary describing any additional texture loading steps. See  [`Texture Loading Options`](https://developer.apple.com/documentation/GLKit/texture-loading-options). When using this method, the texture loader ignores the [`generateMipmaps`](mtktextureloader/option/generatemipmaps.md), [`SRGB`](mtktextureloader/option/srgb.md), [`cubeLayout`](mtktextureloader/option/cubelayout.md), and [`origin`](mtktextureloader/option/origin.md) options.
 
 ## See Also
 

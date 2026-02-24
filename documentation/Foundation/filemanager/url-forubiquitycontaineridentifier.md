@@ -34,13 +34,13 @@ You can use the URL returned by this method to build paths to files and director
 
 In addition to writing to its own ubiquity container, an app can write to any container directory for which it has the appropriate permission. Each additional ubiquity container should be listed as an additional value in the `com.apple.developer.ubiquity-container-identifiers` entitlement array.
 
-To learn how to view your development team’s unique  value, read To view the team ID in Tools Workflow Guide for Mac.
+To learn how to view your development team’s unique *<TEAM_ID>* value, read To view the team ID in Tools Workflow Guide for Mac.
 
-> **Note**:  The development team ID that precedes each container ID string is the unique identifier associated with your development team. To learn how to view your development team’s unique  value, read To view the team ID in Tools Workflow Guide for Mac.
+> **Note**:  The development team ID that precedes each container ID string is the unique identifier associated with your development team. To learn how to view your development team’s unique *<TEAM_ID>* value, read To view the team ID in Tools Workflow Guide for Mac.
 
 ## Parameters
 
-- `containerIdentifier`: If you specify   for this parameter, this method returns the first container listed in the   entitlement array.
+- `containerIdentifier`: The fully-qualified container identifier for an iCloud container directory. The string you specify must not contain wildcards and must be of the form *<TEAMID>*`.`*<CONTAINER>*, where *<TEAMID>* is your development team ID and *<CONTAINER>* is the bundle identifier of the container you want to access. The container identifiers for your app must be declared in the `com.apple.developer.ubiquity-container-identifiers` array of the `.entitlements` property list file in your Xcode project. If you specify `nil` for this parameter, this method returns the first container listed in the `com.apple.developer.ubiquity-container-identifiers` entitlement array.
 
 ## See Also
 

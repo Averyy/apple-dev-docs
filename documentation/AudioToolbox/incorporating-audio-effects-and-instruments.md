@@ -44,7 +44,7 @@ This method returns an array of [`AVAudioUnitComponent`](https://developer.apple
 
 When the user selects an Audio Unit in the user interface, your app needs to find the component and instantiate it.
 
-iOS supports third-party plug-ins built using the latest Audio Unit standard (AUv3), which is based on the [`App Extensions`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG) model. Like all App Extensions in iOS, AUv3 plug-ins run , which means they run in a dedicated process outside your app, and communication with the extension is done over interprocess communication (IPC).
+iOS supports third-party plug-ins built using the latest Audio Unit standard (AUv3), which is based on the [`App Extensions`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG) model. Like all App Extensions in iOS, AUv3 plug-ins run *out-of-process*, which means they run in a dedicated process outside your app, and communication with the extension is done over interprocess communication (IPC).
 
 You instantiate an AU by calling the [`instantiate(with:options:completionHandler:)`](https://developer.apple.com/documentation/AVFAudio/AVAudioUnit/instantiate(with:options:completionHandler:)) method, passing it the component description. This method asynchronously returns the instantiated `AVAudioUnit` or an `Error` if the process failed. You must avoid blocking your application’s main thread when instantiating an Audio Unit.
 
@@ -55,7 +55,7 @@ AVAudioUnit.instantiate(with: description) { avAudioUnit, error in
 }
 ```
 
-In macOS, AUv3 plug-ins also default to running out-of-process. Running an Audio Unit this way is safer and more secure, because a misbehaving plug-in can’t corrupt or crash your app. However, the interprocess communication required of this model adds some small but potentially significant overhead. This can be problematic in professional audio environments where multiple Audio Units are used, especially when rendering at small audio I/O buffer sizes. To resolve this problem, AU authors can package their plug-ins to be run . In macOS only, you can load an appropriately packaged plug-in in-process by passing that instantiation option to the `instantiate` method, as shown below.
+In macOS, AUv3 plug-ins also default to running out-of-process. Running an Audio Unit this way is safer and more secure, because a misbehaving plug-in can’t corrupt or crash your app. However, the interprocess communication required of this model adds some small but potentially significant overhead. This can be problematic in professional audio environments where multiple Audio Units are used, especially when rendering at small audio I/O buffer sizes. To resolve this problem, AU authors can package their plug-ins to be run *in-process*. In macOS only, you can load an appropriately packaged plug-in in-process by passing that instantiation option to the `instantiate` method, as shown below.
 
 ```swift
 let options: AudioComponentInstantiationOptions = .loadInProcess
@@ -66,7 +66,7 @@ AVAudioUnit.instantiate(with: description, options: options) { avAudioUnit, erro
 }
 ```
 
-> **Note**: iOS and macOS support using existing AUv2 plug-ins. iOS supports only those provided by the operating system, but macOS supports third-party AUv2 plug-ins as well. In both platforms, these plug-ins are  run as part of the host app’s process.
+> **Note**: iOS and macOS support using existing AUv2 plug-ins. iOS supports only those provided by the operating system, but macOS supports third-party AUv2 plug-ins as well. In both platforms, these plug-ins are *always* run as part of the host app’s process.
 
 ##### Present an Audio Units Custom View
 
@@ -134,7 +134,7 @@ The sample app uses a simple wrapper type called `Preset` to pass to the user in
 
 ##### Manage User Presets
 
-A plug-in may also support , which are user-configured parameter settings. You query the Audio Unit’s [`supportsUserPresets`](auaudiounit/supportsuserpresets.md) property to determine if it supports saving user presets.
+A plug-in may also support *user presets*, which are user-configured parameter settings. You query the Audio Unit’s [`supportsUserPresets`](auaudiounit/supportsuserpresets.md) property to determine if it supports saving user presets.
 
 ```swift
 var supportsUserPresets: Bool {

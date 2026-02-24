@@ -26,13 +26,13 @@ Use this protocol to keep displays up to date if input changes continuously, or 
 
 #### Ordering of Inputs
 
-The ordering over [`FormatInput`](formatstyle/formatinput.md) defined by [`discreteInput(before:)`](discreteformatstyle/discreteinput(before:).md) / [`discreteInput(after:)`](discreteformatstyle/discreteinput(after:).md) must be consistent between the two functions. If [`FormatInput`](formatstyle/formatinput.md) conforms to the `Comparable` protocol, the format style’s ordering  be consistent with the canonical ordering defined via the `Comparable` conformance, i.e. it should hold that `discreteInput(before: x)! < x < discreteInput(after: x)!` where discrete inputs are not nil.
+The ordering over [`FormatInput`](formatstyle/formatinput.md) defined by [`discreteInput(before:)`](discreteformatstyle/discreteinput(before:).md) / [`discreteInput(after:)`](discreteformatstyle/discreteinput(after:).md) must be consistent between the two functions. If [`FormatInput`](formatstyle/formatinput.md) conforms to the `Comparable` protocol, the format style’s ordering *should* be consistent with the canonical ordering defined via the `Comparable` conformance, i.e. it should hold that `discreteInput(before: x)! < x < discreteInput(after: x)!` where discrete inputs are not nil.
 
 #### Stepping Through Discrete Inputoutput Pairs
 
 One use case of this protocol is enumerating all discrete inputs of a format style and their respective outputs.
 
-While the [`discreteInput(before:)`](discreteformatstyle/discreteinput(before:).md) and [`discreteInput(after:)`](discreteformatstyle/discreteinput(after:).md) functions are the right tool for that, they do not give a guarantee that their respective return values actually produce an output that is different from the output produced by formatting the `input` value used when calling [`discreteInput(before:)`](discreteformatstyle/discreteinput(before:).md) / [`discreteInput(after:)`](discreteformatstyle/discreteinput(after:).md), they only provide a value that produces a different output for  inputs. E.g. when formatting a floating point value as an integer, we can get the next discrete input after `x` by calculating `floor(x + 1)`. However, when rounding toward zero, the whole interval (-1;1) formats as zero. It would be ok for a discrete format style to ignore that edge case and return `0` for the [`discreteInput(after:)`](discreteformatstyle/discreteinput(after:).md) a negative value greater than `-1`. Therefore, to enumerate all discrete input/output pairs, adjacent outputs must be deduplicated in order to guarantee no adjacent outputs are the same.
+While the [`discreteInput(before:)`](discreteformatstyle/discreteinput(before:).md) and [`discreteInput(after:)`](discreteformatstyle/discreteinput(after:).md) functions are the right tool for that, they do not give a guarantee that their respective return values actually produce an output that is different from the output produced by formatting the `input` value used when calling [`discreteInput(before:)`](discreteformatstyle/discreteinput(before:).md) / [`discreteInput(after:)`](discreteformatstyle/discreteinput(after:).md), they only provide a value that produces a different output for *most* inputs. E.g. when formatting a floating point value as an integer, we can get the next discrete input after `x` by calculating `floor(x + 1)`. However, when rounding toward zero, the whole interval (-1;1) formats as zero. It would be ok for a discrete format style to ignore that edge case and return `0` for the [`discreteInput(after:)`](discreteformatstyle/discreteinput(after:).md) a negative value greater than `-1`. Therefore, to enumerate all discrete input/output pairs, adjacent outputs must be deduplicated in order to guarantee no adjacent outputs are the same.
 
 The following example produces all discrete input/output pairs for inputs in a given `range` making sure adjacent outputs are unequal:
 
@@ -82,9 +82,9 @@ xB = discreteInput(before: y)       y      xA = discreteInput(after: y)
  zB = input(after: xB)                          zA = input(before: xA)
 ```
 
-- the formatted output for everything in `zB...zA` (including bounds) is  to be equal to `format(y)`
-- the formatted output for `xB` and lower is  different from `format(y)`
-- the formatted output for `xA` and higher is  different from `format(y)`
+- the formatted output for everything in `zB...zA` (including bounds) is **guaranteed** to be equal to `format(y)`
+- the formatted output for `xB` and lower is **most likely** different from `format(y)`
+- the formatted output for `xA` and higher is **most likely** different from `format(y)`
 - the  formatted output between `xB` and `zB`, as well as `zA` and `xA` (excluding bounds) cannot be predicted
 
 ## Topics

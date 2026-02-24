@@ -24,9 +24,9 @@ Use this object to specify the local or cloud streaming endpoint your foveated s
 - [static var systemDiscovered: FoveatedStreamingSession.Endpoint](foveatedstreamingsession/endpoint/systemdiscovered.md)
   Connects to an endpoint the person selects from a list of endpoints the system discovers and presents.
 ### Type Methods
-- [static func local(ipAddress: String, port: Int) -> FoveatedStreamingSession.Endpoint](foveatedstreamingsession/endpoint/local(ipaddress:port:).md)
+- [static func local(ipAddress: any IPAddress, port: NWEndpoint.Port) -> FoveatedStreamingSession.Endpoint](foveatedstreamingsession/endpoint/local(ipaddress:port:).md)
   Connects to a local endpoint by IP address and port number.
-- [static func remote(serverName: String) -> FoveatedStreamingSession.Endpoint](foveatedstreamingsession/endpoint/remote(servername:).md)
+- [static func remote(serverName: String, signalingHeaders: [String : String]) -> FoveatedStreamingSession.Endpoint](foveatedstreamingsession/endpoint/remote(servername:signalingheaders:).md)
   Connects to a remote endpoint by server name.
 
 ## Relationships

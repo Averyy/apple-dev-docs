@@ -23,7 +23,7 @@ func cachedResponse(for dataTask: URLSessionDataTask) async -> CachedURLResponse
 ## Parameters
 
 - `dataTask`: The data task whose cached URL response is desired.
-- `completionHandler`: A completion handler that receives the cached URL response for the data task’s request, or   if no response is found in the cache.
+- `completionHandler`: A completion handler that receives the cached URL response for the data task’s request, or `nil` if no response is found in the cache.
 
 ## See Also
 

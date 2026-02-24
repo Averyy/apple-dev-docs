@@ -24,9 +24,9 @@ Use this method when you want to display a two-piece image in multicolor environ
 
 ## Parameters
 
-- `onePieceImage`: The one-piece image to use. The image must be a template image, where only the alpha channel is used to define the image contents. This parameter must not be  .
-- `twoPieceImageBackground`: The background to use for a two-piece image. The image must be a template image, where only the alpha channel is used to define the image contents. This parameter must not be  .
-- `twoPieceImageForeground`: The foreground to use for a two-piece image. The image must be a template image, where only the alpha channel is used to define the image contents. This parameter must not be  .
+- `onePieceImage`: The one-piece image to use. The image must be a template image, where only the alpha channel is used to define the image contents. This parameter must not be `nil`.
+- `twoPieceImageBackground`: The background to use for a two-piece image. The image must be a template image, where only the alpha channel is used to define the image contents. This parameter must not be `nil`.
+- `twoPieceImageForeground`: The foreground to use for a two-piece image. The image must be a template image, where only the alpha channel is used to define the image contents. This parameter must not be `nil`.
 
 ## See Also
 

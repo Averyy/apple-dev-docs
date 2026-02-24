@@ -35,7 +35,7 @@ When the import finishes, the system calls your extension’s [`importDidFinish(
 
 - `domain`: The domain to import.
 - `url`: A URL that points to the directory to import.
-- `completionHandler`: A block that the system calls as soon as it creates the new domain. It takes the following parameters:
+- `completionHandler`: A block that the system calls as soon as it creates the new domain. It takes the following parameters: - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

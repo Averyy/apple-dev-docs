@@ -26,7 +26,7 @@ init(title: String, image: UIImage?, identifier: String, viewControllerProvider:
 
 - `title`: The tab’s title.
 - `image`: The tab’s image.
-- `identifier`: An identifier string for the tab. Each identifier must be unique across all the tabs managed by a  .
+- `identifier`: An identifier string for the tab. Each identifier must be unique across all the tabs managed by a [`UITabBarController`](uitabbarcontroller.md).
 - `viewControllerProvider`: The view controller that the system presents when someone selects the tab.
 
 

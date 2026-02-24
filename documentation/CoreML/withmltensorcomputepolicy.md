@@ -27,7 +27,7 @@ The return value, if any, of the `body` closure.
 ## Parameters
 
 - `computePolicy`: A compute policy that will be set before the closure gets called and restored after the closure returns.
-- `body`: A nullary closure. If the closure has a return value, that value is also used as the return value of the    function.
+- `body`: A nullary closure. If the closure has a return value, that value is also used as the return value of the `withMLTensorComputePolicy(_:_:)` function.
 
 ## See Also
 

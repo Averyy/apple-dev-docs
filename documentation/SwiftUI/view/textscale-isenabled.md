@@ -28,7 +28,7 @@ A view with the specified text scale applied.
 ## Parameters
 
 - `scale`: The text scale to apply.
-- `isEnabled`: If true the text scale is applied; otherwise text scale   is unchanged.
+- `isEnabled`: If true the text scale is applied; otherwise text scale is unchanged.
 
 ## See Also
 

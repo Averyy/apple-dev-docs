@@ -116,7 +116,7 @@ The slice selects rows 0, 1, and 2 and columns 1 and 2. On return, `destination`
 
 ## Parameters
 
-- `body`: A closure with a   parameter
+- `body`: A closure with a `BNNSTensor` parameter
 
 
 ---

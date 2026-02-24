@@ -18,7 +18,14 @@ The app takes a path to a monoscopic or stereoscopic (frame-packed) side-by-side
 
 To add projected media metadata to an output file, pass one of the following two options:
 
+- **`--autoDetect` (or `-a`)**: Examines the source file for spherical metadata compatible with APMP.
+- **`--projectionKind <projection_kind>` (or `-p`)**: Specifies the projection type, which can be `equirectangular` or `halfequirectangular`.
+
 Other options:
+
+- **`--viewPackingKind <view_packing_kind>` (or `-v`)**: Manually specifies the frame-packing mode, which can be `sidebyside` or `overunder`. The app ignores this option if you specify the `--autoDetect` option.
+- **`--baseline` (or `-b`)**: Specifies a baseline in millimeters (for example, `--baseline 64.0` for a 64mm baseline).
+- **`--fov` (or `-f`)**: Specifies a horizontal field of view in degrees (for example, `--fov 80.0` for an 80-degree field of view).
 
 By default, the project’s scheme loads a side-by-side video from the Xcode project folder named `Lighthouse_sbs.mp4`.
 

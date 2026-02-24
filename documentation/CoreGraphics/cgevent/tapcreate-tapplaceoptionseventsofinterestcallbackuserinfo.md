@@ -33,12 +33,12 @@ After creating an event tap, you can add it to a run loop as follows:
 
 ## Parameters
 
-- `tap`: The location of the new event tap. Pass one of the constants listed in  . Only processes running as the root user may locate an event tap at the point where HID events enter the window server; for other users, this function returns  .
-- `place`: The placement of the new event tap in the list of active event taps. Pass one of the constants listed in  .
+- `tap`: The location of the new event tap. Pass one of the constants listed in [`CGEventTapLocation`](cgeventtaplocation.md). Only processes running as the root user may locate an event tap at the point where HID events enter the window server; for other users, this function returns `NULL`.
+- `place`: The placement of the new event tap in the list of active event taps. Pass one of the constants listed in [`CGEventTapPlacement`](cgeventtapplacement.md).
 - `options`: A constant that specifies whether the new event tap is a passive listener or an active filter.
-- `eventsOfInterest`: A bit mask that specifies the set of events to be observed. For a list of possible events, see  . For information on how to specify the mask, see  . If the event tap is not permitted to monitor one or more of the events specified in the   parameter, then the appropriate bits in the mask are cleared. If that action results in an empty mask, this function returns  .
-- `callback`: An event tap callback function that you provide. Your callback function is invoked from the run loop to which the event tap is added as a source. The thread safety of the callback is defined by the run loop’s environment. To learn more about event tap callbacks, see  .
-- `userInfo`: A pointer to user-defined data. This pointer is passed into the callback function specified in the   parameter.
+- `eventsOfInterest`: A bit mask that specifies the set of events to be observed. For a list of possible events, see [`CGEventType`](cgeventtype.md). For information on how to specify the mask, see [`CGEventMask`](cgeventmask.md). If the event tap is not permitted to monitor one or more of the events specified in the `eventsOfInterest` parameter, then the appropriate bits in the mask are cleared. If that action results in an empty mask, this function returns `NULL`.
+- `callback`: An event tap callback function that you provide. Your callback function is invoked from the run loop to which the event tap is added as a source. The thread safety of the callback is defined by the run loop’s environment. To learn more about event tap callbacks, see [`CGEventTapCallBack`](cgeventtapcallback.md).
+- `userInfo`: A pointer to user-defined data. This pointer is passed into the callback function specified in the `callback` parameter.
 
 ## See Also
 

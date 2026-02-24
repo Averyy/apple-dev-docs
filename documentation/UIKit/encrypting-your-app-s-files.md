@@ -10,10 +10,10 @@ Data protection is an iOS feature that you use to secure your app’s files and 
 
 You specify the level of data protection that you want to apply to each of your files. There are four levels available, each of which determines when you may access the file. If you do not specify a protection level when creating a file, iOS applies the default protection level automatically.
 
--  The file is always accessible.
--  (Default) The file is inaccessible until the first time the user unlocks the device. After the first unlocking of the device, the file remains accessible until the device shuts down or reboots.
--  You can open existing files only when the device is unlocked. If you have a file already open, you may continue to access that file even after the user locks the device. You can also create new files and access them while the device is locked or unlocked.
--  The file is accessible only when the device is unlocked.
+- **No protection.** The file is always accessible.
+- **Complete until first user authentication.** (Default) The file is inaccessible until the first time the user unlocks the device. After the first unlocking of the device, the file remains accessible until the device shuts down or reboots.
+- **Complete unless open.** You can open existing files only when the device is unlocked. If you have a file already open, you may continue to access that file even after the user locks the device. You can also create new files and access them while the device is locked or unlocked.
+- **Complete.** The file is accessible only when the device is unlocked.
 
 To create and encrypt a new file in one step, construct a data object with the file’s contents and call the [`write(to:options:)`](https://developer.apple.com/documentation/Foundation/Data/write(to:options:)) method. When calling the method, specify the data protection option that you want applied to the file. The following code shows an example of how to write out the contents of a [`Data`](https://developer.apple.com/documentation/Foundation/Data) instance to a file and encrypt it using the complete protection level.
 

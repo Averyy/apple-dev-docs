@@ -28,8 +28,8 @@ It is a programmer error to call this method more than once for the same scheme.
 
 ## Parameters
 
-- `urlSchemeHandler`: The object to handle the URL scheme. This object must adopt the   protocol.
-- `urlScheme`: It is a programmer error to register a handler for a scheme WebKit already handles, such as  , and this method raises an   if you try to do so. To determine whether WebKit handles a specific scheme, call the   class method of  .
+- `urlSchemeHandler`: The object to handle the URL scheme. This object must adopt the [`WKURLSchemeHandler`](wkurlschemehandler.md) protocol.
+- `urlScheme`: The URL scheme to handle. Scheme names are case sensitive, must start with an ASCII letter, and may contain only ASCII letters, numbers, the “`+`” character, the “`-`” character, and the “`.`” character. This method raises an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) if the scheme name is an empty string or contains any other characters. It is a programmer error to register a handler for a scheme WebKit already handles, such as `https`, and this method raises an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) if you try to do so. To determine whether WebKit handles a specific scheme, call the [`handlesURLScheme(_:)`](wkwebview/handlesurlscheme(_:).md) class method of [`WKWebView`](wkwebview.md).
 
 ## See Also
 

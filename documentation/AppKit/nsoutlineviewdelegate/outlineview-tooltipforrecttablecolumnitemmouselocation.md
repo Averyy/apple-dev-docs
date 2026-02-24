@@ -23,8 +23,8 @@ If you don’t want a tooltip at that location, return an empty string.
 
 - `outlineView`: The outline view that sent the message.
 - `cell`: The cell for which to generate a tooltip.
-- `rect`: The proposed active area of the tooltip. To control the default active area, you can modify the   parameter. By default,   is computed as  .
-- `tableColumn`: The table column that contains  .
+- `rect`: The proposed active area of the tooltip. To control the default active area, you can modify the `rect` parameter. By default, `rect` is computed as `[cell drawingRectForBounds:cellFrame]`.
+- `tableColumn`: The table column that contains `cell`.
 - `item`: The item for which to display a tooltip.
 - `mouseLocation`: The current mouse location in view coordinates.
 

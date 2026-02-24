@@ -22,6 +22,12 @@ struct DenseMatrix_Complex_Float
 
 #### Overview
 
+- **`rowCount`**: Number of rows in the matrix.
+- **`columnCount`**: Number of columns in the matrix.
+- **`columnStride`**: The column stride of the matrix.
+- **`attributes`**: The attributes of the matrix, for example whether the  matrix is symmetrical (Hermitian) or triangular.
+- **`data`**: The array of float values in column-major order.
+
 ## Topics
 
 ### Initializers

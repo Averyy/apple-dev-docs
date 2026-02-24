@@ -26,7 +26,7 @@ To associate your data source object with a collection view, assign the object t
 
 How you implement your data source object has implications for the associated collection view. Your data source object acts as the bridge between your app’s underlying data and the presentation of that data by the collection view. Because the methods of your data source object are called many times while the collection view is onscreen, the implementations of those methods need to return data as quickly as possible. Therefore, you should create data structures that adapt easily to the organization of the collection view itself.
 
-Data in a collection view is organized into one or more , and each section contains zero or more  in a specific order. You specify how many sections and items your collection view has based on your data. You define what the content of an item is, but usually the items in a section represent your primary data. For example, items in a photo browser app would be the photos themselves, and each section in the app would define a different group of related photos. Items can contain any data that you want. In the case of a photo browser, an item might also include descriptive information such as the date the photo was taken, the exposure settings used, the location, and so on.
+Data in a collection view is organized into one or more *sections*, and each section contains zero or more *items* in a specific order. You specify how many sections and items your collection view has based on your data. You define what the content of an item is, but usually the items in a section represent your primary data. For example, items in a photo browser app would be the photos themselves, and each section in the app would define a different group of related photos. Items can contain any data that you want. In the case of a photo browser, an item might also include descriptive information such as the date the photo was taken, the exposure settings used, the location, and so on.
 
 The data structures you use for your sections and items are separate from the views and view controllers that you use to present them. Sections have no default visual representation, but layouts may support section-specific supplementary views. For example, the flow layout supports header and footer views for each section. Items are presented using instances of the [`NSCollectionViewItem`](nscollectionviewitem.md) class, which your data source is responsible for configuring in its [`collectionView(_:itemForRepresentedObjectAt:)`](nscollectionviewdatasource/collectionview(_:itemforrepresentedobjectat:).md) method.
 
@@ -47,6 +47,39 @@ When you call the [`makeItem(withIdentifier:for:)`](nscollectionview/makeitem(wi
 The listing below shows how to create and configure an item in the [`collectionView(_:itemForRepresentedObjectAt:)`](nscollectionviewdatasource/collectionview(_:itemforrepresentedobjectat:).md) method of your data source. After retrieving an item using the [`makeItem(withIdentifier:for:)`](nscollectionview/makeitem(withidentifier:for:).md) method, you configure the properties of that item with your custom data. In this case, the code assigns an image to the built-in image view provided by the [`NSCollectionViewItem`](nscollectionviewitem.md) class. If you defined a custom item class with additional views or controls, you would configure those views before returning the item from this method. You must fully configure the item before returning it.
 
 Listing 1. Creating and configuring an item
+
+**Swift**:
+
+```swift
+func collectionView(collectionView: NSCollectionView, itemForRepresentedObjectAtIndexPath
+    indexPath: NSIndexPath) -> NSCollectionViewItem {
+    // Recycle or create an item.
+    let item = self.collectionView.makeItemWithIdentifier("dataSourceItem", forIndexPath: indexPath)
+    
+    // Configure the item with an image from the app's data structures
+    let image = myImageData.objectAtIndex(indexPath.item)
+    item.imageView!.image = image as? NSImage
+    
+    return item
+}
+```
+
+**Objective-C**:
+
+```objc
+- (NSCollectionViewItem*)collectionView:(NSCollectionView *)collectionView
+        itemForRepresentedObjectAtIndexPath:(NSIndexPath *)indexPath {
+   // Recycle or create an item.
+   NSCollectionViewItem* item = [self.collectionView makeItemWithIdentifier:@"dataSourceItem"
+                                                     forIndexPath:indexPath];
+ 
+   // Configure the item with an image from the app's data structures
+   NSImage* theImage = [myImageData objectAtIndex:indexPath.item];
+   item.imageView.image = theImage;
+ 
+   return item;
+}
+```
 
 After returning an item object from your [`collectionView(_:itemForRepresentedObjectAt:)`](nscollectionviewdatasource/collectionview(_:itemforrepresentedobjectat:).md) method, you do not modify that object again. If the underlying data for an item changes, ask the collection view to reload the item by calling the [`reloadItems(at:)`](nscollectionview/reloaditems(at:).md) method. Calling that method causes the collection view to discard the current item and ask your data source to provide a new one.
 

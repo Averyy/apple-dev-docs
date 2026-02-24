@@ -29,10 +29,10 @@ Locking: SAFE to call concurrently (no static globals), MAY BLOCK
 
 ## Parameters
 
-- `channelIDs`: 
-- `channelNames`: 
-- `channelType`: 
-- `unit`: 
+- `channelIDs`: - OSArray of OSNumber(uint64_t) channels IDs.
+- `channelNames`: - parrallel OSArray of OSSymbol(rich names)
+- `channelType`: - the type of all channels in this legend
+- `unit`: - The unit for the quantity recorded by this reporter object
 
 
 ---

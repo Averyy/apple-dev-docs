@@ -25,7 +25,7 @@ Passing a value of `–1` for `index`, and [`IKImageBrowserDropOn`](ikimagebrows
 ## Parameters
 
 - `index`: The requested drop index.
-- `operation`: The requested drop operation. The possible values are described in  .
+- `operation`: The requested drop operation. The possible values are described in [`IKImageBrowserDropOperation`](ikimagebrowserdropoperation.md).
 
 ## See Also
 

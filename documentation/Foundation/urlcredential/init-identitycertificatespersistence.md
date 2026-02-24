@@ -33,8 +33,8 @@ In most cases you should pass `nil` to the `certArray` parameter. You only need 
 ## Parameters
 
 - `identity`: The identity for the credential.
-- `certArray`: An array of one or more   objects representing intermediate certificates leading from the identity’s certificate to a trusted root, or   if the server does not need any intermediate certificates to authenticate the client.
-- `persistence`: The method ignores this parameter; you should supply a value of   because that most accurately reflects the actual behaviour.
+- `certArray`: An array of one or more `SecCertificateRef` objects representing intermediate certificates leading from the identity’s certificate to a trusted root, or `nil` if the server does not need any intermediate certificates to authenticate the client.
+- `persistence`: The method ignores this parameter; you should supply a value of [`URLCredential.Persistence.forSession`](urlcredential/persistence-swift.enum/forsession.md) because that most accurately reflects the actual behaviour.
 
 ## See Also
 

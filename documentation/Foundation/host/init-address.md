@@ -20,7 +20,7 @@ The host for `address`.
 
 ## Parameters
 
-- `address`: Network address to look up. For example,   or  .
+- `address`: Network address to look up. For example, `"127.0.0.1"` or `"fe80::1"`.
 
 ## See Also
 

@@ -27,14 +27,17 @@ The completion handler takes a single [`Result`](https://developer.apple.com/doc
 
 When present, the tuple contains the following named elements:
 
+- **`saveResults`**: A dictionary of saved records. The dictionary uses the identifiers of the records you specify in `recordsToSave` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding modified record (as it appears on the server), or an error that describes why CloudKit can’t modify that record.
+- **`deleteResults`**: A dictionary of deleted records. The dictionary uses the identifiers you specify in `recordIDsToDelete` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either [`Void`](https://developer.apple.com/documentation/Swift/Void) to indicate a successful deletion, or an error that describes why CloudKit can’t delete that record.
+
 Deleting records may cause additional deletions if other records in the database reference the deleted records. CloudKit doesn’t provide the identifiers of any additional records it deletes. For information on a more configurable way to modify records, see [`CKModifyRecordsOperation`](ckmodifyrecordsoperation.md).
 
 ## Parameters
 
 - `recordsToSave`: The records to save.
 - `recordIDsToDelete`: The identifiers of the records to permanently delete.
-- `savePolicy`: The policy to use when modifying existing records. For possible values, see  .
-- `atomically`: If  , the entire operation fails if CloudKit can’t modify one or more of the specified records; otherwise, CloudKit reports individual failures in the returned tuple. Atomic changes are only applicable in record zones that have the   capability.
+- `savePolicy`: The policy to use when modifying existing records. For possible values, see [`CKModifyRecordsOperation.RecordSavePolicy`](ckmodifyrecordsoperation/recordsavepolicy.md).
+- `atomically`: If [`true`](https://developer.apple.com/documentation/Swift/true), the entire operation fails if CloudKit can’t modify one or more of the specified records; otherwise, CloudKit reports individual failures in the returned tuple. Atomic changes are only applicable in record zones that have the [`atomic`](ckrecordzone/capabilities-swift.struct/atomic.md) capability.
 - `completionHandler`: The closure to execute after CloudKit processes the changes.
 
 ## See Also

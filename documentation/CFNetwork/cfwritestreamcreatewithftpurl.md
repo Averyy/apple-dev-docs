@@ -37,8 +37,8 @@ To close a connection with the FTP server, call [`CFWriteStreamClose(_:)`](https
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `ftpURL`: A pointer to a CFURL structure for the URL to be uploaded created by calling any of the   functions, such as  .
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `ftpURL`: A pointer to a CFURL structure for the URL to be uploaded created by calling any of the `CFURLCreate` functions, such as `CFURLCreateWithString`.
 
 ## See Also
 

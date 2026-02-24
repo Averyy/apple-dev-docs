@@ -25,7 +25,7 @@ The primary use case for a managed value is to store a JavaScript value in an Ob
 
 > ❗ **Important**:  Don’t store a nonmanaged [`JSValue`](jsvalue.md) object in a native object that exports to JavaScript. Because a [`JSValue`](jsvalue.md) object references its enclosing [`JSContext`](jscontext.md) object, this action creates a retain cycle, preventing deallocation of the context.
 
-A managed value’s  behavior ensures retention of its underlying JavaScript value as long as either of the following conditions is true:
+A managed value’s *conditional retain* behavior ensures retention of its underlying JavaScript value as long as either of the following conditions is true:
 
 - The JavaScript value is reachable through the JavaScript object graph (that is, not subject to JavaScript garbage collection).
 - The [`JSManagedValue`](jsmanagedvalue.md) object is reachable through the Objective-C or Swift object graph, as you report to the JavaScriptCore virtual machine using the [`addManagedReference(_:withOwner:)`](jsvirtualmachine/addmanagedreference(_:withowner:).md) method.

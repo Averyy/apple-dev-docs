@@ -20,6 +20,11 @@ object SetFirmwarePasswordCommand
 - [object SetFirmwarePasswordCommand.Command](setfirmwarepasswordcommand/command-data.dictionary.md)
   The command to change or clear the firmware password on a device.
 
+## Properties
+
+- `Command` (SetFirmwarePasswordCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object SetFirmwarePasswordResponse](setfirmwarepasswordresponse.md)

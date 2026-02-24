@@ -22,7 +22,7 @@ func SparseSolve(_ Subfactor: SparseOpaqueSubfactor_Complex_Double, _ B: DenseVe
 
 ## Parameters
 
-- `Subfactor`: (Input) The subfactor to solve a system involving, as returned by   ).
+- `Subfactor`: (Input) The subfactor to solve a system involving, as returned by `SparseCreateSubfactor()`).
 
 ## See Also
 

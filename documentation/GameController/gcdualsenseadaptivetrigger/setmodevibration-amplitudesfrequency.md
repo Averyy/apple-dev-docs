@@ -22,7 +22,7 @@ func setModeVibration(amplitudes positionalAmplitudes: GCDualSenseAdaptiveTrigge
 ## Parameters
 
 - `positionalAmplitudes`: The amplitudes for each possible trigger position.
-- `frequency`: The frequency of the vibration effect, which is a value between   and  , where   is the minimum and   is the maximum frequency.
+- `frequency`: The frequency of the vibration effect, which is a value between `0` and `1`, where `0` is the minimum and `1` is the maximum frequency.
 
 ## See Also
 

@@ -20,7 +20,7 @@ func readDatagrams(completionHandler: @escaping ([Data]?, [NWEndpoint]?, (any Er
 
 ## Parameters
 
-- `completionHandler`: A block that will be executed by the system on an internal system thread when datagrams have been read from the flow. The block takes the datagrams that were read, the destination endpoints of the datagrams, and an  . If an error occurred while reading then   will be non-nil. See   in   for a list of possible error codes. If the   and   arrays are non-nil but are empty, then no more datagrams can be subsequently read from the flow.
+- `completionHandler`: A block that will be executed by the system on an internal system thread when datagrams have been read from the flow. The block takes the datagrams that were read, the destination endpoints of the datagrams, and an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError). If an error occurred while reading then `error` will be non-nil. See `NEAppProxyFlowError` in [`NEAppProxyFlow`](neappproxyflow.md) for a list of possible error codes. If the `datagrams` and `remoteEndpoints` arrays are non-nil but are empty, then no more datagrams can be subsequently read from the flow. > **Note**:  The completion handler is only called for the single read operation that was initiated by calling this method. If the caller wants to read more datagrams then it should call this method again to schedule another read operation and another execution of the completion handler block.
 
 ## See Also
 

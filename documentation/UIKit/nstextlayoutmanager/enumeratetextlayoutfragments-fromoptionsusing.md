@@ -33,7 +33,7 @@ Returning `false` from `block` breaks out of the enumeration.
 ## Parameters
 
 - `location`: The location where youstart the enumeration.
-- `options`: One or more of the available  .
+- `options`: One or more of the available [`NSTextLayoutFragment.EnumerationOptions`](nstextlayoutfragment/enumerationoptions.md).
 - `block`: A closure you provide that determines if the enumeration finishes early.
 
 ## See Also

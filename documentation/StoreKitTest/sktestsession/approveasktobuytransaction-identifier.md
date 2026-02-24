@@ -22,7 +22,7 @@ func approveAskToBuyTransaction(identifier: Int) throws
 
 ## Parameters
 
-- `identifier`: The transaction   of the Ask to Buy transaction.
+- `identifier`: The transaction [`identifier`](sktesttransaction/identifier.md) of the Ask to Buy transaction.
 
 ## See Also
 

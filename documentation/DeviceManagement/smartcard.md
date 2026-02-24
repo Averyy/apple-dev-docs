@@ -76,6 +76,18 @@ Specify `com.apple.security.smartcard` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `allowSmartCard` (boolean): If `false`, the system disables smart cards for logins, authorizations, and screen saver unlocking. It is still allowed for other functions, such as signing emails and accessing the web. A restart is required for a setting change to take effect.
+- `checkCertificateTrust` (integer): Configures the certificate trust check and has one of the following possible values: - `0`: Turns off certificate trust check.
+- `1`: Turns on certificate trust check. A standard validity check is performed but doesn’t include additional revocation checks.
+- `2`: Turns on certificate trust check. A soft revocation check is also performed. Until the certificate is explicitly rejected by CRL/OCSP, it’s considered valid. This setting means that unavailable or unreachable CRL/OCSP allow this check to succeed.
+- `3`: Turns on certificate trust check. A hard revocation check is also performed. Unless CRL/OCSP explicitly says “This certificate is OK,” it’s considered invalid. This option is the most secure.
+- `enforceSmartCard` (boolean): If `true`, a user can only log in or authenticate with a smart card. Available in macOS 10.13.2 and later.
+- `oneCardPerUser` (boolean): If `true`, a user can pair with only one smart card, although existing pairings are allowed if already set up.
+- `tokenRemovalAction` (integer): If `1`, the system enables the screen saver when the smart card is removed. Available in macOS 10.13.4 and later.
+- `UserPairing` (boolean): If `false`, users don’t get the pairing dialog, although existing pairings still work.
+
 ## See Also
 
 - [object Passcode](passcode.md)

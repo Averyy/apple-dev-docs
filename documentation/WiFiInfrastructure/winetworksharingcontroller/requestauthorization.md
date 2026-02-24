@@ -25,9 +25,9 @@ Call this method to request that the system ask the person to authorize sharing 
 
 The person can select from the following sharing modes:
 
-- : The system automatically sends new networks to the accessory when the device joins them while the accessory is connected.
-- : When the device joins a new network, the system notifies your extension through the Wi-Fi Infrastructure framework. Your extension can then check [`newShareableNetworkAvailable`](winetworksharingprovider/networkevent/newshareablenetworkavailable.md) and call [`presentAskToShareUI(scanProvider:)`](winetworksharingprovider/presentasktoshareui(scanprovider:).md) to present UI asking the person to share that network.
-- : The person declines to share Wi-Fi networks with this accessory.
+- **Automatically Share**: The system automatically sends new networks to the accessory when the device joins them while the accessory is connected.
+- **Ask Every Time**: When the device joins a new network, the system notifies your extension through the Wi-Fi Infrastructure framework. Your extension can then check [`newShareableNetworkAvailable`](winetworksharingprovider/networkevent/newshareablenetworkavailable.md) and call [`presentAskToShareUI(scanProvider:)`](winetworksharingprovider/presentasktoshareui(scanprovider:).md) to present UI asking the person to share that network.
+- **Don’t Share**: The person declines to share Wi-Fi networks with this accessory.
 
 In the “Automatically Share” and “Ask Every Time” sharing modes, the accessory may request to share a nearby network that’s known to the person. Accessories can use this to prompt a person to share a different network if they have trouble connecting to a previously shared network.
 

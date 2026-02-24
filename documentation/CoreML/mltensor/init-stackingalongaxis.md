@@ -41,7 +41,7 @@ MLTensor(stacking: [x, y, z], alongAxis: 1) // is [[1, 2, 3], [4, 5, 6]]
 ## Parameters
 
 - `tensors`: The tensors to stack. All tensors must have the same shape and scalar type.
-- `axis`: The axis along which to stack. Negative values wrap around but must be in the range  , where    is the rank of the provided tensors.
+- `axis`: The axis along which to stack. Negative values wrap around but must be in the range `[-rank, rank]`, where `rank` is the rank of the provided tensors.
 
 ## See Also
 

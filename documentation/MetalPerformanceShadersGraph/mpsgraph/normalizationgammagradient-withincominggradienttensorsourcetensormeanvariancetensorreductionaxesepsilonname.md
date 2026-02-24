@@ -29,7 +29,7 @@ The mean and variance tensors should be outputs of `meanWithTensor:axes:name` an
 
 ## Parameters
 
-- `incomingGradientTensor`: The incoming original   gradient.
+- `incomingGradientTensor`: The incoming original `resultTensor` gradient.
 - `sourceTensor`: The original input source in forward direction.
 - `meanTensor`: The mean tensor.
 - `varianceTensor`: The variance tensor.

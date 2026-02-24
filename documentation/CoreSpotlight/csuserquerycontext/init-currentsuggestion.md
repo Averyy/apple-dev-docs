@@ -24,7 +24,7 @@ An initialized user query context object. Configure the properties of the return
 
 ## Parameters
 
-- `currentSuggestion`: The suggested text completion that the person   selected in your interface. Specify   if the person hasn’t   chosen a suggestion.
+- `currentSuggestion`: The suggested text completion that the person selected in your interface. Specify `nil` if the person hasn’t chosen a suggestion.
 
 
 ---

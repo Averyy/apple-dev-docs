@@ -38,8 +38,8 @@ Rules for how characters are folded may vary, depending on the locale. For examp
 
 ## Parameters
 
-- `options`: Any combination of the   ,  , and   comparison options.
-- `locale`: The locale to use for the folding operation. Pass   to use the system locale.
+- `options`: Any combination of the  [`caseInsensitive`](nsstring/compareoptions/caseinsensitive.md), [`widthInsensitive`](nsstring/compareoptions/widthinsensitive.md), and [`diacriticInsensitive`](nsstring/compareoptions/diacriticinsensitive.md) comparison options.
+- `locale`: The locale to use for the folding operation. Pass `nil` to use the system locale.
 
 
 ---

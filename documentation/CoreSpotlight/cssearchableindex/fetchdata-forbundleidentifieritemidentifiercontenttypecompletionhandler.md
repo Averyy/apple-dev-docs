@@ -31,7 +31,8 @@ func fetchData(forBundleIdentifier bundleIdentifier: String, itemIdentifier: Str
 - `bundleIdentifier`: The bundle identifier of the app to search.
 - `itemIdentifier`: The app-specific identifier of the item you want.
 - `contentType`: The type of data to fetch.
-- `completionHandler`: The block to execute with the results. The block   has no return value and takes the following parameters:
+- `completionHandler`: The block to execute with the results. The block has no return value and takes the following parameters: - **data**: The data for the specified item, if successful.
+- **error**: An error object, or `nil` if the method retrieved the data successfully.
 
 
 ---

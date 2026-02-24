@@ -19,7 +19,7 @@ init(data: NEURLFilterPrefilter.PrefilterData, tag: String, bitCount: Int, hashC
 
 ## Parameters
 
-- `data`: The Bloom filter data, as a   instance.
+- `data`: The Bloom filter data, as a [`NEURLFilterPrefilter.PrefilterData`](neurlfilterprefilter/prefilterdata.md) instance.
 - `tag`: The tag of the Bloom filter data, such as the SHA-256 hash of the Bloom filter data.
 - `bitCount`: The number of bits in the Bloom filter.
 - `hashCount`: The number of hashes for the Bloom filter.

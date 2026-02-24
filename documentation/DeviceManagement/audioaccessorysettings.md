@@ -63,6 +63,10 @@ This configuration enables temporary pairing and sets an unpairing time of 6 pm.
 - [object AudioAccessorySettingsTemporaryPairingObject](audioaccessorysettingstemporarypairingobject.md)
   A dictionary that describes audio accessory temporary pairing behavior. The device enables temporary pairing when this key is present and the `Disabled` key isn’t `false`. The device doesn’t synchronize pairing information with iCloud when temporary pairing is active.
 
+## Properties
+
+- `TemporaryPairing` (AudioAccessorySettingsTemporaryPairingObject): A dictionary that describes audio accessory temporary pairing behavior. The device enables temporary pairing when this key is present and the `Disabled` key isn’t `false`. The device doesn’t synchronize pairing information with iCloud when temporary pairing is active.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

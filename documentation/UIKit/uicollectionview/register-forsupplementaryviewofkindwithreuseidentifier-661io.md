@@ -27,8 +27,8 @@ If you previously registered a class or nib file with the same element kind and 
 ## Parameters
 
 - `viewClass`: The class to use for the supplementary view.
-- `elementKind`: The kind of supplementary view to create. This value is defined by the layout object. This parameter must not be  .
-- `identifier`: The reuse identifier to associate with the specified class. This parameter must not be   and must not be an empty string.
+- `elementKind`: The kind of supplementary view to create. This value is defined by the layout object. This parameter must not be `nil`.
+- `identifier`: The reuse identifier to associate with the specified class. This parameter must not be `nil` and must not be an empty string.
 
 ## See Also
 

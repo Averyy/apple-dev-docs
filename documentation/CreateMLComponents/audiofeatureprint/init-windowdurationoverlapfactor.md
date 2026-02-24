@@ -21,7 +21,7 @@ init(windowDuration: TimeInterval, overlapFactor: Double)
 
 ## Parameters
 
-- `windowDuration`: The window duration in seconds. The window duration should be greater than or equal to 0.5 seconds and less than or equal to   15.0 seconds.
+- `windowDuration`: The window duration in seconds. The window duration should be greater than or equal to 0.5 seconds and less than or equal to 15.0 seconds.
 - `overlapFactor`: The overlap factor. The overlap should be greater than or equal to zero and less than one.
 
 

@@ -21,7 +21,7 @@ No action is taken if you do not implement this method.
 ## Parameters
 
 - `sender`: The web view that sent the message.
-- `visible`: If  , the delegate should display the status bar (if any); if  , the delegate should hide the status bar.
+- `visible`: If [`true`](https://developer.apple.com/documentation/Swift/true), the delegate should display the status bar (if any); if [`false`](https://developer.apple.com/documentation/Swift/false), the delegate should hide the status bar.
 
 ## See Also
 

@@ -29,7 +29,7 @@ If registration for a specific push type is successful, the push registry delive
 
 ## Parameters
 
-- `type`: A push type requested by this push registry object. For a list of possible types, see  .
+- `type`: A push type requested by this push registry object. For a list of possible types, see [`PKPushType`](pkpushtype.md).
 
 ## See Also
 

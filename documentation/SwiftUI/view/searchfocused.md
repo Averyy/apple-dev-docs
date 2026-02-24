@@ -31,7 +31,7 @@ For more information about using searchable modifiers, refer to [`Adding a searc
 
 ## Parameters
 
-- `binding`: The focus state to bind. When focus moves   to the associated search field, the binding sets the bound value to   . If a caller sets the value to    programmatically, then   focus moves to the search field. When focus leaves the search field,   the binding sets the value to  . If a caller sets the value to   , SwiftUI automatically dismisses focus.
+- `binding`: The focus state to bind. When focus moves to the associated search field, the binding sets the bound value to `true`. If a caller sets the value to  `true` programmatically, then focus moves to the search field. When focus leaves the search field, the binding sets the value to `false`. If a caller sets the value to `false`, SwiftUI automatically dismisses focus.
 
 ## See Also
 

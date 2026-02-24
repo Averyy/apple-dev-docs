@@ -20,7 +20,7 @@ init(id: AssignableDocument.ID, partData: [AssignableDocument.PartID : URL]) thr
 ## Parameters
 
 - `id`: The ID of this document.
-- `partData`: A dictionary of part IDs to   objects that contain   the serialized parts data.
+- `partData`: A dictionary of part IDs to `URL` objects that contain the serialized parts data.
 
 ## See Also
 

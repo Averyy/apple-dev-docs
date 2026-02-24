@@ -26,8 +26,8 @@ A valid [`MPSCNNPooling`](mpscnnpooling.md) object or `nil`, if failure.
 ## Parameters
 
 - `device`: The device the kernel will run on.
-- `kernelWidth`: This value can be odd or even.
-- `kernelHeight`: This value can be odd or even.
+- `kernelWidth`: The width of the kernel. This value can be odd or even.
+- `kernelHeight`: The height of the kernel. This value can be odd or even.
 - `strideInPixelsX`: The output stride (downsampling factor) in the x dimension.
 - `strideInPixelsY`: The output stride (downsampling factor) in the y dimension.
 

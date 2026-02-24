@@ -24,7 +24,7 @@ This method always returns [`kIOReturnError`](https://developer.apple.com/docume
 
 ## Parameters
 
-- `in_custom_property`: An   object to add to the  .
+- `in_custom_property`: An [`IOUserAudioCustomProperty`](iouseraudiocustomproperty.md) object to add to the [`IOUserAudioCustomProperty`](iouseraudiocustomproperty.md).
 
 ## See Also
 

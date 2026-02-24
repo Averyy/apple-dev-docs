@@ -25,8 +25,8 @@ Primarily for subclasses, who can override it to intervene at the beginning of a
 ## Parameters
 
 - `event`: The event that initiated dragging the selection.
-- `mouseOffset`: The cursor’s current location relative to the mouse-down  .
-- `slideBack`:   if the image being dragged should slide back to its original position if the drag does not succeed,   otherwise.
+- `mouseOffset`: The cursor’s current location relative to the mouse-down `event`.
+- `slideBack`: [`true`](https://developer.apple.com/documentation/Swift/true) if the image being dragged should slide back to its original position if the drag does not succeed, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

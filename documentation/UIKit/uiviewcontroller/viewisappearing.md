@@ -48,10 +48,10 @@ For all other cases, use `viewIsAppearing(_:)` to update your views.
 
 | State at callback time | `viewWillAppear(_:)` | `viewIsAppearing(_:)` |
 | --- | --- | --- |
-| Transition coordinator available for adding alongside animations |  | ✘ |
-| View added to hierarchy |  |  |
-| View controller and view trait collections updated | ✘ |  |
-| View geometry (size, safe area, and so forth) is accurate | ✘ |  |
+| Transition coordinator available for adding alongside animations | **✓** | ✘ |
+| View added to hierarchy | **✘** | **✓** |
+| View controller and view trait collections updated | ✘ | **✓** |
+| View geometry (size, safe area, and so forth) is accurate | ✘ | **✓** |
 
 The system calls layout methods, such as [`viewWillLayoutSubviews()`](uiviewcontroller/viewwilllayoutsubviews().md) and [`viewDidLayoutSubviews()`](uiviewcontroller/viewdidlayoutsubviews().md), whenever the view runs [`layoutSubviews()`](uiview/layoutsubviews().md), which can happen multiple times during the transition, or at any time while the view is visible. However, the system calls `viewIsAppearing(_:)` only once during the appearance transition, and calls it even if the view doesn’t require laying out when it appears.
 
@@ -59,7 +59,7 @@ For more information about how a view controller adds views to view hierarchies,
 
 ## Parameters
 
-- `animated`: If  , the system is adding the view to the window using an animation.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), the system is adding the view to the window using an animation.
 
 ## See Also
 

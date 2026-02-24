@@ -16,7 +16,7 @@ static var volumetric: VolumetricWindowStyle { get }
 
 #### Discussion
 
-Use a volumetric window — or a  — to display 3D content within a bounded region. For example, [`Hello World`](https://developer.apple.com/documentation/visionOS/World) uses a volume to present a `Globe` model that people can pick up and move around the Shared Space using the window bar:
+Use a volumetric window — or a *volume* — to display 3D content within a bounded region. For example, [`Hello World`](https://developer.apple.com/documentation/visionos/world) uses a volume to present a `Globe` model that people can pick up and move around the Shared Space using the window bar:
 
 ```swift
 WindowGroup(id: Module.globe.name) {

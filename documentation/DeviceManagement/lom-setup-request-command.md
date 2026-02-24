@@ -24,6 +24,46 @@ This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOu
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>RequestType</key>
+        <string>LOMSetupRequest</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_LOMSetupRequest</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_LOMSetupRequest</string>
+    <key>PrimaryIPv6AddressList</key>
+    <array>
+       <string>fe80::94f6:d6ff:fef3:c05b</string>
+       <string>fe80::94f6:d6ff:fef3:c1a4</string>
+    </array>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>84341F79-92F5-5EF7-9A6A-3A7374613227</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -31,6 +71,10 @@ This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOu
   The command to get information from a device to set up lights-out management (LOM).
 - [object LOMSetupRequestResponse](lomsetuprequestresponse.md)
   A response from the device after it processes the command to get information from a device to set up lights-out management (LOM).
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

@@ -30,7 +30,7 @@ Returns false if `sbuf` is `NULL` or `CMSampleBufferInvalidate` was called, true
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
 
 ## See Also
 

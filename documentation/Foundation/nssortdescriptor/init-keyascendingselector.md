@@ -26,9 +26,9 @@ A sort descriptor that initializes with the specified key path, sort order, and 
 
 ## Parameters
 
-- `key`: For information about key paths, see  .
-- `ascending`:   if the receiver specifies sorting in ascending order; otherwise,  .
-- `selector`: The method to use when comparing the properties of objects, such as  . The selector must specify a method that you implement according to the value of the property that the key path identifies. Pass the selector a single parameter, the object to compare against, and it returns the appropriate   constant.
+- `key`: The key path for performing a comparison. For information about key paths, see [`Key-Value Coding Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#//apple_ref/doc/uid/10000107i).
+- `ascending`: [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver specifies sorting in ascending order; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `selector`: The method to use when comparing the properties of objects, such as [`localizedStandardCompare(_:)`](nsstring/localizedstandardcompare(_:).md). The selector must specify a method that you implement according to the value of the property that the key path identifies. Pass the selector a single parameter, the object to compare against, and it returns the appropriate [`ComparisonResult`](comparisonresult.md) constant.
 
 ## See Also
 

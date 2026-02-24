@@ -51,6 +51,12 @@ This configuration restricts external intelligence integrations.
 }
 ```
 
+## Properties
+
+- `AllowedWorkspaceIDs` ([string]): An array of strings, but currently restricted to a single element. If present, Apple Intelligence allows use of only the given external integration workspace ID, and requires a sign-in to make requests. The user is required to sign in to integrations that support signing in. Multiple values combine using an intersect operation.
+- `AllowSignIn` (boolean): If `false`, disables sign-in for external intelligence integrations.
+- `Enabled` (boolean): If `false`, disables external intelligence integrations.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

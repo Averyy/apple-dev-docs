@@ -29,7 +29,7 @@ Alternatively, use the [`resolveConflictingSavedGames(_:with:completionHandler:)
 ## Parameters
 
 - `name`: A string that identifies the saved game data to delete.
-- `handler`: The block receives the following parameters:
+- `handler`: The block that this method calls when it completes the request. The block receives the following parameters: - **error**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

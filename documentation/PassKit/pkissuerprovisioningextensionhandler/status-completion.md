@@ -19,7 +19,7 @@ func status() async -> PKIssuerProvisioningExtensionStatus
 
 ## Parameters
 
-- `completion`: A completion handler that the system calls to determine if there is a pass available and if adding the pass requires authentication. This handler takes the following parameter:
+- `completion`: A completion handler that the system calls to determine if there is a pass available and if adding the pass requires authentication. This handler takes the following parameter: - **`status`**: A [`PKIssuerProvisioningExtensionStatus`](pkissuerprovisioningextensionstatus.md) that indicates whether there are any payment cards available to add as Wallet passes.
 
 ## See Also
 

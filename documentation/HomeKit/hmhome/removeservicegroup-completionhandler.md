@@ -20,7 +20,7 @@ func removeServiceGroup(_ group: HMServiceGroup) async throws
 ## Parameters
 
 - `group`: The service group to remove.
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

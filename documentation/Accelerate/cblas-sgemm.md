@@ -39,19 +39,19 @@ with optional use of transposed forms of `A`, `B`, or both.
 ## Parameters
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
-- `TRANSA`: Specifies whether to transpose matrix  .
-- `TRANSB`: Specifies whether to transpose matrix  .
-- `M`: Number of rows in matrices   and  .
-- `N`: Number of columns in matrices   and  .
-- `K`: Number of columns in matrix  ; number of rows in matrix  .
+- `TRANSA`: Specifies whether to transpose matrix `A`.
+- `TRANSB`: Specifies whether to transpose matrix `B`.
+- `M`: Number of rows in matrices `A` and `C`.
+- `N`: Number of columns in matrices `B` and `C`.
+- `K`: Number of columns in matrix `A`; number of rows in matrix `B`.
 - `ALPHA`: Scaling factor for the product of matrices A and B.
 - `A`: Matrix A.
-- `LDA`: The size of the first dimension of matrix  ; if you are passing a matrix  , the value should be  .
+- `LDA`: The size of the first dimension of matrix `A`; if you are passing a matrix `A[m][n]`, the value should be `m`.
 - `B`: Matrix B.
-- `LDB`: The size of the first dimension of matrix  ; if you are passing a matrix  , the value should be  .
+- `LDB`: The size of the first dimension of matrix `B`; if you are passing a matrix `B[m][n]`, the value should be `m`.
 - `BETA`: Scaling factor for matrix C.
 - `C`: Matrix C.
-- `LDC`: The size of the first dimension of matrix  ; if you are passing a matrix  , the value should be  .
+- `LDC`: The size of the first dimension of matrix `C`; if you are passing a matrix `C[m][n]`, the value should be `m`.
 
 ## See Also
 

@@ -20,7 +20,7 @@ This method’s default behavior is to post an [`textDidBeginEditingNotification
 
 ## Parameters
 
-- `notification`: The   notification.
+- `notification`: The [`textDidBeginEditingNotification`](nscontrol/textdidbegineditingnotification.md) notification.
 
 ## See Also
 

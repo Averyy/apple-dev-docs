@@ -31,7 +31,7 @@ The visionOS 2.4 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- Guest User access request might fail if an Apple Vision Pro running visionOS 2.4 beta is paired to a device running iOS 18.3 or earlier.  (140292089)  Update both devices to latest versions of visionOS 2.4 beta and iOS 18.4 beta.
+- Guest User access request might fail if an Apple Vision Pro running visionOS 2.4 beta is paired to a device running iOS 18.3 or earlier.  (140292089) **Workaround:** Update both devices to latest versions of visionOS 2.4 beta and iOS 18.4 beta.
 
 ##### Libxml2
 
@@ -55,7 +55,7 @@ The visionOS 2.4 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- After resetting network settings or all settings, the Home View might not appear and hand gestures might not work.   (147616530)  Power off and on the Vision Pro to complete the reset process and access the Home View.
+- After resetting network settings or all settings, the Home View might not appear and hand gestures might not work.   (147616530) **Workaround:** Power off and on the Vision Pro to complete the reset process and access the Home View.
 
 ##### Simulator
 
@@ -90,7 +90,7 @@ The visionOS 2.4 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- Calling `isEligibleForIntroOffer(for:)` will return false if there is no user account signed in.  (146119524)  The user should sign in with their App Store account to request introductory offer eligibility.
+- Calling `isEligibleForIntroOffer(for:)` will return false if there is no user account signed in.  (146119524) **Workaround:** The user should sign in with their App Store account to request introductory offer eligibility.
 
 ###### Deprecations
 

@@ -27,6 +27,36 @@ You can use a list cell in any type of layout. Using a list cell inside a list e
 
 You can use a list cell’s [`defaultContentConfiguration()`](uicollectionviewlistcell/defaultcontentconfiguration().md) (Swift)  or [`defaultContentConfiguration`](uicollectionviewlistcell/defaultcontentconfiguration.md) (Objective-C) to get a list content configuration that has preconfigured default styling. After you get the default configuration, you assign your content to it, customize any other properties, and assign it to the cell as the current content configuration. For customization options, see [`UIListContentConfiguration`](uilistcontentconfiguration-swift.struct.md).
 
+**Swift**:
+
+```swift
+var content = cell.defaultContentConfiguration()
+
+// Configure content.
+content.image = UIImage(systemName: "star")
+content.text = "Favorites"
+
+// Customize appearance.
+content.imageProperties.tintColor = .purple
+
+cell.contentConfiguration = content
+```
+
+**Objective-C**:
+
+```objc
+UIListContentConfiguration *content = [cell defaultContentConfiguration];
+
+// Configure content.
+[content setImage:[UIImage systemImageNamed:@"star"]];
+[content setText:@"Favorites"];
+
+// Customize appearance.
+[content.imageProperties setTintColor:[UIColor purpleColor]];
+
+[cell setContentConfiguration:content];
+```
+
 Alternatively, you can set your content through your own custom subviews using the cell’s [`contentView`](uicollectionviewcell/contentview.md).
 
 ## Topics

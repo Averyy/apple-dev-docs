@@ -27,7 +27,7 @@ If you added the port to multiple input modes, you must remove it from each mode
 ## Parameters
 
 - `aPort`: The port to remove from the receiver.
-- `mode`: The mode from which to remove  . You may specify a custom mode or use one of the modes listed in  .
+- `mode`: The mode from which to remove `aPort`. You may specify a custom mode or use one of the modes listed in `Run Loop Modes`.
 
 ## See Also
 

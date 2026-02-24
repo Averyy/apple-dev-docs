@@ -20,6 +20,14 @@ object StatusServicesBackgroundTaskBackgroundTask_LaunchdObject
 - [object StatusServicesBackgroundTaskBackgroundTask_Launchd_DeviceManagementObject](statusservicesbackgroundtaskbackgroundtask_launchd_devicemanagementobject.md)
   A dictionary that indicates a [`ServicesBackgroundTasks`](servicesbackgroundtasks.md) configuration created this background task. The dictionary contains properties that identify the configuration and the declaration asset that provided the launchd plist for the task.
 
+## Properties
+
+- `checksum` (string) *(required)*: The hash value of the `launchd` `plist` file.
+- `device-management` (StatusServicesBackgroundTaskBackgroundTask_Launchd_DeviceManagementObject): A dictionary that indicates a [`ServicesBackgroundTasks`](servicesbackgroundtasks.md) configuration created this background task. The dictionary contains properties that identify the configuration and the declaration asset that provided the launchd plist for the task.
+- `label` (string) *(required)*: The label of the `launchd`-based background task.
+- `program` (string) *(required)*: The program that the `launchd` `plist` file specifies.
+- `program-arguments` ([string]): The program arguments that the `launchd` `plist` file specifies.
+
 
 ---
 

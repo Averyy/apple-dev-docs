@@ -22,7 +22,7 @@ The created menu item (an object conforming to the NSMenuItem protocol) or `nil`
 
 - `string`: A string to be made the title of the menu item.
 - `selector`: The action-message selector to assign to the menu item.
-- `charCode`: A string identifying the key to use as a key equivalent for the menu item. If you do not want the menu item to have a key equivalent,   should be an empty string ( ) and not  .
+- `charCode`: A string identifying the key to use as a key equivalent for the menu item. If you do not want the menu item to have a key equivalent, `keyEquiv` should be an empty string (`@""`) and not `nil`.
 
 ## See Also
 

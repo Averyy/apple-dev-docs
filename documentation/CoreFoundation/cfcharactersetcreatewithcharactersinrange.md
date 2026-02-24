@@ -26,7 +26,7 @@ A new character set that contains a contiguous range of Unicode characters. Owne
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `theRange`: The Unicode range of characters of the new character set. The function accepts the range in 32-bit in the UTF-32 format. The valid character point range is from 0x00000 to 0x10FFFF.
 
 ## See Also

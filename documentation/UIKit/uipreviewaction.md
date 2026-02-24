@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: class
 
-A preview action, or , that displays below a peek when a user swipes the peek upward.
+A preview action, or *peek quick action*, that displays below a peek when a user swipes the peek upward.
 
 **Availability**:
 - iOS 9.0+

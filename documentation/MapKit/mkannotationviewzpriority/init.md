@@ -21,7 +21,7 @@ init(_ rawValue: Float)
 
 ## Parameters
 
-- `rawValue`: A value between   and  .
+- `rawValue`: A value between [`min`](mkannotationviewzpriority/min.md) and [`max`](mkannotationviewzpriority/max.md).
 
 ## See Also
 

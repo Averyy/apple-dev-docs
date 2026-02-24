@@ -20,6 +20,18 @@ Configure your app’s audio source and the appearance of the volume control in 
 
 Do not subclass or create instances of this class yourself. Instead, define outlets in your interface controller class and connect them to the corresponding objects in your storyboard file. For example, to refer to a volume control in your interface, define a property with the following syntax in your interface controller class:
 
+**Swift**:
+
+```swift
+@IBOutlet weak var myVolumeControl: WKInterfaceVolumeControl!
+```
+
+**Objective-C**:
+
+```objc
+@property (weak, nonatomic) IBOutlet WKInterfaceVolumeControl* myVolumeControl;
+```
+
 During the initialization of your interface controller, WatchKit creates a new instance of this class and assigns it to your outlet. At that point, you can use the object in your outlet to make changes to the onscreen control.
 
 After selecting the volume control, the user can increase or decrease the audio’s volume using the crown. The system automatically handles changing the audio source’s volume. You cannot access or change the volume programmatically in your app.

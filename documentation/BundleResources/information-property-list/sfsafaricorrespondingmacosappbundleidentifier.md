@@ -10,6 +10,10 @@ A string bundle ID that identifies the corresponding macOS app that contains a c
 - iPadOS 16.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 To enable extension syncing for your iOS app that contains a content blocker or Safari web extension, specify the bundle ID of the corresponding macOS app that contains the same content blocker or Safari web extension.

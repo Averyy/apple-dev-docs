@@ -30,8 +30,8 @@ Note that the [`SFSpeechRecognitionTask`](sfspeechrecognitiontask.md) object ret
 
 ## Parameters
 
-- `request`: A request (encapsulated in an   object) to recognize speech from an audio source.
-- `delegate`: An object that can handle results from the speech recognition task. This object must conform to the   protocol.
+- `request`: A request (encapsulated in an [`SFSpeechRecognitionRequest`](sfspeechrecognitionrequest.md) object) to recognize speech from an audio source.
+- `delegate`: An object that can handle results from the speech recognition task. This object must conform to the [`SFSpeechRecognitionTaskDelegate`](sfspeechrecognitiontaskdelegate.md) protocol.
 
 ## See Also
 

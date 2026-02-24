@@ -35,7 +35,7 @@ A gesture that triggers `action` when the gesture ends.
 
 ## Parameters
 
-- `action`: The action to perform when this gesture ends. The    closure’s parameter contains the final value of the gesture.
+- `action`: The action to perform when this gesture ends. The `action` closure’s parameter contains the final value of the gesture.
 
 ## See Also
 

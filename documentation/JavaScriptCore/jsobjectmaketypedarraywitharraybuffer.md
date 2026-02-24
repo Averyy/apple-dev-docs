@@ -26,9 +26,9 @@ A [`JSObjectRef`](jsobjectref.md) that is a typed array, or `NULL` if there is a
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `arrayType`: A value that identifies the type of array to create. If   is   or  , this function returns  .
+- `arrayType`: A value that identifies the type of array to create. If `arrayType` is [`kJSTypedArrayTypeNone`](kjstypedarraytypenone.md) or [`kJSTypedArrayTypeArrayBuffer`](kjstypedarraytypearraybuffer.md), this function returns `NULL`.
 - `buffer`: An array buffer object to use as the backing store for the created JavaScript typed array object.
-- `exception`: A pointer to a   to store an exception in, if any. Pass   if you don’t want to store an exception.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` if you don’t want to store an exception.
 
 ## See Also
 

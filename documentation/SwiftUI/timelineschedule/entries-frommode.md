@@ -46,7 +46,7 @@ func entries(
 ## Parameters
 
 - `startDate`: The date by which the sequence begins.
-- `mode`: An indication of whether the schedule updates normally,   or with some other cadence.
+- `mode`: An indication of whether the schedule updates normally, or with some other cadence.
 
 ## See Also
 

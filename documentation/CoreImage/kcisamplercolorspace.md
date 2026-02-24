@@ -26,7 +26,7 @@ The associated value must be an RGB [`CGColorSpace`](https://developer.apple.com
 ## See Also
 
 - [let kCISamplerAffineMatrix: String](kcisampleraffinematrix.md)
-  The key for an affine matrix. The associated value is an `NSArray` object ([]) that defines the transformation to apply to the sampler.
+  The key for an affine matrix. The associated value is an `NSArray` object ([*a b c d tx ty*]) that defines the transformation to apply to the sampler.
 - [let kCISamplerWrapMode: String](kcisamplerwrapmode.md)
   The key for the sampler wrap mode. The wrap mode specifies how Core Image produces pixels that are outside the extent of the sample. Possible values are [`kCISamplerWrapBlack`](kcisamplerwrapblack.md) and [`kCISamplerWrapClamp`](kcisamplerwrapclamp.md).
 - [let kCISamplerFilterMode: String](kcisamplerfiltermode.md)

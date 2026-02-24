@@ -30,7 +30,7 @@ Broadcasts values inside the tensor, starting from the trailing dimensions, to g
 ## Parameters
 
 - `tensor`: The Tensor to be broadcasted.
-- `shapeTensor`: A rank-1 tensor of type   or   that defines the shape of the result tensor.
+- `shapeTensor`: A rank-1 tensor of type `MPSDataTypeInt32` or `MPSDataTypeInt64` that defines the shape of the result tensor.
 - `name`: The name for the operation.
 
 

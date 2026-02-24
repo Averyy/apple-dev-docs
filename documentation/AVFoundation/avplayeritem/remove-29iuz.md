@@ -23,7 +23,7 @@ func remove(_ collector: AVPlayerItemMediaDataCollector)
 
 ## Parameters
 
-- `collector`: The instance of   to remove.
+- `collector`: The instance of [`AVPlayerItemMediaDataCollector`](avplayeritemmediadatacollector.md) to remove.
 
 ## See Also
 

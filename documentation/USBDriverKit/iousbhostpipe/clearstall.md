@@ -26,7 +26,7 @@ If an intermediate hub is between the device and your driver, this method also s
 
 ## Parameters
 
-- `withRequest`: A Boolean indicating whether to send a   request to the device with the value  . To keep the device’s data toggle synchronized with the host’s data toggle, it’s recommended that you specify  , but you may safely specify   for control endpoints. For information about this request, see section 9.4.1 of the USB 2.0 specification.
+- `withRequest`: A Boolean indicating whether to send a `CLEAR_FEATURE` request to the device with the value `ENDPOINT_HALT`. To keep the device’s data toggle synchronized with the host’s data toggle, it’s recommended that you specify [`true`](https://developer.apple.com/documentation/Swift/true), but you may safely specify [`false`](https://developer.apple.com/documentation/Swift/false) for control endpoints. For information about this request, see section 9.4.1 of the USB 2.0 specification.
 
 ## See Also
 

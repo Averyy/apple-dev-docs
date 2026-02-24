@@ -33,7 +33,7 @@ This action is not reversible; the reverse of this action does nothing.
 ## Parameters
 
 - `texture`: The new texture to use on the sprite.
-- `resize`: If  , the sprite is resized to match the new texture. Otherwise, the size of the sprite is unchanged.
+- `resize`: If [`true`](https://developer.apple.com/documentation/Swift/true), the sprite is resized to match the new texture. Otherwise, the size of the sprite is unchanged.
 
 ## See Also
 

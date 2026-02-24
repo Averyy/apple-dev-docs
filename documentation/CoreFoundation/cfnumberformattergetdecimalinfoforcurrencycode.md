@@ -31,8 +31,8 @@ The returned values are not localized because these are properties of the curren
 ## Parameters
 
 - `currencyCode`: A string containing a ISO 4217 3-letter currency code. For example, AUD for Australian Dollars, EUR for Euros.
-- `defaultFractionDigits`: Upon return, contains the number of fraction digits that should be displayed for the currency specified by  .
-- `roundingIncrement`: Upon return, contains the rounding increment for the currency specified by  , or   if no rounding is done by the currency.
+- `defaultFractionDigits`: Upon return, contains the number of fraction digits that should be displayed for the currency specified by `currencyCode`.
+- `roundingIncrement`: Upon return, contains the rounding increment for the currency specified by `currencyCode`, or `0.0` if no rounding is done by the currency.
 
 ## See Also
 

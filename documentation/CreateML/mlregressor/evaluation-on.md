@@ -24,7 +24,7 @@ Evaluation should be done on a testing data set that the model has not seen as p
 
 ## Parameters
 
-- `labeledData`: A   to evaluate the trained model on.
+- `labeledData`: A `DataFrame` to evaluate the trained model on.
 
 ## See Also
 

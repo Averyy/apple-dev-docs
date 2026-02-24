@@ -24,9 +24,9 @@ CarPlay doesn’t support animated images. If you provide an animated image, Car
 
 ## Parameters
 
-- `leadingItem`: The item to show in the leading region of the message list item. See   for the available options.
+- `leadingItem`: The item to show in the leading region of the message list item. See [`CPMessageLeadingItem`](cpmessageleadingitem.md) for the available options.
 - `leadingImage`: The image to show in the leading region of the message list item.
-- `unread`: If  , the message list item displays an indicator that shows the message is in an unread state.
+- `unread`: If [`true`](https://developer.apple.com/documentation/Swift/true), the message list item displays an indicator that shows the message is in an unread state.
 
 ## See Also
 

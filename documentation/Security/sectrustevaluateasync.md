@@ -30,9 +30,9 @@ This function is functionally equivalent to [`SecTrustEvaluate(_:_:)`](sectruste
 
 ## Parameters
 
-- `trust`: The trust management object to evaluate. A trust management object includes the certificate to be verified plus the policy or policies to be used in evaluating trust. It can optionally also include other certificates to be used in verifying the first certificate. Use the   function to create a trust management object.
+- `trust`: The trust management object to evaluate. A trust management object includes the certificate to be verified plus the policy or policies to be used in evaluating trust. It can optionally also include other certificates to be used in verifying the first certificate. Use the [`SecTrustCreateWithCertificates(_:_:_:)`](sectrustcreatewithcertificates(_:_:_:).md) function to create a trust management object.
 - `queue`: The dispatch queue on which the result block should execute.
-- `result`: A block called with the result of evaluation. See   for descriptions of possible values.
+- `result`: A block called with the result of evaluation. See [`SecTrustResultType`](sectrustresulttype.md) for descriptions of possible values.
 
 
 ---

@@ -27,6 +27,15 @@ object StatusMigrationAssistantState
 | Allowed in system scope | macOS |
 | Allowed in user scope | NA |
 
+## Properties
+
+- `migration-assistant.state` (string) *(required)*: The current migration state of the system, which has the following possible values: - `none`: Migration has not started yet or no migration has taken place.
+- `migrating`: Migration is in progress.
+- `completed`: Migration has completed successfully.
+- `failed`: Migration has failed.
+- `cancelled`: The user cancelled migration.
+- `unknown`: Migration status is unknown.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

@@ -23,7 +23,7 @@ The maximum possible score for this `AssignableDocument` as defined by each indi
 
 ## Parameters
 
-- `defaultQuestionMaxScore`: If a question has a     value, the value that should be used instead.
+- `defaultQuestionMaxScore`: If a question has a `nil` `maxScore` value, the value that should be used instead.
 
 
 ---

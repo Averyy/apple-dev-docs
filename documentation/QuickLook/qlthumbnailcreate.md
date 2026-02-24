@@ -23,7 +23,7 @@ A generated thumbnail of the file at the provided `url`.
 - `allocator`: The allocator to use to create the thumbnail.
 - `url`: The URL of the document that you want to request a thumbnail for.
 - `maxThumbnailSize`: The maximum size in points for the thumbnail image.
-- `options`: Optional hints for creating a thumbnail image. Available options are   and  .
+- `options`: Optional hints for creating a thumbnail image. Available options are [`kQLThumbnailOptionScaleFactorKey`](kqlthumbnailoptionscalefactorkey.md) and [`kQLThumbnailOptionIconModeKey`](kqlthumbnailoptioniconmodekey.md).
 
 ## See Also
 

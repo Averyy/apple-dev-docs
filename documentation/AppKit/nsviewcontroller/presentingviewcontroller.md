@@ -16,7 +16,7 @@ unowned(unsafe) var presentingViewController: NSViewController? { get }
 
 #### Discussion
 
-The  is the one that is ultimately responsible for presenting the view controller whose [`presentingViewController`](nsviewcontroller/presentingviewcontroller.md) property you are accessing.
+The *presenting view controller* is the one that is ultimately responsible for presenting the view controller whose [`presentingViewController`](nsviewcontroller/presentingviewcontroller.md) property you are accessing.
 
 ## See Also
 

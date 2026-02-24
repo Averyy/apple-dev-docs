@@ -12,11 +12,11 @@ Streamline the display and update of data in a collection view using a diffable 
 
 #### Overview
 
-A  presents data in the form of sections and items, and an app that displays data in a collection view inserts those sections and items into the view. The app may also need to handle deleting or moving sections and items. For instance, the sample app in this project displays recipes in a collection view, and people using the app can add and delete recipes, and mark recipes as favorites. To support these actions, the sample app handles inserting, deleting, moving, and updating data within a collection view.
+A *collection view* presents data in the form of sections and items, and an app that displays data in a collection view inserts those sections and items into the view. The app may also need to handle deleting or moving sections and items. For instance, the sample app in this project displays recipes in a collection view, and people using the app can add and delete recipes, and mark recipes as favorites. To support these actions, the sample app handles inserting, deleting, moving, and updating data within a collection view.
 
 When populating a collection view in an app, you can create a custom data source that adopts the [`UICollectionViewDataSource`](uicollectionviewdatasource.md) protocol. To keep the information in the collection view current, you determine what data changed and perform a batch update based on those changes, a process that requires careful coordination of inserts, deletes, and moves.
 
-To avoid the complexity of that process, the sample app uses a [`UICollectionViewDiffableDataSource`](uicollectionviewdiffabledatasource-9tqpa.md) object. A  stores a list of section and item , which represents the identity of each section and item contained in a collection view. These identifiers are stable, meaning they don’t change. In contrast, a custom data source that conforms to [`UICollectionViewDataSource`](uicollectionviewdatasource.md) uses  and , which aren’t stable. They represent the location of sections and items, which can change as the data source adds, removes, and rearranges the contents of a collection view. However, with identifiers a diffable data source can refer to a section or item without knowledge of its location within a collection view.
+To avoid the complexity of that process, the sample app uses a [`UICollectionViewDiffableDataSource`](uicollectionviewdiffabledatasource-9tqpa.md) object. A *diffable data source* stores a list of section and item *identifiers*, which represents the identity of each section and item contained in a collection view. These identifiers are stable, meaning they don’t change. In contrast, a custom data source that conforms to [`UICollectionViewDataSource`](uicollectionviewdatasource.md) uses *indices* and *index paths*, which aren’t stable. They represent the location of sections and items, which can change as the data source adds, removes, and rearranges the contents of a collection view. However, with identifiers a diffable data source can refer to a section or item without knowledge of its location within a collection view.
 
 > **Note**: This sample uses collection views to display data, but the concepts covered in this sample apply to table views as well. For more information about using a diffable data source with a table view, see [`UITableViewDiffableDataSource`](uitableviewdiffabledatasource-2euir.md).
 
@@ -24,7 +24,7 @@ To use a value as an identifier, its data type must conform to the [`Hashable`](
 
 Because identifiers are hashable and equatable, a diffable data source can determine the differences between its current snapshot and another snapshot. Then it can insert, delete, and move sections and items within a collection view for you based on those differences, eliminating the need for custom code that performs batch updates.
 
-> ❗ **Important**: Two identifiers that are equal must always have the same hash value. However, the converse isn’t true; two values with the same hash value aren’t required to be equal. This situation is called a . To increase efficiency, try to ensure that unequal identifiers have different hash values. The occasional hash collision is okay when it’s unavoidable, but keep the number of collisions to a minimum. Otherwise, the performance of lookups in the data collection may suffer.
+> ❗ **Important**: Two identifiers that are equal must always have the same hash value. However, the converse isn’t true; two values with the same hash value aren’t required to be equal. This situation is called a *hash collision*. To increase efficiency, try to ensure that unequal identifiers have different hash values. The occasional hash collision is okay when it’s unavoidable, but keep the number of collisions to a minimum. Otherwise, the performance of lookups in the data collection may suffer.
 
 ##### Define the Diffable Data Source
 
@@ -64,13 +64,13 @@ struct Recipe: Identifiable, Codable {
 
 This structure conforms to the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol, which requires the structure to include an [`id`](https://developer.apple.com/documentation/Swift/Identifiable/id-8t2ws) property. By conforming to `Identifiable`, the `Recipe` structure automatically exposes the associated type [`ID`](https://developer.apple.com/documentation/Swift/Identifiable/ID-swift.associatedtype), which is a type determined based on the declaration of the `id` property in the structure. And because this type must be hashable, the sample app can use `Recipe.ID` as the item identifier type.
 
-> **Note**: The `Recipe` structure doesn’t conform to the `Hashable` protocol. The structure doesn’t have to be hashable because the items stored in the diffable data source and the snapshots are recipe  (`Recipe.ID` values the backing data store provides for each recipe), not complete recipe structures.
+> **Note**: The `Recipe` structure doesn’t conform to the `Hashable` protocol. The structure doesn’t have to be hashable because the items stored in the diffable data source and the snapshots are recipe *identifiers* (`Recipe.ID` values the backing data store provides for each recipe), not complete recipe structures.
 
 Using the `Recipe.ID` as the item identifier type for the `recipeListDataSource` means that the data source, and any snapshots applied to it, contains only `Recipe.ID` values and not the complete recipe data. This approach optimizes the diffable data source for peak performance when displaying recipes in a collection view because the identifier type is a simple, hashable type.
 
 ##### Configure the Diffable Data Source
 
-Before populating a collection view with data from a diffable data source, the sample app configures the data source. The app creates an instance of [`UICollectionViewDiffableDataSource`](uicollectionviewdiffabledatasource-9tqpa.md) and sets its , a closure that configures and returns a cell for the collection view.
+Before populating a collection view with data from a diffable data source, the sample app configures the data source. The app creates an instance of [`UICollectionViewDiffableDataSource`](uicollectionviewdiffabledatasource-9tqpa.md) and sets its *cell provider*, a closure that configures and returns a cell for the collection view.
 
 `RecipeListViewController` configures `recipeListDataSource` in a helper method named `configureDataSource()`. The view controller calls this method in its [`viewDidLoad()`](uiviewcontroller/viewdidload().md) method.
 

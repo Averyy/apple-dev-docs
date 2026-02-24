@@ -21,7 +21,7 @@ var maximumCircleOfConfusion: Float { get set }
 
 #### Discussion
 
-In a physically based camera simulation, the size of out-of-focus highlights that appear in images seen by the camera—commonly called —is a function of other camera properties, such as focal length, pupil aperture, sensor size, and distance to the subject. However, it can be useful for aesthetic reasons to limit the size of such highlights.
+In a physically based camera simulation, the size of out-of-focus highlights that appear in images seen by the camera—commonly called *bokeh*—is a function of other camera properties, such as focal length, pupil aperture, sensor size, and distance to the subject. However, it can be useful for aesthetic reasons to limit the size of such highlights.
 
 The default maximum circle of confusion is 0.05 mm.
 

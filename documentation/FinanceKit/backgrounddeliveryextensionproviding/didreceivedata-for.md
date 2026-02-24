@@ -26,7 +26,7 @@ Before you can receive changes, enable them for your extension using [`enableBac
 
 ## Parameters
 
-- `types`: An array of   that indicates which types of data have changed in the Finance Store.
+- `types`: An array of `BackgroundDataType` that indicates which types of data have changed in the Finance Store.
 
 ## See Also
 

@@ -20,7 +20,7 @@ init?(coder: NSCoder)
 
 ## Parameters
 
-- `coder`: A coder that conforms to  .
+- `coder`: A coder that conforms to [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder).
 
 ## See Also
 

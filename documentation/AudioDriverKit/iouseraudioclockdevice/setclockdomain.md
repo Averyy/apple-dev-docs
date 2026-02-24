@@ -24,7 +24,7 @@ Drivers can change the transport type of the clock device dynamically. If succes
 
 ## Parameters
 
-- `in_clock_domain`: The clock domain to set, as a  . This value indicates the clock domain to which this AudioDevice belongs. Audio hardware can synchronize AudioDevices that have the same value for this property. However, a value of   indicates an unspecified clock domain for the device. The framework assumes devices with unspecified clock domains are separate from one another, even if they also has   as their clock domain value.
+- `in_clock_domain`: The clock domain to set, as a `uint32_t`. This value indicates the clock domain to which this AudioDevice belongs. Audio hardware can synchronize AudioDevices that have the same value for this property. However, a value of `0` indicates an unspecified clock domain for the device. The framework assumes devices with unspecified clock domains are separate from one another, even if they also has `0` as their clock domain value.
 
 ## See Also
 

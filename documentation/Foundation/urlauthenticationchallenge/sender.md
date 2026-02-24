@@ -22,7 +22,7 @@ var sender: (any URLAuthenticationChallengeSender)? { get }
 
 #### Discussion
 
-If you are using the [`URLSession`](urlsession.md) API, this value is purely informational, because you  respond to authentication challenges in your [`URLSessionDelegate`](urlsessiondelegate.md) or [`URLSessionTaskDelegate`](urlsessiontaskdelegate.md) implementations, by passing [`URLSession.AuthChallengeDisposition`](urlsession/authchallengedisposition.md) constants to the provided completion handler blocks.
+If you are using the [`URLSession`](urlsession.md) API, this value is purely informational, because you *must* respond to authentication challenges in your [`URLSessionDelegate`](urlsessiondelegate.md) or [`URLSessionTaskDelegate`](urlsessiontaskdelegate.md) implementations, by passing [`URLSession.AuthChallengeDisposition`](urlsession/authchallengedisposition.md) constants to the provided completion handler blocks.
 
 However, if you are using the legacy `NSURLConnection` or `NSURLDownload` API, you use this object directly in your authentication handler delegate method. With these APIs, after you finish processing the authentication challenge, you respond by calling methods defined in the [`URLAuthenticationChallengeSender`](urlauthenticationchallengesender.md) protocol on this sender.
 

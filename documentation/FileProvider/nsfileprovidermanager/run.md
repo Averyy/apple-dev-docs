@@ -25,7 +25,7 @@ The system waits until all of the specified operations complete and reports an e
 
 ## Parameters
 
-- `operations`: An array of operations. Populate this array with one or more operations returned by the   method.
+- `operations`: An array of operations. Populate this array with one or more operations returned by the [`listAvailableTestingOperations()`](nsfileprovidermanager/listavailabletestingoperations().md) method.
 
 ## See Also
 

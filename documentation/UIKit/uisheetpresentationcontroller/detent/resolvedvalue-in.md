@@ -27,7 +27,7 @@ You can use this method to get the values of the system [`medium`](uisheetpresen
 
 ## Parameters
 
-- `context`: A context for resolving custom detent values. This context is available in the   closure of  .
+- `context`: A context for resolving custom detent values. This context is available in the `resolver` closure of [`custom(identifier:resolver:)`](uisheetpresentationcontroller/detent/custom(identifier:resolver:).md).
 
 ## See Also
 

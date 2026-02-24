@@ -17,7 +17,7 @@ func insertTitlebarAccessoryViewController(_ childViewController: NSTitlebarAcce
 ## Parameters
 
 - `childViewController`: The title bar accessory view controller to insert.
-- `index`: The index at which to insert  .
+- `index`: The index at which to insert `childViewController`.
 
 ## See Also
 

@@ -28,8 +28,8 @@ If the previously used view (the `view` parameter) is adequate, return that. If 
 ## Parameters
 
 - `pickerView`: An object representing the picker view requesting the data.
-- `row`: A zero-indexed number identifying a row of  . Rows are numbered top-to-bottom.
-- `component`: A zero-indexed number identifying a component of  . Components are numbered left-to-right.
+- `row`: A zero-indexed number identifying a row of `component`. Rows are numbered top-to-bottom.
+- `component`: A zero-indexed number identifying a component of `pickerView`. Components are numbered left-to-right.
 - `view`: A view object that was previously used for this row, but is now hidden and cached by the picker view.
 
 ## See Also

@@ -44,9 +44,9 @@ Toggle("Enable all alarms", sources: $alarms, isOn: \.isOn)
 
 ## Parameters
 
-- `titleKey`: The key for the toggle’s localized title, that describes   the purpose of the toggle.
-- `sources`: A collection of values used as the source for rendering the   Toggle’s state.
-- `isOn`: The key path of the values that determines whether the toggle   is on, mixed or off.
+- `titleKey`: The key for the toggle’s localized title, that describes the purpose of the toggle.
+- `sources`: A collection of values used as the source for rendering the Toggle’s state.
+- `isOn`: The key path of the values that determines whether the toggle is on, mixed or off.
 
 ## See Also
 

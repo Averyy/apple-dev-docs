@@ -6,9 +6,9 @@ Apply a convolution kernel to an image.
 
 #### Overview
 
- is a common image-processing technique that changes the value of a pixel according to the values of its surrounding pixels. Many common image filters, such as blurring, detecting edges, sharpening, and embossing, derive from convolution.
+*Convolution* is a common image-processing technique that changes the value of a pixel according to the values of its surrounding pixels. Many common image filters, such as blurring, detecting edges, sharpening, and embossing, derive from convolution.
 
- form the basis of convolution operations. Kernels are arrays or matrices of weights that indicate the influence of a pixel’s neighbors on its final value. To calculate the value of each transformed pixel, a convolution operation adds the products of each surrounding pixel value with the corresponding kernel value. During a convolution operation, the kernel passes over every pixel in the image, repeating this procedure, and then applies the effect to the entire image.
+*Kernels* form the basis of convolution operations. Kernels are arrays or matrices of weights that indicate the influence of a pixel’s neighbors on its final value. To calculate the value of each transformed pixel, a convolution operation adds the products of each surrounding pixel value with the corresponding kernel value. During a convolution operation, the kernel passes over every pixel in the image, repeating this procedure, and then applies the effect to the entire image.
 
 ## Topics
 

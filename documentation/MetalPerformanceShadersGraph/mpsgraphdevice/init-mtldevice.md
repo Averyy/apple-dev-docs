@@ -25,7 +25,7 @@ A valid device.
 
 ## Parameters
 
-- `metalDevice`:   to create an MPSGraphDevice from.
+- `metalDevice`: `MTLDevice` to create an MPSGraphDevice from.
 
 
 ---

@@ -25,8 +25,8 @@ Before changing the value the lens position, you must call [`lockForConfiguratio
 
 ## Parameters
 
-- `lensPosition`: The lens position. Pass a value of   to leave the current lens position unchanged.
-- `handler`: You can pass   for this parameter if you don’t require this information.
+- `lensPosition`: The lens position. Pass a value of [`currentLensPosition`](avcapturedevice/currentlensposition.md) to leave the current lens position unchanged.
+- `handler`: A callback the system invokes when the adjustment to the lens position is complete and the [`focusMode`](avcapturedevice/focusmode-swift.property.md) set to a locked state. If you call this method multiple times, the system calls the completion handlers in FIFO order. The system passes a time value that matches that of the first buffer to which its applied all settings. It synchronizes the timestamp to the device clock, and you must convert the timestamp to the [`synchronizationClock`](avcapturesession/synchronizationclock.md) prior to comparison with the timestamps of buffers delivered through an [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md). You can pass `nil` for this parameter if you don’t require this information.
 
 ## See Also
 

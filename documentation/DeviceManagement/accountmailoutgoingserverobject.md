@@ -17,6 +17,13 @@ The settings for configuring an outgoing mail server.
 object AccountMailOutgoingServerObject
 ```
 
+## Properties
+
+- `AuthenticationCredentialsAssetReference` (string): The identifier of an asset declaration that contains the credentials for this account to authenticate with an outgoing mail server. The corresponding asset must be of type `CredentialUserNameAndPassword`. If the `AuthenticationMethod` is `None`, this field must be blank. Otherwise, the declaration must contain this field.
+- `AuthenticationMethod` (string) *(required)*: The authentication method for the outgoing mail server.
+- `HostName` (string) *(required)*: The host name for the outgoing mail server.
+- `Port` (integer): The port number for the outgoing mail server.
+
 ## See Also
 
 - [object AccountMailIncomingServerObject](accountmailincomingserverobject.md)

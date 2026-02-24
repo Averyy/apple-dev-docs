@@ -22,8 +22,8 @@ init(subsystem: String, category: OSLog.Category)
 
 ## Parameters
 
-- `subsystem`: The string that identifies the subsystem that emits signposts. Typically, you use the same value as your app’s  . For more information, see  .
-- `category`: The system-defined category, which the system uses to categorize emitted signposts. For possible values, see  .
+- `subsystem`: The string that identifies the subsystem that emits signposts. Typically, you use the same value as your app’s *bundle ID*. For more information, see [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier).
+- `category`: The system-defined category, which the system uses to categorize emitted signposts. For possible values, see [`OSLog.Category`](oslog/category.md).
 
 ## See Also
 

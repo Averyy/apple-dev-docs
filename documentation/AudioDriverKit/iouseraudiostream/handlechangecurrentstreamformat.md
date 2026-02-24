@@ -24,7 +24,7 @@ The default implementation calls [`SetCurrentStreamFormat`](iouseraudiostream/se
 
 ## Parameters
 
-- `in_format`: The stream format to set, if possible, as an  .
+- `in_format`: The stream format to set, if possible, as an `IOUserAudioStreamBasicDescription`.
 
 ## See Also
 

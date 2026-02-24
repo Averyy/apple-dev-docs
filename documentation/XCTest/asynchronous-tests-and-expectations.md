@@ -8,7 +8,7 @@ Verify that asynchronous code behaves as expected.
 
 Asynchronous code doesn’t execute directly within the current flow of code. This might be because the code runs on a different thread or dispatch queue, in a delegate method, or in a callback, or because it’s a Swift function marked with `async`.
 
-`XCTest` provides two approaches for testing asynchronous code. For Swift code that uses `async` and `await` for concurrency, you mark your test methods `async` or `async` `throws` to test asynchronously. For any other types of asynchronous code, within your test you create one or more , which are objects that XCTest uses to handle waiting. Then you  those expectations when the asynchronous code finishes running to tell XCTest to stop waiting. Your test method waits until all expectations are fulfilled or a specified timeout expires.
+`XCTest` provides two approaches for testing asynchronous code. For Swift code that uses `async` and `await` for concurrency, you mark your test methods `async` or `async` `throws` to test asynchronously. For any other types of asynchronous code, within your test you create one or more *expectations*, which are objects that XCTest uses to handle waiting. Then you *fulfill* those expectations when the asynchronous code finishes running to tell XCTest to stop waiting. Your test method waits until all expectations are fulfilled or a specified timeout expires.
 
 ##### Build Asynchronous Tests with Swift Concurrency
 

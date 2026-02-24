@@ -19,6 +19,11 @@ Data that describes a credential that represents a user name and password.
 object UserNameAndPasswordCredential
 ```
 
+## Properties
+
+- `Password` (string): The password for this credential.
+- `UserName` (string) *(required)*: The user name for this credential.
+
 ## See Also
 
 - [object ACMECredential](acmecredential.md)

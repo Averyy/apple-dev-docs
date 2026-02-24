@@ -21,7 +21,7 @@ optional func dragInteraction(_ interaction: UIDragInteraction, session: any UID
 
 - `interaction`: The interaction that called this method.
 - `session`: The drag session that will end.
-- `operation`: A type that describes the drop operation. If the operation is   or  , update your view so it has the corresponding appearance before the cancellation animation begins.
+- `operation`: A type that describes the drop operation. If the operation is [`UIDropOperation.cancel`](uidropoperation/cancel.md) or [`UIDropOperation.forbidden`](uidropoperation/forbidden.md), update your view so it has the corresponding appearance before the cancellation animation begins.
 
 ## See Also
 

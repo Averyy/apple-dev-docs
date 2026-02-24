@@ -24,7 +24,7 @@ The default implementation calls [`SetSampleRate`](iouseraudioclockdevice/setsam
 
 ## Parameters
 
-- `in_sample_rate`: The sample rate to set, if possible, as a  .
+- `in_sample_rate`: The sample rate to set, if possible, as a `double`.
 
 
 ---

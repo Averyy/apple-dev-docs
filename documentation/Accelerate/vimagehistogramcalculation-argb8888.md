@@ -58,7 +58,7 @@ histogramAlpha.withUnsafeMutableBufferPointer { zeroPtr in
 
 - `src`: The source vImage buffer.
 - `histogram`: An array of four collections that contain 256 elements that receive the histogram data.
-- `flags`: To specify that the function doesn’t calculate the alpha channel histogram, set the   flag.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md). To specify that the function doesn’t calculate the alpha channel histogram, set the [`kvImageLeaveAlphaUnchanged`](kvimageleavealphaunchanged.md) flag.
 
 ## See Also
 

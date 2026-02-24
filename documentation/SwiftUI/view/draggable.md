@@ -35,7 +35,7 @@ To customize the default preview, apply a [`contentShape(_:_:eoFill:)`](view/con
 
 ## Parameters
 
-- `payload`: A closure that returns a single   instance or a value conforming to   that   represents the draggable data from this view.
+- `payload`: A closure that returns a single instance or a value conforming to [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) that represents the draggable data from this view.
 
 ## See Also
 

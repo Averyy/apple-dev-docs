@@ -37,6 +37,18 @@ After initializing a PDF renderer, you can use it to draw multiple PDFs with the
 
 Create a PDF renderer, providing the bounds of the PDF page.
 
+**Swift**:
+
+```swift
+let renderer = UIGraphicsPDFRenderer(bounds: CGRect(x: 0, y: 0, width: 500, height: 300))
+```
+
+**Objective-C**:
+
+```objc
+UIGraphicsPDFRenderer *renderer = [[UIGraphicsPDFRenderer alloc] initWithBounds:CGRectMake(0, 0, 500, 300)];
+```
+
 You can instead use one of the other [`UIGraphicsPDFRenderer`](uigraphicspdfrenderer.md) initializers to specify a renderer format ([`UIGraphicsPDFRendererFormat`](uigraphicspdfrendererformat.md)) in addition to the bounds. This allows you to configure the underlying Core Graphics context with custom PDF document info. If you don’t provide a format, the renderer uses the [`default()`](uigraphicsrendererformat/default().md) format, which creates a context best suited for the current device.
 
 ##### Creating a Pdf with a Pdf Renderer
@@ -44,6 +56,29 @@ You can instead use one of the other [`UIGraphicsPDFRenderer`](uigraphicspdfrend
 Use the [`pdfData(actions:)`](uigraphicspdfrenderer/pdfdata(actions:).md) method to create a PDF with the PDF renderer you created above. This takes a block that represents the drawing actions. Within this block, the renderer creates a Core Graphics context using the parameters provided during renderer initialization, and sets this to be the current context.
 
 Before issuing PDF drawing instructions, you must create a page with a call to either the [`beginPage()`](uigraphicspdfrenderercontext/beginpage().md) method or [`beginPage(withBounds:pageInfo:)`](uigraphicspdfrenderercontext/beginpage(withbounds:pageinfo:).md) method on the supplied [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercontext.md).
+
+**Swift**:
+
+```swift
+let pdf = renderer.pdfData { (context) in
+  context.beginPage()
+  let attributes = [
+    NSFontAttributeName : UIFont.boldSystemFont(ofSize: 150)
+  ]
+  let text = "Hello!" as NSString
+  text.draw(in: CGRect(x: 0, y: 0, width: 500, height: 200), withAttributes: attributes)
+}
+```
+
+**Objective-C**:
+
+```objc
+NSData *pdf = [renderer PDFDataWithActions:^(UIGraphicsPDFRendererContext * _Nonnull context) {
+  [context beginPage];
+  NSDictionary *attributes = @{NSFontAttributeName : [UIFont boldSystemFontOfSize:150]};
+  NSString *text = @"Hello!";
+  [text drawInRect:CGRectMake(0, 0, 500, 200) withAttributes:attributes];}];  
+```
 
 The drawing actions closure takes a single argument of type [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercontext.md). This provides access to some high-level drawing functions, such as [`fill(_:)`](uigraphicsrenderercontext/fill(_:).md) through the [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md) superclass.
 
@@ -56,6 +91,33 @@ The above code creates the following result:
 ##### Adding Pages
 
 Add multiple pages to your PDF through repeated calls to the [`beginPage()`](uigraphicspdfrenderercontext/beginpage().md) method on the [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercontext.md) provided to the drawing block.
+
+**Swift**:
+
+```swift
+let pdf = renderer.pdfData { (context) in
+  let attributes = [
+    NSFontAttributeName : UIFont.boldSystemFont(ofSize: 150)
+  ]
+  for page in 1...3 {
+    context.beginPage()
+    let text = "Page \(page)" as NSString
+    text.draw(in: CGRect(x: 0, y: 0, width: 500, height: 200), withAttributes: attributes)
+  }
+}
+```
+
+**Objective-C**:
+
+```objc
+NSData *pdf = [renderer PDFDataWithActions:^(UIGraphicsPDFRendererContext * _Nonnull context) {
+  NSDictionary *attributes = @{NSFontAttributeName : [UIFont boldSystemFontOfSize:150]}; 
+  for (int page = 1; page < 4; page++) {
+    [context beginPage];
+    NSString *text = [NSString stringWithFormat:@"Page %d", page];
+    [text drawInRect:CGRectMake(0, 0, 500, 200) withAttributes:attributes];
+  }}];
+```
 
 Use the [`beginPage(withBounds:pageInfo:)`](uigraphicspdfrenderercontext/beginpage(withbounds:pageinfo:).md) method instead of the [`beginPage()`](uigraphicspdfrenderercontext/beginpage().md) method if you want to override the default properties for the new page.
 
@@ -71,6 +133,62 @@ You can create internal links, known as destinations, in PDFs. A complete link h
 - A link region. This is a rectangle on a PDF page, which when tapped, instructs the PDF viewing app to jump to a specific named destination. You create these with the [`setDestinationWithName(_:for:)`](uigraphicspdfrenderercontext/setdestinationwithname(_:for:).md) method on [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercontext.md), providing the name of the destination to jump to, and the bounds of the active link region.
 
 The following code demonstrates how to use destinations with a PDF renderer by showing how to create links that jump to the next page.
+
+**Swift**:
+
+```swift
+let pdf = renderer.pdfData { (context) in
+  let pageNumberAttributes = [
+    NSFontAttributeName : UIFont.boldSystemFont(ofSize: 150)
+  ]
+  
+  let nextPage = "Next Page ↠" as NSString
+  let nextPageRect = CGRect(x: 350, y: 250, width: 150, height: 40)
+  let nextPageAttributes = [
+    NSFontAttributeName : UIFont.systemFont(ofSize: 25),
+    NSBackgroundColorAttributeName : UIColor.red,
+    NSForegroundColorAttributeName : UIColor.white
+  ]
+  
+  for page in 1...3 {
+    context.beginPage()
+    let pageNumber = "Page \(page)" as NSString
+    pageNumber.draw(in: CGRect(x: 0, y: 0, width: 500, height: 200), withAttributes: pageNumberAttributes)
+    
+    nextPage.draw(in: nextPageRect, withAttributes: nextPageAttributes)
+    
+    context.addDestination(withName: "page-\(page)", at: CGPoint.zero.applying(context.cgContext.userSpaceToDeviceSpaceTransform))
+    context.setDestinationWithName("page-\(page + 1)", for: nextPageRect.applying(context.cgContext.userSpaceToDeviceSpaceTransform))
+  }
+}
+```
+
+**Objective-C**:
+
+```objc
+NSData *pdf = [renderer PDFDataWithActions:^(UIGraphicsPDFRendererContext * _Nonnull context) {
+  NSDictionary *attributes = @{NSFontAttributeName : [UIFont boldSystemFontOfSize:150]};
+    
+  NSString *nextPage = @"Next Page ↠";
+  CGRect nextPageRect = CGRectMake(350, 250, 150, 40);
+  NSDictionary *nextPageAttributes = @{
+    NSFontAttributeName : [UIFont systemFontOfSize:25],
+    NSBackgroundColorAttributeName : [UIColor redColor],
+    NSForegroundColorAttributeName : [UIColor whiteColor]
+  };
+  for (int page = 1; page < 4; page++) {
+    [context beginPage];
+    NSString *pageNumber = [NSString stringWithFormat:@"Page %d", page];
+    [pageNumber drawInRect:CGRectMake(0, 0, 500, 200) withAttributes:attributes];
+    [nextPage drawInRect:nextPageRect withAttributes:nextPageAttributes];
+      
+    [context addDestinationWithName:[NSString stringWithFormat:@"page-%d", page]
+                            atPoint:CGContextConvertPointToDeviceSpace(context.CGContext, CGPointZero)];
+    [context setDestinationWithName:[NSString stringWithFormat:@"page-%d", page+1]
+                            forRect:CGContextConvertRectToDeviceSpace(context.CGContext, nextPageRect)];
+  }
+}];
+```
 
 This code adds large red labels that jump from the current page to the next page when clicked. Each page has a destination with names of the form `page-1`, positioned at the origin. The bounding box for the next-page label is the link to the destination on the following page.
 

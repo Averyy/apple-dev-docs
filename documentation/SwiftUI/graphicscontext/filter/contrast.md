@@ -30,7 +30,7 @@ This filter is equivalent to the `contrast` filter primitive defined by the Scal
 
 ## Parameters
 
-- `amount`: An amount to adjust the contrast. A value of   zero leaves the result completely gray. A value of one leaves   the result unchanged. You can use values greater than one.
+- `amount`: An amount to adjust the contrast. A value of zero leaves the result completely gray. A value of one leaves the result unchanged. You can use values greater than one.
 
 ## See Also
 

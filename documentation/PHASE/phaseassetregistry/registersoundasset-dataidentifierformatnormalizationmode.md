@@ -26,7 +26,7 @@ A sound asset object. If an error occurs, the function returns `nil`.
 ## Parameters
 
 - `data`: A buffer containing the audio data to register. Audio data needs to be single-channel interleaved PCM, or per-channel de-interleaved PCM with buffers organized back to back.
-- `identifier`: A unique name for the sound asset. If you provide  , the framework determines and sets value for the asset’s identifier.
+- `identifier`: A unique name for the sound asset. If you provide `nil`, the framework determines and sets value for the asset’s identifier.
 - `format`: And object that describes the audio data layout.
 - `normalizationMode`: An option to calibrate the sound asset for the user’s output device.
 

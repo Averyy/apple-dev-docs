@@ -17,7 +17,7 @@ func setSubdevices(_ devices: [AudioHardwareClock]) throws
 
 ## Parameters
 
-- `devices`: An array of AudioHardwareClocks representing all the devices and   clocks to include in the aggregate device.
+- `devices`: An array of AudioHardwareClocks representing all the devices and clocks to include in the aggregate device.
 
 
 ---

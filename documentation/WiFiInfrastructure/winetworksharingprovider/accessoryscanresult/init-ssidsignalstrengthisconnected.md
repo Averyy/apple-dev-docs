@@ -18,7 +18,7 @@ init(ssid: WISSID?, signalStrength: Double, isConnected: Bool)
 ## Parameters
 
 - `ssid`: The SSID of the discovered network.
-- `signalStrength`: The signal strength value, between   and  .
+- `signalStrength`: The signal strength value, between `0.0` and `1.0`.
 - `isConnected`: A Boolean that indicates whether the accessory is connected to this network.
 
 

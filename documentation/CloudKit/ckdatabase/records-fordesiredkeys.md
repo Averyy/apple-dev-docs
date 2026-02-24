@@ -35,7 +35,7 @@ For information on a more configurable way to fetch specific records, see [`CKFe
 ## Parameters
 
 - `ids`: The identifiers of the records to fetch.
-- `desiredKeys`: The fields to include on each fetched record. To include all fields, specify  ; to fetch only system fields, specify an empty array.
+- `desiredKeys`: The fields to include on each fetched record. To include all fields, specify `nil`; to fetch only system fields, specify an empty array.
 
 ## See Also
 

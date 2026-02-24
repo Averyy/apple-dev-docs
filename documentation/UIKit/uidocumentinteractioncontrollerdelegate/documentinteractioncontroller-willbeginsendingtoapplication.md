@@ -24,7 +24,7 @@ This method is called when the user chooses to open a document, which could occu
 ## Parameters
 
 - `controller`: The document interaction controller whose document is about to be opened.
-- `application`: The bundle identifier of the application that is about to open the document. This value corresponds to the value in the   key of the application’s   file.
+- `application`: The bundle identifier of the application that is about to open the document. This value corresponds to the value in the `CFBundleIdentifier` key of the application’s `Info.plist` file.
 
 ## See Also
 

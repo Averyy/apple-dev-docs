@@ -60,7 +60,7 @@ lightEntity.components.set(ImageBasedLightComponent(
 
 ## Parameters
 
-- `cubeTexture`: A skybox cube texture of type   with   or   semantics.
+- `cubeTexture`: A skybox cube texture of type `.cubeType` with `.color` or `.hdrColor` semantics.
 - `options`: A configuration for generating the environment resource.
 
 ## See Also

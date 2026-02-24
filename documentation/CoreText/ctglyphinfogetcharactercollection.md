@@ -30,7 +30,7 @@ If the glyph info object was created with a glyph name or a glyph index, its cha
 
 ## Parameters
 
-- `glyphInfo`: The glyph info from which to get the character collection. May not be  .
+- `glyphInfo`: The glyph info from which to get the character collection. May not be `NULL`.
 
 ## See Also
 

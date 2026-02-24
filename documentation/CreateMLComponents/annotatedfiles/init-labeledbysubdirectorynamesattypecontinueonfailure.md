@@ -40,7 +40,7 @@ It would produce two labels (foo and bar) with two URLs each.
 
 - `url`: URL of directory containing the files.
 - `type`: Type of files.
-- `continueOnFailure`: A Boolean value indicating whether to continue reading files after   encountering a file that is not readable. The default value is  .
+- `continueOnFailure`: A Boolean value indicating whether to continue reading files after encountering a file that is not readable. The default value is `false`.
 
 ## See Also
 

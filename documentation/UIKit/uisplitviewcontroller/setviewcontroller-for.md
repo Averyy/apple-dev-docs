@@ -39,7 +39,7 @@ You can’t assign a [`UITabBarController`](uitabbarcontroller.md) to the primar
 ## Parameters
 
 - `vc`: The child view controller to associate with the provided column of the split view interface.
-- `column`: The corresponding column of the split view interface. See   for values.
+- `column`: The corresponding column of the split view interface. See [`UISplitViewController.Column`](uisplitviewcontroller/column.md) for values.
 
 ## See Also
 

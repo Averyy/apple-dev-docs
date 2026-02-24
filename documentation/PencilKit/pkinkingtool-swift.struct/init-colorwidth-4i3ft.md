@@ -18,9 +18,9 @@ init(_ inkType: PKInkingTool.InkType, color: NSColor = NSColor.black, width: CGF
 
 ## Parameters
 
-- `inkType`: The shape of the tool, which can be  ,  , or  .
+- `inkType`: The shape of the tool, which can be [`PKInkingTool.InkType.marker`](pkinkingtool-swift.struct/inktype-swift.enum/marker.md), [`PKInkingTool.InkType.pen`](pkinkingtool-swift.struct/inktype-swift.enum/pen.md), or [`PKInkingTool.InkType.pencil`](pkinkingtool-swift.struct/inktype-swift.enum/pencil.md).
 - `color`: The color to apply to drawn lines.
-- `width`: The base width to apply to any drawn lines. The value in the   parameter and input from Apple Pencil affects the final width.
+- `width`: The base width to apply to any drawn lines. The value in the `inkType` parameter and input from Apple Pencil affects the final width.
 
 ## See Also
 

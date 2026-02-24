@@ -26,7 +26,7 @@ You can override the default image by subclassing NSCollectionView and overridin
 
 - `indexes`: The index set of the items to be dragged.
 - `event`: Mouse drag event.
-- `dragImageOffset`: An in/out parameter that will initially be set to  . it can be modified to reposition the returned image. A   of   will cause the image to be centered under the mouse.
+- `dragImageOffset`: An in/out parameter that will initially be set to [`NSZeroPoint`](https://developer.apple.com/documentation/Foundation/NSZeroPoint). it can be modified to reposition the returned image. A `dragImageOffset` of [`NSZeroPoint`](https://developer.apple.com/documentation/Foundation/NSZeroPoint) will cause the image to be centered under the mouse.
 
 ## See Also
 

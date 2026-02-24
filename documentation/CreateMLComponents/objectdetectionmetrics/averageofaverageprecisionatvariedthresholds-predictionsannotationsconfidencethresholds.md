@@ -26,8 +26,8 @@ Average of average precision for all the labels, computed at varied bounding box
 ## Parameters
 
 - `predictions`: A list of all the predictions from an object detection model. Each element in the list is a list of predictions from one image.
-- `annotations`: A list of all the annotations. Each element is an   object from one image.
-- `confidenceThresholds`: Confidence thresholds for each label. The values will always be between 0.0 and 1.0.   If any label does not have a threshold, the   is used for that label. The default value is  .
+- `annotations`: A list of all the annotations. Each element is an `ObjectDetectionAnnotation` object from one image.
+- `confidenceThresholds`: Confidence thresholds for each label. The values will always be between 0.0 and 1.0. If any label does not have a threshold, the `defaultConfidenceThreshold` is used for that label. The default value is `[:]`.
 
 ## See Also
 

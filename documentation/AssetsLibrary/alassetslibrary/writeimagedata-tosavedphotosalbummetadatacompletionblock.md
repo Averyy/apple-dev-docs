@@ -23,7 +23,7 @@ If there is a conflict between the metadata in the image data and the metadata d
 
 - `imageData`: Data for the image to add to the album.
 - `metadata`: The metadata to associate with the image.
-- `completionBlock`: For a description of the block, see  .
+- `completionBlock`: The block invoked after the save operation completes. For a description of the block, see [`ALAssetsLibraryWriteImageCompletionBlock`](alassetslibrarywriteimagecompletionblock.md).
 
 ## See Also
 

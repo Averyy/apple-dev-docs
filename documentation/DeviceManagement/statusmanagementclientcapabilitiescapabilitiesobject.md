@@ -27,6 +27,12 @@ object StatusManagementClientCapabilitiesCapabilitiesObject
 - [object StatusManagementClientCapabilitiesCapabilities_SupportedPayloadsObject](statusmanagementclientcapabilitiescapabilities_supportedpayloadsobject.md)
   The set of declaration and status items that the client supports.
 
+## Properties
+
+- `supported-features` (StatusManagementClientCapabilitiesCapabilities_SupportedFeaturesObject) *(required)*: A set of optional protocol features that the client supports. Each object’s key represents a feature, and the property value represents the feature’s associated parameters.
+- `supported-payloads` (StatusManagementClientCapabilitiesCapabilities_SupportedPayloadsObject) *(required)*: A set of declaration and status items that the client supports.
+- `supported-versions` ([string]) *(required)*: A list of protocol versions that the client supports.
+
 
 ---
 

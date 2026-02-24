@@ -25,7 +25,7 @@ Returns `true` if the range you provide is in the current range; otherwise `fals
 
 ## Parameters
 
-- `textRange`: An  .
+- `textRange`: An [`NSTextRange`](nstextrange.md).
 
 ## See Also
 

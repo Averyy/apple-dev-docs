@@ -19,9 +19,9 @@ optional func locationManager(_ manager: CLLocationManager, didRange beacons: [C
 
 ## Parameters
 
-- `manager`: The   that corresponds to this delegate.
-- `beacons`: An array of   objects.
-- `beaconConstraint`: The   that describes the characteristics of the beacons the location manager is looking for.
+- `manager`: The [`CLLocationManager`](cllocationmanager.md) that corresponds to this delegate.
+- `beacons`: An array of [`CLBeacon`](clbeacon.md) objects.
+- `beaconConstraint`: The [`CLBeaconIdentityConstraint`](clbeaconidentityconstraint.md) that describes the characteristics of the beacons the location manager is looking for.
 
 ## See Also
 

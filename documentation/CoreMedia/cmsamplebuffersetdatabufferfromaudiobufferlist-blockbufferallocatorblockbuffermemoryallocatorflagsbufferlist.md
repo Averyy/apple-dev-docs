@@ -30,11 +30,11 @@ Creates a `CMBlockBuffer` containing a copy of the data from the `AudioBufferLis
 
 ## Parameters
 
-- `sbuf`: The   being modified.
-- `blockBufferStructureAllocator`: Allocator to use when creating the   structure.
-- `blockBufferBlockAllocator`: Allocator to use for memory block held by the  .
+- `sbuf`: The `CMSampleBuffer` being modified.
+- `blockBufferStructureAllocator`: Allocator to use when creating the `CMBlockBuffer` structure.
+- `blockBufferBlockAllocator`: Allocator to use for memory block held by the `CMBlockBuffer`.
 - `flags`: Flags controlling operation.
-- `bufferList`: Buffer list whose data will be copied into the new  .
+- `bufferList`: Buffer list whose data will be copied into the new `CMBlockBuffer`.
 
 ## See Also
 

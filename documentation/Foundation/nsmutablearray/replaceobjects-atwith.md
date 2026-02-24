@@ -29,7 +29,7 @@ If `objects` or `indexes` is `nil`, this method raises an exception.
 ## Parameters
 
 - `indexes`: The indexes of the objects to be replaced.
-- `objects`: The objects with which to replace the objects in the receiving array at the indexes specified by  . The count of locations in   must equal the count of  .
+- `objects`: The objects with which to replace the objects in the receiving array at the indexes specified by `indexes`. The count of locations in `indexes` must equal the count of `objects`.
 
 ## See Also
 

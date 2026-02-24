@@ -41,12 +41,12 @@ This table lists the presets and their configurations:
 
 | Preset | [`shortForm`](dictationtranscriber/contenthint/shortform.md) | [`DictationTranscriber.ReportingOption.volatileResults`](dictationtranscriber/reportingoption/volatileresults.md) | [`DictationTranscriber.ReportingOption.frequentFinalization`](dictationtranscriber/reportingoption/frequentfinalization.md) | [`DictationTranscriber.ResultAttributeOption.audioTimeRange`](dictationtranscriber/resultattributeoption/audiotimerange.md) | [`DictationTranscriber.TranscriptionOption.punctuation`](dictationtranscriber/transcriptionoption/punctuation.md) |
 | --- | --- | --- | --- | --- | --- |
-| `phrase` |  | No | No | No | No |
-| `shortDictation` |  | No | No | No |  |
-| `progressiveShortDictation` |  |  |  | No |  |
-| `longDictation` | No | No | No | No |  |
-| `progressiveLongDictation` | No |  | No | No |  |
-| `timeIndexedLongDictation` | No | No | No |  |  |
+| `phrase` | **Yes** | No | No | No | No |
+| `shortDictation` | **Yes** | No | No | No | **Yes** |
+| `progressiveShortDictation` | **Yes** | **Yes** | **Yes** | No | **Yes** |
+| `longDictation` | No | No | No | No | **Yes** |
+| `progressiveLongDictation` | No | **Yes** | No | No | **Yes** |
+| `timeIndexedLongDictation` | No | No | No | **Yes** | **Yes** |
 
 ## Topics
 

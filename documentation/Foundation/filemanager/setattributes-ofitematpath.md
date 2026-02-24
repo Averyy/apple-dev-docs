@@ -30,7 +30,7 @@ You must initialize the [`posixPermissions`](fileattributekey/posixpermissions.m
 
 ## Parameters
 
-- `attributes`: A dictionary containing as keys the attributes to set for   and as values the corresponding value for the attribute. You can set the following attributes:  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  . You can change single attributes or any combination of attributes; you need not specify keys for all attributes.
+- `attributes`: A dictionary containing as keys the attributes to set for `path` and as values the corresponding value for the attribute. You can set the following attributes: [`busy`](fileattributekey/busy.md), [`creationDate`](fileattributekey/creationdate.md), [`extensionHidden`](fileattributekey/extensionhidden.md), [`groupOwnerAccountID`](fileattributekey/groupowneraccountid.md), [`groupOwnerAccountName`](fileattributekey/groupowneraccountname.md), [`hfsCreatorCode`](fileattributekey/hfscreatorcode.md), [`hfsTypeCode`](fileattributekey/hfstypecode.md), [`immutable`](fileattributekey/immutable.md), [`modificationDate`](fileattributekey/modificationdate.md), [`ownerAccountID`](fileattributekey/owneraccountid.md), [`ownerAccountName`](fileattributekey/owneraccountname.md), [`posixPermissions`](fileattributekey/posixpermissions.md). You can change single attributes or any combination of attributes; you need not specify keys for all attributes.
 - `path`: The path of a file or directory.
 
 ## See Also

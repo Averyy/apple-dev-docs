@@ -30,7 +30,7 @@ The reuse identifier provides a way for you to improve performance by recycling 
 ## Parameters
 
 - `annotation`: The annotation object to associate with the new view.
-- `reuseIdentifier`: If you plan to reuse the annotation view for similar types of annotations, pass a string to identify it. Although you can pass   if you don’t intend to reuse the view, reusing annotation views is generally best practice.
+- `reuseIdentifier`: If you plan to reuse the annotation view for similar types of annotations, pass a string to identify it. Although you can pass `nil` if you don’t intend to reuse the view, reusing annotation views is generally best practice.
 
 ## See Also
 

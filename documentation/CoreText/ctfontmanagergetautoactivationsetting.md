@@ -20,7 +20,7 @@ The auto-activation setting for the specified bundle identifier. See [`CTFontMan
 
 ## Parameters
 
-- `bundleIdentifier`: The bundle identifier used to specify a particular application bundle. If  , the current application bundle is used. If   is specified, gets the global auto-activation setting.
+- `bundleIdentifier`: The bundle identifier used to specify a particular application bundle. If `NULL`, the current application bundle is used. If `kCTFontManagerBundleIdentifier` is specified, gets the global auto-activation setting.
 
 ## See Also
 

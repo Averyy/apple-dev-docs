@@ -30,7 +30,8 @@ To load the artwork for an achievement, use the [`loadImage(completionHandler:)`
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block that GameKit calls when this method completes the download. The block receives the following parameters: - **`descriptions`**: The [`GKAchievementDescription`](gkachievementdescription.md) objects that contain the localized text for the achievements in your game.
+- **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
 
 
 ---

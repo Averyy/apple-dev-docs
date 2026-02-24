@@ -29,7 +29,7 @@ If `proposedRect` doesn’t completely overlap the region along the axis of `mov
 - `proposedRect`: The proposed rectangle in which to layout text.
 - `sweepDirection`: The line sweep direction.
 - `movementDirection`: The line movement direction.
-- `remainingRect`: Upon return, the unused, possibly shifted, portion of   that’s available for further text, or   if there is no remainder.
+- `remainingRect`: Upon return, the unused, possibly shifted, portion of `proposedRect` that’s available for further text, or `NSZeroRect` if there is no remainder.
 
 ## See Also
 

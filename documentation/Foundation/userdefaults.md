@@ -28,7 +28,7 @@ class UserDefaults
 
 #### Overview
 
-A `UserDefaults` object provides access to the defaults system, which is a persistent store for app-specific and system-wide settings. You use this system to store nonsensitive information, such as app-specific configuration details. The system also stores configuration details that apply to all apps, such as the current language settings for the device. In your code, you check values from this system and use them to dynamically alter your app’s appearance or behavior. The term  refers to the fact that the stored data determines the default startup state and behavior.
+A `UserDefaults` object provides access to the defaults system, which is a persistent store for app-specific and system-wide settings. You use this system to store nonsensitive information, such as app-specific configuration details. The system also stores configuration details that apply to all apps, such as the current language settings for the device. In your code, you check values from this system and use them to dynamically alter your app’s appearance or behavior. The term *defaults* refers to the fact that the stored data determines the default startup state and behavior.
 
 > ❗ **Important**: Don’t store personal or sensitive information as settings. The defaults system stores information on disk in an unencrypted format. Store personal or sensitive information in the person’s Keychain instead.
 

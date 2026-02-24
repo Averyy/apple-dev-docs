@@ -27,9 +27,9 @@ You can also validate postback signatures in development environments, whether y
 
 Determine which NIST P-256 public key you need from the list below:
 
-- To validate production postbacks: : apple-cas-identifier/0 : `MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEWdp8GPcGqmhgzEFj9Z2nSpQVddayaPe4FMzqM9wib1+aHaaIzoHoLN9zW4K8y4SPykE3YVK3sVqW6Af0lfx3gg==`
-- To validate development postbacks the system creates from end-to-end flows: : apple-development-identifier/0 : `MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELeEDzpJEP+/qRSE5hJVC1p1J0ssUnQGMzBBbvnACBok8OVGGLgxL0myrKiy6lvRtSlLRsWit87i+vftD8AEqeQ==`
-- To validate development postbacks the system generates from developer settings: : apple-development-identifier/1 : `MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE8YzdO7eM97s/IJ25kdW5CZ3A14USE5IJ5Ha/vhWaxI6UBI1ZxCEvjrKxVluVGe6qWwF1BDFq+QHqKfH5u+wxHQ==`
+- To validate production postbacks: **Key identifier**: apple-cas-identifier/0 **Base64-encoded key**: `MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEWdp8GPcGqmhgzEFj9Z2nSpQVddayaPe4FMzqM9wib1+aHaaIzoHoLN9zW4K8y4SPykE3YVK3sVqW6Af0lfx3gg==`
+- To validate development postbacks the system creates from end-to-end flows: **Key identifier**: apple-development-identifier/0 **Base64-encoded key**: `MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELeEDzpJEP+/qRSE5hJVC1p1J0ssUnQGMzBBbvnACBok8OVGGLgxL0myrKiy6lvRtSlLRsWit87i+vftD8AEqeQ==`
+- To validate development postbacks the system generates from developer settings: **Key identifier**: apple-development-identifier/1 **Base64-encoded key**: `MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE8YzdO7eM97s/IJ25kdW5CZ3A14USE5IJ5Ha/vhWaxI6UBI1ZxCEvjrKxVluVGe6qWwF1BDFq+QHqKfH5u+wxHQ==`
 
 The following code demonstrates how to determine which public key to use, depending on the `kid` property you receive in the postback’s JWS header:
 

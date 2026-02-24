@@ -32,7 +32,7 @@ If you don’t need access to the navigation state, use [`init(root:)`](navigati
 
 ## Parameters
 
-- `path`: A   to the navigation state for this stack.
+- `path`: A [`Binding`](binding.md) to the navigation state for this stack.
 - `root`: The view to display when the stack is empty.
 
 

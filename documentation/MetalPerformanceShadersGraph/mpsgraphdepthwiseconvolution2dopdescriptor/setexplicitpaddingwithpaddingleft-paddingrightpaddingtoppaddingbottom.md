@@ -25,10 +25,10 @@ Note: this method also sets `paddingStyle` to `MPSGraphPaddingStyleExplicit` (se
 
 ## Parameters
 
-- `paddingLeft`: See   property.
-- `paddingRight`: See   property.
-- `paddingTop`: See   property.
-- `paddingBottom`: See   property.
+- `paddingLeft`: See `paddingLeft` property.
+- `paddingRight`: See `paddingRight` property.
+- `paddingTop`: See `paddingTop` property.
+- `paddingBottom`: See `paddingBottom` property.
 
 
 ---

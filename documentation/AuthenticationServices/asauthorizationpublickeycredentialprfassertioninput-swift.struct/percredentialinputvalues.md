@@ -24,7 +24,7 @@ A configured instance of `ASAuthorizationPublicKeyCredentialPRFAssertionInput`.
 
 ## Parameters
 
-- `perCredentialInputValues`: This dictionary maps   values to input values. If the user selects a passkey with a   that matches one of these keys, the extension uses the corresponding input values. If the selected passkey doesn’t match, it doesn’t return a PRF result. When using this option, the dictionary needs to be nonempty and the request needs to use  .
+- `perCredentialInputValues`: This dictionary maps `credentialID` values to input values. If the user selects a passkey with a `credentialID` that matches one of these keys, the extension uses the corresponding input values. If the selected passkey doesn’t match, it doesn’t return a PRF result. When using this option, the dictionary needs to be nonempty and the request needs to use `allowedCredentials`.
 
 ## See Also
 

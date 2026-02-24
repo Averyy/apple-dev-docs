@@ -24,10 +24,10 @@ Call this method to report the state of the device to the system.
 
 ## Parameters
 
-- `cts`: A Boolean value indicating the state of the clear-to-send bit. Specify   to set the bit or   to clear it.
-- `dsr`: A Boolean value indicating the state of the data-set-ready bit. Specify   to set the bit or   to clear it.
-- `ri`: A Boolean value indicating the state of the ring-indicator bit. Specify   to set the bit or   to clear it.
-- `dcd`: A Boolean value indicating the state of the data-carrier-detect bit. Specify   to set the bit or   to clear it.
+- `cts`: A Boolean value indicating the state of the clear-to-send bit. Specify `YES` to set the bit or `NO` to clear it.
+- `dsr`: A Boolean value indicating the state of the data-set-ready bit. Specify `YES` to set the bit or `NO` to clear it.
+- `ri`: A Boolean value indicating the state of the ring-indicator bit. Specify `YES` to set the bit or `NO` to clear it.
+- `dcd`: A Boolean value indicating the state of the data-carrier-detect bit. Specify `YES` to set the bit or `NO` to clear it.
 
 ## See Also
 

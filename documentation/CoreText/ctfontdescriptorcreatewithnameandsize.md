@@ -26,8 +26,8 @@ A new font descriptor reference with the given PostScript name and point size.
 
 ## Parameters
 
-- `name`: The PostScript name to be used for the font descriptor as a   object.
-- `size`: The point size. If  , the font size attribute ( ) is omitted from the returned font descriptor.
+- `name`: The PostScript name to be used for the font descriptor as a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object.
+- `size`: The point size. If `0.0`, the font size attribute ([`kCTFontSizeAttribute`](kctfontsizeattribute.md)) is omitted from the returned font descriptor.
 
 ## See Also
 

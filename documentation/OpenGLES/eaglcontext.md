@@ -3,7 +3,7 @@
 **Framework**: OpenGL ES  
 **Kind**: class
 
-An [`EAGLContext`](eaglcontext.md) object manages an OpenGL ES —the state information, commands, and resources needed to draw using OpenGL ES. To execute OpenGL ES commands, you need a current rendering context.
+An [`EAGLContext`](eaglcontext.md) object manages an OpenGL ES *rendering context*—the state information, commands, and resources needed to draw using OpenGL ES. To execute OpenGL ES commands, you need a current rendering context.
 
 **Availability**:
 - iOS 2.0+

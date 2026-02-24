@@ -18,7 +18,7 @@ func unbindTextureRepresentation(fromCGLContext cgl_ctx: CGLContextObj!, texture
 ## Parameters
 
 - `cgl_ctx`: A CGL context.)
-- `unit`: The texture unit to unbind from (such as,  )
+- `unit`: The texture unit to unbind from (such as, `GL_TEXTURE0`)
 
 ## See Also
 

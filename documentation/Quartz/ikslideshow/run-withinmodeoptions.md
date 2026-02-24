@@ -17,8 +17,8 @@ func run(with dataSource: (any IKSlideshowDataSource)!, inMode slideshowMode: St
 ## Parameters
 
 - `dataSource`: The data source to use for the slideshow.
-- `slideshowMode`: A constant that indicate what kind of items are in the slideshow— ,  , or  . See  .
-- `slideshowOptions`: A dictionary of slideshow options. See  .
+- `slideshowMode`: A constant that indicate what kind of items are in the slideshow—`IKSlideshowModeImages`, `IKSlideshowModePDF`, or `IKSlideshowModeQuickLook`. See [`Slideshow Modes`](slideshow-modes.md).
+- `slideshowOptions`: A dictionary of slideshow options. See [`Slideshow Option Keys`](slideshow-option-keys.md).
 
 ## See Also
 

@@ -28,7 +28,7 @@ If the resulting value is mutated, then `Data` will invoke the `mutableCopy()` f
 
 ## Parameters
 
-- `reference`: The instance of   that you wish to wrap. This instance will be copied by  .
+- `reference`: The instance of `NSData` that you wish to wrap. This instance will be copied by `struct Data`.
 
 
 ---

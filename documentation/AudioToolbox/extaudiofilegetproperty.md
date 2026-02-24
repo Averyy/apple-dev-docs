@@ -33,7 +33,7 @@ If you call this function to retrieve a value that is a Core Foundation object, 
 
 - `inExtAudioFile`: The extended audio file object to get a property value from.
 - `inPropertyID`: The property whose value you want.
-- `ioPropertyDataSize`: On input, the size of the memory pointed to by the   parameter. On output, the size of the property value.
+- `ioPropertyDataSize`: On input, the size of the memory pointed to by the `outPropertyData` parameter. On output, the size of the property value.
 - `outPropertyData`: On output, the property value you wanted to get.
 
 ## See Also

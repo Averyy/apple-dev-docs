@@ -36,7 +36,7 @@ The function displays an interactive snippet as a result of the app intent if a 
 - `conditions`: The preconditions for requesting user confirmation.
 - `actionName`: The name for the confirmation action.
 - `dialog`: The confirmation dialog.
-- `showDialogAsPrompt`: A flag that indicates whether the confirmation   dialog should appear as prompt text with the confirmation.
+- `showDialogAsPrompt`: A flag that indicates whether the confirmation dialog should appear as prompt text with the confirmation.
 - `snippetIntent`: The intent responsible for presenting a snippet for this confirmation.
 
 

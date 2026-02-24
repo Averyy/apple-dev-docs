@@ -26,7 +26,7 @@ This method uses the default language of US English.
 
 ## Parameters
 
-- `index`: The descriptor index value. This parameter corresponds to the low byte of   of the   control request (USB 2.0, section 9.4.8).
+- `index`: The descriptor index value. This parameter corresponds to the low byte of `wValue` of the `SET_DESCRIPTOR` control request (USB 2.0, section 9.4.8).
 
 ## See Also
 

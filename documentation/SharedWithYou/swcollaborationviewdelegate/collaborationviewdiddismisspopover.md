@@ -20,7 +20,7 @@ optional func collaborationViewDidDismissPopover(_ collaborationView: SWCollabor
 
 ## Parameters
 
-- `collaborationView`: The related  .
+- `collaborationView`: The related `SWCollaborationView`.
 
 ## See Also
 

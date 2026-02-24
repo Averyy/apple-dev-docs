@@ -21,7 +21,7 @@ func replaceContents(in range: NSTextRange, with attributedString: NSAttributedS
 ## Parameters
 
 - `range`: The range of the content to replace.
-- `attributedString`: An attribued string to replace the content at  .
+- `attributedString`: An attribued string to replace the content at `range`.
 
 ## See Also
 

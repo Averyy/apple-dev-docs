@@ -13,6 +13,10 @@ A Boolean value that indicates whether the bundle supports the retrieval of loca
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [CFBundleDevelopmentRegion](information-property-list/cfbundledevelopmentregion.md)

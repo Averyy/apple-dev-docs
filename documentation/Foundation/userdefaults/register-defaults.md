@@ -30,7 +30,7 @@ Call this method shortly after launch to specify the default values for your app
 
 ## Parameters
 
-- `registrationDictionary`: The dictionary of key-value pairs that contain the   default values for your app’s settings. Build this dictionary programmatically   or load it from a property list resource file in your app’s bundle.
+- `registrationDictionary`: The dictionary of key-value pairs that contain the default values for your app’s settings. Build this dictionary programmatically or load it from a property list resource file in your app’s bundle.
 
 
 ---

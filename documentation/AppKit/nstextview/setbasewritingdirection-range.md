@@ -22,7 +22,7 @@ This method does not include undo support by default. Clients must invoke [`shou
 
 ## Parameters
 
-- `writingDirection`: The new writing direction for the text in  .
+- `writingDirection`: The new writing direction for the text in `range`.
 - `range`: The range of text that will have the new writing direction.
 
 ## See Also

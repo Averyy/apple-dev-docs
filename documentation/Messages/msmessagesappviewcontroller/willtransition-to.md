@@ -26,7 +26,7 @@ The system doesn’t call this method on a view controller that is presenting a 
 
 ## Parameters
 
-- `presentationStyle`: The new presentation style. For a list of possible styles, see  .
+- `presentationStyle`: The new presentation style. For a list of possible styles, see [`MSMessagesAppPresentationStyle`](msmessagesapppresentationstyle.md).
 
 ## See Also
 

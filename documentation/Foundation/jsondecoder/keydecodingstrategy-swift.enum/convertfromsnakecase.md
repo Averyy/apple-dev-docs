@@ -34,6 +34,10 @@ This strategy follows these steps to convert JSON keys to camel-case:
 
 The following examples show the result of applying this strategy:
 
+- **`fee_fi_fo_fum`**: Converts to: `feeFiFoFum`
+- **`feeFiFoFum`**: Converts to: `feeFiFoFum`
+- **`base_uri`**: Converts to: `baseUri`
+
 > **Note**:  The [`JSONDecoder.KeyDecodingStrategy.convertFromSnakeCase`](jsondecoder/keydecodingstrategy-swift.enum/convertfromsnakecase.md) strategy can’t infer capitalization for acronyms or initialisms such as WYSIWYG or URI. The example above shows how the automatic conversion differs from the conversion you might expect: `baseURI`. To decode such a key with the correct capitalization, define a custom `CodingKeys` enumeration, as described in [`Encoding and Decoding Custom Types`](encoding-and-decoding-custom-types.md).
 
 The example below shows how properties on the `OlympicEventResult` structure convert from snake-case when decoded as keys in a JSON object.

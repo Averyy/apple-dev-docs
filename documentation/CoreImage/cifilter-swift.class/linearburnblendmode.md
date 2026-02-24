@@ -29,6 +29,9 @@ This method applies the linear-burn blend mode filter to an image. The effect ca
 
 The linear-burn blend mode filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in an output image that’s much darker with very little visible detail:
 
 ```swift

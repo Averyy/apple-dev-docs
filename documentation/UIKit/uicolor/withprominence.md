@@ -36,7 +36,7 @@ label.textColor = .systemRed.withProminence(.secondary)
 
 ## Parameters
 
-- `prominence`: The prominence to apply to the color. For options, see  .
+- `prominence`: The prominence to apply to the color. For options, see [`UIColor.Prominence`](uicolor/prominence-swift.enum.md).
 
 ## See Also
 

@@ -25,7 +25,7 @@ If the specified component is not in the component system, this method has no ef
 
 ## Parameters
 
-- `component`: An instance of a   subclass in the component system.
+- `component`: An instance of a [`GKComponent`](gkcomponent.md) subclass in the component system.
 
 ## See Also
 

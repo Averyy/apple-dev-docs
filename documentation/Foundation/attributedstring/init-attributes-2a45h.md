@@ -23,7 +23,7 @@ init(_ string: String, attributes: AttributeContainer = .init())
 ## Parameters
 
 - `string`: A string to add attributes to.
-- `attributes`: Attributes to apply to  .
+- `attributes`: Attributes to apply to `string`.
 
 ## See Also
 

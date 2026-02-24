@@ -27,10 +27,10 @@ Call [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRe
 
 ## Parameters
 
-- `allocator`: An allocator for the session.  Pass   to use the default allocator.
-- `fileURL`: Specifies where to put the backing file for the multipass storage object. If you pass   for  , the video toolbox will pick a unique temporary file name.
-- `timeRange`: Gives a hint to the multipass storage about valid time stamps for data. You can pass   if you do not want to provide a time range hint.
-- `options`: If the file did not exist when the storage was created, the file will be deleted when the multipass storage object is finalized, unless you set the   option to   in the   dictionary.
+- `allocator`: An allocator for the session.  Pass `NULL` to use the default allocator.
+- `fileURL`: Specifies where to put the backing file for the multipass storage object. If you pass `NULL` for `fileURL`, the video toolbox will pick a unique temporary file name.
+- `timeRange`: Gives a hint to the multipass storage about valid time stamps for data. You can pass `kCMTimeRangeInvalid` if you do not want to provide a time range hint.
+- `options`: If the file did not exist when the storage was created, the file will be deleted when the multipass storage object is finalized, unless you set the [`kVTMultiPassStorageCreationOption_DoNotDelete`](kvtmultipassstoragecreationoption_donotdelete.md) option to [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) in the `options` dictionary.
 - `multiPassStorageOut`: A pointer to the newly created multipass storage object.
 
 

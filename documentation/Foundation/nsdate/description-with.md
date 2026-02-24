@@ -30,7 +30,7 @@ In OS X v10.4 and earlier, `localeDictionary` is an `NSDictionary` object contai
 
 ## Parameters
 
-- `locale`: In OS X v10.4 and earlier, this parameter was an   object. If you pass in an   object in OS X v10.5,   uses the default user locale—the same as if you passed in 
+- `locale`: An `NSLocale` object. If you pass `nil`, `NSDate` formats the date in the same way as the [`description`](nsdate/description.md) property. In OS X v10.4 and earlier, this parameter was an `NSDictionary` object. If you pass in an `NSDictionary` object in OS X v10.5, `NSDate` uses the default user locale—the same as if you passed in `[NSLocale currentLocale].`
 
 ## See Also
 

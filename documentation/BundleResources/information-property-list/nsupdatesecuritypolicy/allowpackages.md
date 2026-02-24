@@ -8,6 +8,10 @@ An array of Team IDs that the system uses to determine whether an installer pack
 **Availability**:
 - macOS 13.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [NSUpdateSecurityPolicy](information-property-list/nsupdatesecuritypolicy.md)

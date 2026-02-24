@@ -40,8 +40,8 @@ struct SolarSystemApp: App {
 
 ## Parameters
 
-- `selection`: A   to the style that the space uses. You can   change this value to change the scene’s style even after you   present the immersive space. Even though you provide a binding,   the value changes only if you change it.
-- `styles`: The list of styles that the   input can have.   Include any styles that you plan to use during the lifetime   of the scene.
+- `selection`: A [`Binding`](binding.md) to the style that the space uses. You can change this value to change the scene’s style even after you present the immersive space. Even though you provide a binding, the value changes only if you change it.
+- `styles`: The list of styles that the `selection` input can have. Include any styles that you plan to use during the lifetime of the scene.
 
 ## See Also
 

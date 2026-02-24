@@ -33,8 +33,8 @@ If the metdata object doesn’t contain the tag, this function creates it and po
 ## Parameters
 
 - `metadata`: The metadata object that contains the tag.
-- `dictionaryName`: The metadata subdictionary to which the image property belongs. For example, specify   for image properties that are part of the image’s EXIF metadata. This function doesn’t support all dictionaries.
-- `propertyName`: The name of the property. For example, specify  ,  , or  . If the specified property is unsupported by the metadata object, this function logs a warning.
+- `dictionaryName`: The metadata subdictionary to which the image property belongs. For example, specify [`kCGImagePropertyExifDictionary`](kcgimagepropertyexifdictionary.md) for image properties that are part of the image’s EXIF metadata. This function doesn’t support all dictionaries.
+- `propertyName`: The name of the property. For example, specify [`kCGImagePropertyTIFFOrientation`](kcgimagepropertytifforientation.md), [`kCGImagePropertyExifDateTimeOriginal`](kcgimagepropertyexifdatetimeoriginal.md), or [`kCGImagePropertyIPTCKeywords`](kcgimagepropertyiptckeywords.md). If the specified property is unsupported by the metadata object, this function logs a warning.
 - `value`: The new value for the property. The new value’s type must match the XMP type of the metadata tag.
 
 ## See Also

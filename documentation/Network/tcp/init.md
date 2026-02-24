@@ -22,7 +22,7 @@ init(@ProtocolStackBuilder<IP> _ builder: () -> IP)
 
 ## Parameters
 
-- `builder`: The protocol stack below TCP. Defaults to  .
+- `builder`: The protocol stack below TCP. Defaults to `IP()`.
 
 
 ---

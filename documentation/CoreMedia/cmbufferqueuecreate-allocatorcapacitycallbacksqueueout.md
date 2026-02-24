@@ -30,10 +30,10 @@ On return, the caller owns the returned `CMBufferQueue`, and must release it whe
 
 ## Parameters
 
-- `allocator`: The allocator to use for allocating the   object. Pass   to use the default allocator.
+- `allocator`: The allocator to use for allocating the `CMBufferQueue` object. Pass `kCFAllocatorDefault` to use the default allocator.
 - `capacity`: Maximum number of buffers in the queue.  Pass 0 to create a queue that will grow as needed.
 - `callbacks`: Callbacks the queue should use to interrogate the buffer objects.  This struct is copied internally, so the client can pass a pointer to a temporary struct on the stack.
-- `queueOut`: On Output, the newly created  .
+- `queueOut`: On Output, the newly created `CMBufferQueue`.
 
 ## See Also
 

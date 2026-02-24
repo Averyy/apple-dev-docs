@@ -27,9 +27,9 @@ func BNNSGraphGetArgumentIntents(_ graph: bnns_graph_t, _ function: UnsafePointe
 ## Parameters
 
 - `graph`: The compiled graph object.
-- `function`: The function. Specify as   if the graph only contains one function.
-- `argument_intents_count`: The number of elements in the   array.
-- `argument_intents`: On output, an array of pointers to   structures that contain the argument intents.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
+- `argument_intents_count`: The number of elements in the `argument_intents` array.
+- `argument_intents`: On output, an array of pointers to [`BNNSGraphArgumentIntent`](bnnsgraphargumentintent.md) structures that contain the argument intents.
 
 ## See Also
 

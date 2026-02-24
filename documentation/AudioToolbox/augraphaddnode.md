@@ -29,8 +29,8 @@ Creates a node in an audio processing graph, using the supplied `AudioComponentD
 
 ## Parameters
 
-- `inGraph`: The   object that you are adding a node to.
-- `inDescription`: The   object used to find and open the audio unit that you are adding as a new node.
+- `inGraph`: The `AUGraph` object that you are adding a node to.
+- `inDescription`: The `AudioComponentDescription` object used to find and open the audio unit that you are adding as a new node.
 - `outNode`: The newly added node.
 
 ## See Also

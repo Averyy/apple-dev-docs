@@ -22,7 +22,7 @@ A new `CFURL` object. Ownership follows the create rule. See [`The Create Rule`]
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `fsRef`: The file or directory representing the URL.
 
 ## See Also

@@ -27,8 +27,8 @@ A reference to a justified CTLine object if the call was successful; otherwise, 
 ## Parameters
 
 - `line`: The line from which to create a justified line.
-- `justificationFactor`: Full or partial justification. When set to   or greater, full justification is performed. If this parameter is set to less than  , varying degrees of partial justification are performed. If it is set to   or less, no justification is performed.
-- `justificationWidth`: The width to which the resultant line is justified. If   is less than the actual width of the line, then negative justification is performed (that is, glyphs are squeezed together).
+- `justificationFactor`: Full or partial justification. When set to `1.0` or greater, full justification is performed. If this parameter is set to less than `1.0`, varying degrees of partial justification are performed. If it is set to `0` or less, no justification is performed.
+- `justificationWidth`: The width to which the resultant line is justified. If `justificationWidth` is less than the actual width of the line, then negative justification is performed (that is, glyphs are squeezed together).
 
 ## See Also
 

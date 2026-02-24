@@ -16,6 +16,11 @@ The following diagram illustrates the data structure and formula used to calcula
 
 The following parameters are used to calculate a risk for each exposure incident:
 
+- **Transmission Risk**: Transmission risk is intended to reflect the status of infection in the affected user and its effect on risk of transmission. The value is based on the affected user’s symptoms, when symptoms first appeared, level of diagnosis verification, or other determination from the app or a health authority.
+- **Duration**: Cumulative duration of the exposure. The framework measures this value.
+- **Days**: Days since the exposure incident. The framework measures this value.
+- **Attenuation**: The attenuation (`transmission power - RSSI`) can vary during an exposure event. Attenuation values greater than 0 are weighted by the duration at each risk level and averaged for the overall duration. The framework measures and calculates this value.
+
 The [`totalRiskScore`](enexposureinfo/totalriskscore.md) is calculated using the following formula:
 
 ```swift

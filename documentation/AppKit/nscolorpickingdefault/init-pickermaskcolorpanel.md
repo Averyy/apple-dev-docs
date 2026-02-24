@@ -30,7 +30,7 @@ This method is provided to initialize your color picker; however, much of a colo
 
 ## Parameters
 
-- `mask`: A mask indicating the various color picker modes supported by the color panel. This is determined by the argument to the   method  . If it has not been set,   is  . If your color picker supports any additional modes, you should invoke the   method when your application initializes to notify the   class. The standard mode constants are defined in  .
+- `mask`: A mask indicating the various color picker modes supported by the color panel. This is determined by the argument to the `NSColorPanel` method [`setPickerMask(_:)`](nscolorpanel/setpickermask(_:).md). If it has not been set, `panelModes` is `NSColorPanelAllModesMask`. If your color picker supports any additional modes, you should invoke the [`setPickerMask(_:)`](nscolorpanel/setpickermask(_:).md) method when your application initializes to notify the `NSColorPanel` class. The standard mode constants are defined in [`Choosing the Color Pickers in a Color Panel`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/ChoosingColorPickers.html#//apple_ref/doc/uid/20000792).
 - `owningColorPanel`: The color panel than owns the receiver.
 
 ## See Also

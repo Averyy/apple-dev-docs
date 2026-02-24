@@ -25,6 +25,9 @@ Players can use Game Center to challenge other players to beat their scores and 
 
 Game Center supports two kinds of challenges:
 
+- **score challenge ([`GKScoreChallenge`](gkscorechallenge.md))**: When a player challenges another player to beat their leaderboard score. When the player beats the score, Game Center issues a new score challenge to the player who initiated the challenge and continues issuing challenges between the players until a player refuses the challenge.
+- **achievement challenge ([`GKAchievementChallenge`](gkachievementchallenge.md))**: When a player challenges another player to earn an achievement. This challenge ends when the player earns the achievement.
+
 You never subclass the [`GKChallenge`](gkchallenge.md) class directly. However, you can subclass [`GKScoreChallenge`](gkscorechallenge.md) or [`GKAchievementChallenge`](gkachievementchallenge.md) to create specific kinds of challenges.
 
 ##### Enable Challenges

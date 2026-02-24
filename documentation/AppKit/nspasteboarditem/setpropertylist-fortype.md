@@ -20,7 +20,7 @@ func setPropertyList(_ propertyList: Any, forType type: NSPasteboard.PasteboardT
 
 ## Parameters
 
-- `propertyList`: A property list object containing the value for the representation specified by  .
+- `propertyList`: A property list object containing the value for the representation specified by `type`.
 - `type`: A uniform type identifier string.
 
 ## See Also

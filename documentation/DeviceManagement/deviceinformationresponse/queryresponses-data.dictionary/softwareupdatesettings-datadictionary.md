@@ -15,6 +15,12 @@ The response dictionary that contains information about the Software Update pane
 object DeviceInformationResponse.QueryResponses.SoftwareUpdateSettings
 ```
 
+## Properties
+
+- `RecommendationsCadence` (integer): Which software updates to present to the user. - `0`: Allows all updates (the default value).
+- `1`: Allows only older updates.
+- `2`: Allows only newer updates. No effect if the device qualifies for only a single update.
+
 ## See Also
 
 - [object DeviceInformationResponse.QueryResponses.AccessibilitySettings](deviceinformationresponse/queryresponses-data.dictionary/accessibilitysettings-data.dictionary.md)

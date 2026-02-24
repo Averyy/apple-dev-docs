@@ -22,7 +22,7 @@ func dispatchThreads(indirectBuffer: MTLGPUAddress)
 
 ## Parameters
 
-- `indirectBuffer`: GPUAddress of a   instance providing arguments. Lay out the data   in this buffer as described in the    structure. This address requires 4-byte alignment.
+- `indirectBuffer`: GPUAddress of a [`MTLBuffer`](mtlbuffer.md) instance providing arguments. Lay out the data in this buffer as described in the [`MTLDispatchThreadsIndirectArguments`](mtldispatchthreadsindirectarguments.md) structure. This address requires 4-byte alignment.
 
 ## See Also
 

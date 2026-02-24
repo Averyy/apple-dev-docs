@@ -253,11 +253,11 @@ See [`Swift 5 Release Notes for Xcode 10.2`](swift-5-release-notes-for-xcode-10_
 - Swift initializers appear in the coverage report with no name. (47467864)
 - Recording doesn’t work from Clones when Parallelization is on. (43699252)
 - The wrong test host app is chosen for a test target when there are multiple test host targets with the same `PRODUCT_NAME`. (46475115)
-- Profiling tests don’t behave correctly when test parallelization is enabled. (44836817)  Disable parallel testing while profiling by navigating to Product > Scheme > Edit Scheme > Test > Info, selecting Options next to your test target, and disabling “Execute in parallel”.
+- Profiling tests don’t behave correctly when test parallelization is enabled. (44836817) **Workaround:** Disable parallel testing while profiling by navigating to Product > Scheme > Edit Scheme > Test > Info, selecting Options next to your test target, and disabling “Execute in parallel”.
 
 ###### Resolved Issues
 
-- Resolved an issue that caused methods in a Swift source file to be named “Definition at :” in the coverage report. (46432533)
+- Resolved an issue that caused methods in a Swift source file to be named “Definition at **:**” in the coverage report. (46432533)
 - [`XCUIScreen`](https://developer.apple.com/documentation/XCTest/XCUIScreen) now properly implements `isEqual:` and `hash`. (32179407)
 - When clicking the source editor gem for a test method or class that’s present in more than one test target, or for a test method that’s inherited by subclasses, Xcode now shows a menu that allows choosing an individual target or class (or all) to run the selected tests in. (45975871)
 - Resolved an issue that could prevent expanding a file in the coverage report view. (44458167)

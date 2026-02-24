@@ -45,9 +45,9 @@ struct PopoverExample: View {
 
 ## Parameters
 
-- `isPresented`: A binding to a Boolean value that determines whether   to present the popover content that you return from the modifier’s    closure.
-- `attachmentAnchor`: The positioning anchor that defines the   attachment point of the popover. The default is   .
-- `arrowEdge`: The edge of the   that defines the   location of the popover’s arrow in macOS. The default is  .
+- `isPresented`: A binding to a Boolean value that determines whether to present the popover content that you return from the modifier’s `content` closure.
+- `attachmentAnchor`: The positioning anchor that defines the attachment point of the popover. The default is [`bounds`](anchor/source/bounds.md).
+- `arrowEdge`: The edge of the `attachmentAnchor` that defines the location of the popover’s arrow in macOS. The default is [`Edge.top`](edge/top.md).
 - `content`: A closure returning the content of the popover.
 
 

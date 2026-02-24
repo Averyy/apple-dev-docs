@@ -102,6 +102,8 @@ print(String(data: data, encoding: .utf8)!)
 
 ## See Also
 
+- [Using JSON with custom types](using-json-with-custom-types.md)
+  Encode and decode JSON data, regardless of its structure, using Swift’s JSON support.
 - [class JSONDecoder](jsondecoder.md)
   An object that decodes instances of a data type from JSON objects.
 - [class JSONSerialization](jsonserialization.md)

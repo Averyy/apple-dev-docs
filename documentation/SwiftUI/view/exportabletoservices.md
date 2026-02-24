@@ -30,7 +30,7 @@ var body: some View {
 
 ## Parameters
 
-- `payload`: A closure that will be called on request of the items   by the shortcut or service.
+- `payload`: A closure that will be called on request of the items by the shortcut or service.
 
 ## See Also
 

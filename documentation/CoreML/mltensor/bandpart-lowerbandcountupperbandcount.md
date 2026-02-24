@@ -65,8 +65,8 @@ t.bandPart(lowerBandCount: -1, upperBandCount: 0)
 
 ## Parameters
 
-- `lowerBandCount`: The number of diagonals in the lower triangle to keep. If  , keep the entire lower triangle.
-- `upperBandCount`: The number of diagonals in the upper triangle to keep. If  , keep the entire upper triangle.
+- `lowerBandCount`: The number of diagonals in the lower triangle to keep. If `-1`, keep the entire lower triangle.
+- `upperBandCount`: The number of diagonals in the upper triangle to keep. If `-1`, keep the entire upper triangle.
 
 ## See Also
 

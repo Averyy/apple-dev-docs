@@ -35,7 +35,7 @@ When creating a scene using Xcode’s Scene Editor or an external tool, you shou
 ## Parameters
 
 - `url`: The URL to the scene file to load.
-- `options`: A dictionary of options affecting scene loading, or   for default options. For available keys, see Scene Loading Options.
+- `options`: A dictionary of options affecting scene loading, or `nil` for default options. For available keys, see Scene Loading Options.
 
 ## See Also
 

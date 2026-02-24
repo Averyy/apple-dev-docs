@@ -12,6 +12,11 @@ When a user taps a row of a table view, an action of some kind usually follows, 
 
 Use the following properties to configure how row selection behaves in a table view:
 
+- **[`allowsSelection`](uitableview/allowsselection.md)**: Determines whether users can select a row when the table isn’t in editing mode. The default is [`true`](https://developer.apple.com/documentation/Swift/true).
+- **[`allowsMultipleSelection`](uitableview/allowsmultipleselection.md)**: Determines whether users can select more than one row when the table isn’t in editing mode. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
+- **[`allowsSelectionDuringEditing`](uitableview/allowsselectionduringediting.md)**: Determines whether user can select a row while the table view is in editing mode. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
+- **[`allowsMultipleSelectionDuringEditing`](uitableview/allowsmultipleselectionduringediting.md)**: Determines whether users can select a more than one row while in editing mode. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
+
 ##### Respond to Row Selections
 
 When the user taps a row, the table view calls the delegate method [`tableView(_:didSelectRowAt:)`](uitableviewdelegate/tableview(_:didselectrowat:).md). At this point, your app performs the action, such as displaying the details of the selected hiking trail:

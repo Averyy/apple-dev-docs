@@ -44,21 +44,21 @@ For any project with a long-term vision, or for those looking to harness the lat
 
 The core architectural strength of RealityKit comes from its modular design, which you can leverage through Swift packages. Each package encapsulates specific functionality, making the codebase more maintainable, testable, and reusable. This approach aligns perfectly with RealityKit’s ECS architecture:
 
--  are lightweight containers.
--  hold pure data, defining properties or state.
--  encapsulate all the logic, operating on entities with specific components.
+- **Entities** are lightweight containers.
+- **Components** hold pure data, defining properties or state.
+- **Systems** encapsulate all the logic, operating on entities with specific components.
 
 ##### Explore Key Packages in the Sample Project
 
 The sample project demonstrates how to organize RealityKit functionality into cohesive, reusable Swift packages:
 
--  moves entities according to agency goals and constraints, enabling AI-driven behaviors.
--  updates playable entities with transform updates and animation playback.
--  handles and delivers controller input to RealityKit entities.
--  processes keyboard input for RealityKit entities.
--  manages the scene’s active camera and handles repositioning for portals or immersive spaces.
--  contains all Reality Composer Pro content for the game.
--  provides UI components for touchscreen thumbstick control.
+- **AgentComponent** moves entities according to agency goals and constraints, enabling AI-driven behaviors.
+- **CharacterMovement** updates playable entities with transform updates and animation playback.
+- **ControllerInput** handles and delivers controller input to RealityKit entities.
+- **WASDInput** processes keyboard input for RealityKit entities.
+- **WorldCamera** manages the scene’s active camera and handles repositioning for portals or immersive spaces.
+- **PyroPanda** contains all Reality Composer Pro content for the game.
+- **ThumbStickView** provides UI components for touchscreen thumbstick control.
 
 This modular approach enables clean separation of concerns, promotes code reusability, and makes complex systems more understandable and maintainable.
 
@@ -265,15 +265,15 @@ This approach ensures your RealityKit application performs well across all suppo
 
 - [Creating a Spaceship game](creating-a-spaceship-game.md)
   Build an immersive game using RealityKit audio, simulation, and rendering features.
-- [BOT-anist](../visionOS/BOT-anist.md)
+- [BOT-anist](../visionos/bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Rendering a windowed game in stereo](rendering-a-windowed-game-in-stereo.md)
   Bring an iOS or iPadOS game to visionOS and enhance it.
-- [Happy Beam](../visionOS/happybeam.md)
+- [Happy Beam](../visionos/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
-- [Swift Splash](../visionOS/swift-splash.md)
+- [Swift Splash](../visionos/swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
-- [Destination Video](../visionOS/destination-video.md)
+- [Destination Video](../visionos/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 - [Creating a game with scene understanding](creating-a-game-with-scene-understanding.md)
   Create AR games and experiences that interact with real-world objects on LiDAR-equipped iOS devices.

@@ -44,7 +44,7 @@ For design guidance, see [`Windows`](https://developer.apple.com/design/Human-In
 - [protocol WindowToolbarStyle](windowtoolbarstyle.md)
   A specification for the appearance and behavior of a window’s toolbar.
 ### Opening windows
-- [Presenting windows and spaces](../visionOS/presenting-windows-and-spaces.md)
+- [Presenting windows and spaces](../visionos/presenting-windows-and-spaces.md)
   Open and close the scenes that make up your app’s interface.
 - [var supportsMultipleWindows: Bool](environmentvalues/supportsmultiplewindows.md)
   A Boolean value that indicates whether the current platform supports opening multiple windows.
@@ -66,7 +66,7 @@ For design guidance, see [`Windows`](https://developer.apple.com/design/Human-In
 - [struct DismissBehavior](dismissbehavior.md)
   Programmatic window dismissal behaviors.
 ### Sizing a window
-- [Positioning and sizing windows](../visionOS/positioning-and-sizing-windows.md)
+- [Positioning and sizing windows](../visionos/positioning-and-sizing-windows.md)
   Influence the initial geometry of windows that your app presents.
 - [func defaultSize(_:)](scene/defaultsize(_:).md)
   Sets a default size for a window.

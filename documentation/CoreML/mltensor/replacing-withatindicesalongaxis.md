@@ -49,8 +49,8 @@ let y = x.replacing(atIndices: i, with: updates, alongAxis: 1)
 ## Parameters
 
 - `replacement`: The replacement values.
-- `indices`: A 32-bit integer tensor containing indices to scatter values from  . Must have the same   shape as  . Must have the same shape as   except at  .
-- `axis`: The axis to scatter to. Must be in the range  .
+- `indices`: A 32-bit integer tensor containing indices to scatter values from `replacement`. Must have the same shape as `replacement`. Must have the same shape as `self` except at `axis`.
+- `axis`: The axis to scatter to. Must be in the range `[-rank, rank)`.
 
 ## See Also
 

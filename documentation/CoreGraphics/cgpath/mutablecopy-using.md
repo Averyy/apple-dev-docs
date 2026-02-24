@@ -26,7 +26,7 @@ A new, mutable copy of the specified path transformed by the transform parameter
 
 ## Parameters
 
-- `transform`: A pointer to an affine transformation matrix, or   if no transformation is needed. If specified, Core Graphics applies the transformation to all elements of the new path.
+- `transform`: A pointer to an affine transformation matrix, or `NULL` if no transformation is needed. If specified, Core Graphics applies the transformation to all elements of the new path.
 
 ## See Also
 

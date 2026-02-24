@@ -26,7 +26,7 @@ An immutable attributed string with characters and attributes identical to those
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new attributed string. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new attributed string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `aStr`: The attributed string to copy.
 
 ## See Also

@@ -8,6 +8,10 @@ The amount of time, in milliseconds, that the system waits for a response from t
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [NSKeyEquivalent](information-property-list/nsservices/nskeyequivalent.md)

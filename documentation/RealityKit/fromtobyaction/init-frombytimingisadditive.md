@@ -25,7 +25,7 @@ init(from: Value? = nil, by: Value, timing: AnimationTimingFunction = .linear, i
 
 ## Parameters
 
-- `from`: Value set at the start of the animation, or   to use the default source.
+- `from`: Value set at the start of the animation, or `nil` to use the default source.
 - `by`: Value relative to the initial value to determine the final value.
 - `timing`: Controls the progress of the animation.
 - `isAdditive`: Specifies whether you can additively blend the output from the action’s animation.

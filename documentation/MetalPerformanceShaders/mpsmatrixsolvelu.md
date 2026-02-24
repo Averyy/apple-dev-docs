@@ -21,11 +21,11 @@ class MPSMatrixSolveLU
 
 #### Overview
 
-This kernel finds the solution matrix to the system , where:
+This kernel finds the solution matrix to the system *op(A) * X = B*, where:
 
--  is  or 
--  is the resulting matrix of solutions
--  is the array of right hand sides for which the equations are to be solved
+- *op(A)* is *Aᵀ* or *A*
+- *X* is the resulting matrix of solutions
+- *B* is the array of right hand sides for which the equations are to be solved
 
 ## Topics
 

@@ -29,7 +29,7 @@ The method permits the data source to exclude individual rows from being treated
 ## Parameters
 
 - `tableView`: The table-view object requesting this information.
-- `indexPath`: An index path locating a row in  .
+- `indexPath`: An index path locating a row in `tableView`.
 
 ## See Also
 

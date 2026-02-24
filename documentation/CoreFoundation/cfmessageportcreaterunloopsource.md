@@ -34,9 +34,9 @@ This method is not available on iOS 7 and later—it will return `NULL` and log 
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `local`: The message port for which to create a run loop source.
-- `order`: A priority index indicating the order in which run loop sources are processed.   is currently ignored by CFMessagePort object run loop sources. Pass   for this value.
+- `order`: A priority index indicating the order in which run loop sources are processed. `order` is currently ignored by CFMessagePort object run loop sources. Pass `0` for this value.
 
 ## See Also
 

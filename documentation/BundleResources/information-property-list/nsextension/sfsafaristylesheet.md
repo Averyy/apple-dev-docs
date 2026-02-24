@@ -8,6 +8,10 @@ The style sheet for a Safari extension.
 **Availability**:
 - macOS 10.11.5+
 
+
+
+**Type**: dictionary 
+
 ## Topics
 
 ### URL Patterns

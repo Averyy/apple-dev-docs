@@ -25,8 +25,8 @@ The new font descriptor.
 
 ## Parameters
 
-- `fontName`: The value for  .
-- `matrix`: The value for  .
+- `fontName`: The value for [`name`](uifontdescriptor/attributename/name.md).
+- `matrix`: The value for [`matrix`](uifontdescriptor/attributename/matrix.md).
 
 ## See Also
 

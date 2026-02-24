@@ -17,7 +17,7 @@ func removeListener(forProperties properties: [AudioObjectPropertyAddress], disp
 
 ## Parameters
 
-- `properties`: An array of AudioObjectPropertyAddress indicating from which   properties the listener should be removed.
+- `properties`: An array of AudioObjectPropertyAddress indicating from which properties the listener should be removed.
 - `dispatchQueue`: The dispatch queue on which the delegate was  dispatched to.
 
 

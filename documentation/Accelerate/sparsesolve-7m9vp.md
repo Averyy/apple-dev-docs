@@ -22,10 +22,13 @@ func SparseSolve(_ method: SparseIterativeMethod, _ ApplyOperator: @escaping (Bo
 
 ## Parameters
 
-- `method`: (Input) Iterative method specification, eg return value of   SparseConjugateGradient().
-- `ApplyOperator`:    should perform the operation   if   is  ,   or   if   is  .
-- `B`: The right-hand sides   to solve for. If   has dimension  , then    must have dimension  , where   is the number of   right-hand sides to find solutions for.
-- `X`: On entry, initial guess for solution, on return the solution. If    has dimension   and   has dimension  , then   must have   dimension  . If no good initial estimate is available, user   should set the initial guess to be the zero vector.
+- `method`: (Input) Iterative method specification, eg return value of SparseConjugateGradient().
+- `ApplyOperator`: `ApplyOperator(accumulate, trans, X, Y)` should perform the operation `Y = op(A)X` if `accumulate` is `false`, or `Y += op(A)X` if `accumulate` is `true`. - **`accumulate`**: (input) Indicates whether to perform `Y += op(A)X` (if true) or `Y = op(A)X` (if false).
+- **`trans`**: (input) Indicates whether `op(A)` is the application of `A` (`trans=CblasNoTrans`) or `A^T` (`trans=CblasTrans`).
+- **`X`**: The matrix to multiply.
+- **`Y`**: The matrix in which to accumulate or store the result.
+- `B`: The right-hand sides `B` to solve for. If `A` has dimension `m x n`, then `B` must have dimension `m x nrhs`, where `nrhs` is the number of right-hand sides to find solutions for.
+- `X`: On entry, initial guess for solution, on return the solution. If `A` has dimension `m x n,` and `B` has dimension `m x nrhs`, then `X` must have dimension `n x nrhs`. If no good initial estimate is available, user should set the initial guess to be the zero vector.
 - `Preconditioner`: (Input) The preconditioner to use.
 
 ## See Also

@@ -14,6 +14,11 @@ The network details about the peer cache.
 object ContentCachingInformationResponse.StatusResponse.PeersItem.Details.Local-network
 ```
 
+## Properties
+
+- `speed` (integer): The transfer speed, in megabits per second, of the peer content cache’s connection to its local network.
+- `wired` (boolean): If `true`, the peer content cache has a wired connection to its local network. If `false`, it has a wireless connection; for example, Wi-Fi.
+
 ## See Also
 
 - [object ContentCachingInformationResponse.StatusResponse.PeersItem.Details.Capabilities](contentcachinginformationresponse/statusresponse-data.dictionary/peersitem/details-data.dictionary/capabilities-data.dictionary.md)

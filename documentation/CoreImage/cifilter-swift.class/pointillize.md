@@ -29,6 +29,10 @@ This filter applies a pointillize effect to an image. The effect generates an ou
 
 The pointillize filter uses the following properties:
 
+- **`inputImage`**: A [`CIImage`](ciimage.md) containing the input image.
+- **`radius`**: The radius in pixels of the circular points.
+- **center**: Determines the origin of the grid.
+
 The following code applies the pointillize filter with a radius of 40 pixels.
 
 ```swift

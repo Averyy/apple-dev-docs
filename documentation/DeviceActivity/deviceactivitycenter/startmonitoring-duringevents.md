@@ -27,8 +27,8 @@ The system throws an error if the attempt to monitor the device activity failed.
 ## Parameters
 
 - `activity`: The name of the activity.
-- `schedule`: The schedule on which your app extension’s   receives callbacks.
-- `events`: An optional mapping of events keyed by their names. If this parameter is empty, the application extension only   receives callbacks for the start and end times of the schedule’s interval. If the device’s time zone changes   in the middle of a schedule’s interval, any ongoing events include device activity that may have accumulated   outside of the new time zone. In other words, the system uses the time zone of the device at    to calculate device activity for the entirety of the interval.
+- `schedule`: The schedule on which your app extension’s [`DeviceActivityMonitor`](deviceactivitymonitor.md) receives callbacks.
+- `events`: An optional mapping of events keyed by their names. If this parameter is empty, the application extension only receives callbacks for the start and end times of the schedule’s interval. If the device’s time zone changes in the middle of a schedule’s interval, any ongoing events include device activity that may have accumulated outside of the new time zone. In other words, the system uses the time zone of the device at `nextInterval.start` to calculate device activity for the entirety of the interval.
 
 ## See Also
 

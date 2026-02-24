@@ -39,7 +39,7 @@ This method can fetch all contacts without keeping all of them at once in memory
 ## See Also
 
 - [func unifiedMeContactWithKeys(toFetch: [any CNKeyDescriptor]) throws -> CNContact](cncontactstore/unifiedmecontactwithkeys(tofetch:).md)
-  Fetches the unified contact that’s the  card.
+  Fetches the unified contact that’s the *me* card.
 - [func unifiedContact(withIdentifier: String, keysToFetch: [any CNKeyDescriptor]) throws -> CNContact](cncontactstore/unifiedcontact(withidentifier:keystofetch:).md)
   Fetches a unified contact for the specified contact identifier.
 - [func unifiedContacts(matching: NSPredicate, keysToFetch: [any CNKeyDescriptor]) throws -> [CNContact]](cncontactstore/unifiedcontacts(matching:keystofetch:).md)

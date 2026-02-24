@@ -27,7 +27,7 @@ The window group uses the given view as a template to form the content of each w
 
 ## Parameters
 
-- `makeContent`: A closure that creates the content for each   instance of the group.
+- `makeContent`: A closure that creates the content for each instance of the group.
 
 
 ---

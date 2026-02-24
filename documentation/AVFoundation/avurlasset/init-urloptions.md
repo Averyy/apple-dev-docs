@@ -27,7 +27,7 @@ An asset that models the media resource found at `URL`.
 ## Parameters
 
 - `URL`: A URL that references the media for the asset to model.
-- `options`: For supported keys and values, see  .
+- `options`: A dictionary that contains options used to customize the initialization of the asset. For supported keys and values, see [`Initialization options`](initialization-options.md).
 
 ## See Also
 

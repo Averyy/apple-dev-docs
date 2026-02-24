@@ -26,8 +26,8 @@ This method adds the work item to the group before scheduling it on the current 
 
 ## Parameters
 
-- `group`: The dispatch group to associate with the work item. This parameter cannot be  .
-- `workItem`: The work item containing the task to execute. For information on how to create this work item, see  .
+- `group`: The dispatch group to associate with the work item. This parameter cannot be `NULL`.
+- `workItem`: The work item containing the task to execute. For information on how to create this work item, see [`DispatchWorkItem`](dispatchworkitem.md).
 
 ## See Also
 

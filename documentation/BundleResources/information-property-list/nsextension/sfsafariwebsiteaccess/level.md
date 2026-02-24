@@ -8,6 +8,10 @@ The level of a Safari extension’s website access.
 **Availability**:
 - macOS 10.11.5+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [Allowed Domains](information-property-list/nsextension/sfsafariwebsiteaccess/allowed-domains.md)

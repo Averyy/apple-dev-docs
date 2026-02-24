@@ -20,7 +20,7 @@ func updatePredicate(_ predicate: NSPredicate?) async throws
 ## Parameters
 
 - `predicate`: The new predicate to use with the event trigger.
-- `completion`: The block takes the following parameter:
+- `completion`: A block that executes after processing the request. The block takes the following parameter: - **error**: If the request was successful, the value of `error` is `nil`; otherwise, the value provides more information about the request status.
 
 ## See Also
 

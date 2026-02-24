@@ -25,7 +25,7 @@ The global object of `ctx`.
 
 ## Parameters
 
-- `ctx`: The   with the global object you want to get.
+- `ctx`: The [`JSContextRef`](jscontextref.md) with the global object you want to get.
 
 
 ---

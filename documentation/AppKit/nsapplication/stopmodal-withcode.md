@@ -20,7 +20,7 @@ This method should always be paired with a previous invocation of [`runModal(for
 
 ## Parameters
 
-- `returnCode`: The result code you want returned from the   or   method. The meaning of this result code is up to you.
+- `returnCode`: The result code you want returned from the [`runModal(for:)`](nsapplication/runmodal(for:).md) or [`runModalSession(_:)`](nsapplication/runmodalsession(_:).md) method. The meaning of this result code is up to you.
 
 ## See Also
 

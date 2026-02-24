@@ -34,7 +34,7 @@ Any unclosed subpaths in either shape are assumed to be closed. The result of fi
 ## Parameters
 
 - `other`: The shape to union.
-- `eoFill`: Whether to use the even-odd rule for determining   which areas to treat as the interior of the shapes (if true),   or the non-zero rule (if false).
+- `eoFill`: Whether to use the even-odd rule for determining which areas to treat as the interior of the shapes (if true), or the non-zero rule (if false).
 
 ## See Also
 

@@ -23,6 +23,11 @@ object ValidateApplicationsCommand
 - [object ValidateApplicationsCommand.Command](validateapplicationscommand/command-data.dictionary.md)
   The command to force validation of developer and universal provisioning profiles for enterprise apps.
 
+## Properties
+
+- `Command` (ValidateApplicationsCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object ValidateApplicationsResponse](validateapplicationsresponse.md)

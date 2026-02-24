@@ -30,7 +30,7 @@ If the OID already exists in the set, there is no action taken. Otherwise, the f
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `member_oid`: The object identifier to be added.
-- `oid_set`: A pointer to the set to which the new OID should be added. Use   to create a new set.
+- `oid_set`: A pointer to the set to which the new OID should be added. Use [`gss_create_empty_oid_set(_:_:)`](gss_create_empty_oid_set(_:_:).md) to create a new set.
 
 ## See Also
 

@@ -27,7 +27,7 @@ If the attachment exists in the buffer, the system removes it and decrements the
 ## Parameters
 
 - `buffer`: The buffer containing the attachment to remove.
-- `key`: A string that identifies the attachment, which can be of any  . See   and   for predefined values.
+- `key`: A string that identifies the attachment, which can be of any [`CFTypeRef`](https://developer.apple.com/documentation/CoreFoundation/CFTypeRef). See [`CVBuffer Attachment Keys`](cvbuffer-attachment-keys.md) and [`Image Buffer Attachment Keys`](image-buffer-attachment-keys.md) for predefined values.
 
 ## See Also
 

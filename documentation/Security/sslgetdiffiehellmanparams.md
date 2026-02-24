@@ -26,7 +26,7 @@ This function returns the parameter block specified in an earlier call to the [`
 
 - `context`: An SSL session context reference.
 - `dhParams`: On return, points to a buffer containing the Diffie-Hellman parameter block in Open SSL DER format.The returned data is not copied and belongs to the SSL session context reference; therefore, you cannot modify the data and it is released automatically when you dispose of the context.
-- `dhParamsLen`: On return, points to the length of the buffer pointed to by the   parameter.
+- `dhParamsLen`: On return, points to the length of the buffer pointed to by the `dhParams` parameter.
 
 
 ---

@@ -84,12 +84,12 @@ You can use the same workspace memory for a group of images that are different s
 
 ## Parameters
 
-- `srcs`: An array of vImage buffers that reference the source image planes. The number of source buffers is the   parameter you pass to  .
-- `dests`: An array of vImage buffers that reference the destination image planes. The number of destination buffers is the   parameter you pass to  .
-- `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass   to instruct the function to allocate, use, and then free its own temporary buffer.
+- `srcs`: An array of vImage buffers that reference the source image planes. The number of source buffers is the `numSrcChannels` parameter you pass to [`vImageMultidimensionalTable_Create(_:_:_:_:_:_:_:)`](vimagemultidimensionaltable_create(_:_:_:_:_:_:_:).md).
+- `dests`: An array of vImage buffers that reference the destination image planes. The number of destination buffers is the `numDestChannels` parameter you pass to [`vImageMultidimensionalTable_Create(_:_:_:_:_:_:_:)`](vimagemultidimensionaltable_create(_:_:_:_:_:_:_:).md).
+- `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass `nil` to instruct the function to allocate, use, and then free its own temporary buffer.
 - `table`: The multidimensional lookup table.
-- `method`: The interpolation method, either   or  .
-- `flags`: Pass   to specify that the function returns the minimum temporary buffer size for the operation with the specified parameters.
+- `method`: The interpolation method, either [`kvImageFullInterpolation`](kvimagefullinterpolation.md) or [`kvImageHalfInterpolation`](kvimagehalfinterpolation.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md). To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag. Pass [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) to specify that the function returns the minimum temporary buffer size for the operation with the specified parameters.
 
 ## See Also
 

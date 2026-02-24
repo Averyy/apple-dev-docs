@@ -24,6 +24,18 @@ Override this method if you define a custom [`NSCollectionViewLayoutAttributes`]
 
 You can call this method as needed to create new layout objects. A typical usage of this method is as follows:
 
+**Swift**:
+
+```swift
+let attributes = MyCustomLayout.layoutAttributesClass().init()
+```
+
+**Objective-C**:
+
+```objc
+id attributes = [[[MyCustomLayout layoutAttributesClass] alloc] init];
+```
+
 ## See Also
 
 - [func prepare()](nscollectionviewlayout/prepare.md)

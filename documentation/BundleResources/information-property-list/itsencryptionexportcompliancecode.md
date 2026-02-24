@@ -8,6 +8,10 @@ The export compliance code provided by App Store Connect for apps that require i
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Include this key in your app’s [`Information Property List`](information-property-list.md) file if you set the [`ITSAppUsesNonExemptEncryption`](information-property-list/itsappusesnonexemptencryption.md) key’s value to `YES`. Set the value for this key to the code that Apple sends you after successfully reviewing export compliance documentation that you provide through App Store Connect.

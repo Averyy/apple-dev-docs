@@ -30,8 +30,8 @@ func sel_isEqual(_ lhs: Selector, _ rhs: Selector) -> Bool
 
 ## Parameters
 
-- `lhs`: The selector to compare with  .
-- `rhs`: The selector to compare with  .
+- `lhs`: The selector to compare with `rhs`.
+- `rhs`: The selector to compare with `lhs`.
 
 ## See Also
 

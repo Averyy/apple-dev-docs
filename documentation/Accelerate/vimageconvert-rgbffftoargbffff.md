@@ -28,6 +28,13 @@ func vImageConvert_RGBFFFtoARGBFFFF(_: UnsafePointer<vImage_Buffer>, _: UnsafePo
 
 ##### Parameters
 
+- **rgbSrc**: The source vImage buffer that contains the red, green, and blue channels.
+- **aSrc**: The source vImage buffer that contains the alpha channel. Set this value to `nil` to specify that the function sets the destination alpha as the constant destination alpha value.
+- **alpha**: The constant destination alpha value. The function ignores this paramater if the `aSrc` parameter isn’t `nil`.
+- **argbDest**: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- **premultiply**: A Boolean value that specifes whether the function premultiplies the color channels by the alpha channel.
+- **flags**: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+
 If you specify `premultiply` as `true`, the function uses the following calculation to perform the conversion:
 
 ```objc

@@ -28,7 +28,7 @@ Once set, you can’t change the reuse identifier for the returned view object.
 
 ## Parameters
 
-- `reuseIdentifier`: A string used to identify the header or footer view if it’s to be reused by multiple sections. Pass   if the view isn’t to be reused. You should use the same reuse identifier for all header or footer views of the same form.
+- `reuseIdentifier`: A string used to identify the header or footer view if it’s to be reused by multiple sections. Pass `nil` if the view isn’t to be reused. You should use the same reuse identifier for all header or footer views of the same form.
 
 ## See Also
 

@@ -22,7 +22,7 @@ init(identifier: String)
 
 ## Parameters
 
-- `identifier`: A BCP-47 language identifier such as   or  , or an ICU-style identifier such as  .
+- `identifier`: A BCP-47 language identifier such as `en_US` or `en-u-nu-thai-ca-buddhist`, or an ICU-style identifier such as `en@calendar=buddhist;numbers=thai`.
 
 
 ---

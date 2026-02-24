@@ -27,7 +27,7 @@ Points in the positions array are specified in text space, so the [`textMatrix`]
 ## Parameters
 
 - `glyphs`: An array of glyphs.
-- `positions`: An array positions for the glyphs. Each item in this array specifies the position at which to draw the glyph at the corresponding index in the   array.
+- `positions`: An array positions for the glyphs. Each item in this array specifies the position at which to draw the glyph at the corresponding index in the `glyphs` array.
 
 ## See Also
 

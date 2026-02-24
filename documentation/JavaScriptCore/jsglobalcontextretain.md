@@ -25,7 +25,7 @@ A [`JSGlobalContextRef`](jsglobalcontextref.md) that is the same as `ctx`.
 
 ## Parameters
 
-- `ctx`: The   to retain.
+- `ctx`: The [`JSGlobalContextRef`](jsglobalcontextref.md) to retain.
 
 ## See Also
 

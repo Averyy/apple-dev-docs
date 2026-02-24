@@ -22,9 +22,9 @@ convenience init(markdown: Data, options: AttributedString.MarkdownParsingOption
 
 ## Parameters
 
-- `markdown`: The   instance that contains the Markdown formatting.
+- `markdown`: The [`Data`](data.md) instance that contains the Markdown formatting.
 - `options`: Options that affect how the initializer interprets formatting in the Markdown string. This parameter defaults to no options.
-- `baseURL`: The base URL to use when resolving Markdown URLs. The initializer treats URLs as being relative to this URL. If this value is  , the initializer doesn’t resolve URLs. The default is  .
+- `baseURL`: The base URL to use when resolving Markdown URLs. The initializer treats URLs as being relative to this URL. If this value is `nil`, the initializer doesn’t resolve URLs. The default is `nil`.
 
 ## See Also
 

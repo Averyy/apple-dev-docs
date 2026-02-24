@@ -21,7 +21,7 @@ func SCNetworkConnectionSetDispatchQueue(_ connection: SCNetworkConnection, _ qu
 ## Parameters
 
 - `connection`: The network connection to notify.
-- `queue`: The queue on which to run the connection’s callback function. Pass   to disable notifications and release the queue.
+- `queue`: The queue on which to run the connection’s callback function. Pass `NULL` to disable notifications and release the queue.
 
 
 ---

@@ -34,7 +34,7 @@ If you do not provide a delegate when exporting a scene, or if your delegate ret
 
 - `image`: An image attached to the scene being exported.
 - `documentURL`: The URL the scene is being exported to.
-- `originalImageURL`: The URL the image was originally loaded from, or   if the image was not previously loaded from a URL.
+- `originalImageURL`: The URL the image was originally loaded from, or `nil` if the image was not previously loaded from a URL.
 
 
 ---

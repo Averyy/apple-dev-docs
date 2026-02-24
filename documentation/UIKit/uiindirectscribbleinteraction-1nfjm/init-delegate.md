@@ -20,7 +20,7 @@ Creates an indirect Scribble interaction item with the specified delegate.
 
 ## Parameters
 
-- `delegate`: The object that acts as the delegate of this   instance.
+- `delegate`: The object that acts as the delegate of this [`UIIndirectScribbleInteraction`](uiindirectscribbleinteraction-1nfjm.md) instance.
 
 
 ---

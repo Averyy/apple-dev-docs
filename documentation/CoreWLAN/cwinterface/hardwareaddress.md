@@ -16,7 +16,7 @@ func hardwareAddress() -> String?
 
 #### Discussion
 
-The standard format for printing a MAC-48 address <00:00:00:00:00:00> is used to represent the MAC address as a string. Returns  in the case of an error.
+The standard format for printing a MAC-48 address <00:00:00:00:00:00> is used to represent the MAC address as a string. Returns *nil* in the case of an error.
 
 ## See Also
 

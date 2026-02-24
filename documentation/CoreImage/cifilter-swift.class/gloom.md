@@ -33,6 +33,10 @@ This method applies the gloom filter to an image. The effect reduces the highlig
 
 The gloom filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **radius**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **intensity**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in a darker image with a slight blur:
 
 ```swift

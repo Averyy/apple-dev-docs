@@ -29,6 +29,9 @@ This method applies the affine clamp filter to an image. This effect performs si
 
 The affine clamp filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`transform`**: A [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) to constrain to the image.
+
 The following code creates a filter that produces a cropped image with colored edges to fill the rest of the image:
 
 ```swift

@@ -29,7 +29,7 @@ An exception is thrown if `row` falls outside of the number of rows in the table
 ## Parameters
 
 - `row`: The row index.
-- `makeIfNecessary`:   if a view is required,   if you want to update properties on a view, if one is available.
+- `makeIfNecessary`: [`true`](https://developer.apple.com/documentation/Swift/true) if a view is required, [`false`](https://developer.apple.com/documentation/Swift/false) if you want to update properties on a view, if one is available.
 
 ## See Also
 

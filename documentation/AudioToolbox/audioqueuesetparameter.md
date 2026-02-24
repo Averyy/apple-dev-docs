@@ -30,7 +30,7 @@ Use this function to change the settings for a playback audio queue directly. Ch
 ## Parameters
 
 - `inAQ`: The playback audio queue that you want to set a parameter value on.
-- `inParamID`: The ID of the parameter you want to set. In OS X v10.5, audio queues have one parameter available:  , which controls playback gain.  See  .
+- `inParamID`: The ID of the parameter you want to set. In OS X v10.5, audio queues have one parameter available: `kAudioQueueParam_Volume`, which controls playback gain.  See [`Audio Queue Parameters`](1552626-audio-queue-parameters.md).
 - `inValue`: The parameter value to set.
 
 ## See Also

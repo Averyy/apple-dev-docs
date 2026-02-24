@@ -21,7 +21,7 @@ This property does not apply to aggregate devices, just real, physical devices.
 
 ## Parameters
 
-- `muted`: A Bool where true indicates that the current process’s audio will be   zeroed out by the system.
+- `muted`: A Bool where true indicates that the current process’s audio will be zeroed out by the system.
 
 
 ---

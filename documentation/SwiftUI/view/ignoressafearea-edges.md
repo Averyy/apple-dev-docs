@@ -37,8 +37,8 @@ For examples of how to use this modifier, see [`Adding a background to your view
 
 ## Parameters
 
-- `regions`: The regions to expand the view’s safe area into. The   modifier expands into all safe area region types by default.
-- `edges`: The set of edges to expand. Any edges that you   don’t include in this set remain unchanged. The set includes all   edges by default.
+- `regions`: The regions to expand the view’s safe area into. The modifier expands into all safe area region types by default.
+- `edges`: The set of edges to expand. Any edges that you don’t include in this set remain unchanged. The set includes all edges by default.
 
 ## See Also
 

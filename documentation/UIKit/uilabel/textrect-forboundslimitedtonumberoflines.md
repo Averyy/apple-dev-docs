@@ -31,7 +31,7 @@ The system may call this method if there was a prior call to the [`sizeToFit()`]
 ## Parameters
 
 - `bounds`: The bounding rectangle of the label.
-- `numberOfLines`: The maximum number of lines to use for the label. The value   indicates the label has no maximum number of lines and the rectangle should encompass all of the text.
+- `numberOfLines`: The maximum number of lines to use for the label. The value `0` indicates the label has no maximum number of lines and the rectangle should encompass all of the text.
 
 ## See Also
 

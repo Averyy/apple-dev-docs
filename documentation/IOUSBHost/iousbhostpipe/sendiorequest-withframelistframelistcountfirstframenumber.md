@@ -21,10 +21,10 @@ This method issues synchronous isochronous requests. The caller allocates and in
 
 ## Parameters
 
-- `data`: An   object defining the memory to use for the transfer.
-- `frameList`: A pointer to the first element in an   array. The array must contain at least   elements.
-- `frameListCount`: The number of elements in  .
-- `firstFrameNumber`: The frame number the request begins on. Query the current frame number with  . If  , the transfer starts on the next available frame (XHCI only).
+- `data`: An [`NSMutableData`](https://developer.apple.com/documentation/Foundation/NSMutableData) object defining the memory to use for the transfer.
+- `frameList`: A pointer to the first element in an [`IOUSBHostIsochronousFrame`](iousbhostisochronousframe.md) array. The array must contain at least `frameListCount` elements.
+- `frameListCount`: The number of elements in `frameList`.
+- `firstFrameNumber`: The frame number the request begins on. Query the current frame number with [`frameNumberWithTime:`](iousbhostobject/framenumberwithtime:.md). If `0`, the transfer starts on the next available frame (XHCI only).
 
 ## See Also
 

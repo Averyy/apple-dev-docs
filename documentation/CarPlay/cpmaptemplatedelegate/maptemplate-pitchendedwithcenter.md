@@ -18,8 +18,8 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, pitchEndedWithCenter cen
 
 ## Parameters
 
-- `mapTemplate`: The   the gesture applies to.
-- `center`: A   that indicates the center between two fingers performing the pitch gesture.
+- `mapTemplate`: The [`CPMapTemplate`](cpmaptemplate.md) the gesture applies to.
+- `center`: A `CGPoint` that indicates the center between two fingers performing the pitch gesture.
 
 
 ---

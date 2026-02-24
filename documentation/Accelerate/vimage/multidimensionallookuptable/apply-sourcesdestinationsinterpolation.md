@@ -22,8 +22,8 @@ func apply(sources: [vImage.PixelBuffer<vImage.PlanarF>], destinations: [vImage.
 
 ## Parameters
 
-- `sources`: An array that contains     buffers.
-- `destinations`: An array that contains     buffers.
+- `sources`: An array that contains [`sourceChannelCount`](vimage/multidimensionallookuptable/sourcechannelcount.md) [`vImage.PlanarF`](vimage/planarf.md) buffers.
+- `destinations`: An array that contains [`destinationChannelCount`](vimage/multidimensionallookuptable/destinationchannelcount.md) [`vImage.PlanarF`](vimage/planarf.md) buffers.
 - `interpolation`: An enumeration that specifies how the operation computes output color values that don’t have an explicit entry in the table.
 
 ## See Also

@@ -27,9 +27,9 @@ Connections that use this method are either one-to-one or one-to-many.
 ## Parameters
 
 - `sourceNode`: The source node.
-- `destNodes`: An array of   objects that specify destination nodes and busses.
+- `destNodes`: An array of [`AVAudioConnectionPoint`](avaudioconnectionpoint.md) objects that specify destination nodes and busses.
 - `sourceBus`: The output bus on the source node.
-- `format`: If not  , the framework uses this value for the format of the source audio node’s output bus. In all cases, the framework matches the format of the destination audio node’s input bus to the source audio node’s output bus.
+- `format`: If not `NULL`, the framework uses this value for the format of the source audio node’s output bus. In all cases, the framework matches the format of the destination audio node’s input bus to the source audio node’s output bus.
 
 ## See Also
 

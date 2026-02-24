@@ -23,9 +23,11 @@ class MPSMatrixMultiplication
 
 An [`MPSMatrixMultiplication`](mpsmatrixmultiplication.md) object computes the following operation:
 
-Where , _,_ and  are matrices represented by [`MPSMatrix`](mpsmatrix.md) objects, and  and  are scalar values of the same data type as the values of .  and  may each have an optional transposition operation applied.
+*C = alpha * op(A) * op(B) + beta * C*
 
-Matrices , , and  are also referred to as the left input matrix, the right input matrix, and the result matrix respectively.
+Where *A*, *B*_,_ and *C* are matrices represented by [`MPSMatrix`](mpsmatrix.md) objects, and *alpha* and *beta* are scalar values of the same data type as the values of *C*. *A* and *B* may each have an optional transposition operation applied.
+
+Matrices *A*, *B*, and *C* are also referred to as the left input matrix, the right input matrix, and the result matrix respectively.
 
 ## Topics
 

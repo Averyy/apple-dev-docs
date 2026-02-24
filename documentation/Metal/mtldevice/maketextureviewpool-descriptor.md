@@ -26,7 +26,7 @@ A [`MTLTextureViewPool`](mtltextureviewpool.md) instance, or `nil` if the functi
 
 ## Parameters
 
-- `descriptor`: A   instance that configures the    instance.
+- `descriptor`: A [`MTLResourceViewPoolDescriptor`](mtlresourceviewpooldescriptor.md) instance that configures the [`MTLTextureViewPool`](mtltextureviewpool.md) instance.
 
 
 ---

@@ -30,9 +30,9 @@ This method is the designated initializer for the NSRulerMarker class.
 
 ## Parameters
 
-- `ruler`: The ruler view with which to associate the ruler marker. This method raises an   if    is  .
+- `ruler`: The ruler view with which to associate the ruler marker. This method raises an `NSInvalidArgumentException` if `aRulerView`  is `nil`.
 - `location`: The x or y position of the marker in the client view’s coordinate system, depending on whether the ruler view is horizontal or vertical.
-- `image`: The image displayed at the marker location. This method raises an   if   is  .
+- `image`: The image displayed at the marker location. This method raises an `NSInvalidArgumentException` if `anImage` is `nil`.
 - `imageOrigin`: The point within the image positioned at the marker location, expressed in pixels relative to the lower-left corner of the image.
 
 ## See Also

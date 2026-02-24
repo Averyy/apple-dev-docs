@@ -24,6 +24,12 @@ object AppLock.App
 - [object AppLock.App.UserEnabledOptions](applock/app-data.dictionary/userenabledoptions-data.dictionary.md)
   The dictionary of user-editable options to set for the app.
 
+## Properties
+
+- `Identifier` (string) *(required)*: The app’s bundle identifier.
+- `Options` (AppLock.App.Options): A dictionary of options that the user can’t change.
+- `UserEnabledOptions` (AppLock.App.UserEnabledOptions): A dictionary of user-editable options.
+
 
 ---
 

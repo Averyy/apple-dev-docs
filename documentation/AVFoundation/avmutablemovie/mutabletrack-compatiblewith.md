@@ -29,7 +29,7 @@ Keep the number of tracks in a movie to a minimum, corresponding to the number o
 
 ## Parameters
 
-- `track`: The   containing the desired time range.
+- `track`: The [`AVAssetTrack`](avassettrack.md) containing the desired time range.
 
 ## See Also
 

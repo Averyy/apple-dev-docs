@@ -50,7 +50,7 @@ final class Person {
 
 ## Parameters
 
-- `constraints`: Arrays of model key-paths that form the unique constraints   to apply to the enclosing model.
+- `constraints`: Arrays of model key-paths that form the unique constraints to apply to the enclosing model.
 
 ## See Also
 

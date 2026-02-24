@@ -33,7 +33,7 @@ This callback gets invoked by an audio file object when it needs to set audio fi
 
 ## Parameters
 
-- `inClientData`: A pointer to the client data as set in the   parameter to the   or   functions.
+- `inClientData`: A pointer to the client data as set in the `inClientData` parameter to the [`AudioFileOpenWithCallbacks(_:_:_:_:_:_:_:)`](audiofileopenwithcallbacks(_:_:_:_:_:_:_:).md) or [`AudioFileInitializeWithCallbacks(_:_:_:_:_:_:_:_:_:)`](audiofileinitializewithcallbacks(_:_:_:_:_:_:_:_:_:).md) functions.
 
 ## See Also
 

@@ -22,8 +22,8 @@ func replacePointer(at index: Int, withPointer item: UnsafeMutableRawPointer?)
 
 ## Parameters
 
-- `index`: The index of an element in the receiver. This value must be less than the   of the receiver.
-- `item`: The item with which to replace the element at  . This value may be  .
+- `index`: The index of an element in the receiver. This value must be less than the [`count`](nspointerarray/count.md) of the receiver.
+- `item`: The item with which to replace the element at `index`. This value may be `NULL`.
 
 ## See Also
 

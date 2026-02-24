@@ -13,8 +13,8 @@ func XCTAssertNotEqual<T>(_ expression1: @autoclosure () throws -> T, _ expressi
 
 ## Parameters
 
-- `expression1`: An expression of type  , where   is  .
-- `expression2`: A second expression of type  , where   is  .
+- `expression1`: An expression of type `T`, where `T` is `Equatable`.
+- `expression2`: A second expression of type `T`, where `T` is `Equatable`.
 - `message`: An optional description of a failure.
 - `file`: The file where the failure occurs. The default is the filename of the test case where you call this function.
 - `line`: The line number where the failure occurs. The default is the line number where you call this function.

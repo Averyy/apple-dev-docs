@@ -22,7 +22,7 @@ The button text is drawn using the font and styling information from your storyb
 
 ## Parameters
 
-- `title`: The text to display in the button. Specifying   clears the current text from the button.
+- `title`: The text to display in the button. Specifying `nil` clears the current text from the button.
 
 ## See Also
 

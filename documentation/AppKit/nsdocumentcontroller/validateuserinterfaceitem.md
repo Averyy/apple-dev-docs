@@ -25,7 +25,7 @@ Subclasses can override this method to perform additional validations. Subclasse
 
 ## Parameters
 
-- `item`: The user interface item to validate. You can send   the   and   messages.
+- `item`: The user interface item to validate. You can send `anItem` the [`action`](nsvalidateduserinterfaceitem/action.md) and [`tag`](nsvalidateduserinterfaceitem/tag.md) messages.
 
 
 ---

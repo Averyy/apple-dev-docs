@@ -26,7 +26,7 @@ class func remove(_ domain: NSFileProviderDomain) async throws
 ## Parameters
 
 - `domain`: The domain to remove.
-- `completionHandler`: A block that the system calls after removing the domain. It takes the following parameters:
+- `completionHandler`: A block that the system calls after removing the domain. It takes the following parameters: - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

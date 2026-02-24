@@ -31,8 +31,8 @@ The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property w
 
 ## Parameters
 
-- `texture`:  -backed texture data.
-- `target`: A value denoting the type of destination.  Use   if your texture dimensions are a power of two, or   otherwise.
+- `texture`: `GLTexture`-backed texture data.
+- `target`: A value denoting the type of destination.  Use `GL_TEXTURE_2D` if your texture dimensions are a power of two, or `GL_TEXTURE_RECTANGLE_EXT` otherwise.
 - `width`: Width of the texture in texels.
 - `height`: Height of the texture in texels.
 

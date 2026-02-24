@@ -37,8 +37,8 @@ If you specify nonzero edge insets in the `capInsets` parameter, those values de
 ## Parameters
 
 - `rect`: The portion of the view that you want to capture. The rectangle must be in the bounds coordinate space of the current view.
-- `afterUpdates`: A Boolean value that specifies whether the snapshot should be taken after recent changes have been incorporated. Pass the value   if you want to capture the screen in its current state, which might not include recent changes.
-- `capInsets`: The edge insets that define the stretchable portion of the returned view’s content. You can specify   if you do not want the contents of the returned view to have a stretchable area.
+- `afterUpdates`: A Boolean value that specifies whether the snapshot should be taken after recent changes have been incorporated. Pass the value [`false`](https://developer.apple.com/documentation/Swift/false) if you want to capture the screen in its current state, which might not include recent changes.
+- `capInsets`: The edge insets that define the stretchable portion of the returned view’s content. You can specify [`zero`](uiedgeinsets/zero.md) if you do not want the contents of the returned view to have a stretchable area.
 
 ## See Also
 

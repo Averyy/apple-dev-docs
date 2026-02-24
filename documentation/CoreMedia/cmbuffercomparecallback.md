@@ -26,6 +26,10 @@ You can use a `CFComparatorFunction` as a callback.
 
 ##### Callback Parameters
 
+- **buf1**: The first buffer being compared.
+- **buf2**: The second buffer being compared.
+- **refcon**: The contextual data from the client (which may be `NULL`).
+
 ## See Also
 
 - [var compare: CMBufferCompareCallback?](cmbuffercallbacks/compare.md)

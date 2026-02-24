@@ -20,6 +20,10 @@ object ContentCachingInformationResponse.StatusResponse.AlertsForPeerFilterRange
 - [object ContentCachingInformationResponse.StatusResponse.AlertsForPeerFilterRanges.ANY index](contentcachinginformationresponse/statusresponse-data.dictionary/alertsforpeerfilterranges-data.dictionary/any-index-data.dictionary.md)
   A dictionary that describes the alerts for the peer filter ranges. The key name is the index into the `PeerFilterRanges` array in the installed `com.apple.AssetCache.managed` payload.
 
+## Properties
+
+- `ANY index` (ContentCachingInformationResponse.StatusResponse.AlertsForPeerFilterRanges.ANY index) *(required)*: A dictionary that describes the alerts for the peer filter ranges. The key name is the index into the `PeerFilterRanges` array in the installed `com.apple.AssetCache.managed` payload.
+
 ## See Also
 
 - [object ContentCachingInformationResponse.StatusResponse.AlertsItem](contentcachinginformationresponse/statusresponse-data.dictionary/alertsitem.md)

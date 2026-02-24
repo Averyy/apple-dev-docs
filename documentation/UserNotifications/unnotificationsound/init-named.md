@@ -26,15 +26,15 @@ A sound object representing the custom sound.
 
 This method searches for sound files in the following locations, in order:
 
-1. The `/Library/Sounds` directory, where  is the app’s container directory.
-2. The `/Library/Sounds` directory, where  is one of the app’s shared group container directories. For information about how to configure group containers for your app, see [`Configure app groups`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev8dd3880fe).
+1. The *<app_container>*`/Library/Sounds` directory, where *<app_container>* is the app’s container directory.
+2. The *<group_container>*`/Library/Sounds` directory, where *<group_container>* is one of the app’s shared group container directories. For information about how to configure group containers for your app, see [`Configure app groups`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev8dd3880fe).
 3. The main bundle of the current executable.
 
 The method chooses the first file it finds with the specified name.
 
 ## Parameters
 
-- `name`: The name of the sound file to play. This parameter must not be  .
+- `name`: The name of the sound file to play. This parameter must not be `nil`.
 
 ## See Also
 

@@ -26,7 +26,7 @@ The new shape.
 
 ## Parameters
 
-- `mesh`: A mesh with the shape of the convex polyhedron. Use meshes with   a small number of vertices to avoid hurting performance.
+- `mesh`: A mesh with the shape of the convex polyhedron. Use meshes with a small number of vertices to avoid hurting performance.
 
 
 ---

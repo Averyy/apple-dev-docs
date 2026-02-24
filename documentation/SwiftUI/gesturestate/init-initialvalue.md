@@ -22,7 +22,7 @@ init(initialValue: Value)
 
 ## Parameters
 
-- `initialValue`: An initial value for the gesture state   property.
+- `initialValue`: An initial value for the gesture state property.
 
 ## See Also
 

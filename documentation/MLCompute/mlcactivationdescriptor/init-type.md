@@ -22,9 +22,15 @@ convenience init?(type activationType: MLCActivationType)
 
 Use this initializer to create one of the following activation descriptors:
 
+- **Absolute**: `f(x) = fabs(x)`
+
 Activation type: [`MLCActivationType.absolute`](mlcactivationtype/absolute.md)
 
+- **GELU**: `f(x) = x * CDF(x)`
+
 Activation type: [`MLCActivationType.gelu`](mlcactivationtype/gelu.md)
+
+- **Hard Swish**: `f(x) = 0, if x <= -3`
 
 `f(x) = x, if x >= +3`
 
@@ -32,11 +38,19 @@ Activation type: [`MLCActivationType.gelu`](mlcactivationtype/gelu.md)
 
 Activation type: [`MLCActivationType.hardSwish`](mlcactivationtype/hardswish.md)
 
+- **Identity**: `f(x) = x`
+
 Activation type: [`MLCActivationType.none`](mlcactivationtype/none.md)
+
+- **LogSigmoid**: `f(x) = log(1 / (1 + exp(-x)))`
 
 Activation type: [`MLCActivationType.logSigmoid`](mlcactivationtype/logsigmoid.md)
 
+- **Parametric Soft Sign**: `f(x) = x / (1 + abs(x))`
+
 Activation type: [`MLCActivationType.softSign`](mlcactivationtype/softsign.md)
+
+- **SELU**: `f(x) = scale * (max(0, x) + min(0, α * (exp(x)−1)))`, where:
 
 `α = 1.6732632423543772848170429916717`
 
@@ -44,7 +58,11 @@ Activation type: [`MLCActivationType.softSign`](mlcactivationtype/softsign.md)
 
 Activation type: [`MLCActivationType.selu`](mlcactivationtype/selu.md)
 
+- **Sigmoid**: `f(x) = 1 / (1 + e⁻ˣ)`
+
 Activation type: [`MLCActivationType.sigmoid`](mlcactivationtype/sigmoid.md)
+
+- **TanhShrink**: `f(x) = x - tanh(x)`
 
 Activation type: [`MLCActivationType.tanhShrink`](mlcactivationtype/tanhshrink.md)
 

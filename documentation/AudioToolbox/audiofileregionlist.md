@@ -34,7 +34,7 @@ This structure is used by the [`kAudioFilePropertyRegionList`](kaudiofilepropert
 - [var mRegions: AudioFileRegion](audiofileregionlist/mregions.md)
   A variable length array of audio file regions.
 - [var mSMPTE_TimeType: UInt32](audiofileregionlist/msmpte_timetype.md)
-  The SMPTE timing scheme used in the file. See Core Audio’s `CAFFile.h` header file for the values used here. For more information, see .
+  The SMPTE timing scheme used in the file. See Core Audio’s `CAFFile.h` header file for the values used here. For more information, see *Core Audio Overview*.
 
 ## Relationships
 

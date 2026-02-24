@@ -22,9 +22,9 @@ static var exr: UTType { get }
 
 #### Discussion
 
- com.ilm.openexr-image
+**UTI:** com.ilm.openexr-image
 
- public.image
+**conforms to:** public.image
 
 
 ---

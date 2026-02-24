@@ -33,6 +33,15 @@ This method applies the copy machine transition filter to an image. The effect t
 
 The copy machine transition filter uses the following properties:
 
+- **`inputImage`**: The starting image with the type [`CIImage`](ciimage.md).
+- **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`angle`**: A `float` representing the angle of the copier light, in radians as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`width`**: A `float` representing the width of the effect as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) representing the area of the copy machine effect.
+- **`color`**: A [`CIColor`](cicolor.md) representing the color of the light.
+- **`opacity`**: A `float` representing the transparency of the copier light as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that produces a light bar that glides across the input image revealing the target image:
 
 ```swift

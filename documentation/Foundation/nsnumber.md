@@ -34,7 +34,7 @@ class NSNumber
 
 `NSNumber` provides readonly properties that return the object’s stored value converted to a particular Boolean, integer, unsigned integer, or floating point C scalar type. Because numeric types have different storage capabilities, attempting to initialize with a value of one type and access the value of another type may produce an erroneous result—for example, initializing with a `double` value exceeding `FLT_MAX` and accessing its [`floatValue`](nsnumber/floatvalue.md), or initializing with an negative integer value and accessing its [`uintValue`](nsnumber/uintvalue.md). In some cases, attempting to initialize with a value of a type and access the value of another type may result in loss of precision—for example, initializing with a `double` value with many significant digits and accessing its [`floatValue`](nsnumber/floatvalue.md), or initializing with a large integer value and accessing its [`int8Value`](nsnumber/int8value.md).
 
-An `NSNumber` object initialized with a value of a particular type accessing the converted value of a different  of type, such as `unsigned int` and `float`, will convert its stored value to that converted type in the following ways:
+An `NSNumber` object initialized with a value of a particular type accessing the converted value of a different *kind* of type, such as `unsigned int` and `float`, will convert its stored value to that converted type in the following ways:
 
 | `Value` | [`boolValue`](nsnumber/boolvalue.md) | [`intValue`](nsnumber/intvalue-95zzp.md) | [`uintValue`](nsnumber/uintvalue.md) | [`floatValue`](nsnumber/floatvalue.md) |
 | --- | --- | --- | --- | --- |
@@ -45,7 +45,7 @@ An `NSNumber` object initialized with a value of a particular type accessing the
 | --- | --- | --- | --- | --- |
 | `0` | [`false`](https://developer.apple.com/documentation/Swift/false) | `0` | `0` | `0.0` |
 | `1` | [`true`](https://developer.apple.com/documentation/Swift/true) | `1` | `1` | `1.0` |
-| `-1` | [`true`](https://developer.apple.com/documentation/Swift/true) | `-1` |  | `-1.0` |
+| `-1` | [`true`](https://developer.apple.com/documentation/Swift/true) | `-1` | *invalid, erroneous result* | `-1.0` |
 
 | `Value` | [`boolValue`](nsnumber/boolvalue.md) | [`intValue`](nsnumber/intvalue-95zzp.md) | [`uintValue`](nsnumber/uintvalue.md) | [`floatValue`](nsnumber/floatvalue.md) |
 | --- | --- | --- | --- | --- |
@@ -56,7 +56,7 @@ An `NSNumber` object initialized with a value of a particular type accessing the
 | --- | --- | --- | --- | --- |
 | `0.0` | [`false`](https://developer.apple.com/documentation/Swift/false) | `0` | `0` | `0.0` |
 | `1.0` | [`true`](https://developer.apple.com/documentation/Swift/true) | `1` | `1` | `1.0` |
-| `-1.0` | [`true`](https://developer.apple.com/documentation/Swift/true) | `-1` |  | `-1.0` |
+| `-1.0` | [`true`](https://developer.apple.com/documentation/Swift/true) | `-1` | *invalid, erroneous result* | `-1.0` |
 
 ##### Subclassing Notes
 

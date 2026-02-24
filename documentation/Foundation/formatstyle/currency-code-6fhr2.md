@@ -38,7 +38,7 @@ let currencyNums = nums.map { $0.formatted(
 
 ## Parameters
 
-- `code`: The currency code to use, such as   or  . See ISO-4217 for a list of valid codes.
+- `code`: The currency code to use, such as `EUR` or `JPY`. See ISO-4217 for a list of valid codes.
 
 ## See Also
 

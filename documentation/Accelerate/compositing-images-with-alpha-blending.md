@@ -6,7 +6,7 @@ Combine two images by using alpha blending to create a single output.
 
 #### Overview
 
-vImage provides a suite of functions for compositing two source images into one output.  uses the alpha value of each pixel in the top layer to determine the visibility of the bottom layer.
+vImage provides a suite of functions for compositing two source images into one output. *Alpha blending* uses the alpha value of each pixel in the top layer to determine the visibility of the bottom layer.
 
 The figure below shows the alpha composite of an image of a building with a transparent background over an image of a texture. The transparent part of the building image has an alpha of zero, indicating the background layer is fully visible.
 

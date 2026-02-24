@@ -16,6 +16,11 @@ The declaration to configure the input modes in the calculator app.
 object MathSettingsCalculator_InputModesObject
 ```
 
+## Properties
+
+- `RPN` (boolean) *(required)*: Configures whether RPN input is enabled.
+- `UnitConversion` (boolean) *(required)*: Configures whether unit conversions are enabled.
+
 ## See Also
 
 - [object MathSettingsCalculator_BasicModeObject](mathsettingscalculator_basicmodeobject.md)

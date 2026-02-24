@@ -28,7 +28,7 @@ This method can return a set of elements that don’t fill the entire range if t
 
 ## Parameters
 
-- `range`: An   that describes the range of text to process.
+- `range`: An [`NSTextRange`](nstextrange.md) that describes the range of text to process.
 
 
 ---

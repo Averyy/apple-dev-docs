@@ -24,7 +24,7 @@ init(id: String, placement: ToolbarItemPlacement = .automatic, @ViewBuilder cont
 ## Parameters
 
 - `id`: A unique identifier for this item.
-- `placement`: Which section of the toolbar   the item should be placed in.
+- `placement`: Which section of the toolbar the item should be placed in.
 - `content`: The content of the item.
 
 ## See Also

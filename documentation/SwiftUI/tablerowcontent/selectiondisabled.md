@@ -54,7 +54,7 @@ Picker("Flavor", selection: $selectedFlavor) {
 
 ## Parameters
 
-- `isDisabled`: A Boolean value that determines whether users   can select this row.
+- `isDisabled`: A Boolean value that determines whether users can select this row.
 
 
 ---

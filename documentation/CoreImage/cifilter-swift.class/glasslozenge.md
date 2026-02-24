@@ -29,6 +29,12 @@ This method applies the glass lozenge filter to an image. This effect distorts a
 
 The absolute threshold filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`radius`**: A `float` representing the radius of the lozenge distortion as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`refraction`**: A `float` representing the refraction of the glass as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`inputPoint1`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the x and y positions that define the center of the circle at the first end of the lozenge.
+- **`inputPoint2`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the x and y positions that define the center of the circle at the second end of the lozenge.
+
 The following code creates a filter that results in a large glass lozenge distorting the image:
 
 ```swift

@@ -28,7 +28,7 @@ After creating the search controller, always assign an object to the [`searchRes
 
 ## Parameters
 
-- `searchResultsController`: The view controller that displays the search results. Specify   if you want to display the search results in the same view controller that displays your searchable content. For apps running in tvOS, provide a results controller because tvOS doesn’t accept   as a valid argument.
+- `searchResultsController`: The view controller that displays the search results. Specify `nil` if you want to display the search results in the same view controller that displays your searchable content. For apps running in tvOS, provide a results controller because tvOS doesn’t accept `nil` as a valid argument.
 
 ## See Also
 

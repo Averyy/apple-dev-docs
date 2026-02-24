@@ -23,7 +23,7 @@ An instance of `UIMarkupTextPrintFormatter` or `nil` if the object could not be 
 
 ## Parameters
 
-- `markupText`: A string of HTML markup text or   if you want to add the markup text later.
+- `markupText`: A string of HTML markup text or `nil` if you want to add the markup text later.
 
 ## See Also
 

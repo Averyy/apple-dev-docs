@@ -25,7 +25,7 @@ You need to call this method on the virtual machine’s queue.
 ## Parameters
 
 - `device`: The USB device to detach.
-- `completionHandler`: A block the framework calls after the device detaches, or on an error. The error parameter that passes to the block is   if detaching the device is successful. The framework calls the block on a VM’s queue.
+- `completionHandler`: A block the framework calls after the device detaches, or on an error. The error parameter that passes to the block is `nil` if detaching the device is successful. The framework calls the block on a VM’s queue.
 
 ## See Also
 

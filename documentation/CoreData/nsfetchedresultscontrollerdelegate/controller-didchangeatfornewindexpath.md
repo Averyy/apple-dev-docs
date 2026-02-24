@@ -44,9 +44,9 @@ This method may be invoked many times during an update event (for example, if yo
 
 - `controller`: The fetched results controller that sent the message.
 - `anObject`: The object in controller’s fetched results that changed.
-- `indexPath`: The index path of the changed object (this value is   for insertions).
-- `type`: The type of change. For valid values see  .
-- `newIndexPath`: The destination path for the object for insertions or moves (this value is   for a deletion).
+- `indexPath`: The index path of the changed object (this value is `nil` for insertions).
+- `type`: The type of change. For valid values see [`NSFetchedResultsChangeType`](nsfetchedresultschangetype.md).
+- `newIndexPath`: The destination path for the object for insertions or moves (this value is `nil` for a deletion).
 
 ## See Also
 

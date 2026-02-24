@@ -35,7 +35,7 @@ var body: some View {
 
 ## Parameters
 
-- `renderingMode`: A constant describing how the    should be rendered.
+- `renderingMode`: A constant describing how the `Image` should be rendered.
 
 
 ---

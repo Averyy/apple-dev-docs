@@ -20,7 +20,7 @@ An array of [`NSBitmapImageRep`](nsbitmapimagerep.md) instances or an empty arra
 
 ## Parameters
 
-- `data`: A data object containing one or more bitmapped images or   if the class is unable to create an image representation. The   parameter can contain data in any supported bitmap format.
+- `data`: A data object containing one or more bitmapped images or `nil` if the class is unable to create an image representation. The `bitmapData` parameter can contain data in any supported bitmap format.
 
 ## See Also
 

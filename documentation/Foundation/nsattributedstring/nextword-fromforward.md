@@ -29,7 +29,7 @@ Raises an [`rangeException`](nsexceptionname/rangeexception.md) if `index` lies 
 ## Parameters
 
 - `location`: The index in the attribute string.
-- `isForward`:   if the search should be forward, otherwise  .
+- `isForward`: [`true`](https://developer.apple.com/documentation/Swift/true) if the search should be forward, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

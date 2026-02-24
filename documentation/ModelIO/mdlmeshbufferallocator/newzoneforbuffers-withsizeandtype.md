@@ -33,7 +33,7 @@ This method creates a zone with enough capacity to allocate buffers with the siz
 ## Parameters
 
 - `sizes`: An array of integers, each the length in bytes of an allocation to be made later.
-- `types`: An array of integers, each the   value corresponding to an allocation described in the   array.
+- `types`: An array of integers, each the [`MDLMeshBufferType`](mdlmeshbuffertype.md) value corresponding to an allocation described in the `sizes` array.
 
 ## See Also
 

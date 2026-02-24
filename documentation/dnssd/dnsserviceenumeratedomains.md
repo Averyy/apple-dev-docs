@@ -32,7 +32,7 @@ Note that the names returned are (like all of DNS-SD) UTF-8 strings, and are esc
 
 ## Parameters
 
-- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns  , and the enumeration operation will run indefinitely until the client terminates it by passing this DNSServiceRef to  .
+- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md), and the enumeration operation will run indefinitely until the client terminates it by passing this DNSServiceRef to [`DNSServiceRefDeallocate(_:)`](dnsservicerefdeallocate(_:).md).
 - `flags`: Possible values are: kDNSServiceFlagsBrowseDomains to enumerate domains recommended for browsing. kDNSServiceFlagsRegistrationDomains to enumerate domains recommended for registration.
 - `interfaceIndex`: If non-zero, specifies the interface on which to look for domains. (the index for a given interface is determined via the if_nametoindex() family of calls.) Most applications will pass 0 to enumerate domains on all interfaces. See “Constants for specifying an interface index” for more details.
 - `callBack`: The function to be called when a domain is found or the call asynchronously fails.

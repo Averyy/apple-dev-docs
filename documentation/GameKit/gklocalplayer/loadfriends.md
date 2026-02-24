@@ -33,7 +33,7 @@ If you loaded friends who no longer appear in the `friends` parameter of the com
 
 ## Parameters
 
-- `completionHandler`: The local player and their friends must use a version of your game with the same bundle ID.
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameters: - **`friends`**: The player’s friends who also grant your game access to their friends. The local player and their friends authorization status must be [`GKFriendsAuthorizationStatus.authorized`](gkfriendsauthorizationstatus/authorized.md). The local player and their friends must use a version of your game with the same bundle ID. - **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

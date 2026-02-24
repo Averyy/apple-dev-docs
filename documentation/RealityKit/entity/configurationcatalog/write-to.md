@@ -26,7 +26,7 @@ Another configuration catalog instance can open the `.reality` file for reading.
 
 ## Parameters
 
-- `url`: The destination where the configuration catalog writes the   file.
+- `url`: The destination where the configuration catalog writes the `.reality` file.
 
 
 ---

@@ -10,11 +10,11 @@ RealityKit provides several types of materials that render entities using differ
 
 > **Note**: For the Metal API documentation for custom material shader functions, see [`the Metal RealityKit APIs PDF.`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-RealityKit-APIs.pdf)
 
-Custom materials support two types of custom Metal shader functions:  and . Surface shaders are responsible for specifying the final attributes of each pixel that RealityKit draws to render the entity. They also support an optional geometry modifier, which you can use to manipulate the location of the model’s vertices, allowing you to dynamically change the size or shape of the entity.
+Custom materials support two types of custom Metal shader functions: *surface shaders* and *geometry modifiers*. Surface shaders are responsible for specifying the final attributes of each pixel that RealityKit draws to render the entity. They also support an optional geometry modifier, which you can use to manipulate the location of the model’s vertices, allowing you to dynamically change the size or shape of the entity.
 
-In shader programming, the term  refers to a one-pixel portion of an entity.  run on the GPU and are responsible for rendering those pixel-size chunks. RealityKit’s built-in fragment shader fires once for every one of the entity’s fragments. In other words, it fires once for every screen pixel potentially affected by rendering that entity. As a result, your surface shader function also fires once for every fragment. RealityKit’s fragment shader calls your surface shader, meaning that surface shaders are also called once for each of the entity’s fragments.
+In shader programming, the term *fragment* refers to a one-pixel portion of an entity. *Fragment shaders* run on the GPU and are responsible for rendering those pixel-size chunks. RealityKit’s built-in fragment shader fires once for every one of the entity’s fragments. In other words, it fires once for every screen pixel potentially affected by rendering that entity. As a result, your surface shader function also fires once for every fragment. RealityKit’s fragment shader calls your surface shader, meaning that surface shaders are also called once for each of the entity’s fragments.
 
-The other type of Metal shader that RealityKit uses is the . Vertex shaders fire once for every vertex in the entity. If you supply a geometry modifier when creating a custom material, RealityKit’s vertex shader calls it. Geometry modifiers fire once for every vertex in the entity.
+The other type of Metal shader that RealityKit uses is the *vertex shader*. Vertex shaders fire once for every vertex in the entity. If you supply a geometry modifier when creating a custom material, RealityKit’s vertex shader calls it. Geometry modifiers fire once for every vertex in the entity.
 
 For more information on writing Metal shaders, see [`Debugging the shaders within a draw command or compute dispatch`](https://developer.apple.com/documentation/Xcode/Debugging-the-shaders-within-a-draw-command-or-compute-dispatch).
 
@@ -44,6 +44,11 @@ The one parameter that RealityKit passes to your surface shader provides access 
 Specify output using the various `set_` functions on the parameter’s `surface()` property. For example, to set the base color value for the current fragment, call `params.surface().set_base_color()`. The custom material’s lighting model determines which `set_` functions it supports. Your surface shader must call at least one supported `set_` function or nothing renders. For a list of which `set_` functions each lighting model supports, see [`lightingModel`](custommaterial/lightingmodel-swift.property.md).
 
 Here are the accessor methods on `realitykit::surface_parameters`, along with what you use them for:
+
+- **`uniforms()`**: Contains all constant properties, including the current elapsed time and any custom value specified on the [`CustomMaterial`](custommaterial.md). It also contains matrices for converting values between different coordinate systems, like converting from world space to model space.
+- **`geometry()`**: Contains properties specified on a per-vertex basis, such as a vertex’s position, color, and normal vector. Metal interpolates per-vertex values based on the current fragment’s position relative to the three vertices that make up its triangle.
+- **`textures()`**: Provides access to all of the custom material’s UV-mapped image textures.
+- **`surface()`**: Contains functions to specify and read the fragment’s output values.
 
 The following surface shader calculates and sets the fragment’s base color based on the `tint` and `color` values from the material’s [`CustomMaterial.BaseColor`](custommaterial/basecolor-swift.struct.md) property.
 
@@ -142,7 +147,7 @@ let surfaceShader = CustomMaterial.SurfaceShader(named: "mySurfaceShader",
 
 ##### Choose a Lighting Model
 
-Every custom material needs a , which determines the basic approach RealityKit uses to render an entity with a custom material. The lighting model affects how the entity looks and which output functions your surface shader can use. There are three options:
+Every custom material needs a *lighting model*, which determines the basic approach RealityKit uses to render an entity with a custom material. The lighting model affects how the entity looks and which output functions your surface shader can use. There are three options:
 
 | Lighting Model | Description | Supported Shader Outputs |
 | --- | --- | --- |

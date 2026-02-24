@@ -30,9 +30,9 @@ Each time when constraints are applied, a new angle is calculated so that a line
 
 ## Parameters
 
-- `point`: A point in the   parameter’s coordinate system.
+- `point`: A point in the `node` parameter’s coordinate system.
 - `node`: The node whose coordinate system the point is specified in.
-- `radians`: An offset that is added to the   value after it is calculated.
+- `radians`: An offset that is added to the [`zRotation`](sknode/zrotation.md) value after it is calculated.
 
 ## See Also
 

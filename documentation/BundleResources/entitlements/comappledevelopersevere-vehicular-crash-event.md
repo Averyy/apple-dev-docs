@@ -10,6 +10,12 @@ The entitlement for accessing Crash Detection events.
 - iPadOS 16.0+
 - watchOS 10.1+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 To apply for this entitlement, [`see this page`](https://developer.apple.comhttps://developer.apple.com/contact/request/vehicular-crash-events/).

@@ -32,9 +32,9 @@ To save memory, this function might choose to store the characters internally in
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new string. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `chars`: The buffer of Unicode characters to copy into the new string.
-- `numChars`: The number of characters in the buffer pointed to by  . Only this number of characters will be copied to internal storage.
+- `numChars`: The number of characters in the buffer pointed to by `chars`. Only this number of characters will be copied to internal storage.
 
 ## See Also
 

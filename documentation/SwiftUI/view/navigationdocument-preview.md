@@ -28,7 +28,7 @@ Refer to the [`Configure your apps navigation titles`](configure-your-apps-navig
 
 ## Parameters
 
-- `document`: The transferable content associated to the   navigation title.
+- `document`: The transferable content associated to the navigation title.
 - `preview`: The preview of the document to use when sharing.
 
 ## See Also

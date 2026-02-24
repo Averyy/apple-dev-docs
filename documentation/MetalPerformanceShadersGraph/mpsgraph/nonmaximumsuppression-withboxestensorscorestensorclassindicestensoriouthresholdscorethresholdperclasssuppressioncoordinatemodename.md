@@ -21,9 +21,9 @@ func nonMaximumSuppression(withBoxesTensor boxesTensor: MPSGraphTensor, scoresTe
 
 ## Parameters
 
-- `boxesTensor`: A tensor containing the coordinates of the input boxes. Must be a rank 3 tensor of shape [N,B,4] of type 
-- `scoresTensor`: A tensor containing the scores of the input boxes. Must be a rank 3 tensor of shape [N,B,1] of type 
-- `classIndicesTensor`: A tensor containing the class indices of the input boxes. Must be a rank 2 tensor of shape [N,B] of type 
+- `boxesTensor`: A tensor containing the coordinates of the input boxes. Must be a rank 3 tensor of shape [N,B,4] of type `MPSDataTypeFloat32`
+- `scoresTensor`: A tensor containing the scores of the input boxes. Must be a rank 3 tensor of shape [N,B,1] of type `MPSDataTypeFloat32`
+- `classIndicesTensor`: A tensor containing the class indices of the input boxes. Must be a rank 2 tensor of shape [N,B] of type `MPSDataTypeInt32`
 - `IOUThreshold`: The threshold for when to reject boxes based on their Intersection Over Union. Valid range is [0,1].
 - `scoreThreshold`: The threshold for when to reject boxes based on their score, before IOU suppression.
 - `perClassSuppression`: When this is specified a box will only suppress another box if they have the same class.

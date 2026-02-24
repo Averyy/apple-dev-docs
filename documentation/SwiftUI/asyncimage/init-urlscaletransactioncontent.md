@@ -41,9 +41,9 @@ To add transitions when you change the URL, apply an identifier to the [`AsyncIm
 ## Parameters
 
 - `url`: The URL of the image to display.
-- `scale`: The scale to use for the image. The default is  . Set a   different value when loading images designed for higher resolution   displays. For example, set a value of   for an image that you   would name with the   suffix if stored in a file on disk.
+- `scale`: The scale to use for the image. The default is `1`. Set a different value when loading images designed for higher resolution displays. For example, set a value of `2` for an image that you would name with the `@2x` suffix if stored in a file on disk.
 - `transaction`: The transaction to use when the phase changes.
-- `content`: A closure that takes the load phase as an input, and   returns the view to display for the specified phase.
+- `content`: A closure that takes the load phase as an input, and returns the view to display for the specified phase.
 
 
 ---

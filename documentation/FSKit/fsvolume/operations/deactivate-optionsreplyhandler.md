@@ -26,7 +26,7 @@ FSKit unmounts any mounted volume with a call to [`unmount(replyHandler:)`](fsvo
 ## Parameters
 
 - `options`: Options to apply to the deactivation.
-- `reply`: A block or closure to indicate success or failure. If activation fails, pass an error as the one parameter to the reply handler. If activation succeeds, pass  . For an   Swift implementation, there’s no reply handler; simply throw an error or return normally.
+- `reply`: A block or closure to indicate success or failure. If activation fails, pass an error as the one parameter to the reply handler. If activation succeeds, pass `nil`. For an `async` Swift implementation, there’s no reply handler; simply throw an error or return normally.
 
 ## See Also
 

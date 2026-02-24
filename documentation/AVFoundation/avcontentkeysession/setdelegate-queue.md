@@ -22,7 +22,7 @@ func setDelegate(_ delegate: (any AVContentKeySessionDelegate)?, queue delegateQ
 
 ## Parameters
 
-- `delegate`: An object that conforms to the   protocol.
+- `delegate`: An object that conforms to the [`AVContentKeySessionDelegate`](avcontentkeysessiondelegate.md) protocol.
 - `delegateQueue`: The dispatch queue on which the session calls the delegate object.
 
 ## See Also

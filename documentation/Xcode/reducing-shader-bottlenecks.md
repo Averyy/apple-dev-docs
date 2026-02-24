@@ -10,8 +10,8 @@ A GPU can typically run subtasks at the same time by dispatching them to various
 
 The GPU driver publishes its subsystems’ work time and stall times with counters that you can monitor to see how much time those subsystems spend working versus stalling:
 
-- A  counter shows how much time the GPU subsystem is doing work, excluding stall time.
-- A  counter shows how much time the GPU spends doing work, including stall time.
+- A *utilization* counter shows how much time the GPU subsystem is doing work, excluding stall time.
+- A *limiter* counter shows how much time the GPU spends doing work, including stall time.
 
 Use the following counters as clues to help you identify which GPU subsystems might be a bottleneck at runtime:
 
@@ -62,7 +62,7 @@ These adjustments reduce the ALU’s workload by making the work simpler or by s
 
 The GPU reads texture data for each color attachment of a render pass when you set its [`loadAction`](https://developer.apple.com/documentation/Metal/MTLRenderPassAttachmentDescriptor/loadAction) property to [`MTLLoadAction.load`](https://developer.apple.com/documentation/Metal/MTLLoadAction/load), and each time a GPU function reads, gathers, or samples a texture. Textures that have larger dimensions, or use larger pixel formats, consume more memory and typically increase the amount of data the GPU reads to sample the texture.
 
-If the counters indicate the texture  operations may be a bottleneck, you can try the following adjustments and evaluate any changes in your app’s performance:
+If the counters indicate the texture *sample* operations may be a bottleneck, you can try the following adjustments and evaluate any changes in your app’s performance:
 
 - Sample from a mipmap for any textures your app uses with a minification filter.
 - Select bilinear filtering instead of trilinear filtering.
@@ -72,7 +72,7 @@ If the counters indicate the texture  operations may be a bottleneck, you can tr
 
 Similarly, the GPU saves texture data for each color attachment of a render pass when you set its [`storeAction`](https://developer.apple.com/documentation/Metal/MTLRenderPassAttachmentDescriptor/storeAction) property to [`MTLStoreAction.store`](https://developer.apple.com/documentation/Metal/MTLStoreAction/store), and each time a GPU function explicitly writes to a texture.
 
-If the counters indicate the texture  operations may be a bottleneck, you can try the following adjustments and evaluate any changes in your app’s performance:
+If the counters indicate the texture *write* operations may be a bottleneck, you can try the following adjustments and evaluate any changes in your app’s performance:
 
 - Work with textures that have smaller dimensions or use smaller pixel formats.
 - Reduce the number of samples for multisample antialiasing (MSAA).
@@ -83,20 +83,20 @@ If the counters indicate the texture  operations may be a bottleneck, you can tr
 
 The write operation counters measure the time your GPU functions store data to memory in the GPU device’s address space. The read operation counters measure the time your GPU functions fetch data from memory in both the device’s address space and the constants’ address space.
 
-GPU functions can increase the read-and-write activity when they use a lot of thread memory or access it with . This can happen when a function needs to store more data than can fit in the GPU’s registers, which forces the GPU to store data to device memory and then read it at a later time.
+GPU functions can increase the read-and-write activity when they use a lot of thread memory or access it with *dynamic indexing*. This can happen when a function needs to store more data than can fit in the GPU’s registers, which forces the GPU to store data to device memory and then read it at a later time.
 
-If the counters indicate the buffer  or  operations may be a bottleneck, you can try the following adjustments and evaluate any changes in your app’s performance:
+If the counters indicate the buffer *read* or *write* operations may be a bottleneck, you can try the following adjustments and evaluate any changes in your app’s performance:
 
 - Pack data into buffers more tightly.
 - Pack scalar values with SIMD types, such as the `float4` SIMD type instead of four separate `float` values.
 - Use smaller data types, such as the `packed_half3` type for positional data instead of `float4`.
 - Avoid implementations that randomly index into thread-scoped arrays, which may give the compiler the flexibility to better optimize the GPU function.
 
-For the buffer  operations, you can also try to read data from textures instead of buffers to share some of the workload with another subsystem. For the buffer  operations, try to reduce the number of atomic writes your GPU function makes to device memory.
+For the buffer *read* operations, you can also try to read data from textures instead of buffers to share some of the workload with another subsystem. For the buffer *write* operations, try to reduce the number of atomic writes your GPU function makes to device memory.
 
 ##### Reduce the Workload for Threadgroup and Imageblock Operations
 
-Apple silicon GPUs use threadgroup memory and imageblock memory (called  collectively) that consists of a local, unified set of high-performance storage within the GPU itself.
+Apple silicon GPUs use threadgroup memory and imageblock memory (called *tile memory* collectively) that consists of a local, unified set of high-performance storage within the GPU itself.
 
 You access this high-speed memory when you write to threadgroup memory in a compute shader, write to a pixel in an imageblock, use blending in a render pass, or write data to a color attachment from a fragment shader.
 
@@ -106,13 +106,13 @@ Your app accesses this high-speed memory during a render pass that applies blend
 - A fragment shader reads from or writes to a color attachment
 - A compute kernel reads from or writes to threadgroup memory
 
-If the counters indicate the threadgroup and imageblock  or  operations may be a bottleneck, you can try the following adjustments in your compute kernels and evaluate any changes in your app’s performance:
+If the counters indicate the threadgroup and imageblock *read* or *write* operations may be a bottleneck, you can try the following adjustments in your compute kernels and evaluate any changes in your app’s performance:
 
 - Align threadgroup memory allocations to a 16-byte boundary.
 - Reduce a kernel’s atomic reads from or writes to threadgroup memory.
 - Reorder your memory access patterns so that neighboring threads in a quad group write (or read) to neighboring elements in threadgroup memory.
 
-For the threadgroup and imageblock  operations, you can also try removing accesses to the same memory location from multiple threads in the same threadgroup.
+For the threadgroup and imageblock *read* operations, you can also try removing accesses to the same memory location from multiple threads in the same threadgroup.
 
 ##### Reduce the Workload for Fragment Input Interpolation
 

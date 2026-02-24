@@ -24,7 +24,7 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `in_can_be_default`:   if the system can use this device as the default output device.
+- `in_can_be_default`: `true` if the system can use this device as the default output device.
 
 ## See Also
 

@@ -38,7 +38,7 @@ If you need only the view’s height and width, you can use the [`sizeThatFits(_
 
 ## Parameters
 
-- `proposal`: A proposed size for the subview. In SwiftUI,   views choose their own size, but can take a size proposal from   their parent view into account when doing so.
+- `proposal`: A proposed size for the subview. In SwiftUI, views choose their own size, but can take a size proposal from their parent view into account when doing so.
 
 ## See Also
 

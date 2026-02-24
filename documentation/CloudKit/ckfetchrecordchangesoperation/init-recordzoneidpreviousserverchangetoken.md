@@ -35,7 +35,7 @@ After initializing the operation, associate at least one progress block with the
 ## Parameters
 
 - `recordZoneID`: The zone that contains the records you want to fetch. You can fetch changes in a custom zone. CloudKit doesn’t support syncing the default zone.
-- `previousServerChangeToken`: The change token from a previous fetch operation. This is the token that the system passes to your   handler during a previous fetch operation. Use this token to limit the returned data to only those changes that occur after that fetch request. If you specify   for this parameter, the operation object fetches all records and their contents.
+- `previousServerChangeToken`: The change token from a previous fetch operation. This is the token that the system passes to your [`fetchRecordChangesCompletionBlock`](ckfetchrecordchangesoperation/fetchrecordchangescompletionblock.md) handler during a previous fetch operation. Use this token to limit the returned data to only those changes that occur after that fetch request. If you specify `nil` for this parameter, the operation object fetches all records and their contents.
 
 ## See Also
 

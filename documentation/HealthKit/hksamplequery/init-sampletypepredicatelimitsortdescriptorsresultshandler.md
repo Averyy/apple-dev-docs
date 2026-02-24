@@ -33,11 +33,13 @@ After instantiating the query, call the [`HKHealthStore`](hkhealthstore.md) clas
 
 ## Parameters
 
-- `sampleType`: The type of sample to search for. This object can be an instance of the  ,  ,  , or   class.
-- `predicate`: A predicate that limits the results returned by the query. Pass   to receive all the samples of the specified type.
-- `limit`: The maximum number of samples returned by the query. If you want to return all matching samples, use  .
-- `sortDescriptors`: An array of sort descriptors that specify the order of the results returned by this query. Pass   if you don’t need the results in a specific order.
-- `resultsHandler`: This block takes the following parameters:
+- `sampleType`: The type of sample to search for. This object can be an instance of the [`HKCategoryType`](hkcategorytype.md), [`HKCorrelationType`](hkcorrelationtype.md), [`HKQuantityType`](hkquantitytype.md), or [`HKWorkoutType`](hkworkouttype.md) class.
+- `predicate`: A predicate that limits the results returned by the query. Pass `nil` to receive all the samples of the specified type.
+- `limit`: The maximum number of samples returned by the query. If you want to return all matching samples, use [`HKObjectQueryNoLimit`](hkobjectquerynolimit.md).
+- `sortDescriptors`: An array of sort descriptors that specify the order of the results returned by this query. Pass `nil` if you don’t need the results in a specific order. > **Note**:  HealthKit defines a number of sort identifiers (for example, [`HKSampleSortIdentifierStartDate`](hksamplesortidentifierstartdate.md) and [`HKWorkoutSortIdentifierDuration`](hkworkoutsortidentifierduration.md)). Use the sort descriptors you create with these identifiers only in queries. You cannot use them to perform an in-memory sort of an array of samples.
+- `resultsHandler`: A block that is called when the query finishes executing. This block takes the following parameters: - **query**: A reference to the query that called this block.
+- **results**: An array containing the samples found by the query, or `nil` if an error occurs.
+- **error**: If an error occurs, this parameter contains an object describing the error. Otherwise, its value is `nil`.
 
 ## See Also
 

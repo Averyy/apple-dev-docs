@@ -30,7 +30,7 @@ Use this method to allow or deny a navigation request after the web view receive
 
 - `webView`: The web view from which the navigation request began.
 - `navigationResponse`: Descriptive information about the navigation response.
-- `decisionHandler`: A completion handler block to call with the results about whether to allow or cancel the navigation. This handler has no return value and takes the following parameter:
+- `decisionHandler`: A completion handler block to call with the results about whether to allow or cancel the navigation. This handler has no return value and takes the following parameter: - **policy**: A constant that indicates whether to cancel or allow the navigation. For a list of possible values, see [`WKNavigationResponsePolicy`](wknavigationresponsepolicy.md).
 
 ## See Also
 

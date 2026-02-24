@@ -34,9 +34,10 @@ For multisample textures, the method consecutively positions each sample within 
 ## Parameters
 
 - `pixelBytes`: A pointer to a destination buffer in system memory.
-- `bytesPerRow`: Nonzero values smaller than the texture width or any values not a multiple of the pixel or block size cause an error.
+- `bytesPerRow`: The number of bytes (*stride*) between two adjacent rows of pixel data in the destination buffer. For [`MTLTextureType.type1D`](mtltexturetype/type1d.md) and [`MTLTextureType.type1DArray`](mtltexturetype/type1darray.md), use `0`. For raw and packed pixel types, the stride is the number of pixels in one row. For compressed pixel formats, the stride is the number of bytes from the beginning of one row of blocks to the beginning of the next. Your data type determines how you should compute `bytesPerRow`: - For raw or packed pixel data, use a multiple of the pixel size less than [`max`](https://developer.apple.com/documentation/Swift/Int32/max) `* pixel size`.
+- For compressed pixel data, use a multiple of the compression block size. When working with PowerVR Texture Compression (PVRTC), use `0.` Nonzero values smaller than the texture width or any values not a multiple of the pixel or block size cause an error.
 - `region`: The location of a block of pixels in the texture slice. For textures compressed as PVRTC, use the entire texture for the region.
-- `level`: A zero-indexed value that selects the texture’s mipmap level as the method’s data source. Use   for textures that don’t have mipmaps.
+- `level`: A zero-indexed value that selects the texture’s mipmap level as the method’s data source. Use `0` for textures that don’t have mipmaps.
 
 ## See Also
 

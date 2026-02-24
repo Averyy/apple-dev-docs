@@ -29,7 +29,7 @@ You can pass the returned strings as parameters to the [`init(name:size:)`](uifo
 
 ## Parameters
 
-- `familyName`: The name of the font family. Use the   method to get an array of the available font family names on the system.
+- `familyName`: The name of the font family. Use the [`familyNames`](uifont/familynames.md) method to get an array of the available font family names on the system.
 
 ## See Also
 

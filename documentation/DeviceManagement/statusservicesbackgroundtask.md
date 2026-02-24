@@ -33,6 +33,10 @@ object StatusServicesBackgroundTask
 - [object StatusServicesBackgroundTaskBackgroundTaskObject](statusservicesbackgroundtaskbackgroundtaskobject.md)
   A status report of a background task.
 
+## Properties
+
+- `services.background-task` ([StatusServicesBackgroundTaskBackgroundTaskObject]) *(required)*: The background task.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

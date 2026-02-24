@@ -33,7 +33,7 @@ This method is called on only the first interaction with the URL link. For examp
 - `textView`: The text view containing the text attachment.
 - `URL`: The URL to be processed.
 - `characterRange`: The character range containing the URL.
-- `interaction`: The type of interaction that is occurring (for possible values, see  ).
+- `interaction`: The type of interaction that is occurring (for possible values, see [`UITextItemInteraction`](uitextiteminteraction.md)).
 
 ## See Also
 

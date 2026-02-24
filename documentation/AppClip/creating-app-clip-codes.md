@@ -10,7 +10,7 @@ An App Clip Code is immediately recognizable to users and lets them know an App 
 
 ![Illustration of two App Clip Codes that use the badge design: On the left, a white-on-blue App Clip Code with an embedded NFC tag. On the right, a scan-only, white-on-black App Clip Code.](https://docs-assets.developer.apple.com/published/d128732b4333996b712930a76efbaf5c/media-3706497%402x.png)
 
-The visual design of an App Clip Code encodes your App Clip’s . Optionally, you can embed an NFC tag that also encodes the invocation URL. An App Clip Code with an embedded NFC tag is called an  App Clip Code, while a code without an NFC tag is called a  App Clip Code.
+The visual design of an App Clip Code encodes your App Clip’s *invocation URL*. Optionally, you can embed an NFC tag that also encodes the invocation URL. An App Clip Code with an embedded NFC tag is called an *NFC-integrated* App Clip Code, while a code without an NFC tag is called a *scan-only* App Clip Code.
 
 The image at the center of an App Clip Code icon lets users know how to interact with the code. If they discover an NFC-integrated App Clip Code, they hold their device close to the code or scan it with the NFC Tag Reader in Control Center to launch your App Clip. They can also scan an NFC-integrated App Clip Code with the Camera app or the Code Scanner in Control Center. If they discover a scan-only App Clip Code, they scan it with the Camera or the Code Scanner in Control Center to launch your App Clip.
 
@@ -20,7 +20,7 @@ In addition to providing a great launch experience for your App Clip, you can al
 
 Creating an App Clip Code requires the following tasks:
 
-1. Choosing an invocation URL and configuring an  in [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/login). To learn more, see [`Configuring App Clip experiences`](configuring-the-launch-experience-of-your-app-clip.md).
+1. Choosing an invocation URL and configuring an *advanced App Clip experience* in [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/login). To learn more, see [`Configuring App Clip experiences`](configuring-the-launch-experience-of-your-app-clip.md).
 2. Choosing the type (scan-only or NFC-integrated), colors, and design of your App Clip Code. For design guidance, see [`Human Interface Guidelines > App Clips > App Clip Codes`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/app-clip-codes/).
 3. Generating App Clip Codes with App Store Connect or with the App Clip Code Generator command-line tool. For more information, see [`Pick a tool to create App Clip Codes`](creating-app-clip-codes#Pick-a-tool-to-create-App-Clip-Codes.md) below.
 4. Printing App Clip Codes yourself or with the help of a professional printing service — for example, [`RR Donnelley`](https://developer.apple.comhttps://touchless.acc.rrd.com/). For printing guidance, see [`Human Interface Guidelines > App Clips > Printing Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/printing-guidelines/) and [`Preparing multiple App Clip Codes for production`](preparing-multiple-app-clip-codes-for-production.md).

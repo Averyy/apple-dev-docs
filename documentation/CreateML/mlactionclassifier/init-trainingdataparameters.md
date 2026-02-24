@@ -17,7 +17,7 @@ init(trainingData: MLActionClassifier.DataSource, parameters: MLActionClassifier
 ## Parameters
 
 - `trainingData`: A collection of labeled images represented by a data source.
-- `parameters`: An    instance you use to configure the model for the training session.
+- `parameters`: An [`MLActionClassifier.ModelParameters`](mlactionclassifier/modelparameters-swift.struct.md) instance you use to configure the model for the training session.
 
 
 ---

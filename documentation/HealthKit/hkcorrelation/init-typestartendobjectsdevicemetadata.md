@@ -29,14 +29,134 @@ Use a correlation object to represent composite data—that is, a sample that re
 
 Use this method when recording data using external hardware. If you do not need to include additional metadata, pass `nil` for the `metadata` parameter.
 
+**Swift**:
+
+```swift
+let date = NSDate()
+ 
+// Create systolic sample
+ 
+guard let systolicType = HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBloodPressureSystolic) else {
+    fatalError("*** Unable to create the systolic type ****")
+}
+ 
+let systolicQuantity =
+    HKQuantity(unit: HKUnit.millimeterOfMercuryUnit(), doubleValue: 120.0)
+ 
+let systolicSample = HKQuantitySample(type: systolicType,
+                                      quantity: systolicQuantity, startDate: date, endDate: date)
+ 
+// Create diastolic sample
+ 
+guard let diastolicType = HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBloodPressureDiastolic) else {
+    fatalError("*** Unable to create the diastolic type ***")
+}
+ 
+let diastolicQuantity =
+    HKQuantity(unit: HKUnit.millimeterOfMercuryUnit(), doubleValue: 75.0)
+ 
+let diastolicSample = HKQuantitySample(type: diastolicType,
+                                       quantity: diastolicQuantity, startDate: date, endDate: date)
+ 
+// Create blood pressure sample
+ 
+guard let bloodPressureType = HKObjectType.correlationTypeForIdentifier(HKCorrelationTypeIdentifierBloodPressure) else {
+    fatalError("*** Unable to create the blood pressure type ***")
+}
+ 
+let objects: Set = [systolicSample, diastolicSample]
+ 
+let device = HKDevice(name: deviceName,
+                      manufacturer: manufacturerName,
+                      model: modelName,
+                      hardwareVersion: hardwareVersionNumber,
+                      firmwareVersion: firmwareVersionNumber,
+                      softwareVersion: softwareVersionNumber,
+                      localIdentifier: localIdentifier,
+                      UDIDeviceIdentifier: deviceIdentifier)
+ 
+let metadata : [String : AnyObject] =
+    [HKMetadataKeyDigitalSignature:digitalSignature,
+     HKMetadataKeyTimeZone:timeZone]
+ 
+let bloodpressure = HKCorrelation(type: bloodPressureType, startDate: date, endDate: date, objects:objects, device: device, metadata: metadata)
+```
+
+**Objective-C**:
+
+```objc
+NSDate *date = [NSDate date];
+ 
+// Create systolic sample
+ 
+HKQuantityType *systolicType =
+[HKObjectType quantityTypeForIdentifier:
+ HKQuantityTypeIdentifierBloodPressureSystolic];
+ 
+HKQuantity *systolicQuantity =
+[HKQuantity quantityWithUnit:[HKUnit millimeterOfMercuryUnit]
+                 doubleValue:120.0];
+ 
+HKQuantitySample *systolicSample =
+[HKQuantitySample quantitySampleWithType:systolicType
+                                quantity:systolicQuantity
+                               startDate:date
+                                 endDate:date];
+ 
+// Create diastolic sample
+ 
+HKQuantityType *diastolicType =
+[HKObjectType quantityTypeForIdentifier:
+ HKQuantityTypeIdentifierBloodPressureDiastolic];
+ 
+HKQuantity *diastolicQuantity =
+[HKQuantity quantityWithUnit:[HKUnit millimeterOfMercuryUnit]
+                 doubleValue:75.0];
+ 
+HKQuantitySample *diastolicSample =
+[HKQuantitySample quantitySampleWithType:diastolicType
+                                quantity:diastolicQuantity
+                               startDate:date
+                                 endDate:date];
+ 
+// Create blood pressure sample
+ 
+HKCorrelationType *bloodPressureType =
+[HKObjectType correlationTypeForIdentifier:
+ HKCorrelationTypeIdentifierBloodPressure];
+ 
+NSSet *objects = [NSSet setWithObjects:systolicSample, diastolicSample, nil];
+ 
+HKDevice *device = [[HKDevice alloc] initWithName:deviceName
+                                     manufacturer:manufacturerName
+                                            model:modelName
+                                  hardwareVersion:hardwareVersionNumber
+                                  firmwareVersion:firmwareVersionNumber
+                                  softwareVersion:softwareVersionNumber
+                                  localIdentifier:localIdentifier
+                              UDIDeviceIdentifier:deviceIdentifier];
+ 
+NSDictionary *metadata = @{HKMetadataKeyDigitalSignature:digitalSignature,
+                           HKMetadataKeyTimeZone:timeZone};
+ 
+ 
+HKCorrelation *bloodPressure =
+[HKCorrelation correlationWithType:bloodPressureType
+                         startDate:date
+                           endDate:date
+                           objects:objects
+                            device:device
+                          metadata:metadata];
+```
+
 ## Parameters
 
-- `correlationType`: The type for this correlation. For a complete list of correlation type identifiers, see  .
-- `startDate`: The start date for the sample. This date must be equal to or earlier than the end date; otherwise, this method throws an exception ( ).
-- `endDate`: The end date for the sample. This date must be equal to or later than the start date; otherwise, this method throws an exception ( ).
-- `objects`: A set of   objects. Specifically, this set contains the quantity and category samples to be grouped into this correlation.
+- `correlationType`: The type for this correlation. For a complete list of correlation type identifiers, see [`HKCorrelationTypeIdentifier`](hkcorrelationtypeidentifier.md).
+- `startDate`: The start date for the sample. This date must be equal to or earlier than the end date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
+- `endDate`: The end date for the sample. This date must be equal to or later than the start date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
+- `objects`: A set of [`HKSample`](hksample.md) objects. Specifically, this set contains the quantity and category samples to be grouped into this correlation.
 - `device`: The device that generated the data for this sample.
-- `metadata`: When creating correlations representing food, always use the   key to provide the food’s name.
+- `metadata`: The metadata dictionary containing extra information that describes this correlation. The dictionary’s keys are all [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects . The values may be [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), or [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) objects. For a complete list of predefined metadata keys, see Metadata Keys. Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create custom keys as needed to extend the HealthKit sample’s capabilities. When creating correlations representing food, always use the [`HKMetadataKeyFoodType`](hkmetadatakeyfoodtype.md) key to provide the food’s name.
 
 ## See Also
 

@@ -32,10 +32,10 @@ If an `NSDateComponents` object’s `timeZone` property is set, the time zone pr
 
 ## Parameters
 
-- `unitFlags`: Specifies the components for the returned   object.
-- `startingDateComp`: The start date for the calculation as an   object.
-- `resultDateComp`: The end date for the calculation as an   object.
-- `options`: The   parameter is currently unused.
+- `unitFlags`: Specifies the components for the returned `NSDateComponents` object.
+- `startingDateComp`: The start date for the calculation as an `NSDateComponents` object.
+- `resultDateComp`: The end date for the calculation as an `NSDateComponents` object.
+- `options`: The `options` parameter is currently unused.
 
 ## See Also
 

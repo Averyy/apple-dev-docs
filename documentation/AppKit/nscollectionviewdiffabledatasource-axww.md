@@ -16,7 +16,7 @@ class NSCollectionViewDiffableDataSource<SectionIdentifierType, ItemIdentifierTy
 
 #### Overview
 
-A  object is a specialized type of data source that works together with your collection view object. It provides the behavior you need to manage updates to your collection view’s data and UI in a simple, efficient way. It also conforms to the [`NSCollectionViewDataSource`](nscollectionviewdatasource.md) protocol and provides implementations for all of the protocol’s methods.
+A *diffable data source* object is a specialized type of data source that works together with your collection view object. It provides the behavior you need to manage updates to your collection view’s data and UI in a simple, efficient way. It also conforms to the [`NSCollectionViewDataSource`](nscollectionviewdatasource.md) protocol and provides implementations for all of the protocol’s methods.
 
 To fill a collection view with data:
 
@@ -61,6 +61,9 @@ Then, you generate the current state of the data and display the data in the UI 
 ### Supporting Protocol Requirements
 - [Protocol Implementations](protocol-implementations.md)
   Access the diffable data source’s implementations of protocol methods.
+### Instance Methods
+- [func description() -> String](nscollectionviewdiffabledatasource-axww/description.md)
+  Returns a string with a description of the diffable data source.
 
 ## Relationships
 

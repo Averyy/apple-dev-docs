@@ -24,9 +24,9 @@ Use this method to open the specified resource. If the specified URL scheme is h
 
 ## Parameters
 
-- `url`: A URL (Universal Resource Locator). The resource identified by this URL may be local to the current app or handled by a different app. UIKit supports many common schemes, including the  ,  ,  ,  , and   schemes.
+- `url`: A URL (Universal Resource Locator). The resource identified by this URL may be local to the current app or handled by a different app. UIKit supports many common schemes, including the `http`, `https`, `tel`, `facetime`, and `mailto` schemes.
 - `options`: The options to use when opening the URL.
-- `completion`: The block to execute with the results. Provide a value for this parameter if you want to be informed of the success or failure of opening the URL. This block is executed asynchronously on your app’s main thread. The block has no return value and takes the following parameter:
+- `completion`: The block to execute with the results. Provide a value for this parameter if you want to be informed of the success or failure of opening the URL. This block is executed asynchronously on your app’s main thread. The block has no return value and takes the following parameter: - **success**: A Boolean value indicating whether the system successfully opened the URL. If no app is capable of handling the specified URL, this parameter is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

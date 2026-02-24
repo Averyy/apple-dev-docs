@@ -6,7 +6,7 @@ Use LAPACK to solve a linear system and find an interpolating polynomial to cons
 
 #### Overview
 
-This article demonstrates how you can generate a continuous curve that passes through a small set of points by computing an . A polynomial is the sum of a series of terms constructed from variables, coefficients, and exponents (for example, , where  and  and the coefficients, and  is the variable); and an interpolating polynomial fills in the gaps between the supplied variables and coefficients.
+This article demonstrates how you can generate a continuous curve that passes through a small set of points by computing an *interpolating polynomial*. A polynomial is the sum of a series of terms constructed from variables, coefficients, and exponents (for example, *6x³ + 7x²*, where *6* and *7* and the coefficients, and *x* is the variable); and an interpolating polynomial fills in the gaps between the supplied variables and coefficients.
 
 For any number of data points, there is a unique interpolating polynomial of order (that is, the largest exponent) which is the number of data points minus one. However, for large numbers of data points, this solution can become numerically unstable.
 
@@ -14,7 +14,7 @@ The image below shows five known points, as white dots, and the values generated
 
 ![Diagram showing a series of dots, that indicate known data points, joined by a continuous curve, that indicates interpolated values.](https://docs-assets.developer.apple.com/published/791d6180836aa43aeda2b9e324e201a4/media-3521008%402x.png)
 
-The code in this article determines the polynomial coefficients using a Vandermonde matrix based on the x-components of the known points. The coefficients are the solution to , where  is the Vandermonde matrix and  is a vector of the y-components of the known points. You’ll use LAPACK to solve . LAPACK is an acronym for Linear Algebra Package and is a standard software library for numerical linear algebra.
+The code in this article determines the polynomial coefficients using a Vandermonde matrix based on the x-components of the known points. The coefficients are the solution to *Ax=b*, where *A* is the Vandermonde matrix and *b* is a vector of the y-components of the known points. You’ll use LAPACK to solve *Ax=b*. LAPACK is an acronym for Linear Algebra Package and is a standard software library for numerical linear algebra.
 
 ##### Generate Known Data
 
@@ -36,7 +36,7 @@ let points: [simd_double2] = [
 
 ##### Create a Vandermonde Matrix
 
-Construct a Vandermonde matrix where the rows are defined by the elements in a source vector that are successively raised to each integer power up to the source vector’s element count, minus one. For example, in the case of a five-element source vector, , the Vandermonde matrix is of the form:
+Construct a Vandermonde matrix where the rows are defined by the elements in a source vector that are successively raised to each integer power up to the source vector’s element count, minus one. For example, in the case of a five-element source vector, *x*, the Vandermonde matrix is of the form:
 
 ![Equation that shows the form of a 5 x 5 Vandermonde matrix. Each row corresponds to an element in the source vector, x, raised to the power of 0, 1, 2, 3, and 4.](https://docs-assets.developer.apple.com/published/fd4619b7b97c406db5b7ec0b52382652/media-3521355%402x.png)
 
@@ -67,11 +67,11 @@ let vandermonde: [[Double]] = points.map { point in
 
 ##### Calculate Coefficients
 
-The coefficients for the polynomial are the solution to , where  is the Vandermonde matrix and  is the y-components of the known points. For example, using the matrix created in [`Finding an interpolating polynomial using the Vandermonde method`](finding-an-interpolating-polynomial-using-the-vandermonde-method#Create-a-Vandermonde-matrix.md), the coefficients are the  in the following:
+The coefficients for the polynomial are the solution to *Ax=b*, where *A* is the Vandermonde matrix and *b* is the y-components of the known points. For example, using the matrix created in [`Finding an interpolating polynomial using the Vandermonde method`](finding-an-interpolating-polynomial-using-the-vandermonde-method#Create-a-Vandermonde-matrix.md), the coefficients are the *x* in the following:
 
 ![Equation that shows Ax=b.](https://docs-assets.developer.apple.com/published/a8d273dde9fc7c18a342e8488003ccc9/media-3521363%402x.png)
 
-Create the function `solveLinearSystem(a:a_rowCount:a_columnCount:b:b_count:)` to encapsulate the LAPACK routines that solve . Note that LAPACK overwrites  with the solution vector, :
+Create the function `solveLinearSystem(a:a_rowCount:a_columnCount:b:b_count:)` to encapsulate the LAPACK routines that solve *Ax=b*. Note that LAPACK overwrites *b* with the solution vector, *x*:
 
 ```swift
 let coefficients: [Double] = {
@@ -98,7 +98,7 @@ On return, `coefficients` contains the polynomial coefficients.
 
 > ❗ **Important**:  This sample uses the LAPACK library under the Accelerate framework that’s in line with LAPACK version 3.9.1. Specify `ACCELERATE_NEW_LAPACK=1` and `ACCELERATE_LAPACK_ILP64=1` as preprocessor macros in Xcode build settings.
 
-Use the LAPACK `dgels` routine to perform the solve. The `dgels` name derives from ouble-precision, neral-matrix, east-quares.
+Use the LAPACK `dgels` routine to perform the solve. The `dgels` name derives from **d**ouble-precision, **ge**neral-matrix, **l**east-**s**quares.
 
 ```swift
 static func solveLinearSystem(matrixA: inout [Double],

@@ -23,8 +23,8 @@ func xpc_array_set_bool(_ xarray: xpc_object_t, _ index: Int, _ value: Bool)
 ## Parameters
 
 - `xarray`: The array object which is to be manipulated.
-- `index`: The index at which to insert the value. This value must lie within the index space of the array (0 to N-1 inclusive, where N is the count of the array) or be  . If the index is outside that range, the behavior is undefined.
-- `value`: The   value to insert. After calling this method, the XPC object corresponding to the primitive value inserted may be safely retrieved with  .
+- `index`: The index at which to insert the value. This value must lie within the index space of the array (0 to N-1 inclusive, where N is the count of the array) or be [`XPC_ARRAY_APPEND`](xpc_array_append-swift.var.md). If the index is outside that range, the behavior is undefined.
+- `value`: The `bool` value to insert. After calling this method, the XPC object corresponding to the primitive value inserted may be safely retrieved with [`xpc_array_get_value(_:_:)`](xpc_array_get_value(_:_:).md).
 
 ## See Also
 

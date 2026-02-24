@@ -25,7 +25,7 @@ A view that calls `action` when inserting elements into the original view.
 ## Parameters
 
 - `supportedContentTypes`: An array of universal type identifiers types that the rows supports.
-- `action`: A closure that SwiftUI invokes when adding elements to   the collection of rows.   The closure takes two arguments. The first argument is the   offset relative to the dynamic view’s underlying collection of data.   The second argument is an array of     items that represents the data that you want to insert.
+- `action`: A closure that SwiftUI invokes when adding elements to the collection of rows. The closure takes two arguments. The first argument is the offset relative to the dynamic view’s underlying collection of data. The second argument is an array of [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) items that represents the data that you want to insert.
 
 ## See Also
 

@@ -22,10 +22,10 @@ typealias DNSServiceRegisterRecordReply = (DNSServiceRef?, DNSRecordRef?, DNSSer
 
 ## Parameters
 
-- `sdRef`: The connected DNSServiceRef initialized by  .
-- `RecordRef`: The DNSRecordRef initialized by  . If the above DNSServiceRef is passed to  , this DNSRecordRef is invalidated, and may not be used further.
+- `sdRef`: The connected DNSServiceRef initialized by [`DNSServiceCreateConnection(_:)`](dnsservicecreateconnection(_:).md).
+- `RecordRef`: The DNSRecordRef initialized by [`DNSServiceRegisterRecord(_:_:_:_:_:_:_:_:_:_:_:_:)`](dnsserviceregisterrecord(_:_:_:_:_:_:_:_:_:_:_:_:).md). If the above DNSServiceRef is passed to [`DNSServiceRefDeallocate(_:)`](dnsservicerefdeallocate(_:).md), this DNSRecordRef is invalidated, and may not be used further.
 - `flags`: Currently unused, reserved for future use.
-- `errorCode`: Will be   on success, otherwise will indicate the failure that occurred (including name conflicts.) Other parameters are undefined if errorCode is nonzero.
+- `errorCode`: Will be [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success, otherwise will indicate the failure that occurred (including name conflicts.) Other parameters are undefined if errorCode is nonzero.
 - `context`: The context pointer that was passed to the callout.
 
 ## See Also

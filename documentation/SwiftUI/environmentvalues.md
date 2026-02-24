@@ -374,13 +374,15 @@ Clients of your value then access the value in the usual way, reading it with th
   The default line height for text influenced by this environment.
 - [var navigationLinkIndicatorVisibility: Visibility](environmentvalues/navigationlinkindicatorvisibility.md)
   A value that says whether a built-in navigation link would show a disclosure indicator in the current context.
-- [var openFoveatedStreamingSpace: OpenFoveatedStreamingSpaceAction](environmentvalues/openfoveatedstreamingspace.md)
 - [var remoteDeviceIdentifier: RemoteDeviceIdentifier?](environmentvalues/remotedeviceidentifier.md)
   An opaque object that identifies the device on which the scene (from which this value is accessed from) is being presented on.
 - [var requestAgeRange: DeclaredAgeRangeAction](environmentvalues/requestagerange.md)
   An action that presents a system interface to request a person’s age range.
+- [var requestAppDeletion: RequestAppDeletionAction](environmentvalues/requestappdeletion.md)
 - [var showSignificantUpdateAcknowledgement: SignificantUpdateAction](environmentvalues/showsignificantupdateacknowledgement.md)
-  An action that shows a system sheet for significant update acknowledgements.
+  An action that shows a system sheet for significant update acknowledgments.
+- [var showSignificantUpdateAcknowledgment: SignificantUpdateAction](environmentvalues/showsignificantupdateacknowledgment.md)
+  An action that shows a system sheet for significant update acknowledgments.
 - [var supportedActivityFamilies: Set<ActivityFamily>](environmentvalues/supportedactivityfamilies.md)
   An environment value that that indicates potential rendered family for a Live Activity.
 - [var supportsImagePlayground: Bool](environmentvalues/supportsimageplayground.md)

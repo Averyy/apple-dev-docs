@@ -31,9 +31,9 @@ Note that values returned from this function are immutable, even if you have rec
 ## Parameters
 
 - `keysToFetch`: An array of preference keys the values of which to obtain.
-- `applicationID`: The ID of the application whose preferences are searched. Takes the form of a Java package name, such as  .
-- `userName`:   to search the current-user domain, otherwise   to search the any-user domain.
-- `hostName`:   to search the current-host domain, otherwise   to search the any-host domain.
+- `applicationID`: The ID of the application whose preferences are searched. Takes the form of a Java package name, such as `com.foosoft`.
+- `userName`: [`kCFPreferencesCurrentUser`](kcfpreferencescurrentuser.md) to search the current-user domain, otherwise [`kCFPreferencesAnyUser`](kcfpreferencesanyuser.md) to search the any-user domain.
+- `hostName`: [`kCFPreferencesCurrentHost`](kcfpreferencescurrenthost.md) to search the current-host domain, otherwise [`kCFPreferencesAnyHost`](kcfpreferencesanyhost.md) to search the any-host domain.
 
 ## See Also
 

@@ -24,8 +24,8 @@ A parametric value offset by `timeStep` from `parametricValue`.
 
 ## Parameters
 
-- `parametricValue`: The floating point   parametric value.
-- `timeStep`: The time to offset     can be positive or negative.
+- `parametricValue`: The floating point `[0, count-1]` parametric value.
+- `timeStep`: The time to offset `parametricValue;` `timeStep` can be positive or negative.
 
 ## See Also
 

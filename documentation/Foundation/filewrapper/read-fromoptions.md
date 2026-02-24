@@ -29,7 +29,7 @@ When reading a directory, children are added and removed as necessary to match t
 ## Parameters
 
 - `url`: URL of the file-system node corresponding to the file wrapper.
-- `options`: Option flags for reading the node located at  . See   for possible values.
+- `options`: Option flags for reading the node located at `url`. See [`FileWrapper.ReadingOptions`](filewrapper/readingoptions.md) for possible values.
 
 ## See Also
 

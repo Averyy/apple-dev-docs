@@ -22,7 +22,7 @@ Use this method to update the value of a button element in the virtual controlle
 
 ## Parameters
 
-- `value`: A value in the range  .
+- `value`: A value in the range `[-1.0, 1.0]`.
 - `element`: The name of the button element to update.
 
 ## See Also

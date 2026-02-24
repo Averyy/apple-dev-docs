@@ -37,11 +37,15 @@ Anchor queries can also act as long-running queries. If you assign an update han
 
 ## Parameters
 
-- `type`: The type of sample to search for. This query supports all subclasses of  , such as  ,  ,  ,  and  .
-- `predicate`: A predicate that filters both the samples and the deleted objects returned by the query.  Pass   to receive all the newly added samples and recently deleted objects of the specified type.
-- `anchor`: Pass   to receive all the matching samples and recently deleted objects currently in the HealthKit store.
-- `limit`: The maximum number of samples received by the query. To receive all of the new samples, pass  .
-- `handler`: A block that the system calls after gathering the initial results. This block takes the following parameters:
+- `type`: The type of sample to search for. This query supports all subclasses of [`HKSampleType`](hksampletype.md), such as [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md),  and [`HKCorrelationType`](hkcorrelationtype.md).
+- `predicate`: A predicate that filters both the samples and the deleted objects returned by the query.  Pass `nil` to receive all the newly added samples and recently deleted objects of the specified type.
+- `anchor`: The anchor returned by the previous anchored object query. The anchor object corresponds to the last object that was returned by the previous anchored object query. The new query returns only samples and deleted objects that are newer than that object. Pass `nil` to receive all the matching samples and recently deleted objects currently in the HealthKit store.
+- `limit`: The maximum number of samples received by the query. To receive all of the new samples, pass [`HKObjectQueryNoLimit`](hkobjectquerynolimit.md).
+- `handler`: A block that the system calls after gathering the initial results. This block takes the following parameters: - **query**: A reference to the query calling this block.
+- **sampleObjects**: An array containing the samples returned by this query, or `nil` if an error occurred.
+- **deletedObjects**: An array containing the deleted objects returned by this query, or `nil` if an error occurred.
+- **newAnchor**: An anchor object corresponding to the last object returned by this query. Subsequent anchor queries use this value to receive new samples and deleted objects created after the query returned its initial results.
+- **error**: If an error occurs, this parameter contains an object describing the error; otherwise, it is `nil`.
 
 ## See Also
 

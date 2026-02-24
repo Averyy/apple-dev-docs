@@ -27,7 +27,7 @@ Returns `kCMBlockBufferNoErr` if successful.
 ## Parameters
 
 - `fillByte`: The data byte with which to fill the destination buffer.
-- `destinationBuffer`:   into which the data bytes are filled.
+- `destinationBuffer`: `CMBlockBuffer` into which the data bytes are filled.
 - `offsetIntoDestination`: Start of data area for the buffer.
 - `dataLength`: Length of the valid data area for the buffer.
 

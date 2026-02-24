@@ -28,7 +28,7 @@ This callback is optional. If your delegate doesn’t implement this callback, t
 ## Parameters
 
 - `semanticSegmentationMatteType`: The type of semantic segmentation matte to be replaced or stripped.
-- `photo`: The calling instance of  .
+- `photo`: The calling instance of [`AVCapturePhoto`](avcapturephoto.md).
 
 ## See Also
 

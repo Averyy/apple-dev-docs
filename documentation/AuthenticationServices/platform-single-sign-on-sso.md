@@ -10,6 +10,11 @@ Platform single sign-on (SSO) is a replacement for binding to directory services
 
 Platform SSO supports the following authentication methods with an identity provider (IdP):
 
+- **Password and encrypted password**: The IdP uses the local account password and keeps it in sync, including password updates from the login window and screensaver unlock.
+- **Password with WS-Trust**: A federated IdP, meaning an IdP that facilitates federated authentication across multiple security domains, can use the local account password for authentication.
+- **User secure enclave key**: A secure enclave-backed key can authenticate with the IdP without a password and without changing the local account password.
+- **SmartCard**: High-security customers can use a SmartCard to authenticate with the IdP.
+
 Platform SSO can create new local user accounts on demand at the login window using IdP credentials, and also integrate IdP group membership with macOS. You can use network accounts for authorization, and groups can also authorize network accounts.
 
 ##### Platform Sso 20

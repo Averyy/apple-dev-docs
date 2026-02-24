@@ -8,6 +8,11 @@ Establish Secure Sockets Layer (SSL) sessions to facilitate secure communication
 
 The following terms are used in this discussion:
 
+- **Client**: The initiator of an SSL session. The canonical example of a client is a web browser communicating with an HTTPS URL.
+- **Server**: An entity that accepts requests for SSL sessions made by clients. An example is a secure web server.
+- **SSLSession**: An entity whose existence is bounded by calls to the functions [`SSLHandshake(_:)`](sslhandshake(_:).md) and [`SSLClose(_:)`](sslclose(_:).md). An active session is in some state between these two calls, inclusive.
+- **SSLSessionContext**: The state associated with one session. A session context cannot be reused for multiple sessions.
+
 Most applications need only a few of the functions in this API, which are normally called in the following sequence:
 
 - Prepare for a session

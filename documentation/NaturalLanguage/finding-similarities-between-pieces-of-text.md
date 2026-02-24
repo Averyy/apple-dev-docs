@@ -8,7 +8,7 @@ Calculate the semantic distance between words or sentences.
 
 Finding semantic similarities between words or sentences can help you create a better user experience for your app. For example, you might enhance the experience of searching for specific photos by knowing that the search term “cloud” is related to the word “sky,” and expanding the search query to return more relevant results.
 
-To find similarities between pieces of natural language text, you use text embeddings. An  is a map from strings—words or sentences—into a vector space. Strings that are semantically similar have similar vectors, which means they’re closer together in vector space.
+To find similarities between pieces of natural language text, you use text embeddings. An *embedding* is a map from strings—words or sentences—into a vector space. Strings that are semantically similar have similar vectors, which means they’re closer together in vector space.
 
 ![Diagram of a 3-dimensional coordinate system (X, Y, Z) with six words in the space. Three of the words — food, pizza, and burger — are located near one another along the Y-axis. The other three words — automobile, car, and bus — are located near one another along the X-axis. The clusters of words are separated by a good amount of space because they contain unrelated words.](https://docs-assets.developer.apple.com/published/47e8240baf2ac0b4a5c8d3c3763f7f62/media-3687947%402x.png)
 

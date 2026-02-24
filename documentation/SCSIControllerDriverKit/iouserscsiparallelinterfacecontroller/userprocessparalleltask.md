@@ -57,9 +57,9 @@ IMPL ( ExampleSCSIDext, UserProcessParallelTask )
 
 ## Parameters
 
-- `parallelRequest`: A   object that contains all necessary request information.
+- `parallelRequest`: A [`SCSIUserParallelTask`](scsiuserparalleltask.md) object that contains all necessary request information.
 - `response`: A service response for the request.
-- `completion`: An   object that the dext class uses to complete the request.
+- `completion`: An [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) object that the dext class uses to complete the request.
 
 ## See Also
 

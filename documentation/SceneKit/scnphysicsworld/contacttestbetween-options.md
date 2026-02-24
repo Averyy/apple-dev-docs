@@ -32,7 +32,7 @@ SceneKit sends messages to the physics world’s [`contactDelegate`](scnphysicsw
 
 - `bodyA`: The first body (to test for contact with the second).
 - `bodyB`: The second body (to test for contact with the first).
-- `options`: A dictionary of options affecting the test, or   to use default options. For applicable keys and the possible values, see  .
+- `options`: A dictionary of options affecting the test, or `nil` to use default options. For applicable keys and the possible values, see `Physics Test Options Keys`.
 
 ## See Also
 

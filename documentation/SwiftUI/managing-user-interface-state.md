@@ -6,7 +6,7 @@ Encapsulate view-specific data within your app’s view hierarchy to make your v
 
 #### Overview
 
-Store data as state in the least common ancestor of the views that need the data to establish a single  that’s shared across views. Provide the data as read-only through a Swift property, or create a two-way connection to the state with a binding. SwiftUI watches for changes in the data, and updates any affected views as needed.
+Store data as state in the least common ancestor of the views that need the data to establish a single *source of truth* that’s shared across views. Provide the data as read-only through a Swift property, or create a two-way connection to the state with a binding. SwiftUI watches for changes in the data, and updates any affected views as needed.
 
 ![A diagram showing state stored in one view, shared with another view through a binding that provides a two-way connection, and shared with yet another view as a property providing a one-way connection.](https://docs-assets.developer.apple.com/published/c75c698bd113a4ac7c708e178f8294ca/managing-user-interface-state%402x.png)
 

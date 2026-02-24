@@ -31,7 +31,7 @@ This method returns immediately when called, but the session continues to run.
 ## Parameters
 
 - `configuration`: An object that defines motion and scene tracking behaviors for the session.
-- `options`: If the session is running for the first time, this parameter has no effect.
+- `options`: Options affecting how existing session state (if any) transitions to the new configuration. If the session is running for the first time, this parameter has no effect.
 
 ## See Also
 

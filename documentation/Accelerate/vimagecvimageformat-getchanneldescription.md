@@ -41,7 +41,7 @@ let channelDescription = withUnsafeBytes(of: cvImageFormat) { bytes in
 ## Parameters
 
 - `format`: The Core Video image format to query.
-- `type`: The type of the channel that you want information about. For example,  .
+- `type`: The type of the channel that you want information about. For example, [`kvImageBufferTypeCode_Luminance`](kvimagebuffertypecode_luminance.md).
 
 ## See Also
 

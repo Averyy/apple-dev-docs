@@ -20,7 +20,7 @@ The kernel calls this user space method at enumeration time. Use this callback t
 
 ## Parameters
 
-- `result`: On return, this value is   if initialization succeeds; otherwise,  .
+- `result`: On return, this value is `true` if initialization succeeds; otherwise, `false`.
 
 ## See Also
 

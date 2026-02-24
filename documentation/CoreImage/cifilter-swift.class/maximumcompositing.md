@@ -29,6 +29,9 @@ This method applies the maximum compositing filter to an image. The effect calcu
 
 The maximum compositing filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in an image with a mixture of images’ colors:
 
 ```swift

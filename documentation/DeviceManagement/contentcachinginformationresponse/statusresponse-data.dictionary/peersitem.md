@@ -22,6 +22,17 @@ object ContentCachingInformationResponse.StatusResponse.PeersItem
 - [object ContentCachingInformationResponse.StatusResponse.PeersItem.Details](contentcachinginformationresponse/statusresponse-data.dictionary/peersitem/details-data.dictionary.md)
   A dictionary that contains additional details about the peer content cache.
 
+## Properties
+
+- `address` (string) *(required)*: The local IP address of the peer content cache.
+- `alert` (ContentCachingInformationResponse.StatusResponse.PeersItem.Alert): A dictionary that describes an alert related to the peer content cache.
+- `details` (ContentCachingInformationResponse.StatusResponse.PeersItem.Details) *(required)*: A dictionary that contains additional details about the peer content cache.
+- `friendly` (boolean) *(required)*: If `true`, the peer content cache is able to respond to requests from the content cache.
+- `guid` (string) *(required)*: The unique identifier of the peer content cache.
+- `healthy` (boolean) *(required)*: If `true`, the peer content cache is able to respond to requests from the content cache.
+- `port` (integer) *(required)*: The IP port number the peer content cache listens to for requests.
+- `version` (string) *(required)*: The version number of the peer content cache software.
+
 ## See Also
 
 - [object ContentCachingInformationResponse.StatusResponse.AlertsForPeerFilterRanges](contentcachinginformationresponse/statusresponse-data.dictionary/alertsforpeerfilterranges-data.dictionary.md)

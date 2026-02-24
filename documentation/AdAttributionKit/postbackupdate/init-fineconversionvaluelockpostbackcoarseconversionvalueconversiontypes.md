@@ -19,9 +19,9 @@ init(fineConversionValue: Int, lockPostback: Bool, coarseConversionValue: Coarse
 ## Parameters
 
 - `fineConversionValue`: An integer that represents the fine conversion value.
-- `lockPostback`: A Boolean value that indicates whether the system can lock the postback, reducing the system time   to deliver a signal.
-- `coarseConversionValue`: An optional   enumeration value that represents the   coarse conversion value. Defaults to  .
-- `conversionTypes`: An optional array of conversion types the system uses to determine which postbacks to update.   Defaults to   and the system updates all types of postbacks by default.
+- `lockPostback`: A Boolean value that indicates whether the system can lock the postback, reducing the system time to deliver a signal.
+- `coarseConversionValue`: An optional `CoarseConversionValue` enumeration value that represents the coarse conversion value. Defaults to `nil`.
+- `conversionTypes`: An optional array of conversion types the system uses to determine which postbacks to update. Defaults to `nil` and the system updates all types of postbacks by default.
 
 
 ---

@@ -26,7 +26,7 @@ mutating func removeLast(_ k: Int = 1)
 
 ## Parameters
 
-- `k`: The number of values to remove. The default value is  .
+- `k`: The number of values to remove. The default value is `1`.
 
 ## See Also
 

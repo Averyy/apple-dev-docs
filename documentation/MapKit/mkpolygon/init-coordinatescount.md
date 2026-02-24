@@ -27,7 +27,7 @@ A new polygon object.
 ## Parameters
 
 - `coords`: The array of coordinates defining the shape. The new object copies the data in this array.
-- `count`: The number of items in the   array.
+- `count`: The number of items in the `coords` array.
 
 ## See Also
 

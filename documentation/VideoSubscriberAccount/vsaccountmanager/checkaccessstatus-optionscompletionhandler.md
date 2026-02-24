@@ -19,8 +19,9 @@ func checkAccessStatus(options: [VSCheckAccessOption : Any] = [:]) async throws 
 
 ## Parameters
 
-- `options`: The options you use to check access status. For a list of possible options, see  .
-- `completionHandler`: The closure the account manager executes after it checks your app’s access status. This closure has no return value and takes the following parameters:
+- `options`: The options you use to check access status. For a list of possible options, see [`VSCheckAccessOption`](vscheckaccessoption.md).
+- `completionHandler`: The closure the account manager executes after it checks your app’s access status. This closure has no return value and takes the following parameters: - **accessStatus**: The access status of your app. For a list of possible values, see [`VSAccountAccessStatus`](vsaccountaccessstatus.md).
+- **error**: An error object that contains information about a problem, or `nil` if the operation completed successfully.
 
 ## See Also
 

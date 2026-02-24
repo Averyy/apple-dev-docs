@@ -23,8 +23,8 @@ func CFReadStreamUnscheduleFromRunLoop(_ stream: CFReadStream!, _ runLoop: CFRun
 ## Parameters
 
 - `stream`: The stream to unschedule.
-- `runLoop`: The run loop from which to remove  .
-- `runLoopMode`: The run loop mode of   from which to remove  .
+- `runLoop`: The run loop from which to remove `stream`.
+- `runLoopMode`: The run loop mode of `runLoop` from which to remove `stream`.
 
 ## See Also
 

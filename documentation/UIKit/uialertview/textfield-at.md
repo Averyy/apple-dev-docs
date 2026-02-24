@@ -35,7 +35,7 @@ If your application attempts to retrieve a text field with an index that is out 
 
 ## Parameters
 
-- `textFieldIndex`: The index of the text field. The text field indices start at  .
+- `textFieldIndex`: The index of the text field. The text field indices start at `0`.
 
 ## See Also
 

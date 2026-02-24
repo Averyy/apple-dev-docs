@@ -6,6 +6,8 @@ Make it easier for people to access their content and adopt your app as part of 
 
 Incorporate features that make it easier for people to do the things they want to do. When you adopt the right technologies, it takes less effort to make your app more convenient to use. Some technologies even provide the fundamental support you need to implement other features. For example, Handoff and App Clips require you to implement universal links for your app’s content.
 
+---
+
 #### Provide Consistent Urls for App Content
 
 URLs are a consistent way for people to access content on the web, and universal links extend that consistency to your apps. When you [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content) in your app, the same URLs people use to access your website work in your app, too. Many features rely on universal links, including:
@@ -23,6 +25,8 @@ When the system [`Supporting universal links in your app`](https://developer.app
 
 To prevent other apps from opening links intended for your website, universal links require an [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains), which you add to your Xcode project. You must also [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains) and create an association between the site and your app. This two-way validation process helps protect against malicious apps trying to intercept your links.
 
+---
+
 #### Transfer Activities to Other Devices
 
 Handoff is a way for people to start an activity on one device, and transfer that activity to a different device with the same Apple ID. Handoff works with iPhone, iPad, Apple Watch, and Mac, so add support if you offer your app on more than one of those platforms.
@@ -33,6 +37,8 @@ To add Handoff support, you first must consider which tasks someone might be abl
 
 Because Handoff transfers your app’s data from one device to another, make transfers fast by putting as little data as possible in your [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects. A shopping app that lets someone continue viewing product information might include only the URL of the product page, using a [`Provide consistent URLs for app content`](convenience#Provide-consistent-URLs-for-app-content.md). A video app might transfer only the name or URL of the video and not the video file itself. Because the devices that accept Handoff transfers share an Apple ID, you can expect them to have access to the same content.
 
+---
+
 #### Generate Previews for Custom Data Formats
 
 If your app has custom document formats, include a Quick Look Preview app extension to generate a preview of files that use those formats. Quick Look is a system feature that people use to view the contents of a file or document without opening it. They can use this feature to verify a file contains the content they expect before opening it. The Finder displays a Quick Look preview when someone selects a file and presses the Spacebar key, and the [`Activity views`](https://developer.apple.com/design/Human-Interface-Guidelines/activity-views) and other system interfaces also incorporate Quick Look previews.
@@ -40,6 +46,8 @@ If your app has custom document formats, include a Quick Look Preview app extens
 Create a Quick Look Preview app extension using the [`Quick Look`](https://developer.apple.com/documentation/QuickLook) framework, and include it with the app that owns one of your custom file formats. Create the app extension only for custom file formats that you define. You don’t need this app extension if you rely solely on standard file formats. The system already generates previews for many standard text and image file formats, PDFs, audio and video files, USDZ files, and more.
 
 If you have a macOS app that shows files as part of its interface, add previews for those files using the [`Quick Look UI`](https://developer.apple.com/documentation/QuickLookUI) framework. This framework provides panels and views that show the contents of files that have defined previews. These panels show both the standard file formats and any custom formats that apps provide.
+
+---
 
 #### Adopt a Fast Login Workflow
 
@@ -56,6 +64,8 @@ You adopt Sign in with Apple in several different ways:
 
 For a media streaming app that runs on multiple platforms, [`Signing people in to their media accounts automatically`](https://developer.apple.com/documentation/VideoSubscriberAccount/signing-people-in-to-media-apps-automatically) to get people to your content more quickly. The [`Video Subscriber Account`](https://developer.apple.com/documentation/VideoSubscriberAccount) framework supports an Automatic Sign-In workflow, which you use to generate a token that authorizes the person’s access to your services. The framework stores this token on the person’s Apple Account, making it available to all of their devices. If the token is present at app startup, use it to log in automatically instead of asking for the person’s credentials. Update the token, or remove it entirely, using [`Automatic Sign-In API`](https://developer.apple.com/documentation/AutomaticSignInAPI).
 
+---
+
 #### Incorporate Content Shared in Messages
 
 People often receive links and other content when they’re not ready to receive it. [`Shared with You`](https://developer.apple.com/documentation/SharedWithYou) makes it easier for you to incorporate the links that people share into your app. The framework extracts app-specific links people send using Messages and makes them available to your app. You can display this list of links to people from a custom view in your app, giving them quick access to content they might have forgotten about in their Messages conversations.
@@ -66,6 +76,8 @@ Shared with You relies on your app adopting [`Provide consistent URLs for app co
 - Display a [`SWAttributionView`](https://developer.apple.com/documentation/SharedWithYou/SWAttributionView) object in views you use to display linked content. The view shows the people who sent you the content in Messages, and interactions with the view open Messages and take the person to the conversation with the link.
 
 In addition to managing shared items in Messages, you can also use Shared with You to [`Adding shared content collaboration to your app`](https://developer.apple.com/documentation/SharedWithYou/adding-shared-content-collaboration-to-your-app) for content your app creates. You might use this approach for content you put in CloudKit, iCloud Drive, or another shared storage server. After you place the content in a shared location, use Shared with You types to present UI for sharing that content with other people.
+
+---
 
 #### Allow People to Try Your App Quickly
 

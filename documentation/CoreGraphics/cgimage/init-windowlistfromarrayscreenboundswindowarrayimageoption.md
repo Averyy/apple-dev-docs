@@ -23,9 +23,9 @@ This function ignores the onscreen ordering of the windows and instead composite
 
 ## Parameters
 
-- `screenBounds`: The rectangle that you want to capture. The coordinates of the rectangle must be specified in screen coordinates, where the screen origin is in the upper-left corner of the main display and y-axis values increase downward. Specify   to indicate the minimum rectangle that encloses the specified windows. Specify   to capture the entire desktop area.
-- `windowArray`: An array of   types, each of which corresponds to a window whose information you want to retrieve. The order of the window IDs also affects the compositing order of the windows; see the discussion for more information about this behavior.
-- `imageOption`: The options that determine which parts of the window to capture. If you specified   for the   parameter, these options help determine the resulting bounding box used for the image. For example, if you include a window’s screen effects in the image, the bounding box may need to be slightly larger to accommodate those effects. For a list of possible options, see  .
+- `screenBounds`: The rectangle that you want to capture. The coordinates of the rectangle must be specified in screen coordinates, where the screen origin is in the upper-left corner of the main display and y-axis values increase downward. Specify [`CGRectNull`](cgrectnull.md) to indicate the minimum rectangle that encloses the specified windows. Specify [`CGRectInfinite`](cgrectinfinite.md) to capture the entire desktop area.
+- `windowArray`: An array of [`CGWindowID`](cgwindowid.md) types, each of which corresponds to a window whose information you want to retrieve. The order of the window IDs also affects the compositing order of the windows; see the discussion for more information about this behavior.
+- `imageOption`: The options that determine which parts of the window to capture. If you specified [`CGRectNull`](cgrectnull.md) for the `screenBounds` parameter, these options help determine the resulting bounding box used for the image. For example, if you include a window’s screen effects in the image, the bounding box may need to be slightly larger to accommodate those effects. For a list of possible options, see [`Window Image Types`](window-image-types.md).
 
 ## See Also
 

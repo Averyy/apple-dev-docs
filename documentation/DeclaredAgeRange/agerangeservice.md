@@ -79,6 +79,9 @@ The system may override your age-range restrictions based on regulations and the
 ### Handling errors
 - [AgeRangeService.Error](agerangeservice/error.md)
   An error that occurs when an age range request fails.
+### Instance Methods
+- [func showSignificantUpdateAcknowledgment(in: UIWindowScene, updateDescription: String) async throws](agerangeservice/showsignificantupdateacknowledgment(in:updatedescription:).md)
+  Displays a system-provided sheet for people to acknowledge a significant app update.
 
 ## See Also
 

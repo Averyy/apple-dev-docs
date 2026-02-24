@@ -55,7 +55,7 @@ Compared to [`MTLMeshRenderPipelineDescriptor`](mtlmeshrenderpipelinedescriptor.
 - [var meshThreadgroupSizeIsMultipleOfThreadExecutionWidth: Bool](mtl4meshrenderpipelinedescriptor/meshthreadgroupsizeismultipleofthreadexecutionwidth.md)
   Provides a guarantee to Metal regarding the number of threadgroup threads for the mesh stage of a pipeline you create from this descriptor.
 - [var objectFunctionDescriptor: MTL4FunctionDescriptor?](mtl4meshrenderpipelinedescriptor/objectfunctiondescriptor.md)
-  Assigns a function descriptor representing the function this pipeline executes for each  in the object shader stage.
+  Assigns a function descriptor representing the function this pipeline executes for each *object* in the object shader stage.
 - [var objectStaticLinkingDescriptor: MTL4StaticLinkingDescriptor!](mtl4meshrenderpipelinedescriptor/objectstaticlinkingdescriptor.md)
   Provides static linking information for the object stage of the render pipeline.
 - [var objectThreadgroupSizeIsMultipleOfThreadExecutionWidth: Bool](mtl4meshrenderpipelinedescriptor/objectthreadgroupsizeismultipleofthreadexecutionwidth.md)

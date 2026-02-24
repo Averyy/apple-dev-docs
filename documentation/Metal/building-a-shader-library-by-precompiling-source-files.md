@@ -48,6 +48,61 @@ The command produces a Metal library that your app can load at runtime. One way 
 
 At runtime, you can access a library by creating an [`MTLLibrary`](mtllibrary.md) instance with the [`makeLibrary(URL:)`](mtldevice/makelibrary(url:).md) method.
 
+**Swift**:
+
+```swift
+func createLibrary(_ device: MTLDevice, libraryName: String) -> MTLLibrary? {
+    let libraryURL = Bundle.main.url(forResource: libraryName,
+                                     withExtension: "metallib")
+
+    guard let libraryURL else {
+        print("Couldn't find library file: \(libraryName)");
+        return nil;
+    }
+
+    let library: MTLLibrary
+    do {
+        library = try device.makeLibrary(URL: libraryURL)
+    } catch {
+        print("Couldn't find library file: \(libraryName)");
+        print("Error descriotion: \(error.localizedDescription)")
+        return nil
+    }
+
+    return library
+}
+```
+
+**Objective-C**:
+
+```objective-c
++ (id<MTLLibrary>) createLibrary:(id<MTLDevice>)device
+                        fromName:(NSString*)libraryName
+{
+    NSURL *libraryURL = [[NSBundle mainBundle] URLForResource:libraryName
+                                                withExtension:@"metallib"];
+
+    if (libraryURL == nil) {
+        NSLog(@"Couldn't find library file: %@", libraryName);
+        return nil;
+    }
+
+    NSError *libraryError = nil;
+    id <MTLLibrary> library = [device newLibraryWithURL:libraryURL
+                                                  error:&libraryError];
+    if (library == nil) {
+        NSLog(@"Couldn't create library: %@", libraryName);
+
+        if (libraryError != nil) {
+            NSLog(@"Error description: %@", libraryError.localizedDescription);
+        }
+        return nil;
+    }
+
+    return library;
+}
+```
+
 ## See Also
 
 - [Minimizing the binary size of a shader library](minimizing-the-binary-size-of-a-shader-library.md)

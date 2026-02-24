@@ -32,8 +32,8 @@ This method creates an external representation (with a byte order marker, if nec
 
 ## Parameters
 
-- `encoding`: A string encoding. For possible values, see  .
-- `lossy`: If  , then allows characters to be removed or altered in conversion.
+- `encoding`: A string encoding. For possible values, see [`NSStringEncoding`](nsstringencoding.md).
+- `lossy`: If [`true`](https://developer.apple.com/documentation/Swift/true), then allows characters to be removed or altered in conversion.
 
 ## See Also
 

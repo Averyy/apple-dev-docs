@@ -51,6 +51,11 @@ Test how your app handles moving to a specific location, or moving along a route
 
 Simulator contains some preset locations and routes. Choose Features > Location, and then select one of these options:
 
+- **Apple**: Sets the location to the Apple Infinite Loop campus in Cupertino.
+- **City Bicycle Ride**: Simulates the user taking a bicycle ride in Cupertino. The route repeats until you change the location.
+- **City Run**: Simulates the user taking a run in Cupertino. The route repeats until you change the location.
+- **Freeway Drive**: Simulates the user driving from Cupertino to San Francisco. The route repeats until you change the location.
+
 To set the location to a specific latitude and longitude:
 
 1. Choose Features > Location > Custom Location…

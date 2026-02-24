@@ -28,7 +28,7 @@ Get the negotiated TLS ciphersuite.
 
 ## Parameters
 
-- `metadata`: A   instance.
+- `metadata`: A `sec_protocol_metadata_t` instance.
 
 
 ---

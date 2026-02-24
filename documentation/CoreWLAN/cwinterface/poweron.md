@@ -16,7 +16,7 @@ func powerOn() -> Bool
 
 #### Discussion
 
-Dynamically queries the interface for the current power state. Returns  in the case of an error.
+Dynamically queries the interface for the current power state. Returns *NO* in the case of an error.
 
 ## See Also
 

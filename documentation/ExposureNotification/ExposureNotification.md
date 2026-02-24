@@ -22,6 +22,9 @@ Use the Exposure Notification framework to inform people of potential exposure t
 
 The ExposureNotification framework defines two user roles:
 
+- **Affected user**: When a user has a confirmed or probable diagnosis of COVID-19 (as defined by the Health Authority), the framework identifies them as *affected* and shares their diagnosis keys to alert other users to potential exposure.
+- **Potentially exposed user**: To assign a user the *potentially exposed* role, use the framework to determine whether a set of temporary exposure keys indicate proximity to an affected user. If so, the app can retrieve additional information such as date and duration from the framework.
+
 > ❗ **Important**:  Before you can develop an app that uses ExposureNotification, you need the [`com.apple.developer.exposure-notification`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.exposure-notification) entitlement. For more information on this entitlement, see [`Exposure Notification APIs Addendum`](https://developer.apple.comhttps://developer.apple.com/contact/request/download/Exposure_Notification_Addendum.pdf). To get permission to use this entitlement, see [`Exposure Notification Entitlement Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/exposure-notification-entitlement).
 
 ##### Identify Your Apps Region

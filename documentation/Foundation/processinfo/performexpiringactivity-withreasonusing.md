@@ -27,8 +27,8 @@ If your block is still executing and the system need to suspend the process, the
 
 ## Parameters
 
-- `reason`: A string used in debugging to indicate the reason the activity began. This parameter must not be   or an empty string.
-- `block`: A block containing the work to be performed by the activity. The block has no return value and takes the following parameter:
+- `reason`: A string used in debugging to indicate the reason the activity began. This parameter must not be `nil` or an empty string.
+- `block`: A block containing the work to be performed by the activity. The block has no return value and takes the following parameter: - **expired**: A Boolean indicating whether the process is about to be suspended. If the value is [`true`](https://developer.apple.com/documentation/Swift/true), the process is about to be suspended so you should take whatever steps are needed to stop in progress work. If it is [`false`](https://developer.apple.com/documentation/Swift/false), start the planned tasks.
 
 ## See Also
 

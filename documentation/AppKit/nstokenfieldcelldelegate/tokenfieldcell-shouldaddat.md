@@ -26,8 +26,8 @@ The delegate can return the array unchanged or return a modified array of tokens
 ## Parameters
 
 - `tokenFieldCell`: The token field cell that sent the message.
-- `tokens`: An array of tokens to be inserted in the receiver at  .
-- `index`: The index of the receiver in which the array of tokens to be validated ( ) will be inserted.
+- `tokens`: An array of tokens to be inserted in the receiver at `index`.
+- `index`: The index of the receiver in which the array of tokens to be validated (`tokens`) will be inserted.
 
 ## See Also
 

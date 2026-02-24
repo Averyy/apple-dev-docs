@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: var
 
-A  factor subfactor that’s valid for ` `only.
+A *D* factor subfactor that’s valid for *LDLᵀ*` `only.
 
 **Availability**:
 - iOS 11.0+
@@ -27,17 +27,17 @@ var SparseSubfactorD: SparseSubfactor_t { get }
 - [var SparseSubfactorP: SparseSubfactor_t](sparsesubfactorp.md)
   A permutation subfactor that’s valid for all factorization types.
 - [var SparseSubfactorS: SparseSubfactor_t](sparsesubfactors.md)
-  A diagonal scaling subfactor that’s valid for Cholesky and  only.
+  A diagonal scaling subfactor that’s valid for Cholesky and *LDLᵀ* only.
 - [var SparseSubfactorL: SparseSubfactor_t](sparsesubfactorl.md)
-  An  factor subfactor that’s valid for Cholesky and  only.
+  An *L* factor subfactor that’s valid for Cholesky and *LDLᵀ* only.
 - [var SparseSubfactorPLPS: SparseSubfactor_t](sparsesubfactorplps.md)
-  A half-solve subfactor that’s valid for Cholesky and  only.
+  A half-solve subfactor that’s valid for Cholesky and *LDLᵀ* only.
 - [var SparseSubfactorQ: SparseSubfactor_t](sparsesubfactorq.md)
-  A  factor subfactor that’s valid for QR only.
+  A *Q* factor subfactor that’s valid for QR only.
 - [var SparseSubfactorR: SparseSubfactor_t](sparsesubfactorr.md)
-  An  factor subfactor that’s valid for QR and Cholesky  only.
+  An *R* factor subfactor that’s valid for QR and Cholesky *AᵀA* only.
 - [var SparseSubfactorRP: SparseSubfactor_t](sparsesubfactorrp.md)
-  A half-solve subfactor that’s valid for QR and Cholesky  only.
+  A half-solve subfactor that’s valid for QR and Cholesky *AᵀA* only.
 - [var SparseSubfactorSc: SparseSubfactor_t](sparsesubfactorsc.md)
   Types of sub-factor object.
 - [var SparseSubfactorSr: SparseSubfactor_t](sparsesubfactorsr.md)

@@ -54,7 +54,7 @@ If the closure throws an error, the publisher fails with the error.
 
 ## Parameters
 
-- `initialResult`: The previous result returned by the   closure.
+- `initialResult`: The previous result returned by the `nextPartialResult` closure.
 - `nextPartialResult`: An error-throwing closure that takes as its arguments the previous value returned by the closure and the next element emitted from the upstream publisher.
 
 ## See Also

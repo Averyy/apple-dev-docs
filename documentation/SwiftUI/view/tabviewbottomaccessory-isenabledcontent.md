@@ -50,7 +50,7 @@ TabView {
 
 ## Parameters
 
-- `isEnabled`: If true, the bottom accessory is shown; otherwise,   the bottom accessory is hidden.
+- `isEnabled`: If true, the bottom accessory is shown; otherwise, the bottom accessory is hidden.
 - `content`: The content view of the tab view accessory.
 
 

@@ -21,7 +21,7 @@ var valueStrings: [String]? { get }
 
 #### Discussion
 
-This property allows you to specify an array of strings to be used for the values of an indexed parameter—for example, a  parameter could publish these values: “High”, “Medium”, “Low”.
+This property allows you to specify an array of strings to be used for the values of an indexed parameter—for example, a *band* parameter could publish these values: “High”, “Medium”, “Low”.
 
 ## See Also
 

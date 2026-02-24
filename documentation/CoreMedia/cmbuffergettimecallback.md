@@ -26,6 +26,9 @@ There are three callbacks of this type that can be provided to `Creating Buffer 
 
 ##### Callback Parameters
 
+- **buf**: The buffer being interrogated.
+- **refcon**: The contextual data from the client (which may be `NULL`).
+
 ## See Also
 
 - [var compare: CMBufferCompareCallback?](cmbuffercallbacks/compare.md)

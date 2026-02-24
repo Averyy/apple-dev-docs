@@ -26,7 +26,7 @@ When encoding, the receiver’s translation map overrides any translation that m
 
 ## Parameters
 
-- `codedName`: The name of the class that the receiver uses uses in place of  .
+- `codedName`: The name of the class that the receiver uses uses in place of `cls`.
 - `cls`: The class for which to set up a translation mapping.
 
 ## See Also

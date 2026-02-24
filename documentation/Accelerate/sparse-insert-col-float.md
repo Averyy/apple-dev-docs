@@ -38,11 +38,11 @@ Indices in `indx` are always assumed to be stored in ascending order. Additional
 
 ## Parameters
 
-- `A`: The sparse matrix,  , which must have been created with  .   is returned if not met.
+- `A`: The sparse matrix, *A*, which must have been created with [`sparse_matrix_create_float(_:_:)`](sparse_matrix_create_float(_:_:).md). [`SPARSE_ILLEGAL_PARAMETER`](sparse_illegal_parameter.md) is returned if not met.
 - `j`: The column for value insertion. Indices expected to be in the bounds of matrix dimensions, undefined behavior if not met.
-- `nz`: The number of values to insert into  .  Each of   and   are of size  .
-- `val`: Pointer to list of scalar values to insert into the sparse matrix.  The value is inserted into the location specified by the corresponding indices of   and  .  Must hold   values.
-- `indx`: An array of column indices that correspond to the values in val. Must hold   values.
+- `nz`: The number of values to insert into `A`.  Each of `indx` and `val` are of size `nz`.
+- `val`: Pointer to list of scalar values to insert into the sparse matrix.  The value is inserted into the location specified by the corresponding indices of `indx` and `j`.  Must hold `nz` values.
+- `indx`: An array of column indices that correspond to the values in val. Must hold `nz` values.
 
 ## See Also
 

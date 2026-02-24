@@ -36,6 +36,11 @@ Specify `com.apple.dashboard` as the payload type.
 - [object ParentalControlsDashboardWidgetRestrictions.WhiteListItem](parentalcontrolsdashboardwidgetrestrictions/whitelistitem.md)
   The widget item dictionary.
 
+## Properties
+
+- `WhiteList` ([ParentalControlsDashboardWidgetRestrictions.WhiteListItem]) *(required)*: An array of widget item dictionaries that are allowed.
+- `whiteListEnabled` (boolean) *(required)*: If `true`, enables the widget allow list.
+
 ## See Also
 
 - [object AIMAccount](aimaccount.md)

@@ -12,6 +12,10 @@ Types of media supported by an app extension’s media-playing intents.
 - visionOS 1.0+
 - watchOS 6.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 Specify one or more media categories to allow Siri to invoke your app’s intent handling when a user asks to play media. Use `INMediaCategoryGeneral` for media that doesn’t fit into any of the other categories, like white noise or sound effects.

@@ -32,6 +32,28 @@ Every time your app launches, whether in the foreground or in the background, cr
 
 Listing 1. Creating and configuring a push registry object
 
+**Swift**:
+
+```swift
+func registerForVoIPPushes() {
+    self.voipRegistry = PKPushRegistry(queue: nil)
+    self.voipRegistry.delegate = self
+    self.voipRegistry.desiredPushTypes = [PKPushTypeVoIP]
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void) registerForVoIPPushes {
+   self.voipRegistry = [[PKPushRegistry alloc] initWithQueue:nil];
+   self.voipRegistry.delegate = self;
+ 
+   // Initiate registration.
+   self.voipRegistry.desiredPushTypes = [NSSet setWithObject:PKPushTypeVoIP];
+}
+```
+
 Assigning a new value to the [`desiredPushTypes`](pkpushregistry/desiredpushtypes.md) property registers the push registry object with the PushKit servers. The server reports the success or failure of your registration attempts asynchronously to the push registry, which then reports those results to its delegate object. The push registry also delivers all received notifications to the delegate object. For more information about the delegate methods, see [`PKPushRegistryDelegate`](pkpushregistrydelegate.md).
 
 ## Topics

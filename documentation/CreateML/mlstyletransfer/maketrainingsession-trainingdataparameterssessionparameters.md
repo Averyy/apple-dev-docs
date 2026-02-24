@@ -25,8 +25,8 @@ An [`MLTrainingSession`](mltrainingsession.md) that represents the style transfe
 ## Parameters
 
 - `trainingData`: The style image and content images represented by a data source.
-- `parameters`: An   instance you use to configure the model for the training   session.
-- `sessionParameters`: An   instance you use to configure the training session.
+- `parameters`: An [`MLStyleTransfer.ModelParameters`](mlstyletransfer/modelparameters.md) instance you use to configure the model for the training session.
+- `sessionParameters`: An [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you use to configure the training session.
 
 ## See Also
 

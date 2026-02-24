@@ -70,6 +70,9 @@ If you provide a value when you open the space, the scene’s trailing closure r
 ### Getting the result
 - [OpenImmersiveSpaceAction.Result](openimmersivespaceaction/result.md)
   The outcome of an attempt to open an immersive space.
+### Instance Methods
+- [func callAsFunction(foveatedStreaming: FoveatedStreamingSession) async -> OpenImmersiveSpaceAction.Result](openimmersivespaceaction/callasfunction(foveatedstreaming:).md)
+  Presents the immersive space that your app defines for the specified foveated streaming session.
 
 ## Relationships
 

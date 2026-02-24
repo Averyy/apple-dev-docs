@@ -25,7 +25,7 @@ The expected behavior of an app is to pause playback if a route change occurs du
 
 ## Parameters
 
-- `inValue`: Specify a   value to opt out of interruption on route disconnect. Set to   to reset to the default behavior.
+- `inValue`: Specify a [`false`](https://developer.apple.com/documentation/Swift/false) value to opt out of interruption on route disconnect. Set to [`true`](https://developer.apple.com/documentation/Swift/true) to reset to the default behavior.
 
 ## See Also
 

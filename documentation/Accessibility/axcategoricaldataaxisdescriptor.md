@@ -22,7 +22,7 @@ class AXCategoricalDataAxisDescriptor
 
 #### Overview
 
-A categorical data axis divides information into groups, or categories. For example, a categorical axis may represent blood type data divided into the possible categories , , , and .
+A categorical data axis divides information into groups, or categories. For example, a categorical axis may represent blood type data divided into the possible categories *AB*, *A*, *B*, and *O*.
 
 ## Topics
 

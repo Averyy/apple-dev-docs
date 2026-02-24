@@ -20,8 +20,8 @@ A pointer to a new transform or `NULL` on failure. In Objective-C, call the [`CF
 
 ## Parameters
 
-- `name`: The type of transform to create. Use one of the pre-defined transform types or a custom type that you previously registered using  .
-- `error`: A pointer that the function uses to provide an error object with details if an error occurs. The caller becomes responsible for the object’s memory. Pass   to ignore the error.
+- `name`: The type of transform to create. Use one of the pre-defined transform types or a custom type that you previously registered using [`SecTransformRegister(_:_:_:)`](sectransformregister(_:_:_:).md).
+- `error`: A pointer that the function uses to provide an error object with details if an error occurs. The caller becomes responsible for the object’s memory. Pass `NULL` to ignore the error.
 
 
 ---

@@ -22,8 +22,8 @@ Xcode 15.2 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, mac
 
 ###### Known Issues
 
-- visionOS App Icons don’t receive visual effects (depth, animation, edge textures) in Home View if any layer is smaller than 1024x1024px. Xcode doesn’t provide a warning or error for this behavior.  (107568059)  Make all layers of a visionOS App Icon 1024x1024px (@2x), and keep “Center in Canvas” and “Match Content Image” enabled in the Asset Catalog inspector for each layer.
-- When the Base SDK Build Setting is set to iOS, the “Any visionOS Device” run destination will incorrectly display as “Any visionOS Device (Designed for iPad)” and will build using the iOS SDK.  (112633577) (FB12695059)  Change the Base SDK Build Setting to visionOS to use the “Any visionOS Device” run destination (FB12695059)
+- visionOS App Icons don’t receive visual effects (depth, animation, edge textures) in Home View if any layer is smaller than 1024x1024px. Xcode doesn’t provide a warning or error for this behavior.  (107568059) **Workaround:** Make all layers of a visionOS App Icon 1024x1024px (@2x), and keep “Center in Canvas” and “Match Content Image” enabled in the Asset Catalog inspector for each layer.
+- When the Base SDK Build Setting is set to iOS, the “Any visionOS Device” run destination will incorrectly display as “Any visionOS Device (Designed for iPad)” and will build using the iOS SDK.  (112633577) (FB12695059) **Workaround:** Change the Base SDK Build Setting to visionOS to use the “Any visionOS Device” run destination (FB12695059)
 
 ##### Asset Catalogs
 
@@ -42,7 +42,7 @@ Xcode 15.2 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, mac
 ###### Known Issues
 
 - In certain circumstances, an app can’t read the contents of its own data container after replacing the content of the data container using Xcode or devicectl.  (116698465) (FB13253099)
-- Running a WatchApp that requires the companion iOS app to be installed will result in the error “An application bundle was not found at the provided path” when the run destination is set to a Watch via iPhone Simulator pair.  (119640671)  Select a singular Watch Simulator run destination and then Run.
+- Running a WatchApp that requires the companion iOS app to be installed will result in the error “An application bundle was not found at the provided path” when the run destination is set to a Watch via iPhone Simulator pair.  (119640671) **Workaround:** Select a singular Watch Simulator run destination and then Run.
 
 ##### Distribution
 
@@ -54,7 +54,7 @@ Xcode 15.2 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, mac
 
 ###### Known Issues
 
-- iOS app crashes from a TestFlight build on visionOS may not appear in the Crashes section of the Organizer.   (107965403)  From the “Pricing and Availability” section of your app’s App Store page in App Store Connect, enable the checkbox to allow your app to run on visionOS.
+- iOS app crashes from a TestFlight build on visionOS may not appear in the Crashes section of the Organizer.   (107965403) **Workaround:** From the “Pricing and Availability” section of your app’s App Store page in App Store Connect, enable the checkbox to allow your app to run on visionOS.
 
 ##### Playgrounds
 
@@ -96,7 +96,7 @@ Xcode 15.2 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, mac
 
 ###### Known Issues
 
-- On some configurations, the first install of an app will fail.  (115968389)  Build & run again.
+- On some configurations, the first install of an app will fail.  (115968389) **Workaround:** Build & run again.
 
 ##### Visionos Swiftui Previews
 

@@ -66,6 +66,12 @@ Specify `com.apple.preference.security` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `dontAllowFireWallUI` (boolean): If `true`, disables user changes to the firewall settings.
+- `dontAllowLockMessageUI` (boolean): If `true`, disables user changes to the lock message.
+- `dontAllowPasswordResetUI` (boolean): If `true`, disables user changes to the password.
+
 ## See Also
 
 - [object Passcode](passcode.md)

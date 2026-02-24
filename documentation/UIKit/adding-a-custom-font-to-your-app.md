@@ -10,7 +10,7 @@ Your app isn’t limited to the custom fonts provided by iOS. If your company ha
 
 ##### Add the Font File to Your Xcode Project
 
-To add a font file to your Xcode project, select  from the menu bar, or drag the file from Finder and drop it into your Xcode project. You can add True Type Font (.ttf) and Open Type Font (.otf) files.
+To add a font file to your Xcode project, select *File > Add Files to “Your Project Name”* from the menu bar, or drag the file from Finder and drop it into your Xcode project. You can add True Type Font (.ttf) and Open Type Font (.otf) files.
 
 ![A screenshot of the Project Navigator showing the custom font files added to the CustomFont project.](https://docs-assets.developer.apple.com/published/16adcb2425ff69c1754dac73fdc4ab7b/adding-a-custom-font-to-your-app-1%402x.png)
 
@@ -28,7 +28,7 @@ Include each font file you add to your project in this array; otherwise, the fon
 
 ##### Use Your Custom Font in Interface Builder
 
-After you add the font file to your Xcode project and its , you can begin assigning the font to UI objects like [`UILabel`](uilabel.md) and [`UITextField`](uitextfield.md). If you’re using Interface Builder, assign the UI object’s  setting to your custom font using the Attribute Inspector.
+After you add the font file to your Xcode project and its *Info.plist*, you can begin assigning the font to UI objects like [`UILabel`](uilabel.md) and [`UITextField`](uitextfield.md). If you’re using Interface Builder, assign the UI object’s *Font* setting to your custom font using the Attribute Inspector.
 
 ![Screenshot of Interface Builder showing that the font for the label is 'CustomFont 17.0.'](https://docs-assets.developer.apple.com/published/da57e8ce6b34b8e2896a97931995291d/adding-a-custom-font-to-your-app-4%402x.png)
 

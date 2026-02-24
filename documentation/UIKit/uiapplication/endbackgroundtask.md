@@ -31,7 +31,7 @@ This method can be safely called on a non-main thread.
 
 ## Parameters
 
-- `identifier`: An identifier returned by the   method.
+- `identifier`: An identifier returned by the [`beginBackgroundTask(expirationHandler:)`](uiapplication/beginbackgroundtask(expirationhandler:).md) method.
 
 ## See Also
 

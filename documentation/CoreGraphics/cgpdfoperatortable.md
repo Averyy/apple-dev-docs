@@ -10,7 +10,7 @@ You pass an operator table and a PDF content stream to a CGPDFScanner object. Wh
 
 > **Note**:  This object is not derived from CFType and therefore you can’t use the Core Foundation base functions on it, such as [`CFRetain`](https://developer.apple.com/documentation/CoreFoundation/CFRetain) and [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease). In Objective-C, handle memory management with [`CGPDFOperatorTableRetain(_:)`](cgpdfoperatortableretain(_:).md) and [`CGPDFOperatorTableRelease(_:)`](cgpdfoperatortablerelease(_:).md).
 
-For more about PDF operators, see the latest version of , Adobe Systems Incorporated.
+For more about PDF operators, see the latest version of *PDF Reference*, Adobe Systems Incorporated.
 
 ## Topics
 

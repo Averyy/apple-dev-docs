@@ -14,6 +14,17 @@ The laptop AC power Energy Saver settings.
 object EnergySaver.Com.apple.EnergySaver.portable.ACPower
 ```
 
+## Properties
+
+- `Automatic Restart On Power Loss` (integer): If `true`, enables “Start up automatically after a power failure.”
+- `Disk Sleep Timer` (integer): The disk sleep time, in minutes. A value of 0 means never.
+- `Display Sleep Timer` (integer): The display sleep time, in minutes. A value of 0 means never.
+- `Dynamic Power Step` (integer): May not be available on all systems.
+- `Reduce Processor Speed` (integer): May not be available on all systems.
+- `System Sleep Timer` (integer): System sleep time, in minutes. A value of 0 means never.
+- `Wake on LAN` (integer): If `true`, enables “Wake for network access.”
+- `Wake On Modem Ring` (integer): If `true`, enables “Wake for modem ring.”
+
 ## See Also
 
 - [object EnergySaver.Com.apple.EnergySaver.desktop.ACPower](energysaver/com.apple.energysaver.desktop.acpower-data.dictionary.md)

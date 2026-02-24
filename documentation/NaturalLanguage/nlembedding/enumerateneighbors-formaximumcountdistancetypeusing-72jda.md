@@ -24,9 +24,10 @@ func enumerateNeighbors(for string: String, maximumCount maxCount: Int, distance
 ## Parameters
 
 - `string`: A string in the embedding vocabulary.
-- `maxCount`: The largest number of times the method calls  .
-- `distanceType`: A means of calculating distance that determines which formula the method uses to evaluate a neighbor’s distance from  .
-- `block`: The closure returns a Boolean that indicates whether to stop enumerating neighbors.
+- `maxCount`: The largest number of times the method calls `block`.
+- `distanceType`: A means of calculating distance that determines which formula the method uses to evaluate a neighbor’s distance from `string`.
+- `block`: A closure with the following parameters: - **`String`**: A neighboring string.
+- **`NLDistance`**: The distance from `string` to the neighboring string. The closure returns a Boolean that indicates whether to stop enumerating neighbors.
 
 ## See Also
 

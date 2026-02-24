@@ -29,7 +29,7 @@ Use derived attributes to optimize fetch performance; for example:
 
 Derived attributes support the following expressions:
 
-|  |  |  |
+| **Expression** | **Description** | **Example** |
 | --- | --- | --- |
 | to-one keypath | A single value to replicate. | `name` or `author.name` |
 | to-one keypath with a function | The result of calling a function on a single value. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Supported functions include `canonical:`, `uppercase:`, and `lowercase:`. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) The `canonical:` function returns a case- and diacritic-insensitive String value. | `canonical:(name)` |

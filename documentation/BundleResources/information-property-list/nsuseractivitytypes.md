@@ -11,6 +11,10 @@ The user activity types that the app supports.
 - macOS 10.10+
 
 
+
+**Type**: string 
+
+
 ---
 
 *[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/information-property-list/nsuseractivitytypes)*

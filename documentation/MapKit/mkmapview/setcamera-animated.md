@@ -21,8 +21,8 @@ func setCamera(_ camera: MKMapCamera, animated: Bool)
 
 ## Parameters
 
-- `camera`: The camera object containing the viewing angle information. This parameter can’t be  .
-- `animated`: Specify   if you want the map view to animate the change in viewing angle, or   if you want the map to reflect the changes without animations.
+- `camera`: The camera object containing the viewing angle information. This parameter can’t be `nil`.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if you want the map view to animate the change in viewing angle, or [`false`](https://developer.apple.com/documentation/Swift/false) if you want the map to reflect the changes without animations.
 
 ## See Also
 

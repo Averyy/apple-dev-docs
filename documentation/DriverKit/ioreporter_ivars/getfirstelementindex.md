@@ -29,8 +29,8 @@ Locking: Caller must ensure that the reporter (data) lock is held.
 
 ## Parameters
 
-- `channel_id`: 
-- `element_index`: 
+- `channel_id`: - ID of the channel
+- `element_index`: - pointer to the returned element_index
 
 
 ---

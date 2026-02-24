@@ -10,6 +10,26 @@ When working with the node tree, sometimes you need to convert a position from o
 
 The following code shows how to convert a node’s position into the scene coordinate system. The scene is asked to perform the conversion. Remember that a node’s position is specified in its parent’s coordinate system, so the code passes `node.parent` as the node to convert from. You could perform the same conversion in reverse by calling the [`convert(_:to:)`](sknode/convert(_:to:).md) method.
 
+**Swift**:
+
+```swift
+let positionInScene: CGPoint?
+
+if let parent = node.parent {
+    positionInScene = node.scene?.convert(node.position,
+                                          from: parent)
+}
+else {
+    positionInScene = nil
+}
+```
+
+**Obj-C**:
+
+```objc
+CGPoint positionInScene = [node.scene convertPoint:node.position fromNode:node.parent];
+```
+
 One situation where you need to perform coordinate conversions is when you perform event handling. Mouse and touch events need to be converted from window coordinates to view coordinates, and from there into the scene. To simplify the code you need to write, SpriteKit adds a few convenience methods:
 
 - In iOS, use the [`location(in:)`](https://developer.apple.com/documentation/UIKit/UITouch/location(in:)-44h4k) and [`previousLocation(in:)`](https://developer.apple.com/documentation/UIKit/UITouch/previousLocation(in:)-ea29) on [`UITouch`](https://developer.apple.com/documentation/UIKit/UITouch) objects to convert a touch location into a node’s coordinate system.

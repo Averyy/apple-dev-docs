@@ -27,6 +27,11 @@ object ClearActivationLockBypassCodeCommand
 - [object ClearActivationLockBypassCodeCommand.Command](clearactivationlockbypasscodecommand/command-data.dictionary.md)
   The command to clear the Activation Lock bypass code on a device.
 
+## Properties
+
+- `Command` (ClearActivationLockBypassCodeCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object ClearActivationLockBypassCodeResponse](clearactivationlockbypasscoderesponse.md)

@@ -68,6 +68,12 @@ Specify `com.apple.screensaver.user` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `idleTime` (integer): The number of seconds of inactivity before the screen saver activates (`0` = Never activate).
+- `moduleName` (string) *(required)*: The name of the screen saver module.
+- `modulePath` (string): A full path to the screen saver module to use.
+
 ## See Also
 
 - [object Accessibility](accessibility.md)

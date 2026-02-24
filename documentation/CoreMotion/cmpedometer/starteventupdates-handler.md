@@ -23,7 +23,7 @@ Pedometer events report changes in the user’s pedestrian activity.
 
 ## Parameters
 
-- `handler`: The block to execute when a pedometer event is available. This parameter must not be  .
+- `handler`: The block to execute when a pedometer event is available. This parameter must not be `nil`.
 
 ## See Also
 

@@ -19,7 +19,7 @@ func unknownPersonViewController(_ unknownCardViewController: ABUnknownPersonVie
 
 ## Parameters
 
-- `person`:  when the user cancelled the interaction.
+- `person`: The contact the user created or to which they added information. This record is saved in the Address Book database. `NULL` when the user cancelled the interaction.
 
 ## See Also
 

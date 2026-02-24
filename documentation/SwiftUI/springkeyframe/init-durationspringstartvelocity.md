@@ -23,9 +23,9 @@ init(_ to: Value, duration: TimeInterval? = nil, spring: Spring = Spring(), star
 ## Parameters
 
 - `to`: The value of the keyframe.
-- `duration`: The duration of the segment defined by this keyframe,   or nil to use the settling duration of the spring.
-- `spring`: The spring that defines the shape of the segment befire   this keyframe
-- `startVelocity`: The velocity of the value at the start of the   segment, or   to automatically compute the velocity to maintain   smooth motion.
+- `duration`: The duration of the segment defined by this keyframe, or nil to use the settling duration of the spring.
+- `spring`: The spring that defines the shape of the segment befire this keyframe
+- `startVelocity`: The velocity of the value at the start of the segment, or `nil` to automatically compute the velocity to maintain smooth motion.
 
 
 ---

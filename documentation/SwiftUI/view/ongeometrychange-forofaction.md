@@ -65,9 +65,9 @@ For easily responding to geometry changes of a scroll view, see the [`onScrollGe
 
 ## Parameters
 
-- `type`: The type of value transformed from a  .
-- `transform`: A closure that transforms a    to your type.
-- `action`: A closure to run when the transformed data changes.
+- `type`: The type of value transformed from a [`GeometryProxy`](geometryproxy.md).
+- `transform`: A closure that transforms a [`GeometryProxy`](geometryproxy.md) to your type.
+- `action`: A closure to run when the transformed data changes. - **newValue**: The new value that failed the comparison check.
 
 
 ---

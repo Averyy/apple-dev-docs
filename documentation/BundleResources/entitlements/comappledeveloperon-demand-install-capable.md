@@ -9,6 +9,10 @@ A Boolean value that indicates whether a bundle represents an App Clip.
 - iOS 14.0+
 - iPadOS 14.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Adding an App Clip target to your project as described in [`Creating an App Clip with Xcode`](https://developer.apple.com/documentation/AppClip/creating-an-app-clip-with-xcode) enables a capability called On Demand Install Capable for the App Clip target.

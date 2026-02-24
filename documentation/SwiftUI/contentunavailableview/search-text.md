@@ -22,7 +22,7 @@ static func search(text: String) -> ContentUnavailableView<Label, Description, A
 
 #### Discussion
 
-For example, consider the usage of this static member in :
+For example, consider the usage of this static member in *ContactsListView*:
 
 ```swift
 struct ContactsListView: View {

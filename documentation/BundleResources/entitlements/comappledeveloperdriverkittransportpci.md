@@ -8,6 +8,10 @@ An array of PCI device descriptors that your custom driver supports.
 **Availability**:
 - macOS 10.15.4+
 
+
+
+**Type**: dictionary 
+
 #### Discussion
 
 Each element in the array is a dictionary whose keys identify a supported device. The values of these keys correspond to values stored in the PCI device’s configuration registers.

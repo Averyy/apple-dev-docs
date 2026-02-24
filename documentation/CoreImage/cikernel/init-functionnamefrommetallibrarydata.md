@@ -32,7 +32,7 @@ MSL based kernels still support concatenation and tiling and can work in the sam
 
 ##### Specifying Compiler and Linker Options
 
-To use MSL as the shader language for a [`CIKernel`](cikernel.md), you must specify some options in Xcode under the  tab of your project’s target. The first option you need to specify is an `-fcikernel` flag in the Other Metal Compiler Flags option. The second is to add a user-defined setting with a key called `MTLLINKER_FLAGS` with a value of `-cikernel:`
+To use MSL as the shader language for a [`CIKernel`](cikernel.md), you must specify some options in Xcode under the *Build Settings* tab of your project’s target. The first option you need to specify is an `-fcikernel` flag in the Other Metal Compiler Flags option. The second is to add a user-defined setting with a key called `MTLLINKER_FLAGS` with a value of `-cikernel:`
 
 ![Metal compiler and linker flags](https://docs-assets.developer.apple.com/published/6eccc8b61bee6fd5bbdb4762f4f4dd33/media-2929842%402x.png)
 

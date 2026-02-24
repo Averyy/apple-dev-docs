@@ -22,8 +22,8 @@ init<Spec>(@ResolverSpecificationBuilder<AttributedString> withResolvers resolve
 
 ## Parameters
 
-- `resolvers`: Set of  s to apply when converting user input to the target   type.
-- `mappingTransform`: Closure that transforms the user-supplied value into the   output type.
+- `resolvers`: Set of `Resolver`s to apply when converting user input to the target `Value` type.
+- `mappingTransform`: Closure that transforms the user-supplied value into the `ComparatorMappingType` output type.
 
 
 ---

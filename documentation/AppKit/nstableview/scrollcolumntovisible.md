@@ -16,7 +16,7 @@ func scrollColumnToVisible(_ column: Int)
 
 ## Parameters
 
-- `column`: The index of the column in the   array.
+- `column`: The index of the column in the [`tableColumns`](nstableview/tablecolumns.md) array.
 
 ## See Also
 

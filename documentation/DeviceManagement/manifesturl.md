@@ -78,6 +78,10 @@ Use SHA-256 hashes instead of MD5 because SHA-256 has stronger security. If both
 - [object ManifestURL.ItemsItem](manifesturl/itemsitem.md)
   An array of dictionaries representing what the manifest installs.
 
+## Properties
+
+- `items` ([ManifestURL.ItemsItem]) *(required)*: An array of dictionaries representing what the manifest installs.
+
 
 ---
 

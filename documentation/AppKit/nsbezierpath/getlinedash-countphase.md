@@ -20,9 +20,9 @@ The array in the `pattern` parameter must be large enough to hold all of the ret
 
 ## Parameters
 
-- `pattern`: On input, a C-style array of floating point values, or   if you do not want the pattern values. On output, this array contains the lengths (measured in points) of the line segments and gaps in the pattern. The values in the array alternate, starting with the first line segment length, followed by the first gap length, followed by the second line segment length, and so on.
-- `count`: On input, a pointer to an integer or   if you do not want the number of pattern entries. On output, the number of entries written to   .
-- `phase`: On input, a pointer to a floating point value or   if you do not want the phase. On output, this value contains the offset at which to start drawing the pattern, measured in points along the dashed-line pattern. For example, a phase of 6 in the pattern 5-2-3-2 would cause drawing to begin in the middle of the first gap.
+- `pattern`: On input, a C-style array of floating point values, or `nil` if you do not want the pattern values. On output, this array contains the lengths (measured in points) of the line segments and gaps in the pattern. The values in the array alternate, starting with the first line segment length, followed by the first gap length, followed by the second line segment length, and so on.
+- `count`: On input, a pointer to an integer or `nil` if you do not want the number of pattern entries. On output, the number of entries written to  `pattern`.
+- `phase`: On input, a pointer to a floating point value or `nil` if you do not want the phase. On output, this value contains the offset at which to start drawing the pattern, measured in points along the dashed-line pattern. For example, a phase of 6 in the pattern 5-2-3-2 would cause drawing to begin in the middle of the first gap.
 
 ## See Also
 

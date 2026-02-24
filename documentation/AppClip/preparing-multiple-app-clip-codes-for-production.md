@@ -14,7 +14,7 @@ For additional information, see [`Human Interface Guidelines > App Clips > Print
 
 ##### Map Svg Filenames to Invocation Urls
 
-In general, it’s up to you to decide how to keep track of changes and which SVG files map to which invocation URLs. In most cases, a  that uses the comma-separated values (CSV) file format is the preferred option.
+In general, it’s up to you to decide how to keep track of changes and which SVG files map to which invocation URLs. In most cases, a *mapping file* that uses the comma-separated values (CSV) file format is the preferred option.
 
 To reduce the risk of human error and simplify change tracking, consider using a single mapping file to create your SVG files before sending them to a printing service.
 

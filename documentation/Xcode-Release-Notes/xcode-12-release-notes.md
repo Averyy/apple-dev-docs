@@ -75,7 +75,7 @@ xcrun momc
 
 ###### Known Issues
 
-- A newly-created iOS project using the Swift language may no longer build after enabling Mac Catalyst. (67885114) : Replace the  `@main` annotation on the App Delegate with `@UIApplicationMain`.
+- A newly-created iOS project using the Swift language may no longer build after enabling Mac Catalyst. (67885114) **Workaround**: Replace the  `@main` annotation on the App Delegate with `@UIApplicationMain`.
 
 ###### Deprecations
 
@@ -136,7 +136,7 @@ xcrun momc
 ###### Known Issues
 
 - Xcode may crash when opening a debug gauge. (64181692)
-- Debugging a Widget on iOS 14 doesn’t launch the extension, or the debugger doesn’t attach to the Widget. (64274027, 66920094) : Delete the Widget from the Home screen, clean the project, then build and run again.
+- Debugging a Widget on iOS 14 doesn’t launch the extension, or the debugger doesn’t attach to the Widget. (64274027, 66920094) **Workaround**: Delete the Widget from the Home screen, clean the project, then build and run again.
 
 ##### Devices
 
@@ -147,11 +147,11 @@ xcrun momc
 
 ###### Known Issues
 
-- You can’t debug a WatchKit App when an App Clip is added to its paired iOS App, if that iOS App isn’t installed. (65784374) (FB8065876) : Set “Supports Running Without iOS App Installation” in the General settings for the WatchKit App Extension’s build target.
-- On macOS 11, Xcode may crash when you click the “View Device Logs” button for a device you select in the Devices and Simulators window. (66303792) : Xcode copies logs from connected mobile devices to a local directory. For information about how to manually retrieve crash and energy logs, see [`Find device crash and energy logs on a Mac or Windows computer`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev0f3181c2c). To retrieve other types of logs, use the workflows described in [`Acquiring crash reports and diagnostic logs`](https://developer.apple.com/documentation/Xcode/acquiring-crash-reports-and-diagnostic-logs).
-- On macOS 11, Xcode may crash when you open the Devices and Simulators window. (66932201, 67336055) : Make sure that you have trusted all mobile devices paired with the Mac, physically disconnect any devices that you don’t wish to use for development, and set “Show scroll bars” to Always in the General pane of System Preferences.
+- You can’t debug a WatchKit App when an App Clip is added to its paired iOS App, if that iOS App isn’t installed. (65784374) (FB8065876) **Workaround**: Set “Supports Running Without iOS App Installation” in the General settings for the WatchKit App Extension’s build target.
+- On macOS 11, Xcode may crash when you click the “View Device Logs” button for a device you select in the Devices and Simulators window. (66303792) **Workaround**: Xcode copies logs from connected mobile devices to a local directory. For information about how to manually retrieve crash and energy logs, see [`Find device crash and energy logs on a Mac or Windows computer`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev0f3181c2c). To retrieve other types of logs, use the workflows described in [`Acquiring crash reports and diagnostic logs`](https://developer.apple.com/documentation/Xcode/acquiring-crash-reports-and-diagnostic-logs).
+- On macOS 11, Xcode may crash when you open the Devices and Simulators window. (66932201, 67336055) **Workaround**: Make sure that you have trusted all mobile devices paired with the Mac, physically disconnect any devices that you don’t wish to use for development, and set “Show scroll bars” to Always in the General pane of System Preferences.
 - Xcode may crash when unpairing a device in the Devices and Simulators window. (68156364)
-- Downloading watchOS symbols may take longer than expected. (68316765) : If the symbol data isn’t populating, quit and restart Xcode to retry downloading.
+- Downloading watchOS symbols may take longer than expected. (68316765) **Workaround**: If the symbol data isn’t populating, quit and restart Xcode to retry downloading.
 
 ##### Documentation Viewer
 
@@ -272,7 +272,7 @@ xcrun momc
 
 ###### Known Issues
 
-- Exporting a watchOS application for ad-hoc or development distribution may fail when using Xcode 12 and thinning for “all compatible device variants.” (66637482) : Don’t thin, or choose a specific target device.
+- Exporting a watchOS application for ad-hoc or development distribution may fail when using Xcode 12 and thinning for “all compatible device variants.” (66637482) **Workaround**: Don’t thin, or choose a specific target device.
 
 ##### Playgrounds
 
@@ -294,7 +294,7 @@ xcrun momc
 
 ###### Known Issues
 
-- Xcode may show the text “No Editor”, instead of opening the source editor of a Playground immediately after creating it. (56484197) : Use View > Navigators > Project to reveal the Project Navigator, then select the Playground manually.
+- Xcode may show the text “No Editor”, instead of opening the source editor of a Playground immediately after creating it. (56484197) **Workaround**: Use View > Navigators > Project to reveal the Project Navigator, then select the Playground manually.
 
 ##### Previews
 
@@ -317,7 +317,7 @@ xcrun momc
 ###### Resolved
 
 - Packages that contain previews can now update without fully rebuilding the active scheme. (51030302)
-- Rebuilding against the iOS 14, macOS 11, watchOS 7, and tvOS 14 SDKs changes uses of [`GeometryReader`](https://developer.apple.com/documentation/SwiftUI/GeometryReader) to reliably top-leading align the views inside the [`GeometryReader`](https://developer.apple.com/documentation/SwiftUI/GeometryReader). This was the previous behavior,  when it wasn’t possible to detect a single static view inside the [`GeometryReader`](https://developer.apple.com/documentation/SwiftUI/GeometryReader). (59722992) (FB7597816)
+- Rebuilding against the iOS 14, macOS 11, watchOS 7, and tvOS 14 SDKs changes uses of [`GeometryReader`](https://developer.apple.com/documentation/SwiftUI/GeometryReader) to reliably top-leading align the views inside the [`GeometryReader`](https://developer.apple.com/documentation/SwiftUI/GeometryReader). This was the previous behavior, *except* when it wasn’t possible to detect a single static view inside the [`GeometryReader`](https://developer.apple.com/documentation/SwiftUI/GeometryReader). (59722992) (FB7597816)
 
 ###### Known Issues
 
@@ -384,8 +384,8 @@ xcrun momc
 ###### Known Issues
 
 - App Clips can’t access Wallet passes with the Pass Type IDs Entitlement. However, App Clips can determine whether a specific pass is already present in Wallet and prompt the user to add a pass if necessary. If you’ve already added the Wallet capability to an App Clip target, you may not be able to build or submit your app to App Store Connect. Remove the Wallet capability in the target editor’s Signing & Capabilities pane and disable or delete any code that makes use of this removed feature. (65244156)
-- Xcode automatic signing may not automatically include Macs with Apple silicon in your provisioning profile when exporting an archive. (66857321) : If Xcode produces an IPA that doesn’t install on your registered Macs, remove any Ad Hoc Distribution or Development provisioning profiles from the ~/Library/MobileDevice/Provisioning Profiles directory before exporting your archive.
-- Open source software you previously built on the Apple silicon Developer Transition Kit may no longer run, due to code-signing errors. (68226054) : Re-build the software with Xcode 12, or re-sign the software with `codesign -s - --preserve-metadata=identifier,entitlements,flags,runtime -f <path to mach-O>`.
+- Xcode automatic signing may not automatically include Macs with Apple silicon in your provisioning profile when exporting an archive. (66857321) **Workaround**: If Xcode produces an IPA that doesn’t install on your registered Macs, remove any Ad Hoc Distribution or Development provisioning profiles from the ~/Library/MobileDevice/Provisioning Profiles directory before exporting your archive.
+- Open source software you previously built on the Apple silicon Developer Transition Kit may no longer run, due to code-signing errors. (68226054) **Workaround**: Re-build the software with Xcode 12, or re-sign the software with `codesign -s - --preserve-metadata=identifier,entitlements,flags,runtime -f <path to mach-O>`.
 
 ##### Simulator
 
@@ -412,8 +412,8 @@ xcrun momc
 ###### Known Issues
 
 - When simulating a push notification in Simulator with the `content-available` key set, the system calls [`application(_:performFetchWithCompletionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:performFetchWithCompletionHandler:)) instead of [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didReceiveRemoteNotification:fetchCompletionHandler:)). (60426170, 60974170) (FB7625283)
-- Activating Display Zoom on a simulated 12.9” iPad Pro distorts the simulated device’s display. (67455180) : Restart the simulated device to return to normal display.
-- If you enable or disable zoom mode while CarPlay is enabled, attempts to interact with CarPlay will cause a partial restart of the simulated iOS device. (67534104) : Close the CarPlay window, then re-enable or re-disable CarPlay.
+- Activating Display Zoom on a simulated 12.9” iPad Pro distorts the simulated device’s display. (67455180) **Workaround**: Restart the simulated device to return to normal display.
+- If you enable or disable zoom mode while CarPlay is enabled, attempts to interact with CarPlay will cause a partial restart of the simulated iOS device. (67534104) **Workaround**: Close the CarPlay window, then re-enable or re-disable CarPlay.
 
 ###### Deprecations
 
@@ -453,7 +453,7 @@ xcrun momc
 
 ###### Known Issues
 
-- A new Xcode Source Editor Extension target doesn’t automatically set up embedding `XcodeKit.framework` in the extension. (59274389) : Embed `XcodeKit.framework` in the extension manually.
+- A new Xcode Source Editor Extension target doesn’t automatically set up embedding `XcodeKit.framework` in the extension. (59274389) **Workaround**: Embed `XcodeKit.framework` in the extension manually.
 
 ###### Deprecations
 
@@ -467,7 +467,7 @@ xcrun momc
 
 ###### Known Issues
 
-- Xcode crashes when selecting “Subscription Options” in the [`StoreKit`](https://developer.apple.com/documentation/StoreKit) transaction manager. (68354368) : Use the [`StoreKit Test`](https://developer.apple.com/documentation/StoreKitTest) framework to test downgrading, cross-grading, or upgrading a subscription.
+- Xcode crashes when selecting “Subscription Options” in the [`StoreKit`](https://developer.apple.com/documentation/StoreKit) transaction manager. (68354368) **Workaround**: Use the [`StoreKit Test`](https://developer.apple.com/documentation/StoreKitTest) framework to test downgrading, cross-grading, or upgrading a subscription.
 
 ##### Swift
 
@@ -560,7 +560,7 @@ struct UseWrapper {
   @IntWrapper var value
 }
 ``` The wrapped property `UseWrapper.value` uses default initialization of `IntWrapper`, and relies on type inference to deduce the type-wrapped value type to be `Int`.
-- In order to shorten incremental compilations, Swift now keeps separate fingerprints for each type- (and protocol-) body. These  mean that if you change the body of a `struct`, `enum`, `class`, or `protocol` in a file that also defines other `struct`, `enum`, `class`, `protocols`, only the changed entity will be counted as “dirty” for the purpose of recompiling other files. (59954707) For example, suppose you have a file that defines two `structs`: ```swift
+- In order to shorten incremental compilations, Swift now keeps separate fingerprints for each type- (and protocol-) body. These *type-body fingerprints* mean that if you change the body of a `struct`, `enum`, `class`, or `protocol` in a file that also defines other `struct`, `enum`, `class`, `protocols`, only the changed entity will be counted as “dirty” for the purpose of recompiling other files. (59954707) For example, suppose you have a file that defines two `structs`: ```swift
 struct A {
 }
 struct B {
@@ -656,7 +656,7 @@ array { 0 }
 
 ###### Known Issues
 
-- A package resolution error with the message “database is locked” may occur when opening a workspace that contains package references. (61113361) : Close and reopen the workspace.
+- A package resolution error with the message “database is locked” may occur when opening a workspace that contains package references. (61113361) **Workaround**: Close and reopen the workspace.
 
 ##### Testing
 
@@ -714,7 +714,7 @@ func testScrollingAnimationPerformance() throws {
 
 ###### Known Issues
 
-- Simulated devices don’t support animation performance metrics (total number of hitches, hitches total duration, hitch time ratio, frame rate, and frame count) when using an animation `os_signpost` coupled with the [`XCTOSSignpostMetric`](https://developer.apple.com/documentation/XCTest/XCTOSSignpostMetric). (63766090) : Use [`XCTSkip`](https://developer.apple.com/documentation/XCTest/XCTSkip-swift.struct) to skip over performance tests on simulated devices.
+- Simulated devices don’t support animation performance metrics (total number of hitches, hitches total duration, hitch time ratio, frame rate, and frame count) when using an animation `os_signpost` coupled with the [`XCTOSSignpostMetric`](https://developer.apple.com/documentation/XCTest/XCTOSSignpostMetric). (63766090) **Workaround**: Use [`XCTSkip`](https://developer.apple.com/documentation/XCTest/XCTSkip-swift.struct) to skip over performance tests on simulated devices.
 
 ###### Deprecations
 

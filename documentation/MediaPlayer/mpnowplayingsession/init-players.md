@@ -20,7 +20,7 @@ init(players: [AVPlayer])
 
 ## Parameters
 
-- `players`: An array of player objects. Passing   or an empty array raises an error.
+- `players`: An array of player objects. Passing `nil` or an empty array raises an error.
 
 
 ---

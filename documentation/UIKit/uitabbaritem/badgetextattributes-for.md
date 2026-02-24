@@ -24,7 +24,7 @@ Use this method to retrieve the attributes the item applies to its badge’s val
 
 ## Parameters
 
-- `state`: The item’s state. For possible values, see  .
+- `state`: The item’s state. For possible values, see [`UIControl.State`](uicontrol/state-swift.struct.md).
 
 ## See Also
 

@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: var
 
-If the image has a LAB color model, the buffer contains the  channel.
+If the image has a LAB color model, the buffer contains the *b** channel.
 
 **Availability**:
 - iOS 7.0+

@@ -21,6 +21,9 @@ typealias ACAccountStoreCredentialRenewalHandler = (ACAccountCredentialRenewResu
 
 The renewal handler parameters are:
 
+- **`renewResult`**: The result of the renewal request.
+- **`error`**: An error, if one occurred.
+
 ## See Also
 
 - [func renewCredentials(for: ACAccount!, completion: ((ACAccountCredentialRenewResult, (any Error)?) -> Void)!)](acaccountstore/renewcredentials(for:completion:).md)

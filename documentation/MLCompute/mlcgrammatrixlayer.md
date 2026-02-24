@@ -34,6 +34,11 @@ The layer performs this operation independently for each tensor in a batch. Then
 
 Legend:
 
+- **`b`**: The batch index.
+- **`y` and `x`**: The spatial coordinates.
+- **`c`**: The feature channel index.
+- **`alpha`**: The scaling factor.
+
 ## Topics
 
 ### Creating Gram Matrix Layers

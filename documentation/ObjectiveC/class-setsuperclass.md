@@ -27,7 +27,7 @@ You should not use this function.
 ## Parameters
 
 - `cls`: The class whose superclass you want to set.
-- `newSuper`: The new superclass for  .
+- `newSuper`: The new superclass for `cls`.
 
 ## See Also
 

@@ -30,7 +30,7 @@ This method raises an [`invalidArgumentException`](nsexceptionname/invalidargume
 
 ## Parameters
 
-- `data`: An object graph previously encoded by  .
+- `data`: An object graph previously encoded by `NSKeyedArchiver`.
 
 ## See Also
 

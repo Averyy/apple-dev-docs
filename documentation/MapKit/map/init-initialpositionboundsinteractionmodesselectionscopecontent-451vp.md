@@ -23,12 +23,12 @@ Creates a new map with the initial camera position, bounds, interaction modes, s
 
 ## Parameters
 
-- `initialPosition`: The initial  .
-- `bounds`: The   that define the camera’s view of the map.
-- `interactionModes`: The   that describe ways a person can interact with the map.
-- `selection`: A binding to a   that represents a person’s selection.
-- `scope`: The map’s  .
-- `content`: A   content builder that supplies the map’s content.
+- `initialPosition`: The initial [`MapCameraPosition`](mapcameraposition.md).
+- `bounds`: The [`MapCameraBounds`](mapcamerabounds.md) that define the camera’s view of the map.
+- `interactionModes`: The [`MapInteractionModes`](mapinteractionmodes.md) that describe ways a person can interact with the map.
+- `selection`: A binding to a [`MapFeature`](mapfeature.md) that represents a person’s selection.
+- `scope`: The map’s [`Namespace.ID`](https://developer.apple.com/documentation/SwiftUI/Namespace/ID).
+- `content`: A [`MapContent`](mapcontent.md) content builder that supplies the map’s content.
 
 ## See Also
 

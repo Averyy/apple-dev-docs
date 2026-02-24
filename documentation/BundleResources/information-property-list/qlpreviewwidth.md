@@ -11,6 +11,12 @@ A hint at the width, in points, of a Quick Look app’s previews.
 - macOS 10.0+
 - visionOS 1.0+
 
+
+
+**Type**: number
+
+**Default**: `600.0`
+
 #### Discussion
 
 If the app’s generator takes too long to produce the preview, Quick Look uses this key.

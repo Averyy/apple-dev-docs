@@ -24,8 +24,8 @@ Block to be invoked when the protocol instance is issued a challenge (e.g., a TL
 
 ## Parameters
 
-- `metadata`: A   instance.
-- `complete`: A   to be invoked when the challenge is complete.
+- `metadata`: A `sec_protocol_metadata_t` instance.
+- `complete`: A `sec_protocol_challenge_complete_t` to be invoked when the challenge is complete.
 
 
 ---

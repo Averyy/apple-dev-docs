@@ -28,7 +28,7 @@ If the delegate does not implement this method, no completions are provided.
 - `tokenFieldCell`: The token field cell that sent the message.
 - `substring`: The partial string that is to be completed.
 - `tokenIndex`: The index of the token being edited.
-- `selectedIndex`: Optionally, you can return by-reference an index into the returned array that specifies which of the completions should be initially selected. If none are to be selected, return by reference  .
+- `selectedIndex`: Optionally, you can return by-reference an index into the returned array that specifies which of the completions should be initially selected. If none are to be selected, return by reference `-1`.
 
 ## See Also
 

@@ -26,7 +26,7 @@ If the action is configured to display a popup, implementing the appropriate web
 
 ## Parameters
 
-- `tab`: The tab for which to perform the extension action, or   to perform the default action.
+- `tab`: The tab for which to perform the extension action, or `nil` to perform the default action.
 
 
 ---

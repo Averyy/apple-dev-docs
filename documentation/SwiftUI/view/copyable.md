@@ -83,7 +83,7 @@ When someone copies the first item in the list, which appears in the interface a
 
 ## Parameters
 
-- `payload`: A closure that returns an array of items to copy   to the Clipboard when someone issues a Copy command. The   items in the array must conform to the     protocol.
+- `payload`: A closure that returns an array of items to copy to the Clipboard when someone issues a Copy command. The items in the array must conform to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol.
 
 ## See Also
 

@@ -16,7 +16,7 @@ init(imageProvider: CLKImageProvider)
 
 ## Parameters
 
-- `imageProvider`: The image provider for an image that fills the template. The system renders the image as a tinted template image, a bitmap image where only the opacity of the image matters. For more information, see  .
+- `imageProvider`: The image provider for an image that fills the template. The system renders the image as a tinted template image, a bitmap image where only the opacity of the image matters. For more information, see [`Providing images for different appearances`](https://developer.apple.com/documentation/UIKit/providing-images-for-different-appearances#Create-tintable-images-using-template-images).
 
 
 ---

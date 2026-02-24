@@ -20,11 +20,13 @@ A reference to the new dynamic store session. You must release the returned valu
 
 ## Parameters
 
-- `allocator`: The allocator that should be used to allocate memory for the local dynamic store object. This parameter may be   in which case the current default allocator is used. If this value is not a valid  , the behavior is undefined.
+- `allocator`: The allocator that should be used to allocate memory for the local dynamic store object. This parameter may be `NULL` in which case the current default allocator is used. If this value is not a valid [`CFAllocator`](https://developer.apple.com/documentation/CoreFoundation/CFAllocator), the behavior is undefined.
 - `name`: The name of the calling process or plug-in of the caller.
-- `storeOptions`: Currently, the available options are:
-- `callout`: The function to be called when a watched value in the dynamic store is changed. Pass   if no callouts are desired.
-- `context`: The context associated with the callout. See   for more information about this value.
+- `storeOptions`: A dictionary of options for the dynamic store session (such as whether all keys added or set into the dynamic store should be per-session keys). Pass `NULL` if no options are desired. Currently, the available options are: | Key | Value |
+| --- | --- |
+| [`kSCDynamicStoreUseSessionKeys`](kscdynamicstoreusesessionkeys.md) | `CFBooleanRef` |
+- `callout`: The function to be called when a watched value in the dynamic store is changed. Pass `NULL` if no callouts are desired.
+- `context`: The context associated with the callout. See [`SCDynamicStoreContext`](scdynamicstorecontext.md) for more information about this value.
 
 ## See Also
 

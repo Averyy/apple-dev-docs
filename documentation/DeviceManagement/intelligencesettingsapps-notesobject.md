@@ -17,6 +17,11 @@ If present, configures Notes Intelligence features.
 object IntelligenceSettingsApps_NotesObject
 ```
 
+## Properties
+
+- `AllowTranscription` (boolean): If `false`, disables Notes Transcription.
+- `AllowTranscriptionSummary` (boolean): If `false`, disables Notes Transcription Summary.
+
 ## See Also
 
 - [object IntelligenceSettingsApps_MailObject](intelligencesettingsapps_mailobject.md)

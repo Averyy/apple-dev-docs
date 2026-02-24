@@ -18,7 +18,7 @@ The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- Some third-party apps might crash on launch or during use when Accessibility options are enabled.  (122506670) (FB13595783)  Disable any Accessibility options before launching impacted apps.
+- Some third-party apps might crash on launch or during use when Accessibility options are enabled.  (122506670) (FB13595783) **Workaround:** Disable any Accessibility options before launching impacted apps.
 
 ##### Accessibility
 
@@ -46,7 +46,7 @@ The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- The Control Center indicator might be missing.  (121071017)  Reboot your Apple Vision Pro.
+- The Control Center indicator might be missing.  (121071017) **Workaround:** Reboot your Apple Vision Pro.
 
 ##### Immersive Space
 
@@ -76,7 +76,7 @@ The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- Users might see session interruption notifications that are not relevant to their app.  (123124097)  Filter notifications against audio session of choice like so: NotificationCenter.default.addObserver(forName: AVAudioSession.interruptionNotification, object: AVAudioSession.sharedInstance(), queue: nil) { … }
+- Users might see session interruption notifications that are not relevant to their app.  (123124097) **Workaround:** Filter notifications against audio session of choice like so: NotificationCenter.default.addObserver(forName: AVAudioSession.interruptionNotification, object: AVAudioSession.sharedInstance(), queue: nil) { … }
 
 ##### Passcode
 
@@ -106,8 +106,8 @@ The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- A scene associated with the RealityRenderer using a custom system is not updated every frame.  (110476883)  Update your components by subscribing to SceneEvents.Update rather than using a System.
-- Assigning a new VideoPlayerComponent to an Entity that already has one will result in a black video screen.  (117087641)  Reuse the existing VideoPlayerComponent or remove the existing one first before assigning the new one.
+- A scene associated with the RealityRenderer using a custom system is not updated every frame.  (110476883) **Workaround:** Update your components by subscribing to SceneEvents.Update rather than using a System.
+- Assigning a new VideoPlayerComponent to an Entity that already has one will result in a black video screen.  (117087641) **Workaround:** Reuse the existing VideoPlayerComponent or remove the existing one first before assigning the new one.
 
 ##### Settings
 
@@ -119,7 +119,7 @@ The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- ShaderGraph material node compositions might result in invalid visual output.  (122723231)  Avoid using a common asset node for both a surface shader and a geometry modifier within a single material or duplicate the asset node if needed.
+- ShaderGraph material node compositions might result in invalid visual output.  (122723231) **Workaround:** Avoid using a common asset node for both a surface shader and a geometry modifier within a single material or duplicate the asset node if needed.
 
 ##### Simulator
 
@@ -162,7 +162,7 @@ The visionOS 1.1 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- If the display zoom is changed in settings while a volume with a physical size is open, the content might be clipped.  (120806632)  Closing the volume or force-quitting the app.
+- If the display zoom is changed in settings while a volume with a physical size is open, the content might be clipped.  (120806632) **Workaround:** Closing the volume or force-quitting the app.
 
 ##### Ui Frameworks
 

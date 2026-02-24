@@ -16,8 +16,8 @@ func removeRows(at rowIndexes: IndexSet, includeSubrows: Bool)
 
 ## Parameters
 
-- `rowIndexes`: Indexes of one or more rows in the receiver.
-- `includeSubrows`: If  , then sub-rows of deleted rows are also deleted; if  , then each sub-row is adopted by its first non-deleted ancestor, or becomes a root row.
+- `rowIndexes`: Indexes of one or more rows in the receiver. > ❗ **Important**:  Raises an `NSRangeException` if any index in `rowIndexes` is less than `0` or greater than or equal to the number of rows.
+- `includeSubrows`: If [`true`](https://developer.apple.com/documentation/Swift/true), then sub-rows of deleted rows are also deleted; if [`false`](https://developer.apple.com/documentation/Swift/false), then each sub-row is adopted by its first non-deleted ancestor, or becomes a root row.
 
 ## See Also
 

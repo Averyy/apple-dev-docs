@@ -40,7 +40,7 @@ Below is an example of a view that accepts drop of `Image` type. The view prefer
 
 ## Parameters
 
-- `configuration`: A value that describes the configuration   of a drop session.
+- `configuration`: A value that describes the configuration of a drop session.
 
 
 ---

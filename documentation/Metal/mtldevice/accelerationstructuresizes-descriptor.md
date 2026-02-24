@@ -26,7 +26,7 @@ A new [`MTLAccelerationStructureSizes`](mtlaccelerationstructuresizes.md) instan
 
 ## Parameters
 
-- `descriptor`: An   instance.
+- `descriptor`: An [`MTLAccelerationStructureDescriptor`](mtlaccelerationstructuredescriptor.md) instance.
 
 ## See Also
 

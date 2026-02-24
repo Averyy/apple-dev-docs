@@ -82,11 +82,11 @@ The stack environment in ARMv6 has the following characteristics:
 
 In the ARMv6 environment, the stack frame size is not fixed and the stack pointer (SP) points to the bottom of the stack. Stack frames contain the following areas:
 
-- The  stores the arguments, or space for the arguments, that the caller passes to the called function. This area resides in the caller’s stack frame. The type of argument, and the availability of registers, defines whether the argument resides on the stack or in registers.
-- The  contains the address of the caller’s next instruction.
-- The  (optional) contains the base address of the caller’s stack frame.
-- The  contains the values of registers that the callee must restore before it returns. For more information, see [`Preserve specific registers in ARMv6`](writing-armv6-code-for-ios#Preserve-specific-registers-in-ARMv6.md).
-- The  contains each subroutine’s local variables.
+- The *parameter area* stores the arguments, or space for the arguments, that the caller passes to the called function. This area resides in the caller’s stack frame. The type of argument, and the availability of registers, defines whether the argument resides on the stack or in registers.
+- The *saved link register* contains the address of the caller’s next instruction.
+- The *saved frame pointer* (optional) contains the base address of the caller’s stack frame.
+- The *saved registers area* contains the values of registers that the callee must restore before it returns. For more information, see [`Preserve specific registers in ARMv6`](writing-armv6-code-for-ios#Preserve-specific-registers-in-ARMv6.md).
+- The *local storage area* contains each subroutine’s local variables.
 
 ![An illustration of the ARM stack, before and after a function call.](https://docs-assets.developer.apple.com/published/a357a5ca6ad94caa17f06172dc98d9fd/writing-armv6-code-for-ios-1%402x.png)
 

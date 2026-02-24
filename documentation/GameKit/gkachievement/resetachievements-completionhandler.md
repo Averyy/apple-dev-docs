@@ -30,7 +30,7 @@ This method sets the percentage complete for all of the player’s achievements 
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: A block that GameKit calls when this method completes. The block receives the following parameter: - **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

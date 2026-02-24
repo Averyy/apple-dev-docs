@@ -17,7 +17,7 @@ func setAllowsHogMode(_ allowed: Bool) throws
 
 ## Parameters
 
-- `allowed`: A Bool where true indicates that this process wants the HAL to   automatically take hog mode on behalf of the process.
+- `allowed`: A Bool where true indicates that this process wants the HAL to automatically take hog mode on behalf of the process.
 
 
 ---

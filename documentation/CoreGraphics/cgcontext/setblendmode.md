@@ -22,7 +22,7 @@ func setBlendMode(_ mode: CGBlendMode)
 
 ## Parameters
 
-- `mode`: A blend mode. See   for a list of the constants you can supply.
+- `mode`: A blend mode. See [`CGBlendMode`](cgblendmode.md) for a list of the constants you can supply.
 
 ## See Also
 

@@ -26,7 +26,7 @@ The number of items in `section`.
 ## Parameters
 
 - `collectionView`: The collection view requesting this information.
-- `section`: An index number identifying a section in  . This index value is 0-based.
+- `section`: An index number identifying a section in `collectionView`. This index value is 0-based.
 
 ## See Also
 

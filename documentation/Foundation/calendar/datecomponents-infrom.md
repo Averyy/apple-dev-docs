@@ -32,8 +32,8 @@ The time zone overrides the time zone of the `Calendar` for the purposes of this
 
 ## Parameters
 
-- `timeZone`: The   to use.
-- `date`: The   to use.
+- `timeZone`: The `TimeZone` to use.
+- `date`: The `Date` to use.
 
 ## See Also
 

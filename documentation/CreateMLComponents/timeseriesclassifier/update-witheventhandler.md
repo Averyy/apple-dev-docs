@@ -22,7 +22,7 @@ func update(_ transformer: inout TimeSeriesClassifier<Scalar, Label>.Model, with
 ## Parameters
 
 - `transformer`: A transformer to update.
-- `input`: A sequence of annotated features for updating the transformer. Each feature’s shape should be   .
+- `input`: A sequence of annotated features for updating the transformer. Each feature’s shape should be `[sequenceLength, featureSize]`.
 - `eventHandler`: An event handler.
 
 

@@ -22,8 +22,8 @@ init(_ label: LocalizedStringResource, textRange: Range<String.Index>, prepare: 
 
 ## Parameters
 
-- `label`: Localized string used to show this Rotor entry   to users. If no label is specified, the Rotor entry will be labeled   based on the text at that range.
-- `prepare`: Optional closure to run before a Rotor entry   is navigated to, to prepare the UI as needed. This can be used to   bring the UI element or text on-screen if it isn’t already,   and SwiftUI not able to automatically scroll to it.
+- `label`: Localized string used to show this Rotor entry to users. If no label is specified, the Rotor entry will be labeled based on the text at that range.
+- `prepare`: Optional closure to run before a Rotor entry is navigated to, to prepare the UI as needed. This can be used to bring the UI element or text on-screen if it isn’t already, and SwiftUI not able to automatically scroll to it.
 
 ## See Also
 

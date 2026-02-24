@@ -12,14 +12,14 @@ The iOS & iPadOS 17.4 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- Default browser choice screen might not show up when intended and apps requiring certain managed entitlements might not install or show an error.  (121566625)  Open Settings and navigate to Privacy & Security > Location Services. Toggle location services off for 10 seconds, and then turn it back on.
+- Default browser choice screen might not show up when intended and apps requiring certain managed entitlements might not install or show an error.  (121566625) **Workaround:** Open Settings and navigate to Privacy & Security > Location Services. Toggle location services off for 10 seconds, and then turn it back on.
 
 ##### Alternative App Marketplaces
 
 ###### Known Issues
 
 - For apps on an alternative marketplace that use [`Background Assets`](https://developer.apple.comhttps://developer.apple.com/documentation/backgroundassets), assets download after first launch instead of after installation.  (118965723)
-- Large license IDs that a marketplace sets for an app that it distributes may cause app installation to fail.    (123357711) (FB13639300)  Choose a `licenseID` for the `ALDLicenseAttribute` initializer [`init(licenseID:)`](https://developer.apple.comhttps://developer.apple.com/documentation/applicensedeliverysdk/aldlicenseattribute/init(licenseid:)) that’s less than `Int64.max`.
+- Large license IDs that a marketplace sets for an app that it distributes may cause app installation to fail.    (123357711) (FB13639300) **Workaround:** Choose a `licenseID` for the `ALDLicenseAttribute` initializer [`init(licenseID:)`](https://developer.apple.comhttps://developer.apple.com/documentation/applicensedeliverysdk/aldlicenseattribute/init(licenseid:)) that’s less than `Int64.max`.
 
 ##### App Store
 

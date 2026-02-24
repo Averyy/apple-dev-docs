@@ -27,7 +27,7 @@ This method sets the [`title`](nscombobutton/title.md) property to an empty stri
 - `image`: The image to display in the button.
 - `menu`: The menu to display when someone chooses an alternate action.
 - `target`: The object that receives the default action message when someone clicks the button.
-- `action`: The action message to send to the   object.
+- `action`: The action message to send to the `target` object.
 
 ## See Also
 

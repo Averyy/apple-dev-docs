@@ -18,6 +18,10 @@ A dictionary that contains unioned restriction parameters.
 object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Union.ANY restriction name
 ```
 
+## Properties
+
+- `values` ([string]) *(required)*: The values of the restriction.
+
 
 ---
 

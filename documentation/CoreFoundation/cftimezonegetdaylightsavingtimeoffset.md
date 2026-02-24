@@ -27,7 +27,7 @@ The daylight saving time offset for `tz` at `at`.
 ## Parameters
 
 - `tz`: The time zone to analyze.
-- `at`: The time in   to test for daylight saving time offset.
+- `at`: The time in `tz` to test for daylight saving time offset.
 
 ## See Also
 

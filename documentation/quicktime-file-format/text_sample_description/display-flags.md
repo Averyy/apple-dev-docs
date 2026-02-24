@@ -9,6 +9,17 @@ A 32-bit integer containing flags that describe how the text should be drawn.
 
 The following flags are defined:
 
+- **Don’t auto scale**: Controls text scaling. If this flag is set to `1`, the text media handler reflows the text instead of scaling when the track is scaled. This flag’s value is `0x0002`.
+- **Use movie background color**: Controls background color. If this flag is set to `1`, the text media handler ignores the background color field in the text sample description and uses the movie’s background color instead. This flag’s value is `0x0008`.
+- **Scroll in**: Controls text scrolling. If this flag is set to `1`, the text media handler scrolls the text until the last of the text is in view. This flag’s value is `0x0020`.
+- **Scroll out**: Controls text scrolling. If this flag is set to `1`, the text media handler scrolls the text until the last of the text is gone. This flag’s value is `0x0040`.
+- **Horizontal scroll**: Controls text scrolling. If this flag is set to `1`, the text media handler scrolls the text horizontally; otherwise, it scrolls the text vertically. This flag’s value is `0x0080`.
+- **Reverse scroll**: Controls text scrolling. If this flag is set to `1`, the text media handler scrolls down (if scrolling vertically) or backward (if scrolling horizontally; note that horizontal scrolling also depends upon text justification). This flag’s value is `0x0100`.
+- **Continuous scroll**: Controls text scrolling. If this flag is set to `1`, the text media handler displays new samples by scrolling out the old ones. This flag’s value is `0x0200`.
+- **Drop shadow**: Controls drop shadow. If this flag is set to `1`, the text media handler displays the text with a drop shadow. This flag’s value is `0x1000`.
+- **Anti-alias**: Controls anti-aliasing. If this flag is set to `1`, the text media handler uses anti-aliasing when drawing text. This flag’s value is `0x2000`.
+- **Key text**: Controls background color. If this flag is set to `1`, the text media handler does not display the background color, so that the text overlay background tracks. This flag’s value is `0x4000`.
+
 ## See Also
 
 - [Text justification](text_sample_description/text_justification.md)

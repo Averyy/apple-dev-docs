@@ -40,7 +40,7 @@ let secret = await connection.wifiAware?.deriveSharedSecret(for: .tlsPSK, method
 
 - `protocolName`: The protocol that will be setup, such as TLS, IPSec, or a custom protocol.
 - `method`: The method to use to derive the shared secret.
-- `context`: A unique value that is specific to your App and the use case this connection will perform, which diversifies the generated secret. Defaults to the   of the calling app.
+- `context`: A unique value that is specific to your App and the use case this connection will perform, which diversifies the generated secret. Defaults to the `Bundle ID` of the calling app.
 
 
 ---

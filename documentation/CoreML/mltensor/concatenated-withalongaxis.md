@@ -23,7 +23,7 @@ func concatenated(with other: MLTensor, alongAxis axis: Int = 0) -> MLTensor
 ## Parameters
 
 - `other`: The tensor to concatenate. The tensors must have the same dimensions, except for the specified axis.
-- `axis`: The axis along which to concatenate. Negative values wrap around but must be in the range  .
+- `axis`: The axis along which to concatenate. Negative values wrap around but must be in the range `[-rank, rank)`.
 
 ## See Also
 

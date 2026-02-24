@@ -26,7 +26,7 @@ The dequeued element.  `NULL` if the queue was empty, or if there was some other
 
 ## Parameters
 
-- `queue`: The queue from which to dequeue an element. Must not be  .
+- `queue`: The queue from which to dequeue an element. Must not be `NULL`.
 
 ## See Also
 

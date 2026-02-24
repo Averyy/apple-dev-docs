@@ -44,7 +44,7 @@ import TabularData
 let data = try DataFrame(contentsOfJSONFile: URL(fileURLWithPath: "<#/path/to/read/data.json#>"))
 ```
 
-The resulting data frame has two columns, named  and , derived from the keys in the JSON file. The column names can be anything, as long as they are meaningful to you, because you’ll use them as parameters in other methods.
+The resulting data frame has two columns, named *text* and *label*, derived from the keys in the JSON file. The column names can be anything, as long as they are meaningful to you, because you’ll use them as parameters in other methods.
 
 ##### Prepare Your Data for Training and Evaluation
 

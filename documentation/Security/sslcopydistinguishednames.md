@@ -30,7 +30,7 @@ The array retrieved by this function is suitable for use in finding a client ide
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `names`: On return, an array of   objects, each representing one DER-encoded relative distinguished name of an acceptable certification authority. You must call the   function to release this array when you are finished with it.
+- `names`: On return, an array of `CFDataRef` objects, each representing one DER-encoded relative distinguished name of an acceptable certification authority. You must call the `CFRelease` function to release this array when you are finished with it.
 
 ## See Also
 

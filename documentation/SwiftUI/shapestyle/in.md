@@ -61,7 +61,7 @@ SwiftUI remaps the gradient of the first rectangle to the new frame height, so t
 
 ## Parameters
 
-- `rect`: A rectangle that gives the absolute coordinates over   which to map the shape style.
+- `rect`: A rectangle that gives the absolute coordinates over which to map the shape style.
 
 
 ---

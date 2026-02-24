@@ -9,6 +9,10 @@ An entitlement that indicates whether the app can act as the user’s default we
 - iOS 14.0+
 - iPadOS 14.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 For more information about using this entitlement, see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/Xcode/preparing-your-app-to-be-the-default-browser).

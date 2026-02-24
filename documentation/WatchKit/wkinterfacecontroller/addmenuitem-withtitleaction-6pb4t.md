@@ -20,9 +20,9 @@ Use this method to append an action to the interface controller’s context menu
 
 ## Parameters
 
-- `itemIcon`: The identifier of a standard system icon. This parameter must not be  . For a list of possible values, see  .
-- `title`: The title string to be displayed underneath the image. Title strings should be reasonably short. Any text that cannot be displayed is truncated. This parameter must not be   or an empty string.
-- `action`: The action method to be called when the action is tapped. The method must be defined on the current interface controller object. This parameter must not be  .
+- `itemIcon`: The identifier of a standard system icon. This parameter must not be `nil`. For a list of possible values, see [`WKMenuItemIcon`](wkmenuitemicon.md).
+- `title`: The title string to be displayed underneath the image. Title strings should be reasonably short. Any text that cannot be displayed is truncated. This parameter must not be `nil` or an empty string.
+- `action`: The action method to be called when the action is tapped. The method must be defined on the current interface controller object. This parameter must not be `nil`.
 
 ## See Also
 

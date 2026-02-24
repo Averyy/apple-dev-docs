@@ -23,7 +23,7 @@ func chartLineStyleScale<Range>(range: Range) -> some View where Range : ScaleRa
 
 ## Parameters
 
-- `range`: The range of line styles that correspond to the   scale domain.
+- `range`: The range of line styles that correspond to the scale domain.
 
 ## See Also
 

@@ -37,9 +37,9 @@ CMVideoFormatDescriptionCreate ( allocator, ( CVPixelBufferGetTypeID() == CFGetT
 
 ## Parameters
 
-- `allocator`:   to be used when creating the  . Pass   to use the default allocator.
+- `allocator`: `CFAllocator` to be used when creating the `CMFormatDescription`. Pass `NULL` to use the default allocator.
 - `imageBuffer`: Image buffer for which we are creating the format description.
-- `formatDescriptionOut`: On output, returns newly created video  .
+- `formatDescriptionOut`: On output, returns newly created video `CMFormatDescription`.
 
 ## See Also
 

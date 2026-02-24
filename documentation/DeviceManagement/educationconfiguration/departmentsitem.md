@@ -16,6 +16,11 @@ A department in the organization.
 object EducationConfiguration.DepartmentsItem
 ```
 
+## Properties
+
+- `GroupBeaconIDs` ([integer]) *(required)*: The group beacon identifiers that are members of this department.
+- `Name` (string) *(required)*: The display name of the department.
+
 ## See Also
 
 - [object EducationConfiguration.DeviceGroupsItem](educationconfiguration/devicegroupsitem.md)

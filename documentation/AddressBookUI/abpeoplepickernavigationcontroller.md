@@ -3,7 +3,7 @@
 **Framework**: Address Book UI  
 **Kind**: class
 
-The `ABPeoplePickerNavigationController` class (whose instances are known as ) implements a view controller that manages a set of views that allow the user to select a contact or one of its contact-information items from an address book.
+The `ABPeoplePickerNavigationController` class (whose instances are known as **people-picker navigation controllers**) implements a view controller that manages a set of views that allow the user to select a contact or one of its contact-information items from an address book.
 
 **Availability**:
 - iOS 2.0+
@@ -64,6 +64,8 @@ The `ABPeoplePickerNavigationController` class does not support subclassing.
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)

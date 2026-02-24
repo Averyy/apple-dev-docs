@@ -21,8 +21,8 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 
 ## Parameters
 
-- `domain`: The trust settings domain for which you want a list of certificates. For possible values, see  .
-- `certArray`: On return, an array of   objects representing the certificates that have trust settings in the specified domain. In Objective-C, call the   function to release this object when you are finished with it.
+- `domain`: The trust settings domain for which you want a list of certificates. For possible values, see [`SecTrustSettingsDomain`](sectrustsettingsdomain.md).
+- `certArray`: On return, an array of `SecCertificateRef` objects representing the certificates that have trust settings in the specified domain. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
 
 
 ---

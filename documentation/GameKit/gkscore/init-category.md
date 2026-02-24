@@ -26,7 +26,7 @@ Your game explicitly allocates and initializes a score object when it needs to r
 
 ## Parameters
 
-- `category`: An identifier for a specific leaderboard you’ve configured in App Store Connect. Must not be  .
+- `category`: An identifier for a specific leaderboard you’ve configured in App Store Connect. Must not be `nil`.
 
 ## See Also
 

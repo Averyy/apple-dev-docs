@@ -26,7 +26,7 @@ This method provides support for `if` statements. It produces optional chart con
 
 ## Parameters
 
-- `content`: The content to use if the condition is  .
+- `content`: The content to use if the condition is `true`.
 
 ## See Also
 

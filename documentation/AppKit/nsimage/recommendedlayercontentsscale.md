@@ -24,7 +24,7 @@ Use this method to obtain the scale factor value that you pass to the [`layerCon
 
 ## Parameters
 
-- `preferredContentsScale`: The preferred layer contents scale. Don’t use a higher scale factor if the image can’t provide it. If the image is resolution independent the return value will be the same as the input. If you specify   for this parameter, the method uses the scale factor for the default screen.
+- `preferredContentsScale`: The preferred layer contents scale. Don’t use a higher scale factor if the image can’t provide it. If the image is resolution independent the return value will be the same as the input. If you specify `0.0` for this parameter, the method uses the scale factor for the default screen.
 
 ## See Also
 

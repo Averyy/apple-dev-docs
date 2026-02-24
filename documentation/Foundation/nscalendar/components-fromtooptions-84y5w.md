@@ -43,10 +43,10 @@ Note that some computations can take a relatively long time.
 
 ## Parameters
 
-- `unitFlags`: Specifies the components for the returned   object.
+- `unitFlags`: Specifies the components for the returned `NSDateComponents` object.
 - `startingDate`: The start date for the calculation.
 - `resultDate`: The end date for the calculation.
-- `opts`: If you specify a “wrap” option ( ), the specified components are incremented and wrap around to zero/one on overflow, but do not cause higher units to be incremented. When the wrap option is not specified, overflow in a unit carries into the higher units, as in typical addition.
+- `opts`: Options for the calculation.  For possible values, see [`NSCalendar.Options`](nscalendar/options.md). If you specify a “wrap” option ([`wrapComponents`](nscalendar/options/wrapcomponents.md)), the specified components are incremented and wrap around to zero/one on overflow, but do not cause higher units to be incremented. When the wrap option is not specified, overflow in a unit carries into the higher units, as in typical addition.
 
 ## See Also
 

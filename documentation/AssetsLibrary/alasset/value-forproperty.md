@@ -17,7 +17,7 @@ The value for `property`. If `property` is not a valid key, returns [`ALErrorInv
 
 ## Parameters
 
-- `property`: The property for which you want the value. For valid keys, see  .
+- `property`: The property for which you want the value. For valid keys, see [`Property Keys`](property-keys.md).
 
 ## See Also
 

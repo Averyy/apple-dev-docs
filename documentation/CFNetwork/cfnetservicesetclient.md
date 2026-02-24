@@ -35,9 +35,9 @@ For a CFNetService that will operate asynchronously, call this function and then
 
 ## Parameters
 
-- `theService`: The CFNetService; cannot be  .
-- `clientCB`: The callback function that is to be associated with this CFNetService. If you are shutting down the service, set   to   to disassociate from this CFNetService the callback function that was previously associated.
-- `clientContext`: Context information to be used when   is called; cannot be  .
+- `theService`: The CFNetService; cannot be `NULL`.
+- `clientCB`: The callback function that is to be associated with this CFNetService. If you are shutting down the service, set `clientCB` to `NULL` to disassociate from this CFNetService the callback function that was previously associated.
+- `clientContext`: Context information to be used when `clientCB` is called; cannot be `NULL`.
 
 ## See Also
 

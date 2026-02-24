@@ -21,7 +21,7 @@ If your delegate maintains a similar auxiliary word list, you may wish to edit t
 
 ## Parameters
 
-- `sender`: The   object that added the word.
+- `sender`: The `NSSpellServer` object that added the word.
 - `word`: The word that was added.
 - `language`: The language of the added word.
 

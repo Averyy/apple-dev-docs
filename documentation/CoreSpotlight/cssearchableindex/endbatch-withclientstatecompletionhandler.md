@@ -27,7 +27,7 @@ func endBatch(withClientState clientState: Data) async throws
 ## Parameters
 
 - `clientState`: Up to 250 bytes of information that can help you recover from a crash and resume indexing.
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: The block that’s called after the client state has been stored. The block receives the following parameter: - **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is `nil`.
 
 ## See Also
 

@@ -26,8 +26,8 @@ If the sticker image is larger than the view’s frame, the view scales down the
 
 ## Parameters
 
-- `frame`: A rectangular frame for the view, measured in points. The origin of the frame is relative to its superview. This method uses the provided rectangle to set the view’s   and   properties.
-- `sticker`: The sticker object to be displayed. Pass   to create an empty sticker view.
+- `frame`: A rectangular frame for the view, measured in points. The origin of the frame is relative to its superview. This method uses the provided rectangle to set the view’s [`center`](https://developer.apple.com/documentation/UIKit/UIView/center) and [`bounds`](https://developer.apple.com/documentation/UIKit/UIView/bounds) properties.
+- `sticker`: The sticker object to be displayed. Pass `nil` to create an empty sticker view.
 
 ## See Also
 

@@ -25,7 +25,7 @@ func addProgressRange(fromStart start: Double, toEnd end: Double)
 ## Parameters
 
 - `start`: The beginning of the new range to add. This should be fractional value between 0 and 1, inclusive.
-- `end`: The end of the new range to add. This should be larger than the   value and less than or equal to one.
+- `end`: The end of the new range to add. This should be larger than the `start` value and less than or equal to one.
 
 ## See Also
 

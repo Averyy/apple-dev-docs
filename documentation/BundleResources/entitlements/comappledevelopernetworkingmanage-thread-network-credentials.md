@@ -10,6 +10,10 @@ A Boolean value that indicates whether the app can use ThreadNetwork.
 - iPadOS 15.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Use this entitlement while developing and testing your app. Update your Xcode project by opening the Capabilities library to add Managed Thread Network Credentials (development) to your app.

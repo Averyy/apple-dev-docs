@@ -22,8 +22,8 @@ func exchangeObject(at idx1: Int, withObjectAt idx2: Int)
 
 ## Parameters
 
-- `idx1`: The index of the object with which to replace the object at index  .
-- `idx2`: The index of the object with which to replace the object at index  .
+- `idx1`: The index of the object with which to replace the object at index `idx2`.
+- `idx2`: The index of the object with which to replace the object at index `idx1`.
 
 ## See Also
 

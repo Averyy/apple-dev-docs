@@ -22,7 +22,7 @@ func dayOfYear(_ format: Date.FormatStyle.Symbol.DayOfYear = .defaultDigits) -> 
 
 ## Parameters
 
-- `format`: Set the symbol representation or pass   to remove it.
+- `format`: Set the symbol representation or pass `nil` to remove it.
 
 
 ---

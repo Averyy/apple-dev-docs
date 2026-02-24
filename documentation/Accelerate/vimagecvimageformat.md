@@ -30,6 +30,10 @@ The vImage library uses the information in an image format to construct [`vImage
 
 A [`vImageCVImageFormat`](vimagecvimageformat.md) instance is capable of holding an incomplete encoding representation. In this case, the [`vImageConverter_CreateForCGToCVImageFormat(_:_:_:_:_:)`](vimageconverter_createforcgtocvimageformat(_:_:_:_:_:).md) and [`vImageConverter_CreateForCVToCGImageFormat(_:_:_:_:_:)`](vimageconverter_createforcvtocgimageformat(_:_:_:_:_:).md) functions return an error code that indicates what information is missing.
 
+- **[`kvImageCVImageFormat_ConversionMatrix`](kvimagecvimageformat_conversionmatrix.md)**: Use [`vImageCVImageFormat_CopyConversionMatrix(_:_:_:)`](vimagecvimageformat_copyconversionmatrix(_:_:_:).md) to add the missing conversion matrix.
+- **[`kvImageCVImageFormat_ChromaSiting`](kvimagecvimageformat_chromasiting.md)**: Use [`vImageCVImageFormat_SetChromaSiting(_:_:)`](vimagecvimageformat_setchromasiting(_:_:).md) to add the missing chrominance siting information.
+- **[`kvImageCVImageFormat_ColorSpace`](kvimagecvimageformat_colorspace.md)**: Use [`vImageCVImageFormat_SetColorSpace(_:_:)`](vimagecvimageformat_setcolorspace(_:_:).md) to add the missing color space that contains primaries and transfer function.
+
 Reuse a [`vImageCVImageFormat`](vimagecvimageformat.md) instance with other Core Video pixel buffers of the same format, such as other frames from the same movie.
 
 ## Topics

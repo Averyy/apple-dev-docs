@@ -32,7 +32,7 @@ Creates a path from the outlines of the glyph for the specified font. The path r
 
 - `font`: The font reference.
 - `glyph`: The glyph.
-- `matrix`: An affine transform applied to the path. Can be  . If  ,   is used.
+- `matrix`: An affine transform applied to the path. Can be `NULL`. If `NULL`, [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/CoreGraphics/CGAffineTransformIdentity) is used.
 
 ## See Also
 

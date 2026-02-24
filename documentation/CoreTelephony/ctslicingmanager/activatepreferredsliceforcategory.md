@@ -44,7 +44,9 @@ do {
 
 ## Parameters
 
-- `appCategory`: The   to activate. Available categories include:
+- `appCategory`: The [`CTSlicingManager.AppCategory`](ctslicingmanager/appcategory.md) to activate. Available categories include: - `communication`: An app category for communication apps like messaging and voice calls.
+- `gaming`: An app category for gaming apps that require low latency and high performance.
+- `streaming`: An app category for streaming apps that require high bandwidth and consistent throughput.
 
 ## See Also
 

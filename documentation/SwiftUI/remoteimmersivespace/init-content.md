@@ -21,7 +21,7 @@ The space uses the specified content builder to form the content.
 
 ## Parameters
 
-- `content`: A compositor content builder that defines the content   of the space.
+- `content`: A compositor content builder that defines the content of the space.
 
 
 ---

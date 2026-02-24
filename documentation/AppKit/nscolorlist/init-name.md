@@ -24,7 +24,7 @@ This method invokes [`init(name:fromFile:)`](nscolorlist/init(name:fromfile:).md
 
 ## Parameters
 
-- `name`: The name under which to register the color list. Specify   if you don’t want a name.
+- `name`: The name under which to register the color list. Specify `@””` if you don’t want a name.
 
 ## See Also
 

@@ -20,7 +20,7 @@ A value that indicates the get-device-params result. Return [`kIOReturnSuccess`]
 
 ## Parameters
 
-- `deviceParams`: An in/out   parameter. On output, populate this structure with the device’s parameter data.
+- `deviceParams`: An in/out [`DeviceParams`](deviceparams.md) parameter. On output, populate this structure with the device’s parameter data.
 
 ## See Also
 

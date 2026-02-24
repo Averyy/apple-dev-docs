@@ -26,7 +26,7 @@ A valid reference to an immutable CTParagraphStyle object that is a copy of the 
 
 ## Parameters
 
-- `paragraphStyle`: The style to copy. This parameter may not be  .
+- `paragraphStyle`: The style to copy. This parameter may not be `NULL`.
 
 ## See Also
 

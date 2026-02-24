@@ -26,8 +26,8 @@ This method is executed on the dispatch queue specified by the [`metadataObjects
 
 ## Parameters
 
-- `output`: The   object that captured and emitted the metadata objects.
-- `metadataObjects`: An array of   instances representing the newly emitted metadata. Because   is an abstract class, the objects in this array are always instances of a concrete subclass.
+- `output`: The [`AVCaptureMetadataOutput`](avcapturemetadataoutput.md) object that captured and emitted the metadata objects.
+- `metadataObjects`: An array of [`AVMetadataObject`](avmetadataobject.md) instances representing the newly emitted metadata. Because [`AVMetadataObject`](avmetadataobject.md) is an abstract class, the objects in this array are always instances of a concrete subclass.
 - `connection`: The capture connection through which the objects were emitted.
 
 

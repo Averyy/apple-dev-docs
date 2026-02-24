@@ -23,7 +23,7 @@ var translation: AttributeScopes.TranslationAttributes.Type { get }
 ## See Also
 
 - [AttributeScopes.TranslationAttributes](attributescopes/translationattributes.md)
-  An attribute scope that defines translation-related attributes for attributed strings.
+  A scope that defines translation-specific properties on attributed strings.
 
 
 ---

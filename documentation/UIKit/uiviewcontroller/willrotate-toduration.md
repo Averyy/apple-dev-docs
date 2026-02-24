@@ -24,7 +24,7 @@ This method is called regardless of whether your code performs one-step or two-s
 
 ## Parameters
 
-- `toInterfaceOrientation`: The new orientation for the user interface. The possible values are described in  .
+- `toInterfaceOrientation`: The new orientation for the user interface. The possible values are described in [`UIInterfaceOrientation`](uiinterfaceorientation.md).
 - `duration`: The duration of the pending rotation, measured in seconds.
 
 ## See Also

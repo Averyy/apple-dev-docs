@@ -31,7 +31,7 @@ You can use [`CFStringGetMaximumSizeOfFileSystemRepresentation(_:)`](cfstringget
 ## Parameters
 
 - `string`: The string to convert.
-- `buffer`: The C string buffer into which to copy the string. The buffer must be at least   bytes in length. On return, the buffer contains the converted characters.
+- `buffer`: The C string buffer into which to copy the string. The buffer must be at least `maxBufLen` bytes in length. On return, the buffer contains the converted characters.
 - `maxBufLen`: The maximum length of the buffer.
 
 ## See Also

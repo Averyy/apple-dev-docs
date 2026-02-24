@@ -21,7 +21,7 @@ struct JointTransforms
 
 #### Overview
 
-This structure provides a template that informs an animation on how to animate a character. The resulting movement bases on the  ([`fromValue`](fromtobyanimation/fromvalue-6msd.md)) ,  ([`toValue`](fromtobyanimation/tovalue-813jk.md)) , or  values ([`byValue`](fromtobyanimation/byvalue-3bp3q.md)) you supply for a [`FromToByAnimation`](fromtobyanimation.md). The animation determines which joints take on the movement through its [`jointNames`](fromtobyanimation/jointnames.md) property.
+This structure provides a template that informs an animation on how to animate a character. The resulting movement bases on the *from* ([`fromValue`](fromtobyanimation/fromvalue-6msd.md)) , *to* ([`toValue`](fromtobyanimation/tovalue-813jk.md)) , or *by* values ([`byValue`](fromtobyanimation/byvalue-3bp3q.md)) you supply for a [`FromToByAnimation`](fromtobyanimation.md). The animation determines which joints take on the movement through its [`jointNames`](fromtobyanimation/jointnames.md) property.
 
 #### Animate an Entitys Skeleton
 

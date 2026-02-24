@@ -6,7 +6,7 @@ Keep the local and remote copies of your File Provider extension’s content in 
 
 #### Overview
 
-The system manages a local copy of the items—both documents and folders—stored on your file provider’s remote storage. The local copy can contain either  or  copies of these items. A dataless copy just stores the information needed to display the item in the UI, while a materialized copy includes the item’s content.
+The system manages a local copy of the items—both documents and folders—stored on your file provider’s remote storage. The local copy can contain either *dataless* or *materialized* copies of these items. A dataless copy just stores the information needed to display the item in the UI, while a materialized copy includes the item’s content.
 
 For documents, a dataless copy means the system just saves the item’s metadata—such as its name, file size, and last used date—while a materialized document includes both the metadata and the content. For folders, the situation is somewhat more abstract. For a dataless folder, the system knows the folder exists, but it hasn’t enumerated its content yet. If the user opens the folder, the system needs to enumerate the content before displaying it to the user. A materialized folder means the system has already enumerated the folder. Therefore, it has either a dataless or a materialized copy of every item in the folder and can display the folder’s content without requiring any additional information.
 

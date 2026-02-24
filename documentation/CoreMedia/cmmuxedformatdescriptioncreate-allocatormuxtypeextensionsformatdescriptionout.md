@@ -30,10 +30,10 @@ A muxed format description does not know the formats of the sub-streams within t
 
 ## Parameters
 
-- `allocator`:   to be used. Pass   or   to use the default allocator.
-- `muxType`: Type of the muxed stream (e.g.   for MPEG-2 transport stream). This is the media subtype, and will be returned if you subsequently call   (or  ).
-- `extensions`: Dictionary of extension key/value pairs. Keys are always of type  . Values are always property list objects (i.e..  ,  ,  ,  ,  ,  , or  ). Can be  .
-- `formatDescriptionOut`: On output, returns newly created muxed 
+- `allocator`: `CFAllocator` to be used. Pass `NULL` or `kCFAllocatorDefault` to use the default allocator.
+- `muxType`: Type of the muxed stream (e.g. `kCMMuxedStreamType_MPEG2Transport` for MPEG-2 transport stream). This is the media subtype, and will be returned if you subsequently call `CMFormatDescriptionGetMediaSubType` (or `CMMuxedFormatDescriptionGetStreamType`).
+- `extensions`: Dictionary of extension key/value pairs. Keys are always of type `CFString`. Values are always property list objects (i.e.. `CFData`, `CFString`, `CFArray`, `CFDictionary`, `CFDate`, `CFBoolean`, or `CFNumber`). Can be `NULL`.
+- `formatDescriptionOut`: On output, returns newly created muxed `CMFormatDescription`
 
 
 ---

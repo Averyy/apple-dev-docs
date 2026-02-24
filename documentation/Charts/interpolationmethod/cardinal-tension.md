@@ -22,7 +22,7 @@ static func cardinal(tension: CGFloat) -> InterpolationMethod
 
 ## Parameters
 
-- `tension`: A parameter that controls the length of tangents   in the cardinal spline.
+- `tension`: A parameter that controls the length of tangents in the cardinal spline.
 
 
 ---

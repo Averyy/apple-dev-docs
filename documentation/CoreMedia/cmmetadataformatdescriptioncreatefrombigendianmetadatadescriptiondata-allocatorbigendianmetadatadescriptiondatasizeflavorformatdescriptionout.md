@@ -22,10 +22,10 @@ func CMMetadataFormatDescriptionCreateFromBigEndianMetadataDescriptionData(alloc
 
 ## Parameters
 
-- `allocator`: Allocator to use for allocating the CMMetadataFormatDescription object. May be  .
+- `allocator`: Allocator to use for allocating the CMMetadataFormatDescription object. May be `NULL`.
 - `metadataDescriptionData`: MetadataDescription data structure in big-endian byte ordering.
 - `size`: Size of MetadataDescription data structure.
-- `flavor`: Reserved for future use. Pass   for QuickTime Movie or ISO flavor.
+- `flavor`: Reserved for future use. Pass `NULL` for QuickTime Movie or ISO flavor.
 - `formatDescriptionOut`: Receives new CMMetadataFormatDescriptionRef.
 
 ## See Also

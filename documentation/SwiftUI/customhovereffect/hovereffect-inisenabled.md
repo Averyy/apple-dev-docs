@@ -47,9 +47,9 @@ struct ScaleUpEffect: CustomHoverEffect {
 
 ## Parameters
 
-- `effect`: A   to combine with this effect.
-- `group`: An optional   to add this effect to.
-- `isEnabled`: Whether   is enabled or not.
+- `effect`: A [`CustomHoverEffect`](customhovereffect.md) to combine with this effect.
+- `group`: An optional [`HoverEffectGroup`](hovereffectgroup.md) to add this effect to.
+- `isEnabled`: Whether `effect` is enabled or not.
 
 ## See Also
 

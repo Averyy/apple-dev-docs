@@ -27,7 +27,7 @@ An initialized [`HTTPURLResponse`](httpurlresponse.md) object or `nil` if an err
 ## Parameters
 
 - `url`: The URL from which the response was generated.
-- `statusCode`: The HTTP status code to return ( , for example). See   for details.
+- `statusCode`: The HTTP status code to return (`404`, for example). See [`RFC 2616`](https://developer.apple.comhttp://www.ietf.org/rfc/rfc2616.txt) for details.
 - `HTTPVersion`: The version of the HTTP response as returned by the server. This is typically represented as “HTTP/1.1”.
 - `headerFields`: A dictionary representing the keys and values from the server’s response header.
 

@@ -30,7 +30,7 @@ The system takes the layer’s frame size and its [`videoGravity`](avcapturevide
 
 ## Parameters
 
-- `rectInLayerCoordinates`: A rectangle in the   object’s coordinate system.
+- `rectInLayerCoordinates`: A rectangle in the [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md) object’s coordinate system.
 
 ## See Also
 

@@ -28,7 +28,7 @@ You can remove any options ancestor views may have added by providing `nil` for 
 
 ## Parameters
 
-- `options`: The system calls this function before processing a purchase, with the   product to  be purchased is provided as a parameter. Return a set of   purchase options to add to the purchase.
+- `options`: The system calls this function before processing a purchase, with the product to  be purchased is provided as a parameter. Return a set of purchase options to add to the purchase.
 
 ## See Also
 

@@ -19,8 +19,8 @@ struct PairingInfo
 
 For privacy reasons, these values are only sent during initial pairing over Wi-Fi Aware, with a:
 
-- : Include it in publish frames when you enable Wi-Fi Aware pair setup.
-- : Include it in the pairing bootstrap request frame when you pair to a publisher.
+- **`Publisher`**: Include it in publish frames when you enable Wi-Fi Aware pair setup.
+- **`Subscriber`**: Include it in the pairing bootstrap request frame when you pair to a publisher.
 
 After initial pairing completes, the system no longer sends these values in any over-the-air frames, to prevent user tracking and protect user privacy.
 

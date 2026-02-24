@@ -16,7 +16,7 @@ Xcode 12.3 includes SDKs for iOS 14.3, iPadOS 14.3, tvOS 14.3, watchOS 7.2, and 
 
 ###### Known Issues
 
-- The first time you launch Xcode on a Mac with Apple silicon without Rosetta installed, Xcode prompts you to install Rosetta. The prompt prevents any interaction, and blocks Xcode from launching. (70853975) (FB8848625) : Launch an x86_64 process to trigger the system’s Rosetta prompt.
+- The first time you launch Xcode on a Mac with Apple silicon without Rosetta installed, Xcode prompts you to install Rosetta. The prompt prevents any interaction, and blocks Xcode from launching. (70853975) (FB8848625) **Workaround**: Launch an x86_64 process to trigger the system’s Rosetta prompt.
 
 ##### Build System
 
@@ -51,7 +51,7 @@ Xcode 12.3 includes SDKs for iOS 14.3, iPadOS 14.3, tvOS 14.3, watchOS 7.2, and 
 
 ###### Known Issues
 
-- On a Mac with Apple silicon, SceneKit editor may display pixelated graphics or an empty window. (71239899, 71395291, 72141599) : Click on the Display option icon at the bottom-right of the 3D viewport, then disable the Outline selection and Grid options.
+- On a Mac with Apple silicon, SceneKit editor may display pixelated graphics or an empty window. (71239899, 71395291, 72141599) **Workaround**: Click on the Display option icon at the bottom-right of the 3D viewport, then disable the Outline selection and Grid options.
 
 ##### Simulator
 

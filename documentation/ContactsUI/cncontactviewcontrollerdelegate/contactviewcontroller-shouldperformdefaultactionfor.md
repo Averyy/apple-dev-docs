@@ -28,7 +28,7 @@ Implement this method to determine the resulting behavior when a property is sel
 ## Parameters
 
 - `viewController`: The view controller presenting the contact.
-- `property`: The property ( )   selected by the user.
+- `property`: The property ([`CNContactProperty`](https://developer.apple.com/documentation/Contacts/CNContactProperty)) selected by the user.
 
 ## See Also
 

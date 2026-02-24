@@ -29,7 +29,7 @@ Calling [`init(api:)`](eaglcontext/init(api:).md) creates a new [`EAGLSharegroup
 
 ## Parameters
 
-- `api`: The desired version of the OpenGL ES rendering API. For legal values, see  .
+- `api`: The desired version of the OpenGL ES rendering API. For legal values, see [`EAGLRenderingAPI`](eaglrenderingapi.md).
 
 ## See Also
 

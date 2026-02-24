@@ -22,13 +22,13 @@ func CGPDFOperatorTableSetCallback(_ table: CGPDFOperatorTableRef, _ name: Unsaf
 
 #### Discussion
 
-You call the function [`CGPDFOperatorTableSetCallback(_:_:_:)`](cgpdfoperatortablesetcallback(_:_:_:).md) for each PDF operator for which you want to provide a callback. See Appendix A in the , version 1.3, Adobe Systems Incorporated for a summary of PDF operators.
+You call the function [`CGPDFOperatorTableSetCallback(_:_:_:)`](cgpdfoperatortablesetcallback(_:_:_:).md) for each PDF operator for which you want to provide a callback. See Appendix A in the *PDF Reference, Second Edition*, version 1.3, Adobe Systems Incorporated for a summary of PDF operators.
 
 ## Parameters
 
 - `table`: A PDF operator table.
 - `name`: The name of the PDF operator you want to set a callback for.
-- `callback`: The callback to invoke for the PDF operator specified by the   parameter.
+- `callback`: The callback to invoke for the PDF operator specified by the `name` parameter.
 
 
 ---

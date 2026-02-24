@@ -27,6 +27,12 @@ The block returns an audio unit status result code. If instead an error is retur
 
 The block takes the following parameters:
 
+- **actionFlags**: The pointer to the action flags.
+- **timestamp**: The HAL time at which the input data will be rendered. If there is a sample rate conversion or time compression/expansion downstream, the sample time will not be valid.
+- **frameCount**: The number of input sample frames requested.
+- **inputBusNumber**: The index of the input bus being pulled.
+- **inputData**: The input audio data.
+
 ## See Also
 
 - [struct ScheduledAudioFileRegion](scheduledaudiofileregion.md)

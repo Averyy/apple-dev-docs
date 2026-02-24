@@ -30,7 +30,7 @@ The initialized recurrence rule, or `nil` if invalid values are provided.
 ## Parameters
 
 - `type`: The frequency of the recurrence rule. Can be daily, weekly, monthly, or yearly.
-- `interval`: The interval between instances of this recurrence. For example, a weekly recurrence rule with an interval of   occurs every other week. Must be greater than  .
+- `interval`: The interval between instances of this recurrence. For example, a weekly recurrence rule with an interval of `2` occurs every other week. Must be greater than `0`.
 - `end`: The end of the recurrence rule.
 
 ## See Also

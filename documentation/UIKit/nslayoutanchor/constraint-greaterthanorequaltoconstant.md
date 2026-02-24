@@ -32,9 +32,43 @@ This method defines the relationship `first attribute >= second attribute + c`. 
 
 The constraints produced by the following two examples are identical.
 
+**Swift**:
+
+```swift
+// Creating a constraint using NSLayoutConstraint
+ 
+NSLayoutConstraint(item: textField,
+                   attribute: .Leading,
+                   relatedBy: .GreaterThanOrEqual,
+                   toItem: label,
+                   attribute: .Trailing,
+                   multiplier: 1.0,
+                   constant: 8.0).isActive = true
+ 
+// Creating the same constraint using constraintGreaterThanOrEqualToAnchor:constant:
+textField.leadingAnchor.constraintGreaterThanOrEqualToAnchor(label.trailingAnchor, constant: 8.0).isActive = true
+```
+
+**Objective-C**:
+
+```objc
+// Creating a constraint using NSLayoutConstraint
+ 
+[NSLayoutConstraint constraintWithItem:self.textField
+                             attribute:NSLayoutAttributeLeading
+                             relatedBy:NSLayoutRelationGreaterThanOrEqual
+                                toItem:self.label
+                             attribute:NSLayoutAttributeTrailing
+                            multiplier:1.0
+                              constant:8.0].active = YES;
+ 
+// Creating the same constraint using constraintGreaterThanOrEqualToAnchor:constant:
+[self.textField.leadingAnchor constraintGreaterThanOrEqualToAnchor:self.label.trailingAnchor constant:8.0].active = YES;
+```
+
 ## Parameters
 
-- `anchor`: A layout anchor from a  ,  , or   object. You must use a subclass of   that matches the current anchor. For example, if you call this method on an   object, this parameter must be another  .
+- `anchor`: A layout anchor from a [`UIView`](uiview.md), [`NSView`](https://developer.apple.com/documentation/AppKit/NSView), or [`UILayoutGuide`](uilayoutguide.md) object. You must use a subclass of [`NSLayoutAnchor`](nslayoutanchor.md) that matches the current anchor. For example, if you call this method on an [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md) object, this parameter must be another [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md).
 - `c`: The constant offset for the constraint.
 
 ## See Also

@@ -20,7 +20,7 @@ func paperMarkupViewControllerDidChangeMarkup(_ paperMarkupViewController: Paper
 
 ## Parameters
 
-- `paperMarkupViewController`: The   containing the markup.
+- `paperMarkupViewController`: The `PaperMarkupViewController` containing the markup.
 
 
 ---

@@ -29,7 +29,7 @@ This method sets the [`textSelector`](avtextstylerule/textselector.md) property 
 
 ## Parameters
 
-- `textMarkupAttributes`: A dictionary of style attributes. For a list of supported keys and values that you can include in this dictionary, see  .
+- `textMarkupAttributes`: A dictionary of style attributes. For a list of supported keys and values that you can include in this dictionary, see `CMTextMarkup.h`.
 
 ## See Also
 

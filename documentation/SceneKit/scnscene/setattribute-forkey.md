@@ -23,7 +23,7 @@ func setAttribute(_ attribute: Any?, forKey key: String)
 ## Parameters
 
 - `attribute`: An object that specifies the value of the attribute to be written.
-- `key`: One of the constants described in   that identifies the attribute to be written.
+- `key`: One of the constants described in [`Scene Attributes`](scene-attributes.md) that identifies the attribute to be written.
 
 ## See Also
 

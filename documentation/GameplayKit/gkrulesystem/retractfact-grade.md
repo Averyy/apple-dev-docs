@@ -27,7 +27,7 @@ Upon asserting or retracting any facts, the system reevaluates the rules in its 
 
 ## Parameters
 
-- `fact`: An object representing a truth to be claimed or rejected by the rule system. For details, see the   property.
+- `fact`: An object representing a truth to be claimed or rejected by the rule system. For details, see the [`facts`](gkrulesystem/facts.md) property.
 - `grade`: The amount by which to reduce the fact’s membership grade.
 
 ## See Also

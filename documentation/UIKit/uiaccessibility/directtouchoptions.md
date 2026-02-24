@@ -21,7 +21,7 @@ struct DirectTouchOptions
 
 #### Overview
 
- are regions of the screen where VoiceOver passes gestures directly to the app instead of interpreting them as VoiceOver commands.
+*Direct touch areas* are regions of the screen where VoiceOver passes gestures directly to the app instead of interpreting them as VoiceOver commands.
 
 Examples of direct touch areas include:
 

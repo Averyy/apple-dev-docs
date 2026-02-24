@@ -28,8 +28,8 @@ If you do add content to the message in addition to the certificates, you must c
 
 ## Parameters
 
-- `cmsEncoder`: The CMSEncoder reference returned by the   function.
-- `certOrArray`: Either a single certificate, specified as a certificate object (type  ), or a set of certificates specified as a   of certificate objects.
+- `cmsEncoder`: The CMSEncoder reference returned by the `CMSEncoderCreate` function.
+- `certOrArray`: Either a single certificate, specified as a certificate object (type `SecCertificateRef`), or a set of certificates specified as a `CFArray` of certificate objects.
 
 ## See Also
 

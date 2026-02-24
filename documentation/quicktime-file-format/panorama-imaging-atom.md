@@ -39,6 +39,13 @@ enum {
 };
 ```
 
+**Constant descriptions**
+
+- **`kQTVRValidCorrection`**: The default correction mode for panorama-imaging properties. If this bit is set, the correction field holds a default correction mode.
+- **`kQTVRValidQuality`**: The default imaging quality for panorama-imaging properties. If this bit is set, the quality field holds a default imaging quality.
+- **`kQTVRValidDirectDraw`**: The default direct-draw quality for panorama-imaging properties. If this bit is set, the directDraw field holds a default direct-drawing property.
+- **`kQTVRValidFirstExtraProperty`**: The default imaging property for panorama-imaging properties. If this bit is set, the first element in the array in the imagingProperties field holds a default imaging property. As new imaging properties are added, they will be stored in this array.
+
 ## Topics
 
 ### Data fields

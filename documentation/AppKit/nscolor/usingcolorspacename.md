@@ -20,7 +20,7 @@ The new `NSColor` object or `nil` if the specified conversion cannot be done.
 
 ## Parameters
 
-- `name`: The name of the color space containing the new   object.
+- `name`: The name of the color space containing the new `NSColor` object.
 
 ## See Also
 

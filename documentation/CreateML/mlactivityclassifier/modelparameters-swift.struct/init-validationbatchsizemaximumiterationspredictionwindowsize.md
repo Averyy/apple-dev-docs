@@ -16,10 +16,10 @@ init(validation: MLActivityClassifier.ModelParameters.Validation = .split(strate
 
 ## Parameters
 
-- `validation`: An   instance that contains a validation dataset.
+- `validation`: An [`MLActivityClassifier.DataSource`](mlactivityclassifier/datasource.md) instance that contains a validation dataset.
 - `batchSize`: The number of activity entries the training session uses for each of its training iterations.
 - `maximumIterations`: The largest number of training iterations the training session can use.
-- `predictionWindowSize`: The number of time increments the training session uses to train an activity   classifier.
+- `predictionWindowSize`: The number of time increments the training session uses to train an activity classifier.
 
 ## See Also
 

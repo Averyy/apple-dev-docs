@@ -20,6 +20,18 @@ Collection behaviors are properties you set on windows to control their display 
 
 To set a collection behavior on a window, assign one or more behavior options to the window’s [`collectionBehavior`](nswindow/collectionbehavior-swift.property.md) property:
 
+**Swift**:
+
+```swift
+window.collectionBehavior = .primary
+```
+
+**Objective-C**:
+
+```objc
+window.collectionBehavior = NSWindowCollectionBehaviorPrimary;
+```
+
 Not all collection behaviors apply to all windowing management technologies, and some are mutually exclusive to their respective groups. For example, [`primary`](nswindow/collectionbehavior-swift.struct/primary.md), [`auxiliary`](nswindow/collectionbehavior-swift.struct/auxiliary.md), and [`canJoinAllApplications`](nswindow/collectionbehavior-swift.struct/canjoinallapplications.md) only apply to full screen and Stage Manager. They’re also mutually exclusive. Specify at most one per window.
 
 ## Topics

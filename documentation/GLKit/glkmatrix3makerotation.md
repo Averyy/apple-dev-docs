@@ -24,9 +24,9 @@ A new rotation matrix.
 ## Parameters
 
 - `radians`: The angle of the rotation (a positive angle is counterclockwise).
-- `x`: The   component of the rotation vector.
-- `y`: The   component of the rotation vector.
-- `z`: The   component of the rotation vector.
+- `x`: The `x` component of the rotation vector.
+- `y`: The `y` component of the rotation vector.
+- `z`: The `z` component of the rotation vector.
 
 ## See Also
 

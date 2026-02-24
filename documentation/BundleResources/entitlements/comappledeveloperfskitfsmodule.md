@@ -9,6 +9,10 @@ An entitlement that indicates an extension provides an FSKit filesystem.
 - macOS 15.4+
 
 
+
+**Type**: boolean
+
+
 ---
 
 *[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.fskit.fsmodule)*

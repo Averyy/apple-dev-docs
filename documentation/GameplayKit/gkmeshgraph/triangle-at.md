@@ -29,7 +29,7 @@ This method provides valid results only after calling the [`triangulate()`](gkme
 
 ## Parameters
 
-- `index`: An index identifying the triangle. Must be less than the value of the   property.
+- `index`: An index identifying the triangle. Must be less than the value of the [`triangleCount`](gkmeshgraph/trianglecount.md) property.
 
 ## See Also
 

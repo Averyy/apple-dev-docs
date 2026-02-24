@@ -36,8 +36,8 @@ To make a buffer of audio data ready to play, use [`AudioQueuePrime(_:_:_:)`](au
 ## Parameters
 
 - `inAQ`: The audio queue to be primed.
-- `inNumberOfFramesToPrepare`: The number of frames to decode before returning. Pass   to decode all enqueued buffers.
-- `outNumberOfFramesPrepared`: On output, the number of frames actually decoded and prepared for playback. Pass   on input if you you are not interested in this information.
+- `inNumberOfFramesToPrepare`: The number of frames to decode before returning. Pass `0` to decode all enqueued buffers.
+- `outNumberOfFramesPrepared`: On output, the number of frames actually decoded and prepared for playback. Pass `NULL` on input if you you are not interested in this information.
 
 ## See Also
 

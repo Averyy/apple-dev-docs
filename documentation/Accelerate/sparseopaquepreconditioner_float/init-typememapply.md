@@ -23,8 +23,8 @@ init(type: SparsePreconditioner_t, mem: UnsafeMutableRawPointer, apply: (UnsafeM
 ## Parameters
 
 - `type`: The preconditioner type.
-- `mem`: The unaltered memory pointer that passes as the first parameter of the   function.
-- `apply`: A function that calculates  , where   is the preconditioner.
+- `mem`: The unaltered memory pointer that passes as the first parameter of the `apply` function.
+- `apply`: A function that calculates *Y = PX*, where *P* is the preconditioner.
 
 
 ---

@@ -25,7 +25,7 @@ This function ignores any window IDs in the `windowArray` parameter that refer t
 
 ## Parameters
 
-- `windowArray`: An array of   types, each of which corresponds to a window whose information you want to retrieve.
+- `windowArray`: An array of [`CGWindowID`](cgwindowid.md) types, each of which corresponds to a window whose information you want to retrieve.
 
 ## See Also
 

@@ -20,7 +20,7 @@ Initialized speech synthesizer or `nil` when the voice identified by `voiceIdent
 
 ## Parameters
 
-- `voice`: Identifier of the voice to set as the current voice. When  , the default voice is used. Passing in a specific voice means the initial speaking rate is determined by the synthesizer’s default speaking rate; passing   means the speaking rate is automatically set to the rate the user specifies in Speech preferences.
+- `voice`: Identifier of the voice to set as the current voice. When `nil`, the default voice is used. Passing in a specific voice means the initial speaking rate is determined by the synthesizer’s default speaking rate; passing `nil` means the speaking rate is automatically set to the rate the user specifies in Speech preferences.
 
 ## See Also
 

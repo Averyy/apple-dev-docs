@@ -25,8 +25,8 @@ The initialized image object.
 
 ## Parameters
 
-- `pixelBuffer`: A    object.
-- `options`: A dictionary that contains options for creating an image object. (See  .) The pixel format is supplied by the   object.
+- `pixelBuffer`: A  `CVPixelBuffer` object.
+- `options`: A dictionary that contains options for creating an image object. (See `Image Dictionary Keys`.) The pixel format is supplied by the `CVPixelBuffer` object.
 
 ## See Also
 

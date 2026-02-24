@@ -18,7 +18,11 @@ func consumeSampleBuffer(from client: CMIOExtensionClient) async throws -> (CMSa
 ## Parameters
 
 - `client`: The client with a sample to process.
-- `completionHandler`: A callback the system invokes with the following data:
+- `completionHandler`: A callback the system invokes with the following data: - **`sampleBuffer`**: A sample buffer that contains the media sample to consume, or `nil` if an error occurs.
+- **`sampleBufferSequenceNumber`**: The sequence number of the current sample.
+- **`discontinuity`**: A flag that indicates if there’s a discontinuity in the stream.
+- **`hasMoreSampleBuffers`**: A Boolean value that indicates whether there are more buffers available.
+- **`error`**: An optional error. If an error occurs, it contains the details of the failure.
 
 ## See Also
 

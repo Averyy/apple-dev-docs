@@ -29,16 +29,16 @@ Calculates `alpha*A*A`; if transposed, calculates `alpha*A`.
 ## Parameters
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
-- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are   or  .
-- `TRANS`: Specifies whether to use matrix A (  or  ) or the transpose of A (  or  ).
-- `N`: Order of matrix  .
-- `K`: Number of columns in matrix   (or number of rows if matrix   is transposed).
-- `ALPHA`: Scaling factor for matrix  .
-- `A`: Matrix  .
-- `LDA`: Leading dimension of array containing matrix  .
-- `BETA`: Scaling factor for matrix  .
-- `C`: Matrix  .
-- `LDC`: Leading dimension of array containing matrix  .
+- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are `'U'` or `'L'`.
+- `TRANS`: Specifies whether to use matrix A (`'N'` or `'n'`) or the transpose of A (`'T'` or `'t'`).
+- `N`: Order of matrix `C`.
+- `K`: Number of columns in matrix `A` (or number of rows if matrix `A` is transposed).
+- `ALPHA`: Scaling factor for matrix `A`.
+- `A`: Matrix `A`.
+- `LDA`: Leading dimension of array containing matrix `A`.
+- `BETA`: Scaling factor for matrix `C`.
+- `C`: Matrix `C`.
+- `LDC`: Leading dimension of array containing matrix `C`.
 
 ## See Also
 

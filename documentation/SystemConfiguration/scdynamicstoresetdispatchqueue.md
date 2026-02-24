@@ -21,7 +21,7 @@ func SCDynamicStoreSetDispatchQueue(_ store: SCDynamicStore, _ queue: dispatch_q
 ## Parameters
 
 - `store`: The dynamic store session.
-- `queue`: The dispatch queue on which to run the callback function. Pass   to disable notifications and release the queue.
+- `queue`: The dispatch queue on which to run the callback function. Pass `NULL` to disable notifications and release the queue.
 
 ## See Also
 

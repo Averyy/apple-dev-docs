@@ -6,7 +6,7 @@ Display a Smart App Banner and the App Clip card on your website that people tap
 
 #### Overview
 
-When you create your App Clip, register a . By creating a default App Clip experience, you lay the foundation for supporting  from a Smart App Banner on your website. This has an added benefit: If a person shares a link to your website in the Messages app and the website displays a Smart App Banner, the recipient can tap the link to instantly launch your App Clip.
+When you create your App Clip, register a *default App Clip experience*. By creating a default App Clip experience, you lay the foundation for supporting *invocations* from a Smart App Banner on your website. This has an added benefit: If a person shares a link to your website in the Messages app and the website displays a Smart App Banner, the recipient can tap the link to instantly launch your App Clip.
 
 Additionally, you can display the App Clip card on your website if a person’s device runs iOS 15 or later. This makes your App Clip even more discoverable and reduces the number of taps required to launch your App Clip.
 

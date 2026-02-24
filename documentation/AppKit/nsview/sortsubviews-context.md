@@ -16,8 +16,8 @@ func sortSubviews(_ compare: (NSView, NSView, UnsafeMutableRawPointer?) -> Compa
 
 ## Parameters
 
-- `compare`: A pointer to the comparator function. This function must take as arguments two subviews to be ordered and contextual data (supplied in   which may be arbitrary data used to help in the comparison. The comparator function should return   if the first subview should be ordered lower,   if the second subview should be ordered lower, and   if their ordering isn’t important.
-- `context`: Arbitrary data that might help the comparator function   in its decisions.
+- `compare`: A pointer to the comparator function. This function must take as arguments two subviews to be ordered and contextual data (supplied in `context` which may be arbitrary data used to help in the comparison. The comparator function should return `NSOrderedAscending` if the first subview should be ordered lower, `NSOrderedDescending` if the second subview should be ordered lower, and `NSOrderedSame` if their ordering isn’t important.
+- `context`: Arbitrary data that might help the comparator function `compare` in its decisions.
 
 ## See Also
 

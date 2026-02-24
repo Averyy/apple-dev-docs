@@ -30,6 +30,16 @@ Specify `com.apple.jabber.account` as the payload type.
 | Allowed in user enrollment | NA |
 | Allow multiple payloads | macOS |
 
+## Properties
+
+- `JabberAccountDescription` (string): The description of the account.
+- `JabberAuthentication` (string) *(required)*: The authentication method for the account.
+- `JabberHostName` (string) *(required)*: The server’s address.
+- `JabberPassword` (string): The user’s password.
+- `JabberPort` (integer): The server’s port.
+- `JabberUserName` (string): The user’s user name.
+- `JabberUseSSL` (boolean): If `true`, enables SSL.
+
 ## See Also
 
 - [object AIMAccount](aimaccount.md)

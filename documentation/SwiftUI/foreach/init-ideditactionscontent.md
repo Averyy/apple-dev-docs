@@ -53,9 +53,9 @@ Explicit `DynamicViewContent.onDelete(perform:)`, `DynamicViewContent.onMove(per
 
 ## Parameters
 
-- `data`: The identified data that the   instance uses to   create views dynamically and can be edited by the user.
+- `data`: The identified data that the [`ForEach`](foreach.md) instance uses to create views dynamically and can be edited by the user.
 - `id`: The key path to the provided data’s identifier.
-- `editActions`: The edit actions that are synthesized on  .
+- `editActions`: The edit actions that are synthesized on `data`.
 - `content`: The view builder that creates views dynamically.
 
 ## See Also

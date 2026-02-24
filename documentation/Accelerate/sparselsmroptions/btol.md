@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: property
 
-The  tolerance (Fong-Saunders test only).
+The *B* tolerance (Fong-Saunders test only).
 
 **Availability**:
 - iOS ?+
@@ -22,12 +22,12 @@ var btol: Double
 
 #### Discussion
 
-This value holds an estimate of the relative error in the data defining the right-hand-side, . For example, if  is accurate to about six digits, set [`btol`](sparselsmroptions/btol.md) `= 1.0e-6`.
+This value holds an estimate of the relative error in the data defining the right-hand-side, *b*. For example, if *b* is accurate to about six digits, set [`btol`](sparselsmroptions/btol.md) `= 1.0e-6`.
 
 ## See Also
 
 - [var atol: Double](sparselsmroptions/atol.md)
-  The absolute tolerance (default test) or  tolerance (Fong-Saunders test).
+  The absolute tolerance (default test) or *A* tolerance (Fong-Saunders test).
 - [var conditionLimit: Double](sparselsmroptions/conditionlimit.md)
   The condition number limit (Fong-Saunders test only).
 - [var convergenceTest: SparseLSMRConvergenceTest_t](sparselsmroptions/convergencetest.md)

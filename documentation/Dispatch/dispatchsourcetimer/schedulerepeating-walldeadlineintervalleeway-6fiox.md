@@ -33,7 +33,7 @@ Calling this method on a cancelled dispatch source has no effect.
 
 - `wallDeadline`: The time at which to execute the dispatch source’s event handler.
 - `interval`: The repeat interval for the timer, specified as a DispatchTimeInterval value. Specify DispatchTimeInterval.never if you want the timer to fire only once.
-- `leeway`: The maximum amount of time after   by which the system may delay the delivery of the timer event.
+- `leeway`: The maximum amount of time after `wallDeadline` by which the system may delay the delivery of the timer event.
 
 ## See Also
 

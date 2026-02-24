@@ -105,7 +105,7 @@ You can assign a delegate to the popover to manage interactions with the popover
 - [class UIMutableUserNotificationCategory](uimutableusernotificationcategory.md)
   Information about custom actions that your app can perform in response to a local or push notification.
 - [class UIPreviewAction](uipreviewaction.md)
-  A preview action, or , that displays below a peek when a user swipes the peek upward.
+  A preview action, or *peek quick action*, that displays below a peek when a user swipes the peek upward.
 - [class UIPreviewActionGroup](uipreviewactiongroup.md)
   A group of one or more child quick actions, each an instance of the preview action class.
 - [class UISearchDisplayController](uisearchdisplaycontroller.md)

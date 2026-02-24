@@ -21,7 +21,7 @@ class PKPaymentRequest
 
 #### Overview
 
-Use a [`PKPaymentRequest`](pkpaymentrequest.md) object to represent a merchant request for payment for goods or services. Your app creates a payment request as soon as a person taps the Apple Pay button to make a purchase. Tapping the Apple Pay button in your app initiates the payment request process. If your customers need to enter a discount code, choose a shipping method, or any other task, your app needs to ask for that information  they tap the Apple Pay button.
+Use a [`PKPaymentRequest`](pkpaymentrequest.md) object to represent a merchant request for payment for goods or services. Your app creates a payment request as soon as a person taps the Apple Pay button to make a purchase. Tapping the Apple Pay button in your app initiates the payment request process. If your customers need to enter a discount code, choose a shipping method, or any other task, your app needs to ask for that information *before* they tap the Apple Pay button.
 
 A payment request object contains information that describes the purchase, including information about the merchant, available payment networks, the payment summary, billing and shipping details, coupon codes, custom data, error messages, and more.
 
@@ -181,6 +181,7 @@ Use the [`multiTokenContexts`](pkpaymentrequestupdate/multitokencontexts.md) pro
 - [var attributionIdentifier: String?](pkpaymentrequest/attributionidentifier.md)
 - [var isDelegatedRequest: Bool](pkpaymentrequest/isdelegatedrequest.md)
   A Boolean value that indicates whether this payment request is being made by a delegated entity on behalf of a merchant.
+- [var issuerRegions: [String : [AnyHashable : Any]]?](pkpaymentrequest/issuerregions.md)
 - [var merchantCategoryCode: PKPaymentRequest.MerchantCategoryCode?](pkpaymentrequest/merchantcategorycode-9kcn6.md)
 
 ## Relationships

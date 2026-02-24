@@ -21,7 +21,7 @@ init(backgroundDisplayMode: PageIndexViewStyle.BackgroundDisplayMode = .automati
 
 ## Parameters
 
-- `backgroundDisplayMode`: The display mode of the background of any   page index views receiving this style
+- `backgroundDisplayMode`: The display mode of the background of any page index views receiving this style
 
 ## See Also
 

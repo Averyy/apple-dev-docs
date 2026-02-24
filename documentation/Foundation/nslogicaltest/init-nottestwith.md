@@ -21,7 +21,7 @@ An `NSLogicalTest` object initialized to perform a `NOT` operation on `subTest`.
 
 ## Parameters
 
-- `subTest`: The   object to invert.
+- `subTest`: The `NSScriptWhoseTest` object to invert.
 
 ## See Also
 

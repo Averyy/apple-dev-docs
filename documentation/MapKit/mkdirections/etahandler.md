@@ -26,8 +26,8 @@ The implementation of your block needs to check for a value in the `error` param
 
 ## Parameters
 
-- `response`: The   parameter contains the travel-time response. If an error occurs or the framework can’t determine the travel time, this parameter is  .
-- `error`: The   parameter contains information about any errors that occur. If no errors occur, this parameter is  .
+- `response`: The `response` parameter contains the travel-time response. If an error occurs or the framework can’t determine the travel time, this parameter is `nil`.
+- `error`: The `error` parameter contains information about any errors that occur. If no errors occur, this parameter is `nil`.
 
 ## See Also
 

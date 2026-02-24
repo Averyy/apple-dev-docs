@@ -24,7 +24,7 @@ This method informs only the specific extension that a window has gained focus. 
 
 ## Parameters
 
-- `focusedWindow`: The window that gained focus, or   if no window has focus or a window has focus that is not visible to this extension.
+- `focusedWindow`: The window that gained focus, or `nil` if no window has focus or a window has focus that is not visible to this extension.
 
 
 ---

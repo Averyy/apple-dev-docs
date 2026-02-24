@@ -20,6 +20,10 @@ object ManagedPreferences.PayloadContent
 - [object ManagedPreferences.PayloadContent.ANY](managedpreferences/payloadcontent-data.dictionary/any-data.dictionary.md)
   The dictionary containing app preference domains.
 
+## Properties
+
+- `ANY` (ManagedPreferences.PayloadContent.ANY) *(required)*: The dictionary containing app preference domains.
+
 
 ---
 

@@ -24,7 +24,7 @@ A cancel callback for the run loop source. This callback is called when the sour
 
 ## Parameters
 
-- `info`: The   member of the   structure that was used when creating the run loop source.
+- `info`: The `info` member of the [`CFRunLoopSourceContext`](cfrunloopsourcecontext.md) structure that was used when creating the run loop source.
 - `rl`: The run loop from which the run loop source is being removed.
 - `mode`: The run loop mode from which the run loop source is being removed.
 

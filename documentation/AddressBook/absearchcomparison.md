@@ -60,17 +60,17 @@ These constants are used in a call to the [`ABGroupCreateSearchElement(_:_:_:_:_
 - [var kABWithinIntervalAroundTodayYearless: _ABSearchComparison](kabwithinintervalaroundtodayyearless.md)
   Search for elements that are within a time interval (in seconds) forward or backward from this day in any year.
 - [var kABNotWithinIntervalAroundToday: _ABSearchComparison](kabnotwithinintervalaroundtoday.md)
-  Search for elements that are  within a time interval (in seconds) forward or backward from today.
+  Search for elements that are *not* within a time interval (in seconds) forward or backward from today.
 - [var kABNotWithinIntervalAroundTodayYearless: _ABSearchComparison](kabnotwithinintervalaroundtodayyearless.md)
-  Search for elements that are  within a time interval (in seconds) forward or backward from this day in any year.
+  Search for elements that are *not* within a time interval (in seconds) forward or backward from this day in any year.
 - [var kABWithinIntervalFromToday: _ABSearchComparison](kabwithinintervalfromtoday.md)
   Search for elements that are within a time interval (in seconds) forward from today.
 - [var kABWithinIntervalFromTodayYearless: _ABSearchComparison](kabwithinintervalfromtodayyearless.md)
   Search for elements that are within a time interval (in seconds) forward from this day in any year.
 - [var kABNotWithinIntervalFromToday: _ABSearchComparison](kabnotwithinintervalfromtoday.md)
-  Search for elements that are  within a time interval (in seconds) forward from today.
+  Search for elements that are *not* within a time interval (in seconds) forward from today.
 - [var kABNotWithinIntervalFromTodayYearless: _ABSearchComparison](kabnotwithinintervalfromtodayyearless.md)
-  Search for elements that are  within a time interval (in seconds) forward from this day in any year.
+  Search for elements that are *not* within a time interval (in seconds) forward from this day in any year.
 
 ## See Also
 

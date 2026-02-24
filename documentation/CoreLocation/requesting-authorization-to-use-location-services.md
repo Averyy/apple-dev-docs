@@ -14,8 +14,8 @@ To help people understand why you need location data, make authorization request
 
 Before you place an authorization request, choose the level of access your app needs. Core Location supports two authorization levels:
 
--  authorization makes location updates available only when someone uses your app. This authorization is the preferred choice, because it has better privacy and battery life implications.
--  authorization makes location updates available at any time, and lets the system launch your app quietly to handle some updates. Request this access level only when necessary on other platforms. For example, request it if your app delivers time-sensitive responses to location changes automatically, or implements a location push service app extension. This access level isn’t available when running in visionOS.
+- **When in Use** authorization makes location updates available only when someone uses your app. This authorization is the preferred choice, because it has better privacy and battery life implications.
+- **Always** authorization makes location updates available at any time, and lets the system launch your app quietly to handle some updates. Request this access level only when necessary on other platforms. For example, request it if your app delivers time-sensitive responses to location changes automatically, or implements a location push service app extension. This access level isn’t available when running in visionOS.
 
 The definition of when an app is in use depends on the platform:
 

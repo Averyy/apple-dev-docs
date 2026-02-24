@@ -33,7 +33,7 @@ This method may be invoked many times during an update event (for example, if yo
 - `controller`: The fetched results controller that sent the message.
 - `sectionInfo`: The section that changed.
 - `sectionIndex`: The index of the changed section.
-- `type`: The type of change (insert or delete). Valid values are   and  .
+- `type`: The type of change (insert or delete). Valid values are [`NSFetchedResultsChangeType.insert`](nsfetchedresultschangetype/insert.md) and [`NSFetchedResultsChangeType.delete`](nsfetchedresultschangetype/delete.md).
 
 ## See Also
 

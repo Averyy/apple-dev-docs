@@ -18,6 +18,10 @@ A string that describes a category of required reason API your app or third-part
 
 - [Describing use of required reason API](describing-use-of-required-reason-api.md)
 
+
+
+**Type**: string
+
 #### Discussion
 
 For information on required reason API, see [`Describing use of required reason API`](describing-use-of-required-reason-api.md).

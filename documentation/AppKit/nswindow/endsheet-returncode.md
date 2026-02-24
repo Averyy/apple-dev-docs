@@ -21,7 +21,7 @@ This method ends the modal session with the specified return code.
 ## Parameters
 
 - `sheetWindow`: The window object that represents the sheet to dismiss.
-- `returnCode`: The return code to send to the completion handler. You can use  a custom value that you define or one of the return codes defined in the   enumeration or   .
+- `returnCode`: The return code to send to the completion handler. You can use  a custom value that you define or one of the return codes defined in the [`NSApplication.ModalResponse`](nsapplication/modalresponse.md) enumeration or  `Additional NSModalResponse Values`.
 
 ## See Also
 

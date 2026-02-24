@@ -6,7 +6,7 @@ Confirm that your app provides a good experience for everyone by testing system 
 
 #### Overview
 
-In Accessibility Inspector, the  provides quick access to common accessibility settings for easier testing. Use this pane to toggle these system-wide settings so you can test how your app behaves for a person who uses one or more of these accessibility features. Turning these settings on or off updates the corresponding setting in the Accessibility section of the target device’s system settings.
+In Accessibility Inspector, the *Settings pane* provides quick access to common accessibility settings for easier testing. Use this pane to toggle these system-wide settings so you can test how your app behaves for a person who uses one or more of these accessibility features. Turning these settings on or off updates the corresponding setting in the Accessibility section of the target device’s system settings.
 
 ![Settings pane with a list of system accessibility options and corresponding checkboxes.](https://docs-assets.developer.apple.com/published/a9836405ca25e883b2f8edea000ed64c/accessibility-inspector-settings-pane%402x.png)
 
@@ -18,15 +18,15 @@ People rely on accessibility features that increase contrast to improve the legi
 
 ###### All Platforms
 
-. This option toggles the Invert Colors setting, which reverses the colors of the display with some behavior differences depending on the platform.
+**Invert colors**. This option toggles the Invert Colors setting, which reverses the colors of the display with some behavior differences depending on the platform.
 
-. This option toggles the Increase Contrast setting, which raises color contrast between app foreground and background colors.
+**Increase contrast**. This option toggles the Increase Contrast setting, which raises color contrast between app foreground and background colors.
 
-. This option toggles the Reduce Transparency setting, which improves contrast and legibility by reducing transparency and blur effects on certain backgrounds.
+**Reduce transparency**. This option toggles the Reduce Transparency setting, which improves contrast and legibility by reducing transparency and blur effects on certain backgrounds.
 
 ###### Ios Watchos and Tvos
 
-. This option toggles the Grayscale setting, which removes color by rendering the UI as grayscale.
+**Grayscale**. This option toggles the Grayscale setting, which removes color by rendering the UI as grayscale.
 
 ##### Adjust Animations to Reduce Onscreen Motion
 
@@ -34,7 +34,7 @@ People with motion sensitivity can opt to decrease the amount of movement in scr
 
 ###### All Platforms
 
-. This option toggles the Reduce Motion setting, which decreases motion in the UI like parallax and animations.
+**Reduce motion**. This option toggles the Reduce Motion setting, which decreases motion in the UI like parallax and animations.
 
 ##### Support Keyboard Interaction
 
@@ -42,7 +42,7 @@ People can use an external hardware keyboard to control their devices, including
 
 ###### All Platforms
 
-. This option toggles the Full Keyboard Access setting, which allows a person to use an external keyboard to control the device.
+**Full Keyboard Access**. This option toggles the Full Keyboard Access setting, which allows a person to use an external keyboard to control the device.
 
 ##### Communicate Information Without Relying Solely on Color
 
@@ -50,13 +50,13 @@ People who are colorblind can find it difficult to distinguish between certain c
 
 ###### All Platforms
 
-. This option toggles the Differentiate Without Color setting, which replaces UI elements that rely solely on color to convey information.
+**Differentiate without color**. This option toggles the Differentiate Without Color setting, which replaces UI elements that rely solely on color to convey information.
 
 ###### Ios Watchos and Tvos
 
-. This option toggles the Button Shapes setting, which draws a more prominent UI for buttons to help differentiate them from noninteractive elements.
+**Button shapes**. This option toggles the Button Shapes setting, which draws a more prominent UI for buttons to help differentiate them from noninteractive elements.
 
-. This option toggles the On/Off Labels setting, which adds a label to each side of a switch to help reinforce which state it’s in.
+**On/Off labels**. This option toggles the On/Off Labels setting, which adds a label to each side of a switch to help reinforce which state it’s in.
 
 ##### Ensure Text Is Legible at Any Size
 
@@ -64,9 +64,17 @@ People can adjust the font weight and size on their devices to improve text legi
 
 ###### Ios Watchos and Tvos
 
-. This option toggles the Bold Text setting, which increases the font weight for text throughout the system.
+**Bold fonts**. This option toggles the Bold Text setting, which increases the font weight for text throughout the system.
 
-. This option adjusts the system font size using Dynamic Type.
+**Default fonts**:
+
+![System settings with default fonts.](https://docs-assets.developer.apple.com/published/4aa4d6ecd711a7d1476ab68e3b89810e/bold-fonts-before%402x.png)
+
+**Bold fonts**:
+
+![System settings with bold fonts.](https://docs-assets.developer.apple.com/published/98c476a523e7433a0ca10d391e75c58b/bold-fonts-after%402x.png)
+
+**Dynamic type**. This option adjusts the system font size using Dynamic Type.
 
 For more information about designing an accessible app, read [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility) in Human Interface Guidelines.
 

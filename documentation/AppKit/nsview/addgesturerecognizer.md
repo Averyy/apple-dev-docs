@@ -20,7 +20,7 @@ Attaching a gesture recognizer to a view defines the scope of the represented ge
 
 ## Parameters
 
-- `gestureRecognizer`: The gesture recognizer to attach to the view. This parameter must not be  .
+- `gestureRecognizer`: The gesture recognizer to attach to the view. This parameter must not be `nil`.
 
 ## See Also
 

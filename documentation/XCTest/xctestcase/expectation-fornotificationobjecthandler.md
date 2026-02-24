@@ -19,7 +19,7 @@ func expectation(forNotification notificationName: NSNotification.Name, object o
 
 - `notificationName`: The notification to register for.
 - `objectToObserve`: The object to observe.
-- `handler`: An optional   block. If no handler is provided, the first notification matching the specified name from the observed object fulfills the expectation.
+- `handler`: An optional [`XCTNSNotificationExpectation.Handler`](xctnsnotificationexpectation/handler-swift.typealias.md) block. If no handler is provided, the first notification matching the specified name from the observed object fulfills the expectation.
 
 ## See Also
 

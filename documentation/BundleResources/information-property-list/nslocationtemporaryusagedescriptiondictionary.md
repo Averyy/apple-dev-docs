@@ -11,6 +11,10 @@ A collection of messages that explain why the app is requesting temporary access
 - macOS 11.0+
 - visionOS 1.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 Use this key if your app needs temporary access to full accuracy location information. Provide a dictionary of messages that address different use cases, keyed by strings that you define. For example, if your app suggests nearby coffee shops in one part of the app, and finds nearby friends in another, you could include two entries:

@@ -31,10 +31,10 @@ Use this method if you want multiple messages to be sent after the current event
 ## Parameters
 
 - `aSelector`: A selector that identifies the method to invoke. This method should not have a significant return value and should take a single argument of type id.
-- `target`: The object that defines the selector in  .
-- `arg`: The argument to pass to the method when it is invoked. Pass   if the method does not take an argument.
+- `target`: The object that defines the selector in `aSelector`.
+- `arg`: The argument to pass to the method when it is invoked. Pass `nil` if the method does not take an argument.
 - `order`: The priority for the message. If multiple messages are scheduled, the messages with a lower order value are sent before messages with a higher order value.
-- `modes`: An array of input modes for which the message may be sent. You may specify custom modes or use one of the modes listed in  .
+- `modes`: An array of input modes for which the message may be sent. You may specify custom modes or use one of the modes listed in `Run Loop Modes`.
 
 ## See Also
 

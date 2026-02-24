@@ -25,7 +25,7 @@ If an item named `name` already exists in the directory indicated by `directory`
 - `directory`: The directory in which to create the item.
 - `newAttributes`: Attributes to apply to the new item.
 - `contents`: The contents of the new symbolic link.
-- `reply`: A block or closure to indicate success or failure. If creation succeeds, pass the newly-created   and a   error. If creation fails, pass the relevant error as the second parameter; FSKit ignores any   in this case. For an   Swift implementation, there’s no reply handler; simply return the   or throw an error.
+- `reply`: A block or closure to indicate success or failure. If creation succeeds, pass the newly-created [`FSItem`](fsitem.md) and a `nil` error. If creation fails, pass the relevant error as the second parameter; FSKit ignores any [`FSItem`](fsitem.md) in this case. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSItem`](fsitem.md) or throw an error.
 
 ## See Also
 

@@ -29,6 +29,11 @@ This method applies the color cross polynomial filter to an image. The effect ta
 
 The color cross-polynomial filter uses the following properties:
 
+- **`redCoefficients`**: A [`CIVector`](civector.md) representing the polynomial coefficients for the red channel.
+- **`blueCoefficients`**: A [`CIVector`](civector.md) representing the polynomial coefficients for the blue channel.
+- **`greenCoefficients`**: A [`CIVector`](civector.md) representing polynomial coefficients for the green channel.
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds a green hue to the input image:
 
 ```swift

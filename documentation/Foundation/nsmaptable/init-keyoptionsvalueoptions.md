@@ -26,8 +26,8 @@ A new map table, initialized with the given options.
 
 ## Parameters
 
-- `keyOptions`: A bit field that specifies the options for the keys in the map table. For possible values, see  .
-- `valueOptions`: A bit field that specifies the options for the values in the map table. For possible values, see  .
+- `keyOptions`: A bit field that specifies the options for the keys in the map table. For possible values, see [`NSMapTableOptions`](nsmaptableoptions.md).
+- `valueOptions`: A bit field that specifies the options for the values in the map table. For possible values, see [`NSMapTableOptions`](nsmaptableoptions.md).
 
 ## See Also
 

@@ -30,7 +30,7 @@ A [`MTL4ArgumentTable`](mtl4argumenttable.md) instance, or `nil` if the function
 
 ## Parameters
 
-- `descriptor`: A   instance that configures the    instance.
+- `descriptor`: A [`MTL4ArgumentTableDescriptor`](mtl4argumenttabledescriptor.md) instance that configures the [`MTL4ArgumentTable`](mtl4argumenttable.md) instance.
 
 
 ---

@@ -18,8 +18,8 @@ var alignment: NSLayoutConstraint.Attribute { get set }
 
 The default value for this property depends on whether the stack view is horizontal or vertical:
 
-- : The default value is [`NSLayoutConstraint.Attribute.centerY`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint/Attribute/centerY).
-- : The default value is [`NSLayoutConstraint.Attribute.centerX`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint/Attribute/centerX).
+- *Horizontal*: The default value is [`NSLayoutConstraint.Attribute.centerY`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint/Attribute/centerY).
+- *Vertical*: The default value is [`NSLayoutConstraint.Attribute.centerX`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint/Attribute/centerX).
 
 These constants are described as part of the [`NSLayoutConstraint.Attribute`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint/Attribute) enumeration in [`NSLayoutConstraint`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint); see that enumeration for the other possible alignment values.
 

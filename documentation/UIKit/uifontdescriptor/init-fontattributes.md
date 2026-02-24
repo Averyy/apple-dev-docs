@@ -25,7 +25,7 @@ The new font descriptor.
 
 ## Parameters
 
-- `attributes`: The attributes for the new font descriptor. If  , the font descriptor’s attribute dictionary will be empty.
+- `attributes`: The attributes for the new font descriptor. If `nil`, the font descriptor’s attribute dictionary will be empty.
 
 ## See Also
 

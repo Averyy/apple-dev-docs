@@ -26,7 +26,7 @@ Do not delete a keychain item and recreate it in order to modify it; instead, us
 
 ## Parameters
 
-- `itemRef`: A keychain item object of the item to delete. You must call the   function to release this object when you are finished using it.
+- `itemRef`: A keychain item object of the item to delete. You must call the `CFRelease` function to release this object when you are finished using it.
 
 
 ---

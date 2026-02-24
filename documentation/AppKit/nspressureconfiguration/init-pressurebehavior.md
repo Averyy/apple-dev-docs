@@ -24,7 +24,7 @@ The initialized pressure configuration object is used to change the behavior and
 
 ## Parameters
 
-- `pressureBehavior`: An   value that describes the behavior and progression for responding to pressure events.
+- `pressureBehavior`: An `NSPressureBehavior` value that describes the behavior and progression for responding to pressure events.
 
 ## See Also
 

@@ -26,7 +26,7 @@ A [`JSValueRef`](jsvalueref.md) of the string type that represents the value of 
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `string`: The   to assign to the newly created  . The newly created   retains  , and releases it upon garbage collection.
+- `string`: The [`JSStringRef`](jsstringref.md) to assign to the newly created [`JSValueRef`](jsvalueref.md). The newly created [`JSValueRef`](jsvalueref.md) retains `string`, and releases it upon garbage collection.
 
 ## See Also
 

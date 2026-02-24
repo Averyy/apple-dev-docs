@@ -27,7 +27,7 @@ Use this method in your dext to prefill a 16-byte CDB for the standard SMART SCS
 - `request`: An object that contains the request information.
 - `requestedBytes`: The number of bytes to read.
 - `bufAddr`: A buffer to receive the data.
-- `response`: An empty   object. On return, the framework populates this object with the response information.
+- `response`: An empty [`SCSIDeviceInParameters`](scsideviceinparameters.md) object. On return, the framework populates this object with the response information.
 - `senseBufAddr`: The address of the sense buffer.
 
 ## See Also

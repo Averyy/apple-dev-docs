@@ -35,7 +35,7 @@ Before it appears onscreen, the table view calls this method for the items in th
 ## Parameters
 
 - `tableView`: The table view requesting this information.
-- `indexPath`: An index path that locates a row in  .
+- `indexPath`: An index path that locates a row in `tableView`.
 
 ## See Also
 

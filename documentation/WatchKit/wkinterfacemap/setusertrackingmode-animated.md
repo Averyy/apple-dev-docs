@@ -22,7 +22,7 @@ Setting the tracking mode to [`WKInterfaceMap.UserTrackingMode.follow`](wkinterf
 
 ## Parameters
 
-- `mode`: The desired tracking mode. For a complete list of valid tracking modes, see  .
+- `mode`: The desired tracking mode. For a complete list of valid tracking modes, see [`WKInterfaceMap.UserTrackingMode`](wkinterfacemap/usertrackingmode.md).
 - `animated`: A Boolean value that indicates whether the map animates the change to the tracking mode.
 
 ## See Also

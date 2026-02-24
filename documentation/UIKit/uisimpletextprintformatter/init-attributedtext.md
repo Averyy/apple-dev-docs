@@ -23,7 +23,7 @@ An initialized instance of `UISimpleTextPrintFormatter` or `nil` if the object c
 
 ## Parameters
 
-- `attributedText`: A string of attributed text or   if you intend to assign the text later.
+- `attributedText`: A string of attributed text or `nil` if you intend to assign the text later.
 
 ## See Also
 

@@ -22,7 +22,7 @@ static func result<Value>(value: Value, dialog: IntentDialog) -> Self where Self
 
 ## Parameters
 
-- `value`: The value produced by the 
+- `value`: The value produced by the `AppIntent`
 - `dialog`: A custom success dialog
 
 

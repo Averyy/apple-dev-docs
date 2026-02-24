@@ -32,9 +32,9 @@ If you want to be sure to test a particular slice, create the static code object
 ## Parameters
 
 - `staticCode`: The code object to be validated.
-- `flags`: Optional flags; see   for possible values. Use   to validate all slices of a universal binary.
-- `requirement`: A code requirement specifying additional conditions the code must satisfy to be considered valid. Specify   if you don’t want to impose any additional requirements. Use the   or   function to create a code requirement object. See   for a discussion of code requirements.
-- `errors`: On return, if the function call fails and returns a result code other than  , points to an error object further describing the nature and circumstances of the failure. Use the   function to retrieve the user info dictionary from the error object. See   for possible values. Pass   if you do not want this information. Call the   function to release this object when you are finished with it.
+- `flags`: Optional flags; see [`Static Code Validation Flags`](static-code-validation-flags.md) for possible values. Use [`kSecCSCheckAllArchitectures`](kseccscheckallarchitectures.md) to validate all slices of a universal binary.
+- `requirement`: A code requirement specifying additional conditions the code must satisfy to be considered valid. Specify `NULL` if you don’t want to impose any additional requirements. Use the [`SecRequirementCreateWithString(_:_:_:)`](secrequirementcreatewithstring(_:_:_:).md) or [`SecRequirementCreateWithStringAndErrors(_:_:_:_:)`](secrequirementcreatewithstringanderrors(_:_:_:_:).md) function to create a code requirement object. See [`Code Signing Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005929) for a discussion of code requirements.
+- `errors`: On return, if the function call fails and returns a result code other than `errSecSuccess`, points to an error object further describing the nature and circumstances of the failure. Use the [`CFErrorCopyUserInfo(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFErrorCopyUserInfo(_:)) function to retrieve the user info dictionary from the error object. See [`User Info Dictionary Error Keys`](user-info-dictionary-error-keys.md) for possible values. Pass `NULL` if you do not want this information. Call the `CFRelease` function to release this object when you are finished with it.
 
 
 ---

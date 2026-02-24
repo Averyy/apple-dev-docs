@@ -22,7 +22,7 @@ Creates an instance of the represented gesture recognizer.
 
 ## Parameters
 
-- `context`: A context structure containing information about   the current state of the system, such as the current coordinator   instance.
+- `context`: A context structure containing information about the current state of the system, such as the current coordinator instance.
 
 
 ---

@@ -32,7 +32,7 @@ The output duration is the duration minus any trimmed duration, all divided by t
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
 
 ## See Also
 

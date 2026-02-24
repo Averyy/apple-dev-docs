@@ -22,7 +22,7 @@ The height of the line fragment is determined using `lineSpacing`, `paragraphSpa
 
 - `lineFragmentRect`: On return, the calculated line fragment rectangle.
 - `lineFragmentUsedRect`: On return, the used rectangle (the portion of the line fragment rectangle that actually contains marks).
-- `remainingRect`: On return, the remaining rectangle of  .
+- `remainingRect`: On return, the remaining rectangle of `proposedRect`.
 - `startingGlyphIndex`: The glyph index where the line fragment starts.
 - `proposedRect`: The proposed rectangle of the line fragment.
 - `lineSpacing`: The line spacing.

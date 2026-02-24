@@ -29,7 +29,7 @@ If you want to merge preferences without modifying the original instance, use [`
 ## Parameters
 
 - `other`: Another spacing preferences instances to merge with this one.
-- `edges`: The edges to merge. Edges that you don’t specify are   unchanged after the method completes.
+- `edges`: The edges to merge. Edges that you don’t specify are unchanged after the method completes.
 
 ## See Also
 

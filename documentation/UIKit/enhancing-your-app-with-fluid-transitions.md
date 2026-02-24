@@ -65,12 +65,12 @@ View controllers go through a number of state changes when pushing them onto or 
 
 ![An illustration that shows the relationship between the view controller states, the transitions, and the callback methods. The illustration has four states: disappeared, appearing, appeared, and disappearing. When transitioning from disappeared to appearing, the system calls viewWillAppear, adds the view to the view hierarchy, and then calls viewIsAppearing. When transitioning from appearing to appeared, it calls viewDidAppear. When transitioning from appeared to disappearing, it calls viewWillDisappear. Finally, when transitioning from disappearing to disappeared, it removes the view from the view hierarchy, and then calls viewDidDisappear.](https://docs-assets.developer.apple.com/published/e97461b40b52ce1a5a9f78c0b8bfeed8/media-4414969%402x.png)
 
-When you push a view controller onto the navigation stack, the controller begins in the  state. As it transitions to the  state, the system performs the following steps:
+When you push a view controller onto the navigation stack, the controller begins in the *disappeared* state. As it transitions to the *appeared* state, the system performs the following steps:
 
 1. Calls [`viewWillAppear(_:)`](uiviewcontroller/viewwillappear(_:).md).
 2. Adds the controller’s view to the view hierarchy.
 3. Calls [`viewIsAppearing(_:)`](uiviewcontroller/viewisappearing(_:).md).
-4. Transitions to the  state.
+4. Transitions to the *appearing* state.
 5. Calls [`viewDidAppear(_:)`](uiviewcontroller/viewdidappear(_:).md).
 6. Ends in the appeared state.
 
@@ -79,7 +79,7 @@ When you push a view controller onto the navigation stack, the controller begins
 When you pop a view controller off the navigation stack, it starts in the appeared state. The system then performs the following steps:
 
 1. Calls [`viewWillDisappear(_:)`](uiviewcontroller/viewwilldisappear(_:).md).
-2. Transitions to the  state.
+2. Transitions to the *disappearing* state.
 3. Removes the view from the view hierarchy.
 4. Calls [`viewDidDisappear(_:)`](uiviewcontroller/viewdiddisappear(_:).md).
 5. Ends in the disappeared state.

@@ -22,7 +22,7 @@ init(_ identifier: String)
 
 ## Parameters
 
-- `identifier`: A two-letter ISO 639-1 or three-letter ISO 639-2 code, such as   for English. You can also use a code of your own choice for a custom language.
+- `identifier`: A two-letter ISO 639-1 or three-letter ISO 639-2 code, such as `en` for English. You can also use a code of your own choice for a custom language.
 
 
 ---

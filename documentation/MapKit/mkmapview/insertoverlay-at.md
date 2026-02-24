@@ -26,7 +26,7 @@ This method inserts the overlay into the [`MKOverlayLevel.aboveLabels`](mkoverla
 ## Parameters
 
 - `overlay`: The overlay object to insert.
-- `index`: The index at which to insert the overlay object. If this value is greater than the number of objects in the   property, this method appends the object to the end of the array.
+- `index`: The index at which to insert the overlay object. If this value is greater than the number of objects in the [`overlays`](mkmapview/overlays.md) property, this method appends the object to the end of the array.
 
 ## See Also
 

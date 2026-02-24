@@ -24,7 +24,8 @@ func loadImage() async throws -> NSImage
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block that GameKit calls when this method completes the request. The block receives the following parameters: - ***image***: Contains the image for the leaderboard.
+- ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 
 ---

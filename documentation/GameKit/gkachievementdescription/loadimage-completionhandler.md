@@ -29,7 +29,8 @@ First, use the [`loadAchievementDescriptions(completionHandler:)`](gkachievement
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block that GameKit calls when this method completes the download. The block receives the following parameters: - **`image`**: The image that represents the completed achievement. This parameter is `nil` if an error occurs.
+- **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

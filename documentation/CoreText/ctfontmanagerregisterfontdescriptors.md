@@ -28,10 +28,10 @@ Fonts descriptors registered in a disabled state (the `enabled` parameter set to
 
 ## Parameters
 
-- `fontDescriptors`: An array of font descriptors to register. The font descriptor keys for registration are  ,  ,  , or  .
-- `scope`: A scope constant that defines the availability and lifetime of the registration. If you specify   when you register fonts on iOS, those fonts aren’t automatically available to other processes. Other processes can call   to get access to those fonts. See   for more details.
-- `enabled`: A Boolean value that indicates whether the font descriptors should be enabled for font descriptor matching and discoverable though  .
-- `registrationHandler`: This block may be called multiple times during the registration process. The   parameter becomes   when the registration process completes. Return   from the block to stop the registration operation, like after receiving an error.
+- `fontDescriptors`: An array of font descriptors to register. The font descriptor keys for registration are [`kCTFontURLAttribute`](kctfonturlattribute.md), [`kCTFontNameAttribute`](kctfontnameattribute.md), [`kCTFontFamilyNameAttribute`](kctfontfamilynameattribute.md), or [`kCTFontRegistrationUserInfoAttribute`](kctfontregistrationuserinfoattribute.md).
+- `scope`: A scope constant that defines the availability and lifetime of the registration. If you specify [`CTFontManagerScope.persistent`](ctfontmanagerscope/persistent.md) when you register fonts on iOS, those fonts aren’t automatically available to other processes. Other processes can call [`CTFontManagerRequestFonts(_:_:)`](ctfontmanagerrequestfonts(_:_:).md) to get access to those fonts. See [`CTFontManagerScope`](ctfontmanagerscope.md) for more details.
+- `enabled`: A Boolean value that indicates whether the font descriptors should be enabled for font descriptor matching and discoverable though [`CTFontManagerRequestFonts(_:_:)`](ctfontmanagerrequestfonts(_:_:).md).
+- `registrationHandler`: A block called as errors arise or upon completion. The block’s `errors` parameter contains an array of [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) references; an empty array indicates no errors. Each error reference contains a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) of font descriptors corresponding to [`kCTFontManagerErrorFontDescriptorsKey`](kctfontmanagererrorfontdescriptorskey.md). These represent the font descriptors causing the error and failing to register successfully. This block may be called multiple times during the registration process. The `done` parameter becomes [`true`](https://developer.apple.com/documentation/Swift/true) when the registration process completes. Return [`false`](https://developer.apple.com/documentation/Swift/false) from the block to stop the registration operation, like after receiving an error.
 
 ## See Also
 

@@ -26,8 +26,8 @@ You must implement this method to support asynchronous activation and quick watc
 ## Parameters
 
 - `session`: The session object whose activation completed.
-- `activationState`: The state of the session. Sessions normally move to the   state upon success or the   state when there is an error. On iOS, the session may also move to the   state if there is data waiting to be delivered from a previous session.
-- `error`: An error object indicating that a problem occurred or   if activation completed successfully. When the   parameter contains the value  , this parameter contains the error object describing the reason for the failure.
+- `activationState`: The state of the session. Sessions normally move to the [`WCSessionActivationState.activated`](wcsessionactivationstate/activated.md) state upon success or the [`WCSessionActivationState.notActivated`](wcsessionactivationstate/notactivated.md) state when there is an error. On iOS, the session may also move to the [`WCSessionActivationState.inactive`](wcsessionactivationstate/inactive.md) state if there is data waiting to be delivered from a previous session.
+- `error`: An error object indicating that a problem occurred or `nil` if activation completed successfully. When the `activationState` parameter contains the value [`WCSessionActivationState.notActivated`](wcsessionactivationstate/notactivated.md), this parameter contains the error object describing the reason for the failure.
 
 ## See Also
 

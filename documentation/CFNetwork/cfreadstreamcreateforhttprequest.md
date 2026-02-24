@@ -31,7 +31,7 @@ If the body of the request is too long to keep in memory, call [`CFReadStreamCre
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `request`: A CFHTTP request message whose body and headers have been set.
 
 ## See Also

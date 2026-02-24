@@ -32,7 +32,7 @@ struct DeferredView: View {
 
 ## Parameters
 
-- `edges`: A value that indicates the screen edge from which   you want your gesture to take precedence over the system gesture.
+- `edges`: A value that indicates the screen edge from which you want your gesture to take precedence over the system gesture.
 
 ## See Also
 

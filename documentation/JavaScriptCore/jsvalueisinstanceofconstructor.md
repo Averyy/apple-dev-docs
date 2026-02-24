@@ -26,9 +26,9 @@ func JSValueIsInstanceOfConstructor(_ ctx: JSContextRef!, _ value: JSValueRef!, 
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `value`: The   to test.
+- `value`: The [`JSValueRef`](jsvalueref.md) to test.
 - `constructor`: The constructor to test against.
-- `exception`: A pointer to a   to store an exception in, if any. Pass   to discard any exception.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 

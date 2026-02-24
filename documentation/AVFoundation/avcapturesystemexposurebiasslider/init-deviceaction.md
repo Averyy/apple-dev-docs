@@ -27,7 +27,7 @@ The system only calls the specified action when the exposure bias slider changes
 ## Parameters
 
 - `device`: The capture device to control.
-- `action`: An action the system calls on the main actor to handle changes to the device’s   property.
+- `action`: An action the system calls on the main actor to handle changes to the device’s [`exposureTargetBias`](avcapturedevice/exposuretargetbias.md) property.
 
 ## See Also
 

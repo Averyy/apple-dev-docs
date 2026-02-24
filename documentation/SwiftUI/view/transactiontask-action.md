@@ -67,8 +67,8 @@ For example:
 
 ## Parameters
 
-- `configuration`: A configuration containing information about the transaction task.   When the task is completed or an error is encountered while performing the task,   the system invalidates this configuration, and the   is invalidated.
-- `action`: A closure that will be called when   is  .   It provides a   instance that can be used to perform transactions.
+- `configuration`: A configuration containing information about the transaction task. When the task is completed or an error is encountered while performing the task, the system invalidates this configuration, and the `CredentialTransaction` is invalidated.
+- `action`: A closure that will be called when `isPerformingTransaction` is `true`. It provides a `CredentialTransaction` instance that can be used to perform transactions.
 
 ## See Also
 

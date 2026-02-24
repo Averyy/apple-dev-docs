@@ -32,7 +32,7 @@ The [`removeFromParent()`](uiviewcontroller/removefromparent().md) method automa
 
 ## Parameters
 
-- `parent`: The parent view controller, or   if there is no parent.
+- `parent`: The parent view controller, or `nil` if there is no parent.
 
 ## See Also
 

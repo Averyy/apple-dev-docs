@@ -24,7 +24,7 @@ Call this method to reconnect the domain after a call to the [`disconnect(reason
 
 ## Parameters
 
-- `completionHandler`: A block that the system calls after reconnecting the domain. The block takes the following parameter:
+- `completionHandler`: A block that the system calls after reconnecting the domain. The block takes the following parameter: - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

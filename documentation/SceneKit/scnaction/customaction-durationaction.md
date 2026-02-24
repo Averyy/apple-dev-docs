@@ -33,7 +33,8 @@ This action is not reversible; the reverse action executes the same block.
 ## Parameters
 
 - `seconds`: The duration of the action, in seconds.
-- `block`: The block to run. The block takes the following parameters:
+- `block`: The block to run. The block takes the following parameters: - ***node***: The node on which the action is running.
+- ***elapsedTime***: The amount of time that has passed since the action began executing.
 
 ## See Also
 

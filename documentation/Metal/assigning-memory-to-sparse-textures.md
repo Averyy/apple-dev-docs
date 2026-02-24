@@ -8,15 +8,38 @@ Use a resource state encoder to allocate and deallocate sparse tiles for a spars
 
 A sparse texture has storage only when you explicitly provide it. Every mipmap in the texture is partitioned into tile-sized regions. Each region can be in one of three states:
 
--  The region has no memory storage.
--  You’ve mapped a sparse tile to the region, but provided no texture data.
--  — You’ve mapped a sparse tile and provided texture data.
+- *Unmapped —* The region has no memory storage.
+- *Uninitialized —* You’ve mapped a sparse tile to the region, but provided no texture data.
+- *Initialized* — You’ve mapped a sparse tile and provided texture data.
 
 Initially, all of the texture’s regions are unmapped. To provide data for a region, you ask the GPU to map regions in the texture to sparse tiles on the texture’s heap, and then copy or render data into those regions. When a region no longer needs memory, you unmap the region to free up its memory for future requests.
 
 ##### Map or Unmap Sparse Tiles
 
 To map or unmap sparse tiles, you issue commands to the GPU using a resource state command encoder ([`MTLResourceStateCommandEncoder`](mtlresourcestatecommandencoder.md)). Encode a command for each update, specifying the texture, a slice and mipmap within that texture, and a region inside that mipmap. Specify the region in tile coordinates.
+
+**Swift**:
+
+```swift
+if let encoder = commandBuffer.makeResourceStateCommandEncoder() {
+    encoder.updateTextureMapping(texture, mode: .map, region: tileRegion, mipLevel: 0, slice: 0)
+    encoder.endEncoding()
+}
+```
+
+**Objective-C**:
+
+```objective-c
+id<MTLResourceStateCommandEncoder> encoder = [commandBuffer resourceStateCommandEncoder];
+
+[encoder updateTextureMapping:texture
+                         mode:MTLSparseTextureMappingModeMap
+                       region:tileRegion
+                     mipLevel:0
+                        slice:0];
+
+[encoder endEncoding];
+```
 
 The GPU looks for free sparse tiles on the texture’s heap and assigns them to the texture. Once the mapping process is complete, future requests to read, write, or sample those regions access the assigned tiles. Metal doesn’t initialize the tiles with data, so to ensure that valid data is available, copy or render data into the newly mapped regions before you read or sample from them.
 
@@ -31,6 +54,26 @@ To free tiles and make additional memory available to satisfy other requests, en
 If you create a complete mipmap chain for your texture, many of the lower-level mipmaps are smaller than the sparse tile size. To save memory, Metal packs all of these smaller mipmaps into one memory allocation, typically one sparse tile. To guarantee that a texture always has some data to sample, you usually want to map the tail mipmaps after you create the texture and keep the tail mapped until you’re ready to release the texture.
 
 To map the tail mipmaps, ask the texture for the first mipmap in the tail and map any region within it. All of the tail mipmaps are mapped.
+
+**Swift**:
+
+```swift
+let tailRegion = MTLRegionMake2D(0, 0, 1, 1)
+
+encoder.updateTextureMapping(texture, mode: .map, region: tailRegion, mipLevel: texture.firstMipmapInTail, slice: 0)
+```
+
+**Objective-C**:
+
+```objective-c
+MTLRegion tailRegion = MTLRegionMake2D(0, 0, 1, 1);
+
+[encoder updateTextureMapping:texture
+                         mode:MTLSparseTextureMappingModeMap
+                       region:tailRegion
+                     mipLevel:texture.firstMipmapInTail
+                        slice:0];
+```
 
 Similarly, if you unmap the first mipmap in the tail, all of the tail mipmaps are unmapped.
 

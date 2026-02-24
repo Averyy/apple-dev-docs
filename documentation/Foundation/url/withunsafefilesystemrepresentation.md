@@ -32,7 +32,7 @@ The file system representation is a null-terminated C string with canonical UTF-
 
 ## Parameters
 
-- `block`: The parameter passed to the closure is   if the URL cannot be represented by the file system. For example, if the URL contains an accented character and the file system only supports ASCII, no file system representation is possible.
+- `block`: A closure to execute, which receives a C string as its parameter, and returns a value of a type you choose. The parameter passed to the closure is `nil` if the URL cannot be represented by the file system. For example, if the URL contains an accented character and the file system only supports ASCII, no file system representation is possible.
 
 ## See Also
 

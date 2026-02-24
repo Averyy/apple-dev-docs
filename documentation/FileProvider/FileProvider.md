@@ -20,6 +20,9 @@ If your app focuses on providing and syncing user documents from remote storage,
 
 The framework has two different starting points for building your File Provider extension.
 
+- **[`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md)**: The system manages the content accessed through the File Provider extension. Available in macOS 11+ and iOS 16+.
+- **[`NSFileProviderExtension`](nsfileproviderextension.md)**: The extension hosts and manages the files accessed through the File Provider extension. Available in iOS 11+.
+
 The replicated extension takes responsibility for monitoring and managing the local copies of your documents. The file provider focuses on syncing data between the local copy and the remote storage—uploading any local changes and downloading any remote changes. For more information, see [`Replicated File Provider extension`](replicated-file-provider-extension.md).
 
 The nonreplicated extension manages a local copy of the extension’s content, including creating and managing placeholders for remote files. It also syncs the content with your remote storage. For more information, see [`Nonreplicated File Provider extension`](nonreplicated-file-provider-extension.md).

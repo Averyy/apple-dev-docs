@@ -22,7 +22,7 @@ func scale(useFloat16Accumulator: Bool, destination: vImage.PixelBuffer<Format>)
 
 ## Parameters
 
-- `useFloat16Accumulator`: A Boolean value that specifies that the function uses faster, but lower-precision, internal arithmetic. For more information, see  .
+- `useFloat16Accumulator`: A Boolean value that specifies that the function uses faster, but lower-precision, internal arithmetic. For more information, see [`kvImageUseFP16Accumulator`](kvimageusefp16accumulator.md).
 - `destination`: The destination pixel buffer.
 
 ## See Also

@@ -28,8 +28,8 @@ func cblas_sscal(_ N: __LAPACK_int, _ ALPHA: Float, _ X: UnsafeMutablePointer<Fl
 
 - `N`: Number of elements to scale.
 - `ALPHA`: The constant to multiply by.
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is multiplied by  .
+- `X`: Vector `x`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is multiplied by `alpha`.
 
 ## See Also
 

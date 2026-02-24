@@ -26,7 +26,7 @@ This is a convenience method for calling the [`NSDecimalString(_:_:)`](nsdecimal
 
 ## Parameters
 
-- `locale`: Either an instance of   or a dictionary with a string value corresponding to the   key.
+- `locale`: Either an instance of [`NSLocale`](nslocale.md) or a dictionary with a string value corresponding to the [`decimalSeparator`](nslocale/key/decimalseparator.md) key.
 
 ## See Also
 

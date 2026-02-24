@@ -22,7 +22,7 @@ init?(asset: AVAsset, presetName: String)
 ## Parameters
 
 - `asset`: The asset to export.
-- `presetName`: A string constant that specifies the preset template for the export. See   for available values.
+- `presetName`: A string constant that specifies the preset template for the export. See [`Export presets`](export-presets.md) for available values.
 
 ## See Also
 

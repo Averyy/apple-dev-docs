@@ -24,7 +24,7 @@ This method searches the descriptor cache for the specified descriptor. If the d
 
 ## Parameters
 
-- `bConfigurationValue`: The value assigned to the   field of the descriptor.
+- `bConfigurationValue`: The value assigned to the [`bConfigurationValue`](iousbconfigurationdescriptor/bconfigurationvalue.md) field of the descriptor.
 
 ## See Also
 

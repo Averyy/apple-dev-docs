@@ -31,7 +31,7 @@ The system may add a small amount of leeway to the specified interval in order t
 ## Parameters
 
 - `interval`: The number of nanoseconds that must elapse before the scheduling of any I/O handlers is desired.
-- `flags`: Flags indicating the desired delivery behavior at the interval time. For a list of flags, see  .
+- `flags`: Flags indicating the desired delivery behavior at the interval time. For a list of flags, see [`DispatchIO.IntervalFlags`](dispatchio/intervalflags.md).
 
 ## See Also
 

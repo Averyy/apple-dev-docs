@@ -24,7 +24,7 @@ Add a pre-shared key (PSK) and its identity to the options.
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A `sec_protocol_options_t` instance.
 - `psk`: A dispatch_data_t containing a PSK blob.
 - `psk_identity`: A dispatch_data_t containing a PSK identity blob.
 

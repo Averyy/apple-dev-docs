@@ -12,6 +12,23 @@ Normally, you can’t see which actions a node is executing, and if you want to 
 
 The following code creates and runs a new action identified with the `ignition` key.
 
+**Swift**:
+
+```swift
+let moveNodeUp = SKAction.moveBy(x: 0.0,
+                                 y: 100.0,
+                                 duration: 1.0)
+rocketNode.run(moveNodeUp,
+               withKey: "ignition")
+```
+
+**Obj-C**:
+
+```objc
+SKAction *moveNodeRight = [SKAction moveByX:100.0 y:0.0 duration:1.0];
+[spaceship runAction: moveNodeRight withKey:@"ignition"];
+```
+
 The following key-based methods are available:
 
 - [`run(_:withKey:)`](sknode/run(_:withkey:).md) method to run the action. If an action with the same key is already executing, it is removed before the new action is added.

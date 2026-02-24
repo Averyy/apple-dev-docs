@@ -20,6 +20,11 @@ object SetAutoAdminPasswordCommand
 - [object SetAutoAdminPasswordCommand.Command](setautoadminpasswordcommand/command-data.dictionary.md)
   The command to update the local administrator account password.
 
+## Properties
+
+- `Command` (SetAutoAdminPasswordCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object SetAutoAdminPasswordResponse](setautoadminpasswordresponse.md)

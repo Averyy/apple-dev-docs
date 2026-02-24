@@ -16,6 +16,10 @@ A dictionary of values associated with an extension config.
 object AppManagedExtensionConfigsObject
 ```
 
+## Properties
+
+- `ANY` (AppManagedAppConfigDictionaryObject): A dictionary mapping extension composed identifiers to the extension config data and credentials. The expected format is “Identifier (TeamIdentifier)”.
+
 ## See Also
 
 - [object AppManagedAppConfigDictionaryObject](appmanagedappconfigdictionaryobject.md)

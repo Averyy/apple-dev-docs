@@ -32,6 +32,10 @@ object StatusDeviceModelNumber
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
+## Properties
+
+- `device.model.number` (string) *(required)*: The device’s model number.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

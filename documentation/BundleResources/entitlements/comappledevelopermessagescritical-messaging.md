@@ -10,6 +10,12 @@ A Boolean value that indicates whether an app can use the Critical Messaging API
 - iPadOS 18.2+
 - watchOS 11.2+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 Add the Critical Messaging entitlement to your app by following these steps:

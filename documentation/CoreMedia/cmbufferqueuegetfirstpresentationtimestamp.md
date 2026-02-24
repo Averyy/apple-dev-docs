@@ -30,7 +30,7 @@ This API is is a faster alternative to [`CMBufferQueueTestTrigger(_:triggerToken
 
 ## Parameters
 
-- `queue`:   being interrogated.
+- `queue`: `CMBufferQueue` being interrogated.
 
 ## See Also
 

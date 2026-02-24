@@ -8,13 +8,13 @@ Eliminate passwords for your users when they sign in to apps and websites.
 
 Passkeys use iCloud Keychain public key credentials, eliminating the need for passwords. Instead, they rely on biometric identification, such as Touch ID and Face ID in iOS, or a specific confirmation in macOS for generating and authenticating accounts.
 
-As the , your Apple device generates a unique public-private key pair for every account it creates on a service. The authenticator retains the private key and shares its public key with the server, known as the 
+As the *authenticator*, your Apple device generates a unique public-private key pair for every account it creates on a service. The authenticator retains the private key and shares its public key with the server, known as the *relying party.*
 
 > ❗ **Important**:  You need to have an associated domain with the `webcredentials` service type when making a registration or assertion request; otherwise, the request returns an error. See [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains) for more information.__
 
 ##### Register a New Account on a Service
 
-To onboard users to a new service, such as an online bank or grocery delivery app, without passwords, you need to obtain a  from the server. A challenge is data that the server generates to prove that you, as the authenticator, own the account.
+To onboard users to a new service, such as an online bank or grocery delivery app, without passwords, you need to obtain a *challenge* from the server. A challenge is data that the server generates to prove that you, as the authenticator, own the account.
 
 The following code sets up the process of registration. Create an instance of [`ASAuthorizationPlatformPublicKeyCredentialProvider`](asauthorizationplatformpublickeycredentialprovider.md) and pass it your relying party identifier, which is usually the service’s domain name.
 

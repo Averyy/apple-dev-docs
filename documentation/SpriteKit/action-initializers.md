@@ -33,9 +33,9 @@ See [`Action Initializers`](action-initializers.md) for a full list of action ty
 
 Actions can be chained together in multiple ways:
 
-- A  has multiple child actions. Each action in the sequence begins after the previous action ends.
-- A  has multiple child actions. All actions stored in the group begin executing at the same time.
-- A  stores a single child action. When the child action completes, it is restarted.
+- A *sequence action* has multiple child actions. Each action in the sequence begins after the previous action ends.
+- A *group action* has multiple child actions. All actions stored in the group begin executing at the same time.
+- A *repeating action* stores a single child action. When the child action completes, it is restarted.
 
 To delay a subsequent action in the chain, insert a [`wait(forDuration:)`](skaction/wait(forduration:).md) action in the sequence, and remember that groups, sequences, and repeating actions may be nested.
 

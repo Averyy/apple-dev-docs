@@ -25,9 +25,9 @@ During a transform ramp, the affine transform is interpolated between the values
 
 ## Parameters
 
-- `startTransform`: The transform to be applied at the starting time of  .
-- `endTransform`: The transform to be applied at the end time of  .
-- `timeRange`: The time range over which the value of the transform is interpolated between   and  .
+- `startTransform`: The transform to be applied at the starting time of `timeRange`.
+- `endTransform`: The transform to be applied at the end time of `timeRange`.
+- `timeRange`: The time range over which the value of the transform is interpolated between `startTransform` and `endTransform`.
 
 ## See Also
 

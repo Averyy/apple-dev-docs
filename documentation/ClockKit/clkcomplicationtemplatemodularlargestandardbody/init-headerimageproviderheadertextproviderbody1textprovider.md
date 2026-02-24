@@ -16,7 +16,7 @@ init(headerImageProvider: CLKImageProvider?, headerTextProvider: CLKTextProvider
 
 ## Parameters
 
-- `headerImageProvider`: An image provider for the header. The system renders the image as a tinted template image, a bitmap image where only the opacity of the image matters. For more information, see  .
+- `headerImageProvider`: An image provider for the header. The system renders the image as a tinted template image, a bitmap image where only the opacity of the image matters. For more information, see [`Providing images for different appearances`](https://developer.apple.com/documentation/UIKit/providing-images-for-different-appearances#Create-tintable-images-using-template-images).
 - `headerTextProvider`: The text provider for the header. For multicolor faces, like the Utility face, the system uses the text provider’s tint color for the text. For other faces, the system ignores the provided tint color, and uses a system color instead.
 - `body1TextProvider`: The text provider for the row of body text. For multicolor faces, like the Utility face, the system uses the text provider’s tint color for the text. For other faces, the system ignores the provided tint color, and uses a system color instead.
 

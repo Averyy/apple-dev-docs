@@ -26,7 +26,7 @@ A copy of NumericFactor.
 
 ## Parameters
 
-- `NumericFactor`: The symbolic factorization to increase the underlying   reference count of.
+- `NumericFactor`: The symbolic factorization to increase the underlying reference count of.
 
 ## See Also
 

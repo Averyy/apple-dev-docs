@@ -20,7 +20,7 @@ func setBadgeText(_ badgeText: String?)
 
 ## Parameters
 
-- `badgeText`: String to display on the badge. Pass   to remove the badge.
+- `badgeText`: String to display on the badge. Pass `nil` to remove the badge.
 
 ## See Also
 

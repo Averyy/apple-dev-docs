@@ -12,6 +12,10 @@ A Boolean value indicating whether the app supports a game controller.
 - tvOS 9.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 To add this key to the information property list, enable the Game Controllers capability in Xcode. If you set this key to `YES` and check ExtendedGamepad under the Game Controllers capability in your project, App Store adds a game controller support badge to your app. Then users can customize their game controller mappings in Settings and Preferences.

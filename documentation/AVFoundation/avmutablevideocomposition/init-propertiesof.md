@@ -31,7 +31,7 @@ It also has the following values for its properties:
 
 ## Parameters
 
-- `asset`: An instance of  . Ensure that the duration and tracks properties of the asset are already loaded before invoking this method.
+- `asset`: An instance of [`AVAsset`](avasset.md). Ensure that the duration and tracks properties of the asset are already loaded before invoking this method.
 
 ## See Also
 

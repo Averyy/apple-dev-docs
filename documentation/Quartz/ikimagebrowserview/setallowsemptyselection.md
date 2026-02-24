@@ -16,7 +16,7 @@ func setAllowsEmptySelection(_ flag: Bool)
 
 ## Parameters
 
-- `flag`: A   value that specifies whether to allow an empty selection.
+- `flag`: A `BOOL` value that specifies whether to allow an empty selection.
 
 ## See Also
 

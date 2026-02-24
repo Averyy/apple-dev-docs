@@ -34,7 +34,7 @@ Typically, scene print works best if the source of your training data matches th
 
 ## Parameters
 
-- `revision`: The sceneprint version. The supported versions include 1 and 2. If   defaults to the latest version.
+- `revision`: The sceneprint version. The supported versions include 1 and 2. If `nil` defaults to the latest version.
 
 ## See Also
 

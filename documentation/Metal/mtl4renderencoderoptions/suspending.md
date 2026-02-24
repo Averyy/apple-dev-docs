@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-Configures the render pass as .
+Configures the render pass as *suspending*.
 
 **Availability**:
 - iOS 26.0+

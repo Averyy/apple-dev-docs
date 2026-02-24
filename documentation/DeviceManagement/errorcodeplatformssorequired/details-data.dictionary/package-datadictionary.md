@@ -14,6 +14,12 @@ A dictionary that specifies the package that the device uses to install an app w
 object ErrorCodePlatformSSORequired.Details.Package
 ```
 
+## Properties
+
+- `ManifestURL` (string) *(required)*: The URL of the app manifest, which needs to begin with `https:`.
+- `PinningCerts` ([data]): An array of DER-encoded certificates to pin the connection when fetching the `ManifestURL`.
+- `PinningRevocationCheckRequired` (boolean): If `true`, certificate revocation checks require a positive response when using certificate pinning with `PinningCerts`.
+
 
 ---
 

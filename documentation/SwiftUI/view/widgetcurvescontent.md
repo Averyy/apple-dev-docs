@@ -48,7 +48,7 @@ var body: some View {
 
 ## Parameters
 
-- `curvesContent`: A Boolean value that indicates whether the   system curves the widget label’s content, if the context allows.
+- `curvesContent`: A Boolean value that indicates whether the system curves the widget label’s content, if the context allows.
 
 ## See Also
 

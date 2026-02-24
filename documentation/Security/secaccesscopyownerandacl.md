@@ -23,8 +23,8 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 - `accessRef`: An access instance from which to retrieve the owner and ACL entries.
 - `userId`: On return, the user ID that owns the access instance.
 - `groupId`: On return, the group ID that owns the access instance.
-- `ownerType`: On return, flags that indicate whether the specified user ID or group ID owns the resulting ACL entries. See   for details.
-- `aclList`: On return, an array of   instances associated with the access instance.
+- `ownerType`: On return, flags that indicate whether the specified user ID or group ID owns the resulting ACL entries. See [`SecAccessOwnerType`](secaccessownertype.md) for details.
+- `aclList`: On return, an array of [`SecACL`](secacl.md) instances associated with the access instance.
 
 
 ---

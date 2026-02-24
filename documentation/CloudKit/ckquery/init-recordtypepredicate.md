@@ -30,7 +30,7 @@ You can’t query for user records, and executing a query where the record type 
 ## Parameters
 
 - `recordType`: The type of record to search. Specify the name of one of your app’s supported record types. The method throws an exception if this parameter is an empty string.
-- `predicate`: The search predicate to apply to the prospective records. Only records that match the predicate criteria appear in the search results. For guidelines on how to construct predicates for your queries, see  .
+- `predicate`: The search predicate to apply to the prospective records. Only records that match the predicate criteria appear in the search results. For guidelines on how to construct predicates for your queries, see [`Predicate Rules for Query Objects`](ckquery#Predicate-Rules-for-Query-Objects.md).
 
 ## See Also
 

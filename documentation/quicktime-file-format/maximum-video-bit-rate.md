@@ -4,6 +4,12 @@
 
 #### Overview
 
+- **Containing profile atom**: Track (video), movie
+- **Reserved**: 0x00000000
+- **`part-ID`**: 0x20202020 (universal feature)
+- **`feature-code`**: `'mvbr'`
+- **`feature-value`**: Unsigned `int(32)` indicating maximum video bit rate in bits per second
+
 #### Feature Values
 
 The value is an unsigned 32-bit integer indicating the maximum video bit rate in bits per second. The value may be larger than the actual video bit rate, so it should not be interpreted as a bit rate that will actually occur.

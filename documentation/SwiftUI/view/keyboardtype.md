@@ -36,7 +36,7 @@ There are several different kinds of specialized keyboard types available though
 
 ## Parameters
 
-- `type`: One of the keyboard types defined in the    enumeration.
+- `type`: One of the keyboard types defined in the [`UIKeyboardType`](https://developer.apple.com/documentation/UIKit/UIKeyboardType) enumeration.
 
 ## See Also
 

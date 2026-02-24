@@ -9,6 +9,10 @@ A collection of properties that explain your app’s need to analyze the user’
 - iOS 15.0+
 - iPadOS 15.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 This key is a possible member of the [`NSSensorKitUsageDetail`](information-property-list/nssensorkitusagedetail.md) dictionary.

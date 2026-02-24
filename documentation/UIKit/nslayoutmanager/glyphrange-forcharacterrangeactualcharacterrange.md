@@ -31,7 +31,7 @@ If noncontiguous layout is not enabled, this method forces the generation of gly
 ## Parameters
 
 - `charRange`: The character range for which to return the generated glyph range.
-- `actualCharRange`: If not  , on output, points to the actual range of characters that fully define the glyph range returned. This range may be identical to or slightly larger than the requested character range. For example, if the text storage contains the characters “ ” and  , and the glyph store contains the single precomposed glyph “¨ ”, and if   encloses only the first or second character, then   is set to enclose both characters.
+- `actualCharRange`: If not `NULL`, on output, points to the actual range of characters that fully define the glyph range returned. This range may be identical to or slightly larger than the requested character range. For example, if the text storage contains the characters “`O`” and `"¨"`, and the glyph store contains the single precomposed glyph “¨`Ö`”, and if `charRange` encloses only the first or second character, then `actualCharRange` is set to enclose both characters.
 
 ## See Also
 

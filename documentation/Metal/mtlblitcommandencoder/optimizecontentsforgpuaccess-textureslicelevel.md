@@ -38,8 +38,8 @@ When a blit pass runs this command, the GPU only applies lossless changes to the
 ## Parameters
 
 - `texture`: A texture the command optimizes.
-- `slice`: A slice within  .
-- `level`: A mipmap level within  .
+- `slice`: A slice within `texture`.
+- `level`: A mipmap level within `texture`.
 
 ## See Also
 

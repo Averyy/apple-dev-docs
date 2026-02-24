@@ -35,8 +35,8 @@ This function is best suited for sending a single request to the server. If you 
 - `authenticationFailureResponse`: The response message that contains authentication failure information.
 - `username`: The username to add to the request.
 - `password`: The password to add to the request.
-- `authenticationScheme`: The authentication scheme to use ( ,  ,  , or  ), or pass   to use the strongest supported authentication scheme provided in the   parameter.
-- `forProxy`: A flag indicating whether the authentication data that is being added is for a proxy’s use ( ) or for a remote server’s use ( ). If the error code provided by the   parameter is 407, set   to  . If the error code is 401, set   to  .
+- `authenticationScheme`: The authentication scheme to use (`kCFHTTPAuthenticationSchemeBasic`, `kCFHTTPAuthenticationSchemeNegotiate`, `kCFHTTPAuthenticationSchemeNTLM`, or `kCFHTTPAuthenticationSchemeDigest`), or pass `NULL` to use the strongest supported authentication scheme provided in the `authenticationFailureResponse` parameter.
+- `forProxy`: A flag indicating whether the authentication data that is being added is for a proxy’s use (`TRUE`) or for a remote server’s use (`FALSE`). If the error code provided by the `authenticationFailureResponse` parameter is 407, set `forProxy` to `TRUE`. If the error code is 401, set `forProxy` to `FALSE`.
 
 ## See Also
 

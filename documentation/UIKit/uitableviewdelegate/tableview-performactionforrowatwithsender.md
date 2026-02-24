@@ -24,9 +24,9 @@ The table view invokes this method for a given `action` if the user taps Copy or
 ## Parameters
 
 - `tableView`: The table view that is making this request.
-- `action`: A selector type identifying the   or   method of the   informal protocol.
+- `action`: A selector type identifying the [`copy(_:)`](uiresponderstandardeditactions/copy(_:).md) or [`paste(_:)`](uiresponderstandardeditactions/paste(_:).md) method of the [`UIResponderStandardEditActions`](uiresponderstandardeditactions.md) informal protocol.
 - `indexPath`: The index path of the row.
-- `sender`: The object that initially sent the   or   message.
+- `sender`: The object that initially sent the `copy:` or `paste:` message.
 
 ## See Also
 

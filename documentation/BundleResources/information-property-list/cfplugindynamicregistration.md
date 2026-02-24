@@ -8,6 +8,10 @@ A Boolean value indicating whether the host loads this plug-in.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [CFPlugInDynamicRegisterFunction](information-property-list/cfplugindynamicregisterfunction.md)

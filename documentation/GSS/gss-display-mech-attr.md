@@ -25,10 +25,10 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success or [`GSS_S
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
-- `mech_attr`: The mechanism attribute to examine. See Mechanisms and Authentication in   for a list of possible values.
-- `name`: A buffer the function fills with a human readable version of the mechanism attribute. Release this buffer with a call to   when you are done with it.
-- `short_desc`: A buffer the function fills with a short description of the mechanism attribute. Release this buffer with a call to   when you are done with it.
-- `long_desc`: A buffer the function fills with a longer description of the mechanism attribute. Release this buffer with a call to   when you are done with it.
+- `mech_attr`: The mechanism attribute to examine. See Mechanisms and Authentication in [`Security Mechanisms`](security-mechanisms.md) for a list of possible values.
+- `name`: A buffer the function fills with a human readable version of the mechanism attribute. Release this buffer with a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md) when you are done with it.
+- `short_desc`: A buffer the function fills with a short description of the mechanism attribute. Release this buffer with a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md) when you are done with it.
+- `long_desc`: A buffer the function fills with a longer description of the mechanism attribute. Release this buffer with a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md) when you are done with it.
 
 ## See Also
 

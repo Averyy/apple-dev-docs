@@ -26,9 +26,9 @@ The preference data for the specified key and application, or if no value was lo
 
 ## Parameters
 
-- `key`: The preference key whose value to obtain. The key must specify a preference whose value is of type  .
-- `applicationID`: The identifier of the application whose preferences are searched, typically  . Do not pass   or  . Takes the form of a Java package name, such as  .
-- `keyExistsAndHasValidFormat`: On return,   if the preference value for the specified key was located and found to be of type  , otherwise  .
+- `key`: The preference key whose value to obtain. The key must specify a preference whose value is of type `Boolean`.
+- `applicationID`: The identifier of the application whose preferences are searched, typically [`kCFPreferencesCurrentApplication`](kcfpreferencescurrentapplication.md). Do not pass `NULL` or [`kCFPreferencesAnyApplication`](kcfpreferencesanyapplication.md). Takes the form of a Java package name, such as `com.foosoft`.
+- `keyExistsAndHasValidFormat`: On return, `true` if the preference value for the specified key was located and found to be of type `Boolean`, otherwise `false`.
 
 ## See Also
 

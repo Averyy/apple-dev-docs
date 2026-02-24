@@ -30,12 +30,12 @@ For output formats that use packet dependency descriptions, this must be used in
 ## Parameters
 
 - `inAudioConverter`: The audio converter to use for format conversion.
-- `inInputDataProc`: A callback function that supplies audio data to convert.   This callback is invoked repeatedly as the converter is ready for   new input data.
-- `inInputDataProcUserData`: Custom data for use by your application when receiving a   callback invocation.
-- `ioOutputDataPacketSize`: On input, the size of the output buffer (in the    parameter), expressed in number packets in the audio converter’s   output format.  On output, the number of packets of converted data   that were written to the output buffer.
-- `outOutputData`: The converted output data is written to this buffer. On entry, the   buffers’   fields (which must all be the same) reflect   buffer capacity.  On exit,   is set to the number of   bytes written.
-- `outPacketDescriptions`: If not  , and if the audio converter’s output format uses packet   descriptions, this must point to a block of memory capable of holding   the number of packet descriptions specified in the    parameter.  (See   for functions that   let you determine whether an audio format uses packet descriptions).   If not   on output and if the audio converter’s output format   uses packet descriptions, then this parameter contains an array of   packet descriptions.
-- `outPacketDependencies`: Should point to a memory block capable of holding the number of   packet dependency description structures specified in the    parameter.  Must not be  .  This array   will be filled out only by encoders that produce a format which has a   non-zero value for  .
+- `inInputDataProc`: A callback function that supplies audio data to convert. This callback is invoked repeatedly as the converter is ready for new input data.
+- `inInputDataProcUserData`: Custom data for use by your application when receiving a callback invocation.
+- `ioOutputDataPacketSize`: On input, the size of the output buffer (in the `outOutputData` parameter), expressed in number packets in the audio converter’s output format.  On output, the number of packets of converted data that were written to the output buffer.
+- `outOutputData`: The converted output data is written to this buffer. On entry, the buffers’ `mDataByteSize` fields (which must all be the same) reflect buffer capacity.  On exit, `mDataByteSize` is set to the number of bytes written.
+- `outPacketDescriptions`: If not `NULL`, and if the audio converter’s output format uses packet descriptions, this must point to a block of memory capable of holding the number of packet descriptions specified in the `ioOutputDataPacketSize` parameter.  (See *Audio Format Services Reference* for functions that let you determine whether an audio format uses packet descriptions). If not `NULL` on output and if the audio converter’s output format uses packet descriptions, then this parameter contains an array of packet descriptions.
+- `outPacketDependencies`: Should point to a memory block capable of holding the number of packet dependency description structures specified in the `ioOutputDataPacketSize` parameter.  Must not be `NULL`.  This array will be filled out only by encoders that produce a format which has a non-zero value for `kAudioFormatProperty_FormatEmploysDependentPackets`.
 
 
 ---

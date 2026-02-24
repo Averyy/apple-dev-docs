@@ -26,8 +26,8 @@ This method uses [`IOUSBGetNextDescriptor(_:_:)`](iousbgetnextdescriptor(_:_:).m
 ## Parameters
 
 - `configurationDescriptor`: A configuration descriptor that contains the descriptors to iterate through.
-- `parentDescriptor`: A descriptor pointer within the bounds of  .
-- `currentDescriptor`: A descriptor pointer within the bounds of  , or  .
+- `parentDescriptor`: A descriptor pointer within the bounds of `configurationDescriptor`.
+- `currentDescriptor`: A descriptor pointer within the bounds of `configurationDescriptor`, or `nil`.
 
 ## See Also
 

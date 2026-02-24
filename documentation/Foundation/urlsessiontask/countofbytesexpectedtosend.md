@@ -25,7 +25,7 @@ var countOfBytesExpectedToSend: Int64 { get }
 The URL loading system can determine the length of the upload data in three ways:
 
 - From the length of the data object provided as the upload body.
-- From the length of the file on disk provided as the upload body of an upload task ( a download task).
+- From the length of the file on disk provided as the upload body of an upload task (*not* a download task).
 - From the `Content-Length` in the request object, if you explicitly set it.
 
 Otherwise, the value is [`NSURLSessionTransferSizeUnknown`](nsurlsessiontransfersizeunknown.md) (`-1`) if you provided a stream or body data object, or zero (`0`) if you did not.

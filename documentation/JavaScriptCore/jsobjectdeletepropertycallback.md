@@ -36,9 +36,9 @@ If this function returns [`false`](https://developer.apple.com/documentation/Swi
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The   to delete the property in.
-- `propertyName`: A   that contains the name of the property to delete.
-- `exception`: A pointer to a   to return an exception in, if any.
+- `object`: The [`JSObjectRef`](jsobjectref.md) to delete the property in.
+- `propertyName`: A [`JSStringRef`](jsstringref.md) that contains the name of the property to delete.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to return an exception in, if any.
 
 ## See Also
 

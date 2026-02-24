@@ -30,7 +30,7 @@ The calculations are implemented according to RFC-5545 and RFC-7529.
 
 ## Parameters
 
-- `start`: The date which defines the starting point for the   recurrence rule.
+- `start`: The date which defines the starting point for the recurrence rule.
 - `range`: A range of dates which to search for recurrences.
 
 

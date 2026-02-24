@@ -62,7 +62,8 @@ Because this method does not return error information, it has been deprecated as
 ## Parameters
 
 - `path`: A file path.
-- `yorn`: If   is not a symbolic link, this parameter has no effect. If   is a symbolic link, then:
+- `yorn`: If `path` is not a symbolic link, this parameter has no effect. If `path` is a symbolic link, then: - If [`true`](https://developer.apple.com/documentation/Swift/true) the attributes of the linked-to file are returned, or if the link points to a nonexistent file the method returns `nil`.
+- If [`false`](https://developer.apple.com/documentation/Swift/false), the attributes of the symbolic link are returned.
 
 ## See Also
 

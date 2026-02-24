@@ -25,7 +25,7 @@ Don’t adopt this protocol in your own classes. UIKit creates an object that ad
 
 A transition coordinator context provides most of the same information as an object that adopts the [`UIViewControllerContextTransitioning`](uiviewcontrollercontexttransitioning.md) protocol. You use this contextual information to determine the animation parameters, such as the view in which the animations take place, whether the transition is interactive, or whether the transition was the result of an interface orientation change. You then apply that information to the animations you create.
 
-Most animations take place in the view returned by the [`containerView`](uiviewcontrollertransitioncoordinatorcontext/containerview.md) method. And at the time your animation blocks are executed, the view hierarchy already contains the view of the  view controller. You can use your animation blocks to animate additional content in that same container view or you can animate content in an entirely different view.
+Most animations take place in the view returned by the [`containerView`](uiviewcontrollertransitioncoordinatorcontext/containerview.md) method. And at the time your animation blocks are executed, the view hierarchy already contains the view of the *from* view controller. You can use your animation blocks to animate additional content in that same container view or you can animate content in an entirely different view.
 
 ## Topics
 

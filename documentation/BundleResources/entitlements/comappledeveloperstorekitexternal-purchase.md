@@ -14,6 +14,10 @@ A Boolean value that indicates whether your app can offer external purchases.
 - visionOS 1.1+
 - watchOS 10.4+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Qualifying apps may offer external purchases within the app. To offer external purchases in your app, complete a request for this entitlement. For more information about qualifying apps and to request this entitlement, see:

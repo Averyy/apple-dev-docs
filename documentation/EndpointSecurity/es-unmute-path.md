@@ -24,9 +24,9 @@ To unmute a subset of events from a path, use [`es_unmute_path_events(_:_:_:_:_:
 
 ## Parameters
 
-- `client`: A previously-muted client. If the call succeeds, this client begins to receive events from executables whose paths match  .
+- `client`: A previously-muted client. If the call succeeds, this client begins to receive events from executables whose paths match `path`.
 - `path`: The path to unmute. The client resumes receiving events from executables whose paths match this string.
-- `type`: The type of the   argument, either a prefix or a literal path.
+- `type`: The type of the `path` argument, either a prefix or a literal path.
 
 ## See Also
 

@@ -26,8 +26,8 @@ Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success, otherw
 
 ## Parameters
 
-- `sdRef`: A DNSServiceRef initialized by   (if the record being removed was registered via  ) or by   (if the record being removed was registered via  ).
-- `RecordRef`: A DNSRecordRef initialized by a successful call to   or  .
+- `sdRef`: A DNSServiceRef initialized by [`DNSServiceRegister(_:_:_:_:_:_:_:_:_:_:_:_:)`](dnsserviceregister(_:_:_:_:_:_:_:_:_:_:_:_:).md) (if the record being removed was registered via [`DNSServiceAddRecord(_:_:_:_:_:_:_:)`](dnsserviceaddrecord(_:_:_:_:_:_:_:).md)) or by [`DNSServiceCreateConnection(_:)`](dnsservicecreateconnection(_:).md) (if the record being removed was registered via [`DNSServiceRegisterRecord(_:_:_:_:_:_:_:_:_:_:_:_:)`](dnsserviceregisterrecord(_:_:_:_:_:_:_:_:_:_:_:_:).md)).
+- `RecordRef`: A DNSRecordRef initialized by a successful call to [`DNSServiceAddRecord(_:_:_:_:_:_:_:)`](dnsserviceaddrecord(_:_:_:_:_:_:_:).md) or [`DNSServiceRegisterRecord(_:_:_:_:_:_:_:_:_:_:_:_:)`](dnsserviceregisterrecord(_:_:_:_:_:_:_:_:_:_:_:_:).md).
 - `flags`: Currently ignored, reserved for future use.
 
 ## See Also

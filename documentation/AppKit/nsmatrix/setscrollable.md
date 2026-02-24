@@ -16,7 +16,7 @@ func setScrollable(_ flag: Bool)
 
 ## Parameters
 
-- `flag`:   to make all the cells in the receiver scrollable, so the text they contain scrolls to remain in view if the user types past the edge of the cell. If   is  , all cells are made nonscrolling. The prototype cell, if there is one, is also set accordingly
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) to make all the cells in the receiver scrollable, so the text they contain scrolls to remain in view if the user types past the edge of the cell. If `flag` is [`false`](https://developer.apple.com/documentation/Swift/false), all cells are made nonscrolling. The prototype cell, if there is one, is also set accordingly
 
 ## See Also
 

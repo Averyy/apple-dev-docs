@@ -6,7 +6,7 @@ Combine variants of a binary framework or library into an XCFramework bundle tha
 
 #### Overview
 
-An XCFramework bundle, or , is a binary package created by Xcode that includes the frameworks and libraries necessary to build for multiple platforms (iOS, iPadOS, macOS, tvOS, visionOS, watchOS, and DriverKit), including Simulator builds. The frameworks can be static or dynamic and also include headers.
+An XCFramework bundle, or *artifact*, is a binary package created by Xcode that includes the frameworks and libraries necessary to build for multiple platforms (iOS, iPadOS, macOS, tvOS, visionOS, watchOS, and DriverKit), including Simulator builds. The frameworks can be static or dynamic and also include headers.
 
 Include an XCFramework bundle inside a Swift package to distribute code in binary form for use in other projects. For more information, see [`Distributing binary frameworks as Swift packages`](distributing-binary-frameworks-as-swift-packages.md).
 
@@ -96,7 +96,7 @@ To sign a framework for distribution as a member of the Apple Developer Program,
 
 ##### Avoid Issues When Using Alternate Build Systems
 
-When using an alternative build system, common for open source projects, follow a similar process to compile the source code into static library files, using one binary per platform, or . Use the files to create the XCFramework.
+When using an alternative build system, common for open source projects, follow a similar process to compile the source code into static library files, using one binary per platform, or *destination*. Use the files to create the XCFramework.
 
 - For each library and each platform, build a binary static libary file (`.a` file) that includes slices for all the possible architectures the platform uses.
 - Specify the path to each of the binaries you create in a call to `xcodebuild -create-xcframework` to generate the XCFramework.

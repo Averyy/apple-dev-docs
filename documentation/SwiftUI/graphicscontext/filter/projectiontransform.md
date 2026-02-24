@@ -26,7 +26,7 @@ A filter that applies a transform.
 
 ## Parameters
 
-- `matrix`: A projection transform to apply to the rasterized   form of graphics primitives.
+- `matrix`: A projection transform to apply to the rasterized form of graphics primitives.
 
 
 ---

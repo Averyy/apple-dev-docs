@@ -27,7 +27,7 @@ This method converts the map points into coordinates before returning them to yo
 ## Parameters
 
 - `coords`: On input, provide a C array of structures large enough to hold the desired number of coordinates. On output, this structure contains the requested coordinate data.
-- `range`: The range of points you want. The   field indicates the first point you’re requesting, with   being the first point,   being the second point, and so on. The   field indicates the number of points you want. The array in   needs to be large enough to accommodate the number of requested coordinates.
+- `range`: The range of points you want. The `location` field indicates the first point you’re requesting, with `0` being the first point, `1` being the second point, and so on. The `length` field indicates the number of points you want. The array in `coords` needs to be large enough to accommodate the number of requested coordinates.
 
 
 ---

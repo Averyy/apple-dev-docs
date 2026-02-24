@@ -30,10 +30,10 @@ The programming interface for variable argument lists (`va_list`, `va_start`, `v
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new string. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `formatOptions`: A CFDictionary object containing formatting options for the string (such as the thousand-separator character, which is dependent on locale). Currently, these options are an unimplemented feature.
-- `format`: The formatted string with  -style specifiers. For information on supported specifiers, see  .
-- `arguments`: The variable argument list of values to be inserted into the formatted string contained in  .
+- `format`: The formatted string with `printf`-style specifiers. For information on supported specifiers, see [`String Format Specifiers`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFStrings/formatSpecifiers.html#//apple_ref/doc/uid/TP40004265).
+- `arguments`: The variable argument list of values to be inserted into the formatted string contained in `format`.
 
 ## See Also
 

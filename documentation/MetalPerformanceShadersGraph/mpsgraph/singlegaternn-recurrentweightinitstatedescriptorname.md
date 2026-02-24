@@ -37,9 +37,9 @@ for t = 0 to T-1
 
 ## Parameters
 
-- `source`: A tensor that contains the source data   with the data layout [T,N,I].   In case   and   then the layout is [T,N,H] and   for   and   the layout is [T,N,2H].
-- `recurrentWeight`: A tensor containing the recurrent weights  . For   the layout is [2,H,H] and otherwise it is [H,H].
-- `initState`: The initial internal state of the RNN   - optional, if missing the operation assumes zeroes. For   the layout is [N,2H] and otherwise it is [N,H].
+- `source`: A tensor that contains the source data `x[t]` with the data layout [T,N,I]. In case `inputWeight = nil` and `bidirectional = NO` then the layout is [T,N,H] and for `inputWeight = nil` and `bidirectional = YES` the layout is [T,N,2H].
+- `recurrentWeight`: A tensor containing the recurrent weights `R`. For `bidirectional` the layout is [2,H,H] and otherwise it is [H,H].
+- `initState`: The initial internal state of the RNN `h[-1]` - optional, if missing the operation assumes zeroes. For `bidirectional` the layout is [N,2H] and otherwise it is [N,H].
 - `descriptor`: A descriptor that defines the parameters for the RNN operation.
 - `name`: The name for the operation.
 

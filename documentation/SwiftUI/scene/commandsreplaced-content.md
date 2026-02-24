@@ -55,7 +55,7 @@ struct Example: App {
 
 ## Parameters
 
-- `content`: A   builder whose output will be used to replace   the commands normally provided by the modified scene.
+- `content`: A `Commands` builder whose output will be used to replace the commands normally provided by the modified scene.
 
 ## See Also
 

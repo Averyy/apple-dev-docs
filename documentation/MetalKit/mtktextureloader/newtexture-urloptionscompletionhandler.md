@@ -28,7 +28,7 @@ func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]? = nil) async
 ## Parameters
 
 - `URL`: The URL of the file to load.
-- `options`: A dictionary describing any additional texture loading steps. See  .
+- `options`: A dictionary describing any additional texture loading steps. See `Texture Loading Options`.
 - `completionHandler`: A block called when the texture has been loaded and fully initialized.
 
 ## See Also

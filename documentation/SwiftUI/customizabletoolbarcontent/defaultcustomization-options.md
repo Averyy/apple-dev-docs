@@ -56,8 +56,8 @@ ContentView()
 
 ## Parameters
 
-- `defaultVisibility`: The default visibility of toolbar content   with the default customization behavior.
-- `options`: The customization options to configure the behavior   of toolbar content with the default customization behavior.
+- `defaultVisibility`: The default visibility of toolbar content with the default customization behavior.
+- `options`: The customization options to configure the behavior of toolbar content with the default customization behavior.
 
 ## See Also
 

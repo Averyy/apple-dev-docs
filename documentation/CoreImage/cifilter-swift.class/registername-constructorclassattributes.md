@@ -26,8 +26,8 @@ In most cases you don’t need to use this method because the preferred way to r
 ## Parameters
 
 - `name`: A string object that specifies the name of the filter you want to publish.
-- `anObject`: A constructor object that implements the   method.
-- `attributes`: A dictionary that contains the class display name and filter categories attributes along with the appropriate value for each attributes. That is,  the   attribute and a string that specifies the display name, and the   and an array that specifies the categories to which the filter belongs (such as   and  ). All other attributes for the filter should be returned by the custom   method implement by the filter.
+- `anObject`: A constructor object that implements the `filterWithName` method.
+- `attributes`: A dictionary that contains the class display name and filter categories attributes along with the appropriate value for each attributes. That is,  the [`kCIAttributeFilterDisplayName`](kciattributefilterdisplayname.md) attribute and a string that specifies the display name, and the [`kCIAttributeFilterCategories`](kciattributefiltercategories.md) and an array that specifies the categories to which the filter belongs (such as [`kCICategoryStillImage`](kcicategorystillimage.md) and [`kCICategoryDistortionEffect`](kcicategorydistortioneffect.md)). All other attributes for the filter should be returned by the custom `attributes` method implement by the filter.
 
 
 ---

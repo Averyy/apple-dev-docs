@@ -76,8 +76,8 @@ Users can set the default directory in Settings. For more information, see [`Set
 
 When the import is complete, the browser calls one of the following delegate methods:
 
--  [`documentBrowser(_:didImportDocumentAt:toDestinationURL:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didimportdocumentat:todestinationurl:).md)
--  [`documentBrowser(_:failedToImportDocumentAt:error:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:failedtoimportdocumentat:error:).md)
+- **On success.** [`documentBrowser(_:didImportDocumentAt:toDestinationURL:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didimportdocumentat:todestinationurl:).md)
+- **On failure.** [`documentBrowser(_:failedToImportDocumentAt:error:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:failedtoimportdocumentat:error:).md)
 
 The document browser enables the Add button (+) only when both of the following are true:
 
@@ -89,7 +89,8 @@ The document browser enables the Add button (+) only when both of the following 
 ## Parameters
 
 - `controller`: The current document browser.
-- `importHandler`: A block that takes the following parameters:
+- `importHandler`: A block that takes the following parameters: - **urlToImport**: The URL of the document’s initial, temporary location.
+- **importMode**: The mode used when importing the document. For a list of import modes, see [`UIDocumentBrowserViewController.ImportMode`](uidocumentbrowserviewcontroller/importmode.md).
 
 ## See Also
 

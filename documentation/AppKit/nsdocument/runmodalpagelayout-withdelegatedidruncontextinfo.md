@@ -26,7 +26,7 @@ When the panel is dismissed, `delegate` is sent a `didRunSelector` message. The 
 
 ## Parameters
 
-- `printInfo`: The   object for the page layout panel to use.
+- `printInfo`: The `NSPrintInfo` object for the page layout panel to use.
 - `delegate`: The delegate to which the selector message is sent.
 - `didRunSelector`: The selector of the message sent to the delegate.
 - `contextInfo`: Object passed with the callback to provide any additional context information.

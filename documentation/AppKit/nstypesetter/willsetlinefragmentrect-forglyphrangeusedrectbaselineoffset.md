@@ -22,9 +22,9 @@ A subclass can override this method to customize the text layout process. For ex
 
 ## Parameters
 
-- `lineRect`: The rectangle in which the glyphs in   are laid out.
+- `lineRect`: The rectangle in which the glyphs in `glyphRange` are laid out.
 - `glyphRange`: The range of the glyphs to lay out.
-- `usedRect`: The portion of  , in the NSTextContainer object’s coordinate system, that actually contains glyphs or other marks that are drawn (including the text container’s line fragment padding). The   must be equal to or contained within  .
+- `usedRect`: The portion of `lineRect`, in the NSTextContainer object’s coordinate system, that actually contains glyphs or other marks that are drawn (including the text container’s line fragment padding). The `usedRect` must be equal to or contained within `lineRect`.
 - `baselineOffset`: The vertical distance in pixels from the line fragment origin to the baseline on which the glyphs align.
 
 ## See Also

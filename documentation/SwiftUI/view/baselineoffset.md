@@ -27,7 +27,7 @@ A view where text is above or below its baseline.
 
 ## Parameters
 
-- `baselineOffset`: The amount to shift the text   vertically (up or down) relative to its baseline.
+- `baselineOffset`: The amount to shift the text vertically (up or down) relative to its baseline.
 
 ## See Also
 

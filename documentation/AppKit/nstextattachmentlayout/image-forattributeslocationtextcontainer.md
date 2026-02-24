@@ -25,10 +25,10 @@ A custom implementation should return an image appropriate for the target render
 
 ## Parameters
 
-- `bounds`: The   that presents the image boundaries inside  .
-- `attributes`: A dictionary of   attributes.
-- `location`: An   that indicates that start of the string.
-- `textContainer`: The   that contains the source text.
+- `bounds`: The [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that presents the image boundaries inside `textContainer`.
+- `attributes`: A dictionary of [`NSAttributedString.Key`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key) attributes.
+- `location`: An [`NSTextLocation`](nstextlocation.md) that indicates that start of the string.
+- `textContainer`: The [`NSTextContainer`](nstextcontainer.md) that contains the source text.
 
 ## See Also
 

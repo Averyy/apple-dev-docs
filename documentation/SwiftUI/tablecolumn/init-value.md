@@ -26,7 +26,7 @@ This initializer creates a [`Text`](text.md) view for you, and treats the locali
 ## Parameters
 
 - `text`: The column’s label.
-- `value`: The path to the property associated with the column.   The table uses this to display the property as verbatim text in each   row of the table.
+- `value`: The path to the property associated with the column. The table uses this to display the property as verbatim text in each row of the table.
 
 ## See Also
 

@@ -19,6 +19,13 @@ object Assignment
 
 - [Subscribing to Notifications](subscribing-to-notifications.md)
 
+## Properties
+
+- `adamId` (string): The unique identifier for a product in the store.
+- `clientUserId` (string): The unique identifier for an active user in your organization.
+- `pricingParam` (string): The quality of a product in the store.
+- `serialNumber` (string): The unique identifier for a device in your organization.
+
 ## See Also
 
 - [object Asset](asset.md)

@@ -81,7 +81,10 @@ let observerQuery = HKObserverQuery(queryDescriptors: [stepDescriptor, pushDescr
 ## Parameters
 
 - `queryDescriptors`: An array of descriptors that specifies the types of samples the query returns.
-- `updateHandler`: A block that the system calls when a matching sample is saved to or deleted from the HealthKit store. This block takes the following parameters:
+- `updateHandler`: A block that the system calls when a matching sample is saved to or deleted from the HealthKit store. This block takes the following parameters: - **`query`**: A reference to the query calling this block.
+- **`sampleTypesAdded`**: A list of data types for all of the changed objects.
+- **`completionHandler`**: If you registered for background updates, call this completion handler as soon as you are done processing the incoming data. This handler tells HealthKit that you successfully received the background update. Additionally, call the completion handler only when you use background updates. For more information on using this completion handler, see [`HKObserverQueryCompletionHandler`](hkobserverquerycompletionhandler.md).
+- **error**: If an error occurs, an object describing the error; otherwise, it’s `nil`.
 
 ## See Also
 

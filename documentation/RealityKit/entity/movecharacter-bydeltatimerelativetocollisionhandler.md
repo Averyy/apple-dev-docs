@@ -32,7 +32,7 @@ Moves the character in the collision world, with continuous collision checking a
 
 - `moveDelta`: Delta vector to attempt to move capsule in collision world.
 - `deltaTime`: Time between last frame and current.
-- `referenceEntity`: Reference entity that defines the frame of reference of the move delta.   Can be  , which is equivalent to “world space”.
+- `referenceEntity`: Reference entity that defines the frame of reference of the move delta. Can be `nil`, which is equivalent to “world space”.
 - `collisionHandler`: Optional callback when an entity was hit. One call per each hit entity.
 
 ## See Also

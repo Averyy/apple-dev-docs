@@ -32,9 +32,9 @@ The following figure illustrates five `NSDateInterval` objects plotted on an arb
 
 ![None](https://docs-assets.developer.apple.com/published/f85a09eb2c779e75f6979bf07902e8e3/media-2556958%402x.png)
 
-The date intervals labeled  and  do not intersect, because the [`startDate`](nsdateinterval/startdate.md) of  occurs later than the [`endDate`](nsdateinterval/enddate.md) of .
+The date intervals labeled **A** and **B** do not intersect, because the [`startDate`](nsdateinterval/startdate.md) of **B** occurs later than the [`endDate`](nsdateinterval/enddate.md) of **A**.
 
-The date intervals  labeled  and  do intersect. The date interval labeled  represents the result of calculating the intersection between  and .
+The date intervals  labeled **C** and **D** do intersect. The date interval labeled **E** represents the result of calculating the intersection between **C** and **D**.
 
 ## Parameters
 

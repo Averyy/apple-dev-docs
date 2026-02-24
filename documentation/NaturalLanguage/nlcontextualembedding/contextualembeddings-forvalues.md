@@ -3,6 +3,8 @@
 **Framework**: Natural Language  
 **Kind**: method
 
+Returns contextual embedding models that match the specified language, script, or revision criteria.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

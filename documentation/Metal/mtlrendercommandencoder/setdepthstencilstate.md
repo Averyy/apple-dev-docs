@@ -28,7 +28,7 @@ Pass `nil` to clear the state from the previous call, which restores a state tha
 
 ## Parameters
 
-- `depthStencilState`: An instance that conforms to the   protocol.
+- `depthStencilState`: An instance that conforms to the [`MTLDepthStencilState`](mtldepthstencilstate.md) protocol.
 
 ## See Also
 

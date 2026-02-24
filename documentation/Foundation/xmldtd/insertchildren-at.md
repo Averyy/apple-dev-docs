@@ -17,7 +17,7 @@ func insertChildren(_ children: [XMLNode], at index: Int)
 
 ## Parameters
 
-- `children`: An array of   objects to insert as children of the receiver.
+- `children`: An array of [`XMLNode`](xmlnode.md) objects to insert as children of the receiver.
 - `index`: An integer identifying the location in the list of current children to make the insertion. The indices of subsequent children in the list are incremented by the number of inserted children.
 
 ## See Also

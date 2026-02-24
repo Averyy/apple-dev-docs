@@ -20,6 +20,10 @@ object ResultsResponse
 ### Dictionaries
 - [object ResultsResponse.Results](resultsresponse/results-data.dictionary.md)
 
+## Properties
+
+- `results` (ResultsResponse.Results) *(required)*
+
 ## See Also
 
 - [object UnauthorizedResponse](unauthorizedresponse.md)

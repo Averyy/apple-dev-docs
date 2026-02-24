@@ -26,7 +26,7 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `in_is_active`:   if the stream is enabled and performing I/O; otherwise,  .
+- `in_is_active`: `true` if the stream is enabled and performing I/O; otherwise, `false`.
 
 ## See Also
 

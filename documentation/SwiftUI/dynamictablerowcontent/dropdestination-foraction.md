@@ -58,7 +58,7 @@ var body: some View {
 ## Parameters
 
 - `payloadType`: Type of the models that are dropped.
-- `action`: A closure that SwiftUI invokes when elements are added to   the collection of rows.   The closure takes two arguments: The first argument is the   offset relative to the dynamic view’s underlying collection of data.   The second argument is an array of   items that   represents the data that you want to insert.
+- `action`: A closure that SwiftUI invokes when elements are added to the collection of rows. The closure takes two arguments: The first argument is the offset relative to the dynamic view’s underlying collection of data. The second argument is an array of `Transferable` items that represents the data that you want to insert.
 
 
 ---

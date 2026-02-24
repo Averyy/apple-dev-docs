@@ -32,7 +32,7 @@ See also [`CFURLCopyLastPathComponent(_:)`](cfurlcopylastpathcomponent(_:).md).
 
 ## Parameters
 
-- `url`: The   object to examine.
+- `url`: The `CFURL` object to examine.
 
 ## See Also
 

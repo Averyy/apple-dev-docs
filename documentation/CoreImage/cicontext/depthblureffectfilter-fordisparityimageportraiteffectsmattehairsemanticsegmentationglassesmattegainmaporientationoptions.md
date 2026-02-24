@@ -26,11 +26,11 @@ The receiver context is used to render the image in order to get the facial land
 ## Parameters
 
 - `image`: The image object to apply the depth blur effect to.
-- `disparityImage`: The auxiliary disparity image. For more information, see  .
-- `portraitEffectsMatte`: The auxiliary portrait effects matte image. For more information, see  .
-- `hairSemanticSegmentation`: The auxiliary semantic segmentation hair matte image. For more information, see  .
-- `glassesMatte`: The auxiliary glasses matte image. For more information, see  .
-- `gainMap`: The auxiliary gain map image. For more information, see  .
+- `disparityImage`: The auxiliary disparity image. For more information, see [`auxiliaryDisparity`](ciimageoption/auxiliarydisparity.md).
+- `portraitEffectsMatte`: The auxiliary portrait effects matte image. For more information, see [`auxiliaryPortraitEffectsMatte`](ciimageoption/auxiliaryportraiteffectsmatte.md).
+- `hairSemanticSegmentation`: The auxiliary semantic segmentation hair matte image. For more information, see [`auxiliarySemanticSegmentationHairMatte`](ciimageoption/auxiliarysemanticsegmentationhairmatte.md).
+- `glassesMatte`: The auxiliary glasses matte image. For more information, see [`auxiliarySemanticSegmentationGlassesMatte`](ciimageoption/auxiliarysemanticsegmentationglassesmatte.md).
+- `gainMap`: The auxiliary gain map image. For more information, see [`auxiliaryHDRGainMap`](ciimageoption/auxiliaryhdrgainmap.md).
 - `orientation`: The intended display orientation for the image.
 - `options`: Reserved for future use.
 

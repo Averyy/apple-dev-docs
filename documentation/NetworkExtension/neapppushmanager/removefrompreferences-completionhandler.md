@@ -19,7 +19,7 @@ func removeFromPreferences() async throws
 
 ## Parameters
 
-- `completionHandler`: A completion block that the framework calls after it removes the configuration. If removal failed, the   parameter indicates the reason for the failure; otherwise, this parameter is  .
+- `completionHandler`: A completion block that the framework calls after it removes the configuration. If removal failed, the `error` parameter indicates the reason for the failure; otherwise, this parameter is `nil`.
 
 ## See Also
 

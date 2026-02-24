@@ -10,9 +10,9 @@ ARKit requires iOS 11.0 or later and an iOS device with an A9 or later processor
 
 How to handle device compatibility support depends on how your app uses ARKit:
 
--  Add the `arkit` key in the [`UIRequiredDeviceCapabilities`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW3) section of your app’s `Info.plist` file. Using this key makes your app available only to ARKit-compatible devices.
--  Check for whether the current device supports the AR configuration you want to use by testing the [`isSupported`](arconfiguration/issupported.md) property of the appropriate [`ARConfiguration`](arconfiguration.md) subclass.
--  Face tracking requires the front-facing TrueDepth camera on iPhone X. Your app remains available on other devices, so you must test the [`ARFaceTrackingConfiguration`](arfacetrackingconfiguration.md).[`isSupported`](arconfiguration/issupported.md) property to determine face-tracking support on the current device.
+- **If the basic functionality of your app requires AR (using the back camera):** Add the `arkit` key in the [`UIRequiredDeviceCapabilities`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW3) section of your app’s `Info.plist` file. Using this key makes your app available only to ARKit-compatible devices.
+- **If augmented reality is a secondary feature of your app:** Check for whether the current device supports the AR configuration you want to use by testing the [`isSupported`](arconfiguration/issupported.md) property of the appropriate [`ARConfiguration`](arconfiguration.md) subclass.
+- **If your app uses face-tracking AR:** Face tracking requires the front-facing TrueDepth camera on iPhone X. Your app remains available on other devices, so you must test the [`ARFaceTrackingConfiguration`](arfacetrackingconfiguration.md).[`isSupported`](arconfiguration/issupported.md) property to determine face-tracking support on the current device.
 
 > 💡 **Tip**:  Check the [`isSupported`](arconfiguration/issupported.md) property before offering AR features in your app’s UI, so that users on unsupported devices aren’t disappointed by trying to access those features.
 

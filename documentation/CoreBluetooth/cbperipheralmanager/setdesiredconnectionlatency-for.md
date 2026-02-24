@@ -26,7 +26,7 @@ The latency of a peripheral-central connection controls how frequently the perip
 
 ## Parameters
 
-- `latency`: The desired connection latency. For a list of the possible connection latency values that you may set for the peripheral manager, see  .
+- `latency`: The desired connection latency. For a list of the possible connection latency values that you may set for the peripheral manager, see [`CBPeripheralManagerConnectionLatency`](cbperipheralmanagerconnectionlatency.md).
 - `central`: The central to which the peripheral manager is currently connected.
 
 ## See Also

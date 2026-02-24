@@ -57,8 +57,10 @@ struct AccessibilitySettings
 ### Creating an accessibility settings structure
 - [init()](accessibilitysettings/init.md)
 ### Type Properties
+- [static var isReduceHighlightingEffectsEnabled: Bool](accessibilitysettings/isreducehighlightingeffectsenabled.md)
 - [static var prefersActionSliderAlternative: Bool](accessibilitysettings/prefersactionslideralternative.md)
 - [static let prefersActionSliderAlternativeDidChangeNotification: NSNotification.Name](accessibilitysettings/prefersactionslideralternativedidchangenotification.md)
+- [static let reduceHighlightingEffectsEnabledDidChangeNotification: NSNotification.Name](accessibilitysettings/reducehighlightingeffectsenableddidchangenotification.md)
 - [static var showBordersEnabled: Bool](accessibilitysettings/showbordersenabled.md)
 - [static let showBordersEnabledStatusDidChangeNotification: NSNotification.Name](accessibilitysettings/showbordersenabledstatusdidchangenotification.md)
 ### Type Methods

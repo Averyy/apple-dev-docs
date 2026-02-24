@@ -31,7 +31,7 @@ In Objective-C, if the function returns an error free it with a call to [`CFRele
 ## Parameters
 
 - `certificate`: The certificate from which to copy the serial number.
-- `error`: A   pointer the function uses to return an error instance on failure. Set to   to ignore any error.
+- `error`: A [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) pointer the function uses to return an error instance on failure. Set to `nil` to ignore any error.
 
 
 ---

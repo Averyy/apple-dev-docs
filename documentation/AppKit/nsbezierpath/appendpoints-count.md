@@ -22,8 +22,8 @@ This method does not close the path that is created. If you wish to create a clo
 
 ## Parameters
 
-- `points`: A C-style array of   data types, each of which contains the end point of the next line segment.
-- `count`: The number of points in the   parameter.
+- `points`: A C-style array of `NSPoint` data types, each of which contains the end point of the next line segment.
+- `count`: The number of points in the `points` parameter.
 
 ## See Also
 

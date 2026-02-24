@@ -12,7 +12,7 @@ The iOS & iPadOS 16.4 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- Watch migration might fail when restoring a backup to a new phone. (105416351)  Unpair the watch from the source phone, then pair it to the destination phone.
+- Watch migration might fail when restoring a backup to a new phone. (105416351) **Workaround:** Unpair the watch from the source phone, then pair it to the destination phone.
 
 ##### Beta Enrollment for Iphone and Ipad
 
@@ -47,20 +47,20 @@ The iOS & iPadOS 16.4 SDK provides support to develop apps for iPhone and iPad r
 ###### Known Issues
 
 - The iOS device that initiates the pairing needs to be on the same iCloud account with the home hub. Only the owner of a home, not an invited user, can pair Matter accessories. (76012945)
-- You might receive an error when pairing a Matter accessory using the 11 digit setup code. (101554366)  Pair the accessory using the QR code instead.
-- When a manual software update is attempted on a Matter accessory with an available update, Home might not indicate that the update has been requested and continue to indicate an update is available. (104902918)  Check the Software Update pane in Home Settings at a later time, as the update might be taking place in the background. 
+- You might receive an error when pairing a Matter accessory using the 11 digit setup code. (101554366) **Workaround:** Pair the accessory using the QR code instead.
+- When a manual software update is attempted on a Matter accessory with an available update, Home might not indicate that the update has been requested and continue to indicate an update is available. (104902918) **Workaround:** Check the Software Update pane in Home Settings at a later time, as the update might be taking place in the background. 
 - The software update screen for Matter accessories might display the incorrect version number while an update is in progress. (105031569)
-- Right after pairing, an available firmware update is not offered in the Home app. (105757029)  Reboot all residents.
-- When there are multiple of the same accessory type updating to the same firmware or if there are back-to-back firmware versions for one accessory (during an incremental update), the new firmware update might not be offered. (105787380)  Reboot all residents or unpair the accessory and re-pair by clicking the “More options…” link to pair the accessory from there.
+- Right after pairing, an available firmware update is not offered in the Home app. (105757029) **Workaround:** Reboot all residents.
+- When there are multiple of the same accessory type updating to the same firmware or if there are back-to-back firmware versions for one accessory (during an incremental update), the new firmware update might not be offered. (105787380) **Workaround:** Reboot all residents or unpair the accessory and re-pair by clicking the “More options…” link to pair the accessory from there.
 - Software updates for Matter accessories might be offered again, even though the update already completed successfully.
-(106073031)  Restart your HomePod and Apple TV devices.
+(106073031) **Workaround:** Restart your HomePod and Apple TV devices.
 
 ##### Icloud Drive
 
 ###### Known Issues
 
-- Filesystem APIs such as `NSFileManager` might trigger materialization of dataless files and/or directory structures in iCloud Drive, leading to hangs or performance problems for the calling application. (105009536)  Avoid calling anything which performs I/O on the main thread. Adopt `UICollectionViewDataSourcePrefetching` and load cells asynchronously. I/O should be wrapped under `-[NSFileCoordinator coordinateAccessWithIntents:queue:byAccessor:]` to avoid blocking a thread on a synchronous call. Alternatively, opt out of this behavior by setting your IO policy to `IOPOL_MATERIALIZE_DATALESS_FILES_OFF` but expect that I/O might fail with `EDEADLK`, if any component of the path is dataless (`SF_DATALESS`).
-- iCloud Drive might become unresponsive when opened from the Files app. (105438692)  Restart your device.
+- Filesystem APIs such as `NSFileManager` might trigger materialization of dataless files and/or directory structures in iCloud Drive, leading to hangs or performance problems for the calling application. (105009536) **Workaround:** Avoid calling anything which performs I/O on the main thread. Adopt `UICollectionViewDataSourcePrefetching` and load cells asynchronously. I/O should be wrapped under `-[NSFileCoordinator coordinateAccessWithIntents:queue:byAccessor:]` to avoid blocking a thread on a synchronous call. Alternatively, opt out of this behavior by setting your IO policy to `IOPOL_MATERIALIZE_DATALESS_FILES_OFF` but expect that I/O might fail with `EDEADLK`, if any component of the path is dataless (`SF_DATALESS`).
+- iCloud Drive might become unresponsive when opened from the Files app. (105438692) **Workaround:** Restart your device.
 - A loading indicator might appear, and the contents of iCloud Drive might be inaccessible within the Files app. (106232492)
 
 ##### Keyboards
@@ -83,7 +83,7 @@ The iOS & iPadOS 16.4 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- When Advanced Data Protection for iCloud is turned on, Pages, Numbers, and Keynote might unexpectedly require collaborative documents to be closed. (103463223)  Close the affected document, spreadsheet, or presentation and reopen it after a few minutes.
+- When Advanced Data Protection for iCloud is turned on, Pages, Numbers, and Keynote might unexpectedly require collaborative documents to be closed. (103463223) **Workaround:** Close the affected document, spreadsheet, or presentation and reopen it after a few minutes.
 
 ##### Passkeys and Authentication Services
 

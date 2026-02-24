@@ -15,6 +15,11 @@ A dictionary that contains data roaming settings.
 object SettingsCommand.Command.Settings.DataRoaming
 ```
 
+## Properties
+
+- `Enabled` (boolean) *(required)*: If `true`, enable data roaming, which also enables voice roaming. If `false`, disable data roaming.
+- `Item` (string) *(required)*: A string that identifies this setting.
+
 ## See Also
 
 - [object SettingsCommand.Command.Settings.AccessibilitySettings](settingscommand/command-data.dictionary/settings-data.dictionary/accessibilitysettings-data.dictionary.md)

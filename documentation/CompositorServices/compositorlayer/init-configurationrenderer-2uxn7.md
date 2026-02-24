@@ -19,7 +19,7 @@ init(configuration: any CompositorLayerConfiguration = .default, renderer: @esca
 ## Parameters
 
 - `configuration`: The configuration to use when creating the LayerRenderer.
-- `renderer`: A closure that receives the layer to use when rendering   the content for the immersive space
+- `renderer`: A closure that receives the layer to use when rendering the content for the immersive space
 
 
 ---

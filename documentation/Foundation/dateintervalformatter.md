@@ -22,11 +22,41 @@ class DateIntervalFormatter
 
 #### Overview
 
-A [`DateIntervalFormatter`](dateintervalformatter.md) object creates user-readable strings from pairs of dates. Use a date interval formatter to create user-readable strings of the form  `-`  for your app’s interface, where  and  are date values that you supply. The formatter uses locale and language information, along with custom formatting options, to define the content of the resulting string. You can specify different styles for the date and time information in each date value.
+A [`DateIntervalFormatter`](dateintervalformatter.md) object creates user-readable strings from pairs of dates. Use a date interval formatter to create user-readable strings of the form *<start>* `-` *<end>* for your app’s interface, where *<start>* and *<end>* are date values that you supply. The formatter uses locale and language information, along with custom formatting options, to define the content of the resulting string. You can specify different styles for the date and time information in each date value.
 
 To use this class, create an instance, configure its properties, and call the [`string(from:to:)`](dateintervalformatter/string(from:to:).md) method to generate a string. The properties of this class let you configure the calendar and specify the style to apply to date and time values. Given a current date of January 16, 2015, Configuring the Formatter Options shows how to configure a formatter object and generate the string “1/16/15 - 1/17/15”.
 
 Configuring a formatter object
+
+**Swift**:
+
+```swift
+let formatter = DateIntervalFormatter()
+formatter.dateStyle = .short
+formatter.timeStyle = .none
+
+// Create two dates that are exactly 1 day apart.
+let startDate = Date()
+let endDate = Date(timeInterval: 86400, since: startDate)
+
+// Use the configured formatter to generate the string.
+let outputString = formatter.string(from: startDate, to: endDate)
+```
+
+**Objective-C**:
+
+```objc
+NSDateIntervalFormatter* formatter = [[NSDateIntervalFormatter alloc] init];
+formatter.dateStyle = NSDateIntervalFormatterShortStyle;
+formatter.timeStyle = NSDateIntervalFormatterNoStyle;
+ 
+// Create two dates that are exactly 1 day apart.
+NSDate* startDate = [NSDate date];
+NSDate* endDate = [NSDate dateWithTimeInterval:86400 sinceDate:startDate];
+ 
+// Use the configured formatter to generate the string.
+NSString* outputString = [formatter stringFromDate:startDate toDate:endDate];
+```
 
 > **Note**:  Always set to the [`dateStyle`](dateintervalformatter/datestyle.md) and [`timeStyle`](dateintervalformatter/timestyle.md) properties to appropriate values before generating any strings.
 

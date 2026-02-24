@@ -28,7 +28,7 @@ A valid [`MPSImagePyramid`](mpsimagepyramid.md) object or `nil`, if failure.
 - `device`: The device the filter will run on.
 - `kernelWidth`: The width of the filter kernel.
 - `kernelHeight`: The height of the filter kernel.
-- `kernelWeights`: A pointer to an array of   values to be used as the kernel. These values are in row-major order.
+- `kernelWeights`: A pointer to an array of `kernelWidth*kernelHeight` values to be used as the kernel. These values are in row-major order.
 
 ## See Also
 

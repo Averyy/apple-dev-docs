@@ -22,21 +22,31 @@ convenience init?(type activationType: MLCActivationType, a: Float)
 
 Use this initializer to create one of the following activation descriptors:
 
+- **CELU**: `f(x) = max(0, x) + min(0, a * (exp(x / a) − 1))`
+
 Activation type: [`MLCActivationType.celu`](mlcactivationtype/celu.md)
 
 For common behavior, set `a` to `1.0`.
+
+- **HardShrink**: `f(x) = x`, if `x > a` or `x < −a`, else `0`
 
 Activation type: [`MLCActivationType.hardShrink`](mlcactivationtype/hardshrink.md)
 
 For common behavior, set `a` to `0.5`.
 
+- **Parametric ELU**: `f(x) = x >= 0 ? x : a * (exp(x) - 1)`
+
 Activation type: [`MLCActivationType.elu`](mlcactivationtype/elu.md)
 
 For common behavior, set `a` to `1.0`.
 
+- **ReLU**: `f(x) = x >= 0 ? x : a * x`
+
 Activation type: [`MLCActivationType.relu`](mlcactivationtype/relu.md)
 
 This is also referred to as Leaky ReLU. Some literature defines classical ReLU as `max(0, x)`. If you want this common behavior, set `a` to `0.0`.
+
+- **SoftShrink**: `f(x) = x - a`, if `x > a, x + a`, if `x < −a`, else `0`
 
 Activation type: [`MLCActivationType.softShrink`](mlcactivationtype/softshrink.md)
 

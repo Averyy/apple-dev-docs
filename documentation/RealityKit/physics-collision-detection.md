@@ -6,13 +6,13 @@ Determine when entities collide with each other or the environment.
 
 #### Overview
 
-RealityKit can automatically detect when two objects participating in the physics system collide with each other if both entities have a [`CollisionComponent`](collisioncomponent.md) with at least one . Because doing collision detection with complex 3D models can be computationally expensive, collision shapes are simpler, invisible shapes RealityKit uses to detect collision, as well as doing hit testing, ray casts, and convex shape casts.
+RealityKit can automatically detect when two objects participating in the physics system collide with each other if both entities have a [`CollisionComponent`](collisioncomponent.md) with at least one *collision shape*. Because doing collision detection with complex 3D models can be computationally expensive, collision shapes are simpler, invisible shapes RealityKit uses to detect collision, as well as doing hit testing, ray casts, and convex shape casts.
 
-Entities can participate in the scene simulation in two different modes: as a  or as a . A rigid body fully participates in the collision simulation. It affects the velocity and direction of other rigid body entities with which it collides. An entity with a rigid body [`mode`](physicsbodycomponent/mode.md) of [`PhysicsBodyMode.dynamic`](physicsbodymode/dynamic.md), other rigid body entities can affect its velocity and direction. A trigger entity doesn’t have any impact on the other rigid bodies in the scene, but can trigger code or Reality Composer Pro behaviors when another rigid body entity overlaps it.
+Entities can participate in the scene simulation in two different modes: as a *rigid body* or as a *trigger*. A rigid body fully participates in the collision simulation. It affects the velocity and direction of other rigid body entities with which it collides. An entity with a rigid body [`mode`](physicsbodycomponent/mode.md) of [`PhysicsBodyMode.dynamic`](physicsbodymode/dynamic.md), other rigid body entities can affect its velocity and direction. A trigger entity doesn’t have any impact on the other rigid bodies in the scene, but can trigger code or Reality Composer Pro behaviors when another rigid body entity overlaps it.
 
 Turn an entity into a trigger by adding a [`CollisionComponent`](collisioncomponent.md) to it and setting its [`mode`](collisioncomponent/mode-swift.property.md) to [`CollisionComponent.Mode.trigger`](collisioncomponent/mode-swift.enum/trigger.md).
 
-Turn an entity into a  by adding a [`PhysicsBodyComponent`](physicsbodycomponent.md) to the entity in addition to a [`CollisionComponent`](collisioncomponent.md). The [`PhysicsBodyComponent`](physicsbodycomponent.md) defines the physical properties of the entity, such as its mass and collision shape.
+Turn an entity into a *rigid body* by adding a [`PhysicsBodyComponent`](physicsbodycomponent.md) to the entity in addition to a [`CollisionComponent`](collisioncomponent.md). The [`PhysicsBodyComponent`](physicsbodycomponent.md) defines the physical properties of the entity, such as its mass and collision shape.
 
 > **Note**: RealityKit ignores an entity’s collision component mode if the entity also has a [`PhysicsBodyComponent`](physicsbodycomponent.md). An entity can be a rigid body, or a trigger, but not both at the same time.
 

@@ -34,7 +34,7 @@ The behavior of a hit test depends on which `types` you specify and the order yo
 
 ## Parameters
 
-- `point`: A point in normalized image coordinate space. (The point   represents the top left corner of the image, and the point   represents the bottom right corner.)
+- `point`: A point in normalized image coordinate space. (The point `(0,0)` represents the top left corner of the image, and the point `(1,1)` represents the bottom right corner.)
 - `types`: The types of hit-test result to search for.
 
 ## See Also

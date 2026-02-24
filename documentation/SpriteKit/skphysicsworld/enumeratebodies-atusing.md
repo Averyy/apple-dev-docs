@@ -23,7 +23,8 @@ func enumerateBodies(at point: CGPoint, using block: @escaping (SKPhysicsBody, U
 ## Parameters
 
 - `point`: A point in scene coordinates.
-- `block`: A block to be called for each physics body that contains the point. The block takes the following parameters:
+- `block`: A block to be called for each physics body that contains the point. The block takes the following parameters: - **body**: The physics body that the ray intersected.
+- **stop**: A pointer to a Boolean variable. Your block can set this to [`true`](https://developer.apple.com/documentation/Swift/true) to terminate the enumeration.
 
 ## See Also
 

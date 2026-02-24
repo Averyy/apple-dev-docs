@@ -14,6 +14,12 @@ A Boolean value that allows an app to provide an optional Matter Setup payload w
 - visionOS 1.0+
 - watchOS 9.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 You may use this entitlement in the following ways:

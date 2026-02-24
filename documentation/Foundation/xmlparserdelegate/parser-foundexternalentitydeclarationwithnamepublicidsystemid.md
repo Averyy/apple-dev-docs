@@ -22,10 +22,10 @@ optional func parser(_ parser: XMLParser, foundExternalEntityDeclarationWithName
 
 ## Parameters
 
-- `parser`: An   object parsing XML.
+- `parser`: An `NSXMLParser` object parsing XML.
 - `name`: A string that is the name of an entity.
-- `publicID`: A string that specifies the public ID associated with  .
-- `systemID`: A string that specifies the system ID associated with  .
+- `publicID`: A string that specifies the public ID associated with `entityName`.
+- `systemID`: A string that specifies the system ID associated with `entityName`.
 
 ## See Also
 

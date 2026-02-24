@@ -9,6 +9,10 @@ A hyperlink to a webpage that displays the privacy policy for your app’s resea
 - iOS 14.0+
 - iPadOS 14.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 When your app attempts to read sensor information for the first time on a user’s device, the system presents a sheet that displays a link to your app’s privacy policy. Users approve or deny your app’s ability to read private sensor information based on their assessment of your app’s privacy policy.

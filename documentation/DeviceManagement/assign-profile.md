@@ -25,6 +25,10 @@ To avoid performance issues, limit requests to 1000 devices at a time.
 - [object AssignProfileResponse](assignprofileresponse.md)
 - [object AssignProfileResponse.Devices](assignprofileresponse/devices-data.dictionary.md)
 
+## Endpoint
+
+`POST https://mdmenrollment.apple.com/profile/devices`
+
 ## Request Body
 
 The request for assigning a profile to a set of devices.

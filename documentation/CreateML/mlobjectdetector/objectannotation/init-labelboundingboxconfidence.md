@@ -22,7 +22,7 @@ Don’t use this initializer to create an object annotation yourself. The object
 
 - `label`: The name of the item.
 - `boundingBox`: The location of the item in an image.
-- `confidence`: The confidence score of the item in the image. The value must be in the range  ,   where   is the most confident.
+- `confidence`: The confidence score of the item in the image. The value must be in the range `[0.0, 1.0]`, where `1.0` is the most confident.
 
 
 ---

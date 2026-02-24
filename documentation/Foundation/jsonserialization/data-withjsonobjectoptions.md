@@ -34,8 +34,8 @@ Setting the [`prettyPrinted`](jsonserialization/writingoptions/prettyprinted.md)
 
 ## Parameters
 
-- `obj`: The object from which to generate JSON data. Must not be  .
-- `opt`: See   for possible values.
+- `obj`: The object from which to generate JSON data. Must not be `nil`.
+- `opt`: Options for creating the JSON data. See [`JSONSerialization.WritingOptions`](jsonserialization/writingoptions.md) for possible values.
 
 ## See Also
 

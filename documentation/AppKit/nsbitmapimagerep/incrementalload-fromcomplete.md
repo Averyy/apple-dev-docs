@@ -37,7 +37,7 @@ To cancel decompression, just pass in the existing data or `nil` and [`true`](ht
 ## Parameters
 
 - `data`: A data object that contains the image to be loaded.
-- `complete`:   if the image is entirely downloaded,   otherwise.
+- `complete`: [`true`](https://developer.apple.com/documentation/Swift/true) if the image is entirely downloaded, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

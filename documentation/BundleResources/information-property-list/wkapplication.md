@@ -6,6 +6,10 @@
 **Availability**:
 - watchOS 7.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [LSMinimumSystemVersion](information-property-list/lsminimumsystemversion.md)

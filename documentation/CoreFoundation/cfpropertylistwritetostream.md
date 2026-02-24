@@ -36,8 +36,8 @@ This function leaves the stream open after reading the content. When reading a p
 
 - `propertyList`: The property list to write out.
 - `stream`: The stream to write to. The stream must be opened and configured—this function simply writes bytes to the stream.
-- `format`: A constant that specifies the format used to write  . See   for possible values.
-- `errorString`: Pass   if you do not wish to receive an error string. Ownership follows the  .
+- `format`: A constant that specifies the format used to write `propertyList`. See [`CFPropertyListFormat`](cfpropertylistformat.md) for possible values.
+- `errorString`: On return, `NULL` if the conversion is successful, otherwise a string that describes the nature of the errors. Error messages are not localized, but may be in the future, so they are not currently suitable for comparison. Pass `NULL` if you do not wish to receive an error string. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 

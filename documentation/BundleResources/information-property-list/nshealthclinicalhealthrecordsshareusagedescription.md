@@ -10,6 +10,10 @@ A message to the user that explains why the app requested permission to read cli
 - iPadOS 12.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the user’s clinical records.

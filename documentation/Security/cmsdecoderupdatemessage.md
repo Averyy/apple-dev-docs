@@ -24,7 +24,7 @@ This function can be called multiple times. Call the `CMSDecoderFinalizeMessage`
 
 ## Parameters
 
-- `cmsDecoder`: The CMSDecoder reference returned by the   function.
+- `cmsDecoder`: The CMSDecoder reference returned by the `CMSDecoderCreate` function.
 - `msgBytes`: A pointer to the data to be decoded.
 - `msgBytesLen`: The length of the data, in bytes.
 

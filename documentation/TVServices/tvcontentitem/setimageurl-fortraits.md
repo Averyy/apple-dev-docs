@@ -18,7 +18,7 @@ The preferred file format for this image is a layered image file that provides t
 
 ## Parameters
 
-- `aURL`: The URL corresponding to the image location. This parameter can be an absolute path on the local device or an HTTP path. Specify   to remove the image associated with the given traits.
+- `aURL`: The URL corresponding to the image location. This parameter can be an absolute path on the local device or an HTTP path. Specify `nil` to remove the image associated with the given traits.
 - `traits`: The traits to associate with the image. For example, you might specify that the image applies only to dark interfaces.
 
 ## See Also

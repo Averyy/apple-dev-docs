@@ -38,8 +38,8 @@ The `allocator` parameter controls vertex data allocation for the mesh. For exam
 - `radialSegments`: The number of points to generate around the horizontal circumference of the cylinder (that is, its cross-section in the xz-plane). A larger number of points increases rendering fidelity but decreases rendering performance.
 - `verticalSegments`: The number of points to generate along the height of the cylinder. A larger number of points increases rendering fidelity but decreases rendering performance.
 - `geometryType`: The type of geometric primitive from which to construct the mesh; must be triangles.
-- `inwardNormals`:   to generate normal vectors pointing toward the central axis of the cylinder;   to generate normal vectors pointing outward.
-- `allocator`: An object responsible for allocating mesh vertex data. If  , Model I/O  uses an internal allocator object.
+- `inwardNormals`: [`true`](https://developer.apple.com/documentation/Swift/true) to generate normal vectors pointing toward the central axis of the cylinder; [`false`](https://developer.apple.com/documentation/Swift/false) to generate normal vectors pointing outward.
+- `allocator`: An object responsible for allocating mesh vertex data. If `nil`, Model I/O  uses an internal allocator object.
 
 ## See Also
 

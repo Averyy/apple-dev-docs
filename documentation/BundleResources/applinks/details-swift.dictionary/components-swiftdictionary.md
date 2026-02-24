@@ -25,6 +25,14 @@ Use this object to define whether an associated app can open specific URLs in th
 
 The object optionally contains any of these keys:
 
+- **`/`**: The pattern to match with the URL path component. The default is `*`, which matches everything.
+- **`?`**: The pattern or dictionary to match with the URL query component. The default is `*`, which matches everything.
+- **`#`**: The pattern to match with the URL fragment component. The default is `*`, which matches everything.
+- **`exclude`**: A Boolean value that indicates whether to stop pattern matching and prevent the universal link from opening if the URL matches the associated pattern. The default is `false`.
+- **`comment`**: Text that the system ignores. Use this to provide information about the URLs a pattern matches.
+- **`caseSensitive`**: A Boolean value that indicates whether pattern matching is case-sensitive. The default is `true`.
+- **`percentEncoded`**: A Boolean value that indicates whether URLs are percent-encoded. The default is `true`.
+
 The order that you use to specify the patterns in the array determines the order the system follows when looking for a match. The first match wins, allowing you to designate one app to handle specified URLs in your website, and another app to handle the rest.
 
 You can also use the following wildcards in your URL pattern-matching definitions:
@@ -35,7 +43,7 @@ You can also use the following wildcards in your URL pattern-matching definition
 
 In addition, you can use `?*` to match one or more characters (that is, at least one character).
 
-A match occurs when a URL matches  the components that a `components` object specifies. The following example code matches all URLs with a path of `abc` and a query of `def`.
+A match occurs when a URL matches *all* the components that a `components` object specifies. The following example code matches all URLs with a path of `abc` and a query of `def`.
 
 ```javascript
 {
@@ -62,6 +70,16 @@ This example code shows another components object in an association file:
 ### Query dictionaries
 - [object applinks.Details.Components.Query](applinks/details-swift.dictionary/components-swift.dictionary/query.md)
   A dictionary of names and values to match with query items in a URL.
+
+## Properties
+
+- `#` (string)
+- `/` (string)
+- `?` ((string | applinks.Details.Components.Query))
+- `caseSensitive` (boolean)
+- `comment` (string)
+- `exclude` (boolean)
+- `percentEncoded` (boolean)
 
 
 ---

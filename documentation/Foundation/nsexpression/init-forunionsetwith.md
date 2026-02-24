@@ -26,8 +26,8 @@ An new `NSExpression` object that represents the union of `left` and `right`.
 
 ## Parameters
 
-- `left`: An expression that evaluates to an   object.
-- `right`: An expression that evaluates to a collection object (an instance of  ,  , or  ).
+- `left`: An expression that evaluates to an `NSSet` object.
+- `right`: An expression that evaluates to a collection object (an instance of `NSArray`, `NSSet`, or `NSDictionary`).
 
 ## See Also
 

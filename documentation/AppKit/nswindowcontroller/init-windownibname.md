@@ -20,7 +20,7 @@ Sets the owner of the nib file to the receiver. The default initialization turns
 
 ## Parameters
 
-- `windowNibName`: The name of the nib file (minus the “ ” extension) that archives the receiver’s window; cannot be  .
+- `windowNibName`: The name of the nib file (minus the “`.nib`” extension) that archives the receiver’s window; cannot be `nil`.
 
 ## See Also
 

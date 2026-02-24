@@ -3,7 +3,7 @@
 **Framework**: Natural Language  
 **Kind**: method
 
-Iterates over the embedding vectors for the range you specify.
+Iterates over the embedding vectors corresponding to the subword tokens within the specified range of the input string.
 
 **Availability**:
 - iOS 17.0+
@@ -21,10 +21,20 @@ Iterates over the embedding vectors for the range you specify.
 func enumerateTokenVectors(in range: Range<String.Index>, using block: ([Double], Range<String.Index>) -> Bool)
 ```
 
+#### Discussion
+
+Use this method to access the individual (subword) token embeddings. You can apply pooling or combination techniques to aggregate these subword vectors into a single representation for a word, phrase, or entire input.
+
+Common pooling techniques include:
+
+- Mean pooling to take the average of subword vectors.
+- Max pooling for finding the element-wise maximum across tokens.
+- Use the embeddings of the first or last subword tokens to represent the entire input.
+
 ## Parameters
 
 - `range`: The range in the string to enumerate.
-- `block`: A block that contains the token vectors and the token’s range.
+- `block`: A block that contains each token’s embedding vector and its corresponding character range in the string.
 
 ## See Also
 

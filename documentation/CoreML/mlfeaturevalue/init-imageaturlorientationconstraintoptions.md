@@ -22,10 +22,10 @@ convenience init(imageAtURL url: URL, orientation: CGImagePropertyOrientation, c
 
 ## Parameters
 
-- `url`: A   (Swift) or   (Objective-C) to an image.
-- `orientation`: A   instance.
-- `constraint`: An   instance.
-- `options`: A dictionary of   values, each keyed by  .
+- `url`: A [`URL`](https://developer.apple.com/documentation/Foundation/URL) (Swift) or [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) (Objective-C) to an image.
+- `orientation`: A [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/CGImagePropertyOrientation) instance.
+- `constraint`: An [`MLImageConstraint`](mlimageconstraint.md) instance.
+- `options`: A dictionary of [`VNImageCropAndScaleOption`](https://developer.apple.com/documentation/Vision/VNImageCropAndScaleOption) values, each keyed by [`MLFeatureValue.ImageOption`](mlfeaturevalue/imageoption.md).
 
 ## See Also
 

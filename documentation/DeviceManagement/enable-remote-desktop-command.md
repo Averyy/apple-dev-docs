@@ -32,6 +32,41 @@ Refer to the following sections to determine supported channels and requirements
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>RequestType</key>
+        <string>EnableRemoteDesktop</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_EnableRemoteDesktop</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_EnableRemoteDesktop</string>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>E84CD517-CB37-52F7-988C-DB5137B604B8</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -39,6 +74,10 @@ Refer to the following sections to determine supported channels and requirements
   The command to enable Remote Desktop on a device.
 - [object EnableRemoteDesktopResponse](enableremotedesktopresponse.md)
   A response from the device after it processes the command to enable Remote Desktop on a device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

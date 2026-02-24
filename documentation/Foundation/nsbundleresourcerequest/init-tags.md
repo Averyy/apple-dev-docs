@@ -25,7 +25,7 @@ The initialized resource request.
 
 ## Parameters
 
-- `tags`: A set of strings, with each string specifying a tag assigned to resources stored in the main bundle. The value must not be  .
+- `tags`: A set of strings, with each string specifying a tag assigned to resources stored in the main bundle. The value must not be `nil`.
 
 ## See Also
 

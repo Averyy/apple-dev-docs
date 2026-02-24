@@ -36,6 +36,10 @@ object StatusAccountListMailOutgoing
 - [object StatusAccountListMailOutgoingAccountObject](statusaccountlistmailoutgoingaccountobject.md)
   A status report of the client’s outgoing Mail account details.
 
+## Properties
+
+- `account.list.mail.outgoing` ([StatusAccountListMailOutgoingAccountObject]) *(required)*: A list of status values for the outgoing Mail accounts.
+
 ## See Also
 
 - [object StatusAccountListCalDAV](statusaccountlistcaldav.md)

@@ -27,7 +27,7 @@ If either the `x` or `y` value of the returned point is non-zero, then the scrol
 
 ## Parameters
 
-- `view`: The view in which to find the scroll amount. Pass   to get the amount in the window’s coordinate system.
+- `view`: The view in which to find the scroll amount. Pass `nil` to get the amount in the window’s coordinate system.
 
 ## See Also
 

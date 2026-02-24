@@ -44,7 +44,7 @@ Use this function to access each individual planar pixel buffer of a multiple-pl
 
 ## Parameters
 
-- `body`: A closure with an array   parameter that points to the underlying pixel buffers.
+- `body`: A closure with an array [`vImage.PixelBuffer`](vimage/pixelbuffer.md) parameter that points to the underlying pixel buffers.
 
 ## See Also
 

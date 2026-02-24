@@ -26,8 +26,8 @@ The user explicitly grants access only to items they choose, so photo library ac
 
 - `isPresented`: The binding to whether the Photos picker should be shown.
 - `selection`: The item being shown and selected in the Photos picker.
-- `filter`: Types of items that can be shown. Default is  . Setting it to   means all supported types can be shown.
-- `preferredItemEncoding`: The encoding disambiguation policy of the selected item. Default is  . Setting it to   means the best encoding determined by the system will be used.
+- `filter`: Types of items that can be shown. Default is `nil`. Setting it to `nil` means all supported types can be shown.
+- `preferredItemEncoding`: The encoding disambiguation policy of the selected item. Default is `.automatic`. Setting it to `.automatic` means the best encoding determined by the system will be used.
 
 ## See Also
 

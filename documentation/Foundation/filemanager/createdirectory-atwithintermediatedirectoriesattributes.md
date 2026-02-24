@@ -34,9 +34,9 @@ If you want to specify a relative path for url, you must set the current working
 
 ## Parameters
 
-- `url`: A file URL that specifies the directory to create. If you want to specify a relative path, you must set the current working directory before creating the corresponding   object. This parameter must not be  .
-- `createIntermediates`: If  , this method creates any nonexistent parent directories as part of creating the directory in  . If  , this method fails if any of the intermediate parent directories does not exist.
-- `attributes`: The file attributes for the new directory. You can set the owner and group numbers, file permissions, and modification date. If you specify   for this parameter, the directory is created according to the umask(2) macOS Developer Tools Manual Page of the process. The Supporting Types section lists the global constants used as keys in the   dictionary. Some of the keys, such as   and  , do not apply to directories.
+- `url`: A file URL that specifies the directory to create. If you want to specify a relative path, you must set the current working directory before creating the corresponding [`NSURL`](nsurl.md) object. This parameter must not be `nil`.
+- `createIntermediates`: If [`true`](https://developer.apple.com/documentation/Swift/true), this method creates any nonexistent parent directories as part of creating the directory in `url`. If [`false`](https://developer.apple.com/documentation/Swift/false), this method fails if any of the intermediate parent directories does not exist.
+- `attributes`: The file attributes for the new directory. You can set the owner and group numbers, file permissions, and modification date. If you specify `nil` for this parameter, the directory is created according to the umask(2) macOS Developer Tools Manual Page of the process. The Supporting Types section lists the global constants used as keys in the `attributes` dictionary. Some of the keys, such as [`hfsCreatorCode`](fileattributekey/hfscreatorcode.md) and [`hfsTypeCode`](fileattributekey/hfstypecode.md), do not apply to directories.
 
 ## See Also
 

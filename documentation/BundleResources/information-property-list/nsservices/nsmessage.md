@@ -8,6 +8,10 @@ An instance method that invokes the service.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [NSKeyEquivalent](information-property-list/nsservices/nskeyequivalent.md)

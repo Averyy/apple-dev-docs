@@ -31,7 +31,7 @@ This method is the same as [`perform(_:)`](nsobjectprotocol/perform(_:).md) exce
 
 ## Parameters
 
-- `aSelector`: A selector identifying the message to send. If   is  , an   is raised.
+- `aSelector`: A selector identifying the message to send. If `aSelector` is `NULL`, an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) is raised.
 - `object1`: An object that is the first argument of the message.
 - `object2`: An object that is the second argument of the message
 

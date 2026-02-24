@@ -27,7 +27,7 @@ Requesting ownership isn’t guaranteed to succeed.
 ## Parameters
 
 - `timeout`: A time in seconds to wait before giving up.
-- `callback`: A closure that the method calls when the request completes   or times out.
+- `callback`: A closure that the method calls when the request completes or times out.
 
 ## See Also
 

@@ -49,10 +49,10 @@ do {
 
 ## Parameters
 
-- `documentData`: The CDA document in an XML format that meets the CDA standard. For more information on the CDA document format, see the   standard.
-- `startDate`: A fallback start date for the sample. This date is only used when the XML document does not include the document’s effective date.   This date must be equal to or earlier than the end date; otherwise, this method throws an exception ( ).
-- `endDate`: A fallback end date for the sample. This date is only used when the XML document does not include the document’s effective date.   This date must be equal to or later than the start date; otherwise, this method throws an exception ( ).
-- `metadata`: Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the sample’s capabilities.
+- `documentData`: The CDA document in an XML format that meets the CDA standard. For more information on the CDA document format, see the [`Clinical Document Architecture, R2`](https://developer.apple.comhttp://www.hl7.org/implement/standards/product_brief.cfm?product_id=7) standard.
+- `startDate`: A fallback start date for the sample. This date is only used when the XML document does not include the document’s effective date. This date must be equal to or earlier than the end date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
+- `endDate`: A fallback end date for the sample. This date is only used when the XML document does not include the document’s effective date. This date must be equal to or later than the start date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
+- `metadata`: The metadata dictionary contains extra information describing this sample. The dictionary’s keys are all [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects. The values may be [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects, or [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) objects. For a complete list of predefined metadata keys, see Metadata Keys in [`HealthKit Constants`](healthkit-constants.md). Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the sample’s capabilities.
 
 ## See Also
 

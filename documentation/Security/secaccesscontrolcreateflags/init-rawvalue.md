@@ -22,7 +22,7 @@ init(rawValue: CFOptionFlags)
 
 ## Parameters
 
-- `rawValue`: The logical   of one or more of the defined access flags values.
+- `rawValue`: The logical `OR` of one or more of the defined access flags values.
 
 
 ---

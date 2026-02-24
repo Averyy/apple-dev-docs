@@ -34,7 +34,7 @@ Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of 
 
 - `accelerationStructure`: Acceleration structure storage to build into.
 - `descriptor`: A descriptor for the acceleration structure Metal builds.
-- `scratchBuffer`: Scratch buffer Metal can use while building the acceleration structure.   Metal may overwrite the contents of this buffer, and you should consider   them “undefined” after the refit operation starts and completes.
+- `scratchBuffer`: Scratch buffer Metal can use while building the acceleration structure. Metal may overwrite the contents of this buffer, and you should consider them “undefined” after the refit operation starts and completes.
 
 
 ---

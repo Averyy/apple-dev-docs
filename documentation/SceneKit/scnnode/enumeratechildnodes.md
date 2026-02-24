@@ -26,7 +26,8 @@ SceneKit uses a recursive preorder traversal to process the child node subtree�
 
 ## Parameters
 
-- `block`: The block to apply to the node’s child and descendant nodes.
+- `block`: The block to apply to the node’s child and descendant nodes. - The block takes two parameters:
+- - **child**: The child node currently being evaluated. - **stop**: A reference to a Boolean value. Set `*stop` to [`true`](https://developer.apple.com/documentation/Swift/true) in the block to abort further processing of the child node subtree.
 
 ## See Also
 

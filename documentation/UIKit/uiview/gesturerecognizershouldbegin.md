@@ -34,7 +34,7 @@ The default implementation of this method returns [`true`](https://developer.app
 
 ## Parameters
 
-- `gestureRecognizer`: The gesture recognizer that’s attempting to transition out of the   state.
+- `gestureRecognizer`: The gesture recognizer that’s attempting to transition out of the [`UIGestureRecognizer.State.possible`](uigesturerecognizer/state-swift.enum/possible.md) state.
 
 ## See Also
 

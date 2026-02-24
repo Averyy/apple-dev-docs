@@ -24,7 +24,7 @@ The system only calls this method when it’s about to automatically dismiss the
 
 ## Parameters
 
-- `searchController`: The   object to dismiss.
+- `searchController`: The [`UISearchController`](uisearchcontroller.md) object to dismiss.
 
 ## See Also
 

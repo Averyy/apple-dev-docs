@@ -37,7 +37,7 @@ Store the completion block and call it after you finish processing the location 
 ## Parameters
 
 - `payload`: The payload containing the location push.
-- `completion`: Execute this block as quickly as possible after you finish the location-related task. If you take too long to execute this block, the system calls the   method as a warning. If you still don’t call the block in a timely manner, the system terminates your app extension.
+- `completion`: The block to execute after you receive and process the device’s location. This block has no return value and no parameters. Execute this block as quickly as possible after you finish the location-related task. If you take too long to execute this block, the system calls the [`serviceExtensionWillTerminate()`](cllocationpushserviceextension/serviceextensionwillterminate().md) method as a warning. If you still don’t call the block in a timely manner, the system terminates your app extension.
 
 
 ---

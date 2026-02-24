@@ -29,7 +29,7 @@ DriverKit creates a default dispatch queue for every service. To replace the def
 
 ## Parameters
 
-- `name`: The name to assign to the queue. Use this name with the   macro to designate where you want the methods of your class to execute. Include that macro at the end of your method signature methods in the   file of your class.
+- `name`: The name to assign to the queue. Use this name with the [`QUEUENAME`](queuename.md) macro to designate where you want the methods of your class to execute. Include that macro at the end of your method signature methods in the `.iig` file of your class.
 - `queue`: The queue to associate with the service. The service retains the queue you provide.
 
 ## See Also

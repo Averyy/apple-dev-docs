@@ -8,6 +8,12 @@ A Boolean value that indicates whether the app supports HDR mode on Apple TV 4K.
 **Availability**:
 - tvOS 11.2+
 
+
+
+**Type**: boolean
+
+**Default**: `YES`
+
 #### Discussion
 
 If you set this key to `YES`, Apple TV 4K remains in HDR mode when launching the app. If you set this key to `NO`, Apple TV switches to SDR mode before launching the app, and switches back to HDR mode after the app resigns. The default value for this key is `YES`.

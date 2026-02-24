@@ -6,7 +6,7 @@ Add code to quickly confirm a person’s physical location while respecting thei
 
 #### Overview
 
-If you create an App Clip that people invoke at a physical location, you may need to confirm a person’s location before allowing them to perform a task. For a quick launch and to preserve user privacy, App Clips use a lightweight mechanism in which the system verifies that a person is at a specific, expected location. When you adopt this mechanism, and when people allow it, the  contains a note that tells people that the App Clip can verify their location. They can disable location verification by tapping the note on the App Clip card.
+If you create an App Clip that people invoke at a physical location, you may need to confirm a person’s location before allowing them to perform a task. For a quick launch and to preserve user privacy, App Clips use a lightweight mechanism in which the system verifies that a person is at a specific, expected location. When you adopt this mechanism, and when people allow it, the *App Clip card* contains a note that tells people that the App Clip can verify their location. They can disable location verification by tapping the note on the App Clip card.
 
 ![An App Clip card for an App Clip that can verify a person’s physical location.](https://docs-assets.developer.apple.com/published/d773856b76aed89637fa2614ece50117/enabling-app-clips-card-location%402x.png)
 

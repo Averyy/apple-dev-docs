@@ -20,6 +20,11 @@ Core Location provides services that determine a device’s geographic location,
 
 You use instances of the [`CLLocationManager`](cllocationmanager.md) class to configure, start, and stop the Core Location services. A location manager object supports the following location-related activities:
 
+- **Standard and significant location updates**: Track large or small changes in the user’s current location with a configurable degree of accuracy.
+- **Region monitoring**: Monitor distinct regions of interest and generate location events when the user enters or leaves those regions.
+- **Beacon ranging**: Detect and locate nearby beacons.
+- **Compass headings**: Report heading changes from the onboard compass.
+
 To use location services, call [`liveUpdates(_:)`](cllocationupdate/liveupdates(_:).md) to obtain an update stream, then asynchronously iterate over that stream to receive and process location updates, and receive diagnostic properties to understand if and why location updates don’t arrive.
 
 If needed, the system prompts the user to grant or deny the request. An initial prompt is shown in the example below:

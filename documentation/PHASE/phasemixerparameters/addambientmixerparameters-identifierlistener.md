@@ -22,7 +22,7 @@ func addAmbientMixerParameters(identifier: String, listener: PHASEListener)
 ## Parameters
 
 - `identifier`: The name of the spatial submixer.
-- `listener`: An object that receives a source audio signal. The mixer orients the sound the listener receives based on its  .
+- `listener`: An object that receives a source audio signal. The mixer orients the sound the listener receives based on its [`transform`](phaseobject/transform.md).
 
 ## See Also
 

@@ -26,7 +26,7 @@ For more information on loading entities, see [`Loading entities from a file`](l
 ## Parameters
 
 - `url`: The location of a file that represents an entity.
-- `resourceName`: A unique name the method assigns to the resource it loads,   for use in network synchronization.
+- `resourceName`: A unique name the method assigns to the resource it loads, for use in network synchronization.
 
 ## See Also
 

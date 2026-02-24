@@ -22,8 +22,8 @@ func scaledTanh(alpha: Float, beta: Float) -> BNNSGraph.Builder.Tensor<T>
 
 ## Parameters
 
-- `alpha`: The   value.
-- `beta`: The   value.
+- `alpha`: The `alpha` value.
+- `beta`: The `beta` value.
 
 
 ---

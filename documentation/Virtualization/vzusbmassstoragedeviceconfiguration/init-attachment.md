@@ -16,7 +16,7 @@ init(attachment: VZStorageDeviceAttachment)
 
 ## Parameters
 
-- `attachment`: A   object.
+- `attachment`: A [`VZStorageDeviceAttachment`](vzstoragedeviceattachment.md) object.
 
 
 ---

@@ -26,7 +26,7 @@ A new [`MTLAccelerationStructure`](mtlaccelerationstructure.md) instance if the 
 
 ## Parameters
 
-- `descriptor`: An   instance.
+- `descriptor`: An [`MTLAccelerationStructureDescriptor`](mtlaccelerationstructuredescriptor.md) instance.
 
 ## See Also
 

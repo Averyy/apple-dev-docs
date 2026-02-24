@@ -22,7 +22,7 @@ var kAudioSessionProperty_OverrideCategoryMixWithOthers: Int { get }
 
 A read/write `UInt32` value. By default, the value of this property is `FALSE` (`0`).
 
-Setting this property to `TRUE` (any nonzero value) allows audio mixing with other apps. Other aspects of these categories, such as their Silent switch behavior, are not affected. (The switch is called the  on iPhone.)
+Setting this property to `TRUE` (any nonzero value) allows audio mixing with other apps. Other aspects of these categories, such as their Silent switch behavior, are not affected. (The switch is called the *Ring/Silent switch* on iPhone.)
 
 When the audio session category changes, such as during an interruption, the value of this property reverts to `FALSE`. To regain mixing behavior you must then re-set this property.
 

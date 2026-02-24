@@ -76,6 +76,26 @@ For example, before retrieving a new drawable, you might perform other work on t
 
 Don’t release the drawable explicitly; instead, embed your render loop within an autorelease pool block:
 
+**Swift**:
+
+```swift
+func draw(in view: MTKView) {
+    autoreleasepool {
+        render(view: view)
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)drawInMTKView:(MTKView *)view {
+    @autoreleasepool {
+        [self render:view];
+    }
+}
+```
+
 This block releases drawables promptly and avoids possible deadlock situations with multiple drawables. Release drawables as soon as possible after committing your onscreen render pass.
 
 > **Note**:  As of iOS 10 and tvOS 10, you can safely retain a drawable to query its properties, such as [`drawableID`](https://developer.apple.com/documentation/Metal/MTLDrawable/drawableID) and [`presentedTime`](https://developer.apple.com/documentation/Metal/MTLDrawable/presentedTime), after the system has presented it. If you don’t need to query these properties, release the drawable when you no longer need it.

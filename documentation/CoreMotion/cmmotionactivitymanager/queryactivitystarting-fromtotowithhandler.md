@@ -25,10 +25,10 @@ The system stores only the last seven days worth of activity data at most. If th
 
 ## Parameters
 
-- `start`: The start time to use when gathering motion data. This parameter must not be  .
-- `end`: The end time to use when gathering motion data. This parameter must not be  .
-- `queue`: The operation queue on which to execute the specified   block. You can specify a custom queue or use the operation queue associated with your app’s main thread. This parameter must not be  .
-- `handler`: The block to execute with the results. For information about the parameters of this block, see  . This parameter must not be  .
+- `start`: The start time to use when gathering motion data. This parameter must not be `nil`.
+- `end`: The end time to use when gathering motion data. This parameter must not be `nil`.
+- `queue`: The operation queue on which to execute the specified `handler` block. You can specify a custom queue or use the operation queue associated with your app’s main thread. This parameter must not be `nil`.
+- `handler`: The block to execute with the results. For information about the parameters of this block, see [`CMMotionActivityQueryHandler`](cmmotionactivityqueryhandler.md). This parameter must not be `nil`.
 
 ## See Also
 

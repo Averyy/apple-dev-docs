@@ -15,6 +15,10 @@ Notify Apple’s servers that your organization no longer owns the specified dev
 - [object DeviceStatusResponse](devicestatusresponse.md)
 - [object DeviceStatusResponse.Devices](devicestatusresponse/devices-data.dictionary.md)
 
+## Endpoint
+
+`POST https://mdmenrollment.apple.com/devices/disown`
+
 ## Request Body
 
 The request for a list of devices.

@@ -27,7 +27,7 @@ If a destination directory is not given the file is opened in place, falling bac
 ## Parameters
 
 - `contentType`: A content type of the returned data.
-- `destinationDirectory`: The directory the file should be copied to,   if no directory is provided the file is opened in place.
+- `destinationDirectory`: The directory the file should be copied to, if no directory is provided the file is opened in place.
 
 
 ---

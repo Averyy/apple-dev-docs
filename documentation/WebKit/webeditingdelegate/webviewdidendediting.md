@@ -16,7 +16,7 @@ optional func webViewDidEndEditing(_ notification: Notification!)
 
 ## Parameters
 
-- `notification`: Always set to  . You can retrieve the   object by sending   to  .
+- `notification`: Always set to [`WebViewDidEndEditingNotification`](webviewdidendeditingnotification.md). You can retrieve the `WebView` object by sending `object` to `notification`.
 
 ## See Also
 

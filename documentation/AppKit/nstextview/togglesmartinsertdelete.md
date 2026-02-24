@@ -20,7 +20,7 @@ Controls whether the receiver inserts or deletes space around selected words so 
 
 ## Parameters
 
-- `sender`: The control sending the message; may be  .
+- `sender`: The control sending the message; may be `nil`.
 
 ## See Also
 

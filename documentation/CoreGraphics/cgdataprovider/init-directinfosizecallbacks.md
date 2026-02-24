@@ -30,9 +30,9 @@ You use this function to create a direct-access data provider that uses callback
 
 ## Parameters
 
-- `info`: A pointer to data of any type or  . When Core Graphics calls the functions specified in the   parameter, it sends each of the functions this pointer.
+- `info`: A pointer to data of any type or `NULL`. When Core Graphics calls the functions specified in the `callbacks` parameter, it sends each of the functions this pointer.
 - `size`: The number of bytes of data to provide.
-- `callbacks`: A pointer to a   structure that specifies the callback functions you implement to handle the data provider’s basic memory management.
+- `callbacks`: A pointer to a [`CGDataProviderDirectCallbacks`](cgdataproviderdirectcallbacks.md) structure that specifies the callback functions you implement to handle the data provider’s basic memory management.
 
 ## See Also
 

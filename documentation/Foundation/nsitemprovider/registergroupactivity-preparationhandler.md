@@ -21,7 +21,7 @@ func registerGroupActivity<ActivityType>(preparationHandler: @escaping () async 
 
 ## Parameters
 
-- `preparationHandler`: The handler the service invokes when it registers the  .
+- `preparationHandler`: The handler the service invokes when it registers the `GroupActivity`.
 
 ## See Also
 

@@ -33,7 +33,7 @@ This can also be combined with `listRowBackground`, which overrides the backgrou
 
 ## Parameters
 
-- `behavior`: Whether alternating row backgrounds are enabled   or not.
+- `behavior`: Whether alternating row backgrounds are enabled or not.
 
 ## See Also
 

@@ -30,7 +30,7 @@ In OS X v10.2 and earlier, this function inhibits local events only after a synt
 
 ## Parameters
 
-- `inhibit`: Pass   to specify that local hardware events on the remote system should be inhibited; otherwise, pass  .
+- `inhibit`: Pass `true` to specify that local hardware events on the remote system should be inhibited; otherwise, pass `false`.
 
 ## See Also
 

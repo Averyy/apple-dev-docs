@@ -73,7 +73,7 @@ print(buffer.array)
 
 ## Parameters
 
-- `linearParameters`: The scale and bias applied to pixels with a value below  .
+- `linearParameters`: The scale and bias applied to pixels with a value below `boundary`.
 - `exponentialParameters`: The boundary value that defines whether the function transforms pixels with the linear or the exponential calculation.
 - `boundary`: The parameters that the function uses for the exponential calculation.
 - `destination`: The destination pixel buffer.

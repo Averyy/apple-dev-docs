@@ -24,7 +24,7 @@ Returns [`false`](https://developer.apple.com/documentation/Swift/false) if the 
 
 ## Parameters
 
-- `range`: On return, holds the page range if   is returned directly. Page numbers are one-based—that is pages run from one to  .
+- `range`: On return, holds the page range if [`true`](https://developer.apple.com/documentation/Swift/true) is returned directly. Page numbers are one-based—that is pages run from one to *N*.
 
 ## See Also
 

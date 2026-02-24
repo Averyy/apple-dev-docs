@@ -29,8 +29,8 @@ This method is passed the index number and title of an entry in the section inde
 ## Parameters
 
 - `tableView`: The table-view object requesting this information.
-- `title`: The title as displayed in the section index of  .
-- `index`: An index number identifying a section title in the array returned by  .
+- `title`: The title as displayed in the section index of `tableView`.
+- `index`: An index number identifying a section title in the array returned by [`sectionIndexTitles(for:)`](uitableviewdatasource/sectionindextitles(for:).md).
 
 ## See Also
 

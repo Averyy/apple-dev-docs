@@ -24,13 +24,15 @@ Call this function to mark a custom metric, custom metric start time, or custom 
 
 ## Parameters
 
-- `type`: A value that represents the type of the signpost:
+- `type`: A value that represents the type of the signpost: - `event`: A single custom metric.
+- `begin`: The start time of a custom metric.
+- `end`: The end time of a custom metric.
 - `dso`: A parameter for internal system use.
-- `log`: A log for the category of the event that was created previously using  .
+- `log`: A log for the category of the event that was created previously using [`makeLogHandle(category:)`](mxmetricmanager/makeloghandle(category:).md).
 - `name`: A string containing the developer-assigned name of the custom event.
 - `signpostID`: A parameter for internal system use.
 - `format`: A parameter for internal system use.
-- `arguments`: The variable arguments for  .
+- `arguments`: The variable arguments for [`os_signpost_event_emit`](https://developer.apple.com/documentation/os/os_signpost_event_emit).
 
 ## See Also
 

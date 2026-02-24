@@ -20,7 +20,7 @@ func selectFont(name: UnsafePointer<CChar>, size: CGFloat, textEncoding: CGTextE
 
 - `name`: A null-terminated string that contains the PostScript name of the font to set.
 - `size`: A value that specifies the font size to set, in text space units.
-- `textEncoding`: A value that specifies the encoding used for the font. For a description of the available values, see  .
+- `textEncoding`: A value that specifies the encoding used for the font. For a description of the available values, see [`CGTextEncoding`](cgtextencoding.md).
 
 ## See Also
 

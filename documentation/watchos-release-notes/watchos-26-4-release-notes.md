@@ -1,4 +1,4 @@
-# watchOS 26.4 Beta Release Notes
+# watchOS 26.4 Beta 2 Release Notes
 
 **Framework**: watchOS Release Notes
 
@@ -6,13 +6,13 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 26.4 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 26.4 beta. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
+The watchOS 26.4 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 26.4 beta 2. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
 
 ##### Apple Maps
 
 ###### Known Issues
 
-- Directions might fail to load on Watch when the companion iPhone is connected.  (168923852)  Start directions from the companion iPhone.
+- Directions might fail to load on Watch when the companion iPhone is connected.  (168923852) **Workaround:** Start directions from the companion iPhone.
 
 ##### Movement Disorder Api
 
@@ -32,6 +32,10 @@ The watchOS 26.4 SDK provides support to develop watchOS apps for Apple Watch de
 
 - New fields [`revocationType`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/revocationtype-swift.property) and [`revocationPercentage`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/revocationpercentage) have been added to [`Transaction`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction).  (148858551)
 
+###### Resolved Issues
+
+- Fixed: Purchase Intents might not be emitted from the intents sequence when the app is launched from the background.  (168958783) (FB21767675)
+
 ##### Swiftui
 
 ###### Resolved Issues
@@ -40,9 +44,9 @@ The watchOS 26.4 SDK provides support to develop watchOS apps for Apple Watch de
 
 ##### Workout
 
-###### Known Issues
+###### Resolved Issues
 
-- When you start a workout with Workout Buddy enabled, the timer might appear to be delayed by a few seconds before it starts counting.  (169030068)  Disable Workout Buddy in the Workout app settings.
+- Fixed: When you start a workout with Workout Buddy enabled, the timer might appear to be delayed by a few seconds before it starts counting.  (169030068)
 
 ## See Also
 

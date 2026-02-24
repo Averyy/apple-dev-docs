@@ -18,9 +18,9 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, didRotateWithCenter cent
 
 ## Parameters
 
-- `mapTemplate`: The   the gesture applies to.
-- `center`: A   that indicates the center between two fingers performing the rotation gesture.
-- `rotation`: A   that indicates the rotation of the gesture in radians.
+- `mapTemplate`: The [`CPMapTemplate`](cpmaptemplate.md) the gesture applies to.
+- `center`: A `CGPoint` that indicates the center between two fingers performing the rotation gesture.
+- `rotation`: A `CGFloat` that indicates the rotation of the gesture in radians.
 - `velocity`: The velocity of the rotation gesture in radians per second.
 
 

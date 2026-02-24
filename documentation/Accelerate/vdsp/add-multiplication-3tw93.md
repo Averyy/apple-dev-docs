@@ -51,8 +51,8 @@ The following code shows an example of using this function:
 
 ## Parameters
 
-- `multiplication`: A tuple that contains the vector   and the scalar value   in  .
-- `scalar`: The input scalar value   in  .
+- `multiplication`: A tuple that contains the vector `A` and the scalar value `B` in `D = (A * B) + C`.
+- `scalar`: The input scalar value `C` in `D = (A * B) + C`.
 
 ## See Also
 

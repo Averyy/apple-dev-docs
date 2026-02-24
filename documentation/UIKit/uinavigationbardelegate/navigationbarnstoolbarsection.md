@@ -27,7 +27,7 @@ The system calls this method to determine how to render your [`UINavigationBar`]
 
 ## Parameters
 
-- `navigationBar`: The navigation bar to host in an  .
+- `navigationBar`: The navigation bar to host in an [`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar).
 
 
 ---

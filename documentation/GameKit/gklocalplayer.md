@@ -28,7 +28,7 @@ class GKLocalPlayer
 
 #### Overview
 
-Only one player can sign in to Game Center on a device at a time and that player is the . Before you can start a game that uses GameKit features, verify that the local player signs in to their Game Center account.
+Only one player can sign in to Game Center on a device at a time and that player is the *local player*. Before you can start a game that uses GameKit features, verify that the local player signs in to their Game Center account.
 
 You set the handler of the local player shared instance using the [`authenticateHandler`](gklocalplayer/authenticatehandler.md) property. Then implement this method to handle the multiple times GameKit invokes it during the sign-in process. If the local player needs to create an account or sign in, GameKit provides a view controller that you present to the local player. If the local player successfully signs in, determine whether they have any account restrictions and adjust your game accordingly. For more information about the initialization of the local player, see [`Authenticating a player`](authenticating-a-player.md).
 

@@ -25,7 +25,7 @@ Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the ob
 
 ## Parameters
 
-- `path`: Another   object to compare.
+- `path`: Another [`NWPath`](nwpath.md) object to compare.
 
 
 ---

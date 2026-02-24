@@ -6,7 +6,7 @@
 An alignment in all three axes.
 
 **Availability**:
-- visionOS 26.0+
+- visionOS 1.0+
 
 ## Declaration
 

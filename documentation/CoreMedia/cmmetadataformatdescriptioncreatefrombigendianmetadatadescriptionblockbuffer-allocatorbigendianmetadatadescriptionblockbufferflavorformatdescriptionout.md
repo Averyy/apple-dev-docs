@@ -22,8 +22,8 @@ func CMMetadataFormatDescriptionCreateFromBigEndianMetadataDescriptionBlockBuffe
 
 ## Parameters
 
-- `allocator`: Allocator to use for allocating the   object. May be  .
-- `metadataDescriptionBlockBuffer`:   containing MetadataDescription data structure in big-endian byte ordering.
+- `allocator`: Allocator to use for allocating the `CMMetadataFormatDescription` object. May be `NULL`.
+- `metadataDescriptionBlockBuffer`: `CMBlockBuffer` containing MetadataDescription data structure in big-endian byte ordering.
 - `flavor`: Reserved for future use. Pass NULL for QuickTime Movie or ISO flavor.
 - `formatDescriptionOut`: Receives new CMMetadataFormatDescriptionRef.
 

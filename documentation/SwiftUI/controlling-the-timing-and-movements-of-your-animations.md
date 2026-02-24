@@ -263,6 +263,9 @@ struct KeyframeAnimationView: View {
 
 To apply modifiers to a view during the animation, provide a `content` closure to the keyframe animator. This closure includes two parameters:
 
+- **`content`**: The view that’s animating.
+- **`value`**: The current interpolated values.
+
 Use these parameters to apply modifiers to the view that SwiftUI is animating. For example, the following code uses these parameters to rotate, scale, stretch, and move an emoji:
 
 ```swift

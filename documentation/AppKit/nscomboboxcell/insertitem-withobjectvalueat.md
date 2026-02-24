@@ -21,7 +21,7 @@ This method logs a warning if [`usesDataSource`](nscomboboxcell/usesdatasource.m
 ## Parameters
 
 - `object`: The object to add to the combo box’s internal item list.
-- `index`: The index at which to add the specified object.  The previous item at  —along with all following items—is shifted down one slot to make room.
+- `index`: The index at which to add the specified object.  The previous item at `index`—along with all following items—is shifted down one slot to make room.
 
 ## See Also
 

@@ -26,7 +26,7 @@ An image playground sheet that uses one of the specified generation `styles`.
 ## Parameters
 
 - `style`: The generation style that the playground uses.
-- `allowedStyles`: The list of generation styles that the   input can have.   Use   to check the list of all possible styles, and pass a subset of those.
+- `allowedStyles`: The list of generation styles that the `style` input can have. Use `ImagePlaygroundStyle.all` to check the list of all possible styles, and pass a subset of those.
 
 
 ---

@@ -16,7 +16,7 @@ init(options: Set<NSUserInterfaceCompressionOptions>)
 
 ## Parameters
 
-- `options`: A set of   objects.
+- `options`: A set of [`NSUserInterfaceCompressionOptions`](nsuserinterfacecompressionoptions.md) objects.
 
 ## See Also
 

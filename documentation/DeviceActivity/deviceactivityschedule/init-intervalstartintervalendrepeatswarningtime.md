@@ -24,8 +24,8 @@ init(intervalStart: DateComponents, intervalEnd: DateComponents, repeats: Bool, 
 
 - `intervalStart`: The date components that represent the start time for a schedule’s interval.
 - `intervalEnd`: The date components that represent the end time for a schedule’s interval.
-- `repeats`: Indicates whether the schedule recurs. If  , the extension   stops receiving callbacks when the interval ends for the first time.
-- `warningTime`: An optional warning time to receive callbacks.   If the components specify a longer time interval than the schedule’s interval, the system   clamps the warning callbacks for each event’s threshold to the start time of the interval.
+- `repeats`: Indicates whether the schedule recurs. If `false`, the extension stops receiving callbacks when the interval ends for the first time.
+- `warningTime`: An optional warning time to receive callbacks. If the components specify a longer time interval than the schedule’s interval, the system clamps the warning callbacks for each event’s threshold to the start time of the interval.
 
 ## See Also
 

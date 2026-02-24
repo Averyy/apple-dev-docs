@@ -35,8 +35,8 @@ The system executes `completionHandler` on an arbitrary queue. It is recommended
 
 ## Parameters
 
-- `entityType`: Set to  .
-- `completionHandler`: Set granted to   if the user allows access and error is  .
+- `entityType`: Set to `CNEntityTypeContacts`.
+- `completionHandler`: Set granted to [`true`](https://developer.apple.com/documentation/Swift/true) if the user allows access and error is `nil`.
 
 ## See Also
 

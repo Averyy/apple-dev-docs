@@ -22,9 +22,9 @@ Presents a map item detail popover.
 
 - `isPresented`: The binding to whether the detail sheet should be shown.
 - `item`: The map item to display. If nil, a “loading” view is displayed.
-- `displaysMap`: If an inline map should be displayed with the place data.   A value of   must be specified if the application UI is not   already showing the place in a map view.
-- `attachmentAnchor`: The positioning anchor that defines the attachment   point of the popover. The default is  .
-- `arrowEdge`: The edge of the   that defines the   location of the popover’s arrow.
+- `displaysMap`: If an inline map should be displayed with the place data. A value of `true` must be specified if the application UI is not already showing the place in a map view.
+- `attachmentAnchor`: The positioning anchor that defines the attachment point of the popover. The default is `bounds`.
+- `arrowEdge`: The edge of the `attachmentAnchor` that defines the location of the popover’s arrow.
 
 ## See Also
 

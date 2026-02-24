@@ -20,7 +20,94 @@ Use `VZVirtioFileSystemDeviceConfiguration` to create a Virtio file system devic
 
 The example below shows the creation of a `VZVirtioFileSystemDeviceConfiguration` that shares a single directory that the user can manually mount after creating a mount point in the guest VM:
 
+**Swift**:
+
+```swift
+// Define a URL to a specific file path, in this case the 
+// "Projects" directory in the user's home directory.
+let projectsURL = URL(fileURLWithPath: NSHomeDirectory() + "Projects")
+
+static func createSingleDirectoryShareDeviceConfiguration() -> VZVirtioFileSystemDeviceConfiguration {
+    let sharedDirectory = VZSharedDirectory(url: projectsURL, readOnly: false)
+    let singleDirectoryShare = VZSingleDirectoryShare(directory: sharedDirectory)
+
+    // Create the VZVirtioFileSystemDeviceConfiguration and assign it a unique tag. 
+    let sharingConfiguration = VZVirtioFileSystemDeviceConfiguration(tag: "Projects")
+    sharingConfiguration.share = singleDirectoryShare
+
+    return sharingConfiguration
+}
+```
+
+**Objective-C**:
+
+```objc
+    // Define a URL to a specific file path, in this case the
+    // "Projects" directory in the user's home directory.
+    NSString *projectsPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Projects"];
+    NSURL *projectsURL = [NSURL fileURLWithPath:projectsPath];
+
+    VZSharedDirectory *sharedDirectory = [[VZSharedDirectory alloc] initWithURL:projectsURL readOnly:NO];
+    VZSingleDirectoryShare *singleDirectoryShare = [[VZSingleDirectoryShare alloc] initWithDirectory:sharedDirectory];
+
+    // Create the VZVirtioFileSystemDeviceConfiguration and assign it a unique tag.
+    VZVirtioFileSystemDeviceConfiguration *sharingConfiguration = [[VZVirtioFileSystemDeviceConfiguration alloc] initWithTag:@"Projects"];
+    sharingConfiguration.share = singleDirectoryShare;
+```
+
 A `VZVirtioFileSystemDeviceConfiguration` can also share multiple directories. The example below demonstrates sharing the `~/Invoices` and `~/Projects` directories from the user’s home directory to the guest VM:
+
+**Swift**:
+
+```swift
+// Define URLs at specific file paths, in this case the 
+// "Projects" and "Invoices" directories in the user's home directory.
+let projectsURL = URL(fileURLWithPath: NSHomeDirectory() + "Projects")
+let invoicesURL = URL(fileURLWithPath: NSHomeDirectory() + "Invoices")
+
+static func createMultipleDirectoryShareDeviceConfiguration() -> VZVirtioFileSystemDeviceConfiguration {
+    let sharedProjectsDirectory = VZSharedDirectory(url: projectsURL, readOnly: false)
+
+    // It's also possible to share directories that are read-only: 
+    let sharedInvoicesDirectory = VZSharedDirectory(url: invoicesURL, readOnly: true)
+
+    // Associate each shared directory with a name, which is how the framework lists them under the mount point.
+    let directoriesToShare = ["My Projects": sharedProjectsDirectory, "Invoices": sharedInvoicesDirectory]
+    let multipleDirectoryShare = VZMultipleDirectoryShare(directories: directoriesToShare)
+
+    // Create the VZVirtioFileSystemDeviceConfiguration and assign it a unique tag. 
+    let sharingConfiguration = VZVirtioFileSystemDeviceConfiguration(tag: "myfiles")
+    sharingConfiguration.share = multipleDirectoryShare
+
+    return sharingConfiguration
+}
+```
+
+**Objective-C**:
+
+```objc
+    // Define URLs at specific file paths, in this case the    
+    // "Projects" and "Invoices" directories in the user's home directory.
+    NSString *projectsPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Projects"];
+    NSString *invoicesPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Invoices"];
+    NSURL *projectsURL = [NSURL fileURLWithPath:projectsPath];
+    NSURL *invoicesURL = [NSURL fileURLWithPath:invoicesPath];
+
+    VZSharedDirectory *sharedProjectsDirectory = [[VZSharedDirectory alloc] initWithURL:projectsURL readOnly:NO];
+
+    // It's also possible to share directories that are read-only:
+    VZSharedDirectory *sharedInvoicesDirectory = [[VZSharedDirectory alloc] initWithURL:invoicesURL readOnly:YES];
+
+    // Associate each shared directory with a name, which is how the framework lists them under the mount point.
+    VZMultipleDirectoryShare *multipleDirectoryShare = [[VZMultipleDirectoryShare alloc] initWithDirectories:@{
+        @"My Projects": sharedProjectsDirectory,
+        @"Invoices": sharedInvoicesDirectory,
+    }];
+
+    // Create the VZVirtioFileSystemDeviceConfiguration and assign it a unique tag.
+    VZVirtioFileSystemDeviceConfiguration *sharingConfiguration = [[VZVirtioFileSystemDeviceConfiguration alloc] initWithTag:@"myfiles"];
+    sharingConfiguration.share = multipleDirectoryShare;
+```
 
 ##### Mounting Shared Directories
 

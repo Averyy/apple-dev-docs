@@ -22,7 +22,7 @@ Listeners will be called when possibly many properties have changed. Consequentl
 ## Parameters
 
 - `inNumberAddresses`: The number of elements in the inAddresses array.
-- `inAddresses`: An array of AudioObjectPropertyAddresses indicating which properties   changed.
+- `inAddresses`: An array of AudioObjectPropertyAddresses indicating which properties changed.
 
 ## See Also
 

@@ -22,6 +22,10 @@ object ExchangeActiveSync.CommunicationServiceRules
 - [object ExchangeActiveSync.CommunicationServiceRules.DefaultServiceHandlers](exchangeactivesync/communicationservicerules-data.dictionary/defaultservicehandlers-data.dictionary.md)
   The default service handlers.
 
+## Properties
+
+- `DefaultServiceHandlers` (ExchangeActiveSync.CommunicationServiceRules.DefaultServiceHandlers): The default handlers to use for contacts from this account.
+
 
 ---
 

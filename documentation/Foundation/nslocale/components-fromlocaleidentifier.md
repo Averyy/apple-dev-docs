@@ -34,7 +34,7 @@ For example, the locale identifier `"en_US@calendar=japanese"` yields a dictiona
 
 ## Parameters
 
-- `string`: A locale ID, consisting of language, script, country, variant, and keyword/value pairs, for example,  .
+- `string`: A locale ID, consisting of language, script, country, variant, and keyword/value pairs, for example, `"en_US@calendar=japanese"`.
 
 ## See Also
 

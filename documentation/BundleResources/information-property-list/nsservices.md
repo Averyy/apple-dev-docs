@@ -8,6 +8,10 @@ The services provided by an app.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: dictionary 
+
 ## Topics
 
 ### Invocation

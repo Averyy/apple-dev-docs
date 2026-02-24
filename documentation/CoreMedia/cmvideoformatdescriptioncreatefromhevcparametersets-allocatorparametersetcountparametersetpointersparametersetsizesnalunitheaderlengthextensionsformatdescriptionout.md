@@ -35,12 +35,12 @@ The supported NAL unit types to include in the format description are:
 
 ## Parameters
 
-- `allocator`: The   for creating the format description, or pass   to use the default allocator.
-- `parameterSetCount`: The number of parameter sets to include in the format description, which needs to be at least  .
-- `parameterSetPointers`: Points to a C array containing   pointers to parameter sets.
+- `allocator`: The `CFAllocator` for creating the format description, or pass `nil` to use the default allocator.
+- `parameterSetCount`: The number of parameter sets to include in the format description, which needs to be at least `2`.
+- `parameterSetPointers`: Points to a C array containing `parameterSetCount` pointers to parameter sets.
 - `parameterSetSizes`: Points to a C array containing the size, in bytes, of each of the parameter sets.
-- `NALUnitHeaderLength`: The size, in bytes, of the   field in an AVC video sample or an AVC parameter set sample. Pass  ,  , or  .
-- `extensions`: An optional dictionary of extension key-value pairs. Keys are   and values are property list objects, such as  ,  ,  ,  ,  ,  , and  .
+- `NALUnitHeaderLength`: The size, in bytes, of the `NALUnitLength` field in an AVC video sample or an AVC parameter set sample. Pass `1`, `2`, or `4`.
+- `extensions`: An optional dictionary of extension key-value pairs. Keys are [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) and values are property list objects, such as [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData), [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean), [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber), [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString), [`CFDate`](https://developer.apple.com/documentation/CoreFoundation/CFDate), [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray), and [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary).
 - `formatDescriptionOut`: The newly created video format description.
 
 ## See Also

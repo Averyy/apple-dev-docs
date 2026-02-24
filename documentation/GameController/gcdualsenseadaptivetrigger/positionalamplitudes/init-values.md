@@ -21,7 +21,7 @@ init(values: (Float, Float, Float, Float, Float, Float, Float, Float, Float, Flo
 
 ## Parameters
 
-- `values`: The amplitude values for possible trigger positions. Each value is between   and  , where   is the minimum and   is the maximum amplitude.
+- `values`: The amplitude values for possible trigger positions. Each value is between `0` and `1`, where `0` is the minimum and `1` is the maximum amplitude.
 
 ## See Also
 

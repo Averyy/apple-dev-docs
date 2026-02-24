@@ -6,7 +6,7 @@ Configure your target to include and customize capabilities that provide access 
 
 #### Overview
 
-A  grants your app access to an  that Apple provides, such as CloudKit, Game Center, or In-App Purchase. To use some app services, you need to add a capability to your target in Xcode to configure the app service correctly. Xcode may edit the [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements) and [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) files, add related frameworks, and configure your signing assets.
+A *capability* grants your app access to an *app service* that Apple provides, such as CloudKit, Game Center, or In-App Purchase. To use some app services, you need to add a capability to your target in Xcode to configure the app service correctly. Xcode may edit the [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements) and [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) files, add related frameworks, and configure your signing assets.
 
 Some app services — such as Game Center and In-App Purchase — require additional configuration in App Store Connect and your developer account. For example, to provide directions for other apps using the Maps cabability, you [`upload a geographic coverage file`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/upload-a-geographic-coverage-file/) in App Store Connect.
 

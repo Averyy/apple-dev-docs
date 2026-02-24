@@ -24,7 +24,7 @@ A [`CKShareTransferRepresentation.ExportedShare`](cksharetransferrepresentation/
 
 ## Parameters
 
-- `exporter`: A closure that provides a   representation of the specified  .
+- `exporter`: A closure that provides a [`CKShareTransferRepresentation.ExportedShare`](cksharetransferrepresentation/exportedshare.md) representation of the specified `Item`.
 
 
 ---

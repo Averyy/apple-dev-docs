@@ -24,7 +24,7 @@ This method returns immediately, and starts syncing the directory in the backgro
 
 ## Parameters
 
-- `containerIdentifier`: The identifier of the directory to request.   If you pass  , this method uses the first container identifier   listed in the   entitlements array.
+- `containerIdentifier`: The identifier of the directory to request. If you pass `nil`, this method uses the first container identifier listed in the `com.apple.developer.icloud-container-identifiers` entitlements array.
 
 ## See Also
 

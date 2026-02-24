@@ -32,7 +32,7 @@ The returned cache instance is backed by disk, so you have more leeway when choo
 
 - `memoryCapacity`: The memory capacity of the cache, in bytes.
 - `diskCapacity`: The disk capacity of the cache, in bytes.
-- `path`: In iOS,   is the name of a subdirectory of the application’s default cache directory in which to store the on-disk cache (the subdirectory is created if it does not exist).
+- `path`: In macOS, `path` is the location at which to store the on-disk cache. In iOS, `path` is the name of a subdirectory of the application’s default cache directory in which to store the on-disk cache (the subdirectory is created if it does not exist).
 
 ## See Also
 

@@ -27,7 +27,7 @@ static func lookAtAbsolute(named name: String, on jointName: String, lookingAlon
 
 - `name`: The rig unique name of the constraint
 - `jointName`: The name of the joint to constrain.
-- `targetAxis`: The axis from the constrained joint to look-at target position in the model space   of the entity.
+- `targetAxis`: The axis from the constrained joint to look-at target position in the model space of the entity.
 - `orientationWeight`: The weight of the orientation demand.
 
 

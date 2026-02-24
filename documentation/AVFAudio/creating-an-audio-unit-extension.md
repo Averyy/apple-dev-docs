@@ -26,6 +26,13 @@ Configure the options for your new audio unit extension application. The templat
 
 For an Audio Unit Extension App template, Xcode provides a starting point for the type of audio unit you’re creating.
 
+- **Instrument**: An audio unit that accepts incoming MIDI data and produces only audio output. The template provides a basic mono sine wave synthesizer with a parameter to adjust the gain. Incoming MIDI data sets the pitch and volume of the output sine wave signal.
+- **Generator**: An audio unit that provides a basic sine wave generator and produces only audio output. It has a parameter to adjust the gain, and produces a continuous sine wave signal.
+- **Effect**: An audio unit that accepts audio input and produces audio output. The template provides an audio pass-through effect with a signal parameter to adjust the gain of the audio that passes through the audio unit.
+- **Music Effect**: An audio unit that accepts audio and MIDI input, and produces audio output. The template provides a MIDI-controlled audio gate with one signal parameter to adjust the gain. It allows audio to pass through only when it receives a MIDI note-on message.
+- **MIDI Processor**: An audio unit that accepts MIDI input and produces MIDI output. The template provides a MIDI note-on and note-off message generator.
+- **Speech Synthesis**: An audio unit for custom spoken voice generation. The template provides the setup for a speech synthesizer that’s ready for customization.
+
 Choose a subtype code that reflects the type of extension, and a manufacturer code that’s unique to your company.
 
 If your extension doesn’t need a user interface, choose No User Interface; otherwise, Xcode creates a view for you to customize.
@@ -39,6 +46,11 @@ Xcode generates two targets for you — the host app and the extension. The temp
 The Common group contains code — organized by functionality — that you rarely need to change. In the above image, the project name `NewAU` is prefixed to many files.
 
 In most cases, you only need to edit the extension files within the top-level groups Parameters, DSP, and UI.
+
+- **`NewAUExtensionParameterAddress.h`**: An enumeration that contains parameter addresses that Swift and C++ use to reference parameters.
+- **`Parameters.swift`**: A source code file where you describe your extension’s parameters and their layout.
+- **`NewAUExtensionDSPKernel.hpp`**: A class that handles the real-time aspects of the extension and is where you implement signal processing.
+- **`NewAUExtensionMainView.swift`**: A view you use to customize your user interface, if your audio unit presents one.
 
 ##### Add a New Parameter Address
 

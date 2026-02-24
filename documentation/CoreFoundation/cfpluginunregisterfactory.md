@@ -30,7 +30,7 @@ Used by a plug-in or host when performing dynamic registration.
 
 ## Parameters
 
-- `factoryUUID`: The   object representing the factory to unregister.
+- `factoryUUID`: The `CFUUID` object representing the factory to unregister.
 
 ## See Also
 

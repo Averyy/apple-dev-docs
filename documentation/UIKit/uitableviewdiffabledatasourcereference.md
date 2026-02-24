@@ -23,7 +23,7 @@ class UITableViewDiffableDataSourceReference
 
 > ❗ **Important**: If you’re working in a Swift codebase, always use [`UITableViewDiffableDataSource`](uitableviewdiffabledatasource-2euir.md) instead.
 
-A  object is a specialized type of data source that works together with your table view object. It provides the behavior you need to manage updates to your table view’s data and UI in a simple, efficient way. It also conforms to the [`UITableViewDataSource`](uitableviewdatasource.md) protocol and provides implementations for all of the protocol’s methods.
+A *diffable data source* object is a specialized type of data source that works together with your table view object. It provides the behavior you need to manage updates to your table view’s data and UI in a simple, efficient way. It also conforms to the [`UITableViewDataSource`](uitableviewdatasource.md) protocol and provides implementations for all of the protocol’s methods.
 
 To fill a table view with data:
 

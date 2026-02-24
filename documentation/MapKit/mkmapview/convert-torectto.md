@@ -26,7 +26,7 @@ The rectangle corresponding to the specified map region.
 ## Parameters
 
 - `region`: The map region that you want to find the corresponding view rectangle for.
-- `view`: The view where you want to locate the specified map region. If this parameter is  , the method specifies the returned rectangle in the window’s coordinate system. If   isn’t  , the rectangle belongs to the same window as the map view.
+- `view`: The view where you want to locate the specified map region. If this parameter is `nil`, the method specifies the returned rectangle in the window’s coordinate system. If `view` isn’t `nil`, the rectangle belongs to the same window as the map view.
 
 ## See Also
 

@@ -30,7 +30,7 @@ The sections below describe the individual entitlements and build settings that 
 
 ##### Prepare Your App for Pointer Authentication
 
-The Enhanced Security capability includes additional runtime platform restrictions, which Xcode enables by default for your app when you adopt the capability by setting the `ENABLE_POINTER_AUTHENTICATION` build setting to `Yes`. With these additional runtime platform restrictions enabled, Xcode builds your app for the `arm64e` architecture and enables .
+The Enhanced Security capability includes additional runtime platform restrictions, which Xcode enables by default for your app when you adopt the capability by setting the `ENABLE_POINTER_AUTHENTICATION` build setting to `Yes`. With these additional runtime platform restrictions enabled, Xcode builds your app for the `arm64e` architecture and enables *pointer authentication*.
 
 When you enable pointer authentication, the system generates signature metadata for pointers that your app creates by allocating memory or constructing C++ objects. Then the system validates that the signatures are unchanged when your app accesses the memory addressed by those pointers. If the signature for a pointer isn’t valid, the system encounters an exception and crashes your app. Doing so helps to protect against an attacker overwriting memory in your app to compromise the app’s control flow.
 
@@ -48,13 +48,13 @@ To turn off typed allocator support for your target, uncheck the Enable Typed Al
 
 ##### Adopt Memory Integrity Enforcement
 
-When you enable hardware memory tagging, each new memory allocation and any pointers to that memory include an embedded value called a . Accessing to memory through a pointer requires that the pointer’s tag matches the allocation’s tag. If the tags don’t match — for example, because of a use-after-free error or out-of-bounds access — the app crashes instead of performing the unsafe access.
+When you enable hardware memory tagging, each new memory allocation and any pointers to that memory include an embedded value called a *tag*. Accessing to memory through a pointer requires that the pointer’s tag matches the allocation’s tag. If the tags don’t match — for example, because of a use-after-free error or out-of-bounds access — the app crashes instead of performing the unsafe access.
 
 To enable memory tagging, navigate to the Signing and Capabilities editor for your Xcode target. Enable the Enhanced Security capability, then, under Memory Safety, click Enable Hardware Memory Tagging. Xcode adds the [`Enable Hardware Memory Tagging`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations) entitlement to your app.
 
 To enable additional diagnostics while debugging, navigate to the Scheme Editor and select the Run action, then select the Diagnostics pane and enable Hardware Memory Tagging.
 
-When you enable memory tagging in Xcode, it also adds the [`Enable Soft Mode for Memory Tagging`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations.soft-mode) entitlement. This entitlement makes hardware memory tagging operate in , where the system produces a simulated crash instead of terminating the app if a pointer’s tag doesn’t match the memory allocation’s tag. You can review reports from simulated crashes to help you find memory issues and to help validate that your app doesn’t have memory corruption bugs that would result in crashes when soft mode is disabled. After you’re confident in the stability of your app, disable soft mode to protect your users. To disable soft mode, navigate to the Signing and Capabilities editor for your Xcode target, then, under Memory Safety, deselect Enable Soft Mode for Memory Tagging.
+When you enable memory tagging in Xcode, it also adds the [`Enable Soft Mode for Memory Tagging`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations.soft-mode) entitlement. This entitlement makes hardware memory tagging operate in *soft mode*, where the system produces a simulated crash instead of terminating the app if a pointer’s tag doesn’t match the memory allocation’s tag. You can review reports from simulated crashes to help you find memory issues and to help validate that your app doesn’t have memory corruption bugs that would result in crashes when soft mode is disabled. After you’re confident in the stability of your app, disable soft mode to protect your users. To disable soft mode, navigate to the Signing and Capabilities editor for your Xcode target, then, under Memory Safety, deselect Enable Soft Mode for Memory Tagging.
 
 You can also enable the [`Memory Tag Pure Data`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations.enable-pure-data) and [`Prevent Receiving Tagged Memory`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations.no-tagged-receive) entitlements.
 
@@ -70,19 +70,39 @@ If you need to turn off zero-initialization of stack variables for your target, 
 
 When you enable the Enhanced Security capability for your target, Xcode configures some compiler warnings that help to identify potentially insecure code. These are:
 
+- **`-Wshadow`**: The compiler warns you when a variable declaration *shadows* another variable or a type alias; that is, the variable has the same name as another entity, and uses of the variable’s name in the current scope use the newly declared variable when they might intend to use the original entity. Turn this warning off by setting the `GCC_WARN_SHADOW` build setting to `No`.
+- **`-Wempty-body`**: The compiler warns you when the body of a control flow statement, such as a `for` loop or `if` statement, doesn’t contain any code. Turn this warning off by setting the `CLANG_WARN_EMPTY_BODY` build setting to `No`.
+
 Xcode additionally sets the `ENABLE_SECURITY_COMPILER_WARNINGS` target build setting to `Yes`. This turns on a collection of security-related compiler warnings that Xcode reports in the Issues navigator when you build the target. These additional warnings are:
+
+- **`-Wbuiltin-memcpy-chk-size`**: The compiler warns you when the destination buffer in a `memcpy` operation is smaller than the number of bytes you copy into it.
+- **`-Wformat-nonliteral`**: The compiler warns you when the format string for a `printf`-like function isn’t a string literal.
+- **`-Warray-bounds`**: The compiler warns you when an array index is before the beginning of an array, or past the end of an array; or that an array argument you pass to a function is smaller than the minimum size the function expects.
+- **`-Warray-bounds-pointer-arithmetic`**: The compiler warns you when a calculated pointer value results in a pointer that’s before the beginning of an array, or past the end of an array.
+- **`-Wsuspicious-memaccess`**: The compiler warns you when a memory operation acts on a dynamic class and might operate on its `vtable` pointer; the arguments to `memset` are transposed; a memory operation moves or copies an object that isn’t trivially copyable; or the size requested for a memory operation is `0`, or the result of calling `sizeof` on the source pointer.
+- **`-Wsizeof-array-div`**: The compiler warns you when a `sizeof` calculation doesn’t correctly calculate the number of elements in an array, due to using incorrect types.
+- **`-Wsizeof-pointer-div`**: The compiler warns you when a `sizeof` calculation results in the size of a pointer, instead of the size of the array it refers to.
+- **`-Wreturn-stack-address`**: The compiler warns you when your code returns an address on the stack (for example, the address of a local variable) to the calling function.
 
 If you need to turn off the additional compiler warnings that Enhanced Security configures for your target, set the `ENABLE_SECURITY_COMPILER_WARNINGS` build setting to `No`.
 
 ##### Adopt C++ Standard Library Hardening and Compiler Bounds Checking
 
-When you enable the Enhanced Security capability for your target, Xcode sets the `ENABLE_CPLUSPLUS_BOUNDS_SAFE_BUFFERS` target build setting to `YES`. This enables a collection of safety checks in the C++ standard library. Specifically, it enables the  hardening mode.
+When you enable the Enhanced Security capability for your target, Xcode sets the `ENABLE_CPLUSPLUS_BOUNDS_SAFE_BUFFERS` target build setting to `YES`. This enables a collection of safety checks in the C++ standard library. Specifically, it enables the *fast* hardening mode.
 
 In fast mode, the C++ standard library performs the following assertion checks in your code that uses standard library container types:
+
+- **Valid element access**: The standard library checks that when your code accesses collection elements, including elements contained in the single-element collection types `std::function` and `std::optional`, the elements exist in the collection.
+- **Valid input range**: The standard library checks that ranges you pass to standard algorithm functions are valid, and that if you define a range using a `begin` iterator and a sentinel, the library can reach the sentinel from the iterator.
 
 The standard library calculates these checks in constant time. If a hardening assertion fails (that is, if the check evaluates to `false`), the system encounters an exception and crashes your app.
 
 To change the C++ standard library hardening mode for a single file in your project, define the `_LIBCPP_HARDENING_MODE` macro with one of the following values:
+
+- **`_LIBCPP_HARDENING_MODE_NONE`**: No hardening
+- **`_LIBCPP_HARDENING_MODE_FAST`**: Fast mode
+- **`_LIBCPP_HARDENING_MODE_EXTENSIVE`**: Extensive hardening
+- **`_LIBCPP_HARDENING_MODE_DEBUG`**: All hardening checks
 
 If you define the macro in code, you need to place the definition at the beginning of the file, before you include any standard library headers.
 
@@ -122,9 +142,16 @@ The `ENABLE_C_BOUNDS_SAFETY` build setting adds the `-fbounds-safety` flag to th
 
 The compiler assumes that every pointer in your code that it compiles with the `-fbounds-safety` flag points to a single object, and emits an error if you attempt to perform pointer arithmetic using the pointer, or use a subscript to access an array element based on the pointer. To indicate that a pointer identifies a collection of objects of a given size, use one of these annotations:
 
+- **`__counted_by(N)`**: The pointer locates the first element in an array of length `N`. The parameter `N` can be a constant, an arithmetic expression, or the name of a variable.
+- **`__sized_by(N)`**: The pointer is the start of a memory buffer of size `N` bytes. The parameter `N` can be a constant, an arithmetic expression, or the name of a variable.
+- **`__ended_by(P)`**: The pointer is in a memory region with upper bound `P`. The parameter `P` is the first pointer that’s beyond the last element in the memory region.
+
 If the pointer can potentially be `NULL`, add the suffix `_or_null` to the annotation name; for example, `__counted_by_or_null(N)`.
 
 To indicate that a pointer identifies a collection of objects that has a particular sentinel value signifying the end — for example, a null-terminated string — use one of these annotations:
+
+- **`__null_terminated`**: The sentinal value is `0`.
+- **`__terminated_by(T)`**: The sentinal value is `T`.
 
 To indicate that a pointer refers to a value that you haven’t audited for bounds safety, add the `__unsafe_indexable` annotation.
 

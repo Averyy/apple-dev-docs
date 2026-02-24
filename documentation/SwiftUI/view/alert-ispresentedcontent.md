@@ -45,7 +45,7 @@ struct OrderCompleteAlert: View {
 
 ## Parameters
 
-- `isPresented`: A binding to a Boolean value that determines whether   to present the alert that you create in the modifier’s   closure. When the   user presses or taps OK the system sets   to    which dismisses the alert.
+- `isPresented`: A binding to a Boolean value that determines whether to present the alert that you create in the modifier’s `content` closure. When the user presses or taps OK the system sets `isPresented` to `false` which dismisses the alert.
 - `content`: A closure returning the alert to present.
 
 ## See Also

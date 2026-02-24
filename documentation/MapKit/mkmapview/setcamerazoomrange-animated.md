@@ -21,7 +21,7 @@ func setCameraZoomRange(_ cameraZoomRange: MKMapView.CameraZoomRange?, animated:
 
 ## Parameters
 
-- `cameraZoomRange`: The  .
+- `cameraZoomRange`: The [`MKMapView.CameraZoomRange`](mkmapview/camerazoomrange-swift.class.md).
 - `animated`: A Boolean value that indicates whether the framework animates the transition of the map view to the new zoom range.
 
 ## See Also

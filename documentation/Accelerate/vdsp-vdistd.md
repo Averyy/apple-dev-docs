@@ -50,11 +50,11 @@ On return, `c` contains `[5.0, 10.0, 13.0, 15.0]`.
 ## Parameters
 
 - `__A`: A vector that contains the lengths of the first set of legs of the triangles.
-- `__IA`: The distance between the elements in the input vector  .
+- `__IA`: The distance between the elements in the input vector `A`.
 - `__B`: A vector that contains the lengths of the second set of legs of the triangles.
-- `__IB`: The distance between the elements in the input vector  .
+- `__IB`: The distance between the elements in the input vector `B`.
 - `__C`: The output vector.
-- `__IC`: The distance between the elements in the output vector  .
+- `__IC`: The distance between the elements in the output vector `C`.
 - `__N`: The number of elements to process.
 
 ## See Also

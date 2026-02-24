@@ -20,7 +20,7 @@ The first time your app attempts to access a protected resource, the system prom
 
 If the person grants permission, the system remembers the person’s choice and doesn’t prompt again. If the person denies permission, the access attempt that initiates the prompt, and any further attempts, fail in a resource-specific way. For the particular case of access to location data, the person can choose to allow access for one session only by tapping Allow Once.
 
-The system automatically generates the prompt’s title, which includes the name of your app. You supply a message called a  or a  — in this case, “Your location allows you to view restaurants in delivery range of your address.” — to indicate the reason that your app needs the access. Accurately and concisely explaining to the person why your app needs access to sensitive data, typically in one complete sentence, lets the person make an informed decision and improves the chances that they grant access.
+The system automatically generates the prompt’s title, which includes the name of your app. You supply a message called a *purpose string* or a *usage description* — in this case, “Your location allows you to view restaurants in delivery range of your address.” — to indicate the reason that your app needs the access. Accurately and concisely explaining to the person why your app needs access to sensitive data, typically in one complete sentence, lets the person make an informed decision and improves the chances that they grant access.
 
 To provide a purpose string, follow these steps in Xcode:
 

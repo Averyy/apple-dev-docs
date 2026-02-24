@@ -57,10 +57,10 @@ After receiving an [`HKWorkoutRoute`](hkworkoutroute.md) sample, you can access 
 
 To process the locations associated with a route:
 
-1.  Provide a block to receive the locations.
-2.  Call the HealthKit store’s [`execute(_:)`](hkhealthstore/execute(_:).md) method to run the query.
-3.  Your block receives one or more batches of location data. When the block’s done parameter is [`true`](https://developer.apple.com/documentation/Swift/true), you have received all the data.
-4.  Call the HealthKit store’s [`stop(_:)`](hkhealthstore/stop(_:).md) method to stop the query from receiving additional data.
+1. **Create a query object.** Provide a block to receive the locations.
+2. **Run the query.** Call the HealthKit store’s [`execute(_:)`](hkhealthstore/execute(_:).md) method to run the query.
+3. **Receive the route data.** Your block receives one or more batches of location data. When the block’s done parameter is [`true`](https://developer.apple.com/documentation/Swift/true), you have received all the data.
+4. **Optionally:** Call the HealthKit store’s [`stop(_:)`](hkhealthstore/stop(_:).md) method to stop the query from receiving additional data.
 
 ```swift
 // Create the route query.

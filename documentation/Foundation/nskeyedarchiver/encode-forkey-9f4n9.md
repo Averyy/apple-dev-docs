@@ -22,8 +22,8 @@ func encode(_ object: Any?, forKey key: String)
 
 ## Parameters
 
-- `object`: The value to encode. This value may be  .
-- `key`: The key with which to associate  . This value must not be  .
+- `object`: The value to encode. This value may be `nil`.
+- `key`: The key with which to associate `objv`. This value must not be `nil`.
 
 ## See Also
 

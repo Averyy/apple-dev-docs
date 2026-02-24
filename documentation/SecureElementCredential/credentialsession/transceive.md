@@ -31,7 +31,7 @@ Before calling this method, make sure the credential session state is [`Credenti
 
 ## Parameters
 
-- `data`: The APDU as a   instance.
+- `data`: The APDU as a [`Data`](https://developer.apple.com/documentation/Foundation/Data) instance.
 
 ## See Also
 

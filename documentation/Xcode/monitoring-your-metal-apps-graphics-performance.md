@@ -41,6 +41,10 @@ You can also optionally enable the output of per-frame statistics to the console
 
 You can enable the Metal Performance HUD and logging by setting the following environment variables on your Metal app:
 
+- **MTL_HUD_ENABLED=1**: Enables the Metal Performance HUD.
+- **MTL_HUD_LOG_ENABLED=1**: Enables logging of per-frame statistics. Requires `MTL_HUD_ENABLED=1`.
+- **MTL_HUD_LOG_SHADER_ENABLED=1**: Enables logging of shader compilation activities. Requires `MTL_HUD_ENABLED=1`.
+
 ##### Enable the Hud and Logging on a Device
 
 You can enable the Metal Performance HUD and logging on an iOS, iPadOS, or tvOS device in the Developer settings by following these steps:

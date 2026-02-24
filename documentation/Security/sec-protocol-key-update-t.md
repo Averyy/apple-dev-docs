@@ -24,8 +24,8 @@ Block to be invoked when the protocol key MUST be updated.
 
 ## Parameters
 
-- `metadata`: A   instance.
-- `complete`: A   to be invoked when the key update is complete.
+- `metadata`: A `sec_protocol_metadata_t` instance.
+- `complete`: A `sec_protocol_key_update_complete_t` to be invoked when the key update is complete.
 
 
 ---

@@ -27,7 +27,7 @@ The driver’s [`Start`](iouserhideventdriver/start.md) method calls this method
 
 ## Parameters
 
-- `elements`: An array of   objects to parse.
+- `elements`: An array of [`IOHIDElement`](iohidelement.md) objects to parse.
 
 ## See Also
 

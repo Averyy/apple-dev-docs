@@ -24,7 +24,7 @@ Set the maximum support TLS version.
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A `sec_protocol_options_t` instance.
 - `version`: A SSLProtocol enum value.
 
 

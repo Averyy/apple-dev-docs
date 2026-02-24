@@ -27,7 +27,7 @@ init<Scalar>(randomUniform shape: [Int], in bounds: ClosedRange<Scalar> = 0...1,
 ## Parameters
 
 - `shape`: The shape of the tensor.
-- `bounds`: The bounds of the distribution. The default value is  .
+- `bounds`: The bounds of the distribution. The default value is `0...1`.
 - `seed`: The random seed.
 - `scalarType`: The scalar type.
 

@@ -50,7 +50,7 @@ If the view is enclosed in a `dragContainer(for:in:_)`, the view becomes its dra
 ## Parameters
 
 - `itemType`: A type of the dragged item.
-- `item`: A closure that returns a single   instance or a value conforming to   that   represents the draggable data from this view.
+- `item`: A closure that returns a single instance or a value conforming to [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) that represents the draggable data from this view.
 - `containerNamespace`: A namespace of the associated drag container.
 
 

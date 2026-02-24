@@ -33,8 +33,8 @@ You should not assume that this method will be called on a specific thread.
 
 - `output`: The capture file output that has finished writing the file.
 - `outputFileURL`: The file URL of the file that is being written.
-- `connections`: An array of   objects attached to the file output that provided the data that is being written to the file.
-- `error`: If the file was not written successfully, an error object that describes the problem; otherwise  .
+- `connections`: An array of [`AVCaptureConnection`](avcaptureconnection.md) objects attached to the file output that provided the data that is being written to the file.
+- `error`: If the file was not written successfully, an error object that describes the problem; otherwise `nil`.
 
 ## See Also
 

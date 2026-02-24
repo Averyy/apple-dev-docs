@@ -21,8 +21,8 @@ func setModeFeedbackWithStartPosition(_ startPosition: Float, resistiveStrength:
 
 ## Parameters
 
-- `startPosition`: The effect’s start position. A value between   and   , where   is the minimum and   is the maximum trigger depression.
-- `resistiveStrength`: The strength of the feedback. A value between   and  , where   is the minimum and   is the maximum strength.
+- `startPosition`: The effect’s start position. A value between `0` and `1` , where `0` is the minimum and `1` is the maximum trigger depression.
+- `resistiveStrength`: The strength of the feedback. A value between `0` and `1`, where `0` is the minimum and `1` is the maximum strength.
 
 ## See Also
 

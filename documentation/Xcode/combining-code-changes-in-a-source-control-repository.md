@@ -6,7 +6,7 @@ Integrate code changes from multiple sources and resolve conflicts between diffe
 
 #### Overview
 
-If you use source control to work on code with collaborators or to manage multiple versions of your Xcode project for different releases, eventually, you need to sync code changes between versions. Git source control provides a mechanism for combining sets of code changes by merging those changes together, and Xcode provides a visual interface for performing a .
+If you use source control to work on code with collaborators or to manage multiple versions of your Xcode project for different releases, eventually, you need to sync code changes between versions. Git source control provides a mechanism for combining sets of code changes by merging those changes together, and Xcode provides a visual interface for performing a *merge*.
 
 ![Conceptual diagram that shows two rows of commits, each row representing a branch. The rightmost commit in the bottom row merges into the top row to illustrate two commits merging together.](https://docs-assets.developer.apple.com/published/357f965f3904cf401c393b515a8084dd/combining-code-changes-in-a-source-control-repository-1%402x.png)
 
@@ -17,13 +17,13 @@ After you complete work in a feature or bug fix branch, you merge your changes i
 1. Open the Source Control navigator and select Repositories.
 2. In the Repositories navigator, expand your repository and the Branches or Remotes folder.
 3. To make the branch you want to merge into the current branch, Control-click it and choose Switch.
-4. Control-click the branch you want to merge from and choose “Merge [] into []”.
+4. Control-click the branch you want to merge from and choose “Merge [*from branch*] into [*to branch*]”.
 
 If there are no conflicts, Xcode completes the merge.
 
 ##### Resolve Conflicts with Other Code
 
-In a source control repository, a  occurs when two commits have incompatible changes and Git can’t merge the changes automatically. For example, a conflict might occur when two developers change the same lines in the same source file.
+In a source control repository, a *conflict* occurs when two commits have incompatible changes and Git can’t merge the changes automatically. For example, a conflict might occur when two developers change the same lines in the same source file.
 
 If there are conflicts when you attempt to merge changes in Xcode, Xcode presents a comparison view for you to review and resolve the conflicts.
 

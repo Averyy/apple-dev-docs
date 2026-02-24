@@ -23,7 +23,7 @@ func CFTreeGetChildren(_ tree: CFTree!, _ children: UnsafeMutablePointer<Unmanag
 ## Parameters
 
 - `tree`: The tree to examine.
-- `children`: The C array of pointer-sized values to be filled with the children from  . This value must be a valid pointer to a C array of at least the size of the number of children in  . Use the   function to obtain the number of children in  . You are responsible for retaining and releasing the returned objects as needed.
+- `children`: The C array of pointer-sized values to be filled with the children from `tree`. This value must be a valid pointer to a C array of at least the size of the number of children in `tree`. Use the [`CFTreeGetChildCount(_:)`](cftreegetchildcount(_:).md) function to obtain the number of children in `tree`. You are responsible for retaining and releasing the returned objects as needed.
 
 ## See Also
 

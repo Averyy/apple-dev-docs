@@ -20,7 +20,7 @@ This method behaves analogously to [`insertText(_:)`](nstextview/inserttext(_:).
 
 ## Parameters
 
-- `sender`: The control that sent the message; may be  .
+- `sender`: The control that sent the message; may be `nil`.
 
 ## See Also
 

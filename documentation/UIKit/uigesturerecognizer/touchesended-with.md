@@ -28,8 +28,8 @@ Multiple touches are disabled by default. In order to receive multiple touch eve
 
 ## Parameters
 
-- `touches`: A set of   instances in the event represented by   that represent the touches in the   phase.
-- `event`: A   object representing the event to which the touches belong.
+- `touches`: A set of [`UITouch`](uitouch.md) instances in the event represented by `event` that represent the touches in the [`UITouch.Phase.ended`](uitouch/phase-swift.enum/ended.md) phase.
+- `event`: A [`UIEvent`](uievent.md) object representing the event to which the touches belong.
 
 ## See Also
 

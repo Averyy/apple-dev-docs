@@ -20,7 +20,7 @@ If the delegate implements this method it will receive the message after the pan
 
 ## Parameters
 
-- `aNotification`: 	Always 
+- `aNotification`: 	Always `DRBurnProgressPanelDidFinishNotification`
 
 
 ---

@@ -20,9 +20,9 @@ Values outside the range `[0, 1]` project to points outside of a view.
 
 ## Parameters
 
-- `x`: The normalized distance from the origin to the point in the   horizontal dimension.
-- `y`: The normalized distance from the origin to the point in the   vertical dimension.
-- `z`: The normalized distance from the origin to the point in the   depth dimension.
+- `x`: The normalized distance from the origin to the point in the horizontal dimension.
+- `y`: The normalized distance from the origin to the point in the vertical dimension.
+- `z`: The normalized distance from the origin to the point in the depth dimension.
 
 ## See Also
 

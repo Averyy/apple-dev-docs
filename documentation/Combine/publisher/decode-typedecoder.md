@@ -50,8 +50,8 @@ dataProvider.send(Data("{\"pubDate\":1574273638.575666, \"title\" : \"My First A
 
 ## Parameters
 
-- `type`: The encoded data to decode into a struct that conforms to the   protocol.
-- `decoder`: A decoder that implements the   protocol.
+- `type`: The encoded data to decode into a struct that conforms to the [`Decodable`](https://developer.apple.com/documentation/Swift/Decodable) protocol.
+- `decoder`: A decoder that implements the [`TopLevelDecoder`](topleveldecoder.md) protocol.
 
 ## See Also
 

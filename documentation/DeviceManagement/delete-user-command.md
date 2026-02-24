@@ -35,6 +35,45 @@ An error response uses one of the following error codes:
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>ForceDeletion</key>
+        <false/>
+        <key>RequestType</key>
+        <string>DeleteUser</string>
+        <key>UserName</key>
+        <string>example@acme.com</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_DeleteUser</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_DeleteUser</string>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>cf98820bd143abe0bbf151bed8e8e427594d2f88</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -42,6 +81,10 @@ An error response uses one of the following error codes:
   The command to delete a user’s account from a device.
 - [object DeleteUserResponse](deleteuserresponse.md)
   A response from the device after it processes the command to delete a user’s account from a device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

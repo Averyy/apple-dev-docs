@@ -21,7 +21,7 @@ An [`ATSFontRef`](atsfontref.md) object for the given font reference.
 ## Parameters
 
 - `font`: The font reference.
-- `attributes`: On output, points to a font descriptor containing additional attributes from the font. Can be  . Must be released by the caller.
+- `attributes`: On output, points to a font descriptor containing additional attributes from the font. Can be `NULL`. Must be released by the caller.
 
 ## See Also
 

@@ -54,8 +54,8 @@ To override column alignment, use [`gridColumnAlignment(_:)`](view/gridcolumnali
 
 ## Parameters
 
-- `alignment`: An optional   for the row. If you   don’t specify a value, the row uses the vertical alignment component   of the   parameter that you specify in the grid’s     initializer, which is   by default.
-- `content`: The builder closure that contains the child views. Each   view in the closure implicitly maps to a cell in the grid.
+- `alignment`: An optional [`VerticalAlignment`](verticalalignment.md) for the row. If you don’t specify a value, the row uses the vertical alignment component of the [`Alignment`](alignment.md) parameter that you specify in the grid’s [`init(alignment:horizontalSpacing:verticalSpacing:content:)`](grid/init(alignment:horizontalspacing:verticalspacing:content:).md) initializer, which is [`center`](verticalalignment/center.md) by default.
+- `content`: The builder closure that contains the child views. Each view in the closure implicitly maps to a cell in the grid.
 
 
 ---

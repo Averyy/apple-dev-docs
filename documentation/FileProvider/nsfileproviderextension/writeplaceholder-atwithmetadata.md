@@ -26,7 +26,7 @@ You must not override this method.
 
 ## Parameters
 
-- `placeholderURL`: The placeholder URL for the document. You can generate a placeholder URL from a document URL by calling  .
+- `placeholderURL`: The placeholder URL for the document. You can generate a placeholder URL from a document URL by calling [`placeholderURL(for:)`](nsfileproviderextension/placeholderurl(for:).md).
 - `metadata`: The metadata for this document.
 
 ## See Also

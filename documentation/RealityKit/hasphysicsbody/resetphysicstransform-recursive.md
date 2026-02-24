@@ -27,7 +27,7 @@ Conversely, directly modifying the transform of a dynamic body has no effect bec
 
 ## Parameters
 
-- `transform`: The new transform to inject into the dynamic physics   simulation of the entity.
+- `transform`: The new transform to inject into the dynamic physics simulation of the entity.
 - `recursive`: Apply the reset to child entities.
 
 ## See Also

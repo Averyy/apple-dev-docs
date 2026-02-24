@@ -34,8 +34,8 @@ The size of a sparse tile, in bytes, is the same for all sparse textures on a GP
 
 ## Parameters
 
-- `textureType`: An   instance.
-- `pixelFormat`: An   instance.
+- `textureType`: An [`MTLTextureType`](mtltexturetype.md) instance.
+- `pixelFormat`: An [`MTLPixelFormat`](mtlpixelformat.md) instance.
 - `sampleCount`: The number of samples for each pixel.
 
 ## See Also

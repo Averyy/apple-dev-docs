@@ -33,9 +33,9 @@ There is no matching notification for this method.
 ## Parameters
 
 - `application`: Your singleton app object.
-- `url`: The URL resource to open. This resource can be a network resource or a file. For information about the Apple-registered URL schemes, see  .
-- `sourceApplication`: The bundle ID of the app that is requesting your app to open the URL ( ).
-- `annotation`: A   supplied by the source app to communicate information to the receiving app.
+- `url`: The URL resource to open. This resource can be a network resource or a file. For information about the Apple-registered URL schemes, see [`Apple URL Scheme Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007899).
+- `sourceApplication`: The bundle ID of the app that is requesting your app to open the URL (`url`).
+- `annotation`: A [`Property list`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/PropertyList.html#//apple_ref/doc/uid/TP40008195-CH44) supplied by the source app to communicate information to the receiving app.
 
 ## See Also
 

@@ -27,7 +27,7 @@ A suspension that ends after this one ends can override the proposed time. Simil
 
 ## Parameters
 
-- `time`: The proposed playback time. Passing a nonnumeric time results in the same behavior as calling the   method.
+- `time`: The proposed playback time. Passing a nonnumeric time results in the same behavior as calling the [`end()`](avcoordinatedplaybacksuspension/end().md) method.
 
 ## See Also
 

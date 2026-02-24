@@ -26,7 +26,7 @@ A copy of matrix with `matrix.structure.attributes.transpose` bit flipped and `m
 
 #### Discussion
 
-Note that the underlying storage is  reference counted, so users must ensure the original matrix (or at least its underlying storage) is not destroyed before they are finished with the matrix returned by this routine.
+Note that the underlying storage is *not* reference counted, so users must ensure the original matrix (or at least its underlying storage) is not destroyed before they are finished with the matrix returned by this routine.
 
 ## Parameters
 

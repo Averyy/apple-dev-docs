@@ -79,6 +79,17 @@ Specify `com.apple.caldav.account` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `CalDAVAccountDescription` (string): The description of the account.
+- `CalDAVHostName` (string) *(required)*: The server’s address.
+- `CalDAVPassword` (string): The user’s password. Only use this in encrypted profiles.
+- `CalDAVPort` (integer): The server’s port.
+- `CalDAVPrincipalURL` (string): The base URL to the user’s calendar.
+- `CalDAVUsername` (string): The user name for logins. If this profile is part of a non-interactive install, the system requires this field.
+- `CalDAVUseSSL` (boolean): If `true`, the system enables SSL.
+- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+
 ## See Also
 
 - [object Accounts](accounts.md)

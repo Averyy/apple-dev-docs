@@ -18,7 +18,11 @@ Use this framework to create and control hardware-facilitated virtual machines a
 
 The Hypervisor framework has the following requirements:
 
+- **Supported hardware**: The Hypervisor framework requires hardware support to virtualize hardware resources. On Apple silicon, that includes the Virtualization Extensions. On Intel-based Mac computers, the framework supports machines with an Intel VT-x feature set that includes Extended Page Tables (EPT) and Unrestricted Mode.
+
 At runtime, determine whether the Hypervisor APIs are available on a particular machine with the sysctl command, passing `kern.hv_support` as an argument.
+
+- **Entitlements**: All process must have the [`com.apple.security.hypervisor`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hypervisor) entitlement to use Hypervisor API.
 
 ##### Virtual Resource Mapping
 
@@ -26,7 +30,7 @@ A guest is an operating system that runs on top of the virtual hardware. The ope
 
 Each virtual machine corresponds to a process on the host. There can only be one virtual machine at a time per process; the virtual machine creates it with [`hv_vm_create(_:)`](hv_vm_create(_:).md).
 
-Virtual CPUs (vCPUs) in a virtual machine map to POSIX threads. Create a new vCPU for the current thread with [`hv_vcpu_create(_:_:)`](hv_vcpu_create(_:_:).md). The vCPU runs when the thread calls [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md).
+Virtual CPUs (vCPUs) in a virtual machine map to POSIX threads. Create a new vCPU for the current thread with [`hv_vcpu_create(_:_:_:)`](hv_vcpu_create(_:_:).md). The vCPU runs when the thread calls [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md).
 
 Hypervisor maps the physical memory in the guest to virtual memory of the host process. Create a new memory mapping with [`hv_vm_map(_:_:_:_:)`](hv_vm_map(_:_:_:_:).md). Access to memory outside the mapped range causes [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md) to exit. Emulate memory-mapped hardware by emulating the memory access on exit and re-enter the guest with [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md).
 
@@ -44,7 +48,7 @@ At the start of a task:
 
 In each thread:
 
-- Create a virtual CPU with [`hv_vcpu_create(_:_:)`](hv_vcpu_create(_:_:).md).
+- Create a virtual CPU with [`hv_vcpu_create(_:_:_:)`](hv_vcpu_create(_:_:).md).
 - Call [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md) to run the vCPU.
 
 When a thread receives an exit event:

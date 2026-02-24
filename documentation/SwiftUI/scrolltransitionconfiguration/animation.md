@@ -30,7 +30,7 @@ If the transition is interactive, the given animation will be used to animate th
 
 ## Parameters
 
-- `animation`: An animation that will be used to apply the   transition to the view.
+- `animation`: An animation that will be used to apply the transition to the view.
 
 ## See Also
 

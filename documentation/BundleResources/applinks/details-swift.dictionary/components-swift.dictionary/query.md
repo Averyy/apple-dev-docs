@@ -29,6 +29,10 @@ The keys in this dictionary are [`NSURLQueryItem`](https://developer.apple.com/d
 
 The above definition matches a URL query component that has a name of `productID` and a value of `12345`.
 
+## Properties
+
+- `Any Key` (string)
+
 
 ---
 

@@ -23,7 +23,7 @@ Use this macro to free memory that you allocated [`OSTypeAlloc`](ostypealloc.md)
 
 ## Parameters
 
-- `inst`: The object that you want to free. After freeing the memory, the macro sets the value of   to  .
+- `inst`: The object that you want to free. After freeing the memory, the macro sets the value of `inst` to `NULL`.
 
 ## See Also
 

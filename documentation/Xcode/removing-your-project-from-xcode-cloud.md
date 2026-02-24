@@ -47,6 +47,13 @@ To disconnect Xcode Cloud from [`Bitbucket`](https://developer.apple.comhttps://
 
 To completely remove all traces of Xcode Cloud from your SCM provider, you need to remove the app or personal access token that allowed Xcode Cloud access to the repository. The process to do this is different for each SCM provider:
 
+- **[`Bitbucket`](https://developer.apple.comhttps://bitbucket.org)**: Sign into your Bitbucket Cloud account and go to your personal settings. Choose “App authorization” in the Access Management group and revoke the application authorization for Xcode Cloud.
+- **[`Bitbucket Server`](https://developer.apple.comhttps://bitbucket.org/product/enterprise)**: Sign in to your Bitbucket Server account and go to your account settings. Choose “HTTP access tokens” and revoke the token for Xcode Cloud using the Actions  > Revoke button.
+- **[`GitHub`](https://developer.apple.comhttps://github.com)**: Sign into your GitHub account. If you use a GitHub organization and the organization owns your Git repository, follow the steps described for GitHub Enterprise. If you don’t use a GitHub organization, go to your account settings. Choose Applications, click Configure next to the Xcode Cloud app, and then click Uninstall to remove the GitHub app from your account and repositories.
+- **[`GitHub Enterprise`](https://developer.apple.comhttps://github.com/enterprise)**: Sign into your GitHub Enterprise account and go to your account settings. Choose Applications > Configure, and then click Uninstall at the bottom of your GitHub app’s settings. This removes the GitHub app from your repositories. Next, choose Developer Settings > GitHub Apps and click Edit for the Xcode Cloud GitHub app. Navigate to the Advanced section and delete your app from your GitHub Enterprise account or organization.
+- **[`GitLab`](https://developer.apple.comhttps://gitlab.com)**: Sign into your GitLab account and navigate to your user preferences. Click Applications, and then scroll down to the list of authorized apps and revoke the authorization for the Xcode Cloud app.
+- **[`self-managed GitLab instances`](https://developer.apple.comhttps://about.gitlab.com/install)**: Sign into your account for your self-managed GitLab instance and go to your account settings.  Choose Applications and then delete the app for Xcode Cloud.
+
 ##### Remove the Slack Integration
 
 If you connected your team’s Slack workspace to Xcode Cloud, the connection between Xcode Cloud and your Slack workspace remains when you delete a workflow or remove your project. To remove the Slack integration, you’ll need to uninstall the Slack app from your team’s Slack workspace:

@@ -10,15 +10,15 @@ Filter an image by convolving it with custom and high-speed kernels.
 
 #### Overview
 
-This sample code project uses a variety of convolution techniques to blur an image with custom kernels and built-in high-speed kernels.  is a common image-processing technique that changes the value of a pixel according to the values of its surrounding pixels. Many common image filters, such as blurring, detecting edges, sharpening, and embossing, derive from convolution.
+This sample code project uses a variety of convolution techniques to blur an image with custom kernels and built-in high-speed kernels. *Convolution* is a common image-processing technique that changes the value of a pixel according to the values of its surrounding pixels. Many common image filters, such as blurring, detecting edges, sharpening, and embossing, derive from convolution.
 
- form the basis of convolution operations. Kernels are 1D or 2D grids of numbers that indicate the influence of a pixel’s neighbors on its final value. To calculate the value of each transformed pixel, add the products of each surrounding pixel value with the corresponding kernel value. During a convolution operation, the kernel passes over every pixel in the image, repeating this procedure, and then applies the effect to the entire image.
+*Kernels* form the basis of convolution operations. Kernels are 1D or 2D grids of numbers that indicate the influence of a pixel’s neighbors on its final value. To calculate the value of each transformed pixel, add the products of each surrounding pixel value with the corresponding kernel value. During a convolution operation, the kernel passes over every pixel in the image, repeating this procedure, and then applies the effect to the entire image.
 
 ![A diagram that shows a 3 by 3 convolution kernel centered over a source pixel, highlighting the new pixel value.](https://docs-assets.developer.apple.com/published/6dcd6b1843aa1d3fd0cd5229cd14ee86/convolution_diagram_2x.png)
 
 Kernels don’t need to have the same height and width, and can be 1D (that is, either the height or the width is 1) or 2D (that is, both the height and the width are greater than 1). When a convolution operation transforms a pixel, both dimensions must be odd numbers to center the kernel over the pixel.
 
-The simplest kernel, known as an , contains a single value: 1. The following formula shows the result when applying the kernel to the central value in a grid of nine values. It multiplies the pixel by the central value in the convolution kernel, and then multiplies the surrounding pixel values by 9. The sum of these values is 0.5.
+The simplest kernel, known as an *identity kernel*, contains a single value: 1. The following formula shows the result when applying the kernel to the central value in a grid of nine values. It multiplies the pixel by the central value in the convolution kernel, and then multiplies the surrounding pixel values by 9. The sum of these values is 0.5.
 
 ![A mathematical formula showing a 3-by-3 matrix multiplied by a 3-by-3 matrix with a result on the right.](https://docs-assets.developer.apple.com/published/eb0878f443657a7c1c14fb4d58b3ba45/identity_formula_2x.png)
 
@@ -30,11 +30,11 @@ To convolve an image, select a blur filter from the SwiftUI [`Picker`](https://d
 
 ##### Blur an Image with a 2d Kernel
 
-A  returns the average value of the neighboring pixels. In the following example, the kernel contains nine values and the result is the sum of 1 divided by 9 multiplied by each of the pixel values:
+A *box blur kernel* returns the average value of the neighboring pixels. In the following example, the kernel contains nine values and the result is the sum of 1 divided by 9 multiplied by each of the pixel values:
 
 ![A mathematical formula showing a 3-by-3 matrix multiplied by a 3-by-3 matrix with a result on the right.](https://docs-assets.developer.apple.com/published/4e42447ed7760464ee6e57eb2884db9a/box_blur_formula_2x.png)
 
-Note that the sum of the values in the convolution kernel above is 1 — that is, the kernel is . If the sum of the values is greater than 1, the resulting image is brighter than the source. If the sum is less than 1, the resulting image is darker than the source.
+Note that the sum of the values in the convolution kernel above is 1 — that is, the kernel is *normalized*. If the sum of the values is greater than 1, the resulting image is brighter than the source. If the sum is less than 1, the resulting image is darker than the source.
 
 A more complex blurring kernel varies the influence of pixels according to their distance from the center of the kernel, and yields a smoother blurring effect. The following kernel (based on a Hann window) is suitable for use with an integer format (for example, [`vImage.Interleaved8x4`](vimage/interleaved8x4.md)) convolution:
 
@@ -71,7 +71,7 @@ sourceBuffer.convolve(with: kernel,
 
 ##### Blur an Image with a Separable Kernel
 
-The `kernel2D` kernel described in the previous section is ; that is, it’s the  of a 1D horizontal kernel and a 1D vertical kernel. A separable kernel allows splitting of the 2D convolution into two 1D passes, resulting in faster processing times. The following formula shows the two vectors that form `kernel2D`:
+The `kernel2D` kernel described in the previous section is *separable*; that is, it’s the *outer product* of a 1D horizontal kernel and a 1D vertical kernel. A separable kernel allows splitting of the 2D convolution into two 1D passes, resulting in faster processing times. The following formula shows the two vectors that form `kernel2D`:
 
 ![A mathematical formula showing that the outer product of a 7-by-1 vector and a 1-by-7 vector is the 7-by-7 matrix.](https://docs-assets.developer.apple.com/published/3ebcc136a8da5946e27dc638c043b19b/separable_formula_2x.png)
 
@@ -126,7 +126,7 @@ Although the box filter is the fastest blur, the following example shows how it 
 
 ![A very blurred photograph of a waterwheel with a partly cloudy sky in the background.](https://docs-assets.developer.apple.com/published/7b38cc0715cc613a2a2011b54d024253/box_filter_2x.png)
 
-The tent filter returns the weighted average of pixel values in a circular region that surrounds the pixel that vImage is transforming.  means that the influence of pixels on the result decreases the further they are away from the transformed pixel.
+The tent filter returns the weighted average of pixel values in a circular region that surrounds the pixel that vImage is transforming. *Weighted average* means that the influence of pixels on the result decreases the further they are away from the transformed pixel.
 
 ![A 9-by-9 rectangle of pixels with a red border surrounding the center circular region of pixels.](https://docs-assets.developer.apple.com/published/29874f8091d96805749cc35be812910c/tent_2x.png)
 

@@ -40,8 +40,8 @@ The photo output calls this method only once for each Live Photo capture.
 - `outputFileURL`: The file URL at which the movie content of the Live Photo was written.
 - `duration`: The duration of the Live Photo movie.
 - `photoDisplayTime`: The timestamp within the movie to which the still image part of the Live Photo corresponds.
-- `resolvedSettings`: An object describing the settings used for this capture. Match this object’s   value to the   property of the photo settings object you initiated capture with to determine which capture request this delegate call corresponds to. You can also use this object to find out which values the photo output has chosen for automatic settings.
-- `error`: If the capture process could not proceed successfully, an error object describing the failure; otherwise,  .
+- `resolvedSettings`: An object describing the settings used for this capture. Match this object’s [`uniqueID`](avcapturephotosettings/uniqueid.md) value to the [`uniqueID`](avcapturephotosettings/uniqueid.md) property of the photo settings object you initiated capture with to determine which capture request this delegate call corresponds to. You can also use this object to find out which values the photo output has chosen for automatic settings.
+- `error`: If the capture process could not proceed successfully, an error object describing the failure; otherwise, `nil`.
 
 ## See Also
 

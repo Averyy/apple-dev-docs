@@ -21,8 +21,8 @@ typealias EKEventStoreRequestAccessCompletionHandler = (Bool, (any Error)?) -> V
 
 ## Parameters
 
-- `granted`:   if the user allows the app to access data in the event store; otherwise,  .
-- `error`: The error that occurred, if any; otherwise,  .
+- `granted`: [`true`](https://developer.apple.com/documentation/Swift/true) if the user allows the app to access data in the event store; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `error`: The error that occurred, if any; otherwise, `nil`.
 
 ## See Also
 

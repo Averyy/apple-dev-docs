@@ -34,8 +34,8 @@ If you want to compare one entire string with another string, use the [`CFString
 
 - `theString1`: The first string to use in the comparison.
 - `theString2`: The second string to use in the comparison.
-- `rangeToCompare`: The range of characters in   to be used in the comparison to  . To use the whole string, pass the range   or use  . The specified range must not exceed the length of the string.
-- `compareOptions`: Flags that select different types of comparisons, such as localized comparison, case-insensitive comparison, and non-literal comparison. If you want the default comparison behavior, pass  . See   for the available flags.
+- `rangeToCompare`: The range of characters in `theString1` to be used in the comparison to `theString2`. To use the whole string, pass the range `CFRangeMake(0, CFStringGetLength(theString1))` or use [`CFStringCompare(_:_:_:)`](cfstringcompare(_:_:_:).md). The specified range must not exceed the length of the string.
+- `compareOptions`: Flags that select different types of comparisons, such as localized comparison, case-insensitive comparison, and non-literal comparison. If you want the default comparison behavior, pass `0`. See [`String Comparison Flags`](string-comparison-flags.md) for the available flags.
 
 ## See Also
 

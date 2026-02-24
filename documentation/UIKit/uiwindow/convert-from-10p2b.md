@@ -24,8 +24,8 @@ The converted rectangle.
 
 ## Parameters
 
-- `rect`: A rectangle in the coordinate system of  .
-- `window`: The source window containing the specified  . Specify   to convert the rectangle from the logical coordinate system of the screen, which is measured in points.
+- `rect`: A rectangle in the coordinate system of `window`.
+- `window`: The source window containing the specified `rect`. Specify `nil` to convert the rectangle from the logical coordinate system of the screen, which is measured in points.
 
 ## See Also
 

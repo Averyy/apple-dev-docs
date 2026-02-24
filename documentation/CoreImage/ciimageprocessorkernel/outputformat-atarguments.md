@@ -31,8 +31,8 @@ If the outputFormat is `0`, then the output will be a supported format that best
 
 ## Parameters
 
-- `outputIndex`: The index that tells you which processor output for which to return the desired 
-- `arguments`: The arguments dictionary that was passed to  .
+- `outputIndex`: The index that tells you which processor output for which to return the desired `CIPixelFormat`
+- `arguments`: The arguments dictionary that was passed to [`apply(withExtent:inputs:arguments:)`](ciimageprocessorkernel/apply(withextent:inputs:arguments:).md).
 
 
 ---

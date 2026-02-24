@@ -25,7 +25,7 @@ A [`JSStringRef`](jsstringref.md) that contains `string`. Ownership follows [`Th
 
 ## Parameters
 
-- `string`: The null-terminated UTF-8 string to copy into the new  .
+- `string`: The null-terminated UTF-8 string to copy into the new [`JSStringRef`](jsstringref.md).
 
 ## See Also
 

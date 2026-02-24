@@ -9,6 +9,10 @@ The identifier of a category declared by the app extension.
 - iOS 10.0+
 - iPadOS 10.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [IDMessageFilterExtensionNetworkURL](information-property-list/nsextension/nsextensionattributes/idmessagefilterextensionnetworkurl.md)

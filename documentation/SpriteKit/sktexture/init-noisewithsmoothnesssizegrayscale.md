@@ -61,9 +61,9 @@ for i in 0...2 {
 
 ## Parameters
 
-- `smoothness`: A value that indicates how similar neighboring texels will be in the resulting texture. The value should be between   and  . A value of   generates a smooth surface.
+- `smoothness`: A value that indicates how similar neighboring texels will be in the resulting texture. The value should be between `0.0` and `1.0`. A value of `1.0` generates a smooth surface.
 - `size`: The size of the new texture in points.
-- `grayscale`: If  , all four components of each texel will have equal values. If  , all four values are completely randomized.
+- `grayscale`: If [`true`](https://developer.apple.com/documentation/Swift/true), all four components of each texel will have equal values. If [`false`](https://developer.apple.com/documentation/Swift/false), all four values are completely randomized.
 
 ## See Also
 

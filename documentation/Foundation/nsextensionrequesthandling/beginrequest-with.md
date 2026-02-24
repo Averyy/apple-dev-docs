@@ -29,7 +29,7 @@ If your subclass conforms to this protocol and overrides `beginRequestWithExtens
 
 ## Parameters
 
-- `context`: An   object that represents the context in which the host app makes the request. Typically, the context contains data that the extension can work on.
+- `context`: An [`NSExtensionContext`](nsextensioncontext.md) object that represents the context in which the host app makes the request. Typically, the context contains data that the extension can work on.
 
 ## See Also
 

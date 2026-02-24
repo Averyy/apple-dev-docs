@@ -52,6 +52,13 @@ If the user authorized your app with Always authorization ([`CLAuthorizationStat
 
 When a user requests the location of another user, your app sends the request to your server, which sends a location push request to APNs. Ensure that your APNs `POST` request contains the following fields for a `location` push type:
 
+- **`method`**: (Required) The value is `POST`.
+- **`path`**: (Required) The path to the device token. The value of this header is `/3/device/<device_token>`, where `<device_token>` is the hexadecimal identifier of the user’s device. Your app receives the token when it calls [`startMonitoringLocationPushes(completion:)`](cllocationmanager/startmonitoringlocationpushes(completion:).md) to start monitoring location pushes.
+- **`authorization`**: (Required for token-based authentication) The value of this header is `bearer <provider_token>`, where `<provider_token>` is the encrypted token that authorizes you to send notifications for the specified topic. For more information, see [`Establishing a token-based connection to APNs`](https://developer.apple.com/documentation/UserNotifications/establishing-a-token-based-connection-to-apns).
+- **`apns-topic`**: The topic is your app’s bundle ID with the suffix `".location-query"`.
+- **`apns-push-type`**: (Recommended) The value of this header is `location`.
+- **`apns-priority`**: The priority of the notification. If you omit this header, APNs sets the notification priority to `10`. If a user initiates the location query, set this header to `10`. If your app’s server initiates the location query (for example, on a periodic interval) set this header to `5` to send the notification based on power considerations on the user’s device.
+
 For more information about sending APNs requests and using command-line tools to do so, see [`Sending notification requests to APNs`](https://developer.apple.com/documentation/UserNotifications/sending-notification-requests-to-apns) and [`Sending push notifications using command-line tools`](https://developer.apple.com/documentation/UserNotifications/sending-push-notifications-using-command-line-tools).
 
 ## See Also

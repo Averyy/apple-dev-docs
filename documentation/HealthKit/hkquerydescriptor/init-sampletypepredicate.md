@@ -21,8 +21,8 @@ init(sampleType: HKSampleType, predicate: NSPredicate?)
 
 ## Parameters
 
-- `sampleType`: The data type of samples that match this descriptor. For more information, see  .
-- `predicate`: The predicate used to filter samples that match this descriptor. If the predicate is  , the descriptor matches all samples of the specified data type.
+- `sampleType`: The data type of samples that match this descriptor. For more information, see [`Data types`](data-types.md).
+- `predicate`: The predicate used to filter samples that match this descriptor. If the predicate is `nil`, the descriptor matches all samples of the specified data type.
 
 
 ---

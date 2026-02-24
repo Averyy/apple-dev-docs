@@ -26,7 +26,7 @@ A result code. See Result Codes.
 ## Parameters
 
 - `inAQ`: The audio queue that has the property value whose size you want to get.
-- `inID`: The ID of the property value whose size you want to get. See  .
+- `inID`: The ID of the property value whose size you want to get. See [`AudioQueuePropertyID`](audioqueuepropertyid.md).
 - `outDataSize`: On output, the size of the requested property value.
 
 ## See Also

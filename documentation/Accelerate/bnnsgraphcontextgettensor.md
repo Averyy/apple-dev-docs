@@ -27,10 +27,10 @@ func BNNSGraphContextGetTensor(_ context: bnns_graph_context_t, _ function: Unsa
 ## Parameters
 
 - `context`: The graph context.
-- `function`: The function. Specify as   if the graph only contains one function.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
 - `argument`: The name of the input or output argument.
-- `fill_known_dynamic_shapes`: A Boolean value that specifies whether the function should replace any dynamic shapes for the next execution of the context. BNNS derives these shapes either from the default shapes in the source model, or from a preceding calls to   or  . If BNNS is unable to derive the shapes, the function sets the dimensions to  .
-- `tensor`: The tensor. On output, all fields apart from   contain the properties for the specified function argument.
+- `fill_known_dynamic_shapes`: A Boolean value that specifies whether the function should replace any dynamic shapes for the next execution of the context. BNNS derives these shapes either from the default shapes in the source model, or from a preceding calls to [`BNNSGraphContextSetDynamicShapes(_:_:_:_:)`](bnnsgraphcontextsetdynamicshapes(_:_:_:_:).md) or [`BNNSGraphContextSetBatchSize(_:_:_:)`](bnnsgraphcontextsetbatchsize(_:_:_:).md). If BNNS is unable to derive the shapes, the function sets the dimensions to `-1`.
+- `tensor`: The tensor. On output, all fields apart from [`data`](bnnstensor/data.md) contain the properties for the specified function argument.
 
 ## See Also
 

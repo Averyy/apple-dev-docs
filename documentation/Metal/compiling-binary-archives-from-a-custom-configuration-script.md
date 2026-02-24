@@ -10,6 +10,89 @@ Creating binary archives for additional GPU architectures, as [`Creating binary 
 
 This article shows you how to create a Metal translator configuration script that represents a pipeline state, as the following code example demonstrates:
 
+**Swift**:
+
+```swift
+let enableRayTracing = true
+
+func createPipelineDescriptors() throws -> (MTLRenderPipelineDescriptor, MTLComputePipelineDescriptor)? {
+    guard let device = MTLCreateSystemDefaultDevice() else { return nil }
+
+    let renderLibraryURL = Bundle.main.url(forResource: "render",
+                                           withExtension: "metallib")
+    let renderBinaryArchiveURL = Bundle.main.url(forResource: "render.binary",
+                                                 withExtension: "metallib")
+
+    guard let renderLibraryURL else { return nil }
+    guard let renderBinaryArchiveURL else { return nil }
+
+    let archiveDescriptor = MTLBinaryArchiveDescriptor()
+    archiveDescriptor.url = renderBinaryArchiveURL
+
+    let library = try device.makeLibrary(URL: renderLibraryURL)
+    let archive = try device.makeBinaryArchive(descriptor: archiveDescriptor)
+
+    let renderPipelineDescriptor = try makeRenderDescriptor(library: library,
+                                                            archive: archive)
+
+    let computePipelineDescriptor = try computePipelineDescriptor(library: library,
+                                                                  archive: archive)
+
+    return (renderPipelineDescriptor, computePipelineDescriptor)
+}
+```
+
+**Objective-C**:
+
+```objective-c
+const BOOL enableRayTracing = YES;
+
+BOOL createPipelineDescriptors(MTLRenderPipelineDescriptor **renderPipelineDescriptor,
+                               MTLComputePipelineDescriptor **computePipelineDescriptor)
+{
+    if (nil == renderPipelineDescriptor || nil == computePipelineDescriptor) {
+        return NO;
+    }
+
+    id<MTLDevice> device = MTLCreateSystemDefaultDevice();
+    NSBundle *mainBundle = NSBundle.mainBundle;
+    NSURL *renderLibraryURL;
+    renderLibraryURL= [mainBundle URLForResource:@"render"
+                                   withExtension:@"metallib"];
+
+    NSURL *renderBinaryArchiveURL;
+    renderBinaryArchiveURL = [mainBundle URLForResource:@"render.binary"
+                                          withExtension:@"metallib"];
+
+    assert(nil == renderLibraryURL || nil == renderBinaryArchiveURL);
+
+    NSError *error = nil;
+    id<MTLLibrary> library = [device newLibraryWithURL:renderLibraryURL
+                                                 error:&error];
+
+    if (nil != error) {
+        reportError(error);
+        return NO;
+    }
+
+    MTLBinaryArchiveDescriptor *archiveDescriptor = [MTLBinaryArchiveDescriptor new];
+    archiveDescriptor.url = [mainBundle URLForResource:@"render.binary"
+                                         withExtension:@"metallib"];
+
+    id<MTLBinaryArchive> archive = [device newBinaryArchiveWithDescriptor:archiveDescriptor
+                                                                    error:&error];
+
+    if (nil != error) {
+        reportError(error);
+        return NO;
+    }
+
+    *renderPipelineDescriptor = makeRenderDescriptor(library, archive);
+    *computePipelineDescriptor = makeComputeDescriptor(library, archive);
+    return YES;
+}
+```
+
 The code example above includes a render pipeline with a single-stage fragment and vertex shader, as well as a compute pipeline. The library `render.metallib` contains the Metal IR for the shaders, and `render.binary.metallib` is the binary you generate from the Metal translator. The compute kernel optonally uses ray tracing, depending on the value of `enableRayTracing`, and enabling ray tracing uses intersection functions.
 
 ##### Create Your Configuration Script and Add Libraries
@@ -36,6 +119,69 @@ The basic format of this file is a JSON dictionary containing at least two keys,
 ##### Add Render Pipeline States
 
 Each pipeline in your configuration script needs a reference to shader functions and information about your app’s pipeline state when Metal invokes them. Any optional property that you omit from a pipeline description in the configuration script uses its default value, just as with a pipeline state descriptor instance in code. The example below creates an [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) instance for both a `vertexFunction` and a `fragmentFunction`. This render pipeline also uses a nondefault [`MTLPixelFormat.bgra8Unorm`](mtlpixelformat/bgra8unorm.md) pixel format.
+
+**Swift**:
+
+```swift
+func makeRenderDescriptor(library: MTLLibrary,
+                          archive: MTLBinaryArchive) throws -> MTLRenderPipelineDescriptor {
+    let vertexDescriptor = MTLFunctionDescriptor()
+    vertexDescriptor.name = "vertexShader"
+    vertexDescriptor.binaryArchives = [archive]
+    let vertexFunction = try library.makeFunction(descriptor: vertexDescriptor)
+
+    let fragmentDescriptor = MTLFunctionDescriptor()
+    fragmentDescriptor.name = "fragmentShader"
+    fragmentDescriptor.binaryArchives = [archive]
+    let fragmentFunction = try library.makeFunction(descriptor: fragmentDescriptor)
+
+    let renderPipelineDescriptor = MTLRenderPipelineDescriptor()
+    renderPipelineDescriptor.vertexFunction = vertexFunction
+    renderPipelineDescriptor.fragmentFunction = fragmentFunction
+    renderPipelineDescriptor.colorAttachments[0].pixelFormat = .bgra8Unorm
+    renderPipelineDescriptor.binaryArchives = [archive]
+
+    return renderPipelineDescriptor
+}
+```
+
+**Objective-C**:
+
+```objective-c
+MTLRenderPipelineDescriptor *makeRenderDescriptor(id<MTLLibrary> library,
+                                                  id<MTLBinaryArchive> archive)
+{
+    NSError* error;
+
+    MTLFunctionDescriptor* vertexDescriptor = [MTLFunctionDescriptor new];
+    vertexDescriptor.name = @"vertexShader";
+    vertexDescriptor.binaryArchives = @[archive];
+    id<MTLFunction> vertexFunction = [library newFunctionWithDescriptor:vertexDescriptor
+                                                                  error:&error];
+    if (nil != error) {
+        reportError(error);
+        return nil;
+    }
+
+    MTLFunctionDescriptor *fragmentDescriptor = [MTLFunctionDescriptor new];
+    fragmentDescriptor.name = @"fragmentShader";
+    fragmentDescriptor.binaryArchives = @[archive];
+    id<MTLFunction> fragmentFunction = [library newFunctionWithDescriptor:fragmentDescriptor
+                                                                    error:&error];
+
+    if (nil != error) {
+        reportError(error);
+        return nil;
+    }
+
+    MTLRenderPipelineDescriptor *renderPipelineDescriptor = [MTLRenderPipelineDescriptor new];
+    renderPipelineDescriptor.vertexFunction = vertexFunction;
+    renderPipelineDescriptor.fragmentFunction = fragmentFunction;
+    renderPipelineDescriptor.colorAttachments[0].pixelFormat = MTLPixelFormatBGRA8Unorm;
+
+    return renderPipelineDescriptor;
+}
+```
 
 In your translator configuration script, the top-level `pipelines` dictionary contains the definition for each pipeline. Inside this dictionary, the `render_pipelines` key contains an array of dictionaries describing your render pipelines. Function references use a format of `alias:<library name>#<function name>`.
 
@@ -72,6 +218,69 @@ Dictionaries describing render pipelines need both a `vertex_function` and a `fr
 ##### Add Compute Pipeline States with Visible and Intersection Functions
 
 In the following code example, the compute kernel uses the ray-tracing intersection function `sphereIntersection` and the visible function `evaluateGeometry`:
+
+**Swift**:
+
+```swift
+func computePipelineDescriptor(library: MTLLibrary,
+                               archive: MTLBinaryArchive) throws -> MTLComputePipelineDescriptor {
+    let sphereFunctionDescriptor = MTLFunctionDescriptor()
+    sphereFunctionDescriptor.name = "sphereIntersection"
+    sphereFunctionDescriptor.options = [.compileToBinary]
+    sphereFunctionDescriptor.binaryArchives = [archive]
+
+    let geometryFunctionDescriptor = sphereFunctionDescriptor
+    geometryFunctionDescriptor.name = "evaluateGeometry"
+
+    let sphereFunction = try library.makeFunction(descriptor: sphereFunctionDescriptor)
+    let geometryFunction = try library.makeFunction(descriptor: geometryFunctionDescriptor)
+
+    let linkedFunctions = MTLLinkedFunctions()
+    linkedFunctions.functions = [sphereFunction, geometryFunction]
+    linkedFunctions.binaryFunctions = [sphereFunction, geometryFunction]
+
+    // ...
+```
+
+**Objective-C**:
+
+```objective-c
+MTLComputePipelineDescriptor* makeComputeDescriptor(id<MTLLibrary> library,
+                                                    id<MTLBinaryArchive> archive)
+{
+    MTLFunctionDescriptor *sphereFunctionDescriptor =[MTLFunctionDescriptor new];
+    sphereFunctionDescriptor.name = @"sphereIntersection";
+    sphereFunctionDescriptor.options = MTLFunctionOptionCompileToBinary;
+    sphereFunctionDescriptor.binaryArchives = @[archive];
+
+    MTLFunctionDescriptor *geometryFunctionDescriptor = sphereFunctionDescriptor;
+    geometryFunctionDescriptor.name = @"evaluateGeometry";
+    geometryFunctionDescriptor.options = MTLFunctionOptionCompileToBinary;
+
+    NSError* error;
+    id<MTLFunction> sphereFunction;
+    sphereFunction = [library newFunctionWithDescriptor:sphereFunctionDescriptor
+                                                  error:&error];
+
+    if (nil != error) {
+        reportError(error);
+        return nil;
+    }
+
+    id<MTLFunction> geometryFunction;
+    geometryFunction = [library newFunctionWithDescriptor:geometryFunctionDescriptor
+                                                    error:&error];
+
+    if (nil != error) {
+        reportError(error);
+        return nil;
+    }
+
+    MTLLinkedFunctions *linkedFunctions = [MTLLinkedFunctions new];
+    linkedFunctions.binaryFunctions = @[sphereFunction, geometryFunction];
+
+    // ...
+```
 
 To add `sphereIntersection` and `evaluateGeometry` to your binary archive, modify the top-level `functions` key of your configuration script. This key’s value is a dictionary that describes the functions available to the Metal translator during compilation. Add the `intersection_functions` key for your intersection functions, and the v`isible_functions` key for visible functions. Each of these keys has an array of dictionaries containing the `function` key, which holds a reference to the function your shaders call.
 
@@ -112,6 +321,73 @@ The following code example is the JSON configuration script representation of th
 ##### Add Specialization Constants for Your Compute Pipeline
 
 In this article’s code examples, the `enableRayTracing` constant controls whether the compute kernel uses ray-tracing support. In your app, you use `rayTracingKernel` for the compute kernel’s name, but each constant specializes the function to a single binary representation that has its own name. The following code example sets the specialized function names `rayTracingWithIntersection` and `rayTracingNoIntersection`, depending on the value of `enableRayTracing`:
+
+**Swift**:
+
+```swift
+func makeComputeDescriptor(library: MTLLibrary,
+                           archive: MTLBinaryArchive) throws -> MTLComputePipelineDescriptor {
+    // ...
+
+    let computeSpecialization = MTLFunctionConstantValues()
+
+    withUnsafePointer(to: enableRayTracing) { pointer in
+        computeSpecialization.setConstantValue(pointer, type: .bool, index: 0)
+    }
+
+    let rayTracingDescriptor = MTLFunctionDescriptor()
+    rayTracingDescriptor.name = "rayTracingKernel"
+    rayTracingDescriptor.constantValues = computeSpecialization
+    rayTracingDescriptor.specializedName = enableRayTracing ? "rayTracingWithIntersection" : "rayTracingNoIntersection"
+    rayTracingDescriptor.binaryArchives = [archive]
+
+    let rayTracingKernel = try library.makeFunction(descriptor: rayTracingDescriptor)
+
+    let computePipelineDescriptor = MTLComputePipelineDescriptor()
+    computePipelineDescriptor.computeFunction = rayTracingKernel
+    computePipelineDescriptor.linkedFunctions = linkedFunctions
+    computePipelineDescriptor.binaryArchives = [archive]
+
+    return computePipelineDescriptor
+}
+```
+
+**Objective-C**:
+
+```objective-c
+MTLComputePipelineDescriptor* makecomputePipelineDescriptor(id<MTLLibrary> library,
+                                                            id<MTLBinaryArchive> archive)
+{
+    // ...
+
+    MTLFunctionConstantValues* computeSpecialization = [MTLFunctionConstantValues new];
+    [computeSpecialization setConstantValue:&enableRayTracing
+                                       type:MTLDataTypeBool
+                                    atIndex:0];
+
+    MTLFunctionDescriptor *rayTracingDescriptor = [MTLFunctionDescriptor new];
+    rayTracingDescriptor.name = @"rayTracingKernel";
+    rayTracingDescriptor.constantValues = computeSpecialization;
+    rayTracingDescriptor.specializedName = enableRayTracing ? @"rayTracingWithIntersection" : @"rayTracingNoIntersection";
+    rayTracingDescriptor.binaryArchives = @[archive];
+
+    id<MTLFunction> rayTracingKernel = [library newFunctionWithDescriptor:rayTracingDescriptor
+                                                                    error:&error];
+
+    if (nil != error) {
+        reportError(error);
+        return nil;
+    }
+
+    MTLComputePipelineDescriptor *computePipelineDescriptor = [MTLComputePipelineDescriptor new];
+    computePipelineDescriptor.computeFunction = rayTracingKernel;
+    computePipelineDescriptor.threadGroupSizeIsMultipleOfThreadExecutionWidth = YES;
+    computePipelineDescriptor.linkedFunctions = linkedFunctions;
+    computePipelineDescriptor.binaryArchives = @[archive];
+
+    return computePipelineDescriptor;
+}
+```
 
 Your Metal pipeline state contains any constants shaders use, so your JSON configuration script needs to map these constants to a specialized function name. In a Metal translator JSON configuration script, each constant has an `id_type` that defines how the `id` resolves in your app. Constants also have a `value_type` that defines the type of the constant, and a `value` that provides the constant itself. When Metal doesn’t find a specialized function for a constant, the system falls back to compile shaders from Metal IR.
 

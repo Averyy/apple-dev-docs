@@ -10,9 +10,9 @@ Convert an image to L*a*b* color space and apply hue adjustment.
 
 #### Overview
 
-This sample code project allows you to adjust the hue of an image by treating the chrominance information as 2D coordinates, and transforming those values with a rotation matrix. You can convert an RGB image — with its pixels represented as red, green, and blue values — to L*a*b*, where luminance and chrominance are stored discretely. The  in L*a*b* refers to the lightness, and the  and  refer to the red-green and blue-yellow values, respectively.
+This sample code project allows you to adjust the hue of an image by treating the chrominance information as 2D coordinates, and transforming those values with a rotation matrix. You can convert an RGB image — with its pixels represented as red, green, and blue values — to L*a*b*, where luminance and chrominance are stored discretely. The *L** in L*a*b* refers to the lightness, and the *a** and *b** refer to the red-green and blue-yellow values, respectively.
 
-The image below shows an approximation of an L*a*b* color chart. The  value transitions horizontally (left to right) from negative, through zero, to positive, and the  value transitions vertically (bottom to top) from negative, through zero, to positive. Because this sample code focuses on color rather than lightness, the image doesn’t consider L*.
+The image below shows an approximation of an L*a*b* color chart. The *a** value transitions horizontally (left to right) from negative, through zero, to positive, and the *b** value transitions vertically (bottom to top) from negative, through zero, to positive. Because this sample code focuses on color rather than lightness, the image doesn’t consider L*.
 
 ![A graphic containing vertical and horizontal gradients. The gradient colors transition from green on the left to red on the right, and from yellow at the top to blue at the bottom.](https://docs-assets.developer.apple.com/published/8b5229283b3e0e9790f3ad28ee2bb7e2/lab-color-chart_2x.png)
 
@@ -35,7 +35,7 @@ var labImageFormat = vImage_CGImageFormat(
     renderingIntent: .defaultIntent)!
 ```
 
-On return, `labImageFormat` describes the interleaved L*a*b* pixels over which this sample works. The first channel in each pixel is the lightness, and the second and third channels are the  and , respectively.
+On return, `labImageFormat` describes the interleaved L*a*b* pixels over which this sample works. The first channel in each pixel is the lightness, and the second and third channels are the *a** and *b**, respectively.
 
 ##### Generate the Pixel Buffer and Image Format From the Source Image
 
@@ -94,9 +94,9 @@ For more information about working with planar buffers, see [`Optimizing image-p
 
 ##### Apply the Hue Adjustment
 
-The app adjusts the hue of an image by rotating a two-element vector, described by  and . For more information about working with rotation matrices, see [`Working with Matrices`](working-with-matrices.md).
+The app adjusts the hue of an image by rotating a two-element vector, described by *a** and *b**. For more information about working with rotation matrices, see [`Working with Matrices`](working-with-matrices.md).
 
-The following visualizes a sample color (marked ) rotated by -90º (marked ) and 45º (marked ):
+The following visualizes a sample color (marked *A*) rotated by -90º (marked *C*) and 45º (marked *B*):
 
 ![A graphic showing a color rotated by minus 90 degrees and by 45 degrees. The background contains vertical and horizontal gradients. The colors transition from green on the left to red on the right, and from yellow at the top to blue at the bottom. The original color is light yellow. The color that is rotated minus 90 degrees is light green, and the color that is rotated 45 degrees is light red. ](https://docs-assets.developer.apple.com/published/057803bef57b84075891b0e92e7f3688/ColorRotate_2x.png)
 
@@ -114,7 +114,7 @@ let rotationMatrix = [
 }
 ```
 
-The `preBias` and `postBias` values effectively shift the  and  values from `0...255` to `-128...127`, so the rotation is centered where  and  are zero.
+The `preBias` and `postBias` values effectively shift the *a** and *b** values from `0...255` to `-128...127`, so the rotation is centered where *a** and *b** are zero.
 
 ```swift
 let preBias = [Int](repeating: -128, count: 3)
@@ -134,7 +134,7 @@ labPlanarDestination.multiply(
     destination: labPlanarDestination)
 ```
 
-On return, `labPlanarDestination` contains the hue-adjusted  and  channels.
+On return, `labPlanarDestination` contains the hue-adjusted *a** and *b** channels.
 
 ##### Display the Image
 

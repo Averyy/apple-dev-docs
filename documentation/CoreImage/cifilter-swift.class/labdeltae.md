@@ -29,6 +29,9 @@ This method applies the Lab ΔE filter to an image. The effect creates an image 
 
 The Lab ΔE filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`image2`**: An image with the type [`CIImage`](ciimage.md) the system uses for comparison.
+
 The following code creates a filter that removes the background from the input image:
 
 ```swift

@@ -28,8 +28,8 @@ func newTextures(URLs: [URL], options: [MTKTextureLoader.Option : Any]? = nil) a
 ## Parameters
 
 - `URLs`: An array of URLs referencing files to load.
-- `options`: A dictionary describing any additional texture loading steps. See  .
-- `completionHandler`: A block called after all URLs have been processed. See the   signature to determine whether each texture has successfully loaded.
+- `options`: A dictionary describing any additional texture loading steps. See `Texture Loading Options`.
+- `completionHandler`: A block called after all URLs have been processed. See the [`MTKTextureLoader.ArrayCallback`](mtktextureloader/arraycallback.md) signature to determine whether each texture has successfully loaded.
 
 ## See Also
 

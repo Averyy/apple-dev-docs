@@ -37,9 +37,12 @@ GameKit uses the following algorithm to fetch [`GKLeaderboard`](gkleaderboard.md
 ## Parameters
 
 - `playerScope`: Specifies whether to get scores from friends or all players.
-- `timeScope`: Specifies the time period for the scores. This parameter is applicable to nonrecurring leaderboards only. For recurring leaderboards, pass   for this parameter.
-- `range`: Specifies the range of ranks to use for getting the scores. The difference between the minimum rank and maximum rank must not exceed  .
-- `completionHandler`: The block receives the following parameters:
+- `timeScope`: Specifies the time period for the scores. This parameter is applicable to nonrecurring leaderboards only. For recurring leaderboards, pass [`GKLeaderboard.TimeScope.allTime`](gkleaderboard/timescope-swift.enum/alltime.md) for this parameter.
+- `range`: Specifies the range of ranks to use for getting the scores. The difference between the minimum rank and maximum rank must not exceed `100`.
+- `completionHandler`: A block that GameKit calls when this method completes the request. The block receives the following parameters: - **localPlayerEntry**: The score for the local player, or `nil` if the player has no score.
+- **entries**: The scores this method loads that match the `playerScope`, `timeScope`, and `range` parameters, including the local player’s score if it exists.
+- **totalPlayerCount**: The total number of players whose scores match the `playerScope` and `timeScope` parameters, but not the `range` parameter.
+- **error**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

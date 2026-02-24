@@ -30,6 +30,18 @@ When the action executes, the node’s [`xScale`](sknode/xscale.md) and [`yScale
 
 This action is reversible; the reverse is created as if the following code is executed:
 
+**Swift**:
+
+```swift
+let action = SKAction.scale(by: -scale, duration: sec)
+```
+
+**Obj-C**:
+
+```objc
+[SKAction scaleBy: -scale duration: sec];
+```
+
 ## Parameters
 
 - `scale`: The amount to add to the node’s x and y scale values.

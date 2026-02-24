@@ -23,7 +23,7 @@ func CVPixelBufferPoolFlush(_ pool: CVPixelBufferPool, _ options: CVPixelBufferP
 ## Parameters
 
 - `pool`: The pixel buffer pool to free.
-- `options`: Set to   to free all unused buffers regardless of their age. Pass an empty set to free only all aged-out buffers, or set it to   to free all unused buffers regardless of age.
+- `options`: Set to [`excessBuffers`](cvpixelbufferpoolflushflags/excessbuffers.md) to free all unused buffers regardless of their age. Pass an empty set to free only all aged-out buffers, or set it to [`excessBuffers`](cvpixelbufferpoolflushflags/excessbuffers.md) to free all unused buffers regardless of age.
 
 
 ---

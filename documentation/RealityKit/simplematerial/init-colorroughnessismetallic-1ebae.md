@@ -22,7 +22,7 @@ init(color: SimpleMaterial.Color, roughness: MaterialScalarParameter = 0.0, isMe
 
 - `color`: The color of the material.
 - `roughness`: The roughness of the material.
-- `isMetallic`: A Boolean indicating whether the material should have a   metallic appearance.
+- `isMetallic`: A Boolean indicating whether the material should have a metallic appearance.
 
 ## See Also
 

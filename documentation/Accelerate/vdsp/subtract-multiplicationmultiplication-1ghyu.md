@@ -57,8 +57,8 @@ The following code shows an example of using this function:
 
 ## Parameters
 
-- `multiplicationAB`: A tuple that contains the vectors   and   in  .
-- `multiplicationCD`: A tuple that contains the vectors   and   in  .
+- `multiplicationAB`: A tuple that contains the vectors `A` and `B` in `E = (A * B) - (C * D)`.
+- `multiplicationCD`: A tuple that contains the vectors `C` and `D` in `E = (A * B) - (C * D)`.
 
 ## See Also
 

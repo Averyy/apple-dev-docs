@@ -28,7 +28,7 @@ To create custom attribute key names, it’s recommended that you use a reverse 
 
 ## Parameters
 
-- `keyName`: The name of the custom attribute for use as a key in a  . The key name must be a string that contains only ASCII characters and no punctuation other than the underscore (that is, “_”). The prefix   is reserved.
+- `keyName`: The name of the custom attribute for use as a key in a [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md). The key name must be a string that contains only ASCII characters and no punctuation other than the underscore (that is, “_”). The prefix `kMD` is reserved.
 - `searchable`: A Boolean value that indicates if the attribute can be specified as a search term.
 - `searchableByDefault`: A Boolean value that indicates if the attribute should be searchable by default.
 - `unique`: A Boolean value that indicates if duplicate values should be treated as the same value to save storage space.

@@ -27,7 +27,7 @@ If you previously registered a class or nib file with the same reuse identifier,
 ## Parameters
 
 - `nib`: A nib object that specifies the nib file to use to create the cell.
-- `identifier`: The reuse identifier for the cell. This parameter must not be   and must not be an empty string.
+- `identifier`: The reuse identifier for the cell. This parameter must not be `nil` and must not be an empty string.
 
 ## See Also
 

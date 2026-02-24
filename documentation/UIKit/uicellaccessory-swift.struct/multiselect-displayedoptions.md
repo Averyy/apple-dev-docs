@@ -24,8 +24,8 @@ A configured multiselect cell accessory that changes apperance according to the 
 
 ## Parameters
 
-- `displayed`: The cell-editing states that the multiselect accessory appears in. This parameter has a default value of  .
-- `options`: Configuration options for the multiselect accessory. See   for possible configuration options.
+- `displayed`: The cell-editing states that the multiselect accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.whenEditing`](uicellaccessory-swift.struct/displayedstate/whenediting.md).
+- `options`: Configuration options for the multiselect accessory. See [`UICellAccessory.MultiselectOptions`](uicellaccessory-swift.struct/multiselectoptions.md) for possible configuration options.
 
 ## See Also
 

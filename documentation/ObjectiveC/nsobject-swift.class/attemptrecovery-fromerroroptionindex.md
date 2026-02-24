@@ -30,8 +30,8 @@ Invoked when an error alert is been presented to the user in an application-moda
 
 ## Parameters
 
-- `error`: An   object that describes the error, including error recovery options.
-- `recoveryOptionIndex`: The index of the user selected recovery option in  ’s localized recovery array.
+- `error`: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object that describes the error, including error recovery options.
+- `recoveryOptionIndex`: The index of the user selected recovery option in `error`’s localized recovery array.
 
 
 ---

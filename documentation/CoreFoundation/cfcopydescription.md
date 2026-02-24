@@ -28,11 +28,11 @@ A string that contains a description of `cf`. Ownership follows the [`The Create
 
 The nature of the description differs by object. For example, a description of a CFArray object would include descriptions of each of the elements in the collection.
 
-You can use this function for debugging Core Foundation objects in your code. Note, however, that the description for a given object may be different in different releases of the operating system. Do   create dependencies in your code on the content or format of the information returned by this function.
+You can use this function for debugging Core Foundation objects in your code. Note, however, that the description for a given object may be different in different releases of the operating system. Do *not*  create dependencies in your code on the content or format of the information returned by this function.
 
 ## Parameters
 
-- `cf`: The CFType object (a generic reference of type  ) from which to derive a description.
+- `cf`: The CFType object (a generic reference of type [`CFTypeRef`](cftyperef.md)) from which to derive a description.
 
 ## See Also
 

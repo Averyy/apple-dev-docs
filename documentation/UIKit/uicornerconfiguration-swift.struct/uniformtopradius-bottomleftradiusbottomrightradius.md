@@ -20,9 +20,9 @@ static func uniformTopRadius(_ topRadius: UICornerRadius, bottomLeftRadius: UICo
 
 ## Parameters
 
-- `topRadius`: A   that represents the radius to use for the top-left and top-right corners.
-- `bottomLeftRadius`: An optional   that represents the radius to use for the bottom-left corner.
-- `bottomRightRadius`: An optional   that represents the radius to use for the bottom-right corner.
+- `topRadius`: A [`UICornerRadius`](uicornerradius-swift.struct.md) that represents the radius to use for the top-left and top-right corners.
+- `bottomLeftRadius`: An optional [`UICornerRadius`](uicornerradius-swift.struct.md) that represents the radius to use for the bottom-left corner.
+- `bottomRightRadius`: An optional [`UICornerRadius`](uicornerradius-swift.struct.md) that represents the radius to use for the bottom-right corner.
 
 ## See Also
 

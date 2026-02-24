@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Computes the specified element-wise norm of the double-precision sparse matrix .
+Computes the specified element-wise norm of the double-precision sparse matrix *A*.
 
 **Availability**:
 - iOS 9.0+
@@ -28,7 +28,7 @@ The requested norm.
 
 This is the norm of the matrix treated as a vector, not the operator norm. Specify one of:
 
-| [`SPARSE_NORM_ONE`](sparse_norm_one.md) |  | |—|—| | [`SPARSE_NORM_TWO`](sparse_norm_two.md) |  | | [`SPARSE_NORM_INF`](sparse_norm_inf.md) |  | | [`SPARSE_NORM_R1`](sparse_norm_r1.md) |  |
+| [`SPARSE_NORM_ONE`](sparse_norm_one.md) | *sum over i,j ( | A[i,j] | )* | |—|—| | [`SPARSE_NORM_TWO`](sparse_norm_two.md) | *sqrt ( sum over i,j (A[i,j])² )* | | [`SPARSE_NORM_INF`](sparse_norm_inf.md) | *max over i,j ( | A[i,j] | )* | | [`SPARSE_NORM_R1`](sparse_norm_r1.md) | *sum over j ( sqrt ( sqrt over i ( A[i,j]² ) ) )* |
 
 If norm is not one of the enumerated norm types, the default value is [`SPARSE_NORM_INF`](sparse_norm_inf.md).
 
@@ -36,41 +36,41 @@ If norm is not one of the enumerated norm types, the default value is [`SPARSE_N
 
 ## Parameters
 
-- `A`: The sparse matrix,  .
-- `norm`: Specify the norm to be computed. Must be one of  ,  ,  , or  . See discussion for further details.
+- `A`: The sparse matrix, *A*.
+- `norm`: Specify the norm to be computed. Must be one of [`SPARSE_NORM_ONE`](sparse_norm_one.md), [`SPARSE_NORM_TWO`](sparse_norm_two.md), [`SPARSE_NORM_INF`](sparse_norm_inf.md), or [`SPARSE_NORM_R1`](sparse_norm_r1.md). See discussion for further details.
 
 ## See Also
 
 - [func sparse_matrix_vector_product_dense_double(CBLAS_TRANSPOSE, Double, sparse_matrix_double!, UnsafePointer<Double>!, sparse_stride, UnsafeMutablePointer<Double>!, sparse_stride) -> sparse_status](sparse_matrix_vector_product_dense_double(_:_:_:_:_:_:_:).md)
-  Multiplies the dense vector  by the sparse matrix  and adds the result to the dense vector , with all operands containing double-precision values.
+  Multiplies the dense vector *x* by the sparse matrix *A* and adds the result to the dense vector *y*, with all operands containing double-precision values.
 - [func sparse_matrix_vector_product_dense_float(CBLAS_TRANSPOSE, Float, sparse_matrix_float!, UnsafePointer<Float>!, sparse_stride, UnsafeMutablePointer<Float>!, sparse_stride) -> sparse_status](sparse_matrix_vector_product_dense_float(_:_:_:_:_:_:_:).md)
-  Multiplies the dense vector  by the sparse matrix  and adds the result to the dense vector , with all operands containing single-precision values.
+  Multiplies the dense vector *x* by the sparse matrix *A* and adds the result to the dense vector *y*, with all operands containing single-precision values.
 - [func sparse_vector_triangular_solve_dense_double(CBLAS_TRANSPOSE, Double, sparse_matrix_double!, UnsafeMutablePointer<Double>!, sparse_stride) -> sparse_status](sparse_vector_triangular_solve_dense_double(_:_:_:_:_:).md)
-  Solves the system of equations  for x where  is a dense vector and  is a triangular sparse matrix, with all operands containing double-precision values.
+  Solves the system of equations *x = alpha * T⁻¹ * x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing double-precision values.
 - [func sparse_vector_triangular_solve_dense_float(CBLAS_TRANSPOSE, Float, sparse_matrix_float!, UnsafeMutablePointer<Float>!, sparse_stride) -> sparse_status](sparse_vector_triangular_solve_dense_float(_:_:_:_:_:).md)
-  Solves the system of equations  for x where  is a dense vector and  is a triangular sparse matrix, with all operands containing single-precision values.
+  Solves the system of equations *x = alpha * T⁻¹ * x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing single-precision values.
 - [func sparse_outer_product_dense_double(sparse_dimension, sparse_dimension, sparse_dimension, Double, UnsafePointer<Double>!, sparse_stride, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<sparse_matrix_double?>!) -> sparse_status](sparse_outer_product_dense_double(_:_:_:_:_:_:_:_:_:).md)
-  Computes the outer product of the dense vector  and the sparse vector , with both operands containing double-precision values.
+  Computes the outer product of the dense vector *x* and the sparse vector *y*, with both operands containing double-precision values.
 - [func sparse_outer_product_dense_float(sparse_dimension, sparse_dimension, sparse_dimension, Float, UnsafePointer<Float>!, sparse_stride, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<sparse_matrix_float?>!) -> sparse_status](sparse_outer_product_dense_float(_:_:_:_:_:_:_:_:_:).md)
-  Computes the outer product of the dense vector  and the sparse vector , with both operands containing single-precision values.
+  Computes the outer product of the dense vector *x* and the sparse vector *y*, with both operands containing single-precision values.
 - [func sparse_permute_rows_double(sparse_matrix_double!, UnsafePointer<sparse_index>!) -> sparse_status](sparse_permute_rows_double(_:_:).md)
-  Permutes the rows of the double-precision sparse matrix  based on the provided permutation array.
+  Permutes the rows of the double-precision sparse matrix *A* based on the provided permutation array.
 - [func sparse_permute_rows_float(sparse_matrix_float!, UnsafePointer<sparse_index>!) -> sparse_status](sparse_permute_rows_float(_:_:).md)
-  Permutes the rows of the single-precision sparse matrix  based on the provided permutation array.
+  Permutes the rows of the single-precision sparse matrix *A* based on the provided permutation array.
 - [func sparse_permute_cols_double(sparse_matrix_double!, UnsafePointer<sparse_index>!) -> sparse_status](sparse_permute_cols_double(_:_:).md)
-  Permutes the columns of the double-precision sparse matrix  based on the provided permutation array.
+  Permutes the columns of the double-precision sparse matrix *A* based on the provided permutation array.
 - [func sparse_permute_cols_float(sparse_matrix_float!, UnsafePointer<sparse_index>!) -> sparse_status](sparse_permute_cols_float(_:_:).md)
-  Permutes the columns of the single-precision sparse matrix  based on the provided permutation array.
+  Permutes the columns of the single-precision sparse matrix *A* based on the provided permutation array.
 - [func sparse_elementwise_norm_float(sparse_matrix_float!, sparse_norm) -> Float](sparse_elementwise_norm_float(_:_:).md)
-  Computes the specified element-wise norm of the single-precision sparse matrix .
+  Computes the specified element-wise norm of the single-precision sparse matrix *A*.
 - [func sparse_operator_norm_double(sparse_matrix_double!, sparse_norm) -> Double](sparse_operator_norm_double(_:_:).md)
-  Computes the specified operator norm of the double-precision sparse matrix .
+  Computes the specified operator norm of the double-precision sparse matrix *A*.
 - [func sparse_operator_norm_float(sparse_matrix_float!, sparse_norm) -> Float](sparse_operator_norm_float(_:_:).md)
-  Computes the specified operator norm of the single-precision sparse matrix .
+  Computes the specified operator norm of the single-precision sparse matrix *A*.
 - [func sparse_matrix_trace_double(sparse_matrix_double!, sparse_index) -> Double](sparse_matrix_trace_double(_:_:).md)
-  Computes the sum along the specified diagonal of the double-precision sparse matrix .
+  Computes the sum along the specified diagonal of the double-precision sparse matrix *A*.
 - [func sparse_matrix_trace_float(sparse_matrix_float!, sparse_index) -> Float](sparse_matrix_trace_float(_:_:).md)
-  Computes the sum along the specified diagonal of the single-precision sparse matrix .
+  Computes the sum along the specified diagonal of the single-precision sparse matrix *A*.
 
 
 ---

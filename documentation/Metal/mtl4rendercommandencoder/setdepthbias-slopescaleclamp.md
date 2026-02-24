@@ -24,7 +24,7 @@ func setDepthBias(_ depthBias: Float, slopeScale: Float, clamp: Float)
 
 - `depthBias`: A constant bias the render pipeline applies to all fragments.
 - `slopeScale`: A bias coefficient that scales with the depth of the primitive relative to the camera.
-- `clamp`: A value that limits the bias value the render pipeline can apply to a fragment.   Pass a positive or negative value to limit the largest magnitude of a positive   or negative bias, respectively. Set this value to   to disable bias clamping.
+- `clamp`: A value that limits the bias value the render pipeline can apply to a fragment. Pass a positive or negative value to limit the largest magnitude of a positive or negative bias, respectively. Set this value to `0` to disable bias clamping.
 
 ## See Also
 

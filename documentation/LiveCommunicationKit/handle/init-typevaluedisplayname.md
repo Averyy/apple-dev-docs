@@ -22,7 +22,7 @@ init(type: Handle.Kind, value: String, displayName: String? = nil)
 
 - `type`: The type of the handle; for example, a phone number or email address.
 - `value`: The raw value of the handle.
-- `displayName`: The name that people see for a participant of a conversation in the conversation UI. If the   is  , the system uses   instead.
+- `displayName`: The name that people see for a participant of a conversation in the conversation UI. If the `displayName` is `nil`, the system uses `value` instead.
 
 
 ---

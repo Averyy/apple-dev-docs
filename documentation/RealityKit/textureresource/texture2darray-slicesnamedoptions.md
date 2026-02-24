@@ -45,7 +45,7 @@ Task {
 ## Parameters
 
 - `slices`: The source images, one per 2D array index. All images need to have the same size and format.
-- `resourceName`: A unique name for syncing the texture resource across the network.   The name is empty if you don’t include one.
+- `resourceName`: A unique name for syncing the texture resource across the network. The name is empty if you don’t include one.
 - `options`: A configuration for generating the texture.
 
 

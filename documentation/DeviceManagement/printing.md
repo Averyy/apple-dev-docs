@@ -116,6 +116,19 @@ Removing this profile from a device doesn’t automatically remove printers from
 - [object Printing.UserPrinterList](printing/userprinterlist-data.dictionary.md)
   A list of printer dictionaries.
 
+## Properties
+
+- `AllowLocalPrinters` (boolean): If `true`, allows printers that connect directly to a user’s computer.
+- `DefaultPrinter` (Printing.DefaultPrinter): The default printer for the user.
+- `FooterFontName` (string): The footer font name.
+- `FooterFontSize` (string): The footer font size.
+- `PrintFooter` (boolean): If `true`, prints the page footer (including the user name and date).
+- `PrintMACAddress` (boolean): If `true`, includes the MAC address.
+- `RequireAdminToAddPrinters` (boolean): If `true`, requires an administrator password to add printers.
+- `RequireAdminToPrintLocally` (boolean): If `true`, requires an administrator password to print locally.
+- `ShowOnlyManagedPrinters` (boolean): If `true`, shows only managed printers.
+- `UserPrinterList` (Printing.UserPrinterList): The printers available to a user.
+
 ## See Also
 
 - [object AirPrint](airprint.md)

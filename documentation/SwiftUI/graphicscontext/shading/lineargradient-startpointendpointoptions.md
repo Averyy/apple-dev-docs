@@ -30,7 +30,7 @@ The shading instance defines an axis from `startPoint` to `endPoint` in the curr
 
 ## Parameters
 
-- `gradient`: A   instance that defines the colors   of the gradient.
+- `gradient`: A [`Gradient`](gradient.md) instance that defines the colors of the gradient.
 - `startPoint`: The start point of the gradient axis.
 - `endPoint`: The end point of the gradient axis.
 - `options`: Options that you use to configure the gradient.

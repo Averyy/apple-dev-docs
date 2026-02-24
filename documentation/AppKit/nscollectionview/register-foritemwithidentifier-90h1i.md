@@ -24,8 +24,8 @@ Typically, you register your items when initializing your collection view interf
 
 ## Parameters
 
-- `nib`: The nib object containing the item’s definition. The nib file must contain exactly one   object at the top level. You may use a custom subclass when configuring the object in the nib file. Specify   to unregister a previously registered class or nib file.
-- `identifier`: The string that identifies the type of item. You use this string later when requesting new items and it must be unique among the other registered item and view classes of this collection view. This parameter must not be an empty string or  .
+- `nib`: The nib object containing the item’s definition. The nib file must contain exactly one [`NSCollectionViewItem`](nscollectionviewitem.md) object at the top level. You may use a custom subclass when configuring the object in the nib file. Specify `nil` to unregister a previously registered class or nib file.
+- `identifier`: The string that identifies the type of item. You use this string later when requesting new items and it must be unique among the other registered item and view classes of this collection view. This parameter must not be an empty string or `nil`.
 
 ## See Also
 

@@ -49,6 +49,22 @@ Buttons use the target-action design pattern to notify your app when the user ta
 
 You connect a button to your action method using the [`addTarget(_:action:for:)`](uicontrol/addtarget(_:action:for:).md) method or by creating a connection in Interface Builder. The signature of an action method takes one of three forms, as shown in the following code. Choose the form that provides the information that you need to respond to the button tap.
 
+**Swift**:
+
+```swift
+@IBAction func doSomething()
+@IBAction func doSomething(sender: UIButton)
+@IBAction func doSomething(sender: UIButton, forEvent event: UIEvent)
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction)doSomething;
+- (IBAction)doSomething:(id)sender;
+- (IBAction)doSomething:(id)sender forEvent:(UIEvent*)event;
+```
+
 ##### Configure a Buttons Appearance
 
 A button’s type defines its basic appearance and behavior. You specify the type of a button at creation time using the [`init(type:)`](uibutton/init(type:).md) method or in your storyboard file. After creating a button, you can’t change its type. The most commonly used button types are the Custom and System types, but use the other types when appropriate.

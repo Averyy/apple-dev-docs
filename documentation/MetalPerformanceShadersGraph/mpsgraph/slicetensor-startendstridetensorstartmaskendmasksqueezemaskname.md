@@ -33,8 +33,8 @@ Slices a tensor starting from `startTensor`, stopping short before `endTensor` s
 - `startTensor`: The tensor that specifies the starting points for each dimension.
 - `endTensor`: The tensor that specifies the ending points for each dimension.
 - `strideTensor`: The tensor that specifies the strides for each dimension.
-- `startMask`: A bitmask that indicates dimensions whose   values the operation should ignore.
-- `endMask`: A bitmask that indicates dimensions whose   values the operation should ignore.
+- `startMask`: A bitmask that indicates dimensions whose `starts` values the operation should ignore.
+- `endMask`: A bitmask that indicates dimensions whose `ends` values the operation should ignore.
 - `squeezeMask`: A bitmask that indicates dimensions the operation will squeeze out from the result.
 - `name`: The name for the operation.
 

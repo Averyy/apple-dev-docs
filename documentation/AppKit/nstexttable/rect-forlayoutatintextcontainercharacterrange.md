@@ -26,7 +26,7 @@ This method is called by the text table block `block` to determine the rectangle
 
 - `block`: The text table block that wants to determine where to layout its glyphs.
 - `startingPoint`: The location, in container coordinates, where layout begins.
-- `rect`: The rectangle in which the block is constrained to lie. For top-level blocks, this is the container rectangle of  ; for nested blocks, this is the layout rectangle of the enclosing block.
+- `rect`: The rectangle in which the block is constrained to lie. For top-level blocks, this is the container rectangle of `textContainer`; for nested blocks, this is the layout rectangle of the enclosing block.
 - `textContainer`: The text container being used for the layout.
 - `charRange`: The range of the characters whose glyphs are to be drawn.
 

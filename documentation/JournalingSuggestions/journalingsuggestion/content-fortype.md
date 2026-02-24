@@ -26,7 +26,7 @@ The framework templates this method, where `Content` is [`JournalingSuggestionAs
 
 ## Parameters
 
-- `content`: A type that conforms to the   protocol.
+- `content`: A type that conforms to the [`JournalingSuggestionAsset`](journalingsuggestionasset.md) protocol.
 
 ## See Also
 

@@ -23,7 +23,7 @@ For the read to succeed, requests must conform to any transfer requirements of t
 - `buffer`: A buffer to receive the data.
 - `offset`: The offset into the resource from which to start reading.
 - `length`: A maximum number of bytes to read. The completion handler receives a parameter with the actual number of bytes read.
-- `completionHandler`: A closure that executes after the read operation completes. If successful, the first parameter contains the number of bytes actually read. In the case of an error, the second parameter contains a non-  error. This value is   if   is  , or   if reading from the resource failed.
+- `completionHandler`: A closure that executes after the read operation completes. If successful, the first parameter contains the number of bytes actually read. In the case of an error, the second parameter contains a non-`nil` error. This value is `EFAULT` if `buffer` is `nil`, or `errno` if reading from the resource failed.
 
 ## See Also
 

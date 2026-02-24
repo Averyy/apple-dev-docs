@@ -27,8 +27,9 @@ This method supports command chaining, passing the full response composed of the
 
 ## Parameters
 
-- `command`: A MIFARE command. For   commands, you must calculate a 2-byte CRC value and append it to the end of the   data.
-- `completionHandler`: The handler has the following parameters:
+- `command`: A MIFARE command. For [`NFCMiFareFamily.ultralight`](nfcmifarefamily/ultralight.md) commands, you must calculate a 2-byte CRC value and append it to the end of the `command` data.
+- `completionHandler`: A handler that the reader session invokes after the operation completes. The session calls `completionHandler` on the dispatch queue that you provided when creating the [`NFCTagReaderSession`](nfctagreadersession.md) object. The handler has the following parameters: - **response**: An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing the tag’s response data for the command.
+- **error**: `nil` when the operation is successful; otherwise, an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object indicating that a problem occurred while communicating with the tag.
 
 ## See Also
 

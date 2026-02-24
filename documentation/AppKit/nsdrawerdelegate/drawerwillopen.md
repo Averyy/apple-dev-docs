@@ -16,7 +16,7 @@ optional func drawerWillOpen(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: An   notification, sent by the default notification center immediately before the drawer is opened.
+- `notification`: An [`NSDrawerDelegate`](nsdrawerdelegate.md) notification, sent by the default notification center immediately before the drawer is opened.
 
 ## See Also
 

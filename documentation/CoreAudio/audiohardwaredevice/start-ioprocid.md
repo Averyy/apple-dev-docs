@@ -21,7 +21,7 @@ IOProcIDs should be written in C to ensure realtime safety. IOProcIDs can be reg
 
 ## Parameters
 
-- `IOProcID`: The AudioDeviceIOProcID to start. Note that this can be nil, which   starts the hardware regardless of whether or not there are any IOProcs registered. This is   necessary if any of the device’s timing services are to be used. A balancing call to   stop with a nil IOProcID is required to stop the hardware.
+- `IOProcID`: The AudioDeviceIOProcID to start. Note that this can be nil, which starts the hardware regardless of whether or not there are any IOProcs registered. This is necessary if any of the device’s timing services are to be used. A balancing call to stop with a nil IOProcID is required to stop the hardware.
 
 
 ---

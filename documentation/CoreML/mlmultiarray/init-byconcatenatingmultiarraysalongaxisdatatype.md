@@ -44,9 +44,9 @@ assert(multiArray3.shape == [3, 5, 7])
 
 ## Parameters
 
-- `multiArrays`: An   array.
-- `axis`: A zero-based axis number the instances in   merge along.
-- `dataType`: An   instance that represents the underlying type of all the instances in  .
+- `multiArrays`: An [`MLMultiArray`](mlmultiarray.md) array.
+- `axis`: A zero-based axis number the instances in `multiArray` merge along.
+- `dataType`: An [`MLMultiArrayDataType`](mlmultiarraydatatype.md) instance that represents the underlying type of all the instances in `multiArrays`.
 
 ## See Also
 

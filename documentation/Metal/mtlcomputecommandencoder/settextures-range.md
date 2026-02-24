@@ -25,8 +25,8 @@ func setTextures(_ textures: [(any MTLTexture)?], range: Range<Int>)
 
 ## Parameters
 
-- `textures`: A list of   instances to bind to the texture argument table.
-- `range`: The texture table indices to bind each of the   to, in the order they appear.
+- `textures`: A list of [`MTLTexture`](mtltexture.md) instances to bind to the texture argument table.
+- `range`: The texture table indices to bind each of the `textures` to, in the order they appear.
 
 ## See Also
 

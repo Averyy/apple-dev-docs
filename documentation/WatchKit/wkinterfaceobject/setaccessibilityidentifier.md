@@ -20,7 +20,7 @@ Use the identifier in this property to distinguish between different objects in 
 
 ## Parameters
 
-- `accessibilityIdentifier`: A string containing the identifier of the element. Specify   to clear the existing identifier.
+- `accessibilityIdentifier`: A string containing the identifier of the element. Specify `nil` to clear the existing identifier.
 
 ## See Also
 

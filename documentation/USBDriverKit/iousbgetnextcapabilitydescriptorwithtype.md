@@ -25,7 +25,7 @@ This method uses `getNextCapabilityDescriptor`, and further validates that the r
 ## Parameters
 
 - `bosDescriptor`: The BOS descriptor that contains the descriptors to iterate through.
-- `currentDescriptor`: A descriptor pointer within the bounds of the BOS descriptor, or  .
+- `currentDescriptor`: A descriptor pointer within the bounds of the BOS descriptor, or `NULL`.
 - `type`: The descriptor type to find.
 
 ## See Also

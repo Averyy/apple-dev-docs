@@ -23,7 +23,7 @@ func convolve(with kernel: vImage.ConvolutionKernel2D<Int16>, divisor: Int32?, b
 ## Parameters
 
 - `kernel`: The convolution kernel.
-- `divisor`: A value that the operation divides the results of the convolution by. Pass   to specify that the function calculates the divisor as the sum of the kernel values.
+- `divisor`: A value that the operation divides the results of the convolution by. Pass `nil` to specify that the function calculates the divisor as the sum of the kernel values.
 - `bias`: An optional value that the operation adds to the sum of weighted pixels before it applies the divisor.
 - `edgeMode`: The convolution edge mode.
 - `destination`: The destination pixel buffer.

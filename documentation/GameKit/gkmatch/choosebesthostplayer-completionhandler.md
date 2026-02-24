@@ -24,7 +24,7 @@ Calling this method causes GameKit to attempt to estimate which player has the b
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameter: - **`playerID`**: The player identifier for the player with the best estimated network performance, or `nil` if GameKit couldn’t find a best host player.
 
 ## See Also
 

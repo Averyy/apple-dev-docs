@@ -26,7 +26,7 @@ The default implementation of this method simply invokes the [`sendAction(on:)`]
 
 ## Parameters
 
-- `mask`: A bit mask containing the conditions for sending the action. The only conditions that are actually checked are associated with the  ,   ,  , and   bits.
+- `mask`: A bit mask containing the conditions for sending the action. The only conditions that are actually checked are associated with the `NSLeftMouseDownMask`,  `NSLeftMouseUpMask`, `NSLeftMouseDraggedMask`, and `NSPeriodicMask` bits.
 
 ## See Also
 

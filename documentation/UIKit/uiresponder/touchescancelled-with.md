@@ -30,11 +30,23 @@ func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?)
 
 UIKit calls this method when it receives a system interruption requiring cancellation of the touch sequence. An interruption is anything that causes the application to become inactive or causes the view handling the touch events to be removed from its window. Your implementation of this method should clean up any state associated with handling the touch sequence. The default implementation of this method forwards the message up the responder chain. When creating your own subclasses, call `super` to forward any events that you don’t handle yourself, like in the following code.
 
+**Swift**:
+
+```swift
+super.touchesCancelled(touches, with: event)
+```
+
+**Objective-C**:
+
+```objc
+[super touchesCancelled:touches withEvent:event];
+```
+
 If you override this method without calling `super` (a common use pattern), you must also override the other methods for handling touch events, if only as stub (empty) implementations.
 
 ## Parameters
 
-- `touches`: A set of   instances that represent the touches for the ending phase of the event represented by  . For touches in a view, this set contains only one touch by default. To receive multiple touches, you must set the view’s   property to  .
+- `touches`: A set of [`UITouch`](uitouch.md) instances that represent the touches for the ending phase of the event represented by `event`. For touches in a view, this set contains only one touch by default. To receive multiple touches, you must set the view’s [`isMultipleTouchEnabled`](uiview/ismultipletouchenabled.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
 - `event`: The event to which the touches belong.
 
 ## See Also

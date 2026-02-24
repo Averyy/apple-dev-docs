@@ -28,7 +28,7 @@ To parse a numeric string with a fractional part, use [`init(string:locale:)`](n
 
 ## Parameters
 
-- `numberValue`: Besides digits,   can include an initial   or  ; a single   or  , to indicate the exponent of a number in scientific notation; and a single decimal separator character to divide the fractional from the integral part of the number. For a listing of acceptable and unacceptable strings, see  .
+- `numberValue`: A numeric string. Besides digits, `numberValue` can include an initial `+` or `–`; a single `E` or `e`, to indicate the exponent of a number in scientific notation; and a single decimal separator character to divide the fractional from the integral part of the number. For a listing of acceptable and unacceptable strings, see [`init(string:locale:)`](nsdecimalnumber/init(string:locale:).md).
 
 ## See Also
 

@@ -30,7 +30,7 @@ The data in the `data` parameter must be formatted to match the file format of o
 ## Parameters
 
 - `data`: The data object containing the image data.
-- `scale`: The scale factor to assume when interpreting the image data. Applying a scale factor of 1.0 results in an image whose size matches the pixel-based dimensions of the image. Applying a different scale factor changes the size of the image as reported by the   property.
+- `scale`: The scale factor to assume when interpreting the image data. Applying a scale factor of 1.0 results in an image whose size matches the pixel-based dimensions of the image. Applying a different scale factor changes the size of the image as reported by the [`size`](uiimage/size.md) property.
 
 ## See Also
 

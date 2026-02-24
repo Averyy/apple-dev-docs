@@ -24,7 +24,8 @@ Client apps should always call the completion handler after loading has finished
 ## Parameters
 
 - `identifier`: The String that identifies a content item.
-- `completionHandler`: A block that is called after the content item has been loaded.
+- `completionHandler`: A block that is called after the content item has been loaded. - **contentItem**: The content item associated with the identifier. If there is no content item, the value of this parameter is `nil`.
+- **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is `nil`.
 
 ## See Also
 

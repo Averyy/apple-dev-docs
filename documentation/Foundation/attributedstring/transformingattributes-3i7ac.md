@@ -27,12 +27,12 @@ An attributed string with the applied transformations to the specified attribute
 
 ## Parameters
 
-- `k`: The   that identifies an attribute to transform.
-- `k2`: The   that identifies a second attribute to transform.
-- `k3`: The   that identifies a third attribute to transform.
-- `k4`: The   that identifies a fourth attribute to transform.
-- `k5`: The   that identifies a fifth attribute to transform.
-- `c`: A closure that receives four   instances that you use to access and alter the attributes’ ranges and values.
+- `k`: The [`AttributedStringKey`](attributedstringkey.md) that identifies an attribute to transform.
+- `k2`: The [`AttributedStringKey`](attributedstringkey.md) that identifies a second attribute to transform.
+- `k3`: The [`AttributedStringKey`](attributedstringkey.md) that identifies a third attribute to transform.
+- `k4`: The [`AttributedStringKey`](attributedstringkey.md) that identifies a fourth attribute to transform.
+- `k5`: The [`AttributedStringKey`](attributedstringkey.md) that identifies a fifth attribute to transform.
+- `c`: A closure that receives four [`AttributedString.SingleAttributeTransformer`](attributedstring/singleattributetransformer.md) instances that you use to access and alter the attributes’ ranges and values.
 
 ## See Also
 

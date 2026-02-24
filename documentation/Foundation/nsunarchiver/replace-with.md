@@ -24,7 +24,7 @@ func replace(_ object: Any, with newObject: Any)
 ## Parameters
 
 - `object`: The archived object to replace.
-- `newObject`: The object with which to replace  .
+- `newObject`: The object with which to replace `object`.
 
 ## See Also
 

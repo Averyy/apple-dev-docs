@@ -22,7 +22,7 @@ var currentMode: RunLoop.Mode? { get }
 
 #### Discussion
 
-The receiver’s current input mode. This method returns the current input mode  while the receiver is running; otherwise, it returns `nil`.
+The receiver’s current input mode. This method returns the current input mode *only* while the receiver is running; otherwise, it returns `nil`.
 
 The current mode is set by the methods that run the run loop, such as [`acceptInput(forMode:before:)`](runloop/acceptinput(formode:before:).md) and [`run(mode:before:)`](runloop/run(mode:before:).md).
 

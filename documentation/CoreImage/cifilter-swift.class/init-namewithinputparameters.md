@@ -40,7 +40,7 @@ CIFilter *f = [CIFilter filterWithName: @"CIColorControls"
 ## Parameters
 
 - `name`: The name of the filter. You must make sure the name is spelled correctly, otherwise your app will run but not produce any output images. For that reason, you should check for the existence of the filter after calling this method.
-- `params`: A list of key-value pairs to set as input values to the filter. Each key is a constant that specifies the name of an input parameter for the filter, and the corresponding value is the value for that parameter. See   for built-in filters and their allowed parameters.
+- `params`: A list of key-value pairs to set as input values to the filter. Each key is a constant that specifies the name of an input parameter for the filter, and the corresponding value is the value for that parameter. See [`Core Image Filter Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/uid/TP40004346) for built-in filters and their allowed parameters.
 
 ## See Also
 

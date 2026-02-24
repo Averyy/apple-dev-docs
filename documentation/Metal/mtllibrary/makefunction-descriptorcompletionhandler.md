@@ -23,7 +23,7 @@ func makeFunction(descriptor: MTLFunctionDescriptor) async throws -> any MTLFunc
 ## Parameters
 
 - `descriptor`: The description of the function object to create.
-- `completionHandler`: A Swift closure or an Objective-C block that Metal calls   after it creates the function.
+- `completionHandler`: A Swift closure or an Objective-C block that Metal calls after it creates the function.
 
 ## See Also
 

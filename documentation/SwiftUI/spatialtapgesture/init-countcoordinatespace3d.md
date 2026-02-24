@@ -16,8 +16,8 @@ init(count: Int = 1, coordinateSpace3D: some CoordinateSpace3D)
 
 ## Parameters
 
-- `count`: The required number of taps to complete the tap   gesture.
-- `coordinateSpace3D`: The coordinate space 3D of the tap   gesture’s location.
+- `count`: The required number of taps to complete the tap gesture.
+- `coordinateSpace3D`: The coordinate space 3D of the tap gesture’s location.
 
 
 ---

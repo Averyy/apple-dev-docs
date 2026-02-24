@@ -33,9 +33,10 @@ For more information on workouts and associated samples, see [`HKWorkout`](hkwor
 
 ## Parameters
 
-- `samples`: An array containing   or   objects.
+- `samples`: An array containing [`HKCategorySample`](hkcategorysample.md) or [`HKQuantitySample`](hkquantitysample.md) objects.
 - `workout`: The workout object you are adding samples to.
-- `completion`: A block that this method calls as soon as the add-samples operation is complete. This block is passed the following parameters:
+- `completion`: A block that this method calls as soon as the add-samples operation is complete. This block is passed the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/Swift/true) if the samples were successfully added to workout; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`.
 
 ## See Also
 

@@ -26,7 +26,7 @@ This API is for media capture use cases only.
 
 ## Parameters
 
-- `isEnabled`: A boolean value indicating whether capture events trigger the provided action or not.   Set this value to   when your application cannot or will not respond to the action callbacks to avoid non-interactive buttons or UI elements.
+- `isEnabled`: A boolean value indicating whether capture events trigger the provided action or not. Set this value to `false` when your application cannot or will not respond to the action callbacks to avoid non-interactive buttons or UI elements.
 - `action`: An event handler called when either the primary or secondary events are triggered.
 
 ## See Also

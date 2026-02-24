@@ -13,6 +13,10 @@ A replacement for the app name in text-to-speech operations.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [CFBundleName](information-property-list/cfbundlename.md)

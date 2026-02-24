@@ -31,9 +31,9 @@ Before calling this function, call [`CFNetServiceSetClient(_:_:_:)`](cfnetservic
 
 ## Parameters
 
-- `theService`: The CFNetService that is to be scheduled on a run loop; cannot be  .
-- `runLoop`: The run loop on which the service is to be scheduled; cannot be  .
-- `runLoopMode`: The mode on which to schedule the service; cannot be  .
+- `theService`: The CFNetService that is to be scheduled on a run loop; cannot be `NULL`.
+- `runLoop`: The run loop on which the service is to be scheduled; cannot be `NULL`.
+- `runLoopMode`: The mode on which to schedule the service; cannot be `NULL`.
 
 ## See Also
 

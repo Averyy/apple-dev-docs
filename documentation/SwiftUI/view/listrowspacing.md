@@ -32,7 +32,7 @@ List {
 
 ## Parameters
 
-- `spacing`: The spacing value to use. A value of   uses   the default spacing.
+- `spacing`: The spacing value to use. A value of `nil` uses the default spacing.
 
 ## See Also
 

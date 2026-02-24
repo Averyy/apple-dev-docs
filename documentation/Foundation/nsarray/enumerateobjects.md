@@ -26,7 +26,9 @@ This method executes synchronously. Values allocated within the block are deallo
 
 ## Parameters
 
-- `block`: A closure or block to execute for each object in the array, taking three arguments:
+- `block`: A closure or block to execute for each object in the array, taking three arguments: - The object.
+- The index of the object in the array.
+- A reference to a Boolean value, which the closure can set to [`true`](https://developer.apple.com/documentation/Swift/true) in order to stop further enumeration of the array. If a closure stops further enumeration, that closure continues to run until it’s finished.
 
 ## See Also
 

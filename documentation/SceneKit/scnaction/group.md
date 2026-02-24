@@ -32,7 +32,7 @@ This action is reversible; it creates a new group action that contains the rever
 
 ## Parameters
 
-- `actions`: An array of   objects.
+- `actions`: An array of [`SCNAction`](scnaction.md) objects.
 
 ## See Also
 

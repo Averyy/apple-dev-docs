@@ -26,7 +26,7 @@ A new [`MTLLibrary`](mtllibrary.md) instance if the method completes successfull
 
 ## Parameters
 
-- `descriptor`: An   instance.
+- `descriptor`: An [`MTLStitchedLibraryDescriptor`](mtlstitchedlibrarydescriptor.md) instance.
 
 ## See Also
 

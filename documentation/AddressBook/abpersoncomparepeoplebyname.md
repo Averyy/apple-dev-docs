@@ -29,7 +29,7 @@ func ABPersonComparePeopleByName(_ person1: ABRecord!, _ person2: ABRecord!, _ o
 
 - `person1`: The first person.
 - `person2`: The second person.
-- `ordering`: Indicates whether to sort by first name or by last name. See  .
+- `ordering`: Indicates whether to sort by first name or by last name. See [`Sort Order`](1619730-sort-order.md).
 
 ## See Also
 

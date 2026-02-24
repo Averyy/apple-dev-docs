@@ -27,7 +27,7 @@ The block must be non-`nil` when using an input node while the engine is operati
 ## Parameters
 
 - `format`: The format of the PCM audio data the block supplies to the engine.
-- `block`: The block the engine calls on the input node to get the audio to send to the output when operating in the manual rendering mode. For more information, see  .
+- `block`: The block the engine calls on the input node to get the audio to send to the output when operating in the manual rendering mode. For more information, see [`AVAudioIONodeInputBlock`](avaudioionodeinputblock.md).
 
 ## See Also
 

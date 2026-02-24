@@ -28,7 +28,7 @@ You must set the `protocols` parameter to `NULL` on input, or the operation fail
 ## Parameters
 
 - `context`: The session context.
-- `protocols`: A pointer the function uses to return an array of ASCII-encoded strings representing the supported protocols, such as http/1.1. See   for more details.
+- `protocols`: A pointer the function uses to return an array of ASCII-encoded strings representing the supported protocols, such as http/1.1. See [`RFC 7301`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7301) for more details.
 
 
 ---

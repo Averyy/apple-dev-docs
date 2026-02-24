@@ -14,6 +14,10 @@ A dictionary that maps team identifiers to system extensions.
 object SystemExtensions.AllowedSystemExtensionTypes
 ```
 
+## Properties
+
+- `ANY` ([string]): The mapping of team identifier to an array of strings, where each string is a type of system extension that may be installed for that team identifier.
+
 ## See Also
 
 - [object SystemExtensions.AllowedSystemExtensions](systemextensions/allowedsystemextensions-data.dictionary.md)

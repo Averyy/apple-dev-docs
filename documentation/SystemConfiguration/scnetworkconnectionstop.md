@@ -21,7 +21,7 @@ func SCNetworkConnectionStop(_ connection: SCNetworkConnection, _ forceDisconnec
 ## Parameters
 
 - `connection`: The network connection to stop.
-- `forceDisconnect`: Pass   to stop the connection regardless of other applications that might have interest in it.
+- `forceDisconnect`: Pass `TRUE` to stop the connection regardless of other applications that might have interest in it.
 
 ## See Also
 

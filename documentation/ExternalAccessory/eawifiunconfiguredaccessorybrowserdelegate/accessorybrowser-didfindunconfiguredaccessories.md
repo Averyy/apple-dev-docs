@@ -24,8 +24,8 @@ When a new unconfigured accessory is found, it’s added to the browser’s set 
 
 ## Parameters
 
-- `browser`: The instance of   that is generating the event.
-- `accessories`: The set of   objects that have been found since the last update.
+- `browser`: The instance of [`EAWiFiUnconfiguredAccessoryBrowser`](eawifiunconfiguredaccessorybrowser.md) that is generating the event.
+- `accessories`: The set of [`EAWiFiUnconfiguredAccessory`](eawifiunconfiguredaccessory.md) objects that have been found since the last update.
 
 ## See Also
 

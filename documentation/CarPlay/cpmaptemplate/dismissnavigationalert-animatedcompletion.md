@@ -24,8 +24,8 @@ func dismissNavigationAlert(animated: Bool) async -> Bool
 
 ## Parameters
 
-- `animated`: Determines whether the system should animate the dismissal of the navigation alert. Set to   to animate the dismissal.
-- `completion`: The block invoked after dismissing the navigation alert. The   argument in the block indicates whether the template dismissed an alert.
+- `animated`: Determines whether the system should animate the dismissal of the navigation alert. Set to [`true`](https://developer.apple.com/documentation/Swift/true) to animate the dismissal.
+- `completion`: The block invoked after dismissing the navigation alert. The [`Bool`](https://developer.apple.com/documentation/Swift/Bool) argument in the block indicates whether the template dismissed an alert.
 
 ## See Also
 

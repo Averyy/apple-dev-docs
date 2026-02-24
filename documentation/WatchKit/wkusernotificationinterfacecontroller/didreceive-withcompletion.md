@@ -23,7 +23,7 @@ WatchKit may call this method multiple times while your interface controller is 
 ## Parameters
 
 - `notification`: The notification object that triggered this event.
-- `completionHandler`: The completion handler for telling the system what interface to display. Execute this completion handler at the end of your method implementation. If you do not execute this block in a timely manner, the system displays your app’s static notification interface. This block has no return value and takes the following parameter:
+- `completionHandler`: The completion handler for telling the system what interface to display. Execute this completion handler at the end of your method implementation. If you do not execute this block in a timely manner, the system displays your app’s static notification interface. This block has no return value and takes the following parameter: - **interface**: The notification interface to be displayed. Specify the value [`WKUserNotificationInterfaceType.custom`](wkusernotificationinterfacetype/custom.md) to display your dynamic interface. Specify the value [`WKUserNotificationInterfaceType.default`](wkusernotificationinterfacetype/default.md) to display the static interface. You might choose to display the static interface if the payload does not contain the data you were expecting.
 
 ## See Also
 

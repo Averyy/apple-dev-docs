@@ -21,6 +21,12 @@ object DNSSettings.OnDemandRulesElement.ActionParameter
 
 The keys allowed in each dictionary are described below. Note: This array is only for dictionaries in which `EvaluateConnection` is the `Action` value.
 
+## Properties
+
+- `DomainAction` (string) *(required)*: The DNS settings behavior for the specified domains. Allowed values: - ‘NeverConnect’: Don’t use the DNS Settings for the specified domains.
+- ‘ConnectIfNeeded’: Allow using the DNS Settings for the specified domains.
+- `Domains` ([string]) *(required)*: The domains for which this evaluation applies.
+
 
 ---
 

@@ -25,7 +25,7 @@ init(mipmapLevels: [TextureResource.Contents.MipmapLevel])
 
 ## Parameters
 
-- `mipmapLevels`: Pixel data for each mipmap level, starting with mipmap level  .   Supply at least one mipmap level.
+- `mipmapLevels`: Pixel data for each mipmap level, starting with mipmap level `0`. Supply at least one mipmap level.
 
 
 ---

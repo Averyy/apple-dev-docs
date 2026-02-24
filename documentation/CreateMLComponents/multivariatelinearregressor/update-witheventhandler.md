@@ -23,7 +23,7 @@ func update(_ model: inout MultivariateLinearRegressor<Scalar>.Model, with input
 ## Parameters
 
 - `model`: A model to update.
-- `input`: A sequence of examples. For faster updates, consider passing a single   with   shaped arrays that contain multiple training examples. For example instead of passing a sequence of    shaped arrays with shape  , pass a single shaped array with shape  . See also   .
+- `input`: A sequence of examples. For faster updates, consider passing a single [`AnnotatedBatch`](annotatedbatch.md) with shaped arrays that contain multiple training examples. For example instead of passing a sequence of `N` shaped arrays with shape `[M]`, pass a single shaped array with shape `[N, M]`. See also [`update(_:with:)`](multivariatelinearregressor/update(_:with:).md).
 - `eventHandler`: An event handler. This method reports the mean squared error.
 
 ## See Also

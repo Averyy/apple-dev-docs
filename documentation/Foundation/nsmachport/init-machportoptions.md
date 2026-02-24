@@ -31,7 +31,7 @@ Depending on the access rights for `machPort`, the new port may be able to only 
 ## Parameters
 
 - `machPort`: The Mach port for the new port. This parameter should originally be of type mach_port_t.
-- `f`: Specifies options for what to do with the underlying port rights when the   object is invalidated or destroyed. For a list of constants, see  .
+- `f`: Specifies options for what to do with the underlying port rights when the `NSMachPort` object is invalidated or destroyed. For a list of constants, see `Mach Port Rights`.
 
 ## See Also
 

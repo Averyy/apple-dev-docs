@@ -24,7 +24,7 @@ This method posts an [`boundsDidChangeNotification`](nsview/boundsdidchangenotif
 
 ## Parameters
 
-- `newUnitSize`: An   structure specifying the new unit size.
+- `newUnitSize`: An `NSSize` structure specifying the new unit size.
 
 ## See Also
 

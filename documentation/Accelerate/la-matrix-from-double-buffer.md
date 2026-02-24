@@ -38,9 +38,9 @@ This routine assumes that the elements of the matrix are stored in the buffer in
 - `buffer`: Pointer to double data providing the elements of the matrix.
 - `matrix_rows`: The number of rows in the matrix.
 - `matrix_cols`: The number of columns in the matrix.
-- `matrix_row_stride`: The offset in the buffer (measured in doubles) between corresponding elements   in consecutive rows of the matrix.  Must be positive.
+- `matrix_row_stride`: The offset in the buffer (measured in doubles) between corresponding elements in consecutive rows of the matrix.  Must be positive.
 - `matrix_hint`: Flags describing special matrix structures.
-- `attributes`: Attributes to attach to the new la_object_t object.  Pass LA_DEFAULT_ATTRIBUTES   to create a normal object.
+- `attributes`: Attributes to attach to the new la_object_t object.  Pass LA_DEFAULT_ATTRIBUTES to create a normal object.
 
 ## See Also
 

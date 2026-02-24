@@ -25,10 +25,10 @@ The input point projected into normalized bounding box coordinates.
 
 ## Parameters
 
-- `faceLandmarkPoint`: The location of the face landmark, as returned from a   instance.
-- `faceBoundingBox`: The normalized bounding box rect around the face, as obtained from a   instance.
-- `imageWidth`: The width of the image from which the   instance was generated.
-- `imageHeight`: The height of the image from which the   instance was generated.
+- `faceLandmarkPoint`: The location of the face landmark, as returned from a [`VNFaceLandmarkRegion2D`](vnfacelandmarkregion2d.md) instance.
+- `faceBoundingBox`: The normalized bounding box rect around the face, as obtained from a [`VNFaceObservation`](vnfaceobservation.md) instance.
+- `imageWidth`: The width of the image from which the [`VNFaceObservation`](vnfaceobservation.md) instance was generated.
+- `imageHeight`: The height of the image from which the [`VNFaceObservation`](vnfaceobservation.md) instance was generated.
 
 ## See Also
 

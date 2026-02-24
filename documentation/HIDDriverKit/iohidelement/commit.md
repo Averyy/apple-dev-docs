@@ -21,7 +21,7 @@ virtual IOReturn commit(IOHIDElementCommitDirection direction);
 
 ## Parameters
 
-- `direction`: The direction to commit the element. Specify   to read the element data from the device. Specify   to write the element data to the device.
+- `direction`: The direction to commit the element. Specify [`kIOHIDElementCommitDirectionIn`](iohidelementcommitdirection/kiohidelementcommitdirectionin.md) to read the element data from the device. Specify [`kIOHIDElementCommitDirectionOut`](iohidelementcommitdirection/kiohidelementcommitdirectionout.md) to write the element data to the device.
 
 ## See Also
 

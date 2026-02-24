@@ -30,8 +30,8 @@ If you specify a type that has already been declared, this method replaces the o
 
 ## Parameters
 
-- `newTypes`: An array of   objects, each of which specifies a type of data that can be provided to the pasteboard.
-- `newOwner`: If the data for those types is provided immediately, the owner can be  . If the data for the added types will be provided lazily when requested from the pasteboard, an owner object must be provided that implements the -  method of the   informal protocol.
+- `newTypes`: An array of `NSString` objects, each of which specifies a type of data that can be provided to the pasteboard.
+- `newOwner`: The object that provides the data for the specified types. If the data for those types is provided immediately, the owner can be `nil`. If the data for the added types will be provided lazily when requested from the pasteboard, an owner object must be provided that implements the -[`pasteboard:provideDataForType:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/pasteboard:provideDataForType:) method of the `NSPasteboardOwner` informal protocol.
 
 ## See Also
 

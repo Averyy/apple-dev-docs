@@ -26,7 +26,7 @@ Note that there’s also a class method of the same name. The class method has p
 ## Parameters
 
 - `inArchiveName`: The ostensible name of a class in an archive.
-- `trueName`: The name of the class to use when instantiating objects whose ostensible class, according to the archived data, is  .
+- `trueName`: The name of the class to use when instantiating objects whose ostensible class, according to the archived data, is `nameInArchive`.
 
 ## See Also
 

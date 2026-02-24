@@ -16,7 +16,7 @@ func loadHTMLString(_ string: String!, baseURL URL: URL!)
 
 ## Parameters
 
-- `string`: Since the string is treated as a webpage with UTF-8 encoding, the default encoding for any script elements referenced by the HTML is also UTF-8. To avoid this, include a character set attribute on the script element.
+- `string`: The string to use as the main page for the document. Since the string is treated as a webpage with UTF-8 encoding, the default encoding for any script elements referenced by the HTML is also UTF-8. To avoid this, include a character set attribute on the script element.
 - `URL`: A file that is used to resolve relative URLs within the document.
 
 ## See Also

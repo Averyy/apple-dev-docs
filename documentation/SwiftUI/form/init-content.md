@@ -22,7 +22,7 @@ init(@ViewBuilder content: () -> Content)
 
 ## Parameters
 
-- `content`: A   that provides the content for the   form.
+- `content`: A [`ViewBuilder`](viewbuilder.md) that provides the content for the form.
 
 
 ---

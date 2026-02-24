@@ -26,7 +26,7 @@ When sending multiple pings, the task always calls `pongReceiveHandler` in the o
 
 ## Parameters
 
-- `pongReceiveHandler`: A closure called by the task when it receives the pong from the server. The block/closure receives an   that indicates a lost connection or other problem, or   if no error occurred.
+- `pongReceiveHandler`: A closure called by the task when it receives the pong from the server. The block/closure receives an [`NSError`](nserror.md) that indicates a lost connection or other problem, or `nil` if no error occurred.
 
 
 ---

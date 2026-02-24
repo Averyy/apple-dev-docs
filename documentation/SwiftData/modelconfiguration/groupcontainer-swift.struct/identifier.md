@@ -23,7 +23,7 @@ static func identifier(_ groupName: String) -> ModelConfiguration.GroupContainer
 
 ## Parameters
 
-- `groupName`: The identifier of the group container to use. You find these in   the App Groups capabilities section of your Xcode project. For more   information, see  .
+- `groupName`: The identifier of the group container to use. You find these in the App Groups capabilities section of your Xcode project. For more information, see [`Configuring app groups`](https://developer.apple.com/documentation/Xcode/configuring-app-groups).
 
 ## See Also
 

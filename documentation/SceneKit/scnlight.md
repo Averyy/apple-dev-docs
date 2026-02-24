@@ -30,7 +30,7 @@ A light’s other properties affect how it illuminates a scene. All lights have 
 
 The number and type of lights in a scene is a key factor in SceneKit’s rendering performance. For efficient rendering, follow these tips:
 
-- Use SceneKit lights only for dynamic light sources or lights that affect moving objects. For statically lit portions of your scene, create a light map texture in an external 3D authoring tool (also known as ) and apply it to objects in the scene using the [`multiply`](scnmaterial/multiply.md) material property.
+- Use SceneKit lights only for dynamic light sources or lights that affect moving objects. For statically lit portions of your scene, create a light map texture in an external 3D authoring tool (also known as *baked lighting*) and apply it to objects in the scene using the [`multiply`](scnmaterial/multiply.md) material property.
 - Minimize the number of lights on each element of the scene. You can achieve most common lighting effects using no more than three lights, and you only need a single ambient light source. SceneKit only uses up to eight light sources per node when rendering, ignoring any additional lights. If you set the [`attenuationEndDistance`](scnlight/attenuationenddistance.md) property on a spotlight or omnidirectional light to limit its area of effect, SceneKit ignores the light (and its performance cost) when rendering objects outside that area. You can also use the [`categoryBitMask`](scnlight/categorybitmask.md) property to choose which nodes are illuminated by a light.
 
 ## Topics

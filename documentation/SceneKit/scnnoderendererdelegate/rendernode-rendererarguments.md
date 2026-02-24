@@ -32,8 +32,8 @@ You must draw using the appropriate graphics technology for the view currently b
 ## Parameters
 
 - `node`: The node to render.
-- `renderer`: The SceneKit object (such as an   instance) responsible for rendering the scene.
-- `arguments`: A dictionary containing transform information necessary for rendering the node. See Rendering Transform Keys for possible keys. The value for each key is an   object containing an   value.
+- `renderer`: The SceneKit object (such as an [`SCNView`](scnview.md) instance) responsible for rendering the scene.
+- `arguments`: A dictionary containing transform information necessary for rendering the node. See Rendering Transform Keys for possible keys. The value for each key is an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object containing an [`SCNMatrix4`](scnmatrix4-swift.struct.md) value.
 
 
 ---

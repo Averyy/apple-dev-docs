@@ -20,7 +20,11 @@ This sample code project shows you how to create a background delivery extension
 
 To run the sample app, you need an entitlement from Apple, and to complete the following:
 
+**Add an app extension to your project**
+
 Add an extension target to your new or existing Xcode project. Choose File > New > Target and, in the sheet that appears, choose the `Background Delivery Extension` template under Application Extension, and click Next. Then fill out your options for your new target and click Finish. In the next dialog that appears click Activate to use the extension scheme Xcode creates. If you don’t have an Xcode project for your app, first create one from an Application template under iOS. For more information, see [`Creating an Xcode project for an app`](https://developer.apple.com/documentation/Xcode/creating-an-xcode-project-for-an-app).
+
+**Add the App Groups capability**
 
 Add the App Groups capability to both your app and extension target. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app). Then, add both targets to the same app group. In the project editor, select the app target, and then add a unique ID for the group under App Groups on the Signing & Capabilities pane. Xcode automatically selects the new group ID. Select the extension target, then go to App Groups, click Refresh, and select the same group ID. The app and extension are now in the same app group and can have access to the same shared data. For more information on configuring app groups, see [`Configuring app groups`](https://developer.apple.com/documentation/Xcode/configuring-app-groups).
 

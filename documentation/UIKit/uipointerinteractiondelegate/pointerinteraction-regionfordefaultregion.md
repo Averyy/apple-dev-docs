@@ -23,9 +23,9 @@ A `UIPointerRegion` in which to apply a pointer style. Return `nil` to indicate 
 
 ## Parameters
 
-- `interaction`: This  .
-- `request`: The   that describes the pointer’s location in the interaction’s view.
-- `defaultRegion`: The   that represents the entire surface of the interaction’s view.
+- `interaction`: This [`UIPointerInteraction`](uipointerinteraction.md).
+- `request`: The [`UIPointerRegionRequest`](uipointerregionrequest.md) that describes the pointer’s location in the interaction’s view.
+- `defaultRegion`: The [`UIPointerRegion`](uipointerregion.md) that represents the entire surface of the interaction’s view.
 
 ## See Also
 

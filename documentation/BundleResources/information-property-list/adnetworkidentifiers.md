@@ -9,6 +9,10 @@ An array of strings that identifies the ad networks a publisher app shows advert
 - iOS 17.4+
 - iPadOS 17.4+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 Use this key to identify which ad networks the publisher app shows advertisements for. For more information, see [`Configuring a publisher app`](https://developer.apple.com/documentation/AdAttributionKit/configuring-a-publisher-app).

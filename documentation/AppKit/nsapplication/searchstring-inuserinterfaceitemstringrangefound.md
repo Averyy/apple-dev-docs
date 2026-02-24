@@ -26,8 +26,8 @@ The search uses the default matching rules for Spotlight for Help.
 
 - `searchString`: The search string.
 - `stringToSearch`: The string to search.
-- `searchRange`: The subrange of the   to restrict the search to.
-- `foundRange`: Returns, by-reference, the range of the   within  .
+- `searchRange`: The subrange of the `stringToSearch` to restrict the search to.
+- `foundRange`: Returns, by-reference, the range of the `searchString` within `stringToSearch`.
 
 ## See Also
 

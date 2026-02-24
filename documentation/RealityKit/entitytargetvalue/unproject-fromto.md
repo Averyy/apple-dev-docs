@@ -24,7 +24,7 @@ func unproject(_ point: CGPoint, from space: some CoordinateSpaceProtocol, to re
 ## Parameters
 
 - `point`: A point in the provided coordinate space.
-- `space`: The 2D coordinate space in which to interpret the  .
+- `space`: The 2D coordinate space in which to interpret the `point`.
 - `realitySpace`: The 3D coordinate space of the returned point.
 
 

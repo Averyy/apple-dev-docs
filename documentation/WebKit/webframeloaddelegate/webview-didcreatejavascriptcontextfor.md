@@ -21,8 +21,8 @@ If a delegate implements this method along with either [`webView(_:didClearWindo
 ## Parameters
 
 - `webView`: The view sending the message.
-- `context`: The   representing the frame’s JavaScript window object.
-- `frame`: The   to which the context belongs.
+- `context`: The [`JSContext`](https://developer.apple.com/documentation/JavaScriptCore/JSContext) representing the frame’s JavaScript window object.
+- `frame`: The [`WebFrame`](webframe.md) to which the context belongs.
 
 
 ---

@@ -30,7 +30,7 @@ Create a type given a type tag.
 
 - `tag`: The tag, such as the path extension, for which a type is desired.
 - `tagClass`: The class of the tag, such as \c UTTagClassFilenameExtension.
-- `supertype`: Another type that the resulting type must conform to. If   \c nil, no conformance is required.
+- `supertype`: Another type that the resulting type must conform to. If \c nil, no conformance is required.
 
 
 ---

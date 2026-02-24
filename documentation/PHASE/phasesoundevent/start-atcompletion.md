@@ -25,7 +25,7 @@ This function notifies the engine to start the sound event, then returns immedia
 
 ## Parameters
 
-- `when`: The desired start time based on the engine time retrieved from [PHASEEngine lastRenderTime]   If the sound event starts immediately with an audible sound, it will begin rendering at this time.  The sound event will otherwise begin operating at this time.   A nil value will start the sound event immediately   This time is not scaled by unitsPerSecond.
+- `when`: The desired start time based on the engine time retrieved from [PHASEEngine lastRenderTime] If the sound event starts immediately with an audible sound, it will begin rendering at this time.  The sound event will otherwise begin operating at this time. A nil value will start the sound event immediately This time is not scaled by unitsPerSecond.
 - `handler`: The block that will be called when the sound event has stopped.
 
 

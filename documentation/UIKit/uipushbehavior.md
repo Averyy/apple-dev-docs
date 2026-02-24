@@ -21,11 +21,11 @@ class UIPushBehavior
 
 #### Overview
 
-A  is any iOS or custom object that conforms to the [`UIDynamicItem`](uidynamicitem.md) protocol. The [`UIView`](uiview.md) and [`UICollectionViewLayoutAttributes`](uicollectionviewlayoutattributes.md) classes implement this protocol starting in iOS 7.0. You can use a custom object as a dynamic item for such purposes as reacting to rotation or position changes computed by a dynamic animator—an instance of the [`UIDynamicAnimator`](uidynamicanimator.md) class.
+A *dynamic item* is any iOS or custom object that conforms to the [`UIDynamicItem`](uidynamicitem.md) protocol. The [`UIView`](uiview.md) and [`UICollectionViewLayoutAttributes`](uicollectionviewlayoutattributes.md) classes implement this protocol starting in iOS 7.0. You can use a custom object as a dynamic item for such purposes as reacting to rotation or position changes computed by a dynamic animator—an instance of the [`UIDynamicAnimator`](uidynamicanimator.md) class.
 
 The default magnitude of a push behavior’s force vector is `nil`, equivalent to no force. A continuous force vector with a magnitude of `1.0`, applied to a 100 point x 100 point view whose density value is `1.0`, results in view acceleration of 100 points / second² in the direction of the vector; this value is also known as the UIKit Newton.
 
-You express a push behavior’s force vector in terms of magnitude ([`magnitude`](uipushbehavior/magnitude.md)) and radian angle ([`angle`](uipushbehavior/angle.md)). Instead of using radian angle, you can equivalently express direction using  and  components by using the [`pushDirection`](uipushbehavior/pushdirection.md) property. Whichever approach you use, the alternate, equivalent values update automatically.
+You express a push behavior’s force vector in terms of magnitude ([`magnitude`](uipushbehavior/magnitude.md)) and radian angle ([`angle`](uipushbehavior/angle.md)). Instead of using radian angle, you can equivalently express direction using *x* and *y* components by using the [`pushDirection`](uipushbehavior/pushdirection.md) property. Whichever approach you use, the alternate, equivalent values update automatically.
 
 For each dynamic item that you associate with a push, the force is applied at the item center or at a specified offset from the center in item-relative coordinates.
 
@@ -67,7 +67,7 @@ You can include a push behavior in a custom, composite behavior by starting with
 - [func targetOffsetFromCenter(for: any UIDynamicItem) -> UIOffset](uipushbehavior/targetoffsetfromcenter(for:).md)
   Returns the offset, from the center of a dynamic item, at which the push behavior’s force vector is applied.
 - [var pushDirection: CGVector](uipushbehavior/pushdirection.md)
-  The direction of the force vector for the behavior, expressed as  and  components and using standard UIKit geometry.
+  The direction of the force vector for the behavior, expressed as *x* and *y* components and using standard UIKit geometry.
 ### Constants
 - [UIPushBehavior.Mode](uipushbehavior/mode-swift.enum.md)
   The type of force for the push behavior.

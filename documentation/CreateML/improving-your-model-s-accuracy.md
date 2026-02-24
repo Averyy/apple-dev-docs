@@ -30,11 +30,11 @@ Try adjusting the training parameters. When working with image data, double the 
 
 ![Screenshot showing the maximum number of iterations set to 20 in the MLImageClassifierBuilder playground UI.](https://docs-assets.developer.apple.com/published/d5d3381985df49dadf5207e31a918ee5/improving-your-model-s-accuracy-1%402x.png)
 
-For natural language data, try a different underlying algorithm (see [`MLTextClassifier.ModelAlgorithmType`](mltextclassifier/modelalgorithmtype.md)). For more general tasks, use a different underlying model than the type determined by [`MLClassifier`](mlclassifier.md) (see ) or [`MLRegressor`](mlregressor.md) (see ).
+For natural language data, try a different underlying algorithm (see [`MLTextClassifier.ModelAlgorithmType`](mltextclassifier/modelalgorithmtype.md)). For more general tasks, use a different underlying model than the type determined by [`MLClassifier`](mlclassifier.md) (see *Supporting Classifier Types*) or [`MLRegressor`](mlregressor.md) (see *Supporting Regressor Types*).
 
 ##### Improve Your Models Validation Accuracy
 
-If your model’s accuracy on the validation set is low or fluctuates between low and high each time you train the model, you need more data. You can generate more input data from the examples you already collected, a technique known as . For image data, you can combine operations like cropping, rotation, blurring, and exposure adjustment to make one image into many examples.
+If your model’s accuracy on the validation set is low or fluctuates between low and high each time you train the model, you need more data. You can generate more input data from the examples you already collected, a technique known as *data augmentation*. For image data, you can combine operations like cropping, rotation, blurring, and exposure adjustment to make one image into many examples.
 
 ![A figure showing a single image of an elephant becoming many images by applying augmentations such as crop, rotate, blur, and expose to the image.](https://docs-assets.developer.apple.com/published/8ebb9a01db59e838cba566133acf4ffe/improving-your-model-s-accuracy-2%402x.png)
 

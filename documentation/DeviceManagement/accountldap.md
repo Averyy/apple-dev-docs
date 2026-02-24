@@ -59,6 +59,14 @@ Specify `com.apple.configuration.account.ldap` as the declaration type.
 - [object AccountLDAPSearchSettingsItemObject](accountldapsearchsettingsitemobject.md)
   The settings for configuring the search behavior with an LDAP server.
 
+## Properties
+
+- `AuthenticationCredentialsAssetReference` (string): The identifier of an asset declaration that contains the credentials for this account. Set the corresponding asset type to `CredentialUserNameAndPassword`.
+- `HostName` (string) *(required)*: The hostname or IP address of the LDAP server.
+- `Port` (integer): The port number or IP address of the LDAP server.
+- `SearchSettings` ([AccountLDAPSearchSettingsItemObject]): The array of nodes to start LDAP searches from. There must be at least one node for this account to be useful. macOS only searches one node and ignores other items in the array.
+- `VisibleName` (string): The name that apps show to the user for this LDAP account. If not present, the system generates a suitable default.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

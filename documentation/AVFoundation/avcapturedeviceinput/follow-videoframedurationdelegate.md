@@ -40,7 +40,7 @@ Once your [`status`](avexternalsyncdevice/status.md) changes to `AVExternalSyncD
 
 ## Parameters
 
-- `externalSyncDevice`: The   hardware to follow.
+- `externalSyncDevice`: The [`AVExternalSyncDevice`](avexternalsyncdevice.md) hardware to follow.
 - `delegate`: The delegate to notify when the connection status changes, or an error occurs.
 
 ## See Also

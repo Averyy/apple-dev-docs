@@ -28,7 +28,7 @@ Call this function after handling the steps of an SSL handshake, such as server 
 ## Parameters
 
 - `context`: A session context.
-- `status`: A status result for the context, not to be confused with the return result of this function call. See  .
+- `status`: A status result for the context, not to be confused with the return result of this function call. See [`Secure Transport Result Codes`](secure-transport-result-codes.md).
 
 
 ---

@@ -18,7 +18,7 @@ Creates a default configuration for the given extension.
 
 ## Parameters
 
-- `appExtension`: An instance of the extension that conforms to the   protocol.
+- `appExtension`: An instance of the extension that conforms to the [`TranslationUIProviderExtension`](translationuiproviderextension.md) protocol.
 
 
 ---

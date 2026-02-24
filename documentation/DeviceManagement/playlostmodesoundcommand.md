@@ -21,6 +21,11 @@ object PlayLostModeSoundCommand
 - [object PlayLostModeSoundCommand.Command](playlostmodesoundcommand/command-data.dictionary.md)
   The command to play the Lost Mode sound on a device that’s in Lost Mode.
 
+## Properties
+
+- `Command` (PlayLostModeSoundCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object PlayLostModeSoundResponse](playlostmodesoundresponse.md)

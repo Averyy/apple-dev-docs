@@ -18,9 +18,9 @@ init(imageTrailingEdgePadding: CGFloat? = nil, imageWidth: CGFloat? = nil, image
 
 ## Parameters
 
-- `imageTrailingEdgePadding`: The trailing spacing between contact image and   text fields. If  , the style uses a default value.
-- `imageWidth`: The contact image width, in points. If  , the style uses a   default value.
-- `imageColor`: The color of the avatar badge to use, when a person in the   contacts list doesn’t have a photo assigned. For design guidance, see Human   Interface Guidelines > Color >   .   Defaults to  .
+- `imageTrailingEdgePadding`: The trailing spacing between contact image and text fields. If `nil`, the style uses a default value.
+- `imageWidth`: The contact image width, in points. If `nil`, the style uses a default value.
+- `imageColor`: The color of the avatar badge to use, when a person in the contacts list doesn’t have a photo assigned. For design guidance, see Human Interface Guidelines > Color > [`Specifications`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/color#Specifications). Defaults to [`gray`](https://developer.apple.com/documentation/SwiftUI/Color/gray).
 
 
 ---

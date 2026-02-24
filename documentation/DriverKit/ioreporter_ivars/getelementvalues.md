@@ -27,7 +27,7 @@ Locking: Caller must ensure that the reporter (data) lock is held. The returned 
 
 ## Parameters
 
-- `element_index`: 
+- `element_index`: - index of the _element in internal array
 
 
 ---

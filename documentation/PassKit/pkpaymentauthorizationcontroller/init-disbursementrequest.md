@@ -20,7 +20,7 @@ convenience init(disbursementRequest request: PKDisbursementRequest)
 
 ## Parameters
 
-- `request`: A   that contains the details of the request.
+- `request`: A [`PKDisbursementRequest`](pkdisbursementrequest.md) that contains the details of the request.
 
 ## See Also
 

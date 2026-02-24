@@ -21,7 +21,7 @@ let restDistance: Float
 
 #### Discussion
 
-Use a  rate. The force field pulls rigid bodies to the effect’s origin along the radial direction if this value is `0`.
+Use a **non-negative** rate. The force field pulls rigid bodies to the effect’s origin along the radial direction if this value is `0`.
 
 
 ---

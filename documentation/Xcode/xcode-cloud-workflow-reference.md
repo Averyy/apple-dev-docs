@@ -16,6 +16,9 @@ For additional information about Xcode Cloud workflows, see [`Explore Xcode Clou
 
 Even if you’re a solo developer, you might create several workflows. To help distinguish workflows from each other and make each workflow’s purpose easy to understand, open the workflow and provide metadata in the General section.
 
+- **Name**: Choose a name that’s easy to recognize. For example, name a workflow “Nightly Builds” if it distributes a new version of your app to your team every night.
+- **Description**: Provide additional context that explains the workflow’s purpose. For example, enter “A workflow that automatically archives both the iOS and the macOS app every night”.
+
 ![A screenshot that shows a workflow in Xcode. The General section is visible and shows the name and description that the user provided.](https://docs-assets.developer.apple.com/published/f5090090ba3a21cc016c980e101019cd/Xcode-Cloud-Workflow-Reference-1%402x.png)
 
 ##### Environment
@@ -43,7 +46,7 @@ To configure a workflow that starts a new build without cached data:
 
 ##### Custom Environment Variables
 
-In addition to Xcode and macOS versions, you can set custom  for a workflow in its Environment section. These variables are available to custom build scripts you use to extend workflows. For example, set a secret environment variable to contain an API key you use in a custom build script that uploads a workflow’s artifacts to your server.
+In addition to Xcode and macOS versions, you can set custom *environment variables* for a workflow in its Environment section. These variables are available to custom build scripts you use to extend workflows. For example, set a secret environment variable to contain an API key you use in a custom build script that uploads a workflow’s artifacts to your server.
 
 > ❗ **Important**: To securely store an environment variable and make sure it doesn’t appear in any logs, check the “Keep value redacted” (Xcode) or Secret (App Store Connect) box.
 
@@ -90,7 +93,7 @@ For additional information on sending notifications to Slack, see [`Connecting X
 
 Xcode Cloud uses your project’s configured schemes and offers a wide variety of workflow settings. However, you might want to perform additional custom tasks you can’t configure using a scheme or workflow. For example, you might need to install an additional tool to build your project, to upload an app archive to storage, to use a different app icon for nightly builds, and so on.
 
-To address these use cases, you can create shell scripts, referred to as , that Xcode Cloud runs at a specific moment during a build. For more information, see [`Writing custom build scripts`](writing-custom-build-scripts.md).
+To address these use cases, you can create shell scripts, referred to as *custom build scripts*, that Xcode Cloud runs at a specific moment during a build. For more information, see [`Writing custom build scripts`](writing-custom-build-scripts.md).
 
 ##### Automate Workflow Management
 

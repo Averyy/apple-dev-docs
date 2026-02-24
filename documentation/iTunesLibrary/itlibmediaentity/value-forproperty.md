@@ -21,7 +21,7 @@ The value of the specified media property key.
 
 ## Parameters
 
-- `property`: The media property to retrieve the value from. Takes Media Item Properties and Playlist Properties from  .
+- `property`: The media property to retrieve the value from. Takes Media Item Properties and Playlist Properties from [`ITLibMediaItem`](itlibmediaitem.md).
 
 ## See Also
 

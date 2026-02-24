@@ -26,7 +26,7 @@ Views can have only one superview. If `view` already has a superview and that vi
 
 ## Parameters
 
-- `view`: The view to insert. It’s removed from its superview if it’s not a sibling of  .
+- `view`: The view to insert. It’s removed from its superview if it’s not a sibling of `siblingSubview`.
 - `siblingSubview`: The sibling view that will be behind the inserted view.
 
 ## See Also

@@ -26,7 +26,7 @@ The custom shader can be either MaterialX or [`CustomMaterial`](custommaterial.m
 
 ## Parameters
 
-- `inputs`: A   instance that allows you to customize various aspects of this hover effect.
+- `inputs`: A [`HoverEffectComponent.ShaderHoverEffectInputs`](hovereffectcomponent/shaderhovereffectinputs.md) instance that allows you to customize various aspects of this hover effect.
 
 
 ---

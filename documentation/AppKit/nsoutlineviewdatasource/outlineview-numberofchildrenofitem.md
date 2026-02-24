@@ -23,7 +23,7 @@ The number of child items encompassed by `item`. If `item` is `nil`, this method
 
 The [`outlineView(_:numberOfChildrenOfItem:)`](nsoutlineviewdatasource/outlineview(_:numberofchildrenofitem:).md) method is called very frequently, so it must be efficient.
 
-> ❗ **Important**:  While this method is marked as `@optional` in the protocol,  Do not call [`reloadData()`](nstableview/reloaddata().md) from this method.
+> ❗ **Important**:  While this method is marked as `@optional` in the protocol, **you must implement this method if you are not providing the data for the outline view using Cocoa bindings.** Do not call [`reloadData()`](nstableview/reloaddata().md) from this method.
 
 ## Parameters
 

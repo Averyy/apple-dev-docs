@@ -32,7 +32,7 @@ This method throws an error if `data` does not contain valid keyed data.
 
 ## Parameters
 
-- `data`: An object graph previously encoded by  .
+- `data`: An object graph previously encoded by [`NSKeyedArchiver`](nskeyedarchiver.md).
 
 ## See Also
 

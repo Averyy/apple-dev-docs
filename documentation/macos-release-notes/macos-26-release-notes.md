@@ -55,7 +55,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Known Issues
 
-- Xcode features like Predictive Code Completion and the coding assistant might require Apple Intelligence to be enabled.   (150889516)  Enable Apple Intelligence in System Settings.
+- Xcode features like Predictive Code Completion and the coding assistant might require Apple Intelligence to be enabled.   (150889516) **Workaround:** Enable Apple Intelligence in System Settings.
 
 ##### Assistantschemas
 
@@ -140,7 +140,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Known Issues
 
-- Users who enable path bar or status bar in Finder and use list view might be unable to access the last item in the list.  (151917092)  Disable path bar or status bar temporarily.
+- Users who enable path bar or status bar in Finder and use list view might be unable to access the last item in the list.  (151917092) **Workaround:** Disable path bar or status bar temporarily.
 
 ##### Foundation
 
@@ -187,8 +187,8 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Known Issues
 
-- Some instructions and prompts to the model might not lead to expected responses. Use Feedback Assistant to report satisfactory or unsatisfactory cases. When applicable, you can use `LanguageModelSession.logFeedbackAttachment()` to serialize the feedback to a JSON file and attach it to Feedback Assistant.  (152318091)  Refine your instructions and prompts using `#Playground` in Xcode. When applying guided generation with a `@Generable` type, add `@Guide` with a custom description on properties to steer the model’s responses.
-- If `Argument` type is an enum with associated type, tools will encounter a `ToolCallError` with an underlying `decodingFailure` when the model attempts to call it.  (156723065)  Wrap the enum in a struct.
+- Some instructions and prompts to the model might not lead to expected responses. Use Feedback Assistant to report satisfactory or unsatisfactory cases. When applicable, you can use `LanguageModelSession.logFeedbackAttachment()` to serialize the feedback to a JSON file and attach it to Feedback Assistant.  (152318091) **Workaround:** Refine your instructions and prompts using `#Playground` in Xcode. When applying guided generation with a `@Generable` type, add `@Guide` with a custom description on properties to steer the model’s responses.
+- If `Argument` type is an enum with associated type, tools will encounter a `ToolCallError` with an underlying `decodingFailure` when the model attempts to call it.  (156723065) **Workaround:** Wrap the enum in a struct.
 
 ##### Full Screen
 
@@ -211,7 +211,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Known Issues
 
-- Game Mode will not activate for application binaries spawned directly from Terminal.  (153127050)  Use the `open` command to launch your game from Terminal. You can pass arguments, change environment variables, and redirect standard output/error when using this command, such as `open MyGame.app --stdout /tmp/mygame.out --stderr /tmp/mygame.err --env MTL_HUD_ENABLED=1 --args -MyGameArgument -AnotherArgument`. See `man open` for more information.
+- Game Mode will not activate for application binaries spawned directly from Terminal.  (153127050) **Workaround:** Use the `open` command to launch your game from Terminal. You can pass arguments, change environment variables, and redirect standard output/error when using this command, such as `open MyGame.app --stdout /tmp/mygame.out --stderr /tmp/mygame.err --env MTL_HUD_ENABLED=1 --args -MyGameArgument -AnotherArgument`. See `man open` for more information.
 
 ##### Image Playground
 
@@ -240,7 +240,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Known Issues
 
-- Custom tap gesture callbacks registered using `onTapGesture` might not work as expected on a SwiftUI Map.  (157612948) (FB19394663)  Use `simultaneousGesture(TapGesture().onEnded {})` to register the callback.
+- Custom tap gesture callbacks registered using `onTapGesture` might not work as expected on a SwiftUI Map.  (157612948) (FB19394663) **Workaround:** Use `simultaneousGesture(TapGesture().onEnded {})` to register the callback.
 
 ##### Memory Tools
 
@@ -266,8 +266,8 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 ###### Known Issues
 
 - Users on older devices won’t see compatibility messages for polls, so they might be unaware a poll was sent.  (148545742)
-- Expanding Conversation Details causes the list of conversations to collapse.  (149436051)  Closing Conversation Details will bring back the list.
-- Scrolling through a Messages conversation might be sluggish.  (152453655)  Quit and relaunch Messages.
+- Expanding Conversation Details causes the list of conversations to collapse.  (149436051) **Workaround:** Closing Conversation Details will bring back the list.
+- Scrolling through a Messages conversation might be sluggish.  (152453655) **Workaround:** Quit and relaunch Messages.
 
 ##### Metal
 
@@ -282,7 +282,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Known Issues
 
-- Metal Shader Validation might not work with Metal 4 ray tracing pipelines.  (152520367)  Selectively disable Shader Validation for pipelines using ray tracing. See [`documentation`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage/#Selectively-enable-Shader-Validation).
+- Metal Shader Validation might not work with Metal 4 ray tracing pipelines.  (152520367) **Workaround:** Selectively disable Shader Validation for pipelines using ray tracing. See [`documentation`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage/#Selectively-enable-Shader-Validation).
 
 ##### Metalfx
 
@@ -331,7 +331,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Known Issues
 
-- Invoking search in the Photos picker causes the picker to crash. Or invoking Search in a collection in Photos causes Search to crash.  (152403781)  Use the Photos app to search for the content. Once you’ve found it, you can share or copy it to continue with the workflow. Use Search in the Library tab to find the content.
+- Invoking search in the Photos picker causes the picker to crash. Or invoking Search in a collection in Photos causes Search to crash.  (152403781) **Workaround:** Use the Photos app to search for the content. Once you’ve found it, you can share or copy it to continue with the workflow. Use Search in the Library tab to find the content.
 
 ##### Photos Picker
 
@@ -402,7 +402,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 ###### Known Issues
 
 - Users who enable Reduce Transparency might encounter flickering in background windows or the Dock.  (152060485)
-- If System Settings > Desktop & Dock > Displays have separate Spaces is disabled, WindowServer will crash at login time.  (153570422)  Boot into Recovery, then mount the Data volume on your partition. Launch Terminal and run `rm /Volumes/<Partition Name "Macintosh HD">/Users/<user name>/Library/Preferences/com.apple.Spaces.plist`.
+- If System Settings > Desktop & Dock > Displays have separate Spaces is disabled, WindowServer will crash at login time.  (153570422) **Workaround:** Boot into Recovery, then mount the Data volume on your partition. Launch Terminal and run `rm /Volumes/<Partition Name "Macintosh HD">/Users/<user name>/Library/Preferences/com.apple.Spaces.plist`.
 
 ##### Setup Assistant
 
@@ -585,7 +585,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Known Issues
 
-- For Catalyst apps using `.translationTask()`, buttons in the download approval UI might not work.  (151313115)  Either manually download the languages you need beforehand from System Settings, or build your Catalyst app with the “Optimize for Mac” setting.
+- For Catalyst apps using `.translationTask()`, buttons in the download approval UI might not work.  (151313115) **Workaround:** Either manually download the languages you need beforehand from System Settings, or build your Catalyst app with the “Optimize for Mac” setting.
 
 ##### Uikit
 
@@ -634,7 +634,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ## See Also
 
-- [macOS Tahoe 26.4 Beta Release Notes](macos-26_4-release-notes.md)
+- [macOS Tahoe 26.4 Beta 2 Release Notes](macos-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [macOS Tahoe 26.3 Release Notes](macos-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

@@ -28,8 +28,8 @@ It is safe to call this function concurrently on two or more threads as long as 
 
 ## Parameters
 
-- `trust`: The trust management object containing the certificate you want to evaluate. A trust management object includes the certificate to be verified plus the policy or policies to be used in evaluating trust. It can optionally also include other certificates to be used in verifying the first certificate. Use the   function to create a trust management object.
-- `keychainOrArray`: A keychain object for a single keychain to search, an array of keychain objects for a set of keychains to search, or   to search the user’s default keychain search list. To prevent the   function from searching any keychains at all, pass a   array with no elements.
+- `trust`: The trust management object containing the certificate you want to evaluate. A trust management object includes the certificate to be verified plus the policy or policies to be used in evaluating trust. It can optionally also include other certificates to be used in verifying the first certificate. Use the [`SecTrustCreateWithCertificates(_:_:_:)`](sectrustcreatewithcertificates(_:_:_:).md) function to create a trust management object.
+- `keychainOrArray`: A keychain object for a single keychain to search, an array of keychain objects for a set of keychains to search, or `NULL` to search the user’s default keychain search list. To prevent the [`SecTrustEvaluate(_:_:)`](sectrustevaluate(_:_:).md) function from searching any keychains at all, pass a `CFArrayRef` array with no elements.
 
 
 ---

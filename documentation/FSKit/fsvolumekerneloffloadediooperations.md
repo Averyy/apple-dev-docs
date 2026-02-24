@@ -18,7 +18,7 @@ protocol FSVolumeKernelOffloadedIOOperations : NSObjectProtocol
 
 A volume that conforms to this protocol supplies file extent mappings to FSKit, which allows file transfers to take place in the kernel. This approach provides higher-performance file transfer than transferring data between the module and kernel, while still allowing the file system to run in user space.
 
-This protocol uses  to provide the kernel the logical-to-physical mapping of a given file. An extent describes a physical offset on disk, and a length and a logical offset within the file. You don’t manage extents directly. Instead, FSKit provides you with an [`FSExtentPacker`](fsextentpacker.md) to define and pack the extents in your implementations of this protocol’s methods.
+This protocol uses *extents* to provide the kernel the logical-to-physical mapping of a given file. An extent describes a physical offset on disk, and a length and a logical offset within the file. You don’t manage extents directly. Instead, FSKit provides you with an [`FSExtentPacker`](fsextentpacker.md) to define and pack the extents in your implementations of this protocol’s methods.
 
 Most volumes conform to either this protocol or [`FSVolume.ReadWriteOperations`](fsvolume/readwriteoperations.md). You can conform to both if you need to provide kernel-offloaded I/O only for certain files. In that case, files with the [`inhibitKernelOffloadedIO`](fsitem/attribute/inhibitkerneloffloadedio.md) attribute set use [`FSVolume.ReadWriteOperations`](fsvolume/readwriteoperations.md), and those without it use this protocol. A volume that doesn’t conform to either protocol can’t support any I/O operation.
 

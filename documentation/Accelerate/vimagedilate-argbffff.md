@@ -31,13 +31,13 @@ Use the dilate operation to enlarge light structural elements in an image. In th
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the  ,  , and   fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
 - `srcOffsetToROI_X`: The horizontal offset, in pixels, to the upper-left pixel of the region of interest within the source image.
 - `srcOffsetToROI_Y`: The vertical offset, in pixels, to the upper-left pixel of the region of interest within the source image.
-- `kernel`: The kernel data that contains   elements.
+- `kernel`: The kernel data that contains `kernel_height * kernel_width` elements.
 - `kernel_height`: The height of the kernel in pixels. This value needs to be odd.
 - `kernel_width`: The width of the kernel in pixels. This value needs to be odd.
-- `flags`: To specify that the function doesn’t apply the operation to the alpha channel, set the   flag.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md). To specify that the function doesn’t apply the operation to the alpha channel, set the [`kvImageLeaveAlphaUnchanged`](kvimageleavealphaunchanged.md) flag.
 
 ## See Also
 

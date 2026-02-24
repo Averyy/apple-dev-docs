@@ -21,7 +21,7 @@ init(multiPolygon: MKMultiPolygon)
 
 ## Parameters
 
-- `multiPolygon`: An   to initialize the renderer with.
+- `multiPolygon`: An [`MKMultiPolygon`](mkmultipolygon.md) to initialize the renderer with.
 
 
 ---

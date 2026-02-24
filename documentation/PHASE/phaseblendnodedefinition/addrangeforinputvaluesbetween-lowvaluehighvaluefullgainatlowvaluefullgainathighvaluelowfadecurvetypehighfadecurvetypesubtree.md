@@ -23,8 +23,8 @@ func addRangeForInputValuesBetween(lowValue: Double, highValue: Double, fullGain
 
 - `lowValue`: A value above which the child node blends.
 - `highValue`: A value below which the child node blends.
-- `fullGainAtLowValue`: The threshold for which a fade curve that   defines applies to the gain when the blend parameter value is between   and  .
-- `fullGainAtHighValue`: The threshold for which a fade curve that   defines applies to the gain when the blend parameter value is between   and  .
+- `fullGainAtLowValue`: The threshold for which a fade curve that `lowFadeCurveType` defines applies to the gain when the blend parameter value is between `lowValue` and `fullGainAtLowValue`.
+- `fullGainAtHighValue`: The threshold for which a fade curve that `highFadeCurveType` defines applies to the gain when the blend parameter value is between `highValue` and `fullGainAtHighValue`.
 - `lowFadeCurveType`: An option that determines a rate of change for the child node’s gain over the low fade range.
 - `highFadeCurveType`: An option that determines a rate of change for the child node’s gain over the high fade range.
 - `subtree`: A child node to blend.

@@ -29,7 +29,7 @@ The property-list object returned by this method can be written to disk and stor
 
 ## Parameters
 
-- `textStyleRules`: An array of   objects to write to the property list.
+- `textStyleRules`: An array of `AVTextStyleRule` objects to write to the property list.
 
 
 ---

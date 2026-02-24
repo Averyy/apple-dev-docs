@@ -30,7 +30,7 @@ This method throws an [`invalidArgumentException`](https://developer.apple.com/d
 
 ## Parameters
 
-- `exifOrientation`: A   value expressing how the matte should be rotated or mirrored.
+- `exifOrientation`: A [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/CGImagePropertyOrientation) value expressing how the matte should be rotated or mirrored.
 
 ## See Also
 

@@ -56,7 +56,9 @@ NSArray *geometryNodes = [sceneSource entriesPassingTest:^BOOL(id entry, NSStrin
 
 ## Parameters
 
-- `predicate`: The block returns a Boolean value indicating whether the entry object passed the test and should be included in the method’s returned array.
+- `predicate`: The block to be applied to each object in the scene source. The block takes three parameters: - **entry**: The object to be tested.
+- **identifier**: The unique identifier of the object in the scene source.
+- **stop**: A reference to a Boolean value. Set `*stop` to [`true`](https://developer.apple.com/documentation/Swift/true) within the block to abort further processing of the scene source’s contents. The block returns a Boolean value indicating whether the entry object passed the test and should be included in the method’s returned array.
 
 ## See Also
 

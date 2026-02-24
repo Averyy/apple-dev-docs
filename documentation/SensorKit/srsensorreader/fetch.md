@@ -20,7 +20,7 @@ func fetch(_ request: SRFetchRequest)
 
 An app calls this function to access data for the caller’s sensor.
 
-Upon success, the framework delivers results in the form of  via the delegate’s [`sensorReader(_:fetching:didFetchResult:)`](srsensorreaderdelegate/sensorreader(_:fetching:didfetchresult:).md) callback. The framework invokes the delegate multiple times if this function results in multiple samples.
+Upon success, the framework delivers results in the form of *samples* via the delegate’s [`sensorReader(_:fetching:didFetchResult:)`](srsensorreaderdelegate/sensorreader(_:fetching:didfetchresult:).md) callback. The framework invokes the delegate multiple times if this function results in multiple samples.
 
 The framework returns sensor data only for the argument fetch-object’s device, and that’s dated only within the argument fetch-object’s time window. Within that window, this function returns only the data that the framework recorded (see [`startRecording()`](srsensorreader/startrecording().md)), and that the framework hasn’t deleted (see [`SRDeletionRecord`](srdeletionrecord.md)).
 

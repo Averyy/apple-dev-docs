@@ -27,11 +27,11 @@ Most properties are shared by both streams. Setting a shared property for one st
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the   and   objects. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `host`: A   object to which the streams are connected.  If unresolved, the host will be resolved prior to connecting.
+- `alloc`: The allocator to use to allocate memory for the `CFReadStream` and `CFWriteStream` objects. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `host`: A `CFHost` object to which the streams are connected.  If unresolved, the host will be resolved prior to connecting.
 - `port`: The TCP port number to which the socket streams should connect.
-- `readStream`: Upon return, contains a   object connected to the host   on port  , or   if there is a failure during creation. If you pass  , the function will not create a readable stream. Ownership follows the  .
-- `writeStream`: Upon return, contains a   object connected to the host   on port  , or   if there is a failure during creation. If you pass  , the function will not create a writable stream. Ownership follows the  .
+- `readStream`: Upon return, contains a `CFReadStream` object connected to the host `host` on port `port`, or `NULL` if there is a failure during creation. If you pass `NULL`, the function will not create a readable stream. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+- `writeStream`: Upon return, contains a `CFWriteStream` object connected to the host `host` on port `port`, or `NULL` if there is a failure during creation. If you pass `NULL`, the function will not create a writable stream. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 

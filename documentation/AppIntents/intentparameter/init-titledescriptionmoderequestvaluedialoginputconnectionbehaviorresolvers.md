@@ -24,7 +24,7 @@ convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStr
 
 - `title`: A word or short phrase summarizing this parameter.
 - `description`: Additional details about this parameter.
-- `mode`: The user interface that appears when a person chooses a value for this parameter. Default value is  .
+- `mode`: The user interface that appears when a person chooses a value for this parameter. Default value is `.contact`.
 - `requestValueDialog`: A prompt that asks a person to provide the parameter value.
 - `inputConnectionBehavior`: An enum that indicates how this parameter receives the output from a preceding app intent.
 - `resolvers`: An object that converts a value of another type to this parameter’s type.

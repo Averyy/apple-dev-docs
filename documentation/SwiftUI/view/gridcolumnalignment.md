@@ -61,7 +61,7 @@ To override row alignment, see [`init(alignment:content:)`](gridrow/init(alignme
 
 ## Parameters
 
-- `guide`: The   guide to use for the grid   column that the view appears in.
+- `guide`: The [`HorizontalAlignment`](horizontalalignment.md) guide to use for the grid column that the view appears in.
 
 ## See Also
 

@@ -33,7 +33,7 @@ This function is thread safe.
 
 ## Parameters
 
-- `hostname`: A string representing the name of the host. This value must not be  .
+- `hostname`: A string representing the name of the host. This value must not be `NULL`.
 
 ## See Also
 

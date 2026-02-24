@@ -24,7 +24,7 @@ optional func webView(_ webView: WebView!, shouldChangeSelectedDOMRange currentR
 - `currentRange`: The old range the user wants to change.
 - `proposedRange`: The new range the user wants to select.
 - `selectionAffinity`: The direction of the selection.
-- `flag`:   if the user is still selecting; otherwise,  .
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) if the user is still selecting; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

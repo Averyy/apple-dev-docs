@@ -25,8 +25,8 @@ A tuple with a new [`MTLTileRenderPipelineDescriptor`](mtltilerenderpipelinedesc
 
 ## Parameters
 
-- `tileDescriptor`: An   instance.
-- `options`: An   instance that represents the reflection information you want the method to generate.
+- `tileDescriptor`: An [`MTLTileRenderPipelineDescriptor`](mtltilerenderpipelinedescriptor.md) instance.
+- `options`: An [`MTLPipelineOption`](mtlpipelineoption.md) instance that represents the reflection information you want the method to generate.
 
 ## See Also
 

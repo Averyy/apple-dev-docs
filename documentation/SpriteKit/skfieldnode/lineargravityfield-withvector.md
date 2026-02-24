@@ -30,7 +30,7 @@ If the field node is rotated, the direction of its gravity field is also rotated
 
 ## Parameters
 
-- `direction`: The direction and magnitude of the gravitational force. The values represent the acceleration of the field in meters per second squared. For example, to simulate earth’s gravity, specify  . The   component on the vector is ignored.
+- `direction`: The direction and magnitude of the gravitational force. The values represent the acceleration of the field in meters per second squared. For example, to simulate earth’s gravity, specify `(0, -9.8, 0)`. The `z` component on the vector is ignored.
 
 ## See Also
 

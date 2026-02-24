@@ -26,7 +26,7 @@ After you invoke this method, the framework calls any input handlers you set for
 
 ## Parameters
 
-- `reply`: A closure that the method calls upon completion with the following parameter:
+- `reply`: A closure that the method calls upon completion with the following parameter: - **`error`**: Describes an error if it occurs, or returns `nil` if the operation completes.
 
 ## See Also
 

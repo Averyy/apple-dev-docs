@@ -26,9 +26,9 @@ A result code.
 ## Parameters
 
 - `inSequence`: The music sequence to load the data into.
-- `inFileRef`: A   URL pointing to a file that contains the data to load.
-- `inFileTypeHint`: Provides a hint to the system about the file type referenced by the   parameter.
-- `inFlags`: Flags that specify how the data should be parsed, and how it should be assigned to tracks. See  .
+- `inFileRef`: A `file://` URL pointing to a file that contains the data to load.
+- `inFileTypeHint`: Provides a hint to the system about the file type referenced by the `inFileRef` parameter.
+- `inFlags`: Flags that specify how the data should be parsed, and how it should be assigned to tracks. See [`MusicSequenceLoadFlags`](musicsequenceloadflags.md).
 
 ## See Also
 

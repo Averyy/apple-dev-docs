@@ -29,6 +29,8 @@ This method applies the linear-to-sRGB tone curve filter to an image. The effect
 
 The linear-to-sRGB tone curve filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds brightness to the input image:
 
 ```swift

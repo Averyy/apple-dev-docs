@@ -27,7 +27,7 @@ This function is identical to [`beginTransparencyLayer(auxiliaryInfo:)`](cgconte
 ## Parameters
 
 - `rect`: The rectangle, specified in user space, that bounds the transparency layer.
-- `auxInfo`: A dictionary that specifies any additional information, or  .
+- `auxInfo`: A dictionary that specifies any additional information, or `nil`.
 
 ## See Also
 

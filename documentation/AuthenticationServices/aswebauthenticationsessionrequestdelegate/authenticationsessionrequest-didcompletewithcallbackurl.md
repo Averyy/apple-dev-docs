@@ -17,7 +17,7 @@ optional func authenticationSessionRequest(_ authenticationSessionRequest: ASWeb
 ## Parameters
 
 - `authenticationSessionRequest`: The request sending the message.
-- `callbackURL`: A URL using the scheme indicated by the request’s   property that indicates the outcome of the authentication attempt.
+- `callbackURL`: A URL using the scheme indicated by the request’s [`callbackURLScheme`](aswebauthenticationsessionrequest/callbackurlscheme.md) property that indicates the outcome of the authentication attempt.
 
 ## See Also
 

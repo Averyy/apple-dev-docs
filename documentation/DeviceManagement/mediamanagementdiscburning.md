@@ -66,6 +66,12 @@ Specify `com.apple.DiscRecording` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `BurnSupport` (string) *(required)*: Configure disc-burn. Allowed values: - **`off`**: The system disables disc burning.
+- **`on`**: The system allows normal default operation. Setting this key to `on` doesn’t enable disc burn support if other mechanisms or preferences disabled it. Needs to be enabled with the [`Finder`](finder.md) profile.
+- **`authenticate`**: The system requires authentication.
+
 
 ---
 

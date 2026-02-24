@@ -26,9 +26,9 @@ If the `displays` array is `nil`, this function ignores the `maxDisplays` parame
 ## Parameters
 
 - `point`: The coordinates of a point in the global display coordinate space. The origin is the upper-left corner of the main display.
-- `maxDisplays`: The size of the   array. This value determines the maximum number of displays the list includes.
-- `displays`: A pointer to storage you provide for an array of display IDs. On return, the array contains a list of displays with bounds that include the point. If you pass  , on return the display count contains the total number of displays with bounds that include the point.
-- `matchingDisplayCount`: A pointer to a display count variable you provide. On return, the display count contains the actual number of displays the list includes in the   array. This value is at most  .
+- `maxDisplays`: The size of the `displays` array. This value determines the maximum number of displays the list includes.
+- `displays`: A pointer to storage you provide for an array of display IDs. On return, the array contains a list of displays with bounds that include the point. If you pass `NULL`, on return the display count contains the total number of displays with bounds that include the point.
+- `matchingDisplayCount`: A pointer to a display count variable you provide. On return, the display count contains the actual number of displays the list includes in the `dspys` array. This value is at most `maxDisplays`.
 
 ## See Also
 

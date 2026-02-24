@@ -23,8 +23,8 @@ func CFArraySetValueAtIndex(_ theArray: CFMutableArray!, _ idx: CFIndex, _ value
 ## Parameters
 
 - `theArray`: The array in which the value is to be changed.
-- `idx`: The index at which to set the new value. The value must not lie outside the index space of   (  to   inclusive, where   is the count of the array before the operation).
-- `value`: The value to set in  . The value is retained by   using the retain callback provided when   was created and the previous value at   is released. If the value is not of the type expected by the retain callback, the behavior is undefined. The indices of other values are not affected.
+- `idx`: The index at which to set the new value. The value must not lie outside the index space of `theArray` (`0` to `N-1` inclusive, where `N` is the count of the array before the operation).
+- `value`: The value to set in `theArray`. The value is retained by `theArray` using the retain callback provided when `theArray` was created and the previous value at `idx` is released. If the value is not of the type expected by the retain callback, the behavior is undefined. The indices of other values are not affected.
 
 ## See Also
 

@@ -23,7 +23,7 @@ func sumOfSquares(axes: [Int], keepDimensions: Bool) -> BNNSGraph.Builder.Tensor
 ## Parameters
 
 - `axes`: The axes over which the operation computes the sum of squares.
-- `keepDimensions`: A Boolean value that specifies that the operation keeps the   reduced dimension with a size of  .
+- `keepDimensions`: A Boolean value that specifies that the operation keeps the reduced dimension with a size of `1`.
 
 
 ---

@@ -35,7 +35,7 @@ If the namespace already exists and the `prefix` parameter conflicts with the al
 ## Parameters
 
 - `metadata`: The metadata object in which to register the namespace.
-- `xmlns`: The namespace to register. Specify a string with a custom namespace URI. A custom namespace must be a valid XML namespace. By convention, namespaces end with either the   or   character.
+- `xmlns`: The namespace to register. Specify a string with a custom namespace URI. A custom namespace must be a valid XML namespace. By convention, namespaces end with either the `/` or `#` character.
 - `prefix`: An abbreviation for the XML namespace. You must specify a valid string for custom namespace.
 - `err`: A pointer to an error object. If an error occurs, this function assigns an error object to this parameter.
 

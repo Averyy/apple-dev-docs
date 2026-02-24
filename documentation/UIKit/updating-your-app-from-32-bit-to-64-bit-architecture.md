@@ -12,7 +12,7 @@ In iOS 11 and later, all apps use the 64-bit architecture. If your app targets a
 
 Begin by updating your existing app to iOS 11 or later. By updating your app first, you can remove deprecated code paths, address any compiler warnings, and search your code for specific 64-bit issues.
 
-1. Install the latest version of Xcode and open your project. Xcode prompts you to  the project. Modernizing adds new warnings and errors that are important when compiling your app for 64-bit architecture.
+1. Install the latest version of Xcode and open your project. Xcode prompts you to *modernize* the project. Modernizing adds new warnings and errors that are important when compiling your app for 64-bit architecture.
 2. Update your project settings to support the latest version of iOS. You can’t build a 64-bit project if it targets an iOS version earlier than iOS 5.1.
 3. Change the Architectures build setting in your project to Standard Architectures.
 4. Update your app to support the 64-bit runtime environment. The new compiler warnings and errors help guide you through this process.
@@ -25,7 +25,7 @@ It’s critical that you review your code for proper pointer usage. Assumptions 
 
 - [`Updating data structures`](updating-data-structures.md). Eliminate assumptions about type size and alignment in structures, and use explicit data types.
 - [`Auditing pointer usage`](auditing-pointer-usage.md). Adhere to proper casting behaviors and review your methods for allocating memory.
-- [`Managing functions and function pointers`](managing-functions-and-function-pointers.md) Use function prototypes for safety, and review the calling of functions that have variable-length argument lists.
+- [`Managing functions and function pointers`](managing-functions-and-function-pointers.md)**.** Use function prototypes for safety, and review the calling of functions that have variable-length argument lists.
 
 With pointer usage addressed, your app should be stable and you can focus on performance and optimize accordingly:
 

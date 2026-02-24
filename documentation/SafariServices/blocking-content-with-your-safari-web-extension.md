@@ -66,6 +66,11 @@ Build your rules describing how you want to block content, and add them to your 
 
 Review Safari’s support for specifying rules:
 
+- **`RuleActionTypes`**: Safari supports `block`, `allow`, `upgradeScheme`, and `allowAllRequests` (only for `main_frame`). Safari supports `redirect` in Safari 15.4 or later, and `modifyHeaders` in Safari 16.4 or later. Safari requires the `declarativeNetRequestWithHostAccess` permission for `modifyHeaders` or `redirect`. Safari requires user permission to add, remove, or append headers. Safari also requires user permission to perform redirect rules for both the originating and destination sites. Set specific match patterns or `<all_urls>` in the `host_permissions` key in your `manifest.js` file to request permission.
+- **`ResourceType`**: Safari supports `main_frame`, `sub_frame`, `stylesheet`, `script`, `image`, `font`, `xmlhttprequest`, `ping`, `media`, `websocket`, and `other`.
+- **`RuleCondition`**: Safari supports `domainType`, `excludedResourceTypes`, `isUrlFilterCaseSensitive`, `regexFilter`, and `resourceTypes.`
+- **Rule APIs**: Safari supports `getEnabledRulesets()`, `isRegexSupported(),` `updateEnabledRulesets()`, `MAX_NUMBER_OF_STATIC_RULESETS`, `updateDynamicRules()`, `getDynamicRules()`, `updateSessionRules()`, `getSessionRules()`, and `getMatchedRules()`. Safari supports `setExtensionActionOptions()` in Safari 16.4 or later.
+
 ##### Adjust Rules Dynamically for the Extension or Session
 
 After a user installs and uses your extension, adjust content blocking using dynamic rules. Add, change, or remove rules that persist between browser sessions using `updateDynamicRules`. Add, change, or remove rules that apply only to the current session using `updateSessionRules`.

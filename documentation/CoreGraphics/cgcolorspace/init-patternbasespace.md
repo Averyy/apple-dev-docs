@@ -30,7 +30,7 @@ For information on creating and using patterns, see [`Quartz 2D Programming Guid
 
 ## Parameters
 
-- `baseSpace`: For masking patterns, the underlying color space that specifies the colors to be painted through the mask. For color patterns, you should pass  .
+- `baseSpace`: For masking patterns, the underlying color space that specifies the colors to be painted through the mask. For color patterns, you should pass `NULL`.
 
 ## See Also
 

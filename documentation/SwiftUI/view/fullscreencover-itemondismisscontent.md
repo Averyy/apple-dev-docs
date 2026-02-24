@@ -61,7 +61,7 @@ struct CoverData: Identifiable {
 
 ## Parameters
 
-- `item`: A binding to an optional source of truth for the sheet.   When   is non- , the system passes the contents to   the modifier’s closure. You display this content in a sheet that you   create that the system displays to the user. If   changes,   the system dismisses the currently displayed sheet and replaces   it with a new one using the same process.
+- `item`: A binding to an optional source of truth for the sheet. When `item` is non-`nil`, the system passes the contents to the modifier’s closure. You display this content in a sheet that you create that the system displays to the user. If `item` changes, the system dismisses the currently displayed sheet and replaces it with a new one using the same process.
 - `onDismiss`: The closure to execute when dismissing the modal view.
 - `content`: A closure returning the content of the modal view.
 

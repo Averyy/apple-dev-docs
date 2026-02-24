@@ -27,7 +27,7 @@ Metal selects the viewport to use from the `[[ viewport_array_index ]]` attribut
 
 ## Parameters
 
-- `viewports`: A Swift array of   elements.
+- `viewports`: A Swift array of [`MTLViewport`](mtlviewport.md) elements.
 
 ## See Also
 

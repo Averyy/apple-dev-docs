@@ -27,6 +27,9 @@ The block returns a string representing a parameter value.
 
 The block takes the following parameters:
 
+- **param**: The parameter that contains the value.
+- **value**: The parameter value to be converted.
+
 ## See Also
 
 - [var implementorStringFromValueCallback: AUImplementorStringFromValueCallback](auparameternode/implementorstringfromvaluecallback.md)

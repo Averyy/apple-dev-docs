@@ -20,7 +20,7 @@ virtual kern_return_t CopyDevice(IOUSBHostDevice **device);
 
 ## Parameters
 
-- `device`: A variable in which to store the   object. It’s your responsibility to release this object when you finish using it.
+- `device`: A variable in which to store the [`IOUSBHostDevice`](iousbhostdevice.md) object. It’s your responsibility to release this object when you finish using it.
 
 
 ---

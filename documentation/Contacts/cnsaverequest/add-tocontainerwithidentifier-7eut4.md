@@ -25,7 +25,7 @@ This method overrides any previously made deletion requests for the contact. The
 ## Parameters
 
 - `contact`: The new contact to add.
-- `identifier`: The identifier of the container to add the new contact. To add the new contact to the default container set   to  .
+- `identifier`: The identifier of the container to add the new contact. To add the new contact to the default container set `identifier` to `nil`.
 
 ## See Also
 

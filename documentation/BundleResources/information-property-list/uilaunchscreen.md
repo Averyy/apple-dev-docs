@@ -9,6 +9,10 @@ The user interface to show while an app launches.
 - iOS 14.0+
 - iPadOS 14.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 You use this key to define the launch screen that the system displays while your app launches. If you need to provide different launch screens in response to being launched by different URL schemes, use [`UILaunchScreens`](information-property-list/uilaunchscreens.md) instead.

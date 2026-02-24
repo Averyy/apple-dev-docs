@@ -22,9 +22,9 @@ func setDefaultCredential(_ credential: URLCredential, for protectionSpace: URLP
 
 ## Parameters
 
-- `credential`: The URL credential to set as the default for the protection space. If the receiver does not contain   in the specified protection space it will be added.
+- `credential`: The URL credential to set as the default for the protection space. If the receiver does not contain `credential` in the specified protection space it will be added.
 - `protectionSpace`: The protection space whose default credential is being set.
-- `task`: The task accessing the specified protection space. Subclasses of   may use the request URL or other properties of this task to affect how the default credential is stored.
+- `task`: The task accessing the specified protection space. Subclasses of [`URLCredentialStorage`](urlcredentialstorage.md) may use the request URL or other properties of this task to affect how the default credential is stored.
 
 ## See Also
 

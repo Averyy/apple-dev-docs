@@ -30,7 +30,7 @@ This method doesn’t affect the destination for write operations. If you want t
 
 ## Parameters
 
-- `suiteName`: The bundle identifier for the domain you want to add. You don’t need   to specify a bundle identifier for another app. Instead, you might specify the   app group identifier you use to share data between multiple apps or between your   app and an app extension. Don’t specify your app’s bundle identifier or the     identifier in this parameter.
+- `suiteName`: The bundle identifier for the domain you want to add. You don’t need to specify a bundle identifier for another app. Instead, you might specify the app group identifier you use to share data between multiple apps or between your app and an app extension. Don’t specify your app’s bundle identifier or the [`globalDomain`](userdefaults/globaldomain.md) identifier in this parameter.
 
 ## See Also
 

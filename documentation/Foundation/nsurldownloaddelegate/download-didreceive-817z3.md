@@ -21,7 +21,7 @@ In some rare cases, multiple responses may be received for a single download. In
 ## Parameters
 
 - `download`: The URL download object sending the message.
-- `response`: The URL response object received as part of the download.   is immutable and will not be modified after this method is called.
+- `response`: The URL response object received as part of the download. `response` is immutable and will not be modified after this method is called.
 
 ## See Also
 

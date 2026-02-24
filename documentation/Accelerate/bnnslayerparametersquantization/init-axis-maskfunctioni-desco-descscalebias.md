@@ -22,7 +22,7 @@ init(axis_mask: Int, function: BNNSQuantizerFunction, i_desc: BNNSNDArrayDescrip
 
 ## Parameters
 
-- `axis_mask`: A bitmask that defines the axis to which the function applies scale and bias. Set to   to apply scale and bias to the entire tensor.
+- `axis_mask`: A bitmask that defines the axis to which the function applies scale and bias. Set to `0` to apply scale and bias to the entire tensor.
 - `function`: The quantize function.
 - `i_desc`: The descriptor of the input.
 - `o_desc`: The descriptor of the output.

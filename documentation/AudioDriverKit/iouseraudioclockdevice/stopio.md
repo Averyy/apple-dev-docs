@@ -26,7 +26,7 @@ Subclass and override this method to handle hardware-specific tasks during I/O s
 
 ## Parameters
 
-- `in_flags`: A   value to indicate I/O shutdown behavior.
+- `in_flags`: A [`IOUserAudioStartStopFlags`](audiodriverkit/iouseraudiostartstopflags.md) value to indicate I/O shutdown behavior.
 
 ## See Also
 

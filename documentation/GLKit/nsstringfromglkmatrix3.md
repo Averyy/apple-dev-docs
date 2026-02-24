@@ -19,7 +19,7 @@ func NSStringFromGLKMatrix3(_ matrix: GLKMatrix3) -> String
 
 ## Parameters
 
-- `matrix`: A   matrix.
+- `matrix`: A `3x3` matrix.
 
 ## See Also
 

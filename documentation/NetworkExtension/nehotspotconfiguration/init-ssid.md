@@ -20,7 +20,7 @@ init(ssid SSID: String)
 
 ## Parameters
 
-- `SSID`: The SSID of the open Wi-Fi network. See  .
+- `SSID`: The SSID of the open Wi-Fi network. See [`ssid`](nehotspotconfiguration/ssid.md).
 
 ## See Also
 

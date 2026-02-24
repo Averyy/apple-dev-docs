@@ -31,6 +31,26 @@ You can include the Linux kernel and RAM disk as resources in your Xcode projec
 
 Configure a [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) with the number of CPUs and amount of memory you want to use with your VM:
 
+**Swift**:
+
+```swift
+// Set up global properties.
+let virtualMachineConfiguration = VZVirtualMachineConfiguration()
+virtualMachineConfiguration.cpuCount = 2
+// 2 GB of memory. This is an arbitrary amount.
+virtualMachineConfiguration.memorySize = 2 * 1024 * 1024 * 1024 
+```
+
+**Objective-C**:
+
+```objc
+// Set up global properties.
+VZVirtualMachineConfiguration *virtualMachineConfiguration = [VZVirtualMachineConfiguration new];
+virtualMachineConfiguration.CPUCount = 2;
+// 2 GB of memory. This is an arbitrary amount.
+virtualMachineConfiguration.memorySize = 2 * 1024 * 1024 * 1024;
+```
+
 ##### Add Devices to Your Vm
 
 Next, you’ll need to decide what devices your Linux VM needs. Because you can’t change or add devices to a running VM, consider what devices you’ll need to support your app’s use cases and add them to the VM’s configuration. For example, if you need:
@@ -41,15 +61,113 @@ Next, you’ll need to decide what devices your Linux VM needs. Because you can�
 
 The example below adds a serial console, and sound input and output devices to the VM’s configuration:
 
+**Swift**:
+
+```swift
+// Add a serial console and audio devices.
+virtualMachineConfiguration.serialPorts = [createConsoleConfiguration()]
+
+let outputStream = VZVirtioSoundDeviceOutputStreamConfiguration()
+outputStream.sink = VZHostAudioOutputStreamSink()
+let outputSoundDevice = VZVirtioSoundDeviceConfiguration()
+outputSoundDevice.streams = [outputStream]
+
+let inputStream = VZVirtioSoundDeviceInputStreamConfiguration()
+inputStream.source = VZHostAudioInputStreamSource()
+let inputSoundDevice = VZVirtioSoundDeviceConfiguration()
+inputSoundDevice.streams = [inputStream]
+
+virtualMachineConfiguration.audioDevices = [outputSoundDevice, inputSoundDevice]
+```
+
+**Objective-C**:
+
+```objc
+// Add a serial console and audio devices.
+virtualMachineConfiguration.serialPorts = [VMConfigurationHelper createConsoleConfiguration];
+
+VZVirtioSoundDeviceOutputStreamConfiguration *outputStream = [[VZVirtioSoundDeviceOutputStreamConfiguration alloc] init];
+outputStream.sink = [[VZHostAudioOutputStreamSink alloc] init];
+VZVirtioSoundDeviceConfiguration *outputSoundDevice = [[VZVirtioSoundDeviceConfiguration alloc] init];
+soundDevice.streams = @[ outputStream ];
+
+VZVirtioSoundDeviceInputStreamConfiguration *inputStream = [[VZVirtioSoundDeviceInputStreamConfiguration alloc] init];
+inputStream.source = [[VZHostAudioInputStreamSource alloc] init];
+VZVirtioSoundDeviceConfiguration *inputSoundDevice = [[VZVirtioSoundDeviceConfiguration alloc] init];
+soundDevice.streams = @[ inputStream ];
+
+virtualMachineConfiguration.audioDevices = @[ outputSoundDevice, inputSoundDevice ];
+```
+
 For more information on devices that Linux guests can support, see the Devices section on the [`Virtualization`](Virtualization.md) framework.
 
 ##### Create a Boot Loader
 
 Create an instance of a [`VZLinuxBootLoader`](vzlinuxbootloader.md) on the `VZVirtualMachineConfiguration` with a Linux kernel and a RAM disk that you load from locations on disk:
 
+**Swift**:
+
+```swift
+// Set up the boot loader.
+let kernelURL = getKernelURL() // URL of the Linux kernel image.
+let bootLoader = VZLinuxBootLoader(kernelURL: kernelURL)
+bootLoader.initialRamdiskURL = getRamdiskURL()
+bootLoader.commandLine = "console=hvc0"
+virtualMachineConfiguration.bootLoader = bootLoader
+
+// Validate this configuration against the current hardware;
+// exit on error.
+try! virtualMachineConfiguration.validate()
+```
+
+**Objective-C**:
+
+```objc
+// Set up the boot loader.
+NSURL *kernelURL = [VMConfigurationHelper getKernelURL];
+VZLinuxBootLoader *bootloader = [[VZLinuxBootLoader alloc] initWithKernelURL: kernelURL];
+bootLoader.initialRamdiskURL = [VMConfigurationHelper getRamdiskURL];
+bootLoader.commandLine = @"console=hvc0";
+virtualMachineConfiguration.bootLoader = bootLoader;
+
+// Validate this configuration against the current hardware;
+// exit on error.
+assert([virtualMachineConfiguration validateWithError:NULL]);
+```
+
 ##### Instantiate and Run the Linux Vm
 
 Instantiate a [`VZVirtualMachine`](vzvirtualmachine.md) from the `VZVirtualMachineConfiguration` that you use to start, stop, and control your Linux guest:
+
+**Swift**:
+
+```swift
+// Start the VM and check for successful startup when the block returns.
+let virtualMachine = VZVirtualMachine(configuration: virtualMachineConfiguration)
+virtualMachine.start(completionHandler: { (result) in
+    switch result {
+    case let .failure(error):
+        fatalError("Virtual machine failed to start \(error)")
+    default:
+        NSLog("Virtual machine successfully started.")
+    }
+})
+```
+
+**Objective-C**:
+
+```objc
+// Start the VM and check for successful startup when the block returns.
+VZVirtualMachine *virtualMachine =  [[VZVirtualMachine alloc]   initWithConfiguration:virtualMachineConfiguration];
+[VZVirtualMachine startWithCompletionHandler:^(NSError *error)
+ {
+    if (error) {
+        NSLog(@"Virtual machine failed to start \(%@)", error);
+        abort();
+    }
+    NSLog(@"Virtual machine successfully started.");
+}];
+```
 
 ## See Also
 

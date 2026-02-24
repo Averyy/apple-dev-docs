@@ -26,7 +26,7 @@ You can override this method to do any additional cell set up that is required, 
 
 ## Parameters
 
-- `column`: The index in the   array for which to return the appropriate cell.
+- `column`: The index in the [`tableColumns`](nstableview/tablecolumns.md) array for which to return the appropriate cell.
 - `row`: The row index for which to return the appropriate cell.
 
 ## See Also

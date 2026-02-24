@@ -32,7 +32,7 @@ If the rendered frame is exactly the same as one of the source frames, with no l
 
 ## Parameters
 
-- `asyncVideoCompositionRequest`: An instance of   that provides context for the requested composition.
+- `asyncVideoCompositionRequest`: An instance of [`AVAsynchronousVideoCompositionRequest`](avasynchronousvideocompositionrequest.md) that provides context for the requested composition.
 
 ## See Also
 

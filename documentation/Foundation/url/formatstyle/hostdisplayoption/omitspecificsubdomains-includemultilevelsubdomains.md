@@ -26,8 +26,8 @@ A display option that omits the host component if it matches a set of subdomains
 
 ## Parameters
 
-- `subdomainsToOmit`: A set of subdomains to omit, such as  . Matching any member of this set omits the host from the formatted output.
-- `omitMultiLevelSubdomains`: A Boolean value to manage display of multi-level subdomains. If  , format style omits additional subdomains if there are more than two in addition to the top-level domain (TLD). For example, when this value is  ,   becomes  , because the TLD is  . By comparison,   has a TLD of  , so it becomes  .
+- `subdomainsToOmit`: A set of subdomains to omit, such as `[”www”, “mobile”, “m”]`. Matching any member of this set omits the host from the formatted output.
+- `omitMultiLevelSubdomains`: A Boolean value to manage display of multi-level subdomains. If `true`, format style omits additional subdomains if there are more than two in addition to the top-level domain (TLD). For example, when this value is `true`, `api.code.developer.example.com` becomes `developer.example.com`, because the TLD is `“com”`. By comparison, `api.code.developer.example.com.cn` has a TLD of `“com.cn”`, so it becomes `developer.example.com.cn`.
 
 ## See Also
 

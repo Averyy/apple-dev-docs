@@ -40,7 +40,7 @@ This initializer does not generate texel data; the [`MDLColorSwatchTexture`](mdl
 
 - `colorTemperature1`: The black-body color temperature, in Kelvins, at the top of the gradient.
 - `colorTemperature2`: The black-body color temperature, in Kelvins, at the bottom of the gradient.
-- `name`: The   property for the new texture object.
+- `name`: The [`name`](mdlnamed/name.md) property for the new texture object.
 - `textureDimensions`: The texel dimensions (width and height) of the texture image.
 
 ## See Also

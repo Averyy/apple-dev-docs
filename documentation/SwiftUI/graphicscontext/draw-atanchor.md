@@ -26,9 +26,9 @@ The current context state defines the full drawing operation. For example, the c
 
 ## Parameters
 
-- `image`: The   to draw. Get a resolved image from an    by calling  . Alternatively, you can   call   with an  , and that method   performs the resolution automatically.
-- `point`: A point within the rectangle of the resolved image to anchor   to a point in the context.
-- `anchor`: A   within the context to align the image with.   The default is  .
+- `image`: The [`GraphicsContext.ResolvedImage`](graphicscontext/resolvedimage.md) to draw. Get a resolved image from an [`Image`](image.md) by calling [`resolve(_:)`](graphicscontext/resolve(_:)-898z6.md). Alternatively, you can call [`draw(_:at:anchor:)`](graphicscontext/draw(_:at:anchor:)-7l217.md) with an [`Image`](image.md), and that method performs the resolution automatically.
+- `point`: A point within the rectangle of the resolved image to anchor to a point in the context.
+- `anchor`: A [`UnitPoint`](unitpoint.md) within the context to align the image with. The default is [`center`](unitpoint/center.md).
 
 ## See Also
 

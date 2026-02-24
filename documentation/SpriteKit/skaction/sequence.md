@@ -32,7 +32,7 @@ This action is reversible; it creates a new sequence action that reverses the or
 
 ## Parameters
 
-- `actions`: An array of   objects.
+- `actions`: An array of [`SKAction`](skaction.md) objects.
 
 ## See Also
 

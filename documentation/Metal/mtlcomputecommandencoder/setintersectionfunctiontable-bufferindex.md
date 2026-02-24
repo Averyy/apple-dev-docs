@@ -22,7 +22,7 @@ func setIntersectionFunctionTable(_ intersectionFunctionTable: (any MTLIntersect
 
 ## Parameters
 
-- `intersectionFunctionTable`: The   to bind.
+- `intersectionFunctionTable`: The [`MTLIntersectionFunctionTable`](mtlintersectionfunctiontable.md) to bind.
 - `bufferIndex`: The index in the buffer argument table the intersection function table binds to.
 
 ## See Also

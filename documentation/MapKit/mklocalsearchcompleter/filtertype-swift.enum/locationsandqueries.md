@@ -3,7 +3,7 @@
 **Framework**: MapKit  
 **Kind**: case
 
-Points of interest and query suggestions. Specify this value when you want both map-based points of interest and common query terms used to find locations. For example, the search string `cof` yields a completion for .
+Points of interest and query suggestions. Specify this value when you want both map-based points of interest and common query terms used to find locations. For example, the search string `cof` yields a completion for *coffee*.
 
 **Availability**:
 - iOS 9.3+

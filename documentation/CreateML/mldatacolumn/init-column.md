@@ -41,7 +41,7 @@ print(sequenceColumn) // Prints [[DataValue(1), DataValue(2), DataValue(3)],
 
 ## Parameters
 
-- `column`: An   of elements convertible to  .
+- `column`: An [`MLDataColumn`](mldatacolumn.md) of elements convertible to [`MLDataValue.SequenceType`](mldatavalue/sequencetype.md).
 
 ## See Also
 

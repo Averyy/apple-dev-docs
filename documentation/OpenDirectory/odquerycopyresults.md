@@ -22,8 +22,8 @@ The results of the query in an array of `ODRecord` objects.
 ## Parameters
 
 - `query`: The query.
-- `allowPartialResults`: If  , only immediately available results are returned; otherwise, the function waits until all results are available.
-- `error`: An error reference for error details. Can be  .
+- `allowPartialResults`: If `true`, only immediately available results are returned; otherwise, the function waits until all results are available.
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

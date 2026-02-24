@@ -21,7 +21,8 @@ Creates a web archive of the web view’s current contents asynchronously.
 
 ## Parameters
 
-- `completionHandler`: The completion handler block to call when the web archive data is ready. This block has no return value and takes the following parameters:
+- `completionHandler`: The completion handler block to call when the web archive data is ready. This block has no return value and takes the following parameters: - **data**: A data object that contains the web archive.
+- **error**: An error object if an error occurs, or `nil` on success.
 
 ## See Also
 

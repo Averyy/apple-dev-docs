@@ -26,10 +26,10 @@ A new `CFString` object, or `NULL` if the percent escapes cannot be converted to
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
-- `origString`: The   object to be copied and modified.
-- `charsToLeaveEscaped`: Characters whose percent escape sequences, such as   for a space character, you want to leave intact. Pass   to specify that no percent escapes be replaced, or the empty string ( ) to specify that all be replaced.
-- `encoding`: Specifies the encoding to use when interpreting percent escapes. If you are uncertain of the correct encoding, you should use UTF-8 ( ), which is the encoding designated by RFC 3986 as the correct encoding for use in URLs.
+- `allocator`: The allocator to use to allocate memory for the new `CFString` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `origString`: The `CFString` object to be copied and modified.
+- `charsToLeaveEscaped`: Characters whose percent escape sequences, such as `%20` for a space character, you want to leave intact. Pass `NULL` to specify that no percent escapes be replaced, or the empty string (`CFSTR("")`) to specify that all be replaced.
+- `encoding`: Specifies the encoding to use when interpreting percent escapes. If you are uncertain of the correct encoding, you should use UTF-8 ([`CFStringBuiltInEncodings.UTF8`](cfstringbuiltinencodings/utf8.md)), which is the encoding designated by RFC 3986 as the correct encoding for use in URLs.
 
 ## See Also
 

@@ -12,7 +12,7 @@ HAS runs on your Mac, simulating accessories that you define as a supplement to 
 
 ##### Download the Homekit Accessory Simulator
 
-You download the HAS as part of the  package found on the [`More Downloads for Apple Developers`](https://developer.apple.comhttps://developer.apple.com/download/more/?=for%20Xcode) page, which is part of the Apple developer portal. Choose the version of the package that matches your version of Xcode.
+You download the HAS as part of the *Additional Tools for Xcode* package found on the [`More Downloads for Apple Developers`](https://developer.apple.comhttps://developer.apple.com/download/more/?=for%20Xcode) page, which is part of the Apple developer portal. Choose the version of the package that matches your version of Xcode.
 
 As a convenience, Xcode provides a link to the download page from the Capabilities pane. Xcode displays a button embedded in the HomeKit capability that takes you directly to the download page in Safari.
 
@@ -26,13 +26,13 @@ Accessories in a home automation network are physical devices like light bulbs o
 
 ![Block diagram of an example garage door accessory with several user interactive services and one hidden service.](https://docs-assets.developer.apple.com/published/f59dbb43abd61d5f338c9cd8eb5268a4/media-3150784%402x.png)
 
-In the HomeKit Accessory Simulator, define accessories that you can use with your app. For details, see the , accessible through the simulator’s `Help` menu.
+In the HomeKit Accessory Simulator, define accessories that you can use with your app. For details, see the *HomeKit Accessory Simulation Help*, accessible through the simulator’s `Help` menu.
 
- Assign a name and provide other identifying details. An accessory isn’t typically the user’s main focus, but does serve as a logical container for the services that the user cares about. When you create an accessory, HAS adds the accessory information service by default based on the information you provide.
+**Add an accessory.** Assign a name and provide other identifying details. An accessory isn’t typically the user’s main focus, but does serve as a logical container for the services that the user cares about. When you create an accessory, HAS adds the accessory information service by default based on the information you provide.
 
- Add as many additional services as you need, potentially including hidden services. For each, specify a service type using one of the standard values in [`Accessory Service Types`](accessory-service-types.md), or using a custom service with a new, unique identifier. Give each service a unique name. For user-visible services, the user might later change the name using the Home app, or using your app.
+**Add one or more services to the accessory.** Add as many additional services as you need, potentially including hidden services. For each, specify a service type using one of the standard values in [`Accessory Service Types`](accessory-service-types.md), or using a custom service with a new, unique identifier. Give each service a unique name. For user-visible services, the user might later change the name using the Home app, or using your app.
 
- HAS populates standard services with a set of standard characteristics for that service, but you can adjust these to match the specific devices you want to model. For example, if a light bulb offers a fade-to-off feature with configurable timing, you might add a custom characteristic indicating the fade rate. The Home app doesn’t expose custom characteristics to the user, but you can control them from your own app.
+**Add or modify service characteristics.** HAS populates standard services with a set of standard characteristics for that service, but you can adjust these to match the specific devices you want to model. For example, if a light bulb offers a fade-to-off feature with configurable timing, you might add a custom characteristic indicating the fade rate. The Home app doesn’t expose custom characteristics to the user, but you can control them from your own app.
 
 ##### Associate the Accessory with the Network
 

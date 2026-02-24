@@ -28,7 +28,7 @@ Because this method is likely to be called while your app is in the background, 
 
 - `application`: Your singleton app object.
 - `userInfo`: A dictionary provided by the watchOS app with the request information. Use the data in this dictionary to process the request from the watchOS app.
-- `reply`: A block to execute with the results of the request. This block has no return value and takes the following parameter:
+- `reply`: A block to execute with the results of the request. This block has no return value and takes the following parameter: - **replyInfo**: A dictionary containing data to return to the watchOS app. The contents of the dictionary must be serializable to a property list file. The contents of this dictionary are at your discretion and you may specify `nil`.
 
 
 ---

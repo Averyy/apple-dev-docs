@@ -18,6 +18,10 @@ A string that identifies the type of data your app or third-party SDK collects.
 
 - [Describing data use in privacy manifests](describing-data-use-in-privacy-manifests.md)
 
+
+
+**Type**: string
+
 #### Discussion
 
 Choose the value that matches the data your app or third-party SDK collects.

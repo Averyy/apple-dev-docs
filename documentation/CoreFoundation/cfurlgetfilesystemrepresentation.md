@@ -30,10 +30,10 @@ No more than `maxBufLen` bytes are written to `buffer`. If `url` requires more t
 
 ## Parameters
 
-- `url`: The   object whose native file system representation you want to obtain.
-- `resolveAgainstBase`: Pass   to return an absolute path name.
-- `buffer`: A pointer to a character buffer. On return, the buffer holds the native file system’s representation of  . The buffer is null-terminated. This parameter must be at least   in size for the file system in question to avoid failures for insufficiently large buffers.
-- `maxBufLen`: The maximum number of characters that can be written to  .
+- `url`: The `CFURL` object whose native file system representation you want to obtain.
+- `resolveAgainstBase`: Pass `true` to return an absolute path name.
+- `buffer`: A pointer to a character buffer. On return, the buffer holds the native file system’s representation of `url`. The buffer is null-terminated. This parameter must be at least `maxBufLen` in size for the file system in question to avoid failures for insufficiently large buffers.
+- `maxBufLen`: The maximum number of characters that can be written to `buffer`.
 
 ## See Also
 

@@ -20,7 +20,7 @@ This method posts an [`didAddItemNotification`](nsmenu/didadditemnotification.md
 
 ## Parameters
 
-- `newItem`: An object conforming to the   protocol that represents a menu item.
+- `newItem`: An object conforming to the `NSMenuItem` protocol that represents a menu item.
 - `index`: An integer index identifying the location of the menu item in the menu.
 
 ## See Also

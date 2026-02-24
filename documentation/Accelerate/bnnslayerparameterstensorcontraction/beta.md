@@ -27,9 +27,9 @@ var beta: Float
 - [var alpha: Float](bnnslayerparameterstensorcontraction/alpha.md)
   Scaling that the operation applies to the result.
 - [var iA_desc: BNNSNDArrayDescriptor](bnnslayerparameterstensorcontraction/ia_desc.md)
-  The descriptor of input matrix .
+  The descriptor of input matrix *A*.
 - [var iB_desc: BNNSNDArrayDescriptor](bnnslayerparameterstensorcontraction/ib_desc.md)
-  The descriptor of input matrix .
+  The descriptor of input matrix *B*.
 - [var o_desc: BNNSNDArrayDescriptor](bnnslayerparameterstensorcontraction/o_desc.md)
   The descriptor of the output.
 

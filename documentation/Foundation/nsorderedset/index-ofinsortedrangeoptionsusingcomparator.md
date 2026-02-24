@@ -40,10 +40,10 @@ The elements in the ordered set  must have already been sorted using the compara
 
 ## Parameters
 
-- `object`: If this value is  , throws an  .
-- `range`: If r exceeds the bounds of the ordered set (if the location plus length of the range is greater than the count of the ordered set), throws an  .
-- `opts`: Options for the search. For possible values, see  .
-- `cmp`: If this value is  , throws an  .
+- `object`: An object for which to search in the ordered set. If this value is `nil`, throws an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md).
+- `range`: The range within the array to search for `object`. If r exceeds the bounds of the ordered set (if the location plus length of the range is greater than the count of the ordered set), throws an [`rangeException`](nsexceptionname/rangeexception.md).
+- `opts`: Options for the search. For possible values, see [`NSBinarySearchingOptions`](nsbinarysearchingoptions.md).
+- `cmp`: A comparator block used to compare the object obj with elements in the ordered set. If this value is `NULL`, throws an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md).
 
 ## See Also
 

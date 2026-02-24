@@ -27,7 +27,7 @@ If you no longer want certain types of callbacks that you requested when creatin
 ## Parameters
 
 - `s`: The CFSocket object to modify.
-- `callBackTypes`: A bitwise-OR combination of CFSocket activity types that should not cause the callback function of   to be called. See   for a list of callback types.
+- `callBackTypes`: A bitwise-OR combination of CFSocket activity types that should not cause the callback function of `s` to be called. See [`CFSocketCallBackType`](cfsocketcallbacktype.md) for a list of callback types.
 
 ## See Also
 

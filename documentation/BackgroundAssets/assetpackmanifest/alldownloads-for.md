@@ -25,7 +25,7 @@ A collection of download objects.
 
 ## Parameters
 
-- `contentRequest`: The content request for the current extension invocation. Pass   if you’re calling this method in your main app.
+- `contentRequest`: The content request for the current extension invocation. Pass `nil` if you’re calling this method in your main app.
 
 
 ---

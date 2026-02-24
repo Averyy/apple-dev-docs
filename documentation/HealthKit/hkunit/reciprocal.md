@@ -27,6 +27,24 @@ A complex unit that is the reciprocal of the unit the method was called on.
 
 This method creates a new, complex unit by dividing 1 by the unit the method was called on. This is often only one step in a series of operations. For example, you can use this method to create a meters-per-second unit, as shown below.
 
+**Swift**:
+
+```swift
+let meters = HKUnit.meterUnit()
+let seconds = HKUnit.secondUnit()
+let secondsInverse = seconds.reciprocalUnit()
+let metersPerSecond = meters.unitMultipliedByUnit(secondsInverse)
+```
+
+**Objective-C**:
+
+```objc
+HKUnit *meters = [HKUnit meterUnit];
+HKUnit *seconds = [HKUnit secondUnit];
+HKUnit *secondsInverse = [seconds reciprocalUnit];
+HKUnit *metersPerSecond = [meters unitMultipliedByUnit:secondsInverse];
+```
+
 ## See Also
 
 - [convenience init(from: String)](hkunit/init(from:)-9qont.md)

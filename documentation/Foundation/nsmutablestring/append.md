@@ -22,7 +22,7 @@ func append(_ aString: String)
 
 ## Parameters
 
-- `aString`: The string to append to the receiver.   must not be 
+- `aString`: The string to append to the receiver. `aString` must not be `nil`
 
 ## See Also
 

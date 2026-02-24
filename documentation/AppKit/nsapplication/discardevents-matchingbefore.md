@@ -42,7 +42,7 @@ This method can also be called in subthreads. Events posted in subthreads bubble
 
 ## Parameters
 
-- `mask`: Contains one or more flags indicating the types of events to discard. The constants section of the   class defines the constants you can add together to create this mask. The discussion section also lists some of the constants that are typically used.
+- `mask`: Contains one or more flags indicating the types of events to discard. The constants section of the [`NSEvent`](nsevent.md) class defines the constants you can add together to create this mask. The discussion section also lists some of the constants that are typically used.
 - `lastEvent`: A marker event that you use to indicate which events should be discarded. Events that occurred before this event are discarded but those that occurred after it are not.
 
 ## See Also

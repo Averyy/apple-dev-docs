@@ -12,7 +12,7 @@ The iOS 16.1 SDK provides support to develop apps for iPhone and iPad running iO
 
 ###### Known Issues
 
-- You might receive an alert to turn on Wi-Fi when pairing a Matter accessory. (98460235)  Ensure your device is connected to your Wi-Fi network.
+- You might receive an alert to turn on Wi-Fi when pairing a Matter accessory. (98460235) **Workaround:** Ensure your device is connected to your Wi-Fi network.
 - Adjusting the color or color temperature might result in an unexpected color set on a Matter accessory. (98578966)
 - Accessory details might not open if a Matter accessory is unreachable. (99232316)
 - The device that initiates the pairing needs to use the same iCloud account as the home hub. Only the owner of a home, not an invited user, can pair Matter accessories. (76012945)

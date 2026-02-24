@@ -26,11 +26,11 @@ A color object.
 
 ## Parameters
 
-- `cyan`: A cyan value (  -  ).
-- `magenta`: A magenta value (  -  ).
-- `yellow`: A yellow value (  -  ).
-- `black`: A black value (  -  ).
-- `alpha`: An alpha value  .
+- `cyan`: A cyan value (`0.0` - `1.0`).
+- `magenta`: A magenta value (`0.0` - `1.0`).
+- `yellow`: A yellow value (`0.0` - `1.0`).
+- `black`: A black value (`0.0` - `1.0`).
+- `alpha`: An alpha value `(0.0 - 1.0)`.
 
 ## See Also
 

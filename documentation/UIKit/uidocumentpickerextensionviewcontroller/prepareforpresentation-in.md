@@ -29,7 +29,7 @@ If your extension can manage multiple file types, check the [`validTypes`](uidoc
 
 ## Parameters
 
-- `mode`: The type of file-transfer operation that the document picker performs. For a list of valid modes, see  .
+- `mode`: The type of file-transfer operation that the document picker performs. For a list of valid modes, see `Document Picker Modes`.
 
 ## See Also
 

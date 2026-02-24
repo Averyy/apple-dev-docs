@@ -38,7 +38,7 @@ To instead present a menu that contains only a list of apps capable of opening t
 ## Parameters
 
 - `item`: The bar button item to which to anchor the menu.
-- `animated`: Specify   to animate the appearance of the menu or   to display it immediately.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the appearance of the menu or [`false`](https://developer.apple.com/documentation/Swift/false) to display it immediately.
 
 ## See Also
 

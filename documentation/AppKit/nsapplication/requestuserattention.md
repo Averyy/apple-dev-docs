@@ -26,7 +26,7 @@ If the inactive app presents a modal panel, this method will be invoked with `NS
 
 ## Parameters
 
-- `requestType`: The severity of the request. For a list of possible values, see  .
+- `requestType`: The severity of the request. For a list of possible values, see [`NSApplication.RequestUserAttentionType`](nsapplication/requestuserattentiontype.md).
 
 ## See Also
 

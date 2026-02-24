@@ -26,7 +26,7 @@ For information about how to support interactive notifications in your iOS app, 
 
 - `identifier`: The action selected by the user. This string is the identifier assigned to the action at registration time. This parameter is set to the empty string when the user launches the app without tapping one of the action buttons.
 - `localNotification`: The local notification object that triggered the notification.
-- `responseInfo`: The response information dictionary. This dictionary contains the   key with the text response selected by the user.
+- `responseInfo`: The response information dictionary. This dictionary contains the [`UIUserNotificationActionResponseTypedTextKey`](https://developer.apple.com/documentation/UIKit/UIUserNotificationActionResponseTypedTextKey) key with the text response selected by the user.
 
 ## See Also
 

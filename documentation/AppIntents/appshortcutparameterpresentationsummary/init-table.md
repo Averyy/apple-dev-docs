@@ -22,8 +22,8 @@ init(_ summaryString: AppShortcutParameterPresentationSummaryString<Intent, Valu
 
 ## Parameters
 
-- `summaryString`: Represents the summary of the  .   Example: “Call (.$person)”.
-- `table`: An optional   representing the table to use when localizing the summary.
+- `summaryString`: Represents the summary of the [`AppShortcutParameterPresentation`](appshortcutparameterpresentation.md). Example: “Call (.$person)”.
+- `table`: An optional `StaticString` representing the table to use when localizing the summary.
 
 
 ---

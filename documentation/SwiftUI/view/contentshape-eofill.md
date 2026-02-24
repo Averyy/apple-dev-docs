@@ -72,7 +72,7 @@ The content shape also supports applying modifiers such as [`inset(by:)`](insett
 
 - `kind`: The kinds to apply to this content shape.
 - `shape`: The shape to use.
-- `eoFill`: A Boolean that indicates whether the shape is interpreted   with the even-odd winding number rule.
+- `eoFill`: A Boolean that indicates whether the shape is interpreted with the even-odd winding number rule.
 
 ## See Also
 

@@ -32,7 +32,7 @@ You can use this function to get access to the contents of a form, pattern, Type
 
 - `stream`: The PDF stream you want to create a content stream from.
 - `streamResources`: A PDF dictionary that contains the resources associated with the stream you want to retrieve.
-- `parent`: The content stream of the page on which   appears. Supply the   parameter when you create a content stream that’s used within a page.
+- `parent`: The content stream of the page on which `stream` appears. Supply the `parent` parameter when you create a content stream that’s used within a page.
 
 ## See Also
 

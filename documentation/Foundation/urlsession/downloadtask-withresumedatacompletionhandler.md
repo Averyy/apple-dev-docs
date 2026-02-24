@@ -32,7 +32,7 @@ The new session download task.
 
 By using a completion handler, the task bypasses calls to delegate methods for response and data delivery, and instead provides any resulting data, response, or error inside the completion handler. Delegate methods for handling authentication challenges, however, are still called.
 
-You should pass a `nil` completion handler  when creating tasks in sessions whose delegates include a [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](urlsessiondownloaddelegate/urlsession(_:downloadtask:didfinishdownloadingto:).md) method.
+You should pass a `nil` completion handler *only* when creating tasks in sessions whose delegates include a [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](urlsessiondownloaddelegate/urlsession(_:downloadtask:didfinishdownloadingto:).md) method.
 
 Your app can obtain a `resumeData` object in two ways:
 
@@ -48,7 +48,9 @@ If the request completes successfully, the `location` parameter of the completio
 ## Parameters
 
 - `resumeData`: A data object that provides the data necessary to resume the download.
-- `completionHandler`: If you pass  , only the session delegate methods are called when the task completes, making this method equivalent to the   method.
+- `completionHandler`: The completion handler to call when the load request is complete. This handler is executed on the delegate queue. If you pass `nil`, only the session delegate methods are called when the task completes, making this method equivalent to the [`downloadTask(withResumeData:)`](urlsession/downloadtask(withresumedata:).md) method. - **`location`**: The location of a temporary file where the server’s response is stored. You must move this file or open it for reading before your completion handler returns. Otherwise, the file is deleted, and the data is lost.
+- **`response`**: An object that provides response metadata, such as HTTP headers and status code. If you are making an HTTP or HTTPS request, the returned object is actually an [`HTTPURLResponse`](httpurlresponse.md) object.
+- **`error`**: An error object that indicates why the request failed, or `nil` if the request was successful.
 
 ## See Also
 

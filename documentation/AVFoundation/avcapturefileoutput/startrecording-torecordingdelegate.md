@@ -32,7 +32,7 @@ In macOS, you don’t need to call [`stopRecording()`](avcapturefileoutput/stopr
 
 ## Parameters
 
-- `outputFileURL`: This method raises an   if the argument isn’t a valid file URL.
+- `outputFileURL`: An object specifying the output file URL. This method raises an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) if the argument isn’t a valid file URL.
 - `delegate`: A delegate object that’s notified of changes to the recording state.
 
 ## See Also

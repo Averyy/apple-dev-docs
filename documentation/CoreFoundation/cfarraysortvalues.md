@@ -23,9 +23,9 @@ func CFArraySortValues(_ theArray: CFMutableArray!, _ range: CFRange, _ comparat
 ## Parameters
 
 - `theArray`: The array whose values are sorted.
-- `range`: The range of values within   to sort. The range location or end point (defined by the location plus length minus 1) must not lie outside the index space of   (  to   inclusive, where   is the count of  ). The range length must not be negative. The range may be empty (length 0).
-- `comparator`: The function with the comparator function type signature that is used in the sort operation to compare the values in  . If this parameter is not a pointer to a function of the correct prototype, the behavior is undefined. If there are values in   that the   function does not expect or cannot properly compare, the behavior is undefined. The values in the range are sorted from least to greatest according to this function.
-- `context`: A pointer-sized program-defined value, which is passed as the third parameter to the   function, but is otherwise unused by this function. If the context is not what is expected by the   function, the behavior is undefined.
+- `range`: The range of values within `theArray` to sort. The range location or end point (defined by the location plus length minus 1) must not lie outside the index space of `theArray` (`0` to `N-1` inclusive, where `N` is the count of `theArray`). The range length must not be negative. The range may be empty (length 0).
+- `comparator`: The function with the comparator function type signature that is used in the sort operation to compare the values in `theArray`. If this parameter is not a pointer to a function of the correct prototype, the behavior is undefined. If there are values in `theArray` that the `comparator` function does not expect or cannot properly compare, the behavior is undefined. The values in the range are sorted from least to greatest according to this function.
+- `context`: A pointer-sized program-defined value, which is passed as the third parameter to the `comparator` function, but is otherwise unused by this function. If the context is not what is expected by the `comparator` function, the behavior is undefined.
 
 ## See Also
 

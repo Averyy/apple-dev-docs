@@ -26,8 +26,8 @@ This method uses the content world from the [`page`](wkcontentworld/page.md) pro
 
 ## Parameters
 
-- `scriptMessageHandler`: The message handler object that implements your custom code. This object must adopt the   protocol.
-- `name`: The user content controller uses this parameter to define a JavaScript function for your message handler in the page’s main content world. The name of this function is  , where   corresponds to the value of this parameter.  For example, if you specify the string  , the user content controller defines the   function in JavaScript.
+- `scriptMessageHandler`: The message handler object that implements your custom code. This object must adopt the [`WKScriptMessageHandler`](wkscriptmessagehandler.md) protocol.
+- `name`: The name of the message handler. This parameter must be unique within the user content controller and must not be an empty string. The user content controller uses this parameter to define a JavaScript function for your message handler in the page’s main content world. The name of this function is `window.webkit.messageHandlers.`**`.postMessage(<messageBody>)`, where ** corresponds to the value of this parameter.  For example, if you specify the string `MyFunction`, the user content controller defines the `window.webkit.messageHandlers.MyFunction.postMessage()` function in JavaScript.
 
 ## See Also
 

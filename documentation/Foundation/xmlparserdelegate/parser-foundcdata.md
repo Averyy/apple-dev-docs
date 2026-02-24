@@ -26,7 +26,7 @@ Through this method the parser object passes the contents of the block to its de
 
 ## Parameters
 
-- `parser`: An   object parsing XML.
+- `parser`: An `NSXMLParser` object parsing XML.
 - `CDATABlock`: A data object containing a block of CDATA.
 
 ## See Also

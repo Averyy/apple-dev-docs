@@ -21,7 +21,7 @@ var lacunarity: Double { get set }
 
 #### Discussion
 
-Coherent noise is composed from several applications of a pseudorandom function. Each successive application, or , increases in frequency and decreases in amplitude relative to the previous octave. This combination of many octaves produces the fractal appearance that makes coherent noise resemble natural phenomena like clouds, stone, and water.
+Coherent noise is composed from several applications of a pseudorandom function. Each successive application, or *octave*, increases in frequency and decreases in amplitude relative to the previous octave. This combination of many octaves produces the fractal appearance that makes coherent noise resemble natural phenomena like clouds, stone, and water.
 
 Lacunarity determines the change in frequency between octaves. Smaller values result in coarser noise with more visible structure; finer values result in finer, more uniform noise. The default value is `2.0`.
 

@@ -26,7 +26,7 @@ Implement this optional method if you want to support dictation phrase alternati
 
 ## Parameters
 
-- `dictationResult`: An array of   objects.
+- `dictationResult`: An array of [`UIDictationPhrase`](uidictationphrase.md) objects.
 
 ## See Also
 

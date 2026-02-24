@@ -17,7 +17,7 @@ optional func windowDidChangeOcclusionState(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: An   notification.
+- `notification`: An [`didChangeOcclusionStateNotification`](nswindow/didchangeocclusionstatenotification.md) notification.
 
 
 ---

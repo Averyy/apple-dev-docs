@@ -21,8 +21,8 @@ init(minimumDistance: CGFloat = 10, coordinateSpace: some CoordinateSpaceProtoco
 
 ## Parameters
 
-- `minimumDistance`: The minimum dragging distance for the gesture to   succeed.
-- `coordinateSpace`: The coordinate space of the dragging gesture’s   location.
+- `minimumDistance`: The minimum dragging distance for the gesture to succeed.
+- `coordinateSpace`: The coordinate space of the dragging gesture’s location.
 
 ## See Also
 

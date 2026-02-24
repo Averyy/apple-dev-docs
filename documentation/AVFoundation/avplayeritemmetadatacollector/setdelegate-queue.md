@@ -22,7 +22,7 @@ func setDelegate(_ delegate: (any AVPlayerItemMetadataCollectorPushDelegate)?, q
 
 ## Parameters
 
-- `delegate`: An object conforming to   protocol.
+- `delegate`: An object conforming to [`AVPlayerItemMetadataCollectorPushDelegate`](avplayeritemmetadatacollectorpushdelegate.md) protocol.
 - `delegateQueue`: A dispatch queue on which all delegate methods will be called.
 
 ## See Also

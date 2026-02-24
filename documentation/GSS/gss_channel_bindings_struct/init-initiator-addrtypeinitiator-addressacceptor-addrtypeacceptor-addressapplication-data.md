@@ -20,10 +20,10 @@ init(initiator_addrtype: OM_uint32, initiator_address: gss_buffer_desc, acceptor
 
 ## Parameters
 
-- `initiator_addrtype`: The type of address contained in the   field. Use one of the values found in  .
-- `initiator_address`: The network address of the initiator, in the form specified by  .
-- `acceptor_addrtype`: The type of address contained in the   field. Use one of the values found in  .
-- `acceptor_address`: The network address of the acceptor, in the form specified by  .
+- `initiator_addrtype`: The type of address contained in the `initiator_address` field. Use one of the values found in `Address Families`.
+- `initiator_address`: The network address of the initiator, in the form specified by `initiator_addrtype`.
+- `acceptor_addrtype`: The type of address contained in the `acceptor_address` field. Use one of the values found in `Address Families`.
+- `acceptor_address`: The network address of the acceptor, in the form specified by `acceptor_addrtype`.
 - `application_data`: Application specific data for use in communicating a channel binding.
 
 ## See Also

@@ -27,7 +27,7 @@ You should call this method to test the data referenced by a URL prior to assign
 
 ## Parameters
 
-- `url`: An object representing a URL. Valid   objects must use the   or any scheme that can return an   object with a registered protocol. The file referenced by the URL must contain PDF data or an image in a format supported by the Image I/O framework. See   in   for a list of the supported image formats.
+- `url`: An object representing a URL. Valid `NSURL` objects must use the `file:` or any scheme that can return an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object with a registered protocol. The file referenced by the URL must contain PDF data or an image in a format supported by the Image I/O framework. See [`View Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503) in [`View Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503) for a list of the supported image formats.
 
 ## See Also
 

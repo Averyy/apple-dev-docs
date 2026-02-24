@@ -16,7 +16,7 @@ The watchOS 9 SDK provides support to develop watchOS apps for Apple Watch devic
 
 ###### Known Issues
 
-- Compilation of apps integrated with CallKit might result in an error: “Value of type `CXProviderConfiguration` has no member `supportedHandleTypes` on watchOS 9”. (97582165)  Use `__supportedHandleTypes` instead of `supportedHandleTypes`.
+- Compilation of apps integrated with CallKit might result in an error: “Value of type `CXProviderConfiguration` has no member `supportedHandleTypes` on watchOS 9”. (97582165) **Workaround:** Use `__supportedHandleTypes` instead of `supportedHandleTypes`.
 
 ##### Coregraphics
 

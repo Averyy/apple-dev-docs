@@ -33,7 +33,7 @@ In the example below, the button to play the robot animation is aligned to the `
 
 ## Parameters
 
-- `alignment`: A   value to use for aligning layout’s   subviews
+- `alignment`: A [`DepthAlignment`](depthalignment.md) value to use for aligning layout’s subviews
 
 
 ---

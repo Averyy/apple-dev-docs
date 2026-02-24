@@ -51,7 +51,7 @@ When someone selects “owl” and issues a Cut command, the `action` closure re
 ## Parameters
 
 - `payloadType`: The type of items to cut.
-- `action`: A closure that you implement to delete the selected   items from the collection, and return them for addition to the   Clipboard. The items must conform to the     protocol.
+- `action`: A closure that you implement to delete the selected items from the collection, and return them for addition to the Clipboard. The items must conform to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol.
 
 ## See Also
 

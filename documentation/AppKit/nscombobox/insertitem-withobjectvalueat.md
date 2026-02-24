@@ -21,7 +21,7 @@ This method logs a warning if the [`usesDataSource`](nscombobox/usesdatasource.m
 ## Parameters
 
 - `object`: The object to add to the internal item list.
-- `index`: The index in the list at which to add the new object. The previous item at  —along with all following items—is shifted down one slot to make room
+- `index`: The index in the list at which to add the new object. The previous item at `index`—along with all following items—is shifted down one slot to make room
 
 ## See Also
 

@@ -42,7 +42,7 @@ The coordinate system is right-handed—the positive x direction points to the v
 
 The [`geometry`](arfaceanchor/geometry.md) property provides an [`ARFaceGeometry`](arfacegeometry.md) object representing detailed topology for the face, which conforms a generic face model to match the dimensions, shape, and current expression of the detected face.
 
-You can use this model as the basis for overlaying content that follows the shape of the user’s face—for example, to apply virtual makeup or tattoos. You can also use this model to create —a 3D model that doesn’t render any visible content (allowing the camera image to show through), but that obstructs the camera’s view of other virtual content in the scene.
+You can use this model as the basis for overlaying content that follows the shape of the user’s face—for example, to apply virtual makeup or tattoos. You can also use this model to create *occlusion geometry*—a 3D model that doesn’t render any visible content (allowing the camera image to show through), but that obstructs the camera’s view of other virtual content in the scene.
 
 ##### Tracking Facial Expressions
 

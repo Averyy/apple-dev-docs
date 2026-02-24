@@ -24,9 +24,9 @@ To execute your handler’s code, call the JavaScript function that this method 
 
 ## Parameters
 
-- `scriptMessageHandlerWithReply`: The message handler object that implements your custom code. This object must adopt the   protocol.
+- `scriptMessageHandlerWithReply`: The message handler object that implements your custom code. This object must adopt the [`WKScriptMessageHandlerWithReply`](wkscriptmessagehandlerwithreply.md) protocol.
 - `contentWorld`: The content world in which to install the message handler. Use the content world to scope your message handler to specific parts of your JavaScript code.
-- `name`: The user content controller uses this parameter to define a JavaScript function for your message handler in all frames in the specified content world. The name of this function is  , where   corresponds to the value of this parameter.  For example, if you specify the string  , the user content controller defines the   function in JavaScript.
+- `name`: The name of the message handler. This parameter must be unique within the user content controller and must not be an empty string. The user content controller uses this parameter to define a JavaScript function for your message handler in all frames in the specified content world. The name of this function is `window.webkit.messageHandlers.`**`.postMessage(<messageBody>)`, where ** corresponds to the value of this parameter.  For example, if you specify the string `MyFunction`, the user content controller defines the `window.webkit.messageHandlers.MyFunction.postMessage()` function in JavaScript.
 
 ## See Also
 

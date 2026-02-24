@@ -21,7 +21,8 @@ Use this method to check on the state of one of the Safari app or web extensions
 ## Parameters
 
 - `identifier`: The bundle identifier for the Safari extension to check.
-- `completionHandler`: The completion handler the system calls with either the extension’s state or an error.
+- `completionHandler`: The completion handler the system calls with either the extension’s state or an error. - **state**: An object that describes the current state of the Safari extension, or `nil` if the system can’t find the extension.
+- **error**: An error object indicating the reason for the failure, or `nil` if no failure occurs.
 
 ## See Also
 

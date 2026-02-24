@@ -24,9 +24,9 @@ A new matrix.
 ## Parameters
 
 - `matrix`: The source matrix.
-- `sx`: The amount to scale the   component.
-- `sy`: The amount to scale the   component.
-- `sz`: The amount to scale the   component.
+- `sx`: The amount to scale the `x` component.
+- `sy`: The amount to scale the `y` component.
+- `sz`: The amount to scale the `z` component.
 
 ## See Also
 

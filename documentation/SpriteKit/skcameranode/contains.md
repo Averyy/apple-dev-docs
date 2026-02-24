@@ -30,7 +30,7 @@ The camera must be part of a scene’s node hierarchy and the scene must be pres
 
 ## Parameters
 
-- `node`: An   object.
+- `node`: An [`SKNode`](sknode.md) object.
 
 ## See Also
 

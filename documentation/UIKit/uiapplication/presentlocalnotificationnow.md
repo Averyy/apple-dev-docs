@@ -22,7 +22,7 @@ Prior to scheduling any local notifications, you must call the [`registerUserNot
 
 ## Parameters
 
-- `notification`: A local notification that the operating system presents for the app immediately, regardless of the value of the notification’s   property. Apps running in the background state can immediately present local notifications when there are incoming chats, messages, or updates. Because the operating system copies  , you may release it once you have scheduled it.
+- `notification`: A local notification that the operating system presents for the app immediately, regardless of the value of the notification’s [`fireDate`](uilocalnotification/firedate.md) property. Apps running in the background state can immediately present local notifications when there are incoming chats, messages, or updates. Because the operating system copies `notification`, you may release it once you have scheduled it.
 
 ## See Also
 

@@ -30,7 +30,7 @@ func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, did
 
 - `session`: The session containing the download task that finished.
 - `downloadTask`: The download task that finished.
-- `location`: If you choose to open the file for reading, you should do the actual reading in another thread to avoid blocking the delegate queue.
+- `location`: A file URL for the temporary file. Because the file is temporary, you must either open the file for reading or move it to a permanent location in your app’s sandbox container directory before returning from this delegate method. If you choose to open the file for reading, you should do the actual reading in another thread to avoid blocking the delegate queue.
 
 
 ---

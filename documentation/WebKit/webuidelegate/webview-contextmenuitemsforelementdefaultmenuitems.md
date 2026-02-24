@@ -25,8 +25,8 @@ This method is invoked every time the user clicks the right mouse button, or con
 ## Parameters
 
 - `sender`: The web view that sent the message.
-- `element`: A dictionary that describes the element that was clicked. See “Constants” in   for information about the key-value pairs in this dictionary.
-- `defaultMenuItems`: The menu items included by default in the element’s contextual menu. See   for values you can use to differentiate among specific menu items.
+- `element`: A dictionary that describes the element that was clicked. See “Constants” in [`WebView`](webview-swift.class.md) for information about the key-value pairs in this dictionary.
+- `defaultMenuItems`: The menu items included by default in the element’s contextual menu. See [`Menu Item Tags`](menu-item-tags.md) for values you can use to differentiate among specific menu items.
 
 ## See Also
 

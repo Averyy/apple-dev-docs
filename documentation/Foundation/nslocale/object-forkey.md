@@ -26,7 +26,7 @@ The object corresponding to `key`.
 
 ## Parameters
 
-- `key`: The component for which to return the corresponding value. For possible values, see  .
+- `key`: The component for which to return the corresponding value. For possible values, see [`NSLocale.Key`](nslocale/key.md).
 
 ## See Also
 

@@ -23,7 +23,7 @@ If an endpoint won’t use all of the allocated bandwidth, use [`adjust(with:)`]
 
 ## Parameters
 
-- `descriptors`: A reference to   describing the new endpoint policy.
+- `descriptors`: A reference to [`IOUSBHostIOSourceDescriptors`](iousbhostiosourcedescriptors.md) describing the new endpoint policy.
 
 ## See Also
 

@@ -34,7 +34,7 @@ This method is a designated initializer for [`NSIndexSet`](nsindexset.md).
 
 ## Parameters
 
-- `range`: An index range. Must be in the range  ..
+- `range`: An index range. Must be in the range `0 .. NSNotFound - 1`..
 
 ## See Also
 

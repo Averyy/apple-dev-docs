@@ -22,6 +22,20 @@ class UIWindowSceneDragInteraction
 
 Create and add this interaction to a view that you want to drag to adjust the position of your app’s window. [`UINavigationBar`](uinavigationbar.md) handles this automatically, so you only need to add this interaction to views in other parts of your window that you want to be draggable.
 
+**Swift**:
+
+```swift
+var windowDragInteraction = UIWindowSceneDragInteraction()
+draggableView.addInteraction(windowDragInteraction)
+```
+
+**Objective-C**:
+
+```objc
+UIWindowSceneDragInteraction *windowDragInteraction = [[UIWindowSceneDragInteraction alloc] init];
+[self.draggableView addInteraction:windowDragInteraction];
+```
+
 ## Topics
 
 ### Preventing gesture conflicts

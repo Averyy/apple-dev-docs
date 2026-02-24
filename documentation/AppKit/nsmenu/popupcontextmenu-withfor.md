@@ -22,7 +22,7 @@ class func popUpContextMenu(_ menu: NSMenu, with event: NSEvent, for view: NSVie
 ## Parameters
 
 - `menu`: The menu object to use for the contextual menu.
-- `event`: An   object representing the event.
+- `event`: An [`NSEvent`](nsevent.md) object representing the event.
 - `view`: The view object over which to display the contextual menu.
 
 ## See Also

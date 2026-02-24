@@ -23,7 +23,7 @@ init(upstream: Upstream, retries: Int?)
 ## Parameters
 
 - `upstream`: The publisher from which this publisher receives its elements.
-- `retries`: The maximum number of retry attempts to perform. If  , this publisher attempts to reconnect with the upstream publisher an unlimited number of times.
+- `retries`: The maximum number of retry attempts to perform. If `nil`, this publisher attempts to reconnect with the upstream publisher an unlimited number of times.
 
 
 ---

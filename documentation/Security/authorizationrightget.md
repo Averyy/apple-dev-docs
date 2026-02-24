@@ -26,7 +26,7 @@ You do not need an authorization reference to use this function because the poli
 ## Parameters
 
 - `rightName`: An ASCII character string representing the right name. Wildcard right names are valid.
-- `rightDefinition`: A reference to a dictionary. On return, this points to a dictionary of keys that define the right. Passing   checks if the right is defined. You should release the memory used by the returned dictionary.
+- `rightDefinition`: A reference to a dictionary. On return, this points to a dictionary of keys that define the right. Passing `nil` checks if the right is defined. You should release the memory used by the returned dictionary.
 
 
 ---

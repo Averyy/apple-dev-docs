@@ -26,7 +26,7 @@ An [`AVMutableMovieTrack`](avmutablemovietrack.md) object.
 ## Parameters
 
 - `mediaType`: The media type for the new track.
-- `track`: An   containing the desired track settings to be transferred. Set to   to create a track with default settings.
+- `track`: An [`AVAssetTrack`](avassettrack.md) containing the desired track settings to be transferred. Set to `nil` to create a track with default settings.
 - `options`: A dictionary that contains key for specifying the movie object initialization. Currently, no keys are defined.
 
 ## See Also

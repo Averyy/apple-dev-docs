@@ -47,7 +47,12 @@ enum Genre {
 }
 ```
 
-> **Note**: @Generable macro `Generable(description:representNullExplicitlyInGeneratedContent:)`
+> **Note**: @Generable macro [`Generable(description:representNilExplicitlyInGeneratedContent:)`](generable(description:representnilexplicitlyingeneratedcontent:).md)
+
+## See Also
+
+- [macro Generable(description: String?, representNilExplicitlyInGeneratedContent: Bool)](generable(description:representnilexplicitlyingeneratedcontent:).md)
+  Conforms a type to [`Generable`](generable.md) protocol.
 
 
 ---

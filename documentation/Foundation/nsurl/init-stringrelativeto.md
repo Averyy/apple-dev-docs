@@ -38,7 +38,7 @@ For apps linked before iOS 17, this method expects `URLString` to contain only c
 
 ## Parameters
 
-- `URLString`: The URL string with which to initialize the NSURL object. Linked on or after iOS 17, this method parses   according to RFC 3986. Linked before iOS 17, this method parses   according to RFCs 1738 and 1808.   is interpreted relative to  .
+- `URLString`: The URL string with which to initialize the NSURL object. Linked on or after iOS 17, this method parses `URLString` according to RFC 3986. Linked before iOS 17, this method parses `URLString` according to RFCs 1738 and 1808. `URLString` is interpreted relative to `baseURL`.
 - `baseURL`: The base URL for the NSURL object.
 
 ## See Also

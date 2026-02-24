@@ -31,7 +31,7 @@ You typically run this command for:
 
 ## Parameters
 
-- `texture`: A   instance the command optimizes for GPU access.
+- `texture`: A [`MTLTexture`](mtltexture.md) instance the command optimizes for GPU access.
 
 ## See Also
 

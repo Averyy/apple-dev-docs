@@ -30,7 +30,7 @@ This is the designated initializer.
 
 ## Parameters
 
-- `certificateRef`: You can create a   value from a data object using the   function.
+- `certificateRef`: The certificate reference. You can create a `SecCertificateRef` value from a data object using the `SecCertificateCreateWithData` function.
 - `objectID`: The object ID.
 
 

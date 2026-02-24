@@ -33,7 +33,7 @@ When you create a reference object for use in a search predicate, the predicate 
 ## Parameters
 
 - `record`: The target record of the reference.
-- `action`: The ownership options to use for the records. If you specify the   option, the object that the   parameter references becomes the owner of (or acts as the parent of) any objects that use this reference object. For a list of possible values, see  .
+- `action`: The ownership options to use for the records. If you specify the [`CKRecord.ReferenceAction.deleteSelf`](ckrecord/referenceaction/deleteself.md) option, the object that the `recordID` parameter references becomes the owner of (or acts as the parent of) any objects that use this reference object. For a list of possible values, see [`CKRecord.ReferenceAction`](ckrecord/referenceaction.md).
 
 ## See Also
 

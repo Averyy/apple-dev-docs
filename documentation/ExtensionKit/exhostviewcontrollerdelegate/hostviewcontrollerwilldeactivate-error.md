@@ -29,7 +29,7 @@ The host view controller calls this method when the app extension exits or when 
 ## Parameters
 
 - `viewController`: The host view controller that initiated the connection.
-- `error`: An error object indicating why the app extension disconnected, or   if the extension exited without issues.
+- `error`: An error object indicating why the app extension disconnected, or `nil` if the extension exited without issues.
 
 ## See Also
 

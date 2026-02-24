@@ -25,8 +25,8 @@ Calling this method with the `animated` parameter set to [`false`](https://devel
 
 ## Parameters
 
-- `hidden`: Specify   to hide the toolbar or   to show it.
-- `animated`: Specify   if you want the toolbar to be animated on or off the screen.
+- `hidden`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to hide the toolbar or [`false`](https://developer.apple.com/documentation/Swift/false) to show it.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if you want the toolbar to be animated on or off the screen.
 
 ## See Also
 

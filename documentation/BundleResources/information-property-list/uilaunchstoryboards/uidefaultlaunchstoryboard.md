@@ -9,6 +9,10 @@ The identifier of the default launch storyboard to use.
 - iOS 9.0+
 - iPadOS 9.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [UILaunchStoryboardDefinitions](information-property-list/uilaunchstoryboards/uilaunchstoryboarddefinitions.md)

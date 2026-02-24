@@ -15,6 +15,11 @@ The command to request the location of a device when in Lost Mode.
 object DeviceLocationCommand.Command
 ```
 
+## Properties
+
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

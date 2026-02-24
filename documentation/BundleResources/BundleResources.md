@@ -16,7 +16,7 @@ Resources located in an app, framework, or plugin bundle.
 
 #### Overview
 
-A  is a directory with a standardized hierarchical structure that holds executable code and the resources used by that code. The bundle contains resources for you to access at runtime, such as images, audio files, user interface files, and property lists.
+A *bundle* is a directory with a standardized hierarchical structure that holds executable code and the resources used by that code. The bundle contains resources for you to access at runtime, such as images, audio files, user interface files, and property lists.
 
 ## Topics
 

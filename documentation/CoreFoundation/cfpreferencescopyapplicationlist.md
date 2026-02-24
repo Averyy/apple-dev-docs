@@ -22,8 +22,8 @@ The list of application IDs. Ownership follows the [`The Create Rule`](https://d
 
 ## Parameters
 
-- `userName`:   to search the current-user domain, otherwise   to search the any-user domain.
-- `hostName`:   to search the current-host domain, otherwise   to search the any-host domain.
+- `userName`: [`kCFPreferencesCurrentUser`](kcfpreferencescurrentuser.md) to search the current-user domain, otherwise [`kCFPreferencesAnyUser`](kcfpreferencesanyuser.md) to search the any-user domain.
+- `hostName`: [`kCFPreferencesCurrentHost`](kcfpreferencescurrenthost.md) to search the current-host domain, otherwise [`kCFPreferencesAnyHost`](kcfpreferencesanyhost.md) to search the any-host domain.
 
 ## See Also
 

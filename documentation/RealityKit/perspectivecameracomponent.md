@@ -21,7 +21,7 @@ struct PerspectiveCameraComponent
 
 #### Overview
 
-Each scene requires a camera that defines the viewpoint from which RealityKit renders the scene. In RealityKit, the default camera is a , which simulates the way real cameras and human vision work. Entities that are farther away from the camera render smaller.
+Each scene requires a camera that defines the viewpoint from which RealityKit renders the scene. In RealityKit, the default camera is a *perspective camera*, which simulates the way real cameras and human vision work. Entities that are farther away from the camera render smaller.
 
 For an alternative camera solution, see [`OrthographicCameraComponent`](orthographiccameracomponent.md).
 

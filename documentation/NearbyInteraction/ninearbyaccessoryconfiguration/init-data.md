@@ -23,7 +23,7 @@ init(data: Data) throws
 
 ## Parameters
 
-- `data`: The accessory’s configuration data formatted to the  .
+- `data`: The accessory’s configuration data formatted to the [`Ultra Wideband (UWB) third-party device specification`](https://developer.apple.comhttps://developer.apple.com/nearby-interaction).
 
 ## See Also
 

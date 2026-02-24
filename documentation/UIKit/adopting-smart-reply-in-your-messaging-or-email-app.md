@@ -8,7 +8,7 @@ Generate reply suggestions by using Apple Intelligence and put selected text int
 
 Messages and Mail use Apple Intelligence to provide the Smart Reply feature, which generates suggestions that are contextually relevant for a thread when you draft a message or email. To add this feature to your messaging or email app, follow these steps:
 
-- Create a  object with your app’s data from a thread.
+- Create a *conversation context* object with your app’s data from a thread.
 - Attach the conversation context to your text view or text field when you prepare your user interface.
 - Implement delegate methods to keep the conversation context up-to-date when you send or receive messages.
 - For an email or other long-form type of messaging, use the selected input suggestion to generate a long-form response and place it in the entry field.
@@ -29,9 +29,104 @@ Configure the conversation context with these details:
 
 Here’s how you configure a conversation context:
 
+**Swift**:
+
+```swift
+func mailConversationContext(for yourEntries: [YourMailEntry]) -> UIMailConversationContext {
+    var context: UIMailConversationContext = UIMailConversationContext()
+    
+    var contextEntries: [UIMailConversationContext.MailEntry] = []
+    for yourEntry in yourEntries {
+        var conversationEntry = UIMailConversationContext.MailEntry()
+        
+        conversationEntry.text = yourEntry.text
+        conversationEntry.senderIdentifier = yourEntry.sender
+        conversationEntry.primaryRecipientIdentifiers = [yourEntry.recipient]
+        conversationEntry.sentDate = yourEntry.date
+        conversationEntry.entryIdentifier = yourEntry.yourEntryIdentifier
+        conversationEntry.kind = .personal
+        
+        contextEntries.append(conversationEntry)
+    }
+    
+    context.threadIdentifier = yourThreadObject.identifier
+    context.entries = contextEntries
+    
+    var senderName = PersonNameComponents()
+    senderName.givenName = "Sender's name"
+    
+    var recipientName = PersonNameComponents()
+    recipientName.givenName = "Recipient's name"
+    
+    context.participantNameByIdentifier = [senderIdentifier: senderName, recipientIdentifier: recipientName]
+    
+    context.selfIdentifiers = [senderIdentifier]
+    
+    context.responsePrimaryRecipientIdentifiers = [recipientIdentifier]
+    
+    return context
+}
+```
+
+**Objective-C**:
+
+```objc
+- (UIMailConversationContext *)mailConversationContextForEntries:(NSArray<YourMailEntry *> *)yourEntries {
+    UIMailConversationContext *context = [[UIMailConversationContext alloc] init];
+
+    NSMutableArray *contextEntries = [NSMutableArray new];
+    for (YourMailEntry *yourEntry in yourEntries) {
+        UIMailConversationEntry *conversationEntry = [[UIMailConversationEntry alloc] init];
+        conversationEntry.text = yourEntry.text;
+        conversationEntry.senderIdentifier = yourEntry.sender;
+        
+        conversationEntry.primaryRecipientIdentifiers = [NSSet setWithObject:yourEntry.recipient];
+
+        conversationEntry.sentDate = yourEntry.date;
+        conversationEntry.entryIdentifier = yourEntry.yourEntryIdentifier;
+        
+        conversationEntry.kind = UIMailConversationEntryKindPersonal;
+        
+        [contextEntries addObject:conversationEntry];
+    }
+    
+    context.threadIdentifier = yourThreadObject.identifier;
+    context.entries = contextEntries;
+    
+    NSPersonNameComponents *senderName = [[NSPersonNameComponents alloc] init];
+    senderName.givenName = @"Sender's name";
+    
+    NSPersonNameComponents *recipientName = [[NSPersonNameComponents alloc] init];
+    recipientName.givenName = @"Recipient's name";
+    
+    context.participantNameByIdentifier = @{
+        senderID : senderName,
+        recipientID : recipientName
+    };
+    
+    context.selfIdentifiers = [NSSet setWithObject:senderID];
+    
+    context.responsePrimaryRecipientIdentifiers = [NSSet setWithArray:@[recipientID]];
+    
+    return context;
+}
+```
+
 ##### Attach the Conversation Context to a Text View or Text Field
 
 When you create an entry field, such as a text view or text field, which you use to get input from the person using your app, assign the conversation context you created to the object’s [`conversationContext`](uitextinputtraits/conversationcontext.md) property before the keyboard appears:
+
+**Swift**:
+
+```swift
+entryField.conversationContext = context
+```
+
+**Objective-C**:
+
+```objc
+[self.entryField setConversationContext:context];
+```
 
 The keyboard uses this context once per session for initialization. Use the steps in the next section to handle changes to the conversation during the keyboard session.
 
@@ -39,11 +134,68 @@ The keyboard uses this context once per session for initialization. Use the step
 
 Every time you send or receive a message, keep the conversation context up-to-date. Because the conversation context is tied to a keyboard session, update or regenerate the conversation context you created earlier if the focus changed from your entry field, then set the entry field’s `conversationContext` to the updated context:
 
+**Swift**:
+
+```swift
+entryField.conversationContext = context
+```
+
+**Objective-C**:
+
+```objc
+[self.entryField setConversationContext:context];
+```
+
 Then, call [`conversationContext(_:didChange:)`](uitextinputdelegate/conversationcontext(_:didchange:).md) on the entry field’s `inputDelegate` to notify it that the conversation has more entries:
+
+**Swift**:
+
+```swift
+entryField.inputDelegate?.conversationContext(context, didChange: entryField)
+```
+
+**Objective-C**:
+
+```objc
+id<UITextInputDelegate> entryFieldInputDelegate = (id<UITextInputDelegate>)self.entryField.inputDelegate;
+    
+[entryFieldInputDelegate conversationContext:context didChange:self.entryField];
+```
 
 ##### Generate Long Form Responses
 
 For email or other long-form messaging apps, instead of dropping the Smart Reply response directly into the entry field, use the suggestion to generate a long-form response with your own model. To do this, implement [`textView(_:insertInputSuggestion:)`](uitextviewdelegate/textview(_:insertinputsuggestion:).md) or [`textField(_:insertInputSuggestion:)`](uitextfielddelegate/textfield(_:insertinputsuggestion:).md):
+
+**Swift**:
+
+```swift
+func textField(_:UITextField, insertInputSuggestion inputSuggestion: UIInputSuggestion) {
+    guard let smartReplySuggestion = inputSuggestion as? UISmartReplySuggestion else {
+        return
+    }
+    
+    // Call your model with smartReplySuggestion.smartReply,
+    // then assign the result to your entry field's text property.
+    let entryFieldText = YourModel.response(from: smartReplySuggestion.smartReply)
+    entryField.text = entryFieldText
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)textField:(UITextField *)textField insertInputSuggestion:(UIInputSuggestion *)inputSuggestion {
+    if ([inputSuggestion.class isEqual:UISmartReplySuggestion.class]) {
+        UISmartReplySuggestion *smartReplySuggestion = (UISmartReplySuggestion *)inputSuggestion;
+        
+        // Call your model with smartReplySuggestion.smartReply,
+        // then assign the result to your entry field's text property.
+        NSString *entryFieldText = [YourModel responseFrom:smartReplySuggestion.smartReply];
+        
+        self.entryField.text = entryFieldText;
+    }
+}
+```
 
 If your entry field is a custom implementation of [`UITextInput`](uitextinput.md), call [`insert(_:)`](uitextinput/insert(_:).md) instead.
 

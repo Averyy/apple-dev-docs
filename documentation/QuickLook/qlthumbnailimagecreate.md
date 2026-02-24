@@ -31,7 +31,7 @@ This function is thread-safe, so you can call it from any thread. However, becau
 - `allocator`: The allocator to use to create the thumbnail image.
 - `url`: The URL of the file to create a thumbnail image for.
 - `maxThumbnailSize`: The maximum desired size of the thumbnail image.
-- `options`: A dictionary of options that affect the creation of the thumbnail image. You can use   and   as options.
+- `options`: A dictionary of options that affect the creation of the thumbnail image. You can use [`kQLThumbnailOptionIconModeKey`](kqlthumbnailoptioniconmodekey.md) and [`kQLThumbnailOptionScaleFactorKey`](kqlthumbnailoptionscalefactorkey.md) as options.
 
 ## See Also
 

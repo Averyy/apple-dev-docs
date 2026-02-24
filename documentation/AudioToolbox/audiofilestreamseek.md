@@ -29,10 +29,10 @@ After you call this function, the parser assumes the next data passed to the [`A
 
 ## Parameters
 
-- `inAudioFileStream`: The ID of the parser to which you wish to provide a byte offset. The parser ID is returned by the   function.
+- `inAudioFileStream`: The ID of the parser to which you wish to provide a byte offset. The parser ID is returned by the [`AudioFileStreamOpen(_:_:_:_:_:)`](audiofilestreamopen(_:_:_:_:_:).md) function.
 - `inPacketOffset`: The number of packets from the beginning of the file of the packet whose byte offset you wish to have returned.
-- `outDataByteOffset`: On output, the absolute byte offset of the packet whose offset you specify in the   parameter. For audio file formats that do not contain packet tables, the returned offset may be an estimate.
-- `ioFlags`: On output, if the   parameter returns an estimate, this parameter returns the constant  . Currently, no input flags are defined for this call.
+- `outDataByteOffset`: On output, the absolute byte offset of the packet whose offset you specify in the `inPacketOffset` parameter. For audio file formats that do not contain packet tables, the returned offset may be an estimate.
+- `ioFlags`: On output, if the `outDataByteOffset` parameter returns an estimate, this parameter returns the constant `kAudioFileStreamSeekFlag_OffsetIsEstimated`. Currently, no input flags are defined for this call.
 
 ## See Also
 

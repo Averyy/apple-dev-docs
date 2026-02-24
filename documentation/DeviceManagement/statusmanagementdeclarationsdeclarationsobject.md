@@ -25,6 +25,13 @@ object StatusManagementDeclarationsDeclarationsObject
 - [object StatusManagementDeclarationsDeclarationObject](statusmanagementdeclarationsdeclarationobject.md)
   A processed declaration for the client.
 
+## Properties
+
+- `activations` ([StatusManagementDeclarationsDeclarationObject]) *(required)*: An array of declarations that represent the client’s processed activation types.
+- `assets` ([StatusManagementDeclarationsDeclarationObject]) *(required)*: An array of declarations that represent the client’s processed assets.
+- `configurations` ([StatusManagementDeclarationsDeclarationObject]) *(required)*: An array of declarations that represent the client’s processed configuration types.
+- `management` ([StatusManagementDeclarationsDeclarationObject]) *(required)*: An array of declarations that represent the client’s processed declaration types.
+
 
 ---
 

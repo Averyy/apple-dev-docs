@@ -10,6 +10,10 @@ A Boolean value indicating whether the app may open the original document from a
 - iPadOS 2.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [CFBundleDocumentTypes](information-property-list/cfbundledocumenttypes.md)

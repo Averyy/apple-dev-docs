@@ -31,7 +31,7 @@ If `actionNameResource` is `nil`, the undo manager removes the action name curre
 
 ## Parameters
 
-- `actionNameResource`: The name of the action, as a  . Pass in   to reset the action name currently associated with the menu command.
+- `actionNameResource`: The name of the action, as a [`LocalizedStringResource`](localizedstringresource.md). Pass in `nil` to reset the action name currently associated with the menu command.
 
 ## See Also
 

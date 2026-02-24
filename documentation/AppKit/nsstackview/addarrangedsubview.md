@@ -20,7 +20,7 @@ The stack view ensures that the [`arrangedSubviews`](nsstackview/arrangedsubview
 
 ## Parameters
 
-- `view`: The view to add to the end of the   array.
+- `view`: The view to add to the end of the [`arrangedSubviews`](nsstackview/arrangedsubviews.md) array.
 
 ## See Also
 

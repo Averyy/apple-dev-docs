@@ -28,8 +28,8 @@ Clipping begins from the right and bottom sides of a stack view.
 
 ## Parameters
 
-- `clippingResistancePriority`: The clipping resistance Auto Layout priority you want to apply to the stack view for a given user interface axis. The default value is  , which disallows clipping. Other valid values are those in the   enumeration.
-- `orientation`: The horizontal or vertical user interface axis that the clipping resistance priority applies to; one of the constants from the   enumeration.
+- `clippingResistancePriority`: The clipping resistance Auto Layout priority you want to apply to the stack view for a given user interface axis. The default value is [`required`](nslayoutconstraint/priority-swift.struct/required.md), which disallows clipping. Other valid values are those in the [`NSLayoutConstraint.Priority`](nslayoutconstraint/priority-swift.struct.md) enumeration.
+- `orientation`: The horizontal or vertical user interface axis that the clipping resistance priority applies to; one of the constants from the [`NSLayoutConstraint.Orientation`](nslayoutconstraint/orientation.md) enumeration.
 
 ## See Also
 

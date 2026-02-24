@@ -27,7 +27,7 @@ Returns an [`NSAttributedString`](nsattributedstring.md) object initialized with
 ## Parameters
 
 - `str`: The text for the new attributed string.
-- `attrs`: The attributes for the new attributed string. This method applies the attributes to the entire string. For a list of attributes that you can include in this dictionary, see  .
+- `attrs`: The attributes for the new attributed string. This method applies the attributes to the entire string. For a list of attributes that you can include in this dictionary, see [`NSAttributedString.Key`](nsattributedstring/key.md).
 
 ## See Also
 

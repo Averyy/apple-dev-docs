@@ -18,9 +18,15 @@ A request includes two parts: the encryption information and the device request.
 
 The parameters in the encryption information are:
 
+- **`nonce`**: An unpredictable random value or pseudorandom value, generated once per request.
+- **`recipientPublicKey`**: The public key of the encryption key pair that your server generates.
+
 The device request is the second part of a request. Section 8.3.2.1.2.1 of the ISO/IEC 18013-5 standard defines the format for this request. Use the latest version string available from the standard when building your device request for the Digital Credentials API.
 
 Define the details of the document you’re requesting in the `ItemsRequest` type. The notable parameters are:
+
+- **`docType`**: A standardized string that describes the type of document you’re requesting. For example, you can request a mobile driver’s license (mDL) by using  “org.iso.18013.5.1.mDL”.
+- **`nameSpaces`**: A nested dictionary that defines the elements you request and whether your website intends to retain these elements after the identity verification is complete. These elements are divided into groups called *namespaces*. The standardized namespaces and element identifiers may be different for each document type.
 
 #### Sign and Authenticate the Request
 
@@ -81,6 +87,9 @@ Pass your mdoc request as an individual request in the requests array. The proto
 #### Receive an Mdoc Response
 
 The format of the mdoc response returned from the Digital Credentials API is defined in Annex C of ISO/IEC 18013-7. There are two important parameters in the mdoc response:
+
+- **`enc`**: The sender public key that the document provider app used to encrypt the device response. The decryption process uses this key.
+- **`cipherText`**: The encrypted device response.
 
 The server decrypts the response through Hybrid Public Key Encryption (HPKE) defined in RFC 9180. The particular parameters to use for decryption operation are defined in Annex C of ISO/IEC 18013-7.
 

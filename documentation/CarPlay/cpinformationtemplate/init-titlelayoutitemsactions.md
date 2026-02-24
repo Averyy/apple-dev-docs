@@ -23,7 +23,7 @@ The template can display up to 10 information items. If `items` contains more ob
 ## Parameters
 
 - `title`: The title that the template displays.
-- `layout`: The layout that the template uses to arrange its items. See   for more information.
+- `layout`: The layout that the template uses to arrange its items. See [`CPInformationTemplateLayout`](cpinformationtemplatelayout.md) for more information.
 - `items`: An array of information items that the template displays.
 - `actions`: An array of text buttons that provides the actions that the user can perform.
 

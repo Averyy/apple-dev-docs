@@ -21,7 +21,7 @@ struct Normal
 
 #### Overview
 
-The `normal` property of a RealityKit entity holds an optional , which stores fine details about the entity’s surface, using a texture rather than increasing the number of polygons in the model. If you provide a normal map, RealityKit uses the vectors from that normal map when rendering the entity, resulting in greater detail and more accurate highlights, shadows, and reflections.
+The `normal` property of a RealityKit entity holds an optional *normal map*, which stores fine details about the entity’s surface, using a texture rather than increasing the number of polygons in the model. If you provide a normal map, RealityKit uses the vectors from that normal map when rendering the entity, resulting in greater detail and more accurate highlights, shadows, and reflections.
 
 ## Topics
 

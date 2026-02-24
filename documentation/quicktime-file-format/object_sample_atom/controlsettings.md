@@ -21,6 +21,16 @@ enum QTVRControlSettings {
 };
 ```
 
+**Constant Descriptions**
+
+- **`kQTVRObjectWrapPanOn`**: The control setting to enable wrapping during panning. When this control setting is enabled, the user can wrap around from the current pan constraint maximum value to the pan constraint minimum value (or vice versa) using the mouse or arrow keys.
+- **`kQTVRObjectWrapTiltOn`**: The control setting to enable wrapping during tilting. When this control setting is enabled, the user can wrap around from the current tilt constraint maximum value to the tilt constraint minimum value (or vice versa) using the mouse or arrow keys.
+- **`kQTVRObjectCanZoomOn`**: The control setting to enable zooming. When this control setting is enabled, the user can change the current field of view using the zoom-in and zoom-out keys on the keyboard (or using the VR controller buttons).
+- **`kQTVRObjectReverseHControlOn`**: The control setting to reverse the direction of the horizontal control.
+- **`kQTVRObjectReverseVControlOn`**: The control setting to reverse the direction of the vertical control.
+- **`kQTVRObjectSwapHVControlOn`**: The control setting to exchange the horizontal and vertical controls.
+- **`kQTVRObjectTranslationOn`**: The control setting to enable translation. When this setting is enabled, the user can translate using the mouse when either the translate key is held down or the controller translation mode button is toggled on.
+
 ## See Also
 
 - [majorVersion](object_sample_atom/majorversion.md)

@@ -25,7 +25,7 @@ A [`JSClassRef`](jsclassref.md) that is the same as `jsClass`.
 
 ## Parameters
 
-- `jsClass`: The   to retain.
+- `jsClass`: The [`JSClassRef`](jsclassref.md) to retain.
 
 ## See Also
 

@@ -17,7 +17,7 @@ func setPhysicalFormat(_ format: AudioStreamBasicDescription) throws
 
 ## Parameters
 
-- `format`: An AudioStreamBasicDescription that describes the data format in which   the hardware for the owning device will perform IO transactions.
+- `format`: An AudioStreamBasicDescription that describes the data format in which the hardware for the owning device will perform IO transactions.
 
 
 ---

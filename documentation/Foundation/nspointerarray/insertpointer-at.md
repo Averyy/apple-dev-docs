@@ -27,7 +27,7 @@ Elements at and above `index`, including `NULL` values, slide higher.
 ## Parameters
 
 - `item`: The pointer to add.
-- `index`: The index of an element in the receiver. This value must be less than the   of the receiver.
+- `index`: The index of an element in the receiver. This value must be less than the [`count`](nspointerarray/count.md) of the receiver.
 
 ## See Also
 

@@ -219,7 +219,7 @@ The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ###### Known Issues
 
-- SwiftData models with implicitly unwrapped optional properties will generate a compiler error that all stored properties were not set.  (114140139)  Set the value of non-relationship stored properties in the initializer, and mark relationship properties as optional.
+- SwiftData models with implicitly unwrapped optional properties will generate a compiler error that all stored properties were not set.  (114140139) **Workaround:** Set the value of non-relationship stored properties in the initializer, and mark relationship properties as optional.
 
 ##### Swiftui
 
@@ -257,7 +257,7 @@ The tvOS 17 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ###### Known Issues
 
-- On iOS, using an `Observable` object’s property as a selection value of a `List` inside `NavigationSplitView` may cause a “Simultaneous accesses to …” error when a list selection is made via tap gesture.  (113978783) (FB12981860)  There is no current workaround for `Observable` properties. Alternatives include factoring out the selection value into separate state stored outside the object, or using `ObservableObject` instead.
+- On iOS, using an `Observable` object’s property as a selection value of a `List` inside `NavigationSplitView` may cause a “Simultaneous accesses to …” error when a list selection is made via tap gesture.  (113978783) (FB12981860) **Workaround:** There is no current workaround for `Observable` properties. Alternatives include factoring out the selection value into separate state stored outside the object, or using `ObservableObject` instead.
 
 ##### Symbol Effects
 

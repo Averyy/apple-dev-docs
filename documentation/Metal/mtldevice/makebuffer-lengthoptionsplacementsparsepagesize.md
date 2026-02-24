@@ -30,9 +30,9 @@ This method creates a new placement sparse [`MTLBuffer`](mtlbuffer.md) of a spec
 
 ## Parameters
 
-- `length`: The size of the  , in bytes.
-- `options`: A   instance that establishes the buffer’s storage modes.
-- `placementSparsePageSize`:   to use for the placement sparse buffer.
+- `length`: The size of the [`MTLBuffer`](mtlbuffer.md), in bytes.
+- `options`: A [`MTLResourceOptions`](mtlresourceoptions.md) instance that establishes the buffer’s storage modes.
+- `placementSparsePageSize`: [`MTLSparsePageSize`](mtlsparsepagesize.md) to use for the placement sparse buffer.
 
 
 ---

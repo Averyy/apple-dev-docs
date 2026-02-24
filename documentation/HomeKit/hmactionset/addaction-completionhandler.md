@@ -19,8 +19,8 @@ func addAction(_ action: HMAction) async throws
 
 ## Parameters
 
-- `action`: The action to add. Actions may only be in one set—create separate   objects for the same conceptual action if you want an action to be in more than one action set.
-- `completion`: The block executed after the request is processed.
+- `action`: The action to add. Actions may only be in one set—create separate [`HMAction`](hmaction.md) objects for the same conceptual action if you want an action to be in more than one action set.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

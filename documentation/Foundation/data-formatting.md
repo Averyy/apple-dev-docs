@@ -13,6 +13,9 @@ Foundation supports two approaches for data formatting:
 
 ## Topics
 
+### Essentials
+- [Displaying Human-Friendly Content](displaying-human-friendly-content.md)
+  Convert data into readable strings or Swift objects using formatters.
 ### Data formatting in Swift
 - [Language Introspector](language-introspector.md)
   Converts data into human-readable text using formatters and locales.

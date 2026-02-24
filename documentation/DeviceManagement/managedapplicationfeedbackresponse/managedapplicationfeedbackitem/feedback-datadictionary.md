@@ -18,6 +18,10 @@ A dictionary that contains a managed app’s feedback items.
 object ManagedApplicationFeedbackResponse.ManagedApplicationFeedbackItem.Feedback
 ```
 
+## Properties
+
+- `ANY` (any): The app’s feedback items.
+
 
 ---
 

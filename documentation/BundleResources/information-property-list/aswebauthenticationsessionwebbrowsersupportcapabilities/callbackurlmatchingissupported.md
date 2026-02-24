@@ -8,6 +8,10 @@ A Boolean that indicates whether the app can handle callbacks to match authentic
 **Availability**:
 - macOS 10.15+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Set the corresponding value to `YES` to indicate that your browser app supports using an [`ASWebAuthenticationSession.Callback`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession/Callback) to process authentication redirect URLs.

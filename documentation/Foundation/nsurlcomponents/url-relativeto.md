@@ -24,13 +24,13 @@ func url(relativeTo baseURL: URL?) -> URL?
 
 If the components object has an authority component (user, password, host, or port) and a path component, then the path must either begin with `"/"` or be an empty string. Otherwise, this property contains `nil`.
 
-If the `NSURLComponents` have an authority component (user, password, host, or port) and has a path component, the path component must not start with `"//"`. If it does, this property contains `nil`.
+If the `NSURLComponents`*does not* have an authority component (user, password, host, or port) and has a path component, the path component must not start with `"//"`. If it does, this property contains `nil`.
 
 To configure a components object based on an existing URL, call either the [`componentsWithURL:resolvingAgainstBaseURL:`](nsurlcomponents/componentswithurl:resolvingagainstbaseurl:.md) or [`init(url:resolvingAgainstBaseURL:)`](nsurlcomponents/init(url:resolvingagainstbaseurl:).md) method.
 
 ## Parameters
 
-- `baseURL`: If non- , this URL is used as the base URL portion of the resulting URL object.
+- `baseURL`: If non-`nil`, this URL is used as the base URL portion of the resulting URL object.
 
 ## See Also
 

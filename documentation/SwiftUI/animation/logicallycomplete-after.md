@@ -32,7 +32,7 @@ If the animation is removed before the given duration is reached, logical comple
 
 ## Parameters
 
-- `duration`: The duration after which the animation should  report   that it is logically complete.
+- `duration`: The duration after which the animation should  report that it is logically complete.
 
 
 ---

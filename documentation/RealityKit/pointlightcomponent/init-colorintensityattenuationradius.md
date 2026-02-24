@@ -23,7 +23,7 @@ init(color: PointLightComponent.Color = .white, intensity: Float = 26963.76, att
 
 - `color`: The color of the light.
 - `intensity`: The intensity of the light in lumens.
-- `attenuationRadius`: The distance from the light source where its intensity reaches zero.   Any objects at or beyond this distance do not receive illumination.
+- `attenuationRadius`: The distance from the light source where its intensity reaches zero. Any objects at or beyond this distance do not receive illumination.
 
 
 ---

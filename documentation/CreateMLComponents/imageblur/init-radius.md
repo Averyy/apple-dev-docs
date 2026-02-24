@@ -21,7 +21,7 @@ init(radius: Double)
 
 ## Parameters
 
-- `radius`: The radius determines how many pixels are used to create the blur. The larger the radius,   the blurrier the result.
+- `radius`: The radius determines how many pixels are used to create the blur. The larger the radius, the blurrier the result.
 
 
 ---

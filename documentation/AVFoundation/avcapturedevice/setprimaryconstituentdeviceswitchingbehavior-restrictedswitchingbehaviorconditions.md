@@ -33,7 +33,7 @@ When recording using an instance of [`AVCaptureMovieFileOutput`](avcapturemovief
 ## Parameters
 
 - `switchingBehavior`: The switching behavior to set on the device.
-- `restrictedSwitchingBehaviorConditions`: Setting the switching behavior to a value other than   requires that you set this argument to an empty option set.
+- `restrictedSwitchingBehaviorConditions`: Sets the conditions during which the system restricts switching cameras. Setting the switching behavior to a value other than [`AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.restricted`](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/restricted.md) requires that you set this argument to an empty option set.
 
 ## See Also
 

@@ -22,9 +22,9 @@ The text provider created by this method uses the default time zone information 
 
 ## Parameters
 
-- `date`: The date to use for calculations. This parameter must not be  .
-- `style`: The style to use when formatting the relative date value. For a list of possible values, see  .
-- `calendarUnits`: The units to include in the resulting date string. For a list of supported calendar units, see  .
+- `date`: The date to use for calculations. This parameter must not be `nil`.
+- `style`: The style to use when formatting the relative date value. For a list of possible values, see [`CLKRelativeDateStyle`](clkrelativedatestyle.md).
+- `calendarUnits`: The units to include in the resulting date string. For a list of supported calendar units, see [`Date Format Options`](clkrelativedatetextprovider#Date-Format-Options.md).
 
 ## See Also
 

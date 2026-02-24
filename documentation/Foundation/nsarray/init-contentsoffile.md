@@ -30,7 +30,7 @@ The array representation in the file identified by `aPath` must contain only pro
 
 ## Parameters
 
-- `path`: The path to a file containing a representation of an array produced by the   method.
+- `path`: The path to a file containing a representation of an array produced by the [`write(toFile:atomically:)`](nsarray/write(tofile:atomically:).md) method.
 
 ## See Also
 

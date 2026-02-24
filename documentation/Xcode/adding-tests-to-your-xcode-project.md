@@ -10,6 +10,9 @@ When creating a new project in Xcode 16 and later, choose a Testing System from 
 
 Xcode includes two testing frameworks:
 
+- **[`Swift Testing`](https://developer.apple.com/documentation/Testing)**: A newer, modern testing framework that takes advantage of the powerful and expressive language capabilities of the Swift programming language. Writing tests requires less code to maintain and provides more actionable feedback. Use it for your unit tests and integration tests that call your code directly.
+- **[`XCTest`](https://developer.apple.com/documentation/XCTest)**: A widely used and well established testing framework with support to write unit tests, integration tests, UI test and performance tests.
+
 The options for testing system are Swift Test with XCTest UI Tests and XCTests for Unit and UI Tests. After making a selection, Xcode adds two types of test targets to your project, one for your unit tests with a name ending in “Tests” and one for your UI tests with a name ending in “UITests”. You’ll find the matching name for each of these targets in the Project navigator, along with a template file you can use to start writing your first tests. Your testing system choice impacts the primary framework Xcode includes in the file template for unit tests. Previous versions of Xcode included these targets when you enabled the Include Tests option when creating a new project and included file templates that use XCTest.
 
 ##### Add a New Testing Target
@@ -29,13 +32,37 @@ If you need to add testing to additional targets or have an existing target you 
 
 To write a test, select a test file from your test target, and choose a type or function to write a unit test for. If you need to add a new test file to your target,  choose File > New > New File From Template, then select Swift Testing Unit Test or XCTest Unit Test to add a test file with the appropriate structure. The test function that implements the unit test has the following three steps, in order:
 
-1.  — Create any objects or data structures that the code path you’re exercising uses. Replace complex dependencies with “stubs” that are easy to configure to ensure that tests run quickly and are deterministic. Adopting dependency injection and protocol-oriented programming ensures that relationships between objects in your app are sufficiently flexible to enable substitution of real implementations for stubs.
-2.  — Call the method or function that you’re testing, using parameters and properties that you configure in the Arrange phase.
-3.  — Use [`Expectations and confirmations`](https://developer.apple.com/documentation/Testing/Expectations) in Swift Testing or Test Assertions in [`XCTest`](https://developer.apple.com/documentation/XCTest) to compare the behavior of the code you exercise in the Act phase with your expectations of what should happen. Any expectation whose condition is false causes a test to fail.
+1. **Arrange** — Create any objects or data structures that the code path you’re exercising uses. Replace complex dependencies with “stubs” that are easy to configure to ensure that tests run quickly and are deterministic. Adopting dependency injection and protocol-oriented programming ensures that relationships between objects in your app are sufficiently flexible to enable substitution of real implementations for stubs.
+2. **Act** — Call the method or function that you’re testing, using parameters and properties that you configure in the Arrange phase.
+3. **Assert** — Use [`Expectations and confirmations`](https://developer.apple.com/documentation/Testing/Expectations) in Swift Testing or Test Assertions in [`XCTest`](https://developer.apple.com/documentation/XCTest) to compare the behavior of the code you exercise in the Act phase with your expectations of what should happen. Any expectation whose condition is false causes a test to fail.
 
 In Swift Testing, Test functions are just ordinary Swift functions that you add the the `Test` attribute to. They can be global functions or methods in a type. You can optionally identify suites, types that contain test functions, by marking them with the `Suite` attribute. You can mark them async or throws, or isolate them to a global actor.
 
 For tests you create with XCTest, create a subclass of [`XCTestCase`](https://developer.apple.com/documentation/XCTest/XCTestCase) to contain test methods. Add a method to your `XCTestCase` subclass that takes no arguments and returns `Void`, giving the method a name that begins with the word “`test`”.
+
+**Swift Testing**:
+
+```swift
+struct MyAPITests {
+    @Test func myAPIWorks() {
+        // Arrange: Create the necessary dependencies.
+        // Act: Call myAPIWorks, using the dependencies created above.
+        #expect(/* … */, "The function didn't return the expected result")
+    }
+}
+```
+
+**XCTest**:
+
+```swift
+class MyAPITests : XCTestCase {
+    func testMyAPIWorks() {
+        // Arrange: create the necessary dependencies.
+        // Act: call my API, using the dependencies created above.
+        XCTAssertTrue(/* … */, "The function didn't return the expected result")
+    }
+}
+```
 
 Cover multiple paths and test for each scenario. For example, if a function receives an optional parameter, test the parameter as `nil` and test a non-`nil` value. Identify the boundary cases and logical branches in your code, and write a unit test to cover each combination of these cases. To test multiple paths through a function or method in your project using Swift Testing, implement parameterized test functions. For more information, see [`Implementing parameterized tests`](https://developer.apple.com/documentation/Testing/ParameterizedTesting). In XCTest, each unit test should assert the expected behavior of a single path through a method or function in your project. To cover multiple paths, write one test for each scenario.
 

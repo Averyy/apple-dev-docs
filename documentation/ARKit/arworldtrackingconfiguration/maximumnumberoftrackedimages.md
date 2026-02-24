@@ -20,7 +20,7 @@ var maximumNumberOfTrackedImages: Int { get set }
 
 When you set a nonzero value for this property, the framework keeps that many image anchors up to date as the session progresses. The framework can track a maximum of four images simultaneously.
 
-The word  in the property name refers to how the framework closely monitors the image’s physical position and orientation for any changes. If the image moves, the framework updates the associated [`ARImageAnchor`](arimageanchor.md) transform with the new pose. ARKit checks for changes every frame.
+The word *track* in the property name refers to how the framework closely monitors the image’s physical position and orientation for any changes. If the image moves, the framework updates the associated [`ARImageAnchor`](arimageanchor.md) transform with the new pose. ARKit checks for changes every frame.
 
 ARKit tracks the first images it observes in the physical environment from the [`detectionImages`](arworldtrackingconfiguration/detectionimages.md) set. When a session reaches the maximum number of tracked images, the framework attempts to track another member of the set only after one of the existing tracked images leaves the device’s view.
 

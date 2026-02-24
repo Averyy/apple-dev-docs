@@ -26,10 +26,10 @@ A color object.
 
 ## Parameters
 
-- `red`: A red component value  .
-- `green`: A green component value  .
-- `blue`: A blue component value  .
-- `alpha`: An alpha value  .
+- `red`: A red component value `(0.0 - 1.0)`.
+- `green`: A green component value `(0.0 - 1.0)`.
+- `blue`: A blue component value `(0.0 - 1.0)`.
+- `alpha`: An alpha value `(0.0 - 1.0)`.
 
 ## See Also
 

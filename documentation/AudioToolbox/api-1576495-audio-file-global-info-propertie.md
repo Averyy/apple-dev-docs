@@ -6,7 +6,7 @@ Access these properties using the functions described in Working with Global Inf
 
 #### Overview
 
-A , in the context of one of these properties, is a pointer to a buffer containing data specific to the property. Each property description names the type of the data required. You provide the data when accessing these properties using the functions described in Working with Global Information.
+A *specifier*, in the context of one of these properties, is a pointer to a buffer containing data specific to the property. Each property description names the type of the data required. You provide the data when accessing these properties using the functions described in Working with Global Information.
 
 ## Topics
 

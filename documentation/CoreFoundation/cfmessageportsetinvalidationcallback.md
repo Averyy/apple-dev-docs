@@ -27,7 +27,7 @@ If `ms` is already invalid, `callout` is invoked immediately.
 ## Parameters
 
 - `ms`: The message port to examine.
-- `callout`: The callback function to invoke when   is invalidated. Pass   to remove a callback.
+- `callout`: The callback function to invoke when `ms` is invalidated. Pass `NULL` to remove a callback.
 
 ## See Also
 

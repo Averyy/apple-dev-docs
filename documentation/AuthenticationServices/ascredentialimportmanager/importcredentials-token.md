@@ -30,7 +30,7 @@ This method throws an error if the import can’t proceed, which happens if the 
 
 ## Parameters
 
-- `token`: The UUID token that the system provided in the   when launching the app.
+- `token`: The UUID token that the system provided in the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) when launching the app.
 
 ## See Also
 

@@ -22,10 +22,10 @@ An array of [`NSTextCheckingResult`](https://developer.apple.com/documentation/F
 
 - `stringToCheck`: The string to check.
 - `range`: The range of the string to check.
-- `checkingTypes`: The type of checking to be performed. The possible constants are listed in   and can be combined using the C bit-wise   operator to perform multiple checks at the same time.
-- `options`: The options dictionary specifying the types of checking to perform. See   for the possible keys and expected values.
+- `checkingTypes`: The type of checking to be performed. The possible constants are listed in [`NSTextCheckingResult.CheckingType`](https://developer.apple.com/documentation/Foundation/NSTextCheckingResult/CheckingType) and can be combined using the C bit-wise `OR` operator to perform multiple checks at the same time.
+- `options`: The options dictionary specifying the types of checking to perform. See `Spell Checking Option Dictionary Keys` for the possible keys and expected values.
 - `tag`: An identifier unique within the application used to inform the spell checker which document that text is associated, potentially for many purposes, not necessarily just for ignored words. A value of 0 can be passed in for text not associated with a particular document.
-- `orthography`: Returns by-reference, the orthography of the range of the string. See   for more information.
+- `orthography`: Returns by-reference, the orthography of the range of the string. See [`NSOrthography`](https://developer.apple.com/documentation/Foundation/NSOrthography) for more information.
 - `wordCount`: Returns by-reference, the word count for the range of the string.
 
 ## See Also

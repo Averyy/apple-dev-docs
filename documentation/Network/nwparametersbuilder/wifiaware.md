@@ -35,7 +35,7 @@ let connection = NetworkConnection(to: endpoint, using: .parameters {
 
 ## Parameters
 
-- `configurator`: The function that will apply the desired   to the network parameters.
+- `configurator`: The function that will apply the desired `WAParameters` to the network parameters.
 
 
 ---

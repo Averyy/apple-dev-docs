@@ -27,7 +27,7 @@ Returns nil when the input is not recognized as valid Base-64.
 ## Parameters
 
 - `base64Data`: Base-64, UTF-8 encoded input data.
-- `options`: Decoding options. Default value is  .
+- `options`: Decoding options. Default value is `[]`.
 
 
 ---

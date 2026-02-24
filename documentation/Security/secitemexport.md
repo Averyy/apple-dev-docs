@@ -24,11 +24,11 @@ This function works only with keys, certificates, and identities. An identity is
 
 ## Parameters
 
-- `secItemOrArray`: The keychain item or items to export. You can export only the following types of keychain items:  ,  , and  . If you are exporting exactly one item, you can specify a   object. Otherwise this parameter is a   object containing a number of items of type  .
-- `outputFormat`: The format of the desired external representation for the item. Set this parameter to   to use the default for that item type. Possible values for this parameter and default values are enumerated in  .
-- `flags`: A flag field indicating whether the exported item should have PEM armor. PEM armor refers to a way of expressing binary data as an ASCII string so that it can be transferred over text-only channels such as email. Set this flag to   if you want PEM armoring.
-- `keyParams`: A pointer to a structure containing a set of input parameters for the function. If no key items are being exported, these parameters are optional and you can set the   parameter to  . For more information, see  .
-- `exportedData`: On return, the variable referenced by this argument is overwritten with a   object containing the external representation of the keychain item or items. You are responsible for releasing this object by calling  .
+- `secItemOrArray`: The keychain item or items to export. You can export only the following types of keychain items: [`SecCertificate`](seccertificate.md), [`SecKey`](seckey.md), and [`SecIdentity`](secidentity.md). If you are exporting exactly one item, you can specify a [`SecKeychainItem`](seckeychainitem.md) object. Otherwise this parameter is a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) object containing a number of items of type [`SecKeychainItem`](seckeychainitem.md).
+- `outputFormat`: The format of the desired external representation for the item. Set this parameter to [`SecExternalFormat.formatUnknown`](secexternalformat/formatunknown.md) to use the default for that item type. Possible values for this parameter and default values are enumerated in [`SecExternalFormat`](secexternalformat.md).
+- `flags`: A flag field indicating whether the exported item should have PEM armor. PEM armor refers to a way of expressing binary data as an ASCII string so that it can be transferred over text-only channels such as email. Set this flag to [`pemArmour`](secitemimportexportflags/pemarmour.md) if you want PEM armoring.
+- `keyParams`: A pointer to a structure containing a set of input parameters for the function. If no key items are being exported, these parameters are optional and you can set the `keyParams` parameter to `NULL`. For more information, see [`SecItemImportExportKeyParameters`](secitemimportexportkeyparameters.md).
+- `exportedData`: On return, the variable referenced by this argument is overwritten with a [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) object containing the external representation of the keychain item or items. You are responsible for releasing this object by calling [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease).
 
 
 ---

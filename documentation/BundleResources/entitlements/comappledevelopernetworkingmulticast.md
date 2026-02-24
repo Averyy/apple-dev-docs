@@ -10,6 +10,10 @@ A Boolean value that indicates whether an app can send or receive IP multicast t
 - iPadOS 14.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Your app must have this entitlement to send or receive IP multicast or broadcast on iOS. It also allows your app to browse and advertise arbitrary Bonjour service types.

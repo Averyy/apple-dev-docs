@@ -22,8 +22,8 @@ When the associated device is completely stopped, the clock continues to advance
 
 ## Parameters
 
-- `allocator`: Allocator for the new clock; pass   or   to use the default allocator.
-- `deviceUID`: The unique ID of the device for which to create a clock. Pass   to create a clock that tracks the default device.
+- `allocator`: Allocator for the new clock; pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) or `NULL` to use the default allocator.
+- `deviceUID`: The unique ID of the device for which to create a clock. Pass `NULL` to create a clock that tracks the default device.
 - `clockOut`: Upon return, a pointer to the newly created clock.
 
 ## See Also

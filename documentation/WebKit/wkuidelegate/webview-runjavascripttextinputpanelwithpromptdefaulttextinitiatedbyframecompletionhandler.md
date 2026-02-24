@@ -28,7 +28,7 @@ For user security, implementations of this method should call attention to the f
 - `prompt`: The message to be displayed.
 - `defaultText`: The initial text to display in the text entry field.
 - `frame`: Information about the frame whose JavaScript process initiated this call.
-- `completionHandler`: The completion handler to call after the text input panel has been dismissed. Pass the entered text if the user chose OK, otherwise  .
+- `completionHandler`: The completion handler to call after the text input panel has been dismissed. Pass the entered text if the user chose OK, otherwise `nil`.
 
 ## See Also
 

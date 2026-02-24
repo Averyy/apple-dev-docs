@@ -21,7 +21,7 @@ An array of reference images loaded from the group you specify.
 ## Parameters
 
 - `groupName`: The name of the group of assets in an asset catalog.
-- `bundle`: The bundle that contains the image assets. If  , this method loads reference images from the main bundle.
+- `bundle`: The bundle that contains the image assets. If `nil`, this method loads reference images from the main bundle.
 
 ## See Also
 

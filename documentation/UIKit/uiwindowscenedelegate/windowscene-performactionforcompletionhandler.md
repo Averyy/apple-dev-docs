@@ -24,8 +24,8 @@ When the user selects one of your app’s shortcut items, use this method to per
 ## Parameters
 
 - `windowScene`: The window scene object receiving the shortcut item.
-- `shortcutItem`: The action selected by the user. Your app defines the actions that it supports, and the user chooses from among those actions. For information about how to create and configure shortcut items for your app, see  .
-- `completionHandler`: A handler block to call after you complete the action. This block has no return value and takes the following parameter:
+- `shortcutItem`: The action selected by the user. Your app defines the actions that it supports, and the user chooses from among those actions. For information about how to create and configure shortcut items for your app, see [`UIApplicationShortcutItem`](uiapplicationshortcutitem.md).
+- `completionHandler`: A handler block to call after you complete the action. This block has no return value and takes the following parameter: - **succeeded**: A Boolean value indicating whether you successfully completed the specified action. Specify [`true`](https://developer.apple.com/documentation/Swift/true) if you completed the action or [`false`](https://developer.apple.com/documentation/Swift/false) if you didn’t.
 
 ## See Also
 

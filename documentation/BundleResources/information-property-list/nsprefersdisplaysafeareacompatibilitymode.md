@@ -8,6 +8,10 @@ A Boolean value that indicates whether the app prefers to run in compatibility m
 **Availability**:
 - macOS 12.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 On Mac computers that include a camera housing in the screen bezel, the system provides a compatibility mode to prevent apps from unintentionally putting content in the region the housing occupies. When this mode is active, the system changes the active area of the display to avoid the camera housing. The new active area ensures your app’s contents are always visible and not obscured by the camera housing. The system activates this compatibility mode when an app that requires it places a window behind the camera housing in the current desktop or full-screen space.

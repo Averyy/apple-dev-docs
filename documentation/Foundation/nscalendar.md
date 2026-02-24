@@ -26,13 +26,13 @@ In Swift, this object bridges to [`Calendar`](calendar.md); use [`NSCalendar`](n
 
 [`NSCalendar`](nscalendar.md) objects encapsulate information about systems of reckoning time in which the beginning, length, and divisions of a year are defined. They provide information about the calendar and support for calendrical computations such as determining the range of a given calendrical unit and adding units to a given absolute time.
 
-[`NSCalendar`](nscalendar.md) is  with its Core Foundation counterpart, [`CFCalendar`](https://developer.apple.com/documentation/CoreFoundation/CFCalendar). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
+[`NSCalendar`](nscalendar.md) is *toll-free bridged* with its Core Foundation counterpart, [`CFCalendar`](https://developer.apple.com/documentation/CoreFoundation/CFCalendar). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Calendar`](calendar.md) structure, which bridges to the [`NSCalendar`](nscalendar.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
 
 ##### Locales and Calendars
 
-Most locales use the most widely used civil calendar, called the  ([`gregorian`](nscalendar/identifier/gregorian.md)), but there remain exceptions to this trend. For example:
+Most locales use the most widely used civil calendar, called the *Gregorian calendar* ([`gregorian`](nscalendar/identifier/gregorian.md)), but there remain exceptions to this trend. For example:
 
 - In Saudi Arabia, some locales use primarily the Islamic Umm al-Qura calendar ([`islamicUmmAlQura`](nscalendar/identifier/islamicummalqura.md)).
 - In Ethiopia, some locales use primarily the Ethiopian calendar ([`ethiopicAmeteMihret`](nscalendar/identifier/ethiopicametemihret.md) or [`ethiopicAmeteAlem`](nscalendar/identifier/ethiopicametealem.md)).
@@ -56,7 +56,7 @@ To transition from the Julian calendar to the Gregorian calendar, 10 days were d
 
 After the Gregorian calendar was introduced, many regions continued to use the Julian calendar, with Turkey being the last country or region to adopt the Gregorian calendar, in 1926. As a result of the staggered adoption, the transition period for regions at the time of adoption have different start dates and a different number of skipped days to account for the additional disparity from leap day calculations.
 
-[`NSCalendar`](nscalendar.md) models the behavior of a  Gregorian calendar (), which extends the Gregorian calendar backward in time from the date of its introduction. This behavior should be taken into account when working with dates created before the transition period of the affected locales.
+[`NSCalendar`](nscalendar.md) models the behavior of a *proleptic* Gregorian calendar (*as defined by ISO 8601:2004*), which extends the Gregorian calendar backward in time from the date of its introduction. This behavior should be taken into account when working with dates created before the transition period of the affected locales.
 
 ##### Calendar Arithmetic
 

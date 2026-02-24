@@ -23,6 +23,45 @@ class UISceneSizeRestrictions
 
 Don’t create a [`UISceneSizeRestrictions`](uiscenesizerestrictions.md) object yourself. Instead, fetch an existing one from the [`sizeRestrictions`](uiwindowscene/sizerestrictions.md) property of your window scene, and modify its properties to set the minimum and maximum window sizes:
 
+**Swift**:
+
+```swift
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+
+    func scene(_ scene: UIScene,
+               willConnectTo session: UISceneSession,
+               options connectionOptions: UIScene.ConnectionOptions) {
+
+        guard let windowScene = scene as? UIWindowScene else { return }
+        windowScene.sizeRestrictions?.minimumSize.width = 500.0
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+@interface SceneDelegate ()
+
+@end
+
+@implementation SceneDelegate
+
+- (void)scene:(UIScene *)scene
+willConnectToSession:(UISceneSession *)session
+      options:(UISceneConnectionOptions *)connectionOptions {
+
+    UIWindowScene *windowScene = (UIWindowScene *)scene;
+    if (![windowScene isKindOfClass:[UIWindowScene class]]) { return; }
+
+    CGSize minimumSize = windowScene.sizeRestrictions.minimumSize;
+    minimumSize.width = 500.0;
+    windowScene.sizeRestrictions.minimumSize = minimumSize;
+}
+
+@end
+```
+
 The system provides this object only when it supports variable-sized windows.
 
 ## Topics

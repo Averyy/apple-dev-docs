@@ -27,7 +27,7 @@ This function returns a run loop source that the caller should schedule. Once ex
 
 ## Parameters
 
-- `proxyAutoConfigurationScript`: A   containing the code of the autoconfiguration script to be executed.
+- `proxyAutoConfigurationScript`: A `CFString` containing the code of the autoconfiguration script to be executed.
 - `targetURL`: The URL that your application intends to eventually download using the proxies.
 - `cb`: A callback to be called when execution of the script is finished.
 - `clientContext`: A stream context containing a client info object and optionally retain and release callbacks for that object.

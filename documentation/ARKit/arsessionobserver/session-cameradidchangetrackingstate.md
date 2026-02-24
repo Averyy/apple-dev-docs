@@ -23,7 +23,7 @@ ARKit tracks the position and orientation of the device relative to a virtual sc
 ## Parameters
 
 - `session`: The session providing information.
-- `camera`: The camera whose tracking parameters have changed. (Equivalent to  . .)
+- `camera`: The camera whose tracking parameters have changed. (Equivalent to [`currentFrame`](arsession/currentframe.md).[`camera`](arframe/camera.md).)
 
 ## See Also
 

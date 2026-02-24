@@ -26,9 +26,9 @@ func getTransformRamp(for time: CMTime, start startTransform: UnsafeMutablePoint
 ## Parameters
 
 - `time`: If a ramp with a time range that contains the specified time has been set, information about the effective ramp for that time is supplied. Otherwise, information about the first ramp that starts after the specified time is supplied.
-- `startTransform`: This value may be  .
-- `endTransform`: This value may be  .
-- `timeRange`: This value may be  .
+- `startTransform`: A pointer to a float to receive the starting transform value for the transform ramp. This value may be `NULL`.
+- `endTransform`: A pointer to a float to receive the ending transform value for the transform ramp. This value may be `NULL`.
+- `timeRange`: A pointer to a `CMTimeRange` to receive the time range of the transform ramp. This value may be `NULL`.
 
 ## See Also
 

@@ -36,7 +36,7 @@ MLTensor([1, 2, 3]).cumulativeSum() = [1, 1 + 2, 1 + 2 + 3]
 
 ## Parameters
 
-- `axis`: The axis along which to perform the cumulative sum. The default value is  . Must be in the range    and have a rank greater than zero.
+- `axis`: The axis along which to perform the cumulative sum. The default value is `0`. Must be in the range `[-rank, rank)` and have a rank greater than zero.
 
 ## See Also
 

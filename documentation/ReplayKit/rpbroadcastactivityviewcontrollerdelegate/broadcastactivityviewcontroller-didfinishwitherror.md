@@ -26,8 +26,8 @@ When this method is called after a broadcast has been set up successfully, retai
 ## Parameters
 
 - `broadcastActivityViewController`: The broadcast activity view controller to be dismissed.
-- `broadcastController`: Optional. The   instance used to start and stop broadcasts to a selected service.  When the user cancels service setup, this parameter is nil.
-- `error`: An   error. When a connection to a broadcast service has been set up successfully and the app is ready to broadcast, this parameter is  .
+- `broadcastController`: Optional. The [`RPBroadcastController`](rpbroadcastcontroller.md) instance used to start and stop broadcasts to a selected service.  When the user cancels service setup, this parameter is nil.
+- `error`: An [`RPRecordingErrorDomain`](rprecordingerrordomain.md) error. When a connection to a broadcast service has been set up successfully and the app is ready to broadcast, this parameter is `nil`.
 
 
 ---

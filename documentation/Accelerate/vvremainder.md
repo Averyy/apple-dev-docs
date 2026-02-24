@@ -24,7 +24,39 @@ func vvremainder(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: U
 
 ##### Parameters
 
+- **parameter 1**: The output array, *z*.
+- **parameter 2**: The numerators input array, *y*.
+- **parameter 3**: The denominators input array, *x*.
+- **parameter 4**: The number of elements in the arrays.
+
 The following code shows an example of using [`vvremainder(_:_:_:_:)`](vvremainder(_:_:_:_:).md):
+
+**Swift**:
+
+```swift
+var x: [Double] = [7, 4, 3, 4]
+var y: [Double] = [2, 5, 10, 30]
+var z = [Double](repeating: 0, count: x.count)
+var n = Int32(x.count)
+ 
+vvremainder(&z, &y, &x, &n)
+ 
+print(z) // [2.0, 1.0, 1.0, -2.0]
+```
+
+**Objective-C**:
+
+```objc
+double x[] = {7, 4, 3, 4};
+double y[] = {2, 5, 10, 30};
+double z[4];
+int n = 4;
+ 
+vvremainder(z, y, x, &n);
+ 
+NSLog(@"z: [%lf, %lf, %lf, %lf]", z[0], z[1], z[2], z[3]);
+
+```
 
 ## See Also
 

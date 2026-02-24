@@ -31,9 +31,9 @@ The first step when working with RAW images in Core Image is to process the imag
 
 ## Parameters
 
-- `pixelBuffer`: 
+- `pixelBuffer`: CVPixelBufferRef with one of the following RAW pixel format types: [`kCVPixelFormatType_14Bayer_GRBG`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_14Bayer_GRBG) [`kCVPixelFormatType_14Bayer_RGGB`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_14Bayer_RGGB) [`kCVPixelFormatType_14Bayer_BGGR`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_14Bayer_BGGR) [`kCVPixelFormatType_14Bayer_GBRG`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_14Bayer_GBRG)
 - `properties`: A properties dictionary. Defines the properties of the pixel buffer.
-- `options`: An options dictionary.  You can pass any of the keys defined in  .
+- `options`: An options dictionary.  You can pass any of the keys defined in [`RAW Image Options`](raw-image-options.md).
 
 ## See Also
 

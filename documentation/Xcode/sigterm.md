@@ -8,7 +8,7 @@ A software termination signal terminated the process.
 
 This signal is often sent shortly before `SIGKILL`, to give the process an opportunity to terminate cleanly. The user can also send this signal using the `kill` command in Terminal, if no specific signal is specified.
 
-For more information about how the system stops apps and services, see [`The Life Cycle of a Daemon`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/Lifecycle.html) in .
+For more information about how the system stops apps and services, see [`The Life Cycle of a Daemon`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/Lifecycle.html) in *Daemons and Services Programming Guide*.
 
 ## See Also
 

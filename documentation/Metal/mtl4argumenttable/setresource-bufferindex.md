@@ -26,8 +26,8 @@ func setResource(_ resourceID: MTLResourceID, bufferIndex bindingIndex: Int)
 
 ## Parameters
 
-- `resourceID`: The   of the Metal resource to bind.
-- `bindingIndex`: A valid binding index in the buffer binding range.   It is an error for this value to match or exceed the value of property    on the descriptor   from which you created this argument table.
+- `resourceID`: The [`MTLResourceID`](mtlresourceid.md) of the Metal resource to bind.
+- `bindingIndex`: A valid binding index in the buffer binding range. It is an error for this value to match or exceed the value of property [`maxBufferBindCount`](mtl4argumenttabledescriptor/maxbufferbindcount.md) on the descriptor from which you created this argument table.
 
 
 ---

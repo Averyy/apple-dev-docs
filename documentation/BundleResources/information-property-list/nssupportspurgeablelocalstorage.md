@@ -10,6 +10,10 @@ A Boolean value indicating whether the app continues working if the system purge
 - iPadOS 9.3+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [APFiles](information-property-list/apfiles.md)

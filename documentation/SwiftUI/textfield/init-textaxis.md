@@ -29,9 +29,9 @@ Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an actio
 
 ## Parameters
 
-- `titleKey`: The key for the localized title of the text field,   describing its purpose.
+- `titleKey`: The key for the localized title of the text field, describing its purpose.
 - `text`: The text to display and edit.
-- `axis`: The axis in which to scroll text when it doesn’t fit   in the available space.
+- `axis`: The axis in which to scroll text when it doesn’t fit in the available space.
 
 ## See Also
 

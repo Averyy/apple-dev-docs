@@ -16,6 +16,11 @@ Both iOS and macOS handle a special URL based on the industry standard [`otpauth
 
 The host portion of the URL must be `totp`, and the path should be the proper name of your service, followed by a colon and the user name or email of the account. The `otpauth:` specification defines a number of query parameters. The following are the most important:
 
+- **secret**: An arbitrary key value encoded in Base32. Secrets should be at least 160 bits.
+- **digits**: The length of a one-time passcode. The value is either 6 or 8. The default is 6.
+- **period**: The number of seconds that a verification code is valid for. The default value is 30.
+- **issuer**: The domain of the site or app. The password manager uses this field to suggest credentials when setting up a new code generator.
+
 Here’s an example of the URL for an app called Example for the user meichen3@icloud.com:
 
 `apple-otpauth://totp/Example:meichen3@icloud.com?secret=HAZDGMBWGE4DOMZYGEYTOMJTG43TMOJRGE4DANJQGE3DGOBRGI4TOOJZGEYTENJTGIYTEMJRHEZDA&digits=6&period=30&issuer=example.com`

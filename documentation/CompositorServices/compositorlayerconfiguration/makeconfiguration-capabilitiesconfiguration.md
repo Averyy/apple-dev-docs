@@ -27,8 +27,8 @@ In your implementation of this method, modify the `configuration` parameter to s
 
 ## Parameters
 
-- `capabilities`: The supported capabilities of the current device.   Use these values to validate any choices you apply to the   parameter.
-- `configuration`: The default set of configuration options.   Modify this type to specify the options you want to use during rendering.
+- `capabilities`: The supported capabilities of the current device. Use these values to validate any choices you apply to the `configuration` parameter.
+- `configuration`: The default set of configuration options. Modify this type to specify the options you want to use during rendering.
 
 
 ---

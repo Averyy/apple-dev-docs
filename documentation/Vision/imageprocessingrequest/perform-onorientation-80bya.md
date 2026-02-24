@@ -25,8 +25,8 @@ The observation — or list of observations — the request produces.
 
 ## Parameters
 
-- `url`: The input   on which to perform the request.
-- `orientation`: The orientation of the input image. Default is  .
+- `url`: The input [`URL`](https://developer.apple.com/documentation/Foundation/URL) on which to perform the request.
+- `orientation`: The orientation of the input image. Default is `nil`.
 
 ## See Also
 

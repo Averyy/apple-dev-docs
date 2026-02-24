@@ -202,7 +202,7 @@ To verify a participant, use the [`SWPerson.Identity`](https://developer.apple.c
 
 When the system sends a collaboration message for a participant, it actually sends individual messages to each device for that participant. The Messages app identifies each device using a cryptographic public key. Because the goal is to allow access only on this participant’s set of devices, the system derives the root hash from the set of public keys registered to each recipient.
 
-The root hash is the root node of a data structure called a . A Merkle tree is a binary tree that the system builds by performing a sequence of hashing operations. To derive an identity for the participant based on their public keys, the system uses the keys as the  of this tree. The hashing algorithm that the system uses in the Merkle tree ensures that the system can only compute the root node from that set of keys.
+The root hash is the root node of a data structure called a *Merkle tree*. A Merkle tree is a binary tree that the system builds by performing a sequence of hashing operations. To derive an identity for the participant based on their public keys, the system uses the keys as the *leaves* of this tree. The hashing algorithm that the system uses in the Merkle tree ensures that the system can only compute the root node from that set of keys.
 
 In the example below, the user has three devices and three public keys. The keys are unique for each collaboration identifier that your app provides, using a process called key diversification. To prevent tracking the number of devices registered to a user, the system pads the set with random keys up to a fixed size. Your server hashes the padded set of diversified keys to create the leaf nodes of the tree with a SHA-256 algorithm.
 

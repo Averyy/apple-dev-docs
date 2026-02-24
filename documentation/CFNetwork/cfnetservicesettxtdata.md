@@ -33,7 +33,7 @@ This function is thread safe.
 
 ## Parameters
 
-- `theService`: CFNetServiceRef for which a TXT record is to be set; cannot be  .
+- `theService`: CFNetServiceRef for which a TXT record is to be set; cannot be `NULL`.
 - `txtRecord`: Contents of the TXT record that is to be set. The contents must not exceed 1450 bytes.
 
 ## See Also

@@ -16,13 +16,290 @@ SwiftUI, UIKit, and AppKit use different underlying implementations for animatio
 
 To create a SwiftUI animation in UIKit or AppKit, import SwiftUI and create a SwiftUI [`Animation`](animation.md). Then, pass that animation as a parameter into the [`animate(_:changes:completion:)`](https://developer.apple.com/documentation/UIKit/UIView/animate(_:changes:completion:)) class method on `UIView`, or the [`animate(_:changes:completion:)`](https://developer.apple.com/documentation/AppKit/NSAnimationContext/animate(_:changes:completion:)) class method on `NSAnimationContext`. The following examples compare how you can create a basic spring animation using a SwiftUI [`Animation`](animation.md) type across SwiftUI, UIKit, and AppKit.
 
+**SwiftUI**:
+
+```swift
+struct ContentView: View {
+    @State private var position = CGPoint(x: 200, y: 200)
+    @State private var frame = CGSize(width: 100, height: 100)
+    
+    var body: some View {
+        Rectangle()
+            .fill(Color.blue)
+            .frame(width: frame.width, height: frame.height)
+            .position(position)
+        Button("Animate") {
+            // Use a spring animation to animate the view to a new location.
+            let animation = Animation.spring(duration: 0.8)
+            withAnimation(animation) {
+                position = CGPoint(x: 100, y: 100)
+            }
+        }
+    }
+}
+```
+
+**UIKit**:
+
+```swift
+import SwiftUI
+
+let position = CGPoint(x: 200, y: 200)
+let frame = CGSize(width: 100, height: 100)
+let buttonPosition = CGPoint(x: 200, y: 400)
+let buttonFrame = CGSize(width: 100, height: 100)
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+            
+    let myView = UIView(frame: CGRect(origin: position, size: frame))
+    myView.backgroundColor = .systemBlue
+    
+    let myButton = UIButton(primaryAction: UIAction(title: "Animate") { _ in
+        // Use a spring animation to animate the view to a new location.
+        let animation = SwiftUI.Animation.spring(duration: 0.8)
+        UIView.animate(animation) {
+            myView.center = CGPoint(x: 100, y: 100)
+        }
+    })
+    myButton.frame = CGRect(origin: buttonPosition, size: buttonFrame)
+    
+    view.addSubview(myView)
+    view.addSubview(myButton)
+}
+```
+
+**AppKit**:
+
+```swift
+import SwiftUI
+
+let myView = NSView(frame: CGRect(origin: CGPoint(x: 50, y: 50), 
+                                  size: CGSize(width: 50, height: 50)))
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    let myButton = NSButton(title: "Animate", target: self, action: #selector(animateView))
+    view.addSubview(myButton)
+
+    myView.wantsLayer = true
+    myView.layer?.backgroundColor = NSColor.blue.cgColor
+    view.addSubview(myView)
+}
+
+@objc
+func animateView() {
+    // Use a spring animation to change the size of the view.
+    let animation = SwiftUI.Animation.spring(duration: 0.8)
+    NSAnimationContext.animate(animation) {
+        myView.frame.size = CGSize(width: 100, height: 100)
+    }
+}
+```
+
 ##### Use Completion Handlers with Swiftui Animations
 
 You can provide an optional completion handler to these animation methods, which the system calls automatically after the animations complete. The following examples show a completion handler that changes the background color of the view to indicate when the animation completes.
 
+**SwiftUI**:
+
+```swift
+struct ContentView: View {
+    @State private var color = Color.blue
+    @State private var position = CGPoint(x: 200, y: 200)
+    @State private var frame = CGSize(width: 100, height: 100)
+    
+    var body: some View {
+        Rectangle()
+            .fill(color)
+            .frame(width: frame.width, height: frame.height)
+            .position(position)
+        Button("Animate") {
+            // Use a smooth spring animation to animate the view to a new location.
+            withAnimation(.smooth) {
+                position = CGPoint(x: 100, y: 100)
+            } completion: {
+                // When the animation completes, change the color of the view.
+                color = Color.red
+            }
+        }
+    }
+}
+```
+
+**UIKit**:
+
+```swift
+import SwiftUI
+
+let position = CGPoint(x: 200, y: 200)
+let frame = CGSize(width: 100, height: 100)
+let buttonPosition = CGPoint(x: 200, y: 400)
+let buttonFrame = CGSize(width: 100, height: 100)
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+        
+    let myView = UIView(frame: CGRect(origin: position, size: frame))
+    myView.backgroundColor = .systemBlue
+
+    let myButton = UIButton(primaryAction: UIAction(title: "Animate") { _ in
+        // Use a smooth spring animation to animate the view to a new location.
+        UIView.animate(.smooth) {
+            myView.center = CGPoint(x: 100, y: 100)
+        } completion: {
+            // When the animation completes, change the color of the view.
+            myView.backgroundColor = .systemRed
+        }
+    })
+    myButton.frame = CGRect(origin: buttonPosition, size: buttonFrame)
+
+    view.addSubview(myView)
+    view.addSubview(myButton)
+}
+```
+
+**AppKit**:
+
+```swift
+import SwiftUI
+
+let myView = NSView(frame: CGRect(origin: CGPoint(x: 50, y: 50), 
+                                  size: CGSize(width: 50, height: 50)))
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    let myButton = NSButton(title: "Animate", target: self, action: #selector(animateView))
+    view.addSubview(myButton)
+
+    myView.wantsLayer = true
+    myView.layer?.backgroundColor = NSColor.blue.cgColor
+    view.addSubview(myView)
+}
+
+@objc
+func animateView() {
+    // Use a smooth spring animation to change the size of the view.
+    NSAnimationContext.animate(.smooth) {
+        self.myView.frame.size = CGSize(width: 100, height: 100)
+    } completion: {
+        // When the animation completes, change the color of the view.
+        self.myView.layer?.backgroundColor = NSColor.red.cgColor
+    }
+}
+```
+
 ##### Retarget a Swiftui Animation
 
 Similar to animations in SwiftUI views, you can smoothly retarget the animations you perform using the [`animate(_:changes:completion:)`](https://developer.apple.com/documentation/UIKit/UIView/animate(_:changes:completion:)) class method on `UIView` or the [`animate(_:changes:completion:)`](https://developer.apple.com/documentation/AppKit/NSAnimationContext/animate(_:changes:completion:)) class method on `NSAnimationContext`. Retargeting a SwiftUI animation uses the velocity from the previous animations to carry the animation forward with continuous velocity, creating a fluid animation experience. The following examples show retargeting an in-progress animation.
+
+**SwiftUI**:
+
+```swift
+struct ContentView: View {
+    @State private var position = CGPoint(x: 200, y: 200)
+    @State private var frame = CGSize(width: 100, height: 100)
+    
+    var body: some View {
+        Rectangle()
+            .fill(Color.blue)
+            .frame(width: frame.width, height: frame.height)
+            .position(position)
+        Button("Animate") {
+            Task {
+                // Begin an animation to move the view to a new location.
+                withAnimation(.spring(duration: 1.0)) {
+                    position = .zero
+                }
+                
+                try await Task.sleep(for: .seconds(0.5))
+
+                // Retarget the running animation to move the view to a different location.
+                withAnimation(.spring) {
+                    position = CGPoint(x: 100, y: 400)
+                }
+            }
+        }
+    }
+}
+```
+
+**UIKit**:
+
+```swift
+import SwiftUI
+
+let position = CGPoint(x: 200, y: 200)
+let frame = CGSize(width: 100, height: 100)
+let buttonPosition = CGPoint(x: 200, y: 400)
+let buttonFrame = CGSize(width: 100, height: 100)
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    let myView = UIView(frame: CGRect(origin: position, size: frame))
+    myView.backgroundColor = .systemBlue
+    
+    let myButton = UIButton(primaryAction: UIAction(title: "Animate") { _ in
+        Task { 
+            // Begin an animation to move the view to a new location.
+            UIView.animate(.spring(duration: 1.0)) {
+                myView.center = CGPoint(x: 200, y: 200)
+            }
+            
+            try await Task.sleep(for: .seconds(0.5))
+            
+            // Retarget the running animation to move the view to a different location.
+            UIView.animate(.spring) {
+                myView.center = CGPoint(x: 100, y: 400)
+            }
+        }
+    })
+    myButton.frame = CGRect(origin: buttonPosition, size: buttonFrame)
+    
+    view.addSubview(myView)
+    view.addSubview(myButton)
+}
+```
+
+**AppKit**:
+
+```swift
+import SwiftUI
+
+let myView = NSView(frame: CGRect(origin: CGPoint(x: 50, y: 50), 
+                                  size: CGSize(width: 50, height: 50)))
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    let myButton = NSButton(title: "Animate", target: self, action: #selector(animateView))
+    view.addSubview(myButton)
+
+    myView.wantsLayer = true
+    myView.layer?.backgroundColor = NSColor.blue.cgColor
+    view.addSubview(myView)
+}
+
+@objc
+func animateView() {
+    Task {
+        // Begin an animation to change the size of the view.
+        NSAnimationContext.animate(.spring(duration: 1)) {
+            myView.frame.size = CGSize(width: 100, height: 100)
+        }
+
+        try await Task.sleep(for: .seconds(0.5))
+
+        // Retarget the running animation to change the view to a different size.
+        NSAnimationContext.animate(.spring) {
+            myView.frame.size = CGSize(width: 75, height: 75)
+        }
+    }
+}
+```
 
 ##### Troubleshoot Animations
 

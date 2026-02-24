@@ -25,7 +25,7 @@ The returned `NSSize` values are always forced to have positive a width and heig
 ## Parameters
 
 - `size`: The size (width and height) in the view’s coordinate system.
-- `view`: The view that’s the target of the conversion operation. Both   and the view must belong to the same   object, and that window must not be  . If   is  , this method converts to window coordinates instead.
+- `view`: The view that’s the target of the conversion operation. Both `view` and the view must belong to the same [`NSWindow`](nswindow.md) object, and that window must not be `nil`. If `view` is `nil`, this method converts to window coordinates instead.
 
 ## See Also
 

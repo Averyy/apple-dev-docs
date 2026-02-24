@@ -14,6 +14,10 @@ A dictionary that contains the configuration to install an enterprise app.
 object InstallEnterpriseApplicationCommand.Command.Configuration
 ```
 
+## Properties
+
+- `ANY` (any): An app configuration.
+
 ## See Also
 
 - [object InstallEnterpriseApplicationCommand.Command.Manifest](installenterpriseapplicationcommand/command-data.dictionary/manifest-data.dictionary.md)

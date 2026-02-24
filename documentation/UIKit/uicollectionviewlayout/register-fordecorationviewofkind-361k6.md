@@ -29,7 +29,7 @@ If you previously registered a class or nib file with the same kind string, the 
 ## Parameters
 
 - `viewClass`: The class to use for the supplementary view.
-- `elementKind`: The element kind of the decoration view. You can use this string to distinguish between decoration views with different purposes in the layout. This parameter must not be   and must not be an empty string.
+- `elementKind`: The element kind of the decoration view. You can use this string to distinguish between decoration views with different purposes in the layout. This parameter must not be `nil` and must not be an empty string.
 
 ## See Also
 

@@ -22,7 +22,7 @@ class MLFeatureValue
 
 #### Overview
 
-A Core ML  wraps an underlying value and bundles it with that value’s type, which is one of the types that [`MLFeatureType`](mlfeaturetype.md) defines. Apps typically access feature values indirectly by using the methods in the wrapper class Xcode automatically generates for Core ML model files.
+A Core ML *feature value* wraps an underlying value and bundles it with that value’s type, which is one of the types that [`MLFeatureType`](mlfeaturetype.md) defines. Apps typically access feature values indirectly by using the methods in the wrapper class Xcode automatically generates for Core ML model files.
 
 If your app accesses an [`MLModel`](mlmodel.md) directly, it must create and consume [`MLFeatureProvider`](mlfeatureprovider.md) instances. For each prediction, Core ML accepts a feature provider for its inputs, and generates a separate feature provider for its outputs. The input feature provider contains one `MLFeatureValue` instance per input, and the output feature provider contains one per output. See [`MLFeatureDescription`](mlfeaturedescription.md) for more information about the model input and output features.
 

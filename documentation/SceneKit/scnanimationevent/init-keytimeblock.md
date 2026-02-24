@@ -30,7 +30,7 @@ The `time` parameter is relative to the duration of the animation the event is a
 
 ## Parameters
 
-- `time`: A number between   and   specifying the relative time for triggering the event.
+- `time`: A number between `0.0` and `1.0` specifying the relative time for triggering the event.
 - `eventBlock`: A block to call at the specified time.
 
 

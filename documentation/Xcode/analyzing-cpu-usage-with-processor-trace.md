@@ -6,7 +6,7 @@ Identify code where your app uses the CPU inefficiently.
 
 #### Overview
 
-Recent Apple silicon devices can capture a  where the CPU stores information about the code it runs, including the branches it takes and the instructions it jumps to. The CPU streams this information to an area on the file system so that you can analyze it with the Processor Trace instrument. A processor trace captures information about all running threads with very little runtime overhead. Your device is typically less than 1% slower than when it isn’t recording a processor trace.
+Recent Apple silicon devices can capture a *processor trace* where the CPU stores information about the code it runs, including the branches it takes and the instructions it jumps to. The CPU streams this information to an area on the file system so that you can analyze it with the Processor Trace instrument. A processor trace captures information about all running threads with very little runtime overhead. Your device is typically less than 1% slower than when it isn’t recording a processor trace.
 
 > **Note**:  When you profile your app using Instruments, the system performs other tracing activities, so you may see total runtime overhead that’s greater than 1%.
 
@@ -24,7 +24,7 @@ You can record a processor trace with the following hardware:
 
 Record the trace in iOS 18.4 or later, iPadOS 18.4 or later, or macOS 15.4 or later.
 
-You can use Instruments on any Mac to analyze a saved processor trace file, including those that don’t support  processor traces.
+You can use Instruments on any Mac to analyze a saved processor trace file, including those that don’t support *recording* processor traces.
 
 #### Record a Processor Trace
 
@@ -53,6 +53,10 @@ To supply the debugging symbols for your app, follow these steps in Instruments:
 #### Analyze Processor Usage
 
 In the Instruments timeline view, the Target view in the Processor Trace track displays three histograms:
+
+- **Average IPC**: The mean number of instructions that the processor completes per clock cycle while running code in the process that Instruments traces. Slower instructions, such as fetches from a memory location that isn’t in the processor’s cache, and atomic updates to variables, require more cycles to complete each instruction.
+- **Total Instructions**: The number of instructions that the processor completes while running code in the process that Instruments traces.
+- **Total Cycles**: The number of cycles the processor completes while running code in the process that Instruments traces.
 
 To focus on a region you’re interested in, click in the Processor Trace track in the timeline at one end of the region, and drag to the other end of the region. The detail view below the timeline shows one of three views, which you choose using the Call Tree pop-up button at the top left of the detail view.
 
@@ -86,11 +90,11 @@ In the Function Calls view, Control-click a function’s Duration value and choo
 
 #### Charge Prune and Flatten Function Profiles
 
-You can charge functions to hide library code from the profile, while continuing to factor the time the processor spends running the library code into your analysis. When you charge a function to its callers, the system adds any instructions and cycles the CPU runs in that function, and in functions it calls, to the instruction and cycle counts for the calling functions. Control-click a symbol name and choose Charge “[]” to Callers to remove calls to that function, as well as functions that it calls, from the view, and to include their profile information in the reported statistics for their callers. You can also charge all the functions in a particular library to their callers by Control-clicking the symbol name of a function from that library and choosing Charge “[]” to Callers.
+You can charge functions to hide library code from the profile, while continuing to factor the time the processor spends running the library code into your analysis. When you charge a function to its callers, the system adds any instructions and cycles the CPU runs in that function, and in functions it calls, to the instruction and cycle counts for the calling functions. Control-click a symbol name and choose Charge “[*Function name*]” to Callers to remove calls to that function, as well as functions that it calls, from the view, and to include their profile information in the reported statistics for their callers. You can also charge all the functions in a particular library to their callers by Control-clicking the symbol name of a function from that library and choosing Charge “[*Library name*]” to Callers.
 
-You can prune functions to hide uninteresting or irrelevant code so that you can focus on the code you want to profile. In the Profile view, Control-click a symbol name and choose Prune “[]” to remove calls to that function, as well as functions that it calls, from the view.
+You can prune functions to hide uninteresting or irrelevant code so that you can focus on the code you want to profile. In the Profile view, Control-click a symbol name and choose Prune “[*Function name*]” to remove calls to that function, as well as functions that it calls, from the view.
 
-You can flatten library calls to boundary frames to hide internal details of libraries from the profile, without removing the library code from your analysis. Control-click a symbol name and choose Flatten “[]” to Boundary Frames to show only those functions in that library where functions in other libraries call them, and they call functions that are in other libraries.
+You can flatten library calls to boundary frames to hide internal details of libraries from the profile, without removing the library code from your analysis. Control-click a symbol name and choose Flatten “[*Library name*]” to Boundary Frames to show only those functions in that library where functions in other libraries call them, and they call functions that are in other libraries.
 
 Review and change your choices by clicking the Charge, Prune, Flatten button at the bottom of the detail view.
 

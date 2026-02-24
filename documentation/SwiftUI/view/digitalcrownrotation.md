@@ -35,7 +35,7 @@ struct DigitalCrown: View {
 
 ## Parameters
 
-- `binding`: A binding to a value that updates as the user   rotates the Digital Crown. The implicit range is   .
+- `binding`: A binding to a value that updates as the user rotates the Digital Crown. The implicit range is `(-infinity, +infinity)`.
 
 ## See Also
 

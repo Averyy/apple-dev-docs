@@ -28,7 +28,8 @@ When a tile overlay renderer (that is, an instance of [`MKTileOverlayRenderer`](
 ## Parameters
 
 - `path`: The path structure that identifies the specific tile you want. This structure incorporates the tile’s x-y coordinate at a given zoom level and scale factor.
-- `result`: The completion block to call when the tile data is available. The method can execute this block on any queue and takes the following parameters:
+- `result`: The completion block to call when the tile data is available. The method can execute this block on any queue and takes the following parameters: - The `tileData` parameter contains the raw data that loads from the corresponding image file. You can use this data to initialize an image object. If an error occurs, this parameter is `nil`.
+- The `error` parameter contains an error object if there is a problem loading the tile image. If no errors occur, this parameter is `nil`.
 
 ## See Also
 

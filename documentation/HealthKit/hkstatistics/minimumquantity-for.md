@@ -25,7 +25,7 @@ If both the [`discreteMin`](hkstatisticsoptions/discretemin.md) option and the [
 
 ## Parameters
 
-- `source`: A data source from the statistics object’s   array.
+- `source`: A data source from the statistics object’s [`sources`](hkstatistics/sources.md) array.
 
 ## See Also
 

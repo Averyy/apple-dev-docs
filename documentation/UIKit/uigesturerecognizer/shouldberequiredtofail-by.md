@@ -28,7 +28,7 @@ Overriding this method allows a subclass to define a class-wide failure requirem
 
 ## Parameters
 
-- `otherGestureRecognizer`: An instance of a subclass of  .
+- `otherGestureRecognizer`: An instance of a subclass of `UIGestureRecognizer`.
 
 ## See Also
 

@@ -22,7 +22,7 @@ Operations that generate EPS or PDF data do no display a progress panel, regardl
 
 ## Parameters
 
-- `flag`:   if you want to display a progress panel; otherwise,  .
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) if you want to display a progress panel; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

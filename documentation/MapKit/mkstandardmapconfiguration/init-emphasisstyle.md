@@ -22,7 +22,7 @@ convenience init(emphasisStyle: MKStandardMapConfiguration.EmphasisStyle)
 
 ## Parameters
 
-- `emphasisStyle`: One of the   styles.
+- `emphasisStyle`: One of the [`MKStandardMapConfiguration.EmphasisStyle`](mkstandardmapconfiguration/emphasisstyle-swift.enum.md) styles.
 
 ## See Also
 

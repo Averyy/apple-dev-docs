@@ -32,7 +32,7 @@ You can affect how the comparison proceeds by specifying one or more option flag
 
 - `theString1`: The first string to use in the comparison.
 - `theString2`: The second string to use in the comparison.
-- `compareOptions`: Flags that select different types of comparisons, such as localized comparison, case-insensitive comparison, and non-literal comparison. If you want the default comparison behavior, pass  . See   for the available flags.
+- `compareOptions`: Flags that select different types of comparisons, such as localized comparison, case-insensitive comparison, and non-literal comparison. If you want the default comparison behavior, pass `0`. See [`String Comparison Flags`](string-comparison-flags.md) for the available flags.
 
 ## See Also
 

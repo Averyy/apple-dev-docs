@@ -30,9 +30,9 @@ This initializer does not generate texel data; the [`MDLNormalMapTexture`](mdlno
 ## Parameters
 
 - `sourceTexture`: The texture from which to generate a normal map.
-- `name`: The   property for the new texture object.
-- `smoothness`: A number between   and   indicating how much the texture should be smoothed before the normal map is generated. A value of   means that the texture is not smoothed at all before being processed.
-- `contrast`: A value used to magnify the effect of the generated normal map. A value of   indicates no magnification is applied.
+- `name`: The [`name`](mdlnamed/name.md) property for the new texture object.
+- `smoothness`: A number between `0.0` and `1.0` indicating how much the texture should be smoothed before the normal map is generated. A value of `0.0` means that the texture is not smoothed at all before being processed.
+- `contrast`: A value used to magnify the effect of the generated normal map. A value of `1.0` indicates no magnification is applied.
 
 
 ---

@@ -19,6 +19,12 @@ The command to get a list of installed profiles on a device.
 object ProfileListCommand.Command
 ```
 
+## Properties
+
+- `ManagedOnly` (boolean): If `true`, only include profiles that MDM has installed. For user enrollments, the device ignores this key and always limits the results to managed profiles. This value is available in iOS 13 and later, macOS 10.5 and later, and tvOS 13 and later.
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

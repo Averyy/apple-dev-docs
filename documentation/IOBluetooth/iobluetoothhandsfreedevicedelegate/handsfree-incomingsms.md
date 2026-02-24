@@ -17,7 +17,7 @@ optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, incomingSMS sms: 
 ## Parameters
 
 - `device`: The connected Bluetooth hands-free phone or headset.
-- `sms`: A dictionary containing the incoming SMS message. For dictionary keys, see  .
+- `sms`: A dictionary containing the incoming SMS message. For dictionary keys, see [`SMS Dictionary Key Constants`](sms-dictionary-key-constants.md).
 
 ## See Also
 

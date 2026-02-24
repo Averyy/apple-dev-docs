@@ -24,8 +24,8 @@ class func supportsDisbursements(using supportedNetworks: [PKPaymentNetwork], ca
 
 ## Parameters
 
-- `supportedNetworks`: An array of   elements to check.
-- `capabilties`: One of the   capabilities.
+- `supportedNetworks`: An array of `PKPaymentNetwork` elements to check.
+- `capabilties`: One of the [`PKMerchantCapability`](pkmerchantcapability.md) capabilities.
 
 ## See Also
 

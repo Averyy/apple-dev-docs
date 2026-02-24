@@ -28,8 +28,8 @@ Always call this method from your WatchKit extension’s main thread.
 
 ## Parameters
 
-- `names`: An array of strings, each of which contains the name of an interface controller you want to display in the page-based interface. In your storyboard, the name of an interface controller is stored in the object’s Identifier property, which is located in the attributes inspector. The order of the strings in the array is used to set the order of the corresponding interface controllers. This parameter must not be   or an empty array.
-- `contexts`: Each object in the array is passed to the interface controller at the same index in the   parameter.
+- `names`: An array of strings, each of which contains the name of an interface controller you want to display in the page-based interface. In your storyboard, the name of an interface controller is stored in the object’s Identifier property, which is located in the attributes inspector. The order of the strings in the array is used to set the order of the corresponding interface controllers. This parameter must not be `nil` or an empty array.
+- `contexts`: An array of context objects to pass to the new interface controllers. Use the objects in this array to communicate important information to the new interface controllers, such as the data to display or any relevant state information. You may specify `nil` for this parameter, but doing so is not recommended. Each object in the array is passed to the interface controller at the same index in the `names` parameter.
 
 ## See Also
 

@@ -28,7 +28,7 @@ struct GKReleaseState
 - [static var prereleased: GKReleaseState](gkreleasestate/prereleased.md)
   The resource has been created in App Store Connect but isn’t yet associated with a released version of an App.
 - [static var released: GKReleaseState](gkreleasestate/released.md)
-  The resource is associated with a release in App Store Connect. This has no relationship with the “archived” state of a resource (i.e., A resource can be release  archived).
+  The resource is associated with a release in App Store Connect. This has no relationship with the “archived” state of a resource (i.e., A resource can be release *and* archived).
 
 ## Relationships
 

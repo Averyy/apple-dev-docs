@@ -26,7 +26,7 @@ The Base-64 encoded data.
 
 ## Parameters
 
-- `options`: The options to use for the encoding. Default value is  .
+- `options`: The options to use for the encoding. Default value is `[]`.
 
 ## See Also
 

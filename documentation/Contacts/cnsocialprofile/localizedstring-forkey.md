@@ -25,7 +25,7 @@ The localized name of the property.
 
 ## Parameters
 
-- `key`: Key for which to get the localized property name. Specify a key name such as  .
+- `key`: Key for which to get the localized property name. Specify a key name such as [`CNSocialProfileUsernameKey`](cnsocialprofileusernamekey.md).
 
 ## See Also
 

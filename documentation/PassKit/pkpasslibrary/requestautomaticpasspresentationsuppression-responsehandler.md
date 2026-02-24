@@ -39,7 +39,7 @@ The first time the system calls this method, it alerts the user that Apple Pay i
 
 ## Parameters
 
-- `responseHandler`: The response handler for the request.
+- `responseHandler`: The response handler for the request. - **result**: The success or failure of the request.
 
 ## See Also
 

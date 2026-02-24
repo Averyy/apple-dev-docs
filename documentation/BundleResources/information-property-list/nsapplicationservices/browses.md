@@ -8,6 +8,10 @@ An array of dictionaries, where each dictionary contains a unique identifier, a 
 **Availability**:
 - tvOS 16.0+
 
+
+
+**Type**: dictionary 
+
 ## Topics
 
 ### Property List Keys

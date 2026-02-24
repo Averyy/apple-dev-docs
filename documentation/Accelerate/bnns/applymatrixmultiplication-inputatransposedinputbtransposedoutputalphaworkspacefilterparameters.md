@@ -28,7 +28,7 @@ static func applyMatrixMultiplication(inputA: BNNSNDArrayDescriptor, transposed 
 - `transposeB`: A Boolean value that indicates whether the function transposes the last two dimensions of matrix B.
 - `output`: The descriptor of the output.
 - `alpha`: A scalar value that scales the result.
-- `workspace`: A pointer to a memory region that the function uses as scratch space. This must have a size no less than the value that   returns.
+- `workspace`: A pointer to a memory region that the function uses as scratch space. This must have a size no less than the value that [`matrixMultiplicationWorkspaceSize(inputA:transposed:inputB:transposed:output:alpha:filterParameters:)`](bnns/matrixmultiplicationworkspacesize(inputa:transposed:inputb:transposed:output:alpha:filterparameters:).md) returns.
 - `filterParameters`: The filter runtime parameters.
 
 ## See Also

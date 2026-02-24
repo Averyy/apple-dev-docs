@@ -34,9 +34,9 @@ If the load operation fails, [`Model3D`](model3d.md) continues to display the pl
 ## Parameters
 
 - `catalog`: A collection of alternative representations for an entity.
-- `configurations`: A dictionary of configuration choices the initializer applies as it loads the entity,   mapping the ID of a configuration set to the ID of a configuration within that set.
-- `content`: A closure that takes the loaded model as an input, and   returns the view to show. You can return the model directly, or   modify it as needed before returning it.
-- `placeholder`: A closure that returns the view to show until the   load operation completes successfully.
+- `configurations`: A dictionary of configuration choices the initializer applies as it loads the entity, mapping the ID of a configuration set to the ID of a configuration within that set.
+- `content`: A closure that takes the loaded model as an input, and returns the view to show. You can return the model directly, or modify it as needed before returning it.
+- `placeholder`: A closure that returns the view to show until the load operation completes successfully.
 
 
 ---

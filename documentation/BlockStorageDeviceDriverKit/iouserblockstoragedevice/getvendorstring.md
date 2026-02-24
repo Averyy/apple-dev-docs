@@ -20,7 +20,7 @@ A value that indicates the get-vendor-string result. Return [`kIOReturnSuccess`]
 
 ## Parameters
 
-- `vendor`: An in/out   parameter. On output, populate this structure with the vendor string.
+- `vendor`: An in/out [`DeviceString`](devicestring.md) parameter. On output, populate this structure with the vendor string.
 
 ## See Also
 

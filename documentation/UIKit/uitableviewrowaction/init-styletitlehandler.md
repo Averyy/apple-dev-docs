@@ -28,9 +28,10 @@ You can assign the same row action object to multiple rows of your table.
 
 ## Parameters
 
-- `style`: The style characteristics to apply to the button. You use this value to apply default appearance characteristics to the button. These characteristics impart information about what the button does. For example, use this to indicate an action is destructive to the underlying data. For a list of possible style values, see  .
+- `style`: The style characteristics to apply to the button. You use this value to apply default appearance characteristics to the button. These characteristics impart information about what the button does. For example, use this to indicate an action is destructive to the underlying data. For a list of possible style values, see [`UITableViewRowAction.Style`](uitableviewrowaction/style-swift.enum.md).
 - `title`: The string to display in the button. Specify a string localized for the user’s current language.
-- `handler`: The block to execute when the user taps the button associated with this action. UIKit makes a copy of the block you provide. When the user selects the action represented by this object, UIKit executes your   block on the app’s main thread. This parameter must not be  . This block has no return value and takes the following parameters:
+- `handler`: The block to execute when the user taps the button associated with this action. UIKit makes a copy of the block you provide. When the user selects the action represented by this object, UIKit executes your `handler` block on the app’s main thread. This parameter must not be `nil`. This block has no return value and takes the following parameters: - **action**: The action object representing the action that the user selected.
+- **indexPath**: The table row that the user acted on.
 
 
 ---

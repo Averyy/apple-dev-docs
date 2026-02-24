@@ -23,7 +23,7 @@ func write(to absoluteURL: URL, ofType typeName: String, for saveOperation: NSDo
 
 - `absoluteURL`: An URL that specifies the new location for the document store. It must not be a relative URL.
 - `typeName`: The document type.
-- `saveOperation`: The save operation type. See the “Constants” section in   for possible values.
+- `saveOperation`: The save operation type. See the “Constants” section in [`NSDocument`](nsdocument.md) for possible values.
 - `absoluteOriginalContentsURL`: An URL that specifies the location of the original document store.
 
 ## See Also

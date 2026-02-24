@@ -27,7 +27,7 @@ If `otherArray` has fewer objects than are specified by `aRange`, the extra obje
 ## Parameters
 
 - `range`: The range of objects to be replaced in (or removed from) the receiving array.
-- `otherArray`: The array of objects from which to select replacements for the objects in  .
+- `otherArray`: The array of objects from which to select replacements for the objects in `aRange`.
 
 ## See Also
 

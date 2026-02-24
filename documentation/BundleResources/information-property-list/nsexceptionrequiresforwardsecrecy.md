@@ -11,6 +11,12 @@ A Boolean value indicating whether to override the perfect forward secrecy requi
 - macOS 10.11+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
+**Default**: `YES`
+
 #### Discussion
 
 Set the value for this key to `NO` to override the requirement that a server support perfect forward secrecy (PFS) for the given domain. Disabling this requirement also removes the key length check described in `Ensure the Network Server Meets Minimum Requirements`. However, it doesn’t impact the TLS version requirement. To control that, use [`NSExceptionMinimumTLSVersion`](information-property-list/nsexceptionminimumtlsversion.md).

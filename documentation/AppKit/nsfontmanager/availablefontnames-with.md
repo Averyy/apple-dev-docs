@@ -26,7 +26,7 @@ If `someTraits` is 0, this method returns all fonts that are neither italic nor 
 
 ## Parameters
 
-- `someTraits`: The font traits for which to return font names. You specify the desired traits by combining the font trait mask values described in   using the C bitwise OR operator.
+- `someTraits`: The font traits for which to return font names. You specify the desired traits by combining the font trait mask values described in `Constants` using the C bitwise OR operator.
 
 ## See Also
 

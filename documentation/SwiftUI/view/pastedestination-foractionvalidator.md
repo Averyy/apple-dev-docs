@@ -54,9 +54,9 @@ Use the `validator` closure to restrict the pasted content to items that make se
 
 ## Parameters
 
-- `payloadType`: The type of data that the paste destination accepts.   The type must conform to the     protocol.
-- `action`: The action to perform when someone uses the system’s Paste   command to paste one or more items of the payload type. The closure   takes one parameter, which is the array of items to paste.
-- `validator`: A closure that you implement to validate the data to   paste. SwiftUI calls this before it calls the   closure,   and passes in an array of items to validate. Inspect the items, and   return an array that includes only those from the input array that   you consider valid. The array that you return from this closure   becomes the input to the   closure. If you return an empty   array, SwiftUI doesn’t call the   closure.
+- `payloadType`: The type of data that the paste destination accepts. The type must conform to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol.
+- `action`: The action to perform when someone uses the system’s Paste command to paste one or more items of the payload type. The closure takes one parameter, which is the array of items to paste.
+- `validator`: A closure that you implement to validate the data to paste. SwiftUI calls this before it calls the `action` closure, and passes in an array of items to validate. Inspect the items, and return an array that includes only those from the input array that you consider valid. The array that you return from this closure becomes the input to the `action` closure. If you return an empty array, SwiftUI doesn’t call the `action` closure.
 
 ## See Also
 

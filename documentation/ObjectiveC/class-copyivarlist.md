@@ -29,7 +29,7 @@ If the class declares no instance variables, or `cls` is `Nil`, `NULL` is return
 ## Parameters
 
 - `cls`: The class to inspect.
-- `outCount`: On return, contains the length of the returned array. If   is  , the length is not returned.
+- `outCount`: On return, contains the length of the returned array. If `outCount` is `NULL`, the length is not returned.
 
 ## See Also
 

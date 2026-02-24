@@ -8,6 +8,10 @@ A dictionary that maps Team IDs to an array of signing (bundle) IDs that the sys
 **Availability**:
 - macOS 13.0+
 
+
+
+**Type**: object
+
 ## See Also
 
 - [NSUpdateSecurityPolicy](information-property-list/nsupdatesecuritypolicy.md)

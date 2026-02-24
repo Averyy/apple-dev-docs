@@ -20,7 +20,7 @@ A feathered background effect.
 
 ## Parameters
 
-- `softEdgeRadius`: When a blur is clipped, the radial size of the   blur’s edge. If you set the value to  , SwiftUI uses a default   amount. The default value of this parameter is  .
+- `softEdgeRadius`: When a blur is clipped, the radial size of the blur’s edge. If you set the value to `nil`, SwiftUI uses a default amount. The default value of this parameter is `nil`.
 
 
 ---

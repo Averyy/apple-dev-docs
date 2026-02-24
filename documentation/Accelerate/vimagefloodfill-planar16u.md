@@ -45,12 +45,12 @@ You can use the same workspace memory for a group of images that are different s
 ## Parameters
 
 - `srcDest`: A pointer to a vImage buffer structure that contains the source image and receives the destination image. This function always works in place, that is, the input and the output point to the same memory.
-- `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass   to instruct the function to allocate, use, and then free its own temporary buffer.
+- `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass `nil` to instruct the function to allocate, use, and then free its own temporary buffer.
 - `seedX`: The x-coordinate that defines the position of the seed pixel inside the connected component.
 - `seedY`: The y-coordinate that defines the position of the seed pixel inside the connected component.
 - `newValue`: The new pixel value that overwrites the pixels in the connected component.
-- `connectivity`: An integer that specifies which pixels the operation includes as neighbors. Pass either   or  . The four-connected neighborhood of a pixel are the pixels to the left and right, and those above and below. The eight-connected neighborhood also includes the pixels on the four diagonals.
-- `flags`: To instruct the function to return the minimum size of the workspace memory, set the   flag.
+- `connectivity`: An integer that specifies which pixels the operation includes as neighbors. Pass either `4` or `8`. The four-connected neighborhood of a pixel are the pixels to the left and right, and those above and below. The eight-connected neighborhood also includes the pixels on the four diagonals.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md). To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag.
 
 ## See Also
 

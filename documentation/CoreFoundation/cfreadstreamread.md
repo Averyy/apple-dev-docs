@@ -32,7 +32,7 @@ If `stream` is in the process of opening, this function waits until it has compl
 
 - `stream`: The stream from which to read.
 - `buffer`: The buffer into which to place the data.
-- `bufferLength`: The size of   and the maximum number of bytes to read.
+- `bufferLength`: The size of `buffer` and the maximum number of bytes to read.
 
 
 ---

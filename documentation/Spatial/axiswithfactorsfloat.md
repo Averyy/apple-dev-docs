@@ -24,11 +24,11 @@ enum AxisWithFactorsFloat
 
 ### Enumeration Cases
 - [AxisWithFactorsFloat.xAxis(yShearFactor:zShearFactor:)](axiswithfactorsfloat/xaxis(yshearfactor:zshearfactor:).md)
-  The shear is on the  axis using the  and  shear factors.
+  The shear is on the *x* axis using the *y* and *z* shear factors.
 - [AxisWithFactorsFloat.yAxis(xShearFactor:zShearFactor:)](axiswithfactorsfloat/yaxis(xshearfactor:zshearfactor:).md)
-  The shear is on the  axis using the  and  shear factors.
+  The shear is on the *y* axis using the *x* and *z* shear factors.
 - [AxisWithFactorsFloat.zAxis(xShearFactor:yShearFactor:)](axiswithfactorsfloat/zaxis(xshearfactor:yshearfactor:).md)
-  The shear is on the  axis using the  and  shear factors.
+  The shear is on the *z* axis using the *x* and *y* shear factors.
 
 
 ---

@@ -26,12 +26,12 @@ Pass a callback of this type to [`VTDecompressionSessionDecodeFrameWithMultiImag
 
 ## Parameters
 
-- `status`: A value of   if decompression succeeds; otherwise, an error code if decompression fails.
-- `infoFlags`: Pass   if you don’t want to receive this information.
+- `status`: A value of `noErr` if decompression succeeds; otherwise, an error code if decompression fails.
+- `infoFlags`: A [`VTEncodeInfoFlags`](vtencodeinfoflags.md) pointer to receive information about the decode operation. The [`asynchronous`](vtdecodeinfoflags/asynchronous.md) bit may be set if the decode is (or was) running asynchronously. The [`frameDropped`](vtdecodeinfoflags/framedropped.md) bit may be set if the frame was dropped (synchronously). Pass `NULL` if you don’t want to receive this information.
 - `imageBuffer`: The decompressed pixel buffer.
-- `taggedBufferGroup`: A   that contains the multiple images for the decompressed frame, if the decompression succeeds; otherwise,  .
-- `presentationTimeStamp`: The frame’s presentation timestamp; otherwise,   if the value isn’t available.
-- `presentationDuration`: The frame’s presentation duration; otherwise,   if the value isn’t available.
+- `taggedBufferGroup`: A [`CMTaggedBufferGroupRef`](https://developer.apple.com/documentation/CoreMedia/CMTaggedBufferGroupRef) that contains the multiple images for the decompressed frame, if the decompression succeeds; otherwise, `NULL`.
+- `presentationTimeStamp`: The frame’s presentation timestamp; otherwise, [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid) if the value isn’t available.
+- `presentationDuration`: The frame’s presentation duration; otherwise, [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid) if the value isn’t available.
 
 ## See Also
 

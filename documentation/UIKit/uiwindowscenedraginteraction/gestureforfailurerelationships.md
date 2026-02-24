@@ -20,6 +20,18 @@ var gestureForFailureRelationships: UIGestureRecognizer { get }
 
 If your app provides other gestures in the same view hierarchy, you may want to set up failure requirements between your app’s gestures and the drag interaction’s gesture. To do this, use the [`require(toFail:)`](uigesturerecognizer/require(tofail:).md) method to relate your gestures to this gesture. For example:
 
+**Swift**:
+
+```swift
+windowDragInteraction.gestureForFailureRelationships.require(toFail: swipeGesture)
+```
+
+**Objective-C**:
+
+```objc
+[windowDragInteraction.gestureForFailureRelationships requireGestureRecognizerToFail:self.swipeGesture];
+```
+
 
 ---
 

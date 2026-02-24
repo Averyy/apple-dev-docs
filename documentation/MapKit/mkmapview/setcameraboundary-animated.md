@@ -21,7 +21,7 @@ func setCameraBoundary(_ cameraBoundary: MKMapView.CameraBoundary?, animated: Bo
 
 ## Parameters
 
-- `cameraBoundary`: The new  .
+- `cameraBoundary`: The new [`MKMapView.CameraBoundary`](mkmapview/cameraboundary-swift.class.md).
 - `animated`: A Boolean value that indicates whether the framework animates the transition of the map view to the new boundary.
 
 ## See Also

@@ -44,7 +44,7 @@ let formattedTemperatures = temperatures.map { $0.formatted(
 
 - `width`: The width — such as full names or abbreviations — with which to present units.
 - `usage`: The contextual usage of the measurement unit, such as whether a temperature applies to a person or to the weather.
-- `hidesScaleName`: A Boolean value that directs the formatter to hide the name of the scale (Kelvin, degrees Celsius, or degrees Fahrenheit). Defaults to  .
+- `hidesScaleName`: A Boolean value that directs the formatter to hide the name of the scale (Kelvin, degrees Celsius, or degrees Fahrenheit). Defaults to `false`.
 - `numberFormatStyle`: The format style with which to format the numeric part of the temperature.
 
 ## See Also

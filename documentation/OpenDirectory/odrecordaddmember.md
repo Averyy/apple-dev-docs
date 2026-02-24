@@ -27,7 +27,7 @@ Returns an error if `inGroup` is not a group record or if `inMember` is not of a
 
 - `group`: The group record.
 - `member`: The record to add.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

@@ -22,7 +22,7 @@ var postScriptName: CFString? { get }
 
 #### Discussion
 
-For more information on PostScript format, see , which is available from [`http://partners.adobe.com/`](https://developer.apple.comhttp://partners.adobe.com/).
+For more information on PostScript format, see *Adobe Type 1 Font Format*, which is available from [`http://partners.adobe.com/`](https://developer.apple.comhttp://partners.adobe.com/).
 
 ## See Also
 

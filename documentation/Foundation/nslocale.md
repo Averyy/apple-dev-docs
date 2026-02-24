@@ -30,11 +30,43 @@ You can initialize any number of locale instances with [`init(localeIdentifier:)
 
 Use the [`current`](nslocale/current.md) property to get the locale matching the current user’s preferences. If you need to be alerted when the user does make changes to region settings, register for the [`currentLocaleDidChangeNotification`](nslocale/currentlocaledidchangenotification.md) notification. Alternatively, you can use the [`autoupdatingCurrent`](nslocale/autoupdatingcurrent.md) property to get a locale that automatically updates with the user’s configuration settings:
 
+**Swift**:
+
+```swift
+let locale = NSLocale.autoupdatingCurrent
+```
+
+**Objective-C**:
+
+```objc
+NSLocale* locale = [NSLocale autoupdatingCurrentLocale];
+```
+
 You can inspect a locale by reading its properties, as listed in Getting Information About a Locale. For properties containing a code or identifier, you can then obtain a string suitable for presentation to the user with the methods listed in Getting Display Information About a Locale. For example, you can report the user’s language as a string localized in that language using the autoupdating locale obtained in the previous example:
+
+**Swift**:
+
+```swift
+let code = locale.languageCode!
+let language = locale.localizedString(forLanguageCode: code)!
+
+print("\(language)")
+// Prints "English" for locale en_US, "français" for fr_FR
+```
+
+**Objective-C**:
+
+```objc
+NSString* code = locale.languageCode;
+NSString* language = [locale localizedStringForLanguageCode:code];
+
+NSLog(@"%@",language);
+// Prints "English" for locale en_US, "français" for fr_FR
+```
 
 You frequently use a locale in conjunction with a formatter. For example, the [`DateFormatter`](dateformatter.md) class has a [`locale`](dateformatter/locale.md) property that ensures dates are converted to strings that match the user’s expectations about date formatting. By default, this property indicates the user’s current locale, which is usually the behavior you want, but you can instead set it to another locale instance to obtain a different output. See [`Data Formatting Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i) for more information about working with formatters.
 
-[`NSLocale`](nslocale.md) is  with its Core Foundation counterpart, [`CFLocale`](https://developer.apple.com/documentation/CoreFoundation/CFLocale). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
+[`NSLocale`](nslocale.md) is *toll-free bridged* with its Core Foundation counterpart, [`CFLocale`](https://developer.apple.com/documentation/CoreFoundation/CFLocale). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Locale`](locale.md) structure, which bridges to the [`NSLocale`](nslocale.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
 

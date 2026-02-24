@@ -23,9 +23,9 @@ init(_ titleKey: LocalizedStringKey, text: Binding<String>, onCommit: @escaping 
 
 ## Parameters
 
-- `titleKey`: The key for the localized title of  , describing   its purpose.
+- `titleKey`: The key for the localized title of `self`, describing its purpose.
 - `text`: The text to display and edit.
-- `onCommit`: The action to perform when the user performs an action   (usually pressing the Return key) while the secure field has focus.
+- `onCommit`: The action to perform when the user performs an action (usually pressing the Return key) while the secure field has focus.
 
 
 ---

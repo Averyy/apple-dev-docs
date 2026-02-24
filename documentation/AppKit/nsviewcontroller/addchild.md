@@ -16,7 +16,7 @@ func addChild(_ childViewController: NSViewController)
 
 ## Parameters
 
-- `childViewController`: The view controller to be added to the end of the   array.
+- `childViewController`: The view controller to be added to the end of the [`children`](nsviewcontroller/children.md) array.
 
 ## See Also
 

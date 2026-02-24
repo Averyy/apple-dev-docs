@@ -20,7 +20,7 @@ func setTitleVerticalPositionAdjustment(_ adjustment: CGFloat, for barMetrics: U
 
 ## Parameters
 
-- `adjustment`: The title’s vertical position adjustment for  .
+- `adjustment`: The title’s vertical position adjustment for `barMetrics`.
 - `barMetrics`: A bar metrics constant.
 
 ## See Also

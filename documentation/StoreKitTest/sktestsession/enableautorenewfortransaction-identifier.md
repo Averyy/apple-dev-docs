@@ -26,7 +26,7 @@ Call this method to enable the subscription to automatically renew in the testin
 
 ## Parameters
 
-- `identifier`: The transaction   of the auto-renewable subscription.
+- `identifier`: The transaction [`identifier`](sktesttransaction/identifier.md) of the auto-renewable subscription.
 
 ## See Also
 

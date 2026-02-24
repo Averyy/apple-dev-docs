@@ -39,7 +39,7 @@ For information about identifying tile memory limits for GPU devices, see either
 
 ## Parameters
 
-- `imageblockDimensions`: An   instance that represent the dimensions of an imageblock.
+- `imageblockDimensions`: An [`MTLSize`](mtlsize.md) instance that represent the dimensions of an imageblock.
 
 ## See Also
 

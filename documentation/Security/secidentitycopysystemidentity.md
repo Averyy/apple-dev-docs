@@ -24,9 +24,9 @@ If no system identity exists for the specified domain, a domain specific alterna
 
 ## Parameters
 
-- `domain`: The domain for which you want to find an identity, typically in reverse DNS notation, such as  . You may also pass the values defined in  .
-- `idRef`: On return, the identity object of the system-wide identity associated with the specified domain. In Objective-C, call the   function to release this object when you are finished with it.
-- `actualDomain`: On return, the actual domain name of the returned identity object is returned here. This may be different from the requested domain. Pass   if you do not want this information.
+- `domain`: The domain for which you want to find an identity, typically in reverse DNS notation, such as `com.apple.security`. You may also pass the values defined in [`System Identity Domains`](system-identity-domains.md).
+- `idRef`: On return, the identity object of the system-wide identity associated with the specified domain. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
+- `actualDomain`: On return, the actual domain name of the returned identity object is returned here. This may be different from the requested domain. Pass `NULL` if you do not want this information.
 
 
 ---

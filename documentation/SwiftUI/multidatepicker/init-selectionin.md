@@ -20,7 +20,7 @@ init(_ titleKey: LocalizedStringKey, selection: Binding<Set<DateComponents>>, in
 
 ## Parameters
 
-- `titleKey`: The key for the localized title of  , describing   its purpose.
+- `titleKey`: The key for the localized title of `self`, describing its purpose.
 - `selection`: The date values being displayed and selected.
 - `bounds`: The open range from some selectable start date.
 

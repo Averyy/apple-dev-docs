@@ -70,6 +70,11 @@ If multiple profiles with this payload are sent, the system sets the device’s 
 </plist>
 ```
 
+## Properties
+
+- `timeServer` (string): The NTP server to connect to. In macOS 10.13 and later, only one time server is supported.
+- `timeZone` (string): The time zone path location string in `/usr/share/zoneinfo/`; for example, `America/Denver` or `Zulu`.
+
 ## See Also
 
 - [object Declarations](declarations.md)

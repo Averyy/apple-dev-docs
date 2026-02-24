@@ -98,7 +98,7 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ###### Known Issues
 
-- Metal Shader Validation might not work with Metal 4 ray tracing pipelines.  (152520367)  Selectively disable Shader Validation for pipelines using ray tracing. See [`documentation`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage/#Selectively-enable-Shader-Validation).
+- Metal Shader Validation might not work with Metal 4 ray tracing pipelines.  (152520367) **Workaround:** Selectively disable Shader Validation for pipelines using ray tracing. See [`documentation`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage/#Selectively-enable-Shader-Validation).
 
 ##### Metalfx
 
@@ -145,7 +145,7 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 - RealityKitTexture3DPixel
 - RealityKitTexture3DPixelGradient
 - RealityKitTexture3DPixelLOD
-- RealityKitTexture3DRead  (151498365)  Make a dedicated ShaderGraph material for these devices.
+- RealityKitTexture3DRead  (151498365) **Workaround:** Make a dedicated ShaderGraph material for these devices.
 
 ##### Security
 
@@ -290,11 +290,11 @@ The tvOS 26 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ###### Known Issues
 
-- You might encounter an issue when changing the MTU size of the logical network with which VZVmnetNetworkDeviceAttachment is initialized.  (152170606)  Use the default MTU size instead of customizing it when creating the logical network through the vmnet framework.
+- You might encounter an issue when changing the MTU size of the logical network with which VZVmnetNetworkDeviceAttachment is initialized.  (152170606) **Workaround:** Use the default MTU size instead of customizing it when creating the logical network through the vmnet framework.
 
 ## See Also
 
-- [tvOS 26.4 Beta Release Notes](tvos-26_4-release-notes.md)
+- [tvOS 26.4 Beta 2 Release Notes](tvos-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [tvOS 26.3 Release Notes](tvos-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

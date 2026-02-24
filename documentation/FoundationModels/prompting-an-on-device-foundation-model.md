@@ -26,9 +26,11 @@ With prompt engineering, you structure your requests by refining how you phrase 
 
 You can also structure prompts to make the model’s response depend on specific conditions or criteria in the input. For example, instead of giving one fixed instruction you can include different conditions, like:
 
+*If it’s a question, answer it directly. If it’s a statement, ask a follow-up question.*
+
 #### Keep Prompts Simple and Clear
 
-Effective prompts use simple language that tells the model what output you want it to provide. The model processes text in units, called , and each model has a maximum number of tokens it can process — the context window size. An on-device model has fewer parameters and a small context window, so it doesn’t have the resources to handle long or confusing prompts. Input to a frontier model might be the length of a full document, but your input to the on-device model needs to be short and succinct. Ask yourself whether your prompt is understandable to a human if they read it quickly, and consider additional strategies to adjust your tone and writing style:
+Effective prompts use simple language that tells the model what output you want it to provide. The model processes text in units, called *tokens*, and each model has a maximum number of tokens it can process — the context window size. An on-device model has fewer parameters and a small context window, so it doesn’t have the resources to handle long or confusing prompts. Input to a frontier model might be the length of a full document, but your input to the on-device model needs to be short and succinct. Ask yourself whether your prompt is understandable to a human if they read it quickly, and consider additional strategies to adjust your tone and writing style:
 
 | ✅ Prompting strategies to use | 🚫 Prompting strategies to avoid |
 | --- | --- |
@@ -47,7 +49,9 @@ For more information on managing the context window size, see [`TN3193: Managing
 
 By default, the on-device model typically responds to questions in a neutral and respectful tone, with a business-casual persona. Similar to frontier models, you can provide a role or persona to dramatically change how the on-device model responds to your prompt.
 
-A  is the functional position or job that you instruct the model to assume, while a  reflects the personality of the model. You often use both in prompts; for example:
+A *role* is the functional position or job that you instruct the model to assume, while a *persona* reflects the personality of the model. You often use both in prompts; for example:
+
+*You are a senior software engineer who values mentoring junior developers.*
 
 Here the role is “a senior software engineer,” and the persona is “mentoring junior developers.”
 
@@ -57,7 +61,7 @@ To give the model a role, use the phrase “you are”:
 
 Use the phrase “expert” to get the model to speak with more authority and detail on a topic.
 
-Similarly, change the model’s behavior by providing a role or persona for the person using your app. By default, the on-device model thinks it’s talking to a person, so tell the model more about who  person is:
+Similarly, change the model’s behavior by providing a role or persona for the person using your app. By default, the on-device model thinks it’s talking to a person, so tell the model more about who *that* person is:
 
 The student persona causes the model to respond as if speaking to a child in the first grade, while the ghost persona causes the model to respond as if speaking to a ghost in an alchemy shop.
 
@@ -65,7 +69,7 @@ Change the model’s tone by writing your prompt in a voice you want the model t
 
 #### Iterate and Improve Instruction Following
 
- refers to a foundation model’s ability to carry out a request exactly as written in your [`Prompt`](prompt.md) and [`Instructions`](instructions.md). Prompt engineering involves iteration to test and refine input — based on the results you get — to improve accuracy and consistency. If you notice the model isn’t following instructions as well as you need, consider the following strategies:
+*Instruction following* refers to a foundation model’s ability to carry out a request exactly as written in your [`Prompt`](prompt.md) and [`Instructions`](instructions.md). Prompt engineering involves iteration to test and refine input — based on the results you get — to improve accuracy and consistency. If you notice the model isn’t following instructions as well as you need, consider the following strategies:
 
 | Strategy | Approach |
 | --- | --- |
@@ -81,7 +85,7 @@ Another prompting strategy is to split your request into a series of simpler req
 
 #### Reduce How Much Thinking the Model Needs to Do
 
-A model’s reasoning ability is how well it thinks through a problem like a human, handles logical puzzles, or creates a logical plan to handle a request. Because of their smaller size, on-device models have limited reasoning abilities. You may be able to help an on-device model  a challenging task by providing additional support for its reasoning.
+A model’s reasoning ability is how well it thinks through a problem like a human, handles logical puzzles, or creates a logical plan to handle a request. Because of their smaller size, on-device models have limited reasoning abilities. You may be able to help an on-device model *think through* a challenging task by providing additional support for its reasoning.
 
 For complex tasks, simple language prompts might not have enough detail about how the model can accomplish a task. Instead, reduce the reasoning burden on the model by giving it a step-by-step plan. This approach tells the model more precisely how to do the task:
 
@@ -89,7 +93,9 @@ If you find the model isn’t accomplishing the task reliably, break up the step
 
 #### Turn Conditional Prompting Into Programming Logic
 
- prompting is where you embed if-else logic into your prompt. A server-based frontier model has the context window and reasoning abilities to handle a lengthy list of instructions for how to handle different requests. An on-device model can handle some conditionals or light reasoning, like:
+*Conditional* prompting is where you embed if-else logic into your prompt. A server-based frontier model has the context window and reasoning abilities to handle a lengthy list of instructions for how to handle different requests. An on-device model can handle some conditionals or light reasoning, like:
+
+*Use the weather tool if the person asks about the weather and the calendar tool if the person asks about events.*
 
 But, too much conditional complexity can affect the on-device model’s ability to follow instructions.
 
@@ -137,7 +143,7 @@ When you customize instructions programmatically, the model doesn’t get distra
 
 #### Provide Simple Input Output Examples
 
- prompting is when you provide the on-device model with a few examples of the output you want. For example, the following shows the model different kinds of coffee shop customers it needs to generate:
+*Few-shot* prompting is when you provide the on-device model with a few examples of the output you want. For example, the following shows the model different kinds of coffee shop customers it needs to generate:
 
 ```swift
 // Instructions that contain JSON key-value pairs that represent the structure
@@ -156,7 +162,7 @@ let instructions = """
     """
 ```
 
-Few-shot prompting also works with , which formats the model’s output by using a custom type you define. In the previous prompt, each example might correspond to a [`Generable`](generable.md) structure you create named `NPC`:
+Few-shot prompting also works with *guided generation*, which formats the model’s output by using a custom type you define. In the previous prompt, each example might correspond to a [`Generable`](generable.md) structure you create named `NPC`:
 
 ```swift
 @Generable

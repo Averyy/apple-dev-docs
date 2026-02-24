@@ -27,12 +27,12 @@ This method opens the channel by passing the `path`, `oflag`, and mode parameter
 
 ## Parameters
 
-- `type`: The access semantics for the channel. For a list of possible values, see  .
+- `type`: The access semantics for the channel. For a list of possible values, see [`DispatchIO.StreamType`](dispatchio/streamtype.md).
 - `path`: The absolute path of the file you want to open.
-- `oflag`: The flags to pass to   when opening the file at the specified path.
-- `mode`: The mode flags to pass to  . Specify   to create the file at the specified path; otherwise, specify 0.
+- `oflag`: The flags to pass to `open(2)` when opening the file at the specified path.
+- `mode`: The mode flags to pass to `open(2)`. Specify `O_CREAT` to create the file at the specified path; otherwise, specify 0.
 - `queue`: The dispatch queue on which to perform work.
-- `cleanupHandler`: The handler to execute once the channel is closed. This block has no return value and takes the following parameter:
+- `cleanupHandler`: The handler to execute once the channel is closed. This block has no return value and takes the following parameter: - **error**: An `errno` condition if creating or opening the channel failed; otherwise, the value is `0`.
 
 ## See Also
 

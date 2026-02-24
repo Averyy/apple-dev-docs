@@ -20,7 +20,7 @@ The [`CWInterface`](cwinterface.md) object bound to the given interface name, or
 
 ## Parameters
 
-- `interfaceName`: The name of an available Wi-Fi interface. Use the   class method to obtain a list of valid interface names.
+- `interfaceName`: The name of an available Wi-Fi interface. Use the [`interfaceNames()`](cwwificlient/interfacenames()-swift.type.method.md) class method to obtain a list of valid interface names.
 
 ## See Also
 

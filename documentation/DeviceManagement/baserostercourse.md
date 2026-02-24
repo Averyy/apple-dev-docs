@@ -15,6 +15,11 @@ A base course’s properties and their values.
 object BaseRosterCourse
 ```
 
+## Properties
+
+- `name` (string): The course name. The maximum length is 1024 UTF-8 characters.
+- `unique_identifier` (string): The global unique identifier for the location. The maximum length is 256 UTF-8 characters.
+
 ## See Also
 
 - [object RosterCourse](rostercourse.md)

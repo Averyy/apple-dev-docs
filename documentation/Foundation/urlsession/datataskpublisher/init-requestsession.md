@@ -22,8 +22,8 @@ init(request: URLRequest, session: URLSession)
 
 ## Parameters
 
-- `request`: The   from which to create a URL session data task.
-- `session`: The   to create the data task.
+- `request`: The [`URLRequest`](urlrequest.md) from which to create a URL session data task.
+- `session`: The [`URLSession`](urlsession.md) to create the data task.
 
 
 ---

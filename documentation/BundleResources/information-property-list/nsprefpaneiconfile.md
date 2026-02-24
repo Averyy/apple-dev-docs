@@ -8,6 +8,10 @@ The name of an image file used to represent a preference pane in the System Pref
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [NSPrefPaneIconLabel](information-property-list/nsprefpaneiconlabel.md)

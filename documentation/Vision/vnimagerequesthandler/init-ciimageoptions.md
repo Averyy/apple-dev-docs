@@ -21,8 +21,8 @@ init(ciImage image: CIImage, options: [VNImageOption : Any] = [:])
 
 ## Parameters
 
-- `image`: A   containing the image to be used for performing the requests. Image content is immutable.
-- `options`: An optional dictionary containing   keys to auxiliary image data.
+- `image`: A [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) containing the image to be used for performing the requests. Image content is immutable.
+- `options`: An optional dictionary containing [`properties`](vnimageoption/properties.md) keys to auxiliary image data.
 
 ## See Also
 

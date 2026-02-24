@@ -9,11 +9,20 @@ An entitlement that enables your browser app to implement an alternative browser
 - iOS 17.4+
 - iPadOS 17.4+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 Add this entitlement to your browser app’s code signature to implement an alternative browser engine, which includes separating tasks such as rendering, network traffic, and web content, across dedicated extensions that you develop.
 
 To use the entitlement, request it from Apple. The steps to request the entitlement vary by geographic region:
+
+- **European Union**: To request the entitlement in the EU, see [`Using alternative browser engines in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines).
+- **Japan**: To request the entitlement in Japan, see [`Using alternative browser engines in Japan`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines-jp).
 
 For more information, see [`Creating browser extensions in Xcode`](https://developer.apple.com/documentation/BrowserEngineKit/creating-browser-extensions-in-xcode).
 

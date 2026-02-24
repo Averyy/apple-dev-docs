@@ -22,7 +22,7 @@ If the responder implements this method, but decides not to handle a particular 
 
 ## Parameters
 
-- `event`: An object encapsulating information about the cursor-update event ( ).
+- `event`: An object encapsulating information about the cursor-update event ([`NSCursorUpdate`](nscursorupdate.md)).
 
 ## See Also
 

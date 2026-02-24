@@ -27,8 +27,8 @@ In OS X v10.4 and earlier, the delegate is not sent this message when the `NSSpe
 
 ## Parameters
 
-- `sender`: An   object that’s synthesizing text into speech.
-- `phonemeOpcode`: Phoneme that   is about to speak into the sound output device.
+- `sender`: An [`NSSpeechSynthesizer`](nsspeechsynthesizer.md) object that’s synthesizing text into speech.
+- `phonemeOpcode`: Phoneme that `sender` is about to speak into the sound output device.
 
 ## See Also
 

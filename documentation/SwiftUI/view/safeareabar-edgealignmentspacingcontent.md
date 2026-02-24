@@ -33,10 +33,10 @@ Additionally, it extends the edge effect of any scroll views affected by the ins
 
 ## Parameters
 
-- `edge`: The horizontal edge of the view on which   is placed.
-- `alignment`: The alignment guide used to position    vertically.
-- `spacing`: Extra distance placed between the two views, or   nil to use the default amount of spacing.
-- `content`: A view builder function providing the view to display as a   custom bar.
+- `edge`: The horizontal edge of the view on which `content` is placed.
+- `alignment`: The alignment guide used to position `content` vertically.
+- `spacing`: Extra distance placed between the two views, or nil to use the default amount of spacing.
+- `content`: A view builder function providing the view to display as a custom bar.
 
 ## See Also
 

@@ -20,8 +20,8 @@ If the receiver has a Services menu, a menu item is added for each service provi
 
 ## Parameters
 
-- `sendTypes`: An array of   objects, each of which corresponds to a particular pasteboard type that the app can send.
-- `returnTypes`: An array of   objects, each of which corresponds to a particular pasteboard type that the app can receive.
+- `sendTypes`: An array of `NSString` objects, each of which corresponds to a particular pasteboard type that the app can send.
+- `returnTypes`: An array of `NSString` objects, each of which corresponds to a particular pasteboard type that the app can receive.
 
 ## See Also
 

@@ -29,10 +29,10 @@ You must call the [`CFPreferencesSynchronize(_:_:_:)`](cfpreferencessynchronize(
 ## Parameters
 
 - `key`: Preferences key for the value you wish to set.
-- `value`: The value to set for   and application. Pass   to remove   from the domain.
-- `applicationID`: The ID of the application whose preferences you wish to modify. Takes the form of a Java package name,  .
-- `userName`:   to modify the current user’s preferences, otherwise   to modify the preferences of all users.
-- `hostName`:   to modify the preferences of the current host, otherwise   to modify the preferences of all hosts.
+- `value`: The value to set for `key` and application. Pass `NULL` to remove `key` from the domain.
+- `applicationID`: The ID of the application whose preferences you wish to modify. Takes the form of a Java package name, `com.foosoft`.
+- `userName`: [`kCFPreferencesCurrentUser`](kcfpreferencescurrentuser.md) to modify the current user’s preferences, otherwise [`kCFPreferencesAnyUser`](kcfpreferencesanyuser.md) to modify the preferences of all users.
+- `hostName`: [`kCFPreferencesCurrentHost`](kcfpreferencescurrenthost.md) to modify the preferences of the current host, otherwise [`kCFPreferencesAnyHost`](kcfpreferencesanyhost.md) to modify the preferences of all hosts.
 
 ## See Also
 

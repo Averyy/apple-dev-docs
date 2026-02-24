@@ -20,8 +20,8 @@ func setWidth(_ width: CGFloat, forSegmentAt segment: Int)
 
 ## Parameters
 
-- `width`: A float value specifying the width of the segment. The default value is {0.0}, which tells   to automatically size the segment.
-- `segment`: An index number identifying a segment in the control. It must be a number between 0 and the number of segments ( ) minus 1; the segmented control pins values exceeding this upper range to the last segment.
+- `width`: A float value specifying the width of the segment. The default value is {0.0}, which tells `UISegmentedControl` to automatically size the segment.
+- `segment`: An index number identifying a segment in the control. It must be a number between 0 and the number of segments ([`numberOfSegments`](uisegmentedcontrol/numberofsegments.md)) minus 1; the segmented control pins values exceeding this upper range to the last segment.
 
 ## See Also
 

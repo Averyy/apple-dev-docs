@@ -37,8 +37,8 @@ Image(systemName: "envelope.badge.fill")
 
 ## Parameters
 
-- `s`: The amount to scale the view in the view in both the horizontal   and vertical directions.
-- `anchor`: The anchor point with a default of   that   indicates the starting position for the scale operation.
+- `s`: The amount to scale the view in the view in both the horizontal and vertical directions.
+- `anchor`: The anchor point with a default of [`center`](unitpoint/center.md) that indicates the starting position for the scale operation.
 
 ## See Also
 

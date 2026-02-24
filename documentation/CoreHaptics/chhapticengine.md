@@ -40,6 +40,43 @@ To prepare your app to play haptics, follow these steps, as demonstrated in the 
 2. Call the haptic engine’s [`start(completionHandler:)`](chhapticengine/start(completionhandler:).md) for an asynchronous start, or [`start()`](chhapticengine/start().md) to start the engine synchronously (immediately).
 3. Stop the engine by calling [`stop(completionHandler:)`](chhapticengine/stop(completionhandler:).md) when your app finishes haptic playback.
 
+**Swift**:
+
+```swift
+do {
+    // 1. Create a haptic engine instance.
+    hapticEngine = try CHHapticEngine()
+
+    // 2. Start the haptic engine.
+    try hapticEngine.start()
+} catch let error {
+    print("Engine Error: \(error)")
+}
+
+// 3. Stop the engine.
+hapticEngine.stop(completionHandler: { (_) -> Void in
+    // Insert code to call after engine stops.
+})
+```
+
+**Objective-C**:
+
+```objc
+// Create an error variable through which the engine returns error information.
+NSError* error = nil;
+
+// (1.) Create an instance of a haptic engine.
+self.hapticEngine = [[CHHapticEngine alloc] initAndReturnError:&error];
+
+// (2.) Start the haptic engine.
+[self.hapticEngine startAndReturnError:&error];
+
+// (3.) Stop the engine.
+[self.hapticEngine stopWithCompletionHandler:^(NSError* error){
+    // Insert code to call after engine stops.
+}];
+```
+
 Although it’s possible to create content—[`CHHapticPattern`](chhapticpattern.md) instances—independent of a CHHapticEngine, your app must use an engine to play that content.
 
 ## Topics

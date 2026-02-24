@@ -58,9 +58,9 @@ init(editing modelType: any PersistentModel.Type, contentType: UTType, editor: @
 ## Parameters
 
 - `modelType`: The model type defining the schema used for each document.
-- `contentType`: The content type of the document.   It should conform to  .
+- `contentType`: The content type of the document. It should conform to `UTType.package`.
 - `editor`: The editing UI for the provided document.
-- `prepareDocument`: The optional closure that accepts    associated with the new document.   Use this closure to set the document’s initial contents   before it is displayed: insert preconfigured models   in the provided  .
+- `prepareDocument`: The optional closure that accepts `ModelContext` associated with the new document. Use this closure to set the document’s initial contents before it is displayed: insert preconfigured models in the provided `ModelContext`.
 
 ## See Also
 

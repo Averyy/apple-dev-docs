@@ -29,7 +29,7 @@ Because the returned snapshot view is still a view object, you may modify it and
 
 ## Parameters
 
-- `afterUpdates`: A Boolean value that indicates whether the snapshot should be taken after recent changes have been incorporated. Specify the value   if you want to capture the screen in its current state, which might not include recent changes.
+- `afterUpdates`: A Boolean value that indicates whether the snapshot should be taken after recent changes have been incorporated. Specify the value [`false`](https://developer.apple.com/documentation/Swift/false) if you want to capture the screen in its current state, which might not include recent changes.
 
 
 ---

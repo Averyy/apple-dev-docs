@@ -21,7 +21,7 @@ Creates an instance that accepts values of the specified type.
 
 ## Parameters
 
-- `onPaste`: The handler to call on trigger of the button with at least   one item of the specified   type from the pasteboard.
+- `onPaste`: The handler to call on trigger of the button with at least one item of the specified `Transferable` type from the pasteboard.
 
 ## See Also
 

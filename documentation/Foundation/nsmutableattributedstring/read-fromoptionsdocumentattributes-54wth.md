@@ -31,9 +31,9 @@ For RTF formatted files, the contents of the file are appended to the previous s
 ## Parameters
 
 - `url`: The URL of the file to read.
-- `opts`: The option keys for importing the document. For a list of possible values, see “Option keys for importing documents” in  .
-- `dict`: On return, contains the document attributes. For a list of possible values, see “Document Attributes” in  .
-- `error`: Upon return, if an error occurs, contains an   object that describes the problem. If you are not interested in possible errors, pass in  .
+- `opts`: The option keys for importing the document. For a list of possible values, see “Option keys for importing documents” in [`NSAttributedString`](nsattributedstring.md).
+- `dict`: On return, contains the document attributes. For a list of possible values, see “Document Attributes” in [`NSAttributedString`](nsattributedstring.md).
+- `error`: Upon return, if an error occurs, contains an [`NSError`](nserror.md) object that describes the problem. If you are not interested in possible errors, pass in `NULL`.
 
 ## See Also
 

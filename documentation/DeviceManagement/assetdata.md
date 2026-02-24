@@ -50,6 +50,11 @@ Specify `com.apple.asset.data` as the declaration type.
 - [object AssetDataReferenceObject](assetdatareferenceobject.md)
   The external reference for an asset data.
 
+## Properties
+
+- `Authentication` (AssetDataAuthenticationObject): The server authentication details.
+- `Reference` (AssetDataReferenceObject) *(required)*: The external reference.
+
 ## See Also
 
 - [object AssetCredentialACME](assetcredentialacme.md)

@@ -35,8 +35,8 @@ Methods in other protocols adopted by this protocol are not included.
 ## Parameters
 
 - `proto`: A protocol.
-- `isRequiredMethod`: A Boolean value that indicates whether returned methods should be required methods (pass   to specify required methods).
-- `isInstanceMethod`: A Boolean value that indicates whether returned methods should be instance methods (pass   to specify instance methods).
+- `isRequiredMethod`: A Boolean value that indicates whether returned methods should be required methods (pass [`YES`](yes.md) to specify required methods).
+- `isInstanceMethod`: A Boolean value that indicates whether returned methods should be instance methods (pass [`YES`](yes.md) to specify instance methods).
 - `outCount`: Upon return, contains the number of method description structures in the returned array.
 
 ## See Also

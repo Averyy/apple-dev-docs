@@ -33,7 +33,7 @@ The value of this property is retained using the Core Foundation retain/release 
 
 You can use a layer’s shadow path to create special effects such as simulating the shadows available in [`Pages`](https://developer.apple.comhttp://www.apple.com/pages/).
 
-The following code shows the code required to add an elliptical shadow to the bottom of a layer to simulate the Pages  effect.
+The following code shows the code required to add an elliptical shadow to the bottom of a layer to simulate the Pages *Contact Shadow* effect.
 
 ```swift
 let layer = CALayer()
@@ -56,7 +56,7 @@ layer.shadowPath = shadowPath
 
 ![Layer with contact shadow effect](https://docs-assets.developer.apple.com/published/7687cdf63459da4f4f192ad43da1b3f0/media-2851604%402x.png)
 
-The following code shows how to create a path to simulate the Pages . The left, top and right sides of the path are straight lines, and the bottom is a concave curve as illustrated in the following figure.
+The following code shows how to create a path to simulate the Pages *Curved Shadow*. The left, top and right sides of the path are straight lines, and the bottom is a concave curve as illustrated in the following figure.
 
 ![Shadow path for curved shadow effect](https://docs-assets.developer.apple.com/published/efb38018812c344291d36650810beca8/media-2851608%402x.png)
 

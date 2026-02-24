@@ -27,7 +27,7 @@ The system calls your handler when no other objects reference the action object.
 
 ## Parameters
 
-- `handler`: A handler block for the system to call. Specify   to remove the handler block from your action object.
+- `handler`: A handler block for the system to call. Specify `NULL` to remove the handler block from your action object.
 
 ## See Also
 

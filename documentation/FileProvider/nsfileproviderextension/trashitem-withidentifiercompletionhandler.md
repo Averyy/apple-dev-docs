@@ -33,7 +33,8 @@ The user’s ability to trash an item is controlled by the item’s [`allowsTras
 ## Parameters
 
 - `itemIdentifier`: The item’s persistent identifier.
-- `completionHandler`: A block that takes the following parameters:
+- `completionHandler`: A block that takes the following parameters: - **`trashedItem`**: A file provider item that represents the changed item, or `nil` if an error occurred.
+- **`error`**: An error object. If an error occurs, pass in an object that describes the error; otherwise, set it to `nil`.
 
 ## See Also
 

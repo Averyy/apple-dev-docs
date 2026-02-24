@@ -16,7 +16,7 @@ func takeDoubleValueFrom(_ sender: Any?)
 
 ## Parameters
 
-- `sender`: The object from which to take the value. This object must implement the   property.
+- `sender`: The object from which to take the value. This object must implement the [`doubleValue`](nscell/doublevalue.md) property.
 
 ## See Also
 

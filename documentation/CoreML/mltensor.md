@@ -245,7 +245,7 @@ struct MLTensor
   Returns the product along all axes.
 ### Getting the largest values
 - [func topK(Int) -> (values: MLTensor, indices: MLTensor)](mltensor/topk(_:).md)
-  Returns the  largest values along the last axis of the tensor.
+  Returns the *k* largest values along the last axis of the tensor.
 ### Clamping and concatenating
 - [func clamped(to:)](mltensor/clamped(to:).md)
   Clamps all elements to the given lower and upper bounds, inclusively.

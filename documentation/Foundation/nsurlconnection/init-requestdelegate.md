@@ -33,8 +33,8 @@ During the download the connection maintains a strong reference to the `delegate
 
 ## Parameters
 
-- `request`: The URL request to load. The   object is deep-copied as part of the initialization process. Changes made to   after this method returns do not affect the request that is used for the loading process.
-- `delegate`: The delegate object for the connection. The connection calls methods on this delegate as the load progresses. Delegate methods are called on the same thread that called this method. By default, for the connection to work correctly, the calling thread’s run loop must be operating in the default run loop mode. See   to change the run loop and mode.
+- `request`: The URL request to load. The `request` object is deep-copied as part of the initialization process. Changes made to `request` after this method returns do not affect the request that is used for the loading process.
+- `delegate`: The delegate object for the connection. The connection calls methods on this delegate as the load progresses. Delegate methods are called on the same thread that called this method. By default, for the connection to work correctly, the calling thread’s run loop must be operating in the default run loop mode. See [`schedule(in:forMode:)`](nsurlconnection/schedule(in:formode:).md) to change the run loop and mode.
 
 ## See Also
 

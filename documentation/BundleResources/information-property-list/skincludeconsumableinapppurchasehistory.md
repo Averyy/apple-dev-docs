@@ -14,6 +14,10 @@ A Boolean value that determines whether StoreKit includes finished consumable In
 - visionOS 2.0+
 - watchOS 11.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 By default, this value is `false`. When it’s `false`, StoreKit doesn’t return finished consumables (unless refunded or revoked) in the transaction information from the following APIs:

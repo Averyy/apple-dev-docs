@@ -22,7 +22,7 @@ func position(relativeTo referenceEntity: Entity?) -> SIMD3<Float>?
 
 ## Parameters
 
-- `referenceEntity`: Reference   which defines the frame of reference for the returned position.   Can be  , which is equivalent to “world space”.
+- `referenceEntity`: Reference `Entity` which defines the frame of reference for the returned position. Can be `nil`, which is equivalent to “world space”.
 
 
 ---

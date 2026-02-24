@@ -30,7 +30,7 @@ Use this function to reverse the import procedure carried out with the [`gss_imp
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `input_name`: The name in internal format to be converted.
-- `output_name_buffer`: A buffer the function fills with the octet string that corresponds to the name. Release this buffer with a call to   when you are done with it.
+- `output_name_buffer`: A buffer the function fills with the octet string that corresponds to the name. Release this buffer with a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md) when you are done with it.
 - `output_name_type`: A pointer the function uses to return an object identifier that indicates the name type.
 
 ## See Also

@@ -27,7 +27,7 @@ Don’t call this function directly. The system calls it automatically when inte
 ## Parameters
 
 - `number`: The 32-bit integer value to add to the message.
-- `format`: The format to apply to the integer value. You format integers as decimal, hexadecimal, or octal values. If you don’t specify this parameter, the default format uses a decimal value. For more information, see  .
+- `format`: The format to apply to the integer value. You format integers as decimal, hexadecimal, or octal values. If you don’t specify this parameter, the default format uses a decimal value. For more information, see [`OSLogIntegerFormatting`](oslogintegerformatting.md).
 - `privacy`: The privacy level of the information. If you don’t specify this parameter, the system uses the default rules to determine whether to show the information.
 
 ## See Also

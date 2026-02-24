@@ -30,11 +30,11 @@ You use this callback to release the pixels and perform any other cleanup when a
 
 ## Parameters
 
-- `releaseRefCon`: A pointer to application-defined data. This pointer is the same as that passed in the   parameter of  .
-- `dataPtr`: A pointer to a plane descriptor block. This is the same pointer you passed to   in the   parameter.
-- `dataSize`: The size value you passed to   in the   parameter.
-- `numberOfPlanes`: The number of planes value you passed to   in the   parameter.
-- `planeAddresses`: A pointer to the base plane address you passed to   in the   parameter.
+- `releaseRefCon`: A pointer to application-defined data. This pointer is the same as that passed in the `releaseRefCon` parameter of [`CVPixelBufferCreateWithPlanarBytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](cvpixelbuffercreatewithplanarbytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md).
+- `dataPtr`: A pointer to a plane descriptor block. This is the same pointer you passed to [`CVPixelBufferCreateWithPlanarBytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](cvpixelbuffercreatewithplanarbytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md) in the `dataPtr` parameter.
+- `dataSize`: The size value you passed to [`CVPixelBufferCreateWithPlanarBytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](cvpixelbuffercreatewithplanarbytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md) in the `dataSize` parameter.
+- `numberOfPlanes`: The number of planes value you passed to [`CVPixelBufferCreateWithPlanarBytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](cvpixelbuffercreatewithplanarbytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md) in the `numberOfPlanes` parameter.
+- `planeAddresses`: A pointer to the base plane address you passed to [`CVPixelBufferCreateWithPlanarBytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](cvpixelbuffercreatewithplanarbytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md) in the `basePlaneAddress` parameter.
 
 ## See Also
 

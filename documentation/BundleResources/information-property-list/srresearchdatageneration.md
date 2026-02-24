@@ -9,6 +9,12 @@ A Boolean value that indicates whether use of an app contributes data to SensorK
 - iOS 17.0+
 - iPadOS 17.0+
 
+
+
+**Type**: boolean
+
+**Default**: `YES`
+
 #### Discussion
 
 The default value is `YES`.

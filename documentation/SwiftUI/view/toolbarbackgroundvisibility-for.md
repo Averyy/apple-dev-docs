@@ -55,7 +55,7 @@ TabView {
 ## Parameters
 
 - `visibility`: The preferred visibility of the background of the bar.
-- `bars`: The bars to update the color scheme of or    if empty.
+- `bars`: The bars to update the color scheme of or [`automatic`](toolbarplacement/automatic.md) if empty.
 
 ## See Also
 

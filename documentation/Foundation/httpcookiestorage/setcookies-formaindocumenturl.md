@@ -32,7 +32,7 @@ If you override this method, also override [`storeCookies(_:for:)`](httpcookiest
 
 - `cookies`: The cookies to add.
 - `URL`: The URL associated with the added cookies.
-- `mainDocumentURL`: The URL of the main HTML document for the top-level frame, if known. The value can be  . This URL is used to determine whether the cookie should be accepted if the cookie accept policy is  .
+- `mainDocumentURL`: The URL of the main HTML document for the top-level frame, if known. The value can be `nil`. This URL is used to determine whether the cookie should be accepted if the cookie accept policy is [`HTTPCookie.AcceptPolicy.onlyFromMainDocumentDomain`](httpcookie/acceptpolicy/onlyfrommaindocumentdomain.md).
 
 ## See Also
 

@@ -14,7 +14,7 @@ To apply ray tracing in your app:
 2. Define a ray’s behavior when it collides into parts of an acceleration structure by creating either intersectors or intersection queries.
 3. Generate rays into the scene from a new or existing shader.
 
-An  uses a table of your intersection functions that define the custom behavior for each intersection type. An  returns to your calling function to handle the custom behavior for all intersection types.
+An *intersector* uses a table of your intersection functions that define the custom behavior for each intersection type. An *intersection query* returns to your calling function to handle the custom behavior for all intersection types.
 
 Intersectors work with compute kernels on all GPUs, and with render shaders only on Apple silicon GPUs. Alternatively, your app can use intersection queries on non-Apple GPUs, or for porting code from other graphics APIs.
 

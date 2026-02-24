@@ -20,7 +20,7 @@ convenience init(usingTextLayoutManager: Bool)
 
 ## Parameters
 
-- `usingTextLayoutManager`: A Boolean value that indicates whether the framework should create the text view with an  .
+- `usingTextLayoutManager`: A Boolean value that indicates whether the framework should create the text view with an [`NSTextLayoutManager`](nstextlayoutmanager.md).
 
 ## See Also
 

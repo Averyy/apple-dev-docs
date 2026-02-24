@@ -23,8 +23,8 @@ The [`bottomLayoutGuide`](uiviewcontroller/bottomlayoutguide.md) property comes 
 
 The value of this property is, specifically, the value of the [`length`](uilayoutsupport/length.md) property of the object returned when you query this property. This value is constrained by either the view controller or by its enclosing container view controller (such as a navigation or tab bar controller), as follows:
 
-- A view controller  a container view controller constrains this property to indicate the top of the tab bar or toolbar, if one of these is visible, or else to indicate the bottom edge of the view controller’s view.
-- A view controller  a container view controller does not set this property’s value. Instead, the container view controller constrains the value to indicate the top of the tab bar or toolbar, if one of these is visible, or else to indicate the bottom edge of the view controller’s view.
+- A view controller **not within** a container view controller constrains this property to indicate the top of the tab bar or toolbar, if one of these is visible, or else to indicate the bottom edge of the view controller’s view.
+- A view controller **within** a container view controller does not set this property’s value. Instead, the container view controller constrains the value to indicate the top of the tab bar or toolbar, if one of these is visible, or else to indicate the bottom edge of the view controller’s view.
 
 If a container view controller’s toolbar or tab bar is visible and opaque, the container lays out the frontmost view controller’s view so its bottom edge abuts the top of the bar. In this case, the value of this property is 0.
 

@@ -20,7 +20,7 @@ Use this method to change the default insets you set in Interface Builder. Chang
 
 ## Parameters
 
-- `contentInset`: The insets to apply to contained objects. All inset values are measured in points. Inset values must not be less than  .
+- `contentInset`: The insets to apply to contained objects. All inset values are measured in points. Inset values must not be less than `0`.
 
 ## See Also
 

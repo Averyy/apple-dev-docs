@@ -27,7 +27,7 @@ An entity’s [`components`](gkentity/components.md) list never has more than on
 
 ## Parameters
 
-- `component`: An instance of a   subclass.
+- `component`: An instance of a [`GKComponent`](gkcomponent.md) subclass.
 
 ## See Also
 

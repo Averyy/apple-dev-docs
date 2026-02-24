@@ -27,7 +27,7 @@ If you don’t implement this method, the web view displays the default message.
 
 - `webView`: The web view that is requesting to display the Lockdown Mode first use dialog.
 - `message`: The message for the web view to display if the delegate does not display the first use dialog.
-- `completionHandler`: A block you must invoke to resume after the web view displays the first use dialog. The block does not return a value, and accepts the following parameter:
+- `completionHandler`: A block you must invoke to resume after the web view displays the first use dialog. The block does not return a value, and accepts the following parameter: - **dialogResult**: A display result case that indicates how the method handled the display request.
 
 ## See Also
 

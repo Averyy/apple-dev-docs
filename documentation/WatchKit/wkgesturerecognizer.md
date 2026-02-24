@@ -29,6 +29,20 @@ You do not subclass [`WKGestureRecognizer`](wkgesturerecognizer.md) or create in
 
 A gesture recognizer has an associated action method that it calls during the recognition process to report on its progress. You define the action method in your interface controller and connect it to the gesture recognizer in Interface Builder. Action methods must conform to one of the following signatures:
 
+**Swift**:
+
+```swift
+@IBAction func handleGesture()
+@IBAction func handleGesture(gestureRecognizer : WKGestureRecognizer)
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction)handleGesture
+- (IBAction)handleGesture:(WKGestureRecognizer*)gestureRecognizer
+```
+
 The gesture recognizer calls your action method whenever the value in the [`state`](wkgesturerecognizer/state.md) property changes in a significant way. All gesture recognizers start out in the [`WKGestureRecognizerState.possible`](wkgesturerecognizerstate/possible.md) state and move to other states as appropriate based on the type of gesture. Gesture recognizers do not call your action method for every state change. For information about when the action method is called, see the constant descriptions of the [`WKGestureRecognizerState`](wkgesturerecognizerstate.md) type.
 
 watchOS supports two broad categories of gesture recognizers: continuous gesture recognizers and discrete gesture recognizer.

@@ -17,7 +17,12 @@ enum Credentials
 
 ## Topics
 
+### Structures
+- [WINetworkSharingProvider.Network.Credentials.EAPCredentials](winetworksharingprovider/network/credentials-swift.enum/eapcredentials.md)
+  A structure containing the credentials for a Wi-Fi network with 802.1x enterprise authentication.
 ### Enumeration Cases
+- [case enterprise(WINetworkSharingProvider.Network.Credentials.EAPCredentials)](winetworksharingprovider/network/credentials-swift.enum/enterprise(_:).md)
+  The credentials to login to a network using 802.1x Enterprise authentication.
 - [WINetworkSharingProvider.Network.Credentials.none](winetworksharingprovider/network/credentials-swift.enum/none.md)
   No credentials are available for the Wi-Fi network.
 - [WINetworkSharingProvider.Network.Credentials.password(_:)](winetworksharingprovider/network/credentials-swift.enum/password(_:).md)
@@ -25,9 +30,6 @@ enum Credentials
 ### Instance Properties
 - [var description: String](winetworksharingprovider/network/credentials-swift.enum/description.md)
   A string description of the credentials, for debugging purposes.
-### Enumerations
-- [WINetworkSharingProvider.Network.Credentials.AcceptedEAPType](winetworksharingprovider/network/credentials-swift.enum/acceptedeaptype.md)
-  The EAP types allowed for this network
 
 ## Relationships
 

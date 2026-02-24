@@ -25,8 +25,8 @@ The descriptor on autoreleasepool.
 
 ## Parameters
 
-- `dataLayout`: See   property.
-- `weightsLayout`: See   property.
+- `dataLayout`: See `dataLayout` property.
+- `weightsLayout`: See `weightsLayout` property.
 
 
 ---

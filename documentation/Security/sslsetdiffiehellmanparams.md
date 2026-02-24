@@ -30,7 +30,7 @@ You can use the [`SSLGetDiffieHellmanParams(_:_:_:)`](sslgetdiffiehellmanparams(
 
 - `context`: An SSL session context reference.
 - `dhParams`: A pointer to a buffer containing the Diffie-Hellman parameters in Open SSL DER format.
-- `dhParamsLen`: A value representing the size of the buffer pointed to by the   parameter.
+- `dhParamsLen`: A value representing the size of the buffer pointed to by the `dhParams` parameter.
 
 
 ---

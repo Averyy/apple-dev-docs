@@ -25,7 +25,7 @@ In your custom implementation of this method, use the report data to gather the 
 
 - `timestamp`: The timestamp of the report.
 - `report`: A pointer to the raw bytes of the report.
-- `reportLength`: The number of bytes of data in the   parameter.
+- `reportLength`: The number of bytes of data in the `report` parameter.
 - `type`: The report type.
 - `reportID`: The unique ID associated with the report. If a report element has new data, it contains this ID.
 

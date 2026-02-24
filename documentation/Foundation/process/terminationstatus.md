@@ -25,6 +25,34 @@ Each task defines and documents how your app should interpret the return value. 
 
 This method raises an `NSInvalidArgumentException` if the receiver is still running. Verify that the receiver isn’t running before you use it.
 
+**Swift**:
+
+```swift
+let task: NSTask = // Create and initialize a task
+if !task.isRunning {
+    let status = task.terminationStatus
+    if status == 0 {
+        print("Task succeeded.")
+    } else {
+        print("Task failed.")
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+NSTask *task = // Create and initialize a task
+if (![task isRunning]) {
+    int status = [task terminationStatus];
+    if (status == 0) {
+        NSLog(@"Task succeeded.");
+    } else {
+        NSLog(@"Task failed.");
+    }
+}
+```
+
 ## See Also
 
 - [func waitUntilExit()](process/waituntilexit.md)

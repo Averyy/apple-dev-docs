@@ -24,7 +24,7 @@ When the eject operation completes, the dext calls your [`Complete`](iouserblock
 
 ## Parameters
 
-- `requestID`: An opaque identifier. After the dext completes the request, it calls   and sends this value as a parameter.
+- `requestID`: An opaque identifier. After the dext completes the request, it calls [`Complete`](iouserblockstoragedevice/complete.md) and sends this value as a parameter.
 
 ## See Also
 

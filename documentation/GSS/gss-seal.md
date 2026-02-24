@@ -23,10 +23,10 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `context_handle`: The context used to send the message.
 - `conf_req_flag`: A flag you set to zero to request that only that the message integrity check be applied, or to anything non-zero to request both integrity checking and confidentiality (encryption) of the message.
-- `qop_req`: The quality of protection requested for the encryption. See   for valid values.
+- `qop_req`: The quality of protection requested for the encryption. See `Quality of Protection Settings` for valid values.
 - `input_message_buffer`: A buffer containing the message to protect.
-- `conf_state`: A pointer the function uses to indicate what protection is actually applied to the message. A value of zero indicates only integrity checking. A non-zero value indicates both integrity checking and confidentiality. Pass   to ignore this output.
-- `output_message_buffer`: A buffer the function fills with the fully wrapped message, ready for transport to the peer. Release the buffer using a call to   when you are done with it.
+- `conf_state`: A pointer the function uses to indicate what protection is actually applied to the message. A value of zero indicates only integrity checking. A non-zero value indicates both integrity checking and confidentiality. Pass `NULL` to ignore this output.
+- `output_message_buffer`: A buffer the function fills with the fully wrapped message, ready for transport to the peer. Release the buffer using a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md) when you are done with it.
 
 ## See Also
 

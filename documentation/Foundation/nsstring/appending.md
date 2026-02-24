@@ -38,7 +38,7 @@ produces the string “`Error: premature end of file.`”.
 
 ## Parameters
 
-- `aString`: The string to append to the receiver. This value must not be  .
+- `aString`: The string to append to the receiver. This value must not be `nil`. > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `aString` is `nil`.
 
 ## See Also
 

@@ -6,7 +6,7 @@ Ensure consistent, smooth rendering by profiling your app’s frame time.
 
 #### Overview
 
-A low-performing frame rate can cause an app to seem sluggish or disruptive to its users, so it’s important to remove temporary interruptions, or , to optimize your app’s user experience. To get information about the cause of slowness in your app’s frame rate, you can use the Game Performance template in Instruments, which combines threading and system call information with the Metal system trace instrument. By presenting important app states and rendering activities, the Game Performance template helps you infer the changes that are necessary to achieve consistent, smooth rendering.
+A low-performing frame rate can cause an app to seem sluggish or disruptive to its users, so it’s important to remove temporary interruptions, or *stutters*, to optimize your app’s user experience. To get information about the cause of slowness in your app’s frame rate, you can use the Game Performance template in Instruments, which combines threading and system call information with the Metal system trace instrument. By presenting important app states and rendering activities, the Game Performance template helps you infer the changes that are necessary to achieve consistent, smooth rendering.
 
 ##### Open the Game Performance Template
 
@@ -19,6 +19,18 @@ In the Template Selection window, select Game Performance and click Choose.
 ##### Get to Know the Instruments
 
 The Game Performance template includes the following instruments:
+
+- **Points of Interest**: Indicates locations in the trace that a developer might want to pay special attention to.
+- **System Load**: Tracks the performance and current load of the system.
+- **Thread State Trace**: Traces each time the OS scheduler makes a decision that might impact your app’s threads.
+- **System Call Trace**: Records system calls and their duration.
+- **Virtual Memory Trace**: Tracks virtual memory activity per thread.
+- **Time Profiler**: Profiles the running threads on all cores at regular intervals for the app.
+- **Thermal State**: Records the device thermal state.
+- **Metal Resource Events**: Records Metal GPU resource allocations, such as textures and buffers.
+- **Metal Application**: Records Metal app events.
+- **GPU**: Records GPU events.
+- **Display**: Records display and vertical synchronization events.
 
 ##### Include Performance Limiter or Utilization Counters
 
@@ -72,11 +84,11 @@ Because the combined duration of the vertex and the fragment shader is more than
 
 The following are additional reasons for overutilization of the shader cores:
 
--  Indicated by the renderer depriving the GPU of downtime.  Check the number of render passes that occur at the time of the poor frame rate by using the Dependencies viewer. For more information, see [`Analyzing resource dependencies`](analyzing-resource-dependencies.md).
--  Inidicated by critically more fragment shader activity per the same number of submitted vertices, as compared to when your viewport is set to the smaller size. To ensure your app’s viewport isn’t related to the slowdown, temporarily reduce the viewport size to see if performance improves.
--  Indicated by high synchronization time when profiling your fragment shader. The per-line profiling result shows a high percentage of time in wait memory. For more information, see [`Inspecting shaders`](inspecting-shaders.md).
--  Indicated by a high number of vertices that your app submits. Check the affected frames using the Geometry viewer. For more information, see [`Inspecting the geometry of a draw command`](inspecting-the-geometry-of-a-draw-command.md).
--  Indicated by general shader sluggishness. If you’re able to modify your app’s shaders, profile them to identify hot spots. For example, you can optimize your shaders by downsizing data types, or by minimizing the use of control structures. You don’t necessarily know whether your shaders can benefit from optimization until you try it. For more information, see [`Inspecting shaders`](inspecting-shaders.md).
+- **Too many render passes:** Indicated by the renderer depriving the GPU of downtime.  Check the number of render passes that occur at the time of the poor frame rate by using the Dependencies viewer. For more information, see [`Analyzing resource dependencies`](analyzing-resource-dependencies.md).
+- **High resolution:** Inidicated by critically more fragment shader activity per the same number of submitted vertices, as compared to when your viewport is set to the smaller size. To ensure your app’s viewport isn’t related to the slowdown, temporarily reduce the viewport size to see if performance improves.
+- **Large textures:** Indicated by high synchronization time when profiling your fragment shader. The per-line profiling result shows a high percentage of time in wait memory. For more information, see [`Inspecting shaders`](inspecting-shaders.md).
+- **Large meshes:** Indicated by a high number of vertices that your app submits. Check the affected frames using the Geometry viewer. For more information, see [`Inspecting the geometry of a draw command`](inspecting-the-geometry-of-a-draw-command.md).
+- **Unoptimized shader code:** Indicated by general shader sluggishness. If you’re able to modify your app’s shaders, profile them to identify hot spots. For example, you can optimize your shaders by downsizing data types, or by minimizing the use of control structures. You don’t necessarily know whether your shaders can benefit from optimization until you try it. For more information, see [`Inspecting shaders`](inspecting-shaders.md).
 
 ##### Check Cpu Utilization
 
@@ -131,7 +143,7 @@ A priority of 45 is recommended for rendering threads. To set your thread’s pr
 
 ##### Check Cpu Gpu Overlap
 
-In addition to shader core and CPU utilization, more subtle causes of low frame rate involve CPU-GPU pipelining. In this context,  refers to how well your app coordinates the efforts of the CPU and the GPU while maintaining a consistent frame rate. By minimizing the amount of time the CPU and the GPU wait for each other, you maximize the amount of work each unit does in parallel. That’s called .
+In addition to shader core and CPU utilization, more subtle causes of low frame rate involve CPU-GPU pipelining. In this context, *pipelining* refers to how well your app coordinates the efforts of the CPU and the GPU while maintaining a consistent frame rate. By minimizing the amount of time the CPU and the GPU wait for each other, you maximize the amount of work each unit does in parallel. That’s called *CPU-GPU overlap*.
 
 For example, if you have a rendering algorithm that needs the result from a compute pass before encoding rendering commands, Metal provides indirect command buffers (ICBs) to increase overlap. By generating rendering commands on the GPU using ICBs, you can avoid having the CPU wait for the compute results. For more information, see [`Encoding indirect command buffers on the GPU`](https://developer.apple.com/documentation/Metal/encoding-indirect-command-buffers-on-the-gpu).
 

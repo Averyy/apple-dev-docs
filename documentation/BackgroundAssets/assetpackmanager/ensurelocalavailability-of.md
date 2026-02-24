@@ -25,7 +25,7 @@ func ensureLocalAvailability(of assetPack: AssetPack) async throws
 
 #### Discussion
 
-This method checks if the asset pack is currently downloaded. If it isn’t, then it schedules it to be downloaded and waits for the download to complete. It’s guaranteed that the requested asset pack will be available locally once this method returns without throwing. If the method throws, then the asset pack is  guaranteed to be available locally. You can optionally monitor download progress by awaiting status updates from [`statusUpdates`](assetpackmanager/statusupdates.md) or [`statusUpdates(forAssetPackWithID:)`](assetpackmanager/statusupdates(forassetpackwithid:).md) in a different task.
+This method checks if the asset pack is currently downloaded. If it isn’t, then it schedules it to be downloaded and waits for the download to complete. It’s guaranteed that the requested asset pack will be available locally once this method returns without throwing. If the method throws, then the asset pack is **not** guaranteed to be available locally. You can optionally monitor download progress by awaiting status updates from [`statusUpdates`](assetpackmanager/statusupdates.md) or [`statusUpdates(forAssetPackWithID:)`](assetpackmanager/statusupdates(forassetpackwithid:).md) in a different task.
 
 > **Note**: When the asset pack can’t be downloaded.
 

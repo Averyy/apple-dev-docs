@@ -38,8 +38,8 @@ Chart(data) {
 
 ## Parameters
 
-- `xStart`: The x start position. If   is   then the rectangle will start at the leading edge of the plotting area.
-- `xEnd`: The x end position. If   is   then the rectangle will end at the trailing edge of the plotting area.
+- `xStart`: The x start position. If `xStart` is `nil` then the rectangle will start at the leading edge of the plotting area.
+- `xEnd`: The x end position. If `xStart` is `nil` then the rectangle will end at the trailing edge of the plotting area.
 - `yStart`: The value plotted to y start.
 - `yEnd`: The value plotted to y end.
 

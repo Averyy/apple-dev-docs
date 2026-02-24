@@ -26,9 +26,9 @@ To create a parent/child relationship between view controllers, use the [`addChi
 
 ## Parameters
 
-- `fromViewController`: A child view controller whose view is visible in the view controller’s view hierarchy.
+- `fromViewController`: A child view controller whose view is visible in the view controller’s view hierarchy. > **Note**:  The view of this view controller must have a superview, or else this method raises an exception.
 - `toViewController`: A child view controller whose view is not in the view controller’s view hierarchy.
-- `options`: A bitmask of options that specify how you want to perform the transition animation. For the options, see the   enumeration.
+- `options`: A bitmask of options that specify how you want to perform the transition animation. For the options, see the [`NSViewController.TransitionOptions`](nsviewcontroller/transitionoptions.md) enumeration.
 - `completion`: A block called immediately after the transition animation completes.
 
 ## See Also

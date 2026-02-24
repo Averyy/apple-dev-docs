@@ -30,8 +30,8 @@ This function does not attempt to resolve the bookmark data or perform I/O.
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
-- `resourcePropertyKey`: The resource property key. See   for a list of possible keys.
+- `allocator`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `resourcePropertyKey`: The resource property key. See [`Common File System Resource Keys`](common-file-system-resource-keys.md) for a list of possible keys.
 - `bookmark`: The bookmark data the resource value is derived from.
 
 ## See Also

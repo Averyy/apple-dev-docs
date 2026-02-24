@@ -24,7 +24,7 @@ Raises an `NSRangeException` if the range specified exceeds the bounds of the ac
 
 ## Parameters
 
-- `glyphArray`: On output, the displayable glyphs from  , null-terminated. Does not include in the result any   or other glyphs that are not shown. The memory passed in should be large enough for at least   elements.
+- `glyphArray`: On output, the displayable glyphs from `glyphRange`, null-terminated. Does not include in the result any [`NSNullGlyph`](nsnullglyph.md) or other glyphs that are not shown. The memory passed in should be large enough for at least `glyphRange.length+1` elements.
 - `glyphRange`: The range of glyphs from which to return the displayable glyphs.
 
 ## See Also

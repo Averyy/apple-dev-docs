@@ -24,7 +24,7 @@ Before calling this method, check the value in the [`isInputGainSettable`](avaud
 
 ## Parameters
 
-- `gain`: The new gain value, which must be in the range   to  , where   represents the lowest gain setting and   represents the highest gain setting.
+- `gain`: The new gain value, which must be in the range `0.0` to `1.0`, where `0.0` represents the lowest gain setting and `1.0` represents the highest gain setting.
 
 ## See Also
 

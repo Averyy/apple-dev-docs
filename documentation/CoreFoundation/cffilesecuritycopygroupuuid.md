@@ -26,8 +26,8 @@ Returns `true` if a group UUID was successfully copied, or `false` if there is n
 
 ## Parameters
 
-- `fileSec`: The   object.
-- `groupUUID`: The address of a   where the results are stored.
+- `fileSec`: The `CFFileSecurityRef` object.
+- `groupUUID`: The address of a `CFUUIDRef` where the results are stored.
 
 ## See Also
 

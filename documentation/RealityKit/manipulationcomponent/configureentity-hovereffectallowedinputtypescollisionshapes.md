@@ -23,9 +23,9 @@ Use this method on an entity that already has a mesh asset in a [`ModelComponent
 ## Parameters
 
 - `entity`: The entity to configure.
-- `hoverEffect`: A replacement for the default   this method applies.
+- `hoverEffect`: A replacement for the default `HoverEffect` this method applies.
 - `allowedInputTypes`: A replacement for the allowed input types this method applies.
-- `collisionShapes`: A replacement for the deafult collision shape this method   generates based on the entity’s bounding box.
+- `collisionShapes`: A replacement for the deafult collision shape this method generates based on the entity’s bounding box.
 
 ## See Also
 

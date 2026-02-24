@@ -17,9 +17,13 @@ A unique identifier for a bundle.
 
 - [Managing your app’s information property list values](managing-your-app-s-information-property-list.md)
 
+
+
+**Type**: string
+
 #### Discussion
 
-A  uniquely identifies a single app throughout the system. The bundle ID string must contain only alphanumeric characters (A–Z, a–z, and 0–9), hyphens (-), and periods (.). Typically, you use a reverse-DNS format for bundle ID strings. Bundle IDs are case-insensitive.
+A *bundle ID* uniquely identifies a single app throughout the system. The bundle ID string must contain only alphanumeric characters (A–Z, a–z, and 0–9), hyphens (-), and periods (.). Typically, you use a reverse-DNS format for bundle ID strings. Bundle IDs are case-insensitive.
 
 The operating system uses the bundle ID to identify the app when applying specified preferences. Similarly, [`Launch Services`](https://developer.apple.com/documentation/coreservices/launch_services) uses the bundle ID to locate an app capable of opening a particular file. The bundle ID also validates an app’s signature.
 

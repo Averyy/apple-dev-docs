@@ -42,7 +42,7 @@ The following example disables the menu item associated with the `nextRecord` ac
 
 ## Parameters
 
-- `menuItem`: An   object that represents the menu item.
+- `menuItem`: An [`NSMenuItem`](nsmenuitem.md) object that represents the menu item.
 
 
 ---

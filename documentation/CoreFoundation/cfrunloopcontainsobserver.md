@@ -32,7 +32,7 @@ If `observer` was added to [`commonModes`](cfrunloopmode/commonmodes.md), this f
 
 - `rl`: The run loop to examine.
 - `observer`: The run loop observer for which to search.
-- `mode`: The run loop mode in which to search for  . Use the constant   to search for   in the set of objects monitored by all the common modes.
+- `mode`: The run loop mode in which to search for `observer`. Use the constant [`commonModes`](cfrunloopmode/commonmodes.md) to search for `observer` in the set of objects monitored by all the common modes.
 
 ## See Also
 

@@ -22,7 +22,7 @@ optional func parser(_ parser: XMLParser, foundComment comment: String)
 
 ## Parameters
 
-- `parser`: An   object parsing XML.
+- `parser`: An `NSXMLParser` object parsing XML.
 - `comment`: A string that is a the content of a comment in the XML.
 
 ## See Also

@@ -30,11 +30,11 @@ Gains access to the data represented by a [`CMBlockBuffer`](cmblockbuffer.md). A
 
 ## Parameters
 
-- `theBuffer`:   to operate on. Must not be 
+- `theBuffer`: `CMBlockBuffer` to operate on. Must not be `NULL`
 - `offset`: Offset within the buffer’s offset range.
-- `lengthAtOffsetOut`: On return, contains the amount of data available at the specified offset. May be  .
-- `totalLengthOut`: On return, contains the block buffer’s total data length (from offset 0). May be  .
-- `dataPointerOut`: On return, contains a pointer to the data byte at the specified offset;   bytes are available at this address. May be  .
+- `lengthAtOffsetOut`: On return, contains the amount of data available at the specified offset. May be `NULL`.
+- `totalLengthOut`: On return, contains the block buffer’s total data length (from offset 0). May be `NULL`.
+- `dataPointerOut`: On return, contains a pointer to the data byte at the specified offset; `lengthAtOffset` bytes are available at this address. May be `NULL`.
 
 ## See Also
 

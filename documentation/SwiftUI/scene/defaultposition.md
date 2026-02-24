@@ -59,7 +59,7 @@ The value that you provide acts only as an initial default. During state restora
 
 ## Parameters
 
-- `position`: A   that specifies where to place a   newly opened window relative to the screen bounds.
+- `position`: A [`UnitPoint`](unitpoint.md) that specifies where to place a newly opened window relative to the screen bounds.
 
 ## See Also
 

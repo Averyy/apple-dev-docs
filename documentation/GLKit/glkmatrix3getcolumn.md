@@ -23,8 +23,8 @@ A vector representing the column retrieved from the matrix.
 
 ## Parameters
 
-- `matrix`: A   matrix.
-- `column`: The column index, which must be a number between   and  , inclusive.
+- `matrix`: A `3x3` matrix.
+- `column`: The column index, which must be a number between `0` and `2`, inclusive.
 
 ## See Also
 

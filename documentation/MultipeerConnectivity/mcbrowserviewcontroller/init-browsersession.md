@@ -29,7 +29,7 @@ This method throws an exception if the `browser` or `session` parameters do not 
 
 ## Parameters
 
-- `browser`: An object that the browser view controller uses for browsing. This is usually an instance of  . However, if your app is using a custom discovery scheme, you can instead pass any custom subclass that calls the methods defined in the   protocol on its delegate when peers are found and lost.
+- `browser`: An object that the browser view controller uses for browsing. This is usually an instance of `MCNearbyServiceBrowser`. However, if your app is using a custom discovery scheme, you can instead pass any custom subclass that calls the methods defined in the [`MCNearbyServiceBrowserDelegate`](mcnearbyservicebrowserdelegate.md) protocol on its delegate when peers are found and lost. > ❗ **Important**:  If you want the browser view controller to manage the browsing process, the browser object must not be actively browsing, and its delegate must be `nil`.
 - `session`: The multipeer session into which the invited peers are connected.
 
 ## See Also

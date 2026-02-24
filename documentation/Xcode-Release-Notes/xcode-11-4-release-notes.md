@@ -18,7 +18,7 @@ Xcode 11.4 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and 
 
 ###### Known Issues
 
-- When targeting devices running iOS 13.3.1, tvOS 13.3.1, watchOS 6.1, or later using a free Apple Developer account, app extensions incorrectly count against the limit of three apps installed simultaneously. When this happens, Xcode reports an error: “The maximum number of apps for free development profiles has been reached.” (59264389) (FB7568073) : Delete apps signed with your free account from your device and also remove any associated provisioning profiles from the device using Xcode’s Devices window. If your app contains more than two app extensions, remove them to remain under the three app limit.
+- When targeting devices running iOS 13.3.1, tvOS 13.3.1, watchOS 6.1, or later using a free Apple Developer account, app extensions incorrectly count against the limit of three apps installed simultaneously. When this happens, Xcode reports an error: “The maximum number of apps for free development profiles has been reached.” (59264389) (FB7568073) **Workaround**: Delete apps signed with your free account from your device and also remove any associated provisioning profiles from the device using Xcode’s Devices window. If your app contains more than two app extensions, remove them to remain under the three app limit.
 
 ###### Resolved Issues
 
@@ -74,8 +74,8 @@ $(SETTING:default=something)
 
 ###### Known Issues
 
-- The Build & Run action may fail to launch a watchOS app on series 2 and series 3 watch simulators when attempting to deploy soon after booting the simulator. (60281738) : Build and run again on the simulator after the simulated device finishes booting.
-- Xcode may not persist changes made to diagnostics in the Scheme Editor within the first few minutes of opening a project for the first time. For example, if you enable the Malloc Stack Logging checkbox soon after creating a new project from a template, the checkbox may be spontaneously unchecked before you build and run the target, thus preventing the diagnostics from being enabled. (59154142) : If you find that diagnostics you enabled, such as Malloc Stack Logging, aren’t working, please check the scheme editor because the relevant checkboxes may have spontaneously become unchecked. Re-enable the desired preference. Xcode will recover in a few minutes and save the selections you’ve made.
+- The Build & Run action may fail to launch a watchOS app on series 2 and series 3 watch simulators when attempting to deploy soon after booting the simulator. (60281738) **Workaround**: Build and run again on the simulator after the simulated device finishes booting.
+- Xcode may not persist changes made to diagnostics in the Scheme Editor within the first few minutes of opening a project for the first time. For example, if you enable the Malloc Stack Logging checkbox soon after creating a new project from a template, the checkbox may be spontaneously unchecked before you build and run the target, thus preventing the diagnostics from being enabled. (59154142) **Workaround**: If you find that diagnostics you enabled, such as Malloc Stack Logging, aren’t working, please check the scheme editor because the relevant checkboxes may have spontaneously become unchecked. Re-enable the desired preference. Xcode will recover in a few minutes and save the selections you’ve made.
 
 ###### Resolved Issues
 
@@ -195,9 +195,9 @@ $(SETTING:default=something)
 
 ###### Known Issues
 
-- On-device debugging of SwiftUI Previews may not work for Series 2 and Series 3 watches because the preview is built for the wrong architecture. (59909746) : Use the Build & Run action with the watch selected as the destination. The application will be built for the correct architecture.
-- Previews may fail for Mac Catalyst applications or sandboxed macOS applications when Xcode isn’t in the Applications folder. (57096274) : Move Xcode to the Applications folder
-- Using [`ForEach`](https://developer.apple.com/documentation/SwiftUI/ForEach) to set Preview properties may result in preview failure. (58985849) : Use [`Group`](https://developer.apple.com/documentation/SwiftUI/Group) to set Preview properties.
+- On-device debugging of SwiftUI Previews may not work for Series 2 and Series 3 watches because the preview is built for the wrong architecture. (59909746) **Workaround**: Use the Build & Run action with the watch selected as the destination. The application will be built for the correct architecture.
+- Previews may fail for Mac Catalyst applications or sandboxed macOS applications when Xcode isn’t in the Applications folder. (57096274) **Workaround**: Move Xcode to the Applications folder
+- Using [`ForEach`](https://developer.apple.com/documentation/SwiftUI/ForEach) to set Preview properties may result in preview failure. (58985849) **Workaround**: Use [`Group`](https://developer.apple.com/documentation/SwiftUI/Group) to set Preview properties.
 
 ###### Resolved Issues
 
@@ -214,13 +214,13 @@ $(SETTING:default=something)
 
 ###### Known Issues
 
-- When restoring a workspace, the Canvas and Assistant checkboxes are sometimes unexpectedly disabled in the Editor Options menu. (59962740) : Use the Canvas and Assistant items in the Editor menu, or their respective keyboard shortcuts, to toggle the visibility of these views.
+- When restoring a workspace, the Canvas and Assistant checkboxes are sometimes unexpectedly disabled in the Editor Options menu. (59962740) **Workaround**: Use the Canvas and Assistant items in the Editor menu, or their respective keyboard shortcuts, to toggle the visibility of these views.
 
 ##### Server
 
 ###### Known Issues
 
-- An Xcode Server bot loses authentication when a user clicks the “Replace Repositories” button under the Repositories tab. (59066142) : Either don’t click “Replace Repositories”, or reauthenticate after doing so.
+- An Xcode Server bot loses authentication when a user clicks the “Replace Repositories” button under the Repositories tab. (59066142) **Workaround**: Either don’t click “Replace Repositories”, or reauthenticate after doing so.
 - Users can no longer select which branch to use for integrations under the Repositories tab of an Xcode Server bot. (59068222, 58615215)
 
 ##### Simulator
@@ -251,9 +251,9 @@ xcrun simctl push <device> com.example.my-app ExamplePush.apns
 
 ###### Known Issues
 
-- Pointer capture isn’t supported over a Screen Sharing session. If you enable pointer capture all input will be blocked and you will be unable to exit capturing mode. Capture mode monitors for HID events, so any system that injects CGEvents directly isn’t usable with Simulator’s capturing support. (59411574) : Disconnect and reconnect Screen Sharing. This will automatically cancel pointer capturing.
+- Pointer capture isn’t supported over a Screen Sharing session. If you enable pointer capture all input will be blocked and you will be unable to exit capturing mode. Capture mode monitors for HID events, so any system that injects CGEvents directly isn’t usable with Simulator’s capturing support. (59411574) **Workaround**: Disconnect and reconnect Screen Sharing. This will automatically cancel pointer capturing.
 - Notification Service Extensions do not work in simulated push notifications. The `mutable-content` key is not honored. (55822721)
-- Third-party “endpoint security” software may cause slow simulators, system freezes, or prevent debug processes from running in simulators reliably. This sometimes manifests as `debugserver` disconnections, or sends simulator applications a `SIGKILL` signal. (55853555) : Uninstall the third-party software.
+- Third-party “endpoint security” software may cause slow simulators, system freezes, or prevent debug processes from running in simulators reliably. This sometimes manifests as `debugserver` disconnections, or sends simulator applications a `SIGKILL` signal. (55853555) **Workaround**: Uninstall the third-party software.
 
 ###### Resolved Issues
 
@@ -265,7 +265,7 @@ xcrun simctl push <device> com.example.my-app ExamplePush.apns
 
 ###### Known Issues
 
-- Xcode 11.4 fails to generate source files from your intent definition files when using the Legacy Build System. (60591035) : First, add a Run Script phase before the Compile Sources phase of your target: ```shell
+- Xcode 11.4 fails to generate source files from your intent definition files when using the Legacy Build System. (60591035) **Workaround**: First, add a Run Script phase before the Compile Sources phase of your target: ```shell
 xcrun intentbuilderc generate -input ${SRCROOT}/PATH/TO/Intents.intentdefinition -output ${SRCROOT}/Intents -classPrefix "" -language Swift -swiftVersion 5.0
 ``` Then, add all of the generated files from the output path specified in the command above to all required targets in your project. You can find more information about arguments of `intentbuilderc` by running this command: ```shell
 xcrun intentbuilderc help
@@ -407,7 +407,7 @@ class Derived: Base {
 
 ##### Known Issues
 
-- If an Objective-C class is defined with the `objc_runtime_name` attribute and imported into Swift, Swift code may crash when trying to access the class. (60888835) : Instead of using `objc_runtime_name`, define the class with its runtime name as the class name, and use a `typedef` to establish the desired source-level name: ```swift
+- If an Objective-C class is defined with the `objc_runtime_name` attribute and imported into Swift, Swift code may crash when trying to access the class. (60888835) **Workaround**: Instead of using `objc_runtime_name`, define the class with its runtime name as the class name, and use a `typedef` to establish the desired source-level name: ```swift
 // This may cause a crash.
 
 __attribute__((objc_runtime_name("Bar")))
@@ -427,7 +427,7 @@ switch x { // error: switch must be exhaustive
        // to match that instead
   ...
 }
-``` : Add extra parentheses to explicitly tuple the pattern: ```swift
+``` **Workaround**: Add extra parentheses to explicitly tuple the pattern: ```swift
 switch x {
     case .some(((let a, let b), let c)): // Notice the extra pair of parentheses.
     ...

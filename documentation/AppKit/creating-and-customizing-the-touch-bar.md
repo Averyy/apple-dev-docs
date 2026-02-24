@@ -98,7 +98,7 @@ func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchB
 
 ##### Add a Popover to the Touch Bar
 
-An [`NSCustomTouchBarItem`](nscustomtouchbaritem.md) class shows its own Touch Bar when the user taps and holds on it. This class is a two-state control that can expand into its second state, which shows the contents of a bar it owns. The second Touch Bar displays when this item . The following example shows how to create an [`NSPopoverTouchBarItem`](nspopovertouchbaritem.md) with an [`NSScrubber`](nsscrubber.md) view with a set of numbered text items:
+An [`NSCustomTouchBarItem`](nscustomtouchbaritem.md) class shows its own Touch Bar when the user taps and holds on it. This class is a two-state control that can expand into its second state, which shows the contents of a bar it owns. The second Touch Bar displays when this item *pops*. The following example shows how to create an [`NSPopoverTouchBarItem`](nspopovertouchbaritem.md) with an [`NSScrubber`](nsscrubber.md) view with a set of numbered text items:
 
 ```swift
 func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchBarItem.Identifier) -> NSTouchBarItem? {

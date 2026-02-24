@@ -35,7 +35,7 @@ func descendant(matchingIdentifierPath identifierPath: [String]) async throws ->
 ## Parameters
 
 - `identifierPath`: The identifier path of the context to find, relative to the current context.
-- `completion`: A closure the method calls with the found context, or   if none could be found, and an error indicating the reason for failure, if any.
+- `completion`: A closure the method calls with the found context, or `nil` if none could be found, and an error indicating the reason for failure, if any.
 
 ## See Also
 

@@ -32,7 +32,7 @@ This method can only be called while the session is active (the [`activationStat
 
 ## Parameters
 
-- `userInfo`: A dictionary of property list values that you want to send. You define the contents of the dictionary that your counterpart supports. This parameter must not be  .
+- `userInfo`: A dictionary of property list values that you want to send. You define the contents of the dictionary that your counterpart supports. This parameter must not be `nil`.
 
 ## See Also
 

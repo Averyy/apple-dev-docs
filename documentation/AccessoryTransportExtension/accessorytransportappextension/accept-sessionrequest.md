@@ -23,7 +23,7 @@ Implement this callback and respond to its invocations by the framework.
 
 ## Parameters
 
-- `sessionRequest`: An   instance you use to accept or reject the session.
+- `sessionRequest`: An [`AccessoryTransportSession.Request`](accessorytransportsession/request.md) instance you use to accept or reject the session.
 
 ## See Also
 

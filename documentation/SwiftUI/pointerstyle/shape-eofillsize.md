@@ -23,7 +23,7 @@ You may apply this pointer style to a single view or a view hierarchy using the 
 ## Parameters
 
 - `shape`: The pointer shape.
-- `eoFill`: A Boolean that indicates whether the shape is interpreted   with the even-odd winding number rule.
+- `eoFill`: A Boolean that indicates whether the shape is interpreted with the even-odd winding number rule.
 - `size`: The size of the pointer shape.
 
 ## See Also

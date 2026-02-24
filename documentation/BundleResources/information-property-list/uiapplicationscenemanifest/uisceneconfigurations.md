@@ -11,6 +11,10 @@ The default configuration details the system uses to create new scenes.
 - Mac Catalyst 13.0+
 - visionOS 1.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 The keys in the dictionary correspond to the roles played by your scenes.

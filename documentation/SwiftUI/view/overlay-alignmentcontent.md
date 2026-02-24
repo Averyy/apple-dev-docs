@@ -111,8 +111,8 @@ If you want to specify a [`ShapeStyle`](shapestyle.md) like a [`Color`](color.md
 
 ## Parameters
 
-- `alignment`: The alignment that the modifier uses to position the   implicit   that groups the foreground views. The default   is  .
-- `content`: A   that you use to declare the views to   draw in front of this view, stacked in the order that you list them.   The last view that you list appears at the front of the stack.
+- `alignment`: The alignment that the modifier uses to position the implicit [`ZStack`](zstack.md) that groups the foreground views. The default is [`center`](alignment/center.md).
+- `content`: A [`ViewBuilder`](viewbuilder.md) that you use to declare the views to draw in front of this view, stacked in the order that you list them. The last view that you list appears at the front of the stack.
 
 ## See Also
 

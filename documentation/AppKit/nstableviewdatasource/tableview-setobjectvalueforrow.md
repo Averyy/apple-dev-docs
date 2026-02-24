@@ -25,8 +25,8 @@ This method is intended for use with cell-based table views, it must not be used
 
 - `tableView`: The table view that sent the message.
 - `object`: The new value for the item.
-- `tableColumn`: A column in  .
-- `row`: The row of the item in  .
+- `tableColumn`: A column in `aTableView`.
+- `row`: The row of the item in `aTableColumn`.
 
 
 ---

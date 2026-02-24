@@ -14,6 +14,11 @@ Record the categories of data that your app or third-party SDK collects about th
 
 For each type of data your app or third-party SDK collects, add a dictionary to the [`NSPrivacyCollectedDataTypes`](app-privacy-configuration/nsprivacycollecteddatatypes.md) array in your privacy information file. Add the following keys to the dictionary.
 
+- **[`NSPrivacyCollectedDataType`](app-privacy-configuration/nsprivacycollecteddatatypes/nsprivacycollecteddatatype.md)**: A string that identifies the type of data your app or third-party SDK collects. Choose the value from the list of data types below that matches the data your app or third-party SDK collects.
+- **[`NSPrivacyCollectedDataTypeLinked`](app-privacy-configuration/nsprivacycollecteddatatypes/nsprivacycollecteddatatypelinked.md)**: A Boolean that indicates whether your app or third-party SDK links this data type to the user’s identity. For more information, see Data linked to the user in [`App privacy details on the App Store`](https://developer.apple.comhttps://developer.apple.com/app-store/app-privacy-details/#linked-data).
+- **[`NSPrivacyCollectedDataTypeTracking`](app-privacy-configuration/nsprivacycollecteddatatypes/nsprivacycollecteddatatypetracking.md)**: A Boolean that indicates whether your app or third-party SDK uses this data type to track.
+- **[`NSPrivacyCollectedDataTypePurposes`](app-privacy-configuration/nsprivacycollecteddatatypes/nsprivacycollecteddatatypepurposes.md)**: An array of strings that lists the reasons your app or third-party SDK collects the data. Choose values from the list of purposes below that match the reasons your app or third-party SDK collects this data type.
+
 Xcode won’t generate a privacy report correctly if you define your own collected data types for the `NSPrivacyCollectedDataType` key, or provide your own reasons for the `NSPrivacyCollectedDataTypePurposes` key. Use values listed in the documentation for the keys.
 
 ##### Create Your Apps Privacy Report

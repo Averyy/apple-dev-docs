@@ -22,7 +22,7 @@ If you create a class that implements the color-picking protocols (`NSColorPicki
 
 ## Parameters
 
-- `mask`: One or more logically ORed color mode masks described in  .
+- `mask`: One or more logically ORed color mode masks described in `Color Picker Mode Masks`.
 
 ## See Also
 

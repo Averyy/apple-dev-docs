@@ -24,7 +24,8 @@ This method applies only to custom subclasses of the [`UIDynamicBehavior`](uidyn
 
 ## Parameters
 
-- `behavior`: The parent behavior ignores your use of this method if you:
+- `behavior`: The child dynamic behavior you want to remove. The parent behavior ignores your use of this method if you: - Provide a `nil` value
+- Provide a behavior instance that is not a child of the parent behavior
 
 ## See Also
 

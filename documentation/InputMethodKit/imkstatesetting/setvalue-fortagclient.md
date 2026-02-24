@@ -17,7 +17,7 @@ func setValue(_ value: Any!, forTag tag: Int, client sender: Any!)
 
 ## Parameters
 
-- `value`: The value, specified as the appropriate object (such as  ), to set.
+- `value`: The value, specified as the appropriate object (such as `NSNumber`), to set.
 - `tag`: The key whose value you want to set.
 - `sender`: The client setting the value.
 

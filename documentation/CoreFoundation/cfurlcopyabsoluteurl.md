@@ -26,7 +26,7 @@ A new `CFURL` object, or `NULL` if `relativeURL` cannot be made absolute. Owners
 
 ## Parameters
 
-- `relativeURL`: The   object to resolve.
+- `relativeURL`: The `CFURL` object to resolve.
 
 ## See Also
 

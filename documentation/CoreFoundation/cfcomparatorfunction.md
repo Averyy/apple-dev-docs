@@ -34,7 +34,7 @@ You can also pass pointers to standard Core Foundation comparator functions such
 
 - `val1`: The first value to compare.
 - `val2`: The second value to compare.
-- `context`: The meaning of this value and its use are defined by each comparator function. This value is usually passed to a sort function, such as  , which then passes it, unchanged, to the comparator function.
+- `context`: An untyped pointer to the context of the evaluation. The meaning of this value and its use are defined by each comparator function. This value is usually passed to a sort function, such as [`CFArraySortValues(_:_:_:_:)`](cfarraysortvalues(_:_:_:_:).md), which then passes it, unchanged, to the comparator function.
 
 
 ---

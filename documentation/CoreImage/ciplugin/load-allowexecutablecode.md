@@ -21,7 +21,7 @@ You need to call this method only once to load a specific image unit. The behavi
 ## Parameters
 
 - `url`: The location of the image unit to load.
-- `allowExecutableCode`:   to load all filters from the image unit, or   to load only those filters without CPU executable code.
+- `allowExecutableCode`: [`true`](https://developer.apple.com/documentation/Swift/true) to load all filters from the image unit, or [`false`](https://developer.apple.com/documentation/Swift/false) to load only those filters without CPU executable code.
 
 ## See Also
 

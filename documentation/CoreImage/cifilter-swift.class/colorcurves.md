@@ -29,6 +29,11 @@ This method applies the color curves filter to an image. The effect uses a three
 
 The color curves filter uses the following properties:
 
+- **`colorSpace`**: A [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) representing the color space for the color curve.
+- **`curvesData`**: Data containing a color table of floating-point RGB values as [`NSData`](https://developer.apple.com/documentation/Foundation/NSData).
+- **`curvesDomain`**: A two-element vector that defines the minimum and maximum values of the curve data as a [`CIVector`](civector.md).
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds brightness to the input image:
 
 ```swift

@@ -18,7 +18,7 @@ func editItem(at indexPath: IndexPath, with event: NSEvent?, select: Bool)
 
 - `indexPath`: The path of the item.
 - `event`: The event to use when beginning the edit.
-- `select`: If  , the cells contents will be selected; if  , they will not be selected.
+- `select`: If [`true`](https://developer.apple.com/documentation/Swift/true), the cells contents will be selected; if [`false`](https://developer.apple.com/documentation/Swift/false), they will not be selected.
 
 ## See Also
 

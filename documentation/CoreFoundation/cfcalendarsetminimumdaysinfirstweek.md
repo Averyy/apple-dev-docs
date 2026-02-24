@@ -23,7 +23,7 @@ func CFCalendarSetMinimumDaysInFirstWeek(_ calendar: CFCalendar!, _ mwd: CFIndex
 ## Parameters
 
 - `calendar`: The calendar to modify.
-- `mwd`: The number to set as the minimum number of days in the first week of  .
+- `mwd`: The number to set as the minimum number of days in the first week of `calendar`.
 
 ## See Also
 

@@ -37,8 +37,8 @@ If the processor implements this method, then when rendered;
 ## Parameters
 
 - `inputIndex`: The index that tells you which processor input for which to return the array of ROI rectangles
-- `arguments`: The arguments dictionary that was passed to  .
-- `outputRect`: The output   that processor will be asked to output.
+- `arguments`: The arguments dictionary that was passed to [`apply(withExtent:inputs:arguments:)`](ciimageprocessorkernel/apply(withextent:inputs:arguments:).md).
+- `outputRect`: The output `CGRect` that processor will be asked to output.
 
 ## See Also
 

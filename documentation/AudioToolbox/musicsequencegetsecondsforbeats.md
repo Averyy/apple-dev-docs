@@ -31,7 +31,7 @@ This function makes use of the music sequence’s tempo track.
 
 - `inSequence`: The sequence that you want to get a count of seconds for.
 - `inBeats`: The number of beats that you want the corresponding number of seconds for.
-- `outSeconds`: On output, the number of seconds that corresponds to the number of beats in the   parameter.
+- `outSeconds`: On output, the number of seconds that corresponds to the number of beats in the `inBeats` parameter.
 
 ## See Also
 

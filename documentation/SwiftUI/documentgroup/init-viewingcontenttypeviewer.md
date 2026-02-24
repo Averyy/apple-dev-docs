@@ -38,7 +38,7 @@ init(viewing modelType: any PersistentModel.Type, contentType: UTType, viewer: @
 ## Parameters
 
 - `modelType`: The model type defining the schema used for each document.
-- `contentType`: The content type of document your app can view.   It should conform to  .
+- `contentType`: The content type of document your app can view. It should conform to `UTType.package`.
 - `viewer`: The viewing UI for the provided document.
 
 ## See Also

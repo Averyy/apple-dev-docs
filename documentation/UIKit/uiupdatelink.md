@@ -20,7 +20,7 @@ class UIUpdateLink
 
 #### Overview
 
-With a , you can follow the progress of each UI update and express preferences about how those updates happen. Use a UI update link when you need precise and predictable control over the UI update process.
+With a *UI update link*, you can follow the progress of each UI update and express preferences about how those updates happen. Use a UI update link when you need precise and predictable control over the UI update process.
 
 There are multiple use cases for [`UIUpdateLink`](uiupdatelink.md), including:
 

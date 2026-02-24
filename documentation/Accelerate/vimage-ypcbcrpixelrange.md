@@ -22,7 +22,7 @@ struct vImage_YpCbCrPixelRange
 
 #### Overview
 
-Y’CbCr formats frequently don’t use the entire representable range available to them to represent image data. While a  video format does use the entire range, a  format often leaves the extrema unused, except perhaps to represent values outside of the standard `Y'=[0,1]` `CbCr = [-0.5,0.5]` range. For example, an 8-bit video range format typically uses the range `[16,235]` for Y’ and `[16,240]` for Cb and Cr.
+Y’CbCr formats frequently don’t use the entire representable range available to them to represent image data. While a *full range* video format does use the entire range, a *video range* format often leaves the extrema unused, except perhaps to represent values outside of the standard `Y'=[0,1]` `CbCr = [-0.5,0.5]` range. For example, an 8-bit video range format typically uses the range `[16,235]` for Y’ and `[16,240]` for Cb and Cr.
 
 The following code shows examples of typical Y’CbCr pixel ranges:
 

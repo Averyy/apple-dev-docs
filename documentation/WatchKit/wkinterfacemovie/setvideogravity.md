@@ -16,7 +16,7 @@ func setVideoGravity(_ videoGravity: WKVideoGravity)
 
 ## Parameters
 
-- `videoGravity`: The resizing option for the movie. For a list of possible values, see the   type.
+- `videoGravity`: The resizing option for the movie. For a list of possible values, see the [`WKVideoGravity`](wkvideogravity.md) type.
 
 ## See Also
 

@@ -30,7 +30,7 @@ It is safe to call this method from any thread in your app in macOS 10.6 and lat
 
 - `fullPath`: The full path to the file.
 - `image`: The icon for the file.
-- `point`: The point in   at which to display the icon.
+- `point`: The point in `aView` at which to display the icon.
 - `view`: The view in which to display the icon.
 
 ## See Also

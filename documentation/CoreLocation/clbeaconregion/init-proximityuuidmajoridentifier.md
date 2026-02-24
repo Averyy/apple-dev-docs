@@ -27,9 +27,9 @@ This method creates a region that reports all beacons with the specified `proxim
 
 ## Parameters
 
-- `proximityUUID`: The unique ID of the beacons you’re targeting. This value can’t be  .
+- `proximityUUID`: The unique ID of the beacons you’re targeting. This value can’t be `nil`.
 - `major`: The major value that you use to identify one or more beacons.
-- `identifier`: A unique identifier to associate with the returned region object. You use this identifier to differentiate regions within your app. This value can’t be  .
+- `identifier`: A unique identifier to associate with the returned region object. You use this identifier to differentiate regions within your app. This value can’t be `nil`.
 
 ## See Also
 

@@ -16,6 +16,11 @@ The bookmark in the allow list of the web content filter.
 object WebContentFilter.AllowListBookmarksItem
 ```
 
+## Properties
+
+- `Title` (string) *(required)*: The title of the bookmark.
+- `URL` (string) *(required)*: The URL of the bookmark in the allow list.
+
 ## See Also
 
 - [object WebContentFilter.URLFilterParameters](webcontentfilter/urlfilterparameters-data.dictionary.md)

@@ -27,6 +27,11 @@ object ActivationLockBypassCodeCommand
 - [object ActivationLockBypassCodeCommand.Command](activationlockbypasscodecommand/command-data.dictionary.md)
   The command to get the code to bypass Activation Lock on a device.
 
+## Properties
+
+- `Command` (ActivationLockBypassCodeCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object ActivationLockBypassCodeResponse](activationlockbypasscoderesponse.md)

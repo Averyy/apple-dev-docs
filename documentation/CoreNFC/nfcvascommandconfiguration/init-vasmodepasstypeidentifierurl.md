@@ -24,7 +24,7 @@ A newly initialized VAS command configuration object.
 
 - `mode`: A VAS operation mode.
 - `passTypeIdentifier`: A type identifier for the Wallet pass.
-- `url`: A URL when   is  ; otherwise set to  . The maximum length of the URL is 64 characters, including the schema.
+- `url`: A URL when `mode` is `VASModeURLOnly`; otherwise set to `nil`. The maximum length of the URL is 64 characters, including the schema.
 
 
 ---

@@ -26,9 +26,9 @@ All perform requests are canceled that have the same target as `aTarget`, argume
 
 ## Parameters
 
-- `aTarget`: The target for requests previously registered with the   instance method
-- `aSelector`: The   for requests previously registered with the   instance method.
-- `anArgument`: The argument for requests previously registered with the   instance method. Argument equality is determined using  , so the value need not be the same object that was passed originally. Pass   to match a request for   that was originally passed as the argument.
+- `aTarget`: The target for requests previously registered with the [`perform(_:with:afterDelay:)`](nsobject-swift.class/perform(_:with:afterdelay:).md) instance method
+- `aSelector`: The [`Selector`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Selector.html#//apple_ref/doc/uid/TP40008195-CH48) for requests previously registered with the [`perform(_:with:afterDelay:)`](nsobject-swift.class/perform(_:with:afterdelay:).md) instance method.
+- `anArgument`: The argument for requests previously registered with the [`perform(_:with:afterDelay:)`](nsobject-swift.class/perform(_:with:afterdelay:).md) instance method. Argument equality is determined using [`isEqual(_:)`](nsobjectprotocol/isequal(_:).md), so the value need not be the same object that was passed originally. Pass `nil` to match a request for `nil` that was originally passed as the argument.
 
 ## See Also
 

@@ -26,10 +26,10 @@ Advertised services should be registered with IANA.
 
 ## Parameters
 
-- `name`: The name to advertise. Defaults to  , which allows the system to provide the name.
+- `name`: The name to advertise. Defaults to `nil`, which allows the system to provide the name.
 - `type`: The Bonjour service type to advertise.
-- `domain`: The domain to advertise. Defaults to  , which allows Bonjour to register in all default registration domains.
-- `txtRecord`: An optional text record to advertise. If not provided, Bonjour will not register   any text record associated with this service. Later, a text record can be advertised by setting   on    with a TXT record.
+- `domain`: The domain to advertise. Defaults to `nil`, which allows Bonjour to register in all default registration domains.
+- `txtRecord`: An optional text record to advertise. If not provided, Bonjour will not register any text record associated with this service. Later, a text record can be advertised by setting `service` on `NetworkListener` with a TXT record.
 
 
 ---

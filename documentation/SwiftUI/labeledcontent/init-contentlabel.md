@@ -23,7 +23,7 @@ init(@ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label)
 
 ## Parameters
 
-- `content`: The view that conveys the value of the resulting labeled   element.
+- `content`: The view that conveys the value of the resulting labeled element.
 - `label`: The label that describes the purpose of the result.
 
 ## See Also

@@ -28,7 +28,7 @@ Do not use this method to stop the proxy from the App Proxy Provider. Use `cance
 
 ## Parameters
 
-- `reason`: A   code indicating why the proxy is being stopped. For a list of possible codes, see  .
+- `reason`: A `NEProviderStopReason` code indicating why the proxy is being stopped. For a list of possible codes, see [`NEProvider`](neprovider.md).
 - `completionHandler`: A block that must be executed when the proxy is fully stopped.
 
 ## See Also

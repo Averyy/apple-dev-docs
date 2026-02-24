@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: var
 
-A constant that represents  factorization without storing .
+A constant that represents *QR* factorization without storing *Q*.
 
 **Availability**:
 - iOS 11.0+
@@ -22,7 +22,7 @@ var SparseFactorizationCholeskyAtA: SparseFactorization_t { get }
 
 #### Discussion
 
-[`SparseFactorizationCholeskyAtA`](sparsefactorizationcholeskyata.md) provides an equivalent to 
+[`SparseFactorizationCholeskyAtA`](sparsefactorizationcholeskyata.md) provides an equivalent to *AᵀA = RᵀR.*
 
 ## See Also
 

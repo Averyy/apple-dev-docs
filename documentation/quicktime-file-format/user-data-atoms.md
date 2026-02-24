@@ -110,6 +110,12 @@ Tag strings have the following structure:
 
 This specification defines the following public media characteristic tags. Other public and private tags could be defined outside the specification; unrecognized tags should be ignored.
 
+- **`public.auxiliary-content` (valid for all media types)**: Indicates that the track’s content has been marked by the content author as auxiliary to the presentation of the media file. For example, a commentary audio or subtitle track might be marked with this tag, because it is not program content. If this tag is not present, a track can still be inferred to be tagged with this characteristic if the track is a member of an alternate group and the track is excluded from autoselection using the Track Exclude From Autoselection atom; see Track Exclude From Autoselection Atoms.
+- **`public.accessibility.transcribes-spoken-dialog` (valid for legible media)**: Indicates that the track includes legible content in the language of the track’s locale that transcribes spoken dialogue.
+- **`public.accessibility.describes-music-and-sound` (valid for legible media)**: Indicates that the track includes legible content in the language of the track’s locale that describes music and sound effects occurring in program audio.
+- **`public.accessibility.describes-video` (valid for audible media)**: Indicates that the track includes audible content that describes the visual portion of the presentation.
+- **`public.easy-to-read` (valid for legible media)**: Indicates that a track provides legible content in the language of its specified locale that has been edited for ease of reading.
+
 ## Topics
 
 ### Atoms for user data

@@ -30,8 +30,8 @@ You use this function to create custom allocators which you can then pass into v
 
 ## Parameters
 
-- `allocator`: The existing allocator to use to allocate memory for the new allocator. Pass the   constant for this parameter to allocate memory using the appropriate function callback specified in the   parameter. Pass   or   to allocate memory for the new allocator using the default allocator.
-- `context`: A structure of type  . The fields of this structure hold (among other things) function pointers to callbacks used for allocating, reallocating, and deallocating memory.
+- `allocator`: The existing allocator to use to allocate memory for the new allocator. Pass the [`kCFAllocatorUseContext`](kcfallocatorusecontext.md) constant for this parameter to allocate memory using the appropriate function callback specified in the `context` parameter. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to allocate memory for the new allocator using the default allocator.
+- `context`: A structure of type [`CFAllocatorContext`](cfallocatorcontext.md). The fields of this structure hold (among other things) function pointers to callbacks used for allocating, reallocating, and deallocating memory.
 
 
 ---

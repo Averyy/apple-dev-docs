@@ -21,8 +21,8 @@ A value that indicates the completion status.
 ## Parameters
 
 - `clock`: The clock from which to retrieve its audio device.
-- `deviceUIDOut`: An optional unique device identifier. If you specify a non-  value, this function returns the   and its associated ID, and sets   to  .
-- `deviceIDOut`: An optional device identifier. If you specify a non-  value, this function returns a   UID and the device ID, and sets   to  .
+- `deviceUIDOut`: An optional unique device identifier. If you specify a non-`NULL` value, this function returns the `deviceUID` and its associated ID, and sets `trackingDefaultDeviceOut` to `false`.
+- `deviceIDOut`: An optional device identifier. If you specify a non-`NULL` value, this function returns a `NULL` UID and the device ID, and sets `trackingDefaultDeviceOut` to `false`.
 - `trackingDefaultDeviceOut`: On return, a Boolean value that indicates whether the audio clock tracks the default audio device.
 
 ## See Also

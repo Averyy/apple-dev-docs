@@ -38,8 +38,8 @@ MyTapGestureView(...)
 
 ## Parameters
 
-- `isFocusable`:   if the view should participate in focus;    otherwise. The default value is  .
-- `interactions`: The types of focus interactions supported by the view.   The default value is  .
+- `isFocusable`: `true` if the view should participate in focus; `false` otherwise. The default value is `true`.
+- `interactions`: The types of focus interactions supported by the view. The default value is `.automatic`.
 
 ## See Also
 

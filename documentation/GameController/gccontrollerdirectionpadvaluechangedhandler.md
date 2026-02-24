@@ -22,8 +22,8 @@ typealias GCControllerDirectionPadValueChangedHandler = (GCControllerDirectionPa
 ## Parameters
 
 - `dpad`: The directional pad element that changed.
-- `xValue`: A normalized value of the x-axis ranging from   to  .
-- `yValue`: A normalized value of the y-axis ranging from   to  .
+- `xValue`: A normalized value of the x-axis ranging from `-1` to `1`.
+- `yValue`: A normalized value of the y-axis ranging from `-1` to `1`.
 
 ## See Also
 

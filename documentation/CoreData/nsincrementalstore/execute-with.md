@@ -39,7 +39,7 @@ You should implement this method conservatively, and expect that unknown request
 ## Parameters
 
 - `request`: A fetch request.
-- `context`: The managed object context used to execute  .
+- `context`: The managed object context used to execute `request`.
 
 ## See Also
 

@@ -20,9 +20,9 @@ init(recordTypes: [HKVerifiableClinicalRecordCredentialType], sourceTypes: [HKVe
 
 ## Parameters
 
-- `recordTypes`: The types of records that this query returns. For a list of valid record types, see  .
-- `sourceTypes`: The format of the verifiable clinical records. For a list of valid sources, see  .
-- `predicate`: A predicate that limits the results that this query returns. Pass   to receive all records of the specified source and record type.
+- `recordTypes`: The types of records that this query returns. For a list of valid record types, see [`HKVerifiableClinicalRecordCredentialType`](hkverifiableclinicalrecordcredentialtype.md).
+- `sourceTypes`: The format of the verifiable clinical records. For a list of valid sources, see [`HKVerifiableClinicalRecordSourceType`](hkverifiableclinicalrecordsourcetype.md).
+- `predicate`: A predicate that limits the results that this query returns. Pass `nil` to receive all records of the specified source and record type.
 
 
 ---

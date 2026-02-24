@@ -31,6 +31,26 @@ A predicate that matches any objects that have been added to the provided workou
 
 Use this convenience method to create a predicate that matches all the HealthKit objects for a given workout. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+let workoutObjects = HKQuery.predicateForObjectsFromWorkout(workout)
+ 
+let explicitWorkoutObjects =
+    NSPredicate(format: "%K == %@", HKPredicateKeyPathWorkout, workout)
+```
+
+**Objective-C**:
+
+```objc
+NSPredicate *workoutObjects = [HKQuery predicateForObjectsFromWorkout:workout];
+ 
+NSPredicate *explicitWorkoutObjects =
+[NSPredicate predicateWithFormat:@"%K == %@",
+ HKPredicateKeyPathWorkout,
+ workout];
+```
+
 ## Parameters
 
 - `workout`: The workout you are searching for.

@@ -26,11 +26,11 @@ The new CFSocket object, or `NULL` if an error occurred. If a CFSocket object al
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `sock`: The native socket for which to create a CFSocket object.
-- `callBackTypes`: A bitwise-OR combination of the types of socket activity that should cause   to be called. See   for the possible activity values.
-- `callout`: The function to call when one of the activities indicated by   occurs.
-- `context`: A structure holding contextual information for the CFSocket object. The function copies the information out of the structure, so the memory pointed to by   does not need to persist beyond the function call. Can be  .
+- `callBackTypes`: A bitwise-OR combination of the types of socket activity that should cause `callout` to be called. See [`CFSocketCallBackType`](cfsocketcallbacktype.md) for the possible activity values.
+- `callout`: The function to call when one of the activities indicated by `callBackTypes` occurs.
+- `context`: A structure holding contextual information for the CFSocket object. The function copies the information out of the structure, so the memory pointed to by `context` does not need to persist beyond the function call. Can be `NULL`.
 
 ## See Also
 

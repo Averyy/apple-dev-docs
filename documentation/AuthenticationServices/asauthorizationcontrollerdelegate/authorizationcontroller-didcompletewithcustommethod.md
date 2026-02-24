@@ -17,7 +17,7 @@ optional func authorizationController(_ controller: ASAuthorizationController, d
 ## Parameters
 
 - `controller`: The controller performing the authorization attempt.
-- `method`: The custom method the user selected. For a list of custom methods, see   .
+- `method`: The custom method the user selected. For a list of custom methods, see  [`ASAuthorizationCustomMethod`](asauthorizationcustommethod.md).
 
 ## See Also
 

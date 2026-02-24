@@ -35,7 +35,7 @@ This method is not called for an object once a replacement mapping has been set 
 ## Parameters
 
 - `archiver`: The archiver that sent the message.
-- `object`: The object that is about to be encoded. This value is never  .
+- `object`: The object that is about to be encoded. This value is never `nil`.
 
 ## See Also
 

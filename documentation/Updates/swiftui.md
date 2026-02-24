@@ -74,7 +74,7 @@ Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/
 
 ##### Immersive Spaces
 
-- Add an action to perform when the state of the immersion changes using the [`onImmersionChange(_:)`](https://developer.apple.com/documentation/SwiftUI/View/onImmersionChange(_:)) modifier.
+- Add an action to perform when the state of the immersion changes using the doc://com.apple.documentation/documentation/SwiftUI/View/onImmersionChange(_:) modifier.
 - Apply a custom color or dim a passthrough video in an immersive space using the [`colorMultiply(_:)`](https://developer.apple.com/documentation/SwiftUI/SurroundingsEffect/colorMultiply(_:)) and [`dim(intensity:)`](https://developer.apple.com/documentation/SwiftUI/SurroundingsEffect/dim(intensity:)) initializers.
 
 ##### Documents
@@ -162,6 +162,8 @@ Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/
 - Reuse existing UIKit gesture recognizer code in SwiftUI. In SwiftUI, create UIKit gesture recognizers using [`UIGestureRecognizerRepresentable`](https://developer.apple.com/documentation/SwiftUI/UIGestureRecognizerRepresentable). In UIKit, refer to SwiftUI gestures by name using [`name`](https://developer.apple.com/documentation/UIKit/UIGestureRecognizer/name).
 - Share menu content definitions between SwiftUI and AppKit by using the [`NSHostingMenu`](https://developer.apple.com/documentation/SwiftUI/NSHostingMenu) in your AppKit view hierarchy.
 
+---
+
 #### June 2023 Visionos
 
 ##### Scenes
@@ -194,6 +196,8 @@ Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/
 ##### Gestures
 
 - Enable people to rotate objects in three dimensions when you add a [`RotateGesture3D`](https://developer.apple.com/documentation/SwiftUI/RotateGesture3D) gesture.
+
+---
 
 #### June 2023
 

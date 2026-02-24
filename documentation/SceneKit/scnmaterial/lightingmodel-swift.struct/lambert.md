@@ -30,6 +30,10 @@ color = ambient * al + diffuse * max(0, dot(N, L))
 
 The [`ambient`](scnmaterial/ambient.md) and [`diffuse`](scnmaterial/diffuse.md) terms refer to the material’s properties. The other terms are as follows:
 
+- **`al`**: The sum of all ambient lights in the scene (a color).
+- **`N`**: The surface normal vector at the point being shaded, as supplied by the geometry’s vertex data, interpolated between vertices, and possibly modified by the material’s [`normal`](scnmaterial/normal.md) property.
+- **`L`**: The (normalized) vector from the point being shaded to the light source.
+
 ## See Also
 
 - [static let blinn: SCNMaterial.LightingModel](scnmaterial/lightingmodel-swift.struct/blinn.md)

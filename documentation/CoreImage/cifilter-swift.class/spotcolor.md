@@ -29,6 +29,20 @@ This method applies the spot color filter to an image. The effect replaces one o
 
 The spot color filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`centerColor1`**: A [`CIColor`](cicolor.md) representing the median value of the first color to be replaced.
+- **`centerColor2`**: A [`CIColor`](cicolor.md) representing the median value of the second color to be replaced.
+- **`centerColor3`**: A [`CIColor`](cicolor.md) representing the median value of the third color to be replaced.
+- **`replacementColor1`**: A [`CIColor`](cicolor.md) to replace the first color.
+- **`replacementColor2`**: A [`CIColor`](cicolor.md) to replace the second color.
+- **`replacementColor3`**: A [`CIColor`](cicolor.md) to replace the third color.
+- **`closeness1`**: A `float` representing how closely the first center color must match before it’s replaced.
+- **`closeness2`**: A `float` representing how closely the second center color must match before it’s replaced.
+- **`closeness3`**: A `float` representing how closely the third center color must match before it’s replaced.
+- **`contrast1`**: A `float` representing the contrast of the first replacement color as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`contrast2`**: A `float` representing the contrast of the second replacement color as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`contrast3`**: A `float` representing the contrast of the third replacement color as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that replaces the colors of the input image with the specified colors:
 
 ```swift

@@ -22,10 +22,11 @@ Each event is removed from the event queue and then passed to the tracking handl
 
 ## Parameters
 
-- `mask`: The event mask (see   in   for possible values).
-- `timeout`: The maximum time interval the system waits for an event before passing   to the handler.
+- `mask`: The event mask (see `NSEventMask` in [`NSEvent`](nsevent.md) for possible values).
+- `timeout`: The maximum time interval the system waits for an event before passing `nil` to the handler.
 - `mode`: The run loop mode.
-- `trackingHandler`: A block that is called to track the events. The block takes the following parameters:
+- `trackingHandler`: A block that is called to track the events. The block takes the following parameters: - **event**: The event to examine.
+- **stop**: A Boolean value that indicates when tracking should stop.
 
 ## See Also
 

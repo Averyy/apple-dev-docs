@@ -26,7 +26,7 @@ The position of the entity relative to `referenceEntity`.
 
 ## Parameters
 
-- `referenceEntity`: The entity that defines a frame of reference. Set   this to   to indicate world space.
+- `referenceEntity`: The entity that defines a frame of reference. Set this to `nil` to indicate world space.
 
 ## See Also
 

@@ -22,7 +22,7 @@ func updatePrimaryHome(_ home: HMHome) async throws
 ## Parameters
 
 - `home`: The new primary home. Must be a home managed by this home manager.
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

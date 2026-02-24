@@ -20,9 +20,9 @@ List of complete words from the spell checker dictionary in the order they shoul
 
 ## Parameters
 
-- `range`: Range that identifies a partial word in  .
+- `range`: Range that identifies a partial word in `string`.
 - `string`: String with the partial word from which to generate the result.
-- `language`: Language to used in  . When  , this method uses the language selected in the Spelling panel.
+- `language`: Language to used in `string`. When `nil`, this method uses the language selected in the Spelling panel.
 - `tag`: Identifies the spell document with ignored words to use.
 
 ## See Also

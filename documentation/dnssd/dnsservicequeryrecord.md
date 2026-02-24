@@ -26,12 +26,12 @@ Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success (any su
 
 ## Parameters
 
-- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns  , and the query operation will run indefinitely until the client terminates it by passing this DNSServiceRef to  .
+- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md), and the query operation will run indefinitely until the client terminates it by passing this DNSServiceRef to [`DNSServiceRefDeallocate(_:)`](dnsservicerefdeallocate(_:).md).
 - `flags`: kDNSServiceFlagsForceMulticast or kDNSServiceFlagsLongLivedQuery. Pass kDNSServiceFlagsLongLivedQuery to create a “long-lived” unicast query to a unicast DNS server that implements the protocol. This flag has no effect on link-local multicast queries.
 - `interfaceIndex`: If non-zero, specifies the interface on which to issue the query (the index for a given interface is determined via the if_nametoindex() family of calls.) Passing 0 causes the name to be queried for on all interfaces. See “Constants for specifying an interface index” for more details.
 - `fullname`: The full domain name of the resource record to be queried for.
 - `rrtype`: The numerical type of the resource record to be queried for (e.g. kDNSServiceType_PTR, kDNSServiceType_SRV, and so on).
-- `rrclass`: The class of the resource record (usually  ).
+- `rrclass`: The class of the resource record (usually [`kDNSServiceClass_IN`](kdnsserviceclass_in.md)).
 - `callBack`: The function to be called when a result is found, or if the call asynchronously fails.
 - `context`: An application context pointer which is passed to the callback function (may be NULL).
 

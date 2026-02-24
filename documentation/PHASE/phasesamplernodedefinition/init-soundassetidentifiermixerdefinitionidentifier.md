@@ -21,7 +21,7 @@ convenience init(soundAssetIdentifier: String, mixerDefinition: PHASEMixerDefini
 
 ## Parameters
 
-- `soundAssetIdentifier`: A name that refers to the audio data that the node plays. See  .
+- `soundAssetIdentifier`: A name that refers to the audio data that the node plays. See [`assetIdentifier`](phasesamplernodedefinition/assetidentifier.md).
 - `mixerDefinition`: An object that combines audio layers.
 - `identifier`: A unique name for the sample node.
 

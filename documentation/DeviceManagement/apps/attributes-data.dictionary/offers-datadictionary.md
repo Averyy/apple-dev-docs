@@ -20,6 +20,23 @@ object Apps.Attributes.Offers
 - [object Apps.Attributes.Offers.Discounts](apps/attributes-data.dictionary/offers-data.dictionary/discounts-data.dictionary.md)
 - [object Apps.Attributes.Offers.Download](apps/attributes-data.dictionary/offers-data.dictionary/download-data.dictionary.md)
 
+## Properties
+
+- `assets` ([Apps.Attributes.Offers.Assets])
+- `buyParams` (string)
+- `currencyCode` (string)
+- `discounts` ([Apps.Attributes.Offers.Discounts])
+- `download` (Apps.Attributes.Offers.Download)
+- `expectedReleaseDate` (string)
+- `offerSummary` (string)
+- `price` (number)
+- `priceFormatted` (string)
+- `pricePerUnit` (number)
+- `pricePerUnitFormatted` (string)
+- `quantity` (integer)
+- `recurringSubscriptionPeriod` (string)
+- `type` (string) *(required)*
+
 ## See Also
 
 - [object Apps.Attributes.ContentRatingsBySystem](apps/attributes-data.dictionary/contentratingsbysystem-data.dictionary.md)

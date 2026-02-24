@@ -28,7 +28,7 @@ Use this method to add a quantity to the series. The quantity must have a unit t
 ## Parameters
 
 - `quantity`: The quantity to insert.
-- `dateInterval`: The date interval associated with the quantity. If the interval’s   parameter is the same as the start date for a previously provided quantity, this quantity replaces the previous one. This method fails with an   error if the date parameter is earlier than the series builder’s   property.
+- `dateInterval`: The date interval associated with the quantity. If the interval’s [`start`](https://developer.apple.com/documentation/Foundation/DateInterval/start) parameter is the same as the start date for a previously provided quantity, this quantity replaces the previous one. This method fails with an [`HKError.Code.errorInvalidArgument`](hkerror/code/errorinvalidargument.md) error if the date parameter is earlier than the series builder’s [`startDate`](hkquantityseriessamplebuilder/startdate.md) property.
 
 ## See Also
 

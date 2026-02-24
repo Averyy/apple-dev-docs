@@ -47,7 +47,7 @@ VStack {
 
 ## Parameters
 
-- `value`: A relative front-to-back ordering for this view; the   default is  .
+- `value`: A relative front-to-back ordering for this view; the default is `0`.
 
 ## See Also
 

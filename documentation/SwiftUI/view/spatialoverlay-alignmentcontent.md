@@ -25,8 +25,8 @@ Multiple views provided by `content` are stacked depthwise.
 
 ## Parameters
 
-- `alignment`: The alignment with a default value of    that you use to position the secondary view.
-- `content`: The view builder which produces views to occupy the same 3D   space as this view. Multiple views provided by content are organized   into a  .
+- `alignment`: The alignment with a default value of [`center`](alignment3d/center.md) that you use to position the secondary view.
+- `content`: The view builder which produces views to occupy the same 3D space as this view. Multiple views provided by content are organized into a [`SpatialContainer`](spatialcontainer.md).
 
 
 ---

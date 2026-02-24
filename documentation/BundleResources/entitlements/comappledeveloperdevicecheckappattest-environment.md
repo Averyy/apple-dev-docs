@@ -11,6 +11,10 @@ The environment for an app that uses the App Attest service to validate itself.
 - tvOS 15.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 To add this entitlement to your app, add the key to your app’s entitlements file manually, choose the `String` type, and set the associated value to either `development` or `production`. Alternatively, add the App Attest capability to your app target. This adds the entry to the app’s entitlements file with `development` as the associated value. If you omit the entitlement during development, your app uses the App Attest sandbox servers by default. You can test your app during development against the App Attest production servers by setting the entitlement to `production`.

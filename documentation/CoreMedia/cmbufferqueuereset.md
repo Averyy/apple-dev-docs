@@ -30,7 +30,7 @@ All buffers in the queue are released.  Triggers are not removed, however, and w
 
 ## Parameters
 
-- `queue`: The   being reset.
+- `queue`: The `CMBufferQueue` being reset.
 
 ## See Also
 

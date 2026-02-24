@@ -27,8 +27,8 @@ When the Filter Data Provider returns this verdict from its `handleNewFlow:` met
 
 ## Parameters
 
-- `remediationURLMapKey`: The key in the Filter Control Provider’s   dictionary corresponding to the URL of the remediation link to give to the user.
-- `remediationButtonTextMapKey`: The key in the Filter Control Provider’s   dictionary corresponding to the text of the remediation link text to give to the user.
+- `remediationURLMapKey`: The key in the Filter Control Provider’s [`remediationMap`](nefiltercontrolprovider/remediationmap.md) dictionary corresponding to the URL of the remediation link to give to the user.
+- `remediationButtonTextMapKey`: The key in the Filter Control Provider’s [`remediationMap`](nefiltercontrolprovider/remediationmap.md) dictionary corresponding to the text of the remediation link text to give to the user.
 
 ## See Also
 

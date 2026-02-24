@@ -26,8 +26,8 @@ For more information on how to use angular gradients, see [`angularGradient(_:ce
 
 ## Parameters
 
-- `colors`: The colors of the gradient, evenly spaced along its full   length.
-- `center`: The relative center of the gradient, mapped from the unit   space into the bounding rectangle of the filled shape.
+- `colors`: The colors of the gradient, evenly spaced along its full length.
+- `center`: The relative center of the gradient, mapped from the unit space into the bounding rectangle of the filled shape.
 - `startAngle`: The angle that marks the beginning of the gradient.
 - `endAngle`: The angle that marks the end of the gradient.
 

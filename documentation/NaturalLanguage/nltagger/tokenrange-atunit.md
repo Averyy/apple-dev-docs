@@ -27,7 +27,7 @@ The range of the substring for the linguistic unit.
 
 ## Parameters
 
-- `unit`: The linguistic unit. For possible values, see  .
+- `unit`: The linguistic unit. For possible values, see [`NLTokenUnit`](nltokenunit.md).
 
 ## See Also
 

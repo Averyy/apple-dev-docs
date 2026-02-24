@@ -22,6 +22,25 @@ For more information on using Xcode to create particle effects, see [`Add a part
 
 The following code shows how to load a particle effect that was created by Xcode. All particle effects are saved using Cocoa’s standard archiving mechanisms, so the code first creates a path to the smoke effect, and then loads the archive.
 
+**Swift**:
+
+```swift
+func newSmokeEmitter() -> SKEmitterNode? {
+    return SKEmitterNode(fileNamed: "smoke.sks")
+}
+```
+
+**Obj-C**:
+
+```objc
+- (SKEmitterNode *) newSmokeEmitter
+{
+    NSString *smokePath = [[NSBundle mainBundle] pathForResource:@"smoke" ofType:@"sks"];
+    SKEmitterNode *smoke = [NSKeyedUnarchiver unarchiveObjectWithFile:smokePath];
+    return smoke;
+}
+```
+
 ##### Configure Particles in Code
 
 The [`SKEmitterNode`](skemitternode.md) class provides many properties for configuring an emitter node’s behavior. The Xcode emitter editor sets the same property values. You can also create and configure your own emitter, or you can take an emitter node created in the Particle Emitter Editor, load it, and change its property values.
@@ -35,7 +54,7 @@ When a particle is created, its initial property values are determined by the pr
 
 - The average starting value for the property.
 - A random range for values of the property. Each time a new particle is emitted, a new random value is calculated within that range.
-- The rate at which the value changes over time, also known as the property’s . Not all properties have a speed property.
+- The rate at which the value changes over time, also known as the property’s *speed*. Not all properties have a speed property.
 - An optional keyframe sequence.
 
 The complete list of properties used to configure an emitter node is given in [`SKEmitterNode`](skemitternode.md).

@@ -21,8 +21,8 @@ init(authorizationButtonType type: ASAuthorizationAppleIDButton.ButtonType, auth
 
 ## Parameters
 
-- `type`: The type of the button. Use one of the values from  .
-- `style`: The style of the button. Use one of the values from  .
+- `type`: The type of the button. Use one of the values from [`ASAuthorizationAppleIDButton.ButtonType`](asauthorizationappleidbutton/buttontype.md).
+- `style`: The style of the button. Use one of the values from [`ASAuthorizationAppleIDButton.Style`](asauthorizationappleidbutton/style.md).
 
 ## See Also
 

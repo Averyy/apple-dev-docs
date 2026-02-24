@@ -23,7 +23,7 @@ A dictionary containing the entitlement names as keys with the corresponding ent
 
 - `task`: The task whose entitlements you want.
 - `entitlements`: An array of the names of the entitlement to be fetched.
-- `error`: A pointer that the function uses to provide an error object with details if an error occurs. The caller becomes responsible for the object’s memory. Pass   to ignore the error.
+- `error`: A pointer that the function uses to provide an error object with details if an error occurs. The caller becomes responsible for the object’s memory. Pass `NULL` to ignore the error.
 
 
 ---

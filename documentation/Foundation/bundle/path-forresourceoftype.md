@@ -39,8 +39,8 @@ if (commonDictionaryPath = [thisBundle pathForResource:@"CommonDictionary" ofTyp
 
 ## Parameters
 
-- `name`: If you specify  , the method returns the first resource file it finds with the specified extension.
-- `ext`: If you specify an empty string or  , the extension is assumed not to exist and the file is the first file encountered that exactly matches  .
+- `name`: The name of the resource file. If you specify `nil`, the method returns the first resource file it finds with the specified extension.
+- `ext`: The filename extension of the file to locate. If you specify an empty string or `nil`, the extension is assumed not to exist and the file is the first file encountered that exactly matches `name`.
 
 ## See Also
 

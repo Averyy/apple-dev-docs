@@ -27,11 +27,16 @@ In addition to the notification name and sender, dispatch table entries for dist
 
 ##### Commonly Used Methods
 
+- **[`default()`](distributednotificationcenter/default().md)**: Accesses the default distributed notification center.
+- **[`addObserver(_:selector:name:object:suspensionBehavior:)`](distributednotificationcenter/addobserver(_:selector:name:object:suspensionbehavior:).md)**: Registers an object to receive a notification with a specified behavior when notification delivery is suspended.
+- **[`postNotificationName(_:object:userInfo:deliverImmediately:)`](distributednotificationcenter/postnotificationname(_:object:userinfo:deliverimmediately:).md)**: Creates and posts a notification.
+- **[`removeObserver(_:name:object:)`](distributednotificationcenter/removeobserver(_:name:object:).md)**: Specifies that an object no longer wants to receive certain notifications.
+
 ##### Overview
 
 Each task has a default distributed notification center that you access with the [`default()`](distributednotificationcenter/default().md) class method. There may be different types of distributed notification centers. Currently there is a single type—`NSLocalNotificationCenterType`. This type of distributed notification center handles notifications that can be sent between tasks on a single computer. For communication between tasks on different computers, use [`Distributed Objects Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i).
 
-Posting a  is an expensive operation. The notification gets sent to a system-wide server that distributes it to all the tasks that have objects registered for distributed notifications. The latency between posting the notification and the notification’s arrival in another task is unbounded. In fact, when too many notifications are posted and the server’s queue fills up, notifications may be dropped.
+Posting a *distributed notification* is an expensive operation. The notification gets sent to a system-wide server that distributes it to all the tasks that have objects registered for distributed notifications. The latency between posting the notification and the notification’s arrival in another task is unbounded. In fact, when too many notifications are posted and the server’s queue fills up, notifications may be dropped.
 
 Distributed notifications are delivered via a task’s run loop. A task must be running a run loop in one of the “common” modes, such as `NSDefaultRunLoopMode`, to receive a distributed notification. For multithreaded applications running in macOS 10.3 and later, distributed notifications are always delivered to the main thread. For multithreaded applications running in OS X v10.2.8 and earlier, notifications are delivered to the thread that first used the distributed notifications API, which in most cases is the main thread.
 

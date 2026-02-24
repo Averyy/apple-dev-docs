@@ -48,7 +48,7 @@ For more information on how HealthKit calculates statistics for [`HKWorkoutActiv
 ## Parameters
 
 - `operatorType`: The operator type to use when comparing the sum.
-- `quantityType`: The type of   objects used to calculate the sum.
+- `quantityType`: The type of [`HKQuantitySample`](hkquantitysample.md) objects used to calculate the sum.
 - `sumQuantity`: The target value for the sum.
 
 ## See Also

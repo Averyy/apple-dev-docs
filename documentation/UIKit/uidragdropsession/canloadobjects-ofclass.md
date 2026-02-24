@@ -24,7 +24,7 @@ func canLoadObjects(ofClass aClass: any NSItemProviderReading.Type) -> Bool
 
 ## Parameters
 
-- `aClass`: A class conforming to the   protocol.
+- `aClass`: A class conforming to the [`NSItemProviderReading`](https://developer.apple.com/documentation/Foundation/NSItemProviderReading) protocol.
 
 ## See Also
 

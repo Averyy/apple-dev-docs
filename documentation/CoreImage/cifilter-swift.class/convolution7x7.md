@@ -29,6 +29,10 @@ This method applies the convolution 7 x 7 filter to an image. The effect uses a 
 
 The convolution 7 x 7 filter uses the following properties:
 
+- **`bias`**: A `float` representing the value that’s added to each output pixel as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`weights`**: A [`CIVector`](civector.md) representing the convolution kernel.
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 > **Note**:  When using a nonzero `bias` value, the output image has an infinite extent. You should crop the output image before attempting to render it.
 
 The following code creates a filter that highlights edges in the input image:

@@ -41,6 +41,87 @@ You create a correlation query by calling the [`init(type:predicate:samplePredic
 
 The following example builds a correlation query that searches for food samples with more than 800 calories.
 
+**Swift**:
+
+```swift
+var highCalorieFoods: [HKCorrelationQuery] = []
+ 
+let highCalorie = HKQuantity(unit: HKUnit.kilocalorieUnit(),
+                             doubleValue: 800.0);
+ 
+let greaterThanHighCalorie = HKQuery.predicateForQuantitySamplesWithOperatorType(
+    .GreaterThanOrEqualToPredicateOperatorType, quantity: highCalorie)
+ 
+let energyConsumed = HKObjectType.quantityTypeForIdentifier(
+    HKQuantityTypeIdentifierDietaryEnergyConsumed)
+ 
+let samplePredicates = [energyConsumed: greaterThanHighCalorie]
+ 
+let foodType = HKCorrelationType.correlationTypeForIdentifier(
+    HKCorrelationTypeIdentifierFood)
+ 
+let query = HKCorrelationQuery(type: foodType, predicate: nil, samplePredicates: samplePredicates)
+{
+    query, results, error in
+    
+    if let correlations = results as? [HKCorrelationQuery] {
+        for correlation in correlations {
+            highCalorieFoods.append(correlation)
+        }
+    }
+    else {
+        // Provide proper error handling here...
+        println("An error occurred while searching for high calorie food: \(error.localizedDescription)")
+        abort()
+    }
+    
+    println("Found \(highCalorieFoods.count) foods: \(highCalorieFoods)")
+}
+ 
+healthStore.executeQuery(query)
+```
+
+**Objective-C**:
+
+```objc
+NSMutableArray *highCalorieFoods = [NSMutableArray array];
+HKQuantity *highCalorie = [HKQuantity quantityWithUnit:[HKUnit kilocalorieUnit]
+                                           doubleValue:800.0];
+ 
+NSPredicate *greaterThanHighCalorie =
+[HKQuery predicateForQuantitySamplesWithOperatorType:
+ NSGreaterThanOrEqualToPredicateOperatorType quantity:highCalorie];
+ 
+HKQuantityType *energyConsumed =
+[HKObjectType quantityTypeForIdentifier:
+ HKQuantityTypeIdentifierDietaryEnergyConsumed];
+ 
+NSDictionary *samplePredicates = @{energyConsumed : greaterThanHighCalorie};
+ 
+HKCorrelationType *foodType =
+[HKCorrelationType correlationTypeForIdentifier:HKCorrelationTypeIdentifierFood];
+ 
+HKCorrelationQuery *query =
+[[HKCorrelationQuery alloc]
+ initWithType:foodType predicate:nil
+ samplePredicates:samplePredicates
+ completion:^(HKCorrelationQuery *query, NSArray *correlations, NSError *error) {
+     if (correlations == nil) {
+         // Provide proper error handling here...
+         NSLog(@"An error occurred while searching for high calorie food: %@",
+              error.localizedDescription);
+         abort();
+     }
+     for (HKCorrelation *correlation in correlations) {
+         [highCalorieFoods addObject:correlation];
+     }
+     NSLog(@"Found %lu foods: %@", (unsigned long)[highCalorieFoods count], highCalorieFoods);
+ 
+ }];
+ 
+[self.healthStore executeQuery:query];
+```
+
 It begins by setting up an array to store our high calorie foods. Next, the sample code creates a predicate that matches quantities greater than or equal to 800 kcal. It then creates a dictionary using a quantity type object for dietary energy consumed as the key and the newly-created predicate as the value. It uses this dictionary as the sample predicates for a correlation query.
 
 In the query’s completion handler, the sample code first checks to see if an error occurred. If no errors occurred, it adds the results to the array of high calorie foods. Then it logs the number of matching samples found, and the contents of the high calorie foods array.

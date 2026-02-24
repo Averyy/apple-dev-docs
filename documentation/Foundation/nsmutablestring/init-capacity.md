@@ -26,7 +26,7 @@ An initialized `NSMutableString` object with initial storage for `capacity` char
 
 #### Discussion
 
-The number of characters indicated by `capacity` is simply a hint to increase the efficiency of data storage. The value does  limit the length of the string.
+The number of characters indicated by `capacity` is simply a hint to increase the efficiency of data storage. The value does *not* limit the length of the string.
 
 ## Parameters
 

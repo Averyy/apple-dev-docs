@@ -29,7 +29,7 @@ To determine whether to rotate, the system compares the view controller’s supp
 
 > **Note**:  All iPadOS devices support the [`portraitUpsideDown`](uiinterfaceorientationmask/portraitupsidedown.md) orientation. It’s best practice to enable it for the iPad idiom. iOS devices without a Home button, such as iPhone 12, don’t support this orientation. You should disable it entirely for the iPhone idiom.
 
-If your app supports multitasking, the system doesn’t call this method on your view controller because multitasking apps must support all orientations. You can opt out of multitasking by enabling  on your iOS target or by not declaring support for all possible orientations within the `Info.plist` file.
+If your app supports multitasking, the system doesn’t call this method on your view controller because multitasking apps must support all orientations. You can opt out of multitasking by enabling *Requires full screen* on your iOS target or by not declaring support for all possible orientations within the `Info.plist` file.
 
 For design guidance, see [`Adaptivity and Layout`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/) in the iOS Human Interface Guidelines.
 

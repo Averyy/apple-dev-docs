@@ -32,9 +32,9 @@ If you call this function to retrieve a value that is a Core Foundation object, 
 ## Parameters
 
 - `inAudioFile`: The audio file you want to obtain a property value from.
-- `inPropertyID`: The property whose value you want. See   for possible values.
-- `ioDataSize`: On input, the size of the buffer passed in the   parameter. On output, the number of bytes written to the buffer. Use the   function to obtain the size of the property value.
-- `outPropertyData`: On output, the value of the property specified in the   parameter.
+- `inPropertyID`: The property whose value you want. See [`Audio File Properties`](1576499-audio-file-properties.md) for possible values.
+- `ioDataSize`: On input, the size of the buffer passed in the `outPropertyData` parameter. On output, the number of bytes written to the buffer. Use the [`AudioFileGetPropertyInfo(_:_:_:_:)`](audiofilegetpropertyinfo(_:_:_:_:).md) function to obtain the size of the property value.
+- `outPropertyData`: On output, the value of the property specified in the `inPropertyID` parameter.
 
 ## See Also
 

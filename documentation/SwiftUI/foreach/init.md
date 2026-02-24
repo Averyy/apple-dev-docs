@@ -46,7 +46,7 @@ Table(of: Person.self) {
 
 ## Parameters
 
-- `data`: The identified data that the   instance uses   to create table rows dynamically.
+- `data`: The identified data that the [`ForEach`](foreach.md) instance uses to create table rows dynamically.
 
 ## See Also
 

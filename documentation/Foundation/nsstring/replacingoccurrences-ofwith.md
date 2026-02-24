@@ -31,7 +31,7 @@ Invokes [`replacingOccurrences(of:with:options:range:)`](nsstring/replacingoccur
 ## Parameters
 
 - `target`: The string to replace.
-- `replacement`: The string with which to replace  .
+- `replacement`: The string with which to replace `target`.
 
 ## See Also
 

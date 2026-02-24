@@ -25,7 +25,7 @@ The `NSCell` implementation of [`trackMouse(with:in:of:untilMouseUp:)`](nscell/t
 ## Parameters
 
 - `startPoint`: The initial location of the cursor.
-- `controlView`: The   object managing the receiver.
+- `controlView`: The `NSControl` object managing the receiver.
 
 ## See Also
 

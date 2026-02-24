@@ -21,7 +21,7 @@ func JSClassRelease(_ jsClass: JSClassRef!)
 
 ## Parameters
 
-- `jsClass`: The   to release.
+- `jsClass`: The [`JSClassRef`](jsclassref.md) to release.
 
 ## See Also
 

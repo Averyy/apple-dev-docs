@@ -20,6 +20,11 @@ object SetRecoveryLockCommand
 - [object SetRecoveryLockCommand.Command](setrecoverylockcommand/command-data.dictionary.md)
   The command to set or clear the Recovery Lock password.
 
+## Properties
+
+- `Command` (SetRecoveryLockCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object SetRecoveryLockResponse](setrecoverylockresponse.md)

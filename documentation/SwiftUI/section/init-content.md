@@ -22,7 +22,7 @@ init(_ titleKey: LocalizedStringKey, @ViewBuilder content: () -> Content)
 
 ## Parameters
 
-- `titleKey`: The key for the section’s localized title, which describes   the contents of the section.
+- `titleKey`: The key for the section’s localized title, which describes the contents of the section.
 - `content`: The section’s content.
 
 ## See Also

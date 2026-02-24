@@ -22,17 +22,19 @@ func CMSampleBufferCreateWithMakeDataReadyHandler(_ allocator: CFAllocator?, _ d
 
 ## Parameters
 
-- `allocator`: The allocator to use to create a sample buffer object. Pass   to use the default allocator.
-- `dataBuffer`: If the buffer contains media data, specify   for the   argument. Also set   to true if the buffer is   and   is  .
+- `allocator`: The allocator to use to create a sample buffer object. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the default allocator.
+- `dataBuffer`: A block buffer that contains the media data. This argument can be `NULL`, such as for a block buffer that doesn’t yet have backing memory or data. If the buffer contains media data, specify `true` for the `dataReady` argument. Also set `dataReady` to true if the buffer is `NULL` and `numSamples` is `0`.
 - `dataReady`: A Boolean value that indicates whether the buffer already contains the data.
-- `formatDescription`: A description of the media data’s format, or   for none.
-- `numSamples`: The number of samples in the sample buffer, or   if media samples aren’t yet loaded.
-- `numSampleTimingEntries`: The number of entries in  . The value must be  ,  , or  .
-- `sampleTimingArray`: The system’s behavior isn’t defined if multiple samples in a sample buffer (or even in multiple buffers in the same stream) have the same presentation timestamp.
-- `numSampleSizeEntries`: The number of entries in  . The value must be  ,  , or  .
-- `sampleSizeArray`: This value can be  , and must be if the samples aren’t contiguous in the buffer, such as when working with noninterleaved audio.
-- `sampleBufferOut`: On return, a new   object.
-- `makeDataReadyHandler`: A block for the system to call to make the data ready for use. This argument can be  .
+- `formatDescription`: A description of the media data’s format, or `NULL` for none.
+- `numSamples`: The number of samples in the sample buffer, or `0` if media samples aren’t yet loaded.
+- `numSampleTimingEntries`: The number of entries in `sampleTimingArray`. The value must be `0`, `1`, or `numSamples`.
+- `sampleTimingArray`: An array of [`CMSampleTimingInfo`](cmsampletiminginfo.md) structures, one per sample. This value can be `NULL`. If all samples are in presentation order and have the same duration, pass a timing info structure that you configure as follows: - Set its duration to the duration of one sample
+- Set its presentation timestamp to the presentation time of the numerically earliest sample
+- Set the decode timestamp set to [`invalid`](cmtime/invalid.md). The system’s behavior isn’t defined if multiple samples in a sample buffer (or even in multiple buffers in the same stream) have the same presentation timestamp.
+- `numSampleSizeEntries`: The number of entries in `sampleSizeArray`. The value must be `0`, `1`, or `numSamples`.
+- `sampleSizeArray`: An array of size entries, one per sample. If all samples have the same size, you can pass a single size entry containing the size of one sample. This value can be `NULL`, and must be if the samples aren’t contiguous in the buffer, such as when working with noninterleaved audio.
+- `sampleBufferOut`: On return, a new [`CMSampleBuffer`](cmsamplebuffer.md) object.
+- `makeDataReadyHandler`: A block for the system to call to make the data ready for use. This argument can be `NULL`.
 
 ## Topics
 

@@ -23,10 +23,10 @@ This method returns the biggest, best representation available.
 
 ## Parameters
 
-- `buffer`: You typically use   to allocate a buffer of the right size.
+- `buffer`: A buffer into which to copy the data. You typically use [`size()`](alassetrepresentation/size().md) to allocate a buffer of the right size.
 - `offset`: The number of bytes from the beginning of the file to start copying.
 - `length`: The number of bytes to copy.
-- `error`: Pass   if you do not want error information.
+- `error`: If an error occurs, upon return contains an `NSError` object that describes the problem. Pass `NULL` if you do not want error information.
 
 ## See Also
 

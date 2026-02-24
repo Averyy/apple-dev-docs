@@ -26,7 +26,7 @@ The current context state defines the full drawing operation. For example, the c
 
 ## Parameters
 
-- `image`: The   to draw. Get a resolved image from an    by calling  . Alternatively, you can   call   with an  , and that method   performs the resolution automatically.
+- `image`: The [`GraphicsContext.ResolvedImage`](graphicscontext/resolvedimage.md) to draw. Get a resolved image from an [`Image`](image.md) by calling [`resolve(_:)`](graphicscontext/resolve(_:)-898z6.md). Alternatively, you can call [`draw(_:in:style:)`](graphicscontext/draw(_:in:style:)-blhz.md) with an [`Image`](image.md), and that method performs the resolution automatically.
 - `rect`: The rectangle in the current user space to draw the image in.
 - `style`: A fill style to use when rasterizing the image.
 

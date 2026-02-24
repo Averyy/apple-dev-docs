@@ -28,8 +28,8 @@ All the supported cipher suites are enabled by default. Use the [`SSLSetEnabledC
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `ciphers`: On return, points to the values of the supported cipher suites. Before calling, you must allocate this buffer using the number of supported cipher suites retrieved from a call to the   function.
-- `numCiphers`: Points to the number of supported cipher suites that you want returned. Before calling, retrieve this value by calling the   function.
+- `ciphers`: On return, points to the values of the supported cipher suites. Before calling, you must allocate this buffer using the number of supported cipher suites retrieved from a call to the [`SSLGetNumberSupportedCiphers(_:_:)`](sslgetnumbersupportedciphers(_:_:).md) function.
+- `numCiphers`: Points to the number of supported cipher suites that you want returned. Before calling, retrieve this value by calling the [`SSLGetNumberSupportedCiphers(_:_:)`](sslgetnumbersupportedciphers(_:_:).md) function.
 
 
 ---

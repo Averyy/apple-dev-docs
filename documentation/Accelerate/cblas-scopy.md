@@ -27,10 +27,10 @@ func cblas_scopy(_ N: __LAPACK_int, _ X: UnsafePointer<Float>?, _ INCX: __LAPACK
 ## Parameters
 
 - `N`: Number of elements in the vectors.
-- `X`: Source vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
-- `Y`: Destination vector  .
-- `INCY`: Stride within  . For example, if   is 7, every 7th element is used.
+- `X`: Source vector `X`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
+- `Y`: Destination vector `Y`.
+- `INCY`: Stride within `Y`. For example, if `incY` is 7, every 7th element is used.
 
 ## See Also
 

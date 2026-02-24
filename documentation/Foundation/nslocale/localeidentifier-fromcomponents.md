@@ -30,7 +30,7 @@ This reverses the actions of [`components(fromLocaleIdentifier:)`](nslocale/comp
 
 ## Parameters
 
-- `dict`: A dictionary containing components that specify a locale. For possible values, see  .
+- `dict`: A dictionary containing components that specify a locale. For possible values, see `NSLocale Component Keys`.
 
 ## See Also
 

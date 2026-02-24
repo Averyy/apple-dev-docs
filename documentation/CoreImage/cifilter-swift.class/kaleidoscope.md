@@ -29,6 +29,11 @@ This method applies the kaleidoscope tile filter to an image. The effect produce
 
 The kaleidoscope tile filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`angle`**: A `float` representing the direction of distortion, in radians as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`count`**: A `float` representing the number of reflections in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in the creation of a kaleidoscope effect from the input image:
 
 ```swift

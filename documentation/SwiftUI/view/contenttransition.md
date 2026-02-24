@@ -65,7 +65,7 @@ To control whether content transitions use GPU-accelerated rendering, set the va
 
 ## Parameters
 
-- `transition`: The transition to apply when animating the   content change.
+- `transition`: The transition to apply when animating the content change.
 
 ## See Also
 

@@ -9,6 +9,14 @@ Get details about a profile.
 - Device Assignment Services ?+
 - VPP License Management ?+
 
+## Endpoint
+
+`GET https://mdmenrollment.apple.com/profile`
+
+## Parameters
+
+- `profile_uuid` (string) *(required)*: The unique identifier for a profile.
+
 ## See Also
 
 - [Define a Profile](define-profile.md)

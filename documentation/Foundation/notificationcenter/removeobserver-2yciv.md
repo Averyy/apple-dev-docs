@@ -34,6 +34,18 @@ When removing an observer, remove it with the most specific detail possible. For
 
 The following example illustrates how to unregister `someObserver` for all previously registered notifications. This is safe to do in the [`dealloc`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/dealloc) method, but you shouldn’t use it otherwise (use [`removeObserver(_:name:object:)`](notificationcenter/removeobserver(_:name:object:).md) instead).
 
+**Swift**:
+
+```swift
+NotificationCenter.default.removeObserver(someObserver)
+```
+
+**Objective-C**:
+
+```objc
+[[NSNotificationCenter defaultCenter] removeObserver:someObserver];
+```
+
 ## Parameters
 
 - `observer`: The observer to remove from the dispatch table. Specify an observer to remove only entries for this observer.

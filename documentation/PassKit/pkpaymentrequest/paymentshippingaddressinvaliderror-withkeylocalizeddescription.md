@@ -29,9 +29,35 @@ For example, the following example shows how to create errors for indicating pro
 
 Creating custom errors:
 
+**Swift**:
+
+```swift
+// Create errors for the zip code and street address
+let shippingInvalidZip = PKPaymentRequest.paymentShippingAddressInvalidError(withKey: CNPostalAddressPostalCodeKey,localizedDescription: "Invalid ZIP code")
+        let shippingInvalidStreet = PKPaymentRequest.paymentShippingAddressInvalidError(withKey: CNPostalAddressStreetKey,localizedDescription: "Missing street name")
+// The result contains both errors       let result = PKPaymentAuthorizationResult(status: .failure, errors: [shippingInvalidZip, shippingInvalidStreet])
+```
+
+**Objective-C**:
+
+```objc
+// Create errors for the zip code and street address
+NSError *shippingInvalidZip = [PKPaymentRequest 
+    paymentShippingAddressInvalidErrorWithKey:CNPostalAddressPostalCodeKey 
+    localizedDescription:@"Invalid ZIP code"];
+ 
+NSError *shippingInvalidStreet = [PKPaymentRequest    paymentShippingAddressInvalidErrorWithKey:CNPostalAddressStreetKey 
+    localizedDescription:@"Missing street name"];
+
+// The result contains both errors
+PKPaymentAuthorizationResult *result = [[PKPaymentAuthorizationResult alloc]
+    initWithStatus:PKPaymentAuthorizationStatusFailure 
+    errors:@[shippingInvalidZip, shippingInvalidStreet]];
+```
+
 ## Parameters
 
-- `postalAddressKey`: A key value from   that indicates which part of the address has an error.
+- `postalAddressKey`: A key value from [`CNPostalAddress`](https://developer.apple.com/documentation/Contacts/CNPostalAddress) that indicates which part of the address has an error.
 - `localizedDescription`: Optional. Provide a localized, user-facing error message string to help the user resolve the error.
 
 ## See Also

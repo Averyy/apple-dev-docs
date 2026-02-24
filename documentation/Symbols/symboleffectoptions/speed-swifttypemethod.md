@@ -26,7 +26,7 @@ A new set of effect options with the preferred speed multiplier.
 
 ## Parameters
 
-- `speed`: The preferred speed multiplier to play the effect with. The default multiplier is  . The function may clamp very large or small values.
+- `speed`: The preferred speed multiplier to play the effect with. The default multiplier is `1.0`. The function may clamp very large or small values.
 
 ## See Also
 

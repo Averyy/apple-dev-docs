@@ -33,10 +33,10 @@ However, you might need to create authentication challenge objects when adding s
 ## Parameters
 
 - `space`: The protection space for the authentication challenge. This provides additional information about the authentication request, such as the host, port, authentication realm, and so on.
-- `credential`: The proposed credential, or  .
+- `credential`: The proposed credential, or `nil`.
 - `previousFailureCount`: The total number of previous failures for this request, including failures for other protection spaces.
-- `response`: An instance of   containing the server response that caused you to generate an authentication challenge, or   if no response object is applicable to the challenge.
-- `error`: An   instance describing the authentication failure, or   if it is not applicable to the challenge.
+- `response`: An instance of [`URLResponse`](urlresponse.md) containing the server response that caused you to generate an authentication challenge, or `nil` if no response object is applicable to the challenge.
+- `error`: An `NS``Error` instance describing the authentication failure, or `nil` if it is not applicable to the challenge.
 - `sender`: The object that initiated the authentication challenge (typically, the object that called this method).
 
 ## See Also

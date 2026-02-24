@@ -25,7 +25,7 @@ The text field’s content type modifies how the text input controller and Apple
 
 ## Parameters
 
-- `textContentType`: The text field’s content type. Passing   clears the content type. For a list of possible content types, see  .
+- `textContentType`: The text field’s content type. Passing `nil` clears the content type. For a list of possible content types, see [`WKTextContentType`](wktextcontenttype.md).
 
 ## See Also
 

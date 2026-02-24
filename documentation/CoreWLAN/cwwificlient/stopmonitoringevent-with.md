@@ -22,7 +22,7 @@ Use this method to indicate that the client should no longer send notifications 
 
 ## Parameters
 
-- `type`: The type of event notifications to unregister for. See   for a list of possible values.
+- `type`: The type of event notifications to unregister for. See [`CWEventType`](cweventtype.md) for a list of possible values.
 
 ## See Also
 

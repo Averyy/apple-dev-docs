@@ -22,7 +22,7 @@ func argumentNames(forFunction function: String? = nil) -> [String]
 
 ## Parameters
 
-- `function`: The function. Specify as   if the graph only contains one function.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
 
 ## See Also
 

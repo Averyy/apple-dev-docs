@@ -19,7 +19,7 @@ init(identifier: String, name: String)
 
 ## Parameters
 
-- `identifier`: A string that uniquely identifies the tool in the picker, such as  .
+- `identifier`: A string that uniquely identifies the tool in the picker, such as `com.example.example-company.custom-tool`.
 - `name`: A short string to show as the name of the tool in the UI.
 
 

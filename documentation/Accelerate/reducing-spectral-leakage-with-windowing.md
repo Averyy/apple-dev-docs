@@ -10,7 +10,7 @@ Discrete Fourier and cosine transforms, which decompose a signal into its compon
 
 However, with noninteger period signals, where the endpoints don’t meet, the discontinuities appear as false frequency components in a forward transform. This smearing of data is called spectral leakage.
 
-You can use an approach called windowing to reduce spectral leakage when performing transforms over data that includes noninteger period signals.  multiplies a signal by a vector that represents a smooth curve with boundary values of zero or near zero. This technique ensures that the endpoints of a signal meet and reduces the discontinuities.
+You can use an approach called windowing to reduce spectral leakage when performing transforms over data that includes noninteger period signals. *Windowing* multiplies a signal by a vector that represents a smooth curve with boundary values of zero or near zero. This technique ensures that the endpoints of a signal meet and reduces the discontinuities.
 
 ##### Synthesize a Test Signal
 
@@ -152,6 +152,10 @@ The illustration below shows the windowed signal in blue, with its boundaries ta
 ##### Select a Window Sequence
 
 vDSP provides functions for generating three different windows:
+
+- **Hann**: A great-general purpose window that reduces spectral leakage.
+- **Hamming**: Provides better discrimination of component sine waves with close frequencies.
+- **Blackman**: Reduces spectral leakage away from the main frequency compared to Hann and Hamming, but has a wider main peak than Hann.
 
 The image below provides a visual comparison of the different window sequence types:
 

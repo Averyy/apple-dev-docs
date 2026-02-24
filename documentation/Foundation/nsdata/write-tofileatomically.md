@@ -30,8 +30,8 @@ This method may not be appropriate when writing to publicly accessible files. To
 
 ## Parameters
 
-- `path`: The location to which to write the receiver’s bytes. If   contains a tilde (~) character, you must expand it with   before invoking this method.
-- `useAuxiliaryFile`: If  , the data is written to a backup file, and then—assuming no errors occur—the backup file is renamed to the name specified by  ; otherwise, the data is written directly to  .
+- `path`: The location to which to write the receiver’s bytes. If `path` contains a tilde (~) character, you must expand it with [`expandingTildeInPath`](nsstring/expandingtildeinpath.md) before invoking this method.
+- `useAuxiliaryFile`: If [`true`](https://developer.apple.com/documentation/Swift/true), the data is written to a backup file, and then—assuming no errors occur—the backup file is renamed to the name specified by `path`; otherwise, the data is written directly to `path`.
 
 ## See Also
 

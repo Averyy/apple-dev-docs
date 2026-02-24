@@ -48,7 +48,7 @@ let y1 = x.gathering(atIndices: i, alongAxis: 1)
 ## Parameters
 
 - `indices`: A 32-bit integer tensor containing indices to gather at.
-- `axis`: The dimension to gather along. Must be in the range  .
+- `axis`: The dimension to gather along. Must be in the range `[-rank, rank)`.
 
 ## See Also
 

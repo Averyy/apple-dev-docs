@@ -30,7 +30,7 @@ A [`MapStyle`](mapstyle.md) with the elevation style you specified.
 
 ## Parameters
 
-- `elevation`: One of the   values that determines how the map renders elevation.
+- `elevation`: One of the [`MapStyle.Elevation`](mapstyle/elevation.md) values that determines how the map renders elevation.
 
 ## See Also
 

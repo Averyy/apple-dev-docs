@@ -31,7 +31,9 @@ When this method is called, you create a new array of valid [`PKShippingMethod`]
 
 - `controller`: The payment authorization controller.
 - `contact`: A contact object representing the new shipping address. To maintain privacy, the shipping information is anonymized. For example, in the United States it only includes the city, state, and zip code. This provides enough information to calculate shipping costs, without revealing sensitive information until the user actually approves the purchase.
-- `completion`: This block takes the following parameters:
+- `completion`: The completion block to call with the updated payment summary items and shipping methods. This block takes the following parameters: - **`status`**: The authorization status for the payment. For values, see [`PKPaymentAuthorizationControllerDelegate`](pkpaymentauthorizationcontrollerdelegate.md).
+- **`shippingMethods`**: An array of [`PKShippingMethod`](pkshippingmethod.md) objects that replaces the shipping methods for the current payment request.
+- **`summaryItems`**: An array of [`PKPaymentSummaryItem`](pkpaymentsummaryitem.md) objects that replaces the summary items for the current payment request.
 
 ## See Also
 

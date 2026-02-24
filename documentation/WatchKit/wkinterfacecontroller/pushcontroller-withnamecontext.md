@@ -29,7 +29,7 @@ Always call this method from your WatchKit extension’s main thread.
 ## Parameters
 
 - `name`: The name of the interface controller you want to display. In your storyboard, the name of an interface controller is stored in the object’s Identifier property, which is located in the attributes inspector.
-- `context`: An object to pass to the new interface controller. Use the object in this parameter to communicate important information to the new interface controller, such as the data to display or any relevant state information. You may specify   for this parameter if you want, but doing so is not recommended.
+- `context`: An object to pass to the new interface controller. Use the object in this parameter to communicate important information to the new interface controller, such as the data to display or any relevant state information. You may specify `nil` for this parameter if you want, but doing so is not recommended.
 
 ## See Also
 

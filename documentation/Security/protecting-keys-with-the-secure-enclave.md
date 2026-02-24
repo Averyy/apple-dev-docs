@@ -24,6 +24,26 @@ The steps required to create a key pair with the Secure Enclave are similar to t
 
 You start by using an attribute dictionary to describe the key, but in this case, one of the attributes is an access control object. Use [`SecAccessControlCreateWithFlags(_:_:_:_:)`](secaccesscontrolcreatewithflags(_:_:_:_:).md) to create a suitable object:
 
+**Swift**:
+
+```swift
+let access = SecAccessControlCreateWithFlags(
+    kCFAllocatorDefault,
+    kSecAttrAccessibleWhenUnlockedThisDeviceOnly,
+    .privateKeyUsage,
+    nil)! // Ignore errors.
+```
+
+**Objective-C**:
+
+```objc
+SecAccessControlRef access = SecAccessControlCreateWithFlags(
+    kCFAllocatorDefault,
+    kSecAttrAccessibleWhenUnlockedThisDeviceOnly,
+    kSecAccessControlPrivateKeyUsage,
+    NULL); // Ignore errors.
+```
+
 This object includes a protection parameter of [`kSecAttrAccessibleWhenUnlockedThisDeviceOnly`](ksecattraccessiblewhenunlockedthisdeviceonly.md). As a result, you can access the associated keychain item only on the device that created it (a feature that’s also inherent to using the Secure Enclave), and only when the device is unlocked. Other less restrictive options are possible, but this option is generally preferred unless your app operates in the background.
 
 By specifying the [`privateKeyUsage`](secaccesscontrolcreateflags/privatekeyusage.md) flag, you make the private key available for use in signing and verification operations inside the Secure Enclave. Without the flag, key generation still succeeds, but signing operations that attempt to use it fail.
@@ -34,6 +54,36 @@ You could also combine the [`privateKeyUsage`](secaccesscontrolcreateflags/priva
 
 Using the access control object, you then create an attribute dictionary:
 
+**Swift**:
+
+```swift
+let attributes: NSDictionary = [
+    kSecAttrKeyType: kSecAttrKeyTypeECSECPrimeRandom,
+    kSecAttrKeySizeInBits: 256,
+    kSecAttrTokenID: kSecAttrTokenIDSecureEnclave,
+    kSecPrivateKeyAttrs: [
+        kSecAttrIsPermanent: true,
+        kSecAttrApplicationTag: <# a tag #>,
+        kSecAttrAccessControl: access
+    ]
+]
+```
+
+**Objective-C**:
+
+```objc
+NSDictionary* attributes =
+  @{ (id)kSecAttrKeyType: (id)kSecAttrKeyTypeECSECPrimeRandom,
+     (id)kSecAttrKeySizeInBits: @256,
+     (id)kSecAttrTokenID: (id)kSecAttrTokenIDSecureEnclave,
+     (id)kSecPrivateKeyAttrs:
+       @{ (id)kSecAttrIsPermanent: @YES,
+          (id)kSecAttrApplicationTag: <# a tag #>,
+          (id)kSecAttrAccessControl: (__bridge id)access,
+        },
+   };
+```
+
 The above attribute dictionary is structurally similar to the one described in [`Creating an Asymmetric Key Pair`](generating-new-cryptographic-keys#Creating-an-Asymmetric-Key-Pair.md). In particular, it indicates that the private key should be stored in the keychain and tagged for later retrieval. However, it differs in a few critical ways:
 
 - A new attribute, [`kSecAttrTokenID`](ksecattrtokenid.md), with the value [`kSecAttrTokenIDSecureEnclave`](ksecattrtokenidsecureenclave.md), indicates that the generation operation should take place inside the Secure Enclave.
@@ -43,6 +93,28 @@ The above attribute dictionary is structurally similar to the one described in [
 ##### Create a Key Pair
 
 With the attributes dictionary in hand, you create the key pair just as you do outside the Secure Enclave, with a call to the [`SecKeyCreateRandomKey(_:_:)`](seckeycreaterandomkey(_:_:).md) function:
+
+**Swift**:
+
+```swift
+var error: Unmanaged<CFError>?
+guard let privateKey = SecKeyCreateRandomKey(attributes, &error) else {
+    throw error!.takeRetainedValue() as Error
+}
+```
+
+**Objective-C**:
+
+```objc
+CFErrorRef error = NULL;
+SecKeyRef privateKey = SecKeyCreateRandomKey((__bridge CFDictionaryRef)attributes,
+                                             &error);
+if (!privateKey) {
+    NSError *err = CFBridgingRelease(error); // ARC takes ownership.
+    // Handle the error.
+}
+
+```
 
 Notice that you still receive a reference to the private key object, even though it’s created by the Secure Enclave. The private key is logically part of the keychain, and you can later obtain a reference to it in the usual way. But the key data is encoded, and only the Secure Enclave can make use of the key.
 

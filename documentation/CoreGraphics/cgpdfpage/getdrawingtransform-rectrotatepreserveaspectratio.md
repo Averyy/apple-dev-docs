@@ -35,10 +35,10 @@ Quartz constructs the affine transform as follows:
 
 ## Parameters
 
-- `box`: A constant that specifies the type of box. For possible values, see  .
+- `box`: A constant that specifies the type of box. For possible values, see [`CGPDFBox`](cgpdfbox.md).
 - `rect`: A Quartz rectangle.
-- `rotate`: An integer, that must be a multiple of  , that specifies the angle by which the specified rectangle is rotated clockwise.
-- `preserveAspectRatio`: A Boolean value that specifies whether or not the aspect ratio should be preserved. A value of   specifies that the aspect ratio should be preserved.
+- `rotate`: An integer, that must be a multiple of `90`, that specifies the angle by which the specified rectangle is rotated clockwise.
+- `preserveAspectRatio`: A Boolean value that specifies whether or not the aspect ratio should be preserved. A value of [`true`](https://developer.apple.com/documentation/Swift/true) specifies that the aspect ratio should be preserved.
 
 ## See Also
 

@@ -32,7 +32,7 @@ If `timer` was added to [`commonModes`](cfrunloopmode/commonmodes.md), this func
 
 - `rl`: The run loop to examine.
 - `timer`: The run loop timer for which to search.
-- `mode`: The run loop mode of   in which to search for  . Use the constant   to search for   in the set of objects monitored by all the common modes.
+- `mode`: The run loop mode of `rl` in which to search for `timer`. Use the constant [`commonModes`](cfrunloopmode/commonmodes.md) to search for `timer` in the set of objects monitored by all the common modes.
 
 ## See Also
 

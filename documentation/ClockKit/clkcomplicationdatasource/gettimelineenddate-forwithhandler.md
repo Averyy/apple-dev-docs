@@ -30,7 +30,7 @@ If you don’t implement this method, ClockKit doesn’t attempt to retrieve tim
 ## Parameters
 
 - `complication`: The complication tied to the request.
-- `handler`: The handler to execute with the end date. This block has no return value and takes the following parameter:
+- `handler`: The handler to execute with the end date. This block has no return value and takes the following parameter: - **`date`**: The end date for your data. If you specify `nil`, ClockKit doesn’t ask for any more future data.
 
 ## See Also
 

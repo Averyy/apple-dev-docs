@@ -30,7 +30,8 @@ The size of the image that returns to your game is dependent on both the size pa
 ## Parameters
 
 - `size`: A constant that determines the size of the photo to load.
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameters: - ***photo***: An image of the player. If an error occurs, this may be a cached image already on the device; otherwise, it is `nil`.
+- ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

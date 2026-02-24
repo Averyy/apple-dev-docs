@@ -23,7 +23,7 @@ An `NSDate` object initialized with a date and time value specified by `aString`
 
 ## Parameters
 
-- `description`: You must specify all fields of the format string, including the time zone offset, which must have a plus or minus sign prefix.
+- `description`: A string that specifies a date and time value in the international string representation format—`YYYY-MM-DD HH:MM:SS ±HHMM`, where `±HHMM` is a time zone offset in hours and minutes from UTC (for example, “`2001-03-24 10:45:32 +0600`”). You must specify all fields of the format string, including the time zone offset, which must have a plus or minus sign prefix.
 
 ## See Also
 

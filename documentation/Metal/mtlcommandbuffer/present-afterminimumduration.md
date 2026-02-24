@@ -28,7 +28,7 @@ This convenience method calls the drawable’s [`present(afterMinimumDuration:)`
 
 ## Parameters
 
-- `drawable`: An   instance that contains a texture the system can show on a display.
+- `drawable`: An [`MTLDrawable`](mtldrawable.md) instance that contains a texture the system can show on a display.
 - `duration`: The shortest display time you want the system to give to the previous drawable before presenting this one.
 
 ## See Also

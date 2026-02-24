@@ -26,8 +26,8 @@ A physics material resource.
 
 ## Parameters
 
-- `friction`: The coefficient of friction, in the range  .
-- `restitution`: The coefficient of restitution, in the range  .   Use values at the high end of the range to indicate materials that   experience elastic collisions, meaning that objects bounce off each   other and kinetic energy is conserved after a collision. Use low values   to indicate materials that lose kinetic energy when they collide.
+- `friction`: The coefficient of friction, in the range `[0, infinity)`.
+- `restitution`: The coefficient of restitution, in the range `[0, 1]`. Use values at the high end of the range to indicate materials that experience elastic collisions, meaning that objects bounce off each other and kinetic energy is conserved after a collision. Use low values to indicate materials that lose kinetic energy when they collide.
 
 ## See Also
 

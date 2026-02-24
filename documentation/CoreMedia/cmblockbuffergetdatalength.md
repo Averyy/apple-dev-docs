@@ -30,7 +30,7 @@ Obtains the total data length reachable via a `CMBlockBuffer`. This total is the
 
 ## Parameters
 
-- `theBuffer`:   to examine.
+- `theBuffer`: `CMBlockBuffer` to examine.
 
 ## See Also
 

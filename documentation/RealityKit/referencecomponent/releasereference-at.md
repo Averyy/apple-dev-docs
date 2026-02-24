@@ -21,7 +21,7 @@ static func releaseReference(at entity: Entity) throws
 
 ## Parameters
 
-- `entity`: The entity that holds the   to release.
+- `entity`: The entity that holds the [`ReferenceComponent`](referencecomponent.md) to release.
 
 
 ---

@@ -37,6 +37,10 @@ object StatusSoftwareUpdatePendingVersion
 - [object StatusSoftwareUpdatePendingVersionDictionaryObject](statussoftwareupdatependingversiondictionaryobject.md)
   A dictionary that contains details about a pending software update.
 
+## Properties
+
+- `softwareupdate.pending-version` (StatusSoftwareUpdatePendingVersionDictionaryObject) *(required)*: A dictionary that contains the build and OS versions of the software update that’s pending on the device.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

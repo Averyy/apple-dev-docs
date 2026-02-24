@@ -9,6 +9,10 @@ An entitlement you enable so your app can use Managed App Distribution.
 - iOS 17.2+
 - iPadOS 17.2+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 To add this entitlement to your app, enable the Managed App Installation UI capability in Xcode.

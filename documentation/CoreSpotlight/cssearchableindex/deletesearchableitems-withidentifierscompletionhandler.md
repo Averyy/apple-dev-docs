@@ -29,7 +29,7 @@ The [`searchableIndex(_:reindexSearchableItemsWithIdentifiers:acknowledgementHan
 ## Parameters
 
 - `identifiers`: An array of identifiers that specify the items to delete.
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: The block that’s called when the data has been journaled by the index, which means that the index makes a note that it has to perform this operation. If the completion handler returns an error, it means that the data wasn’t journaled correctly and the client should retry the request. The block receives the following parameter: - **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is `nil`.
 
 ## See Also
 

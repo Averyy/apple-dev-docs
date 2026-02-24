@@ -24,11 +24,11 @@ To unmute all events from a path, use [`es_unmute_path(_:_:_:)`](es_unmute_path(
 
 ## Parameters
 
-- `client`: A previously-muted client. If the call succeeds, this client begins to receive events that match the types in   from executables whose paths match  .
+- `client`: A previously-muted client. If the call succeeds, this client begins to receive events that match the types in `events` from executables whose paths match `path`.
 - `path`: The path to unmute. The client resumes receiving events from executables whose paths match this string.
-- `type`: The type of the   argument, either a prefix or a literal path.
+- `type`: The type of the `path` argument, either a prefix or a literal path.
 - `events`: An array of event types to unmute.
-- `event_count`: The number of members in the   array.
+- `event_count`: The number of members in the `events` array.
 
 ## See Also
 

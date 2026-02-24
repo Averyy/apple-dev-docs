@@ -30,7 +30,7 @@ By creating a task based on a request object, you can tune various aspects of th
 
 By using the completion handler, the task bypasses calls to delegate methods for response and data delivery, and instead provides any resulting [`NSData`](nsdata.md), [`URLResponse`](urlresponse.md), and [`NSError`](nserror.md) objects inside the completion handler. Delegate methods for handling authentication challenges, however, are still called.
 
-You should pass a `nil` completion handler  when creating tasks in sessions whose delegates include a [`urlSession(_:dataTask:didReceive:)`](urlsessiondatadelegate/urlsession(_:datatask:didreceive:).md) method.
+You should pass a `nil` completion handler *only* when creating tasks in sessions whose delegates include a [`urlSession(_:dataTask:didReceive:)`](urlsessiondatadelegate/urlsession(_:datatask:didreceive:).md) method.
 
 After you create the task, you must start it by calling its [`resume()`](urlsessiontask/resume().md) method.
 
@@ -39,7 +39,9 @@ If the request completes successfully, the `data` parameter of the completion ha
 ## Parameters
 
 - `request`: A URL request object that provides the URL, cache policy, request type, body data or body stream, and so on.
-- `completionHandler`: This completion handler takes the following parameters:
+- `completionHandler`: The completion handler to call when the load request is complete. This handler is executed on the delegate queue. If you pass `nil`, only the session delegate methods are called when the task completes, making this method equivalent to the [`dataTask(with:)`](urlsession/datatask(with:)-7jpys.md) method. This completion handler takes the following parameters: - **`data`**: The data returned by the server.
+- **`response`**: An object that provides response metadata, such as HTTP headers and status code. If you are making an HTTP or HTTPS request, the returned object is actually an [`HTTPURLResponse`](httpurlresponse.md) object.
+- **`error`**: An error object that indicates why the request failed, or `nil` if the request was successful.
 
 ## See Also
 

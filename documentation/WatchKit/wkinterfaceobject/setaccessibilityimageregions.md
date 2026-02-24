@@ -20,7 +20,7 @@ Use this method to associate different accessibility labels with different parts
 
 ## Parameters
 
-- `accessibilityImageRegions`: An array of   objects. Each object in the array represents a portion of the interface object’s foreground or background image that should be treated as a separate accessible element.
+- `accessibilityImageRegions`: An array of [`WKAccessibilityImageRegion`](wkaccessibilityimageregion.md) objects. Each object in the array represents a portion of the interface object’s foreground or background image that should be treated as a separate accessible element.
 
 ## See Also
 

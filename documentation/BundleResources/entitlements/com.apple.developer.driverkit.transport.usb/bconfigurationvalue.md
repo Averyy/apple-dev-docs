@@ -6,6 +6,10 @@
 **Availability**:
 - macOS 10.15+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [bDeviceClass](entitlements/com.apple.developer.driverkit.transport.usb/bdeviceclass.md)

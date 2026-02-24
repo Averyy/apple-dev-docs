@@ -40,7 +40,7 @@ Use this function to incorporate pixel buffer based image processing code with e
 
 ## Parameters
 
-- `body`: A closure with an unsafe pointer to a   parameter that points to the underlying vImage buffer of the pixel buffer.
+- `body`: A closure with an unsafe pointer to a [`vImage_Buffer`](vimage_buffer.md) parameter that points to the underlying vImage buffer of the pixel buffer.
 
 ## See Also
 

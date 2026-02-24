@@ -26,7 +26,7 @@ Some events require you to respond with [`es_respond_auth_result(_:_:_:_:)`](es_
 
 - `client`: The client that produced the event.
 - `message`: The message that delivered the event.
-- `authorized_flags`: A   value to apply as a mask on the flags in the event.
+- `authorized_flags`: A `flags` value to apply as a mask on the flags in the event.
 - `cache`: Indicates whether Endpoint Security should cache this result. The caching semantics depend on the specific event type.
 
 ## See Also

@@ -26,7 +26,7 @@ When you enable notifications for the characteristic’s value, the peripheral c
 
 ## Parameters
 
-- `enabled`: A Boolean value that indicates whether to receive notifications or indications whenever the characteristic’s value changes.   if you want to enable notifications or indications for the characteristic’s value.   if you don’t want to receive notifications or indications whenever the characteristic’s value changes.
+- `enabled`: A Boolean value that indicates whether to receive notifications or indications whenever the characteristic’s value changes. [`true`](https://developer.apple.com/documentation/Swift/true) if you want to enable notifications or indications for the characteristic’s value. [`false`](https://developer.apple.com/documentation/Swift/false) if you don’t want to receive notifications or indications whenever the characteristic’s value changes.
 - `characteristic`: The specified characteristic.
 
 ## Topics

@@ -25,8 +25,8 @@ This method is called by the text table block `block` after it is laid out to de
 ## Parameters
 
 - `block`: The text table block that wants to determine where to layout its glyphs.
-- `contentRect`: The actual rectangle in which the text was laid out, as determined by  .
-- `rect`: The initial rectangle in   proposed by the typesetter.
+- `contentRect`: The actual rectangle in which the text was laid out, as determined by [`rectForLayout(at:in:textContainer:characterRange:)`](nstextblock/rectforlayout(at:in:textcontainer:characterrange:).md).
+- `rect`: The initial rectangle in `textContainer` proposed by the typesetter.
 - `textContainer`: The text container being used for the layout.
 - `charRange`: The range of the characters whose glyphs are to be drawn.
 

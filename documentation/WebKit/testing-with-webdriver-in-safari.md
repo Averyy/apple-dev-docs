@@ -32,7 +32,11 @@ Grab a recent release of the [`Selenium`](https://developer.apple.comhttps://www
 
 Safari’s WebDriver support for developers is turned off by default. How you enable it depends on your operating system.
 
+**High Sierra and later:**
+
 Run `safaridriver --enable` once. (If you’re upgrading from a previous macOS release, you may need to use `sudo`.)
+
+**Sierra and earlier:**
 
 1. If you haven’t already done so, make the Develop menu available. Choose Safari > Preferences, and on the Advanced tab, select “Show Develop menu in menu bar.” For details, see [`Safari Help`](https://developer.apple.comhttps://support.apple.com/guide/safari/welcome).
 2. Choose Develop > Allow Remote Automation.

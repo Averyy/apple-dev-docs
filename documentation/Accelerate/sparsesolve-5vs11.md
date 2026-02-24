@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Solves the equation  for vectors of double-precision values using the specified iterative method and preconditioner type.
+Solves the equation *Ax = b* for vectors of double-precision values using the specified iterative method and preconditioner type.
 
 **Availability**:
 - iOS 11.0+
@@ -79,23 +79,23 @@ On return, x`Values` contains the values `[1.0, 2.0, 3.0]`.
 ## Parameters
 
 - `method`: The iterative method.
-- `A`: The matrix  .
-- `b`: The vector  .
-- `x`: The vector  .
+- `A`: The matrix *A*.
+- `b`: The vector *b*.
+- `x`: The vector *x*.
 - `Preconditioner`: The preconditioner to apply.
 
 ## See Also
 
 - [func SparseSolve(SparseIterativeMethod, SparseMatrix_Double, DenseVector_Double, DenseVector_Double, SparseOpaquePreconditioner_Double) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-1qwax.md)
-  Solves the equation  for vectors of double-precision values using the specified iterative method and opaque preconditioner.
+  Solves the equation *Ax = b* for vectors of double-precision values using the specified iterative method and opaque preconditioner.
 - [func SparseSolve(SparseIterativeMethod, SparseMatrix_Float, DenseVector_Float, DenseVector_Float, SparseOpaquePreconditioner_Float) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-3aphv.md)
-  Solves the equation  for vectors of single-precision values using the specified iterative method and opaque preconditioner.
+  Solves the equation *Ax = b* for vectors of single-precision values using the specified iterative method and opaque preconditioner.
 - [func SparseSolve(SparseIterativeMethod, SparseMatrix_Float, DenseVector_Float, DenseVector_Float, SparsePreconditioner_t) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-9nzvm.md)
-  Solves the equation  for vectors of single-precision values using the specified iterative method and preconditioner type.
+  Solves the equation *Ax = b* for vectors of single-precision values using the specified iterative method and preconditioner type.
 - [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Double, DenseVector_Double) -> Void, DenseVector_Double, DenseVector_Double, SparseOpaquePreconditioner_Double) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-6i1nx.md)
-  Solves the equation  for vectors of double-precision values, treating  as an operator and using the specified iterative method and preconditioner.
+  Solves the equation *Ax = b* for vectors of double-precision values, treating *A* as an operator and using the specified iterative method and preconditioner.
 - [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Float, DenseVector_Float) -> Void, DenseVector_Float, DenseVector_Float, SparseOpaquePreconditioner_Float) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-7wnum.md)
-  Solves the equation  for vectors of single-precision values, treating  as an operator and using the specified iterative method and preconditioner.
+  Solves the equation *Ax = b* for vectors of single-precision values, treating *A* as an operator and using the specified iterative method and preconditioner.
 
 
 ---

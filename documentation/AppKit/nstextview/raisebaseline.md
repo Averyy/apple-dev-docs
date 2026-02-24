@@ -20,7 +20,7 @@ As such, this method defines a more primitive operation than superscripting.
 
 ## Parameters
 
-- `sender`: The control that sent the message; may be  .
+- `sender`: The control that sent the message; may be `nil`.
 
 ## See Also
 

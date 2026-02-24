@@ -28,10 +28,10 @@ If no feedback token is returned, don’t perform the horizontal alignment or re
 
 ## Parameters
 
-- `view`: The view ( ) in which the object was moved.
-- `previousX`: The horizontal location ( ) of the object prior to its move.
-- `alignedX`: The new horizontal location ( ) of the object if alignment occurs.
-- `defaultX`: The current horizontal location ( ) of the object. This is where the user actually moved the object. This location may be offset from the location of the cursor.
+- `view`: The view ([`NSView`](nsview.md)) in which the object was moved.
+- `previousX`: The horizontal location ([`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct)) of the object prior to its move.
+- `alignedX`: The new horizontal location ([`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct)) of the object if alignment occurs.
+- `defaultX`: The current horizontal location ([`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct)) of the object. This is where the user actually moved the object. This location may be offset from the location of the cursor.
 
 ## See Also
 

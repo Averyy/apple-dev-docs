@@ -30,9 +30,9 @@ You can also create a data source from a [`DataFrame`](https://developer.apple.c
 
 ## Parameters
 
-- `trainingData`: An   instance that contains a collection of labeled audio   files.
-- `parameters`: An   instance you use to configure the feature   extraction session.
-- `sessionParameters`: An   instance you use to configure the feature extraction   session.
+- `trainingData`: An [`MLSoundClassifier.DataSource`](mlsoundclassifier/datasource.md) instance that contains a collection of labeled audio files.
+- `parameters`: An [`MLSoundClassifier.FeatureExtractionParameters`](mlsoundclassifier/featureextractionparameters.md) instance you use to configure the feature extraction session.
+- `sessionParameters`: An [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you use to configure the feature extraction session.
 
 ## See Also
 

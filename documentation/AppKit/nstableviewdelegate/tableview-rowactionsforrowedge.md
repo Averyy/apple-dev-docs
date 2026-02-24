@@ -29,7 +29,7 @@ If this method isn’t implemented, then the table row displays no actions when 
 
 - `tableView`: The table view that sent the message.
 - `row`: The index of the target row.
-- `edge`: The edge (of class  ) for which row actions are requested. This is based on the direction in which the user swiped on the row. Swiping to the right results in an edge value of  . Swiping to the left results in an edge value of  .
+- `edge`: The edge (of class [`NSTableView.RowActionEdge`](nstableview/rowactionedge.md)) for which row actions are requested. This is based on the direction in which the user swiped on the row. Swiping to the right results in an edge value of [`NSTableView.RowActionEdge.leading`](nstableview/rowactionedge/leading.md). Swiping to the left results in an edge value of [`NSTableView.RowActionEdge.trailing`](nstableview/rowactionedge/trailing.md).
 
 ## See Also
 

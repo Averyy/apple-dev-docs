@@ -29,8 +29,8 @@ This function adjusts the points of the path you provide to values that the acce
 
 ## Parameters
 
-- `path`: The path object that you want to convert. The coordinate values used to create this path object should be relative to the coordinate system of the specified  . This parameter must not be  .
-- `view`: The view whose coordinate system was used to define the path. This parameter must not be  .
+- `path`: The path object that you want to convert. The coordinate values used to create this path object should be relative to the coordinate system of the specified `view`. This parameter must not be `nil`.
+- `view`: The view whose coordinate system was used to define the path. This parameter must not be `nil`.
 
 ## See Also
 

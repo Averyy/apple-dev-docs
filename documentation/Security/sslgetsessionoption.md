@@ -24,8 +24,8 @@ A result code. See [`Secure Transport Result Codes`](secure-transport-result-cod
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `option`: An SSL session option. Possible values are listed in  .
-- `value`: On return,   if the option is enabled, or   otherwise.
+- `option`: An SSL session option. Possible values are listed in [`SSLSessionOption`](sslsessionoption.md).
+- `value`: On return, `true` if the option is enabled, or `false` otherwise.
 
 
 ---

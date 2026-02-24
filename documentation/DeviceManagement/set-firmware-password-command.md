@@ -32,6 +32,52 @@ This command isn’t supported on a Mac with Apple silicon.
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>AllowOroms</key>
+        <false/>
+        <key>CurrentPassword</key>
+        <string>oldpassword</string>
+        <key>NewPassword</key>
+        <string>newpassword</string>
+        <key>RequestType</key>
+        <string>SetFirmwarePassword</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_SetFirmwarePassword</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_SetFirmwarePassword</string>
+    <key>SetFirmwarePassword</key>
+    <dict>
+        <key>PasswordChanged</key>
+        <true/>
+    </dict>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>E84CD517-CB37-52F7-988C-DB5137B604B8</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -39,6 +85,10 @@ This command isn’t supported on a Mac with Apple silicon.
   The command to change or clear the firmware password on a device.
 - [object SetFirmwarePasswordResponse](setfirmwarepasswordresponse.md)
   A response from the device after it processes the command to change or clear the firmware password on a device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

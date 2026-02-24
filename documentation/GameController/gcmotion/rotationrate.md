@@ -21,7 +21,7 @@ var rotationRate: GCRotationRate { get }
 
 #### Discussion
 
-The  is a gyroscopic measurement of the controller’s rotation around the x, y, and z axes.
+The *rotation rate* is a gyroscopic measurement of the controller’s rotation around the x, y, and z axes.
 
 ## See Also
 

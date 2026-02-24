@@ -31,7 +31,7 @@ Overriding this method is not recommended. Any changes to the returned glyph ran
 ## Parameters
 
 - `glyphIndex`: Index of a glyph in the returned container.
-- `effectiveGlyphRange`: If not  , on output, points to the whole range of glyphs that are in the returned container.
+- `effectiveGlyphRange`: If not `NULL`, on output, points to the whole range of glyphs that are in the returned container.
 
 ## See Also
 

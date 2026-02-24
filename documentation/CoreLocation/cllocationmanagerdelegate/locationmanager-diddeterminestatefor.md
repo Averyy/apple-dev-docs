@@ -24,7 +24,7 @@ The location manager calls this method whenever there is a boundary transition f
 ## Parameters
 
 - `manager`: The location manager object reporting the event.
-- `state`: The state of the specified region. For a list of possible values, see the   type.
+- `state`: The state of the specified region. For a list of possible values, see the [`CLRegionState`](clregionstate.md) type.
 - `region`: The region whose state was determined.
 
 ## See Also

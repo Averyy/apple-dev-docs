@@ -30,7 +30,7 @@ This class method loads the texture into the sharegroup attached to the current 
 ## Parameters
 
 - `data`: The memory range to load as a texture.
-- `options`: A dictionary that describes any additional steps you want the texture loader to take when loading the texture. See  .
+- `options`: A dictionary that describes any additional steps you want the texture loader to take when loading the texture. See [`Texture Loading Options`](texture-loading-options.md).
 
 ## See Also
 

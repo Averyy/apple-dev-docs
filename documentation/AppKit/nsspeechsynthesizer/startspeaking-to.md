@@ -28,7 +28,7 @@ One example of how you might use this method is in an email program that automat
 
 ## Parameters
 
-- `string`: Text to speak. When   or empty, no synthesis is started.
+- `string`: Text to speak. When `nil` or empty, no synthesis is started.
 - `url`: Filesystem location of the output sound file.
 
 ## See Also

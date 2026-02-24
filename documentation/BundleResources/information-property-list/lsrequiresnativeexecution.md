@@ -8,6 +8,10 @@ A Boolean value that indicates whether to require the execution of the app’s n
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 The presence of this key causes the system to choose a native architecture over one that requires translation. For example, this key prevents the system from using the Rosetta translation process to execute the Intel portion of a universal app on Apple silicon.

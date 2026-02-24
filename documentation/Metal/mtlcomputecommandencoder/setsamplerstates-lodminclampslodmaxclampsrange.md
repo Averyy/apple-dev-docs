@@ -27,9 +27,9 @@ Calling this method ignores the [`lodMinClamp`](mtlsamplerdescriptor/lodminclamp
 
 ## Parameters
 
-- `samplers`: A list of   instances to bind to the sampler argument table.
-- `lodMinClamps`: An array of minimum levels of detail to use for the corresponding sampler in  .
-- `lodMaxClamps`: An array of maximum levels of detail to use for the corresponding sample in  .
+- `samplers`: A list of [`MTLSamplerState`](mtlsamplerstate.md) instances to bind to the sampler argument table.
+- `lodMinClamps`: An array of minimum levels of detail to use for the corresponding sampler in `samplers`.
+- `lodMaxClamps`: An array of maximum levels of detail to use for the corresponding sample in `samplers`.
 - `range`: A range of indices in the sampler state argument table.
 
 ## See Also

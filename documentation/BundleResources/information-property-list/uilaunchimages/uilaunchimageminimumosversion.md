@@ -10,6 +10,10 @@ A string representing the minimum iOS version number for which the image is inte
 - iPadOS 7.0+
 - tvOS 9.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 The version number string is formatted in the form `n.n.n`, where n is a number. For example, images targeting iOS 7 and later should specify a string “7.0”.

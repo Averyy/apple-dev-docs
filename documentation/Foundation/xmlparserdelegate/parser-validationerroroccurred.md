@@ -23,7 +23,7 @@ optional func parser(_ parser: XMLParser, validationErrorOccurred validationErro
 ## Parameters
 
 - `parser`: A parser object.
-- `validationError`: An   object describing the validation error that occurred.
+- `validationError`: An [`NSError`](nserror.md) object describing the validation error that occurred.
 
 ## See Also
 

@@ -26,7 +26,7 @@ You cannot call this function until after you have called the `CMSDecoderFinaliz
 
 ## Parameters
 
-- `cmsDecoder`: The CMSDecoder reference returned by the   function.
+- `cmsDecoder`: The CMSDecoder reference returned by the `CMSDecoderCreate` function.
 - `numSignersOut`: On return, the number of signers of the message. Zero indicates that the message was not signed.
 
 ## See Also

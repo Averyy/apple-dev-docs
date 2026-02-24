@@ -22,7 +22,7 @@ This is an optional method you implement to enumerate the text up to the contain
 
 - `location`: The location where the enumeration starts.
 - `reverse`: A Boolean value that indicates the enumeration starts at the end of the container.
-- `block`: A closure to invoke to evaluate the container boundaries; end the enumeration early by returning  .
+- `block`: A closure to invoke to evaluate the container boundaries; end the enumeration early by returning `false`.
 
 ## See Also
 

@@ -20,7 +20,7 @@ func setString(_ string: String, forType type: NSPasteboard.PasteboardType) -> B
 
 ## Parameters
 
-- `string`: A string for the representation specified by  .
+- `string`: A string for the representation specified by `type`.
 - `type`: A uniform type identifier string.
 
 ## See Also

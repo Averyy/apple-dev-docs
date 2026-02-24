@@ -7,6 +7,10 @@
 - iOS 16.0+
 - iPadOS 16.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [document-types](entitlements/com.apple.developer.in-app-identity-presentment/document-types.md)

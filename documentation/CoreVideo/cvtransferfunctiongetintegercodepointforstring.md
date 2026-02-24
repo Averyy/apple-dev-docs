@@ -26,7 +26,7 @@ The code point corresponding to the transfer function string, or `2` (unknown) i
 
 ## Parameters
 
-- `transferFunctionString`: A Core Video transfer function string. See   for possible values.
+- `transferFunctionString`: A Core Video transfer function string. See [`Image Buffer Transfer Function Constants`](image-buffer-transfer-function-constants.md) for possible values.
 
 ## See Also
 

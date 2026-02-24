@@ -9,6 +9,10 @@ The launch storyboard to use to generate a launch image when your app opens from
 - iOS 9.0+
 - iPadOS 9.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 Use [`UILaunchStoryboards`](information-property-list/uilaunchstoryboards.md) when you want your app to show a different launch screen for different schemes. The schemes are the ones specified in your app’s [`CFBundleURLTypes`](information-property-list/cfbundleurltypes.md). You can also specify a default launch storyboard.

@@ -25,8 +25,8 @@ The run loop releases the display link if it no longer associates with any run m
 
 ## Parameters
 
-- `runloop`: A run loop the method disassociates the display link from for  .
-- `mode`: A run loop mode the method disassociates the display link for  .
+- `runloop`: A run loop the method disassociates the display link from for `mode`.
+- `mode`: A run loop mode the method disassociates the display link for `runloop`.
 
 ## See Also
 

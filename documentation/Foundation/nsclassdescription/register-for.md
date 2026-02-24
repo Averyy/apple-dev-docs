@@ -22,7 +22,7 @@ You should rarely need to directly invoke this method.
 ## Parameters
 
 - `description`: The class description to register.
-- `aClass`: The class for which to register  .
+- `aClass`: The class for which to register `description`.
 
 ## See Also
 

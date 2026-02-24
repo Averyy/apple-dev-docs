@@ -22,7 +22,8 @@ Set the [`isCameraAssistanceEnabled`](ninearbypeerconfiguration/iscameraassistan
 
 ## Parameters
 
-- `session`: An existing AR session configured as follows:
+- `session`: An existing AR session configured as follows: - A world-tracking configuration ([`ARWorldTrackingConfiguration`](https://developer.apple.com/documentation/ARKit/ARWorldTrackingConfiguration)) with [`worldAlignment`](https://developer.apple.com/documentation/ARKit/ARConfiguration/worldAlignment-swift.property) `=` [`ARConfiguration.WorldAlignment.gravity`](https://developer.apple.com/documentation/ARKit/ARConfiguration/WorldAlignment-swift.enum/gravity), [`isCollaborationEnabled`](https://developer.apple.com/documentation/ARKit/ARWorldTrackingConfiguration/isCollaborationEnabled) `=` `false`, [`userFaceTrackingEnabled`](https://developer.apple.com/documentation/ARKit/ARWorldTrackingConfiguration/userFaceTrackingEnabled) `=` `false`, and [`initialWorldMap`](https://developer.apple.com/documentation/ARKit/ARWorldTrackingConfiguration/initialWorldMap) `=` `nil`.
+- A delegate that returns `false` for [`sessionShouldAttemptRelocalization(_:)`](https://developer.apple.com/documentation/ARKit/ARSessionObserver/sessionShouldAttemptRelocalization(_:)).
 
 ## See Also
 

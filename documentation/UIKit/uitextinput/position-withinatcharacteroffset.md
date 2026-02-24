@@ -29,7 +29,7 @@ You should implement this method if you don’t have a one-to-one correspondence
 ## Parameters
 
 - `range`: An object that specifies a range of text in a document.
-- `offset`: A character offset from the start of  .
+- `offset`: A character offset from the start of `range`.
 
 ## See Also
 

@@ -44,7 +44,8 @@ struct MyApp: App {
 
 ## Parameters
 
-- `makePlacement`: A closure which returns the ideal placement for a   window derived from this scene.
+- `makePlacement`: A closure which returns the ideal placement for a window derived from this scene. - **content**: A proxy for the contents of the window.
+- **context**: An instance of a [`WindowPlacementContext`](windowplacementcontext.md) that provides contextual information used to size and position windows.
 
 ## See Also
 

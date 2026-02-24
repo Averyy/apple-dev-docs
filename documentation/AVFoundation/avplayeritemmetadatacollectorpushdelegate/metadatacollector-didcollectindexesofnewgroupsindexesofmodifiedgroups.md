@@ -27,10 +27,10 @@ This method is called when additions or modifications are made to the array of c
 
 ## Parameters
 
-- `metadataCollector`: The   on which this delegate is set.
+- `metadataCollector`: The [`AVPlayerItemMetadataCollector`](avplayeritemmetadatacollector.md) on which this delegate is set.
 - `metadataGroups`: The complete array of all metadata groups meeting the criteria of the output.
-- `indexesOfNewGroups`: The indexes of the   added since the last delegate invocation of this method.
-- `indexesOfModifiedGroups`: The indexes of the   modified since the last delegate invocation of this method.
+- `indexesOfNewGroups`: The indexes of the `metadataGroups` added since the last delegate invocation of this method.
+- `indexesOfModifiedGroups`: The indexes of the `metadataGroups` modified since the last delegate invocation of this method.
 
 
 ---

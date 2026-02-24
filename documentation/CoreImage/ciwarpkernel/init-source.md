@@ -29,7 +29,7 @@ This method is similar to the [`init(source:)`](cikernel/init(source:).md) metho
 
 ## Parameters
 
-- `string`: A program in the Core Image Kernel Language that contains a single routine marked using the   keyword.
+- `string`: A program in the Core Image Kernel Language that contains a single routine marked using the `kernel` keyword.
 
 
 ---

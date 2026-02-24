@@ -25,7 +25,7 @@ A Core Video result code. See [`Core Video Constants`](core-video-constants.md) 
 
 ## Parameters
 
-- `displayLinkOut`: On output,   points to the newly created display link.
+- `displayLinkOut`: On output, `displayLinkOut` points to the newly created display link.
 
 ## See Also
 

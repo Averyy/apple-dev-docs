@@ -25,7 +25,7 @@ A classification distribution.
 
 ## Parameters
 
-- `input`: A shaped array of input features. The shape must  .
+- `input`: A shaped array of input features. The shape must `[sequenceLength, featureSize]`.
 - `eventHandler`: An event handler.
 
 ## See Also

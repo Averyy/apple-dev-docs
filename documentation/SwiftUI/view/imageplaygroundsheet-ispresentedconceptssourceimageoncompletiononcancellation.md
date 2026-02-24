@@ -44,11 +44,11 @@ if supportsImagePlayground {
 
 ## Parameters
 
-- `isPresented`: A binding to a Boolean value that determines   whether to display the sheet.
-- `concepts`: An array of initial concepts (text descriptions, concepts extracted from text, drawings) that describe the expected contents of the image.   The person reviewing the image can change these prompts inside the creation UI.
-- `sourceImage`: Specify an existing image to use as source input for creating the new image.   The person viewing the sheet can override the image you provide, and choose   different images and concepts inside the creation UI. If you don’t provide   a starting image, the system creates the new image using only the contents   of the   parameter.
-- `onCompletion`: The block to receive the generated image. The block   has no return value and receives the following parameter:
-- `onCancellation`: The block to execute when the person exits   the creation UI without choosing an image. After executing this block,   the system automatically dismisses the sheet.
+- `isPresented`: A binding to a Boolean value that determines whether to display the sheet.
+- `concepts`: An array of initial concepts (text descriptions, concepts extracted from text, drawings) that describe the expected contents of the image. The person reviewing the image can change these prompts inside the creation UI.
+- `sourceImage`: Specify an existing image to use as source input for creating the new image. The person viewing the sheet can override the image you provide, and choose different images and concepts inside the creation UI. If you don’t provide a starting image, the system creates the new image using only the contents of the `concepts` parameter.
+- `onCompletion`: The block to receive the generated image. The block has no return value and receives the following parameter: - **url**: A URL with the path to the image. The system saves the file at a temporary location inside your app container. Move the file to a new location if you intend to keep it after the dismissal of the sheet, or remove it if you don’t. After executing this block, the system automatically dismisses the sheet.
+- `onCancellation`: The block to execute when the person exits the creation UI without choosing an image. After executing this block, the system automatically dismisses the sheet.
 
 
 ---

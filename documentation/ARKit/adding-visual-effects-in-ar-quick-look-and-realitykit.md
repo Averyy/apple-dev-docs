@@ -20,6 +20,9 @@ You can add shine and highlights to the models in your AR experience with the cl
 
 RealityKit renders clearcoat by adding a second specular lobe. To enable a clearcoat layer on your app’s virtual content, use the following inputs when designing your model:
 
+- **`clearcoat`**: A scalar float normalized between 0 and 1 that indicates the intensity of the clearcoat specular lobe.
+- **`clearcoatRoughness`**: A float normalized between 0 and 1 that indicates the perceived roughness of the clearcoat surface.
+
 The following figure shows the `clearcoat` parameter varying between 0 and 1 vertically, and `clearcoatRoughness` varying between 0 and 1 horizontally, with (0, 0) at the bottom left.
 
 ![Screenshot showing an array of 3D models, each with varying clearcoat parameters. clearcoat varys between 0 and 1 vertically, and clearcoatRoughness varys between 0 and 1 horizontally. The bottom-right model is dark and matte in appearance, whereas the upper-left model is glossy in appearance.](https://docs-assets.developer.apple.com/published/153f49c3e4caa0f7f6533dc47c513b48/media-3405896%402x.png)

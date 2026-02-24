@@ -17,7 +17,7 @@ optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, isCallActive: NSN
 ## Parameters
 
 - `device`: The connected Bluetooth hands-free phone or headset.
-- `isCallActive`: The new value of the active call indicator. For possible values, see  .
+- `isCallActive`: The new value of the active call indicator. For possible values, see [`IOBluetoothHandsFreeIndicatorCall`](iobluetoothhandsfreeindicatorcall.md).
 
 ## See Also
 

@@ -3,7 +3,7 @@
 **Framework**: Natural Language  
 **Kind**: case
 
-A result that indicates assets are available.
+A result that indicates that the assets are present on-device.
 
 **Availability**:
 - iOS 12.0+
@@ -23,7 +23,7 @@ case available
 ## See Also
 
 - [NLContextualEmbedding.AssetsResult.notAvailable](nlcontextualembedding/assetsresult/notavailable.md)
-  A result that indicates assets aren’t available.
+  A result that indicates that the assets aren’t present on-device.
 - [NLContextualEmbedding.AssetsResult.error](nlcontextualembedding/assetsresult/error.md)
   A result that indicates the framework encounters an error.
 

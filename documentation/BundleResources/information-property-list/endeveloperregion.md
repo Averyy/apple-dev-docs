@@ -9,6 +9,10 @@ A string that specifies the region that the app supports.
 - iOS 13.7+
 - iPadOS 13.7+
 
+
+
+**Type**: string
+
 #### Discussion
 
 > ❗ **Important**:  This type is available in iOS 12.5, and in iOS 13.7 and later.

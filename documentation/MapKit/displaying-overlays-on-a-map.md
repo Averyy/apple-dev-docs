@@ -99,7 +99,7 @@ The app adds the overlay data objects to the map in a specific order to ensure t
 mapView.addOverlay(reliefTileOverlay, level: .aboveLabels)
 ```
 
-The overlay data object doesn’t draw the overlay on the map. A second object, called an , handles the drawing responsibilities for displaying the overlay on the map view. After adding an overlay, the map view calls [`mapView(_:rendererFor:)`](mkmapviewdelegate/mapview(_:rendererfor:).md) on its delegate to create an appropriate renderer object. Because this app demonstrates many different overlays, its implementation of `mapView(_:rendererFor:)` creates many different types of overlay renderers. Most apps only use a small number of overlay types, so this function only needs to create the small number of corresponding overlay renderer types.
+The overlay data object doesn’t draw the overlay on the map. A second object, called an *overlay renderer*, handles the drawing responsibilities for displaying the overlay on the map view. After adding an overlay, the map view calls [`mapView(_:rendererFor:)`](mkmapviewdelegate/mapview(_:rendererfor:).md) on its delegate to create an appropriate renderer object. Because this app demonstrates many different overlays, its implementation of `mapView(_:rendererFor:)` creates many different types of overlay renderers. Most apps only use a small number of overlay types, so this function only needs to create the small number of corresponding overlay renderer types.
 
 ```swift
 func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
@@ -236,7 +236,7 @@ func createMultiPolylineRenderer(for multiPolygon: MKMultiPolygon) -> MKMultiPol
 
 ##### Create Visual Effects Using Blend Modes
 
- relate the content that draws in an overlay to the content that draws behind the overlay. This enables creating visual effects on the map by adding overlays with a specific Z-order and applying a blend mode on the different overlays. For example, the app highlights a park hosting an outdoor event by using blend modes to lighten the map areas outside the park and to amplify the colors within the park.
+*Blend modes* relate the content that draws in an overlay to the content that draws behind the overlay. This enables creating visual effects on the map by adding overlays with a specific Z-order and applying a blend mode on the different overlays. For example, the app highlights a park hosting an outdoor event by using blend modes to lighten the map areas outside the park and to amplify the colors within the park.
 
 To create such an effect, the app uses two overlays. The first overlay covers the entire map except for an inner polygon for the park, and the second overlay is a polygon outlining only the park.
 

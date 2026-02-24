@@ -22,7 +22,7 @@ A subclass can override this method to interact with custom glyph storage.
 
 ## Parameters
 
-- `flag`:   if the glyphs in   are not shown,   if they are shown.
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) if the glyphs in `glyphRange` are not shown, [`false`](https://developer.apple.com/documentation/Swift/false) if they are shown.
 - `glyphRange`: The range of glyphs in question.
 
 ## See Also

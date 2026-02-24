@@ -22,6 +22,18 @@ class NSWorkspace
 
 There is one shared [`NSWorkspace`](nsworkspace.md) object per app. You use the class method [`shared`](nsworkspace/shared.md) to access it. For example, the following statement uses an [`NSWorkspace`](nsworkspace.md) object to request that a file be opened in the TextEdit app:
 
+**Swift**:
+
+```swift
+NSWorkspace.shared.openFile("/Myfiles/README", withApplication: "TextEdit")
+```
+
+**Objective-C**:
+
+```objc
+[[NSWorkspace sharedWorkspace] openFile:@"/Myfiles/README" withApplication:@"TextEdit"];
+```
+
 You can use the workspace object to:
 
 - Open, manipulate, and get information about files and devices.

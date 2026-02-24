@@ -27,6 +27,24 @@ A predicate that matches all the objects created by any of the provided source r
 
 The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+let fromSourceRevisions = HKQuery.predicateForObjectsFromSourceRevisions(sourceRevisions)
+ 
+let explicitFromSourceRevisions = NSPredicate(format: "%K IN %@", HKPredicateKeyPathSourceRevision, sourceRevisions)
+```
+
+**Objective-C**:
+
+```objc
+NSPredicate *fromSourceRevisions = [HKQuery predicateForObjectsFromSourceRevisions:sourceRevisions];
+ 
+NSPredicate *explicitFromSourceRevisions = [NSPredicate predicateWithFormat:@"%K IN %@",
+                                            HKPredicateKeyPathSourceRevision,
+                                            sourceRevisions];
+```
+
 ## Parameters
 
 - `sourceRevisions`: A set of source revisions that have saved data to the HealthKit store.

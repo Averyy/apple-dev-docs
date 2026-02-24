@@ -21,7 +21,7 @@ An immutable object describing the computed style of `element` and `pseudoElemen
 ## Parameters
 
 - `element`: The element whose computed style is returned.
-- `pseudoElement`: The pseudo element for  .
+- `pseudoElement`: The pseudo element for `element`.
 
 ## See Also
 

@@ -35,7 +35,7 @@ Text("\(value)")
 
 ## Parameters
 
-- `value`: The value represented by the   view being   animated. The difference between the old and new values   when the text changes will be used to determine the   animation direction.
+- `value`: The value represented by the `Text` view being animated. The difference between the old and new values when the text changes will be used to determine the animation direction.
 
 ## See Also
 

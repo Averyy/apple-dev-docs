@@ -22,11 +22,11 @@ optional func parser(_ parser: XMLParser, foundUnparsedEntityDeclarationWithName
 
 ## Parameters
 
-- `parser`: An   object parsing XML.
+- `parser`: An `NSXMLParser` object parsing XML.
 - `name`: A string that is the name of the unparsed entity in the declaration.
-- `publicID`: A string specifying the public ID associated with the entity  .
-- `systemID`: A string specifying the system ID associated with the entity  .
-- `notationName`: A string specifying a notation of the declaration of entity  .
+- `publicID`: A string specifying the public ID associated with the entity `name`.
+- `systemID`: A string specifying the system ID associated with the entity `name`.
+- `notationName`: A string specifying a notation of the declaration of entity `name`.
 
 ## See Also
 

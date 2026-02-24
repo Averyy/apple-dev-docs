@@ -16,7 +16,7 @@ func wasAttributeConsumed(_ attribute: FSItem.Attribute) -> Bool
 
 ## Parameters
 
-- `attribute`: The   to check.
+- `attribute`: The [`FSItem.Attribute`](fsitem/attribute.md) to check.
 
 ## See Also
 

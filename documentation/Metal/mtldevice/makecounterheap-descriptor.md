@@ -26,7 +26,7 @@ A [`MTL4CounterHeap`](mtl4counterheap.md) instance, or `nil` if the function fai
 
 ## Parameters
 
-- `descriptor`:   instance that configures the   instance.
+- `descriptor`: [`MTL4CounterHeapDescriptor`](mtl4counterheapdescriptor.md) instance that configures the [`MTL4CounterHeap`](mtl4counterheap.md) instance.
 
 
 ---

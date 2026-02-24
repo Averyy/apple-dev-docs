@@ -25,8 +25,8 @@ Use this method to change a track’s format descriptions, such as adding format
 
 ## Parameters
 
-- `formatDescription`: The   object to be replaced.
-- `newFormatDescription`: The   object to replacing the specified format description.
+- `formatDescription`: The [`CMFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription) object to be replaced.
+- `newFormatDescription`: The [`CMFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription) object to replacing the specified format description.
 
 ## See Also
 

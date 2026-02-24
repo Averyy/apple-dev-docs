@@ -47,8 +47,8 @@ class_addMethod([self class], @selector(resolveThisMethodDynamically), (IMP) myM
 
 - `cls`: The class to which to add a method.
 - `name`: A selector that specifies the name of the method being added.
-- `imp`: A function which is the implementation of the new method. The function must take at least two arguments—  and  .
-- `types`: An array of characters that describe the types of the arguments to the method. For possible values, see   >  . Since the function must take at least two arguments—  and  , the second and third characters must be “ ” (the first character is the return type).
+- `imp`: A function which is the implementation of the new method. The function must take at least two arguments—`self` and `_cmd`.
+- `types`: An array of characters that describe the types of the arguments to the method. For possible values, see [`Objective-C Runtime Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008048) > [`Type Encodings`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100). Since the function must take at least two arguments—`self` and `_cmd`, the second and third characters must be “`@:`” (the first character is the return type).
 
 ## See Also
 

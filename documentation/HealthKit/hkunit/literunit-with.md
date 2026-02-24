@@ -27,9 +27,22 @@ A HealthKit unit for measuring volume based on liters and the provided prefix.
 
 This method is used to create prefixed versions of liters, typically milliliter units, as shown below.
 
+**Swift**:
+
+```swift
+let ml = HKUnit.literUnitWithMetricPrefix(.Milli)
+let ml = HKUnit.literUnitWithMetricPrefix(.Milli)
+```
+
+**Objective-C**:
+
+```objc
+HKUnit *ml = [HKUnit literUnitWithMetricPrefix:HKMetricPrefixMilli];
+```
+
 ## Parameters
 
-- `prefix`: A valid metric prefix value. For the complete list of prefix values, see  .
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](hkmetricprefix.md).
 
 ## See Also
 

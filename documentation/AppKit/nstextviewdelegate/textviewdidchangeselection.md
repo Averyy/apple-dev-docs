@@ -17,7 +17,7 @@ optional func textViewDidChangeSelection(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named [`didChangeSelectionNotification`](nstextview/didchangeselectionnotification.md).
 
 ## See Also
 

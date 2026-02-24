@@ -31,7 +31,7 @@ CarPlay throws an exception if it can’t remove the required templates and you 
 ## Parameters
 
 - `targetTemplate`: The template to make visible.
-- `animated`: If  , CarPlay animates the transition between templates.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), CarPlay animates the transition between templates.
 - `completion`: The closure CarPlay calls after it removes the required templates.
 
 ## See Also

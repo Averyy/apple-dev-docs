@@ -21,7 +21,7 @@ func ABAddRecord(_ addressBook: ABAddressBookRef!, _ record: ABRecordRef!) -> Bo
 ## Parameters
 
 - `addressBook`: The address book for the logged-in user.
-- `record`: The record to add to the Address Book database. If this parameter is  , the function raises an exception.
+- `record`: The record to add to the Address Book database. If this parameter is `NULL`, the function raises an exception.
 
 ## See Also
 

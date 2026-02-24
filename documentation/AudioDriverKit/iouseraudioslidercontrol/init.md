@@ -20,13 +20,13 @@ virtual bool init(IOUserAudioDriver *in_driver, bool in_is_settable, uint32_t in
 
 ## Parameters
 
-- `in_driver`: The   that owns this object.
+- `in_driver`: The [`IOUserAudioDriver`](iouseraudiodriver.md) that owns this object.
 - `in_is_settable`: A Boolean value that indicates if the control can be set.
-- `in_control_value`: A   value that represents the control’s current value.
+- `in_control_value`: A [`uint32_t`](https://developer.apple.com/documentation/kernel/uint32_t) value that represents the control’s current value.
 - `in_range`: The range that defines minimum and maximum values for the slider.
-- `in_control_element`: An   to identify the control.
-- `in_control_scope`: A   indicating the control’s scope: input, output, global, or play-through.
-- `in_control_class_id`: The   of the control.
+- `in_control_element`: An [`IOUserAudioObjectPropertyElement`](audiodriverkit/iouseraudioobjectpropertyelement.md) to identify the control.
+- `in_control_scope`: A [`IOUserAudioObjectPropertyScope`](audiodriverkit/iouseraudioobjectpropertyscope.md) indicating the control’s scope: input, output, global, or play-through.
+- `in_control_class_id`: The [`IOUserAudioClassID`](audiodriverkit/iouseraudioclassid.md) of the control.
 
 ## See Also
 

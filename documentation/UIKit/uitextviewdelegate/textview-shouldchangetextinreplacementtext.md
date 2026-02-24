@@ -29,7 +29,7 @@ The text view calls this method whenever the user types a new character or delet
 ## Parameters
 
 - `textView`: The text view containing the changes.
-- `range`: The current selection range. If the length of the range is 0,   reflects the current insertion point. If the user presses the Delete key, the length of the range is 1 and an empty string object replaces that single character.
+- `range`: The current selection range. If the length of the range is 0, `range` reflects the current insertion point. If the user presses the Delete key, the length of the range is 1 and an empty string object replaces that single character.
 - `text`: The text to insert.
 
 ## See Also

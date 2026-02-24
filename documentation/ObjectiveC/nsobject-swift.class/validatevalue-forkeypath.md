@@ -28,8 +28,8 @@ The default implementation of this method gets the destination object for each r
 
 ## Parameters
 
-- `ioValue`: A pointer to a new value for the property identified by  . This method may modify or replace the value in order to make it valid.
-- `inKeyPath`: The name of one of the receiver’s properties. The key path must specify an attribute or a to-one relationship. The key path has the form   (with one or more relationships); for example   or  .
+- `ioValue`: A pointer to a new value for the property identified by `inKeyPath`. This method may modify or replace the value in order to make it valid.
+- `inKeyPath`: The name of one of the receiver’s properties. The key path must specify an attribute or a to-one relationship. The key path has the form `relationship``.``property` (with one or more relationships); for example `department.name` or `department.manager.lastName`.
 
 ## See Also
 

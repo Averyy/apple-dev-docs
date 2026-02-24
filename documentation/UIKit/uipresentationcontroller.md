@@ -35,9 +35,9 @@ You vend your custom presentation controller object through your view controller
 
 The presentation process managed by a presentation controller is divided into three phases:
 
-- The  involves moving the new view controller onscreen through a series of transition animations.
-- The  involves responding to environment changes (such as device rotations) while the new view controller is onscreen.
-- The  involves moving the new view controller off screen through a series of transition animations
+- The *presentation phase* involves moving the new view controller onscreen through a series of transition animations.
+- The *management phase* involves responding to environment changes (such as device rotations) while the new view controller is onscreen.
+- The *dismissal phase* involves moving the new view controller off screen through a series of transition animations
 
 The presentation controller’s role during all of these phases is to manage its own custom views and state information. During the presentation and dismissal phases, the presentation controller adds its custom views (if any) to the view hierarchy and creates any appropriate transition animations for those views. The animation of the view controller’s view onto the screen is still managed by an animator object — that is, an object that adopts the [`UIViewControllerAnimatedTransitioning`](uiviewcontrolleranimatedtransitioning.md) protocol. UIKit calls separate presentation controller methods at the beginning and end of the presentation and dismissal phases so that the presentation controller can perform any needed cleanup.
 

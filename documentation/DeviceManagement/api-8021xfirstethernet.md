@@ -20,6 +20,10 @@ Specify `com.apple.firstethernet.managed` as the payload type.
 
 This payload’s contents contain these profile-specific keys:
 
+- **Interface (String)**: This payload uses the value `FirstEthernet`.
+- ** EAPClientConfiguration ([`WiFi.EAPClientConfiguration`](wifi/eapclientconfiguration-data.dictionary.md))**: The dictionary that defines the enterprise profile for the network.
+- **SetupModes (String)**: The type of connection mode, which is either “System” or “Loginwindow.” “System” is the default.
+
 This payload applies to Ethernet interfaces according to service order, regardless of whether the interface is working.
 
 ##### Profile Availability

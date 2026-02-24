@@ -25,9 +25,50 @@ The following code listing shows a minimal copy allocator implementation. For mo
 
 Listing 1. Minimal MPSCopyAllocator Implementation
 
+**Swift**:
+
+```swift
+let myAllocator: MPSCopyAllocator =
+{
+    (kernel: MPSKernel, buffer: MTLCommandBuffer, texture: MTLTexture) -> MTLTexture in
+    
+    let descriptor = MTLTextureDescriptor.texture2DDescriptor(pixelFormat: texture.pixelFormat,
+                                                              width: texture.width,
+                                                              height: texture.height,
+                                                              mipmapped: false)
+    
+    return buffer.device.makeTexture(descriptor: descriptor)
+}
+```
+
+**Objective-C**:
+
+```objc
+MPSCopyAllocator myAllocator = ^id <MTLTexture>(MPSKernel * __nonnull filter, __nonnull id <MTLCommandBuffer> cmdBuf, __nonnull id <MTLTexture> sourceTexture)
+{
+    MTLPixelFormat format = sourceTexture.pixelFormat;
+    MTLTextureDescriptor *d = [MTLTextureDescriptor texture2DDescriptorWithPixelFormat: format width: sourceTexture.width height: sourceTexture.height mipmapped: NO];
+ 
+    id <MTLTexture> result = [cmdBuf.device newTextureWithDescriptor: d];
+ 
+    return result;
+    // d is autoreleased.
+};
+```
+
 ##### Supported Pixel Formats for Image Kernels
 
 All Metal Performance Shaders image kernels support source and destination textures with the following ordinary and packed pixel formats:
+
+- **[`MTLPixelFormat.r8Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r8Unorm), [`MTLPixelFormat.r8Unorm_srgb`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r8Unorm_srgb)**: Ordinary formats with one 8-bit normalized unsigned integer component.
+- **[`MTLPixelFormat.rg8Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg8Unorm), [`MTLPixelFormat.rg8Unorm_srgb`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg8Unorm_srgb)**: Ordinary formats with two 8-bit normalized unsigned integer components.
+- **[`MTLPixelFormat.rgba8Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba8Unorm), [`MTLPixelFormat.rgba8Unorm_srgb`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba8Unorm_srgb), [`MTLPixelFormat.bgra8Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/bgra8Unorm), [`MTLPixelFormat.bgra8Unorm_srgb`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/bgra8Unorm_srgb)**: Ordinary formats with four 8-bit normalized unsigned integer components.
+- **[`MTLPixelFormat.r16Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r16Float), [`MTLPixelFormat.rg16Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg16Float), [`MTLPixelFormat.rgba16Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba16Float)**: Ordinary format with 16-bit floating-point components.
+- **[`MTLPixelFormat.r32Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r32Float), [`MTLPixelFormat.rg32Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg32Float), [`MTLPixelFormat.rgba32Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba32Float)**: Ordinary format with 32-bit floating-point components.
+- **[`MTLPixelFormat.r16Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r16Unorm), [`MTLPixelFormat.rg16Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg16Unorm), [`MTLPixelFormat.rgba16Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba16Unorm)**: Ordinary format with 16-bit normalized unsigned integer components.
+- **[`MTLPixelFormat.b5g6r5Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/b5g6r5Unorm), [`MTLPixelFormat.a1bgr5Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/a1bgr5Unorm), [`MTLPixelFormat.abgr4Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/abgr4Unorm), [`MTLPixelFormat.bgr5A1Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/bgr5A1Unorm)**: Packed 16-bit format with normalized unsigned integer color components.
+- **[`MTLPixelFormat.rgb10a2Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgb10a2Unorm)**: Packed 32-bit format with normalized unsigned integer color components.
+- **[`MTLPixelFormat.rg11b10Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg11b10Float), [`MTLPixelFormat.rgb9e5Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgb9e5Float)**: Packed 32-bit format with floating-point color components.
 
 Some compressed pixel formats can be used as source textures. They cannot be used as destination textures because they cannot be written to. Metal Performance Shaders image kernels support the following compression families:
 
@@ -42,6 +83,13 @@ The following Metal Performance Shaders image kernels also support source an
 - [`MPSImageIntegralOfSquares`](mpsimageintegralofsquares.md)
 
 The ordinary signed and unsigned integer pixel formats supported by these image kernels:
+
+- **[`MTLPixelFormat.r8Sint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r8Sint), [`MTLPixelFormat.rg8Sint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg8Sint), [`MTLPixelFormat.rgba8Sint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba8Sint)**: Ordinary format with 8-bit signed integer components.
+- **[`MTLPixelFormat.r8Uint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r8Uint), [`MTLPixelFormat.rg8Uint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg8Uint), [`MTLPixelFormat.rgba8Uint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba8Uint)**: Ordinary format with 8-bit unsigned integer components.
+- **[`MTLPixelFormat.r16Sint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r16Sint), [`MTLPixelFormat.rg16Sint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg16Sint), [`MTLPixelFormat.rgba16Sint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba16Sint)**: Ordinary format with 16-bit signed integer components.
+- **[`MTLPixelFormat.r16Uint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r16Uint), [`MTLPixelFormat.rg16Uint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg16Uint), [`MTLPixelFormat.rgba16Uint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba16Uint)**: Ordinary format with 16-bit unsigned integer components.
+- **[`MTLPixelFormat.r32Sint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r32Sint), [`MTLPixelFormat.rg32Sint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg32Sint), [`MTLPixelFormat.rgba32Sint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba32Sint)**: Ordinary format with 32-bit signed integer components.
+- **[`MTLPixelFormat.r32Uint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r32Uint), [`MTLPixelFormat.rg32Uint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg32Uint), [`MTLPixelFormat.rgba32Uint`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba32Uint)**: Ordinary format four 32-bit unsigned integer components.
 
 For more information on pixel formats, see [`MTLPixelFormat`](https://developer.apple.com/documentation/Metal/MTLPixelFormat) and [`Pixel Format Capabilities`](https://developer.apple.comhttps://developer.apple.com/metal/capabilities/).
 

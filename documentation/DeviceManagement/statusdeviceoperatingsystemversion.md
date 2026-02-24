@@ -32,6 +32,10 @@ object StatusDeviceOperatingSystemVersion
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
+## Properties
+
+- `device.operating-system.version` (string) *(required)*: The operating system’s version in use on the device, such as `15.0`.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

@@ -26,7 +26,7 @@ The password, or `NULL` if no password exists. In some cases, this function may 
 
 ## Parameters
 
-- `anURL`: The   object to examine.
+- `anURL`: The `CFURL` object to examine.
 
 ## See Also
 

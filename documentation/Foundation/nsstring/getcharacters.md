@@ -26,7 +26,7 @@ Invokes [`getCharacters(_:range:)`](nsstring/getcharacters(_:range:).md) with `b
 
 ## Parameters
 
-- `buffer`: Upon return, contains the characters from the receiver.   must be large enough to contain all characters in the string ( ).
+- `buffer`: Upon return, contains the characters from the receiver. `buffer` must be large enough to contain all characters in the string (`[string length]*sizeof(unichar)`).
 
 ## See Also
 

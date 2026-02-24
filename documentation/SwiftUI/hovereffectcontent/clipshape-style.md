@@ -24,8 +24,8 @@ Use `clipShape(_:style:)` to clip the view’s rendered output to the provided s
 
 ## Parameters
 
-- `shape`: The clipping shape to use for the view. The   fills   the view’s frame, while maintaining its aspect ratio.
-- `style`: The fill style to use when rasterizing  .
+- `shape`: The clipping shape to use for the view. The `shape` fills the view’s frame, while maintaining its aspect ratio.
+- `style`: The fill style to use when rasterizing `shape`.
 
 
 ---

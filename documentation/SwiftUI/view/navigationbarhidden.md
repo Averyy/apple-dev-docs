@@ -26,7 +26,7 @@ Use this method to hide the navigation bar. This modifier only takes effect when
 
 ## Parameters
 
-- `hidden`: A Boolean value that indicates whether to hide the   navigation bar.
+- `hidden`: A Boolean value that indicates whether to hide the navigation bar.
 
 ## See Also
 

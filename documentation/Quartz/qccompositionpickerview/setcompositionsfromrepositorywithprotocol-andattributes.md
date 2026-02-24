@@ -17,7 +17,7 @@ func setCompositionsFromRepositoryWithProtocol(_ protocol: String!, andAttribute
 ## Parameters
 
 - `protocol`: The protocols that you want compositions shown in the picker view to conform to. You can pass any of these protocols: QCCompositionProtocolAnimation, QCCompositionProtocolImageProducer, QCCompositionProtocolImageFilter, QCCompositionProtocolImageCompositor, and QCCompositionProtocolScreenSaverRSS.
-- `attributes`: A dictionary that contains the attributes, and their associated values, that you want compositions in the picker view to match. For example, you can pass: QCCompositionAttributeNameKey, QCCompositionAttributeDescriptionKey, QCCompositionAttributeCopyrightKey, and QCCompositionAttributeBuiltInKey. Pass   if you don’t want to filter based on the attributes.
+- `attributes`: A dictionary that contains the attributes, and their associated values, that you want compositions in the picker view to match. For example, you can pass: QCCompositionAttributeNameKey, QCCompositionAttributeDescriptionKey, QCCompositionAttributeCopyrightKey, and QCCompositionAttributeBuiltInKey. Pass `nil` if you don’t want to filter based on the attributes.
 
 ## See Also
 

@@ -22,7 +22,7 @@ The `forcedReadOnly` parameter affects how framework exposes the NBD client to t
 
 - `URL`: The NBD’s URI represented as a URL.
 - `timeout`: The timeout value in seconds for the connection between the client and server. When the timeout expires, an attempt to reconnect with the server takes place.
-- `forcedReadOnly`: If  , the framework forces the disk attachment to be read-only, regardless of whether or not the NBD server supports write requests.
+- `forcedReadOnly`: If [`true`](https://developer.apple.com/documentation/Swift/true), the framework forces the disk attachment to be read-only, regardless of whether or not the NBD server supports write requests.
 - `synchronizationMode`: The mode in which the disk attachment synchronizes data with the underlying storage device.
 
 ## See Also

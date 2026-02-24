@@ -9,6 +9,10 @@ The modes that a Document Picker extension supports.
 - iOS 8.0+
 - iPadOS 8.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [IDMessageFilterExtensionNetworkURL](information-property-list/nsextension/nsextensionattributes/idmessagefilterextensionnetworkurl.md)

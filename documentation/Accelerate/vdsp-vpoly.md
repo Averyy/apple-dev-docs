@@ -51,12 +51,12 @@ For example, the following code evaluates the polynomial with the coefficients `
 
 ## Parameters
 
-- `__A`: A vector that contains   coefficients.
-- `__IA`: The distance between the elements in the input vector  .
+- `__A`: A vector that contains `__P + 1` coefficients.
+- `__IA`: The distance between the elements in the input vector `A`.
 - `__B`: A vector that contains the variables.
-- `__IB`: The distance between the elements in the input vector  .
+- `__IB`: The distance between the elements in the input vector `B`.
 - `__C`: A vector that receives the result of the calculation.
-- `__IC`: The distance between the elements in the output vector  .
+- `__IC`: The distance between the elements in the output vector `C`.
 - `__N`: The number of variables that the function processes to produce the same number of output elements.
 - `__P`: The degree of the polynomial.
 

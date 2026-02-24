@@ -26,9 +26,9 @@ A filter that applies a threshold to alpha values.
 
 ## Parameters
 
-- `min`: The minimum alpha threshold. Pixels whose alpha   component is less than this value will render as   transparent. Results are undefined unless  .
-- `max`: The maximum alpha threshold. Pixels whose alpha   component is greater than this value will render   as transparent. Results are undefined unless  .
-- `color`: The color that is output for pixels with an alpha   component between the two threshold values.
+- `min`: The minimum alpha threshold. Pixels whose alpha component is less than this value will render as transparent. Results are undefined unless `min < max`.
+- `max`: The maximum alpha threshold. Pixels whose alpha component is greater than this value will render as transparent. Results are undefined unless `min < max`.
+- `color`: The color that is output for pixels with an alpha component between the two threshold values.
 
 ## See Also
 

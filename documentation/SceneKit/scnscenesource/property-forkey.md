@@ -30,7 +30,7 @@ This method returns information about the scene that is defined in the file but 
 
 ## Parameters
 
-- `key`: A constant identifying a metadata property of the scene source. See   for available keys and the formats of their values.
+- `key`: A constant identifying a metadata property of the scene source. See [`Scene Source Properties`](scene-source-properties.md) for available keys and the formats of their values.
 
 ## See Also
 

@@ -29,6 +29,13 @@ This method applies the spotlight filter to an image. The effect applies a direc
 
 The spotlight filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`lightPointsAt`**: A [`CIVector`](civector.md) with the x and y positions that the spotlight points at.
+- **`brightness`**: A `float` representing the brightness of the spotlight as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`lightPosition`**: A [`CIVector`](civector.md) containing the x and y position of the spotlight.
+- **`concentration`**: A `float` representing the size of the spotlight in pixels as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`color`**: A [`CIColor`](cicolor.md) representing the spotlight color.
+
 The following code creates a filter that results in only the bottom left of the image becoming visible while the rest of the image gradually becomes transparent:
 
 ```swift

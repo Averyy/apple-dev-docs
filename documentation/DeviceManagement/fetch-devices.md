@@ -23,6 +23,10 @@ This request provides a limited number of entries per request, using cursors to 
 - [object FetchDeviceResponse](fetchdeviceresponse.md)
   The response that contains a list of devices.
 
+## Endpoint
+
+`POST https://mdmenrollment.apple.com/server/devices`
+
 ## Request Body
 
 The request for a list of devices.

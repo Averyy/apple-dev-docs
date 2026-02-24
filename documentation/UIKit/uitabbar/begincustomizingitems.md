@@ -28,7 +28,7 @@ The tab bar notifies its delegate about the pending customizations at various po
 
 ## Parameters
 
-- `items`: An array of   objects representing all of the items that can possibly be displayed on the tab bar. Always include at least one visible item in the tab bar. This parameter must not be   or contain an empty array.
+- `items`: An array of [`UITabBarItem`](uitabbaritem.md) objects representing all of the items that can possibly be displayed on the tab bar. Always include at least one visible item in the tab bar. This parameter must not be `nil` or contain an empty array.
 
 ## See Also
 

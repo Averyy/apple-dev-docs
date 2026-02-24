@@ -26,8 +26,9 @@ If you modify the queue outside of the completion handler, register for the [`MP
 
 ## Parameters
 
-- `queueTransaction`: A block that the system calls while it creates the queue.
-- `completionHandler`: A block that the system calls after the user accepts the new queue.
+- `queueTransaction`: A block that the system calls while it creates the queue. - **queue**: The queue to modify.
+- `completionHandler`: A block that the system calls after the user accepts the new queue. - **queue**: The newly modified queue that the user accepted.
+- **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
 
 ## See Also
 

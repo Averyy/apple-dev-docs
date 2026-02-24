@@ -20,6 +20,18 @@ Marking a window collection behavior as auxiliary means it becomes auxiliary for
 
 To set a different behavior in full screen, while keeping Stage Manager auxiliary, set a more specific behavior just for full screen mode (see [`fullScreenNone`](nswindow/collectionbehavior-swift.struct/fullscreennone.md)).
 
+**Swift**:
+
+```swift
+window.collectionBehavior = [.auxiliary, .fullScreenNone]
+```
+
+**Objective-C**:
+
+```objc
+window.collectionBehavior |= (NSWindowCollectionBehaviorAuxiliary | NSWindowCollectionBehaviorFullScreenNone);
+```
+
 Use this collection behavior for About or Settings windows as well as utility panes.
 
 > **Note**:  This property is mutually exclusive. Set only one of [`primary`](nswindow/collectionbehavior-swift.struct/primary.md), [`auxiliary`](nswindow/collectionbehavior-swift.struct/auxiliary.md), or [`canJoinAllApplications`](nswindow/collectionbehavior-swift.struct/canjoinallapplications.md) on a window handled by Stage Manager at a time.

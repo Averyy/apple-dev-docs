@@ -30,7 +30,7 @@ You must open the stream, using [`CFReadStreamOpen(_:)`](cfreadstreamopen(_:).md
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `fileURL`: The URL of the file to read. The URL must use the file scheme.
 
 ## See Also

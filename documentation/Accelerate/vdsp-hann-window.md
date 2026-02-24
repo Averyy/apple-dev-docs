@@ -61,7 +61,10 @@ The following illustrates the values of the output vector, `c`:
 
 - `__C`: The output vector.
 - `__N`: The number of elements in the output vector.
-- `__Flag`: A value that specifies the type of window that the function creates.
+- `__Flag`: A value that specifies the type of window that the function creates. - [`vDSP_HANN_DENORM`](https://developer.apple.com/documentation/kernel/1645052-anonymous/vdsp_hann_denorm) specifies that the function creates a denormalized window.
+- [`vDSP_HANN_DENORM`](https://developer.apple.com/documentation/kernel/1645052-anonymous/vdsp_hann_denorm) | [`vDSP_HALF_WINDOW`](https://developer.apple.com/documentation/kernel/1645052-anonymous/vdsp_half_window) specifies that the function creates a denormalized window with only the first `(N+1)/2` points.
+- [`vDSP_HANN_NORM`](https://developer.apple.com/documentation/kernel/1645052-anonymous/vdsp_hann_norm) specifies that the function creates a normalized window.
+- [`vDSP_HANN_NORM`](https://developer.apple.com/documentation/kernel/1645052-anonymous/vdsp_hann_norm) | [`vDSP_HALF_WINDOW`](https://developer.apple.com/documentation/kernel/1645052-anonymous/vdsp_half_window) specifies that the function creates a normalized window with only the first `(N+1)/2` points.
 
 ## See Also
 

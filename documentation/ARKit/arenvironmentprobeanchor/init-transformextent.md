@@ -23,7 +23,7 @@ Use the [`add(anchor:)`](arsession/add(anchor:).md) method to begin tracking you
 ## Parameters
 
 - `transform`: A matrix that encodes the position, orientation, and scale of the anchor, relative to the world coordinate space of the AR session in which you place the anchor.
-- `extent`: World coordinate space in ARKit always follows a right-handed convention, but is oriented based on the session configuration. For details, see  .
+- `extent`: The extent (of *bounds*) of the probe anchor. World coordinate space in ARKit always follows a right-handed convention, but is oriented based on the session configuration. For details, see [`Understanding World Tracking`](understanding-world-tracking.md).
 
 ## See Also
 

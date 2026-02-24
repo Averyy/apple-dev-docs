@@ -20,7 +20,7 @@ case array([GeneratedContent])
 
 ## Parameters
 
-- `elements`: An array of   instances.
+- `elements`: An array of [`GeneratedContent`](generatedcontent.md) instances.
 
 ## See Also
 

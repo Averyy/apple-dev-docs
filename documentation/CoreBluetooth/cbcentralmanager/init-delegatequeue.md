@@ -31,7 +31,7 @@ For more information, see [`Core Bluetooth Programming Guide`](https://developer
 ## Parameters
 
 - `delegate`: The delegate that receives central events.
-- `queue`: The dispatch queue used to dispatch the central role events. If the value is  , the central manager dispatches central role events using the main queue.
+- `queue`: The dispatch queue used to dispatch the central role events. If the value is `nil`, the central manager dispatches central role events using the main queue.
 
 ## See Also
 

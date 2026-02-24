@@ -25,9 +25,9 @@ When the user depresses the trigger beyond the value of the end position, it sto
 
 ## Parameters
 
-- `startPosition`: The effect’s start position. A value between   and   , where   is the minimum and   is the maximum trigger depression.
-- `endPosition`: The effect’s end position. A value between   and   , where   is the minimum and   is the maximum trigger depression. This value must be greater than  .
-- `resistiveStrength`: The strength of the effect. A value between   and  , where   is the minimum or off value, and   is the maximum strength.
+- `startPosition`: The effect’s start position. A value between `0` and `1` , where `0` is the minimum and `1` is the maximum trigger depression.
+- `endPosition`: The effect’s end position. A value between `0` and `1` , where `0` is the minimum and `1` is the maximum trigger depression. This value must be greater than `startPosition`.
+- `resistiveStrength`: The strength of the effect. A value between `0` and `1`, where `0` is the minimum or off value, and `1` is the maximum strength.
 
 ## See Also
 

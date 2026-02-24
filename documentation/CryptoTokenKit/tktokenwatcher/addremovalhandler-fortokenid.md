@@ -32,8 +32,8 @@ Adding a removal handler will remove any existing removal handlers for the speci
 
 ## Parameters
 
-- `removalHandler`: A block to be called when the specified token is removed. This block takes a single argument:
-- `tokenID`: If   doesn’t contain  ,   is executed immediately.
+- `removalHandler`: A block to be called when the specified token is removed. This block takes a single argument: - **tokenID**: The identifier of the removed token.
+- `tokenID`: The identifier of the token to watch for removal. If [`tokenIDs`](tktokenwatcher/tokenids.md) doesn’t contain `tokenID`, `insertionHandler` is executed immediately.
 
 ## See Also
 

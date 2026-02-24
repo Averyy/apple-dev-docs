@@ -30,7 +30,7 @@ All component data is cloned automatically. If you clone an entity that stores c
 
 ## Parameters
 
-- `recursive`: A Boolean that you set to   to recursively copy all   the children of the entity. Otherwise, no descendants are copied.
+- `recursive`: A Boolean that you set to `true` to recursively copy all the children of the entity. Otherwise, no descendants are copied.
 
 ## See Also
 

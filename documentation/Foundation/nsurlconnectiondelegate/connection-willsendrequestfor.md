@@ -24,7 +24,7 @@ optional func connection(_ connection: NSURLConnection, willSendRequestFor chall
 
 This method allows the delegate to make an informed decision about connection authentication at once. If the delegate implements this method, it has no need to implement [`connection(_:canAuthenticateAgainstProtectionSpace:)`](nsurlconnectiondelegate/connection(_:canauthenticateagainstprotectionspace:).md) or [`connection(_:didReceive:)`](nsurlconnectiondelegate/connection(_:didreceive:).md). In fact, those other methods are not invoked (except on older operating systems, where applicable).
 
-In this method,you  invoke one of the challenge-responder methods ([`URLAuthenticationChallengeSender`](urlauthenticationchallengesender.md) protocol):
+In this method,you *must* invoke one of the challenge-responder methods ([`URLAuthenticationChallengeSender`](urlauthenticationchallengesender.md) protocol):
 
 - [`use(_:for:)`](urlauthenticationchallengesender/use(_:for:).md)
 - [`continueWithoutCredential(for:)`](urlauthenticationchallengesender/continuewithoutcredential(for:).md)

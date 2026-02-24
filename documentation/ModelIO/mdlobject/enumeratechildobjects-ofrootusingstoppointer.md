@@ -21,10 +21,10 @@ func enumerateChildObjects(of objectClass: AnyClass, root: MDLObject, using bloc
 
 ## Parameters
 
-- `objectClass`: A Model I/O class representing a type of child objects to evaluate. For example, pass the   class to evaluate all 3D objects stored in the asset. Pass the   class to evaluate all child objects regardless of type.
+- `objectClass`: A Model I/O class representing a type of child objects to evaluate. For example, pass the [`MDLMesh`](mdlmesh.md) class to evaluate all 3D objects stored in the asset. Pass the [`MDLObject`](mdlobject.md) class to evaluate all child objects regardless of type.
 - `root`: The root object at which to begin traversing the child object hierarchy.
-- `block`: The block to apply to child objects. This block takes two parameters: the   to be evaluated by the block, and a   pointer that you can set to   to stop further evaluation of the object hierarchy.
-- `stopPointer`: Set this pointer’s value to   during enumeration to stop further enumeration of the object hierarchy.
+- `block`: The block to apply to child objects. This block takes two parameters: the `object` to be evaluated by the block, and a `stop` pointer that you can set to [`true`](https://developer.apple.com/documentation/Swift/true) to stop further evaluation of the object hierarchy.
+- `stopPointer`: Set this pointer’s value to [`true`](https://developer.apple.com/documentation/Swift/true) during enumeration to stop further enumeration of the object hierarchy.
 
 ## See Also
 

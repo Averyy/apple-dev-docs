@@ -27,7 +27,7 @@ This is the designated initializer.
 ## Parameters
 
 - `startDate`: The start date of the date interval.
-- `duration`: The duration from the start date for the date interval.
+- `duration`: The duration from the start date for the date interval. > ❗ **Important**:  This method raises an `NSArgumentException` if [`duration`](nsdateinterval/duration.md) is less than `0`.
 
 ## See Also
 

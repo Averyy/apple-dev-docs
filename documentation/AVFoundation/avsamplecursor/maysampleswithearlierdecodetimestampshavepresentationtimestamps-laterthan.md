@@ -30,7 +30,7 @@ Undefined results occur if this cursor and the passed in cursor reference differ
 
 ## Parameters
 
-- `cursor`: An instance of   with which to test the sample reordering boundary.
+- `cursor`: An instance of `AVSampleCursor` with which to test the sample reordering boundary.
 
 ## See Also
 

@@ -28,8 +28,8 @@ If you want to manipulate an existing tree structure, since `newSibling` must no
 
 ## Parameters
 
-- `tree`: The tree after which to insert  .   must have a parent.
-- `newSibling`: The sibling to add.   must not have a parent.
+- `tree`: The tree after which to insert `newSibling`. `tree` must have a parent.
+- `newSibling`: The sibling to add. `newSibling` must not have a parent.
 
 ## See Also
 

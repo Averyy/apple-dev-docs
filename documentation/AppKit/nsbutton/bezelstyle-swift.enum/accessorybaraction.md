@@ -18,6 +18,22 @@ case accessoryBarAction
 
 Use this style when you need to perform an action on a button that appears in an accessory or scope bar.
 
+**Swift**:
+
+```swift
+let button = NSButton()
+button.title = "Accessory bar action"
+button.bezelStyle = .accessoryBarAction
+```
+
+**Objective-C**:
+
+```objc
+NSButton *button = [[NSButton alloc] init];
+button.title = @"Accessory bar action";
+button.bezelStyle = NSBezelStyleAccessoryBarAction;
+```
+
 For design guidance, see [`Human Interface Guidelines > Buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/buttons).
 
 ## See Also

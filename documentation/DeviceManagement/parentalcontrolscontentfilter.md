@@ -97,6 +97,19 @@ Specify `com.apple.familycontrols.contentfilter` as the payload type.
 - [object ParentalControlsContentFilter.SiteWhitelistItem](parentalcontrolscontentfilter/sitewhitelistitem.md)
   A dictionary defining a site for the allow list.
 
+## Properties
+
+- `allowListEnabled` (boolean): If `true`, enables web content filters.
+- `filterAllowList` ([string]): The array of URLs that defines an allow list. When `restrictWeb` and `useContentFilter` are enabled, only URLs in the allow list are available to the user.
+- `filterBlacklist` ([string]): Use `filterDenyList` instead.
+- `filterDenyList` ([string]): The array of URLs that defines a deny list. When `restrictWeb` and `useContentFilter` are enabled, no URLs in the deny list are available to the user.
+- `filterWhitelist` ([string]): Use `filterAllowList` instead.
+- `restrictWeb` (boolean) *(required)*: If `true`, enables web content filters.
+- `siteAllowList` ([ParentalControlsContentFilter.SiteAllowListItem]): An array of sites that defines an allow list. If specified, this defines additional allowed sites besides those in the automated allow list and deny list, including disallowed adult sites. This key is required if `allowListEnabled` is `true`.
+- `siteWhitelist` ([ParentalControlsContentFilter.SiteWhitelistItem]): Use `siteAllowList` instead.
+- `useContentFilter` (boolean): If `true`, filters content automatically.
+- `whitelistEnabled` (boolean): Use `allowListEnabled` instead.
+
 ## See Also
 
 - [object ParentalControlsApplicationRestrictions](parentalcontrolsapplicationrestrictions.md)

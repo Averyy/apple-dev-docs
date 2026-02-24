@@ -26,7 +26,7 @@ When decoding, the class’s translation mapping is used only if no translation 
 
 ## Parameters
 
-- `cls`: The class with which to replace instances of the class named  .
+- `cls`: The class with which to replace instances of the class named `codedName`.
 - `codedName`: The ostensible name of a class in an archive.
 
 ## See Also

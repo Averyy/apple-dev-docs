@@ -21,7 +21,7 @@ func fileDialogDefaultDirectory(_ defaultDirectory: URL?) -> some View
 
 ## Parameters
 
-- `defaultDirectory`: The directory to show when   the system file dialog launches. If the given file dialog has   a   if stores the user-chosen directory and subsequently   opens with it, ignoring the default value provided in this modifier.
+- `defaultDirectory`: The directory to show when the system file dialog launches. If the given file dialog has a `fileDialogCustomizationID` if stores the user-chosen directory and subsequently opens with it, ignoring the default value provided in this modifier.
 
 ## See Also
 

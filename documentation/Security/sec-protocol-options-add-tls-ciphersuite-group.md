@@ -24,7 +24,7 @@ Add a TLS ciphersuite group to the set of enabled ciphersuites.
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A `sec_protocol_options_t` instance.
 - `group`: A SSLCipherSuiteGroup value.
 
 

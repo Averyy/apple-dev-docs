@@ -24,7 +24,7 @@ This method is the designated initializer for this class. Non-object values shou
 
 ## Parameters
 
-- `attributes`: The possible key-value pairs contained in   are described in Constants.
+- `attributes`: The possible key-value pairs contained in `aDictionary` are described in Constants.
 
 ## See Also
 

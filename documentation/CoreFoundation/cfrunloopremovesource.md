@@ -30,7 +30,7 @@ If `rl` does not contain `source` in `mode`, this function does nothing.
 
 - `rl`: The run loop to modify.
 - `source`: The run loop source to remove.
-- `mode`: The run loop mode of   from which to remove  . Use the constant   to remove   from the set of objects monitored by all the common modes.
+- `mode`: The run loop mode of `rl` from which to remove `source`. Use the constant [`commonModes`](cfrunloopmode/commonmodes.md) to remove `source` from the set of objects monitored by all the common modes.
 
 ## See Also
 

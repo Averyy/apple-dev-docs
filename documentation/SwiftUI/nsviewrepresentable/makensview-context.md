@@ -26,7 +26,7 @@ You must implement this method and use it to create your view object. Configure 
 
 ## Parameters
 
-- `context`: A context structure containing information about   the current state of the system.
+- `context`: A context structure containing information about the current state of the system.
 
 ## See Also
 

@@ -29,7 +29,7 @@ Upon creation, record objects exist only in memory on the local device. Save the
 
 ## Parameters
 
-- `recordType`: A record type must consist of one or more alphanumeric characters and must start with a letter. CloudKit permits the use of underscores, but not spaces.
+- `recordType`: A string that represents the type of record that you want to create. You can’t change the record type after initialization. You define the record types that your app supports and use them to distinguish between records with different types of data. This parameter must not be `nil` or contain an empty string. A record type must consist of one or more alphanumeric characters and must start with a letter. CloudKit permits the use of underscores, but not spaces.
 - `zoneID`: The ID of the record zone where you want to store the record.
 
 ## See Also

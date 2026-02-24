@@ -30,7 +30,7 @@ The method prepares the audio by calling [`prepareAudio(_:)`](entity/prepareaudi
 
 ## Parameters
 
-- `resource`: The audio resource the method plays.   Load an audio resource from the file system with    ,   or from a URL with   .
+- `resource`: The audio resource the method plays. Load an audio resource from the file system with [`init(named:in:configuration:)`](audiofileresource/init(named:in:configuration:).md) , or from a URL with [`init(contentsOf:withName:configuration:)`](audiofileresource/init(contentsof:withname:configuration:).md).
 
 ## See Also
 

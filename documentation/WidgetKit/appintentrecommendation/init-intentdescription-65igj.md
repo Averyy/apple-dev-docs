@@ -25,8 +25,8 @@ init(intent: Intent, description: Text)
 
 ## Parameters
 
-- `intent`: The intent that represents the recommended   configuration.
-- `description`: A description that helps the user   understand the value of the preconfigured configuration option.   For example, if the configuration represents a location in a weather   app, the description may be the name of one of the user’s favorite   cities, such as  .
+- `intent`: The intent that represents the recommended configuration.
+- `description`: A description that helps the user understand the value of the preconfigured configuration option. For example, if the configuration represents a location in a weather app, the description may be the name of one of the user’s favorite cities, such as `Cupertino`.
 
 ## See Also
 

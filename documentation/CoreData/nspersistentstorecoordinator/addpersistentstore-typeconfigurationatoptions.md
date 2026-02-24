@@ -22,10 +22,10 @@ func addPersistentStore(type: NSPersistentStore.StoreType, configuration: String
 
 ## Parameters
 
-- `type`: The store type. For possible values, see  .
+- `type`: The store type. For possible values, see [`NSPersistentStore.StoreType`](nspersistentstore/storetype.md).
 - `configuration`: The name of the configuration to use. You must define this configuration in the coordinator’s managed object model.
 - `storeURL`: The store’s location.
-- `options`: A dictionary containing key-value pairs that specify store behavior and characteristics. For more information, see  .
+- `options`: A dictionary containing key-value pairs that specify store behavior and characteristics. For more information, see [`Store options`](store-options.md).
 
 ## See Also
 

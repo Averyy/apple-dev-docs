@@ -14,6 +14,12 @@ The command to verify the firmware password on a device.
 object VerifyFirmwarePasswordCommand.Command
 ```
 
+## Properties
+
+- `Password` (string) *(required)*: The password to verify.
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

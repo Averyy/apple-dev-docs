@@ -22,7 +22,7 @@ Xcode 12.2 includes SDKs for iOS 14.2, iPadOS 14.2, tvOS 14.2, watchOS 7.1, and 
 
 ###### Known Issues
 
-- Xcode doesn’t prevent you from selecting a macOS destination for an iOS app when the macOS destination doesn’t support the iOS app’s deployment target. (68261281, 68714781, 68948002) If you attempt to launch the app through Xcode on an unsupported macOS destination, Xcode displays the message “The app is incompatible with the current version of macOS. Please check the app’s deployment target.” : Change the iOS deployment target for the iOS app to a version supported by the macOS destination, or upgrade to a version of macOS that supports the iOS deployment target configured in the project. Xcode must be running on macOS 11 or later to build an app with an iOS 14 or later deployment target.
+- Xcode doesn’t prevent you from selecting a macOS destination for an iOS app when the macOS destination doesn’t support the iOS app’s deployment target. (68261281, 68714781, 68948002) If you attempt to launch the app through Xcode on an unsupported macOS destination, Xcode displays the message “The app is incompatible with the current version of macOS. Please check the app’s deployment target.” **Workaround**: Change the iOS deployment target for the iOS app to a version supported by the macOS destination, or upgrade to a version of macOS that supports the iOS deployment target configured in the project. Xcode must be running on macOS 11 or later to build an app with an iOS 14 or later deployment target.
 
 ##### Build System
 
@@ -55,18 +55,18 @@ Xcode 12.2 includes SDKs for iOS 14.2, iPadOS 14.2, tvOS 14.2, watchOS 7.1, and 
 
 ###### Known Issues
 
-- Xcode fails to install an app with multibyte UTF-8 characters in its bundle name, and presents an error of “failed to hardlink copy”. (69887557) (FB8766413) : Use only uppercase letters (A-Z), lowercase letters (a-z), hyphens (-), underscores(__), and spaces in an app’s bundle name. By default, an app’s bundle name matches its target name, which you can change in the project editor. Note that this issue doesn’t impact an app’s Bundle ID or Bundle Display Name, only the name of the app’s `.app` folder on disk, which isn’t usually seen by users.
-- When running in macOS 11, Xcode’s navigators lay out at the wrong sizes. The breakpoint navigator may not display the state of the breakpoint, and the breakpoint editor popover may never become visible. (70063096)  Use macOS 11.0.1 or later.
+- Xcode fails to install an app with multibyte UTF-8 characters in its bundle name, and presents an error of “failed to hardlink copy”. (69887557) (FB8766413) **Workaround**: Use only uppercase letters (A-Z), lowercase letters (a-z), hyphens (-), underscores(__), and spaces in an app’s bundle name. By default, an app’s bundle name matches its target name, which you can change in the project editor. Note that this issue doesn’t impact an app’s Bundle ID or Bundle Display Name, only the name of the app’s `.app` folder on disk, which isn’t usually seen by users.
+- When running in macOS 11, Xcode’s navigators lay out at the wrong sizes. The breakpoint navigator may not display the state of the breakpoint, and the breakpoint editor popover may never become visible. (70063096) **Workaround:** Use macOS 11.0.1 or later.
 
 ##### Devices
 
 ###### Known Issues
 
-- Xcode may spontaneously lose device configuration information for an Apple Watch. This may cause Xcode to crash or display an error stating that your app “cannot be installed on (null)”. (54768855) : On the Mac you’re using for development, run the following command in Terminal: ```shell
+- Xcode may spontaneously lose device configuration information for an Apple Watch. This may cause Xcode to crash or display an error stating that your app “cannot be installed on (null)”. (54768855) **Workaround**: On the Mac you’re using for development, run the following command in Terminal: ```shell
 sudo killall -9 usbmuxd
 ``` After running this command, restart Xcode.
-- Xcode 11 and 12 may fail to prepare a wirelessly connected iOS device for debugging with the error “Failed _shouldMakeReadyForDevelopment check”. Even if Xcode prepares the device successfully, the Devices and Simulators window may continue to display stale errors for the device’s status. (61227501) (FB7649607) : Keep the wirelessly connected iOS device unlocked while deploying or debugging an app on the device. Restart Xcode if you want to clear stale device preparation errors. Whenever possible, use a USB cable instead of a wireless connection between your Mac and iOS device.
-- Xcode may fail to copy symbols from iOS devices, and fail to prepare the devices for debugging, then take several minutes to attach to the debugger and reach breakpoints that would normally be reached immediately on launch. (68221778) (FB8611135) : Re-copy symbols from your devices by following these steps. 1. Disconnect all iOS devices from your Mac.
+- Xcode 11 and 12 may fail to prepare a wirelessly connected iOS device for debugging with the error “Failed _shouldMakeReadyForDevelopment check”. Even if Xcode prepares the device successfully, the Devices and Simulators window may continue to display stale errors for the device’s status. (61227501) (FB7649607) **Workaround**: Keep the wirelessly connected iOS device unlocked while deploying or debugging an app on the device. Restart Xcode if you want to clear stale device preparation errors. Whenever possible, use a USB cable instead of a wireless connection between your Mac and iOS device.
+- Xcode may fail to copy symbols from iOS devices, and fail to prepare the devices for debugging, then take several minutes to attach to the debugger and reach breakpoints that would normally be reached immediately on launch. (68221778) (FB8611135) **Workaround**: Re-copy symbols from your devices by following these steps. 1. Disconnect all iOS devices from your Mac.
 2. Delete this directory: `~/Library/Developer/Xcode/iOS DeviceSupport`
 3. Open the Devices and Simulators window in Xcode.
 4. Use a USB cable to connect any arm64e iOS devices (iPhone XS, iPhone XS Max, or later).
@@ -83,7 +83,7 @@ sudo killall -9 usbmuxd
 
 ###### Known Issues
 
-- Xcode may crash when you open the Developer Documentation window if you install and run Xcode outside of `/Applications`. (70631583) : Move Xcode to `/Applications` and relaunch.
+- Xcode may crash when you open the Developer Documentation window if you install and run Xcode outside of `/Applications`. (70631583) **Workaround**: Move Xcode to `/Applications` and relaunch.
 
 ##### Interface Builder
 
@@ -121,7 +121,7 @@ sudo killall -9 usbmuxd
 
 ###### Known Issues
 
-- Using the device name “Mac Catalyst” in a SwiftUI [`PreviewDevice`](https://developer.apple.com/documentation/SwiftUI/PreviewDevice) modifier may cause the preview to fail to update. Instead, the banner displays the error “Cannot preview in this file – rendering service was interrupted”. (65305155) : Remove the `previewDevice` modifier and switch to the “My Mac” run destination.
+- Using the device name “Mac Catalyst” in a SwiftUI [`PreviewDevice`](https://developer.apple.com/documentation/SwiftUI/PreviewDevice) modifier may cause the preview to fail to update. Instead, the banner displays the error “Cannot preview in this file – rendering service was interrupted”. (65305155) **Workaround**: Remove the `previewDevice` modifier and switch to the “My Mac” run destination.
 
 ##### Realitykit
 
@@ -181,13 +181,13 @@ sudo killall -9 usbmuxd
 
 ###### Known Issues
 
-- Compiling a project with Mac Catalyst that imports [`OSLog`](https://developer.apple.com/documentation/OSLog) from Swift may fail. (68597591)  Consider importing `os.log` and similar services directly, or guarding the `OSLog` import with a `targetEnvironment` compiler directive.
+- Compiling a project with Mac Catalyst that imports [`OSLog`](https://developer.apple.com/documentation/OSLog) from Swift may fail. (68597591) **Workaround:** Consider importing `os.log` and similar services directly, or guarding the `OSLog` import with a `targetEnvironment` compiler directive.
 
 ##### Swift Packages
 
 ###### Known Issues
 
-- Swift Packages may not respect the “Build Active Architecture Only” project build setting when you try to build universal binaries. (64344067) : Use the “Any Mac”, “Any iOS Device (arm64)”, “Any watchOS Device”, or “Any tvOS Device” destination to build for all applicable devices.
+- Swift Packages may not respect the “Build Active Architecture Only” project build setting when you try to build universal binaries. (64344067) **Workaround**: Use the “Any Mac”, “Any iOS Device (arm64)”, “Any watchOS Device”, or “Any tvOS Device” destination to build for all applicable devices.
 
 ##### Testing
 
@@ -195,8 +195,8 @@ sudo killall -9 usbmuxd
 
 - Xcode can’t run UI tests for an iOS app on Apple silicon. If the active scheme or test plan includes both unit and UI tests, Xcode skips the UI tests, and logs a message that the UI tests were skipped in the test-activity log. (60059698)
 - Xcode doesn’t run iOS app tests in parallel on Apple silicon. The tests run sequentially instead. (60514529)
-- iOS unit tests fail to launch on Apple silicon if the test target’s host application is set to None. (65309328) : In the General tab of the test target’s project settings, set the host application to an iOS application target.
-- Test Runner fails to re-launch on older simulator runtimes when the test hangs and times out. (68288321) : Fix the test that is hanging, or use a newer simulator runtime version.
+- iOS unit tests fail to launch on Apple silicon if the test target’s host application is set to None. (65309328) **Workaround**: In the General tab of the test target’s project settings, set the host application to an iOS application target.
+- Test Runner fails to re-launch on older simulator runtimes when the test hangs and times out. (68288321) **Workaround**: Fix the test that is hanging, or use a newer simulator runtime version.
 
 ## See Also
 

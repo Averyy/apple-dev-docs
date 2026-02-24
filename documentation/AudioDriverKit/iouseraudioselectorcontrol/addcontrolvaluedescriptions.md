@@ -20,8 +20,8 @@ kern_return_t AddControlValueDescriptions(const IOUserAudioSelectorValueDescript
 
 ## Parameters
 
-- `in_value_descriptions`: An array of   values to add as value descriptions for the selector.
-- `in_num_value_descriptions`: The number of descriptions in  .
+- `in_value_descriptions`: An array of [`IOUserAudioSelectorValueDescription`](iouseraudioselectorvaluedescription.md) values to add as value descriptions for the selector.
+- `in_num_value_descriptions`: The number of descriptions in `in_value_descriptions`.
 
 ## See Also
 

@@ -30,7 +30,7 @@ For in-presentation-order samples, this is the presentation timestamp of the fir
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
 
 ## See Also
 

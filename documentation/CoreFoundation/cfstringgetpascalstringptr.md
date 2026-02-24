@@ -33,7 +33,7 @@ Whether or not this function returns a valid pointer or `NULL` depends on many f
 ## Parameters
 
 - `theString`: The string to examine.
-- `encoding`: The string encoding to which the character contents of   should be converted.
+- `encoding`: The string encoding to which the character contents of `theString` should be converted.
 
 ## See Also
 

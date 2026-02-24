@@ -20,7 +20,7 @@ init(textLayoutManager: NSTextLayoutManager)
 
 ## Parameters
 
-- `textLayoutManager`: The   to associate with this viewport layout controller.
+- `textLayoutManager`: The [`NSTextLayoutManager`](nstextlayoutmanager.md) to associate with this viewport layout controller.
 
 
 ---

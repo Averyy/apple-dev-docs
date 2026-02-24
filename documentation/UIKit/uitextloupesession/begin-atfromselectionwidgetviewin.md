@@ -32,7 +32,7 @@ Call this method to animate the appearance of the loupe at the specified `point`
 ## Parameters
 
 - `point`: The point in your view’s coordinate system that you want to magnify using the loupe. When creating the loupe with a gesture recognizer, specify the location of the gesture.
-- `selectionWidget`: The view associated with the insertion point. When using a   object to display selections in your view, specify the view in the interaction object’s   property for this parameter.
+- `selectionWidget`: The view associated with the insertion point. When using a [`UITextSelectionDisplayInteraction`](uitextselectiondisplayinteraction.md) object to display selections in your view, specify the view in the interaction object’s [`cursorView`](uitextselectiondisplayinteraction/cursorview.md) property for this parameter.
 - `interactionView`: The view in which to display the loupe. Specify all coordinate values relative to this view.
 
 

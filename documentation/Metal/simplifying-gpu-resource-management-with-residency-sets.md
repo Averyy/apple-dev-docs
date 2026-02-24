@@ -6,9 +6,9 @@ Organize your resources into groups and influence when they become accessible to
 
 #### Overview
 
-Metal apps typically create resources, such as textures and buffers, so that their shaders can work with data as they run on the GPU. These resources need to be in memory that’s accessible to the GPU, or , so the shaders can access their data.
+Metal apps typically create resources, such as textures and buffers, so that their shaders can work with data as they run on the GPU. These resources need to be in memory that’s accessible to the GPU, or *resident*, so the shaders can access their data.
 
-A  is one way you tell Metal which resources your app needs to make resident. You do this by creating [`MTLResidencySet`](mtlresidencyset.md) instances, managing which resource  they contain, and attaching them to command buffers or command queues. Resource allocation types conform to the [`MTLAllocation`](mtlallocation.md) protocol, including [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), and [`MTLHeap`](mtlheap.md).
+A *residency set* is one way you tell Metal which resources your app needs to make resident. You do this by creating [`MTLResidencySet`](mtlresidencyset.md) instances, managing which resource *allocations* they contain, and attaching them to command buffers or command queues. Resource allocation types conform to the [`MTLAllocation`](mtlallocation.md) protocol, including [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), and [`MTLHeap`](mtlheap.md).
 
 The other way to tell Metal which resources it needs to make resident is by calling a command encoder’s methods. However, these methods can impact an app’s runtime performance because each call incurs some CPU overhead. Additionally, Metal makes those resources resident right after your app commits the command buffer, which can delay when the GPU starts working on it. This overhead adds up as the number of resources increases, especially in apps that use many resources for each frame, such as games.
 
@@ -26,13 +26,88 @@ You can attach each residency set to a command buffer or an entire command queue
 
 Create a residency set by configuring an [`MTLResidencySetDescriptor`](mtlresidencysetdescriptor.md) instance and passing it to the [`makeResidencySet(descriptor:)`](mtldevice/makeresidencyset(descriptor:).md) method of an [`MTLDevice`](mtldevice.md).
 
+**Swift**:
+
+```swift
+let setDescriptor = MTLResidencySetDescriptor()
+setDescriptor.label = "Primary residency set"
+setDescriptor.initialCapacity = 42
+
+let residencySet = try device.makeResidencySet(descriptor: setDescriptor)
+```
+
+**Objective-C**:
+
+```objective-c
+MTLResidencySetDescriptor *setDescriptor;
+setDescriptor = [[MTLResidencySetDescriptor alloc] init];
+setDescriptor.label = @"Primary residency set";
+setDescriptor.initialCapacity = 42;
+
+NSError *error;
+id<MTLResidencySet> residencySet;
+residencySet = [device newResidencySetWithDescriptor:setDescriptor
+                                               error:&error];
+```
+
 Add an individual allocation to the [`MTLResidencySet`](mtlresidencyset.md) instance by calling its [`addAllocation(_:)`](mtlresidencyset/addallocation(_:).md) method, or add multiple allocations with its [`addAllocations(_:)`](mtlresidencyset/addallocations(_:).md) method.
+
+**Swift**:
+
+```swift
+let residencySet = try device.makeResidencySet(descriptor: setDescriptor)
+
+residencySet.addAllocation(buffer0)
+residencySet.addAllocation(buffer1)
+residencySet.addAllocation(texture0)
+residencySet.addAllocation(texture1)
+residencySet.addAllocation(heap)
+
+let allocations = [buffer2,
+                   texture2,
+                   argumentBufferHeap,
+                   textureHeap]
+
+residencySet.addAllocations(allocations)
+```
+
+**Objective-C**:
+
+```objective-c
+[residencySet addAllocation:buffer0];
+[residencySet addAllocation:buffer1];
+[residencySet addAllocation:texture0];
+[residencySet addAllocation:texture1];
+[residencySet addAllocation:heap];
+
+id<MTLAllocation> allocations[] = {
+    buffer2,
+    texture2,
+    argumentBufferHeap,
+    textureHeap
+};
+
+[residencySet addAllocations:allocations
+                       count:4];
+```
 
 A residency set handles redundant allocations by ignoring instances that already have an entry in the set.
 
 > ❗ **Important**:  Adding a resource allocation that originates from an [`MTLHeap`](mtlheap.md) to a residency set makes that entire heap resident.
 
 Finalize and apply the pending changes to the residency set by calling its [`commit()`](mtlresidencyset/commit().md) method.
+
+**Swift**:
+
+```swift
+residencySet.commit()
+```
+
+**Objective-C**:
+
+```objective-c
+[residencySet commit];
+```
 
 See [`MTLResidencySet`](mtlresidencyset.md) for information about working with residency sets, including:
 
@@ -43,6 +118,18 @@ See [`MTLResidencySet`](mtlresidencyset.md) for information about working with r
 ##### Attach a Residency Set to a Command Buffer
 
 Connect an [`MTLCommandBuffer`](mtlcommandbuffer.md) instance to a residency set’s resource allocations by attaching the set to the command buffer with the [`useResidencySet(_:)`](mtlcommandbuffer/useresidencyset(_:).md) or [`useResidencySets(_:)`](mtlcommandbuffer/useresidencysets(_:).md) method. Every command buffer can maintain a list of up to 32 different residency sets.
+
+**Swift**:
+
+```swift
+commandBuffer.useResidencySet(residencySet)
+```
+
+**Objective-C**:
+
+```objective-c
+[commandBuffer useResidencySet:residencySet];
+```
 
 Metal makes the allocations in the set resident before the GPU runs the passes in the command buffer. This includes all resources that come from an [`MTLHeap`](mtlheap.md) allocation that’s in the residency set.
 
@@ -61,6 +148,18 @@ Attaching a residency set to a command buffer takes less CPU runtime and overhea
 
 Connect an [`MTLCommandQueue`](mtlcommandqueue.md) instance to a residency set’s resource allocations by attaching the set to the queue with its [`addResidencySet(_:)`](mtlcommandqueue/addresidencyset(_:).md) or [`addResidencySets(_:)`](mtlcommandqueue/addresidencysets(_:).md) method. Every command queue can maintain a list of up to 32 different residency sets.
 
+**Swift**:
+
+```swift
+commandQueue.addResidencySet(residencySet)
+```
+
+**Objective-C**:
+
+```objective-c
+[commandQueue addResidencySet:residencySet];
+```
+
 When your app calls a command buffer’s [`commit()`](mtlcommandbuffer/commit().md) method, Metal automatically attaches the owning queue’s current residency sets to the command buffer.
 
 > 💡 **Tip**:  Attach a residency set to a command queue for resources the GPU needs access to frequently, or for the lifetime of your app.
@@ -71,6 +170,18 @@ Attaching a residency set to a command queue is more efficient than attaching th
 
 When your command queue doesn’t need the resources of a residency set, disconnect it from the queue by calling the [`removeResidencySet(_:)`](mtlcommandqueue/removeresidencyset(_:).md) or [`removeResidencySets(_:)`](mtlcommandqueue/removeresidencysets(_:).md) method.
 
+**Swift**:
+
+```swift
+commandQueue.removeResidencySet(residencySet)
+```
+
+**Objective-C**:
+
+```objective-c
+[commandQueue removeResidencySet:residencySet];
+```
+
 The residency set remains attached to any of the queue’s command buffers already in-flight with a status equal to [`MTLCommandBufferStatus.committed`](mtlcommandbufferstatus/committed.md) or [`MTLCommandBufferStatus.scheduled`](mtlcommandbufferstatus/scheduled.md).
 
 ##### Request Residency Ahead of Time
@@ -79,6 +190,18 @@ To make allocations in a residency set resident (for allocations that aren’t a
 
 To help minimize the time between committing a command buffer and when the GPU starts working on it, ask Metal to do the work beforehand. You do this by calling a residency set’s [`requestResidency()`](mtlresidencyset/requestresidency().md) method.
 
+**Swift**:
+
+```swift
+residencySet.requestResidency()
+```
+
+**Objective-C**:
+
+```objective-c
+[residencySet requestResidency];
+```
+
 Call this method at any time before you commit the first command buffer that relies on the allocations in the residency set. This can be any noncritical moment when your app can afford the CPU time the framework needs to prepare the applicable allocations for residency. For example, you can call this method at launch or during an app state change.
 
 > **Note**:  The [`requestResidency()`](mtlresidencyset/requestresidency().md) method may postpone some of the necessary steps to make allocations resident in scenarios where other apps have competing memory needs.
@@ -86,6 +209,18 @@ Call this method at any time before you commit the first command buffer that rel
 ##### Conclude Residency for the Resources
 
 When your app no longer needs a residency set’s allocations to be accessible to the GPU, call the [`endResidency()`](mtlresidencyset/endresidency().md) method, which effectively releases them.
+
+**Swift**:
+
+```swift
+residencySet.endResidency()
+```
+
+**Objective-C**:
+
+```objective-c
+[residencySet endResidency];
+```
 
 The method tells Metal that it can reuse the memory backing that residency set’s allocations for your app’s other residency sets, or for another app.
 

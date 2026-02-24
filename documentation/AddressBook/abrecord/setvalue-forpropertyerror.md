@@ -24,9 +24,9 @@ For a list of the available properties, see [`Accessing Address Book Records`](h
 
 ## Parameters
 
-- `value`: The value to set for  .
+- `value`: The value to set for `property`.
 - `property`: The property whose value will be set.
-- `error`: A pointer to an error object that is set to an   instance if an error occurs.
+- `error`: A pointer to an error object that is set to an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) instance if an error occurs.
 
 ## See Also
 

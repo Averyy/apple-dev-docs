@@ -29,6 +29,10 @@ This method applies the circle splash distortion filter to an image. This effect
 
 The circle splash distortion filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`radius`**: A `float` representing the amount in pixels the filter uses to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the center of the image.
+
 The following code creates a filter that results in a ripple effect applied to the image:
 
 ```swift

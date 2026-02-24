@@ -36,8 +36,8 @@ The command can also adjust the offset for an entry that you previously set with
 
 ## Parameters
 
-- `offset`: See the   to check for offset alignment requirements for buffers in   and   address space.
-- `index`: An integer that represents the entry in the mesh shader argument table for buffers that already stores a record of an  .
+- `offset`: An integer that represents the location, in bytes, from the start of `buffer` where the mesh shader argument data begins. See the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) to check for offset alignment requirements for buffers in `device` and `constant` address space.
+- `index`: An integer that represents the entry in the mesh shader argument table for buffers that already stores a record of an [`MTLBuffer`](mtlbuffer.md).
 
 ## See Also
 

@@ -18,7 +18,7 @@ SwiftData requires two separate capabilities to perform automatic iCloud sync: t
 
 To add the iCloud and Background Modes capabilities:
 
-1. Follow the steps in [`Configuring iCloud services`](https://developer.apple.com/documentation/Xcode/configuring-icloud-services) to add the iCloud capability to your Xcode project, enable CloudKit, and create or choose an existing  — an object that CloudKit uses to isolate your app’s databases on the iCloud servers and manage their access and operations.
+1. Follow the steps in [`Configuring iCloud services`](https://developer.apple.com/documentation/Xcode/configuring-icloud-services) to add the iCloud capability to your Xcode project, enable CloudKit, and create or choose an existing *container* — an object that CloudKit uses to isolate your app’s databases on the iCloud servers and manage their access and operations.
 2. Follow the steps in [`Configuring background execution modes`](https://developer.apple.com/documentation/Xcode/configuring-background-execution-modes) to add the Background Modes capability, enabling the Remote notifications option. The system delivers remote notifications silently to your app, allowing SwiftData to process the changes they describe and keep your local model data in sync with the iCloud servers.
 
 ##### Define a Cloudkit Compatible Schema

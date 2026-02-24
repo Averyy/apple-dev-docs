@@ -3,7 +3,7 @@
 **Framework**: Spatial  
 **Kind**: case
 
-The shear is on the  axis using the  and  shear factors.
+The shear is on the *z* axis using the *x* and *y* shear factors.
 
 **Availability**:
 - iOS 26.0+

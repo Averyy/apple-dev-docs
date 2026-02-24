@@ -23,7 +23,7 @@ A newly initialized activation interaction object.
 
 ## Parameters
 
-- `configurationProvider`: The closure the system calls when the user triggers the interaction. The closure should return a   object.
+- `configurationProvider`: The closure the system calls when the user triggers the interaction. The closure should return a [`UIWindowScene.ActivationConfiguration`](uiwindowscene/activationconfiguration.md) object.
 - `errorHandler`: The closure the system calls when the activation request fails.
 
 ## See Also

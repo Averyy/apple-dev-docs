@@ -27,8 +27,8 @@ This initializer wraps the data that you provide as input in an implicit [`ForEa
 
 ## Parameters
 
-- `data`: A collection of data that conforms to the     protocol.
-- `content`: The mark that the chart should draw for each element   in the data collection.
+- `data`: A collection of data that conforms to the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol.
+- `content`: The mark that the chart should draw for each element in the data collection.
 
 ## See Also
 

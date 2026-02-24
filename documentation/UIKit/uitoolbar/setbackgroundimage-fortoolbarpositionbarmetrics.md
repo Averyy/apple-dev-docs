@@ -19,7 +19,7 @@ func setBackgroundImage(_ backgroundImage: UIImage?, forToolbarPosition topOrBot
 
 ## Parameters
 
-- `backgroundImage`: The image to use for the toolbar background in the position specified by   and with the metrics specified by  .
+- `backgroundImage`: The image to use for the toolbar background in the position specified by `topOrBottom` and with the metrics specified by `barMetrics`.
 - `topOrBottom`: A toolbar position constant.
 - `barMetrics`: A bar metrics constant.
 

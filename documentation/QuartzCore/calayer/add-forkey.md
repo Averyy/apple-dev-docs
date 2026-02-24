@@ -26,7 +26,7 @@ If the `duration` property of the animation is zero or negative, the duration is
 ## Parameters
 
 - `anim`: The animation to be added to the render tree. This object is copied by the render tree, not referenced. Therefore, subsequent modifications to the object are not propagated into the render tree.
-- `key`: A string that identifies the animation. Only one animation per unique key is added to the layer. The special key   is automatically used for transition animations. You may specify   for this parameter.
+- `key`: A string that identifies the animation. Only one animation per unique key is added to the layer. The special key [`kCATransition`](kcatransition.md) is automatically used for transition animations. You may specify `nil` for this parameter.
 
 ## See Also
 

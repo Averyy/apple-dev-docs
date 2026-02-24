@@ -14,6 +14,11 @@ A dictionary with the details about a login item.
 object LoginItemsManagedItems.LoginItem
 ```
 
+## Properties
+
+- `Hide` (boolean): If `true`, the system hides this item in the Users & Groups login items list.
+- `Path` (string) *(required)*: The URL or path string to the item’s location.
+
 
 ---
 

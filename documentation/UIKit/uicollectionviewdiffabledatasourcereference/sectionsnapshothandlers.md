@@ -25,6 +25,32 @@ Provide section snapshot handlers to support the expanding or collapsing of item
 
 Use the [`snapshotForExpandingParentItemHandler`](uicollectionviewdiffabledatasourcesectionsnapshothandlers/snapshotforexpandingparentitemhandler.md) handler to customize the snapshot that returns when a particular parent item is expanded.
 
+**Swift**:
+
+```swift
+// Allow every item to be collapsed
+dataSource.sectionSnapshotHandlers.shouldCollapseItem = { item in return true }
+
+dataSource.sectionSnapshotHandlers.snapshotForExpandingParent = {
+    parent, currentChildSnapshot -> NSDiffableDataSourceSectionSnapshot<String> in
+    
+    // Return child snapshot for the parent, or just currentChildSnapshot
+}
+```
+
+**Objective-C**:
+
+```objc
+// Allow every item to be collapsed.
+[dataSource.sectionSnapshotHandlers setShouldCollapseItemHandler:^BOOL(NSString *item) {
+    return YES;
+}];
+
+[dataSource.sectionSnapshotHandlers setSnapshotForExpandingParentItemHandler:^NSDiffableDataSourceSectionSnapshot<NSString *> * (NSString *parent, NSDiffableDataSourceSectionSnapshot<NSString *> *currentChildSnapshot) {
+    // Return child snapshot for the parent, or just currentChildSnapshot.
+}];
+```
+
 
 ---
 

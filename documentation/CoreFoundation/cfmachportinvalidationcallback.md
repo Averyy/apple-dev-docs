@@ -29,7 +29,7 @@ You specify this callback with [`CFMachPortSetInvalidationCallBack(_:_:)`](cfmac
 ## Parameters
 
 - `port`: The CFMachPort object that has been invalidated.
-- `info`: The   member of the   structure used when creating  .
+- `info`: The `info` member of the [`CFMachPortContext`](cfmachportcontext.md) structure used when creating `port`.
 
 ## See Also
 

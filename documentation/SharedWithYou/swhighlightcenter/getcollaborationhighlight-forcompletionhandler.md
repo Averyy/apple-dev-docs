@@ -20,8 +20,8 @@ func collaborationHighlight(for URL: URL) async throws -> SWCollaborationHighlig
 
 ## Parameters
 
-- `URL`: The URL that the system uses to find the  .
-- `completionHandler`: Returns the  . The system invokes the completion handler on the main thread.
+- `URL`: The URL that the system uses to find the [`SWCollaborationHighlight`](swcollaborationhighlight.md).
+- `completionHandler`: Returns the [`SWCollaborationHighlight`](swcollaborationhighlight.md). The system invokes the completion handler on the main thread.
 
 ## See Also
 

@@ -6,9 +6,9 @@ Process an available app version from App Store Connect and store it for downloa
 
 #### Overview
 
-When an app passes Notarization, App Store Connect makes it available for storage on the back end of your web server. The app format that App Store Connect provides is an , which contains everything a device needs to install the available app. App Store Connect sends newly available apps that an alternative marketplace app distributes to your web server automatically through your notifications webhook; see [`Processing alternative app marketplace notifications`](processing-alternative-marketplace-notifications.md). For your apps that install from your website, you need to download your alternative distribution package from App Store Connect manually.
+When an app passes Notarization, App Store Connect makes it available for storage on the back end of your web server. The app format that App Store Connect provides is an *alternative distribution package*, which contains everything a device needs to install the available app. App Store Connect sends newly available apps that an alternative marketplace app distributes to your web server automatically through your notifications webhook; see [`Processing alternative app marketplace notifications`](processing-alternative-marketplace-notifications.md). For your apps that install from your website, you need to download your alternative distribution package from App Store Connect manually.
 
-In either case, to prepare the package for installation on devices, process, or , the package to a specific format, and serve its contents from specific relative locations that the operating system expects.
+In either case, to prepare the package for installation on devices, process, or *ingest*, the package to a specific format, and serve its contents from specific relative locations that the operating system expects.
 
 ![A diagram that shows the flow of the ingesting an alternative distribution package. When there’s a new version of an app available, App Store Connect sends a notification to your server’s notifications webhook, your primary back end retrieves the package metadata using  the app distribution package ID from the notification. Your primary back end then downloads the package zip from the content delivery network and saves the manifest and signature to your database or large file storage. Your primary back end registers the variant and delta info, then stores it. For each variant and delta of the app distribution package, your back end retrieves the asset URL by ID from App Store Connect, then downloads the asset from the content delivery network and stores the asset in your database.](https://docs-assets.developer.apple.com/published/557844addd2e5197953a26fbafeac2b2/ingesting-an-alternative-distribution-package-1%402x.png)
 
@@ -168,6 +168,9 @@ An example manifest follows:
 
 When the operating system installs an app on a device, it accesses your server at different subfolders off the base URL you provide in the download link depending on the needs of the requesting device. When your endpoint processes the alternative distribution package, you ingest and organize the contents that the manifest references according to two categories:
 
+- ***Variants***: Complete app bundles, in encrypted form, that vary slightly to support different device types.
+- ***Deltas***: Partial app bundles, in encrypted form, that consist of just the bits required to update from one version of an app to another.
+
 #### Download App Variants
 
 The variants reside at the top of the manifest. The first variant in the example has a `publicId` of `219750db-80c2-4c75-aecc-fa67835f384d`. To download the variant, provide the `publicId` as the `id` path parameter of the `alternativeDistributionPackageVariants` endpoint, as follows:
@@ -196,7 +199,7 @@ In the response, navigate to the `data.attributes.url`, which refers to an insta
 
 > **Note**: Although an app that resides on App Store Connect might contain binaries for multiple platforms, the alternative distribution package sent to the marketplace only contains variants for the platforms that MarketplaceKit supports in the target region (see [`Participating in alternative distribution for specific regions`](participating-in-alternative-distribution-for-specific-regions.md) for the device-support specifics). For example, a specific alternative distribution package contains variants for each supported device; it doesn’t contain watch variants.
 
-The `alternativeDistributionKeyBlob` () has a unique value for each variant. The [`App License Delivery SDK`](https://developer.apple.com/documentation/AppLicenseDeliverySDK) requires the key blob during licensing requests. Store the key blob so your licensing service can use it to decrypt the license request payload coming from a device as required to generate an app license for the variant.
+The `alternativeDistributionKeyBlob` (*key blob*) has a unique value for each variant. The [`App License Delivery SDK`](https://developer.apple.com/documentation/AppLicenseDeliverySDK) requires the key blob during licensing requests. Store the key blob so your licensing service can use it to decrypt the license request payload coming from a device as required to generate an app license for the variant.
 
 #### Download App Deltas
 

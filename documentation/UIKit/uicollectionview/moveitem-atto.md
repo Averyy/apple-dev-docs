@@ -26,8 +26,8 @@ You can also call this method from a block passed to the [`performBatchUpdates(_
 
 ## Parameters
 
-- `indexPath`: The index path of the item you want to move. This parameter must not be  .
-- `newIndexPath`: The index path of the item’s new location. This parameter must not be  .
+- `indexPath`: The index path of the item you want to move. This parameter must not be `nil`.
+- `newIndexPath`: The index path of the item’s new location. This parameter must not be `nil`.
 
 ## See Also
 

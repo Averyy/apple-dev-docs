@@ -26,8 +26,8 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `in_left_channel`: The   for the left channel.
-- `in_right_channel`: The   for the right channel.
+- `in_left_channel`: The [`IOUserAudioObjectPropertyElement`](audiodriverkit/iouseraudioobjectpropertyelement.md) for the left channel.
+- `in_right_channel`: The [`IOUserAudioObjectPropertyElement`](audiodriverkit/iouseraudioobjectpropertyelement.md) for the right channel.
 
 ## See Also
 

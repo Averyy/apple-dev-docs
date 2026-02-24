@@ -26,9 +26,9 @@ The default behavior of an effect is to activate the effect group when hovered. 
 
 ## Parameters
 
-- `id`: An optional id to give the group. If provided, the group will be   uniquely identified by combining the id and the namespace.
-- `namespace`: The namespace that identifies the group. If   , this modifier has no effect.
-- `behavior`: How the effect will behave relative to other   effects in the group.
+- `id`: An optional id to give the group. If provided, the group will be uniquely identified by combining the id and the namespace.
+- `namespace`: The namespace that identifies the group. If `nil`, this modifier has no effect.
+- `behavior`: How the effect will behave relative to other effects in the group.
 
 
 ---

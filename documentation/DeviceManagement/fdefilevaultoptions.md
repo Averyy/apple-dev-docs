@@ -66,6 +66,12 @@ Specify `com.apple.MCX` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `DestroyFVKeyOnStandby` (boolean): If `true`, the system won’t store th FileVault key across restarts.
+- `dontAllowFDEDisable` (boolean): If `true`, the system won’t disable FileVault.
+- `dontAllowFDEEnable` (boolean): If `true`, the system won’t enable FileVault.
+
 ## See Also
 
 - [object FDEFileVault](fdefilevault.md)

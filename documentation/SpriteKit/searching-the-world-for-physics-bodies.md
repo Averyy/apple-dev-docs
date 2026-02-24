@@ -21,6 +21,43 @@ However, it’s not easy to implement concepts such as line of sight using this 
 
 An example illustrates the basic technique. The following code shows one possible implementation of a line-of-sight detection system. It casts a ray from the origin of the scene in a particular direction, searching for the nearest physics body along the ray. If it finds a physics body, it tests the category mask to see whether this is a target it should attack. If it sees a target designated for attack, it shoots the cannon.
 
+**Swift**:
+
+```swift
+func isTargetVisibleAtAngle(angle: CGFloat, distance: CGFloat) -> Bool {
+    let rayStart = CGPoint.zero
+    let rayEnd = CGPoint(x: distance * cos(angle),
+                         y: distance * sin(angle))
+    
+    let body = scene.physicsWorld.body(alongRayStart: rayStart, end: rayEnd)
+    
+    return body?.categoryBitMask == targetCategory
+}
+func attackTargetIfVisible() {
+    if isTargetVisibleAtAngle(angle: cannon.zRotation, distance: 512) {
+        shootCannon()
+}
+```
+
+**Obj-C**:
+
+```objc
+- (BOOL) isTargetVisibleAtAngle:(CGFloat)angle distance:(CGFloat) distance
+[
+    CGPoint rayStart = CGPointZero;
+    CGPoint rayEnd = CGPointMake(distance*cosf(angle), distance*sinf(angle));
+    SKPhysicsBody *body = [self.physicsWorld bodyAlongRayStart:rayStart end:rayEnd];
+    return (body && body.categoryBitMask == targetCategory);
+}
+- (void) attackTargetIfVisible
+{
+    if ([self isTargetVisibleAtAngle: self.cannon.zRotation distance: 512])
+    {
+        [self shootCannon];
+    }
+}
+```
+
 ##### Try Other Search Methods
 
 Another way to implement the same behavior is to set the starting and ending positions of the ray to those of two physics bodies in your scene. For example, you might use the location of the player’s game object as one position and the position of an enemy unit as the other position.

@@ -22,6 +22,10 @@ func vvtanpif(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: Unsafe
 
 ##### Parameters
 
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
 ## See Also
 
 - [static func acos<U>(U) -> [Double]](vforce/acos(_:)-8srk.md)

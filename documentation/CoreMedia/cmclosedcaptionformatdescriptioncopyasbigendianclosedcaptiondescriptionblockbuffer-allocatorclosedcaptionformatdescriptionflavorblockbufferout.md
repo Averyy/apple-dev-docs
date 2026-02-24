@@ -28,10 +28,10 @@ On return, the caller owns the returned CMBlockBuffer, and must release it when 
 
 ## Parameters
 
-- `allocator`: Allocator to use for allocating the   object. May be  .
-- `closedCaptionFormatDescription`: The   to be copied.
-- `flavor`: Reserved for future use. Pass   for QuickTime Movie or ISO flavor.
-- `blockBufferOut`: Receives new   containing ClosedCaptionDescription data structure in big-endian byte ordering.
+- `allocator`: Allocator to use for allocating the `CMBlockBuffer` object. May be `NULL`.
+- `closedCaptionFormatDescription`: The `CMClosedCaptionFormatDescription` to be copied.
+- `flavor`: Reserved for future use. Pass `NULL` for QuickTime Movie or ISO flavor.
+- `blockBufferOut`: Receives new `CMBlockBuffer` containing ClosedCaptionDescription data structure in big-endian byte ordering.
 
 ## See Also
 

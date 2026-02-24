@@ -22,7 +22,7 @@ Initializing a `WebContentProcess` object launches a new instance of the web con
 
 ## Parameters
 
-- `bundleIdentifier`: The bundle identifier of the content extension to launch, or   to use the default bundle identifier for this app’s web content extension.
+- `bundleIdentifier`: The bundle identifier of the content extension to launch, or `nil` to use the default bundle identifier for this app’s web content extension.
 - `onInterruption`: A block that the operating system calls if the web content extension process exits abnormally.
 
 ## See Also

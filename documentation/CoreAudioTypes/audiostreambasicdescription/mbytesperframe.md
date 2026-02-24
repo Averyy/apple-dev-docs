@@ -21,13 +21,13 @@ var mBytesPerFrame: UInt32
 
 #### Discussion
 
-For an audio buffer containing  data for  channels, with each sample of type `AudioSampleType`, calculate the value for this field as follows:
+For an audio buffer containing *interleaved* data for *n* channels, with each sample of type `AudioSampleType`, calculate the value for this field as follows:
 
 ```objc
 mBytesPerFrame = n * sizeof (AudioSampleType);
 ```
 
-For an audio buffer containing  (monophonic) data, also using `AudioSampleType` samples, calculate the value for this field as follows:
+For an audio buffer containing *noninterleaved* (monophonic) data, also using `AudioSampleType` samples, calculate the value for this field as follows:
 
 ```objc
 mBytesPerFrame = sizeof (AudioSampleType);

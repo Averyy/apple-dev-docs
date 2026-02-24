@@ -22,6 +22,10 @@ Or, when a Handoff activity launches the app, use the [`handleActiveWorkoutRecov
 
 This property contains the following values based on the app’s current state:
 
+- **Just launched**: The app’s [`rootInterfaceController`](wkapplication/rootinterfacecontroller.md).
+- **Running in the foreground**: The currently presented interface controller.
+- **Running in the background**: The last interface controller presented by the app.
+
 ## See Also
 
 - [var rootInterfaceController: WKInterfaceController?](wkapplication/rootinterfacecontroller.md)

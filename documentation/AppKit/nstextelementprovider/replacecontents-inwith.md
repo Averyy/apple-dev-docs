@@ -23,8 +23,8 @@ If the edges of `range` aren’t at existing element range boundaries, the metho
 
 ## Parameters
 
-- `range`: An  .
-- `textElements`: The elements to replace that characters at  .
+- `range`: An [`NSTextRange`](nstextrange.md).
+- `textElements`: The elements to replace that characters at `range`.
 
 ## See Also
 

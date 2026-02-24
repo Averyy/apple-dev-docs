@@ -36,9 +36,9 @@ These requests don’t cancel or replace any of your scheduled requests.
 
 ## Parameters
 
-- `preferredFireDate`: If you pass the current date and time, the system immediately invalidates your existing snapshot, marking the snapshot as stale in the Dock. The system also schedules the earliest possible background snapshot refresh task.
-- `userInfo`: A dictionary of custom information associated with the background snapshot refresh task. Pass   if you don’t need to associate any custom data with the task.
-- `scheduledCompletion`: A block that the system calls after the background refresh has completed. This block takes the following parameter:
+- `preferredFireDate`: The time of the next background snapshot refresh task. The system makes every effort to wake your app in the background at some point after the scheduled time, but the system doesn’t guarantee a precise time. If you pass the current date and time, the system immediately invalidates your existing snapshot, marking the snapshot as stale in the Dock. The system also schedules the earliest possible background snapshot refresh task.
+- `userInfo`: A dictionary of custom information associated with the background snapshot refresh task. Pass `nil` if you don’t need to associate any custom data with the task.
+- `scheduledCompletion`: A block that the system calls after the background refresh has completed. This block takes the following parameter: - **error**: If an error occurs, this parameter contains an object describing the error; otherwise, it’s `nil`.
 
 
 ---

@@ -29,9 +29,9 @@ Locking: Caller must ensure that the reporter (data) lock is held.
 
 ## Parameters
 
-- `element_index`: 
-- `values`: 
-- `record_time`: 
+- `element_index`: - index of the _element in internal array
+- `values`: - IORepoterElementValues to replace those at _elements[idx]
+- `record_time`: - optional mach_absolute_time to be used for metadata
 
 
 ---

@@ -21,7 +21,7 @@ func assignAccessory(_ accessory: HMAccessory, to room: HMRoom) async throws
 
 - `accessory`: The accessory to assign; must already have been added to the home.
 - `room`: The room to which the accessory will be assigned; must already exist in the home.
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

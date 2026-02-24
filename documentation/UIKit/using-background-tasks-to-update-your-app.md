@@ -6,7 +6,7 @@ Configure your app to perform tasks in the background to make efficient use of p
 
 #### Overview
 
-A  is a standalone activity that an app performs, often on a recurring basis. Examples of tasks include performing maintenance on a database, refining a machine learning model, or updating displayed data. You can configure your app to launch and run tasks in the background to take advantage of processing time when the device isn’t in use.
+A *task* is a standalone activity that an app performs, often on a recurring basis. Examples of tasks include performing maintenance on a database, refining a machine learning model, or updating displayed data. You can configure your app to launch and run tasks in the background to take advantage of processing time when the device isn’t in use.
 
 To schedule a task to run in the background, enable the background modes in Xcode, identify the specific tasks that you need, and then register the tasks with the [`BGTaskScheduler`](https://developer.apple.com/documentation/BackgroundTasks/BGTaskScheduler) object.
 
@@ -39,7 +39,7 @@ In iOS 13 and later, adding a [`BGTaskSchedulerPermittedIdentifiers`](https://de
 
 ##### Register Schedule and Run Tasks
 
-For each task, provide the [`BGTaskScheduler`](https://developer.apple.com/documentation/BackgroundTasks/BGTaskScheduler) object with a  — a small block of code that runs the task — and a unique identifier. Register all of the tasks before the end of the app launch sequence. For more information, see [`About the app launch sequence`](about-the-app-launch-sequence.md).
+For each task, provide the [`BGTaskScheduler`](https://developer.apple.com/documentation/BackgroundTasks/BGTaskScheduler) object with a *launch handler* — a small block of code that runs the task — and a unique identifier. Register all of the tasks before the end of the app launch sequence. For more information, see [`About the app launch sequence`](about-the-app-launch-sequence.md).
 
 > **Note**:  An extension can schedule a task, but your main app must register the task. The system launches the app to run the task.
 

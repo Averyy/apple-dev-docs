@@ -29,6 +29,9 @@ This method applies a Gaussian blur filter to an image. The effect targets the p
 
 The Gaussian blur filter uses the following properties:
 
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
+
 The following code creates a filter that adds a heavy blur to the input image:
 
 ```swift

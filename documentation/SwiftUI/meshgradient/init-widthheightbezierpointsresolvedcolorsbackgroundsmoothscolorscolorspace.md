@@ -22,13 +22,13 @@ init(width: Int, height: Int, bezierPoints: [MeshGradient.BezierPoint], resolved
 
 ## Parameters
 
-- `width`: The width of the mesh, i.e. the number of vertices   per row.
-- `height`: The height of the mesh, i.e. the number of vertices   per column.
-- `bezierPoints`: The array of points and control points,   containing   elements.
-- `resolvedColors`: The array of colors, containing   elements.
-- `background`: The background color, this fills any points   outside the defined vertex mesh.
-- `smoothsColors`: Whether cubic (smooth) interpolation should   be used for the colors in the mesh (rather than only for the   shape of the mesh).
-- `colorSpace`: The color space in which to interpolate vertex   colors.
+- `width`: The width of the mesh, i.e. the number of vertices per row.
+- `height`: The height of the mesh, i.e. the number of vertices per column.
+- `bezierPoints`: The array of points and control points, containing `width x height` elements.
+- `resolvedColors`: The array of colors, containing `width x height` elements.
+- `background`: The background color, this fills any points outside the defined vertex mesh.
+- `smoothsColors`: Whether cubic (smooth) interpolation should be used for the colors in the mesh (rather than only for the shape of the mesh).
+- `colorSpace`: The color space in which to interpolate vertex colors.
 
 
 ---

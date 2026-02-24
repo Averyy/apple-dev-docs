@@ -25,7 +25,7 @@ A `NEFilterDataVerdict` object.
 ## Parameters
 
 - `passBytes`: The number of bytes to pass to its final destination.
-- `peekBytes`: To see all subsequent bytes, set this parameter to  .
+- `peekBytes`: The number of bytes after the end of the `passBytes` that the Filter Data Provider expects in the next call to [`handleOutboundData(from:readBytesStartOffset:readBytes:)`](nefilterdataprovider/handleoutbounddata(from:readbytesstartoffset:readbytes:).md) or [`handleInboundData(from:readBytesStartOffset:readBytes:)`](nefilterdataprovider/handleinbounddata(from:readbytesstartoffset:readbytes:).md). The Filter Data Provider uses this chunk of data to make its next filtering decision. To see all subsequent bytes, set this parameter to [`NEFilterFlowBytesMax`](nefilterflowbytesmax.md).
 
 ## See Also
 

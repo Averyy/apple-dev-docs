@@ -35,8 +35,8 @@ The ordinality is in most cases not the same as the decomposed value of the unit
 ## Parameters
 
 - `calendar`: The calendar to examine.
-- `smallerUnit`: A calendar unit. For valid values see  .
-- `biggerUnit`: A calendar unit. For valid values see  .
+- `smallerUnit`: A calendar unit. For valid values see [`CFCalendarUnit`](cfcalendarunit.md).
+- `biggerUnit`: A calendar unit. For valid values see [`CFCalendarUnit`](cfcalendarunit.md).
 - `at`: An absolute time.
 
 ## See Also

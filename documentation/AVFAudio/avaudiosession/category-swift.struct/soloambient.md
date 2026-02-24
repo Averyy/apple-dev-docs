@@ -21,7 +21,7 @@ static let soloAmbient: AVAudioSession.Category
 
 #### Discussion
 
-Your audio is silenced by screen locking and by the Silent switch (called the  on iPhone).
+Your audio is silenced by screen locking and by the Silent switch (called the *Ring/Silent switch* on iPhone).
 
 By default, using this category implies that your app’s audio is nonmixable—activating your session will interrupt any other audio sessions which are also nonmixable. To allow mixing, use the [`ambient`](avaudiosession/category-swift.struct/ambient.md) category instead.
 

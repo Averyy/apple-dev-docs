@@ -27,7 +27,8 @@ Use the `reachableHandler` implementation to update your interface with informat
 
 ## Parameters
 
-- `reachableHandler`: This block receives the following parameters:
+- `reachableHandler`: The block that GameKit calls when it completes the request. This block receives the following parameters: - **`player`**: The player whose reachability status changes.
+- **`reachable`**: [`true`](https://developer.apple.com/documentation/Swift/true) if a new nearby player appears. [`false`](https://developer.apple.com/documentation/Swift/false) if a previously discovered player disappears.
 
 ## See Also
 

@@ -22,8 +22,8 @@ If the script completed normally, the completion handler’s `error` parameter w
 
 ## Parameters
 
-- `arguments`: An array of   objects containing the script arguments. The arguments do not undergo shell expansion, so you do not need to do special quoting, and shell variables are not resolved.
-- `handler`: The completion handler Block that returns the result. See  .
+- `arguments`: An array of `NSString` objects containing the script arguments. The arguments do not undergo shell expansion, so you do not need to do special quoting, and shell variables are not resolved.
+- `handler`: The completion handler Block that returns the result. See [`NSUserUnixTask.CompletionHandler`](nsuserunixtask/completionhandler.md).
 
 ## See Also
 

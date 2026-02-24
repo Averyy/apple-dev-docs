@@ -31,7 +31,7 @@ A composed character sequence is a series of one or more characters where each i
 ## Parameters
 
 - `theString`: The string to examine.
-- `theIndex`: The index of the character contained in the composed character sequence. If the index is outside the range of the string (  to   inclusive, where   is the length of the string), the behavior is undefined.
+- `theIndex`: The index of the character contained in the composed character sequence. If the index is outside the range of the string (`0` to `N-1` inclusive, where `N` is the length of the string), the behavior is undefined.
 
 ## See Also
 

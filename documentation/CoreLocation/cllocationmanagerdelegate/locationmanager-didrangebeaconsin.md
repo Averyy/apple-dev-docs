@@ -28,7 +28,7 @@ The location manager calls this method when a new set of beacons becomes availab
 ## Parameters
 
 - `manager`: The location manager object reporting the event.
-- `beacons`: An array of   objects representing the beacons currently in range. If   is empty, you can assume that no beacons matching the specified region are in range. When a specific beacon is no longer in  , that beacon is no longer received by the device. You can use the information in the   objects to determine the range of each beacon and its identifying information.
+- `beacons`: An array of [`CLBeacon`](clbeacon.md) objects representing the beacons currently in range. If `beacons` is empty, you can assume that no beacons matching the specified region are in range. When a specific beacon is no longer in `beacons`, that beacon is no longer received by the device. You can use the information in the [`CLBeacon`](clbeacon.md) objects to determine the range of each beacon and its identifying information.
 - `region`: The region object containing the parameters that were used to locate the beacons.
 
 ## See Also

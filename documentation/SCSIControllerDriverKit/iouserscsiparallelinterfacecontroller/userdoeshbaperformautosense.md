@@ -24,7 +24,7 @@ If the HBA allocates space for autosense in its HBA-specific data region on a pe
 
 ## Parameters
 
-- `result`: A pointer to a Boolean value. On return, set this to   if the HBA performs autosense.
+- `result`: A pointer to a Boolean value. On return, set this to `true` if the HBA performs autosense.
 
 ## See Also
 

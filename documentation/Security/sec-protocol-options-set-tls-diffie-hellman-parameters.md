@@ -24,7 +24,7 @@ Set the supported Diffie-Hellman parameters.
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A `sec_protocol_options_t` instance.
 - `params`: A dispatch_data_t containing legacy Diffie-Hellman parameters.
 
 

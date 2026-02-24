@@ -29,8 +29,8 @@ Note that the value of the property should not be considered changed until the H
 
 - `inObjectID`: The AudioObject to change.
 - `inAddress`: An AudioObjectPropertyAddress indicating which property is being changed.
-- `inQualifierDataSize`: A UInt32 indicating the size of the buffer pointed to by inQualifierData.   Note that not all properties require qualification, in which case this   value will be 0.
-- `inQualifierData`: A buffer of data to be used in determining the data of the property being   queried. Note that not all properties require qualification, in which case   this value will be NULL.
+- `inQualifierDataSize`: A UInt32 indicating the size of the buffer pointed to by inQualifierData. Note that not all properties require qualification, in which case this value will be 0.
+- `inQualifierData`: A buffer of data to be used in determining the data of the property being queried. Note that not all properties require qualification, in which case this value will be NULL.
 - `inDataSize`: A UInt32 indicating the size of the buffer pointed to by inData.
 - `inData`: The buffer containing the data to be used to change the property’s value.
 

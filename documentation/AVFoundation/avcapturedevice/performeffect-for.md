@@ -26,7 +26,7 @@ The entries in the [`reactionEffectsInProgress`](avcapturedevice/reactioneffects
 
 ## Parameters
 
-- `reactionType`: A reaction type to perform. Specifying a type that doesn’t exists within the set of   for the device results in an exception.
+- `reactionType`: A reaction type to perform. Specifying a type that doesn’t exists within the set of [`availableReactionTypes`](avcapturedevice/availablereactiontypes.md) for the device results in an exception.
 
 ## See Also
 

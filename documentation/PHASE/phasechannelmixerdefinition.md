@@ -25,9 +25,9 @@ Use this class to play one-time sounds such as menu clicks.
 
 > **Note**:  If your audio playback requires 3D orienting or positioning, use [`PHASEAmbientMixerDefinition`](phaseambientmixerdefinition.md) or [`PHASESpatialMixerDefinition`](phasespatialmixerdefinition.md), respectively. For more information, see [`Spatial Mixing`](spatial-mixing.md).
 
-This class defines the , which is the strategy the framework uses to send source mono or multichannel assets to the output for playback. The asset’s audio channels route to the output for playback according to the channel layout and runtime output conditions the app designates on an instance of this class.
+This class defines the *channel routing*, which is the strategy the framework uses to send source mono or multichannel assets to the output for playback. The asset’s audio channels route to the output for playback according to the channel layout and runtime output conditions the app designates on an instance of this class.
 
-This class minimizes  and  — that is, source audio channel conversion to a higher or lower number of channels. For example, although a spatial mixer overrides the use of output channels by panning to convey listener position and orientation, the channel mixer maintains source audio channel layout to preserve the listening experience of the source audio.
+This class minimizes *up mixing* and *down mixing* — that is, source audio channel conversion to a higher or lower number of channels. For example, although a spatial mixer overrides the use of output channels by panning to convey listener position and orientation, the channel mixer maintains source audio channel layout to preserve the listening experience of the source audio.
 
 ## Topics
 

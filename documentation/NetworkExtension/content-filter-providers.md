@@ -15,7 +15,7 @@ A content filter consists of two providers that work in close cooperation:
 
 This separation exists to guarantee user privacy. The filter data provider runs in a very restrictive sandbox that prevents user network content from escaping that provider. The filter control provider has a less restrictive sandbox but doesn’t have access to user network content. By combining these providers, your content filter has access to the network but can’t use that access to export user network content.
 
-For example, your filter control provider might download a set of filtering rules and save them to a shared app group. Your filter data provider has  access to that app group, allowing it use those rules to filter content but still preventing it from exporting user network content.
+For example, your filter control provider might download a set of filtering rules and save them to a shared app group. Your filter data provider has *read-only* access to that app group, allowing it use those rules to filter content but still preventing it from exporting user network content.
 
 For detailed information about content filter provider deployment options, see [`TN3134: Network Extension provider deployment`](https://developer.apple.com/documentation/Technotes/tn3134-network-extension-provider-deployment).
 

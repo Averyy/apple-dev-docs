@@ -14,6 +14,10 @@ The array of valid devices that Apple TV can connect to.
 object TVRemote.AllowedRemotesItem
 ```
 
+## Properties
+
+- `RemoteDeviceID` (string) *(required)*: The MAC address of a permitted iOS device that can control this Apple TV. Use the format `xx:xx:xx:xx:xx:xx`, which isn’t case-sensitive.
+
 ## See Also
 
 - [object TVRemote.AllowedTVsItem](tvremote/allowedtvsitem.md)

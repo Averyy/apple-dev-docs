@@ -27,7 +27,7 @@ typealias CGImageMetadataTagBlock = (CFString, CGImageMetadataTag) -> Bool
 ## Parameters
 
 - `path`: The full path to the tag in the metadata container.
-- `tag`: The   object that contains the tag information. Never modify this object from your block. If you want to change the tag, save a reference to it and make your changes later.
+- `tag`: The [`CGImageMetadataTag`](cgimagemetadatatag.md) object that contains the tag information. Never modify this object from your block. If you want to change the tag, save a reference to it and make your changes later.
 
 ## See Also
 

@@ -50,7 +50,7 @@ The `presentationBackground(_:)` modifier differs from the [`background(_:ignore
 
 ## Parameters
 
-- `style`: The shape style to use as the presentation   background.
+- `style`: The shape style to use as the presentation background.
 
 ## See Also
 

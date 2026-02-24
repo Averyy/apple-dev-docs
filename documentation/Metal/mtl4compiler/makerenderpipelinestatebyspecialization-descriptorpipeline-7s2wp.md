@@ -27,7 +27,7 @@ A fully-specialized pipeline state object upon success, otherwise this function 
 
 Metal specializes the pipeline state with new state values the descriptor provides, observing the following rules:
 
-- The compiler only updates properties that were originally specified as . It doesn’t modify other already-specialized properties
+- The compiler only updates properties that were originally specified as *unspecialized*. It doesn’t modify other already-specialized properties
 - The compiler sets to their default behavior any unspecialized properties that your passed-in descriptor doesn’t specialize
 
 Additionally, there are some cases where the Metal can’t specialize a pipeline:

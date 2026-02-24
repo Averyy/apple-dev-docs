@@ -22,7 +22,7 @@ func rangeView(of range: Range<IndexSet.Element>) -> IndexSet.RangeView
 
 ## Parameters
 
-- `range`: A subrange of   to view.
+- `range`: A subrange of `self` to view.
 
 ## See Also
 

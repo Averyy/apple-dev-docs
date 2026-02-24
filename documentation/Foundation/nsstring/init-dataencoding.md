@@ -26,8 +26,8 @@ An `NSString` object initialized by converting the bytes in `data` into UTF-16 c
 
 ## Parameters
 
-- `data`: An   object containing bytes in   and the default plain text format (that is, pure content with no attributes or other markups) for that encoding.
-- `encoding`: The encoding used by  . For possible values, see  .
+- `data`: An `NSData` object containing bytes in `encoding` and the default plain text format (that is, pure content with no attributes or other markups) for that encoding.
+- `encoding`: The encoding used by `data`. For possible values, see [`NSStringEncoding`](nsstringencoding.md).
 
 ## See Also
 

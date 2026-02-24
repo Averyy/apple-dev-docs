@@ -24,7 +24,7 @@ Use this method to remove all message handlers in the specified content world. M
 
 ## Parameters
 
-- `contentWorld`: The content world from which to remove the message handler. For more information about content worlds, see  .
+- `contentWorld`: The content world from which to remove the message handler. For more information about content worlds, see [`WKContentWorld`](wkcontentworld.md).
 
 ## See Also
 

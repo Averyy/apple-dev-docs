@@ -32,8 +32,8 @@ This method may be called repeatedly with strings representing different subrang
 - `stringToCheck`: String to analyze.
 - `offset`: The offset in the string.
 - `checkingTypes`: The text checking types to perform.
-- `options`: A dictionary defining the actions to be taken while checking this string. See Constants in   for the possible keys.
-- `orthography`: The identified orthography of  . See   for more information.
+- `options`: A dictionary defining the actions to be taken while checking this string. See Constants in [`NSSpellChecker`](https://developer.apple.com/documentation/AppKit/NSSpellChecker) for the possible keys.
+- `orthography`: The identified orthography of `stringToCheck`. See [`NSOrthography`](nsorthography.md) for more information.
 - `wordCount`: On output, returns by-reference the number of words from the beginning of the string object until the misspelled word (or the end of string).
 
 ## See Also

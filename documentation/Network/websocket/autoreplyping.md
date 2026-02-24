@@ -22,7 +22,7 @@ func autoReplyPing(_ reply: Bool) -> WebSocket
 
 ## Parameters
 
-- `reply`: If true, ping messages will   automatically be consumed by the connection instead of being   delivered to the . Defaults to false.
+- `reply`: If true, ping messages will automatically be consumed by the connection instead of being delivered to the . Defaults to false.
 
 
 ---

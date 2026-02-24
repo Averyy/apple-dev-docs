@@ -27,7 +27,7 @@ This method should be implemented by the app to handle requests to open new wind
 - `controller`: The web extension controller that is managing the extension.
 - `configuration`: The configuration specifying how the new window should be created.
 - `extensionContext`: The context in which the web extension is running.
-- `completionHandler`: A block to be called with the newly created window or   if the window wasn’t created. An error should be provided if any errors occurred.
+- `completionHandler`: A block to be called with the newly created window or `nil` if the window wasn’t created. An error should be provided if any errors occurred.
 
 
 ---

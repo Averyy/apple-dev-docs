@@ -25,7 +25,7 @@ An initialized polyline renderer object.
 
 ## Parameters
 
-- `polyline`: The polyline overlay containing information about the area the renderer draws. This object requires at least two points defining the line segment to draw. This parameter can’t be  .
+- `polyline`: The polyline overlay containing information about the area the renderer draws. This object requires at least two points defining the line segment to draw. This parameter can’t be `nil`.
 
 
 ---

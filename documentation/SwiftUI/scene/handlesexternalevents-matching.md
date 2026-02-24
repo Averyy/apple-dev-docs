@@ -34,7 +34,7 @@ When your app receives an external event like a user activity or a URL, SwiftUI 
 
 Make sure that at least one of these rules succeeds in your app for all events that your app claims to handle. Also, make sure that the scene that receives an event actually handles it. For example, be sure that a scene that receives user activities handles them with an appropriate [`onContinueUserActivity(_:perform:)`](view/oncontinueuseractivity(_:perform:).md) view modifier.
 
-Don’t confuse the `handlesExternalEvents(matching:)` scene modifier with the [`handlesExternalEvents(preferring:allowing:)`](view/handlesexternalevents(preferring:allowing:).md)  modifier. You use the scene modifier to help SwiftUI choose a new scene to open when no open scene handles an external event, whereas you use the view modifier to indicate that an open scene can or prefers to handle certain events.
+Don’t confuse the `handlesExternalEvents(matching:)` scene modifier with the [`handlesExternalEvents(preferring:allowing:)`](view/handlesexternalevents(preferring:allowing:).md) *view* modifier. You use the scene modifier to help SwiftUI choose a new scene to open when no open scene handles an external event, whereas you use the view modifier to indicate that an open scene can or prefers to handle certain events.
 
 ##### Matching an Event
 
@@ -71,7 +71,7 @@ The app uses the `handlesExternalEvents(matching:)` modifier on the second scene
 
 ## Parameters
 
-- `conditions`: A set of strings that SwiftUI compares against   the incoming user activity or URL to see if SwiftUI   can open a new scene instance to handle the external event.
+- `conditions`: A set of strings that SwiftUI compares against the incoming user activity or URL to see if SwiftUI can open a new scene instance to handle the external event.
 
 ## See Also
 

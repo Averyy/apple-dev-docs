@@ -24,7 +24,7 @@ A new trait collection consisting of traits merged from a specified `traitCollec
 
 #### Discussion
 
-This method takes an array of one or more trait collections and merges them to create a new trait collection. If the array contains more than one element, the highest-indexed element that contains a given trait is used for that trait. For example, the following code snippet creates a trait collection with a  horizontal size class, because the second element in the array overrides the first for that trait:
+This method takes an array of one or more trait collections and merges them to create a new trait collection. If the array contains more than one element, the highest-indexed element that contains a given trait is used for that trait. For example, the following code snippet creates a trait collection with a *compact* horizontal size class, because the second element in the array overrides the first for that trait:
 
 ```objc
 UITraitCollection *newHorizontalSizeClass1 = [UITraitCollection traitCollectionWithHorizontalSizeClass: UIUserInterfaceSizeClassRegular];
@@ -35,7 +35,7 @@ UITraitCollection *combinedTraits = [UITraitCollection traitCollectionWithTraits
 
 ## Parameters
 
-- `traitCollections`: An array of   objects.
+- `traitCollections`: An array of [`UITraitCollection`](uitraitcollection.md) objects.
 
 ## See Also
 

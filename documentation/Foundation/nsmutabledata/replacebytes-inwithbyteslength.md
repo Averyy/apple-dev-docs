@@ -26,9 +26,9 @@ If the length of `range` is not equal to `replacementLength`, the receiver is re
 
 ## Parameters
 
-- `range`: The range within the receiver’s contents to replace with  . The range must not exceed the bounds of the receiver.
+- `range`: The range within the receiver’s contents to replace with `bytes`. The range must not exceed the bounds of the receiver.
 - `replacementBytes`: The data to insert into the receiver’s contents.
-- `replacementLength`: The number of bytes to take from  .
+- `replacementLength`: The number of bytes to take from `replacementBytes`.
 
 ## See Also
 

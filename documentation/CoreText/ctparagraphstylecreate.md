@@ -30,8 +30,8 @@ Using this function is the easiest and most efficient way to create a paragraph 
 
 ## Parameters
 
-- `settings`: The settings with which to preload the paragraph style. If you want to specify the default set of settings, set this parameter to  .
-- `settingCount`: The number of settings that you have specified in the   parameter. This must be greater than or equal to  .
+- `settings`: The settings with which to preload the paragraph style. If you want to specify the default set of settings, set this parameter to `NULL`.
+- `settingCount`: The number of settings that you have specified in the `settings` parameter. This must be greater than or equal to `0`.
 
 ## See Also
 

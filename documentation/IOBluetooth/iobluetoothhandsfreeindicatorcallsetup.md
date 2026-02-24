@@ -18,6 +18,11 @@ let IOBluetoothHandsFreeIndicatorCallSetup: String
 
 The possible values for the call setup indicator are:
 
+- **`0`**: No calls are being set up.
+- **`1`**: An incoming call is being set up.
+- **`2`**: An outgoing call is being set up.
+- **`3`**: The party receiving the call is being notified.
+
 ## See Also
 
 - [let IOBluetoothHandsFreeIndicatorCall: String](iobluetoothhandsfreeindicatorcall.md)

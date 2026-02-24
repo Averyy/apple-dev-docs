@@ -23,7 +23,7 @@ init?(url: URL, resolvingAgainstBaseURL resolve: Bool)
 ## Parameters
 
 - `url`: The URL string to parse.
-- `resolve`: Controls whether the initializer resolves the URL against its base URL before parsing. If   is a relative URL, setting   to   creates components using the   property.
+- `resolve`: Controls whether the initializer resolves the URL against its base URL before parsing. If `url` is a relative URL, setting `resolve` to `true` creates components using the [`absoluteURL`](url/absoluteurl.md) property.
 
 ## See Also
 

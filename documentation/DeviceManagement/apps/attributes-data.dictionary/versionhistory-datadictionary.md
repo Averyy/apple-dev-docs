@@ -13,6 +13,13 @@
 object Apps.Attributes.VersionHistory
 ```
 
+## Properties
+
+- `releaseDate` (string)
+- `releaseNotes` (string)
+- `releaseTimestamp` (string)
+- `versionDisplay` (string)
+
 ## See Also
 
 - [object Apps.Attributes.ContentRatingsBySystem](apps/attributes-data.dictionary/contentratingsbysystem-data.dictionary.md)

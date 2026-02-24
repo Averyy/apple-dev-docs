@@ -28,10 +28,10 @@ For more information on supported specifiers, see the relevant section in [`Stri
 
 ## Parameters
 
-- `theString`: The string to which the formatted characters from   are appended. If this value is not a CFMutableString object, an assertion is raised.
+- `theString`: The string to which the formatted characters from `format` are appended. If this value is not a CFMutableString object, an assertion is raised.
 - `formatOptions`: A dictionary containing formatting options for the string (such as the thousand-separator character, which is dependent on locale). Currently, these options are an unimplemented feature.
-- `format`: A formatted string with  -style specifiers.
-- `arguments`: List of values to be inserted in  .
+- `format`: A formatted string with `printf`-style specifiers.
+- `arguments`: List of values to be inserted in `format`.
 
 ## See Also
 

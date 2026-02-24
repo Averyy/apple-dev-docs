@@ -30,9 +30,9 @@ When you want to parse the contents of the PDF stream, call the function [`CGPDF
 
 ## Parameters
 
-- `cs`: A PDF content stream object. (See  .)
+- `cs`: A PDF content stream object. (See [`CGPDFContentStream`](cgpdfcontentstream.md).)
 - `table`: A table of callbacks for the PDF operators you want to handle.
-- `info`: A pointer to data you want passed to your callback function. (See  .)
+- `info`: A pointer to data you want passed to your callback function. (See [`CGPDFOperatorTable`](cgpdfoperatortable.md).)
 
 
 ---

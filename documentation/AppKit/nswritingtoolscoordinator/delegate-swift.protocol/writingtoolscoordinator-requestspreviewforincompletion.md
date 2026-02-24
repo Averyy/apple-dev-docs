@@ -25,10 +25,10 @@ For a single animation type, the system calls the [`writingToolsCoordinator(_:pr
 
 ## Parameters
 
-- `writingToolsCoordinator`: The coordinator object notifying you that   animations are about to begin.
+- `writingToolsCoordinator`: The coordinator object notifying you that animations are about to begin.
 - `rect`: The portion of your view that contains the requested text. This rectangle is in the view’s coordinate system.
-- `context`: The context object that contains the original text. Use this   object to fetch the current text, and to match that text to your   underlying text storage.
-- `completion`: A completion handler to execute when you are done. The   handler has no return value and takes an   object   as a parameter. You must call this handler at some point during your implementation.
+- `context`: The context object that contains the original text. Use this object to fetch the current text, and to match that text to your underlying text storage.
+- `completion`: A completion handler to execute when you are done. The handler has no return value and takes an [`NSTextPreview`](nstextpreview.md) object as a parameter. You must call this handler at some point during your implementation.
 
 ## See Also
 

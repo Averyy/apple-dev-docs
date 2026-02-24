@@ -27,7 +27,7 @@ An initialized `AVSampleBufferGenerator` instance.
 ## Parameters
 
 - `asset`: The asset.
-- `timebase`: If  , requests will be handled synchronously.
+- `timebase`: If `NULL`, requests will be handled synchronously.
 
 
 ---

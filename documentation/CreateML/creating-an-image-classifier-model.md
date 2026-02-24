@@ -6,7 +6,7 @@ Train a machine learning model to classify images, and add it to your Core ML ap
 
 #### Overview
 
-An  is a machine learning model that recognizes images. When you give it an image, it responds with a category label for that image.
+An *image classifier* is a machine learning model that recognizes images. When you give it an image, it responds with a category label for that image.
 
 ![A flow diagram showing how an image classifier predicts the label, Giraffe, from an image of a giraffe.](https://docs-assets.developer.apple.com/published/7c6d96174f8701c5d2402beed64563cc/creating-an-image-classifier-model-1%402x.png)
 
@@ -64,6 +64,10 @@ If applicable, drag the folder with your testing dataset into the Testing Data w
 
 You can adjust the following parameters before training your image classifier:
 
+- **Feature Extractor**: A *Feature Extractor* is the underlying base model that extracts image features for image classifier training session. There are 2 options for feature extraction. *Image Feature Print V2* has a smaller output embedding size than *Image Feature Print V1*. This leads to faster training times, reduces the memory needed to store the extracted features, and can also increase accuracy. On the other hand, *Image Feature Print V1* is compatible with older operating systems, including macOS 10.14 or later and iOS 12 or later. *Image Feature Print V2* is compatible with macOS 14 or later and iOS 17 or later.
+- **Iterations**: If you know how many training iterations you’d like use in your training session, change the default value. Include enough iterations for an accurate model; stopping too early may result in a model that’s less accurate.
+- **Augmentations**: You can also turn on any or all of the image augmentations. Each augmentation copies the dataset’s images and applies a transform or filter that effectively gives the dataset more variety without gathering additional images.
+
 ![A screenshot of the project window in the Settings tab that highlights the Parameters section. The Feature Extractor is set to Image Feature Print V2. The Iterations parameter setting is set to 50 and the Augmentations setting has 6 checkboxes named, Add Noise, Blur, Crop, Expose, Flip, and Rotate.](https://docs-assets.developer.apple.com/published/7df3c337506bafe1f56fd2a6671f3e5d/creating-an-image-classifier-model-8%402x.png)
 
 ##### Train the Image Classifier
@@ -84,7 +88,7 @@ When Create ML finishes training the model, it tests the model using the testing
 
 ![A screenshot of the project window in the Evaluation tab showing a table of the testing dataset with columns named, Class, Item Count, Precision, and Recall. The table is sorted by Precision in descending order, and the first row has the values, Giraffe, 9, 100%, and 100%, respectively.](https://docs-assets.developer.apple.com/published/97c4586d7483e9b6020cfb1707ab575a/creating-an-image-classifier-model-10%402x.png)
 
- is the number of true positives divided by the sum of true positives and false positives.  is the number of true positives divided by the sum of true positives and false negatives.
+*Precision* is the number of true positives divided by the sum of true positives and false positives. *Recall* is the number of true positives divided by the sum of true positives and false negatives.
 
 If the evaluation performance isn’t good enough, you may need to train a new model with a dataset that has more variety. For example, you can gather additional images from new angles or in new environments, or add one or more image augmentation options. For details about evaluating a model, as well as strategies for improving the model’s performance, see [`Improving Your Model’s Accuracy`](improving-your-model-s-accuracy.md).
 

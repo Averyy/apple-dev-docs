@@ -15,7 +15,12 @@ typealias ALAssetsGroupEnumerationResultsBlock = (ALAsset?, Int, UnsafeMutablePo
 
 The block takes the following arguments:
 
+- **result**: An asset that matches the filter set by the caller.
+- **index**: The index of the asset in the range being returned.
+
 If no asset is found, index is set to `NSNotFound`.
+
+- **stop**: A pointer to a Boolean value that indicates whether the enumeration should stop. Set the referenced value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop the enumeration.
 
 The value is set to [`true`](https://developer.apple.com/documentation/Swift/true) if no asset is found.
 

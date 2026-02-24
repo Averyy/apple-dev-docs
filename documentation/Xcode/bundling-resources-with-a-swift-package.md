@@ -15,7 +15,7 @@ Similar to source code, Xcode scopes resources to a target. Place resource files
 To add resources to a Swift package, do any of the following:
 
 - Drag them into the Project navigator in Xcode.
-- From the File menu in Xcode, choose Add Files to .
+- From the File menu in Xcode, choose Add Files to *[packageName]*.
 - Use Finder or the Terminal app.
 
 When you add a resource to your Swift package, Xcode detects common resource types for Apple platforms and treats them as a resource automatically. For example, you don’t need to make changes to your package manifest for the following resources:
@@ -42,6 +42,9 @@ targets: [
 ```
 
 Note how the example code above uses the [`process(_:localization:)`](https://developer.apple.com/documentation/PackageDescription/Resource/process(_:localization:)) function. When you explicitly declare a resource, you must choose one of these rules to determine how Xcode treats the resource file:
+
+- **Process rule**: For most use cases, use [`process(_:localization:)`](https://developer.apple.com/documentation/PackageDescription/Resource/process(_:localization:)) to apply this rule and have Xcode process the resource according to the platform you’re building the package for. For example, Xcode may optimize image files for a platform that supports such optimizations. If you apply the process rule to a directory’s path, Xcode applies the rule recursively to the directory’s contents. If no special processing is available for a resource, Xcode copies the resource to the resource bundle’s top-level directory.
+- **Copy rule**: Some Swift packages may require a resource file to remain untouched or to retain a certain directory structure for resources. Use the [`copy(_:)`](https://developer.apple.com/documentation/PackageDescription/Resource/copy(_:)) function to apply this rule and have Xcode copy the resource as is to the top level of the resource bundle. If you pass a directory path to the copy rule, Xcode retains the directory’s structure.
 
 If a file resides inside a target’s folder and you don’t want it to be a package resource, pass it to the target initializer’s `exclude` parameter. The next example assumes that `instructions.md` is a Markdown file that contains documentation, resides at `Sources/MyLibrary` and shouldn’t be part of the package’s resource bundle. This code shows how you can exclude the file from the target by adding it to the list of excluded files:
 

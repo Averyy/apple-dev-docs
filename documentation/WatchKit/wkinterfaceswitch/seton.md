@@ -20,7 +20,7 @@ Use this method to set the value of a switch. If you want to know the value of a
 
 ## Parameters
 
-- `on`: A Boolean value indicating whether the switch should be set to the On or Off state. Specify   to set the switch to the On state.
+- `on`: A Boolean value indicating whether the switch should be set to the On or Off state. Specify [`true`](https://developer.apple.com/documentation/Swift/true) to set the switch to the On state.
 
 ## See Also
 

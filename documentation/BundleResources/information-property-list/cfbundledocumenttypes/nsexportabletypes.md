@@ -13,6 +13,10 @@ The file types that this document can be exported to.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [CFBundleTypeIconFile](information-property-list/cfbundledocumenttypes/cfbundletypeiconfile.md)

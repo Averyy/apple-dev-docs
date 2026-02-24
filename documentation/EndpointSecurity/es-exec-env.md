@@ -27,7 +27,7 @@ This function doesn’t allocate memory for the returned token; it points to a s
 ## Parameters
 
 - `event`: The process execution event.
-- `index`: The zero-based index of the argument to return. Attempting to read an out-of-bounds index — where   — results in undefined behavior.
+- `index`: The zero-based index of the argument to return. Attempting to read an out-of-bounds index — where `index >= es_exec_arg_count()` — results in undefined behavior.
 
 ## See Also
 

@@ -19,7 +19,7 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
 ###### Known Issues
 
 - Using the `-stack_size` linker flag for an app bundle target may fail. Set `ENABLE_DEBUG_DYLIB=NO` as a workaround.  (135877478) (FB15112909)
-- Downloads of the Predictive Code Completion model may look like they have failed right after they have almost reached 100% completion.   (144245083)  Retry enabling Predictive Code Completion from Xcode Settings or restart your computer.
+- Downloads of the Predictive Code Completion model may look like they have failed right after they have almost reached 100% completion.   (144245083) **Workaround:** Retry enabling Predictive Code Completion from Xcode Settings or restart your computer.
 
 ##### App Intents
 
@@ -125,7 +125,7 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
 
 ###### Known Issues
 
-- Searching in the documentation viewer may start an indexing process which makes no progress. This may result in missing search results and increased CPU usage.  (147380194) (FB16926964)  Disable documentation indexing by setting the following preference: ```None
+- Searching in the documentation viewer may start an indexing process which makes no progress. This may result in missing search results and increased CPU usage.  (147380194) (FB16926964) **Workaround:** Disable documentation indexing by setting the following preference: ```None
  defaults write com.apple.dt.Xcode IDEDocumentationSpotlightIndexDisable -bool YES
 ```
 
@@ -277,7 +277,7 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
 
 ###### Known Issues
 
-- `DistributedActorSystem`, `DistributedTargetInvocationDecoder`, `DistributedTargetInvocationEncoder`, and `DistributedTargetInvocationResultHandler` may cause a compiler crash when conforming type is a class and is built in release mode.   (146101172)  Change conforming type to `struct` or make remoteCall, onReturn and other methods which use the SerializationRerquirement constraint `final`.
+- `DistributedActorSystem`, `DistributedTargetInvocationDecoder`, `DistributedTargetInvocationEncoder`, and `DistributedTargetInvocationResultHandler` may cause a compiler crash when conforming type is a class and is built in release mode.   (146101172) **Workaround:** Change conforming type to `struct` or make remoteCall, onReturn and other methods which use the SerializationRerquirement constraint `final`.
 
 ##### Swiftc++ Interoperability
 
@@ -360,7 +360,7 @@ Xcode 16.3 includes SDKs for iOS 18.4, iPadOS 18.4, tvOS 18.4, watchOS 11.4, mac
 ###### Known Issues
 
 - UI tests and unit testing using `USES_XCTRUNNER=YES` may see a UIKit warning about adopting scenes. This warning can be ignored.  (142567138)
-- Test action may stall when running with debug executable and parallel testing enabled against the Mac run destinations.  (145872120)  Disable the Debug Executable in the Test Scheme.
+- Test action may stall when running with debug executable and parallel testing enabled against the Mac run destinations.  (145872120) **Workaround:** Disable the Debug Executable in the Test Scheme.
 
 ##### Xcode Cloud
 

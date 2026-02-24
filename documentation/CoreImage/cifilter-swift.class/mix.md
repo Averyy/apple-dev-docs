@@ -29,6 +29,10 @@ This method applies the mix filter to an image. The effect uses the amount prope
 
 The mix filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image representing the background image with the type [`CIImage`](ciimage.md).
+- **`amount`**: A `float` representing the strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that combines the input and background images to create one image with both images visible:
 
 ```swift

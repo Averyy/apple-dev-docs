@@ -23,6 +23,11 @@ object OSUpdateStatusCommand
 - [object OSUpdateStatusCommand.Command](osupdatestatuscommand/command-data.dictionary.md)
   The command to get the status of operating-system updates on a device.
 
+## Properties
+
+- `Command` (OSUpdateStatusCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object OSUpdateStatusResponse](osupdatestatusresponse.md)

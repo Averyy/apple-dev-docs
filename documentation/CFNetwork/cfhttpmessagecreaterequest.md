@@ -31,9 +31,9 @@ If you are using a `CFReadStream` object to send the message, call [`CFReadStrea
 
 ## Parameters
 
-- `requestMethod`: The request method for the request. Use any of the request methods allowed by the HTTP version specified by  .
+- `requestMethod`: The request method for the request. Use any of the request methods allowed by the HTTP version specified by `httpVersion`.
 - `url`: The URL to which the request will be sent.
-- `httpVersion`: The HTTP version for this message. Pass   or  .
+- `httpVersion`: The HTTP version for this message. Pass `kCFHTTPVersion1_0` or `kCFHTTPVersion1_1`.
 
 ## See Also
 

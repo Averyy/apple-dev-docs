@@ -32,13 +32,13 @@ Extract the first `nz` values of the row beginning at `A[row,column_start]` for 
 
 ## Parameters
 
-- `A`: The sparse matrix,  , which must have been created with  .   is returned if not met.
+- `A`: The sparse matrix, *A*, which must have been created with [`sparse_matrix_create_float(_:_:)`](sparse_matrix_create_float(_:_:).md). [`SPARSE_ILLEGAL_PARAMETER`](sparse_illegal_parameter.md) is returned if not met.
 - `row`: The row for value extraction.
 - `column_start`: The index of the column to start extraction.
 - `column_end`: On return, holds the column index of the next nonzero value.
-- `nz`: The number of values to extract from  .  Each of   and   are of size  .
-- `val`: Pointer to array to hold the values extracted from the sparse matrix.  The value is extracted from the location specified by the corresponding indices of   and  .  Must be of size   elements.  If less than   nonzero values are found, then the last   elements of val are untouched.
-- `jndx`: An array to hold the extracted column indices that correspond to the values in  . Note that these indices are relative to the matrix row and not the starting column index specified by  .  Returned indices are 0 based (first element of pointer is  ).  Must be of size   elements.
+- `nz`: The number of values to extract from `A`.  Each of `jndx` and `val` are of size `nz`.
+- `val`: Pointer to array to hold the values extracted from the sparse matrix.  The value is extracted from the location specified by the corresponding indices of `row` and `jndx`.  Must be of size `nz` elements.  If less than `nz` nonzero values are found, then the last `nz - actual_nonzero_count` elements of val are untouched.
+- `jndx`: An array to hold the extracted column indices that correspond to the values in `val`. Note that these indices are relative to the matrix row and not the starting column index specified by `column_start`.  Returned indices are 0 based (first element of pointer is `ptr[0]`).  Must be of size `nz` elements.
 
 ## See Also
 

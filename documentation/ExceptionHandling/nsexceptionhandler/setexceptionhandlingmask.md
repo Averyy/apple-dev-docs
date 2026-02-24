@@ -17,7 +17,7 @@ func setExceptionHandlingMask(_ aMask: Int)
 
 ## Parameters
 
-- `aMask`: A bit mask composed of one or more constants specifying the types of exceptions monitored   and whether they are handled or logged (or both). You specify multiple constants   by performing a bitwise-OR operation. See    for information about the constants.
+- `aMask`: A bit mask composed of one or more constants specifying the types of exceptions monitored and whether they are handled or logged (or both). You specify multiple constants by performing a bitwise-OR operation. See [`Logging and Handling Constants`](logging-and-handling-constants.md) for information about the constants.
 
 ## See Also
 

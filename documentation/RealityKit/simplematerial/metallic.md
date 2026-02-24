@@ -23,6 +23,9 @@ var metallic: MaterialScalarParameter { get set }
 
 This property defines whether a material is dielectric (`0.0`) or a metallic (`1.0`). Although this property can be set to any value between `0` and `1`, to create a realistic material, set it to either `0` or `1`.).
 
+- **Dielectric materials**: These are materials that simulate real-world materials that are poor conductors. In these materials, light travels into the surface of the material and the color is mostly controlled by the color of the sub-surface. Typical examples of dielectric materaisl include organic materials, plastics, and industrial minerals such as sand, limestone,  marble, clay and salt.
+- **Metallic**: A metallic (or *conductive*) material reflects light differently than dielectric ones. The overall color is caused by an immediate re-emission of the light from the entity’s surface. Typical examples of metallic materials include aluminum, chassis metal, chromium, copper, gold, silver, and titanium
+
 ## See Also
 
 - [var color: SimpleMaterial.BaseColor](simplematerial/color.md)

@@ -24,7 +24,7 @@ static var search: ContentUnavailableView<SearchUnavailableContent.Label, Search
 
 A `ContentUnavailableView` initialized with this static member is expected to be contained within a searchable view hierarchy. Such a configuration enables the search query to be parsed into the view’s description.
 
-For example, consider the usage of this static member in :
+For example, consider the usage of this static member in *ContactsListView*:
 
 ```swift
 struct ContactsListView: View {

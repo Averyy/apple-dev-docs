@@ -26,8 +26,8 @@ This method constructs a curve starting from the path’s current point and endi
 
 ## Parameters
 
-- `control1`: The first control point of the curve, in user   space coordinates.
-- `control2`: The second control point of the curve, in user   space coordinates.
+- `control1`: The first control point of the curve, in user space coordinates.
+- `control2`: The second control point of the curve, in user space coordinates.
 
 ## See Also
 

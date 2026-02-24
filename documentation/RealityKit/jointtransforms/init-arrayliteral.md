@@ -21,7 +21,7 @@ init(arrayLiteral elements: Transform...)
 
 ## Parameters
 
-- `elements`: A comma-delimited list of transforms, which define position,   rotation, and scale data for the joints.
+- `elements`: A comma-delimited list of transforms, which define position, rotation, and scale data for the joints.
 
 ## See Also
 

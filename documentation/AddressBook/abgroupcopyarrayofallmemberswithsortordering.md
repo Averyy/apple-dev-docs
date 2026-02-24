@@ -23,7 +23,7 @@ An array containing the records in `group` using `sortOrdering`.
 ## Parameters
 
 - `group`: The group whose records are being returned.
-- `sortOrdering`: The order in which you want the returned records. See  .
+- `sortOrdering`: The order in which you want the returned records. See [`Sort Order`](1619730-sort-order.md).
 
 ## See Also
 

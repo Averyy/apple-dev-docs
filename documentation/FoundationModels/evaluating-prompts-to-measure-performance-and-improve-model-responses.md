@@ -38,6 +38,10 @@ Consider a recipe recommendation feature that starts with the following informal
 
 These goals are a good start, but they’re too vague to measure. Evaluation requires translating the goals into specific, testable criteria:
 
+- **Dietary compliance**: 100 percent of the recommended recipes avoid all ingredients the person marked as dietary restrictions. This is a pass or fail measurement with zero tolerance for violations.
+- **Skill level alignment**: The complexity rating of recipes the model generates deviates by no more than `0.5` points on a one-to-three point scale from the person’s stated skill level. This is a numeric measurement with a defined threshold.
+- **Helpfulness**: 90 percent of recommendations receive positive ratings when evaluated against a standardized rubric that covers relevance, clarity, and actionability. This transforms subjective quality into a measurable percentage.
+
 This transformation from something that seems good to something that meets defined criteria is what makes for a useful evaluation. You replace personal judgment with objective measurements that you can track, automate, and compare over time.
 
 ##### Examine the Anatomy of an Evaluation
@@ -67,6 +71,11 @@ When you run an evaluation, each test input flows through your feature’s promp
 ##### Understand Measurement Approaches
 
 Different quality criteria require different measurement approaches. Knowing which approach to use helps you build comprehensive evaluations.
+
+- **Rule-based measurement**: Applies fixed, deterministic logic that checks objective properties, like answering whether the output contains forbidden words or ingredients. This measurement works well when you write explicit logic to verify correctness.
+- **Comparison to ground truth**: Measures how closely the output matches a known correct answer. For some tasks, prepare example outputs that represent exactly what you want the model to generate. For example, you can have a verified answer for factual questions. A measurement technique, like string similarity, helps quantify how close the model’s output comes to the ideal answer.
+- **Semantic similarity**: Evaluates the meaning rather than the exact wording. By converting text to embeddings — mathematical representations of meaning — you can measure how conceptually similar outputs are, even when they don’t share the exact phrases. This approach is particularly valuable when there are many valid ways to express the same information.
+- **Model-based judgment**: Uses another model to evaluate outputs. Just as humans can judge whether text is *helpful* or *creative*, you can prompt models to make similar judgments. This approach works well for nuanced criteria like tone, creativity, or adherence to complex guidelines. However, it’s important to verify the judging model’s assessment align with human judgment before relying on its scores.
 
 Most robust evaluations combine multiple approaches. For example, measuring the effectiveness of a recipe recommendation might use rule-based checking for dietary compliance, comparison to ground truth for ingredient accuracy, and model-based judgment to rate the difficulty.
 
@@ -102,13 +111,13 @@ When a test fails, look for patterns to determine whether the failures relate to
 
 Based on your analysis, you may need to refine your prompt, adjust the model settings, or expand your test coverage. When you make these changes, immediately re-run the full evaluation suite to verify the change worked and didn’t introduce regressions elsewhere in your app.
 
-This iterative refinement process, often called , systematically improves quality. Small, measured changes accumulate into significant improvements, with evaluation providing continuous feedback about whether you’re moving in the right direction.
+This iterative refinement process, often called *hill climbing*, systematically improves quality. Small, measured changes accumulate into significant improvements, with evaluation providing continuous feedback about whether you’re moving in the right direction.
 
 ##### Prevent Regressions
 
 One of evaluation’s most valuable benefits is regression prevention. As your feature evolves, evaluation verifies that improvements in one area don’t silently break functionality elsewhere.
 
-For example, you might change a prompt in your recipe app to generate more creative suggestions. When you add  to your instructions, it’s not clear whether the change works. Without evaluation, you might manually check a few examples that show more interesting recipes and ship the change. But with evaluations, you immediately see the full impact across your app. You might see that creative scores improved, but dietary compliance dropped because the unusual ingredient combinations included dietary restrictions. Or maybe beginner-appropriate recipes became too complex.
+For example, you might change a prompt in your recipe app to generate more creative suggestions. When you add *creative and surprising* to your instructions, it’s not clear whether the change works. Without evaluation, you might manually check a few examples that show more interesting recipes and ship the change. But with evaluations, you immediately see the full impact across your app. You might see that creative scores improved, but dietary compliance dropped because the unusual ingredient combinations included dietary restrictions. Or maybe beginner-appropriate recipes became too complex.
 
 Your evaluation suite catches these trade-offs and lets you refine the approach before it reaches the people who use your app. Evaluations become more important over time as prompts naturally accumulate complexity and with the model receives updates. Each modification to a prompt carries risk, so introducing automated evaluation provides a safety net that catches issues immediately.
 

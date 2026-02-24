@@ -27,8 +27,8 @@ An array of metadata items that match the specified key and key space.
 ## Parameters
 
 - `metadataItems`: The metadata items to filter.
-- `key`: The key of the metadata items to retrieve, or   if you don’t want to filter by key.
-- `keySpace`: The key space of the metadata items to retrieve, or   if you don’t want to filter by key space.
+- `key`: The key of the metadata items to retrieve, or `nil` if you don’t want to filter by key.
+- `keySpace`: The key space of the metadata items to retrieve, or `nil` if you don’t want to filter by key space.
 
 ## See Also
 

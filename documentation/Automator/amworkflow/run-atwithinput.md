@@ -28,7 +28,7 @@ The workflow is run in a separate process so that any actions it contains are ex
 ## Parameters
 
 - `fileURL`: A URL that specifies the location of a workflow file.
-- `input`: The input for the first action in the workflow. Pass   if the first action doesn’t need input.
+- `input`: The input for the first action in the workflow. Pass `nil` if the first action doesn’t need input.
 
 
 ---

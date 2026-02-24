@@ -26,8 +26,8 @@ A new CFData object containing a bitmap representation of `theSet`. Ownership fo
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `theSet`: The set from which to create a bitmap representation. Refer to the comments for   for the detailed discussion of the bitmap representation format.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `theSet`: The set from which to create a bitmap representation. Refer to the comments for [`CFCharacterSetCreateWithBitmapRepresentation(_:_:)`](cfcharactersetcreatewithbitmaprepresentation(_:_:).md) for the detailed discussion of the bitmap representation format.
 
 ## See Also
 

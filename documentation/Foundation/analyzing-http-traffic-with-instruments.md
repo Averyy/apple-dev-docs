@@ -45,7 +45,7 @@ session.sessionDescription = "Main Session"
 
 ##### View Tasks and Transactions
 
-There are times when completing a [`URLSession`](urlsession.md) task requires several rounds of requests and responses. Each pair of requests and responses is a .
+There are times when completing a [`URLSession`](urlsession.md) task requires several rounds of requests and responses. Each pair of requests and responses is a *transaction*.
 
 Domain tracks provide an increased level of detail. In addition to information about the task, they also display the underlying transactions and transaction states. Here’s the dogs.example domain track showing a task with two transactions.
 

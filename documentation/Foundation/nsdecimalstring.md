@@ -23,7 +23,7 @@ func NSDecimalString(_ dcm: UnsafePointer<Decimal>, _ locale: Any?) -> String
 ## Parameters
 
 - `dcm`: The decimal value to represent.
-- `locale`: Either an instance of   or a dictionary with a string value corresponding to the   key.
+- `locale`: Either an instance of [`NSLocale`](nslocale.md) or a dictionary with a string value corresponding to the [`decimalSeparator`](nslocale/key/decimalseparator.md) key.
 
 
 ---

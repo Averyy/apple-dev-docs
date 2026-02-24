@@ -26,7 +26,7 @@ Callers should wait until the `completionHandler` is executed before issuing ano
 ## Parameters
 
 - `data`: The data object whose content will be written.
-- `completion`: The completion handler to be invoked when the data content has been written or an error has occurred.   If   is  , the write succeeded and the caller can write more data.
+- `completion`: The completion handler to be invoked when the data content has been written or an error has occurred. If `error` is `nil`, the write succeeded and the caller can write more data.
 
 ## See Also
 

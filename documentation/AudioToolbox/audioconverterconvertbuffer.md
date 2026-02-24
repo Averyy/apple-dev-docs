@@ -32,7 +32,7 @@ This function is for the special case of converting from one linear PCM format t
 - `inAudioConverter`: The audio converter to use for format conversion.
 - `inInputDataSize`: The size, in bytes, of the audio data input buffer.
 - `inInputData`: The audio data to convert.
-- `ioOutputDataSize`: On input, the size, in bytes, of the buffer available for the converted data. On output, the number of bytes written to the output buffer (pointed to by the   parameter).
+- `ioOutputDataSize`: On input, the size, in bytes, of the buffer available for the converted data. On output, the number of bytes written to the output buffer (pointed to by the `outOutputData` parameter).
 - `outOutputData`: On output, the converted audio data.
 
 ## See Also

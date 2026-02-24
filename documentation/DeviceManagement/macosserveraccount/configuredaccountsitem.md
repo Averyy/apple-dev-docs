@@ -15,6 +15,11 @@ An array of dictionaries containing configured account types and relevant settin
 object MacOSServerAccount.ConfiguredAccountsItem
 ```
 
+## Properties
+
+- `Port` (integer): Designates the port number to use when contacting the server. If no port number is specified, the default port is used.
+- `Type` (string) *(required)*: com.apple.osxserver.documents (the Documents account type).
+
 
 ---
 

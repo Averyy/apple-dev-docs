@@ -27,7 +27,7 @@ A modified representation of this view.
 
 ## Parameters
 
-- `keyPath`: The key path to associate   with when adding   it to the existing table of exported focus values.
+- `keyPath`: The key path to associate `value` with when adding it to the existing table of exported focus values.
 - `value`: The focus value to export.
 
 ## See Also

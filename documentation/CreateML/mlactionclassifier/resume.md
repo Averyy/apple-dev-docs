@@ -20,7 +20,7 @@ An [`MLJob`](mljob.md) that represents the action classifier training session.
 
 ## Parameters
 
-- `session`: An   instance that represents the training session.
+- `session`: An [`MLTrainingSession`](mltrainingsession.md) instance that represents the training session.
 
 ## See Also
 

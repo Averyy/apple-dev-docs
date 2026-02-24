@@ -38,7 +38,7 @@ NSDateComponents *comps = [gregorian components:unitFlags fromDate:date];
 
 ## Parameters
 
-- `unitFlags`: The components into which to decompose  .
+- `unitFlags`: The components into which to decompose `date`.
 - `date`: The date for which to perform the calculation.
 
 ## See Also

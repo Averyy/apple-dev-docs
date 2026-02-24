@@ -21,7 +21,7 @@ The current flags of the specified event source. For more information, see  [`CG
 
 ## Parameters
 
-- `stateID`: The source state to access. Pass one of the constants listed in  .
+- `stateID`: The source state to access. Pass one of the constants listed in [`CGEventSourceStateID`](cgeventsourcestateid.md).
 
 ## See Also
 

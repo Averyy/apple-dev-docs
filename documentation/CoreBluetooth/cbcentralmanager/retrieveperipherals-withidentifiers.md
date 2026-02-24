@@ -26,7 +26,7 @@ A list of peripherals that the central manager is able to match to the provided 
 
 ## Parameters
 
-- `identifiers`: A list of peripheral identifiers (represented by   objects) from which   objects can be retrieved.
+- `identifiers`: A list of peripheral identifiers (represented by [`NSUUID`](https://developer.apple.com/documentation/Foundation/NSUUID) objects) from which [`CBPeripheral`](cbperipheral.md) objects can be retrieved.
 
 ## See Also
 

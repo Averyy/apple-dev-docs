@@ -6,7 +6,7 @@ Make your iOS app launch experience faster and more responsive by customizing a 
 
 #### Overview
 
-Every iOS app must provide a , a screen that displays while your app launches. The launch screen appears instantly when your app starts up and is quickly replaced with the app’s first screen.
+Every iOS app must provide a *launch screen*, a screen that displays while your app launches. The launch screen appears instantly when your app starts up and is quickly replaced with the app’s first screen.
 
 You create a launch screen for your app in your Xcode project in one of two ways:
 

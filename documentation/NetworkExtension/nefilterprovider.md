@@ -22,13 +22,13 @@ class NEFilterProvider
 
 A Network Content Filter is made up of two Filter Provider extensions:
 
-The  examines network content as it passes through the network stack on the device and decides if the network content should be blocked or allowed to pass on to its final destination.
+The **Filter Data Provider extension** examines network content as it passes through the network stack on the device and decides if the network content should be blocked or allowed to pass on to its final destination.
 
 Because the Filter Data Provider extension has access to all of the network content flowing through the device, it runs in a very restrictive sandbox. The sandbox prevents the Filter Data Provider extension from moving network content outside of its address space by blocking all network access, IPC, and disk write operations.
 
 The Filter Data Provider extension is implemented by creating a custom subclass of the [`NEFilterDataProvider`](nefilterdataprovider.md) class.
 
-The  is responsible for feeding information to the Filter Data Provider extension so that the Filter Data Provider extension can do its job.
+The **Filter Control Provider extension** is responsible for feeding information to the Filter Data Provider extension so that the Filter Data Provider extension can do its job.
 
 For example, the Filter Control Provider extension can be notified by the Filter Data Provider extension that it does not have enough information to make a decision about a particular flow of network content. The Filter Control Provider extension can then download more filtering rules from a server and write the rules to a location where the Filter Data Provider can access them.
 

@@ -18,6 +18,10 @@ A dictionary that contains intersected restriction parameters.
 object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Intersection.ANY restriction name
 ```
 
+## Properties
+
+- `values` ([string]) *(required)*: The values of the restriction.
+
 
 ---
 

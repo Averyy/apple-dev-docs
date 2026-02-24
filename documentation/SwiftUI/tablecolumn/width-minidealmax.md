@@ -27,9 +27,9 @@ To create a fixed size column use [`width(_:)`](tablecolumn/width(_:).md) instea
 
 ## Parameters
 
-- `min`: The minimum width of a resizable column. If non- , the   value must be greater than or equal to  .
-- `ideal`: The ideal width of the column, used to determine the initial   width of the table column. The column always starts at least as   large as the set ideal size, but may be larger if table was sized   larger than the ideal of all of its columns.
-- `max`: The maximum width of a resizable column. If non- , the   value must be greater than  . Pass   doc://com.apple.documentation/documentation/CoreFoundation/CGFloat/1454161-infinity   to indicate unconstrained maximum width.
+- `min`: The minimum width of a resizable column. If non-`nil`, the value must be greater than or equal to `0`.
+- `ideal`: The ideal width of the column, used to determine the initial width of the table column. The column always starts at least as large as the set ideal size, but may be larger if table was sized larger than the ideal of all of its columns.
+- `max`: The maximum width of a resizable column. If non-`nil`, the value must be greater than `0`. Pass doc://com.apple.documentation/documentation/CoreFoundation/CGFloat/1454161-infinity to indicate unconstrained maximum width.
 
 ## See Also
 

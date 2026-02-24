@@ -33,8 +33,8 @@ If you encode commands with multiple resource state passes, synchronize the reso
 
 - `texture`: The sparse texture to update.
 - `mode`: A mode that indicates whether the method allocates or frees a memory tile in the texture.
-- `indirectBuffer`: A buffer that contains an array of mapping arguments that are instances of the   structure.
-- `indirectBufferOffset`: The offset, in bytes, where the first argument begins in the   parameter.
+- `indirectBuffer`: A buffer that contains an array of mapping arguments that are instances of the [`MTLMapIndirectArguments`](mtlmapindirectarguments.md) structure.
+- `indirectBufferOffset`: The offset, in bytes, where the first argument begins in the `indirectBuffer` parameter.
 
 
 ---

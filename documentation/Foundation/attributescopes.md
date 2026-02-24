@@ -58,7 +58,7 @@ attrStr.link = URL(string: "http://example.com")
 - [var translation: AttributeScopes.TranslationAttributes.Type](attributescopes/translation.md)
   Provides access to translation-related attributes.
 - [AttributeScopes.TranslationAttributes](attributescopes/translationattributes.md)
-  An attribute scope that defines translation-related attributes for attributed strings.
+  A scope that defines translation-specific properties on attributed strings.
 ### Structures
 - [AttributeScopes.AccessibilityAttributes](attributescopes/accessibilityattributes.md)
 - [AttributeScopes.CoreTextAttributes](attributescopes/coretextattributes.md)

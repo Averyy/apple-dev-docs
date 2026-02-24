@@ -20,7 +20,7 @@ The tab view item at the specified index.
 
 ## Parameters
 
-- `index`: The index at which to insert the tab view item. The   parameter is zero-based.
+- `index`: The index at which to insert the tab view item. The `index` parameter is zero-based.
 
 ## See Also
 

@@ -29,7 +29,7 @@ This is the designated initializer for `NSPortMessage`.
 
 - `sendPort`: The port on which the message is sent.
 - `replyPort`: The port on which replies to the message arrive.
-- `components`: The data to send in the message.   should contain only   and   objects, and the contents of the   objects should be in network byte order.
+- `components`: The data to send in the message. `components` should contain only `NSData` and `NSPort` objects, and the contents of the `NSData` objects should be in network byte order.
 
 ## See Also
 

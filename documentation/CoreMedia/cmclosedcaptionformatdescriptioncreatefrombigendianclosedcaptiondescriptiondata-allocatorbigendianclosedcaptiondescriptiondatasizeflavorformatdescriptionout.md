@@ -22,11 +22,11 @@ func CMClosedCaptionFormatDescriptionCreateFromBigEndianClosedCaptionDescription
 
 ## Parameters
 
-- `allocator`: Allocator to use for allocating the   object. May be  .
+- `allocator`: Allocator to use for allocating the `CMClosedCaptionFormatDescription` object. May be `NULL`.
 - `closedCaptionDescriptionData`: ClosedCaptionDescription data structure in big-endian byte ordering.
 - `size`: Size of ClosedCaptionDescription data structure.
-- `flavor`: Reserved for future use. Pass   for QuickTime Movie or ISO flavor.
-- `formatDescriptionOut`: Receives new  .
+- `flavor`: Reserved for future use. Pass `NULL` for QuickTime Movie or ISO flavor.
+- `formatDescriptionOut`: Receives new `CMClosedCaptionFormatDescription`.
 
 ## See Also
 

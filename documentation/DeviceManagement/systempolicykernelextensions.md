@@ -87,6 +87,13 @@ Specify `com.apple.syspolicy.kernel-extension-policy` as the payload type.
 - [object SystemPolicyKernelExtensions.AllowedKernelExtensions](systempolicykernelextensions/allowedkernelextensions-data.dictionary.md)
   The dictionary that represents a set of kernel extensions.
 
+## Properties
+
+- `AllowedKernelExtensions` (SystemPolicyKernelExtensions.AllowedKernelExtensions): The dictionary that represents a set of kernel extensions that the system always allows to load on the computer. The dictionary maps team identifiers (keys) to arrays of bundle identifiers.
+- `AllowedTeamIdentifiers` ([string]): The array of team identifiers that define which validly signed kernel extensions can load.
+- `AllowNonAdminUserApprovals` (boolean): If `true`, nonadministrative users can approve additional kernel extensions in the Security & Privacy preferences. Available in macOS 11 and later.
+- `AllowUserOverrides` (boolean): If `true`, users can approve additional kernel extensions that configuration profiles don’t explicitly allow.
+
 ## See Also
 
 - [object SystemPolicyControl](systempolicycontrol.md)

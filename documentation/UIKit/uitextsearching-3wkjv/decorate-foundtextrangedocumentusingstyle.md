@@ -25,7 +25,7 @@ The system calls this method during a find session to display the results of a s
 ## Parameters
 
 - `foundTextRange`: The text range to decorate.
-- `document`: A string that uniquely identifies the document containing the text range.   when searching a single document.
+- `document`: A string that uniquely identifies the document containing the text range. `Nil` when searching a single document.
 - `usingStyle`: The style to decorate the text: highlighted, found, or normal.
 
 ## See Also

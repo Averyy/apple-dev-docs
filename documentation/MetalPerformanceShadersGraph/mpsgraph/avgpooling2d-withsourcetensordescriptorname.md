@@ -25,7 +25,7 @@ A valid MPSGraphTensor object
 
 ## Parameters
 
-- `source`: A 2D Image source as tensor - must be of rank=4. The layout is defined by  .
+- `source`: A 2D Image source as tensor - must be of rank=4. The layout is defined by `descriptor.dataLayout`.
 - `descriptor`: A pooling operation descriptor that specifies pooling window sizes, strides, dilation rates, paddings and layouts.
 - `name`: The name for the operation.
 

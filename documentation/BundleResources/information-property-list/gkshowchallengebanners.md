@@ -10,6 +10,10 @@ A Boolean value that indicates whether GameKit can display challenge banners in 
 - iPadOS 7.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [AVGameBypassSystemSpatialAudio](information-property-list/avgamebypasssystemspatialaudio.md)

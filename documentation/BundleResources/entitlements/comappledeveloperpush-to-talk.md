@@ -8,6 +8,10 @@
 - iPadOS 16.0+
 
 
+
+**Type**: boolean
+
+
 ---
 
 *[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.push-to-talk)*

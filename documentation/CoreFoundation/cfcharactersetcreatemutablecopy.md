@@ -26,7 +26,7 @@ A new mutable character set containing the same characters as `theSet`. Ownershi
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `theSet`: The character set to copy.
 
 ## See Also

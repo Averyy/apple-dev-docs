@@ -34,8 +34,8 @@ For clients writing files using a ProRes Raw codec type, white balance must be l
 
 ## Parameters
 
-- `videoCodecType`: The desired   to be used for compression (see  ).
-- `outputFileType`: Specifies the UTI of the file type to be written (see  ).
+- `videoCodecType`: The desired [`AVVideoCodecKey`](avvideocodeckey.md) to be used for compression (see [`Video settings`](video-settings.md)).
+- `outputFileType`: Specifies the UTI of the file type to be written (see [`AVFileType`](AVFileType.md)).
 
 ## See Also
 

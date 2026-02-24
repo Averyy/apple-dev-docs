@@ -26,7 +26,7 @@ The rendering intent specifies how to handle colors that are not located within 
 
 ## Parameters
 
-- `intent`: A rendering intent constant— ,  ,  ,  , or  . For a discussion of these constants, see  .
+- `intent`: A rendering intent constant—[`CGColorRenderingIntent.defaultIntent`](cgcolorrenderingintent/defaultintent.md), [`CGColorRenderingIntent.absoluteColorimetric`](cgcolorrenderingintent/absolutecolorimetric.md), [`CGColorRenderingIntent.relativeColorimetric`](cgcolorrenderingintent/relativecolorimetric.md), [`CGColorRenderingIntent.perceptual`](cgcolorrenderingintent/perceptual.md), or [`CGColorRenderingIntent.saturation`](cgcolorrenderingintent/saturation.md). For a discussion of these constants, see [`CGColorSpace`](cgcolorspace.md).
 
 ## See Also
 

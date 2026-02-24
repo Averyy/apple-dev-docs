@@ -17,7 +17,7 @@ optional func playerViewController(_ playerViewController: AVPlayerViewControlle
 ## Parameters
 
 - `playerViewController`: The player view controller.
-- `mediaSelectionOption`: The user’s selected media option, which may be  .
+- `mediaSelectionOption`: The user’s selected media option, which may be `nil`.
 - `mediaSelectionGroup`: The media selection group in which the selected media option exists.
 
 

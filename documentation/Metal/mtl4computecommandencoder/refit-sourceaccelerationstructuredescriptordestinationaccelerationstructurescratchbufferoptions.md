@@ -38,8 +38,8 @@ Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of 
 
 - `sourceAccelerationStructure`: Acceleration structure to refit.
 - `descriptor`: A descriptor for the acceleration structure to refit.
-- `destinationAccelerationStructure`: Acceleration structure to store the refit result into.   If   is  , Metal performs an in-place   refit operation of the  .
-- `scratchBuffer`: Scratch buffer Metal can use while refitting the acceleration structure.   Metal may overwrite the contents of this buffer, and you should consider   them “undefined” after the refit operation starts and completes.
+- `destinationAccelerationStructure`: Acceleration structure to store the refit result into. If `destinationAccelerationStructure` is `nil`, Metal performs an in-place refit operation of the `sourceAccelerationStructure`.
+- `scratchBuffer`: Scratch buffer Metal can use while refitting the acceleration structure. Metal may overwrite the contents of this buffer, and you should consider them “undefined” after the refit operation starts and completes.
 - `options`: Options specifying the elements of the acceleration structure to refit.
 
 

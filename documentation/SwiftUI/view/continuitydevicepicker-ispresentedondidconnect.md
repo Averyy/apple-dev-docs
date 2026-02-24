@@ -17,7 +17,7 @@ A `continuityDevicePicker` should be used to discover and connect nearby continu
 
 ## Parameters
 
-- `isPresented`: A   to whether the modal view is presented.
+- `isPresented`: A `Binding` to whether the modal view is presented.
 - `onDidConnect`: A closure executed when the picker successfully, connects AVContinuityDevice or nil if cancelled by a user.
 
 ## See Also

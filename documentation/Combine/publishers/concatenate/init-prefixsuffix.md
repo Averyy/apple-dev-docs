@@ -22,8 +22,8 @@ init(prefix: Prefix, suffix: Suffix)
 
 ## Parameters
 
-- `prefix`: The publisher to republish, in its entirety, before republishing elements from  .
-- `suffix`: The publisher to republish only after   finishes.
+- `prefix`: The publisher to republish, in its entirety, before republishing elements from `suffix`.
+- `suffix`: The publisher to republish only after `prefix` finishes.
 
 
 ---

@@ -23,7 +23,7 @@ init(forEvents interestedEvents: MLUpdateProgressEvent, progressHandler: ((MLUpd
 ## Parameters
 
 - `interestedEvents`: The events for which the update task will call your closures for, contained in an option set.
-- `progressHandler`: The closure an update task uses to notify your app. The update task only uses this closure for the events you specified in  .
+- `progressHandler`: The closure an update task uses to notify your app. The update task only uses this closure for the events you specified in `interestedEvents`.
 - `completionHandler`: The closure that an update tasks uses to notify you when it is complete.
 
 ## See Also

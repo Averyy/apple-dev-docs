@@ -47,6 +47,12 @@ Specify `com.apple.configuration.management.test` as the declaration type.
 }
 ```
 
+## Properties
+
+- `Echo` (string) *(required)*: The string to echo back in a status response reason.
+- `EchoDataAssetReference` (string): The string to read from a data asset to echo back in status response reason description.
+- `ReturnStatus` (string): The status the system reports back when the device implements the configuration. Use this to override the normal `success` result.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

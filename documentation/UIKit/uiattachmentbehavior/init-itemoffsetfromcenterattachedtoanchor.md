@@ -30,9 +30,9 @@ The attachment object returned by this method is of type [`UIAttachmentBehavior.
 
 ## Parameters
 
-- `item`: The dynamic item to attach to the specified  .
-- `offset`: The offset from the center of   at which to create the attachment. Specifying   creates the attachment at the center of  .
-- `point`: The anchor point for the item. Specify this point in the coordinate system of the dynamic animator’s reference view. For more information about coordinate systems, see  .
+- `item`: The dynamic item to attach to the specified `point`.
+- `offset`: The offset from the center of `item` at which to create the attachment. Specifying [`zero`](uioffset/zero.md) creates the attachment at the center of `item`.
+- `point`: The anchor point for the item. Specify this point in the coordinate system of the dynamic animator’s reference view. For more information about coordinate systems, see [`UIDynamicAnimator`](uidynamicanimator.md).
 
 ## See Also
 

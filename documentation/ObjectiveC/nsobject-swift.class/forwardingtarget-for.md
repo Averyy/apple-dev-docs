@@ -34,7 +34,7 @@ This method gives an object a chance to redirect an unknown message sent to it b
 
 ## Parameters
 
-- `aSelector`: A   for a method that the receiver does not implement.
+- `aSelector`: A [`Selector`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Selector.html#//apple_ref/doc/uid/TP40008195-CH48) for a method that the receiver does not implement.
 
 
 ---

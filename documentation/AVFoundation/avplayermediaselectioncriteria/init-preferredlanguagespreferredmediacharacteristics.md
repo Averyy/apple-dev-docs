@@ -22,8 +22,8 @@ init(preferredLanguages: [String]?, preferredMediaCharacteristics: [AVMediaChara
 
 ## Parameters
 
-- `preferredLanguages`: An array of language identifier strings, in order of preference. This value may be  .
-- `preferredMediaCharacteristics`: An array of media characteristics, in order of preference. This value may be  .
+- `preferredLanguages`: An array of language identifier strings, in order of preference. This value may be `nil`.
+- `preferredMediaCharacteristics`: An array of media characteristics, in order of preference. This value may be `nil`.
 
 ## See Also
 

@@ -32,7 +32,7 @@ A version 1 run loop source must have a one-to-one relationship between itself a
 
 ## Parameters
 
-- `info`: The   member of the   structure that was used when creating the run loop source.
+- `info`: The `info` member of the [`CFRunLoopSourceContext1`](cfrunloopsourcecontext1.md) structure that was used when creating the run loop source.
 
 
 ---

@@ -12,7 +12,7 @@ The visionOS 2.2 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- In the visionOS Simulator, iOS apps running against the “Apple Vision Pro (Designed for iPad)” target will crash upon launch if they link `ImagePlayground.framework`.  (141228566) (FB16079366)  Apps behave correctly when running on-device. Test directly against Apple Vision Pro hardware.
+- In the visionOS Simulator, iOS apps running against the “Apple Vision Pro (Designed for iPad)” target will crash upon launch if they link `ImagePlayground.framework`.  (141228566) (FB16079366) **Workaround:** Apps behave correctly when running on-device. Test directly against Apple Vision Pro hardware.
 
 ##### Mac Virtual Display
 
@@ -49,7 +49,7 @@ The visionOS 2.2 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- Some Unity applications might render incorrectly. The content might swim more than expected and appear stretched.  (139384386)  Rebuild with Unity release 1.2.3 or later.
+- Some Unity applications might render incorrectly. The content might swim more than expected and appear stretched.  (139384386) **Workaround:** Rebuild with Unity release 1.2.3 or later.
 
 ## See Also
 

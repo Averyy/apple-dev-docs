@@ -30,8 +30,8 @@ Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of 
 
 ## Parameters
 
-- `indirectBuffer`: GPUAddress of a   instance providing compute parameters.   Lay out the data in this buffer as described in the    structure. This address   requires 4-byte alignment.
-- `threadsPerThreadgroup`: A   instance that represents the number of threads in one   threadgroup, in each dimension.
+- `indirectBuffer`: GPUAddress of a [`MTLBuffer`](mtlbuffer.md) instance providing compute parameters. Lay out the data in this buffer as described in the [`MTLDispatchThreadgroupsIndirectArguments`](mtldispatchthreadgroupsindirectarguments.md) structure. This address requires 4-byte alignment.
+- `threadsPerThreadgroup`: A [`MTLSize`](mtlsize.md) instance that represents the number of threads in one threadgroup, in each dimension.
 
 ## See Also
 

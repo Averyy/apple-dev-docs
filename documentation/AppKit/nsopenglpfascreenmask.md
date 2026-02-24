@@ -14,7 +14,7 @@ var NSOpenGLPFAScreenMask: Int { get }
 
 #### Discussion
 
-Value is a bit mask of supported physical screens. All screens specified in the bit mask are guaranteed to be supported by the pixel format. Screens not specified in the bit mask may still be supported. The bit mask is managed by the CoreGraphics’s , available in the `CGDirectDisplay.h` header of the ApplicationServices umbrella framework. A `CGDirectDisplayID` must be converted to an OpenGL display mask using the function `CGDisplayIDToOpenGLDisplayMask`. This attribute is not generally useful.
+Value is a bit mask of supported physical screens. All screens specified in the bit mask are guaranteed to be supported by the pixel format. Screens not specified in the bit mask may still be supported. The bit mask is managed by the CoreGraphics’s **DirectDisplay**, available in the `CGDirectDisplay.h` header of the ApplicationServices umbrella framework. A `CGDirectDisplayID` must be converted to an OpenGL display mask using the function `CGDisplayIDToOpenGLDisplayMask`. This attribute is not generally useful.
 
 ## See Also
 

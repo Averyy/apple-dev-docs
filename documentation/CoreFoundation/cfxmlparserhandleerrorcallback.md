@@ -26,7 +26,7 @@ If this callback is not defined, the parser will silently attempt to recover. Ot
 
 - `parser`: A CFXMLParser object making the callback.
 - `error`: A status code describing the error.
-- `info`: The program-defined context data you specified in the   structure when creating the parser.
+- `info`: The program-defined context data you specified in the [`CFXMLParserContext`](cfxmlparsercontext.md) structure when creating the parser.
 
 ## See Also
 

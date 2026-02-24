@@ -26,7 +26,7 @@ When Core Graphics no longer needs direct access to your provider data, your fun
 
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to  .
+- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(dataInfo:data:size:releaseData:)`](cgdataprovider/init(datainfo:data:size:releasedata:).md).
 - `data`: A pointer to your provider data.
 - `size`: The size of the data.
 

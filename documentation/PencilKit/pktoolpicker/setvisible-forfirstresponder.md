@@ -23,7 +23,7 @@ Each time you call this method with the `visible` parameter set to [`true`](http
 
 ## Parameters
 
-- `visible`: A Boolean value that indicates whether to make the palette visible when   becomes active. Specify   to show the palette when the object becomes the first responder.
+- `visible`: A Boolean value that indicates whether to make the palette visible when `responder` becomes active. Specify [`true`](https://developer.apple.com/documentation/Swift/true) to show the palette when the object becomes the first responder.
 - `responder`: A responder object associated with the tool picker’s window. Typically, you specify a view capable of becoming the first responder.
 
 ## See Also

@@ -31,7 +31,7 @@ A view that applies `animation` to this view whenever `value` changes.
 
 ## Parameters
 
-- `animation`: The animation to apply. If   is  , the view   doesn’t animate.
+- `animation`: The animation to apply. If `animation` is `nil`, the view doesn’t animate.
 - `value`: A value to monitor for changes.
 
 ## See Also

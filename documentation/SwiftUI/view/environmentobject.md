@@ -31,7 +31,7 @@ Adding an object to a view’s environment makes the object available to subview
 
 ## Parameters
 
-- `object`: The object to store and make available to   the view’s hierarchy.
+- `object`: The object to store and make available to the view’s hierarchy.
 
 ## See Also
 

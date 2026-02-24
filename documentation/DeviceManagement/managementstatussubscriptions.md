@@ -80,6 +80,10 @@ Specify `com.apple.configuration.management.status-subscriptions` as the declara
 - [object ManagementStatusSubscriptionsStatusItemObject](managementstatussubscriptionsstatusitemobject.md)
   The declaration for configuring a specific status subscription.
 
+## Properties
+
+- `StatusItems` ([ManagementStatusSubscriptionsStatusItemObject]) *(required)*: An array of status items that the device notifies subscribers about.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

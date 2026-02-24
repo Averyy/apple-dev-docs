@@ -17,7 +17,7 @@ When the GPU attempts to sample a pixel in texture memory:
 
 The texture access count estimation comes from the number of cache misses, and isn’t an exact count of the number of memory operations to a specific region. If your app accesses the same regions frequently, because they’re more likely to be in the cache, the counts you receive from Metal might be smaller than the number of memory operations you actually made.
 
-To take advantage of spatial locality, memory subsystems retrieve memory in larger chunks, called . A cache line is usually large enough to store multiple pixels of data, but the exact number of pixels depends on the pixel format.
+To take advantage of spatial locality, memory subsystems retrieve memory in larger chunks, called *cache lines*. A cache line is usually large enough to store multiple pixels of data, but the exact number of pixels depends on the pixel format.
 
 To normalize the access counts, Metal increments the count as if you accessed all of the pixels in the cache line. For example, if a cache line is `64` bytes and a pixel is `4` bytes, the counter value increases by `16` `(64/4)`. This abstraction means you can focus on the number of memory operations recorded, without needing to know the details of the underlying memory architecture.
 
@@ -26,6 +26,37 @@ Determine your own heuristics to decide how many pixel memory operations is suff
 ##### Request the Estimated Texture Access Counts
 
 To get the current access counts for a sparse texture, create a blit command encoder and encode commands to copy the GPU’s internal counters to an [`MTLBuffer`](mtlbuffer.md) instance. The following example code takes a tile region in the texture’s top-level mipmap, creates an [`MTLBuffer`](mtlbuffer.md) instance large enough to accommodate all of the region’s tiles, and encodes a command to copy the counters.
+
+**Swift**:
+
+```swift
+let counterBufferSize = MemoryLayout<UInt32>.stride * tileRegion.size.height * tileRegion.size.width * tileRegion.size.depth
+if let counters = device.makeBuffer(length: counterBufferSize, options: .storageModeShared) {
+    if let blitEncoder = commandBuffer.makeBlitCommandEncoder() {
+        blitEncoder.label = "Copy Texture Miss Counts"
+        blitEncoder.getTextureAccessCounters(texture, region: tileRegion, mipLevel: 0, slice: 0,
+                                             resetCounters: true, countersBuffer: counters, countersBufferOffset: 0)
+    }
+}
+```
+
+**Objective-C**:
+
+```objective-c
+size_t counterBufferSize = sizeof(uint32_t) * tileRegion.size.height * tileRegion.size.width * tileRegion.size.depth;
+id<MTLBuffer> counters = [_device newBufferWithLength:counterBufferSize
+                                               options:MTLResourceStorageModeShared];
+
+id<MTLBlitCommandEncoder> blitEncoder = [commandBuffer blitCommandEncoder];
+blitEncoder.label = @"Copy Texture Miss Counts";
+[blitEncoder getTextureAccessCounters:_sparseTexture
+                               region:tileRegion
+                             mipLevel:0
+                                slice:0
+                        resetCounters:YES
+                       countersBuffer:counters
+                 countersBufferOffset:0];
+```
 
 The counters are organized as a 3D array of [`uint32_t`](https://developer.apple.com/documentation/kernel/uint32_t) values, stored in row-major order. You tell the GPU whether to reset the access counters.
 

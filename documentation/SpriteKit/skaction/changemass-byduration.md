@@ -30,6 +30,18 @@ When the action executes, the physics body’s [`mass`](skphysicsbody/mass.md) p
 
 This action is reversible; the reverse is created as if the following code is executed:
 
+**Swift**:
+
+```swift
+let action = SKAction.changeMass(by: -v, duration: sec)
+```
+
+**Obj-C**:
+
+```objc
+[SKAction changeMassBy: -v duration: sec];
+```
+
 ## Parameters
 
 - `v`: The amount to add to the physics body’s mass.

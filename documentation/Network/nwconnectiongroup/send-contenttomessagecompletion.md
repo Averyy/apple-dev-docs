@@ -24,7 +24,7 @@ final func send(content: Data?, to: NWEndpoint? = nil, message: NWConnectionGrou
 ## Parameters
 
 - `content`: The data to send.
-- `to`: An optional endpoint that specifies a member of the group that receives the data. If the endpoint is  , the data will be sent to the entire group.
+- `to`: An optional endpoint that specifies a member of the group that receives the data. If the endpoint is `nil`, the data will be sent to the entire group.
 - `message`: The metadata that defines how the message is sent.
 - `completion`: A completion that notifies you when the connection group has processed and sent the data.
 

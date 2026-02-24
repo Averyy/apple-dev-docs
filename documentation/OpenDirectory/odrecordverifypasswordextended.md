@@ -23,10 +23,10 @@ func ODRecordVerifyPasswordExtended(_ record: ODRecordRef!, _ authType: String!,
 
 - `record`: The record.
 - `authType`: The type of authentication to use.
-- `authItems`: An array of   or   objects to be used in the authentication process.
-- `outAuthItems`: An array of   objects returned from the authentication process, if any are returned;   otherwise.
-- `outContext`: The proper context if the authentication attempt requires a context;   otherwise. If not  , then more calls must be made with the Context to continue the authentication.
-- `error`: An error reference for error details. Can be  .
+- `authItems`: An array of `CFString` or `CFData` objects to be used in the authentication process.
+- `outAuthItems`: An array of `CFData` objects returned from the authentication process, if any are returned; `NULL` otherwise.
+- `outContext`: The proper context if the authentication attempt requires a context; `NULL` otherwise. If not `NULL`, then more calls must be made with the Context to continue the authentication.
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

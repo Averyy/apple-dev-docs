@@ -34,13 +34,13 @@ If the `kCIImageProviderTileSize` option is specified when the `CIImage` was cre
 
 ## Parameters
 
-- `texture`: The   into which the provider should copy the pixels for the requested sub-rect.
-- `commandBuffer`: The   that the provider should use encoded the copy.
+- `texture`: The `<id>MTLTexture` into which the provider should copy the pixels for the requested sub-rect.
+- `commandBuffer`: The `<id>MTLCommandBuffer` that the provider should use encoded the copy.
 - `originx`: The x origin of the requested sub-rect relative to the upper left corner of the image.
 - `originy`: The y origin of the requested sub-rect relative to the upper left corner of the image.
 - `width`: The width of the requested sub-rect.
 - `height`: The height of the requested sub-rect.
-- `info`: The value of the `kCIImageProviderTileSize /CIImage/imageWithImageProvider:size::format:colorSpace:options:``   * ``/CIImage/initWithImageProvider:size::format:colorSpace:options:``
+- `info`: The value of the `kCIImageProviderTileSize`option specified when calling: *`/CIImage/imageWithImageProvider:size::format:colorSpace:options:`` * ``/CIImage/initWithImageProvider:size::format:colorSpace:options:``
 
 
 ---

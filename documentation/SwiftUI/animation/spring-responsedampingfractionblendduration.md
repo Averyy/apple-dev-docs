@@ -26,9 +26,9 @@ A spring animation.
 
 ## Parameters
 
-- `response`: The stiffness of the spring, defined as an   approximate duration in seconds. A value of zero requests   an infinitely-stiff spring, suitable for driving   interactive animations.
-- `dampingFraction`: The amount of drag applied to the value   being animated, as a fraction of an estimate of amount   needed to produce critical damping.
-- `blendDuration`: The duration in seconds over which to   interpolate changes to the response value of the spring.
+- `response`: The stiffness of the spring, defined as an approximate duration in seconds. A value of zero requests an infinitely-stiff spring, suitable for driving interactive animations.
+- `dampingFraction`: The amount of drag applied to the value being animated, as a fraction of an estimate of amount needed to produce critical damping.
+- `blendDuration`: The duration in seconds over which to interpolate changes to the response value of the spring.
 
 ## See Also
 

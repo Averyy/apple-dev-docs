@@ -26,7 +26,7 @@ This method removes all of the keys and values from the specified domain. After 
 
 ## Parameters
 
-- `domainName`: The name of the domain to clear. If you specify the identifier   for the argument or registration domain, this method throws an exception.
+- `domainName`: The name of the domain to clear. If you specify the identifier for the argument or registration domain, this method throws an exception.
 
 ## See Also
 

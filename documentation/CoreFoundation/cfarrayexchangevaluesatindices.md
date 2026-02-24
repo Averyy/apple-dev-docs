@@ -23,8 +23,8 @@ func CFArrayExchangeValuesAtIndices(_ theArray: CFMutableArray!, _ idx1: CFIndex
 ## Parameters
 
 - `theArray`: The array that contains the values to be swapped.
-- `idx1`: The index of the value to swap with the value at  . The index must not exceed the index space of   (  to   inclusive, where   is the count of   before the operation).
-- `idx2`: The index of the value to swap with the value at  . The index must not exceed the index space of   (  to   inclusive, where   is the count of   before the operation).
+- `idx1`: The index of the value to swap with the value at `idx2`. The index must not exceed the index space of `theArray` (`0` to `N-1` inclusive, where `N` is the count of `theArray` before the operation).
+- `idx2`: The index of the value to swap with the value at `idx1`. The index must not exceed the index space of `theArray` (`0` to `N-1` inclusive, where `N` is the count of `theArray` before the operation).
 
 ## See Also
 

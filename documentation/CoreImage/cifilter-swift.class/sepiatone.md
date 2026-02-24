@@ -34,6 +34,8 @@ This method applies the sepia tone filter to an image. The effect maps the color
 
 The sepia tone filter uses the following property:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in the input image transforming to a brown hue:
 
 ```swift

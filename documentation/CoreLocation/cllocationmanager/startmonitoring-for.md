@@ -36,7 +36,7 @@ If a compatible iPad or iPhone app calls this method when running in visionOS, t
 
 ## Parameters
 
-- `region`: The region object that defines the boundary to monitor. This parameter must not be  .
+- `region`: The region object that defines the boundary to monitor. This parameter must not be `nil`.
 
 ## See Also
 

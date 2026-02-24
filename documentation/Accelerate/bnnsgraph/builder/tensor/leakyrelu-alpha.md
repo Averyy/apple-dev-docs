@@ -22,7 +22,7 @@ func leakyReLU(alpha: Float = 0.01) -> BNNSGraph.Builder.Tensor<T>
 
 ## Parameters
 
-- `alpha`: The   value.
+- `alpha`: The `alpha` value.
 
 
 ---

@@ -32,7 +32,7 @@ See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-
 
 ## Parameters
 
-- `residencySet`: A residency set that contains resource allocations, such as  ,  , and   instances.
+- `residencySet`: A residency set that contains resource allocations, such as [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), and [`MTLHeap`](mtlheap.md) instances.
 
 ## See Also
 

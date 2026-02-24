@@ -26,8 +26,8 @@ By default, the visible function table at each index is `nil`.
 
 ## Parameters
 
-- `functionTable`: An   instance the command assigns to an entry in the tile shader argument table for visible function tables.
-- `bufferIndex`: An integer that represents the entry in the tile shader argument table for visible function tables that stores a record of  .
+- `functionTable`: An [`MTLVisibleFunctionTable`](mtlvisiblefunctiontable.md) instance the command assigns to an entry in the tile shader argument table for visible function tables.
+- `bufferIndex`: An integer that represents the entry in the tile shader argument table for visible function tables that stores a record of `functionTable`.
 
 ## See Also
 

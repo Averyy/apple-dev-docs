@@ -28,7 +28,7 @@ If an error occurs while sending the message, any outstanding work also fails.
 ## Parameters
 
 - `message`: The WebSocket message to send to the other endpoint.
-- `completionHandler`: A closure that receives an   that indicates an error encountered while sending, or nil if no error occurred.
+- `completionHandler`: A closure that receives an [`NSError`](nserror.md) that indicates an error encountered while sending, or nil if no error occurred.
 
 ## See Also
 

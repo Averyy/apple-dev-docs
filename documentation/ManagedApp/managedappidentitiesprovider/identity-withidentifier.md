@@ -36,7 +36,7 @@ When using identities in your app, observe the following caveats:
 
 ## Parameters
 
-- `identifier`: The identifier of the requested identity. This function throws   if the value you supply isn’t currently in  .
+- `identifier`: The identifier of the requested identity. This function throws [`ManagedAppError.invalidIdentifier`](managedapperror/invalididentifier.md) if the value you supply isn’t currently in [`identifiers`](managedappidentitiesprovider/identifiers.md).
 
 
 ---

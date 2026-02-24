@@ -25,7 +25,7 @@ It is more efficient to use the  [`ABRecord`](abrecord.md) method [`init(address
 ## Parameters
 
 - `record`: The record to add.
-- `error`: A pointer to an error object that is set to an   instance if an error occurs.
+- `error`: A pointer to an error object that is set to an `NSError` instance if an error occurs.
 
 ## See Also
 

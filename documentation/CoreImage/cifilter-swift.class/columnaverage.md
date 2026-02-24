@@ -29,6 +29,9 @@ This method applies the column average filter to an image. This effect calculate
 
 The column average filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that specifies the subregion of the image that you want to process.
+
 The following code creates an image containing the average values in the columns from the middle of the image:
 
 ```swift

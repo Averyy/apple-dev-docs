@@ -9,9 +9,17 @@ The user-defined storyboard identifiers that associate with supported schemes.
 - iOS 9.0+
 - iPadOS 9.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 The keys for this dictionary are the URL schemes defined in [`CFBundleURLTypes`](information-property-list/cfbundleurltypes.md) for your app. The value for the specified key is a [`UILaunchStoryboardIdentifier`](information-property-list/uilaunchstoryboards/uilaunchstoryboarddefinitions/uilaunchstoryboardidentifier.md) from the [`UILaunchStoryboardDefinitions`](information-property-list/uilaunchstoryboards/uilaunchstoryboarddefinitions.md) array.
+
+## Properties
+
+- `Any Key` (string)
 
 
 ---

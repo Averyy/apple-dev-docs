@@ -32,7 +32,7 @@ Because the number of tokens isn’t predetermined, the selection pool size will
 
 ## Parameters
 
-- `probabilityThreshold`: A number between   and   that   increases sampling pool size.
+- `probabilityThreshold`: A number between `0.0` and `1.0` that increases sampling pool size.
 - `seed`: An optional random seed used to make output more deterministic.
 
 ## See Also

@@ -30,6 +30,18 @@ When the action executes, the node’s [`speed`](sknode/speed.md) property anima
 
 This action is reversible; the reverse is created as if the following code is executed:
 
+**Swift**:
+
+```swift
+let action = SKAction.speed(by: -speed, duration: sec)
+```
+
+**Obj-C**:
+
+```objc
+[SKAction speedBy: -speed duration: sec];
+```
+
 ## Parameters
 
 - `speed`: The amount to add to the node’s speed.

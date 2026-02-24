@@ -26,8 +26,8 @@ If you do call this function, you must call it before you call the `CMSDecoderCo
 
 ## Parameters
 
-- `cmsDecoder`: The CMSDecoder reference returned by the   function.
-- `keychainOrArray`: Either a single keychain to search, specified as a keychain object (type  ), or a set of keychains specified as a   of keychain objects. If you specify an empty  , no keychains are searched for intermediate certificates.
+- `cmsDecoder`: The CMSDecoder reference returned by the `CMSDecoderCreate` function.
+- `keychainOrArray`: Either a single keychain to search, specified as a keychain object (type `SecKeychainRef`), or a set of keychains specified as a `CFArray` of keychain objects. If you specify an empty `CFArrayRef`, no keychains are searched for intermediate certificates.
 
 ## See Also
 

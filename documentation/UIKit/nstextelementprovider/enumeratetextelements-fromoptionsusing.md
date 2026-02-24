@@ -33,9 +33,9 @@ Returning `NO` or `false` from block breaks out of the enumeration.
 
 ## Parameters
 
-- `textLocation`: The   at which to start the enumeration.
-- `options`: One of the possible   directions.
-- `block`: A block you use to evaluate whether to continue the enumeration or tell the method to stop. Return   to end the enumeration process.
+- `textLocation`: The [`NSTextLocation`](nstextlocation.md) at which to start the enumeration.
+- `options`: One of the possible `NSTextElementProviderEnumerationOptions` directions.
+- `block`: A block you use to evaluate whether to continue the enumeration or tell the method to stop. Return `false` to end the enumeration process.
 
 ## See Also
 

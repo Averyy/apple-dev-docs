@@ -18,6 +18,10 @@ uniform token preliminary:planeAnchoring:alignment (
 
 ##### Plane Anchor Types
 
+- **`horizontal`**: Requests that the runtime anchor the prim on a floor, table, ceiling, or other flat surface.
+- **`vertical`**: Requests that the runtime anchor the prim on a wall, door, window, or other vertical surface.
+- **`any`**: Requests that the runtime anchor the prim on the first horizontal or vertical surface detected.
+
 ##### Anchor a Prim to a Horizontal Plane
 
 The following asset definition requests that the runtime anchor this prim to the first surface the runtime detects that occupies a horizontal orientation in relation to the camera.

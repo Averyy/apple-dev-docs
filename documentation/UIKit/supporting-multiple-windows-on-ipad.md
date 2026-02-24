@@ -114,8 +114,8 @@ The `NSUserActivity` [`activityType`](https://developer.apple.com/documentation/
 
 This sample also creates a separate window scene programmatically, by responding to a user action:
 
-- : Tap and hold a photo and select the menu item Inspect. This creates a form sheet window with that photo. The form sheet can then be dragged to the left or right side of the iPad screen to split the app’s interface in two.
-- : Select a photo. Click the Info toolbar button or command-click the photo and select Inspect. Both create a new window containing that photo.
+- **iPadOS**: Tap and hold a photo and select the menu item Inspect. This creates a form sheet window with that photo. The form sheet can then be dragged to the left or right side of the iPad screen to split the app’s interface in two.
+- **macOS**: Select a photo. Click the Info toolbar button or command-click the photo and select Inspect. Both create a new window containing that photo.
 
 Both approaches use the following code to create a new window scene.
 

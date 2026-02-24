@@ -24,7 +24,7 @@ If removing the control succeeds, the control’s reference count decrements by 
 
 ## Parameters
 
-- `in_control`: The   to remove from the clock device.
+- `in_control`: The [`IOUserAudioControl`](iouseraudiocontrol.md) to remove from the clock device.
 
 ## See Also
 

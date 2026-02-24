@@ -21,7 +21,7 @@ Replaced or removed child nodes are released.
 
 ## Parameters
 
-- `children`: An array of   objects. To remove all existing children, pass in  .
+- `children`: An array of [`XMLNode`](xmlnode.md) objects. To remove all existing children, pass in `nil`.
 
 ## See Also
 

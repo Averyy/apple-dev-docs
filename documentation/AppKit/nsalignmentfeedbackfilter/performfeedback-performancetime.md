@@ -20,8 +20,8 @@ Call this method to initiate haptic feedback to the user. Pass it one or more al
 
 ## Parameters
 
-- `alignmentFeedbackTokens`: One or more feedback tokens prepared for specific alignment locations by calling  ,  , or  . Typically, no more than one feedback token per dimension (horizontal/vertical) should be provided.
-- `performanceTime`: The time, of type  , when the feedback should be provided to the user.
+- `alignmentFeedbackTokens`: One or more feedback tokens prepared for specific alignment locations by calling [`alignmentFeedbackTokenForMovement(in:previousPoint:alignedPoint:defaultPoint:)`](nsalignmentfeedbackfilter/alignmentfeedbacktokenformovement(in:previouspoint:alignedpoint:defaultpoint:).md), [`alignmentFeedbackTokenForHorizontalMovement(in:previousX:alignedX:defaultX:)`](nsalignmentfeedbackfilter/alignmentfeedbacktokenforhorizontalmovement(in:previousx:alignedx:defaultx:).md), or [`alignmentFeedbackTokenForVerticalMovement(in:previousY:alignedY:defaultY:)`](nsalignmentfeedbackfilter/alignmentfeedbacktokenforverticalmovement(in:previousy:alignedy:defaulty:).md). Typically, no more than one feedback token per dimension (horizontal/vertical) should be provided.
+- `performanceTime`: The time, of type `NSHapticFeedbackPerformanceTime`, when the feedback should be provided to the user.
 
 ## See Also
 

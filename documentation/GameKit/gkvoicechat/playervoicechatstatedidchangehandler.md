@@ -29,6 +29,9 @@ Set this property to update your interface when the state of any player in the c
 
 The handler receives the following parameters:
 
+- **`player`**: The player whose status changed.
+- **`state`**: The new state of the player.
+
 ## See Also
 
 - [GKVoiceChat.PlayerState](gkvoicechat/playerstate.md)

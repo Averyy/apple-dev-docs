@@ -26,9 +26,9 @@ func getCropRectangleRamp(for time: CMTime, startCropRectangle: UnsafeMutablePoi
 ## Parameters
 
 - `time`: If a ramp with a time range that contains the specified time has been set, information about the effective ramp for that time is supplied. Otherwise, information about the first ramp that starts after the specified time is supplied.
-- `startCropRectangle`: May be NULL.
-- `endCropRectangle`: This value may be  .
-- `timeRange`: This value may be  .
+- `startCropRectangle`: A pointer to a `CGRect` to receive the starting crop rectangle value for the crop rectangle ramp. May be NULL.
+- `endCropRectangle`: A pointer to a `CGRect` to receive the ending crop rectangle value for the crop rectangle ramp. This value may be `NULL`.
+- `timeRange`: A pointer to a `CMTimeRange` to receive the time range of the crop rectangle ramp. This value may be `NULL`.
 
 ## See Also
 

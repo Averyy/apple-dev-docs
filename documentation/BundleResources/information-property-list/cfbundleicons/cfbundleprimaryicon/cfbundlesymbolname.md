@@ -9,6 +9,10 @@ The name of the symbol to show in the action sheet, and in Finder’s sidebar on
 - iOS 13.0+
 - iPadOS 13.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 The system associates the given symbol with your application. The system displays the symbol in the following locations:

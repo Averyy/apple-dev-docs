@@ -29,8 +29,8 @@ See the description of [`currentValue`](nsanimation/currentvalue.md) for more in
 
 ## Parameters
 
-- `animation`: An   object that is running.
-- `progress`: A   value (typed as  ) that indicates a progress mark of  . This value is always between 0.0 and 1.0.
+- `animation`: An `NSAnimation` object that is running.
+- `progress`: A `float` value (typed as `NSAnimationProgress`) that indicates a progress mark of `animation`. This value is always between 0.0 and 1.0.
 
 ## See Also
 

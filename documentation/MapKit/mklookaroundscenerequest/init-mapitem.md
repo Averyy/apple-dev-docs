@@ -20,7 +20,7 @@ init(mapItem: MKMapItem)
 
 ## Parameters
 
-- `mapItem`: An   that describes the location for the LookAround scene.
+- `mapItem`: An [`MKMapItem`](mkmapitem.md) that describes the location for the LookAround scene.
 
 ## See Also
 

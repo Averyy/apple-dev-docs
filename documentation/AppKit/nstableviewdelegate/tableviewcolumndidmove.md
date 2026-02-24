@@ -17,7 +17,7 @@ optional func tableViewColumnDidMove(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named [`columnDidMoveNotification`](nstableview/columndidmovenotification.md).
 
 ## See Also
 

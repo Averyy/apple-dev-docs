@@ -33,7 +33,7 @@ Attaching a gesture recognizer to a view defines the scope of the represented ge
 
 ## Parameters
 
-- `gestureRecognizer`: An object whose class descends from the   class. This parameter must not be  .
+- `gestureRecognizer`: An object whose class descends from the [`UIGestureRecognizer`](uigesturerecognizer.md) class. This parameter must not be `nil`.
 
 ## See Also
 

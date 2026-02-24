@@ -35,12 +35,17 @@ An individual schema may reference other schemas by name, and references are res
   Creates an any-of schema.
 - [init(name: String, description: String?, properties: [DynamicGenerationSchema.Property])](dynamicgenerationschema/init(name:description:properties:).md)
   Creates an object schema.
+- [init(name: String, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [DynamicGenerationSchema.Property])](dynamicgenerationschema/init(name:description:representnilexplicitlyingeneratedcontent:properties:).md)
+  Creates an object schema.
 - [init(referenceTo: String)](dynamicgenerationschema/init(referenceto:).md)
   Creates an refrence schema.
 - [init<Value>(type: Value.Type, guides: [GenerationGuide<Value>])](dynamicgenerationschema/init(type:guides:).md)
   Creates a schema from a generable type and guides.
 - [DynamicGenerationSchema.Property](dynamicgenerationschema/property.md)
   A property that belongs to a dynamic generation schema.
+### Creating a null schema
+- [static var null: DynamicGenerationSchema](dynamicgenerationschema/null.md)
+  Creates a null schema.
 
 ## Relationships
 

@@ -27,8 +27,10 @@ If this method is called by an instance of [`NSMutableAttributedString`](nsmutab
 ## Parameters
 
 - `enumerationRange`: The range over which the attributes are enumerated.
-- `opts`: The options used by the enumeration. For possible values, see  .
-- `block`: The closure or block to apply to ranges of attributes in the attributed string, taking three arguments:
+- `opts`: The options used by the enumeration. For possible values, see [`NSAttributedString.EnumerationOptions`](nsattributedstring/enumerationoptions.md).
+- `block`: The closure or block to apply to ranges of attributes in the attributed string, taking three arguments: - A dictionary of attribute values keyed by name.
+- The range of the attribute values in the attributed string.
+- A reference to a Boolean value, which you can set to [`true`](https://developer.apple.com/documentation/Swift/true) within the closure to stop further processing of the attributed string.
 
 ## See Also
 

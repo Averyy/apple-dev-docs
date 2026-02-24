@@ -35,7 +35,7 @@ To create a custom [`SCNGeometry`](scngeometry.md) object from the geometry sour
 - `data`: The data for the geometry source.
 - `semantic`: The semantic value (or attribute) that the geometry source describes for each vertex. See Geometry Semantic Identifiers for available values.
 - `vectorCount`: The number of geometry source vectors.
-- `floatComponents`: A Boolean value that indicates whether vector components are floating-point values. Specify   for floating-point values, or   for integer values.
+- `floatComponents`: A Boolean value that indicates whether vector components are floating-point values. Specify [`true`](https://developer.apple.com/documentation/Swift/true) for floating-point values, or [`false`](https://developer.apple.com/documentation/Swift/false) for integer values.
 - `componentsPerVector`: The number of scalar components in each vector.
 - `bytesPerComponent`: The size, in bytes, of each vector component.
 - `offset`: The offset, in bytes, from the beginning of the data to the first vector component to be used in the geometry source.

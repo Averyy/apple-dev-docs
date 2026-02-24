@@ -43,7 +43,7 @@ class MetricService: NSObject, MXMetricManagerSubscriber {
 
 ##### Use Purgeable Folders for Recoverable Content
 
-When you download or otherwise generate content that your app can recover if it needs to, store that content in the [`cachesDirectory`](https://developer.apple.com/documentation/Foundation/URL/cachesDirectory) or the [`temporaryDirectory`](https://developer.apple.com/documentation/Foundation/FileManager/temporaryDirectory). The system automatically deletes content in the `cachesDirectory` and `temporaryDirectory` — an operation known as  — when it detects that disk space is low.
+When you download or otherwise generate content that your app can recover if it needs to, store that content in the [`cachesDirectory`](https://developer.apple.com/documentation/Foundation/URL/cachesDirectory) or the [`temporaryDirectory`](https://developer.apple.com/documentation/Foundation/FileManager/temporaryDirectory). The system automatically deletes content in the `cachesDirectory` and `temporaryDirectory` — an operation known as *purging* — when it detects that disk space is low.
 
 ```swift
 let cacheDownloadTask = URLSession.shared.downloadTask(with: cacheURL) {
@@ -88,7 +88,7 @@ func fetchRemoteDocument(for localURL: URL) throws {
 
 ##### Copy Files By Creating Clones
 
-When you use [`copyItem(at:to:)`](https://developer.apple.com/documentation/Foundation/FileManager/copyItem(at:to:)) to copy a file on an APFS volume, the system creates a  of the file. The clone refers to the original file’s content, so it uses less space on disk than if you duplicate the file through other methods. [`MXDiskSpaceUsageMetric`](https://developer.apple.com/documentation/MetricKit/MXDiskSpaceUsageMetric) accounts for clones in its calculations of the disk space used by your app.
+When you use [`copyItem(at:to:)`](https://developer.apple.com/documentation/Foundation/FileManager/copyItem(at:to:)) to copy a file on an APFS volume, the system creates a *clone* of the file. The clone refers to the original file’s content, so it uses less space on disk than if you duplicate the file through other methods. [`MXDiskSpaceUsageMetric`](https://developer.apple.com/documentation/MetricKit/MXDiskSpaceUsageMetric) accounts for clones in its calculations of the disk space used by your app.
 
 For more information, see [`About Apple File System`](https://developer.apple.com/documentation/Foundation/about-apple-file-system#Clones-Reduce-the-Cost-of-Copying).
 

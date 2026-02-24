@@ -10,6 +10,12 @@ An entitlement that allows an app to access financial data in FinanceKit.
 - iPadOS 13.0+
 - macOS 10.15+
 
+
+
+**Type**: boolean
+
+**Default**: `true`
+
 #### Discussion
 
 Add this entitlement to your app to use [`FinanceKit`](https://developer.apple.com/documentation/FinanceKit) to read financial data, and read and write order data. You need to get consent from the person using your app to access data in FinanceKit.

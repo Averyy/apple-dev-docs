@@ -26,8 +26,8 @@ The pointer that this function returns is temporary and may not remain valid acr
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The   with the typed array type data pointer to obtain.
-- `exception`: A pointer to a   to store an exception in, if any. Pass   to discard any exception.
+- `object`: The [`JSObjectRef`](jsobjectref.md) with the typed array type data pointer to obtain.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 

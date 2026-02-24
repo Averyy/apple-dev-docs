@@ -22,11 +22,11 @@ static var quotaExceeded: CKError.Code { get }
 
 #### Discussion
 
-: Your app’s container doesn’t have enough storage. Individual users can’t do anything about this, but you can go to the CloudKit Dashboard to view and manage your container’s storage.
+**In the public database**: Your app’s container doesn’t have enough storage. Individual users can’t do anything about this, but you can go to the CloudKit Dashboard to view and manage your container’s storage.
 
-: The user doesn’t have enough iCloud storage. Prompt the user to go to iCloud settings to manage their storage.
+**In the private database**: The user doesn’t have enough iCloud storage. Prompt the user to go to iCloud settings to manage their storage.
 
-: The owner of the shared record zone doesn’t have enough iCloud storage. The user can’t do anything about this, but can contact the owner about upgrading their storage or cleaning up their iCloud account.
+**In the shared database**: The owner of the shared record zone doesn’t have enough iCloud storage. The user can’t do anything about this, but can contact the owner about upgrading their storage or cleaning up their iCloud account.
 
 ## See Also
 

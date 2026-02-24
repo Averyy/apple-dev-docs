@@ -24,8 +24,8 @@ func enumerateSubstrings(from location: any NSTextLocation, options: NSString.En
 ## Parameters
 
 - `location`: The location where the enumeration starts.
-- `options`: One or more of the available  .
-- `block`: A closure to invoke to evaluate the substrings; end the enumeration early by returning  .
+- `options`: One or more of the available [`NSString.EnumerationOptions`](https://developer.apple.com/documentation/Foundation/NSString/EnumerationOptions).
+- `block`: A closure to invoke to evaluate the substrings; end the enumeration early by returning `false`.
 
 ## See Also
 

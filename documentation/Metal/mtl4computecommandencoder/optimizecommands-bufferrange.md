@@ -21,8 +21,8 @@ func optimizeCommands(buffer: any MTLIndirectCommandBuffer, range: Range<Int>)
 
 ## Parameters
 
-- `buffer`: An   instance that this command optimizes.
-- `range`: A range of commands within  .
+- `buffer`: An [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance that this command optimizes.
+- `range`: A range of commands within `indirectCommandBuffer`.
 
 ## See Also
 

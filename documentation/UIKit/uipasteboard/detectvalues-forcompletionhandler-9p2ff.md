@@ -26,7 +26,7 @@ For details about the types returned for each pattern, see [`UIPasteboard.Detect
 ## Parameters
 
 - `patterns`: The patterns to detect on the pasteboard.
-- `completionHandler`: A closure that the system invokes after detecting patterns on the pasteboard. The closure receives a   instance that contains either a dictionary with the patterns found on the pasteboard or an error if detection failed. If the   instance contains a dictionary, the keys specify the matched pattern, and the value specifies the content of the pasteboard.
+- `completionHandler`: A closure that the system invokes after detecting patterns on the pasteboard. The closure receives a `Result` instance that contains either a dictionary with the patterns found on the pasteboard or an error if detection failed. If the `Result` instance contains a dictionary, the keys specify the matched pattern, and the value specifies the content of the pasteboard.
 
 ## See Also
 

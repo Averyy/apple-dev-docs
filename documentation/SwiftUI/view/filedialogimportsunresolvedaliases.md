@@ -25,7 +25,7 @@ By default, file dialogs resolve aliases and provide the URL of the item referre
 
 ## Parameters
 
-- `imports`: A Boolean value that indicates   if the application receives unresolved or resolved URLs   when a user chooses aliases.
+- `imports`: A Boolean value that indicates if the application receives unresolved or resolved URLs when a user chooses aliases.
 
 ## See Also
 

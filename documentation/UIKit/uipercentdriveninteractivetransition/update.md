@@ -26,7 +26,7 @@ While tracking user events, your code should call this method regularly to updat
 
 ## Parameters
 
-- `percentComplete`: The percentage of the transition that is currently complete, specified as a floating-point number in the range   to  . If you specify a value less than  , this method changes it to  . Specifying a value greater than   would cause the animation to appear complete already.
+- `percentComplete`: The percentage of the transition that is currently complete, specified as a floating-point number in the range `0.0` to `1.0`. If you specify a value less than `0.0`, this method changes it to `0.0`. Specifying a value greater than `1.0` would cause the animation to appear complete already.
 
 ## See Also
 

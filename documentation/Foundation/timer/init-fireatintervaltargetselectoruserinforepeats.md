@@ -31,11 +31,13 @@ You must add the new timer to a run loop, using [`add(_:forMode:)`](runloop/add(
 ## Parameters
 
 - `date`: The time at which the timer should first fire.
-- `ti`: For a repeating timer, this parameter contains the number of seconds between firings of the timer. If   is less than or equal to  , this method chooses the nonnegative value of   seconds instead.
-- `t`: The object to which to send the message specified by   when the timer fires. The timer maintains a strong reference to this object until it (the timer) is invalidated.
-- `s`: The selector should have the following signature:   (including a colon to indicate that the method takes an argument). The timer passes itself as the argument, thus the method would adopt the following pattern:
-- `ui`: Custom user info for the timer. The timer maintains a strong reference to this object until it (the timer) is invalidated. This parameter may be  .
-- `rep`: If  , the timer will repeatedly reschedule itself until invalidated. If  , the timer will be invalidated after it fires.
+- `ti`: For a repeating timer, this parameter contains the number of seconds between firings of the timer. If `ti` is less than or equal to `0.0`, this method chooses the nonnegative value of `0.0001` seconds instead.
+- `t`: The object to which to send the message specified by `aSelector` when the timer fires. The timer maintains a strong reference to this object until it (the timer) is invalidated.
+- `s`: The message to send to `target` when the timer fires. The selector should have the following signature: `timerFireMethod:` (including a colon to indicate that the method takes an argument). The timer passes itself as the argument, thus the method would adopt the following pattern: ```objc
+- (void)timerFireMethod:(NSTimer *)timer
+```
+- `ui`: Custom user info for the timer. The timer maintains a strong reference to this object until it (the timer) is invalidated. This parameter may be `nil`.
+- `rep`: If [`true`](https://developer.apple.com/documentation/Swift/true), the timer will repeatedly reschedule itself until invalidated. If [`false`](https://developer.apple.com/documentation/Swift/false), the timer will be invalidated after it fires.
 
 ## See Also
 

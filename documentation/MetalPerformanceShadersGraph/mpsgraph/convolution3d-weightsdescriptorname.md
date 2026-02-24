@@ -25,8 +25,8 @@ A valid MPSGraphTensor object
 
 ## Parameters
 
-- `source`: Source tensor - must be of rank 5. The layout is defined by  .
-- `weights`: Weights tensor, must be rank 5. The layout is defined by  .
+- `source`: Source tensor - must be of rank 5. The layout is defined by `descriptor.dataLayout`.
+- `weights`: Weights tensor, must be rank 5. The layout is defined by `descriptor.weightsLayout`.
 - `descriptor`: Specifies strides, dilation rates, paddings and layouts.
 - `name`: The name for the operation.
 

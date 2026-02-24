@@ -83,13 +83,13 @@ print(crBuffer.array)
 ## Parameters
 
 - `srcChannels`: An array that contains pointers to the start of each channel in the source buffer.
-- `destPlanarBuffers`: An array that contains   destination planar vImage buffers. Each source buffer must be the same height and width, but they may have different   values.
+- `destPlanarBuffers`: An array that contains `channelCount` destination planar vImage buffers. Each source buffer must be the same height and width, but they may have different [`rowBytes`](vimage_buffer/rowbytes.md) values.
 - `channelCount`: The number of channels in the source image.
 - `srcStrideBytes`: The number of bytes between consecutive pixels in a channel in the same row.
 - `srcWidth`: The width, in pixels, of the source channels and the destination planar buffers.
 - `srcHeight`: The height, in pixels, of the source channels and the destination planar buffers.
 - `srcRowBytes`: The distance, in bytes, between the corresponding pixels in consecutive rows in the source buffer, including any unused space between them.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass  ; otherwise, pass  .
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
 
 
 ---

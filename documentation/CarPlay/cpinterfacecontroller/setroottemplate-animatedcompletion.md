@@ -29,7 +29,7 @@ CarPlay calls `completion` after it presents the template. The Boolean parameter
 ## Parameters
 
 - `rootTemplate`: The template to use as the root of a new navigation hierarchy.
-- `animated`: If  , CarPlay animates the presentation of the template. CarPlay ignores this flag when there isn’t an existing navigation hierarchy to replace.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), CarPlay animates the presentation of the template. CarPlay ignores this flag when there isn’t an existing navigation hierarchy to replace.
 - `completion`: The closure CarPlay calls after it presents the template.
 
 ## See Also

@@ -28,9 +28,9 @@ The window scene environment typically changes in response to user actions. For 
 ## Parameters
 
 - `windowScene`: The window scene object whose environment changed.
-- `previousCoordinateSpace`: The previous coordinate space of the scene. Get the current coordinate space from the   property of the   object.
-- `previousInterfaceOrientation`: The previous interface orientation for your content. Get the current interface orientation from the   property of the   object.
-- `previousTraitCollection`: The previous traits for the window. Get the current window traits from the   property of the   object.
+- `previousCoordinateSpace`: The previous coordinate space of the scene. Get the current coordinate space from the [`coordinateSpace`](uiwindowscene/coordinatespace.md) property of the `windowScene` object.
+- `previousInterfaceOrientation`: The previous interface orientation for your content. Get the current interface orientation from the [`interfaceOrientation`](uiwindowscene/interfaceorientation.md) property of the `windowScene` object.
+- `previousTraitCollection`: The previous traits for the window. Get the current window traits from the [`traitCollection`](uiwindowscene/traitcollection.md) property of the `windowScene` object.
 
 ## See Also
 

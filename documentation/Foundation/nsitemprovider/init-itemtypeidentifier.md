@@ -30,8 +30,8 @@ Use this method to initialize an item provider for objects in your app. The item
 
 ## Parameters
 
-- `item`: An object containing the data you want to provide. You may specify   for this parameter and register items and types later.
-- `typeIdentifier`: A string that represents the UTI of the item. If   is not  , this parameter must not be  .
+- `item`: An object containing the data you want to provide. You may specify `nil` for this parameter and register items and types later.
+- `typeIdentifier`: A string that represents the UTI of the item. If `item` is not `nil`, this parameter must not be `nil`.
 
 ## See Also
 

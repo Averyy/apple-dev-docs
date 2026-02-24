@@ -30,10 +30,10 @@ Changing a component’s value often requires higher or coupled components to ch
 
 ## Parameters
 
-- `unit`: The unit to set with the given value. For possible values, see  .
+- `unit`: The unit to set with the given value. For possible values, see [`NSCalendar.Unit`](nscalendar/unit.md).
 - `v`: The value to set for the given calendar unit.
 - `date`: The date to use to perform the calculation.
-- `opts`: Options for the calculation. For possible values, see  .
+- `opts`: Options for the calculation. For possible values, see [`NSCalendar.Options`](nscalendar/options.md).
 
 ## See Also
 

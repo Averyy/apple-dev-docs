@@ -22,7 +22,7 @@ init(norm: NormalizationScaler<Element>.NormalizationStrategy = .l2)
 
 ## Parameters
 
-- `norm`: A selected NormalizationStrategy to scale by. Defaults as  .
+- `norm`: A selected NormalizationStrategy to scale by. Defaults as `l2`.
 
 ## See Also
 

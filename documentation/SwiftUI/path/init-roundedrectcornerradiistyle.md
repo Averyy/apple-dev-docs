@@ -27,8 +27,8 @@ This is a convenience function that creates a path of a rounded rectangle. Using
 ## Parameters
 
 - `rect`: A rectangle, specified in user space coordinates.
-- `cornerRadii`: The radius of each corner of the rectangle,   specified in user space coordinates.
-- `style`: The corner style. Defaults to the   style   if not specified.
+- `cornerRadii`: The radius of each corner of the rectangle, specified in user space coordinates.
+- `style`: The corner style. Defaults to the `continous` style if not specified.
 
 ## See Also
 

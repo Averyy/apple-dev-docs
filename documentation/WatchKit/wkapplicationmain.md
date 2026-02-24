@@ -24,9 +24,9 @@ This function instantiates the application object and the specified delegate (if
 
 ## Parameters
 
-- `argc`: The count of arguments in  . This is usually the corresponding parameter to  .
-- `argv`: A variable list of arguments. This is usually the corresponding parameter to  .
-- `applicationDelegateClassName`: The name of the app delegate’s class. This class must subclass   and adopt the   protocol.
+- `argc`: The count of arguments in `argv`. This is usually the corresponding parameter to `main`.
+- `argv`: A variable list of arguments. This is usually the corresponding parameter to `main`.
+- `applicationDelegateClassName`: The name of the app delegate’s class. This class must subclass [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) and adopt the [`WKApplicationDelegate`](wkapplicationdelegate.md) protocol.
 
 ## See Also
 

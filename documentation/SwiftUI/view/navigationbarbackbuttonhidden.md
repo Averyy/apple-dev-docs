@@ -43,7 +43,7 @@ NavigationStack {
 
 ## Parameters
 
-- `hidesBackButton`: A Boolean value that indicates whether to   hide the back button. The default value is  .
+- `hidesBackButton`: A Boolean value that indicates whether to hide the back button. The default value is `true`.
 
 ## See Also
 

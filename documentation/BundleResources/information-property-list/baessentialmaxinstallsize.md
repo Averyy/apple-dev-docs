@@ -13,6 +13,10 @@ The combined, maximum size of the essential assets that the system downloads bef
 - tvOS 18.4+
 - visionOS 2.4+
 
+
+
+**Type**: integer
+
 #### Discussion
 
 > ❗ **Important**:  The App Store uses this key to show the size of your app on the product page, so provide an accurate value. If you compress the assets, use the uncompressed size of the files for this value. Don’t overstate the disk space you require.

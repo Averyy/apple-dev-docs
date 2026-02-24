@@ -20,8 +20,8 @@ The index of the first element having the largest absolute value in the vector.
 
 ## Parameters
 
-- `count`: Number of elements in the vector  ; must be a multiple of 4.
-- `x`: A vector array of   values.
+- `count`: Number of elements in the vector `x`; must be a multiple of 4.
+- `x`: A vector array of `float` values.
 
 ## See Also
 

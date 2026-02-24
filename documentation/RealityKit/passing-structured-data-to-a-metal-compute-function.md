@@ -6,7 +6,7 @@ Send nontexture data from Swift to your Metal shaders using a shared header file
 
 #### Overview
 
-[`MTLComputeCommandEncoder`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder) provides [`setTexture(_:index:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/setTexture(_:index:)) to pass image data to a Metal compute function. Compute functions can access those textures using `[[texture(``)]]`. The compute command encoder doesn’t, however, provide an easy way to pass structured data to a compute function. You pass all nonimage data as an unstructured buffer using the encoder’s [`setBytes(_:length:index:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/setBytes(_:length:index:)) methods. It’s possible to use [`setBytes(_:length:index:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/setBytes(_:length:index:)) to pass data contained in a Swift struct to your compute function, which can receive it as a Metal struct as long as the two structs use the same exact memory layout. By using a bridging header and defining the struct in C, Metal and Swift can import the same header file and use the same struct with the same layout in memory.
+[`MTLComputeCommandEncoder`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder) provides [`setTexture(_:index:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/setTexture(_:index:)) to pass image data to a Metal compute function. Compute functions can access those textures using `[[texture(`*index*`)]]`. The compute command encoder doesn’t, however, provide an easy way to pass structured data to a compute function. You pass all nonimage data as an unstructured buffer using the encoder’s [`setBytes(_:length:index:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/setBytes(_:length:index:)) methods. It’s possible to use [`setBytes(_:length:index:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/setBytes(_:length:index:)) to pass data contained in a Swift struct to your compute function, which can receive it as a Metal struct as long as the two structs use the same exact memory layout. By using a bridging header and defining the struct in C, Metal and Swift can import the same header file and use the same struct with the same layout in memory.
 
 > **Note**: This article shows how to use a struct contained in a single header file that’s imported by both Swift and Metal. See the <doc:implementing-special-rendering-effects-with-realitykit-postprocessing sample code for two different examples of passing data, one that uses a separate Swift and Metal struct with the same layout in memory, and another that uses the approach from this article.
 
@@ -52,7 +52,7 @@ encoder.setBytes(&args, length: MemoryLayout<MyArguments>.stride, index: 0)
 
 ##### Retrieve the Buffer in the Compute Function
 
-In the Metal file that contains your compute function, include the new header file after including .
+In the Metal file that contains your compute function, include the new header file after including *metal_stdlib*.
 
 ```other
 #include <metal_stdlib>
@@ -61,7 +61,7 @@ In the Metal file that contains your compute function, include the new header fi
 using namespace metal;
 ```
 
-In your compute function, retrieve the buffer using `[[buffer(``)]]` and cast it to your struct. Metal allows you to do that as a function parameter, or you can retrieve it in the body of your function and store it in a variable. Make sure the index value you pass to `[[buffer(``)]]` matches the index value you used in your [`setBytes(_:length:index:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/setBytes(_:length:index:)) call. Your compute function can access members of the retrieved struct using the `->` operator.
+In your compute function, retrieve the buffer using `[[buffer(`*index*`)]]` and cast it to your struct. Metal allows you to do that as a function parameter, or you can retrieve it in the body of your function and store it in a variable. Make sure the index value you pass to `[[buffer(`*index*`)]]` matches the index value you used in your [`setBytes(_:length:index:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/setBytes(_:length:index:)) call. Your compute function can access members of the retrieved struct using the `->` operator.
 
 ```other
 [[kernel]]

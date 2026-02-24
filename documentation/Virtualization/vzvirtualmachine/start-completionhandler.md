@@ -20,7 +20,7 @@ Call this method to start a VM that’s in the [`VZVirtualMachine.State.stopped`
 
 ## Parameters
 
-- `completionHandler`: The block to call with the results of the startup attempt. This block has no return value and has one   object as its parameter:
+- `completionHandler`: The block to call with the results of the startup attempt. This block has no return value and has one [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object as its parameter: - **result**: A result type that contains an error object when the VM fails to start.
 
 ## See Also
 

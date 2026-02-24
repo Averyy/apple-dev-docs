@@ -12,6 +12,10 @@ The APIs an app can use to customize networking features.
 - tvOS 17.0+
 - visionOS 1.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 To add this entitlement to an App Store app, enable the Network Extensions capability in Xcode.

@@ -19,6 +19,10 @@ The payload-specific content for this profile.
 object TopLevel.PayloadContentItem
 ```
 
+## Properties
+
+- `ANY` (any) *(required)*: A payload item as defined by each payload type.
+
 ## See Also
 
 - [object TopLevel.ConsentText](toplevel/consenttext-data.dictionary.md)

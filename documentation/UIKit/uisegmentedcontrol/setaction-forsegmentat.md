@@ -26,7 +26,7 @@ Segments prefer images over titles when the action contains both. Selecting a se
 
 ## Parameters
 
-- `action`: A   object to set on the segment at the index you specify.
+- `action`: A [`UIAction`](uiaction.md) object to set on the segment at the index you specify.
 - `segment`: An integer index of a segment.
 
 ## See Also

@@ -34,7 +34,7 @@ A result code.
 - `inScope`: The audio unit scope for the parameter.
 - `inElement`: The audio unit element for the parameter.
 - `inValue`: The value that you want to apply to the parameter.
-- `inBufferOffsetInFrames`: Set this to 0. To schedule the setting of a parameter value, use the   function.
+- `inBufferOffsetInFrames`: Set this to 0. To schedule the setting of a parameter value, use the [`AudioUnitScheduleParameters(_:_:_:)`](audiounitscheduleparameters(_:_:_:).md) function.
 
 ## See Also
 

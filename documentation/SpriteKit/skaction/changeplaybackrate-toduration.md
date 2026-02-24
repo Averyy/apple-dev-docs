@@ -32,7 +32,7 @@ This action is not reversible.
 
 ## Parameters
 
-- `v`: The new value for the playback rate. A playback rate of   represents normal speed.
+- `v`: The new value for the playback rate. A playback rate of `1.0` represents normal speed.
 - `duration`: The duration of the animation, in seconds.
 
 ## See Also

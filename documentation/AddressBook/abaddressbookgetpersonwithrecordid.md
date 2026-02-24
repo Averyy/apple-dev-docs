@@ -22,8 +22,8 @@ If found, the person record with `recordID` as its identifier, otherwise `NULL`.
 
 ## Parameters
 
-- `addressBook`: The address book in which to search for  .
-- `recordID`: The record identifier to seek in  .
+- `addressBook`: The address book in which to search for `recordID`.
+- `recordID`: The record identifier to seek in `addressBook`.
 
 ## See Also
 

@@ -23,7 +23,7 @@ optional func browser(_ browser: NSBrowser, shouldTypeSelectFor event: NSEvent, 
 
 - `browser`: The browser.
 - `event`: The keyboard event being processed.
-- `searchString`: The keyboard-based selection string. It is   when no keyboard-based selection has begun.
+- `searchString`: The keyboard-based selection string. It is `nil` when no keyboard-based selection has begun.
 
 ## See Also
 

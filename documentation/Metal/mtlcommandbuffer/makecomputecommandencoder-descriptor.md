@@ -26,7 +26,7 @@ Use an [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) instance’s me
 
 ## Parameters
 
-- `computePassDescriptor`: An   instance that configures the   the method returns.
+- `computePassDescriptor`: An [`MTLComputePassDescriptor`](mtlcomputepassdescriptor.md) instance that configures the [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) the method returns.
 
 ## See Also
 

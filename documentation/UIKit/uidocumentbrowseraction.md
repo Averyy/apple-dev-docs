@@ -27,8 +27,8 @@ By default, the system provides a number of standard actions (copy, move, rename
 
 Document browser actions can appear in either the navigation bar or the Edit menu.
 
--  actions appear in the navigation bar when the user places the browser into the Select mode.
--  actions appear in the Edit Menu when the user long presses on a document or folder.
+- *Navigation bar* actions appear in the navigation bar when the user places the browser into the Select mode.
+- *Menu* actions appear in the Edit Menu when the user long presses on a document or folder.
 
 When triggered, these actions are passed the URLs of the currently selected items.
 

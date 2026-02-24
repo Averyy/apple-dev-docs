@@ -33,8 +33,8 @@ If the app intent implements a perform() method, it will be called after the act
 
 ## Parameters
 
-- `intent`: The type of App Intent that the   closure handles.
-- `action`: A closure that SwiftUI calls when the specified app intent is being performed.   The closure takes the app intent instance as an input parameter.
+- `intent`: The type of App Intent that the `action` closure handles.
+- `action`: A closure that SwiftUI calls when the specified app intent is being performed. The closure takes the app intent instance as an input parameter.
 
 
 ---

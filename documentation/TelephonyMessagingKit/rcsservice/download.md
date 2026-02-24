@@ -53,7 +53,7 @@ try FileManager.default.moveItem(at: temporaryURL,
 
 ## Parameters
 
-- `downloadRequest`: A   that indicates the URL to download and its destination path on the local filesystem.
+- `downloadRequest`: A [`RCSService.FileDownloadRequest`](rcsservice/filedownloadrequest.md) that indicates the URL to download and its destination path on the local filesystem.
 
 ## See Also
 

@@ -8,17 +8,82 @@ Use high-speed connections between GPUs to transfer data quickly.
 
 In macOS 10.15 and later, some Mac systems directly connect GPUs to each other, allowing you to quickly transfer data between them. These connections are not only faster, but they also avoid using the memory bus between the CPU and GPUs, leaving it available for other tasks. If your app uses multiple GPUs, test to see if they’re connected, and when they are, use the transfer mechanism described here.
 
-When GPUs are connected to each other, they’re said to be in the same . You determine whether a GPU is in a peer group by reading the device instance’s [`peerGroupID`](mtldevice/peergroupid.md) property. A nonzero value indicates that the GPU is in a peer group.
+When GPUs are connected to each other, they’re said to be in the same *peer group*. You determine whether a GPU is in a peer group by reading the device instance’s [`peerGroupID`](mtldevice/peergroupid.md) property. A nonzero value indicates that the GPU is in a peer group.
+
+**Swift**:
+
+```swift
+func isMemberOfAnyPeerGroup(_ device: MTLDevice ) -> Bool
+{
+    return device.peerGroupID != 0
+}
+```
+
+**Objective-C**:
+
+```objective-c
+bool isMemberOfAnyPeerGroup(id<MTLDevice> device)
+{
+    return (device.peerGroupID != 0);
+}
+```
 
 GPUs in the same peer group share the same peer group ID.
 
+**Swift**:
+
+```swift
+func areMembersOfSamePeerGroup(_ deviceA:MTLDevice,_ deviceB: MTLDevice) -> Bool
+{
+    return isMemberOfAnyPeerGroup(deviceA) &&
+           deviceA.peerGroupID == deviceB.peerGroupID
+}
+```
+
+**Objective-C**:
+
+```objective-c
+bool areMembersOfSamePeerGroup(id<MTLDevice> deviceA, id<MTLDevice> deviceB)
+{
+    return (isMemberOfAnyPeerGroup(deviceA) &&
+            deviceA.peerGroupID == deviceB.peerGroupID);
+}
+```
+
 You can get the list of all devices associated with a peer group by filtering on this ID.
+
+**Swift**:
+
+```swift
+func devicesInPeerGroup(_ peerGroupID: UInt64) -> [MTLDevice]
+{
+    if peerGroupID == 0
+    {
+        return []
+    }
+    let allDevices = MTLCopyAllDevices()
+    return allDevices.filter({$0.peerGroupID == peerGroupID})
+}
+```
+
+**Objective-C**:
+
+```objective-c
+NSArray<id<MTLDevice>>* devicesInPeerGroup(uint64_t peerGroupID)
+{
+    if (peerGroupID == 0)
+    {
+        return @[];
+    }
+    return [MTLCopyAllDevices() filteredArrayUsingPredicate: [NSPredicate predicateWithFormat:@"SELF.peerGroupID == %uul", peerGroupID]];
+}
+```
 
 ##### Copy Resources to the Gpu That Needs to Access Them
 
 In Metal, resources are created by device instances, and are always associated with the device instance that created them. Peer groups don’t change that association. If a resource is associated with a device instance, and you want to access it on another device instance, you need to copy the data to a resource associated with the second device instance.
 
-To copy data between members of a peer group, make a  on the second GPU that’s connected to the resource you want to copy. A remote view is a resource instance that contains no storage of its own; it references the storage on the original GPU. You can only use remote views to copy data; using them in other Metal commands results in an error.
+To copy data between members of a peer group, make a *remote view* on the second GPU that’s connected to the resource you want to copy. A remote view is a resource instance that contains no storage of its own; it references the storage on the original GPU. You can only use remote views to copy data; using them in other Metal commands results in an error.
 
 ##### Create a Remote View of a Resource
 
@@ -26,11 +91,63 @@ To create a remote view of a resource, the device instance you make the resource
 
 To create a buffer view, call the [`makeRemoteBufferView(_:)`](mtlbuffer/makeremotebufferview(_:).md) method:
 
+**Swift**:
+
+```swift
+let remoteBufferView = sourceBuffer.makeRemoteBufferView(otherDevice)
+```
+
+**Objective-C**:
+
+```objective-c
+id<MTLBuffer> remoteBufferView = [sourceBuffer newRemoteBufferViewForDevice:otherDevice];
+```
+
 Similarly, to create a texture view, call the [`makeRemoteTextureView(_:)`](mtltexture/makeremotetextureview(_:).md) method.
+
+**Swift**:
+
+```swift
+let remoteTextureView = sourceTexture.makeRemoteTextureView(otherDevice)
+```
+
+**Objective-C**:
+
+```objective-c
+id<MTLTexture> remoteTextureView = [sourceTexture newRemoteTextureViewForDevice:otherDevice];
+```
 
 ##### Copy Data Between Connected Gpus
 
 Create an [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md) and encode a copy command. The source for this copy command is the remote view instance:
+
+**Swift**:
+
+```swift
+if let blitEncoder = commandBuffer.makeBlitCommandEncoder()
+{
+    blitEncoder.copy(from: remoteBufferView, sourceOffset: 0,
+                       to: destinationBuffer, destinationOffset: 0,
+                     size: remoteBufferView.allocatedSize)
+        
+    blitEncoder.copy(from: remoteTextureView,
+                       to: destinationTexture)
+        
+    blitEncoder.endEncoding()
+}
+```
+
+**Objective-C**:
+
+```objective-c
+id<MTLBlitCommandEncoder> blitEncoder = [commandBuffer blitCommandEncoder];
+[blitEncoder copyFromBuffer:remoteBufferView sourceOffset:0
+                   toBuffer:destinationBuffer destinationOffset:0
+                       size:remoteBufferView.allocatedSize];
+[blitEncoder copyFromTexture:remoteTextureView
+                   toTexture:destinationTexture];
+[blitEncoder endEncoding];
+```
 
 As shown in the following illustration, there are three resource instances: the original resource that contains the data, a remote view that references the data, and a resource that receives the data.
 

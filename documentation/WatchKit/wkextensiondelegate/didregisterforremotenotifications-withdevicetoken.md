@@ -22,7 +22,7 @@ Typically, the system calls this method only after you call your [`WKExtension`]
 
 ## Parameters
 
-- `deviceToken`: The length of APNs device tokens can vary. Do not hardcode the token’s size in your app.
+- `deviceToken`: A globally unique token that identifies this device to APNs. Send this token to the server that you use to generate remote notifications. Your server must pass this token unmodified back to APNs when sending notifications to this device. The length of APNs device tokens can vary. Do not hardcode the token’s size in your app.
 
 ## See Also
 

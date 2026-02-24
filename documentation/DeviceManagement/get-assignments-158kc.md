@@ -13,6 +13,39 @@ Get a list of assignments currently assigned to a user or device.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+{
+  "adamIdStr" : "361304891",
+  "clientUserIdStr" : "user1",
+  "sToken" : "h40Gte9aQnZFDNM39IUkRPCsQDxBxbZB4Wy34pxefOuQkeeb3h2a5Rlopo4KDn3MrFKf4CM3OY+WGAoZ1cD6iZ6yzsMk1+5PVBNc66YS6ZQ="
+}
+```
+
+**Response**:
+
+```json
+{
+  "assignments" : [ {
+    "adamIdStr" : "361304891",
+    "clientUserIdStr" : "user1",
+    "pricingParam" : "STDQ"
+  } ],
+  "assignmentsInCurrentPage" : 1,
+  "currentPageIndex" : 0,
+  "expirationMillis" : 1860422147836,
+  "location" : {
+    "locationId" : 22222222222,
+    "locationName" : "LocationName"
+  },
+  "status" : 0,
+  "totalAssignments" : 1,
+  "totalPages" : 1,
+  "uId" : "100978"
+}
+```
+
 ## Topics
 
 ### Request and Response
@@ -20,6 +53,10 @@ Get a list of assignments currently assigned to a user or device.
   The request for a list of assignments.
 - [object VppAssignmentsResponse](vppassignmentsresponse.md)
   The response that contains a list of assignments.
+
+## Endpoint
+
+`POST https://vpp.itunes.apple.com/mdm/getAssignments`
 
 ## Request Body
 

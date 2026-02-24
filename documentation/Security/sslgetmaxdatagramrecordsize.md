@@ -30,7 +30,7 @@ You can specify a new size by calling [`SSLSetMaxDatagramRecordSize(_:_:)`](ssls
 ## Parameters
 
 - `dtlsContext`: The SSL context associated with the connection.
-- `maxSize`: The address of a   integer for storing the length.
+- `maxSize`: The address of a `size_t` integer for storing the length.
 
 
 ---

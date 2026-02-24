@@ -29,10 +29,10 @@ The system requires exactly one owner ACL entry in each access instance. The [`S
 ## Parameters
 
 - `access`: The access instance to which to add the information.
-- `applicationList`: Set this parameter to   to indicate that any app can use this item. Pass an empty array to indicate that there are no trusted apps.
+- `applicationList`: An array of [`SecTrustedApplication`](sectrustedapplication.md) instances identifying apps that are allowed access to the keychain item without user confirmation. Set this parameter to `nil` to indicate that any app can use this item. Pass an empty array to indicate that there are no trusted apps.
 - `description`: The human readable name to be used to refer to this item when the user is prompted.
-- `promptSelector`: A set of prompt selector flags. See   for possible values.
-- `newAcl`: A pointer the method uses to return the new   instance.
+- `promptSelector`: A set of prompt selector flags. See [`SecKeychainPromptSelector`](seckeychainpromptselector.md) for possible values.
+- `newAcl`: A pointer the method uses to return the new [`SecACL`](secacl.md) instance.
 
 
 ---

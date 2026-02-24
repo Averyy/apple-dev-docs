@@ -39,7 +39,7 @@ Text("A single line of text, too long to fit in a box.")
 
 ![A screenshot showing the text in a text view contained within its](https://docs-assets.developer.apple.com/published/ca930efefe15afab8a62157417aee574/SwiftUI-View-fixedSize-1%402x.png)
 
-The `fixedSize()` modifier can be used to create a view that maintains the  of its children both dimensions:
+The `fixedSize()` modifier can be used to create a view that maintains the *ideal size* of its children both dimensions:
 
 ```swift
 Text("A single line of text, too long to fit in a box.")
@@ -52,7 +52,7 @@ This can result in the view exceeding the parent’s bounds, which may or may no
 
 ![A screenshot showing a text view exceeding the bounds of its](https://docs-assets.developer.apple.com/published/39fd04b5cd61b452f33e4b492d96759c/SwiftUI-View-fixedSize-2%402x.png)
 
-You can think of `fixedSize()` as the creation of a  to the view size proposed to a view by its parent. The ideal size of a view, and the specific effects of `fixedSize()` depends on the particular view and how you have configured it.
+You can think of `fixedSize()` as the creation of a *counter proposal* to the view size proposed to a view by its parent. The ideal size of a view, and the specific effects of `fixedSize()` depends on the particular view and how you have configured it.
 
 To create a view that fixes the view’s size in either the horizontal or vertical dimensions, see [`fixedSize(horizontal:vertical:)`](view/fixedsize(horizontal:vertical:).md).
 

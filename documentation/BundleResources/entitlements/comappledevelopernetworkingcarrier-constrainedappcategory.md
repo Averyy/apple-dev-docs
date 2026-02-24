@@ -9,6 +9,10 @@ The key that defines an app’s category for accessing a carrier-provided satell
 - iOS 26.0+
 - iPadOS 26.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 This entitlement defines your app’s category for a carrier-provided satellite network, if the person’s carrier provides it.

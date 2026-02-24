@@ -25,8 +25,8 @@ If you don’t need the longest effective range, it’s far more efficient to us
 ## Parameters
 
 - `location`: The index for which to return attributes. This value must not exceed the bounds of the receiver.
-- `range`: If not  , on output, contains the maximum range over which the attributes and values are the same as those at  , clipped to  .
-- `rangeLimit`: The range over which to search for continuous presence of the attributes at  . This value must not exceed the bounds of the receiver.
+- `range`: If not `NULL`, on output, contains the maximum range over which the attributes and values are the same as those at `location`, clipped to `rangeLimit`.
+- `rangeLimit`: The range over which to search for continuous presence of the attributes at `location`. This value must not exceed the bounds of the receiver.
 
 ## See Also
 

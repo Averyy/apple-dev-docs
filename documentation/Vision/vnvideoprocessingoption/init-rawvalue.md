@@ -21,7 +21,7 @@ init(rawValue: String)
 
 ## Parameters
 
-- `rawValue`: A string value that represents a   or  .
+- `rawValue`: A string value that represents a [`frameCadence`](vnvideoprocessingoption/framecadence.md) or [`timeInterval`](vnvideoprocessingoption/timeinterval.md).
 
 
 ---

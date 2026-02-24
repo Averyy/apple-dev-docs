@@ -22,7 +22,7 @@ static func result<Value, Content>(value: Value, dialog: IntentDialog, @ViewBuil
 
 ## Parameters
 
-- `value`: The value produced by the 
+- `value`: The value produced by the `AppIntent`
 - `dialog`: A custom success dialog
 - `content`: A custom View to display the result
 

@@ -28,7 +28,7 @@ The first three components of column `3` provide the translation values `tx`, `t
 ## Parameters
 
 - `matrix`: The source matrix.
-- `column`: The index of the column to replace, which must be a number between   and  , inclusive.
+- `column`: The index of the column to replace, which must be a number between `0` and `3`, inclusive.
 - `vector`: A vector holding the replacement component values.
 
 ## See Also

@@ -28,7 +28,7 @@ Core Bluetooth invokes this method when your app calls the [`add(_:)`](cbperiphe
 
 - `peripheral`: The peripheral manager adding the service.
 - `service`: The service added to the local GATT database.
-- `error`: The reason the call failed, or   if no error occurred.
+- `error`: The reason the call failed, or `nil` if no error occurred.
 
 
 ---

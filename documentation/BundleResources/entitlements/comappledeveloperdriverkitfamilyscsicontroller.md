@@ -8,6 +8,10 @@ A Boolean value that indicates whether to match the driver against devices with 
 **Availability**:
 - macOS 11.3+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Add this entitlement to the default entitlements file that Xcode created for your driver project.

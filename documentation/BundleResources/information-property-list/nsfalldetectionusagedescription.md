@@ -11,6 +11,10 @@ A message to the user that explains the app’s request for permission to access
 - visionOS 1.0+
 - watchOS 7.2+
 
+
+
+**Type**: string
+
 #### Discussion
 
 > ❗ **Important**:  If your app uses the [`CMFallDetectionManager`](https://developer.apple.com/documentation/CoreMotion/CMFallDetectionManager), the app requires this key.

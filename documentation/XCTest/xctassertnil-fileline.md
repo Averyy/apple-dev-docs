@@ -17,7 +17,7 @@ This function generates a failure when `expression != nil`.
 
 ## Parameters
 
-- `expression`: An expression of type   to compare against  .
+- `expression`: An expression of type `Any?` to compare against `nil`.
 - `message`: An optional description of a failure.
 - `file`: The file where the failure occurs. The default is the filename of the test case where you call this function.
 - `line`: The line number where the failure occurs. The default is the line number where you call this function.

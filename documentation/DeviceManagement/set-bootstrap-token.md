@@ -38,6 +38,10 @@ Requires a device enrolled using Automated Device Enrollment.
 - [object SetBootstrapTokenRequest](setbootstraptokenrequest.md)
   The set bootstrap token request details.
 
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/checkin`
+
 ## Request Body
 
 The request object the system sends for the `SetBootstrapToken` request.

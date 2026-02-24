@@ -24,7 +24,7 @@ This method will return [`false`](https://developer.apple.com/documentation/Swif
 
 ## Parameters
 
-- `options`: The options to use when activating the application. See   for the possible values.
+- `options`: The options to use when activating the application. See [`NSApplication.ActivationOptions`](nsapplication/activationoptions.md) for the possible values.
 
 ## See Also
 

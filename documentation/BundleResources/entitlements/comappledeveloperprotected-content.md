@@ -8,6 +8,12 @@ A Boolean value indicating whether the system prohibits capturing your app’s c
 **Availability**:
 - visionOS 26.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 When an app enables app-protected content mode, the system disables the ability to capture or share the content being displayed on Vision Pro, without changing what the person is seeing on their device. This allows an app to prevent sharing information that a developer doesn’t want to be shared outside of Vision Pro. Shared content like screenshots and screen recordings are instead replaced by a static image showing that the system didn’t allow the capture due to app-protected content mode being enabled.

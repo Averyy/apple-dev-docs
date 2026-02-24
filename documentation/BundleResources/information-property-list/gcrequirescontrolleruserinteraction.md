@@ -10,6 +10,10 @@ The platforms for which your app requires or you recommend a game controller.
 - iPadOS 15.0+
 - visionOS 1.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 Add this key to your information property list if your app requires a game controller in visionOS or to recommend a game controller in iOS. Adding this key requires you to enable the Game Controllers capability in Xcode and ExtendedGamepad under the Game Controllers capability. Xcode sets the value of [`GCSupportsControllerUserInteraction`](information-property-list/gcsupportscontrolleruserinteraction.md) to `YES` and includes an entry in the [`GCSupportedGameControllers`](information-property-list/gcsupportedgamecontrollers.md) dictionary with ProfileName set to ExtendedGamepad.

@@ -31,7 +31,7 @@ The animator object returned by this method begins in the [`UIViewAnimatingState
 ## Parameters
 
 - `duration`: The duration of the animation, in seconds.
-- `ratio`: The damping ratio to apply to the initial acceleration and oscillation. To smoothly decelerate the animation without oscillation, specify a value of  . Specify values closer to   to create less damping and more oscillation.
+- `ratio`: The damping ratio to apply to the initial acceleration and oscillation. To smoothly decelerate the animation without oscillation, specify a value of `1`. Specify values closer to `0` to create less damping and more oscillation.
 - `animations`: The block containing the animations. This block has no return value and takes no parameters. Use this block to modify any animatable view properties. When you start the animations, those properties are animated from their current values to the new values using the specified animation parameters.
 
 ## See Also

@@ -27,7 +27,7 @@ The error you provide and its optional message appear on the Apple Pay sheet. Th
 
 ## Parameters
 
-- `postalAddressKey`: A key value from   that indicates which part of the address has an error.
+- `postalAddressKey`: A key value from [`CNPostalAddress`](https://developer.apple.com/documentation/Contacts/CNPostalAddress) that indicates which part of the address has an error.
 - `localizedDescription`: Optional. Provide a localized, user-facing error message string to help the user resolve the error.
 
 ## See Also

@@ -28,7 +28,7 @@ Don’t use this method to release your `ivars` structure; use the [`free`](ious
 
 ## Parameters
 
-- `provider`: The provider associated with the current service. This object is the same one that the system previously passed to your service’s   method.
+- `provider`: The provider associated with the current service. This object is the same one that the system previously passed to your service’s [`Start`](iouserblockstoragedevice/start.md) method.
 
 ## See Also
 

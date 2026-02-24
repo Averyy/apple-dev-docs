@@ -26,7 +26,7 @@ For more information on using feedback generators, see `Using feedback generator
 
 ## Parameters
 
-- `style`: A value representing the mass of the colliding objects. For a list of valid feedback styles, see the   enumeration.
+- `style`: A value representing the mass of the colliding objects. For a list of valid feedback styles, see the [`UIImpactFeedbackGenerator.FeedbackStyle`](uiimpactfeedbackgenerator/feedbackstyle.md) enumeration.
 
 
 ---

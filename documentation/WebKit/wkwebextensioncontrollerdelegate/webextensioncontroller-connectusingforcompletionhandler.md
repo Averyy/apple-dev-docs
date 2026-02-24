@@ -33,7 +33,7 @@ If not implemented, the default behavior is to pass the messages to the app exte
 - `controller`: The web extension controller that is managing the extension.
 - `port`: A port object for handling the message exchange.
 - `extensionContext`: The context in which the web extension is running.
-- `completionHandler`: A block to be called when the connection is ready to use, taking an optional error.   If the connection is successfully established, the error should be \c nil.
+- `completionHandler`: A block to be called when the connection is ready to use, taking an optional error. If the connection is successfully established, the error should be \c nil.
 
 
 ---

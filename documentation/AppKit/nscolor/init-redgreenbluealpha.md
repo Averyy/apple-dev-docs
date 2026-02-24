@@ -22,10 +22,10 @@ Where possible, it is preferable to specify the colorspace explicitly using the 
 
 ## Parameters
 
-- `red`: The red channel value. If the value is outside of the range  , the extended sRGB color space is used.
-- `green`: The green channel value. If the value is outside of the range  , the extended sRGB color space is used.
-- `blue`: The blue channel value. If the value is outside of the range  , the extended sRGB color space is used.
-- `alpha`: The alpha (opacity), specified as a value from  . Alpha values below   are interpreted as  , and values above   are interpreted as  .
+- `red`: The red channel value. If the value is outside of the range `0–1.0`, the extended sRGB color space is used.
+- `green`: The green channel value. If the value is outside of the range `0–1.0`, the extended sRGB color space is used.
+- `blue`: The blue channel value. If the value is outside of the range `0–1.0`, the extended sRGB color space is used.
+- `alpha`: The alpha (opacity), specified as a value from `0-1.0`. Alpha values below `0` are interpreted as `0.0`, and values above `1.0` are interpreted as `1.0`.
 
 ## See Also
 

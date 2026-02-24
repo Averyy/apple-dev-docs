@@ -25,7 +25,7 @@ The localized name of service.
 
 ## Parameters
 
-- `service`: The service name for which to get the localized name. Specify a key name such as  .
+- `service`: The service name for which to get the localized name. Specify a key name such as [`CNSocialProfileServiceTwitter`](cnsocialprofileservicetwitter.md).
 
 ## See Also
 

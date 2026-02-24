@@ -10,6 +10,10 @@ A dictionary containing information about launch images.
 - iPadOS 7.0+
 - tvOS 9.0+
 
+
+
+**Type**: dictionary 
+
 #### Discussion
 
 `UILaunchImages` has been deprecated; use Xcode launch storyboards instead. For more information on how to construct and format your launch storyboard, see [`Launch Screen`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/launch-screen/).

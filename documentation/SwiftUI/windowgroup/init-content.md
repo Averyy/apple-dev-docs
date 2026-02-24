@@ -28,8 +28,8 @@ The window group uses the given view as a template to form the content of each w
 
 ## Parameters
 
-- `title`: The   view to use for the group’s title.
-- `content`: A closure that creates the content for each instance   of the group.
+- `title`: The [`Text`](text.md) view to use for the group’s title.
+- `content`: A closure that creates the content for each instance of the group.
 
 ## See Also
 

@@ -48,7 +48,7 @@ if let url = Bundle.main.url(forResource: "MyMovie", withExtension: "mp4") {
 
 ## Parameters
 
-- `avPlayer`: An     instance.
+- `avPlayer`: An [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) instance.
 
 
 ---

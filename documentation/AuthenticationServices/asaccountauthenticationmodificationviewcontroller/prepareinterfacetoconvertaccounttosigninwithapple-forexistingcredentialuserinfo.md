@@ -25,7 +25,7 @@ func prepareInterfaceToConvertAccountToSignInWithApple(for serviceIdentifier: AS
 
 - `serviceIdentifier`: An identifier that represents a particular service that the user needs a credential for, like a web site.
 - `existingCredential`: The current password credential for the service.
-- `userInfo`: A dictionary that contains app-specific values when the request to upgrade to Sign in with Apple initiates from by the parent app. If the request to upgrade to Sign in with Apple doesn’t initiate from the app, this parameter is  .
+- `userInfo`: A dictionary that contains app-specific values when the request to upgrade to Sign in with Apple initiates from by the parent app. If the request to upgrade to Sign in with Apple doesn’t initiate from the app, this parameter is `nil`.
 
 ## See Also
 

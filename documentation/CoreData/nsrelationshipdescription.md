@@ -24,7 +24,7 @@ class NSRelationshipDescription
 
 [`NSRelationshipDescription`](nsrelationshipdescription.md) provides additional attributes that are specific to modeling a relationship between two entities. For the common attributes of all property types, see [`NSPropertyDescription`](nspropertydescription.md).
 
-For example, use this class to define a relationship’s  — the number of managed objects the relationship can reference.
+For example, use this class to define a relationship’s *cardinality* — the number of managed objects the relationship can reference.
 
 - For a to-one relationship, set [`maxCount`](nsrelationshipdescription/maxcount.md) to `1`.
 - For a to-many relationship, set [`maxCount`](nsrelationshipdescription/maxcount.md) to a number greater than `1` to impose an upper limit; otherwise, use `0` to allow an unlimited number of referenced objects.

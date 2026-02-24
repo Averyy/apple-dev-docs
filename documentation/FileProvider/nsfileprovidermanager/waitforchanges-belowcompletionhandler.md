@@ -32,7 +32,7 @@ If the `itemIdentifier` property doesn’t refer to a directory, this method imm
 ## Parameters
 
 - `itemIdentifier`: The item’s identifier.
-- `completionHandler`: A block that the system calls after all the changes are complete. The block takes the following parameters:
+- `completionHandler`: A block that the system calls after all the changes are complete. The block takes the following parameters: - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

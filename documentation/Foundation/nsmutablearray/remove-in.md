@@ -27,7 +27,7 @@ Matches are determined by comparing `anObject` to the objects in the receiver us
 ## Parameters
 
 - `anObject`: The object to be removed from the array’s content.
-- `range`: The range from which to remove  .
+- `range`: The range from which to remove `anObject`. > ❗ **Important**:  Raises an exception `NSRangeException` if `aRange` exceeds the bounds of the array.
 
 ## See Also
 

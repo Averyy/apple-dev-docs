@@ -30,6 +30,16 @@ Specify `com.apple.AIM.account` as the payload type.
 | Allowed in user enrollment | NA |
 | Allow multiple payloads | macOS |
 
+## Properties
+
+- `AIMAccountDescription` (string): The description of the account.
+- `AIMAuthentication` (string) *(required)*: The authentication method for the account.
+- `AIMHostName` (string) *(required)*: The server address.
+- `AIMPassword` (string): The user’s password.
+- `AIMPort` (integer): The connection port for the server.
+- `AIMUserName` (string): The user’s login name.
+- `AIMUseSSL` (boolean): If `true`, enables SSL.
+
 ## See Also
 
 - [object APN](apn.md)

@@ -26,10 +26,10 @@ func cblas_csscal(_ N: __LAPACK_int, _ ALPHA: Float, _ X: OpaquePointer?, _ INCX
 
 ## Parameters
 
-- `N`: The number of elements in vector  .
+- `N`: The number of elements in vector `x`.
 - `ALPHA`: The constant scaling factor.
 - `X`: Vector X.
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
 
 ## See Also
 

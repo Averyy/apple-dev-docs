@@ -25,7 +25,7 @@ The group that `ctx` belongs to.
 
 ## Parameters
 
-- `ctx`: The   with the group you want to get.
+- `ctx`: The [`JSContextRef`](jscontextref.md) with the group you want to get.
 
 
 ---

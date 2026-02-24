@@ -24,7 +24,7 @@ A result code. See [`Secure Transport Result Codes`](secure-transport-result-cod
 ## Parameters
 
 - `context`: The SSL context associated with the connection.
-- `maxVersion`: The new maximum version ( , for example). See   for a complete list.
+- `maxVersion`: The new maximum version ([`SSLProtocol.tlsProtocol1`](sslprotocol/tlsprotocol1.md), for example). See [`SSLProtocol`](sslprotocol.md) for a complete list.
 
 
 ---

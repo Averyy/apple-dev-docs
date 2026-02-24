@@ -22,8 +22,8 @@ optional func contentKeySession(_ session: AVContentKeySession, contentKeyReques
 
 ## Parameters
 
-- `session`: The   instance that initiated the content key request.
-- `keyRequest`: The   instance whose response was successfully processed.
+- `session`: The [`AVContentKeySession`](avcontentkeysession.md) instance that initiated the content key request.
+- `keyRequest`: The [`AVContentKeyRequest`](avcontentkeyrequest.md) instance whose response was successfully processed.
 
 ## See Also
 

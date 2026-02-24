@@ -28,7 +28,7 @@ The root view controller becomes the top view controller. For information on how
 
 ## Parameters
 
-- `animated`: Set this value to   to animate the transition. Pass   if you are setting up a navigation controller before its view is displayed.
+- `animated`: Set this value to [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition. Pass [`false`](https://developer.apple.com/documentation/Swift/false) if you are setting up a navigation controller before its view is displayed.
 
 ## See Also
 

@@ -16,7 +16,7 @@ func changeColor(_ sender: Any?)
 
 ## Parameters
 
-- `sender`: The control that sent the message.  ’s implementation sends a   message to   to get the new color.
+- `sender`: The control that sent the message. `NSTextView`’s implementation sends a [`color`](nscolorpanel/color.md) message to `sender` to get the new color.
 
 ## See Also
 

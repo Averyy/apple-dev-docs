@@ -32,7 +32,7 @@ However, clients who want all localizations in preference order can make repeate
 
 ## Parameters
 
-- `localizationsArray`: An array of   objects, each of which specifies the language ID for a localization that the bundle supports.
+- `localizationsArray`: An array of `NSString` objects, each of which specifies the language ID for a localization that the bundle supports.
 
 ## See Also
 

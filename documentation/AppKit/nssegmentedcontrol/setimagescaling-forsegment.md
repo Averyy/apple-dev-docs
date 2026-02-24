@@ -16,8 +16,8 @@ func setImageScaling(_ scaling: NSImageScaling, forSegment segment: Int)
 
 ## Parameters
 
-- `scaling`: One of the image scaling constants. For a list of possible values, see  .
-- `segment`: The index of the segment whose enabled state you want to get. This method raises an exception ( ) if the index is out of bounds.
+- `scaling`: One of the image scaling constants. For a list of possible values, see [`NSImageScaling`](nsimagescaling.md).
+- `segment`: The index of the segment whose enabled state you want to get. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if the index is out of bounds.
 
 ## See Also
 

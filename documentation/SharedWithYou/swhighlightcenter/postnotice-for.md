@@ -20,7 +20,7 @@ func postNotice(for event: any SWHighlightEvent)
 
 ## Parameters
 
-- `event`: The   to add.
+- `event`: The [`SWHighlightEvent`](swhighlightevent.md) to add.
 
 ## See Also
 

@@ -21,7 +21,7 @@ var bufferIndex: Int { get set }
 
 #### Discussion
 
-A mesh may store vertex data in either a  model, where data for each attribute lies in a separate vertex buffer, or in an  model. In the latter, multiple vertex attributes share the same buffer (and thus have the same [`bufferIndex`](mdlvertexattribute/bufferindex.md) value), and the [`format`](mdlvertexattribute/format.md) and [`offset`](mdlvertexattribute/offset.md) values (together with the [`stride`](mdlvertexbufferlayout/stride.md) value of a related [`MDLVertexBufferLayout`](mdlvertexbufferlayout.md) object) identify which bytes in that buffer refer to which vertex attributes.
+A mesh may store vertex data in either a *structure of arrays* model, where data for each attribute lies in a separate vertex buffer, or in an *array of structures* model. In the latter, multiple vertex attributes share the same buffer (and thus have the same [`bufferIndex`](mdlvertexattribute/bufferindex.md) value), and the [`format`](mdlvertexattribute/format.md) and [`offset`](mdlvertexattribute/offset.md) values (together with the [`stride`](mdlvertexbufferlayout/stride.md) value of a related [`MDLVertexBufferLayout`](mdlvertexbufferlayout.md) object) identify which bytes in that buffer refer to which vertex attributes.
 
 ## See Also
 

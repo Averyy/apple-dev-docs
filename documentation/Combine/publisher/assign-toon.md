@@ -57,7 +57,7 @@ cancellable = myRange.publisher
 
 ## Parameters
 
-- `keyPath`: A key path that indicates the property to assign. See   in   to learn how to use key paths to specify a property of an object.
+- `keyPath`: A key path that indicates the property to assign. See [`Key-Path Expression`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/Expressions.html#//apple_ref/doc/uid/TP40014097-CH32-ID563) in *The Swift Programming Language* to learn how to use key paths to specify a property of an object.
 - `object`: The object that contains the property. The subscriber assigns the object’s property every time it receives a new value.
 
 ## See Also

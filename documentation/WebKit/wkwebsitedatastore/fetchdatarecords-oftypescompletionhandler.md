@@ -24,8 +24,8 @@ Call this method to retrieve information about the types of data that the websit
 
 ## Parameters
 
-- `dataTypes`: The types of records to fetch. For a list of all possible types, see  . To specify all types, specify the set returned by the   method.
-- `completionHandler`: The completion handler block to execute asynchronously with the results. This block has no return value and takes the following parameter:
+- `dataTypes`: The types of records to fetch. For a list of all possible types, see [`Data Store Record Types`](data-store-record-types.md). To specify all types, specify the set returned by the [`allWebsiteDataTypes()`](wkwebsitedatastore/allwebsitedatatypes().md) method.
+- `completionHandler`: The completion handler block to execute asynchronously with the results. This block has no return value and takes the following parameter: - **dataRecordArray**: An array of [`WKWebsiteDataRecord`](wkwebsitedatarecord.md) objects. Each object in this array corresponds to data for one of the requested types. If no records of the requested types exist, this array is empty.
 
 ## See Also
 

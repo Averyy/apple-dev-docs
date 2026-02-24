@@ -33,7 +33,7 @@ This function retrieves the version of the Secure Sockets Layer (SSL) or Transpo
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `protocol`: On return, points to the negotiated protocol version of the active session. The value is set to   if no SSL session is in progress.
+- `protocol`: On return, points to the negotiated protocol version of the active session. The value is set to [`SSLProtocol.sslProtocolUnknown`](sslprotocol/sslprotocolunknown.md) if no SSL session is in progress.
 
 
 ---

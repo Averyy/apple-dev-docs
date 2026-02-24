@@ -26,7 +26,7 @@ A result code. Returns `noErr` if successful.
 
 ## Parameters
 
-- `desc`:   being interrogated.
+- `desc`: `CMFormatDescription` being interrogated.
 - `localFontID`: Font number, local to the FormatDescription.
 - `fontNameOut`: On output, returns name of the font. The returned font is not retained by this call, so clients are required to retain it if they need to keep it longer.
 

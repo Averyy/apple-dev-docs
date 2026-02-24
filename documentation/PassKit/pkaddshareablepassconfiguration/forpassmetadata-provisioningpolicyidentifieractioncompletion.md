@@ -23,7 +23,8 @@ class func forPassMetaData(_ passMetadata: [PKShareablePassMetadata], provisioni
 - `passMetadata`: 
 - `provisioningPolicyIdentifier`: 
 - `action`: The action that the system performs with the shareable pass.
-- `completion`: A completion handler that returns the shareable pass configuration or an error. This handler takes the following parameters:
+- `completion`: A completion handler that returns the shareable pass configuration or an error. This handler takes the following parameters: - **`shareableCredentialConfiguration`**: A [`PKAddShareablePassConfiguration`](pkaddshareablepassconfiguration.md) that contains the shareable pass configuration, or `nil` if an error occurred.
+- **`error`**: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) that contains the error, or `nil` if no error occurred.
 
 ## See Also
 

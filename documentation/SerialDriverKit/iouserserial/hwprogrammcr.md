@@ -24,8 +24,8 @@ Override this method and use it to program your hardware with the specified info
 
 ## Parameters
 
-- `dtr`: A Boolean value indicating whether to set or clear the data-terminal-ready bit. If the value is  , set the bit; otherwise, clear it.
-- `rts`: A Boolean value indicating whether to set or clear the request-to-send bit. If the value is  , set the bit; otherwise, clear it.
+- `dtr`: A Boolean value indicating whether to set or clear the data-terminal-ready bit. If the value is `YES`, set the bit; otherwise, clear it.
+- `rts`: A Boolean value indicating whether to set or clear the request-to-send bit. If the value is `YES`, set the bit; otherwise, clear it.
 
 ## See Also
 

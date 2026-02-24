@@ -27,8 +27,8 @@ The transform function will not begin to execute until after the command buffer 
 
 - `commandBuffer`: A valid command buffer.
 - `source`: A valid texture containing the source image for the filter.
-- `histogram`: A valid buffer containing the histogram results for an image. This filter will use these histogram results to generate the cumulative histogram for equalizing the image. The histogram results per channel are stored together. The number of channels for which histogram results are stored is determined by the number of channels in the image. If the   value of the   property is   and the source image is RGBA, then only histogram results for RGB channels are stored.
-- `histogramOffset`: The byte offset into the histogram buffer where the histogram starts. Must conform to alignment requirements for the   parameter of the   method.
+- `histogram`: A valid buffer containing the histogram results for an image. This filter will use these histogram results to generate the cumulative histogram for equalizing the image. The histogram results per channel are stored together. The number of channels for which histogram results are stored is determined by the number of channels in the image. If the `histogramForAlpha` value of the [`histogramInfo`](mpsimagehistogramequalization/histograminfo.md) property is [`false`](https://developer.apple.com/documentation/Swift/false) and the source image is RGBA, then only histogram results for RGB channels are stored.
+- `histogramOffset`: The byte offset into the histogram buffer where the histogram starts. Must conform to alignment requirements for the `offset` parameter of the [`setBuffer(_:offset:index:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/setBuffer(_:offset:index:)) method.
 
 ## See Also
 

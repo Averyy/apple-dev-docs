@@ -8,6 +8,10 @@ A Boolean value indicating whether an Action extension displays an item in a win
 **Availability**:
 - macOS 10.10+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [NSExtensionServiceToolbarIconFile](information-property-list/nsextension/nsextensionattributes/nsextensionservicetoolbariconfile.md)

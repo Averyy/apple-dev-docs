@@ -41,7 +41,7 @@ if (!nsErr) {
 
 ## Parameters
 
-- `when`: The node time to start or resume playback. Passing   starts playback immediately.
+- `when`: The node time to start or resume playback. Passing `nil` starts playback immediately.
 
 ## See Also
 

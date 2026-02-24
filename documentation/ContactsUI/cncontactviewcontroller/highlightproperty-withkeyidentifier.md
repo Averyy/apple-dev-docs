@@ -24,7 +24,7 @@ When a single value property key is specified, identifier will be ignored.
 ## Parameters
 
 - `key`: Key of the property to highlight.
-- `identifier`:   is a multivalue property, the value to highlight.
+- `identifier`: `property` is a multivalue property, the value to highlight.
 
 
 ---

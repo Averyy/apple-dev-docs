@@ -16,7 +16,7 @@ func addAccessoryView(to savePanel: NSSavePanel!)
 
 ## Parameters
 
-- `savePanel`: The save panel to add the   to.
+- `savePanel`: The save panel to add the `IKSaveOptions` to.
 
 ## See Also
 

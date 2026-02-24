@@ -24,7 +24,7 @@ This method is called regardless of whether your code performs one-step or two-s
 
 ## Parameters
 
-- `fromInterfaceOrientation`: The old orientation of the user interface. For possible values, see  .
+- `fromInterfaceOrientation`: The old orientation of the user interface. For possible values, see [`UIInterfaceOrientation`](uiinterfaceorientation.md).
 
 ## See Also
 

@@ -21,6 +21,10 @@ After this call, the devices in the list will have no profiles associated with t
 - [object ClearProfileResponse](clearprofileresponse.md)
 - [object ClearProfileResponse.Devices](clearprofileresponse/devices-data.dictionary.md)
 
+## Endpoint
+
+`DELETE https://mdmenrollment.apple.com/profile/devices`
+
 ## Request Body
 
 The request used to remove a profile from devices.

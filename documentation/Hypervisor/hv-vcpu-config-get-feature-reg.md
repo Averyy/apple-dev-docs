@@ -22,7 +22,7 @@ func hv_vcpu_config_get_feature_reg(_ config: hv_vcpu_config_t, _ feature_reg: h
 
 - `config`: The vCPU configuration.
 - `feature_reg`: The ID of the feature register.
-- `value`: The value of   on output. Undefined if the call doesn’t succeed.
+- `value`: The value of `feature_reg` on output. Undefined if the call doesn’t succeed.
 
 ## See Also
 

@@ -26,7 +26,7 @@ If NULL is returned for a given structure, only minimal parsing is done for that
 
 - `parser`: The CFXMLParser object making the callback.
 - `nodeDesc`: The CFXMLNode object that represents the XML structure encountered.
-- `info`: The program-defined context data you specified in the   structure when creating the parser.
+- `info`: The program-defined context data you specified in the [`CFXMLParserContext`](cfxmlparsercontext.md) structure when creating the parser.
 
 ## See Also
 

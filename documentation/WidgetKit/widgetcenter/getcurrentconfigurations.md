@@ -26,7 +26,7 @@ func getCurrentConfigurations(_ completion: @escaping @Sendable (Result<[WidgetI
 
 ## Parameters
 
-- `completion`: A completion handler called when the widget   information is available.
+- `completion`: A completion handler called when the widget information is available.
 
 ## See Also
 

@@ -31,7 +31,7 @@ For details of the format of the format string and of limitations on variable su
 ## Parameters
 
 - `predicateFormat`: The format string for the new predicate.
-- `argList`: The arguments to substitute into  . Values are substituted in the order they appear in the argument list.
+- `argList`: The arguments to substitute into `predicateFormat`. Values are substituted in the order they appear in the argument list.
 
 ## See Also
 

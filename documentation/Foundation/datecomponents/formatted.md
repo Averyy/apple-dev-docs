@@ -26,7 +26,7 @@ A representation of `self` using the given `format`. The type of the representat
 
 ## Parameters
 
-- `format`: The format for formatting  .
+- `format`: The format for formatting `self`.
 
 
 ---

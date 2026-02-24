@@ -20,7 +20,7 @@ Kerning values are determined by the point size of the fonts in the selection.
 
 ## Parameters
 
-- `sender`: The control that sent the message; may be  .
+- `sender`: The control that sent the message; may be `nil`.
 
 ## See Also
 

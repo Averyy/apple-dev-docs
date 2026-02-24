@@ -6,6 +6,10 @@
 **Availability**:
 - tvOS 16.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [NSApplicationServicePlatformSupport](information-property-list/nsapplicationservices/browses/nsapplicationserviceplatformsupport.md)

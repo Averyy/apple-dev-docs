@@ -16,10 +16,14 @@ With FSKit, you can extend macOS by enabling access to new types of file systems
 
 An FSKit module consists of two main parts:
 
-- A set of  that you define in the module’s `Info.plist` file. These attributes provide metadata like Boolean keys that indicate feature support and dictionaries that describe command-line interface access.
+- A set of *module attributes* that you define in the module’s `Info.plist` file. These attributes provide metadata like Boolean keys that indicate feature support and dictionaries that describe command-line interface access.
 - The code that implements the file system functionality. Your app extension conforms to one of two protocols, depending on its design flow, as described below.
 
 The FSKit framework defines three key file storage concepts that `FSModule` supports:
+
+- ****Volume****: A directory structure for files and folders.
+- ****Resource****: A source of data, such as a block storage device or a network resource you identify with a URL.
+- ****Container****: An abstract object that uses one or more resources to deliver one or more volumes, similar to an APFS container. Typically, a container uses only one resource, but some formats like Xsan (Apple’s cluster file system) use multiple disks to store contents for one volume.
 
 ##### Design Flows
 

@@ -43,7 +43,7 @@ TabView {
 
 ## Parameters
 
-- `behavior`: Whether spring loading is enabled or not. If   unspecified, the default behavior is 
+- `behavior`: Whether spring loading is enabled or not. If unspecified, the default behavior is `.automatic.`
 
 
 ---

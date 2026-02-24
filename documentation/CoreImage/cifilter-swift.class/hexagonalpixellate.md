@@ -29,6 +29,10 @@ This method applies the hexagonal pixelate filter to an image. The effect create
 
 The hexagonal pixelate filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`scale`**: A `float` representing the scale of the hexagons as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in an image made up of hexagons:
 
 ```swift

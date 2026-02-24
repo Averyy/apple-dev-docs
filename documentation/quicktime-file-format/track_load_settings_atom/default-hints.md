@@ -9,6 +9,9 @@ A 32-bit integer containing playback hints.
 
 More than one flag may be enabled. Flags are enabled by setting them to `1`. The following flags are defined.
 
+- **Double buffer**: This flag indicates playing the track using double-buffered I/O. This flag’s value is `0x0020`.
+- **High quality**: This flag indicates displaying the track at the highest possible quality, without regard to real-time performance considerations. This flag’s value is `0x0100`.
+
 ## See Also
 
 - [Size](track_load_settings_atom/size.md)

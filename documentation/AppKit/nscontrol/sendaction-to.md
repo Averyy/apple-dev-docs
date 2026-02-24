@@ -24,8 +24,8 @@ This method uses the [`sendAction(_:to:from:)`](nsapplication/sendaction(_:to:fr
 
 ## Parameters
 
-- `action`: The selector to invoke on the target. If the selector is  , no message is sent.
-- `target`: The target object to receive the message. If the object is  , the application searches the responder chain for an object capable of handling the message. For more information on dispatching actions, see the class description for  .
+- `action`: The selector to invoke on the target. If the selector is `NULL`, no message is sent.
+- `target`: The target object to receive the message. If the object is `nil`, the application searches the responder chain for an object capable of handling the message. For more information on dispatching actions, see the class description for [`NSActionCell`](nsactioncell.md).
 
 ## See Also
 

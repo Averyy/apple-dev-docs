@@ -26,10 +26,10 @@ The NAT should support either the NAT-PMP or the UPnP IGD protocol for this API 
 
 ## Parameters
 
-- `sdRef`: The DNSServiceRef initialized by  .
+- `sdRef`: The DNSServiceRef initialized by [`DNSServiceNATPortMappingCreate(_:_:_:_:_:_:_:_:_:)`](dnsservicenatportmappingcreate(_:_:_:_:_:_:_:_:_:).md).
 - `flags`: Currently unused, reserved for future use.
 - `interfaceIndex`: The interface through which the NAT gateway is reached.
-- `errorCode`: Will be   on success. Will be kDNSServiceErr_DoubleNAT when the NAT gateway is itself behind one or more layers of NAT, in which case the other parameters have the defined values. For other failures, will indicate the failure that occurred, and the other parameters are undefined.
+- `errorCode`: Will be [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success. Will be kDNSServiceErr_DoubleNAT when the NAT gateway is itself behind one or more layers of NAT, in which case the other parameters have the defined values. For other failures, will indicate the failure that occurred, and the other parameters are undefined.
 - `externalAddress`: Four byte IPv4 address in network byte order.
 - `protocol`: Will be kDNSServiceProtocol_UDP or kDNSServiceProtocol_TCP or both.
 - `internalPort`: The port on the local machine that was mapped.

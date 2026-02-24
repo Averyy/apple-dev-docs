@@ -21,7 +21,7 @@ subscript(attachmentIndex: Int) -> MTLBlitPassSampleBufferAttachmentDescriptor! 
 
 ## Parameters
 
-- `attachmentIndex`: An index of one of the array’s   instances.
+- `attachmentIndex`: An index of one of the array’s [`MTLBlitPassSampleBufferAttachmentDescriptor`](mtlblitpasssamplebufferattachmentdescriptor.md) instances.
 
 
 ---

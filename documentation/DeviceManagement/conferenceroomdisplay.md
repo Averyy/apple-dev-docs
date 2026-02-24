@@ -68,6 +68,10 @@ Conference Room Display mode locks Apple TV into that mode, to prevent other typ
 </plist>
 ```
 
+## Properties
+
+- `Message` (string): The custom message displayed on the screen in Conference Room Display mode.
+
 ## See Also
 
 - [object TVRemote](tvremote.md)

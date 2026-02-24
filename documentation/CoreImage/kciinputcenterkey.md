@@ -3,7 +3,7 @@
 **Framework**: Core Image  
 **Kind**: var
 
-A key for a [`CIVector`](civector.md) object that specifies the center of the area, as   and  - coordinates, to be filtered.
+A key for a [`CIVector`](civector.md) object that specifies the center of the area, as *x*  and  *y*- coordinates, to be filtered.
 
 **Availability**:
 - iOS 7.0+

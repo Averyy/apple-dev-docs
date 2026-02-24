@@ -26,7 +26,7 @@ A [`JSValueRef`](jsvalueref.md) that is the object’s prototype.
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: A   with the prototype you want to get.
+- `object`: A [`JSObjectRef`](jsobjectref.md) with the prototype you want to get.
 
 ## See Also
 

@@ -26,7 +26,8 @@ The buffer contains a collection of `int32`, `float16`, `float32`, or `float64` 
 
 ## Parameters
 
-- `body`: A closure with an   parameter that points to the storage for the multiarray and its strides. This closure takes the following parameters:
+- `body`: A closure with an [`UnsafeMutableRawBufferPointer`](https://developer.apple.com/documentation/Swift/UnsafeMutableRawBufferPointer) parameter that points to the storage for the multiarray and its strides. This closure takes the following parameters: - **`ptr`**: The pointer to the buffer.
+- **`strides`**: The strides of the buffer in scalars. Note that this may be different from `strides`’s value prior to this method invocation.
 
 ## See Also
 

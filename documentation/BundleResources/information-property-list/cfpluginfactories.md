@@ -8,6 +8,10 @@ The interfaces supported by the plug-in for static registration.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: object
+
 ## See Also
 
 - [CFPlugInDynamicRegisterFunction](information-property-list/cfplugindynamicregisterfunction.md)

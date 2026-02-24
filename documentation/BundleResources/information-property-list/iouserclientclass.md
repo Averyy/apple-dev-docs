@@ -8,6 +8,10 @@ The name of the class to instantiate when the system requires a client connectio
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 The value of this key is a string that contains the name of an [`IOService`](https://developer.apple.comhttps://developer.apple.com/documentation/kernel/ioservice-1g) subclass in your driver.

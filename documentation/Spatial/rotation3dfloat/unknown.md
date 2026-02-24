@@ -1,9 +1,9 @@
-# ==(_:_:)
+# *=(_:_:)
 
 **Framework**: Spatial  
 **Kind**: op
 
-Returns a Boolean value that indicates whether two rotations are equal.
+Calculates the product of two rotations and stores the result in the left-hand-side variable.
 
 **Availability**:
 - iOS 26.0+
@@ -17,15 +17,15 @@ Returns a Boolean value that indicates whether two rotations are equal.
 ## Declaration
 
 ```swift
-static func == (lhs: Rotation3DFloat, rhs: Rotation3DFloat) -> Bool
+static func *= (lhs: inout Rotation3DFloat, rhs: Rotation3DFloat)
 ```
 
 ## Parameters
 
-- `lhs`: The first rotation to compare.
-- `rhs`: The second rotation to compare.
+- `lhs`: The first value.
+- `rhs`: The second value.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spatial/rotation3dfloat/==(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/rotation3dfloat/*=(_:_:))*

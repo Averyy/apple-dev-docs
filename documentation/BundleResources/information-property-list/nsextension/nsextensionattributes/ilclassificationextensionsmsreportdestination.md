@@ -9,6 +9,10 @@ The phone number that receives SMS messages when the user reports an SMS message
 - iOS 12.0+
 - iPadOS 12.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [IDMessageFilterExtensionNetworkURL](information-property-list/nsextension/nsextensionattributes/idmessagefilterextensionnetworkurl.md)

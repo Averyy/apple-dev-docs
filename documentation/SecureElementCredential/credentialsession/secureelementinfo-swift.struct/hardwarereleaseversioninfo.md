@@ -21,6 +21,9 @@ Use this string to determine eligibility or select which applet bundle, previous
 
 This string uses the format `"JCOP X.Y"`, with the following semantics:
 
+- **X**: An integer that corresponds to the chip type.
+- **Y**: An integer that corresponds to the release iteration.
+
 For more details, see the Mobile Secure Element specification from [`Apple Business Register`](https://developer.apple.comhttps://register.apple.com/login).
 
 ## See Also

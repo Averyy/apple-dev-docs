@@ -35,7 +35,7 @@ For efficiency, include multiple achievements rather than invoking this method s
 ## Parameters
 
 - `achievements`: The achievements that you’re reporting to Game Center.
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: A block that GameKit calls when the operation completes. The block receives the following parameter: - **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

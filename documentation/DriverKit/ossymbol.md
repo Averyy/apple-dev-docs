@@ -21,6 +21,8 @@ typedef OSString OSSymbol;
 
 OSString is a container class for managing arrays of characters.
 
+*Encodings*
+
 OSString makes no provisions for different character encodings and assumes that a string is a nul-terminated sequence of single-byte characters. User-space code must either assume an encoding (typically ASCII or UTF-8) or determine it in some other way (such as an IORegistryEntry property).
 
 OSString is immutable.

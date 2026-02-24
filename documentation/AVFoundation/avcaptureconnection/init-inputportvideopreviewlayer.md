@@ -30,8 +30,8 @@ The [`addInput(_:)`](avcapturesession/addinput(_:).md): or [`addOutput(_:)`](avc
 
 ## Parameters
 
-- `port`: An   instance that relates to an   instance.
-- `layer`: An   instance.
+- `port`: An [`AVCaptureInput.Port`](avcaptureinput/port.md) instance that relates to an [`AVCaptureInput`](avcaptureinput.md) instance.
+- `layer`: An [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md) instance.
 
 ## See Also
 

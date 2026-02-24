@@ -22,8 +22,8 @@ For more information about the Journaling Suggestions picker, see: doc:presentin
 
 ## Parameters
 
-- `isPresented`: A binding to a   value that determines whether to show the picker.
-- `journalingSuggestionToken`: A   struct to determine the content shown in the picker.
+- `isPresented`: A binding to a `Bool` value that determines whether to show the picker.
+- `journalingSuggestionToken`: A `JournalingSuggestionPresentationToken` struct to determine the content shown in the picker.
 - `onCompletion`: Code that you supply, which processes any suggestions that a person may choose in the picker.
 
 

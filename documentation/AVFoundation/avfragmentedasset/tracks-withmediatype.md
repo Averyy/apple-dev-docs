@@ -31,7 +31,7 @@ You may call this method without blocking the current thread after you’ve asyn
 
 ## Parameters
 
-- `mediaType`: The media type according to which the asset filters its tracks. For valid values see  .
+- `mediaType`: The media type according to which the asset filters its tracks. For valid values see [`AVMediaType`](avmediatype.md).
 
 ## See Also
 

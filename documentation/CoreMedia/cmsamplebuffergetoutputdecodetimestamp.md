@@ -32,7 +32,7 @@ For consistency with [`CMSampleBufferGetOutputPresentationTimeStamp(_:)`](cmsamp
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
 
 ## See Also
 

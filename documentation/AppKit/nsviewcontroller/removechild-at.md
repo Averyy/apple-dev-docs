@@ -22,7 +22,7 @@ If you just want to remove a child view controller, instead use the [`removeFrom
 
 ## Parameters
 
-- `index`: The index in the   array for the child view controller you want to remove.
+- `index`: The index in the [`children`](nsviewcontroller/children.md) array for the child view controller you want to remove.
 
 ## See Also
 

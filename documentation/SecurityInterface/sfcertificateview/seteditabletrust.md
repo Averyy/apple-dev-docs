@@ -20,7 +20,7 @@ For behavioral compatibility with macOS 10.3, this method causes the certificate
 
 ## Parameters
 
-- `editable`: Pass   if the trust settings should be editable.
+- `editable`: Pass [`true`](https://developer.apple.com/documentation/Swift/true) if the trust settings should be editable.
 
 ## See Also
 

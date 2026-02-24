@@ -26,8 +26,8 @@ If you do call this function, you must call it before the first call to the [`CM
 
 ## Parameters
 
-- `cmsEncoder`: The CMSEncoder reference returned by the   function.
-- `signerOrArray`: The identity object for the identity of one signer, specified as type  , or a   of identity objects of type .
+- `cmsEncoder`: The CMSEncoder reference returned by the `CMSEncoderCreate` function.
+- `signerOrArray`: The identity object for the identity of one signer, specified as type `SecIdentityRef`, or a `CFArray` of identity objects of type`SecIdentityRef`.
 
 ## See Also
 

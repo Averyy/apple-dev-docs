@@ -12,6 +12,10 @@ The container identifier to use for iCloud key-value storage.
 - tvOS 9.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 To add this entitlement to your app, enable the iCloud capability and “Key-value storage” service in Xcode.

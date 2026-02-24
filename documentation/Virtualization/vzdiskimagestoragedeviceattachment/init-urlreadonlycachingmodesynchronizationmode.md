@@ -17,9 +17,9 @@ init(url: URL, readOnly: Bool, cachingMode: VZDiskImageCachingMode, synchronizat
 ## Parameters
 
 - `url`: Local file URL to the disk image in RAW format.
-- `readOnly`: If  , the device attachment is read-only, otherwise the device can write data to the disk image.
-- `cachingMode`: The cacheing mode from one of the available   options.
-- `synchronizationMode`: How the disk image synchronizes with the underlying storage when the guest operating system flushes data, described by one of the available   modes.
+- `readOnly`: If `true`, the device attachment is read-only, otherwise the device can write data to the disk image.
+- `cachingMode`: The cacheing mode from one of the available [`VZDiskImageCachingMode`](vzdiskimagecachingmode.md) options.
+- `synchronizationMode`: How the disk image synchronizes with the underlying storage when the guest operating system flushes data, described by one of the available [`VZDiskImageSynchronizationMode`](vzdiskimagesynchronizationmode.md) modes.
 
 ## See Also
 

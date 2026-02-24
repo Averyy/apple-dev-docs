@@ -25,7 +25,7 @@ Calling this method displays a panel that lets the user configure which app-spec
 ## Parameters
 
 - `availableProfiles`: The complete list of app-specific profiles available in your app. The configuration panel displays this set of profiles to the user.
-- `completion`: The completion handler to call when the user dismisses the configuration panel. This handler has no return value and takes the following parameter:
+- `completion`: The completion handler to call when the user dismisses the configuration panel. This handler has no return value and takes the following parameter: - **newSettings**: A dictionary containing an updated map from system user to app profile. The information is similar to what you provide in the `existingSettings` parameter, but reflects the changes made by the user.
 
 ## See Also
 

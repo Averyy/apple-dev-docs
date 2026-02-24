@@ -22,7 +22,7 @@ By the time this message is delivered to your delegate, the new location data is
 
 - `manager`: The location manager object that generated the update event.
 - `newLocation`: The new location data.
-- `oldLocation`: The location data from the previous update. If this is the first update event delivered by this location manager, this parameter is  .
+- `oldLocation`: The location data from the previous update. If this is the first update event delivered by this location manager, this parameter is `nil`.
 
 ## See Also
 

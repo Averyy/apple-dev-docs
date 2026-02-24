@@ -22,10 +22,10 @@ convenience init?(embeddingCount: Int, embeddingDimension: Int, paddingIndex: In
 
 - `embeddingCount`: The size of the dictionary.
 - `embeddingDimension`: The dimension of embedding vectors.
-- `paddingIndex`: An unsigned integer value. If set, the layer initializes the embedding vector at that index to zero, and won’t update the vector in the gradient pass. The default value is  .
-- `maximumNorm`: A float value. If set, the layer renormalizes the selected embedding vectors in the forward pass only to have an Lp norm less than this value. The default value is  .
-- `pNorm`: A float value that specifies the p of the Lp norm. The default value is  .
-- `scalesGradientByFrequency`: A Boolean value that indicates whether you scale the gradients by the inverse of the frequency of words in batch before the weight update. The default value is  .
+- `paddingIndex`: An unsigned integer value. If set, the layer initializes the embedding vector at that index to zero, and won’t update the vector in the gradient pass. The default value is `nil`.
+- `maximumNorm`: A float value. If set, the layer renormalizes the selected embedding vectors in the forward pass only to have an Lp norm less than this value. The default value is `nil`.
+- `pNorm`: A float value that specifies the p of the Lp norm. The default value is `2.0`.
+- `scalesGradientByFrequency`: A Boolean value that indicates whether you scale the gradients by the inverse of the frequency of words in batch before the weight update. The default value is `false`.
 
 ## See Also
 

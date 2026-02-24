@@ -23,7 +23,7 @@ static func rect(corners: Edge.Corner.Style, isUniform: Bool = false) -> Self
 ## Parameters
 
 - `corners`: The corner style for all four corners.
-- `isUniform`: Should the corner style on each corner be applied   individually or uniformly.
+- `isUniform`: Should the corner style on each corner be applied individually or uniformly.
 
 
 ---

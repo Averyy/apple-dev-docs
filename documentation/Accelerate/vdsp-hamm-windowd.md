@@ -52,7 +52,7 @@ The following illustrates the values of the output vector, `c`:
 
 - `__C`: The output vector.
 - `__N`: The number of elements in the output vector.
-- `__Flag`: A value that specifies whether the function creates a half window or a full window. Pass the   flag to create only the first   points; pass   to create a full-size window.
+- `__Flag`: A value that specifies whether the function creates a half window or a full window. Pass the [`vDSP_HALF_WINDOW`](https://developer.apple.com/documentation/kernel/1645052-anonymous/vdsp_half_window) flag to create only the first `(N+1)/2` points; pass `0` to create a full-size window.
 
 ## See Also
 

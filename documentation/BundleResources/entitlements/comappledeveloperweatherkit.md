@@ -13,6 +13,12 @@ A Boolean value that indicates whether the app may use WeatherKit.
 - tvOS 16.0+
 - watchOS 9.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 To add this entitlement to your app, enable the WeatherKit capability in Xcode.

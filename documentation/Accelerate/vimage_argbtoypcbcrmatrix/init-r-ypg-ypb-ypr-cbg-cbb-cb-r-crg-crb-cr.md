@@ -28,14 +28,14 @@ The 3 x 3 matrix is given by:
 
 ## Parameters
 
-- `R_Yp`: The   in the conversion matrix.
-- `G_Yp`: The   in the conversion matrix.
-- `B_Yp`: The   in the conversion matrix.
-- `R_Cb`: The   in the conversion matrix.
-- `G_Cb`: The   in the conversion matrix.
-- `B_Cb_R_Cr`: The   in the conversion matrix.
-- `G_Cr`: The   in the conversion matrix.
-- `B_Cr`: The   in the conversion matrix.
+- `R_Yp`: The *R_Yp* in the conversion matrix.
+- `G_Yp`: The *G_Yp* in the conversion matrix.
+- `B_Yp`: The *B_Yp* in the conversion matrix.
+- `R_Cb`: The *R_Cb* in the conversion matrix.
+- `G_Cb`: The *G_Cb* in the conversion matrix.
+- `B_Cb_R_Cr`: The *B_Cb_R_Cr* in the conversion matrix.
+- `G_Cr`: The *G_Cr* in the conversion matrix.
+- `B_Cr`: The *B_Cr* in the conversion matrix.
 
 ## See Also
 

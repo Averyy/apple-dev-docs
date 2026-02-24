@@ -26,7 +26,8 @@ func loadDefaultLeaderboardIdentifier() async throws -> String
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameters: - **categoryID**: The leaderboard ID for the local player’s default leaderboard that you set in App Store Connect.
+- **error**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

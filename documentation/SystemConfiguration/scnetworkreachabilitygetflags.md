@@ -26,7 +26,7 @@ func SCNetworkReachabilityGetFlags(_ target: SCNetworkReachability, _ flags: Uns
 ## Parameters
 
 - `target`: The network reference associated with the address or name to be checked for reachability.
-- `flags`: A pointer to memory that, on output, is filled with flags that describe the reachability of the specified target. (See   for possible values.)
+- `flags`: A pointer to memory that, on output, is filled with flags that describe the reachability of the specified target. (See [`SCNetworkReachabilityFlags`](scnetworkreachabilityflags.md) for possible values.)
 
 
 ---

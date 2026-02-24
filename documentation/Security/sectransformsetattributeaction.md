@@ -26,10 +26,10 @@ You may call this function multiple times for either a named attribute or for al
 
 ## Parameters
 
-- `ref`: A   that is bound to an instance of a custom transform.
-- `action`: Use   to add a block that is called to validate the input to an attribute.
-- `attribute`: The name of the attribute that will be handled. An attribute reference may also be given here. A   value indicates that the supplied action is for all attributes.
-- `newAction`: A   which implements the behavior.
+- `ref`: A [`SecTransformImplementationRef`](sectransformimplementationref.md) that is bound to an instance of a custom transform.
+- `action`: The behavior to be set. Use [`kSecTransformActionAttributeNotification`](ksectransformactionattributenotification.md) to add a block that is called when an attribute is set. If the name is `NULL`, then the supplied block is called for all set attributes except for ones that have a specific block as a handler. Use [`kSecTransformActionAttributeValidation`](ksectransformactionattributevalidation.md) to add a block that is called to validate the input to an attribute.
+- `attribute`: The name of the attribute that will be handled. An attribute reference may also be given here. A `NULL` value indicates that the supplied action is for all attributes.
+- `newAction`: A [`SecTransformAttributeActionBlock`](sectransformattributeactionblock.md) which implements the behavior.
 
 
 ---

@@ -30,7 +30,7 @@ The [`CFStringConvertEncodingToNSStringEncoding(_:)`](cfstringconvertencodington
 
 ## Parameters
 
-- `encoding`: The Cocoa string encoding (of type  ) to use.
+- `encoding`: The Cocoa string encoding (of type [`NSStringEncoding`](https://developer.apple.com/documentation/Foundation/NSStringEncoding)) to use.
 
 ## See Also
 

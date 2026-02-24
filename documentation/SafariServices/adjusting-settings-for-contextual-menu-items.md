@@ -31,9 +31,46 @@ Use the [`validateContextMenuItem(withCommand:in:userInfo:validationHandler:)`](
 
 To change the menu text, use the following code:
 
+**Swift**:
+
+```swift
+validationHandler(false, "Updated text")
+```
+
+**Objective-C**:
+
+```objc
+validationHandler(NO, @"Updated text");
+```
+
 To use the default text, use the following code:
 
+**Swift**:
+
+```swift
+validationHandler(false, nil)
+
+```
+
+**Objective-C**:
+
+```objc
+validationHandler(NO, nil)
+```
+
 To hide the menu item, use the following code:
+
+**Swift**:
+
+```swift
+validationHandler(true, nil)
+```
+
+**Objective-C**:
+
+```objc
+validationHandler(YES, nil);
+```
 
 ##### Send Custom Information to Your App Extension
 
@@ -55,6 +92,39 @@ function handleContextMenu(event) {
 When the user selects one of your contextual menu items, Safari sends the [`contextMenuItemSelected(withCommand:in:userInfo:)`](sfsafariextensionhandling/contextmenuitemselected(withcommand:in:userinfo:).md) method to your [`SFSafariExtensionHandler`](sfsafariextensionhandler.md) subclass. The `c`ommand parameter is the `Command` string you provide in the `Info.plist` entry for the menu item.
 
 For example, if you add the `Command` string in your `Info.plist` entries for a contextual menu item, you might implement your context menu method to perform different actions for different commands.
+
+**Swift**:
+
+```swift
+class MySafariExtensionHandler: SFSafariExtensionHandler {
+    override func contextMenuItemSelected(withCommand command: String,
+                                          in page: SFSafariPage, userInfo: [String : AnyObject]? = [:]) {
+        switch command {
+        case "Search":
+            print("The user asked to search for selected text.")
+            
+        case "AddEntry":
+            print("The user asked to add new entry for selected text.")
+        }
+}
+```
+
+**Objective-C**:
+
+```objc
+@implementation MySafariExtensionHandler
+
+- (void)contextMenuItemSelectedWithCommand:(NSString *)command
+                                    inPage:(SFSafariPage *)page userInfo:(NSDictionary<NSString *, id> *)userInfo {
+    if ([command isEqualToString:@"Search"]) {
+        NSLog(@"The user asked to search for selected text.");
+    } else if ([command isEqualToString:@"AddEntry"]) {
+        NSLog(@"The user asked to add new entry for selected text.");
+    }
+}
+
+@end
+```
 
 You can use the `page` parameter to access information about the current webpage, including the URL and page title, and to send messages back to your injected JavaScript file using the [`dispatchMessageToScript(withName:userInfo:)`](sfsafaripage/dispatchmessagetoscript(withname:userinfo:).md) method.
 

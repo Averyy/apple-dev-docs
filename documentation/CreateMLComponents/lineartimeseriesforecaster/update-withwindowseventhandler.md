@@ -27,7 +27,7 @@ For faster updates, consider passing a single [`AnnotatedBatch`](annotatedbatch.
 ## Parameters
 
 - `model`: The model to update.
-- `windows`: A sequence of annotated windows. The feature shape must be   and   the annotation shape must be  .
+- `windows`: A sequence of annotated windows. The feature shape must be `[inputWindowSize, featureSize]` and the annotation shape must be `[forecastWindowSize, annotationSize]`.
 - `eventHandler`: An event handler.
 
 ## See Also

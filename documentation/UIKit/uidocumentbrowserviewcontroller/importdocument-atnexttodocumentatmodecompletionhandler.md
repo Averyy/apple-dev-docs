@@ -32,8 +32,9 @@ The system imports the duplicate into the same file provider (the local file pro
 
 - `documentURL`: The URL of the document’s initial location.
 - `neighbourURL`: The URL of a document that’s already managed by a file provider (the local file provider, the iCloud file provider, or a third-party file provider). The system imports the document into the same file provider and directory as this URL.
-- `importMode`: The mode used when importing the document. For a list of import modes, see  .
-- `completion`: 
+- `importMode`: The mode used when importing the document. For a list of import modes, see [`UIDocumentBrowserViewController.ImportMode`](uidocumentbrowserviewcontroller/importmode.md).
+- `completion`: - **importedDocumentURL**: The URL of the newly imported document, or `nil` if an error occurs.
+- **error**: An object that describes the error, if one occurred; otherwise, it’s set to `nil`.
 
 ## See Also
 

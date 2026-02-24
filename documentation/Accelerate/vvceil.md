@@ -24,6 +24,10 @@ func vvceil(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsafe
 
 ##### Parameters
 
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
 The following code shows an example of using [`vvceil(_:_:_:)`](vvceil(_:_:_:).md).
 
 ```objc

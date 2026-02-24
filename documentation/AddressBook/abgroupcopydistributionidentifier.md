@@ -24,7 +24,7 @@ Use the [`ABGroupSetDistributionIdentifier(_:_:_:_:)`](abgroupsetdistributionide
 
 ## Parameters
 
-- `group`: The group object that   belongs to.
+- `group`: The group object that `person` belongs to.
 - `person`: A person object whose distribution identifier you want to obtain.
 - `property`: The name of a person’s multi-value list property whose distribution identifier you want to obtain.
 

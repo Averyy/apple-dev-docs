@@ -18,6 +18,10 @@ let IOBluetoothHandsFreeCallMode: String
 
 The string contains a single digit with one of the following values:
 
+- **`“0”`**: A voice call.
+- **`“1”`**: A data call.
+- **`“2”`**: A fax call.
+
 ## See Also
 
 - [let IOBluetoothHandsFreeCallDirection: String](iobluetoothhandsfreecalldirection.md)

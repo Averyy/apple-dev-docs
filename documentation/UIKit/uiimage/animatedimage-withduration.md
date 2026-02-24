@@ -29,7 +29,7 @@ All images included in the animated image should share the same size and scale.
 
 ## Parameters
 
-- `images`: An array of   objects.
+- `images`: An array of [`UIImage`](uiimage.md) objects.
 - `duration`: The duration of the animation.
 
 ## See Also

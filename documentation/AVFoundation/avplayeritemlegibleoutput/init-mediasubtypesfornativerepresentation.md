@@ -43,7 +43,7 @@ If a media subtype for which there is no legible data in the current player item
 
 ## Parameters
 
-- `subtypes`: An   of   FourCC codes.
+- `subtypes`: An [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) FourCC codes.
 
 
 ---

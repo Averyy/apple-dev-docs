@@ -14,6 +14,12 @@ An entitlement that permits an app to receive critical alert notifications.
 - visionOS 1.0+
 - watchOS 5.0+
 
+
+
+**Type**: boolean
+
+**Default**: `true`
+
 #### Discussion
 
 If your app has this entitlement, then it can request [`criticalAlert`](https://developer.apple.com/documentation/UserNotifications/UNAuthorizationOptions/criticalAlert) authorization to receive push notifications that cause the system to play a sound even when the app is locked, muted, or a person uses Do Not Disturb focus. Your app can specify a custom sound and volume for critical alerts.

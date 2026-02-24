@@ -106,7 +106,7 @@ This method throws an exception immediately if the selector is unknown; it throw
 ## Parameters
 
 - `name`: The name of the function to invoke.
-- `parameters`: If there is a mismatch between the number of parameters expected and the number you provide during evaluation, an exception may be raised or missing parameters may simply be replaced by   (which occurs depends on how many parameters are provided, and whether you have over- or underflow).
+- `parameters`: An array containing `NSExpression` objects that will be used as parameters during the invocation of selector. For a selector taking no parameters, the array should be empty. For a selector taking one or more parameters, the array should contain one `NSExpression` object which will evaluate to an instance of the appropriate type for each parameter. If there is a mismatch between the number of parameters expected and the number you provide during evaluation, an exception may be raised or missing parameters may simply be replaced by `nil` (which occurs depends on how many parameters are provided, and whether you have over- or underflow).
 
 ## See Also
 

@@ -130,7 +130,7 @@ On return, the buffer contains random color values.
 
 ## Parameters
 
-- `body`: A closure with an   parameter that points to the contiguous storage for the pixel buffer.
+- `body`: A closure with an [`UnsafeMutableBufferPointer`](https://developer.apple.com/documentation/Swift/UnsafeMutableBufferPointer) parameter that points to the contiguous storage for the pixel buffer.
 
 
 ---

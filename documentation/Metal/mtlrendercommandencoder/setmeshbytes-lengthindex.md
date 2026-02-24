@@ -30,9 +30,9 @@ For data that’s more than 4 KB, create an [`MTLBuffer`](mtlbuffer.md) instance
 
 ## Parameters
 
-- `bytes`: A pointer to argument data the method copies to an   and assigns to an entry in the mesh shader argument table for buffers.
-- `length`: The number of bytes the method copies from the   pointer.
-- `index`: An integer that represents the entry in the mesh shader argument table for buffers that stores a record of the   the method creates from  .
+- `bytes`: A pointer to argument data the method copies to an [`MTLBuffer`](mtlbuffer.md) and assigns to an entry in the mesh shader argument table for buffers.
+- `length`: The number of bytes the method copies from the `bytes` pointer.
+- `index`: An integer that represents the entry in the mesh shader argument table for buffers that stores a record of the [`MTLBuffer`](mtlbuffer.md) the method creates from `bytes`.
 
 ## See Also
 

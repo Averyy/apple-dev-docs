@@ -21,7 +21,7 @@ struct MLProgress
 
 #### Overview
 
-Create ML uses this type to exposes specific values within a  instance as properties.
+Create ML uses this type to exposes specific values within a *Progress* instance as properties.
 
 ## Topics
 

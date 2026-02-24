@@ -25,7 +25,7 @@ When `searchForItemsWithSearchString:resultLimit:matchedItemHandler:` gets calle
 
 - `searchString`: The string to search for.
 - `resultLimit`: The maximum number of results that Spotlight for Help will process.  Any results returned beyond this limit will be ignored, but for performance reasons it is better to not exceed it.
-- `handleMatchedItems`: The Block takes one argument:
+- `handleMatchedItems`: The Block used to add results to the search. The Block takes one argument: - **items**: The items to add to the results array. The `handleMatchedItems` block can be invoked from any thread desired.  If it is called more than once the additional results will be appended after previous items until the maximum is reached.
 
 ## See Also
 

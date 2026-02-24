@@ -8,7 +8,7 @@ Add metadata to your USDZ file to specify its lighting characteristics.
 
 AR Quick Look in iOS 16 and later enhances lighting to deliver more brightness, contrast, and visual definition for your scene’s virtual content.
 
-You can set an asset’s lighting environment, or  (IBL), by adding the [`preferredIblVersion`](https://developer.apple.com/documentation/USD/preferrediblversion) metadata to the file’s `.usda` textual definition, or by generating the asset with Apple-provided tools.
+You can set an asset’s lighting environment, or *image-based lighting* (IBL), by adding the [`preferredIblVersion`](https://developer.apple.com/documentation/USD/preferrediblversion) metadata to the file’s `.usda` textual definition, or by generating the asset with Apple-provided tools.
 
 ##### Set the Lighting Metadata
 

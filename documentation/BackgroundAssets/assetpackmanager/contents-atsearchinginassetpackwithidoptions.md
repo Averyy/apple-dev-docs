@@ -40,7 +40,7 @@ All asset packs share the same namespace, so you can treat the overall collectio
 
 - `path`: The relative path.
 - `assetPackID`: The ID of the asset pack in which to search for the file. By default, all downloaded asset packs are searched.
-- `options`: Options for how to read the contents of the file into a   instance.
+- `options`: Options for how to read the contents of the file into a `Data` instance.
 
 ## See Also
 

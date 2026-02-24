@@ -21,8 +21,8 @@ func reportCall(with UUID: UUID, endedAt dateEnded: Date?, reason endedReason: C
 ## Parameters
 
 - `UUID`: The unique identifier of the call.
-- `dateEnded`: If  , the current time is used.
-- `endedReason`: The reason that the call ended. For possible values, see  .
+- `dateEnded`: The time at which the call ended. If `nil`, the current time is used.
+- `endedReason`: The reason that the call ended. For possible values, see [`CXCallEndedReason`](cxcallendedreason.md).
 
 ## See Also
 

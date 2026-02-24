@@ -33,6 +33,12 @@ This method generates a radial-gradient image. The effect generates a color shif
 
 The radial-gradient filter uses the following properties:
 
+- **`center`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the center of the effect as x and y coordinates.
+- **`color0`**: A [`CIColor`](cicolor.md) representing the first color to use in the gradient.
+- **`color1`**: A [`CIColor`](cicolor.md) representing the second color to use in the gradient.
+- **`radius0`**: A `float` representing the radius of the starting circle to use in the gradient as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius1`**: A `float` representing the radius of the ending circle to use in the gradient as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that generates a gradient image:
 
 ```swift

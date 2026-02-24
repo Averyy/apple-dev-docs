@@ -20,7 +20,7 @@ init(_ value: Bool = true)
 
 ## Parameters
 
-- `value`:   if the extension point has a user interface, or   if it doesn’t.
+- `value`: `true` if the extension point has a user interface, or `false` if it doesn’t.
 
 
 ---

@@ -26,7 +26,7 @@ An array containing the media selection options from `array` that match `mediaCh
 
 ## Parameters
 
-- `mediaSelectionOptions`: An array of   objects to be filtered.
+- `mediaSelectionOptions`: An array of [`AVMediaSelectionOption`](avmediaselectionoption.md) objects to be filtered.
 - `mediaCharacteristics`: The media characteristics that must be matched for a media selection option to be present in the output array.
 
 ## See Also

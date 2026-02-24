@@ -22,7 +22,7 @@ func setLineJoin(_ join: CGLineJoin)
 
 ## Parameters
 
-- `join`: A line join value—  (the default),  , or  . See  .
+- `join`: A line join value—[`CGLineJoin.miter`](cglinejoin/miter.md) (the default), [`CGLineJoin.round`](cglinejoin/round.md), or [`CGLineJoin.bevel`](cglinejoin/bevel.md). See [`CGPath`](cgpath.md).
 
 ## See Also
 

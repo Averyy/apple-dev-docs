@@ -30,7 +30,7 @@ The plug-in host uses this function to create an instance of the given type. Unl
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the default allocator.
 - `factoryUUID`: The UUID representing the factory function to use to create a plug-in of the given type.
 - `typeUUID`: The UUID type.
 

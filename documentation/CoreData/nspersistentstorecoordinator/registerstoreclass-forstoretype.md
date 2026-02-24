@@ -28,7 +28,7 @@ You can pass `nil` for `storeClass` to unregister the store type.
 
 ## Parameters
 
-- `storeClass`: The   subclass to use for the store of type  .
+- `storeClass`: The `NSPersistentStore` subclass to use for the store of type `storeType`.
 - `storeType`: A unique string that identifies a store type.
 
 ## See Also

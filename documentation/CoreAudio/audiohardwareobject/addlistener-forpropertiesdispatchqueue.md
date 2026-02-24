@@ -21,8 +21,8 @@ The AudioHardwareObject’s delegates property must contain at least one delegat
 
 ## Parameters
 
-- `properties`: An array of AudioObjectPropertyAddresses indicating which   properties the listener should notify about.
-- `dispatchQueue`: The dispatch queue on which the delegates will be called.   All delegate calls will be dispatched asynchronously save for those dispatched from the   IO context (of which kAudioDevicePropertyDeviceIsRunning and   kAudioDeviceProcessorOverload are the only examples) which will be dispatched   synchronously. Note that this dispatch queue will be retained until a matching call to   removePropertyListener is made. If this value is nil, then the delegates will be directly   called.
+- `properties`: An array of AudioObjectPropertyAddresses indicating which properties the listener should notify about.
+- `dispatchQueue`: The dispatch queue on which the delegates will be called. All delegate calls will be dispatched asynchronously save for those dispatched from the IO context (of which kAudioDevicePropertyDeviceIsRunning and kAudioDeviceProcessorOverload are the only examples) which will be dispatched synchronously. Note that this dispatch queue will be retained until a matching call to removePropertyListener is made. If this value is nil, then the delegates will be directly called.
 
 
 ---

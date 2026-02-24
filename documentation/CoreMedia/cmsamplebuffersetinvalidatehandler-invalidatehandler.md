@@ -26,8 +26,8 @@ A sample buffer can only have one invalidation callback. The invalidation callba
 
 ## Parameters
 
-- `sbuf`: The   being modified.
-- `invalidateHandler`: Block to be called during  .
+- `sbuf`: The `CMSampleBuffer` being modified.
+- `invalidateHandler`: Block to be called during `CMSampleBufferInvalidate`.
 
 ## Topics
 

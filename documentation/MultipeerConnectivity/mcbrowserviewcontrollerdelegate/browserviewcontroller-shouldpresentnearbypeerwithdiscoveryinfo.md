@@ -31,7 +31,7 @@ If this method is not provided, all peers are shown.
 
 - `browserViewController`: The browser view controller object that discovered the new peer.
 - `peerID`: The unique ID of the nearby peer.
-- `info`: The info dictionary advertised by the discovered peer. For more information on the contents of this dictionary, see the documentation for   in  .
+- `info`: The info dictionary advertised by the discovered peer. For more information on the contents of this dictionary, see the documentation for [`init(peer:discoveryInfo:serviceType:)`](mcnearbyserviceadvertiser/init(peer:discoveryinfo:servicetype:).md) in [`MCNearbyServiceAdvertiser`](mcnearbyserviceadvertiser.md).
 
 
 ---

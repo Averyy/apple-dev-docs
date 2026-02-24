@@ -44,8 +44,8 @@ signposter.emitEvent("New Account Created", id: signpostID,
 ## Parameters
 
 - `name`: The event’s name.
-- `id`: The event’s identifier. The default value is  .
-- `message`: The interpolated string that the signposter attaches to the event. Each of the message’s interpolations can specify individual formatting and privacy options. For more information, see  .
+- `id`: The event’s identifier. The default value is [`exclusive`](ossignpostid/exclusive.md).
+- `message`: The interpolated string that the signposter attaches to the event. Each of the message’s interpolations can specify individual formatting and privacy options. For more information, see [`Message Argument Formatters`](message-argument-formatters.md).
 
 ## See Also
 

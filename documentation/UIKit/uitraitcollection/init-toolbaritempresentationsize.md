@@ -20,7 +20,7 @@ init(toolbarItemPresentationSize: UINSToolbarItemPresentationSize)
 
 ## Parameters
 
-- `toolbarItemPresentationSize`: The toolbar item presentation size for the new trait collection. For a list of possible values, see  .
+- `toolbarItemPresentationSize`: The toolbar item presentation size for the new trait collection. For a list of possible values, see [`UINSToolbarItemPresentationSize`](uinstoolbaritempresentationsize.md).
 
 ## See Also
 

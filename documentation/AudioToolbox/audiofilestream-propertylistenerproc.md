@@ -31,10 +31,10 @@ In some cases when you call the [`AudioFileStreamGetProperty(_:_:_:_:)`](audiofi
 
 ## Parameters
 
-- `inClientData`: The value you provided in the   parameter when you called the  function.
-- `inAudioFileStream`: The ID of the audio file stream parser that invoked the callback. The parser ID is returned by the   function.
-- `inPropertyID`: The four-character ID of the property that the parser found in the audio file data stream. See   for possible values.
-- `ioFlags`: On input, if the   value is set, the parser is caching the property value. If not, on output you can set the   flag to cause the parser to cache the value. See  .
+- `inClientData`: The value you provided in the `inClientData` parameter when you called the [`AudioFileStreamOpen(_:_:_:_:_:)`](audiofilestreamopen(_:_:_:_:_:).md)function.
+- `inAudioFileStream`: The ID of the audio file stream parser that invoked the callback. The parser ID is returned by the [`AudioFileStreamOpen(_:_:_:_:_:)`](audiofilestreamopen(_:_:_:_:_:).md) function.
+- `inPropertyID`: The four-character ID of the property that the parser found in the audio file data stream. See [`Audio File Stream Properties`](1391506-audio-file-stream-properties.md) for possible values.
+- `ioFlags`: On input, if the `kAudioFileStreamPropertyFlag_PropertyIsCached` value is set, the parser is caching the property value. If not, on output you can set the `kAudioFileStreamPropertyFlag_CacheProperty` flag to cause the parser to cache the value. See [`Audio File Stream Flags`](audio-file-stream-flags.md).
 
 ## See Also
 

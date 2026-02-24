@@ -33,7 +33,7 @@ The pin is added to the entity’s [`GeometricPinsComponent`](geometricpinscompo
 - `name`: The name of the pin in the namespace of the owning entity.
 - `position`: The position of the pin, in local space of the reference entity.
 - `orientation`: The orientation of the pin, in local space of the reference entity.
-- `referenceEntity`: The entity that specifies the space of input   and  .   The input   and   are in the world space when this reference entity is  .
+- `referenceEntity`: The entity that specifies the space of input `position` and `orientation`. The input `position` and `orientation` are in the world space when this reference entity is `nil`.
 
 
 ---

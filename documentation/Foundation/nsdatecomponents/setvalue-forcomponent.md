@@ -26,8 +26,8 @@ This method allows for component values to be set for an [`NSCalendar.Unit`](nsc
 
 ## Parameters
 
-- `value`: The value to set for the   component.
-- `unit`: The calendar unit for which to set  . Do not pass   or  .
+- `value`: The value to set for the `unit` component.
+- `unit`: The calendar unit for which to set `value`. Do not pass [`calendar`](nscalendar/unit/calendar.md) or [`timeZone`](nscalendar/unit/timezone.md).
 
 ## See Also
 

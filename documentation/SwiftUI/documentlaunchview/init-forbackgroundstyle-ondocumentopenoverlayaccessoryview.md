@@ -26,7 +26,7 @@ init<B>(_ title: LocalizedStringKey, for contentTypes: [UTType], backgroundStyle
 - `backgroundStyle`: An optional background style of the view.
 - `actions`: A view builder returning the view’s actions
 - `onDocumentOpen`: A closure that handles an open file.
-- `overlayAccessoryView`: A view builder for returning the view’s overlay   accessory view.
+- `overlayAccessoryView`: A view builder for returning the view’s overlay accessory view.
 
 
 ---

@@ -17,26 +17,6 @@ To adopt the latest model improvements, and make sure your app works for people 
 
 For more information on prompting an on-device model, see [`Prompting an on-device foundation model`](prompting-an-on-device-foundation-model.md).
 
-#### Use the Environment Key During the Beta Cycle
-
-Apple releases new improvements to the on-device foundation model alongside routine operating system updates. Typically, your device can only have a single model version at a time. When you update your device to the latest version of the operating system, you can’t revert it to an older version. However, during the developer beta cycle, you  access the prior model version by using a special environment override key — but only during the beta cycle. When the operating system comes out of beta, the key and prior model become unavailable.
-
-To help you prepare your app for a new model version, use an environment key in Xcode to switch between the current and new model versions at runtime. To use the key:
-
-1. Update both your Mac and Xcode to the latest developer beta.
-2. In Xcode, choose Product > Scheme > Edit Scheme.
-3. In the left sidebar, select the Run scheme, then select the Arguments tab to the right.
-4. Under Environment Variables, click the Add button (+).
-5. Add the key `FOUNDATION_MODELS_USE_LEGACY_SYSTEM_LANGUAGE_MODEL` and set the value to `YES`.
-
-![A screenshot that shows the the Xcode Run scheme with the Arguments tab in a](https://docs-assets.developer.apple.com/published/cbfb158048598a13eb0801fe05525466/updating-prompts-for-new-model-versions-environment-key%402x.png)
-
-After adding the environment key, install the latest developer beta on the devices you want to test on. Then, verify that your app is using the key during runtime by inspecting the console in Xcode for a message that indicates the app is using the legacy [`SystemLanguageModel`](systemlanguagemodel.md) version.
-
-To switch back to the latest model version, set the environment variable key to an empty value — or remove it entirely — and rebuild your Xcode project. For more on how to configure environment variables, see [`Customizing the build schemes for a project`](https://developer.apple.com/documentation/Xcode/customizing-the-build-schemes-for-a-project).
-
-> ❗ **Important**: The environment variable `FOUNDATION_MODELS_USE_LEGACY_SYSTEM_LANGUAGE_MODEL` is only available during the beta periods for iOS 26.4, iPadOS 26.4, macOS 26.4, and visionOS 26.4.
-
 #### Use Availability Checks to Version Your Prompts
 
 Ideally, your prompt should be relatively stable across model versions. However, to take advantage of new model improvements, or handle behavioral changes, choose a strategy of prompt versioning that works best for your app.

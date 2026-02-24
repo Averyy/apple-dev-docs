@@ -31,7 +31,7 @@ This method behaves like [`formUnion(_:edges:)`](viewspacing/formunion(_:edges:)
 ## Parameters
 
 - `other`: Another spacing preferences instance to merge with this one.
-- `edges`: The edges to merge. Edges that you don’t specify are   unchanged after the method completes.
+- `edges`: The edges to merge. Edges that you don’t specify are unchanged after the method completes.
 
 ## See Also
 

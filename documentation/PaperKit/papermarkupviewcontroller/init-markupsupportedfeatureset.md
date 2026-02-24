@@ -24,7 +24,7 @@ The canvas limits the edits that a person can make so they’re compatible with 
 
 ## Parameters
 
-- `markup`: The data model to show on this canvas.   The default value is  .
+- `markup`: The data model to show on this canvas. The default value is `nil`.
 - `supportedFeatureSet`: The supported features of this toolbar.
 
 

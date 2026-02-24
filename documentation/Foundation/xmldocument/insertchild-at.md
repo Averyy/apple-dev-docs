@@ -17,8 +17,8 @@ func insertChild(_ child: XMLNode, at index: Int)
 
 ## Parameters
 
-- `child`: The   object to be inserted. The added node must be an   object representing a comment, processing instruction, or the root element.
-- `index`: An integer specifying the index of the children array to insert  . The indexes of children after the new child are incremented. If   is less than zero or greater than the number of children, an out-of-bounds exception is raised.
+- `child`: The [`XMLNode`](xmlnode.md) object to be inserted. The added node must be an `NSXMLNode` object representing a comment, processing instruction, or the root element.
+- `index`: An integer specifying the index of the children array to insert `child`. The indexes of children after the new child are incremented. If `index` is less than zero or greater than the number of children, an out-of-bounds exception is raised.
 
 ## See Also
 

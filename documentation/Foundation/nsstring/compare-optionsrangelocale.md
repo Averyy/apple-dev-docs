@@ -30,10 +30,10 @@ The `locale` argument affects both equality and ordering algorithms. For example
 
 ## Parameters
 
-- `string`: This value must not be  . If this value is  , the behavior is undefined and may change in future versions of macOS.
-- `mask`: See   for details on these options.
-- `rangeOfReceiverToCompare`: The range of the receiver over which to perform the comparison. The range must not exceed the bounds of the receiver.
-- `locale`: An instance of  . To use the current locale, pass [    ]. For example, if you are comparing strings to present to the end-user, use the current locale. To use the system locale, pass  .
+- `string`: The string with which to compare the range of the receiver specified by `range`. This value must not be `nil`. If this value is `nil`, the behavior is undefined and may change in future versions of macOS.
+- `mask`: Options for the search—you can combine any of the following using a C bitwise OR operator: `NSCaseInsensitiveSearch`, `NSLiteralSearch`, `NSNumericSearch`. See [`String Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/introStrings.html#//apple_ref/doc/uid/10000035i) for details on these options.
+- `rangeOfReceiverToCompare`: The range of the receiver over which to perform the comparison. The range must not exceed the bounds of the receiver. > ❗ **Important**:  Raises an `NSRangeException` if `range` exceeds the bounds of the receiver.
+- `locale`: An instance of [`NSLocale`](nslocale.md). To use the current locale, pass [[`NSLocale`](nslocale.md)  [`current`](nslocale/current.md)]. For example, if you are comparing strings to present to the end-user, use the current locale. To use the system locale, pass `nil`.
 
 ## See Also
 

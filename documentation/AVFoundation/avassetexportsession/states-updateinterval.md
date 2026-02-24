@@ -25,7 +25,7 @@ An asynchronous sequence of states.
 
 ## Parameters
 
-- `updateInterval`: The time interval between updates. The value must be greater than  .
+- `updateInterval`: The time interval between updates. The value must be greater than `0`.
 
 ## See Also
 

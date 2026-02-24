@@ -174,6 +174,10 @@ let hoverComponent = HoverEffectComponent(.highlight(
 
 Customize how a `HoverEffectComponent` presents on a partially or fully transparent material with the following opacity functions:
 
+- **[`HoverEffectComponent.OpacityFunction.full`](hovereffectcomponent/opacityfunction/full.md)**: An opacity function that causes the effect to draw at full opacity regardless of opacity of the base material. This is the default opacity function.
+- **[`HoverEffectComponent.OpacityFunction.mask`](hovereffectcomponent/opacityfunction/mask.md)**: An opacity function that draws the hover effect at full opacity when the entity’s base material opacity is greater than `0.05`, and fades out the hover effect with the entity’s base material when its opacity is equal to or less than `0.05`.
+- **[`HoverEffectComponent.OpacityFunction.blend`](hovereffectcomponent/opacityfunction/blend.md)**: An opacity function that draws the hover effect with an opacity that’s equal to the product of the entity’s base material and the shader’s output.
+
 > **Note**: Opacity functions can’t be applied to `HoverEffectComponents` that use [`HoverEffectComponent.ShaderHoverEffectInputs`](hovereffectcomponent/shaderhovereffectinputs.md).
 
 ##### Shader Inputs

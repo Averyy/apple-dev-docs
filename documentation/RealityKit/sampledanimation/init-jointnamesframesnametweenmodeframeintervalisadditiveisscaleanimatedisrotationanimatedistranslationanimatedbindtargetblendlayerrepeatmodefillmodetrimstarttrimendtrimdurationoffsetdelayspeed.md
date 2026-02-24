@@ -25,13 +25,13 @@ init(jointNames: [String], frames: [Value], name: String = "", tweenMode: TweenM
 - `frames`: The value of the joints to animate.
 - `name`: A textual name for the animation.
 - `tweenMode`: An option that determines how animation frames transition.
-- `frameInterval`: The duration within the animation timeline for each   frame in the frames array.
-- `isAdditive`: A Boolean value that indicates whether the animation   builds on the current state of the target entity or resets the state   before running.
-- `isScaleAnimated`: A Boolean value that indicates whether the animation   observes changes in the entity’s size.
-- `isRotationAnimated`: A Boolean value that indicates whether the   animation observes rotational changes in the entity’s transform.
-- `isTranslationAnimated`: A Boolean value that indicates whether the   animation observes translational changes in the entity’s transform.
-- `bindTarget`: A textual name that identifies the particular property   that animates.
-- `blendLayer`: The order in which the framework composites the animation   into the view.
+- `frameInterval`: The duration within the animation timeline for each frame in the frames array.
+- `isAdditive`: A Boolean value that indicates whether the animation builds on the current state of the target entity or resets the state before running.
+- `isScaleAnimated`: A Boolean value that indicates whether the animation observes changes in the entity’s size.
+- `isRotationAnimated`: A Boolean value that indicates whether the animation observes rotational changes in the entity’s transform.
+- `isTranslationAnimated`: A Boolean value that indicates whether the animation observes translational changes in the entity’s transform.
+- `bindTarget`: A textual name that identifies the particular property that animates.
+- `blendLayer`: The order in which the framework composites the animation into the view.
 - `repeatMode`: An option that determines how the animation repeats.
 - `fillMode`: The playback behavior outside of the normal duration.
 - `trimStart`: The optional time, in seconds, at which the animation plays.

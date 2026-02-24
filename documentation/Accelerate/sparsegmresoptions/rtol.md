@@ -22,7 +22,7 @@ var rtol: Double
 
 #### Discussion
 
- indicates convergence.
+*‖ b-Ax ‖₂ < [`rtol`](sparsegmresoptions/rtol.md) * ‖ b-Ax₀ ‖₂ + [`atol`](sparsegmresoptions/atol.md)* indicates convergence.
 
 If [`rtol`](sparsegmresoptions/rtol.md) `= 0`, the operation uses the default value of `sqrt(epsilon)`.
 

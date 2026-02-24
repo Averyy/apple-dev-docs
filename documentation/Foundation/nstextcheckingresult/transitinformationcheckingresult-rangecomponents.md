@@ -27,7 +27,7 @@ Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingres
 ## Parameters
 
 - `range`: The range of the detected result.
-- `components`: A dictionary containing the transit components. The currently supported keys are   and  .
+- `components`: A dictionary containing the transit components. The currently supported keys are [`airline`](nstextcheckingkey/airline.md) and [`flight`](nstextcheckingkey/flight.md).
 
 
 ---

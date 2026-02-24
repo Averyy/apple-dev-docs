@@ -25,10 +25,10 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
-- `desired_mech_attrs`: A set of attributes, given by their OID, that a mechanism must have in order to appear in the results. See Mechanisms and Authentication in   for a list of possible values.
-- `except_mech_attrs`: A set of attributes, given by their OID, that the mechanism must not have in order to appear in the results. See Mechanisms and Authentication in   for a list of possible values.
-- `critical_mech_attrs`: A set of attributes, given by their OID, that the mechanism must know about, but not necessarily have, in order to appear in the results. See Mechanisms and Authentication in   for a list of possible values.
-- `mechs`: A pointer the function uses to return a new set of mechanisms that meet the given criteria. Release the set’s memory using a call to   after you are done using it.
+- `desired_mech_attrs`: A set of attributes, given by their OID, that a mechanism must have in order to appear in the results. See Mechanisms and Authentication in [`Security Mechanisms`](security-mechanisms.md) for a list of possible values.
+- `except_mech_attrs`: A set of attributes, given by their OID, that the mechanism must not have in order to appear in the results. See Mechanisms and Authentication in [`Security Mechanisms`](security-mechanisms.md) for a list of possible values.
+- `critical_mech_attrs`: A set of attributes, given by their OID, that the mechanism must know about, but not necessarily have, in order to appear in the results. See Mechanisms and Authentication in [`Security Mechanisms`](security-mechanisms.md) for a list of possible values.
+- `mechs`: A pointer the function uses to return a new set of mechanisms that meet the given criteria. Release the set’s memory using a call to [`gss_release_oid_set(_:_:)`](gss_release_oid_set(_:_:).md) after you are done using it.
 
 ## See Also
 

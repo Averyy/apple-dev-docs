@@ -11,6 +11,10 @@ A message that tells people why your app receives voice-over-IP (VoIP) calls in 
 - tvOS 10.0+
 - watchOS 3.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 For more information, see [`CallKit`](https://developer.apple.com/documentation/CallKit).

@@ -8,6 +8,10 @@ A Boolean value that indicates whether the app can use universal links.
 **Availability**:
 - macOS 10.15+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Before you submit an app with this entitlement to the App Store, you need to get permission to use the entitlement. Request permission at [`https://developer.apple.com/contact/request/browser-universal-links-request`](https://developer.apple.comhttps://developer.apple.com/contact/request/browser-universal-links-request).

@@ -34,8 +34,8 @@ The range contains the range of the individual token for which these tags were p
 ## Parameters
 
 - `index`: The position of the initial character.
-- `unit`: The linguistic unit. See   for possible values.
-- `scheme`: The tag scheme. See   for possible values. Not all tag schemes produce more than one prediction.
+- `unit`: The linguistic unit. See [`NLTokenUnit`](nltokenunit.md) for possible values.
+- `scheme`: The tag scheme. See [`NLTagScheme`](nltagscheme.md) for possible values. Not all tag schemes produce more than one prediction.
 - `maximumCount`: The maximum number of tag predictions to return.
 
 ## See Also

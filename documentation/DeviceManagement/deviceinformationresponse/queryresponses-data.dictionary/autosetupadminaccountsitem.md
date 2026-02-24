@@ -14,6 +14,11 @@ The response dictionary that contains the administrator setup information.
 object DeviceInformationResponse.QueryResponses.AutoSetupAdminAccountsItem
 ```
 
+## Properties
+
+- `GUID` (string): The `GeneratedUID` of the administrator account. This value is available in macOS 10.11 and later.
+- `shortName` (string): The short name of the administrator account. This value is available in macOS 10.11 and later.
+
 ## See Also
 
 - [object DeviceInformationResponse.QueryResponses.AccessibilitySettings](deviceinformationresponse/queryresponses-data.dictionary/accessibilitysettings-data.dictionary.md)

@@ -24,7 +24,7 @@ When a window is deallocated, AppKit calls this method for each view in the wind
 
 ## Parameters
 
-- `newWindow`: The window object that will be at the root of the view’s new view hierarchy. If the view is being removed from a window and there is no new window, this parameter is  .
+- `newWindow`: The window object that will be at the root of the view’s new view hierarchy. If the view is being removed from a window and there is no new window, this parameter is `nil`.
 
 ## See Also
 

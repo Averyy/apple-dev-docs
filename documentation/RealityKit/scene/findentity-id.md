@@ -30,7 +30,7 @@ Returns `Entity` with the given `Entity.ID` in the `Scene`.
 
 ## Parameters
 
-- `id`:   obtained from 
+- `id`: `Entity.ID` obtained from `Entity.id`
 
 ## See Also
 

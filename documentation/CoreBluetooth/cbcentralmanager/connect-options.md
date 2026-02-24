@@ -27,7 +27,7 @@ After successfully establishing a local connection to a peripheral, the central 
 ## Parameters
 
 - `peripheral`: The peripheral to which the central is attempting to connect.
-- `options`: A dictionary to customize the behavior of the connection. For available options, see  .
+- `options`: A dictionary to customize the behavior of the connection. For available options, see [`Peripheral Connection Options`](peripheral-connection-options.md).
 
 ## See Also
 

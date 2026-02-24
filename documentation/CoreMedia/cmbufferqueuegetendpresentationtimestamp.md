@@ -30,7 +30,7 @@ This is the maximum end time (PTS + duration) of buffers in the queue.          
 
 ## Parameters
 
-- `queue`:   being interrogated.
+- `queue`: `CMBufferQueue` being interrogated.
 
 ## See Also
 

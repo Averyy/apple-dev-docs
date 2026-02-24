@@ -35,7 +35,7 @@ For more information about linking into your app, see [`Allowing apps and websit
 
 ## Parameters
 
-- `action`: A closure that SwiftUI calls when your app receives   a Universal Link or a custom   .   The closure takes the URL as an input parameter.
+- `action`: A closure that SwiftUI calls when your app receives a Universal Link or a custom [`URL`](https://developer.apple.com/documentation/Foundation/URL). The closure takes the URL as an input parameter.
 
 ## See Also
 

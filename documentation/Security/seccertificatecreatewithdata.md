@@ -34,7 +34,7 @@ The certificate object returned by this function is used as input to other funct
 
 ## Parameters
 
-- `allocator`: The   object you wish to use to allocate the certificate object. Pass   to use the default allocator.
+- `allocator`: The `CFAllocator` object you wish to use to allocate the certificate object. Pass `NULL` to use the default allocator.
 - `data`: A DER (Distinguished Encoding Rules) representation of an X.509 certificate.
 
 

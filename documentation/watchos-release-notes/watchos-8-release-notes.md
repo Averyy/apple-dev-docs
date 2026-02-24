@@ -12,7 +12,7 @@ The watchOS 8 SDK provides support to develop watchOS apps for Apple Watch devic
 
 ###### Known Issues
 
-- Your watch might repeatedly disconnect unexpectedly from your phone. (80733338)  Restart your phone.
+- Your watch might repeatedly disconnect unexpectedly from your phone. (80733338) **Workaround:** Restart your phone.
 
 ##### App Store
 
@@ -62,7 +62,7 @@ Resolved Issues Fixed issue where `jwsRepresentation` and other validation relat
 
 ###### Known Issues
 
-- When using Watch apps, [`MusicKit`](https://developer.apple.com/documentation/MusicKit) might be unable to generate a developer token. (78478620)  Register the bundle identifier of your [`WatchKit`](https://developer.apple.com/documentation/WatchKit) Extension target as a separate App ID in the Developer portal, and enable the MusicKit App Service for the new App ID.
+- When using Watch apps, [`MusicKit`](https://developer.apple.com/documentation/MusicKit) might be unable to generate a developer token. (78478620) **Workaround:** Register the bundle identifier of your [`WatchKit`](https://developer.apple.com/documentation/WatchKit) Extension target as a separate App ID in the Developer portal, and enable the MusicKit App Service for the new App ID.
 
 ##### Networking
 
@@ -78,13 +78,13 @@ Resolved Issues Fixed issue where `jwsRepresentation` and other validation relat
 
 ###### Known Issue
 
-- The Watch app might crash when pairing through the camera. (80804790)  Pair the Watch using the “Pair Manually” button.
+- The Watch app might crash when pairing through the camera. (80804790) **Workaround:** Pair the Watch using the “Pair Manually” button.
 
 ##### Shazam
 
 ###### Known Issues
 
-- [`ShazamKit`](https://developer.apple.com/documentation/ShazamKit) might be unable to generate a developer token in apps using Shazam Catalog. (78589082)  Register the bundle identifier of your [`WatchKit`](https://developer.apple.com/documentation/WatchKit) Extension target as a separate App ID in the developer portal, then enable the ShazamKit App Service for this new App ID.
+- [`ShazamKit`](https://developer.apple.com/documentation/ShazamKit) might be unable to generate a developer token in apps using Shazam Catalog. (78589082) **Workaround:** Register the bundle identifier of your [`WatchKit`](https://developer.apple.com/documentation/WatchKit) Extension target as a separate App ID in the developer portal, then enable the ShazamKit App Service for this new App ID.
 
 ##### Swiftui
 
@@ -137,7 +137,7 @@ The [`openURL`](https://developer.apple.com/documentation/SwiftUI/EnvironmentVal
 
 ###### Known Issues
 
-- [`MusicKit`](https://developer.apple.com/documentation/MusicKit) functionality, such as loading content with music requests, doesn’t work in simulated devices. (78559381) : Test your app’s `MusicKit` functionality on a physical device.
+- [`MusicKit`](https://developer.apple.com/documentation/MusicKit) functionality, such as loading content with music requests, doesn’t work in simulated devices. (78559381) **Workaround**: Test your app’s `MusicKit` functionality on a physical device.
 
 ## See Also
 

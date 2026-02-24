@@ -22,9 +22,9 @@ init(rangeFrom start: Float, to end: Float, by stride: Float.Stride)
 
 ## Parameters
 
-- `start`: The starting value to use for the sequence. If the sequence contains any values, the first one is  .
-- `end`: An end value to limit the sequence.   is never an element of the resulting sequence.
-- `stride`: The amount to step by with each iteration.   must be positive.
+- `start`: The starting value to use for the sequence. If the sequence contains any values, the first one is `start`.
+- `end`: An end value to limit the sequence. `end` is never an element of the resulting sequence.
+- `stride`: The amount to step by with each iteration. `stride` must be positive.
 
 ## See Also
 

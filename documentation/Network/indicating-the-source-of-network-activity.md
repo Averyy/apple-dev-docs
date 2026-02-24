@@ -14,7 +14,7 @@ To learn how to examine all the data your app contributes to the privacy report,
 
 ##### Determine the Appropriate Attribution
 
-All connections, other than those that use [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) or [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession), are classified by default as . User-initiated network connections are the exception. Network connections to third-party domains can only be classified as  if they meet all of the following criteria:
+All connections, other than those that use [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) or [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession), are classified by default as *app-initiated*. User-initiated network connections are the exception. Network connections to third-party domains can only be classified as *user-initiated* if they meet all of the following criteria:
 
 - User-directed — Network connections to domains that occur only when a user affirmatively chooses to engage with content in your app. For a connection to qualify as user-directed, the user must be provided with a meaningful choice of whether to interact with the content.
 - Non-primary functionality — The app’s features must be functional without this particular network connection.

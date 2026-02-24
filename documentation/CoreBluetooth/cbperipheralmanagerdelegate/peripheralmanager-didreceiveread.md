@@ -27,7 +27,7 @@ When you receive this callback, call the [`respond(to:withResult:)`](cbperiphera
 ## Parameters
 
 - `peripheral`: The peripheral manager that received the request.
-- `request`: A   object that represents a request to read a characteristic’s value.
+- `request`: A [`CBATTRequest`](cbattrequest.md) object that represents a request to read a characteristic’s value.
 
 ## See Also
 

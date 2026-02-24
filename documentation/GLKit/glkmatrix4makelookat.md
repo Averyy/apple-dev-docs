@@ -27,15 +27,15 @@ This function creates a matrix in a way similar to the `gluLookAt` function prev
 
 ## Parameters
 
-- `eyeX`: The   coordinate of the eye position.
-- `eyeY`: The   coordinate of the eye position.
-- `eyeZ`: The   coordinate of the point position.
-- `centerX`: The   coordinate of the point being looked at.
-- `centerY`: The   coordinate of the point being looked at.
-- `centerZ`: The   coordinate of the point being looked at.
-- `upX`: The   coordinate of the camera’s up vector.
-- `upY`: The   coordinate of the camera’s up vector.
-- `upZ`: The   coordinate of the camera’s up vector.
+- `eyeX`: The `x` coordinate of the eye position.
+- `eyeY`: The `y` coordinate of the eye position.
+- `eyeZ`: The `z` coordinate of the point position.
+- `centerX`: The `x` coordinate of the point being looked at.
+- `centerY`: The `y` coordinate of the point being looked at.
+- `centerZ`: The `z` coordinate of the point being looked at.
+- `upX`: The `x` coordinate of the camera’s up vector.
+- `upY`: The `y` coordinate of the camera’s up vector.
+- `upZ`: The `z` coordinate of the camera’s up vector.
 
 ## See Also
 

@@ -41,7 +41,7 @@ let formatted = interval.formatted(
 
 ## Parameters
 
-- `style`: The style to use for the fields, such as   or  .
+- `style`: The style to use for the fields, such as [`abbreviated`](date/componentsformatstyle/style-swift.struct/abbreviated.md) or [`narrow`](date/componentsformatstyle/style-swift.struct/narrow.md).
 - `fields`: A set of date component fields to include in the formatted output.
 
 ## See Also

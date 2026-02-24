@@ -27,7 +27,7 @@ The default implementation of this method does nothing.
 
 ## Parameters
 
-- `context`: The context object (if any) provided by the previous interface controller. This parameter may be  . If it is not  , you are responsible for saving a reference to the provided object and using it to configure your interface controller.
+- `context`: The context object (if any) provided by the previous interface controller. This parameter may be `nil`. If it is not `nil`, you are responsible for saving a reference to the provided object and using it to configure your interface controller.
 
 ## See Also
 

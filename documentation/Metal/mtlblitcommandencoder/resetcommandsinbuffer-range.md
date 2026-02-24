@@ -22,7 +22,7 @@ func resetCommandsInBuffer(_ buffer: any MTLIndirectCommandBuffer, range: Range<
 ## Parameters
 
 - `buffer`: An indirect command buffer the command resets.
-- `range`: A range of commands within  .
+- `range`: A range of commands within `buffer`.
 
 ## See Also
 

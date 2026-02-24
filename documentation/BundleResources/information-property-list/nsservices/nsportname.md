@@ -8,6 +8,10 @@ The port that the service monitors for incoming requests.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [NSKeyEquivalent](information-property-list/nsservices/nskeyequivalent.md)

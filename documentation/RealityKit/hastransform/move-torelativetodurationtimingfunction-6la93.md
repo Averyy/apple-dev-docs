@@ -27,9 +27,9 @@ An [`AnimationPlaybackController`](animationplaybackcontroller.md) instance that
 ## Parameters
 
 - `target`: A 4x4 matrix that indicates the new location.
-- `referenceEntity`: The entity that defines a frame of reference. Set   this to   to indicate world space.
+- `referenceEntity`: The entity that defines a frame of reference. Set this to `nil` to indicate world space.
 - `duration`: The time in seconds over which the move should occur.
-- `timingFunction`: A timing function that controls the progress of the   animation.
+- `timingFunction`: A timing function that controls the progress of the animation.
 
 ## See Also
 

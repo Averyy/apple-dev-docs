@@ -30,7 +30,7 @@ Implement this method if your player user interface requires configuration or la
 ## Parameters
 
 - `pictureInPictureController`: The delegating controller.
-- `completionHandler`: You must call the completion handler with a value of   to allow the system to finish restoring your player user interface.
+- `completionHandler`: You must call the completion handler with a value of `true` to allow the system to finish restoring your player user interface.
 
 
 ---

@@ -33,9 +33,9 @@ After success of this function, set the `dst_ptr`, `dst_size`, `src_ptr`, and `s
 
 ## Parameters
 
-- `stream`: Pointer to an allocated   structure.
-- `operation`: A constant of type   used to indicate the stream operation.
-- `algorithm`: A constant of type   to select the algorithm:  ,  ,  , or  .
+- `stream`: Pointer to an allocated [`compression_stream`](compression_stream.md) structure.
+- `operation`: A constant of type [`compression_stream_operation`](compression_stream_operation.md) used to indicate the stream operation.
+- `algorithm`: A constant of type [`compression_algorithm`](compression_algorithm.md) to select the algorithm: [`COMPRESSION_LZ4`](compression_lz4.md), [`COMPRESSION_ZLIB`](compression_zlib.md), [`COMPRESSION_LZMA`](compression_lzma.md), or [`COMPRESSION_LZFSE`](compression_lzfse.md).
 
 ## See Also
 

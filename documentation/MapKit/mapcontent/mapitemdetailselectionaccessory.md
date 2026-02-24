@@ -21,7 +21,7 @@ Specifies the selection accessory to display for the selected map item content.
 
 ## Parameters
 
-- `style`: The map item detail selection accessory style. If  , no selection accessory appears.
+- `style`: The map item detail selection accessory style. If `nil`, no selection accessory appears.
 
 ## See Also
 

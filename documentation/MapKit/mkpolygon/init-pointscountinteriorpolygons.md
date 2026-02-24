@@ -27,8 +27,8 @@ A new polygon object.
 ## Parameters
 
 - `points`: The array of map points defining the shape. The new object copy the data in this array.
-- `count`: The number of items in the   array.
-- `interiorPolygons`: An array of   objects that define one or more cutout regions for the receiver’s polygon.
+- `count`: The number of items in the `points` array.
+- `interiorPolygons`: An array of `MKPolygon` objects that define one or more cutout regions for the receiver’s polygon.
 
 ## See Also
 

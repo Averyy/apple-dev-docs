@@ -26,7 +26,7 @@ static func result<Intent>(actionButtonIntent: Intent) -> Self where Self == Int
 
 ## Parameters
 
-- `actionButtonIntent`: The   used perform next
+- `actionButtonIntent`: The `AppIntent` used perform next
 
 
 ---

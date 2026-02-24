@@ -21,9 +21,9 @@ func setModeVibrationWithStartPosition(_ startPosition: Float, amplitude: Float,
 
 ## Parameters
 
-- `startPosition`: The effect’s start position. A value between   and   , where   is the minimum and   is the maximum trigger depression.
-- `amplitude`: The amplitude of the vibration effect. A value between   and  , where   is the minimum and   is the maximum amplitude.
-- `frequency`: The frequency of the vibration effect, which is a value between   and  , where   is the minimum and   is the maximum frequency.
+- `startPosition`: The effect’s start position. A value between `0` and `1` , where `0` is the minimum and `1` is the maximum trigger depression.
+- `amplitude`: The amplitude of the vibration effect. A value between `0` and `1`, where `0` is the minimum and `1` is the maximum amplitude.
+- `frequency`: The frequency of the vibration effect, which is a value between `0` and `1`, where `0` is the minimum and `1` is the maximum frequency.
 
 ## See Also
 

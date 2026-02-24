@@ -24,7 +24,7 @@ class URLAuthenticationChallenge
 
 Your app receives authentication challenges in various [`URLSession`](urlsession.md), [`NSURLConnection`](nsurlconnection.md), and [`NSURLDownload`](nsurldownload.md) delegate methods, such as [`urlSession(_:task:didReceive:completionHandler:)`](urlsessiontaskdelegate/urlsession(_:task:didreceive:completionhandler:).md). These objects provide the information you’ll need when deciding how to handle a server’s request for authentication.
 
-At the core of that authentication challenge is a  that defines the type of authentication being requested, the host and port number, the networking protocol, and (where applicable) the authentication realm (a group of related URLs on the same server that share a single set of credentials).
+At the core of that authentication challenge is a *protection space* that defines the type of authentication being requested, the host and port number, the networking protocol, and (where applicable) the authentication realm (a group of related URLs on the same server that share a single set of credentials).
 
 ## Topics
 

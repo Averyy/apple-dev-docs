@@ -26,8 +26,8 @@ This method parses endpoint descriptors to determine burst size, which includes 
 
 - `usbDeviceSpeed`: The operational speed of the device.
 - `descriptor`: The endpoint descriptor to parse.
-- `companionDescriptor`: The SuperSpeed endpoint companion descriptor to parse, or  .
-- `sspCompanionDescriptor`: The SuperSpeed Plus isochronous endpoint companion descriptor to parse, or  .
+- `companionDescriptor`: The SuperSpeed endpoint companion descriptor to parse, or `NULL`.
+- `sspCompanionDescriptor`: The SuperSpeed Plus isochronous endpoint companion descriptor to parse, or `NULL`.
 
 ## See Also
 

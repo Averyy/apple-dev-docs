@@ -28,6 +28,11 @@ The Xcode project contains schemes for running the sample on macOS, iOS, or tvOS
 
 The sample contains the following preprocessor conditionals that you can modify to control the configuration of the app.
 
+```objective-c
+#define USE_EYE_DEPTH              1
+#define LIGHT_STENCIL_CULLING      1
+```
+
 Here’s what they modify in the app’s behavior:
 
 - `USE_EYE_DEPTH` — When enabled, writes depth values in eye space to the geometry buffer depth component. This allows the deferred pass to calculate the eye space fragment position more easily to apply lighting. When disabled, the screen depth is written to the geometry buffer depth component and an extra inverse transform from screen space to eye space is necessary to calculate lighting contributions in the deferred pass.
@@ -37,14 +42,18 @@ Here’s what they modify in the app’s behavior:
 
 Before you get started with the sample app, review these concepts to better understand key details of a deferred lighting renderer and some unique Metal features.
 
+**Traditional Deferred Lighting Renderer**
+
 A traditional deferred lighting renderer is typically separated into two render passes:
 
--  The renderer draws and transforms the scene’s models, and the fragment function renders the results to a collection of textures known as the  or . The geometry buffer contains material colors from the models, as well as per-fragment normal, shadow, and depth values.
--  The renderer draws each light volume, using the geometry buffer data to reconstruct the position of each fragment and apply the lighting calculations. As the lights are drawn, the output of each light is blended on top of the previous light outputs. Finally, the renderer composites other data, such as shadows and directional lighting, onto the scene by executing a full-screen quad or a compute kernel.
+- **First pass: Geometry buffer rendering.** The renderer draws and transforms the scene’s models, and the fragment function renders the results to a collection of textures known as the *geometry buffer* or *g-buffer*. The geometry buffer contains material colors from the models, as well as per-fragment normal, shadow, and depth values.
+- **Second pass: Deferred lighting and composition.** The renderer draws each light volume, using the geometry buffer data to reconstruct the position of each fragment and apply the lighting calculations. As the lights are drawn, the output of each light is blended on top of the previous light outputs. Finally, the renderer composites other data, such as shadows and directional lighting, onto the scene by executing a full-screen quad or a compute kernel.
 
 ![Diagram showing the outputs of the two render passes in a traditional deferred lighting algorithm.](https://docs-assets.developer.apple.com/published/bb16b6059e1d10fa353fb7491b0fa3c4/deferred-lighting-swift-2-TraditionalDeferredLighting.png)
 
-> **Note**: Some macOS GPUs have an  (IMR) architecture. On IMR GPUs, a deferred lighting renderer can only be implemented with at least two render passes. Therefore, the sample implements a two-pass deferred lighting algorithm for the macOS version of the app. The iOS and tvOS simulators run on macOS Metal implementations so these also use the two-pass deferred lighting algorithm.
+> **Note**: Some macOS GPUs have an *immediate mode rendering* (IMR) architecture. On IMR GPUs, a deferred lighting renderer can only be implemented with at least two render passes. Therefore, the sample implements a two-pass deferred lighting algorithm for the macOS version of the app. The iOS and tvOS simulators run on macOS Metal implementations so these also use the two-pass deferred lighting algorithm.
+
+**Single-Pass Deferred Lighting on Apple silicon GPUs**
 
 Apple silicon GPUs, found on all iOS and tvOS device and now certain macOS devices, use a tile-based deferred rendering (TBDR) architecture, which allows them to render data to tile memory within the GPU. By rendering to tile memory, the device avoids potentially expensive round trips between the GPU and system memory (via a bandwidth-constrained memory bus). Whether a GPU writes tile memory to system memory depends on these configurations:
 
@@ -61,7 +70,9 @@ Geometry buffer data is produced and consumed exclusively by the GPU, not the CP
 
 ![Diagram showing how geometry buffer data in a single-pass deferred lighting algorithm is accessed in tile memory.](https://docs-assets.developer.apple.com/published/ef0f59c934f11dc0faad9b37bfe5d269/deferred-lighting-swift-4-SinglePassDeferredLightingOnTBDR.png)
 
-> **Note**: The feature that allows a TBDR GPU to read from attached render targets in a fragment function is also known as .
+> **Note**: The feature that allows a TBDR GPU to read from attached render targets in a fragment function is also known as *programmable blending*.
+
+**Deferred Lighting with Raster Order Groups**
 
 By default, when a fragment shader writes data to a pixel, the GPU waits until the shader has completely finished writing to that pixel before beginning the execution of another fragment shader for that same pixel.
 
@@ -73,8 +84,8 @@ Raster order groups allow apps to increase the parallelization of the GPU’s fr
 
 In this sample, some lighting fragment functions use these raster order groups:
 
--  `AAPLLightingROG` is used for the render target that contains the results of the lighting calculations.
--  `AAPLGBufferROG` is used for the geometry buffer data in the lighting function.
+- **Raster order group 0.** `AAPLLightingROG` is used for the render target that contains the results of the lighting calculations.
+- **Raster order group 1.** `AAPLGBufferROG` is used for the geometry buffer data in the lighting function.
 
 These raster order groups allow the GPU to read the geometry buffer in a fragment shader and execute the lighting calculations, before the lighting calculations from a previous instance of a fragment shader have finished writing their output data.
 
@@ -92,7 +103,41 @@ The sample renders each full frame by rendering these stages, in this order:
 
 The sample’s single pass deferred renderer produces the geometry buffer and performs all subsequent stages in a single render pass. This single-pass implementation is possible due to the TBDR architecture of iOS and tvOS GPUs, which allows a device to read geometry buffer data from render targets in tile memory.
 
+```swift
+encodePass(into: commandBuffer, using: gBufferAndLightingPassDescriptor, label: "GBuffer & Lighting Pass") { renderEncoder in
+
+    encodeGBufferStage(using: renderEncoder)
+    encodeDirectionalLightingStage(using: renderEncoder)
+    encodeLightMaskStage(using: renderEncoder)
+    encodePointLightStage(using: renderEncoder)
+    encodeSkyboxStage(using: renderEncoder)
+    encodeFairyBillboardStage(using: renderEncoder)
+}
+```
+
 The sample’s traditional deferred renderer produces the geometry buffer in one render pass and then performs all subsequent stages in another render pass. This two-pass implementation is necessary with GPUs using an IMR architecture, which don’t support reading render target color data in a fragment function.
+
+```swift
+encodePass(into: commandBuffer,
+           using: gBufferPassDescriptor,
+           label: "GBuffer Generation Pass") { renderEncoder in
+
+            encodeGBufferStage(using: renderEncoder)
+}
+```
+
+```swift
+encodePass(into: commandBuffer,
+           using: lightingPassDescriptor,
+           label: "Lighting Pass") { (renderEncoder) in
+
+            encodeDirectionalLightingStage(using: renderEncoder)
+            encodeLightMaskStage(using: renderEncoder)
+            encodePointLightStage(using: renderEncoder)
+            encodeSkyboxStage(using: renderEncoder)
+            encodeFairyBillboardStage(using: renderEncoder)
+}
+```
 
 ##### Render the Shadow Map
 
@@ -102,11 +147,32 @@ The sample renders a shadow map for the single directional light in the scene (t
 
 The render pipeline for the shadow map has a vertex function but not a fragment function; therefore, the sample can determine the screen-space depth value written to the shadow map without executing further stages of the render pipeline. (Additionally, the render executes quickly because it doesn’t have a fragment function.)
 
+```swift
+lazy var shadowGeneration = makeRenderPipelineState(label: "Shadow Generation Stage") { descriptor in
+    descriptor.vertexFunction = library.makeFunction(name: "shadow_vertex")
+    descriptor.depthAttachmentPixelFormat = .depth32Float
+}
+```
+
 Before drawing geometry for the shadow map, the sample sets a depth bias value to reduce shadow artifacts:
+
+```swift
+renderEncoder.setDepthBias(0.015, slopeScale: 7, clamp: 0.02)
+```
 
 Then, in the fragment function of the geometry buffer stage, the sample tests whether the fragment is occluded and shadowed:
 
+```metal
+// Compare the depth value in the shadow map to the depth value of the fragment in the sun's.
+// frame of reference.  If the sample is occluded, it will be zero.
+float shadow_sample = shadowMap.sample_compare(shadowSampler, in.shadow_coord.xy, in.shadow_coord.z);
+```
+
 The sample stores the result of the `sample_compare` function in the `w` component of the `normal_shadow` render target:
+
+```metal
+gBuffer.normal_shadow = half4(eye_normal.xyz, shadow_sample);
+```
 
 In the directional light and point light composition stages, the sample reads the shadow value from the geometry buffer and applies it to the fragment.
 
@@ -124,6 +190,10 @@ When the sample renders the geometry buffer, both the traditional and single pas
 
 The sample creates the geometry buffer textures in the implmentation of the common `drawableSizeWillChange` computed property, but the single-pass deferred renderer sets the `storageMode` variable to `MTLStorageMode.memoryless` while the traditional deferred renderer sets it to `MTLStorageMode.private`.
 
+```swift
+var storageMode = MTLStorageMode.private
+```
+
 For the traditional deferred renderer, after the sample finishes writing data to the geometry buffer textures, it calls the `endEncoding` method to finalize the geometry buffer render pass. Because the store action for the render command encoder is set to `MTLStoreAction.store`, the GPU writes each of the render target textures to video memory when the encoder completes its execution. This allows the sample to read these textures from video memory in the subsequent deferred lighting and composition render pass.
 
 For the single pass deferred renderer, after the sample finishes writing data to the geometry buffer textures, the sample doesn’t finalize the render command encoder and instead continues to use it for subsequent stages.
@@ -134,7 +204,34 @@ The sample applies directional lighting and shadows to the drawable that’s des
 
 The traditional deferred renderer reads geometry buffer data from textures set as arguments to a fragment function:
 
+```metal
+fragment half4
+deferred_directional_lighting_fragment_traditional(
+    QuadInOut                in                      [[ stage_in ]],
+    constant AAPLFrameData & frameData               [[ buffer(AAPLBufferFrameData) ]],
+    texture2d<half>          albedo_specular_GBuffer [[ texture(AAPLRenderTargetAlbedo) ]],
+    texture2d<half>          normal_shadow_GBuffer   [[ texture(AAPLRenderTargetNormal) ]],
+    texture2d<float>         depth_GBuffer           [[ texture(AAPLRenderTargetDepth)  ]])
+```
+
 The single pass deferred renderer reads geometry buffer data from render targets attached to the render pass:
+
+```metal
+struct GBufferData
+{
+    half4 lighting        [[color(AAPLRenderTargetLighting), raster_order_group(AAPLLightingROG)]];
+    half4 albedo_specular [[color(AAPLRenderTargetAlbedo),   raster_order_group(AAPLGBufferROG)]];
+    half4 normal_shadow   [[color(AAPLRenderTargetNormal),   raster_order_group(AAPLGBufferROG)]];
+    float depth           [[color(AAPLRenderTargetDepth),    raster_order_group(AAPLGBufferROG)]];
+};
+```
+
+```metal
+deferred_directional_lighting_fragment_single_pass(
+    QuadInOut                in        [[ stage_in ]],
+    constant AAPLFrameData & frameData [[ buffer(AAPLBufferFrameData) ]],
+    GBufferData              GBuffer)
+```
 
 Although these fragment functions have different inputs, they share a common implementation in the `deferred_directional_lighting_fragment_common` fragment function. This function performs these operations:
 
@@ -152,9 +249,77 @@ The sample creates a stencil mask that’s used to avoid executing expensive lig
 
 In the `encodeLightMaskStage` implementation, the sample sets the `lightMask` object of the `PipelineStates` class and encodes an instanced draw call to draw only the back faces of icosahedrons, which encompass the volumes of the point lights. If a fragment within this draw call fails the depth test, this result indicates that the back face of the icosahedron is behind some geometry.
 
+```swift
+renderEncoder.setRenderPipelineState(lightMaskPipelineState)
+renderEncoder.setDepthStencilState(lightMaskDepthStencilState)
+
+renderEncoder.setStencilReferenceValue(128)
+renderEncoder.setCullMode(.front)
+
+renderEncoder.setVertexBuffer(scene.frameData,
+                              offset: 0,
+                              index: Int(AAPLBufferFrameData.rawValue))
+
+renderEncoder.setVertexBuffer(scene.pointLights,
+                              offset: 0,
+                              index: Int(AAPLBufferIndexLightsData.rawValue))
+
+renderEncoder.setVertexBuffer(scene.lightPositions,
+                              offset: 0,
+                              index: Int(AAPLBufferIndexLightsPosition.rawValue))
+
+renderEncoder.setFragmentBuffer(scene.frameData,
+                                offset: 0,
+                                index: Int(AAPLBufferFrameData.rawValue))
+
+renderEncoder.draw(meshes: [scene.icosahedron],
+                   instanceCount: scene.numberOfLights,
+                   requiresMaterials: false)
+```
+
 The `lightMask` pipeline object doesn’t have a fragment function, so no color data is written from this render pipeline. However, due to the set `lightMask` depth and stencil state, any fragment that fails the depth test increments the stencil buffer for that fragment. Fragments that contain geometry have a starting depth value of `128`, which the sample set in the geometry buffer stage. Therefore, any fragment that fails the depth test while `lightMask` depth and stencil state is set increments the depth value to greater than `128`. (Because front face culling is enabled, a fragment that fails the depth test and has a value greater than `128` indicates that at least the back half of the icosahedron is behind all geometry.)
 
 In the next draw call, in the `encodePointLightStage` implementation, the sample applies the contribution of the point lights to the drawable. The sample tests whether the front half of the icosahedron is in front of all geometry, which determines if the volume intersects some geometry and thus if the fragment should be lit. The depth and stencil state,  `pointLight`, set for this draw call only executes the fragment function if the stencil value for the fragment is greater than the reference value of `128`. (Because the stencil test value is set to `MTLCompareFunction.less`, the sample passes the test only if the reference value of `128` is less than the value in the stencil buffer.)
+
+```swift
+renderEncoder.setRenderPipelineState(pipelineStates.pointLighting)
+renderEncoder.setDepthStencilState(depthStencilStates.pointLighting)
+
+if !device.supportsFamily(.apple1) {
+    scene.setGBufferTextures(renderEncoder: renderEncoder)
+}
+
+renderEncoder.setStencilReferenceValue(128)
+renderEncoder.setCullMode(.back)
+
+renderEncoder.setVertexBuffer(scene.frameData,
+                              offset: 0,
+                              index: Int(AAPLBufferFrameData.rawValue))
+
+renderEncoder.setVertexBuffer(scene.pointLights,
+                              offset: 0,
+                              index: Int(AAPLBufferIndexLightsData.rawValue))
+
+renderEncoder.setVertexBuffer(scene.lightPositions,
+                              offset: 0,
+                              index: Int(AAPLBufferIndexLightsPosition.rawValue))
+
+renderEncoder.setFragmentBuffer(scene.frameData,
+                                offset: 0,
+                                index: Int(AAPLBufferFrameData.rawValue))
+
+renderEncoder.setFragmentBuffer(scene.pointLights,
+                                offset: 0,
+                                index: Int(AAPLBufferIndexLightsData.rawValue))
+
+renderEncoder.setFragmentBuffer(scene.lightPositions,
+                                offset: 0,
+                                index: Int(AAPLBufferIndexLightsPosition.rawValue))
+
+renderEncoder.draw(meshes: [scene.icosahedron],
+                   instanceCount: scene.numberOfLights,
+                   requiresMaterials: false)
+```
 
 Because the draw call in `encodeLightMaskStage` increments the stencil values for fragments that are behind any geometry, the only fragments for which the sample executes the fragment function are those that meet both of these conditions:
 
@@ -175,7 +340,28 @@ In the final lighting stages, the sample applies much simpler lighting technique
 
 The sample applies depth testing to the skybox, against the temple’s geometry, so the renderer only renders to areas of the drawable that have not been filled by some geometry.
 
+```swift
+renderEncoder.setRenderPipelineState(pipelineStates.skybox)
+renderEncoder.setDepthStencilState(depthStencilStates.skybox)
+
+renderEncoder.setCullMode(.front)
+
+renderEncoder.setVertexBuffer(scene.frameData, offset: 0, index: Int(AAPLBufferFrameData.rawValue))
+renderEncoder.setFragmentTexture(scene.skyMap, index: Int(AAPLTextureIndexBaseColor.rawValue))
+
+renderEncoder.draw(meshes: [scene.skyMesh],
+                   requiresMaterials: false)
+```
+
 The sample renders fairy lights onto the drawable as 2D circles and uses a texture to determine the alpha blending factors for their fragments.
+
+```metal
+half4 c = colorMap.sample(linearSampler, float2(in.tex_coord));
+
+half3 fragColor = in.color * c.x;
+
+return half4(fragColor, c.x);
+```
 
 ## See Also
 

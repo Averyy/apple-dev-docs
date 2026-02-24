@@ -22,9 +22,9 @@ init(isActive: Binding<Bool>, @ViewBuilder destination: () -> Destination, @View
 
 ## Parameters
 
-- `isActive`: A binding to a Boolean value that indicates whether    is currently presented.
+- `isActive`: A binding to a Boolean value that indicates whether `destination` is currently presented.
 - `destination`: A view for the navigation link to present.
-- `label`: A view builder to produce a label describing the    to present.
+- `label`: A view builder to produce a label describing the `destination` to present.
 
 ## See Also
 

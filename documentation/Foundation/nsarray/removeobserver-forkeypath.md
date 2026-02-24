@@ -27,7 +27,7 @@ func removeObserver(_ observer: NSObject, forKeyPath keyPath: String)
 ## Parameters
 
 - `observer`: The object to remove as an observer.
-- `keyPath`: A key-path, relative to the array, for which   is registered to receive KVO change notifications. This value must not be  .
+- `keyPath`: A key-path, relative to the array, for which `observer` is registered to receive KVO change notifications. This value must not be `nil`.
 
 ## See Also
 

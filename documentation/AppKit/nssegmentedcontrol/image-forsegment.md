@@ -20,7 +20,7 @@ The image associated with the segment; otherwise, `nil`.
 
 ## Parameters
 
-- `segment`: The index of the segment whose image you want to get. This method raises an exception ( ) if the index is out of bounds.
+- `segment`: The index of the segment whose image you want to get. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if the index is out of bounds.
 
 ## See Also
 

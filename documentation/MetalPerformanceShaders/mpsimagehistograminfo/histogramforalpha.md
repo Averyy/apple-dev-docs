@@ -22,7 +22,7 @@ var histogramForAlpha: ObjCBool
 ## See Also
 
 - [var numberOfHistogramEntries: Int](mpsimagehistograminfo/numberofhistogramentries.md)
-  Specifies the number of histogram entries () for each channel.
+  Specifies the number of histogram entries (*bins*) for each channel.
 - [var minPixelValue: vector_float4](mpsimagehistograminfo/minpixelvalue.md)
   Specifies the minimum pixel value. Any pixel value less than this will be clipped to this value (for the purposes of histogram calculation), and assigned to the first histogram entry. This minimum value is applied to each of the four channels separately.
 - [var maxPixelValue: vector_float4](mpsimagehistograminfo/maxpixelvalue.md)

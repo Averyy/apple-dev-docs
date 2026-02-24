@@ -17,6 +17,10 @@ Using this framework depends on having registered an applet bundle with the [`Ap
 
 The [`CredentialSession`](credentialsession.md) class serves as the entry point to the framework. This class provides three major functions:
 
+- **Management**: Allows your app to create, read, update, and delete credentials in the Secure Element.
+- **Wired actions**: Allows your app to exchange data, given a credential, with an *applet* that corresponds to the credential.
+- **Card emulation**: Allows the credential to communicate with a contactless reader.
+
 The framework also provides SwiftUI and UIKit extensions that perform wired actions and card emulation while providing an appropriate user interface.
 
 SecureElementCredential supports transactions for in-store payments, car keys, closed-loop transit, corporate badges, student IDs, home keys, hotel keys, merchant loyalty and rewards cards, and event tickets.

@@ -31,8 +31,10 @@ For backward binary compatibility with OS X v10.6 and earlier, the default imple
 ## Parameters
 
 - `url`: The URL locating the document to open.
-- `displayDocument`: If  , displays the document’s user interface.
-- `completionHandler`: The block takes three arguments:
+- `displayDocument`: If [`true`](https://developer.apple.com/documentation/Swift/true), displays the document’s user interface.
+- `completionHandler`: The completion handler block object passed in to be called at some point in the future, perhaps after the method invocation has returned. The completion handler must be called on the main thread. The block takes three arguments: - **`document`**: The document that was opened, if successful. Otherwise, `nil`.
+- **`documentWasAlreadyOpen`**: Whether the document was already open or being opened when this method was called.
+- **`error`**: If not successful, an `NSError` object that encapsulates the reason why the document could not be opened.
 
 ## See Also
 

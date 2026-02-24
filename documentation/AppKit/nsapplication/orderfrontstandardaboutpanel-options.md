@@ -22,7 +22,7 @@ In addition to the keys in AboutPanelOptionKey, you may also include the followi
 
 ## Parameters
 
-- `optionsDictionary`: A dictionary whose keys define the contents of the About window. For a list of keys, see  .
+- `optionsDictionary`: A dictionary whose keys define the contents of the About window. For a list of keys, see [`NSApplication.AboutPanelOptionKey`](nsapplication/aboutpaneloptionkey.md).
 
 ## See Also
 

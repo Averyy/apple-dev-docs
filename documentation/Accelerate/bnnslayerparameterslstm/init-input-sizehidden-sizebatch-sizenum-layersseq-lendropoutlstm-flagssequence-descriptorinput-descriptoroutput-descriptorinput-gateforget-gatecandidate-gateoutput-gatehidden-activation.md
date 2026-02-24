@@ -33,15 +33,15 @@ BNNS treats the [`hidden_desc`](bnnslstmdatadescriptor/hidden_desc.md) of the [`
 - `batch_size`: The number of input and output samples.
 - `num_layers`: The number of stacked LSTM layers.
 - `seq_len`: The size of the sequential input.
-- `dropout`: The dropout ratio to apply between LSTM layers. BNNS doesn’t apply dropout to the last stacked layer and ignores this parameter when the number of layers is  .
+- `dropout`: The dropout ratio to apply between LSTM layers. BNNS doesn’t apply dropout to the last stacked layer and ignores this parameter when the number of layers is `1`.
 - `lstm_flags`: Flags that control the behavior of an LSTM layer.
-- `sequence_descriptor`: A 1D array of unsigned-integer elements that determines the batch size for each step. If   is greater than   and the   property of this descriptor is  , BNNS uses the same   for the entire sequence.
-- `input_descriptor`: Descriptors of the input, hidden input, and cell-state input data. For more information, see  .
-- `output_descriptor`: Descriptors of the output, hidden output, and cell-state output data. For more information, see  .
-- `input_gate`: The descriptor of the input gate, which uses default sigmoid activation. Use C style multidimensional array notation to order the memory pointers as  .
-- `forget_gate`: The descriptor of the forget gate, which uses default sigmoid activation. Use C style multidimensional array notation to order the memory pointers as  .
-- `candidate_gate`: The descriptor of the candidate gate, which uses default tanh activation. Use C style multidimensional array notation to order the memory pointers as  .
-- `output_gate`: The descriptor of the output gate, which uses default sigmoid activation. Use C style multidimensional array notation to order the memory pointers as  .
+- `sequence_descriptor`: A 1D array of unsigned-integer elements that determines the batch size for each step. If [`seq_len`](bnnslayerparameterslstm/seq_len.md) is greater than `1` and the [`data`](bnnsndarraydescriptor/data.md) property of this descriptor is `nil`, BNNS uses the same [`batch_size`](bnnslayerparameterslstm/batch_size.md) for the entire sequence.
+- `input_descriptor`: Descriptors of the input, hidden input, and cell-state input data. For more information, see [`input_descriptor`](bnnslayerparameterslstm/input_descriptor.md).
+- `output_descriptor`: Descriptors of the output, hidden output, and cell-state output data. For more information, see [`output_descriptor`](bnnslayerparameterslstm/output_descriptor.md).
+- `input_gate`: The descriptor of the input gate, which uses default sigmoid activation. Use C style multidimensional array notation to order the memory pointers as `[num_layers][num_directions][hidden_size][input_size/hidden_size]`.
+- `forget_gate`: The descriptor of the forget gate, which uses default sigmoid activation. Use C style multidimensional array notation to order the memory pointers as `[num_layers][num_directions][hidden_size][input_size/hidden_size]`.
+- `candidate_gate`: The descriptor of the candidate gate, which uses default tanh activation. Use C style multidimensional array notation to order the memory pointers as `[num_layers][num_directions][hidden_size][input_size/hidden_size]`.
+- `output_gate`: The descriptor of the output gate, which uses default sigmoid activation. Use C style multidimensional array notation to order the memory pointers as `[num_layers][num_directions][hidden_size][input_size/hidden_size]`.
 - `hidden_activation`: Hidden activation function, which uses default tanh activation.
 
 ## See Also

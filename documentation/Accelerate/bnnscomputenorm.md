@@ -137,8 +137,8 @@ On return, the output descriptor contains two values that are the norms of the t
 
 - `dest`: The descriptor of the output.
 - `src`: The descriptor of the input.
-- `norm_type`: The type of the norm. This function supports only  .
-- `axis_flags`: The dimensions that the function uses to compute the norm. Set to   to specify that the function computes the norm over all dimensions.
+- `norm_type`: The type of the norm. This function supports only [`BNNSL2Norm`](bnnsl2norm.md).
+- `axis_flags`: The dimensions that the function uses to compute the norm. Set to `0` to specify that the function computes the norm over all dimensions.
 
 ## See Also
 

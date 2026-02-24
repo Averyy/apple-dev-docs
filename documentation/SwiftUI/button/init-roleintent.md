@@ -25,9 +25,9 @@ This initializer creates a [`Text`](text.md) view on your behalf, and treats the
 
 ## Parameters
 
-- `title`: A string that describes the purpose of the button’s  .
-- `role`: An optional semantic role describing the button. A value of    means that the button doesn’t have an assigned role.
-- `intent`: The   to execute.
+- `title`: A string that describes the purpose of the button’s `intent`.
+- `role`: An optional semantic role describing the button. A value of `nil` means that the button doesn’t have an assigned role.
+- `intent`: The `AppIntent` to execute.
 
 ## See Also
 

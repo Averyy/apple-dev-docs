@@ -32,7 +32,8 @@ You must create a channel manager as soon as possible when launching your app so
 
 - `delegate`: An object that conforms to the channel manager protocol.
 - `restorationDelegate`: An object that conforms to the channel resoration protocol.
-- `completionHandler`: The completion callback handler.
+- `completionHandler`: The completion callback handler. - **`manager`**: A new channel manager instance.
+- **`error`**: An error, if any, that indicates the reason why the system couldn’t create the channel manager.
 
 
 ---

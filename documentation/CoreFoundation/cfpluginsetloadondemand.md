@@ -27,7 +27,7 @@ Plug-ins that do static registration are load on demand by default. Plug-ins tha
 ## Parameters
 
 - `plugIn`: The plug-in to be loaded on demand.
-- `flag`:   to enable load on demand,   otherwise.
+- `flag`: `true` to enable load on demand, `false` otherwise.
 
 ## See Also
 

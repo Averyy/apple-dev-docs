@@ -26,10 +26,10 @@ An `NSStringEncoding` value, or `0` if a string encoding could not be determined
 
 ## Parameters
 
-- `data`: An   object containing bytes in an encoding to be determined.
-- `opts`: Options to use when attempting to determine the string encoding. See   for a full list of supported options.
-- `string`: If a string encoding could be determined, upon return contains an   object constructed from data using the determined string encoding.
-- `usedLossyConversion`: If a string encoding could be determined, upon return contains a   value corresponding to whether lossy conversion was used.
+- `data`: An `NSData` object containing bytes in an encoding to be determined.
+- `opts`: Options to use when attempting to determine the string encoding. See `String Encoding Detection Options` for a full list of supported options.
+- `string`: If a string encoding could be determined, upon return contains an `NSString` object constructed from data using the determined string encoding.
+- `usedLossyConversion`: If a string encoding could be determined, upon return contains a `BOOL` value corresponding to whether lossy conversion was used.
 
 ## See Also
 

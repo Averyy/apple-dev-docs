@@ -73,6 +73,10 @@ This payload provides a password to allow users to remove a locked configuration
 </plist>
 ```
 
+## Properties
+
+- `RemovalPassword` (string): The password to allow removing the profile.
+
 ## See Also
 
 - [object EducationConfiguration](educationconfiguration.md)

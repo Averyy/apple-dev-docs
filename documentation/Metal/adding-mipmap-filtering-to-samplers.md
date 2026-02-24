@@ -10,7 +10,29 @@ By default, samplers sample data only from mipmap `0`. If your texture contains 
 
 ##### Create the Sampler in Your App
 
-If you’re creating an [`MTLSamplerState`](mtlsamplerstate.md) instance, create the [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) instance and set its [`mipFilter`](mtlsamplerdescriptor/mipfilter.md) property. The following code uses linear filtering for the minification and magnification filter, and uses linear filtering for mipmaps. This combination is usually called . With this configuration, the GPU chooses the two mipmaps nearest in size and generates a sample by linearly filtering four pixels from each mipmap. Then it blends those two values with a linear interpolation to generate the final sample.
+If you’re creating an [`MTLSamplerState`](mtlsamplerstate.md) instance, create the [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) instance and set its [`mipFilter`](mtlsamplerdescriptor/mipfilter.md) property. The following code uses linear filtering for the minification and magnification filter, and uses linear filtering for mipmaps. This combination is usually called *trilinear filtering*. With this configuration, the GPU chooses the two mipmaps nearest in size and generates a sample by linearly filtering four pixels from each mipmap. Then it blends those two values with a linear interpolation to generate the final sample.
+
+**Swift**:
+
+```swift
+let descriptor = MTLSamplerDescriptor()
+descriptor.minFilter = MTLSamplerMinMagFilter.linear
+descriptor.magFilter = MTLSamplerMinMagFilter.linear
+descriptor.mipFilter = MTLSamplerMipFilter.linear
+
+let sampler = device.makeSamplerState(descriptor: descriptor)
+```
+
+**Objective-C**:
+
+```objective-c
+MTLSamplerDescriptor *descriptor = [MTLSamplerDescriptor new];
+descriptor.minFilter = MTLSamplerMinMagFilterLinear;
+descriptor.magFilter = MTLSamplerMinMagFilterLinear;
+descriptor.mipFilter = MTLSamplerMipFilterLinear;
+
+id<MTLSamplerState> sampler = [_device newSamplerStateWithDescriptor: descriptor];
+```
 
 Alternatively, any of these filters could filter from the nearest pixel, instead of a linear filter, resulting in fewer sampled pixels but lower quality. Ultimately, you need to decide the right tradeoffs between sampling performance and quality for your app.
 

@@ -22,7 +22,7 @@ static func result<Value>(value: Value, dialog: IntentDialog, snippetIntent: som
 
 ## Parameters
 
-- `value`: The value produced by the 
+- `value`: The value produced by the `AppIntent`
 - `dialog`: A custom success dialog
 - `snippetIntent`: The intent responsible for presenting a snippet for this result
 

@@ -23,8 +23,8 @@ func CFNumberFormatterSetProperty(_ formatter: CFNumberFormatter!, _ key: CFNumb
 ## Parameters
 
 - `formatter`: The number formatter to modify.
-- `key`: The name of the property of   to set. See   for a description of possible values.
-- `value`: The value of the specified key. This must be an instance of the correct   object for the corresponding key.
+- `key`: The name of the property of `formatter` to set. See [`Number Formatter Property Keys`](number-formatter-property-keys.md) for a description of possible values.
+- `value`: The value of the specified key. This must be an instance of the correct `CFType` object for the corresponding key.
 
 ## See Also
 

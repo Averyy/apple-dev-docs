@@ -26,11 +26,11 @@ Predicates do not automatically coerce types for you. For example, comparing a n
 
 ## Parameters
 
-- `leftExpressions`: An array of   objects that represent the left side of a predicate.
+- `leftExpressions`: An array of [`NSExpression`](https://developer.apple.com/documentation/Foundation/NSExpression) objects that represent the left side of a predicate.
 - `attributeType`: An attribute type for the right side of a predicate. This value dictates the type of view created, and how the control’s object value is coerced before putting it into a predicate.
-- `modifier`: A modifier for the predicate (see   for possible values).
-- `operators`: An array of   objects specifying the operator type (see   for possible values).
-- `options`: Options for the predicate (see   for possible values).
+- `modifier`: A modifier for the predicate (see [`NSComparisonPredicate.Modifier`](https://developer.apple.com/documentation/Foundation/NSComparisonPredicate/Modifier) for possible values).
+- `operators`: An array of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects specifying the operator type (see [`NSComparisonPredicate.Operator`](https://developer.apple.com/documentation/Foundation/NSComparisonPredicate/Operator) for possible values).
+- `options`: Options for the predicate (see [`NSComparisonPredicate.Options`](https://developer.apple.com/documentation/Foundation/NSComparisonPredicate/Options-swift.struct) for possible values).
 
 ## See Also
 

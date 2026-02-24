@@ -17,8 +17,8 @@ optional func webView(_ sender: WebView!, runOpenPanelForFileButtonWith resultLi
 ## Parameters
 
 - `sender`: The web view that sent the message.
-- `resultListener`: See the   protocol for how to set these values.
-- `allowMultipleFiles`: If  , the open panel should allow multiple files to be selected; otherwise, it should not.
+- `resultListener`: See the [`WebOpenPanelResultListener`](webopenpanelresultlistener.md) protocol for how to set these values.
+- `allowMultipleFiles`: If [`true`](https://developer.apple.com/documentation/Swift/true), the open panel should allow multiple files to be selected; otherwise, it should not.
 
 ## See Also
 

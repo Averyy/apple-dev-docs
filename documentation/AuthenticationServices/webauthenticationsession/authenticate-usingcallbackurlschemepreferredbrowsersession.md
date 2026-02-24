@@ -29,7 +29,7 @@ The URL that the authentication provider returns.
 
 - `url`: A URL beginning with HTTP or HTTPS that points to the authentication webpage.
 - `callbackURLScheme`: The app’s custom callback scheme.
-- `preferredBrowserSession`: The preferred data-sharing behavior of the browser session. For more information, see  .
+- `preferredBrowserSession`: The preferred data-sharing behavior of the browser session. For more information, see [`WebAuthenticationSession.BrowserSession`](webauthenticationsession/browsersession.md).
 
 
 ---

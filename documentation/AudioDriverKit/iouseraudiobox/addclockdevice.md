@@ -26,7 +26,7 @@ If adding the clock device succeeds, the clock device’s reference count increm
 
 ## Parameters
 
-- `in_clock_device`: The   to associate with the box.
+- `in_clock_device`: The [`IOUserAudioClockDevice`](iouseraudioclockdevice.md) to associate with the box.
 
 ## See Also
 

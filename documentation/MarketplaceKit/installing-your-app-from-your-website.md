@@ -16,7 +16,7 @@ When someone taps a button mapped to the URL, the system makes several requests 
 
 MarketplaceKit supports authentication through the the OAuth 2.0 specification [`IETF RFC 6749`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6749). If your website requires someone to be signed-in before they can download an app, or to have made a purchase, include an authentication token in the   [`MarketplaceKitURIScheme`](marketplacekiturischeme.md) URL to begin the authorization process.
 
-After your server authorizes the device, the system requests a license for the app. Your server uses [`App License Delivery SDK`](https://developer.apple.com/documentation/AppLicenseDeliverySDK) in conjunction with the encryption and signing assets that Apple provides to implement  by issuing a dynamic license for each installation of an app.
+After your server authorizes the device, the system requests a license for the app. Your server uses [`App License Delivery SDK`](https://developer.apple.com/documentation/AppLicenseDeliverySDK) in conjunction with the encryption and signing assets that Apple provides to implement *digital rights management* by issuing a dynamic license for each installation of an app.
 
 After the device receives a license, the system requests the app data from your web server’s `restore` endpoint to install the app.
 
@@ -102,7 +102,7 @@ Pragma: no-cache
 | `token_type` | The value `"bearer"` (required). |
 | `expires_in` | The time, in seconds, during which the system considers the token valid. |
 
-When the system makes subsequent calls to your web server for app licenses, app installs (), or app updates, it includes the bearer token in the header for your server to validate the communication and associate with the person’s account.
+When the system makes subsequent calls to your web server for app licenses, app installs (*restores*), or app updates, it includes the bearer token in the header for your server to validate the communication and associate with the person’s account.
 
 > **Note**: For more information on implementing an authentication service, such as generating the tokens, refer to OAuth 2.0 Authorization Framework Specification, [`IETF RFC 6749`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6749). All communication between your server and device needs to occur over TLS.
 

@@ -22,8 +22,8 @@ func presentationDimensions(usePixelAspectRatio: Bool = true, useCleanAperture: 
 
 ## Parameters
 
-- `usePixelAspectRatio`: If  , the function computes the dimensions maintaining the pixel aspect ratio.
-- `useCleanAperture`: If  , the function computes the dimensions using the clean aperture.
+- `usePixelAspectRatio`: If `true`, the function computes the dimensions maintaining the pixel aspect ratio.
+- `useCleanAperture`: If `true`, the function computes the dimensions using the clean aperture.
 
 ## See Also
 

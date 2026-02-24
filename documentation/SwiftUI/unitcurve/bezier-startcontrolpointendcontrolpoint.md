@@ -26,8 +26,8 @@ The x components of the control points are clamped to the range [0,1] when the c
 
 ## Parameters
 
-- `startControlPoint`: The cubic Bézier control point associated with   the curve’s start point at (0, 0). The tangent vector from the   start point to its control point defines the initial velocity of   the timing function.
-- `endControlPoint`: The cubic Bézier control point associated with the   curve’s end point at (1, 1). The tangent vector from the end point   to its control point defines the final velocity of the timing   function.
+- `startControlPoint`: The cubic Bézier control point associated with the curve’s start point at (0, 0). The tangent vector from the start point to its control point defines the initial velocity of the timing function.
+- `endControlPoint`: The cubic Bézier control point associated with the curve’s end point at (1, 1). The tangent vector from the end point to its control point defines the final velocity of the timing function.
 
 
 ---

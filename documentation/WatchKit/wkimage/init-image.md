@@ -24,7 +24,7 @@ Use this method when you already have a UIKit image object and want to use it in
 
 ## Parameters
 
-- `image`: The image object. This parameter must not be  .
+- `image`: The image object. This parameter must not be `nil`.
 
 ## See Also
 

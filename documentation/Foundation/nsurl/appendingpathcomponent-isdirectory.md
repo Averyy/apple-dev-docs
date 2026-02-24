@@ -35,7 +35,7 @@ If the original URL does not end with a forward slash and `pathComponent` does n
 ## Parameters
 
 - `pathComponent`: The path component to add to the URL.
-- `isDirectory`: If  , a trailing slash is appended after  .
+- `isDirectory`: If [`true`](https://developer.apple.com/documentation/Swift/true), a trailing slash is appended after `pathComponent`.
 
 ## See Also
 

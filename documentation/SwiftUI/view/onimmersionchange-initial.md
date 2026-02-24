@@ -40,7 +40,7 @@ struct ImmersiveView: View {
 
 ## Parameters
 
-- `initial`: Whether the action should be run when this view initially   appears.
+- `initial`: Whether the action should be run when this view initially appears.
 - `action`: A closure to run when the immersion changes.
 
 ## See Also

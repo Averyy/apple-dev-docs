@@ -27,7 +27,7 @@ Returns `NoErr` if successful. Returns `kAudioCodecStateError` if the codec has 
 
 This function causes the codec to produce as many output packets as requested, provided there is sufficient input data. If there is not enough input data to produce the requested number of output packets, the `outStatus` parameter returns the value `kAudioCodecProduceOutputPacketNeedsMoreInputData` and the `ioNumberPackets` parameter indicates the actual number of packets produced. On the other hand, if there is enough input data to produce at least one additional full packet, the `outStatus` parameter returns the value `kAudioCodecProduceOutputPacketSuccessHasMore`.
 
-Note that decoders produce linear PCM data only in multiples of the number of frames in a packet of the encoded format. (See the [`AudioCodecAppendInputData(_:_:_:_:_:)`](audiocodecappendinputdata(_:_:_:_:_:).md) function for definitions of  and  as used by this API.) You can use the [`AudioCodecGetProperty(_:_:_:_:)`](audiocodecgetproperty(_:_:_:_:).md) function to obtain this value from the [`kAudioCodecPropertyPacketFrameSize`](kaudiocodecpropertypacketframesize.md) property. Similarly, this property indicates how many frames of linear PCM data an encoder needs in order to produce a packet of the specified output format.
+Note that decoders produce linear PCM data only in multiples of the number of frames in a packet of the encoded format. (See the [`AudioCodecAppendInputData(_:_:_:_:_:)`](audiocodecappendinputdata(_:_:_:_:_:).md) function for definitions of *packet* and *frame* as used by this API.) You can use the [`AudioCodecGetProperty(_:_:_:_:)`](audiocodecgetproperty(_:_:_:_:).md) function to obtain this value from the [`kAudioCodecPropertyPacketFrameSize`](kaudiocodecpropertypacketframesize.md) property. Similarly, this property indicates how many frames of linear PCM data an encoder needs in order to produce a packet of the specified output format.
 
 Output data can be produced only in multiples of whole packets.
 
@@ -35,12 +35,12 @@ The combination of the [`AudioCodecAppendInputData(_:_:_:_:_:)`](audiocodecappen
 
 ## Parameters
 
-- `inCodec`: An audio codec object. Because an audio codec object is a Component Manger component instance, you can use the Component Manager (for example, the functions   and OpenAComponent) to obtain an audio codec object.
+- `inCodec`: An audio codec object. Because an audio codec object is a Component Manger component instance, you can use the Component Manager (for example, the functions [`FindNextComponent`](https://developer.apple.com/documentation/coreservices/1516552-findnextcomponent) and OpenAComponent) to obtain an audio codec object.
 - `outOutputData`: The output data buffer.
 - `ioOutputDataByteSize`: Indicates the size of the output data buffer.
 - `ioNumberPackets`: On input, the number of packets desired. On output, the number of packets actually placed in the output buffer.
-- `outPacketDescription`: An array of   structures that describes the packet layout of the data returned by the   parameter. Pass   if you do not want this information returned. Note that this information is provided only when the output format is not linear PCM.
-- `outStatus`: On output, information about the codec’s status to allow for proper data management. See   for the possible values that can be returned.
+- `outPacketDescription`: An array of `AudioStreamPacketDescription` structures that describes the packet layout of the data returned by the `outOutputData` parameter. Pass `NULL` if you do not want this information returned. Note that this information is provided only when the output format is not linear PCM.
+- `outStatus`: On output, information about the codec’s status to allow for proper data management. See [`Output Status Constants`](1494122-output-status-constants.md) for the possible values that can be returned.
 
 ## See Also
 

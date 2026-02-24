@@ -77,7 +77,7 @@ parentSimulationEntity.components.set(PhysicsJointsComponent())
 
 ##### Create a New Joint
 
-[`PhysicsRevoluteJoint`](physicsrevolutejoint.md) creates a hinge for the swinging motion in this example. A revolute joint, also known as a , allows rotational movement in one axis, similar to a door swinging on its hinges.
+[`PhysicsRevoluteJoint`](physicsrevolutejoint.md) creates a hinge for the swinging motion in this example. A revolute joint, also known as a *hinge joint*, allows rotational movement in one axis, similar to a door swinging on its hinges.
 
 > **Note**: [`PhysicsRevoluteJoint`](physicsrevolutejoint.md) conforms to [`PhysicsJoint`](physicsjoint.md), a protocol for all physics joints.
 

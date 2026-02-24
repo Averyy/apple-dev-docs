@@ -28,7 +28,7 @@ A rectangle that tightly encloses the paths of the run’s glyphs, or, if `run`,
 
 - `run`: The run for which to calculate the image bounds.
 - `context`: The context for the image bounds being calculated. This is required because the context could have settings in it that would cause changes in the image bounds.
-- `range`: The portion of the run to measure. If the length of the range is set to  , then the measure operation continues from the start index of the range to the end of the run.
+- `range`: The portion of the run to measure. If the length of the range is set to `0`, then the measure operation continues from the start index of the range to the end of the run.
 
 ## See Also
 

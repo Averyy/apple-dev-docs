@@ -25,7 +25,7 @@ A view-space 3D coordinate.
 
 ## Parameters
 
-- `point`: A point in  .
+- `point`: A point in `viewport`.
 - `viewport`: A viewport.
 
 ## See Also

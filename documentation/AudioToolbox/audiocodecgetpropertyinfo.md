@@ -32,10 +32,10 @@ Call this function to:
 
 ## Parameters
 
-- `inCodec`: An audio codec object. Because an audio codec object is a Component Manger component instance, you can use the Component Manager (for example, the functions   and OpenAComponent) to obtain an audio codec object.
-- `inPropertyID`: Property ID of the property about which you want to obtain information. Codec property IDs are listed in   and  .
+- `inCodec`: An audio codec object. Because an audio codec object is a Component Manger component instance, you can use the Component Manager (for example, the functions [`FindNextComponent`](https://developer.apple.com/documentation/coreservices/1516552-findnextcomponent) and OpenAComponent) to obtain an audio codec object.
+- `inPropertyID`: Property ID of the property about which you want to obtain information. Codec property IDs are listed in [`Global Codec Properties`](1494121-global-codec-properties.md) and [`Instance Codec Properties`](1494111-instance-codec-properties.md).
 - `outSize`: On return, size in bytes of the current value of the property.
-- `outWritable`: Returns   if you can change the value of the property, otherwise  .
+- `outWritable`: Returns `true` if you can change the value of the property, otherwise `false`.
 
 ## See Also
 

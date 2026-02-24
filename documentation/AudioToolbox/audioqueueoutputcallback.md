@@ -36,7 +36,7 @@ When the system invokes this callback, you cannot assume that the audio data fro
 
 ## Parameters
 
-- `inUserData`: The custom data you’ve specified in the   parameter of the   function. Typically, this includes data format and state information for the audio queue.
+- `inUserData`: The custom data you’ve specified in the `inUserData` parameter of the [`AudioQueueNewOutput(_:_:_:_:_:_:_:)`](audioqueuenewoutput(_:_:_:_:_:_:_:).md) function. Typically, this includes data format and state information for the audio queue.
 - `inAQ`: The playback audio queue that invoked the callback.
 - `inBuffer`: An audio queue buffer, newly available to fill because the playback audio queue has acquired its contents.
 

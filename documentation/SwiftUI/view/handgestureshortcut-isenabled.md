@@ -54,7 +54,7 @@ The target of a hand gesture shortcut is resolved in a leading-to-trailing trave
 ## Parameters
 
 - `shortcut`: The shortcut to associate with this control.
-- `isEnabled`: A Boolean value that indicates whether the shortcut is   is enabled for this control.
+- `isEnabled`: A Boolean value that indicates whether the shortcut is is enabled for this control.
 
 ## See Also
 

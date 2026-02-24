@@ -32,7 +32,7 @@ For example, this allows you to have an [`NSButtonCell`](nsbuttoncell.md) object
 - `tableView`: The table view that sent the message.
 - `cell`: The cell to track.
 - `tableColumn`: The table column.
-- `row`: A row in  .
+- `row`: A row in `tableView`.
 
 ## See Also
 

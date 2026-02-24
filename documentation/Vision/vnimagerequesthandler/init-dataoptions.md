@@ -26,7 +26,7 @@ The intended use cases of this type of initializer include compressed images and
 ## Parameters
 
 - `imageData`: Data containing the image to be used for performing the requests. Image content is immutable.
-- `options`: An optional dictionary containing   keys to auxiliary image data.
+- `options`: An optional dictionary containing [`VNImageOption`](vnimageoption.md) keys to auxiliary image data.
 
 ## See Also
 

@@ -28,8 +28,8 @@ This method treats the length of the string as a valid index value that returns 
 
 ## Parameters
 
-- `aString`: The string to insert into the receiver.   must not be  .
-- `loc`: The location at which   is inserted. The location must not exceed the bounds of the receiver.
+- `aString`: The string to insert into the receiver. `aString` must not be `nil`.
+- `loc`: The location at which `aString` is inserted. The location must not exceed the bounds of the receiver. > ❗ **Important**:  Raises an `NSRangeException` if `loc` lies beyond the end of the string.
 
 ## See Also
 

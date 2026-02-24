@@ -30,7 +30,7 @@ If the local peer doesn’t own the associated entity, changes that the remote o
 
 ## Parameters
 
-- `changes`: A closure that the method calls while suppressing   synchronization triggers.
+- `changes`: A closure that the method calls while suppressing synchronization triggers.
 
 
 ---

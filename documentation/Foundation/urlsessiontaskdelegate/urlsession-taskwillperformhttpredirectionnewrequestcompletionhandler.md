@@ -26,7 +26,7 @@ optional func urlSession(_ session: URLSession, task: URLSessionTask, willPerfor
 
 #### Discussion
 
-This method is called  for tasks in default and ephemeral sessions. Tasks in background sessions automatically follow redirects.
+This method is called *only* for tasks in default and ephemeral sessions. Tasks in background sessions automatically follow redirects.
 
 ## Parameters
 
@@ -34,7 +34,7 @@ This method is called  for tasks in default and ephemeral sessions. Tasks in bac
 - `task`: The task whose request resulted in a redirect.
 - `response`: An object containing the server’s response to the original request.
 - `request`: A URL request object filled out with the new location.
-- `completionHandler`: A block that your handler should call with either the value of the   parameter, a modified URL request object, or   to refuse the redirect and return the body of the redirect response.
+- `completionHandler`: A block that your handler should call with either the value of the `request` parameter, a modified URL request object, or `NULL` to refuse the redirect and return the body of the redirect response.
 
 
 ---

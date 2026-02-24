@@ -25,10 +25,10 @@ This method does nothing if the associated controller isn’t a snapshot (its [`
 
 ## Parameters
 
-- `xAxis`: A normalized value of the x-axis ranging from   to  .
-- `yAxis`: A normalized value of the y-axis ranging from   to  .
-- `touchDown`: A Boolean value that indicates whether the user starts touching the surface. If  , the user is touching the surface; otherwise, the user isn’t.
-- `buttonValue`: A normalized number between   (minimum) and   (maximum) that represents the level of pressure the user applies to the button.
+- `xAxis`: A normalized value of the x-axis ranging from `-1` to `1`.
+- `yAxis`: A normalized value of the y-axis ranging from `-1` to `1`.
+- `touchDown`: A Boolean value that indicates whether the user starts touching the surface. If [`true`](https://developer.apple.com/documentation/Swift/true), the user is touching the surface; otherwise, the user isn’t.
+- `buttonValue`: A normalized number between `0.0` (minimum) and `1.0` (maximum) that represents the level of pressure the user applies to the button.
 
 
 ---

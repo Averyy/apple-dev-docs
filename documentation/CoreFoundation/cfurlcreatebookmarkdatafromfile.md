@@ -26,7 +26,7 @@ The bookmark data for the file, or `NULL` if an error occurs.
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `fileURL`: The file URL.
 - `errorRef`: The error that occurred in the case that the bookmark data cannot be created.
 

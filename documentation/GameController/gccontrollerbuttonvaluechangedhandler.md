@@ -22,8 +22,8 @@ typealias GCControllerButtonValueChangedHandler = (GCControllerButtonInput, Floa
 ## Parameters
 
 - `button`: The button element whose state changed.
-- `value`: A normalized number between   (minimum) and   (maximum) that represents the amount of physical or simulated pressure that the user applies to the button.
-- `pressed`: A Boolean value that indicates whether the user is pressing the button. If  , the user is pressing the button and the   parameter contains the amount of pressure. If  , the user isn’t applying any pressure and the   parameter is  .
+- `value`: A normalized number between `0.0` (minimum) and `1.0` (maximum) that represents the amount of physical or simulated pressure that the user applies to the button.
+- `pressed`: A Boolean value that indicates whether the user is pressing the button. If [`true`](https://developer.apple.com/documentation/Swift/true), the user is pressing the button and the `value` parameter contains the amount of pressure. If [`false`](https://developer.apple.com/documentation/Swift/false), the user isn’t applying any pressure and the `value` parameter is `0.0`.
 
 ## See Also
 

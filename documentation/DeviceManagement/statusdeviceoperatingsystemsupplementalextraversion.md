@@ -32,6 +32,10 @@ object StatusDeviceOperatingSystemSupplementalExtraVersion
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
+## Properties
+
+- `device.operating-system.supplemental.extra-version` (string) *(required)*: The operating system’s Background Security Improvement version in use on the device, for example, `a`.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

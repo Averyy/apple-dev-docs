@@ -26,9 +26,9 @@ This method doesn’t cause any selection-related delegate methods to be called.
 
 ## Parameters
 
-- `indexPath`: The index path of the item to select. Specifying   for this parameter clears the current selection.
-- `animated`: Specify   to animate the change in the selection or   to make the change without animating it.
-- `scrollPosition`: An option that specifies where the item should be positioned when scrolling finishes. For a list of possible values, see  .
+- `indexPath`: The index path of the item to select. Specifying `nil` for this parameter clears the current selection.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the change in the selection or [`false`](https://developer.apple.com/documentation/Swift/false) to make the change without animating it.
+- `scrollPosition`: An option that specifies where the item should be positioned when scrolling finishes. For a list of possible values, see [`UICollectionView.ScrollPosition`](uicollectionview/scrollposition.md).
 
 ## See Also
 

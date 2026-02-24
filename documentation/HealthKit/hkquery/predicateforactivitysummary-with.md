@@ -27,9 +27,27 @@ A predicate for matching a single activity summary.
 
 Use this convenience method to create a predicate that matches the activity summary for the specified day. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+let forDay = HKQuery.predicateForActivitySummaryWithDateComponents(day)
+let explicitForDay = NSPredicate(format: "%K == %@", HKPredicateKeyPathDateComponents, day)
+```
+
+**Objective-C**:
+
+```objc
+NSPredicate *forDay =
+[HKQuery predicateForActivitySummaryWithDateComponents: day];
+ 
+NSPredicate *explicitforDay =
+[NSPredicate predicateWithFormat:@"%K == %@",
+ HKPredicateKeyPathDateComponents, day];
+```
+
 ## Parameters
 
-- `dateComponents`: The date components must have a valid   property.
+- `dateComponents`: Date components that uniquely identify the day as perceived by the user. This day may be longer or shorter than 24 hours (for example, if the user traveled across time zones). The date components must have a valid [`calendar`](https://developer.apple.com/documentation/Foundation/NSDateComponents/calendar) property.
 
 ## See Also
 

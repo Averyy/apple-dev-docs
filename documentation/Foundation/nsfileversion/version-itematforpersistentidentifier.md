@@ -27,7 +27,7 @@ The file version object with the specified ID or `nil` if no such version object
 ## Parameters
 
 - `url`: The URL of the file whose version you want.
-- `persistentIdentifier`: The persistent ID of the   object you want.
+- `persistentIdentifier`: The persistent ID of the `NSFileVersion` object you want.
 
 ## See Also
 

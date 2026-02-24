@@ -19,6 +19,9 @@ struct AudioStreamRangedDescription
 
 Note that this structure is only used to describe the the available formats for a stream. It is not used for the current format.
 
+- **`mFormat`**: The AudioStreamBasicDescription that describes the format of the stream. Note that the mSampleRate field of the structure will be the same as the the values in mSampleRateRange when only a single sample rate is supported. It will be kAudioStreamAnyRate when there is a range with more elements.
+- **`mSampleRateRange`**: The AudioValueRange that describes the minimum and maximum sample rate for the stream. If the mSampleRate field of mFormat is kAudioStreamAnyRate the format supports the range of sample rates described by this structure. Otherwise, the minimum will be the same as the maximum which will be the same as the mSampleRate field of mFormat.
+
 ## Topics
 
 ### Initializers

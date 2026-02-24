@@ -26,8 +26,8 @@ You can use the created instance as input to the [`SecAccessCreate(_:_:_:)`](sec
 
 ## Parameters
 
-- `path`: The path to the app to trust. For application bundles, use the path to the bundle directory. Pass   to refer to the calling app.
-- `app`: On return, points to the newly created trusted app instance. Call the   method to release this instance when you are finished using it.
+- `path`: The path to the app to trust. For application bundles, use the path to the bundle directory. Pass `nil` to refer to the calling app.
+- `app`: On return, points to the newly created trusted app instance. Call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) method to release this instance when you are finished using it.
 
 
 ---

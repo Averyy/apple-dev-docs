@@ -47,7 +47,7 @@ If `shortcut` is `nil`, the scene’s presentation command will not be associate
 
 ## Parameters
 
-- `shortcut`: The keyboard shortcut for presenting the scene, or  .
+- `shortcut`: The keyboard shortcut for presenting the scene, or `nil`.
 
 ## See Also
 

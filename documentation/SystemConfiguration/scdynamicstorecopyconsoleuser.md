@@ -24,9 +24,9 @@ Note that this function only provides information about the primary console. It 
 
 ## Parameters
 
-- `store`: The dynamic store session that should be used for communication with the server. Pass   to use a temporary session.
-- `uid`: A pointer to memory that, on output, is filled with the user ID of the currently logged-in user. If  , this value is not returned.
-- `gid`: A pointer to memory that, on output, is filled with the group ID of the currently logged-in user. If  , this value is not returned.
+- `store`: The dynamic store session that should be used for communication with the server. Pass `NULL` to use a temporary session.
+- `uid`: A pointer to memory that, on output, is filled with the user ID of the currently logged-in user. If `NULL`, this value is not returned.
+- `gid`: A pointer to memory that, on output, is filled with the group ID of the currently logged-in user. If `NULL`, this value is not returned.
 
 ## See Also
 

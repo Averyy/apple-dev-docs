@@ -26,7 +26,7 @@ Override this method to respond to the values in `mask` or do other custom initi
 ## Parameters
 
 - `mask`: The color picker mask.
-- `owningColorPanel`: The   that owns the color picker. This value is cached so it can be accessed using the   property.
+- `owningColorPanel`: The `NSColorPanel` that owns the color picker. This value is cached so it can be accessed using the [`colorPanel`](nscolorpicker/colorpanel.md) property.
 
 ## See Also
 

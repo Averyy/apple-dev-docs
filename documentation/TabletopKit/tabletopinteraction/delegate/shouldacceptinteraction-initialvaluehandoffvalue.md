@@ -21,8 +21,8 @@ The intent that describes the action to be taken on this new interaction (reject
 
 ## Parameters
 
-- `initialValue`: The initial   for this interaction, calculated using the default configuration and constants.
-- `handoffValue`: If not  , this interaction is trying to take control of an equipment already controlled by another interaction,   causing a “handoff” of the equipment. The value provides the most recent data of the interaction that is   currently controlling the equipment.
+- `initialValue`: The initial `Value` for this interaction, calculated using the default configuration and constants.
+- `handoffValue`: If not `nil`, this interaction is trying to take control of an equipment already controlled by another interaction, causing a “handoff” of the equipment. The value provides the most recent data of the interaction that is currently controlling the equipment.
 
 ## See Also
 

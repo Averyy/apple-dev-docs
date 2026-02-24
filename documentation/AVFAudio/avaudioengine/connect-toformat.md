@@ -28,7 +28,7 @@ This method calls [`connect(_:to:fromBus:toBus:format:)`](avaudioengine/connect(
 
 - `node1`: The source audio node.
 - `node2`: The destination audio node.
-- `format`: If not  , the engine uses this value for the format of the source audio node’s output bus. In all cases, the engine matches the format of the destination audio node’s input bus to the source audio node’s output bus.
+- `format`: If not `NULL`, the engine uses this value for the format of the source audio node’s output bus. In all cases, the engine matches the format of the destination audio node’s input bus to the source audio node’s output bus.
 
 ## See Also
 

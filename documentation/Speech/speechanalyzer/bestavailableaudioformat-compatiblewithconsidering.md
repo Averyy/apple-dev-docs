@@ -30,7 +30,7 @@ Use this method to set up an audio pipeline or pre-convert audio to a usable for
 ## Parameters
 
 - `modules`: A list of modules that will be analyzing the audio.
-- `naturalFormat`: An audio format that you prefer to work with, or   if you have no preference.
+- `naturalFormat`: An audio format that you prefer to work with, or `nil` if you have no preference.
 
 ## See Also
 

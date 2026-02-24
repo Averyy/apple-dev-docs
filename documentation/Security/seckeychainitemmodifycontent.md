@@ -33,9 +33,9 @@ You should pair the `SecKeychainItemModifyContent` function with the [`SecKeycha
 ## Parameters
 
 - `itemRef`: A reference to the keychain item to modify.
-- `attrList`: A pointer to the list of attributes to set and their new values. Pass   if you have no need to modify attributes.
-- `length`: The length of the buffer pointed to by the   parameter. Pass   if you pass   in the   parameter.
-- `data`: A pointer to a buffer containing the data to store. Pass   if you do not need to modify the data.
+- `attrList`: A pointer to the list of attributes to set and their new values. Pass `NULL` if you have no need to modify attributes.
+- `length`: The length of the buffer pointed to by the `data` parameter. Pass `0` if you pass `NULL` in the `data` parameter.
+- `data`: A pointer to a buffer containing the data to store. Pass `NULL` if you do not need to modify the data.
 
 
 ---

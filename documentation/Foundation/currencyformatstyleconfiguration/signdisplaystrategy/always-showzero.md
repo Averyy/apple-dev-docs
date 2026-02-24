@@ -26,7 +26,7 @@ A sign display strategy that always displays the sign, and uses the specified ha
 
 ## Parameters
 
-- `showZero`: A Boolean value that indicates whether to show the sign symbol on zero values. Defaults to  .
+- `showZero`: A Boolean value that indicates whether to show the sign symbol on zero values. Defaults to `true`.
 
 ## See Also
 

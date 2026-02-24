@@ -27,7 +27,7 @@ This method removes the existing keys from the specified domain and then adds th
 ## Parameters
 
 - `domain`: A dictionary of keys and values to assign to the domain.
-- `domainName`: The name of the domain to update. If you specify the identifier for   the argument or registration domain, this method throws an exception.
+- `domainName`: The name of the domain to update. If you specify the identifier for the argument or registration domain, this method throws an exception.
 
 ## See Also
 

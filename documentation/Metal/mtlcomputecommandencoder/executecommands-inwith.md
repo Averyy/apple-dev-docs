@@ -20,8 +20,8 @@ func executeCommands(in indirectCommandBuffer: any MTLIndirectCommandBuffer, wit
 
 ## Parameters
 
-- `indirectCommandBuffer`: The   instance containing the commands to execute.
-- `executionRange`: The range of commands to execute. The maximum length of the range is   commands.
+- `indirectCommandBuffer`: The [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance containing the commands to execute.
+- `executionRange`: The range of commands to execute. The maximum length of the range is `16384` commands.
 
 ## See Also
 

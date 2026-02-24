@@ -12,6 +12,40 @@ If your app can configure an audio input device, you must set an [`NSMicrophoneU
 
 You can add audio support to your guest with just a few lines of code. The example below shows how to configure a VM to expose a VIRTIO sound device that consists of an audio input and output on the guest that the system bridges to the host machine’s speakers and microphone:
 
+**Swift**:
+
+```swift
+let outputStream = VZVirtioSoundDeviceOutputStreamConfiguration()
+outputStream.sink = VZHostAudioOutputStreamSink()
+let outputSoundDevice = VZVirtioSoundDeviceConfiguration()
+outputSoundDevice.streams = [outputStream]
+
+let inputStream = VZVirtioSoundDeviceInputStreamConfiguration()
+inputStream.source = VZHostAudioInputStreamSource()
+let inputSoundDevice = VZVirtioSoundDeviceConfiguration()
+inputSoundDevice.streams = [inputStream]
+
+let configuration = VZVirtualMachineConfiguration()
+configuration.audioDevices = [outputSoundDevice, inputSoundDevice]
+```
+
+**Objective-C**:
+
+```objc
+VZVirtioSoundDeviceOutputStreamConfiguration *outputStream = [[VZVirtioSoundDeviceOutputStreamConfiguration alloc] init];
+outputStream.sink = [[VZHostAudioOutputStreamSink alloc] init];
+VZVirtioSoundDeviceConfiguration *outputSoundDevice = [[VZVirtioSoundDeviceConfiguration alloc] init];
+soundDevice.streams = @[ outputStream ];
+
+VZVirtioSoundDeviceInputStreamConfiguration *inputStream = [[VZVirtioSoundDeviceInputStreamConfiguration alloc] init];
+inputStream.source = [[VZHostAudioInputStreamSource alloc] init];
+VZVirtioSoundDeviceConfiguration *inputSoundDevice = [[VZVirtioSoundDeviceConfiguration alloc] init];
+soundDevice.streams = @[ inputStream ];
+
+VZVirtualMachineConfiguration *configuration = [[VZVirtualMachineConfiguration alloc] init];
+configuration.audioDevices = @[ outputSoundDevice, inputSoundDevice ];
+```
+
 ## Topics
 
 ### Configurations

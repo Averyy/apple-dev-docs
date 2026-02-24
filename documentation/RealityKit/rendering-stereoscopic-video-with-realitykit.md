@@ -20,7 +20,7 @@ visionOS offers a range of options for programmatic video playback, including:
 - [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) is a versatile system component, appropriate for controlling both playback and timing of a media asset.
 - [`AVSampleBufferVideoRenderer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferVideoRenderer) enables greater customization — it requires that you programmatically enqueue individual video-sample buffers for rendering. You can also use an `AVSampleBufferAudioRenderer` instance with a [`AVSampleBufferRenderSynchronizer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferRenderSynchronizer), which affords I/O control, supports preprocessing of media data, and accommodates DRM models not supported by `AVPlayer`. An `AVSampleBufferRenderSynchronizer` can optionally synchronize audio with an [`AVSampleBufferAudioRenderer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferAudioRenderer).
 
-This sample app uses an `AVSampleBufferVideoRenderer` and a `VideoPlayerComponent` to render stereoscopic video in the . Its content is a  video, which places the left- and right-eye images next to each other as part of a single video frame. Because the duration of the video is brief, a looping mechanism supports continuous playback.
+This sample app uses an `AVSampleBufferVideoRenderer` and a `VideoPlayerComponent` to render stereoscopic video in the *Shared Space*. Its content is a *side-by-side* video, which places the left- and right-eye images next to each other as part of a single video frame. Because the duration of the video is brief, a looping mechanism supports continuous playback.
 
 ![A screenshot of a visionOS window displaying a video of a hummingbird flying in front of flowers.](https://docs-assets.developer.apple.com/published/ba6819ffde514eccc6e9ddb3470a547b/render-stereoscopic-video-with-realitykit-1%402x.png)
 
@@ -92,7 +92,7 @@ RealityView { content in
 Finally, the sample applies these modifiers to initialize the player, and to begin and end playback:
 
 - [`onChange(of:initial:_:)`](https://developer.apple.com/documentation/SwiftUI/View/onChange(of:initial:_:))
-- doc://com.apple.documentation/documentation/swiftui/view/task(priority:_:)
+- [`task(priority:_:)`](https://developer.apple.com/documentation/swiftui/view/task(priority:_:))
 
 ```swift
 // Begin playback when ready.

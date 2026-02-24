@@ -24,7 +24,7 @@ This method is called in response to the user tapping the Done button on the she
 
 - `tabBarController`: The tab bar controller that is being customized.
 - `viewControllers`: The view controllers of the tab bar controller. The arrangement of the controllers in the array represents the new display order within the tab bar.
-- `changed`: A Boolean value indicating whether items changed on the tab bar.   if items changed or   if they did not.
+- `changed`: A Boolean value indicating whether items changed on the tab bar. [`true`](https://developer.apple.com/documentation/Swift/true) if items changed or [`false`](https://developer.apple.com/documentation/Swift/false) if they did not.
 
 ## See Also
 

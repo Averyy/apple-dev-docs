@@ -30,7 +30,7 @@ You can save the generated events and use them when creating a [`HKWorkout`](hkw
 ## Parameters
 
 - `workoutSession`: The workout session associated with the event.
-- `event`: The event that the system generated. For a list of possible values, see  .
+- `event`: The event that the system generated. For a list of possible values, see [`HKWorkoutEvent`](hkworkoutevent.md).
 
 ## See Also
 

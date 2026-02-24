@@ -27,8 +27,8 @@ This function initializes an [`CFStringInlineBuffer`](cfstringinlinebuffer.md) s
 ## Parameters
 
 - `str`: The string to copy to the in-line buffer.
-- `buf`: The (uninitialized)   structure to initialize. On return, an initialized structure that can be used in a   function call. Typically this buffer is allocated on the stack.
-- `range`: The range of characters in   to copy to  . The specified range must not exceed the length of the string.
+- `buf`: The (uninitialized) [`CFStringInlineBuffer`](cfstringinlinebuffer.md) structure to initialize. On return, an initialized structure that can be used in a [`CFStringGetCharacterFromInlineBuffer(_:_:)`](cfstringgetcharacterfrominlinebuffer(_:_:).md) function call. Typically this buffer is allocated on the stack.
+- `range`: The range of characters in `str` to copy to `buf`. The specified range must not exceed the length of the string.
 
 ## See Also
 

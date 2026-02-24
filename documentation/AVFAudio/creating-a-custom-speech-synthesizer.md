@@ -15,7 +15,7 @@ Use your custom voices to synthesize speech by building a speech synthesis provi
 
 A speech synthesis provider allows you to bring your custom voices to iOS and macOS for system use with text-to-speech features like VoiceOver. A speech synthesizer receives text and information about speech properties, and provides an audio representation of the speech. To generate audio, you create an audio unit extension.
 
-The sample app shows you how to provide a list of voices to the system, and how to create a basic speech synthesizer to represent the voices you specify. It explores how to create an audio unit that’s responsible for handling text-to-speech requests to synthesize speech by using Speech Synthesis Markup Language (SSML). The sample inspects a request’s SSML for two strings —  and  — and plays the associated audio file.
+The sample app shows you how to provide a list of voices to the system, and how to create a basic speech synthesizer to represent the voices you specify. It explores how to create an audio unit that’s responsible for handling text-to-speech requests to synthesize speech by using Speech Synthesis Markup Language (SSML). The sample inspects a request’s SSML for two strings — *hello* and *goodbye* — and plays the associated audio file.
 
 ##### Configure the Sample Code Project
 

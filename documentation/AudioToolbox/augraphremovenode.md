@@ -29,7 +29,7 @@ Nodes can be removed in any thread context. The output node of the graph cannot 
 
 ## Parameters
 
-- `inGraph`: The   object that you are removing a node from.
+- `inGraph`: The `AUGraph` object that you are removing a node from.
 - `inNode`: The node you want to remove.
 
 ## See Also

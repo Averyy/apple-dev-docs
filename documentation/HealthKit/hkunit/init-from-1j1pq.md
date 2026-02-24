@@ -25,7 +25,7 @@ A HealthKit unit object, or `nil` if the unit parameter is not a valid energy fo
 
 ## Parameters
 
-- `energyFormatterUnit`: A valid energy formatter unit value. For a list of possible energy formatter unit values, see  .
+- `energyFormatterUnit`: A valid energy formatter unit value. For a list of possible energy formatter unit values, see [`EnergyFormatter.Unit`](https://developer.apple.com/documentation/Foundation/EnergyFormatter/Unit).
 
 ## See Also
 

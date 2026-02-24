@@ -30,7 +30,7 @@ A pose with a position, rotation, and scale that are defined by a projective tra
 
 ## Parameters
 
-- `transform`: The source transform. The function only considers the transform’s   rotation and translation components.
+- `transform`: The source transform. The function only considers the transform’s rotation and translation components.
 
 
 ---

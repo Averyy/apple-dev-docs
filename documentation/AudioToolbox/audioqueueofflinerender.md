@@ -30,7 +30,7 @@ When you change a playback audio queue’s rendering mode to offline, using the 
 ## Parameters
 
 - `inAQ`: The playback audio queue.
-- `inTimestamp`: The time corresponding to the beginning of the current audio queue buffer. This function uses the   field of the   data structure.
+- `inTimestamp`: The time corresponding to the beginning of the current audio queue buffer. This function uses the `mSampleTime` field of the [`AudioTimeStamp`](https://developer.apple.com/documentation/CoreAudioTypes/AudioTimeStamp) data structure.
 - `ioBuffer`: On input, a buffer you supply to hold rendered audio data. On output, the rendered audio data, which you can then write to a file.
 - `inNumberFrames`: The number of frames of audio to render.
 

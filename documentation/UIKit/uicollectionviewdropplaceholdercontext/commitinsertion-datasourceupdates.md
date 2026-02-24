@@ -34,7 +34,7 @@ If the placeholder cell is no longer present, this method does not execute your 
 
 ## Parameters
 
-- `dataSourceUpdates`: The handler block to execute as part of committing your changes. Use this block to update your collection view’s data source with the actual data that you received. This block has no return value and takes the following parameter:
+- `dataSourceUpdates`: The handler block to execute as part of committing your changes. Use this block to update your collection view’s data source with the actual data that you received. This block has no return value and takes the following parameter: - **insertionIndexPath**: The location at which to insert any items. Always use this index path for the insertion point instead of any cached values.
 
 ## See Also
 

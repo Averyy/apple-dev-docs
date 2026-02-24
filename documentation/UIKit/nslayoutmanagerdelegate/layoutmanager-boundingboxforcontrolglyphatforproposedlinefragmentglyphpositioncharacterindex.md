@@ -32,8 +32,8 @@ Sent for resolving the glyph metrics for [`NSControlCharacterWhitespaceAction`](
 - `glyphIndex`: The index of the control glyph in question.
 - `textContainer`: The text container to use to calculate the position.
 - `proposedRect`: The proposed line fragment rectangle.
-- `glyphPosition`: The position of the glyph in  .
-- `charIndex`: The character index in  .
+- `glyphPosition`: The position of the glyph in `textContainer`.
+- `charIndex`: The character index in `textContainer`.
 
 ## See Also
 

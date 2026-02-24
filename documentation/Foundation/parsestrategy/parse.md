@@ -31,7 +31,7 @@ This method throws an error if the parse strategy can’t parse `value`.
 
 ## Parameters
 
-- `value`: A value whose type matches the strategy’s   type.
+- `value`: A value whose type matches the strategy’s [`ParseInput`](parsestrategy/parseinput.md) type.
 
 
 ---

@@ -43,6 +43,8 @@ final class App
 ### Requesting installation approval
 - [func presentAgeExceptionApproveInPersonSheet() async throws](applibrary/app/presentageexceptionapproveinpersonsheet.md)
   Presents a sheet that enables a parent or guardian to approve age-exception requests.
+### Instance Methods
+- [func requestDeletion(in: UIWindowScene) async throws](applibrary/app/requestdeletion(in:).md)
 
 ## Relationships
 

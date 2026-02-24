@@ -30,8 +30,8 @@ This property is analogous to `kAudioFormatProperty_FormatList` and follows its 
 
 ## Parameters
 
-- `desc`:   being interrogated.
-- `sizeOut`: Pointer to variable that will be written with the size of the  .
+- `desc`: `CMFormatDescription` being interrogated.
+- `sizeOut`: Pointer to variable that will be written with the size of the `formatList`.
 
 ## See Also
 

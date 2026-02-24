@@ -32,7 +32,8 @@ The user’s ability to rename an item is controlled by the item’s [`allowsRen
 
 - `itemIdentifier`: The item’s persistent identifier.
 - `itemName`: The new name of the file or directory, including the file extension.
-- `completionHandler`: A block that takes the following parameters:
+- `completionHandler`: A block that takes the following parameters: - **`renamedItem`**: A file provider item that represents the renamed item, or `nil` if an error occurred.
+- **`error`**: An error object. If an error occurs, pass in an object that describes the error; otherwise, set it to `nil`.
 
 ## See Also
 

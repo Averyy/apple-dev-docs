@@ -18,6 +18,9 @@ let IOBluetoothHandsFreeCallDirection: String
 
 The string contains a single digit with one of the following values:
 
+- **`“0”`**: An outgoing call.
+- **`“1”`**: An incoming call.
+
 ## See Also
 
 - [let IOBluetoothHandsFreeCallIndex: String](iobluetoothhandsfreecallindex.md)

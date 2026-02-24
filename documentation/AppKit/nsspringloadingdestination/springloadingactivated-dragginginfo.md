@@ -24,8 +24,8 @@ However, if the destination is configured with continuous activation (`NSSpringL
 
 ## Parameters
 
-- `activated`: A Boolean value indicating whether spring-loading has been activated on the destination.   indicates that spring-loading has been activated.   indicates that spring-loading has been deactivated.
-- `draggingInfo`: An   object, which provides information about the drag event, including the dragged data.
+- `activated`: A Boolean value indicating whether spring-loading has been activated on the destination. [`true`](https://developer.apple.com/documentation/Swift/true) indicates that spring-loading has been activated. [`false`](https://developer.apple.com/documentation/Swift/false) indicates that spring-loading has been deactivated.
+- `draggingInfo`: An `NSDraggingInfo` object, which provides information about the drag event, including the dragged data.
 
 ## See Also
 

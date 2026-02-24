@@ -39,6 +39,43 @@ A device creates a new bypass code when:
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>RequestType</key>
+        <string>ActivationLockBypassCode</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_ActivationLockBypassCode</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>ActivationLockBypassCode</key>
+    <string>A8QK7-GFG21-6RHT-V0U9-756P-L7E3</string>
+    <key>CommandUUID</key>
+    <string>0001_ActivationLockBypassCode</string>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>00008020-000915083C80012E</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -46,6 +83,10 @@ A device creates a new bypass code when:
   The command to get the code to bypass Activation Lock on a device.
 - [object ActivationLockBypassCodeResponse](activationlockbypasscoderesponse.md)
   A response from the device after it processes the command to get the code to bypass Activation Lock on a device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

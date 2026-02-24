@@ -30,8 +30,8 @@ In the local coordinate system of the text geometry, the origin corresponds to t
 
 ## Parameters
 
-- `string`: An   or   object containing text from which to create the geometry.
-- `extrusionDepth`: The extent of the text geometry in the Z dimension of its local coordinate space. Specify a depth of   to create 2D text confined to a plane.
+- `string`: An [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) or [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) object containing text from which to create the geometry.
+- `extrusionDepth`: The extent of the text geometry in the Z dimension of its local coordinate space. Specify a depth of `0.0` to create 2D text confined to a plane.
 
 
 ---

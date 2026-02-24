@@ -19,7 +19,7 @@ func stopRangingBeacons(satisfying constraint: CLBeaconIdentityConstraint)
 
 ## Parameters
 
-- `constraint`: A   constraint.
+- `constraint`: A [`CLBeaconIdentityConstraint`](clbeaconidentityconstraint.md) constraint.
 
 ## See Also
 

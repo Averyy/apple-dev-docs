@@ -20,7 +20,7 @@ func predictedTouches(for touch: UITouch) -> [UITouch]?
 
 #### Return Value
 
-An array of [`UITouch`](uitouch.md) objects representing the set of touches that the system predicts will occur next. The order of the objects in the array matches the order in which the touches are expected to be delivered to your app. This array does not include the original touch you specified in the  parameter. The return value is `nil` if the object in the  parameter is not associated with the current event.
+An array of [`UITouch`](uitouch.md) objects representing the set of touches that the system predicts will occur next. The order of the objects in the array matches the order in which the touches are expected to be delivered to your app. This array does not include the original touch you specified in the *touch* parameter. The return value is `nil` if the object in the *touch* parameter is not associated with the current event.
 
 #### Discussion
 

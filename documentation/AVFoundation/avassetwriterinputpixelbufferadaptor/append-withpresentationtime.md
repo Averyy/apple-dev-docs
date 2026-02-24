@@ -26,7 +26,7 @@ func append(_ pixelBuffer: CVPixelBuffer, withPresentationTime presentationTime:
 ## Parameters
 
 - `pixelBuffer`: The pixel buffer to append.
-- `presentationTime`: The pixel buffer’s presentation time. The time you specify is relative to the time you called   with.
+- `presentationTime`: The pixel buffer’s presentation time. The time you specify is relative to the time you called [`startSession(atSourceTime:)`](avassetwriter/startsession(atsourcetime:).md) with.
 
 
 ---

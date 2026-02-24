@@ -25,7 +25,7 @@ This method registers `self` with the application’s global instance of [`NSScr
 
 ## Parameters
 
-- `suiteName`: The name of the suite (in the application’s scriptability information) that the command belongs to. For example,  .
+- `suiteName`: The name of the suite (in the application’s scriptability information) that the command belongs to. For example, `"AppName Suite"`.
 - `commandName`: The name of the script command that this instance describes.
 - `commandDeclaration`: A command declaration dictionary of the sort that is valid in script suite property list files. This dictionary provides information about the command such as its argument names and types and return type (if any).
 

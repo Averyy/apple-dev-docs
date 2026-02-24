@@ -29,7 +29,7 @@ The [`AVAudioUnit`](avaudiounit.md) instance is usually a subclass that the meth
 
 - `audioComponentDescription`: The component to create.
 - `options`: The options the method uses to create the component.
-- `completionHandler`: A handler the framework calls in an arbitrary thread context when creation completes. Retain the   this handler provides.
+- `completionHandler`: A handler the framework calls in an arbitrary thread context when creation completes. Retain the [`AVAudioUnit`](avaudiounit.md) this handler provides.
 
 
 ---

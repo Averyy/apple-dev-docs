@@ -28,6 +28,8 @@ var elementValueDidChangeHandler: ((any GCDevicePhysicalInput, any GCPhysicalInp
 
 Use this property to get the latest state of the element. If multiple elements change, Game Controller invokes this block for each element that changes. The block’s parameters are:
 
+- **element**: The element whose value changes.
+
 > ❗ **Important**:  To track every element value change, set the [`inputStateAvailableHandler`](gcdevicephysicalinput/inputstateavailablehandler.md) property instead and use the [`nextInputState()`](gcdevicephysicalinput/nextinputstate().md) method to get all the buffered changes.
 
 ## See Also

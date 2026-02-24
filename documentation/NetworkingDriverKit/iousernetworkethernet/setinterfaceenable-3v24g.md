@@ -24,7 +24,7 @@ Override this method and use it to start or stop the delivery of packets to and 
 
 ## Parameters
 
-- `isEnable`: A Boolean value that indicates whether to enable or disable your service. Specify   to enable the service or   to disable it.
+- `isEnable`: A Boolean value that indicates whether to enable or disable your service. Specify `YES` to enable the service or `NO` to disable it.
 
 
 ---

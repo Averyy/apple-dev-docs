@@ -8,7 +8,7 @@ Scale text in your interface automatically using Dynamic Type.
 
 The Dynamic Type feature allows users to choose the size of textual content displayed on the screen. It helps users who need larger text for better readability. It also accomodates those who can read smaller text, allowing more information to appear on the screen. Apps that support Dynamic Type also provide a more consistent reading experience.
 
-To add support for Dynamic Type in your app, you use . A text style describes the use of the text, such as [`headline`](uifont/textstyle/headline.md) or [`body`](uifont/textstyle/body.md) or [`title1`](uifont/textstyle/title1.md), and lets the system know how best to adjust its size. You can configure text styles in either Interface Builder or your source code.
+To add support for Dynamic Type in your app, you use *text styles*. A text style describes the use of the text, such as [`headline`](uifont/textstyle/headline.md) or [`body`](uifont/textstyle/body.md) or [`title1`](uifont/textstyle/title1.md), and lets the system know how best to adjust its size. You can configure text styles in either Interface Builder or your source code.
 
 Although custom fonts are supported in Dynamic Type, the preferred font is designed to look good at any size. Also, using the preferred font ensures consistency within the system and with other apps. For more information, see Human Interface Guidelines > [`Typography`](https://developer.apple.com/design/Human-Interface-Guidelines/typography).
 

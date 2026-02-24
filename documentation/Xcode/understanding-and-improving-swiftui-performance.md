@@ -30,6 +30,11 @@ The Instruments timeline shows a time profile of the code in your app, in parall
 
 The SwiftUI track contains lanes which show events related to SwiftUI work that your app causes:
 
+- **Update Groups**: This lane provides an overview of time SwiftUI spends calculating updates for your app.
+- **Long View Body Updates**: This lane displays orange lines for SwiftUI view body calculations in your app that take longer than 500 microseconds to run, and red lines for calculations that take longer than 1000 microseconds.
+- **Long Platform View Updates**: This lane shows long-running calculations to draw AppKit views that your macOS app hosts in SwiftUI, or UIKit views that your iOS, iPadOS, or Mac Catalyst app hosts in SwiftUI.
+- **Other Long Updates**: This lane shows other long-running actions that SwiftUI performs to render your views, including geometry and text layout calculations.
+
 The Hitches timeline reports situations in which your app didn’t prepare a view update in time for the system to render its updated UI to the screen.
 
 When you select the SwiftUI timeline, the detail view shows a summary of all SwiftUI updates in your app. Instruments organizes the updates by module, view name, and category. Use this information to understand how views in your app and in system frameworks spend time updating as you exercise your app’s features.

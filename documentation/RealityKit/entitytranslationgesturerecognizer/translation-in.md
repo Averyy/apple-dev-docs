@@ -27,7 +27,7 @@ The x, y and z values report the total translation over time. They are not delta
 
 ## Parameters
 
-- `entity`: An entity in whose space the translation is computed.   A   entity will result in world space.
+- `entity`: An entity in whose space the translation is computed. A `nil` entity will result in world space.
 
 ## See Also
 

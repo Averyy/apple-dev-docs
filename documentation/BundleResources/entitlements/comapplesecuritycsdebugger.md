@@ -8,6 +8,10 @@ A Boolean value that indicates whether the app is a debugger and may attach to o
 **Availability**:
 - macOS 10.7+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Apps with the `Debugging tool entitlement` can call `task_for_pid()` to retrieve a valid task port for unsigned and third-party apps with the `Get task allow` entitlement set to `true`. However, even with the debugging tool entitlement, a debugger can’t get the task ports of processes that don’t have the `Get task allow` entitlement, and that are therefore protected by System Integrity Protection. See the man page for `taskgated(8)` for more information about getting task ports.

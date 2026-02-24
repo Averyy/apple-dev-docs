@@ -21,7 +21,7 @@ func reportOutgoingCall(with UUID: UUID, startedConnectingAt dateStartedConnecti
 ## Parameters
 
 - `UUID`: The unique identifier of the call.
-- `dateStartedConnecting`: If  , the current time is used.
+- `dateStartedConnecting`: The time at which the call started connecting. If `nil`, the current time is used.
 
 ## See Also
 

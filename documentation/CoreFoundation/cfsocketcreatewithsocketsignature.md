@@ -26,11 +26,11 @@ The new CFSocket object, or `NULL` if an error occurred. Ownership follows the [
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
-- `signature`: A   identifying the communication protocol and address with which to create the CFSocket object.
-- `callBackTypes`: A bitwise-OR combination of the types of socket activity that should cause   to be called. See   for the possible activity values.
-- `callout`: The function to call when one of the activities indicated by   occurs.
-- `context`: A structure holding contextual information for the CFSocket object. The function copies the information out of the structure, so the memory pointed to by   does not need to persist beyond the function call. Can be  .
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `signature`: A [`CFSocketSignature`](cfsocketsignature.md) identifying the communication protocol and address with which to create the CFSocket object.
+- `callBackTypes`: A bitwise-OR combination of the types of socket activity that should cause `callout` to be called. See [`CFSocketCallBackType`](cfsocketcallbacktype.md) for the possible activity values.
+- `callout`: The function to call when one of the activities indicated by `callBackTypes` occurs.
+- `context`: A structure holding contextual information for the CFSocket object. The function copies the information out of the structure, so the memory pointed to by `context` does not need to persist beyond the function call. Can be `NULL`.
 
 ## See Also
 

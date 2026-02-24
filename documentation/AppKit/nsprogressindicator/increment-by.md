@@ -16,7 +16,7 @@ func increment(by delta: Double)
 
 ## Parameters
 
-- `delta`: The amount by which to increment the progress bar. For example, if you want to advance a progress bar from 0.0 to 100.0 in 20 steps, you would invoke   20 times with a delta value of 5.0.
+- `delta`: The amount by which to increment the progress bar. For example, if you want to advance a progress bar from 0.0 to 100.0 in 20 steps, you would invoke [`increment(by:)`](nsprogressindicator/increment(by:).md) 20 times with a delta value of 5.0.
 
 ## See Also
 

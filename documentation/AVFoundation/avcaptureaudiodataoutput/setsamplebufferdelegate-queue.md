@@ -32,8 +32,8 @@ This method uses [`dispatch_retain`](https://developer.apple.com/documentation/D
 
 ## Parameters
 
-- `sampleBufferDelegate`: An object conforming to the   protocol that will receive sample buffers after they are captured.
-- `sampleBufferCallbackQueue`: The value may not be  , except when setting the   to  .
+- `sampleBufferDelegate`: An object conforming to the [`AVCaptureAudioDataOutputSampleBufferDelegate`](avcaptureaudiodataoutputsamplebufferdelegate.md) protocol that will receive sample buffers after they are captured.
+- `sampleBufferCallbackQueue`: You must pass a serial dispatch to guarantee that audio samples will be delivered in order. The value may not be `NULL`, except when setting the `sampleBufferDelegate` to `nil`.
 
 ## See Also
 

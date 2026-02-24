@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Performs the multiply operation _ _, in place on a dense matrix of single-precision values.
+Performs the multiply operation *Y*_ _*= Subfactor * X*, in place on a dense matrix of single-precision values.
 
 **Availability**:
 - iOS 11.0+
@@ -22,17 +22,17 @@ func SparseMultiply(_ Subfactor: SparseOpaqueSubfactor_Float, _ XY: DenseMatrix_
 
 ## Parameters
 
-- `Subfactor`: The subfactor to multiply by, which   returns.
-- `XY`: On input, the matrix  . On return, the matrix   overwrites it.
+- `Subfactor`: The subfactor to multiply by, which [`SparseCreateSubfactor(_:_:)`](sparsecreatesubfactor(_:_:)-4renf.md) returns.
+- `XY`: On input, the matrix *X*. On return, the matrix *Y* overwrites it.
 
 ## See Also
 
 - [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseMatrix_Double)](sparsemultiply(_:_:)-88trz.md)
-  Performs the multiply operation   __in place on a dense matrix of double-precision values.
+  Performs the multiply operation *Y* *= Subfactor * X,* __in place on a dense matrix of double-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseMatrix_Double, DenseMatrix_Double)](sparsemultiply(_:_:_:)-4nosz.md)
-  Performs the multiply operation   on a dense matrix of double-precision values.
+  Performs the multiply operation *Y* *= Subfactor * X* on a dense matrix of double-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Float, DenseMatrix_Float, DenseMatrix_Float)](sparsemultiply(_:_:_:)-88stx.md)
-  Performs the multiply operation   on a dense matrix of single-precision values.
+  Performs the multiply operation *Y* *= Subfactor * X* on a dense matrix of single-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Complex_Float, DenseMatrix_Complex_Float)](sparsemultiply(_:_:)-34fp6.md)
   Perform the multiply operation `Y = Subfactor * X` in place for complex float values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Complex_Float, DenseVector_Complex_Float)](sparsemultiply(_:_:)-3dwed.md)

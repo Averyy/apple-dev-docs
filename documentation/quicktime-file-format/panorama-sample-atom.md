@@ -49,6 +49,11 @@ typedef struct QTVRAngleRangeAtom {
 } QTVRAngleRangeAtom, *QTVRAngleRangeAtomPtr;
 ```
 
+**Field descriptions**
+
+- **`minimumAngle`**: The minimum angle in the range, in degrees.
+- **`maximumAngle`**: The maximum angle in the range, in degrees.
+
 ## Topics
 
 ### Data fields

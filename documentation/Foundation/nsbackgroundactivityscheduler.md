@@ -36,6 +36,18 @@ For information about performing non-deferrable tasks efficiently, see [`Specify
 
 To initialize a scheduler, call [`init(identifier:)`](nsbackgroundactivityscheduler/init(identifier:).md) for `NSBackgroundActivityScheduler`, and pass it a unique identifier string in reverse DNS notation (`nil` and zero-length strings are not allowed) that remains constant across launches of your application.
 
+**Swift**:
+
+```swift
+let activity = NSBackgroundActivityScheduler(identifier: "com.example.MyApp.updatecheck")
+```
+
+**Objective-C**:
+
+```objc
+NSBackgroundActivityScheduler *activity = [[NSBackgroundActivityScheduler alloc] initWithIdentifier:@"com.example.MyApp.updatecheck"];
+```
+
 > **Note**:  The system uses this unique identifier to track the number of times the activity has run and to improve the heuristics for deciding when to run it again in the future.
 
 ##### Configure Scheduler Properties
@@ -51,9 +63,49 @@ The next three code examples demonstrate different scheduling scenarios.
 
 Scheduling an activity to fire in the next 10 minutes
 
+**Swift**:
+
+```swift
+activity.tolerance = 10 * 60
+```
+
+**Objective-C**:
+
+```objc
+activity.tolerance = 10 * 60;
+```
+
 Scheduling an activity to fire between 15 and 45 minutes from now
 
+**Swift**:
+
+```swift
+activity.interval = 30 * 60
+activity.tolerance = 15 * 60
+```
+
+**Objective-C**:
+
+```objc
+activity.interval = 30 * 60;
+activity.tolerance = 15 * 60;
+```
+
 Scheduling an activity to fire once each hour
+
+**Swift**:
+
+```swift
+activity.repeats = true
+activity.interval = 60 * 60
+```
+
+**Objective-C**:
+
+```objc
+activity.repeats = YES;
+activity.interval = 60 * 60;
+```
 
 ##### Schedule Activity with Schedulewithblock
 
@@ -63,17 +115,72 @@ When your block is called, it’s passed a completion handler as an argument. Co
 
 Scheduling background activity
 
+**Swift**:
+
+```swift
+activity.scheduleWithBlock() { (completion: NSBackgroundActivityCompletionHandler) in
+    // Perform the activity
+    self.completion(NSBackgroundActivityResult.Finished)
+}
+```
+
+**Objective-C**:
+
+```objc
+[activity
+scheduleWithBlock:^(NSBackgroundActivityCompletionHandler completion) {
+   // Perform the activity
+   self.completion(NSBackgroundActivityResultFinished);
+}];
+```
+
 ##### Detect Whether to Defer Activity
 
 It’s conceivable that while a lengthy activity is running, conditions may change, resulting in the activity now requiring deferral. For example, perhaps the user has unplugged the Mac and it’s now running on battery power. Your activity can call [`shouldDefer`](nsbackgroundactivityscheduler/shoulddefer.md) to determine whether this has occurred. A value of [`true`](https://developer.apple.com/documentation/Swift/true) indicates that the block should finish what it’s currently doing and invoke its completion handler with a value of [`NSBackgroundActivityScheduler.Result.deferred`](nsbackgroundactivityscheduler/result/deferred.md). See the following example.
 
 Detecting deferred background activity
 
+**Swift**:
+
+```swift
+if activity.shouldDefer {
+    // Wrap up processing and prepare to defer activity
+    self.completion(NSBackgroundActivityResult.Deferred)
+} else {
+    // Continue processing
+    self.completion(NSBackgroundActivityResult.Finished)
+}
+```
+
+**Objective-C**:
+
+```objc
+if ([activity shouldDefer]) {
+   // Wrap up processing and prepare to defer activity
+   self.completion(NSBackgroundActivityResultDeferred);
+} else {
+   // Continue processing
+   self.completion(NSBackgroundActivityResultFinished);
+};
+```
+
 ##### Stop Activity
 
 Call [`invalidate()`](nsbackgroundactivityscheduler/invalidate().md) to stop scheduling an activity, as shown in the following example.
 
 Stopping background activity
+
+**Swift**:
+
+```swift
+activity.invalidate()
+```
+
+**Objective-C**:
+
+```objc
+[activity invalidate];
+```
 
 > **Note**:  When an activity is stopped, a block that’s currently executing will still finish executing.
 

@@ -29,7 +29,7 @@ A spring animation.
 - `mass`: The mass of the object attached to the spring.
 - `stiffness`: The stiffness of the spring.
 - `damping`: The spring damping value.
-- `initialVelocity`: The initial velocity of the spring, as   a value in the range [0, 1] representing the magnitude of   the value being animated.
+- `initialVelocity`: The initial velocity of the spring, as a value in the range [0, 1] representing the magnitude of the value being animated.
 
 ## See Also
 

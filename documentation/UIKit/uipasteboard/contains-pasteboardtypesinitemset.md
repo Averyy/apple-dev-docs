@@ -24,7 +24,7 @@ func contains(pasteboardTypes: [String], inItemSet itemSet: IndexSet?) -> Bool
 ## Parameters
 
 - `pasteboardTypes`: An array of strings, with each string identifying a representation type. Typically you use UTIs as pasteboard types.
-- `itemSet`: An index set with each integer value identifying a pasteboard item positionally in the pasteboard. Pass in   to request all pasteboard items.
+- `itemSet`: An index set with each integer value identifying a pasteboard item positionally in the pasteboard. Pass in `nil` to request all pasteboard items.
 
 ## See Also
 

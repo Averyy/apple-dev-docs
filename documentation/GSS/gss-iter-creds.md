@@ -29,8 +29,8 @@ Use the [`gss_iter_creds_f(_:_:_:_:_:)`](gss_iter_creds_f(_:_:_:_:_:).md) functi
 ## Parameters
 
 - `flags`: No flags are currently defined. Pass 0 for this parameter.
-- `mech`: The mechanism type of credentials to iterate over. Pass in   to iterate over all credentials.
-- `useriter`: A block that is called once for each credential. The block receives the credential’s mechanism and a copy of the credential as input on each iteration. Free the copy’s memory with a call to   when you are done with it. The block is called one final time with   inputs upon reaching the end of the list.
+- `mech`: The mechanism type of credentials to iterate over. Pass in `GSS_C_NO_OID_SET` to iterate over all credentials.
+- `useriter`: A block that is called once for each credential. The block receives the credential’s mechanism and a copy of the credential as input on each iteration. Free the copy’s memory with a call to [`gss_release_cred(_:_:)`](gss_release_cred(_:_:).md) when you are done with it. The block is called one final time with `NULL` inputs upon reaching the end of the list.
 
 ## See Also
 

@@ -39,10 +39,10 @@ Chart(data) {
 ## Parameters
 
 - `x`: The value plotted with x.
-- `yStart`: The y start position. If   is   then the rectangle will start at the leading edge of the plotting area.
-- `yEnd`: The y end position. If   is   then the rectangle will end at the trailing edge of the plotting area.
-- `width`: The bar width.  If   is  , the default bar size will be applied.
-- `stacking`: The stacking method for the bars with the same categorical/date values.   If   is  , the bars will not be stacked.
+- `yStart`: The y start position. If `yStart` is `nil` then the rectangle will start at the leading edge of the plotting area.
+- `yEnd`: The y end position. If `yEnd` is `nil` then the rectangle will end at the trailing edge of the plotting area.
+- `width`: The bar width.  If `width` is `nil`, the default bar size will be applied.
+- `stacking`: The stacking method for the bars with the same categorical/date values. If `stacking` is `nil`, the bars will not be stacked.
 
 ## See Also
 

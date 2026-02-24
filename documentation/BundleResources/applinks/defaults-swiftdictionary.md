@@ -27,6 +27,11 @@ You can specify pattern-matching values at three levels: domain, app, and URL. Y
 
 The more specific definition overrides the less specific. So the default values you set at the app level override the default values you set at the domain level. If you set values at the URL level in the [`applinks.Details.Components`](applinks/details-swift.dictionary/components-swift.dictionary.md) object, those values override the default values at the app and domain levels.
 
+## Properties
+
+- `caseSensitive` (boolean)
+- `percentEncoded` (boolean)
+
 
 ---
 

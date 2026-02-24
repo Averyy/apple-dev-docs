@@ -26,7 +26,7 @@ Xcode 11.2 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and tv
 
 ###### Known Issues
 
-- Setting the Selected Segment Tint Color of a segmented control in Interface Builder to a named color will cause a failure when the view is loaded on iOS 12 and earlier. (55254963) : Set the segmented control’s [`selectedSegmentTintColor`](https://developer.apple.com/documentation/UIKit/UISegmentedControl/selectedSegmentTintColor) in an [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()) method.
+- Setting the Selected Segment Tint Color of a segmented control in Interface Builder to a named color will cause a failure when the view is loaded on iOS 12 and earlier. (55254963) **Workaround**: Set the segmented control’s [`selectedSegmentTintColor`](https://developer.apple.com/documentation/UIKit/UISegmentedControl/selectedSegmentTintColor) in an [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()) method.
 
 ###### Resolved Issues
 
@@ -64,7 +64,7 @@ Xcode 11.2 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and tv
 
 ###### Known Issues
 
-- Third party “endpoint security” software may cause slow simulators, system freezes, or prevent debug processes from running in simulators reliably. This sometimes manifests as `debugserver` disconnections or simulator applications receiving a `SIGKILL` signal. (55853555) : Uninstall the third party software.
+- Third party “endpoint security” software may cause slow simulators, system freezes, or prevent debug processes from running in simulators reliably. This sometimes manifests as `debugserver` disconnections or simulator applications receiving a `SIGKILL` signal. (55853555) **Workaround**: Uninstall the third party software.
 
 ###### Resolved Issues
 
@@ -77,7 +77,7 @@ Xcode 11.2 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and tv
 
 ###### Known Issues
 
-- If a module is built with `BUILD_LIBRARIES_FOR_DISTRIBUTION` and contains a public type with the same name as the module itself, clients will fail to import the module. (19481048) (FB5863238) : Rename either the type or the module to remove the conflict.
+- If a module is built with `BUILD_LIBRARIES_FOR_DISTRIBUTION` and contains a public type with the same name as the module itself, clients will fail to import the module. (19481048) (FB5863238) **Workaround**: Rename either the type or the module to remove the conflict.
 
 ##### Swift Compiler
 
@@ -94,7 +94,7 @@ Xcode 11.2 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and tv
 
 ###### Known Issues
 
-- If an iOS, tvOS, or watchOS app uses a Swift Package that builds a dynamic library, it cannot be submitted to the App Store. (55564324) : Modify the Package manifest to build a static library.
+- If an iOS, tvOS, or watchOS app uses a Swift Package that builds a dynamic library, it cannot be submitted to the App Store. (55564324) **Workaround**: Modify the Package manifest to build a static library.
 
 ###### Resolved Issues
 
@@ -110,7 +110,7 @@ Xcode 11.2 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and tv
 
 ###### Known Issues
 
-- Launching the watch App on an iOS simulator will cause `NTKFaceSnapshotServices` to continuously crash in the background. The watch app should function as normal. (56349123) : To stop crashes, quit the simulator or erase content and settings.
+- Launching the watch App on an iOS simulator will cause `NTKFaceSnapshotServices` to continuously crash in the background. The watch app should function as normal. (56349123) **Workaround**: To stop crashes, quit the simulator or erase content and settings.
 
 ###### Resolved Issues
 

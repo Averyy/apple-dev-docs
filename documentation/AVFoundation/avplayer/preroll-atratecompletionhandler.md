@@ -30,7 +30,7 @@ If the player object is not ready to play (its [`status`](avplayer/status-swift.
 ## Parameters
 
 - `rate`: The playback rate to use when determining how much data to load.
-- `completionHandler`: A block to execute when the player finishes the load attempt. This block takes a single Boolean parameter that contains   if the data was loaded or   if there was a problem. For example, the value might be   if the preroll was interrupted by a time change or incompatible rate change.
+- `completionHandler`: A block to execute when the player finishes the load attempt. This block takes a single Boolean parameter that contains [`true`](https://developer.apple.com/documentation/Swift/true) if the data was loaded or [`false`](https://developer.apple.com/documentation/Swift/false) if there was a problem. For example, the value might be [`false`](https://developer.apple.com/documentation/Swift/false) if the preroll was interrupted by a time change or incompatible rate change.
 
 ## See Also
 

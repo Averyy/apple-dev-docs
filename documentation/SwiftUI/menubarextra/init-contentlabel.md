@@ -20,8 +20,8 @@ When this item is removed from the system menu bar by the user, the application 
 
 ## Parameters
 
-- `content`: A   to display when the user selects the item.
-- `label`: A   to use as the label in the system menu bar.
+- `content`: A `View` to display when the user selects the item.
+- `label`: A `View` to use as the label in the system menu bar.
 
 ## See Also
 

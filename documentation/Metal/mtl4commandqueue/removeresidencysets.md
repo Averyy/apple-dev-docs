@@ -27,7 +27,7 @@ See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-
 
 ## Parameters
 
-- `residencySets`: An array of residency sets, each of which contains resource allocations, such as  ,  , and   instances.
+- `residencySets`: An array of residency sets, each of which contains resource allocations, such as [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), and [`MTLHeap`](mtlheap.md) instances.
 
 
 ---

@@ -33,7 +33,7 @@ It is safe to call this function concurrently on two or more threads as long as 
 ## Parameters
 
 - `trust`: The trust management object whose policy list you wish to set.
-- `policies`: An array of one or more   objects for the policies to be used by this trust management object. A single policy object of type   may also be passed, representing an array of one policy.
+- `policies`: An array of one or more [`SecPolicy`](secpolicy.md) objects for the policies to be used by this trust management object. A single policy object of type `SecPolicyRef` may also be passed, representing an array of one policy.
 
 ## See Also
 

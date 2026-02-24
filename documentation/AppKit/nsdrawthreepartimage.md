@@ -28,12 +28,12 @@ The `flipped` parameter lets you reorient the contents of each image when drawin
 
 - `frame`: The rectangle (specified in the current coordinate system) in which to draw the images.
 - `startCap`: For a horizontal three-part image, this is the image located at the left edge of the frame rectangle. For a vertical three-part image, this image appears at the top of the screen in an unflipped coordinate system and at the bottom of the screen in a flipped coordinate system.
-- `centerFill`: The image used to tile the space between the   and   images.
+- `centerFill`: The image used to tile the space between the `startCap` and `endCap` images.
 - `endCap`: For a horizontal three-part image, this is the image located at the right edge of the frame rectangle. For a vertical three-part image, this image appears at the bottom of the screen in an unflipped coordinate system and at the top of the screen in a flipped coordinate system.
-- `vertical`: Specify   if the images should be stacked on top of one another to create a vertically oriented element. Specify   if the images should be laid out side-by-side to create a horizontally oriented element.
+- `vertical`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if the images should be stacked on top of one another to create a vertically oriented element. Specify [`false`](https://developer.apple.com/documentation/Swift/false) if the images should be laid out side-by-side to create a horizontally oriented element.
 - `op`: The compositing operation to use when rendering the images.
 - `alphaFraction`: The alpha value to apply to the rendered image. This value can range between 0.0 and 1.0, with 0.0 being fully transparent and 1.0 being fully opaque.
-- `flipped`: Specify   if you are drawing the images in a flipped coordinate system; otherwise, specify  .
+- `flipped`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if you are drawing the images in a flipped coordinate system; otherwise, specify [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

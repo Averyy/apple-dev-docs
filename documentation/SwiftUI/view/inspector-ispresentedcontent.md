@@ -40,7 +40,7 @@ struct ShapeEditor: View {
 
 ## Parameters
 
-- `isPresented`: A binding to   controlling the presented state.
+- `isPresented`: A binding to `Bool` controlling the presented state.
 - `content`: The inspector content.
 
 ## See Also

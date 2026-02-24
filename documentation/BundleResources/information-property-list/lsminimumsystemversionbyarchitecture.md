@@ -8,9 +8,20 @@ The minimum version of macOS required for the app to run on a set of architectur
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 The possible dictionary keys are: `i386`, `ppc`, `ppc64`, and `x86_64`. The values are the minimum version for the architecture. The default values are `10.0.0`.
+
+## Properties
+
+- `i386` (string)
+- `ppc` (string)
+- `ppc64` (string)
+- `x86_64` (string)
 
 ## See Also
 

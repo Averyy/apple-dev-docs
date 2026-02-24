@@ -22,8 +22,8 @@ An [`ARWorldMap`](arworldmap.md) encapsulates the state of a running [`ARSession
 
 By saving world maps and using them to start new sessions, your app can add new AR capabilities:
 
--  Create a shared frame of reference by sending archived [`ARWorldMap`](arworldmap.md) objects to a nearby user’s device. With two devices tracking the same world map, you can build a networked experience where both users can see and interact with the same virtual content.
--  Save a world map when your app becomes inactive, then restore it the next time your app launches in the same physical environment. You can use  anchors from the resumed world map to place the same virtual content at the same positions from the saved session.
+- **Multiuser AR experiences.** Create a shared frame of reference by sending archived [`ARWorldMap`](arworldmap.md) objects to a nearby user’s device. With two devices tracking the same world map, you can build a networked experience where both users can see and interact with the same virtual content.
+- **Persistent AR experiences.** Save a world map when your app becomes inactive, then restore it the next time your app launches in the same physical environment. You can use  anchors from the resumed world map to place the same virtual content at the same positions from the saved session.
 
 Before saving a world map, monitor the [`worldMappingStatus`](arframe/worldmappingstatus-swift.property.md) property to verify that ARKit has an adequate understanding of the user’s environment, ensuring that you can reliably make use of the saved map on a different device or at a later time.
 
@@ -33,7 +33,8 @@ World map generation requires a world-tracking AR session. If you call this meth
 
 ## Parameters
 
-- `completionHandler`: A closure to be invoked asynchronously after ARKit finishes generating the world map. The closure takes two parameters:
+- `completionHandler`: A closure to be invoked asynchronously after ARKit finishes generating the world map. The closure takes two parameters: - **worldMap**: The generated [`ARWorldMap`](arworldmap.md), or `nil` if a map could not be generated.
+- **error**: If the `worldMap` is `nil`, an error object describing the failure.
 
 ## See Also
 

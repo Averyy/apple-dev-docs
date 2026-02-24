@@ -27,7 +27,7 @@ init(@ViewBuilder destination: () -> Destination, @ViewBuilder label: () -> Labe
 ## Parameters
 
 - `destination`: A view for the navigation link to present.
-- `label`: A view builder to produce a label describing the    to present.
+- `label`: A view builder to produce a label describing the `destination` to present.
 
 ## See Also
 

@@ -37,7 +37,7 @@ Saving a song to the user’s Shazam library also saves the following media item
 ## Parameters
 
 - `mediaItems`: An array of media items that represents the songs to add to the library.
-- `completionHandler`: This block takes the following parameters:
+- `completionHandler`: The system calls this completion block after adding the media items to the library. This block takes the following parameters: - **`error`**: An error object if a problem occurs when adding any item; otherwise, `nil`.
 
 ## See Also
 

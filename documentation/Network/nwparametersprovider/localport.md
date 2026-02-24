@@ -27,7 +27,7 @@ For connections, this will be used to initiate traffic; for listeners, this will
 
 ## Parameters
 
-- `port`: The local port to require.   Force a specific local port to be used.
+- `port`: The local port to require. Force a specific local port to be used.
 
 
 ---

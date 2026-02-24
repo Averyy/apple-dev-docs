@@ -16,7 +16,7 @@ Xcode 15.0.1 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS
 
 ###### Known Issues
 
-- Xcode 15 is unable to connect wirelessly for development with devices running iOS and tvOS versions older than 16.7.  (116591034)  Connect iOS devices running affected OS versions to the Mac using a USB cable.
+- Xcode 15 is unable to connect wirelessly for development with devices running iOS and tvOS versions older than 16.7.  (116591034) **Workaround:** Connect iOS devices running affected OS versions to the Mac using a USB cable.
 
 ##### Instruments
 

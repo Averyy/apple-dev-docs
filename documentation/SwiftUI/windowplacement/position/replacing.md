@@ -20,7 +20,7 @@ This will position the new window in the same location as the specified existing
 
 ## Parameters
 
-- `relativeWindow`: The existing window that the new window   will replace.
+- `relativeWindow`: The existing window that the new window will replace.
 
 
 ---

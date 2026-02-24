@@ -32,7 +32,7 @@ Calling this method is equivalent to calling [`range(of:options:)`](nsstring/ran
 
 ## Parameters
 
-- `str`: The string to search for. This value must not be  .
+- `str`: The string to search for. This value must not be `nil`.
 
 ## See Also
 

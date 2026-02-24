@@ -34,8 +34,8 @@ The record must either be:
 
 ## Parameters
 
-- `sdRef`: A DNSServiceRef that was initialized by   or  .
-- `recordRef`: A DNSRecordRef initialized by  , or NULL to update the service’s primary txt record.
+- `sdRef`: A DNSServiceRef that was initialized by [`DNSServiceRegister(_:_:_:_:_:_:_:_:_:_:_:_:)`](dnsserviceregister(_:_:_:_:_:_:_:_:_:_:_:_:).md) or [`DNSServiceCreateConnection(_:)`](dnsservicecreateconnection(_:).md).
+- `recordRef`: A DNSRecordRef initialized by [`DNSServiceAddRecord(_:_:_:_:_:_:_:)`](dnsserviceaddrecord(_:_:_:_:_:_:_:).md), or NULL to update the service’s primary txt record.
 - `flags`: Currently ignored, reserved for future use.
 - `rdlen`: The length, in bytes, of the new rdata.
 - `rdata`: The new rdata to be contained in the updated resource record.

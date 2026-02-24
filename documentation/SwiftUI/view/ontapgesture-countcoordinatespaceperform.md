@@ -45,9 +45,9 @@ struct TapGestureExample: View {
 
 ## Parameters
 
-- `count`: The number of taps or clicks required to trigger the action   closure provided in  . Defaults to  .
-- `coordinateSpace`: The coordinate space in which to receive   location values. Defaults to  .
-- `action`: The action to perform. This closure receives an input   that indicates where the interaction occurred.
+- `count`: The number of taps or clicks required to trigger the action closure provided in `action`. Defaults to `1`.
+- `coordinateSpace`: The coordinate space in which to receive location values. Defaults to [`CoordinateSpace.local`](coordinatespace/local.md).
+- `action`: The action to perform. This closure receives an input that indicates where the interaction occurred.
 
 ## See Also
 

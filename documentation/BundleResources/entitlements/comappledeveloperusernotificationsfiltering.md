@@ -10,6 +10,10 @@ Enable receiving notifications without displaying the notification to the user.
 - iPadOS 13.3+
 - macOS 11.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 This entitlement allows a notification service extension to receive remote notifications without displaying the notification to the user. To apply for this entitlement, see [`Request Notification Service Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/notification-service).

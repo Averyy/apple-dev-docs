@@ -16,7 +16,7 @@ func setDynamicDepthLimit(_ flag: Bool)
 
 ## Parameters
 
-- `flag`:   if the window’s depth can change; otherwise,  .
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) if the window’s depth can change; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

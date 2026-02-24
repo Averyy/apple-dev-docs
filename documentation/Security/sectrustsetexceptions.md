@@ -31,7 +31,7 @@ A Boolean that is [`true`](https://developer.apple.com/documentation/Swift/true)
 ## Parameters
 
 - `trust`: The trust management object whose exception list you wish to modify.
-- `exceptions`: An opaque cookie returned by a prior call to  .
+- `exceptions`: An opaque cookie returned by a prior call to [`SecTrustCopyExceptions(_:)`](sectrustcopyexceptions(_:).md).
 
 
 ---

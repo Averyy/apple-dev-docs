@@ -32,9 +32,9 @@ Do not use this function directly unless you have a specific need. All arguments
 
 ## Parameters
 
-- `applicationID`: The ID of the application whose preferences you wish to modify. Takes the form of a Java package name,  .
-- `userName`:   to modify the current user’s preferences, otherwise   to modify the preferences of all users.
-- `hostName`:   to search the current-host domain, otherwise   to search the any-host domain.
+- `applicationID`: The ID of the application whose preferences you wish to modify. Takes the form of a Java package name, `com.foosoft`.
+- `userName`: [`kCFPreferencesCurrentUser`](kcfpreferencescurrentuser.md) to modify the current user’s preferences, otherwise [`kCFPreferencesAnyUser`](kcfpreferencesanyuser.md) to modify the preferences of all users.
+- `hostName`: [`kCFPreferencesCurrentHost`](kcfpreferencescurrenthost.md) to search the current-host domain, otherwise [`kCFPreferencesAnyHost`](kcfpreferencesanyhost.md) to search the any-host domain.
 
 ## See Also
 

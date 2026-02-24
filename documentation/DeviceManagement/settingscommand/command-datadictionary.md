@@ -25,6 +25,12 @@ object SettingsCommand.Command
 - [object SettingsCommand.Command.Settings](settingscommand/command-data.dictionary/settings-data.dictionary.md)
   An array of dictionaries that contains the settings.
 
+## Properties
+
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+- `Settings` (SettingsCommand.Command.Settings) *(required)*: An array of dictionaries that contains the settings.
+
 
 ---
 

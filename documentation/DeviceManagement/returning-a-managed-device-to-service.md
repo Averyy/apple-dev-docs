@@ -10,6 +10,11 @@ Organizations often have managed devices that multiple people use, such as shift
 
 A device management service uses the [`Erase Device`](erase-device-command.md) command in three ways:
 
+- **A simple erase**: After the device management service erases the device, the device proceeds through the normal Setup Assistant flow. This option is available only for devices when their enrollment type is a device enrollment. - For devices using Automated Device Enrollment, the user needs to trigger the enroll operation during the Setup Assistant flow. The service sets Automated Device Enrollment [`SkipKeys`](skipkeys.md) to bypass other Setup Assistant screens, avoiding additional user interaction before the device completes setup.
+- For devices not using Automated Device Enrollment, the user needs to manually reenroll the device after proceeding through all the Setup Assistant screens.
+- **A standard return-to-service erase**: When the device management service erases the device, the service provides additional data in the [`Erase Device`](erase-device-command.md) command, allowing the device to proceed through Setup Assistant  without any, or the minimum required, user interaction. This option is available only for devices when their enrollment type is a device enrollment.
+- **A return-to-service with app preservation erase**: This option behaves like the previous flow, but it preserves managed apps during the erase, speeding up the return to service by avoiding downloading existing managed apps for the next user. In visionOS, users can trigger this flow themselves, and an admin can configure an idle device timeout to trigger the flow after a specified amount of time. This flow is available only for devices using Automated Device Enrollment.
+
 > **Note**:  When using the return-to-service with app preservation flow, the device preserves only the app executable data during the erase, and always erases all locally stored user-generated data for the app.
 
 The two return-to-service flows automate and speed up resetting and reenrolling devices. The app preservation flow is optimized for users needing managed apps. The standard return-to-service flow is available for iOS, iPad OS, tvOS, and visionOS devices. The return-to-service with app preservation flow is available for iOS, iPad OS, and visionOS devices.

@@ -28,7 +28,9 @@ You use display link objects to synchronize your drawing code to the screen’s 
 ## Parameters
 
 - `target`: An object to be notified when the screen should be updated.
-- `sel`: The method of   to call. This selector must have the following signature:
+- `sel`: The method of `target` to call. This selector must have the following signature: ```objc
+- (void)selector:(CADisplayLink *)sender;
+```
 
 ## See Also
 

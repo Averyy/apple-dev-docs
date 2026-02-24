@@ -25,7 +25,7 @@ A labeled value object with an existing value and identifier.
 
 ## Parameters
 
-- `label`: The label of the copied labeled value object, or   if the contact property value doesn’t have a label.
+- `label`: The label of the copied labeled value object, or `nil` if the contact property value doesn’t have a label.
 
 ## See Also
 

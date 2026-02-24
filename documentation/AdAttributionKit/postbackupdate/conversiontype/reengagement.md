@@ -18,7 +18,7 @@ case reengagement
 
 #### Discussion
 
-In the attribution report, the framework represents this using the string .
+In the attribution report, the framework represents this using the string *re-engagement*.
 
 
 ---

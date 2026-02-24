@@ -21,7 +21,7 @@ init(entity: Entity, configurationSpecifications: [String : String])
 
 ## Parameters
 
-- `entity`: An entity that represents the configuration choices in  .
+- `entity`: An entity that represents the configuration choices in `configurationSpecifications`.
 - `configurationSpecifications`: A dictionary that associates a configuration set name with a choice from that set.
 
 

@@ -20,7 +20,7 @@ Automatic quote substitution causes ASCII quotation marks and apostrophes to be 
 
 ## Parameters
 
-- `sender`: The control sending the message; may be  .
+- `sender`: The control sending the message; may be `nil`.
 
 ## See Also
 

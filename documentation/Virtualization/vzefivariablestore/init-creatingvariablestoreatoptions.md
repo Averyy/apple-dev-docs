@@ -17,7 +17,7 @@ init(creatingVariableStoreAt URL: URL, options: VZEFIVariableStore.Initializatio
 ## Parameters
 
 - `URL`: A URL that specifies the location on disk at which to store the EFI information.
-- `options`: An array of possible  .
+- `options`: An array of possible [`VZEFIVariableStore.InitializationOptions`](vzefivariablestore/initializationoptions.md).
 
 ## See Also
 

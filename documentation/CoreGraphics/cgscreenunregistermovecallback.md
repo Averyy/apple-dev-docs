@@ -21,7 +21,7 @@ When you call this function, the two arguments must match the registered entry t
 ## Parameters
 
 - `callback`: A pointer to the callback function to be unregistered.
-- `userInfo`: A pointer to user-defined data, or  . You should pass the same value you used when you registered the callback function.
+- `userInfo`: A pointer to user-defined data, or `NULL`. You should pass the same value you used when you registered the callback function.
 
 ## See Also
 

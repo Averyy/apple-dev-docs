@@ -16,6 +16,10 @@ A dictionary of default service handlers.
 object GoogleAccount.CommunicationServiceRules.DefaultServiceHandlers
 ```
 
+## Properties
+
+- `AudioCall` (string): The bundle identifier for the default application that handles audio calls to contacts from this account.
+
 
 ---
 

@@ -53,8 +53,8 @@ if ([paths count] == 1) {
 
 ## Parameters
 
-- `path`: The path of a file or directory. If   begins with a tilde ( ), it must first be expanded with  , or this method will return  .
-- `isDirectory`: Upon return, contains   if   is a directory or if the final path element is a symbolic link that points to a directory; otherwise, contains  . If   doesn’t exist, this value is undefined upon return. Pass   if you do not need this information.
+- `path`: The path of a file or directory. If `path` begins with a tilde (`~`), it must first be expanded with [`expandingTildeInPath`](nsstring/expandingtildeinpath.md), or this method will return [`false`](https://developer.apple.com/documentation/Swift/false).
+- `isDirectory`: Upon return, contains [`true`](https://developer.apple.com/documentation/Swift/true) if `path` is a directory or if the final path element is a symbolic link that points to a directory; otherwise, contains [`false`](https://developer.apple.com/documentation/Swift/false). If `path` doesn’t exist, this value is undefined upon return. Pass `NULL` if you do not need this information.
 
 ## See Also
 

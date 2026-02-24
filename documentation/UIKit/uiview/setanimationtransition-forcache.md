@@ -31,9 +31,9 @@ Use of this method is discouraged in iOS 4.0 and later. You should use the [`tra
 
 ## Parameters
 
-- `transition`: A transition to apply to  . Possible values are described in  .
+- `transition`: A transition to apply to `view`. Possible values are described in [`UIView.AnimationTransition`](uiview/animationtransition.md).
 - `view`: The view to apply the transition to.
-- `cache`: If  , the view and its contents must be updated for each frame of the transition animation, which may noticeably affect the frame rate.
+- `cache`: If [`true`](https://developer.apple.com/documentation/Swift/true), the before and after images of `view` are rendered once and used to create the frames in the animation. Caching can improve performance but if you set this parameter to [`true`](https://developer.apple.com/documentation/Swift/true), you must not update the view or its subviews during the transition. Updating the view and its subviews may interfere with the caching behaviors and cause the view contents to be rendered incorrectly (or in the wrong location) during the animation. You must wait until the transition ends to update the view. If [`false`](https://developer.apple.com/documentation/Swift/false), the view and its contents must be updated for each frame of the transition animation, which may noticeably affect the frame rate.
 
 ## See Also
 

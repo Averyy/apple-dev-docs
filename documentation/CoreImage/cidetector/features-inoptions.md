@@ -26,7 +26,7 @@ An array of [`CIFeature`](cifeature.md) objects. Each object represents a featur
 ## Parameters
 
 - `image`: The image you want to examine.
-- `options`: A dictionary that specifies feature detection options. See   for allowed keys and their possible values.
+- `options`: A dictionary that specifies feature detection options. See [`Feature Detection Keys`](feature-detection-keys.md) for allowed keys and their possible values.
 
 ## See Also
 

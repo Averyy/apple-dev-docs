@@ -27,7 +27,7 @@ Primary initializer for an IOCommandPool. Should probably use IOCommandPool::wit
 
 ## Parameters
 
-- `queue`: The IODispatchQueue that this command pool should synchronize with.   This queue must have been allocated with the kIODispatchQueueReentrant   option.
+- `queue`: The IODispatchQueue that this command pool should synchronize with. This queue must have been allocated with the kIODispatchQueueReentrant option.
 
 
 ---

@@ -26,7 +26,7 @@ Use the implementation of your method to perform any custom actions related to t
 ## Parameters
 
 - `action`: The action object being executed.
-- `time`: The actual time at which the timer fired. The system calls   precisely when the timer fires and passes that value to this parameter.
+- `time`: The actual time at which the timer fired. The system calls [`mach_absolute_time`](mach_absolute_time.md) precisely when the timer fires and passes that value to this parameter.
 
 ## See Also
 

@@ -20,7 +20,7 @@ Use this method to configure the time zone to one that is different from the use
 
 ## Parameters
 
-- `timeZone`: The time zone to be used. Specifying   removes the time zone information and causes Apple Watch to use the current time zone based on the user’s settings.
+- `timeZone`: The time zone to be used. Specifying `nil` removes the time zone information and causes Apple Watch to use the current time zone based on the user’s settings.
 
 ## See Also
 

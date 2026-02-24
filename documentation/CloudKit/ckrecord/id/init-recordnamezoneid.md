@@ -28,7 +28,7 @@ Use this method when you create or search for records in a zone other than the d
 ## Parameters
 
 - `recordName`: The name that identifies the record. The string must contain only ASCII characters, must not exceed 255 characters, and must not start with an underscore. If you specify an empty string for this parameter, the method throws an exception.
-- `zoneID`: The ID of the record zone where you want to store the record. This parameter must not be  .
+- `zoneID`: The ID of the record zone where you want to store the record. This parameter must not be `nil`.
 
 ## See Also
 

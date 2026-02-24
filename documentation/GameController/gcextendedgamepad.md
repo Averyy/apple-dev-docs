@@ -19,6 +19,10 @@ A controller profile that supports the extended set of gamepad controls.
 class GCExtendedGamepad
 ```
 
+## Mentions
+
+- [Discovering game controllers](discovering-game-controllers.md)
+
 #### Overview
 
 The extended gamepad controller profile represents a physical or virtual controller with the following input elements:
@@ -65,13 +69,13 @@ If the controller’s [`extendedGamepad`](gccontroller/extendedgamepad.md) prope
 - [var buttonHome: GCControllerButtonInput?](gcextendedgamepad/buttonhome.md)
   The main menu button element that players use to enter the secondary menu and pause the game.
 - [var buttonA: GCControllerButtonInput](gcextendedgamepad/buttona.md)
-  The bottom face button that uses  or another indicator as its label.
+  The bottom face button that uses *A* or another indicator as its label.
 - [var buttonB: GCControllerButtonInput](gcextendedgamepad/buttonb.md)
-  The right face button that uses  or another indicator as its label.
+  The right face button that uses *B* or another indicator as its label.
 - [var buttonX: GCControllerButtonInput](gcextendedgamepad/buttonx.md)
-  The left face button that uses  or another indicator as its label.
+  The left face button that uses *X* or another indicator as its label.
 - [var buttonY: GCControllerButtonInput](gcextendedgamepad/buttony.md)
-  The top face button that uses  or another indicator as its label.
+  The top face button that uses *Y* or another indicator as its label.
 ### Getting directional pad inputs
 - [var dpad: GCControllerDirectionPad](gcextendedgamepad/dpad.md)
   The controller’s directional pad element.

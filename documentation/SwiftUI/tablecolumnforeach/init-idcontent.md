@@ -20,9 +20,9 @@ init(_ data: Data, id: KeyPath<Data.Element, ID>, @TableColumnBuilder<TableColum
 
 ## Parameters
 
-- `data`: The data that the   instance uses to   create table columns dynamically.
+- `data`: The data that the [`TableColumnForEach`](tablecolumnforeach.md) instance uses to create table columns dynamically.
 - `id`: The key path to the provided data’s identifier.
-- `content`: The table column builder that creates columns dynamically   for each element.
+- `content`: The table column builder that creates columns dynamically for each element.
 
 ## See Also
 

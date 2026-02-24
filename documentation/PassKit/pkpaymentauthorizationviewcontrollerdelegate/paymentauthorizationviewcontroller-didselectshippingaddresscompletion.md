@@ -25,7 +25,9 @@ When this method is called, you create a new array of valid [`PKShippingMethod`]
 
 - `controller`: The payment authorization view controller.
 - `address`: An address book record representing the selected shipping method.
-- `completion`: This block takes the following parameters:
+- `completion`: The completion block to be called with updated shipping information. This block takes the following parameters: - **`status`**: The authorization status for the payment. For values, see [`PKPaymentAuthorizationViewControllerDelegate`](pkpaymentauthorizationviewcontrollerdelegate.md).
+- **`shippingMethods`**: An array of [`PKShippingMethod`](pkshippingmethod.md) objects that replaces the shipping methods for the current payment request.
+- **`summaryItems`**: An array of [`PKPaymentSummaryItem`](pkpaymentsummaryitem.md) objects that replaces the summary items for the current payment request.
 
 
 ---

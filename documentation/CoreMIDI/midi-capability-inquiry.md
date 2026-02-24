@@ -12,7 +12,7 @@ MIDI Capability Inquiry (MIDI-CI) uses bidirectional communication to enable dev
 - Property exchange. Devices can use a set of System Exclusive (SysEx) messages to find and control various properties of other devices.
 - Protocol negotiation. MIDI 2.0 devices can select between using the MIDI 1.0 or 2.0 protocols, falling back to 1.0 when not supported by other devices.
 
-MIDI-CI defines two roles in the communication between devices:  and . Client processes acting as the initiator use the [`MIDICISession`](midicisession.md) API, which allows for profile and property configuration of the associated responder. Client processes that advertise their own profile and property capabilities use the [`MIDICIResponder`](midiciresponder.md) API, which sends responder-originated messages to initiators.
+MIDI-CI defines two roles in the communication between devices: *initiator* and *responder*. Client processes acting as the initiator use the [`MIDICISession`](midicisession.md) API, which allows for profile and property configuration of the associated responder. Client processes that advertise their own profile and property capabilities use the [`MIDICIResponder`](midiciresponder.md) API, which sends responder-originated messages to initiators.
 
 ## Topics
 

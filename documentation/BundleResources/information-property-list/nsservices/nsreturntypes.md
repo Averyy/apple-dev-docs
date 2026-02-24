@@ -8,6 +8,10 @@ The data types that the service returns.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [NSSendTypes](information-property-list/nsservices/nssendtypes.md)

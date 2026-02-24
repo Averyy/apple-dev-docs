@@ -6,7 +6,7 @@ Provide a set of responses to a notification.
 
 #### Overview
 
-An  is a notification with associated actions, letting the user respond directly from the notification’s long-look interface.
+An *actionable notification* is a notification with associated actions, letting the user respond directly from the notification’s long-look interface.
 
 To create an actionable notification:
 

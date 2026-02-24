@@ -20,7 +20,7 @@ func canReadItem(withDataConformingToTypes types: [String]) -> Bool
 
 ## Parameters
 
-- `types`: An array of   objects containing UTIs.
+- `types`: An array of `NSString` objects containing UTIs.
 
 ## See Also
 

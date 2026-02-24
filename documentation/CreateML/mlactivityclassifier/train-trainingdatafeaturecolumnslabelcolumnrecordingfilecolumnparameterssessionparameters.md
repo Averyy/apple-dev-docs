@@ -20,12 +20,12 @@ An [`MLJob`](mljob.md) that represents the activity classifier training session.
 
 ## Parameters
 
-- `trainingData`: An   instance.
+- `trainingData`: An [`MLActivityClassifier.DataSource`](mlactivityclassifier/datasource.md) instance.
 - `featureColumns`: The names of the columns in an annotation file that contain sensor data.
-- `labelColumn`: The initializer ignores this parameter if   uses   .
-- `recordingFileColumn`: The initializer ignores this parameter if   uses   .
-- `parameters`: An   instance you use to configure the   model for the training session.
-- `sessionParameters`: An   instance you use to configure the training session.
+- `labelColumn`: The name of the column in an annotation file that contains the activity labels if `trainingData` uses [`MLActivityClassifier.DataSource.directoryWithDataAndAnnotation(at:annotationFileName:timeStampColumn:labelStartTimeColumn:labelEndTimeColumn:)`](mlactivityclassifier/datasource/directorywithdataandannotation(at:annotationfilename:timestampcolumn:labelstarttimecolumn:labelendtimecolumn:).md). The initializer ignores this parameter if `trainingData` uses [`MLActivityClassifier.DataSource.labeledDirectories(at:)`](mlactivityclassifier/datasource/labeleddirectories(at:).md).
+- `recordingFileColumn`: The name of the column in an annotation file that contains the data filenames if `trainingData` uses [`MLActivityClassifier.DataSource.directoryWithDataAndAnnotation(at:annotationFileName:timeStampColumn:labelStartTimeColumn:labelEndTimeColumn:)`](mlactivityclassifier/datasource/directorywithdataandannotation(at:annotationfilename:timestampcolumn:labelstarttimecolumn:labelendtimecolumn:).md). The initializer ignores this parameter if `trainingData` uses [`MLActivityClassifier.DataSource.labeledDirectories(at:)`](mlactivityclassifier/datasource/labeleddirectories(at:).md).
+- `parameters`: An [`MLActivityClassifier.ModelParameters`](mlactivityclassifier/modelparameters-swift.struct.md) instance you use to configure the model for the training session.
+- `sessionParameters`: An [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you use to configure the training session.
 
 ## See Also
 

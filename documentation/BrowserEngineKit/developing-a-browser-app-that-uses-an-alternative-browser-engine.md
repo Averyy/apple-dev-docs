@@ -25,6 +25,9 @@ For more information on how these targets work together to support a custom web 
 
 To build a web browser that uses an alternative browser engine, including the one in this sample project, apply for the entitlements from Apple. The entitlement request process varies by region:
 
+- **European Union**: See [`Using alternative browser engines in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines).
+- **Japan**: See [`Using alternative browser engines in Japan`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines-jp).
+
 For more information on which entitlements to use, see [`Creating browser extensions in Xcode`](creating-browser-extensions-in-xcode.md).
 
 To build the sample code project for a device, you must target an iPhone that supports the `arm64e` instruction set. The project doesn’t support iPad.

@@ -24,7 +24,7 @@ Call this method from your browser app when the authentication attempt completes
 
 ## Parameters
 
-- `url`: A URL using the scheme indicated by the request’s   property that indicates the outcome of the authentication attempt.
+- `url`: A URL using the scheme indicated by the request’s [`callbackURLScheme`](aswebauthenticationsessionrequest/callbackurlscheme.md) property that indicates the outcome of the authentication attempt.
 
 ## See Also
 

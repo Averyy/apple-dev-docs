@@ -25,7 +25,7 @@ The view controller object for the specified key or `nil` if the view controller
 
 ## Parameters
 
-- `key`: The key identifying the view controller you want. For a list of possible keys, see  .
+- `key`: The key identifying the view controller you want. For a list of possible keys, see `View Controller Transition Keys`.
 
 ## See Also
 

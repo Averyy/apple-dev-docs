@@ -22,10 +22,10 @@ typealias DNSServiceDomainEnumReply = (DNSServiceRef?, DNSServiceFlags, UInt32, 
 
 ## Parameters
 
-- `sdRef`: The DNSServiceRef initialized by  .
-- `flags`: kDNSServiceFlagsDefault
+- `sdRef`: The DNSServiceRef initialized by [`DNSServiceEnumerateDomains(_:_:_:_:_:)`](dnsserviceenumeratedomains(_:_:_:_:_:).md).
+- `flags`: Possible values are: [`kDNSServiceFlagsMoreComing`](kdnsserviceflagsmorecoming.md) kDNSServiceFlagsAdd kDNSServiceFlagsDefault
 - `interfaceIndex`: Specifies the interface on which the domain exists. (The index for a given interface is determined via the if_nametoindex() family of calls.)
-- `errorCode`: Will be   (0) on success, otherwise indicates the failure that occurred (other parameters are undefined if errorCode is nonzero).
+- `errorCode`: Will be [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) (0) on success, otherwise indicates the failure that occurred (other parameters are undefined if errorCode is nonzero).
 - `replyDomain`: The name of the domain.
 - `context`: The context pointer passed to DNSServiceEnumerateDomains.
 

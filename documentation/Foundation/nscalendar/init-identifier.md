@@ -30,7 +30,7 @@ The returned calendar defaults to the current locale and default time zone.
 
 ## Parameters
 
-- `calendarIdentifierConstant`: The identifier for the new calendar. For valid identifiers, see  .
+- `calendarIdentifierConstant`: The identifier for the new calendar. For valid identifiers, see `Calendar Identifiers`.
 
 ## See Also
 

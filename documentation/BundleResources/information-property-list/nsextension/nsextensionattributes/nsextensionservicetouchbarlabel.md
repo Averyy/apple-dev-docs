@@ -8,6 +8,10 @@ A name for display when the extension appears as a Quick Action in the Touch Bar
 **Availability**:
 - macOS 10.14+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key is used in conjunction with the [`NSExtensionServiceAllowsTouchBarItem`](information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowstouchbaritem.md) key.

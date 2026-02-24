@@ -27,7 +27,7 @@ func makeBinaryArchive(descriptor: MTLBinaryArchiveDescriptor) throws -> any MTL
 
 ## Parameters
 
-- `descriptor`: An   instance.
+- `descriptor`: An [`MTLBinaryArchiveDescriptor`](mtlbinaryarchivedescriptor.md) instance.
 
 ## See Also
 

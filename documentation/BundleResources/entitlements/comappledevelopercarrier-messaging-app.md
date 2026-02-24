@@ -9,6 +9,10 @@ A Boolean value that indicates whether the app can use the TelephonyMessagingKit
 - iOS 26.0+
 - iPadOS 26.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Add the Default Carrier Messaging App entitlement to your app by following these steps:

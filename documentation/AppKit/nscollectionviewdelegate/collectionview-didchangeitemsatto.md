@@ -22,7 +22,7 @@ After the highlight state of one or more items changes successfully, the collect
 ## Parameters
 
 - `collectionView`: The collection view notifying you of the highlight change.
-- `indexPaths`: The set of   objects corresponding to the items whose highlight state changed.
+- `indexPaths`: The set of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects corresponding to the items whose highlight state changed.
 - `highlightState`: The new highlight state of the items.
 
 ## See Also

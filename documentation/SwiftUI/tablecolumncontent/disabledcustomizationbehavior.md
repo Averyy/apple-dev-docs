@@ -29,7 +29,7 @@ This does not prevent programmatic changes to a table column customization.
 
 ## Parameters
 
-- `behavior`: The behavior to disable, or   to not allow   any customization.
+- `behavior`: The behavior to disable, or `.all` to not allow any customization.
 
 ## See Also
 

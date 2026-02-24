@@ -25,7 +25,7 @@ An array of found services. Returns `nil` if no matching services are found.
 
 ## Parameters
 
-- `serviceTypes`: An array of strings that identify service types. See   for a list of types.
+- `serviceTypes`: An array of strings that identify service types. See [`Accessory Service Types`](accessory-service-types.md) for a list of types.
 
 ## See Also
 

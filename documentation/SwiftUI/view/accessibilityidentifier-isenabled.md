@@ -28,7 +28,7 @@ Use this value for testing. It isn’t visible to the user.
 ## Parameters
 
 - `identifier`: The accessibility identifier to apply.
-- `isEnabled`: If true the accessibility identifier is applied;   otherwise the accessibility identifier is unchanged.
+- `isEnabled`: If true the accessibility identifier is applied; otherwise the accessibility identifier is unchanged.
 
 ## See Also
 

@@ -20,8 +20,8 @@ The matrix `x` is transposed in place.
 
 ## Parameters
 
-- `size`: Number of rows and columns in matrix  ; must be a multiple of 4.
-- `x`: Square matrix with   rows and   columns.
+- `size`: Number of rows and columns in matrix `x`; must be a multiple of 4.
+- `x`: Square matrix with `size` rows and `size` columns.
 
 ## See Also
 

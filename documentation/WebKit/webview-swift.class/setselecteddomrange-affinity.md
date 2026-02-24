@@ -16,8 +16,8 @@ func setSelectedDOMRange(_ range: DOMRange!, affinity selectionAffinity: NSSelec
 
 ## Parameters
 
-- `range`: The range of nodes to select. If   is  , the current selection is cleared. This method raises a   if the range has been detached or refers to nodes not displayed by the receiver.
-- `selectionAffinity`: See the   property for information on selection affinity.
+- `range`: The range of nodes to select. If `range` is `nil`, the current selection is cleared. This method raises a `DOMRangeExcepton` if the range has been detached or refers to nodes not displayed by the receiver.
+- `selectionAffinity`: See the [`selectionAffinity`](webview-swift.class/selectionaffinity.md) property for information on selection affinity.
 
 ## See Also
 

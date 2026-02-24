@@ -20,6 +20,11 @@ object SystemMigration.CustomBehaviorItem
 - [object SystemMigration.CustomBehaviorItem.PathsItem](systemmigration/custombehavioritem/pathsitem.md)
   The custom behavior path dictionary.
 
+## Properties
+
+- `Context` (string) *(required)*: The context that custom paths apply to.
+- `Paths` ([SystemMigration.CustomBehaviorItem.PathsItem]) *(required)*: The list of custom behavior path dictionaries.
+
 
 ---
 

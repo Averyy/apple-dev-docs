@@ -24,7 +24,35 @@ func vvsincos(_: UnsafeMutablePointer<Double>, _: UnsafeMutablePointer<Double>, 
 
 ##### Parameters
 
+- **parameter 1**: The sines output array, *z*.
+- **parameter 2**: The cosines output array, *y*.
+- **parameter 3**: The input array, *x*.
+- **parameter 4**: The number of elements in the arrays.
+
 The following code shows an example of using [`vvsincos(_:_:_:_:)`](vvsincos(_:_:_:_:).md).
+
+**Swift**:
+
+```swift
+let pi = Double.pi
+var x: [Double] = [-pi * 0.5, 0, pi * 0.5]
+var y = [Double](repeating: 0, count: x.count)
+var z = [Double](repeating: 0, count: x.count)
+var n = Int32(x.count)
+ 
+vvsincos(&z, &y, &x, &n)
+```
+
+**Objective-C**:
+
+```objc
+double x[] = {-M_PI_2, 0, M_PI_2};
+double y[3];
+double z[3];
+int n = 3;
+ 
+vvsincos(z, y, x, &n);
+```
 
 ## See Also
 

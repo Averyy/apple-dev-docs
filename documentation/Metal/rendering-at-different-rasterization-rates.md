@@ -23,11 +23,33 @@ Use VRR when:
 
 To use VRR, you create a rasterization map to divide the render target into zones and specify a horizontal and vertical rasterization rate for each zone. After you create the rate map, you allocate textures to hold intermediate images. These textures are smaller than the final render target image, because you allocate only the memory you need to hold the rendered pixels.
 
-After you’ve finished rendering intermediate data using the rate map, you execute additional draw commands to stretch the intermediate data and copy it to another texture at the higher resolution, such as a texture provided by a Metal drawable for display. This final target is called a , because it uses the normal rasterization uniformly across the image. After you generate the full-rate image, you can apply additional processing to it. For example, you usually want to render user interface elements on top of the full-rate image.
+After you’ve finished rendering intermediate data using the rate map, you execute additional draw commands to stretch the intermediate data and copy it to another texture at the higher resolution, such as a texture provided by a Metal drawable for display. This final target is called a *full-rate image*, because it uses the normal rasterization uniformly across the image. After you generate the full-rate image, you can apply additional processing to it. For example, you usually want to render user interface elements on top of the full-rate image.
 
 ##### Check for Vrr Support
 
 Not all GPUs support VRR. Before attempting to use it, check for support on the device object:
+
+**Swift**:
+
+```swift
+func supportsVariableRasterizationRateOn(_ device: MTLDevice) -> Bool {
+    device.supportsRasterizationRateMap(layerCount: 1)
+}
+```
+
+**Objective-C**:
+
+```objective-c
+- (BOOL)supportsVariableRasterizationRateOn:(id<MTLDevice>)device {
+    return [device supportsRasterizationRateMapWithLayerCount:1];
+}
+
+// Metal-CPP
+bool supportsVariableRasterizationRate(MTL::Device* pDevice)
+{
+    return pDevice->supportsRasterizationRateMap(1);
+}
+```
 
 ## See Also
 

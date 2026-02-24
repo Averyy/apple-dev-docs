@@ -24,7 +24,7 @@ A new trait collection containing only a specified display scale trait.
 
 ## Parameters
 
-- `scale`: The display scale for the new trait collection. Use   to specify a non-Retina display scale, and a value of   or greater to specify a Retina display scale.
+- `scale`: The display scale for the new trait collection. Use `1.0` to specify a non-Retina display scale, and a value of `2.0` or greater to specify a Retina display scale.
 
 ## See Also
 

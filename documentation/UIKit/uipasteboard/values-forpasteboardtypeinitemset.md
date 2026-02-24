@@ -28,7 +28,7 @@ Returned objects are of one of the following classes, depending on the pasteboar
 ## Parameters
 
 - `pasteboardType`: A string identifying a representation type. Typically this is a UTI.
-- `itemSet`: An index set with each integer value identifying a pasteboard item positionally in the pasteboard. Pass in   to request all pasteboard items.
+- `itemSet`: An index set with each integer value identifying a pasteboard item positionally in the pasteboard. Pass in `nil` to request all pasteboard items.
 
 ## See Also
 

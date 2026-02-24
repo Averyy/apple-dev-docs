@@ -35,7 +35,7 @@ New code should use [`appending(path:directoryHint:)`](url/appending(path:direct
 ## Parameters
 
 - `pathComponent`: The path component to add.
-- `isDirectory`: If  , the method treats the path component as a directory.
+- `isDirectory`: If `true`, the method treats the path component as a directory.
 
 ## See Also
 

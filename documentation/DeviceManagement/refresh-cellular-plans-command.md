@@ -31,6 +31,43 @@ An error response uses one of the following error codes:
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>RequestType</key>
+        <string>RefreshCellularPlans</string>
+        <key>eSIMServerURL</key>
+        <string>http://example.server.com</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_RefreshCellularPlans</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_RefreshCellularPlans</string>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>00008020-000915083C80012E</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -38,6 +75,10 @@ An error response uses one of the following error codes:
   The command to query a carrier URL for active eSIM cellular-plan profiles on a device.
 - [object RefreshCellularPlansResponse](refreshcellularplansresponse.md)
   A response from the device after it processes the command to query a carrier URL for active eSIM cellular-plan profiles on a device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

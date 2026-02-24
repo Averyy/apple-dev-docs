@@ -31,9 +31,9 @@ A random distribution works by mapping the values produced by the `source` rando
 
 ## Parameters
 
-- `source`: A randomizer that produces raw random values for use by the distribution. A randomizer is any object implementing the   protocol, which can be a random source algorithm such as the   class or another random distribution.
-- `mean`: The mean value of the distribution (also called the   or  ).
-- `deviation`: The standard deviation of the distribution (also called  ).
+- `source`: A randomizer that produces raw random values for use by the distribution. A randomizer is any object implementing the [`GKRandom`](gkrandom.md) protocol, which can be a random source algorithm such as the [`GKARC4RandomSource`](gkarc4randomsource.md) class or another random distribution.
+- `mean`: The mean value of the distribution (also called the *expected value* or *median*).
+- `deviation`: The standard deviation of the distribution (also called *sigma*).
 
 ## See Also
 

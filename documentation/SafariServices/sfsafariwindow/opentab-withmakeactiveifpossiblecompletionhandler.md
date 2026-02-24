@@ -25,7 +25,7 @@ If the extension cannot access the URL, no tab is opened.
 ## Parameters
 
 - `url`: The URL to navigate to.
-- `activateTab`:   to make the tab active; otherwise  .
+- `activateTab`: [`true`](https://developer.apple.com/documentation/Swift/true) to make the tab active; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 - `completionHandler`: A block called after the tab is opened.
 
 ## See Also

@@ -22,8 +22,8 @@ func CMVideoFormatDescriptionGetCleanAperture(_ videoDesc: CMVideoFormatDescript
 
 ## Parameters
 
-- `videoDesc`:   being interrogated.
-- `originIsAtTopLeft`: Pass true if the CGRect will be used in an environment where (0,0) is at the top-left corner of an enclosing rectangle and y coordinates increase as you go down. Pass false if the   will be used in an environment where (0,0) is at the bottom-left corner of an enclosing rectangle and y coordinates increase as you go up.
+- `videoDesc`: `CMVideoFormatDescription` being interrogated.
+- `originIsAtTopLeft`: Pass true if the CGRect will be used in an environment where (0,0) is at the top-left corner of an enclosing rectangle and y coordinates increase as you go down. Pass false if the `CGRect` will be used in an environment where (0,0) is at the bottom-left corner of an enclosing rectangle and y coordinates increase as you go up.
 
 ## See Also
 

@@ -24,7 +24,36 @@ func vvrec(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: UnsafeP
 
 ##### Parameters
 
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
 The following code shows an example of using [`vvrec(_:_:_:)`](vvrec(_:_:_:).md).
+
+**Swift**:
+
+```swift
+var x: [Double] = [2, 4, 8, 16]
+var y = [Double](repeating: 0, count: x.count)
+var n = Int32(x.count)
+ 
+vvrec(&y, &x, &n)
+ 
+print(y) // [0.5, 0.25, 0.125, 0.0625]
+```
+
+**Objective-C**:
+
+```objc
+double x[] = {2, 4, 8, 16};
+double y[4];
+int n = 4;
+ 
+vvrec(y, x, &n);
+ 
+NSLog(@"y: [%lf, %lf, %lf, %lf]", y[0], y[1], y[2], y[3]);
+
+```
 
 ## See Also
 

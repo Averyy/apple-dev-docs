@@ -24,9 +24,9 @@ This `CFComparatorFunction` function compares font family names and sorts them i
 
 ## Parameters
 
-- `family1`: The first localized font family name to compare, as a   object.
-- `family2`: The second localized font family name to compare, as a   object.
-- `context`: Unused. Can be  .
+- `family1`: The first localized font family name to compare, as a `CFStringRef` object.
+- `family2`: The second localized font family name to compare, as a `CFStringRef` object.
+- `context`: Unused. Can be `NULL`.
 
 ## See Also
 

@@ -13,11 +13,15 @@ The version of the build that identifies an iteration of the bundle.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key is a machine-readable string composed of one to three period-separated integers, such as 10.14.1. The string can only contain numeric characters (0-9) and periods.
 
-Each integer provides information about the build version in the format [].[].[]:
+Each integer provides information about the build version in the format [*Major*].[*Minor*].[*Patch*]:
 
 - Major: A major revision number.
 - Minor: A minor revision number.

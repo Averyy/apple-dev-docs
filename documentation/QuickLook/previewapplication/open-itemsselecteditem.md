@@ -24,7 +24,7 @@ This method launches the preview application with the provided preview items and
 
 ## Parameters
 
-- `items`: An array of preview items to present in the new   scene.
+- `items`: An array of preview items to present in the new `PreviewApplication` scene.
 - `selectedItem`: If provided and in the array of passed items, the preview item to select in the presented collection..
 
 

@@ -22,8 +22,8 @@ func makeIntersectionFunctionTable(descriptor: MTLIntersectionFunctionTableDescr
 
 ## Parameters
 
-- `descriptor`: An   instance that configures the visible function table the method creates.
-- `stage`: An   instance that represents the render pass stage the intersection function table applies to.
+- `descriptor`: An [`MTLIntersectionFunctionTableDescriptor`](mtlintersectionfunctiontabledescriptor.md) instance that configures the visible function table the method creates.
+- `stage`: An [`MTLRenderStages`](mtlrenderstages.md) instance that represents the render pass stage the intersection function table applies to.
 
 ## See Also
 

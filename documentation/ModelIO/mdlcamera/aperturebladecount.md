@@ -21,7 +21,7 @@ var apertureBladeCount: Int { get set }
 
 #### Discussion
 
-The shape of a real-world camera’s aperture is determined by the number of overlapping blades that form an adjustable iris, whose center opening light passes through between the lens and the imaging surface (film or sensor). This shape affects that of out-of-focus highlights, commonly called , that appear in images seen by the camera.  The aesthetic quality of a lens’ bokeh is one of the characteristics that drives the choice of a lens for a particular scene. To create a texture image for use in rendering bokeh highlights, use the [`bokehKernel(withSize:)`](mdlcamera/bokehkernel(withsize:).md) method.
+The shape of a real-world camera’s aperture is determined by the number of overlapping blades that form an adjustable iris, whose center opening light passes through between the lens and the imaging surface (film or sensor). This shape affects that of out-of-focus highlights, commonly called *bokeh*, that appear in images seen by the camera.  The aesthetic quality of a lens’ bokeh is one of the characteristics that drives the choice of a lens for a particular scene. To create a texture image for use in rendering bokeh highlights, use the [`bokehKernel(withSize:)`](mdlcamera/bokehkernel(withsize:).md) method.
 
 The default aperture blade count is zero, indicating a perfectly circular aperture.
 

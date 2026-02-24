@@ -8,6 +8,10 @@ The name that the system uses to facilitate communication between your driver an
 **Availability**:
 - macOS 10.14+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Typically, you set the value of this key to your kext or DriverKit extension’s bundle identifier. The system registers your driver under the specified server name, and uses that name to facilitate communications between your driver and other clients, including the kernel itself.

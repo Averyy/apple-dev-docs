@@ -18,7 +18,7 @@ func popTemplate(animated: Bool)
 
 ## Parameters
 
-- `animated`: A Boolean value that indicates whether the system animates the display of transitioning templates. Set to   to animate the transition.
+- `animated`: A Boolean value that indicates whether the system animates the display of transitioning templates. Set to [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition.
 
 ## See Also
 

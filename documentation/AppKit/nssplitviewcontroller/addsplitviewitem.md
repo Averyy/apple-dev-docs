@@ -22,7 +22,7 @@ If you subclass the [`NSSplitViewController`](nssplitviewcontroller.md) class, d
 
 ## Parameters
 
-- `splitViewItem`: The split view item to add.
+- `splitViewItem`: The split view item to add. > ❗ **Important**:  Before you add a split view item, it must be non-`nil` and it must have an associated view controller, or the system throws an exception.
 
 ## See Also
 

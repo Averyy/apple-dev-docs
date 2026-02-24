@@ -26,16 +26,53 @@ If you do not implement this method, the contextual menu item is always availabl
 
 To hide the contextual menu item:
 
+**Swift**:
+
+```swift
+validationHandler(true, nil)
+```
+
+**Objective-C**:
+
+```objc
+validationHandler(YES, nil);
+```
+
 To change the menu text:
+
+**Swift**:
+
+```swift
+validationHandler(false, "Updated text")
+```
+
+**Objective-C**:
+
+```objc
+validationHandler(NO, @"Updated text");
+```
 
 To use the default text:
 
+**Swift**:
+
+```swift
+validationHandler(false, nil)
+```
+
+**Objective-C**:
+
+```objc
+validationHandler(NO, nil)
+```
+
 ## Parameters
 
-- `command`: The command, specified in the   file, for the context menu item being validated.
+- `command`: The command, specified in the `Info.plist` file, for the context menu item being validated.
 - `page`: The page where the context menu item is going to be presented.
 - `userInfo`: Optional message content. If specified, the dictionary’s value objects conform to the W3C standard for safe passing of structured data, such as Boolean objects, numeric values, strings, and arrays.
-- `validationHandler`: A code block used to set the state of the contextual menu item. The block receives the following parameters:
+- `validationHandler`: A code block used to set the state of the contextual menu item. The block receives the following parameters: - **shouldHide**: A Boolean value that indicates whether the menu item should be hidden.
+- **text**: The text to use for the menu item. Pass `nil` to use the default text from the `Info.plist` file.
 
 ## See Also
 

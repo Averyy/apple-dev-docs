@@ -38,7 +38,7 @@ let MLApertureFlaggedTypeIdentifier: String
 - [let MLApertureLastImportAlbumTypeIdentifier: String](mlaperturelastimportalbumtypeidentifier.md)
   The media group that represents the last import album in Aperture.
 - [let MLApertureLastNMonthsAlbumTypeIdentifier: String](mlaperturelastnmonthsalbumtypeidentifier.md)
-  The media group that represents the recent content album in Aperture, known as the Last  Months album. The value for  is usually 12 (settable in Aperture > Preferences > General).
+  The media group that represents the recent content album in Aperture, known as the Last *N* Months album. The value for *N* is usually 12 (settable in Aperture > Preferences > General).
 - [let MLApertureLightTableTypeIdentifier: String](mlaperturelighttabletypeidentifier.md)
   A media group that represents a light table in Aperture.
 - [let MLApertureSlideShowTypeIdentifier: String](mlapertureslideshowtypeidentifier.md)

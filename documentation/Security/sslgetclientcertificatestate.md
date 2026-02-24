@@ -28,7 +28,7 @@ The value returned reflects the latest change in the state of the client certifi
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `clientState`: On return, a pointer to a value indicating the state of the client certificate exchange. See   for a list of possible values.
+- `clientState`: On return, a pointer to a value indicating the state of the client certificate exchange. See [`SSLClientCertificateState`](sslclientcertificatestate.md) for a list of possible values.
 
 
 ---

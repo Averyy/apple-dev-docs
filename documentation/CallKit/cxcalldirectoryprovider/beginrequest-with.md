@@ -27,7 +27,7 @@ An extension prepares for a host app’s request by getting the context passed i
 
 ## Parameters
 
-- `context`: A   object that represents the context in which the host app makes the request.
+- `context`: A `CXCallDirectoryExtensionContext` object that represents the context in which the host app makes the request.
 
 
 ---

@@ -22,8 +22,8 @@ convenience init(elevationStyle: MKMapConfiguration.ElevationStyle, emphasisStyl
 
 ## Parameters
 
-- `elevationStyle`: One of the   modes.
-- `emphasisStyle`: One of the   styles.
+- `elevationStyle`: One of the [`MKMapConfiguration.ElevationStyle`](mkmapconfiguration/elevationstyle-swift.enum.md) modes.
+- `emphasisStyle`: One of the [`MKStandardMapConfiguration.EmphasisStyle`](mkstandardmapconfiguration/emphasisstyle-swift.enum.md) styles.
 
 ## See Also
 

@@ -10,15 +10,23 @@ The header of every Apps and Books for Organizations API request requires author
 
 ##### Construct Your Developer Token
 
-The Apps and Books for Organizations API supports the JSON Web Token (JWT) specification, so you can pass statements and metadata called . For more information, see the [`JWT specification`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519) and the available libraries for generating signed JWTs.
+The Apps and Books for Organizations API supports the JSON Web Token (JWT) specification, so you can pass statements and metadata called *claims*. For more information, see the [`JWT specification`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519) and the available libraries for generating signed JWTs.
 
 Use your developer account to [`create a Services identifier and obtain a key ID`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-service-configurations/apps-and-books-for-organizations) and to [`locate your Team ID`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-your-team/locate-your-team-id).
 
 Construct a developer token as a JSON object whose header contains:
 
+- **`alg`**: The algorithm you use to sign the token, which must have a value of `ES256.`
+- **`kid`**: A 10-character key ID obtained from your developer account.
+
 > ❗ **Important**:  Apps and Books for Organizations supports only developer tokens signed with the ES256 algorithm. Apps and Books for Organizations rejects unsecured developer tokens or developer tokens signed with other algorithms. These rejections result in a `401` error code.
 
-In the  payload of the token, include:
+In the *claims* payload of the token, include:
+
+- **`iss`**: The *issuer* registered claim key, a 10-character Team ID obtained from your developer account.
+- **`iat`**: The *issued at* registered claim key, which indicates the time at which the token was generated, in terms of the number of seconds since epoch, in UTC.
+- **`exp`**: The *expiration time* registered claim key, whose value must not be greater than `15777000` (6 months in seconds) from the current UNIX time on the server.
+- **`origin`**: (Optional) The *origin* claim, recommended for web clients. Only use this JWT if the origin header of the request matches one of the values in the array. This addition helps prevent unauthorized use of the tokens. For example: “`origin`”`:[`”`https://example.com`”`,`”`https://music.example.com`”`]`.
 
 A decoded developer token has the following format:
 

@@ -23,7 +23,7 @@ You use this method to update the location of the menu. This method calls [`edit
 
 ## Parameters
 
-- `animated`:   to animate the transition to the new position;   to make the transition immediate.
+- `animated`: `YES` to animate the transition to the new position; `NO` to make the transition immediate.
 
 ## See Also
 

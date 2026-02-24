@@ -26,7 +26,7 @@ The maximum number of tasks is 16. The extended launch measurement finishes when
 
 ## Parameters
 
-- `taskID`: The task identifier. Must be a unique,   string.
+- `taskID`: The task identifier. Must be a unique, `non-null` string.
 
 ## See Also
 

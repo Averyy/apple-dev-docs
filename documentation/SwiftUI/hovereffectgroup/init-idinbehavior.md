@@ -20,9 +20,9 @@ A new HoverEffectGroup
 
 ## Parameters
 
-- `id`: An optional id to give the group. If provided, the group will be   uniquely identified by combining the id and the namespace.
+- `id`: An optional id to give the group. If provided, the group will be uniquely identified by combining the id and the namespace.
 - `namespace`: The namespace that identifies the group.
-- `behavior`: How the effect will behave relative to other   effects in the group.
+- `behavior`: How the effect will behave relative to other effects in the group.
 
 
 ---

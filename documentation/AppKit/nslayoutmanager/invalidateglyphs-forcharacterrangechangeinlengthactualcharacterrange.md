@@ -24,7 +24,7 @@ This method is used by the layout mechanism and should be invoked only during ty
 
 - `charRange`: The range of characters for which to invalidate glyphs.
 - `delta`: The number of characters added or removed.
-- `actualCharRange`: If not  , on output, the actual range invalidated after any necessary expansion. This range can be larger than the range of characters given due to the effect of context on glyphs and layout.
+- `actualCharRange`: If not `NULL`, on output, the actual range invalidated after any necessary expansion. This range can be larger than the range of characters given due to the effect of context on glyphs and layout.
 
 ## See Also
 

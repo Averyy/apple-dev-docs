@@ -16,8 +16,8 @@ func register(_ nib: NSNib?, forItemIdentifier itemIdentifier: NSUserInterfaceIt
 
 ## Parameters
 
-- `nib`: The nib object containing the item object. The nib file must contain exactly one top-level   object. You can use a custom subclass when configuring the object in the nib file. Specify   to unregister a previously registered file.
-- `itemIdentifier`: The string that identifies the type of items. You use this string later when requesting new items. The string must be unique among the other registered item view classes of this scrubber. This parameter must not be an empty string or  .
+- `nib`: The nib object containing the item object. The nib file must contain exactly one top-level [`NSScrubberItemView`](nsscrubberitemview.md) object. You can use a custom subclass when configuring the object in the nib file. Specify `nil` to unregister a previously registered file.
+- `itemIdentifier`: The string that identifies the type of items. You use this string later when requesting new items. The string must be unique among the other registered item view classes of this scrubber. This parameter must not be an empty string or `nil`.
 
 ## See Also
 

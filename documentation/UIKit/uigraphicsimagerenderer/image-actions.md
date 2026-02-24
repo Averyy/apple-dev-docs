@@ -30,7 +30,7 @@ You can call this method repeatedly to create multiple images, each of which has
 
 ## Parameters
 
-- `actions`: A   block that, when invoked by the renderer, executes a set of drawing instructions to create the output image.
+- `actions`: A [`UIGraphicsImageRenderer.DrawingActions`](uigraphicsimagerenderer/drawingactions.md) block that, when invoked by the renderer, executes a set of drawing instructions to create the output image.
 
 ## See Also
 

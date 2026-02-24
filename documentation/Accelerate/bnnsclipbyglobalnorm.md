@@ -122,7 +122,7 @@ On return, `outputOne` contains the values `[0.5, 1.0, 1.5, 2.0]`, and `outputTw
 - `src`: An array of input descriptors.
 - `count`: The number of input and output descriptors.
 - `max_norm`: The maximum global Euclidean norm.
-- `use_norm`: An optional value for a known global Euclidean norm. Set to   to specify that the function computes the norm from the input descriptors.
+- `use_norm`: An optional value for a known global Euclidean norm. Set to `0` to specify that the function computes the norm from the input descriptors.
 
 ## See Also
 

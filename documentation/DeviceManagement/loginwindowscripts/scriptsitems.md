@@ -14,6 +14,11 @@ A dictionary of login scripts.
 object LoginWindowScripts.ScriptsItems
 ```
 
+## Properties
+
+- `filedata` (data) *(required)*: The UTF-8 encoded data object representing the executable script.
+- `filename` (string) *(required)*: The filename for display purposes.
+
 
 ---
 

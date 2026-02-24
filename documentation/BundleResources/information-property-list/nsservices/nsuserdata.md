@@ -8,6 +8,10 @@ A service-specific string value.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: _conditional
+
 ## See Also
 
 - [NSReturnTypes](information-property-list/nsservices/nsreturntypes.md)

@@ -29,7 +29,7 @@ In general, you should use this function only to convert strings that were previ
 
 ## Parameters
 
-- `string`: A string whose contents are of the form “{ ,  }”, where   is the x-coordinate of the vector and   is the y-coordinate. The   and   values can be integer or float values. An example of a valid string is @”{3.0,2.5}”. The string is not localized, so items are always separated with a comma.
+- `string`: A string whose contents are of the form “{*dx*, *dy*}”, where *dx* is the x-coordinate of the vector and *dy* is the y-coordinate. The *dx* and *dy* values can be integer or float values. An example of a valid string is @”{3.0,2.5}”. The string is not localized, so items are always separated with a comma.
 
 ## See Also
 

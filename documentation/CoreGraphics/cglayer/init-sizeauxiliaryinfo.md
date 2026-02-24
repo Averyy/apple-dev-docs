@@ -32,7 +32,7 @@ After you create a [`CGLayer`](cglayer.md) object, you should reuse it whenever 
 
 - `context`: The graphics context you want to create the layer relative to. The layer uses this graphics context as a reference for initialization.
 - `size`: The size, in default user space units, of the layer relative to the graphics context.
-- `auxiliaryInfo`: Reserved for future use. Pass  .
+- `auxiliaryInfo`: Reserved for future use. Pass `NULL`.
 
 
 ---

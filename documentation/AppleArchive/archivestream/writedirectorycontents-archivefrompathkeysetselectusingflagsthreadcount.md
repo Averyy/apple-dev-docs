@@ -27,7 +27,7 @@ func writeDirectoryContents(archiveFrom directory: FilePath, path: FilePath? = n
 - `keySet`: The fields to include for each entry.
 - `filter`: A closure that’s called for each entry that’s received by the stream.
 - `flags`: Flags that control the behavior of the operation.
-- `threadCount`: The number of worker threads that the operation uses, set to   for default.
+- `threadCount`: The number of worker threads that the operation uses, set to `0` for default.
 
 
 ---

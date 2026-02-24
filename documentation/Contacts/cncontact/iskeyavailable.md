@@ -29,7 +29,7 @@ The [`isKeyAvailable(_:)`](cncontact/iskeyavailable(_:).md) or [`areKeysAvailabl
 
 ## Parameters
 
-- `key`: A contact property key. For a list of valid keys, see  .
+- `key`: A contact property key. For a list of valid keys, see [`Contact Keys`](contact-keys.md).
 
 ## See Also
 

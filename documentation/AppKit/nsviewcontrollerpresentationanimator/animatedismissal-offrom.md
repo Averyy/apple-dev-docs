@@ -23,7 +23,7 @@ To add custom view controller dismissal animation, Implement it in this method.
 ## Parameters
 
 - `viewController`: The view controller that is being dismissed.
-- `fromViewController`: The view controller that is the parent of the one in the   parameter.
+- `fromViewController`: The view controller that is the parent of the one in the `viewController` parameter.
 
 ## See Also
 

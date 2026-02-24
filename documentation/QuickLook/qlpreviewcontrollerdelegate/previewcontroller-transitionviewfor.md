@@ -27,7 +27,7 @@ Starting with macOS 11, animated transitions are available for Mac apps built wi
 
 ## Parameters
 
-- `controller`: The   that’s requesting the view for the preview item.
+- `controller`: The [`QLPreviewController`](qlpreviewcontroller.md) that’s requesting the view for the preview item.
 - `item`: The item to preview or dismiss.
 
 ## See Also

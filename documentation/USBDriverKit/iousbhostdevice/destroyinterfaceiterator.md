@@ -20,7 +20,7 @@ virtual kern_return_t DestroyInterfaceIterator(uintptr_t ref);
 
 ## Parameters
 
-- `ref`: An opaque iterator reference that you created using the   method.
+- `ref`: An opaque iterator reference that you created using the [`CreateInterfaceIterator`](iousbhostdevice/createinterfaceiterator.md) method.
 
 ## See Also
 

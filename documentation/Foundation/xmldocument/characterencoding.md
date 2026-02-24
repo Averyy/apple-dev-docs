@@ -21,7 +21,7 @@ Typically the encoding is specified in the XML declaration of a document that is
 
 ## Parameters
 
-- `encoding`: A string that specifies an encoding; it must match the name of an IANA character set. See   for a list of valid encoding specifiers.
+- `encoding`: A string that specifies an encoding; it must match the name of an IANA character set. See [`http://www.iana.org/assignments/character-sets`](https://developer.apple.comhttp://www.iana.org/assignments/character-sets) for a list of valid encoding specifiers.
 
 ## See Also
 

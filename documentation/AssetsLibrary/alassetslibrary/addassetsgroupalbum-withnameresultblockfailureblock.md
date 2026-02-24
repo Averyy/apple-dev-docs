@@ -21,9 +21,9 @@ If the user denies access to the application, or if no application is allowed to
 
 ## Parameters
 
-- `name`: If   conflicts with another assets group with the same name, then the group is not created and   returns a   group.
-- `resultBlock`: For a description of the block, see  .
-- `failureBlock`: For a description of the block, see  .
+- `name`: The name for the new group. If `name` conflicts with another assets group with the same name, then the group is not created and `resultBlock` returns a `nil` group.
+- `resultBlock`: The block invoked after the add operation completes. For a description of the block, see [`ALAssetsLibraryAccessFailureBlock`](alassetslibraryaccessfailureblock.md).
+- `failureBlock`: The block to invoke if the add operation fails—for example, if the user denies access to the application. For a description of the block, see [`ALAssetsGroupFaces`](alassetsgroupfaces.md).
 
 ## See Also
 

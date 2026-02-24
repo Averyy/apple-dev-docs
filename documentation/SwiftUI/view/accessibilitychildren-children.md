@@ -64,7 +64,7 @@ SwiftUI hides any views that you provide with the `children` parameter, then the
 
 ## Parameters
 
-- `children`: A   that represents the replacement   child views the framework uses to generate accessibility elements.
+- `children`: A [`ViewBuilder`](viewbuilder.md) that represents the replacement child views the framework uses to generate accessibility elements.
 
 ## See Also
 

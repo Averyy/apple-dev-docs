@@ -11,6 +11,10 @@ A description of changes made to the default security for HTTP connections.
 - macOS 10.11+
 - visionOS 1.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 On Apple platforms, a networking feature called App Transport Security (ATS) improves privacy and data integrity for all apps and app extensions. ATS requires that all HTTP connections made with the [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system)—typically using the [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) class—use HTTPS. It further imposes extended security checks that supplement the default server trust evaluation prescribed by the Transport Layer Security (TLS) protocol. ATS blocks connections that fail to meet minimum security specifications. For additional details, see [`Preventing Insecure Network Connections`](https://developer.apple.com/documentation/Security/preventing-insecure-network-connections).
@@ -30,6 +34,9 @@ All keys in the ATS configuration dictionary are optional, with default values t
 ATS operates by default for apps linked against the iOS 9.0 or macOS 10.11 SDKs or later. When you link your app against an older SDK, ATS is disabled no matter which version of operating system your app runs on.
 
 If you specify a value for any of the global exceptions besides [`NSAllowsArbitraryLoads`](information-property-list/nsapptransportsecurity/nsallowsarbitraryloads.md), then the ATS behavior depends on the version of the OS on which your app runs:
+
+- **iOS 9.0 or macOS 10.11**: ATS uses the [`NSAllowsArbitraryLoads`](information-property-list/nsapptransportsecurity/nsallowsarbitraryloads.md) value that you set, or NO by default, and ignores the other global exceptions.
+- **iOS 10.0 or later or macOS 10.12 or later**: ATS ignores the [`NSAllowsArbitraryLoads`](information-property-list/nsapptransportsecurity/nsallowsarbitraryloads.md) value that you set and instead obeys the other key or keys.
 
 This behavior enables you to manage differences between OS versions. You provide a coarse exception ([`NSAllowsArbitraryLoads`](information-property-list/nsapptransportsecurity/nsallowsarbitraryloads.md)) for older versions, and a more targeted exception, like [`NSAllowsArbitraryLoadsInWebContent`](information-property-list/nsapptransportsecurity/nsallowsarbitraryloadsinwebcontent.md), for when it’s available.
 

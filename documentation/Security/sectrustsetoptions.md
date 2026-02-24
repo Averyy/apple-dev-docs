@@ -21,7 +21,7 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 ## Parameters
 
 - `trustRef`: The trust object to modify.
-- `options`: The new set of option flags. For a list of options, see  .
+- `options`: The new set of option flags. For a list of options, see [`SecTrustOptionFlags`](sectrustoptionflags.md).
 
 
 ---

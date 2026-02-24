@@ -22,7 +22,7 @@ func saveGState()
 
 #### Discussion
 
-Each graphics context maintains a stack of graphics states. Note that not all aspects of the current drawing environment are elements of the graphics state. For example, the current path is not considered part of the graphics state and is therefore not saved when you call this function. The graphics state parameters that  saved are:
+Each graphics context maintains a stack of graphics states. Note that not all aspects of the current drawing environment are elements of the graphics state. For example, the current path is not considered part of the graphics state and is therefore not saved when you call this function. The graphics state parameters that *are* saved are:
 
 - CTM (current transformation matrix)
 - clip region

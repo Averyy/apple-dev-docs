@@ -34,7 +34,7 @@ The rectangle is centered at the entity’s origin and aligned with its x and y 
 
 - `width`: The width, in meters, of the rectangle along the x-axis.
 - `depth`: The depth, in meters, of the rectangle along the z-axis.
-- `cornerRadius`: A corner radius in the form of a circular arc, with   curvature that transitions abruptly from   to   at the boundary   between the edge and the corner.
+- `cornerRadius`: A corner radius in the form of a circular arc, with curvature that transitions abruptly from `0` to `1/r` at the boundary between the edge and the corner.
 
 ## See Also
 

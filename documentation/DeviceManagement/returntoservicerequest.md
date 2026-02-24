@@ -16,6 +16,11 @@ The return-to-service request details.
 object ReturnToServiceRequest
 ```
 
+## Properties
+
+- `MessageType` (string) *(required)*: The message type, which requires a value of `ReturnToService`.
+- `UDID` (string) *(required)*: The device’s UDID (unique device identifier). The system requires this value if the enrollment type is a device enrollment.
+
 ## See Also
 
 - [object ReturnToServiceResponse](returntoserviceresponse.md)

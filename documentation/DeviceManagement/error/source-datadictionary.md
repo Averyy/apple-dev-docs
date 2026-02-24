@@ -15,6 +15,11 @@ An object that represents the source of an error.
 object Error.Source
 ```
 
+## Properties
+
+- `parameter` (string): The URI query parameter that caused the error.
+- `pointer` (string): A pointer to the associated entry in the request document.
+
 
 ---
 

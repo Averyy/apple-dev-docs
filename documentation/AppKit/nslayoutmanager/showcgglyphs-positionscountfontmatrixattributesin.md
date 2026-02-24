@@ -20,13 +20,13 @@ func showCGGlyphs(_ glyphs: UnsafePointer<CGGlyph>, positions: UnsafePointer<NSP
 
 ## Parameters
 
-- `glyphs`: The glyphs to draw; may contain embedded   bytes.
+- `glyphs`: The glyphs to draw; may contain embedded `NULL` bytes.
 - `positions`: The positions at which to draw the glyphs in the user space coordinate system.
 - `glyphCount`: The number of glyphs.
-- `font`: The font applied to the graphics state. This value can be different from the   value in the   argument because of various font substitutions that the system automatically executes.
-- `textMatrix`: The affine transform mapping the text space coordinate system to the user space coordinate system. The   and   components of   are ignored since Quartz overrides them with the glyph positions.
-- `attributes`: A dictionary of glyph attributes. See   for supported keys and values.
-- `graphicsContext`: If non- ,   is already configured according to the text attributes arguments:  ,  , and  .
+- `font`: The font applied to the graphics state. This value can be different from the `NSFontAttributeName` value in the `attributes` argument because of various font substitutions that the system automatically executes.
+- `textMatrix`: The affine transform mapping the text space coordinate system to the user space coordinate system. The `tx` and `ty` components of `textMatrix` are ignored since Quartz overrides them with the glyph positions.
+- `attributes`: A dictionary of glyph attributes. See [`Glyph Attributes`](glyph-attributes.md) for supported keys and values.
+- `graphicsContext`: If non-`nil`, `graphicsContext` is already configured according to the text attributes arguments: `font`, `textMatrix`, and `attributes`.
 
 ## See Also
 

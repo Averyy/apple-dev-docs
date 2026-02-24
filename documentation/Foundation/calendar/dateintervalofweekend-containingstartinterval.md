@@ -31,7 +31,7 @@ Note that a given entire day within a calendar is not necessarily all in a weeke
 ## Parameters
 
 - `date`: The date at which to start the search.
-- `start`: When the result is  , set
+- `start`: When the result is `true`, set
 
 ## See Also
 

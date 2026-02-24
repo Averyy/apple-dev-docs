@@ -17,6 +17,9 @@ func MTLCopyAllDevicesWithObserver(handler: @escaping (any MTLDevice, MTLDeviceN
 
 #### Return Value
 
+- **`devices`**: An array of [`MTLDevice`](mtldevice.md) instances
+- **`observer`**: An object instance that represents an observer the function creates for you.
+
 #### Discussion
 
 Keep a copy of `observer` in your app in case you want to stop receiving notifications. You can stop receiving notifications by passing `observer` to the [`MTLRemoveDeviceObserver(_:)`](mtlremovedeviceobserver(_:).md) function.

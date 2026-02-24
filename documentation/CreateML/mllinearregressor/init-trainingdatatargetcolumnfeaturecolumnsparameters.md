@@ -23,7 +23,7 @@ init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]? = 
 
 - `trainingData`: The training data
 - `targetColumn`: Name of the column containing the target values
-- `featureColumns`: Names of the columns containing feature values. If   all columns, other than the target   column, will be used as feature values.
+- `featureColumns`: Names of the columns containing feature values. If `nil` all columns, other than the target column, will be used as feature values.
 - `parameters`: Model training parameters
 
 ## See Also

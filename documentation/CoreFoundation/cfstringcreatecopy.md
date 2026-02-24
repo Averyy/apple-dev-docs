@@ -32,7 +32,7 @@ You should use this function in situations where a string is or could be mutable
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new string. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `theString`: The string to copy.
 
 ## See Also

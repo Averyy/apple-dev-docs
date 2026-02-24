@@ -28,6 +28,9 @@ var pressedDidChangeHandler: ((any GCPhysicalInputElement, any GCPressedStateInp
 
 The block’s parameters are:
 
+- **`element`**: The element whose value changed.
+- **`input`**: The press state of the element.
+
 ## See Also
 
 - [var isPressed: Bool](gcpressedstateinput/ispressed.md)

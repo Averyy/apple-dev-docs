@@ -22,10 +22,10 @@ case directoryWithVideosAndAnnotation(at: URL, annotationFile: URL, videoColumn:
 
 - `at`: A URL to a folder in the file system that contains hand action videos.
 - `annotationFile`: A URL to a JSON or CSV file that contains annotations for the hand action videos.
-- `videoColumn`: The name of the column or key name in the annotation file that contains the video   filenames.
-- `labelColumn`: The name of the column or key name in the annotation file that contains the hand action   label names.
-- `startTimeColumn`: The name of the column or key name in the annotation file that contains the hand   action’s starting-time index in the video file. Otherwise  , if every video example starts at the   beginning of the video file.
-- `endTimeColumn`: The name of the column or key name in the annotation file that contains the hand   action’s ending-time in the video file. Otherwise  , if every video example ends at the end of the   video file.
+- `videoColumn`: The name of the column or key name in the annotation file that contains the video filenames.
+- `labelColumn`: The name of the column or key name in the annotation file that contains the hand action label names.
+- `startTimeColumn`: The name of the column or key name in the annotation file that contains the hand action’s starting-time index in the video file. Otherwise `nil`, if every video example starts at the beginning of the video file.
+- `endTimeColumn`: The name of the column or key name in the annotation file that contains the hand action’s ending-time in the video file. Otherwise `nil`, if every video example ends at the end of the video file.
 
 ## See Also
 

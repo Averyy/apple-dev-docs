@@ -60,8 +60,8 @@ The first time the animation runs, the truck moves from the leading edge to the 
 
 ## Parameters
 
-- `repeatCount`: The number of times that the animation repeats. Each   repeated sequence starts at the beginning when   is   .
-- `autoreverses`: A Boolean value that indicates whether the animation   sequence plays in reverse after playing forward. Autoreverse counts   towards the  . For instance, a   of one plays   the animation forward once, but it doesn’t play in reverse even if    is  . When   is   and    is  , the animation moves forward, then reverses, then   stops.
+- `repeatCount`: The number of times that the animation repeats. Each repeated sequence starts at the beginning when `autoreverse` is `false`.
+- `autoreverses`: A Boolean value that indicates whether the animation sequence plays in reverse after playing forward. Autoreverse counts towards the `repeatCount`. For instance, a `repeatCount` of one plays the animation forward once, but it doesn’t play in reverse even if `autoreverse` is `true`. When `autoreverse` is `true` and `repeatCount` is `2`, the animation moves forward, then reverses, then stops.
 
 ## See Also
 

@@ -25,7 +25,7 @@ An initialized peer ID object.
 
 #### Discussion
 
-Call this method  when creating the local peer, not when you create objects that represent other devices.
+Call this method *only* when creating the local peer, not when you create objects that represent other devices.
 
 This method throws an exception if the `displayName` value is too long, empty, or `nil`.
 
@@ -33,7 +33,7 @@ Each call to this method produces a unique peer ID, even for the same display na
 
 ## Parameters
 
-- `myDisplayName`: The display name is intended for use in UI elements, and should be short and descriptive of the local peer. The maximum allowable length is 63 bytes in UTF-8 encoding. The   parameter may not be   or an empty string.
+- `myDisplayName`: The display name for the local peer. If you use the multipeer browser view controller, this name is shown. The display name is intended for use in UI elements, and should be short and descriptive of the local peer. The maximum allowable length is 63 bytes in UTF-8 encoding. The `displayName` parameter may not be `nil` or an empty string.
 
 ## See Also
 

@@ -34,7 +34,7 @@ If a teacher reassigns content and the student marks the item done without redoi
 
 ## Parameters
 
-- `contextPath`: An array of strings that trace a path of identifiers from   to a target context with activities you want to mark as complete. The   is the same identifier path you use for a call to the   method, but affects only the last context in the path.
+- `contextPath`: An array of strings that trace a path of identifiers from [`mainAppContext`](clsdatastore/mainappcontext.md) to a target context with activities you want to mark as complete. The `contextPath` is the same identifier path you use for a call to the [`contexts(matchingIdentifierPath:completion:)`](clsdatastore/contexts(matchingidentifierpath:completion:).md) method, but affects only the last context in the path.
 
 ## See Also
 

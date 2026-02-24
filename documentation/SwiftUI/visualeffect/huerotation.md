@@ -30,7 +30,7 @@ Use hue rotation effect to shift all of the colors in a view according to the an
 
 ## Parameters
 
-- `angle`: The hue rotation angle to apply to the colors in the   view.
+- `angle`: The hue rotation angle to apply to the colors in the view.
 
 ## See Also
 

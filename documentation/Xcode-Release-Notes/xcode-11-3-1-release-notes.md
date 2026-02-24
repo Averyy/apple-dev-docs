@@ -12,7 +12,7 @@ Xcode 11.3.1 supports developing apps for iOS 13.3, iPadOS 13.3, tvOS 13.3, watc
 
 ###### Known Issues
 
-- When you create an Objective-C category file by choosing File > New > File, the newly created file includes an import of the AppKit framework. This causes a compilation error for iOS, tvOS, and watchOS. (55977950) (FB7346800)  Remove the import of AppKit from the source file.
+- When you create an Objective-C category file by choosing File > New > File, the newly created file includes an import of the AppKit framework. This causes a compilation error for iOS, tvOS, and watchOS. (55977950) (FB7346800) **Workaround:** Remove the import of AppKit from the source file.
 
 ##### Debugging
 

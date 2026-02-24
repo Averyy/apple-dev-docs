@@ -25,8 +25,8 @@ The delegate presents the text layout fragment in the UI, for example, in a subl
 
 ## Parameters
 
-- `textViewportLayoutController`: The   associated with this text layout fragment.
-- `textLayoutFragment`: An  .
+- `textViewportLayoutController`: The `NSTextViewportLayoutController` associated with this text layout fragment.
+- `textLayoutFragment`: An `NSTextLayoutFragment`.
 
 ## See Also
 

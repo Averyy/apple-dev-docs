@@ -8,6 +8,10 @@ A Boolean value indicating whether the app is an agent app that runs in the back
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [UIApplicationSceneManifest](information-property-list/uiapplicationscenemanifest.md)

@@ -24,7 +24,7 @@ This method sets the URL for the persistent object store associated with the rec
 ## Parameters
 
 - `absoluteURL`: An URL that specifies the location from which to read the document.
-- `typeName`: The document type at  .
+- `typeName`: The document type at `absoluteURL`.
 
 ## See Also
 

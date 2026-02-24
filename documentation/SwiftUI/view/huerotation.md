@@ -52,7 +52,7 @@ struct HueRotation: View {
 
 ## Parameters
 
-- `angle`: The hue rotation angle to apply to the colors in this   view.
+- `angle`: The hue rotation angle to apply to the colors in this view.
 
 ## See Also
 

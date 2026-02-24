@@ -17,7 +17,7 @@ struct FFENVELOPE
 
 #### Overview
 
-The sustain level for the envelope is represented by the  member of the FFPERIODIC structure and the  member of the FFCONSTANTFORCE structure. The sustain time is represented by  member of the FFEFFECT structure
+The sustain level for the envelope is represented by the **dwMagnitude** member of the FFPERIODIC structure and the **lMagnitude** member of the FFCONSTANTFORCE structure. The sustain time is represented by **dwDuration** member of the FFEFFECT structure
 
 ## Topics
 

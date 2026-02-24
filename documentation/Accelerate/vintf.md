@@ -20,6 +20,8 @@ Returns a vector of floating-point values, each of which is the result of trunca
 
 ##### Parameters
 
+- **A**: The source vector
+
 ## See Also
 
 - [func vceilf(vFloat) -> vFloat](vceilf(_:).md)

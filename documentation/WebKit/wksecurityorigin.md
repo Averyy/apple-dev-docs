@@ -21,7 +21,7 @@ class WKSecurityOrigin
 
 #### Overview
 
-A [`WKSecurityOrigin`](wksecurityorigin.md) object is a transient, data-only object that identifies the host name, protocol, and port number associated with a particular resource. You don’t create [`WKSecurityOrigin`](wksecurityorigin.md) objects directly. Instead, WebKit creates them for the resources it loads. A  load is any load URL has the same security origin as the requesting web site. First-party webpages can access each other’s resources, such as scripts and databases.
+A [`WKSecurityOrigin`](wksecurityorigin.md) object is a transient, data-only object that identifies the host name, protocol, and port number associated with a particular resource. You don’t create [`WKSecurityOrigin`](wksecurityorigin.md) objects directly. Instead, WebKit creates them for the resources it loads. A *first-party* load is any load URL has the same security origin as the requesting web site. First-party webpages can access each other’s resources, such as scripts and databases.
 
 Because a [`WKSecurityOrigin`](wksecurityorigin.md) object is transient, it doesn’t uniquely identify a security origin across multiple delegate method calls.
 

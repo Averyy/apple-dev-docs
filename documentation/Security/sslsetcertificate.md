@@ -41,7 +41,7 @@ The required capabilities of the identity specified in `certRefs[0]`—and of th
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `certRefs`: The certificates to set. This array contains items of type  , except for  , which is of type  .
+- `certRefs`: The certificates to set. This array contains items of type `SecCertificateRef`, except for `certRefs[0]`, which is of type `SecIdentityRef`.
 
 
 ---

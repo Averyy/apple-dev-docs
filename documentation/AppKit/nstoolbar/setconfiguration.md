@@ -20,7 +20,7 @@ If you implement your own autosave mechanism, call this method to restore the co
 
 ## Parameters
 
-- `configDict`: A dictionary with the toolbar configuration details. The toolbar ignores any keys it doesn’t recognize. Typically, you save the original configuration dictionary from the   property to disk and recreate it before passing it in this parameter.
+- `configDict`: A dictionary with the toolbar configuration details. The toolbar ignores any keys it doesn’t recognize. Typically, you save the original configuration dictionary from the [`configuration`](nstoolbar/configuration.md) property to disk and recreate it before passing it in this parameter.
 
 ## See Also
 

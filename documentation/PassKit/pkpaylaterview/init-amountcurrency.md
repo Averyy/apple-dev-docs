@@ -20,7 +20,7 @@ Creates a new Apple Pay Later visual merchandising widget view with the shopping
 ## Parameters
 
 - `amount`: The customer’s shopping cart or item pricing.
-- `currency`: The   currency code for the country or region of the merchant’s principle place of business.
+- `currency`: The [`ISO-4217`](https://developer.apple.comhttps://www.iso.org/iso-4217-currency-codes.html) currency code for the country or region of the merchant’s principle place of business.
 
 
 ---

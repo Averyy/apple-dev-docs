@@ -51,7 +51,7 @@ The tvOS 17.2 SDK provides support to develop tvOS apps for Apple TV devices run
 ###### Resolved Issues
 
 - Fixed: Resolved a possible Swift access conflict crash that could occur with toolbar items.  (113992797)
-- Fixed: To prevent unintentional implicit dependency cycles, ImageRenderer no longer sends Observable updates when the image it produces changes. This change  affect the behavior when a dependency is explicitly declared by observing the ImageRenderer’s publisher.  (116836341)
+- Fixed: To prevent unintentional implicit dependency cycles, ImageRenderer no longer sends Observable updates when the image it produces changes. This change **does not** affect the behavior when a dependency is explicitly declared by observing the ImageRenderer’s publisher.  (116836341)
 
 ## See Also
 

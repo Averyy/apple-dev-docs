@@ -21,8 +21,8 @@ init(minimumDuration: Double = 0.5, maximumDistance: CGFloat = 10)
 
 ## Parameters
 
-- `minimumDuration`: The minimum duration of the long press that must   elapse before the gesture succeeds.
-- `maximumDistance`: The maximum distance that the fingers or cursor   performing the long press can move before the gesture fails.
+- `minimumDuration`: The minimum duration of the long press that must elapse before the gesture succeeds.
+- `maximumDistance`: The maximum distance that the fingers or cursor performing the long press can move before the gesture fails.
 
 ## See Also
 

@@ -31,7 +31,7 @@ You can invoke this method on one thread and then message the returned [`Progres
 ## Parameters
 
 - `unitCount`: The total number of units of work to assign to the progress instance.
-- `parent`: The containing progress object for the created   object.
+- `parent`: The containing progress object for the created [`Progress`](progress.md) object.
 - `portionOfParentTotalUnitCount`: The unit count for the progress object.
 
 ## See Also

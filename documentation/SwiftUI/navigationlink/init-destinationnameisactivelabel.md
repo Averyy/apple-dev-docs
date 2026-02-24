@@ -17,9 +17,9 @@ init(destinationName: String, isActive: Binding<Bool>, @ViewBuilder label: () ->
 
 ## Parameters
 
-- `destinationName`: The storyboard name of a view for the navigation   link to present.
-- `isActive`: A binding to a Boolean value that indicates whether    is currently presented.
-- `label`: A view builder to produce a label describing the    to present.
+- `destinationName`: The storyboard name of a view for the navigation link to present.
+- `isActive`: A binding to a Boolean value that indicates whether `destination` is currently presented.
+- `label`: A view builder to produce a label describing the `destination` to present.
 
 ## See Also
 

@@ -20,7 +20,7 @@ func reloadControls(ofKind kind: String)
 
 ## Parameters
 
-- `kind`: A string that identifies the control and matches the   value you used to define the control.
+- `kind`: A string that identifies the control and matches the value you used to define the control.
 
 
 ---

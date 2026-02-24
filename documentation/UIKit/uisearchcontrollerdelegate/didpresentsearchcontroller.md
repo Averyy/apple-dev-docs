@@ -24,7 +24,7 @@ The system only calls this method when it automatically presents the search cont
 
 ## Parameters
 
-- `searchController`: The   object to present.
+- `searchController`: The [`UISearchController`](uisearchcontroller.md) object to present.
 
 ## See Also
 

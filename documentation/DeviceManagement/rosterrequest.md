@@ -15,6 +15,11 @@ The request for a list of classes.
 object RosterRequest
 ```
 
+## Properties
+
+- `cursor` (string): A hex string that represents the starting position for a request. This is used for pagination. On the initial request, this should be omitted.
+- `limit` (int32): The maximum number of entries to return.
+
 ## See Also
 
 - [object RosterClassResponse](rosterclassresponse.md)

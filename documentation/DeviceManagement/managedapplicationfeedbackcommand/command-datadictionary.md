@@ -18,6 +18,13 @@ The command to get app feedback from a managed app on the device.
 object ManagedApplicationFeedbackCommand.Command
 ```
 
+## Properties
+
+- `DeleteFeedback` (boolean): If `true`, delete the app’s feedback dictionary after the server reads it. Apps that are managed by Declarative Device Management are ignored.
+- `Identifiers` ([string]) *(required)*: The bundle identifiers of the managed apps.
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

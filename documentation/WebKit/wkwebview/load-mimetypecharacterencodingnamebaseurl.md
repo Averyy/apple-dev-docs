@@ -29,7 +29,7 @@ Use this method to navigate to a webpage that you loaded yourself and saved in a
 ## Parameters
 
 - `data`: The data to use as the contents of the webpage.
-- `MIMEType`: The MIME type of the information in the   parameter. This parameter must not contain an empty string.
+- `MIMEType`: The MIME type of the information in the `data` parameter. This parameter must not contain an empty string.
 - `characterEncodingName`: The data’s character encoding name.
 - `baseURL`: A URL that you use to resolve relative URLs within the document.
 

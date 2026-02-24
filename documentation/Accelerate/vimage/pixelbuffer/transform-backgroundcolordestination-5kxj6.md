@@ -23,7 +23,7 @@ func transform(_ transform: CGAffineTransform, backgroundColor: Pixel_8888? = (0
 ## Parameters
 
 - `transform`: The affine transformation matrix.
-- `backgroundColor`: An optional background color. If you pass  , the operation uses the   flag to extend the edges of the image infinitely.
+- `backgroundColor`: An optional background color. If you pass `nil`, the operation uses the [`kvImageEdgeExtend`](kvimageedgeextend.md) flag to extend the edges of the image infinitely.
 - `destination`: The destination pixel buffer.
 
 ## See Also

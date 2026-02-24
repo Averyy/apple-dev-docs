@@ -10,6 +10,28 @@ When capturing a photo in the iOS Camera app, you can cause the portrait effects
 
 Like the iOS Camera app, your app can also opt in for creating and embedding portrait effects matte into captured photos, eventually saving them as HEIC and JPEG images. Using AVFoundation’s [`AVCapturePhotoOutput`](avcapturephotooutput.md), your app can find out whether a particular camera configuration supports the delivery of a portrait effect mattes to still images, and opt in to have them delivered on a per-photo request basis. [`AVCapturePhotoOutput`](avcapturephotooutput.md) delivers photo results using an in-memory wrapper object called [`AVCapturePhoto`](avcapturephoto.md).
 
+**Swift**:
+
+```swift
+// private let photoOutput = AVCapturePhotoOutput()
+...
+// Check that portrait effects matte delivery is supported on this particular device:
+if self.photoOutput.isPortraitEffectsMatteDeliverySupported {
+    self.photoOutput.isPortraitEffectsMatteDeliveryEnabled = true
+}
+```
+
+**Objective-C**:
+
+```objc
+// AVCapturePhotoOutput* photoOutput;
+...
+// Check that portrait effects matte delivery is supported on this particular device:
+if (self.photoOutput.portraitEffectsMatteDeliverySupported) {
+    self.photoOutput.portraitEffectsMatteDeliveryEnabled = YES;
+}
+```
+
 If you’ve opted in for portrait effects matte delivery, you can inspect the [`AVCaptureResolvedPhotoSettings`](avcaptureresolvedphotosettings.md) passed to you in your [`AVCapturePhotoCaptureDelegate`](avcapturephotocapturedelegate.md), and read the [`portraitEffectsMatteDimensions`](avcaptureresolvedphotosettings/portraiteffectsmattedimensions.md) property to see what size matting image will be delivered, instead of hard-coding assumptions about the size.
 
 Even if your app opts in to matte delivery, you’re not guaranteed delivery of a matting image in the resulting [`AVCapturePhoto`](avcapturephoto.md). The neural network responsible for generating portrait effects mattes is trained to detect and segment people. If there are no people in the image scene, the image won’t benefit from a portrait effects matte, so none is delivered. The [`AVCapturePhoto`](avcapturephoto.md) object has a new read-only accessor property in iOS 12 for accessing the image’s [`portraitEffectsMatte`](avcapturephoto/portraiteffectsmatte.md). If you read this property and its return value is `nil`, no portrait effects matte was generated for the image (because none was needed). The camera generates the matte image as a post-processing step, so you can’t check whether a matte will be generated before capturing the photo. The best you can do is check for detected faces by using [`AVMetadataFaceObject`](avmetadatafaceobject.md) and enabling depth and portrait effects matte.

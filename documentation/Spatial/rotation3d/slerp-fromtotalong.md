@@ -28,7 +28,7 @@ A new rotation. When `t = 0.0`, the result is the `from` rotation. When `t = 1.0
 
 - `from`: The starting rotation.
 - `to`: The ending rotation.
-- `t`: The position along the interpolation that’s between   and  .
+- `t`: The position along the interpolation that’s between `0` and `1`.
 - `path`: An enumeration that specifies whether the interpolation should be along the shortest or the longest path between the two rotations.
 
 ## See Also

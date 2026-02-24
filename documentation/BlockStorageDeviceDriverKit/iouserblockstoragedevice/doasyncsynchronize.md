@@ -24,7 +24,7 @@ When the synchronize operation completes, the dext calls your [`Complete`](iouse
 
 ## Parameters
 
-- `requestID`: An opaque identifier. After the dext completes the request, it calls   and sends this value as a parameter.
+- `requestID`: An opaque identifier. After the dext completes the request, it calls [`Complete`](iouserblockstoragedevice/complete.md) and sends this value as a parameter.
 - `lba`: The logical block number of the first block to synchronize.
 - `numOfBlocks`: The number of blocks to synchronize.
 

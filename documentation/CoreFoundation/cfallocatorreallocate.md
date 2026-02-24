@@ -37,10 +37,10 @@ The result of the `CFAllocatorReallocate` function is either an untyped pointer 
 
 ## Parameters
 
-- `allocator`: The allocator to use for reallocating memory. Pass   to request the default allocator.
-- `ptr`: An untyped pointer to a block of memory to reallocate to a new size. If   is   and   is greater than 0, memory is allocated (using the   function callback of the allocator’s context). If   is   and   is 0, the result is  .
-- `newsize`: The number of bytes to allocate. If you pass   and the   parameter is non- , the block of memory that   points to is typically deallocated. If you pass 0 for this parameter and the   parameter is  , nothing happens and the result returned is  .
-- `hint`: A bitfield of type  . Pass flags to the allocator that suggest how memory is to be allocated. Zero indicates no hints. No hints are currently defined, only   should be passed for this argument.
+- `allocator`: The allocator to use for reallocating memory. Pass `NULL` to request the default allocator.
+- `ptr`: An untyped pointer to a block of memory to reallocate to a new size. If `ptr` is `NULL` and `newsize` is greater than 0, memory is allocated (using the `allocate` function callback of the allocator’s context). If `ptr` is `NULL` and `newsize` is 0, the result is `NULL`.
+- `newsize`: The number of bytes to allocate. If you pass `0` and the `ptr` parameter is non-`NULL`, the block of memory that `ptr` points to is typically deallocated. If you pass 0 for this parameter and the `ptr` parameter is `NULL`, nothing happens and the result returned is `NULL`.
+- `hint`: A bitfield of type `CFOptionsFlags`. Pass flags to the allocator that suggest how memory is to be allocated. Zero indicates no hints. No hints are currently defined, only `0` should be passed for this argument.
 
 ## See Also
 

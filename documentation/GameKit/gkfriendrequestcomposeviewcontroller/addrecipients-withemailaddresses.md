@@ -24,7 +24,7 @@ If you do not add at least once recipient, the recipients field is selected when
 
 ## Parameters
 
-- `emailAddresses`: An array with one or more   objects, each containing an email address.
+- `emailAddresses`: An array with one or more [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each containing an email address.
 
 ## See Also
 

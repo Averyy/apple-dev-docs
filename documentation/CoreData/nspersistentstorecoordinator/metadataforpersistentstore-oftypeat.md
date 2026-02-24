@@ -34,7 +34,7 @@ You can use this method to retrieve the metadata from a store without the overhe
 
 ## Parameters
 
-- `storeType`: The type of the store at  . If this value is  , Core Data determines which store class should be used to get or set the store file’s metadata by inspecting the file contents.
+- `storeType`: The type of the store at `url`. If this value is `nil`, Core Data determines which store class should be used to get or set the store file’s metadata by inspecting the file contents.
 - `url`: The location of a persistent store.
 
 ## See Also

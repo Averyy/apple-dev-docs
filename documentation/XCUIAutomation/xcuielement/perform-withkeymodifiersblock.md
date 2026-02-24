@@ -24,7 +24,7 @@ This method sets and holds the keyboard modifiers you provide while you call met
 
 ## Parameters
 
-- `flags`: A set of modifier flags ( ) to use while executing the block.
+- `flags`: A set of modifier flags ([`XCUIElement.KeyModifierFlags`](xcuielement/keymodifierflags.md)) to use while executing the block.
 - `block`: The block to execute.
 
 ## See Also

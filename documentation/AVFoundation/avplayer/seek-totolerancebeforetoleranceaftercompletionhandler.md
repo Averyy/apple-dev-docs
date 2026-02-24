@@ -34,9 +34,9 @@ The completion handler for any prior seek request that is still in process will 
 ## Parameters
 
 - `time`: The time to which to seek.
-- `toleranceBefore`: The tolerance allowed before  .
-- `toleranceAfter`: The tolerance allowed after  .
-- `completionHandler`: The block takes one argument:
+- `toleranceBefore`: The tolerance allowed before `time`.
+- `toleranceAfter`: The tolerance allowed after `time`.
+- `completionHandler`: The block to invoke when the seek operation has either been completed or been interrupted. The block takes one argument: - **finished**: Indicated whether the seek operation completed.
 
 ## See Also
 

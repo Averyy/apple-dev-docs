@@ -23,7 +23,7 @@ init(tags: [CMTag], buffer: CMTaggedBuffer.Buffer)
 ## Parameters
 
 - `tags`: The tags to assign to the buffer.
-- `buffer`: The buffer, wrapped as a  , to associate with the tags.
+- `buffer`: The buffer, wrapped as a [`CMTaggedBuffer.Buffer`](cmtaggedbuffer/buffer-swift.enum.md), to associate with the tags.
 
 ## See Also
 

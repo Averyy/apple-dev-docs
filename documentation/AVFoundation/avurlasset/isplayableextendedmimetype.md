@@ -26,7 +26,7 @@ class func isPlayableExtendedMIMEType(_ extendedMIMEType: String) -> Bool
 
 ## Parameters
 
-- `extendedMIMEType`: An extended MIME type string such as   or  .
+- `extendedMIMEType`: An extended MIME type string such as `video/3gpp2; codecs=“mp4v.20.9, mp4a.E1”` or `audio/aac; codecs=“mp4a.E1”`.
 
 ## See Also
 

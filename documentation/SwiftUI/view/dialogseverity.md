@@ -16,7 +16,7 @@ func dialogSeverity(_ severity: DialogSeverity) -> some View
 
 ## Parameters
 
-- `severity`: The severity to use for confirmation dialogs   and alerts.
+- `severity`: The severity to use for confirmation dialogs and alerts.
 
 ## See Also
 

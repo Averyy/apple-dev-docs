@@ -53,14 +53,14 @@ If you specify an asynchronous fade operation, it’s safe to call [`CGReleaseDi
 
 ## Parameters
 
-- `token`: A reservation token for the fade hardware you acquire by calling  .
-- `duration`: The desired number of seconds for the fade operation. You should use a value in the interval  ]. If the value is  , Quartz applies the ending blend color immediately.
-- `startBlend`: An intensity value in the interval   that specifies the alpha component of the desired blend color at the beginning of the fade operation. For more information, see  .
-- `endBlend`: An intensity value in the interval   that specifies the alpha component of the desired blend color at the end of the fade operation. For more information, see  .
-- `redBlend`: An intensity value in the interval   that specifies the red component of the desired blend color.
-- `greenBlend`: An intensity value in the interval   that specifies the green component of the desired blend color.
-- `blueBlend`: An intensity value in the interval   that specifies the blue component of the desired blend color.
-- `synchronous`: Pass   if you want the fade operation to be synchronous; otherwise, pass  . If a fade operation is synchronous, the function doesn’t return until the operation is complete.
+- `token`: A reservation token for the fade hardware you acquire by calling [`CGAcquireDisplayFadeReservation(_:_:)`](cgacquiredisplayfadereservation(_:_:).md).
+- `duration`: The desired number of seconds for the fade operation. You should use a value in the interval `[0, kCGMaxDisplayReservationInterval`]. If the value is `0`, Quartz applies the ending blend color immediately.
+- `startBlend`: An intensity value in the interval `[0, 1]` that specifies the alpha component of the desired blend color at the beginning of the fade operation. For more information, see [`Display Fade Blend Fractions`](display-fade-blend-fractions.md).
+- `endBlend`: An intensity value in the interval `[0, 1]` that specifies the alpha component of the desired blend color at the end of the fade operation. For more information, see [`Display Fade Blend Fractions`](display-fade-blend-fractions.md).
+- `redBlend`: An intensity value in the interval `[0, 1]` that specifies the red component of the desired blend color.
+- `greenBlend`: An intensity value in the interval `[0, 1]` that specifies the green component of the desired blend color.
+- `blueBlend`: An intensity value in the interval `[0, 1]` that specifies the blue component of the desired blend color.
+- `synchronous`: Pass `true` if you want the fade operation to be synchronous; otherwise, pass `false`. If a fade operation is synchronous, the function doesn’t return until the operation is complete.
 
 ## See Also
 

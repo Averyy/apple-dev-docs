@@ -90,7 +90,7 @@ func resolveWorkoutName(for intent: INStartWorkoutIntent, with completion: @esca
 }
 ```
 
-> **Note**: It is not necessary to implement  of the available parameter resolution methods, only those that need additional logic. For example, the extension in this sample doesn’t need to do any special processing of the goal value when starting a workout, so there is no implementation of [`resolveGoalValue(for:with:)`](https://developer.apple.com/documentation/Intents/INStartWorkoutIntentHandling/resolveGoalValue(for:with:)), although the app still recognizes and processes the goal value.
+> **Note**: It is not necessary to implement *all* of the available parameter resolution methods, only those that need additional logic. For example, the extension in this sample doesn’t need to do any special processing of the goal value when starting a workout, so there is no implementation of [`resolveGoalValue(for:with:)`](https://developer.apple.com/documentation/Intents/INStartWorkoutIntentHandling/resolveGoalValue(for:with:)), although the app still recognizes and processes the goal value.
 
 To aid Siri with recognition of parameter names like “wall climb” and “boulder climb,” add an `AppIntentVocabulary.plist` to a project. More information on this file and how it can add vocabulary to Siri can be found in [`Registering Custom Vocabulary with SiriKit`](registering-custom-vocabulary-with-sirikit.md).
 

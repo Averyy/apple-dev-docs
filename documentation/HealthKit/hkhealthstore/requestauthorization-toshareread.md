@@ -44,8 +44,8 @@ After users have set the permissions for your app, they can always change them u
 
 ## Parameters
 
-- `typesToShare`: A set containing the data types you want to share. This set can contain any concrete subclass of the   class (any of the  ,  ,  , or   classes). If the user grants permission, your app can create and save these data types to the HealthKit store.
-- `typesToRead`: A set containing the data types you want to read. This set can contain any concrete subclass of the   class (any of the   ,  ,  ,  , or   classes ). If the user grants permission, your app can read these data types from the HealthKit store.
+- `typesToShare`: A set containing the data types you want to share. This set can contain any concrete subclass of the [`HKSampleType`](hksampletype.md) class (any of the [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md), or [`HKCorrelationType`](hkcorrelationtype.md) classes). If the user grants permission, your app can create and save these data types to the HealthKit store.
+- `typesToRead`: A set containing the data types you want to read. This set can contain any concrete subclass of the [`HKObjectType`](hkobjecttype.md) class (any of the [`HKCharacteristicType`](hkcharacteristictype.md) , [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md), or [`HKCorrelationType`](hkcorrelationtype.md) classes ). If the user grants permission, your app can read these data types from the HealthKit store.
 
 ## See Also
 

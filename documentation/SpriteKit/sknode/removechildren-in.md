@@ -22,7 +22,7 @@ func removeChildren(in nodes: [SKNode])
 
 ## Parameters
 
-- `nodes`: An array of   objects that are all children of the receiving node.
+- `nodes`: An array of `SKNode` objects that are all children of the receiving node.
 
 ## See Also
 

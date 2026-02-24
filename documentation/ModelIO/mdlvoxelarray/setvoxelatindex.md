@@ -21,7 +21,7 @@ func setVoxelAtIndex(_ index: MDLVoxelIndex)
 
 #### Discussion
 
-A [`MDLVoxelIndex`](mdlvoxelindex.md) value describes both a location in the voxel array and the characteristics of the volume at that location. To set characteristics at a location, pass a [`MDLVoxelIndex`](mdlvoxelindex.md) value whose first three components are the x, y, and z coordinates of that location and whose w coordinate specifies the  at that location.
+A [`MDLVoxelIndex`](mdlvoxelindex.md) value describes both a location in the voxel array and the characteristics of the volume at that location. To set characteristics at a location, pass a [`MDLVoxelIndex`](mdlvoxelindex.md) value whose first three components are the x, y, and z coordinates of that location and whose w coordinate specifies the *shell level* at that location.
 
 Shell level describes the relationship of that location’s volume to the object modeled by the voxel array: 0 for a voxel on the object’s surface, a positive value for voxels outside of the object’s volume, and a negative value for voxels inside the object’s volume. For voxels inside or outside the object, the magnitude of shell level indicates the number of voxels between the index and a voxel on the surface of the object.
 

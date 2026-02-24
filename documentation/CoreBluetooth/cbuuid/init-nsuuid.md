@@ -26,7 +26,7 @@ A new [`CBUUID`](cbuuid.md) object for the specified UUID.
 
 ## Parameters
 
-- `theUUID`: A UUID represented by an   object.
+- `theUUID`: A UUID represented by an [`NSUUID`](https://developer.apple.com/documentation/Foundation/NSUUID) object.
 
 ## See Also
 

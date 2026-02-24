@@ -24,8 +24,8 @@ optional func urlSession(_ session: URLSession, webSocketTask: URLSessionWebSock
 
 - `session`: The session of the WebSocket task that closed.
 - `webSocketTask`: The WebSocket task that closed.
-- `closeCode`: The close code provided by the server. If the close frame didn’t include a close code, this value is  .
-- `reason`: The close reason provided by the server. If the close frame didn’t include a reason, this value is  .
+- `closeCode`: The close code provided by the server. If the close frame didn’t include a close code, this value is `nil`.
+- `reason`: The close reason provided by the server. If the close frame didn’t include a reason, this value is `nil`.
 
 ## See Also
 

@@ -28,7 +28,7 @@ The peripheral manager calls this method after you call [`publishL2CAPChannel(wi
 
 - `peripheral`: The peripheral manager that opened the channel.
 - `channel`: The channel opened by the manager.
-- `error`: The error that occurred, or   if no error occurred.
+- `error`: The error that occurred, or `nil` if no error occurred.
 
 ## See Also
 

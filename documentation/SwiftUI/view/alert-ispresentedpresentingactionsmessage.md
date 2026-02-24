@@ -76,10 +76,10 @@ Only unstyled text is supported for the message.
 ## Parameters
 
 - `title`: The title of the alert.
-- `isPresented`: A binding to a Boolean value that determines whether to   present the alert. When the user presses or taps one of the alert’s   actions, the system sets this value to   and dismisses.
-- `data`: An optional source of truth for the alert. The system passes   the contents to the modifier’s closures. You use this data to   populate the fields of an alert that you create that the system   displays to the user.
-- `actions`: A   returning the alert’s actions given the   currently available data.
-- `message`: A   returning the message for the alert given   the currently available data.
+- `isPresented`: A binding to a Boolean value that determines whether to present the alert. When the user presses or taps one of the alert’s actions, the system sets this value to `false` and dismisses.
+- `data`: An optional source of truth for the alert. The system passes the contents to the modifier’s closures. You use this data to populate the fields of an alert that you create that the system displays to the user.
+- `actions`: A [`ViewBuilder`](viewbuilder.md) returning the alert’s actions given the currently available data.
+- `message`: A [`ViewBuilder`](viewbuilder.md) returning the message for the alert given the currently available data.
 
 ## See Also
 

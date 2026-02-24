@@ -25,7 +25,7 @@ Each view mapping element describes how to route the corresponding amplification
 
 ## Parameters
 
-- `count`: The number of outputs to create. The maximum value is  .
+- `count`: The number of outputs to create. The maximum value is `2`.
 
 ## See Also
 

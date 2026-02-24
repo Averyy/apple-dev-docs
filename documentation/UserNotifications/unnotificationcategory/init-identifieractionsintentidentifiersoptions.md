@@ -28,7 +28,7 @@ An initialized category object.
 - `identifier`: The unique identifier for the category. Each category that your app uses must have a unique identifier. Don’t specify an empty string.
 - `actions`: The actions to display when the system delivers notifications of this type. When minimal space is available, the system displays only the first two actions in the array. You may specify an empty array for this parameter if you don’t want to display custom actions.
 - `intentIdentifiers`: The intent identifier strings that you want to associate with notifications of this type. The Intents framework defines constants for each type of intent that you can associate with your notifications.
-- `options`: Additional options for handling notifications of this type. For a list of possible values, see  .
+- `options`: Additional options for handling notifications of this type. For a list of possible values, see [`UNNotificationCategoryOptions`](unnotificationcategoryoptions.md).
 
 ## See Also
 

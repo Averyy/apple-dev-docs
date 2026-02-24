@@ -26,7 +26,7 @@ This method provides support for `if` statements with an `else` clause and `swit
 
 ## Parameters
 
-- `second`: The content to use if the condition is  .
+- `second`: The content to use if the condition is `false`.
 
 ## See Also
 

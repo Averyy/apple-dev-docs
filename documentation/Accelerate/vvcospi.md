@@ -24,7 +24,36 @@ func vvcospi(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsaf
 
 ##### Parameters
 
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
 The following code shows an example of using [`vvcospi(_:_:_:)`](vvcospi(_:_:_:).md).
+
+**Swift**:
+
+```swift
+var x: [Double] = [-0.5, 0, 0.5]
+var y = [Double](repeating: 0, count: x.count)
+var n = Int32(x.count)
+ 
+vvcospi(&y, &x, &n)
+ 
+print(y) // [0.0, 1.0, 0.0]
+```
+
+**Objective-C**:
+
+```objc
+double x[] = {-0.5, 0, 0.5};
+double y[3];
+int n = 3;
+ 
+vvcospi(y, x, &n);
+ 
+NSLog(@"y: [%lf, %lf, %lf]", y[0], y[1], y[2]);
+
+```
 
 ## See Also
 

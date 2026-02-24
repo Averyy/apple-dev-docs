@@ -33,7 +33,7 @@ This method returns an instance of the [`HKQuantityType`](hkquantitytype.md) con
 
 ## Parameters
 
-- `identifier`: A quantity type identifier. For a list of valid identifiers, see  .
+- `identifier`: A quantity type identifier. For a list of valid identifiers, see [`HKQuantityTypeIdentifier`](hkquantitytypeidentifier.md).
 
 ## See Also
 

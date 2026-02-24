@@ -23,8 +23,8 @@ func encodeBytes(_ bytes: UnsafePointer<UInt8>?, length: Int, forKey key: String
 ## Parameters
 
 - `bytes`: A C array of bytes to encode.
-- `length`: The number of bytes from   to encode.
-- `key`: The key with which to associate the encoded value. This value must not be  .
+- `length`: The number of bytes from `bytesp` to encode.
+- `key`: The key with which to associate the encoded value. This value must not be `nil`.
 
 ## See Also
 

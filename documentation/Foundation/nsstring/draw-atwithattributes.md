@@ -29,7 +29,7 @@ There must be either a focused view or an active graphics context when you call 
 ## Parameters
 
 - `point`: The point in the current graphics context where you want to start drawing the string. The coordinate system of the graphics context is usually defined by the view in which you are drawing. In AppKit, the origin is normally in the lower-left corner of the drawing area, but the origin is in the upper-left corner if the focused view is flipped.
-- `attrs`: A dictionary of text attributes to be applied to the string. These are the same attributes that can be applied to an   object, but in the case of   objects, the attributes apply to the entire string, rather than ranges within the string.
+- `attrs`: A dictionary of text attributes to be applied to the string. These are the same attributes that can be applied to an [`NSAttributedString`](nsattributedstring.md) object, but in the case of `NSString` objects, the attributes apply to the entire string, rather than ranges within the string.
 
 ## See Also
 

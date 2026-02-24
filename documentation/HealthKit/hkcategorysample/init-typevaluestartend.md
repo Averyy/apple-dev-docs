@@ -27,12 +27,39 @@ A valid category sample.
 
 HealthKit uses category samples to represent data that can be classified into a finite set of categories. To create a category sample, you must first create the corresponding category type, and then set its start and end dates, as shown below.
 
+**Swift**:
+
+```swift
+guard let categoryType =
+    HKObjectType.categoryTypeForIdentifier(HKCategoryTypeIdentifierSleepAnalysis) else {
+        fatalError("*** Unable to create a sleep analysis category type ***")
+}
+ 
+let categorySample = HKCategorySample(type: categoryType,
+                                      value: HKCategoryValueSleepAnalysis.Asleep.rawValue,
+                                      startDate: start,
+                                      endDate: end)
+```
+
+**Objective-C**:
+
+```objc
+HKCategoryType *categoryType =
+[HKObjectType categoryTypeForIdentifier:HKCategoryTypeIdentifierSleepAnalysis];
+ 
+HKCategorySample *categorySample =
+[HKCategorySample categorySampleWithType:categoryType
+                                   value:HKCategoryValueSleepAnalysisAsleep
+                               startDate:start
+                                 endDate:end];
+```
+
 ## Parameters
 
-- `type`: The category type for this sample. For a complete list, see  .
-- `value`: The value for this sample. This value must come from the appropriate category value enumeration. Each category type uses its own enumeration. For more information, see  .
-- `startDate`: The start date for the sample. This must be equal to or earlier than the end date; otherwise, this method throws an exception ( ).
-- `endDate`: The end date for the sample. This must be equal to or later than the start date; otherwise, this method throws an exception ( ).
+- `type`: The category type for this sample. For a complete list, see [`HKCategoryTypeIdentifier`](hkcategorytypeidentifier.md).
+- `value`: The value for this sample. This value must come from the appropriate category value enumeration. Each category type uses its own enumeration. For more information, see [`HKCategoryTypeIdentifier`](hkcategorytypeidentifier.md).
+- `startDate`: The start date for the sample. This must be equal to or earlier than the end date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
+- `endDate`: The end date for the sample. This must be equal to or later than the start date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
 
 ## See Also
 

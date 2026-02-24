@@ -29,7 +29,7 @@ Item providers know how to coerce known types of objects, such as images or stri
 ## Parameters
 
 - `typeIdentifier`: A string that represents the desired UTI.
-- `loadHandler`: A block capable of returning the data item as the specified type. For information about implementing this block, see  .
+- `loadHandler`: A block capable of returning the data item as the specified type. For information about implementing this block, see [`NSItemProvider.LoadHandler`](nsitemprovider/loadhandler.md).
 
 ## See Also
 

@@ -28,7 +28,7 @@ After the call completes, the start point and current point of the path are thos
 
 ## Parameters
 
-- `path`: A previously created path object. See  .
+- `path`: A previously created path object. See [`CGPath`](cgpath.md).
 
 ## See Also
 

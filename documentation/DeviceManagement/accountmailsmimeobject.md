@@ -24,6 +24,11 @@ object AccountMailSMIMEObject
 - [object AccountMailSMIME_SigningObject](accountmailsmime_signingobject.md)
   Settings for S/MIME signing.
 
+## Properties
+
+- `Encryption` (AccountMailSMIME_EncryptionObject): Settings for S/MIME encryption.
+- `Signing` (AccountMailSMIME_SigningObject): Settings for S/MIME signing.
+
 ## See Also
 
 - [object AccountMailIncomingServerObject](accountmailincomingserverobject.md)

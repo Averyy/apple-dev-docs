@@ -24,11 +24,11 @@ The `returnCode` value passed to the selector is set to [`NSOKButton`](https://d
 
 ## Parameters
 
-- `inOptions`: A dictionary of options that describe the configuration to use for the filter browser user interface. For the possible keys you can supply see    and the constant  .
+- `inOptions`: A dictionary of options that describe the configuration to use for the filter browser user interface. For the possible keys you can supply see  [`Filter Browser Option Keys`](filter-browser-option-keys.md) and the constant [`IKUISizeFlavor`](ikuisizeflavor.md).
 - `docWindow`: The parent window for the dialog.
-- `modalDelegate`: The object that will invoke the selector    when the filter browser session terminates.
+- `modalDelegate`: The object that will invoke the selector  `didEndSelector` when the filter browser session terminates.
 - `didEndSelector`: The selector to invoke when the filter browser session terminates.
-- `contextInfo`: Any data that must be passed as an argument to the delegate through   after the filter browser session terminates.
+- `contextInfo`: Any data that must be passed as an argument to the delegate through `didEndSelector` after the filter browser session terminates.
 
 ## See Also
 

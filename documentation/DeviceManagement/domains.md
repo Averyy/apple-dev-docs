@@ -95,6 +95,14 @@ If a domain string contains a port number, the system considers only addresses t
 </plist>
 ```
 
+## Properties
+
+- `CrossSiteTrackingPreventionRelaxedApps` ([string]): An array of up to 10 strings representing app bundle-ids. Apps matching the bundle-ids listed here have relaxed enforcement of cross-site tracking prevention for the domains listed in `CrossSiteTrackingPreventionRelaxedDomains`. Available in iOS 18 and later and macOS 15 and later.
+- `CrossSiteTrackingPreventionRelaxedDomains` ([string]): An array of up to 10 strings. URLs matching the patterns listed here have relaxed enforcement of cross-site tracking prevention. Available in iOS 16.2 and later and macOS 13.1 and later.
+- `EmailDomains` ([string]): An array of domains. Mail marks in red all email addresses that lack a suffix matching any of these strings. Available in iOS 8 and later and macOS 10.10 and later.
+- `SafariPasswordAutoFillDomains` ([string]): An array of domains. Users can only save passwords in Safari from URLs matching the patterns listed here. This property doesn’t disable the autofill feature itself. Supervised devices or Shared iPads need this property to enable saving passwords in Safari. Available in iOS 9.3 and later.
+- `WebDomains` ([string]): An array of domains. The system considers URLs matching the patterns listed in this property managed. Available in iOS 9.3 and later.
+
 ## See Also
 
 - [object Cellular](cellular.md)

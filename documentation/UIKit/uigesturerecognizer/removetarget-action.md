@@ -24,8 +24,8 @@ Calling this method removes the specified target-action pair. Passing `nil` for 
 
 ## Parameters
 
-- `target`: An object that currently is a recipient of action messages sent by the receiver when the represented gesture occurs. Specify   if you want to remove all targets from the receiver.
-- `action`: A selector identifying a method of a target to be invoked by the action message. Specify   if you want to remove all actions from the receiver.
+- `target`: An object that currently is a recipient of action messages sent by the receiver when the represented gesture occurs. Specify `nil` if you want to remove all targets from the receiver.
+- `action`: A selector identifying a method of a target to be invoked by the action message. Specify `NULL` if you want to remove all actions from the receiver.
 
 ## See Also
 

@@ -24,11 +24,11 @@ To mute all events from a path, use [`es_mute_path(_:_:_:)`](es_mute_path(_:_:_:
 
 ## Parameters
 
-- `client`: A previously-created client. If the call succeeds, this client no longer receives events that match the types in the   array from executables whose paths match  .
+- `client`: A previously-created client. If the call succeeds, this client no longer receives events that match the types in the `events` array from executables whose paths match `path`.
 - `path`: The path to mute. The client stops receiving events from executables whose paths match this string.
-- `type`: The type of the   argument, either a prefix or a literal path.
+- `type`: The type of the `path` argument, either a prefix or a literal path.
 - `events`: An array of event types to mute.
-- `event_count`: The number of members in the   array.
+- `event_count`: The number of members in the `events` array.
 
 ## See Also
 

@@ -168,7 +168,7 @@ TabView {
 
 ## Parameters
 
-- `behavior`: The customization behavior of the customizable   tab content.
+- `behavior`: The customization behavior of the customizable tab content.
 
 
 ---

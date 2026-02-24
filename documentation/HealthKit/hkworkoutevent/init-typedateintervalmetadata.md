@@ -25,8 +25,8 @@ A new workout event.
 
 ## Parameters
 
-- `type`: The type of workout event. For a description of possible events, see  .
-- `dateInterval`: Most event types support only date intervals with a zero-length duration. These intervals indicate a single point in time, represented by the interval’s   property. Only   and   event types support intervals with nonzero durations.
+- `type`: The type of workout event. For a description of possible events, see [`HKWorkoutEventType`](hkworkouteventtype.md).
+- `dateInterval`: Most event types support only date intervals with a zero-length duration. These intervals indicate a single point in time, represented by the interval’s [`startDate`](https://developer.apple.com/documentation/Foundation/NSDateInterval/startDate) property. Only [`HKWorkoutEventType.lap`](hkworkouteventtype/lap.md) and [`HKWorkoutEventType.segment`](hkworkouteventtype/segment.md) event types support intervals with nonzero durations.
 - `metadata`: The metadata associated with the workout event.
 
 

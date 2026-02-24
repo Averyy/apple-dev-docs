@@ -12,7 +12,7 @@ To implement account-driven enrollment, you need to support a series of interact
 
 ##### Sign in
 
-In step 1, a person enters a user account identifier to start the MDM enrollment flow. The identifier needs to conform to a  format, where  is a user identifier, and  is a fully qualified domain name (FQDN) corresponding to a domain that advertises the MDM service for the person’s organization. The client splits the supplied identifier at the last occurrence of the @ character. If the resulting components are invalid (for example, empty or not an FQDN), an error occurs, and the person can reenter a valid identifier to proceed or can cancel the enrollment.
+In step 1, a person enters a user account identifier to start the MDM enrollment flow. The identifier needs to conform to a *user@domain* format, where *user* is a user identifier, and *domain* is a fully qualified domain name (FQDN) corresponding to a domain that advertises the MDM service for the person’s organization. The client splits the supplied identifier at the last occurrence of the @ character. If the resulting components are invalid (for example, empty or not an FQDN), an error occurs, and the person can reenter a valid identifier to proceed or can cancel the enrollment.
 
 ##### Send the Well Known Request
 

@@ -29,7 +29,7 @@ This method creates a new image and renders content from the canvas into that im
 ## Parameters
 
 - `rect`: The portion of the drawing that you want to capture. Specify a rectangle in the canvas’ coordinate system.
-- `scale`: The scale factor at which to create the image. Specifying scale factors greater than   creates an image with more detail. For example, you might specify a scale factor of   or   when displaying the image on a Retina display.
+- `scale`: The scale factor at which to create the image. Specifying scale factors greater than `1.0` creates an image with more detail. For example, you might specify a scale factor of `2.0` or `3.0` when displaying the image on a Retina display.
 
 
 ---

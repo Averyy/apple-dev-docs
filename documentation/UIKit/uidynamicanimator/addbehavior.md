@@ -20,7 +20,8 @@ func addBehavior(_ behavior: UIDynamicBehavior)
 
 ## Parameters
 
-- `behavior`: The dynamic animator ignores your use of this method if you:
+- `behavior`: The dynamic behavior instance you are adding. The dynamic animator ignores your use of this method if you: - Provide a `nil` value
+- Provide a behavior instance that you’ve already added to the animator at the same level in the behavior hierarchy > ❗ **Important**:  The dynamic animator raises an exception if you provide a behavior instance that you’ve already added to the animator at a different level in the behavior hierarchy.
 
 ## See Also
 

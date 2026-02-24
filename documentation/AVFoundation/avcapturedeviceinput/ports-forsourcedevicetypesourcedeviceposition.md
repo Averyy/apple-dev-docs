@@ -45,9 +45,9 @@ When used in conjunction with an audio device, this method allows you to discove
 
 ## Parameters
 
-- `mediaType`: The media type of the port you’re searching for, or   to consider all media types.
-- `sourceDeviceType`: The device type of the port you’re searching for, or   if to consider all device types.
-- `sourceDevicePosition`: When you’re searching for an audio device,   indicates to search omnidirectional audio.
+- `mediaType`: The media type of the port you’re searching for, or `nil` to consider all media types.
+- `sourceDeviceType`: The device type of the port you’re searching for, or `nil` if to consider all device types.
+- `sourceDevicePosition`: The device position of the port you’re searching for. When you’re searching for a camera device, a position of [`AVCaptureDevice.Position.unspecified`](avcapturedevice/position-swift.enum/unspecified.md) indicates to search for all positions. When you’re searching for an audio device, [`AVCaptureDevice.Position.unspecified`](avcapturedevice/position-swift.enum/unspecified.md) indicates to search omnidirectional audio.
 
 ## See Also
 

@@ -9,6 +9,12 @@ The minimum version of the operating system required for the app to run in macOS
 - Mac Catalyst 13.0+
 - macOS 10.0+
 
+
+
+**Type**: string
+
+**Default**: `10.0.0`
+
 #### Discussion
 
 Use this key to indicate the minimum macOS release that your app supports. The App Store uses this key to indicate the macOS releases on which your app can run, and to show compatibility with a person’s Mac.

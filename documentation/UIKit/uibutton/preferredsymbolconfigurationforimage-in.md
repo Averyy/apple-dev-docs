@@ -20,7 +20,7 @@ func preferredSymbolConfigurationForImage(in state: UIControl.State) -> UIImage.
 
 ## Parameters
 
-- `state`: The state that uses the symbol configuration. Possible values are described in  .
+- `state`: The state that uses the symbol configuration. Possible values are described in [`UIControl.State`](uicontrol/state-swift.struct.md).
 
 ## See Also
 

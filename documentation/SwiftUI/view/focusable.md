@@ -27,7 +27,7 @@ A view that sets whether a view is focusable.
 
 ## Parameters
 
-- `isFocusable`: A Boolean value that indicates whether this   view is focusable.
+- `isFocusable`: A Boolean value that indicates whether this view is focusable.
 
 ## See Also
 

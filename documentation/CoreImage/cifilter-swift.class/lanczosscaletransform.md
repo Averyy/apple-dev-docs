@@ -33,6 +33,10 @@ This method applies the Lanczos scale transform filter to an image. The effect c
 
 The Lanczos scale filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`scale`**: A `float` representing the scaling factor used on the image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber). Values less than `1.0` scale down the images. Values greater than `1.0` scale up the image.
+- **`aspectRatio`**: A `float` representing the additional horizontal scaling factor used on the image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in a smaller scaled image with high quality:
 
 ```swift

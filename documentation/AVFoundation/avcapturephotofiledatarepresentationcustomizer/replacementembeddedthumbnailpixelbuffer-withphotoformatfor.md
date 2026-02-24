@@ -27,8 +27,8 @@ This callback is optional. If your delegate doesn’t implement this callback, t
 
 ## Parameters
 
-- `replacementEmbeddedThumbnailPhotoFormatOut`: A pointer to a dictionary of keys and values from  .  If you pass a non-nil dictionary,   is required, with   and   keys optional.
-- `photo`: The calling instance of   whose file metadata you’re modifying.
+- `replacementEmbeddedThumbnailPhotoFormatOut`: A pointer to a dictionary of keys and values from `AVFoundation/AVVideoSettings.h`.  If you pass a non-nil dictionary, [`AVVideoCodecKey`](avvideocodeckey.md) is required, with `width` and `height` keys optional.
+- `photo`: The calling instance of [`AVCapturePhoto`](avcapturephoto.md) whose file metadata you’re modifying.
 
 ## See Also
 

@@ -21,9 +21,15 @@ The handler is called whenever the display stream has updated content to process
 
 The handler receives the following parameters:
 
+- **status**: Describes the kind of update being passed to the handler. See [`CGDisplayStreamFrameStatus`](cgdisplaystreamframestatus.md).
+- **displayTime**: The mach absolute time when the event occurred. For a frame event, this is when the frame was displayed by the window server.
+- **frameSurface**: An `IOSurface` object that contains the pixel data. May be `NULL` in some cases.
+
 If you need to maintain a reference to the surface beyond the lifetime of the handler call, you must call the [`CFRetain`](https://developer.apple.com/documentation/CoreFoundation/CFRetain) function to retain the surface and the [`IOSurfaceIncrementUseCount(_:)`](https://developer.apple.com/documentation/IOSurface/IOSurfaceIncrementUseCount(_:)) function to let the display stream know that the frame is not ready for re-use. Once you are finished using the surface you must call the [`IOSurfaceDecrementUseCount(_:)`](https://developer.apple.com/documentation/IOSurface/IOSurfaceDecrementUseCount(_:)) function and then call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function. If you are maintaining a cache of information about the surface (such as a GL texture object created from the surface’s contents), you must not call release it until after you remove it from your cache.
 
 You can not depend on the set of surfaces being used by the display stream as being static, so you should remove surfaces from the cache when they haven’t been re-used in a while.
+
+- **updateRef**: A [`CGDisplayStreamUpdate`](cgdisplaystreamupdate.md) reference that holds the update metadata for the current frame.
 
 If you need to hold onto the metadata beyond the lifetime of the handler call, you must call the [`CFRetain`](https://developer.apple.com/documentation/CoreFoundation/CFRetain) function on the update reference before the end of the handler. When you are finished with the update, call the call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function.
 

@@ -36,7 +36,7 @@ The system may return age ranges that override the age gates you specify based o
 - `threshold1`: The primary minimum age requirement for your app.
 - `threshold2`: An optional second age threshold for additional content tiers.
 - `threshold3`: An optional third age threshold for further content differentiation.
-- `viewController`: The view controller that anchors the system UI presentation. The system UI   appears modally over this view controller.
+- `viewController`: The view controller that anchors the system UI presentation. The system UI appears modally over this view controller.
 
 ## See Also
 

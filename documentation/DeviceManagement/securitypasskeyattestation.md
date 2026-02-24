@@ -47,6 +47,12 @@ Specify `com.apple.configuration.security.passkey.attestation` as the declaratio
 }
 ```
 
+## Properties
+
+- `AttestationIdentityAssetReference` (string) *(required)*: The identifier of an asset declaration that contains the identity to install and use for passkey attestation.
+- `AttestationIdentityKeyIsExtractable` (boolean): If `true`, the private key for the attestation identity is extractable in the keychain.
+- `RelyingParties` ([string]) *(required)*: An array of the relying parties to allow enterprise attestation.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

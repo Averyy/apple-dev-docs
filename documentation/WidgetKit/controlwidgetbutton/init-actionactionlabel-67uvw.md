@@ -39,7 +39,7 @@ The example above produces a control button that appears in Control Center with 
 
 ## Parameters
 
-- `titleKey`: The key to a localized string to display as the title of   the button.
+- `titleKey`: The key to a localized string to display as the title of the button.
 - `action`: The action your button performs when pressed.
 - `actionLabel`: A view that is rendered when the button’s action is performed.
 

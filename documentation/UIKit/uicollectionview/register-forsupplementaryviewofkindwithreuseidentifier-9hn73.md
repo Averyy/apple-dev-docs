@@ -26,9 +26,9 @@ If you previously registered a class or nib file with the same element kind and 
 
 ## Parameters
 
-- `nib`: The nib object containing the view object. The nib file must contain only one top-level object and that object must be of the type  .
-- `kind`: The kind of supplementary view to create. The layout defines the types of supplementary views it supports. The value of this string may correspond to one of the predefined kind strings or to a custom string that the layout added to support a new type of supplementary view. This parameter must not be  .
-- `identifier`: The reuse identifier to associate with the specified nib file. This parameter must not be   and must not be an empty string.
+- `nib`: The nib object containing the view object. The nib file must contain only one top-level object and that object must be of the type [`UICollectionReusableView`](uicollectionreusableview.md).
+- `kind`: The kind of supplementary view to create. The layout defines the types of supplementary views it supports. The value of this string may correspond to one of the predefined kind strings or to a custom string that the layout added to support a new type of supplementary view. This parameter must not be `nil`.
+- `identifier`: The reuse identifier to associate with the specified nib file. This parameter must not be `nil` and must not be an empty string.
 
 ## See Also
 

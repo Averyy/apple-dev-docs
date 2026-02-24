@@ -32,9 +32,9 @@ When the returned array contains an entry that doesn’t have a corresponding ta
 ## Parameters
 
 - `range`: The range from which to return tags.
-- `unit`: The linguistic unit. See   for possible values.
-- `scheme`: The tag scheme. See   for possible values.
-- `options`: The linguistic tagger options to use. See   for possible values.
+- `unit`: The linguistic unit. See [`NLTokenUnit`](nltokenunit.md) for possible values.
+- `scheme`: The tag scheme. See [`NLTagScheme`](nltagscheme.md) for possible values.
+- `options`: The linguistic tagger options to use. See [`NLTagger.Options`](nltagger/options.md) for possible values.
 
 ## See Also
 

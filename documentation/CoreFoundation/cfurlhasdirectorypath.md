@@ -26,7 +26,7 @@ func CFURLHasDirectoryPath(_ anURL: CFURL!) -> Bool
 
 ## Parameters
 
-- `anURL`: The   object to examine.
+- `anURL`: The `CFURL` object to examine.
 
 ## See Also
 

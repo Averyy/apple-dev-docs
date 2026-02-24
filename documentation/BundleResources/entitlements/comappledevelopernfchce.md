@@ -9,6 +9,12 @@ A Boolean value indicating whether your app can use the card session API.
 - iOS 17.4+
 - iPadOS 17.4+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 Your app must have this entitlement or else initializing a [`CardSession`](https://developer.apple.com/documentation/CoreNFC/CardSession) raises [`fatalError(_:file:line:)`](https://developer.apple.com/documentation/Swift/fatalError(_:file:line:)).

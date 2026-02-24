@@ -20,7 +20,7 @@ A new text selection.
 
 ## Parameters
 
-- `selectionGranularity`: One of the available   options.
+- `selectionGranularity`: One of the available [`NSTextSelection.Granularity`](nstextselection/granularity-swift.enum.md) options.
 - `textSelection`: The text selection that describes the text range of interest.
 
 ## See Also

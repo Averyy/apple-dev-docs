@@ -25,7 +25,7 @@ enum SkipTranslationAttribute
 
 ### Using attrubute properties
 - [AttributeScopes.TranslationAttributes.SkipTranslationAttribute.Value](attributescopes/translationattributes/skiptranslationattribute/value.md)
-  The type of value stored by this attribute.
+  A type that stores whether to exclude the associated text range from translation.
 - [static let name: String](attributescopes/translationattributes/skiptranslationattribute/name.md)
   The identifier of the attribute for serialization and identification.
 

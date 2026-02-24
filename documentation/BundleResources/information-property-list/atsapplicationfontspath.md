@@ -8,6 +8,10 @@ The location of a font file or folder of fonts in the bundle’s Resources folde
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 If you set this key, the system allows the app in the bundle to use the fonts at the specified path. Set this key to the path relative to the bundle’s `Resources` folder. For example, if the fonts are in `.../Resources/MyFonts`, set this key to `MyFonts/`.

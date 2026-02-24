@@ -25,7 +25,7 @@ init(query: BNNSMHAProjectionParameters, key: BNNSMHAProjectionParameters, value
 - `query`: A projection parameter structure that describes the query-related input parameters and projection.
 - `key`: A projection parameter structure that describes the key-related input parameters and projection.
 - `value`: A projection parameter structure that describes the value-related input parameters and projection.
-- `add_zero_attn`: A Boolean value that, if true, adds a row of zeroes to the projected   and   inputs to the calculation.
+- `add_zero_attn`: A Boolean value that, if true, adds a row of zeroes to the projected *K* and *V* inputs to the calculation.
 - `key_attn_bias`: A 2D tensor that’s added to the key as part of the attention calculation.
 - `value_attn_bias`: A 2D tensor that’s added to the value as part of the attention calculation.
 - `output`: A projection parameter structure that describes the output tensor and associated projection.

@@ -27,7 +27,7 @@ Some games naturally describe moves reversibly. For example, a Tic-Tac-Toe move 
 
 ## Parameters
 
-- `gameModelUpdate`: An instance of your custom class that implements the   protocol, describing a move to be revoked in your game.
+- `gameModelUpdate`: An instance of your custom class that implements the [`GKGameModelUpdate`](gkgamemodelupdate.md) protocol, describing a move to be revoked in your game.
 
 ## See Also
 

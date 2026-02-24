@@ -30,11 +30,11 @@ The input buffer (`cipherText`) can be the same as the output buffer (`plainText
 ## Parameters
 
 - `key`: Private key with which to decrypt the data.
-- `padding`: The type of padding used. Possible values are listed in  . Typically,   is used, which removes PKCS1 padding after decryption. If you specify  , the decrypted data is returned as-is.
+- `padding`: The type of padding used. Possible values are listed in [`SecPadding`](secpadding.md). Typically, [`PKCS1`](secpadding/pkcs1.md) is used, which removes PKCS1 padding after decryption. If you specify [`kSecPaddingNone`](secpadding/ksecpaddingnone.md), the decrypted data is returned as-is.
 - `cipherText`: The data to decrypt.
-- `cipherTextLen`: Length in bytes of the data in the   buffer. This must be less than or equal to the value returned by the   function.
+- `cipherTextLen`: Length in bytes of the data in the `cipherText` buffer. This must be less than or equal to the value returned by the [`SecKeyGetBlockSize(_:)`](seckeygetblocksize(_:).md) function.
 - `plainText`: On return, the decrypted text.
-- `plainTextLen`: On entry, the size of the buffer provided in the   parameter. On return, the amount of data actually placed in the buffer.
+- `plainTextLen`: On entry, the size of the buffer provided in the `plainText` parameter. On return, the amount of data actually placed in the buffer.
 
 
 ---

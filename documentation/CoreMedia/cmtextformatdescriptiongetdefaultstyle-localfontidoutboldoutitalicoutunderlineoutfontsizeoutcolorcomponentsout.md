@@ -26,13 +26,13 @@ A result code. Returns `noErr` if Successful.
 
 ## Parameters
 
-- `desc`:   being interrogated.
-- `localFontIDOut`: Font number, local to the FormatDescription. May be  .
-- `boldOut`: Returned true if style includes Bold. May be  .
-- `italicOut`: On output, returns true if style includes Italic. May be  .
-- `underlineOut`: On output, returns true if style includes Underline. May be  .
-- `fontSizeOut`: FontSize in points. May be  .
-- `colorComponentsOut`: Color components in order red, green, blue, and alpha. May be  .
+- `desc`: `CMFormatDescription` being interrogated.
+- `localFontIDOut`: Font number, local to the FormatDescription. May be `NULL`.
+- `boldOut`: Returned true if style includes Bold. May be `NULL`.
+- `italicOut`: On output, returns true if style includes Italic. May be `NULL`.
+- `underlineOut`: On output, returns true if style includes Underline. May be `NULL`.
+- `fontSizeOut`: FontSize in points. May be `NULL`.
+- `colorComponentsOut`: Color components in order red, green, blue, and alpha. May be `NULL`.
 
 ## See Also
 

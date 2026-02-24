@@ -24,8 +24,8 @@ Typically, you register your items when initializing your collection view interf
 
 ## Parameters
 
-- `itemClass`: A class to use for creating items. The class must be descended from  . Specify   to unregister a previously registered class or nib file.
-- `identifier`: The string that identifies the type of item. You use this string later when requesting new items and it must be unique among the other registered item and view classes of this collection view. This parameter must not be an empty string or  .
+- `itemClass`: A class to use for creating items. The class must be descended from [`NSCollectionViewItem`](nscollectionviewitem.md). Specify `nil` to unregister a previously registered class or nib file.
+- `identifier`: The string that identifies the type of item. You use this string later when requesting new items and it must be unique among the other registered item and view classes of this collection view. This parameter must not be an empty string or `nil`.
 
 ## See Also
 

@@ -24,7 +24,7 @@ A result code. See [`Secure Transport Result Codes`](secure-transport-result-cod
 ## Parameters
 
 - `ctx`: An SSL session context reference.
-- `peerNameLen`: The length of the peer name, as retrieved by calling the   function.
+- `peerNameLen`: The length of the peer name, as retrieved by calling the [`SSLCopyRequestedPeerName(_:_:_:)`](sslcopyrequestedpeername(_:_:_:).md) function.
 
 
 ---

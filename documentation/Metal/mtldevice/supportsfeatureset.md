@@ -22,7 +22,7 @@ func supportsFeatureSet(_ featureSet: MTLFeatureSet) -> Bool
 
 ## Parameters
 
-- `featureSet`: An   instance.
+- `featureSet`: An [`MTLFeatureSet`](mtlfeatureset.md) instance.
 
 ## See Also
 

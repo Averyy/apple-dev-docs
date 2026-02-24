@@ -21,9 +21,9 @@ Use this component when you want to present a modal that is anchored to an entit
 
 ## Parameters
 
-- `isPresented`: A binding to a Boolean value that determines whether   to present the content.
-- `configuration`: A configuration that specifies the modality,   appearance, and behavior of the presentation.
-- `content`: The SwiftUI view hierarchy that you want to present with   the component.
+- `isPresented`: A binding to a Boolean value that determines whether to present the content.
+- `configuration`: A configuration that specifies the modality, appearance, and behavior of the presentation.
+- `content`: The SwiftUI view hierarchy that you want to present with the component.
 
 
 ---

@@ -20,7 +20,7 @@ init(isExpanded: Binding<Bool>, @ViewBuilder content: @escaping () -> Content, @
 
 ## Parameters
 
-- `isExpanded`: A binding to a Boolean value that determines the group’s   expansion state (expanded or collapsed).
+- `isExpanded`: A binding to a Boolean value that determines the group’s expansion state (expanded or collapsed).
 - `content`: The content shown when the disclosure group expands.
 - `label`: A view that describes the content of the disclosure group.
 

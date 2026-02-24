@@ -27,7 +27,7 @@ When this method is invoked, parsing is stopped. For further information about t
 ## Parameters
 
 - `parser`: A parser object.
-- `parseError`: An   object describing the parsing error that occurred.
+- `parseError`: An [`NSError`](nserror.md) object describing the parsing error that occurred.
 
 ## See Also
 

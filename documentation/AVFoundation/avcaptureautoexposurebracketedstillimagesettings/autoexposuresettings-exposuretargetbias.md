@@ -23,7 +23,7 @@ An initialized `AVCaptureAutoExposureBracketedStillImageSettings` instance.
 
 ## Parameters
 
-- `exposureTargetBias`: The exposure target bias. Pass   to leave the   unchanged for this image.
+- `exposureTargetBias`: The exposure target bias. Pass `AVCaptureExposureTargetBiasCurrent` to leave the [`exposureTargetBias`](avcaptureautoexposurebracketedstillimagesettings/exposuretargetbias.md) unchanged for this image.
 
 
 ---

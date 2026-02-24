@@ -21,9 +21,9 @@ If neither `port` nor `host` is properly specified, no socket connection is made
 ## Parameters
 
 - `host`: The host to which to connect.
-- `port`: The port to connect to on  .
-- `inputStream`: Upon return, contains the input stream. If   is passed, the stream object is not created.
-- `outputStream`: Upon return, contains the output stream. If   is passed, the stream object is not created.
+- `port`: The port to connect to on `host`.
+- `inputStream`: Upon return, contains the input stream. If `nil` is passed, the stream object is not created.
+- `outputStream`: Upon return, contains the output stream. If `nil` is passed, the stream object is not created.
 
 ## See Also
 

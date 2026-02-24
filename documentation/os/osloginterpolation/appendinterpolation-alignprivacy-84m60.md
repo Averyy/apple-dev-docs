@@ -26,7 +26,7 @@ Don’t call this function directly. The system calls it automatically when inte
 
 ## Parameters
 
-- `value`: An item that conforms to the   protocol.
+- `value`: An item that conforms to the [`CustomStringConvertible`](https://developer.apple.com/documentation/Swift/CustomStringConvertible) protocol.
 - `align`: The alignment to apply to the string. Use this parameter to specify the width of the column containing the data, and the alignment of the data within that column. If you don’t specify this parameter, the system doesn’t align the value.
 - `privacy`: The privacy level of the information. If you don’t specify this parameter, the system uses the default rules to determine whether to show the information.
 

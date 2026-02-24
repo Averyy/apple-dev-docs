@@ -23,13 +23,17 @@ final class SystemLanguageModel
 - [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
 - [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
 - [Loading and using a custom adapter with Foundation Models](loading-and-using-a-custom-adapter-with-foundation-models.md)
-- [Updating prompts for new model versions](updating-prompts-for-new-model-versions.md)
 
 #### Overview
 
-The `SystemLanguageModel` refers to the on-device text foundation model that powers Apple Intelligence. Use [`default`](systemlanguagemodel/default.md) to access the base version of the model and perform general-purpose text generation tasks. To access a specialized version of the model, initialize the model with [`SystemLanguageModel.UseCase`](systemlanguagemodel/usecase.md) to perform tasks like [`contentTagging`](systemlanguagemodel/usecase/contenttagging.md).
+The `SystemLanguageModel` refers to the on-device text foundation model that powers Apple Intelligence. Use [`default`](systemlanguagemodel/default.md) to access the base version of the model and perform general-purpose text generation tasks. To access a specialized version of the model, initialize the model with [`SystemLanguageModel.UseCase`](systemlanguagemodel/usecase.md) to perform tasks like [`contentTagging`](systemlanguagemodel/usecase/contenttagging.md). Apple will periodically update `SystemLanguageModel` in routine OS updates to improve the on-device model’s abilities and performance. Currently there are 2 model versions that align with:
 
-Verify the model availability before you use the model. Model availability depends on device factors like:
+- iOS, iPadOS, macOS, and visionOS **26.0 - 26.3**
+- iOS, iPadOS, macOS, visionOS **26.4**
+
+To better understand the impact of model version on your app, see the guide [`Updating prompts for new model versions`](updating-prompts-for-new-model-versions.md).
+
+Before you use the model, you’ll need to verify its availability. Model availability depends on device factors like:
 
 - The device must support Apple Intelligence.
 - Apple Intelligence must be turned on in Settings.
@@ -87,13 +91,9 @@ struct GenerativeView: View {
 ### Accessing the context size
 - [var contextSize: Int](systemlanguagemodel/contextsize.md)
   Returns the maximum context size (in tokens) supported by the model.
-### Getting token usage information
-- [func tokenUsage(for:)](systemlanguagemodel/tokenusage(for:).md)
-  Returns token usage information for the specified prompt.
-- [func tokenUsage(for: Instructions, tools: [any Tool]) async throws -> SystemLanguageModel.TokenUsage](systemlanguagemodel/tokenusage(for:tools:).md)
-  Returns token usage information for the specified instructions and tools.
-- [SystemLanguageModel.TokenUsage](systemlanguagemodel/tokenusage.md)
-  Token usage information for a prompt or transcript.
+### Getting the token count
+- [func tokenCount(for:)](systemlanguagemodel/tokencount(for:).md)
+  Returns the token count for the specified instructions.
 ### Retrieving the supported languages
 - [var supportedLanguages: Set<Locale.Language>](systemlanguagemodel/supportedlanguages.md)
   Languages that the model supports.

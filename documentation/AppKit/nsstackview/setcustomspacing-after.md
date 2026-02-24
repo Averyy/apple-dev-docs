@@ -24,8 +24,8 @@ A stack view retains custom spacing across layout updates. Custom spacing for a 
 
 ## Parameters
 
-- `spacing`: Default value is  , which indicates that the view does not use custom spacing.
-- `view`: The view whose trailing spacing you are setting.
+- `spacing`: The custom trailing space to use between the `aView` view and the one that follows it, in points. Default value is [`useDefaultSpacing`](nsstackview/usedefaultspacing.md), which indicates that the view does not use custom spacing.
+- `view`: The view whose trailing spacing you are setting. > ❗ **Important**:  If you attempt to set custom spacing for a view that is not in the stack view, the system raises an exception.
 
 ## See Also
 

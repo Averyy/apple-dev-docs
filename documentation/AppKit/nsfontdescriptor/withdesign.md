@@ -20,7 +20,7 @@ The new font descriptor.
 
 ## Parameters
 
-- `design`: The replacement design style for the font. For a list of possible values, see  .
+- `design`: The replacement design style for the font. For a list of possible values, see `UIFontDescriptor.SystemDesign`.
 
 ## See Also
 

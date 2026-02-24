@@ -26,9 +26,9 @@ The `value` parameter is assigned to the index `idx`, and all values in `theArra
 
 ## Parameters
 
-- `theArray`: The array into which   is inserted. If   is a fixed-capacity array and it is full before this operation, the behavior is undefined.
-- `idx`: The index at which to insert  . The index must be in the range   to   inclusive, where   is the count of   before the operation. If the index is the same as the count of  , this function has the same effect as  .
-- `value`: The value to insert into  . The value is retained by   using the retain callback provided when   was created. If   is not of the type expected by the retain callback, the behavior is undefined.
+- `theArray`: The array into which `value` is inserted. If `theArray` is a fixed-capacity array and it is full before this operation, the behavior is undefined.
+- `idx`: The index at which to insert `value`. The index must be in the range `0` to `N` inclusive, where `N` is the count of `theArray` before the operation. If the index is the same as the count of `theArray`, this function has the same effect as [`CFArrayAppendValue(_:_:)`](cfarrayappendvalue(_:_:).md).
+- `value`: The value to insert into `theArray`. The value is retained by `theArray` using the retain callback provided when `theArray` was created. If `value` is not of the type expected by the retain callback, the behavior is undefined.
 
 ## See Also
 

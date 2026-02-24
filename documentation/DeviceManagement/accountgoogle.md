@@ -46,6 +46,11 @@ Specify `com.apple.configuration.account.google` as the declaration type.
 }
 ```
 
+## Properties
+
+- `UserIdentityAssetReference` (string) *(required)*: The identifier of an asset declaration that contains the user identity for this Google account. Set the corresponding asset type to `UserIdentity` and ensure that it contains an `EmailAddress` key that specifies the full Google email address for the account.
+- `VisibleName` (string): The name that apps show to the user for this Google account. If not present, the system generates a suitable default.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

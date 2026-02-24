@@ -28,7 +28,7 @@ An array that contains one [`CFDictionary`](https://developer.apple.com/document
 
 - `collection`: The font collection reference.
 - `attributeNames`: The attributes to retrieve for each descriptor in the collection.
-- `options`: Options to alter the return value. With  , the values appear in the same order as the results from  . Setting   removes duplicate values. Setting   sorts the values in standard UI order.
+- `options`: Options to alter the return value. With [`kCTFontCollectionCopyDefaultOptions`](ctfontcollectioncopyoptions/kctfontcollectioncopydefaultoptions.md), the values appear in the same order as the results from [`CTFontCollectionCreateMatchingFontDescriptors(_:)`](ctfontcollectioncreatematchingfontdescriptors(_:).md). Setting [`unique`](ctfontcollectioncopyoptions/unique.md) removes duplicate values. Setting [`standardSort`](ctfontcollectioncopyoptions/standardsort.md) sorts the values in standard UI order.
 
 ## See Also
 

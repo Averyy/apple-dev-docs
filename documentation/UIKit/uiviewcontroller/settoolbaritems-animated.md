@@ -24,7 +24,7 @@ View controllers that are managed by a navigation controller can use this method
 ## Parameters
 
 - `toolbarItems`: The toolbar items to display in a built-in toolbar.
-- `animated`: If  , animate the change of items in the toolbar.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), animate the change of items in the toolbar.
 
 ## See Also
 

@@ -29,6 +29,10 @@ This method generates a Code 128 barcode as an image. Code 128 is a high-density
 
 The Code 128 barcode filter uses the following properties:
 
+- **`message`**: [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) containing the message to encode in the Code 128 barcode.
+- **`quietSpace`**: [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing the number of empty white pixels that should surround the barcode.
+- **`barcodeHeight`**: [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing the height of the generated barcode in pixels.
+
 The following code creates a filter that generates a Code 128 barcode:
 
 ```swift

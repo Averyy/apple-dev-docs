@@ -28,7 +28,7 @@ The rectangle of interest for an [`AVCaptureMetadataOutput`](avcapturemetadataou
 
 ## Parameters
 
-- `rectInMetadataOutputCoordinates`: A rectangle in the   coordinate system.
+- `rectInMetadataOutputCoordinates`: A rectangle in the [`AVCaptureMetadataOutput`](avcapturemetadataoutput.md) coordinate system.
 
 ## See Also
 

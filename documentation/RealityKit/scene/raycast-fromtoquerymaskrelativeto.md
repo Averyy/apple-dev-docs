@@ -37,11 +37,11 @@ The following are some details to keep in mind.
 
 ## Parameters
 
-- `startPosition`: The start position of the ray relative to   .
-- `endPosition`: The end position of the ray relative to   .
+- `startPosition`: The start position of the ray relative to `referenceEntity`.
+- `endPosition`: The end position of the ray relative to `referenceEntity`.
 - `query`: A query type.
-- `mask`: A collision mask that you can use to prevent collisions with   certain objects.
-- `referenceEntity`: An entity that defines the frame of reference. The   method returns results relative to this entity. Set to   to use the   world space origin  .
+- `mask`: A collision mask that you can use to prevent collisions with certain objects.
+- `referenceEntity`: An entity that defines the frame of reference. The method returns results relative to this entity. Set to `nil` to use the world space origin `(0, 0, 0)`.
 
 ## See Also
 

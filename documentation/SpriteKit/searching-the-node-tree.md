@@ -17,6 +17,22 @@ The node name usually serves two purposes in your app:
 
 A node’s [`name`](sknode/name.md) property should be an alphanumeric string without any punctuation. The following code shows how you might name three different nodes to distinguish them from each other.
 
+**Swift**:
+
+```swift
+playerNode.name = "player"
+monsterNode1.name = "goblin"
+monsterNode2.name = "ogre"
+```
+
+**Obj-C**:
+
+```objc
+playerNode.name = @"player";
+monsterNode1.name = @"goblin";
+monsterNode2.name = @"ogre";
+```
+
 When you name nodes in the tree, decide whether those names will be unique. If a node’s name is unique, you should never include more than one node with that name in the scene tree. On the other hand, if a node name is not unique within your app, it might represent a collection of related nodes. For example, in the code above, there are probably multiple goblins within the game, and you might want to identify them all with the same name. But the player might be a unique node within the game.
 
 ##### Use a Simple Search
@@ -28,6 +44,23 @@ The [`SKNode`](sknode.md) class implements the following methods for searching t
 - The [`subscript(_:)`](sknode/subscript(_:).md) method returns an array of nodes that match a particular name.
 
 The following code shows how you might create a method on your scene class to find the player node. You might use a method like this inside your code to load and prepare a scene.
+
+**Swift**:
+
+```swift
+var playerNode: SKNode? {
+    return childNode(withName: "player")
+}
+```
+
+**Obj-C**:
+
+```objc
+- (SKNode *)playerNode
+{
+    return [self childNodeWithName:@"player"];
+}
+```
 
 When this method is called on the scene, the scene searches its children (and only its children) for a node whose `name` property matches the search string, then returns the node. When specifying a search string, you can either specify the name of the node or a class name. For example, if you create your own subclass for the player node and name it `PlayerSprite`, then you could specify `PlayerSprite` as the search string instead of `player`; the same node would be returned.
 

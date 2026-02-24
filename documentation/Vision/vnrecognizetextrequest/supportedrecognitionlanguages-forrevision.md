@@ -33,7 +33,7 @@ A language supported in one recognition level may not be available in another re
 
 ## Parameters
 
-- `recognitionLevel`: The level of recognition to prioritize. Set this level to  to prioritize speed over accuracy, and to   to prioritize accuracy at the expense of speed.
+- `recognitionLevel`: The level of recognition to prioritize. Set this level to [`VNRequestTextRecognitionLevel.fast`](vnrequesttextrecognitionlevel/fast.md)to prioritize speed over accuracy, and to [`VNRequestTextRecognitionLevel.accurate`](vnrequesttextrecognitionlevel/accurate.md) to prioritize accuracy at the expense of speed.
 - `requestRevision`: The revision of the text recognition algorithm for the Vision framework to use.
 
 ## See Also

@@ -34,7 +34,7 @@ If it can detect the source language of the text, it checks for necessary langua
 ## Parameters
 
 - `text`: A sample string of text representing the source language you want to translation from.
-- `target`: The target language you want to translate content into. When set to  ,   the system picks an appropriate target based on the person’s preferred languages and returns   the status for those languages.
+- `target`: The target language you want to translate content into. When set to `nil`, the system picks an appropriate target based on the person’s preferred languages and returns the status for those languages.
 
 ## See Also
 

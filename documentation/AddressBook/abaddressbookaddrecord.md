@@ -22,9 +22,9 @@ func ABAddressBookAddRecord(_ addressBook: ABAddressBook!, _ record: ABRecord!, 
 
 ## Parameters
 
-- `addressBook`: The address book to which   is added.
-- `record`: The record to add to  .
-- `error`: On error, contains error information. See  .
+- `addressBook`: The address book to which `record` is added.
+- `record`: The record to add to `addressBook`.
+- `error`: On error, contains error information. See [`Address Book Errors`](address-book-errors.md).
 
 ## See Also
 

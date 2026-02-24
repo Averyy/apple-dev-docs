@@ -29,7 +29,7 @@ To specify that this event should fire before the significant event, supply a da
 
 ## Parameters
 
-- `significantEvent`: The significant event for this trigger, for example  .
+- `significantEvent`: The significant event for this trigger, for example [`sunrise`](hmsignificantevent/sunrise.md).
 - `offset`: A date components instance that represents the offset from the significant event that this event fires.
 
 

@@ -18,6 +18,12 @@ typedef struct QTVRTrackRefEntry {
 } QTVRTrackRefEntry;
 ```
 
+**Field descriptions**
+
+- **`trackRefType`**: The track reference type.
+- **`trackResolution`**: The track resolution.
+- **`trackRefIndex`**: The index of the track reference.
+
 The number of entries in the track reference array atom is determined by dividing the size of the atom by `sizeof` (`QTVRTrackRefEntry`).
 
 `kQTVRPreviewTrackRes` is a special value for the `trackResolution` field in the `QTVRTrackRefEntry` structure. This is used to indicate the presence of a special preview image track.

@@ -26,7 +26,7 @@ An initialized ordered set with the contents of array. The returned ordered set 
 
 ## Parameters
 
-- `array`: If the same object appears more than once in array, it is represented only once in the returned ordered set.
+- `array`: An array of objects to add to the new set. If the same object appears more than once in array, it is represented only once in the returned ordered set.
 
 ## See Also
 

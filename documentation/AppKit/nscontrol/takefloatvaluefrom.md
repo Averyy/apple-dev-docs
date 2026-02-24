@@ -20,7 +20,7 @@ You can use this method to link action messages between controls. It permits one
 
 ## Parameters
 
-- `sender`: The object from which to take the value. This object must respond to the   property.
+- `sender`: The object from which to take the value. This object must respond to the [`floatValue`](nscontrol/floatvalue.md) property.
 
 ## See Also
 

@@ -28,6 +28,33 @@ Using a text attachment attribute, you can add an image to a maneuver instructio
 
 Listing 1.
 
+**Swift**:
+
+```swift
+let instruction = NSMutableAttributedString(string: "Turn right on Apple Park Way")
+
+// Attach an image.
+let image = UIImage(systemName: "arrow.turn.up.right")!
+let attachment = NSTextAttachment(image: image)
+let container = NSAttributedString(attachment: attachment)
+
+instruction.append(container)
+```
+
+**Obj-C**:
+
+```objc
+NSMutableAttributedString *instruction = [[NSMutableAttributedString alloc]
+                                              initWithString:@"Turn right on Apple Park Way"];
+
+// Attach an image.
+UIImage *image = [UIImage systemImageNamed:@"arrow.turn.up.right"];
+NSTextAttachment *attachment = [NSTextAttachment textAttachmentWithImage:image];
+NSAttributedString *container = [NSAttributedString attributedStringWithAttachment:attachment];
+    
+[instruction appendAttributedString:container];
+```
+
 ## See Also
 
 - [var attributedInstructionVariants: [NSAttributedString]](cpmaneuver/attributedinstructionvariants.md)

@@ -61,7 +61,7 @@ If you don’t need a preview, use [`contextMenu(menuItems:)`](view/contextmenu(
 
 ## Parameters
 
-- `menuItems`: A closure that produces the menu’s contents. You can   deactivate the context menu by returning nothing from the closure.
+- `menuItems`: A closure that produces the menu’s contents. You can deactivate the context menu by returning nothing from the closure.
 - `preview`: A view that the system displays along with the menu.
 
 ## See Also

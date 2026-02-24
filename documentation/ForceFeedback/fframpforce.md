@@ -17,7 +17,7 @@ struct FFRAMPFORCE
 
 #### Overview
 
-A pointer to a single FFRAMPFORCE structure for an effect is passed in the  member of the FFEFFECT structure.
+A pointer to a single FFRAMPFORCE structure for an effect is passed in the **lpvTypeSpecificParams** member of the FFEFFECT structure.
 
 The dwDuration for a ramp force effect cannot be FF_INFINITE.
 

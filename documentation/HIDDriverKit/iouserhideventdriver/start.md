@@ -27,7 +27,7 @@ Always call `super` early in your implementation of this method. This method cre
 
 ## Parameters
 
-- `provider`: The provider object that matches the current event driver. Cast this object to the class you expect. The system retains this object for the duration of your   method. The system continues to retain the object if your driver starts successfully, releasing it only after calling your driver’s   method.
+- `provider`: The provider object that matches the current event driver. Cast this object to the class you expect. The system retains this object for the duration of your [`Start`](iouserhideventservice/start.md) method. The system continues to retain the object if your driver starts successfully, releasing it only after calling your driver’s [`Stop`](iouserhideventservice/stop.md) method.
 
 ## See Also
 

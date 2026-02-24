@@ -22,7 +22,7 @@ The layer is optional.
 
 ## Parameters
 
-- `aLayer`: A   instance.
+- `aLayer`: A `CALayer` instance.
 
 ## See Also
 

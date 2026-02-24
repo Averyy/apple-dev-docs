@@ -35,7 +35,7 @@ In macOS 10.4 and later, if there are multiple selections, this method acts on t
 ## Parameters
 
 - `affectedCharRange`: The range of characters affected by the proposed change.
-- `replacementString`: The characters that will replace those in  . If only text attributes are being changed,   is  .
+- `replacementString`: The characters that will replace those in `affectedCharRange`. If only text attributes are being changed, `replacementString` is `nil`.
 
 ## See Also
 

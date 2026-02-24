@@ -10,10 +10,10 @@ iPhone 15 Pro and Apple Vision Pro can capture spatial photos and videos, a new 
 
 Spatial photos and videos are stereo media with additional spatial metadata:
 
-- A  is a multi-image HEIC file containing a left-eye image and a right-eye image, a stereo pair group, plus spatial metadata.
-- A  is a QuickTime movie with a stereo MV-HEVC video track, plus spatial metadata.
+- A *spatial photo* is a multi-image HEIC file containing a left-eye image and a right-eye image, a stereo pair group, plus spatial metadata.
+- A *spatial video* is a QuickTime movie with a stereo MV-HEVC video track, plus spatial metadata.
 
-Add spatial metadata to stereo photos or videos created by your app to prompt Apple platforms to consider that media as  instead of just stereo. Doing so enables presentation of that media in two complementary viewing modes on Apple Vision Pro that provide alternate viewing methods for the same content:
+Add spatial metadata to stereo photos or videos created by your app to prompt Apple platforms to consider that media as *spatial* instead of just stereo. Doing so enables presentation of that media in two complementary viewing modes on Apple Vision Pro that provide alternate viewing methods for the same content:
 
 - By default, spatial photos and videos present in a window, with the stereoscopic content inset.
 - People can also choose to fully immerse themselves in a spatial photo or video by tapping the Immersive button to present the stereo scene at real-world scale.
@@ -39,15 +39,15 @@ For visionOS to consider a stereo photo or video as spatial, the media must incl
 - The baseline of the cameras
 - The projection of the captured images
 
-The  defines how much of the scene in front of each camera is visible across the width of each image. The horizontal field of view must be the same for both cameras.
+The *horizontal field of view* defines how much of the scene in front of each camera is visible across the width of each image. The horizontal field of view must be the same for both cameras.
 
-The  defines how far apart the centers of the cameras were (also known as the ). Baselines that approximate the average distance between human eyes (64 mm) produce content that feels “real-world size” when viewed with immersive presentation. However, a wide range of baselines can produce compelling results. For example, the cameras used to capture spatial videos on iPhone 15 Pro have a baseline of 19.2 mm.
+The *baseline* defines how far apart the centers of the cameras were (also known as the *interaxial distance*). Baselines that approximate the average distance between human eyes (64 mm) produce content that feels “real-world size” when viewed with immersive presentation. However, a wide range of baselines can produce compelling results. For example, the cameras used to capture spatial videos on iPhone 15 Pro have a baseline of 19.2 mm.
 
-The  defines the relationship between objects in the world and pixels in the image. Spatial photos and videos always use a rectilinear projection.
+The *projection* defines the relationship between objects in the world and pixels in the image. Spatial photos and videos always use a rectilinear projection.
 
 ##### Choose a Horizontal Disparity Adjustment
 
-Spatial media must also define a  (also known as a ). This modifies the perceived stereo depth of the scene by shifting the left- and right-eye images horizontally when you present them in a window in visionOS. As the two images shift horizontally, the perceived 3D scene shifts in depth along the z-axis, with a negative value making content appear closer, and a positive value pushing it farther away.
+Spatial media must also define a *horizontal disparity adjustment* (also known as a *convergence adjustment*). This modifies the perceived stereo depth of the scene by shifting the left- and right-eye images horizontally when you present them in a window in visionOS. As the two images shift horizontally, the perceived 3D scene shifts in depth along the z-axis, with a negative value making content appear closer, and a positive value pushing it farther away.
 
 Horizontal disparity adjustment is expressed as a positive or negative fraction of the image’s width. A positive value pushes the left image to the left, and the right image to the right; a negative value pushes them in the opposite direction. Each image is shifted by half of the provided adjustment value, so a positive adjustment of 2 percent moves the left image 1 percent to the left, and the right image 1 percent to the right.
 

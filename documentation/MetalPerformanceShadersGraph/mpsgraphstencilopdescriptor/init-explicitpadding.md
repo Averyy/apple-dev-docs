@@ -25,7 +25,7 @@ A valid MPSGraphStencilOpDescriptor object
 
 ## Parameters
 
-- `explicitPadding`: See   property.
+- `explicitPadding`: See `explicitPadding` property.
 
 
 ---

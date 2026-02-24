@@ -28,7 +28,7 @@ UIKit calls this method when the user stops pressing one or more buttons. Use th
 
 ## Parameters
 
-- `presses`: A set of   instances that represent the buttons that the user is no longer pressing. The phase of each press is set to  .
+- `presses`: A set of [`UIPress`](uipress.md) instances that represent the buttons that the user is no longer pressing. The phase of each press is set to [`UIPress.Phase.ended`](uipress/phase-swift.enum/ended.md).
 - `event`: The event to which the presses belong.
 
 ## See Also

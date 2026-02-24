@@ -20,7 +20,7 @@ func setScopeBarButtonTitleTextAttributes(_ attributes: [NSAttributedString.Key 
 
 ## Parameters
 
-- `attributes`: You may specify the font, text color, text shadow color, and text shadow offset, using the keys found in NSString UIKit Additions Reference.
+- `attributes`: A dictionary containing key-value pairs specifying the text attributes to use for `state`. You may specify the font, text color, text shadow color, and text shadow offset, using the keys found in NSString UIKit Additions Reference.
 - `state`: A control state.
 
 ## See Also

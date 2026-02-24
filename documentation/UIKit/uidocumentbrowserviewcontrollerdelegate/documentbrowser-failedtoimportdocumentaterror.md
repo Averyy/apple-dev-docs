@@ -21,7 +21,7 @@ optional func documentBrowser(_ controller: UIDocumentBrowserViewController, fai
 
 - `controller`: The document browser that attempted the import action.
 - `documentURL`: The document’s original URL.
-- `error`: An object describing the error, or  .
+- `error`: An object describing the error, or `nil`.
 
 ## See Also
 

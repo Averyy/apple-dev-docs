@@ -26,7 +26,7 @@ A new typed tag containing the pixel format represented by `value`.
 
 ## Parameters
 
-- `value`: The pixel format for this tag. Use a constant from the framework that renders video content. For example, rendering to a   should use a constant from  .
+- `value`: The pixel format for this tag. Use a constant from the framework that renders video content. For example, rendering to a [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) should use a constant from [`Pixel Format Identifiers`](https://developer.apple.com/documentation/CoreVideo/pixel-format-identifiers).
 
 ## See Also
 

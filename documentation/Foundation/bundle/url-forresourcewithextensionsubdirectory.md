@@ -30,9 +30,9 @@ For details on how localized resources are found, read [`The Bundle Search Patte
 
 ## Parameters
 
-- `name`: If you specify  , the method returns the first resource file it finds with the specified extension in that directory.
-- `ext`: If you specify an empty string or  , the extension is assumed not to exist and the file URL is the first file encountered that exactly matches  .
-- `subpath`: The path of a top-level bundle directory. This must be a valid path. For example, to specify the bundle directory for a Mac app, you might specify the path  .
+- `name`: The name of a resource file contained in the directory specified by `subpath`. If you specify `nil`, the method returns the first resource file it finds with the specified extension in that directory.
+- `ext`: The filename extension of the file to locate. If you specify an empty string or `nil`, the extension is assumed not to exist and the file URL is the first file encountered that exactly matches `name`.
+- `subpath`: The path of a top-level bundle directory. This must be a valid path. For example, to specify the bundle directory for a Mac app, you might specify the path `/Applications/MyApp.app`.
 
 ## See Also
 

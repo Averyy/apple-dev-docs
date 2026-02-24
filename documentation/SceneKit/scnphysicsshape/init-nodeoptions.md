@@ -32,8 +32,8 @@ The node used to create the physics shape need not be the same as the node whose
 
 ## Parameters
 
-- `node`: A node object. The node must contain an   object in its   property or have one or more child (or descendant) nodes that contain geometry.
-- `options`: A dictionary of options affecting the level of detail of the physics shape, or   to use default options. For applicable keys and their possible values, see  .
+- `node`: A node object. The node must contain an [`SCNGeometry`](scngeometry.md) object in its [`geometry`](scnnode/geometry.md) property or have one or more child (or descendant) nodes that contain geometry.
+- `options`: A dictionary of options affecting the level of detail of the physics shape, or `nil` to use default options. For applicable keys and their possible values, see `Shape Creation Options Keys`.
 
 ## See Also
 

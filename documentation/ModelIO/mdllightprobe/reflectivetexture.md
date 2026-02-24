@@ -21,7 +21,7 @@ var reflectiveTexture: MDLTexture? { get }
 
 #### Discussion
 
-A reflective texture is also known as an . A renderer can use this texture to create reflections and specular highlights on surfaces with metallic materials.
+A reflective texture is also known as an *environment map*. A renderer can use this texture to create reflections and specular highlights on surfaces with metallic materials.
 
 ## See Also
 

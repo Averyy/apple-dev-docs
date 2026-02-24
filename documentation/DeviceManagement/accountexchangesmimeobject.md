@@ -24,6 +24,11 @@ object AccountExchangeSMIMEObject
 - [object AccountExchangeSMIME_SigningObject](accountexchangesmime_signingobject.md)
   Settings for S/MIME signing.
 
+## Properties
+
+- `Encryption` (AccountExchangeSMIME_EncryptionObject): Settings for S/MIME encryption.
+- `Signing` (AccountExchangeSMIME_SigningObject): Settings for S/MIME signing.
+
 ## See Also
 
 - [object AccountExchangeOAuthObject](accountexchangeoauthobject.md)

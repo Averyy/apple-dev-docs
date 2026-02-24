@@ -22,7 +22,7 @@ func map<ReturnType>(_ transform: (XPCArray.IndexValuePair) throws -> ReturnType
 
 ## Parameters
 
-- `transform`: A mapping closure.   accepts an element of this sequence as its parameter and returns a transformed value of the same or of a different type.
+- `transform`: A mapping closure. `transform` accepts an element of this sequence as its parameter and returns a transformed value of the same or of a different type.
 
 
 ---

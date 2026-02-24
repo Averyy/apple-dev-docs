@@ -33,13 +33,14 @@ This method is called in two situations:
 
 If you do not implement this method, the session calls its delegate’s [`urlSession(_:task:didReceive:completionHandler:)`](urlsessiontaskdelegate/urlsession(_:task:didreceive:completionhandler:).md) method instead.
 
-> **Note**:  This method handles  the [`NSURLAuthenticationMethodNTLM`](nsurlauthenticationmethodntlm.md), [`NSURLAuthenticationMethodNegotiate`](nsurlauthenticationmethodnegotiate.md), [`NSURLAuthenticationMethodClientCertificate`](nsurlauthenticationmethodclientcertificate.md), and [`NSURLAuthenticationMethodServerTrust`](nsurlauthenticationmethodservertrust.md) authentication types. For all other authentication schemes, the session calls  the [`urlSession(_:task:didReceive:completionHandler:)`](urlsessiontaskdelegate/urlsession(_:task:didreceive:completionhandler:).md) method.
+> **Note**:  This method handles *only* the [`NSURLAuthenticationMethodNTLM`](nsurlauthenticationmethodntlm.md), [`NSURLAuthenticationMethodNegotiate`](nsurlauthenticationmethodnegotiate.md), [`NSURLAuthenticationMethodClientCertificate`](nsurlauthenticationmethodclientcertificate.md), and [`NSURLAuthenticationMethodServerTrust`](nsurlauthenticationmethodservertrust.md) authentication types. For all other authentication schemes, the session calls *only* the [`urlSession(_:task:didReceive:completionHandler:)`](urlsessiontaskdelegate/urlsession(_:task:didreceive:completionhandler:).md) method.
 
 ## Parameters
 
 - `session`: The session containing the task that requested authentication.
 - `challenge`: An object that contains the request for authentication.
-- `completionHandler`: A handler that your delegate method must call. This completion handler takes the following parameters::
+- `completionHandler`: A handler that your delegate method must call. This completion handler takes the following parameters:: - `disposition`—One of several constants that describes how the challenge should be handled.
+- `credential`—The credential that should be used for authentication if disposition is `NSURLSessionAuthChallengeUseCredential`, otherwise `NULL`.
 
 ## See Also
 

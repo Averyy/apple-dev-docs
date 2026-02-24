@@ -30,7 +30,7 @@ If the dictionary you provide doesn’t have the requisite keyed values, the sys
 
 ## Parameters
 
-- `dictionaryRepresentation`: A dictionary representation of a time mapping that you previously created by calling the   function.
+- `dictionaryRepresentation`: A dictionary representation of a time mapping that you previously created by calling the [`CMTimeMappingCopyAsDictionary(_:allocator:)`](cmtimemappingcopyasdictionary(_:allocator:).md) function.
 
 ## See Also
 

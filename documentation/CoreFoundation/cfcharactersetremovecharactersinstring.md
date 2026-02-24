@@ -23,7 +23,7 @@ func CFCharacterSetRemoveCharactersInString(_ theSet: CFMutableCharacterSet!, _ 
 ## Parameters
 
 - `theSet`: The character set to modify.
-- `theString`: A string containing the characters to remove from  .
+- `theString`: A string containing the characters to remove from `theSet`.
 
 ## See Also
 

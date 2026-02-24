@@ -22,7 +22,7 @@ typealias CMSampleBufferInvalidateCallback = (CMSampleBuffer, UInt64) -> Void
 
 ## Parameters
 
-- `sbuf`: The   being invalidated.
+- `sbuf`: The `CMSampleBuffer` being invalidated.
 - `invalidateRefCon`: Reference constant provided when the callback was set up.
 
 

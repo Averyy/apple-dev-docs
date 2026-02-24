@@ -24,7 +24,7 @@ A new trait collection containing only the accessibility contrast trait.
 
 ## Parameters
 
-- `accessibilityContrast`: The accessibility contrast for the trait collection. For a list of possible values, see  .
+- `accessibilityContrast`: The accessibility contrast for the trait collection. For a list of possible values, see [`UIAccessibilityContrast`](uiaccessibilitycontrast.md).
 
 ## See Also
 

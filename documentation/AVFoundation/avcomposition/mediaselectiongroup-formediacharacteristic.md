@@ -32,7 +32,9 @@ You can call this method without blocking the current thread after you’ve asyn
 
 ## Parameters
 
-- `mediaCharacteristic`: Only  ,  , and   are currently supported.
+- `mediaCharacteristic`: A media characteristic for which to obtain the available media selection options. Only [`audible`](avmediacharacteristic/audible.md), [`visual`](avmediacharacteristic/visual.md), and [`legible`](avmediacharacteristic/legible.md) are currently supported. - Pass [`audible`](avmediacharacteristic/audible.md) to return the group of available options for audio media in various languages and for various purposes, such as descriptive audio.
+- Pass [`legible`](avmediacharacteristic/legible.md) to return the group of available options for subtitles in various languages and for various purposes.
+- Pass [`visual`](avmediacharacteristic/visual.md) to return the group of available options for video media.
 
 ## See Also
 

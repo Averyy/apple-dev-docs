@@ -24,8 +24,9 @@ A newly-created peek quick action.
 ## Parameters
 
 - `title`: The quick action’s title.
-- `style`: The quick action’s style. For a complete list of styles, see the   enumeration in  .
-- `handler`: A block that is called when the user selects the peek quick action. The block takes the following parameters:
+- `style`: The quick action’s style. For a complete list of styles, see the `UIPreviewActionStyle` enumeration in *UIPreviewActionItem Protocol Reference*.
+- `handler`: A block that is called when the user selects the peek quick action. The block takes the following parameters: - **action**: The peek quick action selected by the user.
+- **previewViewController**: The view controller displayed as the peek.
 
 ## See Also
 

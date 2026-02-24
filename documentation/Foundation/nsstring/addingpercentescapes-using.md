@@ -30,7 +30,7 @@ It may be difficult to use this function to “clean up” unescaped or partiall
 
 ## Parameters
 
-- `enc`: The encoding to use for the returned string. If you are uncertain of the correct encoding you should use  .
+- `enc`: The encoding to use for the returned string. If you are uncertain of the correct encoding you should use [`NSUTF8StringEncoding`](nsutf8stringencoding.md).
 
 ## See Also
 

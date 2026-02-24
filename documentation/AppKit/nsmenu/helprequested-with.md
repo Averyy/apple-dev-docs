@@ -24,7 +24,7 @@ In macOS 10.6 and later this method has no effect. This method may be deprecated
 
 ## Parameters
 
-- `eventPtr`: An   object representing the event associated with the help request.
+- `eventPtr`: An [`NSEvent`](nsevent.md) object representing the event associated with the help request.
 
 ## See Also
 

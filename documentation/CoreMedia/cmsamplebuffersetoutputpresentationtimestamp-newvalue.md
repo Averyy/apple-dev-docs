@@ -39,7 +39,7 @@ For general reversed playback `OutputPresentationTimeStamp` should be set to:
 ## Parameters
 
 - `sbuf`: The sample buffer being interrogated
-- `outputPresentationTimeStamp`: New value for  . Pass   to go back to the default calculation.
+- `outputPresentationTimeStamp`: New value for `OutputPresentationTimeStamp`. Pass `kCMTimeInvalid` to go back to the default calculation.
 
 ## See Also
 

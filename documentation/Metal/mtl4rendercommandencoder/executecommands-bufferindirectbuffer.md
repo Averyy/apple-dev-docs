@@ -30,8 +30,8 @@ Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of 
 
 ## Parameters
 
-- `indirectCommandBuffer`: A   instance that contains other commands   the current command runs.
-- `indirectRangeBuffer`: GPUAddress of a   instance with data that matches the layout of the    structure. This address requires 4-byte alignment.
+- `indirectCommandBuffer`: A [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance that contains other commands the current command runs.
+- `indirectRangeBuffer`: GPUAddress of a [`MTLBuffer`](mtlbuffer.md) instance with data that matches the layout of the [`MTLIndirectCommandBufferExecutionRange`](mtlindirectcommandbufferexecutionrange.md) structure. This address requires 4-byte alignment.
 
 ## See Also
 

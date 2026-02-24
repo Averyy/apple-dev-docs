@@ -23,9 +23,9 @@ If the item’s `bsdFlags` contain the `UF_COMPRESSED` flag, your file system re
 
 ## Parameters
 
-- `desiredAttributes`: A requested set of attributes to get. The implementation inspects the request’s   to determine which attributes to populate.
+- `desiredAttributes`: A requested set of attributes to get. The implementation inspects the request’s [`wantedAttributes`](fsitem/getattributesrequest/wantedattributes.md) to determine which attributes to populate.
 - `item`: The item to get attributes for.
-- `reply`: A block or closure to indicate success or failure. If getting attributes succeeds, pass an   with the requested attributes populated and a   error. If getting attributes fails, pass the relevant error as the second parameter; FSKit ignores any   in this case. For an   Swift implementation, there’s no reply handler; simply return the   or throw an error.
+- `reply`: A block or closure to indicate success or failure. If getting attributes succeeds, pass an [`FSItem.Attributes`](fsitem/attributes.md) with the requested attributes populated and a `nil` error. If getting attributes fails, pass the relevant error as the second parameter; FSKit ignores any [`FSItem.Attributes`](fsitem/attributes.md) in this case. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSItem.Attributes`](fsitem/attributes.md) or throw an error.
 
 ## See Also
 

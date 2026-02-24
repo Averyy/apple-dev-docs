@@ -44,9 +44,9 @@ To instead display a volume slider as an alert, use the functions described in [
 
 ##### Customizing the Volume Sliders Appearance
 
-The volume slider is a [`UISlider`](https://developer.apple.com/documentation/UIKit/UISlider) object. Sliders are always displayed as horizontal bars and an indicator, or , notes the current value of the slider, which the user can move to change the setting.
+The volume slider is a [`UISlider`](https://developer.apple.com/documentation/UIKit/UISlider) object. Sliders are always displayed as horizontal bars and an indicator, or **thumb**, notes the current value of the slider, which the user can move to change the setting.
 
-Slider controls draw the volume slider track using two distinct images, which are customizable. The system draws the region between the thumb and the end of the track associated with the slider’s minimum value using the . The system region between the thumb and the end of the track associated with the slider’s maximum value using the . You can assign different images to customize the appearance of the slider for its various states, such as enabled, disabled, and highlighted.
+Slider controls draw the volume slider track using two distinct images, which are customizable. The system draws the region between the thumb and the end of the track associated with the slider’s minimum value using the **minimum volume slider image**. The system region between the thumb and the end of the track associated with the slider’s maximum value using the **maximum volume slider image**. You can assign different images to customize the appearance of the slider for its various states, such as enabled, disabled, and highlighted.
 
 You can also customize the volume thumb image for the slider.
 

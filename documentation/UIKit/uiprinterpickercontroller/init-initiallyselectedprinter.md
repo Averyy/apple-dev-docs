@@ -27,7 +27,7 @@ After creating a printer picker controller, assign your delegate as needed and p
 
 ## Parameters
 
-- `printer`: A printer object to select initially. Specify   if you do not want to display a selected printer initially.
+- `printer`: A printer object to select initially. Specify `nil` if you do not want to display a selected printer initially.
 
 
 ---

@@ -97,9 +97,9 @@ WindowGroup("Item Detail", for: Item.self) { $item in
 
 ## Parameters
 
-- `itemType`: The identifier type of the items. Ensure that this   matches the container’s selection type.
-- `menu`: A closure that produces the menu. A single parameter to the   closure contains the set of items to act on. An empty set indicates   menu activation over the empty area of the selectable container,   while a non-empty set indicates menu activation over selected items.   Use controls like  ,  , and   to define   the menu items. You can also create submenus using  , or   group items with  . You can deactivate the context menu   by returning nothing from the closure.
-- `primaryAction`: A closure that defines the action to perform in   response to the primary interaction. A single parameter to the   closure contains the set of items to act on.
+- `itemType`: The identifier type of the items. Ensure that this matches the container’s selection type.
+- `menu`: A closure that produces the menu. A single parameter to the closure contains the set of items to act on. An empty set indicates menu activation over the empty area of the selectable container, while a non-empty set indicates menu activation over selected items. Use controls like [`Button`](button.md), [`Picker`](picker.md), and [`Toggle`](toggle.md) to define the menu items. You can also create submenus using [`Menu`](menu.md), or group items with [`Section`](section.md). You can deactivate the context menu by returning nothing from the closure.
+- `primaryAction`: A closure that defines the action to perform in response to the primary interaction. A single parameter to the closure contains the set of items to act on.
 
 ## See Also
 

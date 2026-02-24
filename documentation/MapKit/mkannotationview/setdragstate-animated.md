@@ -34,7 +34,7 @@ Don’t try to stop a new drag operation by changing the state from [`MKAnnotati
 ## Parameters
 
 - `newDragState`: The new drag state for the annotation view.
-- `animated`: If  , the map view animates the change to the new drag state; otherwise, the map view makes the change without animations.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), the map view animates the change to the new drag state; otherwise, the map view makes the change without animations.
 
 ## See Also
 

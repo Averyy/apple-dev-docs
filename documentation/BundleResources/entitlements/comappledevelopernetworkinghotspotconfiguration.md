@@ -10,6 +10,10 @@ A Boolean value indicating whether your app can use the hotspot manager to confi
 - iPadOS 11.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 This key indicates whether your app may use the [`NEHotspotConfigurationManager`](https://developer.apple.com/documentation/NetworkExtension/NEHotspotConfigurationManager) and [`NEHotspotConfiguration`](https://developer.apple.com/documentation/NetworkExtension/NEHotspotConfiguration) classes to configure Wi-Fi networks.

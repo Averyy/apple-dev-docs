@@ -24,7 +24,7 @@ Call the [`setRowTypes(_:)`](wkinterfacetable/setrowtypes(_:).md) or [`setNumber
 
 ## Parameters
 
-- `index`: The zero-based index of the row. This parameter must be between zero and the total number of rows specified in the   property.
+- `index`: The zero-based index of the row. This parameter must be between zero and the total number of rows specified in the [`numberOfRows`](wkinterfacetable/numberofrows.md) property.
 
 ## See Also
 

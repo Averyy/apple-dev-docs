@@ -19,8 +19,8 @@ convenience init(participant: SWPerson, highlight: SWCollaborationHighlight)
 
 ## Parameters
 
-- `participant`: The   displayed in the alert.
-- `highlight`: The   related to the request.
+- `participant`: The `SWPerson` displayed in the alert.
+- `highlight`: The `SWCollaborationHighlight` related to the request.
 
 
 ---

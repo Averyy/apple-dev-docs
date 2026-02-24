@@ -31,7 +31,7 @@ This method displays the document preview asynchronously. The document interacti
 
 ## Parameters
 
-- `animated`: Specify   to animate the appearance of the document preview or   to display it immediately.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the appearance of the document preview or [`false`](https://developer.apple.com/documentation/Swift/false) to display it immediately.
 
 ## See Also
 

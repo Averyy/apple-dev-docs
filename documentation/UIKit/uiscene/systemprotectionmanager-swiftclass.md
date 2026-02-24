@@ -23,6 +23,43 @@ Use this class to determine if the system protects a scene, such as by locking t
 
 The following example shows how a scene can use the manager’s [`isUserAuthenticationEnabled`](uiscene/systemprotectionmanager-swift.class/isuserauthenticationenabled.md) property to decide whether to provide its own UI shielding. When the scene becomes active, the app shows an authentication challenge if the system doesn’t already provide protection. When the scene resigns the active role, the app provides its own shielding only if the system isn’t already doing so.
 
+**Swift**:
+
+```swift
+func sceneDidBecomeActive(_ scene: UIScene) {
+    guard scene.systemProtectionManager?.isUserAuthenticationEnabled ?? false else {
+        // Show custom authentication.
+    }
+}
+
+func sceneWillResignActive(_ scene: UIScene) {
+    guard scene.systemProtectionManager?.isUserAuthenticationEnabled ?? false else {
+        // Show custom shield to hide sensitive information.
+    }
+}
+
+```
+
+**Objective-C**:
+
+```objc
+- (void)sceneDidBecomeActive:(UIScene *)scene {
+    if ( scene.systemProtectionManager.userAuthenticationEnabled ) {
+        // Don't show custom authentication.
+    } else {
+        // Show custom shield to hide sensitive information.
+    }
+}
+
+- (void)sceneWillResignActive:(UIScene *)scene {
+    if ( scene.systemProtectionManager.userAuthenticationEnabled ) {
+        // Don't show custom shield; system already does so.
+    } else {
+        // Show custom shield to hide sensitive information.
+    }
+}
+```
+
 ## Topics
 
 ### Inspecting protection state

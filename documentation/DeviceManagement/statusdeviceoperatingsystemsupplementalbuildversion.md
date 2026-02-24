@@ -32,6 +32,10 @@ object StatusDeviceOperatingSystemSupplementalBuildVersion
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
+## Properties
+
+- `device.operating-system.supplemental.build-version` (string) *(required)*: The operating system’s build and Background Security Improvement versions in use on the device, for example, `20A123a` or `20B27c`.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

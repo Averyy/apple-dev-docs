@@ -22,7 +22,8 @@ func loadChallengableFriends() async throws -> [GKPlayer]
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block that GameKit calls when this method loads players the local player can challenge. The block receives the following parameters: - **`challengableFriends`**: Players to whom the local player can issue a challenge. The local player can issue a challenge to a player with a friend level of FL1 or FL2.
+- **`error`**: Describes an error if it occurs, or `nil` if the operation completes. Possible errors include networking issues or an uninitialized player.
 
 ## See Also
 

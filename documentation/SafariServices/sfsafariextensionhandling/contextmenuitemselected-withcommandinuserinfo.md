@@ -20,7 +20,7 @@ optional func contextMenuItemSelected(withCommand command: String, in page: SFSa
 
 ## Parameters
 
-- `command`: The command that is associated with the selected context menu item specified in  .
+- `command`: The command that is associated with the selected context menu item specified in `Info.plist`.
 - `page`: The page where the context menu item was selected.
 - `userInfo`: Optional message content. If specified, the dictionary’s value objects conform to the W3C standard for safe passing of structured data, such as Boolean objects, numeric values, strings, and arrays.
 

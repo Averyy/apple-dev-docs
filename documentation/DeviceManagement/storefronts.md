@@ -21,6 +21,13 @@ object Storefronts
 - [object Storefronts.Attributes](storefronts/attributes-data.dictionary.md)
   The attributes for the storefronts resource.
 
+## Properties
+
+- `attributes` (Storefronts.Attributes): The attributes for the storefronts resource type.
+- `href` (string) *(required)*: A relative location for the storefronts resource.
+- `id` (string) *(required)*: The identifier for the storefronts resource.
+- `type` (string) *(required)*: The type of the resource. The only allowed value is `storefronts`.
+
 
 ---
 

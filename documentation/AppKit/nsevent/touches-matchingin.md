@@ -25,7 +25,7 @@ This method is only valid for gesture events (gesture, magnify, swipe, rotate, e
 ## Parameters
 
 - `phase`: The touch phase for which you want touches.
-- `view`: The view for which touches are wanted. Touches that target this view, or any of the view’s descendants will be returned. Passing   as the view gets all touches regardless of their targeted view.
+- `view`: The view for which touches are wanted. Touches that target this view, or any of the view’s descendants will be returned. Passing `nil` as the view gets all touches regardless of their targeted view.
 
 ## See Also
 

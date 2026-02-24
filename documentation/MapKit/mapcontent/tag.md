@@ -33,7 +33,7 @@ A `ForEach` automatically applies a default tag to each enumerated view using th
 
 ## Parameters
 
-- `tag`: A    value to use as the map content’s tag.
+- `tag`: A [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) value to use as the map content’s tag.
 
 
 ---

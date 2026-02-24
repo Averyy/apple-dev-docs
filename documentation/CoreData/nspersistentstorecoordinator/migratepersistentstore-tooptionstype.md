@@ -28,8 +28,8 @@ Performance may vary depending on the store types of the old and new stores. Inv
 
 - `store`: The peristent store to migrate.
 - `storeURL`: The location of the new persistent store.
-- `options`: A dictionary containing key-value pairs that specify store behavior and characteristics. For more information, see  .
-- `storeType`: The new store type. For possible values, see  .
+- `options`: A dictionary containing key-value pairs that specify store behavior and characteristics. For more information, see [`Store options`](store-options.md).
+- `storeType`: The new store type. For possible values, see [`NSPersistentStore.StoreType`](nspersistentstore/storetype.md).
 
 ## See Also
 

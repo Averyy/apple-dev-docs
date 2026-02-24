@@ -26,7 +26,7 @@ The length, in bytes, occupied by the image block in memory.
 
 ## Parameters
 
-- `imageblockDimensions`: An   instance that represents the dimensions of an imageblock.
+- `imageblockDimensions`: An [`MTLSize`](mtlsize.md) instance that represents the dimensions of an imageblock.
 
 
 ---

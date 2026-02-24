@@ -27,8 +27,8 @@ Text with a line running along its baseline.
 
 ## Parameters
 
-- `isActive`: A Boolean value that indicates whether the text has an   underline.
-- `color`: The color of the underline. If   is  , the   underline uses the default foreground color.
+- `isActive`: A Boolean value that indicates whether the text has an underline.
+- `color`: The color of the underline. If `color` is `nil`, the underline uses the default foreground color.
 
 ## See Also
 

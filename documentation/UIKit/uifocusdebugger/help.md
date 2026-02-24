@@ -22,6 +22,18 @@ class func help() -> any UIFocusDebuggerOutput
 
 Call this method from the `lldb` debugger using the following commands:
 
+**Swift**:
+
+```swift
+po UIFocusDebugger.help()
+```
+
+**Objective-C**:
+
+```objc
+po [UIFocusDebugger help]
+```
+
 The method returns information about how to use the other methods of this class to get information.
 
 

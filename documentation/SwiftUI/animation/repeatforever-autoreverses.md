@@ -53,7 +53,7 @@ struct ContentView: View {
 
 ## Parameters
 
-- `autoreverses`: A Boolean value that indicates whether the   animation sequence plays in reverse after playing forward.
+- `autoreverses`: A Boolean value that indicates whether the animation sequence plays in reverse after playing forward.
 
 ## See Also
 

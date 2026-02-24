@@ -60,7 +60,7 @@ The system provides each location value as a geographical latitude and longitude
 
 Many Apple devices have sensors that report device-related movements, the device’s attitude in space, its altitude relative to sea level, and other motion-related details. You can use this data as contextual information, or as a form of input to your app. For example, a game might use accelerometer and gyroscope values as input.
 
-To retrieve live motion-related data, adopt the [`Core Motion`](https://developer.apple.com/documentation/CoreMotion) framework. This framework delivers raw data for the onboard accelerometers, gyroscopes, magnetometer, and barometer on portable devices such as iPhone, iPad, Apple Watch, [`visionOS`](https://developer.apple.com/documentation/visionOS), and even some [`CMHeadphoneMotionManager`](https://developer.apple.com/documentation/CoreMotion/CMHeadphoneMotionManager). The framework also offers processed versions of many types of data, which give you ready-to-use information such as course and heading values, pedometer data, and the device’s attitude vector relative to the ground.
+To retrieve live motion-related data, adopt the [`Core Motion`](https://developer.apple.com/documentation/CoreMotion) framework. This framework delivers raw data for the onboard accelerometers, gyroscopes, magnetometer, and barometer on portable devices such as iPhone, iPad, Apple Watch, [`visionOS`](https://developer.apple.com/documentation/visionos), and even some [`CMHeadphoneMotionManager`](https://developer.apple.com/documentation/CoreMotion/CMHeadphoneMotionManager). The framework also offers processed versions of many types of data, which give you ready-to-use information such as course and heading values, pedometer data, and the device’s attitude vector relative to the ground.
 
 When you want to analyze sensor data over a longer period of time, use [`SensorKit`](https://developer.apple.com/documentation/SensorKit). This framework records sensor data for a period of time you designate and delivers the resulting samples for analysis. SensorKit supports most of the same sensors as Core Motion, and many other types of sensors. For example, use it to analyze ambient light values, wrist temperature, heart rate, and device-usage metrics.
 
@@ -68,7 +68,7 @@ Even if you don’t collect sensor data for your app, the system still uses sens
 
 #### Capture Information About Someones Surroundings
 
-On iPhone and iPad, cameras can capture details about a person’s surroundings and make it available to your app. On [`visionOS`](https://developer.apple.com/documentation/visionOS), the camera input is an integral part of a person’s experience, and the system blends that input with your app’s content seamlessly. System frameworks also have access to the camera input, and you use these frameworks to:
+On iPhone and iPad, cameras can capture details about a person’s surroundings and make it available to your app. On [`visionOS`](https://developer.apple.com/documentation/visionos), the camera input is an integral part of a person’s experience, and the system blends that input with your app’s content seamlessly. System frameworks also have access to the camera input, and you use these frameworks to:
 
 - Implement an augmented reality app.
 - Identify people, pets, images, bar codes, text, and other objects.

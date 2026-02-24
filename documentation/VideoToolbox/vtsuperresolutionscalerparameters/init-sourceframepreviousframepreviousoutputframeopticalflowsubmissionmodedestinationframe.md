@@ -23,11 +23,11 @@ Returns `nil` if `sourceFrame` or `destinationFrame` is `nil`, or if `sourceFram
 
 ## Parameters
 
-- `sourceFrame`: Current source frame; must be non  .
-- `previousFrame`: The previous source frame in presentation time order. For the first frame you can set this to  .
-- `previousOutputFrame`: The previous output frame in presentation time order. For the first frame you can set this to  .
-- `opticalFlow`: Optional   object that contains forward and backward optical flow between the   and  . You only need this if optical flow is pre-computed.
-- `submissionMode`: Provides a hint to let the processor know whether you are submitting frames in presentation   sequence. For more information about supported modes see  .
+- `sourceFrame`: Current source frame; must be non `nil`.
+- `previousFrame`: The previous source frame in presentation time order. For the first frame you can set this to `nil`.
+- `previousOutputFrame`: The previous output frame in presentation time order. For the first frame you can set this to `nil`.
+- `opticalFlow`: Optional `VTFrameProcessorOpticalFlow` object that contains forward and backward optical flow between the `sourceFrame` and `previousFrame`. You only need this if optical flow is pre-computed.
+- `submissionMode`: Provides a hint to let the processor know whether you are submitting frames in presentation sequence. For more information about supported modes see [`VTSuperResolutionScalerParameters.SubmissionMode`](vtsuperresolutionscalerparameters/submissionmode-swift.enum.md).
 - `destinationFrame`: User-allocated pixel buffer that receives the results.
 
 

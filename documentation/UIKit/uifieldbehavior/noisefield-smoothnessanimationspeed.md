@@ -28,8 +28,8 @@ A noise field creates a differentiable Perlin simplex noise field that varies ov
 
 ## Parameters
 
-- `smoothness`: The smoothness of the field. Specify a value between   and  , where   indicates the maximum amount of randomness in the generated field and   indicates the least amount of randomness.
-- `speed`: The frequency at which the noise field changes, measured in Hertz (Hz). Specify   to create a noise field that does not change over time.
+- `smoothness`: The smoothness of the field. Specify a value between `0.0` and `1.0`, where `0.0` indicates the maximum amount of randomness in the generated field and `1.0` indicates the least amount of randomness.
+- `speed`: The frequency at which the noise field changes, measured in Hertz (Hz). Specify `0.0` to create a noise field that does not change over time.
 
 ## See Also
 

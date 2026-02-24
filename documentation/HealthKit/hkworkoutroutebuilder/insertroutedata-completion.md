@@ -30,7 +30,8 @@ Use this method to asynchronously add one or more [`CLLocation`](https://develop
 ## Parameters
 
 - `routeData`: An array containing one or more location objects.
-- `completion`: A block called after the system adds the collection data to the builder. The system passes the block the following parameters:
+- `completion`: A block called after the system adds the collection data to the builder. The system passes the block the following parameters: - **`success`**: A Boolean value that indicates whether the  builder successfully received the route data.
+- **`error`**: An object that describes the error, if an error has occurred; otherwise, `nil`.
 
 ## See Also
 

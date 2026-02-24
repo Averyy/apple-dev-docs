@@ -21,9 +21,9 @@ func executeCommandsInBuffer(_ buffer: any MTLIndirectCommandBuffer, indirectBuf
 
 ## Parameters
 
-- `buffer`: An   instance that contains other commands the current command runs.
-- `indirectRangeBuffer`: When running on Metal devices that belong to the   GPU family, the maximum value for the   property of that structure is 0x4000 (16,384).   Metal devices that belong to an Apple silicon family, such as  , don’t have this limitation.
-- `offset`: See the   to check for offset alignment requirements for buffers in   and   address space.
+- `buffer`: An [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance that contains other commands the current command runs.
+- `indirectRangeBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance with data that matches the layout of the [`MTLIndirectCommandBufferExecutionRange`](mtlindirectcommandbufferexecutionrange.md) structure. When running on Metal devices that belong to the [`MTLGPUFamily.mac2`](mtlgpufamily/mac2.md) GPU family, the maximum value for the [`length`](mtlindirectcommandbufferexecutionrange/length.md) property of that structure is 0x4000 (16,384). Metal devices that belong to an Apple silicon family, such as [`MTLGPUFamily.apple10`](mtlgpufamily/apple10.md), don’t have this limitation.
+- `offset`: An integer that represents the location, in bytes, from the start of `indirectRangeBuffer` where the execution range structure begins. See the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) to check for offset alignment requirements for buffers in `device` and `constant` address space.
 
 ## See Also
 

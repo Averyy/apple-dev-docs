@@ -26,7 +26,7 @@ An array of [`DSPDoubleComplex`](dspdoublecomplex.md) structures.
 
 ## Parameters
 
-- `input`: An array of   structures that contains the input.
+- `input`: An array of [`DSPDoubleComplex`](dspdoublecomplex.md) structures that contains the input.
 
 ## See Also
 

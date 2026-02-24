@@ -20,7 +20,7 @@ Use this initializer to create an instance that you can wrap in a [`WKInterfaceO
 
 ## Parameters
 
-- `origin`: The source of the audio managed by the volume control. For a list of possible values, see  .
+- `origin`: The source of the audio managed by the volume control. For a list of possible values, see [`WKInterfaceVolumeControl.Origin`](wkinterfacevolumecontrol/origin.md).
 
 ## See Also
 

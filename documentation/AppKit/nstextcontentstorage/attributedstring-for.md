@@ -24,7 +24,7 @@ Returns `nil` if the method can’t map `textElement` to an [`NSAttributedString
 
 ## Parameters
 
-- `textElement`: The   to map into an attributed string.
+- `textElement`: The [`NSTextElement`](nstextelement.md) to map into an attributed string.
 
 ## See Also
 

@@ -8,6 +8,10 @@ A Boolean value indicating whether the app is notified when a child process dies
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [NSSupportsSuddenTermination](information-property-list/nssupportssuddentermination.md)

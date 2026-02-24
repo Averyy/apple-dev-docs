@@ -19,15 +19,15 @@ optional func previewInteraction(_ previewInteraction: UIPreviewInteraction, did
 
 #### Discussion
 
-This method is called repeatedly during the commit phase of the preview interaction. Use the supplied `transitionProgress` parameter to update the UI to reflect the progress of the interaction. For example, the  effect in view controller preview transitions progressively increases the size of the child view controller as the transition progresses.
+This method is called repeatedly during the commit phase of the preview interaction. Use the supplied `transitionProgress` parameter to update the UI to reflect the progress of the interaction. For example, the *pop* effect in view controller preview transitions progressively increases the size of the child view controller as the transition progresses.
 
 The `ended` parameter is false throughout the commit phase and becomes [`true`](https://developer.apple.com/documentation/Swift/true) when the phase is completed. At this point, the preview interaction is complete, and you should update the UI appropriately. For example, in view controller preview interactions, the child view controller becomes the main view controller.
 
 ## Parameters
 
 - `previewInteraction`: The preview interaction associated with the current user input.
-- `transitionProgress`: The progress through the commit phase of the transition. A   with a value from   to  .
-- `ended`: A   whose value indicates whether the commit phase of the transition is complete.
+- `transitionProgress`: The progress through the commit phase of the transition. A [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) with a value from `0` to `1`.
+- `ended`: A `Boolean` whose value indicates whether the commit phase of the transition is complete.
 
 ## See Also
 

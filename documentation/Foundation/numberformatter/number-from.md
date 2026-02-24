@@ -32,7 +32,7 @@ Any leading or trailing space separator characters in a string are ignored. For 
 
 ## Parameters
 
-- `string`: An   object that is parsed to generate the returned number object.
+- `string`: An [`NSString`](nsstring.md) object that is parsed to generate the returned number object.
 
 ## See Also
 

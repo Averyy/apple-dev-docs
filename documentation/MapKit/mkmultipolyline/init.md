@@ -22,7 +22,7 @@ init(_ polylines: [MKPolyline])
 
 ## Parameters
 
-- `polylines`: An array of   objects to initialize the object with.
+- `polylines`: An array of [`MKPolyline`](mkpolyline.md) objects to initialize the object with.
 
 
 ---

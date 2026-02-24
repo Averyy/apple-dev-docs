@@ -28,7 +28,7 @@ Create a pull stream node definition
 ## Parameters
 
 - `mixerDefinition`: The mixer definition this stream will be assigned to
-- `format`: The AVAudioFormat object that will define the attributes of the audio this node will accept.   Only Core Audio’s standard deinterleaved 32-bit floating-point formats are supported.
+- `format`: The AVAudioFormat object that will define the attributes of the audio this node will accept. Only Core Audio’s standard deinterleaved 32-bit floating-point formats are supported.
 
 
 ---

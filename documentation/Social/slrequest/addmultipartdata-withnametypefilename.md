@@ -26,7 +26,7 @@ Possible parameter values are dependent on the target service. This information,
 - `data`: The data for the multipart POST body, such as an image or text.
 - `name`: The name of the multipart POST body. This is the name that a specific social service expects.
 - `type`: The type of the multipart POST body. This is the MIME content type of the multipart data.
-- `filename`: The filename of the attachment that you want to POST. Many social services require a filename in order to accept certain POST requests, such as uploading an image or video. If your multipart data does not require a filename, pass in  .
+- `filename`: The filename of the attachment that you want to POST. Many social services require a filename in order to accept certain POST requests, such as uploading an image or video. If your multipart data does not require a filename, pass in `nil`.
 
 ## See Also
 

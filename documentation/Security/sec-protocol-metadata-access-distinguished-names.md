@@ -28,7 +28,7 @@ Get the X.509 Distinguished Names from the protocol instance peer.
 
 ## Parameters
 
-- `metadata`: A   instance.
+- `metadata`: A `sec_protocol_metadata_t` instance.
 - `handler`: A block to invoke one or more times with distinguished_name data
 
 

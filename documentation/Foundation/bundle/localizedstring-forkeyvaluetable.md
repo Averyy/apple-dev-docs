@@ -53,9 +53,9 @@ The following example cycles through a static array of keys when a button is cli
 
 ## Parameters
 
-- `key`: The key for a string in the table identified by  .
-- `value`: The value to return if   is   or if a localized string for   can’t be found in the table.
-- `tableName`: The receiver’s string table to search. If   is   or is an empty string, the method attempts to use the table in  .
+- `key`: The key for a string in the table identified by `tableName`.
+- `value`: The value to return if `key` is `nil` or if a localized string for `key` can’t be found in the table.
+- `tableName`: The receiver’s string table to search. If `tableName` is `nil` or is an empty string, the method attempts to use the table in `Localizable.strings`.
 
 ## See Also
 

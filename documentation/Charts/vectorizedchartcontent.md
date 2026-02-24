@@ -22,7 +22,7 @@ protocol VectorizedChartContent<DataElement> : ChartContent
 
 #### Overview
 
-Its primary associated type represents the data element, sometimes called ,  or .
+Its primary associated type represents the data element, sometimes called *data point*, *observation* or *aggregate*.
 
 Usually, `DataElement` has properties to determine visual attributes directly, or indirectly by encoding `Plottable` values through a chart scale.
 

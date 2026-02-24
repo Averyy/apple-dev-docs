@@ -34,7 +34,7 @@ Each time when constraints are applied, the node’s [`zRotation`](sknode/zrotat
 
 ## Parameters
 
-- `zRange`: A range value that specifies the minimum and maximum values of the node’s   property.
+- `zRange`: A range value that specifies the minimum and maximum values of the node’s [`zRotation`](sknode/zrotation.md) property.
 
 ## See Also
 

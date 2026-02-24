@@ -29,7 +29,7 @@ This method is functionally equivalent to the initializers of [`MLDataColumn`](m
 
 ## Parameters
 
-- `type`: A type of   to convert the contents of the column to, using  .
+- `type`: A type of [`MLDataColumn`](mldatacolumn.md) to convert the contents of the column to, using [`MLDataValueConvertible`](mldatavalueconvertible.md).
 
 ## See Also
 

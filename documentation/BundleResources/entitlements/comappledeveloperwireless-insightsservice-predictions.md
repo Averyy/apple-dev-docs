@@ -10,6 +10,10 @@ A Boolean value that indicates whether the app can use the WirelessInsights fram
 - iPadOS 26.0+
 
 
+
+**Type**: boolean
+
+
 ---
 
 *[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.wireless-insights.service-predictions)*

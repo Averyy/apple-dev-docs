@@ -29,8 +29,8 @@ Use the array of obstacles to create an obstacle graph ([`GKObstacleGraph`](http
 
 ## Parameters
 
-- `sprites`: An array of   objects.
-- `accuracy`: A floating point value between   and  , inclusive. Higher values create a more precise (but more complex) representation of the obstacle.
+- `sprites`: An array of [`SKNode`](sknode.md) objects.
+- `accuracy`: A floating point value between `0.001` and `1.0`, inclusive. Higher values create a more precise (but more complex) representation of the obstacle.
 
 ## See Also
 

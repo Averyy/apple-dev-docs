@@ -31,7 +31,7 @@ Note that not all locale property keys have values with display name values.
 ## Parameters
 
 - `displayLocale`: A locale object.
-- `key`: A string that identifies the type that   is. It must be one of the standard locale property keys (see  ).
+- `key`: A string that identifies the type that `value` is. It must be one of the standard locale property keys (see [`Locale Property Keys`](locale-property-keys.md)).
 - `value`: The value for which the display name is required.
 
 ## See Also

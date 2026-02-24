@@ -30,7 +30,7 @@ Use this function to reverse the encapsulation provided by [`gss_encapsulate_tok
 
 - `input_token`: A buffer holding the encapsulated token.
 - `oid`: The expected object identifier of the token.
-- `output_token`: A buffer the function fills with the decapsulated token data. Release this buffer’s memory with a call to   when you are done with it.
+- `output_token`: A buffer the function fills with the decapsulated token data. Release this buffer’s memory with a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md) when you are done with it.
 
 ## See Also
 

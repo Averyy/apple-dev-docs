@@ -27,7 +27,7 @@ The value for the constraint is calculated is `srcAttr`.
 
 - `attr`: The attribute of the layer for which to create a new constraint.
 - `srcId`: The name of the layer that this constraint is calculated relative to.
-- `srcAttr`: The attribute of   the constraint is calculated relative to.
+- `srcAttr`: The attribute of `srcLayer` the constraint is calculated relative to.
 
 ## See Also
 

@@ -33,6 +33,45 @@ The data is an array of 32-bit floating-point values, containing three noninterl
 
 For example, the code below shows how to access the second coefficient at level 2.
 
+**Swift**:
+
+```swift
+func numberOfCoefficients(at level: Int) -> Int {
+    return (level + 1) * (level + 1)
+}
+func offsetForLevel(_ level: Int) -> Int {
+    return numberOfCoefficients(at: level - 1) - 1
+}
+guard let coeffs = light.sphericalHarmonicsCoefficients
+    else { fatalError("light does not have spherical harmonics") }
+let totalCount = numberOfCoefficients(at: light.sphericalHarmonicsLevel)
+let offset = offsetForLevel(2) // level 2 has three sets of coefficients, at indexes 3...5
+let index = 1 // get the second of 3 coefficients on level 2 (zero-based index)
+coeffs.withUnsafeBytes { (bytes: UnsafePointer<Float>) -> () in
+    let red = bytes[offset + index]
+    let green = bytes[totalCount + offset + index]
+    let blue = bytes[totalCount * 2 + offset + index]
+}
+```
+
+**Objective-C**:
+
+```objc
+float numberOfCoefficients(int level) {
+    return (level + 1) * (level + 1)
+}
+float offsetForLevel(int level) {
+    return numberOfCoefficients(level - 1) - 1
+}
+float *coeffs = (float *)lightProbe.sphericalHarmonicsCoefficients.bytes;
+int totalCount = numberOfCoefficients(lightProbe.sphericalHarmonicsLevel);
+int offset = offsetForLevel(2); // level 2 has 3 sets of coefficients, at indexes 3, 4, and 5
+int index = 1; // get the second of 3 coefficients on level 2 (zero-based index)
+float red = coeffs[offset + index];
+float green = coeffs[totalCount + offset + index];
+float blue = coeffs[totalCount * 2 + offset + index];
+```
+
 ## See Also
 
 - [func generateSphericalHarmonics(fromIrradiance: Int)](mdllightprobe/generatesphericalharmonics(fromirradiance:).md)

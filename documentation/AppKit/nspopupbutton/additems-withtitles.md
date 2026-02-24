@@ -22,7 +22,7 @@ Since this method searches for duplicate items, it should not be used if you are
 
 ## Parameters
 
-- `itemTitles`: An array of   objects containing the titles of the items you want to add. Each string in the array should be unique. If an item with the same title already exists in the menu, the existing item is removed and the new one is added.
+- `itemTitles`: An array of `NSString` objects containing the titles of the items you want to add. Each string in the array should be unique. If an item with the same title already exists in the menu, the existing item is removed and the new one is added.
 
 ## See Also
 

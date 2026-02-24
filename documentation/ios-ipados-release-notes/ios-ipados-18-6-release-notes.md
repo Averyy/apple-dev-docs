@@ -12,7 +12,7 @@ The iOS & iPadOS 18.5 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- Health data becomes inaccessible when you reach the “slide to power off” page on an iPhone or iPad without a passcode.  (154706523)  Add a passcode or reboot the device.
+- Health data becomes inaccessible when you reach the “slide to power off” page on an iPhone or iPad without a passcode.  (154706523) **Workaround:** Add a passcode or reboot the device.
 
 ## See Also
 

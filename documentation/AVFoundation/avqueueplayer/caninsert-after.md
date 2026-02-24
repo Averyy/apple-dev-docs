@@ -32,7 +32,7 @@ Adding the same item to a player at more than one position in the queue isn’t 
 ## Parameters
 
 - `item`: The player item to insert.
-- `afterItem`: The player item in the queue to follow. Pass   to test if you can append the item to the queue.
+- `afterItem`: The player item in the queue to follow. Pass `nil` to test if you can append the item to the queue.
 
 ## See Also
 

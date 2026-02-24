@@ -40,8 +40,8 @@ When the view first appears, SwiftUI will check the state of the modifier keys a
 
 ## Parameters
 
-- `mask`: A set of modifier keys controlling which keys to observe for   changes. The default mask includes all keys.
-- `action`: A closure to receive updates when modifier key press   state changes. The closure receives the old and new values as input.
+- `mask`: A set of modifier keys controlling which keys to observe for changes. The default mask includes all keys.
+- `action`: A closure to receive updates when modifier key press state changes. The closure receives the old and new values as input.
 
 ## See Also
 

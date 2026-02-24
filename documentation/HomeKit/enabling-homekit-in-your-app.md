@@ -22,7 +22,7 @@ When you enable the HomeKit capability, Xcode automatically adds the [`HomeKit E
 
 A user’s home automation network is a sensitive resource. Apps with access can collect sensor data and change the state of physical objects in the real world. To protect users, the first time your app uses the HomeKit framework—typically, when you create a [`HMHomeManager`](hmhomemanager.md) instance—the system prompts the user for permission.
 
-You provide a message for this prompt called a  or a  by setting a string value for the [`NSHomeKitUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHomeKitUsageDescription) that you add to your app’s [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) file. Find and select your project’s `Info.plist` file in Xcode’s project navigator. Modify the file using the property list editor built into Xcode:
+You provide a message for this prompt called a *purpose string* or a *usage description* by setting a string value for the [`NSHomeKitUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHomeKitUsageDescription) that you add to your app’s [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) file. Find and select your project’s `Info.plist` file in Xcode’s project navigator. Modify the file using the property list editor built into Xcode:
 
 ![Screenshot showing the HomeKit Usage Description key in the app’s Info.plist file.](https://docs-assets.developer.apple.com/published/c996e82ebce0724fd2a41595e2c469e6/media-3369804%402x.png)
 

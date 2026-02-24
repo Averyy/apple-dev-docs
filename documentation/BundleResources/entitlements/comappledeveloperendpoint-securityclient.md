@@ -8,6 +8,10 @@ The entitlement required to monitor system events for potentially malicious acti
 **Availability**:
 - macOS 10.15+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 You must request this entitlement from Apple. For information about how to request the entitlement, see [`System Extensions and DriverKit`](https://developer.apple.comhttps://developer.apple.com/system-extensions/).

@@ -20,7 +20,7 @@ A data table.
 
 ## Parameters
 
-- `targetFrameRate`: The number of frames per second the method uses to extract body landmarks from the   data source. This no effect if the data source is an     or an   .
+- `targetFrameRate`: The number of frames per second the method uses to extract body landmarks from the data source. This no effect if the data source is an [`MLActionClassifier.DataSource.labeledKeypointsDataFrame(_:sessionIdColumn:labelColumn:featureColumn:)`](mlactionclassifier/datasource/labeledkeypointsdataframe(_:sessionidcolumn:labelcolumn:featurecolumn:).md) or an [`MLActionClassifier.DataSource.labeledKeypointsData(table:sessionIdColumn:labelColumn:featureColumn:)`](mlactionclassifier/datasource/labeledkeypointsdata(table:sessionidcolumn:labelcolumn:featurecolumn:).md).
 
 ## See Also
 

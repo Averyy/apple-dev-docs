@@ -29,6 +29,11 @@ This method applies a circular screen filter to an image. The effect generates a
 
 The circular screen filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`width`**: A `float` representing the distance between each circle in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`sharpness`**: A `float` representing the sharpness of the circles in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in a monochrome image with a large circular pattern overlaying the image:
 
 ```swift

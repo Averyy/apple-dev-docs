@@ -22,7 +22,7 @@ Creates a new map pitch toggle control with the provided scope.
 
 ## Parameters
 
-- `scope`: The namespace the framework passes to the associated   and  .
+- `scope`: The namespace the framework passes to the associated [`Map`](map.md) and `MapPitchToggle/mapScope(_:)`.
 
 
 ---

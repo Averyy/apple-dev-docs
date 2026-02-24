@@ -24,6 +24,12 @@ typealias SCNParticleModifierBlock = (UnsafeMutablePointer<UnsafeMutableRawPoint
 
 The block takes the following parameters:
 
+- **data**: An array of floating-point values containing stripes of property data for the system’s particles. The width and format of each data stripe depend on the properties you specify when calling the [`addModifier(forProperties:at:modifier:)`](scnparticlesystem/addmodifier(forproperties:at:modifier:).md) method.
+- **dataStride**: An array identifying the offset, in bytes, of each property’s value in the data stripe for each particle. The order of offsets in this array corresponds to the order of the `properties` array you specify when calling the [`addModifier(forProperties:at:modifier:)`](scnparticlesystem/addmodifier(forproperties:at:modifier:).md) method.
+- **start**: The index of the first particle’s data stripe in the `data` array.
+- **end**: The index of the last particle’s data stripe in the `data` array.
+- **deltaTime**: The elapsed time, in seconds, since the last frame of simulation.
+
 Use this block to change properties of individual particles on each frame of simulation.
 
 > ❗ **Important**:  Running your own code to update particle properties every frame can have a severe impact on rendering performance. If the behavior over time that you want for your particle system can be described more declaratively, use the [`propertyControllers`](scnparticlesystem/propertycontrollers.md) property and [`SCNParticlePropertyController`](scnparticlepropertycontroller.md) class instead. If you need to change particle properties only at certain times (rather than continuously), add a handler block for an event using the [`handle(_:forProperties:handler:)`](scnparticlesystem/handle(_:forproperties:handler:).md) method.

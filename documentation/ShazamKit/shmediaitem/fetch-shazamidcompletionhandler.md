@@ -29,7 +29,8 @@ class func fetch(shazamID: String) async throws -> SHMediaItem
 ## Parameters
 
 - `shazamID`: The Shazam ID of the song.
-- `completionHandler`: This block takes the following parameters:
+- `completionHandler`: The completion handler that the system calls with the result of the request. This block takes the following parameters: - **`mediaItem`**: A media item.
+- **`error`**: An error object if a problem occurs when fetching the media item; otherwise, `nil`.
 
 ## See Also
 

@@ -63,8 +63,8 @@ List {
 
 ## Parameters
 
-- `behavior`: The bounce behavior to apply to any scrollable views   within the configured view. Use one of the    values.
-- `axes`: The set of axes to apply   to. The default is   .
+- `behavior`: The bounce behavior to apply to any scrollable views within the configured view. Use one of the [`ScrollBounceBehavior`](scrollbouncebehavior.md) values.
+- `axes`: The set of axes to apply `behavior` to. The default is [`Axis.vertical`](axis/vertical.md).
 
 ## See Also
 

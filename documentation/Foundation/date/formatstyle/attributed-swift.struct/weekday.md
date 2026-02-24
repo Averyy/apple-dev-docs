@@ -22,7 +22,7 @@ func weekday(_ format: Date.FormatStyle.Symbol.Weekday = .abbreviated) -> Date.F
 
 ## Parameters
 
-- `format`: Set the symbol representation or pass   to remove it.
+- `format`: Set the symbol representation or pass `nil` to remove it.
 
 
 ---

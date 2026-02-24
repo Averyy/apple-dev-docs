@@ -22,7 +22,7 @@ optional func homeManager(_ manager: HMHomeManager, didUpdate status: HMHomeMana
 ## Parameters
 
 - `manager`: The home manager for which the status changed.
-- `status`: The new authorization status. You can also read this value at any time from the manager’s   property.
+- `status`: The new authorization status. You can also read this value at any time from the manager’s [`authorizationStatus`](hmhomemanager/authorizationstatus.md) property.
 
 
 ---

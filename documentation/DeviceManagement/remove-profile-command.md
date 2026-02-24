@@ -29,6 +29,43 @@ Refer to the following sections to determine supported channels and requirements
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>Identifier</key>
+        <string>com.acme.myprofile</string>
+        <key>RequestType</key>
+        <string>RemoveProfile</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_RemoveProfile</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_RemoveProfile</string>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>00008020-000915083C80012E</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -36,6 +73,10 @@ Refer to the following sections to determine supported channels and requirements
   The command to remove a previously installed profile from the device.
 - [object RemoveProfileResponse](removeprofileresponse.md)
   A response from the device after it processes the command to remove a previously installed profile from the device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

@@ -16,7 +16,7 @@ func orderFrontTablePanel(_ sender: Any?)
 
 ## Parameters
 
-- `sender`: The control sending the message. May be  .
+- `sender`: The control sending the message. May be `nil`.
 
 ## See Also
 

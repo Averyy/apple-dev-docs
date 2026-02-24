@@ -11,7 +11,7 @@ Create a lightweight, in-the-moment experience or demo version for your app that
 
 #### Overview
 
-An  is a lightweight version of your app that offers access to some of the app’s functionality. For example, a donut shop’s app a person downloads and installs from the App Store may allow them to order donuts, save favorites, collect rewards, get special offers, and so on. The donut shop’s App Clip is instantly available – for example, when someone searches for “donuts” near the shop – without the need to install the full app. To ensure a fast launch experience and a fast order experience, the App Clip offers only the functionality to order donuts.
+An *App Clip* is a lightweight version of your app that offers access to some of the app’s functionality. For example, a donut shop’s app a person downloads and installs from the App Store may allow them to order donuts, save favorites, collect rewards, get special offers, and so on. The donut shop’s App Clip is instantly available – for example, when someone searches for “donuts” near the shop – without the need to install the full app. To ensure a fast launch experience and a fast order experience, the App Clip offers only the functionality to order donuts.
 
 ![A flowchart illustrating the flow for an App Clip. From left to right, the images shows an App Clip Code as an invocation, an App Clip card for a food truck, the App Clip of the food truck, and a donut.](https://docs-assets.developer.apple.com/published/2975a51a17a489e70989a1950106630c/app-clips-invocation-overview%402x.png)
 
@@ -29,7 +29,7 @@ Limit the function of an App Clip to ensure a fast launch experience, protect us
 
 1. Review technology available to App Clips and constraints that ensure a good user experience.
 2. Identify which of your app’s functionalities might make a great App Clip.
-3. Learn how people discover and launch App Clips with  and how you configure App Clip experiences and use invocation URLs to offer a great launch experience.
+3. Learn how people discover and launch App Clips with *invocations* and how you configure App Clip experiences and use invocation URLs to offer a great launch experience.
 
 For more information, refer to [`Choosing the right functionality for your App Clip`](choosing-the-right-functionality-for-your-app-clip.md) and [`Configuring App Clip experiences`](configuring-the-launch-experience-of-your-app-clip.md).
 

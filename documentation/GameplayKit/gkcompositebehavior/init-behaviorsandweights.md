@@ -26,7 +26,7 @@ A new behavior object. To assign a behavior to an agent, use the agent’s [`beh
 ## Parameters
 
 - `behaviors`: An array of behavior objects.
-- `weights`: An array of numbers, each of which is the weight to be applied to the behavior at the corresponding index in the   array.
+- `weights`: An array of numbers, each of which is the weight to be applied to the behavior at the corresponding index in the `behaviors` array.
 
 ## See Also
 

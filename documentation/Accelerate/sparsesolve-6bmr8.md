@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Solves the system  using the supplied single-precision factorization of , without any internal memory allocations.
+Solves the system *Ax = b* using the supplied single-precision factorization of *A*, without any internal memory allocations.
 
 **Availability**:
 - iOS 11.0+
@@ -85,23 +85,23 @@ let xValues = [Float](unsafeUninitializedCapacity: n) {
 
 On return, x`Values` contains the values `[1.0, 2.0, 3.0]`.
 
-If the factorization is , the function returns the solution of minimum norm  for underdetermined systems.
+If the factorization is *A = QR*, the function returns the solution of minimum norm *‖ x ‖₂* for underdetermined systems.
 
-If the factorization is , the function returns the least squares solution  for overdetermined systems.
+If the factorization is *A = QR*, the function returns the least squares solution *minₓ ‖ AX - B ‖₂* for overdetermined systems.
 
-If the factorization is [`SparseFactorizationCholeskyAtA`](sparsefactorizationcholeskyata.md), the factorization is of , and the solution that returns is for the system .
+If the factorization is [`SparseFactorizationCholeskyAtA`](sparsefactorizationcholeskyata.md), the factorization is of *AᵀA*, and the solution that returns is for the system *AᵀAX = B*.
 
 ## Parameters
 
 - `Factored`: The factored matrix to solve.
-- `b`: The vector  .
-- `x`: The vector  .
-- `workspace`: The scratch space of size      .
+- `b`: The vector *b*.
+- `x`: The vector *x*.
+- `workspace`: The scratch space of size [`solveWorkspaceRequiredStatic`](sparseopaquefactorization_float/solveworkspacerequiredstatic.md) `+ nrhs *` [`solveWorkspaceRequiredPerRHS`](sparseopaquefactorization_float/solveworkspacerequiredperrhs.md).
 
 ## See Also
 
 - [func SparseSolve(SparseOpaqueFactorization_Double, DenseVector_Double, DenseVector_Double, UnsafeMutableRawPointer)](sparsesolve(_:_:_:_:)-7k9ll.md)
-  Solves the system  using the supplied double-precision factorization of , without any internal memory allocations.
+  Solves the system *Ax = b* using the supplied double-precision factorization of *A*, without any internal memory allocations.
 
 
 ---

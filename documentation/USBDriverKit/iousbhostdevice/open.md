@@ -25,8 +25,8 @@ This method opens a session to the [`IOUSBHostDevice`](iousbhostdevice.md), and 
 ## Parameters
 
 - `forClient`: The service object that is opening the session.
-- `options`: The options to use when opening the session. Specify   for this parameter.
-- `arg`: Additional arguments to the function. Specify   for this parameter.
+- `options`: The options to use when opening the session. Specify `0` for this parameter.
+- `arg`: Additional arguments to the function. Specify `NULL` for this parameter.
 
 ## See Also
 

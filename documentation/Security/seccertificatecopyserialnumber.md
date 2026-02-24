@@ -26,7 +26,7 @@ A data instance containing a DER-encoded integer for the certificate’s serial 
 ## Parameters
 
 - `certificate`: The certificate from which the serial number should be copied.
-- `error`: A pointer to a   variable where an error object is stored upon failure. If not  , the caller is responsible for checking this variable and releasing the resulting object if it exists.
+- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) variable where an error object is stored upon failure. If not `NULL`, the caller is responsible for checking this variable and releasing the resulting object if it exists.
 
 
 ---

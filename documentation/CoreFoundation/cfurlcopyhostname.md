@@ -26,7 +26,7 @@ The host name of `anURL`. Ownership follows the create rule. See [`The Create Ru
 
 ## Parameters
 
-- `anURL`: The   object to examine.
+- `anURL`: The `CFURL` object to examine.
 
 ## See Also
 

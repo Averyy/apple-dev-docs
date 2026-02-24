@@ -25,6 +25,11 @@ HealthKit generates Cycle Deviation notifications based on the cycle data a pers
 
 Cycle Deviation notifications include:
 
+- **Persistent spotting**: Persistent spotting, also known as irregular intermenstrual bleeding, is defined as spotting that occurs in at least two of your cycles in the last six months. HealthKit records verified instances using [`persistentIntermenstrualBleeding`](hkcategorytypeidentifier/persistentintermenstrualbleeding.md) samples.
+- **Prolonged periods**: Prolonged periods are defined as menstrual bleeding that lasts for ten or more days, and this has happened at least two times in the last six months. HealthKit records verified instances using [`prolongedMenstrualPeriods`](hkcategorytypeidentifier/prolongedmenstrualperiods.md) samples.
+- **Irregular cycles**: An irregular cycle is defined as at least a seventeen-day difference between a person’s shortest and longest cycles over the last six months. HealthKit records verified instances using [`irregularMenstrualCycles`](hkcategorytypeidentifier/irregularmenstrualcycles.md) samples.
+- **Infrequent periods**: An infrequent period is defined as having a period one or two times in the last six months. HealthKit records verified instances using [`infrequentMenstrualCycles`](hkcategorytypeidentifier/infrequentmenstrualcycles.md) samples.
+
 Use a [`HKCategoryValue.notApplicable`](hkcategoryvalue/notapplicable.md) value with these samples.
 
 > ❗ **Important**:  These samples are read-only. You can request permission to read the samples using this identifier, but you can’t request authorization to share them. This means you can’t save new infrequent menstrual cycle samples to the HealthKit store.

@@ -20,7 +20,7 @@ func GLKMatrixStackScaleWithVector4(_ stack: GLKMatrixStack, _ scaleVector: GLKV
 ## Parameters
 
 - `stack`: A matrix stack.
-- `scaleVector`: A vector whose  ,  and   components are used to scale the matrix.
+- `scaleVector`: A vector whose `x`,`y` and `z` components are used to scale the matrix.
 
 ## See Also
 

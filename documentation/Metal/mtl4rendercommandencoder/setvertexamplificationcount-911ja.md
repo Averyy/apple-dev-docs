@@ -25,7 +25,7 @@ Each view mapping element describes how to route the corresponding amplification
 
 ## Parameters
 
-- `viewMappings`: A Swift array of   elements. Each element in the array provides   per-output offsets to a specific render target and viewport
+- `viewMappings`: A Swift array of [`MTLVertexAmplificationViewMapping`](mtlvertexamplificationviewmapping.md) elements. Each element in the array provides per-output offsets to a specific render target and viewport
 
 ## See Also
 

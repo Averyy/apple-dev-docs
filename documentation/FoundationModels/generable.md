@@ -58,6 +58,8 @@ If the [`Generable`](generable.md) type includes properties with clear names the
 ### Defining a generable type
 - [macro Generable(description: String?)](generable(description:).md)
   Conforms a type to [`Generable`](generable.md) protocol.
+- [macro Generable(description: String?, representNilExplicitlyInGeneratedContent: Bool)](generable(description:representnilexplicitlyingeneratedcontent:).md)
+  Conforms a type to [`Generable`](generable.md) protocol.
 ### Creating a guide
 - [macro Guide(description: String)](guide(description:).md)
   Allows for influencing the allowed values of properties of a [`Generable`](generable.md) type.

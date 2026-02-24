@@ -10,6 +10,10 @@ An entitlement that permits an app to receive fall-detection notifications from 
 - iPadOS 13.0+
 - watchOS 6.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Use the data you receive from [`CMFallDetectionManager`](https://developer.apple.com/documentation/CoreMotion/CMFallDetectionManager) to provide assistance, or initiate communication with emergency services, in the event that someone falls.

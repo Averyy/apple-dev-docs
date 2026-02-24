@@ -36,7 +36,7 @@ RoundedRectangle(cornerRadius: 10)
 
 ## Parameters
 
-- `angle`: The angle of rotation to apply. Positive angles rotate   clockwise; negative angles rotate counterclockwise.
+- `angle`: The angle of rotation to apply. Positive angles rotate clockwise; negative angles rotate counterclockwise.
 - `anchor`: The point to rotate the shape around.
 
 ## See Also

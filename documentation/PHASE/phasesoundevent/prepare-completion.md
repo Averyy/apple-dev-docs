@@ -31,7 +31,7 @@ If you call [`start(completion:)`](phasesoundevent/start(completion:).md) before
 
 ## Parameters
 
-- `handler`: Code the framework runs when sound event preparation completes. If you pass  , no code runs when preparation completes.
+- `handler`: Code the framework runs when sound event preparation completes. If you pass `nil`, no code runs when preparation completes.
 
 ## See Also
 

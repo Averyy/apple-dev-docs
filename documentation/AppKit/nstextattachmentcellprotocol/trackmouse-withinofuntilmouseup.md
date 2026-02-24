@@ -27,9 +27,9 @@ The [`NSTextAttachmentCell`](nstextattachmentcell-swift.class.md) implementation
 ## Parameters
 
 - `theEvent`: The mouse-down event.
-- `cellFrame`: The region of an   in which to track further mouse events.
-- `controlView`: The view that received the event. Typically, this view is an   object and is focused.
-- `flag`: A Boolean value that indicates whether to track the mouse until a mouse-up event occurs. If this parameter is  , stop tracking when a mouse-dragged event occurs outside of  .
+- `cellFrame`: The region of an [`NSTextView`](nstextview.md) in which to track further mouse events.
+- `controlView`: The view that received the event. Typically, this view is an [`NSTextView`](nstextview.md) object and is focused.
+- `flag`: A Boolean value that indicates whether to track the mouse until a mouse-up event occurs. If this parameter is [`false`](https://developer.apple.com/documentation/Swift/false), stop tracking when a mouse-dragged event occurs outside of `cellFrame`.
 
 ## See Also
 

@@ -34,7 +34,7 @@ You can assign only one record to the asset that this method returns. If you wan
 
 ## Parameters
 
-- `fileURL`: The URL of the file that you want to store in CloudKit. You must provide a file URL, and it must not be  .
+- `fileURL`: The URL of the file that you want to store in CloudKit. You must provide a file URL, and it must not be `nil`.
 
 
 ---

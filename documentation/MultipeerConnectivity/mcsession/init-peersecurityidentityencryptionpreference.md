@@ -34,7 +34,7 @@ For more information, see [`Initiating a Session`](mcsession#Initiating-a-Sessio
 ## Parameters
 
 - `myPeerID`: A local identifier that represents the device on which your app is currently running.
-- `identity`: When you add other peers to the session, those peers receive your local peer’s certificate (extracted from the provided identity) and any additional certificates that you provided. It is the receiving peer’s responsibility to validate that certificate, if desired.
+- `identity`: An array containing information that can be used to identify the local peer to other nearby peers. The first object in this array should be a [`SecIdentity`](https://developer.apple.com/documentation/Security/SecIdentity) object that provides the local peer’s identity. The remainder of the array should contain zero or more additional [`SecCertificate`](https://developer.apple.com/documentation/Security/SecCertificate) objects that provide any intermediate certificates that nearby peers might require when verifying the local peer’s identity. These certificates should be sent in certificate chain order. When you add other peers to the session, those peers receive your local peer’s certificate (extracted from the provided identity) and any additional certificates that you provided. It is the receiving peer’s responsibility to validate that certificate, if desired.
 - `encryptionPreference`: An integer value that indicates whether encryption is required, preferred, or undesirable.
 
 ## See Also

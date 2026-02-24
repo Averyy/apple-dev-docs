@@ -30,10 +30,10 @@ This function escapes any character that is not 7-bit ASCII with the byte-code f
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
-- `url`: The URL to convert into a   object.
-- `encoding`: The string encoding to use when converting   into a   object.
-- `escapeWhitespace`:   if you want to escape whitespace characters in the URL,   otherwise.
+- `allocator`: The allocator to use to allocate memory for the new `CFData` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `url`: The URL to convert into a `CFData` object.
+- `encoding`: The string encoding to use when converting `url` into a `CFData` object.
+- `escapeWhitespace`: `true` if you want to escape whitespace characters in the URL, `false` otherwise.
 
 ## See Also
 

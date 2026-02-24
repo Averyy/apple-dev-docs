@@ -18,7 +18,18 @@ Make large-scale mathematical computations and image calculations, optimized for
 
 Accelerate provides high-performance, energy-efficient computation on the CPU by leveraging its vector-processing capability. The following Accelerate libraries abstract that capability so that code written for them executes appropriate instructions for the processor available at runtime:
 
+- **[`BNNS`](bnns-library.md)**: Subroutines for constructing and running neural networks for both training and inference.
+- **[`vImage`](vimage-library.md)**: A wide range of image-processing functions, including Core Graphics and Core Video interoperation, format conversion, and image manipulation.
+- **[`vDSP`](vdsp-library.md)**: Digital signal processing functions, including 1D and 2D fast Fourier transforms, biquadratic filtering, vector and matrix arithmetic, convolution, and type conversion.
+- **[`vForce`](vforce-library.md)**: Functions for performing arithmetic and transcendental functions on vectors.
+- **[`Sparse Solvers`](sparse-solvers-library.md), [`BLAS`](blas-library.md), and LAPACK**: Libraries for performing linear algebra on sparse and dense matrices.
+
 Although not part of the Accelerate framework, the following libraries are closely related:
+
+- **[`Apple Archive`](https://developer.apple.com/documentation/AppleArchive)**: A framework for performing multithreaded lossless compression of directories, files, and data.
+- **[`Compression`](https://developer.apple.com/documentation/Compression)**: Algorithms for lossless data compression that support LZFSE, LZ4, LZMA, and ZLIB algorithms.
+- **[`simd`](simd-library.md)**: A module for performing computations on small vectors and matrices.
+- **[`Spatial`](https://developer.apple.com/documentation/Spatial)**: Spatial is a lightweight 3D mathematical library that provides a simple API for working with 3D primitives.
 
 ## Topics
 

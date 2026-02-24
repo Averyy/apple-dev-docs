@@ -22,7 +22,7 @@ var SPARSE_NORM_R1: sparse_norm { get }
 
 #### Discussion
 
-| Matrix element wise |  |
+| Matrix element wise | *sumⱼ ( sqrt ( sumᵢ ( A[i,j]² ) ) )* |
 | --- | --- |
 | Matrix operator | Not supported. Undefined.__ |
 | Vector element wise | Not supported. Undefined.__ |

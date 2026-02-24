@@ -26,8 +26,8 @@ The supported tag schemes. For possible values, see [`NLTagScheme`](nltagscheme.
 
 ## Parameters
 
-- `unit`: The linguistic unit. For possible values, see  .
-- `language`: The   identifying the language.
+- `unit`: The linguistic unit. For possible values, see [`NLTokenUnit`](nltokenunit.md).
+- `language`: The [`NLLanguage`](nllanguage.md) identifying the language.
 
 ## See Also
 

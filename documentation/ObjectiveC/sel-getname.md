@@ -26,7 +26,7 @@ A C string indicating the name of the selector.
 
 ## Parameters
 
-- `sel`: A pointer of type  . Pass the selector whose name you wish to determine.
+- `sel`: A pointer of type [`SEL`](sel.md). Pass the selector whose name you wish to determine.
 
 ## See Also
 

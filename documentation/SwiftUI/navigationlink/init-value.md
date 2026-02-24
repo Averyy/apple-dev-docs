@@ -38,8 +38,8 @@ Because this initializer takes a value that conforms to the [`Codable`](https://
 
 ## Parameters
 
-- `titleKey`: A localized string that describes the view that this link   presents.
-- `value`: An optional value to present. When someone   taps or clicks the link, SwiftUI stores a copy of the value.   Pass a   value to disable the link.
+- `titleKey`: A localized string that describes the view that this link presents.
+- `value`: An optional value to present. When someone taps or clicks the link, SwiftUI stores a copy of the value. Pass a `nil` value to disable the link.
 
 ## See Also
 

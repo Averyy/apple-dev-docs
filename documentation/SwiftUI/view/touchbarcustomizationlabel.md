@@ -43,7 +43,7 @@ TextField("TouchBar Demo", text: $placeholder)
 
 ## Parameters
 
-- `label`: A   view containing the customization label.
+- `label`: A `Text` view containing the customization label.
 
 ## See Also
 

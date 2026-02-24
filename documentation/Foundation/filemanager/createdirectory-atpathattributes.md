@@ -27,7 +27,7 @@ Because this method does not return error information, it has been deprecated as
 ## Parameters
 
 - `path`: The path at which to create the new directory. The directory to be created must not yet exist, but its parent directory must exist.
-- `attributes`: The file attributes for the new directory. The attributes you can set are owner and group numbers, file permissions, and modification date. If you specify   for  , default values for these attributes are set (particularly write access for the creator and read access for others). For a list of keys you can include in this dictionary, Supporting Types. Some of the keys, such as   and  , do not apply to directories.
+- `attributes`: The file attributes for the new directory. The attributes you can set are owner and group numbers, file permissions, and modification date. If you specify `nil` for `attributes`, default values for these attributes are set (particularly write access for the creator and read access for others). For a list of keys you can include in this dictionary, Supporting Types. Some of the keys, such as `NSFileHFSCreatorCode` and `NSFileHFSTypeCode`, do not apply to directories.
 
 ## See Also
 

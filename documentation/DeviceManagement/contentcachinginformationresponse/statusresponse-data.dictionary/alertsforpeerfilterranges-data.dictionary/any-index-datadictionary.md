@@ -14,6 +14,13 @@ A dictionary that describes the alerts for the peer filter ranges. The key name 
 object ContentCachingInformationResponse.StatusResponse.AlertsForPeerFilterRanges.ANY index
 ```
 
+## Properties
+
+- `addresses` ([string]) *(required)*: An array of local IP addresses of peer content caches that rejected requests from the content cache.
+- `className` (string) *(required)*: The type of the alert.
+- `peerFilterRangeIndex` (integer) *(required)*: The index into the `PeerFilterRanges` in the installed ContentCaching payload.
+- `postDate` (date) *(required)*: The date of the alert.
+
 
 ---
 

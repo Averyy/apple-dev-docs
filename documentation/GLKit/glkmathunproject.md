@@ -27,7 +27,7 @@ The projected point in object space.
 - `model`: A modelview transformation matrix.
 - `projection`: A projection matrix.
 - `viewport`: A pointer to an array of four integer values. The first pair of values represent the window coordinates of the viewport’s bottom left corner. The second pair of values represent the width and height of the view port.
-- `success`: Upon return, contains   if the function completed successfully, otherwise it contains  . Pass   if you do not want error information.
+- `success`: Upon return, contains [`true`](https://developer.apple.com/documentation/Swift/true) if the function completed successfully, otherwise it contains [`false`](https://developer.apple.com/documentation/Swift/false). Pass `NULL` if you do not want error information.
 
 ## See Also
 

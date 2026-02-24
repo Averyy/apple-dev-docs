@@ -16,7 +16,7 @@ optional func continuityDevicePicker(_ pickerViewController: AVContinuityDeviceP
 
 ## Parameters
 
-- `pickerViewController`: The continuity device picker that’s connecting   to the system.
+- `pickerViewController`: The continuity device picker that’s connecting `device` to the system.
 - `device`: A continuity device that’s connecting to the system.
 
 ## See Also

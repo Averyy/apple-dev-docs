@@ -12,6 +12,10 @@ A Boolean value that indicates whether users of the app may manage HomeKit-compa
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 This key Indicates whether the users of an app may manage HomeKit-compatible accessories, such as switches, lights, fans, locks, and thermostats.

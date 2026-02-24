@@ -24,7 +24,7 @@ The highlight color is provided by the [`highlightColor`](nscolor/highlightcolor
 
 ## Parameters
 
-- `val`: The amount of the highlight color that is blended with the receiver’s color. This should be a number from   through  . A   below   is interpreted as  ; a   above   is interpreted as  .
+- `val`: The amount of the highlight color that is blended with the receiver’s color. This should be a number from `0.0` through `1.0`. A `highlightLevel` below `0.0` is interpreted as `0.0`; a `highlightLevel` above `1.0` is interpreted as `1.0`.
 
 ## See Also
 

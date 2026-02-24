@@ -14,6 +14,10 @@ A dictionary that contains an array of URLs to websites where people using your 
 - visionOS 1.2+
 - watchOS 10.5+
 
+
+
+**Type**: object
+
 #### Discussion
 
 Use this information property list key if your app has the [`com.apple.developer.storekit.external-purchase-link`](entitlements/com.apple.developer.storekit.external-purchase-link.md) entitlement.
@@ -72,6 +76,10 @@ The following country codes have a maximum of five links for apps that qualify f
 Count the total number of unique links you provide for each country code by adding together the number of links you provide in the [`SKExternalPurchaseMultiLink`](information-property-list/skexternalpurchasemultilink.md) and [`SKExternalPurchaseLink`](information-property-list/skexternalpurchaselink.md) property list keys.
 
 For example, if a country code has a maximum of five links and you provide five unique links in the [`SKExternalPurchaseMultiLink`](information-property-list/skexternalpurchasemultilink.md) key, then specify one of the same five links in the [`SKExternalPurchaseLink`](information-property-list/skexternalpurchaselink.md) key to avoid exceeding the maximum allowed links.  If a country code has a maximum of one link, the [`SKExternalPurchaseMultiLink`](information-property-list/skexternalpurchasemultilink.md) and [`SKExternalPurchaseLink`](information-property-list/skexternalpurchaselink.md) keys need to specify the same link.
+
+## Properties
+
+- `Any Key` ([string])
 
 ## See Also
 

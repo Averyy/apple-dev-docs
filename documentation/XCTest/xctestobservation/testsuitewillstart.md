@@ -13,7 +13,7 @@ optional func testSuiteWillStart(_ testSuite: XCTestSuite)
 
 ## Parameters
 
-- `testSuite`: The test suite that is about to start. Additional information about the suite can be retrieved from the test suite’s associated  .
+- `testSuite`: The test suite that is about to start. Additional information about the suite can be retrieved from the test suite’s associated [`XCTestRun`](xctestrun.md).
 
 ## See Also
 

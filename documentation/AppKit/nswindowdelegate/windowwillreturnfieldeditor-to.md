@@ -22,7 +22,7 @@ The field editor for `client`; returns `nil` when the delegate has no field edit
 ## Parameters
 
 - `sender`: The window requesting the field editor from the delegate.
-- `client`: A text-displaying object to be associated with the field editor. If  , the requested field editor is the default.
+- `client`: A text-displaying object to be associated with the field editor. If `nil`, the requested field editor is the default.
 
 ## See Also
 

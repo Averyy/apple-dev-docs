@@ -22,7 +22,7 @@ func credentialState(forUserID userID: String) async throws -> ASAuthorizationAp
 
 ## Parameters
 
-- `userID`: An opaque string associated with the Apple ID that your app receives in the credential’s   property after performing a successful authentication request.
+- `userID`: An opaque string associated with the Apple ID that your app receives in the credential’s [`user`](asauthorizationappleidcredential/user.md) property after performing a successful authentication request.
 - `completion`: A block the method calls to report the state and an optional error condition.
 
 ## See Also

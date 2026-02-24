@@ -26,7 +26,7 @@ A command alternative object.
 
 - `title`: The command alternative’s title.
 - `action`: The action to take after a person selects the alternative command.
-- `modifierFlags`: The bit mask of modifier keys that a person must press. You can use this parameter to specify which modifier keys (Command, Option, and so on) a person must also press. You may specify more than one modifier key. For a list of possible values, see  .
+- `modifierFlags`: The bit mask of modifier keys that a person must press. You can use this parameter to specify which modifier keys (Command, Option, and so on) a person must also press. You may specify more than one modifier key. For a list of possible values, see [`UIKeyModifierFlags`](uikeymodifierflags.md).
 
 ## See Also
 

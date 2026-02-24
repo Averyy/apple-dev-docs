@@ -22,8 +22,8 @@ static func result<Value, Intent>(value: Value, actionButtonIntent: Intent, acti
 
 ## Parameters
 
-- `value`: The value produced by the 
-- `actionButtonIntent`: The   used perform next
+- `value`: The value produced by the `AppIntent`
+- `actionButtonIntent`: The `AppIntent` used perform next
 - `dialog`: A custom success dialog
 
 

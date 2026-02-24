@@ -28,7 +28,7 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) if the message is val
 - `context_handle`: The context used to send the message.
 - `message_buffer`: A buffer holding the message to verify.
 - `token_buffer`: A buffer holding the token representing the cryptographic signature the protects the message.
-- `qop_state`: A pointer the function uses to return the quality of protection setting. See Quality of Protection Constants in   for valid values. Pass   to ignore this output.
+- `qop_state`: A pointer the function uses to return the quality of protection setting. See Quality of Protection Constants in [`Object Identifiers`](object-identifiers.md) for valid values. Pass `NULL` to ignore this output.
 
 ## See Also
 

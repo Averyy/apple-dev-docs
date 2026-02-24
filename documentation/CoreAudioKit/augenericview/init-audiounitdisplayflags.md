@@ -21,7 +21,7 @@ The initialized audio unit associated with the generic view, with display flags 
 ## Parameters
 
 - `inAudioUnit`: The audio unit associated with the generic view.
-- `inFlags`: One or more flags that specify display properties. You can combine multiple flags using the logical   ( ) operator. For the available flags, see  .
+- `inFlags`: One or more flags that specify display properties. You can combine multiple flags using the logical `OR` (`|`) operator. For the available flags, see `Generic View Display Flags`.
 
 ## Topics
 

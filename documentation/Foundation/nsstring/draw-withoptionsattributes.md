@@ -26,7 +26,7 @@ You should only invoke this method when there is a current graphics context.
 
 - `rect`: The rectangle in which to draw the string.
 - `options`: String drawing options.
-- `attributes`: A dictionary of text attributes to be applied to the string. These are the same attributes that can be applied to an   object, but in the case of   objects, the attributes apply to the entire string, rather than ranges within the string.
+- `attributes`: A dictionary of text attributes to be applied to the string. These are the same attributes that can be applied to an `NSAttributedString` object, but in the case of `NSString` objects, the attributes apply to the entire string, rather than ranges within the string.
 
 ## See Also
 

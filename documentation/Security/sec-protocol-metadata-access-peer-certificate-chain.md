@@ -28,7 +28,7 @@ Get the certificate chain of the protocol instance peer.
 
 ## Parameters
 
-- `metadata`: A   instance.
+- `metadata`: A `sec_protocol_metadata_t` instance.
 - `handler`: A block to invoke one or more times with sec_certificate_t objects
 
 

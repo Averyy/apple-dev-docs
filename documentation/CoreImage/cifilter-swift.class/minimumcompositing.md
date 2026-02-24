@@ -29,6 +29,9 @@ This method applies the minimum compositing filter to an image. The effect calcu
 
 The minimum compositing filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in the output image becoming brighter with both images’ colors:
 
 ```swift

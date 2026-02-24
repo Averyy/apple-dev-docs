@@ -27,7 +27,7 @@ Raises an `NSInvalidArgumentException` if `data` is `nil`.
 
 ## Parameters
 
-- `mdata`: The mutable data object into which to write the archive. This value must not be  .
+- `mdata`: The mutable data object into which to write the archive. This value must not be `nil`.
 
 ## See Also
 

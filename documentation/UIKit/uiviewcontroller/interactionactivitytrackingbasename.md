@@ -26,6 +26,26 @@ Use this property to customize the tracking name the activity uses in the signpo
 
 In many cases, you can set the tracking name once in `init`, `viewDidLoad,` or `awakeFromNib`. You can, however, change the tracking name in response to different configurations. In this example, the tracking name updates in response to toggling a switch.
 
+**Swift**:
+
+```swift
+func showImagesSwitchDidChange(_ sender: UISwitch) {
+    model.shadowImages = sender.isOn
+    interactionActivityTrackingBaseName = sender.isOn ? "FancyList" : "PlainList"
+    collectionView.reloadData()
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)showImagesSwitchDidChange:(UISwitch *)sender {
+    self.model.showImages = sender.isOn;
+    self.interactionActivityTrackingBaseName = sender.on ? @"FancyList" : @"PlainList";
+    [self.collectionView reloadData];
+}
+```
+
 When not explicitly set, custom subclasses use their class name as the base name, while base classes may use the [`accessibilityIdentifier`](uiaccessibilityidentification/accessibilityidentifier.md) of the controller’s managed view.
 
 If the view controller is a prominent child view controller of a [`UINavigationController`](uinavigationcontroller.md), [`UITabBarController`](uitabbarcontroller.md), or [`UISplitViewController`](uisplitviewcontroller.md), the parent may derive a name by applying a prefix:

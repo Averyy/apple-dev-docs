@@ -149,14 +149,20 @@ On return, x`Data` points to the values `[1.0, 2.0, 3.0, 10.0, 20.0, 30.0]`.
 
 ## Parameters
 
-- `method`: Note that this function ignores the options for convergence testing (for example,  ,  ,  ) because you’re responsible for convergence tests.
-- `iteration`: The current iteration number, starting from  . If  , the function finalizes the current iteration, and updates the value of  . Note that this may force some methods to restart, and slow convergence.
-- `converged`: The convergence status of each right-hand-side. Set   to   to indicate that the operation has converged the vector that it stores as column   of  , and the function must ignore it in this iteration.
-- `state`: A pointer to a state space with a size that   defines. Don’t alter the state space between iterations, and deallocate it after the final call to  .
-- `ApplyOperator`: The apply operator block to run. The block takes the following parameters:
+- `method`: The iterative method specification, such as the return value of [`SparseConjugateGradient()`](sparseconjugategradient().md). Note that this function ignores the options for convergence testing (for example, [`maxIterations`](sparselsmroptions/maxiterations.md), [`atol`](sparselsmroptions/atol.md), [`rtol`](sparselsmroptions/rtol.md)) because you’re responsible for convergence tests.
+- `iteration`: The current iteration number, starting from `0`. If `iteration<0`, the function finalizes the current iteration, and updates the value of `X`. Note that this may force some methods to restart, and slow convergence.
+- `converged`: The convergence status of each right-hand-side. Set `converged[j]` to `true` to indicate that the operation has converged the vector that it stores as column `j` of `X`, and the function must ignore it in this iteration.
+- `state`: A pointer to a state space with a size that [`SparseGetStateSize_Float(_:_:_:_:_:)`](sparsegetstatesize_float(_:_:_:_:_:).md) defines. Don’t alter the state space between iterations, and deallocate it after the final call to `SparseIterate`.
+- `ApplyOperator`: The apply operator block to run. The block takes the following parameters: - **accumulate**: Indicates whether to perform `y += op(A)x` (if `true`), or `y = op(A)x` (if `false`).
+- **trans**: Indicates whether `op(A)` is the application of *A*  if `CblasNoTrans`, or *Aᵀ* if `CblasTrans`.
+- **x**: The vector to multiply.
+- **y**: The vector for accumulating or storing the result.
 - `B`: The right-hand-sides to solve for.
-- `R`: The function may use other entries of   as a workspace. On return from a call with  , the function returns the exact residual vector  .
-- `X`: Depending on the method, the function may not update   at each iteration. Make a call with   after the function achieves convergence to update  .
+- `R`: The residual estimate. For the first entry, that is, when `iteration = 0`, set this to the residuals *b-Ax* (equal to `B` if `X = 0`). On return from each call with `iteration >= 0`, the first entries of each vector contain various estimates of norms to use in convergence testing. For CG and GMRES: - `R(0,j)` holds an estimate of *‖ b-Ax ‖₂* for the `j`-th right-hand-side. For LSMR: - `R(0,j)` holds an estimate of *‖ Aᵀ(b-Ax) ‖₂* for the `j`-th right-hand-side.
+- `R(1,j)` holds an estimate of *‖ b-Ax ‖₂* for the `j`-th right-hand-side.
+- `R(2,j)` holds an estimate of *‖ A ‖ꜰ*, the Frobenius norm of *A*, that the operation estimates using calculations from to the `j`-th right-hand-side.
+- `R(3,j)` holds an estimate of *cond(A)*, the condition number of A, that the operation estimates using calculations from the `j`-th right-hand-side. The function may use other entries of `R` as a workspace. On return from a call with `iteration < 0`, the function returns the exact residual vector *b-Ax*.
+- `X`: The current estimate of the solution vectors `X`. On entry with `iteration = 0`, this is an initial estimate for the solution. If no good estimate is available, use `X = 0.0`. Depending on the method, the function may not update `X` at each iteration. Make a call with `iteration < 0` after the function achieves convergence to update `X`.
 
 ## See Also
 

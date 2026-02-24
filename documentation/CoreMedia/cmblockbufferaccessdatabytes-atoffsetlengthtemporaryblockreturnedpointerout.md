@@ -30,11 +30,11 @@ This routine is use for accessing contiguous and noncontiguous data. If the data
 
 ## Parameters
 
-- `theBuffer`:   to operate on. Must not be  .
-- `offset`: Offset within the   offset range.
+- `theBuffer`: `CMBlockBuffer` to operate on. Must not be `NULL`.
+- `offset`: Offset within the `CMBlockBuffer's` offset range.
 - `length`: Desired number of bytes to access at offset.
-- `temporaryBlock`: A piece of memory, assumed to be at least   bytes in size. Must not be 
-- `returnedPointerOut`: Receives   if the desired amount of data could not be accessed at the given offset. Receives non-  if it could. The value returned is either a direct pointer into the   or to the  . Must not be  .
+- `temporaryBlock`: A piece of memory, assumed to be at least `length` bytes in size. Must not be `NULL`
+- `returnedPointerOut`: Receives `NULL` if the desired amount of data could not be accessed at the given offset. Receives non-`NULL` if it could. The value returned is either a direct pointer into the `CMBlockBuffer` or to the `temporaryBlock`. Must not be `NULL`.
 
 ## See Also
 

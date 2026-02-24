@@ -25,6 +25,29 @@ The default value of this property is `nil`, which causes the layer to use sourc
 
 In macOS, it is possible to modify the filter’s parameters after attaching it to the layer but you must use the layer’s [`setValue(_:forKeyPath:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKeyPath:)) method to do so. For example, to change the `inputRadius` parameter of the filter, you could use code similar to the following:
 
+**Swift**:
+
+```swift
+let layer = CALayer()
+         
+if let filter = CIFilter(name:"CIGaussianBlur") {
+    filter.name = "myFilter"
+    layer.backgroundFilters = [filter]
+    layer.setValue(1,
+                   forKeyPath: "backgroundFilters.myFilter.inputRadius")
+}
+```
+
+**Objective-C**:
+
+```objc
+CIFilter *filter = ...;
+CALayer *layer = ...;
+ 
+layer.compositingFilter = filter;
+[layer setValue:[NSNumber numberWithInt:1] forKeyPath:@"compositingFilter.inputRadius"];
+```
+
 Changing the inputs of the [`CIFilter`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class) object directly after it is attached to the layer causes undefined behavior.
 
 The following code shows how to create two overlapping text layers, background and foreground. Addition compositing is used to composite the foreground over the background.

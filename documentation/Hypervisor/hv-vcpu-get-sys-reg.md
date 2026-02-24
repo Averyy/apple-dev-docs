@@ -26,7 +26,7 @@ func hv_vcpu_get_sys_reg(_ vcpu: hv_vcpu_t, _ reg: hv_sys_reg_t, _ value: Unsafe
 
 - `vcpu`: The instance of the vCPU.
 - `reg`: The ID of the system register.
-- `value`: The value of the register   on output.
+- `value`: The value of the register `reg` on output.
 
 ## See Also
 

@@ -101,7 +101,7 @@ configuration.initialWorldMap = worldMap
 sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
 ```
 
-ARKit then attempts to  to the new world map—that is, to reconcile the received spatial-mapping information with what it senses of the local environment. This process is more likely to succeed if the user moves to areas of the local environment that they visited during the previous session. To help the user successfully resume the saved experience, this app uses the example `SnapshotAnchor` class to save a camera image in the world map, then displays that image while ARKit is relocalizing.
+ARKit then attempts to *relocalize* to the new world map—that is, to reconcile the received spatial-mapping information with what it senses of the local environment. This process is more likely to succeed if the user moves to areas of the local environment that they visited during the previous session. To help the user successfully resume the saved experience, this app uses the example `SnapshotAnchor` class to save a camera image in the world map, then displays that image while ARKit is relocalizing.
 
 #### Restore Ar Content After Relocalization
 

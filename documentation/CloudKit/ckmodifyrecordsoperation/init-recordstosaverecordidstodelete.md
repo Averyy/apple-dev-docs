@@ -27,8 +27,8 @@ The records that you intend to save or delete must all reside in the same databa
 
 ## Parameters
 
-- `recordsToSave`: The records to save. You can specify   for this parameter.
-- `recordIDsToDelete`: The IDs of the records to delete. You can specify   for this parameter.
+- `recordsToSave`: The records to save. You can specify `nil` for this parameter.
+- `recordIDsToDelete`: The IDs of the records to delete. You can specify `nil` for this parameter.
 
 ## See Also
 

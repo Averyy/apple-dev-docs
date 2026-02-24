@@ -21,7 +21,7 @@ class func compatibility(ofExportPreset presetName: String, with asset: AVAsset,
 
 ## Parameters
 
-- `presetName`: The name of the preset whose compatibility you want to test. See   for preset values an asset export session supports.
+- `presetName`: The name of the preset whose compatibility you want to test. See [`Export presets`](export-presets.md) for preset values an asset export session supports.
 - `asset`: The asset to export.
 - `outputFileType`: The file type of the output container.
 - `handler`: A callback the system passes a Boolean result when it determines the compatibility of the preset.

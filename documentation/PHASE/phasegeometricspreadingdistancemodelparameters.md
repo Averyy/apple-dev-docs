@@ -25,13 +25,29 @@ class PHASEGeometricSpreadingDistanceModelParameters
 
 #### Overview
 
-This class implements a  effect — a strategy that aims to model the real-world manner in which sound changes with distance. When the distance between a sound and listener changes, the roll-off effect dissipates certain audio frequencies more than others.
+This class implements a *roll-off* effect — a strategy that aims to model the real-world manner in which sound changes with distance. When the distance between a sound and listener changes, the roll-off effect dissipates certain audio frequencies more than others.
 
 ##### Dissipate Sound By Choosing a Roll Off Factor
 
 PHASE emphasizes or deemphasizes the volume loss of the mixer’s sound sources based on the [`rolloffFactor`](phasegeometricspreadingdistancemodelparameters/rollofffactor.md) you choose. For example, a [`rolloffFactor`](phasegeometricspreadingdistancemodelparameters/rollofffactor.md) of `1.0` reduces sound between the source and listener by 6 dB for every doubling of distance. At `2.0`, the loss doubles. At `0.5`, the loss halves.
 
 To add a geometric-spreading distance model to a spatial sounds, set the mixer’s [`distanceModelParameters`](phasespatialmixerdefinition/distancemodelparameters.md) property to an instance of this class. For example:
+
+**Swift**:
+
+```swift
+let simpleModel = PHASEGeometricSpreadingDistanceModelParameters()
+simpleModel.rolloffFactor = 1.0
+spatialMixer.distanceModelParameters = simpleModel
+```
+
+**Objective-C**:
+
+```objc
+PHASEGeometricSpreadingDistanceModelParameters* simpleModel = [[PHASEGeometricSpreadingDistanceModelParameters alloc] init];
+simpleModel.rolloffFactor = 1.f;
+spatialMixer.distanceModelParameters = simpleModel;
+```
 
 ## Topics
 

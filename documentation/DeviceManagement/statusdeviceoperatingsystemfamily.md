@@ -32,6 +32,10 @@ object StatusDeviceOperatingSystemFamily
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
+## Properties
+
+- `device.operating-system.family` (string) *(required)*: The operating system family in use on the device, such as `macOS` or `iOS`.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

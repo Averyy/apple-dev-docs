@@ -16,7 +16,7 @@ init(sceneAnchor: UnitPoint, contentAlignment: Alignment = .center, @ViewBuilder
 
 ## Parameters
 
-- `sceneAnchor`: The anchor point for aligning the ornament’s content   (based on the  ) with the scene.
+- `sceneAnchor`: The anchor point for aligning the ornament’s content (based on the `contentAlignment`) with the scene.
 - `contentAlignment`: The alignment in the ornament used to position it.
 - `content`: The content of the ornament.
 

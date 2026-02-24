@@ -67,7 +67,7 @@ Decryption requires the encrypted data parameter from the HPKE envelope, the ses
 
 Use the inputs, along with the following HPKE options, to decrypt the encrypted data as the HPKE specification describes:
 
-|  |  |
+| **Option** | **Value** |
 | --- | --- |
 | KEM | DHKEM(P-256, HKDF-SHA256) |
 | KDF | HKDF-SHA256 |

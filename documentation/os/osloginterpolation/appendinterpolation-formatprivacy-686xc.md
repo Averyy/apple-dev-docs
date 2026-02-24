@@ -27,7 +27,7 @@ Don’t call this function directly. The system calls it automatically when inte
 ## Parameters
 
 - `boolean`: The Boolean value to add to the message.
-- `format`: The format to apply to the Boolean value. You format Boolean values as either true/false or yes/no strings. If you don’t specify this parameter, the default format uses true/false strings. For more information, see  .
+- `format`: The format to apply to the Boolean value. You format Boolean values as either true/false or yes/no strings. If you don’t specify this parameter, the default format uses true/false strings. For more information, see [`OSLogBoolFormat`](oslogboolformat.md).
 - `privacy`: The privacy level of the information. If you don’t specify this parameter, the system uses the default rules to determine whether to show the information.
 
 

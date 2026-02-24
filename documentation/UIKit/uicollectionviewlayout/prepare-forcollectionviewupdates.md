@@ -24,7 +24,7 @@ When items are inserted or deleted, the collection view notifies its layout obje
 
 ## Parameters
 
-- `updateItems`: An array of   objects that identify the changes being made.
+- `updateItems`: An array of [`UICollectionViewUpdateItem`](uicollectionviewupdateitem.md) objects that identify the changes being made.
 
 ## See Also
 

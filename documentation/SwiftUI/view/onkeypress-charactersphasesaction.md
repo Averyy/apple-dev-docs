@@ -26,9 +26,9 @@ A modified view that binds hardware keyboard input when focused.
 
 ## Parameters
 
-- `characters`: The set of characters to match against incoming   hardware keyboard events.
-- `phases`: The key-press phases to match ( ,  , and   ). The default value is  .
-- `action`: The action to perform. The action receives a value   describing the matched key event. Return   to consume the   event and prevent further dispatch, or   to allow dispatch   to continue.
+- `characters`: The set of characters to match against incoming hardware keyboard events.
+- `phases`: The key-press phases to match (`.down`, `.repeat`, and `.up`). The default value is `[.down, .repeat]`.
+- `action`: The action to perform. The action receives a value describing the matched key event. Return `.handled` to consume the event and prevent further dispatch, or `.ignored` to allow dispatch to continue.
 
 ## See Also
 

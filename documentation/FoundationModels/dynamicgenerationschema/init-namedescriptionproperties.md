@@ -30,6 +30,8 @@ init(name: String, description: String? = nil, properties: [DynamicGenerationSch
   Creates an array schema.
 - [init(name:description:anyOf:)](dynamicgenerationschema/init(name:description:anyof:).md)
   Creates an any-of schema.
+- [init(name: String, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [DynamicGenerationSchema.Property])](dynamicgenerationschema/init(name:description:representnilexplicitlyingeneratedcontent:properties:).md)
+  Creates an object schema.
 - [init(referenceTo: String)](dynamicgenerationschema/init(referenceto:).md)
   Creates an refrence schema.
 - [init<Value>(type: Value.Type, guides: [GenerationGuide<Value>])](dynamicgenerationschema/init(type:guides:).md)

@@ -28,9 +28,9 @@ A standard sRGB color space clamps the `white` component to a range of `0` to `1
 
 ## Parameters
 
-- `colorSpace`: The profile that specifies how to interpret the color   for display. The default is  .
-- `white`: A value that indicates how white   the color is, with higher values closer to 100% white, and lower   values closer to 100% black.
-- `opacity`: An optional degree of opacity, given in the range   to   . A value of   means 100% transparency, while a value of    means 100% opacity. The default is  .
+- `colorSpace`: The profile that specifies how to interpret the color for display. The default is [`Color.RGBColorSpace.sRGB`](color/rgbcolorspace/srgb.md).
+- `white`: A value that indicates how white the color is, with higher values closer to 100% white, and lower values closer to 100% black.
+- `opacity`: An optional degree of opacity, given in the range `0` to `1`. A value of `0` means 100% transparency, while a value of `1` means 100% opacity. The default is `1`.
 
 ## See Also
 

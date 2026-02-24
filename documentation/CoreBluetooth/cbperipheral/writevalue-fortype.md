@@ -34,7 +34,7 @@ This method copies the data passed into the `data` parameter, and you can dispos
 
 - `data`: The value to write.
 - `characteristic`: The characteristic containing the value to write.
-- `type`: The type of write to execute. For a list of the possible types of writes to a characteristic’s value, see  .
+- `type`: The type of write to execute. For a list of the possible types of writes to a characteristic’s value, see [`CBCharacteristicWriteType`](cbcharacteristicwritetype.md).
 
 ## See Also
 

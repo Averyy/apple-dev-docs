@@ -29,7 +29,7 @@ An asset contains one or more top-level objects (instances of the [`MDLObject`](
 
 ## Parameters
 
-- `index`: An index in the asset’s list of top-level objects; between zero and the value of the   property.
+- `index`: An index in the asset’s list of top-level objects; between zero and the value of the [`count`](mdlasset/count.md) property.
 
 ## See Also
 

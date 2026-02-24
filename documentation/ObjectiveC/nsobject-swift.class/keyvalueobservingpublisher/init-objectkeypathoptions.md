@@ -28,7 +28,7 @@ This publisher produces a new element every time the observed property changes.
 
 - `object`: The object that contains the property to publish.
 - `keyPath`: The key path, relative to the object receiving this message, of the property to publish.
-- `options`: Options that determine which elements the publisher produces. Set this parameter to   to receive new elements when the observed property changes.
+- `options`: Options that determine which elements the publisher produces. Set this parameter to `[]` to receive new elements when the observed property changes.
 
 
 ---

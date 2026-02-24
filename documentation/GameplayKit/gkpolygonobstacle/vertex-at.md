@@ -31,7 +31,7 @@ The coordinate space you define obstacles in, whether used for pathfinding or wi
 
 ## Parameters
 
-- `index`: An index to the obstacle’s list of vertices, between zero and the value of the   property.
+- `index`: An index to the obstacle’s list of vertices, between zero and the value of the [`vertexCount`](gkpolygonobstacle/vertexcount.md) property.
 
 ## See Also
 

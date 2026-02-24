@@ -25,7 +25,7 @@ Your driver extension can call this method to determine if a target ID is actual
 ## Parameters
 
 - `targetID`: The ID of the target to check.
-- `result`: A pointer to a Boolean value that the framework sets to   if the target is present and   otherwise.
+- `result`: A pointer to a Boolean value that the framework sets to `true` if the target is present and `false` otherwise.
 
 ## See Also
 

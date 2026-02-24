@@ -16,6 +16,11 @@ The dictionary used to configure VPN tunnels.
 object VPN.AlwaysOn.TunnelConfigurationElement
 ```
 
+## Properties
+
+- `Interfaces` ([string]): The interfaces to apply this configuration to.
+- `ProtocolType` (string) *(required)*: The type of connection, which needs to be `IKEv2`.
+
 ## See Also
 
 - [object VPN.AlwaysOn.AllowedCaptiveNetworkPluginElement](vpn/alwayson-data.dictionary/allowedcaptivenetworkpluginelement.md)

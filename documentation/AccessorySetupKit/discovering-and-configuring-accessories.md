@@ -19,7 +19,14 @@ To discover accessories and present them in your app:
 
 To prepare your app to discover accessories, add the `NSAccessorySetupKitSupports` key to its information property list. Set its value to an array of strings that contains one or more of the following values:
 
+- **`Bluetooth`**: Add this value if your app discovers accessories using Bluetooth or Bluetooth Low Energy.
+- **`WiFi`**: Add this value if your app discovers accessories by finding Wi-Fi SSIDs that the accessories publish.
+
 If you add `Bluetooth` to the list of supported protocols, you also need to add the following keys and values to your app’s information property list:
+
+- **`NSAccessorySetupBluetoothCompanyIdentifiers`**: An array of strings that represent the Bluetooth company identifiers for accessories your app configures.
+- **`NSAccessorySetupBluetoothNames`**: An array of strings that represent the Bluetooth device names for accessories your app configures.
+- **`NSAccessorySetupBluetoothServices`**: An array of strings that represent the hexadecimal values of Bluetooth services for accessories your app configures.
 
 > ❗ **Important**:  If your app tries to discover Bluetooth accessories during setup without supplying these keys and values, or uses identifiers, names, or services that it doesn’t include in its information property list, the app crashes. This only affects use of AccessorySetupKit discovery and selection; you can use other services and properties on the accessory after the person using the app selects it.
 

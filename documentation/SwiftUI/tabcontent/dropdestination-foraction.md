@@ -73,7 +73,7 @@ var body: some View {
 ## Parameters
 
 - `payloadType`: Type of the models that are dropped.
-- `action`: A closure that takes the dropped content and responds   appropriately. The closure takes one argument, which   is an array of Transferable items   that represents the data to insert.
+- `action`: A closure that takes the dropped content and responds appropriately. The closure takes one argument, which is an array of Transferable items that represents the data to insert.
 
 
 ---

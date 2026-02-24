@@ -21,11 +21,15 @@ case additiveLookAt(targetAxis: SIMD3<Float>)
 
 ##### Demand Target
 
+- **Source**: The model space orientation of the constrained joint from the FK demands pose.
+- **Target**: The model space orientation aligning the associated `targetAxis` with the direction from the current model space joint position to [`lookAtTargetPosition`](ikcomponent/constraint/lookattargetposition.md).
+- **Delta**: The rotation difference between `Source` and `Target`.
+
 The rotation weight of [`animationOverrideWeight`](ikcomponent/constraint/animationoverrideweight.md) determines how much of the `Delta` is added to the `Source`.
 
 ## Parameters
 
-- `targetAxis`: The unit vector from the joint to the look-at target defined in the   local space of the constrained joint.
+- `targetAxis`: The unit vector from the joint to the look-at target defined in the local space of the constrained joint.
 
 
 ---

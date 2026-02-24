@@ -26,7 +26,7 @@ SwiftUI calls this method for each instance of [`GroupBox`](groupbox.md) created
 
 ## Parameters
 
-- `configuration`: The properties of the group box instance being   created.
+- `configuration`: The properties of the group box instance being created.
 
 ## See Also
 

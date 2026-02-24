@@ -37,7 +37,7 @@ Ending the transparency layer restores these parameters to their previous values
 
 ## Parameters
 
-- `auxiliaryInfo`: A dictionary that specifies any additional information, or  .
+- `auxiliaryInfo`: A dictionary that specifies any additional information, or `NULL`.
 
 ## See Also
 

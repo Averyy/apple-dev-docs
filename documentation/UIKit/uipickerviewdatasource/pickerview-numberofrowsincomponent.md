@@ -25,7 +25,7 @@ The number of rows for the component.
 ## Parameters
 
 - `pickerView`: The picker view requesting the data.
-- `component`: A zero-indexed number identifying a component of  . Components are numbered left-to-right.
+- `component`: A zero-indexed number identifying a component of `pickerView`. Components are numbered left-to-right.
 
 ## See Also
 

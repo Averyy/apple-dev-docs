@@ -33,9 +33,9 @@ This method should be called once when the application starts up. Invoking it ag
 
 ## Parameters
 
-- `options`: If not nil, a   containing   keys (currently just  ).
-- `queue`: The   to invoke the handle block on.
-- `handler`: The   block to execute to process helper commands.
+- `options`: If not nil, a [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) containing `kNEHotspotHelperOption*` keys (currently just `kNEHotspotHelperOptionDisplayName`).
+- `queue`: The [`dispatch_queue_t`](https://developer.apple.com/documentation/Dispatch/dispatch_queue_t) to invoke the handle block on.
+- `handler`: The `NEHotspotHelperHandler` block to execute to process helper commands.
 
 ## See Also
 

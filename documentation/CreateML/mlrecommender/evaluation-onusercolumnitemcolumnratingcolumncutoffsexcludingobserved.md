@@ -29,9 +29,9 @@ where |A ∩ P𝑘| is the number of elements in the intersection of A and P𝑘
 - `testingData`: A MLDataTable containing testing data.
 - `userColumn`: Name of the Int or String typed column in the testing data containing user identifiers.
 - `itemColumn`: Name of the Int or String typed column in the testing data containing item identifiers.
-- `ratingColumn`: Name of an Int or Double typed column optionally in the testing data containing   scores or ratings. The default is nil, which corresponds to no rating column.
-- `cutoffs`: A list of Ints corresponding to each value at which the precision and recall will be evaluated.   The default is [1,2,3,4,5].
-- `excludingObserved`: Specifies whether user-item interactions observed in the training data are excluded when   generating evaluation result. The default is true.
+- `ratingColumn`: Name of an Int or Double typed column optionally in the testing data containing scores or ratings. The default is nil, which corresponds to no rating column.
+- `cutoffs`: A list of Ints corresponding to each value at which the precision and recall will be evaluated. The default is [1,2,3,4,5].
+- `excludingObserved`: Specifies whether user-item interactions observed in the training data are excluded when generating evaluation result. The default is true.
 
 ## See Also
 

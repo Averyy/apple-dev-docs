@@ -6,7 +6,7 @@ Create a history of incremental changes to your project using commits and pushin
 
 #### Overview
 
-When you use a source control repository to manage your Xcode project, you can save changes to your repository in incremental states called commits. A  consists of a snapshot of your project’s state at a particular point in time, a message that describes the set of changes from the previous state, and additional metadata like a unique hash that identifies the commit.
+When you use a source control repository to manage your Xcode project, you can save changes to your repository in incremental states called commits. A *commit* consists of a snapshot of your project’s state at a particular point in time, a message that describes the set of changes from the previous state, and additional metadata like a unique hash that identifies the commit.
 
 ![Conceptual diagram that shows one row of four commits. The rightmost commit contains a label that describes some information about the commit, including a commit hash, commit message, and author name.](https://docs-assets.developer.apple.com/published/e531630d352ad4ce907bcbff40ded594/tracking-code-changes-in-a-source-control-repository-1%402x.png)
 
@@ -16,7 +16,7 @@ First you stage the changes to your project files that you want to include in a 
 
 As you make changes to your project files, Xcode tracks those changes and marks them both in the Project navigator and in the source editor.
 
-- The Project navigator annotates files with changes since the last commit, using an  for new files or an  for modified files.
+- The Project navigator annotates files with changes since the last commit, using an *A* for new files or an *M* for modified files.
 - The source editor displays a change bar in the gutter.
 
 If you hover over the change bar, the source editor highlights both the lines and the text in the lines that you changed. Then use the change bar pop-up menu to show, stage, or discard a change you make.
@@ -96,7 +96,7 @@ Before you restore a previous commit of the code, make sure you don’t have any
 1. Open the Source Control navigator.
 2. In the Repositories navigator, expand your repository and the Branches folder.
 3. Select the branch that contains the commit you want to restore.
-4. In the detail view, Control-click the desired commit and choose Switch to “[]”.
+4. In the detail view, Control-click the desired commit and choose Switch to “[*commit-hash*]”.
 5. In the dialog, click Switch. Xcode restores your project’s state to the earlier commit.
 
 To learn more about restoring changes that you stash, see [`Organizing your code changes with source control`](organizing-your-code-changes-with-source-control.md).

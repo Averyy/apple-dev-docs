@@ -16,7 +16,7 @@ init(rawValue: UInt32)
 
 ## Parameters
 
-- `rawValue`: An initial value for the structure composed as the bitwise   of zero or more of the valid values.
+- `rawValue`: An initial value for the structure composed as the bitwise `OR` of zero or more of the valid values.
 
 
 ---

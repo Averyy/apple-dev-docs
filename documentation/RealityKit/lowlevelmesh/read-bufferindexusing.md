@@ -22,8 +22,8 @@ func read(bufferIndex index: Int, using commandBuffer: any MTLCommandBuffer) -> 
 
 ## Parameters
 
-- `index`: The index of the buffer to read.   Use a value that is less than  .
-- `commandBuffer`: The   you intend   to use for reading.   RealityKit waits for the command buffer to complete before discarding the buffer.
+- `index`: The index of the buffer to read. Use a value that is less than [`vertexBufferCount`](lowlevelmesh/descriptor-swift.struct/vertexbuffercount.md).
+- `commandBuffer`: The [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) you intend to use for reading. RealityKit waits for the command buffer to complete before discarding the buffer.
 
 ## See Also
 

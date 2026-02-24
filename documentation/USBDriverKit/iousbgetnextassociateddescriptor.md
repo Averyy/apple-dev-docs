@@ -26,7 +26,7 @@ This method uses `getNextDescriptor`, but returns `NULL` if it finds another des
 
 - `configurationDescriptor`: A configuration descriptor that contains the descriptors to iterate through.
 - `parentDescriptor`: A descriptor pointer within the bounds of the configuration descriptor.
-- `currentDescriptor`: A descriptor pointer within the bounds of the configuration descriptor, or  .
+- `currentDescriptor`: A descriptor pointer within the bounds of the configuration descriptor, or `NULL`.
 
 ## See Also
 

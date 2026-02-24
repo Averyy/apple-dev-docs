@@ -24,8 +24,8 @@ func write(_ data: Data) async throws
 
 ## Parameters
 
-- `data`: An   object containing the data to write.
-- `completionHandler`: A block that will be executed by the system on an internal system thread when the data is written into the receive buffer of the socket associated with the flow. The caller should use this callback as an indication that it is possible to write more data to the flow without using up excessive buffer memory. If an error occurs while writing the data then a non-nil   object is passed to the block. See   in   for a list of possible errors.
+- `data`: An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing the data to write.
+- `completionHandler`: A block that will be executed by the system on an internal system thread when the data is written into the receive buffer of the socket associated with the flow. The caller should use this callback as an indication that it is possible to write more data to the flow without using up excessive buffer memory. If an error occurs while writing the data then a non-nil [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object is passed to the block. See `NEAppProxyFlowError` in [`NEAppProxyFlow`](neappproxyflow.md) for a list of possible errors.
 
 ## See Also
 

@@ -18,7 +18,7 @@ final class TelephonyMessagingSession
 
 ## Mentions
 
-- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
+- [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
 
 #### Overview
 
@@ -70,7 +70,7 @@ Use the [`shared`](telephonymessagingsession/shared.md) instance provided by thi
 
 ## See Also
 
-- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
+- [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
   Use TelephonyMessagingKit to send and receive SMS, MMS, and RCS messages.
 - [Default Carrier Messaging App](../BundleResources/Entitlements/com.apple.developer.carrier-messaging-app.md)
   A Boolean value that indicates whether the app can use the TelephonyMessagingKit framework to serve as the default carrier messaging app.

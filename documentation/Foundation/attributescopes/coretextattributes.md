@@ -22,7 +22,7 @@ struct CoreTextAttributes
 
 #### Overview
 
-Note that this is  an [`AttributeScope`](AttributeScope.md), but merely a namespace for [`AttributedStringKey`](AttributedStringKey.md)s that describe CoreText concepts. Those attributes may be used by  to describe those concepts. Unless documented otherwise, frameworks generally inidcate support for a certain attribute by adding it to the framework’s [`AttributeScope`](AttributeScope.md).
+Note that this is *not* an [`AttributeScope`](AttributeScope.md), but merely a namespace for [`AttributedStringKey`](AttributedStringKey.md)s that describe CoreText concepts. Those attributes may be used by *other frameworks* to describe those concepts. Unless documented otherwise, frameworks generally inidcate support for a certain attribute by adding it to the framework’s [`AttributeScope`](AttributeScope.md).
 
 CoreText specifically does not support Swift [`AttributedStringKey`](AttributedStringKey.md), and will not recognize the attributes nested in this namespace when used directly with CoreText API, no matter if used in an `AttributedString` or `NSAttributedString`.
 

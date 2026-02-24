@@ -24,7 +24,7 @@ class UIPickerView
 
 #### Overview
 
-A picker view displays one or more wheels that the user manipulates to select items. Each wheel — known as a  — has a series of indexed rows representing the selectable items. Each row displays a string or view so that the user can identify the item on that row. Users select items by rotating the wheels to the desired values, which align with a selection indicator.
+A picker view displays one or more wheels that the user manipulates to select items. Each wheel — known as a *component* — has a series of indexed rows representing the selectable items. Each row displays a string or view so that the user can identify the item on that row. Users select items by rotating the wheels to the desired values, which align with a selection indicator.
 
 > **Note**:  The [`UIDatePicker`](uidatepicker.md) class uses a custom subclass of [`UIPickerView`](uipickerview.md) to display dates and times. To see an example, tap the add (”+”) button in the Alarm pane of the Clock app.
 

@@ -20,7 +20,7 @@ A subclass can override this method to interact with custom glyph storage.
 
 ## Parameters
 
-- `attachmentSize`: The size the glyphs in   (assumed to be attachments) will be asked to draw themselves at.
+- `attachmentSize`: The size the glyphs in `glyphRange` (assumed to be attachments) will be asked to draw themselves at.
 - `glyphRange`: The range of glyphs the attachment size applies to.
 
 ## See Also

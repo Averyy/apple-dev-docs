@@ -21,7 +21,7 @@ virtual kern_return_t GetDescriptors(IOUSBStandardEndpointDescriptors *descripto
 ## Parameters
 
 - `descriptors`: A pointer to a variable. On output, this variable contains the endpoint descriptors for the pipe.
-- `type`: The options indicating which descriptors to retrieve. For a list of possible values, see  .
+- `type`: The options indicating which descriptors to retrieve. For a list of possible values, see [`IOUSBGetEndpointDescriptorOptions`](iousbgetendpointdescriptoroptions.md).
 
 ## See Also
 

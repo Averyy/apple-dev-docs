@@ -20,7 +20,8 @@ func fileProviderConnection() async throws -> NSXPCConnection
 
 ## Parameters
 
-- `completionHandler`: A block that is called on an anonymous background queue. The system passes this block the following parameters:
+- `completionHandler`: A block that is called on an anonymous background queue. The system passes this block the following parameters: - **`connection`**: An [`NSXPCConnection`](nsxpcconnection.md) object for the service, or `nil` if an error occurs.
+- **`error`**: If an error occurs, this property contains an object that describes the error; otherwise, it is set to `nil`.
 
 ## See Also
 

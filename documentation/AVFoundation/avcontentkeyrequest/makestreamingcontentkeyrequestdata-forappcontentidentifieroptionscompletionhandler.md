@@ -28,8 +28,9 @@ If [`AVContentKeyRequestProtocolVersionsKey`](avcontentkeyrequestprotocolversion
 
 - `appIdentifier`: An opaque identifier for the app.
 - `contentIdentifier`: An opaque identifier for the content.
-- `options`: A dictionary containing any additional information required to obtain the key. The value of this parameter is   when no additional information is required.
-- `handler`: A block called after the streaming content key request has been prepared.
+- `options`: A dictionary containing any additional information required to obtain the key. The value of this parameter is `nil` when no additional information is required.
+- `handler`: A block called after the streaming content key request has been prepared. - **contentKeyRequestData**: The streaming content key request data.
+- **error**: An object that describes the error, if one occurred; otherwise, the value is `nil`.
 
 ## See Also
 

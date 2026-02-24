@@ -28,7 +28,7 @@ The notifier suppresses guest exits caused by the matching I/O and instead sends
 - `size`: Size to match (1, 2, or 4).
 - `value`: The value to match against.
 - `mach_port`: The Mach port to write to; requires send permission.
-- `flags`: Notifier options using  .
+- `flags`: Notifier options using [`hv_ion_flags_t`](hv_ion_flags_t.md).
 
 ## See Also
 

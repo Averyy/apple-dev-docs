@@ -30,8 +30,8 @@ Invoke this method only when the local player is the current participant. To rec
 
 ## Parameters
 
-- `matchData`: Your game-specific data representing the match state. For example, include the current participant’s activity while taking their turn in this object. Don’t pass   as this parameter.
-- `completionHandler`: The block receives the following parameter:
+- `matchData`: Your game-specific data representing the match state. For example, include the current participant’s activity while taking their turn in this object. Don’t pass `nil` as this parameter.
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameter: - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

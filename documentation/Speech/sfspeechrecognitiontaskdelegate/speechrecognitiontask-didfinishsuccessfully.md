@@ -20,8 +20,8 @@ optional func speechRecognitionTask(_ task: SFSpeechRecognitionTask, didFinishSu
 
 ## Parameters
 
-- `task`: The speech recognition task (an   object) that represents the request.
-- `successfully`: A Boolean value that indicates whether the task was successful. When this parameter is  , use the   property of the task to get information about why the task was unsuccessful.
+- `task`: The speech recognition task (an [`SFSpeechRecognitionTask`](sfspeechrecognitiontask.md) object) that represents the request.
+- `successfully`: A Boolean value that indicates whether the task was successful. When this parameter is `false`, use the [`error`](sfspeechrecognitiontask/error.md) property of the task to get information about why the task was unsuccessful.
 
 ## See Also
 

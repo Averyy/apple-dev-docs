@@ -57,7 +57,7 @@ struct ContentView: View {
 
 ## Parameters
 
-- `view`: The   to use as the background behind the list   row view.
+- `view`: The [`View`](view.md) to use as the background behind the list row view.
 
 ## See Also
 

@@ -89,7 +89,7 @@ The iOS 16 SDK provides support to develop apps for iPhone and iPad running iOS 
 
 ###### Known Issues
 
-- When using the new Metal mesh shaders feature, render pipeline state objects (PSOs) created with a mesh shader stage but without a object shader stage can fail to compile or fail to work correctly on some devices. (89836551)  When creating render PSOs with a mesh shader stage, also include a (potentially trivial pass-through) object shader stage.
+- When using the new Metal mesh shaders feature, render pipeline state objects (PSOs) created with a mesh shader stage but without a object shader stage can fail to compile or fail to work correctly on some devices. (89836551) **Workaround:** When creating render PSOs with a mesh shader stage, also include a (potentially trivial pass-through) object shader stage.
 
 ###### Deprecations
 
@@ -99,7 +99,7 @@ The iOS 16 SDK provides support to develop apps for iPhone and iPad running iOS 
 
 ###### Known Issues
 
-- `MetalFX` effect outputs aren’t designed to be consumed by the CPU. Outputting to a texture that is read only by the CPU might result in synchronization issues. (91515075)  If a CPU reading of the `MetalFX` output is desired, instead of encoding the `MetalFX` effect as the last item in a command buffer, encode a placeholder blit that consumes the `MetalFX` output texture (a 1-pixel region blit is fine) in the command buffer. After the command buffer with the placeholder blit is finished, reading of the `MetalFX` effect output texture with CPU synchronizes correctly.
+- `MetalFX` effect outputs aren’t designed to be consumed by the CPU. Outputting to a texture that is read only by the CPU might result in synchronization issues. (91515075) **Workaround:** If a CPU reading of the `MetalFX` output is desired, instead of encoding the `MetalFX` effect as the last item in a command buffer, encode a placeholder blit that consumes the `MetalFX` output texture (a 1-pixel region blit is fine) in the command buffer. After the command buffer with the placeholder blit is finished, reading of the `MetalFX` effect output texture with CPU synchronizes correctly.
 
 ##### Networking
 
@@ -188,7 +188,7 @@ The iOS 16 SDK provides support to develop apps for iPhone and iPad running iOS 
 
 ###### Deprecations
 
-- `[UIViewController shouldAutorotate]` has been deprecated is no longer supported. `[UIViewController attemptRotationToDeviceOrientation]` has been deprecated and replaced with `[UIViewController setNeedsUpdateOfSupportedInterfaceOrientations]`.  Apps relying on `shouldAutorotate` should reflect their preferences using the view controllers `supportedInterfaceOrientations`. If the supported orientations change, use `-[UIViewController setNeedsUpdateOfSupportedInterface
+- `[UIViewController shouldAutorotate]` has been deprecated is no longer supported. `[UIViewController attemptRotationToDeviceOrientation]` has been deprecated and replaced with `[UIViewController setNeedsUpdateOfSupportedInterfaceOrientations]`. **Workaround:** Apps relying on `shouldAutorotate` should reflect their preferences using the view controllers `supportedInterfaceOrientations`. If the supported orientations change, use `-[UIViewController setNeedsUpdateOfSupportedInterface
 
 ##### Wallet
 

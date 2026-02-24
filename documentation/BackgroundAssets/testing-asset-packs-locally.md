@@ -36,7 +36,7 @@ You create a root CA on your Mac using Keychain Access. To quickly open Keychain
 
 ![A screenshot of Keychain Access that shows the Certificate Assistant window with the Conclusion sheet that you see after creating a root certificate authority.](https://docs-assets.developer.apple.com/published/d0f73413da2ab7855fcd4a33ab443121/testing-asset-packs-create-root-ca%402x.png)
 
-In Keychain Access, select the “login” keychain in the sidebar and click the Certificates tab (not the My Certificates tab). Control-click on your new CA and select Export . In the dialog that appears, choose Certificate (`.cer`) as the file format, select a location to save the exported certificate, and click Save.
+In Keychain Access, select the “login” keychain in the sidebar and click the Certificates tab (not the My Certificates tab). Control-click on your new CA and select Export *Certificate Name*. In the dialog that appears, choose Certificate (`.cer`) as the file format, select a location to save the exported certificate, and click Save.
 
 For more information on creating certificate authorities, see [`Keychain Access User Guide`](https://developer.apple.comhttps://support.apple.com/guide/keychain-access).
 

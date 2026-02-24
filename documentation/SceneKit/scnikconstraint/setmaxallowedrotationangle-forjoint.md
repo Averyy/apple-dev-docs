@@ -29,7 +29,7 @@ The default rotation limit for each joint is 180 degrees in either direction, al
 ## Parameters
 
 - `angle`: The maximum rotation, in degrees, that SceneKit should apply to the specified node when evaluating the constraint.
-- `node`: A node affected by the constraint—either the node whose   property references the constraint, or one of that node’s parent or ancestor nodes up to the node specified by the constraint’s   property.
+- `node`: A node affected by the constraint—either the node whose [`constraints`](scnnode/constraints.md) property references the constraint, or one of that node’s parent or ancestor nodes up to the node specified by the constraint’s [`chainRootNode`](scnikconstraint/chainrootnode.md) property.
 
 ## See Also
 

@@ -22,7 +22,7 @@ init<I>(isOn: Bool, intent: I, @ViewBuilder label: () -> Label) where I : AppInt
 ## Parameters
 
 - `isOn`: Whether the toggle is on or off.
-- `intent`: The   to be performed.
+- `intent`: The `AppIntent` to be performed.
 - `label`: A view that describes the purpose of the toggle.
 
 ## See Also

@@ -29,7 +29,7 @@ An implementation that doesn’t supply the extents can ignore the packer and ca
 - `directory`: The directory in which to create the file.
 - `attributes`: Attributes to apply to the new file.
 - `packer`: An extent packer you use to pack the file’s allocated disk space.
-- `reply`: A block or closure to indicate success or failure. If creation succeeds, pass the newly created   and its  , along with a   error. If creation fails, pass the relevant error as the third parameter; FSKit ignores any   or   in this case. For an   Swift implementation, there’s no reply handler; instead, return a tuple of the   and its   or throw an error.
+- `reply`: A block or closure to indicate success or failure. If creation succeeds, pass the newly created [`FSItem`](fsitem.md) and its [`FSFileName`](fsfilename.md), along with a `nil` error. If creation fails, pass the relevant error as the third parameter; FSKit ignores any [`FSItem`](fsitem.md) or [`FSFileName`](fsfilename.md) in this case. For an `async` Swift implementation, there’s no reply handler; instead, return a tuple of the [`FSItem`](fsitem.md) and its [`FSFileName`](fsfilename.md) or throw an error.
 
 ## See Also
 

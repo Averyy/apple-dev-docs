@@ -26,8 +26,8 @@ The result of executing the closure with the specified transaction value.
 
 ## Parameters
 
-- `keyPath`: A key path that indicates the property of the    structure to update.
-- `value`: The new value to set for the item specified by  .
+- `keyPath`: A key path that indicates the property of the [`Transaction`](transaction.md) structure to update.
+- `value`: The new value to set for the item specified by `keyPath`.
 - `body`: A closure to execute.
 
 ## See Also

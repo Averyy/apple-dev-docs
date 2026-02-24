@@ -21,7 +21,7 @@ init(predicate: NSPredicate?)
 
 ## Parameters
 
-- `predicate`: A predicate that limits the results that the query returns. For a list of convenience methods for building predicates, see  .
+- `predicate`: A predicate that limits the results that the query returns. For a list of convenience methods for building predicates, see [`HKQuery`](hkquery.md).
 
 
 ---

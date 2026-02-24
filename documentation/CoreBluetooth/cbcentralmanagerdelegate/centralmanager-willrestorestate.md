@@ -27,7 +27,7 @@ This method only applies to apps that opt in to the state preservation and resto
 ## Parameters
 
 - `central`: The central manager that provides this information.
-- `dict`: A dictionary that contains information about the central manager preserved by the system when it terminated the app. For the available keys to this dictionary, see  .
+- `dict`: A dictionary that contains information about the central manager preserved by the system when it terminated the app. For the available keys to this dictionary, see [`Central Manager State Restoration Options`](central-manager-state-restoration-options.md).
 
 ## See Also
 

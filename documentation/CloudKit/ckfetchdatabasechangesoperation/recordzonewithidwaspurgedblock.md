@@ -24,6 +24,8 @@ var recordZoneWithIDWasPurgedBlock: ((CKRecordZone.ID) -> Void)? { get set }
 
 The closure returns no value and takes the following parameter:
 
+- **`zoneID`**: The purged record zone’s ID.
+
 ## See Also
 
 - [var recordZoneWithIDChangedBlock: ((CKRecordZone.ID) -> Void)?](ckfetchdatabasechangesoperation/recordzonewithidchangedblock.md)

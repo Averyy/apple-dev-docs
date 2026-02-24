@@ -26,7 +26,7 @@ An effect that brightens the view by the specified amount.
 
 ## Parameters
 
-- `amount`: A value between 0 (no effect) and 1 (full white   brightening) that represents the intensity of the brightness effect.
+- `amount`: A value between 0 (no effect) and 1 (full white brightening) that represents the intensity of the brightness effect.
 
 ## See Also
 

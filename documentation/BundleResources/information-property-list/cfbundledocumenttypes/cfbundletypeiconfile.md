@@ -13,6 +13,10 @@ The icon to associate with the document type.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [CFBundleTypeName](information-property-list/cfbundledocumenttypes/cfbundletypename.md)

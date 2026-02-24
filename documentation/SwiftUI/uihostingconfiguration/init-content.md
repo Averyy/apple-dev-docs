@@ -20,7 +20,7 @@ init(@ViewBuilder content: () -> Content)
 
 ## Parameters
 
-- `content`: The contents of the SwiftUI hierarchy to be shown   inside the cell.
+- `content`: The contents of the SwiftUI hierarchy to be shown inside the cell.
 
 
 ---

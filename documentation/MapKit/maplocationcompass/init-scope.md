@@ -17,7 +17,7 @@ Creates a new map location compass with the provided scope.
 
 ## Parameters
 
-- `scope`: The namespace the framework passes to the associated   and  . For use outside of  .
+- `scope`: The namespace the framework passes to the associated [`Map`](map.md) and `MapLocationCompass/mapScope(_:)`. For use outside of `MapLocationCompass/mapControls(_:)`.
 
 
 ---

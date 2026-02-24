@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: property
 
-The absolute tolerance (default test) or  tolerance (Fong-Saunders test).
+The absolute tolerance (default test) or *A* tolerance (Fong-Saunders test).
 
 **Availability**:
 - iOS ?+
@@ -22,12 +22,12 @@ var atol: Double
 
 #### Discussion
 
-In the Fong and Saunders case, this value holds an estimate of the relative error in the data defining the matrix . For example, if  is accurate to about six digits, set [`atol`](sparselsmroptions/atol.md) `= 1.0e-6`.
+In the Fong and Saunders case, this value holds an estimate of the relative error in the data defining the matrix *A*. For example, if *A* is accurate to about six digits, set [`atol`](sparselsmroptions/atol.md) `= 1.0e-6`.
 
 ## See Also
 
 - [var btol: Double](sparselsmroptions/btol.md)
-  The  tolerance (Fong-Saunders test only).
+  The *B* tolerance (Fong-Saunders test only).
 - [var conditionLimit: Double](sparselsmroptions/conditionlimit.md)
   The condition number limit (Fong-Saunders test only).
 - [var convergenceTest: SparseLSMRConvergenceTest_t](sparselsmroptions/convergencetest.md)

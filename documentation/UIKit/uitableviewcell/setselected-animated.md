@@ -24,8 +24,8 @@ The selection affects the appearance of labels, image, and background. When the 
 
 ## Parameters
 
-- `selected`:   to set the cell as selected,   to set it as unselected. The default is  .
-- `animated`:   to animate the transition between selected states,   to make the transition immediate.
+- `selected`: [`true`](https://developer.apple.com/documentation/Swift/true) to set the cell as selected, [`false`](https://developer.apple.com/documentation/Swift/false) to set it as unselected. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition between selected states, [`false`](https://developer.apple.com/documentation/Swift/false) to make the transition immediate.
 
 ## See Also
 

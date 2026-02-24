@@ -41,7 +41,7 @@ AVAudioFormat *format = [input outputFormatForBus: 0];
 
 - `bus`: The output bus to attach the tap to.
 - `bufferSize`: The size of the incoming buffers. The implementation may choose another size.
-- `format`: For  , you must specify the tap format as  .
+- `format`: If non-`nil`, the framework applies this format to the output bus you specify. An error occurs when attaching to an output bus that’s already in a connected state. The tap and connection formats (if non-`nil`) on the bus need to be identical. Otherwise, the latter operation overrides the previous format. For `AVAudioOutputNode`, you must specify the tap format as `nil`.
 - `tapBlock`: A block the framework calls with audio buffers.
 
 ## See Also

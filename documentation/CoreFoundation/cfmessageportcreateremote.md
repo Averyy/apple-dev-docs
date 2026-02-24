@@ -30,7 +30,7 @@ This method is not available on iOS 7 and later—it will return `NULL` and log 
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `name`: The name of the remote message port to which to connect.
 
 ## See Also

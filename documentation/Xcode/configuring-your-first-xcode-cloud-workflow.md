@@ -14,7 +14,7 @@ For additional information about Xcode Cloud, see [`Meet Xcode Cloud`](https://d
 
 ##### Review Xcode Cloud Workflows
 
-When you start configuring a project or workspace to use Xcode Cloud, Xcode analyzes your project to detect its settings and then creates a list of its apps and frameworks — referred to as . After you select a product, Xcode suggests a first workflow for it. The workflow is the configuration for the steps you want Xcode Cloud to perform.
+When you start configuring a project or workspace to use Xcode Cloud, Xcode analyzes your project to detect its settings and then creates a list of its apps and frameworks — referred to as *products*. After you select a product, Xcode suggests a first workflow for it. The workflow is the configuration for the steps you want Xcode Cloud to perform.
 
 A workflow includes the following settings:
 
@@ -25,14 +25,14 @@ A workflow includes the following settings:
 - Postactions that Xcode Cloud performs. For example, you can configure custom notifications or distribute a new version of your app to testers in [`TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/).
 - Custom build scripts that perform particular tasks, such as installing a third-party tool. For more information, see [`Writing custom build scripts`](writing-custom-build-scripts.md).
 
-After reviewing the suggested workflow, you connect Xcode Cloud to your Git repository and run the workflow, referred to as a .
+After reviewing the suggested workflow, you connect Xcode Cloud to your Git repository and run the workflow, referred to as a *build*.
 
 > **Note**: Xcode Cloud clones your repository in a private, isolated, and temporary build environment. It doesn’t store your source code, and securely handles any stored data, such as your derived data, and keeps it private. The temporary build environment that Xcode Cloud uses includes tools that are part of macOS and Xcode, like Python, as well as [`Homebrew`](https://developer.apple.comhttps://brew.sh) to support installing third-party dependencies and tools. For more information, see [`Making dependencies available to Xcode Cloud`](making-dependencies-available-to-xcode-cloud.md).
 
 When it completes a build, Xcode Cloud:
 
 - Sends an email that contains information about the build, including links to the build report in Xcode and in [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com).
-- Stores the build’s  and makes them available for downloading in Xcode or in App Store Connect.
+- Stores the build’s *artifacts* and makes them available for downloading in Xcode or in App Store Connect.
 
 The artifacts that Xcode Cloud creates include:
 

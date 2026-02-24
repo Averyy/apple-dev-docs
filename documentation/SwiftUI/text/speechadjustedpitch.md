@@ -26,7 +26,7 @@ Use this modifier when you want to change the pitch of spoken text. The value in
 
 ## Parameters
 
-- `value`: The amount to raise or lower the pitch.   Values between   and   result in a lower pitch while   values between   and   result in a higher pitch.   The method clamps values to the range   to  .
+- `value`: The amount to raise or lower the pitch. Values between `-1` and `0` result in a lower pitch while values between `0` and `1` result in a higher pitch. The method clamps values to the range `-1` to `1`.
 
 ## See Also
 

@@ -21,10 +21,10 @@ Returns a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CG
 ## Parameters
 
 - `attributes`: A dictionary that contains a list of key and attribute pairs that describe the customization of the string.
-- `location`: An   that indicates that start of the string.
-- `textContainer`: The   that contains the source string.
-- `proposedLineFragment`: A   that describes the boundaries of the line fragment.
-- `position`: A   inside  .
+- `location`: An [`NSTextLocation`](nstextlocation.md) that indicates that start of the string.
+- `textContainer`: The [`NSTextContainer`](nstextcontainer.md) that contains the source string.
+- `proposedLineFragment`: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that describes the boundaries of the line fragment.
+- `position`: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) inside `proposedLineFragment`.
 
 
 ---

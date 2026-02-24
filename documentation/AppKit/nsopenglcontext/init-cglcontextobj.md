@@ -28,7 +28,7 @@ Your application should not call `CGLDestroyContext(_:)` to dispose of the CGL c
 
 ## Parameters
 
-- `context`: The CGL context to wrap inside the   object.
+- `context`: The CGL context to wrap inside the [`NSOpenGLContext`](nsopenglcontext.md) object.
 
 ## See Also
 

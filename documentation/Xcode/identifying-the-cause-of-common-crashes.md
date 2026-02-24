@@ -151,7 +151,7 @@ See [`Addressing watchdog terminations`](addressing-watchdog-terminations.md) to
 
 ##### Determine Whether the Crash Report Contains Signs of a Zombie
 
- are objects that are messaged by the Objective-C runtime after they’re deallocated from memory and no longer exist. Messaging a deallocated object can cause a crash in the [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend), `objc_retain`, or `objc_release` functions of the Objective-C runtime, such as this example with [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend):
+*Zombie objects* are objects that are messaged by the Objective-C runtime after they’re deallocated from memory and no longer exist. Messaging a deallocated object can cause a crash in the [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend), `objc_retain`, or `objc_release` functions of the Objective-C runtime, such as this example with [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend):
 
 ```other
 Thread 0 Crashed:

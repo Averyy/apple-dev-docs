@@ -29,7 +29,7 @@ You must specify the style of a table view when you create it, and you can’t c
 ## Parameters
 
 - `frame`: A rectangle specifying the initial location and size of the table view in its superview’s coordinates. The frame of the table view changes as table cells are added and deleted.
-- `style`: A constant that specifies the style of the table view. For a list of valid styles, see  .
+- `style`: A constant that specifies the style of the table view. For a list of valid styles, see [`UITableView.Style`](uitableview/style-swift.enum.md).
 
 ## See Also
 

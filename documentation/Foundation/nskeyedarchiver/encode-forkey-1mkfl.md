@@ -23,7 +23,7 @@ func encode(_ value: Double, forKey key: String)
 ## Parameters
 
 - `value`: The value to encode.
-- `key`: The key with which to associate  . This value must not be  .
+- `key`: The key with which to associate `realv`. This value must not be `nil`.
 
 ## See Also
 

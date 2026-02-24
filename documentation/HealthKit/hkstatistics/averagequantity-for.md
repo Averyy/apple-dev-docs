@@ -25,7 +25,7 @@ If both the [`discreteAverage`](hkstatisticsoptions/discreteaverage.md) option a
 
 ## Parameters
 
-- `source`: A data source from the statistics object’s   array.
+- `source`: A data source from the statistics object’s [`sources`](hkstatistics/sources.md) array.
 
 ## See Also
 

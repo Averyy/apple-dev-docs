@@ -25,8 +25,8 @@ The initialized resource request.
 
 ## Parameters
 
-- `tags`: A set of strings, with each string specifying a tag assigned to resources stored in  . The value must not be  .
-- `bundle`: The bundle used to store the loaded resources. Pass   for the main bundle. The bundle must be the same as the one used in the Xcode project for all the resources marked with the specified tags.
+- `tags`: A set of strings, with each string specifying a tag assigned to resources stored in `bundle`. The value must not be `nil`.
+- `bundle`: The bundle used to store the loaded resources. Pass `nil` for the main bundle. The bundle must be the same as the one used in the Xcode project for all the resources marked with the specified tags.
 
 ## See Also
 

@@ -27,7 +27,7 @@ func scheduleSegment(_ file: AVAudioFile, startingFrame startFrame: AVAudioFrame
 - `file`: The URL of the file to play.
 - `startFrame`: The starting frame position in the stream.
 - `numberFrames`: The number of frames to play.
-- `when`: The time the buffer plays. For more information, see  .
+- `when`: The time the buffer plays. For more information, see [`Scheduling Playback Time`](avaudioplayernode#Scheduling-Playback-Time.md).
 - `completionHandler`: The handler the system calls after the player schedules the segment for playback on the render thread, or the player stops.
 
 ## See Also

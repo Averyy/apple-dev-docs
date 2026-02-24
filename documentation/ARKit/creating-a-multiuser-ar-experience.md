@@ -127,7 +127,7 @@ if let worldMap = try NSKeyedUnarchiver.unarchivedObject(ofClass: ARWorldMap.sel
 }
 ```
 
-ARKit then attempts to  to the new world map—that is, to reconcile the received spatial-mapping information with what it senses of the local environment. For best results:
+ARKit then attempts to *relocalize* to the new world map—that is, to reconcile the received spatial-mapping information with what it senses of the local environment. For best results:
 
 1. Thoroughly scan the local environment on the sending device before sharing a world map.
 2. Place the receiving device next to the sending device, so that both see the same view of the environment.

@@ -25,7 +25,7 @@ If the seachable object supports scrolling, use this method to implement scrolli
 ## Parameters
 
 - `range`: The text range to scroll to.
-- `inDocument`: A string that uniquely identifies the document containing the text range.   when searching a single document.
+- `inDocument`: A string that uniquely identifies the document containing the text range. `Nil` when searching a single document.
 
 ## See Also
 

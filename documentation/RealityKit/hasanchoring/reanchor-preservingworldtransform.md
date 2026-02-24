@@ -23,7 +23,7 @@ Changes the entity’s anchoring, preserving either the world transform or the l
 ## Parameters
 
 - `target`: Describes how the entity should be anchored in AR.
-- `preservingWorldTransform`: A Boolean you set to   to preserve the   current world space position, or   to use the position relative to   the previous anchor for the new anchor.
+- `preservingWorldTransform`: A Boolean you set to `true` to preserve the current world space position, or `false` to use the position relative to the previous anchor for the new anchor.
 
 
 ---

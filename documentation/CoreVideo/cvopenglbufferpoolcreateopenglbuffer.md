@@ -24,9 +24,9 @@ The function creates a new OpenGL buffer using the OpenGL buffer attributes spec
 
 ## Parameters
 
-- `allocator`: The allocator to use for creating the buffer.  May be   to specify the default allocator.
+- `allocator`: The allocator to use for creating the buffer.  May be `NULL` to specify the default allocator.
 - `openGLBufferPool`: The OpenGL buffer pool that should create the new OpenGL buffer.
-- `openGLBufferOut`: On output,   points to the new OpenGL buffer.
+- `openGLBufferOut`: On output, `OpenGLBufferOut` points to the new OpenGL buffer.
 
 ## See Also
 

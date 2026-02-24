@@ -28,7 +28,7 @@ This parameter is not part of the graphics state.
 
 ## Parameters
 
-- `allowsAntialiasing`: A Boolean value that specifies whether or not to allow antialiasing. Pass   to allow antialiasing;   otherwise. This parameter is not part of the graphics state.
+- `allowsAntialiasing`: A Boolean value that specifies whether or not to allow antialiasing. Pass `true` to allow antialiasing; `false` otherwise. This parameter is not part of the graphics state.
 
 ## See Also
 

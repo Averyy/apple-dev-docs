@@ -23,7 +23,7 @@ This function displays an array of glyphs at the current text position, a point 
 ## Parameters
 
 - `g`: An array of glyphs to display.
-- `count`: The total number of glyphs passed in the   parameter.
+- `count`: The total number of glyphs passed in the `g` parameter.
 
 ## See Also
 

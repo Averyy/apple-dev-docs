@@ -22,7 +22,8 @@ func loadLeaderboards() async throws -> [GKLeaderboard]
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block that this method calls when it loads the leaderboards. The block receives the following parameters: - ***leaderboards***: An array of `GKLeaderboard` objects that provides the leaderboards for your game.
+- ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

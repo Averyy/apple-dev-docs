@@ -26,6 +26,7 @@ enum NERelayManagerClientError
 - [NERelayManagerClientError.dnsFailed](nerelaymanagerclienterror/dnsfailed.md)
 - [NERelayManagerClientError.none](nerelaymanagerclienterror/none.md)
 - [NERelayManagerClientError.other](nerelaymanagerclienterror/other.md)
+- [NERelayManagerClientError.pvDConfigurationTruncated](nerelaymanagerclienterror/pvdconfigurationtruncated.md)
 - [NERelayManagerClientError.serverCertificateExpired](nerelaymanagerclienterror/servercertificateexpired.md)
 - [NERelayManagerClientError.serverCertificateInvalid](nerelaymanagerclienterror/servercertificateinvalid.md)
 - [NERelayManagerClientError.serverDisconnected](nerelaymanagerclienterror/serverdisconnected.md)

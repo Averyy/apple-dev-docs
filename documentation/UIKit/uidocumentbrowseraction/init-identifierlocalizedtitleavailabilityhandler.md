@@ -20,9 +20,9 @@ init(identifier: String, localizedTitle: String, availability: UIDocumentBrowser
 ## Parameters
 
 - `identifier`: A unique identifier for the activity.
-- `localizedTitle`: The title that appears in the Edit Menu or navigation bar. This title should be a   returned by   .
-- `availability`: For a list of valid values, see  .
-- `handler`: A block that is called when the user triggers the action. The block takes the following parameter:
+- `localizedTitle`: The title that appears in the Edit Menu or navigation bar. This title should be a [`String`](https://developer.apple.com/documentation/Swift/String) returned by  [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString).
+- `availability`: A value that defines where the action can appear (in the menu, navigation bar, or both). For a list of valid values, see [`UIDocumentBrowserAction.Availability`](uidocumentbrowseraction/availability-swift.struct.md).
+- `handler`: A block that is called when the user triggers the action. The block takes the following parameter: - **urls**: An array of URLs for the documents that the user has selected. If the action’s [`supportsMultipleItems`](uidocumentbrowseraction/supportsmultipleitems.md)  property is [`false`](https://developer.apple.com/documentation/Swift/false), this array contains one URL. Otherwise, it can contain one or more URLs.
 
 ## See Also
 

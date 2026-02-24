@@ -30,7 +30,7 @@ Use this method to format date information that is already broken down into the 
 
 ## Parameters
 
-- `components`: A date components object containing the date and time information to format. The   property determines which date components are actually used to generate the string. All other date components are ignored. This parameter must not be  .
+- `components`: A date components object containing the date and time information to format. The [`allowedUnits`](datecomponentsformatter/allowedunits.md) property determines which date components are actually used to generate the string. All other date components are ignored. This parameter must not be `nil`.
 
 ## See Also
 

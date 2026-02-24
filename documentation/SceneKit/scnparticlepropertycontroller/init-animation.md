@@ -49,7 +49,7 @@ particleSystem.propertyControllers = @{ SCNParticlePropertySize: controller };
 
 ## Parameters
 
-- `animation`: SceneKit ignores the  ,  , and   properties of this animation object.
+- `animation`: A Core Animation object specifying the behavior of the property animation. Must not be nil. You can use different [`CAAnimation`](https://developer.apple.com/documentation/QuartzCore/CAAnimation) subclasses to animate effects in different ways. For example, a [`CABasicAnimation`](https://developer.apple.com/documentation/QuartzCore/CABasicAnimation) instance transitions a property from one value to another, and a [`CAKeyframeAnimation`](https://developer.apple.com/documentation/QuartzCore/CAKeyframeAnimation) instance transitions a property through a series of values. You use properties of the animation object to define its timing curve, repeat mode, and other options. SceneKit ignores the [`keyPath`](https://developer.apple.com/documentation/QuartzCore/CAPropertyAnimation/keyPath), [`duration`](https://developer.apple.com/documentation/QuartzCore/CAMediaTiming/duration), and [`repeatCount`](https://developer.apple.com/documentation/QuartzCore/CAMediaTiming/repeatCount) properties of this animation object.
 
 
 ---

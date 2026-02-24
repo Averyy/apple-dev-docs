@@ -23,7 +23,7 @@ This modifier applies only to navigation bar back buttons and is ignored by othe
 
 ## Parameters
 
-- `adjustment`: The back button title offset for  .
+- `adjustment`: The back button title offset for `barMetrics`.
 - `barMetrics`: Bar metrics.
 
 ## See Also

@@ -21,7 +21,7 @@ An initialized `NSOpenGLView` object, or `nil` if the object could not be initia
 ## Parameters
 
 - `frameRect`: The frame rectangle for the view, specified in the coordinate system of its parent view.
-- `format`: The pixel format to use when creating the view’s   object.
+- `format`: The pixel format to use when creating the view’s `NSOpenGLContext` object.
 
 ## See Also
 

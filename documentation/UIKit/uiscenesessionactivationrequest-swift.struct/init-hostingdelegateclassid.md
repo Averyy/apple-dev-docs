@@ -45,8 +45,8 @@ An instance of the provided hosting delegate class will be created by SwiftUI an
 
 ## Parameters
 
-- `hostingDelegateClass`: A Class type that conforms to   .
-- `id`: A string matching the   of one of the scenes declared in the   sceneRepresentation’s content.
+- `hostingDelegateClass`: A Class type that conforms to `UIHostingSceneDelegate`.
+- `id`: A string matching the `id` of one of the scenes declared in the sceneRepresentation’s content.
 
 
 ---

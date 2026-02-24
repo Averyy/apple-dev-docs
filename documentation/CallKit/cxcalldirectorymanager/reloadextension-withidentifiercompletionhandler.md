@@ -26,7 +26,7 @@ func reloadExtension(withIdentifier identifier: String) async throws
 ## Parameters
 
 - `identifier`: The identifier for the call extension.
-- `completion`: A block to be executed when the manager is finished reloading the specified extension.
+- `completion`: A block to be executed when the manager is finished reloading the specified extension. - **error**: If an error occurred, an error object indicating how reloading failed, otherwise `nil`.
 
 ## See Also
 

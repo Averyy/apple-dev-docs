@@ -52,6 +52,28 @@ It may not be possible for a person who’s using your app while Assistive Acces
 
 To make small adjustments to your UI in Assistive Access, you check whether Assistive Access is running on the device using SwiftUI or the Accessibility framework.
 
+**SwiftUI**:
+
+```swift
+import SwiftUI
+
+@Environment(\.accessibilityAssistiveAccessEnabled) private var isAssistiveAccessEnabled
+
+if isAssistiveAccessEnabled {
+  // Assistive Access is on. Make small adjustments specific to Assistive Access.
+}
+```
+
+**Accessibility framework**:
+
+```swift
+import Accessibility
+
+if AccessibilitySettings.isAssistiveAccessEnabled {
+  // Assistive Access is on. Make small adjustments specific to Assistive Access.
+} 
+```
+
 For Assistive Access design guidance, read Human Interface Guidelines > [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility).
 
 ###### Related Reference

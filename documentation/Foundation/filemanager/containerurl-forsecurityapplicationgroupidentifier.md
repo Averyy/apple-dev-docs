@@ -50,7 +50,7 @@ If you call the method with an invalid group identifier in iOS, the method retur
 
 ## Parameters
 
-- `groupIdentifier`: A string that names the group whose shared directory you want to obtain. This input should exactly match one of the strings in the app’s  .
+- `groupIdentifier`: A string that names the group whose shared directory you want to obtain. This input should exactly match one of the strings in the app’s [`App Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.application-groups).
 
 ## See Also
 

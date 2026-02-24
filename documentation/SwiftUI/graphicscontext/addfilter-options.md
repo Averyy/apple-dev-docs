@@ -32,8 +32,8 @@ When SwiftUI draws with a filter, the blend mode might apply to regions outside 
 
 ## Parameters
 
-- `filter`: A graphics context filter that you create by calling one   of the   factory methods.
-- `options`: A set of options from   that you can use to   configure filter operations.
+- `filter`: A graphics context filter that you create by calling one of the [`GraphicsContext.Filter`](graphicscontext/filter.md) factory methods.
+- `options`: A set of options from [`GraphicsContext.FilterOptions`](graphicscontext/filteroptions.md) that you can use to configure filter operations.
 
 ## See Also
 

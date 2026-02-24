@@ -26,7 +26,7 @@ This method throws if the system doesn’t support custom pronouns for the given
 
 ## Parameters
 
-- `pronoun`: A   instance for the morphology to use.
+- `pronoun`: A [`Morphology.CustomPronoun`](morphology/custompronoun.md) instance for the morphology to use.
 - `language`: The language the morphology should apply the custom pronoun to.
 
 ## See Also

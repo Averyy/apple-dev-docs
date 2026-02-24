@@ -29,7 +29,7 @@ func verify(_ signedData: Data, signature: Data, algorithm: SecKeyAlgorithm) asy
 - `signedData`: The signed data.
 - `signature`: The signature of the data.
 - `algorithm`: An algorithm suitable for verifying signatures with this public key.
-- `handler`: A completion handler to call when the verification operation completes.
+- `handler`: A completion handler to call when the verification operation completes. - **`error`**: An error object that indicates why the verification operation failed, or `nil` if it succeeded.
 
 ## See Also
 

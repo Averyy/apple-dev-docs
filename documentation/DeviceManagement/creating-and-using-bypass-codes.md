@@ -116,9 +116,19 @@ To remove Activation Lock, provide the deviceʼs bypass code to the web service 
 
 You must provide the following arguments as part of the URL request string:
 
+- **`serial`**: The deviceʼs serial number (required).
+- **`imei`**: The device’s IMEI (omit for non-cellular devices).
+- **`imei2`**: The device’s secondary IMEI (omit for non-cellular and single-SIM devices).
+- **`meid`**: The device’s MEID (omit for non-cellular devices).
+- **`productType`**: Example: iPad4,1 (required).
+
 You can obtain the IMEI values from the results of a [`DeviceInformationCommand`](deviceinformationcommand.md) with a `ServiceSubscriptions` query. Use the IMEI and MEID values for a `Slot` value of `CTSubscriptionSlotOne` for the `imei` and `meid` arguments, respectively. For the `imei2` value, use the IMEI value (if any) for a `Slot` value of `CTSubscriptionSlotTwo`. Note that the server might ignore any MEID value that `CTSubscriptionSlotTwo` reports—this request only requires the first MEID, even for devices that have two IMEIs.
 
 Include the following arguments in the message body:
+
+- **`orgName`**: The client-supplied value for auditing purposes: a string that identifies the name of the organization.
+- **`guid`**: The client-supplied value for auditing purposes: a string that identifies the user requesting the removal (such as email, LDAP ID, or name).
+- **`escrowKey`**: The device’s bypass code.
 
 
 ---

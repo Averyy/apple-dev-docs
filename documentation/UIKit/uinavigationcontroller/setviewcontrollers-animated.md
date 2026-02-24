@@ -27,7 +27,7 @@ If animations are enabled, this method decides which type of transition to perfo
 ## Parameters
 
 - `viewControllers`: The view controllers to place in the stack. The front-to-back order of the controllers in this array represents the new bottom-to-top order of the controllers in the navigation stack. Thus, the last item added to the array becomes the top item of the navigation stack.
-- `animated`: If  , animate the pushing or popping of the top view controller. If  , replace the view controllers without any animations.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), animate the pushing or popping of the top view controller. If [`false`](https://developer.apple.com/documentation/Swift/false), replace the view controllers without any animations.
 
 ## See Also
 

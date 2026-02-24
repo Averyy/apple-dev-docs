@@ -26,7 +26,7 @@ A new velocity field node.
 
 ## Parameters
 
-- `direction`: The velocity that any affected physics bodies will have. The   component on the vector is ignored.
+- `direction`: The velocity that any affected physics bodies will have. The `z` component on the vector is ignored.
 
 ## See Also
 

@@ -29,9 +29,9 @@ Use the [`gss_iter_creds(_:_:_:_:)`](gss_iter_creds(_:_:_:_:).md) function if yo
 ## Parameters
 
 - `flags`: No flags are currently defined. Pass 0 for this parameter.
-- `mech`: The mechanism type of credentials to iterate over. Pass in   to iterate over all credentials.
+- `mech`: The mechanism type of credentials to iterate over. Pass in `GSS_C_NO_OID_SET` to iterate over all credentials.
 - `userctx`: A user context that you use to keep track of callbacks.
-- `useriter`: A block that is called once for each credential. The block receives the user context that you specified with the   parameter, the credential’s mechanism, and a copy of the credential as input on each iteration. Free the copy’s memory with a call to   when you are done with it. The block is called one final time with a   credential upon reaching the end of the list.
+- `useriter`: A block that is called once for each credential. The block receives the user context that you specified with the `userctx` parameter, the credential’s mechanism, and a copy of the credential as input on each iteration. Free the copy’s memory with a call to [`gss_release_cred(_:_:)`](gss_release_cred(_:_:).md) when you are done with it. The block is called one final time with a `NULL` credential upon reaching the end of the list.
 
 ## See Also
 

@@ -21,7 +21,7 @@ If you previously tried to add `subgroup` to `group` in the same save request, c
 ## Parameters
 
 - `subgroup`: The subgroup to remove.
-- `group`: The parent group containing  .
+- `group`: The parent group containing `subgroup`.
 
 ## See Also
 

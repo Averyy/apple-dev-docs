@@ -26,7 +26,7 @@ The current view controller must have been loaded from a storyboard. If its [`st
 
 ## Parameters
 
-- `identifier`: This method throws an   if there is no segue with the specified identifier.
+- `identifier`: The string that identifies the triggered segue. In Interface Builder, you specify the segue’s identifier string in the attributes inspector. This method throws an [`Exception handling`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/ExceptionHandling.html#//apple_ref/doc/uid/TP40008195-CH18) if there is no segue with the specified identifier.
 - `sender`: The object that you want to use to initiate the segue. This object is made available for informational purposes during the actual segue.
 
 ## See Also

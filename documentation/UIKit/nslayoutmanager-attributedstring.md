@@ -6,6 +6,18 @@ The text storage object from which the `NSGlyphGenerator` object procures charac
 
 #### Overview
 
+**Swift**:
+
+```swift
+var attributedString: NSAttributedString? { get }
+```
+
+**Objective-C**:
+
+```objc
+@property(readonly, strong) NSAttributedString *attributedString
+```
+
 This property is part of the `NSGlyphStorage` protocol, for use by the glyph generator. For `NSLayoutManager` the attributed string is equivalent to the text storage.
 
 ## See Also

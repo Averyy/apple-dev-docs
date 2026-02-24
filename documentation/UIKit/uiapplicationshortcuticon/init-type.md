@@ -27,7 +27,7 @@ Use this method to create icons for actions supported by the system. Users expec
 
 ## Parameters
 
-- `type`: The system-defined image to use for the icon. For a list of possible images, see the   enumeration.
+- `type`: The system-defined image to use for the icon. For a list of possible images, see the [`UIApplicationShortcutIcon.IconType`](uiapplicationshortcuticon/icontype.md) enumeration.
 
 ## See Also
 

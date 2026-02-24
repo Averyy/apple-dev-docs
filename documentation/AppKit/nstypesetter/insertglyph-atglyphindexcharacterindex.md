@@ -23,8 +23,8 @@ A subclass can override this method to interact with custom glyph storage.
 ## Parameters
 
 - `glyph`: The glyph to insert into the glyph cache.
-- `glyphIndex`: The index at which to insert  .
-- `characterIndex`: The index of the character that   maps to. If the glyph is mapped to several characters,   should indicate the first character to which it’s mapped.
+- `glyphIndex`: The index at which to insert `glyph`.
+- `characterIndex`: The index of the character that `glyph` maps to. If the glyph is mapped to several characters, `charIndex` should indicate the first character to which it’s mapped.
 
 ## See Also
 

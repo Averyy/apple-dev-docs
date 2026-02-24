@@ -14,6 +14,10 @@ The pairing of Authorization Rights to group names.
 object ExtensibleSingleSignOn.PlatformSSO.AuthorizationGroups
 ```
 
+## Properties
+
+- `ANY` (string): The key is an access right value, the value is the group to be associated with that access right.
+
 ## See Also
 
 - [object ExtensibleSingleSignOn.PlatformSSO.TokenToUserMapping](extensiblesinglesignon/platformsso-data.dictionary/tokentousermapping-data.dictionary.md)

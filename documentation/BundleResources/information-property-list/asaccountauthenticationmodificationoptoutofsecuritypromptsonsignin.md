@@ -9,6 +9,10 @@ A Boolean value that indicates the system shouldn’t show security recommendati
 - iOS 14.0+
 - iPadOS 14.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [ASWebAuthenticationSessionWebBrowserSupportCapabilities](information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities.md)

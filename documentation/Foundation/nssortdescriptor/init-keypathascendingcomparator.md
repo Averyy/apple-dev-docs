@@ -23,7 +23,7 @@ convenience init<Root, Value>(keyPath: KeyPath<Root, Value>, ascending: Bool, co
 ## Parameters
 
 - `keyPath`: The key path to the property to compare.
-- `ascending`: If  , the sort descriptor compares using the   sort order; otherwise, it uses  .
+- `ascending`: If `true`, the sort descriptor compares using the [`SortOrder.forward`](sortorder/forward.md) sort order; otherwise, it uses [`SortOrder.reverse`](sortorder/reverse.md).
 - `cmptr`: A comparator block.
 
 ## See Also

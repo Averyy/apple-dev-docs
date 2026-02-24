@@ -22,7 +22,7 @@ init(id: Int, time: CMTime, cameraID: String)
 
 - `id`: The unique ID of this command.
 - `time`: The time for this command to start during playback.
-- `cameraID`: The   associated with this command.
+- `cameraID`: The `cameraID` associated with this command.
 
 
 ---

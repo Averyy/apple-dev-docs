@@ -34,9 +34,9 @@ Form {
 
 ## Parameters
 
-- `titleKey`: The key for the view’s localized title, that describes   the purpose of the view.
+- `titleKey`: The key for the view’s localized title, that describes the purpose of the view.
 - `value`: The value being labeled.
-- `format`: A format style of type   to convert the underlying value   of type   to a string representation.
+- `format`: A format style of type `F` to convert the underlying value of type `F.FormatInput` to a string representation.
 
 ## See Also
 

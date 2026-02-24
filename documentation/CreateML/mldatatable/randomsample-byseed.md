@@ -25,7 +25,7 @@ A new data table.
 
 ## Parameters
 
-- `proportion`: The fraction of rows to sample from the original table.   The value must be in the range  .
+- `proportion`: The fraction of rows to sample from the original table. The value must be in the range `(0.0, 1.0)`.
 - `seed`: A number that seeds a random number generator.
 
 ## See Also

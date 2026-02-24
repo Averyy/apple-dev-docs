@@ -29,7 +29,7 @@ For more information about designing custom images, see [`Providing images for d
 
 ## Parameters
 
-- `templateImageName`: You don’t need to specify the filename extension or the   or   modifiers for this name. This method retrieves the appropriate image based on the system and the available image resources.
+- `templateImageName`: The name of a custom image in the app’s asset catalog. If the image isn’t in your app’s asset catalog, this method searches the app bundle for the image. You don’t need to specify the filename extension or the `@2x` or `@3x` modifiers for this name. This method retrieves the appropriate image based on the system and the available image resources.
 
 ## See Also
 

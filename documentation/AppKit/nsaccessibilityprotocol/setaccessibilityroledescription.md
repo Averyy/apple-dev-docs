@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Sets the localized, human-intelligible description of the accessibility element’s role, such as .
+Sets the localized, human-intelligible description of the accessibility element’s role, such as *radio button*.
 
 **Availability**:
 - macOS 10.10+
@@ -26,7 +26,7 @@ func setAccessibilityRoleDescription(_ accessibilityRoleDescription: String?)
 - [func setAccessibilityRole(NSAccessibility.Role?)](nsaccessibilityprotocol/setaccessibilityrole(_:).md)
   Sets the type of interface element that the accessibility element represents.
 - [func accessibilityRoleDescription() -> String?](nsaccessibilityprotocol/accessibilityroledescription.md)
-  Returns a localized, human-intelligible description of the accessibility element’s role, such as .
+  Returns a localized, human-intelligible description of the accessibility element’s role, such as *radio button*.
 - [func accessibilitySubrole() -> NSAccessibility.Subrole?](nsaccessibilityprotocol/accessibilitysubrole.md)
   Returns the specialized interface element type that the accessibility element represents.
 - [func setAccessibilitySubrole(NSAccessibility.Subrole?)](nsaccessibilityprotocol/setaccessibilitysubrole(_:).md)

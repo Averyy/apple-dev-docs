@@ -29,7 +29,7 @@ Use this method in your dext to prefill a 16-byte CDB for the standard `WRITE10`
 - `startBlock`: The Logical Block Address (LBA) of the starting block.
 - `blockCount`: The number of blocks to write.
 - `bufAddr`: A buffer that holds the data to write.
-- `response`: An empty   object. On return, the framework populates this object with the response information.
+- `response`: An empty [`SCSIDeviceInParameters`](scsideviceinparameters.md) object. On return, the framework populates this object with the response information.
 - `senseBufAddr`: The address of the sense buffer.
 
 ## See Also

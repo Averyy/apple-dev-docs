@@ -27,9 +27,9 @@ Use this method to schedule the execution time for your timer. Call this method 
 
 ## Parameters
 
-- `options`: The timebase to use when interpreting the   and   parameters. For a list of possible values, see  .
-- `deadline`: The time at which to execute your action. The meaning of this parameter depends on the timebase you specified in the   parameter.
-- `leeway`: The maximum amount of time beyond the scheduled   that the system may wait before executing your action. Leeway values improve the system’s power usage by letting the system schedule timers at a more advantageous time. The system guarantees the execution of the timer’s action before the combined   and   values expire.
+- `options`: The timebase to use when interpreting the `deadline` and `leeway` parameters. For a list of possible values, see [`Clock Types`](3242783-clock_types.md).
+- `deadline`: The time at which to execute your action. The meaning of this parameter depends on the timebase you specified in the `options` parameter.
+- `leeway`: The maximum amount of time beyond the scheduled `deadline` that the system may wait before executing your action. Leeway values improve the system’s power usage by letting the system schedule timers at a more advantageous time. The system guarantees the execution of the timer’s action before the combined `deadline` and `leeway` values expire.
 
 ## See Also
 

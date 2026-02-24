@@ -22,7 +22,7 @@ init(identifier: String, keychainReference: Data)
 ## Parameters
 
 - `identifier`: The identifier for the PPK.
-- `keychainReference`: A persistent reference to a keychain item with the class   that contains the PPK.
+- `keychainReference`: A persistent reference to a keychain item with the class [`kSecClassGenericPassword`](https://developer.apple.com/documentation/Security/kSecClassGenericPassword) that contains the PPK.
 
 
 ---

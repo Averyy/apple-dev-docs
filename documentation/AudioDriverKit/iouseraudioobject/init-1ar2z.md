@@ -24,7 +24,7 @@ Always pass in the [`IOUserAudioDriver`](iouseraudiodriver.md). The no-arg initi
 
 ## Parameters
 
-- `in_audio_driver`: The   that owns this object.
+- `in_audio_driver`: The [`IOUserAudioDriver`](iouseraudiodriver.md) that owns this object.
 
 ## See Also
 

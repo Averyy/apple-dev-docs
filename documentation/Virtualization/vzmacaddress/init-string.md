@@ -20,7 +20,7 @@ A MAC address object with the specified value, or `nil` if the string is formatt
 
 ## Parameters
 
-- `string`: A string that contains the 6 hexadecimal bytes of the MAC address separated by colon characters. An example string is  . The string is case-insensitive, so you may use uppercase or lowercase for alphabetical characters.
+- `string`: A string that contains the 6 hexadecimal bytes of the MAC address separated by colon characters. An example string is `01:23:45:ab:cd:ef`. The string is case-insensitive, so you may use uppercase or lowercase for alphabetical characters.
 
 ## See Also
 

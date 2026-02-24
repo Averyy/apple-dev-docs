@@ -58,7 +58,7 @@ To control focus by matching a value, use the [`focused(_:equals:)`](view/focuse
 
 ## Parameters
 
-- `condition`: The focus state to bind. When focus moves   to the view, the binding sets the bound value to  . If a caller   sets the value to    programmatically, then focus moves to the   modified view. When focus leaves the modified view, the binding   sets the value to  . If a caller sets the value to  ,   SwiftUI automatically dismisses focus.
+- `condition`: The focus state to bind. When focus moves to the view, the binding sets the bound value to `true`. If a caller sets the value to  `true` programmatically, then focus moves to the modified view. When focus leaves the modified view, the binding sets the value to `false`. If a caller sets the value to `false`, SwiftUI automatically dismisses focus.
 
 ## See Also
 

@@ -21,11 +21,11 @@ The range of the first misspelled word and optionally (and by reference) the cou
 ## Parameters
 
 - `stringToCheck`: The string object containing the words to spellcheck.
-- `startingOffset`: The offset within   at which to begin spellchecking.
-- `language`: The language of the words in the string. If   is  , or if you obtain the value by sending   to  , the current selection in the Spelling panel’s pop-up menu is used. Do not pass in an empty string for  .
-- `wrapFlag`:   to indicate that spell checking should continue at the beginning of the string when the end of the string is reached;   to indicate that spellchecking should stop at the end of the document.
+- `startingOffset`: The offset within `stringToCheck` at which to begin spellchecking.
+- `language`: The language of the words in the string. If `language` is `nil`, or if you obtain the value by sending [`language()`](nsspellchecker/language().md) to `self`, the current selection in the Spelling panel’s pop-up menu is used. Do not pass in an empty string for `language`.
+- `wrapFlag`: [`true`](https://developer.apple.com/documentation/Swift/true) to indicate that spell checking should continue at the beginning of the string when the end of the string is reached; [`false`](https://developer.apple.com/documentation/Swift/false) to indicate that spellchecking should stop at the end of the document.
 - `tag`: An identifier unique within the application used to inform the spell checker which document that text is associated, potentially for many purposes, not necessarily just for ignored words. A value of 0 can be passed in for text not associated with a particular document.
-- `wordCount`: Returns by indirection a count of the words spell-checked up to and including the first error (if any), or -1 if the spell checker fails or does not support word counting. Specify   if you do not want this word count.
+- `wordCount`: Returns by indirection a count of the words spell-checked up to and including the first error (if any), or -1 if the spell checker fails or does not support word counting. Specify `NULL` if you do not want this word count.
 
 ## See Also
 

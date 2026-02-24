@@ -22,7 +22,7 @@ If the number of rows or columns in the receiver has been changed with [`renewRo
 
 ## Parameters
 
-- `column`: The number of the column before which the new column is inserted. If   is greater than the number of columns in the receiver, enough columns are created to expand the receiver to be   columns wide.
+- `column`: The number of the column before which the new column is inserted. If `column` is greater than the number of columns in the receiver, enough columns are created to expand the receiver to be `column` columns wide.
 
 ## See Also
 

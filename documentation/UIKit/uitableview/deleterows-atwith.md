@@ -24,8 +24,8 @@ When this method is called in an animation block defined by the [`beginUpdates()
 
 ## Parameters
 
-- `indexPaths`: An array of   objects identifying the rows to delete.
-- `animation`: A constant that indicates how the deletion is to be animated, for example, fade out or slide out from the bottom. See   for descriptions of these constants.
+- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects identifying the rows to delete.
+- `animation`: A constant that indicates how the deletion is to be animated, for example, fade out or slide out from the bottom. See [`UITableView.RowAnimation`](uitableview/rowanimation.md) for descriptions of these constants.
 
 ## See Also
 

@@ -21,7 +21,7 @@ The control character action for the control character at the given index.
 ## Parameters
 
 - `layoutManager`: The layout manager doing the layout.
-- `action`: The proposed control character action for the character at the given index. Possible values are enumerated by  .
+- `action`: The proposed control character action for the character at the given index. Possible values are enumerated by [`NSLayoutManager.ControlCharacterAction`](nslayoutmanager/controlcharacteraction.md).
 - `charIndex`: The index of the control character for which the action is proposed.
 
 ## See Also

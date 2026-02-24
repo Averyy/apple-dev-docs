@@ -27,8 +27,8 @@ To accommodate the new characters, this function moves any existing characters t
 ## Parameters
 
 - `str`: The string to be modified. If this value is not a CFMutableString object, an assertion is raised.
-- `idx`: The index of the character in   after which the new characters are to be inserted. If the index is out of bounds, an assertion is raised.
-- `insertedStr`: The string to insert into  .
+- `idx`: The index of the character in `str` after which the new characters are to be inserted. If the index is out of bounds, an assertion is raised.
+- `insertedStr`: The string to insert into `str`.
 
 ## See Also
 

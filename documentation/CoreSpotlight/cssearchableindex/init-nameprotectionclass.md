@@ -33,7 +33,7 @@ Use this method to specify a protection class for an index. You can specify a de
 ## Parameters
 
 - `name`: A name that pertains to your custom organization.
-- `protectionClass`: The file protection class. Acceptable values are  ,  ,  , or  .
+- `protectionClass`: The file protection class. Acceptable values are [`none`](https://developer.apple.com/documentation/Foundation/FileProtectionType/none), [`complete`](https://developer.apple.com/documentation/Foundation/FileProtectionType/complete), [`completeUnlessOpen`](https://developer.apple.com/documentation/Foundation/FileProtectionType/completeUnlessOpen), or [`completeUntilFirstUserAuthentication`](https://developer.apple.com/documentation/Foundation/FileProtectionType/completeUntilFirstUserAuthentication).
 
 ## See Also
 

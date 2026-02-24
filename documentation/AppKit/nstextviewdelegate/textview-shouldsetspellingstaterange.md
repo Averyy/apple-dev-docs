@@ -26,7 +26,8 @@ Delegate only. Allows delegate to control the setting of spelling and grammar in
 ## Parameters
 
 - `textView`: The text view sending the message.
-- `value`: The proposed spelling state value to set. Possible values, for the temporary attribute on the layout manager using the key NSSpellingStateAttributeName, are:
+- `value`: The proposed spelling state value to set. Possible values, for the temporary attribute on the layout manager using the key NSSpellingStateAttributeName, are: - [`NSSpellingStateSpellingFlag`](nsspellingstate/nsspellingstatespellingflag.md) to highlight spelling issues.
+- [`NSSpellingStateGrammarFlag`](nsspellingstate/nsspellingstategrammarflag.md) to highlight grammar issues.
 - `affectedCharRange`: The character range over which to set the given spelling state.
 
 ## See Also

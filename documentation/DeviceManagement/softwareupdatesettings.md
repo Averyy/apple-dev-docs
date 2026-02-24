@@ -74,6 +74,18 @@ Specify `com.apple.configuration.softwareupdate.settings` as the declaration typ
 - [object SoftwareUpdateSettingsRapidSecurityResponseObject](softwareupdatesettingsrapidsecurityresponseobject.md)
   The object that configures Background Security Improvement settings.
 
+## Properties
+
+- `AllowStandardUserOSUpdates` (boolean): If set to `true`, a standard user can perform Major and Minor Software Updates. If set to `false`, only administrators can perform Major and Minor Software Updates.
+- `AutomaticActions` (SoftwareUpdateSettingsAutomaticActionsObject): This object configures various automatic Software Update functionality.
+- `Beta` (SoftwareUpdateSettingsBetaObject): This object configures the beta program settings for a device.
+- `Deferrals` (SoftwareUpdateSettingsDeferralsObject): This object configures the deferral of software updates. Background Security Improvements aren’t considered in `Major`, `Minor`, or `System` deferral mechanism.
+- `Notifications` (boolean): If set to `true`, the device shows all software update enforcement notifications. If set to `false`, the device only shows notifications triggered one hour before the enforcement deadline, and the restart countdown notification.
+- `RapidSecurityResponse` (SoftwareUpdateSettingsRapidSecurityResponseObject): These configurations set user access to interacting with Background Security Improvement.
+- `RecommendedCadence` (string): This string specifies how the device shows software updates to the user. When more than one update is available update, the device behaves as follows: - `All` - Shows all software update versions.
+- `Oldest` - Shows only the oldest (lower numbered) software update version.
+- `Newest` - Shows only the newest (highest numbered) software update version.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

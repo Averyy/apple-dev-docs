@@ -31,7 +31,7 @@ This method returns an empty array when no matching groups are found. If an erro
 
 ## Parameters
 
-- `predicate`: The predicate to use to fetch the matching groups. Set predicate to   to match all groups.
+- `predicate`: The predicate to use to fetch the matching groups. Set predicate to `nil` to match all groups.
 
 ## See Also
 

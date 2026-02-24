@@ -26,11 +26,11 @@ A new [`CGImageMetadataTag`](cgimagemetadatatag.md) type, or `NULL` if an error 
 
 ## Parameters
 
-- `xmlns`: The namespace for the tag. Specify a common XMP namespace, such as  , or a string with a custom namespace URI. A custom namespace must be a valid XML namespace. By convention, namespaces end with either the   or   character.
-- `prefix`: An abbreviation for the XML namespace. You must specify a valid string for custom namespace. For standard namespaces such as  , you may specify  .
+- `xmlns`: The namespace for the tag. Specify a common XMP namespace, such as [`kCGImageMetadataNamespaceExif`](kcgimagemetadatanamespaceexif.md), or a string with a custom namespace URI. A custom namespace must be a valid XML namespace. By convention, namespaces end with either the `/` or `#` character.
+- `prefix`: An abbreviation for the XML namespace. You must specify a valid string for custom namespace. For standard namespaces such as [`kCGImageMetadataNamespaceExif`](kcgimagemetadatanamespaceexif.md), you may specify `NULL`.
 - `name`: The name of the metadata tag. This string must correspond to a valid XMP name.
-- `type`: The type of data in the   parameter. For a list of possible values, see  .
-- `value`: The newly created tag stores only a shallow copy of the original value. As a result, modifying the original value doesn’t affect the value in the new  .
+- `type`: The type of data in the `value` parameter. For a list of possible values, see [`CGImageMetadataType`](cgimagemetadatatype.md).
+- `value`: The value of the tag. The value’s type must match the information in the `type` parameter. Supported types for this parameter are [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString), [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber), [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean), [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray), and [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary). The keys of a dictionary must be [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) types with XMP names. The values of a dictionary must be either [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) or [`CGImageMetadataTag`](cgimagemetadatatag.md) types. The newly created tag stores only a shallow copy of the original value. As a result, modifying the original value doesn’t affect the value in the new [`CGImageMetadataTag`](cgimagemetadatatag.md).
 
 
 ---

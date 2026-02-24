@@ -26,8 +26,8 @@ A new mutable array that contains the same values as `theArray`. The new array h
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new array and its storage for values. Pass   or   to use the current default allocator.
-- `capacity`: Pass   to specify that the maximum capacity is not limited. If non- ,   must be greater than or equal to the count of  .
+- `allocator`: The allocator to use to allocate memory for the new array and its storage for values. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `capacity`: The maximum number of values that can be contained by the new array. The array starts with the same number of values as `theArray` and can grow to this number of values (and it can have less). Pass `0` to specify that the maximum capacity is not limited. If non-`0`, `capacity` must be greater than or equal to the count of `theArray`.
 - `theArray`: The array to copy. The pointer values from the array are copied into the new array. However, the values are also retained by the new array.
 
 ## See Also

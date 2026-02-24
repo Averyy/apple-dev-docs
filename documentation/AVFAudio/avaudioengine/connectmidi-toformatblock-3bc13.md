@@ -23,8 +23,8 @@ func connectMIDI(_ sourceNode: AVAudioNode, to destinationNode: AVAudioNode, for
 
 - `sourceNode`: The source node.
 - `destinationNode`: The destination node.
-- `format`: If not  , the engine uses this value for the format of the source audio node’s output bus. In all cases, the engine matches the format of the destination audio node’s input bus to the source audio node’s output bus.
-- `tapBlock`: If not  , the source node’s   calls this block on the real-time thread. The host can tap the MIDI data of the source node through this block.
+- `format`: If not `NULL`, the engine uses this value for the format of the source audio node’s output bus. In all cases, the engine matches the format of the destination audio node’s input bus to the source audio node’s output bus.
+- `tapBlock`: If not `NULL`, the source node’s [`AUMIDIOutputEventBlock`](https://developer.apple.com/documentation/AudioToolbox/AUMIDIOutputEventBlock) calls this block on the real-time thread. The host can tap the MIDI data of the source node through this block.
 
 ## See Also
 

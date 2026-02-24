@@ -30,7 +30,7 @@ If `rl` already contains `observer` in `mode`, this function does nothing.
 
 - `rl`: The run loop to modify.
 - `observer`: The run loop observer to add.
-- `mode`: The run loop mode to which to add  . Use the constant   to add   to the set of objects monitored by all the common modes.
+- `mode`: The run loop mode to which to add `observer`. Use the constant [`commonModes`](cfrunloopmode/commonmodes.md) to add `observer` to the set of objects monitored by all the common modes.
 
 ## See Also
 

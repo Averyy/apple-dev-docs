@@ -30,10 +30,12 @@ Use this method to iterate your block over the given range of a string. The meth
 ## Parameters
 
 - `range`: The range of the string you want the tagger to analyze.
-- `unit`: The linguistic unit of scale you’re interested in, such as  ,  ,  , or  .
-- `scheme`: The tag scheme the tagger uses to tag the string, such as   or  . This scheme determines which types of   the method passes to your block. For other tag schemes, see  .
-- `options`: The set of linguistic tagger options to use, such as  . For all available options, see  .
-- `block`: The block this method uses to iterate over the tagger’s   property. The block has the following parameters:
+- `unit`: The linguistic unit of scale you’re interested in, such as [`NLTokenUnit.word`](nltokenunit/word.md), [`NLTokenUnit.sentence`](nltokenunit/sentence.md), [`NLTokenUnit.paragraph`](nltokenunit/paragraph.md), or [`NLTokenUnit.document`](nltokenunit/document.md).
+- `scheme`: The tag scheme the tagger uses to tag the string, such as [`language`](nltagscheme/language.md) or [`script`](nltagscheme/script.md). This scheme determines which types of [`NLTag`](nltag.md) the method passes to your block. For other tag schemes, see [`NLTagScheme`](nltagscheme.md).
+- `options`: The set of linguistic tagger options to use, such as [`omitWhitespace`](nltagger/options/omitwhitespace.md). For all available options, see [`NLTagger.Options`](nltagger/options.md).
+- `block`: The block this method uses to iterate over the tagger’s [`string`](nltagger/string.md) property. The block has the following parameters: - **tag**: The tag of the token.
+- **tokenRange**: The range of the token.
+- **stop**: A reference to a Boolean value. The block can set the value to `true` to stop further processing of the set. The `stop` argument is an out-only argument. You should only ever set this Boolean to `true` within the block.
 
 ## See Also
 

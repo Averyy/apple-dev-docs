@@ -29,8 +29,8 @@ Use this task to update your application’s state. You can only schedule one ba
 ## Parameters
 
 - `preferredFireDate`: The date and time of the next background app refresh task. The system attempts to wake your app in the background shortly after the scheduled time, but may delay the background task due to the system’s current state or if your app exceeds its budget for background tasks.
-- `userInfo`: A dictionary of custom information associated with the background app refresh task. Pass   if you don’t need to associate any custom data with the task.
-- `scheduledCompletion`: A block that the system calls after scheduling the background app refresh task. This block takes the following parameter:
+- `userInfo`: A dictionary of custom information associated with the background app refresh task. Pass `nil` if you don’t need to associate any custom data with the task.
+- `scheduledCompletion`: A block that the system calls after scheduling the background app refresh task. This block takes the following parameter: - **error**: If an error occurs, this parameter contains an object describing the error; otherwise, it’s `nil`.
 
 ## See Also
 

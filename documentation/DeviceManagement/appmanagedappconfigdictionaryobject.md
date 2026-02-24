@@ -26,6 +26,13 @@ object AppManagedAppConfigDictionaryObject
 - [object AppManagedCredentialConfigObject](appmanagedcredentialconfigobject.md)
   A dictionary of values associated with a credential config.
 
+## Properties
+
+- `Certificates` ([AppManagedCredentialConfigObject]): Provides certificates to the managed app or extension. Each element in the array contains a certificate asset reference and an associated identifier which the app or extension uses to look up the certificate.
+- `DataAssetReference` (string): Specifies the identifier of an asset declaration containing a reference to the app or extension config data. The corresponding asset needs to be of type `com.apple.asset.data`. The referenced data needs to be a property list file, and the asset’s “ContentType” value set to match the data type.
+- `Identities` ([AppManagedCredentialConfigObject]): Provides identities to the managed app or extension. Each element in the array contains an identity asset reference and an associated identifier which the app or extension uses to look up the identity.
+- `Passwords` ([AppManagedCredentialConfigObject]): Provides passwords to the managed app or extension. Each element in the array contains a password asset reference and an associated identifier which the app or extension uses to look up the password.
+
 ## See Also
 
 - [object AppManagedAttributesObject](appmanagedattributesobject.md)

@@ -12,6 +12,34 @@ Sometimes, you want to control the specific mipmap levels that the sampler can r
 
 When you configure the [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) instance, set the [`lodMinClamp`](mtlsamplerdescriptor/lodminclamp.md) and [`lodMaxClamp`](mtlsamplerdescriptor/lodmaxclamp.md) properties to the range of permitted values.
 
+**Swift**:
+
+```swift
+let descriptor = MTLSamplerDescriptor()
+descriptor.minFilter = MTLSamplerMinMagFilter.linear
+descriptor.magFilter = MTLSamplerMinMagFilter.linear
+descriptor.mipFilter = MTLSamplerMipFilter.linear
+
+descriptor.lodMinClamp = 3.0
+descriptor.lodMaxClamp = 5.0
+
+let sampler = device.makeSamplerState(descriptor: descriptor)
+```
+
+**Objective-C**:
+
+```objective-c
+MTLSamplerDescriptor *descriptor = [MTLSamplerDescriptor new];
+descriptor.minFilter = MTLSamplerMinMagFilterLinear;
+descriptor.magFilter = MTLSamplerMinMagFilterLinear;
+descriptor.mipFilter = MTLSamplerMipFilterLinear;
+
+descriptor.lodMinClamp = 3.0f;
+descriptor.lodMaxClamp = 5.0f;
+
+id<MTLSamplerState> sampler = [device newSamplerStateWithDescriptor: descriptor];
+```
+
 This example creates a sampler that ignores mipmaps `0`, `1`, and `2`.
 
 ##### Limit the Sampler When You Create It in Your Shader
@@ -30,6 +58,22 @@ Not all GPUs support clamping at the moment it samples a texture. Verify that GP
 
 - The [`MTLGPUFamily.mac2`](mtlgpufamily/mac2.md) feature set.
 - The [`MTLGPUFamily.apple6`](mtlgpufamily/apple6.md) feature set.
+
+**Swift**:
+
+```swift
+let macFamily2Support = device.supportsFamily(MTLGPUFamily.mac2)
+let appleFamily6Support = device.supportsFamily(MTLGPUFamily.apple6)
+let supportsMinLevelOfDetailClamp = macFamily2Support || appleFamily6Support
+```
+
+**Objective-C**:
+
+```objective-c
+Boolean macFamily2Support = [device supportsFamily:MTLGPUFamilyMac2];
+Boolean appleFamily6Support = [device supportsFamily:MTLGPUFamilyApple6];
+Boolean supportsMinLevelOfDetailClamp = macFamily2Support || appleFamily6Support;
+```
 
 In your shader, call one of the variants of the `sample` function that takes additional LOD parameters. For example, the following code limits sampling to a specific level or lower in the mipmap chain. The shader has a minimum level parameter that it uses to sample the texture:
 

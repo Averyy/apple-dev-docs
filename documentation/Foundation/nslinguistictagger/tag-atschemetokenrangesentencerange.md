@@ -31,7 +31,7 @@ This is a convenience method for calling [`tag(at:unit:scheme:tokenRange:)`](nsl
 ## Parameters
 
 - `charIndex`: The position of the initial character.
-- `scheme`: The tag scheme. See   for the possible values.
+- `scheme`: The tag scheme. See [`NSLinguisticTagScheme`](nslinguistictagscheme.md) for the possible values.
 - `tokenRange`: A pointer to the token range.
 - `sentenceRange`: A pointer to the range of the sentence.
 

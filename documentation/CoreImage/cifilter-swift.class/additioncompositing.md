@@ -33,6 +33,9 @@ The filter calculates the sum of color components in the two input images to pro
 
 The addition compositing filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image that the filter applies the effect on with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that combines the images’ colors to produce one image:
 
 ```swift

@@ -29,7 +29,7 @@ This function throws an error if `child` already has a different parent.
 
 ## Parameters
 
-- `child`: The object to add to the   array.
+- `child`: The object to add to the [`children`](phaseobject/children.md) array.
 
 ## See Also
 

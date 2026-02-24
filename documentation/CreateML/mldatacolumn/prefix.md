@@ -25,7 +25,7 @@ A new column.
 
 ## Parameters
 
-- `maxLength`: An integer that limits the number of elements to use from the beginning of the column. The   default value is  .
+- `maxLength`: An integer that limits the number of elements to use from the beginning of the column. The default value is `10`.
 
 ## See Also
 

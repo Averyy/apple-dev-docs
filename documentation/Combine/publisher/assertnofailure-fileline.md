@@ -26,7 +26,7 @@ A publisher that raises a fatal error when its upstream publisher fails.
 
 #### Discussion
 
-Use `assertNoFailure()` for internal integrity checks that are active during testing. However, it is important to note that, like its Swift counterpart `fatalError(_:)`, the `assertNoFailure()` operator asserts a fatal exception when triggered during development and testing,  in shipping versions of code.
+Use `assertNoFailure()` for internal integrity checks that are active during testing. However, it is important to note that, like its Swift counterpart `fatalError(_:)`, the `assertNoFailure()` operator asserts a fatal exception when triggered during development and testing, *and* in shipping versions of code.
 
 In the example below, a `CurrentValueSubject` publishes the initial and second values successfully. The third value, containing a `genericSubjectError`, causes the `assertNoFailure()` operator to assert a fatal exception stopping the process:
 
@@ -54,8 +54,8 @@ subject.send(completion: Subscribers.Completion<Error>.failure(SubjectError.gene
 ## Parameters
 
 - `prefix`: A string used at the beginning of the fatal error message.
-- `file`: A filename used in the error message. This defaults to  .
-- `line`: A line number used in the error message. This defaults to  .
+- `file`: A filename used in the error message. This defaults to `#file`.
+- `line`: A line number used in the error message. This defaults to `#line`.
 
 ## See Also
 

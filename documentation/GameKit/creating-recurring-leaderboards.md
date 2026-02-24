@@ -6,7 +6,7 @@ Create a leaderboard for your game that ranks player scores based on a schedule.
 
 #### Overview
 
-Use a  to organize regular competitions or encourage players to score higher in your game. Unlike a classic leaderboard that never resets, a recurring leaderboard represents score rankings during a period of time. Each leaderboard in the sequence is called an .
+Use a *recurring leaderboard* to organize regular competitions or encourage players to score higher in your game. Unlike a classic leaderboard that never resets, a recurring leaderboard represents score rankings during a period of time. Each leaderboard in the sequence is called an *occurrence*.
 
 For design guidance, see [`Human Interface Guidelines > Technologies > Game Center > Leaderboards`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/game-center#Leaderboards).
 

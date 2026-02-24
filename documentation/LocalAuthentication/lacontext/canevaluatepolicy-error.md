@@ -33,8 +33,8 @@ Don’t store the return value from this method because it might change as a res
 
 ## Parameters
 
-- `policy`: The policy to evaluate. For possible values, see  .
-- `error`: Specify   for this parameter to ignore any errors.
+- `policy`: The policy to evaluate. For possible values, see [`LAPolicy`](lapolicy.md).
+- `error`: If the method fails, it uses this parameter to return an error detailing what went wrong. See [`LAError.Code`](laerror-swift.struct/code.md) for possible error codes. Specify `nil` for this parameter to ignore any errors.
 
 ## See Also
 

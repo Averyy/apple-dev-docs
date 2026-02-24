@@ -28,8 +28,9 @@ Use this method to initiate the speech recognition process on the audio containe
 
 ## Parameters
 
-- `request`: A request (in an   object) to recognize speech from an audio source.
-- `resultHandler`: The block to call when partial or final results are available, or when an error occurs. If the   property is  , this block may be called multiple times to deliver the partial and final results. The block has no return value and takes the following parameters:
+- `request`: A request (in an [`SFSpeechRecognitionRequest`](sfspeechrecognitionrequest.md) object) to recognize speech from an audio source.
+- `resultHandler`: The block to call when partial or final results are available, or when an error occurs. If the [`shouldReportPartialResults`](sfspeechrecognitionrequest/shouldreportpartialresults.md) property is `true`, this block may be called multiple times to deliver the partial and final results. The block has no return value and takes the following parameters: - **result**: A [`SFSpeechRecognitionResult`](sfspeechrecognitionresult.md) containing the partial or final transcriptions of the audio content.
+- **error**: An error object if a problem occurred. This parameter is `nil` if speech recognition was successful.
 
 ## See Also
 

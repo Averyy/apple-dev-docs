@@ -34,13 +34,87 @@ An alternate way to compose emails is to create and open a URL that uses the `ma
 
 Before presenting the mail compose view controller, always call the [`canSendMail()`](mfmailcomposeviewcontroller/cansendmail().md) method to see if the person configured the current device to send email. If the person’s device isn’t set up for the delivery of email, you can notify the person or disable the email dispatch features in your application. You shouldn’t attempt to use this interface if the [`canSendMail()`](mfmailcomposeviewcontroller/cansendmail().md) method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
+**Swift**:
+
+```swift
+if !MFMailComposeViewController.canSendMail() {
+    print("Mail services are not available")
+    return
+}
+```
+
+**Obj-C**:
+
+```objc
+if (![MFMailComposeViewController canSendMail]) {
+   NSLog(@"Mail services are not available.");
+   return;
+}
+```
+
 ##### Configuring and Displaying the Composition Interface
 
 After verifying that mail services are available, you can create and configure the mail composition view controller and then present it as any other view controller. Use the methods of this class to specify the subject, recipients, and message body of the email, including any attachments you want to send with the message. The sample code below shows how to configure the composition interface and present it modally. Always assign a delegate to the [`mailComposeDelegate`](mfmailcomposeviewcontroller/mailcomposedelegate.md) property, because the delegate is responsible for dismissing the composition interface later.
 
-> ❗ **Important**:  After presenting a mail compose view controller, the system ignores any attempts to modify the email using the methods of this class. The user can still edit the content of the email, but your app can’t. Therefore, always configure the fields of your email  presenting the view controller.
+**Swift**:
+
+```swift
+let composeVC = MFMailComposeViewController()
+composeVC.mailComposeDelegate = self
+ 
+// Configure the fields of the interface.
+composeVC.setToRecipients(["address@example.com"])
+composeVC.setSubject("Hello!")
+composeVC.setMessageBody("Hello from California!", isHTML: false)
+// Present the view controller modally.
+self.present(composeVC, animated: true, completion: nil)
+```
+
+**Obj-C**:
+
+```objc
+MFMailComposeViewController* composeVC = [[MFMailComposeViewController alloc] init];
+composeVC.mailComposeDelegate = self;
+ 
+// Configure the fields of the interface.
+[composeVC setToRecipients:@[@"address@example.com"]];
+[composeVC setSubject:@"Hello!"];
+[composeVC setMessageBody:@"Hello from California!" isHTML:NO];
+ 
+// Present the view controller modally.
+[self presentViewController:composeVC animated:YES completion:nil];
+
+```
+
+> ❗ **Important**:  After presenting a mail compose view controller, the system ignores any attempts to modify the email using the methods of this class. The user can still edit the content of the email, but your app can’t. Therefore, always configure the fields of your email *before* presenting the view controller.
 
 The mail compose view controller isn’t dismissed automatically. When the user taps the buttons to send the email or cancel the interface, the mail compose view controller calls the [`mailComposeController(_:didFinishWith:error:)`](mfmailcomposeviewcontrollerdelegate/mailcomposecontroller(_:didfinishwith:error:).md) method of its delegate. Your implementation of that method must dismiss the view controller explicitly, as shown in sample code below. You can also use this method to check the result of the operation.
+
+**Swift**:
+
+```swift
+func mailComposeController(controller: MFMailComposeViewController,
+                           didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+    // Check the result or perform other tasks.
+    
+    // Dismiss the mail compose view controller.
+    controller.dismiss(animated: true, completion: nil)
+}
+
+```
+
+**Obj-C**:
+
+```objc
+- (void)mailComposeController:(MFMailComposeViewController *)controller
+          didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+   // Check the result or perform other tasks.
+ 
+   // Dismiss the mail compose view controller.
+   [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+```
 
 The user can delete a queued message before it’s sent. Although the view controller reports the success or failure of the operation to its delegate, this class doesn’t provide a way for you to verify if the email sent.
 

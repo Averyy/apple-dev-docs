@@ -25,6 +25,12 @@ object ErrorResponse
 - [object ResponseErrorInfo](responseerrorinfo.md)
   Information about the error.
 
+## Properties
+
+- `errorInfo` (ResponseErrorInfo): The request-specific information regarding the failure.
+- `errorMessage` (string): The human-readable error message that describes the failure.
+- `errorNumber` (int32): The error number that represents the failure.
+
 ## See Also
 
 - [object ManageAssetsRequest](manageassetsrequest.md)

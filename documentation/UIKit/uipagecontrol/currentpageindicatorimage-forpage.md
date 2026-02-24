@@ -24,7 +24,7 @@ The override image, or `nil` if you haven’t overidden the image for the specif
 
 ## Parameters
 
-- `page`: The index of the page. A value that’s greater than or equal to   and less than  .
+- `page`: The index of the page. A value that’s greater than or equal to `0` and less than [`numberOfPages`](uipagecontrol/numberofpages.md).
 
 ## See Also
 

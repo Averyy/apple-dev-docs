@@ -26,10 +26,10 @@ A new `CFURL` object. Ownership follows the create rule. See [`The Create Rule`]
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
-- `buffer`: The character bytes to convert into a   object. This should be the path as you would use in POSIX function calls.
-- `bufLen`: The number of character bytes in the buffer (usually the result of a call to  ), not including any null termination.
-- `isDirectory`: A Boolean value that specifies whether the string is treated as a directory path when resolving against relative path components—  if the pathname indicates a directory,   otherwise.
+- `allocator`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `buffer`: The character bytes to convert into a `CFURL` object. This should be the path as you would use in POSIX function calls.
+- `bufLen`: The number of character bytes in the buffer (usually the result of a call to `strlen`), not including any null termination.
+- `isDirectory`: A Boolean value that specifies whether the string is treated as a directory path when resolving against relative path components—`true` if the pathname indicates a directory, `false` otherwise.
 
 ## See Also
 

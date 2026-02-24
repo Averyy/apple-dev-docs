@@ -25,7 +25,7 @@ This method returns immediately, with success or failure indicated by the callba
 
 ## Parameters
 
-- `options`: Options for the receiver. The supported options are described in  .
+- `options`: Options for the receiver. The supported options are described in [`NetService.Options`](netservice/options.md).
 
 ## See Also
 

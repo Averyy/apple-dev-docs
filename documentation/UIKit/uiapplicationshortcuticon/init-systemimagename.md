@@ -23,7 +23,7 @@ A Home Screen quick action icon initialized with the specified system symbol ima
 
 ## Parameters
 
-- `systemImageName`: The name of the system symbol image. Use the SF Symbols app to look up the names of system symbol images. You can download this app from the design resources page at  .
+- `systemImageName`: The name of the system symbol image. Use the SF Symbols app to look up the names of system symbol images. You can download this app from the design resources page at [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com/design/resources/).
 
 ## See Also
 

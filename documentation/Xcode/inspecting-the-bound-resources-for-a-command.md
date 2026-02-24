@@ -18,18 +18,18 @@ The Bound Resources viewer displays the current set of bound resources in the en
 
 For a render pass, the Bound Resources viewer groups the resources in the following sections:
 
--  The specified render pipeline state.
--  The indirect command buffer (ICB) that the command executes from.
--  The resources in the corresponding stage. In addition, it includes the shader function. For the vertex and the mesh stage, it also includes the index buffer and output geometry.
--  The attachment textures.
--  The used indirect resources and those from the same heap. To use a resource, call [`useResource(_:usage:stages:)`](https://developer.apple.com/documentation/Metal/MTLRenderCommandEncoder/useResource(_:usage:stages:)) or [`useHeap(_:stages:)`](https://developer.apple.com/documentation/Metal/MTLRenderCommandEncoder/useHeap(_:stages:)).
+- **Render Pipeline:** The specified render pipeline state.
+- **Execute Indirect:** The indirect command buffer (ICB) that the command executes from.
+- **Vertex/Object/Mesh/Tile/Fragment Stage:** The resources in the corresponding stage. In addition, it includes the shader function. For the vertex and the mesh stage, it also includes the index buffer and output geometry.
+- **Attachments:** The attachment textures.
+- **Indirect:** The used indirect resources and those from the same heap. To use a resource, call [`useResource(_:usage:stages:)`](https://developer.apple.com/documentation/Metal/MTLRenderCommandEncoder/useResource(_:usage:stages:)) or [`useHeap(_:stages:)`](https://developer.apple.com/documentation/Metal/MTLRenderCommandEncoder/useHeap(_:stages:)).
 
 For a compute pass, the Bound Resources viewer groups the resources in the following sections:
 
--  The specified compute pipeline state.
--  The indirect command buffer (ICB) that the command executes from.
--  The resources in the compute pass.
--  The used indirect resources and those from the same heap. To use a resource, call [`useResource(_:usage:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/useResource(_:usage:)), [`useResources(_:usage:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/useResources(_:usage:)), [`useHeap(_:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/useHeap(_:)), or [`useHeaps(_:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/useHeaps(_:)).
+- **Compute Pipeline:** The specified compute pipeline state.
+- **Execute Indirect:** The indirect command buffer (ICB) that the command executes from.
+- **Compute:** The resources in the compute pass.
+- **Indirect:** The used indirect resources and those from the same heap. To use a resource, call [`useResource(_:usage:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/useResource(_:usage:)), [`useResources(_:usage:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/useResources(_:usage:)), [`useHeap(_:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/useHeap(_:)), or [`useHeaps(_:)`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder/useHeaps(_:)).
 
 The Bound Resources viewer includes the following information for all resource types:
 

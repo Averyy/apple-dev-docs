@@ -29,7 +29,7 @@ Prior to replacing text, this method is called to give your delegate a chance to
 ## Parameters
 
 - `range`: A range of text in a document.
-- `text`: The proposed text to replace the text in  .
+- `text`: The proposed text to replace the text in `range`.
 
 ## See Also
 

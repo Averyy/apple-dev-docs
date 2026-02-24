@@ -20,7 +20,7 @@ The label of the segment. The returned string contains the entire text of the la
 
 ## Parameters
 
-- `segment`: The index of the segment whose label you want to get. This method raises an exception ( ) if the index is out of bounds.
+- `segment`: The index of the segment whose label you want to get. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if the index is out of bounds.
 
 ## See Also
 

@@ -31,7 +31,7 @@ In OS X v10.4 and earlier, the result code returned by this function is a random
 ## Parameters
 
 - `callback`: A pointer to the callback function to be registered.
-- `userInfo`: A pointer to user-defined data, or  . The   argument is passed back to the callback function each time it’s invoked.
+- `userInfo`: A pointer to user-defined data, or `NULL`. The `userParameter` argument is passed back to the callback function each time it’s invoked.
 
 ## See Also
 

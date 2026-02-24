@@ -32,7 +32,7 @@ This function returns the graphical offset or offsets corresponding to a string 
 
 - `line`: The line from which the offset is requested.
 - `charIndex`: The string index corresponding to the desired position.
-- `secondaryOffset`: On output, the secondary offset along the baseline for  . When a single caret is sufficient for a string index, this value will be the same as the primary offset, which is the return value of this function. May be  .
+- `secondaryOffset`: On output, the secondary offset along the baseline for `charIndex`. When a single caret is sufficient for a string index, this value will be the same as the primary offset, which is the return value of this function. May be `NULL`.
 
 ## See Also
 

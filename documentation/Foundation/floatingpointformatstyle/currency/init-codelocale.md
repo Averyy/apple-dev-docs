@@ -22,8 +22,8 @@ init(code: String, locale: Locale = .autoupdatingCurrent)
 
 ## Parameters
 
-- `code`: The currency code to use, such as   or  .
-- `locale`: The locale to use when formatting or parsing floating-point values. Defaults to  .
+- `code`: The currency code to use, such as `EUR` or `JPY`.
+- `locale`: The locale to use when formatting or parsing floating-point values. Defaults to [`autoupdatingCurrent`](locale/autoupdatingcurrent.md).
 
 
 ---

@@ -32,7 +32,7 @@ This method throws an exception if `data` is not a valid archive.
 
 ## Parameters
 
-- `data`: An archive previously encoded by  .
+- `data`: An archive previously encoded by [`NSKeyedArchiver`](nskeyedarchiver.md).
 
 ## See Also
 

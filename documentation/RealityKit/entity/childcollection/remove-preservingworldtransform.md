@@ -27,7 +27,7 @@ Removes the specified child from this entity.
 ## Parameters
 
 - `child`: The child entity to remove from the collection.
-- `preservingWorldTransform`:   to preserve the world transform.   to   preserve the relative transform. (Use   if the   entities should keep its effective location and size in   the scene!)
+- `preservingWorldTransform`: `true` to preserve the world transform. `false` to preserve the relative transform. (Use `true` if the entities should keep its effective location and size in the scene!)
 
 ## See Also
 

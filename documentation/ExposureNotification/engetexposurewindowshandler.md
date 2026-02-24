@@ -23,7 +23,7 @@ typealias ENGetExposureWindowsHandler = ([ENExposureWindow]?, (any Error)?) -> V
 ## Parameters
 
 - `exposureWindows`: An array of available exposure windows. The contents of this array are in no particular order.
-- `error`: A successful invocation if  ; otherwise, the error that occured.
+- `error`: A successful invocation if `nil`; otherwise, the error that occured.
 
 ## See Also
 

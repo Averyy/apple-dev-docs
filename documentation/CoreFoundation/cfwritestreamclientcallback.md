@@ -26,9 +26,9 @@ This callback is called only for the events requested when setting the client wi
 
 ## Parameters
 
-- `stream`: The stream that experienced the event  .
-- `eventType`: The event that caused the callback to be called. The possible events are listed in  .
-- `clientCallBackInfo`: The   member of the   structure that was used when setting the client for  .
+- `stream`: The stream that experienced the event `eventType`.
+- `eventType`: The event that caused the callback to be called. The possible events are listed in [`CFStreamEventType`](cfstreameventtype.md).
+- `clientCallBackInfo`: The `info` member of the [`CFStreamClientContext`](cfstreamclientcontext.md) structure that was used when setting the client for `stream`.
 
 
 ---

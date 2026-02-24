@@ -24,7 +24,7 @@ Any subsequently encountered objects of class `trueName` are archived as instanc
 ## Parameters
 
 - `trueName`: The real name of a class in the object graph being archived.
-- `inArchiveName`: The name of the class to use in the archive in place of  .
+- `inArchiveName`: The name of the class to use in the archive in place of `trueName`.
 
 ## See Also
 

@@ -16,7 +16,7 @@ func setTitleBaseWritingDirection(_ writingDirection: NSWritingDirection)
 
 ## Parameters
 
-- `writingDirection`: This value can be one of the following constants:  ,  , or  .
+- `writingDirection`: This value can be one of the following constants: `NSWritingDirectionNatural`, `NSWritingDirectionLeftToRight`, or `NSWritingDirectionRightToLeft`.
 
 ## See Also
 

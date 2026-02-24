@@ -25,7 +25,7 @@ An array of valid [`MPSGraphTensor`](mpsgraphtensor.md) objects representing the
 
 ## Parameters
 
-- `symbolName`: The unique identifier used to find the executable in the   directory.
+- `symbolName`: The unique identifier used to find the executable in the `MPSGraphCompilationDescriptor.callables` directory.
 - `inputTensors`: The tensors which are passed as inputs to the executable being invoked.
 - `outputTypes`: The expected return types of the executable being invoked.
 - `name`: Name of operation.

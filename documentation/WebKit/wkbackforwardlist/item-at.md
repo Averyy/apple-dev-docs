@@ -24,7 +24,7 @@ The item at the specified offset from the current item, or `nil` if the `index` 
 
 ## Parameters
 
-- `index`: The offset of the desired item from the current item. Specify   for the current item,   for the immediately preceding item,   for the immediately following item, and so on.
+- `index`: The offset of the desired item from the current item. Specify `0` for the current item, `-1` for the immediately preceding item, `1` for the immediately following item, and so on.
 
 
 ---

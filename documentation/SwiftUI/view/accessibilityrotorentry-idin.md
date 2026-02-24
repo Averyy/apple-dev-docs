@@ -27,8 +27,8 @@ Use this when creating an AccessibilityRotorEntry without a namespace does not a
 
 ## Parameters
 
-- `id`: An arbitrary hashable identifier. Pass this same value   when initializing an AccessibilityRotorEntry.
-- `namespace`: A namespace created with  . Pass this   same namespace when initializing an  .
+- `id`: An arbitrary hashable identifier. Pass this same value when initializing an AccessibilityRotorEntry.
+- `namespace`: A namespace created with `@Namespace()`. Pass this same namespace when initializing an `AccessibilityRotorEntry`.
 
 ## See Also
 

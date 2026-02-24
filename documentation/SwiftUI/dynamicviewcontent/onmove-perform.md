@@ -31,7 +31,7 @@ A view that calls `action` when elements are moved within the original view.
 
 ## Parameters
 
-- `action`: A closure that SwiftUI invokes when elements in the dynamic   view are moved. The closure takes two arguments that represent the   offset relative to the dynamic view’s underlying collection of data.   Pass   to disable the ability to move items.
+- `action`: A closure that SwiftUI invokes when elements in the dynamic view are moved. The closure takes two arguments that represent the offset relative to the dynamic view’s underlying collection of data. Pass `nil` to disable the ability to move items.
 
 ## See Also
 

@@ -28,7 +28,8 @@ func saveRight(_ right: LARight, identifier: String) async throws -> LAPersisted
 
 - `right`: The right to store.
 - `identifier`: A unique identifier for the right.
-- `handler`: A completion handler to call when the save operation completes.
+- `handler`: A completion handler to call when the save operation completes. - **`right`**: The persisted form of the right that the save operation stores.
+- **`error`**: An error object that indicates why the `right` parameter is `nil`, or `nil` if the right parameter is non-`nil`.
 
 ## See Also
 

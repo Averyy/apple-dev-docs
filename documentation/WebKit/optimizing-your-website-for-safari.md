@@ -12,14 +12,14 @@ Safari is a full-featured web browser that comes with macOS and iOS. While all W
 
 To ensure that your content works great in Safari:
 
--  Use Web Inspector and Safari Developer Tools to inspect details and test the performance of your website in Safari. See [`Safari Developer Help`](https://developer.apple.comhttps://support.apple.com/guide/safari-developer/welcome/mac).
--  Encode media content so that it loads quickly in Safari. For audio and video content, use the HTML5 markup elements `<audio>` and `<video>`, and use `<canvas>` for vector graphics and animation. See HLS Authoring Specification for Apple Devices.
--  To ensure that your website loads fast and efficiently, Safari does not rely on plug-ins to handle audio, video, or animation.
--  Use appropriate markup and tags to ensure the accessibility of your website, including [`ARIA`](https://developer.apple.comhttps://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) and [`A11Y`](https://developer.apple.comhttps://a11yproject.com).
--  Use responsive design to accommodate the many different Apple devices for iOS, macOS, and watchOS. A responsive design ensures that users can view your website in Safari everywhere, regardless of the screen or window width. See [`Designing Web Content for watchOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2018/239/), and [`Using Safari to Deliver and Debug a Responsive Web Design`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2015/505/).
--  Add support for Multi-Touch gestures so these interactions are easier for users on mobile devices.
--  Ensure that your website uses one of Safari’s supported security features, like subresource integrity, TLS, RSA, and HTTPS.
--  Make use of good web design practices and web standards. Make use of HTML5, CSS3, and the latest web standards supported by the [`W3C`](https://developer.apple.comhttps://www.w3.org).
+- **Web Inspector.** Use Web Inspector and Safari Developer Tools to inspect details and test the performance of your website in Safari. See [`Safari Developer Help`](https://developer.apple.comhttps://support.apple.com/guide/safari-developer/welcome/mac).
+- **Media Formatting.** Encode media content so that it loads quickly in Safari. For audio and video content, use the HTML5 markup elements `<audio>` and `<video>`, and use `<canvas>` for vector graphics and animation. See HLS Authoring Specification for Apple Devices.
+- **No Plug-ins.** To ensure that your website loads fast and efficiently, Safari does not rely on plug-ins to handle audio, video, or animation.
+- **Accessibility.** Use appropriate markup and tags to ensure the accessibility of your website, including [`ARIA`](https://developer.apple.comhttps://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) and [`A11Y`](https://developer.apple.comhttps://a11yproject.com).
+- **Responsive Design.** Use responsive design to accommodate the many different Apple devices for iOS, macOS, and watchOS. A responsive design ensures that users can view your website in Safari everywhere, regardless of the screen or window width. See [`Designing Web Content for watchOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2018/239/), and [`Using Safari to Deliver and Debug a Responsive Web Design`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2015/505/).
+- **Touch Screen.** Add support for Multi-Touch gestures so these interactions are easier for users on mobile devices.
+- **Security.** Ensure that your website uses one of Safari’s supported security features, like subresource integrity, TLS, RSA, and HTTPS.
+- **Web Standards.** Make use of good web design practices and web standards. Make use of HTML5, CSS3, and the latest web standards supported by the [`W3C`](https://developer.apple.comhttps://www.w3.org).
 
 > 💡 **Tip**:  Use feature detection to make your website browser independent. By detecting the browser, you can not only support multiple browsers but also support multiple WebKit versions.
 

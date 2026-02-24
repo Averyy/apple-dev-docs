@@ -30,8 +30,8 @@ For more information on numerical file modes, see the chmod(2) manual page and t
 
 ## Parameters
 
-- `fileSec`: The   object to modify.
-- `mode`: An integer of type  .
+- `fileSec`: The `CFFileSecurityRef` object to modify.
+- `mode`: An integer of type `mode_t`.
 
 ## See Also
 

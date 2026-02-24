@@ -29,9 +29,23 @@ Rules created using this method encode their predicate and action when archived 
 
 Rules based on [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) objects typically test information in the [`state`](gkrulesystem/state.md) dictionary of the rule system evaluating the rule. For example, the following code creates a rule you might use to determine whether an enemy character in a game behaves aggressively. (This example presumes the rule system’s state dictionary contains an object for the key `player`, which in turn exposes a numeric value for the key `health`.)
 
+**Swift**:
+
+```swift
+let healthTest = NSPredicate(format: "$player.health > 50")
+let rule = GKRule(predicate: healthTest, retractingFact: "player_weak", grade: 0.5)
+```
+
+**Objective-C**:
+
+```objc
+NSPredicate *healthTest = [NSPredicate predicateWithFormat:@"$player.health > 50"];
+GKRule *rule = [GKRule ruleWithPredicate:healthTest retractingFact:@"player_weak" grade:0.5];
+```
+
 ## Parameters
 
-- `fact`: An object representing a fact to retract when the rule’s predicate is satisfied. (For details on facts in rule systems, see the   property in  .)
+- `fact`: An object representing a fact to retract when the rule’s predicate is satisfied. (For details on facts in rule systems, see the [`facts`](gkrulesystem/facts.md) property in [`GKRuleSystem`](gkrulesystem.md).)
 - `grade`: An amount by which to decrease the fact’s membership grade if the rule’s predicate is satisfied.
 
 ## See Also

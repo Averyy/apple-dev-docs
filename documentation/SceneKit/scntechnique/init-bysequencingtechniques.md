@@ -30,7 +30,7 @@ The new technique applies the effects of the techniques in the order specified i
 
 ## Parameters
 
-- `techniques`: An array of   objects.
+- `techniques`: An array of [`SCNTechnique`](scntechnique.md) objects.
 
 
 ---

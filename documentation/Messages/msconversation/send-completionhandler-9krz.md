@@ -46,7 +46,7 @@ If the message was initialized using the session from an existing message, a new
 ## Parameters
 
 - `message`: The message object to send.
-- `completionHandler`: A block that’s called as soon as the message starts sending. This block is passed the following parameter:
+- `completionHandler`: A block that’s called as soon as the message starts sending. This block is passed the following parameter: - **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it’s set to `nil`. The system validates the message before inserting it. Errors occur if the message is invalid or if the user hasn’t recently interacted with your app.
 
 ## See Also
 

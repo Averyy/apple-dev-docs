@@ -26,10 +26,10 @@ A new `NSDate` object representing the absolute time calculated by adding to `da
 
 ## Parameters
 
-- `unit`: The unit to use for the calculation. For possible values, see  .
+- `unit`: The unit to use for the calculation. For possible values, see [`NSCalendar.Unit`](nscalendar/unit.md).
 - `value`: The value for the given unit.
 - `date`: The date to use to perform the calculation.
-- `options`: If you specify a “wrap” option ( ), the specified components are incremented and wrap around to zero/one on overflow, but do not cause higher units to be incremented. When the wrap option is false, overflow in a unit carries into the higher units, as in typical addition.
+- `options`: Options for the calculation. See [`NSCalendar.Options`](nscalendar/options.md) for possible values. If you specify a “wrap” option ([`wrapComponents`](nscalendar/options/wrapcomponents.md)), the specified components are incremented and wrap around to zero/one on overflow, but do not cause higher units to be incremented. When the wrap option is false, overflow in a unit carries into the higher units, as in typical addition.
 
 ## See Also
 

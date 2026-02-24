@@ -30,9 +30,9 @@ The run loop source is not automatically added to a run loop. To add the source 
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `port`: The Mach port for which to create a CFRunLoopSource object.
-- `order`: A priority index indicating the order in which run loop sources are processed.   is currently ignored by CFMachPort run loop sources. Pass   for this value.
+- `order`: A priority index indicating the order in which run loop sources are processed. `order` is currently ignored by CFMachPort run loop sources. Pass `0` for this value.
 
 ## See Also
 

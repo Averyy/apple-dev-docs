@@ -26,8 +26,8 @@ This method moves the character to a location specified relative to another enti
 
 ## Parameters
 
-- `position`: The position to move the character to, relative to  .
-- `referenceEntity`: The entity that defines a frame of reference.   Set this to   to indicate world space.
+- `position`: The position to move the character to, relative to `referenceEntity`.
+- `referenceEntity`: The entity that defines a frame of reference. Set this to `nil` to indicate world space.
 
 ## See Also
 

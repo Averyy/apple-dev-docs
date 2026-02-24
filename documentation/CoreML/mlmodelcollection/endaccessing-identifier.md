@@ -21,6 +21,35 @@ class func endAccessing(identifier: String) async throws -> Bool
 
 Use this method when your app no longer needs access to a model collection.
 
+**Swift**:
+
+```swift
+MLModelCollection.endAccessing(identifier: modelCollectionName) { result in
+    switch result {
+    case .success():
+        print("Successfully ended access to `\(modelCollectionName)`.")
+
+    case .failure(let error):
+        print("Error ending access to `\(modelCollectionName)`: \(error)")
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+[MLModelCollection endAccessingModelCollectionWithIdentifier:modelCollectionName
+                                           completionHandler:^(BOOL success,
+                                                               NSError * _Nullable error) {
+    if (success) {
+        NSLog(@"Successfully ended access to `%@`.", modelCollectionName);
+    }
+    else {
+        NSLog(@"Error ending access to `%@`: %@", modelCollectionName, error);
+    }
+}];
+```
+
 ## Parameters
 
 - `identifier`: The name of the model collection.

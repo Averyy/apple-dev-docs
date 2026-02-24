@@ -26,7 +26,7 @@ The dragged item order will directly match the pasteboard writer array used to b
 - `tableView`: The table view.
 - `session`: The dragging session.
 - `screenPoint`: The initial drag location in screen coordinates.
-- `rowIndexes`: The indexes of the rows to be dragged, excluding rows that were not dragged due to   returning  .
+- `rowIndexes`: The indexes of the rows to be dragged, excluding rows that were not dragged due to [`tableView(_:pasteboardWriterForRow:)`](nstableviewdatasource/tableview(_:pasteboardwriterforrow:).md) returning `nil`.
 
 ## See Also
 

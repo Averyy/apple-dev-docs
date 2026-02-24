@@ -22,7 +22,7 @@ static func afterOccurrences(_ count: Int) -> Calendar.RecurrenceRule.End
 
 ## Parameters
 
-- `count`: How many times to repeat the event, including   the first occurrence.   must be greater   than 
+- `count`: How many times to repeat the event, including the first occurrence. `count` must be greater than `0`
 
 
 ---

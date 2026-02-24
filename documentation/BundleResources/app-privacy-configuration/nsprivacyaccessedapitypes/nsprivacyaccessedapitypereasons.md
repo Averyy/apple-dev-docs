@@ -18,6 +18,10 @@ An array of strings that identifies the reasons your app or third-party SDK uses
 
 - [Describing use of required reason API](describing-use-of-required-reason-api.md)
 
+
+
+**Type**: string 
+
 #### Discussion
 
 For information on which reasons your app or third-party SDK declares for each category of required reasons API it uses, see [`NSPrivacyAccessedAPIType`](app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitype.md).

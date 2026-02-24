@@ -28,7 +28,7 @@ After initializing the search container view controller, embed it in your contai
 
 ## Parameters
 
-- `searchController`: The search controller managing the search results. This parameter must not be  .
+- `searchController`: The search controller managing the search results. This parameter must not be `nil`.
 
 
 ---

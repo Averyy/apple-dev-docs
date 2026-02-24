@@ -10,6 +10,10 @@ Health data types that require additional permission.
 - iPadOS 8.0+
 - visionOS 1.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 The [`HealthKit Entitlement`](entitlements/com.apple.developer.healthkit.md) provides access to most HealthKit data types. However, because of their highly sensitive nature, some data types require additional entitlements. The [`HealthKit Capabilities Entitlement`](entitlements/com.apple.developer.healthkit.access.md) provides access to these data types.

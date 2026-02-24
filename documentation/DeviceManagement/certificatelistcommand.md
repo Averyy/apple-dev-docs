@@ -25,6 +25,11 @@ object CertificateListCommand
 - [object CertificateListCommand.Command](certificatelistcommand/command-data.dictionary.md)
   The command to get a list of installed certificates on a device.
 
+## Properties
+
+- `Command` (CertificateListCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object CertificateListResponse](certificatelistresponse.md)

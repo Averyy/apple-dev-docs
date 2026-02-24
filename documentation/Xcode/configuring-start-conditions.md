@@ -10,6 +10,12 @@ Xcode Cloud watches your Git repository for changes, checks whether a change mee
 
 You can configure your Xcode Cloud workflow with any of the following start conditions:
 
+- **Branch Changes**: Xcode Cloud starts a new build if any branch, a specific branch, or several configured branches change.
+- **Pull Request Changes**: Xcode Cloud starts a new build if you create a new pull request (PR) or if you update an existing PR.
+- **Tag Changes**: Xcode Cloud starts a new build if you create or update a Git tag.
+- **On a Schedule for a Branch**: Xcode Cloud starts a new build on a configured schedule.
+- **Manual Start**: Xcode Cloud starts a new build when you manually request it.
+
 By configuring several start conditions for one workflow and reusing the workflow at different moments in your development life cycle, you can reduce the number of workflows you need to maintain. For example, you can configure one workflow to perform verifications for each change to a branch or a pull request — you don’t need to configure two separate workflows.
 
 For additional information about Xcode Cloud workflows, see [`Xcode Cloud workflow reference`](xcode-cloud-workflow-reference.md), [`Explore Xcode Cloud workflows`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10268), and [`Customize your Advanced Xcode Cloud workflows`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10269).
@@ -65,6 +71,9 @@ You can further customize the Pull Request Changes start condition with the Cust
 ##### Start Builds for New or Updated Git Tags
 
 Similar to how you can configure a workflow that starts a new build if a branch changes, configure Xcode Cloud to start a build if you create or update a Git tag. Add the Tag Changes start condition in Xcode or App Store Connect to a workflow and choose between:
+
+- **Any Tag**: This setting tells Xcode Cloud to start a new build every time you create or update a tag.
+- **Custom Tags**: This setting tells Xcode Cloud to monitor one or more custom tags for changes. Both Xcode and App Store Connect display a warning if you enter a tag that doesn’t exist on your remote Git repository.
 
 ![A screenshot of App Store Connect that shows the Tag Changes start condition. The user has configured the condition for tags that start with the string v1.](https://docs-assets.developer.apple.com/published/8abef81abe384ea68521d8d2c19a0204/Configuring-Start-Conditions-5%402x.png)
 

@@ -32,7 +32,7 @@ This action is not reversible.
 
 ## Parameters
 
-- `v`: The new value for stereo panning. The value must between   (left channel only) and   (right channel only), inclusive.
+- `v`: The new value for stereo panning. The value must between `-1.0` (left channel only) and `1.0` (right channel only), inclusive.
 - `duration`: The duration of the animation, in seconds.
 
 ## See Also

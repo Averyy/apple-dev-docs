@@ -23,10 +23,10 @@ Returns true if the system successfully submits the job, otherwise `false`.
 
 ## Parameters
 
-- `domain`: The job’s domain (for example,  ).
+- `domain`: The job’s domain (for example, [`kSMDomainSystemLaunchd`](ksmdomainsystemlaunchd.md)).
 - `job`: A dictionary describing a job.
-- `auth`: domain is  .
-- `outError`: An output reference to a   describing the specific error when submitting the job, or   if no error occurred. It’s the responsibility of the app to release the error reference. This argument can be  .
+- `auth`: An `AuthorizationRef` containing the [`kSMRightModifySystemDaemons`](ksmrightmodifysystemdaemons.md) right if the specified domain is [`kSMDomainSystemLaunchd`](ksmdomainsystemlaunchd.md).
+- `outError`: An output reference to a `CFErrorRef` describing the specific error when submitting the job, or `NULL` if no error occurred. It’s the responsibility of the app to release the error reference. This argument can be `NULL`.
 
 ## See Also
 

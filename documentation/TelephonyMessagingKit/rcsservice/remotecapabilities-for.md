@@ -22,7 +22,7 @@ Remote capabilities for requested handle, if available.
 
 ## Parameters
 
-- `request`:   containing the request parameters.
+- `request`: `RemoteCapabilitiesRequest` containing the request parameters.
 
 ## See Also
 

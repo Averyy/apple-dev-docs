@@ -20,8 +20,8 @@ To animate the scroll, call this method on the animator proxy. See [`NSAnimatabl
 
 ## Parameters
 
-- `index`: The index of the item to be scrolled. Indexes range between   and  , where   is the number of items displayed in the scrubber.
-- `alignment`: The position the item should be scrolled to. For possible values, see  . If  , the scrubber scrolls the minimum distance required to make the item visible.
+- `index`: The index of the item to be scrolled. Indexes range between `0` and `n-1`, where `n` is the number of items displayed in the scrubber.
+- `alignment`: The position the item should be scrolled to. For possible values, see [`NSScrubber.Alignment`](nsscrubber/alignment.md). If [`NSScrubber.Alignment.none`](nsscrubber/alignment/none.md), the scrubber scrolls the minimum distance required to make the item visible.
 
 
 ---

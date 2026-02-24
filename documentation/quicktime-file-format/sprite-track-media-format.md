@@ -36,6 +36,11 @@ A complete description of the grammar for sprite media handler samples, includin
 
 The following constants represent atom types for sprite track properties. These atoms are applied to the whole track, not just to a single sample.
 
+- **`kSpriteTrackPropertyHasActions`**: You must add an atom of this type with its leaf data set to `true` if you want the movie controller to execute the actions in your sprite track’s media. The atom’s leaf data is of type `Boolean`. The default value is `false`, so it is very important to add an atom of this type if you want interactivity to take place.
+- **`kSpriteTrackPropertyQTIdleEventsFrequency`**: You must add an atom of this type if you want the sprites in your sprite track to receive `kQTEventIdle` QuickTime events. The atom’s leaf data is of type `UInt32`. The value is the minimum number of ticks that must pass before the next `QTIdle` event is sent. Each tick is 1/60th of one second. To specify “Idle as fast as possible,” set the value to `0`. The default value is `kNoQTIdleEvents`, which means don’t send any idle events. It is possible that for small idle event frequencies, the movie will not be able to keep up, in which case idle events will be sent as fast as possible. Since sending idle events takes up some time, it is best to specify the largest frequency that produces the results that you desire, or `kNoQTIdleEvents` if you do not need them.
+- **`kSpriteTrackPropertyVisible`**: You can cause the entire sprite track to be invisible by setting the value of this `Boolean` property to `false`. This is useful for using a sprite track as a hidden button track—for example, placing an invisible sprite track over a video track would allow the characters in the video to be clickable. The default value is visible (`true`).
+- **`kSpriteTrackPropertyScaleSpritesToScaleWorld`**: You can cause each sprite to be rescaled when the sprite track is resized by setting the value of this `Boolean` property to `true`. Setting this property can improve the drawing performance and quality of a scaled sprite track. This is particularly useful for sprite images compressed with codecs that are resolution-independent, such as the Curve codec. The default value for this property is `false`.
+
 ## See Also
 
 - [Sprite media](sprite_media.md)

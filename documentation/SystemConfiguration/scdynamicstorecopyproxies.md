@@ -38,7 +38,7 @@ The returned proxy settings dictionary can include the following key-value pairs
 
 ## Parameters
 
-- `store`: The dynamic store session that should be used for communication with the server. Pass   to use a temporary session.
+- `store`: The dynamic store session that should be used for communication with the server. Pass `NULL` to use a temporary session.
 
 ## See Also
 

@@ -20,7 +20,7 @@ var cumulativeCPUInstructions: Measurement<Unit> { get }
 
 #### Discussion
 
-For CPUs using out-of-order execution, this property represents the count of instructions the pipeline fully executes. These instructions are sometimes referred to as .
+For CPUs using out-of-order execution, this property represents the count of instructions the pipeline fully executes. These instructions are sometimes referred to as *retired instructions*.
 
 ## See Also
 

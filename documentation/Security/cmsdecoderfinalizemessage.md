@@ -24,7 +24,7 @@ When you call this function, the decoder finishes decoding the message. If the m
 
 ## Parameters
 
-- `cmsDecoder`: The CMSDecoder reference returned by the   function.
+- `cmsDecoder`: The CMSDecoder reference returned by the `CMSDecoderCreate` function.
 
 ## See Also
 

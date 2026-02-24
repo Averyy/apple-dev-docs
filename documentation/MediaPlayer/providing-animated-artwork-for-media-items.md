@@ -20,6 +20,9 @@ Animated artwork consists of a video asset for the animated artwork itself and a
 
 Provide animated artwork alongside existing media item metadata through [`MPNowPlayingInfoCenter`](mpnowplayinginfocenter.md). Use the key appropriate for the aspect ratio of your animated artwork within [`nowPlayingInfo`](mpnowplayinginfocenter/nowplayinginfo.md):
 
+- **[`MPNowPlayingInfoProperty1x1AnimatedArtwork`](mpnowplayinginfoproperty1x1animatedartwork.md)**: A square, animated artwork, with a 1:1 aspect ratio.
+- **[`MPNowPlayingInfoProperty3x4AnimatedArtwork`](mpnowplayinginfoproperty3x4animatedartwork.md)**: A tall, animated artwork, with a 3:4 aspect ratio.
+
 ```swift
 MPNowPlayingInfoCenter.default().nowPlayingInfo = [
     // Existing media item metadata.

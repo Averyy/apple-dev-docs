@@ -36,7 +36,7 @@ The dictionary of settings is dependent on the current configuration of the rece
 
 ## Parameters
 
-- `outputFileType`: Specifies the UTI of the file type to be written. See   for the defined UTIs.
+- `outputFileType`: Specifies the UTI of the file type to be written. See `File Format UTIs` for the defined UTIs.
 
 ## See Also
 

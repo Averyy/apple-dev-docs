@@ -23,9 +23,9 @@ If the port string of `localNetwork` is `0` or the empty string, then the rule m
 ## Parameters
 
 - `remoteNetwork`: An endpoint instance that contains the remote port and the remote address or network that the rule matches. This endpoint must contain an address, not a hostname.
-- `remotePrefix`: An integer that in combination with the address in   specifies the remote network that the rule matches.
+- `remotePrefix`: An integer that in combination with the address in `remoteNetwork` specifies the remote network that the rule matches.
 - `localNetwork`: An endpoint instance that contains the local port and the local address or network that the rule matches. This endpoint must contain an address, not a hostname.
-- `localPrefix`: An integer that in combination with the address in localNetwork specifies the local network that the rule matches. The rule ignores this parameter if   is  .
+- `localPrefix`: An integer that in combination with the address in localNetwork specifies the local network that the rule matches. The rule ignores this parameter if `localNetwork` is `nil`.
 - `protocol`: The protocol that the rule matches.
 - `direction`: The direction of network traffic that the rule matches.
 

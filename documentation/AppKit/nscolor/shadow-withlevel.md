@@ -24,7 +24,7 @@ The shadow color is provided by the [`shadowColor`](nscolor/shadowcolor.md) prop
 
 ## Parameters
 
-- `val`: The amount of the shadow color used for the blend. This should be a number from   through  .  A   below   is interpreted as  ; a   above   is interpreted as  .
+- `val`: The amount of the shadow color used for the blend. This should be a number from `0.0` through `1.0`.  A `shadowLevel` below `0.0` is interpreted as `0.0`; a `shadowLevel` above `1.0` is interpreted as `1.0`.
 
 ## See Also
 

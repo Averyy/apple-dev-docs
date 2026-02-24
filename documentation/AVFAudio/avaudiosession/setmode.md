@@ -27,7 +27,7 @@ The audio session’s category and mode together define how your app uses audio.
 
 ## Parameters
 
-- `mode`: The audio session mode to apply to the audio session. See   for supported mode values.
+- `mode`: The audio session mode to apply to the audio session. See [`AVAudioSession.Mode`](avaudiosession/mode-swift.struct.md) for supported mode values.
 
 ## See Also
 

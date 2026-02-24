@@ -12,6 +12,10 @@ A Boolean value indicating whether the app extension supports text.
 - visionOS 1.0+
 
 
+
+**Type**: boolean
+
+
 ---
 
 *[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/nsextensionactivationrule/nsextensionactivationsupportstext)*

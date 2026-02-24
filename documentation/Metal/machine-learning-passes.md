@@ -10,7 +10,7 @@ Metal 4 introduces the ability to run CoreML models efficiently from within the 
 
 Your app can combine its render, compute, and machine learning work within the same command buffer, without needing to synchronize or wait for the CPU. By running inference with Core ML models in the GPU timeline, your app can provide model inputs, such as from a compute pass, and immediately work with a model’s outputs from a machine learning pass.
 
-Metal 4 introduces new types for , which are multidimensional-data arrays that serve as inputs, outputs, and intermediate values for machine learning models. Metal Shading Language (MSL) also adds tensor operators and other functionalities, such as cooperative tensors, which your app’s shader code can use when working with tensors and their data in parallel during any GPU stage.
+Metal 4 introduces new types for *tensors*, which are multidimensional-data arrays that serve as inputs, outputs, and intermediate values for machine learning models. Metal Shading Language (MSL) also adds tensor operators and other functionalities, such as cooperative tensors, which your app’s shader code can use when working with tensors and their data in parallel during any GPU stage.
 
 ##### Convert a Core Ml Model Into a Metal Package
 
@@ -35,6 +35,10 @@ Metal 4 introduces [`MTLTensor`](mtltensor.md) a resource type that stores multi
 Metal 4 also adds tensor types and basic tensor operators to the Metal Shading Language (MSL), which include convolution, matrix multiplication, and reduction. You can use these operators in your MSL code that runs during the machine learning GPU stage, and all other stages, such as blit, dispatch, vertex, fragment, and so on. This functionality gives you the option to work with tensor data in your app’s various GPU functions, such as modifying weights in an intermediate tensor between model inference invocations.
 
 The MSL tensor types include:
+
+- **`tensor_handle`**: A handle to an [`MTLTensor`](mtltensor.md) that you create on the CPU.
+- **`tensor_inline`**: A tensor you define on the GPU as a view into a tensor or buffer.
+- **`cooperative_tensor`**: A tensor that distributes its elements among the threads that work with it.
 
 A tensor type can also include the `tensor_offset` tag, for example `tensor<device float, dextents<int, 2>, tensor_handle, tensor_offset>`. You can slice a tensor on the GPU without creating a new tensor descriptor by including this tag.
 

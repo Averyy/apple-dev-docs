@@ -22,7 +22,7 @@ optional func window(_ window: NSWindow, shouldPopUpDocumentPathMenu menu: NSMen
 ## Parameters
 
 - `window`: The window whose title the user Command-clicked or Control-clicked.
-- `menu`: The menu the window will display, if allowed. By default, its items are the path components of the file represented by  .
+- `menu`: The menu the window will display, if allowed. By default, its items are the path components of the file represented by `window`.
 
 ## See Also
 

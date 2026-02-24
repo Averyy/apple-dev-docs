@@ -27,9 +27,9 @@ This method is invoked automatically by the [`NSTextView`](nstextview.md) object
 ## Parameters
 
 - `view`: The text view using the layout manager.
-- `style`: Sets the state of the controls in the accessory view; must not be  .
+- `style`: Sets the state of the controls in the accessory view; must not be `nil`.
 - `ruler`: The ruler view whose accessory view is returned.
-- `isEnabled`: If  , the accessory view is enabled and accepts mouse and keyboard events; if   it’s disabled.
+- `isEnabled`: If [`true`](https://developer.apple.com/documentation/Swift/true), the accessory view is enabled and accepts mouse and keyboard events; if [`false`](https://developer.apple.com/documentation/Swift/false) it’s disabled.
 
 ## See Also
 

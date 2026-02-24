@@ -26,8 +26,8 @@ A [`JSStringRef`](jsstringref.md) with the result of conversion, or `NULL` if th
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `value`: The   to convert.
-- `exception`: A pointer to a   to store an exception in, if any. Pass   to discard any exception.
+- `value`: The [`JSValueRef`](jsvalueref.md) to convert.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 

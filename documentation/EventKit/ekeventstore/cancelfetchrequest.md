@@ -29,7 +29,7 @@ After canceling a fetch request, EventKit doesn’t call the completion original
 
 ## Parameters
 
-- `fetchIdentifier`: The identifier of the request as returned by  .
+- `fetchIdentifier`: The identifier of the request as returned by [`fetchReminders(matching:completion:)`](ekeventstore/fetchreminders(matching:completion:).md).
 
 ## See Also
 

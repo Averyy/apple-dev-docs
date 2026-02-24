@@ -28,8 +28,8 @@ If you don’t want to use the shared buffers, your dext can return [`kIOReturnE
 
 ## Parameters
 
-- `parallelCommandIOMemoryDescriptor`: The memory descriptor corresponding   to the command buffers.
-- `parallelResponseIOMemoryDescriptor`: The memory descriptor corresponding   to the response buffers.
+- `parallelCommandIOMemoryDescriptor`: The memory descriptor corresponding to the command buffers.
+- `parallelResponseIOMemoryDescriptor`: The memory descriptor corresponding to the response buffers.
 
 ## See Also
 

@@ -26,7 +26,7 @@ This is the designated initializer for the [`Progress`](progress.md) class.
 
 ## Parameters
 
-- `parentProgressOrNil`: The only valid values are   or  .
+- `parentProgressOrNil`: The containing [`Progress`](progress.md) object, if any, to notify when reporting progress, or to consult when checking for cancellation. The only valid values are [`current()`](progress/current().md) or `nil`.
 - `userInfoOrNil`: The optional user information dictionary for the progress object.
 
 ## See Also

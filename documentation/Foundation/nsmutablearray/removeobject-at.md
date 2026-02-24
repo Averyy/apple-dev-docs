@@ -26,7 +26,7 @@ To fill the gap, all elements beyond `index` are moved by subtracting 1 from the
 
 ## Parameters
 
-- `index`: The index from which to remove the object in the array. The value must not exceed the bounds of the array.
+- `index`: The index from which to remove the object in the array. The value must not exceed the bounds of the array. > ❗ **Important**:  Raises an exception `NSRangeException` if `index` is beyond the end of the array.
 
 ## See Also
 

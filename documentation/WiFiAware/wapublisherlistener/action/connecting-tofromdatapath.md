@@ -30,8 +30,8 @@ You can set the data path parameters, including the [`WAPerformanceMode`](waperf
 ## Parameters
 
 - `myPublishingService`: The service the publisher hosts, and accept connections to.
-- `pairedDevices`: The remote devices to accept connections from. The   isn’t activated if the system doesn’t specify any devices.
-- `wifiAware`: The parameters specifying the initial Wi-Fi Aware data path configuration for any resulting connections, or   to apply default parameters.
+- `pairedDevices`: The remote devices to accept connections from. The `NetworkListener` isn’t activated if the system doesn’t specify any devices.
+- `wifiAware`: The parameters specifying the initial Wi-Fi Aware data path configuration for any resulting connections, or `nil` to apply default parameters.
 
 
 ---

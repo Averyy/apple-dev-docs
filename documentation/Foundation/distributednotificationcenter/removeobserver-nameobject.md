@@ -21,9 +21,9 @@ Be sure to invoke this method with `notificationName:nil notificationSender:nil`
 
 ## Parameters
 
-- `observer`: Observer to remove from the dispatch table. Specify an observer to remove only entries for this observer. When  , the receiver does not use notification observers as criteria for removal.
-- `aName`: Name of the notification to remove from dispatch table. Specify a notification name to remove only entries that specify this notification name. When  , the receiver does not use notification names as criteria for removal.
-- `anObject`: Sender to remove from the dispatch table. Specify a notification sender to remove only entries that specify this sender. When  , the receiver does not use notification senders as criteria for removal.
+- `observer`: Observer to remove from the dispatch table. Specify an observer to remove only entries for this observer. When `nil`, the receiver does not use notification observers as criteria for removal.
+- `aName`: Name of the notification to remove from dispatch table. Specify a notification name to remove only entries that specify this notification name. When `nil`, the receiver does not use notification names as criteria for removal.
+- `anObject`: Sender to remove from the dispatch table. Specify a notification sender to remove only entries that specify this sender. When `nil`, the receiver does not use notification senders as criteria for removal.
 
 ## See Also
 

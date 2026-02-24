@@ -30,10 +30,10 @@ If an error occurs during the creation of the string, then `bytes` isn’t freed
 
 ## Parameters
 
-- `bytes`: A buffer of bytes interpreted in the encoding specified by  .
-- `len`: The number of bytes to use from  .
-- `encoding`: The character encoding of  . For possible values, see  .
-- `freeBuffer`: If  , the receiver releases the memory with   when it no longer needs the data; if   it won’t.
+- `bytes`: A buffer of bytes interpreted in the encoding specified by `encoding`.
+- `len`: The number of bytes to use from `bytes`.
+- `encoding`: The character encoding of `bytes`. For possible values, see [`NSStringEncoding`](nsstringencoding.md).
+- `freeBuffer`: If [`true`](https://developer.apple.com/documentation/Swift/true), the receiver releases the memory with `free()` when it no longer needs the data; if [`false`](https://developer.apple.com/documentation/Swift/false) it won’t.
 
 ## See Also
 

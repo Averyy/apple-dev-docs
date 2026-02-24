@@ -113,6 +113,44 @@ Specify `com.apple.mail.managed` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `allowMailDrop` (boolean): If `true`, the system enables this account to use Mail Drop.
+- `disableMailRecentsSyncing` (boolean): If `true`, the system excludes this account from Recent Addresses syncing.
+- `EmailAccountDescription` (string): A user-visible description of the email account, shown in the Mail and Settings applications.
+- `EmailAccountName` (string): The full user name for the account. The system displays this name in sent messages.
+- `EmailAccountType` (string) *(required)*: Defines the protocol to use for the account.
+- `EmailAddress` (string): The full email address for the account. If this string isn’t present in the payload, the device prompts the user for this string during interactive profile installation in Settings or System Preferences.
+- `IncomingMailServerAuthentication` (string) *(required)*: The authentication scheme for incoming mail.
+- `IncomingMailServerHostName` (string) *(required)*: The incoming mail server host name.
+- `IncomingMailServerIMAPPathPrefix` (string): The path prefix for the IMAP mail server.
+- `IncomingMailServerPortNumber` (integer): The incoming mail server port number. If not set, the system uses the default port for a given protocol.
+- `IncomingMailServerUsername` (string): The user name for the email account, usually the same as the email address up to the “@” character. If not set and the account requires authentication for incoming email, the device prompts the user for this string during interactive profile installation in Settings or System Preferences.
+- `IncomingMailServerUseSSL` (boolean): If `true`, the system enables SSL for authentication on the incoming mail server.
+- `IncomingPassword` (string): The password for the incoming mail server. Only use this in encrypted profiles.
+- `OutgoingMailServerAuthentication` (string) *(required)*: The authentication scheme for outgoing mail.
+- `OutgoingMailServerHostName` (string) *(required)*: The outgoing mail server host name.
+- `OutgoingMailServerPortNumber` (integer): The outgoing mail server port number. If not set, the system uses ports 25, 587, and 465, in that order.
+- `OutgoingMailServerUsername` (string): The user name for the email account, usually the same as the email address up to the “@” character. If not set and the account requires authentication for outgoing email, the device prompts the user for this string during interactive profile installation in Settings or System Preferences.
+- `OutgoingMailServerUseSSL` (boolean): If `true`, the system enables SSL authentication on the outgoing mail server.
+- `OutgoingPassword` (string): The password for the outgoing mail server. Only use this in encrypted profiles.
+- `OutgoingPasswordSameAsIncomingPassword` (boolean): If `true`, the system prompts the user only once for the password, which it uses for both outgoing and incoming mail. This setting is only supported by interactive profile installations. Not supported by non-interactive installations, such as MDM on iOS.
+- `PreventAppSheet` (boolean): If `true`, the system prevents this account from sending mail in any app other than the Apple Mail app.
+- `PreventMove` (boolean): If `true`, the system prevents moving messages out of this email account and into another account. It also prevents forwarding or replying from an account other than the recipient of the message.
+- `SMIMEEnabled` (boolean): If `true`, the system enables S/MIME encryption. The system ignores this key in iOS 10.0 and later.
+- `SMIMEEnableEncryptionPerMessageSwitch` (boolean): If `true`, the system displays the per-message encryption switch in the Mail Compose UI.
+- `SMIMEEnablePerMessageSwitch` (boolean): If `true`, the system displays the per-message encryption switch in the Mail Compose UI. Deprecated in iOS 12.0. Use `SMIMEEnableEncryptionPerMessageSwitch` instead.
+- `SMIMEEncryptByDefault` (boolean): If `true`, the system enables S/MIME encryption by default.
+- `SMIMEEncryptByDefaultUserOverrideable` (boolean): If `true`, the user can turn encryption by default on/off, and encryption is on.
+- `SMIMEEncryptionCertificateUUID` (string): The UUID of the identity certificate used to decrypt messages sent to this account. The system attaches the public certificate to outgoing mail to allow the user to receive encrypted mail. When the user sends encrypted mail, the system uses the public certificate to encrypt the copy of the mail in their Sent mailbox.
+- `SMIMEEncryptionCertificateUUIDUserOverrideable` (boolean): If `true`, the user can select the S/MIME encryption identity, and encryption is on.
+- `SMIMEEncryptionEnabled` (boolean): If `true`, the system enables S/MIME encryption for this account.
+- `SMIMESigningCertificateUUID` (string): The payload UUID of the identity certificate used to sign messages sent from this account.
+- `SMIMESigningCertificateUUIDUserOverrideable` (boolean): If `true`, the user can select the signing identity.
+- `SMIMESigningEnabled` (boolean): If `true`, the system enables S/MIME signing for this account.
+- `SMIMESigningUserOverrideable` (boolean): If `true`, the user can turn S/MIME signing on or off in Settings.
+- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+
 ## See Also
 
 - [object ExchangeActiveSync](exchangeactivesync.md)

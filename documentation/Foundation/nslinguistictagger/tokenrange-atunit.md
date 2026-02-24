@@ -27,7 +27,7 @@ The range of the substring for the linguistic unit.
 ## Parameters
 
 - `charIndex`: The character index to begin examination.
-- `unit`: The linguistic unit. For possible values, see  .
+- `unit`: The linguistic unit. For possible values, see [`NSLinguisticTaggerUnit`](nslinguistictaggerunit.md).
 
 ## See Also
 

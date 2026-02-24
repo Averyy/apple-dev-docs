@@ -10,7 +10,7 @@ Use an adapter to adapt the on-device foundation model to fit your specific use 
 
 When you train an adapter you need to make it available for deployment into your app. An adapter file is large — 160 MB or more — so don’t bundle them in your app. Instead, use App Store Connect, or host the asset on your server, and download the correct adapter for a person’s device on-demand.
 
-> ❗ **Important**: Each adapter is compatible with a  system model version. You must train a new adapter for every new base model version. A runtime error occurs if your app runs on a person’s device without a compatible adapter.
+> ❗ **Important**: Each adapter is compatible with a *single specific* system model version. You must train a new adapter for every new base model version. A runtime error occurs if your app runs on a person’s device without a compatible adapter.
 
 For more information about the adapter training toolkit, see [`Get started with Foundation Models adapter training`](https://developer.apple.comhttps://developer.apple.com/apple-intelligence/foundation-models-adapter/). For more information about asset packs, see [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets).
 
@@ -69,20 +69,28 @@ To download adapters at runtime, you need to add an asset-downloader extension t
 
 The type of extension depends on whether you self-host them or Apple hosts them:
 
+- **Apple-Hosted, Managed**: Apple hosts your adapter assets.
+- **Self-Hosted, Managed**: You use your server and make each device’s operating system automatically handle the download life cycle.
+- **Self-Hosted, Unmanaged**: You use your server and manage the download life cycle.
+
 After you create an asset-downloader extension target, check that your app target’s info property list contains the required fields specific to your extension type:
+
+- **Apple-Hosted, Managed**: 
 
 - `BAHasManagedAssetPacks` = YES
 - `BAAppGroupID` = The string ID of the app group that your app and downloader extension targets share.
 - `BAUsesAppleHosting` = YES
 
+- **Self-Hosted, Managed**: 
+
 - `BAHasManagedAssetPacks` = YES
 - `BAAppGroupID` = The string ID of the app group that your app and downloader extension targets share.
 
-If you use , then you don’t need additional keys. For more information about configuring background assets with an extension, see [`Configuring an unmanaged Background Assets project`](https://developer.apple.com/documentation/BackgroundAssets/configuring-an-unmanaged-background-assets-project)
+If you use *Self-Hosted, Unmanaged*, then you don’t need additional keys. For more information about configuring background assets with an extension, see [`Configuring an unmanaged Background Assets project`](https://developer.apple.com/documentation/BackgroundAssets/configuring-an-unmanaged-background-assets-project)
 
 #### Choose a Compatible Adapter at Runtime
 
-When you create an asset-downloader extension, Xcode generates a Swift file — `BackgroundDownloadHandler.swift` — that [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets) uses to download your adapters. Open the Swift file in Xcode and fill in the code based on your target type. For  or  extension types, complete the function `shouldDownload` with the following code that chooses an adapter asset compatible with the runtime device:
+When you create an asset-downloader extension, Xcode generates a Swift file — `BackgroundDownloadHandler.swift` — that [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets) uses to download your adapters. Open the Swift file in Xcode and fill in the code based on your target type. For *Apple-Hosted, Managed* or *Self-Hosted, Managed* extension types, complete the function `shouldDownload` with the following code that chooses an adapter asset compatible with the runtime device:
 
 ```swift
 func shouldDownload(_ assetPack: AssetPack) -> Bool {
@@ -98,7 +106,7 @@ func shouldDownload(_ assetPack: AssetPack) -> Bool {
 }
 ```
 
-If your extension type is , the file Xcode generates has many functions in it for manual control over the download life cycle of your assets.
+If your extension type is *Self-Hosted, Unmanaged*, the file Xcode generates has many functions in it for manual control over the download life cycle of your assets.
 
 #### Load Adapter Assets in Your App
 

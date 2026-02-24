@@ -34,9 +34,9 @@ See also [`CFStringCreateByCombiningStrings(_:_:_:)`](cfstringcreatebycombinings
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new CFArray object. Pass   or   to use the current default allocator.
-- `theString`: The string to be divided into substrings. The substrings should be separated by  .
-- `separatorString`: The string used to separate the substrings in  .
+- `alloc`: The allocator to use to allocate memory for the new CFArray object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `theString`: The string to be divided into substrings. The substrings should be separated by `separatorString`.
+- `separatorString`: The string used to separate the substrings in `theString`.
 
 ## See Also
 

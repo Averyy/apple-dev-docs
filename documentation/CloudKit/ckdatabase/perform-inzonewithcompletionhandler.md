@@ -31,8 +31,8 @@ For information on a more convenient way to search a database, see [`records(mat
 
 ## Parameters
 
-- `query`: The query that contains the search parameters. For more information, see  .
-- `zoneID`: The identifier of the record zone to search. If you’re searching a shared database, provide a record zone identifier; otherwise, you can specify   to search all record zones in the database.
+- `query`: The query that contains the search parameters. For more information, see [`CKQuery`](ckquery.md).
+- `zoneID`: The identifier of the record zone to search. If you’re searching a shared database, provide a record zone identifier; otherwise, you can specify `nil` to search all record zones in the database.
 - `completionHandler`: The closure to execute with the search results.
 
 ## See Also

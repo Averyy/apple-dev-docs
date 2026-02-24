@@ -21,7 +21,7 @@ A new `TCSwitch` instance.
 
 ## Parameters
 
-- `descriptor`: The   containing the configuration for the switch.
+- `descriptor`: The `TCSwitchDescriptor` containing the configuration for the switch.
 
 ## See Also
 

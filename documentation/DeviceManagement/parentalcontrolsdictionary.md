@@ -66,6 +66,10 @@ Specify `com.apple.Dictionary` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `parentalControl` (boolean) *(required)*: If `true`, enables parental controls dictionary restrictions.
+
 ## See Also
 
 - [object ParentalControlsApplicationRestrictions](parentalcontrolsapplicationrestrictions.md)

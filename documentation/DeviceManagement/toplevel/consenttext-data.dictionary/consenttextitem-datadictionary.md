@@ -19,6 +19,10 @@ A specific pairing of language code and consent text.
 object TopLevel.ConsentText.ConsentTextItem
 ```
 
+## Properties
+
+- `ANY` (string) *(required)*: The key consisting of the IETF BCP 47 identifier for a language (for example, en or jp) and the value consisting of the agreement localized to that language.
+
 
 ---
 

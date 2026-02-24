@@ -21,7 +21,7 @@ Use this method to get property values in a batch fashion. In some cases, enumer
 
 ## Parameters
 
-- `properties`: A set of keys for the properties to enumerate, or   to enumerate all properties. Takes Media Item Properties and Playlist Properties from  .
+- `properties`: A set of keys for the properties to enumerate, or `nil` to enumerate all properties. Takes Media Item Properties and Playlist Properties from [`ITLibMediaItem`](itlibmediaitem.md).
 - `block`: A block object that executes for each property in the properties set.
 
 ## See Also

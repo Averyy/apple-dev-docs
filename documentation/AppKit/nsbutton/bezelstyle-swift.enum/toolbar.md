@@ -18,6 +18,22 @@ case toolbar
 
 Use this case for displaying a button in an [`NSToolbar`](nstoolbar.md).
 
+**Swift**:
+
+```swift
+let button = NSButton()
+button.title = "Toolbar"
+button.bezelStyle = .toolbar
+```
+
+**Objective-C**:
+
+```objc
+NSButton *button = [[NSButton alloc] init];
+button.title = @"Toolbar";
+button.bezelStyle = NSBezelStyleToolbar;
+```
+
 For design guidance, see [`Human Interface Guidelines > Buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/buttons).
 
 ## See Also

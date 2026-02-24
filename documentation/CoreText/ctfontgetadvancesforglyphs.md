@@ -32,9 +32,9 @@ Individual glyph advances are passed back via the `advances` parameter. These ar
 
 - `font`: The font reference.
 - `orientation`: The intended drawing orientation of the glyphs. Used to determined which glyph metrics to return.
-- `glyphs`: An array of   number of glyphs.
-- `advances`: An array of   number of   objects to receive the computed glyph advances. If  , only the overall advance is calculated.
-- `count`: The capacity of the   and   buffers.
+- `glyphs`: An array of `count` number of glyphs.
+- `advances`: An array of `count` number of [`CGSize`](https://developer.apple.com/documentation/CoreFoundation/CGSize) objects to receive the computed glyph advances. If `NULL`, only the overall advance is calculated.
+- `count`: The capacity of the `glyphs` and `advances` buffers.
 
 ## See Also
 

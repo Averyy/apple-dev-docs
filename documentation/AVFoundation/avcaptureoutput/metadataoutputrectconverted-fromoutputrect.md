@@ -30,7 +30,7 @@ See [`transformedMetadataObject(for:connection:)`](avcaptureoutput/transformedme
 
 ## Parameters
 
-- `rectInOutputCoordinates`: A rectangle in the   object’s coordinate system.
+- `rectInOutputCoordinates`: A rectangle in the [`AVCaptureOutput`](avcaptureoutput.md) object’s coordinate system.
 
 ## See Also
 

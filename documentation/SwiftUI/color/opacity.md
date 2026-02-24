@@ -26,7 +26,7 @@ A view with modified opacity.
 
 ## Parameters
 
-- `opacity`: The amount by which to multiply the opacity of the   color.
+- `opacity`: The amount by which to multiply the opacity of the color.
 
 ## See Also
 

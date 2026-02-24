@@ -21,7 +21,7 @@ init?(image: UIImage, options: [CIImageOption : Any]? = nil)
 ## Parameters
 
 - `image`: An image containing the source data.
-- `options`: A dictionary that contains options for creating an image object. You can supply such options as a pixel format and a color space. See  .
+- `options`: A dictionary that contains options for creating an image object. You can supply such options as a pixel format and a color space. See `Image Dictionary Keys`.
 
 ## See Also
 

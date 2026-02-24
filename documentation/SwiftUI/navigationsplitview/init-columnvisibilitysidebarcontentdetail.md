@@ -22,7 +22,7 @@ init(columnVisibility: Binding<NavigationSplitViewVisibility>, @ViewBuilder side
 
 ## Parameters
 
-- `columnVisibility`: A   to state that controls the   visibility of the leading columns.
+- `columnVisibility`: A [`Binding`](binding.md) to state that controls the visibility of the leading columns.
 - `sidebar`: The view to show in the leading column.
 - `content`: The view to show in the middle column.
 - `detail`: The view to show in the detail area.

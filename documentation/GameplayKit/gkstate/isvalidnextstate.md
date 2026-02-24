@@ -33,7 +33,7 @@ By restricting the set of valid state transitions, you can use a state machine t
 
 ## Parameters
 
-- `stateClass`: A custom   class used in the same state machine as this state.
+- `stateClass`: A custom [`GKState`](gkstate.md) class used in the same state machine as this state.
 
 ## See Also
 

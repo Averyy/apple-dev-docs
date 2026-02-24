@@ -26,8 +26,8 @@ The transform given in the local space of the entity.
 
 ## Parameters
 
-- `transform`: The transform specified relative to  .
-- `referenceEntity`: The entity that defines a frame of reference. Set   this to   to indicate world space.
+- `transform`: The transform specified relative to `referenceEntity`.
+- `referenceEntity`: The entity that defines a frame of reference. Set this to `nil` to indicate world space.
 
 ## See Also
 

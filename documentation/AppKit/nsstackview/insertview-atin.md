@@ -23,8 +23,9 @@ A view in a detached state is not present in the stack view’s view hierarchy, 
 ## Parameters
 
 - `view`: The view to add to the specified gravity area.
-- `index`: See the   property and the   method.
-- `gravity`: The gravity area that you are adding the specified view to. Valid values are those in the   enumeration.
+- `index`: The index position, within the gravity area, for the new view. The position of index `0` depends on the stack view layout direction and, for a horizontal stack view, on the user interface layout direction: - *Horizontal*: The `0` index for a gravity area is at the leading side, as determined by the value of the inherited [`userInterfaceLayoutDirection`](nsview/userinterfacelayoutdirection.md) property of the stack view. For a left to right language, index `0` is at the left of the gravity area.
+- *Vertical*: The `0` index for a gravity area is at the top. See the [`userInterfaceLayoutDirection`](nsapplication/userinterfacelayoutdirection.md) property and the [`userInterfaceLayoutDirection`](nsview/userinterfacelayoutdirection.md) method. > ❗ **Important**:  If you specify an out-of-bounds value for the `index` parameter, the system raises an [`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException) exception.
+- `gravity`: The gravity area that you are adding the specified view to. Valid values are those in the [`NSStackView.Gravity`](nsstackview/gravity.md) enumeration.
 
 ## See Also
 

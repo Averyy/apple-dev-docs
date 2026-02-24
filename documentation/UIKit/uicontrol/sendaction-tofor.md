@@ -26,9 +26,9 @@ Subclasses may override this method and use it to observe or modify the action-d
 
 ## Parameters
 
-- `action`: A selector identifying the action method to call. This parameter must not be  .
+- `action`: A selector identifying the action method to call. This parameter must not be `nil`.
 - `target`: The target object — that is, the object that implements the specified action. Specify nil if you want the app to search the responder chain for an object capable of performing the action.
-- `event`: The event that triggered the calling of the action method. You may specify nil for this parameter if you are calling this method directly, instead of in response to an event. For example, you might specify   when changing the value of a control programmatically.
+- `event`: The event that triggered the calling of the action method. You may specify nil for this parameter if you are calling this method directly, instead of in response to an event. For example, you might specify `nil` when changing the value of a control programmatically.
 
 ## See Also
 

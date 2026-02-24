@@ -30,7 +30,7 @@ Manually removing all known input sources and timers from the run loop is not a 
 
 ## Parameters
 
-- `mode`: The mode in which to run. You may specify custom modes or use one of the modes listed in  .
+- `mode`: The mode in which to run. You may specify custom modes or use one of the modes listed in `Run Loop Modes`.
 - `limitDate`: The date up until which to run.
 
 ## See Also

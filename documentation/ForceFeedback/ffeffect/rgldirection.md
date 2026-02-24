@@ -3,7 +3,7 @@
 **Framework**: Force Feedback  
 **Kind**: property
 
-Pointer to a LONG array (of  elements) containing either Cartesian coordinates, polar coordinates, or spherical coordinates.
+Pointer to a LONG array (of **cAxes** elements) containing either Cartesian coordinates, polar coordinates, or spherical coordinates.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -54,7 +54,7 @@ Note: The rglDirection array must contain cAxes entries, even if polar or spheri
 - [var lpvTypeSpecificParams: UnsafeMutableRawPointer!](ffeffect/lpvtypespecificparams.md)
   A pointer to type-specific parameters, or NULL if there are no type-specific parameters.
 - [var rgdwAxes: LPDWORD!](ffeffect/rgdwaxes.md)
-  Pointer to a DWORD array (of  elements) containing identifiers or offsets identifying the axes to which the effect is to be applied.
+  Pointer to a DWORD array (of **cAxes** elements) containing identifiers or offsets identifying the axes to which the effect is to be applied.
 
 
 ---

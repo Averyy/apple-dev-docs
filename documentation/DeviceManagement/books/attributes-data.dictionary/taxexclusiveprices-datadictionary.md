@@ -13,6 +13,12 @@
 object Books.Attributes.TaxExclusivePrices
 ```
 
+## Properties
+
+- `price` (number) *(required)*
+- `pricePerUnit` (number)
+- `quantity` (number)
+
 ## See Also
 
 - [object Books.Attributes.Offers](books/attributes-data.dictionary/offers-data.dictionary.md)

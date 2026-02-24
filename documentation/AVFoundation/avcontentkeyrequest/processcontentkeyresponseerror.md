@@ -22,14 +22,12 @@ func processContentKeyResponseError(_ error: any Error)
 
 ## Parameters
 
-- `error`: An   that describes why the content key response failed.
+- `error`: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) that describes why the content key response failed.
 
 ## See Also
 
 - [func processContentKeyResponse(AVContentKeyResponse)](avcontentkeyrequest/processcontentkeyresponse(_:).md)
   Sends the specified content key response to the receiver for processing.
-- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest.md)
-  Tells the receiver that the app requires a persistable content key request object for processing.
 
 
 ---

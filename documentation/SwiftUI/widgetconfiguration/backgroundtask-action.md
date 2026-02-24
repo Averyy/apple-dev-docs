@@ -27,7 +27,7 @@ When the system wakes your app or extension for one or more background tasks, it
 ## Parameters
 
 - `task`: The type of task the action responds to.
-- `action`: The closure that is called when the system provides   a task matching the provided task.
+- `action`: The closure that is called when the system provides a task matching the provided task.
 
 ## See Also
 

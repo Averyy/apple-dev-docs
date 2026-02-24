@@ -29,7 +29,7 @@ In JavaScript, if a function does not explicitly return a value, it implicitly r
 
 ## Parameters
 
-- `arguments`: The parameters to pass to the function. The objects in this array must be other   objects or objects that can be converted to JavaScript values using the methods listed in the Creating JavaScript Values section in  .
+- `arguments`: The parameters to pass to the function. The objects in this array must be other [`JSValue`](jsvalue.md) objects or objects that can be converted to JavaScript values using the methods listed in the Creating JavaScript Values section in [`JSValue`](jsvalue.md).
 
 ## See Also
 

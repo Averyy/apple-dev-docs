@@ -27,7 +27,7 @@ This method and [`getGlyphs(in:glyphs:characterIndexes:glyphInscriptions:elastic
 - `glyphRange`: The range of glyphs to lay out.
 - `glyphBuffer`: On output, the sequence of glyphs needed to lay out the given glyph range.
 - `charIndexBuffer`: On output, the indexes of the original characters corresponding to the given glyph range. Note that a glyph at index 1 is not necessarily mapped to the character at index 1, since a glyph may be for a ligature or accent.
-- `inscribeBuffer`: On output, the inscription attributes for each glyph, which are used to lay out characters that are combined together. The possible values are described in  .
+- `inscribeBuffer`: On output, the inscription attributes for each glyph, which are used to lay out characters that are combined together. The possible values are described in `Constants`.
 - `elasticBuffer`: On output, values indicating whether a glyph is elastic for each glyph. An elastic glyph can be made longer at the end of a line or when needed for justification.
 - `bidiLevelBuffer`: On output, the direction of each glyph for bidirectional text. The values range from 0 to 61 as defined by Unicode Standard Annex #9. An even value means the glyph goes left-to-right, and an odd value means the glyph goes right-to-left.
 

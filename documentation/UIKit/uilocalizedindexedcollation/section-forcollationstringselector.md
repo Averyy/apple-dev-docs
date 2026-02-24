@@ -29,7 +29,7 @@ The table-view controller should iterate through all model objects for the table
 ## Parameters
 
 - `object`: A model object of the application that is part of the data model for the table view.
-- `selector`: The selector of a method of   that returns the string to use for sorting. The method represented by the selection must take no arguments and return an   object. For example, you might specify the selector for a   property of the object.
+- `selector`: The selector of a method of `object` that returns the string to use for sorting. The method represented by the selection must take no arguments and return an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object. For example, you might specify the selector for a `name` property of the object.
 
 ## See Also
 

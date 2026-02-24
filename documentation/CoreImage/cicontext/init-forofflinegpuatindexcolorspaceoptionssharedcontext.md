@@ -26,10 +26,10 @@ To create a Metal-based Core Image context using an offline GPU, use the [`MTLCo
 
 ## Parameters
 
-- `index`: The index of the offline GPU with which to create the context; a number between zero and the value returned by the   method.
+- `index`: The index of the offline GPU with which to create the context; a number between zero and the value returned by the [`offlineGPUCount()`](cicontext/offlinegpucount().md) method.
 - `colorSpace`: A color space object encapsulating color space information that is used to specify how color values are interpreted.
-- `options`: A dictionary that contains options for creating a   object. You can pass any of the keys defined in   along with the appropriate value.
-- `sharedContext`: A CGL context with which to share OpenGL resources, obtained by calling the CGL function  . Pass   to use a context that does not share OpenGL resources.
+- `options`: A dictionary that contains options for creating a [`CIContext`](cicontext.md) object. You can pass any of the keys defined in [`CIContextOption`](cicontextoption.md) along with the appropriate value.
+- `sharedContext`: A CGL context with which to share OpenGL resources, obtained by calling the CGL function `CGLCreateContext(_:_:_:)`. Pass `NULL` to use a context that does not share OpenGL resources.
 
 ## See Also
 

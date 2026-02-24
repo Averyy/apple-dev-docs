@@ -26,7 +26,7 @@ The URL is converted into a match pattern and will update [`grantedPermissionMat
 
 - `status`: The new permission status to set for the given URL.
 - `url`: The URL for which to set the status.
-- `expirationDate`: The expiration date for the new permission status, or   for distant future.
+- `expirationDate`: The expiration date for the new permission status, or `nil` for distant future.
 
 ## See Also
 

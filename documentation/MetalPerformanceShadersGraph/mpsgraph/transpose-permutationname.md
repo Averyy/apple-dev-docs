@@ -30,7 +30,7 @@ Permutes the dimensions of the input tensor according to values in `permutation`
 ## Parameters
 
 - `tensor`: The tensor to be permuted.
-- `permutation`: An array of numbers defining the permutation, must be of length   and define a valid permutation.
+- `permutation`: An array of numbers defining the permutation, must be of length `rank(tensor)` and define a valid permutation.
 - `name`: The name for the operation.
 
 

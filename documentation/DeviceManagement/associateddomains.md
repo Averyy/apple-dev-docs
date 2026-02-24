@@ -87,6 +87,10 @@ You can use associated domains with features such as Extensible AppSSO, universa
 - [object AssociatedDomains.ConfigurationItem](associateddomains/configurationitem.md)
   A dictionary that maps apps to their associated domains.
 
+## Properties
+
+- `Configuration` ([AssociatedDomains.ConfigurationItem]) *(required)*: A dictionary that maps apps to their associated domains.
+
 ## See Also
 
 - [object AppLock](applock.md)

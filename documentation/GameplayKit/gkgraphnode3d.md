@@ -53,7 +53,7 @@ To learn more about graphs and pathfinding, see [`Pathfinding`](https://develope
 ## See Also
 
 - [class GKGraph](gkgraph.md)
-  A collection of nodes that describes the navigability of a game world and provides  methods to search for routes through that space.
+  A collection of nodes that describes the navigability of a game world and provides *pathfinding* methods to search for routes through that space.
 - [class GKObstacleGraph](gkobstaclegraph.md)
   A navigation graph for 2D game worlds that creates a minimal network for precise pathfinding around obstacles.
 - [class GKMeshGraph](gkmeshgraph.md)

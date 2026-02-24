@@ -27,9 +27,9 @@ A property list object corresponding to the representation in `data`. If data is
 ## Parameters
 
 - `data`: A data object containing a serialized property list.
-- `opt`: The options used to create the property list. For possible values, see  .
-- `format`: If the property list is valid, upon return contains the format.   can be  , in which case the property list format is not returned. For possible values, see  .
-- `errorString`: Upon return, if the conversion is successful,   is  . If the conversion fails, upon return contains a string describing the nature of the error.
+- `opt`: The options used to create the property list. For possible values, see [`PropertyListSerialization.MutabilityOptions`](propertylistserialization/mutabilityoptions.md).
+- `format`: If the property list is valid, upon return contains the format. `format` can be `nil`, in which case the property list format is not returned. For possible values, see [`PropertyListSerialization.PropertyListFormat`](propertylistserialization/propertylistformat.md).
+- `errorString`: Upon return, if the conversion is successful, `errorString` is `nil`. If the conversion fails, upon return contains a string describing the nature of the error.
 
 ## See Also
 

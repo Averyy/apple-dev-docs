@@ -47,8 +47,8 @@ Ellipse()
 
 ## Parameters
 
-- `aspectRatio`: The ratio of width to height to use for the resulting   view. Use   to maintain the current aspect ratio in the   resulting view.
-- `contentMode`: A flag that indicates whether this view fits or fills   the parent context.
+- `aspectRatio`: The ratio of width to height to use for the resulting view. Use `nil` to maintain the current aspect ratio in the resulting view.
+- `contentMode`: A flag that indicates whether this view fits or fills the parent context.
 
 ## See Also
 

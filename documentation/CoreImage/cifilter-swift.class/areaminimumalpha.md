@@ -29,6 +29,9 @@ This method applies the area minimum alpha filter to an image. This effect finds
 
 The area minimum alpha filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that specifies the subregion of the image that you want to process.
+
 The following code creates a filter that results in a 1 x 1 pixel image containing the color with the lowest alpha value:
 
 ```swift

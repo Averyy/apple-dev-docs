@@ -62,8 +62,8 @@ struct ConfirmEraseItems: View {
 
 ## Parameters
 
-- `label`: The label of the suppression toggle in the dialog. This   parameter can be elided to use the default suppression title.
-- `isSuppressed`: Whether the suppression toggle is on or off in the   dialog.
+- `label`: The label of the suppression toggle in the dialog. This parameter can be elided to use the default suppression title.
+- `isSuppressed`: Whether the suppression toggle is on or off in the dialog.
 
 ## See Also
 

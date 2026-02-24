@@ -28,8 +28,8 @@ You can also execute the dispatch work item directly in the current context by c
 
 ## Parameters
 
-- `qos`: The quality-of-service class to use when prioritizing the work item’s execution. For a list of possible values, see  .
-- `flags`: Configuration flags for the work item. For a list of possible values, see  .
+- `qos`: The quality-of-service class to use when prioritizing the work item’s execution. For a list of possible values, see [`DispatchQoS`](dispatchqos.md).
+- `flags`: Configuration flags for the work item. For a list of possible values, see [`DispatchWorkItemFlags`](dispatchworkitemflags.md).
 - `block`: The block that performs the work.
 
 ## See Also

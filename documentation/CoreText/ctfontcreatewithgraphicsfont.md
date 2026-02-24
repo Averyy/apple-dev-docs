@@ -27,8 +27,8 @@ A new font reference for an existing [`CGFont`](https://developer.apple.com/docu
 ## Parameters
 
 - `graphicsFont`: A valid Core Graphics font reference.
-- `size`: The point size for the font reference. If   is specified the default font size of 12.0 is used.
-- `matrix`: The transformation matrix for the font.  In most cases, set this parameter to be  .  If  , the identity matrix is used. Optional.
+- `size`: The point size for the font reference. If `0.0` is specified the default font size of 12.0 is used.
+- `matrix`: The transformation matrix for the font.  In most cases, set this parameter to be `NULL`.  If `NULL`, the identity matrix is used. Optional.
 - `attributes`: Additional attributes that should be matched. Optional.
 
 ## See Also

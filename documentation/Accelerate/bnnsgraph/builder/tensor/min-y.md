@@ -22,7 +22,7 @@ func min(y: some BNNSGraph.Builder.OperationParameter<T>) -> BNNSGraph.Builder.T
 
 ## Parameters
 
-- `y`: The   in  .
+- `y`: The `y` in `min(self, y)`.
 
 
 ---

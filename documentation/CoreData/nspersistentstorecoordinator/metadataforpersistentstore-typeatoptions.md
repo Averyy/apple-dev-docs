@@ -22,9 +22,9 @@ class func metadataForPersistentStore(type storeType: NSPersistentStore.StoreTyp
 
 ## Parameters
 
-- `storeType`: The store type. For possible values, see  .
+- `storeType`: The store type. For possible values, see [`NSPersistentStore.StoreType`](nspersistentstore/storetype.md).
 - `storeURL`: The store’s location.
-- `options`: A dictionary containing key-value pairs that specify store behavior and characteristics. For more information, see  .
+- `options`: A dictionary containing key-value pairs that specify store behavior and characteristics. For more information, see [`Store options`](store-options.md).
 
 ## See Also
 

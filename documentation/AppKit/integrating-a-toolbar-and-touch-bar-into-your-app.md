@@ -10,7 +10,7 @@ Provide users quick access to your app’s features from a toolbar and correspon
 
 #### Overview
 
-The  appears in the space immediately below or next to a window’s title bar and above the app’s content. You use an [`NSToolbar`](nstoolbar.md) object to manage the items that appear in a toolbar, which are [`NSToolbarItem`](nstoolbaritem.md) objects created in Interface Builder or source code.
+The *toolbar* appears in the space immediately below or next to a window’s title bar and above the app’s content. You use an [`NSToolbar`](nstoolbar.md) object to manage the items that appear in a toolbar, which are [`NSToolbarItem`](nstoolbaritem.md) objects created in Interface Builder or source code.
 
 This sample shows you how to add a toolbar to a window and add Touch Bar support that works in conjunction with the toolbar.
 

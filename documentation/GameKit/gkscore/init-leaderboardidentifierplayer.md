@@ -31,7 +31,7 @@ Your game explicitly allocates and initializes a score object using the designat
 ## Parameters
 
 - `identifier`: Identifies the leaderboard that the score is being sent to.
-- `player`: The   object identifying the player who’s score is being initialized.
+- `player`: The [`GKPlayer`](gkplayer.md) object identifying the player who’s score is being initialized.
 
 ## See Also
 

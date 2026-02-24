@@ -26,9 +26,9 @@ A result code. See Result Codes.
 ## Parameters
 
 - `inAudioFile`: The audio file you want to obtain property value information from.
-- `inPropertyID`: The property whose value information you want. See   for possible values.
+- `inPropertyID`: The property whose value information you want. See [`Audio File Properties`](1576499-audio-file-properties.md) for possible values.
 - `outDataSize`: On output, the size in bytes of the property value.
-- `isWritable`: On output, equals   if the property is writable, or   if it is read-only.
+- `isWritable`: On output, equals `1` if the property is writable, or `0` if it is read-only.
 
 ## See Also
 

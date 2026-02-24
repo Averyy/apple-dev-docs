@@ -30,10 +30,10 @@ This method treats the length of the string as a valid range value that returns 
 
 ## Parameters
 
-- `target`: The string to replace.
-- `replacement`: The string with which to replace  .
-- `options`: If   is  , the search is done from the end of the range. If   is  , only anchored (but potentially multiple) instances are replaced.   and   also apply.
-- `searchRange`: The range of characters to replace.   must not exceed the bounds of the receiver. Specify   as   to process the entire string.
+- `target`: The string to replace. > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `target` is `nil`.
+- `replacement`: The string with which to replace `target`. > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `replacement` is `nil`.
+- `options`: A mask specifying search options. See [`String Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/introStrings.html#//apple_ref/doc/uid/10000035i) for details. If `opts` is `NSBackwardsSearch`, the search is done from the end of the range. If `opts` is `NSAnchoredSearch`, only anchored (but potentially multiple) instances are replaced. `NSLiteralSearch` and `NSCaseInsensitiveSearch` also apply.
+- `searchRange`: The range of characters to replace. `searchRange` must not exceed the bounds of the receiver. Specify `searchRange` as `NSMakeRange(0, [receiver length])` to process the entire string. > ❗ **Important**:  Raises an `NSRangeException` if any part of `searchRange` lies beyond the end of the receiver.
 
 ## See Also
 

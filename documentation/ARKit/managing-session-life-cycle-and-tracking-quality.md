@@ -6,7 +6,7 @@ Keep the user informed on the current session state and recover from interruptio
 
 #### Overview
 
-World-tracking AR sessions use a technique called  This process combines motion sensor data with computer vision analysis of camera imagery to track the device’s position and orientation in real-world space, also known as , which is expressed in the [`ARCamera`](arcamera.md) [`transform`](arcamera/transform.md) property. For best results, world tracking needs consistent sensor data and camera imagery with visual complexity or recognizable features.
+World-tracking AR sessions use a technique called *visual-inertial odometry.* This process combines motion sensor data with computer vision analysis of camera imagery to track the device’s position and orientation in real-world space, also known as *pose*, which is expressed in the [`ARCamera`](arcamera.md) [`transform`](arcamera/transform.md) property. For best results, world tracking needs consistent sensor data and camera imagery with visual complexity or recognizable features.
 
 When you start a session, it takes some time for ARKit to gather enough data to precisely model device pose. During a session, the conditions that affect world-tracking quality can change. Use [`ARSessionObserver`](arsessionobserver.md) delegate methods and [`ARCamera`](arcamera.md) properties to follow these changes.
 
@@ -41,7 +41,7 @@ Use the associated [`ARCamera.TrackingState.Reason`](arcamera/trackingstate-swif
 
 ARKit can’t track device pose without a running [`ARSession`](arsession.md). By default, if your session is interrupted (for example, by switching to another app), any virtual content in that session is likely out of place relative to the real-world environment.
 
-You can use  to try to recover from an interruption. If you return true from the [`sessionShouldAttemptRelocalization(_:)`](arsessionobserver/sessionshouldattemptrelocalization(_:).md) method, ARKit attempts to reconcile its knowledge of the user’s environment from before the interruption with current camera and sensor data. During this process, the tracking state is [`ARCamera.TrackingState.limited(_:)`](arcamera/trackingstate-swift.enum/limited(_:).md) (with [`ARCamera.TrackingState.Reason.relocalizing`](arcamera/trackingstate-swift.enum/reason/relocalizing.md) as the reason). If successful, the tracking state returns to [`ARCamera.TrackingState.normal`](arcamera/trackingstate-swift.enum/normal.md) after a short time.
+You can use *relocalization* to try to recover from an interruption. If you return true from the [`sessionShouldAttemptRelocalization(_:)`](arsessionobserver/sessionshouldattemptrelocalization(_:).md) method, ARKit attempts to reconcile its knowledge of the user’s environment from before the interruption with current camera and sensor data. During this process, the tracking state is [`ARCamera.TrackingState.limited(_:)`](arcamera/trackingstate-swift.enum/limited(_:).md) (with [`ARCamera.TrackingState.Reason.relocalizing`](arcamera/trackingstate-swift.enum/reason/relocalizing.md) as the reason). If successful, the tracking state returns to [`ARCamera.TrackingState.normal`](arcamera/trackingstate-swift.enum/normal.md) after a short time.
 
 ![Sequence diagram with normal tracking state before the session is interrupted, then, after the interruption, proceeding from notAvailable to limited (initializing) to limited (relocalizing) to normal.](https://docs-assets.developer.apple.com/published/dcbfef6d91d046466a2b2384cb41efd7/media-3000194%402x.png)
 

@@ -20,6 +20,11 @@ object Apps.Relationships
 ### Related Objects
 - [object Apps.Relationships.AppsGenresRelationship](apps/relationships-data.dictionary/appsgenresrelationship.md)
 
+## Properties
+
+- `genres` (Apps.Relationships.AppsGenresRelationship): The genres for content. Fetch limits: - Default: 10
+- Max: 10
+
 ## See Also
 
 - [object Apps.Attributes](apps/attributes-data.dictionary.md)

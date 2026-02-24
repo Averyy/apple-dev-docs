@@ -78,17 +78,17 @@ For apps linked before iOS 17, the [`NSURL`](nsurl.md) class parses URLs accordi
 
 ##### Bookmarks and Security Scope
 
-Starting with OS X v10.6 and iOS 4.0, the [`NSURL`](nsurl.md) class provides a facility for creating and using bookmark objects. A  provides a persistent reference to a file-system resource. When you resolve a bookmark, you obtain a URL to the resource’s current location. A bookmark’s association with a file-system resource (typically a file or folder) usually continues to work if the user moves or renames the resource, or if the user relaunches your app or restarts the system.
+Starting with OS X v10.6 and iOS 4.0, the [`NSURL`](nsurl.md) class provides a facility for creating and using bookmark objects. A **bookmark** provides a persistent reference to a file-system resource. When you resolve a bookmark, you obtain a URL to the resource’s current location. A bookmark’s association with a file-system resource (typically a file or folder) usually continues to work if the user moves or renames the resource, or if the user relaunches your app or restarts the system.
 
 For a general introduction to using bookmarks, read [`Locating Files Using Bookmarks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/AccessingFilesandDirectories/AccessingFilesandDirectories.html#//apple_ref/doc/uid/TP40010672-CH3-SW10) in [`File System Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010672).
 
-In a macOS app that adopts App Sandbox, you can use  to gain access to file-system resources outside your app’s sandbox. These bookmarks preserve the user’s intent to give your app access to a resource across app launches. For details on how this works, including information on the entitlements you need in your Xcode project, read [`Security-Scoped Bookmarks and Persistent Resource Access`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AppSandboxInDepth/AppSandboxInDepth.html#//apple_ref/doc/uid/TP40011183-CH3-SW16) in [`App Sandbox Design Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AboutAppSandbox/AboutAppSandbox.html#//apple_ref/doc/uid/TP40011183). The methods for using security-scoped bookmarks are described in this document in Working with Bookmark Data.
+In a macOS app that adopts App Sandbox, you can use **security-scoped bookmarks** to gain access to file-system resources outside your app’s sandbox. These bookmarks preserve the user’s intent to give your app access to a resource across app launches. For details on how this works, including information on the entitlements you need in your Xcode project, read [`Security-Scoped Bookmarks and Persistent Resource Access`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AppSandboxInDepth/AppSandboxInDepth.html#//apple_ref/doc/uid/TP40011183-CH3-SW16) in [`App Sandbox Design Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AboutAppSandbox/AboutAppSandbox.html#//apple_ref/doc/uid/TP40011183). The methods for using security-scoped bookmarks are described in this document in Working with Bookmark Data.
 
 When you resolve a security-scoped bookmark, you get a security-scoped URL.
 
 ##### Security Scoped Urls
 
-Security-scoped URLs provide access to resources outside an app’s sandbox. In macOS, you get access to security-scoped URLs when you resolve a security-scoped bookmark. In iOS, apps that  or  documents using a [`UIDocumentPickerViewController`](https://developer.apple.com/documentation/UIKit/UIDocumentPickerViewController) also receive security-scoped URLs.
+Security-scoped URLs provide access to resources outside an app’s sandbox. In macOS, you get access to security-scoped URLs when you resolve a security-scoped bookmark. In iOS, apps that *open* or *move* documents using a [`UIDocumentPickerViewController`](https://developer.apple.com/documentation/UIKit/UIDocumentPickerViewController) also receive security-scoped URLs.
 
 To gain access to a security-scoped URL, you must call the [`startAccessingSecurityScopedResource()`](nsurl/startaccessingsecurityscopedresource().md) method (or its Core Foundation equivalent, the [`CFURLStartAccessingSecurityScopedResource(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFURLStartAccessingSecurityScopedResource(_:)) function). For iOS apps, if you use a [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) to access the URL, it automatically manages the security-scoped URL for you.
 
@@ -100,13 +100,75 @@ If `startAccessingSecurityScopedResource` (or `CFUrLStartAccessingSecurityScoped
 
 In a macOS app, when you copy a security-scoped URL, the copy has the security scope of the original. You gain access to the file-system resource (that the URL points to) just as you would with the original URL: by calling the [`startAccessingSecurityScopedResource()`](nsurl/startaccessingsecurityscopedresource().md) method (or its Core Foundation equivalent).
 
-If you need a security-scoped URL’s path as a string value (as provided by the [`path`](nsurl/path.md) method), such as to provide to an API that requires a string value, obtain the path from the URL as needed. Note, however, that a string-based path obtained from a security-scoped URL  have security scope and you cannot use that string to obtain access to a security-scoped resource.
+If you need a security-scoped URL’s path as a string value (as provided by the [`path`](nsurl/path.md) method), such as to provide to an API that requires a string value, obtain the path from the URL as needed. Note, however, that a string-based path obtained from a security-scoped URL *does not* have security scope and you cannot use that string to obtain access to a security-scoped resource.
 
 ##### Icloud Document Thumbnails
 
 With OS X v10.10 and iOS 8.0, the NSURL class includes the ability to get and set document thumbnails as a resource property for iCloud documents. You can get a dictionary of [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) objects in macOS or [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) objects in iOS using the [`getResourceValue(_:forKey:)`](nsurl/getresourcevalue(_:forkey:).md) or [`getPromisedItemResourceValue(_:forKey:)`](nsurl/getpromiseditemresourcevalue(_:forkey:).md) methods.
 
+**Swift**:
+
+```swift
+let URL = self.URLForDocument()
+var thumbnails: AnyObject?
+ 
+do {
+    try URL.getResourceValue(&thumbnails, forKey: NSURLThumbnailDictionaryKey)
+    if let thumbnails = thumbnails as? [NSString: NSImage] {
+        let image = thumbnails[NSThumbnail1024x1024SizeKey]
+    }
+} catch {
+    // handle the error
+}
+```
+
+**Objective-C**:
+
+```objc
+NSURL *URL = [self URLForDocument];
+NSDictionary *thumbnails = nil;
+NSError *error = nil;
+ 
+BOOL success = [URL getPromisedItemResourceValue:&thumbnails
+                                          forKey:NSURLThumbnailDictionaryKey
+                                           error:&error];
+if (success) {
+  NSImage *image = thumbnails[NSThumbnail1024x1024SizeKey];
+} else {
+  // handle the error
+}
+```
+
 In macOS, you can set a dictionary of thumbnails using the [`setResourceValue(_:forKey:)`](nsurl/setresourcevalue(_:forkey:).md) method. You can also get or set all the thumbnails as an `NSImage` object with multiple representations by using the [`thumbnailKey`](urlresourcekey/thumbnailkey.md).
+
+**Swift**:
+
+```swift
+let URL = self.URLForDocument()
+let thumbnail = self.createDocumentThumbnail()
+ 
+do {
+    try URL.setResourceValue([NSThumbnail1024x1024SizeKey: thumbnail], forKey: NSURLThumbnailDictionaryKey)
+} catch {
+    // handle the error
+}
+```
+
+**Objective-C**:
+
+```objc
+NSURL *URL = [self URLForDocument];
+NSImage *thumbnail = [self createDocumentThumbnail];
+NSError *error = nil;
+ 
+BOOL success = [URL setResourceValue:@{NSThumbnail1024x1024SizeKey : thumbnail}
+                              forKey:NSURLThumbnailDictionaryKey
+                               error:&error];
+ 
+if (!success) {
+  // handle the error
+}
+```
 
 > **Note**:  Do not set the [`thumbnailDictionaryKey`](urlresourcekey/thumbnaildictionarykey.md) key directly. Modifying this key interferes with document tracking and can create duplicates of your document, as well as other possible problems. In iOS, use a [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) subclass to manage your file. Set the thumbnail by overriding the document’s [`fileAttributesToWrite(to:for:)`](https://developer.apple.com/documentation/UIKit/UIDocument/fileAttributesToWrite(to:for:)) method and returning a dictionary that contains the proper thumbnail keys (along with any other file attributes). In macOS, follow the instructions for creating thumbnails given in [`Quick Look Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Quicklook_Programming_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005020).
 

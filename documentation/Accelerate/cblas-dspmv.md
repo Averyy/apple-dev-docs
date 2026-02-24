@@ -29,15 +29,15 @@ Computes `alpha*A*x + beta*y` and stores the results in `Y`.
 ## Parameters
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
-- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are   or  .
-- `N`: Order of matrix   and the number of elements in vectors   and  .
-- `ALPHA`: Scaling factor that matrix   is multiplied by.
-- `AP`: Matrix   (in packed storage format).
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
-- `BETA`: Scaling factor that vector   is multiplied by.
-- `Y`: Vector  .
-- `INCY`: Stride within  . For example, if   is 7, every 7th element is used.
+- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are `'U'` or `'L'`.
+- `N`: Order of matrix `A` and the number of elements in vectors `x` and `y`.
+- `ALPHA`: Scaling factor that matrix `A` is multiplied by.
+- `AP`: Matrix `A` (in packed storage format).
+- `X`: Vector `x`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
+- `BETA`: Scaling factor that vector `y` is multiplied by.
+- `Y`: Vector `y`.
+- `INCY`: Stride within `Y`. For example, if `incY` is 7, every 7th element is used.
 
 ## See Also
 

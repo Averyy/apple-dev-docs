@@ -26,7 +26,7 @@ A dictionary containing the key-value pairs for the attribute names specified by
 
 ## Parameters
 
-- `keys`: An array containing   objects that specify the names of a metadata attributes. See the “Constants” section for a list of possible keys.
+- `keys`: An array containing `NSString` objects that specify the names of a metadata attributes. See the “Constants” section for a list of possible keys.
 
 ## See Also
 

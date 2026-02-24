@@ -20,7 +20,7 @@ When a user clicks the help button, the certificate panel first checks the deleg
 
 ## Parameters
 
-- `showsHelp`: Set to   to display the help button. The help button is hidden by default.
+- `showsHelp`: Set to [`true`](https://developer.apple.com/documentation/Swift/true) to display the help button. The help button is hidden by default.
 
 ## See Also
 

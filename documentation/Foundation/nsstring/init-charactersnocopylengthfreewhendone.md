@@ -31,8 +31,8 @@ If an error occurs during the creation of the string, then `bytes` is not freed 
 ## Parameters
 
 - `characters`: A C array of UTF-16 code units.
-- `length`: The number of characters to use from  .
-- `freeBuffer`: If  , the receiver releases the memory with   when it no longer needs the data; if   it won’t.
+- `length`: The number of characters to use from `characters`.
+- `freeBuffer`: If [`true`](https://developer.apple.com/documentation/Swift/true), the receiver releases the memory with `free()` when it no longer needs the data; if [`false`](https://developer.apple.com/documentation/Swift/false) it won’t.
 
 ## See Also
 

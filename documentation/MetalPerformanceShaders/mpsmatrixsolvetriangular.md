@@ -21,12 +21,12 @@ class MPSMatrixSolveTriangular
 
 #### Overview
 
-This kernel finds the solution matrix to the system  or , where:
+This kernel finds the solution matrix to the system *op(A) * X = alpha * B* or *X * op(A) = alpha * B*, where:
 
 - A is either an upper or lower triangular matrix
--  is either  or 
--  is the resulting matrix of solutions
--  is the array of right hand sides for which the equations are to be solved
+- *op(A)* is either *Aᵀ* or *A*
+- *X* is the resulting matrix of solutions
+- *B* is the array of right hand sides for which the equations are to be solved
 
 ## Topics
 

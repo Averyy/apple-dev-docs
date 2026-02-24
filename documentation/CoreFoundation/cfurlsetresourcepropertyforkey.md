@@ -36,7 +36,7 @@ If an error occurs, this method returns `false` and populates the object pointer
 
 - `url`: The URL.
 - `key`: The name of one of the URL’s resource properties.
-- `propertyValue`: The value for the resource property defined by  .
+- `propertyValue`: The value for the resource property defined by `key`.
 - `error`: The error that occurred if the resource value could not be set.
 
 ## See Also

@@ -20,7 +20,7 @@ The horizontal and vertical velocity of the pan gesture. These values are relati
 
 ## Parameters
 
-- `view`: The view that provides the coordinate system for computing the velocity value. This parameter must not be  .
+- `view`: The view that provides the coordinate system for computing the velocity value. This parameter must not be `nil`.
 
 ## See Also
 

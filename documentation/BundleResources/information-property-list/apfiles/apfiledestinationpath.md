@@ -8,6 +8,10 @@ The path to use when installing the file or folder, relative to the app bundle.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [APDisplayedAsContainer](information-property-list/apfiles/apdisplayedascontainer.md)

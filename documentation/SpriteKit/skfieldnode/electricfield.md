@@ -28,7 +28,9 @@ A new electric field node.
 
 The force points toward the field node’s position and has a magnitude proportional to the field’s [`strength`](skfieldnode/strength.md) property and the physics body’s [`charge`](skphysicsbody/charge.md) property. This field models the first part of the Lorentz equation:
 
-Where  equals force,  equals charge, and  equals electric field.
+*F = qE*
+
+Where *F* equals force, *q* equals charge, and *E* equals electric field.
 
 The [`falloff`](skfieldnode/falloff.md) property of an electrical field node is set by default to `2`.
 

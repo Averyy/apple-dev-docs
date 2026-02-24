@@ -16,7 +16,7 @@ init(alignment: Alignment3D = .center)
 
 ## Parameters
 
-- `alignment`: The 3D alignment guide for aligning the subviews in   this container.
+- `alignment`: The 3D alignment guide for aligning the subviews in this container.
 
 
 ---

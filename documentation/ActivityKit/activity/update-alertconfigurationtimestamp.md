@@ -21,9 +21,9 @@ The system ignores updates to a Live Activity that’s in the [`ActivityState.en
 
 ## Parameters
 
-- `content`: The updated dynamic content for the Live Activity. The size of its    property can’t exceed 4KB in size.
-- `alertConfiguration`: The alert configuration you use to configure how the system notifies   a person about the updated content of the Live Activity.
-- `timestamp`: The time the data in the payload was generated. If this is older than a previous   update or push payload, the system ignores this update.
+- `content`: The updated dynamic content for the Live Activity. The size of its [`state`](activitycontent/state.md) property can’t exceed 4KB in size.
+- `alertConfiguration`: The alert configuration you use to configure how the system notifies a person about the updated content of the Live Activity.
+- `timestamp`: The time the data in the payload was generated. If this is older than a previous update or push payload, the system ignores this update.
 
 ## See Also
 

@@ -22,8 +22,8 @@ func executeFunction(_ function: String? = nil, arguments: inout [BNNSTensor]) a
 
 ## Parameters
 
-- `function`: The function. Specify as   if the graph only contains one function.
-- `arguments`: The output and input arguments. Note that the arguments may not be in the same order as the original   or   file. Use the   function to get the correct position in the   array for a given argument.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
+- `arguments`: The output and input arguments. Note that the arguments may not be in the same order as the original `mlpackage` or `mlmodelc` file. Use the [`argumentPosition(forFunction:argument:)`](bnnsgraph/context/argumentposition(forfunction:argument:).md) function to get the correct position in the `arguments` array for a given argument.
 
 ## See Also
 

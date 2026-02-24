@@ -18,8 +18,8 @@ Before you run the sample code project in Xcode:
 
 1. Edit the shared scheme called `fmp4Writer`.
 2. Open the Run action.
-3. Replace the  argument with the path to a movie file on your local hard drive.
-4. Replace the  argument  with your desired output directory; for example `~/Desktop/fmp4writer/`.
+3. Replace the *<path to movie file on disk>* argument with the path to a movie file on your local hard drive.
+4. Replace the *<path to output directory>* argument  with your desired output directory; for example `~/Desktop/fmp4writer/`.
 
 ## See Also
 

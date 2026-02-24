@@ -28,8 +28,8 @@ It is possible to create a static code object from unsigned code. Although most 
 ## Parameters
 
 - `path`: A URL identifying the location on disk of the code for which you want a static code object. For bundles, pass a URL to the root directory of the bundle. For single files, pass a URL to the file. If you pass a URL to the main executable of a bundle, the bundle as a whole is generally recognized. Only absolute paths should be used.
-- `flags`: Optional flags; see   for possible values. Pass   for standard behavior.
-- `staticCode`: On return, the static code object representing the code you specified in the   parameter.
+- `flags`: Optional flags; see [`SecCSFlags`](seccsflags.md) for possible values. Pass [`kSecCSDefaultFlags`](seccsflags/kseccsdefaultflags.md) for standard behavior.
+- `staticCode`: On return, the static code object representing the code you specified in the `path` parameter.
 
 ## See Also
 

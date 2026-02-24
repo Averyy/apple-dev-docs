@@ -24,7 +24,7 @@ This method logs a warning if [`usesDataSource`](nscomboboxcell/usesdatasource.m
 
 ## Parameters
 
-- `index`: The index of the object to return. If   is beyond the end of the list, an   is raised.
+- `index`: The index of the object to return. If `index` is beyond the end of the list, an `NSRangeException` is raised.
 
 ## See Also
 

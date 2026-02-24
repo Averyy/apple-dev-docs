@@ -30,7 +30,7 @@ The CPU can access the updated content from its copy of the resources after the 
 
 ## Parameters
 
-- `resource`: An   instance — such as an   or   — with a   property that’s equal to  .
+- `resource`: An [`MTLResource`](mtlresource.md) instance — such as an [`MTLBuffer`](mtlbuffer.md) or [`MTLTexture`](mtltexture.md) — with a [`storageMode`](mtlresource/storagemode.md) property that’s equal to [`MTLStorageMode.managed`](mtlstoragemode/managed.md).
 
 ## See Also
 

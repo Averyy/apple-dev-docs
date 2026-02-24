@@ -29,6 +29,10 @@ This method applies the motion blur filter to an image. The filter uses the angl
 
 The motion blur filter uses the following properties:
 
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`angle`**: A `float` representing the angle of the motion, in radians, that determines which direction the blur smears as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
+
 The following code creates a filter that adds a motion blur to the input image:
 
 ```swift

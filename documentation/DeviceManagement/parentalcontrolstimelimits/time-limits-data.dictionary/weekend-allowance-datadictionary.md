@@ -14,6 +14,15 @@ The weekend allowance dictionary.
 object ParentalControlsTimeLimits.Time-limits.Weekend-allowance
 ```
 
+## Properties
+
+- `enabled` (boolean) *(required)*: If `true`, enable these settings.
+- `end` (string): The curfew end time, in the format `%d:%d:%d`.
+- `rangeType` (integer) *(required)*: The type of day range, which has the following possible values: - `0`: Weekday
+- `1`: Weekend
+- `secondsPerDay` (integer): The allowance for that day, in seconds.
+- `start` (string): The curfew start time, in the format ‘%d:%d:%d’.
+
 ## See Also
 
 - [object ParentalControlsTimeLimits.Time-limits.Weekday-allowance](parentalcontrolstimelimits/time-limits-data.dictionary/weekday-allowance-data.dictionary.md)

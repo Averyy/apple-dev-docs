@@ -8,6 +8,10 @@ The app’s preference for whether it wants to use external graphics processors.
 **Availability**:
 - macOS 10.14+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key is optional.

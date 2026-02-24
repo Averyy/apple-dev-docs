@@ -29,10 +29,10 @@ The resulting point in image coordinate space may have nonintegral (floating-poi
 
 ## Parameters
 
-- `faceLandmarkPoint`: The location of the face landmark, as returned from a   instance.
-- `faceBoundingBox`: The normalized bounding box rect around the face, as obtained from a  .
-- `imageWidth`: The width of the image from which the   was generated.
-- `imageHeight`: The height of the image from which the   was generated.
+- `faceLandmarkPoint`: The location of the face landmark, as returned from a [`VNFaceLandmarkRegion2D`](vnfacelandmarkregion2d.md) instance.
+- `faceBoundingBox`: The normalized bounding box rect around the face, as obtained from a [`VNFaceObservation`](vnfaceobservation.md).
+- `imageWidth`: The width of the image from which the [`VNFaceObservation`](vnfaceobservation.md) was generated.
+- `imageHeight`: The height of the image from which the [`VNFaceObservation`](vnfaceobservation.md) was generated.
 
 ## See Also
 

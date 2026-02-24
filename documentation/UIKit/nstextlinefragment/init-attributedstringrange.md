@@ -21,7 +21,7 @@ init(attributedString: NSAttributedString, range: NSRange)
 ## Parameters
 
 - `attributedString`: The attributed string.
-- `range`: An   that specifies which characters to include.
+- `range`: An [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange-c.struct) that specifies which characters to include.
 
 ## See Also
 

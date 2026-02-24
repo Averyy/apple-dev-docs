@@ -22,8 +22,8 @@ The async variation of setPropertyValue does not return until the property has b
 ## Parameters
 
 - `address`: An AudioObjectPropertyAddress indicating which property is being changed.
-- `qualifier`: A buffer of data to be used in determining the data of the property being   set. Note that not all properties require qualification, in which case this value   will be nil.
-- `data`: A buffer which on entry contains the data to be used to change the property’s   value, and on exit contains the property’s value after being set.
+- `qualifier`: A buffer of data to be used in determining the data of the property being set. Note that not all properties require qualification, in which case this value will be nil.
+- `data`: A buffer which on entry contains the data to be used to change the property’s value, and on exit contains the property’s value after being set.
 
 
 ---

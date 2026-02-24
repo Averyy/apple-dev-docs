@@ -29,8 +29,8 @@ Unregistered fonts don’t participate in font descriptor matching.
 ## Parameters
 
 - `fontURLs`: An array of font URLs.
-- `scope`: A scope constant that defines the availability and lifetime of the registration. This value should match the scope the fonts are registered in. See   for more details.
-- `registrationHandler`: This block may be called multiple times during the unregistration process. The   parameter becomes   when the unregistration process completes. Return   from the block to stop the unregistration operation, like after receiving an error.
+- `scope`: A scope constant that defines the availability and lifetime of the registration. This value should match the scope the fonts are registered in. See [`CTFontManagerScope`](ctfontmanagerscope.md) for more details.
+- `registrationHandler`: A block called as errors arise or upon completion. The block’s `errors` parameter contains an array of [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) references; an empty array indicates no errors unregistering the files. Each error reference contains a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) of font URLs corresponding to [`kCTFontManagerErrorFontURLsKey`](kctfontmanagererrorfonturlskey.md). These URLs represent the font files causing the error and failing to unregister successfully. This block may be called multiple times during the unregistration process. The `done` parameter becomes [`true`](https://developer.apple.com/documentation/Swift/true) when the unregistration process completes. Return [`false`](https://developer.apple.com/documentation/Swift/false) from the block to stop the unregistration operation, like after receiving an error.
 
 ## See Also
 

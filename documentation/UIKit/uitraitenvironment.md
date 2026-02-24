@@ -26,7 +26,7 @@ protocol UITraitEnvironment : NSObjectProtocol
 
 #### Overview
 
-The system represents the iOS interface environment with , such as horizontal and vertical size class, display scale, and user interface idiom. You access the trait environment of an object that adopts this protocol with the [`traitCollection`](uitraitenvironment/traitcollection.md) property.
+The system represents the iOS interface environment with *traits*, such as horizontal and vertical size class, display scale, and user interface idiom. You access the trait environment of an object that adopts this protocol with the [`traitCollection`](uitraitenvironment/traitcollection.md) property.
 
 The trait system propagates values from the top of the view hierarchy downward, to every view controller and view in your app. When you modify a trait at any level using trait overrides, that change affects the modified object and all of its descendants. This hierarchical propagation makes it easy to apply configuration changes to entire subtrees of your interface.
 

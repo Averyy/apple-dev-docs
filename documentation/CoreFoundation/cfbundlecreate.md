@@ -34,7 +34,7 @@ Once a bundle has been created, it is cached; the bundle cache is flushed only p
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `bundleURL`: The location of the bundle for which to create a CFBundle object.
 
 ## See Also

@@ -26,11 +26,11 @@ An error code indicating success or failure.
 
 ## Parameters
 
-- `nameServerSignature`: The socket signature for the name server. If  , this function contacts the default server, which is assumed to be a local process using TCP/IP to listen on the port number returned from  . If   is incomplete, the missing values are replaced with the default server’s values, if appropriate.
+- `nameServerSignature`: The socket signature for the name server. If `NULL`, this function contacts the default server, which is assumed to be a local process using TCP/IP to listen on the port number returned from [`CFSocketGetDefaultNameRegistryPortNumber()`](cfsocketgetdefaultnameregistryportnumber().md). If `nameServerSignature` is incomplete, the missing values are replaced with the default server’s values, if appropriate.
 - `timeout`: The time to wait for the server to accept a connection and to reply to the registration request.
 - `name`: The name of the registered value to return.
 - `value`: A pointer to the property list object into which the retrieved value should be copied.
-- `nameServerAddress`: A pointer to a CFData object into which the name server’s address is copied. Pass   if you do not want the server’s address.
+- `nameServerAddress`: A pointer to a CFData object into which the name server’s address is copied. Pass `NULL` if you do not want the server’s address.
 
 ## See Also
 

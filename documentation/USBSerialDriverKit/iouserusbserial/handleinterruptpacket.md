@@ -21,7 +21,7 @@ Override this method if you want to process interrupt packets sent by the device
 ## Parameters
 
 - `packet`: A buffer containing the interrupt-related data.
-- `size`: The number of bytes in the   buffer.
+- `size`: The number of bytes in the `packet` buffer.
 
 ## See Also
 

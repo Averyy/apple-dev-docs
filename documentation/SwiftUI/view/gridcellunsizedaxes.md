@@ -60,7 +60,7 @@ This restores the grid to the width that it would have without the divider:
 
 ## Parameters
 
-- `axes`: The dimensions in which the grid shouldn’t offer the view a   share of any available space. This prevents a flexible view like a   ,  , or   from defining the size of   a row or column.
+- `axes`: The dimensions in which the grid shouldn’t offer the view a share of any available space. This prevents a flexible view like a [`Spacer`](spacer.md), [`Divider`](divider.md), or [`Color`](color.md) from defining the size of a row or column.
 
 ## See Also
 

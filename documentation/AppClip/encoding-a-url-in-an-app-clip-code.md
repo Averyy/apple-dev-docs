@@ -20,6 +20,10 @@ When you create an App Clip Code, you need to find the best tradeoff between the
 
 Users launch your App Clip with an invocation; for example, by tapping a link in the Messages app, by scanning a QR code, or by scanning an App Clip Code. To support invocations from App Clip Codes:
 
+- **App Clip demo URL**: You don’t have to associate your App Clip with your website or create an advanced App Clip experience to use the App Clip demo URL in an App Clip Code. However, you can’t use launch parameters with the demo URL.
+- **default App Clip URL**: You can’t use the default App Clip URL in your App Clip Code.
+- **advanced App Clip experiences**: Create at least one advanced App Clip experience and associate your App Clip with your website to enable the system to verify your App Clip upon launch. For more information, see [`Associating your App Clip with your website`](associating-your-app-clip-with-your-website.md).
+
 When you create an advanced App Clip experience, use a custom URL for your default App Clip experience and your advanced App Clip experiences. For example, create a default App Clip experience that uses  `https://example.com` as its invocation URL, and one advanced App Clip experience. The advanced experience’s registered invocation URL might be `https://appclip.example.com`, and takes advantage of prefix matching.
 
 When you use the advanced App Clip experience, you support invocations from QR codes, NFC tags, and App Clip Codes. These invocations use `https://appclip.example.com` as their URL prefix and encode additional information with URL path components or queries. For example, you can encode `https://appclip.example.com/shop?p=123&p1=ab` in an App Clip Code.
@@ -31,7 +35,7 @@ For more information, refer to [`Configuring App Clip experiences`](configuring-
 In general, the invocation URL encoded in an App Clip Code follows the same pattern as other URLs: `https://[host][/<path>][?<query>][#<fragment>]`. However, the URL encoded in an App Clip Code must meet additional requirements:
 
 - The invocation URL must use the `https` scheme in lowercase.
-- The `host` segment is the invocation URL’s  and can only contain the lowercase ASCII characters `a` to `z`, `.`, and `-`.
+- The `host` segment is the invocation URL’s *authority component* and can only contain the lowercase ASCII characters `a` to `z`, `.`, and `-`.
 - The invocation URL may have zero or more path and query components, followed by an optional fragment. They can use the following ASCII characters: `a` to `z`, `A` to `Z`, `0` to `9`, and `/#?=%-._,+;:&`.
 
 ##### Follow Practices That Allow for Efficient Encoding

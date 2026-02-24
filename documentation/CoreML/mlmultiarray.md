@@ -26,9 +26,14 @@ class MLMultiArray
 
 #### Overview
 
-A multidimensional array, or , is one of the underlying types of an `MLFeatureValue` that stores numeric values in multiple dimensions. All elements in an [`MLMultiArray`](mlmultiarray.md) instance are one of the same type, and one of the types that [`MLMultiArrayDataType`](mlmultiarraydatatype.md) defines:
+A multidimensional array, or *multiarray*, is one of the underlying types of an `MLFeatureValue` that stores numeric values in multiple dimensions. All elements in an [`MLMultiArray`](mlmultiarray.md) instance are one of the same type, and one of the types that [`MLMultiArrayDataType`](mlmultiarraydatatype.md) defines:
 
-Each dimension in a multiarray is typically significant or meaningful. For example, a model could have an input that accepts images as a multiarray of pixels with three dimensions, C x H x W. The first dimension, ,_ _represents the number of color channels, and the second and third dimensions,  and , represent the image’s height and width, respectively. The number of dimensions and size of each dimension define the multiarray’s .
+- **[`MLMultiArrayDataType.int32`](mlmultiarraydatatype/int32.md)**: 32-bit integer
+- **[`MLMultiArrayDataType.float16`](mlmultiarraydatatype/float16.md)**: 16-bit floating point number
+- **[`MLMultiArrayDataType.float32`](mlmultiarraydatatype/float32.md)**: 32-bit floating point number (also known as [`float`](mlmultiarraydatatype/float.md))
+- **[`float64`](mlmultiarraydatatype/float64.md)**: 64-bit floating point number (also known as `double` in Swift or `MLMultiArrayDataTypeDouble` in Objective-C)
+
+Each dimension in a multiarray is typically significant or meaningful. For example, a model could have an input that accepts images as a multiarray of pixels with three dimensions, C x H x W. The first dimension, *C*,_ _represents the number of color channels, and the second and third dimensions, *H* and *W*, represent the image’s height and width, respectively. The number of dimensions and size of each dimension define the multiarray’s *shape*.
 
 > **Note**:  Some models use a one-dimensional multiarray for an input or output. This type of multiarray is conceptually identical to a conventional array.
 

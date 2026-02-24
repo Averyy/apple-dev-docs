@@ -25,7 +25,7 @@ A non-zero integer when the user is authorized and zero otherwise.
 ## Parameters
 
 - `name`: A name object.
-- `user`: A C string that is first imported as a name object with name type   and then authorized against the name object given by the first parameter.
+- `user`: A C string that is first imported as a name object with name type [`GSS_C_NT_USER_NAME`](gss_c_nt_user_name.md) and then authorized against the name object given by the first parameter.
 
 ## See Also
 

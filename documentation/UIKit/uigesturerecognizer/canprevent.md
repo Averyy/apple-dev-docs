@@ -28,7 +28,7 @@ Overriding these methods enables the same behavior as implementing the [`UIGestu
 
 ## Parameters
 
-- `preventedGestureRecognizer`: An instance of a subclass of  .
+- `preventedGestureRecognizer`: An instance of a subclass of `UIGestureRecognizer`.
 
 ## See Also
 

@@ -17,6 +17,10 @@ A dictionary that describes an error chain item.
 object ScheduleOSUpdateResponse.UpdateResultsItem.ErrorChainItem
 ```
 
+## Properties
+
+- `ANY` (any) *(required)*: The error details.
+
 
 ---
 

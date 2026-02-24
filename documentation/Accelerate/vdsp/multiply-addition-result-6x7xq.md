@@ -56,9 +56,9 @@ The following code shows an example of using this function:
 
 ## Parameters
 
-- `addition`: A tuple that contains the vectors   and   in  .
-- `scalar`: The input scalar value   in  .
-- `result`: The output vector   in  .
+- `addition`: A tuple that contains the vectors `A` and `B` in `D = (A + B) * C`.
+- `scalar`: The input scalar value `C` in `D = (A + B) * C`.
+- `result`: The output vector `D` in `D = (A + B) * C`.
 
 ## See Also
 

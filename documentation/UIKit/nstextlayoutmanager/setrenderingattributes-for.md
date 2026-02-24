@@ -21,7 +21,7 @@ func setRenderingAttributes(_ renderingAttributes: [NSAttributedString.Key : Any
 ## Parameters
 
 - `renderingAttributes`: A dictionary of rendering attributes.
-- `textRange`: The text range over which to apply  .
+- `textRange`: The text range over which to apply `renderingAttributes`.
 
 ## See Also
 

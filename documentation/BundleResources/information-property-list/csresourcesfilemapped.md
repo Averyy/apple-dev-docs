@@ -8,6 +8,10 @@ A Boolean value indicating whether the app’s resources files should be mapped 
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [APFiles](information-property-list/apfiles.md)

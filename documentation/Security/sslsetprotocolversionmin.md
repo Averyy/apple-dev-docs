@@ -24,7 +24,7 @@ A result code. See [`Secure Transport Result Codes`](secure-transport-result-cod
 ## Parameters
 
 - `context`: The SSL context associated with the connection.
-- `minVersion`: The new minimum version ( , for example). See   for a complete list.
+- `minVersion`: The new minimum version ([`SSLProtocol.tlsProtocol1`](sslprotocol/tlsprotocol1.md), for example). See [`SSLProtocol`](sslprotocol.md) for a complete list.
 
 
 ---

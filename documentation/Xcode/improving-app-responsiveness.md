@@ -6,7 +6,10 @@ Create a user experience that feels responsive by removing hangs and hitches fro
 
 #### Overview
 
-An app that responds instantly to users’ interactions gives an impression of supporting their workflow. When the app responds to gestures and taps in real time, it creates an experience for users that they’re directly manipulating the objects on the screen. Apps with a noticeable delay in user interaction (a ) or movement on screen that appears to jump (a ), shatter that illusion. This leaves the user wondering whether the app is working correctly. To avoid hangs and hitches, keep the following rough thresholds in mind as you develop and test your app.
+An app that responds instantly to users’ interactions gives an impression of supporting their workflow. When the app responds to gestures and taps in real time, it creates an experience for users that they’re directly manipulating the objects on the screen. Apps with a noticeable delay in user interaction (a *hang*) or movement on screen that appears to jump (a *hitch*), shatter that illusion. This leaves the user wondering whether the app is working correctly. To avoid hangs and hitches, keep the following rough thresholds in mind as you develop and test your app.
+
+- **< 100 ms**: Synchronous main thread work in response to a discrete user interaction.
+- **< 1 display refresh interval (8 or 17ms)**: Main thread work and work to handle continuous user interaction.
 
 Work performed on the main thread influences both the delay between an incoming user event and the corresponding screen update as well as the maximum frequency of screen updates.
 
@@ -47,11 +50,11 @@ struct ContentView: View {
 private func doLongRunningWork() async { /* a lot of work */ } // Implicitly nonisolated due to being a free function
 ```
 
-Creating a `Task` in the above example allows the button action to return immediately, before the new task finishes executing. Specifically, the `Task` itself inherits the actor from its enclosing context and  execute on the main actor. Beginning with Swift 5.7, Swift executes nonisolated, asynchronous functions, like `doLongRunningWork()` in the example above, on the concurrency thread pool, off of any actors. Then execution of the `updateUI()` function returns to the main actor because it’s part of a `Task` constrained to the main actor. This is exactly what we want to happen.
+Creating a `Task` in the above example allows the button action to return immediately, before the new task finishes executing. Specifically, the `Task` itself inherits the actor from its enclosing context and *does* execute on the main actor. Beginning with Swift 5.7, Swift executes nonisolated, asynchronous functions, like `doLongRunningWork()` in the example above, on the concurrency thread pool, off of any actors. Then execution of the `updateUI()` function returns to the main actor because it’s part of a `Task` constrained to the main actor. This is exactly what we want to happen.
 
 > **Note**:  For more information about how actors and tasks interact, and the circumstances under which isolated/nonisolated, synchronous/asynchronous functions execute on and off of an actor, see [`Eliminate data races using Swift concurrency`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110351/).
 
-Both the `nonisolated` aspect of the function and the `async` nature of it are essential for enabling this behavior. When the long-running work only executes synchronously, it is  to wrap it in a `Task`. For example, the following code produces a hang:
+Both the `nonisolated` aspect of the function and the `async` nature of it are essential for enabling this behavior. When the long-running work only executes synchronously, it is *not enough* to wrap it in a `Task`. For example, the following code produces a hang:
 
 ```swift
 // This code produces a hang. This is only for illustration purposes.
@@ -71,9 +74,9 @@ struct ContentView: View {
 private func doLongRunningWork() { /* a lot of work */ } // Nonisolated, but synchronous.
 ```
 
-Note that this is almost the exact code as in the previous example, except that `doLongRunningWork()` isn’t `async`, so there isn’t an `await` keyword before the function call. This  create a separate Swift concurrency task and allows the button’s action to return quickly without blocking the UI. However, the created task inherits the context from its enclosing context because the `body` property on the SwiftUI `View` is annotated with `@MainActor`, meaning it must execute on the main actor.
+Note that this is almost the exact code as in the previous example, except that `doLongRunningWork()` isn’t `async`, so there isn’t an `await` keyword before the function call. This *does* create a separate Swift concurrency task and allows the button’s action to return quickly without blocking the UI. However, the created task inherits the context from its enclosing context because the `body` property on the SwiftUI `View` is annotated with `@MainActor`, meaning it must execute on the main actor.
 
-By default, tasks inherit their context from their enclosing context during creation. Therefore, the newly created task in the `body` property’s context is also constrained to the main actor, which means it can only execute on the main actor and does still block the main actor for a long amount of time. This just  the hang until after the immediate button action finishes. Swift concurrency enqueues the task on the main actor and executes it there shortly after, which keeps the main thread busy and prevents it from handling incoming events.
+By default, tasks inherit their context from their enclosing context during creation. Therefore, the newly created task in the `body` property’s context is also constrained to the main actor, which means it can only execute on the main actor and does still block the main actor for a long amount of time. This just *delays* the hang until after the immediate button action finishes. Swift concurrency enqueues the task on the main actor and executes it there shortly after, which keeps the main thread busy and prevents it from handling incoming events.
 
 If making the function `async` isn’t an option, wrap it in a `detached` task to explicitly opt out from inheriting the surrounding execution context.
 

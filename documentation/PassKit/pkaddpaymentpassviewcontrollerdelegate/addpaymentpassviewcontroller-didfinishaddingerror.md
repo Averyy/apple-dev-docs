@@ -23,8 +23,8 @@ This method is called when the request successfully adds the card to Apple Pay o
 ## Parameters
 
 - `controller`: The controller adding the pass.
-- `pass`: The completed pass, or   if there was an error.
-- `error`: If the request failed, this parameter contains an error object using the   error domain. For a list of possible error codes, see the   enum.
+- `pass`: The completed pass, or `nil` if there was an error.
+- `error`: If the request failed, this parameter contains an error object using the [`PKPassKitErrorDomain`](pkpasskiterrordomain.md) error domain. For a list of possible error codes, see the [`PKAddPaymentPassError`](pkaddpaymentpasserror.md) enum.
 
 ## See Also
 

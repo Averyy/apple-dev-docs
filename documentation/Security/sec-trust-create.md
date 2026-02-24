@@ -28,7 +28,7 @@ Create an ARC-able `sec_trust_t` instance from a `SecTrustRef`.
 
 ## Parameters
 
-- `trust`: A   instance.
+- `trust`: A `SecTrustRef` instance.
 
 
 ---

@@ -22,7 +22,7 @@ func clearBadge(for players: [GKCloudPlayer]) async throws
 ## Parameters
 
 - `players`: An array of GKCloudPlayers identifying the players that are to have their badge removed.
-- `completionHandler`: A block that is called after the badges have been removed from the players.
+- `completionHandler`: A block that is called after the badges have been removed from the players. - **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is nil. See `GameKit Constants` for a list of error codes specific to GameKit.
 
 ## See Also
 

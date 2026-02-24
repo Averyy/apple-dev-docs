@@ -20,11 +20,11 @@ A combo button configured with both a title and image.
 
 ## Parameters
 
-- `title`: The localized string to display in the button. Use the inherited   property to set the text alignment for the string.
+- `title`: The localized string to display in the button. Use the inherited [`alignment`](nscontrol/alignment.md) property to set the text alignment for the string.
 - `image`: The image to display in the button.
 - `menu`: The menu to display when someone chooses an alternate action.
 - `target`: The object that receives the default action message when someone clicks the button.
-- `action`: The action message to send to the   object.
+- `action`: The action message to send to the `target` object.
 
 ## See Also
 

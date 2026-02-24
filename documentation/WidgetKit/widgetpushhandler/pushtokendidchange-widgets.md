@@ -27,7 +27,7 @@ func pushTokenDidChange(_ pushInfo: WidgetPushInfo, widgets: [WidgetInfo])
 ## Parameters
 
 - `pushInfo`: Provides information containing your push token to use.
-- `widgets`: Information about widgets that support push   updates.
+- `widgets`: Information about widgets that support push updates.
 
 
 ---

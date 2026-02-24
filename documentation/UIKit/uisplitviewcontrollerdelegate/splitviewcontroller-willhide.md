@@ -27,7 +27,7 @@ The split view controller calls this method when the system is preparing to hide
 ## Parameters
 
 - `svc`: The split view controller whose column is being hidden.
-- `column`: The column to be hidden. See   for possible values.
+- `column`: The column to be hidden. See [`UISplitViewController.Column`](uisplitviewcontroller/column.md) for possible values.
 
 ## See Also
 

@@ -29,8 +29,8 @@ Symbol images pick up the font styling information associated with the specified
 
 ## Parameters
 
-- `textStyle`: The system text styles that support Dynamic Type. For a list of possible values, see  .
-- `scale`: The symbol image scale variant to select. Use this parameter to make the image appear bigger or smaller than text that uses the same text style. For a list of possible values, see  .
+- `textStyle`: The system text styles that support Dynamic Type. For a list of possible values, see [`UIFont.TextStyle`](uifont/textstyle.md).
+- `scale`: The symbol image scale variant to select. Use this parameter to make the image appear bigger or smaller than text that uses the same text style. For a list of possible values, see [`UIImage.SymbolScale`](uiimage/symbolscale.md).
 
 ## See Also
 

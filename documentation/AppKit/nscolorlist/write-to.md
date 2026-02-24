@@ -16,11 +16,11 @@ func write(to url: URL?) throws
 
 #### Discussion
 
-If `url` represents a directory, this method saves the color list in that directory in a file with the name `.clr`, where  is the value of the [`name`](nscolorlist/name-swift.property.md) property. If `url` represents a file, this method saves the color list using the name you provided.
+If `url` represents a directory, this method saves the color list in that directory in a file with the name **`.clr`, where ** is the value of the [`name`](nscolorlist/name-swift.property.md) property. If `url` represents a file, this method saves the color list using the name you provided.
 
 ## Parameters
 
-- `url`: The URL at which to store the color list. The URL must specify either a directory or file in the file system. Specify   to save the color list to the user’s   directory.
+- `url`: The URL at which to store the color list. The URL must specify either a directory or file in the file system. Specify `nil` to save the color list to the user’s `~/Library/Colors` directory.
 
 ## See Also
 

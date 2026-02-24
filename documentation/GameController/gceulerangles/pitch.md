@@ -21,7 +21,7 @@ var pitch: Double
 
 #### Discussion
 
-A  is a rotation around the x-axis that passes through the controller from side to side. The sign of the pitch follows the right-hand rule. If you point your right thumb along the positive axis, the curl of your other fingers points in the positive direction around that axis.
+A *pitch* is a rotation around the x-axis that passes through the controller from side to side. The sign of the pitch follows the right-hand rule. If you point your right thumb along the positive axis, the curl of your other fingers points in the positive direction around that axis.
 
 ## See Also
 

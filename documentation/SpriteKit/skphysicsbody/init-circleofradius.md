@@ -34,6 +34,22 @@ The following code shows the code that creates the physics body for a spherical 
 
 Listing 1. A physics body for a circular sprite
 
+**Swift**:
+
+```swift
+let sprite = SKSpriteNode(imageNamed: "sphere.png")
+sprite.physicsBody = SKPhysicsBody(circleOfRadius: sprite.size.width / 2)
+sprite.physicsBody?.isDynamic = true
+```
+
+**Obj-C**:
+
+```objc
+SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"sphere.png"];
+sprite.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:sprite.size.width/2];
+sprite.physicsBody.dynamic = YES;
+```
+
 If the physics body were significantly smaller than the sprite’s image, the data used to create the physics body might need to be provided by some other source, such as a property list.
 
 ## Parameters

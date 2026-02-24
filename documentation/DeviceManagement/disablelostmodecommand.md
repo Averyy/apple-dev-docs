@@ -21,6 +21,11 @@ object DisableLostModeCommand
 - [object DisableLostModeCommand.Command](disablelostmodecommand/command-data.dictionary.md)
   The command to take the device out of Lost Mode.
 
+## Properties
+
+- `Command` (DisableLostModeCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object DisableLostModeResponse](disablelostmoderesponse.md)

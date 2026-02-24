@@ -10,19 +10,97 @@ Direct methods offer high-precision solving with a simple API when compared to i
 
 ![A mathematical equation that consists of a four-by-four sparse matrix multiplied by a four-element vector of unknown values equals a four-element vector of known values.](https://docs-assets.developer.apple.com/published/2c13eba9c0f47ff54e7774d087efc9f1/media-2904628%402x.png)
 
-In the equation above,  refers to the four-by-four coefficient matrix and  to the right-hand-side vector. The code in this article solves the equation  by finding .
+In the equation above, *A* refers to the four-by-four coefficient matrix and *b* to the right-hand-side vector. The code in this article solves the equation *Ax = b* by finding *x*.
 
-Note that  is sparse. Some entries (those that are blank) are zero. For small matrices such as this, there’s little gain in exploiting this structure. However, it’s essential for larger systems that don’t otherwise fit in memory, even on a large computer.
+Note that *A* is sparse. Some entries (those that are blank) are zero. For small matrices such as this, there’s little gain in exploiting this structure. However, it’s essential for larger systems that don’t otherwise fit in memory, even on a large computer.
 
-The code in this article performs a sparse Cholesky factorization, equivalent to calling the LAPACK function `dpotrf_(_:_:_:_:_:)` on a dense matrix. The main requirement for sparse Cholesky factorization is that the matrix is symmetric positive-definite (that is,  and all eigenvalues are greater than zero. A sufficient, but not necessary, condition is that the matrix is diagonally dominant (that is, the sum of the absolute values of the off-diagonal entries in each row or column is less than the value of the diagonal). This is the case for the above matrix.
+The code in this article performs a sparse Cholesky factorization, equivalent to calling the LAPACK function `dpotrf_(_:_:_:_:_:)` on a dense matrix. The main requirement for sparse Cholesky factorization is that the matrix is symmetric positive-definite (that is, *A=Aᵀ),* and all eigenvalues are greater than zero. A sufficient, but not necessary, condition is that the matrix is diagonally dominant (that is, the sum of the absolute values of the off-diagonal entries in each row or column is less than the value of the diagonal). This is the case for the above matrix.
 
 ##### Create the Matrix Structure
 
-Use the code below to define the matrix structure. As [`Creating sparse matrices`](creating-sparse-matrices.md) explains, because  is symmetric, it stores only half of the data.
+Use the code below to define the matrix structure. As [`Creating sparse matrices`](creating-sparse-matrices.md) explains, because *A* is symmetric, it stores only half of the data.
+
+**Swift**:
+
+```swift
+var rowIndices: [Int32] = [0, 1, 3,     // Column 0
+                           1, 2, 3,     // Column 1
+                           2,           // Column 2
+                           3]           // Column 3
+ 
+var columnStarts = [0, 3, 6, 7, 8]
+
+let structure: SparseMatrixStructure = rowIndices.withUnsafeMutableBufferPointer { rowIndicesPtr in
+    columnStarts.withUnsafeMutableBufferPointer { columnStartsPtr in
+        var attributes = SparseAttributes_t()
+        attributes.triangle = SparseLowerTriangle
+        attributes.kind = SparseSymmetric
+        
+        return SparseMatrixStructure(
+            rowCount: 4,
+            columnCount: 4,
+            columnStarts: columnStartsPtr.baseAddress!,
+            rowIndices: rowIndicesPtr.baseAddress!,
+            attributes: attributes,
+            blockSize: 1
+        )
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+int rowIndices[]    = {0, 1, 3, 1, 2, 3, 2, 3}; 
+ 
+double values[] = {10.0, 1.0, 2.5, 12.0, -0.3, 1.1, 9.5, 6.0};
+long columnStarts[] = { 0, 3, 6, 7, 8}; 
+ 
+SparseMatrixStructure structure = {
+    .rowCount     = 4,
+    .columnCount  = 4,
+    .columnStarts = columnStarts,
+    .rowIndices   = rowIndices,
+    .attributes = {
+        .kind = SparseSymmetric,
+        .triangle = SparseLowerTriangle
+    },
+    .blockSize = 1
+};
+```
 
 ##### Create and Factorize the Matrix
 
-The [`SparseFactor(_:_:)`](sparsefactor(_:_:)-8gl6j.md) function performs the actual Cholesky factorization, finding  such that .
+The [`SparseFactor(_:_:)`](sparsefactor(_:_:)-8gl6j.md) function performs the actual Cholesky factorization, finding *L* such that *A = LLᵀ*.
+
+**Swift**:
+
+```swift
+let llt: SparseOpaqueFactorization_Double = values.withUnsafeMutableBufferPointer { valuesPtr in
+    let a = SparseMatrix_Double(
+        structure: structure,
+        data: valuesPtr.baseAddress!
+    )
+    
+    return SparseFactor(SparseFactorizationCholesky, a)
+}
+```
+
+**Objective-C**:
+
+```objc
+var values = [10.0, 1.0, 2.5,           // Column 0
+              12.0, -0.3, 1.1,          // Column 1
+              9.5,                      // Column 2
+              6.0]                      // Column 3
+
+SparseMatrix_Double A = {
+    .structure = structure,
+    .data = values
+};
+
+__auto_type LLT = SparseFactor(SparseFactorizationCholesky, A);
+```
 
 If the factorization function encounters an error, the code prints an error message and terminates. You may instead want to capture the error by using the optional [`SparseSymbolicFactorOptions`](sparsesymbolicfactoroptions.md) parameter and set the [`reportError`](sparsesymbolicfactoroptions/reporterror.md) parameter to a user-supplied error-handling routine. The returned [`SparseOpaqueFactorization_Double`](sparseopaquefactorization_double.md) structure reflects the error.
 
@@ -30,15 +108,79 @@ If the factorization function encounters an error, the code prints an error mess
 
 Use the factorization to solve the equation. The right-hand-side and solution vectors are arrays that you wrap in [`DenseVector_Double`](densevector_double.md) structures. The actual values of `x` don’t matter because the function overwrites them.
 
-The solve call takes the factorization  and solves the system  as  by solving the two triangular systems:
+**Swift**:
+
+```swift
+var bValues = [ 2.20, 2.85, 2.79, 2.87 ]
+var xValues = [ 0.00, 0.00, 0.00, 0.00 ]
+```
+
+**Objective-C**:
+
+```objc
+double bValues[] = { 2.20, 2.85, 2.79, 2.87 };
+DenseVector_Double b = {
+    .count = 4,     
+    .data = bValues 
+  };
+ 
+double xValues[] = { 0.00, 0.00, 0.00, 0.00 };
+DenseVector_Double x = {
+    .count = 4,    
+    .data = xValues 
+  };
+```
+
+The solve call takes the factorization *A = LLᵀ* and solves the system *Ax = b* as *LLᵀx = b* by solving the two triangular systems:
+
+- *Ly = b*
+- *Lᵀx = y*
 
 However, you need only to supply the right-hand-side vector and the factorization.
 
 The [`SparseSolve(_:_:_:)`](sparsesolve(_:_:_:)-416bj.md) function solves the equation and populates `x` with the solution.
 
+**Swift**:
+
+```swift
+bValues.withUnsafeMutableBufferPointer { bPtr in
+    xValues.withUnsafeMutableBufferPointer { xPtr in
+        
+        let b = DenseVector_Double(
+            count: 4,
+            data: bPtr.baseAddress!
+        )
+        let x = DenseVector_Double(
+            count: 4,
+            data: xPtr.baseAddress!
+        )
+
+        SparseSolve(llt, b, x)
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+SparseSolve(LLT, b, x);
+```
+
 If the [`SparseSolve(_:_:_:)`](sparsesolve(_:_:_:)-416bj.md) function encounters an error, the code prints an error message and terminates, unless you set [`reportError`](sparsesymbolicfactoroptions/reporterror.md) on the initial call to [`SparseFactor(_:_:)`](sparsefactor(_:_:)-8gl6j.md).
 
 The following code iterates over the solution vector, `x`, and prints the solution, `x = 0.10 0.20 0.30 0.40`.
+
+**Swift**:
+
+```swift
+print("x = \(xValues)")
+```
+
+**Objective-C**:
+
+```objc
+printf("x = "); for(int i=0; i<x.count; i++) printf(" %.2f", x.data[i]); printf("\n");
+```
 
 ## See Also
 

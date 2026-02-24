@@ -18,7 +18,7 @@ When you create your project from a template, it automatically includes a defaul
 
 1. In the Project navigator, select an asset catalog.
 2. Click the Add button (+) at the bottom of the outline view.
-3. In the pop-up menu, choose  >  App Icon. Xcode creates a new app icon set or image stack with the name `AppIcon`.
+3. In the pop-up menu, choose *OS variant* > *OS variant* App Icon. Xcode creates a new app icon set or image stack with the name `AppIcon`.
 
 ##### Specify App Icon Variations
 
@@ -67,7 +67,7 @@ For design guidance specific to iOS and iPadOS, see [`Human Interface Guidelines
 
 ##### Configure the Layers of an Image Stack
 
-By default, visionOS and tvOS app icons are constructed with three layers. This is the maximum number of layers visionOS icons support but you can use up to five layers when constructing tvOS icons. To add a layer, Click the Add button (+), choose  >  App Icon Layer. To remove a layer, select the layer and click the Remove button (-).
+By default, visionOS and tvOS app icons are constructed with three layers. This is the maximum number of layers visionOS icons support but you can use up to five layers when constructing tvOS icons. To add a layer, Click the Add button (+), choose *OS variant* > *OS variant* App Icon Layer. To remove a layer, select the layer and click the Remove button (-).
 
 ![Screenshot of an asset catalog in Xcode. In the outline view, an app icon stack with the name AppIcon is selected. The detail area shows image wells for each layer of the stack with labels.](https://docs-assets.developer.apple.com/published/f83d49f055d93a97e77b6e445dc0a9a6/configuring-your-app-icon-3%402x.png)
 

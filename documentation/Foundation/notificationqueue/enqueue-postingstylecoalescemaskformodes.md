@@ -24,8 +24,8 @@ func enqueue(_ notification: Notification, postingStyle: NotificationQueue.Posti
 
 - `notification`: The notification to add to the queue.
 - `postingStyle`: The posting style for the notification. The posting style indicates when the notification queue should post the notification to its notification center.
-- `coalesceMask`: A mask indicating what criteria to use when matching attributes of   to attributes of notifications in the queue. The mask is created by combining any of the constants  ,  , and  .
-- `modes`: This parameter may be  , in which case it defaults to  .
+- `coalesceMask`: A mask indicating what criteria to use when matching attributes of `notification` to attributes of notifications in the queue. The mask is created by combining any of the constants [`none`](notificationqueue/notificationcoalescing/none.md), [`onName`](notificationqueue/notificationcoalescing/onname.md), and [`onSender`](notificationqueue/notificationcoalescing/onsender.md).
+- `modes`: The list of modes the notification may be posted in. The notification queue will only post the notification to its notification center if the run loop is in one of the modes provided in the array. This parameter may be `nil`, in which case it defaults to [`default`](runloop/mode/default.md).
 
 ## See Also
 

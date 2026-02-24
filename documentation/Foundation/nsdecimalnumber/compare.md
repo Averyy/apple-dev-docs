@@ -26,7 +26,7 @@ func compare(_ decimalNumber: NSNumber) -> ComparisonResult
 
 ## Parameters
 
-- `decimalNumber`: This value must not be  . If this value is  , the behavior is undefined and may change in future versions of macOS.
+- `decimalNumber`: The number with which to compare the receiver. This value must not be `nil`. If this value is `nil`, the behavior is undefined and may change in future versions of macOS.
 
 
 ---

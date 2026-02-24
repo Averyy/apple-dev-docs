@@ -19,6 +19,11 @@ var pixelFormat: OSType { get set }
 
 A stream supports the following pixel formats:
 
+- **`BGRA`**: Packed little endian ARGB8888.
+- **`l10r`**: Packed little endian ARGB2101010.
+- **`420v`**: Two-plane “video” range YCbCr 4:2:0.
+- **`420f`**: Two-plane “full” range YCbCr 4:2:0.
+
 ## See Also
 
 - [var colorMatrix: CFString](scstreamconfiguration/colormatrix.md)

@@ -29,7 +29,7 @@ The `AudioBufferList` must contain the same number of channels and its data buff
 ## Parameters
 
 - `range`: Range of frames to copy.
-- `bufferList`: Pre-allocated  .
+- `bufferList`: Pre-allocated `AudioBufferList`.
 
 
 ---

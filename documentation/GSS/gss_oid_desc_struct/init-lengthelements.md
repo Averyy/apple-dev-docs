@@ -20,7 +20,7 @@ init(length: OM_uint32, elements: UnsafeMutableRawPointer!)
 
 ## Parameters
 
-- `length`: The number of octets in the   array.
+- `length`: The number of octets in the `elements` array.
 - `elements`: A pointer to the beginning of an array of octets of the specified length that represent the object identifier.
 
 ## See Also

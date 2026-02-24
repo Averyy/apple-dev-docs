@@ -26,10 +26,10 @@ The minimum size, in bytes, of the buffer.
 
 ## Parameters
 
-- `scale`: The scale factor that you plan to pass to the function  .
-- `kernelFunc`: The function pointer that you plan to pass to the function  .
-- `kernelWidth`: The kernel width that you plan to pass to the function  .
-- `flags`: The flags that you plan to pass to the function  .
+- `scale`: The scale factor that you plan to pass to the function `vImageNewResamplingFilterForFunctionUsingBuffer`.
+- `kernelFunc`: The function pointer that you plan to pass to the function `vImageNewResamplingFilterForFunctionUsingBuffer`.
+- `kernelWidth`: The kernel width that you plan to pass to the function `vImageNewResamplingFilterForFunctionUsingBuffer`.
+- `flags`: The flags that you plan to pass to the function `vImageNewResamplingFilterForFunctionUsingBuffer`.
 
 ## See Also
 

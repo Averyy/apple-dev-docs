@@ -26,11 +26,11 @@ Use this initializer to create an App Shortcut for your app intent that people d
 
 ## Parameters
 
-- `intent`: The   associated with the  .
-- `phrases`: An array of   associated with the  .
-- `shortTitle`: A   representing the short title of the  .
-- `systemImageName`: A   representing the system image name for the  .
-- `parameterPresentation`: An   object associated with the  .
+- `intent`: The `AppIntent` associated with the `AppShortcut`.
+- `phrases`: An array of `AppShortcutPhrases` associated with the `AppShortcut`.
+- `shortTitle`: A `LocalizedStringResource` representing the short title of the `AppShortcut`.
+- `systemImageName`: A `String` representing the system image name for the `AppShortcut`.
+- `parameterPresentation`: An `AppShortcutParameterPresentation` object associated with the `AppShortcut`.
 
 ## See Also
 

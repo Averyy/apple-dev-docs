@@ -35,7 +35,7 @@ If the message is a response, you can also call [`CFHTTPMessageGetResponseStatus
 
 - `message`: The message to modify.
 - `newBytes`: A reference to the data to append.
-- `numBytes`: The length of the data pointed to by  .
+- `numBytes`: The length of the data pointed to by `newBytes`.
 
 ## See Also
 

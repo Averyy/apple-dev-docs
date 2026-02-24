@@ -21,7 +21,7 @@ class VNHomographicImageRegistrationRequest
 
 #### Overview
 
-Create and perform a homographic image registration request to align content in two images through a homography. A  is an isomorphism of projected spaces, a bijection that maps lines to lines.
+Create and perform a homographic image registration request to align content in two images through a homography. A *homography* is an isomorphism of projected spaces, a bijection that maps lines to lines.
 
 ## Topics
 

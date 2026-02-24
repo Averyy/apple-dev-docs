@@ -75,10 +75,10 @@ Be sure that you use computations during placement that are consistent with thos
 
 ## Parameters
 
-- `bounds`: The region that the container view’s parent allocates to the   container view, specified in the parent’s coordinate space.   Place all the container’s subviews within the region.   The size of this region matches a size that your container   previously returned from a call to the    method.
-- `proposal`: The size proposal from which the container generated the   size that the parent used to create the   parameter.   The parent might propose more than one size before calling the   placement method, but it always uses one of the proposals and the   corresponding returned size when placing the container.
-- `subviews`: A collection of proxies that represent the   views that the container arranges. Use the proxies in the collection   to get information about the subviews and to tell the subviews   where to appear.
-- `cache`: Optional storage for calculated data that you can share among   the methods of your custom layout container. See    for details.
+- `bounds`: The region that the container view’s parent allocates to the container view, specified in the parent’s coordinate space. Place all the container’s subviews within the region. The size of this region matches a size that your container previously returned from a call to the [`sizeThatFits(proposal:subviews:cache:)`](layout/sizethatfits(proposal:subviews:cache:).md) method.
+- `proposal`: The size proposal from which the container generated the size that the parent used to create the `bounds` parameter. The parent might propose more than one size before calling the placement method, but it always uses one of the proposals and the corresponding returned size when placing the container.
+- `subviews`: A collection of proxies that represent the views that the container arranges. Use the proxies in the collection to get information about the subviews and to tell the subviews where to appear.
+- `cache`: Optional storage for calculated data that you can share among the methods of your custom layout container. See [`makeCache(subviews:)`](layout/makecache(subviews:).md) for details.
 
 ## See Also
 

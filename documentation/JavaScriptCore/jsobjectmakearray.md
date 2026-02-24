@@ -30,9 +30,9 @@ The behavior of this function doesn’t exactly match the behavior of the built-
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `argumentCount`: An integer count of the number of arguments in  .
-- `arguments`: A   array of data to populate the array with. Pass   if   is  .
-- `exception`: A pointer to a   to store an exception in, if any. Pass   to discard any exception.
+- `argumentCount`: An integer count of the number of arguments in `arguments`.
+- `arguments`: A [`JSValueRef`](jsvalueref.md) array of data to populate the array with. Pass `NULL` if `argumentCount` is `0`.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 

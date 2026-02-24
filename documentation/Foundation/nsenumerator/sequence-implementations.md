@@ -6,7 +6,7 @@
 
 ### Instance Methods
 - [func makeIterator() -> NSFastEnumerationIterator](nsenumerator/makeiterator.md)
-  Return an  over the .
+  Return an *iterator* over the *enumerator*.
 
 
 ---

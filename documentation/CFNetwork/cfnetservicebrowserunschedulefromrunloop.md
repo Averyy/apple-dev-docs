@@ -29,9 +29,9 @@ This function is thread safe.
 
 ## Parameters
 
-- `browser`: The CFNetServiceBrowser that is to be unscheduled; cannot be  .
-- `runLoop`: The run loop; cannot be  .
-- `runLoopMode`: The mode from which the browser is to be unscheduled; cannot be  .
+- `browser`: The CFNetServiceBrowser that is to be unscheduled; cannot be `NULL`.
+- `runLoop`: The run loop; cannot be `NULL`.
+- `runLoopMode`: The mode from which the browser is to be unscheduled; cannot be `NULL`.
 
 ## See Also
 

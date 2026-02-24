@@ -26,7 +26,7 @@ A Boolean indicating whether or not the sample buffer’s data is ready.  True i
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
 
 ## See Also
 

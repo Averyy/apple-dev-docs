@@ -11,6 +11,10 @@ A Boolean value indicating whether the app supports two or more scenes simultane
 - Mac Catalyst 13.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 If your app supports multiple scenes, set the value of this key to [`true`](https://developer.apple.com/documentation/Swift/true). If you set the value to [`false`](https://developer.apple.com/documentation/Swift/false), UIKit never creates more than one scene for your app.

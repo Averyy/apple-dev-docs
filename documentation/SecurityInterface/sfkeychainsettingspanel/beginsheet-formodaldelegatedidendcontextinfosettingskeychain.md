@@ -26,12 +26,16 @@ The delegate method has the following signature:
 
 The parameters for the delegate method are:
 
+- **`sheet`**: The window to which the sheet was attached.
+- **`returnCode`**: The result code indicating which button the user clicked: either [`NSFileHandlingPanelOKButton`](https://developer.apple.com/documentation/AppKit/NSFileHandlingPanelOKButton) or [`NSFileHandlingPanelCancelButton`](https://developer.apple.com/documentation/AppKit/NSFileHandlingPanelCancelButton).
+- **`contextInfo`**: Client-defined contextual data that is passed in the `contextInfo` parameter of the `beginSheetForDirectory:...` method.
+
 The delegate method may dismiss the keychain settings sheet itself; if it does not, the sheet is dismissed on return from the `beginSheetForDirectory:...` method.
 
 ## Parameters
 
-- `docWindow`: The parent window to which the sheet is attached. If this parameter is  , the behavior defaults to a standalone modal window.
-- `delegate`: The delegate object in which the method specified in the   parameter is implemented.
+- `docWindow`: The parent window to which the sheet is attached. If this parameter is `nil`, the behavior defaults to a standalone modal window.
+- `delegate`: The delegate object in which the method specified in the `didEndSelector` parameter is implemented.
 - `didEndSelector`: A method selector for a delegate method called after the modal session has ended, but before the sheet has been dismissed. Implementation of this delegate method is optional.
 - `contextInfo`: A pointer to data that is passed to the delegate method. You can use this data pointer for any purpose you wish.
 - `settings`: A pointer to a keychain settings structure. Because this structure is versioned, you must preallocate it and fill in the version of the structure.

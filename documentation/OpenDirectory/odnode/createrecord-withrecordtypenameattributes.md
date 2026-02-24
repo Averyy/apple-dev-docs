@@ -29,7 +29,7 @@ The record is automatically assigned a UUID. This UUID can be overridden if one 
 
 - `inRecordType`: The record’s type.
 - `inRecordName`: The record’s name.
-- `inAttributes`: A dictionary of key-value pairs representing attributes for the record. Can be  .
+- `inAttributes`: A dictionary of key-value pairs representing attributes for the record. Can be `nil`.
 
 ## See Also
 

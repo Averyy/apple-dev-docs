@@ -26,7 +26,7 @@ This method is declared in `NSHelpManager.h`.
 
 ## Parameters
 
-- `key`: A key in your application’s   file that identifies the context-sensitive help to return.
+- `key`: A key in your application’s `Help.plist` file that identifies the context-sensitive help to return.
 
 ## See Also
 

@@ -29,7 +29,7 @@ var key_attn_bias: BNNSNDArrayDescriptor
 - [var value: BNNSMHAProjectionParameters](bnnslayerparametersmultiheadattention/value.md)
   A projection parameter structure that describes the value-related input parameters and projection.
 - [var add_zero_attn: Bool](bnnslayerparametersmultiheadattention/add_zero_attn.md)
-  A Boolean value that, if true, adds a row of zeroes to the projected  and  inputs to the calculation.
+  A Boolean value that, if true, adds a row of zeroes to the projected *K* and *V* inputs to the calculation.
 - [var value_attn_bias: BNNSNDArrayDescriptor](bnnslayerparametersmultiheadattention/value_attn_bias.md)
   An optional `d_value` x `num_heads` 2D tensor that’s added as part of the attention calculation.
 - [var output: BNNSMHAProjectionParameters](bnnslayerparametersmultiheadattention/output.md)

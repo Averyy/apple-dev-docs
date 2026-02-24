@@ -32,9 +32,9 @@ If the load operation fails, [`Model3D`](model3d.md) continues to display the pl
 ## Parameters
 
 - `name`: The name of the USD or Reality file to display.
-- `bundle`: The Bundle used to look up the model by name. If not   provided, defaults to the app’s main bundle.
-- `content`: A closure that takes the loaded model as an input, and   returns the view to show. You can return the model directly, or   modify it as needed before returning it.
-- `placeholder`: A closure that returns the view to show until the   load operation completes successfully.
+- `bundle`: The Bundle used to look up the model by name. If not provided, defaults to the app’s main bundle.
+- `content`: A closure that takes the loaded model as an input, and returns the view to show. You can return the model directly, or modify it as needed before returning it.
+- `placeholder`: A closure that returns the view to show until the load operation completes successfully.
 
 ## See Also
 

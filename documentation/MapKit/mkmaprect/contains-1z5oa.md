@@ -26,7 +26,7 @@ func contains(_ rect2: MKMapRect) -> Bool
 
 ## Parameters
 
-- `rect2`: The rectangle that   might contain.
+- `rect2`: The rectangle that `rect1` might contain.
 
 ## See Also
 

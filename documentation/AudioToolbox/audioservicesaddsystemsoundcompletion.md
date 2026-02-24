@@ -30,10 +30,10 @@ Because a system sound may play for several seconds, you might want to know when
 ## Parameters
 
 - `inSystemSoundID`: The system sound that your callback function is to respond to.
-- `inRunLoop`: The run loop in which the callback function should run. Pass   to use the main run loop.
-- `inRunLoopMode`: The mode for the run loop in which the callback functions should run. Pass   to use the default run loop mode.
+- `inRunLoop`: The run loop in which the callback function should run. Pass `NULL` to use the main run loop.
+- `inRunLoopMode`: The mode for the run loop in which the callback functions should run. Pass `NULL` to use the default run loop mode.
 - `inCompletionRoutine`: The callback function to be invoked when the specified system sound has finished playing.
-- `inClientData`: Application data to be passed to your callback function when it is invoked. Can be  .
+- `inClientData`: Application data to be passed to your callback function when it is invoked. Can be `NULL`.
 
 ## See Also
 

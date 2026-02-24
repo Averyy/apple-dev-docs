@@ -20,7 +20,7 @@ static var withoutChanges: NSFileCoordinator.ReadingOptions { get }
 
 #### Discussion
 
-Specify this constant if your code does not need other objects to save changes first. If you do  specify this constant, the [`savePresentedItemChanges(completionHandler:)`](nsfilepresenter/savepresenteditemchanges(completionhandler:).md) method of relevant file presenters is called before your code reads the item.
+Specify this constant if your code does not need other objects to save changes first. If you do *not* specify this constant, the [`savePresentedItemChanges(completionHandler:)`](nsfilepresenter/savepresenteditemchanges(completionhandler:).md) method of relevant file presenters is called before your code reads the item.
 
 ## See Also
 

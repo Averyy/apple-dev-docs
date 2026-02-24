@@ -22,7 +22,7 @@ init<SourceType>(buffer: UnsafeBufferPointer<SourceType>)
 
 ## Parameters
 
-- `buffer`: A buffer pointer to copy. The size is calculated from   and  .
+- `buffer`: A buffer pointer to copy. The size is calculated from `SourceType` and `buffer.count`.
 
 ## See Also
 

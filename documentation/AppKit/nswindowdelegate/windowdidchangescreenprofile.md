@@ -23,7 +23,7 @@ If your app runs in macOS 10.7.3 or later, you should instead watch for the noti
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named [`didChangeScreenProfileNotification`](nswindow/didchangescreenprofilenotification.md).
 
 ## See Also
 

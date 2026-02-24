@@ -3,7 +3,7 @@
 **Framework**: GameplayKit  
 **Kind**: property
 
-The mean value of the distribution (also called the  or ).
+The mean value of the distribution (also called the *expected value* or *median*).
 
 **Availability**:
 - iOS 9.0+
@@ -28,7 +28,7 @@ This property is read-only—its value is always the midpoint between the values
 ## See Also
 
 - [var deviation: Float](gkgaussiandistribution/deviation.md)
-  The standard deviation of the distribution (also called ).
+  The standard deviation of the distribution (also called *sigma*).
 
 
 ---

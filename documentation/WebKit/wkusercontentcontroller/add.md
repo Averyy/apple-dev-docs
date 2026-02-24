@@ -24,7 +24,7 @@ Call this method to apply a set of content filtering rules to your web view’s 
 
 ## Parameters
 
-- `contentRuleList`: The rule list to add. Create and retrieve rules lists using a   object.
+- `contentRuleList`: The rule list to add. Create and retrieve rules lists using a `WKContentExtensionStore` object.
 
 ## See Also
 

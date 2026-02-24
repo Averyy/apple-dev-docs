@@ -8,6 +8,12 @@ A Boolean value that indicates whether an app can use the Apple Neural Engine to
 **Availability**:
 - visionOS 2.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 ## See Also
 
 - [Increased performance headroom](entitlements/com.apple.developer.app-compute-category.md)

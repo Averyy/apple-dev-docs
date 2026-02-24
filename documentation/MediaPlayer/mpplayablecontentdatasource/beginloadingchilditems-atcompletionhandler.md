@@ -24,7 +24,7 @@ Call this method to start asynchronous batch loading of media items. The app can
 ## Parameters
 
 - `indexPath`: The index of the current item.
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: A block to be called after all loading is completed. The block receives the following parameter: - ***error***: Contains an error message if there was an error trying to load the children of the indicated item; otherwise, contains `nil`.
 
 ## See Also
 

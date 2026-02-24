@@ -22,7 +22,7 @@ In your `creator` block, create the window controller using your custom construc
 
 ## Parameters
 
-- `creator`: If you return   from your block, this method creates the window controller using the default   method.
+- `creator`: A block that contains your custom creation code for the window controller. Use this block to create the window controller, initialize it with the provided coder object and any custom information you require, and return the result. This block returns a new window controller object and takes the following parameter: - **coder**: The coder object that contains the storyboard data to use when configuring the window controller. If you return `nil` from your block, this method creates the window controller using the default [`init(coder:)`](nswindowcontroller/init(coder:).md) method.
 
 ## See Also
 

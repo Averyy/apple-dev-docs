@@ -6,6 +6,18 @@ The layout manager’s current layout options.
 
 #### Overview
 
+**Swift**:
+
+```swift
+var layoutOptions: Int { get }
+```
+
+**Objective-C**:
+
+```objc
+@property(readonly) NSUInteger layoutOptions
+```
+
 This property is part of the `NSGlyphStorage` protocol, for use by the glyph generator. It enables the glyph generator to ask which options the layout manager requests.
 
 ## See Also

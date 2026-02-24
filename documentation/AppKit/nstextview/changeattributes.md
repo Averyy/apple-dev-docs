@@ -20,7 +20,7 @@ This method changes the attributes by invoking [`convertAttributes(_:)`](nsfontm
 
 ## Parameters
 
-- `sender`: The control that sent the message. Must respond to  .
+- `sender`: The control that sent the message. Must respond to `convertAttributes:`.
 
 ## See Also
 

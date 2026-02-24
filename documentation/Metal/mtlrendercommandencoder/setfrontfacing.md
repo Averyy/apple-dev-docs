@@ -28,7 +28,7 @@ The winding direction of a primitive determines whether the render pass culls it
 
 ## Parameters
 
-- `frontFacingWinding`: An   value that configures how the render pipeline defines which side of a primitive is its front.
+- `frontFacingWinding`: An [`MTLWinding`](mtlwinding.md) value that configures how the render pipeline defines which side of a primitive is its front.
 
 ## See Also
 

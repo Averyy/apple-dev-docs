@@ -36,7 +36,7 @@ This method is equivalent to calling the following:
 ## Parameters
 
 - `result`: The result value to pass to any reactions.
-- `context`: The   the resulting   belongs to.
+- `context`: The [`JSContext`](jscontext.md) the resulting [`JSValue`](jsvalue.md) belongs to.
 
 ## See Also
 

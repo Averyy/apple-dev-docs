@@ -31,7 +31,7 @@ The date components of the specified date.
 ## Parameters
 
 - `components`: The components to return.
-- `date`: The   to use.
+- `date`: The `Date` to use.
 
 ## See Also
 

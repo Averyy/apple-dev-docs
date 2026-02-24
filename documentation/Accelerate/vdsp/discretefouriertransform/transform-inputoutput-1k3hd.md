@@ -22,8 +22,8 @@ func transform<U, V>(input: U, output: inout V) where U : AccelerateBuffer, V : 
 
 ## Parameters
 
-- `input`: An array of   structures that contains the input.
-- `output`: An array of   structures that contains the output.
+- `input`: An array of [`DSPComplex`](dspcomplex.md) structures that contains the input.
+- `output`: An array of [`DSPComplex`](dspcomplex.md) structures that contains the output.
 
 ## See Also
 

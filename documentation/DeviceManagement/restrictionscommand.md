@@ -28,6 +28,11 @@ object RestrictionsCommand
 - [object RestrictionsCommand.Command](restrictionscommand/command-data.dictionary.md)
   The command to get a list of restrictions on the device.
 
+## Properties
+
+- `Command` (RestrictionsCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object RestrictionsResponse](restrictionsresponse.md)

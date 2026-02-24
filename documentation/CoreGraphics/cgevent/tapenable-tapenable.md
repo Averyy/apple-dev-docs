@@ -22,7 +22,7 @@ Event taps are normally enabled when created. If an event tap becomes unresponsi
 ## Parameters
 
 - `tap`: The event tap to enable or disable.
-- `enable`: Pass   to enable the event tap. To disable it, pass  .
+- `enable`: Pass `true` to enable the event tap. To disable it, pass `false`.
 
 ## See Also
 

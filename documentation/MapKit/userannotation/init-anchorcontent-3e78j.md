@@ -23,7 +23,7 @@ Create an annotation that displays the person’s current location of the user u
 
 ## Parameters
 
-- `anchor`: How to anchor the user location indicator around the person’s location. The default is  .
+- `anchor`: How to anchor the user location indicator around the person’s location. The default is [`center`](https://developer.apple.com/documentation/SwiftUI/UnitPoint/center).
 - `content`: The custom view used to indicate the person’s location.
 
 ## See Also

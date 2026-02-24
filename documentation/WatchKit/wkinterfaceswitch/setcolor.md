@@ -16,7 +16,7 @@ func setColor(_ color: UIColor?)
 
 ## Parameters
 
-- `color`: The tint color to use for the switch. Specify   to use the default switch color.
+- `color`: The tint color to use for the switch. Specify `nil` to use the default switch color.
 
 ## See Also
 

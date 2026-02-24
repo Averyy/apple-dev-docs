@@ -6,7 +6,7 @@ Automatically record data change operations that people perform in your SwiftUI 
 
 #### Overview
 
-People who interact with apps to change data typically expect the app to provide a way to revert changes that they no longer wish to make. To provide this  support, apps can use [`UndoManager`](https://developer.apple.com/documentation/Foundation/UndoManager), which can:
+People who interact with apps to change data typically expect the app to provide a way to revert changes that they no longer wish to make. To provide this *undo* support, apps can use [`UndoManager`](https://developer.apple.com/documentation/Foundation/UndoManager), which can:
 
 - Record operations that a person performs while using the app
 - Provide undo capability to revert the last operation

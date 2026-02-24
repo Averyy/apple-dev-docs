@@ -26,8 +26,8 @@ Call this method when generating a new token value for an account. To update the
 
 ## Parameters
 
-- `newToken`: The new token value to store in the person’s Apple Account. Your app determines the contents of this string using a mechanism you determine fitting to identify the account. In addition, ensure its value is of sufficient length, complexity, and security. For more information on setting this property, see  .
-- `updateContext`: The object the framework provides that reflects the person’s choice in the authorization prompt; pass the result of the   method.
+- `newToken`: The new token value to store in the person’s Apple Account. Your app determines the contents of this string using a mechanism you determine fitting to identify the account. In addition, ensure its value is of sufficient length, complexity, and security. For more information on setting this property, see [`value`](vsautosignintoken/value.md).
+- `updateContext`: The object the framework provides that reflects the person’s choice in the authorization prompt; pass the result of the [`requestAutoSignInAuthorization()`](vsuseraccountmanager/requestautosigninauthorization().md) method.
 
 ## See Also
 

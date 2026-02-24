@@ -40,7 +40,7 @@ Every vertical alignment instance that you create needs a unique identifier. For
 
 ## Parameters
 
-- `id`: The type of an identifier that uniquely identifies a   vertical alignment.
+- `id`: The type of an identifier that uniquely identifies a vertical alignment.
 
 ## See Also
 

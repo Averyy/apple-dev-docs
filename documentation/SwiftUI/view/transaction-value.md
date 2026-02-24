@@ -72,7 +72,7 @@ struct TransactionExample: View {
 ## Parameters
 
 - `value`: A value to monitor for changes.
-- `transform`: The transformation to apply to transactions   within this view.
+- `transform`: The transformation to apply to transactions within this view.
 
 ## See Also
 

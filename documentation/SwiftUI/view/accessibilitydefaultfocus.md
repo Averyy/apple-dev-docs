@@ -42,7 +42,7 @@ var body: some View {
 
 ## Parameters
 
-- `binding`: An accessibility focus state binding to update when   evaluating default accessibility focus.
+- `binding`: An accessibility focus state binding to update when evaluating default accessibility focus.
 - `value`: The value to set the binding to during evaluation.
 
 

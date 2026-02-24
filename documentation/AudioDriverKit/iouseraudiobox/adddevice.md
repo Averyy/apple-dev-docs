@@ -26,7 +26,7 @@ If adding the device succeeds, the device’s reference count increments by one.
 
 ## Parameters
 
-- `in_device`: The   to associate with the box.
+- `in_device`: The [`IOUserAudioDevice`](iouseraudiodevice.md) to associate with the box.
 
 ## See Also
 

@@ -34,7 +34,7 @@ let categories = await center.notificationCategories()
 
 ## Parameters
 
-- `completionHandler`: The block to execute asynchronously with the results. This block may be executed on a background thread. The block has no return value and takes the following parameter:
+- `completionHandler`: The block to execute asynchronously with the results. This block may be executed on a background thread. The block has no return value and takes the following parameter: - **categories**: The set of [`UNNotificationCategory`](unnotificationcategory.md) objects containing your registered notification types. If your app has not yet registered any categories, this parameter is an empty set.
 
 ## See Also
 

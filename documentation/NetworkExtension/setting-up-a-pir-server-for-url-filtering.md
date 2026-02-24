@@ -43,6 +43,9 @@ container build -t pir-server .
 
 Running the server in place uses the contents of the provided `data` directory, which contains two items:
 
+- **`url-config.json`**: A configuration file that identifies the database contents and related parameters.
+- **`input.txtpb`**: The actual database contents.
+
 To customize the database with your own list of filtered URLs, run the `BloomFilterTool` as described in [`Using the Bloom filter tool to configure a URL filter`](using-the-bloom-filter-tool.md). You can take the `input.txtpb` database file created by that tool and use it to replace the default version in the `data` directory.
 
 ##### Run the Server

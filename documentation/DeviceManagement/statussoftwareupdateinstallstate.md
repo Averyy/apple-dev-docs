@@ -31,6 +31,15 @@ object StatusSoftwareUpdateInstallState
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS |
 | Allowed in user scope | NA |
 
+## Properties
+
+- `softwareupdate.install-state` (string) *(required)*: The software update install status, which has the following values: - `none`: There’s no software update pending, and any previous software update succeeded.
+- `waiting’: A software update is waiting to start.
+- `downloading`: The system is downloading data for a software update.
+- `prepared`: The system prepared the software update and it’s ready for installation.
+- `installing`: The system is installing the software update.
+- `failed`: The software update failed.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

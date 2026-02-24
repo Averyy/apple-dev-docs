@@ -21,7 +21,7 @@ There are no restrictions on the channel numbers that can be used.
 
 ## Parameters
 
-- `channels`: An array of two UInt32s, the first for the left channel, the second   for the right channel, that indicate the channel numbers to use for stereo output IO on the device.
+- `channels`: An array of two UInt32s, the first for the left channel, the second for the right channel, that indicate the channel numbers to use for stereo output IO on the device.
 
 
 ---

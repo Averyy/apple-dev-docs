@@ -6,7 +6,7 @@ Add an App Clip target to your Xcode project and share code between the App Clip
 
 #### Overview
 
-An  is a lightweight version of your app that offers some of its functionality when and where people need it or that people use to try out your full app. With Xcode, you can add an App Clip target to your app’s project, share code and assets between the App Clip and the full app, and build, run, and debug your App Clip.
+An *App Clip* is a lightweight version of your app that offers some of its functionality when and where people need it or that people use to try out your full app. With Xcode, you can add an App Clip target to your app’s project, share code and assets between the App Clip and the full app, and build, run, and debug your App Clip.
 
 ##### Add an App Clip Target
 

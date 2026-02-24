@@ -22,7 +22,7 @@ func dispatchThreadsPerTile(_ threadsPerTile: MTLSize)
 
 ## Parameters
 
-- `threadsPerTile`: A   instance that represents the number of threads the render pass uses per tile.   Set the size’s   and   properties to values that are less   than or equal to   and  , respectively. Some GPU families   only support square tile dispatches and require the same value for width and height.   Set   to  .
+- `threadsPerTile`: A [`MTLSize`](mtlsize.md) instance that represents the number of threads the render pass uses per tile. Set the size’s [`width`](mtlsize/width.md) and [`height`](mtlsize/height.md) properties to values that are less than or equal to [`tileWidth`](mtl4rendercommandencoder/tilewidth.md) and [`tileHeight`](mtl4rendercommandencoder/tileheight.md), respectively. Some GPU families only support square tile dispatches and require the same value for width and height. Set [`depth`](mtlsize/depth.md) to `1`.
 
 ## See Also
 

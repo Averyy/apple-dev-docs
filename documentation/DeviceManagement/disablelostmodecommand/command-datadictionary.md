@@ -15,6 +15,11 @@ The command to take the device out of Lost Mode.
 object DisableLostModeCommand.Command
 ```
 
+## Properties
+
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

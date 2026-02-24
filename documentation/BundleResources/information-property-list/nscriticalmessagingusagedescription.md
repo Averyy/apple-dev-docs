@@ -10,6 +10,10 @@ A message that tells people why the app needs to send SMS messages.
 - iPadOS 18.2+
 - watchOS 11.2+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [NSStickerSharingLevel](information-property-list/nsstickersharinglevel.md)

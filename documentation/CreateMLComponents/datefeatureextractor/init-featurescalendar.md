@@ -23,7 +23,7 @@ init(features: DateFeatures, calendar: Calendar = Calendar.current)
 ## Parameters
 
 - `features`: The date and time features.
-- `calendar`: The calendar to use, defaults to  .
+- `calendar`: The calendar to use, defaults to `Calendar.current`.
 
 
 ---

@@ -27,7 +27,7 @@ In your animator object, implement the [`transitionDuration(using:)`](uiviewcont
 
 Create your animator object from a transitioning delegate — an object that conforms to the [`UIViewControllerTransitioningDelegate`](uiviewcontrollertransitioningdelegate.md) protocol. When presenting a view controller, set the presentation style to [`UIModalPresentationStyle.custom`](uimodalpresentationstyle/custom.md) and assign your transitioning delegate to the view controller’s [`transitioningDelegate`](uiviewcontroller/transitioningdelegate.md) property. The view controller retrieves your animator object from the transitioning delegate and uses it to perform the animations. You can provide separate animator objects for presenting and dismissing the view controller.
 
-To add user interaction to a view controller transition, you must use an animator object together with an ** **— a custom object that adopts the [`UIViewControllerInteractiveTransitioning`](uiviewcontrollerinteractivetransitioning.md) protocol. For more on defining interactive transitions, see [`UIViewControllerInteractiveTransitioning`](uiviewcontrollerinteractivetransitioning.md).
+To add user interaction to a view controller transition, you must use an animator object together with an *interactive animator object*** **— a custom object that adopts the [`UIViewControllerInteractiveTransitioning`](uiviewcontrollerinteractivetransitioning.md) protocol. For more on defining interactive transitions, see [`UIViewControllerInteractiveTransitioning`](uiviewcontrollerinteractivetransitioning.md).
 
 ## Topics
 

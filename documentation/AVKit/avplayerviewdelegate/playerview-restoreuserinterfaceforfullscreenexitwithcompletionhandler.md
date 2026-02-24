@@ -17,7 +17,7 @@ optional func playerViewRestoreUserInterfaceForFullScreenExit(_ playerView: AVPl
 ## Parameters
 
 - `playerView`: The player view.
-- `completionHandler`: You must call the completion handler with a value of   to allow the system to finish restoring your app’s user interface.
+- `completionHandler`: You must call the completion handler with a value of `true` to allow the system to finish restoring your app’s user interface.
 
 ## See Also
 

@@ -17,6 +17,12 @@ The command to force validation of developer and universal provisioning profiles
 object ValidateApplicationsCommand.Command
 ```
 
+## Properties
+
+- `Identifiers` ([string]): The bundle identifiers of the enterprise apps to include for validation of associated provisioning profiles, if you choose to provide them. Otherwise, validation occurs for the provisioning profiles for the installed managed apps.
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

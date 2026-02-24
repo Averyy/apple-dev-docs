@@ -21,7 +21,7 @@ Most of the differences among document-content kind have to do with the handling
 
 ## Parameters
 
-- `kind`: An   constant identifying a kind of document content. The valid NSXMLDocumentContentKind constants are  ,  ,  , and  .
+- `kind`: An `enum` constant identifying a kind of document content. The valid NSXMLDocumentContentKind constants are `NSXMLDocumentXMLKind`, `NSXMLDocumentXHTMLKind`, `NSXMLDocumentHTMLKind`, and `NSXMLDocumentTextKind`.
 
 ## See Also
 

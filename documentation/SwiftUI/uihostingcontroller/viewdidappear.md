@@ -25,7 +25,7 @@ SwiftUI calls this method after adding the hosting controller’s root view to t
 
 ## Parameters
 
-- `animated`: If  , the view is being added   using an animation.
+- `animated`: If `true`, the view is being added using an animation.
 
 ## See Also
 

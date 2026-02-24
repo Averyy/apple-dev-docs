@@ -30,8 +30,8 @@ An index in the string where it is appropriate to insert a hyphen, if one exists
 - `location`: An index in the string. If a valid hyphen index is returned, it will be before this index.
 - `limitRange`: The range of characters within the string to search. If the range location or end point (defined by the location plus length minus 1) are outside the index space of the string (0 to N-1 inclusive, where N is the length of the string), the behavior is undefined. If the range length is negative, the behavior is undefined. The range may be empty (length 0), in which case no hyphen location is generated.
 - `options`: Reserved for future use.
-- `locale`: A valid locale that specifies which language’s hyphenation conventions to use. Hyphenation data is not available for all locales. You can use   to test for availability of hyphenation data.
-- `character`: The suggested hyphen character to insert. Pass   if you do not need this information.
+- `locale`: A valid locale that specifies which language’s hyphenation conventions to use. Hyphenation data is not available for all locales. You can use [`CFStringIsHyphenationAvailableForLocale(_:)`](cfstringishyphenationavailableforlocale(_:).md) to test for availability of hyphenation data.
+- `character`: The suggested hyphen character to insert. Pass `NULL` if you do not need this information.
 
 ## See Also
 

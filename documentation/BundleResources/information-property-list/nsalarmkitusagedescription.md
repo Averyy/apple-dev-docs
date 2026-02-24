@@ -10,6 +10,10 @@ A message that tells people why the app is requesting access to schedule alarms.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Include a descriptive string explaining why your app schedules alarms. This string appears in the system prompt when requesting authorization. If the `NSAlarmKitUsageDescription` key is missing or its value is an empty string, your app can’t schedule alarms with AlarmKit.

@@ -24,7 +24,7 @@ A set of [`UITouch`](uitouch.md) objects representing the touches that belong to
 
 ## Parameters
 
-- `window`: The   object in which the touches originally occurred.
+- `window`: The [`UIWindow`](uiwindow.md) object in which the touches originally occurred.
 
 ## See Also
 

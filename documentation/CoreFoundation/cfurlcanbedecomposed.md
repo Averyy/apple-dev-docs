@@ -32,7 +32,7 @@ Relative URLs are permitted to have only paths (or a variety of other configurat
 
 ## Parameters
 
-- `anURL`: The   object to test.
+- `anURL`: The `CFURL` object to test.
 
 ## See Also
 

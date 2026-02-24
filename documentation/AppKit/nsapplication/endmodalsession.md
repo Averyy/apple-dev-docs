@@ -16,7 +16,7 @@ func endModalSession(_ session: NSApplication.ModalSession)
 
 ## Parameters
 
-- `session`: A modal session structure returned by a previous invocation of  .
+- `session`: A modal session structure returned by a previous invocation of [`beginModalSession(for:)`](nsapplication/beginmodalsession(for:).md).
 
 ## See Also
 

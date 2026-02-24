@@ -26,7 +26,7 @@ Optional. If this method is not implemented, the default certificate evaluation 
 ## Parameters
 
 - `connection`: The connection sending this message
-- `completion`: The caller is responsible for keeping the argument object(s) valid for the duration of the completion handler invocation.
+- `completion`: The completion handler for passing an identity and certificate chain to the connection. The `identity` is required and must not be `nil`. The `certificateChain` argument is optional, and is an array of one or more [`SecCertificate`](https://developer.apple.com/documentation/Security/SecCertificate) objects. The certificate chain must contain objects of type `SecCertificateRef` only. If the certificate chain is set, it will be used. Otherwise, the leaf certificate will be extracted from the [`SecIdentity`](https://developer.apple.com/documentation/Security/SecIdentity) object and will be used for authentication. The caller is responsible for keeping the argument object(s) valid for the duration of the completion handler invocation.
 
 ## See Also
 

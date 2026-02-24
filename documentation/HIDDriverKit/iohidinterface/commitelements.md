@@ -21,8 +21,8 @@ virtual kern_return_t commitElements(OSArray *elements, IOHIDElementCommitDirect
 
 ## Parameters
 
-- `elements`: An array of   objects.
-- `direction`: The direction in which to commit changes. Specify   to read the element data from the device. Specify   to write the element data to the device.
+- `elements`: An array of [`IOHIDElement`](iohidelement.md) objects.
+- `direction`: The direction in which to commit changes. Specify [`kIOHIDElementCommitDirectionIn`](iohidelementcommitdirection/kiohidelementcommitdirectionin.md) to read the element data from the device. Specify [`kIOHIDElementCommitDirectionOut`](iohidelementcommitdirection/kiohidelementcommitdirectionout.md) to write the element data to the device.
 
 ## See Also
 

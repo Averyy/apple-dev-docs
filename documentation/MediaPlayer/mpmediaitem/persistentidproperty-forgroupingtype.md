@@ -27,6 +27,18 @@ Use this convenience method to obtain the key for a specific persistent identifi
 
 For example, the following statement returns the persistent identifier key for the album grouping type:
 
+**Swift**:
+
+```swift
+let albumIDKey = [MPMediaItem.persistentIDProperty(forGroupingType: MPMediaGrouping.album)]
+```
+
+**Objective-C**:
+
+```objc
+NSString *albumIDKey = [MPMediaItem persistentIDPropertyForGroupingType: MPMediaGroupingAlbum];
+```
+
 You could then obtain the specific persistent ID that you want by using the [`value(forProperty:)`](mpmediaentity/value(forproperty:).md) method. [`MPMediaGrouping`](mpmediagrouping.md) describes grouping keys.
 
 ## Parameters

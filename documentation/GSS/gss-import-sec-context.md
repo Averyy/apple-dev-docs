@@ -29,8 +29,8 @@ You can import an interprocess token only once. After you have imported it, rele
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
-- `interprocess_token`: The token created by a call to  .
-- `context_handle`: A pointer the function uses to return the imported context. Release the context with the   function when you are done with it.
+- `interprocess_token`: The token created by a call to [`gss_export_sec_context(_:_:_:)`](gss_export_sec_context(_:_:_:).md).
+- `context_handle`: A pointer the function uses to return the imported context. Release the context with the [`gss_delete_sec_context(_:_:_:)`](gss_delete_sec_context(_:_:_:).md) function when you are done with it.
 
 ## See Also
 

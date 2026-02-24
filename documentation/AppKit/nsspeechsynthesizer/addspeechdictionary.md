@@ -20,7 +20,7 @@ See the discussion of [`UseSpeechDictionary(_:_:)`](https://developer.apple.com/
 
 ## Parameters
 
-- `speechDictionary`: Speech dictionary to add to the receiver’s dictionaries. The key-value pairs are listed in  .
+- `speechDictionary`: Speech dictionary to add to the receiver’s dictionaries. The key-value pairs are listed in `Speech Dictionary Properties Keys`.
 
 ## See Also
 

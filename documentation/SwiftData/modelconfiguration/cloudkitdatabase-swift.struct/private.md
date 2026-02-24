@@ -23,7 +23,7 @@ static func `private`(_ privateDBName: String) -> ModelConfiguration.CloudKitDat
 
 ## Parameters
 
-- `privateDBName`: The identifier of the iCloud ubiquity container to use. You   find these in the iCloud capabilities section of your Xcode project. For more   information, see  .
+- `privateDBName`: The identifier of the iCloud ubiquity container to use. You find these in the iCloud capabilities section of your Xcode project. For more information, see [`Configuring iCloud services`](https://developer.apple.com/documentation/Xcode/configuring-icloud-services).
 
 ## See Also
 

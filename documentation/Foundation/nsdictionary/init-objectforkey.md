@@ -26,8 +26,8 @@ A new dictionary containing a single object, `object`, for a single key, `aKey`.
 
 ## Parameters
 
-- `object`: If this value is  , an   is raised.
-- `key`: If this value is  , an   is raised.
+- `object`: The value corresponding to `aKey`. If this value is `nil`, an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md) is raised.
+- `key`: The key for `anObject`. If this value is `nil`, an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md) is raised.
 
 ## See Also
 

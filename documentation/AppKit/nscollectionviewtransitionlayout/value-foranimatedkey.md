@@ -24,7 +24,7 @@ Use this method to retrieve floating-point values that relate to laying out the 
 
 ## Parameters
 
-- `key`: A key whose value you set previously using the   method.
+- `key`: A key whose value you set previously using the [`updateValue(_:forAnimatedKey:)`](nscollectionviewtransitionlayout/updatevalue(_:foranimatedkey:).md) method.
 
 ## See Also
 

@@ -13,6 +13,12 @@ The localizations handled manually by your app.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string 
+
+**Default**: `en`
+
 ## See Also
 
 - [CFBundleDevelopmentRegion](information-property-list/cfbundledevelopmentregion.md)

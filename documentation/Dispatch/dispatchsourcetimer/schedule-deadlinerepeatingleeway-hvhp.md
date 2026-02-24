@@ -32,8 +32,8 @@ Calling this method on a cancelled dispatch source has no effect.
 ## Parameters
 
 - `deadline`: The Mach absolute time at which to execute the dispatch source’s event handler.
-- `interval`: The repeat interval for the timer, specified as a   value. Specify   if you want the timer to fire only once.
-- `leeway`: The maximum amount of time after   by which the system may delay the delivery of the timer event.
+- `interval`: The repeat interval for the timer, specified as a [`DispatchTimeInterval`](dispatchtimeinterval.md) value. Specify [`DispatchTimeInterval.never`](dispatchtimeinterval/never.md) if you want the timer to fire only once.
+- `leeway`: The maximum amount of time after `deadline` by which the system may delay the delivery of the timer event.
 
 ## See Also
 

@@ -13,9 +13,13 @@ The entitlement for accessing the user-assigned device name instead of a generic
 - visionOS 1.0+
 - watchOS 9.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
-In iOS, the  is available in the Settings app under General > About > Name. In iOS 15 and earlier, the [`name`](https://developer.apple.com/documentation/UIKit/UIDevice/name) property returns this name. In iOS 16 and later, the [`name`](https://developer.apple.com/documentation/UIKit/UIDevice/name) property returns a generic device name by default instead.
+In iOS, the *user-assigned device name* is available in the Settings app under General > About > Name. In iOS 15 and earlier, the [`name`](https://developer.apple.com/documentation/UIKit/UIDevice/name) property returns this name. In iOS 16 and later, the [`name`](https://developer.apple.com/documentation/UIKit/UIDevice/name) property returns a generic device name by default instead.
 
 To access the user-assigned device name through the [`name`](https://developer.apple.com/documentation/UIKit/UIDevice/name) property in iOS 16 and later, you must be assigned this entitlement. To request the entitlement, the user-assigned device name must be necessary to power a core feature of the app and must meet all of the following criteria:
 

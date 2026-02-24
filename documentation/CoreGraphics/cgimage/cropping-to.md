@@ -42,6 +42,65 @@ If `W` and `H` are the width and height of image, respectively, then the point `
 
 The resulting image retains a reference to the original image, which means you may release the original image after calling this function.  In Swift, you do not need to release the original image reference explicitly.
 
+**Swift**:
+
+```swift
+    func cropImage(_ inputImage: UIImage, toRect cropRect: CGRect, viewWidth: CGFloat, viewHeight: CGFloat) -> UIImage? 
+{    
+    let imageViewScale = max(inputImage.size.width / viewWidth,
+                             inputImage.size.height / viewHeight)
+
+
+    // Scale cropRect to handle images larger than shown-on-screen size
+    let cropZone = CGRect(x:cropRect.origin.x * imageViewScale,
+                          y:cropRect.origin.y * imageViewScale,
+                          width:cropRect.size.width * imageViewScale,
+                          height:cropRect.size.height * imageViewScale)
+
+
+    // Perform cropping in Core Graphics
+    guard let cutImageRef: CGImage = inputImage.cgImage?.cropping(to:cropZone)
+    else {
+        return nil
+    }
+
+
+    // Return image to UIImage
+    let croppedImage: UIImage = UIImage(cgImage: cutImageRef)
+    return croppedImage
+}
+```
+
+**Objective-C**:
+
+```objc
+- (UIImage*) cropImage:(UIImage*)inputImage
+                toRect:(CGRect)cropRect
+             viewWidth:(CGFloat)viewWidth
+            viewHeight:(CGFloat)viewHeight
+{
+    // viewWidth, viewHeight are dimensions of imageView
+    const CGFloat imageViewScale = MAX(inputImage.size.width/_viewWidth, inputImage.size.height/_viewHeight);
+
+    // Scale cropRect to handle images larger than shown-on-screen size
+    cropRect.origin.x *= imageViewScale;
+    cropRect.origin.y *= imageViewScale;
+    cropRect.size.width *= imageViewScale;
+    cropRect.size.height *= imageViewScale;
+    
+    // Perform cropping in Core Graphics
+    CGImageRef cutImageRef = CGImageCreateWithImageInRect(inputImage.CGImage, cropRect);
+    
+    // Convert back to UIImage
+    UIImage* croppedImage = [UIImage imageWithCGImage:cutImageRef];
+    
+    // Clean up reference pointers
+    CGImageRelease(cutImageRef);
+    
+    return croppedImage;
+}
+```
+
 If you already use [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage), or if you are post-processing images as [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) data in Core Image, such as chaining together multiple filters to the cropped result, it may be more efficient to crop [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) directly in the Core Image framework using the `CICrop` filter; in this case, use the convenience function [`cropped(to:)`](https://developer.apple.com/documentation/CoreImage/CIImage/cropped(to:)).
 
 ## Parameters

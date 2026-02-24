@@ -20,8 +20,8 @@ A text provider initialized with the specified content.
 
 ## Parameters
 
-- `text`: The text that you want to display. This value is assigned to the   property of your text provider object.
-- `shortText`: A shorter version of the value in the   parameter that conveys the same information.
+- `text`: The text that you want to display. This value is assigned to the [`text`](clksimpletextprovider/text.md) property of your text provider object.
+- `shortText`: A shorter version of the value in the `text` parameter that conveys the same information.
 
 ## See Also
 

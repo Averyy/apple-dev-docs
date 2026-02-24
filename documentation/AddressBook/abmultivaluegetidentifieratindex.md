@@ -23,7 +23,7 @@ Identifier of the value at `index` within `multiValue`.
 ## Parameters
 
 - `multiValue`: The multivalue property with the identifier to return.
-- `index`: Location of the value within   whose identifier is being returned.
+- `index`: Location of the value within `multiValue` whose identifier is being returned.
 
 ## See Also
 

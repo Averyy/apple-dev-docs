@@ -20,10 +20,10 @@ Returns [`kCVReturnSuccess`](kcvreturnsuccess.md) on success.
 
 ## Parameters
 
-- `allocator`: The   to use for allocating the   object.  May be  .
+- `allocator`: The `CFAllocatorRef` to use for allocating the `CVOpenGLTexture` object.  May be `NULL`.
 - `textureCache`: The texture cache object that will manage the texture.
-- `sourceImage`: The source   for which to create an  .
-- `attributes`: The desired buffer attributes for the  .
+- `sourceImage`: The source `CVImageBuffer` for which to create an `CVOpenGLTexture`.
+- `attributes`: *This parameter is not currently supported and is for future use only.* The desired buffer attributes for the `CVOpenGLTexture`.
 - `textureOut`: Upon return, contains the newly created texture.
 
 ## See Also

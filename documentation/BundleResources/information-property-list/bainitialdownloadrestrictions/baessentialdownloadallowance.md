@@ -13,6 +13,10 @@ The combined, maximum size of the essential asset download files.
 - tvOS 18.4+
 - visionOS 2.4+
 
+
+
+**Type**: integer
+
 #### Discussion
 
 If you compress the essential assets, use the compressed file sizes that the system downloads, not the uncompressed file sizes, when providing this value. This key is required to use Background Assets.

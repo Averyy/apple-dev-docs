@@ -23,8 +23,8 @@ func CFAttributedStringReplaceAttributedString(_ aStr: CFMutableAttributedString
 ## Parameters
 
 - `aStr`: The mutable attributed string to modify.
-- `range`: The range of   to be modified.   must not specify characters outside the bounds of  .
-- `replacement`: The attributed string to replace the contents of   in  .
+- `range`: The range of `aStr` to be modified. `range` must not specify characters outside the bounds of `aStr`.
+- `replacement`: The attributed string to replace the contents of `aStr` in `range`.
 
 ## See Also
 

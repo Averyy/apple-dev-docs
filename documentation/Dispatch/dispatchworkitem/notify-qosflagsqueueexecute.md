@@ -22,8 +22,8 @@ func notify(qos: DispatchQoS = .unspecified, flags: DispatchWorkItemFlags = [], 
 
 ## Parameters
 
-- `qos`: The quality-of-service class to use when prioritizing the work item’s execution. For a list of possible values, see  .
-- `flags`: Configuration flags for the work item. For a list of possible values, see  .
+- `qos`: The quality-of-service class to use when prioritizing the work item’s execution. For a list of possible values, see [`DispatchQoS`](dispatchqos.md).
+- `flags`: Configuration flags for the work item. For a list of possible values, see [`DispatchWorkItemFlags`](dispatchworkitemflags.md).
 - `queue`: The queue on which to execute the work item in the execute parameter.
 - `execute`: The work item to execute after the completion of the current work item.
 

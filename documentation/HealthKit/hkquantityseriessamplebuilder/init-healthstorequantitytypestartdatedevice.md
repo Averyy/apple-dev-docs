@@ -24,7 +24,7 @@ init(healthStore: HKHealthStore, quantityType: HKQuantityType, startDate: Date, 
 - `healthStore`: The HealthKit store.
 - `quantityType`: The sample’s quantity type.
 - `startDate`: The sample’s start date.
-- `device`: An object representing the device that provided the data. Pass   if the app is generating its own data.
+- `device`: An object representing the device that provided the data. Pass `nil` if the app is generating its own data.
 
 ## See Also
 

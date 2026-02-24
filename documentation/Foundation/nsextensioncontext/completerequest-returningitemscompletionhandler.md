@@ -26,8 +26,8 @@ Calling this method eventually dismisses the app extension’s view controller.
 
 ## Parameters
 
-- `items`: An array of result items, each an   object, to return to the host app.
-- `completionHandler`: This parameter is   when the system prematurely terminates a   block that was previously invoked and had not otherwise expired.
+- `items`: An array of result items, each an [`NSExtensionItem`](nsextensionitem.md) object, to return to the host app.
+- `completionHandler`: An optional block to be called when the request completes, performed as a background priority task. The block takes the following parameter: - **expired**: A Boolean value that indicates whether the system is terminating a previous invocation of the `completionHandler` block. This parameter is [`true`](https://developer.apple.com/documentation/Swift/true) when the system prematurely terminates a `completionHandler` block that was previously invoked and had not otherwise expired. > ❗ **Important**:  If the system calls your block with an `expired` value of [`true`](https://developer.apple.com/documentation/Swift/true), you must immediately suspend your app extension. If you fail to do this, the system terminates your extension’s process. When your app extension exits, all concurrent requests being handled by the extension, serving the same or other host apps, are terminated.
 
 ## See Also
 

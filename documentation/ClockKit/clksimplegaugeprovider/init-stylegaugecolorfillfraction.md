@@ -20,9 +20,9 @@ A newly instantiated solid-color gauge.
 
 ## Parameters
 
-- `style`: The style defining the gauge’s visual appearance. For a list of valid styles, see  .
+- `style`: The style defining the gauge’s visual appearance. For a list of valid styles, see [`CLKGaugeProviderStyle`](clkgaugeproviderstyle.md).
 - `color`: The gauge’s color.
-- `fillFraction`: The value displayed by the gauge. Use a value between   and  . For an empty gauge, use  .
+- `fillFraction`: The value displayed by the gauge. Use a value between `0.0` and `1.0`. For an empty gauge, use [`CLKSimpleGaugeProviderFillFractionEmpty`](clksimplegaugeproviderfillfractionempty.md).
 
 ## See Also
 

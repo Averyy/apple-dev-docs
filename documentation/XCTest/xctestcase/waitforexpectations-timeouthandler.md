@@ -16,14 +16,14 @@ func waitForExpectations(timeout: TimeInterval, handler: (@Sendable ((any Error)
 
 This method creates a point of synchronization in the flow of a test. Only one [`waitForExpectations(timeout:handler:)`](xctestcase/waitforexpectations(timeout:handler:).md) can be active at any given time, but you can chain together multiple discrete sequences of “create expectations and wait for them to be fulfilled”.
 
-> ❗ **Important**:  This method waits on expectations created with [`XCTestCase`](xctestcase.md)‘s convenience methods only. This method  wait on expectations created manually through initializers on [`XCTestExpectation`](xctestexpectation.md) or its subclasses. To wait for manually created expectations, use the [`wait(for:timeout:)`](xctestcase/wait(for:timeout:).md) or [`wait(for:timeout:enforceOrder:)`](xctestcase/wait(for:timeout:enforceorder:).md) methods, or the corresponding methods on [`XCTWaiter`](xctwaiter.md), passing an explicit list of expectations.
+> ❗ **Important**:  This method waits on expectations created with [`XCTestCase`](xctestcase.md)‘s convenience methods only. This method *doesn’t* wait on expectations created manually through initializers on [`XCTestExpectation`](xctestexpectation.md) or its subclasses. To wait for manually created expectations, use the [`wait(for:timeout:)`](xctestcase/wait(for:timeout:).md) or [`wait(for:timeout:enforceOrder:)`](xctestcase/wait(for:timeout:enforceorder:).md) methods, or the corresponding methods on [`XCTWaiter`](xctwaiter.md), passing an explicit list of expectations.
 
 > **Note**:  Clients shouldn’t manipulate the run loop while using this API.
 
 ## Parameters
 
 - `timeout`: The time, in seconds, the test allows for the fulfillment of the expectations. The default timeout allows the test to run until it reaches its execution time allowance.
-- `handler`: An optional   block to invoke after a test fulfills all expectations or the wait time elapses. A test treats a timeout as a failure.
+- `handler`: An optional [`XCWaitCompletionHandler`](xcwaitcompletionhandler.md) block to invoke after a test fulfills all expectations or the wait time elapses. A test treats a timeout as a failure.
 
 ## See Also
 

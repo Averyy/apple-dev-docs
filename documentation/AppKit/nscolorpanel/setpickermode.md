@@ -20,7 +20,7 @@ This method may be called at any time, whether or not an application’s `NSColo
 
 ## Parameters
 
-- `mode`: A constant specifying which color picker mode is initially visible. This is one of the symbolic constants described in  .
+- `mode`: A constant specifying which color picker mode is initially visible. This is one of the symbolic constants described in `Color Panel Modes`.
 
 ## See Also
 

@@ -49,8 +49,8 @@ The above code is semantically equivalent to the following:
 
 ## Parameters
 
-- `changes`: The block object returns no value.
-- `completionHandler`: The Block object takes no parameters and returns no value.
+- `changes`: A block object containing animations for this transaction group. The `context` parameter passes the thread’s current `NSAnimationContext` to the Block as a convenience, so code within the Block that wants to change or query properties of the current `context` does not have to call [`current`](nsanimationcontext/current.md). The block object returns no value.
+- `completionHandler`: A Block object called when animations for this transaction group are completed. The Block object takes no parameters and returns no value.
 
 ## See Also
 

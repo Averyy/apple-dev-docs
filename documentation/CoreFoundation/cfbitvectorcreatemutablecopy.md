@@ -26,8 +26,8 @@ A new bit vector holding the same bit values as `bv`. Ownership follows the [`Th
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `capacity`: Pass   to specify that the maximum capacity is not limited. If non- ,   must be large enough to hold all bit values from  .
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `capacity`: The maximum number of values that can be contained by the new bit vector. The bit vector starts with the same number of values as `bv` and can grow to this number of values (it can have less). Pass `0` to specify that the maximum capacity is not limited. If non-`0`, `capacity` must be large enough to hold all bit values from `bv`.
 - `bv`: The bit vector to copy.
 
 ## See Also

@@ -28,7 +28,7 @@ Although any packet below this threshold size will not be fragmented by the OS w
 ## Parameters
 
 - `dtlsContext`: The SSL context associated with the connection.
-- `bufSize`: The address of a   integer for storing the length.
+- `bufSize`: The address of a `size_t` integer for storing the length.
 
 
 ---

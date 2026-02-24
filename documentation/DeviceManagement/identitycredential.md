@@ -19,6 +19,11 @@ The data for a PKCS #12 password-protected identity.
 object IdentityCredential
 ```
 
+## Properties
+
+- `Identity` (string) *(required)*: The PKCS #12 identity data.
+- `Password` (string) *(required)*: The password required to decrypt the PKCS #12 identity data.
+
 ## See Also
 
 - [object ACMECredential](acmecredential.md)

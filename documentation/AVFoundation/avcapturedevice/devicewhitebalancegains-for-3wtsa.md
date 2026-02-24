@@ -29,7 +29,7 @@ You may pass any temperature and tint values and corresponding white balance gai
 
 ## Parameters
 
-- `tempAndTintValues`: An   structure containing the temperature and tint values.
+- `tempAndTintValues`: An [`AVCaptureDevice.WhiteBalanceTemperatureAndTintValues`](avcapturedevice/whitebalancetemperatureandtintvalues.md) structure containing the temperature and tint values.
 
 ## See Also
 

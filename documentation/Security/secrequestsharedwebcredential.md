@@ -43,9 +43,10 @@ If the found item specifies a nonstandard port number (other than 443 for `https
 
 ## Parameters
 
-- `fqdn`: (Optional) The fully qualified domain name of the website for which passwords are being requested. If   is passed in this argument, the domain name(s) listed in the calling app’s   are searched implicitly.
-- `account`: (Optional) The account name for which passwords are being requested. The account may be   to request all of the shared credentials that are available for the site, allowing the caller to discover an existing account.
-- `completionHandler`: The block takes two arguments:
+- `fqdn`: (Optional) The fully qualified domain name of the website for which passwords are being requested. If `NULL` is passed in this argument, the domain name(s) listed in the calling app’s [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains) are searched implicitly.
+- `account`: (Optional) The account name for which passwords are being requested. The account may be `NULL` to request all of the shared credentials that are available for the site, allowing the caller to discover an existing account.
+- `completionHandler`: A block that is called to deliver the requested credentials. The block takes two arguments: - **`credentials`**: An array containing the requested passwords. If no matching items are found, the credentials array is empty. The credentials reference is automatically released after this handler is called, though you may optionally retain it for as long as needed.
+- **`error`**: If the shared password was successfully added (or removed), `NULL`; if not successful, a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) object that encapsulates the reason why the password could not be added (or removed). The error reference is automatically released after this handler is called, though you may optionally retain it for as long as needed.
 
 
 ---

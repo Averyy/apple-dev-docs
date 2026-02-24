@@ -25,7 +25,9 @@ convenience init<InputSequence>(inputSequence: InputSequence, modules: [any Spee
 - `modules`: An initial list of modules that will analyze the audio.
 - `options`: A structure specifying analysis options.
 - `analysisContext`: An object containing contextual information to improve or inform the analysis.
-- `volatileRangeChangedHandler`: A closure called to report the analysis’ progress. The closure takes the following parameters:
+- `volatileRangeChangedHandler`: A closure called to report the analysis’ progress. The closure takes the following parameters: - **range**: The current volatile range.
+- **changedStart**: If `true`, the volatile range contains an updated start time. This indicates that prior results have been finalized.
+- **changedEnd**: If `true`, the volatile range contains an update end time. This indicates that analysis of that time has started.
 
 ## See Also
 

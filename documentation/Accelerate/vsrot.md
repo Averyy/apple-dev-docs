@@ -21,8 +21,8 @@ The coordinates are modified in place in the vectors in arrays `x` and `y`.
 ## Parameters
 
 - `n`: Number of points to be rotated; must be a multiple of 4.
-- `x`: Vector with  /4 elements of type  , representing the x-coordinates of the points.
-- `y`: Vector with  /4 elements of type  , representing the y-coordinates of the points.
+- `x`: Vector with `n`/4 elements of type `vector float`, representing the x-coordinates of the points.
+- `y`: Vector with `n`/4 elements of type `vector float`, representing the y-coordinates of the points.
 - `c`: Cosine of the angle of rotation.
 - `s`: Sine of the angle of rotation.
 

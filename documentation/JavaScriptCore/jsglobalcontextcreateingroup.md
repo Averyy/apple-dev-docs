@@ -29,8 +29,8 @@ A [`JSGlobalContextRef`](jsglobalcontextref.md) with a global object of class `g
 
 ## Parameters
 
-- `group`: The context group to use. The created global context retains the group. Pass   to create a unique group for the context.
-- `globalObjectClass`: The class to use when creating the global object. Pass   to use the default object class.
+- `group`: The context group to use. The created global context retains the group. Pass `NULL` to create a unique group for the context.
+- `globalObjectClass`: The class to use when creating the global object. Pass `NULL` to use the default object class.
 
 ## See Also
 

@@ -20,8 +20,8 @@ The font associated with the text style.
 
 ## Parameters
 
-- `style`: The text style for which to return a font. See   for available values.
-- `options`: A dictionary you use to further configure the returned font. See   for a list of valid keys. Pass an empty dictionary to use the default configuration.
+- `style`: The text style for which to return a font. See [`NSFont.TextStyle`](nsfont/textstyle.md) for available values.
+- `options`: A dictionary you use to further configure the returned font. See [`NSFont.TextStyleOptionKey`](nsfont/textstyleoptionkey.md) for a list of valid keys. Pass an empty dictionary to use the default configuration.
 
 ## See Also
 

@@ -36,7 +36,7 @@ let y = x.reversed(alongAxes: 0)
 
 ## Parameters
 
-- `axes`: The indices of the dimensions to reverse. Must be in the range  .
+- `axes`: The indices of the dimensions to reverse. Must be in the range `[-rank, rank)`.
 
 
 ---

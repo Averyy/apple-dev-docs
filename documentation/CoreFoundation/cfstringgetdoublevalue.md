@@ -36,7 +36,7 @@ The variable `val` in this example would contain the value `0.123` after the fun
 
 ## Parameters
 
-- `str`: A string that represents a double value. The only allowed characters are the ASCII digit characters (ASCII   -  ), the plus sign (ASCII  ), the minus sign (ASCII  ), and the period character (ASCII  ).
+- `str`: A string that represents a double value. The only allowed characters are the ASCII digit characters (ASCII `0x30` - `0x39`), the plus sign (ASCII `0x2B`), the minus sign (ASCII `0x2D`), and the period character (ASCII `0x2E`).
 
 ## See Also
 

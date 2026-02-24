@@ -28,9 +28,9 @@ This initializer creates an image using a using a symbol in the specified bundle
 
 ## Parameters
 
-- `name`: The name of the image resource to lookup, as well as   the localization key with which to label the image.
-- `variableValue`: An optional value between   and   that   the rendered image can use to customize its appearance, if   specified. If the symbol doesn’t support variable values, this   parameter has no effect.
-- `bundle`: The bundle to search for the image resource and   localization content. If  , SwiftUI uses the main   . Defaults to  .
+- `name`: The name of the image resource to lookup, as well as the localization key with which to label the image.
+- `variableValue`: An optional value between `0.0` and `1.0` that the rendered image can use to customize its appearance, if specified. If the symbol doesn’t support variable values, this parameter has no effect.
+- `bundle`: The bundle to search for the image resource and localization content. If `nil`, SwiftUI uses the main `Bundle`. Defaults to `nil`.
 
 ## See Also
 

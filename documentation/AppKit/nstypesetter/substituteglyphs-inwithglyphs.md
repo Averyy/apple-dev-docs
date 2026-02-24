@@ -23,7 +23,7 @@ A subclass can override this method to interact with custom glyph storage.
 ## Parameters
 
 - `glyphRange`: The range of glyphs to be substituted.
-- `glyphs`: The glyphs to substitute for the glyphs in  .
+- `glyphs`: The glyphs to substitute for the glyphs in `glyphRange`.
 
 ## See Also
 

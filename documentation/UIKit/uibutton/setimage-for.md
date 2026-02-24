@@ -27,7 +27,7 @@ At a minimum, always set an image for the [`normal`](uicontrol/state-swift.struc
 ## Parameters
 
 - `image`: The image to use for the specified state.
-- `state`: The state that uses the specified image. The values are described in  .
+- `state`: The state that uses the specified image. The values are described in [`UIControl.State`](uicontrol/state-swift.struct.md).
 
 ## See Also
 

@@ -29,8 +29,8 @@ Call this method from your event service to dispatch a keyboard event to the sys
 - `dx`: The distance traveled along the X axis, relative to the pointer’s previous location.
 - `dy`: The distance traveled along the Y axis, relative to the pointer’s previous location.
 - `buttonState`: The button state, if any.
-- `options`: Additional options for pointer events. Specify   for no options. For a list of other values, see  .
-- `accelerate`: A Boolean value indicating whether to apply the acceleration algorithm to the pointer event. Specify   if you don’t want to apply that logic.
+- `options`: Additional options for pointer events. Specify `0` for no options. For a list of other values, see [`IOHIDPointerEventOptions`](iohidpointereventoptions.md).
+- `accelerate`: A Boolean value indicating whether to apply the acceleration algorithm to the pointer event. Specify `false` if you don’t want to apply that logic.
 
 ## See Also
 

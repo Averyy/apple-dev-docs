@@ -22,9 +22,9 @@ optional func parser(_ parser: XMLParser, foundInternalEntityDeclarationWithName
 
 ## Parameters
 
-- `parser`: An   object parsing XML.
+- `parser`: An `NSXMLParser` object parsing XML.
 - `name`: A string that is the declared name of an internal entity.
-- `value`: A string that is the value of entity  .
+- `value`: A string that is the value of entity `name`.
 
 ## See Also
 

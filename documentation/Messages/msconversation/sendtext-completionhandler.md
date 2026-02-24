@@ -39,7 +39,7 @@ This method operates asynchronously. Although the method returns immediately, th
 ## Parameters
 
 - `text`: The text to send.
-- `completionHandler`: A block that’s called as soon as the message starts sending. This block is passed the following parameter:
+- `completionHandler`: A block that’s called as soon as the message starts sending. This block is passed the following parameter: - **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it’s set to `nil`. An error occurs if the user hasn’t recently interacted with your app.
 
 ## See Also
 

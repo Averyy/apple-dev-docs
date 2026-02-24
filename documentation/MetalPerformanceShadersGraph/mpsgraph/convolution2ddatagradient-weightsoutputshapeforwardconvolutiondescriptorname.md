@@ -32,7 +32,7 @@ If `S` is source tensor to forward convolution, `R` is the result/returned tenso
 - `incomingGradient`: Incoming loss gradient tensor
 - `weights`: Forward pass weights tensor
 - `outputShape`: Shape of the forward pass source tensor
-- `forwardConvolutionDescriptor`: Forward convolution 2D op 
+- `forwardConvolutionDescriptor`: Forward convolution 2D op `descriptor`
 - `name`: The name for the operation.
 
 

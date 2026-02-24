@@ -8,6 +8,10 @@ Provide a preferred initial scene style for an immersive space scene.
 **Availability**:
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Use [`UISceneInitialImmersionStyle`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication/uisceneinitialimmersionstyle.md) to configure the initial style for the system to use to create an immersive space scene for your app.

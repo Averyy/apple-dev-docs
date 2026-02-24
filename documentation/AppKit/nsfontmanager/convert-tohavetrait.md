@@ -25,7 +25,7 @@ Using `NSUnboldFontMask` or `NSUnitalicFontMask` removes the bold or italic trai
 ## Parameters
 
 - `fontObj`: The font whose traits are matched.
-- `trait`: The new trait; may be any one of the traits described in  . Using   or   removes the bold or italic trait, respectively.
+- `trait`: The new trait; may be any one of the traits described in `Constants`. Using `NSUnboldFontMask` or `NSUnitalicFontMask` removes the bold or italic trait, respectively.
 
 ## See Also
 

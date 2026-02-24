@@ -27,9 +27,9 @@ mutating func appendInterpolation(_ argumentString: @autoclosure @escaping () ->
 ## Parameters
 
 - `argumentString`: The interpolated string. The system automatically wraps this value in a closure.
-- `align`: The alignment and minimum number of columns to use when the system renders the value in a log message. For more information, see  . The default value is  .
-- `privacy`: The privacy level of the value, which the system applies when it renders the value in a log message. For more information, see  . The default value is  .
-- `attributes`: Additional information about the value. Tools that process log messages interpret these attributes, which you typically provide as key-value pairs. For example, Instruments processes any  e_ngineering types_ you embed in this value. For more information, see  .
+- `align`: The alignment and minimum number of columns to use when the system renders the value in a log message. For more information, see [`OSLogStringAlignment`](oslogstringalignment.md). The default value is [`none`](oslogstringalignment/none.md).
+- `privacy`: The privacy level of the value, which the system applies when it renders the value in a log message. For more information, see [`OSLogPrivacy`](oslogprivacy.md). The default value is [`auto`](oslogprivacy/auto.md).
+- `attributes`: Additional information about the value. Tools that process log messages interpret these attributes, which you typically provide as key-value pairs. For example, Instruments processes any  e_ngineering types_ you embed in this value. For more information, see [`Instruments Developer Help`](https://developer.apple.comhttps://help.apple.com/instruments/developer/mac/current/#/devcd5016d31).
 
 ## See Also
 

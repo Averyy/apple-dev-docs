@@ -25,7 +25,7 @@ You can use this function to reconstruct a Quartz event received by network tran
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the event object. To use the current default allocator, pass   or  .
+- `allocator`: The allocator to use to allocate memory for the event object. To use the current default allocator, pass `NULL` or `kCFAllocatorDefault`.
 - `data`: The flattened data representation of the event to reconstruct.
 
 ## See Also

@@ -8,11 +8,21 @@ Reveal performance and display issues in your views with color overlays, and slo
 
 When your app encounters issues such as hitches, blurred views, or misplaced views, use Simulator’s color overlays to help you diagnose several common causes:
 
+- **Excess blending**: when your app draws too many views with transparency on top of each other, and the system has to perform work to blend the views together.
+- **Copying**: when Core Animation needs to make copies of your image for display.
+- **Misalignment**: when your app attempts to display an image that doesn’t divide evenly into the scale factor for a device, or an image that doesn’t fit in the size of a view, the image may be blurry or slightly out of position.
+- **Offscreen rendering**: when your app renders a view offscreen before moving it onscreen to display.
+
 When your app encounters issues with animations, such as unexpected jumps, hitches, or diversions from an expected course of changes, use Simulator’s tool to slow down animations so that you can examine them more closely than you can at full speed, and determine the right course of corrective action.
 
 ##### Debug and Optimize Graphics Using Color Overlays
 
 Highlight images and areas of the screen that may create issues with rendering, scrolling performance, and memory in Simulator. Choose Debug > Color and select a color overlay to show or hide in your app:
+
+- **Color Blended Layers**: Simulator overlays views in red that your app draws on top of other views and that have blending enabled. Simulator overlays other areas in green. Minimize blended layers to improve rendering and scrolling performance.
+- **Color Copied Images**: Simulator overlays images in blue that Core Animation must copy instead of using the original. Minimize copied images to improve memory usage and performance.
+- **Color Misaligned Images**: Simulator overlays images in magenta whose bounds are not aligned to the destination pixels. Fix misaligned images to avoid blurs and performance issues. Simulator overlays images in yellow that your app draws with a scale factor. Minimize images with scale factors to improve rendering and scrolling performance.
+- **Color Off-screen Rendered**: Simulator overlays content in yellow that is rendered offscreen. Only use off-screen rendering when you have confirmed with tests that the memory and performance tradeoffs work for your app.
 
 You can show multiple overlays at the same time.
 

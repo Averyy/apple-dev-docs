@@ -20,7 +20,7 @@ A flag that can be used to set the secure state of a text field when creating a 
 
 ## Parameters
 
-- `i`: The index of the text field to make secure. The index corresponds to the order in which the text fields are listed in the   array of the user notification’s description dictionary.   must be in the range 0 to 7.
+- `i`: The index of the text field to make secure. The index corresponds to the order in which the text fields are listed in the [`kCFUserNotificationTextFieldTitlesKey`](kcfusernotificationtextfieldtitleskey.md) array of the user notification’s description dictionary. `idx` must be in the range 0 to 7.
 
 ## See Also
 

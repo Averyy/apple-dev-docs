@@ -24,7 +24,7 @@ Returns [`NetworkCompatibilityToken.Compatibility.compatible`](networkcompatibil
 
 ## Parameters
 
-- `otherToken`: The token for the remote client against which the local   device checks compatibility
+- `otherToken`: The token for the remote client against which the local device checks compatibility
 
 
 ---

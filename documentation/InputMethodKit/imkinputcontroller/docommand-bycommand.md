@@ -23,7 +23,8 @@ This method is called when a user selects a command from the text input menu. To
 ## Parameters
 
 - `aSelector`: A selector that represents a command from the text input menu.
-- `infoDictionary`: A dictionary that contains two key-value pairs:
+- `infoDictionary`: A dictionary that contains two key-value pairs: - [`kIMKCommandMenuItemName`](kimkcommandmenuitemname.md), whose value is an `NSMenuItem` object. That is, the item selected by the user.
+- [`kIMKCommandClientName`](kimkcommandclientname.md), whose value is the current client—`id<IMKTextInput, NSObject>`.
 
 ## See Also
 

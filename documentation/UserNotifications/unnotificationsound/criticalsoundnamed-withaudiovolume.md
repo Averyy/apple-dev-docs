@@ -28,7 +28,7 @@ Critical alerts ignore the mute switch and Do Not Disturb. They require a specia
 
 ## Parameters
 
-- `name`: The name of the sound file to play. This file must be located in the current executable’s main bundle or in the   directory of the current app container directory. If files exist at both locations, the system uses the file from the   directory. This parameter must not be  .
+- `name`: The name of the sound file to play. This file must be located in the current executable’s main bundle or in the `Library/Sounds` directory of the current app container directory. If files exist at both locations, the system uses the file from the `Library/Sounds` directory. This parameter must not be `nil`.
 - `volume`: The volume must be a value between 0.0 and 1.0.
 
 ## See Also

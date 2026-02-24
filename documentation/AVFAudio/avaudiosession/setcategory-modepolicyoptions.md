@@ -25,10 +25,10 @@ You specify options only with a default routing policy. With a long-form route-s
 
 ## Parameters
 
-- `category`: The category to apply to the audio session. See   for supported category values.
-- `mode`: The audio session mode to apply to the audio session. For a list of values, see  .
-- `policy`: The route-sharing policy to apply to the audio session. For a list of values, see  .
-- `options`: A mask of additional options for handling audio. For a list of constants, see  .
+- `category`: The category to apply to the audio session. See [`AVAudioSession.Category`](avaudiosession/category-swift.struct.md) for supported category values.
+- `mode`: The audio session mode to apply to the audio session. For a list of values, see [`AVAudioSession.Mode`](avaudiosession/mode-swift.struct.md).
+- `policy`: The route-sharing policy to apply to the audio session. For a list of values, see [`AVAudioSession.RouteSharingPolicy`](avaudiosession/routesharingpolicy-swift.enum.md).
+- `options`: A mask of additional options for handling audio. For a list of constants, see [`AVAudioSession.CategoryOptions`](avaudiosession/categoryoptions-swift.struct.md).
 
 ## See Also
 

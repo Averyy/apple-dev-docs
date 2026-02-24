@@ -9,6 +9,10 @@ A code-signing entitlement that enables an app to detect nudity in images and vi
 - iOS 17.0+
 - iPadOS 17.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 The [`SensitiveContentAnalysis`](https://developer.apple.com/documentation/SensitiveContentAnalysis) framework fails to return positive results for apps that lack this entitlement in its code signature.

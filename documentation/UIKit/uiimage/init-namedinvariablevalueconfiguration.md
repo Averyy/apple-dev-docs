@@ -37,7 +37,7 @@ The system may purge cached image data at any time to free up memory. Purging oc
 
 - `name`: The name of the image asset or file.
 - `bundle`: The bundle that contains the image file or asset catalog.
-- `variableValue`: The value the system uses to customize the image content, between   and  .
+- `variableValue`: The value the system uses to customize the image content, between `0` and `1`.
 - `configuration`: The image configuration the system applies to the image.
 
 ## See Also

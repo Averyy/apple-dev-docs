@@ -25,7 +25,7 @@ If you don’t implement this method, the receiver does not synchronize the pop-
 ## Parameters
 
 - `comboBoxCell`: The combo box cell.
-- `string`: The string to match. If   is implemented,   is the string returned by that method. Otherwise,   is the text that the user has typed.
+- `string`: The string to match. If [`comboBoxCell(_:completedString:)`](nscomboboxcelldatasource/comboboxcell(_:completedstring:).md) is implemented, `aString` is the string returned by that method. Otherwise, `aString` is the text that the user has typed.
 
 ## See Also
 

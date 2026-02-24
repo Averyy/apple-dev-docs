@@ -27,7 +27,7 @@ The GPU driver evaluates the fences that apply to the pass and the commands that
 
 ## Parameters
 
-- `fence`: An   instance to update.
+- `fence`: An [`MTLFence`](mtlfence.md) instance to update.
 
 ## See Also
 

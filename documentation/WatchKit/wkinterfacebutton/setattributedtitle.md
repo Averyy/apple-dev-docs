@@ -22,7 +22,7 @@ If you use styled text in your buttons, you must provide localized versions of t
 
 ## Parameters
 
-- `attributedTitle`: The formatted text string to be displayed in the button. Specifying   clears the current text from the button.
+- `attributedTitle`: The formatted text string to be displayed in the button. Specifying `nil` clears the current text from the button.
 
 ## See Also
 

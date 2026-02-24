@@ -33,7 +33,7 @@ Calling this function is equivalent to using [`CGRectGetMinX(_:)`](cgrectgetminx
 ## Parameters
 
 - `rect`: The rectangle to add.
-- `transform`: A pointer to an affine transformation matrix, or   if no transformation is needed. If specified, Core Graphics applies the transformation to the rectangle before it is added to the path.
+- `transform`: A pointer to an affine transformation matrix, or `NULL` if no transformation is needed. If specified, Core Graphics applies the transformation to the rectangle before it is added to the path.
 
 ## See Also
 

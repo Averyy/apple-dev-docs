@@ -30,8 +30,8 @@ This method is superseded by [`invalidateLayout(forCharacterRange:actualCharacte
 ## Parameters
 
 - `charRange`: The character range for which glyphs are invalidated.
-- `flag`: If  , invalidates internal caches in the layout manager; if  , invalidates layout. See the discussion section.
-- `actualCharRange`: If not  , on output, the range of characters mapped to the glyphs whose layout information is invalidated. This range can be larger than the range of characters given due to the effect of context on glyphs and layout.
+- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), invalidates internal caches in the layout manager; if [`false`](https://developer.apple.com/documentation/Swift/false), invalidates layout. See the discussion section.
+- `actualCharRange`: If not `NULL`, on output, the range of characters mapped to the glyphs whose layout information is invalidated. This range can be larger than the range of characters given due to the effect of context on glyphs and layout.
 
 ## See Also
 

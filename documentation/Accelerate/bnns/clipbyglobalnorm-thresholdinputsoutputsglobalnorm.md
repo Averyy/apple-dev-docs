@@ -64,7 +64,7 @@ static func clipToGlobalNorm() {
 - `threshold`: The maximum Euclidean norm to clip the gradient to.
 - `inputs`: An array of input descriptors.
 - `outputs`: An array of output descriptors.
-- `globalNorm`: The global norm to use. Set to   to specify that the function computes the norm from the input descriptors.
+- `globalNorm`: The global norm to use. Set to `0` to specify that the function computes the norm from the input descriptors.
 
 ## See Also
 

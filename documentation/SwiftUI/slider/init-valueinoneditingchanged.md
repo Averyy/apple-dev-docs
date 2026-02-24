@@ -28,8 +28,8 @@ The slider calls `onEditingChanged` when editing begins and ends. For example, o
 
 ## Parameters
 
-- `value`: The selected value within  .
-- `bounds`: The range of the valid values. Defaults to  .
+- `value`: The selected value within `bounds`.
+- `bounds`: The range of the valid values. Defaults to `0...1`.
 - `onEditingChanged`: A callback for when editing begins and ends.
 
 ## See Also

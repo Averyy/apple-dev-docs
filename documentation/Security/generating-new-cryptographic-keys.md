@@ -14,6 +14,34 @@ An asymmetric cryptographic key pair is composed of a public and a private key t
 
 You create an asymmetric key pair by first creating an attributes dictionary:
 
+**Swift**:
+
+```swift
+let tag = "com.example.keys.mykey".data(using: .utf8)!
+let attributes: [String: Any] =
+    [kSecAttrKeyType as String:            type,
+     kSecAttrKeySizeInBits as String:      2048,
+     kSecPrivateKeyAttrs as String:
+        [kSecAttrIsPermanent as String:    true,
+         kSecAttrApplicationTag as String: tag]
+]
+
+```
+
+**Objective-C**:
+
+```objc
+NSData* tag = [@"com.example.keys.mykey" dataUsingEncoding:NSUTF8StringEncoding];
+NSDictionary* attributes =
+    @{ (id)kSecAttrKeyType:               (id)kSecAttrKeyTypeRSA,
+       (id)kSecAttrKeySizeInBits:         @2048,
+       (id)kSecPrivateKeyAttrs:
+           @{ (id)kSecAttrIsPermanent:    @YES,
+              (id)kSecAttrApplicationTag: tag,
+              },
+     };
+```
+
 At a minimum, you specify the type and size of keys to create using the [`kSecAttrKeyType`](ksecattrkeytype.md) and [`kSecAttrKeySizeInBits`](ksecattrkeysizeinbits.md) parameters, respectively. The above example indicates 2048-bit RSA keys, though other options are available.
 
 You then optionally add a [`kSecPrivateKeyAttrs`](ksecprivatekeyattrs.md) parameter with a subdictionary that characterizes the private key. By assigning a value of [`true`](https://developer.apple.com/documentation/Swift/true) to the private key’s [`kSecAttrIsPermanent`](ksecattrispermanent.md) attribute, you store it in the default keychain while creating it. You also specify the [`kSecAttrApplicationTag`](ksecattrapplicationtag.md) attribute with a unique [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) value so that you can find and retrieve it from the keychain later. The tag data is constructed from a string, using reverse DNS notation, though any unique tag will do.
@@ -26,7 +54,40 @@ For a complete list of available key attributes, see [`Key Generation Attributes
 
 You then call the [`SecKeyCreateRandomKey(_:_:)`](seckeycreaterandomkey(_:_:).md) function with the attributes dictionary:
 
+**Swift**:
+
+```swift
+var error: Unmanaged<CFError>?
+guard let privateKey = SecKeyCreateRandomKey(attributes as CFDictionary, &error) else {
+    throw error!.takeRetainedValue() as Error
+}
+```
+
+**Objective-C**:
+
+```objc
+CFErrorRef error = NULL;
+SecKeyRef privateKey = SecKeyCreateRandomKey((__bridge CFDictionaryRef)attributes,
+                                             &error);
+if (!privateKey) {
+    NSError *err = CFBridgingRelease(error);  // ARC takes ownership
+    // Handle the error. . .
+}
+```
+
 If the function fails to create a key, as indicated by a `NULL` return value, it fills in the `error` parameter to indicate the reason for failure. Otherwise, the key reference points to a new private key that’s ready for use. The key is also stored in the default keychain, from where you can read it later, as described in [`Storing Keys in the Keychain`](storing-keys-in-the-keychain.md). If you need the corresponding public key (now or later), call the [`SecKeyCopyPublicKey(_:)`](seckeycopypublickey(_:).md) function with the private key reference:
+
+**Swift**:
+
+```swift
+let publicKey = SecKeyCopyPublicKey(privateKey)
+```
+
+**Objective-C**:
+
+```objc
+SecKeyRef publicKey = SecKeyCopyPublicKey(privateKey);
+```
 
 In Objective-C, when you’re done with these key references, however you obtained them, you are responsible for releasing the associated memory:
 

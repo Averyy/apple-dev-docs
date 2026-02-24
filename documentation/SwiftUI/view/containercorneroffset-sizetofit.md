@@ -38,8 +38,8 @@ The modifier provides a `sizeToFit` parameter to indicate how the view should be
 
 ## Parameters
 
-- `edges`: The set of edges which the container view should add corner   insets from.
-- `sizeToFit`: A flag indicating when this view is offset off a   corner inset whether its size should attempt to fit into its   remaining space of the view or fill its original size.
+- `edges`: The set of edges which the container view should add corner insets from.
+- `sizeToFit`: A flag indicating when this view is offset off a corner inset whether its size should attempt to fit into its remaining space of the view or fill its original size.
 
 
 ---

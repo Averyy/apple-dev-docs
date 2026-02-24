@@ -52,7 +52,7 @@ For example, the `tcpdump` tool may flag the TCP checksum of packets sent by the
 
 ##### Avoid Dropped Packets By Increasing the Recording Buffer Size
 
-If you record all the bytes of each packet, it’s possible to overrun the kernel’s packet recording buffer. In this case, your packet trace tool should report a problem. For example, the `tcpdump` tool prints a summary of how many packets were recorded, filtered, and  when you stop the recording.
+If you record all the bytes of each packet, it’s possible to overrun the kernel’s packet recording buffer. In this case, your packet trace tool should report a problem. For example, the `tcpdump` tool prints a summary of how many packets were recorded, filtered, and *dropped* when you stop the recording.
 
 ```shell
 $ sudo tcpdump -i en0 -w trace.pcap

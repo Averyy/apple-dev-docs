@@ -20,8 +20,8 @@ An initialized `SFAuthorizationPluginView` instance.
 
 ## Parameters
 
-- `callbacks`: The structure of type   provided to the authorization plug-in in its   function.
-- `engineRef`: The handle of type   provided to the authorization plug-in in its MechanismCreate function.
+- `callbacks`: The structure of type [`AuthorizationCallbacks`](https://developer.apple.com/documentation/Security/AuthorizationCallbacks) provided to the authorization plug-in in its [`AuthorizationPluginCreate`](https://developer.apple.com/documentation/Security/AuthorizationPluginCreate) function.
+- `engineRef`: The handle of type [`AuthorizationEngineRef`](https://developer.apple.com/documentation/Security/AuthorizationEngineRef) provided to the authorization plug-in in its MechanismCreate function.
 
 ## See Also
 

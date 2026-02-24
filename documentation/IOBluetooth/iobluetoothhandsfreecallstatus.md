@@ -18,6 +18,13 @@ let IOBluetoothHandsFreeCallStatus: String
 
 The string contains a single digit with one of the following values:
 
+- **`“0”`**: An active call.
+- **`“1”`**: An active call that’s on hold.
+- **`“2”`**: An outgoing call that’s dialing.
+- **`“3”`**: An outgoing call that’s alerting the receiver.
+- **`“4”`**: An incoming call.
+- **`“5”`**: A call that’s waiting.
+
 ## See Also
 
 - [let IOBluetoothHandsFreeCallDirection: String](iobluetoothhandsfreecalldirection.md)

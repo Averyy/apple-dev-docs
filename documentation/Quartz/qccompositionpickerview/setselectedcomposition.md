@@ -16,7 +16,7 @@ func setSelectedComposition(_ composition: QCComposition!)
 
 ## Parameters
 
-- `composition`: The composition to select. Pass   if you don’t want to select a composition. The behavior is undefined if you pass a composition that is not in the list of compositions that are currently in the composition picker view.
+- `composition`: The composition to select. Pass `nil` if you don’t want to select a composition. The behavior is undefined if you pass a composition that is not in the list of compositions that are currently in the composition picker view.
 
 ## See Also
 

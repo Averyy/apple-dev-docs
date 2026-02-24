@@ -24,8 +24,8 @@ The default implementation sets the value and returns [`kIOReturnSuccess`](https
 
 ## Parameters
 
-- `in_qualifier_data`: The qualifier data   associated with setting the property data value. This can be an  ,  , or  .
-- `in_data`: An   to set as the custom property value.
+- `in_qualifier_data`: The qualifier data [`OSObject`](https://developer.apple.com/documentation/DriverKit/OSObject) associated with setting the property data value. This can be an [`OSString`](https://developer.apple.com/documentation/DriverKit/OSString), [`OSDictionary`](https://developer.apple.com/documentation/DriverKit/OSDictionary), or `NULL`.
+- `in_data`: An [`OSObject`](https://developer.apple.com/documentation/DriverKit/OSObject) to set as the custom property value.
 
 
 ---

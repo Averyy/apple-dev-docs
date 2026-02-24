@@ -21,7 +21,7 @@ Set the stream context as nonactive on the device with an out-of-band (class-def
 
 ## Parameters
 
-- `option`: A set of options.   is the default.
+- `option`: A set of options. [`IOUSBHostAbortOption.synchronous`](iousbhostabortoption/synchronous.md) is the default.
 
 ## Topics
 

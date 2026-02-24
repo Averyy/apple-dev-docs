@@ -25,7 +25,7 @@ The initialized push behavior, or `nil` if there was a problem initializing the 
 ## Parameters
 
 - `items`: The dynamic items that you want to be subject to the push behavior.
-- `mode`: The mode for the new push behavior; one of the values defined in the   enumeration. You must supply a value.
+- `mode`: The mode for the new push behavior; one of the values defined in the [`UIPushBehavior.Mode`](uipushbehavior/mode-swift.enum.md) enumeration. You must supply a value.
 
 ## See Also
 

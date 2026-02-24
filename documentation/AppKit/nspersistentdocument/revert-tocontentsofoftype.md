@@ -21,7 +21,7 @@ func revert(toContentsOf inAbsoluteURL: URL, ofType inTypeName: String) throws
 ## Parameters
 
 - `inAbsoluteURL`: An URL object that specifies the location of the file to which to revert.
-- `inTypeName`: The type of the document at  .
+- `inTypeName`: The type of the document at `inAbsoluteURL`.
 
 ## See Also
 

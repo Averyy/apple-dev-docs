@@ -30,7 +30,7 @@ The system takes the layer’s frame size and its [`videoGravity`](avcapturevide
 
 ## Parameters
 
-- `rectInMetadataOutputCoordinates`: A rectangle in the   coordinate system.
+- `rectInMetadataOutputCoordinates`: A rectangle in the [`AVCaptureMetadataOutput`](avcapturemetadataoutput.md) coordinate system.
 
 ## See Also
 

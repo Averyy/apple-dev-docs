@@ -26,7 +26,7 @@ Using this function avoids having to call the Core Graphics function `CGOpenGLDi
 ## Parameters
 
 - `mask`: The OpenGL display mask describing the available displays.
-- `displayLinkOut`: On output,   points to the newly created display link.
+- `displayLinkOut`: On output, `displayLinkOut` points to the newly created display link.
 
 ## See Also
 

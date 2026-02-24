@@ -32,7 +32,7 @@ The MDM server can change the available certificates at any time. When that happ
 
 ## Parameters
 
-- `identifier`: The identifier of the requested certficate. This function throws   if the value you supply isn’t currently in  .
+- `identifier`: The identifier of the requested certficate. This function throws [`ManagedAppError.invalidIdentifier`](managedapperror/invalididentifier.md) if the value you supply isn’t currently in [`identifiers`](managedappidentitiesprovider/identifiers.md).
 
 
 ---

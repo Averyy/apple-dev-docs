@@ -33,7 +33,7 @@ When the user recenters their view, the app will fade out and then be reposition
 
 ## Parameters
 
-- `action`: A closure to run when the view is recentered. This will run   when the app has been recentered and is about to fade back in,   equivalent to  .
+- `action`: A closure to run when the view is recentered. This will run when the app has been recentered and is about to fade back in, equivalent to `WorldRecenterPhase.ended`.
 
 
 ---

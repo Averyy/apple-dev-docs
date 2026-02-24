@@ -56,8 +56,8 @@ Training begins immediately.
 
 ## Parameters
 
-- `trainingData`: A set of labeled images the task uses to train the image classifier model, contained in a   data source.
-- `parameters`: An   instance you use to configure the model   for the training session.
+- `trainingData`: A set of labeled images the task uses to train the image classifier model, contained in a data source.
+- `parameters`: An [`MLImageClassifier.ModelParameters`](mlimageclassifier/modelparameters-swift.struct.md) instance you use to configure the model for the training session.
 
 
 ---

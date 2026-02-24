@@ -27,7 +27,7 @@ static func lookAtAdditive(named name: String, on jointName: String, lookingAlon
 
 - `name`: The rig unique name of the constraint
 - `jointName`: The name of the joint to constrain.
-- `targetAxis`: The axis from the constrained joint to look-at target position in the local space   of the joint.
+- `targetAxis`: The axis from the constrained joint to look-at target position in the local space of the joint.
 - `orientationWeight`: The weight of the orientation demand.
 
 

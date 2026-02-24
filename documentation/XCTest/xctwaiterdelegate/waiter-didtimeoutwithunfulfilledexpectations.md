@@ -17,7 +17,7 @@ If the delegate is an [`XCTestCase`](xctestcase.md) instance, this will be repor
 
 ## Parameters
 
-- `waiter`: The   reporting the timeout event.
+- `waiter`: The [`XCTWaiter`](xctwaiter.md) reporting the timeout event.
 - `unfulfilledExpectations`: The expectations
 
 ## See Also

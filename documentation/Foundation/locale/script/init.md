@@ -22,7 +22,7 @@ init(_ identifier: String)
 
 ## Parameters
 
-- `identifier`: A BCP 47 script subtag identifier, such as  ,  , or  . This value is case-insensitive.
+- `identifier`: A BCP 47 script subtag identifier, such as `Arab`, `Cyrl`, or `Latn`. This value is case-insensitive.
 
 
 ---

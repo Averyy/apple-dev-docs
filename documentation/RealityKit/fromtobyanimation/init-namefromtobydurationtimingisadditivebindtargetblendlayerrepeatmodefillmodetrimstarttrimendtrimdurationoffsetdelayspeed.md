@@ -27,9 +27,9 @@ init(name: String = "", from: Value? = nil, to: Value? = nil, by: Value? = nil, 
 - `by`: An amount that increments the animated property during the animation.
 - `duration`: The total playback time.
 - `timing`: An option that determines the animation’s pace over time.
-- `isAdditive`: A Boolean value that indicates whether the animation   blends additively with concurrent animations.
-- `bindTarget`: A textual name that identifies the particular property   that animates.
-- `blendLayer`: The order in which the framework composites the animation   into the view.
+- `isAdditive`: A Boolean value that indicates whether the animation blends additively with concurrent animations.
+- `bindTarget`: A textual name that identifies the particular property that animates.
+- `blendLayer`: The order in which the framework composites the animation into the view.
 - `repeatMode`: An option that determines how the animation repeats.
 - `fillMode`: The playback behavior outside of the normal duration.
 - `trimStart`: The time, in seconds, at which the animation plays.

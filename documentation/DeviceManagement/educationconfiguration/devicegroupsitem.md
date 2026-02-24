@@ -16,6 +16,12 @@ A device group in the organization.
 object EducationConfiguration.DeviceGroupsItem
 ```
 
+## Properties
+
+- `Identifier` (string) *(required)*: The unique identifier for the device group in the organization.
+- `Name` (string) *(required)*: The name of the device group, which must be unique in the organization.
+- `SerialNumbers` ([string]) *(required)*: The serial numbers of the devices in the group.
+
 ## See Also
 
 - [object EducationConfiguration.DepartmentsItem](educationconfiguration/departmentsitem.md)

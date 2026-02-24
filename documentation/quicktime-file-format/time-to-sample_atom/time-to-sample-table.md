@@ -16,6 +16,9 @@ Each table entry contains a count field and a duration field. The structure of t
 
 You define a time-to-sample table entry by specifying these fields:
 
+- **Sample count**: A 32-bit integer that specifies the number of consecutive samples that have the same duration.
+- **Sample duration**: A 32-bit integer that specifies the duration of each sample.
+
 Entries in the table describe samples according to their order in the media and their duration. If consecutive samples have the same duration, a single table entry can be used to define more than one sample. In these cases, the count field indicates the number of consecutive samples that have the same duration. For example, if a video media has a constant frame rate, this table would have one entry and the count would be equal to the number of samples.
 
 An example of a time-to-sample table is as follows.

@@ -25,7 +25,7 @@ By default, the component makes an entity receive grounding shadows from other m
 
 ## Parameters
 
-- `castsShadow`: A Boolean that indicates whether an entity   with the component casts a shadow onto other model entities in the scene.
+- `castsShadow`: A Boolean that indicates whether an entity with the component casts a shadow onto other model entities in the scene.
 
 
 ---

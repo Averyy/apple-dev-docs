@@ -32,7 +32,7 @@ Signal if this is a TLS fallback attempt.
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A `sec_protocol_options_t` instance.
 - `is_fallback_attempt`: Set a flag indicating that this is a TLS fallback attempt.
 
 

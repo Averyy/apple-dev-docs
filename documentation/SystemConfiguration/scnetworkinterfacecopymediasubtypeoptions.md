@@ -20,7 +20,7 @@ An array of available media options, or `NULL` if no options are available. Each
 
 ## Parameters
 
-- `available`: The available options as returned by the   function.
+- `available`: The available options as returned by the [`SCNetworkInterfaceCopyMediaOptions(_:_:_:_:_:)`](scnetworkinterfacecopymediaoptions(_:_:_:_:_:).md) function.
 - `subType`: The subtype.
 
 ## See Also

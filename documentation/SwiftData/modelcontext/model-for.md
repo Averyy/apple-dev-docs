@@ -27,7 +27,7 @@ The identified persistent model, if known to the context; otherwise, an unsaved 
 
 ## Parameters
 
-- `persistentModelID`: The identifier of the model to fetch. For more information, see  .
+- `persistentModelID`: The identifier of the model to fetch. For more information, see [`PersistentIdentifier`](persistentidentifier.md).
 
 ## See Also
 

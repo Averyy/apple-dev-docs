@@ -23,7 +23,7 @@ convenience init(start startDate: Date, end endDate: Date)
 ## Parameters
 
 - `startDate`: The start date of the date interval.
-- `endDate`: The end date of the date interval.
+- `endDate`: The end date of the date interval. > ❗ **Important**:  This method raises an `NSArgumentException` if [`endDate`](nsdateinterval/enddate.md) occurs earlier than [`startDate`](nsdateinterval/startdate.md).
 
 ## See Also
 

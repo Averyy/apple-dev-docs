@@ -26,7 +26,7 @@ A strategy that uses accounting principles, and the specified handling of zero v
 
 ## Parameters
 
-- `showZero`: A Boolean value that indicates whether to show the sign symbol on zero values. Defaults to  .
+- `showZero`: A Boolean value that indicates whether to show the sign symbol on zero values. Defaults to `false`.
 
 ## See Also
 

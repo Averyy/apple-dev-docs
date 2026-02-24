@@ -18,7 +18,7 @@ init(phoneNumber: String)
 
 ## Parameters
 
-- `phoneNumber`: The phone number of the destination. Don’t include   or   prefixes.
+- `phoneNumber`: The phone number of the destination. Don’t include `tel` or `sip` prefixes.
 
 
 ---

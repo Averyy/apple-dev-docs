@@ -38,7 +38,7 @@ After you export a template file, you use a vector-drawing app, such as Adobe Il
 
 ##### Manage Symbol Image Variants
 
-The Symbols layer contains up to 27 sublayers, each representing a symbol image variant. Identifiers of symbol variants have the form `<weight>-<{S, M, L}>`, where  corresponds to a weight of the San Francisco system font and , , or  matches the small, medium, or large symbol scale.
+The Symbols layer contains up to 27 sublayers, each representing a symbol image variant. Identifiers of symbol variants have the form `<weight>-<{S, M, L}>`, where *weight* corresponds to a weight of the San Francisco system font and *S*, *M*, or *L* matches the small, medium, or large symbol scale.
 
 ```xml
 <g id="Symbols">
@@ -60,7 +60,7 @@ It’s not necessary for a template to contain all 27 variants. You can add as m
 
 The system uses guides to align your custom symbol image with surrounding text. For example, it uses the provided baseline and cap height information for each of the three font scales to compute the symbol image’s baseline offset and cap height.
 
-The Guides layer contains an uppercase letter  in outline form for each scale in the San Francisco system font as a reference glyph. Use the reference glyphs in the template as guides for how a symbol image looks next to text.
+The Guides layer contains an uppercase letter *A* in outline form for each scale in the San Francisco system font as a reference glyph. Use the reference glyphs in the template as guides for how a symbol image looks next to text.
 
 Beginning with template version 3, each image variant of a symbol can have its own margin guides. This allows the margins to vary slightly by weight and scale instead of using a fixed margin for all variants. The explicit margin guides have the form `left-margin-<variant-specifier>` or `right-margin-<variant-specifier>`. The following example represents the left and right guides of the `Regular-S` symbol variant:
 

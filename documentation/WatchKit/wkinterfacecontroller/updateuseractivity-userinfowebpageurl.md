@@ -25,9 +25,9 @@ Call this method at any time during the execution of your interface controllerâ€
 
 ## Parameters
 
-- `type`: The type of activity to be continued. The value is a developer-defined string in reverse-DNS format by convention, for example,  . This parameter must not be   or an empty string.
-- `userInfo`: A dictionary containing app-specific state information needed to continue an activity on another device. Keys and values in the dictionary must be of the following types:  ,  ,  ,  ,  ,  ,  , or  .
-- `webpageURL`: A URL containing the web page to load in a browser to continue the activity. The scheme of the URL must be   or  . Any other scheme throws an exception.
+- `type`: The type of activity to be continued. The value is a developer-defined string in reverse-DNS format by convention, for example, `com.myCompany.myEditor.editing`. This parameter must not be `nil` or an empty string.
+- `userInfo`: A dictionary containing app-specific state information needed to continue an activity on another device. Keys and values in the dictionary must be of the following types: [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray), [`NSData`](https://developer.apple.com/documentation/Foundation/NSData), [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate), [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary), [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), [`NSSet`](https://developer.apple.com/documentation/Foundation/NSSet), or [`NSString`](https://developer.apple.com/documentation/Foundation/NSString).
+- `webpageURL`: A URL containing the web page to load in a browser to continue the activity. The scheme of the URL must be `http` or `https`. Any other scheme throws an exception.
 
 ## See Also
 

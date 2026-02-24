@@ -45,21 +45,21 @@ You can use the same workspace memory for a group of images that are different s
 ## Parameters
 
 - `src`: A pointer to a vImage buffer structure that contains data for the source image.
-- `dest`: A pointer to a vImage buffer data structure. You’re responsible for filling out the  ,  , and   fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, you need to deallocate the memory.
-- `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass   to instruct the function to allocate, use, and then free its own temporary buffer.
+- `dest`: A pointer to a vImage buffer data structure. You’re responsible for filling out the `height`, `width`, and `rowBytes` fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, you need to deallocate the memory.
+- `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass `nil` to instruct the function to allocate, use, and then free its own temporary buffer.
 - `srcOffsetToROI_X`: The horizontal offset, in pixels, to the upper-left pixel of the region of interest within the source image.
 - `srcOffsetToROI_Y`: The vertical offset, in pixels, to the upper-left pixel of the region of interest within the source image.
 - `kernel`: A pointer to the deconvolution kernel data, which needs to be a packed array without any padding. The kernel expresses a blurring convolution or point-spread function.
-- `kernel2`: A pointer to the data of a second kernel, which needs to be a packed array without any padding. Supply this kernel only if the first kernel is asymmetrical; otherwise pass  .
+- `kernel2`: A pointer to the data of a second kernel, which needs to be a packed array without any padding. Supply this kernel only if the first kernel is asymmetrical; otherwise pass `NULL`.
 - `kernel_height`: The height of the first kernel in pixels. This value needs to be odd.
 - `kernel_width`: The width of the first kernel in pixels. This value needs to be odd.
-- `kernel_height2`: The height of the second kernel in pixels (ignored if   is  ). This value needs to be odd.
-- `kernel_width2`: The width of the second kernel in pixels (ignored if   is  ). This value needs to be odd.
+- `kernel_height2`: The height of the second kernel in pixels (ignored if `kernel2` is `NULL`). This value needs to be odd.
+- `kernel_width2`: The width of the second kernel in pixels (ignored if `kernel2` is `NULL`). This value needs to be odd.
 - `divisor`: The divisor to use in convolutions with the first kernel.
 - `divisor2`: The divisor to use in convolutions with the second kernel.
-- `backgroundColor`: A background color. If you supply a color, you need to also set the   flag; otherwise, the function ignores the color.
+- `backgroundColor`: A background color. If you supply a color, you need to also set the `kvImageBackgroundColorFill` flag; otherwise, the function ignores the color.
 - `iterationCount`: The number of times to iterate the deconvolution algorithm.
-- `flags`: Pass one of the following flags to specify how vImage handles pixel locations beyond the edge of the source image:  ,  ,  , or  .
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md). To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag. Pass one of the following flags to specify how vImage handles pixel locations beyond the edge of the source image: [`kvImageCopyInPlace`](kvimagecopyinplace.md), [`kvImageTruncateKernel`](kvimagetruncatekernel.md), [`kvImageBackgroundColorFill`](kvimagebackgroundcolorfill.md), or [`kvImageEdgeExtend`](kvimageedgeextend.md).
 
 ## See Also
 

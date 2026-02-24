@@ -26,9 +26,9 @@ The mean average precision at the overlap threshold.
 ## Parameters
 
 - `predictions`: A list of all the predictions from an object detection model. Each element in the list is a list of predictions from one image.
-- `annotations`: A list of all the annotations. Each element is an   object from one image.
-- `confidenceThresholds`: Confidence thresholds for each label. The values will always be between 0.0 and 1.0.   If any label does not have a threshold, the   is used for that label. The default value is  .
-- `overlapThreshold`: The overlap threshold for the bounding boxes. The value will always be between 0.0 and 1.0. The default value is  .
+- `annotations`: A list of all the annotations. Each element is an `ObjectDetectionAnnotation` object from one image.
+- `confidenceThresholds`: Confidence thresholds for each label. The values will always be between 0.0 and 1.0. If any label does not have a threshold, the `defaultConfidenceThreshold` is used for that label. The default value is `[:]`.
+- `overlapThreshold`: The overlap threshold for the bounding boxes. The value will always be between 0.0 and 1.0. The default value is `0.5`.
 
 ## See Also
 

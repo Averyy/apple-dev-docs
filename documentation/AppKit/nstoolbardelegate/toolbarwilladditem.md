@@ -24,7 +24,7 @@ Use this method to cache references to new toolbar items or perform any tasks re
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named [`willAddItemNotification`](nstoolbar/willadditemnotification.md).
 
 ## See Also
 

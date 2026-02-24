@@ -23,7 +23,7 @@ The next event whose mask matches the specified `mask`; otherwise, `nil`.
 - `mask`: The mask that the event to return must match.
 - `expiration`: The date until which to wait for events.
 - `mode`: The run loop mode to use while waiting for events
-- `deqFlag`:   to remove the returned event from the event queue;   to leave the returned event in the queue.
+- `deqFlag`: [`true`](https://developer.apple.com/documentation/Swift/true) to remove the returned event from the event queue; [`false`](https://developer.apple.com/documentation/Swift/false) to leave the returned event in the queue.
 
 ## See Also
 

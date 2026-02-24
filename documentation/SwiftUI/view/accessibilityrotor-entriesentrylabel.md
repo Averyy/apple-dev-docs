@@ -49,8 +49,8 @@ ScrollView {
 ## Parameters
 
 - `rotorLabel`: Localized label identifying this Rotor to the user.
-- `entries`: An array of identifiable values that will be   used to generate the entries of the Rotor. The identifiers   of the   values must match up with identifiers in a    or explicit   calls within the  .   When the user navigates to entries from this Rotor, SwiftUI will   automatically scroll them into place as needed.
-- `entryLabel`: Key path on the   type that can be   used to get a user-visible label for every Rotor entry. This is used   on macOS when the user opens the list of entries for the Rotor.
+- `entries`: An array of identifiable values that will be used to generate the entries of the Rotor. The identifiers of the `Identifiable` values must match up with identifiers in a `ForEach` or explicit `id` calls within the `ScrollView`. When the user navigates to entries from this Rotor, SwiftUI will automatically scroll them into place as needed.
+- `entryLabel`: Key path on the `Identifiable` type that can be used to get a user-visible label for every Rotor entry. This is used on macOS when the user opens the list of entries for the Rotor.
 
 ## See Also
 

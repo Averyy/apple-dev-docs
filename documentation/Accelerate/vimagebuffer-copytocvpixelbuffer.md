@@ -31,11 +31,11 @@ For compatibility with Core Video, vImage substitutes gamma `1/1.961` for [`kCVI
 ## Parameters
 
 - `buffer`: The source vImage buffer.
-- `bufferFormat`: A   structure that specifies the image format of the   structure. If   is  , the function uses  .
-- `cvPixelBuffer`: The destination   instance. It’s not necessary to lock the pixel buffer before calling this function.
-- `cvImageFormat`: An optional   instance that specifies the pixel format of the source pixel buffer. If this parameter is  , the function attempts to derive this information from the Core Video pixel buffer.
+- `bufferFormat`: A [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure that specifies the image format of the [`vImage_Buffer`](vimage_buffer.md) structure. If [`colorSpace`](vimage_cgimageformat/colorspace.md) is `nil`, the function uses [`sRGB`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace/sRGB).
+- `cvPixelBuffer`: The destination [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) instance. It’s not necessary to lock the pixel buffer before calling this function.
+- `cvImageFormat`: An optional [`vImageCVImageFormat`](vimagecvimageformat.md) instance that specifies the pixel format of the source pixel buffer. If this parameter is `nil`, the function attempts to derive this information from the Core Video pixel buffer.
 - `backgroundColor`: If the source image contains alpha information and the destination format doesn’t contain alpha information, this function flattens the source image against this parameter.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass  ; otherwise, pass  .
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
 
 
 ---

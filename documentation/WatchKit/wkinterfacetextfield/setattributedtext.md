@@ -16,7 +16,7 @@ func setAttributedText(_ attributedText: NSAttributedString?)
 
 ## Parameters
 
-- `attributedText`: The styled text displayed in the text field. Specifying   clears the current text.
+- `attributedText`: The styled text displayed in the text field. Specifying `nil` clears the current text.
 
 ## See Also
 

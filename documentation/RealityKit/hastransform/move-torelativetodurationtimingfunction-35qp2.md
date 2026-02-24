@@ -30,10 +30,10 @@ Animating the scale of an entity to 0 will cause a subsequent inverse of the ent
 
 ## Parameters
 
-- `target`: A   instance that indicates the new location.
-- `referenceEntity`: The entity that defines a frame of reference. Set   this to   to indicate world space.
+- `target`: A [`Transform`](transform.md) instance that indicates the new location.
+- `referenceEntity`: The entity that defines a frame of reference. Set this to `nil` to indicate world space.
 - `duration`: The time in seconds over which the move should occur.
-- `timingFunction`: A timing function that controls the progress of the   animation.
+- `timingFunction`: A timing function that controls the progress of the animation.
 
 ## See Also
 

@@ -25,7 +25,7 @@ This initializer returns `nil` for a `nil` `flags` argument.
 
 ## Parameters
 
-- `flags`: An array of sound-resonance effects to include in the spatial pipeline’s output. The framework adds an entry to the   property for each element that the app includes in this collection.
+- `flags`: An array of sound-resonance effects to include in the spatial pipeline’s output. The framework adds an entry to the [`entries`](phasespatialpipeline/entries.md) property for each element that the app includes in this collection.
 
 ## See Also
 

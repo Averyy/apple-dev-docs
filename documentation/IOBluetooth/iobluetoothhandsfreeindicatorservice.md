@@ -18,6 +18,9 @@ let IOBluetoothHandsFreeIndicatorService: String
 
 The possible values for the carrier network connection indicator are:
 
+- **`0`**: The phone isn’t connected to a carrier network.
+- **`1`**: The phone is connected to a carrier network.
+
 ## See Also
 
 - [let IOBluetoothHandsFreeIndicatorRoam: String](iobluetoothhandsfreeindicatorroam.md)

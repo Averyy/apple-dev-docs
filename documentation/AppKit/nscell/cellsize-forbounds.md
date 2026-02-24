@@ -22,7 +22,7 @@ To support constraint-based layout, when the content of a custom cell changes in
 
 ## Parameters
 
-- `rect`: The size of the cell, or the size of the   parameter if the cell is not a text or image cell. If the cell is an image cell but no image has been set, returns  .
+- `rect`: The size of the cell, or the size of the `aRect` parameter if the cell is not a text or image cell. If the cell is an image cell but no image has been set, returns `NSZeroSize`.
 
 ## See Also
 

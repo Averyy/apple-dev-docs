@@ -22,7 +22,7 @@ struct SparseCGOptions
 
 #### Overview
 
-Use CG to solve  when  is symmetric positive-definite. The method may break down or fail to converge if  isn’t positive-definite.
+Use CG to solve *Ax = b* when *A* is symmetric positive-definite. The method may break down or fail to converge if *A* isn’t positive-definite.
 
 For square, full-rank, unsymmetric or indefinite equations, use [`SparseGMRES(_:)`](sparsegmres(_:).md). For rectangular or singular systems, use [`SparseLSMR(_:)`](sparselsmr(_:).md).
 

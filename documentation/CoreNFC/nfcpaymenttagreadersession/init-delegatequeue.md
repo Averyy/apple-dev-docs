@@ -25,7 +25,7 @@ When the session discovers an ISO 7816-compatible tag, the session performs a `S
 ## Parameters
 
 - `delegate`: A delegate that receives callbacks about discovered tags and session life cycle events. The session holds a weak reference to the delegate.
-- `queue`: A dispatch queue on which to perform delegate callbacks. The session object retains the provided dispatch queue. If this value is  , the framework creates an internal serial dispatch queue for the session.
+- `queue`: A dispatch queue on which to perform delegate callbacks. The session object retains the provided dispatch queue. If this value is `nil`, the framework creates an internal serial dispatch queue for the session.
 
 ## See Also
 

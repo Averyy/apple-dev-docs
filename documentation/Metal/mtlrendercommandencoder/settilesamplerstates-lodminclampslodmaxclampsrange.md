@@ -29,10 +29,10 @@ By default, the sampler state at each index is `nil`.
 
 ## Parameters
 
-- `samplers`: An array of   instances the command assigns to entries in the tile shader argument table for sampler states.
-- `lodMinClamps`: An array of floating-point values. Each element is the smallest level of detail value a tile shader can use when it samples a texture with the corresponding element in  .
-- `lodMaxClamps`: An array of floating-point values. Each element is the largest level of detail value a tile shader can use when it samples a texture with the corresponding element in  .
-- `range`: A span of integers that represent the entries in the tile shader argument table for sampler states. Each entry stores a record of the corresponding element in  .
+- `samplers`: An array of [`MTLSamplerState`](mtlsamplerstate.md) instances the command assigns to entries in the tile shader argument table for sampler states.
+- `lodMinClamps`: An array of floating-point values. Each element is the smallest level of detail value a tile shader can use when it samples a texture with the corresponding element in `samplers`.
+- `lodMaxClamps`: An array of floating-point values. Each element is the largest level of detail value a tile shader can use when it samples a texture with the corresponding element in `samplers`.
+- `range`: A span of integers that represent the entries in the tile shader argument table for sampler states. Each entry stores a record of the corresponding element in `samplers`.
 
 ## See Also
 

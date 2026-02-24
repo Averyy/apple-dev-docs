@@ -28,13 +28,25 @@ class NSArray
 
 You can use this type in Swift instead of an [`Array`](https://developer.apple.com/documentation/Swift/Array) constant in cases that require reference semantics.
 
-`NSArray` and its subclass [`NSMutableArray`](nsmutablearray.md) manage ordered collections of objects called . `NSArray` creates static arrays, and `NSMutableArray` creates dynamic arrays. You can use arrays when you need an ordered collection of objects.
+`NSArray` and its subclass [`NSMutableArray`](nsmutablearray.md) manage ordered collections of objects called **arrays**. `NSArray` creates static arrays, and `NSMutableArray` creates dynamic arrays. You can use arrays when you need an ordered collection of objects.
 
 `NSArray` is “toll-free bridged” with its Core Foundation counterpart, [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
 ##### Creating Nsarray Objects Using Array Literals
 
-In addition to the provided initializers, such as [`initWithObjects:`](nsarray/initwithobjects:.md), you can create an `NSArray` object using an .
+In addition to the provided initializers, such as [`initWithObjects:`](nsarray/initwithobjects:.md), you can create an `NSArray` object using an *array literal*.
+
+**Swift**:
+
+```swift
+let array: NSArray = [someObject, "Hello, World!", 42]
+```
+
+**Objective-C**:
+
+```objc
+NSArray *array = @[someObject, @"Hello, World!", @42];
+```
 
 In Objective-C, the compiler generates code that makes an underlying call to the [`init(objects:count:)`](nsarray/init(objects:count:)-7dct1.md) method.
 
@@ -51,7 +63,19 @@ In Swift, the `NSArray` class conforms to the `ArrayLiteralConvertible` protocol
 
 ##### Accessing Values Using Subscripting
 
-In addition to the provided instance methods, such as [`object(at:)`](nsarray/object(at:).md), you can access `NSArray` values by their indexes using .
+In addition to the provided instance methods, such as [`object(at:)`](nsarray/object(at:).md), you can access `NSArray` values by their indexes using *subscripting*.
+
+**Swift**:
+
+```swift
+let value = array[3]
+```
+
+**Objective-C**:
+
+```objc
+id value = array[3];
+```
 
 ##### Subclassing Notes
 
@@ -62,7 +86,7 @@ There is typically little reason to subclass `NSArray`. The class does well what
 
 ###### Methods to Override
 
-Any subclass of `NSArray`     override the primitive instance methods [`count`](nsarray/count.md) and [`object(at:)`](nsarray/object(at:).md). These methods must operate on the backing store that you provide for the elements of the collection. For this backing store you can use a static array, a standard `NSArray` object, or some other data type or mechanism. You may also choose to override, partially or fully, any other `NSArray` method for which you want to provide an alternative implementation.
+Any subclass of `NSArray`    *must* override the primitive instance methods [`count`](nsarray/count.md) and [`object(at:)`](nsarray/object(at:).md). These methods must operate on the backing store that you provide for the elements of the collection. For this backing store you can use a static array, a standard `NSArray` object, or some other data type or mechanism. You may also choose to override, partially or fully, any other `NSArray` method for which you want to provide an alternative implementation.
 
 You might want to implement an initializer for your subclass that is suited to the backing store that the subclass is managing. If you do, your initializer must invoke one of the designated initializers of the `NSArray` class, either [`init()`](nsarray/init().md) or [`init(objects:count:)`](nsarray/init(objects:count:)-5odxv.md). The `NSArray` class adopts the [`NSCopying`](nscopying.md), [`NSMutableCopying`](nsmutablecopying.md), and [`NSCoding`](nscoding.md) protocols; custom subclasses of `NSArray` should override the methods in these protocols as necessary.
 

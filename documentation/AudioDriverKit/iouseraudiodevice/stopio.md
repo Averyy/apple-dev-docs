@@ -28,7 +28,7 @@ All streams added to the device also receive a call to their [`StopIO`](iouserau
 
 ## Parameters
 
-- `in_flags`: A   to indicate I/O shutdown behavior.
+- `in_flags`: A `IOUserAudioStartStopFlag` to indicate I/O shutdown behavior.
 
 ## See Also
 

@@ -30,7 +30,7 @@ The returned value may be `NULL`.
 
 ## Parameters
 
-- `index`: The index of an element in the receiver. This value must be less than the   of the receiver.
+- `index`: The index of an element in the receiver. This value must be less than the [`count`](nspointerarray/count.md) of the receiver.
 
 ## See Also
 

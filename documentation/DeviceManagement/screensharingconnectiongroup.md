@@ -47,6 +47,12 @@ Specify `com.apple.configuration.screensharing.connection.group` as the declarat
 }
 ```
 
+## Properties
+
+- `ConnectionGroupUUID` (string) *(required)*: A unique identifier for this connection group.
+- `GroupName` (string) *(required)*: The name of the connection group.
+- `Members` ([string]) *(required)*: An array of `ConnectionUUID`s that represent connections declared in `ScreenSharingConnection` configurations that are members of this group.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

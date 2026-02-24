@@ -28,6 +28,28 @@ You can fetch previously saved credential identities with [`credentialIdentities
 
 When the user disables your extension, the system clears and disables your shared store. So before making updates, check to see that the store’s enabled to avoid unnecessary activity:
 
+**Swift**:
+
+```swift
+let store = ASCredentialIdentityStore.shared
+store.getState { state in
+    if state.isEnabled {
+        // Add, remove, or update identities.
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+ASCredentialIdentityStore *store = [ASCredentialIdentityStore sharedStore];
+[store getCredentialIdentityStoreStateWithCompletion:^(ASCredentialIdentityStoreState * _Nonnull state) {
+    if (state.enabled) {
+        // Add, remove, or update identities.
+    }
+}];
+```
+
 ## Topics
 
 ### Getting the shared store

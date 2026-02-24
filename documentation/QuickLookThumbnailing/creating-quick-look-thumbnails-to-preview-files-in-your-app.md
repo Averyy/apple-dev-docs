@@ -6,7 +6,7 @@ Generate thumbnails of images, text files, PDFs, audio files, videos, and more.
 
 #### Overview
 
-Apps often need to display a small, high-quality miniature representation, or , of a file or its content. The QuickLookThumbnailing framework provides a fast way to generate thumbnails for file types with the [`QLThumbnailGenerator`](qlthumbnailgenerator.md) object. It can create thumbnails for many common file types, including:
+Apps often need to display a small, high-quality miniature representation, or *thumbnail*, of a file or its content. The QuickLookThumbnailing framework provides a fast way to generate thumbnails for file types with the [`QLThumbnailGenerator`](qlthumbnailgenerator.md) object. It can create thumbnails for many common file types, including:
 
 - Images, including raw image file types (the list of supported image formats varies for each platform; use the [`CGImageSourceCopyTypeIdentifiers()`](https://developer.apple.com/documentation/ImageIO/CGImageSourceCopyTypeIdentifiers()) method to retrieve a list of supported image types)
 - Live Photos

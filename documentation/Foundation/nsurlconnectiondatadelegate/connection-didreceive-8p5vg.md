@@ -27,7 +27,7 @@ This method provides the only way for an asynchronous delegate to retrieve the l
 ## Parameters
 
 - `connection`: The connection sending the message.
-- `data`: The newly available data. The delegate should concatenate the contents of each   object delivered to build up the complete data for a URL load.
+- `data`: The newly available data. The delegate should concatenate the contents of each `data` object delivered to build up the complete data for a URL load.
 
 ## See Also
 

@@ -35,9 +35,9 @@ For information about how to use shape styles, see [`ShapeStyle`](shapestyle.md)
 
 ## Parameters
 
-- `gradient`: The gradient to use for filling the shape, providing the   colors and their relative stop locations.
-- `center`: The relative center of the gradient, mapped from the unit   space into the bounding rectangle of the filled shape.
-- `angle`: The angle to offset the beginning of the gradient’s full   turn.
+- `gradient`: The gradient to use for filling the shape, providing the colors and their relative stop locations.
+- `center`: The relative center of the gradient, mapped from the unit space into the bounding rectangle of the filled shape.
+- `angle`: The angle to offset the beginning of the gradient’s full turn.
 
 ## See Also
 

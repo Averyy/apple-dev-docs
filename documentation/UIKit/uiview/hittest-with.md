@@ -39,7 +39,7 @@ This method doesn’t report points that lie outside the view’s bounds as hits
 ## Parameters
 
 - `point`: A point in the view’s local coordinate system.
-- `event`: The event that warrants a call to this method. If you’re calling this method from outside your event-handling code, you can specify  .
+- `event`: The event that warrants a call to this method. If you’re calling this method from outside your event-handling code, you can specify `nil`.
 
 ## See Also
 

@@ -31,6 +31,13 @@ To obtain only the record for the currently active user matching a `clientUserId
 
 To obtain a retired user record previously associated with an iTunes Store account, your MDM server can pass either the `userId` for that record or the `clientUserIdStr` and `itsIdHash` for that record.
 
+## Properties
+
+- `clientUserIdStr` (string): The identifier supplied by the client when registering a user. Either `clientUserIdStr` or `userId` is required. If both `clientUserIdStr`  and `userId` are supplied, `userId` takes precedence.
+- `itsIdHash` (string): The hash of the user’s iTunes Store ID.
+- `sToken` (string) *(required)*: The authentication token. For more information, see [`Authentication`](managing-apps-and-books-through-web-services-legacy#Authentication.md).
+- `userId` (int64): The unique identifier assigned by the VPP when registering the user. Either `clientUserIdStr` or `userId` is required. If both `clientUserIdStr` and `userId` are supplied, `userId` takes precedence.
+
 ## See Also
 
 - [object GetVppUserResponse](getvppuserresponse.md)

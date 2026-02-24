@@ -22,9 +22,9 @@ This method is not invoked to send action messages to target objects in response
 
 ## Parameters
 
-- `selector`: The selector to send to the object for each cell. This must represent a method that takes a single argument: the id of the current cell in the iteration.  ’s return value must be a BOOL. If   returns   for any cell,   terminates immediately, without sending the message for the remaining cells. If it returns  ,   proceeds to the next cell.
+- `selector`: The selector to send to the object for each cell. This must represent a method that takes a single argument: the id of the current cell in the iteration. `aSelector`’s return value must be a BOOL. If `aSelector` returns [`false`](https://developer.apple.com/documentation/Swift/false) for any cell, [`NSMatrix`](nsmatrix.md) terminates immediately, without sending the message for the remaining cells. If it returns [`true`](https://developer.apple.com/documentation/Swift/true), [`NSMatrix`](nsmatrix.md) proceeds to the next cell.
 - `object`: The object that is sent the selector for each cell in the matrix.
-- `flag`:   if the method should iterate through all cells in the matrix;   if it should iterate through just the selected cells in the matrix.
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) if the method should iterate through all cells in the matrix; [`false`](https://developer.apple.com/documentation/Swift/false) if it should iterate through just the selected cells in the matrix.
 
 ## See Also
 

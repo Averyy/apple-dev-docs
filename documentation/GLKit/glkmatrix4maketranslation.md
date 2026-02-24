@@ -23,9 +23,9 @@ A new translation matrix.
 
 ## Parameters
 
-- `tx`: The amount to translate the   component.
-- `ty`: The amount to translate the   component.
-- `tz`: The amount to translate the   component.
+- `tx`: The amount to translate the `x` component.
+- `ty`: The amount to translate the `y` component.
+- `tz`: The amount to translate the `z` component.
 
 ## See Also
 

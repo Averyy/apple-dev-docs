@@ -22,7 +22,7 @@ func setFrontFacing(_ frontFacingWinding: MTLWinding)
 
 ## Parameters
 
-- `frontFacingWinding`: A   value that determines which side of a primitive the render pipeline   interprets as front facing.
+- `frontFacingWinding`: A [`MTLWinding`](mtlwinding.md) value that determines which side of a primitive the render pipeline interprets as front facing.
 
 ## See Also
 

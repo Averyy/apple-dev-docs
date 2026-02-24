@@ -25,7 +25,7 @@ Call this method in your sample handler when it cannot proceed due to an error.
 
 ## Parameters
 
-- `error`: An NSError object that is passed back to the broadcasting app through the   method.
+- `error`: An NSError object that is passed back to the broadcasting app through the [`broadcastController(_:didFinishWithError:)`](rpbroadcastcontrollerdelegate/broadcastcontroller(_:didfinishwitherror:).md) method.
 
 ## See Also
 

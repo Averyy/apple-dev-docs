@@ -29,7 +29,7 @@ For more information, see [`Core Bluetooth Programming Guide`](https://developer
 ## Parameters
 
 - `peripheral`: The peripheral to which the services belong.
-- `error`: The reason the call failed, or   if no error occurred.
+- `error`: The reason the call failed, or `nil` if no error occurred.
 
 ## See Also
 

@@ -31,7 +31,7 @@ The file system representation format is described in File Encodings and Fonts.
 ## Parameters
 
 - `buffer`: A buffer large enough to hold the path. On return, contains a null-terminated C string in file system representation.
-- `maxBufferLength`: The size of   in bytes (typically   or  ).
+- `maxBufferLength`: The size of `buffer` in bytes (typically `MAXPATHLEN` or `PATH_MAX`).
 
 ## See Also
 

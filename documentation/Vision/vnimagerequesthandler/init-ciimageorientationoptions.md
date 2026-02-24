@@ -21,9 +21,9 @@ init(ciImage image: CIImage, orientation: CGImagePropertyOrientation, options: [
 
 ## Parameters
 
-- `image`: A   containing the image to be used for performing the requests. Image content is immutable.
-- `orientation`: The orientation of the input  .
-- `options`: An optional dictionary containing   keys to auxiliary image data.
+- `image`: A [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) containing the image to be used for performing the requests. Image content is immutable.
+- `orientation`: The orientation of the input `image`.
+- `options`: An optional dictionary containing [`VNImageOption`](vnimageoption.md) keys to auxiliary image data.
 
 ## See Also
 

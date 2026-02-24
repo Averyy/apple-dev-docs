@@ -43,7 +43,7 @@ TextField("TouchBar Demo", text: $placeholder)
 
 ## Parameters
 
-- `content`: A collection of views to be displayed by the Touch   Bar.
+- `content`: A collection of views to be displayed by the Touch Bar.
 
 ## See Also
 

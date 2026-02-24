@@ -24,8 +24,8 @@ func update<V>(value: inout V, velocity: inout V, target: V, deltaTime: TimeInte
 
 - `value`: The current value of the spring.
 - `velocity`: The current velocity of the spring.
-- `target`: The target that   is moving towards.
-- `deltaTime`: The amount of time that has passed since the spring was   at the position specified by  .
+- `target`: The target that `value` is moving towards.
+- `deltaTime`: The amount of time that has passed since the spring was at the position specified by `value`.
 
 
 ---

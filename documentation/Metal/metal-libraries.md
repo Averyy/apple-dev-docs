@@ -6,7 +6,7 @@ Compile and manage Metal libraries from the command line.
 
 #### Overview
 
-By default, your Metal shaders compile as a format called  (Metal IR), a GPU-independent bytecode. At your app’s runtime, Metal compiles this bytecode to a GPU-specific binary for the host device. If you provide your shader functions as strings, they first compile to Metal IR on device, and then go through a secondary compilation for GPU.
+By default, your Metal shaders compile as a format called *Metal intermediate representation* (Metal IR), a GPU-independent bytecode. At your app’s runtime, Metal compiles this bytecode to a GPU-specific binary for the host device. If you provide your shader functions as strings, they first compile to Metal IR on device, and then go through a secondary compilation for GPU.
 
 Metal source files you add to an app’s source compilation Build Phase compile to a Metal IR library named `default.metallib`. Load this library at runtime by calling the [`makeDefaultLibrary()`](mtldevice/makedefaultlibrary().md) method of an [`MTLDevice`](mtldevice.md) in your app. For more complicated projects, you may want to create individual targets for Metal libraries, modify them in build scripts, or perform other optimizations.
 

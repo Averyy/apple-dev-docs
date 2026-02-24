@@ -27,10 +27,10 @@ In order for the interface to appear, `isPresented` must be `true`. When the ope
 
 - `isPresented`: A binding to whether the interface should be shown.
 - `document`: The in-memory document to export.
-- `contentTypes`: The list of supported content types which can   be exported. If not provided,    are used.
-- `defaultFilename`: If provided, the default name to use   for the exported file, which will the user will have   an opportunity to edit prior to the export.
-- `onCompletion`: A callback that will be invoked when the operation has   succeeded or failed. The   indicates whether   the operation succeeded or failed.
-- `onCancellation`: A callback that will be invoked   if the user cancels the operation.
+- `contentTypes`: The list of supported content types which can be exported. If not provided, `FileDocument.writableContentTypes` are used.
+- `defaultFilename`: If provided, the default name to use for the exported file, which will the user will have an opportunity to edit prior to the export.
+- `onCompletion`: A callback that will be invoked when the operation has succeeded or failed. The `result` indicates whether the operation succeeded or failed.
+- `onCancellation`: A callback that will be invoked if the user cancels the operation.
 
 ## See Also
 

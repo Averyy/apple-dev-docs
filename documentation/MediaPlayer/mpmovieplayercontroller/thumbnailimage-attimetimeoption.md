@@ -29,7 +29,7 @@ This method captures the thumbnail image synchronously from the current movie (w
 ## Parameters
 
 - `playbackTime`: The time at which to capture the thumbnail image. The time value represents the number of seconds from the beginning of the current movie.
-- `option`: The option to use when determining which specific frame to use for the thumbnail image. For a list of possible values, see  .
+- `option`: The option to use when determining which specific frame to use for the thumbnail image. For a list of possible values, see [`MPMovieTimeOption`](mpmovietimeoption.md).
 
 ## See Also
 

@@ -16,7 +16,7 @@ init(networkRule: NENetworkRule, action: NEFilterAction)
 
 ## Parameters
 
-- `networkRule`: An   object that defines the network traffic characteristics that this rule matches.
+- `networkRule`: An [`NENetworkRule`](nenetworkrule.md) object that defines the network traffic characteristics that this rule matches.
 - `action`: The action to take when the network rule matches.
 
 

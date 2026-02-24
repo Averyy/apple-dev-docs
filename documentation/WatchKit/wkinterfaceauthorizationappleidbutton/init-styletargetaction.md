@@ -22,7 +22,7 @@ Use this initializer to create an instance that you can wrap in a [`WKInterfaceO
 
 ## Parameters
 
-- `style`: The button’s style. For a list of possible values, see  .
+- `style`: The button’s style. For a list of possible values, see [`WKInterfaceAuthorizationAppleIDButton.Style`](wkinterfaceauthorizationappleidbutton/style.md).
 - `target`: The object whose action method is called.
 - `action`: A selector identifying the action method called when the user taps the button.
 

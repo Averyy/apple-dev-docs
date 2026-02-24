@@ -20,7 +20,7 @@ var kAudioSessionCategory_MediaPlayback: Int { get }
 
 #### Discussion
 
-When using this category, your app audio continues with the Silent switch set to silent or when the screen locks. (The switch is called the  on iPhone.)
+When using this category, your app audio continues with the Silent switch set to silent or when the screen locks. (The switch is called the *Ring/Silent switch* on iPhone.)
 
 This category normally prevents audio from other apps from mixing with your app’s audio. To allow mixing for this category, use the [`kAudioSessionProperty_OverrideCategoryMixWithOthers`](kaudiosessionproperty_overridecategorymixwithothers.md) property.
 

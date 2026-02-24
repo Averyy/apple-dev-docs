@@ -22,7 +22,7 @@ func setComputePipelineState(_ state: any MTLComputePipelineState)
 
 ## Parameters
 
-- `state`: A non-   .
+- `state`: A non-`nil` [`MTLComputePipelineState`](mtlcomputepipelinestate.md).
 
 ## See Also
 

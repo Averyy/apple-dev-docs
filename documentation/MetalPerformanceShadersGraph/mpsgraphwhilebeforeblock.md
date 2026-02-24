@@ -25,8 +25,8 @@ Tensor MUST be set and have a single scalar value, used to decide between execut
 
 ## Parameters
 
-- `inputTensors`: Input tensors to the  , for the first iteration will be same as initialInputs passed to the while loop.
-- `resultTensors`: A valid   array with results forwarded to after block or returned from the while loop depending on the predicate tensor. It will be empty and the caller block should fill it up before returning.
+- `inputTensors`: Input tensors to the `whileConditionBlock`, for the first iteration will be same as initialInputs passed to the while loop.
+- `resultTensors`: A valid `MPSGraphTensor` array with results forwarded to after block or returned from the while loop depending on the predicate tensor. It will be empty and the caller block should fill it up before returning.
 
 
 ---

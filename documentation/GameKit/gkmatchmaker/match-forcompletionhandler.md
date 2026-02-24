@@ -26,7 +26,8 @@ Use this method when you implement your own interface to inform you when the loc
 ## Parameters
 
 - `invite`: The invitation that the local player accepts.
-- `completionHandler`: This block receives the following parameters:
+- `completionHandler`: The block that GameKit calls when it completes the request. This block receives the following parameters: - **`match`**: The match that GameKit creates when the local player accepts the invitation. If unsuccessful, this parameter is `nil`.
+- **`error`**: Describes an error if one occurs, or `nil` if the operation completes.
 
 
 ---

@@ -30,8 +30,8 @@ The photo output calls this method when the entire capture process has finished,
 ## Parameters
 
 - `output`: The photo output performing the capture.
-- `resolvedSettings`: An object describing the settings used for this capture. Match this object’s   value to the   property of the photo settings object you initiated capture with to determine which capture request this delegate call corresponds to. You can also use this object to find out which values the photo output has chosen for automatic settings.
-- `error`: If the capture process did not complete successfully, an error object describing the failure; otherwise,  .
+- `resolvedSettings`: An object describing the settings used for this capture. Match this object’s [`uniqueID`](avcapturephotosettings/uniqueid.md) value to the [`uniqueID`](avcapturephotosettings/uniqueid.md) property of the photo settings object you initiated capture with to determine which capture request this delegate call corresponds to. You can also use this object to find out which values the photo output has chosen for automatic settings.
+- `error`: If the capture process did not complete successfully, an error object describing the failure; otherwise, `nil`.
 
 ## See Also
 

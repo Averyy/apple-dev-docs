@@ -25,8 +25,8 @@ You can use the [`SecRequirementCopyData(_:_:_:)`](secrequirementcopydata(_:_:_:
 
 ## Parameters
 
-- `data`: A binary blob created earlier from a valid code requirement object by calling the   function.
-- `flags`: Optional flags; see   for possible values. Pass   for standard behavior.
+- `data`: A binary blob created earlier from a valid code requirement object by calling the [`SecRequirementCopyData(_:_:_:)`](secrequirementcopydata(_:_:_:).md) function.
+- `flags`: Optional flags; see [`SecCSFlags`](seccsflags.md) for possible values. Pass [`kSecCSDefaultFlags`](seccsflags/kseccsdefaultflags.md) for standard behavior.
 - `requirement`: On return, contains a code requirement object that behaves identically to the one from which the data blob was obtained.
 
 

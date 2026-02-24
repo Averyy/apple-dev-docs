@@ -27,7 +27,7 @@ Use this method in your dext to prefill a 16-byte CDB for the standard `REQUEST 
 - `request`: An object that contains the request information.
 - `bufAddr`: A buffer to receive the sense-request data.
 - `senseLength`: The length of requested sense data, in bytes.
-- `response`: An empty   object. On return, the framework populates this object with the response information.
+- `response`: An empty [`SCSIDeviceInParameters`](scsideviceinparameters.md) object. On return, the framework populates this object with the response information.
 
 ## See Also
 

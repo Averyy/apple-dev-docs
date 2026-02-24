@@ -20,12 +20,12 @@ Matrix `a` is multiplied by `alpha` and then by vector `x`; the resulting vector
 
 ## Parameters
 
-- `m`: Number of rows in  , and the length of vector  ; must be a multiple of 4.
-- `n`: Number of columns in  , and the length of vector  ; must be a multiple of 4.
-- `alpha`: Scalar multiplier for matrix  .
-- `a`:   by   matrix with elements of type  .
-- `x`: Vector with elements of type  .
-- `y`: Destination vector with   elements of type  .
+- `m`: Number of rows in `a`, and the length of vector `y`; must be a multiple of 4.
+- `n`: Number of columns in `a`, and the length of vector `x`; must be a multiple of 4.
+- `alpha`: Scalar multiplier for matrix `a`.
+- `a`: `m` by `n` matrix with elements of type `float`.
+- `x`: Vector with elements of type `float`.
+- `y`: Destination vector with `n` elements of type `float`.
 
 ## See Also
 

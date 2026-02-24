@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: var
 
-An operation that calculates the element-wise result of  raised to the power of its input.
+An operation that calculates the element-wise result of *e* raised to the power of its input.
 
 **Availability**:
 - iOS 14.0+

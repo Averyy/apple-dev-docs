@@ -27,7 +27,7 @@ After this function is called, any further calls to read/write packets on `inter
 
 - `interface`: The interface reference.
 - `queue`: The queue on which the handler is scheduled.
-- `handler`: A block to be executed after interface is started.
+- `handler`: A block to be executed after interface is started. - status: `vmnet` on success, or `vmnet` on failure.
 
 ## See Also
 

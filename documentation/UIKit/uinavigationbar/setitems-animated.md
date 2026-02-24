@@ -26,8 +26,8 @@ If animations are enabled, this method decides which type of transition to perfo
 
 ## Parameters
 
-- `items`: The   objects to place in the stack. The front-to-back order of the items in this array represents the new bottom-to-top order of the items in the navigation stack. Thus, the last item added to the array becomes the top item of the navigation stack.
-- `animated`: If  , animate the pushing or popping of the top stack item. If  , replace the stack items without any animations.
+- `items`: The [`UINavigationItem`](uinavigationitem.md) objects to place in the stack. The front-to-back order of the items in this array represents the new bottom-to-top order of the items in the navigation stack. Thus, the last item added to the array becomes the top item of the navigation stack.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), animate the pushing or popping of the top stack item. If [`false`](https://developer.apple.com/documentation/Swift/false), replace the stack items without any animations.
 
 ## See Also
 

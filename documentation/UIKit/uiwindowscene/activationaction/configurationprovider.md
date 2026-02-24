@@ -23,7 +23,7 @@ An activation configuration you can use to request a window scene.
 
 ## Parameters
 
-- `action`: The   requesting a configuration.
+- `action`: The [`UIWindowScene.ActivationAction`](uiwindowscene/activationaction.md) requesting a configuration.
 
 ## See Also
 

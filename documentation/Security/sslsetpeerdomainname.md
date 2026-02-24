@@ -34,8 +34,8 @@ This function can be called only when no session is active.
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `peerName`: The fully qualified domain name of the peer—for example,  . The name is in the form of a C string, except that   termination is optional.
-- `peerNameLen`: The number of bytes passed in the   parameter.
+- `peerName`: The fully qualified domain name of the peer—for example, `store.apple.com`. The name is in the form of a C string, except that `NULL` termination is optional.
+- `peerNameLen`: The number of bytes passed in the `peerName` parameter.
 
 
 ---

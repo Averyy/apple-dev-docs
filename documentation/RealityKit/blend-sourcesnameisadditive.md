@@ -27,7 +27,7 @@ A blend-tree node that combines the given animations.
 
 - `sources`: The blend-tree nodes to combine.
 - `name`: A unique name for the combined node.
-- `isAdditive`: A Boolean value that indicates whether the animation builds on   the current state of the target entity, or resets the state before running.
+- `isAdditive`: A Boolean value that indicates whether the animation builds on the current state of the target entity, or resets the state before running.
 
 ## See Also
 

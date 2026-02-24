@@ -15,6 +15,11 @@ The command to inform the device that it can continue past Setup Assistant and f
 object UserConfiguredCommand.Command
 ```
 
+## Properties
+
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

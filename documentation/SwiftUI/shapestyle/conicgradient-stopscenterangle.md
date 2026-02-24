@@ -26,9 +26,9 @@ For more information on how to use conic gradients, see [`conicGradient(_:center
 
 ## Parameters
 
-- `stops`: The color stops of the gradient, defining each component   color and their relative location along the gradient’s full length.
-- `center`: The relative center of the gradient, mapped from the unit   space into the bounding rectangle of the filled shape.
-- `angle`: The angle to offset the beginning of the gradient’s full   turn.
+- `stops`: The color stops of the gradient, defining each component color and their relative location along the gradient’s full length.
+- `center`: The relative center of the gradient, mapped from the unit space into the bounding rectangle of the filled shape.
+- `angle`: The angle to offset the beginning of the gradient’s full turn.
 
 ## See Also
 

@@ -22,7 +22,7 @@ static let determiner: NLTag
 
 #### Discussion
 
-Determiners clarify nouns. Common determiners are articles (like  or ), demonstratives (like  or ), quantifiers (like  or ), and possessives (like  or ).
+Determiners clarify nouns. Common determiners are articles (like *a* or *the*), demonstratives (like *this* or *that*), quantifiers (like *all* or *some*), and possessives (like *your* or *their*).
 
 ## See Also
 

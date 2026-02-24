@@ -27,9 +27,9 @@ Compare this function with the [`SecTransformConnectTransforms(_:_:_:_:_:_:)`](s
 ## Parameters
 
 - `transformRef`: The transform whose attribute is to be set.
-- `key`: The name of the attribute to be set. See   for a list of valid keys and possible values.
+- `key`: The name of the attribute to be set. See [`Transform Attributes`](transform-attributes.md) for a list of valid keys and possible values.
 - `value`: The static value to set for the named attribute.
-- `error`: A pointer that the function uses to provide an error object with details if an error occurs. The caller becomes responsible for the object’s memory. Pass   to ignore the error.
+- `error`: A pointer that the function uses to provide an error object with details if an error occurs. The caller becomes responsible for the object’s memory. Pass `NULL` to ignore the error.
 
 
 ---

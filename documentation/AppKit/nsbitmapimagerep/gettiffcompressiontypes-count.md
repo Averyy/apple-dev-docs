@@ -20,7 +20,7 @@ Note that not all compression types can be used for all images: [`NSBitmapImageR
 
 ## Parameters
 
-- `list`: On return, a C array of   constants. This array belongs to the   class; it shouldn’t be freed or altered. See   for the supported TIFF compression types.
+- `list`: On return, a C array of [`NSBitmapImageRep.TIFFCompression`](nsbitmapimagerep/tiffcompression.md) constants. This array belongs to the [`NSBitmapImageRep`](nsbitmapimagerep.md) class; it shouldn’t be freed or altered. See [`NSBitmapImageRep.TIFFCompression`](nsbitmapimagerep/tiffcompression.md) for the supported TIFF compression types.
 - `numTypes`: The number of constants in list.
 
 ## See Also

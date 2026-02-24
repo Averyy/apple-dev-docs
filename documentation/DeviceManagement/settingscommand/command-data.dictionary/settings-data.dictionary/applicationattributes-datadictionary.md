@@ -24,6 +24,12 @@ object SettingsCommand.Command.Settings.ApplicationAttributes
 - [object SettingsCommand.Command.Settings.ApplicationAttributes.Attributes](settingscommand/command-data.dictionary/settings-data.dictionary/applicationattributes-data.dictionary/attributes-data.dictionary.md)
   A dictionary that contains the attributes to apply to the app.
 
+## Properties
+
+- `Attributes` (SettingsCommand.Command.Settings.ApplicationAttributes.Attributes): A dictionary that contains the attributes to apply to the app. Omit this setting to remove existing attributes. This setting is available in iOS 7 and later, and tvOS 10.2 and later.
+- `Identifier` (string) *(required)*: The bundle identifier of the app. > ❗ **Important**:  For a watchOS app, the identifier needs to be the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone to which the watch is paired. Obtain the watch’s bundle identifier for an app with a watch bundle, in the `watchBundleId` key that’s part of the Content Metadata query. For more information on this query, see [`Getting App and Book Information (Legacy)`](getting-app-and-book-information-legacy.md).
+- `Item` (string) *(required)*: A string that identifies this setting.
+
 ## See Also
 
 - [object SettingsCommand.Command.Settings.AccessibilitySettings](settingscommand/command-data.dictionary/settings-data.dictionary/accessibilitysettings-data.dictionary.md)

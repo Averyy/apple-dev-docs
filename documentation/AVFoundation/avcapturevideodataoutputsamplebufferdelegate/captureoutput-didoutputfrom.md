@@ -34,7 +34,7 @@ If your application is causing samples to be dropped by retaining the provided [
 ## Parameters
 
 - `output`: The capture output object.
-- `sampleBuffer`: A   object containing the video frame data and additional information about the frame, such as its format and presentation time.
+- `sampleBuffer`: A `CMSampleBuffer` object containing the video frame data and additional information about the frame, such as its format and presentation time.
 - `connection`: The connection from which the video was received.
 
 ## See Also

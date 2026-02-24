@@ -30,7 +30,7 @@ The receiver, initialized to a predicate of type `type` formed by combining the 
 - `rhs`: The right hand expression.
 - `modifier`: The modifier to apply.
 - `type`: The predicate operator type.
-- `options`: The options to apply (see  ). For no options, pass  .
+- `options`: The options to apply (see [`NSComparisonPredicate.Options`](nscomparisonpredicate/options-swift.struct.md)). For no options, pass `0`.
 
 ## See Also
 

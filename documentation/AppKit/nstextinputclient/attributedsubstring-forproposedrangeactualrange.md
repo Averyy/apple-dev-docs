@@ -26,7 +26,7 @@ An implementation of this method should be prepared for `aRange` to be out of bo
 ## Parameters
 
 - `range`: The range in the text storage from which to create the returned string.
-- `actualRange`: The actual range of the returned string if it was adjusted, for example, to a grapheme cluster boundary or for performance or other reasons.   if range was not adjusted.
+- `actualRange`: The actual range of the returned string if it was adjusted, for example, to a grapheme cluster boundary or for performance or other reasons. `NULL` if range was not adjusted.
 
 ## See Also
 

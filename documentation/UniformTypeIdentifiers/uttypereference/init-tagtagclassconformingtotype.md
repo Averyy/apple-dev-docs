@@ -27,8 +27,8 @@ If the system recognizes the filename extension, the intializer returns the corr
 ## Parameters
 
 - `tag`: The tag, such as a filename extension.
-- `tagClass`: The appropriate tag class, such as  .
-- `supertype`: The type the resulting type must conform to, such as  .
+- `tagClass`: The appropriate tag class, such as [`filenameExtension`](uttagclass/filenameextension.md).
+- `supertype`: The type the resulting type must conform to, such as [`data`](uttype-swift.struct/data.md).
 
 ## See Also
 

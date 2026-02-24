@@ -29,7 +29,7 @@ This method allows the data source to specify that the reordering control for th
 ## Parameters
 
 - `tableView`: The table-view object requesting this information.
-- `indexPath`: An index path locating a row in  .
+- `indexPath`: An index path locating a row in `tableView`.
 
 ## See Also
 

@@ -21,7 +21,7 @@ The pin is positioned so that the base of the pin sits on top of the specified c
 ## Parameters
 
 - `location`: The location at which to display the pin.
-- `pinColor`: The color of the pin. For a list of possible values, see  .
+- `pinColor`: The color of the pin. For a list of possible values, see [`WKInterfaceMapPinColor`](wkinterfacemappincolor.md).
 
 ## See Also
 

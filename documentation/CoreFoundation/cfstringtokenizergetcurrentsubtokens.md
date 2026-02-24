@@ -37,9 +37,9 @@ The `derivedSubTokens` array will have sub tokens added even when the sub token 
 ## Parameters
 
 - `tokenizer`: A CFStringTokenizer object.
-- `ranges`: Upon return, an array of CFRanges containing the ranges of subtokens. The ranges are relative to the string specified to CFStringTokenizerCreate. This parameter can be  .
+- `ranges`: Upon return, an array of CFRanges containing the ranges of subtokens. The ranges are relative to the string specified to CFStringTokenizerCreate. This parameter can be `NULL`.
 - `maxRangeLength`: The maximum number of ranges to return.
-- `derivedSubTokens`: A CFMutableArray to which the derived subtokens are to be added. This parameter can be  .
+- `derivedSubTokens`: A CFMutableArray to which the derived subtokens are to be added. This parameter can be `NULL`.
 
 ## See Also
 

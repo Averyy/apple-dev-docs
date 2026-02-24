@@ -21,9 +21,9 @@ func perform(_ requests: [VNRequest], on image: CIImage, orientation: CGImagePro
 
 ## Parameters
 
-- `requests`: An array of   requests to perform.
-- `image`: The input   on which to perform the request.
-- `orientation`: The orientation of the input  .
+- `requests`: An array of [`VNRequest`](vnrequest.md) requests to perform.
+- `image`: The input [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) on which to perform the request.
+- `orientation`: The orientation of the input `image`.
 
 ## See Also
 

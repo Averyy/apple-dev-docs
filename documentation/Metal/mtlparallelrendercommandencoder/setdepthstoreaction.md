@@ -26,7 +26,7 @@ If the store action for the given depth attachment was set to [`MTLStoreAction.u
 
 ## Parameters
 
-- `storeAction`: The desired store action for the depth attachment. This value can’t be  .
+- `storeAction`: The desired store action for the depth attachment. This value can’t be [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md).
 
 ## See Also
 

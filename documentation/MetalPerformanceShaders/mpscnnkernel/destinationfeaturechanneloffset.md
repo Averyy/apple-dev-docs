@@ -27,7 +27,7 @@ For example, suppose a destination image has 24 channels and a kernel outputs 8 
 
 Note that this offset applies independently to each image when the [`MPSImage`](mpsimage.md) object is a container for multiple images and the [`MPSCNNKernel`](mpscnnkernel.md) object is processing multiple images (i.e., `clipRect.size.depth > 1`).
 
-The default value is `0`. Any other value specified must be a multiple of `4`. If the kernel outputs `N` channels, the destination image  have at least `destinationFeatureChannelOffset + N` channels. Using a destination image with an insufficient number of feature channels results in an error.
+The default value is `0`. Any other value specified must be a multiple of `4`. If the kernel outputs `N` channels, the destination image **must** have at least `destinationFeatureChannelOffset + N` channels. Using a destination image with an insufficient number of feature channels results in an error.
 
 For example, if a convolution filter outputs 32 channels, and the destination image has 64 channels, then it is an error to set `destinationFeatureChannelOffset > 32`.
 

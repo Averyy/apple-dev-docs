@@ -44,7 +44,7 @@ You must fully specify the video settings dictionary when using this initializer
 ## Parameters
 
 - `mediaType`: The media type of the samples the input accepts.
-- `outputSettings`: The settings to use for encoding the media you append to the output. Create an output settings dictionary manually, or use   to create preset-based settings.
+- `outputSettings`: The settings to use for encoding the media you append to the output. Create an output settings dictionary manually, or use [`AVOutputSettingsAssistant`](avoutputsettingsassistant.md) to create preset-based settings.
 
 ## See Also
 

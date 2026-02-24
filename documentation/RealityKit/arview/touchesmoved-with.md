@@ -24,7 +24,7 @@ See [`touchesMoved(_:with:)`](https://developer.apple.com/documentation/UIKit/UI
 
 ## Parameters
 
-- `touches`: A set of    instances that represent the touches whose values changed. These touches   all belong to the specified  . For touches in a view, this set   contains only one touch by default. To receive multiple touches, set the   view’s     property to  .
+- `touches`: A set of `UITouch` instances that represent the touches whose values changed. These touches all belong to the specified `event`. For touches in a view, this set contains only one touch by default. To receive multiple touches, set the view’s [`isMultipleTouchEnabled`](https://developer.apple.com/documentation/UIKit/UIView/isMultipleTouchEnabled) property to `true`.
 - `event`: The event to which the touches belong.
 
 ## See Also

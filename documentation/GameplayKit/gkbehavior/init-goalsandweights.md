@@ -26,7 +26,7 @@ A new behavior object. To assign a set of goals to an agent, use its [`behavior`
 ## Parameters
 
 - `goals`: An array of goal objects.
-- `weights`: An array of numbers, each the weight to be applied to the goal at the corresponding index in the   array.
+- `weights`: An array of numbers, each the weight to be applied to the goal at the corresponding index in the `goals` array.
 
 ## See Also
 

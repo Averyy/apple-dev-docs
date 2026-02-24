@@ -29,10 +29,10 @@ To search an entire string or a range within that string, call this method in a 
 ## Parameters
 
 - `stringToCheck`: The string to check for misspelled words.
-- `range`: The range of   to check for a misspelled word.
-- `startingOffset`: The offset within   of   to begin checking for misspelled words.
-- `wrapFlag`:   to continue checking from the beginning of   if no misspelled word is found between   and the end of  . Specify   to have spell-checking end at the end of  .
-- `language`: The language of the of words to be checked for correct spelling. This string is a ISO 639-1 language code or a combined ISO 639-1 language code and ISO 3166-1 regional code (for example,  ).
+- `range`: The range of `stringToCheck` to check for a misspelled word.
+- `startingOffset`: The offset within `range` of `stringToCheck` to begin checking for misspelled words.
+- `wrapFlag`: [`true`](https://developer.apple.com/documentation/Swift/true) to continue checking from the beginning of `range` if no misspelled word is found between `startingOffset` and the end of `range`. Specify [`false`](https://developer.apple.com/documentation/Swift/false) to have spell-checking end at the end of `range`.
+- `language`: The language of the of words to be checked for correct spelling. This string is a ISO 639-1 language code or a combined ISO 639-1 language code and ISO 3166-1 regional code (for example, `fr_FR`).
 
 
 ---

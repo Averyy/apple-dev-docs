@@ -18,8 +18,8 @@ init(uuid: UUID, major: UInt16)
 
 ## Parameters
 
-- `uuid`: The   that identifies the beacon.
-- `major`: The   that represents the beacon’s major value.
+- `uuid`: The [`NSUUID`](https://developer.apple.com/documentation/Foundation/NSUUID) that identifies the beacon.
+- `major`: The [`CLBeaconMajorValue`](clbeaconmajorvalue.md) that represents the beacon’s major value.
 
 ## See Also
 

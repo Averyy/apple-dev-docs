@@ -23,7 +23,7 @@ optional func collisionBehavior(_ behavior: UICollisionBehavior, beganContactFor
 - `behavior`: The collision behavior that owns the dynamic items that have started to contact each other.
 - `item1`: The first of the two dynamic items participating in the collision.
 - `item2`: The second of the two dynamic items participating in the collision.
-- `p`: The contact point for the collision. The coordinate system that pertains to a collision depends on how you initialized the associated animator. For details, read the Overview of  .
+- `p`: The contact point for the collision. The coordinate system that pertains to a collision depends on how you initialized the associated animator. For details, read the Overview of [`UIDynamicAnimator`](uidynamicanimator.md).
 
 ## See Also
 

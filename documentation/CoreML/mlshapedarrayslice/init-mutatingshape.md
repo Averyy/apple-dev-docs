@@ -67,7 +67,7 @@ assert(slice2[scalarAt: 0] == 0)
 ## Parameters
 
 - `pixelBuffer`: The pixel buffer to be owned by the instance.
-- `shape`: The shape of the MLShapedArray. The last dimension of   must match the pixel buffer’s   width. The product of the rest of the dimensions must match the height.
+- `shape`: The shape of the MLShapedArray. The last dimension of `shape` must match the pixel buffer’s width. The product of the rest of the dimensions must match the height.
 
 ## See Also
 

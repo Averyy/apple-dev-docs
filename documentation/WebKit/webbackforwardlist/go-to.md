@@ -16,7 +16,7 @@ func go(to item: WebHistoryItem!)
 
 ## Parameters
 
-- `item`: A web history item that represents a visited webpage. If   is not in the back-forward list, an   exception is raised.
+- `item`: A web history item that represents a visited webpage. If `item` is not in the back-forward list, an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) exception is raised.
 
 ## See Also
 

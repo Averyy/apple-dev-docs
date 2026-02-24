@@ -50,8 +50,8 @@ struct ContentView: View {
 
 ## Parameters
 
-- `id`: The identifier, often derived from the identifier of   the data being displayed by the toolbar content.
-- `namespace`: The namespace in which defines the  . New   namespaces are created by adding an   variable   to a   or ``ToolbarContent` type and reading its value in   the type’s body method.
+- `id`: The identifier, often derived from the identifier of the data being displayed by the toolbar content.
+- `namespace`: The namespace in which defines the `id`. New namespaces are created by adding an [`Namespace`](namespace.md) variable to a [`View`](view.md) or ``ToolbarContent` type and reading its value in the type’s body method.
 
 
 ---

@@ -23,8 +23,8 @@ init<T>(unit: T, majorAlignment: MajorValueAlignment<T>? = nil, limitBehavior: V
 
 ## Parameters
 
-- `unit`: The alignment unit. When the user finishes a scroll gesture, the chart will snap to align to   the given unit or the end of the domain.
-- `majorAlignment`: The behavior for aligning to major values. When the user swipes on the chart, the chart will snap to the   next or previous major unit depending on the swipe direction. When enabled, the default major unit is a page.
+- `unit`: The alignment unit. When the user finishes a scroll gesture, the chart will snap to align to the given unit or the end of the domain.
+- `majorAlignment`: The behavior for aligning to major values. When the user swipes on the chart, the chart will snap to the next or previous major unit depending on the swipe direction. When enabled, the default major unit is a page.
 - `limitBehavior`: The scroll limit behavior.
 
 

@@ -24,11 +24,11 @@ Use the ABAddressBook [`ABCopyArrayOfMatchingRecords(_:_:)`](abcopyarrayofmatchi
 
 ## Parameters
 
-- `property`: The name of the property to search on. It cannot be  . For a full list of the properties, see   and Common Properties.
-- `label`: The label name for a multi-value list. If   does not have multiple values, pass  . If   does have multiple values, pass   to search all the values. By default, ABGroup records don’t contain any multi-value list properties.
-- `key`: The key name for a dictionary. If   is not a dictionary, pass  . If   is a dictionary, pass   to search all keys. By default, ABGroup records don’t contain any properties that are dictionaries.
-- `value`: The value you are searching for. It cannot be 
-- `comparison`: Specifies the type of comparison to perform, such as   or  . For a full list, see  .
+- `property`: The name of the property to search on. It cannot be `NULL`. For a full list of the properties, see `Group Properties` and Common Properties.
+- `label`: The label name for a multi-value list. If `property` does not have multiple values, pass `NULL`. If `property` does have multiple values, pass `NULL` to search all the values. By default, ABGroup records don’t contain any multi-value list properties.
+- `key`: The key name for a dictionary. If `property` is not a dictionary, pass `NULL`. If `property` is a dictionary, pass `NULL` to search all keys. By default, ABGroup records don’t contain any properties that are dictionaries.
+- `value`: The value you are searching for. It cannot be `NULL`
+- `comparison`: Specifies the type of comparison to perform, such as [`kABEqual`](kabequal.md) or [`kABPrefixMatchCaseInsensitive`](kabprefixmatchcaseinsensitive.md). For a full list, see [`ABSearchComparison`](absearchcomparison.md).
 
 ## See Also
 

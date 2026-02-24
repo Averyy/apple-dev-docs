@@ -33,7 +33,7 @@ The `maxPredictionTime` parameter determines how far ahead of time the agent wil
 
 - `path`: A path object.
 - `maxPredictionTime`: The amount of time for which to predict an affected agent’s movement.
-- `forward`:   to traverse in the order the path’s verties are defined;   to traverse the path in the opposite order.
+- `forward`: [`true`](https://developer.apple.com/documentation/Swift/true) to traverse in the order the path’s verties are defined; [`false`](https://developer.apple.com/documentation/Swift/false) to traverse the path in the opposite order.
 
 ## See Also
 

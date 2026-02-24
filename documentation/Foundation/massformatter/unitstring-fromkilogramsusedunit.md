@@ -31,7 +31,7 @@ This method selects the correct unit based on the formatter’s locale, the magn
 ## Parameters
 
 - `numberInKilograms`: The mass’s value in kilograms.
-- `unitp`: An output parameter. This will hold the   value that corresponds to the returned units.
+- `unitp`: An output parameter. This will hold the [`MassFormatter.Unit`](massformatter/unit.md) value that corresponds to the returned units.
 
 ## See Also
 

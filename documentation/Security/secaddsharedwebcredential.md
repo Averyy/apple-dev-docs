@@ -34,8 +34,8 @@ When this function is called, the system tries to get the site association file 
 
 - `fqdn`: The fully qualified domain name of the website requiring the password.
 - `account`: The account name associated with this password.
-- `password`: The password to be stored. Pass   to remove a shared password if it exists.
-- `completionHandler`: The block takes one argument:
+- `password`: The password to be stored. Pass `NULL` to remove a shared password if it exists.
+- `completionHandler`: A block invoked when the function has completed. The block takes one argument: - **`error`**: If the shared password was successfully added (or removed), `NULL`; if not successful, a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) object that encapsulates the reason why the password could not be added (or removed). The error reference is automatically released after this handler is called, though you may optionally retain it for as long as needed.
 
 
 ---

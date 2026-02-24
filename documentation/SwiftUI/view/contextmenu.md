@@ -58,7 +58,7 @@ private struct ContextMenuMenuItems: View {
 
 ## Parameters
 
-- `contextMenu`: A context menu container for views that you   present as menu items in a context menu.
+- `contextMenu`: A context menu container for views that you present as menu items in a context menu.
 
 ## See Also
 

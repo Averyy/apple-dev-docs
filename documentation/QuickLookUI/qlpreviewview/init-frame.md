@@ -24,7 +24,7 @@ Calling this method is equivalent to calling [`init(frame:style:)`](qlpreviewvie
 
 ## Parameters
 
-- `frame`: The frame rectangle for the initialized   object.
+- `frame`: The frame rectangle for the initialized `QLPreviewView` object.
 
 ## See Also
 

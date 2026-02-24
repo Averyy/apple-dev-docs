@@ -22,8 +22,8 @@ Location within `multiValue` that contains the value with `identifier` as its id
 
 ## Parameters
 
-- `multiValue`: The multivalue property in which to look for the   value identifier.
-- `identifier`: The identifier of the value whose location within   is being returned.
+- `multiValue`: The multivalue property in which to look for the `identifier` value identifier.
+- `identifier`: The identifier of the value whose location within `multiValue` is being returned.
 
 ## See Also
 

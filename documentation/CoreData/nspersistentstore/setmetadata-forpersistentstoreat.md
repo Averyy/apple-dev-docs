@@ -26,7 +26,7 @@ Subclasses must override this method to set metadata appropriately.
 
 ## Parameters
 
-- `metadata`: The metadata for the store at  .
+- `metadata`: The metadata for the store at `url`.
 - `url`: The location of the store.
 
 ## See Also

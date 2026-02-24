@@ -22,7 +22,7 @@ func replacingPortraitEffectsMatte(with pixelBuffer: CVPixelBuffer) throws -> Se
 
 ## Parameters
 
-- `pixelBuffer`: A pixel buffer containing a portrait effects matte image, represented as   with   color primaries and a   transfer function.
+- `pixelBuffer`: A pixel buffer containing a portrait effects matte image, represented as [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_OneComponent8) with [`kCVImageBufferColorPrimaries_ITU_R_709_2`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferColorPrimaries_ITU_R_709_2) color primaries and a [`kCVImageBufferTransferFunction_Linear`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferTransferFunction_Linear) transfer function.
 
 ## See Also
 

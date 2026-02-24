@@ -28,7 +28,7 @@ This function can be called only by servers. Use of this function is optional. T
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `auth`: A flag setting the requirements for client-side authentication. See   for possible values.
+- `auth`: A flag setting the requirements for client-side authentication. See [`SSLAuthenticate`](sslauthenticate.md) for possible values.
 
 
 ---

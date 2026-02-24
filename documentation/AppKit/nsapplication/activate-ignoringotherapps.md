@@ -24,7 +24,7 @@ You don’t need to send this message to make one of the app’s `NSWindows` key
 
 ## Parameters
 
-- `ignoreOtherApps`: If  , the app activates only if no other app is currently active. If  , the app activates regardless.
+- `ignoreOtherApps`: If [`false`](https://developer.apple.com/documentation/Swift/false), the app activates only if no other app is currently active. If [`true`](https://developer.apple.com/documentation/Swift/true), the app activates regardless.
 
 ## See Also
 

@@ -10,7 +10,7 @@ Core Data uses lightweight migrations to keep the data in your app’s persisten
 
 As your object model evolves, you may find that the aggregate changes between two model versions exceed the capabilities of lightweight migrations. For example, if you change an optional attribute to be nonoptional, there’s no way for a lightweight migration to infer the default value it needs to assign to any instances of that attribute with a `nil` value.
 
- solve this problem by reducing an incompatible migration into a series of compatible stages. A migration manager runs these stages in a specific order, providing opportunities for you to prepare the persistent store before each stage runs, and perform any cleanup afterward. This enables you to handle scenarios like changing an optional attribute to be nonoptional because you have an opportunity to set any `nil` values to a concrete value before the stage runs.
+*Staged lightweight migrations* solve this problem by reducing an incompatible migration into a series of compatible stages. A migration manager runs these stages in a specific order, providing opportunities for you to prepare the persistent store before each stage runs, and perform any cleanup afterward. This enables you to handle scenarios like changing an optional attribute to be nonoptional because you have an opportunity to set any `nil` values to a concrete value before the stage runs.
 
 > ❗ **Important**:  Successful Core Data migrations depend on properly versioned object models, and staged lightweight migrations require a distinct migration stage for each model version.
 

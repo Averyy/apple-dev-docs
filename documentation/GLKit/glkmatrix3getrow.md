@@ -23,8 +23,8 @@ A vector representing the row retrieved from the matrix.
 
 ## Parameters
 
-- `matrix`: A   matrix.
-- `row`: The row index, which must be a number between   and  , inclusive.
+- `matrix`: A `3x3` matrix.
+- `row`: The row index, which must be a number between `0` and `2`, inclusive.
 
 ## See Also
 

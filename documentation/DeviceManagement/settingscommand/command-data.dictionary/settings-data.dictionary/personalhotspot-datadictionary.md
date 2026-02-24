@@ -15,6 +15,11 @@ A dictionary that contains Personal Hotspot settings.
 object SettingsCommand.Command.Settings.PersonalHotspot
 ```
 
+## Properties
+
+- `Enabled` (boolean) *(required)*: If `true`, enable Personal Hotspot. If `false`, disable Personal Hotspot.
+- `Item` (string) *(required)*: A string that identifies this setting.
+
 ## See Also
 
 - [object SettingsCommand.Command.Settings.AccessibilitySettings](settingscommand/command-data.dictionary/settings-data.dictionary/accessibilitysettings-data.dictionary.md)

@@ -9,6 +9,10 @@ The path to the style sheet, relative to the Resources folder in the app extensi
 - macOS 10.11.5+
 
 
+
+**Type**: string
+
+
 ---
 
 *[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/sfsafaristylesheet/style-sheet)*

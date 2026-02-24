@@ -22,7 +22,7 @@ init(subBlockCapacity: Int, blockSource: CMMutableDataBlockBuffer.BlockSource? =
 
 ## Parameters
 
-- `subBlockCapacity`: Number of sub-blocks the new block buffer shall accommodate before expansion   occurs. A value of zero means “do the reasonable default”.
+- `subBlockCapacity`: Number of sub-blocks the new block buffer shall accommodate before expansion occurs. A value of zero means “do the reasonable default”.
 - `blockSource`: Optional source to allocate and deallocate memory for the data blocks.
 
 

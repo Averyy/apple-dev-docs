@@ -21,10 +21,10 @@ The created node.
 
 ## Parameters
 
-- `allocator`: The memory allocator to use. If  , the default allocator is used.
+- `allocator`: The memory allocator to use. If `NULL`, the default allocator is used.
 - `session`: The session to create the node in.
 - `nodeType`: The type of the node.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

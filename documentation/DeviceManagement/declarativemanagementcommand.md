@@ -29,6 +29,11 @@ object DeclarativeManagementCommand
 - [object DeclarativeManagementCommand.Command](declarativemanagementcommand/command-data.dictionary.md)
   The command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 
+## Properties
+
+- `Command` (DeclarativeManagementCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object DeclarativeManagementResponse](declarativemanagementresponse.md)

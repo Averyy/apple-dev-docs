@@ -31,9 +31,9 @@ This method displays the options menu asynchronously. The document interaction c
 
 ## Parameters
 
-- `rect`: The location (in the coordinate system of  ) at which to anchor the menu.
+- `rect`: The location (in the coordinate system of `view`) at which to anchor the menu.
 - `view`: The view from which to display the menu.
-- `animated`: Specify   to animate the appearance of the menu or   to display it immediately.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the appearance of the menu or [`false`](https://developer.apple.com/documentation/Swift/false) to display it immediately.
 
 ## See Also
 

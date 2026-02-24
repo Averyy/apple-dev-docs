@@ -32,7 +32,7 @@ Install this callback in an audio queue by calling the [`AudioQueueAddPropertyLi
 
 ## Parameters
 
-- `inUserData`: The custom data you’ve specified in the   parameter of the   function.
+- `inUserData`: The custom data you’ve specified in the `inUserData` parameter of the [`AudioQueueAddPropertyListener(_:_:_:_:)`](audioqueueaddpropertylistener(_:_:_:_:).md) function.
 - `inAQ`: The recording or playback audio queue that invoked the callback.
 - `inID`: The ID of the property whose value changes you want to observe.
 

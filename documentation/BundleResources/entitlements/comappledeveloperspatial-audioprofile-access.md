@@ -12,6 +12,10 @@ An entitlement that enables your app to use the personalized spatial audio profi
 - tvOS 18.0+
 - visionOS 2.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 This entitlement applies the personalized spatial audio profile someone makes in Settings to your app’s audio output for the following APIs:

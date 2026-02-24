@@ -34,7 +34,7 @@ If this function returns `TRUE` for `auth`, the object is good for use with func
 ## Parameters
 
 - `auth`: The CFHTTPAuthentication object to examine.
-- `error`: Pointer to a   structure, whose fields, if an error has occurred, are set to the error and the error’s domain.
+- `error`: Pointer to a [`CFStreamError`](https://developer.apple.com/documentation/CoreFoundation/CFStreamError) structure, whose fields, if an error has occurred, are set to the error and the error’s domain.
 
 ## See Also
 

@@ -264,15 +264,15 @@ The sample app also deactivates notifications for characteristics that are no lo
 
 For a HomeKit app that you want to publish in the App Store, you design a different user interface than the one in this sample app.
 
- Only present information that’s really useful. Most users aren’t interested in unique device identifiers and firmware versions. At a minimum, nest or deemphasize less important details.
+**Expose a lot less detail about individual accessories, services, and characteristics.** Only present information that’s really useful. Most users aren’t interested in unique device identifiers and firmware versions. At a minimum, nest or deemphasize less important details.
 
- Help users complete tasks by focusing on the actions they can perform, or the data they can read, rather than the physical objects in the environment.
+**Focus on services as the root interface element, just like in the Home app.** Help users complete tasks by focusing on the actions they can perform, or the data they can read, rather than the physical objects in the environment.
 
- Hide services not reported as user interactive by the device.
+**Expose only user interactive services.** Hide services not reported as user interactive by the device.
 
- If your app supports devices only from a certain manufacturer, or with certain capabilities, filter out the accessories that don’t match. Reduce clutter and present only those devices or capabilities that make sense for your app.
+**Feature behaviors and settings specific to your app.** If your app supports devices only from a certain manufacturer, or with certain capabilities, filter out the accessories that don’t match. Reduce clutter and present only those devices or capabilities that make sense for your app.
 
- Your app might enable users to manage custom services and characteristics of a device that you develop. For example, a light service might offer a power-down decay rate characteristic, reducing brightness from full on to full off over a configurable period of time. The Home app doesn’t expose this characteristic, but your app can provide the user with a suitable interface to control it.
+**Provide meaningful interfaces for custom elements.** Your app might enable users to manage custom services and characteristics of a device that you develop. For example, a light service might offer a power-down decay rate characteristic, reducing brightness from full on to full off over a configurable period of time. The Home app doesn’t expose this characteristic, but your app can provide the user with a suitable interface to control it.
 
 For more information about user interface considerations for HomeKit enabled apps, see the [`HomeKit`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/homekit/overview/introduction/) section of the [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/).
 

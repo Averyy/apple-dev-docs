@@ -25,6 +25,40 @@ You use a layout configuration to modify a collection view layout’s default sc
 
 You can pass in this configuration when creating a [`UICollectionViewCompositionalLayout`](uicollectionviewcompositionallayout.md), or you can set the [`configuration`](uicollectionviewcompositionallayout/configuration.md) property on an existing layout. If you modify the configuration on an existing layout, the system invalidates the layout so that it will be updated with the new configuration.
 
+**Swift**:
+
+```swift
+let headerFooterSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                             heightDimension: .estimated(44))
+
+let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerFooterSize,
+                                                        elementKind: "header",
+                                                          alignment: .top)
+let footer = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerFooterSize,
+                                                        elementKind: "footer",
+                                                          alignment: .bottom)
+
+let config = UICollectionViewCompositionalLayoutConfiguration()
+config.interSectionSpacing = 20
+config.scrollDirection = .horizontal
+config.boundarySupplementaryItems = [header, footer]
+```
+
+**Objective-C**:
+
+```objc
+NSCollectionLayoutSize *headerFooterSize = [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension fractionalWidthDimension:1.0] heightDimension:[NSCollectionLayoutDimension estimatedDimension:44.0]];
+
+NSCollectionLayoutBoundarySupplementaryItem *header = [NSCollectionLayoutBoundarySupplementaryItem boundarySupplementaryItemWithLayoutSize:headerFooterSize elementKind:@"header" alignment:NSRectAlignmentTop];
+
+NSCollectionLayoutBoundarySupplementaryItem *footer = [NSCollectionLayoutBoundarySupplementaryItem boundarySupplementaryItemWithLayoutSize:headerFooterSize elementKind:@"footer" alignment:NSRectAlignmentBottom];
+
+UICollectionViewCompositionalLayoutConfiguration *config = [[UICollectionViewCompositionalLayoutConfiguration alloc] init];
+[config setInterSectionSpacing:20.0];
+[config setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+[config setBoundarySupplementaryItems:@[header, footer]];
+```
+
 ## Topics
 
 ### Specifying scroll direction

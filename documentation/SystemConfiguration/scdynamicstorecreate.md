@@ -20,10 +20,10 @@ A reference to the new dynamic store session. You must release the returned valu
 
 ## Parameters
 
-- `allocator`: The allocator that should be used to allocate memory for the local dynamic store object. This parameter may be   in which case the current default allocator is used. If this value is not a valid  , the behavior is undefined.
+- `allocator`: The allocator that should be used to allocate memory for the local dynamic store object. This parameter may be `NULL` in which case the current default allocator is used. If this value is not a valid [`CFAllocator`](https://developer.apple.com/documentation/CoreFoundation/CFAllocator), the behavior is undefined.
 - `name`: The name of the calling process or plug-in of the caller.
-- `callout`: The function to be called when a watched value in the dynamic store is changed. Pass   if no callouts are desired.
-- `context`: The context associated with the callout. See   for more information about this value.
+- `callout`: The function to be called when a watched value in the dynamic store is changed. Pass `NULL` if no callouts are desired.
+- `context`: The context associated with the callout. See [`SCDynamicStoreContext`](scdynamicstorecontext.md) for more information about this value.
 
 ## See Also
 

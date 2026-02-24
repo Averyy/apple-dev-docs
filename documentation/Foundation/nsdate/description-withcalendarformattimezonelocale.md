@@ -36,9 +36,9 @@ sprintf(aString, "The current time is %s\n", [[[NSDate  date]
 
 ## Parameters
 
-- `format`: The format for the returned string (see Date and Number Formatters in OS X v10.0 to 10.3 for a discussion of how to create the format string). Pass   to use the default format string, “ ” (this conforms to the international format  .)
-- `aTimeZone`: The time zone in which to represent the receiver. Pass   to use the default time zone—specific to the current locale.
-- `locale`: If you pass   or an instance of  ,   uses the system default locale—this is not the same as the current user’s locale.
+- `format`: The format for the returned string (see Date and Number Formatters in OS X v10.0 to 10.3 for a discussion of how to create the format string). Pass `nil` to use the default format string, “`%Y-%m-%d %H:%M:%S %z`” (this conforms to the international format `YYYY-MM-DD HH:MM:SS ±HHMM`.)
+- `aTimeZone`: The time zone in which to represent the receiver. Pass `nil` to use the default time zone—specific to the current locale.
+- `locale`: An `NSDictionary` object containing locale data. To use the user’s preferences, you can use `[[NSUserDefaults standardUserDefaults] dictionaryRepresentation]`. If you pass `nil` or an instance of `NSLocale`, `NSDate` uses the system default locale—this is not the same as the current user’s locale.
 
 ## See Also
 

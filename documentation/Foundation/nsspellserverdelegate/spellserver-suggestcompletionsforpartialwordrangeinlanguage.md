@@ -21,7 +21,7 @@ An array of `NSString` objects indicating possible completions.
 
 ## Parameters
 
-- `sender`: The   object that sent this message.
+- `sender`: The `NSSpellServer` object that sent this message.
 - `range`: The range of the partially completed word.
 - `string`: The string containing the partial word range.
 - `language`: The language to use for the completion.

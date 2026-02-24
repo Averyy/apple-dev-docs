@@ -31,9 +31,9 @@ The new window creates a view to be its default content view. You can replace it
 ## Parameters
 
 - `contentRect`: Origin and size of the window’s content area in screen coordinates. Note that the window server limits window position coordinates to ±16,000 and sizes to 10,000.
-- `style`: The window’s style. It can be  , or it can contain any of the options described in  , combined using the C bitwise OR operator. Borderless windows display none of the usual peripheral elements and are generally useful only for display or caching purposes; you should normally not need to create them. Also, note that a window’s style mask should include   if it includes any of the others.
-- `backingStoreType`: Specifies how the drawing done in the window is buffered by the window device, and possible values are described in  .
-- `flag`: Specifies whether the window server creates a window device for the window immediately. When  , the window server defers creating the window device until the window is moved onscreen. All display messages sent to the window or its views are postponed until the window is created, just before it’s moved onscreen.
+- `style`: The window’s style. It can be `NSBorderlessWindowMask`, or it can contain any of the options described in [`NSWindow.StyleMask`](nswindow/stylemask-swift.struct.md), combined using the C bitwise OR operator. Borderless windows display none of the usual peripheral elements and are generally useful only for display or caching purposes; you should normally not need to create them. Also, note that a window’s style mask should include `NSTitledWindowMask` if it includes any of the others.
+- `backingStoreType`: Specifies how the drawing done in the window is buffered by the window device, and possible values are described in [`NSWindow.BackingStoreType`](nswindow/backingstoretype.md).
+- `flag`: Specifies whether the window server creates a window device for the window immediately. When [`true`](https://developer.apple.com/documentation/Swift/true), the window server defers creating the window device until the window is moved onscreen. All display messages sent to the window or its views are postponed until the window is created, just before it’s moved onscreen.
 
 ## See Also
 

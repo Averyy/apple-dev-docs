@@ -21,7 +21,8 @@ class func loadReceivedChallenges() async throws -> [GKChallenge]
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameters: - **`challenges`**: The challenges the local player issued.
+- **`error`**: Describes an error if it occurs, or `nil` if the operation completes successfully.
 
 
 ---

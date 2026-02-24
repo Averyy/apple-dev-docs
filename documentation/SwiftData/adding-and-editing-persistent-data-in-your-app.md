@@ -59,9 +59,28 @@ final class AnimalCategory {
 
 The model class also has two properties:
 
+- **`name`**: The name of the category. Each category name must be unique across all animal categories. To ensure this uniqueness, the model class applies the [`Attribute(_:originalName:hashModifier:)`](attribute(_:originalname:hashmodifier:).md) macro to the property with the option [`unique`](schema/attribute/option/unique.md). This option ensures a property’s value is unique across all models of the same type. For a complete list of options, see [`Schema.Attribute.Option`](schema/attribute/option.md).
+- **`animal`**: The list of animals contained in the category. The model class applies the [`Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)`](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md) macro to this property to form a relationship between the model classes `AnimalCategory` and `Animal`. To learn more about the relationship, see [`Defining data relationships with enumerations and model classes`](defining-data-relationships-with-enumerations-and-model-classes.md).
+
 ##### Design the Data Editor
 
 When deciding how people add and edit data in your app, consider the user experience. The sample app, for instance, lets someone add and edit information about animals using a custom data entry view, named `AnimalEditor`.
+
+**iOS**:
+
+![A screenshot of the sample app running in iOS, showing the animal editor. The editor displays horizontally a cancel button, followed by the title Add Animal, followed by a save button that appears along the top of the editor. Below that is a name field with the placeholder text Name. Below the name field is the category field the label Category, followed by a picker with the label Select a category. Below the Category field is the Diet field with the label Diet and a picker with the label Herbivore.](https://docs-assets.developer.apple.com/published/b97dd17997855b113fae297bf8590dba/Adding-and-editing-persistent-data-02%402x.png)
+
+**iPadOS**:
+
+![A screenshot of the sample app running in iPadOS, showing the animal editor with sample app in the background. The editor displays horizontally a cancel button, followed by the title Add Animal, followed by a save button that appears along the top of the editor. Below that is a name field with the placeholder text Name. Below the name field is the category field the label Category, followed by a picker with the label Select a category. Below the Category field is the Diet field with the label Diet and a picker with the label Herbivore.](https://docs-assets.developer.apple.com/published/e77d365b30cfd7680e4db84f7581a61a/Adding-and-editing-persistent-data-03%402x.png)
+
+**macOS**:
+
+![A screenshot of the sample app running in macOS, showing the animal editor with the main window of the sample app in the background. The editor displays the label name next to a text field that shows the text Red kangaroo. Below the name label is a label with the text category, followed by a picker showing mammal as the selected item. Below the category label is a label with the text Diet, followed by a picker showing Herbivore as the selected item. Below these fields is a horizontal line, and below the line are two buttons displayed horizontally, cancel and save.](https://docs-assets.developer.apple.com/published/087aefc5f44275e4587b8f53765b12af/Adding-and-editing-persistent-data-01%402x.png)
+
+**tvOS**:
+
+![A screenshot of the sample app running in tvOS, showing the animal editor. The editor displays horizontally a cancel button, followed by the title Edit Animal, followed by a save button that appears along the top of the editor. Below that is a highlighted text field that displays the text Red kangaroo. Below the text field is a picker with the label Category and Mammal as the selected item. Below the category picker is another picker with the label Diet and Herbivore as the selected item.](https://docs-assets.developer.apple.com/published/3676490a2b097d25d0dfcd9b92fbd346/Adding-and-editing-persistent-data-04%402x.png)
 
 The design of `AnimalEditor` allows the app to use the same view for both adding new animals and editing existing ones. To provide this behavior, the editor declares the `animal` property as an optional `Animal` type. If `animal` is `nil`, a person using the editor is adding an animal; otherwise, the person is editing an existing animal. The editor makes the intention obvious by determining the title of the editor based on the value of `animal` in a computed property.
 

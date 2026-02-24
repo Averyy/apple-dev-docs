@@ -23,6 +23,9 @@ typealias AUParameterRecordingObserver = (Int, UnsafePointer<AURecordedParameter
 
 The block takes the following parameters:
 
+- **numberEvents**: The number of events being delivered.
+- **events**: The events being delivered.
+
 ## See Also
 
 - [func token(byAddingParameterRecordingObserver: AUParameterRecordingObserver) -> AUParameterObserverToken](auparameternode/token(byaddingparameterrecordingobserver:).md)

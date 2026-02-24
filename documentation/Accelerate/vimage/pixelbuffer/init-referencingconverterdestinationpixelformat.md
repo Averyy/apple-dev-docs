@@ -90,7 +90,7 @@ class ContrastStretchImageProcessorKernel: CIImageProcessorKernel {
 
 ## Parameters
 
-- `lockedCVPixelBuffer`: The locked Core Video pixel buffer. Use   and   to lock and unlock the pixel buffer.
+- `lockedCVPixelBuffer`: The locked Core Video pixel buffer. Use [`CVPixelBufferLockBaseAddress(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferLockBaseAddress(_:_:)) and [`CVPixelBufferUnlockBaseAddress(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferUnlockBaseAddress(_:_:)) to lock and unlock the pixel buffer.
 - `converter`: The vImage Core Video to Core Graphics any-to-any converter.
 - `destinationPixelFormat`: The pixel format of the initialized buffer.
 

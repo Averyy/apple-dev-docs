@@ -28,7 +28,7 @@ You can call this method multiple times to add multiple blocks to the animator. 
 
 ## Parameters
 
-- `animation`: A block containing the animations you want to add to the animator object. This block has no return value and takes no parameters. This parameter must not be  .
+- `animation`: A block containing the animations you want to add to the animator object. This block has no return value and takes no parameters. This parameter must not be `nil`.
 
 ## See Also
 

@@ -45,7 +45,7 @@ var body: some View {
 
 ## Parameters
 
-- `accentable`: A Boolean value that indicates whether to add   the view and its subviews to the accented group.
+- `accentable`: A Boolean value that indicates whether to add the view and its subviews to the accented group.
 
 
 ---

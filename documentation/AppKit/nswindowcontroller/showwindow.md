@@ -21,7 +21,7 @@ If the window is an [`NSPanel`](nspanel.md) object and has its [`becomesKeyOnlyI
 
 ## Parameters
 
-- `sender`: The control sending the message; can be  .
+- `sender`: The control sending the message; can be `nil`.
 
 ## See Also
 

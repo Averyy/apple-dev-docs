@@ -20,8 +20,8 @@ The image scaling mode for a segment affects how the image inside the correspond
 
 ## Parameters
 
-- `scaling`: The scaling mode to assign to the specified segment. For the possible values, see  .
-- `segment`: The index of the segment whose image scaling mode you want to set. This method raises an exception ( ) if the index is out of bounds.
+- `scaling`: The scaling mode to assign to the specified segment. For the possible values, see [`NSSegmentedControl.Style`](nssegmentedcontrol/style.md).
+- `segment`: The index of the segment whose image scaling mode you want to set. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if the index is out of bounds.
 
 ## See Also
 

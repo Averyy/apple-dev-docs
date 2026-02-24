@@ -20,7 +20,7 @@ init(decisionHandler: @escaping (WebPage.DeviceSensorAuthorization.Permission, W
 
 ## Parameters
 
-- `decisionHandler`: A closure which decides the permission decision for an authorization request,   which may be based on the kind of permission, the webpage frame information, or the security origin.
+- `decisionHandler`: A closure which decides the permission decision for an authorization request, which may be based on the kind of permission, the webpage frame information, or the security origin.
 
 
 ---

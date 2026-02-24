@@ -20,8 +20,8 @@ class func captureTextFromCamera(responder: any UIResponder & UIKeyInput, identi
 
 ## Parameters
 
-- `responder`: The   responder to send the   message to.
-- `identifier`: The unique identifier for the action. Specify   to let this method create a unique identifier for you.
+- `responder`: The [`UIKeyInput`](uikeyinput.md) responder to send the [`captureTextFromCamera(_:)`](uiresponder/capturetextfromcamera(_:).md) message to.
+- `identifier`: The unique identifier for the action. Specify `nil` to let this method create a unique identifier for you.
 
 ## See Also
 

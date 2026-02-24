@@ -25,7 +25,7 @@ A valid MPSGraphTensor object
 
 ## Parameters
 
-- `gradient`: A 2D input gradient tensor - must be of rank=4. The layout is defined by  .
+- `gradient`: A 2D input gradient tensor - must be of rank=4. The layout is defined by `descriptor.dataLayout`.
 - `source`: The input tensor for the forward pass.
 - `descriptor`: A pooling operation descriptor that specifies pooling window sizes, strides, dilation rates, paddings and layouts.
 - `name`: The name for the operation.

@@ -16,7 +16,7 @@ static func frameResize(position: FrameResizePosition, directions: FrameResizeDi
 
 ## Parameters
 
-- `position`: The position along the perimeter of the frame (its edges   and corners) from which it’s resized.
+- `position`: The position along the perimeter of the frame (its edges and corners) from which it’s resized.
 - `directions`: The directions in which the frame can be resized.
 
 ## See Also

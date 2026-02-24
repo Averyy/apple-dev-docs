@@ -21,7 +21,7 @@ func JSGlobalContextRelease(_ ctx: JSGlobalContextRef!)
 
 ## Parameters
 
-- `ctx`: The   to release.
+- `ctx`: The [`JSGlobalContextRef`](jsglobalcontextref.md) to release.
 
 ## See Also
 

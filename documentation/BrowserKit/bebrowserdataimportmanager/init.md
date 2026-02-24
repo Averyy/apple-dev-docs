@@ -15,11 +15,6 @@ Initializes an import manager.
 init()
 ```
 
-## See Also
-
-- [init(windowScene: UIWindowScene?)](bebrowserdataimportmanager/init(windowscene:).md)
-  Initializes an import manager for a window scene.
-
 
 ---
 

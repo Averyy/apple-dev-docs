@@ -22,7 +22,7 @@ An image object applies the tint color only when it contains a single template i
 
 ## Parameters
 
-- `tintColor`: The tint color to use for a template image. Specify   to use the default tint color.
+- `tintColor`: The tint color to use for a template image. Specify `nil` to use the default tint color.
 
 ## See Also
 

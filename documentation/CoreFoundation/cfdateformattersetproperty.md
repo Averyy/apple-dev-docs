@@ -23,8 +23,8 @@ func CFDateFormatterSetProperty(_ formatter: CFDateFormatter!, _ key: CFString!,
 ## Parameters
 
 - `formatter`: The date formatter to modify.
-- `key`: The name of the property to set. See   for a description of possible values for this parameter.
-- `value`: The value for  . This should be a CFType object corresponding to the specified key.
+- `key`: The name of the property to set. See [`Date Formatter Property Keys`](date-formatter-property-keys.md) for a description of possible values for this parameter.
+- `value`: The value for `key`. This should be a CFType object corresponding to the specified key.
 
 ## See Also
 

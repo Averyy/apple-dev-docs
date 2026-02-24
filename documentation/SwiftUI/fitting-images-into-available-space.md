@@ -68,7 +68,7 @@ To prevent this problem, add the [`clipped(antialiased:)`](view/clipped(antialia
 
 ##### Use Interpolation Flags to Adjust Rendered Image Quality
 
-Rendering an image at anything other than its original size requires : using the existing image data to approximate a representation at a different size. Different approaches to performing interpolation have different trade-offs between computational complexity and visual quality of the rendered image. You can use the [`interpolation(_:)`](image/interpolation(_:).md) modifier to provide a hint for SwiftUI rendering behavior.
+Rendering an image at anything other than its original size requires *interpolation*: using the existing image data to approximate a representation at a different size. Different approaches to performing interpolation have different trade-offs between computational complexity and visual quality of the rendered image. You can use the [`interpolation(_:)`](image/interpolation(_:).md) modifier to provide a hint for SwiftUI rendering behavior.
 
 It’s easier to see the effect of interpolation when scaling a smaller image into a larger space, because the rendered image requires more image data than is available. Consider the following example, which renders a 34 x 34 image named `dot_green` into the same 300 x 400 container frame as before:
 
@@ -93,7 +93,7 @@ If you change the interpolation value to [`Image.Interpolation.medium`](image/in
 
 ##### Fill a Space with a Repeating Image Using Tiling
 
-When you have an image that’s much smaller than the space you want to render it into, another option  to fill the space is : repeating the same image over and over again. To tile an image, pass the [`Image.ResizingMode.tile`](image/resizingmode/tile.md) parameter to the [`resizable(capInsets:resizingMode:)`](image/resizable(capinsets:resizingmode:).md) modifier:
+When you have an image that’s much smaller than the space you want to render it into, another option  to fill the space is *tiling*: repeating the same image over and over again. To tile an image, pass the [`Image.ResizingMode.tile`](image/resizingmode/tile.md) parameter to the [`resizable(capInsets:resizingMode:)`](image/resizable(capinsets:resizingmode:).md) modifier:
 
 ```swift
     Image("dot_green")

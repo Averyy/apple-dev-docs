@@ -27,7 +27,7 @@ When saving a newly created [`CKShare`](ckshare.md), you save both the share and
 ## Parameters
 
 - `rootRecord`: The record to share.
-- `shareID`: The   for the share.
+- `shareID`: The [`CKRecord.ID`](ckrecord/id.md) for the share.
 
 ## See Also
 

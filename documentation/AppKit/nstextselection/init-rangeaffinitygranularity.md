@@ -17,8 +17,8 @@ convenience init(range: NSTextRange, affinity: NSTextSelection.Affinity, granula
 ## Parameters
 
 - `range`: The range of the selection.
-- `affinity`: One of the available   options.
-- `granularity`: One of the available   options.
+- `affinity`: One of the available [`NSTextSelection.Affinity`](nstextselection/affinity-swift.enum.md) options.
+- `granularity`: One of the available [`NSTextSelection.Granularity`](nstextselection/granularity-swift.enum.md) options.
 
 ## See Also
 

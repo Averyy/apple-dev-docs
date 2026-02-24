@@ -21,6 +21,22 @@ enum MPMediaGrouping
 
 The following code snippet shows how to apply a grouping key:
 
+**Swift**:
+
+```swift
+let everything = MPMediaQuery()
+everything.groupingType = MPMediaGrouping.album
+let collections = [everything]
+```
+
+**Objective-C**:
+
+```objc
+MPMediaQuery *everything = [[MPMediaQuery alloc] init];
+[everything setGroupingType: MPMediaGroupingAlbum];
+NSArray *collections = [everything collections];
+```
+
 After running these code lines, the `collections` array contains all the matched media items grouped and sorted according to album name.
 
 To obtain a sorted list of songs, configure a media query with the `MPMediaGroupingTitle` key, or take advantage of the title key being the default for a media query. In either case, each obtained media item is, in effect, its own collection.

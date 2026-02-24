@@ -26,7 +26,7 @@ The code point corresponding to the color primaries string, or `2` (unknown) if 
 
 ## Parameters
 
-- `colorPrimariesString`: A Core Video color primaries string. See   for possible values.
+- `colorPrimariesString`: A Core Video color primaries string. See [`Image Buffer Color Primaries Constants`](image-buffer-color-primaries-constants.md) for possible values.
 
 ## See Also
 

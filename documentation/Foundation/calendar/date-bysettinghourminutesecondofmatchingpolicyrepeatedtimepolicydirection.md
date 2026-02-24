@@ -34,9 +34,9 @@ If no such time exists, the next available time is returned (which could, for ex
 - `minute`: A specified minute.
 - `second`: A specified second.
 - `date`: The date to start calculation with.
-- `matchingPolicy`: Specifies the technique the search algorithm uses to find results. Default value is  .
-- `repeatedTimePolicy`: Specifies the behavior when multiple matches are found. Default value is  .
-- `direction`: Specifies the direction in time to search. Default is  .
+- `matchingPolicy`: Specifies the technique the search algorithm uses to find results. Default value is `.nextTime`.
+- `repeatedTimePolicy`: Specifies the behavior when multiple matches are found. Default value is `.first`.
+- `direction`: Specifies the direction in time to search. Default is `.forward`.
 
 ## See Also
 

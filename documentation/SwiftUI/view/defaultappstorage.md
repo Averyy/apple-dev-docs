@@ -27,7 +27,7 @@ If unspecified, the default store for a view hierarchy is `UserDefaults.standard
 
 ## Parameters
 
-- `store`: The user defaults to use as the default   store for  .
+- `store`: The user defaults to use as the default store for `AppStorage`.
 
 ## See Also
 

@@ -23,6 +23,20 @@ var videoSettings: [String : Any]! { get set }
 
 To receive samples in their device-native format, set this value to an empty dictionary:
 
+**Swift**:
+
+```swift
+let myVideoOutput = AVCaptureVideoDataOutput()
+myVideoOutput.videoSettings = [:] // Receive samples in device format.
+```
+
+**Objective-C**:
+
+```objc
+AVCaptureVideoDataOutput* myVideoOutput;
+myVideoOutput.videoSettings = @{ }; // Receive samples in device format.
+```
+
 To receive samples in a default uncompressed format, set this value to `nil`. Then you can query this value to receive a dictionary of the settings the session uses.
 
 In iOS versions prior to iOS 16, the only key supported is [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/CoreVideo/kCVPixelBufferPixelFormatTypeKey). In iOS 16 and later, the supported keys include the following:

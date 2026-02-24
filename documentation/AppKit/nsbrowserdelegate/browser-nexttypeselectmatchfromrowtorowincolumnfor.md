@@ -23,9 +23,9 @@ The index of the first row that matches `searchString` between `startRowIndex` a
 
 - `browser`: The browser.
 - `startRow`: The beginning of the row set to search.
-- `endRow`: The end of the row set to search. This value can be less than   when the search wraps around to the beginning.
+- `endRow`: The end of the row set to search. This value can be less than `startRowIndex` when the search wraps around to the beginning.
 - `column`: The column containing the rows being searched.
-- `searchString`: The keyboard-based selection string. It is   when no keyboard-based selection has begun.
+- `searchString`: The keyboard-based selection string. It is `nil` when no keyboard-based selection has begun.
 
 ## See Also
 

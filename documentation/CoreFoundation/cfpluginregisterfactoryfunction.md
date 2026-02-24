@@ -30,7 +30,7 @@ This function is used by a plug-in or host when performing dynamic registration.
 
 ## Parameters
 
-- `factoryUUID`: The   object representing the factory function to register.
+- `factoryUUID`: The `CFUUID` object representing the factory function to register.
 - `func`: The factory function pointer to register.
 
 ## See Also

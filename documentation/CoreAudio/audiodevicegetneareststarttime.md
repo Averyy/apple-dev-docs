@@ -28,7 +28,7 @@ The time that is returned is dictated by the constraints of the device and the s
 ## Parameters
 
 - `inDevice`: The AudioDevice to query.
-- `ioRequestedStartTime`: A pointer to an AudioTimeStamp that, on entry, is the requested start time.   On exit, it will have the a time equal to or later than the requested time,   as dictated by the device’s constraints.
+- `ioRequestedStartTime`: A pointer to an AudioTimeStamp that, on entry, is the requested start time. On exit, it will have the a time equal to or later than the requested time, as dictated by the device’s constraints.
 - `inFlags`: A UInt32 containing flags that modify how this function behaves.
 
 ## See Also

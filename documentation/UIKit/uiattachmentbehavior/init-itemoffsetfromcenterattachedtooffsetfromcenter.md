@@ -31,9 +31,9 @@ The attachment object returned by this method is of type [`UIAttachmentBehavior.
 ## Parameters
 
 - `item1`: The first of two dynamic items connected by the attachment behavior.
-- `offset1`: The offset from the center of   at which to create the attachment. Specifying   creates the attachment at the center of  .
+- `offset1`: The offset from the center of `item1` at which to create the attachment. Specifying [`zero`](uioffset/zero.md) creates the attachment at the center of `item1`.
 - `item2`: The second of two dynamic items connected by the attachment behavior.
-- `offset2`: The offset from the center of   at which to create the attachment. Specifying   creates the attachment at the center of  .
+- `offset2`: The offset from the center of `item2` at which to create the attachment. Specifying [`zero`](uioffset/zero.md) creates the attachment at the center of `item2`.
 
 ## See Also
 

@@ -26,8 +26,8 @@ The returned values are of type `CFString` or `CFData`, depending on the type of
 ## Parameters
 
 - `record`: The record.
-- `attributes`: An array of attributes to return values for. Elements are of type   or  . If  , all currently fetched values are returned.
-- `error`: An error reference for error details. Can be  .
+- `attributes`: An array of attributes to return values for. Elements are of type `CFStringRef` or `ODAttributeType`. If `NULL`, all currently fetched values are returned.
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

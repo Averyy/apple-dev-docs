@@ -22,8 +22,8 @@ init(duration: TimeInterval = 0.5, bounce: Double = 0.0)
 
 ## Parameters
 
-- `duration`: Defines the pace of the spring. This is approximately   equal to the settling duration, but for springs with very large   bounce values, will be the duration of the period of oscillation   for the spring.
-- `bounce`: How bouncy the spring should be. A value of 0 indicates   no bounces (a critically damped spring), positive values indicate   increasing amounts of bounciness up to a maximum of 1.0   (corresponding to undamped oscillation), and negative values   indicate overdamped springs with a minimum value of -1.0.
+- `duration`: Defines the pace of the spring. This is approximately equal to the settling duration, but for springs with very large bounce values, will be the duration of the period of oscillation for the spring.
+- `bounce`: How bouncy the spring should be. A value of 0 indicates no bounces (a critically damped spring), positive values indicate increasing amounts of bounciness up to a maximum of 1.0 (corresponding to undamped oscillation), and negative values indicate overdamped springs with a minimum value of -1.0.
 
 ## See Also
 

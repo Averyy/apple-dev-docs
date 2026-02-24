@@ -30,9 +30,9 @@ A Core Foundation dictionary with all attachments identified by their keys. If n
 
 ## Parameters
 
-- `allocator`: Allocator for the new dictionary; pass   or   to use the default allocator.
-- `target`: Specifies the   whose attachments you want to obtain.
-- `attachmentMode`: The mode of the attachments you want to obtain. See   for possible values.
+- `allocator`: Allocator for the new dictionary; pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) or `NULL` to use the default allocator.
+- `target`: Specifies the [`CMAttachmentBearer`](cmattachmentbearer.md) whose attachments you want to obtain.
+- `attachmentMode`: The mode of the attachments you want to obtain. See [`CMAttachmentMode`](cmattachmentmode.md) for possible values.
 
 ## See Also
 

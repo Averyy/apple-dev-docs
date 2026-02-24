@@ -6,9 +6,9 @@ Back up your files, collaborate with others, and tag your releases with Git sour
 
 #### Overview
 
- is the practice of tracking and managing changes to your code. Manage your Xcode project with source control to keep a rich history of the changes you make, and collaborate on code faster and more effectively.
+*Source control* is the practice of tracking and managing changes to your code. Manage your Xcode project with source control to keep a rich history of the changes you make, and collaborate on code faster and more effectively.
 
-Xcode simplifies source control management with its built-in support for Git. You create a Git  that stores your project files and a history of your changes through . When a set of changes are ready, your reviewers verify them, make suggestions, and approve them. Then you can merge your changes into the repository.
+Xcode simplifies source control management with its built-in support for Git. You create a Git *source control repository* that stores your project files and a history of your changes through *commits*. When a set of changes are ready, your reviewers verify them, make suggestions, and approve them. Then you can merge your changes into the repository.
 
 For example, you create a branch for feature work, and after it’s approved, merge those changes into the main branch.
 

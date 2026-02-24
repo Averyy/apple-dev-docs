@@ -29,8 +29,8 @@ This method is a designated initializer of `NSDictionary`.
 ## Parameters
 
 - `objects`: A C array of values for the new dictionary.
-- `keys`: A C array of keys for the new dictionary. Each key is copied (using  ; keys must conform to the   protocol), and the copy is added to the new dictionary.
-- `cnt`: The number of elements to use from the   and   arrays.   must not exceed the number of elements in   or  .
+- `keys`: A C array of keys for the new dictionary. Each key is copied (using [`copy(with:)`](nscopying/copy(with:).md); keys must conform to the `NSCopying` protocol), and the copy is added to the new dictionary.
+- `cnt`: The number of elements to use from the `keys` and `objects` arrays. `count` must not exceed the number of elements in `objects` or `keys`.
 
 ## See Also
 

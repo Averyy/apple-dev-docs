@@ -26,7 +26,7 @@ The interval between the receiver and the `anotherDate` parameter. If the receiv
 
 ## Parameters
 
-- `anotherDate`: The date with which to compare the receiver. You must pass a non-  date object.
+- `anotherDate`: The date with which to compare the receiver. You must pass a non-`nil` date object.
 
 ## See Also
 

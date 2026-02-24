@@ -21,7 +21,7 @@ func setNeedsDisplay(_ rect: NSRect, avoidAdditionalLayout flag: Bool)
 ## Parameters
 
 - `rect`: The rectangle in which display is required.
-- `flag`: A value of   causes the receiver to not perform any layout, even if this means that portions of the text view remain empty. Otherwise the receiver performs at least as much layout as needed to display  .
+- `flag`: A value of [`true`](https://developer.apple.com/documentation/Swift/true) causes the receiver to not perform any layout, even if this means that portions of the text view remain empty. Otherwise the receiver performs at least as much layout as needed to display `aRect`.
 
 ## See Also
 

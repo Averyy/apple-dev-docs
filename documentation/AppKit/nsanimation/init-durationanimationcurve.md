@@ -25,7 +25,7 @@ You can always later change the duration of an `NSAnimation` object by changing 
 ## Parameters
 
 - `duration`: The number of seconds over which the animation occurs. Specifying a negative number raises an exception.
-- `animationCurve`: An   constant that describes the relative speed of the animation over its course; if it is zero, the default curve ( ) is used.
+- `animationCurve`: An `NSAnimationCurve` constant that describes the relative speed of the animation over its course; if it is zero, the default curve (`NSAnimationEaseInOut`) is used.
 
 ## See Also
 

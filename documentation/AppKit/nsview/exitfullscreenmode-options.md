@@ -20,7 +20,7 @@ When the [`fullScreenModeApplicationPresentationOptions`](nsview/fullscreenmodeo
 
 ## Parameters
 
-- `options`: A dictionary of options for the mode. For possible keys, see  .
+- `options`: A dictionary of options for the mode. For possible keys, see `Full Screen Mode Options`.
 
 ## See Also
 

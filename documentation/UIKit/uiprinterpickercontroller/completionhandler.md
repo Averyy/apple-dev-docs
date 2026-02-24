@@ -21,6 +21,10 @@ typealias CompletionHandler = (UIPrinterPickerController, Bool, (any Error)?) ->
 
 A printer picker completion handler takes the following parameters:
 
+- **printerPickerController**: The printer picker controller object that is being dismissed. This parameter contains information about the selected printer, if any.
+- **userDidSelect**: [`true`](https://developer.apple.com/documentation/Swift/true) if the user selected a printer or [`false`](https://developer.apple.com/documentation/Swift/false) if the user canceled the selection process. When this parameter is [`true`](https://developer.apple.com/documentation/Swift/true), use the `printerPickerController` object to retrieve the selected printer object.
+- **error**: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object if there was a problem with the printer picker or `nil` if a printer was selected or the user canceled the picker.
+
 
 ---
 

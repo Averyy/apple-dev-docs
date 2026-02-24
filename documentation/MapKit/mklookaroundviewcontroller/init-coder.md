@@ -20,7 +20,7 @@ init?(coder: NSCoder)
 
 ## Parameters
 
-- `coder`: The   object
+- `coder`: The [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder) object
 
 ## See Also
 

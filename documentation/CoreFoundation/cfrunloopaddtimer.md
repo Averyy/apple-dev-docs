@@ -30,7 +30,7 @@ If `rl` already contains `timer` in `mode`, this function does nothing.
 
 - `rl`: The run loop to modify.
 - `timer`: The run loop timer to add.
-- `mode`: The run loop mode of   to which to add  . Use the constant   to add   to the set of objects monitored by all the common modes.
+- `mode`: The run loop mode of `rl` to which to add `timer`. Use the constant [`commonModes`](cfrunloopmode/commonmodes.md) to add `timer` to the set of objects monitored by all the common modes.
 
 ## See Also
 

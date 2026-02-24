@@ -25,7 +25,7 @@ The implementation only supports a single recurrence rule.
 
 ## Parameters
 
-- `rule`: The rule to be removed from  .
+- `rule`: The rule to be removed from [`recurrenceRules`](ekcalendaritem/recurrencerules.md).
 
 ## See Also
 

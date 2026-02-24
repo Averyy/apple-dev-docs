@@ -22,8 +22,8 @@ Location of `value` within `multiValue`, `-1` if `value` is not present in `mult
 
 ## Parameters
 
-- `multiValue`: The multivalue property in which to search for  .
-- `value`: The value to search for in  .
+- `multiValue`: The multivalue property in which to search for `value`.
+- `value`: The value to search for in `multiValue`.
 
 ## See Also
 

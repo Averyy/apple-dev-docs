@@ -27,8 +27,8 @@ The last component of rows `0` through `2` correspond to the translation values 
 
 ## Parameters
 
-- `matrix`: A   matrix.
-- `row`: The row index, which must be a number between   and  , inclusive.
+- `matrix`: A `4x4` matrix.
+- `row`: The row index, which must be a number between `0` and `3`, inclusive.
 
 ## See Also
 

@@ -40,6 +40,18 @@ After initializing an image renderer, you can use it to draw multiple images wit
 
 Create an image renderer, providing the size of the output image:
 
+**Swift**:
+
+```swift
+let renderer = UIGraphicsImageRenderer(size: CGSize(width: 200, height: 200))
+```
+
+**Objective-C**:
+
+```objc
+UIGraphicsImageRenderer *renderer = [[UIGraphicsImageRenderer alloc] initWithSize:CGSizeMake(200, 200)];
+```
+
 You can instead use one of the other [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md) initializers to specify a renderer format ([`UIGraphicsImageRendererFormat`](uigraphicsimagerendererformat.md)) in addition to the size. This allows you to configure the underlying Core Graphics context for wide color and retina images.
 
 If you don’t provide a format, the renderer uses the [`default()`](uigraphicsrendererformat/default().md) format, which creates a context best suited for the current device.
@@ -47,6 +59,28 @@ If you don’t provide a format, the renderer uses the [`default()`](uigraphicsr
 ##### Creating an Image with an Image Renderer
 
 Use the [`image(actions:)`](uigraphicsimagerenderer/image(actions:).md) method to create an image ([`UIImage`](uiimage.md) object) with an image renderer. This method takes a closure that represents the drawing actions. Within this closure, the renderer creates a Core Graphics context using the parameters provided during renderer initialization, and sets this Core Graphics context to be the current context.
+
+**Swift**:
+
+```swift
+let image = renderer.image { (context) in
+  UIColor.darkGray.setStroke()
+  context.stroke(renderer.format.bounds)
+  UIColor(colorLiteralRed: 158/255, green: 215/255, blue: 245/255, alpha: 1).setFill()
+  context.fill(CGRect(x: 1, y: 1, width: 140, height: 140))
+}
+```
+
+**Objective-C**:
+
+```objc
+  UIImage *image = [renderer imageWithActions:^(UIGraphicsImageRendererContext * _Nonnull context) {
+    [[UIColor darkGrayColor] setStroke];
+    [context strokeRect:renderer.format.bounds];
+    [[UIColor colorWithRed:158/255.0 green:215/255.0 blue:245/255.0 alpha:1] setFill];
+    [context fillRect:CGRectMake(1, 1, 140, 140)];
+  }];
+```
 
 The drawing actions closure takes a single argument of type [`UIGraphicsImageRendererContext`](uigraphicsimagerenderercontext.md). This provides access to some high-level drawing functions, such as [`fill(_:)`](uigraphicsrenderercontext/fill(_:).md), through the [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md) superclass.
 
@@ -60,6 +94,32 @@ In addition to the [`image(actions:)`](uigraphicsimagerenderer/image(actions:).m
 
 The utility methods on [`UIGraphicsImageRendererContext`](uigraphicsimagerenderercontext.md) also offer a variant that accepts a [`CGBlendMode`](https://developer.apple.com/documentation/CoreGraphics/CGBlendMode) value. This value determines how to combine the pixel values when painting.
 
+**Swift**:
+
+```swift
+let image = renderer.image { (context) in
+  UIColor.darkGray.setStroke()
+  context.stroke(renderer.format.bounds)
+  UIColor(colorLiteralRed: 158/255, green: 215/255, blue: 245/255, alpha: 1).setFill()
+  context.fill(CGRect(x: 1, y: 1, width: 140, height: 140))
+  UIColor(colorLiteralRed: 145/255, green: 211/255, blue: 205/255, alpha: 1).setFill()
+  context.fill(CGRect(x: 60, y: 60, width: 140, height: 140), blendMode: .multiply)
+}
+```
+
+**Objective-C**:
+
+```objc
+  UIImage *image = [renderer imageWithActions:^(UIGraphicsImageRendererContext * _Nonnull context) {
+    [[UIColor darkGrayColor] setStroke];
+    [context strokeRect:renderer.format.bounds];
+    [[UIColor colorWithRed:158/255.0 green:215/255.0 blue:245/255.0 alpha:1] setFill];
+    [context fillRect:CGRectMake(1, 1, 140, 140)];
+    [[UIColor colorWithRed:145/255.0 green:211/255.0 blue:205/255.0 alpha:1] setFill];
+    [context fillRect:CGRectMake(60, 60, 140, 140) blendMode:kCGBlendModeMultiply];
+  }];
+```
+
 This code draws a second square, using a blend mode of multiply. The following image shows the result.
 
 ![Image showing two overlapping squares, one blue, the other turquoise, in the top-left and bottom-right of a white background square respectively.](https://docs-assets.developer.apple.com/published/80b9801ced2dfb67ba11c15a666db490/media-2875000%402x.png)
@@ -67,6 +127,38 @@ This code draws a second square, using a blend mode of multiply. The following i
 ##### Using Core Graphics Rendering Functions
 
 The [`UIGraphicsImageRendererContext`](uigraphicsimagerenderercontext.md) available in the image closure has a [`cgContext`](uigraphicsrenderercontext/cgcontext.md) property, which allows you to use Core Graphics rendering functions directly. For example, the following code demonstrates how to add a circle to the image:
+
+**Swift**:
+
+```swift
+let image = renderer.image { (context) in
+  UIColor.darkGray.setStroke()
+  context.stroke(renderer.format.bounds)
+  UIColor(colorLiteralRed: 158/255, green: 215/255, blue: 245/255, alpha: 1).setFill()
+  context.fill(CGRect(x: 1, y: 1, width: 140, height: 140))
+  UIColor(colorLiteralRed: 145/255, green: 211/255, blue: 205/255, alpha: 1).setFill()
+  context.fill(CGRect(x: 60, y: 60, width: 140, height: 140), blendMode: .multiply)
+  
+  UIColor(colorLiteralRed: 203/255, green: 222/255, blue: 116/255, alpha: 0.6).setFill()
+  context.cgContext.fillEllipse(in: CGRect(x: 60, y: 60, width: 140, height: 140))
+}
+```
+
+**Objective-C**:
+
+```objc
+  UIImage *image = [renderer imageWithActions:^(UIGraphicsImageRendererContext * _Nonnull context) {
+    [[UIColor darkGrayColor] setStroke];
+    [context strokeRect:renderer.format.bounds];
+    [[UIColor colorWithRed:158/255.0 green:215/255.0 blue:245/255.0 alpha:1] setFill];
+    [context fillRect:CGRectMake(1, 1, 140, 140)];
+    [[UIColor colorWithRed:145/255.0 green:211/255.0 blue:205/255.0 alpha:1] setFill];
+    [context fillRect:CGRectMake(60, 60, 140, 140) blendMode:kCGBlendModeMultiply];
+    
+    [[UIColor colorWithRed:203/255.0 green:222/255.0 blue:116/255.0 alpha:0.6] setFill];
+    CGContextFillEllipseInRect(context.CGContext, CGRectMake(60, 60, 140, 140));
+  }];
+```
 
 This code uses the [`fillEllipse(in:)`](https://developer.apple.com/documentation/CoreGraphics/CGContext/fillEllipse(in:)) method on [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) to draw a green circle on the blue and turquoise squares image; the following image shows the result.
 

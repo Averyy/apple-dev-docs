@@ -25,7 +25,7 @@ This effect rotates the content around the axis that points out of the xy-plane.
 ## Parameters
 
 - `angle`: The angle by which to rotate the content.
-- `anchor`: A unit point within the content about which to   perform the rotation. The default value is  .
+- `anchor`: A unit point within the content about which to perform the rotation. The default value is [`center`](unitpoint/center.md).
 
 
 ---

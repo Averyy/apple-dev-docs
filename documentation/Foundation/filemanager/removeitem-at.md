@@ -28,7 +28,7 @@ Removing an item also removes all old versions of that item, invalidating any UR
 
 ## Parameters
 
-- `URL`: A file URL specifying the file or directory to remove. If the URL specifies a directory, the contents of that directory are recursively removed. You may specify   for this parameter in Objective-C.
+- `URL`: A file URL specifying the file or directory to remove. If the URL specifies a directory, the contents of that directory are recursively removed. You may specify `nil` for this parameter in Objective-C.
 
 ## See Also
 

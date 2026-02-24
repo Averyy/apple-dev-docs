@@ -22,8 +22,8 @@ func encode(_ timeRange: CMTimeRange, forKey key: String)
 
 ## Parameters
 
-- `timeRange`: A   structure.
-- `key`: The key with which to associate   in the archive.
+- `timeRange`: A `CMTimeRange` structure.
+- `key`: The key with which to associate `timeRange` in the archive.
 
 ## See Also
 

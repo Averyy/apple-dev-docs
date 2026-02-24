@@ -42,7 +42,7 @@ Xcode 15.1 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, and
 ###### Known Issues
 
 - In certain circumstances, an app can’t read the contents of its own data container after replacing the content of the data container using Xcode or devicectl.  (116698465) (FB13253099)
-- Running a WatchApp that requires the companion iOS app to be installed will result in an error if the run destination is set to a Watch via iPhone Simulator pair.  (119640671)  Select a singular Watch Simulator run destination and then Run.
+- Running a WatchApp that requires the companion iOS app to be installed will result in an error if the run destination is set to a Watch via iPhone Simulator pair.  (119640671) **Workaround:** Select a singular Watch Simulator run destination and then Run.
 
 ##### Instruments
 
@@ -100,8 +100,8 @@ Xcode 15.1 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, and
 
 ###### Known Issues
 
-- Reality Composer Pro might quit unexpectedly after switching audio devices from a Studio Display to another device, such as AirPods or built-in speakers.  (109912081)  Save the project and quit Reality Composer Pro, switch the audio output device, then reload the project.
-- Subsequent launches of app in Simulator might not play audio on launch  (113052899)  You can keep a reference to the AudioPlaybackController, either in a variable or a collection, replacing instances of `entity.playAudio(someAudioFileResource)` with `controller = entity.playAudio(someFileResource)` where the `controller` variable keeps a reference to the sound for the expected duration of playback. Keeping a reference to the controller should work around this issue until fix is available.
+- Reality Composer Pro might quit unexpectedly after switching audio devices from a Studio Display to another device, such as AirPods or built-in speakers.  (109912081) **Workaround:** Save the project and quit Reality Composer Pro, switch the audio output device, then reload the project.
+- Subsequent launches of app in Simulator might not play audio on launch  (113052899) **Workaround:** You can keep a reference to the AudioPlaybackController, either in a variable or a collection, replacing instances of `entity.playAudio(someAudioFileResource)` with `controller = entity.playAudio(someFileResource)` where the `controller` variable keeps a reference to the sound for the expected duration of playback. Keeping a reference to the controller should work around this issue until fix is available.
 
 ##### Signing Distribution
 
@@ -160,7 +160,7 @@ Xcode 15.1 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, and
 
 ###### Known Issues
 
-- iOS apps with a deployment target set to 17.2 fail to run on Apple Vision Pro.  (117105090)  Set the iOS deployment target to 17.0 or earlier in the project or target’s build settings.
+- iOS apps with a deployment target set to 17.2 fail to run on Apple Vision Pro.  (117105090) **Workaround:** Set the iOS deployment target to 17.0 or earlier in the project or target’s build settings.
 
 ##### Xcode Cloud
 
@@ -172,7 +172,7 @@ Xcode 15.1 includes SDKs for iOS 17.2, iPadOS 17.2, tvOS 17.2, watchOS 10.2, and
 
 ###### Known Issues
 
-- Test Action report logs may appear in less human readable form when os_log’s are output.  (118455129)  Set this User Default on your system by running the following command in terminal. `defaults write com.apple.dt.Xcode IDEDisableConsoleLibLogRedirectLoggingForTestActions -bool YES`
+- Test Action report logs may appear in less human readable form when os_log’s are output.  (118455129) **Workaround:** Set this User Default on your system by running the following command in terminal. `defaults write com.apple.dt.Xcode IDEDisableConsoleLibLogRedirectLoggingForTestActions -bool YES`
 
 ## See Also
 

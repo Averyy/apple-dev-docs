@@ -27,7 +27,7 @@ An instance with the age you specify if the user’s age is at least the age you
 
 ## Parameters
 
-- `age`: The age a user must at least be, in years from   to  .
+- `age`: The age a user must at least be, in years from `1` to `125`.
 
 ## See Also
 

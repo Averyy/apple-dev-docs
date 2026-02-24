@@ -35,10 +35,12 @@ After instantiating the query, call the `HKHealthStore` class’s `executeQuery:
 
 ## Parameters
 
-- `quantityType`: The type of sample to search for. This type must be an instance of the   class. You cannot perform statistics queries using other sample types.
-- `quantitySamplePredicate`: A predicate that limits the results returned by the query. You can pass   if you want to perform the statistical calculation over all the samples of the specified type.
-- `options`: A list of options that define the type of statistical calculations performed and the way in which data from multiple sources are merged. For a list of valid options, see  .
-- `handler`: A block that is called after the statistical calculations are complete. This block takes the following arguments:
+- `quantityType`: The type of sample to search for. This type must be an instance of the [`HKQuantityType`](hkquantitytype.md) class. You cannot perform statistics queries using other sample types.
+- `quantitySamplePredicate`: A predicate that limits the results returned by the query. You can pass `nil` if you want to perform the statistical calculation over all the samples of the specified type.
+- `options`: A list of options that define the type of statistical calculations performed and the way in which data from multiple sources are merged. For a list of valid options, see [`HKStatisticsOptions`](hkstatisticsoptions.md).
+- `handler`: A block that is called after the statistical calculations are complete. This block takes the following arguments: - **query**: A reference to the query calling this block.
+- **results**: A HealthKit statistics object that contains the requested statistical data, or `nil` if an error occurs.
+- **error**: If an error occurs, this parameter contains an object describing the error; otherwise, it is `nil`.
 
 ## See Also
 

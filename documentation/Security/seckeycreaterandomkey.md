@@ -35,8 +35,8 @@ To get the associated public key, use [`SecKeyCopyPublicKey(_:)`](seckeycopypubl
 
 ## Parameters
 
-- `parameters`: A dictionary you use to specify the attributes of the generated keys. See   for details.
-- `error`: An error reference pointer that   populates with a suitable error instance on failure.
+- `parameters`: A dictionary you use to specify the attributes of the generated keys. See [`Key Generation Attributes`](key-generation-attributes.md) for details.
+- `error`: An error reference pointer that [`SecKeyCreateRandomKey(_:_:)`](seckeycreaterandomkey(_:_:).md) populates with a suitable error instance on failure.
 
 
 ---

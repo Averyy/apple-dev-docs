@@ -24,7 +24,7 @@ In Objective-C code, you might use an expectation to wait on a call to an interf
 ## Parameters
 
 - `expectations`: An array of expectations the test must satisfy.
-- `enforceOrderOfFulfillment`: If  , the test must satisfy the expectations in the order they appear in the array.
+- `enforceOrderOfFulfillment`: If [`true`](https://developer.apple.com/documentation/Swift/true), the test must satisfy the expectations in the order they appear in the array.
 
 ## See Also
 

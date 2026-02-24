@@ -31,10 +31,10 @@ Use this method to report changes that precisely intersect your context object�
 
 ## Parameters
 
-- `range`: The range of text to replace. This range is relative to   the starting location of the specified context object’s text in   your view’s text storage. If you initialized the context object   with the entire contents of your view’s text storage, specify the   range of text you’re replacing in your text storage. However, if   you initialized the context object with only a portion of your   view’s text, specify a range that is relative to the starting   location of the context object’s text.
-- `replacementText`: The text that replaces the previous content in   . Specify an empty string to delete the text in the specified range.
+- `range`: The range of text to replace. This range is relative to the starting location of the specified context object’s text in your view’s text storage. If you initialized the context object with the entire contents of your view’s text storage, specify the range of text you’re replacing in your text storage. However, if you initialized the context object with only a portion of your view’s text, specify a range that is relative to the starting location of the context object’s text.
+- `replacementText`: The text that replaces the previous content in `range`. Specify an empty string to delete the text in the specified range.
 - `reason`: The reason you updated the text.
-- `contextID`: The unique identifier of the context object that   contains the text you modified.
+- `contextID`: The unique identifier of the context object that contains the text you modified.
 
 ## See Also
 

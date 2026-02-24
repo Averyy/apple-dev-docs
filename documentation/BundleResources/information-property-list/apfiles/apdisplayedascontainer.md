@@ -8,6 +8,10 @@ A Boolean value indicating whether the file or a folder icon is displayed in the
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [APFileDescriptionKey](information-property-list/apfiles/apfiledescriptionkey.md)

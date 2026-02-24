@@ -29,7 +29,7 @@ This method installs into the Secure Element an applet bundle that you’ve subm
 
 ## Parameters
 
-- `configurationUUID`: A UUID corresponding to an applet bundle configured on the   portal. The system uses the corresponding applet bundle to provision the instance associated with the created credential. The UUID is opaque to the device.
+- `configurationUUID`: A UUID corresponding to an applet bundle configured on the [`Apple Business Register`](https://developer.apple.comhttps://register.apple.com/login) portal. The system uses the corresponding applet bundle to provision the instance associated with the created credential. The UUID is opaque to the device.
 - `name`: A friendly name assigned for ease of identification the provisioned credential. The name is opaque to the device.
 
 ## See Also

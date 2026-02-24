@@ -28,7 +28,7 @@ You specify the metadata delegate, and a dispatch queue on which it will be call
 
 ## Parameters
 
-- `delegate`: An object conforming to   protocol.
+- `delegate`: An object conforming to [`AVPlayerItemMetadataOutputPushDelegate`](avplayeritemmetadataoutputpushdelegate.md) protocol.
 - `delegateQueue`: A dispatch queue on which all delegate methods will be called.
 
 ## See Also

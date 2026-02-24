@@ -27,8 +27,8 @@ For example, if your app can handle plain text and rich text, but you prefer ric
 
 ## Parameters
 
-- `supportedTypes`: The uniform type identifiers that describe the   types of content this view can accept through a paste action.   If the Clipboard doesn’t contain any of the supported types, the   Paste command doesn’t trigger.
-- `payloadAction`: The action to perform when the Paste command triggers.   The action closure’s parameter contains items from the Clipboard   with the types you specify in the   parameter.
+- `supportedTypes`: The uniform type identifiers that describe the types of content this view can accept through a paste action. If the Clipboard doesn’t contain any of the supported types, the Paste command doesn’t trigger.
+- `payloadAction`: The action to perform when the Paste command triggers. The action closure’s parameter contains items from the Clipboard with the types you specify in the `supportedTypes` parameter.
 
 
 ---

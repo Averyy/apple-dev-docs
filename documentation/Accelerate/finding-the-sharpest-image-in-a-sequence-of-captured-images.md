@@ -16,7 +16,7 @@ This sample code project captures a sequence of photographs and uses a combinati
 
 ![A screenshot of the sample app showing four rows. Each row contains, on the left, the original image, and, on the right, the convolved image. The images are ordered by decreasing sharpness.](https://docs-assets.developer.apple.com/published/434512a4241cd720e94f50f8fce20d55/blur-detection.png)
 
-This project uses [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) to build the user interface,  [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) to capture a sequence of images, and a method known as  to determine the sharpness of each image.
+This project uses [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) to build the user interface,  [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) to capture a sequence of images, and a method known as *the variance of the Laplacian* to determine the sharpness of each image.
 
 Before exploring the code, try building and running the app, and taking photographs of subjects such as documents and signs.
 

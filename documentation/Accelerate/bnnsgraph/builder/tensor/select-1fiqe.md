@@ -61,8 +61,8 @@ print(tensor_tensor.makeArray(of: Float.self))
 
 ## Parameters
 
-- `valueIfTrue`: The values that the operation returns when the corresponding value in   is  .
-- `valueIfFalse`: The values that the operation returns when the corresponding value in   is  .
+- `valueIfTrue`: The values that the operation returns when the corresponding value in `self` is `true`.
+- `valueIfFalse`: The values that the operation returns when the corresponding value in `self` is `false`.
 
 
 ---

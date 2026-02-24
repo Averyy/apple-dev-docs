@@ -27,7 +27,7 @@ Conforming objects can implement more sophisticated logic for negotiating the at
 
 - `textContainer`: The text container for the text being laid out.
 - `lineFrag`: The line fragment containing the text attachment.
-- `position`: The glyph location inside   which is the origin of the returned bounds rectangle.
+- `position`: The glyph location inside `lineFrag` which is the origin of the returned bounds rectangle.
 - `charIndex`: The character location inside the text storage for the attachment character.
 
 

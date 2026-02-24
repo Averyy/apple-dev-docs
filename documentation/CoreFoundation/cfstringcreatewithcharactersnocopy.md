@@ -38,10 +38,10 @@ If an error occurs during the creation of the string, then `chars` is not deallo
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new string. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `chars`: The Unicode buffer that has been allocated and initialized with Unicode characters.
-- `numChars`: The number of characters in the buffer pointed to by  . Only this number of characters will be copied to internal storage.
-- `contentsDeallocator`: The allocator to use to deallocate the external buffer when it is no longer needed. You can pass   or   to request the default allocator for this purpose. If the buffer does not need to be deallocated, or if you want to assume responsibility for deallocating the buffer (and not have the string deallocate it), pass  .
+- `numChars`: The number of characters in the buffer pointed to by `chars`. Only this number of characters will be copied to internal storage.
+- `contentsDeallocator`: The allocator to use to deallocate the external buffer when it is no longer needed. You can pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to request the default allocator for this purpose. If the buffer does not need to be deallocated, or if you want to assume responsibility for deallocating the buffer (and not have the string deallocate it), pass [`kCFAllocatorNull`](kcfallocatornull.md).
 
 ## See Also
 

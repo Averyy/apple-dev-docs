@@ -27,7 +27,7 @@ This method calls [`newDeviceDescription`](iouserhiddevice/newdevicedescription.
 
 ## Parameters
 
-- `provider`: The provider object that matches the current device. Cast this object to the class you expect. The system retains this object for the duration of your   method. The system continues to retain the object if your service starts successfully, releasing it only after calling your service’s   method.
+- `provider`: The provider object that matches the current device. Cast this object to the class you expect. The system retains this object for the duration of your `Start` method. The system continues to retain the object if your service starts successfully, releasing it only after calling your service’s [`Stop`](iouserhideventservice/stop.md) method.
 
 ## See Also
 

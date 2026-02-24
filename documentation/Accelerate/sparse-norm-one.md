@@ -22,7 +22,7 @@ var SPARSE_NORM_ONE: sparse_norm { get }
 
 #### Discussion
 
-| Matrix element wise |  | |—|—| | Matrix operator |  | | Vector element wise |  |
+| Matrix element wise | *sumᵢ,ⱼ ( | A[i,j] | )* | |—|—| | Matrix operator | *maxⱼ ( sumᵢ ( | A[i,j] | )* | | Vector element wise | *sqrt( sumᵢ,ⱼ (A[i,j])² )* |
 
 ## See Also
 

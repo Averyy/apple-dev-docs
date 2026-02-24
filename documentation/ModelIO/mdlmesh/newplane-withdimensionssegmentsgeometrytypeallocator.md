@@ -34,7 +34,7 @@ The `allocator` parameter controls vertex data allocation for the mesh. For exam
 - `dimensions`: A vector containing the width (x-component) and depth (y-component) of the plane to generate.
 - `segments`: The number of points to generate along each dimension. A larger number of points increases rendering fidelity but decreases rendering performance.
 - `geometryType`: The type of geometric primitive — triangles or quads — from which to construct the mesh.
-- `allocator`: An object responsible for allocating mesh vertex data. If  , Model I/O  uses an internal allocator object.
+- `allocator`: An object responsible for allocating mesh vertex data. If `nil`, Model I/O  uses an internal allocator object.
 
 ## See Also
 

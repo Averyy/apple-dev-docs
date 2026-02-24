@@ -29,19 +29,32 @@ In macOS, the Settings window displays a child pane as a tab on the window’s t
 
 The tab for a child pane displays the pane’s title and a system-provided icon. To customize the icon, add the following key to the child pane’s property list file:
 
+- **`Icon`**: Optional. A string with the name of the image file to display as the toolbar tab icon in the Settings window.
+
 You must include the image file in the Settings bundle that contains the child pane’s property list file.
 
 ##### Confirm Changes Made with a Toggle Switch
 
 Another element of the Settings bundle is the toggle switch element, which displays an ON/OFF switch that the user can toggle. Your Mac app can prompt the user for a confirmation when they toggle the switch by including the following keys in the toggle switch element:
 
+- **`TrueConfirmationPrompt`**: Optional. A dictionary that defines the prompt to present to users when they attempt to turn on the switch.
+- **`FalseConfirmationPrompt`**: Optional. A dictionary that defines the prompt to present to users when they attempt to turn off the switch.
+
 Each dictionary contains the following keys that define the contents of the prompt:
+
+- **`Type`**: Required. Must be set to `PSConfirmationPrompt`.
+- **`Title`**: Required. A string with the title of the prompt. The title might not appear on some devices.
+- **`Prompt`**: Required. A string with the body text that the prompt displays.
+- **`ConfirmText`**: Optional. A string with the text displayed in the prompt’s confirmation button. The toggle switch value changes when the user clicks this button.
+- **`DenyText`**: Optional. A string with the text displayed in the prompt’s cancel button. The toggle switch value doesn’t change when the user clicks this button.
 
 For more information, see [`Building a Settings bundle for your app`](https://developer.apple.com/documentation/Foundation/building-a-settings-bundle-for-your-app#Add-a-toggle-switch-element).
 
 ##### Display Subtitles for Toggle Switches
 
 Some iOS apps show descriptive text in a subtitle below a toggle switch using a group item with footer text. While the Settings window supports this approach, the appearance on a Mac isn’t ideal. Instead, include the following key in the toggle switch element to show a subtitle:
+
+- **`Description`**: Optional. A longer descriptive string to display under a toggle switch.
 
 ## See Also
 

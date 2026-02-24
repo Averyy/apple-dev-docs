@@ -20,7 +20,7 @@ Delegates should invoke this method if an error is encountered in the [`applicat
 
 ## Parameters
 
-- `reply`: The error that occurred. For a list of possible values, see  .
+- `reply`: The error that occurred. For a list of possible values, see [`NSApplication.DelegateReply`](nsapplication/delegatereply.md).
 
 ## See Also
 

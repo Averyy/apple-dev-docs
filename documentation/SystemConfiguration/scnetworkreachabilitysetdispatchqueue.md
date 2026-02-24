@@ -25,8 +25,8 @@ func SCNetworkReachabilitySetDispatchQueue(_ target: SCNetworkReachability, _ qu
 
 ## Parameters
 
-- `target`: The address or name that is set up for asynchronous notifications. Must not be  .
-- `queue`: The libdispatch queue on which the target should run. Pass   to disable notifications and release the queue.
+- `target`: The address or name that is set up for asynchronous notifications. Must not be `NULL`.
+- `queue`: The libdispatch queue on which the target should run. Pass `NULL` to disable notifications and release the queue.
 
 ## See Also
 

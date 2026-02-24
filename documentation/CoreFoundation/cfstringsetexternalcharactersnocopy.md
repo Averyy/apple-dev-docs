@@ -26,9 +26,9 @@ You use this function to reallocate memory for a string, if necessary, and chang
 
 ## Parameters
 
-- `theString`: The string to act as a “wrapper” for the external backing store ( ). If this value is not a CFMutableString object, an assertion is raised.
-- `chars`: The external (client-owned) Unicode buffer acting as the backing store for  .
-- `length`: The current length of the contents of   (in Unicode characters).
+- `theString`: The string to act as a “wrapper” for the external backing store (`chars`). If this value is not a CFMutableString object, an assertion is raised.
+- `chars`: The external (client-owned) Unicode buffer acting as the backing store for `theString`.
+- `length`: The current length of the contents of `chars` (in Unicode characters).
 - `capacity`: The capacity of the Unicode buffer—that is, the total number of Unicode characters that can be stored in it before the buffer has to be grown.
 
 ## See Also

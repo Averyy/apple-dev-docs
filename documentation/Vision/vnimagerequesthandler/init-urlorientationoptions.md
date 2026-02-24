@@ -21,9 +21,9 @@ init(url imageURL: URL, orientation: CGImagePropertyOrientation, options: [VNIma
 
 ## Parameters
 
-- `imageURL`: A URL pointing to the image to be used for performing the requests. The image must be in a format supported by  . Image content is immutable.
-- `orientation`: The orientation of the input  .
-- `options`: An optional dictionary containing   keys to auxiliary image data.
+- `imageURL`: A URL pointing to the image to be used for performing the requests. The image must be in a format supported by [`Image I/O`](https://developer.apple.com/documentation/ImageIO). Image content is immutable.
+- `orientation`: The orientation of the input `image`.
+- `options`: An optional dictionary containing [`VNImageOption`](vnimageoption.md) keys to auxiliary image data.
 
 ## See Also
 

@@ -31,8 +31,8 @@ To render an image for export, the image’s contents must not be empty and its 
 
 - `image`: The image object to render.
 - `format`: The pixel format for the output image.
-- `colorSpace`: The color space in which to render the output image. This color space must conform to either the   or   model and must be compatible with the specified pixel format.
-- `options`: A dictionary with additional options for export. Supported keys include  ,  ,  , and  .
+- `colorSpace`: The color space in which to render the output image. This color space must conform to either the [`CGColorSpaceModel.rgb`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpaceModel/rgb) or [`CGColorSpaceModel.monochrome`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpaceModel/monochrome) model and must be compatible with the specified pixel format.
+- `options`: A dictionary with additional options for export. Supported keys include [`kCGImageDestinationLossyCompressionQuality`](https://developer.apple.com/documentation/ImageIO/kCGImageDestinationLossyCompressionQuality), [`avDepthData`](ciimagerepresentationoption/avdepthdata.md), [`depthImage`](ciimagerepresentationoption/depthimage.md), and [`disparityImage`](ciimagerepresentationoption/disparityimage.md).
 
 ## See Also
 

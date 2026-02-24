@@ -43,7 +43,7 @@ You can determine whether your keyboard has open access by using the [`hasFullAc
 
 The following table describes areas that are especially important for establishing and maintaining user trust.
 
-|  |  |
+| **Area** | **Considerations** |
 | --- | --- |
 | Safety of keystroke data | Users want their keystrokes to go to the document or text field they’re typing into, and not to be archived on a server or used for purposes that aren’t obvious to them. |
 | Appropriate and minimal use of other user data | If your keyboard employs other user data, such as from Location Services or the Contacts database, the burden is on you to explain and demonstrate the benefit to your users. |
@@ -52,7 +52,7 @@ If you build a keyboard without open access, the system ensures that keystrokes 
 
 Each keyboard capability associated with open access carries responsibilities on your part as a developer, as indicated in the next table. In general, treat user data with the greatest possible respect and don’t use it for any purpose that isn’t obvious to the user.
 
-|  |  |  |
+| **Open access keyboard capability** | **User benefit** | **Developer responsibility** |
 | --- | --- | --- |
 | Shared container with containing app |  | Store data securely, and use only for the purpose of text input |
 | Sending keystroke data to your server |  | Transmit data securely, and use only for the purpose of text input |

@@ -18,7 +18,7 @@ Some features of Apple silicon are decidedly different than those of Intel-based
 
 - Virtual memory page sizes are different. Fetch the value from the `vm_page_size` global variable.
 - Cache line sizes are different. Fetch the `hw.cachelinesize` setting using `sysctl`.
-- CPU-specific features. Fetch the feature availability using sysctl and a string of the form `hw.optional.`, where  is the feature you want. For example, to determine if AVX512 instructions are available, use the `hw.optional.avx512f` string.
+- CPU-specific features. Fetch the feature availability using sysctl and a string of the form `hw.optional.`*<feature>*, where *<feature>* is the feature you want. For example, to determine if AVX512 instructions are available, use the `hw.optional.avx512f` string.
 
 To see the list of available hardware features, run the command `sysctl hw` command in Terminal. For other system features, run `sysctl` with a different domain string, such as `kern`, `user`, or `machdep`.
 

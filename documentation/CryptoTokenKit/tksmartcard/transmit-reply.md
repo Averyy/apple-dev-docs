@@ -27,7 +27,8 @@ You should only call this method after a session to the Smart Card has been esta
 ## Parameters
 
 - `request`: The APDU request data.
-- `reply`: The   object is created in the   domain with a code in the   enumeration.
+- `reply`: - **response**: The APDU response data, or `nil` if communication with the Smart Card failed.
+- **error**: Contains information about the the error preventing the transaction from being established. The `NSError` object is created in the [`TKErrorDomain`](tkerrordomain.md) domain with a code in the [`TKError.Code`](tkerror/code.md) enumeration.
 
 ## See Also
 

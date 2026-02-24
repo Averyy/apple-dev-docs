@@ -26,7 +26,7 @@ Xcode 15.4 includes SDKs for iOS 17.5, iPadOS 17.5, tvOS 17.5, watchOS 10.5, mac
  Code: 401
  Failure Reason: runtime profile not found using "System" match policy
  Recovery Suggestion: Download the com.apple.CoreSimulator.SimRuntime.iOS-17-2 simulator runtime from the Xcode 
-``` (127498625)  To resume using the simulator, please reboot your Mac.  After rebooting, check Xcode Settings → Platforms to ensure that the simulator runtime you would like to use is still installed.  If it is missing, use the Get button to download it again.
+``` (127498625) **Workaround:** To resume using the simulator, please reboot your Mac.  After rebooting, check Xcode Settings → Platforms to ensure that the simulator runtime you would like to use is still installed.  If it is missing, use the Get button to download it again.
 
 ##### App Shortcuts Preview
 
@@ -63,7 +63,7 @@ Xcode 15.4 includes SDKs for iOS 17.5, iPadOS 17.5, tvOS 17.5, watchOS 10.5, mac
 
 ###### Known Issues
 
-- Previews may fail in projects or targets that use special characters such as curly quotes, Phi, etc.  (125490102) (FB13699939)  Rename project and/or target to no longer use special characters.
+- Previews may fail in projects or targets that use special characters such as curly quotes, Phi, etc.  (125490102) (FB13699939) **Workaround:** Rename project and/or target to no longer use special characters.
 
 ## See Also
 

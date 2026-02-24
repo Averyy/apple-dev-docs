@@ -9,6 +9,10 @@ A Boolean value indicating whether only the app extension’s custom view contro
 - iOS 10.0+
 - iPadOS 10.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [IDMessageFilterExtensionNetworkURL](information-property-list/nsextension/nsextensionattributes/idmessagefilterextensionnetworkurl.md)

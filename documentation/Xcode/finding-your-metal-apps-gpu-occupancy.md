@@ -6,7 +6,11 @@ Understand the GPU usage for executing shaders by using occupancy.
 
 #### Overview
 
-A GPU has a maximum number of threads that it can execute at the same time.  is a measurement of how much of this capacity the GPU is using. GPUs create new threads when they have commands with more threads to dispatch and enough internal resources. It’s generally better to have higher occupancy when the app is making efficient use of the GPU.
+A GPU has a maximum number of threads that it can execute at the same time. *Occupancy* is a measurement of how much of this capacity the GPU is using. GPUs create new threads when they have commands with more threads to dispatch and enough internal resources. It’s generally better to have higher occupancy when the app is making efficient use of the GPU.
+
+- **Compute occupancy**: Measures the percentage of the GPU’s total thread capacity it’s using to execute compute commands.
+- **Vertex occupancy**: Measures the percentage of the GPU’s total thread capacity it’s using to execute vertex threads.
+- **Fragment occupancy**: Measures the percentage of the GPU’s total thread capacity it’s using to execute fragment threads.
 
 The sum of these percentages is the total percentage of the GPU’s capacity in use.
 
@@ -32,7 +36,7 @@ If you’re seeing overall low occupancy, your next step is to determine whether
 
 When overall occupancy is high, the GPU is executing many threads to hide instruction latency. High occupancy is generally good because you want to use the GPU to its full potential. However, it’s also possible that your shaders aren’t using the GPU efficiently. Optimizing them can make more of the GPU’s capacity available for other GPU commands.
 
-In rare cases, when overall occupancy is very high, the GPU may execute its workload poorly because threads are competing for space in the GPU’s memory caches (also known as ). In that case, you may need to scale back the amount of work you’re sending to the GPU or change how it accesses (reads or writes) memory. For example, you might try the following:
+In rare cases, when overall occupancy is very high, the GPU may execute its workload poorly because threads are competing for space in the GPU’s memory caches (also known as *cache thrashing*). In that case, you may need to scale back the amount of work you’re sending to the GPU or change how it accesses (reads or writes) memory. For example, you might try the following:
 
 - Reduce the number of memory accesses.
 - Reduce how much memory you access.

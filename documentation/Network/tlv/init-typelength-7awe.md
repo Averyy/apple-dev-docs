@@ -22,8 +22,8 @@ init<T, L, BelowProtocol>(type: T.Type, length: L.Type, @ProtocolStackBuilder<Be
 
 ## Parameters
 
-- `type`: The object type to use for the   field.
-- `length`: The object type to use for the   field.
+- `type`: The object type to use for the `type` field.
+- `length`: The object type to use for the `length` field.
 - `builder`: The protocol stack below TLV.
 
 

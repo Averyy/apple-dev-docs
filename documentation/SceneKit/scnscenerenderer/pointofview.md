@@ -25,7 +25,7 @@ var pointOfView: SCNNode? { get set }
 
 Use a node with an [`SCNCamera`](scncamera.md) instance assigned to its [`camera`](scnnode/camera.md) property to view a scene. The node provides the position and direction of a virtual camera, and the camera object provides rendering parameters such as field of view and focus.
 
-For debugging lights and shadows, you can also designate a spotlight (an [`SCNLight`](scnlight.md) object whose [`type`](scnlight/type.md) property is [`spot`](scnlight/lighttype/spot.md)) as a point of view. In this case, the light’s [`spotInnerAngle`](scnlight/spotinnerangle.md) property determines the field of view, and its [`zNear`](scnlight/znear.md) and [`zFar`](scnlight/zfar.md) properties determine the near and far extents of the region that is visible onscreen (also known as the ).
+For debugging lights and shadows, you can also designate a spotlight (an [`SCNLight`](scnlight.md) object whose [`type`](scnlight/type.md) property is [`spot`](scnlight/lighttype/spot.md)) as a point of view. In this case, the light’s [`spotInnerAngle`](scnlight/spotinnerangle.md) property determines the field of view, and its [`zNear`](scnlight/znear.md) and [`zFar`](scnlight/zfar.md) properties determine the near and far extents of the region that is visible onscreen (also known as the *viewing frustum*).
 
 In either case, the direction of view is along the negative z-axis of the node’s local coordinate space.
 

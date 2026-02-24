@@ -29,7 +29,7 @@ The distance associated with `distanceType`.
 
 - `firstString`: A string in the embedding vocabulary.
 - `secondString`: Another string in the embedding vocabulary.
-- `distanceType`: A means of calculating distance that determines which formula the method uses to evaluate the distance between   and  .
+- `distanceType`: A means of calculating distance that determines which formula the method uses to evaluate the distance between `firstString` and `secondString`.
 
 ## See Also
 

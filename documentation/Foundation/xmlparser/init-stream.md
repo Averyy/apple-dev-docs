@@ -26,7 +26,7 @@ An initialized `NSXMLParser` object or `nil` if an error occurs.
 
 ## Parameters
 
-- `stream`: The input stream. The content is incrementally loaded from the specified stream and parsed. The   will open the stream, and synchronously read from it without scheduling it.
+- `stream`: The input stream. The content is incrementally loaded from the specified stream and parsed. The `NSXMLParser` will open the stream, and synchronously read from it without scheduling it.
 
 ## See Also
 

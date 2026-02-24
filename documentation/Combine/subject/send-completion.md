@@ -27,7 +27,7 @@ func send(completion: Subscribers.Completion<Self.Failure>)
 
 ## Parameters
 
-- `completion`: A   instance which indicates whether publishing has finished normally or failed with an error.
+- `completion`: A `Completion` instance which indicates whether publishing has finished normally or failed with an error.
 
 ## See Also
 

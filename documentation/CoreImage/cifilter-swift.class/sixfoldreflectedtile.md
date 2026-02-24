@@ -29,6 +29,11 @@ This filter produces a tiled image from a source image by applying a six-way ref
 
 The six-fold reflected tile filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`angle`**: A `float` representing the direction of distortion , in radians as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`width`**: A `float` representing the set width of each tile as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in a six-fold pattern repeated and angled for distortion:
 
 ```swift

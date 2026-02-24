@@ -25,7 +25,7 @@ init(value: CMTimeValue, timescale: CMTimeScale, flags: CMTimeFlags, epoch: CMTi
 - `value`: An integer time value.
 - `timescale`: An integer timescale value.
 - `flags`: Optional flags to specify for the time.
-- `epoch`: An epoch for the time, which is typically  .
+- `epoch`: An epoch for the time, which is typically `0`.
 
 ## See Also
 

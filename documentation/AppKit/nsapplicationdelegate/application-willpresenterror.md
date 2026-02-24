@@ -28,7 +28,7 @@ Your implementation of this delegate method can examine `error` and, if its loca
 ## Parameters
 
 - `application`: The application object associated with the delegate.
-- `error`: The error object that is used to construct the error message. Your implementation of this method can return a new   object or the same one in this parameter.
+- `error`: The error object that is used to construct the error message. Your implementation of this method can return a new `NSError` object or the same one in this parameter.
 
 
 ---

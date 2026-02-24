@@ -17,7 +17,7 @@ func flashChapterNumber(_ chapterNumber: Int, chapterTitle: String?)
 ## Parameters
 
 - `chapterNumber`: The chapter number.
-- `chapterTitle`: The chapter title. This value is optional and can be  .
+- `chapterTitle`: The chapter title. This value is optional and can be `nil`.
 
 
 ---

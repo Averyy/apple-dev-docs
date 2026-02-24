@@ -23,7 +23,7 @@ The view takes `LAContext` instance or creates own one if none provided and star
 
 - `title`: Title shown below the authentication view.
 - `reason`: Localized reason used for policy evaluation.
-- `context`:   instance used for policy evaluation.
+- `context`: `LAContext` instance used for policy evaluation.
 - `result`: Result closure used for reporting the result of authentication.
 
 

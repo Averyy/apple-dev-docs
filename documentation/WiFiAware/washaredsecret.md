@@ -17,7 +17,7 @@ struct WASharedSecret
 
 #### Discussion
 
-Use a `WASharedSecret` to pair and set up security for higher layer network protocols such as TLS, QUIC, or IPSec without requiring manual action or data entry by someone using these capabilities. The framework can use the shared secret to authenticate a  ([`PAKE`](https://developer.apple.comhttps://en.wikipedia.org/wiki/Password-authenticated_key_agreement)) like SPAKE2, which it then uses to pair and derive long-term asymmetric keys for authentication and encryption of the upper-layer network protocol.
+Use a `WASharedSecret` to pair and set up security for higher layer network protocols such as TLS, QUIC, or IPSec without requiring manual action or data entry by someone using these capabilities. The framework can use the shared secret to authenticate a *password authenticated key agreement* ([`PAKE`](https://developer.apple.comhttps://en.wikipedia.org/wiki/Password-authenticated_key_agreement)) like SPAKE2, which it then uses to pair and derive long-term asymmetric keys for authentication and encryption of the upper-layer network protocol.
 
 Both sides of a connection derive the same shared secret value if the same connection and input parameters are used:
 

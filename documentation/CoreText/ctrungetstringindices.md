@@ -27,7 +27,7 @@ The indices are the character indices that originally spawned the glyphs that ma
 ## Parameters
 
 - `run`: The run from which to copy the string indices.
-- `range`: The range of string indices to copy. If the length of the range is set to  , then the copy operation continues from the range’s start index to the end of the run.
+- `range`: The range of string indices to copy. If the length of the range is set to `0`, then the copy operation continues from the range’s start index to the end of the run.
 - `buffer`: The buffer to which the string indices are copied. The buffer must be allocated to at least the value specified by the range’s length.
 
 ## See Also

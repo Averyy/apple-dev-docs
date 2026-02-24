@@ -25,7 +25,7 @@ This method advances the current descriptor by its length, and validates that th
 ## Parameters
 
 - `bosDescriptor`: The BOS descriptor that contains the descriptors to iterate through.
-- `currentDescriptor`: A descriptor pointer within the bounds of the BOS descriptor, or  .
+- `currentDescriptor`: A descriptor pointer within the bounds of the BOS descriptor, or `NULL`.
 
 ## See Also
 

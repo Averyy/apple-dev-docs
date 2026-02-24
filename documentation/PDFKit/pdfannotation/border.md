@@ -21,7 +21,7 @@ var border: PDFBorder? { get set }
 
 ## Parameters
 
-- `border`: The border style for the annotation. See   in the   class for the available styles. The border style attribute is optional.
+- `border`: The border style for the annotation. See `Constants` in the [`PDFBorder`](pdfborder.md) class for the available styles. The border style attribute is optional.
 
 ## See Also
 

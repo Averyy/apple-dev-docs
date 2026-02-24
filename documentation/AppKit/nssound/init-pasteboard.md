@@ -20,7 +20,7 @@ Initialized `NSSound` instance.
 
 ## Parameters
 
-- `pasteboard`: The pasteboard containing the audio data with which the receiver is to be initialized. The pasteboard must contain a type returned by  . The contained data must have a proper magic number, sound header, and data for the formats the   class supports.
+- `pasteboard`: The pasteboard containing the audio data with which the receiver is to be initialized. The pasteboard must contain a type returned by [`NSSound`](nssound.md). The contained data must have a proper magic number, sound header, and data for the formats the `NSSound` class supports.
 
 ## See Also
 

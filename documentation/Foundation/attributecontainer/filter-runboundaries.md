@@ -26,7 +26,7 @@ A copy of the attribute container with only attributes whose `runBoundaries` pro
 
 ## Parameters
 
-- `runBoundaries`: The required   value of the filtered attributes. If   is provided, only attributes not bound to any specific boundary will be returned.
+- `runBoundaries`: The required `runBoundaries` value of the filtered attributes. If `nil` is provided, only attributes not bound to any specific boundary will be returned.
 
 
 ---

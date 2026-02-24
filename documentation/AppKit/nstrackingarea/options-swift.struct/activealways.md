@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: property
 
-The owner receives messages regardless of first-responder status, window status, or application status. The [`cursorUpdate(with:)`](nsresponder/cursorupdate(with:).md) message is  sent when the [`cursorUpdate`](nstrackingarea/options-swift.struct/cursorupdate.md) option is specified along with this constant. This value specifies when the tracking area defined by an [`NSTrackingArea`](nstrackingarea.md) object is active.
+The owner receives messages regardless of first-responder status, window status, or application status. The [`cursorUpdate(with:)`](nsresponder/cursorupdate(with:).md) message is *not* sent when the [`cursorUpdate`](nstrackingarea/options-swift.struct/cursorupdate.md) option is specified along with this constant. This value specifies when the tracking area defined by an [`NSTrackingArea`](nstrackingarea.md) object is active.
 
 **Availability**:
 - macOS ?+

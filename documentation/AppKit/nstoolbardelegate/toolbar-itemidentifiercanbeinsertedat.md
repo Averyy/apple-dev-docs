@@ -32,7 +32,7 @@ Don’t use the `index` parameter to determine the final location of the toolbar
 
 - `toolbar`: The toolbar that contains the items.
 - `itemIdentifier`: The identifier of the toolbar item to insert at the specified index.
-- `index`: The proposed index at which to place the item. If the toolbar is removing the item, this value is  .
+- `index`: The proposed index at which to place the item. If the toolbar is removing the item, this value is [`NSNotFound`](https://developer.apple.com/documentation/Foundation/NSNotFound-4qp9h).
 
 ## See Also
 

@@ -28,7 +28,7 @@ If the URL doesn’t contain a user component according to [`RFC 3986`](https://
 
 ## Parameters
 
-- `percentEncoded`: A Boolean value that indicates whether the URL percent-encodes any unreserved characters. Defaults to  .
+- `percentEncoded`: A Boolean value that indicates whether the URL percent-encodes any unreserved characters. Defaults to `true`.
 
 ## See Also
 

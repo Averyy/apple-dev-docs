@@ -23,8 +23,8 @@ func CFDataGetBytes(_ theData: CFData!, _ range: CFRange, _ buffer: UnsafeMutabl
 ## Parameters
 
 - `theData`: The CFData object to examine.
-- `range`: The range of bytes in   to get. To get all of the contents, pass  .
-- `buffer`: A pointer to the byte buffer of length   that is allocated on the stack or heap. On return, the buffer contains the requested range of bytes.
+- `range`: The range of bytes in `theData` to get. To get all of the contents, pass `CFRangeMake(0,CFDataGetLength(theData))`.
+- `buffer`: A pointer to the byte buffer of length `range.length` that is allocated on the stack or heap. On return, the buffer contains the requested range of bytes.
 
 ## See Also
 

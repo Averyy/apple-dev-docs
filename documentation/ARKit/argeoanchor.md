@@ -18,7 +18,7 @@ class ARGeoAnchor
 
 #### Overview
 
-A  (also known as ) identifies a specific area in the world that the app can refer to in an AR experience. As a user moves around the scene, the session updates a location anchor’s [`transform`](aranchor/transform.md) based on the anchor’s [`coordinate`](argeoanchor/coordinate.md) and the device’s compass heading.
+A *geographic anchor* (also known as *location anchor*) identifies a specific area in the world that the app can refer to in an AR experience. As a user moves around the scene, the session updates a location anchor’s [`transform`](aranchor/transform.md) based on the anchor’s [`coordinate`](argeoanchor/coordinate.md) and the device’s compass heading.
 
 ARKit aligns location anchors to an East-North-Up orientation, with its x- and z-axes matching the longitude and latitude directions. For more information, see [`ARConfiguration.WorldAlignment.gravityAndHeading`](arconfiguration/worldalignment-swift.enum/gravityandheading.md).
 
@@ -28,11 +28,11 @@ ARKit sets the anchor’s vertical position to the altitude you pass in to [`ini
 
 ##### Communicate Data Usage
 
-Location anchors consume data from Apple Maps called  (for more information, see [`ARGeoTrackingConfiguration`](argeotrackingconfiguration.md)). As the user moves, the framework downloads localization imagery to refine the user’s precise geographic position. The amount of data the session requires depends on the user’s movement and distance they travel. To make the user aware of potential fees, you can notify the user of their data usage.
+Location anchors consume data from Apple Maps called *localization imagery* (for more information, see [`ARGeoTrackingConfiguration`](argeotrackingconfiguration.md)). As the user moves, the framework downloads localization imagery to refine the user’s precise geographic position. The amount of data the session requires depends on the user’s movement and distance they travel. To make the user aware of potential fees, you can notify the user of their data usage.
 
 ##### Manage Location Anchor Availability
 
-When an app creates a location anchor, it’s invisible to the user until the framework  the anchor in the scene. When an anchor populates successfully, the session passes the anchor into the delegate’s [`session(_:didAdd:)`](arsessiondelegate/session(_:didadd:).md) callback.
+When an app creates a location anchor, it’s invisible to the user until the framework *populates* the anchor in the scene. When an anchor populates successfully, the session passes the anchor into the delegate’s [`session(_:didAdd:)`](arsessiondelegate/session(_:didadd:).md) callback.
 
 If ARKit fails to populate a location anchor, the session calls [`session(_:didRemove:)`](arsessiondelegate/session(_:didremove:).md) to notify your delegate. A location anchor may fail to populate when:
 

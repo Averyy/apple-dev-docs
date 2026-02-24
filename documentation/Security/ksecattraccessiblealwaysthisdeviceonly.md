@@ -22,7 +22,7 @@ let kSecAttrAccessibleAlwaysThisDeviceOnly: CFString
 
 #### Discussion
 
-This is not recommended for application use. Items with this attribute  migrate to a new device. Thus, after restoring from a backup of a different device, these items will not be present.
+This is not recommended for application use. Items with this attribute *do not* migrate to a new device. Thus, after restoring from a backup of a different device, these items will not be present.
 
 
 ---

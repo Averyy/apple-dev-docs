@@ -22,7 +22,7 @@ This method posts a notification named  [`didResizeNotification`](nswindow/didre
 
 ## Parameters
 
-- `accessoryController`: The accessory view controller or   if there is none.
+- `accessoryController`: The accessory view controller or `nil` if there is none.
 
 ## See Also
 

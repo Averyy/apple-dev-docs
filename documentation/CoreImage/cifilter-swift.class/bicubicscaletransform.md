@@ -29,6 +29,11 @@ This method applies the bicubic scale transform filter to an image. The effect p
 
 The bicubic scale transform filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`aspectRatio`**: A `float` representing the aspect ratio as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`parameterB`**: A `float` representing the value of B used for cubic resampling as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`parameterC`**: A `float` representing the value of C used for cubic resampling as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in the image becoming square:
 
 ```swift

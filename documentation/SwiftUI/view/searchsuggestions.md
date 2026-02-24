@@ -65,7 +65,7 @@ For more information about using search modifiers, see [`Adding a search interfa
 
 ## Parameters
 
-- `suggestions`: A view builder that produces content that   populates a list of suggestions.
+- `suggestions`: A view builder that produces content that populates a list of suggestions.
 
 ## See Also
 

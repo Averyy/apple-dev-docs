@@ -66,8 +66,8 @@ signposter.endInterval(name, state)
 ## Parameters
 
 - `name`: The signpost’s name.
-- `id`: The signpost’s identifier. The default value is  .
-- `message`: The interpolated string that the signposter attaches to the signpost. Each of the message’s interpolations can specify individual formatting and privacy options. For more information, see  .
+- `id`: The signpost’s identifier. The default value is [`exclusive`](ossignpostid/exclusive.md).
+- `message`: The interpolated string that the signposter attaches to the signpost. Each of the message’s interpolations can specify individual formatting and privacy options. For more information, see [`Message Argument Formatters`](message-argument-formatters.md).
 
 ## See Also
 

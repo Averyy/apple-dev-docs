@@ -28,7 +28,7 @@ When you initialize a dynamic animator with this method, the behaviors (and thei
 
 ## Parameters
 
-- `view`: The view for the dynamic animator, called the  .
+- `view`: The view for the dynamic animator, called the *reference view*.
 
 ## See Also
 

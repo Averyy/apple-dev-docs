@@ -21,8 +21,8 @@ func ABMultiValueReplaceValue(_ multiValue: ABMutableMultiValueRef!, _ value: CF
 ## Parameters
 
 - `multiValue`: The multi-value list you wish to modify.
-- `value`: An object representing the new value in a multi-value list–it must be of the correct type. For example, if   is the value for a property of type kABMultiStringProperty, then   needs to be a CFString object. See Property Types for a list of supported types in a multi-value list(see descriptions of the   constants). If   is  , this function raises an exception.
-- `index`: The index of the entry to be modified. If   is out of bounds, this function raises an exception.
+- `value`: An object representing the new value in a multi-value list–it must be of the correct type. For example, if `multiValue` is the value for a property of type kABMultiStringProperty, then `value` needs to be a CFString object. See Property Types for a list of supported types in a multi-value list(see descriptions of the `kABMulti...` constants). If `value` is `NULL`, this function raises an exception.
+- `index`: The index of the entry to be modified. If `index` is out of bounds, this function raises an exception.
 
 ## See Also
 

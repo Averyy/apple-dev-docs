@@ -10,6 +10,10 @@ The name of a color in an asset catalog to use for a widget’s configuration in
 - iPadOS 14.0+
 - macOS 11.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This `Info.plist` value controls the background color shown in the widget configuration interface while editing a widget.

@@ -29,6 +29,10 @@ This method applies the crystallize filter to an image. The effect creates polyg
 
 The crystallize filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+
 The following code creates a filter that results in an image made of small polygons:
 
 ```swift

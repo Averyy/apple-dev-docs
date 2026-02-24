@@ -24,7 +24,7 @@ The system calls this method when the user selects a search suggestion. Perform 
 
 ## Parameters
 
-- `searchController`: The   object used as the search bar.
+- `searchController`: The [`UISearchController`](uisearchcontroller.md) object used as the search bar.
 - `searchSuggestion`: The suggestion the user selected.
 
 ## See Also

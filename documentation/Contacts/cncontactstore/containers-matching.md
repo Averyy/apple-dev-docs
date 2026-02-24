@@ -33,7 +33,7 @@ This method returns an empty array when no matching container is found. In case 
 
 ## Parameters
 
-- `predicate`: The predicate to use to fetch matching containers. Set this property to   to match all containers.
+- `predicate`: The predicate to use to fetch matching containers. Set this property to `nil` to match all containers.
 
 ## See Also
 

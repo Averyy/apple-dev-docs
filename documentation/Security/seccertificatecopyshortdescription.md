@@ -24,9 +24,9 @@ The format of this string is not guaranteed to be consistent across different op
 
 ## Parameters
 
-- `alloc`: The allocator that should be used. Pass   or   to use the default allocator.
+- `alloc`: The allocator that should be used. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the default allocator.
 - `certificate`: The certificate from which the short description should be copied.
-- `error`: A pointer to a   variable where an error object is stored upon failure. If not  , the caller is responsible for checking this variable and releasing the resulting object if it exists.
+- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) variable where an error object is stored upon failure. If not `NULL`, the caller is responsible for checking this variable and releasing the resulting object if it exists.
 
 
 ---

@@ -25,7 +25,7 @@ An new instance of `AVPlayerLooper`.
 
 #### Discussion
 
-The player item you specify will be used as a  to generate at least 3 player item replicas that will be inserted into the specified player’s queue to accomplish the looping playback. As the player item will only be used as a template, and not for actual playback, any changes you make to the player item after initialization will not be reflected in the replicas. If you need to explicitly configure the replica player items, such as adding instances of [`AVPlayerItemOutput`](avplayeritemoutput.md) to them, you can access them through the [`loopingPlayerItems`](avplayerlooper/loopingplayeritems.md) property.
+The player item you specify will be used as a *template* to generate at least 3 player item replicas that will be inserted into the specified player’s queue to accomplish the looping playback. As the player item will only be used as a template, and not for actual playback, any changes you make to the player item after initialization will not be reflected in the replicas. If you need to explicitly configure the replica player items, such as adding instances of [`AVPlayerItemOutput`](avplayeritemoutput.md) to them, you can access them through the [`loopingPlayerItems`](avplayerlooper/loopingplayeritems.md) property.
 
 > ❗ **Important**:  The specified player item’s asset should have its [`duration`](avasset/duration.md) property loaded before you initialize this class so that initialization will not be blocked while waiting for the [`duration`](avasset/duration.md) to become known. An [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) will be raised if the player item has a duration of 0.
 
@@ -37,9 +37,9 @@ The [`CMTimeRange`](https://developer.apple.com/documentation/CoreMedia/CMTimeRa
 
 ## Parameters
 
-- `player`: The queue player to use for playback. The player must not be  .
-- `itemToLoop`: The player item to loop, which must not be  .
-- `loopRange`: The player item time range to loop. Passing a value of   is equivalent to a time range of [0, player item’s duration].
+- `player`: The queue player to use for playback. The player must not be `nil`.
+- `itemToLoop`: The player item to loop, which must not be `nil`.
+- `loopRange`: The player item time range to loop. Passing a value of [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange/invalid) is equivalent to a time range of [0, player item’s duration].
 
 ## See Also
 

@@ -32,7 +32,7 @@ The method records the encoder’s current rendering state and resources the com
 
 ## Parameters
 
-- `threadsPerTile`: Set the   property to  .
+- `threadsPerTile`: An [`MTLSize`](mtlsize.md) instance that represents the number of threads the render pass uses per tile. Set the size’s [`width`](mtlsize/width.md) and [`height`](mtlsize/height.md) properties to values that are less than or equal to [`tileWidth`](mtlrendercommandencoder/tilewidth.md) and [`tileHeight`](mtlrendercommandencoder/tileheight.md), respectively. Some GPU families only support square tile dispatches and require the same value for [`width`](mtlsize/width.md) and [`height`](mtlsize/height.md). See the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) to check which GPU families support nonsquare dispatches. Set the [`depth`](mtlsize/depth.md) property to `1`.
 
 ## See Also
 

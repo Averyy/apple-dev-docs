@@ -30,14 +30,14 @@ The `absd` is required, the channel layout is optional, and the magic cookie is 
 
 ## Parameters
 
-- `allocator`:   to be used. Pass   or   to use the default allocator.
-- `asbd`: Audio format description (see  ). This information is required.
-- `layoutSize`: Size, in bytes, of audio channel layout. 0 if layout is  .
-- `layout`: Audio channel layout (see CoreAudioTypes.h). Can be  .
-- `magicCookieSize`: Size, in bytes, of magic cookie. 0 if   is  .
-- `magicCookie`: Magic cookie. This information is required for some formats, and must be   for all others.
-- `extensions`: Dictionary of extension key/value pairs.  Keys are always  .                                                                            Values are always property list objects (ie.  ,  ,  ,  ,  ,  , or  ). Can be  .
-- `formatDescriptionOut`: On output, returns the newly created audio  .
+- `allocator`: `CFAllocator` to be used. Pass `kCFAllocatorDefault` or `NULL` to use the default allocator.
+- `asbd`: Audio format description (see `CoreAudioTypes.h`). This information is required.
+- `layoutSize`: Size, in bytes, of audio channel layout. 0 if layout is `NULL`.
+- `layout`: Audio channel layout (see CoreAudioTypes.h). Can be `NULL`.
+- `magicCookieSize`: Size, in bytes, of magic cookie. 0 if `magicCookie` is `NULL`.
+- `magicCookie`: Magic cookie. This information is required for some formats, and must be `NULL` for all others.
+- `extensions`: Dictionary of extension key/value pairs.  Keys are always `CFStrings`.                                                                            Values are always property list objects (ie. `CFData`, `CFString`, `CFArray`, `CFDictionary`, `CFDate`, `CFBoolean`, or `CFNumber`). Can be `NULL`.
+- `formatDescriptionOut`: On output, returns the newly created audio `CMFormatDescription`.
 
 ## See Also
 

@@ -26,7 +26,7 @@ The 3D position in world coordinates, or `nil` if the mapping isn’t possible.
 ## Parameters
 
 - `point`: The point in the view’s coordinate system.
-- `planeTransform`: A transform used to define the coordinate system of   the plane. The positive y-axis is taken as the normal of the plane.
+- `planeTransform`: A transform used to define the coordinate system of the plane. The positive y-axis is taken as the normal of the plane.
 
 ## See Also
 

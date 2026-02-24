@@ -21,7 +21,7 @@ The system calls this method after it receives raw data from the USB device, and
 ## Parameters
 
 - `packet`: A pointer to a buffer that contains the raw packets received from the device.
-- `size`: A pointer to the number of bytes in the   buffer.
+- `size`: A pointer to the number of bytes in the `packet` buffer.
 
 ## See Also
 

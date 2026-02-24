@@ -30,8 +30,8 @@ This function removes all percent escape sequences except those for characters s
 
 ## Parameters
 
-- `anURL`: The   object to examine.
-- `charactersToLeaveEscaped`: Characters whose percent escape sequences, such as   for a space character, you want to leave intact. Pass   to specify that no percent escapes be replaced, or the empty string ( ) to specify that all be replaced.
+- `anURL`: The `CFURL` object to examine.
+- `charactersToLeaveEscaped`: Characters whose percent escape sequences, such as `%20` for a space character, you want to leave intact. Pass `NULL` to specify that no percent escapes be replaced, or the empty string (`CFSTR("")`) to specify that all be replaced.
 
 ## See Also
 

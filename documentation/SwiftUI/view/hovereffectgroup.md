@@ -50,7 +50,7 @@ struct EffectView: View {
 
 ## Parameters
 
-- `group`: The   to activate when this view or any   subviews are hovered. If  , this modifier has no effect.
+- `group`: The `HoverEffectGroup` to activate when this view or any subviews are hovered. If `nil`, this modifier has no effect.
 
 ## See Also
 

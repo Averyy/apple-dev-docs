@@ -20,9 +20,9 @@ init(ssid SSID: String, passphrase: String, isWEP: Bool)
 
 ## Parameters
 
-- `SSID`: The SSID of the WEP or WPA/WPA2 personal Wi-Fi Network. See  .
+- `SSID`: The SSID of the WEP or WPA/WPA2 personal Wi-Fi Network. See [`ssid`](nehotspotconfiguration/ssid.md).
 - `passphrase`: The network’s passphrase credential: for WPA or WPA2 personal networks, 8-63 characters; for static 64-bit WEP, 10 hexadecimal digits; for static 128-bit WEP, 26 hexadecimal digits.
-- `isWEP`: If  , the network is WEP Wi-Fi; otherwise it is a WPA or WPA2 personal Wi-Fi network.
+- `isWEP`: If `true`, the network is WEP Wi-Fi; otherwise it is a WPA or WPA2 personal Wi-Fi network.
 
 ## See Also
 

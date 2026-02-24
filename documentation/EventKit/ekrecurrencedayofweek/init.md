@@ -29,7 +29,7 @@ The week number of the returned day of the week is `0`.
 
 ## Parameters
 
-- `dayOfTheWeek`: The day of the week. Values range from   to  , with Sunday being  .
+- `dayOfTheWeek`: The day of the week. Values range from `1` to `7`, with Sunday being `1`.
 
 ## See Also
 

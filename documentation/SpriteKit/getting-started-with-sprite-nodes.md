@@ -8,6 +8,22 @@ Learn the basics about using images, also known as sprites, with SpriteKit.
 
 The simplest way to create a textured sprite node is to have SpriteKit create both the texture and the sprite for you. You store the artwork in the app bundle (ideally in an [`asset catalog`](https://developer.apple.comhttps://developer.apple.com/library/prerelease/content/documentation/Xcode/Reference/xcode_ref-Asset_Catalog_Format/)), and then load it at runtime, as shown in this code:
 
+**Swift**:
+
+```swift
+let spaceship = SKSpriteNode(imageNamed: "rocket.png")
+spaceship.position = CGPoint(x: 100, y: 100)
+self.addChild(spaceship)
+```
+
+**Obj-C**:
+
+```objc
+SKSpriteNode *spaceship = [SKSpriteNode spriteNodeWithImageNamed:@"rocket.png"];
+spaceship.position = CGPointMake(100,100);
+[self addChild: spaceship]
+```
+
 ##### Default Behavior
 
 When you create a sprite as shown in the code above, you get a lot of default behavior for free:

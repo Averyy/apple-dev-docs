@@ -27,7 +27,7 @@ This function resets the length of a CFMutableData object’s underlying byte bu
 ## Parameters
 
 - `theData`: A CFMutableData object. If you pass an immutable CFData object, the behavior is not defined.
-- `length`: The new size of  ’s byte buffer.
+- `length`: The new size of `theData`’s byte buffer.
 
 ## See Also
 

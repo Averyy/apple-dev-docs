@@ -11,6 +11,10 @@ The maximum number of all types of files that the app extension supports.
 - macOS 10.10+
 - visionOS 1.0+
 
+
+
+**Type**: integer
+
 ## See Also
 
 - [NSExtensionActivationSupportsImageWithMaxCount](information-property-list/nsextension/nsextensionattributes/nsextensionactivationrule/nsextensionactivationsupportsimagewithmaxcount.md)

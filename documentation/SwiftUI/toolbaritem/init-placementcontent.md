@@ -23,7 +23,7 @@ init(placement: ToolbarItemPlacement = .automatic, @ViewBuilder content: () -> C
 
 ## Parameters
 
-- `placement`: Which section of the toolbar   the item should be placed in.
+- `placement`: Which section of the toolbar the item should be placed in.
 - `content`: The content of the item.
 
 ## See Also

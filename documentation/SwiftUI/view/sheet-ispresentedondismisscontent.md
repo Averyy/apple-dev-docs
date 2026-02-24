@@ -86,7 +86,7 @@ In visionOS, most system presentations appear with a breakthrough effect by defa
 
 ## Parameters
 
-- `isPresented`: A binding to a Boolean value that determines whether   to present the sheet that you create in the modifier’s    closure.
+- `isPresented`: A binding to a Boolean value that determines whether to present the sheet that you create in the modifier’s `content` closure.
 - `onDismiss`: The closure to execute when dismissing the sheet.
 - `content`: A closure that returns the content of the sheet.
 

@@ -25,6 +25,11 @@ Check the parameter’s flags to determine whether the parameter is rampable.
 
 The block takes the following parameters:
 
+- **eventSampleTime**: The sample time at which the parameter is to begin changing. When scheduling parameters during the render cycle, this time can be set to the `AUEventSampleTimeImmediate` value plus an optional buffer offset, in which case the event is scheduled at that position in the current render cycle.
+- **rampDurationSampleFrames**: The number of sample frames over which the parameter’s return value is to ramp, or `0` if the parameter change should take effect immediately.
+- **parameterAddress**: The parameter’s address.
+- **value**: The parameter’s new value if the ramp duration is `0`; otherwise, the value at the end of the scheduled ramp.
+
 ## See Also
 
 - [struct ScheduledAudioFileRegion](scheduledaudiofileregion.md)

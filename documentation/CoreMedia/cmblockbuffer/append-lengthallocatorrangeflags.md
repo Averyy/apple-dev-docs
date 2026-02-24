@@ -22,9 +22,9 @@ func append(length: Int, allocator: CFAllocator? = kCFAllocatorDefault, range: R
 
 ## Parameters
 
-- `length`: The length of the memory block in bytes. Must not be zero. This is the size to allocate when you call the   function.
+- `length`: The length of the memory block in bytes. Must not be zero. This is the size to allocate when you call the [`assureBlockMemory()`](cmblockbuffer/assureblockmemory().md) function.
 - `allocator`: The allocator to use to allocate the memory block.
-- `range`: The range within the memory block to which the block buffer should refer to data. If this value is  , the block buffer uses the whole memory block.
+- `range`: The range within the memory block to which the block buffer should refer to data. If this value is `nil`, the block buffer uses the whole memory block.
 - `flags`: Flags to control the behavior of the operation.
 
 ## See Also

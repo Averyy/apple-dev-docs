@@ -17,7 +17,7 @@ optional func tableViewSelectionDidChange(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named [`selectionDidChangeNotification`](nstableview/selectiondidchangenotification.md).
 
 ## See Also
 

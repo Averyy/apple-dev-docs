@@ -25,7 +25,7 @@ Many apps won’t have the need to watch for this notification, but those that p
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named `NSWindowDidChangeBackingPropertiesNotification`.
 
 ## See Also
 

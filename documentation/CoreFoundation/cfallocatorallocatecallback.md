@@ -26,9 +26,9 @@ A pointer to the start of the block.
 
 ## Parameters
 
-- `allocSize`: This function allocates a block of memory of at least   bytes (always greater than 0).
+- `allocSize`: This function allocates a block of memory of at least `allocSize` bytes (always greater than 0).
 - `hint`: A bitfield that is currently not used (always set to 0).
-- `info`: An untyped pointer to program-defined data. Allocate memory for the data and assign a pointer to it. This data is often control information for the allocator. It may be  .
+- `info`: An untyped pointer to program-defined data. Allocate memory for the data and assign a pointer to it. This data is often control information for the allocator. It may be `NULL`.
 
 ## See Also
 

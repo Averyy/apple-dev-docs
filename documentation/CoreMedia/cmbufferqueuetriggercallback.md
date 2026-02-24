@@ -22,6 +22,9 @@ typealias CMBufferQueueTriggerCallback = (UnsafeMutableRawPointer?, CMBufferQueu
 
 ##### Callback Parameters
 
+- **triggerRefcon**: The contextual data.
+- **triggerToken**: The trigger whose condition became true.
+
 ## See Also
 
 - [func CMBufferQueueInstallTriggerHandler(CMBufferQueue, CMBufferQueueTriggerCondition, CMTime, UnsafeMutablePointer<CMBufferQueueTriggerToken?>?, CMBufferQueueTriggerHandler?) -> OSStatus](cmbufferqueueinstalltriggerhandler(_:_:_:_:_:).md)

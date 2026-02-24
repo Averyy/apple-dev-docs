@@ -32,7 +32,7 @@ The [`SSLRead(_:_:_:_:)`](sslread(_:_:_:_:).md) function might call the [`SSLRea
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `data`: On return, points to the data read. You must allocate this buffer before calling the function. The size of this buffer must be equal to or greater than the value in the   parameter.
+- `data`: On return, points to the data read. You must allocate this buffer before calling the function. The size of this buffer must be equal to or greater than the value in the `dataLength` parameter.
 - `dataLength`: The amount of data you would like to read.
 - `processed`: On return, points to the number of bytes actually read.
 

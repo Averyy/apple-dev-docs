@@ -41,7 +41,7 @@ let heartRatePredicate = HKQuery.predicateForWorkouts(
 ## Parameters
 
 - `operatorType`: The operator type to use when comparing the minimum quantity.
-- `quantityType`: The type of   objects used to calculate the minimum quantity.
+- `quantityType`: The type of [`HKQuantitySample`](hkquantitysample.md) objects used to calculate the minimum quantity.
 - `minimumQuantity`: The target value for the minimum quantity.
 
 ## See Also

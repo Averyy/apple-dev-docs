@@ -10,6 +10,10 @@ A message that tells people why the app is requesting add-only access to their p
 - iPadOS 11.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that have write access to the user’s photo library.

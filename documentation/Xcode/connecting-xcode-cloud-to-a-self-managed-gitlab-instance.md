@@ -8,7 +8,7 @@ Allow Xcode Cloud to access your self-managed GitLab repository.
 
 When you first configure your project or workspace to use Xcode Cloud, you need to allow Xcode Cloud to access your Git repository. It uses this access to automatically build and test your code when you make changes to the codebase.
 
-The person who first configures a project to use Xcode Cloud must have the  role for the GitLab repository. If you don’t have this role, see [`Connect Xcode Cloud to an admin-managed Git repository`](configuring-xcode-cloud-for-your-team#Connect-Xcode-Cloud-to-an-admin-managed-Git-repository.md).
+The person who first configures a project to use Xcode Cloud must have the *maintainer* role for the GitLab repository. If you don’t have this role, see [`Connect Xcode Cloud to an admin-managed Git repository`](configuring-xcode-cloud-for-your-team#Connect-Xcode-Cloud-to-an-admin-managed-Git-repository.md).
 
 To allow Xcode Cloud to access your [`self-managed GitLab`](https://developer.apple.comhttps://about.gitlab.com/install) repository:
 
@@ -18,7 +18,7 @@ To allow Xcode Cloud to access your [`self-managed GitLab`](https://developer.ap
 4. Copy the redirect URI, then click “your GitLab Self-hosted host” to open your GitLab instance’s website. It displays the page to create a new GitLab app.
 5. Enter a name for the GitLab app that’s easy to recognize; for example, `Xcode Cloud`.
 6. Paste the Xcode Cloud redirect URI into the field on the GitLab webpage for creating the GitLab app.
-7. Select the checkboxes next to , , and  to allow the app to access these scopes.
+7. Select the checkboxes next to *api*, *read_repository*, and *read_user* to allow the app to access these scopes.
 8. Save the app.
 9. Copy the GitLab app’s Application ID and paste it into the corresponding field on the App Store Connect website, and then repeat this step for the Application Secret.
 10. Click Register on the App Store Connect website to connect Xcode Cloud to the GitLab app.

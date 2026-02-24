@@ -32,7 +32,7 @@ Invoke this method with `NULL` as `longLongValue` to simply scan past a long dec
 
 ## Parameters
 
-- `result`: Upon return, contains the scanned value. Contains   or   on overflow.
+- `result`: Upon return, contains the scanned value. Contains `LLONG_MAX` or `LLONG_MIN` on overflow.
 
 ## See Also
 

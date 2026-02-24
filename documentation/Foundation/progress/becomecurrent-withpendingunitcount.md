@@ -26,7 +26,7 @@ Use this method to build a tree of progress objects, as [`Reporting Progress for
 
 ## Parameters
 
-- `unitCount`: The number represents the portion of work to perform in relation to the total number of units of work, which is the value of the progress object’s   property. The units of work for this parameter must be the same units of work in the progress object’s   property.
+- `unitCount`: The number of units of work for the next progress object that initializes when you invoke [`init(parent:userInfo:)`](progress/init(parent:userinfo:).md) in the current thread with this progress object as the containing progress object. The number represents the portion of work to perform in relation to the total number of units of work, which is the value of the progress object’s [`totalUnitCount`](progress/totalunitcount.md) property. The units of work for this parameter must be the same units of work in the progress object’s [`totalUnitCount`](progress/totalunitcount.md) property.
 
 ## See Also
 

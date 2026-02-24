@@ -11,6 +11,10 @@ The uniform type identifiers inherently supported, but not owned, by the app.
 - macOS 10.5+
 - visionOS 1.0+
 
+
+
+**Type**: dictionary 
+
 ## Topics
 
 ### Property List Keys

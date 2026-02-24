@@ -23,7 +23,7 @@ var stencilCompareFunction: MTLCompareFunction { get set }
 
 For example, if `stencilCompareFunction` is [`MTLCompareFunction.less`](mtlcomparefunction/less.md), then the stencil test passes if the masked reference value is less than the masked stored stencil value. The default value is [`MTLCompareFunction.always`](mtlcomparefunction/always.md), which indicates that the stencil test always passes.
 
-The stored stencil value and the reference value are both  by performing a logical AND operation with the [`readMask`](mtlstencildescriptor/readmask.md) value before the comparison takes place. For more information on possible values, see [`MTLCompareFunction`](mtlcomparefunction.md).
+The stored stencil value and the reference value are both *masked* by performing a logical AND operation with the [`readMask`](mtlstencildescriptor/readmask.md) value before the comparison takes place. For more information on possible values, see [`MTLCompareFunction`](mtlcomparefunction.md).
 
 ## See Also
 

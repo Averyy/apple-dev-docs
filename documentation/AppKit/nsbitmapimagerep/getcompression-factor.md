@@ -20,8 +20,8 @@ Use this method to get information on the compression type for the source image 
 
 ## Parameters
 
-- `compression`: On return, an   constant that represents the compression type used on the data; it corresponds to one of the values returned by the class method  .
-- `factor`: A float value that is specific to the compression type. Many types of compression don’t support varying degrees of compression and thus ignore  . JPEG compression allows a compression factor ranging from 0.0 to 1.0, with 0.0 being the lowest and 1.0 being the highest.
+- `compression`: On return, an `enum` constant that represents the compression type used on the data; it corresponds to one of the values returned by the class method [`getTIFFCompressionTypes(_:count:)`](nsbitmapimagerep/gettiffcompressiontypes(_:count:).md).
+- `factor`: A float value that is specific to the compression type. Many types of compression don’t support varying degrees of compression and thus ignore `factor`. JPEG compression allows a compression factor ranging from 0.0 to 1.0, with 0.0 being the lowest and 1.0 being the highest.
 
 ## See Also
 

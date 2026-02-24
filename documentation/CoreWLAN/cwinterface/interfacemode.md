@@ -16,7 +16,7 @@ func interfaceMode() -> CWInterfaceMode
 
 #### Discussion
 
-Dynamically queries the interface for the current mode. Returns  in the case of an error, or if the interface is not participating in a network.
+Dynamically queries the interface for the current mode. Returns *kCWInterfaceModeNone* in the case of an error, or if the interface is not participating in a network.
 
 ## See Also
 

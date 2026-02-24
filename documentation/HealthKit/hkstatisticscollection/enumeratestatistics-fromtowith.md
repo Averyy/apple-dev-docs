@@ -27,7 +27,8 @@ This method enumerates the statistics in chronological order. It calls the block
 
 - `startDate`: The start date for the calculation. The initial statistics come from the time interval that contains the start date.
 - `endDate`: The end date for the calculation. The final statistics come from the time interval that contains the end date.
-- `block`: A block that is called once for each time interval. This method passes the following parameters to the block:
+- `block`: A block that is called once for each time interval. This method passes the following parameters to the block: - **result**: The [`HKStatistics`](hkstatistics.md) object containing the statistical data for this time interval.
+- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop further processing of the collection. The stop argument is an out-only argument. Only set this Boolean to [`true`](https://developer.apple.com/documentation/Swift/true) within the block.
 
 ## See Also
 

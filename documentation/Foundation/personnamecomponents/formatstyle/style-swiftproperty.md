@@ -57,6 +57,11 @@ The default value is `medium`.
 
 You can configure `PersonNameComponents.FormatStyle` to format names in the following styles:
 
+- **`medium`**: The minimally necessary features for differentiation in a casual setting.
+- **`short`**: Relies on user preferences and language defaults to display shortened form appropriate in space-constrained settings.
+- **`long`**: The fully-qualified name complete with all known components.
+- **`abbreviated`**: The maximally abbreviated form of a name.
+
 The following table demonstrates the style for various names and locales.
 
 | Locale | Name prefix | Given name | Middle name | Family name | Name suffix | Nickname |
@@ -111,13 +116,13 @@ The table below shows the formatted string output for each Short Name configurat
 
 | Locale | Given name - family initial | Given initial - family name | Given name only | Family name only |
 | --- | --- | --- | --- | --- |
-| Arabic (ar-SA) |  |  | أحمد | محمﺩﺍلمصﺭﻱ |
-| Chinese (zh-Hans) |  |  |  |  |
+| Arabic (ar-SA) | *N/A* | *N/A* | أحمد | محمﺩﺍلمصﺭﻱ |
+| Chinese (zh-Hans) | *N/A* | *N/A* | *N/A* | *N/A* |
 | English (en-US) | Thomas C | T Clark | Thomas | Clark |
 | French (fr-FR) | Jean-Philippe d | J de Zélicourt | Jean-Philippe | de Zélicourt |
 | German (de-DE) | Max M | M Mustermann | Max | Mustermann |
-| Hindi (hi-IN) |  |  | रिय | साहिल |
-| Japanese (ja-JP) |  |  |  |  |
+| Hindi (hi-IN) | *N/A* | *N/A* | रिय | साहिल |
+| Japanese (ja-JP) | *N/A* | *N/A* | *N/A* | *N/A* |
 | Spanish (es-ES) | José Ramiro M | J Martín González de Rivera | José Ramiro | Martín González de Rivera |
 | Thai (th-TH) | สมชาย ร | ส รัตนเรืองรองบวรทิพย์ | สมชาย | รัตนเรืองรองบวรทิพย์ |
 

@@ -36,7 +36,7 @@ The key paths you return in the dictionary must refer to animatable properties. 
 
 ## Parameters
 
-- `viewerOffset`: The direction that the device is facing relative to the viewer. The range of each offset value is   to  . When the device’s screen is pointed directly at the user, the offset values are (0, 0). Rotating the phone so that the screen points down or to the right of the viewer yields a positive value. Rotating the phone so that the screen points above the user or to the user’s left yields a negative value.
+- `viewerOffset`: The direction that the device is facing relative to the viewer. The range of each offset value is `-1` to `1`. When the device’s screen is pointed directly at the user, the offset values are (0, 0). Rotating the phone so that the screen points down or to the right of the viewer yields a positive value. Rotating the phone so that the screen points above the user or to the user’s left yields a negative value.
 
 
 ---

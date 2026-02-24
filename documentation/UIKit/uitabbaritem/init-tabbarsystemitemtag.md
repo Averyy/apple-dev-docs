@@ -24,7 +24,7 @@ You can’t change the [`title`](uibaritem/title.md) and [`image`](uibaritem/ima
 
 ## Parameters
 
-- `systemItem`: The preferred system item. For possible values, see  .
+- `systemItem`: The preferred system item. For possible values, see [`UITabBarItem.SystemItem`](uitabbaritem/systemitem.md).
 - `tag`: An integer you use to identify the object.
 
 ## See Also

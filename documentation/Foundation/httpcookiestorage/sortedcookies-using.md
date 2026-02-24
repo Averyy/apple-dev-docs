@@ -26,7 +26,7 @@ The cookie storage’s cookies, sorted according to `sortOrder`, as an array of 
 
 ## Parameters
 
-- `sortOrder`: The sort descriptors to use for sorting, as an array of   objects.
+- `sortOrder`: The sort descriptors to use for sorting, as an array of [`NSSortDescriptor`](nssortdescriptor.md) objects.
 
 ## See Also
 

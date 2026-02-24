@@ -34,8 +34,8 @@ This method can only be called while the session is active (the [`activationStat
 
 ## Parameters
 
-- `file`: A file-based URL that identifies the file to send. The specified file must be readable by the current app. This parameter must not be  .
-- `metadata`: An optional dictionary containing additional data to send. The values of the dictionary must all be property list object types. You may specify   for this parameter.
+- `file`: A file-based URL that identifies the file to send. The specified file must be readable by the current app. This parameter must not be `nil`.
+- `metadata`: An optional dictionary containing additional data to send. The values of the dictionary must all be property list object types. You may specify `nil` for this parameter.
 
 ## See Also
 

@@ -21,7 +21,7 @@ An initialized appearance object, or `nil` if an error occurs.
 ## Parameters
 
 - `name`: The name of the appearance file to retrieve. Do not include any path information in the name.
-- `bundle`: The bundle in which to search for the named appearance file. Specify   to search for the appearance file in the main bundle.
+- `bundle`: The bundle in which to search for the named appearance file. Specify `nil` to search for the appearance file in the main bundle.
 
 ## See Also
 

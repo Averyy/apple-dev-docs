@@ -34,7 +34,7 @@ The target queue determines the queue on which the object’s finalizer is invok
 
 ## Parameters
 
-- `queue`: The new target queue for the object. The new queue is retained, and the previous target queue (if any) is released. Specify   if you want the system to provide a queue that is appropriate for the current object.
+- `queue`: The new target queue for the object. The new queue is retained, and the previous target queue (if any) is released. Specify `NULL` if you want the system to provide a queue that is appropriate for the current object.
 
 
 ---

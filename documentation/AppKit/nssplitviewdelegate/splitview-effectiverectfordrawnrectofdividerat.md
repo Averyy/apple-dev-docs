@@ -28,8 +28,8 @@ If a split view has no delegate, or if its delegate doesn’t respond to this me
 ## Parameters
 
 - `splitView`: The split view that sends the message.
-- `proposedEffectiveRect`: The proposed rectangle where mouse clicks initiate divider dragging. The rectangle uses the coordinate system that   defines.
-- `drawnRect`: The frame of the divider in the coordinate system that   defines.
+- `proposedEffectiveRect`: The proposed rectangle where mouse clicks initiate divider dragging. The rectangle uses the coordinate system that `splitView` defines.
+- `drawnRect`: The frame of the divider in the coordinate system that `splitView` defines.
 - `dividerIndex`: The index of the divider.
 
 ## See Also

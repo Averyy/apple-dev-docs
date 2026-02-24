@@ -28,7 +28,9 @@ If the URL doesn’t refer to an item managed by your File Provider extension, t
 ## Parameters
 
 - `url`: The URL of the item.
-- `completionHandler`: A block that the system calls after it gets the items identifier. It has the following parameters:
+- `completionHandler`: A block that the system calls after it gets the items identifier. It has the following parameters: - **`itemIdentifier`**: The item’s identifier.
+- **`domainIdentifier`**: The identifier for the item’s domain.
+- **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

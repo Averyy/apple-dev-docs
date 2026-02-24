@@ -65,7 +65,7 @@ let outputImage = interleavedBuffer.makeCGImage(cgImageFormat: cgImageFormat)
 - `horizontalKernel`: The 1D horizontal convolution kernel.
 - `verticalKernel`: The 1D vertical convolution kernel.
 - `bias`: A value that the operation adds to each element in the convolution result, before performing any clipping.
-- `edgeMode`: The convolution edge mode. The background color must be a single   value.
+- `edgeMode`: The convolution edge mode. The background color must be a single [`Pixel_F`](pixel_f.md) value.
 - `destination`: The destination pixel buffer.
 
 ## See Also

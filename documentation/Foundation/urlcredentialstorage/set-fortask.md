@@ -22,9 +22,9 @@ func set(_ credential: URLCredential, for protectionSpace: URLProtectionSpace, t
 
 ## Parameters
 
-- `credential`: The credential to add. If a credential with the same user name already exists in  , then   replaces the existing object.
+- `credential`: The credential to add. If a credential with the same user name already exists in `space`, then `credential` replaces the existing object.
 - `protectionSpace`: The protection space to which to add the credential.
-- `task`: The task accessing the specified protection space. Subclasses of   may use the request URL or other properties of this task to affect how the default credential is stored.
+- `task`: The task accessing the specified protection space. Subclasses of [`URLCredentialStorage`](urlcredentialstorage.md) may use the request URL or other properties of this task to affect how the default credential is stored.
 
 ## See Also
 

@@ -33,7 +33,7 @@ Note that a given entire day within a calendar is not necessarily all in a weeke
 ## Parameters
 
 - `date`: The date at which to begin the search.
-- `direction`: Which direction in time to search. The default value is  .
+- `direction`: Which direction in time to search. The default value is `.forward`.
 
 ## See Also
 

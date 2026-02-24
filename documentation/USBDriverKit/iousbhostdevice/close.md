@@ -25,7 +25,7 @@ This method closes a session to a device that you previously opened using the [`
 ## Parameters
 
 - `forClient`: The service object that is closing the session.
-- `options`: Options to use when closing the service. Specify   for this parameter.
+- `options`: Options to use when closing the service. Specify `0` for this parameter.
 
 ## See Also
 

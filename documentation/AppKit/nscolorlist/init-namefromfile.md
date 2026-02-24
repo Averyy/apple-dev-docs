@@ -20,8 +20,8 @@ Note that this method does not add the color list to [`availableColorLists`](nsc
 
 ## Parameters
 
-- `name`: The name of the file for the color list (minus the   extension). Specify   if you don’t want a name.
-- `path`: The full path to the file for the color list. A   path indicates the color list should be initialized with no colors.
+- `name`: The name of the file for the color list (minus the `“.clr”` extension). Specify `@””` if you don’t want a name.
+- `path`: The full path to the file for the color list. A `nil` path indicates the color list should be initialized with no colors.
 
 ## See Also
 

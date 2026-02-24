@@ -30,7 +30,7 @@ When the peripheral discovers one or more characteristics of the specified servi
 
 ## Parameters
 
-- `characteristicUUIDs`: An array of   objects that you are interested in. Each   object represents a UUID that identifies the type of a characteristic you want to discover.
+- `characteristicUUIDs`: An array of [`CBUUID`](cbuuid.md) objects that you are interested in. Each [`CBUUID`](cbuuid.md) object represents a UUID that identifies the type of a characteristic you want to discover.
 - `service`: The service whose characteristics you want to discover.
 
 ## See Also

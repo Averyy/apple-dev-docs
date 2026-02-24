@@ -14,6 +14,8 @@ You can use SwiftData to save your data to a local disk or to someone’s [`Sync
 
 Like any modern data management system, SwiftData also supports the features that you need to ensure the integrity of your data. Add [`Concurrency support`](https://developer.apple.com/documentation/SwiftData/ConcurrencySupport) to your types to ensure fetch and save operations behave correctly in threaded code. The framework also provides built-in support for [`Reverting data changes using the undo manager`](https://developer.apple.com/documentation/SwiftData/Reverting-data-changes-using-the-undo-manager), so people can revert unwanted changes.
 
+---
+
 #### Build a Structured Model with Any Language
 
 If you’re not using SwiftUI for your interface, or if you prefer to work in Objective-C, build your data model using [`Core Data`](https://developer.apple.com/documentation/CoreData). Core Data offers the same basic capabilities as SwiftData, including object-level management of data, query-based fetches, undo support, [`Mirroring a Core Data store with CloudKit`](https://developer.apple.com/documentation/CoreData/mirroring-a-core-data-store-with-cloudkit), and more.

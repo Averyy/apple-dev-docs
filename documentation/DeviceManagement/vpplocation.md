@@ -15,6 +15,11 @@ A location used for managing purchases.
 object VppLocation
 ```
 
+## Properties
+
+- `locationId` (int64): The identifier for the location.
+- `locationName` (string): The name of the location.
+
 ## See Also
 
 - [object VppAsset](vppasset.md)

@@ -28,8 +28,8 @@ You must configure your app’s primary icon asset in the “App Icons and Launc
 
 ## Parameters
 
-- `alternateIconName`: The name of the alternate icon, as declared in the   key of your app’s   file. Specify   if you want to display the app’s primary icon, which you declare using the   key. Both keys are subentries of the   key in your app’s   file.
-- `completionHandler`: The handler to execute with the results. After attempting to change your app’s icon, the system reports the results by calling your handler. The handler executes on a UIKit-provided queue, and not necessarily on your app’s main queue. The handler has no return value and takes the following parameter:
+- `alternateIconName`: The name of the alternate icon, as declared in the `CFBundleAlternateIcons` key of your app’s `Info.plist` file. Specify `nil` if you want to display the app’s primary icon, which you declare using the `CFBundlePrimaryIcon` key. Both keys are subentries of the `CFBundleIcons` key in your app’s `Info.plist` file.
+- `completionHandler`: The handler to execute with the results. After attempting to change your app’s icon, the system reports the results by calling your handler. The handler executes on a UIKit-provided queue, and not necessarily on your app’s main queue. The handler has no return value and takes the following parameter: - **error**: On success, the value of this parameter is `nil`. If an error occurred, this parameter contains the error object indicating what happened and the value of the [`alternateIconName`](uiapplication/alternateiconname.md) property remains unchanged.
 
 ## See Also
 

@@ -22,7 +22,7 @@ func CFAttributedStringEndEditing(_ aStr: CFMutableAttributedString!)
 
 ## Parameters
 
-- `aStr`: A mutable attributed string, following a call to  .
+- `aStr`: A mutable attributed string, following a call to [`CFAttributedStringBeginEditing(_:)`](cfattributedstringbeginediting(_:).md).
 
 ## See Also
 

@@ -23,7 +23,7 @@ init(wrappedValue: Value, resetTransaction: Transaction)
 ## Parameters
 
 - `wrappedValue`: A wrapped value for the gesture state property.
-- `resetTransaction`: A transaction that provides metadata for view   updates.
+- `resetTransaction`: A transaction that provides metadata for view updates.
 
 ## See Also
 

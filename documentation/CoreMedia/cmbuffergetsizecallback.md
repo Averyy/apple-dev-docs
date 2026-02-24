@@ -23,7 +23,7 @@ typealias CMBufferGetSizeCallback = (CMBuffer, UnsafeMutableRawPointer?) -> Int
 ## Parameters
 
 - `buf`: The buffer being interrogated.
-- `refcon`: The client refcon. Can be  .
+- `refcon`: The client refcon. Can be `NULL`.
 
 ## See Also
 

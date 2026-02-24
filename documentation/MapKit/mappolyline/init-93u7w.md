@@ -22,7 +22,7 @@ init(_ polyline: MKPolyline)
 
 ## Parameters
 
-- `polyline`: The   to convert.
+- `polyline`: The [`MKPolyline`](mkpolyline.md) to convert.
 
 ## See Also
 

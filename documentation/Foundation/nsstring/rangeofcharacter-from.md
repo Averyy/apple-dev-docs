@@ -30,7 +30,7 @@ Invokes [`rangeOfCharacter(from:options:)`](nsstring/rangeofcharacter(from:optio
 
 ## Parameters
 
-- `searchSet`: Raises an   if   is  .
+- `searchSet`: A character set. This value must not be `nil`. Raises an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md) if `aSet` is `nil`.
 
 ## See Also
 

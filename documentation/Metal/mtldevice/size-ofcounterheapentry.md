@@ -32,7 +32,7 @@ During this process, Metal transform the data in the heap into a format consisti
 
 ## Parameters
 
-- `type`:   value that represents the type of the   to resolve.
+- `type`: [`MTL4CounterHeapType`](mtl4counterheaptype.md) value that represents the type of the [`MTL4CounterHeap`](mtl4counterheap.md) to resolve.
 
 
 ---

@@ -22,7 +22,7 @@ func replace(_ range: UITextRange, withText text: String)
 ## Parameters
 
 - `range`: A range of text in a document.
-- `text`: A string to replace the text in  .
+- `text`: A string to replace the text in `range`.
 
 ## See Also
 

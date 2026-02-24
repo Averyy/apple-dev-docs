@@ -20,7 +20,7 @@ func removeUser(_ user: HMUser) async throws
 ## Parameters
 
 - `user`: The user to remove.
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure. `error.userInfo[HMUserFailedAccessoriesKey]` contains more information in case of failure. See [`HMUserFailedAccessoriesKey`](hmuserfailedaccessorieskey.md) for more details.
 
 ## See Also
 

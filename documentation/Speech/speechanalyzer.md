@@ -154,13 +154,13 @@ Specific modules may also offer options that improve responsiveness.
 
 To end an analysis session, you must use one of the analyzer’s `finish` methods or parameters, or deallocate the analyzer.
 
-When the analysis session transitions to the  state:
+When the analysis session transitions to the *finished* state:
 
 - The analyzer won’t take additional input from the input sequence
 - Most methods won’t do anything; in particular, the analyzer won’t accept different input sequences or modules
 - Module result streams terminate and modules won’t publish additional results, though the app can continue to iterate over already-published results
 
-> **Note**: While you can terminate the input sequence you created with a method such as `AsyncStream.Continuation.finish()`, finishing the input sequence does  cause the analysis session to become finished, and you can continue the session with a different input sequence.
+> **Note**: While you can terminate the input sequence you created with a method such as `AsyncStream.Continuation.finish()`, finishing the input sequence does *not* cause the analysis session to become finished, and you can continue the session with a different input sequence.
 
 ##### Respond to Errors
 

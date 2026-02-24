@@ -25,8 +25,8 @@ If a preferred identity has not been set for the supplied name, this function re
 ## Parameters
 
 - `name`: A string containing an email address (RFC 822) or other name for which a preferred identity is requested.
-- `keyUsage`: An array containing a list of usage attributes ( , for example), or   if you do not want to request an identity for a particular usage. See Attribute Item Keys for a complete list of possible usage attributes.
-- `validIssuers`: An array of   objects whose contents are the subject names of allowable issuers, as returned by a call to  . Pass   to allow any issuer.
+- `keyUsage`: An array containing a list of usage attributes ([`kSecAttrCanEncrypt`](ksecattrcanencrypt.md), for example), or `NULL` if you do not want to request an identity for a particular usage. See Attribute Item Keys for a complete list of possible usage attributes.
+- `validIssuers`: An array of `CFDataRef` objects whose contents are the subject names of allowable issuers, as returned by a call to [`SSLCopyDistinguishedNames(_:_:)`](sslcopydistinguishednames(_:_:).md). Pass `NULL` to allow any issuer.
 
 
 ---

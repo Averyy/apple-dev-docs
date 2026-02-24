@@ -41,9 +41,9 @@ The `errorMessage` field contains human-readable text explaining the error. The 
 | 9625 | The sToken has been revoked. |
 | 9626 | License already assigned to a different user. The MDM server should retry the assignment with a different license. |
 | 9628 | Ineligible device assignment: MDM tried to assign an item to a serial number but device assignment is not allowed for that item. |
-| 9630 | Too many recent already-assigned errors: If MDM gets the same 9616 error from assignments for the same organization, user identifier, and item identifier (license ID, adam ID, or pricing parameter) and does so within too short a time (generally several minutes), it  return this error code. |
-| 9631 | Too many recent already-assigned errors: If MDM gets the same 9616 error from assignments for the same organization, user identifier, and item identifier (license ID, adam ID, or pricing parameter) and does so within too short a time (generally several minutes), it  return this error code. |
-| 9632 | Too many recent manage-license calls with identical request: If MDM gets precisely the same request to `manageVPPLicensesByAdamIdSrv` too many times within too short a time (generally several minutes), it  return this error code. |
+| 9630 | Too many recent already-assigned errors: If MDM gets the same 9616 error from assignments for the same organization, user identifier, and item identifier (license ID, adam ID, or pricing parameter) and does so within too short a time (generally several minutes), it *may* return this error code. |
+| 9631 | Too many recent already-assigned errors: If MDM gets the same 9616 error from assignments for the same organization, user identifier, and item identifier (license ID, adam ID, or pricing parameter) and does so within too short a time (generally several minutes), it *may* return this error code. |
+| 9632 | Too many recent manage-license calls with identical request: If MDM gets precisely the same request to `manageVPPLicensesByAdamIdSrv` too many times within too short a time (generally several minutes), it *may* return this error code. |
 | 9633 | Data for a batch token passed could not be recovered. |
 | 9634 | Returned when a caller tries to use a formerly deprecated featured that has been removed. |
 | 9635 | The Apple Account passed for iTunes Store association cannot be found or is not applicable to organization of the user (see [`Managed Apple Accounts`](associating-an-apple-id-with-a-volume-purchase-program-vpp-user#Managed-Apple-Accounts.md)). |

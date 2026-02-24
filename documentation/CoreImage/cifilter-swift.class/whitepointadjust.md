@@ -29,6 +29,9 @@ This method applies the white-point adjust filter to an image. The effect adjust
 
 The white-point adjust filter uses the following properties:
 
+- **`color`**: The new white point color with the type of [`CIColor`](cicolor.md).
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds a red hue to the input image:
 
 ```swift

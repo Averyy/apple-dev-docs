@@ -21,11 +21,50 @@ Each item in a collection view has an explicit width dimension and height dimens
 
 You can express an item’s dimensions using an absolute, estimated, or fractional value.
 
-Use an  to specify exact dimensions, like a 44 x 44 point square:
+Use an *absolute value* to specify exact dimensions, like a 44 x 44 point square:
 
-Use an  if the size of your content might change at runtime, such as when data is loaded or in response to a change in system font size. You provide an initial estimated size and the system computes the actual value later.
+**Swift**:
 
-Use a  to define a value that’s relative to a dimension of the item’s container. This option simplifies specifying aspect ratios. For example, the following item has a width and a height that are both equal to 20% of its container’s width, creating a square that grows and shrinks as the size of its container changes.
+```swift
+let absoluteSize = NSCollectionLayoutSize(widthDimension: .absolute(44),
+                                         heightDimension: .absolute(44))
+```
+
+**Objective-C**:
+
+```objc
+NSCollectionLayoutSize *absoluteSize = [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension absoluteDimension:44.0] heightDimension:[NSCollectionLayoutDimension absoluteDimension:44.0]];
+```
+
+Use an *estimated value* if the size of your content might change at runtime, such as when data is loaded or in response to a change in system font size. You provide an initial estimated size and the system computes the actual value later.
+
+**Swift**:
+
+```swift
+let estimatedSize = NSCollectionLayoutSize(widthDimension: .estimated(200),
+                                          heightDimension: .estimated(100))
+```
+
+**Objective-C**:
+
+```objc
+NSCollectionLayoutSize *estimatedSize = [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension estimatedDimension:200.0] heightDimension:[NSCollectionLayoutDimension estimatedDimension:100.0]];
+```
+
+Use a *fractional value* to define a value that’s relative to a dimension of the item’s container. This option simplifies specifying aspect ratios. For example, the following item has a width and a height that are both equal to 20% of its container’s width, creating a square that grows and shrinks as the size of its container changes.
+
+**Swift**:
+
+```swift
+let fractionalSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2),
+                                           heightDimension: .fractionalWidth(0.2))
+```
+
+**Objective-C**:
+
+```objc
+NSCollectionLayoutSize *fractionalSize = [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension fractionalWidthDimension:0.2] heightDimension:[NSCollectionLayoutDimension fractionalWidthDimension:0.2]];
+```
 
 ## Topics
 

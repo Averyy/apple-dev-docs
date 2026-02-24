@@ -103,6 +103,37 @@ All filtering options are active simultaneously. The system only permits URLs an
 - [object WebContentFilter.WhitelistedBookmarksItem](webcontentfilter/whitelistedbookmarksitem.md)
   The bookmark in the allow list of the web content filter.
 
+## Properties
+
+- `AllowListBookmarks` ([WebContentFilter.AllowListBookmarksItem]): An array of dictionaries that define the pages that the user can bookmark or visit. Use when `FilterType` is `BuiltIn`.
+- `AutoFilterEnabled` (boolean): If `true`, the system enables automatic filtering. Use when `FilterType` is `BuiltIn`.
+- `BlacklistedURLs` ([string]): Use `DenyListURLs` instead.
+- `ContentFilterUUID` (string): A globally unique identifier for this content filter configuration. The content filter processes network traffic for managed apps with the same `ContentFilterUUID` in their app attributes. Use when `FilterType` is `Plugin`.This key must be present for unsupervised devices and user enrollment.
+- `DenyListURLs` ([string]): An array of URLs that are inaccessible. Use when `FilterType` is `BuiltIn`. Limit the number of these URLs to no more than 500.
+- `FilterBrowsers` (boolean): If `true`, the system enables filtering WebKit traffic. Use when `FilterType` is `Plugin`. > **Note**:  At least one of `FilterBrowsers` or `FilterSockets` needs to be `true`.
+- `FilterDataProviderBundleIdentifier` (string): The bundle identifier string of the filter data provider system extension. This string identifies the filter data provider when the filter starts running. Required if `FilterSockets` is `true`.
+- `FilterDataProviderDesignatedRequirement` (string): The designated requirement string that the system embeds in the code signature of the filter data provider system extension. This string identifies the filter data provider when the filter starts running. Required if `FilterSockets` is `true`.
+- `FilterGrade` (string): The system uses this value to derive the relative order of content filters. Filters with a grade of `firewall` see network traffic before filters with a grade of `inspector`. However, the system doesn’t define the order of filters within a grade.
+- `FilterPacketProviderBundleIdentifier` (string): The bundle identifier string of the filter packet provider system extension. This string identifies the filter packet provider when the filter starts running. Required if `FilterPackets` is `true`.
+- `FilterPacketProviderDesignatedRequirement` (string): The designated requirement string that the system embeds in the code signature of the filter packet provider system extension. This string identifies the filter packet provider when the filter starts running. Required if `FilterPackets` is `true`.
+- `FilterPackets` (boolean): If `true` and `FilterType` is `Plugin`, the system enables filtering network packets. Use when `FilterType` is `Plugin`. > **Note**:  At least one of `FilterPackets` or `FilterSockets` needs to be `true`.
+- `FilterSockets` (boolean): If `true`, enables the filtering of socket traffic. Use when `FilterType` is `Plugin`. > **Note**:  At least one of `FilterBrowsers` or `FilterSockets` needs to be `true`.
+- `FilterType` (string): The type of filter, built-in or plug-in. In macOS, the system only supports the plug-in value.
+- `FilterURLs` (boolean): If `true`, the system filters URL requests. Use when `FilterType` is `Plugin`. Available in iOS 26 and macOS 26, and later.
+- `HideDenyListURLs` (boolean): If `true`, the device hides the `DenyListURLs` item in the profiles that display in Settings > General > VPN & Device Management.
+- `Organization` (string): The organization string to pass to the third-party plug-in. Use when `FilterType` is `Plugin`.
+- `Password` (string): The password for the service. Use when `FilterType` is `Plugin`.
+- `PayloadCertificateUUID` (string): The UUID of the certificate payload within the same profile that the system uses to authenticate the user. Use when `FilterType` is `Plugin`.
+- `PermittedURLs` ([string]): An array or URLs that are accessible whether or not the automatic filter allows access. Use when `FilterType` is `BuiltIn`. Requires that `AutoFilterEnabled` is `true`.
+- `PluginBundleID` (string): The bundle ID of the plug-in that provides filtering service. Required when `FilterType` is `Plugin`. Otherwise, it ignores this value. Consult your filtering solution vendor to determine what to specify for this value. Required when `FilterType` is `Plugin`.
+- `SafariHistoryRetentionEnabled` (boolean): If `true`, this payload enforces a policy which requires retention of browsing history. This causes Safari to disable clearing of browsing history, and prevents the use of private browsing mode because that mode doesn’t keep browsing history.
+- `ServerAddress` (string): The server address, which may be the IP address, hostname, or URL. Use when `FilterType` is `Plugin`.
+- `URLFilterParameters` (WebContentFilter.URLFilterParameters): A dictionary containing URL filter parameters. Required when `FilterURLs` is `true`. Available in iOS 26 and macOS 26 and later.
+- `UserDefinedName` (string): The display name for this filtering configuration. Required when `FilterType` is `Plugin`.
+- `UserName` (string): The user name for the service. Use when `FilterType` is `Plugin`.
+- `VendorConfig` (WebContentFilter.VendorConfig): The custom dictionary that the filtering service plug-in needs. Use when `FilterType` is `Plugin`.
+- `WhitelistedBookmarks` ([WebContentFilter.WhitelistedBookmarksItem]): Use `AllowListBookmarks` instead.
+
 ## See Also
 
 - [object WebClip](webclip.md)

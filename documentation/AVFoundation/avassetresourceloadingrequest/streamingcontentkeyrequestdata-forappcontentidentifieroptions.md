@@ -26,7 +26,7 @@ The key request data that must be transmitted to the key vendor to obtain the co
 
 - `appIdentifier`: An opaque content identifier for the application. The value of this identifier depends on the particular system used to provide the decryption key.
 - `contentIdentifier`: An opaque identifier for the content. The value of this identifier depends on the particular system used to provide the decryption key.
-- `options`: Additional information necessary to obtain the key, or   if no additional information is required.
+- `options`: Additional information necessary to obtain the key, or `nil` if no additional information is required.
 
 ## Topics
 

@@ -29,8 +29,8 @@ Use this method to add information you want accessibility users to be able to ac
 
 ## Parameters
 
-- `key`: Key used to specify the identifier and label of the   of the additional accessibility information entry.
-- `value`: Text value for the additional accessibility   information. For example: “landscape.” A value of   will remove   any entry of additional information added earlier for any   with   the same identifier.
+- `key`: Key used to specify the identifier and label of the of the additional accessibility information entry.
+- `value`: Text value for the additional accessibility information. For example: “landscape.” A value of `nil` will remove any entry of additional information added earlier for any `key` with the same identifier.
 
 
 ---

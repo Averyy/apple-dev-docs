@@ -23,9 +23,9 @@ case error
 ## See Also
 
 - [NLContextualEmbedding.AssetsResult.available](nlcontextualembedding/assetsresult/available.md)
-  A result that indicates assets are available.
+  A result that indicates that the assets are present on-device.
 - [NLContextualEmbedding.AssetsResult.notAvailable](nlcontextualembedding/assetsresult/notavailable.md)
-  A result that indicates assets aren’t available.
+  A result that indicates that the assets aren’t present on-device.
 
 
 ---

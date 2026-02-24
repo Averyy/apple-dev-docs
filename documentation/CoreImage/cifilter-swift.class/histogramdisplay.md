@@ -29,6 +29,11 @@ This method applies the histogram display filter to the result of the output fro
 
 The histogram display filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md). Typically this is the output from the area histogram filter.
+- **`height`**: A `float` representing the height of the generated histogram image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`lowLimit`**: A `float` representing the fraction of the left portion of the histogram image to make darker as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`hightLimit`**: A `float` representing the fraction of the right portion of the histogram to make lighter as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in a histogram diagram generated from the input image:
 
 ```swift

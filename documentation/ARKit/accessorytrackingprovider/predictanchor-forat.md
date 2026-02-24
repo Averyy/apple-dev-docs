@@ -24,8 +24,8 @@ The predicted anchor, or nil if prediction failed.
 
 ## Parameters
 
-- `anchor`: A tracked anchor from   to generate prediction for.
-- `timestamp`: Target time for prediction. For rendering use cases with CompositorServices, use  .
+- `anchor`: A tracked anchor from `latestAnchors` to generate prediction for.
+- `timestamp`: Target time for prediction. For rendering use cases with CompositorServices, use `drawable.frameTiming.trackableAnchorPredictionTime`.
 
 
 ---

@@ -21,7 +21,7 @@ The `attachmentIndex` parameter is provided for cells that alter their appearanc
 ## Parameters
 
 - `cell`: The attachment cell to draw.
-- `rect`: The rectangle within which to draw  .
+- `rect`: The rectangle within which to draw `cell`.
 - `attachmentIndex`: The location of the attachment cell.
 
 ## See Also

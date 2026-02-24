@@ -29,8 +29,8 @@ A renderer (or other software component processing a material) is responsible fo
 
 ## Parameters
 
-- `name`: A descriptive name for the material property. For details, see the   property.
-- `semantic`: The semantic meaning for the material property’s value. For details, see the   property.
+- `name`: A descriptive name for the material property. For details, see the [`name`](mdlmaterialproperty/name.md) property.
+- `semantic`: The semantic meaning for the material property’s value. For details, see the [`semantic`](mdlmaterialproperty/semantic.md) property.
 - `URL`: The URL value for the material property—typically, the URL to a texture image.
 
 ## See Also

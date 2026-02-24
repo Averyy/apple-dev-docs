@@ -25,9 +25,9 @@ Call this method when your accessory needs additional networks or when the syste
 
 Your app extension can present sharing UI in these scenarios:
 
-- : The system sets `newShareableNetworkAvailable` to `true` when networks become available for sharing. Your extension can verify with your accessory whether it needs additional networks before calling this method. Your container app doesn’t need to be in the foreground for this scenario.
-- : Your accessory can communicate directly with your extension to request network sharing, such as when connection problems occur. Your container app needs to be in the foreground before calling this method.
-- : Your container app can call [`askToShare()`](winetworksharingcontroller/asktoshare().md) to set the [`appRequestedSharing`](winetworksharingprovider/networkevent/apprequestedsharing.md) flag, indicating it wants your extension to present sharing UI. Your container app needs to be in the foreground before calling this method.
+- **New networks available**: The system sets `newShareableNetworkAvailable` to `true` when networks become available for sharing. Your extension can verify with your accessory whether it needs additional networks before calling this method. Your container app doesn’t need to be in the foreground for this scenario.
+- **Accessory requests**: Your accessory can communicate directly with your extension to request network sharing, such as when connection problems occur. Your container app needs to be in the foreground before calling this method.
+- **App requests**: Your container app can call [`askToShare()`](winetworksharingcontroller/asktoshare().md) to set the [`appRequestedSharing`](winetworksharingprovider/networkevent/apprequestedsharing.md) flag, indicating it wants your extension to present sharing UI. Your container app needs to be in the foreground before calling this method.
 
 > ❗ **Important**: When people choose to “Automatically Share” networks, the system adds new networks to future [`networks`](winetworksharingprovider/networkevent/networks.md) without needing additional calls to this method or further approval.
 
@@ -39,7 +39,9 @@ Your app extension can present sharing UI in these scenarios:
 
 ## Parameters
 
-- `scanProvider`: The optional closure the system calls periodically to get updated scan results   from the accessory. Returns networks your accessory discovers to help people select compatible,   high-performance networks. Defaults to   when your accessory provides no scan information.   The closure receives:
+- `scanProvider`: The optional closure the system calls periodically to get updated scan results from the accessory. Returns networks your accessory discovers to help people select compatible, high-performance networks. Defaults to `nil` when your accessory provides no scan information. The closure receives: - **accessory**: The `ASAccessory` configured for this provider.
+- **scanRequest**: An `AccessoryScanRequest` containing scan parameters.
+- **Returns**: An `AccessoryScanResponse` with accessory scan results, or `nil` when no changes occurred since the previous results.
 
 ## See Also
 

@@ -21,7 +21,7 @@ You can retrieve the window object in question by sending [`object`](https://dev
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named [`didResignKeyNotification`](nswindow/didresignkeynotification.md).
 
 ## See Also
 

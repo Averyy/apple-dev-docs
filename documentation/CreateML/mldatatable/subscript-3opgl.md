@@ -64,7 +64,7 @@ let noFantasyTable = table[noFantasyMask]
 
 ## Parameters
 
-- `mask`: A Boolean column indicating whether rows should be kept ( )   or removed ( ) in the derived table.
+- `mask`: A Boolean column indicating whether rows should be kept (`true`) or removed (`false`) in the derived table.
 
 
 ---

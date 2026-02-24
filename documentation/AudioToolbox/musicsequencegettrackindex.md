@@ -30,8 +30,8 @@ This function is for accessing only indexes for music tracks, not the tempo trac
 ## Parameters
 
 - `inSequence`: The music sequence to obtain the track index number from.
-- `inTrack`: The music track whose index you want to obtain. This function returns an error if the music track is not part of the music sequence specified in the   parameter.
-- `outTrackIndex`: On output, the zero-based index of the music track that you provided in the   parameter.
+- `inTrack`: The music track whose index you want to obtain. This function returns an error if the music track is not part of the music sequence specified in the `inSequence` parameter.
+- `outTrackIndex`: On output, the zero-based index of the music track that you provided in the `inTrack` parameter.
 
 ## See Also
 

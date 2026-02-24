@@ -22,7 +22,7 @@ Do not call this method in the middle of animation blocks where items are being 
 
 ## Parameters
 
-- `sections`: The indexes of the sections that you want to reload. Specifying   for this parameter raises an exception.
+- `sections`: The indexes of the sections that you want to reload. Specifying `nil` for this parameter raises an exception.
 
 ## See Also
 

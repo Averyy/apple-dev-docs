@@ -18,7 +18,7 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, rotationDidEndWithVeloci
 
 ## Parameters
 
-- `mapTemplate`: The   the gesture applies to.
+- `mapTemplate`: The [`CPMapTemplate`](cpmaptemplate.md) the gesture applies to.
 - `velocity`: The velocity of the rotation gesture in radians per second.
 
 

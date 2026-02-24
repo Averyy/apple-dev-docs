@@ -32,6 +32,12 @@ object StatusReport
 - [object StatusReport.Error](statusreport/error.md)
 - [object StatusReport.StatusItems](statusreport/statusitems-data.dictionary.md)
 
+## Properties
+
+- `Errors` ([StatusReport.Error]) *(required)*
+- `FullReport` (boolean)
+- `StatusItems` (StatusReport.StatusItems) *(required)*
+
 ## See Also
 
 - [object StatusAppManagedList](statusappmanagedlist.md)

@@ -23,8 +23,8 @@ func destroyPersistentStore(at url: URL, type storeType: NSPersistentStore.Store
 ## Parameters
 
 - `url`: The store’s location.
-- `storeType`: The store type. For possible values, see  .
-- `options`: A dictionary containing key-value pairs that specify store behavior and characteristics. For more information, see  .
+- `storeType`: The store type. For possible values, see [`NSPersistentStore.StoreType`](nspersistentstore/storetype.md).
+- `options`: A dictionary containing key-value pairs that specify store behavior and characteristics. For more information, see [`Store options`](store-options.md).
 
 ## See Also
 

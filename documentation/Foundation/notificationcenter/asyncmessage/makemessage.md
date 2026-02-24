@@ -31,7 +31,7 @@ To implement this method in your own `AsyncMessage` conformance, retrieve values
 
 ## Parameters
 
-- `notification`: The posted  .
+- `notification`: The posted [`Notification`](notification.md).
 
 ## See Also
 

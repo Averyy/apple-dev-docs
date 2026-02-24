@@ -10,6 +10,37 @@ Each [`MTLBuffer`](mtlbuffer.md) instance represents a general purpose, typeless
 
 You create buffers from either an [`MTLDevice`](mtldevice.md) or [`MTLHeap`](mtlheap.md) instance.
 
+**Swift**:
+
+```swift
+let deviceBuffer = device.makeBuffer(length: bufferSize,
+                                     options: .storageModeShared)
+
+let heapBuffer = heap.makeBuffer(length: bufferSize,
+                                 options: .storageModePrivate)
+```
+
+**Objective-C**:
+
+```objective-c
+id <MTLBuffer> deviceBuffer = [device newBufferWithLength: bufferSize
+                                                  options: MTLResourceStorageModeShared];
+
+id <MTLBuffer> heapBuffer = [heap newBufferWithLength:bufferSize
+                                              options:MTLResourceStorageModePrivate];
+```
+
+**C++**:
+
+```cpp
+// Metal-CPP
+MTL::Buffer* pDeviceBuffer = pDevice->newBuffer(bufferSize,
+                                                MTL::ResourceStorageModeShared);
+
+MTL::Buffer* pHeapBuffer = pHeap->newBuffer(bufferSize,
+                                            MTL::ResourceStorageModePrivate);
+```
+
 Buffers inherently support the [`MTLResource`](mtlresource.md) protocol’s properties and methods, including [`storageMode`](mtlresource/storagemode.md), which controls how the GPU handles its memory (see [`Resource fundamentals`](resource-fundamentals.md)).
 
 ## Topics

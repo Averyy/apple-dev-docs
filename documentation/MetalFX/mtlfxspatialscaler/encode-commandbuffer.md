@@ -22,7 +22,7 @@ func encode(commandBuffer: any MTLCommandBuffer)
 
 ## Parameters
 
-- `commandBuffer`: The destination   instance for a render pass.
+- `commandBuffer`: The destination [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) instance for a render pass.
 
 
 ---

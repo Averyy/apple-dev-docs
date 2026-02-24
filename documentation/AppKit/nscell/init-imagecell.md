@@ -24,7 +24,7 @@ This is one of four designated initializers you must implement when subclassing.
 
 ## Parameters
 
-- `image`: The image to use for the cell. If this parameter is  , no image is set.
+- `image`: The image to use for the cell. If this parameter is `nil`, no image is set.
 
 ## See Also
 

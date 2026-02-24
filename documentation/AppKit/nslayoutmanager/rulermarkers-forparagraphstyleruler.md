@@ -29,7 +29,7 @@ You can set the returned ruler markers with the `NSRulerView` method [`markers`]
 ## Parameters
 
 - `view`: The text view using the layout manager.
-- `style`: Sets the state of the controls in the accessory view; must not be  .
+- `style`: Sets the state of the controls in the accessory view; must not be `nil`.
 - `ruler`: The ruler view whose ruler markers are returned.
 
 ## See Also

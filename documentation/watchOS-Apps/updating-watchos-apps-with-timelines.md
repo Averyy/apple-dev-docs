@@ -40,6 +40,10 @@ The [`TimelineView.Context`](https://developer.apple.com/documentation/SwiftUI/T
 
 The cadence also indicates the current maximum rate for updates that the `TimelineView` receives:
 
+- **[`TimelineView.Context.Cadence.live`](https://developer.apple.com/documentation/SwiftUI/TimelineView/Context/Cadence-swift.enum/live)**: Receives high-frequency updates that are suitable for driving animation.
+- **[`TimelineView.Context.Cadence.seconds`](https://developer.apple.com/documentation/SwiftUI/TimelineView/Context/Cadence-swift.enum/seconds)**: Receives up to one update per second.
+- **[`TimelineView.Context.Cadence.minutes`](https://developer.apple.com/documentation/SwiftUI/TimelineView/Context/Cadence-swift.enum/minutes)**: Receives up to one update per minute.
+
 The cadence can change from update to update. Always check the current value and hide information that isn’t relevant. For example, a timer app may show the time remaining in minutes, seconds, and hundredths of a second when it receives updates at the `TimelineView.Context.Cadence.live` frequency. It can also play animation at that frequency.
 
 When the updates drop to the `TimelineView.Context.Cadence.seconds` frequency, the app hides the hundredths of seconds and swaps the animation for a static image. The countdown only shows minutes and seconds.
@@ -53,6 +57,11 @@ When you create a `TimelineView`, you must specify the update schedule, which is
 The system attempts to trigger updates based on the schedule, but it can delay or defer an update based on the system’s current state. Additionally, if the schedule is more frequent than the current cadence, the system throttles the updates to the cadence.
 
 Common schedules include:
+
+- **[`EveryMinuteTimelineSchedule`](https://developer.apple.com/documentation/SwiftUI/EveryMinuteTimelineSchedule)**: A schedule to update the `TimelineView` every minute. These updates align with the system clock. For example, if the schedule starts at 1:00 pm, you’d get updates at 1:01, 1:02, 1:03, and so on.
+- **[`PeriodicTimelineSchedule`](https://developer.apple.com/documentation/SwiftUI/PeriodicTimelineSchedule)**: A schedule to update your interface at a regular, repeating interval. When you create this schedule, you specify the starting time and the interval between updates.
+- **[`AnimationTimelineSchedule`](https://developer.apple.com/documentation/SwiftUI/AnimationTimelineSchedule)**: A schedule to create a `TimelineView` instance with high-frequency updates for animated content. When you create the schedule, you can set both the minimum interval and a Boolean value that indicates whether the animation is currently paused. If you don’t set a minimum interval, the system picks an appropriate update interval. Additionally, it only updates the view when the paused parameter is [`false`](https://developer.apple.com/documentation/Swift/false).
+- **[`ExplicitTimelineSchedule`](https://developer.apple.com/documentation/SwiftUI/ExplicitTimelineSchedule)**: A schedule to specify a list of update times. For example, an app that plays audiobooks might schedule updates for the beginning of each chapter. When you create an explicit timeline, you pass a [`Sequence`](https://developer.apple.com/documentation/Swift/Sequence), such as an [`Array`](https://developer.apple.com/documentation/Swift/Array) of [`Date`](https://developer.apple.com/documentation/Foundation/Date) instances. The system updates the `TimelineView` at the time specified by each date in the sequence.
 
 ##### Update During Always on
 

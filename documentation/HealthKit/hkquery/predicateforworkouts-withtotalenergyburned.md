@@ -27,6 +27,38 @@ A predicate for matching workouts based on the total energy burned. This predica
 
 Use this convenience method to create a predicate that matches against a workout’s total energy burned. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+// Predicate matching workouts burning 500 calories or more
+let energyBurned = HKQuantity(unit: HKUnit.kilocalorieUnit(), doubleValue: 500)
+let workout = HKQuery.predicateForWorkoutsWithOperatorType(
+    .GreaterThanOrEqualToPredicateOperatorType,
+    totalEnergyBurned: energyBurned)
+ 
+ 
+let explicitWorkout = NSPredicate(format: "%K >= %@",
+                                  HKPredicateKeyPathWorkoutTotalEnergyBurned, energyBurned)
+```
+
+**Objective-C**:
+
+```objc
+// Predicate matching workouts burning 500 calories or more
+HKQuantity *energyBurned =
+[HKQuantity quantityWithUnit:[HKUnit kilocalorieUnit] doubleValue:500];
+ 
+NSPredicate *workout =
+    [HKQuery predicateForWorkoutsWithOperatorType:
+     NSGreaterThanOrEqualToPredicateOperatorType
+     totalEnergyBurned:energyBurned];
+ 
+NSPredicate *explicitWorkout =
+[NSPredicate predicateWithFormat:@"%K >= %@",
+ HKPredicateKeyPathWorkoutTotalEnergyBurned,
+ energyBurned];
+```
+
 ## Parameters
 
 - `operatorType`: The operator type to use when comparing the total energy burned.

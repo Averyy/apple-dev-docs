@@ -31,7 +31,7 @@ In cases where machines and/or users are under some kind of management, you shou
 ## Parameters
 
 - `key`: The key you are querying.
-- `applicationID`: The application’s ID, typically  . Do not pass   or  . Takes the form of a Java package name,  .
+- `applicationID`: The application’s ID, typically [`kCFPreferencesCurrentApplication`](kcfpreferencescurrentapplication.md). Do not pass `NULL` or [`kCFPreferencesAnyApplication`](kcfpreferencesanyapplication.md). Takes the form of a Java package name, `com.foosoft`.
 
 ## See Also
 

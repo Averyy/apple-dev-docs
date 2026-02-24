@@ -23,7 +23,7 @@ func CFFileDescriptorGetContext(_ f: CFFileDescriptor!, _ context: UnsafeMutable
 ## Parameters
 
 - `f`: A CFFileDescriptor.
-- `context`: Upon return, contains the context passed to   in  .
+- `context`: Upon return, contains the context passed to `f` in [`CFFileDescriptorCreate(_:_:_:_:_:)`](cffiledescriptorcreate(_:_:_:_:_:).md).
 
 ## See Also
 

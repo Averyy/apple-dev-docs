@@ -24,7 +24,7 @@ In macOS 10.4 and later, you can override this method to support content preserv
 
 ## Parameters
 
-- `newSize`: An   structure specifying the new height and width of the frame rectangle.
+- `newSize`: An `NSSize` structure specifying the new height and width of the frame rectangle.
 
 ## See Also
 

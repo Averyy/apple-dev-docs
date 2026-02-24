@@ -26,7 +26,7 @@ The transformed filter shape object.
 ## Parameters
 
 - `m`: A transform.
-- `flag`:   specifies that the new filter shape object can contain all the pixels in the transformed shape (and possibly some that are outside the transformed shape).   specifies that the new filter shape object can contain  a subset of the pixels in the transformed shape (but none of those outside the transformed shape).
+- `flag`: [`false`](https://developer.apple.com/documentation/Swift/false) specifies that the new filter shape object can contain all the pixels in the transformed shape (and possibly some that are outside the transformed shape). [`true`](https://developer.apple.com/documentation/Swift/true) specifies that the new filter shape object can contain  a subset of the pixels in the transformed shape (but none of those outside the transformed shape).
 
 ## See Also
 

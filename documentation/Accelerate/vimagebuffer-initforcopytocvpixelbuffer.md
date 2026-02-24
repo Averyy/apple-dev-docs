@@ -89,10 +89,10 @@ CVPixelBufferUnlockBaseAddress(cvPixelBuffer,
 
 ## Parameters
 
-- `buffers`: An array of   structures. The number of destination buffers is the return value of  .
-- `converter`: A Core-Graphics-to-Core-Video   instance.
-- `pixelBuffer`: A locked   instance.
-- `flags`: The options to use when performing this operation.
+- `buffers`: An array of [`vImage_Buffer`](vimage_buffer.md) structures. The number of destination buffers is the return value of [`vImageConverter_GetNumberOfDestinationBuffers(_:)`](vimageconverter_getnumberofdestinationbuffers(_:).md).
+- `converter`: A Core-Graphics-to-Core-Video [`vImageConverter`](vimageconverter.md) instance.
+- `pixelBuffer`: A locked [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) instance.
+- `flags`: The options to use when performing this operation. > ❗ **Important**:  Always pass the [`kvImageNoAllocate`](kvimagenoallocate.md) flag to this function. The [`kvImageNoAllocate`](kvimagenoallocate.md) flag instructs the function to initialize the buffers to read directly from a locked [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) instance. All operations that use the buffers must be between calls to the [`CVPixelBufferLockBaseAddress(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferLockBaseAddress(_:_:)) and [`CVPixelBufferUnlockBaseAddress(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferUnlockBaseAddress(_:_:)) functions.
 
 ## See Also
 

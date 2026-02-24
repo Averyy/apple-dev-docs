@@ -16,9 +16,9 @@ class NSStoryboardSegue
 
 #### Overview
 
-In this context, a  is a view controller or a window controller and a  is an instance of the [`NSStoryboard`](nsstoryboard.md) class.
+In this context, a *scene* is a view controller or a window controller and a *storyboard* is an instance of the [`NSStoryboard`](nsstoryboard.md) class.
 
-A storyboard segue has a procedural notion of being invoked, known in the API as being . You can take advantage of hooks into the segue performance process by way of the [`NSSeguePerforming`](nssegueperforming.md) protocol.
+A storyboard segue has a procedural notion of being invoked, known in the API as being *performed*. You can take advantage of hooks into the segue performance process by way of the [`NSSeguePerforming`](nssegueperforming.md) protocol.
 
 You do not create storyboard segue objects directly. Instead, the system creates them as needed as segues are invoked. To run code during initialization and performance of a segue, override the [`init(identifier:source:destination:)`](nsstoryboardsegue/init(identifier:source:destination:).md) and [`perform()`](nsstoryboardsegue/perform().md) methods.
 

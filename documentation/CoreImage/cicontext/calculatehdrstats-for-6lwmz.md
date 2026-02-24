@@ -25,7 +25,7 @@ If the `IOSurface` has a Clean Aperture rectangle then only pixels within that r
 
 ## Parameters
 
-- `surface`: A mutable   for which to calculate and attach statistics.
+- `surface`: A mutable `IOSurfaceRef` for which to calculate and attach statistics.
 
 
 ---

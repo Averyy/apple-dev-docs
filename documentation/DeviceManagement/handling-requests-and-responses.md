@@ -34,7 +34,7 @@ Error responses contain an array of one or more error objects that indicate any 
 
 Default responses for common requests include:
 
-|  |  |  |
+| **Request description** | **Status code** | **Response description** |
 | --- | --- | --- |
 | Request for an existing single resource object | `200 (OK)` | The `data` array contains the requested resource object. |
 | Request for a single resource object that doesn’t exist | `404 (Not Found)` | The response doesn’t contain a `data` array. |

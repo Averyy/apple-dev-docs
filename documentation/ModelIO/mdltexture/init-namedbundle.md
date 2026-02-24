@@ -32,7 +32,7 @@ This method does not cache the texture objects it creates; calling this method a
 ## Parameters
 
 - `name`: The name, including extension, of the image file to load as a texture.
-- `bundleOrNil`: The bundle the image file is located in, or   to use the main bundle.
+- `bundleOrNil`: The bundle the image file is located in, or `nil` to use the main bundle.
 
 ## See Also
 

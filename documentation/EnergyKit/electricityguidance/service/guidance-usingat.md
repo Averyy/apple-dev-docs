@@ -23,8 +23,8 @@ Returns an `AsyncSequence` of [`ElectricityGuidance`](electricityguidance.md) fo
 
 ## Parameters
 
-- `query`: The   that you request.
-- `energyVenueID`: The   at which the devices consume electricity.
+- `query`: The [`ElectricityGuidance.Query`](electricityguidance/query.md) that you request.
+- `energyVenueID`: The [`EnergyVenue`](energyvenue.md) at which the devices consume electricity.
 
 
 ---

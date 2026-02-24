@@ -26,7 +26,7 @@ The range within the block buffer is not required to be contiguous. Providing ou
 
 ## Parameters
 
-- `range`: Range of bytes within the other block buffer to append. If  , the entire buffer is referenced.
+- `range`: Range of bytes within the other block buffer to append. If `nil`, the entire buffer is referenced.
 - `optimizeDepth`: Keep the depth of buffer reference graph to a minimum.
 
 

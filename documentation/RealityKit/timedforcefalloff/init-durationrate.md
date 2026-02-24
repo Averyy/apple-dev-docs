@@ -21,10 +21,10 @@ init(duration: TimeInterval, rate: Double = 1.0)
 
 #### Discussion
 
-- When the rate is , no falloff occurs. (Rigid bodies outside the bounds are culled.)
-- When the rate is , falloff occurs slower and is sublinear.
-- When the rate is , falloff is linear.
-- When the rate is , falloff occurs faster and is nonlinear.
+- When the rate is **0**, no falloff occurs. (Rigid bodies outside the bounds are culled.)
+- When the rate is **greater than 0 and less than 1.0**, falloff occurs slower and is sublinear.
+- When the rate is **1.0**, falloff is linear.
+- When the rate is **greater than 1**, falloff occurs faster and is nonlinear.
 
 ## Parameters
 

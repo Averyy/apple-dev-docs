@@ -21,7 +21,7 @@ You can retrieve the `NSWindow` object in question by sending [`object`](https:/
 
 ## Parameters
 
-- `notification`: A notification named  .
+- `notification`: A notification named [`willCloseNotification`](nswindow/willclosenotification.md).
 
 ## See Also
 

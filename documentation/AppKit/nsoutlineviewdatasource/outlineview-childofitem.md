@@ -23,7 +23,7 @@ The child item at `index` of `item`. If `item` is `nil`, returns the appropriate
 
 Children of a given parent `item` are accessed sequentially. In order for the collapsed state of the outline view to remain consistent when it is reloaded you must always return the same object for a specified `child` and `item`.
 
-> ❗ **Important**:  While this method is marked as `@optional` in the protocol,  Do not call [`reloadData()`](nstableview/reloaddata().md) from this method.
+> ❗ **Important**:  While this method is marked as `@optional` in the protocol, **you must implement this method if you are not providing the data for the outline view using Cocoa bindings.** Do not call [`reloadData()`](nstableview/reloaddata().md) from this method.
 
 ##### Special Considerations
 
@@ -32,7 +32,7 @@ The [`outlineView(_:child:ofItem:)`](nsoutlineviewdatasource/outlineview(_:child
 ## Parameters
 
 - `outlineView`: The outline view that sent the message.
-- `index`: The index of the child item from   to return.
+- `index`: The index of the child item from `item` to return.
 - `item`: An item in the data source.
 
 ## See Also

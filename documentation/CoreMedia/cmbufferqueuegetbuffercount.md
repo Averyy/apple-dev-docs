@@ -26,7 +26,7 @@ Returns the number of buffers in the `CMBufferQueue`.
 
 ## Parameters
 
-- `queue`:   being interrogated.
+- `queue`: `CMBufferQueue` being interrogated.
 
 ## See Also
 

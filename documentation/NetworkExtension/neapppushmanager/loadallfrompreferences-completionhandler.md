@@ -19,7 +19,7 @@ class func loadAllFromPreferences() async throws -> [NEAppPushManager]
 
 ## Parameters
 
-- `completionHandler`: A completion block that the framework calls after it loads the configurations. The   parameter contains an array of all managers that the framework loads from the persistent store. This array is empty if the framework didn’t load any configurations. If loading failed, the   parameter indicates the reason for the failure; otherwise, this parameter is  .
+- `completionHandler`: A completion block that the framework calls after it loads the configurations. The `managers` parameter contains an array of all managers that the framework loads from the persistent store. This array is empty if the framework didn’t load any configurations. If loading failed, the `error` parameter indicates the reason for the failure; otherwise, this parameter is `nil`.
 
 ## See Also
 

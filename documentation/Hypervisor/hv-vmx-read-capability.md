@@ -24,8 +24,8 @@ func hv_vmx_read_capability(_ field: hv_vmx_capability_t, _ value: UnsafeMutable
 
 ## Parameters
 
-- `field`: The capability of the host processor to return. For a list of field IDs, see  .
-- `value`: The value of the capability  , on output. For a list of possible values, see  .
+- `field`: The capability of the host processor to return. For a list of field IDs, see [`hv_vmx_capability_t`](hv_vmx_capability_t.md).
+- `value`: The value of the capability `field`, on output. For a list of possible values, see `VMX Capability Field Values`.
 
 ## See Also
 

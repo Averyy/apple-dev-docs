@@ -32,8 +32,8 @@ Thread-safety: This function should be called in the same thread as the thumbnai
 
 ## Parameters
 
-- `size`: The size of the thumbnail; if   is   the size is in pixels, otherwise it’s in points.
-- `isBitmap`:   if the thumbnail data is bitmap-based,   if vector-based. This value of this parameter affects the interpretation of the   parameter.
+- `size`: The size of the thumbnail; if `isBitmap` is `true` the size is in pixels, otherwise it’s in points.
+- `isBitmap`: `true` if the thumbnail data is bitmap-based, `false` if vector-based. This value of this parameter affects the interpretation of the `size` parameter.
 - `properties`: A dictionary containing properties for the thumbnail response. For macOS 10.5, no properties have been defined.
 
 ## See Also

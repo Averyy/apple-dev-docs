@@ -28,9 +28,9 @@ Once the drag is ended or cancelled, the source receives a [`draggingSession(_:e
 
 ## Parameters
 
-- `items`: The dragging items. The frame property of each   must be in the view’s coordinate system.
+- `items`: The dragging items. The frame property of each `NSDraggingItem` must be in the view’s coordinate system.
 - `event`: The mouse-down event object from which to initiate the drag operation. In particular, its mouse location is used for the offset of the icon being dragged.
-- `source`: An object that serves as the controller of the dragging operation. It must conform to the   protocol and is typically the view itself or its   object.
+- `source`: An object that serves as the controller of the dragging operation. It must conform to the [`NSDraggingSource`](nsdraggingsource.md) protocol and is typically the view itself or its [`NSWindow`](nswindow.md) object.
 
 ## See Also
 

@@ -32,7 +32,7 @@ The axis of translation is infinitely long initially, but you can change the len
 
 - `item1`: The first of two dynamic items connected by the attachment behavior.
 - `item2`: The second of two dynamic items connected by the attachment behavior.
-- `point`: The initial anchor point for both items. Specify this point in the coordinate system of the dynamic animator’s reference view. For more information about coordinate systems, see  .
+- `point`: The initial anchor point for both items. Specify this point in the coordinate system of the dynamic animator’s reference view. For more information about coordinate systems, see [`UIDynamicAnimator`](uidynamicanimator.md).
 - `axis`: The axis of translation, along which the anchor points of the items slide.
 
 ## See Also

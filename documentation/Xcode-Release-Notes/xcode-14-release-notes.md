@@ -6,6 +6,8 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
+---
+
 #### Overview
 
 Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, and macOS Monterey 12.3. The Xcode 14 release supports on-device debugging in iOS 11 and later, tvOS 11 and later, and watchOS 4 and later. Xcode 14 requires a Mac running macOS Monterey 12.5 or later.
@@ -24,12 +26,12 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 
 ###### Known Issues
 
-- If a `Package.swift` file is added to the containing folder while that folder is open in Xcode, the package will not be recognized. (85075018) : Quit and relaunch Xcode.
-- `CGFLOAT_EPSILON` is no longer always type `Float` on watchOS, and it may cause compile issues. (88698530) : Convert it first to `CGFloat` by using the initializer `CGFloat(CGFLOAT_EPSILON)`. `CGFloat` is now supported on both 32- and 64-bit platforms.
-- Xcode 14 can fail to find tools using `xcodebuild -find` (which is used by `xcrun` and the wrappers in `/usr/bin` such as `/usr/bin/clang`) if first launch content isn’t installed. (98008921) : Run `xcodebuild -runFirstLaunch`, or launch Xcode.app first.
-- Xcode can sometimes consider the platform sim runtime missing when performing a user Log Out and Log In. (99200503) : Restart the machine.
-- When running in macOS 13 beta, AppIntents code may fail to build with Xcode 14. (99661742) (FB11470314) : Build AppIntents code with Xcode 14 beta 6, or on a Mac running macOS Monterey 12 with Xcode 14.
-- Xcode 14 cannot be used with iOS 15.7 for development. (99847608) : Use Xcode 13.4.1 with iOS 15.7.
+- If a `Package.swift` file is added to the containing folder while that folder is open in Xcode, the package will not be recognized. (85075018) **Workaround**: Quit and relaunch Xcode.
+- `CGFLOAT_EPSILON` is no longer always type `Float` on watchOS, and it may cause compile issues. (88698530) **Workaround**: Convert it first to `CGFloat` by using the initializer `CGFloat(CGFLOAT_EPSILON)`. `CGFloat` is now supported on both 32- and 64-bit platforms.
+- Xcode 14 can fail to find tools using `xcodebuild -find` (which is used by `xcrun` and the wrappers in `/usr/bin` such as `/usr/bin/clang`) if first launch content isn’t installed. (98008921) **Workaround**: Run `xcodebuild -runFirstLaunch`, or launch Xcode.app first.
+- Xcode can sometimes consider the platform sim runtime missing when performing a user Log Out and Log In. (99200503) **Workaround**: Restart the machine.
+- When running in macOS 13 beta, AppIntents code may fail to build with Xcode 14. (99661742) (FB11470314) **Workaround**: Build AppIntents code with Xcode 14 beta 6, or on a Mac running macOS Monterey 12 with Xcode 14.
+- Xcode 14 cannot be used with iOS 15.7 for development. (99847608) **Workaround**: Use Xcode 13.4.1 with iOS 15.7.
 
 ##### Apple Clang Compiler
 
@@ -104,7 +106,7 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - The legacy build system has been removed. (90801041)
 - Building iOS projects with deployment targets for the armv7, armv7s, and i386 architectures is no longer supported. (92831716)
 - Building for deployment to OS releases older than macOS 10.13, iOS 11, tvOS 11, and watchOS 4 is no longer supported. (92834476)
-- When removing a condition from the variant editor, the value will not be persisted. (98149034) : Use the Build Settings Editor to remove the condition.
+- When removing a condition from the variant editor, the value will not be persisted. (98149034) **Workaround**: Use the Build Settings Editor to remove the condition.
 
 ##### Debugging
 
@@ -125,7 +127,7 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 
 ###### Known Issues
 
-- Unable to attach a debugger to Lock Screen Widget Extension. (93941779) : Edit the Extension scheme - under Run action, Arguments tab, set the environment variable ‘_XCWidgetKind’ to be one of your class/struct names implementing the widget.
+- Unable to attach a debugger to Lock Screen Widget Extension. (93941779) **Workaround**: Edit the Extension scheme - under Run action, Arguments tab, set the environment variable ‘_XCWidgetKind’ to be one of your class/struct names implementing the widget.
 
 ##### Documentation
 
@@ -192,7 +194,7 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 
 ###### Known Issues
 
-- Symbolication of user code with a `dSYM` may fail for tailspin files imported into Instruments. Symbols for system libraries also aren’t appearing when these files are loaded. (93261223) : Symbolicate hang logs in Terminal with `spindump -i <UIKit-runloop*.ips>`.
+- Symbolication of user code with a `dSYM` may fail for tailspin files imported into Instruments. Symbols for system libraries also aren’t appearing when these files are loaded. (93261223) **Workaround**: Symbolicate hang logs in Terminal with `spindump -i <UIKit-runloop*.ips>`.
 - Disable the Thread Performance Checker through the Diagnostics tab in the Scheme Editor if your iOS or macOS App uses Fishhook to hook calls to `libSystem` for debugging/tracing purposes. (94724380) (FB10131267)
 
 ##### Interface Builder
@@ -234,7 +236,7 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 
 ###### Known Issues
 
-- Swift apps built with Xcode 14 may fail to link against `libswiftFoundation.dylib`. This can cause the app to misbehave when running on operating systems prior to macOS 13 Ventura and iOS 16, including strings not printing correctly and exceptions being thrown for missing methods on Foundation data types. (99457165) : Explicitly reference a symbol from `libswiftFoundation` in code, for example by adding `_ = JSONDecoder()` in a function.
+- Swift apps built with Xcode 14 may fail to link against `libswiftFoundation.dylib`. This can cause the app to misbehave when running on operating systems prior to macOS 13 Ventura and iOS 16, including strings not printing correctly and exceptions being thrown for missing methods on Foundation data types. (99457165) **Workaround**: Explicitly reference a symbol from `libswiftFoundation` in code, for example by adding `_ = JSONDecoder()` in a function.
 
 ##### Localization
 
@@ -310,7 +312,7 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 
 ###### Deprecations
 
-- Support for previewing widgets created for macOS apps and apps built with Mac Catalyst has been removed. (92531529) : Use the macOS WidgetKit Simulator.
+- Support for previewing widgets created for macOS apps and apps built with Mac Catalyst has been removed. (92531529) **Workaround**: Use the macOS WidgetKit Simulator.
 
 ##### Project Navigator
 
@@ -350,8 +352,8 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 
 ###### Known Issues
 
-- `xcodebuild -exportArchive` returns a session expired error message if you use authentication keys to upload your app to App Store Connect. (76036452) : Authentication keys are only supported for signing and provisioning. To upload apps from `xcodebuild`, first sign into Xcode with your Apple ID.
-- `xcodebuild` invocations may occasionally crash in DVTPortalEntitlementsManager. (98678163) (FB11267326) : You can disable Xcode’s entitlements filtering logic to work around this, either by running `defaults write com.apple.dt.Xcode DVTEnableMultiPlatformEntitlementFiltering -bool NO` in Terminal or by adding `-DVTEnableMultiPlatformEntitlementFiltering=NO` to your `xcodebuild` command line invocation.
+- `xcodebuild -exportArchive` returns a session expired error message if you use authentication keys to upload your app to App Store Connect. (76036452) **Workaround**: Authentication keys are only supported for signing and provisioning. To upload apps from `xcodebuild`, first sign into Xcode with your Apple ID.
+- `xcodebuild` invocations may occasionally crash in DVTPortalEntitlementsManager. (98678163) (FB11267326) **Workaround**: You can disable Xcode’s entitlements filtering logic to work around this, either by running `defaults write com.apple.dt.Xcode DVTEnableMultiPlatformEntitlementFiltering -bool NO` in Terminal or by adding `-DVTEnableMultiPlatformEntitlementFiltering=NO` to your `xcodebuild` command line invocation.
 
 ###### Resolved Issues
 
@@ -369,8 +371,8 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 
 ###### Known Issues
 
-- If you manually unmount or detach a simulator runtime disk image (such as by using `diskutil eject` or `umount`), Simulator and Xcode may not be able to determine whether the runtime is installed or not. Attempts to re-download the runtime results in failure with a duplicate runtime error. (89589210) : Restarting causes Simulator to re-mount the runtime disk image. Alternately you can use `xcrun simctl runtime` to locate the affected runtime disk image, delete it, then use Xcode to re-download it.
-- Simulator runtime disk images in `/tmp` that you add using `xcrun simctl runtime add` are deleted. (93858264) : Place the simulator runtime disk image somewhere other than `/tmp/` before passing it into `xcrun simctl runtime add`.
+- If you manually unmount or detach a simulator runtime disk image (such as by using `diskutil eject` or `umount`), Simulator and Xcode may not be able to determine whether the runtime is installed or not. Attempts to re-download the runtime results in failure with a duplicate runtime error. (89589210) **Workaround**: Restarting causes Simulator to re-mount the runtime disk image. Alternately you can use `xcrun simctl runtime` to locate the affected runtime disk image, delete it, then use Xcode to re-download it.
+- Simulator runtime disk images in `/tmp` that you add using `xcrun simctl runtime add` are deleted. (93858264) **Workaround**: Place the simulator runtime disk image somewhere other than `/tmp/` before passing it into `xcrun simctl runtime add`.
 
 ##### Siri Intents
 
@@ -391,7 +393,7 @@ method 'handle(intent:)' with Objective-C selector 'handleIntent:completion:' co
 
 ###### Known Issues
 
-- Configuring a new application in Xcode Cloud will fail when a developer team has no existing apps in App Store Connect. (94199091) : Create the app in App Store Connect first, then onboard the product in Xcode.
+- Configuring a new application in Xcode Cloud will fail when a developer team has no existing apps in App Store Connect. (94199091) **Workaround**: Create the app in App Store Connect first, then onboard the product in Xcode.
 
 ##### Source Editor
 
@@ -460,13 +462,13 @@ method 'handle(intent:)' with Objective-C selector 'handleIntent:completion:' co
 - Using the following StoreKit properties and methods on apps with a minimum deployment target below iOS 16, macOS 13, watchOS 9, and tvOS 16 will cause the app to crash at launch when running on systems earlier than iOS 16, macOS 13, watchOS 9 and tvOS 16: - `priceFormatStyle` and `subscriptionPeriodFormatStyle` on `Product` values
 - `environmentStringRepresentation` and `recentSubscriptionStartDate` on `Product.SubscriptionInfo.RenewalInfo` values
 - `environmentStringRepresentation` on `Transaction` values
-- `dateRange(referenceDate:)` and `formatted(_:referenceDate:)` on `Product.SubscriptionPeriod` values (99962885) (FB11516463) : For each target using a StoreKit API listed above, navigate to the “Build Phases” tab in the project editor with the target selected and add StoreKit.framework under “Link Binary With Libraries” if it isn’t already present. Set the “Status” column to “Optional.”
+- `dateRange(referenceDate:)` and `formatted(_:referenceDate:)` on `Product.SubscriptionPeriod` values (99962885) (FB11516463) **Workaround**: For each target using a StoreKit API listed above, navigate to the “Build Phases” tab in the project editor with the target selected and add StoreKit.framework under “Link Binary With Libraries” if it isn’t already present. Set the “Status” column to “Optional.”
 
 ##### Swift 57
 
 ###### New Features
 
-- The standard library has a new `Regex<Output>` type. This type represents an , allowing more fluent string processing operations. You can create a `Regex` by [`initialization from a string`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0355-regex-syntax-run-time-construction.md): ```swift
+- The standard library has a new `Regex<Output>` type. This type represents an *extended regular expression*, allowing more fluent string processing operations. You can create a `Regex` by [`initialization from a string`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0355-regex-syntax-run-time-construction.md): ```swift
 let pattern = "a[bc]+" // matches "a" followed by one or more instances
                        // of either "b" or "c"
 let regex = try! Regex(pattern)
@@ -581,7 +583,7 @@ let solid: any Solid = ...
 // Type of 'boundary' is 'any Surface'
 let boundary = solid.boundary()
 ``` You can’t use protocol methods that take an associated type or `Self` with `any`; however, in conjunction with [`SE-0352`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0352-implicit-open-existentials.md), you can pass the `any` type to a function that takes a generic parameter constrained to the protocol. Within the generic context, type relationships are explicit, and you can use all protocol methods. ([`SE-0309`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0309-unlock-existential-types-for-all-protocols.md), 93928911)
-- Protocols can now declare a list of one or more , which enable writing same-type requirements on those associated types using angle bracket syntax: ```swift
+- Protocols can now declare a list of one or more *primary associated types*, which enable writing same-type requirements on those associated types using angle bracket syntax: ```swift
 protocol Graph<Vertex, Edge> {
   associatedtype Vertex
   associatedtype Edge
@@ -718,7 +720,7 @@ actor Database {
     }
   }
 }
-``` This is a control-flow sensitive check, meaning an illegal access doesn’t necessarily appear on a source line after an escape of `self` (in the example above, consider  the `defer` is executed). The compiler always points out one of the escapes of `self` that’s causing an access to become illegal. In addition, delegating initializers of an actor are no longer always non-isolated. This means an `async` delegating initializer can do the same things as a non-delegating one. (84476555)
+``` This is a control-flow sensitive check, meaning an illegal access doesn’t necessarily appear on a source line after an escape of `self` (in the example above, consider *when* the `defer` is executed). The compiler always points out one of the escapes of `self` that’s causing an access to become illegal. In addition, delegating initializers of an actor are no longer always non-isolated. This means an `async` delegating initializer can do the same things as a non-delegating one. (84476555)
 - Actor initializers no longer require writing the `convenience` keyword to delegate (SE-327). Prior to Swift 5.7, adding or removing `convenience` for a public `init` of an actor was a non-resilient change, with respect to libraries compiled with evolution enabled. Those libraries compiled for Swift 5.7+ are now resilient to changes in the implementation of such initializers to delegate or not, and existing programs compiled for Swift 5.7+ won’t require recompilation. (87567878)
 - New types representing time and clocks are now available. This includes a protocol `Clock` for defining clocks, which allows you to define a concept of “now” and a way to wake up after a given instant. A new protocol `InstantProtocol` for defining instants in time is also available. And a new protocol `DurationProtocol` for defining an elapsed duration between two given `InstantProtocol` types is also available. The `Clock` types for general use are most commonly `SuspendingClock` and `ContinuousClock`, which represent the most fundamental clocks for the system. The `SuspendingClock` type doesn’t progress while the machine is suspended, whereas the `ContinuousClock` progresses no matter the state of the machine. ```swift
 func delayedHello() async throws {
@@ -843,7 +845,7 @@ actor A {
 
 ###### Known Issues
 
-- `#if canImport(AudioVideoBridging)` doesn’t compile on Mac Catalyst. (89289575) : Use `#if os(macOS)` to restrict `AudioVideoBridging` code to supported platforms.
+- `#if canImport(AudioVideoBridging)` doesn’t compile on Mac Catalyst. (89289575) **Workaround**: Use `#if os(macOS)` to restrict `AudioVideoBridging` code to supported platforms.
 - `~=` and cases in switches succeed if the entire string matches, rather than if there’s a match inside the string. This may change depending on the result of Swift Evolution for [`new string-processing algorithms`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0357-regex-string-processing-algorithms.md). (93918632)
 - In Swift, some Foundation typealiases for function types (such as `NSItemProvider.CompletionHandler`) will see `@Sendable` function types, which may result in unexpected warnings in code that has not adopted Swift Concurrency. To eliminate the warnings, replace a reference to the typealias in Swift source code with its underlying type without the `@Sendable`. (98343624) For example, replace: ```None
 var completion: NSItemProvider.CompletionHandler
@@ -888,16 +890,16 @@ var completion: (NSSecureCoding?, Error?) -> Void
 
 - On rare occasions, Xcode shows a package resolution error when a project that has package dependencies is opened for the first time. (75025949) (FB9028752)
 
-:  Close the project and open it again.
+**Workaround**:  Close the project and open it again.
 
-- Xcode Previews can fail when previewing inside of a dynamic package that depends on other dynamic packages. (88826023) (FB9898927) : If possible, change the dependent packages to build statically.
+- Xcode Previews can fail when previewing inside of a dynamic package that depends on other dynamic packages. (88826023) (FB9898927) **Workaround**: If possible, change the dependent packages to build statically.
 - If a package target has no source files but uses a build tool plugin that generates source files, an error occurs at build time. (92858144)
 
-:  Add an empty source file to the target that uses the build tool plugin.
+**Workaround**:  Add an empty source file to the target that uses the build tool plugin.
 
 - Source files generated by Swift Package Build Tool Plugins are generated when the plugin runs, so Xcode cannot index their contents before the first build.  Therefore Xcode may show Live Issues indicating missing symbols for source code that references the generated code. (95239175)
 
-:  Build the project. Xcode will index the generated source files once they have been generated.
+**Workaround**:  Build the project. Xcode will index the generated source files once they have been generated.
 
 ##### Templates
 

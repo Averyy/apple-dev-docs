@@ -29,7 +29,7 @@ These blend mode constants represent the Porter-Duff blend modes. The symbols in
 - D is the destination color, and includes alpha
 - Ra, Sa, and Da are the alpha components of R, S, and D
 
-You can find more information on blend modes, including examples of images produced using them, and many mathematical descriptions of the modes, in , Version 1.5, Adobe Systems, Inc. If you are a former QuickDraw developer, it may be helpful for you to think of blend modes as an alternative to transfer modes
+You can find more information on blend modes, including examples of images produced using them, and many mathematical descriptions of the modes, in *PDF Reference, Fourth Edition*, Version 1.5, Adobe Systems, Inc. If you are a former QuickDraw developer, it may be helpful for you to think of blend modes as an alternative to transfer modes
 
 For examples of using blend modes see “Setting Blend Modes” and “Using Blend Modes With Images” in [`Quartz 2D Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066).
 

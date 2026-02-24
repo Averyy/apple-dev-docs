@@ -26,7 +26,7 @@ If you use the [`SecRequirementCreateWithString(_:_:_:)`](secrequirementcreatewi
 ## Parameters
 
 - `requirement`: A valid code requirement object.
-- `flags`: Optional flags; see   for possible values. Pass   for standard behavior.
+- `flags`: Optional flags; see [`SecCSFlags`](seccsflags.md) for possible values. Pass [`kSecCSDefaultFlags`](seccsflags/kseccsdefaultflags.md) for standard behavior.
 - `text`: On return, a text representation of the code requirement.
 
 

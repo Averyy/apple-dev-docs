@@ -24,8 +24,8 @@ When this method is called, the delegate should expect no further information ab
 
 ## Parameters
 
-- `task`: The speech recognition task (an   object) that represents the request.
-- `recognitionResult`: A recognized utterance that contains one or more transcription hypotheses in an   object.
+- `task`: The speech recognition task (an [`SFSpeechRecognitionTask`](sfspeechrecognitiontask.md) object) that represents the request.
+- `recognitionResult`: A recognized utterance that contains one or more transcription hypotheses in an [`SFSpeechRecognitionResult`](sfspeechrecognitionresult.md) object.
 
 ## See Also
 

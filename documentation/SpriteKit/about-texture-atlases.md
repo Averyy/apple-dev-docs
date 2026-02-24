@@ -27,6 +27,28 @@ SpriteKit searches first for an image file with the specified filename. If it do
 
 If you want to explicitly work with texture atlas objects, use the [`SKTextureAtlas`](sktextureatlas.md) class. First, create a texture atlas object using the name of the atlas. Next, use the names of the image files stored in the atlas to look up the individual textures. The following code shows an example. It uses a texture atlas that holds multiple frames of animation for a monster, and shows how to create textures from those frames and store them in an array. In the actual project, you would add a `monster.atlas` folder with the four image files.
 
+**Swift**:
+
+```swift
+let atlas = SKTextureAtlas(named: "monster")
+let f1 = atlas.textureNamed("monster-walk1.png")
+let f2 = atlas.textureNamed("monster-walk2.png")
+let f3 = atlas.textureNamed("monster-walk3.png")
+let f4 = atlas.textureNamed("monster-walk4.png")
+let monsterWalkTextures = [f1, f2, f3, f4]
+```
+
+**Obj-C**:
+
+```objc
+SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"monster"];
+SKTexture *f1 = [atlas textureNamed:@"monster-walk1.png"];
+SKTexture *f2 = [atlas textureNamed:@"monster-walk2.png"];
+SKTexture *f3 = [atlas textureNamed:@"monster-walk3.png"];
+SKTexture *f4 = [atlas textureNamed:@"monster-walk4.png"];
+NSArray *monsterWalkTextures = @[f1,f2,f3,f4];
+```
+
 Whether your project uses a texture atlas or a sprite atlas, the code used to load assets is identical.
 
 ##### Creating a Texture Atlas at Runtime
@@ -53,7 +75,7 @@ A sprite atlas offers the advantages of a texture atlas with the management func
 
 You create a sprite atlas using Xcode. First add a new asset catalog to your project; see [`Add files and folders to a project`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev81ce1d383). Then, inside the new asset catalog, add a new sprite atlas.
 
-The process is described in detail in [`Create asset catalogs and sets`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev10510b1f7). In this document, the term  can refer to either a sprite atlas or a texture atlas.
+The process is described in detail in [`Create asset catalogs and sets`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev10510b1f7). In this document, the term *texture atlas* can refer to either a sprite atlas or a texture atlas.
 
 ##### Deciding on Texture Count and Size
 

@@ -24,7 +24,7 @@ The index of the segment with an action that has a matching identifier, or [`NSN
 
 ## Parameters
 
-- `actionIdentifier`: The   to match.
+- `actionIdentifier`: The [`UIAction.Identifier`](uiaction/identifier-swift.struct.md) to match.
 
 ## See Also
 

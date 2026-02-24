@@ -22,7 +22,7 @@ mutating func convert(to otherUnit: UnitType)
 
 ## Parameters
 
-- `otherUnit`: A unit of the same  .
+- `otherUnit`: A unit of the same `Dimension`.
 
 ## See Also
 

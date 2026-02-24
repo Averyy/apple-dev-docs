@@ -10,7 +10,7 @@ Simulate a bokeh effect by applying dilation.
 
 #### Overview
 
-This sample app creates a bokeh effect, where parts of an image that are out of focus adopt the shape of the lens’s aperture. The app dynamically generates a polygon-shaped kernel — also known as a  — and applies a morphology operation to an image based on that kernel. The following sample shows a photograph after the app has applied dilation with a triangular kernel:
+This sample app creates a bokeh effect, where parts of an image that are out of focus adopt the shape of the lens’s aperture. The app dynamically generates a polygon-shaped kernel — also known as a *structuring element* — and applies a morphology operation to an image based on that kernel. The following sample shows a photograph after the app has applied dilation with a triangular kernel:
 
 ![A photograph showing the results of a bokeh effect. Many small, triangular kernels together form the larger image of a bowl of fruit.](https://docs-assets.developer.apple.com/published/0446e9f3d6c912e710e66e77111c3532/triangle_dilation_result_2x.png)
 

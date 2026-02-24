@@ -6,7 +6,7 @@ Objects that connect to form a hierarchical tree of audio actions.
 
 #### Overview
 
-To play sound, your app assembles a hieararchical structure of audio  that determine which sound to play at the moment. A tree with two sampler nodes branching from a switch node plays only one sampler, depending on your app’s state. You set the control logic in advance that specifies the conditions upon which the switch node toggles. To play the same audio consistently, create a tree with a single sampler node.
+To play sound, your app assembles a hieararchical structure of audio *nodes* that determine which sound to play at the moment. A tree with two sampler nodes branching from a switch node plays only one sampler, depending on your app’s state. You set the control logic in advance that specifies the conditions upon which the switch node toggles. To play the same audio consistently, create a tree with a single sampler node.
 
 To invoke the tree, create a sound event that references the tree and call [`start(completion:)`](phasesoundevent/start(completion:).md) on the sound event.
 

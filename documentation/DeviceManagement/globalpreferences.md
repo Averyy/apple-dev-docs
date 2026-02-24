@@ -70,6 +70,11 @@ Specify `.GlobalPreferences` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `com.apple.autologout.AutoLogOutDelay` (number): The `autologout` delay, in seconds. A value of `0` means `autologout` is off. In some cases, this delay may be restricted to values between 5 minutes and 24 hours.
+- `MultipleSessionEnabled` (boolean): If `false`, disables fast user switching.
+
 ## See Also
 
 - [object UserPreferences](userpreferences.md)

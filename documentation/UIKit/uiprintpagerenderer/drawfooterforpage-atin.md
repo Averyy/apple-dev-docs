@@ -26,7 +26,7 @@ The system configures this method for drawing to the current graphics context ac
 ## Parameters
 
 - `pageIndex`: The index of the page on which to draw the footer content.
-- `footerRect`: The rectangle in which to draw the footer content. This rectangle uses the coordinate system of the paper rectangle ( ), with the origin of the coordinates at the top-left corner of the sheet.
+- `footerRect`: The rectangle in which to draw the footer content. This rectangle uses the coordinate system of the paper rectangle ([`paperRect`](uiprintpagerenderer/paperrect.md)), with the origin of the coordinates at the top-left corner of the sheet.
 
 ## See Also
 

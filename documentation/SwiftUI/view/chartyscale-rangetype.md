@@ -23,7 +23,7 @@ func chartYScale<Range>(range: Range, type: ScaleType? = nil) -> some View where
 
 ## Parameters
 
-- `range`: The range of y positions that correspond to the scale   domain. By default the range is determined by the dimension of the plot   area. You can use    to add padding to the scale range.
+- `range`: The range of y positions that correspond to the scale domain. By default the range is determined by the dimension of the plot area. You can use `range: .plotDimension(startPadding:, endPadding:)` to add padding to the scale range.
 - `type`: The scale type.
 
 ## See Also

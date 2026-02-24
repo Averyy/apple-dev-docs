@@ -8,6 +8,12 @@ The initial user-interface mode for the app.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: number
+
+**Default**: `0`
+
 ## See Also
 
 - [UILaunchScreen](information-property-list/uilaunchscreen.md)

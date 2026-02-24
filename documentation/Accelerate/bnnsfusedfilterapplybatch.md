@@ -28,7 +28,7 @@ func BNNSFusedFilterApplyBatch(_ filter: BNNSFilter?, _ batch_size: Int, _ in: U
 - `in_stride`: Increment, in values, between inputs.
 - `out`: Pointer to the output data.
 - `out_stride`: Increment, in values, between outputs.
-- `training`: Set to   if using batch normalization during training.
+- `training`: Set to `true` if using batch normalization during training.
 
 ## See Also
 

@@ -23,7 +23,7 @@ func previewContext<C>(_ value: C) -> some View where C : PreviewContext
 
 ## Parameters
 
-- `value`: The context for the preview; the default is  .
+- `value`: The context for the preview; the default is `nil`.
 
 ## See Also
 

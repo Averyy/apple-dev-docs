@@ -30,10 +30,10 @@ The callback function for a CFNetServiceBrowser is called one or more times when
 ## Parameters
 
 - `browser`: The CFNetServiceBrowser associated with this callback function.
-- `flags`: Flags conveying additional information. The   bit is set if   contains a domain; if this bit is not set,   contains a CFNetService instance. For additional bit values, see  .
-- `domainOrService`: A string containing a domain name if this callback function is being called as a result of calling  , or a CFNetService instance if this callback function is being called as a result calling  .
-- `error`: A pointer to a   structure whose   field may contain an error code.
-- `info`: User-defined context information. The value of   is the same as the value of the   field of the   structure that was provided when   was called to create the CFNetServiceBrowser associated with this callback function.
+- `flags`: Flags conveying additional information. The `kCFNetServiceFlagIsDomain` bit is set if `domainOrService` contains a domain; if this bit is not set, `domainOrService` contains a CFNetService instance. For additional bit values, see `CFNetServiceBrowserClientCallBack Bit Flags`.
+- `domainOrService`: A string containing a domain name if this callback function is being called as a result of calling [`CFNetServiceBrowserSearchForDomains(_:_:_:)`](cfnetservicebrowsersearchfordomains(_:_:_:).md), or a CFNetService instance if this callback function is being called as a result calling [`CFNetServiceBrowserSearchForServices(_:_:_:_:)`](cfnetservicebrowsersearchforservices(_:_:_:_:).md).
+- `error`: A pointer to a [`CFStreamError`](https://developer.apple.com/documentation/CoreFoundation/CFStreamError) structure whose `error` field may contain an error code.
+- `info`: User-defined context information. The value of `info` is the same as the value of the `info` field of the [`CFNetServiceClientContext`](cfnetserviceclientcontext.md) structure that was provided when [`CFNetServiceBrowserCreate(_:_:_:)`](cfnetservicebrowsercreate(_:_:_:).md) was called to create the CFNetServiceBrowser associated with this callback function.
 
 ## See Also
 

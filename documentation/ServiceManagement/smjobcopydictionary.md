@@ -23,7 +23,7 @@ A new dictionary describing the job, or `NULL` if the system couldn’t find the
 
 ## Parameters
 
-- `domain`: The job’s domain (for example,  ).
+- `domain`: The job’s domain (for example, [`kSMDomainSystemLaunchd`](ksmdomainsystemlaunchd.md)).
 - `jobLabel`: The label identifier of the job to copy.
 
 ## See Also

@@ -21,6 +21,9 @@ When users enable an extension that implements a message security handler, Mail 
 
 To encompass the symmetrical halves for encoding and decoding, MailKit defines two protocols that [`MEMessageSecurityHandler`](memessagesecurityhandler.md) conforms to:
 
+- **[`MEMessageEncoder`](memessageencoder.md)**: Methods that encrypt and digitally sign an email message.
+- **[`MEMessageDecoder`](memessagedecoder.md)**: Methods that decrypt email messages and verify digital signatures.
+
 As the user composes a mail message, MailKit calls [`getEncodingStatus(for:composeContext:completionHandler:)`](memessageencoder/getencodingstatus(for:composecontext:completionhandler:).md) to determine if the handler can sign or encrypt the message. The handler indicates the capabilities by providing an instance of [`MEOutgoingMessageEncodingStatus`](meoutgoingmessageencodingstatus.md). Mail reflects this status in the compose window by enabling the appropriate buttons to let the user choose how to encode the message. When the user sends the message, MailKit invokes the [`encode(_:composeContext:completionHandler:)`](memessageencoder/encode(_:composecontext:completionhandler:).md) method, and indicates whether the user chose to encrypt or sign the message.
 
 When MailKit needs the original message content, it invokes the handler’s [`decodedMessage(forMessageData:)`](memessagedecoder/decodedmessage(formessagedata:).md) method. This method creates an instance of [`MEDecodedMessage`](medecodedmessage.md) that includes the raw decoded message data and the details of who signed the message in an instance of [`MEMessageSecurityInformation`](memessagesecurityinformation.md).

@@ -37,7 +37,7 @@ await y.shapedArray(of: Int32.self) // is 2 2
 ## Parameters
 
 - `axis`: The axis to reduce.
-- `keepRank`: A Boolean indicating whether to keep the reduced axis or not. The default value is  .
+- `keepRank`: A Boolean indicating whether to keep the reduced axis or not. The default value is `false`.
 
 ## See Also
 

@@ -24,7 +24,7 @@ Layout information on `textViewportLayoutController` is up-to-date at the point 
 
 ## Parameters
 
-- `textViewportLayoutController`: The  .
+- `textViewportLayoutController`: The [`NSTextViewportLayoutController`](nstextviewportlayoutcontroller.md).
 
 ## See Also
 

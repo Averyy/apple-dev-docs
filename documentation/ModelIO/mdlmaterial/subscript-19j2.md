@@ -29,7 +29,7 @@ The ordering of material properties in a material is arbitrary, but you can use 
 
 ## Parameters
 
-- `idx`: An index in the material’s list of material properties; must be less than the value of  .
+- `idx`: An index in the material’s list of material properties; must be less than the value of [`count`](mdlmaterial/count.md).
 
 ## See Also
 

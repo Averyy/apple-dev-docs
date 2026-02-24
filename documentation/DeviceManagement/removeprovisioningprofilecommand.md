@@ -25,6 +25,11 @@ object RemoveProvisioningProfileCommand
 - [object RemoveProvisioningProfileCommand.Command](removeprovisioningprofilecommand/command-data.dictionary.md)
   The command to remove a previously installed provisioning profile from a device.
 
+## Properties
+
+- `Command` (RemoveProvisioningProfileCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object RemoveProvisioningProfileResponse](removeprovisioningprofileresponse.md)

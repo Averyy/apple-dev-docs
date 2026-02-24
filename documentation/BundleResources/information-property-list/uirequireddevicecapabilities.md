@@ -12,6 +12,10 @@ The device-related features that your app requires to run.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 The App Store prevents customers from installing an app on a device that doesn’t support the required capabilities for that app. Use this key to declare the capabilities your app requires. For a list of the features that different devices support, see [`Required Device Capabilities`](https://developer.apple.comhttps://developer.apple.com/support/required-device-capabilities/).

@@ -39,7 +39,7 @@ struct RedBorderToggleStyle: ToggleStyle {
 
 ## Parameters
 
-- `configuration`: The properties of the toggle, including a   label and a binding to the toggle’s state.
+- `configuration`: The properties of the toggle, including a label and a binding to the toggle’s state.
 
 
 ---

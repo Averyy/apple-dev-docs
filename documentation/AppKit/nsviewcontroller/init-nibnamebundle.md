@@ -29,7 +29,7 @@ If you pass in `nil` for `nibNameOrNil`, [`nibName`](nsviewcontroller/nibname.md
 ## Parameters
 
 - `nibNameOrNil`: The name of the nib file, without any leading path information.
-- `nibBundleOrNil`: The bundle in which to search for the nib file. If you specify  , this method looks for the nib file in the main bundle.
+- `nibBundleOrNil`: The bundle in which to search for the nib file. If you specify `nil`, this method looks for the nib file in the main bundle.
 
 ## See Also
 

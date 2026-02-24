@@ -24,7 +24,7 @@ If there’s no sample data between the sample cursor and `endSampleCursor`, the
 
 ## Parameters
 
-- `endSampleCursor`: If not  , this cursor indicates the last sample that the new sample buffer should contain.
+- `endSampleCursor`: If not `nil`, this cursor indicates the last sample that the new sample buffer should contain.
 - `completionHandler`: The completion block to execute when the load operation finishes.
 
 ## See Also

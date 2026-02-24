@@ -6,7 +6,7 @@ Access the user’s Wallet to add, update, and display your app’s passes.
 
 #### Overview
 
-The Wallet app on iOS and watchOS allows users to organize their  — tickets, gift cards, loyalty cards, boarding passes, and the payment cards they use with Apple Pay. By integrating with [`PassKit (Apple Pay and Wallet)`](https://developer.apple.com/documentation/PassKit), your app can access any related passes and allow the user to manage them.
+The Wallet app on iOS and watchOS allows users to organize their *passes* — tickets, gift cards, loyalty cards, boarding passes, and the payment cards they use with Apple Pay. By integrating with [`PassKit (Apple Pay and Wallet)`](https://developer.apple.com/documentation/PassKit), your app can access any related passes and allow the user to manage them.
 
 To use Wallet in your app, add the capability by configuring your app’s target in Xcode and, optionally, specify which pass types your app supports. Follow the instructions in the [`Add a capability`](adding-capabilities-to-your-app#Add-a-capability.md) section of [`Adding capabilities to your app`](adding-capabilities-to-your-app.md). When you reach the Capabilities library, choose Wallet. For watchOS apps with separate WatchKit extensions, add the capability to the WatchKit Extension’s target. The capability isn’t available for macOS or tvOS.
 

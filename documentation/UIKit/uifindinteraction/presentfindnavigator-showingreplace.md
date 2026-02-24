@@ -33,7 +33,7 @@ The method has no effect if the find navigator panel is already present.
 
 ## Parameters
 
-- `showingReplace`:   to display a replace text field in the panel if the delegate supports text replacement.   to avoid displaying the replace text field.
+- `showingReplace`: `YES` to display a replace text field in the panel if the delegate supports text replacement. `No` to avoid displaying the replace text field.
 
 ## See Also
 

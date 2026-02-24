@@ -31,7 +31,7 @@ If the count of the range is greater than `MemoryLayout<DestinationType>.stride 
 ## Parameters
 
 - `buffer`: A buffer to copy the data into.
-- `range`: A range in the data to copy into the buffer. If the range is empty, this function will return 0 without copying anything. If the range is nil, as much data as will fit into   is copied.
+- `range`: A range in the data to copy into the buffer. If the range is empty, this function will return 0 without copying anything. If the range is nil, as much data as will fit into `buffer` is copied.
 
 ## See Also
 

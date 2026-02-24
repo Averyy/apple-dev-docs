@@ -35,7 +35,7 @@ This is an advanced method that is used only if you wanted to iterate through a 
 - `result`: The result of the single match.
 - `string`: The string from which the result was matched.
 - `offset`: The offset to be added to the location of the result in the string.
-- `templ`: See   for the format of  .
+- `templ`: See [`Flag Options`](nsregularexpression#Flag-Options.md) for the format of `template`.
 
 
 ---

@@ -64,9 +64,9 @@ When viewed in a Spanish locale, the view uses the Spanish text from the strings
 
 ## Parameters
 
-- `key`: The key for a string in the table identified by  .
-- `tableName`: The name of the string table to search. If  , use the   table in the   file.
-- `bundle`: The bundle containing the strings file. If  , use the   main bundle.
+- `key`: The key for a string in the table identified by `tableName`.
+- `tableName`: The name of the string table to search. If `nil`, use the table in the `Localizable.strings` file.
+- `bundle`: The bundle containing the strings file. If `nil`, use the main bundle.
 - `comment`: Contextual information about this key-value pair.
 
 ## See Also

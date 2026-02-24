@@ -22,7 +22,7 @@ func removeSuite(named suiteName: String)
 
 ## Parameters
 
-- `suiteName`: The bundle identifier for the domain you want to remove. Specify the   same string you used when you added the domain.
+- `suiteName`: The bundle identifier for the domain you want to remove. Specify the same string you used when you added the domain.
 
 ## See Also
 

@@ -23,7 +23,7 @@ A new document interaction controller object.
 
 ## Parameters
 
-- `url`: A URL that specifies the location of the desired document. This parameter is retained. It can be changed later by modifying the   property.
+- `url`: A URL that specifies the location of the desired document. This parameter is retained. It can be changed later by modifying the [`url`](uidocumentinteractioncontroller/url.md) property.
 
 
 ---

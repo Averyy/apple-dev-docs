@@ -19,6 +19,9 @@ class WKApplication
 
 In Xcode 13 and earlier, the system divides a watchOS app into two sections:
 
+- **WatchKit app**: An app bundle that contains your app icon. For storyboard-based apps, it also includes your storyboard and any assets used by the storyboard.
+- **WatchKit extension**: An extension that contains your watchOS app’s code.
+
 In Xcode 14 and later, you can produce watchOS apps with a single watchOS app target for code, assets, extensions, and localizations. These single-target watchOS apps can run on watchOS 7 and later
 
 Single-target watchOS apps have a single app object. While the system creates and manages this object, you can access it to perform app-level tasks such as opening URLs and getting the root interface controller of your app.

@@ -28,8 +28,8 @@ It’s recommended that you provide a value for [`semantic`](textureresource/cre
 
 ## Parameters
 
-- `texture`: The target texture for copying the data.   It needs to have the same width and height as  , and    usage.
-- `completionHandler`: The system calls this closure after it finishes copying the data, with a   error if it succeeds.
+- `texture`: The target texture for copying the data. It needs to have the same width and height as [`TextureResource`](textureresource.md), and [`shaderWrite`](https://developer.apple.com/documentation/Metal/MTLTextureUsage/shaderWrite) usage.
+- `completionHandler`: The system calls this closure after it finishes copying the data, with a `nil` error if it succeeds.
 
 ## See Also
 

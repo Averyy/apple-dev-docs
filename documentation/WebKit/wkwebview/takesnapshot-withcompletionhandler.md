@@ -21,7 +21,8 @@ func takeSnapshot(configuration snapshotConfiguration: WKSnapshotConfiguration?)
 ## Parameters
 
 - `snapshotConfiguration`: The object that specifies the portion of the web view to capture, and other capture-related behaviors.
-- `completionHandler`: The completion handler to call when the image is ready. This block has no return value and takes the following parameters:
+- `completionHandler`: The completion handler to call when the image is ready. This block has no return value and takes the following parameters: - **snapshotImage**: A platform-native image that contains the specified portion of the web view.
+- **error**: An error object if a problem occurred, or `nil` on success.
 
 ## See Also
 

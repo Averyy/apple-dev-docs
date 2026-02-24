@@ -20,7 +20,7 @@ optional func lookAroundViewControllerDidUpdateScene(_ viewController: MKLookAro
 
 ## Parameters
 
-- `viewController`: The  .
+- `viewController`: The [`MKLookAroundViewController`](mklookaroundviewcontroller.md).
 
 ## See Also
 

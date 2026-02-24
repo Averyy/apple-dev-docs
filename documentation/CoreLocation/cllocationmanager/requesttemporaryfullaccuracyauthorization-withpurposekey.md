@@ -26,7 +26,7 @@ This method behaves the same as calling the [`requestTemporaryFullAccuracyAuthor
 
 ## Parameters
 
-- `purposeKey`: A key in the   dictionary of the app’s   file.  The value for this key is an app-provided string that describes the reason for accessing location data with full accuracy.  To localize a usage description, add an entry to your   file with the same key you provide for this parameter.
+- `purposeKey`: A key in the [`NSLocationTemporaryUsageDescriptionDictionary`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationTemporaryUsageDescriptionDictionary) dictionary of the app’s `Info.plist` file.  The value for this key is an app-provided string that describes the reason for accessing location data with full accuracy.  To localize a usage description, add an entry to your `InfoPlist.strings` file with the same key you provide for this parameter.
 
 ## See Also
 

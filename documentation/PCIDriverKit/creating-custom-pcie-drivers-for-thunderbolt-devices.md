@@ -83,8 +83,8 @@ For MSI-enabled Thunderbolt devices, the system routes interrupts to the appropr
 
 Drivers communicate with a PCI device primarily through one of the following memory spaces:
 
-- The  contains the registers that you use to manage the state of the device and its settings. For example, use these registers to configure the power management behavior of the device.
-- The  (MMIO) space contains the device’s custom data. When your driver needs to interact with device-specific features, read or write in the MMIO space according to the device’s specifications.
+- The *configuration space* contains the registers that you use to manage the state of the device and its settings. For example, use these registers to configure the power management behavior of the device.
+- The *memory-mapped I/O* (MMIO) space contains the device’s custom data. When your driver needs to interact with device-specific features, read or write in the MMIO space according to the device’s specifications.
 
 > ❗ **Important**:  Older PCI devices may also support the I/O memory space, which is similar to the MMIO space. Macs with Apple silicon don’t support the I/O space, and Apple discourages the use of the I/O space in your devices or drivers. Instead, use the MMIO space for custom communication between your driver and device.
 

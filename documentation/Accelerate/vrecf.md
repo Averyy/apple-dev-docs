@@ -26,6 +26,8 @@ Returns a vector containing the reciprocals of the values in the source vector.
 
 ##### Parameters
 
+- **A**: The source vector
+
 ## See Also
 
 - [func vceilf(vFloat) -> vFloat](vceilf(_:).md)

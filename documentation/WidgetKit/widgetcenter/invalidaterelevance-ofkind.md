@@ -27,7 +27,7 @@ Marking relevance as invalid causes the system to call, at a later time, the `re
 
 ## Parameters
 
-- `kind`: A string that identifies the widget and matches the   value you used when you created the widget’s configuration.
+- `kind`: A string that identifies the widget and matches the value you used when you created the widget’s configuration.
 
 
 ---

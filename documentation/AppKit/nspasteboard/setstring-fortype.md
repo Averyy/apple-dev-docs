@@ -29,7 +29,7 @@ This method invokes [`setData(_:forType:)`](nspasteboard/setdata(_:fortype:).md)
 ## Parameters
 
 - `string`: The string to write to the pasteboard.
-- `dataType`: The type of string data. The type must have been declared by a previous   message.
+- `dataType`: The type of string data. The type must have been declared by a previous [`declareTypes(_:owner:)`](nspasteboard/declaretypes(_:owner:).md) message.
 
 ## See Also
 

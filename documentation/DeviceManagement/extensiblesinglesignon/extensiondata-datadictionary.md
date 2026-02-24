@@ -17,6 +17,10 @@ The additional data to pass to the app extension.
 object ExtensibleSingleSignOn.ExtensionData
 ```
 
+## Properties
+
+- `ANY` (any): Keys and values to pass to the app extension.
+
 ## See Also
 
 - [object ExtensibleSingleSignOn.PlatformSSO](extensiblesinglesignon/platformsso-data.dictionary.md)

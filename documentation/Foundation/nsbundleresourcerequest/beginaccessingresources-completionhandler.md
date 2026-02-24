@@ -27,7 +27,7 @@ After calling this method, the resource request downloads any on-demand resource
 
 ## Parameters
 
-- `completionHandler`: The block takes the following parameter:
+- `completionHandler`: A block called when the resources have finished downloading or if an error occurs. The resources are not available until the completion handler is called with `error` set to `nil`. The block takes the following parameter: - **error**: Set to `nil` if the resources are downloaded successfully; otherwise this parameter holds an [`NSError`](nserror.md) object describing the problem that occurred. Errors are usually due to a lack of free space or problems connecting with the App Store.
 
 ## See Also
 

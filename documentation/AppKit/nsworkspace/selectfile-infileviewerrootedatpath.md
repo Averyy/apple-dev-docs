@@ -27,7 +27,7 @@ You can safely call this method from any thread of your app.
 ## Parameters
 
 - `fullPath`: The full path of the file to select.
-- `rootFullPath`: The path to use for the file viewer. If you specify a nonempty path string, this method opens a new file viewer. If you specify an empty string ( ), this method selects the file in the main viewer.
+- `rootFullPath`: The path to use for the file viewer. If you specify a nonempty path string, this method opens a new file viewer. If you specify an empty string (`@""`), this method selects the file in the main viewer.
 
 ## See Also
 

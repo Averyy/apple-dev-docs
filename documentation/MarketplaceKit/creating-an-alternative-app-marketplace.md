@@ -6,7 +6,7 @@ Enable the distribution of other third-party apps from within your marketplace a
 
 #### Overview
 
-An  is an app from which someone can install other third-party apps. To create a marketplace, fill out a webform that outlines the qualifications. If approved, Apple enables a code-signing entitlement on your account to distribute your marketplace app on the web. Apple also provides you with a framework that facilitates the secure installation of apps that your marketplace distributes.
+An *alternative app marketplace* is an app from which someone can install other third-party apps. To create a marketplace, fill out a webform that outlines the qualifications. If approved, Apple enables a code-signing entitlement on your account to distribute your marketplace app on the web. Apple also provides you with a framework that facilitates the secure installation of apps that your marketplace distributes.
 
 The architecture of an alternative marketplace includes an app, a webpage from which people download your app, and a web server that stores app data it regularly receives from App Store Connect. When people download an app through your alternative app marketplace, your web server communicates with the device’s operating system directly by providing authentication services, app licenses, and app data to facilitate a secure app installation experience.
 
@@ -19,7 +19,7 @@ The architecture of an alternative marketplace includes an app, a webpage from w
 For an alternative app marketplace:
 
 - Build a new app; only new bundle IDs qualify for marketplace provisioning.
-- Add a code-signing configuration that the system requires to launch your app on devices. Marketplace apps require the [`com.apple.developer.marketplace.app-installation`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.marketplace.app-installation) entitlement, which is a . To provision managed entitlements, see [`Provisioning with managed capabilities`](https://developer.apple.comhttps://developer.apple.com/help/account/reference/provisioning-with-managed-capabilities/).
+- Add a code-signing configuration that the system requires to launch your app on devices. Marketplace apps require the [`com.apple.developer.marketplace.app-installation`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.marketplace.app-installation) entitlement, which is a *managed entitlement*. To provision managed entitlements, see [`Provisioning with managed capabilities`](https://developer.apple.comhttps://developer.apple.com/help/account/reference/provisioning-with-managed-capabilities/).
 - Build with Xcode 15.3 or later, to accommodate [`MarketplaceKit`](MarketplaceKit.md) framework availability. MarketplaceKit lets people install apps from an alternative marketplace on supported devices.
 - Help provide an age-rating appropriate browsing experience by checking the maximum allowed age rating for the device. Honor any exceptions that a parent or guardian makes for specific apps. See [`Providing age-rating appropriate content`](providing-age-rating-appropriate-content.md).
 - Use APIs that vary from App Store apps. Specifically, use [`AdAttributionKit`](https://developer.apple.com/documentation/AdAttributionKit) for ads, and [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets) to download large files. Use a custom e-commerce solution. API that rely on Apple’s App Store, such as [`In-App Purchase`](https://developer.apple.com/documentation/StoreKit/in-app-purchase) and [`On Demand Resources`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/On_Demand_Resources_Guide/), don’t support alternative app marketplaces.
@@ -34,7 +34,7 @@ If your app doesn’t sell digital goods or services, you still need to add the 
 
 To set up a marketplace, provide your web domain and a distribution key to App Store Connect, which facilitates the secure distribution of your app over the web.
 
-The domain ensures that your marketplace app installs only from your website, and the :
+The domain ensures that your marketplace app installs only from your website, and the *distribution key*:
 
 - Regularly verifies the agreement, or relationship, you make with other developers that distribute their app on your marketplace.
 - Signs a token that the system uses to verify each installation request of your app, or the apps that your marketplace distributes.
@@ -43,7 +43,7 @@ For more information, see [`Distributing your app from your website`](distributi
 
 #### Facilitate the Life Cycle of Your Apps
 
-When a developer prepares to distribute their app on your marketplace, provide them a . They upload the token in App Store Connect, which enables them to choose your marketplace as a distributor. The process of generating and exchanging the token occurs between just your app marketplace and the inquring app developer. For more information, see [`Creating keys and establishing alternative marketplace connections`](https://developer.apple.com/documentation/AppStoreConnectAPI/creating-keys-and-establishing-alternative-marketplace-connections).
+When a developer prepares to distribute their app on your marketplace, provide them a *marketplace token*. They upload the token in App Store Connect, which enables them to choose your marketplace as a distributor. The process of generating and exchanging the token occurs between just your app marketplace and the inquring app developer. For more information, see [`Creating keys and establishing alternative marketplace connections`](https://developer.apple.com/documentation/AppStoreConnectAPI/creating-keys-and-establishing-alternative-marketplace-connections).
 
 To handle other regular requests, implement a web server that:
 
@@ -71,7 +71,7 @@ You can test the installation of the apps that your marketplace distributes on a
 To test distribution over the web, ensure:
 
 - Your marketplace app completes Notarization in App Store Connect; see [`Create a marketplace app`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/distributing-apps-in-the-european-union/create-an-marketplace-app).
-- Your webpage contains a properly formatted download link to your app’s alternative distribution package; see [`Design a webpage suitable for app download`](https://developer.apple.comhttps://docs.devpubs.apple.com/releases/rainbowe-rc/documentation/appdistribution/creating-an-alternative-app-marketplace#Design-a-webpage-suitable-for-app-download).
+- Your webpage contains a properly formatted download link to your app’s alternative distribution package; see [`Distributing your app from your website`](distributing-your-app-from-your-website.md).
 
 > **Note**: To test system-wide search, upload your app catalog. Apple ingests the upload and enables its contents to show up in Lookup, Safari, and Spotlight search on a device within 24 hours. For more information, see [`Building a searchable catalog for your marketplace app for inclusion in Spotlight`](https://developer.apple.com/documentation/AppStoreConnectAPI/building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight).
 

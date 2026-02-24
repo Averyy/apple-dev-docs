@@ -21,7 +21,7 @@ convenience init(type: HKWorkoutEventType, date: Date, metadata: [String : Any])
 
 ## Parameters
 
-- `type`: The type of workout event. For a description of possible events, see  .
+- `type`: The type of workout event. For a description of possible events, see [`HKWorkoutEventType`](hkworkouteventtype.md).
 - `date`: The time when the transition occurred. For a pause event, this date indicates the start of the break. For a resume event, this date indicates the end of the break. You must use a date between the starting and ending dates of the workout that you intend to modify.
 - `metadata`: The metadata associated with the workout event.
 

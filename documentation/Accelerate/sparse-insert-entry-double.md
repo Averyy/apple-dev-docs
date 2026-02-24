@@ -38,9 +38,9 @@ Inserted values may be temporarily held internally within the object and only in
 
 ## Parameters
 
-- `A`: The sparse matrix,  , which must have been created with  .   is returned if not met.
+- `A`: The sparse matrix, *A*, which must have been created with [`sparse_matrix_create_double(_:_:)`](sparse_matrix_create_double(_:_:).md). [`SPARSE_ILLEGAL_PARAMETER`](sparse_illegal_parameter.md) is returned if not met.
 - `val`: The scalar value to insert into the sparse matrix.
-- `i`: The row location to insert the value. Indices are 0 based (first element of  pointer is  ).  Indices expected to be in the bounds of matrix dimensions, undefined behavior if not met.
+- `i`: The row location to insert the value. Indices are 0 based (first element of  pointer is `ptr[0]`).  Indices expected to be in the bounds of matrix dimensions, undefined behavior if not met.
 - `j`: The column location to insert the value. Indices are 0 based (first element of  pointer is ptr[0]).  Indices expected to be in the bounds of matrix dimensions, undefined behavior if not met.
 
 ## See Also

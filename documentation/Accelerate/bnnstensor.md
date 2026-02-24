@@ -66,7 +66,7 @@ struct BNNSTensor
   Returns an array that contains a copy of this `BNNSTensor`’s elements.
 ### Type Methods
 - [static func allocate<C>(initializingFrom: C, shape: [Int], stride: [Int]) -> BNNSTensor](bnnstensor/allocate(initializingfrom:shape:stride:).md)
-  Creates a `BNNSTensor` populated with a  of the values in `source`.
+  Creates a `BNNSTensor` populated with a **copy** of the values in `source`.
 - [static func allocate<T>(repeating: T, shape: [Int], stride: [Int]) -> BNNSTensor](bnnstensor/allocate(repeating:shape:stride:).md)
   Creates a `BNNSTensor` filled with the specified scalar value.
 - [static func allocateUninitialized(scalarType: any BNNSScalar.Type, shape: [Int], stride: [Int]) -> BNNSTensor](bnnstensor/allocateuninitialized(scalartype:shape:stride:).md)

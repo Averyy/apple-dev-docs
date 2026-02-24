@@ -34,7 +34,7 @@ UTF-8 encoding is used to determine the correct percent-encoded characters. Any 
 
 ## Parameters
 
-- `allowedCharacters`: The characters not replaced in the string. Typically, you specify one of the predefined character sets for a particular URL component, such as   or  .
+- `allowedCharacters`: The characters not replaced in the string. Typically, you specify one of the predefined character sets for a particular URL component, such as [`urlPathAllowed`](nscharacterset/urlpathallowed.md) or [`urlQueryAllowed`](nscharacterset/urlqueryallowed.md).
 
 ## See Also
 

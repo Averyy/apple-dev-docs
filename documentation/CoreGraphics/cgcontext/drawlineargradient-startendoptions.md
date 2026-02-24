@@ -29,7 +29,7 @@ The color at location 0 in the CGGradient object is mapped to the starting point
 - `gradient`: A gradient object.
 - `startPoint`: The coordinate that defines the starting point of the gradient.
 - `endPoint`: The coordinate that defines the ending point of the gradient.
-- `options`: Option flags (  or  ) that control whether the fill is extended beyond the starting or ending point.
+- `options`: Option flags ([`drawsBeforeStartLocation`](cggradientdrawingoptions/drawsbeforestartlocation.md) or [`drawsAfterEndLocation`](cggradientdrawingoptions/drawsafterendlocation.md)) that control whether the fill is extended beyond the starting or ending point.
 
 ## See Also
 

@@ -39,9 +39,9 @@ Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an actio
 ## Parameters
 
 - `text`: The text to display and edit.
-- `selection`: A   to the variable containing the selection.
-- `prompt`: A   representing the prompt of the text field   which provides users with guidance on what to type into the text   field. Defaults to  .
-- `axis`: The axis in which to scroll text when it doesn’t fit   in the available space. Defaults to  .
+- `selection`: A [`Binding`](binding.md) to the variable containing the selection.
+- `prompt`: A `Text` representing the prompt of the text field which provides users with guidance on what to type into the text field. Defaults to `nil`.
+- `axis`: The axis in which to scroll text when it doesn’t fit in the available space. Defaults to `nil`.
 - `label`: A view that describes the purpose of the text field.
 
 

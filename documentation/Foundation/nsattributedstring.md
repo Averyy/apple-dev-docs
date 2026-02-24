@@ -22,7 +22,7 @@ class NSAttributedString
 
 #### Overview
 
-[`NSAttributedString`](nsattributedstring.md) is a type you use to manage strings of stylized Unicode text. In addition to text, an attributed string contains key-value pairs known as  that specify additional information to apply to ranges of characters within the string. Attributed strings support many different kinds of attributes, including:
+[`NSAttributedString`](nsattributedstring.md) is a type you use to manage strings of stylized Unicode text. In addition to text, an attributed string contains key-value pairs known as *attributes* that specify additional information to apply to ranges of characters within the string. Attributed strings support many different kinds of attributes, including:
 
 - Rendering attributes that specify font, color, kern, ligature, and other details
 - Attributes for attachments and adaptive image glyphs

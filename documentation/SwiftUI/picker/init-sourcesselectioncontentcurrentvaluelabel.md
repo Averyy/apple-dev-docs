@@ -68,8 +68,8 @@ This initializer creates a [`Text`](text.md) view on your behalf. See [`Text`](t
 ## Parameters
 
 - `title`: A string that describes the purpose of selecting an option.
-- `sources`: A collection of values used as the source for displaying   the Picker’s selection.
-- `selection`: The key path of the values that determines the   currently-selected options. When a user selects an option from the   picker, the values at the key path of all items in the    collection are updated with the selected option.
+- `sources`: A collection of values used as the source for displaying the Picker’s selection.
+- `selection`: The key path of the values that determines the currently-selected options. When a user selects an option from the picker, the values at the key path of all items in the `sources` collection are updated with the selected option.
 - `content`: A view that contains the set of options.
 - `currentValueLabel`: A view that represents the current value of the picker.
 

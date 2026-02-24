@@ -25,7 +25,7 @@ init(author: String = NSFullUserName(), shortDescription: String = "A model trai
 - `shortDescription`: A short description of the model.
 - `license`: The license governing the use of the model.
 - `version`: The model version.
-- `additional`: A dictionary that you can use to store arbitrary key value   pairs.
+- `additional`: A dictionary that you can use to store arbitrary key value pairs.
 
 
 ---

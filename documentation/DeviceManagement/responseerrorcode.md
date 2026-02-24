@@ -15,6 +15,11 @@ An error code.
 object ResponseErrorCode
 ```
 
+## Properties
+
+- `errorMessage` (string): The human-readable explanation of an error.
+- `errorNumber` (int32): The number that uniquely identifies an error.
+
 
 ---
 

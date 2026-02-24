@@ -15,6 +15,10 @@ Obtain a list of the locations the server manages.
 - [object RosterClassLocationResponse](rosterclasslocationresponse.md)
   The response that contains a list of locations.
 
+## Endpoint
+
+`POST https://mdmenrollment.apple.com/roster/class/location`
+
 ## Request Body
 
 The object containing the request information.

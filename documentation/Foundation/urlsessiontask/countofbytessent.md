@@ -22,7 +22,7 @@ var countOfBytesSent: Int64 { get }
 
 #### Discussion
 
-This byte count includes  the length of the request body itself, not the request headers.
+This byte count includes *only* the length of the request body itself, not the request headers.
 
 To be notified when this value changes, implement the [`urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)`](urlsessiontaskdelegate/urlsession(_:task:didsendbodydata:totalbytessent:totalbytesexpectedtosend:).md) delegate method.
 

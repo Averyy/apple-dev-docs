@@ -28,9 +28,9 @@ Use this method to integrate the dropped content into your table view. In your i
 
 How you update the table view depends on the source of the dragged items and whether you need to load the data asynchronously.
 
--  Use the `drop(_:toPlaceholderInsertedAt:withReuseIdentifier:rowHeight:cellUpdateHandler:)` method to insert a placeholder cell into the table while you wait for the data to load.
--  When the drag source contains rows from the same table, use the [`moveRow(at:to:)`](uitableview/moverow(at:to:).md) method to rearrange the rows.
--  When the drag item’s [`localObject`](uidragitem/localobject.md) property contains a value, use that value to update the table view directly. Specifically, update your data source object and insert any needed rows into the table.
+- **Insert placeholder rows for any data that you must load asynchronously.** Use the `drop(_:toPlaceholderInsertedAt:withReuseIdentifier:rowHeight:cellUpdateHandler:)` method to insert a placeholder cell into the table while you wait for the data to load.
+- **Use the existing table view methods to rearrange rows within the table.** When the drag source contains rows from the same table, use the [`moveRow(at:to:)`](uitableview/moverow(at:to:).md) method to rearrange the rows.
+- **Insert local data directly into the table.** When the drag item’s [`localObject`](uidragitem/localobject.md) property contains a value, use that value to update the table view directly. Specifically, update your data source object and insert any needed rows into the table.
 
 When updating your table directly, use the coordinator object to animate the dropping of the items. For example, you might use the [`drop(_:toRowAt:)`](uitableviewdropcoordinator/drop(_:torowat:).md) method to animate the insertion of the dropped item at the specified location. The insertion of placeholders automatically creates appropriate animations. For more information about the types of animations that you can perform, see [`UITableViewDropCoordinator`](uitableviewdropcoordinator.md).
 

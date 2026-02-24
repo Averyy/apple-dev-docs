@@ -27,9 +27,9 @@ IOConnectMethod calls from the owner of the connection come here. Any argument m
 
 ## Parameters
 
-- `selector`: Selector argument to  .
-- `arguments`: Structure describing all arguments being passed to  . See the   definition.
-- `dispatch`: NULL when called in the driver. The    implementation may be called with a non-NULL argument to check   certain fields of the arguments structure before calling a target procedure   specified by the dispatch structure ‘function’ field, and the   ‘target’ and ‘reference’ parameters to this method.   See the   definition.
+- `selector`: Selector argument to `IOConnectMethod`.
+- `arguments`: Structure describing all arguments being passed to `IOConnectMethod`. See the [`IOUserClientMethodArguments`](iouserclientmethodarguments.md) definition.
+- `dispatch`: NULL when called in the driver. The [`ExternalMethod`](iouserclient/externalmethod.md) implementation may be called with a non-NULL argument to check certain fields of the arguments structure before calling a target procedure specified by the dispatch structure ‘function’ field, and the ‘target’ and ‘reference’ parameters to this method. See the [`IOUserClientMethodDispatch`](iouserclientmethoddispatch.md) definition.
 - `target`: Target for the dispatch function
 - `reference`: Reference constant for the dispatch function
 

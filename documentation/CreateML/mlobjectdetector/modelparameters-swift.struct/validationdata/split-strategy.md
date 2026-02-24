@@ -16,7 +16,7 @@ case split(strategy: MLSplitStrategy)
 
 ## Parameters
 
-- `strategy`: An   instance the enumeration case uses to select a portion of the object   detector’s training dataset as its associated value.
+- `strategy`: An [`MLSplitStrategy`](mlsplitstrategy.md) instance the enumeration case uses to select a portion of the object detector’s training dataset as its associated value.
 
 ## See Also
 

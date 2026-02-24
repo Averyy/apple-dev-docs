@@ -26,11 +26,11 @@ This function is the same as performing `object[propertyKey] = value` from JavaS
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The   with the property you want to set.
-- `propertyKey`: A   that contains the property key to use when looking up the property.
-- `value`: A   to use as the property’s value.
-- `attributes`: A set of   to give to the property.
-- `exception`: A pointer to a   to store an exception in, if any. Pass   to discard any exception.
+- `object`: The [`JSObjectRef`](jsobjectref.md) with the property you want to set.
+- `propertyKey`: A [`JSValueRef`](jsvalueref.md) that contains the property key to use when looking up the property.
+- `value`: A [`JSValueRef`](jsvalueref.md) to use as the property’s value.
+- `attributes`: A set of [`JSPropertyAttributes`](jspropertyattributes.md) to give to the property.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 

@@ -28,6 +28,10 @@ Get the status of the content caches on a device.
 - [object ContentCachingInformationResponse](contentcachinginformationresponse.md)
   A response from the device after it processes the command to get the status of the content caches on a device.
 
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
+
 ## Request Body
 
 The request object the server returns for the Content Caching Information Command.

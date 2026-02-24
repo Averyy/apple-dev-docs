@@ -51,7 +51,7 @@ struct ContentView: View {
 
 ## Parameters
 
-- `object`: The object to store and make available to   the scene’s subhierarchy.
+- `object`: The object to store and make available to the scene’s subhierarchy.
 
 ## See Also
 

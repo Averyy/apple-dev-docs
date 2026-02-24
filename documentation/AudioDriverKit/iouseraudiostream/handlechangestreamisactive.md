@@ -24,7 +24,7 @@ The default implementation calls [`SetStreamIsActive`](iouseraudiostream/setstre
 
 ## Parameters
 
-- `in_is_active`:   if the stream is to become active; otherwise,  .
+- `in_is_active`: `true` if the stream is to become active; otherwise, `false`.
 
 ## See Also
 

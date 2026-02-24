@@ -18,8 +18,8 @@ init(viewing contentType: UTType, migrationPlan: any SchemaMigrationPlan.Type, v
 
 ## Parameters
 
-- `viewing`: The content type of the document. It should conform to  .
-- `migrationPlan`: The description of steps required to migrate older document   versions so that they can be opened.   The last   in the plan is considered to be   the current application schema.
+- `viewing`: The content type of the document. It should conform to `UTType.package`.
+- `migrationPlan`: The description of steps required to migrate older document versions so that they can be opened. The last `VersionedSchema` in the plan is considered to be the current application schema.
 - `viewer`: The viewing UI for the provided document.
 
 ## See Also

@@ -28,9 +28,9 @@ Use this method to create a new auxiliary storage object that describes a specif
 
 ## Parameters
 
-- `URL`: The   to write the auxiliary storage to on the local file system.
-- `hardwareModel`: The   model to use. The auxiliary storage can have different layouts for different hardware models.
-- `options`: Initialization options from the available  .
+- `URL`: The `URL` to write the auxiliary storage to on the local file system.
+- `hardwareModel`: The [`VZMacHardwareModel`](vzmachardwaremodel.md) model to use. The auxiliary storage can have different layouts for different hardware models.
+- `options`: Initialization options from the available [`VZMacAuxiliaryStorage.InitializationOptions`](vzmacauxiliarystorage/initializationoptions.md).
 
 ## See Also
 

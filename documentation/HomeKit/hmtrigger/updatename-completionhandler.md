@@ -20,7 +20,7 @@ func updateName(_ name: String) async throws
 ## Parameters
 
 - `name`: The new name. Must be unique within the home.
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

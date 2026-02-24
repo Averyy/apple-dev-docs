@@ -27,7 +27,7 @@ This size is potentially smaller than the acceleration structure. To perform com
 ## Parameters
 
 - `accelerationStructure`: Source acceleration structure.
-- `buffer`: Destination size buffer. Metal writes the compacted size as a 64-bit unsigned integer   value, representing the compacted size in bytes.
+- `buffer`: Destination size buffer. Metal writes the compacted size as a 64-bit unsigned integer value, representing the compacted size in bytes.
 
 ## See Also
 

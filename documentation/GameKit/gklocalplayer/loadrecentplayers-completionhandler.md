@@ -22,7 +22,8 @@ func loadRecentPlayers() async throws -> [GKPlayer]
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameters: - **`recentPlayers`**: Players from the friends list or players that recently participated in a game with the local player.
+- **`error`**: Describes an error if it occurs, or `nil` if `t`he operation completes. Possible errors include network and authentication issues.
 
 ## See Also
 

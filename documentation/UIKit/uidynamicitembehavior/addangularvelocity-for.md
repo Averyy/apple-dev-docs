@@ -20,7 +20,7 @@ func addAngularVelocity(_ velocity: CGFloat, for item: any UIDynamicItem)
 
 ## Parameters
 
-- `velocity`: The angular velocity, expressed in radians per second, that you want to add to the specified dynamic item. Default value is  . Applying a negative value reduces the angular velocity by the specified amount.
+- `velocity`: The angular velocity, expressed in radians per second, that you want to add to the specified dynamic item. Default value is `0`. Applying a negative value reduces the angular velocity by the specified amount.
 - `item`: The dynamic item whose angular velocity you want to increase (or decrease).
 
 ## See Also

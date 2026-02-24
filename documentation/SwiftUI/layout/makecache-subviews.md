@@ -51,7 +51,7 @@ If the layout container or any of its subviews change, SwiftUI calls the [`updat
 
 ## Parameters
 
-- `subviews`: A collection of proxy instances that represent the   views that the container arranges. You can use the proxies in the   collection to get information about the subviews as you   calculate values to store in the cache.
+- `subviews`: A collection of proxy instances that represent the views that the container arranges. You can use the proxies in the collection to get information about the subviews as you calculate values to store in the cache.
 
 ## See Also
 

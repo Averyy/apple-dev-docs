@@ -58,6 +58,12 @@ Draining of the log buffer is heavily dependent on the duration of the command b
 
 The `MTL_LOG_LEVEL` variable is the minimum logging level you want to use. The system doesn’t add any messages to the log buffer with a level lower than the one you set. The acceptable log level values are:
 
+- **`MTLLogLevelDebug`**: The log level that captures diagnostic information.
+- **`MTLLogLevelInfo`**: The log level that captures additional information.
+- **`MTLLogLevelNotice`**: The log level that captures notifications.
+- **`MTLLogLevelError`**: The log level that captures error information.
+- **`MTLLogLevelFault`**: The log level that captures fault information.
+
 ##### Generate and View the Log Messages
 
 After you enable shader logging, add `os_log` functions to your shader to begin generating the log messages:

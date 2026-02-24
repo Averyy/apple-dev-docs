@@ -39,7 +39,7 @@ Because this initializer takes a value that conforms to the [`Codable`](https://
 
 ## Parameters
 
-- `value`: An optional value to present.   When the user selects the link, SwiftUI stores a copy of the value.   Pass a   value to disable the link.
+- `value`: An optional value to present. When the user selects the link, SwiftUI stores a copy of the value. Pass a `nil` value to disable the link.
 - `label`: A label that describes the view that this link presents.
 
 ## See Also

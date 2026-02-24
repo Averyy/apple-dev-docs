@@ -22,7 +22,7 @@ Displays a certificate sheet using the provided certificate trust.
 
 ## Parameters
 
-- `trust`: A binding to a SecTrust reference created with   SecTrustCreateWithCertificates (see <Security/SecTrust.h>)   that determines whether to present the certificate sheet.
+- `trust`: A binding to a SecTrust reference created with SecTrustCreateWithCertificates (see <Security/SecTrust.h>) that determines whether to present the certificate sheet.
 - `title`: The title to display. Uses a default title if nil.
 - `message`: The message to display. Uses a default message if nil.
 - `help`: URL for the “Learn More” button. Uses a default URL if nil.

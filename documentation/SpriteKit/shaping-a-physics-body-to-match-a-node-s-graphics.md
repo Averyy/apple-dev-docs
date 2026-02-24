@@ -14,6 +14,21 @@ In most cases, a physics body should have a size and shape that closely approxim
 
 If you do not want to create your own shapes, you can use SpriteKit to create a shape for you based on the sprite’s texture.
 
+**Swift**:
+
+```swift
+let sprite = SKSpriteNode(imageNamed: "Spaceship")
+sprite.physicsBody = SKPhysicsBody(texture: sprite.texture!,
+                                   size: sprite.texture!.size())
+```
+
+**Obj-C**:
+
+```objc
+SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
+sprite.physicsBody = [SKPhysicsBody bodyWithTexture:sprite.texture size:sprite.texture.size];
+```
+
 ##### Choose a Simple Geometric Physics Body Shape
 
 When choosing a shape for your physics body, do not be overly precise. More complex shapes require more work to be properly simulated. For volume-based bodies, use the following guidelines:

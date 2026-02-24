@@ -27,7 +27,7 @@ The context version number for CFSocket is currently 0. Before calling this func
 ## Parameters
 
 - `s`: The CFSocket object to examine.
-- `context`: A pointer to the structure into which the context information for   is to be copied. The information being returned is usually the same information you passed to  ,  ,  , or   when creating the CFSocket object. However, if   returned a cached CFSocket object instead of creating a new object,   is filled with information from the original CFSocket object instead of the information you passed to the function.
+- `context`: A pointer to the structure into which the context information for `s` is to be copied. The information being returned is usually the same information you passed to [`CFSocketCreate(_:_:_:_:_:_:_:)`](cfsocketcreate(_:_:_:_:_:_:_:).md), [`CFSocketCreateConnectedToSocketSignature(_:_:_:_:_:_:)`](cfsocketcreateconnectedtosocketsignature(_:_:_:_:_:_:).md), [`CFSocketCreateWithNative(_:_:_:_:_:)`](cfsocketcreatewithnative(_:_:_:_:_:).md), or [`CFSocketCreateWithSocketSignature(_:_:_:_:_:)`](cfsocketcreatewithsocketsignature(_:_:_:_:_:).md) when creating the CFSocket object. However, if [`CFSocketCreateWithNative(_:_:_:_:_:)`](cfsocketcreatewithnative(_:_:_:_:_:).md) returned a cached CFSocket object instead of creating a new object, `context` is filled with information from the original CFSocket object instead of the information you passed to the function.
 
 ## See Also
 

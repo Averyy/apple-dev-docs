@@ -21,7 +21,7 @@ var avoid: Measure?
 
 The framework might put electricity usage in this category when:
 
-- Grid operators ask electricity consumers to temporarily reduce their power usage during periods of high demand or grid stress, also known as a  event.
+- Grid operators ask electricity consumers to temporarily reduce their power usage during periods of high demand or grid stress, also known as a *demand response* event.
 - Fossil fuel plants predominantly power the grid, composing the least desirable times for energy consumption from an environmental perspective.
 
 > ❗ **Important**: The framework reserves this property for future use.

@@ -14,6 +14,13 @@ The custom behavior path dictionary.
 object SystemMigration.CustomBehaviorItem.PathsItem
 ```
 
+## Properties
+
+- `SourcePath` (string) *(required)*: The path to the migrating file or directory on the source system.
+- `SourcePathInUserHome` (boolean) *(required)*: If `true`, the source path is located within a user home directory.
+- `TargetPath` (string) *(required)*: The path to the destination file or directory on the target system.
+- `TargetPathInUserHome` (boolean) *(required)*: If `true`, the target path is located within a user home directory.
+
 
 ---
 

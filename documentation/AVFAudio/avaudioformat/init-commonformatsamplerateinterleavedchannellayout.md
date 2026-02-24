@@ -32,8 +32,8 @@ For information about possible `format` values, see [`AVAudioCommonFormat`](avau
 
 - `format`: The audio format.
 - `sampleRate`: The sampling rate, in hertz.
-- `interleaved`: The Boolean value that indicates whether   is in an interleaved state.
-- `layout`: The channel layout, which must not be  .
+- `interleaved`: The Boolean value that indicates whether `format` is in an interleaved state.
+- `layout`: The channel layout, which must not be `nil`.
 
 ## See Also
 

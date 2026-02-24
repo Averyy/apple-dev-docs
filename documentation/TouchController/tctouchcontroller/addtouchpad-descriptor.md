@@ -21,7 +21,7 @@ A new `TCTouchpad` instance.
 
 ## Parameters
 
-- `descriptor`: The   containing the configuration for the touchpad.
+- `descriptor`: The `TCTouchpadDescriptor` containing the configuration for the touchpad.
 
 ## See Also
 

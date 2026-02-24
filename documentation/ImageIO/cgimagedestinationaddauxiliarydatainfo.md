@@ -27,8 +27,8 @@ Call this method after you add an image to the image destination. This method ad
 ## Parameters
 
 - `idst`: The image destination to modify.
-- `auxiliaryImageDataType`: The type of auxiliary information you want to add. For a list of possible values, see  .
-- `auxiliaryDataInfoDictionary`: A dictionary that contains the  ,  , and   keys. Use those keys to describe the depth or matte information.
+- `auxiliaryImageDataType`: The type of auxiliary information you want to add. For a list of possible values, see [`Auxiliary Data Types`](individual-image-properties#Auxiliary-Data-Types.md).
+- `auxiliaryDataInfoDictionary`: A dictionary that contains the [`kCGImageAuxiliaryDataInfoData`](kcgimageauxiliarydatainfodata.md), [`kCGImageAuxiliaryDataInfoDataDescription`](kcgimageauxiliarydatainfodatadescription.md), and [`kCGImageAuxiliaryDataInfoMetadata`](kcgimageauxiliarydatainfometadata.md) keys. Use those keys to describe the depth or matte information.
 
 ## See Also
 

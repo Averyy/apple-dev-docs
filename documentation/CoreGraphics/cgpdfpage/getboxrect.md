@@ -30,7 +30,7 @@ Returns the rectangle associated with the specified box in the specified page. T
 
 ## Parameters
 
-- `box`: A constant that specifies the type of box. For possible values, see  .
+- `box`: A constant that specifies the type of box. For possible values, see [`CGPDFBox`](cgpdfbox.md).
 
 ## See Also
 

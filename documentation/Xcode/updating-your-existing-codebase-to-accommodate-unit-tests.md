@@ -64,6 +64,64 @@ class StubService: URLOpener {
 
 In tests, write a different implementation of the `URLOpener` protocol that doesn’t depend on the apps installed on the user’s computer.
 
+**Swift Testing**:
+
+```swift
+@Suite struct AttachmentOpenerTests {
+    var service = StubService()
+    var attachmentOpener = AttachmentOpener()
+    let location = URL(fileURLWithPath: "/tmp/a_file.txt")
+
+    @Test("throws no error when open succeeds")
+    func serviceCanOpenAttachment() {
+        service.isSuccessful = true
+        #expect(throws: Never.self) {
+            try attachmentOpener.openAttachment(file: location, with: service)
+        }
+    }
+
+
+    @Test("throws unableToOpenAttachment when open fails")
+    func throwsIfServiceCannotOpenAttachment() {
+        service.isSuccessful = false
+        #expect(throws: AttachmentOpeningError.unableToOpenAttachment) {
+            try attachmentOpener.openAttachment(file: location, with: service)
+        }
+    }
+}
+```
+
+**XCTest**:
+
+```objc
+class AttachmentOpenerTests: XCTestCase {
+    var service: StubService! = nil
+    var attachmentOpener: AttachmentOpener! = nil
+    let location = URL(fileURLWithPath: "/tmp/a_file.txt")
+
+    override func setUp() {
+        service = StubService()
+        attachmentOpener = AttachmentOpener()
+    }
+
+    override func tearDown() {
+        service = nil
+        attachmentOpener = nil
+    }
+
+    func testServiceCanOpenAttachment() {
+        service.isSuccessful = true
+        XCTAssertNoThrow(try attachmentOpener.openAttachment(file: location, with: service))
+    }
+
+
+    func testThrowIfServiceCannotOpenAttachment() {
+        service.isSuccessful = false
+        XCTAssertThrowsError(try attachmentOpener.openAttachment(file: location, with: service))
+    }
+}
+```
+
 ##### Replace Named Type with Metatype Value
 
 When one class in your app creates and uses instances of another class, and the created objects introduce testing difficulties, it can be hard to test the class where they’re created. Parameterize the type of the created object and use a required initializer to create an instance. Examples of this difficult testing situation include a controller that creates a new document on the filesystem in response to a person’s action, or a method that interprets JSON received from a web service and creates new Core Data managed objects that represent the received data.
@@ -127,7 +185,7 @@ class DocumentLoader {
 }
 ```
 
-To remove the coupling between the code you’re trying to test and the objects it creates, define a variable on the class under test that represents the  of object it should construct. Such a variable is called a . Set the default value to the type the class already uses. You’ll need to ensure that the initializer used to construct instances is marked `required`. This listing shows the document browser view controller delegate with that variable introduced. The delegate creates documents with the type defined by the metatype value.
+To remove the coupling between the code you’re trying to test and the objects it creates, define a variable on the class under test that represents the *type* of object it should construct. Such a variable is called a *metatype value*. Set the default value to the type the class already uses. You’ll need to ensure that the initializer used to construct instances is marked `required`. This listing shows the document browser view controller delegate with that variable introduced. The delegate creates documents with the type defined by the metatype value.
 
 ```swift
 class DocumentLoader {
@@ -168,6 +226,55 @@ class SampleDocument : Document {
 ```
 
 Replace the document type with the sample type in your test case’s `setUp()` method, so the document loader you test creates instances of the stub document type. Sample documents behave deterministically in the tests.
+
+**Swift Testing**:
+
+```swift
+@Suite final class DocumentLoaderTests {
+    let loader = DocumentLoader()
+
+    init() {
+        loader.DocumentClass = SampleDocument.self
+    }
+
+    @Test @MainActor func documentLoaderReturnsFalseWhenDocumentCannotLoad() {
+        SampleDocument.loadsSuccessfully = false
+        #expect(loader.loadDocument(at: URL(filePath: "/Users/example/Documents/document.txt")) == false)
+    }
+
+    @Test @MainActor func documentLoaderReturnsTrueWhenDocumentLoads() {
+        SampleDocument.loadsSuccessfully = true
+        #expect(loader.loadDocument(at: URL(filePath: "/Users/example/Documents/document.txt")) == true)
+    }
+}
+```
+
+> **Note**:  As these tests rely on the shared `SampleDocument.loadsSuccessfully` state, they can’t run concurrently. The tests are annotated with `@MainActor` to ensure they run in series.
+
+**XCTest**:
+
+```swift
+class DocumentLoaderTests: XCTestCase {
+    var loader: DocumentLoader! = nil
+
+    override func setUp() {
+        loader = DocumentLoader()
+        loader.DocumentClass = SampleDocument.self
+    }
+
+    override func tearDown() {}
+
+    func testDocumentLoaderReturnsFalseWhenDocumentCannotLoad() {
+        SampleDocument.loadsSuccessfully = false
+        XCTAssertFalse(loader.loadDocument(at: URL(filePath: "/Users/example/Documents/document.txt")))
+    }
+
+    func testDocumentLoaderReturnsTrueWhenDocumentLoads() {
+        SampleDocument.loadsSuccessfully = true
+        XCTAssertTrue(loader.loadDocument(at: URL(filePath: "/Users/example/Documents/document.txt")))
+    }
+}
+```
 
 ##### Subclass and Override Untestable Methods
 
@@ -238,6 +345,59 @@ class StubAccount : Account {
 
 In testing types, create instances of `StubAccount` and test the date-calculation logic inherited from `Account`. Because `StubAccount` lets the test code control the date that represents the current date, the test behavior doesn’t depend on the system’s clock.
 
+**Swift Testing**:
+
+```swift
+@Suite struct AccountTests {
+    @Test func accountCalculatesAgeCorrectly() throws {
+        let dateOfBirth = Calendar.current.date(from: DateComponents(
+            timeZone: TimeZone(identifier: "Europe/London"),
+            year: 1970,
+            month: 1,
+            day: 1
+        ))!
+        let fixedDateForToday = Calendar.current.date(from: DateComponents(
+            timeZone: TimeZone(identifier: "Europe/London"),
+            year: 2024,
+            month: 12,
+            day: 31
+        ))!
+        let account = StubAccount(name: "Example Account", email: "account@example.com", userId: "example", dateOfBirth: dateOfBirth, overrideNow: fixedDateForToday)
+        #expect(try account.age() == 54)
+    }
+}
+```
+
+**XCTest**:
+
+```swift
+class AccountTests : XCTestCase {
+    private var account: StubAccount! = nil
+
+    override func setUp() {
+        let dateOfBirth = Calendar.current.date(from: DateComponents(
+            timeZone: TimeZone(identifier: "Europe/London"),
+            year: 1970,
+            month: 1,
+            day: 1
+        ))!
+        let fixedDateForToday = Calendar.current.date(from: DateComponents(
+            timeZone: TimeZone(identifier: "Europe/London"),
+            year: 2024,
+            month: 12,
+            day: 31
+        ))!
+        account = StubAccount(name: "Example Account", email: "account@example.com", userId: "example", dateOfBirth: dateOfBirth, overrideNow: fixedDateForToday)
+    }
+
+    override func tearDown() { }
+
+    func testAccountCalculatesAgeCorrectly() throws {
+        XCTAssertEqual(try account.age(), 54)
+    }
+}
+```
+
 Sometimes this pattern can help you test existing classes that combine multiple responsibilities, but only if those classes and the methods aren’t marked as `final` and it isn’t a good practice to follow in designing testable code from scratch. Separate code that handles different concerns into different classes, for example:
 
 - Controller classes that implement your app’s custom behavior.
@@ -296,6 +456,58 @@ class LoginHandler {
 ```
 
 In a test case you can substitute a different storage object, which isn’t used elsewhere in the test suite or the app, and therefore is isolated from the behavior of other tests and modules.
+
+**Swift Testing**:
+
+```swift
+struct StubLoginStorage : LoginStorage {
+    let value: String?
+
+    init(value: String?) {
+        self.value = value
+    }
+
+    func string(forKey: String) -> String? {
+        value
+    }
+}
+
+@Suite struct LoginHandlerTests {
+    let handler: LoginHandler = LoginHandler(storage: StubLoginStorage(value: "example-username"))
+
+    @Test func handlerGetsUsernameFromStorage() {
+        #expect(handler.previousUsername == "example-username")
+    }
+}
+```
+
+**XCTest**:
+
+```swift
+struct StubLoginStorage : LoginStorage {
+    let value: String?
+
+    init(value: String?) {
+        self.value = value
+    }
+
+    func string(forKey: String) -> String? {
+        value
+    }
+}
+
+class XCLoginHandlerTests : XCTestCase {
+    var handler: LoginHandler! = nil
+
+    override func setUp() {
+        handler = LoginHandler(storage: StubLoginStorage(value: "example-username"))
+    }
+
+    func testHandlerGetsUsernameFromStorage() {
+        XCTAssertEqual(handler.previousUsername, "example-username")
+    }
+}
+```
 
 You may need to combine this change with those described in the article sections ([`Replace a concrete type with a protocol`](updating-your-existing-codebase-to-accommodate-unit-tests#Replace-a-concrete-type-with-a-protocol.md) and [`Subclass and override untestable methods`](updating-your-existing-codebase-to-accommodate-unit-tests#Subclass-and-override-untestable-methods.md)) to create the alternative object you use in the test in place of the singleton. You’ll need to do this where the singleton supplies behavior that’s difficult to control in a test, like [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) or [`NSApplication`](https://developer.apple.com/documentation/AppKit/NSApplication).
 

@@ -10,6 +10,29 @@ Use `XCTSkipIf()` or `XCTSkipUnless()` when you have a Boolean condition that yo
 
 In Swift, throw an `XCTSkip` error when you have other circumstances that result in skipped tests. In Objective-C use `XCTSkip`. For example:
 
+**Swift**:
+
+```swift
+func testSomethingNew() throws {
+    guard #available(macOS <#VersionNumber#>, *) else {
+        throw XCTSkip("Required API is not available for this test.")
+    }
+    // perform test using <#VersionNumber#> APIs...
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)testSomethingNew {
+    if (@available(macOS <#VersionNumber#>, *)) {
+        // perform test using <#VersionNumber#> APIs...
+    } else {
+        XCTSkip(@"Required API is not available for this test.");
+    }
+}
+```
+
 ## Topics
 
 ### Methods for Skipping Tests

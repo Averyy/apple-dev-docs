@@ -27,9 +27,10 @@ When ARKit detects a reference image, the transform of the resulting [`ARObjectA
 ## Parameters
 
 - `transform`: A transform matrix defining the origin and orientation of the local coordinate system for the region to extract.
-- `center`: A point, relative to the origin specified by  , that defines the center of the bounding box for the region to extract.
-- `extent`: The width, height, and depth of the region to extract, centered on the   point and oriented to the local coordinate system specified by  .
-- `completionHandler`: A handler to be invoked asynchronously after ARKit finishes creating the reference object. The handler takes two parameters:
+- `center`: A point, relative to the origin specified by `transform`, that defines the center of the bounding box for the region to extract.
+- `extent`: The width, height, and depth of the region to extract, centered on the `center` point and oriented to the local coordinate system specified by `transform`.
+- `completionHandler`: A handler to be invoked asynchronously after ARKit finishes creating the reference object. The handler takes two parameters: - **referenceObject**: A [`ARReferenceObject`](arreferenceobject.md) that represents the specified region of the world map, or `nil` if a reference object could not be created.
+- **error**: If the `referenceObject` is `nil`, an [`ARError`](arerror.md) describing the failure.
 
 
 ---

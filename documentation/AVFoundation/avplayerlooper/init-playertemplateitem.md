@@ -29,8 +29,8 @@ Creating an instance of this class using this method is equivalent to calling [`
 
 ## Parameters
 
-- `player`: The queue player to use for playback. The player must not be  .
-- `itemToLoop`: The player item to loop, which must not be  .
+- `player`: The queue player to use for playback. The player must not be `nil`.
+- `itemToLoop`: The player item to loop, which must not be `nil`.
 
 ## See Also
 

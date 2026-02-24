@@ -31,7 +31,7 @@ Turning `object` into a fault by setting `flag` to [`false`](https://developer.a
 ## Parameters
 
 - `object`: A managed object.
-- `flag`: If   is  , the context reloads the object’s property values from the store or the cache. Then the context applies local changes over the newly loaded values. Merging the local values into   always succeeds, and never results in a merge conflict.
+- `flag`: A Boolean value. If `flag` is [`false`](https://developer.apple.com/documentation/Swift/false), the context discards pending changes and the managed object becomes a fault. Upon next access, the context reloads the object’s values from the persistent store or last cached state. If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true), the context reloads the object’s property values from the store or the cache. Then the context applies local changes over the newly loaded values. Merging the local values into `object` always succeeds, and never results in a merge conflict.
 
 ## See Also
 

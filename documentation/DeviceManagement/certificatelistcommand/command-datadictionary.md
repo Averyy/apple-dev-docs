@@ -19,6 +19,12 @@ The command to get a list of installed certificates on a device.
 object CertificateListCommand.Command
 ```
 
+## Properties
+
+- `ManagedOnly` (boolean): If `true`, only include certificates that MDM installed or that are in the same profile as the MDM payload. User-enrolled devices ignore this value and always only include managed certificates. This value is available in iOS 13 and later, macOS 10.15 and later, and tvOS 13 and later.
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

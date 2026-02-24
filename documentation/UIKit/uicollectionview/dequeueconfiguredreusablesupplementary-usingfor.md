@@ -25,7 +25,7 @@ A configured reusable supplementary view object.
 
 ## Parameters
 
-- `registration`: The supplementary registration for configuring the supplementary view object. See  .
+- `registration`: The supplementary registration for configuring the supplementary view object. See [`UICollectionView.SupplementaryRegistration`](uicollectionview/supplementaryregistration.md).
 - `indexPath`: The index path that specifies the location of the supplementary view in the collection view.
 
 ## See Also

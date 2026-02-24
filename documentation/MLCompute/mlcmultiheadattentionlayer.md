@@ -22,6 +22,11 @@ class MLCMultiheadAttentionLayer
 
 The dimensions of projections are as follows:
 
+- **Query**: `(1, headCount, keyDimension/headCount, modelDimension)`
+- **Key**: `(1, headCount, keyDimension/headCount, modelDimension)`
+- **Value**: `(1, headCount, valueDimension/headCount, modelDimension)`
+- **Output**: `(1, 1, modelDimension, valueDimension)`
+
 ``
 
 ## Topics

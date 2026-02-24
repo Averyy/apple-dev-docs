@@ -11,6 +11,10 @@ The maximum number of HTTP URLs that the app extension supports.
 - macOS 10.10+
 - visionOS 1.0+
 
+
+
+**Type**: integer
+
 ## See Also
 
 - [NSExtensionActivationSupportsWebPageWithMaxCount](information-property-list/nsextension/nsextensionattributes/nsextensionactivationrule/nsextensionactivationsupportswebpagewithmaxcount.md)

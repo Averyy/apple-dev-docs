@@ -21,7 +21,7 @@ This method uses a listener object to set the results of the open panel, instead
 ## Parameters
 
 - `sender`: The web view that sent the message.
-- `resultListener`: See the   protocol for how to set these values.
+- `resultListener`: See the [`WebOpenPanelResultListener`](webopenpanelresultlistener.md) protocol for how to set these values.
 
 ## See Also
 

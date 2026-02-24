@@ -30,7 +30,7 @@ Use this method on long-running queries only. Most queries automatically stop af
 
 ## Parameters
 
-- `query`: Either an   instance or an   instance.
+- `query`: Either an [`HKObserverQuery`](hkobserverquery.md) instance or an [`HKStatisticsCollectionQuery`](hkstatisticscollectionquery.md) instance.
 
 ## See Also
 

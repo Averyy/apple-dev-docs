@@ -26,9 +26,9 @@ An immutable string, or `NULL` if there was a problem creating the object. Owner
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new string. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `str`: The string from which to create the new string.
-- `range`: The range of characters in   to copy. The specified range must not exceed the length of the string.
+- `range`: The range of characters in `str` to copy. The specified range must not exceed the length of the string.
 
 ## See Also
 

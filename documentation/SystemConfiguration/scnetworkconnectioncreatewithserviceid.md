@@ -20,9 +20,9 @@ A reference to a new network connection.
 
 ## Parameters
 
-- `allocator`: The allocator that should be used to allocate memory for the connection structure. This parameter may be  , in which case the current default allocator is used. If this reference is not a valid allocator, the behavior is undefined.
+- `allocator`: The allocator that should be used to allocate memory for the connection structure. This parameter may be `NULL`, in which case the current default allocator is used. If this reference is not a valid allocator, the behavior is undefined.
 - `serviceID`: The service identifier of the connection. This value uniquely identifies service in the system configuration database.
-- `callout`: The function to be called when the status of the connection changes. If this parameter is  , the application receives notifications of status change and will need to poll for updates.
+- `callout`: The function to be called when the status of the connection changes. If this parameter is `NULL`, the application receives notifications of status change and will need to poll for updates.
 - `context`: User-specified data associated with the connection.
 
 

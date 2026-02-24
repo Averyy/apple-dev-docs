@@ -22,7 +22,7 @@ var gobo: SCNMaterialProperty? { get }
 
 #### Discussion
 
-In photographic and stage lighting terminology, a gobo (also known as a  or ) is a stencil, gel, or other object placed just in front of a light source, shaping or coloring the beam of light.
+In photographic and stage lighting terminology, a gobo (also known as a *flag* or *cookie*) is a stencil, gel, or other object placed just in front of a light source, shaping or coloring the beam of light.
 
 You alter the appearance of a spotlight by changing the [`contents`](scnmaterialproperty/contents.md) property of the object permanently assigned to this property. As with other material properties, you can use a color or image, or a Core Animation layer containing animated content, as a lighting gobo.
 

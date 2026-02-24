@@ -15,6 +15,8 @@ typealias ALAssetsLibraryAccessFailureBlock = ((any Error)?) -> Void
 
 The block parameter is defined as follows:
 
+- **error**: An error object that describes why access to the library failed.
+
 This block type is used by [`asset(for:resultBlock:failureBlock:)`](alassetslibrary/asset(for:resultblock:failureblock:).md) and [`enumerateGroups(withTypes:using:failureBlock:)`](alassetslibrary/enumerategroups(withtypes:using:failureblock:).md).
 
 ## See Also

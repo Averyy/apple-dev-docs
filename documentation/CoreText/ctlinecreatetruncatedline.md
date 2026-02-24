@@ -32,8 +32,8 @@ The line specified in `truncationToken` should have a width less than the width 
 
 - `line`: The line from which to create a truncated line.
 - `width`: The width at which truncation begins. The line is truncated if its width is greater than the width passed in this parameter.
-- `truncationType`: The type of truncation to perform if needed. See   for possible values.
-- `truncationToken`: This token is added at the point where truncation took place, to indicate that the line was truncated. Usually, the truncation token is the ellipsis character ( ). If this parameter is set to  , then no truncation token is used and the line is simply cut off.
+- `truncationType`: The type of truncation to perform if needed. See [`CTLineTruncationType`](ctlinetruncationtype.md) for possible values.
+- `truncationToken`: This token is added at the point where truncation took place, to indicate that the line was truncated. Usually, the truncation token is the ellipsis character (`U+2026`). If this parameter is set to `NULL`, then no truncation token is used and the line is simply cut off.
 
 ## See Also
 

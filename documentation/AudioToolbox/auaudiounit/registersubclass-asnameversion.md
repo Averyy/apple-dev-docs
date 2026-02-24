@@ -30,9 +30,9 @@ This method dynamically registers the supplied [`AUAudioUnit`](auaudiounit.md) s
 
 ## Parameters
 
-- `cls`: An   subclass.
+- `cls`: An [`AUAudioUnit`](auaudiounit.md) subclass.
 - `componentDescription`: The component to register.
-- `name`: The component’s name, using the convention  .
+- `name`: The component’s name, using the convention `<manufacturer name>:<audio unit name>`.
 - `version`: The component’s version.
 
 ## See Also

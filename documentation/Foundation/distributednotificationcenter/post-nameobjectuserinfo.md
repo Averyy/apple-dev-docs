@@ -21,9 +21,9 @@ This method invokes [`postNotificationName(_:object:userInfo:deliverImmediately:
 
 ## Parameters
 
-- `aName`: Name of the notification to post. Must not be  .
-- `anObject`: Sender of the notification. May be  .
-- `aUserInfo`: Dictionary containing additional information. May be  .
+- `aName`: Name of the notification to post. Must not be `nil`.
+- `anObject`: Sender of the notification. May be `nil`.
+- `aUserInfo`: Dictionary containing additional information. May be `nil`. > ❗ **Important**:  Sandboxed apps can send notifications only if they do not contain a dictionary. If the sending application is in an App Sandbox, `notificationInfo` *must* be `nil`.
 
 ## See Also
 

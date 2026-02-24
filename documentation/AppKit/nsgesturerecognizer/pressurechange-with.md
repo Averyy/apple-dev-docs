@@ -24,7 +24,7 @@ A gesture recognizer monitors events that occur in its view (and any subviews) b
 
 ## Parameters
 
-- `event`: An   object encapsulating information about the event that invoked the change in pressure.
+- `event`: An `NSEvent` object encapsulating information about the event that invoked the change in pressure.
 
 ## See Also
 

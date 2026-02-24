@@ -30,9 +30,9 @@ This method can only be called while the session is active—that is, the [`acti
 
 ## Parameters
 
-- `message`: A dictionary of property list values that you want to send. You define the contents of the dictionary that your counterpart supports. This parameter must not be  .
-- `replyHandler`: A reply handler for receiving a response from the counterpart. Specify   if you do not want to receive a reply. This block has no return value and takes the following parameter:
-- `errorHandler`: A block that is executed when an error occurs. Specify   if you do not care about error information. This block has no return value and takes the following parameter:
+- `message`: A dictionary of property list values that you want to send. You define the contents of the dictionary that your counterpart supports. This parameter must not be `nil`.
+- `replyHandler`: A reply handler for receiving a response from the counterpart. Specify `nil` if you do not want to receive a reply. This block has no return value and takes the following parameter: - **replyMessage**: A dictionary of property list values containing the response from the counterpart.
+- `errorHandler`: A block that is executed when an error occurs. Specify `nil` if you do not care about error information. This block has no return value and takes the following parameter: - **errorHandler**: An error object containing the reason for the failure. When sending messages, the most common error is that the paired device was not reachable, but other errors may occur too.
 
 ## See Also
 

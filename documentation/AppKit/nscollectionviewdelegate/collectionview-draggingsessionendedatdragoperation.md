@@ -24,7 +24,7 @@ You can use this method to perform tasks related to the ending of a drag session
 - `collectionView`: The collection view notifying your delegate object.
 - `session`: The dragging session that ended.
 - `screenPoint`: The end point (in screen coordinates) for the drag operation.
-- `operation`: The operation that was performed. Use this value to determine how the operation ended. For example, for content that was dragged to the trash, the operation type would be  .
+- `operation`: The operation that was performed. Use this value to determine how the operation ended. For example, for content that was dragged to the trash, the operation type would be [`delete`](nsdragoperation/delete.md).
 
 ## See Also
 

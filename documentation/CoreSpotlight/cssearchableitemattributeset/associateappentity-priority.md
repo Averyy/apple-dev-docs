@@ -26,8 +26,8 @@ For additional information about the relationship between searchable items and e
 
 ## Parameters
 
-- `appEntity`: The entity to associate with the attributes. Choose the entity with the   same data as the   that you’re creating.
-- `priority`: The importance of this item compared to other donated items. Give more important   items a higher priority value. The App Intents system uses priorities to determine what   items to show in suggestions and other places.
+- `appEntity`: The entity to associate with the attributes. Choose the entity with the same data as the [`CSSearchableItem`](cssearchableitem.md) that you’re creating.
+- `priority`: The importance of this item compared to other donated items. Give more important items a higher priority value. The App Intents system uses priorities to determine what items to show in suggestions and other places.
 
 
 ---

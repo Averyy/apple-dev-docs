@@ -29,8 +29,8 @@ When you call this function, two things happen:
 
 ## Parameters
 
-- `gray`: A value that specifies the desired gray level. The DeviceGray color space permits the specification of a value ranging from   (absolute black) to   (absolute white). Values outside this range are clamped to   or  .
-- `alpha`: A value that specifies the opacity level. Values can range from   (transparent) to   (opaque). Values outside this range are clipped to   or  .
+- `gray`: A value that specifies the desired gray level. The DeviceGray color space permits the specification of a value ranging from `0.0` (absolute black) to `1.0` (absolute white). Values outside this range are clamped to `0.0` or `1.0`.
+- `alpha`: A value that specifies the opacity level. Values can range from `0.0` (transparent) to `1.0` (opaque). Values outside this range are clipped to `0.0` or `1.0`.
 
 ## See Also
 

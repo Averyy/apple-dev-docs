@@ -36,7 +36,7 @@ This is the opposite of `MLTensor.init(stacking:alongAxis:)`.
 
 ## Parameters
 
-- `axis`: The dimension along which to unstack. The   must be in the range  .
+- `axis`: The dimension along which to unstack. The `axis` must be in the range `[-rank, rank)`.
 
 
 ---

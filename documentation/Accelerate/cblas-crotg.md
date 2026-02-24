@@ -28,10 +28,10 @@ Given a vertical matrix containing `a` and `b`, computes the values of `cos θ` 
 
 ## Parameters
 
-- `A`: Complex value  . Overwritten on output.
-- `B`: Complex value  .
-- `C`: Real value  . Unused on entry. Overwritten on return with the value  .
-- `S`: Complex value  . Unused on entry. Overwritten on return with the value  .
+- `A`: Complex value `a`. Overwritten on output.
+- `B`: Complex value `a`.
+- `C`: Real value `c`. Unused on entry. Overwritten on return with the value `cos(θ)`.
+- `S`: Complex value `s`. Unused on entry. Overwritten on return with the value `sin(θ)`.
 
 ## See Also
 

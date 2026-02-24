@@ -35,7 +35,7 @@ This method returns `nil` if the specified player is invalid or has no available
 
 ## Parameters
 
-- `player`: The player for whom the strategist should plan a move. This object must be in the current game model’s   array.
+- `player`: The player for whom the strategist should plan a move. This object must be in the current game model’s [`players`](gkgamemodel/players.md) array.
 
 ## See Also
 

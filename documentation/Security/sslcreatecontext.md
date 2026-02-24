@@ -27,9 +27,9 @@ A new context. In Objective-C, use [`CFRelease`](https://developer.apple.com/doc
 
 ## Parameters
 
-- `alloc`: The allocator to use. Pass   or   to use the default allocator.
-- `protocolSide`: Either   or  .
-- `connectionType`: Either   or  .
+- `alloc`: The allocator to use. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the default allocator.
+- `protocolSide`: Either [`SSLProtocolSide.serverSide`](sslprotocolside/serverside.md) or [`SSLProtocolSide.clientSide`](sslprotocolside/clientside.md).
+- `connectionType`: Either [`SSLConnectionType.streamType`](sslconnectiontype/streamtype.md) or [`SSLConnectionType.datagramType`](sslconnectiontype/datagramtype.md).
 
 
 ---

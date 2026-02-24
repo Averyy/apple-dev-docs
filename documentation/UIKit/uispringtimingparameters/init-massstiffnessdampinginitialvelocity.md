@@ -28,10 +28,10 @@ The damping ratio for the spring is computed from the formula `damping` / (2 * s
 
 ## Parameters
 
-- `mass`: The effective mass of the animated property. This value must be greater than  .
+- `mass`: The effective mass of the animated property. This value must be greater than `0`.
 - `stiffness`: The spring stiffness coefficient. Higher values correspond to a stiffer spring that yields a greater amount of force for moving objects.
 - `damping`: The damping force to apply to the spring’s motion. This value is used to compute the damping ratio.
-- `velocity`: For details about how to calculate this velocity, see  .
+- `velocity`: The target property’s initial rate of change at the start of the spring animation. If the target property doesn’t change, specify a vector with `dx` and `dy` components of `0`. For details about how to calculate this velocity, see [`initialVelocity`](uispringtimingparameters/initialvelocity.md).
 
 ## See Also
 

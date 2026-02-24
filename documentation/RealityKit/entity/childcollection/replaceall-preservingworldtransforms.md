@@ -23,7 +23,7 @@ Removes all children from this entity and adds the specified list of entities as
 ## Parameters
 
 - `children`: The list of the new children.
-- `preservingWorldTransforms`:   to preserve the world transform.   to   preserve the relative transform. (Use   if the   entities should keep its effective location and size in   the scene!)
+- `preservingWorldTransforms`: `true` to preserve the world transform. `false` to preserve the relative transform. (Use `true` if the entities should keep its effective location and size in the scene!)
 
 
 ---

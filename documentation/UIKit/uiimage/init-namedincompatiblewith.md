@@ -41,8 +41,8 @@ In iOS 9 and later, this method is thread safe.
 ## Parameters
 
 - `name`: The name of the image asset or file.
-- `bundle`: The bundle containing the image file or asset catalog. Specify   to search the app’s main bundle.
-- `traitCollection`: The traits associated with the intended environment for the image. Use this parameter to ensure that the system loads the correct variant of the image. If you specify  , this method uses the traits associated with the main screen.
+- `bundle`: The bundle containing the image file or asset catalog. Specify `nil` to search the app’s main bundle.
+- `traitCollection`: The traits associated with the intended environment for the image. Use this parameter to ensure that the system loads the correct variant of the image. If you specify `nil`, this method uses the traits associated with the main screen.
 
 ## See Also
 

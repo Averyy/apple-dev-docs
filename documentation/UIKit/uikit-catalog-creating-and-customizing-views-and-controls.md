@@ -215,7 +215,7 @@ override func viewDidLoad() {
 
 ##### Add a Page Control Interface
 
-Use a `UIPageControl` to structure an app’s user interface. A  is a specialized control that displays a horizontal series of dots, each of which corresponds to a page in the app’s document or other data-model entity. Customize a page control by setting its tint color for all the page-indicator dots, and for the current page-indicator dot.
+Use a `UIPageControl` to structure an app’s user interface. A *page control* is a specialized control that displays a horizontal series of dots, each of which corresponds to a page in the app’s document or other data-model entity. Customize a page control by setting its tint color for all the page-indicator dots, and for the current page-indicator dot.
 
 The `configurePageControl` function sets up a customized page control:
 

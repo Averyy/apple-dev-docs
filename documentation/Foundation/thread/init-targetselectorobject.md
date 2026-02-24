@@ -30,9 +30,9 @@ The objects `target` and `argument` are retained during the execution of the det
 
 ## Parameters
 
-- `target`: The object to which the message specified by   is sent.
-- `selector`: The selector for the message to send to  . This selector must take only one argument and must not have a return value.
-- `argument`: The single argument passed to the target. May be  .
+- `target`: The object to which the message specified by `selector` is sent.
+- `selector`: The selector for the message to send to `target`. This selector must take only one argument and must not have a return value.
+- `argument`: The single argument passed to the target. May be `nil`.
 
 ## See Also
 

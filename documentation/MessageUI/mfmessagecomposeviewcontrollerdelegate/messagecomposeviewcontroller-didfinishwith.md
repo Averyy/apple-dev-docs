@@ -27,7 +27,7 @@ Implementation of this method is required.
 ## Parameters
 
 - `controller`: The message composition view controller that is returning the result.
-- `result`: A result code that indicates how the user chose to complete the composition. See the   enumeration.
+- `result`: A result code that indicates how the user chose to complete the composition. See the [`MessageComposeResult`](messagecomposeresult.md) enumeration.
 
 ## See Also
 

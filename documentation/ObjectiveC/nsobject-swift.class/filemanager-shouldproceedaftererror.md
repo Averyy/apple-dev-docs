@@ -27,7 +27,11 @@ An `NSFileManager` object, `manager`, sends this message for each error it encou
 ## Parameters
 
 - `fm`: The file manager that sent this message.
-- `errorInfo`: A dictionary that contains two or three pieces of information (all   objects) related to the error:
+- `errorInfo`: A dictionary that contains two or three pieces of information (all [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects) related to the error: | Key | Value |
+| --- | --- |
+| `@"Path"` | The path related to the error (usually the source path) |
+| `@"Error"` | A description of the error |
+| `@"ToPath"` | The destination path (not all errors) |
 
 ## See Also
 

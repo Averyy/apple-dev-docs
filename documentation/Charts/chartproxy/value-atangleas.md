@@ -26,7 +26,7 @@ The data value at the given position.
 
 ## Parameters
 
-- `angle`: The angle, relative to the plot center, where the 12 o’clock position is interpreted as zero   degrees, increasing clockwise.
+- `angle`: The angle, relative to the plot center, where the 12 o’clock position is interpreted as zero degrees, increasing clockwise.
 
 
 ---

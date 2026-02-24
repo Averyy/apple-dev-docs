@@ -30,9 +30,9 @@ The callback function for a CFHost object is called one or more times when an as
 ## Parameters
 
 - `theHost`: The host for which an asynchronous resolution has been completed.
-- `typeInfo`: Value of type   representing the type of information (addresses, names, or reachability information) obtained by the completed resolution. See   for possible values.
-- `error`: If the resolution failed, contains a   structure whose   field contains an error code.
-- `info`: User-defined context information. The value pointed to by   is the same as the value pointed to by the   field of the   structure that was provided when the host was associated with this callback function.
+- `typeInfo`: Value of type `CFHostInfoType` representing the type of information (addresses, names, or reachability information) obtained by the completed resolution. See [`CFHostInfoType`](cfhostinfotype.md) for possible values.
+- `error`: If the resolution failed, contains a [`CFStreamError`](https://developer.apple.com/documentation/CoreFoundation/CFStreamError) structure whose `error` field contains an error code.
+- `info`: User-defined context information. The value pointed to by `info` is the same as the value pointed to by the `info` field of the [`CFHostClientContext`](cfhostclientcontext.md) structure that was provided when the host was associated with this callback function.
 
 ## See Also
 

@@ -24,7 +24,7 @@ A new bar button item appearance object containing the default appearances for t
 
 ## Parameters
 
-- `style`: The button style. UIKit uses this value to configure the default appearance attributes. For a list of possible values, see  .
+- `style`: The button style. UIKit uses this value to configure the default appearance attributes. For a list of possible values, see [`UIBarButtonItem.Style`](uibarbuttonitem/style-swift.enum.md).
 
 ## See Also
 

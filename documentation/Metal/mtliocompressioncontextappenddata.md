@@ -21,7 +21,7 @@ func MTLIOCompressionContextAppendData(_ context: MTLIOCompressionContext, _ dat
 
 ## Parameters
 
-- `context`: An   instance that you create with the   function.
+- `context`: An [`MTLIOCompressionContext`](mtliocompressioncontext.md) instance that you create with the [`MTLIOCreateCompressionContext(_:_:_:)`](mtliocreatecompressioncontext(_:_:_:).md) function.
 - `data`: A pointer to memory that contains the data the function adds to the compression context.
 - `size`: The number of bytes the function adds to the compression context from the data pointer.
 

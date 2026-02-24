@@ -20,7 +20,7 @@ func updateEvents(_ events: [HMEvent]) async throws
 ## Parameters
 
 - `events`: An array of events that replaces the events on the trigger.
-- `completion`: The block takes the following parameter:
+- `completion`: A block that executes after processing the request. The block takes the following parameter: - **error**: If the request was successful, the value of `error` is `nil`; otherwise, the value provides more information about the request status.
 
 ## See Also
 

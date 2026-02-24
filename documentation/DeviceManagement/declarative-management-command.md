@@ -29,6 +29,51 @@ The server uses this command to turn on the declarative management engine on the
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>CommandUUID</key>
+        <string>0001_DeclarativeManagement</string>
+        <key>Command</key>
+        <dict>
+            <key>RequestType</key>
+            <string>DeclarativeManagement</string>
+            <key>Data</key>
+            <data>
+            eyJTeW5jVG9rZW5zIjogeyJUaW1lc3RhbXAiOiAiMjAyMS0wNi0wMlQwMToy
+            ODowMFoiLCAiRGVjbGFyYXRpb25zVG9rZW4iOiAiYjY1NDQwMjdhMzE1Y2Qw
+            MDg1ZDRjZjA4MTc0NjI0YzJkMTQyNDQ0ODA0MzBhODdiMTc2YTI3MjdlNzM2
+            NjEzOCJ9fQ==
+            </data>
+        </dict>
+    </dict>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_DeclarativeManagement</string>
+    <key>EnrollmentID</key>
+    <string>8DB29EAB-A5BB-4B60-8DDA-F75517766FAC</string>
+    <key>Status</key>
+    <string>Acknowledged</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -36,6 +81,10 @@ The server uses this command to turn on the declarative management engine on the
   The command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 - [object DeclarativeManagementResponse](declarativemanagementresponse.md)
   A response from the device after it processes the command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

@@ -35,8 +35,8 @@ The returned `NSString` object contains the string representations of each of th
 
 ## Parameters
 
-- `locale`: An   object or an   object that specifies options used for formatting each of the array’s elements (where recognized). Specify   if you don’t want the elements formatted.
-- `level`: Specifies a level of indentation, to make the output more readable: the indentation is (4 spaces) *  .
+- `locale`: An [`NSLocale`](nslocale.md) object or an `NSDictionary` object that specifies options used for formatting each of the array’s elements (where recognized). Specify `nil` if you don’t want the elements formatted.
+- `level`: Specifies a level of indentation, to make the output more readable: the indentation is (4 spaces) * `level`.
 
 ## See Also
 

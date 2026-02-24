@@ -26,9 +26,9 @@ A new mutable set, or `NULL` if there was a problem creating the object. Ownersh
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new set and its storage for values. Pass   or   to use the current default allocator.
-- `capacity`: Pass   to specify that the maximum capacity is not limited. The value must not be negative.
-- `callBacks`: If the collection contains CFType objects only, then pass   as this parameter to use the default callback functions.
+- `allocator`: The allocator to use to allocate memory for the new set and its storage for values. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `capacity`: The maximum number of values that can be contained by the new set. The set starts empty and can grow to this number of values (and it can have less). Pass `0` to specify that the maximum capacity is not limited. The value must not be negative.
+- `callBacks`: A pointer to a [`CFSetCallBacks`](cfsetcallbacks.md) structure initialized with the callbacks to use to retain, release, describe, and compare values in the set. A copy of the contents of the callbacks structure is made, so that a pointer to a structure on the stack can be passed in or can be reused for multiple collection creations. This parameter may be `NULL`, which is treated as if a valid structure of version `0` with all fields `NULL` had been passed in. If any of the fields are not valid pointers to functions of the correct type, or this parameter is not a valid pointer to a `CFSetCallBacks` structure, the behavior is undefined. If any value put into the collection is not one understood by one of the callback functions, the behavior when that callback function is used is undefined. If the collection contains CFType objects only, then pass [`kCFTypeSetCallBacks`](kcftypesetcallbacks.md) as this parameter to use the default callback functions.
 
 ## See Also
 

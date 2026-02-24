@@ -15,7 +15,7 @@ typealias FFState = UInt32
 
 #### Discussion
 
-Device state flags returned by .
+Device state flags returned by **FFDeviceGetForceFeedbackState()**.
 
 ## See Also
 

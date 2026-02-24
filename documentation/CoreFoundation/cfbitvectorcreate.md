@@ -26,8 +26,8 @@ A new bit vector. Ownership follows the [`The Create Rule`](https://developer.ap
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new bit vector. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `bytes`: A pointer to the bit values to store in the new bit vector. The values are copied into the bit vector’s own memory. The bit indices are numbered left-to-right with   being the left-most, or most-significant, bit in the byte stream.
+- `allocator`: The allocator to use to allocate memory for the new bit vector. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `bytes`: A pointer to the bit values to store in the new bit vector. The values are copied into the bit vector’s own memory. The bit indices are numbered left-to-right with `0` being the left-most, or most-significant, bit in the byte stream.
 - `numBits`: The number of bits in the bit vector.
 
 ## See Also

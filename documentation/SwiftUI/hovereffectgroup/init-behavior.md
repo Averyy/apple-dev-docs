@@ -21,7 +21,7 @@ A new HoverEffectGroup
 ## Parameters
 
 - `namespace`: The namespace that identifies the group.
-- `behavior`: How the effect will behave relative to other   effects in the group.
+- `behavior`: How the effect will behave relative to other effects in the group.
 
 
 ---

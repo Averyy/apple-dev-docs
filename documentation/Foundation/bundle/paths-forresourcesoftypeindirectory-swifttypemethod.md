@@ -32,7 +32,7 @@ This method provides a means for dynamically discovering multiple bundle resourc
 
 ## Parameters
 
-- `ext`: If you specify an empty string or  , the extension is assumed not to exist and all of the files in   are returned.
+- `ext`: The filename extension of the files to locate. If you specify an empty string or `nil`, the extension is assumed not to exist and all of the files in `bundlePath` are returned.
 - `bundlePath`: The top-level directory of a bundle. This must represent a valid path.
 
 ## See Also

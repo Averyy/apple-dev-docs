@@ -26,7 +26,7 @@ A [`JSType`](jstype.md) value that identifies the value’s type.
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `value`: The   with the type you want to obtain.
+- `value`: The [`JSValueRef`](jsvalueref.md) with the type you want to obtain.
 
 ## See Also
 

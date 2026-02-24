@@ -22,7 +22,7 @@ func initialMaxBidirectionalStreams(_ initialMaxStreamsBidi: Int) -> QUIC
 
 ## Parameters
 
-- `initialMaxStreamsBidi`: The value to use for the    transport parameter on a QUIC   connection.
+- `initialMaxStreamsBidi`: The value to use for the `initial_max_streams_bidi` transport parameter on a QUIC connection.
 
 
 ---

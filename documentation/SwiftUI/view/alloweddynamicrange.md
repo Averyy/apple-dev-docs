@@ -34,7 +34,7 @@ MyView().allowedDynamicRange(.high)
 
 ## Parameters
 
-- `range`: The requested dynamic range, or nil to   restore the default allowed range.
+- `range`: The requested dynamic range, or nil to restore the default allowed range.
 
 ## See Also
 

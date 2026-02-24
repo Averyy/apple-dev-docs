@@ -23,7 +23,58 @@ class NSCollectionLayoutDecorationItem
 
 Each type of decoration item must have a unique element kind. Consider tracking these strings together in a way that makes it straightforward to identify each element, for example:
 
+**Swift**:
+
+```swift
+struct ElementKind {
+    static let badge = "badge-element-kind"
+    static let background = "background-element-kind"
+    static let sectionHeader = "section-header-element-kind"
+    static let sectionFooter = "section-footer-element-kind"
+    static let layoutHeader = "layout-header-element-kind"
+    static let layoutFooter = "layout-footer-element-kind"
+}
+```
+
+**Objective-C**:
+
+```objc
+NSString* const ELEMENT_KIND_BADGE = @"badge-element-kind";
+NSString* const ELEMENT_KIND_BACKGROUND = @"background-element-kind";
+NSString* const ELEMENT_KIND_SECTION_HEADER = @"section-header-element-kind";
+NSString* const ELEMENT_KIND_SECTION_FOOTER = @"section-footer-element-kind";
+NSString* const ELEMENT_KIND_LAYOUT_HEADER = @"layout-header-element-kind";
+NSString* const ELEMENT_KIND_LAYOUT_FOOTER = @"layout-footer-element-kind";
+```
+
 Add a background to a section by setting that section’s [`decorationItems`](nscollectionlayoutsection/decorationitems.md) property:
+
+**Swift**:
+
+```swift
+let sectionBackground = NSCollectionLayoutDecorationItem.background(
+        elementKind: ElementKind.background)
+
+section.decorationItems = [sectionBackground]
+
+let layout = UICollectionViewCompositionalLayout(section: section)
+layout.register(
+    SectionBackgroundDecorationView.self,
+    forDecorationViewOfKind: ElementKind.background)
+return layout
+```
+
+**Objective-C**:
+
+```objc
+NSCollectionLayoutDecorationItem *sectionBackground = [NSCollectionLayoutDecorationItem backgroundDecorationItemWithElementKind: ELEMENT_KIND_BACKGROUND];
+
+[section setDecorationItems: @[sectionBackground]];
+
+UICollectionViewCompositionalLayout *layout = [[UICollectionViewCompositionalLayout alloc] initWithSection: section];
+[layout registerClass: [SectionBackgroundDecorationView class] forDecorationViewOfKind: ELEMENT_KIND_BACKGROUND];
+return layout;
+```
 
 ## Topics
 

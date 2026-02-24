@@ -17,7 +17,7 @@ func setSubmenu(_ menu: NSMenu?, for item: NSMenuItem)
 ## Parameters
 
 - `menu`: A menu object that is to be a submenu of the menu.
-- `item`: A menu item (that is, an object conforming to the NSMenuItem protocol) that controls  . The method sets the action of   to   .
+- `item`: A menu item (that is, an object conforming to the NSMenuItem protocol) that controls `aMenu`. The method sets the action of `anItem` to  [`submenuAction(_:)`](nsmenu/submenuaction(_:).md).
 
 ## See Also
 

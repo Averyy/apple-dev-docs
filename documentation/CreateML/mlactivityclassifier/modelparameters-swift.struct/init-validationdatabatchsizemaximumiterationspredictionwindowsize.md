@@ -16,10 +16,10 @@ init(validationData: MLActivityClassifier.DataSource, batchSize: Int? = 32, maxi
 
 ## Parameters
 
-- `validationData`: An   instance that contains a validation dataset.
+- `validationData`: An [`MLActivityClassifier.DataSource`](mlactivityclassifier/datasource.md) instance that contains a validation dataset.
 - `batchSize`: The number of activity entries the training session uses for each of its training iterations.
 - `maximumIterations`: The largest number of training iterations the training session can use.
-- `predictionWindowSize`: The number of time increments the training session uses to train an activity   classifier.
+- `predictionWindowSize`: The number of time increments the training session uses to train an activity classifier.
 
 ## See Also
 

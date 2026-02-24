@@ -7,7 +7,7 @@ A 32-bit field that indicates the file format specification version.
 
 #### Overview
 
-For QuickTime movie files, this takes the form of four binary-coded decimal values, indicating the century, year, and month of the , followed by a binary coded decimal zero. For example, for the June 2004 minor version, this field is set to the BCD values `20 04 06 00`.
+For QuickTime movie files, this takes the form of four binary-coded decimal values, indicating the century, year, and month of the *QuickTime File Format Specification*, followed by a binary coded decimal zero. For example, for the June 2004 minor version, this field is set to the BCD values `20 04 06 00`.
 
 ## See Also
 

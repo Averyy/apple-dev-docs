@@ -34,7 +34,41 @@ What follows are a set of graduated examples for using the `NSRegularExpression`
 
 This snippet creates a regular expression to match two-letter words, in which the first letter is “a” or “b” and the second letter is “c” or “d”. Specifying [`caseInsensitive`](nsregularexpression/options-swift.struct/caseinsensitive.md) means that matches will be case-insensitive, so this will match “BC”, “aD”, and so forth, as well as their lower-case equivalents.
 
+**Swift**:
+
+```swift
+do {
+    let regex = try NSRegularExpression(pattern: "\\b(a|b)(c|d)\\b", options: .caseInsensitive)
+} catch let error as NSError {
+    print("Error creating NSRegularExpression: \(error)")
+}
+```
+
+**Objective-C**:
+
+```objc
+NSError *error = NULL;
+NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"\\b(a|b)(c|d)\\b"
+                                                                       options:NSRegularExpressionCaseInsensitive
+                                                                         error:&error];
+```
+
 The [`numberOfMatches(in:options:range:)`](nsregularexpression/numberofmatches(in:options:range:).md) method provides a simple mechanism for counting the number of matches in a given range of a string.
+
+**Swift**:
+
+```swift
+let numberOfMatches = regex.numberOfMatches(in: string, options: [], range: NSRange(location: 0, length: string.utf16.count))
+
+```
+
+**Objective-C**:
+
+```objc
+NSUInteger numberOfMatches = [regex numberOfMatchesInString:string
+                                                    options:0
+                                                      range:NSMakeRange(0, [string length])];
+```
 
 If you are interested only in the overall range of the first match, the [`rangeOfFirstMatch(in:options:range:)`](nsregularexpression/rangeoffirstmatch(in:options:range:).md) method provides it for you.  Some regular expressions (though not the example pattern) can successfully match a zero-length range, so the comparison of the resulting range with `{NSNotFound, 0}` is the most reliable way to determine whether there was a match or not.
 
@@ -42,15 +76,127 @@ The example regular expression contains two capture groups, corresponding to the
 
 If the result returned is non-`nil`, then `[result range]` will always be a valid range, so it is not necessary to compare it against `{NSNotFound, 0}`.  However, for some regular expressions (though not the example pattern) some capture groups may or may not participate in a given match.  If a given capture group does not participate in a given match, then `[result rangeAtIndex:idx]` will return `{NSNotFound, 0}`.
 
+**Swift**:
+
+```swift
+let rangeOfFirstMatch = regex.rangeOfFirstMatch(in: string, options: [], range: NSRange(location: 0, length: string.utf16.count))
+if rangeOfFirstMatch.location != NSNotFound {
+     let substringForFirstMatch = (string as NSString).substring(with: rangeOfFirstMatch)
+}
+```
+
+**Objective-C**:
+
+```objc
+NSRange rangeOfFirstMatch = [regex rangeOfFirstMatchInString:string options:0 range:NSMakeRange(0, [string length])];
+if (!NSEqualRanges(rangeOfFirstMatch, NSMakeRange(NSNotFound, 0))) {
+    NSString *substringForFirstMatch = [string substringWithRange:rangeOfFirstMatch];
+}
+```
+
 The [`matches(in:options:range:)`](nsregularexpression/matches(in:options:range:).md) returns all the matching results.
 
+**Swift**:
+
+```swift
+let matches = regex.matches(in: string, options: [], range: NSRange(location: 0, length: string.utf16.count))
+ for match in matches {
+     let matchRange = match.range
+     let firstHalfRange = match.range(at: 1)
+     let secondHalfRange = match.range(at: 2)
+ }
+ 
+```
+
+**Objective-C**:
+
+```objc
+NSArray *matches = [regex matchesInString:string
+                                  options:0
+                                    range:NSMakeRange(0, [string length])];
+for (NSTextCheckingResult *match in matches) {
+     NSRange matchRange = [match range];
+     NSRange firstHalfRange = [match rangeAtIndex:1];
+     NSRange secondHalfRange = [match rangeAtIndex:2];
+}
+```
+
 The [`firstMatch(in:options:range:)`](nsregularexpression/firstmatch(in:options:range:).md) method is similar to [`matches(in:options:range:)`](nsregularexpression/matches(in:options:range:).md) but it returns only the first match.
+
+**Swift**:
+
+```swift
+if let match = regex.firstMatch(in: string, options: [], range: NSRange(location: 0, length: string.utf16.count)) {
+    let matchRange = match.range
+    let firstHalfRange = match.range(at: 1)
+    let secondHalfRange = match.range(at: 2)
+}
+```
+
+**Objective-C**:
+
+```objc
+NSTextCheckingResult *match = [regex firstMatchInString:string
+                                                options:0
+                                                  range:NSMakeRange(0, [string length])];
+if (match) {
+    NSRange matchRange = [match range];
+    NSRange firstHalfRange = [match rangeAtIndex:1];
+    NSRange secondHalfRange = [match rangeAtIndex:2];
+ }
+ 
+```
 
 The Block enumeration method [`enumerateMatches(in:options:range:using:)`](nsregularexpression/enumeratematches(in:options:range:using:).md) is the most general and flexible of the matching methods of `NSRegularExpression`.  It allows you to iterate through matches in a string, performing arbitrary actions on each as specified by the code in the Block and to stop partway through if desired.  In the following example case, the iteration is stopped after a certain number of matches have been found.
 
 If neither of the special options [`reportProgress`](nsregularexpression/matchingoptions/reportprogress.md) or [`reportCompletion`](nsregularexpression/matchingoptions/reportcompletion.md) is specified, then the result argument to the Block is guaranteed to be non-`nil`, and as mentioned before, it is guaranteed to have a valid overall range.  See [`NSRegularExpression.MatchingOptions`](nsregularexpression/matchingoptions.md) for the significance of [`reportProgress`](nsregularexpression/matchingoptions/reportprogress.md) or [`reportCompletion`](nsregularexpression/matchingoptions/reportcompletion.md).
 
+**Swift**:
+
+```swift
+var count = 0
+regex.enumerateMatches(in: string, options: [], range: NSRange(location: 0, length: string.utf16.count)) { match, flags, stop in
+     guard let match = match else { return }
+
+     let matchRange = match.range
+     let firstHalfRange = match.range(at: 1)
+     let secondHalfRange = match.range(at: 2)
+     count += 1
+     if count >= 100 {
+         stop = true
+     }
+}
+```
+
+**Objective-C**:
+
+```objc
+__block NSUInteger count = 0;
+[regex enumerateMatchesInString:string options:0 range:NSMakeRange(0, [string length]) usingBlock:^(NSTextCheckingResult *match, NSMatchingFlags flags, BOOL *stop){
+     NSRange matchRange = [match range];
+     NSRange firstHalfRange = [match rangeAtIndex:1];
+     NSRange secondHalfRange = [match rangeAtIndex:2];
+     if (++count >= 100) *stop = YES;
+}];
+```
+
 `NSRegularExpression` also provides simple methods for performing find-and-replace operations on a string.  The following example returns a modified copy, but there is a corresponding method for modifying a mutable string in place.  The template specifies what is to be used to replace each match, with `$0` representing the contents of the overall matched range, `$1` representing the contents of the first capture group, and so on.  In this case, the template reverses the two letters of the word.
+
+**Swift**:
+
+```swift
+let modifiedString = regex.stringByReplacingMatches(in: string, options: [], range: NSRange(location: 0, length: string.utf16.count), withTemplate: "$2$1")
+ 
+```
+
+**Objective-C**:
+
+```objc
+NSString *modifiedString = [regex stringByReplacingMatchesInString:string
+                                                           options:0
+                                                             range:NSMakeRange(0, [string length])
+                                                      withTemplate:@"$2$1"];
+```
 
 ##### Concurrency and Thread Safety
 
@@ -79,26 +225,26 @@ Table 1: Character sequences used to match characters within a string.
 | `\f` | Match a FORM FEED, `\u000C`. |
 | `\G` | Match if the current position is at the end of the previous match. |
 | `\n` | Match a `LINE FEED`, `\u000A`. |
-| `\N{``}` | Match the named character. |
-| `\p{``}` | Match any character with the specified Unicode Property. |
-| `\P{``}` | Match any character not having the specified Unicode Property. |
+| `\N{`*UNICODE CHARACTER NAME*`}` | Match the named character. |
+| `\p{`*UNICODE PROPERTY NAME*`}` | Match any character with the specified Unicode Property. |
+| `\P{`*UNICODE PROPERTY NAME*`}` | Match any character not having the specified Unicode Property. |
 | `\Q` | Quotes all following characters until `\E`. |
 | `\r` | Match a CARRIAGE RETURN, \u000D. |
 | `\s` | Match a white space character. White space is defined as [\t\n\f\r\p{Z}]. |
 | `\S` | Match a non-white space character. |
 | `\t` | Match a HORIZONTAL TABULATION, `\u0009`. |
-| `\u` | Match the character with the hex value . |
-| `\U` | Match the character with the hex value . Exactly eight hex digits must be provided, even though the largest Unicode code point is `\U0010ffff`. |
+| `\u`*hhhh* | Match the character with the hex value *hhhh*. |
+| `\U`*hhhhhhhh* | Match the character with the hex value *hhhhhhhh*. Exactly eight hex digits must be provided, even though the largest Unicode code point is `\U0010ffff`. |
 | `\w` | Match a word character. Word characters are [\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}]. |
 | `\W` | Match a non-word character. |
-| `\x{``}` | Match the character with hex value . From one to six hex digits may be supplied. |
-| `\x` | Match the character with two digit hex value . |
+| `\x{`*hhhh*`}` | Match the character with hex value *hhhh*. From one to six hex digits may be supplied. |
+| `\x`*hh* | Match the character with two digit hex value *hh*. |
 | `\X` | Match a Grapheme Cluster. |
 | `\Z` | Match if the current position is at the end of input, but before the final line terminator, if one exists. |
 | `\z` | Match if the current position is at the end of input. |
-| `\` | Back Reference. Match whatever the _n_th capturing group matched.  must be a number `≥ 1` and `≤` total number of capture groups in the pattern. |
-| `\0` | Match an Octal character.   is from one to three octal digits.  `0377` is the largest allowed Octal character.  The leading zero is required; it distinguishes Octal constants from back references. |
-| `[``]` | Match any one character from the pattern. |
+| `\`*n* | Back Reference. Match whatever the _n_th capturing group matched. *n* must be a number `≥ 1` and `≤` total number of capture groups in the pattern. |
+| `\0`*ooo* | Match an Octal character.  *ooo* is from one to three octal digits.  `0377` is the largest allowed Octal character.  The leading zero is required; it distinguishes Octal constants from back references. |
+| `[`*pattern*`]` | Match any one character from the pattern. |
 | `.` | Match any character. See [`dotMatchesLineSeparators`](nsregularexpression/options-swift.struct/dotmatcheslineseparators.md) and the `s` character expression in Table 4. |
 | `^` | Match at the beginning of a line. See [`anchorsMatchLines`](nsregularexpression/options-swift.struct/anchorsmatchlines.md) and the `\m` character expression in Table 4. |
 | `$` | Match at the end of a line. See [`anchorsMatchLines`](nsregularexpression/options-swift.struct/anchorsmatchlines.md) and the `m` character expression in Table 4. |
@@ -114,24 +260,24 @@ Table 2: Regular expression operators.
 | `*` | Match `0` or more times. Match as many times as possible. |
 | `+` | Match `1` or more times. Match as many times as possible. |
 | `?` | Match zero or one times. Prefer one. |
-| `{``}` | Match exactly  times. |
-| `{``,}` | Match at least  times. Match as many times as possible. |
-| `{``,``}` | Match between  and  times. Match as many times as possible, but not more than . |
+| `{`*n*`}` | Match exactly *n* times. |
+| `{`*n*`,}` | Match at least *n* times. Match as many times as possible. |
+| `{`*n*`,`*m*`}` | Match between *n* and *m* times. Match as many times as possible, but not more than *m*. |
 | `*?` | Match `0` or more times. Match as few times as possible. |
 | `+?` | Match 1 or more times. Match as few times as possible. |
 | `??` | Match zero or one times. Prefer zero. |
-| `{``}?` | Match exactly n times. |
-| `{``,}?` | Match at least n times, but no more than required for an overall pattern match. |
-| `{``,``}?` | Match between n and m times. Match as few times as possible, but not less than n. |
+| `{`*n*`}?` | Match exactly n times. |
+| `{`*n*`,}?` | Match at least n times, but no more than required for an overall pattern match. |
+| `{`*n*`,`*m*`}?` | Match between n and m times. Match as few times as possible, but not less than n. |
 | `*+` | Match 0 or more times. Match as many times as possible when first encountered. Do not retry with fewer, even if overall match fails (possessive match). |
 | `++` | Match 1 or more times (possessive match). |
 | `?+` | Match zero or one times (possessive match). |
-| `{``}+` | Match exactly  times. |
-| `{``,}+` | Match at least  times (possessive match). |
-| `{``,``}+` | Match between  and  times (possessive match). |
-| `(``)` | Capturing parentheses. Range of input that matched the parenthesized subexpression is available after the match. |
-| `(?:``)` | Non-capturing parentheses. Groups the included pattern, but does not provide capturing of matching text. Somewhat more efficient than capturing parentheses. |
-| `(?>``)` | Atomic-match parentheses. First match of the parenthesized subexpression is the only one tried; if it does not lead to an overall pattern match, back up the search for a match to a position before the “`(?>`” |
+| `{`*n*`}+` | Match exactly *n* times. |
+| `{`*n*`,}+` | Match at least *n* times (possessive match). |
+| `{`*n*`,`*m*`}+` | Match between *n* and *m* times (possessive match). |
+| `(`*…*`)` | Capturing parentheses. Range of input that matched the parenthesized subexpression is available after the match. |
+| `(?:`*…*`)` | Non-capturing parentheses. Groups the included pattern, but does not provide capturing of matching text. Somewhat more efficient than capturing parentheses. |
+| `(?>`*…*`)` | Atomic-match parentheses. First match of the parenthesized subexpression is the only one tried; if it does not lead to an overall pattern match, back up the search for a match to a position before the “`(?>`” |
 | `(?# ... )` | Free-format comment `(?# comment )`. |
 | `(?= ... )` | Look-ahead assertion. True if the parenthesized pattern matches at the current input position, but does not advance the input position. |
 | `(?! ... )` | Negative look-ahead assertion. True if the parenthesized pattern does not match at the current input position. Does not advance the input position. |
@@ -148,7 +294,7 @@ Table 3: Find-and-replace syntax.
 
 | Character | Descriptions |
 | --- | --- |
-| `$` | The text of capture group n will be substituted for $.  must be `>= 0` and not greater than the number of capture groups. A `$` not followed by a digit has no special meaning, and will appear in the substitution text as itself, a `$`. |
+| `$`*n* | The text of capture group n will be substituted for $*n*. *n* must be `>= 0` and not greater than the number of capture groups. A `$` not followed by a digit has no special meaning, and will appear in the substitution text as itself, a `$`. |
 | `\` | Treat the following character as a literal, suppressing any special meaning. Backslash escaping in substitution text is only required for ‘$’ and ’', but may be used on any other character without bad effects. |
 
 The replacement string is treated as a template, with `$0` being replaced by the contents of the matched range, `$1` by the contents of the first capture group, and so on.  Additional digits beyond the maximum required to represent the number of capture groups will be treated as ordinary characters, as will a `$` not followed by digits.  Backslash will escape both `$` and `\`.

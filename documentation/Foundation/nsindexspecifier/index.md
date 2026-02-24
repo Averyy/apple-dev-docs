@@ -17,7 +17,7 @@ var index: Int { get set }
 
 ## Parameters
 
-- `index`: Value for the receiver’s   property.
+- `index`: Value for the receiver’s `index` property.
 
 
 ---

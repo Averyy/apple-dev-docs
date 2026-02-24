@@ -25,7 +25,7 @@ This initializer creates a [`Text`](text.md) view on your behalf, and treats the
 ## Parameters
 
 - `text`: The column’s label.
-- `value`: The path to the property associated with the column,   which will be used to update and reflect the sorting state in a   table.
+- `value`: The path to the property associated with the column, which will be used to update and reflect the sorting state in a table.
 - `content`: The view content to display for each row in a table.
 
 ## See Also

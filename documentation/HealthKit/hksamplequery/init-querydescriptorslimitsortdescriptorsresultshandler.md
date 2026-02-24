@@ -61,9 +61,11 @@ store.execute(query)
 ## Parameters
 
 - `queryDescriptors`: An array of descriptors that specify the types of samples that the query returns.
-- `limit`: The maximum number of samples that the query returns. If you want to return all matching samples, use  .
-- `sortDescriptors`: An array of sort descriptors that specify the order of the results that the query returns.
-- `resultsHandler`: This block takes the following parameters:
+- `limit`: The maximum number of samples that the query returns. If you want to return all matching samples, use [`HKObjectQueryNoLimit`](hkobjectquerynolimit.md).
+- `sortDescriptors`: An array of sort descriptors that specify the order of the results that the query returns. > **Note**:  HealthKit defines a number of sort identifiers (for example, [`HKSampleSortIdentifierStartDate`](hksamplesortidentifierstartdate.md) and [`HKWorkoutSortIdentifierDuration`](hkworkoutsortidentifierduration.md)). Use the sort descriptors you create with these identifiers only in queries. You can’t use them to perform an in-memory sort of an array of samples.
+- `resultsHandler`: A block that the HealthKit store calls after it finishes executing the query. This block takes the following parameters: - **`query`**: A reference to the query that called this block.
+- **`results`**: An array containing the samples that the query found, or `nil` if an error occurs.
+- **`error`**: If an error occurs, an object describing the error; otherwise, it’s `nil`.
 
 ## See Also
 

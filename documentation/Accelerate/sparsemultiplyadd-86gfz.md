@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Performs the multiply operation  on a sparse matrix of double-precision, floating-point values.
+Performs the multiply operation *Y += alpha * AX* on a sparse matrix of double-precision, floating-point values.
 
 **Availability**:
 - iOS 11.0+
@@ -84,19 +84,19 @@ yValues.withUnsafeMutableBufferPointer { yValuesPtr in
 
 ## Parameters
 
-- `alpha`: The scalar value   in  .
-- `A`: The sparse matrix   in    .
-- `X`: The dense matrix   in    .
-- `Y`: The dense matrix   in    .
+- `alpha`: The scalar value *alpha* in *Y += alpha * AX*.
+- `A`: The sparse matrix *A* in *Y* *+= AX*.
+- `X`: The dense matrix *X* in *Y* *+= AX*.
+- `Y`: The dense matrix *Y* in *Y* *+= AX*.
 
 ## See Also
 
 - [func SparseMultiplyAdd(SparseMatrix_Double, DenseMatrix_Double, DenseMatrix_Double)](sparsemultiplyadd(_:_:_:)-lgm5.md)
-  Performs the multiply operation  on a sparse matrix of double-precision, floating-point values.
+  Performs the multiply operation *Y += AX* on a sparse matrix of double-precision, floating-point values.
 - [func SparseMultiplyAdd(SparseMatrix_Float, DenseMatrix_Float, DenseMatrix_Float)](sparsemultiplyadd(_:_:_:)-8pgpq.md)
-  Performs the multiply operation  on a sparse matrix of single-precision, floating-point values.
+  Performs the multiply operation *Y += AX* on a sparse matrix of single-precision, floating-point values.
 - [func SparseMultiplyAdd(Float, SparseMatrix_Float, DenseMatrix_Float, DenseMatrix_Float)](sparsemultiplyadd(_:_:_:_:)-n61k.md)
-  Performs the multiply operation  on a sparse matrix of single-precision, floating-point values.
+  Performs the multiply operation *Y += alpha * AX* on a sparse matrix of single-precision, floating-point values.
 
 
 ---

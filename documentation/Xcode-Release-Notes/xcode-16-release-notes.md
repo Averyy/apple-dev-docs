@@ -44,8 +44,8 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### Known Issues
 
-- Xcode 16 beta 5 may crash when opening Source Editor if running macOS Sequoia, beta 4 or older.   (130609632)  Install macOS Sequoia beta 5.
-- Users that upgrade to Xcode 16 after having previously installed Xcode 16 Beta 6 or Xcode 16 RC may experience Developer Disk Image mounting errors when using iPhone 16 or Apple Watch Series 10 devices.  (136364979) (FB15189777)  Open Terminal.app and run ```None
+- Xcode 16 beta 5 may crash when opening Source Editor if running macOS Sequoia, beta 4 or older.   (130609632) **Workaround:** Install macOS Sequoia beta 5.
+- Users that upgrade to Xcode 16 after having previously installed Xcode 16 Beta 6 or Xcode 16 RC may experience Developer Disk Image mounting errors when using iPhone 16 or Apple Watch Series 10 devices.  (136364979) (FB15189777) **Workaround:** Open Terminal.app and run ```None
  sudo installer -pkg /Applications/Xcode.app/Contents/Resources/Packages/XcodeSystemResources.pkg -target /
 ``` (replacing the path to Xcode 16 if necessary.)
 
@@ -245,7 +245,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### Known Issues
 
-- Xcode is sometimes unable to determine if developer mode is enabled when using a device over the network.  (131662031) (FB14298506)  Connect the device directly to the Mac using a USBC or Lightning cable, then place the device in airplane mode to force Xcode to use the deivce over the wired connection.  Once Xcode is successfully using the device over the wired connection, you can turn airplane mode back on, and Xcode will continue to use the wired connection.
+- Xcode is sometimes unable to determine if developer mode is enabled when using a device over the network.  (131662031) (FB14298506) **Workaround:** Connect the device directly to the Mac using a USBC or Lightning cable, then place the device in airplane mode to force Xcode to use the deivce over the wired connection.  Once Xcode is successfully using the device over the wired connection, you can turn airplane mode back on, and Xcode will continue to use the wired connection.
 - If Xcode is unable to determine the state of developer mode on a device, it will report that developer mode is disabled, possibly leading to confusion if developer mode is actually enabled.  (133418906)
 
 ##### Documentation
@@ -268,7 +268,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 ###### Resolved Issues
 
 - Fixed: If meeting both of the following scenarios, your app may crash on launch on platforms earlier than the latest versions of the respective OS with errors indicating missing symbols in `NSDecimal`: - You use any of the following `NSDecimal` functions in Swift
-- You release an app compiled with Xcode 16, and the app runs on an OS version earlier than macOS 15.0, iOS 18.0, tvOS 18.0, watchOS 11.0, or visionOS 2.0 Your app may also fail to compile if you use `NSDecimalString(_:_:)` in the app. : This does not affect apps calling these functions from Objective-C or apps running on the latest versions of the respective OS.  (133371820) (FB14696453)
+- You release an app compiled with Xcode 16, and the app runs on an OS version earlier than macOS 15.0, iOS 18.0, tvOS 18.0, watchOS 11.0, or visionOS 2.0 Your app may also fail to compile if you use `NSDecimalString(_:_:)` in the app. **Note**: This does not affect apps calling these functions from Objective-C or apps running on the latest versions of the respective OS.  (133371820) (FB14696453)
 
 ##### Instruments
 
@@ -300,7 +300,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 ###### Known Issues
 
 - UI State of the new call tree is not being saved in trace documents. (113659508)
-- When “Focus on Subtree” is used in the new call tree to focus a node, subsequent function applications are not possible. (116369374)  To apply functions again, remove all currently focused nodes using control in the “Jump Bar”.
+- When “Focus on Subtree” is used in the new call tree to focus a node, subsequent function applications are not possible. (116369374) **Workaround:** To apply functions again, remove all currently focused nodes using control in the “Jump Bar”.
 - “Top Functions” view is not available in the new call tree. (123702178)
 - Legacy call tree is still used in the following Instruments: Allocations, Leaks, CPU Counters when using arithmetic formulas, Sample Importer. (124118051)
 - Xcode Debugger fails to capture memory graph from processes running in watchOS Rosetta Simulator destinations.  (132023793)
@@ -405,7 +405,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### Known Issues
 
-- Logging does not appear in Xcode when debugging Capture Extensions when using “Attach to Process”.  (129785280)  Use “Attach to Process by PID or Name” in Xcode to debug Capture Extensions.
+- Logging does not appear in Xcode when debugging Capture Extensions when using “Attach to Process”.  (129785280) **Workaround:** Use “Attach to Process by PID or Name” in Xcode to debug Capture Extensions.
 - Apps launched via Lock Screen Quick Action buttons will not run the CameraCaptureIntent perform function.   (133404039)
 - Capture Extensions or apps launched via CameraCaptureIntent may erroneously crash with “AVCaptureEventInteraction not installed” reason  (133578610)
 
@@ -524,7 +524,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 ###### Resolved Issues
 
 - Fixed: Modifying animation action parameters may result in actions overlapping with other actions on the same animation track.  (124014280)
-- Fixed: Using the option  may results in a compilation failure of Reality Composer Pro projects.  (125624179)
+- Fixed: Using the option *Convert Variants to Configurations* may results in a compilation failure of Reality Composer Pro projects.  (125624179)
 - Fixed: Dragging an animation clip from an Animation Library component to a Timeline will result in the Play Animation action having an incorrect duration of 1 second.  (127395965)
 - Fixed: A Notification Action will not cause a Notification Trigger to fire, even if they use the same String value. Update to use the new property name, `RealityKit.NotificationTrigger.Identifier`, to be able to observe a Notification posted by a NotificationAction in your Reality Composer Pro Timeline. The identifier you provide in your Reality Composer Pro Timeline NotificationAction will be delivered in the Notification’s userInfo under the key `NotificationAction.identifierKey`.  (127825336)
 - Fixed: No warning is shown in cases where a Replace Behavior action is targeting an entity without a Behavior Component  (128011054)
@@ -542,8 +542,8 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 - Authoring light spill is not supported on Intel Macs.  (124170457)
 - Grounding shadow may be visible on the ground plane even if the grid hidden.  (127603652)
-- A Behavior that has a Notification trigger may not work if the notification is posted immediately after calling Entity.load().  (128506951)  Post the notification after a short delay.
-- Disabling and re-enabling the Docking Region component in Reality Composer Pro can cause the component width to not be editable  (133285221)  Either close and re-open Reality Composer Pro, or switch to a different scene tab and back
+- A Behavior that has a Notification trigger may not work if the notification is posted immediately after calling Entity.load().  (128506951) **Workaround:** Post the notification after a short delay.
+- Disabling and re-enabling the Docking Region component in Reality Composer Pro can cause the component width to not be editable  (133285221) **Workaround:** Either close and re-open Reality Composer Pro, or switch to a different scene tab and back
 
 ##### Realitykit Inspector
 
@@ -580,7 +580,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### Known Issues
 
-- On systems that do not have Internet access, Xcode cannot reach the index for SDK to Simulator runtime mapping information. This will cause Xcode to list current simulators as ‘Other Installed Platforms’ and consider the current platform as missing.  (135367176)  To download a copy of the latest index run: `curl -O https://devimages-cdn.apple.com/downloads/xcode/simulators/index2.dvtdownloadableindex` Then copy the index to the offline system and run the following command to set the index: `defaults write com.apple.dt.Xcode DVTDownloadableIndex <path/to/the/copied/index2.dvtdownloadableindex>` Remember to repeat this workaround when upgrading to newer simulator runtimes, or newer Xcode, on systems without Internet access.
+- On systems that do not have Internet access, Xcode cannot reach the index for SDK to Simulator runtime mapping information. This will cause Xcode to list current simulators as ‘Other Installed Platforms’ and consider the current platform as missing.  (135367176) **Workaround:** To download a copy of the latest index run: `curl -O https://devimages-cdn.apple.com/downloads/xcode/simulators/index2.dvtdownloadableindex` Then copy the index to the offline system and run the following command to set the index: `defaults write com.apple.dt.Xcode DVTDownloadableIndex <path/to/the/copied/index2.dvtdownloadableindex>` Remember to repeat this workaround when upgrading to newer simulator runtimes, or newer Xcode, on systems without Internet access.
 
 ##### Source Control
 
@@ -602,7 +602,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### Known Issues
 
-- Changes to `.editorconfig` are not reflected immediately in open files.  (120389049)  Quit and restart Xcode.
+- Changes to `.editorconfig` are not reflected immediately in open files.  (120389049) **Workaround:** Quit and restart Xcode.
 
 ##### Storekit
 
@@ -619,7 +619,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### Known Issues
 
-- The StoreKit Transaction Manager might be unresponsive when performing actions while an app is running in a debug session. The affected actions include: create a new purchase, send a purchase intent, and edit an active or expired subscription.  (126700294)  Close the transaction manager, detach the app from the current debug session by stopping the process in Xcode, then re-open the transaction manager. You can open and use the app as normal on your device or simulator and perform actions in the transaction manager as long as there is no active debug session.
+- The StoreKit Transaction Manager might be unresponsive when performing actions while an app is running in a debug session. The affected actions include: create a new purchase, send a purchase intent, and edit an active or expired subscription.  (126700294) **Workaround:** Close the transaction manager, detach the app from the current debug session by stopping the process in Xcode, then re-open the transaction manager. You can open and use the app as normal on your device or simulator and perform actions in the transaction manager as long as there is no active debug session.
 
 ##### Swift
 
@@ -776,7 +776,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
      } 
    }
 ``` See Swift Evolution proposal SE-429 for more details.  (126715654)
-- Swift 6 comes with a new language mode that prevents the risk of data races at compile time. This guarantee is accomplished through ; the compiler validates that data passed over a boundary between concurrently executing code is either safe to reference concurrently, or mutually exclusive access to the value is enforced.  The data-race safety checks were previously available in Swift 5.10 through the `-strict-concurrency=complete` compiler flag. Complete concurrency checking in Swift 5.10 was overly restrictive, and Swift 6 removes many false-positive data-race warnings through better `Sendable` inference, new analysis that proves mutually exclusive access when passing values with non-`Sendable` type over isolation boundaries, and more. You can enable the Swift 6 language mode using the `-swift-version 6` compiler flag.  (129020586)
+- Swift 6 comes with a new language mode that prevents the risk of data races at compile time. This guarantee is accomplished through *data isolation*; the compiler validates that data passed over a boundary between concurrently executing code is either safe to reference concurrently, or mutually exclusive access to the value is enforced.  The data-race safety checks were previously available in Swift 5.10 through the `-strict-concurrency=complete` compiler flag. Complete concurrency checking in Swift 5.10 was overly restrictive, and Swift 6 removes many false-positive data-race warnings through better `Sendable` inference, new analysis that proves mutually exclusive access when passing values with non-`Sendable` type over isolation boundaries, and more. You can enable the Swift 6 language mode using the `-swift-version 6` compiler flag.  (129020586)
 - Since its introduction in Swift 5.1 the `@TaskLocal` property wrapper was used to create and access task-local value bindings. Property wrappers introduce mutable storage, which was now properly flagged as potential source of concurrency unsafety. In order for Swift 6 language mode to not flag task-locals as potentially thread-unsafe, task locals are now implemented using a macro. The macro has the same general semantics and usage patterns, however there are two source-break situations which the Swift 6 task locals cannot handle: Using an implicit default `nil` value for task local initialization, when combined with a type alias: ```swift
    // allowed in Swift 5.x, not allowed in Swift 6.x
    
@@ -900,7 +900,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 - When a `let` binding inside of a function has a `~Copyable` type, and the initialization occurs after the declaration, then the compiler may either crash or raise a spurious “copy of noncopyable” error diagnostic: ```None
  let x: NonCopyableType
  x = NonCopyableType()
-``` (126774469)  Either refactor the code so that the `let` binding is immediately initialized in its declaration, or change the `let` into a `var` binding. ```None
+``` (126774469) **Workaround:** Either refactor the code so that the `let` binding is immediately initialized in its declaration, or change the `let` into a `var` binding. ```None
  let x = NonCopyableType()
  
  // or:
@@ -980,7 +980,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ###### Known Issues
 
-- Using `await confirmation {}` or `await withKnownIssue {}` with an actor-isolated closure fails to compile.  (134375046)  Pass an explicitly `@Sendable` closure to these functions.
+- Using `await confirmation {}` or `await withKnownIssue {}` with an actor-isolated closure fails to compile.  (134375046) **Workaround:** Pass an explicitly `@Sendable` closure to these functions.
 
 ##### Textureconverter
 

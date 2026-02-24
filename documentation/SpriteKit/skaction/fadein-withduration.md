@@ -30,6 +30,18 @@ When the action executes, the node’s [`alpha`](sknode/alpha.md) property anima
 
 This action is reversible; the reverse is created as if the following code is executed:
 
+**Swift**:
+
+```swift
+let action = SKAction.fadeOut(withDuration: sec)
+```
+
+**Obj-C**:
+
+```objc
+[SKAction fadeOutWithDuration: sec];
+```
+
 ## Parameters
 
 - `duration`: The duration of the animation.

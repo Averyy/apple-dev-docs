@@ -16,7 +16,7 @@ func es_release_muted_processes(_ muted_processes: UnsafeMutablePointer<es_muted
 
 ## Parameters
 
-- `muted_processes`: An   structure, previously populated by a call to  , to release.
+- `muted_processes`: An [`es_muted_processes_t`](es_muted_processes_t.md) structure, previously populated by a call to [`es_muted_processes_events(_:_:)`](es_muted_processes_events(_:_:).md), to release.
 
 ## See Also
 

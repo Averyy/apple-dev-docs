@@ -31,7 +31,7 @@ The value that this function returns is the sum of the values [`BNNSGraphGetInpu
 ## Parameters
 
 - `graph`: The compiled graph object.
-- `function`: The function. Specify as   if the graph only contains one function.
+- `function`: The function. Specify as `nil` if the graph only contains one function.
 
 ## See Also
 

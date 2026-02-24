@@ -25,8 +25,8 @@ Use this initializer to create an expectation that observes changes on the obser
 
 - `keyPath`: The key path for the observed property, relative to the observed object.
 - `observedObject`: The object to observe the key path on.
-- `options`: A combination of values that specify what to include in observation notifications. For possible values, see  .
-- `predicate`: A closure that evaluates the value of the observed property. If  , the first observed change fulfills the expectation.
+- `options`: A combination of values that specify what to include in observation notifications. For possible values, see [`NSKeyValueObservingOptions`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions).
+- `predicate`: A closure that evaluates the value of the observed property. If `nil`, the first observed change fulfills the expectation.
 
 ## See Also
 

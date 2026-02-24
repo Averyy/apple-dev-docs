@@ -22,8 +22,8 @@ optional func textView(_ textView: NSTextView, shouldChangeTextInRanges affected
 ## Parameters
 
 - `textView`: The text view sending the message. This is the first text view in a series shared by a layout manager, not necessarily the text view displaying the selected text.
-- `affectedRanges`: The array of ranges of characters to be replaced. This array must be a non-nil, non-empty array of objects responding to the NSValue   method, and in addition its elements must be sorted, non-overlapping, non-contiguous, and (except for the case of a single range) have non-zero-length.
-- `replacementStrings`: The array of strings that will replace the characters in  , one string for each range;   if only text attributes are being changed.
+- `affectedRanges`: The array of ranges of characters to be replaced. This array must be a non-nil, non-empty array of objects responding to the NSValue `rangeValue` method, and in addition its elements must be sorted, non-overlapping, non-contiguous, and (except for the case of a single range) have non-zero-length.
+- `replacementStrings`: The array of strings that will replace the characters in `affectedRanges`, one string for each range; `nil` if only text attributes are being changed.
 
 ## See Also
 

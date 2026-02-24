@@ -8,6 +8,10 @@ The type of task an Action extension performs.
 **Availability**:
 - macOS 10.10+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [NSExtensionServiceAllowsFinderPreviewItem](information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowsfinderpreviewitem.md)

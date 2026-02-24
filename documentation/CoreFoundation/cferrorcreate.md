@@ -26,10 +26,10 @@ A new CFError object. Ownership follows the [`The Create Rule`](https://develope
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
-- `domain`: A CFString that identifies the error domain. If this reference is   or is otherwise not a valid CFString, the behavior is undefined.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `domain`: A CFString that identifies the error domain. If this reference is `NULL` or is otherwise not a valid CFString, the behavior is undefined.
 - `code`: A CFIndex that identifies the error code. The code is interpreted within the context of the error domain.
-- `userInfo`: A CFDictionary created with   and  . The dictionary is copied with  . If you do not want the userInfo dictionary, you can pass  , in which case an empty dictionary will be assigned.
+- `userInfo`: A CFDictionary created with [`kCFCopyStringDictionaryKeyCallBacks`](kcfcopystringdictionarykeycallbacks.md) and [`kCFTypeDictionaryValueCallBacks`](kcftypedictionaryvaluecallbacks.md). The dictionary is copied with [`CFDictionaryCreateCopy(_:_:)`](cfdictionarycreatecopy(_:_:).md). If you do not want the userInfo dictionary, you can pass `NULL`, in which case an empty dictionary will be assigned.
 
 ## See Also
 

@@ -14,6 +14,11 @@ A dictionary that contains hostname settings.
 object SettingsCommand.Command.Settings.HostName
 ```
 
+## Properties
+
+- `HostName` (string) *(required)*: The hostname for the device.
+- `Item` (string) *(required)*: The string that defines this setting type.
+
 ## See Also
 
 - [object SettingsCommand.Command.Settings.AccessibilitySettings](settingscommand/command-data.dictionary/settings-data.dictionary/accessibilitysettings-data.dictionary.md)

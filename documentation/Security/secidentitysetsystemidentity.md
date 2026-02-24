@@ -24,8 +24,8 @@ The caller must be running as root.
 
 ## Parameters
 
-- `domain`: The domain to which the specified identity will be assigned, typically in reverse DNS notation, such as  .  You may also pass the values defined in  .
-- `idRef`: The identity to be assigned to the specified domain. Pass   to delete any currently-assigned identity for the specified domain; in this case, it is not an error if no identity exists for the specified domain.
+- `domain`: The domain to which the specified identity will be assigned, typically in reverse DNS notation, such as `com.apple.security`.  You may also pass the values defined in [`System Identity Domains`](system-identity-domains.md).
+- `idRef`: The identity to be assigned to the specified domain. Pass `NULL` to delete any currently-assigned identity for the specified domain; in this case, it is not an error if no identity exists for the specified domain.
 
 
 ---

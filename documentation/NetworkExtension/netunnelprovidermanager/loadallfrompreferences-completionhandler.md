@@ -21,7 +21,7 @@ class func loadAllFromPreferences() async throws -> [NETunnelProviderManager]
 
 ## Parameters
 
-- `completionHandler`: A block that takes an   of   objects, and an   object. This block will be executed on the caller’s main thread after the load operation is complete. If no configurations exist for the calling app then the   parameter will be set to nil and the error parameter will be set to nil. If an error occurred while loading the configurations, the error parameter will be set to an NSError object containing details about the error. See   for a list of possible errors.
+- `completionHandler`: A block that takes an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) of `NETunnelProviderManager` objects, and an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object. This block will be executed on the caller’s main thread after the load operation is complete. If no configurations exist for the calling app then the `managers` parameter will be set to nil and the error parameter will be set to nil. If an error occurred while loading the configurations, the error parameter will be set to an NSError object containing details about the error. See [`NEVPNManager`](nevpnmanager.md) for a list of possible errors.
 
 ## See Also
 

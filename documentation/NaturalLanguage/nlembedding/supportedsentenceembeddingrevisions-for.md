@@ -26,7 +26,7 @@ An index set representing all of the supported version numbers of the sentence e
 
 ## Parameters
 
-- `language`: A language supported by the Natural Language framework. For possible values, see  .
+- `language`: A language supported by the Natural Language framework. For possible values, see [`NLLanguage`](nllanguage.md).
 
 ## See Also
 

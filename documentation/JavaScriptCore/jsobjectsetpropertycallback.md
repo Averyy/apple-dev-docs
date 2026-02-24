@@ -36,10 +36,10 @@ If this function returns false, the set request forwards to the object’s stati
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The   to set the property’s value on.
-- `propertyName`: A   that contains the name of the property to set.
-- `value`: A   to use as the property’s value.
-- `exception`: A pointer to a   to return an exception in, if any.
+- `object`: The [`JSObjectRef`](jsobjectref.md) to set the property’s value on.
+- `propertyName`: A [`JSStringRef`](jsstringref.md) that contains the name of the property to set.
+- `value`: A [`JSValueRef`](jsvalueref.md) to use as the property’s value.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to return an exception in, if any.
 
 ## See Also
 

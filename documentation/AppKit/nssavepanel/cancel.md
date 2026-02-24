@@ -17,7 +17,7 @@ func cancel(_ sender: Any?)
 
 ## Parameters
 
-- `sender`: The   object that contains the Cancel button.
+- `sender`: The `NSSavePanel` object that contains the Cancel button.
 
 ## See Also
 

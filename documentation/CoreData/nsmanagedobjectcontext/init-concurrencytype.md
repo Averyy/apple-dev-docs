@@ -30,7 +30,7 @@ For more information, see [`Concurrency`](nsmanagedobjectcontext#Concurrency.md)
 
 ## Parameters
 
-- `ct`: The context’s concurrency type. For possible values, see  .
+- `ct`: The context’s concurrency type. For possible values, see [`NSManagedObjectContextConcurrencyType`](nsmanagedobjectcontextconcurrencytype.md).
 
 ## See Also
 

@@ -31,9 +31,9 @@ Pass the context objects you create to the provided completion handler before yo
 
 ## Parameters
 
-- `writingToolsCoordinator`: The coordinator object requesting information   from your custom view.
-- `scope`: The amount of text the coordinator requested. Use this property   to determine if Writing Tools is evaluating all of your text or only a subset.
-- `completion`: A completion block to execute with the required information.   You must execute this block once at end of your method’s implementation.   The block has no return value and takes an array of    objects that contain the requested information.
+- `writingToolsCoordinator`: The coordinator object requesting information from your custom view.
+- `scope`: The amount of text the coordinator requested. Use this property to determine if Writing Tools is evaluating all of your text or only a subset.
+- `completion`: A completion block to execute with the required information. You must execute this block once at end of your method’s implementation. The block has no return value and takes an array of [`NSWritingToolsCoordinator.Context`](nswritingtoolscoordinator/context.md) objects that contain the requested information.
 
 
 ---

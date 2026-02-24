@@ -28,7 +28,7 @@ Use this function to obtain some or all of the Unicode characters represented by
 
 - `theString`: The string from which the characters are to be obtained.
 - `range`: The range of characters to copy. The specified range must not exceed the length of the string.
-- `buffer`: The   buffer of length   that you have allocated on the stack or heap. On return, the buffer contains the requested Unicode characters.
+- `buffer`: The `UniChar` buffer of length `range.length` that you have allocated on the stack or heap. On return, the buffer contains the requested Unicode characters.
 
 ## See Also
 

@@ -76,7 +76,7 @@ If the draggable view is enclosed in a container, it participates in container d
 - `itemType`: A type of the dragged item.
 - `id`: An key path of the identifier of an item.
 - `containerNamespace`: A namespace of the associated drag container.
-- `payload`: A closure that returns a single   instance or a value conforming to   that   represents the draggable data from this view.
+- `payload`: A closure that returns a single instance or a value conforming to [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) that represents the draggable data from this view.
 
 
 ---

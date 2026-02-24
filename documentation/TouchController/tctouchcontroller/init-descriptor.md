@@ -21,7 +21,7 @@ A new `TCTouchController` instance.
 
 ## Parameters
 
-- `descriptor`: The   containing the configuration for the touch controller.
+- `descriptor`: The `TCTouchControllerDescriptor` containing the configuration for the touch controller.
 
 ## See Also
 

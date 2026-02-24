@@ -16,7 +16,7 @@ func setColor(_ color: UIColor?)
 
 ## Parameters
 
-- `color`: The custom color to apply to the separator. Specifying   removes the custom color and returns the separator to the color specified in the storyboard file. The default color is white.
+- `color`: The custom color to apply to the separator. Specifying `nil` removes the custom color and returns the separator to the color specified in the storyboard file. The default color is white.
 
 ## See Also
 

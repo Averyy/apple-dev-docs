@@ -22,7 +22,7 @@ init(_ route: MKRoute)
 
 ## Parameters
 
-- `route`: The   to trace.
+- `route`: The [`MKRoute`](mkroute.md) to trace.
 
 ## See Also
 

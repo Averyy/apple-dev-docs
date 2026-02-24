@@ -20,7 +20,7 @@ A new sectioned content object containing the specified sections.
 
 ## Parameters
 
-- `sections`: An array of   objects, representing the sections of your interface.
+- `sections`: An array of [`TVTopShelfItemCollection`](tvtopshelfitemcollection.md) objects, representing the sections of your interface.
 
 
 ---

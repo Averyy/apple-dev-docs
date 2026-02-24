@@ -38,9 +38,9 @@ Image(systemName: "envelope.badge.fill")
 
 ## Parameters
 
-- `x`: An amount that represents the horizontal amount to scale the   view. The default value is  .
-- `y`: An amount that represents the vertical amount to scale the view.   The default value is  .
-- `anchor`: The anchor point that indicates the starting position for   the scale operation.
+- `x`: An amount that represents the horizontal amount to scale the view. The default value is `1.0`.
+- `y`: An amount that represents the vertical amount to scale the view. The default value is `1.0`.
+- `anchor`: The anchor point that indicates the starting position for the scale operation.
 
 ## See Also
 

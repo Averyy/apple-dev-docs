@@ -20,7 +20,7 @@ When your block is called, it’s passed a completion handler as an argument. Co
 
 ## Parameters
 
-- `block`: A block of code to execute when the scheduler runs. This block will be called on a serial background queue appropriate for the level of quality of service specified. See  .
+- `block`: A block of code to execute when the scheduler runs. This block will be called on a serial background queue appropriate for the level of quality of service specified. See [`qualityOfService`](nsbackgroundactivityscheduler/qualityofservice.md).
 
 ## See Also
 

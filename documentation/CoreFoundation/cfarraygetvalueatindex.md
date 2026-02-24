@@ -27,7 +27,7 @@ The value at the `idx` index in `theArray`. If the return value is a Core Founda
 ## Parameters
 
 - `theArray`: The array to examine.
-- `idx`: The index of the value to retrieve. If the index is outside the index space of   (  to   inclusive (where   is the count of  ), the behavior is undefined.
+- `idx`: The index of the value to retrieve. If the index is outside the index space of `theArray` (`0` to `N-1` inclusive (where `N` is the count of `theArray`), the behavior is undefined.
 
 ## See Also
 

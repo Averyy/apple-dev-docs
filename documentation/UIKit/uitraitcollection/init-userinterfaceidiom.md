@@ -24,7 +24,7 @@ A new trait collection containing only a specified user interface idiom trait.
 
 ## Parameters
 
-- `idiom`: A   value specifying the user interface idiom for the new trait collection.
+- `idiom`: A [`UIUserInterfaceIdiom`](uiuserinterfaceidiom.md) value specifying the user interface idiom for the new trait collection.
 
 ## See Also
 

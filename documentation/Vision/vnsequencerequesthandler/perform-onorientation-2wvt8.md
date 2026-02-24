@@ -21,9 +21,9 @@ func perform(_ requests: [VNRequest], on pixelBuffer: CVPixelBuffer, orientation
 
 ## Parameters
 
-- `requests`: An array of   requests to perform.
-- `pixelBuffer`: The input   on which to perform the request.
-- `orientation`: The orientation of the input  .
+- `requests`: An array of [`VNRequest`](vnrequest.md) requests to perform.
+- `pixelBuffer`: The input [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) on which to perform the request.
+- `orientation`: The orientation of the input `image`.
 
 ## See Also
 

@@ -26,7 +26,7 @@ A resource loader that publishes the root entity in the loaded file as an [`Anch
 ## Parameters
 
 - `name`: The base name of the file to load, omitting the filename extension.
-- `bundle`: The bundle containing the file. Use   to search the app’s   main bundle.
+- `bundle`: The bundle containing the file. Use `nil` to search the app’s main bundle.
 
 ## See Also
 

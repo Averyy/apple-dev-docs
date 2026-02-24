@@ -22,7 +22,7 @@ func updateConfiguration(forElement element: String, configuration config: (GCVi
 
 ## Parameters
 
-- `element`: The element whose configuration you want to change. For the possible values of this parameter, see the   property.
+- `element`: The element whose configuration you want to change. For the possible values of this parameter, see the [`elements`](gcvirtualcontroller/configuration/elements.md) property.
 - `config`: The new configuration for the element.
 
 ## See Also

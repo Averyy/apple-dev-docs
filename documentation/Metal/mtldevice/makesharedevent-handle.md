@@ -26,7 +26,7 @@ A new [`MTLSharedEvent`](mtlsharedevent.md) instance if the method completed suc
 
 ## Parameters
 
-- `sharedEventHandle`: An   instance from another GPU device or process.
+- `sharedEventHandle`: An [`MTLSharedEventHandle`](mtlsharedeventhandle.md) instance from another GPU device or process.
 
 ## See Also
 

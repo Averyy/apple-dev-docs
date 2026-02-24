@@ -21,6 +21,11 @@ object DeviceLocationCommand
 - [object DeviceLocationCommand.Command](devicelocationcommand/command-data.dictionary.md)
   The command to request the location of a device when in Lost Mode.
 
+## Properties
+
+- `Command` (DeviceLocationCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object DeviceLocationResponse](devicelocationresponse.md)

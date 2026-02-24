@@ -25,8 +25,8 @@ This function is thread safe.
 
 ## Parameters
 
-- `runLoop`: The run loop. This value must not be  .
-- `runLoopMode`: The mode from which the service is to be unscheduled. This value must not be  .
+- `runLoop`: The run loop. This value must not be `NULL`.
+- `runLoopMode`: The mode from which the service is to be unscheduled. This value must not be `NULL`.
 
 ## See Also
 

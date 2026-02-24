@@ -28,7 +28,7 @@ The value at the specified index in the array.
 
 - `index`: The position of the element to access.
 - `type`: The expected type for the returned value.
-- `defaultValue`: The value to use if no value for exists at   or if conversion to   fails.
+- `defaultValue`: The value to use if no value for exists at `index` or if conversion to `type` fails.
 
 ## See Also
 

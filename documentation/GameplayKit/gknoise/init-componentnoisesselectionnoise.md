@@ -34,7 +34,7 @@ For example, if the `noises` array contains two noise objects, the boundary valu
 ## Parameters
 
 - `noises`: The array of noise objects to combine.
-- `selectionNoise`: A noise object whose values determine which object from the   array contributes to which region of the generated output.
+- `selectionNoise`: A noise object whose values determine which object from the `noises` array contributes to which region of the generated output.
 
 ## See Also
 

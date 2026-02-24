@@ -30,7 +30,7 @@ Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success, or kDN
 
 ## Parameters
 
-- `property`: The requested property. Currently the only property defined is  .
+- `property`: The requested property. Currently the only property defined is [`kDNSServiceProperty_DaemonVersion`](kdnsserviceproperty_daemonversion.md).
 - `result`: Place to store result. For retrieving DaemonVersion, this should be the address of a uint32_t.
 - `size`: Pointer to uint32_t containing size of the result location. For retrieving DaemonVersion, this should be sizeof(uint32_t). On return the uint32_t is updated to the size of the data returned. For DaemonVersion, the returned size is always sizeof(uint32_t), but future properties could be defined which return variable-sized results.
 

@@ -25,7 +25,7 @@ init(allowsExtendedAttributes: Bool = false, interpretedSyntax: AttributedString
 - `allowsExtendedAttributes`: A Boolean value that indicates whether parsing allows extensions to Markdown that specify extended attributes.
 - `interpretedSyntax`: The syntax for intepreting a Markdown string.
 - `failurePolicy`: The policy for handling a parsing failure.
-- `languageCode`: The   language code for this document.
+- `languageCode`: The [`BCP-47`](https://developer.apple.comhttps://tools.ietf.org/search/bcp47) language code for this document.
 
 ## See Also
 

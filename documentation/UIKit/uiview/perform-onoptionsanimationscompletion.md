@@ -20,11 +20,11 @@ class func perform(_ animation: UIView.SystemAnimation, on views: [UIView], opti
 
 ## Parameters
 
-- `animation`: The system animation to perform; a constant from the   enum.
+- `animation`: The system animation to perform; a constant from the [`UIView.SystemAnimation`](uiview/systemanimation.md) enum.
 - `views`: The views to perform the animations on.
-- `options`: A mask of options indicating how you want to perform the animations. For a list of valid constants, see  .
-- `parallelAnimations`: In your additional animations, do not modify properties of the view on which the system animation is being performed.
-- `completion`: A block object to be executed when the animation sequence ends. The single Boolean argument indicates whether or not the animations finished before the completion handler was called. If the animation duration is  , this block is performed at the beginning of the next run-loop cycle. You can use a   value for this parameter.
+- `options`: A mask of options indicating how you want to perform the animations. For a list of valid constants, see [`UIView.AnimationOptions`](uiview/animationoptions.md).
+- `parallelAnimations`: Additional animations you specify to run alongside the system animation, with the same timing and duration that the system animation defines or inherits. In your additional animations, do not modify properties of the view on which the system animation is being performed.
+- `completion`: A block object to be executed when the animation sequence ends. The single Boolean argument indicates whether or not the animations finished before the completion handler was called. If the animation duration is `0`, this block is performed at the beginning of the next run-loop cycle. You can use a `nil` value for this parameter.
 
 ## See Also
 

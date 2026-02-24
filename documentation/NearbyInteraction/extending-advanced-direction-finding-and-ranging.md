@@ -18,8 +18,12 @@ Measurement capabilities depend on both the capabilities of a person’s device 
 
 Possible interactions between first-generation and second-generation UWB chips, and third-party MFI devices, include:
 
+*First-generation UWB chip*
+
 - Supports multiple Nearby Interaction peer sessions when communicating with first- and second-generation UWB equipped devices
 - Supports multiple Nearby Interaction accessory sessions when communicating with third-party MFI chipsets
+
+*Second-generation UWB chip*
 
 - Supports multiple legacy Nearby Interaction peer sessions when communicating with first-generation UWB equipped devices
 - Supports one Nearby Interaction peer EDM session and multiple Nearby Interaction peer sessions when communicating with second-generation UWB-equipped devices

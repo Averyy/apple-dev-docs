@@ -68,7 +68,7 @@ All movie error log event properties are read-only. For a description of movie e
 - [class MPMoviePlayerViewController](mpmovieplayerviewcontroller.md)
   A simple view controller for displaying full-screen movies.
 - [class MPTimedMetadata](mptimedmetadata.md)
-  A  carries time-based information within HTTP streamed media.
+  A *timed metadata object that* carries time-based information within HTTP streamed media.
 - [class MPPlayableContentManager](mpplayablecontentmanager.md)
   A shared content manager for controlling interactions between your media app and system-provided or external media player interfaces.
 - [class MPPlayableContentManagerContext](mpplayablecontentmanagercontext.md)

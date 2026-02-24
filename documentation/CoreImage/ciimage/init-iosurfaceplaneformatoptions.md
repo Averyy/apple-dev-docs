@@ -22,8 +22,8 @@ An image object initialized with the data from the IOSurface.
 
 - `surface`: An IOSurface object.
 - `plane`: The index of the data plane in the IOSurface object containing bitmap data for initializing the image.
-- `format`: A pixel format constant. See  .
-- `options`: A dictionary specifying image options. (See  .)
+- `format`: A pixel format constant. See `Pixel Formats`.
+- `options`: A dictionary specifying image options. (See `Image Dictionary Keys`.)
 
 ## See Also
 

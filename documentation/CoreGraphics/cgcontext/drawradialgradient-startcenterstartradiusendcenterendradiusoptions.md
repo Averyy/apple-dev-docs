@@ -31,7 +31,7 @@ The color at location 0 in the CGGradient object is mapped to the circle defined
 - `startRadius`: The radius of the starting circle.
 - `endCenter`: The coordinate that defines the center of the ending circle.
 - `endRadius`: The radius of the ending circle.
-- `options`: Option flags (  or  ) that control whether the gradient is drawn before the starting circle or after the ending circle.
+- `options`: Option flags ([`drawsBeforeStartLocation`](cggradientdrawingoptions/drawsbeforestartlocation.md) or [`drawsAfterEndLocation`](cggradientdrawingoptions/drawsafterendlocation.md)) that control whether the gradient is drawn before the starting circle or after the ending circle.
 
 ## See Also
 

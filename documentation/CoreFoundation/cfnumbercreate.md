@@ -30,8 +30,8 @@ The `theType` parameter is not necessarily preserved when creating a new CFNumbe
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the default allocator.
-- `theType`: A constant that specifies the data type of the value to convert. See   for a list of possible values.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the default allocator.
+- `theType`: A constant that specifies the data type of the value to convert. See [`CFNumberType`](cfnumbertype.md) for a list of possible values.
 - `valuePtr`: A pointer to the value for the returned number object.
 
 

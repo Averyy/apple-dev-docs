@@ -50,8 +50,8 @@ func animateDrop(at: CGPoint) { ... }
 ## Parameters
 
 - `payloadType`: The expected type of the dropped models.
-- `action`: A closure that takes the dropped content and responds   appropriately. The first parameter to   contains the dropped   items. The second   parameter contains the drop location in this view’s coordinate   space. Return   if the drop operation was successful;   otherwise, return  .
-- `isTargeted`: A closure that is called when a drag and drop operation   enters or exits the drop target area. The received value is   when   the cursor is inside the area, and   when the cursor is outside.
+- `action`: A closure that takes the dropped content and responds appropriately. The first parameter to `action` contains the dropped items. The second parameter contains the drop location in this view’s coordinate space. Return `true` if the drop operation was successful; otherwise, return `false`.
+- `isTargeted`: A closure that is called when a drag and drop operation enters or exits the drop target area. The received value is `true` when the cursor is inside the area, and `false` when the cursor is outside.
 
 ## See Also
 

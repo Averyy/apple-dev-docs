@@ -24,8 +24,8 @@ The default implementation calls [`SetCurrentSelectedValues`](iouseraudioselecto
 
 ## Parameters
 
-- `in_control_values`: An array of   values to set as the current selection of the control.
-- `in_num_values`: The number of values in  .
+- `in_control_values`: An array of [`IOUserAudioSelectorValue`](iouseraudioselectorvalue.md) values to set as the current selection of the control.
+- `in_num_values`: The number of values in `in_control_values`.
 
 
 ---

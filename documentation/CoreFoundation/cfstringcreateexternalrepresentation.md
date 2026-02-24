@@ -36,10 +36,10 @@ The [`CFStringCreateFromExternalRepresentation(_:_:_:)`](cfstringcreatefromexter
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new CFData object. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new CFData object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `theString`: The string to convert to an external representation.
 - `encoding`: The string encoding to use for the external representation.
-- `lossByte`: The character value to assign to characters that cannot be converted to the requested encoding. Pass   if you want conversion to stop at the first such error; if this happens, the function returns  .
+- `lossByte`: The character value to assign to characters that cannot be converted to the requested encoding. Pass `0` if you want conversion to stop at the first such error; if this happens, the function returns `NULL`.
 
 ## See Also
 

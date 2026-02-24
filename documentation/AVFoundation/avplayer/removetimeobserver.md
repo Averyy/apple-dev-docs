@@ -33,9 +33,32 @@ You should use this method to explicitly cancel each time observer added using [
 
 The following shows a common implementation to remove a registered time observer:
 
+**Swift**:
+
+```swift
+func removePeriodicTimeObserver() {
+    // If a time observer exists, remove it
+    if let token = timeObserverToken {
+        player.removeTimeObserver(token)
+        timeObserverToken = nil
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)removeBoundaryTimeObserver {
+    if (self.timeObserverToken) {
+        [self.player removeTimeObserver:self.timeObserverToken];
+        self.timeObserverToken = nil;
+    }
+}
+```
+
 ## Parameters
 
-- `observer`: An object returned by a previous call to   or  .
+- `observer`: An object returned by a previous call to [`addPeriodicTimeObserver(forInterval:queue:using:)`](avplayer/addperiodictimeobserver(forinterval:queue:using:).md) or [`addBoundaryTimeObserver(forTimes:queue:using:)`](avplayer/addboundarytimeobserver(fortimes:queue:using:).md).
 
 ## See Also
 

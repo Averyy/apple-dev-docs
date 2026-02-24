@@ -10,7 +10,7 @@ Create spatial photos for visionOS by packaging a pair of left- and right-eye im
 
 #### Overview
 
-Spatial photos are  (HEIC) files containing a pair of left- and right-eye images, together with a stereo pair group and additional spatial metadata.  describes properties of the left- and right-eye cameras that captured the stereo scene. Adding spatial metadata to a stereo HEIC prompts Apple platforms to consider the image as  instead of just stereo, and opts the image into visual treatments on Apple Vision Pro that help minimize common causes of stereo viewing discomfort.
+Spatial photos are *High-Efficiency Image Codec* (HEIC) files containing a pair of left- and right-eye images, together with a stereo pair group and additional spatial metadata. *Spatial metadata* describes properties of the left- and right-eye cameras that captured the stereo scene. Adding spatial metadata to a stereo HEIC prompts Apple platforms to consider the image as *spatial* instead of just stereo, and opts the image into visual treatments on Apple Vision Pro that help minimize common causes of stereo viewing discomfort.
 
 To learn more about why you might want to package a pair of stereo images as a spatial photo and the metadata values you provide, see [`Creating spatial photos and videos with spatial metadata`](Creating-spatial-photos-and-videos-with-spatial-metadata.md).
 

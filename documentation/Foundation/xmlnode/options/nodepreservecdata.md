@@ -44,7 +44,7 @@ static var nodePreserveCDATA: XMLNode.Options { get }
 - [static var nodePreserveAttributeOrder: XMLNode.Options](xmlnode/options/nodepreserveattributeorder.md)
   Requests that NSXMLNode preserve the order of attributes as in the source XML.
 - [static var nodePreserveCharacterReferences: XMLNode.Options](xmlnode/options/nodepreservecharacterreferences.md)
-  Specifies that character references (`&#``;`) should not be resolved for XML output of this node.
+  Specifies that character references (`&#`*nnn*`;`) should not be resolved for XML output of this node.
 
 
 ---

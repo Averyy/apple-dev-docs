@@ -16,7 +16,7 @@ func setAllowsMultipleSelection(_ flag: Bool)
 
 ## Parameters
 
-- `flag`: A   value that specifies whether to allow multiple selections.
+- `flag`: A `BOOL` value that specifies whether to allow multiple selections.
 
 ## See Also
 

@@ -25,6 +25,10 @@ object TopLevel.ConsentText
 - [object TopLevel.ConsentText.ConsentTextItem](toplevel/consenttext-data.dictionary/consenttextitem-data.dictionary.md)
   A specific pairing of language code and consent text.
 
+## Properties
+
+- `ConsentTextItem` (TopLevel.ConsentText.ConsentTextItem) *(required)*: The dictionary containing a key that consists of the IETF BCP 47 identifier for a language (for example, en or jp) and a value that consists of the agreement localized to that language.
+
 ## See Also
 
 - [object TopLevel.PayloadContentItem](toplevel/payloadcontentitem.md)

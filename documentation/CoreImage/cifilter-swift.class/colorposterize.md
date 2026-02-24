@@ -29,6 +29,9 @@ This method applies the color posterize filter to an image. The effect remaps re
 
 The color posterize filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **levels**: A `float` representing the brightness level as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that flattens the colors in the input image:
 
 ```swift

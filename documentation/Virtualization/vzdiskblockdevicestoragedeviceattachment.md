@@ -22,6 +22,33 @@ The disk block device implements a storage attachment by using an actual disk ra
 
 In the following example, a disk device at `/dev/rdisk42` executes the I/O operations directly on that disk rather than through a file system:
 
+**Swift**:
+
+```swift
+    let fileHandle = FileHandle(forUpdatingAtPath: myDiskUrl)
+    let attachment = try VZDiskBlockDeviceStorageDeviceAttachment(fileHandle: fileHandle!, readOnly: false, synchronizationMode: .full)
+    let blockDevice = VZVirtioBlockDeviceConfiguration(attachment: attachment)
+```
+
+**Objective-C**:
+
+```objc
+NSFileHandle *fileHandle = [NSFileHandle fileHandleForReadingAtPath:@"/dev/rdisk42"];
+    if (!fileHandle) {
+        // Handle errors.
+    }
+
+    NSError *error;
+    VZDiskBlockDeviceStorageDeviceAttachment *attachment =
+        [[VZDiskBlockDeviceStorageDeviceAttachment alloc] initWithFileHandle:fileHandle
+                                                          readOnly:YES
+                                                          synchronizationMode:VZDiskSynchronizationModeFull
+                                                          error:error];
+    if (!attachment) {
+        // Handle errors.
+    }
+```
+
 By default, only the `root` user can access the disk file handle. Running virtual machines as `root` isn’t recommended. The best practice is to open the file in a separate process that has `root` privileges, then pass the open file descriptor using XPC or a Unix socket to a non-`root` process running Virtualization. For more information about Unix sockets, see [`Streams, Sockets, and Ports`](https://developer.apple.com/documentation/Foundation/streams-sockets-and-ports); for more information on XPC services, see the [`XPC`](https://developer.apple.com/documentation/XPC) framework documentation.
 
 > ❗ **Important**:  You can’t use this method of privilege escalation in apps distributed on the Mac App Store.

@@ -26,8 +26,8 @@ When the peripheral manager receives a request from a connected central to read 
 
 ## Parameters
 
-- `request`: The read or write request received from the connected central. For more information about read and write requests, see  .
-- `result`: The result of attempting to fulfill the request. For a list of possible results, see  .
+- `request`: The read or write request received from the connected central. For more information about read and write requests, see [`CBATTRequest`](cbattrequest.md).
+- `result`: The result of attempting to fulfill the request. For a list of possible results, see [`Deprecated Constants`](deprecated-constants.md).
 
 
 ---

@@ -25,7 +25,7 @@ An image representing the visible rows identified by `rowIndexes`.
 - `rowIndexes`: The indexes of the rows the user is dragging.
 - `column`: The column containing the rows the user is dragging.
 - `event`: The drag event.
-- `dragImageOffset`: The offset for the returned image:
+- `dragImageOffset`: The offset for the returned image: - [`NSZeroPoint`](https://developer.apple.com/documentation/Foundation/NSZeroPoint): Centers the image under the pointer.
 
 ## See Also
 

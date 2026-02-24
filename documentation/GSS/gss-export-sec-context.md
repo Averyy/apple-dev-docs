@@ -30,7 +30,7 @@ The function deactivates the context before exporting it. Use [`gss_import_sec_c
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `context_handle`: The context to export.
-- `interprocess_token`: A buffer the function fills with a token corresponding to the context. Release the buffer storage with a call to   when you are done with it.
+- `interprocess_token`: A buffer the function fills with a token corresponding to the context. Release the buffer storage with a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md) when you are done with it.
 
 ## See Also
 

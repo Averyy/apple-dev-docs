@@ -33,7 +33,7 @@ The delegate may use this method to keep track of the decoded objects.
 ## Parameters
 
 - `unarchiver`: An unarchiver for which the receiver is the delegate.
-- `object`: The object that has been decoded.   may be  .
+- `object`: The object that has been decoded. `object` may be `nil`.
 
 ## See Also
 

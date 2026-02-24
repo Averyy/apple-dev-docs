@@ -29,7 +29,7 @@ During state restoration, `view` can call this method to locate objects that are
 
 ## Parameters
 
-- `identifier`: The identifier for the requested data object. Use this identifier to locate the matching object in your data source object. This is the same string that your app’s   method returned when encoding the data originally.
+- `identifier`: The identifier for the requested data object. Use this identifier to locate the matching object in your data source object. This is the same string that your app’s [`modelIdentifierForElement(at:in:)`](uidatasourcemodelassociation/modelidentifierforelement(at:in:).md) method returned when encoding the data originally.
 - `view`: The view into which the object is being inserted.
 
 ## See Also

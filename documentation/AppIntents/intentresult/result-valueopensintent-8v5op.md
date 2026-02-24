@@ -22,8 +22,8 @@ static func result<Value>(value: Value, opensIntent: some AppIntent) -> Self whe
 
 ## Parameters
 
-- `value`: The value produced by the 
-- `opensIntent`: An   to shows the result of current intent
+- `value`: The value produced by the `AppIntent`
+- `opensIntent`: An `AppIntent` to shows the result of current intent
 
 
 ---

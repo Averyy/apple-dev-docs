@@ -12,7 +12,7 @@ Gesture recognizers use the target-action design pattern to send notifications. 
 
 ![A diagram demonstrating how a gesture recognizer links user interactions with your view controller action methods.](https://docs-assets.developer.apple.com/published/e0f3c0b200ea9d469efc115be5be3dd8/handling-uikit-gestures-1%402x.png)
 
-Gesture recognizers come in two types: discrete and continuous. A  calls your action method exactly once after the gesture is recognized. After its initial recognition criteria are met, a  performs calls to your action method many times, notifying you whenever the information in the gesture’s event changes. For example, a [`UIPanGestureRecognizer`](uipangesturerecognizer.md) object calls your action method each time the touch position changes.
+Gesture recognizers come in two types: discrete and continuous. A *discrete gesture recognizer* calls your action method exactly once after the gesture is recognized. After its initial recognition criteria are met, a *continuous gesture recognizer* performs calls to your action method many times, notifying you whenever the information in the gesture’s event changes. For example, a [`UIPanGestureRecognizer`](uipangesturerecognizer.md) object calls your action method each time the touch position changes.
 
 Interface Builder includes objects for each of the standard UIKit gesture recognizers. It also includes a custom gesture recognizer object that you can use to represent your custom [`UIGestureRecognizer`](uigesturerecognizer.md) subclasses.
 
@@ -27,6 +27,18 @@ To configure a gesture recognizer:
 You can create this connection in Interface Builder by right-clicking the gesture recognizer and connecting its Sent Action selector to the appropriate object in your interface. You can also configure the action method programmatically using the [`addTarget(_:action:)`](uigesturerecognizer/addtarget(_:action:).md) method of the gesture recognizer.
 
 The following code shows the generic format for the action method of a gesture recognizer. If you prefer, you can change the parameter type to match a specific gesture recognizer subclass.
+
+**Swift**:
+
+```swift
+@IBAction func myActionMethod(_ sender: UIGestureRecognizer)
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction)myActionMethod:(UIGestureRecognizer*)sender
+```
 
 ##### Responding to Gestures
 

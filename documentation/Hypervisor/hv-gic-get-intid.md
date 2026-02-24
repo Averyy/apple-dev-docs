@@ -20,7 +20,7 @@ func hv_gic_get_intid(_ interrupt: hv_gic_intid_t, _ intid: UnsafeMutablePointer
 
 ## Parameters
 
-- `interrupt`: One of the   values that represents a reserved interrupt.
+- `interrupt`: One of the [`hv_gic_intid_t`](hv_gic_intid_t.md) values that represents a reserved interrupt.
 - `intid`: A pointer to the interrupt number that the framework writes to upon success.
 
 ## See Also

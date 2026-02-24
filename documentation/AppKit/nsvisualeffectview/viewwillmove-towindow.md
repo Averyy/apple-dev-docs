@@ -20,7 +20,7 @@ When subclassing, you can override this method and use it to perform any tasks a
 
 ## Parameters
 
-- `newWindow`: The window object that will be at the root of the view’s new view hierarchy. If the view is being removed from a window and there isn’t a new window, this parameter is  .
+- `newWindow`: The window object that will be at the root of the view’s new view hierarchy. If the view is being removed from a window and there isn’t a new window, this parameter is `nil`.
 
 ## See Also
 

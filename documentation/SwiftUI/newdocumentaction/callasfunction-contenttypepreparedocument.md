@@ -35,12 +35,12 @@ newDocument(contentType: .todoList) { modelContext in
 }
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in .
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
 
 ## Parameters
 
 - `contentType`: The content type of the document.
-- `prepareDocument`: The closure that accepts    associated with the new document. Use this closure   to set the document’s initial contents before it is displayed:   insert preconfigured models in the provided  .
+- `prepareDocument`: The closure that accepts `ModelContext` associated with the new document. Use this closure to set the document’s initial contents before it is displayed: insert preconfigured models in the provided `ModelContext`.
 
 ## See Also
 

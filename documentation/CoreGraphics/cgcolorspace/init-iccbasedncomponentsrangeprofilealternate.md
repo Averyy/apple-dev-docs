@@ -33,9 +33,9 @@ You may want to use this function for a color space that requires a detailed gam
 ## Parameters
 
 - `nComponents`: The number of color components in the color space defined by the ICC profile data. This must match the number of components actually in the ICC profile and must equal 1, 3, or 4.
-- `range`: An array of numbers that specify the minimum and maximum valid values of the corresponding color components. The size of the array is two times the number of components. If   is the  the color component, the valid range is range  range .
+- `range`: An array of numbers that specify the minimum and maximum valid values of the corresponding color components. The size of the array is two times the number of components. If `c[k]` is the `k`the color component, the valid range is range`[2*k] ≤ c[k] ≤` range`[2*k+1]`.
 - `profile`: A data provider that supplies the ICC profile.
-- `alternate`: An alternate color space to use in case the ICC profile is not supported. The alternate color space must have   color components. You must supply an alternate color space. If this parameter is  , then the function returns  .
+- `alternate`: An alternate color space to use in case the ICC profile is not supported. The alternate color space must have `nComponents` color components. You must supply an alternate color space. If this parameter is `NULL`, then the function returns `NULL`.
 
 ## See Also
 

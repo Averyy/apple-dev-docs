@@ -33,7 +33,7 @@ Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `
 ## Parameters
 
 - `range`: The range.
-- `dict`: A required dictionary specifying the document attributes. The dictionary contains values from   and must at least contain  .
+- `dict`: A required dictionary specifying the document attributes. The dictionary contains values from `Document Types` and must at least contain [`documentType`](nsattributedstring/documentattributekey/documenttype.md).
 
 ## See Also
 

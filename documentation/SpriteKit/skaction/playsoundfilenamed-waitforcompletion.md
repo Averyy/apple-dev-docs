@@ -31,7 +31,7 @@ Use [`SKAction`](skaction.md) `playSoundFileNamed:waitForCompletion:` only for s
 ## Parameters
 
 - `soundFile`: The name of a sound file in the app’s bundle.
-- `wait`: If  , the duration of this action is the same as the length of the audio playback. If  , the action is considered to have completed immediately.
+- `wait`: If [`true`](https://developer.apple.com/documentation/Swift/true), the duration of this action is the same as the length of the audio playback. If [`false`](https://developer.apple.com/documentation/Swift/false), the action is considered to have completed immediately.
 
 ## See Also
 

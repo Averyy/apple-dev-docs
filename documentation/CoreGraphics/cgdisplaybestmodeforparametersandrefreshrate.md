@@ -39,7 +39,7 @@ This deprecated function selects a display mode closest to the specified paramet
 - `width`: Optimal display width, in pixel units.
 - `height`: Optimal display height, in pixel units.
 - `refreshRate`: Optimal display refresh rate, in frames per second.
-- `exactMatch`: A pointer to a Boolean variable. On return, its value is   if an exact match in display depth, width, height, and refresh rate is found; otherwise,  . If this information is not needed, pass  .
+- `exactMatch`: A pointer to a Boolean variable. On return, its value is `true` if an exact match in display depth, width, height, and refresh rate is found; otherwise, `false`. If this information is not needed, pass `NULL`.
 
 ## See Also
 

@@ -32,7 +32,79 @@ To create a layout guide, perform the following steps:
 
 You can use these guides to define the space between elements in your layout. The following example shows how to use layout guides to define an equal spacing between a series of views.
 
+**Swift**:
+
+```swift
+let space1 = NSLayoutGuide()
+view.addLayoutGuide(space1)
+ 
+let space2 = NSLayoutGuide()
+view.addLayoutGuide(space2)
+ 
+space1.widthAnchor.constraintEqualToAnchor(space2.widthAnchor).active = true
+saveButton.trailingAnchor.constraintEqualToAnchor(space1.leadingAnchor).active = true
+cancelButton.leadingAnchor.constraintEqualToAnchor(space1.trailingAnchor).active = true
+cancelButton.trailingAnchor.constraintEqualToAnchor(space2.leadingAnchor).active = true
+clearButton.leadingAnchor.constraintEqualToAnchor(space2.trailingAnchor).active = true
+```
+
+**Objective-C**:
+
+```objc
+NSLayoutGuide *space1 = [[NSLayoutGuide alloc]init];
+[self.view addLayoutGuide:space1];
+ 
+NSLayoutGuide *space2 = [[NSLayoutGuide alloc] init];
+[self.view addLayoutGuide:space2];
+ 
+[space1.widthAnchor constraintEqualToAnchor:space2.widthAnchor].active = YES;
+[self.saveButton.trailingAnchor constraintEqualToAnchor:space1.leadingAnchor].active = YES;
+[self.cancelButton.leadingAnchor constraintEqualToAnchor:space1.trailingAnchor].active = YES;
+[self.cancelButton.trailingAnchor constraintEqualToAnchor:space2.leadingAnchor].active = YES;
+[self.clearButton.leadingAnchor constraintEqualToAnchor:space2.trailingAnchor].active = YES;
+```
+
 A layout guide can also act as an opaque box that contains other views and controls, letting you encapsulate parts of your view and break up your layout into modular chunks.
+
+**Swift**:
+
+```swift
+let container = NSLayoutGuide()
+view.addLayoutGuide(container)
+ 
+// Layout the contents of the container
+button.lastBaselineAnchor.constraintEqualToAnchor(textField.lastBaselineAnchor).active = true
+button.leadingAnchor.constraintEqualToAnchor(container.leadingAnchor).active = true
+textField.leadingAnchor.constraintEqualToAnchor(button.trailingAnchor, constant: 8.0).active = true
+textField.trailingAnchor.constraintEqualToAnchor(container.trailingAnchor).active = true
+textField.topAnchor.constraintEqualToAnchor(container.topAnchor).active = true
+textField.bottomAnchor.constraintEqualToAnchor(container.bottomAnchor).active = true
+ 
+// Set exterior constraints.
+container.leadingAnchor.constraintEqualToAnchor(margins.leadingAnchor).active = true
+container.trailingAnchor.constraintEqualToAnchor(margins.trailingAnchor).asctive = true
+container.topAnchor.constraintEqualToAnchor(margins.topAnchor).active = true
+```
+
+**Objective-C**:
+
+```objc
+NSLayoutGuide *container = [[NSLayoutGuide alloc] init];
+[self.view addLayoutGuide:container];
+ 
+// Layout the contents of the container
+[self.button.lastBaselineAnchor constraintEqualToAnchor:self.textField.lastBaselineAnchor].active = YES;
+[self.textField.leadingAnchor constraintEqualToAnchor:self.button.trailingAnchor constant:8.0].active = YES;
+[self.textField.trailingAnchor constraintEqualToAnchor:container.trailingAnchor].active = YES;
+[self.textField.topAnchor constraintEqualToAnchor:container.topAnchor].active = YES;
+[self.textField.bottomAnchor constraintEqualToAnchor:container.bottomAnchor].active = YES;
+ 
+// Set exterior constraints.
+ 
+[container.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:20.0].active = YES;
+[container.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor constant:20.0].active = YES;
+[container.topAnchor constraintEqualToAnchor:self.view.topAnchor constant:20.0].active = YES;
+```
 
 > **Note**:  Layout constraints do not fully encapsulate their contents. The system still compares the priority of optional constraints inside the layout guide with the priority of optional constraints outside the guide.
 

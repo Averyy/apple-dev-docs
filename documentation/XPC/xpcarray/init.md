@@ -22,7 +22,7 @@ init(_ value: xpc_object_t)
 
 ## Parameters
 
-- `value`: An XPC object. The object’s type must be  .
+- `value`: An XPC object. The object’s type must be [`XPC_TYPE_ARRAY`](xpc_type_array-swift.var.md).
 
 ## See Also
 

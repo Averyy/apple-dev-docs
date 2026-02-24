@@ -25,7 +25,7 @@ func convolve(with kernel: vImage.ConvolutionKernel2D<Float>, bias: Float? = nil
 - `kernel`: The convolution kernel.
 - `bias`: An optional value that the operation adds to the sum of weighted pixels before it applies the divisor.
 - `edgeMode`: The convolution edge mode.
-- `useFloat16Accumulator`: A Boolean value that specifies that the function uses faster but lower-precision internal arithmetic. For more information, see  .
+- `useFloat16Accumulator`: A Boolean value that specifies that the function uses faster but lower-precision internal arithmetic. For more information, see [`kvImageUseFP16Accumulator`](kvimageusefp16accumulator.md).
 - `destination`: The destination pixel buffer.
 
 ## See Also

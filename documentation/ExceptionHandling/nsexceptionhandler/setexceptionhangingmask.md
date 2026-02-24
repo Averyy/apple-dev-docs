@@ -17,7 +17,7 @@ func setExceptionHangingMask(_ aMask: Int)
 
 ## Parameters
 
-- `aMask`: A bit mask composed of one or more constants specifying the types of exceptions that   will halt execution for debugging. You specify multiple constants by performing a   bitwise-OR operation. See   for   information about the constants.
+- `aMask`: A bit mask composed of one or more constants specifying the types of exceptions that will halt execution for debugging. You specify multiple constants by performing a bitwise-OR operation. See [`System Hang Constants`](system-hang-constants.md) for information about the constants.
 
 ## See Also
 

@@ -32,6 +32,10 @@ object StatusDeviceModelFamily
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
+## Properties
+
+- `device.model.family` (string) *(required)*: The hardware family of the device, such as `Mac`, `iPhone`, or `iPad`.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

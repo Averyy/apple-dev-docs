@@ -25,7 +25,7 @@ A MLUntypedColumn sorted by the specified order.
 
 ## Parameters
 
-- `byIncreasingOrder`: A boolean indicating whether to sort values in ascending or descending order.   The default is true, sorted by ascending order.
+- `byIncreasingOrder`: A boolean indicating whether to sort values in ascending or descending order. The default is true, sorted by ascending order.
 
 
 ---

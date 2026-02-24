@@ -6,7 +6,7 @@ Drag and drop your sticker pack into the Stickers asset catalog to let people ac
 
 #### Overview
 
-Sticker packs provide static sets of , images that users can send inline as messages or peel off and attach to message bubbles in the transcript. Sticker packs don’t require any code. You add stickers by dragging image files into the Sticker Pack folder inside the Stickers asset catalog. People can use your stickers across the system outside of messages.
+Sticker packs provide static sets of *stickers*, images that users can send inline as messages or peel off and attach to message bubbles in the transcript. Sticker packs don’t require any code. You add stickers by dragging image files into the Sticker Pack folder inside the Stickers asset catalog. People can use your stickers across the system outside of messages.
 
 Valid image files meet the following specifications:
 

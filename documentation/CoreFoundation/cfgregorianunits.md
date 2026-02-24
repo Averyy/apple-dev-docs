@@ -22,7 +22,7 @@ struct CFGregorianUnits
 
 #### Overview
 
-A CFGregorianUnits is used to represent arbitrary time  (to represent a point in time using Gregorian units, use a [`CFGregorianDate`](cfgregoriandate.md)). Each field can take values up to the maximum possible for its data type. Negative values are also valid.
+A CFGregorianUnits is used to represent arbitrary time *intervals* (to represent a point in time using Gregorian units, use a [`CFGregorianDate`](cfgregoriandate.md)). Each field can take values up to the maximum possible for its data type. Negative values are also valid.
 
 ## Topics
 

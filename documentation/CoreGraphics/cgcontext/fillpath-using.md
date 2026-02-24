@@ -28,7 +28,7 @@ After filling the path, this method clears the context’s current path.
 
 ## Parameters
 
-- `rule`: This parameter defaults to the   rule if unspecified.
+- `rule`: The rule for determining which areas to treat as the interior of the path. See [`CGPathFillRule`](cgpathfillrule.md). This parameter defaults to the [`CGPathFillRule.winding`](cgpathfillrule/winding.md) rule if unspecified.
 
 ## See Also
 

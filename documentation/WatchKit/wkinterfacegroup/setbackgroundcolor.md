@@ -24,7 +24,7 @@ Changes to the background color of a group are animatable.
 
 ## Parameters
 
-- `color`: The solid background color to be displayed behind all items in the group. Specify   to remove the custom color you previously set using this method.
+- `color`: The solid background color to be displayed behind all items in the group. Specify `nil` to remove the custom color you previously set using this method.
 
 ## See Also
 

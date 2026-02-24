@@ -25,7 +25,7 @@ func scheduleFile(_ file: AVAudioFile, at when: AVAudioTime?) async
 ## Parameters
 
 - `file`: The URL of the file to play.
-- `when`: The time the buffer plays. For more information, see  .
+- `when`: The time the buffer plays. For more information, see [`Scheduling Playback Time`](avaudioplayernode#Scheduling-Playback-Time.md).
 - `completionHandler`: The handler the system calls after the player schedules the file for playback on the render thread, or the player stops.
 
 ## See Also

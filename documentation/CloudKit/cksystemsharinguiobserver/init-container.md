@@ -20,7 +20,7 @@ init(container: CKContainer)
 
 ## Parameters
 
-- `container`: The   for the sharing observer.
+- `container`: The [`CKContainer`](ckcontainer.md) for the sharing observer.
 
 
 ---

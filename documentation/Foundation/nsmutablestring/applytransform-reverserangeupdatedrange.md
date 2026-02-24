@@ -30,9 +30,9 @@ In addition to the provided transformation constants, you may use any valid ICU 
 
 ## Parameters
 
-- `transform`: The transformation to apply. For a list of possible values, see  . If the specified transform does not exist, the receiver is not modified, and this method returns  .
-- `reverse`: Whether an inverse transform should be used. If the specified transform does not have an inverse, the receiver is not modified, and this method returns  .
-- `range`: The range of the string to transform.   must not exceed the bounds of the receiver.
+- `transform`: The transformation to apply. For a list of possible values, see [`String Transformations`](string-transformations.md). If the specified transform does not exist, the receiver is not modified, and this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
+- `reverse`: Whether an inverse transform should be used. If the specified transform does not have an inverse, the receiver is not modified, and this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
+- `range`: The range of the string to transform. `range` must not exceed the bounds of the receiver. > ❗ **Important**:  Raises an `NSRangeException` if any part of `aRange` lies beyond the end of the string.
 - `resultingRange`: If the transform was successfully applied, upon return contains the range of the transformed string.
 
 ## See Also

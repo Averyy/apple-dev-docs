@@ -8,7 +8,13 @@ Locate and fix pipeline stalls, cache misses, and other performance issues.
 
 To keep a device’s CPU running at its highest effectiveness while it’s processing your app, tune your app to best use the CPU instruction set and ensure that the CPU microarchitecture delivers and processes instructions efficiently. Modern processors have multiple facilities to improve the flow of instructions they process, including:
 
-In situations where your app’s design, or the hints you provide to the compiler, don’t let the CPU take advantage of these features, the CPU can encounter a  where it can’t run at its maximum efficiency. Examples of CPU bottlenecks include situations that cause the CPU to wait because the next instruction it needs to process isn’t available yet, or where processing an instruction  because the CPU is waiting for a relatively slow access to memory. CPU bottlenecks reduce the rate at which the processor can finish your app’s work, increasing the time someone waits for your app to complete a task. Bottlenecks that occur on your app’s main thread contribute to freezes and hitches in your app’s UI.
+- **Pipelining**: The processor runs distinct parts of different instructions in parallel; for example, it can decode one instruction while it performs the operations requested by another instruction.
+- **Out-of-order execution**: Logic that detects upcoming instructions that don’t depend on the results of instructions that appear earlier in the code, and runs those independent instructions in parallel.
+- **Speculative execution**: Logic that attempts to guess whether the program counter will follow a conditional jump instruction, and directs the processor to speculatively run the subsequent instructions.
+- **Superscalar architecture**: The processor contains parallel components that perform the same step on multiple instructions in parallel; for example, fetching data for multiple instructions concurrently.
+- **Memory caches**: Replicated memory located on the system-on-a-chip that hold instructions and data to make repeated access to the same locations in main memory, or predictable access patterns, faster. These areas are arranged in a hierarchy, with faster but smaller storage located nearby each CPU.
+
+In situations where your app’s design, or the hints you provide to the compiler, don’t let the CPU take advantage of these features, the CPU can encounter a *bottleneck* where it can’t run at its maximum efficiency. Examples of CPU bottlenecks include situations that cause the CPU to wait because the next instruction it needs to process isn’t available yet, or where processing an instruction *stalls* because the CPU is waiting for a relatively slow access to memory. CPU bottlenecks reduce the rate at which the processor can finish your app’s work, increasing the time someone waits for your app to complete a task. Bottlenecks that occur on your app’s main thread contribute to freezes and hitches in your app’s UI.
 
 Additionally, using the CPU inefficiently increases the power used by the CPU when it runs your app. For information on measuring your app’s power use, see [`Measuring your app’s power use with Power Profiler`](measuring-your-app-s-power-use-with-power-profiler.md).
 
@@ -48,7 +54,7 @@ When your performance tests reveal that your app doesn’t meet your performance
 
 Record your app’s CPU access patterns by following these steps:
 
-1. In Xcode, Control-click the test indicator next to the test that demonstrates the performance problem, and choose Profile .
+1. In Xcode, Control-click the test indicator next to the test that demonstrates the performance problem, and choose Profile *the test’s name*.
 2. In Instruments the Choose a Template… window opens, choose the CPU Counters template.
 3. Set the CPU Counters instrument mode to CPU Bottlenecks.
 4. Click record to start gathering data.
@@ -66,6 +72,11 @@ If you don’t have a performance test for the features you want to analyze, fol
 ##### Discover Code That Causes Cpu Bottlenecks
 
 The CPU Counters instrument adds mode-specific lanes to the CPU Counters, process, and thread tracks you use to analyze the processor’s workload. In the initial CPU bottlenecks mode, the lane divides the maximum sustainable CPU bandwidth into four categories:
+
+- **Useful**: The CPU doesn’t encounter bottlenecks and completes instructions that contribute to making progress in your app’s code.
+- **Instruction Delivery Bottleneck**: The CPU encounters a bottleneck because it fetches instructions at a slower rate than it completes them; for example, the processor needs to follow a large number of jump instructions to locate the instructions it needs to fetch.
+- **Instruction Processing Bottleneck**: The CPU encounters a bottleneck because it completes instructions at a slower rate than it fetches them; for example, many instructions require the processor to load data from memory and take a long time to complete.
+- **Discarded Bottleneck**: The CPU encounters a bottleneck because it is busy with instructions that don’t contribute to making progress in your app’s code; for example, the CPU makes incorrect branch predictions and completes instructions only to discard the results.
 
 ![A screenshot of Instruments, showing the CPU bandwidth categorized into useful bandwidth and bottlenecks in the CPU Counters lane.](https://docs-assets.developer.apple.com/published/772f4222ceee7b4ea6c21dc5d33da3ef/cpu-bottlenecks-counter-instrument%402x.png)
 

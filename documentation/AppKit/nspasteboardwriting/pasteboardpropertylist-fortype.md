@@ -25,7 +25,7 @@ The returned value will commonly be the `NSData` object for the specified data t
 
 ## Parameters
 
-- `type`: One of the types the receiver supports for writing (one of the UTIs returned by its implementation of  ).
+- `type`: One of the types the receiver supports for writing (one of the UTIs returned by its implementation of [`writableTypes(for:)`](nspasteboardwriting/writabletypes(for:).md)).
 
 
 ---

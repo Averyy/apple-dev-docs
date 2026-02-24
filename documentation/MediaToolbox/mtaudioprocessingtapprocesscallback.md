@@ -46,7 +46,7 @@ Should the processing tap provide custom buffers in `bufferListInOut`, it should
 - `tap`: The processing tap.
 - `numberFrames`: The requested number of sample frames that should be rendered.
 - `flags`: The flags passed at construction time are provided.
-- `bufferListInOut`: The audio buffer list which will contain processed source data. On input, all fields except for the buffer pointers will be filled in, and can be passed directly to   if in-place processing is desired. On output, the buffer list should contain the processed audio buffers.
+- `bufferListInOut`: The audio buffer list which will contain processed source data. On input, all fields except for the buffer pointers will be filled in, and can be passed directly to [`MTAudioProcessingTapGetSourceAudio(_:_:_:_:_:_:)`](mtaudioprocessingtapgetsourceaudio(_:_:_:_:_:_:).md) if in-place processing is desired. On output, the buffer list should contain the processed audio buffers.
 - `numberFramesOut`: The number of frames of audio data provided in the processed data. Can be 0.
 - `flagsOut`: The start/end of stream flags should be set when appropriate.
 

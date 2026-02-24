@@ -26,7 +26,7 @@ Before changing the value of this property, you must call [`lockForConfiguration
 
 ## Parameters
 
-- `torchLevel`: The new torch mode level. This value must be a floating-point number between   and  . To set the torch mode level to the currently available maximum, specify the constant   for this parameter.
+- `torchLevel`: The new torch mode level. This value must be a floating-point number between `0.0` and `1.0`. To set the torch mode level to the currently available maximum, specify the constant [`maxAvailableTorchLevel`](avcapturedevice/maxavailabletorchlevel.md) for this parameter.
 
 ## See Also
 

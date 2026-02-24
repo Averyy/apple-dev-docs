@@ -28,8 +28,8 @@ The data returned from this method may be used to immediately satisfy an [`AVAss
 
 ## Parameters
 
-- `keyVendorResponse`: The response returned from the key vendor as a result of a request generated from  .
-- `options`: Additional information necessary to obtain the key, or   if no additional information is required.
+- `keyVendorResponse`: The response returned from the key vendor as a result of a request generated from [`streamingContentKeyRequestData(forApp:contentIdentifier:options:)`](avassetresourceloadingrequest/streamingcontentkeyrequestdata(forapp:contentidentifier:options:).md).
+- `options`: Additional information necessary to obtain the key, or `nil` if no additional information is required.
 
 ## See Also
 

@@ -24,7 +24,7 @@ Conceptually, the page controller manages swiping between an array of pages, the
 
 ##### Page Controller Modes
 
-There are two modes that an `NSPageController` instance may operate in, history mode and book mode. The main difference between the two modes is that  expects `pageController.view` to be the content and  expects `pageController.view` to be be a container for the content that you will supply by returning `viewControllers` in your delegate methods.
+There are two modes that an `NSPageController` instance may operate in, history mode and book mode. The main difference between the two modes is that **History mode** expects `pageController.view` to be the content and **Book mode** expects `pageController.view` to be be a container for the content that you will supply by returning `viewControllers` in your delegate methods.
 
 ###### History Mode
 

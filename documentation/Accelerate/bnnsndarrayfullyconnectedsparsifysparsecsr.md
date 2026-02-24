@@ -92,14 +92,14 @@ On return, `sparsifiedWeights` contains the weights that you pass to [`BNNSLayer
 ## Parameters
 
 - `in_dense_shape`: An array descriptor that specifies the dense shape (that is, the size and layout) of the input array.
-- `in_column_indices`: A 1D array descriptor with the shape   that contains the column indices of the nonzero values.
-- `in_row_starts`: A 1D array descriptor with the shape   that contains pointers to the start of each row. Set location   to  .
-- `in_values`: A 1D array descriptor with the shape   that contains the nonzero input values.
+- `in_column_indices`: A 1D array descriptor with the shape `[NNZ]` that contains the column indices of the nonzero values.
+- `in_row_starts`: A 1D array descriptor with the shape `[row_size + 1]` that contains pointers to the start of each row. Set location `[0]` to `0`.
+- `in_values`: A 1D array descriptor with the shape `[NNZ]` that contains the nonzero input values.
 - `out`: On return, an array descriptor that contains device optimized BNNS sparse fully connected weights.
 - `sparse_params`: An optional data structure that contains a hint to the sparsity pattern.
 - `batch_size`: The expected batch size.
-- `workspace`: An optional pointer to scratch memory that’s at least twice the size of the dense input. Set to   to specify that BNNS allocates and frees the scratch memory it requires.
-- `workspace_size`: The size, in bytes, of any scratch memory that you pass. If workspace is  , this function ignores the   parameter.
+- `workspace`: An optional pointer to scratch memory that’s at least twice the size of the dense input. Set to `nil` to specify that BNNS allocates and frees the scratch memory it requires.
+- `workspace_size`: The size, in bytes, of any scratch memory that you pass. If workspace is `nil`, this function ignores the `workspace_size` parameter.
 - `filter_params`: The runtime filter parameters.
 
 ## See Also

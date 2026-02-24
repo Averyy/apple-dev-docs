@@ -22,10 +22,10 @@ func SparseSolve(_ method: SparseIterativeMethod, _ A: SparseMatrix_Complex_Doub
 
 ## Parameters
 
-- `method`: (Input) Iterative method specification, eg return value of   .
-- `A`: (Input) The matrix   to solve the system for. Only used for   multiplication by   or  .
-- `b`: The right-hand side b to solve for. If   has dimension  , then    must have length  .
-- `x`: On entry, initial guess for solution, on return the solution. If    has dimension  , then   must have length  . If no good initial   estimate is available, user should set the initial guess to be the   zero vector.
+- `method`: (Input) Iterative method specification, eg return value of `SparseConjugateGradient()`.
+- `A`: (Input) The matrix `A` to solve the system for. Only used for multiplication by `A` or `A^T`.
+- `b`: The right-hand side b to solve for. If `A` has dimension `m x n`, then `b` must have length `m`.
+- `x`: On entry, initial guess for solution, on return the solution. If `A` has dimension `m x n`, then `x` must have length `n`. If no good initial estimate is available, user should set the initial guess to be the zero vector.
 - `Preconditioner`: Type of preconditioner to create and apply.
 
 ## See Also

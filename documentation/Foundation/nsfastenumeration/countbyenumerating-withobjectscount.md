@@ -33,7 +33,7 @@ The state structure is assumed to be of stack local memory, so you can recast th
 
 - `state`: Context information that is used in the enumeration to, in addition to other possibilities, ensure that the collection has not been mutated.
 - `buffer`: A C array of objects over which the sender is to iterate.
-- `len`: The maximum number of objects to return in  .
+- `len`: The maximum number of objects to return in `stackbuf`.
 
 
 ---

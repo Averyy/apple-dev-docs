@@ -27,7 +27,7 @@ An initialized `NSExpression` object with the specified arguments.
 ## Parameters
 
 - `expressionFormat`: The expression format.
-- `arguments`: An array of arguments to be used with the   string.
+- `arguments`: An array of arguments to be used with the `expressionFormat` string.
 
 ## See Also
 

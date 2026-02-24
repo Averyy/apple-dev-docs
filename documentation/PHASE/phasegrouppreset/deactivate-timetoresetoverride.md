@@ -21,7 +21,7 @@ func deactivate(timeToResetOverride: Double)
 
 ## Parameters
 
-- `timeToResetOverride`: A duration that overrides  , in which the engine restores the group’s original state.
+- `timeToResetOverride`: A duration that overrides [`timeToReset`](phasegrouppreset/timetoreset.md), in which the engine restores the group’s original state.
 
 ## See Also
 

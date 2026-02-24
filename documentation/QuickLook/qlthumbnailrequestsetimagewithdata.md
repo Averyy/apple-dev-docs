@@ -25,8 +25,8 @@ Thread-safety: This function should be called in the same thread as the thumbnai
 ## Parameters
 
 - `thumbnail`: The thumbnail request object.
-- `data`: The image data, which must be in a format supported by the Image I/O framework (JPG, PNG, and so on). In other words, a content type of   is assumed. (  is a subframework of the umbrella Application Services framework.)
-- `properties`: A dictionary of properties. The only property that you can currently specify is kCGImageSourceTypeIdentifierHint; see   for information about this property.
+- `data`: The image data, which must be in a format supported by the Image I/O framework (JPG, PNG, and so on). In other words, a content type of `kUTTypeImage` is assumed. (`ImageIO.framework` is a subframework of the umbrella Application Services framework.)
+- `properties`: A dictionary of properties. The only property that you can currently specify is kCGImageSourceTypeIdentifierHint; see [`Quartz 2D Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066) for information about this property.
 
 ## See Also
 

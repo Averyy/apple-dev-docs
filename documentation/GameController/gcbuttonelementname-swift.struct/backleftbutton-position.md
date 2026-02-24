@@ -25,7 +25,7 @@ The name of the back left button.
 
 ## Parameters
 
-- `position`: The relative position of the button to the other back left button. Pass   for the button nearest to the natural rest position of the person’s finger. Pass   for an additional button that requires the person to move their fingers to press if it exists.
+- `position`: The relative position of the button to the other back left button. Pass `0` for the button nearest to the natural rest position of the person’s finger. Pass `1` for an additional button that requires the person to move their fingers to press if it exists.
 
 ## See Also
 

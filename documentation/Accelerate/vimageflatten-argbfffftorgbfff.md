@@ -28,6 +28,12 @@ func vImageFlatten_ARGBFFFFToRGBFFF(_: UnsafePointer<vImage_Buffer>, _: UnsafePo
 
 ##### Parameters
 
+- **argbFFFFSrc**: The source vImage buffer.
+- **rgbFFFdest**: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- **backgroundColor**: A pixel value that defines the solid background color.
+- **isImagePremultiplied**: A Boolean value that specifes whether the source image has premultiplied alpha.
+- **flags**: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+
 The function uses the following calculation to flatten the source image:
 
 ```c

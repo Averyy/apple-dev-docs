@@ -29,6 +29,11 @@ This method generates a text image. The effect takes the input string property a
 
 The text image generator filter uses the following properties:
 
+- **`text`**: The `string` to render. The string can contain non-ASCII characters.
+- **`fontName`**: A `string` representing the name of the font to be used to generate the image.
+- **`fontSize`**: A `float` representing the size of the font as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`scaleFactor`**: A `float` representing the scale of the font for the generated text as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that generates a string of text as a grayscale image:
 
 ```swift

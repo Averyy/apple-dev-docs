@@ -28,7 +28,7 @@ A configuration change can fail if you request an unsupported display mode or if
 ## Parameters
 
 - `config`: The display configuration that contains the desired changes. On return, this configuration is no longer valid.
-- `option`: The scope of the display configuration changes. Pass one of the constants listed in  .
+- `option`: The scope of the display configuration changes. Pass one of the constants listed in [`CGConfigureOption`](cgconfigureoption.md).
 
 ## See Also
 

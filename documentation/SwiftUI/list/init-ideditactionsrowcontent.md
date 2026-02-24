@@ -42,8 +42,8 @@ Explicit `DynamicViewContent.onDelete(perform:)`, `DynamicViewContent.onMove(per
 
 - `data`: A collection of identifiable data for computing the list.
 - `id`: The key path to the data model’s identifier.
-- `editActions`: The edit actions that are synthesized on  .
-- `rowContent`: A view builder that creates the view for a single row of   the list.
+- `editActions`: The edit actions that are synthesized on `data`.
+- `rowContent`: A view builder that creates the view for a single row of the list.
 
 ## See Also
 

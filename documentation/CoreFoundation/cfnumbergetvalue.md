@@ -31,8 +31,8 @@ If the argument type differs from the return type, and the conversion is lossy o
 ## Parameters
 
 - `number`: The CFNumber object to examine.
-- `theType`: A constant that specifies the data type to return. See   for a list of possible values.
-- `valuePtr`: On return, contains the value of  .
+- `theType`: A constant that specifies the data type to return. See [`CFNumberType`](cfnumbertype.md) for a list of possible values.
+- `valuePtr`: On return, contains the value of `number`.
 
 ## See Also
 

@@ -26,8 +26,8 @@ func CFCharacterSetIsSupersetOfSet(_ theSet: CFCharacterSet!, _ theOtherset: CFC
 
 ## Parameters
 
-- `theSet`: The character set to be checked for the membership of  .
-- `theOtherset`: The character set to be checked whether or not it is a subset of  .
+- `theSet`: The character set to be checked for the membership of `theOtherSet`.
+- `theOtherset`: The character set to be checked whether or not it is a subset of `theSet`.
 
 ## See Also
 

@@ -22,7 +22,7 @@ typealias xpc_connection_handler_t = (xpc_connection_t) -> Void
 
 ## Parameters
 
-- `connection`: A new connection that is equivalent to one received by a listener connection. See the documentation for   for the semantics associated with the received connection.
+- `connection`: A new connection that is equivalent to one received by a listener connection. See the documentation for [`xpc_connection_set_event_handler(_:_:)`](xpc_connection_set_event_handler(_:_:).md) for the semantics associated with the received connection.
 
 ## See Also
 

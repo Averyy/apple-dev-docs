@@ -51,12 +51,12 @@ output pixel value = r * copysignf(1.0f, x)
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the  ,  , and   fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the `height`, `width`, and `rowBytes` fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
 - `exponentialCoeffs`: An array of three floating-point coefficients that specify the scale, prebias, and postbias for the gamma curve.
 - `gamma`: The power function exponent for calculating gamma correction for the gamma curve.
 - `linearCoeffs`: An array of two floating-point coefficients that specify the scale and bias for the linear curve.
 - `boundary`: A value that defines the boundary between the linear curve and the gamma curve.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass  ; otherwise, pass  .
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
 
 ## See Also
 

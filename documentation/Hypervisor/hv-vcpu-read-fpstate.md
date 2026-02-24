@@ -28,7 +28,7 @@ The XSAVE feature set of the host processor defines the structure and size of th
 
 - `vcpu`: The instance of the vCPU.
 - `buffer`: The floating point and SIMD state, on output.
-- `size`: The size of  , in bytes.
+- `size`: The size of `buffer`, in bytes.
 
 ## See Also
 

@@ -37,7 +37,7 @@ HStack {
 
 ## Parameters
 
-- `disabled`: A Boolean value that determines whether this view   can display hover effects.
+- `disabled`: A Boolean value that determines whether this view can display hover effects.
 
 ## See Also
 

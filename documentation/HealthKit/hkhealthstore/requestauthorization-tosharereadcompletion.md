@@ -40,9 +40,10 @@ After users have set the permissions for your app, they can always change them u
 
 ## Parameters
 
-- `typesToShare`: A set containing the data types you want to share. This set can contain any concrete subclass of the   class (any of the  ,  ,  , or   classes ). If the user grants permission, your app can create and save these data types to the HealthKit store.
-- `typesToRead`: A set containing the data types you want to read. This set can contain any concrete subclass of the   class (any of the   ,  ,  ,  , or   classes). If the user grants permission, your app can read these data types from the HealthKit store.
-- `completion`: A block called after the user finishes responding to the request. The system calls this block with the following parameters:
+- `typesToShare`: A set containing the data types you want to share. This set can contain any concrete subclass of the [`HKSampleType`](hksampletype.md) class (any of the [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md), or [`HKCorrelationType`](hkcorrelationtype.md) classes ). If the user grants permission, your app can create and save these data types to the HealthKit store.
+- `typesToRead`: A set containing the data types you want to read. This set can contain any concrete subclass of the [`HKObjectType`](hkobjecttype.md) class (any of the [`HKCharacteristicType`](hkcharacteristictype.md) , [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md), or [`HKCorrelationType`](hkcorrelationtype.md) classes). If the user grants permission, your app can read these data types from the HealthKit store.
+- `completion`: A block called after the user finishes responding to the request. The system calls this block with the following parameters: - **`success`**: A Boolean value that indicates whether the request succeeded. This value doesn’t indicate whether the user actually granted permission. The parameter is [`false`](https://developer.apple.com/documentation/Swift/false) if an error occurred while processing the request; otherwise, it’s [`true`](https://developer.apple.com/documentation/Swift/true).
+- **`error`**: An error object. If an error occurred, this object contains information about the error; otherwise, it’s set to `nil`.
 
 ## See Also
 

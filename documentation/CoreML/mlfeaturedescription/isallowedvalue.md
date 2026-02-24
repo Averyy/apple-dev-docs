@@ -26,7 +26,7 @@ func isAllowedValue(_ value: MLFeatureValue) -> Bool
 
 ## Parameters
 
-- `value`: Given the  , is it compatible with the   of this  .
+- `value`: Given the `MLFeatureValue`, is it compatible with the `MLFeatureType` of this `MLFeatureDescription`.
 
 
 ---

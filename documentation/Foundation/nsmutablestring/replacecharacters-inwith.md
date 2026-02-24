@@ -26,8 +26,8 @@ This method treats the length of the string as a valid range value that returns 
 
 ## Parameters
 
-- `range`: The range of characters to replace.   must not exceed the bounds of the receiver.
-- `aString`: The string with which to replace the characters in  .   must not be  .
+- `range`: The range of characters to replace. `range` must not exceed the bounds of the receiver. > ❗ **Important**:  Raises an `NSRangeException` if any part of `range` lies beyond the end of the receiver.
+- `aString`: The string with which to replace the characters in `range`. `aString` must not be `nil`.
 
 ## See Also
 

@@ -14,6 +14,12 @@ Specifies a per-app VPN rule to match network traffic that the app’s spawned c
 object AppToAppLayerVPNMapping.AppLayerVPNMappingItem.MatchToolsItem
 ```
 
+## Properties
+
+- `DesignatedRequirement` (string) *(required)*: The code signature designated requirement of the command-line tool using the per-app VPN.
+- `Path` (string): The file-system path of the command-line tool using the per-app VPN.
+- `SigningIdentifier` (string) *(required)*: The code signature signing identifier of the command-line tool using the per-app VPN.
+
 
 ---
 

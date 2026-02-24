@@ -41,7 +41,7 @@ Text("This is a block of text that will show up in a text element as multiple li
 
 ## Parameters
 
-- `mode`: The truncation mode that specifies where to truncate   the text within the text view, if needed. You can truncate at the   beginning, middle, or end of the text view.
+- `mode`: The truncation mode that specifies where to truncate the text within the text view, if needed. You can truncate at the beginning, middle, or end of the text view.
 
 ## See Also
 

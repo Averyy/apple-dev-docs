@@ -10,6 +10,10 @@ A Boolean value indicating whether your app can access information about the con
 - iPadOS 12.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 This key indicates whether your app may use the [`CNCopyCurrentNetworkInfo`](https://developer.apple.com/documentation/SystemConfiguration/CNCopyCurrentNetworkInfo) function to obtain information about the current Wi-Fi network.

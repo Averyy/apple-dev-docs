@@ -26,7 +26,7 @@ This function refetches any attributes which have been fetched previously, but i
 ## Parameters
 
 - `record`: The record.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

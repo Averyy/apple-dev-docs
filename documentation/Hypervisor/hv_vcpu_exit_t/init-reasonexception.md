@@ -16,7 +16,7 @@ init(reason: hv_exit_reason_t, exception: hv_vcpu_exit_exception_t)
 
 ## Parameters
 
-- `reason`: The   result code that describes the reason for the exception.
+- `reason`: The [`hv_exit_reason_t`](hv_exit_reason_t.md) result code that describes the reason for the exception.
 - `exception`: The exception struture.
 
 ## See Also

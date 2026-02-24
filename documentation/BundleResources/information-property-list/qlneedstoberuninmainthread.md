@@ -11,6 +11,12 @@ A Boolean value indicating whether a Quick Look app’s generator can be run in 
 - macOS 10.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
+**Default**: `YES`
+
 ## See Also
 
 - [QLPreviewHeight](information-property-list/qlpreviewheight.md)

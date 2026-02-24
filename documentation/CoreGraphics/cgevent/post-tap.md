@@ -21,7 +21,7 @@ This function posts the specified event immediately before any event taps instan
 
 ## Parameters
 
-- `tap`: The location at which to post the event. Pass one of the constants listed in  .
+- `tap`: The location at which to post the event. Pass one of the constants listed in [`CGEventTapLocation`](cgeventtaplocation.md).
 
 ## See Also
 

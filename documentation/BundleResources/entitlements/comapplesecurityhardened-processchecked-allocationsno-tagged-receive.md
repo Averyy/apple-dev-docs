@@ -9,6 +9,10 @@ A Boolean value that indicates whether to prevent receiving tagged memory from o
 - iOS 26.0+
 - iPadOS 26.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 This behavior provides additional protection for processes that run arbitrary code, such as interpreters and JITs.

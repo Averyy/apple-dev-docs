@@ -26,7 +26,7 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `src_oid`: The OID to copy.
-- `dest_oid`: A pointer the function uses to return a copy of the OID. Use   to release this object’s memory when you are done with it.
+- `dest_oid`: A pointer the function uses to return a copy of the OID. Use [`gss_release_oid(_:_:)`](gss_release_oid(_:_:).md) to release this object’s memory when you are done with it.
 
 ## See Also
 

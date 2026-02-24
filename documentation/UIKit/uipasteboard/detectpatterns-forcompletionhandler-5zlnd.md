@@ -24,7 +24,7 @@ Because this method only gives an indication of whether a pasteboard item matche
 ## Parameters
 
 - `patterns`: The patterns to detect on the pasteboard.
-- `completionHandler`: A closure that the system invokes after detecting patterns on the pasteboard. The closure receives a   instance that contains either a set with the patterns found on the pasteboard or an error if detection failed.
+- `completionHandler`: A closure that the system invokes after detecting patterns on the pasteboard. The closure receives a `Result` instance that contains either a set with the patterns found on the pasteboard or an error if detection failed.
 
 ## See Also
 

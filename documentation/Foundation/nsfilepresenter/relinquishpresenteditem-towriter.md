@@ -49,7 +49,7 @@ Your implementation of this method is executed using the queue in the [`presente
 
 ## Parameters
 
-- `writer`: A   that takes another block as a parameter and returns no value. The   block is one you pass to the   block so that your object can be notified when the   is done. If your object does not need to be notified, it can pass   for the   block.
+- `writer`: A [`Block object`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) that takes another block as a parameter and returns no value. The `reacquirer` block is one you pass to the `writer` block so that your object can be notified when the `writer` is done. If your object does not need to be notified, it can pass `nil` for the `reacquirer` block.
 
 ## See Also
 

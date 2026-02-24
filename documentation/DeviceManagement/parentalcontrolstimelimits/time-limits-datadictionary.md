@@ -26,6 +26,13 @@ object ParentalControlsTimeLimits.Time-limits
 - [object ParentalControlsTimeLimits.Time-limits.Weekend-curfew](parentalcontrolstimelimits/time-limits-data.dictionary/weekend-curfew-data.dictionary.md)
   The weekend curfew dictionary.
 
+## Properties
+
+- `weekday-allowance` (ParentalControlsTimeLimits.Time-limits.Weekday-allowance): The weekday allowance settings.
+- `weekday-curfew` (ParentalControlsTimeLimits.Time-limits.Weekday-curfew): The weekday curfew settings.
+- `weekend-allowance` (ParentalControlsTimeLimits.Time-limits.Weekend-allowance): The weekend allowance settings.
+- `weekend-curfew` (ParentalControlsTimeLimits.Time-limits.Weekend-curfew): The weekend curfew settings.
+
 
 ---
 

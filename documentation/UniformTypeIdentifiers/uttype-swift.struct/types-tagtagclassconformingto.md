@@ -27,8 +27,8 @@ If the system doesn’t find any types with the provided tag but the inputs were
 ## Parameters
 
 - `tag`: The tag, such as a filename extension.
-- `tagClass`: The tag class, such as  .
-- `supertype`: Another type to which resulting types must conform. A value of   indicates that conformance isn’t required.
+- `tagClass`: The tag class, such as [`filenameExtension`](uttagclass/filenameextension.md).
+- `supertype`: Another type to which resulting types must conform. A value of `nil` indicates that conformance isn’t required.
 
 
 ---

@@ -31,7 +31,7 @@ To turn off shadowing:
 
 ## Parameters
 
-- `offset`: Specifies a translation of the context’s coordinate system, to establish an offset for the shadow (  specifies a light source immediately above the screen).
+- `offset`: Specifies a translation of the context’s coordinate system, to establish an offset for the shadow (`{0,0}` specifies a light source immediately above the screen).
 - `blur`: A non-negative number specifying the amount of blur.
 
 ## See Also

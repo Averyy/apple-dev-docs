@@ -25,8 +25,8 @@ This method is considered optional because, if [`readableTypes(for:)`](nspastebo
 
 ## Parameters
 
-- `propertyList`: By default, the property list object is an instance of  . If you implement   and specify an option other than  , the   may be any other property list object.
-- `type`: A UTI supported by the receiver for reading (one of the types returned by  ).
+- `propertyList`: A property list containing data to initialize the receiver. By default, the property list object is an instance of `NSData`. If you implement [`readingOptions(forType:pasteboard:)`](nspasteboardreading/readingoptions(fortype:pasteboard:).md) and specify an option other than [`asData`](nspasteboard/readingoptions/asdata.md), the `propertyList` may be any other property list object.
+- `type`: A UTI supported by the receiver for reading (one of the types returned by [`readableTypes(for:)`](nspasteboardreading/readabletypes(for:).md)).
 
 ## See Also
 

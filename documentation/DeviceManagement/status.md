@@ -16,6 +16,10 @@ The request for getting the status of a device.
 - Device Assignment Services ?+
 - VPP License Management ?+
 
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/checkin`
+
 ## Request Body
 
 A status report of the device’s current state.

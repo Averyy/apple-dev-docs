@@ -22,7 +22,7 @@ convenience init(sequence: MLSequence)
 
 ## Parameters
 
-- `sequence`: An   instance.
+- `sequence`: An [`MLSequence`](mlsequence.md) instance.
 
 ## See Also
 

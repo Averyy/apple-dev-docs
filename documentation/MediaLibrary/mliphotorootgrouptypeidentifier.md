@@ -34,7 +34,7 @@ let MLiPhotoRootGroupTypeIdentifier: String
 - [let MLiPhotoLastImportAlbumTypeIdentifier: String](mliphotolastimportalbumtypeidentifier.md)
   The media group that represents the Last Import album in iPhoto.
 - [let MLiPhotoLastNMonthsAlbumTypeIdentifier: String](mliphotolastnmonthsalbumtypeidentifier.md)
-  The media group that represents the recent content album in iPhoto, known as the Last  Months album. The value for  is usually 12 (settable in iPhoto > Preferences > General).
+  The media group that represents the recent content album in iPhoto, known as the Last *N* Months album. The value for *N* is usually 12 (settable in iPhoto > Preferences > General).
 - [let MLiPhotoFlaggedAlbumTypeIdentifier: String](mliphotoflaggedalbumtypeidentifier.md)
   The media group that represents the album of flagged media in iPhoto.
 - [let MLiPhotoSubscribedAlbumTypeIdentifier: String](mliphotosubscribedalbumtypeidentifier.md)

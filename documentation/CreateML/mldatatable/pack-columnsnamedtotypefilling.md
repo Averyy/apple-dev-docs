@@ -31,7 +31,7 @@ This function performs the inverse of [`unpack(columnNamed:valueTypes:indexSubse
 
 - `columnsNamed`: The name of the columns to compact.
 - `to`: The name of the new condensed column.
-- `type`: The collection type for the new column. Typically, the type is a   sequence or a dictionary.
+- `type`: The collection type for the new column. Typically, the type is a sequence or a dictionary.
 - `filling`: The value to fill in any missing values with.
 
 ## See Also

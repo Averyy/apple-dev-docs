@@ -25,7 +25,7 @@ You can call this method multiple times within the same [`beginUpdates()`](nstab
 ## Parameters
 
 - `indexes`: Indexes at which to insert items.
-- `parent`: The parent for the items, or   if the parent is the root.
+- `parent`: The parent for the items, or `nil` if the parent is the root.
 - `animationOptions`: Animated slide effects used when inserting items.
 
 ## See Also

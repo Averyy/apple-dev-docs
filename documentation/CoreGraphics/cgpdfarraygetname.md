@@ -27,7 +27,7 @@ Returns [`true`](https://developer.apple.com/documentation/Swift/true) if there 
 ## Parameters
 
 - `array`: A PDF array. If this parameter is not a valid PDF array, the behavior is undefined.
-- `index`: The index of the value to retrieve. If the index is outside the index space of the array (  to  , where   is the count of the array), the behavior is undefined.
+- `index`: The index of the value to retrieve. If the index is outside the index space of the array (`0` to `N-1`, where `N` is the count of the array), the behavior is undefined.
 - `value`: An uninitialized pointer to a constant C string. If the value at the specified index is a reference to a PDF name (represented by a constant C string) then upon return, contains that value; otherwise the value is undefined.
 
 ## See Also

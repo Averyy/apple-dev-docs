@@ -28,11 +28,11 @@ Don’t call this function on a UI update thread because it may block on network
 
 ## Parameters
 
-- `desired_name`: The name to use to acquire the credential. Import the name using  . Ensure that the mechanism specified by the   parameter supports the name type.
-- `desired_mech`: The mechanism to use to acquire the credential, for example   or  . Use   to get a complete list of supported mechanisms.
-- `attributes`: A dictionary that includes either the key   to specify a password or   to name a certificate for use in acquiring the credential. It may also contain any of the other keys listed in Initial Credential Keys in   to optionally condition the operation.
-- `output_cred_handle`: A credential pointer that the function sets to point at the new credential on success, or sets to   on failure. Use   or   to release the credential’s memory when you are done with it.
-- `error`: An error pointer that the function sets to point at a new error object if the function call fails. Pass   to ignore this error. When an error does exist, it describes the reason for the failure, and you are responsible for releasing it with  .
+- `desired_name`: The name to use to acquire the credential. Import the name using [`gss_import_name(_:_:_:_:)`](gss_import_name(_:_:_:_:).md). Ensure that the mechanism specified by the `desired_mech` parameter supports the name type.
+- `desired_mech`: The mechanism to use to acquire the credential, for example [`GSS_KRB5_MECHANISM`](gss_krb5_mechanism.md) or [`GSS_NTLM_MECHANISM`](gss_ntlm_mechanism.md). Use [`gss_indicate_mechs(_:_:)`](gss_indicate_mechs(_:_:).md) to get a complete list of supported mechanisms.
+- `attributes`: A dictionary that includes either the key [`kGSSICPassword`](kgssicpassword.md) to specify a password or [`kGSSICCertificate`](kgssiccertificate.md) to name a certificate for use in acquiring the credential. It may also contain any of the other keys listed in Initial Credential Keys in [`Credential Management`](credential-management.md) to optionally condition the operation.
+- `output_cred_handle`: A credential pointer that the function sets to point at the new credential on success, or sets to [`GSS_C_NO_CREDENTIAL`](gss_c_no_credential.md) on failure. Use [`gss_release_cred(_:_:)`](gss_release_cred(_:_:).md) or [`gss_destroy_cred(_:_:)`](gss_destroy_cred(_:_:).md) to release the credential’s memory when you are done with it.
+- `error`: An error pointer that the function sets to point at a new error object if the function call fails. Pass `NULL` to ignore this error. When an error does exist, it describes the reason for the failure, and you are responsible for releasing it with `CFRelease`.
 
 ## See Also
 

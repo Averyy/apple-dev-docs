@@ -9,6 +9,12 @@ A Boolean value that indicates whether an app can be the default messaging app o
 - iOS 18.2+
 - iPadOS 18.2+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 Add the Default Messaging App entitlement to your app by following these steps:

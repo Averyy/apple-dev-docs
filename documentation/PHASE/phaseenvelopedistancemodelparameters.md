@@ -25,7 +25,36 @@ This class provides an envelope that the app configures to dissipate the volume 
 
 ##### Dissipate Sound By Using an Envelope
 
-The framework interprets this class’s envelope as a , which determines the sound’s volume over a distance. An envelope offers more precise control over sound dissipation than a geometric [`rolloffFactor`](phasegeometricspreadingdistancemodelparameters/rollofffactor.md). For example, the following code defines slow sound dissipation followed by a sharp decrease:
+The framework interprets this class’s envelope as a *gain curve*, which determines the sound’s volume over a distance. An envelope offers more precise control over sound dissipation than a geometric [`rolloffFactor`](phasegeometricspreadingdistancemodelparameters/rollofffactor.md). For example, the following code defines slow sound dissipation followed by a sharp decrease:
+
+**Swift**:
+
+```swift
+var envelopeSegments : [PHASEEnvelopeSegment]!
+envelopeSegments.append(PHASEEnvelopeSegment(endPoint: simd_make_double2(6.0, 1.0),
+ curveType: PHASECurveType.sigmoid))
+envelopeSegments.append(PHASEEnvelopeSegment(endPoint: simd_make_double2(9.0, 0.0),
+ curveType:PHASECurveType.inverseCubed))
+let distanceModelEnvelope = PHASEEnvelope(startPoint: simd_make_double2(0.0, 0.125),
+ segments:envelopeSegments)
+
+let piecewiseModel = PHASEEnvelopeDistanceModelParameters(envelope: distanceModelEnvelope!)
+
+spatialMixer.distanceModelParameters = piecewiseModel
+```
+
+**Objective-C**:
+
+```objc
+NSMutableArray<PHASEEnvelopeSegment*>* envelopeSegments = [NSMutableArray new];
+[envelopeSegments addObject: [[PHASEEnvelopeSegment alloc] initWithEndPoint:simd_make_double2(6.0f, 1.0f) curveType:PHASECurveTypeSigmoid];
+[envelopeSegments addObject: [[PHASEEnvelopeSegment alloc] initWithEndPoint:simd_make_double2(9.0f, 0.0f) curveType:PHASECurveTypeInverseCubed];
+PHASEEnvelope* distanceModelEnvelope = [[PHASEEnvelope alloc] initWithStartPoint:simd_make_double2(0.0f, 0.125f) segments:envelopSegments];
+
+PHASEEnvelopeDistanceModelParameters* piecewiseModel = [[PHASEEnvelopeDistanceModelParameters alloc] initWithEnvelope:distanceModelEnvelope];
+
+spatialMixer.distanceModelParameters = piecewiseModel;
+```
 
 ## Topics
 

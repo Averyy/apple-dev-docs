@@ -35,6 +35,22 @@ To manually exclude an item, open Frameworks, Libraries, and Embedded Content un
 
 If you have source code referencing APIs unavailable to the Mac version of your app, enclose the code in a compilation conditional block that uses the `targetEnvironment()` (Swift) or `TARGET_OS_MACCATALYST` (Objective-C) platform condition.
 
+**Swift**:
+
+```swift
+#if !targetEnvironment(macCatalyst)
+// Code to exclude from Mac.
+#endif
+```
+
+**Objective-C**:
+
+```objc
+#if !TARGET_OS_MACCATALYST
+// Code to exclude from Mac.
+#endif
+```
+
 You can use these same approaches to include a framework and code that are available only in macOS. For a framework, select macOS for the platform setting, and enclose the code with a `#if targetEnvironment(macCatalyst)` (Swift) or `#if TARGET_OS_MACCATALYST` (Objective-C) statement.
 
 ##### Make Your App More Like a Mac App

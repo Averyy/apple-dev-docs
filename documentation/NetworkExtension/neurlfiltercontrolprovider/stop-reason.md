@@ -24,7 +24,7 @@ Override this method in your conformance to [`NEURLFilterControlProvider`](neurl
 
 ## Parameters
 
-- `reason`: An   that indicates why the framework is stopping the filter.
+- `reason`: An [`NEProviderStopReason`](neproviderstopreason.md) that indicates why the framework is stopping the filter.
 
 ## See Also
 

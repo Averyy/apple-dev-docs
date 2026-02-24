@@ -29,7 +29,7 @@ Use this function to retrieve a reference to the audio component that was used t
 
 ## Parameters
 
-- `inInstance`: The component instance whose corresponding factory object you want to get. Must not be  , and you must own the instance (specifically, you must not have previously called   on the instance).
+- `inInstance`: The component instance whose corresponding factory object you want to get. Must not be `NULL`, and you must own the instance (specifically, you must not have previously called [`AudioComponentInstanceDispose(_:)`](audiocomponentinstancedispose(_:).md) on the instance).
 
 ## See Also
 

@@ -37,9 +37,9 @@ This operation computes the fast Fourier transform of a real-valued input tensor
 
 ## Parameters
 
-- `tensor`: A Real-valued input tensor. Must have datatype   or  .
+- `tensor`: A Real-valued input tensor. Must have datatype `MPSDataTypeFloat32` or `MPSDatatypeFloat16`.
 - `axes`: An array of numbers that specifies over which axes MPSGraph performs the Fourier transform - all axes must be contained within last four dimensions of the input tensor.
-- `descriptor`: A descriptor that defines the parameters of the Fourier transform operation - see  .
+- `descriptor`: A descriptor that defines the parameters of the Fourier transform operation - see [`MPSGraphFFTDescriptor`](mpsgraphfftdescriptor.md).
 - `name`: The name for the operation.
 
 

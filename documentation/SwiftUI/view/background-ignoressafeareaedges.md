@@ -46,7 +46,7 @@ If you want to specify a [`View`](view.md) or a stack of views as the background
 
 ## Parameters
 
-- `edges`: The set of edges for which to ignore safe area insets   when adding the background. The default value is  .   Specify an empty set to respect safe area insets on all edges.
+- `edges`: The set of edges for which to ignore safe area insets when adding the background. The default value is [`all`](edge/set/all.md). Specify an empty set to respect safe area insets on all edges.
 
 ## See Also
 

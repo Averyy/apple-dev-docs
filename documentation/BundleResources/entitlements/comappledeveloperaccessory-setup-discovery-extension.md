@@ -9,6 +9,12 @@ An entitlement that lets an app extension discover and set up accessories.
 - iOS 18.0+
 - iPadOS 18.0+
 
+
+
+**Type**: boolean
+
+**Default**: `true`
+
 #### Discussion
 
 To use [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit) in your app, your accessory setup extension needs this entitlement. Don’t add the entitlement to your app.

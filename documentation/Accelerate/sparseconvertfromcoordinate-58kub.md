@@ -37,11 +37,11 @@ For symmetric (Hermitian) matrices, entries are accepted in either triangle (if 
 - `rowCount`: (Input) Number of rows in structure.
 - `columnCount`: (Input) Number of columns in structure.
 - `blockCount`: (Input) Number of blocks in matrix.
-- `blockSize`: (Input) Block size for data storage on both input and   output.
-- `attributes`: (Input) Attributes of matrix to create. The matrix will   be forced to conform to the specified attributes by copying or dropping   elements as needed.
+- `blockSize`: (Input) Block size for data storage on both input and output.
+- `attributes`: (Input) Attributes of matrix to create. The matrix will be forced to conform to the specified attributes by copying or dropping elements as needed.
 - `row`: (Input) Row indices of matrix structure.
 - `column`: (Input) Column indices of matrix structure.
-- `data`: (Input) The contents of the structurally non-zero (block)   matrix elements.
+- `data`: (Input) The contents of the structurally non-zero (block) matrix elements.
 
 ## See Also
 

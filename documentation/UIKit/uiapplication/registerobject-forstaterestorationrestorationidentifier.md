@@ -28,8 +28,8 @@ You use this method to register objects that you want to save as part of the ove
 
 ## Parameters
 
-- `object`: The object to be registered with the restoration archive. The object must adopt the   protocol. This parameter must not be  .
-- `restorationIdentifier`: The restoration identifier for the object. UIKit uses this parameter to distinguish the object from other objects in the archive. This parameter must not be  .
+- `object`: The object to be registered with the restoration archive. The object must adopt the [`UIStateRestoring`](uistaterestoring.md) protocol. This parameter must not be `nil`.
+- `restorationIdentifier`: The restoration identifier for the object. UIKit uses this parameter to distinguish the object from other objects in the archive. This parameter must not be `nil`.
 
 ## See Also
 

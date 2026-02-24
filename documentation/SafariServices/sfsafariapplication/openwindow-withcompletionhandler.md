@@ -22,7 +22,7 @@ class func openWindow(with url: URL) async -> SFSafariWindow?
 
 ## Parameters
 
-- `url`: The URL to navigate to. The URL scheme must be   or  .
+- `url`: The URL to navigate to. The URL scheme must be `http` or `https`.
 - `completionHandler`: A block to call when the URL is loaded in a new window.
 
 ## See Also

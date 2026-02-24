@@ -25,7 +25,7 @@ func canProcessSurface(_ surface: IOSurfaceRef) -> Bool
 
 ## Parameters
 
-- `surface`: The   to process for flashing lights.
+- `surface`: The [`IOSurfaceRef`](https://developer.apple.com/documentation/IOSurface/IOSurfaceRef) to process for flashing lights.
 
 
 ---

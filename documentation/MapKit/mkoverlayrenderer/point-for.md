@@ -29,7 +29,7 @@ You may call this method safely from your view’s [`draw(_:zoomScale:in:)`](mko
 
 ## Parameters
 
-- `mapPoint`: A point on the two-dimensional map projection. If you have a coordinate value (latitude and longitude), you can use the   function to convert that coordinate to a map point.
+- `mapPoint`: A point on the two-dimensional map projection. If you have a coordinate value (latitude and longitude), you can use the [`init(_:)`](mkmappoint/init(_:).md) function to convert that coordinate to a map point.
 
 ## See Also
 

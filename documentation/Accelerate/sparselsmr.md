@@ -26,9 +26,9 @@ A [`SparseIterativeMethod`](sparseiterativemethod.md) structure that represents 
 
 #### Discussion
 
-LSMR is a minimal residual (MINRES) method for solving least squares. Use LSMR to solve equations of the form  where an exact solution doesn’t exist. The returned solution minimizes ‖  ‖₂.
+LSMR is a minimal residual (MINRES) method for solving least squares. Use LSMR to solve equations of the form *Ax = b* where an exact solution doesn’t exist. The returned solution minimizes ‖ *b-Ax* ‖₂.
 
-Although LSMR is equivalent to applying MINRES to the normal equations  in exact arithmetic, it has superior numerical behavior and is the preferred method. Due to the implicit squaring of the condition of  in the normal equations, LSMR may struggle to converge in single precision. Use double-precision arithmetic where possible.
+Although LSMR is equivalent to applying MINRES to the normal equations *AᵀAx = Aᵀb* in exact arithmetic, it has superior numerical behavior and is the preferred method. Due to the implicit squaring of the condition of *A* in the normal equations, LSMR may struggle to converge in single precision. Use double-precision arithmetic where possible.
 
 For symmetric positive-definite systems, use [`SparseConjugateGradient(_:)`](sparseconjugategradient(_:).md). For square, full-rank unsymmetric or indefinite equations, use [`SparseGMRES(_:)`](sparsegmres(_:).md).
 

@@ -22,10 +22,13 @@ func SparseSolve(_ method: SparseIterativeMethod, _ ApplyOperator: @escaping (Bo
 
 ## Parameters
 
-- `method`: (Input) Iterative method specification, eg return value of   .
-- `ApplyOperator`:    should perform the operation   if   is  ,   or   if   is  .
-- `b`: The right-hand side   to solve for. If   has dimension  , then    must have length  .
-- `x`: On entry, initial guess for solution, on return the solution. If    has dimension  , then   must have length  . If no good initial   estimate is available, user should set the initial guess to be the   zero vector.
+- `method`: (Input) Iterative method specification, eg return value of `SparseConjugateGradient()`.
+- `ApplyOperator`: `ApplyOperator(accumulate, trans, X, Y)` should perform the operation `Y = op(A)X` if `accumulate` is `false`, or `Y += op(A)X` if `accumulate` is `true`. - **`accumulate`**: (input) Indicates whether to perform `Y += op(A)X` (if true) or `Y = op(A)X` (if false).
+- **`trans`**: (input) Indicates whether `op(A)` is the application of `A` (`trans=CblasNoTrans`) or `A^T` (`trans=CblasTrans`).
+- **`x`**: The vector to multiply.
+- **`y`**: The vector in which to accumulate or store the result.
+- `b`: The right-hand side `b` to solve for. If `a` has dimension `m x n`, then `b` must have length `m`.
+- `x`: On entry, initial guess for solution, on return the solution. If `A` has dimension `m x n`, then `x` must have length `n`. If no good initial estimate is available, user should set the initial guess to be the zero vector.
 - `Preconditioner`: (Input) The preconditioner to use.
 
 ## See Also

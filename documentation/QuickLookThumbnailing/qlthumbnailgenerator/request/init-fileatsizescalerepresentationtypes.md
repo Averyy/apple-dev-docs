@@ -27,7 +27,7 @@ An initialized request object to create a thumbnail for a file.
 - `url`: The URL of the file for which you want to create a thumbnail.
 - `size`: The desired size of the thumbnails.
 - `scale`: The scale of the thumbnails. This parameter usually represents the scale of the current screen. However, you can pass a screen scale to the initializer that isn’t the current device’s screen scale. For example, you can create thumbnails for different scales and upload them to a server in order to download them later on devices with a different screen scale.
-- `representationTypes`: The different thumbnail types. For a list of all possible thumbnail representation types, see  .
+- `representationTypes`: The different thumbnail types. For a list of all possible thumbnail representation types, see [`QLThumbnailGenerator.Request.RepresentationTypes`](qlthumbnailgenerator/request/representationtypes-swift.struct.md).
 
 
 ---

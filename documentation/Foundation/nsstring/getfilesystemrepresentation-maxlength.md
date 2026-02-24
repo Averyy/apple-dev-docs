@@ -44,8 +44,8 @@ success = [@"/mach_kernel" getFileSystemRepresentation:filenameBuffer maxLength:
 
 ## Parameters
 
-- `cname`: Upon return, contains a C-string that represent the receiver as a system-independent path, plus the   termination byte. The size of   must be large enough to contain   bytes.
-- `max`: The maximum number of bytes in the string to return in   (including a terminating   character, which this method adds).
+- `cname`: Upon return, contains a C-string that represent the receiver as a system-independent path, plus the `NULL` termination byte. The size of `buffer` must be large enough to contain `maxLength` bytes.
+- `max`: The maximum number of bytes in the string to return in `buffer` (including a terminating `NULL` character, which this method adds).
 
 ## See Also
 

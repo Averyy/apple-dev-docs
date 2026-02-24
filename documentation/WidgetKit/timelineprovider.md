@@ -26,7 +26,7 @@ protocol TimelineProvider
 
 #### Overview
 
-At various times, WidgetKit requests a  from the provider. A timeline is an array of objects conforming to [`TimelineEntry`](timelineentry.md). Each timeline entry has a date, and you can specify additional properties for displaying the widget.
+At various times, WidgetKit requests a *timeline* from the provider. A timeline is an array of objects conforming to [`TimelineEntry`](timelineentry.md). Each timeline entry has a date, and you can specify additional properties for displaying the widget.
 
 For example, consider a widget that displays the health level of a game character. In the game, when the character’s health level is below 100 percent, it recovers at a rate of 25 percent per hour. If the character’s health level is 25 percent, the provider creates a timeline consisting of the following entries:
 

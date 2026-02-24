@@ -28,7 +28,7 @@ typealias CGPDFDictionaryApplierFunction = (UnsafePointer<CChar>, CGPDFObjectRef
 
 - `key`: The current key in the dictionary.
 - `object`: The value in the dictionary associated with the key.
-- `info`: The contextual information that your provided in the   parameter in  .
+- `info`: The contextual information that your provided in the `info` parameter in [`CGPDFDictionaryApplyFunction(_:_:_:)`](cgpdfdictionaryapplyfunction(_:_:_:).md).
 
 
 ---

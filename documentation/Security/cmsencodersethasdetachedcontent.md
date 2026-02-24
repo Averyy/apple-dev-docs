@@ -28,8 +28,8 @@ If you do call this function, you must call it before the first call to the [`CM
 
 ## Parameters
 
-- `cmsEncoder`: The CMSEncoder reference returned by the   function.
-- `detachedContent`:   if the message should exclude the data to be signed. Prior to calling this function, the encoder defaults to   for this setting, indicating that the message contains the data to be signed.
+- `cmsEncoder`: The CMSEncoder reference returned by the [`CMSEncoderCreate(_:)`](cmsencodercreate(_:).md) function.
+- `detachedContent`: `TRUE` if the message should exclude the data to be signed. Prior to calling this function, the encoder defaults to `FALSE` for this setting, indicating that the message contains the data to be signed.
 
 ## See Also
 

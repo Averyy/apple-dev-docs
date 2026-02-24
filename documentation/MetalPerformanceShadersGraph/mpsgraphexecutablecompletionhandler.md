@@ -21,7 +21,7 @@ typealias MPSGraphExecutableCompletionHandler = ([MPSGraphTensorData], (any Erro
 
 ## Parameters
 
-- `results`: If no error, the results produced by the graph operation. If Graph hasn’t yet allocated the results, this will be  .
+- `results`: If no error, the results produced by the graph operation. If Graph hasn’t yet allocated the results, this will be `NSNull`.
 - `error`: If an error occurs, more information might be found here.
 
 

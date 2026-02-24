@@ -29,18 +29,18 @@ Don’t call this function on a UI update thread because it may block on network
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
-- `initiator_cred_handle`: The credential to use when building the context. Pass   to use the default credential for the mechanism.
-- `context_handle`: A pointer the function uses to return the context. Pass   for first call and use the value returned by the first call in continuation calls. Release the context’s resources using the    function when you are done with it.
-- `target_name`: The name of the target acceptor, created with  . The name must be of a type that is supported by the mechanism, as given by  .
-- `input_mech_type`: The mechanism type to use. Pass   to try Kerberos ( ) as a default.
-- `req_flags`: Logical OR of the flags to use when building the context. See   for a list of possible values.
-- `time_req`: The time in seconds that the context should be valid. Use   to request the longest available time.
-- `input_chan_bindings`: Channel bindings to use. Pass   if channel bindings are not used.
-- `input_token`: A token sent from the acceptor. On the first call, use  .
-- `actual_mech_type`: A pointer the function uses to return the actual mechanism used by the context. Do   free this object because it is held in static memory.
+- `initiator_cred_handle`: The credential to use when building the context. Pass [`GSS_C_NO_CREDENTIAL`](gss_c_no_credential.md) to use the default credential for the mechanism.
+- `context_handle`: A pointer the function uses to return the context. Pass [`GSS_C_NO_CONTEXT`](gss_c_no_context.md) for first call and use the value returned by the first call in continuation calls. Release the context’s resources using the  [`gss_delete_sec_context(_:_:_:)`](gss_delete_sec_context(_:_:_:).md) function when you are done with it.
+- `target_name`: The name of the target acceptor, created with [`gss_import_name(_:_:_:_:)`](gss_import_name(_:_:_:_:).md). The name must be of a type that is supported by the mechanism, as given by [`gss_inquire_names_for_mech(_:_:_:)`](gss_inquire_names_for_mech(_:_:_:).md).
+- `input_mech_type`: The mechanism type to use. Pass [`GSS_C_NO_OID`](gss_c_no_oid.md) to try Kerberos ([`GSS_KRB5_MECHANISM`](gss_krb5_mechanism.md)) as a default.
+- `req_flags`: Logical OR of the flags to use when building the context. See [`Context Services`](context-services.md) for a list of possible values.
+- `time_req`: The time in seconds that the context should be valid. Use [`GSS_C_INDEFINITE`](gss_c_indefinite.md) to request the longest available time.
+- `input_chan_bindings`: Channel bindings to use. Pass [`GSS_C_NO_CHANNEL_BINDINGS`](gss_c_no_channel_bindings.md) if channel bindings are not used.
+- `input_token`: A token sent from the acceptor. On the first call, use [`GSS_C_NO_BUFFER`](gss_c_no_buffer.md).
+- `actual_mech_type`: A pointer the function uses to return the actual mechanism used by the context. Do *not* free this object because it is held in static memory.
 - `output_token`: A buffer the function fills with an opaque token that you send to the acceptor. If the length of the buffer is non-zero, a token exists and you send it to the acceptor no matter the return status, whether complete, continue, or any error condition.
-- `ret_flags`: A pointer the function uses to return the actual flags supported by the context. See   for a list of possible values.
-- `time_rec`: A pointer the function uses to return the actual number of seconds for which the context is valid. Pass   to ignore this output.
+- `ret_flags`: A pointer the function uses to return the actual flags supported by the context. See [`Context Services`](context-services.md) for a list of possible values.
+- `time_rec`: A pointer the function uses to return the actual number of seconds for which the context is valid. Pass `NULL` to ignore this output.
 
 ## See Also
 

@@ -20,7 +20,7 @@ This method redraws the receiver. Your code may need to send [`sizeToCells()`](n
 
 ## Parameters
 
-- `newCells`: An array of objects to use when filling the new column starting with the object at index 0. Each object in should be an instance of   or one of its subclasses (usually  ). The array should have a sufficient number of cells to fill the entire column. Extra cells are ignored, unless the matrix is empty. In that case, a matrix is created with one column and enough rows for all the elements of  .
+- `newCells`: An array of objects to use when filling the new column starting with the object at index 0. Each object in should be an instance of [`NSCell`](nscell.md) or one of its subclasses (usually [`NSActionCell`](nsactioncell.md)). The array should have a sufficient number of cells to fill the entire column. Extra cells are ignored, unless the matrix is empty. In that case, a matrix is created with one column and enough rows for all the elements of `newCells`.
 
 ## See Also
 

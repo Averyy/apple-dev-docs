@@ -16,7 +16,7 @@ init(volumeID: FSVolume.Identifier, volumeName: FSFileName)
 
 ## Parameters
 
-- `volumeID`: An   to uniquely identify the volume. For a network file system that supports multiple authenticated users, disambiguate the users by using qualifying data in the identifier.
+- `volumeID`: An [`FSVolume.Identifier`](fsvolume/identifier.md) to uniquely identify the volume. For a network file system that supports multiple authenticated users, disambiguate the users by using qualifying data in the identifier.
 - `volumeName`: A name for the volume.
 
 ## See Also

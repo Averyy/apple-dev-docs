@@ -19,7 +19,7 @@ init(forOpeningContentTypes contentTypes: [UTType], asCopy: Bool)
 
 ## Parameters
 
-- `contentTypes`: An array of uniform type identifiers for the document picker to display. For more information, see  .
+- `contentTypes`: An array of uniform type identifiers for the document picker to display. For more information, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers).
 - `asCopy`: A Boolean value that indicates whether the document picker copies the selected document.
 
 ## See Also

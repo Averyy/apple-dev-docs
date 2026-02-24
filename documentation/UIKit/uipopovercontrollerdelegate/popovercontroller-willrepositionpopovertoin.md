@@ -24,7 +24,7 @@ For popovers that were presented using the [`present(from:in:permittedArrowDirec
 ## Parameters
 
 - `popoverController`: The popover controller changing the position of its content.
-- `rect`: On input, the proposed rectangle for the popover. This popover is in the coordinate space of the view in the   parameter. If you want to propose a different rectangle for the popover, put the new value in this parameter.
+- `rect`: On input, the proposed rectangle for the popover. This popover is in the coordinate space of the view in the `view` parameter. If you want to propose a different rectangle for the popover, put the new value in this parameter.
 - `view`: On input, the proposed view for containing the popover. If you want to propose a different view for the popover, put the new view in this parameter.
 
 

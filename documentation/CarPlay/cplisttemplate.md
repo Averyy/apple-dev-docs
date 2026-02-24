@@ -25,13 +25,17 @@ To create a list template, call the [`init(title:sections:)`](cplisttemplate/ini
 
 Each section contains an array of list items — objects that conform to either the [`CPListTemplateItem`](cplisttemplateitem.md) or the [`CPSelectableListItem`](cpselectablelistitem.md) protocol. CarPlay provides three concrete implementations of these protocols:
 
+- **[`CPListItem`](cplistitem.md)**: A generic, selectable list item.
+- **[`CPListImageRowItem`](cplistimagerowitem.md)**: A list item that displays a series of images.
+- **[`CPMessageListItem`](cpmessagelistitem.md)**: A list item that represents a conversation or contact.
+
 > **Note**:  The depth of a hierarchical list in CarPlay depends on your app’s entitlements. Food-ordering apps must not exceed two levels. The framework restricts all other categories of apps to five levels. Also, some vehicles limit the number of items that the list displays. See [`CPSessionConfiguration`](cpsessionconfiguration.md) for more information.
 
 To display the list, call your interface controller’s [`pushTemplate(_:animated:completion:)`](cpinterfacecontroller/pushtemplate(_:animated:completion:).md) method, passing in the list template to add it to your navigation hierarchy. Alternatively, add the template as a tab in your [`CPTabBarTemplate`](cptabbartemplate.md).
 
 ##### Integrating Siri Into Your Template App
 
-For audio and communication apps, CarPlay provides an  to let users interact with your app using Siri_._
+For audio and communication apps, CarPlay provides an *assistant cell* to let users interact with your app using Siri_._
 
 ![Screenshot that shows the assistant cell at the top of a list template.](https://docs-assets.developer.apple.com/published/ddb3b9bcc13948f8ba4c7ceeb86fdef5/media-3786976%402x.png)
 

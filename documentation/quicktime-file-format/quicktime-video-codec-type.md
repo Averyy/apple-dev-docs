@@ -4,6 +4,11 @@
 
 #### Overview
 
+- **Containing profile atom**: Track (video), movie
+- **`part-ID`**: `0x20202020` (universal feature)
+- **`feature-code`**: `'vfmt'`
+- **`feature-value`**: Unsigned `int(32)` (a four-character-code) holding the QuickTime video codec type copied from the `ImageDescription` structure’s `cType` field
+
 #### Feature Values
 
 This is the four-character-code found in a video sample description.

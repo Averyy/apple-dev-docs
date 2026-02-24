@@ -23,7 +23,7 @@ func CFBitVectorFlipBits(_ bv: CFMutableBitVector!, _ range: CFRange)
 ## Parameters
 
 - `bv`: The bit vector to modify.
-- `range`: The range of bit values in   to flip. The range must not exceed  , where   is the count of the vector.
+- `range`: The range of bit values in `bv` to flip. The range must not exceed `0…N-1`, where `N` is the count of the vector.
 
 ## See Also
 

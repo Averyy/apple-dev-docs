@@ -29,7 +29,7 @@ Calling this method defines a region for detecting pointer movement with the siz
 
 ## Parameters
 
-- `action`: The action to perform whenever the pointer enters or   exits this view’s frame. If the pointer is in the view’s frame, the    closure passes   as a parameter; otherwise,  .
+- `action`: The action to perform whenever the pointer enters or exits this view’s frame. If the pointer is in the view’s frame, the `action` closure passes `true` as a parameter; otherwise, `false`.
 
 ## See Also
 

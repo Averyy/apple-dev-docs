@@ -28,10 +28,10 @@ This method is equivalent to the [`fileDataRepresentation()`](avcapturephoto/fil
 
 ## Parameters
 
-- `replacementMetadata`: To preserve existing metadata from the photo capture, pass this   object’s   dictionary. To discard metadata, pass  .
-- `replacementEmbeddedThumbnailPhotoFormat`: To preserve the existing thumbnail image from the photo capture, pass this   object’s   dictionary. To discard the thumbnail, pass  . (This parameter’s value must be consistent with that of the   parameter.)
-- `replacementEmbeddedThumbnailPixelBuffer`: To discard the thumbnail, pass   for both   parameters.
-- `replacementDepthData`: To preserve the existing depth data from the photo capture (if any), pass this   object’s   object. To discard depth data, pass  .
+- `replacementMetadata`: A dictionary (see `CGImageProperties` for possible keys and values) containing metadata to embed in the output file data. To preserve existing metadata from the photo capture, pass this [`AVCapturePhoto`](avcapturephoto.md) object’s [`metadata`](avcapturephoto/metadata.md) dictionary. To discard metadata, pass `nil`.
+- `replacementEmbeddedThumbnailPhotoFormat`: A dictionary (see Video Settings Dictionaries for possible keys and values) specifying the data format for a thumbnail preview image to embed in the output file data. To preserve the existing thumbnail image from the photo capture, pass this [`AVCapturePhoto`](avcapturephoto.md) object’s [`embeddedThumbnailPhotoFormat`](avcapturephoto/embeddedthumbnailphotoformat.md) dictionary. To discard the thumbnail, pass `nil`. (This parameter’s value must be consistent with that of the `replacementEmbeddedThumbnailPixelBuffer` parameter.)
+- `replacementEmbeddedThumbnailPixelBuffer`: A pixel buffer containing a source image to be encoded to the file as the replacement thumbnail image. To preserve the existing thumbnail image from the photo capture, pass `nil` for this parameter but pass this [`AVCapturePhoto`](avcapturephoto.md) object’s [`embeddedThumbnailPhotoFormat`](avcapturephoto/embeddedthumbnailphotoformat.md) dictionary for the `replacementEmbeddedThumbnailPhotoFormat` parameter. To discard the thumbnail, pass `nil` for both `replacementEmbeddedThumbnail` parameters.
+- `replacementDepthData`: Replacement depth data to embed in the output file data. To preserve the existing depth data from the photo capture (if any), pass this [`AVCapturePhoto`](avcapturephoto.md) object’s [`depthData`](avcapturephoto/depthdata.md) object. To discard depth data, pass `nil`.
 
 ## See Also
 

@@ -22,7 +22,7 @@ init(qosClass: DispatchQoS.QoSClass, relativePriority: Int)
 
 ## Parameters
 
-- `qosClass`: For possible values, see  .
+- `qosClass`: The QoS class. For possible values, see [`DispatchQoS.QoSClass`](dispatchqos/qosclass-swift.enum.md).
 - `relativePriority`: The relative priority.
 
 ## See Also

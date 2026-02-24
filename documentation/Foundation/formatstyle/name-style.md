@@ -45,7 +45,7 @@ let abbreviatedFormattedName = name.formatted(.name(style: .abbreviated)) // "TC
 
 ## Parameters
 
-- `style`: A name-formatting style, such as   or  .
+- `style`: A name-formatting style, such as [`PersonNameComponents.FormatStyle.Style.long`](personnamecomponents/formatstyle/style-swift.enum/long.md) or [`PersonNameComponents.FormatStyle.Style.abbreviated`](personnamecomponents/formatstyle/style-swift.enum/abbreviated.md).
 
 
 ---

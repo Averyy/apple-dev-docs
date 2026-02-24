@@ -33,10 +33,10 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
 ###### Known Issues
 
-- Devices running iOS 17 may prompt the user twice in rapid succession to trust a Mac when connected to the Mac with a USB cable. The second prompt for trust may obscure the first prompt and prevent the user from entering the passcode.  (109539668)  To configure the iOS device to trust the Mac, tap “Trust” and enter the device passcode on any passcode screen that isn’t occluded. Disconnect and reconnect the iOS device to the Mac. The iOS device may prompt once more to trust the Mac. To accept, tap “Trust” and enter the device passcode.
+- Devices running iOS 17 may prompt the user twice in rapid succession to trust a Mac when connected to the Mac with a USB cable. The second prompt for trust may obscure the first prompt and prevent the user from entering the passcode.  (109539668) **Workaround:** To configure the iOS device to trust the Mac, tap “Trust” and enter the device passcode on any passcode screen that isn’t occluded. Disconnect and reconnect the iOS device to the Mac. The iOS device may prompt once more to trust the Mac. To accept, tap “Trust” and enter the device passcode.
 - Executing Unit/UI tests from Xcode on the iOS Simulator takes an extended time to launch on first run of the suite. (115187363)  (110330776) (FB12237092)
-- Xcode 15 may not be able to communicate with devices running iOS 17+ and tvOS 17+, and Apple Watch devices paired to an iPhone running iOS 17+ with certain VPNs active.  (110337781) (FB12243540)  Disable the VPN to interact with the device and reach out to the VPN vendor for resolution.
-- On macOS Sonoma, when attempting to automatically install command line tools (such as after running `xcode-select --install`), you may receive an error that they aren’t currently available.  (110346766)  Install [`Command Line Tools`](https://developer.apple.comhttps://developer.apple.com/download/all/?q=command%20line%20tools) manually or run the following commands in Terminal: ```None
+- Xcode 15 may not be able to communicate with devices running iOS 17+ and tvOS 17+, and Apple Watch devices paired to an iPhone running iOS 17+ with certain VPNs active.  (110337781) (FB12243540) **Workaround:** Disable the VPN to interact with the device and reach out to the VPN vendor for resolution.
+- On macOS Sonoma, when attempting to automatically install command line tools (such as after running `xcode-select --install`), you may receive an error that they aren’t currently available.  (110346766) **Workaround:** Install [`Command Line Tools`](https://developer.apple.comhttps://developer.apple.com/download/all/?q=command%20line%20tools) manually or run the following commands in Terminal: ```None
  sudo mkdir -p /Library/Developer/CommandLineTools   
  sudo touch /Library/Developer/CommandLineTools/.beta   
 ``` and try again.
@@ -53,7 +53,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
 ###### Known Issues
 
-- If an app adds a new App Shortcuts trigger phrase string that already exists in an accompanying `AppShortcuts.strings` or `AppShortcuts.xcstrings` file, the App Shortcuts Preview may not refresh upon rebuild.  (109494636)  Cleaning prior to rebuilding the app causes App Shortcuts Preview to be in its most up-to-date state.
+- If an app adds a new App Shortcuts trigger phrase string that already exists in an accompanying `AppShortcuts.strings` or `AppShortcuts.xcstrings` file, the App Shortcuts Preview may not refresh upon rebuild.  (109494636) **Workaround:** Cleaning prior to rebuilding the app causes App Shortcuts Preview to be in its most up-to-date state.
 
 ##### Apple Clang Compiler
 
@@ -218,12 +218,12 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 ###### Known Issues
 
 - The Xcode Devices and Simulators Window doesn’t accurately reflect the color of devices connected to the Mac.  (98003308)
-- Xcode doesn’t automatically refresh the name of a device running iOS 17, watchOS 10, or tvOS 17 when the user renames the device from the Settings app.  (98406919)  Quit and restart Xcode.
+- Xcode doesn’t automatically refresh the name of a device running iOS 17, watchOS 10, or tvOS 17 when the user renames the device from the Settings app.  (98406919) **Workaround:** Quit and restart Xcode.
 - Xcode’s Devices and Simulators Window doesn’t display icons for applications installed on devices running iOS 17, watchOS 10, and tvOS 17.  (108568165)
-- When Xcode is wirelessly connected to a device running iOS 17, Xcode doesn’t automatically switch to using the fastest connection when the device is connected to the Mac using a USB cable. If the wireless connection is slower than the USB connection, Xcode may continue to communicate with the device using the wireless connection.  (109466074)  Disable and re-enable WiFi on the Mac to interrupt the wireless connection. Xcode automatically reconnects to the device over USB.
+- When Xcode is wirelessly connected to a device running iOS 17, Xcode doesn’t automatically switch to using the fastest connection when the device is connected to the Mac using a USB cable. If the wireless connection is slower than the USB connection, Xcode may continue to communicate with the device using the wireless connection.  (109466074) **Workaround:** Disable and re-enable WiFi on the Mac to interrupt the wireless connection. Xcode automatically reconnects to the device over USB.
 - The Xcode Devices and Simulators Window allows users to click on the “Take Screenshot” button when targeting devices that do not support the screenshot capability. When the button is clicked in this circumstance, Xcode hangs.  (110086301)
-- When an Apple TV is wirelessly paired to more than one device,  Xcode’s Device and Simulator Window will show the status of the Apple TV go into a “Preparing for development” loop.  (112046227)  Pair the Apple TV to one device at a time to prevent seeing the status in a loop
-- When plugging in a iPhone paired to an Apple Watch, the Apple Watch may not appear in Xcode’s Device and Simulator Window  (114714784)  Restart and replug the iPhone
+- When an Apple TV is wirelessly paired to more than one device,  Xcode’s Device and Simulator Window will show the status of the Apple TV go into a “Preparing for development” loop.  (112046227) **Workaround:** Pair the Apple TV to one device at a time to prevent seeing the status in a loop
+- When plugging in a iPhone paired to an Apple Watch, the Apple Watch may not appear in Xcode’s Device and Simulator Window  (114714784) **Workaround:** Restart and replug the iPhone
 
 ##### Documentation
 
@@ -297,7 +297,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
 ###### Known Issues
 
-- Interface Builder documents using custom App fonts may load incorrect font at runtime.  (113624207) (FB12903371)  Set font manually in code.
+- Interface Builder documents using custom App fonts may load incorrect font at runtime.  (113624207) (FB12903371) **Workaround:** Set font manually in code.
 
 ##### Linking
 
@@ -307,8 +307,8 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
 ###### Known Issues
 
-- Binaries using symbols with a weak definition crash at runtime on iOS 14/macOS 12 or older. This impacts primarily C++ projects due to their extensive use of weak symbols.  (114813650) (FB13097713)  Bump the minimum deployment target to iOS 15, macOS 12, watchOS 8 or tvOS 15, or add `-Wl,-ld_classic` to the `OTHER_LDFLAGS` build setting.
-- Weak symbol imports are linked as non-weak imports, when used from LTO object files.  (115521975) (FB13171424)  Add `-Wl,-weak_reference_mismatches,weak` or `-Wl,-ld_classic` options to the `OTHER_LDFLAGS` build setting.
+- Binaries using symbols with a weak definition crash at runtime on iOS 14/macOS 12 or older. This impacts primarily C++ projects due to their extensive use of weak symbols.  (114813650) (FB13097713) **Workaround:** Bump the minimum deployment target to iOS 15, macOS 12, watchOS 8 or tvOS 15, or add `-Wl,-ld_classic` to the `OTHER_LDFLAGS` build setting.
+- Weak symbol imports are linked as non-weak imports, when used from LTO object files.  (115521975) (FB13171424) **Workaround:** Add `-Wl,-weak_reference_mismatches,weak` or `-Wl,-ld_classic` options to the `OTHER_LDFLAGS` build setting.
 
 ##### Localization
 
@@ -413,8 +413,8 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 ###### Known Issues
 
 - Previews can fail when previewing files in a widget shared by both a watchOS app and an iOS app.  (108017929)
-- After loading a LiveActivity preview and making a code change, Xcode will get in a state where all previews time out across any project.  (111934738)  Restart Xcode.
-- AppKit previews in projects that have a deployment target less than macOS 14.0 will fail to compile.  (113047811)  Add a `@available(macOS 14.0, *)` annotation to the `#Preview`.
+- After loading a LiveActivity preview and making a code change, Xcode will get in a state where all previews time out across any project.  (111934738) **Workaround:** Restart Xcode.
+- AppKit previews in projects that have a deployment target less than macOS 14.0 will fail to compile.  (113047811) **Workaround:** Add a `@available(macOS 14.0, *)` annotation to the `#Preview`.
 
 ##### Reality Composer
 
@@ -444,7 +444,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
 ###### Known Issues
 
-- Xcode may crash if you encounter an error while notarizing your app.  (115425915) (FB13163393)  You may need to sign a new Program License Agreement in your account at [`https://developer.apple.com/`](https://developer.apple.comhttps://developer.apple.com/) account. If that does not resolve the issue, you can also notarize with an older version of Xcode or using the `notarytool` command line utility.
+- Xcode may crash if you encounter an error while notarizing your app.  (115425915) (FB13163393) **Workaround:** You may need to sign a new Program License Agreement in your account at [`https://developer.apple.com/`](https://developer.apple.comhttps://developer.apple.com/) account. If that does not resolve the issue, you can also notarize with an older version of Xcode or using the `notarytool` command line utility.
 
 ##### Signing and Distribution
 
@@ -465,7 +465,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
 ###### Known Issues
 
-- Streamlined distribution methods in the Xcode Organizer window don’t support all the same error recovery options available when using the custom workflow. For example: if uploading an app without an app record, using streamlined distribution, Xcode shows an error rather than allowing you to create an app record.   (109097705)  Use the custom method.
+- Streamlined distribution methods in the Xcode Organizer window don’t support all the same error recovery options available when using the custom workflow. For example: if uploading an app without an app record, using streamlined distribution, Xcode shows an error rather than allowing you to create an app record.   (109097705) **Workaround:** Use the custom method.
 
 ##### Simulator
 
@@ -493,7 +493,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
 ###### Known Issues
 
-- In-line Code Review Mode does not show when “Show Source Control Changes” is disabled in Xcode Settings.  (114499800)  Use Side-by-Side Mode instead.
+- In-line Code Review Mode does not show when “Show Source Control Changes” is disabled in Xcode Settings.  (114499800) **Workaround:** Use Side-by-Side Mode instead.
 
 ###### Deprecations
 
@@ -503,18 +503,18 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
 ###### New Features
 
-- Inactive code in `#if`…`#endif` blocks is now dimmed. This can be disabled in the  preferences.  (2450148)
-- The  now supports commenting a selection within a single line.  (9245498)
+- Inactive code in `#if`…`#endif` blocks is now dimmed. This can be disabled in the **Text Editing > Display** preferences.  (2450148)
+- The **Editor > Structure > Toggle Comments** now supports commenting a selection within a single line.  (9245498)
 - Quick Help now supports rendering images that are included in a documentation comment. Both external images referenced via URL and local images from your [`project’s documentation catalog`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/formatting-your-documentation-content#Add-images-to-your-content) are supported.  (45258339) (FB5708868)
 - Xcode now supports accessing SDK framework documentation by invoking Quick Help on a reference to a module name. For example, activating Quick Help by option-clicking on an `import SwiftUI` statement now shows SwiftUI’s documentation.  (46583395) (FB5667593)
 - Jump to definition “gd” Vim command is now supported.  (81116920) (FB9404427)
-- The  command has been replaced with  to quickly access any menu command. By default, Command-clicking a token in the editor now performs . This can be changed in the  preferences. Control-clicking a token brings up the standard contextual menu that now contains all the commands that were available in the .  (86179596)
-- Added  command to the  menu to split code onto separate lines. It has a default key binding of control-M.  (93150897)
+- The **Show Code Actions** command has been replaced with **Show Quick Actions** to quickly access any menu command. By default, Command-clicking a token in the editor now performs **Jump to Definition**. This can be changed in the **Navigation** preferences. Control-clicking a token brings up the standard contextual menu that now contains all the commands that were available in the **Code Actions**.  (86179596)
+- Added **Format to multiple lines** command to the **Editor > Structure** menu to split code onto separate lines. It has a default key binding of control-M.  (93150897)
 - Editing with VoiceOver support has been improved. Source code landmarks and line number information now appear in the VoiceOver “More Content” menu. Accessories, including breakpoints, source control changes, and code folding ribbons appear as VoiceOver linked items. Source Editor Indentation preferences are also synced with VoiceOver’s speech and sound indentation preferences. Additionally, navigating the Source Editor with VoiceOver has been improved and important sections of the editor are now included as VoiceOver Window Spots.  (100877198)
 - When using QuickHelp, information for multiple symbols is shown when the type is ambiguous.  (101256759)
 - In Code Completion, functions that only contain one default parameter, now show as automatically expanded in code completion. Pressing right arrow on a function that contains more than one default parameter, expands to show all possible permutations of its parameters.  (103815908)
 - Select inner block “i<” and “i>” Vim commands are now supported.  (104433144)
-- Standalone and attached macros can be expanded in-line in the editor with the  command.  (104491696)
+- Standalone and attached macros can be expanded in-line in the editor with the **Editor > Expand Macro** command.  (104491696)
 - Code completion now suggests names when declaring a type in Swift.  (106005529)
 
 ###### Resolved Issues
@@ -558,7 +558,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
 ###### New Features
 
-- Swift 5.9 introduces , allowing you to write generic code that accepts any number of type parameters. A type parameter pack is declared with the `each` keyword, and you can iterate over a type parameter pack with the `repeat` keyword: ```None
+- Swift 5.9 introduces *parameter packs*, allowing you to write generic code that accepts any number of type parameters. A type parameter pack is declared with the `each` keyword, and you can iterate over a type parameter pack with the `repeat` keyword: ```None
  struct Pair<First, Second> {
    init(_ first: First, _ second: Second)
  }
@@ -721,12 +721,12 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 - Noncopyable types can’t currently be used in tuples or as generic types.  In particular, this means they can’t currently be stored in Arrays, Dictionaries, or Sets, nor can you form Optionals of noncopyable types or `print` them.  (104669935)
 - Noncopyable types don’t currently work correctly when library evolution mode is enabled.  (107371421)
 - Noncopyable types can’t mutate or consume ‘self’ in their deinit.  (108682993)
-- Noncopyable enums can’t have a `deinit` or have indirect cases unlike in [`SE-0390`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md).  (109686538)  To add a `deinit` to an `enum`, add a `struct` with `deinit` as a payload to the relevant cases. To work around indirect cases is to wrap the `enum` payload in a class.
-- In some cases, using `_ = x` to suppress “unused variable” warnings about a `borrowing` parameter may raise incorrect “cannot be consumed” errors.  (109958008)  Mark the parameter as unused by using `_` as the binding name: ```None
+- Noncopyable enums can’t have a `deinit` or have indirect cases unlike in [`SE-0390`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0390-noncopyable-structs-and-enums.md).  (109686538) **Workaround:** To add a `deinit` to an `enum`, add a `struct` with `deinit` as a payload to the relevant cases. To work around indirect cases is to wrap the `enum` payload in a class.
+- In some cases, using `_ = x` to suppress “unused variable” warnings about a `borrowing` parameter may raise incorrect “cannot be consumed” errors.  (109958008) **Workaround:** Mark the parameter as unused by using `_` as the binding name: ```None
  func method(parameter _: borrowing Type) {
  }
 ```
-- Swift apps built with Xcode 15.0 crash on launch on macOS 10.13.  (114820860)  Add `$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/macosx/libswiftAppKit.dylib` to the Other Linker Flags build setting in Xcode. This should be removed when the deployment target is increased to 10.14 or later.
+- Swift apps built with Xcode 15.0 crash on launch on macOS 10.13.  (114820860) **Workaround:** Add `$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/macosx/libswiftAppKit.dylib` to the Other Linker Flags build setting in Xcode. This should be removed when the deployment target is increased to 10.14 or later.
 
 ##### Swift and C++ Interoperability
 
@@ -763,7 +763,7 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, tvOS 17, watchOS 10, and macOS Son
 
 ###### Known Issues
 
-- If the `Package.swift` file of a Swift App Playground project has been hand-edited to include unit test targets, the app playground fails to build with an error about duplicate commands.  (113752456)  Comment out or remove the unit test targets in the `Package.swift` file.
+- If the `Package.swift` file of a Swift App Playground project has been hand-edited to include unit test targets, the app playground fails to build with an error about duplicate commands.  (113752456) **Workaround:** Comment out or remove the unit test targets in the `Package.swift` file.
 
 ##### Swift Standard Library
 

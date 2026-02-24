@@ -24,7 +24,7 @@ After you remove your configuration, the `NEDNSSettingsManager` object still con
 
 ## Parameters
 
-- `completionHandler`: An optional block that takes an   object. If specified, this block runs on your application’s main thread after your configuration is removed. If an error occurs while removing the configuration, the block returns an   object.
+- `completionHandler`: An optional block that takes an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object. If specified, this block runs on your application’s main thread after your configuration is removed. If an error occurs while removing the configuration, the block returns an `NSError` object.
 
 ## See Also
 

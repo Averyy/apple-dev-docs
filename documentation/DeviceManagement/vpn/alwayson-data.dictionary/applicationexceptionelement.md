@@ -16,6 +16,11 @@ The dictionary that defines which applications can have traffic outside the VPN 
 object VPN.AlwaysOn.ApplicationExceptionElement
 ```
 
+## Properties
+
+- `BundleIdentifier` (string) *(required)*: The app’s bundle identifier.
+- `LimitToProtocols` ([string]): Limit the exception to only the specified list of protocols, with support for `UDP` only.
+
 ## See Also
 
 - [object VPN.AlwaysOn.AllowedCaptiveNetworkPluginElement](vpn/alwayson-data.dictionary/allowedcaptivenetworkpluginelement.md)

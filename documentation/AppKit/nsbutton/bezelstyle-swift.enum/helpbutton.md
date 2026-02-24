@@ -22,6 +22,22 @@ A help button appears within a view and opens app-specific help documentation.
 
 These are circular, consistently sized buttons that contain a question mark.
 
+**Swift**:
+
+```swift
+let button = NSButton()
+button.title = ""
+button.bezelStyle = .helpButton
+```
+
+**Objective-C**:
+
+```objc
+NSButton *button = [[NSButton alloc] init];
+button.title = @"";
+button.bezelStyle = NSBezelStyleHelpButton;
+```
+
 Use the system-provided help button to display your help documentation. People are familiar with the appearance of the standard help button and know that choosing it opens help content.
 
 Include no more than one help button per window. Multiple help buttons in the same context make it hard for people to predict the result of clicking one.

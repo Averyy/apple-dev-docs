@@ -14,9 +14,9 @@ An atom that represents media language information.
 
 The extended language tag atom represents media language information based on the RFC 4646 (Best Common Practices (BCP) #47) industry standard. It is an optional peer of the media header atom and follows the definition of the media header atom in a QuickTime movie. There is at most one extended language tag atom per media atom and, in turn, per track. The extended language tag atom has an atom type of `'elng'`.
 
-Until the introduction of this atom type, QuickTime had support for languages via codes based on either ISO 639 or the classic Macintosh language codes. These language codes are associated to a media (per track) in a QuickTime movie and are referred to as the . For more information, see [`Language code values`](language_code_values.md).
+Until the introduction of this atom type, QuickTime had support for languages via codes based on either ISO 639 or the classic Macintosh language codes. These language codes are associated to a media (per track) in a QuickTime movie and are referred to as the *media language*. For more information, see [`Language code values`](language_code_values.md).
 
-To distinguish the extended language support from the old system, it is referred to as the  as opposed to . The major advantage of the extended language tag is that it includes additional information such as region, script, variation, and so on, as parts (or subtags). For instance, this additional information allows distinguishing content in French as spoken in Canada from content in French as spoken in France.
+To distinguish the extended language support from the old system, it is referred to as the *extended language tag* as opposed to *language code*. The major advantage of the extended language tag is that it includes additional information such as region, script, variation, and so on, as parts (or subtags). For instance, this additional information allows distinguishing content in French as spoken in Canada from content in French as spoken in France.
 
 The layout of an extended language tag atom is as follows.
 

@@ -23,8 +23,8 @@ Cancel buttons are not displayed for apps running on iPad, even when you specify
 
 ## Parameters
 
-- `showsCancelButton`:   to display the cancel button, otherwise  .
-- `animated`:   to use animation to change the display state of the cancel button, otherwise  .
+- `showsCancelButton`: [`true`](https://developer.apple.com/documentation/Swift/true) to display the cancel button, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to use animation to change the display state of the cancel button, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

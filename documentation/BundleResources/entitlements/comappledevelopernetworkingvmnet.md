@@ -6,6 +6,12 @@
 **Availability**:
 - macOS 14.0+
 
+
+
+**Type**: boolean
+
+**Default**: `YES`
+
 ## See Also
 
 - [Network Extensions Entitlement](entitlements/com.apple.developer.networking.networkextension.md)

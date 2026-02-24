@@ -67,8 +67,8 @@ To control the amount of padding independently for each edge, use [`padding(_:)`
 
 ## Parameters
 
-- `edges`: The set of edges to pad for this view. The default   is  .
-- `length`: An amount, given in points, to pad this view on the   specified edges. If you set the value to  , SwiftUI uses   a platform-specific default amount. The default value of this   parameter is  .
+- `edges`: The set of edges to pad for this view. The default is [`all`](edge/set/all.md).
+- `length`: An amount, given in points, to pad this view on the specified edges. If you set the value to `nil`, SwiftUI uses a platform-specific default amount. The default value of this parameter is `nil`.
 
 ## See Also
 

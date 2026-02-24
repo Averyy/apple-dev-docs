@@ -25,7 +25,7 @@ Nested transactions have nested data scope; setting a key always sets it in the 
 
 ## Parameters
 
-- `anObject`: The value for the key identified by  .
+- `anObject`: The value for the key identified by `key`.
 - `key`: The name of one of the receiver’s properties.
 
 ## See Also

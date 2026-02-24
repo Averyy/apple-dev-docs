@@ -22,9 +22,9 @@ func CFStringAppendCString(_ theString: CFMutableString!, _ cStr: UnsafePointer<
 
 ## Parameters
 
-- `theString`: The string to which the characters from   are appended. If this value is not a CFMutableString object, an assertion is raised.
+- `theString`: The string to which the characters from `cStr` are appended. If this value is not a CFMutableString object, an assertion is raised.
 - `cStr`: A pointer to a C string buffer.
-- `encoding`: The encoding of the characters in  .
+- `encoding`: The encoding of the characters in `cStr`.
 
 ## See Also
 

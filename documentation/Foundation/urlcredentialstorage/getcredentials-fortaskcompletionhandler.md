@@ -24,7 +24,7 @@ func credentials(for protectionSpace: URLProtectionSpace, task: URLSessionTask) 
 
 - `protectionSpace`: The protection space whose credentials you want to retrieve.
 - `task`: The task accessing the specified protection space.
-- `completionHandler`: A completion handler that receives a single argument with the credentials for the specified protection space and task. The dictionary’s keys are user name strings, and the corresponding value is a  . If no credential has been set for this space, the argument to the completion handler is  .
+- `completionHandler`: A completion handler that receives a single argument with the credentials for the specified protection space and task. The dictionary’s keys are user name strings, and the corresponding value is a [`URLCredential`](urlcredential.md). If no credential has been set for this space, the argument to the completion handler is `nil`.
 
 ## See Also
 

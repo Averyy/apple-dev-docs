@@ -28,7 +28,7 @@ A new color. In Objective-C, you’re responsible for releasing this object usin
 
 - `space`: A pattern color space for the new color. Core Graphics retains the color space you pass in. On return, you may safely release it.
 - `pattern`: A pattern for the new color object. Core Graphics retains the pattern you pass in. On return, you may safely release it.
-- `components`: An array of intensity values describing the color. The array should contain   values that correspond to the   color components in the specified color space, followed by the alpha component. Each component value should be in the range appropriate for the color space. Values outside this range will be clamped to the nearest correct value.
+- `components`: An array of intensity values describing the color. The array should contain `n + 1` values that correspond to the `n` color components in the specified color space, followed by the alpha component. Each component value should be in the range appropriate for the color space. Values outside this range will be clamped to the nearest correct value.
 
 ## See Also
 

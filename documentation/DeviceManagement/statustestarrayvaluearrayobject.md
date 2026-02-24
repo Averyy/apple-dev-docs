@@ -19,6 +19,11 @@ A status value for the test status item array.
 object StatusTestArrayValueArrayObject
 ```
 
+## Properties
+
+- `key1` (string) *(required)*: The value of the first sub-key.
+- `key2` (string): The value of the second sub-key.
+
 
 ---
 

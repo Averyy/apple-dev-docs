@@ -25,8 +25,8 @@ See [`timeZone`](hmtimertrigger/timezone.md) for a description of how the time z
 
 ## Parameters
 
-- `timeZone`: The new time zone; may be  .
-- `completion`: The block executed after the request is processed.
+- `timeZone`: The new time zone; may be `nil`.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

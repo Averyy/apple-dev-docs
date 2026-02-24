@@ -27,8 +27,8 @@ To avoid polling and blocking your thread’s execution, you can create a run lo
 ## Parameters
 
 - `userNotification`: The user notification to use.
-- `timeout`: The amount of time to wait for the user to respond to   or for the notification to time out. If neither happens before   passes, this function returns a non-  value. If   is  , the function blocks until the user notification is dismissed.
-- `responseFlags`: On return, contains flags identifying how the notification was dismissed, the state of any checkboxes, and the selected element of the pop-up menu. Bits 0-1 of the value hold an identifier for the button pressed by the user (see  ). Extract the identifier by performing a bitwise-AND operation with  . Bits 8-15 of   hold the state of up to 8 checkboxes or radio buttons, if present. Extract the flags by performing bitwise-AND operations with the return value of  . Bits 24-31 hold the index number of the element selected in a pop-up menu, if present. Extract the index by performing a 24-bit right shift:  .
+- `timeout`: The amount of time to wait for the user to respond to `userNotification` or for the notification to time out. If neither happens before `timeout` passes, this function returns a non-`0` value. If `timeout` is `0`, the function blocks until the user notification is dismissed.
+- `responseFlags`: On return, contains flags identifying how the notification was dismissed, the state of any checkboxes, and the selected element of the pop-up menu. Bits 0-1 of the value hold an identifier for the button pressed by the user (see [`Response Codes`](1534504-response-codes.md)). Extract the identifier by performing a bitwise-AND operation with `0x3`. Bits 8-15 of `responseFlags` hold the state of up to 8 checkboxes or radio buttons, if present. Extract the flags by performing bitwise-AND operations with the return value of [`CFUserNotificationCheckBoxChecked(_:)`](cfusernotificationcheckboxchecked(_:).md). Bits 24-31 hold the index number of the element selected in a pop-up menu, if present. Extract the index by performing a 24-bit right shift: `responseFlags >> 24`.
 
 ## See Also
 

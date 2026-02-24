@@ -25,8 +25,8 @@ func shear<T>(direction: vImage.ShearDirection, translate: T, slope: T, resampli
 - `direction`: An enumeration that specifies the shear direction.
 - `translate`: A value that specifies the translation.
 - `slope`: The slope of the front edge of the sheared image.
-- `resamplingFilter`: The resampling filter that the function uses. For more information, see  .
-- `backgroundColor`: An optional background color. If you pass  , the operation uses the   flag to extend the edges of the image infinitely.
+- `resamplingFilter`: The resampling filter that the function uses. For more information, see [`Reducing artifacts with custom resampling filters`](reducing-artifacts-with-custom-resampling-filters.md).
+- `backgroundColor`: An optional background color. If you pass `nil`, the operation uses the [`kvImageEdgeExtend`](kvimageedgeextend.md) flag to extend the edges of the image infinitely.
 - `destination`: The destination pixel buffer.
 
 ## See Also

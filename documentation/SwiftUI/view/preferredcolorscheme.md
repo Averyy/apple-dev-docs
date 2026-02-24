@@ -89,7 +89,7 @@ var body: some View {
 
 ## Parameters
 
-- `colorScheme`: The preferred color scheme for this view, or    to indicate no preference.
+- `colorScheme`: The preferred color scheme for this view, or `nil` to indicate no preference.
 
 ## See Also
 

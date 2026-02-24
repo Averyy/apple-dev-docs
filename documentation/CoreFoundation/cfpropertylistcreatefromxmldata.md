@@ -30,10 +30,10 @@ A new property list if the conversion is successful, otherwise `NULL`. Ownership
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new property list. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `xmlData`: The raw bytes to convert into a property list. The bytes may be the content of an XML file or of a binary property list (see  ).
-- `mutabilityOption`: A constant that specifies the degree of mutability for the returned property list. See   for descriptions of possible values.
-- `errorString`: Pass   if you do not wish to receive an error string. Ownership follows the  .
+- `allocator`: The allocator to use to allocate memory for the new property list. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `xmlData`: The raw bytes to convert into a property list. The bytes may be the content of an XML file or of a binary property list (see [`CFPropertyListFormat`](cfpropertylistformat.md)).
+- `mutabilityOption`: A constant that specifies the degree of mutability for the returned property list. See [`Property List Mutability Options`](property_list_mutability_options.md) for descriptions of possible values.
+- `errorString`: On return, `NULL` if the conversion is successful, otherwise a string that describes the nature of the error. Error messages are not localized, but may be in the future, so they are not currently suitable for comparison. Pass `NULL` if you do not wish to receive an error string. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 

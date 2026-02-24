@@ -38,6 +38,116 @@ Refer to the following sections to determine supported channels and requirements
 
 ##### Example Request and Response
 
+**Enterprise**:
+
+This command installs an enterprise book.
+
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>Author</key>
+        <string>Acme, Inc.</string>
+        <key>Kind</key>
+        <string>pdf</string>
+        <key>MediaType</key>
+        <string>Book</string>
+        <key>MediaURL</key>
+        <string>https://yourmdmhost.example.com/files/myenterprisebook.pdf</string>
+        <key>PersistentID</key>
+        <string>com.acme.pdf.myenterprisebook</string>
+        <key>RequestType</key>
+        <string>InstallMedia</string>
+        <key>Title</key>
+        <string>My Enterprise Book</string>
+        <key>Version</key>
+        <string>1.0</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_InstallMedia</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_InstallMedia</string>
+    <key>MediaType</key>
+    <string>Book</string>
+    <key>MediaURL</key>
+    <string>https://yourmdmhost.example.com/files/myenterprisebook.pdf</string>
+    <key>PersistentID</key>
+    <string>com.acme.pdf.myenterprisebook</string>
+    <key>State</key>
+    <string>Installing</string>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>00008020-000915083C80012E</string>
+</dict>
+</plist>
+```
+
+**Book Store**:
+
+This command installs a book from the Book Store.
+
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>MediaType</key>
+        <string>Book</string>
+        <key>RequestType</key>
+        <string>InstallMedia</string>
+        <key>iTunesStoreID</key>
+        <integer>1420662672</integer>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_InstallMedia</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_InstallMedia</string>
+    <key>MediaType</key>
+    <string>Book</string>
+    <key>State</key>
+    <string>Installing</string>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>00008020-000915083C80012E</string>
+    <key>iTunesStoreID</key>
+    <integer>1420662672</integer>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -45,6 +155,10 @@ Refer to the following sections to determine supported channels and requirements
   The command to install a book on a device.
 - [object InstallMediaResponse](installmediaresponse.md)
   A response from the device after it processes the command to install a book on a device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

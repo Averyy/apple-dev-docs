@@ -22,7 +22,7 @@ func addSubtree(_ subtree: PHASESoundEventNodeDefinition, switchValue: String)
 ## Parameters
 
 - `subtree`: The child node, which itself can contain a hierarchical tree of descendent nodes.
-- `switchValue`: The meta parameter value that invokes the   child node.
+- `switchValue`: The meta parameter value that invokes the `subtree` child node.
 
 ## See Also
 

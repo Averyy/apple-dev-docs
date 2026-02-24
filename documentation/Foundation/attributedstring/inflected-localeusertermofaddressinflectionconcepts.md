@@ -29,9 +29,9 @@ Arguments that were previously formatted in the string must be annotated with th
 
 ## Parameters
 
-- `locale`: The locale used for formatting the string. It also specifies   the language used for automatic grammar agreement, unless overridden   with the   attribute.
-- `userTermOfAddress`: The user’s preferred term of address, if the user   has set one. A value of   indicates no preference, in which case   the inflection alternative will be used for strings that address the   the user. Default value is  .
-- `inflectionConcepts`: A list of objects providing additional hints for   automatic grammar agreement, such as terms of address for people who   are mentioned, or phrases with which the string has to grammatically   agree.
+- `locale`: The locale used for formatting the string. It also specifies the language used for automatic grammar agreement, unless overridden with the `languageIdentifier` attribute.
+- `userTermOfAddress`: The user’s preferred term of address, if the user has set one. A value of `nil` indicates no preference, in which case the inflection alternative will be used for strings that address the the user. Default value is `.currentUser`.
+- `inflectionConcepts`: A list of objects providing additional hints for automatic grammar agreement, such as terms of address for people who are mentioned, or phrases with which the string has to grammatically agree.
 
 
 ---

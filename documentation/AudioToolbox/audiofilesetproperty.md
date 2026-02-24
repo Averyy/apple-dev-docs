@@ -26,8 +26,8 @@ A result code. See Result Codes.
 ## Parameters
 
 - `inAudioFile`: The audio file that you want to set a property value for.
-- `inPropertyID`: The property whose value you want to set. See   for possible values. Use the   function to determine whether the property value is writable.
-- `inDataSize`: The size of the value you are passing in the   parameter.
+- `inPropertyID`: The property whose value you want to set. See [`Audio File Properties`](1576499-audio-file-properties.md) for possible values. Use the [`AudioFileGetPropertyInfo(_:_:_:_:)`](audiofilegetpropertyinfo(_:_:_:_:).md) function to determine whether the property value is writable.
+- `inDataSize`: The size of the value you are passing in the `inPropertyData` parameter.
 - `inPropertyData`: The new value for the property.
 
 ## See Also

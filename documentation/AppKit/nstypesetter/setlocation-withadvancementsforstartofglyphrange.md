@@ -24,9 +24,9 @@ A subclass can override this method to interact with custom glyph storage.
 
 ## Parameters
 
-- `location`: The location where the glyphs in   are laid out. The x-coordinate of   is expressed relative to the line fragment rectangle origin, and the y-coordinate is expressed relative to the baseline previously specified by  .
+- `location`: The location where the glyphs in `glyphRange` are laid out. The x-coordinate of `location` is expressed relative to the line fragment rectangle origin, and the y-coordinate is expressed relative to the baseline previously specified by [`setLineFragmentRect(_:forGlyphRange:usedRect:baselineOffset:)`](nstypesetter/setlinefragmentrect(_:forglyphrange:usedrect:baselineoffset:).md).
 - `advancements`: The nominal glyph advance width specified in the font metric information.
-- `glyphRange`: The range of glyphs whose layout location is being set. This series of glyphs can be displayed with a single PostScript   operation (a nominal range).
+- `glyphRange`: The range of glyphs whose layout location is being set. This series of glyphs can be displayed with a single PostScript `show` operation (a nominal range).
 
 ## See Also
 

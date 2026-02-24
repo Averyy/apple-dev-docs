@@ -25,8 +25,8 @@ The [`UITableView`](uitableview.md) object sends this message to the data source
 ## Parameters
 
 - `tableView`: The table-view object requesting this action.
-- `sourceIndexPath`: An index path locating the row to be moved in  .
-- `destinationIndexPath`: An index path locating the row in   that’s the destination of the move.
+- `sourceIndexPath`: An index path locating the row to be moved in `tableView`.
+- `destinationIndexPath`: An index path locating the row in `tableView` that’s the destination of the move.
 
 ## See Also
 

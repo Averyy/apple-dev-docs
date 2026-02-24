@@ -22,7 +22,7 @@ An array of display modes that the display supports, or `NULL` if the display is
 ## Parameters
 
 - `display`: The identifier of the display to be accessed.
-- `options`: Reserved for future expansion. Pass   for now.
+- `options`: Reserved for future expansion. Pass `NULL` for now.
 
 ## See Also
 

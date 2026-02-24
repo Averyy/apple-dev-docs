@@ -26,9 +26,9 @@ An initialized ordered set containing a uniqued collection of the objects contai
 
 ## Parameters
 
-- `set`: If the same object appears more than once in array, it is represented only once in the returned ordered set.
-- `range`: The range of objects in   to add to the ordered set.
-- `flag`: If   the objects are copied to the ordered set; otherwise  .
+- `set`: An array of objects to add to the new set. If the same object appears more than once in array, it is represented only once in the returned ordered set.
+- `range`: The range of objects in `array` to add to the ordered set.
+- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true) the objects are copied to the ordered set; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

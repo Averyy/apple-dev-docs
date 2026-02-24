@@ -31,7 +31,7 @@ When calling a file coordinator’s [`coordinate(with:queue:byAccessor:)`](nsfil
 ## Parameters
 
 - `url`: The URL of the document you intend to write to.
-- `options`: The coordinated writing options. For a list of valid values, see   in the  .
+- `options`: The coordinated writing options. For a list of valid values, see [`NSFileCoordinator.WritingOptions`](nsfilecoordinator/writingoptions.md) in the [`NSFileCoordinator`](nsfilecoordinator.md).
 
 ## See Also
 

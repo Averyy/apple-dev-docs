@@ -21,7 +21,7 @@ struct BlendTreeBlendNode
 
 #### Overview
 
-A  mixes multiple animations to form a single animation. The [`BlendTreeBlendNode`](blendtreeblendnode.md) structure adopts the [`BlendTreeNode`](blendtreenode.md) protocol, which specifies the behavior of animations that make up a blend tree animation. This structure adds the ability to branch a blend tree at any point. Each member of this property’s [`sources`](blendtreeblendnode/sources.md) array represents a branch in the tree. For more information about blend trees, see [`BlendTreeAnimation`](blendtreeanimation.md).
+A *blend tree animation* mixes multiple animations to form a single animation. The [`BlendTreeBlendNode`](blendtreeblendnode.md) structure adopts the [`BlendTreeNode`](blendtreenode.md) protocol, which specifies the behavior of animations that make up a blend tree animation. This structure adds the ability to branch a blend tree at any point. Each member of this property’s [`sources`](blendtreeblendnode/sources.md) array represents a branch in the tree. For more information about blend trees, see [`BlendTreeAnimation`](blendtreeanimation.md).
 
 ## Topics
 

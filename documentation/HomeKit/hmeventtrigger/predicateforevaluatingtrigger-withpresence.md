@@ -25,7 +25,7 @@ A predicate object that represents a condition to evaluate before executing the 
 
 ## Parameters
 
-- `presenceEvent`: The   to evaluate as part of the predicate.
+- `presenceEvent`: The [`HMPresenceEvent`](hmpresenceevent.md) to evaluate as part of the predicate.
 
 ## See Also
 

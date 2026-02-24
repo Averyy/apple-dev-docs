@@ -49,7 +49,7 @@ may differ if equivalent composed character sequences are matched.
 ## Parameters
 
 - `searchString`: The string to search for.
-- `mask`: A mask specifying search options. For possible values, see  .
+- `mask`: A mask specifying search options. For possible values, see [`NSString.CompareOptions`](nsstring/compareoptions.md).
 
 ## See Also
 

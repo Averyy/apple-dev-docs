@@ -26,7 +26,7 @@ Finalize the removal of these resource allocations, and all others changes you s
 
 ## Parameters
 
-- `allocation`: A resource allocation, such as an  ,  , or  .
+- `allocation`: A resource allocation, such as an [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), or [`MTLHeap`](mtlheap.md).
 
 ## See Also
 

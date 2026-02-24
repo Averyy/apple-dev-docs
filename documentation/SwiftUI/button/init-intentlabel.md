@@ -21,8 +21,8 @@ init<I>(intent: I, @ViewBuilder label: () -> Label) where I : AppIntent
 
 ## Parameters
 
-- `intent`: The   to execute.
-- `label`: A view that describes the purpose of the button’s  .
+- `intent`: The `AppIntent` to execute.
+- `label`: A view that describes the purpose of the button’s `action`.
 
 ## See Also
 

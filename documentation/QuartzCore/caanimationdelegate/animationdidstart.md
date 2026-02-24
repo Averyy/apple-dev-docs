@@ -21,7 +21,7 @@ optional func animationDidStart(_ anim: CAAnimation)
 
 ## Parameters
 
-- `anim`: The   object that has started.
+- `anim`: The [`CAAnimation`](caanimation.md) object that has started.
 
 ## See Also
 

@@ -32,7 +32,7 @@ You can override this method to perform additional tasks associated with present
 
 ## Parameters
 
-- `animated`: If  , the view was added to the window using an animation.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), the view was added to the window using an animation.
 
 ## See Also
 

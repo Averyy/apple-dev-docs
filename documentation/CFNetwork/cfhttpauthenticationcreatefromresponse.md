@@ -40,7 +40,7 @@ When you have determined what information will be needed to perform the authenti
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `response`: Response indicating an authentication failure; usually a 401 or a 407 response.
 
 ## See Also

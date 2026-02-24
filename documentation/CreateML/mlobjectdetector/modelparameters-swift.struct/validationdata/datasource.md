@@ -16,7 +16,7 @@ case dataSource(MLObjectDetector.DataSource)
 
 ## Parameters
 
-- `dataSource `: An   instance the enumeration case uses as its associated   value.
+- `dataSource `: An [`MLObjectDetector.DataSource`](mlobjectdetector/datasource.md) instance the enumeration case uses as its associated value.
 
 ## See Also
 

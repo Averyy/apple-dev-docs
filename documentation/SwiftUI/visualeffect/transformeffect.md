@@ -30,7 +30,7 @@ Use `transformEffect(_:)` to rotate, scale, translate, or skew the output of the
 
 ## Parameters
 
-- `transform`: A    to   apply to the view.
+- `transform`: A [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) to apply to the view.
 
 ## See Also
 

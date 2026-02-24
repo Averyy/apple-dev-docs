@@ -23,6 +23,9 @@ var exceptionHandler: ((JSContext?, JSValue?) -> Void)! { get set }
 
 The block takes the following parameters:
 
+- **context**: The context in which the exception originates.
+- **exception**: The JavaScript exception thrown.
+
 The default value exception handler block stores its `exception` parameter value into the context’s [`exception`](jscontext/exception.md) property. As a consequence, the default behavior is that unhandled exceptions occurring within a callback from JavaScript to native code are thrown again upon return. Setting this value to `nil` results in all uncaught exceptions being silently consumed.
 
 ## See Also

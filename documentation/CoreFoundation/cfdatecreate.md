@@ -30,7 +30,7 @@ A date object that represents the absolute time `at`.  The caller is responsible
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `at`: The absolute time to convert to a CFDate object.
 
 ## See Also

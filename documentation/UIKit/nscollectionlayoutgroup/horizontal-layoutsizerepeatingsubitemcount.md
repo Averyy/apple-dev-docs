@@ -21,7 +21,7 @@ class func horizontal(layoutSize: NSCollectionLayoutSize, repeatingSubitem subit
 ## Parameters
 
 - `layoutSize`: The group’s size.
-- `subitem`: The subitem to repeat. It’s your responsibility to ensure that the group’s   can fit   repetitions of this item.
+- `subitem`: The subitem to repeat. It’s your responsibility to ensure that the group’s `layoutSize` can fit `count` repetitions of this item.
 - `count`: The number of times to repeat the subitem.
 
 ## See Also

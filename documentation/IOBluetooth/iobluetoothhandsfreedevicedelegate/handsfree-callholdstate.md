@@ -17,7 +17,7 @@ optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, callHoldState: NS
 ## Parameters
 
 - `device`: The connected Bluetooth hands-free phone or headset.
-- `callHoldState`: The new value of the call hold indicator. For possible values, see  .
+- `callHoldState`: The new value of the call hold indicator. For possible values, see [`IOBluetoothHandsFreeIndicatorCallHeld`](iobluetoothhandsfreeindicatorcallheld.md).
 
 ## See Also
 

@@ -26,6 +26,11 @@ You provide a block with this signature when using the [`scene(options:statusHan
 
 The block takes four parameters:
 
+- **totalProgress**: A floating-point number between `0.0` and `1.0` indicating the overall progress of loading the scene. A value of `0.0` indicates that the loading process has just begun, and a value of `1.0` indicates that the process has completed.
+- **status**: A constant identifying one of the distinct phases of SceneKit’s loading procedure. See [`SCNSceneSourceStatus`](scnscenesourcestatus.md) for possible values.
+- **error**: An error object describing any error that has occurred during scene loading, or `nil` if no errors has been encountered.
+- **stopLoading**: A reference to a Boolean value. Set `*stop` to [`true`](https://developer.apple.com/documentation/Swift/true) within the block to abort further processing of the scene source’s contents.
+
 ## See Also
 
 - [SCNSceneSource.LoadingOption](scnscenesource/loadingoption.md)

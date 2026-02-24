@@ -22,8 +22,8 @@ func setLineDash(_ pattern: UnsafePointer<CGFloat>?, count: Int, phase: CGFloat)
 ## Parameters
 
 - `pattern`: A C-style array of floating point values that contains the lengths (measured in points) of the line segments and gaps in the pattern. The values in the array alternate, starting with the first line segment length, followed by the first gap length, followed by the second line segment length, and so on.
-- `count`: The number of values in  .
-- `phase`: The offset at which to start drawing the pattern, measured in points along the dashed-line pattern. For example, a phase value of   for the pattern 5-2-3-2 would cause drawing to begin in the middle of the first gap.
+- `count`: The number of values in `pattern`.
+- `phase`: The offset at which to start drawing the pattern, measured in points along the dashed-line pattern. For example, a phase value of `6` for the pattern 5-2-3-2 would cause drawing to begin in the middle of the first gap.
 
 ## See Also
 

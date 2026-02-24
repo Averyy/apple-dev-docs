@@ -26,10 +26,10 @@ Creates a physics body component deriving mass properties from shape and density
 
 ## Parameters
 
-- `shapes`: The shape for which to estimate the mass, rotational inertia,   and center of mass.
+- `shapes`: The shape for which to estimate the mass, rotational inertia, and center of mass.
 - `density`: The density of the object in kilograms per cubic meter.
 - `material`: The material properties, like friction.
-- `mode`: The simulation mode that indicates how a body responds to   forces.
+- `mode`: The simulation mode that indicates how a body responds to forces.
 
 ## See Also
 

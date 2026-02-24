@@ -31,7 +31,7 @@ If `alloc_memory` is null, BNNS uses `posix_memalign(_:_:_:)` for memory allocat
 ## Parameters
 
 - `flags`: A logical OR of zero or more values from BNNS flags.
-- `n_threads`: The maximum number of threads that the filter executes. Set to   to specify that the filter automatically selects the number of threads. Set to   to specify that the filter operates on a single thread.
+- `n_threads`: The maximum number of threads that the filter executes. Set to `0` to specify that the filter automatically selects the number of threads. Set to `1` to specify that the filter operates on a single thread.
 - `alloc_memory`: The function the filter calls to allocate memory.
 - `free_memory`: The function the filter calls to deallocate memory.
 

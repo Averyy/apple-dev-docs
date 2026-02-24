@@ -24,14 +24,14 @@ This function returns immediately. It does not wait for a user response after di
 
 ## Parameters
 
-- `timeout`: The amount of time to wait for the user to dismiss the notification dialog before the dialog dismisses itself. Pass   to have the dialog never time out.
-- `flags`: A set of flags describing the type of notification dialog to display. The value is normally just the alert level from  . If you don’t want a default button displayed, perform a bitwise-OR operation with the alert level and the constant  .
-- `iconURL`: A file URL pointing to the icon to display in the dialog. If  , a default icon is used based on the notification’s alert level specified in  .
+- `timeout`: The amount of time to wait for the user to dismiss the notification dialog before the dialog dismisses itself. Pass `0` to have the dialog never time out.
+- `flags`: A set of flags describing the type of notification dialog to display. The value is normally just the alert level from [`Alert Levels`](1534483-alert-levels.md). If you don’t want a default button displayed, perform a bitwise-OR operation with the alert level and the constant [`kCFUserNotificationNoDefaultButtonFlag`](kcfusernotificationnodefaultbuttonflag.md).
+- `iconURL`: A file URL pointing to the icon to display in the dialog. If `NULL`, a default icon is used based on the notification’s alert level specified in `flags`.
 - `soundURL`: Not used.
-- `localizationURL`: A file URL pointing to a bundle that contains localized versions of the strings displayed in the dialog. Can be  .
-- `alertHeader`: The title of the notification dialog. Cannot be  .
-- `alertMessage`: The message string to display in the dialog. Can be  .
-- `defaultButtonTitle`: The title of the default button. If  , the string   is used.
+- `localizationURL`: A file URL pointing to a bundle that contains localized versions of the strings displayed in the dialog. Can be `NULL`.
+- `alertHeader`: The title of the notification dialog. Cannot be `NULL`.
+- `alertMessage`: The message string to display in the dialog. Can be `NULL`.
+- `defaultButtonTitle`: The title of the default button. If `NULL`, the string `OK` is used.
 
 ## See Also
 

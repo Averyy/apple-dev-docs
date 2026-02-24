@@ -8,6 +8,10 @@ A message that tells people why the app is requesting the ability to send Apple 
 **Availability**:
 - macOS 10.14+
 
+
+
+**Type**: string
+
 #### Discussion
 
 An app using Apple events to control another app might be able to gain access to sensitive user data. For example, the Mail app stores a lot of personal information in its local database that other apps can’t access directly. But because Mail can be automated with Apple events, other apps can use Mail to gain access to the data indirectly.

@@ -27,7 +27,7 @@ SwiftUI ignores this image for accessibility purposes.
 ## Parameters
 
 - `name`: The name of the image resource to lookup
-- `bundle`: The bundle to search for the image resource. If  ,   SwiftUI uses the main  . Defaults to  .
+- `bundle`: The bundle to search for the image resource. If `nil`, SwiftUI uses the main `Bundle`. Defaults to `nil`.
 
 ## See Also
 

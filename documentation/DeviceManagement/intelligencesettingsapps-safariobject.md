@@ -17,6 +17,10 @@ If present, configures Safari intelligence features.
 object IntelligenceSettingsApps_SafariObject
 ```
 
+## Properties
+
+- `AllowSummary` (boolean): If `false`, disables Safari Summary.
+
 ## See Also
 
 - [object IntelligenceSettingsApps_MailObject](intelligencesettingsapps_mailobject.md)

@@ -14,6 +14,10 @@ A dictionary that maps team identifiers to bundle identifiers of extensions that
 object SystemExtensions.NonRemovableFromUISystemExtensions
 ```
 
+## Properties
+
+- `ANY` ([string]): System extension bundle identifiers
+
 ## See Also
 
 - [object SystemExtensions.AllowedSystemExtensionTypes](systemextensions/allowedsystemextensiontypes-data.dictionary.md)

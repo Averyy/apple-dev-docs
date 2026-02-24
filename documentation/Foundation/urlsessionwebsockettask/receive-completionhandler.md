@@ -27,7 +27,7 @@ If the task reaches the [`maximumMessageSize`](urlsessionwebsockettask/maximumme
 
 ## Parameters
 
-- `completionHandler`: A closure that receives two parameters: the WebSocket message, and an   that indicates an error encountered while receiving the message. The error is   if no error occurred.
+- `completionHandler`: A closure that receives two parameters: the WebSocket message, and an [`NSError`](nserror.md) that indicates an error encountered while receiving the message. The error is `nil` if no error occurred.
 
 ## See Also
 

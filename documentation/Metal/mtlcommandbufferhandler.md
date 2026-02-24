@@ -25,7 +25,7 @@ The [`MTLCommandBuffer`](mtlcommandbuffer.md) type uses this signature in its me
 
 ## Parameters
 
-- `commandBuffer`: The   instance that’s invoking the completion handler.
+- `commandBuffer`: The [`MTLCommandBuffer`](mtlcommandbuffer.md) instance that’s invoking the completion handler.
 
 ## See Also
 

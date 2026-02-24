@@ -20,7 +20,7 @@ A new effect with the given override applied.
 
 #### Discussion
 
-For example, the following effect will  have an opacity of 1.0 since the override forces the effect to always be active:
+For example, the following effect will *always* have an opacity of 1.0 since the override forces the effect to always be active:
 
 ```swift
 Color.red
@@ -83,7 +83,7 @@ Color.red
 
 ## Parameters
 
-- `override`: The override to apply to the hover effect’s current phase. If    is provided, this modifier has no effect.
+- `override`: The override to apply to the hover effect’s current phase. If `nil` is provided, this modifier has no effect.
 
 
 ---

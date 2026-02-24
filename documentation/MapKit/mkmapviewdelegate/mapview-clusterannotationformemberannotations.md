@@ -30,7 +30,7 @@ Use this method to customize the cluster annotations that display on your map. T
 ## Parameters
 
 - `mapView`: The map view containing the specified annotations.
-- `memberAnnotations`: The annotations for the map to cluster together. The returned   object needs to include the specific annotations in this parameter.
+- `memberAnnotations`: The annotations for the map to cluster together. The returned [`MKClusterAnnotation`](mkclusterannotation.md) object needs to include the specific annotations in this parameter.
 
 ## See Also
 

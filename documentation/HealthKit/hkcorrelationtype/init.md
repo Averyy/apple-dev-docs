@@ -21,7 +21,7 @@ convenience init(_ identifier: HKCorrelationTypeIdentifier)
 
 ## Parameters
 
-- `identifier`: An identifier that specifies the type of data to store in the sample. For a complete list of correlation type identifiers, see  .
+- `identifier`: An identifier that specifies the type of data to store in the sample. For a complete list of correlation type identifiers, see [`HKCorrelationTypeIdentifier`](hkcorrelationtypeidentifier.md).
 
 
 ---

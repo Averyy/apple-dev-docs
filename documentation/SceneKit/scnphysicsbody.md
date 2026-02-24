@@ -30,7 +30,7 @@ To add physics to a node, create and configure an [`SCNPhysicsBody`](scnphysicsb
 
 The [`SCNPhysicsBody`](scnphysicsbody.md) class defines the physical characteristics for the body when it is simulated by the scene. Three properties are most important for physics simulation:
 
-- The [`type`](scnphysicsbody/type.md) property, which determines how the body interacts with forces and other bodies in the simulation.  bodies are unaffected by forces and collisions and cannot move.  bodies are affected by forces and collisions with other body types.  bodies are not affected by forces or collisions, but by moving them directly you can cause collisions that affect dynamic bodies.
+- The [`type`](scnphysicsbody/type.md) property, which determines how the body interacts with forces and other bodies in the simulation. *Static* bodies are unaffected by forces and collisions and cannot move. *Dynamic* bodies are affected by forces and collisions with other body types. *Kinematic* bodies are not affected by forces or collisions, but by moving them directly you can cause collisions that affect dynamic bodies.
 - The [`physicsShape`](scnphysicsbody/physicsshape.md) property, which defines the three-dimensional form of the body for collision detection purposes. Physics simulations run faster when using simple shapes instead of the fine detail of a node’s visible geometry. Typically, you set a body’s physics shape to a bounding box, sphere, or primitive shape that roughly matches its node’s visible content. For details on creating physics shapes, see [`SCNPhysicsShape`](scnphysicsshape.md).
 - The [`kinematic()`](scnphysicsbody/kinematic().md) property. Applying a force or torque to a dynamic body results in an acceleration (or angular acceleration) proportional to its mass.
 
@@ -59,6 +59,24 @@ SceneKit evaluates its physics simulation as part of the rendering loop describe
 Because you can animate SceneKit content not only through physics, but also through actions and implicitly and explicitly defined animations, SceneKit applies the results of physics simulation not to the [`SCNNode`](scnnode.md) objects in your scene, but to each node’s [`presentation`](scnnode/presentation.md) object that represents its currently displayed state. As such, changing properties of a node that are affected by physics  requires special consideration.
 
 If you change the [`transform`](scnnode/transform.md) value—or any of the other properties that are components of the transform, such as [`position`](scnnode/position.md) and [`rotation`](scnnode/rotation.md)—of a node affected by physics, SceneKit resets the physics simulation for that node. If you want to change only one component of the transform, while leaving the others at their physics-simulated values, copy the presentation node’s transform before making changes, as shown below:
+
+**Swift**:
+
+```swift
+// Copy the presentation node's transform to the model node.
+node.transform = node.presentationNode.transform
+// Change one component of the new transform
+node.eulerAngles.z = newRollValue
+```
+
+**Objective-C**:
+
+```objc
+// Copy the presentation node's transform to the model node.
+node.transform = node.presentationNode.transform;
+// Change one component of the new transform
+node.eulerAngles = SCNVector3Make(node.eulerAngles.x, node.eulerAngles.y, newRollValue);
+```
 
 ## Topics
 

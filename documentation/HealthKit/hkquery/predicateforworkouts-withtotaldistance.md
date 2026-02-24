@@ -27,6 +27,38 @@ A predicate for matching workouts based on the total distance traveled. This pre
 
 Use this convenience method to create a predicate that matches against a workout’s total distance. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+// Predicate matching workouts covering 6.5 miles or more.
+let distance = HKQuantity(unit: HKUnit.mileUnit(), doubleValue: 6.5)
+let workout = HKQuery.predicateForWorkoutsWithOperatorType(
+    .GreaterThanOrEqualToPredicateOperatorType,
+    totalDistance: distance)
+ 
+ 
+let explicitWorkout = NSPredicate(format: "%K >= %@",
+                                  HKPredicateKeyPathWorkoutTotalDistance, distance)
+```
+
+**Objective-C**:
+
+```objc
+// Predicate matching workouts covering 6.5 miles or more.
+HKQuantity *distance =
+    [HKQuantity quantityWithUnit:[HKUnit mileUnit] doubleValue:6.5];
+ 
+NSPredicate *workout =
+    [HKQuery predicateForWorkoutsWithOperatorType:
+     NSGreaterThanOrEqualToPredicateOperatorType
+     totalDistance:distance];
+ 
+NSPredicate *explicitWorkout =
+[NSPredicate predicateWithFormat:@"%K >= %@",
+ HKPredicateKeyPathWorkoutTotalDistance,
+ distance];
+```
+
 ## Parameters
 
 - `operatorType`: The operator type to use when comparing the total distance.

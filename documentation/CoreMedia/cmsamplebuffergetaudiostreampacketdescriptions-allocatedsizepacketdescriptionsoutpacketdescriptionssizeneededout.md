@@ -32,10 +32,10 @@ This API is specific to audio format sample buffers, and will return `kCMSampleB
 
 ## Parameters
 
-- `sbuf`:   being accessed.
-- `packetDescriptionsSize`: Size of   as allocated by the caller.
-- `packetDescriptionsOut`: Allocated by the caller, receives the packet descriptions for the samples in the  . If non-  and   is too small,   is returned.
-- `packetDescriptionsSizeNeededOut`: Used to query for the correct size required for  . May be  .
+- `sbuf`: `CMSampleBuffer` being accessed.
+- `packetDescriptionsSize`: Size of `packetDescriptionsOut` as allocated by the caller.
+- `packetDescriptionsOut`: Allocated by the caller, receives the packet descriptions for the samples in the `CMSampleBuffer`. If non-`NULL` and `packetDescriptionsSize` is too small, `kFigSampleBufferError_ArrayTooSmall` is returned.
+- `packetDescriptionsSizeNeededOut`: Used to query for the correct size required for `packetDescriptionsOut`. May be `NULL`.
 
 ## See Also
 

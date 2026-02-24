@@ -14,6 +14,20 @@ For example, consider the code again in . Because the button is going to run an 
 
 Listing 1. Pausing frame processing during a transition
 
+**Swift**:
+
+```swift
+reveal.pausesOutgoingScene = true;
+reveal.pausesIncomingScene = false;
+```
+
+**Obj-C**:
+
+```objc
+reveal.pausesOutgoingScene = YES;
+reveal.pausesIncomingScene = NO;
+```
+
 ## See Also
 
 - [Transitioning Between Two Scenes](transitioning-between-two-scenes.md)

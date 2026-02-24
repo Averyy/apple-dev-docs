@@ -20,6 +20,22 @@ class var isNestedVirtualizationSupported: Bool { get }
 
 Use this property to check whether support is available for the platform. As the following example shows, if the framework supports nested virtualization on the host, use [`isNestedVirtualizationEnabled`](vzgenericplatformconfiguration/isnestedvirtualizationenabled.md) to enable the feature:
 
+**Swift**:
+
+```swift
+if needsNestedVirtualization && VZGenericPlatformConfiguration.isNestedVirtualizationSupported {
+    genericPlatformConfiguration.isNestedVirtualizationEnabled = true
+}
+```
+
+**Objective-C**:
+
+```objc
+if (needsNestedVirtualization && VZGenericPlatformConfiguration.isNestedVirtualizationSupported) {
+    genericPlatformConfiguration.nestedVirtualizationEnabled = YES;
+}
+```
+
 ## See Also
 
 - [var machineIdentifier: VZGenericMachineIdentifier](vzgenericplatformconfiguration/machineidentifier.md)

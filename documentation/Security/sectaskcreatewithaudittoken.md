@@ -21,7 +21,7 @@ A new task, or `NULL` on error. In Objective-C, call the [`CFRelease`](https://d
 
 ## Parameters
 
-- `allocator`: An allocator. Pass   to use the default.
+- `allocator`: An allocator. Pass `NULL` to use the default.
 - `token`: The audit token of a Mach message.
 
 

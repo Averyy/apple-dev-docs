@@ -28,7 +28,7 @@ Creates the application, loads the main nib file from the application’s main b
 
 ## Parameters
 
-- `argc`: The number of arguments in the   parameter.
+- `argc`: The number of arguments in the `argv` parameter.
 - `argv`: An array of pointers containing the arguments passed to the application at startup.
 
 ## See Also

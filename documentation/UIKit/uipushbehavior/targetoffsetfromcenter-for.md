@@ -39,7 +39,7 @@ The offset, from the center of the dynamic item, at which the push behavior’s 
 - [func setTargetOffsetFromCenter(UIOffset, for: any UIDynamicItem)](uipushbehavior/settargetoffsetfromcenter(_:for:).md)
   Sets the offset, from the center of a dynamic item, at which to apply the push behavior’s force vector.
 - [var pushDirection: CGVector](uipushbehavior/pushdirection.md)
-  The direction of the force vector for the behavior, expressed as  and  components and using standard UIKit geometry.
+  The direction of the force vector for the behavior, expressed as *x* and *y* components and using standard UIKit geometry.
 
 
 ---

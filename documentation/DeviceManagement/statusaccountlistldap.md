@@ -36,6 +36,10 @@ object StatusAccountListLDAP
 - [object StatusAccountListLDAPAccountObject](statusaccountlistldapaccountobject.md)
   A status report of the client’s LDAP account details.
 
+## Properties
+
+- `account.list.ldap` ([StatusAccountListLDAPAccountObject]) *(required)*: A list of status values for the LDAP accounts.
+
 ## See Also
 
 - [object StatusAccountListCalDAV](statusaccountlistcaldav.md)

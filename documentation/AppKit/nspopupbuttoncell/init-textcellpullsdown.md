@@ -27,7 +27,7 @@ This method is the designated initializer of the class.
 ## Parameters
 
 - `stringValue`: The title of the first menu. You may specify an empty string if you do not want to add an initial menu item.
-- `pullDown`:   if you want the receiver to display a pull-down menu; otherwise,   if you want it to display a pop-up menu.
+- `pullDown`: [`true`](https://developer.apple.com/documentation/Swift/true) if you want the receiver to display a pull-down menu; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) if you want it to display a pop-up menu.
 
 ## See Also
 

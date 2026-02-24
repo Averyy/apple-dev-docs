@@ -22,6 +22,9 @@ struct DenseVector_Complex_Double
 
 #### Overview
 
+- **`count`**: Number of entries in the vector.
+- **`data`**: The array of complex double values.
+
 ## Topics
 
 ### Initializers

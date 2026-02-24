@@ -27,7 +27,7 @@ An [`NEAppPushProvider`](neapppushprovider.md) subclass must override this metho
 
 ## Parameters
 
-- `completionHandler`: A Swift closure or ObjectiveC block for your provider subclass to call after it begins connecting to the server. If you can’t connect, pass a non-nil   that describes the error, otherwise pass  .
+- `completionHandler`: A Swift closure or ObjectiveC block for your provider subclass to call after it begins connecting to the server. If you can’t connect, pass a non-nil `error` that describes the error, otherwise pass `nil`.
 
 ## See Also
 

@@ -35,8 +35,8 @@ This function behaves in two different ways:
 
 - `cls`: The class you want to modify.
 - `name`: A selector that identifies the method whose implementation you want to replace.
-- `imp`: The new implementation for the method identified by   for the class identified by  .
-- `types`: An array of characters that describe the types of the arguments to the method. For possible values, see   >  . Since the function must take at least two arguments—  and  , the second and third characters must be “ ” (the first character is the return type).
+- `imp`: The new implementation for the method identified by `name` for the class identified by `cls`.
+- `types`: An array of characters that describe the types of the arguments to the method. For possible values, see [`Objective-C Runtime Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008048) > [`Type Encodings`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100). Since the function must take at least two arguments—`self` and `_cmd`, the second and third characters must be “`@:`” (the first character is the return type).
 
 ## See Also
 

@@ -1,0 +1,35 @@
+# ==(_:_:)
+
+**Framework**: Combine  
+**Kind**: op
+
+Returns a Boolean value that indicates whether two publishers are equivalent.
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
+- macOS 10.15+
+- tvOS 13.0+
+- visionOS 1.0+
+- watchOS 6.0+
+
+## Declaration
+
+```swift
+static func == (lhs: Fail<Output, Failure>, rhs: Fail<Output, Failure>) -> Bool
+```
+
+#### Return Value
+
+`true` if the publishers have equal `error` properties; otherwise `false`.
+
+## Parameters
+
+- `lhs`: A `Fail` publisher to compare for equality.
+- `rhs`: Another `Fail` publisher to compare for equality.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/combine/fail/==(_:_:))*

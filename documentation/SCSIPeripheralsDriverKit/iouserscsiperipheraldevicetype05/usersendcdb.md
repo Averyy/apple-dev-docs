@@ -24,8 +24,8 @@ Call this method to deliver vendor-specific 16-byte commands to the external dri
 
 ## Parameters
 
-- `command`: A   instance that contains the request information.
-- `response`: A pointer to a   instance. On return, the framework fills this object with the response data.
+- `command`: A [`SCSIType05OutParameters`](scsitype05outparameters.md) instance that contains the request information.
+- `response`: A pointer to a [`SCSIType05InParameters`](scsitype05inparameters.md) instance. On return, the framework fills this object with the response data.
 
 ## See Also
 

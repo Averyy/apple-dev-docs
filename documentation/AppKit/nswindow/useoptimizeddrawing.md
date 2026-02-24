@@ -20,7 +20,7 @@ The optimizations may prevent sibling subviews from being displayed in the corre
 
 ## Parameters
 
-- `flag`: If  , the window will optimize focusing and drawing for its views; if  , it will not, in which case, the window does not preserve the Z-ordering of overlapping views when an object explicitly sends   to a view and draws directly to it, instead of using the AppKit standard display mechanism.
+- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), the window will optimize focusing and drawing for its views; if [`false`](https://developer.apple.com/documentation/Swift/false), it will not, in which case, the window does not preserve the Z-ordering of overlapping views when an object explicitly sends [`lockFocus()`](nsview/lockfocus().md) to a view and draws directly to it, instead of using the AppKit standard display mechanism.
 
 ## See Also
 

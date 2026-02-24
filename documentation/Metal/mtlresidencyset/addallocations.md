@@ -29,7 +29,7 @@ Finalize the inclusion of these resource allocations, and all other changes you 
 
 ## Parameters
 
-- `allocations`: An array of resource allocations, whose elements can be an arbitrarily mix of  ,  , and   instances.
+- `allocations`: An array of resource allocations, whose elements can be an arbitrarily mix of [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), and [`MTLHeap`](mtlheap.md) instances.
 
 ## See Also
 

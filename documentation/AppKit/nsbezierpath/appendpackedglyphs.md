@@ -20,7 +20,7 @@ You should avoid using this method directly. Instead, use the [`appendGlyph(_:in
 
 ## Parameters
 
-- `packedGlyphs`: A C-style array containing one or more   data types terminated by a   character.
+- `packedGlyphs`: A C-style array containing one or more `CGGlyph` data types terminated by a `NULL` character.
 
 ## See Also
 

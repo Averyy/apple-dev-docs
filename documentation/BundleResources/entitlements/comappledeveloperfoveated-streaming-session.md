@@ -8,6 +8,10 @@ An entitlement that allows a visionOS app to initiate real-time streaming of spa
 **Availability**:
 - visionOS 26.4+ (Beta)
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [Low-Latency Streaming](entitlements/com.apple.developer.low-latency-streaming.md)

@@ -76,7 +76,29 @@ The following tables show the primary values, transfer functions, and matrixes i
 
 The R, G, and B values in the following list are tristimulus values (such as candelas/meter^2), whose relationship to CIE XYZ values can be derived from the primaries and white point specified in the table, using the method described in SMPTE RP 177-1993. In this instance, the R, G, and B values are normalized to the range `[0,1]`.
 
+- **Index 0**: Reserved
+- **Index 1**: Recommendation ITU-R BT.709 white x = `0.3127` y = `0.3290` (CIE III. D65) red x = `0.640` y = `0.330` green x = `0.300` y = `0.600` blue x = `0.150` y = `0.060`
+- **Index 2**: Primary values are unknown
+- **Index 3-4**: Reserved
+- **Index 5**: Recommendation ITU-R BT.601 (625-line) white x = `0.3127` y = `0.3290` (D65) red x = `0.64` y = `0.33` green x = `0.29` y = `0.60` blue x = `0.15` y = `0.06`
+- **Index 6**: Recommendation ITU-R BT.601 (525-line) white x = `0.3127` y = `0.3290` (D65) red x = `0.630` y = `0.340` green x = `0.310` y = `0.595` blue x = `0.155` y = `0.070`
+- **Index 7-8**: Reserved
+- **Index 9**: Recommendation ITU-R BT.2020 white x = `0.3127` y = `0.3290` (D65) red x = `0.708` y = `0.292` green x = `0.170` y = `0.797` blue x = `0.131` y = `0.046`
+- **Index 10**: Reserved
+- **Index 11**: SMPTE RP 431-2 (2011) white x = `0.314` y = `0.351` red x = `0.680` y = `0.320` green x = `0.265` y = `0.690` blue x = `0.150` y = `0.060`, also known as DCI P3
+- **Index 12**: SMPTE EG 432-1 (2010) white x = `0.3127` y = `0.3290` (D65) red x = `0.680` y = `0.320` green x = `0.265` y = `0.690` blue x = `0.150` y = `0.060`, also known as P3 D65 or Display P3
+- **Index 13-65535**: Reserved
+
 The transfer functions listed are used to transfer between RGB and Y’CbCr color spaces.
+
+- **Index 0**: Reserved
+- **Index 1**: Recommendation ITU-R BT.709-2, SMPTE 274M-1995, 296M-1997, 293M-1996, 170M-1994 ![An image that shows two formulas for transfer functions for index 1. The first formula is E’ with subscript W is equal to four point five zero zero for zero is less than or equal to W is less than zero point zero one eight. The second formula is E’ with subscript W is equal to one point zero nine nine W raised to the power zero point four five, minus zero point zero nine nine for zero point zero one eight is less than or equal to W is less than or equal to one.](https://docs-assets.developer.apple.com/published/f133af39f9fd97123c8a63a6c9748651/color-parameter-atom-transfer-1%402x.png)
+- **Index 2**: Transfer function is unknown
+- **Index 3-6**: Reserved
+- **Index 7**: Recommendation SMPTE 240M-1995 and 274M-1995 ![An image that shows two formulas for transfer functions for index 7. The first formula is E’ with subscript W is equal to four W for zero is less than or equal to W is less than zero point zero two two eight. The second formula is E’ with subscript W is equal to one point one one one five W raised to the power zero point four five, minus zero point one one five for zero point zero two two eight is less than or equal to W is less than or equal to one.](https://docs-assets.developer.apple.com/published/29ae665d86356f6aa606200cb029b13e/color-parameter-atom-transfer-7%402x.png)
+- **Index 8-16**: Reserved
+- **Index 17**: SMPTE ST 428-1, for which W equal to 1 for peak white is ordinarily intended to correspond to a display luminance level of 48 candelas per square meter. ![An image that shows the formula for the transfer function for index 17. The formula is E’ with subscript W is equal to, in parentheses forty-eight W divided by fifty-two point 37, raised to the power of, in parentheses one divided by two point six, for zero is less than or equal to W is less than or equal to one.](https://docs-assets.developer.apple.com/published/6735e3072596ac3af2f90c6aa915aa4e/color-parameter-atom-transfer-17%402x.png)
+- **Index 18-65535**: Reserved
 
 The MPEG-2 sequence display extension `transfer_characteristics` defines a code 6 whose transfer function is identical to that in code 1. QuickTime writers should map 6 to 1 when converting from `transfer_characteristics` to `transferFunction`.
 
@@ -91,6 +113,16 @@ If the equation for normalized Y´ has the form:
 Then the formulas for normalized Cb and Cr are:
 
 ![An image that shows the normalized formulas for Cb and Cr. The first formula is E with subscript Cb is equal to, in parentheses zero point five over, in parenteses one minus K’ with subscript B, times, in parentheses E’ with subscript B minus E’ with subscript Y. The second formula is E with subscript Cr is equal to, in parentheses zero point five over, in parenteses one minus K’ with subscript R, times, in parentheses E’ with subscript R minus E’ with subscript Y.](https://docs-assets.developer.apple.com/published/e4fdd52756078bf46a84e37c092e780d/color-parameter-atom-normalized-cb-cr%402x.png)
+
+- **Index 0**: Reserved
+- **Index 1**: Recommendation ITU-R BT.709-2 (1125/60/2:1 only), SMPTE 274M-1995, 296M-1997 ![An image that shows the formula for matrix index 1. The formula is E’ with subscript Y is equal to zero point seven one five two E’ with subscript G, plus zero point zero seven two two E’ with subscript B, plus zero point two one two six E’ with subscript R.](https://docs-assets.developer.apple.com/published/f81413372e720a075548f15b3f41c88d/color-parameter-atom-table-matrix-1%402x.png)
+- **Index 2**: Coefficient values are unknown
+- **Index 3-5**: Reserved
+- **Index 6**: Recommendation ITU-R BT.601-4 and BT.470-4 System B and G, SMPTE 170M-1994, 293M-1996 ![An image that shows the formula for matrix index 6. The formula is E’ with subscript Y is equal to zero point five eight seven E’ with subscript G, plus zero point one one four E’ with subscript B, plus zero point two nine nine E’ with subscript R.](https://docs-assets.developer.apple.com/published/cccb26e5ed778f1e9e7e842f1e514b1c/color-parameter-atom-table-matrix-6%402x.png)
+- **Index 7**: SMPTE 240M-1995, 274M-1995 ![An image that shows the formula for matrix index 7. The formula is E’ with subscript Y is equal to zero point seven zero one E’ with subscript G, plus zero point zero eight seven E’ with subscript B, plus zero point two one two E’ with subscript R.](https://docs-assets.developer.apple.com/published/c230a90c2d70eca2bb70189615f96217/color-parameter-atom-table-matrix-7%402x.png)
+- **Index 8**: Reserved
+- **Index 9**: Recommendation ITU-R BT.2020 (non-constant luminance) ![An image that shows the formula for matrix index 9. The formula is E’ with subscript Y is equal to zero point six seven eight zero E’ with subscript G, plus zero point zero five nine three E’ with subscript B, plus zero point two six two seven E’ with subscript R.](https://docs-assets.developer.apple.com/published/4f9090fce5aa7bb056bbcf63b1128d18/color-parameter-atom-table-matrix-9%402x.png)
+- **Index 10-65535**: Reserved
 
 ## Topics
 

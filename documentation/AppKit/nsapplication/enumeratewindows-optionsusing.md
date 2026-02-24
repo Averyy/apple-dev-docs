@@ -16,8 +16,9 @@ func enumerateWindows(options: NSApplication.WindowListOptions = [], using block
 
 ## Parameters
 
-- `options`: A constant that indicates window ordering. See   for possible values.
-- `block`: The block to execute for each window. The block takes the following parameters:
+- `options`: A constant that indicates window ordering. See [`NSApplication.WindowListOptions`](nsapplication/windowlistoptions.md) for possible values.
+- `block`: The block to execute for each window. The block takes the following parameters: - **window**: The window for which to execute the block.
+- **stop**: A Boolean value that stops the enumeration early when set to [`true`](https://developer.apple.com/documentation/Swift/true) (the default value is [`false`](https://developer.apple.com/documentation/Swift/false)).
 
 ## See Also
 

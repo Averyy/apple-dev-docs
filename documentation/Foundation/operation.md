@@ -102,13 +102,21 @@ Even for concurrent operations, there should be little need to override methods 
 
 Operation objects maintain state information internally to determine when it is safe to execute and also to notify external clients of the progression through the operation’s life cycle. Your custom subclasses maintains this state information to ensure the correct execution of operations in your code. The key paths associated with an operation’s states are:
 
+- ****`isReady`****: The `isReady` key path lets clients know when an operation is ready to execute. The [`isReady`](operation/isready.md) property contains the value `true` when the operation is ready to execute now or `false` if there are still unfinished operations on which it is dependent.
+
 In most cases, you do not have to manage the state of this key path yourself. If the readiness of your operations is determined by factors other than dependent operations, however—such as by some external condition in your program—you can provide your own implementation of the [`isReady`](operation/isready.md) property and track your operation’s readiness yourself. It is often simpler though just to create operation objects only when your external state allows it.
 
 In macOS 10.6 and later, if you cancel an operation while it is waiting on the completion of one or more dependent operations, those dependencies are thereafter ignored and the value of this property is updated to reflect that it is now ready to run. This behavior gives an operation queue the chance to flush cancelled operations out of its queue more quickly.
 
+- ****`isExecuting`****: The `isExecuting` key path lets clients know whether the operation is actively working on its assigned task. The [`isExecuting`](operation/isexecuting.md) property must report the value `true` if the operation is working on its task or `false` if it is not.
+
 If you replace the [`start()`](operation/start().md) method of your operation object, you must also replace the [`isExecuting`](operation/isexecuting.md) property and generate KVO notifications when the execution state of your operation changes.
 
+- ****`isFinished`****: The `isFinished` key path lets clients know that an operation finished its task successfully or was cancelled and is exiting. An operation object does not clear a dependency until the value at the `isFinished` key path changes to `true`. Similarly, an operation queue does not dequeue an operation until the [`isFinished`](operation/isfinished.md) property contains the value `true`. Thus, marking operations as finished is critical to keeping queues from backing up with in-progress or cancelled operations.
+
 If you replace the [`start()`](operation/start().md) method or your operation object, you must also replace the [`isFinished`](operation/isfinished.md) property and generate KVO notifications when the operation finishes executing or is cancelled.
+
+- ****`isCancelled`****: The `isCancelled` key path lets clients know that the cancellation of an operation was requested. Support for cancellation is voluntary but encouraged and your own code should not have to send KVO notifications for this key path. The handling of cancellation notices in an operation is described in more detail in [`Responding to the Cancel Command`](operation#Responding-to-the-Cancel-Command.md).
 
 ###### Responding to the Cancel Command
 

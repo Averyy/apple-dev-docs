@@ -9,6 +9,10 @@ A message that tells people why the app is requesting the ability to authenticat
 - iOS 11.0+
 - iPadOS 11.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access Face ID. Also note that App Clips can’t use Face ID. For more information about functionality that’s unavailable to App Clips, see [`Choosing the right functionality for your App Clip`](https://developer.apple.com/documentation/AppClip/choosing-the-right-functionality-for-your-app-clip).

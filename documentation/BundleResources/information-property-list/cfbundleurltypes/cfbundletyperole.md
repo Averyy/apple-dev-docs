@@ -13,6 +13,12 @@ The app’s role with respect to the type.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
+**Default**: `None`
+
 ## See Also
 
 - [CFBundleURLIconFile](information-property-list/cfbundleurltypes/cfbundleurliconfile.md)

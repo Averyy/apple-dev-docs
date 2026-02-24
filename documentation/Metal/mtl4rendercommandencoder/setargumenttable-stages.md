@@ -26,8 +26,8 @@ Metal takes a snapshot of the resources in the argument table when you encode a 
 
 ## Parameters
 
-- `argumentTable`:   to set.
-- `stages`: A   bitmask that specifies the shader stages with visibility over the table.
+- `argumentTable`: [`MTL4ArgumentTable`](mtl4argumenttable.md) to set.
+- `stages`: A [`MTLRenderStages`](mtlrenderstages.md) bitmask that specifies the shader stages with visibility over the table.
 
 
 ---

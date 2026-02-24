@@ -21,9 +21,9 @@ Implement this method by inspecting the provided resource and verifying it uses 
 
 ## Parameters
 
-- `resource`: An   to load.
-- `options`: An   object specifying options to apply when loading the resource. An   supports two options:   for “force” and   for read-only. The file system must remember if the read-only option is present.
-- `reply`: A block or closure that your implementation invokes when it finishes setting up or encounters an error. Pass a subclass of   as the first parameter if loading succeeds. If loading fails, pass an error as the second parameter.
+- `resource`: An [`FSResource`](fsresource.md) to load.
+- `options`: An [`FSTaskOptions`](fstaskoptions.md) object specifying options to apply when loading the resource. An [`FSUnaryFileSystem`](fsunaryfilesystem.md) supports two options: `-f` for “force” and `--rdonly` for read-only. The file system must remember if the read-only option is present.
+- `reply`: A block or closure that your implementation invokes when it finishes setting up or encounters an error. Pass a subclass of `FSVolume` as the first parameter if loading succeeds. If loading fails, pass an error as the second parameter.
 
 ## See Also
 

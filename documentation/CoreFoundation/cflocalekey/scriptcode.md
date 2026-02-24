@@ -22,7 +22,7 @@ static let scriptCode: CFLocaleKey!
 
 #### Discussion
 
-The corresponding value is a CFString containing a Unicode script tag (strictly, an ISO 15924 script tag). Usually this is empty (it is for “`ja_JP`”). It may be present for locales where a script  be specified, for example “`uz-Latn-UZ`” vs. “`uz-Cyrl-UZ`” for Uzbek in Latin vs. Cyrillic (in the first case the script code is “`Latn`”, and in the second it is “`Cyrl`”).
+The corresponding value is a CFString containing a Unicode script tag (strictly, an ISO 15924 script tag). Usually this is empty (it is for “`ja_JP`”). It may be present for locales where a script *must* be specified, for example “`uz-Latn-UZ`” vs. “`uz-Cyrl-UZ`” for Uzbek in Latin vs. Cyrillic (in the first case the script code is “`Latn`”, and in the second it is “`Cyrl`”).
 
 ## See Also
 

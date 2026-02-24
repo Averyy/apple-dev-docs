@@ -24,7 +24,7 @@ If you require it, you can intercept incoming events by subclassing [`UIApplicat
 
 ## Parameters
 
-- `event`: A   object encapsulating the information about an event, including the touches involved.
+- `event`: A [`UIEvent`](uievent.md) object encapsulating the information about an event, including the touches involved.
 
 ## See Also
 

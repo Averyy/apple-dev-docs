@@ -29,7 +29,7 @@ Deletes are processed before inserts in batch operations. This means the indexes
 ## Parameters
 
 - `updates`: The block that performs the relevant insert, delete, reload, or move operations.
-- `completion`: A completion handler block to execute when all of the operations finish. This block takes a single Boolean parameter that contains the value   if all of the related animations completed successfully or   if they were interrupted. This parameter may be  .
+- `completion`: A completion handler block to execute when all of the operations finish. This block takes a single Boolean parameter that contains the value [`true`](https://developer.apple.com/documentation/Swift/true) if all of the related animations completed successfully or [`false`](https://developer.apple.com/documentation/Swift/false) if they were interrupted. This parameter may be `nil`.
 
 ## See Also
 

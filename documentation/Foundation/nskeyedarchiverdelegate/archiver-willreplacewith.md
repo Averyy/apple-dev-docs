@@ -28,7 +28,7 @@ This method is called even when the delegate itself is doing, or has done, the s
 
 - `archiver`: The archiver that sent the message.
 - `object`: The object being replaced in the archive.
-- `newObject`: The object replacing   in the archive.
+- `newObject`: The object replacing `object` in the archive.
 
 ## See Also
 

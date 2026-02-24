@@ -9,6 +9,10 @@ The primary language for a keyboard extension.
 - iOS 8.0+
 - iPadOS 8.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [IDMessageFilterExtensionNetworkURL](information-property-list/nsextension/nsextensionattributes/idmessagefilterextensionnetworkurl.md)

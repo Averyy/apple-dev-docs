@@ -25,7 +25,7 @@ This may be called after [`SecTransformExecute(_:_:)`](sectransformexecute(_:_:)
 ## Parameters
 
 - `transformRef`: The transform whose attribute value will be retrieved.
-- `key`: The name of the attribute to retrieve. See    for a list of valid keys.
+- `key`: The name of the attribute to retrieve. See [`Transform Attributes`](transform-attributes.md)  for a list of valid keys.
 
 
 ---

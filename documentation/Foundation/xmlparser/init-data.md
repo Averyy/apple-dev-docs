@@ -30,7 +30,7 @@ This method is the designated initializer.
 
 ## Parameters
 
-- `data`: An   object containing XML markup.
+- `data`: An [`NSData`](nsdata.md) object containing XML markup.
 
 ## See Also
 

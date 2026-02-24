@@ -23,8 +23,8 @@ A new [`NSCalendarDate`](nscalendardate.md) object bound to `format` and the tim
 
 ## Parameters
 
-- `format`: The format for the returned string (see Date and Number Formatters in OS X v10.0 to 10.3 for a discussion of how to create the format string). Pass   to use the default format string, “ ” (this conforms to the international format  .)
-- `aTimeZone`: The time zone for the new calendar date. Pass   to use the default time zone—specific to the current locale.
+- `format`: The format for the returned string (see Date and Number Formatters in OS X v10.0 to 10.3 for a discussion of how to create the format string). Pass `nil` to use the default format string, “`%Y-%m-%d %H:%M:%S %z`” (this conforms to the international format `YYYY-MM-DD HH:MM:SS ±HHMM`.)
+- `aTimeZone`: The time zone for the new calendar date. Pass `nil` to use the default time zone—specific to the current locale.
 
 ## See Also
 

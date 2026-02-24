@@ -26,12 +26,24 @@ A new [`CADisplayLink`](cadisplaylink.md) object.
 
 The selector on the target must be a method with the following signature, where sender is the display link returned by this method.
 
+**Swift**:
+
+```swift
+@objc func selector(sender: CADisplayLink)
+```
+
+**Objective-C**:
+
+```objc
+- (void) selector:(CADisplayLink *)sender;
+```
+
 The newly constructed display link retains the target.
 
 ## Parameters
 
 - `target`: An object in your app that you want the system to notify each time it updates a display.
-- `sel`: A selector instance that represents a method for  .
+- `sel`: A selector instance that represents a method for `target`.
 
 
 ---

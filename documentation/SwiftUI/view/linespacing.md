@@ -37,7 +37,7 @@ Text("This is a string in a TextField with 10 point spacing applied between the 
 
 ## Parameters
 
-- `lineSpacing`: The amount of space between the bottom of one   line and the top of the next line in points.
+- `lineSpacing`: The amount of space between the bottom of one line and the top of the next line in points.
 
 ## See Also
 

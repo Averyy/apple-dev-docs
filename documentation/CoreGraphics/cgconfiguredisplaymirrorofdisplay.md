@@ -39,9 +39,9 @@ You can use the function [`CGGetActiveDisplayList(_:_:_:)`](cggetactivedisplayli
 
 ## Parameters
 
-- `config`: A display configuration, acquired by calling  .
+- `config`: A display configuration, acquired by calling [`CGBeginDisplayConfiguration(_:)`](cgbegindisplayconfiguration(_:).md).
 - `display`: The identifier of the display to add to a mirroring set.
-- `master`: A display in a mirroring set, or   to disable mirroring. To specify the main display, use  .
+- `master`: A display in a mirroring set, or `kCGNullDirectDisplay` to disable mirroring. To specify the main display, use [`CGMainDisplayID()`](cgmaindisplayid().md).
 
 ## See Also
 

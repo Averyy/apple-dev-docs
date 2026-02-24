@@ -32,8 +32,8 @@ If the source and destination acceleration structures aren’t the same, they ca
 
 - `sourceAccelerationStructure`: The source acceleration structure.
 - `descriptor`: A description of the updated acceleration structure.
-- `destinationAccelerationStructure`: The destination to write the new acceleration structure to. Pass the same acceleration structure or   to refit the structure in place.
-- `scratchBuffer`: A buffer used to hold data while building the acceleration structure. Pass   if   returns zero.
+- `destinationAccelerationStructure`: The destination to write the new acceleration structure to. Pass the same acceleration structure or `nil` to refit the structure in place.
+- `scratchBuffer`: A buffer used to hold data while building the acceleration structure. Pass `nil` if [`refitScratchBufferSize`](mtlaccelerationstructuresizes/refitscratchbuffersize.md) returns zero.
 - `scratchBufferOffset`: An offset, in bytes, in the scratch buffer where the scratch memory starts.
 
 ## See Also

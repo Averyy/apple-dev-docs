@@ -24,7 +24,7 @@ The contour object at the specified index path, or `nil` if the index path is in
 
 ## Parameters
 
-- `indexPath`: The index of the contour to retrieve. Valid values are in the range of   to  .
+- `indexPath`: The index of the contour to retrieve. Valid values are in the range of `0` to `contourCount - 1`.
 
 ## See Also
 

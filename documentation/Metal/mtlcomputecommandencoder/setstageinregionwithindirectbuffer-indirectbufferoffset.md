@@ -30,7 +30,7 @@ To determine the index used to fetch `[[stage_in]]` data for a given thread, the
 
 ## Parameters
 
-- `indirectBuffer`: The   defining how to interpret a thread’s location as a coordinate for stage-in data.
+- `indirectBuffer`: The [`MTLRegion`](mtlregion.md) defining how to interpret a thread’s location as a coordinate for stage-in data.
 - `indirectBufferOffset`: Where the data begins, in bytes, from the start of the buffer.
 
 ## See Also

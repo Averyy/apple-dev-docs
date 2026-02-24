@@ -9,6 +9,10 @@ A one-time request for user permission to begin an interaction session with near
 - iOS 14.0+
 - iPadOS 14.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 > ⚠️ **Warning**:  Define this property in the `Info.plist` only for apps that deploy to iOS 14. [`NSNearbyInteractionUsageDescription`](information-property-list/nsnearbyinteractionusagedescription.md) replaces this property in iOS 15 and later.

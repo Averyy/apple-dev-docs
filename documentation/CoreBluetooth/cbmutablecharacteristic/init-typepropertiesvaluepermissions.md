@@ -31,7 +31,7 @@ For more information, see [`Core Bluetooth Programming Guide`](https://developer
 
 - `UUID`: A 128-bit UUID that identifies the characteristic.
 - `properties`: The properties of the characteristic.
-- `value`: The characteristic value to cache. If  , the value is dynamic and the peripheral manager fetches it on demand.
+- `value`: The characteristic value to cache. If `nil`, the value is dynamic and the peripheral manager fetches it on demand.
 - `permissions`: The permissions of the characteristic value.
 
 

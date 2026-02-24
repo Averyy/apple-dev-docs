@@ -56,6 +56,24 @@ When you save changes in a context, the changes are only committed “one store 
 
 A context posts notifications at various points—see [`NSManagedObjectContextObjectsDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextObjectsDidChange) for example. Typically, you should register to receive these notifications only from known contexts:
 
+**Swift**:
+
+```swift
+NotificationCenter.default.addObserver(self,
+                                       selector: #selector(<#methodToCall#>),
+                                       name: .NSManagedObjectContextDidSave,
+                                       object: <#managedObjectContext#>)
+```
+
+**Objective-C**:
+
+```objc
+[[NSNotificationCenter defaultCenter] addObserver:self
+                                      selector:@selector(<#Selector name#>)
+                                      name:NSManagedObjectContextDidSaveNotification
+                                      object:<#A managed object context#>];
+```
+
 Several system frameworks use Core Data internally. If you register to receive these notifications from all contexts (by passing `nil` as the object parameter to a method such as [`addObserver(_:selector:name:object:)`](https://developer.apple.com/documentation/Foundation/NotificationCenter/addObserver(_:selector:name:object:))), then you may receive unexpected notifications that are difficult to handle.
 
 ##### Concurrency
@@ -76,7 +94,75 @@ You use contexts using the queue-based concurrency types in conjunction with [`p
 
 It’s important to appreciate that blocks execute as a distinct body of work. As soon as your block ends, anyone else can enqueue another block, undo changes, reset the context, and so on. Thus blocks may be quite large, and typically end by invoking [`save()`](nsmanagedobjectcontext/save().md).
 
+**Swift**:
+
+```swift
+var savedOK = false
+managedObjectContext.performAndWait() {
+
+    // Perform operations with the context.
+
+    do {
+        try managedObjectContext.save()
+        savedOK = true
+    } catch {
+        print("Error saving context: \(error)")
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+__block BOOL savedOK = NO;
+[managedObjectContext performBlockAndWait:^{
+
+    // Perform operations with the context.
+
+    NSError *error = nil;
+    if ([managedObjectContext save:&error]) {
+        savedOK = YES;
+    } else {
+        NSLog(@"Error saving: %@", error);
+    }
+}];
+```
+
 You can also perform other operations, such as:
+
+**Swift**:
+
+```swift
+let fetchRequest: NSFetchRequest<Entity> = NSFetchRequest(entityName: "Entity")
+var count = 0
+
+managedObjectContext.performAndWait() {
+    do {
+        count = try managedObjectContext.count(for: fetchRequest)
+    } catch {
+        print("Error counting objects: \(error)")
+    }
+}
+
+print("The fetch request would return \(count) objects")
+```
+
+**Objective-C**:
+
+```objc
+NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Entity"];
+__block NSUInteger count = 0;
+
+[managedObjectContext performBlockAndWait:^() {
+    NSError *error;
+    count = [managedObjectContext countForFetchRequest:fetchRequest error:&error];
+    if (count == NSNotFound) {
+        NSLog(@"Error counting objects: %@", error);
+    }
+}];
+
+NSLog(@"The fetch request would return %lu objects", count);
+```
 
 ##### Subclassing Notes
 

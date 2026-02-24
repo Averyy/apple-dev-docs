@@ -27,7 +27,7 @@ case labeledVideoData(table: MLDataTable, videoColumn: String = __Defaults.video
 - `table`: A data table that contains the locations of annotations for each hand action video file.
 - `videoColumn`: The name of the column in the data table that contains the video filenames.
 - `labelColumn`: The name of the column in the data table that contains the hand action label names.
-- `startTimeColumn`: The name of the column in the data table that contains the hand action’s starting-time   index in the video file. Otherwise  , if every video example starts at the beginning of the video   file.
+- `startTimeColumn`: The name of the column in the data table that contains the hand action’s starting-time index in the video file. Otherwise `nil`, if every video example starts at the beginning of the video file.
 
 ## See Also
 

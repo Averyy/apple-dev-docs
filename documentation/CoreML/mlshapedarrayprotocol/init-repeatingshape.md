@@ -22,7 +22,7 @@ init(repeating value: Self.Scalar, shape: [Int])
 
 ## Parameters
 
-- `value`: A scalar value. The initializer assigns every element in the shaped array to  .
+- `value`: A scalar value. The initializer assigns every element in the shaped array to `value`.
 - `shape`: An integer array. Each element represents the size of the shaped array’s corresponding dimension.
 
 ## See Also

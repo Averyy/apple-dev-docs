@@ -26,7 +26,7 @@ Before a view modified with this method appears, a task will start in the backgr
 
 ## Parameters
 
-- `id`: The product ID to load from the App Store. The task restarts whenever this parameter   changes.
+- `id`: The product ID to load from the App Store. The task restarts whenever this parameter changes.
 - `priority`: The task priority to use when creating the task.
 - `action`: The action to perform when the task’s state changes.
 

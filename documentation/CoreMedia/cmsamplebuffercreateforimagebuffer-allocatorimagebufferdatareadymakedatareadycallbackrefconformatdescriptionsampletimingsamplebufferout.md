@@ -32,14 +32,14 @@ Because `CVImageBuffers` hold visual data, the format description provided is a 
 
 ## Parameters
 
-- `allocator`: The allocator to use for allocating the   object. Pass   to use the default allocator.
-- `imageBuffer`:   for the media data. This can be a   whose content hasn’t yet been rendered, or a   that already contains the media data (in which case   should be true). May not be  .
-- `dataReady`: Indicates whether or not the   already contains the media data.
-- `makeDataReadyCallback`: Callback that   should call to make the data ready. Can be  .
-- `makeDataReadyRefcon`: Refcon   should pass to the callback.
-- `formatDescription`: A description of the media data’s format. See discussion above for constraints. May not be  .
-- `sampleTiming`: A   struct that provides the timing information for the media represented by the  .
-- `sampleBufferOut`: On output, points to the newly created   that contains a  .
+- `allocator`: The allocator to use for allocating the `CMSampleBuffer` object. Pass `kCFAllocatorDefault` to use the default allocator.
+- `imageBuffer`: `CVImageBuffer` for the media data. This can be a `CVImageBuffer` whose content hasn’t yet been rendered, or a `CVImageBuffer` that already contains the media data (in which case `dataReady` should be true). May not be `NULL`.
+- `dataReady`: Indicates whether or not the `CVImageBuffer` already contains the media data.
+- `makeDataReadyCallback`: Callback that [`CMSampleBufferMakeDataReady(_:)`](cmsamplebuffermakedataready(_:).md) should call to make the data ready. Can be `NULL`.
+- `makeDataReadyRefcon`: Refcon [`CMSampleBufferMakeDataReady(_:)`](cmsamplebuffermakedataready(_:).md) should pass to the callback.
+- `formatDescription`: A description of the media data’s format. See discussion above for constraints. May not be `NULL`.
+- `sampleTiming`: A `CMSampleTimingInfo` struct that provides the timing information for the media represented by the `CVImageBuffer`.
+- `sampleBufferOut`: On output, points to the newly created `CMSampleBuffer` that contains a `CVImageBuffer`.
 
 ## Topics
 

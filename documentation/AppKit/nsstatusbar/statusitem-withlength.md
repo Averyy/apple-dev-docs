@@ -24,7 +24,7 @@ The receiver does not retain a reference to the status item, so you need to reta
 
 ## Parameters
 
-- `length`: A constant that specifies whether the status item is of fixed width, or variable width. The valid constants are described in  .
+- `length`: A constant that specifies whether the status item is of fixed width, or variable width. The valid constants are described in [`Status Bar Item Length`](status-bar-item-length.md).
 
 ## See Also
 

@@ -26,7 +26,7 @@ See the `NSKeyValueBinding.h` header file for further details.
 
 ## Parameters
 
-- `object`: Specify the object you want to check. This parameter can be  .
+- `object`: Specify the object you want to check. This parameter can be `nil`.
 
 ## See Also
 

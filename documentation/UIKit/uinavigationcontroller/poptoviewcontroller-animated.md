@@ -29,7 +29,7 @@ For information on how the navigation bar is updated, see [`Updating the navigat
 ## Parameters
 
 - `viewController`: The view controller that you want to be at the top of the stack. This view controller must currently be on the navigation stack.
-- `animated`: Set this value to   to animate the transition. Pass   if you are setting up a navigation controller before its view is displayed.
+- `animated`: Set this value to [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition. Pass [`false`](https://developer.apple.com/documentation/Swift/false) if you are setting up a navigation controller before its view is displayed.
 
 ## See Also
 

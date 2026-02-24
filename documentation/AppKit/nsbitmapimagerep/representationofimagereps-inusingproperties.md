@@ -20,9 +20,9 @@ A data object containing the bitmap image data in the specified format. You can 
 
 ## Parameters
 
-- `imageReps`: An array of   objects.
-- `storageType`: An   constant specifying a file type for bitmap images.
-- `properties`: A dictionary that contains key-value pairs specifying image properties. These string constants used as keys and the valid values are described in  .
+- `imageReps`: An array of [`NSBitmapImageRep`](nsbitmapimagerep.md) objects.
+- `storageType`: An [`NSBitmapImageRep.FileType`](nsbitmapimagerep/filetype.md) constant specifying a file type for bitmap images.
+- `properties`: A dictionary that contains key-value pairs specifying image properties. These string constants used as keys and the valid values are described in [`NSBitmapImageRep.PropertyKey`](nsbitmapimagerep/propertykey.md).
 
 ## See Also
 

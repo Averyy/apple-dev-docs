@@ -22,8 +22,8 @@ func JSObjectSetPrototype(_ ctx: JSContextRef!, _ object: JSObjectRef!, _ value:
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The   with the prototype you want to set.
-- `value`: A   to set as the object’s prototype.
+- `object`: The [`JSObjectRef`](jsobjectref.md) with the prototype you want to set.
+- `value`: A [`JSValueRef`](jsvalueref.md) to set as the object’s prototype.
 
 ## See Also
 

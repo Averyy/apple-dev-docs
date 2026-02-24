@@ -27,11 +27,11 @@ Writing Tools calls this method only after previous calls to the [`writingToolsC
 
 ## Parameters
 
-- `writingToolsCoordinator`: The coordinator object notifying you   that animations are about to begin.
+- `writingToolsCoordinator`: The coordinator object notifying you that animations are about to begin.
 - `textAnimation`: The type of animation Writing Tools finished.
-- `range`: The range of text that finished animating. This range is   relative to the text in your context object, and it’s your responsibility   to match that location to the correct location in your text storage.   If you initialized the context object with the entire contents of   your view’s text storage, you can use   as-is to access that   text storage. However, if you initialized the context object with   only a portion of your view’s text, add the starting location of   your context object’s text to this value to get the correct range   for that text storage.
+- `range`: The range of text that finished animating. This range is relative to the text in your context object, and it’s your responsibility to match that location to the correct location in your text storage. If you initialized the context object with the entire contents of your view’s text storage, you can use `range` as-is to access that text storage. However, if you initialized the context object with only a portion of your view’s text, add the starting location of your context object’s text to this value to get the correct range for that text storage.
 - `context`: The context object that contains the original text.
-- `completion`: A completion handler to execute when you are done.   The handler has no return value and takes no parameters. You must   call this handler at some point during your implementation.
+- `completion`: A completion handler to execute when you are done. The handler has no return value and takes no parameters. You must call this handler at some point during your implementation.
 
 ## See Also
 

@@ -21,7 +21,7 @@ convenience init(mapItem: MKMapItem)
 
 ## Parameters
 
-- `mapItem`: The   object that represents the location.
+- `mapItem`: The [`MKMapItem`](https://developer.apple.com/documentation/MapKit/MKMapItem) object that represents the location.
 
 ## See Also
 

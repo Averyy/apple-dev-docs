@@ -27,7 +27,7 @@ Subclasses that want more control over the reading of the document file—for ex
 
 ## Parameters
 
-- `url`: A file URL that identifies the location of the document file in the application sandbox. This file URL is typically the one returned by the   property.
+- `url`: A file URL that identifies the location of the document file in the application sandbox. This file URL is typically the one returned by the [`fileURL`](uidocument/fileurl.md) property.
 
 ## See Also
 

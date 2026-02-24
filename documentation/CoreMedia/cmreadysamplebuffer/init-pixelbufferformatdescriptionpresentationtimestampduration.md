@@ -22,9 +22,9 @@ init(pixelBuffer content: Content, formatDescription: CMVideoFormatDescription? 
 
 ## Parameters
 
-- `formatDescription`: Format description of the content. If provided, the format must be have video   media type. If not provided, one will be created using  .
+- `formatDescription`: Format description of the content. If provided, the format must be have video media type. If not provided, one will be created using `CMVideoFormatDescription.init(pixelBuffer:)`.
 - `presentationTimeStamp`: The time at which sample will be presented. Must be valid numeric time.
-- `duration`: Duration of the sample. Set to   if not present.
+- `duration`: Duration of the sample. Set to `CMTime/invalid` if not present.
 
 
 ---

@@ -23,7 +23,7 @@ init(motionType: EmphasizeAction.EmphasisMotionType, style: EmphasizeAction.Emph
 
 - `motionType`: An option that implements animation effects.
 - `style`: An option that implements different kinds of animation timing.
-- `isAdditive`: A Boolean value that indicates whether the animation system additively blends   the action’s output with the base value.
+- `isAdditive`: A Boolean value that indicates whether the animation system additively blends the action’s output with the base value.
 
 
 ---

@@ -24,7 +24,7 @@ Override this method and use it to enable promiscuous mode on your device.
 
 ## Parameters
 
-- `enable`: If  , enable promiscuous mode for the device; otherwise, disable it.
+- `enable`: If `YES`, enable promiscuous mode for the device; otherwise, disable it.
 
 ## See Also
 

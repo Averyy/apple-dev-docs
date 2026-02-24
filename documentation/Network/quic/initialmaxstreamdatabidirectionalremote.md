@@ -22,7 +22,7 @@ func initialMaxStreamDataBidirectionalRemote(_ initialMaxStreamDataBidiRemote: I
 
 ## Parameters
 
-- `initialMaxStreamDataBidiRemote`: The value to use for the    transport parameter on a QUIC   connection.
+- `initialMaxStreamDataBidiRemote`: The value to use for the `initial_max_stream_data_bidi_remote` transport parameter on a QUIC connection.
 
 
 ---

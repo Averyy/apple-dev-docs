@@ -22,8 +22,8 @@ You must set the path’s current point (using the [`move(to:)`](nsbezierpath/mo
 
 ## Parameters
 
-- `glyphs`: A C-style array of   data types to add to the path.
-- `count`: The number of glyphs in the   parameter.
+- `glyphs`: A C-style array of `NSGlyph` data types to add to the path.
+- `count`: The number of glyphs in the `glyphs` parameter.
 - `font`: The font in which the glyphs are encoded.
 
 ## See Also

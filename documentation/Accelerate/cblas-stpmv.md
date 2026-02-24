@@ -29,13 +29,13 @@ Computes `A*x`, `A`, or `conjg(A` and stores the results in `X`.
 ## Parameters
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
-- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are   or  .
-- `TRANSA`: Specifies whether to use matrix A (  or  ), the transpose of A (  or  ), or the conjugate of A (  or  ).
-- `DIAG`: Specifies whether the matrix is unit triangular. Possible values are   (unit triangular) or   (not unit triangular).
-- `N`: Order of matrix   and the number of elements in vectors   and  .
-- `AP`: Triangular matrix  .
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
+- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are `'U'` or `'L'`.
+- `TRANSA`: Specifies whether to use matrix A (`'N'` or `'n'`), the transpose of A (`'T'` or `'t'`), or the conjugate of A (`'C'` or `'c'`).
+- `DIAG`: Specifies whether the matrix is unit triangular. Possible values are `'U'` (unit triangular) or `'N'` (not unit triangular).
+- `N`: Order of matrix `A` and the number of elements in vectors `x` and `y`.
+- `AP`: Triangular matrix `A`.
+- `X`: Vector `x`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
 
 ## See Also
 

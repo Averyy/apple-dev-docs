@@ -27,6 +27,9 @@ The blended image as a [`CIImage`](ciimage.md).
 
 The linear-light blend mode combines the linear-dodge and linear-burn blend modes (rescaled so that neutral colors become middle gray). If the input image’s values are lighter than middle gray, the filter uses dodge; for darker values, the filter uses burn.
 
+- **`inputImage`**: A [`CIImage`](ciimage.md) containing the input image
+- **`backgroundImage`**: A [`CIImage`](ciimage.md) containing the background image.
+
 The following code sample applies the linear-light blend mode filter to two images:
 
 ```swift

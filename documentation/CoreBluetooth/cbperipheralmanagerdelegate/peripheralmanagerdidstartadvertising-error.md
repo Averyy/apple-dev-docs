@@ -27,7 +27,7 @@ Core Bluetooth calls this method when your app calls the [`startAdvertising(_:)`
 ## Parameters
 
 - `peripheral`: The peripheral manager that is starting advertising.
-- `error`: The reason the call failed, or   if no error occurred.
+- `error`: The reason the call failed, or `nil` if no error occurred.
 
 
 ---

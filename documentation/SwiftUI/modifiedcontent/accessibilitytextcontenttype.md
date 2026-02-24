@@ -29,7 +29,7 @@ The default content type [`plain`](accessibilitytextcontenttype/plain.md).
 
 ## Parameters
 
-- `textContentType`: The accessibility content type from the available    options.
+- `textContentType`: The accessibility content type from the available [`AccessibilityTextContentType`](accessibilitytextcontenttype.md) options.
 
 
 ---

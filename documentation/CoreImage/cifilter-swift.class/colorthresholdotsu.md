@@ -29,6 +29,8 @@ The filter applies Otsu’s algorithm to the reg, green, and blue color componen
 
 The color threshold Otsu filter uses the following property:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in an image where each color component is either 1 or 0:
 
 ```swift

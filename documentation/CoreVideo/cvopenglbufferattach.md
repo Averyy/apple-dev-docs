@@ -22,7 +22,7 @@ A Core Video result code. See [`Core Video Constants`](core-video-constants.md) 
 
 - `openGLBuffer`: The buffer you want to attach an OpenGL context to.
 - `cglContext`: The OpenGL context you want to attach.
-- `face`: The OpenGL face enumeration (  for non-cube maps.)
+- `face`: The OpenGL face enumeration (`0` for non-cube maps.)
 - `level`: The mipmap level for drawing in the OpenGL context. This value cannot exceed the maximum mipmap level for this buffer.
 - `screen`: The virtual screen number you want to use for this context.
 

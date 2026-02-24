@@ -25,7 +25,7 @@ A `WAEndpoint` that you can connect to, or `nil` if it can’t be created.
 
 ## Parameters
 
-- `browseResult`: The result of the   operation.
+- `browseResult`: The result of the `NWBrowser` operation.
 
 ## See Also
 

@@ -24,8 +24,8 @@ Do not perform other pasteboard operations in the method implementation.
 
 ## Parameters
 
-- `type`: One of the types the receiver supports for writing (one of the UTIs returned by its implementation of  ).
-- `pasteboard`: You can use this argument to provide different options based on the pasteboard name, if you need to.
+- `type`: One of the types the receiver supports for writing (one of the UTIs returned by its implementation of [`writableTypes(for:)`](nspasteboardwriting/writabletypes(for:).md)).
+- `pasteboard`: A pasteboard. You can use this argument to provide different options based on the pasteboard name, if you need to.
 
 ## See Also
 

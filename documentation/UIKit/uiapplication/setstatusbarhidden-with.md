@@ -22,7 +22,7 @@ See the descriptions of the constants of the [`UIStatusBarAnimation`](uistatusba
 
 ## Parameters
 
-- `hidden`:   to hide the status bar,   to show the status bar.
+- `hidden`: [`true`](https://developer.apple.com/documentation/Swift/true) to hide the status bar, [`false`](https://developer.apple.com/documentation/Swift/false) to show the status bar.
 - `animation`: A constant that indicates whether there should be an animation and, if one is requested, whether it should fade the status bar in or out or whether it should slide the status bar in or out.
 
 ## See Also

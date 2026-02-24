@@ -175,7 +175,7 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Shared iPad will sit in “Prepared” state when using Declarative Device Management to enforce a software update.  (111934749)  Use legacy MDM commands to update the shared iPad.
+- Shared iPad will sit in “Prepared” state when using Declarative Device Management to enforce a software update.  (111934749) **Workaround:** Use legacy MDM commands to update the shared iPad.
 
 ##### Esim Transfer
 
@@ -264,7 +264,7 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- The first backup on a post beta 4 build when users have been on beta 4 prior might take a longer time to complete if there are a large number of message attachments.  Both automatic and manual backups might take a longer time to complete and get deferred over days which can lead to users seeing that the device has not been backed up in a while.  (110840177)  Turn off and delete iCloud backups and turn it back on: Settings -> iCloud Backup -> Select the device -> Turn off and delete from iCloud To turn it back on Settings -> iCloud Backup -> Toggle on Backup this phone
+- The first backup on a post beta 4 build when users have been on beta 4 prior might take a longer time to complete if there are a large number of message attachments.  Both automatic and manual backups might take a longer time to complete and get deferred over days which can lead to users seeing that the device has not been backed up in a while.  (110840177) **Workaround:** Turn off and delete iCloud backups and turn it back on: Settings -> iCloud Backup -> Select the device -> Turn off and delete from iCloud To turn it back on Settings -> iCloud Backup -> Toggle on Backup this phone
 
 ##### Imageio
 
@@ -342,7 +342,7 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- The Catch up affordance might display incorrectly.  (109468262)  Leave and return to the affected conversation.
+- The Catch up affordance might display incorrectly.  (109468262) **Workaround:** Leave and return to the affected conversation.
 
 ##### Metal
 
@@ -627,7 +627,7 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- SwiftData models with implicitly unwrapped optional properties will generate a compiler error that all stored properties were not set.  (114140139)  Set the value of non-relationship stored properties in the initializer, and mark relationship properties as optional.
+- SwiftData models with implicitly unwrapped optional properties will generate a compiler error that all stored properties were not set.  (114140139) **Workaround:** Set the value of non-relationship stored properties in the initializer, and mark relationship properties as optional.
 
 ##### Swiftui
 
@@ -684,16 +684,16 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: ScrollView when used with the searchable modifier has an improved transition when presenting or dismissing search on iOS and iPadOS.  (109265624)
 - Fixed: Two `NavigationSplitView` initializers taking `columnVisibility` as a value rather than a `Binding`.  (109426553)
 - Fixed: Content in the inspector modifier is re-rendered consistently when state changes (FB12319435).  (110623855) (FB12319435)
-- Fixed: Inspectors within `NavigationSplitView`s handle navigation bars with scrollable content properly. The navigation bar’s translucency now tracks with the main content’s scroll view. Navigation titles are intentionally not rendered in split-view-nested inspectors when presenting as a trailing column to avoid nested navigation bars. The title is shown when the inspector is preseting as a sheet. Consider using the `.safeAreaInset(edge: .top) { ... }` modifier to overlay a title view that respects scrollable content. In this case, it is recommended to apply `.toolbar(.visible, for: .navigationBar)` on the main content to prevent scrolled content from being visible  the custom title view (FB12546918).  (111932922) (FB12546918)
+- Fixed: Inspectors within `NavigationSplitView`s handle navigation bars with scrollable content properly. The navigation bar’s translucency now tracks with the main content’s scroll view. Navigation titles are intentionally not rendered in split-view-nested inspectors when presenting as a trailing column to avoid nested navigation bars. The title is shown when the inspector is preseting as a sheet. Consider using the `.safeAreaInset(edge: .top) { ... }` modifier to overlay a title view that respects scrollable content. In this case, it is recommended to apply `.toolbar(.visible, for: .navigationBar)` on the main content to prevent scrolled content from being visible *above* the custom title view (FB12546918).  (111932922) (FB12546918)
 - Fixed: Inspector respects safe areas when dismissed offscreen in landscape iPhone orientations (FB12728304).  (112748296) (FB12728304)
 
 ###### Known Issues
 
-- `View.defaultFocus(_:_:)` isn’t reliable with text controls.  (109750983)  Manually update focus state bindings from an action passed to `View.onAppear(perform:)`.
+- `View.defaultFocus(_:_:)` isn’t reliable with text controls.  (109750983) **Workaround:** Manually update focus state bindings from an action passed to `View.onAppear(perform:)`.
 - The `.presentationBackground(_:)` modifier does not work on `.inspector` (FB12326152).  (110656975) (FB12326152)
-- Using the `@Environment(\.dismiss)` callable from within an inspector presentation does not dismiss the inspector. This is a bug.  (111643518) (FB12501848)  Use the `Binding` provided to the inspector initializer to dismiss and present the inspector.
-- Using a `NavigationStack` within an `.inspector` within a `NavigationSplitView` can interfere with the split view’s navigation. (FB12567417)  (112018368) (FB12567417)  Either move the inspector modifier  of the `NavigationSplitView`, or remove the `NavigationStack` from the inspector. If the goal is to have a navigation title in the inspector, placing the inspector outside of the split view is recommended to avoid nested navigation bars. If the goal is to have a navigation title in the inspector strictly inside a `NavigationSplitView`, consider using the `.safeAreaInset(edge: .top) { ... }` modifier to add a title compatible with scrollable content. Note that the `.navigationTitle(_:)` modifier will add a navigation title in any inspector construction .
-- On iOS, using an `Observable` object’s property as a selection value of a `List` inside `NavigationSplitView` may cause a “Simultaneous accesses to …” error when a list selection is made via tap gesture.  (113978783) (FB12981860)  There is no current workaround for `Observable` properties. Alternatives include factoring out the selection value into separate state stored outside the object, or using `ObservableObject` instead.
+- Using the `@Environment(\.dismiss)` callable from within an inspector presentation does not dismiss the inspector. This is a bug.  (111643518) (FB12501848) **Workaround:** Use the `Binding` provided to the inspector initializer to dismiss and present the inspector.
+- Using a `NavigationStack` within an `.inspector` within a `NavigationSplitView` can interfere with the split view’s navigation. (FB12567417)  (112018368) (FB12567417) **Workaround:** Either move the inspector modifier *outside* of the `NavigationSplitView`, or remove the `NavigationStack` from the inspector. If the goal is to have a navigation title in the inspector, placing the inspector outside of the split view is recommended to avoid nested navigation bars. If the goal is to have a navigation title in the inspector strictly inside a `NavigationSplitView`, consider using the `.safeAreaInset(edge: .top) { ... }` modifier to add a title compatible with scrollable content. Note that the `.navigationTitle(_:)` modifier will add a navigation title in any inspector construction *when the inspector presents as a sheet*.
+- On iOS, using an `Observable` object’s property as a selection value of a `List` inside `NavigationSplitView` may cause a “Simultaneous accesses to …” error when a list selection is made via tap gesture.  (113978783) (FB12981860) **Workaround:** There is no current workaround for `Observable` properties. Alternatives include factoring out the selection value into separate state stored outside the object, or using `ObservableObject` instead.
 
 ##### Swiftui Outline
 
@@ -850,7 +850,7 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Manually configured widgets might lose their configuration.  (108616752)  Reconfigure the affected widgets.
+- Manually configured widgets might lose their configuration.  (108616752) **Workaround:** Reconfigure the affected widgets.
 
 ##### Wifi
 

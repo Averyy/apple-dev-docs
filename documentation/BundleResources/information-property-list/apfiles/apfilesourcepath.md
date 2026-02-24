@@ -8,6 +8,10 @@ The path to the file or folder in the app package, relative to the installer pat
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [APDisplayedAsContainer](information-property-list/apfiles/apdisplayedascontainer.md)

@@ -39,7 +39,7 @@ All other keyspaces allow the key to be passed as a `CFString` or `CFData`. In b
 ## Parameters
 
 - `allocator`: The allocator to use for creating the identifier.
-- `key`: Key data; may be  ,  , or  .
+- `key`: Key data; may be `CFString`, `CFNumber`, or `CFData`.
 - `keySpace`: Keyspace; must be string of one to four printable ASCII characters.
 - `identifierOut`: Upon return, a pointer to the created identifier.
 

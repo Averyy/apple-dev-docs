@@ -26,9 +26,9 @@ You can copy commands from one indirect command buffer to another, but only a co
 ## Parameters
 
 - `buffer`: An indirect command buffer the command copies from.
-- `sourceRange`: The range of commands in the source buffer to copy.   The source range needs to start on a valid execution point.
+- `sourceRange`: The range of commands in the source buffer to copy. The source range needs to start on a valid execution point.
 - `destination`: Another indirect command buffer the command copies to.
-- `destinationIndex`: An index in   where the command copies content from   to. The destination index needs to be a valid execution point with enough remaining space in   to accommodate   indexes.
+- `destinationIndex`: An index in `destination` where the command copies content from `source` to. The destination index needs to be a valid execution point with enough remaining space in `destination` to accommodate `sourceRange.count` indexes.
 
 ## See Also
 

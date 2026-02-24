@@ -23,7 +23,7 @@ func setAccelerationStructure(_ accelerationStructure: (any MTLAccelerationStruc
 ## Parameters
 
 - `accelerationStructure`: An acceleration structure the method encodes.
-- `index`: The index of an acceleration structure within the argument buffer.   The value corresponds to either the index ID of a declaration in   Metal Shading Language (MSL) or the   property of   an   instance.
+- `index`: The index of an acceleration structure within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
 
 
 ---

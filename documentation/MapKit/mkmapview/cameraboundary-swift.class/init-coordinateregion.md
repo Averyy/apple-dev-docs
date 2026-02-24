@@ -21,7 +21,7 @@ init?(coordinateRegion region: MKCoordinateRegion)
 
 ## Parameters
 
-- `region`: The   region that describes the camera boundary.
+- `region`: The [`MKCoordinateRegion`](mkcoordinateregion.md) region that describes the camera boundary.
 
 ## See Also
 

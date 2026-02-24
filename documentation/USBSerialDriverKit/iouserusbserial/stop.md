@@ -24,7 +24,7 @@ Before terminating a provider, the system calls this method to stop the service 
 
 ## Parameters
 
-- `provider`: The provider associated with the current service. This object is the same one that the system previously passed to your service’s   method.
+- `provider`: The provider associated with the current service. This object is the same one that the system previously passed to your service’s [`Start`](https://developer.apple.com/documentation/SerialDriverKit/IOUserSerial/Start) method.
 
 ## See Also
 

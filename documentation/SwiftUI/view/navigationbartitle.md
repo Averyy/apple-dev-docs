@@ -45,7 +45,7 @@ struct FlavorView: View {
 
 ## Parameters
 
-- `title`: A description of this view to display in the   navigation bar.
+- `title`: A description of this view to display in the navigation bar.
 
 ## See Also
 

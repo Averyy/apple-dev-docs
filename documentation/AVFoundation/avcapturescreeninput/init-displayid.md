@@ -20,7 +20,7 @@ A capture screen input initialized to provide media data from a given display. I
 
 ## Parameters
 
-- `displayID`:  is defined in  .
+- `displayID`: The ID of the display from which to capture video. `CGDirectDisplayID` is defined in `<CoreGraphics/CGDirectDisplay.h>`.
 
 ## See Also
 

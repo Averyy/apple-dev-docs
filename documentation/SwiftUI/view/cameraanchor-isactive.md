@@ -43,7 +43,7 @@ struct ExampleSelfPreviewWhenFocusedView: View {
 
 ## Parameters
 
-- `isActive`: You can use this value to ensure that only one camera anchor is active at a time   if you want to create multiple views that could act as the anchor in your app.
+- `isActive`: Whether or not the camera anchor is active. You can use this value to ensure that only one camera anchor is active at a time if you want to create multiple views that could act as the anchor in your app.
 
 ## See Also
 

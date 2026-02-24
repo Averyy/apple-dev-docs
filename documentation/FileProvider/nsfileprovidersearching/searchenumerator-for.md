@@ -21,7 +21,7 @@ An [`NSFileProviderSearchEnumerator`](nsfileprovidersearchenumerator.md) that yo
 
 ## Parameters
 
-- `request`: An   that contains the search query.
+- `request`: An [`NSFileProviderStringSearchRequest`](nsfileproviderstringsearchrequest.md) that contains the search query.
 
 ## See Also
 

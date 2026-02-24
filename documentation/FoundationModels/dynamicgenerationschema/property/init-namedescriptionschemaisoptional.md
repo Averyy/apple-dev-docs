@@ -21,7 +21,7 @@ init(name: String, description: String? = nil, schema: DynamicGenerationSchema, 
 ## Parameters
 
 - `name`: A name for this property.
-- `description`: An optional natural language description of this   property’s contents.
+- `description`: An optional natural language description of this property’s contents.
 - `schema`: A schema representing the type this property contains.
 - `isOptional`: Determines if this property is required or not.
 

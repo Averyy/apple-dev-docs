@@ -64,7 +64,7 @@ Depending on the specified bars, the requested style may not be able to be fullf
 ## Parameters
 
 - `style`: The style to display as the background of the bar.
-- `bars`: The bars to use the style for or    if empty.
+- `bars`: The bars to use the style for or [`automatic`](toolbarplacement/automatic.md) if empty.
 
 ## See Also
 

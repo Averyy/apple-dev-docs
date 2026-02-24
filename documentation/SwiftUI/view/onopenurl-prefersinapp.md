@@ -33,7 +33,7 @@ It’s equivalent to calling `.onOpenURL(_:)`
 
 ## Parameters
 
-- `prefersInApp`: A boolean value that specifies whether to prefer to open the URL   with an in-app browser or not.
+- `prefersInApp`: A boolean value that specifies whether to prefer to open the URL with an in-app browser or not.
 
 
 ---

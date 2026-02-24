@@ -25,7 +25,7 @@ No action is performed if not implemented.
 ## Parameters
 
 - `context`: The context in which the web extension is running.
-- `completionHandler`: A block that must be called upon completion. The block takes two arguments: the detected locale (or   if the locale is unknown) and an error, which should be provided if any errors occurred.
+- `completionHandler`: A block that must be called upon completion. The block takes two arguments: the detected locale (or `nil` if the locale is unknown) and an error, which should be provided if any errors occurred.
 
 
 ---

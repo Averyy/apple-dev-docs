@@ -29,6 +29,9 @@ This method applies the screen-blend mode filter to an image. The effect calcula
 
 The screen-blend mode filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in the image becoming lighter with colors from the input and background image:
 
 ```swift

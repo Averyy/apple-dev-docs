@@ -26,7 +26,7 @@ A converted measurement.
 
 ## Parameters
 
-- `otherUnit`: A unit of the same  .
+- `otherUnit`: A unit of the same `Dimension`.
 
 ## See Also
 

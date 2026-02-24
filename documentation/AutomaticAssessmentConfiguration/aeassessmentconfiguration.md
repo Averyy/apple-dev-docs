@@ -21,6 +21,32 @@ class AEAssessmentConfiguration
 
 Create a configuration instance and pass it to the [`init(configuration:)`](aeassessmentsession/init(configuration:).md) initializer of an [`AEAssessmentSession`](aeassessmentsession.md) instance to create a new assessment session. Before using the configuration, indicate which exceptions you want to allow for the assessment session’s restrictions by setting values on the configuration instance. For example, you can set values to allow dictation and certain aspects of autocorrect:
 
+**Swift**:
+
+```swift
+let config = AEAssessmentConfiguration()
+
+#if os(iOS) // These exceptions available only on iOS and iPadOS.
+config.allowsDictation = true
+config.autocorrectMode = [.punctuation, .spelling]
+#endif
+
+let session = AEAssessmentSession(configuration: config)
+```
+
+**Objective-C**:
+
+```objc
+AEAssessmentConfiguration *config = [AEAssessmentConfiguration new];
+
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR // These exceptions available only on iOS and iPadOS.
+config.allowsDictation = YES;
+config.autocorrectMode = AEAutocorrectModePunctuation | AEAutocorrectModeSpelling;
+#endif
+
+AEAssessmentSession *session = [[AEAssessmentSession alloc] initWithConfiguration:config];
+```
+
 While you provide a configuration instance when creating a session on iOS, iPadOS, and macOS, specific exceptions apply only to certain platforms. In particular, on macOS, you can selectively make specific apps besides your own available during an assessment — for example, to allow users to access a calculator or a dictionary. All other exceptions apply only to iOS and iPadOS.
 
 ## Topics

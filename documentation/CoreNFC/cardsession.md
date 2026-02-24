@@ -113,6 +113,9 @@ Card emulation is valid for up to 60 seconds from the [`startEmulation()`](cards
 
 Your app must have the following entitlements to use [`CardSession`](cardsession.md):
 
+- **[`com.apple.developer.nfc.hce`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.hce)**: A Boolean value that indicates this app can use card sessions.
+- **[`com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes)**: A string array of ISO 7816 identifier strings that your app listens for when receiving the `SELECT` command from the reader. These strings can be fully-qualified Application Identifier (AID) strings, Registered Application Provider Identifier (RID) strings, or prefix strings. Any prefix strings must be at least as long as the RID.
+
 If your app lacks a required entitlement, [`init()`](cardsession/init().md) raises [`fatalError(_:file:line:)`](https://developer.apple.com/documentation/Swift/fatalError(_:file:line:)). To avoid this, check the [`isSupported`](cardsession/issupported.md) and [`isEligible`](cardsession/iseligible.md) properties before attempting to create a card session.
 
 Optionally, your app may have the [`com.apple.developer.nfc.hce.default-contactless-app`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.hce.default-contactless-app) entitlement. A value of `YES` indicates that a person can use the iOS settings app to set this app as a default NFC contactless app.

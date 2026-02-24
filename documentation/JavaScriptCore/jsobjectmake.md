@@ -32,8 +32,8 @@ The system sets `data` on the created object before calling the initialize metho
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `jsClass`: The   to assign to the object. Pass   to use the default object class.
-- `data`: A pointer to set as the object’s private data. Pass   to specify no private data.
+- `jsClass`: The [`JSClassRef`](jsclassref.md) to assign to the object. Pass `NULL` to use the default object class.
+- `data`: A pointer to set as the object’s private data. Pass `NULL` to specify no private data.
 
 ## See Also
 

@@ -20,7 +20,7 @@ The removed object receives a `release` message. This method raises an `NSRangeE
 
 ## Parameters
 
-- `index`: The index of the object to remove. All items beyond   are moved up one slot to fill the gap.
+- `index`: The index of the object to remove. All items beyond `index` are moved up one slot to fill the gap.
 
 ## See Also
 

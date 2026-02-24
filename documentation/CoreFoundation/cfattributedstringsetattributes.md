@@ -27,9 +27,9 @@ Note that after this call, if it is mutable, changes to `replacement` will not a
 ## Parameters
 
 - `aStr`: The mutable attributed string to modify.
-- `range`: The range of aStr over to which the new attributes apply.   must not exceed the bounds of  .
-- `replacement`: A dictionary that contains key-value pairs that specify the new attributes to apply to  . The keys must be CFString objects, and the corresponding values must be CFType objects.
-- `clearOtherAttributes`: If  , existing attributes (that aren’t being replaced) are left alone; otherwise they are cleared.
+- `range`: The range of aStr over to which the new attributes apply. `range` must not exceed the bounds of `aStr`.
+- `replacement`: A dictionary that contains key-value pairs that specify the new attributes to apply to `range`. The keys must be CFString objects, and the corresponding values must be CFType objects.
+- `clearOtherAttributes`: If `false`, existing attributes (that aren’t being replaced) are left alone; otherwise they are cleared.
 
 ## See Also
 

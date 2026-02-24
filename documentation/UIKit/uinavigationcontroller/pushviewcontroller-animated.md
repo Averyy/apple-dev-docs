@@ -27,7 +27,7 @@ In addition to displaying the view associated with the new view controller at th
 ## Parameters
 
 - `viewController`: The view controller to push onto the stack. This object cannot be a tab bar controller. If the view controller is already on the navigation stack, this method throws an exception.
-- `animated`: Specify   to animate the transition or   if you do not want the transition to be animated. You might specify   if you are setting up the navigation controller at launch time.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition or [`false`](https://developer.apple.com/documentation/Swift/false) if you do not want the transition to be animated. You might specify [`false`](https://developer.apple.com/documentation/Swift/false) if you are setting up the navigation controller at launch time.
 
 ## See Also
 

@@ -20,7 +20,7 @@ The color list with the specified name or `nil` if no such color list exists.
 
 ## Parameters
 
-- `name`: The name of the color list to retrieve. This name must not include the “ ” suffix.
+- `name`: The name of the color list to retrieve. This name must not include the “`.clr`” suffix.
 
 ## See Also
 

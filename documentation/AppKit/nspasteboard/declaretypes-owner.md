@@ -30,8 +30,8 @@ In general, you should not use this method with [`writeObjects(_:)`](nspasteboar
 
 ## Parameters
 
-- `newTypes`: An array of   objects that specify the types of data that may be added to the new pasteboard. The types should be ordered according to the preference of the source application, with the most preferred type coming first (typically, the richest representation).
-- `newOwner`: The object responsible for writing data to the pasteboard, or   if you provide data for all types immediately. If you specify a   object, it must support all of the types declared in the   parameter and must remain alive for as long as the data is   on the pasteboard.
+- `newTypes`: An array of `NSString` objects that specify the types of data that may be added to the new pasteboard. The types should be ordered according to the preference of the source application, with the most preferred type coming first (typically, the richest representation).
+- `newOwner`: The object responsible for writing data to the pasteboard, or `nil` if you provide data for all types immediately. If you specify a `newOwner` object, it must support all of the types declared in the `newTypes` parameter and must remain alive for as long as the data is *promised* on the pasteboard.
 
 ## See Also
 

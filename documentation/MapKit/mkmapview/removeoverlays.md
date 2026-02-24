@@ -25,7 +25,7 @@ This method removes the specified overlays regardless of which level each one is
 
 ## Parameters
 
-- `overlays`: An array of objects, each of which conforms to the   protocol.
+- `overlays`: An array of objects, each of which conforms to the [`MKOverlay`](mkoverlay.md) protocol.
 
 ## See Also
 

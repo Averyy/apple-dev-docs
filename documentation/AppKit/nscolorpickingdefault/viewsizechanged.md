@@ -22,7 +22,7 @@ Use this method to perform special preparation when resizing the color picker’
 
 ## Parameters
 
-- `sender`: The   that contains the color picker.
+- `sender`: The `NSColorPanel` that contains the color picker.
 
 ## See Also
 

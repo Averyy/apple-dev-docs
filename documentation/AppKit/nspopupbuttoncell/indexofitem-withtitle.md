@@ -20,7 +20,7 @@ The index of the item or `-1` if no item with the specified title was found.
 
 ## Parameters
 
-- `title`: The title of the item you want. You must not pass   for this parameter.
+- `title`: The title of the item you want. You must not pass `nil` for this parameter.
 
 ## See Also
 

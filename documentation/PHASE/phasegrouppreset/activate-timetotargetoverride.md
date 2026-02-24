@@ -21,7 +21,7 @@ func activate(timeToTargetOverride: Double)
 
 ## Parameters
 
-- `timeToTargetOverride`: A duration in which the engine fades the settings from their original value to their new value. Overrides  .
+- `timeToTargetOverride`: A duration in which the engine fades the settings from their original value to their new value. Overrides [`timeToTarget`](phasegrouppreset/timetotarget.md).
 
 ## See Also
 

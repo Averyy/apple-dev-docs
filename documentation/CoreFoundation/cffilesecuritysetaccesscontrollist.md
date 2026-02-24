@@ -32,8 +32,8 @@ Setting the `accessControlList` to `NULL` unsets the ACL property of the `CFFile
 
 ## Parameters
 
-- `fileSec`: The   object to modify.
-- `accessControlList`: The access control list to set, or   to indicate that the access control list should be removed from a file, or   to unset the access control list property in the object.
+- `fileSec`: The `CFFileSecurityRef` object to modify.
+- `accessControlList`: The access control list to set, or `kCFFileSecurityRemoveACL` to indicate that the access control list should be removed from a file, or `NULL` to unset the access control list property in the object.
 
 ## See Also
 

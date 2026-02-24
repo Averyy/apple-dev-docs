@@ -21,7 +21,7 @@ func perform(_ requests: [VNRequest], onImageData imageData: Data, orientation: 
 
 ## Parameters
 
-- `requests`: An array of   requests to perform.
+- `requests`: An array of [`VNRequest`](vnrequest.md) requests to perform.
 - `imageData`: The input image data on which to perform the request.
 - `orientation`: The orientation of the input image.
 

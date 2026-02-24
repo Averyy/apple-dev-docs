@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: method
 
-Creates a `BNNSTensor` populated with a  of the values in `source`.
+Creates a `BNNSTensor` populated with a **copy** of the values in `source`.
 
 **Availability**:
 - iOS 26.0+

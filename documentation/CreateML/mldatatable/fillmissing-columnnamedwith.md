@@ -26,7 +26,7 @@ A new data table.
 ## Parameters
 
 - `columnNamed`: The name of the column with missing values.
-- `value`: An   to put in place for every missing value in the column.
+- `value`: An `MLDataValue` to put in place for every missing value in the column.
 
 
 ---

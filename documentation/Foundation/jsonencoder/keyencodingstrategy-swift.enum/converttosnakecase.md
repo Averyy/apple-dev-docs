@@ -34,6 +34,10 @@ This strategy follows these steps to convert key names to snake-case:
 
 The following examples show the result of applying this strategy:
 
+- **`feeFiFoFum`**: Converts to: `fee_fi_fo_fum`
+- **`fee_fi_fo_fum`**: Converts to: `fee_fi_fo_fum`
+- **`xmlContents`**: Converts to: `xml_contents`
+
 The example below shows how properties on the `OlympicEventResult` structure convert to snake-case when encoded as keys in a JSON object.
 
 ```swift

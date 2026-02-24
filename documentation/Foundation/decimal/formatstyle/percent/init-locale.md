@@ -22,7 +22,7 @@ init(locale: Locale = .autoupdatingCurrent)
 
 ## Parameters
 
-- `locale`: The locale to use when formatting or parsing decimal values. Defaults to  .
+- `locale`: The locale to use when formatting or parsing decimal values. Defaults to [`autoupdatingCurrent`](locale/autoupdatingcurrent.md).
 
 
 ---

@@ -22,6 +22,9 @@ struct DenseVector_Complex_Float
 
 #### Overview
 
+- **`count`**: Number of entries in the vector.
+- **`data`**: The array of complex float values.
+
 ## Topics
 
 ### Initializers

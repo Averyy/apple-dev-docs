@@ -25,7 +25,7 @@ func enumerate<T>(_ fetch: FetchDescriptor<T>, batchSize: Int = 5000, allowEscap
 
 - `fetch`: A fetch descriptor that provides the configuration for the fetch.
 - `batchSize`: The maximum number of models to include in each batch. The default value is 5000.
-- `allowEscapingMutations`: A Boolean value that determines whether the closure can leave the context in a modified state after it completes. The default value is  .
+- `allowEscapingMutations`: A Boolean value that determines whether the closure can leave the context in a modified state after it completes. The default value is `false`.
 - `block`: The closure to run for each fetched model.
 
 ## See Also

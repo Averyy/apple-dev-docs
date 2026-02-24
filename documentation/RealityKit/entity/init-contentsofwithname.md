@@ -35,7 +35,7 @@ See [`init(named:in:)`](entity/init(named:in:).md) for an example of optimally l
 ## Parameters
 
 - `url`: A file URL representing the file to load.
-- `resourceName`: A unique name the method assigns to the resource it loads,   for use in network synchronization.
+- `resourceName`: A unique name the method assigns to the resource it loads, for use in network synchronization.
 
 ## See Also
 

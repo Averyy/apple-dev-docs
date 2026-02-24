@@ -21,10 +21,10 @@ Creates a toggle template for a control.
 
 ## Parameters
 
-- `titleKey`: The key to a localized string to display as the title of   the toggle.
-- `isOn`: A boolean value that describes the current value of the   toggle.
+- `titleKey`: The key to a localized string to display as the title of the toggle.
+- `isOn`: A boolean value that describes the current value of the toggle.
 - `action`: The action the toggle performs when pressed.
-- `valueLabel`: A view that renders the toggle’s value. The boolean   parameter represents the value.
+- `valueLabel`: A view that renders the toggle’s value. The boolean parameter represents the value.
 
 ## See Also
 

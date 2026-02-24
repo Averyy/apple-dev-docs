@@ -220,15 +220,15 @@ A 3-by-3 matrix represents an affine transformation.
 
 Because the third column is always `(0,0,1)`, the [`vImage_CGAffineTransform`](vimage_cgaffinetransform.md) data structure contains values for only the first two columns.
 
-To perform a scale transformation, set the  and  parameters of the matrix to the required scale.
+To perform a scale transformation, set the *a* and *d* parameters of the matrix to the required scale.
 
 ![A 3-by-3 matrix for scaling.](https://docs-assets.developer.apple.com/published/9f887f1de9bbcb61af9992432fb821eb/media-3682474%402x.png)
 
-To perform the translate transformation, set the  and  parameters of the matrix to the required offset.
+To perform the translate transformation, set the *tx* and *ty* parameters of the matrix to the required offset.
 
 ![A 3 by 3 matrix for translation.](https://docs-assets.developer.apple.com/published/d3f20158f45b6884521dea50065da09b/media-3682475%402x.png)
 
-The `scaleAndCenterBuffer(source:destination:to:backgroundColor:)` function accepts a scale parameter and sets that parameter as the  and  parameters of the matrix.
+The `scaleAndCenterBuffer(source:destination:to:backgroundColor:)` function accepts a scale parameter and sets that parameter as the *a* and *d* parameters of the matrix.
 
 ```swift
 static func scaleAndCenterBuffer(source: vImage_Buffer,

@@ -26,7 +26,7 @@ A sound event node asset.
 ## Parameters
 
 - `rootNode`: The root node of the sound event asset to register.
-- `identifier`: The identifier to assign to this parameter. Assigning   generates an automatic identifier.
+- `identifier`: The identifier to assign to this parameter. Assigning `nil` generates an automatic identifier.
 
 ## See Also
 

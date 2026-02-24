@@ -16,7 +16,8 @@ func requestPlaybackRestrictionsAuthorization() async throws -> Bool
 
 ## Parameters
 
-- `completion`: A callback the system invokes after it makes a determination of parental restrictions.
+- `completion`: A callback the system invokes after it makes a determination of parental restrictions. - **`isAuthorized`**: A Boolean value that indicates whether the system authorizes the app to play an item.
+- **`error`**: An optional error that contains error details if the system encountered an error.
 
 ## See Also
 

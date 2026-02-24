@@ -30,7 +30,7 @@ The caller doesn’t own the returned `dataBuffer`, and must retain it explicitl
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
 
 ## See Also
 

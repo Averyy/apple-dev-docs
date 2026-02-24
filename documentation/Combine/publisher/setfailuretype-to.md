@@ -48,7 +48,7 @@ let cancellable = pub1
 
 ## Parameters
 
-- `failureType`: The   type presented by this publisher.
+- `failureType`: The `Failure` type presented by this publisher.
 
 ## See Also
 

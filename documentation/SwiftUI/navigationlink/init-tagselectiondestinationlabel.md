@@ -22,10 +22,10 @@ init<V>(tag: V, selection: Binding<V?>, @ViewBuilder destination: () -> Destinat
 
 ## Parameters
 
-- `tag`: The value of   that causes the link to present   .
-- `selection`: A bound variable that causes the link to present    when   becomes equal to  .
+- `tag`: The value of `selection` that causes the link to present `destination`.
+- `selection`: A bound variable that causes the link to present `destination` when `selection` becomes equal to `tag`.
 - `destination`: A view for the navigation link to present.
-- `label`: A view builder to produce a label describing the    to present.
+- `label`: A view builder to produce a label describing the `destination` to present.
 
 ## See Also
 

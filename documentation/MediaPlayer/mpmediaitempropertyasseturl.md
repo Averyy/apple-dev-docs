@@ -24,6 +24,18 @@ let MPMediaItemPropertyAssetURL: String
 
 This value is an [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object. The URL has the custom scheme of `ipod-library`. For example, a URL might look like this:
 
+**Swift**:
+
+```swift
+ipod-library://item/item.m4a?id=12345
+```
+
+**Objective-C**:
+
+```objc
+ipod-library://item/item.m4a?id=12345
+```
+
 ## See Also
 
 - [let MPMediaItemPropertyPlaybackDuration: String](mpmediaitempropertyplaybackduration.md)

@@ -23,8 +23,8 @@ func CFBinaryHeapApplyFunction(_ heap: CFBinaryHeap!, _ applier: ((UnsafeRawPoin
 ## Parameters
 
 - `heap`: The binary heap to use.
-- `applier`: The callback function to call once for each value in  .
-- `context`: A program-defined value that is passed to the   callback function, but is otherwise unused by this function.
+- `applier`: The callback function to call once for each value in `heap`.
+- `context`: A program-defined value that is passed to the `applier` callback function, but is otherwise unused by this function.
 
 ## See Also
 

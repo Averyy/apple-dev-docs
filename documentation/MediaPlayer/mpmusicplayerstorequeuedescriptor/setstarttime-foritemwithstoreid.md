@@ -20,7 +20,7 @@ func setStartTime(_ startTime: TimeInterval, forItemWithStoreID storeID: String)
 
 ## Parameters
 
-- `startTime`: The   describing when the store item starts playing.
+- `startTime`: The [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval) describing when the store item starts playing.
 - `storeID`: The store identifier associated with the item in the queue that has a changed start time.
 
 ## See Also

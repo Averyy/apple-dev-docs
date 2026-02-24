@@ -30,6 +30,18 @@ When the action executes, the node’s [`alpha`](sknode/alpha.md) property anima
 
 This action is reversible; the reverse is created as if the following code is executed:
 
+**Swift**:
+
+```swift
+let action = SKAction.fadeAlpha(by: -factor, duration: sec)
+```
+
+**Obj-C**:
+
+```objc
+[SKAction fadeAlphaBy: -factor duration: sec];
+```
+
 ## Parameters
 
 - `factor`: The amount to add to the node’s alpha value.

@@ -30,7 +30,7 @@ This method enqueues the block only and does not automatically wake up the speci
 
 - `rl`: A run loop.
 - `mode`: A CFString that identifies a runloop mode, or a CFArray of CFStrings that each identify a runloop mode.
-- `block`: The block is copied by the function before the function returns.
+- `block`: The block object to execute. The block is copied by the function before the function returns.
 
 
 ---

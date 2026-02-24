@@ -26,8 +26,8 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `in_values`: An array of   values to set as the current selection of the control.
-- `in_num_values`: The number of values in  .
+- `in_values`: An array of [`IOUserAudioSelectorValue`](iouseraudioselectorvalue.md) values to set as the current selection of the control.
+- `in_num_values`: The number of values in `in_values`.
 
 ## See Also
 

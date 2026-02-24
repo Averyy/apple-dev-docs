@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Performs the multiply operation   on a dense matrix of single-precision values.
+Performs the multiply operation *Y* *= Subfactor * X* on a dense matrix of single-precision values.
 
 **Availability**:
 - iOS 11.0+
@@ -22,18 +22,18 @@ func SparseMultiply(_ Subfactor: SparseOpaqueSubfactor_Float, _ X: DenseMatrix_F
 
 ## Parameters
 
-- `Subfactor`: The subfactor to multiply by, which   returns.
-- `X`: The matrix  .
-- `Y`: The matrix  .
+- `Subfactor`: The subfactor to multiply by, which [`SparseCreateSubfactor(_:_:)`](sparsecreatesubfactor(_:_:)-4renf.md) returns.
+- `X`: The matrix *X*.
+- `Y`: The matrix *Y*.
 
 ## See Also
 
 - [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseMatrix_Double)](sparsemultiply(_:_:)-88trz.md)
-  Performs the multiply operation   __in place on a dense matrix of double-precision values.
+  Performs the multiply operation *Y* *= Subfactor * X,* __in place on a dense matrix of double-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Float, DenseMatrix_Float)](sparsemultiply(_:_:)-3r4mf.md)
-  Performs the multiply operation _ _, in place on a dense matrix of single-precision values.
+  Performs the multiply operation *Y*_ _*= Subfactor * X*, in place on a dense matrix of single-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseMatrix_Double, DenseMatrix_Double)](sparsemultiply(_:_:_:)-4nosz.md)
-  Performs the multiply operation   on a dense matrix of double-precision values.
+  Performs the multiply operation *Y* *= Subfactor * X* on a dense matrix of double-precision values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Complex_Float, DenseMatrix_Complex_Float)](sparsemultiply(_:_:)-34fp6.md)
   Perform the multiply operation `Y = Subfactor * X` in place for complex float values.
 - [func SparseMultiply(SparseOpaqueSubfactor_Complex_Float, DenseVector_Complex_Float)](sparsemultiply(_:_:)-3dwed.md)

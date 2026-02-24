@@ -20,7 +20,7 @@ func setData(_ data: Data, forType type: NSPasteboard.PasteboardType) -> Bool
 
 ## Parameters
 
-- `data`: An   object containing the value for the representation specified by  .
+- `data`: An `NSData` object containing the value for the representation specified by `type`.
 - `type`: A uniform type identifier string.
 
 ## See Also

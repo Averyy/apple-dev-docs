@@ -23,7 +23,7 @@ To add the interaction to a view, use [`addInteraction(_:)`](uiview/addinteracti
 
 ## Parameters
 
-- `delegate`: An object that implements the   protocol.
+- `delegate`: An object that implements the [`UILargeContentViewerInteractionDelegate`](uilargecontentviewerinteractiondelegate.md) protocol.
 
 
 ---

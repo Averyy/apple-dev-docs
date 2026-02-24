@@ -30,10 +30,10 @@ If any value put into the collection is not one understood by one of the callbac
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new set and its storage for values. Pass   or   to use the current default allocator.
-- `values`: A C array of the pointer-sized values to be in the new set. This parameter may be   if the   parameter is 0. The C array is not changed or freed by this function.   must be a pointer to a C array of at least   elements.
-- `numValues`: The number of values to copy from the   C array in the new set.
-- `callBacks`: This value may be  , which is treated as a valid structure of version   with all fields  . If the collection contains only CFType objects, then pass   to use the default callback functions.
+- `allocator`: The allocator to use to allocate memory for the new set and its storage for values. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `values`: A C array of the pointer-sized values to be in the new set. This parameter may be `NULL` if the `numValues` parameter is 0. The C array is not changed or freed by this function. `values` must be a pointer to a C array of at least `numValues` elements.
+- `numValues`: The number of values to copy from the `values` C array in the new set.
+- `callBacks`: A pointer to a [`CFSetCallBacks`](cfsetcallbacks.md) structure initialized with the callbacks to use to retain, release, describe, and compare values in the collection. A copy of the contents of the callbacks structure is made, so that a pointer to a structure on the stack can be passed in or can be reused for multiple collection creations. This value may be `NULL`, which is treated as a valid structure of version `0` with all fields `NULL`. If the collection contains only CFType objects, then pass [`kCFTypeSetCallBacks`](kcftypesetcallbacks.md) to use the default callback functions.
 
 ## See Also
 

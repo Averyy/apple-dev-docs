@@ -30,10 +30,10 @@ If `filePath` is not absolute, the resulting URL will be considered relative to 
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
-- `filePath`: The path string to convert to a   object.
-- `pathStyle`: The operating system path style used in  . See   for a list of possible values.
-- `isDirectory`: A Boolean value that specifies whether   is treated as a directory path when resolving against relative path components. Pass   if the pathname indicates a directory,   otherwise.
+- `allocator`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `filePath`: The path string to convert to a `CFURL` object.
+- `pathStyle`: The operating system path style used in `filePath`. See [`CFURLPathStyle`](cfurlpathstyle.md) for a list of possible values.
+- `isDirectory`: A Boolean value that specifies whether `filePath` is treated as a directory path when resolving against relative path components. Pass `true` if the pathname indicates a directory, `false` otherwise.
 
 ## See Also
 

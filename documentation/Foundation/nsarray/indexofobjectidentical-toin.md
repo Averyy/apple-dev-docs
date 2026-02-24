@@ -31,7 +31,7 @@ Objects are considered identical if their object addresses are the same.
 ## Parameters
 
 - `anObject`: An object.
-- `range`: The range of indexes in the array within which to search for  .
+- `range`: The range of indexes in the array within which to search for `anObject`.
 
 ## See Also
 

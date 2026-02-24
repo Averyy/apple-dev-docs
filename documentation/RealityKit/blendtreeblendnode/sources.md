@@ -21,7 +21,7 @@ var sources: [any BlendTreeNode]
 
 #### Discussion
 
-This node combines the animations of each member of this array to a single animation that represents a  of the sources. If a source is a [`BlendTreeSourceNode`](blendtreesourcenode.md), this structure blends its animation into the output. If a source is a [`BlendTreeBlendNode`](blendtreeblendnode.md), this structure blends the output of its sources into this structure’s output.
+This node combines the animations of each member of this array to a single animation that represents a *blend* of the sources. If a source is a [`BlendTreeSourceNode`](blendtreesourcenode.md), this structure blends its animation into the output. If a source is a [`BlendTreeBlendNode`](blendtreeblendnode.md), this structure blends the output of its sources into this structure’s output.
 
 
 ---

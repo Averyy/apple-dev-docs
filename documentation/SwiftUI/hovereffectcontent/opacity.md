@@ -24,7 +24,7 @@ When applying the `opacity(_:)` effect to a view that has already had its opacit
 
 ## Parameters
 
-- `opacity`: A value between 0 (fully transparent) and 1 (fully   opaque).
+- `opacity`: A value between 0 (fully transparent) and 1 (fully opaque).
 
 
 ---

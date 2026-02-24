@@ -43,7 +43,7 @@ An instance of the provided hosting delegate class will be created by SwiftUI an
 
 ## Parameters
 
-- `hostingDelegateClass`: A Class type that conforms to   .
+- `hostingDelegateClass`: A Class type that conforms to `UIHostingSceneDelegate`.
 
 
 ---

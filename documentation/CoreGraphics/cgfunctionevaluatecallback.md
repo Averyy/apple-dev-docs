@@ -33,9 +33,9 @@ void evaluateSquare(void *info, const float *inData, float *outData)
 
 ## Parameters
 
-- `info`: The   parameter passed to  .
-- `inData`: An array of floats. The size of the array is that specified by the   parameter passed to the   function.
-- `outData`: An array of floats. The size of the array is that specified by the   parameter passed to the   function.
+- `info`: The `info` parameter passed to [`init(info:domainDimension:domain:rangeDimension:range:callbacks:)`](cgfunction/init(info:domaindimension:domain:rangedimension:range:callbacks:).md).
+- `inData`: An array of floats. The size of the array is that specified by the `domainDimension` parameter passed to the [`init(info:domainDimension:domain:rangeDimension:range:callbacks:)`](cgfunction/init(info:domaindimension:domain:rangedimension:range:callbacks:).md) function.
+- `outData`: An array of floats. The size of the array is that specified by the `rangeDimension` parameter passed to the [`init(info:domainDimension:domain:rangeDimension:range:callbacks:)`](cgfunction/init(info:domaindimension:domain:rangedimension:range:callbacks:).md) function.
 
 ## See Also
 

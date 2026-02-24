@@ -27,7 +27,7 @@ The default option is to exclude debugging information.
 ## Parameters
 
 - `options`: The compilation options object.
-- `value`:   specifies that the compiled graph includes debugging information; otherwise, the compiled graph excludes debugging information.
+- `value`: `true` specifies that the compiled graph includes debugging information; otherwise, the compiled graph excludes debugging information.
 
 ## See Also
 

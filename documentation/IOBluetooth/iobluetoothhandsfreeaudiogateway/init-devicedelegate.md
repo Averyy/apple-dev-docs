@@ -17,7 +17,7 @@ init!(device: IOBluetoothDevice!, delegate inDelegate: Any!)
 ## Parameters
 
 - `device`: A remote Bluetooth phone or headset.
-- `inDelegate`: A delegate that conforms to the   protocol.
+- `inDelegate`: A delegate that conforms to the [`IOBluetoothHandsFreeAudioGatewayDelegate`](iobluetoothhandsfreeaudiogatewaydelegate.md) protocol.
 
 
 ---

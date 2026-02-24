@@ -34,7 +34,7 @@ presentedVC.presentationController.overrideTraitCollection = [UITraitCollection 
 [self presentViewController: presentedVC animated: NO completion: nil];
 ```
 
-The  view controller is not affected by use of this property.
+The *presenting* view controller is not affected by use of this property.
 
 The default value of the [`overrideTraitCollection`](uipresentationcontroller/overridetraitcollection.md) property is `nil`, which results in the full iOS trait environment being used by the presented view controller.
 

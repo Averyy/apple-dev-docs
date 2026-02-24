@@ -28,12 +28,44 @@ For best results, follow these guidelines when you use Core Image to render into
 
 Core Image manages its own internal OpenGL context that shares resources with the OpenGL context you specify. To enable resource sharing, use the following code:
 
+**Swift**:
+
+```swift
+let attr = [
+    NSOpenGLPFAAccelerated,
+    NSOpenGLPFANoRecovery,
+    NSOpenGLPFAColorSize, 32,
+    0
+    ].map {NSOpenGLPixelFormatAttribute($0)}
+let pf = NSOpenGLPixelFormat(attributes: attr)!
+let myCIContext = CIContext(CGLContext: CGLGetCurrentContext(),
+                            pixelFormat: pf.CGLPixelFormatObj,
+                            colorSpace: CGColorSpaceCreateDeviceRGB(),
+                            options: [:])
+```
+
+**Objective-C**:
+
+```objc
+const NSOpenGLPixelFormatAttribute attr[] = {
+        NSOpenGLPFAAccelerated,
+        NSOpenGLPFANoRecovery,
+        NSOpenGLPFAColorSize, 32,
+        0
+    };
+NSOpenGLPixelFormat *pf = [[NSOpenGLPixelFormat alloc] initWithAttributes:(void *)&attr];
+CIContext *myCIContext = [CIContext contextWithCGLContext: CGLGetCurrentContext()
+                                pixelFormat: [pf CGLPixelFormatObj]
+                                colorSpace: CGColorSpaceCreateDeviceRGB()
+                                options: nil];
+```
+
 ## Parameters
 
-- `cglctx`: A CGL context obtained by calling the CGL function  .
-- `pixelFormat`: A CGL pixel format object either obtained from the system or created by calling a CGL function such as  . This parameter must be the same pixel format object used to create the CGL context. The pixel format object must be valid for the lifetime of the Core Image context. Don’t release the pixel format object until after you release the Core Image context.
+- `cglctx`: A CGL context obtained by calling the CGL function `CGLCreateContext(_:_:_:)`.
+- `pixelFormat`: A CGL pixel format object either obtained from the system or created by calling a CGL function such as `CGLChoosePixelFormat(_:_:_:)`. This parameter must be the same pixel format object used to create the CGL context. The pixel format object must be valid for the lifetime of the Core Image context. Don’t release the pixel format object until after you release the Core Image context.
 - `colorSpace`: A color space object encapsulating color space information that is used to specify how color values are interpreted.
-- `options`: A dictionary that contains options for creating a   object. You can pass any of the keys defined in   along with the appropriate value.
+- `options`: A dictionary that contains options for creating a [`CIContext`](cicontext.md) object. You can pass any of the keys defined in [`CIContextOption`](cicontextoption.md) along with the appropriate value.
 
 ## See Also
 

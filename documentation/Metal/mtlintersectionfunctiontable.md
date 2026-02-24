@@ -23,6 +23,9 @@ protocol MTLIntersectionFunctionTable : MTLResource
 
 Don’t implement this protocol yourself. Instead create an [`MTLIntersectionFunctionTableDescriptor`](mtlintersectionfunctiontabledescriptor.md) instance and configure its properties. Then call the appropriate method on the pipeline state that you want to use this table with:
 
+- **Compute pipeline**: [`makeIntersectionFunctionTable(descriptor:)`](mtlcomputepipelinestate/makeintersectionfunctiontable(descriptor:).md)
+- **Render pipeline**: [`makeIntersectionFunctionTable(descriptor:stage:)`](mtlrenderpipelinestate/makeintersectionfunctiontable(descriptor:stage:).md)
+
 If you use the same ray-tracing functions with more than one pipeline, make a separate table for each.
 
 Use the methods on this instance to set the table entries to point at the intersection functions, and to provide buffers as arguments for those functions. For more information about intersection functions, see [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).

@@ -37,7 +37,7 @@ The iOS & iPadOS 18.2 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- A personalized Genmoji might not generate without selecting a different person first.  (139676076)  In the People selector screen, select a different person, then reselect the original person.
+- A personalized Genmoji might not generate without selecting a different person first.  (139676076) **Workaround:** In the People selector screen, select a different person, then reselect the original person.
 
 ##### Mail
 
@@ -69,7 +69,7 @@ The iOS & iPadOS 18.2 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- In iOS 18.2 Beta 3, `-[UIApplication defaultStatusForCategory:error:]` and its Swift equivalent `UIApplication.isDefaultApplication(for:)` are not present.  (139669875)  Build and run against iOS 18.2 Beta 2 to test adoption of this new interface.
+- In iOS 18.2 Beta 3, `-[UIApplication defaultStatusForCategory:error:]` and its Swift equivalent `UIApplication.isDefaultApplication(for:)` are not present.  (139669875) **Workaround:** Build and run against iOS 18.2 Beta 2 to test adoption of this new interface.
 
 ##### Uiwritingtoolscoordinator
 
@@ -77,13 +77,13 @@ The iOS & iPadOS 18.2 SDK provides support to develop apps for iPhone and iPad r
 
 - The two optional delegate methods intended for multiple container support are not available in iOS 18.2 Beta.  (136619485)
 - When the UIWritingToolsCoordinator state is `Noninteractive`, textual changes might be applied through the UITextInput Paste API, instead of through `-writingToolsCoordinator:replaceRange:inContext:proposedText:reason:animationParameters:completion:`.  (136631598)
-- The delegate method `-writingToolsCoordinator:requestsRangeInContextWithIdentifierForPoint:completion:` does not support asynchronous use of the completion block.  (136824869)  For the correct behavior when a user taps on a proofreading suggestion, the completion block for the method must be executed inline.
-- UIWritingToolsCoordinator throws an exception if the delegate returns modified text in `-writingToolsCoordinator:replaceRange:inContext:proposedText:reason:animationParameters:completion:`, when `reason` is `Noninteractive`.  (138775662)  Only return modified text when `reason` is `Interactive`.
+- The delegate method `-writingToolsCoordinator:requestsRangeInContextWithIdentifierForPoint:completion:` does not support asynchronous use of the completion block.  (136824869) **Workaround:** For the correct behavior when a user taps on a proofreading suggestion, the completion block for the method must be executed inline.
+- UIWritingToolsCoordinator throws an exception if the delegate returns modified text in `-writingToolsCoordinator:replaceRange:inContext:proposedText:reason:animationParameters:completion:`, when `reason` is `Noninteractive`.  (138775662) **Workaround:** Only return modified text when `reason` is `Interactive`.
 - The delegate receives more calls to `-writingToolsCoordinator:selectRanges:inContext:completion:` than necessary.  (138868937)
 - On Catalyst, if the delegate does not implement `-isEditable` as an `@objC` method, then Writing Tools will not apply changes to the text.  (139031260)
 - The UIWritingToolsCoordinator might quit Writing Tools if a user types in the InteractiveResting state or during operation of the previous/next revision buttons in the UI.  (139196667)
-- The UIWritingToolsCoordinator might request underline paths from the delegate at a time when they can’t be calculated.  (139532897)  The delegate must be arranged to send `-updateForReflowedTextInContextWithIdentifier:` to the writingToolsCoordinator when underline paths can be calculated.
-- Undo/redo grouping behavior is unpredictable when Writing Tools is active.  (139533079)  For proper undo/redo grouping behavior, the delegate must start the grouping when the UIWritingToolsCoordinator’s state changes to InteractiveStreaming and stop when the state changes away from InteractiveStreaming. When the undo/redo stack is popped, the delegate should notify the Writing Tools coordinator, using `-updateRange:withText:reason:forContextWithIdentifier:` and passing the `UndoRedo` reason for each item. When all the items in the group have popped, use the same method to notify the coordinator, passing a 0-length range and a 0-length attributedString along with `Typing` for the reason.
+- The UIWritingToolsCoordinator might request underline paths from the delegate at a time when they can’t be calculated.  (139532897) **Workaround:** The delegate must be arranged to send `-updateForReflowedTextInContextWithIdentifier:` to the writingToolsCoordinator when underline paths can be calculated.
+- Undo/redo grouping behavior is unpredictable when Writing Tools is active.  (139533079) **Workaround:** For proper undo/redo grouping behavior, the delegate must start the grouping when the UIWritingToolsCoordinator’s state changes to InteractiveStreaming and stop when the state changes away from InteractiveStreaming. When the undo/redo stack is popped, the delegate should notify the Writing Tools coordinator, using `-updateRange:withText:reason:forContextWithIdentifier:` and passing the `UndoRedo` reason for each item. When all the items in the group have popped, use the same method to notify the coordinator, passing a 0-length range and a 0-length attributedString along with `Typing` for the reason.
 
 ##### Writing Tools
 

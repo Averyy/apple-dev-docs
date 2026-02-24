@@ -29,7 +29,7 @@ Instead of using this method to get a font, it’s often more appropriate to use
 
 ## Parameters
 
-- `fontSize`: The size (in points) for the font. This value must be greater than  .
+- `fontSize`: The size (in points) for the font. This value must be greater than `0.0`.
 
 ## See Also
 

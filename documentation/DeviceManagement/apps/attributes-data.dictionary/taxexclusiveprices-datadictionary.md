@@ -13,6 +13,12 @@
 object Apps.Attributes.TaxExclusivePrices
 ```
 
+## Properties
+
+- `price` (number) *(required)*
+- `pricePerUnit` (number)
+- `quantity` (number)
+
 ## See Also
 
 - [object Apps.Attributes.ContentRatingsBySystem](apps/attributes-data.dictionary/contentratingsbysystem-data.dictionary.md)

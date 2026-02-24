@@ -22,15 +22,15 @@ func copy(sourceTexture: any MTLTexture, sourceSlice: Int, sourceLevel: Int, sou
 
 ## Parameters
 
-- `sourceTexture`: An   texture that the command copies data from. To read the source   texture contents, you need to set its   property   to   prior to drawing into it.
-- `sourceSlice`: A slice within   the command uses as a starting point to copy   data from. Set this to   if   isn’t a texture array or a   cube texture.
-- `sourceLevel`: A mipmap level within  .
-- `sourceOrigin`: An   instance that represents a location within    that the command begins copying data from. Assign   to each dimension   that’s not relevant to  .
-- `sourceSize`: An   instance that represents the size of the region, in pixels,   that the command copies from  , starting at  .   Assign   to each dimension that’s not relevant to  . If   sourceTexture uses a compressed pixel format, set   to a multiple   of the pixel format’s block size. If the block extends outside the bounds of   the texture, clamp   to the edge of the texture.
-- `destinationTexture`: Another   the command copies the data to that has the same    and   as  .   To write the contents into this texture, you need to set its    property to  .
-- `destinationSlice`: A slice within   the command uses as its starting point   for copying data to. Set this to   if   isn’t a texture   array or a cube texture.
-- `destinationLevel`: A mipmap level within  . The mipmap level you reference needs to   have the same size as the   slice’s mipmap at  .
-- `destinationOrigin`: An   instance that represents a location within    that the command begins copying data to. Assign   to each dimension that’s   not relevant to  .
+- `sourceTexture`: An [`MTLTexture`](mtltexture.md) texture that the command copies data from. To read the source texture contents, you need to set its [`isFramebufferOnly`](mtltexture/isframebufferonly.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) prior to drawing into it.
+- `sourceSlice`: A slice within `sourceTexture` the command uses as a starting point to copy data from. Set this to `0` if `sourceTexture` isn’t a texture array or a cube texture.
+- `sourceLevel`: A mipmap level within `sourceTexture`.
+- `sourceOrigin`: An [`MTLOrigin`](mtlorigin.md) instance that represents a location within `sourceTexture` that the command begins copying data from. Assign `0` to each dimension that’s not relevant to `sourceTexture`.
+- `sourceSize`: An [`MTLSize`](mtlsize.md) instance that represents the size of the region, in pixels, that the command copies from `sourceTexture`, starting at `sourceOrigin`. Assign `1` to each dimension that’s not relevant to `sourceTexture`. If sourceTexture uses a compressed pixel format, set `sourceSize` to a multiple of the pixel format’s block size. If the block extends outside the bounds of the texture, clamp `sourceSize` to the edge of the texture.
+- `destinationTexture`: Another [`MTLTexture`](mtltexture.md) the command copies the data to that has the same [`pixelFormat`](mtltexture/pixelformat.md) and [`sampleCount`](mtltexture/samplecount.md) as `sourceTexture`. To write the contents into this texture, you need to set its [`isFramebufferOnly`](mtltexture/isframebufferonly.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
+- `destinationSlice`: A slice within `destinationTexture` the command uses as its starting point for copying data to. Set this to `0` if `destinationTexture` isn’t a texture array or a cube texture.
+- `destinationLevel`: A mipmap level within `destinationTexture`. The mipmap level you reference needs to have the same size as the `sourceTexture` slice’s mipmap at `sourceLevel`.
+- `destinationOrigin`: An [`MTLOrigin`](mtlorigin.md) instance that represents a location within `destinationTexture` that the command begins copying data to. Assign `0` to each dimension that’s not relevant to `destinationTexture`.
 
 ## See Also
 

@@ -39,11 +39,17 @@ To copy your data to a private texture, copy your data to a temporary texture wi
 ## Parameters
 
 - `region`: The location of a block of pixels in the texture slice. The region needs to be within the dimensions of the slice.
-- `level`: A zero-indexed value that specifies which mipmap level is the destination. If the texture doesn’t have mipmaps, use  .
-- `slice`: A zero-indexed value that specifies which texture slice is the destination:
+- `level`: A zero-indexed value that specifies which mipmap level is the destination. If the texture doesn’t have mipmaps, use `0`.
+- `slice`: A zero-indexed value that specifies which texture slice is the destination: - For a cube texture, `slice` is a value between `0` and `5`, inclusive, that defines which cube face is the destination.
+- For a texture array, `slice` is the element index.
+- For a cube texture array, slice defines both the cube face and an array index. To determine the correct slice for a cube texture array, treat it as having a stride of `6`: `slice = cubeFace + arrayIndex * 6.`
+- For all other texture types, use `0`.
 - `pixelBytes`: A pointer to the bytes in memory to copy.
-- `bytesPerRow`: Nonzero values smaller than the texture width or not a multiple of the pixel size cause an error.
-- `bytesPerImage`: When copying data to a type of texture other than  , use  .
+- `bytesPerRow`: The stride, in bytes, of one row in the source data. For [`MTLTextureType.type1D`](mtltexturetype/type1d.md) and [`MTLTextureType.type1DArray`](mtltexturetype/type1darray.md), use `0`. For raw and packed pixel types, the stride is the number of pixels in one row. For compressed pixel formats, the stride is the number of bytes from the beginning of one row of blocks to the beginning of the next. When source data consists of only a single row, use `0`. Your data type determines how you should compute `bytesPerRow`: - For raw or packed pixel data, use a value greater than or equal to the size of data in one row, and less than `32767 * pixel size`.
+- For compressed pixel data, use a multiple of the compression block size. When working with PowerVR Texture Compression (PVRTC), use `0.` Nonzero values smaller than the texture width or not a multiple of the pixel size cause an error.
+- `bytesPerImage`: The stride, in bytes, between images in the source data. Supply a nonzero value only when you copy data to an [`MTLTextureType.type3D`](mtltexturetype/type3d.md) type texture. Your data type determines how you should compute `bytesPerImage`: - For data that consists only of a single image, use `0`.
+- For ordinary or packed pixel formats, use a multiple of pixel size.
+- For compressed pixel data, use a multiple of the compression block size. When working with PVRTC, use `0`. When copying data to a type of texture other than [`MTLTextureType.type3D`](mtltexturetype/type3d.md), use `0`.
 
 ## See Also
 

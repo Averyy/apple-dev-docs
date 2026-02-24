@@ -33,10 +33,10 @@ If an error occurs and the original item is not in the original location or a te
 ## Parameters
 
 - `originalItemURL`: The item containing the content you want to replace.
-- `newItemURL`: The item containing the new content for  . It is recommended that you put this item in a temporary directory as provided by the OS. If a temporary directory is not available, put this item in a uniquely named directory that is in the same directory as the original item.
-- `backupItemName`: The backup item will be removed in the event of success unless the   option is provided in  .
-- `options`: The options to use during the replacement. Typically, you pass   for this parameter, which uses only the metadata from the new item. You can also combine the options described in   using the C-bitwise OR operator.
-- `resultingURL`: On input, a pointer for a URL object. When the item is replaced, this pointer is set to the URL of the new item. If no new file system object is required, the URL object in this parameter may be the same passed to the   parameter. However, if a new file system object is required, the URL object may be different. For example, replacing an RTF document with an RTFD document requires the creation of a new file.
+- `newItemURL`: The item containing the new content for `originalItemURL`. It is recommended that you put this item in a temporary directory as provided by the OS. If a temporary directory is not available, put this item in a uniquely named directory that is in the same directory as the original item.
+- `backupItemName`: If provided, the name used to create a backup of the original item. The backup is placed in the same directory as the original item. If an error occurs during the creation of the backup item, the operation fails. If there is already an item with the same name as the backup item, that item will be removed. The backup item will be removed in the event of success unless the [`withoutDeletingBackupItem`](filemanager/itemreplacementoptions/withoutdeletingbackupitem.md) option is provided in `options`.
+- `options`: The options to use during the replacement. Typically, you pass [`usingNewMetadataOnly`](filemanager/itemreplacementoptions/usingnewmetadataonly.md) for this parameter, which uses only the metadata from the new item. You can also combine the options described in [`FileManager.ItemReplacementOptions`](filemanager/itemreplacementoptions.md) using the C-bitwise OR operator.
+- `resultingURL`: On input, a pointer for a URL object. When the item is replaced, this pointer is set to the URL of the new item. If no new file system object is required, the URL object in this parameter may be the same passed to the `originalItemURL` parameter. However, if a new file system object is required, the URL object may be different. For example, replacing an RTF document with an RTFD document requires the creation of a new file.
 
 ## See Also
 

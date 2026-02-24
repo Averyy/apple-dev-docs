@@ -30,9 +30,9 @@ This is the designated initializer for `NSError`.
 
 ## Parameters
 
-- `domain`: The error domain—this can be one of the predefined   domains, or an arbitrary string describing a custom domain.   must not be  . See   for a list of predefined domains.
+- `domain`: The error domain—this can be one of the predefined `NSError` domains, or an arbitrary string describing a custom domain. `domain` must not be `nil`. See `Error Domains` for a list of predefined domains.
 - `code`: The error code for the error.
-- `dict`: The   dictionary for the error.   may be  .
+- `dict`: The `userInfo` dictionary for the error. `userInfo` may be `nil`.
 
 
 ---

@@ -20,8 +20,8 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 
 ## Parameters
 
-- `keychain`: A reference to the keychain for which to set the access. Pass   to specify the default keychain.
-- `access`: An access object of type   containing access control lists for the keychain. See   for more information about creating an access object.
+- `keychain`: A reference to the keychain for which to set the access. Pass `NULL` to specify the default keychain.
+- `access`: An access object of type [`SecAccess`](secaccess.md) containing access control lists for the keychain. See [`Access Control Lists`](access-control-lists.md) for more information about creating an access object.
 
 
 ---

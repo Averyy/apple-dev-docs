@@ -72,6 +72,12 @@ Note that the payload file includes a WatchKit Simulator Actions key. This key i
 
 Each dictionary can contain the following keys:
 
+- **`title`**: (Required) The title of the action button.
+- **`identifier`**: (Required) A string that identifies the action selected by the user. When the user taps the button, the system calls your notification center delegate’s [`userNotificationCenter(_:didReceive:withCompletionHandler:)`](https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenterDelegate/userNotificationCenter(_:didReceive:withCompletionHandler:)) method. The system assigns the value of this key to the [`actionIdentifier`](https://developer.apple.com/documentation/UserNotifications/UNNotificationResponse/actionIdentifier) property of the [`UNNotificationResponse`](https://developer.apple.com/documentation/UserNotifications/UNNotificationResponse) object passed to this method.
+- **`behavior`**: (Optional) The only valid value for this key is the string `textInput`. If this key is present, the resulting button triggers text input.
+- **`destructive`**: (Optional) The value `1` or `0`, where `1` causes the resulting button to be rendered in a way that indicates it performs a destructive action. The value `0` causes the button to be rendered normally.
+- **`background`**: (Optional) The value `1` or `0`, where `1` causes the button to launch the app in the background.
+
 ##### Send Test Notifications to the Watch
 
 Because the system automatically determines whether to deliver notifications to Apple Watch, when testing on the device, you may need to set the devices’ states to make sure the system routes the notification to Apple Watch as expected. To test your notification interfaces while the device isn’t on your wrist:

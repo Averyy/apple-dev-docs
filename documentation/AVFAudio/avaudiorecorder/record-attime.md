@@ -43,7 +43,7 @@ Calling this method implicitly calls [`prepareToRecord()`](avaudiorecorder/prepa
 
 ## Parameters
 
-- `time`: The time at which to start recording, relative to  .
+- `time`: The time at which to start recording, relative to [`deviceCurrentTime`](avaudiorecorder/devicecurrenttime.md).
 
 ## See Also
 

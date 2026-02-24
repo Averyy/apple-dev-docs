@@ -25,7 +25,7 @@ The maximum number of bytes that might be necessary to convert `string` into a n
 
 ## Parameters
 
-- `string`: The   with the maximum converted size (in bytes) you want to know.
+- `string`: The [`JSStringRef`](jsstringref.md) with the maximum converted size (in bytes) you want to know.
 
 ## See Also
 

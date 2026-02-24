@@ -29,8 +29,8 @@ Use this to provide an [`NSTextLayoutFragment`](nstextlayoutfragment.md) special
 ## Parameters
 
 - `textLayoutManager`: The text layout manager.
-- `location`: The   of the link in the text element.
-- `textElement`: The   that the method could return a custom   from.
+- `location`: The [`NSTextLocation`](nstextlocation.md) of the link in the text element.
+- `textElement`: The [`NSTextElement`](nstextelement.md) that the method could return a custom [`NSTextLayoutFragment`](nstextlayoutfragment.md) from.
 
 ## See Also
 

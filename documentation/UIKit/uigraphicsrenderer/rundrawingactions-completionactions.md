@@ -26,8 +26,8 @@ Do not override this method. Instead, consider invoking it from a utility method
 
 ## Parameters
 
-- `drawingActions`: A   block that represents a set of drawing instructions that the renderer applies to the Core Graphics context.
-- `completionActions`: A   block that the renderer calls after executing the   block.
+- `drawingActions`: A [`UIGraphicsDrawingActions`](uigraphicsdrawingactions.md) block that represents a set of drawing instructions that the renderer applies to the Core Graphics context.
+- `completionActions`: A [`UIGraphicsDrawingActions`](uigraphicsdrawingactions.md) block that the renderer calls after executing the `drawingActions` block.
 
 ## See Also
 

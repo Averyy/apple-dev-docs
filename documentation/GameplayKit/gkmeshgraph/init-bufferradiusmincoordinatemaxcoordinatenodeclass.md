@@ -38,7 +38,7 @@ For more information, see [`GameplayKit Programming Guide`](https://developer.ap
 - `bufferRadius`: The distance from obstacle edges that should also be considered impassable.
 - `min`: The minimum coordinate of the space to be covered by the graph.
 - `max`: The maximum coordinate of the space to be covered by the graph.
-- `nodeClass`: The   subclass to use for nodes in the graph.
+- `nodeClass`: The [`GKGraphNode2D`](gkgraphnode2d.md) subclass to use for nodes in the graph.
 
 ## See Also
 

@@ -11,6 +11,10 @@ A Boolean value that indicates whether Core Animation sublayers inherit the opac
 - tvOS 9.0+
 - watchOS 2.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 If `YES`, sublayers inherit from the superlayer; otherwise, they don’t.

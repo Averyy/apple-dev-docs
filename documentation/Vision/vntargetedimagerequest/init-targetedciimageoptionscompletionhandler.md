@@ -21,7 +21,7 @@ init(targetedCIImage ciImage: CIImage, options: [VNImageOption : Any] = [:], com
 
 ## Parameters
 
-- `ciImage`: The   encapsulating the targeted image.
+- `ciImage`: The [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) encapsulating the targeted image.
 - `options`: A dictionary with options specifying auxiliary information for the image.
 - `completionHandler`: The block to invoke when the request has finished executing.
 

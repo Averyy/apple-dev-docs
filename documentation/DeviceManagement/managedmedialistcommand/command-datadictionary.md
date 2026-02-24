@@ -15,6 +15,11 @@ The command to get a list of the managed books on a device.
 object ManagedMediaListCommand.Command
 ```
 
+## Properties
+
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

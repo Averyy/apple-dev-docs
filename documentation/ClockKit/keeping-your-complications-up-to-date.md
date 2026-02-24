@@ -8,6 +8,9 @@ Replace or extend the data in your complication’s timeline.
 
 When you have new data for your watch app, you can replace or extend your complication’s timeline. Call one of the following complication server methods to update the timeline:
 
+- **[`reloadTimeline(for:)`](clkcomplicationserver/reloadtimeline(for:).md)**: Deletes and replaces your entire timeline.
+- **[`extendTimeline(for:)`](clkcomplicationserver/extendtimeline(for:).md)**: Adds data to the end of your existing timeline.
+
 In either case, ClockKit instantiates your complication’s data source and requests the new data.
 
 A watchOS app provides several opportunities to update your complication’s timeline. No matter what method you use, keep your watchOS app, appʼs snapshot, notifications, and complications in a consistent state. Also, make sure to update your complication when you update your app’s data. If you receive a push notification with new data, update the app and your complication, and schedule a new screenshot.

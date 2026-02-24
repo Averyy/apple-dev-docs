@@ -29,6 +29,9 @@ This method applies the source-atop compositing filter to an image. The effect c
 
 The source-atop compositing filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in an output image that shows the background image with the portion of the input image that overlaps it:
 
 ```swift

@@ -24,9 +24,9 @@ In macOS, if this method is called within the [`captureOutput(_:didOutput:from:)
 
 ## Parameters
 
-- `outputFileURL`: If a file at the given URL already exists when capturing starts, recording to the new file will fail.
-- `fileType`: UTIs for common audio file types are declared in  .
-- `delegate`: You must specify a delegate to be notified when recording is finished.
+- `outputFileURL`: The URL of the output file. This method throws an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) if the URL is not a valid file URL. If a file at the given URL already exists when capturing starts, recording to the new file will fail.
+- `fileType`: A UTI indicating the format of the file to be written. UTIs for common audio file types are declared in `AVMediaFormat.h`.
+- `delegate`: An object conforming to the [`AVCaptureFileOutputRecordingDelegate`](avcapturefileoutputrecordingdelegate.md) protocol. You must specify a delegate to be notified when recording is finished.
 
 
 ---

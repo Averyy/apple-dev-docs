@@ -36,9 +36,9 @@ This expression effectively allows your application to invoke any method on any 
 
 ## Parameters
 
-- `target`: An   object which will evaluate an object on which the selector identified by   may be invoked.
+- `target`: An `NSExpression` object which will evaluate an object on which the selector identified by `name` may be invoked.
 - `name`: The name of the method to be invoked.
-- `parameters`: An array containing   objects which can be evaluated to provide parameters for the method specified by  .
+- `parameters`: An array containing `NSExpression` objects which can be evaluated to provide parameters for the method specified by `name`.
 
 ## See Also
 

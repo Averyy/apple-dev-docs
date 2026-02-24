@@ -20,7 +20,7 @@ The initialized `NSColorSpace` object or `nil` if initialization was not success
 
 ## Parameters
 
-- `iccData`: The ICC profile to use when initializing the   object. For information on ICC profiles, see the latest ICC specification at the   website.
+- `iccData`: The ICC profile to use when initializing the `NSColorSpace` object. For information on ICC profiles, see the latest ICC specification at the [`International Color Consortium website`](https://developer.apple.comhttp://www.color.org/icc_specs2.html) website.
 
 ## See Also
 

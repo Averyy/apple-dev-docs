@@ -61,7 +61,7 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 ###### Known Issues
 
-- Apps built for visionOS are unable to use the front-facing-camera UI Required Device Capability.   (121465787)  Remove the front-facing-camera UIRDC for apps built for visionOS.
+- Apps built for visionOS are unable to use the front-facing-camera UI Required Device Capability.   (121465787) **Workaround:** Remove the front-facing-camera UIRDC for apps built for visionOS.
 
 ##### Apple Pay
 
@@ -80,7 +80,7 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 ###### Known Issues
 
-- You might experience difficulty working with large models in QuickLook or third-party apps.  (109805525)  Walk outside of the object, and force quit the affected app.
+- You might experience difficulty working with large models in QuickLook or third-party apps.  (109805525) **Workaround:** Walk outside of the object, and force quit the affected app.
 
 ##### Asset Catalogs
 
@@ -188,7 +188,7 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 ###### Known Issues
 
-- Game controllers might stop working after interacting outside the game window or on incoming notification.   (112147453)  Tap inside app window again to return game controller focus.
+- Game controllers might stop working after interacting outside the game window or on incoming notification.   (112147453) **Workaround:** Tap inside app window again to return game controller focus.
 
 ##### Keyboard
 
@@ -204,8 +204,8 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 ###### Known Issues
 
-- In Compatible iPad and iPhone Apps, keyboard-related UI doesn’t animate as expected when appearing into view. However, the animation is correct when the keyboard-related UI disappears.  (114573647)  Depending on UI layout needs, it might be preferable to remove animation from the layout to match the keyboard behavior in visionOS. If the preference is to continue animating the layout changes, you’ll need to determine the timing and animation curve to produce the desired appearance.
-- In Compatible iPad and iPhone Apps, when keyboard-related UI disappears, notifications sent on appearance are unexpectedly repeated, followed immediately by the expected notifications for disappearance.  (114573814)  If your app experiences an issue, change your code to ignore appearance-related notifications which repeat information previously received.
+- In Compatible iPad and iPhone Apps, keyboard-related UI doesn’t animate as expected when appearing into view. However, the animation is correct when the keyboard-related UI disappears.  (114573647) **Workaround:** Depending on UI layout needs, it might be preferable to remove animation from the layout to match the keyboard behavior in visionOS. If the preference is to continue animating the layout changes, you’ll need to determine the timing and animation curve to produce the desired appearance.
+- In Compatible iPad and iPhone Apps, when keyboard-related UI disappears, notifications sent on appearance are unexpectedly repeated, followed immediately by the expected notifications for disappearance.  (114573814) **Workaround:** If your app experiences an issue, change your code to ignore appearance-related notifications which repeat information previously received.
 
 ##### Location
 
@@ -291,8 +291,8 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 ###### Known Issues
 
-- Audio playback in Reality Composer Pro might stop after switching audio devices, for example from speakers to headphones.  (109911988)  This issue is resolved in macOS Ventura 13.4. When using previous versions of macOS, save the project and quit Reality Composer Pro, then reload the project after switching audio devices.
-- Reality Composer Pro might quit unexpectedly after switching audio devices from a Studio Display to another device, such as AirPods or built-in speakers.  (109912081)  Save the project and quit Reality Composer Pro, switch the audio output device, then reload the project.
+- Audio playback in Reality Composer Pro might stop after switching audio devices, for example from speakers to headphones.  (109911988) **Workaround:** This issue is resolved in macOS Ventura 13.4. When using previous versions of macOS, save the project and quit Reality Composer Pro, then reload the project after switching audio devices.
+- Reality Composer Pro might quit unexpectedly after switching audio devices from a Studio Display to another device, such as AirPods or built-in speakers.  (109912081) **Workaround:** Save the project and quit Reality Composer Pro, switch the audio output device, then reload the project.
 
 ##### Realitykit
 
@@ -308,8 +308,8 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 ###### Known Issues
 
-- In a physics simulation, collision shape extents that fall below 2mm are forced to be 2mm in size.  (107999189)  Ensure collision shape extents are 2mm or larger.
-- Negative scaling colliders and rigid bodies in physics simulations might result in undefined behavior.  (112628900)  You can negatively scale meshes before passing them to physics.
+- In a physics simulation, collision shape extents that fall below 2mm are forced to be 2mm in size.  (107999189) **Workaround:** Ensure collision shape extents are 2mm or larger.
+- Negative scaling colliders and rigid bodies in physics simulations might result in undefined behavior.  (112628900) **Workaround:** You can negatively scale meshes before passing them to physics.
 
 ##### Screen Recording
 
@@ -406,8 +406,8 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 ###### Known Issues
 
 - Content depth doesn’t propagate when using `UIViewRepresentable` or `UIViewControllerRepresentable`.  (108052196)
-- Applying the `.volumetric` window style on a `DocumentGroup` has no effect.  (115562954)  Use a regular `WindowGroup` or use a `DocumentGroup` with no volumetric window style applied.
-- Volumes using the `defaultSize(_: Rect3D, in: UnitLength)` modifier to specify size, will only be the specified physical size at default (large) display zoom. At smaller display zooms the Volume will be smaller and clip content.  (116579319) (FB13240946)  Specify a size for the Volume about 1.5x larger than necessary, and ensure content is not clipped at smallest display zoom setting.
+- Applying the `.volumetric` window style on a `DocumentGroup` has no effect.  (115562954) **Workaround:** Use a regular `WindowGroup` or use a `DocumentGroup` with no volumetric window style applied.
+- Volumes using the `defaultSize(_: Rect3D, in: UnitLength)` modifier to specify size, will only be the specified physical size at default (large) display zoom. At smaller display zooms the Volume will be smaller and clip content.  (116579319) (FB13240946) **Workaround:** Specify a size for the Volume about 1.5x larger than necessary, and ensure content is not clipped at smallest display zoom setting.
 
 ##### Swiftui and Uikit
 
@@ -426,7 +426,7 @@ The visionOS SDK provides support for developing apps for Apple Vision Pro devic
 
 - You might notice an extra `UIWindowScene` is connected to your application when using `ImmersiveScene`.  (107361984)
 - Some buttons might not play sound.  (108579439)
-- State restoration might restore an incorrect scene of an app.  (109120808)  Ensure that a secondary scene isn’t the last one to be closed.
+- State restoration might restore an incorrect scene of an app.  (109120808) **Workaround:** Ensure that a secondary scene isn’t the last one to be closed.
 
 ##### Swiftui Scenes
 

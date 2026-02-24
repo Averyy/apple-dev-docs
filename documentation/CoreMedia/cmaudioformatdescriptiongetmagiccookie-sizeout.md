@@ -30,8 +30,8 @@ The magic cookie is a completely opaque piece of data, written and read only by 
 
 ## Parameters
 
-- `desc`:   being interrogated.
-- `sizeOut`: Pointer to variable that will be written with the size of the cookie. Can be  .
+- `desc`: `CMFormatDescription` being interrogated.
+- `sizeOut`: Pointer to variable that will be written with the size of the cookie. Can be `NULL`.
 
 ## See Also
 

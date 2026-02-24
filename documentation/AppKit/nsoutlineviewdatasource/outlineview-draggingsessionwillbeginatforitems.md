@@ -24,7 +24,7 @@ The `draggedItems` array directly matches the pasteboard writer array used to be
 - `outlineView`: The outline view in which the drag is about to begin.
 - `session`: The dragging session that is about to begin.
 - `screenPoint`: The point onscreen at which the drag is to begin.
-- `draggedItems`: A array of items to be dragged, excluding items for which   returns  .
+- `draggedItems`: A array of items to be dragged, excluding items for which [`outlineView(_:pasteboardWriterForItem:)`](nsoutlineviewdatasource/outlineview(_:pasteboardwriterforitem:).md) returns `nil`.
 
 ## See Also
 

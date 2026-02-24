@@ -30,7 +30,7 @@ Creates a new instance of `AVDateRangeMetadataGroup` with the specified collecti
 
 ## Parameters
 
-- `items`: The array of   instances to associate with this group.
+- `items`: The array of [`AVMetadataItem`](avmetadataitem.md) instances to associate with this group.
 - `startDate`: The starting date for the group of metadata items.
 - `endDate`: The ending date for the group of metadata items.
 

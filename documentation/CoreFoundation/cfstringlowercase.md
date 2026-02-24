@@ -27,7 +27,7 @@ The `locale` parameter type changed from void * to CFLocaleRef in OS X v10.3.
 ## Parameters
 
 - `theString`: The string to be lowercased. If this value is not a CFMutableString object, an assertion is raised.
-- `locale`: The locale argument affects the case mapping algorithm. For example, for the Turkish locale, case-insensitive compare matches “I” to “ı” (Unicode code point U+0131, Latin Small Dotless I), not the normal “i” character.
+- `locale`: The locale to use when the lowercasing operation is performed. Prior to OS X v10.3 this parameter was an untyped pointer and not used. The locale argument affects the case mapping algorithm. For example, for the Turkish locale, case-insensitive compare matches “I” to “ı” (Unicode code point U+0131, Latin Small Dotless I), not the normal “i” character.
 
 ## See Also
 

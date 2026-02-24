@@ -21,9 +21,33 @@ In a collection view layout, you use a spacing object to specify both the amount
 
 You can express spacing using fixed or flexible spacing.
 
-Use  to provide an exact amount of space. For example, the following code creates exactly 200 points of space between the items in the group.
+Use *fixed spacing* to provide an exact amount of space. For example, the following code creates exactly 200 points of space between the items in the group.
 
-Use  to provide a minimum amount of space that can grow as more space becomes available. For example, the following code creates at least 200 points of space between the items in the group. As more space becomes available, items are respaced evenly in the additional space.
+**Swift**:
+
+```swift
+group.interItemSpacing = .fixed(200.0)
+```
+
+**Objective-C**:
+
+```objc
+[group setInterItemSpacing: [NSCollectionLayoutSpacing fixedSpacing:200.0]];
+```
+
+Use *flexible spacing* to provide a minimum amount of space that can grow as more space becomes available. For example, the following code creates at least 200 points of space between the items in the group. As more space becomes available, items are respaced evenly in the additional space.
+
+**Swift**:
+
+```swift
+group.interItemSpacing = .flexible(200.0)
+```
+
+**Objective-C**:
+
+```objc
+[group setInterItemSpacing: [NSCollectionLayoutSpacing flexibleSpacing:200.0]];
+```
 
 ## Topics
 

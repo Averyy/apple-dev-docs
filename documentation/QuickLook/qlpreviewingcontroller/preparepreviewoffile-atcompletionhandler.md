@@ -24,7 +24,7 @@ This method will be called only once. It will be called in the main thread befor
 ## Parameters
 
 - `url`: The URL of the file the user is about to preview.
-- `handler`: The completion handler should be called whenever the view is ready to be displayed. A loading spinner will be shown until the handler is called.   It can be called asynchronously after the method has returned.
+- `handler`: The completion handler should be called whenever the view is ready to be displayed. A loading spinner will be shown until the handler is called. It can be called asynchronously after the method has returned.
 
 
 ---

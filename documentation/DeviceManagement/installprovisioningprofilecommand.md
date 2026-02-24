@@ -25,6 +25,11 @@ object InstallProvisioningProfileCommand
 - [object InstallProvisioningProfileCommand.Command](installprovisioningprofilecommand/command-data.dictionary.md)
   The command to install a provisioning profile on a device.
 
+## Properties
+
+- `Command` (InstallProvisioningProfileCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object InstallProvisioningProfileResponse](installprovisioningprofileresponse.md)

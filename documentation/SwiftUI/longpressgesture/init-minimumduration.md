@@ -16,7 +16,7 @@ init(minimumDuration: Double = 0.5)
 
 ## Parameters
 
-- `minimumDuration`: The minimum duration of the long press that must   elapse before the gesture succeeds.
+- `minimumDuration`: The minimum duration of the long press that must elapse before the gesture succeeds.
 
 ## See Also
 

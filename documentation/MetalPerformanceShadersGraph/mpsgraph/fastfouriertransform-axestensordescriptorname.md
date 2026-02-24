@@ -38,8 +38,8 @@ This operation computes the fast Fourier transform of the input tensor according
 ## Parameters
 
 - `tensor`: A complex or real-valued input tensor.
-- `axesTensor`: A tensor of rank one containing the axes over which MPSGraph performs the transformation. See  .
-- `descriptor`: A descriptor that defines the parameters of the Fourier transform operation - see  .
+- `axesTensor`: A tensor of rank one containing the axes over which MPSGraph performs the transformation. See [`fastFourierTransform(_:axes:descriptor:name:)`](mpsgraph/fastfouriertransform(_:axes:descriptor:name:).md).
+- `descriptor`: A descriptor that defines the parameters of the Fourier transform operation - see [`MPSGraphFFTDescriptor`](mpsgraphfftdescriptor.md).
 - `name`: The name for the operation.
 
 

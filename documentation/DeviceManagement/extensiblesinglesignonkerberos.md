@@ -94,6 +94,16 @@ The system supports user channel installation in macOS 11 and later.
 - [object ExtensibleSingleSignOnKerberos.ExtensionData](extensiblesinglesignonkerberos/extensiondata-data.dictionary.md)
   The additional data to pass to the app extension.
 
+## Properties
+
+- `ExtensionData` (ExtensibleSingleSignOnKerberos.ExtensionData): This is the dictionary used by the Apple built-in Kerberos extension.
+- `ExtensionIdentifier` (string) *(required)*: Set this to `com.apple.AppSSOKerberos.KerberosExtension` for this extension.
+- `Hosts` ([string]): One or more host or domain names for which the app extension performs SSO. The system: - Matches host or domain names case-insensitively
+- Requires that all the host and domain names of all installed Extensible SSO payloads are unique > **Note**:  Host names that begin with a “.” are wildcard suffixes that match all subdomains; otherwise the host name needs be an exact match.
+- `Realm` (string) *(required)*: The Kerberos realm. Use proper capitalization for this value. If in an Active Directory forest, this is the realm where the user logs in.
+- `TeamIdentifier` (string) *(required)*: Set this to `apple` for this extension.
+- `Type` (string) *(required)*: Set this to `Credential` for this extension.
+
 ## See Also
 
 - [object DirectoryService](directoryservice.md)

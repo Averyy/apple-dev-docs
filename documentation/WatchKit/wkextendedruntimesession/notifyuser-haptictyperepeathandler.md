@@ -31,8 +31,8 @@ Only call this method on a schedulable session that’s running: you must schedu
 
 ## Parameters
 
-- `type`: The type of haptic to play. For a complete list of haptic types, see  .
-- `repeatHandler`: Use this block to change the haptic type by modifying the   parameter.
+- `type`: The type of haptic to play. For a complete list of haptic types, see [`WKHapticType`](wkhaptictype.md).
+- `repeatHandler`: An optional block that the system calls to set the frequency of the haptic feedback. The handler returns a valid time interval for the next haptic signal. This value must be greater than `0.0` and less than or equal to `60.0`. If `repeatHandler` is `nil`, the system uses the default time interval of `3.0` seconds. Use this block to change the haptic type by modifying the `outHapticType` parameter. - **`outHapticType`**: The next haptic. Set the value of this output parameter to change the haptic type.
 
 
 ---

@@ -39,7 +39,7 @@ If your delegate does not implement this method, the system behaves as if you ha
 
 - `center`: The shared user notification center object that received the notification.
 - `notification`: The notification that is about to be delivered. Use the information in this object to determine an appropriate course of action. For example, you might use the information to update your app’s interface.
-- `completionHandler`: The block to execute with the presentation option for the notification. Always execute this block at some point during your implementation of this method. Use the   parameter to specify how you want the system to alert the user, if at all. This block has no return value and takes the following parameter:
+- `completionHandler`: The block to execute with the presentation option for the notification. Always execute this block at some point during your implementation of this method. Use the `options` parameter to specify how you want the system to alert the user, if at all. This block has no return value and takes the following parameter: - **options**: The option for notifying the user. Specify [`UNNotificationPresentationOptionNone`](unnotificationpresentationoptionnone.md) to silence the notification completely. Specify other values to interact with the user. For a list of possible options, see [`UNNotificationPresentationOptions`](unnotificationpresentationoptions.md).
 
 ## See Also
 

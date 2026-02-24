@@ -26,7 +26,7 @@ You don’t need to open a communications channel to your device in this method.
 
 ## Parameters
 
-- `provider`: The provider object that matches the current service. Cast this object to the class you expect. The system retains this object for the duration of your   method. The system continues to retain the object if your service starts successfully, releasing it only after calling your service’s   method.
+- `provider`: The provider object that matches the current service. Cast this object to the class you expect. The system retains this object for the duration of your `start` method. The system continues to retain the object if your service starts successfully, releasing it only after calling your service’s [`Stop`](https://developer.apple.com/documentation/SerialDriverKit/IOUserSerial/Stop) method.
 
 ## See Also
 

@@ -18,6 +18,13 @@ Hot spot–specific event handler atoms are located in the specific hot spot ato
 
 The specific actions that cause these events to be generated are described as follows:
 
+- **`kQTEventFrameLoaded` (`'fram'`)**: A wired action that is generated when a node is entered, before any application-installed entering-node procedure is called (this event processing is considered part of the node setup that occurs before the application’s routine is called).
+- **`kQTEventIdle` (`'idle'`)**: A wired action that is generated every `n` ticks, where `n` is defined by the contents of the `kSpriteTrackPropertyQTIdleEventsFrequency` atom (`SInt32`) in the media property atom container. When appropriate, this event is triggered before any normal idle processing occurs for the QuickTime VR movie.
+- **`kQTEventMouseClick` (`'clik'`)**: A wired action that is generated when the mouse goes down over a hot spot.
+- **`kQTEventMouseClickEnd` (`'cend'`)**: A wired action that is generated when the mouse goes up after a `kQTEventMouseClick` is generated, regardless of whether the mouse is still over the hot spot originally clicked. This event occurs prior to QuickTime VR’s normal mouse-up processing.
+- **`kQTEventMouseClickEndTriggerButton` (`'trig'`)**: A wired action that is generated when a click end triggers a hot spot (using the same criterion as used by QuickTime VR in 2.1 for link/url hot spot execution). This event occurs prior to QuickTime VR’s normal hot spot–trigger processing.
+- **`kQTEventMouseEnter` (`'entr'`), `kQTEventMouseExit`(`'exit'`)**: Wired action that are generated when the mouse rolls into or out of a hot spot, respectively. These events occur whether or not the mouse is down and whether or not the movie is being panned. These events occur after any application-installed `MouseOverHotSpotProc` is called, and will be cancelled if the return value from the application’s routine indicates that QuickTimeVR’s normal over–hot spot processing should not take place.
+
 ## See Also
 
 - [Sprite media](sprite_media.md)

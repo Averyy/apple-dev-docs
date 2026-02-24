@@ -16,7 +16,7 @@ var pageOrder: NSPrintOperation.PageOrder { get set }
 
 ## Parameters
 
-- `order`: The print order. For a list of possible values, see  .
+- `order`: The print order. For a list of possible values, see [`NSPrintOperation.PageOrder`](nsprintoperation/pageorder-swift.enum.md).
 
 ## See Also
 

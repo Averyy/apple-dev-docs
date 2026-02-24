@@ -28,7 +28,8 @@ If more than one saved game has the same filename, a conflict occurs and you mus
 
 ## Parameters
 
-- `handler`: The block receives the following parameters:
+- `handler`: The block that this method calls when it completes the request. The block receives the following parameters: - **savedGames**: An array of saved games that GameKit fetches.
+- **error**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

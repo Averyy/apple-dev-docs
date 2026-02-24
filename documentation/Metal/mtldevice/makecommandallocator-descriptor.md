@@ -26,7 +26,7 @@ A [`MTL4CommandAllocator`](mtl4commandallocator.md) instance, or `nil` if the fu
 
 ## Parameters
 
-- `descriptor`: A   instance that configures the    instance.
+- `descriptor`: A [`MTL4CommandAllocatorDescriptor`](mtl4commandallocatordescriptor.md) instance that configures the [`MTL4CommandAllocator`](mtl4commandallocator.md) instance.
 
 
 ---

@@ -26,7 +26,7 @@ The default behavior, if this method is not implemented, is to use temporary att
 
 - `layoutManager`: The layout manager sending the message.
 - `attrs`: The temporary attributes currently in effect for the given character range.
-- `toScreen`:   if the layout manager is drawing to the screen; otherwise,  .
+- `toScreen`: [`true`](https://developer.apple.com/documentation/Swift/true) if the layout manager is drawing to the screen; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 - `charIndex`: Index of the first character in the range being drawn.
 - `effectiveCharRange`: On input and output, the effective range to which the temporary attributes apply.
 

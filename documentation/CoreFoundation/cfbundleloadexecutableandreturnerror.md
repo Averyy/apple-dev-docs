@@ -27,7 +27,7 @@ If `bundle` is already loaded, returns `true`. If `bundle` is not already loaded
 ## Parameters
 
 - `bundle`: The bundle to examine.
-- `error`: Upon return, if an error occurs contains a CFError that describes the problem. Ownership follows the  .
+- `error`: Upon return, if an error occurs contains a CFError that describes the problem. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 

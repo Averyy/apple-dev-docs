@@ -31,7 +31,7 @@ The returned dictionary encodes the beacon’s identifying information, along wi
 
 ## Parameters
 
-- `measuredPower`: The received signal strength indicator (RSSI) value, measured in decibels, for the device. This value represents the measured strength of the beacon from one meter away that Core Location uses during ranging. Specify   to use the default value for the device.
+- `measuredPower`: The received signal strength indicator (RSSI) value, measured in decibels, for the device. This value represents the measured strength of the beacon from one meter away that Core Location uses during ranging. Specify `nil` to use the default value for the device.
 
 
 ---

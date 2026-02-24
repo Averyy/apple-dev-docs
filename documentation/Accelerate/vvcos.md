@@ -24,9 +24,38 @@ func vvcos(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: UnsafeP
 
 ##### Parameters
 
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
 If `x` is `+/-inf`, the result is `NaN`.
 
 The following code shows an example of using [`vvcos(_:_:_:)`](vvcos(_:_:_:).md).
+
+**Swift**:
+
+```swift
+let pi = Double.pi
+var x: [Double] = [-pi, 0, pi]
+var y = [Double](repeating: 0, count: x.count)
+var n = Int32(x.count)
+ 
+vvcos(&y, &x, &n)
+ 
+print(y) // [-1.0, 0.0, 1.0]
+```
+
+**Objective-C**:
+
+```objc
+double x[] = {-M_PI, 0, M_PI};
+double y[3];
+int n = 3;
+ 
+vvcos(y, x, &n);
+ 
+NSLog(@"y: [%lf, %lf, %lf]", y[0], y[1], y[2]);
+```
 
 ## See Also
 

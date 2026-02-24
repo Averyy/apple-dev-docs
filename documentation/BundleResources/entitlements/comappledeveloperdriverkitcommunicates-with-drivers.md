@@ -9,6 +9,10 @@ A Boolean value that indicates whether an iPadOS app can communicate with driver
 - iOS 16.0+
 - iPadOS 16.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 When `true`, this entitlement allows your app to open user clients to one or more drivers.

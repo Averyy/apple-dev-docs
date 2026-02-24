@@ -20,8 +20,8 @@ This method returns the integer constant [`NSOKButton`](https://developer.apple.
 
 ## Parameters
 
-- `trust`: A   object associated with the certificate chain to display.
-- `showGroup`: Specifies whether additional certificates (other than the leaf certificate) are displayed. To show only a single certificate, specify only one   in the array and set   to  .
+- `trust`: A [`SecTrust`](https://developer.apple.com/documentation/Security/SecTrust) object associated with the certificate chain to display.
+- `showGroup`: Specifies whether additional certificates (other than the leaf certificate) are displayed. To show only a single certificate, specify only one [`SecCertificate`](https://developer.apple.com/documentation/Security/SecCertificate) in the array and set `showGroup` to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

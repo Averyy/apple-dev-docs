@@ -17,7 +17,7 @@ func setShouldMixStereoToMono(_ doMix: Bool) throws
 
 ## Parameters
 
-- `doMix`: A Bool where a value of true indicates that devices should mix stereo   signals down to mono.
+- `doMix`: A Bool where a value of true indicates that devices should mix stereo signals down to mono.
 
 
 ---

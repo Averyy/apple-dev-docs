@@ -25,7 +25,7 @@ A valid MPSGraphStencilOpDescriptor object
 
 ## Parameters
 
-- `paddingStyle`: See   property.
+- `paddingStyle`: See `paddingStyle` property.
 
 
 ---

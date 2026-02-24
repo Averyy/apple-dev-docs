@@ -22,7 +22,7 @@ init(_ identifier: String)
 
 ## Parameters
 
-- `identifier`: The numbering system’s BCP 47 identifier, such as   for Latin digits.
+- `identifier`: The numbering system’s BCP 47 identifier, such as `latn` for Latin digits.
 
 
 ---

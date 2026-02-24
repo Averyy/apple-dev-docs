@@ -16,7 +16,7 @@ optional func appController(_ appController: TVApplicationController, didFinishL
 
 ## Parameters
 
-- `appController`: The   object that finished launching.
+- `appController`: The [`TVApplicationController`](tvapplicationcontroller.md) object that finished launching.
 - `options`: The launch options passed to the app controller.
 
 ## See Also

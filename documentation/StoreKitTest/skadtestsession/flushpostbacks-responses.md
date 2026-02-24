@@ -32,7 +32,7 @@ To perform tests with postbacks, do the following:
 
 ## Parameters
 
-- `responses`: A handler that matches the signature of  .
+- `responses`: A handler that matches the signature of [`SKANTestPostbackResponseHandler`](skantestpostbackresponsehandler.md).
 
 ## See Also
 

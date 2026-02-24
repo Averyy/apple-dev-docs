@@ -25,9 +25,9 @@ Each call to this function has the side effect of resetting the minimum and maxi
 
 ## Parameters
 
-- `maxNumberOfTaps`: The length of the array you provide in the   parameter.
-- `tapList`: An array of event tap information structures. You are responsible for allocating storage for the array. On return, your array contains a list of currently installed event taps. If you pass   in this parameter, the   parameter is ignored, and the   variable is filled in with the number of event taps that are currently installed.
-- `eventTapCount`: A pointer to a   variable. On return, the variable contains actual number of array elements filled in.
+- `maxNumberOfTaps`: The length of the array you provide in the `tapList` parameter.
+- `tapList`: An array of event tap information structures. You are responsible for allocating storage for the array. On return, your array contains a list of currently installed event taps. If you pass `NULL` in this parameter, the `maxNumberOfTaps` parameter is ignored, and the `eventTapCount` variable is filled in with the number of event taps that are currently installed.
+- `eventTapCount`: A pointer to a `CGTableCount` variable. On return, the variable contains actual number of array elements filled in.
 
 ## See Also
 

@@ -34,7 +34,7 @@ let networkParameters = NWParameters().wifiAware {
 
 ## Parameters
 
-- `configurator`: The function that will apply the desired   to the network parameters.
+- `configurator`: The function that will apply the desired `WAParameters` to the network parameters.
 
 
 ---

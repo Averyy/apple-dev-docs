@@ -26,7 +26,7 @@ class AVDepthData
 
 #### Overview
 
- is a generic term for a map of per-pixel data containing depth-related information. A depth data object wraps a disparity or depth map and provides conversion methods, focus information, and camera calibration data to aid in using the map for rendering or computer vision tasks.
+*Depth data* is a generic term for a map of per-pixel data containing depth-related information. A depth data object wraps a disparity or depth map and provides conversion methods, focus information, and camera calibration data to aid in using the map for rendering or computer vision tasks.
 
 A depth map describes at each pixel the distance to an object, in meters.
 

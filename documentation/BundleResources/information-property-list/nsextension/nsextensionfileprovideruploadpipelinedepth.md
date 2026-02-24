@@ -8,6 +8,10 @@ The per-domain limit of concurrent calls that a file provider extension can make
 **Availability**:
 - macOS 12.0+
 
+
+
+**Type**: integer
+
 #### Discussion
 
 Use this value to set the limit of concurrent calls to methods like [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](https://developer.apple.com/documentation/FileProvider/NSFileProviderReplicatedExtension/createItem(basedOn:fields:contents:options:request:completionHandler:)) and [`modifyItem(_:baseVersion:changedFields:contents:options:request:completionHandler:)`](https://developer.apple.com/documentation/FileProvider/NSFileProviderReplicatedExtension/modifyItem(_:baseVersion:changedFields:contents:options:request:completionHandler:)). Set the value for this key to an integer in the range `1` to `128`.

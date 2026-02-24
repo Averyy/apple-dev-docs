@@ -25,7 +25,7 @@ Use this method when the user is finished with a broadcast. To temporarily pause
 
 ## Parameters
 
-- `handler`: A block that is called after the broadcast has finished.
+- `handler`: A block that is called after the broadcast has finished. - **`error`**: If an error occurred, this parameter holds an object that explains the error. Otherwise, the value of this parameter is `nil`. See [`RPRecordingErrorCode`](rprecordingerrorcode.md) for a list of error codes specific to ReplayKit.
 
 ## See Also
 

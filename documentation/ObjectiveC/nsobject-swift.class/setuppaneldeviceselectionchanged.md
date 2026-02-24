@@ -20,7 +20,7 @@ You can retrieve the `DRSetupPanel` object in question by sending `NSNotificatio
 
 ## Parameters
 
-- `aNotification`: Notification object. This is always  .
+- `aNotification`: Notification object. This is always `DRSetupPanelDeviceSelectionChangedNotification`.
 
 
 ---

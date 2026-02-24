@@ -31,8 +31,8 @@ This function uses the equal callback. `candidate` and all elements in the set m
 ## Parameters
 
 - `theSet`: The set to examine.
-- `candidate`: The value for which to search in  . Comparisons are made using the equal callback provided when   was created. If the equal callback was  , pointer equality (in C, ==) is used.
-- `value`: Upon return contains the matching value if it exists in  , otherwise  . If the value is a Core Foundation object, ownership follows the  .
+- `candidate`: The value for which to search in `theSet`. Comparisons are made using the equal callback provided when `theSet` was created. If the equal callback was `NULL`, pointer equality (in C, ==) is used.
+- `value`: Upon return contains the matching value if it exists in `theSet`, otherwise `NULL`. If the value is a Core Foundation object, ownership follows the [`The Get Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
 ## See Also
 

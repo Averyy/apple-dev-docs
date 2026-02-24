@@ -24,7 +24,7 @@ The macOS 12.4 SDK provides support to develop apps for Mac computers running ma
 
 ###### Known Issues
 
-- Universal Control in this release isn’t compatible with macOS 12.3 and iOS 15.4.  Use Universal Control between macOS 12.4 and iOS 15.5. (91136128)
+- Universal Control in this release isn’t compatible with macOS 12.3 and iOS 15.4. **Workaround:** Use Universal Control between macOS 12.4 and iOS 15.5. (91136128)
 
 ## See Also
 

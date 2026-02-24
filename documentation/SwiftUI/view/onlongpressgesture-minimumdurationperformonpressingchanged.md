@@ -17,9 +17,9 @@ func onLongPressGesture(minimumDuration: Double = 0.5, perform action: @escaping
 
 ## Parameters
 
-- `minimumDuration`: The minimum duration of the long press that must   elapse before the gesture succeeds.
+- `minimumDuration`: The minimum duration of the long press that must elapse before the gesture succeeds.
 - `action`: The action to perform when a long press is recognized.
-- `onPressingChanged`: A closure to run when the pressing state of the   gesture changes, passing the current state as a parameter.
+- `onPressingChanged`: A closure to run when the pressing state of the gesture changes, passing the current state as a parameter.
 
 ## See Also
 

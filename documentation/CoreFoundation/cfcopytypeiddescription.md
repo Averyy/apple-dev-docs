@@ -26,11 +26,11 @@ A string containing a type description. Ownership follows the [`The Create Rule`
 
 #### Discussion
 
-You can use this function for debugging Core Foundation objects in your code. Note, however, that the description for a given object may be different in different releases of the operating system. Do   create dependencies in your code on the content or format of the information returned by this function.
+You can use this function for debugging Core Foundation objects in your code. Note, however, that the description for a given object may be different in different releases of the operating system. Do *not*  create dependencies in your code on the content or format of the information returned by this function.
 
 ## Parameters
 
-- `type_id`: An integer of type   that uniquely identifies a Core Foundation opaque type.
+- `type_id`: An integer of type [`CFTypeID`](cftypeid.md) that uniquely identifies a Core Foundation opaque type.
 
 ## See Also
 

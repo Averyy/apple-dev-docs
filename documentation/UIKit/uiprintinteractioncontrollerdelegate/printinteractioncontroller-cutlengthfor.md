@@ -27,8 +27,8 @@ Some printers can cut a roll of print paper at a particular length. If you imple
 
 ## Parameters
 
-- `printInteractionController`: The shared instance of   that is managing the print job.
-- `paper`: A   that specifies the maximum physical and printable areas of the page.
+- `printInteractionController`: The shared instance of [`UIPrintInteractionController`](uiprintinteractioncontroller.md) that is managing the print job.
+- `paper`: A [`UIPrintPaper`](uiprintpaper.md) that specifies the maximum physical and printable areas of the page.
 
 ## See Also
 

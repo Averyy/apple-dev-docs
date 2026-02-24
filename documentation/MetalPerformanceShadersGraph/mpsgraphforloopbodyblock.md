@@ -26,7 +26,7 @@ A valid MPSGraphTensor array with same count and corresponding element types as 
 ## Parameters
 
 - `index`: The for loop index per iteration, it is a scalar tensor.
-- `iterationArguments`: Arguments for this iteration, with the same count and corresponding element types as   and return types of the   loop.
+- `iterationArguments`: Arguments for this iteration, with the same count and corresponding element types as `initialIterationArguments` and return types of the `for` loop.
 
 
 ---

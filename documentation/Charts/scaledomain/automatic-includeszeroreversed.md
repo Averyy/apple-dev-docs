@@ -22,7 +22,7 @@ static func automatic(includesZero: Bool? = nil, reversed: Bool? = nil) -> Autom
 
 ## Parameters
 
-- `includesZero`: Whether the scale domain should include zero (only   applicable for numerical values).
+- `includesZero`: Whether the scale domain should include zero (only applicable for numerical values).
 - `reversed`: Whether the scale domain should be reversed (e.g., 100 … 0).
 
 

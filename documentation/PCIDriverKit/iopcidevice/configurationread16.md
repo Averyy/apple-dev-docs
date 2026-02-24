@@ -17,7 +17,7 @@ void ConfigurationRead16(uint64_t offset, uint16_t *readData);
 
 ## Parameters
 
-- `offset`: An offset into the configuration space. This method ignores bits 0 and 1. For a list of possible offset values, see  .
+- `offset`: An offset into the configuration space. This method ignores bits 0 and 1. For a list of possible offset values, see [`Configuration Data Offsets`](configuration-data-offsets-enum.md).
 - `readData`: A variable that stores the 16-bit data value. If the method encounters an error, it sets the value to -1.
 
 ## See Also

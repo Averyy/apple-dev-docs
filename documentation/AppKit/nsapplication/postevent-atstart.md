@@ -21,7 +21,7 @@ This method can also be called in subthreads. Events posted in subthreads bubble
 ## Parameters
 
 - `event`: The event object to post to the queue.
-- `atStart`: Specify   to add the event to the front of the queue; otherwise, specify   to add the event to the back of the queue.
+- `atStart`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to add the event to the front of the queue; otherwise, specify [`false`](https://developer.apple.com/documentation/Swift/false) to add the event to the back of the queue.
 
 ## See Also
 

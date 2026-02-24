@@ -44,17 +44,17 @@ where
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
 - `SIDE`: Determines the order in which the matrices should be multiplied.
-- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are   or  .
-- `M`: Number of rows in matrices   and  .
-- `N`: Number of columns in matrices   and  .
+- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are `'U'` or `'L'`.
+- `M`: Number of rows in matrices `A` and `C`.
+- `N`: Number of columns in matrices `B` and `C`.
 - `ALPHA`: Scaling factor for the product of matrices A and B.
 - `A`: Matrix A.
-- `LDA`: The size of the first dimension of matrix  ; if you are passing a matrix  , the value should be  .
+- `LDA`: The size of the first dimension of matrix `A`; if you are passing a matrix `A[m][n]`, the value should be `m`.
 - `B`: Matrix B.
-- `LDB`: The size of the first dimension of matrix  ; if you are passing a matrix  , the value should be  .
+- `LDB`: The size of the first dimension of matrix `B`; if you are passing a matrix `B[m][n]`, the value should be `m`.
 - `BETA`: Scaling factor for matrix C.
 - `C`: Matrix C.
-- `LDC`: The size of the first dimension of matrix  ; if you are passing a matrix  , the value should be  .
+- `LDC`: The size of the first dimension of matrix `C`; if you are passing a matrix `C[m][n]`, the value should be `m`.
 
 ## See Also
 

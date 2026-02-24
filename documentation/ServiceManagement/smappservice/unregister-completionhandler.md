@@ -23,7 +23,7 @@ func unregister() async throws
 
 ## Parameters
 
-- `handler`: A completion handler to call with the result of the unregistration operation. Upon an unsuccessful return, the handler contains a new   object describing the error. Upon successful return, this argument is  .
+- `handler`: A completion handler to call with the result of the unregistration operation. Upon an unsuccessful return, the handler contains a new [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object describing the error. Upon successful return, this argument is `NULL`.
 
 ## See Also
 

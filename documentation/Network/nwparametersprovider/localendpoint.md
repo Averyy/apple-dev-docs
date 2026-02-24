@@ -27,7 +27,7 @@ For connections, this will be used to initiate traffic; for listeners, this will
 
 ## Parameters
 
-- `endpoint`: The local endpoint to require, or   if none.
+- `endpoint`: The local endpoint to require, or `nil` if none.
 
 
 ---

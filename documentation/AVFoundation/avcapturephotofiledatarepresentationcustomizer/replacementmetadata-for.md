@@ -27,7 +27,7 @@ This callback is optional. If your delegate doesn’t implement this callback, t
 
 ## Parameters
 
-- `photo`: The calling instance of   whose file metadata you’re modifying.
+- `photo`: The calling instance of [`AVCapturePhoto`](avcapturephoto.md) whose file metadata you’re modifying.
 
 ## See Also
 

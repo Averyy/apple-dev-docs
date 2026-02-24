@@ -30,6 +30,28 @@ class UITapGestureRecognizer
 
 For gesture recognition, the specified number of fingers must tap the view a specified number of times. Although taps are discrete gestures, they’re discrete for each state of the gesture recognizer. The system sends the associated action message when the gesture begins and then again for each intermediate state until (and including) the ending state of the gesture. Code that handles tap gestures should test for the state of the gesture, for example:
 
+**Swift**:
+
+```swift
+func handleTap(sender: UITapGestureRecognizer) {
+    if sender.state == .ended {
+        // handling code
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)handleTap:(UITapGestureRecognizer *)sender
+{
+    if (sender.state == UIGestureRecognizerStateEnded)
+    {
+        // handling code
+    }
+}
+```
+
 Action methods handling this gesture can get the location of the gesture as a whole by calling the [`UIGestureRecognizer`](uigesturerecognizer.md) method [`location(in:)`](uigesturerecognizer/location(in:).md). If there are multiple taps, this location is the first tap. If there are multiple touches, this location is the centroid of all fingers tapping the view. Clients can get the location of particular touches in the tap by calling [`location(ofTouch:in:)`](uigesturerecognizer/location(oftouch:in:).md). If multiple taps are allowed, this location is the first tap.
 
 ## Topics

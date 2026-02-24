@@ -27,9 +27,9 @@ When hardware mirroring is used, a display can be online but not active or drawa
 
 ## Parameters
 
-- `maxDisplays`: The size of the   array. This value determines the maximum number of display IDs that can be returned.
-- `onlineDisplays`: A pointer to storage provided by the caller for an array of display IDs. On return, the array contains a list of the online displays. If you pass  , on return the display count contains the total number of online displays.
-- `displayCount`: A pointer to a display count variable provided by the caller. On return, the display count contains the actual number of displays returned in the   array. This value is at most  .
+- `maxDisplays`: The size of the `onlineDisplays` array. This value determines the maximum number of display IDs that can be returned.
+- `onlineDisplays`: A pointer to storage provided by the caller for an array of display IDs. On return, the array contains a list of the online displays. If you pass `NULL`, on return the display count contains the total number of online displays.
+- `displayCount`: A pointer to a display count variable provided by the caller. On return, the display count contains the actual number of displays returned in the `onlineDisplays` array. This value is at most `maxDisplays`.
 
 ## See Also
 

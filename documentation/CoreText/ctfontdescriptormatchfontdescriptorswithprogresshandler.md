@@ -32,7 +32,7 @@ This function returns immediately, but it can take longer to finish the process.
 
 - `descriptors`: An array of descriptors to process.
 - `mandatoryAttributes`: A set of attributes to match.
-- `progressBlock`: This block is called on a private serial queue.
+- `progressBlock`: A callback block that indicates the progress of the matching process. Return [`true`](https://developer.apple.com/documentation/Swift/true) to continue or [`false`](https://developer.apple.com/documentation/Swift/false) to cancel the process. This block is called on a private serial queue.
 
 ## See Also
 

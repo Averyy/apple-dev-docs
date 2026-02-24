@@ -30,8 +30,8 @@ Invoke this method to forfeit a match when the local player isn’t the current 
 
 ## Parameters
 
-- `matchOutcome`: The outcome of the local player who forfeits the match. Don’t pass   as this parameter.
-- `completionHandler`: The block receives the following parameter:
+- `matchOutcome`: The outcome of the local player who forfeits the match. Don’t pass `nil` as this parameter.
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameter: - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

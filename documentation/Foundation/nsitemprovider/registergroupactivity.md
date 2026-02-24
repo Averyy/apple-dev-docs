@@ -21,7 +21,7 @@ func registerGroupActivity<ActivityType>(_ activity: ActivityType) where Activit
 
 ## Parameters
 
-- `activity`: The   to register.
+- `activity`: The `GroupActivity` to register.
 
 ## See Also
 

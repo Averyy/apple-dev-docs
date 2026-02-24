@@ -29,8 +29,8 @@ You can tailor the behavior of certain categories by specifying a mask of catego
 
 ## Parameters
 
-- `category`: The category to apply to the audio session. See   for supported category values.
-- `options`: A mask of additional options for handling audio. For a list of constants, see  .
+- `category`: The category to apply to the audio session. See [`AVAudioSession.Category`](avaudiosession/category-swift.struct.md) for supported category values.
+- `options`: A mask of additional options for handling audio. For a list of constants, see [`AVAudioSession.CategoryOptions`](avaudiosession/categoryoptions-swift.struct.md).
 
 ## See Also
 

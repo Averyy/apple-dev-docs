@@ -32,7 +32,7 @@ This function leaves any percent escape sequences intact.
 
 ## Parameters
 
-- `anURL`: The   object to examine.
+- `anURL`: The `CFURL` object to examine.
 
 ## See Also
 

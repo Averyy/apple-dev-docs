@@ -51,12 +51,28 @@ Date pickers use the target-action design pattern to notify your app when the us
 
 You connect a date picker to your action method using the [`addTarget(_:action:for:)`](uicontrol/addtarget(_:action:for:).md) method or by creating a connection in Interface Builder. The signature of an action method takes one of three forms, as shown in the following code. Choose the form that provides the information that you need to respond to the value change in the date picker.
 
+**Swift**:
+
+```swift
+@IBAction func doSomething()
+@IBAction func doSomething(sender: UIDatePicker)
+@IBAction func doSomething(sender: UIDatePicker, forEvent event: UIEvent)
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction)doSomething;
+- (IBAction)doSomething:(id)sender;
+- (IBAction)doSomething:(id)sender forEvent:(UIEvent*)event;
+```
+
 ##### Debug Date Pickers
 
 When debugging issues with date pickers, watch for these common pitfalls:
 
--  Check the bounds of your [`minimumDate`](uidatepicker/minimumdate.md) and [`maximumDate`](uidatepicker/maximumdate.md) properties. If the maximum date is less than the minimum date, both properties are ignored, and the date picker allows the selection of any date value. The minimum and maximum dates are ignored in the countdown-timer mode ([`UIDatePicker.Mode.countDownTimer`](uidatepicker/mode/countdowntimer.md)).
--  Check that the [`minuteInterval`](uidatepicker/minuteinterval.md) value can be evenly divided into 60; otherwise, the default value is used (`1`).
+- **The minimum date must be earlier than the maximum date.** Check the bounds of your [`minimumDate`](uidatepicker/minimumdate.md) and [`maximumDate`](uidatepicker/maximumdate.md) properties. If the maximum date is less than the minimum date, both properties are ignored, and the date picker allows the selection of any date value. The minimum and maximum dates are ignored in the countdown-timer mode ([`UIDatePicker.Mode.countDownTimer`](uidatepicker/mode/countdowntimer.md)).
+- **The minute interval must be a divisor of 60.** Check that the [`minuteInterval`](uidatepicker/minuteinterval.md) value can be evenly divided into 60; otherwise, the default value is used (`1`).
 
 ##### Configure Date Picker Attributes in Interface Builder
 

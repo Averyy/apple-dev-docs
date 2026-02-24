@@ -18,7 +18,7 @@ This property is appropriate for decoders which produce output in a custom pixel
 
 ## Parameters
 
-- `customPixelFormat`: A dictionary containing a set of keys and values as described in   suitable for providing as the ‘description’ parameter to  .  This must contain the custom pixel format fourCC as the value for the   key.
+- `customPixelFormat`: A dictionary containing a set of keys and values as described in [`CVPixelFormatDescription`](https://developer.apple.com/documentation/CoreVideo/cvpixelformatdescription) suitable for providing as the ‘description’ parameter to [`CVPixelFormatDescriptionCreateWithPixelFormatType(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelFormatDescriptionCreateWithPixelFormatType(_:_:)).  This must contain the custom pixel format fourCC as the value for the `kCVPixelFormatCodecType` key.
 
 
 ---

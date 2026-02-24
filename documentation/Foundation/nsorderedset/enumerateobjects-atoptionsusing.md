@@ -30,7 +30,9 @@ By default, the enumeration starts with the first object and continues serially 
 
 - `s`: The indexes of the objects over which to enumerate.
 - `opts`: A bitmask that specifies the options for the enumeration (whether it should be performed concurrently and whether it should be performed in reverse order).
-- `block`: The block takes three arguments:
+- `block`: The block to apply to elements in the ordered set. The block takes three arguments: - **obj**: The element in the ordered set.
+- **idx**: The index of the element in the ordered set.
+- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop further processing of the array. The `stop` argument is an out-only argument. You should only ever set this Boolean to [`true`](https://developer.apple.com/documentation/Swift/true) within the block.
 
 ## See Also
 

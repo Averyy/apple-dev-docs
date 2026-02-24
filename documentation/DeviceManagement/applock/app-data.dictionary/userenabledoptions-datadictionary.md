@@ -16,6 +16,14 @@ The dictionary of user-editable options to set for the app.
 object AppLock.App.UserEnabledOptions
 ```
 
+## Properties
+
+- `AssistiveTouch` (boolean): If `true`, the system allows the user to toggle AssistiveTouch.
+- `InvertColors` (boolean): If `true`, the system allows the user to toggle Invert Colors.
+- `VoiceControl` (boolean): If `true`, the system allows the user to toggle Voice Control.
+- `VoiceOver` (boolean): If `true`, the system allows the user to toggle VoiceOver.
+- `Zoom` (boolean): If `true`, the system allows the user to toggle Zoom.
+
 ## See Also
 
 - [object AppLock.App.Options](applock/app-data.dictionary/options-data.dictionary.md)

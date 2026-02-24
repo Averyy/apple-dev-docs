@@ -29,9 +29,9 @@ This function is thread safe.
 
 ## Parameters
 
-- `theHost`: The host to be schedule on a run loop. This value must not be  .
-- `runLoop`: The run loop on which to schedule  . This value must not be  .
-- `runLoopMode`: The mode on which to schedule  . This value must not be  .
+- `theHost`: The host to be schedule on a run loop. This value must not be `NULL`.
+- `runLoop`: The run loop on which to schedule `theHost`. This value must not be `NULL`.
+- `runLoopMode`: The mode on which to schedule `theHost`. This value must not be `NULL`.
 
 ## See Also
 

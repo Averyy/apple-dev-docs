@@ -31,7 +31,7 @@ When you change the display mode of a display in a mirroring set, your change sw
 
 - `display`: The identifier of the display to configure.
 - `mode`: A display mode that contains information about the display mode to set.
-- `options`: Reserved for future expansion. Pass   for now.
+- `options`: Reserved for future expansion. Pass `NULL` for now.
 
 ## See Also
 

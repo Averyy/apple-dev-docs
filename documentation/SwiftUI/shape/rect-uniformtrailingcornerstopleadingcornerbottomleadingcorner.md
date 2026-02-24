@@ -22,7 +22,7 @@ static func rect(uniformTrailingCorners: Edge.Corner.Style, topLeadingCorner: Ed
 
 ## Parameters
 
-- `uniformTrailingCorners`: The corner style to be applied on the   trailing two corners uniformly. This shape will first resolve the two   corners individually, then pick the largest resolved radius out of the   two and apply it uniformly to achieve the symmetric look.
+- `uniformTrailingCorners`: The corner style to be applied on the trailing two corners uniformly. This shape will first resolve the two corners individually, then pick the largest resolved radius out of the two and apply it uniformly to achieve the symmetric look.
 - `topLeadingCorner`: The top leading corner style.
 - `bottomLeadingCorner`: The bottom leading corner style.
 

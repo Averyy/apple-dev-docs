@@ -24,8 +24,8 @@ A point in the local coordinate system of `view` that identifies the location of
 
 ## Parameters
 
-- `touchIndex`: The index of a   object in a private array maintained by the receiver. This touch object represents a touch of the current gesture.
-- `view`: A   object on which the gesture took place. Specify   to indicate the window.
+- `touchIndex`: The index of a [`UITouch`](uitouch.md) object in a private array maintained by the receiver. This touch object represents a touch of the current gesture.
+- `view`: A [`UIView`](uiview.md) object on which the gesture took place. Specify `nil` to indicate the window.
 
 ## See Also
 

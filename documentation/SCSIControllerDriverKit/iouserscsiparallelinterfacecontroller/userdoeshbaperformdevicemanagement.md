@@ -24,7 +24,7 @@ This method determines if the HBA manages target device creation and destruction
 
 ## Parameters
 
-- `result`: A pointer to a Boolean value. On return, set this to   if the HBA manages target device creation.
+- `result`: A pointer to a Boolean value. On return, set this to `true` if the HBA manages target device creation.
 
 ## See Also
 

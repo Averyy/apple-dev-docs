@@ -25,7 +25,7 @@ protocol MTLResidencySet : NSObjectProtocol
 
 #### Overview
 
-Residency sets are a way you can tell Metal which resource allocations, such as buffers, textures, and heaps, to make , or GPU-accessible. Adding allocations to a residency set requires less overhead than the equivalent methods of a command encoder. Residency sets also give you more control when Metal makes their allocations resident, and for how long they remain resident. However, residency sets don’t track hazards, so you need to account for hazards with fences and events.
+Residency sets are a way you can tell Metal which resource allocations, such as buffers, textures, and heaps, to make *resident*, or GPU-accessible. Adding allocations to a residency set requires less overhead than the equivalent methods of a command encoder. Residency sets also give you more control when Metal makes their allocations resident, and for how long they remain resident. However, residency sets don’t track hazards, so you need to account for hazards with fences and events.
 
 You can change which [`MTLAllocation`](mtlallocation.md) instances are in a residency set at any time by:
 
@@ -70,9 +70,72 @@ See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-
 
 Make a residency set by configuring an [`MTLResidencySetDescriptor`](mtlresidencysetdescriptor.md) instance and passing it to the [`makeResidencySet(descriptor:)`](mtldevice/makeresidencyset(descriptor:).md) method of an [`MTLDevice`](mtldevice.md).
 
+**Swift**:
+
+```swift
+let setDescriptor = MTLResidencySetDescriptor()
+setDescriptor.label = "Primary residency set"
+setDescriptor.initialCapacity = 42
+
+let residencySet = try device.makeResidencySet(descriptor: setDescriptor)
+```
+
+**Objective-C**:
+
+```objective-c
+MTLResidencySetDescriptor *setDescriptor;
+setDescriptor = [[MTLResidencySetDescriptor alloc] init];
+setDescriptor.label = @"Primary residency set";
+setDescriptor.initialCapacity = 42;
+
+NSError *error;
+id<MTLResidencySet> residencySet;
+residencySet = [device newResidencySetWithDescriptor:setDescriptor
+                                               error:&error];
+```
+
 ##### Add Allocations to a Residency Set
 
 Add individual resource allocations to a residency set by calling [`addAllocation(_:)`](mtlresidencyset/addallocation(_:).md), or add multiple allocations with [`addAllocations(_:)`](mtlresidencyset/addallocations(_:).md).
+
+**Swift**:
+
+```swift
+let residencySet = try device.makeResidencySet(descriptor: setDescriptor)
+
+residencySet.addAllocation(buffer0)
+residencySet.addAllocation(buffer1)
+residencySet.addAllocation(texture0)
+residencySet.addAllocation(texture1)
+residencySet.addAllocation(heap)
+
+let allocations = [buffer2,
+                   texture2,
+                   argumentBufferHeap,
+                   textureHeap]
+
+residencySet.addAllocations(allocations)
+```
+
+**Objective-C**:
+
+```objective-c
+[residencySet addAllocation:buffer0];
+[residencySet addAllocation:buffer1];
+[residencySet addAllocation:texture0];
+[residencySet addAllocation:texture1];
+[residencySet addAllocation:heap];
+
+id<MTLAllocation> allocations[] = {
+    buffer2,
+    texture2,
+    argumentBufferHeap,
+    textureHeap
+};
+
+[residencySet addAllocations:allocations
+                       count:4];
+```
 
 The residency set can handle redundant entries for the same allocation because it ignores duplicates that already have an entry in the set.
 
@@ -82,11 +145,45 @@ The residency set can handle redundant entries for the same allocation because i
 
 Remove individual resource allocations from a residency set by calling [`removeAllocation(_:)`](mtlresidencyset/removeallocation(_:).md), or remove multiple allocations with [`removeAllocations(_:)`](mtlresidencyset/removeallocations(_:).md).
 
+**Swift**:
+
+```swift
+residencySet.removeAllocation(buffer1)
+residencySet.removeAllocations( [argumentBufferHeap, textureHeap] )
+```
+
+**Objective-C**:
+
+```objective-c
+[residencySet removeAllocation:buffer1];
+
+id<MTLAllocation> deallocations[] = {
+    argumentBufferHeap,
+    textureHeap
+};
+
+[residencySet removeAllocations: deallocations
+                          count:2];
+[residencySet commit];
+```
+
 Like the methods that add resource allocations to the set, these methods aggregate removals with little CPU overhead. So you can call the methods multiple times without adversely affecting runtime performance.
 
 ##### Commit the Changes to a Residency Set
 
 Apply the updates to a residency set by calling its [`commit()`](mtlresidencyset/commit().md) method.
+
+**Swift**:
+
+```objective-c
+residencySet.commit()
+```
+
+**Objective-C**:
+
+```swift
+[residencySet commit];
+```
 
 A residency set’s addition and removal methods don’t take effect until you call this method.
 

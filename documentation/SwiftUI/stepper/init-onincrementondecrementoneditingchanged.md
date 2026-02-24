@@ -56,10 +56,10 @@ struct StepperView: View {
 
 ## Parameters
 
-- `titleKey`: The key for the stepper’s localized title describing   the purpose of the stepper.
-- `onIncrement`: The closure to execute when the user clicks or taps the   control’s plus button.
-- `onDecrement`: The closure to execute when the user clicks or taps the   control’s minus button.
-- `onEditingChanged`: A closure that’s called when editing begins and   ends. For example, on iOS, the user may touch and hold the increment   or decrement buttons on a   which causes the execution   of the   closure at the start and end of   the gesture.
+- `titleKey`: The key for the stepper’s localized title describing the purpose of the stepper.
+- `onIncrement`: The closure to execute when the user clicks or taps the control’s plus button.
+- `onDecrement`: The closure to execute when the user clicks or taps the control’s minus button.
+- `onEditingChanged`: A closure that’s called when editing begins and ends. For example, on iOS, the user may touch and hold the increment or decrement buttons on a `Stepper` which causes the execution of the `onEditingChanged` closure at the start and end of the gesture.
 
 ## See Also
 

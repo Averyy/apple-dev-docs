@@ -25,7 +25,7 @@ To determine whether WebKit handles a specific scheme, call the `handlesURLSchem
 
 ## Parameters
 
-- `rawValue`: The raw value of the scheme string; if this is an invalid scheme, of if WebKit already handles   this scheme, the initializer returns  .
+- `rawValue`: The raw value of the scheme string; if this is an invalid scheme, of if WebKit already handles this scheme, the initializer returns `nil`.
 
 
 ---

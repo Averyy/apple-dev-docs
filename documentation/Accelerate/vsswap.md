@@ -20,9 +20,9 @@ Each element of vector `x` is replaced by the corresponding element of `y`, and 
 
 ## Parameters
 
-- `n`: Number of elements in vectors   and  ; must be a multiple of 4.
-- `x`: Vector with   elements of type  .
-- `y`: Vector with   elements of type  .
+- `n`: Number of elements in vectors `x` and `y`; must be a multiple of 4.
+- `x`: Vector with `n` elements of type `float`.
+- `y`: Vector with `n` elements of type `float`.
 
 ## See Also
 

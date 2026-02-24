@@ -27,7 +27,7 @@ The returned view gets associated with the provided namespace. Pass this namespa
 
 ## Parameters
 
-- `namespace`: A namespace identifier that SwiftUI can use to scope   default focus preferences.
+- `namespace`: A namespace identifier that SwiftUI can use to scope default focus preferences.
 
 ## See Also
 

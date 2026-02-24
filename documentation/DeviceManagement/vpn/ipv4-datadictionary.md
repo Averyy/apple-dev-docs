@@ -17,6 +17,10 @@ The dictionary that contains IPV4 settings.
 object VPN.IPv4
 ```
 
+## Properties
+
+- `OverridePrimary` (integer): If `1`, the system sends all network traffic over VPN. Only applies to Cisco IPsec and L2TP VPN types.
+
 ## See Also
 
 - [object VPN.AlwaysOn](vpn/alwayson-data.dictionary.md)

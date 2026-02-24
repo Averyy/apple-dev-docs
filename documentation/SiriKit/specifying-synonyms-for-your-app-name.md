@@ -12,6 +12,9 @@ When engaging your app’s services through Siri, users must include the name of
 
 To define synonyms for your app name, include the `INAlternativeAppNames` key in the `Info.plist` file of your iOS app or WatchKit extension. (watchOS apps don’t inherit the synonyms of their iOS app, so you must declare them explicitly in both places). Place this key at the top level of your property list, configure it as an array of dictionaries, and add the following additional keys to each dictionary:
 
+- **`INAlternativeAppName`**: (Required) A string containing the alternative name by which users may refer to your app. Alternatively, specify a variable name that’s present in your app’s localized `InfoPlist.strings` files.
+- **`INAlternativeAppNamePronunciationHint`**: (Optional) A string containing a pronunciation hint for the alternate name, formatted in a “sounds like” format. Alternatively, specify a variable name that’s present in your app’s localized `InfoPlist.strings` files.
+
 > ❗ **Important**:  If you specify synonyms for your watchOS app, you must build your app for deployment on watchOS 4 or later. An app that includes synonyms won’t install on earlier versions of watchOS. In addition, the synonyms you specify must be identical to the ones that you specified for your iOS app.
 
 To localize your app name and pronunciation hints, specify variable names (instead of actual values) for the `INAlternativeAppName` and `INAlternativeAppNamePronunciationHint` keys of each entry. In your app’s `InfoPlist.strings` files, include the variable names as localization keys and set their values to appropriately localized strings. For example, you might set the value of the `INAlternativeAppName` key to `APP_NAME_SYNONYM_1` and include an entry in your `InfoPlist.strings` file such as the following:

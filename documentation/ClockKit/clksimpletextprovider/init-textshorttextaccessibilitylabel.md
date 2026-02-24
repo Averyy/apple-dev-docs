@@ -21,7 +21,7 @@ A text provider initialized with the specified content.
 ## Parameters
 
 - `text`: The text that you want to display.
-- `shortText`: A shorter version of the value in the   parameter that conveys the same information.
+- `shortText`: A shorter version of the value in the `text` parameter that conveys the same information.
 - `accessibilityLabel`: A succinct string that identifies the purpose of the text.
 
 ## See Also

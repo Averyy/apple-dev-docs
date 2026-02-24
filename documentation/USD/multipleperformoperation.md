@@ -10,6 +10,10 @@ The runtime doesn’t react to this property for all actions.
 
 ##### Additional Invocation Options
 
+- **`allow`**: Restarts the action by playing it over again.
+- **`ignore`**: Continues running the current action, ignoring the additional invocation.
+- **`stop`**: Stops the current action.
+
 ##### Declaration
 
 ```other

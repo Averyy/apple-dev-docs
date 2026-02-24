@@ -26,7 +26,7 @@ Setting marked text either replaces the existing marked text or, if none is pres
 ## Parameters
 
 - `markedText`: The text to be marked.
-- `selectedRange`: A range within   that indicates the current selection. This range is always relative to  .
+- `selectedRange`: A range within `markedText` that indicates the current selection. This range is always relative to `markedText`.
 
 ## See Also
 

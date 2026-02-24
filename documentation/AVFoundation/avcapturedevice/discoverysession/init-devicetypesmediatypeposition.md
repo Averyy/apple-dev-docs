@@ -29,9 +29,9 @@ After creating a discovery session, query its [`devices`](avcapturedevice/discov
 
 ## Parameters
 
-- `deviceTypes`: A list of device types to search for, such as   and  . The array must contain at least one valid   value.
-- `mediaType`: The media type to capture, such as   or  . Pass   to search for devices regardless of supported media types.
-- `position`: The position of capture device to search for, relative to system hardware (front- or back-facing). Pass   to search for devices regardless of position.
+- `deviceTypes`: A list of device types to search for, such as [`builtInWideAngleCamera`](avcapturedevice/devicetype-swift.struct/builtinwideanglecamera.md) and [`builtInMicrophone`](avcapturedevice/devicetype-swift.struct/builtinmicrophone.md). The array must contain at least one valid [`AVCaptureDevice.DeviceType`](avcapturedevice/devicetype-swift.struct.md) value.
+- `mediaType`: The media type to capture, such as [`video`](avmediatype/video.md) or [`audio`](avmediatype/audio.md). Pass `nil` to search for devices regardless of supported media types.
+- `position`: The position of capture device to search for, relative to system hardware (front- or back-facing). Pass [`AVCaptureDevice.Position.unspecified`](avcapturedevice/position-swift.enum/unspecified.md) to search for devices regardless of position.
 
 
 ---

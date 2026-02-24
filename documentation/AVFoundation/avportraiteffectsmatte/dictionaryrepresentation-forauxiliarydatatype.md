@@ -26,7 +26,7 @@ A dictionary of primitive map information for [`CGImageDestinationAddAuxiliaryDa
 
 ## Parameters
 
-- `outAuxDataType`: Must be  .
+- `outAuxDataType`: Must be [`kCGImageAuxiliaryDataTypePortraitEffectsMatte`](https://developer.apple.com/documentation/ImageIO/kCGImageAuxiliaryDataTypePortraitEffectsMatte).
 
 ## See Also
 

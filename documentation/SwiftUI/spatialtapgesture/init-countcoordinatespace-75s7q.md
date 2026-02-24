@@ -21,7 +21,7 @@ init(count: Int = 1, coordinateSpace: some CoordinateSpaceProtocol = .local)
 
 ## Parameters
 
-- `count`: The required number of taps to complete the tap   gesture.
+- `count`: The required number of taps to complete the tap gesture.
 - `coordinateSpace`: The coordinate space of the tap gesture’s location.
 
 ## See Also

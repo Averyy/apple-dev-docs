@@ -20,8 +20,8 @@ static func uniformEdges(leftRadius: UICornerRadius, rightRadius: UICornerRadius
 
 ## Parameters
 
-- `leftRadius`: A   that represents the radius to use for the top-left and bottom-left corners.
-- `rightRadius`: A   that represents the radius to use for the top-right and bottom-right corners.
+- `leftRadius`: A [`UICornerRadius`](uicornerradius-swift.struct.md) that represents the radius to use for the top-left and bottom-left corners.
+- `rightRadius`: A [`UICornerRadius`](uicornerradius-swift.struct.md) that represents the radius to use for the top-right and bottom-right corners.
 
 ## See Also
 

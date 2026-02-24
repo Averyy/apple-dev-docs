@@ -29,12 +29,12 @@ func vImageTableLookUp_ARGB8888(_ src: UnsafePointer<vImage_Buffer>, _ dest: Uns
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the  ,  , and   fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `alphaTable`: A lookup table for the alpha channel that contains 256   values. Pass   to specify that the function copies the alpha channel unchanged to the destination buffer.
-- `redTable`: A lookup table for the red channel that contains 256   values. Pass   to specify that the function copies the alpha channel unchanged to the destination buffer.
-- `greenTable`: A lookup table for the green channel that contains 256   values. Pass   to specify that the function copies the alpha channel unchanged to the destination buffer.
-- `blueTable`: A lookup table for the blue channel that contains 256   values. Pass   to specify that the function copies the alpha channel unchanged to the destination buffer.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass  .
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the `height`, `width`, and `rowBytes` fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `alphaTable`: A lookup table for the alpha channel that contains 256 [`Pixel_8`](pixel_8.md) values. Pass `nil` to specify that the function copies the alpha channel unchanged to the destination buffer.
+- `redTable`: A lookup table for the red channel that contains 256 [`Pixel_8`](pixel_8.md) values. Pass `nil` to specify that the function copies the alpha channel unchanged to the destination buffer.
+- `greenTable`: A lookup table for the green channel that contains 256 [`Pixel_8`](pixel_8.md) values. Pass `nil` to specify that the function copies the alpha channel unchanged to the destination buffer.
+- `blueTable`: A lookup table for the blue channel that contains 256 [`Pixel_8`](pixel_8.md) values. Pass `nil` to specify that the function copies the alpha channel unchanged to the destination buffer.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md).
 
 
 ---

@@ -20,7 +20,7 @@ The host named `hostname`.
 
 ## Parameters
 
-- `name`: Name of the host to look up. Can be either a simple hostname, such as  , or a fully qualified domain name, such as  .
+- `name`: Name of the host to look up. Can be either a simple hostname, such as `"sales"`, or a fully qualified domain name, such as `"sales.anycorp.com"`.
 
 ## See Also
 

@@ -26,7 +26,7 @@ You can also call this method from a block passed to the [`performBatchUpdates(_
 
 ## Parameters
 
-- `sections`: The indexes of the sections you want to delete. This parameter must not be  .
+- `sections`: The indexes of the sections you want to delete. This parameter must not be `nil`.
 
 ## See Also
 

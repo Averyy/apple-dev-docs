@@ -22,7 +22,7 @@ Changing the visible region may require the loading of additional map tiles to r
 
 ## Parameters
 
-- `coordinateRegion`: The new region of the map to be displayed. The span value of this parameter provides an implicit zoom value for the map. For more information about the   type, see  .
+- `coordinateRegion`: The new region of the map to be displayed. The span value of this parameter provides an implicit zoom value for the map. For more information about the [`MKCoordinateRegion`](https://developer.apple.com/documentation/MapKit/MKCoordinateRegion) type, see [`MapKit`](https://developer.apple.com/documentation/MapKit).
 
 ## See Also
 

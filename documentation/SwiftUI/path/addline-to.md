@@ -26,7 +26,7 @@ After adding the line segment, the current point is set to the endpoint of the l
 
 ## Parameters
 
-- `end`: The location, in user space coordinates, for the   end of the new line segment.
+- `end`: The location, in user space coordinates, for the end of the new line segment.
 
 ## See Also
 

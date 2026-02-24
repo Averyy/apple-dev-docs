@@ -29,7 +29,7 @@ Use the array of obstacles to create an obstacle graph ([`GKObstacleGraph`](http
 
 ## Parameters
 
-- `nodes`: An array of   objects.
+- `nodes`: An array of [`SKNode`](sknode.md) objects.
 
 ## See Also
 

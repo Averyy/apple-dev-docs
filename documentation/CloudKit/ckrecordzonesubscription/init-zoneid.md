@@ -26,7 +26,7 @@ The subscription that this method returns is a zone-based subscription that gene
 
 ## Parameters
 
-- `zoneID`: The ID of the record zone that contains the records you want to monitor. This parameter must not be  .
+- `zoneID`: The ID of the record zone that contains the records you want to monitor. This parameter must not be `nil`.
 
 ## See Also
 

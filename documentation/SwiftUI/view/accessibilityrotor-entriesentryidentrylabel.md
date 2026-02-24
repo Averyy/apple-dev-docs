@@ -48,9 +48,9 @@ ScrollView {
 ## Parameters
 
 - `rotorLabel`: Localized label identifying this Rotor to the user.
-- `entries`: An array of values that will be used to generate   the entries of the Rotor.
-- `entryID`: Key path on the entry type that can be used   to generate an identifier for the Entry. The identifiers   must match up with identifiers in   or explicit   calls   within the  .
-- `entryLabel`: Key path on the entry type that can be   used to get a user-visible label for every Rotor entry. This is used   on macOS when the user opens the list of entries for the Rotor.
+- `entries`: An array of values that will be used to generate the entries of the Rotor.
+- `entryID`: Key path on the entry type that can be used to generate an identifier for the Entry. The identifiers must match up with identifiers in `ForEach` or explicit `id` calls within the `ScrollView`.
+- `entryLabel`: Key path on the entry type that can be used to get a user-visible label for every Rotor entry. This is used on macOS when the user opens the list of entries for the Rotor.
 
 ## See Also
 

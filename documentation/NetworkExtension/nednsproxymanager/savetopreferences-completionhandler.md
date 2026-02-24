@@ -28,7 +28,7 @@ If the DNS proxy is enabled, it becomes active as a result of this call.
 
 ## Parameters
 
-- `completionHandler`: A block called when the save operation completes. If the operation fails, an error instance passed to this block describes the problem. Otherwise, the error is  . See   for the list of possible errors.
+- `completionHandler`: A block called when the save operation completes. If the operation fails, an error instance passed to this block describes the problem. Otherwise, the error is `nil`. See [`NEDNSProxyManagerError`](nednsproxymanagererror.md) for the list of possible errors.
 
 ## See Also
 

@@ -24,7 +24,7 @@ The App Proxy Provider should call this method when an unrecoverable error occur
 
 ## Parameters
 
-- `error`: An   object containing the error that caused the proxy to be stopped. The domain and code of this   object is defined by the caller.
+- `error`: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object containing the error that caused the proxy to be stopped. The domain and code of this `NSError` object is defined by the caller.
 
 ## See Also
 

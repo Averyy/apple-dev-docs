@@ -16,9 +16,15 @@ DNSServiceErrorType DNSServiceCreateDelegateConnection (
 
 #### Parameters
 
+**sdRef**
+
 A pointer to an uninitialized DNSServiceRef. Deallocating the reference (via DNSServiceRefDeallocate()) severs the connection and deregisters all records registered on this connection.
 
+**pid**
+
 Process ID of the delegate
+
+**uuid**
 
 UUID of the delegate
 

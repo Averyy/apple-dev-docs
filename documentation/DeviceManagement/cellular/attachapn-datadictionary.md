@@ -16,6 +16,16 @@ A dictionary that contains details about an attach access point name (APN) confi
 object Cellular.AttachAPN
 ```
 
+## Properties
+
+- `AllowedProtocolMask` (integer): The Internet Protocol versions that the system supports. Allowed values: - `1`: IPv4
+- `2`: IPv6
+- `3`: Both
+- `AuthenticationType` (string): The authentication type.
+- `Name` (string) *(required)*: The name for this configuration.
+- `Password` (string): The password for the user.
+- `Username` (string): The user name.
+
 ## See Also
 
 - [object Cellular.APNsItem](cellular/apnsitem.md)

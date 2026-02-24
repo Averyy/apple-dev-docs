@@ -24,7 +24,7 @@ Returns [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CG
 
 ## Parameters
 
-- `location`: The   that describes the location in the text layout fragment.
+- `location`: The [`NSTextLocation`](nstextlocation.md) that describes the location in the text layout fragment.
 
 ## See Also
 

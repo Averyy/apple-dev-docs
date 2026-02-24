@@ -22,8 +22,9 @@ Depending on the immersion style used for the Immersive Space in your app, the a
 
 ## Parameters
 
-- `initial`: Whether the action should be run when this view initially   appears.
-- `action`: A closure to run when the immersion changes.
+- `initial`: Whether the action should be run when this view initially appears.
+- `action`: A closure to run when the immersion changes. - **oldValue**: The value representing the old state of immersion.
+- **newValue**: The value representing the current state of immersion.
 
 
 ---

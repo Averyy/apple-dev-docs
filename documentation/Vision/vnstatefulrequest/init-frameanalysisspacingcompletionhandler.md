@@ -21,7 +21,7 @@ init(frameAnalysisSpacing: CMTime, completionHandler: VNRequestCompletionHandler
 
 ## Parameters
 
-- `frameAnalysisSpacing`: A   value that indicates the duration between analysis operations. Increase this value to reduce the number of frames analyzed on slower devices. Set this argument to   to analyze all frames.
+- `frameAnalysisSpacing`: A [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) value that indicates the duration between analysis operations. Increase this value to reduce the number of frames analyzed on slower devices. Set this argument to [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero) to analyze all frames.
 - `completionHandler`: A closure that’s invoked after the request has completed its processing. The system invokes the completion handler on the same dispatch queue as the request performs its processing.
 
 

@@ -34,7 +34,7 @@ If you don’t implement this method, ClockKit doesn’t try to add later entrie
 - `complication`: The complication tied to the request. Use the complication family information in this object to determine which set of templates are valid.
 - `date`: The starting date for providing future entries. The dates for your timeline entries should occur after this date and be as close to the date as possible.
 - `limit`: The maximum number of entries to provide.
-- `handler`: The handler to execute with the future timeline data. This block has no return value and takes the following parameter:
+- `handler`: The handler to execute with the future timeline data. This block has no return value and takes the following parameter: - **`entries`**: An array of [`CLKComplicationTimelineEntry`](clkcomplicationtimelineentry.md) objects representing the future data. The number of entries in the array must be less than or equal to the value in the `limit` parameter. If you specify `nil`, ClockKit doesn’t try to extend the timeline further.
 
 ## See Also
 

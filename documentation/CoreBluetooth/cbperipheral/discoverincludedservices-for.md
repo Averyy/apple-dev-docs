@@ -30,7 +30,7 @@ When the peripheral discovers one or more included services of the specified ser
 
 ## Parameters
 
-- `includedServiceUUIDs`: An array of   objects that you are interested in. Here, each   object represents a UUID that identifies the type of included service you want to discover.
+- `includedServiceUUIDs`: An array of [`CBUUID`](cbuuid.md) objects that you are interested in. Here, each [`CBUUID`](cbuuid.md) object represents a UUID that identifies the type of included service you want to discover.
 - `service`: The previously-discovered service whose included services you want to discover.
 
 ## See Also

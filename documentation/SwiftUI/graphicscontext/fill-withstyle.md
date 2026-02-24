@@ -27,7 +27,7 @@ The current drawing state of the context defines the full drawing operation. For
 ## Parameters
 
 - `path`: The outline of the region to fill.
-- `shading`: The color or pattern to use when filling the region   bounded by  .
+- `shading`: The color or pattern to use when filling the region bounded by `path`.
 - `style`: A style that indicates how to rasterize the path.
 
 ## See Also

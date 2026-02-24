@@ -23,7 +23,7 @@ func CFSetAddValue(_ theSet: CFMutableSet!, _ value: UnsafeRawPointer!)
 ## Parameters
 
 - `theSet`: The set to modify.
-- `value`:  is retained by   using the retain callback provided when   was created. If   is not of the type expected by the retain callback, the behavior is undefined. If   already exists in the collection, this function returns without doing anything.
+- `value`: A CFType object or a pointer value to add to `theSet` (or the value itself, if it fits into the size of a pointer). `value` is retained by `theSet` using the retain callback provided when `theSet` was created. If `value` is not of the type expected by the retain callback, the behavior is undefined. If `value` already exists in the collection, this function returns without doing anything.
 
 ## See Also
 

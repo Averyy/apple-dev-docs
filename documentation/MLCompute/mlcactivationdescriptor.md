@@ -22,6 +22,10 @@ class MLCActivationDescriptor
 
 The framework provides the following activation descriptor initializers to create the associated descriptors:
 
+- **[`init(type:)`](mlcactivationdescriptor/init(type:).md)**: Absolute, GELU, Identity, LogSigmoid, Parametric Soft Sign, SELU, Sigmoid, TanhShrink
+- **[`init(type:a:)`](mlcactivationdescriptor/init(type:a:).md)**: CELU, HardShrink, Parametric ELU, ReLU, SoftShrink
+- **[`init(type:a:b:)`](mlcactivationdescriptor/init(type:a:b:).md)**: Hard Sigmoid, Hyperbolic tangent (TanH), Linear, Parametric Soft Plus, ReLUN, Threshold
+
 ## Topics
 
 ### Creating Activation Descriptors

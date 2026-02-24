@@ -33,10 +33,10 @@ You can pass the same buffer to the `sourceBuffer` and `destinationBuffer` param
 ## Parameters
 
 - `sourceBuffer`: A buffer the command copies data from.
-- `sourceOffset`: A byte offset within   the command copies from. In macOS,   needs to be a multiple of  , but can be any value in iOS and tvOS.
+- `sourceOffset`: A byte offset within `sourceBuffer` the command copies from. In macOS, `sourceOffset` needs to be a multiple of `4`, but can be any value in iOS and tvOS.
 - `destinationBuffer`: The destination buffer for the copy operation.
-- `destinationOffset`: A byte offset within   the command copies to. In macOS,   needs to be a multiple of  , but can be any value in iOS and tvOS.
-- `size`: The number of bytes the command copies from   to  . In macOS,   needs to be a multiple of  , but can be any value in iOS and tvOS.
+- `destinationOffset`: A byte offset within `destinationBuffer` the command copies to. In macOS, `destinationOffset` needs to be a multiple of `4`, but can be any value in iOS and tvOS.
+- `size`: The number of bytes the command copies from `sourceBuffer` to `destinationBuffer`. In macOS, `size` needs to be a multiple of `4`, but can be any value in iOS and tvOS.
 
 
 ---

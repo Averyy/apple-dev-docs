@@ -26,7 +26,7 @@ The number of media samples in the `CMSampleBuffer`. 0 is returned if there is a
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
 
 ## See Also
 

@@ -20,8 +20,8 @@ Creates a pointer accessory with the specified shape and position.
 
 ## Parameters
 
-- `shape`: One of the available   shapes.
-- `position`: One of the available   positions.
+- `shape`: One of the available [`UIPointerShape`](uipointershape-swift.enum.md) shapes.
+- `position`: One of the available [`UIPointerAccessory.Position`](uipointeraccessory/position-swift.struct.md) positions.
 
 ## See Also
 

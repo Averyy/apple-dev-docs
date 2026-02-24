@@ -21,7 +21,7 @@ As a side effect, this method removes all other children, including `NSXMLNode` 
 
 ## Parameters
 
-- `root`: An   object that is to be the root element.
+- `root`: An [`XMLNode`](xmlnode.md) object that is to be the root element.
 
 ## See Also
 

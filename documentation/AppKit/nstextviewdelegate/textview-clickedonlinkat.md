@@ -28,7 +28,7 @@ The `charIndex` parameter is a character index somewhere in the range of the lin
 ## Parameters
 
 - `textView`: The text view sending the message.
-- `link`: The link that was clicked; the value of  .
+- `link`: The link that was clicked; the value of [`link`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/link).
 - `charIndex`: The character index where the click occurred, indexed within the text storage.
 
 ## See Also

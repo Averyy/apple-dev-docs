@@ -31,9 +31,9 @@ Calling this method while the picker is currently displayed in a popover dismiss
 
 ## Parameters
 
-- `rect`: The rectangle to which to anchor the popover. Specify the rectangle using the coordinate system of the view in the   parameter.
+- `rect`: The rectangle to which to anchor the popover. Specify the rectangle using the coordinate system of the view in the `view` parameter.
 - `view`: The view containing the specified rectangle.
-- `animated`:   to animate the display of the picker or   to display it without animations.
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the display of the picker or [`false`](https://developer.apple.com/documentation/Swift/false) to display it without animations.
 - `completion`: A block to execute when the picker is dismissed. Use this block to receive information about the selected printer or information about any errors that occurred.
 
 ## See Also

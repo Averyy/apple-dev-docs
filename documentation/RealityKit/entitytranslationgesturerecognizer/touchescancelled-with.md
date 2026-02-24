@@ -19,8 +19,8 @@ Sent to the gesture recognizer when a system event (such as an incoming phone ca
 
 ## Parameters
 
-- `touches`: A set of   instances in the event represented by   that represent the touches in the    phase.
-- `event`: A   object representing the event to which the touches belong.
+- `touches`: A set of `UITouch` instances in the event represented by `event` that represent the touches in the `UITouch.Phase.cancelled` phase.
+- `event`: A `UIEvent` object representing the event to which the touches belong.
 
 ## See Also
 

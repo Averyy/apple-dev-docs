@@ -27,7 +27,7 @@ The current stroke color space must be a pattern color space. Otherwise, the res
 ## Parameters
 
 - `pattern`: A pattern for stroking. In Objective-C, the object is retained; upon return, you may safely release it.
-- `components`: If the specified pattern is a color pattern, pass an alpha value.
+- `components`: If the specified pattern is an uncolored (or masking) pattern, pass an array of intensity values that specify the color to use when the pattern is painted. The number of array elements must equal the number of components in the base space of the stroke pattern color space, plus an additional component for the alpha value. If the specified pattern is a color pattern, pass an alpha value.
 
 ## See Also
 

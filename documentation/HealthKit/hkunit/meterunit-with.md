@@ -27,9 +27,23 @@ A HealthKit unit for measuring length based on meters and the provided prefix.
 
 This method is used to create prefixed versions of meters. Common uses include creating kilometer and centimeter units, as shown below.
 
+**Swift**:
+
+```swift
+let km = HKUnit.meterUnitWithMetricPrefix(.Kilo)
+let cm = HKUnit.meterUnitWithMetricPrefix(.Centi)
+```
+
+**Objective-C**:
+
+```objc
+HKUnit *km = [HKUnit meterUnitWithMetricPrefix:HKMetricPrefixKilo];
+HKUnit *cm = [HKUnit meterUnitWithMetricPrefix:HKMetricPrefixCenti];
+```
+
 ## Parameters
 
-- `prefix`: A valid metric prefix value. For the complete list of prefix values, see  .
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](hkmetricprefix.md).
 
 ## See Also
 

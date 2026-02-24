@@ -20,9 +20,9 @@ Each element of vector `x` is multiplied in place by `alpha`.
 
 ## Parameters
 
-- `n`: Number of elements in vector  ; must be a multiple of 4.
+- `n`: Number of elements in vector `x`; must be a multiple of 4.
 - `alpha`: Scaling factor.
-- `x`: Vector with   elements of type  .
+- `x`: Vector with `n` elements of type `float`.
 
 ## See Also
 

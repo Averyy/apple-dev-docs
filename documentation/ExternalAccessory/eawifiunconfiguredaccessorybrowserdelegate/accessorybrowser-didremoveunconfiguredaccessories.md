@@ -24,8 +24,8 @@ This method is called when the browser removes an accessory from the primary lis
 
 ## Parameters
 
-- `browser`: The instance of   that is generating the event.
-- `accessories`: The set of   objects that have been removed from the scan results since the last update. The browser removes only accessories that match the filter predicate you specified at the start of the search.
+- `browser`: The instance of [`EAWiFiUnconfiguredAccessoryBrowser`](eawifiunconfiguredaccessorybrowser.md) that is generating the event.
+- `accessories`: The set of [`EAWiFiUnconfiguredAccessory`](eawifiunconfiguredaccessory.md) objects that have been removed from the scan results since the last update. The browser removes only accessories that match the filter predicate you specified at the start of the search.
 
 ## See Also
 

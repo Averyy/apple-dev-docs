@@ -22,8 +22,8 @@ Use the Media Player framework, which is part of [`MusicKit`](https://developer.
 
 To play content from the user’s library using the Media Player framework, use one of the built-in [`MPMusicPlayerController`](mpmusicplayercontroller.md) objects:
 
-- An  plays music locally within your app. Use this player when you want greater control over the audio you play for the user. This player doesn’t change the state of the built-in Music app.
-- The  employs the Music app to play audio on your behalf. Use this player when you want audio to continue playing even when the user switches away from your app.
+- An *application player* plays music locally within your app. Use this player when you want greater control over the audio you play for the user. This player doesn’t change the state of the built-in Music app.
+- The *system player* employs the Music app to play audio on your behalf. Use this player when you want audio to continue playing even when the user switches away from your app.
 
 Use media queries to retrieve the items you want to play and to populate the queue for the media player you select. After a user gives your app permission to access their Apple Music account, it can add songs, create playlists, and play songs from Apple Music. If your app detects that the user isn’t an Apple Music subscriber, it can offer a trial.
 

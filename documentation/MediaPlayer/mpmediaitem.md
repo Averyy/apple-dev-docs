@@ -36,7 +36,7 @@ You use attributes of media items to build media queries for searching the Media
 - [var albumPersistentID: MPMediaEntityPersistentID](mpmediaitem/albumpersistentid.md)
   The persistent identifier for an album.
 - [var albumTitle: String?](mpmediaitem/albumtitle.md)
-  The title of an album, such as , rather than the title of an individual song on the album, such as “Crater Dance.”
+  The title of an album, such as *Live on Mars*, rather than the title of an individual song on the album, such as “Crater Dance.”
 - [var albumTrackCount: Int](mpmediaitem/albumtrackcount.md)
   The number of tracks for the album that contains the media item.
 - [var albumTrackNumber: Int](mpmediaitem/albumtracknumber.md)
@@ -94,7 +94,7 @@ You use attributes of media items to build media queries for searching the Media
 - [var podcastPersistentID: MPMediaEntityPersistentID](mpmediaitem/podcastpersistentid.md)
   The persistent identifier for an audio podcast.
 - [var podcastTitle: String?](mpmediaitem/podcasttitle.md)
-  The title of a podcast, such as , rather than the title of an individual episode of a podcast, such as “Episode 12: Another Cold Day at the Pole.”
+  The title of a podcast, such as *This Martian Drudgery*, rather than the title of an individual episode of a podcast, such as “Episode 12: Another Cold Day at the Pole.”
 - [var hasProtectedAsset: Bool](mpmediaitem/hasprotectedasset.md)
   A Boolean value that indicates whether the media item has a protected asset.
 - [var rating: Int](mpmediaitem/rating.md)

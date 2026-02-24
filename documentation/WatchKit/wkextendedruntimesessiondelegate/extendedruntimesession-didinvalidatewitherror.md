@@ -25,7 +25,7 @@ The system calls this method both when a session fails to start and when a sessi
 
 - `extendedRuntimeSession`: The session that became invalid.
 - `reason`: The reason the session became invalid.
-- `error`: If the   parameter is  , then this parameter contains additional information about the error. Otherwise it is set to  .
+- `error`: If the `reason` parameter is [`WKExtendedRuntimeSessionInvalidationReason.error`](wkextendedruntimesessioninvalidationreason/error.md), then this parameter contains additional information about the error. Otherwise it is set to `nil`.
 
 ## See Also
 

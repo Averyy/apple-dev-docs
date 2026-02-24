@@ -28,7 +28,7 @@ Copy a retained reference to the underlying `SecTrustRef` instance.
 
 ## Parameters
 
-- `trust`: A   instance.
+- `trust`: A `sec_trust_t` instance.
 
 
 ---

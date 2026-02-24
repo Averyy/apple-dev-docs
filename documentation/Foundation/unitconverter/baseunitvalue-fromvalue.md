@@ -26,7 +26,7 @@ The value in terms of the base unit.
 
 #### Discussion
 
-This method takes a value in a particular unit and returns the result of converting it into the base unit of that unit’s dimension. For example, a converter for the miles unit calling this method, passing `1.0` to the `value` parameter, results in `1609.34` ().
+This method takes a value in a particular unit and returns the result of converting it into the base unit of that unit’s dimension. For example, a converter for the miles unit calling this method, passing `1.0` to the `value` parameter, results in `1609.34` (*1 mi = 1609.34 m*).
 
 ## Parameters
 

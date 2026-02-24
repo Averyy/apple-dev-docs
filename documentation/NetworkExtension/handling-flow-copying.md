@@ -6,9 +6,9 @@ Exchange data streams by using proxy-provider classes.
 
 #### Overview
 
-In the context of a Network Extension provider, a  is a bidirectional stream of data. A TCP flow represents a TCP connection. A UDP flow represents a sequence of incoming and outgoing datagrams you can identify based on a local IP address and port and a remote IP address and port.
+In the context of a Network Extension provider, a *flow* is a bidirectional stream of data. A TCP flow represents a TCP connection. A UDP flow represents a sequence of incoming and outgoing datagrams you can identify based on a local IP address and port and a remote IP address and port.
 
- has two components: inbound and outbound data. Think of handling inbound data as reading from the remote side of the connection and writing to the local flow. Likewise, handling outbound data is comparable to reading from the local flow and writing to the remote side of the connection.
+*Flow copying* has two components: inbound and outbound data. Think of handling inbound data as reading from the remote side of the connection and writing to the local flow. Likewise, handling outbound data is comparable to reading from the local flow and writing to the remote side of the connection.
 
 Some proxy providers may only want to flow copy for a specific set of traffic, such as only Safari flows. Starting with macOS 11,  [`NETransparentProxyProvider`](netransparentproxyprovider.md) gives the provider the option to handle the flow or let the system do it. This is the only provider you can use to do this. The only other way to limit flows claimed by the provider is to alter the `NETunnelNetworkSettings`.
 
@@ -106,7 +106,7 @@ func outboundCopier() {
 
 ##### Implement Flow Control
 
-Flow control is important because it keeps the Network Extension from allocating unbounded amounts of memory that can lead to slow performance or even a , where the system frees memory by terminating applications. Such conditions can occur when a device experiences poor network conditions or large volumes of data pass through the provider. For more on a , see [`Identifying high-memory use with jetsam event reports`](https://developer.apple.com/documentation/Xcode/identifying-high-memory-use-with-jetsam-event-reports).
+Flow control is important because it keeps the Network Extension from allocating unbounded amounts of memory that can lead to slow performance or even a *jetsam event*, where the system frees memory by terminating applications. Such conditions can occur when a device experiences poor network conditions or large volumes of data pass through the provider. For more on a *jetsam event*, see [`Identifying high-memory use with jetsam event reports`](https://developer.apple.com/documentation/Xcode/identifying-high-memory-use-with-jetsam-event-reports).
 
 You can implement flow control by using an implicit technique, where all data is written before any more is read.  This prevents buffering too much data at any one time.  Buffering larger amounts of data can lead to memory problems. If the provider must buffer data, set an upper bound on the buffer and don’t read until the buffer has space to hold more data.
 

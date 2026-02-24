@@ -30,11 +30,11 @@ This method is not available on iOS 7 and later—it will return `NULL` and log 
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `name`: The name with which to register the port.   can be  .
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `name`: The name with which to register the port. `name` can be `NULL`.
 - `callout`: The callback function invoked when a message is received on the message port.
-- `context`: A structure holding contextual information for the message port. The function copies the information out of the structure, so the memory pointed to by   does not need to persist beyond the function call.
-- `shouldFreeInfo`: A flag set by the function to indicate whether the   member of   should be freed. The flag is set to   on failure or if a local port named   already exists,   otherwise.   can be  .
+- `context`: A structure holding contextual information for the message port. The function copies the information out of the structure, so the memory pointed to by `context` does not need to persist beyond the function call.
+- `shouldFreeInfo`: A flag set by the function to indicate whether the `info` member of `context` should be freed. The flag is set to `true` on failure or if a local port named `name` already exists, `false` otherwise. `shouldFreeInfo` can be `NULL`.
 
 ## See Also
 

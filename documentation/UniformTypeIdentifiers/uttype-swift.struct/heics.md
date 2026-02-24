@@ -22,9 +22,9 @@ static var heics: UTType { get }
 
 #### Discussion
 
- public.heics
+**UTI:** public.heics
 
- public.heif-standard
+**conforms to:** public.heif-standard
 
 
 ---

@@ -47,8 +47,8 @@ Don’t call [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewitherror(_:_:)
 
 ## Parameters
 
-- `trust`: The trust management object to evaluate. A trust management object includes the certificate to be verified plus the policy or policies to be used in evaluating trust. It can optionally also include other certificates to be used in verifying the first certificate. Use the   function to create a trust management object.
-- `error`: An error pointer the method uses to return an error when trust evaluation fails. Set to   to ignore the error.
+- `trust`: The trust management object to evaluate. A trust management object includes the certificate to be verified plus the policy or policies to be used in evaluating trust. It can optionally also include other certificates to be used in verifying the first certificate. Use the [`SecTrustCreateWithCertificates(_:_:_:)`](sectrustcreatewithcertificates(_:_:_:).md) function to create a trust management object.
+- `error`: An error pointer the method uses to return an error when trust evaluation fails. Set to `nil` to ignore the error.
 
 
 ---

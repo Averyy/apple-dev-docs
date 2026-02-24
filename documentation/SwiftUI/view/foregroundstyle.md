@@ -33,9 +33,9 @@ Symbol images within the view hierarchy use the [`palette`](symbolrenderingmode/
 
 ## Parameters
 
-- `primary`: The primary color or pattern to use when filling in   the foreground elements. To indicate a specific value, use    or  , or one of the gradient   types, like   . To set a   style that’s relative to the containing view’s style, use one of the   semantic styles, like  .
-- `secondary`: The secondary color or pattern to use when   filling in the foreground elements.
-- `tertiary`: The tertiary color or pattern to use when   filling in the foreground elements.
+- `primary`: The primary color or pattern to use when filling in the foreground elements. To indicate a specific value, use [`Color`](color.md) or [`image(_:sourceRect:scale:)`](shapestyle/image(_:sourcerect:scale:).md), or one of the gradient types, like [`linearGradient(colors:startPoint:endPoint:)`](shapestyle/lineargradient(colors:startpoint:endpoint:).md). To set a style that’s relative to the containing view’s style, use one of the semantic styles, like [`primary`](shapestyle/primary.md).
+- `secondary`: The secondary color or pattern to use when filling in the foreground elements.
+- `tertiary`: The tertiary color or pattern to use when filling in the foreground elements.
 
 ## See Also
 

@@ -66,6 +66,10 @@ Specify `com.apple.systempolicy.managed` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `DisableOverride` (boolean): If `true`, disables the Finder’s contextual menu item.
+
 ## See Also
 
 - [object SystemPolicyControl](systempolicycontrol.md)

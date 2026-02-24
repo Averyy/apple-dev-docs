@@ -25,10 +25,10 @@ init(destination: MIDIEndpointRef, data: UnsafePointer<UInt8>, bytesToSend: UInt
 - `destination`: The endpoint to send the event to.
 - `data`: Initially, a pointer to the SysEx event to send. The system advances this pointer as it sends the bytes.
 - `bytesToSend`: Initially, a counter of the number of bytes to send. The system decrements this counter as it sends the bytes.
-- `complete`: A Boolean value that indicates whether the transmission is complete. You can set this value to   to abort transmission and the system sets it to   after it transmits all the bytes.
+- `complete`: A Boolean value that indicates whether the transmission is complete. You can set this value to `true` to abort transmission and the system sets it to `true` after it transmits all the bytes.
 - `reserved`: 
 - `completionProc`: A function that the system calls after it sends all bytes for the request, or after the client marks the request as complete.
-- `completionRefCon`: Data to pass to the  .
+- `completionRefCon`: Data to pass to the `completionProc`.
 
 
 ---

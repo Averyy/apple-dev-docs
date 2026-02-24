@@ -20,9 +20,9 @@ func translationTask(_ configuration: TranslationSession.Configuration?, action:
 
 #### Discussion
 
-This task provides an instance of `TranslationSession` to use in translations. Whenever [`TranslationSession.Configuration`](https://developer.apple.com/documentation/Translation/TranslationSession/Configuration)  changes and isn’t `nil`, the closure `action` runs, providing a `TranslationSession` instance to perform one or more translations.
+This task provides an instance of [`TranslationSession`](https://developer.apple.com/documentation/Translation/TranslationSession) to use in translations. Whenever [`TranslationSession.Configuration`](https://developer.apple.com/documentation/Translation/TranslationSession/Configuration)  changes and isn’t `nil`, the closure `action` runs, providing a session instance to perform one or more translations.
 
-For example, you can create a [`TranslationSession.Configuration`](https://developer.apple.com/documentation/Translation/TranslationSession/Configuration) in response to a button press to trigger translation:
+For example, you can create a configuration in response to a button press to initiate the translation:
 
 ```swift
 struct ContentView: View {
@@ -52,7 +52,7 @@ struct ContentView: View {
                         let response = try await session.translate(sourceText)
                         targetText = response.targetText
                     } catch {
-                        // code to handle error
+                        // Handle any errors.
                     }
                 }
             }
@@ -61,12 +61,12 @@ struct ContentView: View {
 }
 ```
 
-The system throws a `fatalError` if you use a `TranslationSession` instance after the attached view disappears or if you use it after changing the `configuration`. This causes the `action` closure to provide a new `TranslationSession` instance.
+The system throws a `fatalError` if you use a [`TranslationSession`](https://developer.apple.com/documentation/Translation/TranslationSession) instance after the attached view disappears or if you use it after changing the configuration. This causes the `action` closure to provide a new session instance.
 
 ## Parameters
 
-- `configuration`: A configuration for a  . When this configuration is non-nil and changes, the   runs providing an instance of    to perform translations.
-- `action`: This closure runs when the   is non-nil and changes. If the   is initially non-nil, it calls the action closure when the view appears and provides a   instance to perform one or multiple translations.
+- `configuration`: A configuration for a [`TranslationSession`](https://developer.apple.com/documentation/Translation/TranslationSession). When this configuration is non-`nil` and changes, the `action` runs providing an instance of the session to perform translations.
+- `action`: This closure runs when the [`TranslationSession.Configuration`](https://developer.apple.com/documentation/Translation/TranslationSession/Configuration) is non-`nil` and changes. If the configuration is initially non-`nil`, it calls the action closure when the view appears and provides a session to perform one or more translations.
 
 ## See Also
 

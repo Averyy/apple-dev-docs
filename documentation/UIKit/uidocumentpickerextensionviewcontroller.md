@@ -20,7 +20,7 @@ class UIDocumentPickerExtensionViewController
 
 #### Overview
 
-The Document Picker View Controller extension can perform  and  operations on its own. If you want to support  and  operations, you must pair it with a File Provider extension.
+The Document Picker View Controller extension can perform *import* and *export* operations on its own. If you want to support *open* and *move* operations, you must pair it with a File Provider extension.
 
 When creating a Document Picker extension, you must subclass [`UIDocumentPickerExtensionViewController`](uidocumentpickerextensionviewcontroller.md) to provide the document picker’s user interface. Your subclass presents a list of available documents and destinations to the user. When the user makes a selection, you trigger the file transfer and pass the selected URL back to the host app.
 

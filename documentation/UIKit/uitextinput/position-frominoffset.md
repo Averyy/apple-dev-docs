@@ -25,9 +25,9 @@ For an example of an implementation of the related method, [`position(from:offse
 
 ## Parameters
 
-- `position`: A custom   object that represents a location in a document.
-- `direction`: A   constant that represents the direction of the offset from  . Return   if the computed text position is less than 0 or greater than the length of the backing string.
-- `offset`: A character offset from  .
+- `position`: A custom [`UITextPosition`](uitextposition.md) object that represents a location in a document.
+- `direction`: A [`UITextLayoutDirection`](uitextlayoutdirection.md) constant that represents the direction of the offset from `position`. Return `nil` if the computed text position is less than 0 or greater than the length of the backing string.
+- `offset`: A character offset from `position`.
 
 ## See Also
 

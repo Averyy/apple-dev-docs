@@ -24,8 +24,8 @@ init(pivotEntity: ActionEntityResolution, revolutions: Float, orbitalAxis: SIMD3
 - `pivotEntity`: The pivot entity that the targeted entity will orbit.
 - `revolutions`: The number of rotations to complete before stopping.
 - `orbitalAxis`: A vector that describes the axis of rotation (in world space).
-- `isOrientedToPath`: Indicates whether the orbiting target entity updates   its orientation during the animation to orient itself   along the rotation path.
-- `isAdditive`: A Boolean value that indicates whether the animation system additively blends   the action’s output with the base value.
+- `isOrientedToPath`: Indicates whether the orbiting target entity updates its orientation during the animation to orient itself along the rotation path.
+- `isAdditive`: A Boolean value that indicates whether the animation system additively blends the action’s output with the base value.
 
 
 ---

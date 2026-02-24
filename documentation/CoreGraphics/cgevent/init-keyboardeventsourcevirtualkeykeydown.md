@@ -33,9 +33,9 @@ event4 = CGEventCreateKeyboardEvent (NULL, (CGKeyCode)56, false);
 
 ## Parameters
 
-- `source`: An event source taken from another event, or  .
+- `source`: An event source taken from another event, or `NULL`.
 - `virtualKey`: The virtual key code for the event.
-- `keyDown`: Pass   to specify that the key position is down. To specify that the key position is up, pass  . This value is used to determine the type of the keyboard event—see  .
+- `keyDown`: Pass `true` to specify that the key position is down. To specify that the key position is up, pass `false`. This value is used to determine the type of the keyboard event—see [`CGEventType`](cgeventtype.md).
 
 ## See Also
 

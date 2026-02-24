@@ -28,7 +28,7 @@ When you call this method, the [`GKNoise`](gknoise.md) class first creates a cur
 ## Parameters
 
 - `peakInputValues`: An array of noise values to use as the sharp points of the mapping curve.
-- `inverted`:   for curves that start rising slowly and become more steep;   for curves that start rising quickly and become more shallow.
+- `inverted`: [`true`](https://developer.apple.com/documentation/Swift/true) for curves that start rising slowly and become more steep; [`false`](https://developer.apple.com/documentation/Swift/false) for curves that start rising quickly and become more shallow.
 
 ## See Also
 

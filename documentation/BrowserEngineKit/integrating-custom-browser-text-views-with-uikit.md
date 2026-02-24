@@ -70,13 +70,21 @@ To permit the gesture to proceed, return `true` from this method; otherwise, ret
 
 If you permit the gesture, then as someone selects text in your text view, the text system sends your text view one of the following methods, depending on the gesture:
 
+- **[`moveSelection(atBoundary:in:completionHandler:)`](betextinput/moveselection(atboundary:in:completionhandler:).md)**: The gesture moves the text selection caret in the given direction.
+- **[`selectPosition(at:completionHandler:)`](betextinput/selectposition(at:completionhandler:).md)**: The gesture locates the text selection caret at the given point.
+- **[`selectText(in:at:completionHandler:)`](betextinput/selecttext(in:at:completionhandler:).md)**: The gesture updates the selection to the text contained at the given granularity and point.
+- **[`updateSelection(extent:boundary:completionHandler:)`](betextinput/updateselection(extent:boundary:completionhandler:).md)**: The gesture adjusts the selection to include the text at the given point.
+- **[`updateCurrentSelection(to:from:in:)`](betextinput/updatecurrentselection(to:from:in:).md)**: The operating system changed the point at which it’s tracking the gesture.
+- **[`setSelection(from:to:gesture:state:)`](betextinput/setselection(from:to:gesture:state:).md)**: The gesture changes the selection to the text between the given points.
+- **[`adjustSelectionBoundary(to:touchPhase:baseIsStart:flags:)`](betextinput/adjustselectionboundary(to:touchphase:baseisstart:flags:).md)**: The gesture adjusts the selection’s start or end boundary to the text at the given point.
+
 The view’s [`selectedText`](betextinput/selectedtext.md) property needs to contain the selection and the [`selectedTextRange`](betextinput/selectedtextrange.md) property needs to contain the range of the selection. If the selection caret is in the document, then `selectedTextRange` has zero length. If someone hasn’t selected any text, both of these properties need to be `nil`. If the selection is at the beginning of the text document, then return `true` as the value for [`isSelectionAtDocumentStart`](betextinput/isselectionatdocumentstart.md); otherwise, return `false`.
 
 As someone continues their text-selection gesture, you need to update the geometry of the selection so that the text system draws the selection UI correctly. Implement [`selectionRects(for:)`](betextinput/selectionrects(for:).md) and [`caretRect(for:)`](betextinput/caretrect(for:).md) to provide the selection geometry to the text system.
 
 Implement [`updateSelection(extent:boundary:completionHandler:)`](betextinput/updateselection(extent:boundary:completionhandler:).md) to get notified when someone modifies the selection.
 
-> **Note**:  Your text view also needs to support marked text.  is very similar to selected text, and represents a range of text proposed for insertion that someone hasn’t yet confirmed they want. Use distinct display styles for marked and selected text.
+> **Note**:  Your text view also needs to support marked text. *Marked text* is very similar to selected text, and represents a range of text proposed for insertion that someone hasn’t yet confirmed they want. Use distinct display styles for marked and selected text.
 
 ##### Edit Text and Support Autocorrect
 
@@ -95,6 +103,11 @@ Some text interactions — including placing the text cursor in a view and updat
 ##### Provide Text Alternatives
 
 When someone uses Apple Pencil to enter handwritten text into a text view, text alternatives provide alternate interpretations of the person’s input that the person can choose to replace the transcribed text. To support text alternatives in your browser text view, implement these methods:
+
+- **[`add(_:)`](betextinput/add(_:).md)**: Add text alternatives to the text view for the currently selected text.
+- **[`insert(_:)`](betextinput/insert(_:)-6x7hd.md)**: Insert the given text or one of its alternatives.
+- **[`removeTextAlternatives()`](betextinput/removetextalternatives().md)**: Remove the text alternatives for the currently selected text.
+- **[`alternativesForSelectedText()`](betextinput/alternativesforselectedtext().md)**: Supply the available text alternatives.
 
 ##### Respond to Someone Dismissing the Keyboard
 

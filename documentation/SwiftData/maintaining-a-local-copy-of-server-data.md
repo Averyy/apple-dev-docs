@@ -19,9 +19,9 @@ This sample app displays a list that contains a day’s worth of earthquakes, sh
 
 The app downloads earthquake data from the network under the following assumptions:
 
--  — The app doesn’t need to synchronize local and remote changes. The server is always the source of truth.
--  — The app needs to provide a way to get an initial list of earthquakes and to periodically refresh that list.
--  — For example, the reported magnitude of an earthquake might change as additional measurements become available. The app needs to distinguish between new earthquakes and updates to previously downloaded ones.
+- **Earthquake data is read-only** — The app doesn’t need to synchronize local and remote changes. The server is always the source of truth.
+- **New earthquakes happen on a regular basis** — The app needs to provide a way to get an initial list of earthquakes and to periodically refresh that list.
+- **Existing earthquake records can change** — For example, the reported magnitude of an earthquake might change as additional measurements become available. The app needs to distinguish between new earthquakes and updates to previously downloaded ones.
 
 The app uses SwiftData to persistently store the data that it downloads. By caching the data locally, the app reduces its need to access the server. SwiftData also makes it easy for the app to manage updates when downloading new data.
 
@@ -45,10 +45,10 @@ class Quake {
 
 The model includes the following fields:
 
--  — By including the [`Attribute(_:originalName:hashModifier:)`](attribute(_:originalname:hashmodifier:).md) macro with the [`unique`](schema/attribute/option/unique.md) property option, the app ensures that SwiftData stores only one earthquake with a particular value for this field.
--  — The size of the earthquake.
--  — The moment in time when the earthquake happened, stored as a [`Date`](https://developer.apple.com/documentation/Foundation/Date) instance.
--  — A custom `Location` instance that contains a location name and map coordinates: ```swift
+- **A unique code** — By including the [`Attribute(_:originalName:hashModifier:)`](attribute(_:originalname:hashmodifier:).md) macro with the [`unique`](schema/attribute/option/unique.md) property option, the app ensures that SwiftData stores only one earthquake with a particular value for this field.
+- **A magnitude** — The size of the earthquake.
+- **A timestamp** — The moment in time when the earthquake happened, stored as a [`Date`](https://developer.apple.com/documentation/Foundation/Date) instance.
+- **A location** — A custom `Location` instance that contains a location name and map coordinates: ```swift
 struct Location: Codable {
     var name: String
     var longitude: Double
@@ -112,7 +112,7 @@ do {
 }
 ```
 
-For other examples of decoding JSON data, see [`Using JSON with Custom Types`](https://developer.apple.com/documentation/foundation/archives_and_serialization/using_json_with_custom_types).
+For other examples of decoding JSON data, see [`Using JSON with custom types`](https://developer.apple.com/documentation/Foundation/using-json-with-custom-types).
 
 ##### Translate Server Data Into Model Data
 

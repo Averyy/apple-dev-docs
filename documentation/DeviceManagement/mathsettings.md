@@ -61,6 +61,11 @@ This configuration prevents the use of scientific and programmer modes in calcul
 - [object MathSettingsSystemBehaviorObject](mathsettingssystembehaviorobject.md)
   The declaration to configure math behavior at the system level.
 
+## Properties
+
+- `Calculator` (MathSettingsCalculatorObject): If present, configures the built-in Calculator app.
+- `SystemBehavior` (MathSettingsSystemBehaviorObject): If present, configures math behavior in the system.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

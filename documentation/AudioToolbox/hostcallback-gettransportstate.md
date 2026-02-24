@@ -26,10 +26,10 @@ If you named your callback function `MyHostCallback_GetTransportState`, you woul
 ## Parameters
 
 - `inHostUserData`: Custom data that you provided when registering your callback with the audio unit.
-- `outIsPlaying`: On output,   if audio is playing, or   otherwise.
-- `outTransportStateChanged`: On output,   if the transport state changed since the last time the callback was invoked, or   otherwise.
+- `outIsPlaying`: On output, `TRUE` if audio is playing, or `FALSE` otherwise.
+- `outTransportStateChanged`: On output, `TRUE` if the transport state changed since the last time the callback was invoked, or `FALSE` otherwise.
 - `outCurrentSampleInTimeLine`: On output, the sample number, indexed from zero from the beginning of the timeline.
-- `outIsCycling`: On output,   if cycling, or   otherwise.
+- `outIsCycling`: On output, `TRUE` if cycling, or `FALSE` otherwise.
 - `outCycleStartBeat`: 
 - `outCycleEndBeat`: 
 

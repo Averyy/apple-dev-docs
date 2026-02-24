@@ -10,6 +10,12 @@ A Boolean value that indicates whether an app can be the default calling app on 
 - iPadOS 18.2+
 - watchOS 11.2+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 Add the Default Calling App entitlement to your app by following these steps:

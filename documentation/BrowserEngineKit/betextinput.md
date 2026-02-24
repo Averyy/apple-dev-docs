@@ -174,9 +174,9 @@ You adopt `BETextInput` in your text field when you need to perform asynchronous
   Indicates autoscrolling is complete.
 ### Instance Properties
 - [var selectionContainerViewAboveText: UIView?](betextinput/selectioncontainerviewabovetext.md)
-  If different than the text input view, one can return a container view here for selection views that draw  text. Includes selection range adjustment handles. If this is unimplemented or nil is returned, views are to be installed onto the text input view.
+  If different than the text input view, one can return a container view here for selection views that draw *above* text. Includes selection range adjustment handles. If this is unimplemented or nil is returned, views are to be installed onto the text input view.
 - [var selectionContainerViewBelowText: UIView?](betextinput/selectioncontainerviewbelowtext.md)
-  If different than the text input view, one can return a container view here for selection views that draw  text. Includes the selection highlight view. If this is unimplemented or nil is returned, views are to be installed onto the text input view.
+  If different than the text input view, one can return a container view here for selection views that draw *below* text. Includes the selection highlight view. If this is unimplemented or nil is returned, views are to be installed onto the text input view.
 ### Instance Methods
 - [func keyboardWillDismiss()](betextinput/keyboardwilldismiss.md)
   Called when the user has requested the keyboard to dismiss itself.

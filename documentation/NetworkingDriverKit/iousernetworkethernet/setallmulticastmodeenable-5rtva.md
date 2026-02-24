@@ -24,7 +24,7 @@ Override this method and use it to enable multicast mode on your device.
 
 ## Parameters
 
-- `enable`: If  , enable multicast support on the device; otherwise, disable it.
+- `enable`: If `YES`, enable multicast support on the device; otherwise, disable it.
 
 ## See Also
 

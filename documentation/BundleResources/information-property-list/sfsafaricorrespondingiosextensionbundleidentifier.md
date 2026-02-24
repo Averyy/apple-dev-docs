@@ -8,6 +8,10 @@ A string bundle ID that identifies the corresponding content blocker extension o
 **Availability**:
 - macOS 13.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 To enable extension syncing for your macOS content blocker extension or Safari web extension, specify the bundle ID of the corresponding iOS content blocker extension or Safari web extension.

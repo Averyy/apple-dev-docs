@@ -23,9 +23,9 @@ init(_ root: any BlendTreeNode, name: String = "", isAdditive: Bool = false, bin
 
 - `root`: The first node in a tree of animations.
 - `name`: A textual name for the animation.
-- `isAdditive`: A Boolean value that indicates whether the animation   builds on the current state of the target entity or resets the state   before running.
-- `bindTarget`: A textual name that identifies the particular property   that animates.
-- `blendLayer`: The order in which the framework composites the animation   into the view.
+- `isAdditive`: A Boolean value that indicates whether the animation builds on the current state of the target entity or resets the state before running.
+- `bindTarget`: A textual name that identifies the particular property that animates.
+- `blendLayer`: The order in which the framework composites the animation into the view.
 - `repeatMode`: An option that determines how the animation repeats.
 - `fillMode`: The behavior when the animated property reaches its end value.
 - `trimStart`: The optional time, in seconds, at which the source animation plays.

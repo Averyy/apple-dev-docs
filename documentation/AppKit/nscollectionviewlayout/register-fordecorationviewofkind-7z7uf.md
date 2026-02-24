@@ -22,8 +22,8 @@ After registering your decoration views, you create decoration views by returnin
 
 ## Parameters
 
-- `nib`: The nib object containing the decoration view’s definition. The nib file must contain exactly one   object at the top level and that view must conform to the   protocol. Specify   to unregister a previously registered class or nib file.
-- `elementKind`: The string your layout uses to identify the decoration view’s type. This parameter must not be   and must not be an empty string.
+- `nib`: The nib object containing the decoration view’s definition. The nib file must contain exactly one [`NSView`](nsview.md) object at the top level and that view must conform to the [`NSCollectionViewElement`](nscollectionviewelement.md) protocol. Specify `nil` to unregister a previously registered class or nib file.
+- `elementKind`: The string your layout uses to identify the decoration view’s type. This parameter must not be `nil` and must not be an empty string.
 
 ## See Also
 

@@ -30,7 +30,7 @@ After initializing your directions object, you must call the [`calculate(complet
 
 ## Parameters
 
-- `request`: The request object containing the start and end points of the route. This parameter must not be  .
+- `request`: The request object containing the start and end points of the route. This parameter must not be `nil`.
 
 ## See Also
 

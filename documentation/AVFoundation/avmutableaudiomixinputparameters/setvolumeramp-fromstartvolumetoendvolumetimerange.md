@@ -22,8 +22,8 @@ func setVolumeRamp(fromStartVolume startVolume: Float, toEndVolume endVolume: Fl
 
 ## Parameters
 
-- `startVolume`: The starting volume. The value must be between   and 1.0.
-- `endVolume`: The end volume. The value must be between   and  .
+- `startVolume`: The starting volume. The value must be between `0.0` and 1.0.
+- `endVolume`: The end volume. The value must be between `0.0` and `1.0`.
 - `timeRange`: The time range over which to apply the ramp.
 
 ## See Also

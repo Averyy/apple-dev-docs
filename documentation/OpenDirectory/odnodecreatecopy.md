@@ -25,9 +25,9 @@ The copy includes remote credentials used for proxy and node authentication.
 
 ## Parameters
 
-- `allocator`: The memory allocator to use. If  , the default allocator is used.
+- `allocator`: The memory allocator to use. If `NULL`, the default allocator is used.
 - `node`: The node to copy.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

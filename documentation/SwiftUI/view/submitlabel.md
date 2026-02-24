@@ -34,7 +34,7 @@ Form {
 
 ## Parameters
 
-- `submitLabel`: One of the cases specified in  .
+- `submitLabel`: One of the cases specified in [`SubmitLabel`](submitlabel.md).
 
 ## See Also
 

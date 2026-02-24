@@ -20,7 +20,7 @@ A request is also canceled automatically by user activation of the app.
 
 ## Parameters
 
-- `request`: The request identifier returned by the   method.
+- `request`: The request identifier returned by the [`requestUserAttention(_:)`](nsapplication/requestuserattention(_:).md) method.
 
 ## See Also
 

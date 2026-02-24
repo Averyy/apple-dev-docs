@@ -30,8 +30,8 @@ Using this initializer is equivalent to using the [`init(url:vertexDescriptor:bu
 ## Parameters
 
 - `URL`: A URL specifying the location an asset file.
-- `vertexDescriptor`: An object describing the vertex data format to be loaded from the asset, or   to use the asset’s vertex buffers as found in the file.
-- `bufferAllocator`: The allocator object to use for loading mesh data from the asset, or   to use a default allocator.
+- `vertexDescriptor`: An object describing the vertex data format to be loaded from the asset, or `nil` to use the asset’s vertex buffers as found in the file.
+- `bufferAllocator`: The allocator object to use for loading mesh data from the asset, or `nil` to use a default allocator.
 
 ## See Also
 

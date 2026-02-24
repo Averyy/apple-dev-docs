@@ -10,6 +10,12 @@ The user interface style for the app.
 - iPadOS 13.0+
 - tvOS 10.0+
 
+
+
+**Type**: string
+
+**Default**: `Automatic`
+
 ## See Also
 
 - [UIDesignRequiresCompatibility](information-property-list/uidesignrequirescompatibility.md)

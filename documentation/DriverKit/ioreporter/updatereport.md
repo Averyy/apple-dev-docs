@@ -32,7 +32,7 @@ Locking: same-instance concurrency SAFE, WILL NOT BLOCK
 ## Parameters
 
 - `channelList`: Channels to update
-- `action`: Copy/trace data (see  )
+- `action`: Copy/trace data (see `IOReportTypes.h`)
 - `elementCount`: Element count.
 - `buffer`: Buffer.
 - `capacity`: Capacity.

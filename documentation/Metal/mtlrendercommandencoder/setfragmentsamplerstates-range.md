@@ -27,8 +27,8 @@ By default, the sampler state at each index is `nil`.
 
 ## Parameters
 
-- `samplers`: An array of   instances the command assigns to entries in the fragment shader argument table for sampler states.
-- `range`: A span of integers that represent the entries in the fragment shader argument table for sampler states. Each entry stores a record of the corresponding element in  .
+- `samplers`: An array of [`MTLSamplerState`](mtlsamplerstate.md) instances the command assigns to entries in the fragment shader argument table for sampler states.
+- `range`: A span of integers that represent the entries in the fragment shader argument table for sampler states. Each entry stores a record of the corresponding element in `samplers`.
 
 ## See Also
 

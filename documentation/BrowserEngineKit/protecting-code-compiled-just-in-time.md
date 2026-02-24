@@ -37,7 +37,7 @@ For more information on pointer authentication, see [`Improving control flow int
 
 Your calls to `be_memory_inline_jit_restrict_rwx_to_rw_with_witness()` and its counterpart must be inlined into the critical section for your extension’s JIT compilation code, so they don’t provide an attacker with a general way to run arbitrary code while your JIT region is writable. An attacker might use a general PAC-signing mechanism to write and run instructions anywhere in your process’s memory.
 
-> ❗ **Important**:  The Swift attribute `@inlinable`, described in [`Attributes`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/), indicates that the compiler  inline a function, but doesn’t guarantee that it does. `@inlinable` isn’t suitable for inlining calls to the memory protection toggle functions for JIT compilation.
+> ❗ **Important**:  The Swift attribute `@inlinable`, described in [`Attributes`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/), indicates that the compiler *can choose to* inline a function, but doesn’t guarantee that it does. `@inlinable` isn’t suitable for inlining calls to the memory protection toggle functions for JIT compilation.
 
 #### Avoid Spilling Variables to the Stack
 

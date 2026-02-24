@@ -14,6 +14,12 @@ The command to unlock a user account that the system locked because of too many 
 object UnlockUserAccountCommand.Command
 ```
 
+## Properties
+
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+- `UserName` (string) *(required)*: The user name of the local account, which can be any local account on the system, not just a managed user account.
+
 
 ---
 

@@ -28,7 +28,7 @@ When a [`Text`](text.md) provides different size options for its content, the si
 
 #### Difference to Viewthatfits
 
-The [`sizeDependent`](textvariantpreference/sizedependent.md) text variant preference differs from [`ViewThatFits`](viewthatfits.md) both in usage and in behavior. [`ViewThatFits`](viewthatfits.md) chooses the first child where the  size fits the available space. For [`Text`](text.md) this means that it will only choose texts that can fit their contents into the available space . With this text variant preference, on the other hand, the largest variant is chosen that can fit the available space while respecting all the regular layout rules, such as [`lineLimit`](environmentvalues/linelimit.md).
+The [`sizeDependent`](textvariantpreference/sizedependent.md) text variant preference differs from [`ViewThatFits`](viewthatfits.md) both in usage and in behavior. [`ViewThatFits`](viewthatfits.md) chooses the first child where the **ideal** size fits the available space. For [`Text`](text.md) this means that it will only choose texts that can fit their contents into the available space **without a line break**. With this text variant preference, on the other hand, the largest variant is chosen that can fit the available space while respecting all the regular layout rules, such as [`lineLimit`](environmentvalues/linelimit.md).
 
 To use [`ViewThatFits`](viewthatfits.md), multiple different views have to be provided as the different size options. With this text variant preference, a single [`Text`](text.md) provides the different size variants intrinsically. The way it generates these size variants and how many size variants are available depends on the text initializer used.
 

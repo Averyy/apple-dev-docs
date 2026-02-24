@@ -26,7 +26,7 @@ func JSValueIsSymbol(_ ctx: JSContextRef!, _ value: JSValueRef!) -> Bool
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `value`: The   to test.
+- `value`: The [`JSValueRef`](jsvalueref.md) to test.
 
 ## See Also
 

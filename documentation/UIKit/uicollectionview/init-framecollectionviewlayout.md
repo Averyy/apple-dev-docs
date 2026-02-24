@@ -31,7 +31,7 @@ This method is the designated initializer.
 ## Parameters
 
 - `frame`: The frame rectangle for the collection view, measured in points. The origin of the frame is relative to the superview in which you plan to add it. This frame is passed to the superclass during initialization.
-- `layout`: The layout object to use for organizing items. The collection view stores a strong reference to the specified object. Must not be  .
+- `layout`: The layout object to use for organizing items. The collection view stores a strong reference to the specified object. Must not be `nil`.
 
 ## See Also
 

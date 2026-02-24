@@ -17,7 +17,7 @@ func automaticallyLayoutControls(for labels: [TCControlLabel])
 
 ## Parameters
 
-- `labels`: An array of   objects to be laid out.
+- `labels`: An array of `TCControlLabel` objects to be laid out.
 
 ## See Also
 

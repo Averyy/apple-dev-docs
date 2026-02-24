@@ -21,6 +21,30 @@ struct AutocorrectMode
 
 Use one or more of the autocorrect modes to set the [`autocorrectMode`](aeassessmentconfiguration/autocorrectmode-swift.property.md) property of an [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) instance. For example, you can enable both spelling and punctuation corrections by combining [`spelling`](aeassessmentconfiguration/autocorrectmode-swift.struct/spelling.md) and [`punctuation`](aeassessmentconfiguration/autocorrectmode-swift.struct/punctuation.md):
 
+**Swift**:
+
+```swift
+let config = AEAssessmentConfiguration()
+
+#if os(iOS) // Available only on iOS and iPadOS.
+config.autocorrectMode = [.punctuation, .spelling]
+#endif
+
+let session = AEAssessmentSession(configuration: config)
+```
+
+**Objective-C**:
+
+```objc
+AEAssessmentConfiguration *config = [AEAssessmentConfiguration new];
+
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR // Available only on iOS and iPadOS.
+config.autocorrectMode = AEAutocorrectModePunctuation | AEAutocorrectModeSpelling;
+#endif
+
+AEAssessmentSession *session = [[AEAssessmentSession alloc] initWithConfiguration:config];
+```
+
 ## Topics
 
 ### Creating a mode

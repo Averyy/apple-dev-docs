@@ -24,7 +24,7 @@ Applies an impulse to the physics body at the specified position.
 
 - `impulse`: An impulse in newton seconds.
 - `position`: The position at which to apply the impulse.
-- `referenceEntity`: The reference entity that defines the coordinate   space in which   and   are defined.
+- `referenceEntity`: The reference entity that defines the coordinate space in which `position` and `impulse` are defined.
 
 ## See Also
 

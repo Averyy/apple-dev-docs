@@ -21,7 +21,7 @@ A view that applies the given behavior to the hand pointer.
 
 ## Parameters
 
-- `behavior`: The behavior to apply to the hand pointer.   If  , the hand pointer behavior will be inherited from the view’s   ancestors.
+- `behavior`: The behavior to apply to the hand pointer. If `nil`, the hand pointer behavior will be inherited from the view’s ancestors.
 
 ## See Also
 

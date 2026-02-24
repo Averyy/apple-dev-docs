@@ -20,7 +20,8 @@ func keypointsWithAnnotations(targetFrameRate: Double = MLHandActionClassifier._
 
 ## Parameters
 
-- `targetFrameRate`: This parameter has no effect if the data source is either:
+- `targetFrameRate`: The number of frames per second the method uses to extract body landmarks from the data source. This parameter has no effect if the data source is either: - [`MLHandActionClassifier.DataSource.labeledKeypointsDataFrame(_:sessionIdColumn:labelColumn:featureColumn:)`](mlhandactionclassifier/datasource/labeledkeypointsdataframe(_:sessionidcolumn:labelcolumn:featurecolumn:).md)
+- [`MLHandActionClassifier.DataSource.labeledKeypointsData(table:sessionIdColumn:labelColumn:featureColumn:)`](mlhandactionclassifier/datasource/labeledkeypointsdata(table:sessionidcolumn:labelcolumn:featurecolumn:).md)
 
 ## See Also
 

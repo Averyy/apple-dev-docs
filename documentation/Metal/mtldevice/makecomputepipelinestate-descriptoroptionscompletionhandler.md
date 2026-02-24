@@ -26,8 +26,8 @@ Use the compute pipeline state to configure a compute pass by calling the [`setC
 
 ## Parameters
 
-- `descriptor`: An   instance.
-- `options`: An   instance that represents the reflection information you want the method to generate.
+- `descriptor`: An [`MTLComputePipelineDescriptor`](mtlcomputepipelinedescriptor.md) instance.
+- `options`: An [`MTLPipelineOption`](mtlpipelineoption.md) instance that represents the reflection information you want the method to generate.
 - `completionHandler`: A Swift closure or an Objective-C block the method calls when it finishes creating the compute pipeline state.
 
 ## See Also

@@ -36,7 +36,7 @@ Xcode 10.2.1 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12
 
 ###### Known Issues
 
-- Simulators for iOS 9.3 and earlier might fail to launch Swift apps with the message: “dyld: Library not loaded: /usr/lib/libauto.dylib”. (49326587)  Run the following command in Terminal for the relevant version of iOS: ```shell
+- Simulators for iOS 9.3 and earlier might fail to launch Swift apps with the message: “dyld: Library not loaded: /usr/lib/libauto.dylib”. (49326587) **Workaround:** Run the following command in Terminal for the relevant version of iOS: ```shell
 sudo mkdir '/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 9.3.simruntime/Contents/Resources/RuntimeRoot/usr/lib/swift'
 ```
 
@@ -44,8 +44,8 @@ sudo mkdir '/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 9.3.simruntim
 
 ###### Known Issues
 
-- In some cases, compilation may fail without emitting a specific error. (49303574)  Disable batch mode by adding the `SWIFT_ENABLE_BATCH_MODE` custom build setting and setting it to `NO`. If you’re invoking `swift` directly, include `-disable-batch-mode` on the command line.
-- If you set the Reflection Metadata Level build setting to `None`, you might get a linker error about a missing nominal type descriptor when building a Swift project. (49710077)  Change the setting to `All`.
+- In some cases, compilation may fail without emitting a specific error. (49303574) **Workaround:** Disable batch mode by adding the `SWIFT_ENABLE_BATCH_MODE` custom build setting and setting it to `NO`. If you’re invoking `swift` directly, include `-disable-batch-mode` on the command line.
+- If you set the Reflection Metadata Level build setting to `None`, you might get a linker error about a missing nominal type descriptor when building a Swift project. (49710077) **Workaround:** Change the setting to `All`.
 - Using an `@objc` designated initializer as a protocol witness always creates an instance of the base class, even if the protocol requirement is called on the metatype of a subclass. (49560721) For example, the following code should create an instance of `DerivedClass`, but actually creates an instance of `BaseClass`: ```swift
 protocol Initable {
     init()
@@ -61,7 +61,7 @@ class DerivedClass: BaseClass {}
 
 let type: Initable.Type = DerivedClass.self
 print(type.init())
-```  Either declare the initializer as `@nonobjc`, or replace the protocol’s initializer requirement with a static method, as follows: ```swift
+``` **Workaround:** Either declare the initializer as `@nonobjc`, or replace the protocol’s initializer requirement with a static method, as follows: ```swift
 protocol Initable {
     static func construct() -> Self
 }

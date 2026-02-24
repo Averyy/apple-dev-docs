@@ -29,7 +29,7 @@ At a minimum, set the value for the [`normal`](uicontrol/state-swift.struct/norm
 ## Parameters
 
 - `title`: The title to use for the specified state.
-- `state`: The state that uses the specified title.   describes the possible values.
+- `state`: The state that uses the specified title. [`UIControl.State`](uicontrol/state-swift.struct.md) describes the possible values.
 
 ## See Also
 

@@ -26,9 +26,9 @@ func JSObjectDeleteProperty(_ ctx: JSContextRef!, _ object: JSObjectRef!, _ prop
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The   with the property you want to delete.
-- `propertyName`: A   that contains the property’s name.
-- `exception`: A pointer to a   to store an exception in, if any. Pass   to discard any exception.
+- `object`: The [`JSObjectRef`](jsobjectref.md) with the property you want to delete.
+- `propertyName`: A [`JSStringRef`](jsstringref.md) that contains the property’s name.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 

@@ -30,9 +30,9 @@ An array of hit-test results.
 ## Parameters
 
 - `point`: A point in the provided coordinate space.
-- `space`: The 2D coordinate space in which to interpret the  .
+- `space`: The 2D coordinate space in which to interpret the `point`.
 - `query`: The query type.
-- `mask`: The collision mask that you can use to prevent hits with certain objects.   The default value is  , which means the ray can hit all objects.   See   for details.
+- `mask`: The collision mask that you can use to prevent hits with certain objects. The default value is [`all`](collisiongroup/all.md), which means the ray can hit all objects. See [`CollisionFilter`](collisionfilter.md) for details.
 
 
 ---

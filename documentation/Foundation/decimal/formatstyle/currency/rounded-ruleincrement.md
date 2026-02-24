@@ -27,7 +27,7 @@ A decimal currency format style modified to use the specified rounding rule and 
 ## Parameters
 
 - `rule`: The rounding rule to apply to the format style.
-- `increment`: A multiple by which the formatter rounds the fractional part. The formatter produces a value that is an even multiple of this increment. If this parameter is   (the default), the formatter doesn’t apply an increment.
+- `increment`: A multiple by which the formatter rounds the fractional part. The formatter produces a value that is an even multiple of this increment. If this parameter is `nil` (the default), the formatter doesn’t apply an increment.
 
 ## See Also
 

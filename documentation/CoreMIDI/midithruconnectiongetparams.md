@@ -29,7 +29,7 @@ The returned object contains a [`MIDIThruConnectionParams`](midithruconnectionpa
 ## Parameters
 
 - `connection`: The connection to dispose.
-- `outConnectionParams`: On successful return, the connection’s parameters in a  .
+- `outConnectionParams`: On successful return, the connection’s parameters in a [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData).
 
 ## See Also
 

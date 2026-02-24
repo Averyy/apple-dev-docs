@@ -26,7 +26,7 @@ This initializer includes all attribute scopes defined by the SDK, such as [`Att
 
 ## Parameters
 
-- `nsStr`: The   to convert.
+- `nsStr`: The [`NSAttributedString`](nsattributedstring.md) to convert.
 
 ## See Also
 

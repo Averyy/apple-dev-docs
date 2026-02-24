@@ -20,8 +20,8 @@ init(isFolder: Bool, title: String, identifier: String, url: URL?, parentIdentif
 - `isFolder`: A Boolean value that indicates whether a bookmark represents a folder.
 - `title`: The title of the bookmark.
 - `identifier`: A unique identifier for the bookmark.
-- `url`: The URL that the bookmark points to, or   if the bookmark is a folder.
-- `parentIdentifier`: The identifier of the parent folder, or   if the bookmark is a top-level bookmark.
+- `url`: The URL that the bookmark points to, or `nil` if the bookmark is a folder.
+- `parentIdentifier`: The identifier of the parent folder, or `nil` if the bookmark is a top-level bookmark.
 
 
 ---

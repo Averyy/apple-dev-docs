@@ -25,7 +25,7 @@ The view object for the specified key or `nil` if the view could not be found.
 
 ## Parameters
 
-- `key`: The key identifying the view you want. For a list of possible keys, see  .
+- `key`: The key identifying the view you want. For a list of possible keys, see [`UITransitionContextViewKey`](uitransitioncontextviewkey.md).
 
 ## See Also
 

@@ -45,12 +45,12 @@ The GPU driver evaluates the fences that apply to the pass and the commands that
 
 > ⚠️ **Warning**:  Don’t update a fence and then wait for the same fence within a pass because it can create a GPU deadlock.
 
-To synchronize different stages within a single pass, create an  because a fence can only synchronize memory operations between different passes. For more information, see [`Synchronizing stages within a pass`](synchronizing-stages-within-a-pass.md).
+To synchronize different stages within a single pass, create an *intrapass barrier* because a fence can only synchronize memory operations between different passes. For more information, see [`Synchronizing stages within a pass`](synchronizing-stages-within-a-pass.md).
 
 ## Parameters
 
-- `fence`: A fence the pass updates after the stages in   complete.
-- `afterEncoderStages`: The encoder stages that need to complete before the pass updates  .
+- `fence`: A fence the pass updates after the stages in `afterEncoderStages` complete.
+- `afterEncoderStages`: The encoder stages that need to complete before the pass updates `fence`.
 
 
 ---

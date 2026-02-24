@@ -30,8 +30,8 @@ If the gesture recognizer is interpreting a continuous gesture, it should set it
 
 ## Parameters
 
-- `presses`: A set of   instances in the event represented by   that represent the touches in the   phase.
-- `event`: A   object that includes a reference to  .
+- `presses`: A set of [`UIPress`](uipress.md) instances in the event represented by `event` that represent the touches in the [`UIPress.Phase.cancelled`](uipress/phase-swift.enum/cancelled.md) phase.
+- `event`: A [`UIEvent`](uievent.md) object that includes a reference to `press`.
 
 ## See Also
 

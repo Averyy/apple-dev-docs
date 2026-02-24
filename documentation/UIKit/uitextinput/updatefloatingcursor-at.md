@@ -24,7 +24,7 @@ UIKit calls this method when the touch location changes for the two-finger pan g
 
 ## Parameters
 
-- `point`: The new touch point in the underlying view. This point is in the coordinate space of the view in the   property.
+- `point`: The new touch point in the underlying view. This point is in the coordinate space of the view in the [`textInputView`](uitextinput/textinputview.md) property.
 
 ## See Also
 

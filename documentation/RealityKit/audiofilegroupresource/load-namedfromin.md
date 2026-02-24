@@ -24,13 +24,13 @@ Loads an audio resource from a Reality Composer Pro project.
 
 This method loads a preconfigured [`AudioFileGroupResource`](audiofilegroupresource.md) from a scene in a Reality Composer Pro project.
 
-> ❗ **Important**: The name provided  be unique.
+> ❗ **Important**: The name provided **must** be unique.
 
 ## Parameters
 
 - `name`: The USD Prim path to the resource in the Reality Composer Pro project to load.
 - `scene`: The name of the Reality Composer Pro scene to load from.
-- `bundle`: The bundle that contains the project. Leave   to load from the app’s bundle.
+- `bundle`: The bundle that contains the project. Leave `nil` to load from the app’s bundle.
 
 ## See Also
 

@@ -33,7 +33,7 @@ The [`copy(with:)`](nscopying/copy(with:).md) method performs a shallow copy. If
 ## Parameters
 
 - `array`: An array containing the objects with which to initialize the new array.
-- `flag`: If  , then in a managed memory environment each object in   simply receives a   message when it is added to the returned array.
+- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), each object in `array` receives a [`copyWithZone:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/copyWithZone:) message to create a copy of the object—objects must conform to the `NSCopying` protocol. In a managed memory environment, this is instead of the `retain` message the object would otherwise receive. The object copy is then added to the returned array. If [`false`](https://developer.apple.com/documentation/Swift/false), then in a managed memory environment each object in `array` simply receives a `retain` message when it is added to the returned array.
 
 ## See Also
 

@@ -27,9 +27,9 @@ Don’t call this method directly; it’s used by the compiler when interpreting
 ## Parameters
 
 - `timerInterval`: The interval between where to run the timer.
-- `pauseTime`: If present, the date at which to pause the timer.   The default is   which indicates to never pause.
-- `countsDown`: Whether to count up or down. The default is  .
-- `showsHours`: Whether to include an hours component if there are   more than 60 minutes left on the timer. The default is  .
+- `pauseTime`: If present, the date at which to pause the timer. The default is `nil` which indicates to never pause.
+- `countsDown`: Whether to count up or down. The default is `true`.
+- `showsHours`: Whether to include an hours component if there are more than 60 minutes left on the timer. The default is `true`.
 
 ## See Also
 

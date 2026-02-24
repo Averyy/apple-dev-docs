@@ -25,8 +25,8 @@ A newly initialized [`UIBarButtonItem`](uibarbuttonitem.md).
 
 ## Parameters
 
-- `systemItem`: The system item to use as the first item on the bar. For possible values, see  .
-- `primaryAction`: A   to associate with the item. The system item doesn’t use the action to configure its title and image.
+- `systemItem`: The system item to use as the first item on the bar. For possible values, see [`UIBarButtonItem.SystemItem`](uibarbuttonitem/systemitem.md).
+- `primaryAction`: A [`UIAction`](uiaction.md) to associate with the item. The system item doesn’t use the action to configure its title and image.
 - `menu`: The menu to present. The context menu displays in response to a person tapping the item.
 
 ## See Also

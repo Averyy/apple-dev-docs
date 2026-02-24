@@ -25,7 +25,7 @@ A pointer to the object’s private data, if the object has private data; otherw
 
 ## Parameters
 
-- `object`: A   with the private data you want to get.
+- `object`: A [`JSObjectRef`](jsobjectref.md) with the private data you want to get.
 
 ## See Also
 

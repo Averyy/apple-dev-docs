@@ -22,9 +22,9 @@ init(x: Float, y: Float, z: Float)
 
 ## Parameters
 
-- `x`: The   Cartesian coordinate.
-- `y`: The   Cartesian coordinate.
-- `z`: The   Cartesian coordinate.
+- `x`: The `x` Cartesian coordinate.
+- `y`: The `y` Cartesian coordinate.
+- `z`: The `z` Cartesian coordinate.
 
 
 ---

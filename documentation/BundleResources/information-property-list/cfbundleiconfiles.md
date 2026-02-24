@@ -12,6 +12,10 @@ The names of the bundle’s icon image files.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 > **Note**:  For Action extensions, you can specify the [`CFBundleSymbolName`](information-property-list/cfbundleicons/cfbundleprimaryicon/cfbundlesymbolname.md) key instead of `CFBundleIconFiles` to use a symbol from SF Symbols.

@@ -36,9 +36,9 @@ To add your callback function, use the [`SecKeychainAddCallback(_:_:_:)`](seckey
 
 ## Parameters
 
-- `keychainEvent`: The keychain event that occurred. The type of event that can trigger your callback depends on the bit mask you passed in the   parameter of the function  . See   for a list of possible values.
-- `info`: A pointer to a structure of type  . This structure provides your callback with information about the keychain event.
-- `context`: A pointer to application-defined storage that your application previously passed to the function  . You can use this value to provide information that the callback function needs in order to properly handle the event, such as an object on which the callback function should call a method.
+- `keychainEvent`: The keychain event that occurred. The type of event that can trigger your callback depends on the bit mask you passed in the `eventMask` parameter of the function [`SecKeychainAddCallback(_:_:_:)`](seckeychainaddcallback(_:_:_:).md). See [`SecKeychainEvent`](seckeychainevent.md) for a list of possible values.
+- `info`: A pointer to a structure of type [`SecKeychainCallbackInfo`](seckeychaincallbackinfo.md). This structure provides your callback with information about the keychain event.
+- `context`: A pointer to application-defined storage that your application previously passed to the function [`SecKeychainAddCallback(_:_:_:)`](seckeychainaddcallback(_:_:_:).md). You can use this value to provide information that the callback function needs in order to properly handle the event, such as an object on which the callback function should call a method.
 
 
 ---

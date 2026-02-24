@@ -26,7 +26,7 @@ While `CMRemoveAttachment` removes a specific attachment identified by a key, `C
 
 ## Parameters
 
-- `target`: The   whose attachment you want to remove.
+- `target`: The `CMAttachmentBearer` whose attachment you want to remove.
 
 ## See Also
 

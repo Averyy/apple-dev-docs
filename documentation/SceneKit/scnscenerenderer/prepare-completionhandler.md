@@ -31,8 +31,8 @@ You can observe the progress of this operation with the [`Progress`](https://dev
 
 ## Parameters
 
-- `objects`: An array of containing one or more  ,  ,  , or   instances.
-- `completionHandler`: The block takes the following parameter:
+- `objects`: An array of containing one or more [`SCNScene`](scnscene.md), [`SCNNode`](scnnode.md), [`SCNGeometry`](scngeometry.md), or [`SCNMaterial`](scnmaterial.md) instances.
+- `completionHandler`: A block that SceneKit calls when object preparation fails or completes. The block takes the following parameter: - **success**: [`true`](https://developer.apple.com/documentation/Swift/true) if all content was successfully prepared for rendering; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

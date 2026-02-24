@@ -21,9 +21,9 @@ init(channel: UInt32, key keyNum: UInt32, velocity: UInt32, duration: AVMusicTim
 
 ## Parameters
 
-- `channel`: The MIDI channel, between   and  .
-- `keyNum`: The MIDI key number, between   and  .
-- `velocity`: The MIDI velocity, between   and  .
+- `channel`: The MIDI channel, between `0` and `15`.
+- `keyNum`: The MIDI key number, between `0` and `127`.
+- `velocity`: The MIDI velocity, between `0` and `127`.
 - `duration`: The duration for this note, in beats.
 
 

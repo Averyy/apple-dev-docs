@@ -21,7 +21,7 @@ If the constrained axis is `nil`, the gesture measures unconstrained 3D rotation
 ## Parameters
 
 - `constrainedToAxis`: The 3D axis about which rotation is measured.
-- `minimumAngleDelta`: The minimum delta required before the   gesture starts. The default value is a one-degree angle.
+- `minimumAngleDelta`: The minimum delta required before the gesture starts. The default value is a one-degree angle.
 
 ## See Also
 

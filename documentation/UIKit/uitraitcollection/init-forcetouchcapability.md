@@ -24,7 +24,7 @@ A new trait collection containing only a specified force touch capability trait.
 
 ## Parameters
 
-- `capability`: The force touch capability for the new trait collection. Use one of the constants from the   enumeration.
+- `capability`: The force touch capability for the new trait collection. Use one of the constants from the [`UIForceTouchCapability`](uiforcetouchcapability.md) enumeration.
 
 ## See Also
 

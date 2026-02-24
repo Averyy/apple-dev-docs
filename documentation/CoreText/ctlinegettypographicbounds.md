@@ -27,9 +27,9 @@ The typographic width of the line. If the line is invalid, this function returns
 ## Parameters
 
 - `line`: The line whose typographic bounds are calculated.
-- `ascent`: On output, the ascent of the line. This parameter can be set to   if not needed.
-- `descent`: On output, the descent of the line. This parameter can be set to   if not needed.
-- `leading`: On output, the leading of the line. This parameter can be set to   if not needed.
+- `ascent`: On output, the ascent of the line. This parameter can be set to `NULL` if not needed.
+- `descent`: On output, the descent of the line. This parameter can be set to `NULL` if not needed.
+- `leading`: On output, the leading of the line. This parameter can be set to `NULL` if not needed.
 
 ## See Also
 

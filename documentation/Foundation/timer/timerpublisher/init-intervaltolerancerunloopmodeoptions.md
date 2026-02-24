@@ -23,10 +23,10 @@ init(interval: TimeInterval, tolerance: TimeInterval? = nil, runLoop: RunLoop, m
 ## Parameters
 
 - `interval`: The interval on which to publish events.
-- `tolerance`: The allowed timing variance when emitting events. Defaults to  , which allows any variance.
+- `tolerance`: The allowed timing variance when emitting events. Defaults to `nil`, which allows any variance.
 - `runLoop`: The run loop on which the timer runs.
 - `mode`: The run loop mode in which to run the timer.
-- `options`: Scheduler options passed to the timer. Defaults to  .
+- `options`: Scheduler options passed to the timer. Defaults to `nil`.
 
 
 ---

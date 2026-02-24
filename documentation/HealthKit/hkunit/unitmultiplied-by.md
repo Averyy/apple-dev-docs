@@ -27,6 +27,22 @@ A new, complex unit.
 
 You can create a complex unit by multiplying two units together. For example, you could create a foot-pound unit by multiplying a foot unit by a pound unit as shown below.
 
+**Swift**:
+
+```swift
+let foot = HKUnit.footUnit()
+let pound = HKUnit.poundUnit()
+let footPound = foot.unitMultipliedByUnit(pound)
+```
+
+**Objective-C**:
+
+```objc
+HKUnit *foot = [HKUnit footUnit];
+HKUnit *pound = [HKUnit poundUnit];
+HKUnit *footPound = [foot unitMultipliedByUnit:pound];
+```
+
 ## Parameters
 
 - `unit`: The unit to be multiplied.

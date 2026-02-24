@@ -32,8 +32,8 @@ The root hash is the root node of a data structure called a Merkle tree. A Merkl
 
 ## Parameters
 
-- `collaborationHighlight`: The collaboration highlight that corresponds to the  .
-- `data`: The   that the system signs.
+- `collaborationHighlight`: The collaboration highlight that corresponds to the `data`.
+- `data`: The `NSData` that the system signs.
 - `completionHandler`: Returns the signed data along with proof of inclusion for the Merkle tree if signing succeeds, otherwise an error. The system invokes the completion handler on the main thread.
 
 ## See Also

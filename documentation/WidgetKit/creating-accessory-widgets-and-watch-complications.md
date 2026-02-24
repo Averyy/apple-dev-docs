@@ -6,7 +6,7 @@ Support accessory widgets that appear on the Lock Screen and as complications on
 
 #### Overview
 
-WidgetKit allows you to extend the reach of your app to the Lock Screen on iPhone and iPad, and to the Smart Stack on Apple Watch as . Accessory widgets also appear as watch complications on Apple Watch. They display your app’s most relevant, glanceable content in highly visible contexts and let people quickly access your app for more details.
+WidgetKit allows you to extend the reach of your app to the Lock Screen on iPhone and iPad, and to the Smart Stack on Apple Watch as *accessory widgets*. Accessory widgets also appear as watch complications on Apple Watch. They display your app’s most relevant, glanceable content in highly visible contexts and let people quickly access your app for more details.
 
 Widgets and watch complications use WidgetKit and SwiftUI views, enabling you to:
 

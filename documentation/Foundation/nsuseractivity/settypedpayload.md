@@ -30,7 +30,7 @@ If the type can’t be encoded into the [`userInfo`](nsuseractivity/userinfo.md)
 
 ## Parameters
 
-- `payload`: The instance to convert to  . The type of the   instance must conform to  .
+- `payload`: The instance to convert to [`userInfo`](nsuseractivity/userinfo.md). The type of the `payload` instance must conform to [`Codable`](https://developer.apple.com/documentation/Swift/Codable).
 
 ## See Also
 

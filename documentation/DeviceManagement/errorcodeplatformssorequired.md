@@ -30,6 +30,13 @@ The MDM server returns this response when a device enrolls in MDM during Setup A
 - [object ErrorCodePlatformSSORequired.Details](errorcodeplatformssorequired/details-data.dictionary.md)
   A dictionary that contains additional data about the error code.
 
+## Properties
+
+- `code` (string) *(required)*: Indicates that the device needs to do Platform SSO before enrollment and setup can proceed.
+- `description` (string): A description of the error. Only use this for logging purposes and don’t display it to the user.
+- `details` (ErrorCodePlatformSSORequired.Details) *(required)*: A dictionary that contains additional data about the error code.
+- `message` (string): A description of the error to display to the user.
+
 ## See Also
 
 - [object ErrorCodePairingTokenMissing](errorcodepairingtokenmissing.md)

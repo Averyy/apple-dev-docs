@@ -22,7 +22,7 @@ init<S>(_ value: S.ParseInput, strategy: S) throws where S : ParseStrategy, S.Pa
 
 ## Parameters
 
-- `value`: An instance of  ’s input type.
+- `value`: An instance of `strategy`’s input type.
 - `strategy`: A parse strategy that describes how the parser converts the string to a decimal value.
 
 ## See Also

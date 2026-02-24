@@ -3,7 +3,7 @@
 **Framework**: Media Player  
 **Kind**: class
 
-A  carries time-based information within HTTP streamed media.
+A *timed metadata object that* carries time-based information within HTTP streamed media.
 
 **Availability**:
 - iOS 4.0+

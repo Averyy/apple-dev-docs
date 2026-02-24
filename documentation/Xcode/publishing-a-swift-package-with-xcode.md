@@ -29,7 +29,7 @@ If you already have a local package that’s not using version control, put it u
 
 ##### Tag Your Latest Commit
 
-It’s a best practice to create a version tag for a Swift package; however, there are other ways to add a package to a project, as described in [`Adding package dependencies to your app`](adding-package-dependencies-to-your-app.md). To create a version tag, tag the last commit with the package version. A  is a three period-separated integer. An example is `1.0.0.` The package version must conform to  to ensure that your package behaves in a predictable manner when developers update their package dependency to a newer version.
+It’s a best practice to create a version tag for a Swift package; however, there are other ways to add a package to a project, as described in [`Adding package dependencies to your app`](adding-package-dependencies-to-your-app.md). To create a version tag, tag the last commit with the package version. A *package version* is a three period-separated integer. An example is `1.0.0.` The package version must conform to *semantic versioning* to ensure that your package behaves in a predictable manner when developers update their package dependency to a newer version.
 
 To learn more about the semantic versioning standard, visit [`Semantic Versioning 2.0.0`](https://developer.apple.comhttps://semver.org).
 
@@ -39,7 +39,7 @@ In the Source Code navigator, click the disclosure triangle next to Branches to 
 
 ##### Make Your Swift Package Publicly Available
 
-Ensure the Source Control navigator is visible and select your local repository. Right-click it, and choose Create  Remote. In case you’ve already created an empty remote repository for your Swift package, choose Add Existing Remote.
+Ensure the Source Control navigator is visible and select your local repository. Right-click it, and choose Create *[packageName]* Remote. In case you’ve already created an empty remote repository for your Swift package, choose Add Existing Remote.
 
 > ❗ **Important**: You need to add a hosted Git account in Xcode’s Settings to be able to create or connect a Git remote.
 

@@ -21,8 +21,8 @@ final func prepareToAnalyze(in audioFormat: AVAudioFormat?, withProgressReadyHan
 
 ## Parameters
 
-- `audioFormat`: An audio format describing the expected input. The analyzer will load assets appropriate for the given format. If   or if the input is not in this format, the analyzer will reconfigure itself when it processes the actual audio.
-- `progressReadyHandler`: A closure that this method calls when progress reporting becomes available. The closure takes the following parameter:
+- `audioFormat`: An audio format describing the expected input. The analyzer will load assets appropriate for the given format. If `nil` or if the input is not in this format, the analyzer will reconfigure itself when it processes the actual audio.
+- `progressReadyHandler`: A closure that this method calls when progress reporting becomes available. The closure takes the following parameter: - **progress**: A `Progress` object that reports the progress of the preparation work.
 
 ## See Also
 

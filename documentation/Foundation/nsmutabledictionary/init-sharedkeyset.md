@@ -30,7 +30,7 @@ Keys that are not in the key set can still be set in the dictionary, but that us
 
 ## Parameters
 
-- `keyset`: The  , created by the   class method  .
+- `keyset`: The `keyset`, created by the [`NSDictionary`](nsdictionary.md) class method [`sharedKeySet(forKeys:)`](nsdictionary/sharedkeyset(forkeys:).md). > ❗ **Important**:  If `keyset` is `nil`, an exception is raised. If `keyset` is not an object returned by [`sharedKeySet(forKeys:)`](nsdictionary/sharedkeyset(forkeys:).md), an exception is raised.
 
 ## See Also
 

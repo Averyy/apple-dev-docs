@@ -13,6 +13,38 @@ Update details for existing users.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+{
+    "users": [
+        {
+            "clientUserId": "client-100",
+            "email": "client-100@apple.com"
+        },
+        {
+            "clientUserId": "client-101",
+            "email": "client-101@apple.com"
+        },
+        {
+            "clientUserId": "client-102",
+            "email": "client-102@apple.com",
+            "managedAppleId": "maid-102@apple.com"
+        }
+    ]
+}
+```
+
+**Response**:
+
+```json
+{
+    "eventId": "dcd54e0c-5898-4837-8cea-b220f9570835",
+    "tokenExpirationDate": "2030-11-08T22:33:22+0000"
+    "uId": "2049025000431439"
+}
+```
+
 ## Topics
 
 ### Request and Response
@@ -22,6 +54,10 @@ Update details for existing users.
   The response that contains the event identifier.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
+
+## Endpoint
+
+`POST https://vpp.itunes.apple.com/mdm/v2/users/update`
 
 ## Request Body
 

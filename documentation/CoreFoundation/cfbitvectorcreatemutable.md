@@ -26,8 +26,8 @@ A new bit vector. Ownership follows the [`The Create Rule`](https://developer.ap
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `capacity`: Pass   to specify that the maximum capacity is not limited. The value must not be negative.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `capacity`: The maximum number of values that can be contained by the new bit vector. The bit vector starts empty and can grow to this number of values (and it can have less). Pass `0` to specify that the maximum capacity is not limited. The value must not be negative.
 
 ## See Also
 

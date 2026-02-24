@@ -25,7 +25,7 @@ The system displays the suggested invocation phrase to the user when they create
 
 ![A screenshot of adding a shortcut to Siri for one order of tomato soup.](https://docs-assets.developer.apple.com/published/8ba32c1cccce9885aad9bc8ebc40e79e/media-3020431%402x.png)
 
-> **Note**:  To access the [`suggestedInvocationPhrase`](nsuseractivity/suggestedinvocationphrase.md) property, import the  framework.
+> **Note**:  To access the [`suggestedInvocationPhrase`](nsuseractivity/suggestedinvocationphrase.md) property, import the *Intents* framework.
 
 ## See Also
 

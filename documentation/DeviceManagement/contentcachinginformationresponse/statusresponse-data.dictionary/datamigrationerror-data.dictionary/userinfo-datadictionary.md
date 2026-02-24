@@ -14,6 +14,10 @@ A dictionary that contains additional information about a data migration error.
 object ContentCachingInformationResponse.StatusResponse.DataMigrationError.UserInfo
 ```
 
+## Properties
+
+- `ANY` (any): A dictionary that contains additional details about the error.
+
 
 ---
 

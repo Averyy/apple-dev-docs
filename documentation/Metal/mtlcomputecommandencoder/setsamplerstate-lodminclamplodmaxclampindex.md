@@ -26,7 +26,7 @@ Calling this method ignores the [`lodMinClamp`](mtlsamplerdescriptor/lodminclamp
 
 ## Parameters
 
-- `sampler`: An   instance to bind to the sampler argument table.
+- `sampler`: An [`MTLSamplerState`](mtlsamplerstate.md) instance to bind to the sampler argument table.
 - `lodMinClamp`: The minimum level of detail used when sampling a texture.
 - `lodMaxClamp`: The maximum level of detail used when sampling a texture.
 - `index`: The index in the sampler argument table to bind the sampler to.

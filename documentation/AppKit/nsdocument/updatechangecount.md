@@ -22,7 +22,7 @@ Note that if you are using the `NSDocument` default undo/redo features, setting 
 
 ## Parameters
 
-- `change`: The type of change made to the document. For a list of values, see  .
+- `change`: The type of change made to the document. For a list of values, see [`NSDocument.ChangeType`](nsdocument/changetype.md).
 
 ## See Also
 

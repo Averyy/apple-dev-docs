@@ -26,7 +26,7 @@ The string representation of `uuid`. Ownership follows the [`The Create Rule`](h
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new string. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `uuid`: The CFUUID object whose string representation to obtain.
 
 ## See Also

@@ -41,7 +41,7 @@ _ = data?.withUnsafeBytes { buffer in
 
 ## Parameters
 
-- `body`: A closure with an   parameter that points to the contiguous storage for the type. If no such storage exists, the method creates it. If   has a return value, this method also returns that value. The argument is valid only for the duration of the closure’s execution.
+- `body`: A closure with an [`UnsafeRawBufferPointer`](https://developer.apple.com/documentation/Swift/UnsafeRawBufferPointer) parameter that points to the contiguous storage for the type. If no such storage exists, the method creates it. If `body` has a return value, this method also returns that value. The argument is valid only for the duration of the closure’s execution.
 
 
 ---

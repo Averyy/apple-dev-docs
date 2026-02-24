@@ -84,7 +84,7 @@ To cause a symbol to ignore the variants currently in the environment, directly 
 
 ## Parameters
 
-- `variant`: The variant to use for symbols. Use the values in   .
+- `variant`: The variant to use for symbols. Use the values in [`SymbolVariants`](symbolvariants.md).
 
 ## See Also
 

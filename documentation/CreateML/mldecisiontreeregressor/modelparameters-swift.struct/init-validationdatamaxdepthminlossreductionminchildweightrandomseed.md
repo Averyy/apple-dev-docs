@@ -20,11 +20,11 @@ init(validationData: MLDataTable? = nil, maxDepth: Int = 6, minLossReduction: Do
 
 ## Parameters
 
-- `validationData`: The default value is   which will use an automatically sampled validation set.
-- `maxDepth`: The default value is 6.
-- `minLossReduction`: The default value is 0.
-- `minChildWeight`: The default value is 0.1.
-- `randomSeed`: The default value is 42.
+- `validationData`: The dataset used to monitor how well the model is generalizing. The default value is `nil` which will use an automatically sampled validation set.
+- `maxDepth`: The maximum depth of the tree. Must be a value of at least 1. The default value is 6.
+- `minLossReduction`: The minimum amount of reduction to the loss function that is required to make another node to split the data. Larger values help prevent overfitting. The default value is 0.
+- `minChildWeight`: Determines the minimum weight of each leaf node of the tree. Larger values help prevent overfitting. The default value is 0.1.
+- `randomSeed`: A seed for internal random operations. Set this value to ensure reproducible results. The default value is 42.
 
 ## See Also
 

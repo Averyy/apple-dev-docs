@@ -29,7 +29,7 @@ Use this method to load a page from a local or network-based URL. For example, y
 
 ## Parameters
 
-- `url`: The URL to load. If this is  , an error will be immediately thrown from the returned sequence.
+- `url`: The URL to load. If this is `nil`, an error will be immediately thrown from the returned sequence.
 
 ## See Also
 

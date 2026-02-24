@@ -71,7 +71,7 @@ With the output specification, the sample creates the audio converter object tha
 
 ##### Provide a Magic Cookie
 
-Some audio formats have a magic cookie that the converter requires to decompress audio data. A  refers to information in an audio file that describes its data format. An encoder produces the magic cookie, and it’s included in the same file or stream as the audio packets, in a header, or a container file format through a box.
+Some audio formats have a magic cookie that the converter requires to decompress audio data. A *magic cookie* refers to information in an audio file that describes its data format. An encoder produces the magic cookie, and it’s included in the same file or stream as the audio packets, in a header, or a container file format through a box.
 
 When decoding audio, the sample checks if the format of the audio data that the framework is converting has a magic cookie. If the audio data format has a magic cookie, the sample adds the information to the audio converter instance before converting the audio.
 

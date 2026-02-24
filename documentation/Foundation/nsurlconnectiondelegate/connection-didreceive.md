@@ -39,7 +39,7 @@ If the delegate does not implement this method the default implementation is use
 ## Parameters
 
 - `connection`: The connection sending the message.
-- `challenge`: The challenge that   must authenticate in order to download its request.
+- `challenge`: The challenge that `connection` must authenticate in order to download its request.
 
 ## See Also
 

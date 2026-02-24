@@ -30,9 +30,9 @@ This function opens a stream created by [`decompressionStream(readingFrom:flags:
 
 ## Parameters
 
-- `compressedStream`: An input stream that provides compressed data, the operation only calls   and  .
+- `compressedStream`: An input stream that provides compressed data, the operation only calls [`read(into:)`](archivebytestreamprotocol/read(into:).md) and [`read(into:atOffset:)`](archivebytestreamprotocol/read(into:atoffset:).md).
 - `flags`: Flags that control the behavior of the operation.
-- `threadCount`: The number of worker threads that the operation uses, set to   for default.
+- `threadCount`: The number of worker threads that the operation uses, set to `0` for default.
 - `body`: A closure with the archive byte stream passed as a parameter.
 
 ## See Also

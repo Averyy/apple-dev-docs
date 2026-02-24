@@ -16,7 +16,7 @@ optional func drawerWillClose(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: An   notification sent by the default notification center immediately before the drawer is closed.
+- `notification`: An [`NSDrawerDelegate`](nsdrawerdelegate.md) notification sent by the default notification center immediately before the drawer is closed.
 
 ## See Also
 

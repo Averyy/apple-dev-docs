@@ -182,6 +182,11 @@ To disable deletion of apps, set `allowAppRemoval` to `false` with [`Restriction
 - [object HomeScreenLayout.IconItem](homescreenlayout/iconitem.md)
   An array of dictionaries that conform to the icon dictionary format.
 
+## Properties
+
+- `Dock` ([HomeScreenLayout.IconItem]): An array of dictionaries, each of which must conform to the icon dictionary format. If this key isn’t present, the user’s Dock is empty.
+- `Pages` ([[HomeScreenLayout.IconItem]]) *(required)*: An array of arrays of dictionaries, each of which must conform to the icon dictionary format.
+
 ## See Also
 
 - [object Accessibility](accessibility.md)

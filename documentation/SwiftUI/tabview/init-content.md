@@ -22,7 +22,7 @@ init<C>(@TabContentBuilder<Never> content: () -> C) where SelectionValue == Neve
 
 ## Parameters
 
-- `content`: The   content.
+- `content`: The [`Tab`](tab.md) content.
 
 ## See Also
 

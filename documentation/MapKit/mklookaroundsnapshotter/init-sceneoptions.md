@@ -20,8 +20,8 @@ init(scene: MKLookAroundScene, options: MKLookAroundSnapshotter.Options)
 
 ## Parameters
 
-- `scene`: The   to use as the source for the snapshot.
-- `options`: The available  .
+- `scene`: The [`MKLookAroundScene`](mklookaroundscene.md) to use as the source for the snapshot.
+- `options`: The available [`MKLookAroundSnapshotter.Options`](mklookaroundsnapshotter/options.md).
 
 
 ---

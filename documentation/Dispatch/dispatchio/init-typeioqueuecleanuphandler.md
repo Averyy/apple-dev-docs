@@ -22,10 +22,10 @@ convenience init(type: DispatchIO.StreamType, io: DispatchIO, queue: DispatchQue
 
 ## Parameters
 
-- `type`: The access semantics for the channel. For a list of possible values, see  .
+- `type`: The access semantics for the channel. For a list of possible values, see [`DispatchIO.StreamType`](dispatchio/streamtype.md).
 - `io`: An existing channel.
 - `queue`: The dispatch queue on which to perform work.
-- `cleanupHandler`: The handler to execute once the channel is closed. This block has no return value and takes the following parameter:
+- `cleanupHandler`: The handler to execute once the channel is closed. This block has no return value and takes the following parameter: - **error**: An `errno` condition if creating or opening the channel failed; otherwise, the value is `0`.
 
 ## See Also
 

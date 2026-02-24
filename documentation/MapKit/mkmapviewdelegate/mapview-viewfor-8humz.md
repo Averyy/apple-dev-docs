@@ -34,7 +34,7 @@ If you don’t implement this method, or if you return `nil` from your implement
 ## Parameters
 
 - `mapView`: The map view that requests the annotation view.
-- `annotation`: The object representing the annotation that the map view is about to display. In addition to your custom annotations, this object might be an   object representing the user’s location.
+- `annotation`: The object representing the annotation that the map view is about to display. In addition to your custom annotations, this object might be an [`MKUserLocation`](mkuserlocation.md) object representing the user’s location.
 
 ## See Also
 

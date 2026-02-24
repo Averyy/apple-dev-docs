@@ -24,7 +24,7 @@ If `objectSpecifierWithDescriptor:` is invoked and fails during the execution of
 
 ## Parameters
 
-- `descriptor`: An Apple event descriptor. The descriptor must have the type  .
+- `descriptor`: An Apple event descriptor. The descriptor must have the type `typeObjectSpecifier`.
 
 ## See Also
 

@@ -82,9 +82,9 @@ try allFeedback.write(to: url)
 
 ## Parameters
 
-- `sentiment`: A   rating about the model’s output (positive,   negative, or neutral).
-- `issues`: An array of specific   you identify with the model’s   response.
-- `desiredOutput`: A   entry showing the output you expect.
+- `sentiment`: A [`LanguageModelFeedback.Sentiment`](languagemodelfeedback/sentiment.md) rating about the model’s output (positive, negative, or neutral).
+- `issues`: An array of specific [`LanguageModelFeedback.Issue`](languagemodelfeedback/issue.md) you identify with the model’s response.
+- `desiredOutput`: A [`Transcript`](transcript.md) entry showing the output you expect.
 
 ## See Also
 

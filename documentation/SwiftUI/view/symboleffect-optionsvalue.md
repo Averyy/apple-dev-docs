@@ -39,8 +39,8 @@ VStack {
 
 ## Parameters
 
-- `effect`: A symbol effect to add to the view. Existing effects   added by ancestors of the view are preserved, but may be   overridden by the new effect. Added effects will be applied   to the ``SwiftUI/Image` views contained by the child view.
-- `value`: The value to monitor for changes, the animation is   triggered each time the value changes.
+- `effect`: A symbol effect to add to the view. Existing effects added by ancestors of the view are preserved, but may be overridden by the new effect. Added effects will be applied to the [`Image`](image.md) views contained by the child view.
+- `value`: The value to monitor for changes, the animation is triggered each time the value changes.
 
 ## See Also
 

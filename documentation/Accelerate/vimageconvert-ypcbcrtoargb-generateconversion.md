@@ -86,12 +86,12 @@ The conversions that are available are:
 
 ## Parameters
 
-- `matrix`: A pointer to   that contains the matrix coefficients for the conversion.
-- `pixelRange`: A pointer to   that contains the pixel range information for the conversion.
-- `outInfo`: A pointer to   that’s initialized with information for the conversion function to use later.
-- `inYpCbCrType`: A   to specify the input (YpCbCr) format.
-- `outARGBType`: A   to specify the output (ARGB) format.
-- `flags`: The options to use when performing this operation. Set the   flag to print debug messages when a problem occurs.
+- `matrix`: A pointer to [`vImage_YpCbCrToARGBMatrix`](vimage_ypcbcrtoargbmatrix.md) that contains the matrix coefficients for the conversion.
+- `pixelRange`: A pointer to [`vImage_YpCbCrPixelRange`](vimage_ypcbcrpixelrange.md) that contains the pixel range information for the conversion.
+- `outInfo`: A pointer to [`vImage_YpCbCrToARGB`](vimage_ypcbcrtoargb.md) that’s initialized with information for the conversion function to use later.
+- `inYpCbCrType`: A [`vImageYpCbCrType`](vimageypcbcrtype.md) to specify the input (YpCbCr) format.
+- `outARGBType`: A [`vImageARGBType`](vimageargbtype.md) to specify the output (ARGB) format.
+- `flags`: The options to use when performing this operation. Set the [`kvImagePrintDiagnosticsToConsole`](kvimageprintdiagnosticstoconsole.md) flag to print debug messages when a problem occurs.
 
 ## See Also
 

@@ -21,7 +21,7 @@ init(highlight: SWHighlight, mentionedPersonIdentity identity: SWPerson.Identity
 ## Parameters
 
 - `highlight`: The related hightlight for the event.
-- `identity`: The   of the person the sender mentions.
+- `identity`: The `SWPersonIdentity` of the person the sender mentions.
 
 ## See Also
 

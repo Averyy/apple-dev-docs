@@ -30,6 +30,18 @@ When the action executes, the audio node’s occlusion animates from its current
 
 This action is reversible; the reverse is created as if the following code is executed:
 
+**Swift**:
+
+```swift
+let action = SKAction.changeOcclusion(by: -v, duration: sec)
+```
+
+**Obj-C**:
+
+```objc
+[SKAction changeOcclusionBy: -v duration: sec];
+```
+
 ## Parameters
 
 - `v`: The amount to change the occlusion by, in decibels.

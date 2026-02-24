@@ -31,6 +31,11 @@ To update your widget to support Liquid Glass:
 
 Using the `WidgetAccentedRenderingMode` view modifier, conditionally render images and views as needed:
 
+- **[`accented`](widgetaccentedrenderingmode/accented.md)**: Tints the image to the accent color. In iOS and macOS, primary and accent colors are white, causing the image to be a solid white color. In watchOS, the accent color matches the color on the watch face.
+- **[`desaturated`](widgetaccentedrenderingmode/desaturated.md)**: Desaturates the image in iOS, macOS, and watchOS.
+- **[`accentedDesaturated`](widgetaccentedrenderingmode/accenteddesaturated.md)**: Combines [`accented`](widgetaccentedrenderingmode/accented.md) and [`desaturated`](widgetaccentedrenderingmode/desaturated.md) accented rendering modes. In iOS and macOS, the image appears a little whiter compared to the `desaturated` rendering. In watchOS, the desaturated image takes on the color of the watch face.
+- **[`fullColor`](widgetaccentedrenderingmode/fullcolor.md)**: Renders the image in full color, without modifications in iOS and macOS. In watchOS, the system ignores this rendering mode to make sure the widget blends in with the watch face.
+
 > 💡 **Tip**: Using `accented`, `desaturated`, or `accentedDesaturated` rendering modes helps the widget fit the system’s cohesive look on the Home Screen. Reserve the `fullColor` rendering mode for images that represent media content, such as album artwork or a book over.
 
 To learn more about Liquid Glass and how to design and develop interfaces that work well with the material, refer to [`Liquid Glass`](https://developer.apple.com/documentation/TechnologyOverviews/liquid-glass) and [`Adopting Liquid Glass`](https://developer.apple.com/documentation/TechnologyOverviews/adopting-liquid-glass).

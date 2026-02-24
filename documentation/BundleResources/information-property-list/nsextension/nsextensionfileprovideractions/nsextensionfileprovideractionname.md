@@ -10,6 +10,10 @@ The localized name for a File Provider extension action that appears in the cont
 - iPadOS 11.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [NSExtensionFileProviderActionActivationRule](information-property-list/nsextension/nsextensionfileprovideractions/nsextensionfileprovideractionactivationrule.md)

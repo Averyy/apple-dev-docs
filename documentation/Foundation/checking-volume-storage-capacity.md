@@ -16,6 +16,35 @@ The query type to use depends on what’s being stored. If you’re storing data
 
 Use this example as a guide to construct your own query:
 
+**Swift**:
+
+```swift
+let fileURL = URL(fileURLWithPath:"/")
+do {
+    let values = try fileURL.resourceValues(forKeys: [.volumeAvailableCapacityForImportantUsageKey])
+    if let capacity = values.volumeAvailableCapacityForImportantUsage {
+        print("Available capacity for important usage: \(capacity)")
+    } else {
+        print("Capacity is unavailable")
+    }
+} catch {
+    print("Error retrieving capacity: \(error.localizedDescription)")
+}
+```
+
+**Objective-C**:
+
+```objc
+NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:@"/"];
+NSError *error = nil;
+NSDictionary *results = [fileURL resourceValuesForKeys:@[NSURLVolumeAvailableCapacityForImportantUsageKey] error:&error];
+if (!results) {
+    NSLog(@"Error retrieving resource keys: %@\n%@", [error localizedDescription], [error userInfo]);
+    abort();
+}
+NSLog(@"Available capacity for important usage: %@", results[NSURLVolumeAvailableCapacityForImportantUsageKey]);
+```
+
 ## See Also
 
 - [static let volumeAvailableCapacityKey: URLResourceKey](urlresourcekey/volumeavailablecapacitykey.md)

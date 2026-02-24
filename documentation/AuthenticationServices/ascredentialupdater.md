@@ -24,6 +24,10 @@ The `ASCredentialUpdater` implements the functionality of the WebAuthn Signal AP
 
 Use `ASCredendialUpdater` in the following scenarios:
 
+- **Updating passkey metadata**: The system UI represents passkeys by a “user name”, set when the passkey is created. This field is usually a user name or email address. If your app allows the person using it to change the user name for their account, use [`reportPublicKeyCredentialUpdate(relyingPartyIdentifier:userHandle:newName:)`](ascredentialupdater/reportpublickeycredentialupdate(relyingpartyidentifier:userhandle:newname:).md) to relay that information to credential managers.
+- **Removing revoked passkeys**: Your app and its related services may allow someone using it to remove passkeys associated with their account, or delete the account entirely. Use [`reportUnknownPublicKeyCredential(relyingPartyIdentifier:credentialID:)`](ascredentialupdater/reportunknownpublickeycredential(relyingpartyidentifier:credentialid:).md) to inform credential managers of this deletion, so the passkeys aren’t shown in future login flows.
+- **Removing passwords**: When you’re confident the person using your app has transitioned to using a passkey to sign in and no longer requires a password fallback to sign in, you can direct credential managers to remove or hide passwords with [`reportUnusedPasswordCredential(domain:userName:)`](ascredentialupdater/reportunusedpasswordcredential(domain:username:).md). This prevents the now invalid passwords from appearing in the UI.
+
 The following example shows how an app might use this class when processing various sign-in and account-management events:
 
 ```swift

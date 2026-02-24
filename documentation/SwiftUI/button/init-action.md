@@ -27,7 +27,7 @@ This initializer creates a [`Text`](text.md) view on your behalf, and treats the
 
 ## Parameters
 
-- `titleKey`: The key for the button’s localized title, that describes   the purpose of the button’s  .
+- `titleKey`: The key for the button’s localized title, that describes the purpose of the button’s `action`.
 - `action`: The action to perform when the user triggers the button.
 
 ## See Also

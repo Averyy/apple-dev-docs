@@ -25,7 +25,7 @@ The render command encoder disables depth bounds testing by default. The render 
 
 ## Parameters
 
-- `bounds`: A closed range the renderer applies to depth bounds testing.   The renderer discards fragments with a stored depth that is outside  .
+- `bounds`: A closed range the renderer applies to depth bounds testing. The renderer discards fragments with a stored depth that is outside `bounds`.
 
 ## See Also
 

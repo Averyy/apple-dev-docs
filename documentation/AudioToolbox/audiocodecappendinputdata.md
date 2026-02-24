@@ -33,11 +33,11 @@ The combination of the [`AudioCodecAppendInputData(_:_:_:_:_:)`](audiocodecappen
 
 ## Parameters
 
-- `inCodec`: An audio codec object. Because an audio codec object is a Component Manger component instance, you can use the Component Manager (for example, the functions   and OpenAComponent) to obtain an audio codec object.
-- `inInputData`: The audio data to be sent to the codec.  Indicate there is no more data to process by passing a buffer of  bytes.
-- `ioInputDataByteSize`: On input, the size in bytes of the data pointed to by the   parameter. On output, the number of bytes the codec actually appended to its input buffer.
-- `ioNumberPackets`: On input, the number of elements in the   array. Pass   for this parameter if the input data has a constant number of frames per packet. On return, the number of packets actually processed by the codec.
-- `inPacketDescription`: For audio data that has a variable number of frames per packet, an array of   structures that describes the packet layout. Pass   for this parameter if the input data has a constant number of frames per packet.
+- `inCodec`: An audio codec object. Because an audio codec object is a Component Manger component instance, you can use the Component Manager (for example, the functions [`FindNextComponent`](https://developer.apple.com/documentation/coreservices/1516552-findnextcomponent) and OpenAComponent) to obtain an audio codec object.
+- `inInputData`: The audio data to be sent to the codec.  Indicate there is no more data to process by passing a buffer of `0`bytes.
+- `ioInputDataByteSize`: On input, the size in bytes of the data pointed to by the `inInputData` parameter. On output, the number of bytes the codec actually appended to its input buffer.
+- `ioNumberPackets`: On input, the number of elements in the `inPacketDescription` array. Pass `NULL` for this parameter if the input data has a constant number of frames per packet. On return, the number of packets actually processed by the codec.
+- `inPacketDescription`: For audio data that has a variable number of frames per packet, an array of `AudioStreamPacketDescription` structures that describes the packet layout. Pass `NULL` for this parameter if the input data has a constant number of frames per packet.
 
 ## See Also
 

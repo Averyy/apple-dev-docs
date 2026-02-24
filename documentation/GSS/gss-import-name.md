@@ -30,8 +30,8 @@ Use this function to reverse the import procedure carried out with the [`gss_dis
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `input_name_buffer`: A buffer holding the octets that represent the name to import.
-- `input_name_type`: An object identifier that specifies the name type. Use   to request the default for the mechanism.
-- `output_name`: A pointer the function uses to return the imported name. Release this buffer with a call to   when you are done with it.
+- `input_name_type`: An object identifier that specifies the name type. Use [`GSS_C_NO_OID`](gss_c_no_oid.md) to request the default for the mechanism.
+- `output_name`: A pointer the function uses to return the imported name. Release this buffer with a call to [`gss_release_name(_:_:)`](gss_release_name(_:_:).md) when you are done with it.
 
 ## See Also
 

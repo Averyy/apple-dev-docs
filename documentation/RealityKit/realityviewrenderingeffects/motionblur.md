@@ -20,7 +20,7 @@ var motionBlur: RealityViewRenderingEffectMode
 
 #### Discussion
 
-A video stream consists of a sequence of images. Each image in the sequence represents a short, but non-zero period of time. Fast-moving, real-world objects captured within a frame can experience a visual smearing, known as .
+A video stream consists of a sequence of images. Each image in the sequence represents a short, but non-zero period of time. Fast-moving, real-world objects captured within a frame can experience a visual smearing, known as *motion blur*.
 
 By default, RealityKit applies an effect that introduces motion blur for virtual objects that appear in the scene. The effect takes into account the relative motion of the camera and the virtual object.
 

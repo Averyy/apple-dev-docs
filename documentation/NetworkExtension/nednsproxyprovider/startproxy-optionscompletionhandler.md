@@ -26,8 +26,8 @@ The framework calls this method when a new proxy instance is created. You indica
 
 ## Parameters
 
-- `options`: A dictionary that you define as part of a device configuration profile. You can also modify the contents of this dictionary from your app using the shared instance of  . The dictionary appears as the   component of the manager’s   property.
-- `completionHandler`: A block that you must execute when the proxy is fully established, or when the proxy cannot be started due to an error. If the proxy is successfully established, the error parameter should be set to  . Otherwise, the error parameter passed to this block indicates the reason for failure.
+- `options`: A dictionary that you define as part of a device configuration profile. You can also modify the contents of this dictionary from your app using the shared instance of [`NEDNSProxyManager`](nednsproxymanager.md). The dictionary appears as the [`providerConfiguration`](nednsproxyproviderprotocol/providerconfiguration.md) component of the manager’s [`providerProtocol`](nednsproxymanager/providerprotocol.md) property.
+- `completionHandler`: A block that you must execute when the proxy is fully established, or when the proxy cannot be started due to an error. If the proxy is successfully established, the error parameter should be set to `nil`. Otherwise, the error parameter passed to this block indicates the reason for failure.
 
 ## See Also
 

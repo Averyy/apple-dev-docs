@@ -32,11 +32,11 @@ Depending on the comparison-option flags specified, the length of the resulting 
 
 ## Parameters
 
-- `theString`: The string in which to to search for  .
-- `stringToFind`: The substring to search for in  .
-- `rangeToSearch`: A range of the characters to search in  . The specified range must not exceed the length of the string.
-- `searchOptions`: The option flags to control the search behavior. See   for possible values. The flags   and   are ignored.
-- `result`: On return, if the function result is  , contains the starting location and length of the found substring. You may pass   if you only want to know if the substring exists in the larger string.
+- `theString`: The string in which to to search for `stringToFind`.
+- `stringToFind`: The substring to search for in `theString`.
+- `rangeToSearch`: A range of the characters to search in `theString`. The specified range must not exceed the length of the string.
+- `searchOptions`: The option flags to control the search behavior. See [`String Comparison Flags`](string-comparison-flags.md) for possible values. The flags [`compareNumerically`](cfstringcompareflags/comparenumerically.md) and [`compareForcedOrdering`](cfstringcompareflags/compareforcedordering.md) are ignored.
+- `result`: On return, if the function result is `true`, contains the starting location and length of the found substring. You may pass `NULL` if you only want to know if the substring exists in the larger string.
 
 ## See Also
 

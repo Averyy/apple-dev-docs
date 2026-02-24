@@ -20,6 +20,11 @@ The extra information TLVs listed in the following table are present if and only
 | TLV data | Padded to 4-byte boundary(int(TLV Size -8 +3) / 4 * 4 |
 | TLV size and so forth | … |
 
+- **Extra information size**: A 32-bit number that is the total size of all extra information TLVs in this packet, including the 4 bytes used for this field. An empty Extra information TLVs table would just be the extra information size, having the value 4. (In this case, it would be more efficient simply to not set the X bit and save 4 bytes just to represent the empty table.)
+- **TLV size**: A 32-bit number that is the total size of this one TLV entry, including 4 bytes for the size, 4 bytes for the type, and any data bytes, but not including padding required to align to the next 4 byte boundary.
+- **TLV type**: A 32-bit tag (a four-character OSType) identifying the TLV. Servers must ignore TLV types that they do not recognize. Note that TLV types containing all lowercase letters are reserved by Apple.
+- **TLV data**: The data for the TLV. In order to support MPEG (and other data types) whose RTP timestamp is not monotonically increasing and directly calculated from the sample timestamp, the TLV type listed in the following table is defined.
+
 | Size | Type | Data description |
 | --- | --- | --- |
 | 12 | `'rtpo'` | A signed 32-bit integer to be added to the RTP timestamp, which is derived from the hint sample timestamp. |

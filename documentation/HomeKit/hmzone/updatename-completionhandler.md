@@ -19,8 +19,8 @@ func updateName(_ name: String) async throws
 
 ## Parameters
 
-- `name`: The new name. Must not be  ; must be unique within the home.
-- `completion`: The block executed after the request is processed.
+- `name`: The new name. Must not be `nil`; must be unique within the home.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

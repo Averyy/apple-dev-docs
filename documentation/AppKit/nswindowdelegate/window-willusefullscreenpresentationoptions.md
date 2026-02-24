@@ -22,7 +22,7 @@ The options the window should use when transitioning to full-screen mode. These 
 ## Parameters
 
 - `window`: The window to enter to full-screen mode.
-- `proposedOptions`: The proposed options. See   for the possible values.
+- `proposedOptions`: The proposed options. See [`NSApplication.PresentationOptions`](nsapplication/presentationoptions-swift.struct.md) for the possible values.
 
 ## See Also
 

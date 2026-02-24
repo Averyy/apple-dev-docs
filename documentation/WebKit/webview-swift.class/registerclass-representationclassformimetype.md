@@ -20,9 +20,9 @@ After invoking this method, when `MIMEType` content is encountered, instances of
 
 ## Parameters
 
-- `viewClass`: A class conforming to the   protocol that displays the specified MIME types.
-- `representationClass`: The class conforming to   protocol that represents the specified MIME types.
-- `MIMEType`: This may be a primary MIME type or subtype. For example, if   is “video/” the specified view and representation objects are used for all video types. More specific subtype mappings, such as “image/gif”, takes precedence over primary type matching, such as “image/”.
+- `viewClass`: A class conforming to the [`WebDocumentView`](webdocumentview.md) protocol that displays the specified MIME types.
+- `representationClass`: The class conforming to [`WebDocumentRepresentation`](webdocumentrepresentation.md) protocol that represents the specified MIME types.
+- `MIMEType`: The MIME type of the content. This may be a primary MIME type or subtype. For example, if `MIMEType` is “video/” the specified view and representation objects are used for all video types. More specific subtype mappings, such as “image/gif”, takes precedence over primary type matching, such as “image/”.
 
 ## See Also
 

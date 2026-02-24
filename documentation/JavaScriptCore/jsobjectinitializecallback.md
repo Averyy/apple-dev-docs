@@ -32,7 +32,7 @@ Unlike the other object callbacks, the system calls the initialize callback on t
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The   to create.
+- `object`: The [`JSObjectRef`](jsobjectref.md) to create.
 
 ## See Also
 

@@ -35,11 +35,11 @@ If you support multiple languages that require different keyboard layout or func
 
 If applicable to your custom keyboard, edit the keyboard extension’s `Info.plist` to configure the following options:
 
-|  | Set this to [`true`](https://developer.apple.com/documentation/Swift/true) if your keyboard is capable of generating standard ASCII characters. |
+| **IsASCIICapable** | Set this to [`true`](https://developer.apple.com/documentation/Swift/true) if your keyboard is capable of generating standard ASCII characters. |
 | --- | --- |
-|  | If your keyboard primarily supports right to left languages, or if the insertion cursor should default to the right when editing in a text field, set this to [`true`](https://developer.apple.com/documentation/Swift/true). |
-|  | Set this to a string representing the primary language your keyboard supports. Use a two-character code like `nl` for Dutch, or language and country code such as `nl-BE` for Dutch in Belgium. The Settings app displays the primary language in the list of keyboards. |
-|  | Set this to [`true`](https://developer.apple.com/documentation/Swift/true) if your keyboard needs access to network resources, to write to a shared group container, or other capabilities. For more information, see [`Configuring open access for a custom keyboard`](configuring-open-access-for-a-custom-keyboard.md). |
+| **PrefersRightToLeft** | If your keyboard primarily supports right to left languages, or if the insertion cursor should default to the right when editing in a text field, set this to [`true`](https://developer.apple.com/documentation/Swift/true). |
+| **PrimaryLanguage** | Set this to a string representing the primary language your keyboard supports. Use a two-character code like `nl` for Dutch, or language and country code such as `nl-BE` for Dutch in Belgium. The Settings app displays the primary language in the list of keyboards. |
+| **RequestsOpenAccess** | Set this to [`true`](https://developer.apple.com/documentation/Swift/true) if your keyboard needs access to network resources, to write to a shared group container, or other capabilities. For more information, see [`Configuring open access for a custom keyboard`](configuring-open-access-for-a-custom-keyboard.md). |
 
 Set these keys in the [`NSExtension`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension) > [`NSExtensionAttributes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes) dictionary of the `Info.plist` file:
 

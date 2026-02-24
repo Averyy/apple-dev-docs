@@ -30,6 +30,71 @@ Organize the bar button items you create for the shortcuts bar into groups. A [`
 
 The following code configures the items of the shortcuts bar. After creating the bar button items, this code creates a group and assigns that group to the [`leadingBarButtonGroups`](uitextinputassistantitem/leadingbarbuttongroups.md) property. The resulting items appear before the typing suggestions.
 
+**Swift**:
+
+```swift
+// Get a UITextView object of the current view controller.
+let item = textView.inputAssistantItem
+
+// Set up the buttons.
+let itemOne = UIBarButtonItem(
+    title: "One",
+    style: .plain,
+    target: self,
+    action: Selector("handleItemOne:"))
+let itemTwo = UIBarButtonItem(
+    title: "Two",
+    style: .plain,
+    target: self,
+    action: Selector("handleItemTwo:"))
+let itemThree = UIBarButtonItem(
+    title: "Three",
+    style: .plain,
+    target: self,
+    action: Selector("handleItemThree:"))
+ 
+// Use a nil action to display the individual items.
+let itemChoose = UIBarButtonItem(
+    title: "Choose",
+    style: .plain,
+    target: nil,
+    action: nil)
+ 
+// Create the item group.
+let group = UIBarButtonItemGroup(
+    barButtonItems: [itemOne, itemTwo, itemThree],
+    representativeItem: itemChoose)
+ 
+// Display the items before the typing suggestions.
+item.leadingBarButtonGroups = [group]
+```
+
+**Objective-C**:
+
+```objc
+// Get a UITextView object of the current view controller.
+UITextInputAssistantItem* item = [self.textView inputAssistantItem];
+
+// Set up the buttons.
+UIBarButtonItem* itemOne = [[UIBarButtonItem alloc] initWithTitle:@"One"
+         style:UIBarButtonItemStylePlain target:self action:@selector(handleItemOne:)];
+UIBarButtonItem* itemTwo = [[UIBarButtonItem alloc] initWithTitle:@"Two"
+         style:UIBarButtonItemStylePlain target:self action:@selector(handleItemTwo:)];
+UIBarButtonItem* itemThree = [[UIBarButtonItem alloc] initWithTitle:@"Three"
+         style:UIBarButtonItemStylePlain target:self action:@selector(handleItemThree:)];
+ 
+// Use a nil action to display the individual items.
+UIBarButtonItem* itemChoose = [[UIBarButtonItem alloc] initWithTitle:@"Choose"
+         style:UIBarButtonItemStylePlain target:nil action:nil];
+ 
+// Create the item group.
+UIBarButtonItemGroup* group = [[UIBarButtonItemGroup alloc]
+       initWithBarButtonItems:@[itemOne, itemTwo, itemThree] representativeItem:itemChoose];
+ 
+// Display the items before the typing suggestions.
+item.leadingBarButtonGroups = @[group];
+```
+
 To hide shortcuts altogether, set the [`leadingBarButtonGroups`](uitextinputassistantitem/leadingbarbuttongroups.md) and [`trailingBarButtonGroups`](uitextinputassistantitem/trailingbarbuttongroups.md) properties to empty arrays. Doing so hides only the shortcuts and doesn’t hide the typing suggestions. For information on managing the typing suggestions, see [`autocorrectionType`](uitextinputtraits/autocorrectiontype.md).
 
 ## Topics

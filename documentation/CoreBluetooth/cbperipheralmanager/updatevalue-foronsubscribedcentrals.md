@@ -34,7 +34,7 @@ If the length of the `value` parameter exceeds the length of the [`maximumUpdate
 
 - `value`: The characteristic value you want to send via a notification or indication.
 - `characteristic`: The characteristic whose value has changed.
-- `centrals`: A list of centrals (represented by   objects) that have subscribed to receive updates of the characteristic’s value. If  , the manager updates all subscribed centrals. The manager ignores any centrals that haven’t subscribed to the characteristic’s value.
+- `centrals`: A list of centrals (represented by [`CBCentral`](cbcentral.md) objects) that have subscribed to receive updates of the characteristic’s value. If `nil`, the manager updates all subscribed centrals. The manager ignores any centrals that haven’t subscribed to the characteristic’s value.
 
 
 ---

@@ -8,6 +8,10 @@ A Boolean value indicating whether the extension appears in the Finder Preview p
 **Availability**:
 - macOS 10.14+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [NSExtensionServiceFinderPreviewIconName](information-property-list/nsextension/nsextensionattributes/nsextensionservicefinderpreviewiconname.md)

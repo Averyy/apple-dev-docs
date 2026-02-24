@@ -17,9 +17,9 @@ convenience init(configuration: NFCTagReaderSession.Configuration, delegate: any
 
 ## Parameters
 
-- `configuration`: Reader configuration used for the session.  The config is applied when   or   is called.
-- `delegate`: The session will hold a weak ARC reference to this   object.
-- `queue`: A dispatch queue where   delegate callbacks will be dispatched to.  A nil value will   cause the creation of a serial dispatch queue internally for the session.  The session object will retain the provided dispatch queue.
+- `configuration`: Reader configuration used for the session.  The config is applied when `begin()` or `restartPolling()` is called.
+- `delegate`: The session will hold a weak ARC reference to this `NFCTagReaderSessionDelegate` object.
+- `queue`: A dispatch queue where `NFCTagReaderSessionDelegate` delegate callbacks will be dispatched to.  A nil value will cause the creation of a serial dispatch queue internally for the session.  The session object will retain the provided dispatch queue.
 
 
 ---

@@ -54,7 +54,7 @@ The returned `HostingSheetRepresentation` can be ignored unless the sheet needs 
 ## Parameters
 
 - `content`: The SwiftUI view to present in a sheet.
-- `completionHandler`: An optional completion handler that is called   when the sheet is dismissed for any reason.
+- `completionHandler`: An optional completion handler that is called when the sheet is dismissed for any reason.
 
 
 ---

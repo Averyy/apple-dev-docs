@@ -20,8 +20,8 @@ init(device: AVCaptureDevice, previewLayer: CALayer?)
 
 ## Parameters
 
-- `device`: A capture device the new coordinator monitors to track its physical rotation to calculate its   property.
-- `previewLayer`: A layer that displays a camera preview the new coordinator monitors to calculate its   property.
+- `device`: A capture device the new coordinator monitors to track its physical rotation to calculate its [`videoRotationAngleForHorizonLevelCapture`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelcapture.md) property.
+- `previewLayer`: A layer that displays a camera preview the new coordinator monitors to calculate its [`videoRotationAngleForHorizonLevelPreview`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelpreview.md) property.
 
 
 ---

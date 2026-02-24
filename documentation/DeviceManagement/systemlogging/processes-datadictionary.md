@@ -18,6 +18,10 @@ Not to be used.
 object SystemLogging.Processes
 ```
 
+## Properties
+
+- `ANY` (any): TBD
+
 ## See Also
 
 - [object SystemLogging.Subsystems](systemlogging/subsystems-data.dictionary.md)

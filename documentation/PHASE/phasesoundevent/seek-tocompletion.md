@@ -27,7 +27,7 @@ func seek(to time: Double) async -> PHASESoundEvent.SeekHandlerReason
 
 ## Parameters
 
-- `time`: The playback position to advance to. The framework scales this value by  .
+- `time`: The playback position to advance to. The framework scales this value by [`unitsPerSecond`](phaseengine/unitspersecond.md).
 
 ## See Also
 

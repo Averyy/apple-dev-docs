@@ -29,6 +29,9 @@ The system also creates a [`lowCardioFitnessEvent`](hkcategorytypeidentifier/low
 
 Samples of this type have two associated metadata keys:
 
+- **[`HKMetadataKeyVO2MaxValue`](hkmetadatakeyvo2maxvalue.md)**: This key stores the value of the VO2 max sample that triggered the event.
+- **[`HKMetadataKeyLowCardioFitnessEventThreshold`](hkmetadatakeylowcardiofitnesseventthreshold.md)**: This key stores the threshold value used to calculate the Low cardio classification. This value varies based on certain parameters and physical characteristics, such as the user’s age.
+
 Low-cardio fitness event samples are read-only. Use this identifier to request permission to read these samples; however, you can’t request authorization to share them, and you can’t save new low-cardio fitness event samples to the HealthKit store.
 
 ## See Also

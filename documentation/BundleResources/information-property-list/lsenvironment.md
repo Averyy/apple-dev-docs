@@ -8,6 +8,10 @@ Environment variables to set before launching the app.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: object
+
 ## See Also
 
 - [NSPrincipalClass](information-property-list/nsprincipalclass.md)

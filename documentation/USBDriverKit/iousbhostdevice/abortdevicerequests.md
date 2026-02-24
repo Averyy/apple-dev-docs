@@ -25,8 +25,8 @@ Use this method to abort any requests you made previously with the [`AsyncDevice
 ## Parameters
 
 - `forClient`: The client that issued the requests.
-- `options`: Options to use when aborting requests. Specify   for this parameter.
-- `withError`: The error value to report for each request. Specify   for this parameter.
+- `options`: Options to use when aborting requests. Specify `0` for this parameter.
+- `withError`: The error value to report for each request. Specify `kIOReturnAborted` for this parameter.
 
 ## See Also
 

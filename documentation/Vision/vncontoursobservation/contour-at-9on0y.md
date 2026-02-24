@@ -25,7 +25,7 @@ The contour object at the specified index.
 
 ## Parameters
 
-- `contourIndex`: The index of the contour to retrieve. Valid values are in the range of 0 to   - 1.
+- `contourIndex`: The index of the contour to retrieve. Valid values are in the range of 0 to [`contourCount`](vncontoursobservation/contourcount.md) - 1.
 
 ## See Also
 

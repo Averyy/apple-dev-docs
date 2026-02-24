@@ -28,7 +28,7 @@ Call the [`consentToPriceIncreaseForTransaction(identifier:)`](sktestsession/con
 
 ## Parameters
 
-- `identifier`: The transaction   of the auto-renewable subscription that has a pending price increase.
+- `identifier`: The transaction [`identifier`](sktesttransaction/identifier.md) of the auto-renewable subscription that has a pending price increase.
 
 ## See Also
 

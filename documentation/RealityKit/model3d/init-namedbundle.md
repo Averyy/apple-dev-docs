@@ -28,7 +28,7 @@ If you want to customize the placeholder or apply [`ResolvedModel3D`](resolvedmo
 ## Parameters
 
 - `name`: The name of the USD or Reality file to display.
-- `bundle`: The Bundle used to look up the model by name. If not   provided, defaults to the app’s main bundle.
+- `bundle`: The Bundle used to look up the model by name. If not provided, defaults to the app’s main bundle.
 
 ## See Also
 

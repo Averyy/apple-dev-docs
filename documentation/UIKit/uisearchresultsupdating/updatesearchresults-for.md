@@ -25,7 +25,7 @@ The system calls this method when the search bar becomes the first responder or 
 
 ## Parameters
 
-- `searchController`: The   object used as the search bar.
+- `searchController`: The [`UISearchController`](uisearchcontroller.md) object used as the search bar.
 
 ## See Also
 

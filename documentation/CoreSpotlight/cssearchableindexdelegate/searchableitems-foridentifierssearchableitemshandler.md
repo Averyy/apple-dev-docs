@@ -25,7 +25,7 @@ Use this method to provide the framework with a list of identifiers to search fo
 ## Parameters
 
 - `identifiers`: An array of strings that represent the identifiers.
-- `searchableItemsHandler`: A method the framework calls that provides an array of   objects.
+- `searchableItemsHandler`: A method the framework calls that provides an array of [`CSSearchableItem`](cssearchableitem.md) objects.
 
 ## See Also
 

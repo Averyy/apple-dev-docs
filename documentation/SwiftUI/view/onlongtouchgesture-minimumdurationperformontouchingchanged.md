@@ -17,9 +17,9 @@ func onLongTouchGesture(minimumDuration: Double = 0.5, perform action: @escaping
 
 ## Parameters
 
-- `minimumDuration`: The minimum duration of the long touch that must   elapse before the gesture succeeds.
+- `minimumDuration`: The minimum duration of the long touch that must elapse before the gesture succeeds.
 - `action`: The action to perform when a long touch is recognized
-- `onTouchingChanged`: A closure to run when the touching state of   the gesture changes, passing the current state as a parameter.
+- `onTouchingChanged`: A closure to run when the touching state of the gesture changes, passing the current state as a parameter.
 
 ## See Also
 

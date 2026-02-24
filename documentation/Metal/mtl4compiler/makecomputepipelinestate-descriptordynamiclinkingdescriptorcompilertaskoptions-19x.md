@@ -27,7 +27,7 @@ A compute pipeline state upon success, otherwise this method throws.
 
 - `descriptor`: A compute pipeline state descriptor, describing the compute pipeline to create.
 - `dynamicLinkingDescriptor`: An optional parameter that provides additional configuration for linking the pipeline state object.
-- `compilerTaskOptions`: A description of the compilation process itself, providing parameters that   influence execution of the compilation process.
+- `compilerTaskOptions`: A description of the compilation process itself, providing parameters that influence execution of the compilation process.
 
 
 ---

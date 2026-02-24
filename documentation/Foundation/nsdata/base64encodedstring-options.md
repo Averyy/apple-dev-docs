@@ -32,7 +32,7 @@ If you specify one of the line length options ([`lineLength64Characters`](nsdata
 
 ## Parameters
 
-- `options`: A mask that specifies options for Base-64 encoding the data. Possible values are given in  .
+- `options`: A mask that specifies options for Base-64 encoding the data. Possible values are given in [`NSData.Base64EncodingOptions`](nsdata/base64encodingoptions.md).
 
 ## See Also
 

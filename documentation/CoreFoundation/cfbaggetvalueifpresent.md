@@ -31,8 +31,8 @@ Depending on the implementation of the equal callback specified when creating `t
 ## Parameters
 
 - `theBag`: The bag to be searched.
-- `candidate`: The value for which to find matches in  . The equal callback provided when   was created is used to compare. If the equal callback was  , pointer equality (in C, ==) is used. If  , or any other value in  , is not understood by the equal callback, the behavior is undefined.
-- `value`: A pointer to a value object. Set to the matching value if it exists in the bag, otherwise  . If the value is a Core Foundation object, ownership follows the  .
+- `candidate`: The value for which to find matches in `theBag`. The equal callback provided when `theBag` was created is used to compare. If the equal callback was `NULL`, pointer equality (in C, ==) is used. If `candidate`, or any other value in `theBag`, is not understood by the equal callback, the behavior is undefined.
+- `value`: A pointer to a value object. Set to the matching value if it exists in the bag, otherwise `NULL`. If the value is a Core Foundation object, ownership follows the [`The Get Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
 ## See Also
 

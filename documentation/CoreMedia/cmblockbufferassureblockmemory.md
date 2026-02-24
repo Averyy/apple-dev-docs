@@ -30,7 +30,7 @@ Traverses the possibly complex `CMBlockBuffer`, allocating the memory for any co
 
 ## Parameters
 
-- `theBuffer`:   to operate on. Must not be  .
+- `theBuffer`: `CMBlockBuffer` to operate on. Must not be `NULL`.
 
 ## See Also
 

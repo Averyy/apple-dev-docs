@@ -27,7 +27,7 @@ Italic text.
 
 ## Parameters
 
-- `isActive`: A Boolean value that indicates   whether italic styling is added.
+- `isActive`: A Boolean value that indicates whether italic styling is added.
 
 ## See Also
 

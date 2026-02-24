@@ -9,6 +9,10 @@ Configurations for scenes that you use to display template content on a CarPlay-
 - iOS 13.0+
 - iPadOS 13.0+
 
+
+
+**Type**: dictionary 
+
 #### Discussion
 
 Use this key to specify the scene configuration you use when displaying content on a CarPlay-enabled vehicle screen.

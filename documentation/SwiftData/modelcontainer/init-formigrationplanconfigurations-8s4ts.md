@@ -28,8 +28,8 @@ convenience init(for forTypes: any PersistentModel.Type..., migrationPlan: (any 
 ## Parameters
 
 - `forTypes`: A list of the persistent model types that comprise your app’s schema.
-- `migrationPlan`: A plan that describes the evolution of your app’s schema and how the container migrates between specific versions. For more information, see  .
-- `configurations`: A list configurations that describe how the container manages the persisted data for specific groups of models. For more information, see  .
+- `migrationPlan`: A plan that describes the evolution of your app’s schema and how the container migrates between specific versions. For more information, see [`SchemaMigrationPlan`](schemamigrationplan.md).
+- `configurations`: A list configurations that describe how the container manages the persisted data for specific groups of models. For more information, see [`ModelConfiguration`](modelconfiguration.md).
 
 ## See Also
 

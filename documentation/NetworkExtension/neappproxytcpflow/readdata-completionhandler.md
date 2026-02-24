@@ -24,7 +24,7 @@ func readData(completionHandler: @escaping (Data?, (any Error)?) -> Void)
 
 ## Parameters
 
-- `completionHandler`: A block that will be executed by the system on an internal system thread when some data is read from the flow. The block is passed either the data that was read or a non-nil error if an error occurred. See   in   for a list of possible errors. If the data parameter has a length of 0 then no data can be subsequently read from the flow.
+- `completionHandler`: A block that will be executed by the system on an internal system thread when some data is read from the flow. The block is passed either the data that was read or a non-nil error if an error occurred. See `NEAppProxyFlowError` in [`NEAppProxyFlow`](neappproxyflow.md) for a list of possible errors. If the data parameter has a length of 0 then no data can be subsequently read from the flow. > **Note**:  The completion handler is only called for the single read operation that was initiated by calling this method. If the caller wants to read more data then it should call this method again to schedule another read operation and another execution of the completion handler block.
 
 ## See Also
 

@@ -80,6 +80,12 @@ You can also start with all public extensions disallowed. To do so, include `All
 </plist>
 ```
 
+## Properties
+
+- `AllowedExtensions` ([string]): An array of bundle identifiers for allowed extensions.
+- `DeniedExtensionPoints` ([string]): An array of extension points for extensions that the system doesn’t allow to run.
+- `DeniedExtensions` ([string]): An array of bundle identifiers for extensions that the system doesn’t allow to run.
+
 ## See Also
 
 - [object AppLock](applock.md)

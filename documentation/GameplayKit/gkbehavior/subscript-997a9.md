@@ -29,7 +29,7 @@ The order of goals in a behavior is undefined. However, you can use this method 
 
 ## Parameters
 
-- `idx`: An index in the behavior’s list of goals; must be less than the value of the   property.
+- `idx`: An index in the behavior’s list of goals; must be less than the value of the [`goalCount`](gkbehavior/goalcount.md) property.
 
 ## See Also
 

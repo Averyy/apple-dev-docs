@@ -32,7 +32,7 @@ This function is used to obtain caret positions for a specific glyph. The return
 
 - `font`: A reference to the font to use.
 - `glyph`: A reference to the glyph.
-- `positions`: A buffer of at least   to receive the ligature caret positions for  .
+- `positions`: A buffer of at least `maxPositions` to receive the ligature caret positions for `glyph`.
 - `maxPositions`: The maximum number of positions to return.
 
 ## See Also

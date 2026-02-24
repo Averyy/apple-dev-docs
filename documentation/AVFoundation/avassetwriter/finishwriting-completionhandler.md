@@ -25,7 +25,7 @@ To ensure the asset writer finishes writing all samples, call this method only a
 
 ## Parameters
 
-- `handler`: A completion handler the system invokes when it finishes writing. Determine the success or failure of the writing session by querying the asset writer’s   property value.
+- `handler`: A completion handler the system invokes when it finishes writing. Determine the success or failure of the writing session by querying the asset writer’s [`status`](avassetwriter/status-swift.property.md) property value.
 
 ## See Also
 

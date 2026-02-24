@@ -26,8 +26,8 @@ In your `creator` block, create the window controller using your custom construc
 
 ## Parameters
 
-- `identifier`: If the specified identifier does not exist in the storyboard file, this method raises an exception.
-- `creator`: If you return   from your block, this method creates the window controller using the default   method.
+- `identifier`: A string that uniquely identifies the window controller in the storyboard file. At design time, put this same string in the Storyboard ID attribute of your window controller in Interface Builder. This identifier is not a property of the window controller object. The storyboard uses it to locate the appropriate data for your controller. If the specified identifier does not exist in the storyboard file, this method raises an exception.
+- `creator`: A block that contains your custom creation code for the window controller. Use this block to create the window controller, initialize it with the provided coder object and any custom information you require, and return the result. This block returns a new window controller object and takes the following parameter: - **coder**: The coder object that contains the storyboard data to use when configuring the window controller. If you return `nil` from your block, this method creates the window controller using the default [`init(coder:)`](nswindowcontroller/init(coder:).md) method.
 
 ## See Also
 

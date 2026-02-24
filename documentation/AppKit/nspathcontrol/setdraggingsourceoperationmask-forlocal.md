@@ -21,7 +21,7 @@ This method configures the default return value of [`draggingSourceOperationMask
 ## Parameters
 
 - `mask`: The types of drag operations allowed.
-- `isLocal`: If  ,   applies when the drag destination object is in the same application as the receiver; if  ,   applies when the destination object is outside the receiver’s application.
+- `isLocal`: If [`true`](https://developer.apple.com/documentation/Swift/true), `mask` applies when the drag destination object is in the same application as the receiver; if [`false`](https://developer.apple.com/documentation/Swift/false), `mask` applies when the destination object is outside the receiver’s application.
 
 
 ---

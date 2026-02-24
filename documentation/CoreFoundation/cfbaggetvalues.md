@@ -23,7 +23,7 @@ func CFBagGetValues(_ theBag: CFBag!, _ values: UnsafeMutablePointer<UnsafeRawPo
 ## Parameters
 
 - `theBag`: The bag to examine.
-- `values`: A C array of pointer-sized values to be filled with values from  . The value must be a valid C array of the appropriate type and size (that is, a size equal to the count of  ).
+- `values`: A C array of pointer-sized values to be filled with values from `theBag`. The value must be a valid C array of the appropriate type and size (that is, a size equal to the count of `theBag`).
 
 ## See Also
 

@@ -8,15 +8,15 @@ Approximate the definite integral of a function over a finite or infinite interv
 
 Quadrature provides an approximation of the definite integral of a function, over a finite or infinite interval.
 
- is a historic term for determining the area under a curve. Often, this was done by breaking the area into smaller shapes, whose area could be easily calculated (such as rectangles), and summing these smaller areas to obtain an approximate result.
+*Quadrature* is a historic term for determining the area under a curve. Often, this was done by breaking the area into smaller shapes, whose area could be easily calculated (such as rectangles), and summing these smaller areas to obtain an approximate result.
 
-In modern terms this process is called . The Accelerate framework’s Quadrature functionality provides an approximation of the definite integral of a function, over a finite or infinite interval, performed by evaluating the function at a series of points within the interval.
+In modern terms this process is called *definite integration*. The Accelerate framework’s Quadrature functionality provides an approximation of the definite integral of a function, over a finite or infinite interval, performed by evaluating the function at a series of points within the interval.
 
 The Quadrature library provides a Swift-only API, based on the [`Quadrature`](quadrature.md) structure, and both Swift and Objective-C APIs. For the latter, the `quadrature_integrate()` function performs this calculation using any one of three algorithms described in the [`Integrators`](quadrature#Integrators.md) section below.
 
 ##### The Integration Callback
 
-> **Note**:  To avoid confusion over the word , this document refers to the mathematical function that is to be integrated as the .
+> **Note**:  To avoid confusion over the word *function*, this document refers to the mathematical function that is to be integrated as the *integrand*.
 
 To represent the integrand, use a C function of the following type, defined in `integration.h`:
 
@@ -28,7 +28,7 @@ typedef void (*quadrature_function_array)(void * _Null_unspecified __arg,
 );
 ```
 
-This function is the . This is a function that processes values in an input array, and produces corresponding result values in an output array; the function should not do anything else, and it must return `void`. The input values are  values within the interval over which the integrand is being integrated, and the output values are the corresponding  values  at those points.
+This function is the *integration callback*. This is a function that processes values in an input array, and produces corresponding result values in an output array; the function should not do anything else, and it must return `void`. The input values are *x* values within the interval over which the integrand is being integrated, and the output values are the corresponding  values *y = integrand(x)* at those points.
 
 There are two other parameters: a `void*` pointer `arg`, that you will supply at call time, and a size for the arrays (for details, consult the header file `integration.h`). The pointer `arg` is available in case you need to reference some outside object from inside your callback; however if your callback only needs the `x` and `y` arguments, you can ignore `arg`.
 
@@ -42,7 +42,7 @@ f.fun_arg = myArg;
 
 where `integrationCB` is the integration callback and `myArg` is a `void*` pointer value to be passed to `integrationCB` as the first parameter, `arg`. If the integration callback has been written to ignore this value, just pass `NULL`.
 
-The struct `f` can now be passed as the first argument to `quadrature_integrate()`, which will supply the input and output arrays, fill the input array with  values, and perform the integration by calling `integrationCB` as many times as necessary.
+The struct `f` can now be passed as the first argument to `quadrature_integrate()`, which will supply the input and output arrays, fill the input array with *x* values, and perform the integration by calling `integrationCB` as many times as necessary.
 
 ##### Integration Options
 
@@ -67,12 +67,16 @@ Quadrature has three different integrators available to perform the integration,
 
 To select an integrator for a particular integrand, the following decision tree is recommended:
 
+**Integration over a finite region**
+
 1. If performance is not a concern and you don’t know much about the specifics of the problem, use QAGS.
 2. Otherwise, if the integrand is smooth, use QNG – or QAG if the requested tolerance couldn’t be reached with QNG.
 3. Otherwise, if there are discontinuities or singularities of the integrand or of its derivative, and you know where they are, split the integration range at these points and analyze each subinterval.
 4. Otherwise, if the integrand has end point singularities, use QAGS.
 5. Otherwise, if the integrand has an oscillatory behavior of nonspecific type, and no singularities, use QAG with 61 points per interval.
 6. Otherwise, use QAGS.
+
+**Integration over an infinite region**
 
 1. If the integrand decays rapidly toward zero, truncate the interval and use the finite interval decision tree.
 2. Otherwise, if you are not constrained by computer time, and do not wish to analyze the problem further, use QAGS.

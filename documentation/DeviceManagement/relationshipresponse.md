@@ -18,6 +18,12 @@ object RelationshipResponse
 ### Dictionaries
 - [object RelationshipResponse.Meta](relationshipresponse/meta-data.dictionary.md)
 
+## Properties
+
+- `data` ([Resource]) *(required)*
+- `meta` (RelationshipResponse.Meta)
+- `next` (string)
+
 
 ---
 

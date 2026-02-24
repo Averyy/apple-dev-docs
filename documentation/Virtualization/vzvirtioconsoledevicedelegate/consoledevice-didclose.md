@@ -21,7 +21,7 @@ Be sure to finish processing or flushing any remaining data from the [`VZVirtioC
 ## Parameters
 
 - `consoleDevice`: The console port’s console device.
-- `consolePort`: The   port that the framework closed.
+- `consolePort`: The [`VZVirtioConsolePort`](vzvirtioconsoleport.md) port that the framework closed.
 
 ## See Also
 

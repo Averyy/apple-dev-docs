@@ -9,6 +9,10 @@ A Boolean value that determines whether your app can recalibrate the prediction 
 - iOS 15.0+
 - iPadOS 15.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Apps can recalibrate HealthKitʼs prediction algorithms after an event that may significantly affect their results. For example, you can recalibrate the [`sixMinuteWalkTestDistance`](https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/sixMinuteWalkTestDistance) type to use only data collected after a mobility-impacting health event, such as surgery or an injury.

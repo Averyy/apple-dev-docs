@@ -26,7 +26,7 @@ func pendingTaskRequests() async -> [BGTaskRequest]
 
 ## Parameters
 
-- `completionHandler`: The objects passed in the array are copies of the existing requests. Changing the attributes of a request has no effect. To change the attributes submit a new task request using  .
+- `completionHandler`: The completion handler called with the pending tasks. The handler may execute on a background thread. The handler takes a single parameter `tasksRequests`, an array of `BGTaskRequest` objects. The array is empty if there are no scheduled tasks. The objects passed in the array are copies of the existing requests. Changing the attributes of a request has no effect. To change the attributes submit a new task request using [`submit(_:)`](bgtaskscheduler/submit(_:).md).
 
 
 ---

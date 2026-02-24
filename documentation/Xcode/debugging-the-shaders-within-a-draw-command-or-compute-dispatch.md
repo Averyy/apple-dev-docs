@@ -67,7 +67,7 @@ If your shader is producing incorrect results, you can examine the value of vari
 
 ![A screenshot of the shader debugger with an active shader debugging session. The top-level function in the call tree is selected and its corresponding line of source code in the Shader editor to the right is highlighted.](https://docs-assets.developer.apple.com/published/4b99fb78e5fa873cc7026dd81b38adae/gputools-metal-debugger-sdp-call-list-1%402x.png)
 
-When you select a line in the call tree, its corresponding line of source code in the Shader editor to the right appears with a green highlight. This line is also referred to as the . Use your keyboard arrow keys in the call tree to advance the playhead through your code one line at a time. As you step through the call tree, the playhead follows along in the source code in the Shader editor.
+When you select a line in the call tree, its corresponding line of source code in the Shader editor to the right appears with a green highlight. This line is also referred to as the *location of the playhead*. Use your keyboard arrow keys in the call tree to advance the playhead through your code one line at a time. As you step through the call tree, the playhead follows along in the source code in the Shader editor.
 
 | Arrow key | Stepping direction |
 | --- | --- |
@@ -102,7 +102,7 @@ If a variable has nested properties, you can disclose them in a cascading fashio
 
 This enables you to dive in to an object’s data by showing you more than the Shader editor can fit in the right sidebar.
 
-In addition to the selected pixel or thread, the shader debugger also shows the variable values for nearby pixels, or other threads within the threadgroup, in what is known as the . When you expand a variable preview, the shader debugger shows the values of variables for all pixels or threads within the region of interest.
+In addition to the selected pixel or thread, the shader debugger also shows the variable values for nearby pixels, or other threads within the threadgroup, in what is known as the *region of interest*. When you expand a variable preview, the shader debugger shows the values of variables for all pixels or threads within the region of interest.
 
 > 💡 **Tip**: The region of interest appears in the Attachments viewer as a fluorescent orange square (see [`Inspecting the attachments of a draw command`](inspecting-the-attachments-of-a-draw-command.md)), and in the Geometry viewer as an orange vertex (see [`Inspecting the geometry of a draw command`](inspecting-the-geometry-of-a-draw-command.md)).
 

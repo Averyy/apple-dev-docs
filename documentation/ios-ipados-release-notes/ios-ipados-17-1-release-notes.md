@@ -58,9 +58,9 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Wallet might crash on launch for some users who connect cards to bank accounts on on iOS 17.1 Beta 1 & 2 once Beta 3 is released.  (116694764)  Update device to iOS 17.1 Beta 3.
-- The connection between a card and bank account might unexpectedly revoke.  (116738732)  Follow the instructions in the “Update Your Connection” repair flow.
-- If the connection between a card and bank account is revoked, some users might encounter an error when completing the “Update Your Connection” repair flow.  (116738863)  Opening Settings and navigate to Apple Pay & Wallet > Connections. Remove the connection to your institution, and re-connect your card again.
+- Wallet might crash on launch for some users who connect cards to bank accounts on on iOS 17.1 Beta 1 & 2 once Beta 3 is released.  (116694764) **Workaround:** Update device to iOS 17.1 Beta 3.
+- The connection between a card and bank account might unexpectedly revoke.  (116738732) **Workaround:** Follow the instructions in the “Update Your Connection” repair flow.
+- If the connection between a card and bank account is revoked, some users might encounter an error when completing the “Update Your Connection” repair flow.  (116738863) **Workaround:** Opening Settings and navigate to Apple Pay & Wallet > Connections. Remove the connection to your institution, and re-connect your card again.
 
 ##### Iphone 12 in France
 

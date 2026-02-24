@@ -27,7 +27,7 @@ Use this method to display a drag item preview based on a view that you provide.
 
 ## Parameters
 
-- `view`: A   object representing the drag item.
+- `view`: A [`UIView`](uiview.md) object representing the drag item.
 
 ## See Also
 

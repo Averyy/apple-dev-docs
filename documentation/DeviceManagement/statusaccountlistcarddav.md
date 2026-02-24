@@ -36,6 +36,10 @@ object StatusAccountListCardDAV
 - [object StatusAccountListCardDAVAccountObject](statusaccountlistcarddavaccountobject.md)
   A status report of the client’s Contacts account details.
 
+## Properties
+
+- `account.list.carddav` ([StatusAccountListCardDAVAccountObject]) *(required)*: A list of status values for the Contacts accounts.
+
 ## See Also
 
 - [object StatusAccountListCalDAV](statusaccountlistcaldav.md)

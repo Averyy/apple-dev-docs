@@ -68,9 +68,13 @@ In this case, be sure to add a secure timestamp by adding the `timestamp` option
 
 Generating a secure timestamp requires internet access. macOS accepts only one secure timestamp server, namely `timestamp.apple.com`, which has multiple IPv4 and IPv6 address ranges.
 
+**IPv4**
+
 - `17.32.213.0/24`
 - `17.157.80.0/24`
 - `17.179.249.0/24`
+
+**IPv6**
 
 - `2620:149:980:500::/64`
 - `2620:149:981:603::/64`

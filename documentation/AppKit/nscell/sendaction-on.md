@@ -26,7 +26,7 @@ You can use the [`isContinuous`](nscell/iscontinuous.md) property to turn on the
 
 ## Parameters
 
-- `mask`: A bit mask containing the conditions for sending the action. The only conditions that are actually checked are associated with the  ,   ,  , and   bits.
+- `mask`: A bit mask containing the conditions for sending the action. The only conditions that are actually checked are associated with the [`NSLeftMouseDownMask`](nsleftmousedownmask.md),  [`NSLeftMouseUpMask`](nsleftmouseupmask.md), [`NSLeftMouseDraggedMask`](nsleftmousedraggedmask.md), and [`NSPeriodicMask`](nsperiodicmask.md) bits.
 
 ## See Also
 

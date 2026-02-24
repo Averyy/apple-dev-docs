@@ -10,13 +10,13 @@ When you work with video data, you often work with images represented by separat
 
 Alternatively, other image transformations, such as adjusting saturation, require that you convert an RGB image to YCbCr. Reducing the resolution of the chrominance information can also improve the performance of your app because you’re only processing half or a quarter of the number of pixels.
 
- describes the encoding that compresses image data by reducing the resolution of the chrominance information. Chroma subsampling relies on the fact that human vision is less sensitive to color than luminance.
+*Chroma subsampling* describes the encoding that compresses image data by reducing the resolution of the chrominance information. Chroma subsampling relies on the fact that human vision is less sensitive to color than luminance.
 
 The code in this article uses the 4:2:0 subsampling scheme, which means there’s one Cb and one Cr pixel for every four luminance pixels. That is, each chrominance channel is half of the width and half of the height of the luminance channel. For example, 4:2:0 subsampling represents a 4 x 2 image with a 4 x 2 luminance channel and two 2 x 1 chrominance channels:
 
 ![A diagram showing source RGB pixels converted to discrete luminance and chrominance pixels arranged as two-times-two tiles.](https://docs-assets.developer.apple.com/published/fc95d53c190aa0f91c8411fcd7bbf01a/media-4264983%402x.png)
 
-The images below show the 4:2:0 subsampling scheme applied to a photograph. The  luminance channel has the same resolution as the original image. However, the  and  chrominance channels have a lower resolution. For each 2 x 2 square of pixels in the luminance channel, the chrominance channels only contain a single pixel. Therefore, the chrominance channels are a quarter of the size of the luminance channel.
+The images below show the 4:2:0 subsampling scheme applied to a photograph. The *Y* luminance channel has the same resolution as the original image. However, the *Cb* and *Cr* chrominance channels have a lower resolution. For each 2 x 2 square of pixels in the luminance channel, the chrominance channels only contain a single pixel. Therefore, the chrominance channels are a quarter of the size of the luminance channel.
 
 ![A diagram that shows the sizes and content of the two chrominance channels and single luminance channel of a YpCbCr image compared to an RGB image of the same subject. On the left are the three YpCbCr channels and on the right in the single, interleaved RGB image.](https://docs-assets.developer.apple.com/published/696306b4d1602091ebaca151924bab5d/media-3866875%402x.png)
 

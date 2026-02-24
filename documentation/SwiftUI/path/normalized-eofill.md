@@ -30,7 +30,7 @@ The returned path is a weakly-simple path, has no self-intersections, and has a 
 
 ## Parameters
 
-- `eoFill`: Whether to use the even-odd rule for determining   which areas to treat as the interior of the paths (if true),   or the non-zero rule (if false).
+- `eoFill`: Whether to use the even-odd rule for determining which areas to treat as the interior of the paths (if true), or the non-zero rule (if false).
 
 ## See Also
 

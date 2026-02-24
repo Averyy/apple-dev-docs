@@ -29,11 +29,39 @@ Use this convenience method to create a predicate that matches objects based on 
 
 The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+let metadataOperator =
+    HKQuery.predicateForObjectsWithMetadataKey(AccuracyCustomMetadataKey,
+                                               operatorType: NSPredicateOperatorType.GreaterThanPredicateOperatorType,
+                                               value: 75.0)
+ 
+let explicitMetadataOperator = NSPredicate(format: "%K.%K > %d",
+                                           HKPredicateKeyPathMetadata, AccuracyCustomMetadataKey,
+                                           75.0)
+```
+
+**Objective-C**:
+
+```objc
+NSPredicate *metadataOperator =
+    [HKQuery predicateForObjectsWithMetadataKey:AccuracyCustomMetadataKey
+                                   operatorType:NSGreaterThanPredicateOperatorType
+                                          value:@75.0];
+ 
+NSPredicate *explicitMetadataOperator =
+    [NSPredicate predicateWithFormat:@"%K.%K > %d",
+     HKPredicateKeyPathMetadata,
+     AccuracyCustomMetadataKey,
+     @75.0];
+```
+
 ## Parameters
 
-- `key`: The metadata key for the value to be matched. For a list of preset keys, see  . You may also search using custom keys.
+- `key`: The metadata key for the value to be matched. For a list of preset keys, see [`Metadata Keys`](metadata-keys.md). You may also search using custom keys.
 - `operatorType`: Defines the relationship used to match the metadata’s value with the provided value.
-- `value`: The target value. These values must be  ,  , or   instances.
+- `value`: The target value. These values must be [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), or [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) instances.
 
 ## See Also
 

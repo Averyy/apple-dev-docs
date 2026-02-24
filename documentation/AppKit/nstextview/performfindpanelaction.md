@@ -20,7 +20,7 @@ This is the generic action method for the find menu and find panel, and can be o
 
 ## Parameters
 
-- `sender`: The control sending the message. This method sends the   method to determine what operation to perform. The list of possible tags is provided in Constants.
+- `sender`: The control sending the message. This method sends the [`tag`](nscontrol/tag.md) method to determine what operation to perform. The list of possible tags is provided in Constants.
 
 ## See Also
 

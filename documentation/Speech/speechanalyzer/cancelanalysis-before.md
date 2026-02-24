@@ -23,7 +23,7 @@ final func cancelAnalysis(before: CMTime)
 
 This method is useful in live-audio cases where you are no longer interested in results predating a certain time. For example, when you are captioning video and the scene changes, you do not need pending captions from the previous scene.
 
-This method can also be used to force “catch-up” if the analyzer is taking too long. By calling [`finalize(through:)`](speechanalyzer/finalize(through:).md), you indicate that you will  for pending results. By calling `cancelAnalysis(before:)`, you indicate that you  any longer for certain pending results.
+This method can also be used to force “catch-up” if the analyzer is taking too long. By calling [`finalize(through:)`](speechanalyzer/finalize(through:).md), you indicate that you will *wait* for pending results. By calling `cancelAnalysis(before:)`, you indicate that you *cannot wait* any longer for certain pending results.
 
 Analysis will continue normally at and after the given time.
 

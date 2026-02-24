@@ -20,8 +20,8 @@ A valid [`NSScrubberItemView`](nsscrubberitemview.md) object.
 
 ## Parameters
 
-- `itemIdentifier`: The string that identifies the type of item you want. This is the identifier you specified when registering the item view. The parameter must not be  .
-- `owner`: The owner of this item. If the scrubber item is loaded from a nib then this object is set as the nib’s File’s Owner object. Set this parameter to   for scrubber items loaded from classes.
+- `itemIdentifier`: The string that identifies the type of item you want. This is the identifier you specified when registering the item view. The parameter must not be `nil`.
+- `owner`: The owner of this item. If the scrubber item is loaded from a nib then this object is set as the nib’s File’s Owner object. Set this parameter to `nil` for scrubber items loaded from classes.
 
 ## See Also
 

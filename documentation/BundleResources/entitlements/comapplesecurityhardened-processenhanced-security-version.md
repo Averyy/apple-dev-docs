@@ -11,6 +11,12 @@ The entitlement required for an executable to opt in to enhanced security protec
 - macOS 26.0+
 - visionOS 26.0+
 
+
+
+**Type**: string
+
+**Default**: `1`
+
 #### Discussion
 
 Set this entitlement’s value to `1` to adopt the current version of enhanced security protections in your app or extension. For more information, see [`Enabling enhanced security for your app`](https://developer.apple.com/documentation/Xcode/enabling-enhanced-security-for-your-app).

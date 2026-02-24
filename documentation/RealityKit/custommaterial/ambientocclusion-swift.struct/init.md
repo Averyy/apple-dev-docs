@@ -22,7 +22,7 @@ init(_ value: PhysicallyBasedMaterial.AmbientOcclusion)
 
 Ambient occlusion represents the entity’s exposure to ambient light. This initializer creates a new object by copying the values from an existing [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) instance’s [`ambientOcclusion`](physicallybasedmaterial/ambientocclusion-swift.property.md) property.
 
-Specify ambient occlusion by using a UV-mapped image called an . A value of black (`0.0`) represents parts of the model that receive less ambient light because of a crevice, dent, recessed area, or another part of the same entity blocking ambient light from reaching it. Ambient occlusion values of white (`1.0`) represent flat portions of the model that receive full ambient light. You generate ambient occlusion maps by using a 3D software package.
+Specify ambient occlusion by using a UV-mapped image called an *ambient occlusion map*. A value of black (`0.0`) represents parts of the model that receive less ambient light because of a crevice, dent, recessed area, or another part of the same entity blocking ambient light from reaching it. Ambient occlusion values of white (`1.0`) represent flat portions of the model that receive full ambient light. You generate ambient occlusion maps by using a 3D software package.
 
 The ambient occlusion texture is available in the material’s surface shader, but RealityKit doesn’t render ambient occlusion unless the surface shader calls `params.surface().set_ambient_occlusion()`.
 
@@ -45,7 +45,7 @@ The following Metal code shows how to use the ambient occlusion texture in a sur
 
 ## Parameters
 
-- `value`: The ambient occlusion property from a  .
+- `value`: The ambient occlusion property from a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md).
 
 ## See Also
 

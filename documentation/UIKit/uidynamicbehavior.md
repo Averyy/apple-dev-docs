@@ -21,7 +21,7 @@ class UIDynamicBehavior
 
 #### Overview
 
-A  is any iOS or custom object that conforms to the [`UIDynamicItem`](uidynamicitem.md) protocol. The [`UIView`](uiview.md) and [`UICollectionViewLayoutAttributes`](uicollectionviewlayoutattributes.md) classes implement this protocol starting in iOS 7.0. You can implement this protocol to use a dynamic animator with custom objects for such purposes as reacting to rotation or position changes computed by an animator—an instance of the [`UIDynamicAnimator`](uidynamicanimator.md) class.
+A *dynamic item* is any iOS or custom object that conforms to the [`UIDynamicItem`](uidynamicitem.md) protocol. The [`UIView`](uiview.md) and [`UICollectionViewLayoutAttributes`](uicollectionviewlayoutattributes.md) classes implement this protocol starting in iOS 7.0. You can implement this protocol to use a dynamic animator with custom objects for such purposes as reacting to rotation or position changes computed by an animator—an instance of the [`UIDynamicAnimator`](uidynamicanimator.md) class.
 
 This parent class, [`UIDynamicBehavior`](uidynamicbehavior.md), is inherited by the primitive dynamic behavior classes [`UIAttachmentBehavior`](uiattachmentbehavior.md), [`UICollisionBehavior`](uicollisionbehavior.md), [`UIGravityBehavior`](uigravitybehavior.md), [`UIDynamicItemBehavior`](uidynamicitembehavior.md), [`UIPushBehavior`](uipushbehavior.md), and [`UISnapBehavior`](uisnapbehavior.md).
 

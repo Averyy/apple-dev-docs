@@ -24,6 +24,9 @@ In addition to the new scheme for the Thumbnail extension, Xcode adds the follow
 
 Xcode creates an `Info.plist` for your new Thumbnail Extension that contains two important entries below the `NSExtensionAttributes` key. Update the following entries in the `Info.plist` file:
 
+- **`QLSupportedContentTypes`**: This entry contains an array of all custom file types for which your app provides thumbnails. Make sure to declare all file types that you support, using the exact Uniform Type Identifiers (UTI). QuickLookThumbnailing only uses your extension for a file type if the listed UTI matches the file type. It’s not sufficient to list a parent UTI to which a file type may conform.
+- **`QLThumbnailMinimumDimension`**: Some content types, such as text-heavy content, may not present a good representation at very small sizes. The value of this entry describes the minimum dimension of the thumbnails that your Thumbnail Extension provides, instructing the QuickLookThumbnailing framework to avoid calling your extension if an app or operating systems requests a thumbnail smaller than the specified size, and instead provide a generic file icon.
+
 ##### Create Thumbnails for Your Custom File Types
 
 Using Xcode’s Thumbnail Extension template adds a subclass of [`QLThumbnailProvider`](qlthumbnailprovider.md) to your project that contains an empty implementation of the [`provideThumbnail(for:_:)`](qlthumbnailprovider/providethumbnail(for:_:).md) method. Decide which of [`QLThumbnailReply`](qlthumbnailreply.md)’s initializers you want to use and add your implementation to create thumbnails for each [`QLThumbnailRepresentation.RepresentationType`](qlthumbnailrepresentation/representationtype.md). This decision depends on your app and its requirements; make sure to optimize your code that generates the thumbnails and keep any files as small as possible.

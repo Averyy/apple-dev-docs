@@ -4,6 +4,11 @@
 
 #### Overview
 
+- **Containing profile atom**: Track (sound), movie
+- **`part-ID`**: `0x20202020` (universal feature)
+- **`feature-code`**: `'achc'`
+- **`feature-value`**: Unsigned `int(32)` holding the number of audio channels
+
 #### Feature Values
 
 The feature value is an unsigned 32-bit integer holding the number of audio channels encoded by a Sound Track in the movie. For monaural, the value would be `1`. For stereo, the value would be `2`. Note that the audio channel count is a standard field in the sound sample description.

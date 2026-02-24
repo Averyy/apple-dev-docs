@@ -20,7 +20,16 @@ Use Groups to create horizontal or vertical stacks ([`Figure 2`](storyboard_supp
 
 You can fine-tune an interface element’s size and layout using the Attributes inspector. All interface elements have the following attributes:
 
+- **Horizontal**: Configures the horizontal position of the item within the space provided by its container.
+- **Vertical**: Configures the vertical position of the item within the space provided by its container.
+- **Width**: Determines how the system calculate’s the object’s width. This attribute has three possible values: Size to Fit Content, Relative to Container, and Fixed. Size to Fit Content sets the width based on the object’s content. Relative to Container sets the width to a percentage of the container’s width. Fixed sets the width to the specified size in points.
+- **Height**: Determines how the system calculate’s the object’s height. This attribute has three possible values: Size to Fit Content, Relative to Container, and Fixed. Size to Fit Content sets the height based on the object’s content. Relative to Container sets the height to a percentage of the container’s height. Fixed sets the height to the specified size in points.
+
 Groups provide additional options to manage their content:
+
+- **Layout**: Specifies the layout direction for items in the group. You can stack items horizontally or vertically, or have them overlap.
+- **Insets**: Sets the amount of space (in points) between the edges of the group and its child elements. Use Custom to specify different values for the top, bottom, left, and right edges.
+- **Spacing**: Sets the spacing (in points) between child elements in the group. The default spacing is 2 points.
 
 ## Topics
 

@@ -19,8 +19,8 @@ init(wasFollowingGuidance: Bool, guidanceToken: UUID)
 
 ## Parameters
 
-- `wasFollowingGuidance`: Whether the device was applying    for its energy use at the time of the event.
-- `guidanceToken`: The token provided at time of   fetch.
+- `wasFollowingGuidance`: Whether the device was applying [`ElectricityGuidance`](electricityguidance.md) for its energy use at the time of the event.
+- `guidanceToken`: The token provided at time of [`ElectricityGuidance`](electricityguidance.md) fetch.
 
 
 ---

@@ -29,7 +29,7 @@ In general, you should use this function only to convert strings that were previ
 
 ## Parameters
 
-- `string`: A string whose contents are of the form “{{ , },{ ,  }}”, where   is the x coordinate,   is the y coordinate,   is the width, and   is the height. These components can represent integer or float values. An example of a valid string is @”{{3,2},{4,5}}”. The string is not localized, so items are always separated with a comma.
+- `string`: A string whose contents are of the form “{{*x*,*y*},{*w*, *h*}}”, where *x* is the x coordinate, *y* is the y coordinate, *w* is the width, and *h* is the height. These components can represent integer or float values. An example of a valid string is @”{{3,2},{4,5}}”. The string is not localized, so items are always separated with a comma.
 
 ## See Also
 

@@ -26,7 +26,7 @@ An array of [`DSPComplex`](dspcomplex.md) structures.
 
 ## Parameters
 
-- `input`: An array of   structures that contains the input.
+- `input`: An array of [`DSPComplex`](dspcomplex.md) structures that contains the input.
 
 ## See Also
 

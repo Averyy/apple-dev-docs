@@ -13,6 +13,10 @@
 object DefineProfileResponse.Devices
 ```
 
+## Properties
+
+- `Any Key` (string)
+
 ## See Also
 
 - [object DefineProfileResponse](defineprofileresponse.md)

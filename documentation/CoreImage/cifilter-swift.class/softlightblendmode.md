@@ -29,6 +29,9 @@ This method applies the soft-light blend mode filter to an image. The effect cal
 
 The soft-light blend mode filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in the image becoming slightly darker with more saturation and the colors of the gradient image:
 
 ```swift

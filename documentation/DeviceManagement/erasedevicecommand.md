@@ -29,6 +29,11 @@ object EraseDeviceCommand
 - [object EraseDeviceCommand.Command](erasedevicecommand/command-data.dictionary.md)
   The command to remotely and immediately erase a device.
 
+## Properties
+
+- `Command` (EraseDeviceCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object EraseDeviceResponse](erasedeviceresponse.md)

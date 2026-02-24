@@ -28,8 +28,8 @@ You can also animate weights implicitly or explicitly using the keypath `weights
 
 ## Parameters
 
-- `weight`: A number specifying the contribution of the target geometry to the blended surface, generally between   and  .
-- `targetIndex`: The index of a geometry in the morpher’s   array.
+- `weight`: A number specifying the contribution of the target geometry to the blended surface, generally between `0.0` and `1.0`.
+- `targetIndex`: The index of a geometry in the morpher’s [`targets`](scnmorpher/targets.md) array.
 
 ## See Also
 

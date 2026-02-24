@@ -26,9 +26,9 @@ Call this method before encoding patch-drawing commands.
 
 ## Parameters
 
-- `buffer`: An   instance that stores the per-patch tessellation factors, which can’t be empty or  .
-- `offset`: The distance, in bytes, between the start of the data and the start of the buffer, which needs to be a multiple of  .
-- `instanceStride`: The number of bytes between two instances of data in  , which needs to be a multiple of  .
+- `buffer`: An [`MTLBuffer`](mtlbuffer.md) instance that stores the per-patch tessellation factors, which can’t be empty or `nil`.
+- `offset`: The distance, in bytes, between the start of the data and the start of the buffer, which needs to be a multiple of `4`.
+- `instanceStride`: The number of bytes between two instances of data in `buffer`, which needs to be a multiple of `4`.
 
 ## See Also
 

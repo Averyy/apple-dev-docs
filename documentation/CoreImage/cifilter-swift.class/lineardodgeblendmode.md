@@ -29,6 +29,9 @@ This method applies the linear-dodge-blend mode filter to an image. The effect c
 
 The linear-dodge-blend mode filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in the image becoming brighter with both images’ colors:
 
 ```swift

@@ -43,7 +43,7 @@ Thus, for example, `@"({decimal})"` would specify the format for a list numbered
 ## Parameters
 
 - `markerFormat`: The marker format for the text list.
-- `options`: The marker options for the text list. Values for   are listed in Constants.
+- `options`: The marker options for the text list. Values for `mask` are listed in Constants.
 
 ## See Also
 

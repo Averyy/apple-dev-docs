@@ -14,6 +14,11 @@ Considering this context, the dimensions recorded in the image description defin
 
 Although the result of applying the clean aperture and the pixel aspect ratio is what is intended for final display, there are cases where it is useful to display all the pixels that exist in the content for various different purposes. Readers parsing QuickTime movies require information allowing these different display modes in order to provide this flexibility:
 
+- **Clean Mode**: In this mode both the clean aperture and the pixel aspect ratio are applied. The dimensions of the track become equal to the clean dimensions which are equal to the display dimensions (with conformed contents).
+- **Production Mode**: This mode applies the pixel aspect ratio but not the clean aperture. The image is presented in the correct aspect ratio, but the extra pixels outside of the image that exists in the source material will be presented. The track dimensions are equal to the result of applying the pixel aspect ratio.
+- **Classic Mode**: This mode displays the image without applying either the pixel aspect ratio or the clean aperture. The image is displayed using the track header dimensions, meaning the decompressed picture is scaled into the track header dimensions if the encoded dimensions are different.
+- **Encoded Pixels**: The encoded pixels are displayed intact in this mode. Under this mode the track dimensions are equal to the encoded dimensions. No scaling or transformation takes place.
+
 The information for each of these presentation modes are represented in the optional track aperture mode dimensions atoms.
 
 > **Note**: Older applications built prior to QuickTime 7 will continue to use the dimension values stored in the track header.

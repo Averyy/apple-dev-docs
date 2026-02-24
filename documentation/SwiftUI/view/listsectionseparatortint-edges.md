@@ -47,8 +47,8 @@ To change the visibility and tint color for a row separator, use [`listRowSepara
 
 ## Parameters
 
-- `color`: The color to use to tint the section separators, or   to   use the default color for the current list style.
-- `edges`: The set of row edges for which the tint applies.   The list style might decide to not display certain separators,   typically the top edge. The default is  .
+- `color`: The color to use to tint the section separators, or `nil` to use the default color for the current list style.
+- `edges`: The set of row edges for which the tint applies. The list style might decide to not display certain separators, typically the top edge. The default is [`all`](verticaledge/set/all.md).
 
 ## See Also
 

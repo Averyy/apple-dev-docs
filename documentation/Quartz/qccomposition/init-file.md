@@ -20,7 +20,7 @@ A Quartz Composer composition object or `nil` if there is an error.
 
 ## Parameters
 
-- `path`: A path to a file created with the Quartz Composer developer tool (  extension).
+- `path`: A path to a file created with the Quartz Composer developer tool (`.qtz` extension).
 
 ## See Also
 

@@ -10,6 +10,10 @@ A message that tells people why the app needs access to their Game Center friend
 - iPadOS 14.5+
 
 
+
+**Type**: string
+
+
 ---
 
 *[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/information-property-list/nsgkfriendlistusagedescription)*

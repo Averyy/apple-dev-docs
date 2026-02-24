@@ -26,7 +26,7 @@ An array of [`MKGeoJSONObject`](mkgeojsonobject.md) objects, or an error if the 
 
 ## Parameters
 
-- `data`: An   object that contains the JSON to decode.
+- `data`: An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object that contains the JSON to decode.
 
 
 ---

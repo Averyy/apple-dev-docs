@@ -29,7 +29,7 @@ The `configuration` parameter provides user-customized values, as defined in you
 
 - `configuration`: The intent containing user-customized values.
 - `context`: An object describing the context to show the widget in.
-- `completion`: The completion handler to call after you create the   timeline.
+- `completion`: The completion handler to call after you create the timeline.
 
 ## See Also
 

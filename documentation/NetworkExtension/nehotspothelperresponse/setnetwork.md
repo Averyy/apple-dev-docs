@@ -23,7 +23,7 @@ In response to the [`NEHotspotHelperCommandType.evaluate`](nehotspothelpercomman
 
 ## Parameters
 
-- `network`: The annotated   object. This must be the same object that was passed in the corresponding   object.
+- `network`: The annotated [`NEHotspotNetwork`](nehotspotnetwork.md) object. This must be the same object that was passed in the corresponding [`NEHotspotHelperCommand`](nehotspothelpercommand.md) object.
 
 ## See Also
 

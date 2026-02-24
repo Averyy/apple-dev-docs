@@ -32,8 +32,8 @@ Returns a localized string given a list of possible localizations. The one most 
 
 - `bundle`: The bundle to examine.
 - `key`: The key for the localized string to retrieve. This key will be used to look up the localized string in the strings file. Typically the key is identical to the value of the localized string in the development language.
-- `value`: A default value to return if no value exists for  .
-- `tableName`: The name of the strings file to search. The name should not include the   filename extension. The case of the string must match that of the file name, even on file systems (such as HFS+) that are not case sensitive with regards to file names
+- `value`: A default value to return if no value exists for `key`.
+- `tableName`: The name of the strings file to search. The name should not include the `strings` filename extension. The case of the string must match that of the file name, even on file systems (such as HFS+) that are not case sensitive with regards to file names
 - `localizations`: An array of BCP 47 language codes corresponding to available localizations. Bundle compares the array against its available localizations, and uses the best result to retrieve the localized string. If empty, we treat it as no localization is available, and may return a fallback.
 
 ## See Also

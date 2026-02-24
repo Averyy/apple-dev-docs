@@ -26,7 +26,7 @@ Inside the force effect update function, you are responsible to compute and outp
 ## Parameters
 
 - `force`: The force value.
-- `index`: The index to the rigid body. The index should be in the range [0,  ].
+- `index`: The index to the rigid body. The index should be in the range [0, [`physicsBodyCount`](forceeffectparameters/physicsbodycount.md)].
 
 
 ---

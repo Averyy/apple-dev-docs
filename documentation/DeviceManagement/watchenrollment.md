@@ -46,6 +46,11 @@ Specify `com.apple.configuration.watch.enrollment` as the declaration type.
 }
 ```
 
+## Properties
+
+- `AnchorCertificateAssetReferences` ([string]): An array of identifiers of asset declarations that contain anchor certificates to use to evaluate the trust of the enrollment profile server. Set the type of the corresponding assets to `com.apple.asset.credential.certificate`. These certificates are pinned, meaning that the server specified by the `EnrollmentProfileURL` must use a certificate that chains to one of the certs in this array. If it chains to one of the built-in trusted root certificates but not one of the `AnchorCertificateAssetReferences` certs, the connection will fail.
+- `EnrollmentProfileURL` (string) *(required)*: The URL of the profile that the Apple Watch downloads and installs if the user opts in to management during the pairing process, which needs to start with `https://`. Successful enrollment requires that the pairing iPhone is supervised and the profile contains an MDM payload. Apple Watch attempts to install each payload that the profile contains.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

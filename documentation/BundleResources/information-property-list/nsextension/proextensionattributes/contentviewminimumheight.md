@@ -8,6 +8,10 @@ An integer that specifies the minimum height of the floating window.
 **Availability**:
 - ProVideo Workflow Extensions 1.0+
 
+
+
+**Type**: integer
+
 ## See Also
 
 - [ContentViewMinimumWidth](information-property-list/nsextension/proextensionattributes/contentviewminimumwidth.md)

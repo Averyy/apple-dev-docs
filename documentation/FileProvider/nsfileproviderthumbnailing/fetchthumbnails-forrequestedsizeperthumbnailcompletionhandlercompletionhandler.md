@@ -102,8 +102,10 @@ If a given item doesn’t have a thumbnail, call the `perThumbnailCompletionHand
 
 - `itemIdentifiers`: The identifiers of the specified items.
 - `size`: The size for the thumbnail image.
-- `perThumbnailCompletionHandler`: A block that you call once for each item in the   array. Pass the following parameters:
-- `completionHandler`: A block that you call after returning a thumbnail for each item. Pass the following parameters:
+- `perThumbnailCompletionHandler`: A block that you call once for each item in the `itemIdentifiers` array. Pass the following parameters: - **`identifier`**: The identifier of the item.
+- **`imageData`**: A data object containing the thumbnail, or `nil` if an error occurred. This data object must be in an image format supported by [`Image I/O`](https://developer.apple.com/documentation/ImageIO).
+- **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
+- `completionHandler`: A block that you call after returning a thumbnail for each item. Pass the following parameters: - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 
 ---

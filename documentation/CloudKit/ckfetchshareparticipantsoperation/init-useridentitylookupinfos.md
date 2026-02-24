@@ -26,7 +26,7 @@ After you create the operation, assign a handler to the [`fetchShareParticipants
 
 ## Parameters
 
-- `userIdentityLookupInfos`: The user data for the participants. If you specify  , you must assign a value to the   property before you execute this operation.
+- `userIdentityLookupInfos`: The user data for the participants. If you specify `nil`, you must assign a value to the [`userIdentityLookupInfos`](ckfetchshareparticipantsoperation/useridentitylookupinfos.md) property before you execute this operation.
 
 ## See Also
 

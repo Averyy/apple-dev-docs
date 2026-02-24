@@ -14,6 +14,10 @@ A dictionary that describes the result of a command to change the firmware passw
 object SetFirmwarePasswordResponse.SetFirmwarePassword
 ```
 
+## Properties
+
+- `PasswordChanged` (boolean) *(required)*: If `true`, the password change succeeded.
+
 ## See Also
 
 - [object SetFirmwarePasswordResponse.ErrorChainItem](setfirmwarepasswordresponse/errorchainitem.md)

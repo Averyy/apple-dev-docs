@@ -27,7 +27,7 @@ A new binding.
 
 ## Parameters
 
-- `keyPath`: A key path to a specific value on the   wrapped object.
+- `keyPath`: A key path to a specific value on the wrapped object.
 
 
 ---

@@ -30,10 +30,10 @@ This function creates an immutable CFData object from a buffer of unstructured b
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `bytes`: A pointer to the byte buffer to be used as the backing store of the CFData object.
-- `length`: The number of bytes in the buffer  .
-- `bytesDeallocator`: The allocator to use to deallocate the external buffer when the CFData object is deallocated. If the default allocator is suitable for this purpose, pass   or kCFAllocatorDefault. If you do not want the created CFData object to deallocate the buffer (that is, you assume responsibility for freeing it yourself), pass kCFAllocatorNull.
+- `length`: The number of bytes in the buffer `bytes`.
+- `bytesDeallocator`: The allocator to use to deallocate the external buffer when the CFData object is deallocated. If the default allocator is suitable for this purpose, pass `NULL` or kCFAllocatorDefault. If you do not want the created CFData object to deallocate the buffer (that is, you assume responsibility for freeing it yourself), pass kCFAllocatorNull.
 
 ## See Also
 

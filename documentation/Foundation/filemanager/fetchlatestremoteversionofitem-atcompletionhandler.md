@@ -33,7 +33,7 @@ If the device isn’t connected to the network, the call may fail with [`NSFileR
 ## Parameters
 
 - `url`: The URL of the item for which to check the version.
-- `completionHandler`: A closure or block that the framework calls when the fetch action completes. It receives parameters of types   and  . The error is   if fetching the remote version succeeded; otherwise it indicates the error that caused the call to fail. In Swift, you can omit the completion handler, catching any error in a  -  block and receiving the version as the return value.
+- `completionHandler`: A closure or block that the framework calls when the fetch action completes. It receives parameters of types [`NSFileVersion`](nsfileversion.md) and [`NSError`](nserror.md). The error is `nil` if fetching the remote version succeeded; otherwise it indicates the error that caused the call to fail. In Swift, you can omit the completion handler, catching any error in a `do`-`catch` block and receiving the version as the return value.
 
 ## See Also
 

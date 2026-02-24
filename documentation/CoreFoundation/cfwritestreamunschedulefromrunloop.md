@@ -23,8 +23,8 @@ func CFWriteStreamUnscheduleFromRunLoop(_ stream: CFWriteStream!, _ runLoop: CFR
 ## Parameters
 
 - `stream`: The stream to remove.
-- `runLoop`: The run loop from which to remove  .
-- `runLoopMode`: The run loop mode of   from which to remove  .
+- `runLoop`: The run loop from which to remove `stream`.
+- `runLoopMode`: The run loop mode of `runLoop` from which to remove `stream`.
 
 ## See Also
 

@@ -15,7 +15,7 @@ typealias FFCooperativeLevelFlag = UInt32
 
 #### Discussion
 
-flags for .
+flags for **FFDeviceSetCooperativeLevel()**.
 
 ## See Also
 

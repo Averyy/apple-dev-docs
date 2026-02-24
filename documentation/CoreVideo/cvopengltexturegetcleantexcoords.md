@@ -21,10 +21,10 @@ This function automatically takes into account whether or not the texture is fli
 ## Parameters
 
 - `image`: The Core Video OpenGL texture whose clean tex coordinates you want to obtain.
-- `lowerLeft`: On output, the   array holds the   and   texture coordinates of the lower-left corner of the image.
-- `lowerRight`: On output, the   array holds the   and   texture coordinates of the lower-right corner of the image.
-- `upperRight`: On output, the   array holds the   and   texture coordinates of the upper-right corner of the image.
-- `upperLeft`: On output, the   array holds the   and   texture coordinates of the upper-left corner of the image.
+- `lowerLeft`: On output, the `GLFloat` array holds the *s* and *t* texture coordinates of the lower-left corner of the image.
+- `lowerRight`: On output, the `GLFloat` array holds the *s* and *t* texture coordinates of the lower-right corner of the image.
+- `upperRight`: On output, the `GLFloat` array holds the *s* and *t* texture coordinates of the upper-right corner of the image.
+- `upperLeft`: On output, the `GLFloat` array holds the *s* and *t* texture coordinates of the upper-left corner of the image.
 
 ## See Also
 

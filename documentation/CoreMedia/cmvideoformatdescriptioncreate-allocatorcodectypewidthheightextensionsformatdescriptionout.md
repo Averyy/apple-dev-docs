@@ -30,12 +30,12 @@ The caller owns the returned `CMFormatDescription`, and must release it when don
 
 ## Parameters
 
-- `allocator`: CFAllocator to be used. Pass   or NULL to use the default allocator.
+- `allocator`: CFAllocator to be used. Pass `kCFAllocatorDefault` or NULL to use the default allocator.
 - `codecType`: The type of video compression.
 - `width`: The width of encoded video.
 - `height`: The height of encoded video.
-- `extensions`: Dictionary of extension key/value pairs. Keys are always  .                                                                    Values are always property list objects (ie.  ,  ,  ,                                                                     ,  ,  , or  ). Can be  .
-- `formatDescriptionOut`: On output, returns newly created video 
+- `extensions`: Dictionary of extension key/value pairs. Keys are always `CFString`.                                                                    Values are always property list objects (ie. `CFData`, `CFString`, `CFArray`,                                                                    `CFDictionary`, `CFDate`, `CFBoolean`, or `CFNumber`). Can be `NULL`.
+- `formatDescriptionOut`: On output, returns newly created video `CMFormatDescription`
 
 ## See Also
 

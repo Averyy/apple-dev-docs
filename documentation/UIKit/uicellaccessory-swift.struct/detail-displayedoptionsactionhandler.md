@@ -24,8 +24,8 @@ A configured detail cell accessory. The accessory displays as the system informa
 
 ## Parameters
 
-- `displayed`: The cell-editing states that the detail accessory appears in. This parameter has a default value of  .
-- `options`: Configuration options for the detail accessory. See   for possible configuration options.
+- `displayed`: The cell-editing states that the detail accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.always`](uicellaccessory-swift.struct/displayedstate/always.md).
+- `options`: Configuration options for the detail accessory. See [`UICellAccessory.DetailOptions`](uicellaccessory-swift.struct/detailoptions.md) for possible configuration options.
 - `actionHandler`: An optional closure that the system calls when a user interacts with the detail accessory.
 
 ## See Also

@@ -23,7 +23,7 @@ The device can install a package immediately after it applies a configuration, o
 | `Required` | The device installs the package when it applies the configuration. |
 | `Optional` | The device doesn’t install the package when it applies the configuration. Instead, the user chooses when to install the package. |
 
-A  displays required and optional packages to the user, provides details about packages, and allows the user to trigger installs of optional packages. For more information, see [`Displaying managed apps and packages`](displaying-managed-apps-and-packages.md).
+A *management app* displays required and optional packages to the user, provides details about packages, and allows the user to trigger installs of optional packages. For more information, see [`Displaying managed apps and packages`](displaying-managed-apps-and-packages.md).
 
 #### Update Packages
 

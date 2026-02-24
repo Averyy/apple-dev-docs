@@ -25,8 +25,8 @@ The caller must release the returned list using [`CFRelease`](https://developer.
 
 ## Parameters
 
-- `options`: Not currently supported. Pass   for this parameter.
-- `listOfVideoEncodersOut`: Pointer to a   of available video encoders.
+- `options`: Not currently supported. Pass `NULL` for this parameter.
+- `listOfVideoEncodersOut`: Pointer to a `CFArray` of available video encoders.
 
 ## See Also
 

@@ -21,8 +21,8 @@ A Boolean that is set to [`true`](https://developer.apple.com/documentation/Swif
 ## Parameters
 
 - `uniqueName`: A unique name for this custom transform. It is recommended that a reverse DNS name be used for the name of your custom transform
-- `createTransformFunction`: A   function pointer. The function must return a   block. Call block_copy on this block before returning it. Failure to do so results in undefined behavior.
-- `error`: A pointer that the function uses to provide an error object with details if an error occurs. The caller becomes responsible for the object’s memory. Pass   to ignore the error.
+- `createTransformFunction`: A [`SecTransformCreateFP`](sectransformcreatefp.md) function pointer. The function must return a [`SecTransformInstanceBlock`](sectransforminstanceblock.md) block. Call block_copy on this block before returning it. Failure to do so results in undefined behavior.
+- `error`: A pointer that the function uses to provide an error object with details if an error occurs. The caller becomes responsible for the object’s memory. Pass `NULL` to ignore the error.
 
 
 ---

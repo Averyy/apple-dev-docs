@@ -22,7 +22,7 @@ var allowsLinkPreview: Bool { get set }
 
 In iOS, this property is available on devices that support 3D Touch. In iOS 10 and later, the default value is [`true`](https://developer.apple.com/documentation/Swift/true); in previous versions of iOS, the default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
-If you set this property’s value to [`true`](https://developer.apple.com/documentation/Swift/true), an iOS user can press links to preview link destinations and detected data such as addresses and phone numbers. Such previews are known to users as . If a user presses deeper on a link preview, the preview navigates (or , in user terminology) to the destination. Because pop navigation switches the user from your app to Safari, it is opt-in for iOS apps.
+If you set this property’s value to [`true`](https://developer.apple.com/documentation/Swift/true), an iOS user can press links to preview link destinations and detected data such as addresses and phone numbers. Such previews are known to users as *peeks*. If a user presses deeper on a link preview, the preview navigates (or *pops*, in user terminology) to the destination. Because pop navigation switches the user from your app to Safari, it is opt-in for iOS apps.
 
 If you want to support link preview in iOS but also want to keep users within your app, you can switch from using the [`WKWebView`](wkwebview.md) class to the [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) class. If you are using a web view as an in-app browser, making this change is best practice. The Safari view controller class automatically supports link previews.
 

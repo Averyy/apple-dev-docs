@@ -75,9 +75,31 @@ There are two flavors of Motion-JPEG currently in use. These two formats differ 
 
 Each field of Motion-JPEG format A fully complies with the ISO JPEG specification, and therefore supports application markers. QuickTime uses the APP1 marker to store control information, as follows (all of the fields are 32-bit integers):
 
+- **Reserved**: Unpredictable; should be set to `0`.
+- **Tag**: Identifies the data type; this field must be set to `'mjpg'`.
+- **Field size**: The actual size of the image data for this field, in bytes.
+- **Padded field size**: Contains the size of the image data, including pad bytes. Some video hardware may append pad bytes to the image data; this field, along with the field size field, allows you to compute how many pad bytes were added.
+- **Offset to next field**: The offset, in bytes, from the start of the field data to the start of the next field in the bitstream. This field should be set to `0` in the last field’s marker data.
+- **Quantization table offset**: The offset, in bytes, from the start of the field data to the quantization table marker. If this field is set to `0`, check the image description for a default quantization table.
+- **Huffman table offset**: The offset, in bytes, from the start of the field data to the Huffman table marker. If this field is set to `0`, check the image description for a default Huffman table.
+- **Start of frame offset**: The offset from the start of the field data to the start of image marker. This field should never be set to `0`.
+- **Start of scan offset**: The offset, in bytes, from the start of the field data to the start of the scan marker. This field should never be set to `0`.
+- **Start of data offset**: The offset, in bytes, from the start of the field data to the start of the data stream. Typically, this immediately follows the start of scan data.
+
 > **Note**: The last two fields have been added since the original Motion-JPEG specification, and so they may be missing from some Motion-JPEG A files. You should check the length of the APP1 marker before using the start of scan offset and start of data offset fields.
 
 Motion-JPEG format B does not support markers. In place of the marker, therefore, QuickTime inserts a header at the beginning of the bitstream. Again, all of the fields are 32-bit integers.
+
+- **Reserved**: Unpredictable; should be set to `0`.
+- **Tag**: The data type; this field must be set to `'mjpg'`.
+- **Field size**: The actual size of the image data for this field, in bytes.
+- **Padded field size**: The size of the image data, including pad bytes. Some video hardware may append pad bytes to the image data; this field, along with the field size field, allows you to compute how many pad bytes were added.
+- **Offset to next field**: The offset, in bytes, from the start of the field data to the start of the next field in the bitstream. This field should be set to `0` in the second field’s header data.
+- **Quantization table offset**: The offset, in bytes, from the start of the field data to the quantization table. If this field is set to `0`, check the image description for a default quantization table.
+- **Huffman table offset**: The offset, in bytes, from the start of the field data to the Huffman table. If this field is set to `0`, check the image description for a default Huffman table.
+- **Start of frame offset**: The offset from the start of the field data to the field’s image data. This field should never be set to `0`.
+- **Start of scan offset**: The offset, in bytes, from the start of the field data to the start of scan data.
+- **Start of data offset**: The offset, in bytes, from the start of the field data to the start of the data stream. Typically, this immediately follows the start of scan data.
 
 > **Note**: The last two fields were “reserved, must be set to zero” in the original Motion-JPEG specification.
 

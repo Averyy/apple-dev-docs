@@ -43,9 +43,9 @@ struct SimpleGauge: View {
 ## Parameters
 
 - `value`: The value to show on the gauge.
-- `bounds`: The range of the valid values. Defaults to  .
+- `bounds`: The range of the valid values. Defaults to `0...1`.
 - `label`: A view that describes the purpose of the gauge.
-- `currentValueLabel`: A view that describes the current value of   the gauge.
+- `currentValueLabel`: A view that describes the current value of the gauge.
 
 ## See Also
 

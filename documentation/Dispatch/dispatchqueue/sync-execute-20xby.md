@@ -26,7 +26,7 @@ The return value of the item in the `work` parameter.
 
 ## Parameters
 
-- `work`: The work item containing the work to perform. The block encapsulated by the work item should return a result, which is then returned by this method. For information on how to create this work item, see  .
+- `work`: The work item containing the work to perform. The block encapsulated by the work item should return a result, which is then returned by this method. For information on how to create this work item, see [`DispatchWorkItem`](dispatchworkitem.md).
 
 ## See Also
 

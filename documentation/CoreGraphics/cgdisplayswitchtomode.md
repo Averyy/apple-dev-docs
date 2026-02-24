@@ -33,7 +33,7 @@ This deprecated function takes as a parameter a display mode dictionary. Startin
 ## Parameters
 
 - `display`: The identifier of the display to be accessed.
-- `mode`: A display mode dictionary that contains information about the display mode to set. The dictionary passed in must be a dictionary returned by another Quartz display function such as   or  . For a list of the properties in a display mode dictionary, see   and  . For general information about using dictionaries, see  .
+- `mode`: A display mode dictionary that contains information about the display mode to set. The dictionary passed in must be a dictionary returned by another Quartz display function such as [`CGDisplayAvailableModes(_:)`](cgdisplayavailablemodes(_:).md) or [`CGDisplayBestModeForParameters(_:_:_:_:_:)`](cgdisplaybestmodeforparameters(_:_:_:_:_:).md). For a list of the properties in a display mode dictionary, see [`Display Mode Standard Properties`](display-mode-standard-properties.md) and [`Display Mode Optional Properties`](display-mode-optional-properties.md). For general information about using dictionaries, see [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary).
 
 ## See Also
 

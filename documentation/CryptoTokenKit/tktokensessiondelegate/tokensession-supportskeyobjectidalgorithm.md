@@ -27,7 +27,7 @@ optional func tokenSession(_ session: TKTokenSession, supports operation: TKToke
 ## Parameters
 
 - `session`: The token session.
-- `operation`: The operation to perform. For possible values, see  .
+- `operation`: The operation to perform. For possible values, see `TKTokenOperation`.
 - `keyObjectID`: The identifier of the private key object.
 - `algorithm`: The algorithm to be used by the operation.
 

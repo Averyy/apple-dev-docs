@@ -61,8 +61,8 @@ This modifier affects the given view, as well as that view’s descendant views.
 
 ## Parameters
 
-- `keyPath`: A key path that indicates the property of the    structure to update.
-- `value`: The new value to set for the item specified by  .
+- `keyPath`: A key path that indicates the property of the [`EnvironmentValues`](environmentvalues.md) structure to update.
+- `value`: The new value to set for the item specified by `keyPath`.
 
 ## See Also
 

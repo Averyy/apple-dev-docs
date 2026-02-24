@@ -26,7 +26,7 @@ An animation resource that shares the configuration of the definition.
 
 ## Parameters
 
-- `definition`: The configuration of a timeframe and visual semantics from   which to generate an animation resource.
+- `definition`: The configuration of a timeframe and visual semantics from which to generate an animation resource.
 
 ## See Also
 

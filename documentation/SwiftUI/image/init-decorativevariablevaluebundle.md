@@ -31,8 +31,8 @@ SwiftUI ignores this image for accessibility purposes.
 ## Parameters
 
 - `name`: The name of the image resource to lookup.
-- `variableValue`: An optional value between   and   that   the rendered image can use to customize its appearance, if   specified. If the symbol doesn’t support variable values, this   parameter has no effect.
-- `bundle`: The bundle to search for the image resource. If   , SwiftUI uses the main  . Defaults to  .
+- `variableValue`: An optional value between `0.0` and `1.0` that the rendered image can use to customize its appearance, if specified. If the symbol doesn’t support variable values, this parameter has no effect.
+- `bundle`: The bundle to search for the image resource. If `nil`, SwiftUI uses the main `Bundle`. Defaults to `nil`.
 
 ## See Also
 

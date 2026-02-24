@@ -74,9 +74,9 @@ Reading this value is only valid inside a [`View`](view.md) that inherits the en
 
 ## Parameters
 
-- `updateStrategy`: Whether the action should be run for all viewpoint   changes or only for supported viewpoint changes.
-- `initial`: Whether the action should be run when this view initially   appears.
-- `action`: A closure to run when the viewpoint changes. The closure is   also run when the volume is first opened if   is  .
+- `updateStrategy`: Whether the action should be run for all viewpoint changes or only for supported viewpoint changes.
+- `initial`: Whether the action should be run when this view initially appears.
+- `action`: A closure to run when the viewpoint changes. The closure is also run when the volume is first opened if `initial` is `true`.
 
 ## See Also
 

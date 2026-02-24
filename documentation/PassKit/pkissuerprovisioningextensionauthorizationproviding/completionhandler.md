@@ -22,6 +22,8 @@ var completionHandler: ((PKIssuerProvisioningExtensionAuthorizationResult) -> Vo
 
 The completion handler takes the following parameter:
 
+- **`result`**: A [`PKIssuerProvisioningExtensionAuthorizationResult`](pkissuerprovisioningextensionauthorizationresult.md) case that indicates the result of authorizing the addition of the payment card.
+
 ## See Also
 
 - [enum PKIssuerProvisioningExtensionAuthorizationResult](pkissuerprovisioningextensionauthorizationresult.md)

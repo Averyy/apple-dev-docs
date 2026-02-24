@@ -22,7 +22,7 @@ init(values: [ComponentType], width: Int, height: Int)
 
 ## Parameters
 
-- `values`: The kernel weights or structuring element values that must contain   elements.
+- `values`: The kernel weights or structuring element values that must contain `height * width` elements.
 - `width`: The width of the kernel that must be a positive, odd number.
 - `height`: The height of the kernel that must be a positive, odd number.
 

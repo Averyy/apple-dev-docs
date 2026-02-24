@@ -24,7 +24,7 @@ The image used for the specified state.
 
 ## Parameters
 
-- `state`: The state that uses the image. Possible values are described in  .
+- `state`: The state that uses the image. Possible values are described in [`UIControl.State`](uicontrol/state-swift.struct.md).
 
 ## See Also
 

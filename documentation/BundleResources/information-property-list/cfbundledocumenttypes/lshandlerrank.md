@@ -13,6 +13,12 @@ The ranking of this app among apps that declare themselves as editors or viewers
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
+**Default**: `Default`
+
 ## See Also
 
 - [CFBundleTypeIconFile](information-property-list/cfbundledocumenttypes/cfbundletypeiconfile.md)

@@ -10,6 +10,10 @@ A string containing the width and height of the image.
 - iPadOS 7.0+
 - tvOS 9.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This string represents the size of the display for which the image is intended. You must specify the width and height with respect to the device in a portrait orientation. In other words, portrait and landscape images targeting the same device would have the same width and height.

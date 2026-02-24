@@ -20,7 +20,7 @@ func addLinearVelocity(_ velocity: CGPoint, for item: any UIDynamicItem)
 
 ## Parameters
 
-- `velocity`: The linear velocity, expressed in points per second, that you want to add to the specified dynamic item. Default value is  . Applying a negative value reduces the linear velocity by the specified amount.
+- `velocity`: The linear velocity, expressed in points per second, that you want to add to the specified dynamic item. Default value is `0`. Applying a negative value reduces the linear velocity by the specified amount.
 - `item`: The dynamic item whose linear velocity you want to increase (or decrease).
 
 ## See Also

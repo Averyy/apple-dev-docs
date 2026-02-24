@@ -40,7 +40,10 @@ For more information about setting up a marketplace app in App Store Connect, se
 
 When you’re ready to distribute your app, submit it to App Store Connect for review. Choose the review type:
 
-If Apple approves your app for distribution, download your app’s  from App Store Connect, this package contains everything that the system needs to install your app. For more information, see [`Get an alternative distribution package ID`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/distributing-apps-in-the-european-union/get-an-alternative-distribution-package-id).
+- **App Store**: A web-distributed binary that you also intend to release on marketplace apps, including the App Store.
+- **[`Notarization`](https://developer.apple.comhttps://developer.apple.com/support/dma-and-apps-in-the-eu/#notarization-for-ios-apps)**: A marketplace app or other app that won’t also reside on the App Store; see [`Submit for Notarization`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/distributing-apps-in-the-european-union/submit-for-notarization).
+
+If Apple approves your app for distribution, download your app’s *alternative distribution package* from App Store Connect, this package contains everything that the system needs to install your app. For more information, see [`Get an alternative distribution package ID`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/distributing-apps-in-the-european-union/get-an-alternative-distribution-package-id).
 
 Assemble and host the alternative distribution package on your web server in a location accessible to the device; see [`Ingesting an alternative distribution package`](ingesting-an-alternative-distribution-package.md). When you want to update your app, submit it to App Store Connect and repeat the process.
 

@@ -16,14 +16,14 @@ typealias CFXMLParserAddChildCallBack = (CFXMLParser?, UnsafeMutableRawPointer?,
 
 #### Discussion
 
-If the [`CFXMLParserCreateXMLStructureCallBack`](cfxmlparsercreatexmlstructurecallback.md) function returns NULL for a given structure, that structure is omitted entirely, and this callback will  be called for either a NULL child or parent.
+If the [`CFXMLParserCreateXMLStructureCallBack`](cfxmlparsercreatexmlstructurecallback.md) function returns NULL for a given structure, that structure is omitted entirely, and this callback will *not* be called for either a NULL child or parent.
 
 ## Parameters
 
 - `parser`: The CFXMLParser object making the callback.
-- `parent`: The program-defined value representing the XML element to whom   is being added. This value was returned by the   callback when this element’s open tag was detected.
-- `child`: The program-defined value representing the XML element that is being added to  . This value was returned by the   callback when this element’s open tag was detected.
-- `info`: The program-defined context data you specified in the   structure when creating the parser.
+- `parent`: The program-defined value representing the XML element to whom `child` is being added. This value was returned by the [`CFXMLParserCreateXMLStructureCallBack`](cfxmlparsercreatexmlstructurecallback.md) callback when this element’s open tag was detected.
+- `child`: The program-defined value representing the XML element that is being added to `parent`. This value was returned by the [`CFXMLParserCreateXMLStructureCallBack`](cfxmlparsercreatexmlstructurecallback.md) callback when this element’s open tag was detected.
+- `info`: The program-defined context data you specified in the [`CFXMLParserContext`](cfxmlparsercontext.md) structure when creating the parser.
 
 ## See Also
 

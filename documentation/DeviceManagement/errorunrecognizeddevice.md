@@ -25,6 +25,12 @@ The schema for a JSON or property list XML document that an MDM server’s 403 r
 
 The MDM server returns this response when it doesn’t recognize the device making the request. This causes the device to unenroll from the MDM server. Use this error instead of the server returning a 401 response to cause an unenroll.
 
+## Properties
+
+- `code` (string) *(required)*: Indicates that the device is not recognized by the server. This causes the device to unenroll from MDM.
+- `description` (string): A description of the error. Only use this for logging purposes and don’t display it to the user.
+- `message` (string): A description of the error to display to the user.
+
 ## See Also
 
 - [object ErrorCodePairingTokenMissing](errorcodepairingtokenmissing.md)

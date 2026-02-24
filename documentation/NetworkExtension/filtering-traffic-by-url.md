@@ -15,7 +15,7 @@ Perform fast and robust filtering of full URLs by managing URL filtering configu
 
 Filtering requests by URL presents an efficiency challenge because real-world use of URL filters often involves testing against thousands, or even millions, of URLs. To perform this filtering, the Network Extension framework’s URL-filtering API uses two steps:
 
-1. A local  to rapidly make an initial decision about URLs that aren’t in the filtering set
+1. A local *Bloom filter* to rapidly make an initial decision about URLs that aren’t in the filtering set
 2. A configured Private Information Retrieval (PIR) server to consult for potential matches
 
 The sample code project `SimpleURLFilter` demonstrates how to use both of these steps to create a working URL filter.

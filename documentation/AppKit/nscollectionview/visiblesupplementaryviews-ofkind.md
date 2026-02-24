@@ -24,7 +24,7 @@ The views returned by this method represent the ones that are active and are cur
 
 ## Parameters
 
-- `elementKind`: The kind of the supplementary views you want returned. The layout object defines the kinds of supplementary views it supports. This parameter must not be  .
+- `elementKind`: The kind of the supplementary views you want returned. The layout object defines the kinds of supplementary views it supports. This parameter must not be `nil`.
 
 ## See Also
 

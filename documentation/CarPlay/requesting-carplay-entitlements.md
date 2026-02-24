@@ -48,7 +48,7 @@ To create the entitlements file:
 3. Enter `Entitlements` as the filename and click Create.
 4. In the project editor, choose Build Settings.
 5. Click All and Combined in the scope bar.
-6. Use the search box to find the  setting.
+6. Use the search box to find the *Code Signing Entitlements* setting.
 7. Enter the full path of the `Entitlements.plist` file as the setting’s value.
 8. Open the file in Xcode and add the applicable entitlement from the table below as a Boolean.
 

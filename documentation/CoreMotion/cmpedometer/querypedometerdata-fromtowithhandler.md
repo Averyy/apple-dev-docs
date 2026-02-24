@@ -26,9 +26,9 @@ It is safe to call this method at the same time that you are generating continuo
 
 ## Parameters
 
-- `start`: The start date for the data you want. This parameter must not be  .
-- `end`: The end date for the data you want. This parameter must not be  .
-- `handler`: The block to execute with the resulting data. This block is called once on the same serial dispatch queue used to process continuous updates. This parameter must not be  . For information about this block, see  .
+- `start`: The start date for the data you want. This parameter must not be `nil`.
+- `end`: The end date for the data you want. This parameter must not be `nil`.
+- `handler`: The block to execute with the resulting data. This block is called once on the same serial dispatch queue used to process continuous updates. This parameter must not be `nil`. For information about this block, see [`CMPedometerHandler`](cmpedometerhandler.md).
 
 
 ---

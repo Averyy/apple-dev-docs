@@ -23,7 +23,7 @@ func CFSetReplaceValue(_ theSet: CFMutableSet!, _ value: UnsafeRawPointer!)
 ## Parameters
 
 - `theSet`: The set to modify.
-- `value`: The value to replace in  . If this value does not already exist in  , the function does nothing. You may pass the value itself instead of a pointer if it is pointer-size or less. The equal callback provided when   was created is used to compare. If the equal callback was  , pointer equality (in C, ==) is used. If  , or any other value in  , is not understood by the equal callback, the behavior is undefined.
+- `value`: The value to replace in `theSet`. If this value does not already exist in `theSet`, the function does nothing. You may pass the value itself instead of a pointer if it is pointer-size or less. The equal callback provided when `theSet` was created is used to compare. If the equal callback was `NULL`, pointer equality (in C, ==) is used. If `value`, or any other value in `theSet`, is not understood by the equal callback, the behavior is undefined.
 
 ## See Also
 

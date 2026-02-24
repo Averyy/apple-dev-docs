@@ -38,7 +38,7 @@ struct RedBorderedButtonStyle: PrimitiveButtonStyle {
 
 ## Parameters
 
-- `configuration`: A configuration for a style with a custom   appearance and custom interaction behavior.
+- `configuration`: A configuration for a style with a custom appearance and custom interaction behavior.
 
 
 ---

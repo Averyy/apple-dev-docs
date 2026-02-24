@@ -29,7 +29,7 @@ The system calls this method only when your app is running and has an existing s
 ## Parameters
 
 - `windowScene`: The window scene object receiving the metadata.
-- `cloudKitShareMetadata`: Information about the CloudKit data that is now available to the app. Use this object to retrieve information about the   object and the associated records.
+- `cloudKitShareMetadata`: Information about the CloudKit data that is now available to the app. Use this object to retrieve information about the [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) object and the associated records.
 
 ## See Also
 

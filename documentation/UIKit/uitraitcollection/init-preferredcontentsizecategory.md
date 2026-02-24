@@ -24,7 +24,7 @@ A new trait collection containing only the content size category trait.
 
 ## Parameters
 
-- `preferredContentSizeCategory`: The content size category for the new trait collection. For a list of possible values, see  .
+- `preferredContentSizeCategory`: The content size category for the new trait collection. For a list of possible values, see [`UIContentSizeCategory`](uicontentsizecategory.md).
 
 ## See Also
 

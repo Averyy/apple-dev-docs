@@ -30,7 +30,7 @@ Affected non-transient system views can include, but are not limited to:
 
 ## Parameters
 
-- `visibility`: A value that indicates the visibility of the   non-transient system views overlaying the app.
+- `visibility`: A value that indicates the visibility of the non-transient system views overlaying the app.
 
 
 ---

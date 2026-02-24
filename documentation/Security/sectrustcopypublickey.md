@@ -37,7 +37,7 @@ When you call this function, it attempts to return the public key of the leaf ce
 
 ## Parameters
 
-- `trust`: The trust management object for the certificate that has been evaluated.  Use the   function to create a trust management object.
+- `trust`: The trust management object for the certificate that has been evaluated.  Use the [`SecTrustCreateWithCertificates(_:_:_:)`](sectrustcreatewithcertificates(_:_:_:).md) function to create a trust management object.
 
 
 ---

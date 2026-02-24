@@ -26,8 +26,8 @@ A new `Color` based on `self` and `rhs`.
 
 ## Parameters
 
-- `rhs`: The color to mix   with.
-- `fraction`: The amount of blending,   means   is mixed in   equal parts with  .
+- `rhs`: The color to mix `self` with.
+- `fraction`: The amount of blending, `0.5` means `self` is mixed in equal parts with `rhs`.
 - `colorSpace`: The color space used to mix the colors.
 
 ## See Also

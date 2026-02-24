@@ -15,6 +15,10 @@ The details for an account-driven enrollment profile.
 object AccountDrivenEnrollmentProfileRequest
 ```
 
+## Properties
+
+- `mdm_service_discovery_url` (string): The MDM Service Discovery URL that the system redirects the user to during account-driven enrollment.
+
 
 ---
 

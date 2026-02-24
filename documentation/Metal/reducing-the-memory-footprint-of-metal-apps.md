@@ -14,7 +14,9 @@ iOS and tvOS monitor your app’s total memory usage at runtime, and if the amou
 
 Here are some tips to understand how your Metal app is using memory, and best practices to reduce memory usage.
 
- Build your app with the iOS or tvOS SDK, then use Xcode Memory Report to observe your app’s total memory footprint during execution. For more information about Xcode Memory Report, see [`Gathering information about memory use`](https://developer.apple.com/documentation/Xcode/gathering-information-about-memory-use).
+**Measure memory consumption with Xcode 11 and later.** Build your app with the iOS or tvOS SDK, then use Xcode Memory Report to observe your app’s total memory footprint during execution. For more information about Xcode Memory Report, see [`Gathering information about memory use`](https://developer.apple.com/documentation/Xcode/gathering-information-about-memory-use).
+
+**Use these tools to gain a deeper understanding of your app’s memory footprint.**
 
 - Take an [`Instruments`](https://developer.apple.comhttps://help.apple.com/instruments/mac/current/#//apple_ref/doc/uid/TP40004652-CH19-SW13) trace and look at the Metal Resource Allocations Instrument, which is part of the Metal System Trace template. For more information on working with the Metal Resource Allocations Instrument, see [`Delivering Optimized Metal Apps and Games`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/606/?time=1726).
 - Capture a GPU trace with [`Metal debugger`](https://developer.apple.com/documentation/Xcode/Metal-debugger) and see a visual representation of all of a frame’s GPU resources and a table of properties for each resource with the Memory view. For detailed information about the Memory view, see [`Delivering Optimized Metal Apps and Games`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/606/?time=1665).
@@ -22,17 +24,17 @@ Here are some tips to understand how your Metal app is using memory, and best pr
 - Use the memory graph tool to help identify leaks and abandoned memory. For more information, see [`Memory Graph Debugging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/debugging_with_xcode/chapters/special_debugging_workflows.html#//apple_ref/doc/uid/TP40015022-CH9-DontLinkElementID_1).
 - Query the amount of memory available to your app at runtime using the [`os_proc_available_memory`](https://developer.apple.com/documentation/os/os_proc_available_memory) API to help you identify memory spikes.
 
- Avoid loading a large resource when a smaller one works. Use compressed texture formats. Load lower-resolution textures when running on memory-constrained devices. Consider reducing the fidelity of 3D models and compressing per-vertex data.
+**Make your assets as small as possible.** Avoid loading a large resource when a smaller one works. Use compressed texture formats. Load lower-resolution textures when running on memory-constrained devices. Consider reducing the fidelity of 3D models and compressing per-vertex data.
 
- Some effects, like shadows or motion blur, require large offscreen buffers for temporary image data. Consider lowering the resolution of these image buffers or applying fewer effects when running on memory-constrained devices.
+**Simplify memory-intensive special effects.** Some effects, like shadows or motion blur, require large offscreen buffers for temporary image data. Consider lowering the resolution of these image buffers or applying fewer effects when running on memory-constrained devices.
 
- Xcode can help you identify Metal objects that aren’t in use. Use Metal Debugger to get a GPU trace. Then navigate to the Memory view, and select the Unused filter.
+**Avoid loading unused resources.** Xcode can help you identify Metal objects that aren’t in use. Use Metal Debugger to get a GPU trace. Then navigate to the Memory view, and select the Unused filter.
 
- Use [`MTLPurgeableState.volatile`](mtlpurgeablestate/volatile.md) and [`setPurgeableState(_:)`](mtlresource/setpurgeablestate(_:).md) for textures and buffers the operating system can safely discard under low-memory conditions, and be subsequently recreated or reloaded by your app as needed. This design means your app keeps a cache of idle resources in memory but doesn’t count them toward the memory limit.
+**Designate resources as volatile when possible.** Use [`MTLPurgeableState.volatile`](mtlpurgeablestate/volatile.md) and [`setPurgeableState(_:)`](mtlresource/setpurgeablestate(_:).md) for textures and buffers the operating system can safely discard under low-memory conditions, and be subsequently recreated or reloaded by your app as needed. This design means your app keeps a cache of idle resources in memory but doesn’t count them toward the memory limit.
 
- [`MTLStorageMode.memoryless`](mtlstoragemode/memoryless.md) avoids allocating regular system memory, allowing apps to store the contents of temporary render targets directly in tile memory on the GPU.
+**Use memoryless texture storage for temporary-render targets.** [`MTLStorageMode.memoryless`](mtlstoragemode/memoryless.md) avoids allocating regular system memory, allowing apps to store the contents of temporary render targets directly in tile memory on the GPU.
 
- Using [`MTLHeap`](mtlheap.md), your app can have Multiple Metal resources backed by the same memory allocation. For example, use resource heaps when transient resources are produced and consumed for each frame but aren’t all used together. Those not used together share the same memory, backed by a heap.
+**Use Metal resource heaps.** Using [`MTLHeap`](mtlheap.md), your app can have Multiple Metal resources backed by the same memory allocation. For example, use resource heaps when transient resources are produced and consumed for each frame but aren’t all used together. Those not used together share the same memory, backed by a heap.
 
 ##### Additional Resources
 

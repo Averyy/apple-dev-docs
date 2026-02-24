@@ -35,7 +35,7 @@ Each corner of the rounded rectangle is one-quarter of an ellipse with axes equa
 - `rect`: The rectangle to add.
 - `cornerWidth`: The width of the rounded corner sections.
 - `cornerHeight`: The height of the rounded corner sections.
-- `transform`: A pointer to an affine transformation matrix, or   if no transformation is needed. If specified, Core Graphics applies the transformation to the rectangle before it is added to the path.
+- `transform`: A pointer to an affine transformation matrix, or `NULL` if no transformation is needed. If specified, Core Graphics applies the transformation to the rectangle before it is added to the path.
 
 ## See Also
 

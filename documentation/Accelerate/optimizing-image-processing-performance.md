@@ -8,9 +8,9 @@ Improve your app’s performance by converting image buffer formats from interle
 
 The vImage library operates on image data with two memory layouts:
 
- stores each pixel’s color data consecutively in a single buffer. For example, the data that describes a 4-channel image (red, green, blue, and alpha) would be stored as RGBARGBARGBA…
+**Interleaved** stores each pixel’s color data consecutively in a single buffer. For example, the data that describes a 4-channel image (red, green, blue, and alpha) would be stored as RGBARGBARGBA…
 
- stores each color channel in separate buffers. For example, a 4-channel image would be stored as four individual buffers containing red, green, blue, and alpha data.
+**Planar** stores each color channel in separate buffers. For example, a 4-channel image would be stored as four individual buffers containing red, green, blue, and alpha data.
 
 ![A diagram showing how the color information for each pixel in an image is stored in interleaved and planar buffers.](https://docs-assets.developer.apple.com/published/9ca5720cecfccf9a40e29dcb8dfb8134/media-3023512%402x.png)
 

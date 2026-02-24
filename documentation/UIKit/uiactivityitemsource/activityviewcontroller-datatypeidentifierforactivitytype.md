@@ -58,7 +58,7 @@ To ensure that Mail can handle an attachment that uses your exported UTI, includ
 ## Parameters
 
 - `activityViewController`: The activity view controller object requesting information about the data item.
-- `activityType`: The selected activity type; may be  .
+- `activityType`: The selected activity type; may be `nil`.
 
 ## See Also
 

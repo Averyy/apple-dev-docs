@@ -45,10 +45,10 @@ let image = Image(size: mySize) { context in
 ## Parameters
 
 - `size`: The size of the newly-created image.
-- `label`: The label associated with the image. SwiftUI uses the label   for accessibility.
-- `opaque`: A Boolean value that indicates whether the image is fully   opaque. This may improve performance when  . Don’t render   non-opaque pixels to an image declared as opaque. Defaults to  .
-- `colorMode`: The working color space and storage format of the image.   Defaults to  .
-- `renderer`: A closure to draw the contents of the image. The closure   receives a   as its parameter.
+- `label`: The label associated with the image. SwiftUI uses the label for accessibility.
+- `opaque`: A Boolean value that indicates whether the image is fully opaque. This may improve performance when `true`. Don’t render non-opaque pixels to an image declared as opaque. Defaults to `false`.
+- `colorMode`: The working color space and storage format of the image. Defaults to [`ColorRenderingMode.nonLinear`](colorrenderingmode/nonlinear.md).
+- `renderer`: A closure to draw the contents of the image. The closure receives a [`GraphicsContext`](graphicscontext.md) as its parameter.
 
 
 ---

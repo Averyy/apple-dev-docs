@@ -27,6 +27,24 @@ A predicate that matches all objects that are not associated with any HealthKit 
 
 Use this convenience method to create a predicate that matches all objects not associated with a [`HKCorrelation`](hkcorrelation.md) object. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+let noncorrelated = HKQuery.predicateForObjectsWithNoCorrelation()
+ 
+let explicitNoncorrelated =
+    NSPredicate(format: "%K == nil", HKPredicateKeyPathCorrelation)
+```
+
+**Objective-C**:
+
+```objc
+NSPredicate *noncorrelated = [HKQuery predicateForObjectsWithNoCorrelation];
+ 
+NSPredicate *explicitNoncorrelated =
+[NSPredicate predicateWithFormat:@"%K == nil", HKPredicateKeyPathCorrelation];
+```
+
 ## See Also
 
 - [let HKPredicateKeyPathCorrelation: String](hkpredicatekeypathcorrelation.md)

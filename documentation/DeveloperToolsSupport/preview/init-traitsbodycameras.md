@@ -22,9 +22,9 @@ Preview macros expand into a declaration that calls this initializer. Don’t us
 ## Parameters
 
 - `name`: An optional display name for the preview.
-- `traits`: An optional list of     instances that customize the appearance of the preview.
+- `traits`: An optional list of [`PreviewTrait`](PreviewTrait.md) instances that customize the appearance of the preview.
 - `body`: A view builder that produces a SwiftUI view to preview.
-- `cameras`: One or more preview cameras that indicate the custom, fixed   viewpoints that you want to be able to view the preview from.
+- `cameras`: One or more preview cameras that indicate the custom, fixed viewpoints that you want to be able to view the preview from.
 
 
 ---

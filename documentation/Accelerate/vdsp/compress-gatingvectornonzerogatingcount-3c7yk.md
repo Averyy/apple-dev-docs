@@ -51,7 +51,7 @@ print(destination)
 
 - `vector`: The source vector that the function compresses.
 - `gatingVector`: The gating vector.
-- `nonZeroGatingCount`: The number of nonzero elements in  . Set to   to have the operation calculate this value for you.
+- `nonZeroGatingCount`: The number of nonzero elements in `gatingVector`. Set to `nil` to have the operation calculate this value for you.
 
 ## See Also
 

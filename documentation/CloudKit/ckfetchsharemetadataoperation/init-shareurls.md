@@ -26,7 +26,7 @@ After creating the operation, assign a handler to the [`fetchShareMetadataComple
 
 ## Parameters
 
-- `shareURLs`: The URLs of the shares. If you specify  , you must assign a value to the   property before you execute the operation.
+- `shareURLs`: The URLs of the shares. If you specify `nil`, you must assign a value to the [`shareURLs`](ckfetchsharemetadataoperation/shareurls.md) property before you execute the operation.
 
 ## See Also
 

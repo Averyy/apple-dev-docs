@@ -53,7 +53,7 @@ ScrollView {
 ## Parameters
 
 - `label`: Localized label identifying this Rotor to the user.
-- `entries`: Content used to generate Rotor entries. This can   include AccessibilityRotorEntry structs, as well as constructs such   as if and ForEach.
+- `entries`: Content used to generate Rotor entries. This can include AccessibilityRotorEntry structs, as well as constructs such as if and ForEach.
 
 ## See Also
 

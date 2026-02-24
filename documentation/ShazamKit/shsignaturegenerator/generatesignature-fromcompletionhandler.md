@@ -31,7 +31,8 @@ The asset you specify can be any type of media that contains audio tracks. If th
 ## Parameters
 
 - `asset`: An asset that contains the audio to convert.
-- `completionHandler`: This block takes the following parameters:
+- `completionHandler`: The system calls this completion block after creating the signature, or an error if the system couldn’t create it. This block takes the following parameters: - **`signature`**: A new signature instance.
+- **error**: An error object if a problem occurs when creating thesignature; otherwise, `nil`.
 
 
 ---

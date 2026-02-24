@@ -11,6 +11,12 @@ The modes of transportation for which the app is capable of giving directions.
 - visionOS 1.0+
 
 
+
+**Type**: string 
+
+**Default**: `MKDirectionsModePlane`
+
+
 ---
 
 *[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/information-property-list/mkdirectionsapplicationsupportedmodes)*

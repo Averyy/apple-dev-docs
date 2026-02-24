@@ -29,8 +29,8 @@ You must call the [`CFPreferencesAppSynchronize(_:)`](cfpreferencesappsynchroniz
 ## Parameters
 
 - `key`: The preference key whose value you wish to set.
-- `value`: The value to set for the specified   and application. Pass   to remove the specified key from the application’s preferences.
-- `applicationID`: The ID of the application whose preferences you wish to create or modify, typically  . Do not pass   or  . Takes the form of a Java package name,  .
+- `value`: The value to set for the specified `key` and application. Pass `NULL` to remove the specified key from the application’s preferences.
+- `applicationID`: The ID of the application whose preferences you wish to create or modify, typically [`kCFPreferencesCurrentApplication`](kcfpreferencescurrentapplication.md). Do not pass `NULL` or [`kCFPreferencesAnyApplication`](kcfpreferencesanyapplication.md). Takes the form of a Java package name, `com.foosoft`.
 
 ## See Also
 

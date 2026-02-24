@@ -27,6 +27,11 @@ object RestartDeviceCommand
 - [object RestartDeviceCommand.Command](restartdevicecommand/command-data.dictionary.md)
   The command to remotely and immediately restart a device.
 
+## Properties
+
+- `Command` (RestartDeviceCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object RestartDeviceResponse](restartdeviceresponse.md)

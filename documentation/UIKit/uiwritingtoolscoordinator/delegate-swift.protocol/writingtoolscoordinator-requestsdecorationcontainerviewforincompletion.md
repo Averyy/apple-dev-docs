@@ -25,10 +25,10 @@ If your view has only one text container, use the coordinator’s [`decorationCo
 
 ## Parameters
 
-- `writingToolsCoordinator`: The coordinator object requesting information   from your custom view.
-- `range`: The range of text to consider in the specified   object.   The location value of this range is relative to the beginning of the text   in your context object, and it’s your responsibility to match that location   to the correct location in your text storage. If you initialized the   context object with the entire contents of your view’s text storage, you   can use   as-is to access that text storage. However, if you initialized   the context object with only a portion of your view’s text, add the starting   location of your context object’s text to this value to get the correct   range for that text storage.
-- `context`: The context object that contains the text to consider. Use this   object to locate the appropriate text storage object for your view.
-- `completion`: A completion handler to execute when you are done. The handler   has no return value and takes a   object as a parameter. You must call   this handler at some point during your implementation.
+- `writingToolsCoordinator`: The coordinator object requesting information from your custom view.
+- `range`: The range of text to consider in the specified `context` object. The location value of this range is relative to the beginning of the text in your context object, and it’s your responsibility to match that location to the correct location in your text storage. If you initialized the context object with the entire contents of your view’s text storage, you can use `range` as-is to access that text storage. However, if you initialized the context object with only a portion of your view’s text, add the starting location of your context object’s text to this value to get the correct range for that text storage.
+- `context`: The context object that contains the text to consider. Use this object to locate the appropriate text storage object for your view.
+- `completion`: A completion handler to execute when you are done. The handler has no return value and takes a [`UIView`](uiview.md) object as a parameter. You must call this handler at some point during your implementation.
 
 ## See Also
 

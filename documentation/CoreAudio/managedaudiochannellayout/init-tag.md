@@ -22,7 +22,7 @@ init(tag: AudioChannelLayoutTag)
 
 ## Parameters
 
-- `tag`: The   that indicates the layout.
+- `tag`: The `AudioChannelLayoutTag` that indicates the layout.
 
 
 ---

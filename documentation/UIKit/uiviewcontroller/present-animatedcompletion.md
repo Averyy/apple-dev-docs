@@ -38,8 +38,8 @@ The completion handler is called after the [`viewDidAppear(_:)`](uiviewcontrolle
 ## Parameters
 
 - `viewControllerToPresent`: The view controller to display over the current view controller’s content.
-- `flag`: Pass   to animate the presentation; otherwise, pass  .
-- `completion`: The block to execute after the presentation finishes. This block has no return value and takes no parameters. You may specify   for this parameter.
+- `flag`: Pass [`true`](https://developer.apple.com/documentation/Swift/true) to animate the presentation; otherwise, pass [`false`](https://developer.apple.com/documentation/Swift/false).
+- `completion`: The block to execute after the presentation finishes. This block has no return value and takes no parameters. You may specify `nil` for this parameter.
 
 ## See Also
 

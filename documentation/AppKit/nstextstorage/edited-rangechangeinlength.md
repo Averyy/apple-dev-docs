@@ -22,9 +22,9 @@ The methods for querying changes, [`editedRange`](nstextstorage/editedrange.md) 
 
 ## Parameters
 
-- `editedMask`: A mask specifying the nature of the changes. You make the value by combining with the C bitwise OR operator the options described in  .
+- `editedMask`: A mask specifying the nature of the changes. You make the value by combining with the C bitwise OR operator the options described in [`NSTextStorageEditActions`](nstextstorageeditactions.md).
 - `editedRange`: The extent of characters affected before the change took place.
-- `delta`: The number of characters added to or removed from  . If no characters where edited as noted by  , its value is irrelevant and undefined. For example, when replacing “The” with “Several” in the string “The files couldn’t be saved”,   is {0, 3} and   is 4.
+- `delta`: The number of characters added to or removed from `oldRange`. If no characters where edited as noted by `mask`, its value is irrelevant and undefined. For example, when replacing “The” with “Several” in the string “The files couldn’t be saved”, `oldRange` is {0, 3} and `lengthChange` is 4.
 
 ## See Also
 

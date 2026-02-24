@@ -9,6 +9,10 @@ Dictionaries of Wi-Fi Aware services that the app can publish or subscribe to.
 - iOS 26.0+
 - iPadOS 26.0+
 
+
+
+**Type**: object
+
 #### Overview
 
 This key works with the [`Wi-Fi Aware`](https://developer.apple.com/documentation/WiFiAware) framework, to define the services your app publishes, or to specify the services your app subscribes to, or both.

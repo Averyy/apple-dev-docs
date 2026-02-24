@@ -26,7 +26,7 @@ You can see a sample using this method in [`Working With Binary Data`](https://d
 
 ## Parameters
 
-- `buffer`: A buffer into which to copy the receiver’s data. The buffer must be at least   bytes.
+- `buffer`: A buffer into which to copy the receiver’s data. The buffer must be at least [`length`](nsdata/length.md) bytes.
 
 ## See Also
 

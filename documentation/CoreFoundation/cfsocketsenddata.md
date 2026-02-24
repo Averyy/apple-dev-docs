@@ -36,7 +36,7 @@ This function makes no attempt to queue data for delivery beyond the queueing pr
 ## Parameters
 
 - `s`: The CFSocket object to use.
-- `address`: The address, stored as a   appropriate for the protocol family (  or  , for example) in a CFData object, to which to send the contents of  . If  , the data are sent to the address to which   is already connected. This data object is used only for the duration of the function call.
+- `address`: The address, stored as a `struct sockaddr` appropriate for the protocol family (`struct sockaddr_in` or `struct sockaddr_in6`, for example) in a CFData object, to which to send the contents of `data`. If `NULL`, the data are sent to the address to which `s` is already connected. This data object is used only for the duration of the function call.
 - `data`: The data to send.
 - `timeout`: The time to wait for the data to be sent.
 

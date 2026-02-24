@@ -25,7 +25,7 @@ The analyzer normally performs some configuration lazily as the first audio inpu
 
 ## Parameters
 
-- `audioFormat`: An audio format describing the expected input. The analyzer will load assets appropriate for the given format. If   or if the input is not in this format, the analyzer will reconfigure itself when it processes the actual audio.
+- `audioFormat`: An audio format describing the expected input. The analyzer will load assets appropriate for the given format. If `nil` or if the input is not in this format, the analyzer will reconfigure itself when it processes the actual audio.
 
 ## See Also
 

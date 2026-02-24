@@ -26,7 +26,7 @@ You may add completion blocks to an animator at any time, including while it is 
 
 ## Parameters
 
-- `completion`: A block to execute when the animations finish. This block has no return value and takes the following parameter:
+- `completion`: A block to execute when the animations finish. This block has no return value and takes the following parameter: - **finalPosition**: The ending position of the animations. Use this value to determine whether the animations stopped at the beginning, end, or somewhere in the middle.
 
 ## See Also
 

@@ -30,7 +30,7 @@ The caller doesn’t own the returned buffer, and must retain it explicitly if t
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
 
 ## See Also
 

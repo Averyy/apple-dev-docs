@@ -24,8 +24,8 @@ Use this method to remove only the specified entities from the current index. Yo
 
 ## Parameters
 
-- `identifiers`: The IDs of the entities you want to delete. Get the identifier value   of an entity from its   property.
-- `type`: One of your app’s entity types. For example, specify    to delete entities with the   type in the index.
+- `identifiers`: The IDs of the entities you want to delete. Get the identifier value of an entity from its [`id`](https://developer.apple.com/documentation/Swift/Identifiable/id-8t2ws) property.
+- `type`: One of your app’s entity types. For example, specify `MyEntity.Type` to delete entities with the `MyEntity` type in the index.
 
 ## See Also
 

@@ -30,7 +30,7 @@ This method is the designated initializer for `NSExpression`.
 
 ## Parameters
 
-- `type`: The type of the new expression, as defined by  .
+- `type`: The type of the new expression, as defined by [`NSExpression.ExpressionType`](nsexpression/expressiontype-swift.enum.md).
 
 ## See Also
 

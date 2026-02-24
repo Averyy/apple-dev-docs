@@ -26,7 +26,7 @@ For a list of the available properties, see [`Accessing Address Book Records`](h
 
 ## Parameters
 
-- `value`: The value to set for  .
+- `value`: The value to set for `property`.
 - `property`: The property whose value will be set.
 
 ## See Also

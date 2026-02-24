@@ -26,7 +26,7 @@ An initialized person object that represents a user’s contact.
 
 - `displayName`: The name of the person in a user-displayable string.
 - `handles`: An array of contact handles, such as phone number or email address.
-- `handleIdentifier`: A property key that specifies a handle type, such as  .
+- `handleIdentifier`: A property key that specifies a handle type, such as [`CNContactEmailAddressesKey`](https://developer.apple.com/documentation/Contacts/CNContactEmailAddressesKey).
 
 
 ---

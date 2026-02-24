@@ -78,6 +78,11 @@ See also [`IdentityPreference`](identitypreference.md)  for information about se
 </plist>
 ```
 
+## Properties
+
+- `Name` (string) *(required)*: An email address (in RFC 822 format) or other name for which a preferred certificate is requested.
+- `PayloadCertificateUUID` (string) *(required)*: The UUID of the certificate payload within the same profile to use for the identity credential.
+
 ## See Also
 
 - [object ACMECertificate](acmecertificate.md)

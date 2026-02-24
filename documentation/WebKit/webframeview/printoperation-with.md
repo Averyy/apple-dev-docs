@@ -20,7 +20,7 @@ An `NSPrintOperation` object set up to print this frame. See [`NSPrintOperation`
 
 ## Parameters
 
-- `printInfo`: Information about the print settings needed to print this frame. See   for more information about this object.
+- `printInfo`: Information about the print settings needed to print this frame. See [`NSPrintInfo`](https://developer.apple.com/documentation/AppKit/NSPrintInfo) for more information about this object.
 
 ## See Also
 

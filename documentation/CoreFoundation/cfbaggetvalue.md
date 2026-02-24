@@ -31,7 +31,7 @@ Depending on the implementation of the equal callback specified when creating `t
 ## Parameters
 
 - `theBag`: The bag to examine.
-- `value`: The value for which to find matches in  . The equal callback provided when   was created is used to compare. If the equal callback was  , pointer equality (in C, ==) is used. If  , or any other value in  , is not understood by the equal callback, the behavior is undefined.
+- `value`: The value for which to find matches in `theBag`. The equal callback provided when `theBag` was created is used to compare. If the equal callback was `NULL`, pointer equality (in C, ==) is used. If `value`, or any other value in `theBag`, is not understood by the equal callback, the behavior is undefined.
 
 ## See Also
 

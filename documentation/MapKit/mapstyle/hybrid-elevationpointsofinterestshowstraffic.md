@@ -30,8 +30,8 @@ A [`MapStyle`](mapstyle.md) with the configuration you specified.
 
 ## Parameters
 
-- `elevation`: One of the   values that determines whether the map renders elevation.
-- `pointsOfInterest`: A collection of   that the map displays.
+- `elevation`: One of the [`MapStyle.Elevation`](mapstyle/elevation.md) values that determines whether the map renders elevation.
+- `pointsOfInterest`: A collection of [`PointOfInterestCategories`](pointofinterestcategories.md) that the map displays.
 - `showsTraffic`: A Boolean value that indicates whether the map displays traffic.
 
 ## See Also

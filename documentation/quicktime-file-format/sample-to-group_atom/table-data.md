@@ -18,6 +18,9 @@ The layout of the table data is as follows:
 | Sample count | 4 |
 | Group description index | 4 |
 
+- **Sample count**: A 32-bit integer that provides the number of consecutive media samples with the same sample group descriptor. The value is typically the same as in the sample size atom’s number of entries field.
+- **Group description index**: A 32-bit integer the value of which is the index into the sample group description atom’s payload data table which describes the samples in this group. The index ranges from `1` to the number of payload data entries in the sample group description atom, or takes the value `0` to indicate that this group of samples is a member of no group of this type.
+
 ## See Also
 
 - [Size](sample-to-group_atom/size.md)

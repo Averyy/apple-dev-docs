@@ -31,11 +31,11 @@ The following table shows a collection of bundle IDs and which portions of the b
 
 | Bundle ID | iOS 6.x | iOS 7.x |
 | --- | --- | --- |
-| Com.example.app1 | .app1 | .app1 |
-| Com.example.app2 | .app2 | .app2 |
-| Com.example.app.app1 | .app.app1 | .app1 |
-| Com.example.app.app2 | .app.app2 | .app2 |
-| Example |  |  |
+| Com.example.app1 | **Com.example**.app1 | **Com.example**.app1 |
+| Com.example.app2 | **Com.example**.app2 | **Com.example**.app2 |
+| Com.example.app.app1 | **Com.example**.app.app1 | **Com.example.app**.app1 |
+| Com.example.app.app2 | **Com.example**.app.app2 | **Com.example.app**.app2 |
+| Example | **Example** | **Example** |
 
 For example, `com.example.app1` and `com.example.app2` would appear to have the same vendor ID.
 

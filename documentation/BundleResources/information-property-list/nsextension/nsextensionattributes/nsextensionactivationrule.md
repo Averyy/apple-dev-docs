@@ -11,6 +11,10 @@ The semantic data types that a Share or Action extension supports.
 - macOS 10.10+
 - visionOS 1.0+
 
+
+
+**Type**: object
+
 ## Topics
 
 ### Configuration

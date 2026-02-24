@@ -22,6 +22,11 @@ func vvpowsf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: UnsafeP
 
 ##### Parameters
 
+- **z**: (output) Output vector of size `*n`. `z[i]` is set to `pow(x[i], y)`.
+- **y**: (input)  Input scalar, exponent in calculation.
+- **x**: (input)  Input vector of size `*n`, base in calculation.
+- **n**: (input)  The number of elements in the vectors `x`, `y` and `z`
+
 ## See Also
 
 - [func vexpf(vFloat) -> vFloat](vexpf(_:).md)

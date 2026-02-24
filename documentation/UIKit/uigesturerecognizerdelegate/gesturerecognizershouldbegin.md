@@ -28,7 +28,7 @@ This method is called when a gesture recognizer attempts to transition out of th
 
 ## Parameters
 
-- `gestureRecognizer`: An instance of a subclass of the abstract base class  . This gesture-recognizer object is about to begin processing touches to determine if its gesture is occurring.
+- `gestureRecognizer`: An instance of a subclass of the abstract base class [`UIGestureRecognizer`](uigesturerecognizer.md). This gesture-recognizer object is about to begin processing touches to determine if its gesture is occurring.
 
 ## See Also
 

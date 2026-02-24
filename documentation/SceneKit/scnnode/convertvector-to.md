@@ -31,7 +31,7 @@ Unlike the [`convertPosition(_:to:)`](scnnode/convertposition(_:to:).md) method,
 ## Parameters
 
 - `vector`: A direction vector in the node’s local coordinate space.
-- `node`: Another node in the same scene graph as the node, or   to convert to the scene’s world coordinate space.
+- `node`: Another node in the same scene graph as the node, or `nil` to convert to the scene’s world coordinate space.
 
 ## See Also
 

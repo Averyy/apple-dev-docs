@@ -29,6 +29,9 @@ This method applies the affine tile filter to an image. This effect performs an 
 
 The affine tile filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`transform`**: A [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) to apply to the image.
+
 The following code creates a filter that results in the image becoming tiled:
 
 ```swift

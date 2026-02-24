@@ -24,8 +24,8 @@ If you are implementing a custom container controller, use this method to tell t
 
 ## Parameters
 
-- `isAppearing`:   if the child view controller’s view is about to be added to the view hierarchy,   if it is being removed.
-- `animated`: If  , the transition is being animated.
+- `isAppearing`: [`true`](https://developer.apple.com/documentation/Swift/true) if the child view controller’s view is about to be added to the view hierarchy, [`false`](https://developer.apple.com/documentation/Swift/false) if it is being removed.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), the transition is being animated.
 
 ## See Also
 

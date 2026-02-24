@@ -144,10 +144,10 @@ The word "bazillion" is intentionally used to invoke a sense of childish excitem
 
 ## Parameters
 
-- `key`: The key for a string in the specified table.
-- `tableName`: The name of the table containing the key-value pairs. Also, the suffix for the strings file (a file with th  extension) to store the localized string. This defaults to the table in   when   is   or an empty string.
+- `key`: The key for a string in the specified table. > **Note**:  Xcode can’t export localizations for strings whose `key` is a string variable or an empty string.
+- `tableName`: The name of the table containing the key-value pairs. Also, the suffix for the strings file (a file with th`e.strings` extension) to store the localized string. This defaults to the table in `Localizable.strings` when `tableName` is `nil` or an empty string.
 - `bundle`: The bundle containing the table’s strings file. The main bundle is used if one isn’t specified.
-- `value`: The localized string for the development locale. For other locales, return this value if   isn’t found in the table.
+- `value`: The localized string for the development locale. For other locales, return this value if `key` isn’t found in the table.
 - `comment`: The comment to place above the key-value pair in the strings file. This parameter provides the translator with some context about the localized string’s presentation to the user.
 
 ## See Also

@@ -30,7 +30,7 @@ This function resets an audio queue, stops the audio hardware associated with th
 ## Parameters
 
 - `inAQ`: The audio queue to stop.
-- `inImmediate`: If you pass  , stopping occurs immediately (that is,  ). If you pass  , the function returns immediately, but the audio queue does not stop until its queued buffers are played or recorded (that is, the stop occurs  ). Audio queue callbacks are invoked as necessary until the queue actually stops.
+- `inImmediate`: If you pass `true`, stopping occurs immediately (that is, *synchronously*). If you pass `false`, the function returns immediately, but the audio queue does not stop until its queued buffers are played or recorded (that is, the stop occurs *asynchronously*). Audio queue callbacks are invoked as necessary until the queue actually stops.
 
 ## See Also
 

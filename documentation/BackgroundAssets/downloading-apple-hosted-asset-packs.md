@@ -20,6 +20,10 @@ Your app and your downloader extension target need to share an app group, which 
 
 In the project editor, select the app target and click the Info tab. Then, add the following keys to the information property list file:
 
+- **[`BAAppGroupID`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/BAAppGroupID)**: The string ID of the app group that your app and downloader extension targets share.
+- **[`BAHasManagedAssetPacks`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/BAHasManagedAssetPacks)**: For apps that use Managed Background Assets (including Apple-Hosted Background Assets), you must set this key to `YES`.
+- **[`BAUsesAppleHosting`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/BAUsesAppleHosting)**: For apps that use Apple-Hosted Background Assets, you must set this key to `YES`.
+
 For apps that use Apple-Hosted Background Assets, omit all other Background Assets information property list keys from your project.
 
 ##### Customize Downloads

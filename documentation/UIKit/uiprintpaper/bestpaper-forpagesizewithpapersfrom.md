@@ -28,7 +28,7 @@ The delegate of [`UIPrintInteractionController`](uiprintinteractioncontroller.md
 ## Parameters
 
 - `contentSize`: The size of the printed page that your application requests, in points. You should think of this as the size of the physical sheet of paper to use in printing without consideration of the margin.
-- `paperList`: An array of   objects that represent combinations of supported paper size and printable areas. The array of objects usually comes directly from the second argument of the   method of the   protocol.
+- `paperList`: An array of `UIPrintPaper` objects that represent combinations of supported paper size and printable areas. The array of objects usually comes directly from the second argument of the [`printInteractionController(_:choosePaper:)`](uiprintinteractioncontrollerdelegate/printinteractioncontroller(_:choosepaper:).md) method of the [`UIPrintInteractionControllerDelegate`](uiprintinteractioncontrollerdelegate.md) protocol.
 
 
 ---

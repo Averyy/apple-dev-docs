@@ -33,20 +33,20 @@ struct SparseFactorization_t
   LU factorization with no numerical pivoting.
 ### Factorization types for symmetric coefficient matrices
 - [var SparseFactorizationCholesky: SparseFactorization_t](sparsefactorizationcholesky.md)
-  A constant that represents Cholesky () factorization.
+  A constant that represents Cholesky (*LLᵀ*) factorization.
 - [var SparseFactorizationLDLT: SparseFactorization_t](sparsefactorizationldlt.md)
-  A constant that represents the default  factorization.
+  A constant that represents the default *LDLᵀ* factorization.
 - [var SparseFactorizationLDLTUnpivoted: SparseFactorization_t](sparsefactorizationldltunpivoted.md)
-  A constant that represents Cholesky-like  factorization with only one-by-one pivots and no pivoting.
+  A constant that represents Cholesky-like *LDLᵀ* factorization with only one-by-one pivots and no pivoting.
 - [var SparseFactorizationLDLTSBK: SparseFactorization_t](sparsefactorizationldltsbk.md)
-  A constant that represents  factorization with Supernode-Bunch-Kaufman and static pivoting.
+  A constant that represents *LDLᵀ* factorization with Supernode-Bunch-Kaufman and static pivoting.
 - [var SparseFactorizationLDLTTPP: SparseFactorization_t](sparsefactorizationldlttpp.md)
-  A constant that represents  factorization with full-threshold partial pivoting.
+  A constant that represents *LDLᵀ* factorization with full-threshold partial pivoting.
 ### Factorization types for overdetermined and underdetermined systems
 - [var SparseFactorizationQR: SparseFactorization_t](sparsefactorizationqr.md)
   A constant that represents QR factorization.
 - [var SparseFactorizationCholeskyAtA: SparseFactorization_t](sparsefactorizationcholeskyata.md)
-  A constant that represents  factorization without storing .
+  A constant that represents *QR* factorization without storing *Q*.
 ### Raw Values
 - [init(UInt8)](sparsefactorization_t/init(_:).md)
 - [init(rawValue: UInt8)](sparsefactorization_t/init(rawvalue:).md)

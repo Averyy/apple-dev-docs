@@ -28,7 +28,7 @@ For more information, see [`Core Bluetooth Programming Guide`](https://developer
 ## Parameters
 
 - `UUID`: A 128-bit UUID that identifies the service.
-- `isPrimary`: A Boolean value that indicates whether the type of service is primary or secondary. If the value is  , the type of service is primary. If the value is  , the type of service is secondary.
+- `isPrimary`: A Boolean value that indicates whether the type of service is primary or secondary. If the value is [`true`](https://developer.apple.com/documentation/Swift/true), the type of service is primary. If the value is [`false`](https://developer.apple.com/documentation/Swift/false), the type of service is secondary.
 
 
 ---

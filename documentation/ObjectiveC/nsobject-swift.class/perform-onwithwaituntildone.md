@@ -34,10 +34,10 @@ This method registers with the runloop of its current context, and depends on th
 
 ## Parameters
 
-- `aSelector`: A   that identifies the method to invoke. The method should not have a significant return value and should take a single argument of type id, or no arguments.
-- `thr`: The thread on which to execute  .
-- `arg`: The argument to pass to the method when it is invoked. Pass   if the method does not take an argument.
-- `wait`: If the current thread and target thread are the same, and you specify   for this parameter, the selector is performed immediately on the current thread. If you specify  , this method queues the message on the thread’s run loop and returns, just like it does for other threads. The current thread must then dequeue and process the message when it has an opportunity to do so.
+- `aSelector`: A [`Selector`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Selector.html#//apple_ref/doc/uid/TP40008195-CH48) that identifies the method to invoke. The method should not have a significant return value and should take a single argument of type id, or no arguments.
+- `thr`: The thread on which to execute `aSelector`.
+- `arg`: The argument to pass to the method when it is invoked. Pass `nil` if the method does not take an argument.
+- `wait`: A Boolean that specifies whether the current thread blocks until after the specified selector is performed on the receiver on the specified thread. Specify [`YES`](yes.md) to block this thread; otherwise, specify [`NO`](no.md) to have this method return immediately. If the current thread and target thread are the same, and you specify [`YES`](yes.md) for this parameter, the selector is performed immediately on the current thread. If you specify [`NO`](no.md), this method queues the message on the thread’s run loop and returns, just like it does for other threads. The current thread must then dequeue and process the message when it has an opportunity to do so.
 
 ## See Also
 

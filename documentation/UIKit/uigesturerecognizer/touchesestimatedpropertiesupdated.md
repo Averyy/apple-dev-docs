@@ -28,7 +28,7 @@ Use the [`estimationUpdateIndex`](uitouch/estimationupdateindex.md) property to 
 
 ## Parameters
 
-- `touches`: The array of   objects containing updated properties.
+- `touches`: The array of [`UITouch`](uitouch.md) objects containing updated properties.
 
 ## See Also
 

@@ -26,7 +26,7 @@ A handle to the visible function. When this value is `nil`, an error occurred du
 
 ## Parameters
 
-- `function`: An   instance that represents the visible function to create a handle for.
+- `function`: An [`MTLFunction`](mtlfunction.md) instance that represents the visible function to create a handle for.
 
 
 ---

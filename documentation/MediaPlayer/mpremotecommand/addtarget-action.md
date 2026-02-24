@@ -28,8 +28,10 @@ The command object does not keep a strong reference to the target; you should re
 
 ## Parameters
 
-- `target`: The object to receive action messages sent by the receiver when the represented remote command is triggered. The value must not be  .
-- `action`: The method to be called must have the following signature:
+- `target`: The object to receive action messages sent by the receiver when the represented remote command is triggered. The value must not be `nil`.
+- `action`: A selector identifying the method on the target to be called. The value must not be `NULL`. The method to be called must have the following signature: ```objc
+- (MPRemoteCommandHandlerStatus) handleCommand: (MPRemoteCommandEvent*) event;
+```
 
 ## See Also
 

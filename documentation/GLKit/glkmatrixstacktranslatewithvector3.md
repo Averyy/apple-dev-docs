@@ -20,7 +20,7 @@ func GLKMatrixStackTranslateWithVector3(_ stack: GLKMatrixStack, _ translationVe
 ## Parameters
 
 - `stack`: A matrix stack.
-- `translationVector`: A vector whose  ,  and   components are used to translate the matrix.
+- `translationVector`: A vector whose `x`,`y` and `z` components are used to translate the matrix.
 
 ## See Also
 

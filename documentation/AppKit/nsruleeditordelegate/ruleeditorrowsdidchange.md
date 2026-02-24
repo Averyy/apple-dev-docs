@@ -21,7 +21,7 @@ If the delegate implements this method, [`NSRuleEditor`](nsruleeditor.md) automa
 
 ## Parameters
 
-- `notification`: A notification named .
+- `notification`: A notification named[`rowsDidChangeNotification`](nsruleeditor/rowsdidchangenotification.md).
 
 
 ---

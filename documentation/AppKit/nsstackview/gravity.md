@@ -16,7 +16,7 @@ enum Gravity
 
 #### Overview
 
-The layout of a stack view is partitioned into three distinct areas in which you can place views. These are known as . You can use these constants to configure a stack view by way of the [`insertView(_:at:in:)`](nsstackview/insertview(_:at:in:).md) and [`setViews(_:in:)`](nsstackview/setviews(_:in:).md) methods.
+The layout of a stack view is partitioned into three distinct areas in which you can place views. These are known as *gravity areas*. You can use these constants to configure a stack view by way of the [`insertView(_:at:in:)`](nsstackview/insertview(_:at:in:).md) and [`setViews(_:in:)`](nsstackview/setviews(_:in:).md) methods.
 
 In a horizontally oriented stack view, the three gravity areas are [`leading`](nsstackview/gravity/leading.md), [`NSStackView.Gravity.center`](nsstackview/gravity/center.md), and [`trailing`](nsstackview/gravity/trailing.md). The ordering of these areas depends on the user interface language, unless you’ve explicitly specified the stack view’s user interface layout direction by calling the inherited [`userInterfaceLayoutDirection`](nsview/userinterfacelayoutdirection.md) method. For a [`userInterfaceLayoutDirection`](nsview/userinterfacelayoutdirection.md) property value of [`NSUserInterfaceLayoutDirection.leftToRight`](nsuserinterfacelayoutdirection/lefttoright.md), the leading gravity area is on the left.
 

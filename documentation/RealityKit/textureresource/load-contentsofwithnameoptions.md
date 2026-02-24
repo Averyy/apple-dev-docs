@@ -35,7 +35,7 @@ RealityKit uses the resource name to identify resources, and to match texture re
 ## Parameters
 
 - `url`: The URL of the resource.
-- `resourceName`: A unique name the method assigns to the resource it loads,   for use in network synchronization.
+- `resourceName`: A unique name the method assigns to the resource it loads, for use in network synchronization.
 - `options`: A configuration for generating the texture.
 
 ## See Also

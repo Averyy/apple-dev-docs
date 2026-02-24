@@ -30,7 +30,7 @@ Metal aligns linear textures to their minimum alignment value, which directly af
 
 ## Parameters
 
-- `format`: An   instance that can’t be any of the depth, stencil, or compressed pixel formats.
+- `format`: An [`MTLPixelFormat`](mtlpixelformat.md) instance that can’t be any of the depth, stencil, or compressed pixel formats.
 
 ## See Also
 

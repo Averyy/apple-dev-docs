@@ -16,10 +16,10 @@ init(textAttachment: NSTextAttachment, parentView: NSView?, textLayoutManager: N
 
 ## Parameters
 
-- `textAttachment`: The   for this view.
+- `textAttachment`: The [`NSTextAttachment`](nstextattachment.md) for this view.
 - `parentView`: The parent view of this attachment.
-- `textLayoutManager`: The   for this view.
-- `location`: The   that identifies the start of the text.
+- `textLayoutManager`: The [`NSTextLayoutManager`](nstextlayoutmanager.md) for this view.
+- `location`: The [`NSTextLocation`](nstextlocation.md) that identifies the start of the text.
 
 
 ---

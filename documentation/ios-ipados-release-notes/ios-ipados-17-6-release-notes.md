@@ -31,7 +31,7 @@ The iOS & iPadOS 17.5 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- For devices running iOS 17.6 betas 2 or 3, the Notes folder widget might display “No Folder Available”, and tapping on this widget might cause Notes to crash.  (131921810)  Remove the Notes folder widget and re-add it, or update device to iOS 17.6 beta 4.
+- For devices running iOS 17.6 betas 2 or 3, the Notes folder widget might display “No Folder Available”, and tapping on this widget might cause Notes to crash.  (131921810) **Workaround:** Remove the Notes folder widget and re-add it, or update device to iOS 17.6 beta 4.
 
 ## See Also
 

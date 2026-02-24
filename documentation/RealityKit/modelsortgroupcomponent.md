@@ -77,7 +77,7 @@ To draw each model’s color on the first pass and then the depth, set the prope
 let group = ModelSortGroup(depthPass: .postPass)
 ```
 
-|  |  |
+| **Red First** | **Blue First** |
 | --- | --- |
 | ![A screenshot of a living room scene with two rectangular cuboids that overlap. The vertical cuboid is an opaque blue, and the horizontal cuboid is a translucent red. The red cuboid appears behind the blue one.](https://docs-assets.developer.apple.com/published/031e034d0eb21f30f257fd4f123aa6b5/modelsortgroupcomponent-postpass-redfirst.jpg) | ![A screenshot of a living room scene with two rectangular cuboids that overlap. The vertical cuboid is an opaque blue, and the horizontal cuboid is a translucent red. The red cuboid appears in front of the blue one, which gives the area where they overlap a purple hue.](https://docs-assets.developer.apple.com/published/6b9a691bb74fce8f72d775bbe4e7bc0f/modelsortgroupcomponent-postpass-bluefirst.jpg) |
 
@@ -90,13 +90,13 @@ The depth pass [`ModelSortGroup.DepthPass.prePass`](modelsortgroup/depthpass-swi
 let group = ModelSortGroup(depthPass: .prePass)
 ```
 
-|  |  |
+| **Red First** | **Blue First** |
 | --- | --- |
 | ![A screenshot of a living room scene with two rectangular cuboids that overlap. The vertical cuboid is an opaque blue, and the horizontal cuboid is a translucent red. The red cuboid appears in front of the blue one, and in the area where they overlap, the blue cuboid isn’t visible, which reveals the scene’s background through the red one.](https://docs-assets.developer.apple.com/published/a9724318f936776c04ab357fec439dec/modelsortgroupcomponent-prepass-redfirst.jpg) | ![A screenshot of a living room scene with two rectangular cuboids that overlap. The vertical cuboid is an opaque blue, and the horizontal cuboid is a translucent red. The red cuboid appears in front of the blue one, and in the area where they overlap, the blue cuboid isn’t visible, which reveals the scene’s background through the red one.](https://docs-assets.developer.apple.com/published/a9724318f936776c04ab357fec439dec/modelsortgroupcomponent-prepass-bluefirst.jpg) |
 
 The [`ModelSortGroup.DepthPass.prePass`](modelsortgroup/depthpass-swift.enum/prepass.md) option tells the renderer to write the depth buffer for the group’s entities first. The renderer doesn’t draw the blue cuboid in the overlapping area, regardless of order, because the red cuboid has a shallower depth in all parts of the overlapping area.
 
-> 💡 **Tip**: Check out [`Swift Splash`](https://developer.apple.com/documentation/visionOS/swift-splash) which has an implementation that leverages `ModelSortGroupComponent`.
+> 💡 **Tip**: Check out [`Swift Splash`](https://developer.apple.com/documentation/visionos/swift-splash) which has an implementation that leverages `ModelSortGroupComponent`.
 
 ## Topics
 

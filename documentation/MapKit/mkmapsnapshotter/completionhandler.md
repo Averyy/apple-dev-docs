@@ -22,8 +22,8 @@ typealias CompletionHandler = (MKMapSnapshotter.Snapshot?, (any Error)?) -> Void
 
 ## Parameters
 
-- `snapshot`: The image data that the snapshotter generates, or   if an error occurs.
-- `error`: The error that occurs, or   if the framework generates the snapshot successfully.
+- `snapshot`: The image data that the snapshotter generates, or `nil` if an error occurs.
+- `error`: The error that occurs, or `nil` if the framework generates the snapshot successfully.
 
 ## See Also
 

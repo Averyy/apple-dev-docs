@@ -55,7 +55,7 @@ try await service.sendMessage(RCSMessage.FileTransfer(fileMetadata: uploadMetada
 
 ## Parameters
 
-- `uploadRequest`: A   instance that describes the file to upload and an optional thumbnail.
+- `uploadRequest`: A [`RCSService.FileUploadRequest`](rcsservice/fileuploadrequest.md) instance that describes the file to upload and an optional thumbnail.
 
 ## See Also
 

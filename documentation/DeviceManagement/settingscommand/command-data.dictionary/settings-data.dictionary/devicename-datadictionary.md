@@ -18,6 +18,11 @@ A dictionary that contains device name settings.
 object SettingsCommand.Command.Settings.DeviceName
 ```
 
+## Properties
+
+- `DeviceName` (string) *(required)*: The device’s name.
+- `Item` (string) *(required)*: A string that identifies this setting.
+
 ## See Also
 
 - [object SettingsCommand.Command.Settings.AccessibilitySettings](settingscommand/command-data.dictionary/settings-data.dictionary/accessibilitysettings-data.dictionary.md)

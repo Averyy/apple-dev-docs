@@ -31,8 +31,8 @@ If `persistence` is [`URLCredential.Persistence.permanent`](urlcredential/persis
 ## Parameters
 
 - `user`: The user for the credential.
-- `password`: The password for  .
-- `persistence`: A   value indicating whether the credential should be stored permanently, for the duration of the current session, or not at all.
+- `password`: The password for `user`.
+- `persistence`: A [`URLCredential.Persistence`](urlcredential/persistence-swift.enum.md) value indicating whether the credential should be stored permanently, for the duration of the current session, or not at all.
 
 ## See Also
 

@@ -8,6 +8,10 @@ The base path to the files or folders that the app installs.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Use the format `file://localhost/path/` for the path.

@@ -34,9 +34,9 @@ The following figure illustrates four `NSDateInterval` objects plotted on an arb
 
 ![None](https://docs-assets.developer.apple.com/published/62f0900557039aff36d72008ce7f3ba3/media-2556955%402x.png)
 
-The result of comparing the date interval labeled  with the date interval labeled  is [`ComparisonResult.orderedAscending`](comparisonresult/orderedascending.md), because  has a [`startDate`](nsdateinterval/startdate.md) that occurs earlier than that of .
+The result of comparing the date interval labeled **A** with the date interval labeled **B** is [`ComparisonResult.orderedAscending`](comparisonresult/orderedascending.md), because **A** has a [`startDate`](nsdateinterval/startdate.md) that occurs earlier than that of **B**.
 
-The result of comparing the date interval labeled  with the date interval labeled  is [`ComparisonResult.orderedDescending`](comparisonresult/ordereddescending.md), because because  and  have the same [`startDate`](nsdateinterval/startdate.md), and  has a [`duration`](nsdateinterval/duration.md) greater than that of .
+The result of comparing the date interval labeled **C** with the date interval labeled **D** is [`ComparisonResult.orderedDescending`](comparisonresult/ordereddescending.md), because because **C** and **D** have the same [`startDate`](nsdateinterval/startdate.md), and **C** has a [`duration`](nsdateinterval/duration.md) greater than that of **D**.
 
 ## Parameters
 

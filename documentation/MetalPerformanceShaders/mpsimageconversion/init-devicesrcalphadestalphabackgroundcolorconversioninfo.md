@@ -28,8 +28,8 @@ An [`MPSImageConversion`](mpsimageconversion.md) object.
 - `device`: The device that the filter will run on.
 - `srcAlpha`: The alpha encoding for the source texture.
 - `destAlpha`: The alpha encoding for the destination texture.
-- `backgroundColor`: The color is in the source color space. The length of the array is the number of color channels in the source color space. If this parameter is not applicable to your desired conversion, use  .
-- `conversionInfo`: The color space conversion to use. This value may be  , indicating that no color space conversions need to be done.
+- `backgroundColor`: An array of [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) values giving the background color to use when flattening an image. The color is in the source color space. The length of the array is the number of color channels in the source color space. If this parameter is not applicable to your desired conversion, use `{0}`.
+- `conversionInfo`: The color space conversion to use. This value may be `NULL`, indicating that no color space conversions need to be done.
 
 ## See Also
 

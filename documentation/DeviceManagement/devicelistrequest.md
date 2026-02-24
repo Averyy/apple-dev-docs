@@ -15,6 +15,10 @@ The request for a list of devices.
 object DeviceListRequest
 ```
 
+## Properties
+
+- `devices` ([string]): An array of strings containing device serial numbers.
+
 ## See Also
 
 - [object DeviceListResponse](devicelistresponse.md)

@@ -112,8 +112,8 @@ If you want to specify a [`ShapeStyle`](shapestyle.md) like a [`HierarchicalShap
 
 ## Parameters
 
-- `alignment`: The alignment that the modifier uses to position the   implicit   that groups the background views. The default   is  .
-- `content`: A   that you use to declare the views to draw   behind this view, stacked in a cascading order from bottom to top.   The last view that you list appears at the front of the stack.
+- `alignment`: The alignment that the modifier uses to position the implicit [`ZStack`](zstack.md) that groups the background views. The default is [`center`](alignment/center.md).
+- `content`: A [`ViewBuilder`](viewbuilder.md) that you use to declare the views to draw behind this view, stacked in a cascading order from bottom to top. The last view that you list appears at the front of the stack.
 
 ## See Also
 

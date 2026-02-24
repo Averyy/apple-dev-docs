@@ -27,7 +27,7 @@ A view where text has the specified amount of kerning.
 
 ## Parameters
 
-- `kerning`: The spacing to use between individual characters in text.   Value of   sets the kerning to the system default value.
+- `kerning`: The spacing to use between individual characters in text. Value of `0` sets the kerning to the system default value.
 
 ## See Also
 

@@ -23,7 +23,7 @@ init(pattern: Text.LineStyle.Pattern = .solid, color: Color? = nil)
 ## Parameters
 
 - `pattern`: The pattern of the line.
-- `color`: The color of the line. If not provided, the foreground   color of text is used.
+- `color`: The color of the line. If not provided, the foreground color of text is used.
 
 ## See Also
 

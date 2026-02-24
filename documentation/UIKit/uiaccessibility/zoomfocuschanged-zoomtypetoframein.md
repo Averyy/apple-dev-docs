@@ -21,7 +21,7 @@ static func zoomFocusChanged(zoomType type: UIAccessibility.ZoomType, toFrame fr
 
 ## Parameters
 
-- `type`: A   constant that identifies the type of Zoom.
+- `type`: A `UIKit Functions` constant that identifies the type of Zoom.
 - `frame`: The frame that’s currently zoomed, in screen coordinates.
 - `view`: The view that contains the zoomed frame.
 

@@ -26,10 +26,10 @@ A new date that represents `string`, or `NULL` if there was a problem creating t
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `formatter`: The date formatter object to use to parse  .
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `formatter`: The date formatter object to use to parse `string`.
 - `string`: The string that contains the date.
-- `rangep`: A reference to the range within the string specifying the substring to be parsed. If  , the whole string is parsed. Upon return, contains the range that defines the extent of the parse (may be less than the given range).
+- `rangep`: A reference to the range within the string specifying the substring to be parsed. If `NULL`, the whole string is parsed. Upon return, contains the range that defines the extent of the parse (may be less than the given range).
 
 ## See Also
 

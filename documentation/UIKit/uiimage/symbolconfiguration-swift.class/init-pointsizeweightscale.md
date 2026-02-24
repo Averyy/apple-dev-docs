@@ -26,8 +26,8 @@ A new symbol configuration object with the specified information.
 ## Parameters
 
 - `pointSize`: The system font point size to use for the configuration.
-- `weight`: The symbol image weight variant to select. Use this parameter to match the weight of the symbol image to your other content. For a list of possible values, see  .
-- `scale`: The symbol image scale variant to select. Use this parameter to make the image appear bigger or smaller than text that uses the same point size. For a list of possible values, see  .
+- `weight`: The symbol image weight variant to select. Use this parameter to match the weight of the symbol image to your other content. For a list of possible values, see [`UIImage.SymbolWeight`](uiimage/symbolweight.md).
+- `scale`: The symbol image scale variant to select. Use this parameter to make the image appear bigger or smaller than text that uses the same point size. For a list of possible values, see [`UIImage.SymbolScale`](uiimage/symbolscale.md).
 
 ## See Also
 

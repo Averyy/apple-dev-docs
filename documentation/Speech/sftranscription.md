@@ -20,7 +20,7 @@ class SFTranscription
 
 #### Overview
 
-Use `SFTranscription` to obtain all the recognized utterances from your audio content. An  is a vocalized word or group of words that represent a single meaning to the speech recognizer ([`SFSpeechRecognizer`](sfspeechrecognizer.md)).
+Use `SFTranscription` to obtain all the recognized utterances from your audio content. An *utterance* is a vocalized word or group of words that represent a single meaning to the speech recognizer ([`SFSpeechRecognizer`](sfspeechrecognizer.md)).
 
 Use the [`formattedString`](sftranscription/formattedstring.md) property to retrieve the entire transcription of utterances, or use the [`segments`](sftranscription/segments.md) property to retrieve an individual utterance ([`SFTranscriptionSegment`](sftranscriptionsegment.md)).
 

@@ -26,9 +26,9 @@ The view properties you change in the `animations` block animate over the timesp
 
 ## Parameters
 
-- `frameStartTime`: The time at which to start the specified animations. This value must be in the range   to  , where   represents the start of the overall animation and   represents the end of the overall animation. For example, for an animation that is two seconds in duration, specifying a start time of   causes the animations to begin executing one second after the start of the overall animation.
-- `frameDuration`: The length of time over which to animate to the specified value. This value must be in the range   to   and indicates the amount of time relative to the overall animation length. If you specify a value of  , any properties you set in the   block update immediately at the specified start time. If you specify a nonzero value, the properties animate over that amount of time. For example, for an animation that is two seconds in duration, specifying a duration of   results in an animation duration of one second.
-- `animations`: A block object containing the animations you want to perform. This is where you programmatically change any animatable properties of the views in your view hierarchy. This block takes no parameters and has no return value. This parameter must not be  .
+- `frameStartTime`: The time at which to start the specified animations. This value must be in the range `0` to `1`, where `0` represents the start of the overall animation and `1` represents the end of the overall animation. For example, for an animation that is two seconds in duration, specifying a start time of `0.5` causes the animations to begin executing one second after the start of the overall animation.
+- `frameDuration`: The length of time over which to animate to the specified value. This value must be in the range `0` to `1` and indicates the amount of time relative to the overall animation length. If you specify a value of `0`, any properties you set in the `animations` block update immediately at the specified start time. If you specify a nonzero value, the properties animate over that amount of time. For example, for an animation that is two seconds in duration, specifying a duration of `0.5` results in an animation duration of one second.
+- `animations`: A block object containing the animations you want to perform. This is where you programmatically change any animatable properties of the views in your view hierarchy. This block takes no parameters and has no return value. This parameter must not be `nil`.
 
 ## See Also
 

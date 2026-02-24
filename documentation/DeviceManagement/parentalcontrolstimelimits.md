@@ -108,6 +108,11 @@ Specify `com.apple.familycontrols.timelimits.v2` as the payload type.
 - [object ParentalControlsTimeLimits.Time-limits](parentalcontrolstimelimits/time-limits-data.dictionary.md)
   The time limits dictionary.
 
+## Properties
+
+- `familyControlsEnabled` (boolean) *(required)*: If `true`, enables time limits.
+- `time-limits` (ParentalControlsTimeLimits.Time-limits): The time limits to enforce if `familyControlsEnabled` is enabled.
+
 ## See Also
 
 - [object ParentalControlsApplicationRestrictions](parentalcontrolsapplicationrestrictions.md)

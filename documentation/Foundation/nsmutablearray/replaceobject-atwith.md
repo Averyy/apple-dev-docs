@@ -22,8 +22,8 @@ func replaceObject(at index: Int, with anObject: Any)
 
 ## Parameters
 
-- `index`: The index of the object to be replaced. This value must not exceed the bounds of the array.
-- `anObject`: The object with which to replace the object at index   in the array. This value must not be  .
+- `index`: The index of the object to be replaced. This value must not exceed the bounds of the array. > ❗ **Important**:  Raises an `NSRangeException` if `index` is beyond the end of the array.
+- `anObject`: The object with which to replace the object at index `index` in the array. This value must not be `nil`. > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `anObject` is `nil`.
 
 ## See Also
 

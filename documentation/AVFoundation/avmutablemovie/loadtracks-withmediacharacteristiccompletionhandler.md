@@ -22,7 +22,8 @@ func loadTracks(withMediaCharacteristic mediaCharacteristic: AVMediaCharacterist
 ## Parameters
 
 - `mediaCharacteristic`: The media characteristic of the tracks to load.
-- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters:
+- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters: - **tracks**: An array of tracks, which may be empty if no tracks with the specified media characteristic exist. The value is `nil` if an error occurs.
+- **error**: An error object if the request fails; otherwise, `nil`.
 
 ## See Also
 

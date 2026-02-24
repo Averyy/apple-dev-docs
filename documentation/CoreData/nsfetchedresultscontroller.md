@@ -22,7 +22,7 @@ class NSFetchedResultsController<ResultType> where ResultType : NSFetchRequestRe
 
 #### Overview
 
-While you can use table views can in several ways, fetched results controllers primarily assist you with a primary list view. [`UITableView`](https://developer.apple.com/documentation/UIKit/UITableView) expects its data source to provide cells as an array of sections made up of rows. You configure a fetched results controller using a  — an object that specifies what type of entity to fetch and how to sort the results. You can also add criteria for when to include a specific instance of the entity.
+While you can use table views can in several ways, fetched results controllers primarily assist you with a primary list view. [`UITableView`](https://developer.apple.com/documentation/UIKit/UITableView) expects its data source to provide cells as an array of sections made up of rows. You configure a fetched results controller using a *fetch request* — an object that specifies what type of entity to fetch and how to sort the results. You can also add criteria for when to include a specific instance of the entity.
 
 The fetched results controller efficiently analyzes the result of the fetch request and computes all the information about sections in the result set. It also computes all the information for the index based on the result set.
 
@@ -206,9 +206,9 @@ You can’t change the fetch request to modify the results. Do the following if 
 
 ###### Handling Object Invalidation
 
-When a managed object context notifies the fetched results controller of invalidated  objects, the controller treats these as deleted objects and sends the proper delegate calls.
+When a managed object context notifies the fetched results controller of invalidated *individual* objects, the controller treats these as deleted objects and sends the proper delegate calls.
 
-Simultaneous invalidation of  the objects in a managed object context is possible, for example, as a result of calling [`reset()`](nsmanagedobjectcontext/reset().md), or if you remove a store from the persistent store coordinator. When this happens, [`NSFetchedResultsController`](nsfetchedresultscontroller.md) doesn’t invalidate all objects, nor does it send individual notifications for object deletions. Instead, you need to call [`performFetch()`](nsfetchedresultscontroller/performfetch().md) to reset the state of the controller then reload the data in the table view ([`reloadData()`](https://developer.apple.com/documentation/UIKit/UITableView/reloadData())).
+Simultaneous invalidation of *all* the objects in a managed object context is possible, for example, as a result of calling [`reset()`](nsmanagedobjectcontext/reset().md), or if you remove a store from the persistent store coordinator. When this happens, [`NSFetchedResultsController`](nsfetchedresultscontroller.md) doesn’t invalidate all objects, nor does it send individual notifications for object deletions. Instead, you need to call [`performFetch()`](nsfetchedresultscontroller/performfetch().md) to reset the state of the controller then reload the data in the table view ([`reloadData()`](https://developer.apple.com/documentation/UIKit/UITableView/reloadData())).
 
 ##### Subclassing Notes
 

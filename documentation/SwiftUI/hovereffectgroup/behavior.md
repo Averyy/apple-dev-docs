@@ -20,7 +20,7 @@ A new HoverEffectGroup with the given `behavior`.
 
 ## Parameters
 
-- `behavior`: How the effect will behave relative to other   effects in the group.
+- `behavior`: How the effect will behave relative to other effects in the group.
 
 
 ---

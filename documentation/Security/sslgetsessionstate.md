@@ -24,7 +24,7 @@ A result code. See [`Secure Transport Result Codes`](secure-transport-result-cod
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `state`: On return, points to a constant that indicates the state of the SSL session. See   for possible values.
+- `state`: On return, points to a constant that indicates the state of the SSL session. See [`SSLSessionState`](sslsessionstate.md) for possible values.
 
 
 ---

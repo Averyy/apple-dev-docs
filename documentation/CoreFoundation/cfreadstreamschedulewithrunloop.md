@@ -27,8 +27,8 @@ After scheduling `stream` with a run loop, its client (set with [`CFReadStreamSe
 ## Parameters
 
 - `stream`: The stream to schedule.
-- `runLoop`: The run loop with which to schedule  .
-- `runLoopMode`: The run loop mode of   in which to schedule  .
+- `runLoop`: The run loop with which to schedule `stream`.
+- `runLoopMode`: The run loop mode of `runLoop` in which to schedule `stream`.
 
 ## See Also
 

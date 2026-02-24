@@ -30,9 +30,9 @@ Any escape sequences in `URLString` will be interpreted using UTF-8.
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
-- `URLString`: The   object containing the URL string.
-- `baseURL`: The URL to which   is relative. Pass   if   contains an absolute URL or if you want to create a relative URL. If   contains an absolute URL,   is ignored.
+- `allocator`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `URLString`: The `CFString` object containing the URL string.
+- `baseURL`: The URL to which `URLString` is relative. Pass `NULL` if `URLString` contains an absolute URL or if you want to create a relative URL. If `URLString` contains an absolute URL, `baseURL` is ignored.
 
 ## See Also
 

@@ -22,7 +22,7 @@ func updateAudioStreamSetting(_ audioStreamSetting: HMCameraAudioStreamSetting) 
 ## Parameters
 
 - `audioStreamSetting`: The new audio stream configuration.
-- `completion`: The block executed after processing the request.
+- `completion`: The block executed after processing the request. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

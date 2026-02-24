@@ -35,7 +35,7 @@ If you don’t implement this method or the [`tableView(_:viewForHeaderInSection
 ## Parameters
 
 - `tableView`: The table-view object asking for the title.
-- `section`: An index number identifying a section of  .
+- `section`: An index number identifying a section of `tableView`.
 
 ## See Also
 

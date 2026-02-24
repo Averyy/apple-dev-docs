@@ -30,7 +30,7 @@ If an argument buffer contains nested argument buffers in its structure, then ea
 
 ## Parameters
 
-- `index`: The index of a nested argument-buffer within the argument buffer.   The value corresponds to either the index ID of a declaration in   Metal Shading Language (MSL) or the   property of   an   instance.
+- `index`: The index of a nested argument-buffer within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
 
 
 ---

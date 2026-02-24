@@ -21,7 +21,7 @@ This method invokes [`stateImageRect(forBounds:)`](nsmenuitemcell/stateimagerect
 ## Parameters
 
 - `cellFrame`: A rectangle defining the receiver’s frame area.
-- `controlView`: The view object that contains this cell (usually an   object).
+- `controlView`: The view object that contains this cell (usually an [`NSControl`](nscontrol.md) object).
 
 ## See Also
 

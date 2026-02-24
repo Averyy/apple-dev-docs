@@ -30,7 +30,7 @@ A new [`MTLTexture`](mtltexture.md) instance if the method completed successfull
 
 ## Parameters
 
-- `descriptor`: An   instance.
+- `descriptor`: An [`MTLTextureDescriptor`](mtltexturedescriptor.md) instance.
 
 ## See Also
 

@@ -20,6 +20,15 @@ object Dock.StaticItem.Tile-data
 - [object Dock.StaticItem.Tile-data.File-data](dock/staticitem/tile-data-data.dictionary/file-data-data.dictionary.md)
   For Apple use only.
 
+## Properties
+
+- `file-data` (Dock.StaticItem.Tile-data.File-data): The data in a file. For Apple use only.
+- `file-type` (integer) *(required)*: The type of tile: - `0`: URL
+- `1`: File
+- `3`: Directory
+- `label` (string) *(required)*: The label of the Dock item.
+- `url` (string): The URL string.
+
 
 ---
 

@@ -30,8 +30,8 @@ An authorization plug-in can store the results of an authentication operation by
 ## Parameters
 
 - `authorization`: An authorization reference referring to the authorization session.
-- `tag`: An   specifying the type of data the Security Server should return. Pass   to retrieve all available information.
-- `info`: A pointer to an authorization set the Security Server creates. On return, this set contains side-band authorization data. When this set is no longer needed, free the memory associated with it by calling the function  .
+- `tag`: An [`AuthorizationString`](authorizationstring.md) specifying the type of data the Security Server should return. Pass `nil` to retrieve all available information.
+- `info`: A pointer to an authorization set the Security Server creates. On return, this set contains side-band authorization data. When this set is no longer needed, free the memory associated with it by calling the function [`AuthorizationFreeItemSet(_:)`](authorizationfreeitemset(_:).md).
 
 
 ---

@@ -26,7 +26,7 @@ The designated initializer.
 
 ## Parameters
 
-- `pasteboardWriter`: The object that provides the dragging content. The object must implement the   protocol.
+- `pasteboardWriter`: The object that provides the dragging content. The object must implement the [`NSPasteboardWriting`](nspasteboardwriting.md) protocol.
 
 
 ---

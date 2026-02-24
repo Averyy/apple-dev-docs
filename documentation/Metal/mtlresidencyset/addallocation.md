@@ -30,7 +30,7 @@ Finalize the inclusion of these resource allocations, and all other changes you 
 
 ## Parameters
 
-- `allocation`: A resource allocation, such as an  ,  , or  .
+- `allocation`: A resource allocation, such as an [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), or [`MTLHeap`](mtlheap.md).
 
 ## See Also
 

@@ -24,8 +24,8 @@ Use this method to configure a delegate that handles timecode updates. The speci
 
 ## Parameters
 
-- `delegate`: An object conforming to the   protocol.
-- `callbackQueue`: The dispatch queue on which the delegate methods are invoked. The   parameter may not be  , except when setting the   to  , otherwise   throws an  .
+- `delegate`: An object conforming to the [`AVCaptureTimecodeGeneratorDelegate`](avcapturetimecodegeneratordelegate.md) protocol.
+- `callbackQueue`: The dispatch queue on which the delegate methods are invoked. The `callbackQueue` parameter may not be `nil`, except when setting the [`AVCaptureTimecodeGeneratorDelegate`](avcapturetimecodegeneratordelegate.md) to `nil`, otherwise [`setDelegate(_:queue:)`](avcapturetimecodegenerator/setdelegate(_:queue:).md) throws an `NSInvalidArgumentException`.
 
 ## See Also
 

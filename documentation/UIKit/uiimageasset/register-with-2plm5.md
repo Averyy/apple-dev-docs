@@ -27,7 +27,7 @@ Each image in an image asset must have a unique set of traits. If the asset alre
 ## Parameters
 
 - `image`: The image you want to register with the image asset.
-- `traitCollection`: The traits to associate with  .
+- `traitCollection`: The traits to associate with `image`.
 
 ## See Also
 

@@ -29,19 +29,19 @@ Computes `alpha*A*x + beta*y` or `alpha*A'*x + beta*y` depending on the value of
 ## Parameters
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
-- `TRANSA`: Specifies whether to use matrix A (  or  ) or the transpose of A ( ,  ,  , or  ).
+- `TRANSA`: Specifies whether to use matrix A (`'N'` or `'n'`) or the transpose of A (`'T'`, `'t'`, `'C'`, or `'c'`).
 - `M`: Number of rows in matrix A.
 - `N`: Number of columns in matrix A.
 - `KL`: Number of subdiagonals in matrix A.
 - `KU`: Number of superdiagonals in matrix A.
-- `ALPHA`: Scaling factor to multiply matrix   by.
-- `A`: Matrix  .
-- `LDA`: Leading dimension of array containing matrix  . (Must be at least  .)
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
+- `ALPHA`: Scaling factor to multiply matrix `A` by.
+- `A`: Matrix `A`.
+- `LDA`: Leading dimension of array containing matrix `A`. (Must be at least `KL+KU+1`.)
+- `X`: Vector `X`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
 - `BETA`: Scaling factor to multiply vector Y by.
 - `Y`: Vector Y.
-- `INCY`: Stride within  . For example, if   is 7, every 7th element is used.
+- `INCY`: Stride within `Y`. For example, if `incY` is 7, every 7th element is used.
 
 ## See Also
 

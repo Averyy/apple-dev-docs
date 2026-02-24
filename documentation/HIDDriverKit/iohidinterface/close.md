@@ -22,7 +22,7 @@ virtual kern_return_t Close(IOService *forClient, IOOptionBits options);
 ## Parameters
 
 - `forClient`: The client that closed the interface.
-- `options`: Options to use when closing the session. Specify   for no options.
+- `options`: Options to use when closing the session. Specify `0` for no options.
 
 ## See Also
 

@@ -24,7 +24,7 @@ func personViewController(_ personViewController: ABPersonViewController, should
 ## Parameters
 
 - `personViewController`: The sender.
-- `person`: The person   is displaying.
+- `person`: The person `personViewController` is displaying.
 - `property`: The property whose value the user selected.
 
 

@@ -35,10 +35,10 @@ A container view controller is a special type of view controller that manages ot
 
 Always use the UIKit container view controllers to implement the common navigation models:
 
-- [`UINavigationController`](uinavigationcontroller.md) manages a stack of child view controllers in a . Pushing a new view controller onto the stack replaces the previous view controller. Popping a view controller reveals the view controller underneath.
-- [`UISplitViewController`](uisplitviewcontroller.md) manages two child view controllers side-by-side (when space is available) in a . (When space is constrained, the system displays those view controllers in a navigation interface.) This type of interface is also known as a primary-detail interface.
-- [`UITabBarController`](uitabbarcontroller.md) displays a row of buttons along the bottom of a . Selecting a button displays the child view controller associated with that button.
-- [`UIPageViewController`](uipageviewcontroller.md) manages an ordered sequence of child view controllers, presenting only one or two at a time, in a . The user navigates between those view controllers by swiping or tapping.
+- [`UINavigationController`](uinavigationcontroller.md) manages a stack of child view controllers in a *navigation interface*. Pushing a new view controller onto the stack replaces the previous view controller. Popping a view controller reveals the view controller underneath.
+- [`UISplitViewController`](uisplitviewcontroller.md) manages two child view controllers side-by-side (when space is available) in a *split-view interface*. (When space is constrained, the system displays those view controllers in a navigation interface.) This type of interface is also known as a primary-detail interface.
+- [`UITabBarController`](uitabbarcontroller.md) displays a row of buttons along the bottom of a *tab-bar interface*. Selecting a button displays the child view controller associated with that button.
+- [`UIPageViewController`](uipageviewcontroller.md) manages an ordered sequence of child view controllers, presenting only one or two at a time, in a *paged interface*. The user navigates between those view controllers by swiping or tapping.
 
 ![An illustration of the standard UIKit container interface types, including split-view controller, navigation controller, tab-bar controller, and page-view controller.](https://docs-assets.developer.apple.com/published/9eec8ab6e799d24b485c52182d413d4d/media-3376044%402x.png)
 

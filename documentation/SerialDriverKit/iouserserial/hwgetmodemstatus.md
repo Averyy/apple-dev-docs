@@ -24,10 +24,10 @@ Override this method and use it to retrieve the current modem status from your h
 
 ## Parameters
 
-- `cts`: On return, a Boolean variable containing the state of the clear-to-send bit. Set this value to   when the bit is set.
-- `dsr`: On return, a Boolean variable containing the state of the data-set-ready bit. Set this value to   when the bit is set.
-- `ri`: On return, a Boolean variable containing the state of the ring-indicator bit. Set this value to   when the bit is set.
-- `dcd`: On return, a Boolean variable containing the state of the data-carrier-detect bit. Set this value to   when the bit is set.
+- `cts`: On return, a Boolean variable containing the state of the clear-to-send bit. Set this value to `YES` when the bit is set.
+- `dsr`: On return, a Boolean variable containing the state of the data-set-ready bit. Set this value to `YES` when the bit is set.
+- `ri`: On return, a Boolean variable containing the state of the ring-indicator bit. Set this value to `YES` when the bit is set.
+- `dcd`: On return, a Boolean variable containing the state of the data-carrier-detect bit. Set this value to `YES` when the bit is set.
 
 ## See Also
 

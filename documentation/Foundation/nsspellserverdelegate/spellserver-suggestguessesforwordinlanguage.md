@@ -21,7 +21,7 @@ An array of `NSString` objects indicating possible correct spellings.
 
 ## Parameters
 
-- `sender`: The   object that sent this message.
+- `sender`: The `NSSpellServer` object that sent this message.
 - `word`: The misspelled word.
 - `language`: The language to use for the guesses.
 

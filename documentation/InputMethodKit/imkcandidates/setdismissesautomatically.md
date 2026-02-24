@@ -22,7 +22,7 @@ When you set the flag to [`false`](https://developer.apple.com/documentation/Swi
 
 ## Parameters
 
-- `flag`:   to have the candidates window dismiss automatically; otherwise  .
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) to have the candidates window dismiss automatically; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

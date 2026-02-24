@@ -20,7 +20,7 @@ A value that indicates the report-ejectability result. Return [`kIOReturnSuccess
 
 ## Parameters
 
-- `isEjectable`: An in/out Boolean parameter. On output, set this to   if the hardware supports ejecting the media.
+- `isEjectable`: An in/out Boolean parameter. On output, set this to `true` if the hardware supports ejecting the media.
 
 ## See Also
 

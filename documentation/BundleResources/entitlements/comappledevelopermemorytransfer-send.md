@@ -9,6 +9,10 @@ An entitlement that grants an alternative browser engine’s rendering extension
 - iOS 17.4+
 - iPadOS 17.4+
 
+
+
+**Type**: string
+
 #### Discussion
 
 To increase the memory allocation of your alternative browser engine’s rendering extension, add this entitlement to its code signature and set the value of this entitlement to your browser app’s bundle ID.

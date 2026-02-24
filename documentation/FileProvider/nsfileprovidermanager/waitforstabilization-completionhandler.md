@@ -29,7 +29,7 @@ Use this method to enforce a consistent state for testing. The system calls the 
 
 ## Parameters
 
-- `completionHandler`: A block that the system calls after pending changes to both the file system and the provider have completed. The system passes the following parameters:
+- `completionHandler`: A block that the system calls after pending changes to both the file system and the provider have completed. The system passes the following parameters: - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

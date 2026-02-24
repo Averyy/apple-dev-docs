@@ -1,9 +1,9 @@
-# ==(_:_:)
+# -=(_:_:)
 
 **Framework**: Spatial  
 **Kind**: op
 
-Returns a Boolean value that indicates whether two points are equal.
+Calculates the vector that’s the element-wise difference of a vector and a vector and stores the result in the left-hand-side variable.
 
 **Availability**:
 - iOS 26.0+
@@ -17,15 +17,15 @@ Returns a Boolean value that indicates whether two points are equal.
 ## Declaration
 
 ```swift
-static func == (lhs: Vector3DFloat, rhs: Vector3DFloat) -> Bool
+static func -= (lhs: inout Vector3DFloat, rhs: Vector3DFloat)
 ```
 
 ## Parameters
 
-- `lhs`: The first point to compare.
-- `rhs`: The second point to compare.
+- `lhs`: The first value.
+- `rhs`: The second value.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spatial/vector3dfloat/==(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/vector3dfloat/-=(_:_:))*

@@ -38,7 +38,7 @@ To add transitions when you change the URL, apply an identifier to the [`Model3D
 
 - `url`: The URL of the image to display.
 - `transaction`: The transaction to use when the phase changes.
-- `content`: A closure that takes the load phase as an input, and   returns the view to display for the specified phase.
+- `content`: A closure that takes the load phase as an input, and returns the view to display for the specified phase.
 
 ## See Also
 

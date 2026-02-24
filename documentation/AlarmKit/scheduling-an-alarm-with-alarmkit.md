@@ -16,9 +16,9 @@ An alarm is an alert that presents at a pre-determined time based on a schedule 
 
 This sample project uses AlarmKit to create and manage different types of alarms. In this app people can create and manage:
 
--  which alert only once at a specified time in the future.
--  which alert with a weekly cadence.
--  which alert after a countdown, and start immediately.
+- **One-time alarms** which alert only once at a specified time in the future.
+- **Repeating alarms** which alert with a weekly cadence.
+- **Timers** which alert after a countdown, and start immediately.
 
 This project also includes a widget extension for setting up the custom countdown Live Activity associated with an alarm.
 

@@ -26,7 +26,7 @@ A new [`MTLLibrary`](mtllibrary.md) instance if the method completes successfull
 
 ## Parameters
 
-- `filepath`: A string of the absolute file path to a Metal library file (ending in  ).
+- `filepath`: A string of the absolute file path to a Metal library file (ending in `.metallib`).
 
 ## See Also
 

@@ -23,7 +23,7 @@ Create the coordinator object during your view’s initialization, and assign th
 
 ## Parameters
 
-- `delegate`: An object capable of handling Writing Tools interactions   for your view. The delegate must be able to modify your view’s text   storage and refresh the view’s layout and appearance.
+- `delegate`: An object capable of handling Writing Tools interactions for your view. The delegate must be able to modify your view’s text storage and refresh the view’s layout and appearance.
 
 
 ---

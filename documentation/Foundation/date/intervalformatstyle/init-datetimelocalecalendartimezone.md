@@ -28,11 +28,11 @@ Values for date style are [`complete`](date/formatstyle/datestyle/complete.md), 
 
 ## Parameters
 
-- `date`: The   for creating the string representation of the date interval.
-- `time`: The   for creating the string representation of the date interval.
-- `locale`: The   for creating the string representation of the date interval.
-- `calendar`: The   for creating the string representation of the date interval.
-- `timeZone`: The   for creating the string representation of the date interval.
+- `date`: The [`Date.FormatStyle.DateStyle`](date/formatstyle/datestyle.md) for creating the string representation of the date interval.
+- `time`: The [`Date.FormatStyle.TimeStyle`](date/formatstyle/timestyle.md) for creating the string representation of the date interval.
+- `locale`: The [`Locale`](locale.md) for creating the string representation of the date interval.
+- `calendar`: The [`Calendar`](calendar.md) for creating the string representation of the date interval.
+- `timeZone`: The [`TimeZone`](timezone.md) for creating the string representation of the date interval.
 
 
 ---

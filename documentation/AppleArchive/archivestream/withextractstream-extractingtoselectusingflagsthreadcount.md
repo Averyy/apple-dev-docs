@@ -33,7 +33,7 @@ This function opens a stream created by [`extractStream(extractingTo:selectUsing
 - `directory`: The directory that the archive stream writes the extracted entries to.
 - `filter`: A closure that’s called for each entry that’s received by the stream.
 - `flags`: Flags that control the behavior of the operation.
-- `threadCount`: The number of worker threads that the operation uses, set to   for default.
+- `threadCount`: The number of worker threads that the operation uses, set to `0` for default.
 - `body`: A closure with the archive stream passed as a parameter.
 
 ## See Also

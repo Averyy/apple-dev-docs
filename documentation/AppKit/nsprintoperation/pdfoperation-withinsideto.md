@@ -26,7 +26,7 @@ The new `NSPrintOperation` object uses the default `NSPrintInfo` object. This me
 
 - `view`: The view containing the data to be turned into PDF data.
 - `rect`: The portion of the view (specified in points in the view’s coordinate space) to be rendered as PDF data.
-- `data`: An empty   object. After the job is run, this object contains the PDF data.
+- `data`: An empty `NSMutableData` object. After the job is run, this object contains the PDF data.
 
 ## See Also
 

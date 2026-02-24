@@ -24,7 +24,7 @@ The default implementation calls [`SetIsAcquired`](iouseraudiobox/setisacquired.
 
 ## Parameters
 
-- `in_acquire`: A Boolean value that indicates the acquisition state. If this value is  , the box is being acquired.
+- `in_acquire`: A Boolean value that indicates the acquisition state. If this value is `true`, the box is being acquired.
 
 ## See Also
 

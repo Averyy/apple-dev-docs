@@ -31,7 +31,7 @@ This function uses the equal callback. `value` and all elements in the set must 
 ## Parameters
 
 - `theSet`: The set to examine.
-- `value`: The value for which to search in  . Comparisons are made using the equal callback provided when   was created. If the equal callback was  , pointer equality (in C, ==) is used.
+- `value`: The value for which to search in `theSet`. Comparisons are made using the equal callback provided when `theSet` was created. If the equal callback was `NULL`, pointer equality (in C, ==) is used.
 
 ## See Also
 

@@ -24,8 +24,8 @@ If you override this method, you must call `super` at some point in your impleme
 
 ## Parameters
 
-- `tabViewItem`: The tab view item to insert. The tab view item must have an associated view controller. If this parameter is   or if the tab view item does not have a view controller, this method throws an exception.
-- `index`: The zero-based index at which to insert the tab. If the index is less than   or greater than the number of items currently in the array, this method raises an exception.
+- `tabViewItem`: The tab view item to insert. The tab view item must have an associated view controller. If this parameter is `nil` or if the tab view item does not have a view controller, this method throws an exception.
+- `index`: The zero-based index at which to insert the tab. If the index is less than `0` or greater than the number of items currently in the array, this method raises an exception.
 
 ## See Also
 

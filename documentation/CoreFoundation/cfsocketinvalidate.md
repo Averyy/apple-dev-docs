@@ -28,7 +28,7 @@ If a run loop source was created for `s`, the run loop source is invalidated.
 
 If a release callback was specified in [`CFSocketContext`](cfsocketcontext.md) object, this function calls it to release the object in the  `info` field (which was provided when `s` was created).
 
-By default, this call closes the underlying socket. If you have explicitly cleared the `kCFSocketCloseOnInvalidate` flag by calling [`CFSocketSetSocketFlags(_:_:)`](cfsocketsetsocketflags(_:_:).md), you must close the socket yourself  calling this function.
+By default, this call closes the underlying socket. If you have explicitly cleared the `kCFSocketCloseOnInvalidate` flag by calling [`CFSocketSetSocketFlags(_:_:)`](cfsocketsetsocketflags(_:_:).md), you must close the socket yourself *after* calling this function.
 
 ## Parameters
 

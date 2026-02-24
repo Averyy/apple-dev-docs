@@ -25,7 +25,7 @@ If the view decreased in both height and width, the list of returned rectangles 
 ## Parameters
 
 - `exposedRects`: On return, contains the list of rectangles. The returned rectangles are in the coordinate space of the view.
-- `count`: Contains the number of rectangles in  ; this value may be 0 and is guaranteed to be no more than 4.
+- `count`: Contains the number of rectangles in `exposedRects`; this value may be 0 and is guaranteed to be no more than 4.
 
 ## See Also
 

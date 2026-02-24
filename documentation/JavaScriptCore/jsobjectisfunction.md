@@ -26,7 +26,7 @@ func JSObjectIsFunction(_ ctx: JSContextRef!, _ object: JSObjectRef!) -> Bool
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The   to test.
+- `object`: The [`JSObjectRef`](jsobjectref.md) to test.
 
 ## See Also
 

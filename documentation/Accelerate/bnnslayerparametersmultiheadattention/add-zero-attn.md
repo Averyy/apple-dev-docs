@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: property
 
-A Boolean value that, if true, adds a row of zeroes to the projected  and  inputs to the calculation.
+A Boolean value that, if true, adds a row of zeroes to the projected *K* and *V* inputs to the calculation.
 
 **Availability**:
 - iOS 14.0+

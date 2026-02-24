@@ -16,7 +16,7 @@ func CGReleaseScreenRefreshRects(_ rects: UnsafeMutablePointer<CGRect>?)
 
 ## Parameters
 
-- `rects`: A list of rectangles obtained by calling   or  .
+- `rects`: A list of rectangles obtained by calling [`CGWaitForScreenRefreshRects(_:_:)`](cgwaitforscreenrefreshrects(_:_:).md) or [`CGWaitForScreenUpdateRects(_:_:_:_:_:)`](cgwaitforscreenupdaterects(_:_:_:_:_:).md).
 
 ## See Also
 

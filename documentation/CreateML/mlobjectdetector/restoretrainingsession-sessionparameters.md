@@ -24,7 +24,7 @@ Use [`resume(_:)`](mlobjectdetector/resume(_:).md) to start the [`MLTrainingSess
 
 ## Parameters
 
-- `sessionParameters`: The   instance you used to create the training session   with  .
+- `sessionParameters`: The [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you used to create the training session with [`makeTrainingSession(trainingData:annotationType:parameters:sessionParameters:)`](mlobjectdetector/maketrainingsession(trainingdata:annotationtype:parameters:sessionparameters:).md).
 
 ## See Also
 

@@ -28,11 +28,11 @@ Most properties are shared by both streams. Setting a shared property for one st
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the   and   objects. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the `CFReadStream` and `CFWriteStream` objects. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `host`: The hostname to which the socket streams should connect. The host can be specified using an IPv4 or IPv6 address or a fully qualified DNS hostname.
 - `port`: The TCP port number to which the socket streams should connect.
-- `readStream`: Upon return, a readable stream connected to the socket address in  . If you pass  , this function will not create a readable stream. Ownership follows the  .
-- `writeStream`: Upon return, a writable stream connected to the socket address in  . If you pass  , this function will not create a writable stream. Ownership follows the  .
+- `readStream`: Upon return, a readable stream connected to the socket address in `port`. If you pass `NULL`, this function will not create a readable stream. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+- `writeStream`: Upon return, a writable stream connected to the socket address in `port`. If you pass `NULL`, this function will not create a writable stream. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 

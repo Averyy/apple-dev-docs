@@ -19,6 +19,10 @@ A dictionary that describes an error chain item.
 object SettingsResponse.Settings.ErrorChainItem
 ```
 
+## Properties
+
+- `ANY` (any) *(required)*: A dictionary that contains additional details about the error.
+
 
 ---
 

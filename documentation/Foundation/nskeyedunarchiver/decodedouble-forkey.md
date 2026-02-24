@@ -30,7 +30,7 @@ If the archived value was encoded as single-precision, the type is coerced.
 
 ## Parameters
 
-- `key`: A key in the archive within the current decoding scope.   must not be  .
+- `key`: A key in the archive within the current decoding scope. `key` must not be `nil`.
 
 ## See Also
 

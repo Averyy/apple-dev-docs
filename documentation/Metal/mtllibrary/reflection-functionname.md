@@ -42,7 +42,7 @@ The method only returns reflection information if all of the following condition
 
 ## Parameters
 
-- `functionName`: The name of a GPU function in the library.   The name needs to match one of the elements in the string array of library’s   property.
+- `functionName`: The name of a GPU function in the library. The name needs to match one of the elements in the string array of library’s [`functionNames`](mtllibrary/functionnames.md) property.
 
 
 ---

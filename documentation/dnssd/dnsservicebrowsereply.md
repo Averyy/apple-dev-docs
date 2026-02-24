@@ -22,13 +22,13 @@ typealias DNSServiceBrowseReply = (DNSServiceRef?, DNSServiceFlags, UInt32, DNSS
 
 ## Parameters
 
-- `sdRef`: The DNSServiceRef initialized by  .
-- `flags`: Possible values are   and kDNSServiceFlagsAdd. See flag definitions for details.
-- `interfaceIndex`: The interface on which the service is advertised. This index should be passed to   when resolving the service.
-- `errorCode`: Will be   (0) on success, otherwise will indicate the failure that occurred. Other parameters are undefined if the errorCode is nonzero.
-- `serviceName`: The discovered service name. This name should be displayed to the user, and stored for subsequent use in the   call.
-- `regtype`: The service type, which is usually (but not always) the same as was passed to  . One case where the discovered service type may not be the same as the requested service type is when using subtypes: The client may want to browse for only those ftp servers that allow anonymous connections. The client will pass the string “_ftp._tcp,_anon” to  , but the type of the service that’s discovered is simply “_ftp._tcp”. The regtype for each discovered service instance should be stored along with the name, so that it can be passed to   when the service is later resolved.
-- `replyDomain`: The domain of the discovered service instance. This may or may not be the same as the domain that was passed to  . The domain for each discovered service instance should be stored along with the name, so that it can be passed to   when the service is later resolved.
+- `sdRef`: The DNSServiceRef initialized by [`DNSServiceBrowse(_:_:_:_:_:_:_:)`](dnsservicebrowse(_:_:_:_:_:_:_:).md).
+- `flags`: Possible values are [`kDNSServiceFlagsMoreComing`](kdnsserviceflagsmorecoming.md) and kDNSServiceFlagsAdd. See flag definitions for details.
+- `interfaceIndex`: The interface on which the service is advertised. This index should be passed to [`DNSServiceResolve(_:_:_:_:_:_:_:_:)`](dnsserviceresolve(_:_:_:_:_:_:_:_:).md) when resolving the service.
+- `errorCode`: Will be [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) (0) on success, otherwise will indicate the failure that occurred. Other parameters are undefined if the errorCode is nonzero.
+- `serviceName`: The discovered service name. This name should be displayed to the user, and stored for subsequent use in the [`DNSServiceResolve(_:_:_:_:_:_:_:_:)`](dnsserviceresolve(_:_:_:_:_:_:_:_:).md) call.
+- `regtype`: The service type, which is usually (but not always) the same as was passed to [`DNSServiceBrowse(_:_:_:_:_:_:_:)`](dnsservicebrowse(_:_:_:_:_:_:_:).md). One case where the discovered service type may not be the same as the requested service type is when using subtypes: The client may want to browse for only those ftp servers that allow anonymous connections. The client will pass the string “_ftp._tcp,_anon” to [`DNSServiceBrowse(_:_:_:_:_:_:_:)`](dnsservicebrowse(_:_:_:_:_:_:_:).md), but the type of the service that’s discovered is simply “_ftp._tcp”. The regtype for each discovered service instance should be stored along with the name, so that it can be passed to [`DNSServiceResolve(_:_:_:_:_:_:_:_:)`](dnsserviceresolve(_:_:_:_:_:_:_:_:).md) when the service is later resolved.
+- `replyDomain`: The domain of the discovered service instance. This may or may not be the same as the domain that was passed to [`DNSServiceBrowse(_:_:_:_:_:_:_:)`](dnsservicebrowse(_:_:_:_:_:_:_:).md). The domain for each discovered service instance should be stored along with the name, so that it can be passed to [`DNSServiceResolve(_:_:_:_:_:_:_:_:)`](dnsserviceresolve(_:_:_:_:_:_:_:_:).md) when the service is later resolved.
 - `context`: The context pointer that was passed to the callout.
 
 ## See Also

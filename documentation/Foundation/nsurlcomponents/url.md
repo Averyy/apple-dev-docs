@@ -24,7 +24,7 @@ var url: URL? { get }
 
 If the receiver has an authority component (user, password, host, or port) and a path component, then the path must either begin with `"/"` or be an empty string. Otherwise, this property contains `nil`.
 
-If the receiver  have an authority component (user, password, host, or port) and has a path component, the path component must not start with `"//"`. If it does, this property contains `nil`.
+If the receiver *does not* have an authority component (user, password, host, or port) and has a path component, the path component must not start with `"//"`. If it does, this property contains `nil`.
 
 If the receiver has `nil` values for all component properties, such as when initializing with [`init()`](nsurlcomponents/init().md), this property returns an `NSURL` object with an empty string, because a URL always has a path—even if it’s an empty string.
 

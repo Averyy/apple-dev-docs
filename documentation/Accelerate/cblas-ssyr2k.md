@@ -31,18 +31,18 @@ Computes `alpha*A*B`
 ## Parameters
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
-- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are   or  .
-- `TRANS`: Specifies whether to use matrix A (  or  ), the transpose of A (  or  ), or the conjugate of A (  or  ).
-- `N`: Order of matrix  .
-- `K`: Specifies the number of columns in matrices   and   if  .   Specifies the number of rows if   or  ).
-- `ALPHA`: Scaling factor for matrix  .
-- `A`: Matrix  .
-- `LDA`: Leading dimension of matrix  .
-- `B`: Matrix  .
-- `LDB`: Leading dimension of array containing matrix  .
-- `BETA`: Scaling factor for matrix  .
-- `C`: Matrix  .
-- `LDC`: Leading dimension of array containing matrix  .
+- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are `'U'` or `'L'`.
+- `TRANS`: Specifies whether to use matrix A (`'N'` or `'n'`), the transpose of A (`'T'` or `'t'`), or the conjugate of A (`'C'` or `'c'`).
+- `N`: Order of matrix `C`.
+- `K`: Specifies the number of columns in matrices `A` and `B` if `trans='N'`. Specifies the number of rows if `trans='C'` or `trans='T'`).
+- `ALPHA`: Scaling factor for matrix `A`.
+- `A`: Matrix `A`.
+- `LDA`: Leading dimension of matrix `A`.
+- `B`: Matrix `B`.
+- `LDB`: Leading dimension of array containing matrix `B`.
+- `BETA`: Scaling factor for matrix `C`.
+- `C`: Matrix `C`.
+- `LDC`: Leading dimension of array containing matrix `C`.
 
 ## See Also
 

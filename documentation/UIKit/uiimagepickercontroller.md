@@ -20,7 +20,7 @@ class UIImagePickerController
 
 #### Overview
 
-An image picker controller manages user interactions and delivers the results of those interactions to a delegate object. The role and appearance of an image picker controller depend on the  you assign to it before you present it.
+An image picker controller manages user interactions and delivers the results of those interactions to a delegate object. The role and appearance of an image picker controller depend on the *source type* you assign to it before you present it.
 
 - A [`sourceType`](uiimagepickercontroller/sourcetype-swift.property.md) of [`UIImagePickerController.SourceType.camera`](uiimagepickercontroller/sourcetype-swift.enum/camera.md) provides a user interface for taking a new picture or movie (on devices that support media capture).
 - A [`sourceType`](uiimagepickercontroller/sourcetype-swift.property.md) of [`UIImagePickerController.SourceType.photoLibrary`](uiimagepickercontroller/sourcetype-swift.enum/photolibrary.md) or [`UIImagePickerController.SourceType.savedPhotosAlbum`](uiimagepickercontroller/sourcetype-swift.enum/savedphotosalbum.md) provides a user interface for choosing among saved pictures and movies.
@@ -74,7 +74,7 @@ Live Photos is a Camera app feature on supported devices, enabling a picture to 
 
 Although Live Photos include sound and motion, they remain photos. When you use an image picker controller to capture or choose still images (by including only the `kUTTypeImage` type in the [`mediaTypes`](uiimagepickercontroller/mediatypes.md) array), assets that were captured as Live Photos continue to appear in the picker. However, when the user chooses an asset, your [`delegate`](uiimagepickercontroller/delegate.md) object receives only a [`UIImage`](uiimage.md) object containing a still-image representation of the Live Photo.
 
-To obtain the full motion and sound content when the user chooses a Live Photo with the image picker, you must include  the `kUTTypeImage` and `kUTTypeLivePhoto` types in the [`mediaTypes`](uiimagepickercontroller/mediatypes.md) array. For more information, see [`livePhoto`](uiimagepickercontroller/infokey/livephoto.md) in [`UIImagePickerControllerDelegate`](uiimagepickercontrollerdelegate.md).
+To obtain the full motion and sound content when the user chooses a Live Photo with the image picker, you must include *both* the `kUTTypeImage` and `kUTTypeLivePhoto` types in the [`mediaTypes`](uiimagepickercontroller/mediatypes.md) array. For more information, see [`livePhoto`](uiimagepickercontroller/infokey/livephoto.md) in [`UIImagePickerControllerDelegate`](uiimagepickercontrollerdelegate.md).
 
 ##### Perform Fully Customized Media Capture and Browsing
 

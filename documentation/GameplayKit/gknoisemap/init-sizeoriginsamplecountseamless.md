@@ -37,7 +37,7 @@ The noise field described by a [`GKNoise`](gknoise.md) object is inherently thre
 - `noise`: The noise object from which GKNoiseMap samples data.
 - `size`: The size is the width and height of a 2-dimensional plane within the noise grid of the GKNoise object.
 - `origin`: The start position of the noise samples within the 2-dimensional plane of the noise as defined by the size parameter. This value needs to be within the range of 0 and the size parameter.
-- `sampleCount`: If an SKTexture image is generated the width and height of the   corresponds to the sampleCount width and height.
+- `sampleCount`: The number of samples in the x and y dimensions of the 2D noise plane starting at the origin up to the size parameter. If an SKTexture image is generated the width and height of the [`SKTexture`](https://developer.apple.com/documentation/SpriteKit/SKTexture) corresponds to the sampleCount width and height.
 - `seamless`: A Boolean value that when true indicates the system adjusts samples from the noise object so that generated texture images can tile without visible seams.
 
 ## See Also

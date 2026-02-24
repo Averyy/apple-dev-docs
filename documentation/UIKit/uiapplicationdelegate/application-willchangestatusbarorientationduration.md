@@ -25,7 +25,7 @@ After calling this method, the app also posts a [`willChangeStatusBarOrientation
 ## Parameters
 
 - `application`: Your singleton app object.
-- `newStatusBarOrientation`: A constant that indicates the new orientation of the app’s user interface; see   for details.
+- `newStatusBarOrientation`: A constant that indicates the new orientation of the app’s user interface; see [`Responding to app life-cycle events`](uiapplicationdelegate#Responding-to-app-life-cycle-events.md) for details.
 - `duration`: The duration of the animation to the new orientation, in seconds.
 
 ## See Also

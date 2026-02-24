@@ -30,8 +30,8 @@ The line break can be triggered either by a hard-break character in the stream o
 
 ## Parameters
 
-- `typesetter`: The typesetter that creates the line. This parameter is required and cannot be set to  .
-- `startIndex`: The starting point for the line-break calculations. The break calculations include the character starting at  .
+- `typesetter`: The typesetter that creates the line. This parameter is required and cannot be set to `NULL`.
+- `startIndex`: The starting point for the line-break calculations. The break calculations include the character starting at `startIndex`.
 - `width`: The requested line-break width.
 - `offset`: The line position offset.
 

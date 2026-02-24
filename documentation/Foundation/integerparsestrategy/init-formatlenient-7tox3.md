@@ -22,8 +22,8 @@ init<Value>(format: Format, lenient: Bool = true) where Format == IntegerFormatS
 
 ## Parameters
 
-- `format`: A configured   that describes the currency string format to parse.
-- `lenient`: A Boolean value that indicates whether the parse strategy should permit some discrepencies when parsing. Defaults to  .
+- `format`: A configured [`IntegerFormatStyle.Currency`](integerformatstyle/currency.md) that describes the currency string format to parse.
+- `lenient`: A Boolean value that indicates whether the parse strategy should permit some discrepencies when parsing. Defaults to `true`.
 
 ## See Also
 

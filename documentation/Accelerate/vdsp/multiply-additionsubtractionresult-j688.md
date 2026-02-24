@@ -59,9 +59,9 @@ The following code shows an example of using this function:
 
 ## Parameters
 
-- `addition`: A tuple that contains the vectors   and   in  .
-- `subtraction`: A tuple that contains the vectors   and   in  .
-- `result`: The output vector   in  .
+- `addition`: A tuple that contains the vectors `A` and `B` in `E = (A + B) * (C - D)`.
+- `subtraction`: A tuple that contains the vectors `C` and `D` in `E = (A + B) * (C - D)`.
+- `result`: The output vector `E` in `E = (A + B) * (C - D)`.
 
 ## See Also
 

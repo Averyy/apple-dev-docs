@@ -35,10 +35,10 @@ If you pass the same `user_memory_context` to [`BNNSGraphContextSetWorkspaceAllo
 ## Parameters
 
 - `context`: The graph context.
-- `realloc`: The memory allocation and reallocation function. If you pass   for this parameter, you must also set   for the   parameter. In this case, graph execution uses the default BNNS allocation mechanism.
-- `free`: The memory allocation and reallocation function. If you pass   for this parameter, you must also set   for the   parameter. In this case, graph execution uses the default BNNS allocation mechanism.
-- `user_memory_context_size`: The size, in bytes,  .
-- `user_memory_context`: A pointer that that BNNS passes unmodified in all calls to   and  .
+- `realloc`: The memory allocation and reallocation function. If you pass `nil` for this parameter, you must also set `nil` for the `free` parameter. In this case, graph execution uses the default BNNS allocation mechanism.
+- `free`: The memory allocation and reallocation function. If you pass `nil` for this parameter, you must also set `nil` for the `realloc` parameter. In this case, graph execution uses the default BNNS allocation mechanism.
+- `user_memory_context_size`: The size, in bytes, `user_memory_context`.
+- `user_memory_context`: A pointer that that BNNS passes unmodified in all calls to `realloc` and `free`.
 
 ## See Also
 

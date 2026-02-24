@@ -37,7 +37,7 @@ currentPlayerItem.nextContentProposal = proposal
 
 ## Parameters
 
-- `contentTimeForTransition`: A   value at which to present the content propsal within the media’s timeline.
+- `contentTimeForTransition`: A [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) value at which to present the content propsal within the media’s timeline.
 - `title`: The title of the proposed content.
 - `previewImage`: The preview image for the proposed item.
 

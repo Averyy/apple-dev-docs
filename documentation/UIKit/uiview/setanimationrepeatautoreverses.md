@@ -27,7 +27,7 @@ Use of this method is discouraged in iOS 4.0 and later. Instead, you should use 
 
 ## Parameters
 
-- `repeatAutoreverses`: Specify   to enable autoreversing or   to disable it.
+- `repeatAutoreverses`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to enable autoreversing or [`false`](https://developer.apple.com/documentation/Swift/false) to disable it.
 
 ## See Also
 

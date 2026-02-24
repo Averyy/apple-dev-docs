@@ -39,9 +39,9 @@ The example above produces a control button that in control center will display 
 
 ## Parameters
 
-- `titleResource`: The localized string resource to display as the title   of the button.
+- `titleResource`: The localized string resource to display as the title of the button.
 - `action`: The action your button performs when pressed.
-- `actionLabel`: A view that is rendered when the button’s action is   performed.
+- `actionLabel`: A view that is rendered when the button’s action is performed.
 
 
 ---

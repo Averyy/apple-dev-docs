@@ -11,6 +11,10 @@ A message that tells people why your app requests access to a person’s focus s
 - macOS 12.0+
 - watchOS 8.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Add this key before you use [`INFocusStatusCenter`](https://developer.apple.com/documentation/Intents/INFocusStatusCenter) to discover a person’s focus status.

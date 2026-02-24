@@ -32,12 +32,12 @@ In most cases, passing the same reading and writing options to both this method 
 
 ## Parameters
 
-- `readingURLs`: An array of   objects identifying the items you want to read.
-- `readingOptions`: One of the reading options described in  . If you pass   for this parameter, the   method of relevant file presenters is called before your block executes.
-- `writingURLs`: An array of   objects identifying the items you want to write.
-- `writingOptions`: One of the writing options described in  . The options you specify partially determine how file presenters are notified and how this file coordinator object waits to execute your block.
-- `outError`: On input, a pointer to a pointer for an error object. If a file presenter encounters an error while preparing for this operation, that error is returned in this parameter and the block in the   parameter is not executed. If you cancel this operation before the   block is executed, this parameter contains an error object on output.
-- `batchAccessor`: The block takes the following parameter:
+- `readingURLs`: An array of [`NSURL`](nsurl.md) objects identifying the items you want to read.
+- `readingOptions`: One of the reading options described in [`NSFileCoordinator.ReadingOptions`](nsfilecoordinator/readingoptions.md). If you pass `0` for this parameter, the [`savePresentedItemChanges(completionHandler:)`](nsfilepresenter/savepresenteditemchanges(completionhandler:).md) method of relevant file presenters is called before your block executes.
+- `writingURLs`: An array of [`NSURL`](nsurl.md) objects identifying the items you want to write.
+- `writingOptions`: One of the writing options described in [`NSFileCoordinator.WritingOptions`](nsfilecoordinator/writingoptions.md). The options you specify partially determine how file presenters are notified and how this file coordinator object waits to execute your block.
+- `outError`: On input, a pointer to a pointer for an error object. If a file presenter encounters an error while preparing for this operation, that error is returned in this parameter and the block in the `writer` parameter is not executed. If you cancel this operation before the `batchAccessor` block is executed, this parameter contains an error object on output.
+- `batchAccessor`: A [`Block object`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) containing additional calls to methods of this class. The block takes the following parameter: - **completionHandler**: A completion handler block. The batch accessor must call the completion handler when it has finished its read and write calls.
 
 ## See Also
 

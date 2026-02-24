@@ -23,8 +23,8 @@ class func showBroadcastPicker(at point: CGPoint, from window: NSWindow?, prefer
 ## Parameters
 
 - `point`: The origin point within the specified window.
-- `window`: The window presenting the picker. Specify   to present the picker from the main app window.
-- `preferredExtension`: The extension bundle identifier for the preferred broadcast extension service. Specify   to show all extensions.
+- `window`: The window presenting the picker. Specify [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) to present the picker from the main app window.
+- `preferredExtension`: The extension bundle identifier for the preferred broadcast extension service. Specify [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) to show all extensions.
 - `handler`: The system calls this closure after the user selects a broadcast extension. The system passes the closure the selected broadcast activity controller, or an error if a failure occurred.
 
 

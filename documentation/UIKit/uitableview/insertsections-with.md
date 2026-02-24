@@ -27,7 +27,7 @@ When this method is called in an animation block defined by the [`beginUpdates()
 ## Parameters
 
 - `sections`: An index set that specifies the sections to insert in the table view. If a section already exists at the specified index location, it is moved down one index location.
-- `animation`: A constant that indicates how the insertion is to be animated, for example, fade in or slide in from the left. See   for descriptions of these constants.
+- `animation`: A constant that indicates how the insertion is to be animated, for example, fade in or slide in from the left. See [`UITableView.RowAnimation`](uitableview/rowanimation.md) for descriptions of these constants.
 
 ## See Also
 

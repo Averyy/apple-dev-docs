@@ -20,11 +20,11 @@ Creates a new map with the bounds, interaction modes, selected map feature, scop
 
 ## Parameters
 
-- `bounds`: The   that define the camera’s view of the map.
-- `interactionModes`: The   that describe ways a person can interact with the map.
-- `selection`: A binding to a   that represents a person’s selection.
-- `scope`: The map’s  .
-- `content`: A   content builder that supplies the map’s content.
+- `bounds`: The [`MapCameraBounds`](mapcamerabounds.md) that define the camera’s view of the map.
+- `interactionModes`: The [`MapInteractionModes`](mapinteractionmodes.md) that describe ways a person can interact with the map.
+- `selection`: A binding to a [`MapFeature`](mapfeature.md) that represents a person’s selection.
+- `scope`: The map’s [`Namespace.ID`](https://developer.apple.com/documentation/SwiftUI/Namespace/ID).
+- `content`: A [`MapContent`](mapcontent.md) content builder that supplies the map’s content.
 
 ## See Also
 

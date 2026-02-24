@@ -31,9 +31,9 @@ This function is thread safe.
 
 ## Parameters
 
-- `monitor`: The CFNetServiceMonitor that is to be unscheduled; cannot be  .
-- `runLoop`: The run loop; cannot be  .
-- `runLoopMode`: The mode from which the monitor is to be unscheduled; cannot be  .
+- `monitor`: The CFNetServiceMonitor that is to be unscheduled; cannot be `NULL`.
+- `runLoop`: The run loop; cannot be `NULL`.
+- `runLoopMode`: The mode from which the monitor is to be unscheduled; cannot be `NULL`.
 
 ## See Also
 

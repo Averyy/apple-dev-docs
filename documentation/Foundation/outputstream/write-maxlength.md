@@ -35,7 +35,7 @@ A number indicating the outcome of the operation:
 ## Parameters
 
 - `buffer`: The data to write.
-- `len`: The length of the data buffer, in bytes.
+- `len`: The length of the data buffer, in bytes. > ❗ **Important**:  The behavior of this method is undefined if you pass a negative or zero number.
 
 ## See Also
 

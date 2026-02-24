@@ -1,4 +1,4 @@
-# iOS & iPadOS 26.4 Beta Release Notes
+# iOS & iPadOS 26.4 Beta 2 Release Notes
 
 **Framework**: iOS & iPadOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.4 beta. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
+The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.4 beta 2. The SDK comes bundled with Xcode 26.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.4, see [`Xcode 26.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_4-release-notes).
 
 ##### Background Assets
 
@@ -17,19 +17,19 @@ The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- Apps might crash when downloading asset packs.  (169648111)  If an app crashes due to this issue, then relaunch it. The app should then have local access to the asset pack that it was downloading when it crashed.
+- Apps might crash when downloading asset packs.  (169648111) **Workaround:** If an app crashes due to this issue, then relaunch it. The app should then have local access to the asset pack that it was downloading when it crashed.
 
 ##### External Media
 
 ###### Known Issues
 
-- HFS external media might fail to mount automatically.  (168672160)  For macOS only, use CLI tool `diskutil mount` to attach the relevant disk device.
+- HFS external media might fail to mount automatically.  (168672160) **Workaround:** For macOS only, use CLI tool `diskutil mount` to attach the relevant disk device.
 
 ##### Feedback
 
-###### Known Issues
+###### Resolved Issues
 
-- After submitting a crash/panic report, Feedback UI’s close button might become unresponsive.  (170091186)  Locking and unlocking the device helps get out of this state.
+- Fixed: After submitting a crash/panic report, Feedback UI’s close button might become unresponsive.  (170091186)
 
 ##### Memory Integrity Enforcement for Applications
 
@@ -41,7 +41,7 @@ The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad r
 
 ###### New Features
 
-- RCS end-to-end encryption is now available for testing in this beta. This feature is not shipping in this release and will be available to customers in a future software update for iOS, iPadOS, macOS, and watchOS. End-to-end encryption is in beta and is not available for all devices or carriers. Conversations labeled as encrypted are encrypted end-to-end, so messages can’t be read while they’re sent between devices. In this beta, RCS encryption is available for testing between Apple devices and is not yet testable with other platforms.  (170160585)
+- In this beta, RCS end-to-end encryption will become available for testing between Apple and Android devices. This feature is not shipping in this release and will be available to customers in future iOS, iPadOS, macOS, and watchOS 26 releases. End-to-end encryption is in beta and is not available for all devices or carriers. Conversations labeled as encrypted are encrypted end-to-end, so messages can’t be read while they’re sent between devices.  (170160585)
 
 ##### Networking
 
@@ -61,6 +61,10 @@ The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad r
 
 - New fields [`revocationType`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/revocationtype-swift.property) and [`revocationPercentage`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/revocationpercentage) have been added to [`Transaction`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction).  (148858551)
 
+###### Resolved Issues
+
+- Fixed: Purchase Intents might not be emitted from the intents sequence when the app is launched from the background.  (168958783) (FB21767675)
+
 ##### Swiftui
 
 ###### Resolved Issues
@@ -69,7 +73,7 @@ The iOS & iPadOS 26.4 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- Multiple implicit SwiftUI animations (triggered by `RealityViewContent.animate` or `Entity.animate`) that modify a RealityKit component’s properties, are combined only when the implicit animations target the same set of component properties. For example, if you initiate an implicit animation on Transform.scale and then initiate an implicit animation on Transform.scale and Transform.translation then the animations affecting the scale property will be independent of each other, and will not combine. In this case, the most recently initiated animation will overwrite the scale property.  (169723142)  Ensure the same component properties are animated by subsequent implicit animations when possible.
+- Multiple implicit SwiftUI animations (triggered by `RealityViewContent.animate` or `Entity.animate`) that modify a RealityKit component’s properties, are combined only when the implicit animations target the same set of component properties. For example, if you initiate an implicit animation on Transform.scale and then initiate an implicit animation on Transform.scale and Transform.translation then the animations affecting the scale property will be independent of each other, and will not combine. In this case, the most recently initiated animation will overwrite the scale property.  (169723142) **Workaround:** Ensure the same component properties are animated by subsequent implicit animations when possible.
 
 ##### Uikit
 

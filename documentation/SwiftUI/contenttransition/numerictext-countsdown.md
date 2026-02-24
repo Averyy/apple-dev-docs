@@ -26,7 +26,7 @@ A new content transition.
 
 ## Parameters
 
-- `countsDown`: True if the numbers represented by the text   are counting downwards.
+- `countsDown`: True if the numbers represented by the text are counting downwards.
 
 ## See Also
 

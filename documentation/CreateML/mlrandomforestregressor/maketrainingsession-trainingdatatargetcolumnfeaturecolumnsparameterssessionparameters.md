@@ -27,9 +27,9 @@ A `MLTrainingSession` that can be used to start or resume training.
 
 - `trainingData`: A DataTable specifying training data.
 - `targetColumn`: A String specifying the target column name in the trainingData
-- `featureColumns`: An optional list of Strings specifying feature columns to be   used to predict the target, if not provided, default to use all the   other columns in the trainingData, except the one specified by targetColumn
-- `parameters`: Model training parameters. See   for the defaults.
-- `sessionParameters`: Training session parameters. See   for the defaults.
+- `featureColumns`: An optional list of Strings specifying feature columns to be used to predict the target, if not provided, default to use all the other columns in the trainingData, except the one specified by targetColumn
+- `parameters`: Model training parameters. See [`MLRandomForestRegressor.ModelParameters`](mlrandomforestregressor/modelparameters-swift.struct.md) for the defaults.
+- `sessionParameters`: Training session parameters. See [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) for the defaults.
 
 ## See Also
 

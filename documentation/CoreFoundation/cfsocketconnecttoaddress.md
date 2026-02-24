@@ -26,9 +26,9 @@ An error code indicating success or failure of the connection attempt.
 
 ## Parameters
 
-- `s`: The CFSocket object with which to connect to  .
-- `address`: A CFData object containing a   appropriate for the protocol family of   (  or  , for example), indicating the remote address to which to connect. This data object is used only for the duration of the function call.
-- `timeout`: The time to wait for a connection to succeed. If a negative value is used, this function does not wait for the connection and instead lets the connection attempt happen in the background. If   requested a  , you will receive a callback when the background connection succeeds or fails.
+- `s`: The CFSocket object with which to connect to `address`.
+- `address`: A CFData object containing a `struct sockaddr` appropriate for the protocol family of `s` (`struct sockaddr_in` or `struct sockaddr_in6`, for example), indicating the remote address to which to connect. This data object is used only for the duration of the function call.
+- `timeout`: The time to wait for a connection to succeed. If a negative value is used, this function does not wait for the connection and instead lets the connection attempt happen in the background. If `s` requested a `kCFSocketConnectCallBack`, you will receive a callback when the background connection succeeds or fails.
 
 ## See Also
 

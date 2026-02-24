@@ -24,9 +24,9 @@ To customize the segmented control appearance you need to provide divider images
 
 ## Parameters
 
-- `dividerImage`: The divider image to use for the combination of   and  .
-- `leftState`: The state may be   or  .
-- `rightState`: The state may be   or  .
+- `dividerImage`: The divider image to use for the combination of `leftState` and `rightState`.
+- `leftState`: The state of the left segment for which to set the divider image. The state may be [`normal`](uicontrol/state-swift.struct/normal.md) or [`selected`](uicontrol/state-swift.struct/selected.md).
+- `rightState`: The state of the right segment for which to set the divider image. The state may be [`normal`](uicontrol/state-swift.struct/normal.md) or [`selected`](uicontrol/state-swift.struct/selected.md).
 
 ## See Also
 

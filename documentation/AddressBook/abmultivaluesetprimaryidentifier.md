@@ -21,7 +21,7 @@ func ABMultiValueSetPrimaryIdentifier(_ multiValue: ABMutableMultiValueRef!, _ i
 ## Parameters
 
 - `multiValue`: The multi-value list you wish to modify.
-- `identifier`: The identifier corresponding to the value you wish to designate as the primary value for this multi-value list. Use the   function to get the identifier given the index. If   is  , this function raises an exception.
+- `identifier`: The identifier corresponding to the value you wish to designate as the primary value for this multi-value list. Use the [`ABMultiValueCopyIdentifierAtIndex(_:_:)`](abmultivaluecopyidentifieratindex(_:_:).md) function to get the identifier given the index. If `identifier` is `NULL`, this function raises an exception.
 
 ## See Also
 

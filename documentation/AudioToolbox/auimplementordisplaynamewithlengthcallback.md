@@ -27,6 +27,9 @@ The block returns a truncated parameter node display name.
 
 The block takes the following parameters:
 
+- **node**: The parameter node to query.
+- **desiredLength**: The desired length, in characters, of the display name.
+
 ## See Also
 
 - [var implementorDisplayNameWithLengthCallback: AUImplementorDisplayNameWithLengthCallback](auparameternode/implementordisplaynamewithlengthcallback.md)

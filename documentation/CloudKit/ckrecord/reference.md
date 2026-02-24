@@ -51,6 +51,19 @@ The figure below shows an example of a relationship between a to-do list record 
 
 The following code sample shows how to create the reference object for each item record and configure it to point at the list record:
 
+**Swift**:
+
+```swift
+itemRecord["owningList"] = CKReference(record: listRecord, action: .deleteSelf)
+```
+
+**Objective-C**:
+
+```objc
+CKReference* ref = [[CKReference alloc] initWithRecord:listRecord action:CKReferenceActionDeleteSelf];
+itemRecord[@"owningList"] = ref;
+```
+
 An ownership type of organization is useful even if one object doesn’t explicitly own another. Ownership helps establish the relationships between records and how you search for them in the database. Ownership doesn’t require the deletion of the owned records when you delete their owner record. You can prevent such deletions by specifying the [`CKRecord.ReferenceAction.none`](ckrecord/referenceaction/none.md) action when you create a `CKReference` object.
 
 > **Note**: When you’re creating a `CKReference` between two objects and you have both objects in memory, be sure to fetch the object on the receiving end of the relationship. This is due to the creation of the `CKReference` between the two objects altering the [`recordChangeTag`](ckrecord/recordchangetag.md) of the receiving object on the server.
@@ -60,6 +73,38 @@ An ownership type of organization is useful even if one object doesn’t explici
 When you want to find records for a single owner object, you create a `CKReference` object and use it to build your search predicate. When you use reference objects in search predicates, the search code looks only at the ID value in the reference object. It matches the ID in records of the specified type with the ID you provide in the `CKReference` object.
 
 The code sample below shows how to use a reference object to construct a query for the records in the figure above. The `listID` variable is a placeholder for the record ID of the list with the items you want to retrieve. The predicate tells the query object to search the `owningList` field of the target records and compare the reference object there with the one in the `recordToMatch` variable. Executing the query operation object returns the matching records asynchronously to the completion block you provide.
+
+**Swift**:
+
+```swift
+// Match item records with an owningList field that points to the specified list record.
+let listID = listRecord.recordID
+let recordToMatch = CKReference(recordID: listID, action: .deleteSelf)
+let predicate = NSPredicate(format: "owningList == %@", recordToMatch)
+// Create the query object.
+let query = CKQuery(recordType: "Item", predicate: predicate)
+let queryOp = CKQueryOperation(query: query)
+queryOp.queryCompletionBlock = { (cursor, error) in
+    // Process the results…
+}
+// Add the CKQueryOperation to a queue to execute it and process the results asynchronously.
+```
+
+**Objective-C**:
+
+```objc
+// Match item records with an owningList field that points to the specified list record.
+CKReference* recordToMatch = [[CKReference alloc] initWithRecordID:listID
+                                                            action:CKReferenceActionDeleteSelf];
+NSPredicate* predicate = [NSPredicate predicateWithFormat:@"owningList == %@", recordToMatch];
+// Create the query object.
+CKQuery* query = [[CKQuery alloc] initWithRecordType:@"Item" predicate:predicate];
+CKQueryOperation *queryOp = [[CKQueryOperation alloc] initWithQuery:query];
+[queryOp setQueryCompletionBlock:^(CKQueryCursor *nextCursor, NSError *error) {
+    // Process the results…
+}];
+// Add the CKQueryOperation to a queue to execute it and process the results asynchronously.
+```
 
 ## Topics
 

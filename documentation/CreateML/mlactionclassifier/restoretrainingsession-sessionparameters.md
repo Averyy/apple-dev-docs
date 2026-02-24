@@ -20,7 +20,7 @@ An [`MLTrainingSession`](mltrainingsession.md) that represents the action classi
 
 ## Parameters
 
-- `sessionParameters`: The   instance you used   to create the training session using   .
+- `sessionParameters`: The [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you used to create the training session using [`makeTrainingSession(trainingData:parameters:sessionParameters:)`](mlactionclassifier/maketrainingsession(trainingdata:parameters:sessionparameters:).md).
 
 ## See Also
 

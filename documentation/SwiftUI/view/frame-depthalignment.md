@@ -25,8 +25,8 @@ Use this method to specify a fixed size for a view’s depth. If you don’t spe
 
 ## Parameters
 
-- `depth`: A fixed depth for the resulting view. If   is  ,   the resulting view assumes this view’s sizing behavior.
-- `alignment`: The alignment of this view inside the resulting view.    applies if this view is smaller than the size given by   the resulting frame.
+- `depth`: A fixed depth for the resulting view. If `depth` is `nil`, the resulting view assumes this view’s sizing behavior.
+- `alignment`: The alignment of this view inside the resulting view. `alignment` applies if this view is smaller than the size given by the resulting frame.
 
 ## See Also
 

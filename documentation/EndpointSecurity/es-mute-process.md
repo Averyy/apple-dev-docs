@@ -24,7 +24,7 @@ To mute a subset of events from a process, use [`es_mute_process_events(_:_:_:_:
 
 ## Parameters
 
-- `client`: A previously-created client. If the call succeeds, this client no longer receives events from the process indicated by  .
+- `client`: A previously-created client. If the call succeeds, this client no longer receives events from the process indicated by `audit_token`.
 - `audit_token`: The audit token that indicates the process to mute.
 
 ## See Also

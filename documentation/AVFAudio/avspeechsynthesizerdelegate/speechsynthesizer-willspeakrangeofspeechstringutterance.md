@@ -29,7 +29,7 @@ The system calls this method once for each unit of speech in the utterance’s t
 ## Parameters
 
 - `synthesizer`: The speech synthesizer that’s about to speak an utterance.
-- `characterRange`: The range of characters in the utterance’s   that correspond to the unit of speech the synthesizer is about to speak.
+- `characterRange`: The range of characters in the utterance’s [`speechString`](avspeechutterance/speechstring.md) that correspond to the unit of speech the synthesizer is about to speak.
 - `utterance`: The utterance that the speech synthesizer is about to speak.
 
 ## See Also

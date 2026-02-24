@@ -26,7 +26,7 @@ The capture output calls this method on the dispatch queue specified by its [`de
 ## Parameters
 
 - `output`: The depth data output providing data.
-- `depthData`: A depth data object containing information about the  dropped data, such as its data type. Because this depth data was not captured or processed, its   property is empty.
+- `depthData`: A depth data object containing information about the  dropped data, such as its data type. Because this depth data was not captured or processed, its [`depthDataMap`](avdepthdata/depthdatamap.md) property is empty.
 - `timestamp`: The time at which the data was captured.
 - `connection`: The capture connection through which the data was captured.
 - `reason`: The reason depth data was dropped.

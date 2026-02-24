@@ -22,7 +22,7 @@ func fadeGain(gain: Double, duration: Double, curveType: PHASECurveType)
 ## Parameters
 
 - `gain`: The target volume.
-- `duration`: The total time to complete the volume adjustment. The framework scales this value by  .
+- `duration`: The total time to complete the volume adjustment. The framework scales this value by [`unitsPerSecond`](phaseengine/unitspersecond.md).
 - `curveType`: A selection that specifies a mathematical curve that shapes the volume adjustment over time.
 
 ## See Also

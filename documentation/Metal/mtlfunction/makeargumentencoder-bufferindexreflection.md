@@ -27,7 +27,7 @@ Resources encoded into an argument buffer by the [`MTLArgumentEncoder`](mtlargum
 ## Parameters
 
 - `bufferIndex`: The index of an argument buffer in the function’s argument list. This method fails if the specified index doesn’t correspond to an argument buffer.
-- `reflection`: A pointer that Metal populates with the function reflection data in the argument buffer at  .
+- `reflection`: A pointer that Metal populates with the function reflection data in the argument buffer at `bufferIndex`.
 
 ## See Also
 

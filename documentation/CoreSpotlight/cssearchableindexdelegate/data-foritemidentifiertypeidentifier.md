@@ -31,8 +31,8 @@ Produce the data as quickly as possible so the app receiving the data can update
 ## Parameters
 
 - `searchableIndex`: The index containing the requested searchable item.
-- `itemIdentifier`: The unique identifier of the searchable item. Use this value to locate   the item in your content.
-- `typeIdentifier`: The type of data that you must provide. This parameter contains one of   the values from the   property   of the item’s attribute set.
+- `itemIdentifier`: The unique identifier of the searchable item. Use this value to locate the item in your content.
+- `typeIdentifier`: The type of data that you must provide. This parameter contains one of the values from the [`providerDataTypeIdentifiers`](cssearchableitemattributeset/providerdatatypeidentifiers.md) property of the item’s attribute set.
 
 ## See Also
 

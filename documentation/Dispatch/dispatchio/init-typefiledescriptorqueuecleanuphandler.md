@@ -26,10 +26,10 @@ The channel takes control of the specified file descriptor until the channel clo
 
 ## Parameters
 
-- `type`: The access semantics for the channel. For a list of possible values, see  .
+- `type`: The access semantics for the channel. For a list of possible values, see [`DispatchIO.StreamType`](dispatchio/streamtype.md).
 - `fileDescriptor`: The file descriptor from which to read or write data.
 - `queue`: The dispatch queue on which to perform work.
-- `cleanupHandler`: The handler to execute once the channel is closed. This block has no return value and takes the following parameter:
+- `cleanupHandler`: The handler to execute once the channel is closed. This block has no return value and takes the following parameter: - **error**: An `errno` condition if creating or opening the channel failed; otherwise, the value is `0`.
 
 ## See Also
 

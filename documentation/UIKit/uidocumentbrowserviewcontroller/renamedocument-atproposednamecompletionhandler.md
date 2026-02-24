@@ -20,8 +20,9 @@ func renameDocument(at documentURL: URL, proposedName: String) async throws -> U
 ## Parameters
 
 - `documentURL`: The URL specifying the location of the document.
-- `proposedName`: The proposed new name to rename the document to. If   is already taken, the system might alter the proposed name and confirm the new suggestion with the user. The final name that the system chooses appears in the   parameter of  .
-- `completionHandler`: A completion handler to execute after the renaming operation occurs. The final URL and error information are available in the completion handler.
+- `proposedName`: The proposed new name to rename the document to. If `proposedName` is already taken, the system might alter the proposed name and confirm the new suggestion with the user. The final name that the system chooses appears in the `finalURL` parameter of `completionHandler`.
+- `completionHandler`: A completion handler to execute after the renaming operation occurs. The final URL and error information are available in the completion handler. - **`finalURL`**: The URL of the newly renamed document, or `nil` if an error occurs.
+- **`error`**: An object that describes the error, if one occurs; otherwise, `nil`.
 
 
 ---

@@ -21,6 +21,8 @@ typealias CMMotionActivityHandler = (CMMotionActivity?) -> Void
 
 This block takes the following parameter:
 
+- **`activity`**: The motion activity object that defines the current type of motion for the device.
+
 ## See Also
 
 - [func startActivityUpdates(to: OperationQueue, withHandler: CMMotionActivityHandler)](cmmotionactivitymanager/startactivityupdates(to:withhandler:).md)

@@ -9,6 +9,10 @@ A Boolean value that enables tagging of pointers and memory allocations.
 - iOS 26.0+
 - iPadOS 26.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 To enable this entitlement for your app or extension in Xcode, first add the Enhanced Security capability. Then, under Memory Safety, select Enable Hardware Memory Tagging.

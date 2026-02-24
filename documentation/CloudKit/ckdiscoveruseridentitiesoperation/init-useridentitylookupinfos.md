@@ -26,7 +26,7 @@ After you create the operation, assign a handler to [`discoverUserIdentitiesComp
 
 ## Parameters
 
-- `userIdentityLookupInfos`: An array that contains instances of  . CloudKit uses this parameter as the default value for the   property. If you specify  , you must assign a value to that property before you execute the operation.
+- `userIdentityLookupInfos`: An array that contains instances of [`CKUserIdentity.LookupInfo`](ckuseridentity/lookupinfo-swift.class.md). CloudKit uses this parameter as the default value for the [`userIdentityLookupInfos`](ckdiscoveruseridentitiesoperation/useridentitylookupinfos.md) property. If you specify `nil`, you must assign a value to that property before you execute the operation.
 
 ## See Also
 

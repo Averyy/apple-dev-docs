@@ -30,10 +30,10 @@ To accept or decline an exchange request, invoke this method from the [`player(_
 
 ## Parameters
 
-- `key`: The identifier for looking up the translated reply message in the default   file. If you use a formatted string with specifiers, provide the arguments.
+- `key`: The identifier for looking up the translated reply message in the default `Localized.strings` file. If you use a formatted string with specifiers, provide the arguments.
 - `arguments`: A list of arguments to substitute into the localized string if it’s formatted and contains specifiers.
 - `data`: The game-specific data associated with the reply.
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameter: - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

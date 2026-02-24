@@ -25,10 +25,10 @@ A result code. See Result Codes.
 
 ## Parameters
 
-- `inAudioFileStream`: The ID of the parser from which you wish to obtain information. The parser ID is returned by the   function.
-- `inPropertyID`: A four-character ID indicating the audio file stream property about which you want information. See   for possible values.
+- `inAudioFileStream`: The ID of the parser from which you wish to obtain information. The parser ID is returned by the [`AudioFileStreamOpen(_:_:_:_:_:)`](audiofilestreamopen(_:_:_:_:_:).md) function.
+- `inPropertyID`: A four-character ID indicating the audio file stream property about which you want information. See [`Audio File Stream Properties`](1391506-audio-file-stream-properties.md) for possible values.
 - `outPropertyDataSize`: On output, the size, in bytes, of the current value of the specified property.
-- `outWritable`: On output,   if the property can be written. Currently, there are no writable audio file stream properties.
+- `outWritable`: On output, `true` if the property can be written. Currently, there are no writable audio file stream properties.
 
 ## See Also
 

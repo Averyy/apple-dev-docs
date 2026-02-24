@@ -29,6 +29,9 @@ This method applies the source-out compositing filter to an image. The effect cr
 
 The source-out compositing filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in an output image that shows the portion of the background image that doesn’t overlap with the input image:
 
 ```swift

@@ -32,9 +32,9 @@ This is a convenience method.  It is the equivalent of creating an instance of [
 
 - `range`: The range of the string to analyze.
 - `scheme`: The tag scheme to use. See Linguistic Tag Schemes for supported values.
-- `options`: The linguistic tagger options to use. See   for the constants. These constants can be combined using the C-Bitwise OR operator.
-- `orthography`: The orthography of the string. If  , the linguistic tagger will attempt to determine the orthography from the string content.
-- `tokenRanges`: An array returned by-reference containing the token ranges of the linguistic tags wrapped in   objects.
+- `options`: The linguistic tagger options to use. See [`NSLinguisticTagger.Options`](nslinguistictagger/options.md) for the constants. These constants can be combined using the C-Bitwise OR operator.
+- `orthography`: The orthography of the string. If `nil`, the linguistic tagger will attempt to determine the orthography from the string content.
+- `tokenRanges`: An array returned by-reference containing the token ranges of the linguistic tags wrapped in `NSValue` objects.
 
 ## See Also
 

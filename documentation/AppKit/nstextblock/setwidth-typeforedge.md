@@ -17,7 +17,7 @@ func setWidth(_ val: CGFloat, type: NSTextBlock.ValueType, for layer: NSTextBloc
 ## Parameters
 
 - `val`: The new value for the specified edge width.
-- `type`: The type of value being provided. This controls how   is interpreted.
+- `type`: The type of value being provided. This controls how `val` is interpreted.
 - `layer`: The layer of the text block to modify.
 - `edge`: The edge of the layer to modify.
 

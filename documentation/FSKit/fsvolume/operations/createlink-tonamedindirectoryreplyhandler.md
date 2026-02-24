@@ -28,7 +28,7 @@ If creating the link fails, complete the request with an error with a domain of 
 - `item`: The existing item to which to link.
 - `name`: The name for the new link.
 - `directory`: The directory in which to create the link.
-- `reply`: A block or closure to indicate success or failure. If creation succeeds, pass an   of the newly-created link and a   error. If creation fails, pass the relevant error as the second parameter; FSKit ignores any   in this case. For an   Swift implementation, there’s no reply handler; simply return the   or throw an error.
+- `reply`: A block or closure to indicate success or failure. If creation succeeds, pass an [`FSFileName`](fsfilename.md) of the newly-created link and a `nil` error. If creation fails, pass the relevant error as the second parameter; FSKit ignores any [`FSFileName`](fsfilename.md) in this case. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSFileName`](fsfilename.md) or throw an error.
 
 ## See Also
 

@@ -27,7 +27,7 @@ The framework writes only MIDI events when writing to the MIDI file. MIDI files 
 
 - `fileURL`: The URL of the file you want to write to.
 - `resolution`: The relationship between tick and quarter note for saving to a Standard MIDI File. Passing zero uses the default value set using the tempo track.
-- `replace`: When  , the framework overwrites an existing file at  . Otherwise, the call fails with a permission error if a file at the specified path exists.
+- `replace`: When `true`, the framework overwrites an existing file at `fileURL`. Otherwise, the call fails with a permission error if a file at the specified path exists.
 
 
 ---

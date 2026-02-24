@@ -30,8 +30,8 @@ The calculations are implemented according to RFC-5545 and RFC-7529.
 
 ## Parameters
 
-- `start`: The date which defines the starting point for the   recurrence rule.
-- `range`: A range of dates which to search for recurrences.   If  , return all recurrences of the event.
+- `start`: The date which defines the starting point for the recurrence rule.
+- `range`: A range of dates which to search for recurrences. If `nil`, return all recurrences of the event.
 
 
 ---

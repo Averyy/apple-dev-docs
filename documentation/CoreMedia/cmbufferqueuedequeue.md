@@ -30,7 +30,7 @@ The buffer is released by the queue, but it is also retained for the client. Buf
 
 ## Parameters
 
-- `queue`: The   from which to dequeue a buffer.
+- `queue`: The `CMBufferQueue` from which to dequeue a buffer.
 
 ## See Also
 

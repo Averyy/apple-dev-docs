@@ -17,7 +17,7 @@ var isCompilation: Bool { get }
 
 #### Discussion
 
-A  is an album with tracks from multiple sources.
+A *compilation* is an album with tracks from multiple sources.
 
 ## See Also
 

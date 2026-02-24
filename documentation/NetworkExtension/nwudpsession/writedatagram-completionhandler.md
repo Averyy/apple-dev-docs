@@ -25,7 +25,7 @@ Callers should wait until the `completionHandler` is executed before issuing ano
 
 ## Parameters
 
-- `datagram`: An   object containing the datagram to write. To improve performance, this should be an immutable data object.
+- `datagram`: An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing the datagram to write. To improve performance, this should be an immutable data object.
 - `completionHandler`: A handler called when the write request has either succeeded or failed.
 
 ## See Also

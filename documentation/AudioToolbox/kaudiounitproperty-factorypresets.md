@@ -3,7 +3,7 @@
 **Framework**: Audio Toolbox  
 **Kind**: var
 
-So-called  (as opposed to user-configured presets) are ones supplied with an audio unit by the manufacturer. You choose the active preset by setting the `kAudioUnitProperty_PresentPreset` property.
+So-called *factory presets* (as opposed to user-configured presets) are ones supplied with an audio unit by the manufacturer. You choose the active preset by setting the `kAudioUnitProperty_PresentPreset` property.
 
 **Availability**:
 - iOS ?+

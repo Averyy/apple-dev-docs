@@ -16,10 +16,10 @@ func connect(_ sourceObject: Any, withKey sourceKey: String?, to targetObject: A
 
 ## Parameters
 
-- `sourceObject`: A   object, a    object, or the path (an   or   object) to an image.
-- `sourceKey`: The key that specifies the source object. For example, if the source is the output image of a filter, pass the   key. Pass   if the source object is used directly.
+- `sourceObject`: A [`CIFilter`](cifilter-swift.class.md) object, a  [`CIImage`](ciimage.md) object, or the path (an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) or [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object) to an image.
+- `sourceKey`: The key that specifies the source object. For example, if the source is the output image of a filter, pass the `outputImage` key. Pass `nil` if the source object is used directly.
 - `targetObject`: The object to which the source object links.
-- `targetKey`: The key that specifies the target for the source. For example, if you are connecting the source to the input image of a   object, you would pass the   key.
+- `targetKey`: The key that specifies the target for the source. For example, if you are connecting the source to the input image of a [`CIFilter`](cifilter-swift.class.md) object, you would pass the `inputImage` key.
 
 ## See Also
 

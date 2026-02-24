@@ -21,7 +21,7 @@ init(predicate: HKSamplePredicate<Sample>)
 
 ## Parameters
 
-- `predicate`: A predicate that defines the set of data used to identify sources. For a list of convenience methods for building predicates, see  .
+- `predicate`: A predicate that defines the set of data used to identify sources. For a list of convenience methods for building predicates, see [`HKQuery`](hkquery.md).
 
 
 ---

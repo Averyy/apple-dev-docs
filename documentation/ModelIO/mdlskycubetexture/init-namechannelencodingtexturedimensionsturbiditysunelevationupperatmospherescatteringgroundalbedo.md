@@ -31,13 +31,13 @@ This initializer does not generate texel data; the [`MDLSkyCubeTexture`](mdlskyc
 
 ## Parameters
 
-- `name`: The   property for the new texture object.
-- `channelEncoding`: The data format for each channel value per texel—for example, 8-bit integer or 32-bit floating point. For possible values, see  .
+- `name`: The [`name`](mdlnamed/name.md) property for the new texture object.
+- `channelEncoding`: The data format for each channel value per texel—for example, 8-bit integer or 32-bit floating point. For possible values, see [`MDLTextureChannelEncoding`](mdltexturechannelencoding.md).
 - `textureDimensions`: The texel dimensions (width and height) of the texture image.
-- `turbidity`: The cloudiness or haziness of the simulated sky. See the   property.
-- `sunElevation`: The sun’s position in the simulated sky. See the   property.
-- `upperAtmosphereScattering`: A factor that influences the color of the simulated sky. See the   property.
-- `groundAlbedo`: A factor that influences the clarity of the simulated sky. See the   property.
+- `turbidity`: The cloudiness or haziness of the simulated sky. See the [`turbidity`](mdlskycubetexture/turbidity.md) property.
+- `sunElevation`: The sun’s position in the simulated sky. See the [`sunElevation`](mdlskycubetexture/sunelevation.md) property.
+- `upperAtmosphereScattering`: A factor that influences the color of the simulated sky. See the [`upperAtmosphereScattering`](mdlskycubetexture/upperatmospherescattering.md) property.
+- `groundAlbedo`: A factor that influences the clarity of the simulated sky. See the [`groundAlbedo`](mdlskycubetexture/groundalbedo.md) property.
 
 
 ---

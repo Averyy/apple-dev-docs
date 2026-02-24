@@ -10,6 +10,13 @@ There are multiple types of guarded system resources, however most guarded resou
 
 The `Exception Message` field contains the specific violation:
 
+- **`CLOSE`**: The process attempted to invoke `close()` on a guarded file descriptor.
+- **`DUP`**: The process attempted to invoke `dup()`, `dup2()`, or `fcntl()` with the `F_DUPFD` or `F_DUPFD_CLOEXEC` commands on a guarded file descriptor.
+- **`NOCLOEXEC`**: The process attempted to remove the `FD_CLOEXEC` flag from a guarded file descriptor.
+- **`SOCKET_IPC`**: The process attempted to send a guarded file descriptor through a socket.
+- **`FILEPORT`**: The process attempted to obtain a Mach send right for a guarded file descriptor.
+- **`WRITE`**: The process attempted to write to a guarded file descriptor.
+
 The `Exception Message` field also identifies the specific guarded file descriptor that the process attempted to modify. To understand the context triggering this exception, consult the backtrace of the crashed thread.
 
 ## See Also

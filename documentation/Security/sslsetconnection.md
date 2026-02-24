@@ -38,7 +38,7 @@ This function must be called prior to the [`SSLHandshake(_:)`](sslhandshake(_:).
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `connection`: An SSL session connection reference. The connection data is opaque to Secure Transport; you can set it to any value that your application can use to uniquely identify the connection in the callback functions   and  .
+- `connection`: An SSL session connection reference. The connection data is opaque to Secure Transport; you can set it to any value that your application can use to uniquely identify the connection in the callback functions [`SSLReadFunc`](sslreadfunc.md) and [`SSLWriteFunc`](sslwritefunc.md).
 
 
 ---

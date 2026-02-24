@@ -30,7 +30,7 @@ In the plane of the screen, the azimuth angle is the direction in which the styl
 
 ## Parameters
 
-- `view`: The view that contains the stylus’s touch. Pass   to get the azimuth angle that is relative to the touch’s window.
+- `view`: The view that contains the stylus’s touch. Pass `nil` to get the azimuth angle that is relative to the touch’s window.
 
 ## See Also
 

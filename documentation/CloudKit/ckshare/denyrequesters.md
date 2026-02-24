@@ -30,7 +30,7 @@ Only the share owner or an administrator can invoke this method. Attempts by oth
 
 ## Parameters
 
-- `requesters`: An array of   objects to deny.
+- `requesters`: An array of [`CKShare.AccessRequester`](ckshare/accessrequester.md) objects to deny.
 
 
 ---

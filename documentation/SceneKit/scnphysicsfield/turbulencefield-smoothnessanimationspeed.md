@@ -32,8 +32,8 @@ The default [`falloffExponent`](scnphysicsfield/falloffexponent.md) value for a 
 
 ## Parameters
 
-- `smoothness`: The amount of randomness in the field. A value of   specifies maximum noise, and a value of   specifies no noise at all.
-- `speed`: The field’s variation over time. Specify   for a static field.
+- `smoothness`: The amount of randomness in the field. A value of `0.0` specifies maximum noise, and a value of `1.0` specifies no noise at all.
+- `speed`: The field’s variation over time. Specify `0.0` for a static field.
 
 ## See Also
 

@@ -11,6 +11,10 @@
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: object
+
 ## See Also
 
 - [JoinExistingSession](information-property-list/xpcservice/joinexistingsession.md)

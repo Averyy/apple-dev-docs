@@ -16,7 +16,7 @@ func setLoops(_ loops: Bool)
 
 ## Parameters
 
-- `loops`: A Boolean value indicating the looping behavior. Specify   to play the movie in a continuous loop or   to play the movie once and then stop playback.
+- `loops`: A Boolean value indicating the looping behavior. Specify [`true`](https://developer.apple.com/documentation/Swift/true) to play the movie in a continuous loop or [`false`](https://developer.apple.com/documentation/Swift/false) to play the movie once and then stop playback.
 
 ## See Also
 

@@ -27,12 +27,12 @@ A store must exist at `sourceURL`; otherwise, the migration fails. Before the mi
 ## Parameters
 
 - `sourceURL`: The location of the store to migrate.
-- `sourceType`: The persistent store type of the store you’re migrating from. For possible values, see  .
-- `sourceOptions`: A dictionary of options to apply to the source store. For possible values, see  .
+- `sourceType`: The persistent store type of the store you’re migrating from. For possible values, see [`NSPersistentStore.StoreType`](nspersistentstore/storetype.md).
+- `sourceOptions`: A dictionary of options to apply to the source store. For possible values, see [`NSPersistentStoreCoordinator`](nspersistentstorecoordinator.md).
 - `mapping`: The mapping model that converts the entities in the source store to those in the destination store.
 - `destinationURL`: The location of the destination store.
-- `destinationType`: The persistent store type of the store you’re migrating to. For possible values, see  .
-- `destinationOptions`: A dictionary of options to apply to the destination store. For possible values, see  .
+- `destinationType`: The persistent store type of the store you’re migrating to. For possible values, see [`NSPersistentStore.StoreType`](nspersistentstore/storetype.md).
+- `destinationOptions`: A dictionary of options to apply to the destination store. For possible values, see [`NSPersistentStoreCoordinator`](nspersistentstorecoordinator.md).
 
 ## See Also
 

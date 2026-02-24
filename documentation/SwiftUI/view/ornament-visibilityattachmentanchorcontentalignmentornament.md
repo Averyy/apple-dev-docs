@@ -12,7 +12,7 @@ Presents an ornament.
 
 ```swift
 nonisolated
-func ornament<Content>(visibility: Visibility = .automatic, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment = .center, @ViewBuilder ornament: () -> Content) -> some View where Content : View
+func ornament<Content>(visibility: Visibility = .automatic, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D = .back, @ViewBuilder ornament: () -> Content) -> some View where Content : View
 ```
 
 #### Discussion
@@ -29,9 +29,8 @@ Text("A view with an ornament")
 ## Parameters
 
 - `visibility`: The visibility of the ornament.
-- `attachmentAnchor`: The positioning anchor that defines the   attachment point of the ornament.
+- `attachmentAnchor`: The positioning anchor that defines the attachment point of the ornament.
 - `contentAlignment`: The alignment of the ornament with its attachment anchor.
-- `ornament`: The content of the ornament.
 
 ## See Also
 

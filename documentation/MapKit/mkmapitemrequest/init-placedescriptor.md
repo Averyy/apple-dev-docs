@@ -41,7 +41,7 @@ Use this method to create a `MKMapItemRequest` from a [`PlaceDescriptor`](https:
 
 ## Parameters
 
-- `placeDescriptor`: The    the system should use to try to resolve information about desired map location. This parameter can’t be  .
+- `placeDescriptor`: The [`PlaceDescriptor`](https://developer.apple.com/documentation/GeoToolbox/PlaceDescriptor) the system should use to try to resolve information about desired map location. This parameter can’t be `nil`.
 
 
 ---

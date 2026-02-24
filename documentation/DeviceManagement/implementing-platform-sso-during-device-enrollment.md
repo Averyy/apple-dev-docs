@@ -81,17 +81,17 @@ In step 3, the device management service returns an [`ErrorCodePlatformSSORequir
 
 | Key | Type | Content |
 | --- | --- | --- |
-| `ProfileURL` | String | The URL of a configuration profile containing an [`ExtensibleSingleSignOn`](extensiblesinglesignon.md) profile payload for configuring the SSO extension for Platform SSO. |
-| `Package` | Object | A dictionary for the package that installs an app with the SSO app extension for Platform SSO. |
-| `AuthURL` | String | The URL the device uses to trigger Platform SSO authentication after it installs the configuration profile and app. |
+| `ProfileURL` | String | **(Required)** The URL of a configuration profile containing an [`ExtensibleSingleSignOn`](extensiblesinglesignon.md) profile payload for configuring the SSO extension for Platform SSO. |
+| `Package` | Object | **(Required)** A dictionary for the package that installs an app with the SSO app extension for Platform SSO. |
+| `AuthURL` | String | **(Required)** The URL the device uses to trigger Platform SSO authentication after it installs the configuration profile and app. |
 
 The `Package` key contains a JSON object with the following keys:
 
 | Key | Type | Content |
 | --- | --- | --- |
-| `ManifestURL` | String | The URL of the manifest document that specifies the package to install. |
-| `PinningCerts` | Array of strings | An array of DER-encoded certificates to pin to the connection when fetching the manifest document. The certificate data values are Base64-encoded strings. |
-| `PinningRevocationCheckRequired` | Boolean | If `true`, certificate revocation checks require a positive response when using certificate pinning with `PinningCerts`. |
+| `ManifestURL` | String | **(Required)** The URL of the manifest document that specifies the package to install. |
+| `PinningCerts` | Array of strings | **(Optional)** An array of DER-encoded certificates to pin to the connection when fetching the manifest document. The certificate data values are Base64-encoded strings. |
+| `PinningRevocationCheckRequired` | Boolean | **(Optional)** If `true`, certificate revocation checks require a positive response when using certificate pinning with `PinningCerts`. |
 
 A sample HTTP response:
 

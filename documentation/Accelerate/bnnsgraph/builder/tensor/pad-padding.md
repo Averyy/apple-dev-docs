@@ -23,7 +23,7 @@ func pad(_ type: BNNSGraph.Builder.Padding, padding: [Int]) -> BNNSGraph.Builder
 ## Parameters
 
 - `type`: The padding type.
-- `padding`: An array of integer values that contains an even count of elements. Each   contiguous pair of elements specifies the before (for example, top or left) and after (for example, bottom   or right) padding.
+- `padding`: An array of integer values that contains an even count of elements. Each contiguous pair of elements specifies the before (for example, top or left) and after (for example, bottom or right) padding.
 
 
 ---

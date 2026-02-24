@@ -23,7 +23,7 @@ Searches for the specified string in the web view’s content.
 
 - `string`: The search string to use.
 - `configuration`: The search parameters. Use this object to specify whether the search is case sensitive, whether it moves forward or backward, and whether it wraps when it reaches the end of the page.
-- `completionHandler`: The completion handler to call with the results of the search. This handler has no return value and takes the following parameter:
+- `completionHandler`: The completion handler to call with the results of the search. This handler has no return value and takes the following parameter: - **result**: The object that contains the results of the search.
 
 ## See Also
 

@@ -28,7 +28,7 @@ Nondrivers may call this function to create external devices.
 
 ## Parameters
 
-- `owner`: The driver that creates the device, or   for a non-driver.
+- `owner`: The driver that creates the device, or `NULL` for a non-driver.
 - `name`: The name of the new device.
 - `manufacturer`: The name of the device’s manufacturer.
 - `model`: The name of the model of the device.

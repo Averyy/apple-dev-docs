@@ -20,7 +20,7 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 
 ## Parameters
 
-- `keychain`: A reference to a keychain whose settings you wish to change. Pass   to change the settings of the default keychain.
+- `keychain`: A reference to a keychain whose settings you wish to change. Pass `NULL` to change the settings of the default keychain.
 - `newSettings`: A pointer to a keychain settings structure that defines whether the keychain locks when sleeping, or locks after a set time period of inactivity.
 
 

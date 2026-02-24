@@ -21,7 +21,7 @@ var compatibleFileTypes: [AVFileType] { get async }
 
 ## Parameters
 
-- `handler`: A callback the system passes an array of   structures when it determines the compatible file types.
+- `handler`: A callback the system passes an array of [`AVFileType`](avfiletype.md) structures when it determines the compatible file types.
 
 ## See Also
 

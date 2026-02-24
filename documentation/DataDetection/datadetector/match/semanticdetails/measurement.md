@@ -22,7 +22,7 @@ case measurement(DataDetector.Match.SemanticDetails.Measurement)
 
 ## Parameters
 
-- `Measurement`: A   structure.
+- `Measurement`: A [`DataDetector.Match.SemanticDetails.Measurement`](datadetector/match/semanticdetails/measurement.md) structure.
 
 
 ---

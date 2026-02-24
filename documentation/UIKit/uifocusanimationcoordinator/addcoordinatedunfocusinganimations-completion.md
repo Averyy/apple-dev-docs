@@ -24,7 +24,7 @@ When focus is being removed from an item, use this method to coordinate your cus
 
 ## Parameters
 
-- `animations`: A block object containing your unfocus-related animations. This block has no return value and takes the following parameter:
+- `animations`: A block object containing your unfocus-related animations. This block has no return value and takes the following parameter: - **context**: An object containing information about the main animations. Use this information to configure your custom animations. For more information, see [`UIFocusAnimationContext`](uifocusanimationcontext.md).
 - `completion`: The block object to execute after the main animation completes. The specified animations are run in the same animation context as the main animation.
 
 ## See Also

@@ -28,7 +28,7 @@ Pass any tag schemes to tagSchemes that you intend to use with the methods descr
 
 ## Parameters
 
-- `tagSchemes`: An array of tag schemes to be used. See   for the possible values.
+- `tagSchemes`: An array of tag schemes to be used. See [`NLTagScheme`](nltagscheme.md) for the possible values.
 
 ## See Also
 

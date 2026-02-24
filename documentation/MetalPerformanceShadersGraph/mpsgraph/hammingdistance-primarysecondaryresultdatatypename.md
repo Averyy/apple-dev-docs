@@ -31,7 +31,7 @@ The hamming distance is computed between 2 sets of vectors and the last dimensio
 
 - `primaryTensor`: The first input tensor.
 - `secondaryTensor`: The second input tensor.
-- `resultDataType`: The datatype of the return MPSGraphTensor. Must be either   or  .
+- `resultDataType`: The datatype of the return MPSGraphTensor. Must be either `MPSDataTypeUInt32` or `MPSDataTypeUInt16`.
 - `name`: The name for the operation.
 
 

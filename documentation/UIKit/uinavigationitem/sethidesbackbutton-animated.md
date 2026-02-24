@@ -19,8 +19,8 @@ func setHidesBackButton(_ hidesBackButton: Bool, animated: Bool)
 
 ## Parameters
 
-- `hidesBackButton`: Specify   if the Back button should be hidden when this navigation item is the top item. Specify   if the Back button should be visible, assuming it hasn’t been replaced by a custom item.
-- `animated`:   to animate the transition; otherwise,  .
+- `hidesBackButton`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if the Back button should be hidden when this navigation item is the top item. Specify [`false`](https://developer.apple.com/documentation/Swift/false) if the Back button should be visible, assuming it hasn’t been replaced by a custom item.
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

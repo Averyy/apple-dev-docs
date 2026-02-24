@@ -6,7 +6,7 @@ Learn about implicit animations, explicit animations, and actions, and when to c
 
 #### Overview
 
-SceneKit animation support is based on the Core Animation framework. (For more about Core Animation, read [`Core Animation Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514).) Several SceneKit classes define  properties, meaning that in addition to simply assigning a new value to the property, you can create animations that transition smoothly between two values of the property. For example, animating a node’s [`opacity`](scnnode/opacity.md) property fades the node’s visible content in or out. You can animate content  or .
+SceneKit animation support is based on the Core Animation framework. (For more about Core Animation, read [`Core Animation Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514).) Several SceneKit classes define *animatable* properties, meaning that in addition to simply assigning a new value to the property, you can create animations that transition smoothly between two values of the property. For example, animating a node’s [`opacity`](scnnode/opacity.md) property fades the node’s visible content in or out. You can animate content *implicitly* or *explicitly*.
 
 ##### Animate Content Changes Implicitly
 
@@ -18,6 +18,26 @@ The default transaction’s duration is zero, so the changes you make to animata
 
 Listing 1. Implicit animation that makes a block of text fall out of the scene while fading away
 
+**Swift**:
+
+```swift
+@IBAction func fallAndFade(_ sender: Any) {
+    SCNTransaction.animationDuration = 1.0
+    textNode.position.y = -10
+    textNode.opacity = 0
+}
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction)fallAndFade:(id)sender {
+    [SCNTransaction setAnimationDuration:1.0];
+    _textNode.position = SCNVector3Make(0.0, -10.0, 0.0);
+    _textNode.opacity = 0.0;
+}
+```
+
 ##### Explicitly Create an Animation
 
 For more complex animations, you can explicitly create an animation object and attach it to the scene element being animated. Creating an animation object also makes an animation reusable, so you can play the same animation at any time on demand or apply it to different elements of your scene.
@@ -27,6 +47,30 @@ Choose a [`CAAnimation`](https://developer.apple.com/documentation/QuartzCore/CA
 By using different Core Animation classes, you can combine or sequence several animations or create animations that interpolate a property’s value between several keyframe values. For more about creating animation objects, see [`Core Animation Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514). For more about attaching animations to SceneKit objects, see [`SCNAnimatable`](scnanimatable.md).
 
 Listing 2. Explicit animation to vary the 3D extrusion depth of a block of text
+
+**Swift**:
+
+```swift
+let animation = CABasicAnimation(keyPath: "geometry.extrusionDepth")
+animation.fromValue = 0.0
+animation.toValue = 100.0
+animation.duration = 1.0
+animation.autoreverses = true
+animation.repeatCount = .infinity
+textNode.addAnimation(animation, forKey: "extrude")
+```
+
+**Objective-C**:
+
+```objc
+CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"geometry.extrusionDepth"];
+animation.fromValue = @0.0;
+animation.toValue = @100.0;
+animation.duration = 1.0;
+animation.autoreverses = YES;
+animation.repeatCount = INFINITY;
+[_textNode addAnimation:animation forKey:@"extrude"];
+```
 
 SceneKit also uses [`CAAnimation`](https://developer.apple.com/documentation/QuartzCore/CAAnimation) objects for animations created using external 3D authoring tools and saved in scene files. For example, an artist might create a game character with animations for walking, jumping, and other actions. You incorporate these animations into your game by loading animation objects from the scene file using the [`SCNSceneSource`](scnscenesource.md) class and attaching them to the [`SCNNode`](scnnode.md) object that represents the game character.
 

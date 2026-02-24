@@ -23,7 +23,7 @@ optional func outlineView(_ outlineView: NSOutlineView, isItemExpandable item: A
 
 This method may be called quite often, so it must be efficient.
 
-> ❗ **Important**:  While this method is marked as `@optional` in the protocol,  Do not call [`reloadData()`](nstableview/reloaddata().md) from this method.
+> ❗ **Important**:  While this method is marked as `@optional` in the protocol, **you must implement this method if you are not providing the data for the outline view using Cocoa bindings.** Do not call [`reloadData()`](nstableview/reloaddata().md) from this method.
 
 ## Parameters
 

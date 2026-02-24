@@ -20,7 +20,7 @@ This method informs the feedback filter about a new pan (drag) gesture recognize
 
 ## Parameters
 
-- `panRecognizer`: The gesture recognizer ( ) that produced the event.
+- `panRecognizer`: The gesture recognizer ([`NSPanGestureRecognizer`](nspangesturerecognizer.md)) that produced the event.
 
 ## See Also
 

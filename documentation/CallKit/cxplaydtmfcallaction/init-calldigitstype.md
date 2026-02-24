@@ -26,9 +26,9 @@ A new action for the specified call UUID, type, and digits.
 
 ## Parameters
 
-- `callUUID`: The unique identifier for the associated   object.
+- `callUUID`: The unique identifier for the associated [`CXCall`](cxcall.md) object.
 - `digits`: A sequence of digits.
-- `type`: The type of the call action. For possible values, see  .
+- `type`: The type of the call action. For possible values, see [`CXPlayDTMFCallAction.ActionType`](cxplaydtmfcallaction/actiontype.md).
 
 ## See Also
 

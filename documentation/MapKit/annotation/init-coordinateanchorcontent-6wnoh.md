@@ -25,7 +25,7 @@ Creates an annotation that displays a view at a coordinate on the map using a ti
 
 - `title`: The title of the annotation.
 - `coordinate`: The coordinate position of the annotation.
-- `anchor`: A   value that indicates how to position the content around the provided coordinate.
+- `anchor`: A [`UnitPoint`](https://developer.apple.com/documentation/SwiftUI/UnitPoint) value that indicates how to position the content around the provided coordinate.
 - `content`: The view to place on the map.
 
 ## See Also

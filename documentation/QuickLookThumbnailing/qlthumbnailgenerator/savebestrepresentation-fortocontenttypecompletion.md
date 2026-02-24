@@ -36,8 +36,8 @@ Use this method to create and save the thumbnail image outside of your process a
 
 - `request`: The request that you used to generate a thumbnail.
 - `fileURL`: The destination to which you save the generated thumbnail.
-- `contentType`: The content type of the thumbnail image that you want to save. Use a type that is supported by  , such as   or  .
-- `completionHandler`: The handler to call when saving the thumbnail to disk.
+- `contentType`: The content type of the thumbnail image that you want to save. Use a type that is supported by [`CGImageDestination`](https://developer.apple.com/documentation/ImageIO/CGImageDestination), such as `kUTTypePNG` or `kUTTypeJPEG`.
+- `completionHandler`: The handler to call when saving the thumbnail to disk. - **`error`**: An error object that indicates why saving a thumbnail image failed, or `nil` if saving the thumbnail succeeded.
 
 
 ---

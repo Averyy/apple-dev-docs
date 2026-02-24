@@ -29,6 +29,9 @@ This method applies the morphology gradient filter to an image. The effect uses 
 
 The morphology gradient filter uses the following properties:
 
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
+
 The following code creates a filter that adds darkness to the overall image while the edges in the input photo become brighter:
 
 ```swift

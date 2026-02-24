@@ -22,7 +22,7 @@ If the cell is editable and its type is `NSPathStylePopUp`, a Choose item is inc
 
 ## Parameters
 
-- `allowedTypes`: An array of strings representing either file extensions or UTIs. Can be  , the default value, allowing all types.
+- `allowedTypes`: An array of strings representing either file extensions or UTIs. Can be `nil`, the default value, allowing all types.
 
 
 ---

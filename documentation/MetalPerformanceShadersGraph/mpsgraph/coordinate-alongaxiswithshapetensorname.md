@@ -30,7 +30,7 @@ See [`coordinate(alongAxis:withShape:name:)`](mpsgraph/coordinate(alongaxis:with
 ## Parameters
 
 - `axis`: The coordinate axis an element’s value is set to. Negative values wrap around.
-- `shapeTensor`: A rank-1 tensor of type   or   that defines the shape of the result tensor.
+- `shapeTensor`: A rank-1 tensor of type `MPSDataTypeInt32` or `MPSDataTypeInt64` that defines the shape of the result tensor.
 - `name`: The name for the operation.
 
 

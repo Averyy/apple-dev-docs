@@ -23,7 +23,7 @@ func addSpatialMixerParameters(identifier: String, source: PHASESource, listener
 
 - `identifier`: The name of the spatial submixer.
 - `source`: A location in the scene that plays audio.
-- `listener`: An object that receives a source audio signal. The mixer scales and orients the sound the listener receives based on its  .
+- `listener`: An object that receives a source audio signal. The mixer scales and orients the sound the listener receives based on its [`transform`](phaseobject/transform.md).
 
 ## See Also
 

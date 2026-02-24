@@ -26,6 +26,13 @@ object EventResponse
 - [object MdmInfo](mdminfo.md)
   Information about the MDM client.
 
+## Properties
+
+- `eventId` (string): The unique identifier for the asynchronous event.
+- `mdmInfo` (MdmInfo): The current information for the provided token. The response only includes this field when MDM sets a value using the [`Client Config`](client-config-4szk1.md) endpoint.
+- `tokenExpirationDate` (string): The token expiration date in an ISO-8601 format. Note: The server shows all dates and times in UTC.
+- `uId` (string): The unique library identifier. When querying records using multiple tokens that may share libraries, use the `uId` field to filter duplicates and avoid double-counting records when different content managers upload duplicate tokens.
+
 ## See Also
 
 - [object ManageAssetsRequest](manageassetsrequest.md)

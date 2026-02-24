@@ -26,7 +26,7 @@ Use this call to create a display link for a single display. For more informatio
 ## Parameters
 
 - `displayID`: The Core Graphics ID of the target display.
-- `displayLinkOut`: On output,   points to the newly created display link.
+- `displayLinkOut`: On output, `displayLinkOut` points to the newly created display link.
 
 ## See Also
 

@@ -26,9 +26,9 @@ The method centers the box at the entity’s origin and aligns the box’s faces
 
 ## Parameters
 
-- `size`: The length of the box’s width, height, and depth, in meters,   along the x-, y-, and z-axis, respectively.
-- `majorCornerRadius`: The radius of each corner’s circular arc,   in meters, orthogonal to the z-axis.
-- `minorCornerRadius`: The radius of each corner’s circular arc,   in meters, orthogonal to the x-axis.
+- `size`: The length of the box’s width, height, and depth, in meters, along the x-, y-, and z-axis, respectively.
+- `majorCornerRadius`: The radius of each corner’s circular arc, in meters, orthogonal to the z-axis.
+- `minorCornerRadius`: The radius of each corner’s circular arc, in meters, orthogonal to the x-axis.
 
 ## See Also
 

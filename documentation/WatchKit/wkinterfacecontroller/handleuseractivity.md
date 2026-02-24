@@ -22,7 +22,7 @@ The default implementation of this method does nothing. When overriding this met
 
 ## Parameters
 
-- `userInfo`: The dictionary containing data about the activity. When launching an app from its glance, WatchKit sets this parameter to the dictionary that the glance passed to the   method.
+- `userInfo`: The dictionary containing data about the activity. When launching an app from its glance, WatchKit sets this parameter to the dictionary that the glance passed to the [`updateUserActivity(_:userInfo:webpageURL:)`](wkinterfacecontroller/updateuseractivity(_:userinfo:webpageurl:).md) method.
 
 ## See Also
 

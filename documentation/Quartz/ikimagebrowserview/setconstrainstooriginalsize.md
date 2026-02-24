@@ -16,7 +16,7 @@ func setConstrainsToOriginalSize(_ flag: Bool)
 
 ## Parameters
 
-- `flag`: A flag that specifies whether to constrain the image. The default value is  .
+- `flag`: A flag that specifies whether to constrain the image. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

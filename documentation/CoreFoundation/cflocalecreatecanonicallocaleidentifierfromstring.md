@@ -26,7 +26,7 @@ A canonical locale identifier created by mapping the arbitrary locale identifica
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `localeIdentifier`: A string representation of an arbitrary locale identifier (for example, “English”).
 
 ## See Also

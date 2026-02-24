@@ -14,6 +14,13 @@ A dictionary that configures a service management rule.
 object ServiceManagementManagedLoginItems.Rule
 ```
 
+## Properties
+
+- `Comment` (string): An optional description of the rule.
+- `RuleType` (string) *(required)*: The type of comparison to make.
+- `RuleValue` (string) *(required)*: The value to compare with each login item’s value, to determine if this rule is a match.
+- `TeamIdentifier` (string): An additional constraint to limit the scope of the rule that the system tests after matching the `RuleType` and `RuleValue`.
+
 
 ---
 

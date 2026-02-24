@@ -27,7 +27,7 @@ func CFDictionaryContainsKey(_ theDict: CFDictionary!, _ key: UnsafeRawPointer!)
 ## Parameters
 
 - `theDict`: The dictionary to examine.
-- `key`: The key for which to find matches in  . The key hash and equal callbacks provided when the dictionary was created, are used to compare. If the hash callback is  ,   is treated as a pointer and converted to an integer. If the equal callback is  , pointer equality (in C, ==) is used. If  , or any of the keys in the dictionary, is not understood by the equal callback, the behavior is undefined.
+- `key`: The key for which to find matches in `theDict`. The key hash and equal callbacks provided when the dictionary was created, are used to compare. If the hash callback is `NULL`, `key` is treated as a pointer and converted to an integer. If the equal callback is `NULL`, pointer equality (in C, ==) is used. If `key`, or any of the keys in the dictionary, is not understood by the equal callback, the behavior is undefined.
 
 ## See Also
 

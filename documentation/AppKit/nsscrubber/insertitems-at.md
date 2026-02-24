@@ -20,7 +20,7 @@ The scrubber requests the view for each index from its data source.
 
 ## Parameters
 
-- `indexes`: An index set ( ) of the indexes of the items to insert.
+- `indexes`: An index set ([`IndexSet`](https://developer.apple.com/documentation/Foundation/IndexSet)) of the indexes of the items to insert.
 
 ## See Also
 

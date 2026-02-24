@@ -20,7 +20,7 @@ var cookiePolicy: WKHTTPCookieStore.CookiePolicy { get async }
 
 ## Parameters
 
-- `completionHandler`: The completion handler block to execute asynchronously with the cookie policy. This block has no return value, and takes the following parameter:
+- `completionHandler`: The completion handler block to execute asynchronously with the cookie policy. This block has no return value, and takes the following parameter: - **cookiePolicy**: A [`WKHTTPCookieStore.CookiePolicy`](wkhttpcookiestore/cookiepolicy.md) case that indicates whether the cookie store allows cookie storage.
 
 ## See Also
 

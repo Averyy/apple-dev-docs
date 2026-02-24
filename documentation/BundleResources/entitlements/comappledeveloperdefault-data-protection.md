@@ -12,6 +12,10 @@ The level of data protection for sensitive user data when an app accesses it on 
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 To add this entitlement to your app, enable the Data Protection capability in Xcode.

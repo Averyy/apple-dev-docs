@@ -27,11 +27,11 @@ func vImageConvert_ARGB8888To422CbYpCrYp8_AA8(_ src: UnsafePointer<vImage_Buffer
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `dest`: A pointer to the CbYpCrYp destination vImage buffer structure. You’re responsible for filling out the  ,  , and   fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the CbYpCrYp destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `destA`: A pointer to the alpha destination vImage buffer structure. You’re responsible for filling out the  ,  , and   fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the alpha destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `info`: A   structure that describes the conversion matrix, the range of the input and output pixels from the matrix, and clamping information.
-- `permuteMap`: An array of four 8-bit integers with the values  ,  ,  , and 3, in some order. Each value specifies the channel from the source image that the function copies to the destination channel at the corresponding index.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass  ; otherwise, pass  .
+- `dest`: A pointer to the CbYpCrYp destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the CbYpCrYp destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `destA`: A pointer to the alpha destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the alpha destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `info`: A [`vImage_ARGBToYpCbCr`](vimage_argbtoypcbcr.md) structure that describes the conversion matrix, the range of the input and output pixels from the matrix, and clamping information.
+- `permuteMap`: An array of four 8-bit integers with the values `0`, `1`, `2`, and 3, in some order. Each value specifies the channel from the source image that the function copies to the destination channel at the corresponding index.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
 
 ## See Also
 

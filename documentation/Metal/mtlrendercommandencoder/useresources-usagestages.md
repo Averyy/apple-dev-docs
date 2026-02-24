@@ -25,7 +25,7 @@ func useResources(_ resources: [any MTLResource], usage: MTLResourceUsage, stage
 
 #### Discussion
 
-You can make multiple resources  (available in GPU memory) for the remaining duration of the render pass by calling this method. Call the method before encoding draw calls that may access the elements of `resources` through an argument buffer. The method ensures each resource is in a format that’s compatible with the shaders that depend on it.
+You can make multiple resources *resident* (available in GPU memory) for the remaining duration of the render pass by calling this method. Call the method before encoding draw calls that may access the elements of `resources` through an argument buffer. The method ensures each resource is in a format that’s compatible with the shaders that depend on it.
 
 > **Note**:  You don’t need to call this method if you bind a resource to a shader stage.
 
@@ -35,13 +35,13 @@ The method also informs Metal when to apply hazard tracking for the resources yo
 
 You can reconfigure an individual resource’s `usage` options for subsequent draw calls in the same render pass by calling this method again.
 
-Apps typically call the method for resources in an argument buffer as a part of their  implementation. For more information about argument buffers and bindless implementations, see [`Improving CPU performance by using argument buffers`](improving-cpu-performance-by-using-argument-buffers.md) and [`Go bindless with Metal 3`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10101/), respectively.
+Apps typically call the method for resources in an argument buffer as a part of their *bindless* implementation. For more information about argument buffers and bindless implementations, see [`Improving CPU performance by using argument buffers`](improving-cpu-performance-by-using-argument-buffers.md) and [`Go bindless with Metal 3`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10101/), respectively.
 
 ## Parameters
 
-- `resources`: An array of   instances that subsequent draw commands depend on.
-- `usage`: For applicable resources, you may be able to prevent the GPU from unnecessarily decompressing color attachments on some devices by setting   to  .
-- `stages`: All the render stages that depend on the elements in  , including  ,  ,  ,  , and  .
+- `resources`: An array of [`MTLResource`](mtlresource.md) instances that subsequent draw commands depend on.
+- `usage`: All the applicable access types the render pass’s shaders use for the resource, including [`read`](mtlresourceusage/read.md) and [`write`](mtlresourceusage/write.md). For applicable resources, you may be able to prevent the GPU from unnecessarily decompressing color attachments on some devices by setting `usage` to [`read`](mtlresourceusage/read.md).
+- `stages`: All the render stages that depend on the elements in `resources`, including [`object`](mtlrenderstages/object.md), [`mesh`](mtlrenderstages/mesh.md), [`vertex`](mtlrenderstages/vertex.md), [`fragment`](mtlrenderstages/fragment.md), and [`tile`](mtlrenderstages/tile.md).
 
 ## See Also
 

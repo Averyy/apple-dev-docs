@@ -29,9 +29,10 @@ The processing tap will then be used to process decoded data. The processing is 
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new tap. Pass   or   to use the current default allocator.
-- `callbacks`: An callbacks struct.   makes a copy of this struct.
-- `flags`: Flags that are used to control aspects of the processing tap. Valid flags are:
+- `allocator`: The allocator to use to allocate memory for the new tap. Pass `NULL` or `kCFAllocatorDefault` to use the current default allocator.
+- `callbacks`: An callbacks struct. [`MTAudioProcessingTap`](mtaudioprocessingtap.md) makes a copy of this struct.
+- `flags`: Flags that are used to control aspects of the processing tap. Valid flags are: - **[`kMTAudioProcessingTapCreationFlag_PreEffects`](kmtaudioprocessingtapcreationflag_preeffects.md)**: processing is done before any further effects are applied by the audio queue to the audio.
+- **[`kMTAudioProcessingTapCreationFlag_PostEffects`](kmtaudioprocessingtapcreationflag_posteffects.md)**: processing is done after all processing is done, including that of other taps.
 - `tapOut`: The processing tap object.
 
 ## Topics

@@ -16,7 +16,7 @@ func lockFocusFlipped(_ flipped: Bool)
 
 ## Parameters
 
-- `flipped`:   if the drawing context should be flipped, otherwise  .
+- `flipped`: [`true`](https://developer.apple.com/documentation/Swift/true) if the drawing context should be flipped, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -39,8 +39,8 @@ parts[2] // has shape [5, 11]
 
 ## Parameters
 
-- `sizes`: A one-dimensional tensor containing the size of each split, must add up to the size of dimension  .
-- `axis`: The dimension along which to split this tensor. Must be in the range  .
+- `sizes`: A one-dimensional tensor containing the size of each split, must add up to the size of dimension `axis`.
+- `axis`: The dimension along which to split this tensor. Must be in the range `[-rank, rank)`.
 
 ## See Also
 

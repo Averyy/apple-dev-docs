@@ -134,7 +134,7 @@ Inheritance is useful when defining class hierarchies where you need to speciali
 
 Avoid using inheritance in scenarios where the specialized subclass would center on common properties, such as a trip’s name, or starting or ending dates; subclassing at this level of granularity, the class hierarchy would contain many subdomains that only share a single property. In these cases if common properties need some kind of specialized behavior, protocol conformance is a better tool.
 
-Avoid using inheritance if your querying model would depend on fetching all of the model data all the time and then filtering the results, — this is known as a . It’s possible the specialization (here the difference between personal and business trips) is something that a Boolean type could represent as it did in the initial `Trip` model where a Boolean value differentiated the type of trip. Another method to keep models “flatter,” reduce the number of properties, and avoid inheritance is to add an enumeration type that has a value which captures the type of trip and it’s value, here the personal trip’s reason or the business trip’s per diem value instead of an `isBusinessTrip` Boolean property, as shown here:
+Avoid using inheritance if your querying model would depend on fetching all of the model data all the time and then filtering the results, — this is known as a *deep query*. It’s possible the specialization (here the difference between personal and business trips) is something that a Boolean type could represent as it did in the initial `Trip` model where a Boolean value differentiated the type of trip. Another method to keep models “flatter,” reduce the number of properties, and avoid inheritance is to add an enumeration type that has a value which captures the type of trip and it’s value, here the personal trip’s reason or the business trip’s per diem value instead of an `isBusinessTrip` Boolean property, as shown here:
 
 ```swift
     enum Category: Codable {
@@ -145,7 +145,7 @@ Avoid using inheritance if your querying model would depend on fetching all of t
 
 As your model’s and use cases expand, adding more properties may become impractical or difficult to maintain.
 
-Conversely, if your app’s query strategy  focuses on the specialization — specific properties that define a business trip or a personal trip and never on the properties of the base trip model — known as a  — then using two models might be a better approach, even though each individual model might contain some apparent duplication.
+Conversely, if your app’s query strategy *only* focuses on the specialization — specific properties that define a business trip or a personal trip and never on the properties of the base trip model — known as a *shallow query* — then using two models might be a better approach, even though each individual model might contain some apparent duplication.
 
 Lastly, If the query strategy for your app involves allowing a person to perform elements of both deep and shallow searches, in order find and return information from both a base and the subclasses, then inheritance may be a good fit for your app’s model and use case.
 

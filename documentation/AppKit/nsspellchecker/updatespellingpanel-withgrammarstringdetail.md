@@ -16,8 +16,8 @@ func updateSpellingPanel(withGrammarString string: String, detail: [String : Any
 
 ## Parameters
 
-- `string`: Problematic grammatical unit identified by  .
-- `detail`: One of the grammar-analysis details provided by  .
+- `string`: Problematic grammatical unit identified by [`checkGrammar(of:startingAt:language:wrap:inSpellDocumentWithTag:details:)`](nsspellchecker/checkgrammar(of:startingat:language:wrap:inspelldocumentwithtag:details:).md).
+- `detail`: One of the grammar-analysis details provided by [`checkGrammar(of:startingAt:language:wrap:inSpellDocumentWithTag:details:)`](nsspellchecker/checkgrammar(of:startingat:language:wrap:inspelldocumentwithtag:details:).md).
 
 ## See Also
 

@@ -22,9 +22,9 @@ func ABAddressBookRemoveRecord(_ addressBook: ABAddressBook!, _ record: ABRecord
 
 ## Parameters
 
-- `addressBook`: The address book from which   is to be removed.
-- `record`: The record to remove from  .
-- `error`: On error, contains error information. See  .
+- `addressBook`: The address book from which `record` is to be removed.
+- `record`: The record to remove from `addressBook`.
+- `error`: On error, contains error information. See [`Address Book Errors`](address-book-errors.md).
 
 ## See Also
 

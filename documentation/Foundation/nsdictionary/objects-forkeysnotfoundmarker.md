@@ -26,7 +26,7 @@ The objects in the returned array and the `keys` array have a one-for-one corres
 
 ## Parameters
 
-- `keys`: An   containing the keys for which to return corresponding values.
+- `keys`: An `NSArray` containing the keys for which to return corresponding values.
 - `marker`: The marker object to place in the corresponding element of the returned array if an object isn’t found in the dictionary to correspond to a given key.
 
 ## See Also

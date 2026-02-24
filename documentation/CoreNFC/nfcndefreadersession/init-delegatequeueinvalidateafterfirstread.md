@@ -27,7 +27,7 @@ When `invalidateAfterFirstRead` is [`true`](https://developer.apple.com/document
 ## Parameters
 
 - `delegate`: The NFC NDEF delegate that handles reader session callbacks.
-- `queue`: A queue onto which delegate callbacks are dispatched (the session retains the queue). When   is  , an internal serial dispatch queue is created for the session.
+- `queue`: A queue onto which delegate callbacks are dispatched (the session retains the queue). When `queue` is `nil`, an internal serial dispatch queue is created for the session.
 - `invalidateAfterFirstRead`: A Boolean value that indicates whether the session automatically invalidates after the first NDEF tag is successfully read.
 
 ## See Also

@@ -16,7 +16,7 @@ By default, virtual content covers anything in the camera feed. For example, whe
 
 ![Screenshot of virtual books drawn on top of a person.](https://docs-assets.developer.apple.com/published/4c0490a4cc2d074602b03a229cd28680/figure1-annotated.png)
 
-To cover your app’s virtual content with people that ARKit perceives in the camera feed, you enable . Your app can then render a virtual object behind people who pass in front of the camera. ARKit accomplishes the occlusion by identifying regions in the camera feed where people reside, and preventing virtual content from drawing into that region’s pixels.
+To cover your app’s virtual content with people that ARKit perceives in the camera feed, you enable *people occlusion*. Your app can then render a virtual object behind people who pass in front of the camera. ARKit accomplishes the occlusion by identifying regions in the camera feed where people reside, and preventing virtual content from drawing into that region’s pixels.
 
 ![Screenshot of the virtual books behind the person.](https://docs-assets.developer.apple.com/published/9ec57b947ed7064da9005afeac529989/figure2-annotated.png)
 

@@ -28,6 +28,34 @@ You create and configure [`MKLocalSearchCompleter`](mklocalsearchcompleter.md) o
 
 Listing 1. Creating and configuring a search completer
 
+**Swift**:
+
+```swift
+override func viewDidLoad() {
+    super.viewDidLoad()
+
+    completer = MKLocalSearchCompleter()
+    completer.delegate = self
+      
+    // Limit search results to the map view's current region.
+    completer.region = myMapView.region
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)viewDidLoad {
+   [super viewDidLoad];
+ 
+   self.completer = [[MKLocalSearchCompleter alloc] init];
+   self.completer.delegate = self;
+ 
+   // Limit search results to the map view's current region.
+   self.completer.region = self.myMapView.region;
+}
+```
+
 Update the value of the completer’s [`queryFragment`](mklocalsearchcompleter/queryfragment.md) property to begin a search query. You can update this property in real time as the user types new characters into a text field because the completer object waits a short amount of time for the query string to stabilize. When modifications to the query string stop, the completer initiates a new search and returns the results to your delegate as an array of [`MKLocalSearchCompletion`](mklocalsearchcompletion.md) objects.
 
 ## Topics

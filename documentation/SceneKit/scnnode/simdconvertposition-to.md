@@ -27,7 +27,7 @@ A position in the local coordinate space defined by the other node.
 ## Parameters
 
 - `position`: A position in the node’s local coordinate space.
-- `node`: Another node in the same scene graph as the node, or   to convert to the scene’s world coordinate space.
+- `node`: Another node in the same scene graph as the node, or `nil` to convert to the scene’s world coordinate space.
 
 ## See Also
 

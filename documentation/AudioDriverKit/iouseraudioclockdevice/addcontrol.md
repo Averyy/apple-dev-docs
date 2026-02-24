@@ -24,7 +24,7 @@ If adding the control succeeds, the control’s reference count increments by on
 
 ## Parameters
 
-- `in_control`: The   to add to the clock device.
+- `in_control`: The [`IOUserAudioControl`](iouseraudiocontrol.md) to add to the clock device.
 
 ## See Also
 

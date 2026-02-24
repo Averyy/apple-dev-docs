@@ -21,7 +21,7 @@ func setPreferredSymbolConfiguration(_ configuration: UIImage.SymbolConfiguratio
 ## Parameters
 
 - `configuration`: The image symbol configuration for the specified state.
-- `state`: The state that uses the specified image symbol configuration. Possible values are described in  .
+- `state`: The state that uses the specified image symbol configuration. Possible values are described in [`UIControl.State`](uicontrol/state-swift.struct.md).
 
 ## See Also
 

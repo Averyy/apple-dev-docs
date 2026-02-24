@@ -36,7 +36,7 @@ var body: some View {
 
 ## Parameters
 
-- `label`: The string resource for the alternative   accessibility label.
+- `label`: The string resource for the alternative accessibility label.
 
 ## See Also
 

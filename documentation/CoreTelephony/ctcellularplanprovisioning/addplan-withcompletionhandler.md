@@ -26,7 +26,7 @@ The user may send your app to the background prior to completing eSIM installati
 
 ## Parameters
 
-- `request`: A   that identifies the eSIM to download.
+- `request`: A [`CTCellularPlanProvisioningRequest`](ctcellularplanprovisioningrequest.md) that identifies the eSIM to download.
 - `completionHandler`: A completion handler that executes after processing the request. The parameter passed to the completion handler indicates whether the request succeeded, failed, or ended in an unknown state.
 
 ## See Also

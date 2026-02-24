@@ -50,7 +50,7 @@ When obtaining an element name string from an audio unit with the [`AudioUnitGet
   A read-only `Float64` value valid on the audio unit global scope.
 - [var kAudioUnitProperty_DependentParameters: AudioUnitPropertyID](kaudiounitproperty_dependentparameters.md)
 - [var kAudioUnitProperty_FactoryPresets: AudioUnitPropertyID](kaudiounitproperty_factorypresets.md)
-  So-called  (as opposed to user-configured presets) are ones supplied with an audio unit by the manufacturer. You choose the active preset by setting the `kAudioUnitProperty_PresentPreset` property.
+  So-called *factory presets* (as opposed to user-configured presets) are ones supplied with an audio unit by the manufacturer. You choose the active preset by setting the `kAudioUnitProperty_PresentPreset` property.
 - [var kAudioUnitProperty_FastDispatch: AudioUnitPropertyID](kaudiounitproperty_fastdispatch.md)
   A read-only `void *` value valid on the audio unit global scope.
 - [var kAudioUnitProperty_FrequencyResponse: AudioUnitPropertyID](kaudiounitproperty_frequencyresponse.md)

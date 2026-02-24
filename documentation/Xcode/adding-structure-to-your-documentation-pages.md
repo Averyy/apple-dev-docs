@@ -18,7 +18,7 @@ For more information about how to use DocC for adding structure to the documenta
 
 ##### Customize Your Documentations Landing Page
 
-A  provides an overview of your technology, introduces important terms, and organizes the resources within your  — the files that enrich your source documentation comments. The landing page is an opportunity for you to ease the reader’s learning path, discuss key features of your technology, and offer motivation for the reader to return to when they need it.
+A *landing page* provides an overview of your technology, introduces important terms, and organizes the resources within your *documentation catalog* — the files that enrich your source documentation comments. The landing page is an opportunity for you to ease the reader’s learning path, discuss key features of your technology, and offer motivation for the reader to return to when they need it.
 
 ![Two side-by-side images of a framework’s top-level page. The image on the left shows the basic empty page that DocC generates by default. The image on the right shows a customized landing page that includes additional content and a color graphic.](https://docs-assets.developer.apple.com/published/a50a02fc4acb28bad8a02a49b9995d77/landing-page%402x.png)
 

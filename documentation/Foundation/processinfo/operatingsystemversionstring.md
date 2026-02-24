@@ -22,7 +22,7 @@ var operatingSystemVersionString: String { get }
 
 #### Discussion
 
-The operating system version string is human readable, localized, and is appropriate for displaying to the user. This string is  appropriate for parsing.
+The operating system version string is human readable, localized, and is appropriate for displaying to the user. This string is *not* appropriate for parsing.
 
 ## See Also
 

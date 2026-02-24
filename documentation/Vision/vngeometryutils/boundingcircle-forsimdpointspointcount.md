@@ -26,7 +26,7 @@ The bounding [`VNCircle`](vncircle.md) object.
 ## Parameters
 
 - `points`: A collection of points around which to calculate the bounding circle.
-- `pointCount`: The number of points in the   argument.
+- `pointCount`: The number of points in the `points` argument.
 
 ## See Also
 

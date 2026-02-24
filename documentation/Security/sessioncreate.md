@@ -29,8 +29,8 @@ This call will discard any security information established for the calling proc
 
 ## Parameters
 
-- `flags`: Flags controlling how the session is created. See   for valid values.
-- `attributes`: The set of attribute bits to set for the new session. Not all bits can be set this way. See   for valid values.
+- `flags`: Flags controlling how the session is created. See [`SessionCreationFlags`](sessioncreationflags.md) for valid values.
+- `attributes`: The set of attribute bits to set for the new session. Not all bits can be set this way. See [`SessionAttributeBits`](sessionattributebits.md) for valid values.
 
 
 ---

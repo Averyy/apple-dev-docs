@@ -33,9 +33,44 @@ This method creates a relationship where `first attribute >= second attribute`. 
 
 The constraints produced by the following two examples are identical.
 
+**Swift**:
+
+```swift
+// Creating a constraint using NSLayoutConstraint
+NSLayoutConstraint(item: subview,
+                   attribute: .Leading,
+                   relatedBy: .GreaterThanOrEqual,
+                   toItem: view,
+                   attribute: .LeadingMargin,
+                   multiplier: 1.0,
+                   constant: 0.0).isActive = true
+ 
+// Creating the same constraint using constraintGreaterThanOrEqualToAnchor:
+let margins = view.layoutMarginsGuide
+subview.leadingAnchor.constraintGreaterThanOrEqualToAnchor(margins.leadingAnchor).isActive = true
+```
+
+**Objective-C**:
+
+```objc
+// Creating a constraint using NSLayoutConstraint
+[NSLayoutConstraint
+ constraintWithItem:subview
+ attribute:NSLayoutAttributeLeading
+ relatedBy:NSLayoutRelationGreaterThanOrEqual
+ toItem:self.view
+ attribute:NSLayoutAttributeLeadingMargin
+ multiplier:1.0
+ constant:0.0].active = YES;
+ 
+// Creating the same constraint using constraintGreaterThanOrEqualToAnchor:
+UILayoutGuide *margin = self.view.layoutMarginsGuide;
+[subview.leadingAnchor constraintGreaterThanOrEqualToAnchor:margin.leadingAnchor].active = YES;
+```
+
 ## Parameters
 
-- `anchor`: A layout anchor from a  ,  , or   object. You must use a subclass of   that matches the current anchor. For example, if you call this method on an   object, this parameter must be another  .
+- `anchor`: A layout anchor from a [`UIView`](uiview.md), [`NSView`](https://developer.apple.com/documentation/AppKit/NSView), or [`UILayoutGuide`](uilayoutguide.md) object. You must use a subclass of [`NSLayoutAnchor`](nslayoutanchor.md) that matches the current anchor. For example, if you call this method on an [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md) object, this parameter must be another [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md).
 
 ## See Also
 

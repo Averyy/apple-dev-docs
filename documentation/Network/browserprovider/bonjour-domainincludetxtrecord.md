@@ -23,7 +23,7 @@ static func bonjour(_ type: String, domain: String? = nil, includeTxtRecord: Boo
 ## Parameters
 
 - `type`: The Bonjour type to browse for.
-- `domain`: Optional Bonjour domain to browse in.   If not specified, uses the Bonjour default browse domain,  ,   which is recommended in most cases.
+- `domain`: Optional Bonjour domain to browse in. If not specified, uses the Bonjour default browse domain, `nil`, which is recommended in most cases.
 - `includeTxtRecord`: Boolean specifying whether to query for TXT records.
 
 

@@ -32,8 +32,8 @@ This method is equivalent to invoking [`compare(_:options:range:)`](nsstring/com
 
 ## Parameters
 
-- `string`: This value must not be  . If this value is  , the behavior is undefined and may change in future versions of macOS.
-- `mask`: Options for the search—you can combine any of the following using a C bitwise OR operator:  ,  ,  . See   for details on these options.
+- `string`: The string with which to compare the receiver. This value must not be `nil`. If this value is `nil`, the behavior is undefined and may change in future versions of macOS.
+- `mask`: Options for the search—you can combine any of the following using a C bitwise OR operator: [`caseInsensitive`](nsstring/compareoptions/caseinsensitive.md), [`literal`](nsstring/compareoptions/literal.md), [`numeric`](nsstring/compareoptions/numeric.md). See [`String Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/introStrings.html#//apple_ref/doc/uid/10000035i) for details on these options.
 
 ## See Also
 

@@ -24,8 +24,8 @@ Do not perform other pasteboard operations in this method implementation.
 
 ## Parameters
 
-- `type`: A UTI supported by instances of the receiver for reading (one of the types returned by  ).
-- `pasteboard`: You can use the pasteboard argument to provide return different based on the pasteboard name, should you need to do so.
+- `type`: A UTI supported by instances of the receiver for reading (one of the types returned by [`readableTypes(for:)`](nspasteboardreading/readabletypes(for:).md)).
+- `pasteboard`: A pasteboard. You can use the pasteboard argument to provide return different based on the pasteboard name, should you need to do so.
 
 ## See Also
 

@@ -19,8 +19,8 @@ init(x: Float, y: Float)
 
 ## Parameters
 
-- `x`: The x-coordinate in the CIE 1931 chromaticity diagram, which spans the range between   and  .
-- `y`: The y-coordinate in the CIE 1931 chromaticity diagram, which spans the range between   and  .
+- `x`: The x-coordinate in the CIE 1931 chromaticity diagram, which spans the range between `0` and `0.8`.
+- `y`: The y-coordinate in the CIE 1931 chromaticity diagram, which spans the range between `0` and `0.85`.
 
 ## See Also
 

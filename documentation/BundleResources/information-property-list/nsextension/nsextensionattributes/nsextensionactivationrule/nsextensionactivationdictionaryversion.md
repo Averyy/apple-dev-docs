@@ -11,6 +11,10 @@ The version of the parent extension-activation rule dictionary.
 - macOS 10.11+
 - visionOS 1.0+
 
+
+
+**Type**: integer
+
 ## See Also
 
 - [NSExtensionActivationUsesStrictMatching](information-property-list/nsextension/nsextensionattributes/nsextensionactivationrule/nsextensionactivationusesstrictmatching.md)

@@ -28,9 +28,9 @@ A [`NEFilterDataVerdict`](nefilterdataverdict.md) object indicating how the syst
 
 ## Parameters
 
-- `flow`: An   object containing information about the flow.
-- `offset`: An unsigned integer containing the offset of the data stored in  . This offset is measured from the beginning of the flow’s inbound data.
-- `readBytes`: An   object containing the data to filter. For non-UDP/TCP flows, since the data may optionally include the IP header,   includes a 4-byte   field preceding the user data. Your handler must examine the   field and handle the data accordingly.
+- `flow`: An [`NEFilterFlow`](nefilterflow.md) object containing information about the flow.
+- `offset`: An unsigned integer containing the offset of the data stored in `readBytes`. This offset is measured from the beginning of the flow’s inbound data.
+- `readBytes`: An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing the data to filter. For non-UDP/TCP flows, since the data may optionally include the IP header, `readBytes` includes a 4-byte [`NEFilterDataAttribute`](nefilterdataattribute.md) field preceding the user data. Your handler must examine the [`NEFilterDataAttribute`](nefilterdataattribute.md) field and handle the data accordingly.
 
 ## See Also
 

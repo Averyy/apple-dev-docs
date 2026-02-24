@@ -49,8 +49,8 @@ The following code shows an example of using this function:
 
 ## Parameters
 
-- `vectorA`: The first input vector,  .
-- `vectorB`: The second input vector,  .
+- `vectorA`: The first input vector, `A`.
+- `vectorB`: The second input vector, `B`.
 
 ## See Also
 

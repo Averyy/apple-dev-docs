@@ -6,7 +6,7 @@ Bring your high dynamic range (HDR) content to compatible Mac displays.
 
 #### Overview
 
-In graphics content,  refers to the range of light intensities that a device is capable of displaying or recording, or the range of intensities recorded in a piece of media. Any Mac can display standard dynamic range (SDR) content. Color values are implicitly display-referred, meaning that the brightness value of the content is adapted to the current brightness of the display. When a person adjusts the brightness of a display they connect to a Mac, the SDR content adjusts directly and proportionally.
+In graphics content, *dynamic range* refers to the range of light intensities that a device is capable of displaying or recording, or the range of intensities recorded in a piece of media. Any Mac can display standard dynamic range (SDR) content. Color values are implicitly display-referred, meaning that the brightness value of the content is adapted to the current brightness of the display. When a person adjusts the brightness of a display they connect to a Mac, the SDR content adjusts directly and proportionally.
 
 ##### High Dynamic Range
 

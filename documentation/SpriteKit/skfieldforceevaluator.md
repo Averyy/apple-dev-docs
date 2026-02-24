@@ -24,6 +24,12 @@ typealias SKFieldForceEvaluator = (vector_float3, vector_float3, Float, Float, T
 
 The block parameters are defined as follows:
 
+- **position**: The position of the physics body. The coordinates are assumed to be in the following order: `x`, `y`, `z`. In SpriteKit, the `z` coordinate is always `0`.
+- **velocity**: The velocity of the physics body. The coordinates are assumed to be in the following order: `dx`, `dy`, `dz`. In SpriteKit, the `dz` coordinate is always `0`.
+- **mass**: The mass of the physics body.
+- **charge**: The charge of the physics body.
+- **time**: The amount of time that has passed since the last time the simulation was executed.
+
 Your block should perform any force calculations you are interested in and return the resulting force.
 
 > ❗ **Important**:  Although your app can use the z coordinate of any of the float vectors to perform its calculations, the z value of the output vector is ignored by SpriteKit. Essentially, this means that you can use field effects only to animate a node’s [`position`](sknode/position.md) property, not its [`zPosition`](sknode/zposition.md) property.

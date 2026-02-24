@@ -21,7 +21,7 @@ func willMove(to view: UIView?)
 
 ## Parameters
 
-- `view`: The view that will contain, and own, the interaction in its interactions array. If the view is  , the interaction’s owner will remove the interaction from its interactions array.
+- `view`: The view that will contain, and own, the interaction in its interactions array. If the view is `nil`, the interaction’s owner will remove the interaction from its interactions array.
 
 ## See Also
 

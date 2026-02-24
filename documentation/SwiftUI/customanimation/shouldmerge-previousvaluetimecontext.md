@@ -41,7 +41,7 @@ If your custom animation needs to maintain state between calls to the `shouldMer
 - `previous`: The previous running animation.
 - `value`: The vector to animate towards.
 - `time`: The amount of time since the start of the previous animation.
-- `context`: An instance of   that provides access   to state and the animation environment.
+- `context`: An instance of [`AnimationContext`](animationcontext.md) that provides access to state and the animation environment.
 
 
 ---

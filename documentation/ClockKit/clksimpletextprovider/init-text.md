@@ -20,7 +20,7 @@ A text provider initialized with the specified content.
 
 ## Parameters
 
-- `text`: The text that you want to display. This value is assigned to the   property of your text provider object.
+- `text`: The text that you want to display. This value is assigned to the [`text`](clksimpletextprovider/text.md) property of your text provider object.
 
 ## See Also
 

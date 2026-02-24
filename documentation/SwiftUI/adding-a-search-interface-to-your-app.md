@@ -37,6 +37,14 @@ struct ContentView: View {
 
 With this configuration, the search field appears on the trailing edge of the toolbar in macOS. In iOS and iPadOS, the first or second column displays the search field in a double or triple column navigation view, respectively. The above three-column example puts the search field at the top of the middle column on iPad.
 
+**macOS**:
+
+![A macOS window with three navigation panes. The pane on the left lists the items, Produce, Frozen, and Bakery. The middle pane has the placeholder text, Select a Department. The pane on the right has the placeholder text, Select a Product. The toolbar has a search field in the upper-right of the window that has the placeholder text, Search.](https://docs-assets.developer.apple.com/published/e5af4eeca8efecdc9565bb434acd3431/Search-add-1-macOS%402x.png)
+
+**iOS**:
+
+![An iPad screen with three navigation panes. The pane on the left lists the items, Produce, Frozen, and Bakery under the title, Department. The middle pane has the placeholder text, Select a Department under the title, Product. The pane on the right has the placeholder text, Select a Product. The toolbar of the middle pane has a search field just below the title that displays the placeholder text, Search.](https://docs-assets.developer.apple.com/published/819f027b88923ac6e221ff593c1c1735/Search-add-1-iPadOS%402x.png)
+
 ##### Control the Placement Structurally
 
 To add a search field to a specific column in iOS and iPadOS, add the searchable modifier to a view in that column. For example, to indicate that the search covers departments in the previous example, you could place the search field in the first column by adding the modifier to that column’s `DepartmentList` view instead of to the navigation split view:

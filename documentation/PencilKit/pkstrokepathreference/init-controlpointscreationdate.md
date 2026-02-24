@@ -21,7 +21,7 @@ init(controlPoints: [PKStrokePoint], creationDate: Date)
 ## Parameters
 
 - `controlPoints`: An array of control points for a cubic B-spline.
-- `creationDate`: The creation time of this path. The   of points in this stroke path is relative to this date.
+- `creationDate`: The creation time of this path. The `timeOffset` of points in this stroke path is relative to this date.
 
 
 ---

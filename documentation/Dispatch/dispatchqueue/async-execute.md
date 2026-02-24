@@ -22,7 +22,7 @@ func async(execute workItem: DispatchWorkItem)
 
 ## Parameters
 
-- `workItem`: The work item containing the task to execute. For information on how to create this work item, see  .
+- `workItem`: The work item containing the task to execute. For information on how to create this work item, see [`DispatchWorkItem`](dispatchworkitem.md).
 
 ## See Also
 

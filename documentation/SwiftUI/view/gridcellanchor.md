@@ -85,7 +85,7 @@ The grid makes this conversion in part to avoid ambiguity. Each column has its o
 
 ## Parameters
 
-- `anchor`: The unit point that defines how to align the view   within the bounds of its grid cell.
+- `anchor`: The unit point that defines how to align the view within the bounds of its grid cell.
 
 ## See Also
 

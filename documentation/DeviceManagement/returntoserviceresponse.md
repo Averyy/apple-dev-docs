@@ -26,6 +26,11 @@ object ReturnToServiceResponse
 - [object ReturnToServiceResponse.ReturnToService](returntoserviceresponse/returntoservice-data.dictionary.md)
   A dictionary containing the configuration for return to service.
 
+## Properties
+
+- `PreserveDataPlan` (boolean): If `true`, the device preserves the data plan on an iPhone or iPad with eSIM functionality, if one exists. This value is available in iOS 26.4 and later.
+- `ReturnToService` (ReturnToServiceResponse.ReturnToService) *(required)*: A dictionary containing the configuration for return to service.
+
 ## See Also
 
 - [object ReturnToServiceRequest](returntoservicerequest.md)

@@ -27,9 +27,9 @@ An image destination, or `NULL` if an error occurs. You are responsible for rele
 ## Parameters
 
 - `consumer`: A data consumer object to store the image data.
-- `type`: The uniform type identifier of the resulting image file. For a list of system-declared and third-party identifiers, see  .
+- `type`: The uniform type identifier of the resulting image file. For a list of system-declared and third-party identifiers, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers).
 - `count`: The number of images (not including thumbnail images) you want to include in the image file.
-- `options`: Future options. Specify   for this parameter.
+- `options`: Future options. Specify `NULL` for this parameter.
 
 ## See Also
 

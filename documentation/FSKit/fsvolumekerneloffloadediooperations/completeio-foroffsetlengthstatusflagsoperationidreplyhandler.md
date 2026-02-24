@@ -26,10 +26,10 @@ FSKit may call this method without an earlier call to [`blockmapFile(_:offset:le
 - `file`: The file for which the I/O operation completed.
 - `offset`: The starting logical offset at which I/O started.
 - `length`: The length of the I/O range (in bytes).
-- `status`: Any error that occurred during the operation. If no error occurred, this parameter is  .
+- `status`: Any error that occurred during the operation. If no error occurred, this parameter is `nil`.
 - `flags`: Flags that affect the behavior of the complete I/O operation.
-- `operationID`: A unique identifier of the blockmap call. Any value other than   (Objective-C) or   (Swift) corresponds to a previous call to   with the same  .
-- `reply`: A block or closure to indicate success or failure. If completing I/O fails, pass an error as the one parameter to the reply handler. If completing I/O succeeds, pass  . For an   Swift implementation, there’s no reply handler; simply throw an error or return normally.
+- `operationID`: A unique identifier of the blockmap call. Any value other than `0` (Objective-C) or [`unspecified`](fsoperationid/unspecified.md) (Swift) corresponds to a previous call to [`blockmapFile(_:offset:length:flags:operationID:packer:replyHandler:)`](fsvolumekerneloffloadediooperations/blockmapfile(_:offset:length:flags:operationid:packer:replyhandler:).md) with the same `operationID`.
+- `reply`: A block or closure to indicate success or failure. If completing I/O fails, pass an error as the one parameter to the reply handler. If completing I/O succeeds, pass `nil`. For an `async` Swift implementation, there’s no reply handler; simply throw an error or return normally.
 
 ## See Also
 

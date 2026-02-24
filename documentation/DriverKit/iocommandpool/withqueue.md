@@ -23,7 +23,7 @@ The withQueue method is what is known as a factory method. It creates a new inst
 
 ## Parameters
 
-- `queue`: The IODispatchQueue that this command pool should synchronize with.   This queue must have been allocated with the kIODispatchQueueReentrant   option.   Returns a pointer to an instance of IOCommandPool if successful,   otherwise NULL.
+- `queue`: The IODispatchQueue that this command pool should synchronize with. This queue must have been allocated with the kIODispatchQueueReentrant option. Returns a pointer to an instance of IOCommandPool if successful, otherwise NULL.
 
 
 ---

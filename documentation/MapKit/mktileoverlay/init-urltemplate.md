@@ -29,7 +29,7 @@ The default tile overlay object uses the template string you specify to request 
 
 ## Parameters
 
-- `URLTemplate`: A string that you can use to build a URL to access your tile images. The string you specify can point to a local file or to an image on a remote server. To facilitate retrieving multiple tiles using the string, use the placeholder values  ,  ,  , and   as stand-ins for the x and y tile indexes, the zoom level, and the resolution of the tile image. If this parameter is  , you need to provide custom implementations for the tile-loading methods of this class.
+- `URLTemplate`: A string that you can use to build a URL to access your tile images. The string you specify can point to a local file or to an image on a remote server. To facilitate retrieving multiple tiles using the string, use the placeholder values `{x}`, `{y}`, `{z}`, and `{scale}` as stand-ins for the x and y tile indexes, the zoom level, and the resolution of the tile image. If this parameter is `nil`, you need to provide custom implementations for the tile-loading methods of this class.
 
 ## See Also
 

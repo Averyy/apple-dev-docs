@@ -26,7 +26,10 @@ An initialized custom action object.
 
 - `name`: The localized name of the action. Provide a short and descriptive name for the action.
 - `target`: The object that performs the action.
-- `selector`: The selector of   to call when you want to perform the action. The method signature must take one of the following forms:
+- `selector`: The selector of `target` to call when you want to perform the action. The method signature must take one of the following forms: ```objc
+- (BOOL)myPerformActionMethod
+- (BOOL)myPerformActionMethod:(UIAccessibilityCustomAction *)action
+```
 
 ## See Also
 

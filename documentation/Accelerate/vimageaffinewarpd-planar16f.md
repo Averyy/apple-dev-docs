@@ -57,11 +57,11 @@ You can use the same workspace memory for a group of images that are different s
 ## Parameters
 
 - `src`: A pointer to a vImage buffer structure that contains the source image.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the  ,  , and   fields of this structure and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass   to instruct the function to allocate, use, and then free its own temporary buffer.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the `height`, `width`, and `rowBytes` fields of this structure and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass `nil` to instruct the function to allocate, use, and then free its own temporary buffer.
 - `transform`: The affine transformation matrix that the function applies to the source image.
-- `backColor`: A background color. If you set the   flag, pass a pixel value.
-- `flags`: If you want vImage to use faster but lower-precision internal arithmetic, set the   flag.
+- `backColor`: A background color. If you set the `kvImageBackgroundColorFill` flag, pass a pixel value.
+- `flags`: The options to use when applying the transform. To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag. To specify how vImage handles pixel locations beyond the edge of the source image, set one of the following flags: [`kvImageBackgroundColorFill`](kvimagebackgroundcolorfill.md) or [`kvImageEdgeExtend`](kvimageedgeextend.md). If you want vImage to use a higher quality but a slower resampling filter, set the [`kvImageHighQualityResampling`](kvimagehighqualityresampling.md) flag. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md). This function ignores the [`kvImageLeaveAlphaUnchanged`](kvimageleavealphaunchanged.md) flag. If you want vImage to use faster but lower-precision internal arithmetic, set the [`kvImageUseFP16Accumulator`](kvimageusefp16accumulator.md) flag.
 
 ## See Also
 

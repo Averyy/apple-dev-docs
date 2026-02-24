@@ -31,8 +31,8 @@ For a list of possible attributes, see [`NSAttributedString.Key`](nsattributedst
 ## Parameters
 
 - `location`: The index for which to return attributes. This value must not exceed the bounds of the receiver.
-- `range`: If non- , upon return contains the maximum range over which the attributes and values are the same as those at  , clipped to  .
-- `rangeLimit`: The range over which to search for continuous presence of the attributes at  . This value must not exceed the bounds of the receiver.
+- `range`: If non-`NULL`, upon return contains the maximum range over which the attributes and values are the same as those at `index`, clipped to `rangeLimit`.
+- `rangeLimit`: The range over which to search for continuous presence of the attributes at `index`. This value must not exceed the bounds of the receiver.
 
 ## See Also
 

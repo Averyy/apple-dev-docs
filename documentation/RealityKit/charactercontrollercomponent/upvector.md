@@ -21,7 +21,7 @@ var upVector: SIMD3<Float>
 
 #### Discussion
 
-Rotates the object so that the vertical height is along the up vector. Normalize and specify the vector in , the coordinate system of the physics simulation.
+Rotates the object so that the vertical height is along the up vector. Normalize and specify the vector in *physics space*, the coordinate system of the physics simulation.
 
 ## See Also
 

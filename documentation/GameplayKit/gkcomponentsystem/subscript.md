@@ -29,7 +29,7 @@ This method is equivalent to accessing objects by index in the [`components`](gk
 
 ## Parameters
 
-- `idx`: A valid index to the   array.
+- `idx`: A valid index to the [`components`](gkcomponentsystem/components.md) array.
 
 
 ---

@@ -22,7 +22,7 @@ init(minimumInterval: Double? = nil, paused: Bool = false)
 
 ## Parameters
 
-- `minimumInterval`: The minimum interval to update the schedule at.   Pass nil to let the system pick an appropriate update interval.
+- `minimumInterval`: The minimum interval to update the schedule at. Pass nil to let the system pick an appropriate update interval.
 - `paused`: If the schedule should stop generating updates.
 
 

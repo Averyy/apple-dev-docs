@@ -8,7 +8,7 @@ Build a view controller in storyboards, configure it with custom views, and fill
 
 In the model-view-controller design paradigm, a view controller fits between the view objects that present information onscreen and the data objects that store your app’s content. Specifically, a view controller manages a view hierarchy and the state information needed to keep those views up-to-date. Every UIKit app relies heavily on view controllers to present content, and you frequently define custom view controllers to manage your views and UI-related logic.
 
-Most custom view controllers you create are  — that is, the view controller owns all of its views and manages interactions with those views. Use content view controllers to present your app’s custom content onscreen, and use your view controller object to manage the transfer of data to and from your custom views.
+Most custom view controllers you create are *content view controllers* — that is, the view controller owns all of its views and manages interactions with those views. Use content view controllers to present your app’s custom content onscreen, and use your view controller object to manage the transfer of data to and from your custom views.
 
 ![An illustration of the relationship between a view controller, its views, and the data objects from your app.](https://docs-assets.developer.apple.com/published/734a881eaebde585c9cbad47bd162a53/media-3375402%402x.png)
 
@@ -30,6 +30,20 @@ At runtime, you may need to access views from your view controller’s code. For
 
 An outlet is a property in your view controller that includes the `IBOutlet` keyword. The presence of that keyword tells Xcode to expose that property in your storyboard. The following example code shows the definitions for two outlets. In Swift, include the `weak` keyword to prevent your view controller from holding a second strong reference to the view—the first originates from the view hierarchy itself.
 
+**Swift**:
+
+```swift
+@IBOutlet weak var imageView : UIImageView?
+@IBOutlet weak var button : UIButton?
+```
+
+**Objective-C**:
+
+```objc
+@property IBOutlet UIImageView* imageView;
+@property IBOutlet UIButton* button;
+```
+
 In your storyboard, connect each outlet to the corresponding view, as described in [`Add an outlet connection to send a message to a UI object`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devc06f7ee11). You don’t need to store references to all views in your view hierarchy; store references only to the views you modify later.
 
 When you instantiate a view controller, UIKit reconnects any outlets that you configured in your storyboard. UIKit reestablishes these connections before calling your view controller’s [`viewDidLoad()`](uiviewcontroller/viewdidload().md) method, so you can access the objects in those properties from that method. If you create any views programmatically, you must explicitly assign those views to the appropriate properties of your view controller.
@@ -43,6 +57,22 @@ Controls use the target-action design pattern to report user interactions, and s
 - Implement delegate and action methods in dedicated objects that then forward relevant information to your view controller. This option offers the most flexibility and reusability. The separation of responsibilities also makes it easier to write unit tests.
 
 To respond to user interactions with controls, define an action method with one of the signatures shown in the following code listing. In your method definition, you may replace the generic reference to [`UIControl`](uicontrol.md) with a more specific control class.
+
+**Swift**:
+
+```swift
+@IBAction func doSomething()
+@IBAction func doSomething(sender: UIControl)
+@IBAction func doSomething(sender: UIControl, forEvent event: UIEvent)
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction)doSomething;
+- (IBAction)doSomething:(UIControl*)sender;
+- (IBAction)doSomething:(UIControl*)sender forEvent:(UIEvent*)event;
+```
 
 For information about the target-action design pattern and how to handle control-related events, see [`UIControl`](uicontrol.md).
 

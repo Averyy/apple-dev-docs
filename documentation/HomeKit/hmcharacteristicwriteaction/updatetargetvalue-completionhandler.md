@@ -20,7 +20,7 @@ func updateTargetValue(_ targetValue: TargetValueType) async throws
 ## Parameters
 
 - `targetValue`: The new target value.
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

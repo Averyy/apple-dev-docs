@@ -28,7 +28,7 @@ If `rl` does not contain `observer` in `mode`, this function does nothing.
 
 - `rl`: The run loop to modify.
 - `observer`: The run loop observer to remove.
-- `mode`: The run loop mode of   from which to remove  . Use the constant   to remove   from the set of objects monitored by all the common modes.
+- `mode`: The run loop mode of `rl` from which to remove `observer`. Use the constant [`commonModes`](cfrunloopmode/commonmodes.md) to remove `observer` from the set of objects monitored by all the common modes.
 
 ## See Also
 

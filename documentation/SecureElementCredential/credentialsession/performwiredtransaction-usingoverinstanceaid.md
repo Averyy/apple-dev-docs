@@ -37,7 +37,7 @@ The credential session can be in any state when calling this method. If the call
 ## Parameters
 
 - `credential`: The credential to activate and transition into card emulation state with.
-- `scene`: The   the authentication sheet appears over.
+- `scene`: The [`UIScene`](https://developer.apple.com/documentation/UIKit/UIScene) the authentication sheet appears over.
 - `instanceAID`: The applet instance identifier of the installed credential to authorize.
 
 ## See Also

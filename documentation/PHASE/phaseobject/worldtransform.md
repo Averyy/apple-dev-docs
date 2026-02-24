@@ -23,7 +23,7 @@ var worldTransform: simd_float4x4 { get set }
 
 The value of this property requires orthogonal basis vectors and uniform scale.
 
-The framework interprets the transform’s position values in a right-handed coordinate system, where the  axis extends upward and and the negative  axis extends forward.
+The framework interprets the transform’s position values in a right-handed coordinate system, where the *Y* axis extends upward and and the negative *Z* axis extends forward.
 
 ## See Also
 

@@ -41,7 +41,7 @@ Text("Projection effects using transforms")
 
 ## Parameters
 
-- `transform`: A   to apply to the view.
+- `transform`: A [`ProjectionTransform`](projectiontransform.md) to apply to the view.
 
 ## See Also
 

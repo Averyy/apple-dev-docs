@@ -16,7 +16,7 @@ static func popover(arrowEdge: Edge?) -> PresentationComponent.Configuration
 
 ## Parameters
 
-- `arrowEdge`: The edges that the popover’s arrow are allowed to   be positioned. The default is  , which results in the system   allowing any arrow edge.
+- `arrowEdge`: The edges that the popover’s arrow are allowed to be positioned. The default is `nil`, which results in the system allowing any arrow edge.
 
 
 ---

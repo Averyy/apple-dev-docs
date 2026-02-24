@@ -13,6 +13,10 @@ The name of the bundle’s executable file.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 For an app, this key is the executable. For a loadable bundle, it’s the binary that’s loaded dynamically by the bundle. For a framework, it’s the shared library framework and must have the same name as the framework but without the `.framework` extension.

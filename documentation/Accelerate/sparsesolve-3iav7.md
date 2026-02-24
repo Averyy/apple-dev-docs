@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Solves the system  using the supplied double-precision factorization of .
+Solves the system *AX = B* using the supplied double-precision factorization of *A*.
 
 **Availability**:
 - iOS 11.0+
@@ -78,22 +78,22 @@ let xValues = [Double](unsafeUninitializedCapacity: n) {
 
 On return, `xValues` contains the values `[1.0, 2.0, 3.0, 10.0, 20.0, 30.0]`.
 
-If the factorization is , the function returns the solution of minimum norm  for underdetermined systems.
+If the factorization is *A = QR*, the function returns the solution of minimum norm *‖ x ‖₂* for underdetermined systems.
 
-If the factorization is , the function returns the least squares solution  for overdetermined systems.
+If the factorization is *A = QR*, the function returns the least squares solution *minₓ ‖ AX - B ‖₂* for overdetermined systems.
 
-If the factorization is [`SparseFactorizationCholeskyAtA`](sparsefactorizationcholeskyata.md), the factorization is of , and the solution that returns is for the system .
+If the factorization is [`SparseFactorizationCholeskyAtA`](sparsefactorizationcholeskyata.md), the factorization is of *AᵀA*, and the solution that returns is for the system *AᵀAX = B*.
 
 ## Parameters
 
-- `Factored`: The factorization of  .
+- `Factored`: The factorization of *A*.
 - `B`: The right-hand-side, B.
 - `X`: The matrix for returning solutions.
 
 ## See Also
 
 - [func SparseSolve(SparseOpaqueFactorization_Float, DenseMatrix_Float, DenseMatrix_Float)](sparsesolve(_:_:_:)-2rxlq.md)
-  Solves the system  using the supplied single-precision factorization of .
+  Solves the system *AX = B* using the supplied single-precision factorization of *A*.
 
 
 ---

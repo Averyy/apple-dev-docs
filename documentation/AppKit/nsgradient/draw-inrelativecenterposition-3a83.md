@@ -25,7 +25,7 @@ The gradient formed by this method is clipped to `rect`.
 ## Parameters
 
 - `rect`: The rectangle to fill.
-- `relativeCenterPosition`: The relative location within the rectangle to use as the center point of the gradient’s end circle. Each coordinate must contain a value between -1.0 and 1.0. A coordinate value of 0 represents the center of   along the given axis. In the default coordinate system, a value of -1.0 corresponds to the bottom or left edge of the rectangle and a value of 1.0 corresponds to the top or right edge.
+- `relativeCenterPosition`: The relative location within the rectangle to use as the center point of the gradient’s end circle. Each coordinate must contain a value between -1.0 and 1.0. A coordinate value of 0 represents the center of `rect` along the given axis. In the default coordinate system, a value of -1.0 corresponds to the bottom or left edge of the rectangle and a value of 1.0 corresponds to the top or right edge.
 
 ## See Also
 

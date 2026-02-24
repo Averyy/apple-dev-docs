@@ -25,14 +25,14 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
-- `desired_name`: The name of the principal whose credential should be acquired. Specify   to get a generic credential or use   to obtain a name object.
+- `desired_name`: The name of the principal whose credential should be acquired. Specify [`GSS_C_NO_NAME`](gss_c_no_name.md) to get a generic credential or use [`gss_import_name(_:_:_:_:)`](gss_import_name(_:_:_:_:).md) to obtain a name object.
 - `password`: The password.
-- `time_req`: The time in seconds that the credential should remain valid. Use   to indicate the maximum allowed duration.
-- `desired_mechs`: The set of underlying security mechanisms to use with the credential. Use   to get the default set.
-- `cred_usage`: A flag that indicates how the credential will be used. Specify   for context initiation,   for context acceptance, or   for both.
-- `output_cred_handle`: A pointer the function uses to return the credential. Release the credential’s memory with   when you are done with it.
-- `actual_mechs`: A pointer the function uses to return the actual mechanisms used by the credential. Set to   to ignore this output. If you do receive a set of mechanisms, use   to release its memory when you are done with it.
-- `time_rec`: A pointer the function uses to return the actual number of seconds for which the credential is valid. Set to   to ignore this output.
+- `time_req`: The time in seconds that the credential should remain valid. Use [`GSS_C_INDEFINITE`](gss_c_indefinite.md) to indicate the maximum allowed duration.
+- `desired_mechs`: The set of underlying security mechanisms to use with the credential. Use `GSS_C_NO_OID_SET` to get the default set.
+- `cred_usage`: A flag that indicates how the credential will be used. Specify [`GSS_C_INITIATE`](gss_c_initiate.md) for context initiation, [`GSS_C_ACCEPT`](gss_c_accept.md) for context acceptance, or [`GSS_C_BOTH`](gss_c_both.md) for both.
+- `output_cred_handle`: A pointer the function uses to return the credential. Release the credential’s memory with [`gss_release_cred(_:_:)`](gss_release_cred(_:_:).md) when you are done with it.
+- `actual_mechs`: A pointer the function uses to return the actual mechanisms used by the credential. Set to `NULL` to ignore this output. If you do receive a set of mechanisms, use [`gss_release_oid_set(_:_:)`](gss_release_oid_set(_:_:).md) to release its memory when you are done with it.
+- `time_rec`: A pointer the function uses to return the actual number of seconds for which the credential is valid. Set to `NULL` to ignore this output.
 
 ## See Also
 

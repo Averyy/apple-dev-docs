@@ -30,8 +30,8 @@ Use this method to create a map item for a specific location. Don’t use it to 
 
 ## Parameters
 
-- `location`: A  .
-- `address`: An  .
+- `location`: A [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation).
+- `address`: An [`MKAddress`](mkaddress.md).
 
 
 ---

@@ -32,9 +32,9 @@ Depending on the comparison-option flags specified, the length of the resulting 
 
 ## Parameters
 
-- `theString`: The string in which to search for  .
-- `stringToFind`: The string to search for in  .
-- `compareOptions`: Flags that select different types of comparisons, such as localized comparison, case-insensitive comparison, and non-literal comparison. If you want the default comparison behavior, pass  . See   for the available flags.
+- `theString`: The string in which to search for `stringToFind`.
+- `stringToFind`: The string to search for in `theString`.
+- `compareOptions`: Flags that select different types of comparisons, such as localized comparison, case-insensitive comparison, and non-literal comparison. If you want the default comparison behavior, pass `0`. See [`String Comparison Flags`](string-comparison-flags.md) for the available flags.
 
 ## See Also
 

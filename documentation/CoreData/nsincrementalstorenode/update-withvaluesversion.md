@@ -26,7 +26,7 @@ Update the values and version to reflect new data being saved to or loaded from 
 
 ## Parameters
 
-- `values`: A dictionary containing updated values, in the same format as that described in  .
+- `values`: A dictionary containing updated values, in the same format as that described in [`init(objectID:withValues:version:)`](nsincrementalstorenode/init(objectid:withvalues:version:).md).
 - `version`: The version number for the transaction.
 
 ## See Also

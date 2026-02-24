@@ -30,6 +30,10 @@ object StatusPasscodeIsPresent
 | Allowed in system scope | iOS, Shared iPad, visionOS, watchOS |
 | Allowed in user scope | Shared iPad |
 
+## Properties
+
+- `passcode.is-present` (boolean) *(required)*: If `true`, a passcode is present on the device. If `false`, a passcode isn’t present on the device. When a passcode is present, the specific attributes of the passcode, such as length or number of complex characters, aren’t reported. Instead, use the `passcode.is-compliant` status item to verify that the passcode complies with all passcode policies set on the device.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

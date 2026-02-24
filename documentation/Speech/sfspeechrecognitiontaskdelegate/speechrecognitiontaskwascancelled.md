@@ -24,7 +24,7 @@ A speech recognition task can be canceled by the user, by your app, or by the sy
 
 ## Parameters
 
-- `task`: The speech recognition task (an   object) that represents the request.
+- `task`: The speech recognition task (an [`SFSpeechRecognitionTask`](sfspeechrecognitiontask.md) object) that represents the request.
 
 ## See Also
 

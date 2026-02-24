@@ -27,7 +27,7 @@ If authentication is required in order to download the request, the required cre
 
 ## Parameters
 
-- `request`: The URL request to load. The   object is deep-copied as part of the initialization process. Changes made to   after this method returns do not affect the request that is used for the loading process.
+- `request`: The URL request to load. The `request` object is deep-copied as part of the initialization process. Changes made to `request` after this method returns do not affect the request that is used for the loading process.
 - `queue`: The operation queue to which the handler block is dispatched when the request completes or failed.
 - `handler`: The handler block to execute.
 

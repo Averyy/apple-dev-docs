@@ -32,7 +32,7 @@ To implement this method in your own `MainActorMessage` conformance, retrieve va
 
 ## Parameters
 
-- `notification`: The posted  .
+- `notification`: The posted [`Notification`](notification.md).
 
 ## See Also
 

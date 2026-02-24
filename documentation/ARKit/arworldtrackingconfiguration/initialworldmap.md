@@ -26,8 +26,8 @@ An [`ARWorldMap`](arworldmap.md) encapsulates the state of a running [`ARSession
 
 By saving world maps and using them to start new sessions, your app can add new AR capabilities:
 
--  Create a shared frame of reference by sending archived [`ARWorldMap`](arworldmap.md) objects to a nearby user’s device. With two devices tracking the same world map, you can build a networked experience where both users can see and interact with the same virtual content.
--  Save a world map when your app becomes inactive, then restore it the next time your app launches in the same physical environment. You can use  anchors from the resumed world map to place the same virtual content at the same positions from the saved session.
+- **Multiuser AR experiences.** Create a shared frame of reference by sending archived [`ARWorldMap`](arworldmap.md) objects to a nearby user’s device. With two devices tracking the same world map, you can build a networked experience where both users can see and interact with the same virtual content.
+- **Persistent AR experiences.** Save a world map when your app becomes inactive, then restore it the next time your app launches in the same physical environment. You can use  anchors from the resumed world map to place the same virtual content at the same positions from the saved session.
 
 When you run a session with an initial world map, the session starts in the [`ARCamera.TrackingState.limited(_:)`](arcamera/trackingstate-swift.enum/limited(_:).md) ([`ARCamera.TrackingState.Reason.relocalizing`](arcamera/trackingstate-swift.enum/reason/relocalizing.md)) tracking state while ARKit attempts to reconcile the recorded world map with the current environment. If successful, the tracking state becomes [`ARCamera.TrackingState.normal`](arcamera/trackingstate-swift.enum/normal.md) after a short time, indicating that the current world coordinate system and anchors match those from the recorded world map.
 

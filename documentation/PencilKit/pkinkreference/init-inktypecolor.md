@@ -20,7 +20,7 @@ init(inkType type: __PKInkType, color: NSColor)
 
 ## Parameters
 
-- `type`: The type of ink to create, from one of the available   enumerations.
+- `type`: The type of ink to create, from one of the available [`PKInkType`](pkinktype.md) enumerations.
 - `color`: The base color for this ink.
 
 

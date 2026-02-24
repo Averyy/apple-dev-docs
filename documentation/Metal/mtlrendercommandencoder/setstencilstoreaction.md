@@ -28,7 +28,7 @@ This method changes the render command encoder’s store action for the stencil 
 
 ## Parameters
 
-- `storeAction`: A store action for the stencil attachment that can’t be  .
+- `storeAction`: A store action for the stencil attachment that can’t be [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md).
 
 ## See Also
 

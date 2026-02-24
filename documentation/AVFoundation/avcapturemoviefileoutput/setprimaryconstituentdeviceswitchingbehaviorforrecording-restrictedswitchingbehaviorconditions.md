@@ -26,8 +26,8 @@ When a capture device doesn’t support constituent device selection, attempting
 
 ## Parameters
 
-- `switchingBehavior`: Attempting to restrict the switching behavior of a capture device that doesn’t support constituent device switching results in an error.
-- `restrictedSwitchingBehaviorConditions`: The conditions during which camera switching occurs. Only set a condition when you set the switching behavior to  . In all other cases, set the value to  .
+- `switchingBehavior`: The switching behavior to set on the movie file output. Attempting to restrict the switching behavior of a capture device that doesn’t support constituent device switching results in an error.
+- `restrictedSwitchingBehaviorConditions`: The conditions during which camera switching occurs. Only set a condition when you set the switching behavior to [`AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.restricted`](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/restricted.md). In all other cases, set the value to [`AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditionNone`](avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditions/avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditionnone.md).
 
 ## See Also
 

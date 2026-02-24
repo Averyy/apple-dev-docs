@@ -30,7 +30,7 @@ The delegate may use this method if it is keeping track of the encoded or decode
 
 - `unarchiver`: An unarchiver for which the receiver is the delegate.
 - `object`: An object in the archive.
-- `newObject`: The object with which   will replace  .
+- `newObject`: The object with which `unarchiver` will replace `object`.
 
 ## See Also
 

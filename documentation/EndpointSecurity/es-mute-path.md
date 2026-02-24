@@ -24,9 +24,9 @@ To mute a subset of events from a path, use [`es_mute_path_events(_:_:_:_:_:)`](
 
 ## Parameters
 
-- `client`: A previously-created client. If the call succeeds, this client no longer receives events from executables whose paths match  .
+- `client`: A previously-created client. If the call succeeds, this client no longer receives events from executables whose paths match `path`.
 - `path`: The path to mute. The client stops receiving events from executables whose paths match this string.
-- `type`: The type of the   argument, either a prefix or a literal path.
+- `type`: The type of the `path` argument, either a prefix or a literal path.
 
 ## See Also
 

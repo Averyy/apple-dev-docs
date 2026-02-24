@@ -26,7 +26,8 @@ Present the view controller using [`present(_:animated:completion:)`](https://de
 
 ## Parameters
 
-- `handler`: A block that is called after the view controller is loaded.
+- `handler`: A block that is called after the view controller is loaded. - **`broadcastActivityViewController`**: The `RPBroadcastActivityViewController` to be presented.
+- **`error`**: If an error occurred, this parameter holds an object that explains the error. Otherwise, the value of this parameter is `nil`. See [`RPRecordingErrorCode`](rprecordingerrorcode.md) for a list of error codes specific to ReplayKit.
 
 ## See Also
 

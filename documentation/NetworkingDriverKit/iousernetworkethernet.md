@@ -32,7 +32,7 @@ When you subclass `IOUserNetworkEthernet`, update the `IOKitPersonalities` key o
 | [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier) | The bundle identifier of your driver. |
 | `CFBundleIdentifierKernel` | The value `com.apple.iokit.IOSkywalkFamily`. |
 
-You may add other keys to assist with the matching process. For example, you might include the `bInterfaceClass`, `bInterfaceProtocol`, and `bInterfaceSubClass` keys to match against specific USB device attributes. The USB specification defines which keys to include when matching your driver to a USB device. For information about the specific key combinations, see  at [`https://www.usb.org`](https://developer.apple.comhttps://www.usb.org).
+You may add other keys to assist with the matching process. For example, you might include the `bInterfaceClass`, `bInterfaceProtocol`, and `bInterfaceSubClass` keys to match against specific USB device attributes. The USB specification defines which keys to include when matching your driver to a USB device. For information about the specific key combinations, see *Universal Serial Bus Common Class Specification* at [`https://www.usb.org`](https://developer.apple.comhttps://www.usb.org).
 
 ## Topics
 

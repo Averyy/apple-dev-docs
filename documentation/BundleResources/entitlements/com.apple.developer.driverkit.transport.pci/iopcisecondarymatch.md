@@ -8,6 +8,10 @@ A key to match PCI devices by subsystem vendor ID and device ID registers.
 **Availability**:
 - macOS 10.15.4+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This value of this key matches the subsystem register (`0x2c`).

@@ -32,7 +32,7 @@ If you registered a class for the specified `identifier` and a new cell must be 
 
 ## Parameters
 
-- `identifier`: The reuse identifier for the specified cell. This parameter must not be  .
+- `identifier`: The reuse identifier for the specified cell. This parameter must not be `nil`.
 - `indexPath`: The index path specifying the location of the cell. The data source receives this information when it is asked for the cell and should just pass it along. This method uses the index path to perform additional configuration based on the cell’s position in the collection view.
 
 ## See Also

@@ -23,8 +23,8 @@ virtual kern_return_t CopyDispatchQueue(const IODispatchQueueName name, IODispat
 
 ## Parameters
 
-- `name`: The name you assigned to the dispatch queue. Specify   to retrieve the default dispatch queue.
-- `queue`: A variable to use for storing the dispatch queue. On return, this parameter contains the retained queue, or   if no queue matches the specified name. You are responsible for releasing the returned dispatch queue.
+- `name`: The name you assigned to the dispatch queue. Specify `kIOServiceDefaultQueueName` to retrieve the default dispatch queue.
+- `queue`: A variable to use for storing the dispatch queue. On return, this parameter contains the retained queue, or `NULL` if no queue matches the specified name. You are responsible for releasing the returned dispatch queue.
 
 ## See Also
 

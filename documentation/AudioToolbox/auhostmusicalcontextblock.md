@@ -27,6 +27,13 @@ This block returns [`true`](https://developer.apple.com/documentation/Swift/true
 
 The block takes the following parameters:
 
+- **currentTempo**: The current tempo, in beats per minute.
+- **timeSignatureNumerator**: The numerator of the current time signature.
+- **timeSignatureDenominator**: The denominator of the current time signature.
+- **currentBeatPosition**: The precise beat position of the beginning of the current buffer being rendered.
+- **sampleOffsetToNextBeat**: The number of samples between the beginning of the buffer being rendered and the next beat. Can be `0`.
+- **currentMeasureDownbeatPosition**: The beat position corresponding to the beginning of the current measure.
+
 ## See Also
 
 - [var musicalContextBlock: AUHostMusicalContextBlock?](auaudiounit/musicalcontextblock.md)

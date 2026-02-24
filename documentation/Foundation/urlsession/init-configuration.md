@@ -26,7 +26,7 @@ Calling this method is equivalent to calling [`init(configuration:delegate:deleg
 
 ## Parameters
 
-- `configuration`: See   for more information.
+- `configuration`: A configuration object that specifies certain behaviors, such as caching policies, timeouts, proxies, pipelining, TLS versions to support, cookie policies, credential storage, and so on. See [`URLSessionConfiguration`](urlsessionconfiguration.md) for more information.
 
 ## See Also
 

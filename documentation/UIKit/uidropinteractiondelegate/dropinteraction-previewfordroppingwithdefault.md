@@ -26,7 +26,7 @@ optional func dropInteraction(_ interaction: UIDropInteraction, previewForDroppi
 
 #### Discussion
 
-The system calls this method multiple times, once for each visible drag item. It shows the preview during the drop animation in order to visually  the drag item into place.
+The system calls this method multiple times, once for each visible drag item. It shows the preview during the drop animation in order to visually *drop* the drag item into place.
 
 If you call [`setNeedsDropPreviewUpdate()`](uidragitem/setneedsdroppreviewupdate().md) to tell the system to request a new drop preview, the system provides the previous value in the `defaultPreview` parameter.
 

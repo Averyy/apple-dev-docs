@@ -27,7 +27,7 @@ The split view controller calls this method when the system completes hiding one
 ## Parameters
 
 - `svc`: The split view controller whose column the system completed hiding.
-- `column`: The column the system completed hiding. See   for possible values.
+- `column`: The column the system completed hiding. See [`UISplitViewController.Column`](uisplitviewcontroller/column.md) for possible values.
 
 ## See Also
 

@@ -27,11 +27,14 @@ func cblas_drotm(_ N: __LAPACK_int, _ X: UnsafeMutablePointer<Double>?, _ INCX: 
 ## Parameters
 
 - `N`: Number of elements in vectors.
-- `X`: Vector  . Modified on return.
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
-- `Y`: Vector  . Modified on return.
-- `INCY`: Stride within  . For example, if   is 7, every 7th element is used.
-- `P`: :   and   are obtained from matrix  .   is 1.0.   is -1.0.
+- `X`: Vector `X`. Modified on return.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
+- `Y`: Vector `Y`. Modified on return.
+- `INCY`: Stride within `Y`. For example, if `incY` is 7, every 7th element is used.
+- `P`: A 5-element vector: - **`P[0]`**: Flag value that defines the form of matrix `H`. `-2.0`: matrix `H` contains the identity matrix. `-1.0`: matrix `H` is identical to matrix `SH` (defined by the remaining values in the vector). `0.0`: `H[1,2]` and `H[2,1]` are obtained from matrix `SH`. The remaining values are both `1.0`. `1.0`: `H[1,1]` and `H[2,2]` are obtained from matrix `SH`. `H[1,2]` is 1.0. `H[2,1]` is -1.0. - **`P[1]`**: Contains `SH[1,1]`.
+- **`P[2]`**: Contains `SH[2,1]`.
+- **`P[3]`**: Contains `SH[1,2]`.
+- **`P[4]`**: Contains `SH[2,2]`.
 
 ## See Also
 

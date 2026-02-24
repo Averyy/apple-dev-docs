@@ -19,6 +19,12 @@ The command to install a provisioning profile on a device.
 object InstallProvisioningProfileCommand.Command
 ```
 
+## Properties
+
+- `ProvisioningProfile` (data) *(required)*: The provisioning profile.
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

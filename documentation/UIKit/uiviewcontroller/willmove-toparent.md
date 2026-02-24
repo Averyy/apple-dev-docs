@@ -32,7 +32,7 @@ When your custom container calls the [`addChild(_:)`](uiviewcontroller/addchild(
 
 ## Parameters
 
-- `parent`: The parent view controller, or   if there is no parent.
+- `parent`: The parent view controller, or `nil` if there is no parent.
 
 ## See Also
 

@@ -31,7 +31,7 @@ Use this view modifier to disable the Writing Tools affordance for [`TextField`]
 
 ## Parameters
 
-- `visibility`: Whether the affordance may be shown for text   input views.
+- `visibility`: Whether the affordance may be shown for text input views.
 
 
 ---

@@ -13,7 +13,7 @@ At times you may need to record a packet trace and then share it with Apple for 
 
 When you submit a packet trace in such situations, follow the instructions below to ensure that you’ve included all the relevant information.
 
-> **Note**:  These instructions are also useful if you’re investigating a problem reported by an advanced user and need them to send  a packet trace to further that investigation.
+> **Note**:  These instructions are also useful if you’re investigating a problem reported by an advanced user and need them to send *you* a packet trace to further that investigation.
 
 ##### Record the Trace
 

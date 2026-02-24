@@ -23,7 +23,7 @@ This method usually would not be called directly, since `NSTextView` itself will
 ## Parameters
 
 - `range`: The range to check.
-- `checkingTypes`: The type of checking to be performed, passed by-reference. The possible constants are listed in   and can be combined using the C bit-wise   operator to perform multiple checks at the same time.
+- `checkingTypes`: The type of checking to be performed, passed by-reference. The possible constants are listed in [`NSTextCheckingTypes`](https://developer.apple.com/documentation/Foundation/NSTextCheckingTypes) and can be combined using the C bit-wise `OR` operator to perform multiple checks at the same time.
 - `options`: A dictionary of values used during the checking process to perform. See Spell Checking Option Dictionary Keys for the supported values.
 
 ## See Also

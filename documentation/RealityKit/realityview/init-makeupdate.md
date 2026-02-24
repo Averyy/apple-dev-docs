@@ -33,8 +33,8 @@ RealityView { content in
 
 ## Parameters
 
-- `make`: An asynchronous closure that configures the   initial content of the new  .   This closure is asynchronous to keep your app’s UI responsive while   you load content to populate this view.
-- `update`: An optional closure that updates the    instance’s content as the view’s state changes.
+- `make`: An asynchronous closure that configures the initial content of the new `RealityView`. This closure is asynchronous to keep your app’s UI responsive while you load content to populate this view.
+- `update`: An optional closure that updates the `RealityView` instance’s content as the view’s state changes.
 
 
 ---

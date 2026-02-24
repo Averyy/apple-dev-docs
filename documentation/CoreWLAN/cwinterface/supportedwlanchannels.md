@@ -16,7 +16,7 @@ func supportedWLANChannels() -> Set<CWChannel>?
 
 #### Discussion
 
-Dynamically queries the interface for the supported channels. Returns an array of CWChannel objects, or 
+Dynamically queries the interface for the supported channels. Returns an array of CWChannel objects, or *nil in the case of an error.*
 
 ## See Also
 

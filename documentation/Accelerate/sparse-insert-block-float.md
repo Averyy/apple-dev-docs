@@ -34,12 +34,12 @@ Note that matrix properties cannot be modified after value insertion begins.This
 
 ## Parameters
 
-- `A`: The sparse matrix,  ,_ _which must have been created with   or  .   is returned if not met.   holds block dimensions (fixed or variable) set with matrix object creation routine.
-- `val`: Pointer to block to be inserted at block index location  . The block is of dimension   where   and   are set for   at object creation time. The strides between elements for rows and columns are provided in   and  .
-- `row_stride`: The row stride in number of elements to move from one row to the next for the block  .
-- `col_stride`: The column stride in number of elements to move from one column to the next for the block  .
-- `bi`: The block row index where   is to be inserted. Indexing is zero based, the first block is located at  .  Index is assumed to be within the bounds of the matrix object, undefined behavior if not met.
-- `bj`: The block column index where   is to be inserted. Indexing is zero based, the first block is located at  .  Index is assumed to be within the bounds of the matrix object, undefined behavior if not met.
+- `A`: The sparse matrix, *A*,_ _which must have been created with [`sparse_matrix_block_create_float(_:_:_:_:)`](sparse_matrix_block_create_float(_:_:_:_:).md) or [`sparse_matrix_variable_block_create_float(_:_:_:_:)`](sparse_matrix_variable_block_create_float(_:_:_:_:).md). [`SPARSE_ILLEGAL_PARAMETER`](sparse_illegal_parameter.md) is returned if not met. `A` holds block dimensions (fixed or variable) set with matrix object creation routine.
+- `val`: Pointer to block to be inserted at block index location `A[bi,bj]`. The block is of dimension `k * l` where `k` and `l` are set for `bi,bj` at object creation time. The strides between elements for rows and columns are provided in `row_stride` and `col_stride`.
+- `row_stride`: The row stride in number of elements to move from one row to the next for the block `val`.
+- `col_stride`: The column stride in number of elements to move from one column to the next for the block `val`.
+- `bi`: The block row index where `val` is to be inserted. Indexing is zero based, the first block is located at `0,0`.  Index is assumed to be within the bounds of the matrix object, undefined behavior if not met.
+- `bj`: The block column index where `val` is to be inserted. Indexing is zero based, the first block is located at `0,0`.  Index is assumed to be within the bounds of the matrix object, undefined behavior if not met.
 
 ## See Also
 

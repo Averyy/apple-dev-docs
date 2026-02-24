@@ -26,7 +26,7 @@ Depending on the length of the arc, this method may add multiple connected curve
 - `radius`: Specifies the radius of the circle used to define the arc.
 - `startAngle`: Specifies the starting angle of the arc, measured in degrees counterclockwise from the x-axis.
 - `endAngle`: Specifies the end angle of the arc, measured in degrees counterclockwise from the x-axis.
-- `clockwise`:   if you want the arc to be drawn in a clockwise direction; otherwise   to draw the arc in a counterclockwise direction.
+- `clockwise`: [`true`](https://developer.apple.com/documentation/Swift/true) if you want the arc to be drawn in a clockwise direction; otherwise [`false`](https://developer.apple.com/documentation/Swift/false) to draw the arc in a counterclockwise direction.
 
 ## See Also
 

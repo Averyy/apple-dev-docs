@@ -22,9 +22,11 @@ This method displays the sheet modally on the specified window and returns contr
 
 - `sheet`: The window object representing the sheet you want to display.
 - `docWindow`: The window object to which you want to attach the sheet.
-- `modalDelegate`: The delegate object that defines your   method. If  , the method in   is not called.
-- `didEndSelector`: An optional method to call when the sheet’s modal session has ended. This method must be defined on the object in the   parameter and have the following signature:
-- `contextInfo`: A pointer to the context info you want passed to the   method when the sheet’s modal session ends.
+- `modalDelegate`: The delegate object that defines your `didEndSelector` method. If `nil`, the method in `didEndSelector` is not called.
+- `didEndSelector`: An optional method to call when the sheet’s modal session has ended. This method must be defined on the object in the `modalDelegate` parameter and have the following signature: ```objc
+- (void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo;
+```
+- `contextInfo`: A pointer to the context info you want passed to the `didEndSelector` method when the sheet’s modal session ends.
 
 ## See Also
 

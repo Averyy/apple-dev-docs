@@ -25,8 +25,8 @@ init(allowsExtendedAttributes: Bool = false, interpretedSyntax: AttributedString
 - `allowsExtendedAttributes`: A Boolean value that indicates whether parsing allows extensions to Markdown that specify extended attributes.
 - `interpretedSyntax`: The syntax for intepreting a Markdown string.
 - `failurePolicy`: The policy for handling a parsing failure.
-- `languageCode`: The   language code for this document.
-- `appliesSourcePositionAttributes`: A Boolean value that indicates whether parsing applies attributes that indicate the position of attribute text in the original Markdown string. If this value is  , the resulting string may contain attributes of type  .
+- `languageCode`: The [`BCP-47`](https://developer.apple.comhttps://tools.ietf.org/search/bcp47) language code for this document.
+- `appliesSourcePositionAttributes`: A Boolean value that indicates whether parsing applies attributes that indicate the position of attribute text in the original Markdown string. If this value is `true`, the resulting string may contain attributes of type [`AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute`](attributescopes/foundationattributes/markdownsourcepositionattribute.md).
 
 ## See Also
 

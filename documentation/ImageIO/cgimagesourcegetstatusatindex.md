@@ -31,7 +31,7 @@ Status information is particularly informative for incremental image sources, bu
 ## Parameters
 
 - `isrc`: The image source that contains the image data.
-- `index`: The zero-based index into the images of the image source. If the index is invalid, this method returns  .
+- `index`: The zero-based index into the images of the image source. If the index is invalid, this method returns `NULL`.
 
 ## See Also
 

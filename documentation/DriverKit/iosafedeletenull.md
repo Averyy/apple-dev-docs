@@ -23,7 +23,7 @@ Use this macro to free memory that you allocated with [`IONew`](ionew.md) or [`I
 
 ## Parameters
 
-- `ptr`: The pointer to the memory block to free. You may specify   for this parameter. After freeing the memory, the macro sets the value of   to  .
+- `ptr`: The pointer to the memory block to free. You may specify `NULL` for this parameter. After freeing the memory, the macro sets the value of `ptr` to `NULL`.
 - `type`: The data type stored in the memory block. The macro uses the type to determine its size.
 - `count`: The number of array entries in the memory block
 

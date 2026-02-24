@@ -30,6 +30,18 @@ This action can only be executed by a [`SKSpriteNode`](skspritenode.md) object. 
 
 This action is reversible; the reverse is created as if the following code is executed:
 
+**Swift**:
+
+```swift
+let action = SKAction.resize(byWidth: -width, height: -height, duration: sec)
+```
+
+**Obj-C**:
+
+```objc
+[SKAction resizeByWidth: -width height: -height duration: sec];
+```
+
 ## Parameters
 
 - `width`: The amount to add to the sprite’s width.

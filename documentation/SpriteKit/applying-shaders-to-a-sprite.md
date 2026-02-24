@@ -10,6 +10,24 @@ You can use the [`shader`](skspritenode/shader.md) property of a sprite node to 
 
 The following code shows a small custom shader which inverts the color of a texture while leaving the alpha or transparency unaffected:
 
+**Swift**:
+
+```swift
+let negativeShader = SKShader(source: "void main() { " +
+    "    gl_FragColor = vec4(1.0 - SKDefaultShading().rgb, SKDefaultShading().a); " +
+    "}")
+rocket.shader = negativeShader
+```
+
+**Obj-C**:
+
+```objc
+void main() {
+
+    gl_FragColor = vec4(1.0 - SKDefaultShading().rgb, SKDefaultShading().a);
+}
+```
+
 The following figure illustrates the effect of the shader. The original image, on the left, has its colors inverted by the shader:
 
 ![Example of a color inverted sprite](https://docs-assets.developer.apple.com/published/76d703dd22169b7ddbe4bb0b0de38a55/media-2983067%402x.png)

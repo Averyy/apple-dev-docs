@@ -25,6 +25,12 @@ object ManageAssetsRequest
 - [object Asset](asset.md)
   A product in the store.
 
+## Properties
+
+- `assets` ([Asset]) *(required)*: The set of `adamId` and `pricingParam values`.
+- `clientUserIds` ([string]): The set of identifiers for users in your organization.
+- `serialNumbers` ([string]): The set of identifiers for devices in your organization.
+
 ## See Also
 
 - [object EventResponse](eventresponse.md)

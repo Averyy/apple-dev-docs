@@ -24,7 +24,7 @@ A new trait collection containing only a specified vertical size class trait.
 
 ## Parameters
 
-- `verticalSizeClass`: A   value specifying the vertical size class for the new trait collection.
+- `verticalSizeClass`: A [`UIUserInterfaceSizeClass`](uiuserinterfacesizeclass.md) value specifying the vertical size class for the new trait collection.
 
 ## See Also
 

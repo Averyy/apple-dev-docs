@@ -25,8 +25,9 @@ The maximum amount of data to be saved is 512K. The `lastModifiedDate` and `last
 
 ## Parameters
 
-- `data`: A   object containing the information to be saved.
-- `completionHandler`: A block that is called after the data has been saved.
+- `data`: A `Data` object containing the information to be saved.
+- `completionHandler`: A block that is called after the data has been saved. - **data**: A `Data` object containing the information that is currently saved on the server.
+- **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is nil. See `GameKit Constants` for a list of error codes specific to GameKit.
 
 ## See Also
 

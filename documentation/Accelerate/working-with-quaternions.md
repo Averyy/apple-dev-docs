@@ -6,7 +6,7 @@ Rotate points around the surface of a sphere, and interpolate between them.
 
 #### Overview
 
-Quaternions are defined by a scalar () part, and three imaginary parts collectively called the  part. Quaternions are often used in graphics programming as a compact representation of the rotation of an object in three dimensions.
+Quaternions are defined by a scalar (*real*) part, and three imaginary parts collectively called the *vector* part. Quaternions are often used in graphics programming as a compact representation of the rotation of an object in three dimensions.
 
 The length of a quaternion is the square root of the sum of the squares of its components. For example, consider a quaternion specified by the following code:
 
@@ -19,7 +19,7 @@ let r = 9.0
 let q = simd_quatd(ix: ix, iy: iy, iz: iz, r: r)
 ```
 
-The length of the quaternion can be calculated manually with `sqrt(ix*ix + iy*iy + iz*iz + r*r)`, or more simply accessed through its [`length`](https://developer.apple.com/documentation/simd/simd_quatd/length) property. Quaternions with a length of one are called  and can represent rotations in 3D space. You can easily convert a nonunit quaternion representing a rotation into a unit quaternion by normalizing its axes. The following code shows `q1`, which contains rotations around all three axes with a length greater than 1, and `q2`, which contains the same rotation but has a length of 1 and is, therefore, suitable for applying a rotation to a 3D coordinate:
+The length of the quaternion can be calculated manually with `sqrt(ix*ix + iy*iy + iz*iz + r*r)`, or more simply accessed through its [`length`](https://developer.apple.com/documentation/simd/simd_quatd/length) property. Quaternions with a length of one are called *unit quaternions* and can represent rotations in 3D space. You can easily convert a nonunit quaternion representing a rotation into a unit quaternion by normalizing its axes. The following code shows `q1`, which contains rotations around all three axes with a length greater than 1, and `q2`, which contains the same rotation but has a length of 1 and is, therefore, suitable for applying a rotation to a 3D coordinate:
 
 ```swift
 let axis = simd_double3(x: -2,
@@ -60,7 +60,7 @@ let quaternion = simd_quatf(angle: degreesToRadians(-60),
                                               z: 0))
 ```
 
-The rotation of the vector by a quaternion is known as an ; to apply the rotation to `originVector`, you call the [`act(_:)`](https://developer.apple.com/documentation/simd/simd_quatf/act(_:)) method:
+The rotation of the vector by a quaternion is known as an *action*; to apply the rotation to `originVector`, you call the [`act(_:)`](https://developer.apple.com/documentation/simd/simd_quatf/act(_:)) method:
 
 ```swift
 let rotatedVector = quaternion.act(originVector)

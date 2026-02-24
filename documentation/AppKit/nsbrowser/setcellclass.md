@@ -16,7 +16,7 @@ func setCellClass(_ factoryId: AnyClass)
 
 ## Parameters
 
-- `factoryId`: The class of   used by the matrices in the columns of the browser. This method creates an instance of the class and sets  .
+- `factoryId`: The class of `NSCell` used by the matrices in the columns of the browser. This method creates an instance of the class and sets [`cellPrototype`](nsbrowser/cellprototype.md).
 
 ## See Also
 

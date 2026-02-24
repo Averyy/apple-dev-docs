@@ -24,6 +24,14 @@ struct SecureField<Label> where Label : View
 
 Use a secure field when you want the behavior of a [`TextField`](textfield.md), but you want to hide the field’s text. Typically, you use this for entering passwords and other sensitive information, as the second field in the following screenshot demonstrates:
 
+**macOS**:
+
+![Two vertically arranged wide rectangles filled with text. The first displays the email address mruiz2@icloud.com, and the second displays eight heavey dots in place of characters.](https://docs-assets.developer.apple.com/published/ae5d950964a34e81a8448848bb74e14d/SecureField-1-macOS%402x.png)
+
+**iOS**:
+
+![Two vertically arranged wide rectangles filled with text. The first displays the email address mruiz2@icloud.com, and the second displays eight heavey dots in place of characters.](https://docs-assets.developer.apple.com/published/b005abd1fae6bfcd5d225ef853d47256/SecureField-1-iOS%402x.png)
+
 The field:
 
 - Displays one dot for each character someone types.
@@ -80,7 +88,23 @@ Form {
 
 The system uses the label and prompt in different ways depending on the context. For example, a form in macOS places the label against the leading edge of the field and uses the prompt as placeholder text inside the field. The same form in iOS also uses the prompt as placeholder text, but doesn’t display the label:
 
+**macOS**:
+
+![Two vertically wide rectangles filled with the string Required. The string appears in a secondary color. The word Username appear to the left of the top rectangle, and the word Password appears to the left of the bottom rectangle. The two words are right aligned with each other.](https://docs-assets.developer.apple.com/published/296607c061298a20b1ad3b3a085af8d8/SecureField-2-macOS%402x.png)
+
+**iOS**:
+
+![A wide rectangle that's divided in half vertically by a horizontal dividing line. The two halves of the rectangle, both top and bottom, have the word Required in them. The words are aligned with each other, and appear near the left side of the rectangle. The words and the dividing line appear in a light gray color.](https://docs-assets.developer.apple.com/published/fec1e2e17e854fbd26f70ddc31e26639/SecureField-2-iOS%402x.png)
+
 If you remove the prompt from the previous example, the field keeps the label on the leading edge and omits the placeholder text in macOS, but displays the label as a placeholder in iOS:
+
+**macOS**:
+
+![Two vertically wide, empty rectangles. The word Username appear to the left of the top rectangle, and the word Password appears to the left of the bottom rectangle. The two words are right aligned with each other.](https://docs-assets.developer.apple.com/published/5856a36e006964f4462c33c2126488b3/SecureField-3-macOS%402x.png)
+
+**iOS**:
+
+![A wide rectangle that's divided in half vertically by a horizontal dividing line. The two halves of the rectangle, both top and bottom, have a word in them. The top half has the word Username, and the bottom half has the word Password. The words are aligned with each other, and appear near the left side of the rectangle. The words and the dividing line appear in a light gray color.](https://docs-assets.developer.apple.com/published/ede35164d5472a633838019b9070c4be/SecureField-3-iOS%402x.png)
 
 ## Topics
 

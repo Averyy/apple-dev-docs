@@ -19,6 +19,10 @@ A dictionary that contains a managed app’s configuration items.
 object ManagedApplicationConfigurationResponse.ApplicationConfigurationsItem.Configuration
 ```
 
+## Properties
+
+- `ANY` (any): The app’s configuration items.
+
 
 ---
 

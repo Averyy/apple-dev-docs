@@ -29,7 +29,7 @@ The returned value can be used as the value for [`columnTerminators`](nstexttab/
 
 ## Parameters
 
-- `aLocale`: The locale to use when determining the terminators. Specify   to use the system’s current locale. You can get the user’s locale using the   method of  .
+- `aLocale`: The locale to use when determining the terminators. Specify `nil` to use the system’s current locale. You can get the user’s locale using the [`current`](https://developer.apple.com/documentation/Foundation/NSLocale/current) method of [`NSLocale`](https://developer.apple.com/documentation/Foundation/NSLocale).
 
 ## See Also
 

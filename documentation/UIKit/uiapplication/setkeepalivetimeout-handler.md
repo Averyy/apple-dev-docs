@@ -33,7 +33,7 @@ For calls to this method to succeed, the app must have the `voip` value in the a
 ## Parameters
 
 - `timeout`: The maximum interval (measured in seconds) at which your app should be woken up to check its VoIP connection. The minimum acceptable timeout value is 600 seconds.
-- `keepAliveHandler`: A block that performs the tasks needed to maintain your VoIP network connection. Setting this parameter to   releases the current handler block and prevents UIKit from scheduling the next wake.
+- `keepAliveHandler`: A block that performs the tasks needed to maintain your VoIP network connection. Setting this parameter to `nil` releases the current handler block and prevents UIKit from scheduling the next wake.
 
 ## See Also
 

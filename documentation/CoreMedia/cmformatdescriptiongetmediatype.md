@@ -30,7 +30,7 @@ For example, this function returns [`kCMMediaType_Audio`](kcmmediatype_audio.md)
 
 ## Parameters
 
-- `desc`: A   to examine.
+- `desc`: A `CMFormatDescription` to examine.
 
 ## See Also
 

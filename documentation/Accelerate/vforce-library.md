@@ -188,13 +188,13 @@ let y = [Float](unsafeUninitializedCapacity: n) { buffer, initializedCount in
   Calculates the next machine-representable value for each element in an array of single-precision values.
 ### Array-Oriented Exponential and Logarithmic Functions
 - [static func exp<U>(U) -> [Double]](vforce/exp(_:)-76nrd.md)
-  Returns the , raised to the power of each element in a vector of double-precision values.
+  Returns the *e*, raised to the power of each element in a vector of double-precision values.
 - [static func exp<U>(U) -> [Float]](vforce/exp(_:)-5iaun.md)
-  Returns the , raised to the power of each element in a vector of single-precision values.
+  Returns the *e*, raised to the power of each element in a vector of single-precision values.
 - [static func exp<U, V>(U, result: inout V)](vforce/exp(_:result:)-34nxw.md)
-  Calculates the , raised to the power of each element in a vector of double-precision values.
+  Calculates the *e*, raised to the power of each element in a vector of double-precision values.
 - [static func exp<U, V>(U, result: inout V)](vforce/exp(_:result:)-4k85n.md)
-  Calculates the , raised to the power of each element in a vector of single-precision values.
+  Calculates the *e*, raised to the power of each element in a vector of single-precision values.
 - [static func exp2<U>(U) -> [Double]](vforce/exp2(_:)-2m5q.md)
   Returns the 2, raised to the power of each element in a vector of double-precision values.
 - [static func exp2<U>(U) -> [Float]](vforce/exp2(_:)-4mm9y.md)
@@ -204,13 +204,13 @@ let y = [Float](unsafeUninitializedCapacity: n) { buffer, initializedCount in
 - [static func exp2<U, V>(U, result: inout V)](vforce/exp2(_:result:)-8m564.md)
   Calculates the 2, raised to the power of each element in a vector of single-precision values.
 - [static func expm1<U>(U) -> [Double]](vforce/expm1(_:)-xkzx.md)
-  Returns the  for each element in a vector of double-precision values.
+  Returns the *eˣ-1* for each element in a vector of double-precision values.
 - [static func expm1<U>(U) -> [Float]](vforce/expm1(_:)-mfq5.md)
-  Returns the  for each element in a vector of single-precision values.
+  Returns the *eˣ-1* for each element in a vector of single-precision values.
 - [static func expm1<U, V>(U, result: inout V)](vforce/expm1(_:result:)-4dpl4.md)
-  Calculates the  for each element in a vector of double-precision values.
+  Calculates the *eˣ-1* for each element in a vector of double-precision values.
 - [static func expm1<U, V>(U, result: inout V)](vforce/expm1(_:result:)-2yhs3.md)
-  Calculates the  for each element in a vector of single-precision values.
+  Calculates the *eˣ-1* for each element in a vector of single-precision values.
 - [static func log10<U>(U) -> [Double]](vforce/log10(_:)-9wr68.md)
   Returns the base 10 logarithm of each element in a vector of double-precision values.
 - [static func log<U>(U) -> [Double]](vforce/log(_:)-2gh9a.md)
@@ -222,13 +222,13 @@ let y = [Float](unsafeUninitializedCapacity: n) { buffer, initializedCount in
 - [static func log<U, V>(U, result: inout V)](vforce/log(_:result:)-4k52e.md)
   Calculates the natural logarithm for each element in a vector of single-precision values.
 - [static func log1p<U>(U) -> [Double]](vforce/log1p(_:)-5admq.md)
-  Returns  for each element in a vector of double-precision values.
+  Returns *log(1+x)* for each element in a vector of double-precision values.
 - [static func log1p<U>(U) -> [Float]](vforce/log1p(_:)-3wn9e.md)
-  Returns  for each element in a vector of single-precision values.
+  Returns *log(1+x)* for each element in a vector of single-precision values.
 - [static func log1p<U, V>(U, result: inout V)](vforce/log1p(_:result:)-8kk0n.md)
-  Calculates  for each element in a vector of double-precision values.
+  Calculates *log(1+x)* for each element in a vector of double-precision values.
 - [static func log1p<U, V>(U, result: inout V)](vforce/log1p(_:result:)-5ckl.md)
-  Calculates  for each element in a vector of single-precision values.
+  Calculates *log(1+x)* for each element in a vector of single-precision values.
 - [static func log10<U>(U) -> [Float]](vforce/log10(_:)-81jwh.md)
   Returns the base 10 logarithm of each element in a vector of single-precision values.
 - [static func log10<U, V>(U, result: inout V)](vforce/log10(_:result:)-3j9cp.md)
@@ -252,25 +252,25 @@ let y = [Float](unsafeUninitializedCapacity: n) { buffer, initializedCount in
 - [static func logb<U, V>(U, result: inout V)](vforce/logb(_:result:)-1m3o3.md)
   Calculates the unbiased exponent of each element in a vector of single-precision values.
 - [func vvexp(UnsafeMutablePointer<Double>, UnsafePointer<Double>, UnsafePointer<Int32>)](vvexp(_:_:_:).md)
-  Calculates  raised to the power of each element in an array of double-precision values.
+  Calculates *e* raised to the power of each element in an array of double-precision values.
 - [func vvexpf(UnsafeMutablePointer<Float>, UnsafePointer<Float>, UnsafePointer<Int32>)](vvexpf(_:_:_:).md)
-  Calculates  raised to the power of each element in an array of single-precision values.
+  Calculates *e* raised to the power of each element in an array of single-precision values.
 - [func vvexp2(UnsafeMutablePointer<Double>, UnsafePointer<Double>, UnsafePointer<Int32>)](vvexp2(_:_:_:).md)
   Calculates 2 raised to the power of each element in an array of double-precision values.
 - [func vvexp2f(UnsafeMutablePointer<Float>, UnsafePointer<Float>, UnsafePointer<Int32>)](vvexp2f(_:_:_:).md)
   Calculates 2 raised to the power of each element in an array of single-precision values.
 - [func vvexpm1(UnsafeMutablePointer<Double>, UnsafePointer<Double>, UnsafePointer<Int32>)](vvexpm1(_:_:_:).md)
-  Calculates  for each element in an array of double-precision values.
+  Calculates *eˣ-1* for each element in an array of double-precision values.
 - [func vvexpm1f(UnsafeMutablePointer<Float>, UnsafePointer<Float>, UnsafePointer<Int32>)](vvexpm1f(_:_:_:).md)
-  Calculates  for each element in an array of single-precision values.
+  Calculates *eˣ-1* for each element in an array of single-precision values.
 - [func vvlog(UnsafeMutablePointer<Double>, UnsafePointer<Double>, UnsafePointer<Int32>)](vvlog(_:_:_:).md)
   Calculates the natural logarithm for each element in an array of double-precision values.
 - [func vvlogf(UnsafeMutablePointer<Float>, UnsafePointer<Float>, UnsafePointer<Int32>)](vvlogf(_:_:_:).md)
   Calculates the natural logarithm for each element in an array of single-precision values.
 - [func vvlog1p(UnsafeMutablePointer<Double>, UnsafePointer<Double>, UnsafePointer<Int32>)](vvlog1p(_:_:_:).md)
-  Calculates  for each element in an array of double-precision values.
+  Calculates *log(1+x)* for each element in an array of double-precision values.
 - [func vvlog1pf(UnsafeMutablePointer<Float>, UnsafePointer<Float>, UnsafePointer<Int32>)](vvlog1pf(_:_:_:).md)
-  Calculates  for each element in an array of single-precision values.
+  Calculates *log(1+x)* for each element in an array of single-precision values.
 - [func vvlog2(UnsafeMutablePointer<Double>, UnsafePointer<Double>, UnsafePointer<Int32>)](vvlog2(_:_:_:).md)
   Calculates the base 2 logarithm of each element in an array of double-precision values.
 - [func vvlog2f(UnsafeMutablePointer<Float>, UnsafePointer<Float>, UnsafePointer<Int32>)](vvlog2f(_:_:_:).md)

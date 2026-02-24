@@ -26,7 +26,7 @@ Use this initializer to resolve [`URLResource`](urlresource.md) instances, possi
 
 ## Parameters
 
-- `resource`: A   that provides a reference to a resource in a given bundle.
+- `resource`: A [`URLResource`](urlresource.md) that provides a reference to a resource in a given bundle.
 
 
 ---

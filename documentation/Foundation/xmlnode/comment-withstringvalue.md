@@ -21,7 +21,7 @@ An [`XMLNode`](xmlnode.md) object representing an comment node ([`XMLNode.Kind.c
 
 ## Parameters
 
-- `stringValue`: A string specifying the text of the comment. You may specify   or an empty string (see Return Value).
+- `stringValue`: A string specifying the text of the comment. You may specify `nil` or an empty string (see Return Value).
 
 ## See Also
 

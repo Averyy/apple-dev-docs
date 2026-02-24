@@ -29,9 +29,9 @@ Additionally, you are responsible for ensuring both the source and destination s
 
 ## Parameters
 
-- `sourceBuffer`: The source placement sparse  .
-- `destinationBuffer`: The destination placement sparse  .
-- `operations`: An array of   instances to perform.
+- `sourceBuffer`: The source placement sparse [`MTLBuffer`](mtlbuffer.md).
+- `destinationBuffer`: The destination placement sparse [`MTLBuffer`](mtlbuffer.md).
+- `operations`: An array of [`MTL4CopySparseBufferMappingOperation`](mtl4copysparsebuffermappingoperation.md) instances to perform.
 
 
 ---

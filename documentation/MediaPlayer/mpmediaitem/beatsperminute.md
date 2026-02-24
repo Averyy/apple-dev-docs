@@ -31,7 +31,7 @@ This property corresponds to the “BPM” field in the Info tab in the Get Info
 - [var albumPersistentID: MPMediaEntityPersistentID](mpmediaitem/albumpersistentid.md)
   The persistent identifier for an album.
 - [var albumTitle: String?](mpmediaitem/albumtitle.md)
-  The title of an album, such as , rather than the title of an individual song on the album, such as “Crater Dance.”
+  The title of an album, such as *Live on Mars*, rather than the title of an individual song on the album, such as “Crater Dance.”
 - [var albumTrackCount: Int](mpmediaitem/albumtrackcount.md)
   The number of tracks for the album that contains the media item.
 - [var albumTrackNumber: Int](mpmediaitem/albumtracknumber.md)

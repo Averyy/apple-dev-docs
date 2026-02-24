@@ -20,7 +20,7 @@ Automatic link detection causes strings representing URLs typed in the view to b
 
 ## Parameters
 
-- `sender`: The control sending the message; may be  .
+- `sender`: The control sending the message; may be `nil`.
 
 ## See Also
 

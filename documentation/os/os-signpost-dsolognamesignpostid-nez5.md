@@ -25,9 +25,9 @@ func os_signpost(_ animationBegin: OSSignpostAnimationBegin, dso: UnsafeRawPoint
 - `animationBegin`: The type of animation signpost to create.
 - `log`: The log object to write the signpost to.
 - `name`: The name of the signpost.
-- `signpostID`: A signpost identifier you use to disambiguate between signposts with the same name. If you specify   or   for this parameter, this method does nothing.
+- `signpostID`: A signpost identifier you use to disambiguate between signposts with the same name. If you specify [`invalid`](ossignpostid/invalid.md) or [`null`](ossignpostid/null.md) for this parameter, this method does nothing.
 - `format`: A constant string or format string that produces a human-readable log message.
-- `arguments`: Additional arguments to substitute into the   string parameter. Pass the expected number of arguments in the order that they appear in the string. If   is a constant string, don’t include any additional arguments.
+- `arguments`: Additional arguments to substitute into the `format` string parameter. Pass the expected number of arguments in the order that they appear in the string. If `format` is a constant string, don’t include any additional arguments.
 
 ## See Also
 

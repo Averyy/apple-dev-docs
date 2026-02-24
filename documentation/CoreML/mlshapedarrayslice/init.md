@@ -28,7 +28,7 @@ Mutating operations trigger copy-on-write. Non-mutating operations access the `M
 
 ## Parameters
 
-- `multiArray`: The   object.
+- `multiArray`: The `MLMultiArray` object.
 
 ## See Also
 

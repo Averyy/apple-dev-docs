@@ -33,7 +33,7 @@ Note that [`compression_stream_destroy(_:)`](compression_stream_destroy(_:).md) 
 
 ## Parameters
 
-- `stream`: A pointer to an allocated and initialized   structure.
+- `stream`: A pointer to an allocated and initialized [`compression_stream`](compression_stream.md) structure.
 
 ## See Also
 

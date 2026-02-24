@@ -34,8 +34,8 @@ The default implementation would return outputRect.
 ## Parameters
 
 - `inputIndex`: The index that tells you which processor input for which to return the ROI rectangle.
-- `arguments`: The arguments dictionary that was passed to  .
-- `outputRect`: The output   that processor will be asked to output.
+- `arguments`: The arguments dictionary that was passed to [`apply(withExtent:inputs:arguments:)`](ciimageprocessorkernel/apply(withextent:inputs:arguments:).md).
+- `outputRect`: The output `CGRect` that processor will be asked to output.
 
 ## See Also
 

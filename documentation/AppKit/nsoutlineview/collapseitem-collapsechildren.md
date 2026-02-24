@@ -22,8 +22,8 @@ For each item collapsed, posts an item collapsed notification.
 
 ## Parameters
 
-- `item`: Starting in OS X version 10.5,  passing   will collapse each item under the root in the outline view.
-- `collapseChildren`: If  , recursively collapses   and its children. If  , collapses   only (identical to  ).
+- `item`: An item in the receiver. Starting in OS X version 10.5,  passing `'nil'` will collapse each item under the root in the outline view.
+- `collapseChildren`: If [`true`](https://developer.apple.com/documentation/Swift/true), recursively collapses `item` and its children. If [`false`](https://developer.apple.com/documentation/Swift/false), collapses `item` only (identical to [`collapseItem(_:)`](nsoutlineview/collapseitem(_:).md)).
 
 ## See Also
 

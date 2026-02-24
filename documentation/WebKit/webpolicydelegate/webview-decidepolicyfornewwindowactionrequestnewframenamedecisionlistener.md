@@ -22,11 +22,11 @@ The default behavior sends [`use()`](webpolicydecisionlistener/use().md) to `lis
 
 ## Parameters
 
-- `webView`: The   object for which this object is the policy delegate.
-- `actionInformation`: A description of the action that triggered the navigation request. The possible key-value pairs in this dictionary are defined in  .
+- `webView`: The `WebView` object for which this object is the policy delegate.
+- `actionInformation`: A description of the action that triggered the navigation request. The possible key-value pairs in this dictionary are defined in `Making content decisions`.
 - `request`: The request for which the new window action is performed.
 - `frameName`: The name of the new frame that contains the content returned from the request.
-- `listener`: The   object that receives the policy decision.
+- `listener`: The `WebPolicyDecisionListener` object that receives the policy decision.
 
 
 ---

@@ -88,11 +88,11 @@ The following image shows the source image, on the left, and the contents of `de
 ## Parameters
 
 - `colorConversionInfoRef`: The object that describes how to convert between color spaces.
-- `sFormat`: A pointer to a populated   that describes the image format of the source image.
-- `dFormat`: A pointer to a populated   that describes the image format of the destination image.
+- `sFormat`: A pointer to a populated [`vImage_CGImageFormat`](vimage_cgimageformat.md) that describes the image format of the source image.
+- `dFormat`: A pointer to a populated [`vImage_CGImageFormat`](vimage_cgimageformat.md) that describes the image format of the destination image.
 - `bg`: An array of single-precision values, in the range 0 to 1, that specifies the background color when required.
 - `flags`: The options to use when performing this operation.
-- `error`: An optional   value that receives an error code.
+- `error`: An optional `inout` value that receives an error code.
 
 ## See Also
 

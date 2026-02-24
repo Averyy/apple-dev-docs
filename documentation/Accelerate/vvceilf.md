@@ -24,7 +24,35 @@ func vvceilf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: UnsafeP
 
 ##### Parameters
 
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
 The following code shows an example of using [`vvceilf(_:_:_:)`](vvceilf(_:_:_:).md).
+
+**Swift**:
+
+```swift
+var x: [Float] = [1.2, 5.5, 3.9, 26.0]
+var y = [Float](repeating: 0, count: x.count)
+var n = Int32(x.count)
+
+vvceilf(&y, &x, &n)
+
+print(y) // [2.0, 6.0, 4.0, 26.0]
+```
+
+**Objective-C**:
+
+```objc
+float x[] = {1.2, 5.5, 3.9, 26.0};
+float y[4];
+int n = 4;
+
+vvceilf(y, x, &n);
+
+NSLog(@"y: [%lf, %lf, %lf, %lf]", y[0], y[1], y[2], y[3]);
+```
 
 ## See Also
 

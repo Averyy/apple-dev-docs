@@ -22,7 +22,7 @@ convenience init(contentsOf url: URL) throws
 
 ## Parameters
 
-- `url`: The location of the   Core ML model file in the file system (ending with  ) that’s the basis for this natural language model.
+- `url`: The location of the *compiled* Core ML model file in the file system (ending with `.mlmodelc`) that’s the basis for this natural language model.
 
 ## See Also
 

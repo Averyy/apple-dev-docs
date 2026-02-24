@@ -23,7 +23,7 @@ If this method isn’t used, the standard input is inherited from the process th
 
 ## Parameters
 
-- `file`: The standard input for the receiver, which can be either an   or an   object.
+- `file`: The standard input for the receiver, which can be either an [`FileHandle`](filehandle.md) or an [`Pipe`](pipe.md) object.
 
 ## See Also
 

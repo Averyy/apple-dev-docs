@@ -19,8 +19,8 @@ init(issuerData: Data, signature: Data) throws
 
 ## Parameters
 
-- `issuerData`: The   object that represents the issuer data.
-- `signature`: The   object that represents the issuer’s signature.
+- `issuerData`: The [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object that represents the issuer data.
+- `signature`: The [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object that represents the issuer’s signature.
 
 ## See Also
 

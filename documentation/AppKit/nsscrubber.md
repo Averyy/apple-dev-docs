@@ -25,16 +25,16 @@ Refer to the following sample code projects which demonstrate how to use [`NSTou
 
 Each item that appears in a scrubber is a specialized view that supports selection and scrubber-appropriate decorations. The scrubber keeps track of its items by their index positions.
 
-> **Note**:  Take care to understand the Touch Bar term . An item for a scrubber  a view — an [`NSScrubberItemView`](nsscrubberitemview.md) instance — at a specific index position in the scrubber. This is analogous to a row in a table. An item for a bar (an instance of the [`NSTouchBar`](nstouchbar.md) class), by contrast, is an [`NSTouchBarItem`](nstouchbaritem.md) instance, which  a view.
+> **Note**:  Take care to understand the Touch Bar term *items*. An item for a scrubber *is* a view — an [`NSScrubberItemView`](nsscrubberitemview.md) instance — at a specific index position in the scrubber. This is analogous to a row in a table. An item for a bar (an instance of the [`NSTouchBar`](nstouchbar.md) class), by contrast, is an [`NSTouchBarItem`](nstouchbaritem.md) instance, which *has* a view.
 
 There are many classes in the scrubber API, as well as a delegate protocol, a data source protocol, and a callback-based layout API. The design pattern is reminiscent of that used for a collection view (an instance of the [`NSCollectionView`](nscollectionview.md) class). You might find it helpful to refer to the [`NSCollectionView`](nscollectionview.md) overview for background. Be aware, though of the differences. For example, while scrubbers and collection views both employ a [`makeItem(withIdentifier:owner:)`](nsscrubber/makeitem(withidentifier:owner:).md) method, and both employ a reuse queue, a scrubber is subclassed from the [`NSView`](nsview.md) class while a collection view is subclassed from the [`NSViewController`](nsviewcontroller.md) class.
 
 A scrubber employs:
 
-- The  itself (an instance of the [`NSScrubber`](nsscrubber.md) class), which serves as a container view that shows a subview for each scrubber item, and which employs a reuse-queue pattern for efficiency and performance.
-- A  (conforming to the [`NSScrubberDataSource`](nsscrubberdatasource.md) protocol), which provides scrubber items to the scrubber, on demand, from an associated data collection in your app. Specify the data source in the scrubber’s [`dataSource`](nsscrubber/datasource.md) property
-- A  (conforming to the [`NSScrubberDelegate`](nsscrubberdelegate.md) protocol), which responds to user interaction — such as with its [`didBeginInteracting(with:)`](nsscrubberdelegate/didbegininteracting(with:).md) and [`didCancelInteracting(with:)`](nsscrubberdelegate/didcancelinteracting(with:).md) methods. Specify the delegate in the scrubber’s [`delegate`](nsscrubber/delegate.md) property. You can also use the delegate to respond to the highlighting and selection of scrubber items, and to respond to changes in which items are visible in the scrubber.
-- A  (an instance of a subclass of the [`NSScrubberLayout`](nsscrubberlayout.md) abstract class, typically the [`NSScrubberFlowLayout`](nsscrubberflowlayout.md) concrete subclass). You implement a layout to respond to calls, from the system, to return view specifications for the items to be displayed in the scrubber. The layout, in this way, assists in arranging and decorating the scrubber’s contained items, and in providing appearance changes in response to user interaction. Specify the layout in the scrubber’s [`scrubberLayout`](nsscrubber/scrubberlayout.md) property.
+- The *scrubber object* itself (an instance of the [`NSScrubber`](nsscrubber.md) class), which serves as a container view that shows a subview for each scrubber item, and which employs a reuse-queue pattern for efficiency and performance.
+- A *data source* (conforming to the [`NSScrubberDataSource`](nsscrubberdatasource.md) protocol), which provides scrubber items to the scrubber, on demand, from an associated data collection in your app. Specify the data source in the scrubber’s [`dataSource`](nsscrubber/datasource.md) property
+- A *delegate* (conforming to the [`NSScrubberDelegate`](nsscrubberdelegate.md) protocol), which responds to user interaction — such as with its [`didBeginInteracting(with:)`](nsscrubberdelegate/didbegininteracting(with:).md) and [`didCancelInteracting(with:)`](nsscrubberdelegate/didcancelinteracting(with:).md) methods. Specify the delegate in the scrubber’s [`delegate`](nsscrubber/delegate.md) property. You can also use the delegate to respond to the highlighting and selection of scrubber items, and to respond to changes in which items are visible in the scrubber.
+- A *layout* (an instance of a subclass of the [`NSScrubberLayout`](nsscrubberlayout.md) abstract class, typically the [`NSScrubberFlowLayout`](nsscrubberflowlayout.md) concrete subclass). You implement a layout to respond to calls, from the system, to return view specifications for the items to be displayed in the scrubber. The layout, in this way, assists in arranging and decorating the scrubber’s contained items, and in providing appearance changes in response to user interaction. Specify the layout in the scrubber’s [`scrubberLayout`](nsscrubber/scrubberlayout.md) property.
 
 Before learning how to use a scrubber in the Touch Bar, be sure you read the overview for the [`NSTouchBar`](nstouchbar.md) class.
 
@@ -42,17 +42,72 @@ Before learning how to use a scrubber in the Touch Bar, be sure you read the ove
 
 A scrubber employs a data source and a delegate, using a pattern similar to that used for collection views, as follows:
 
- To supply items for a scrubber, implement an object that conforms to the [`NSScrubberDataSource`](nsscrubberdatasource.md) protocol and specify that object in the scrubber’s [`dataSource`](nsscrubber/datasource.md) property. There are two built-in item types, provided by the [`NSScrubberTextItemView`](nsscrubbertextitemview.md) and [`NSScrubberImageItemView`](nsscrubberimageitemview.md) concrete classes. For more on scrubber items, see [`Scrubber items`](nsscrubber#Scrubber-items.md).
+**Data source.** To supply items for a scrubber, implement an object that conforms to the [`NSScrubberDataSource`](nsscrubberdatasource.md) protocol and specify that object in the scrubber’s [`dataSource`](nsscrubber/datasource.md) property. There are two built-in item types, provided by the [`NSScrubberTextItemView`](nsscrubbertextitemview.md) and [`NSScrubberImageItemView`](nsscrubberimageitemview.md) concrete classes. For more on scrubber items, see [`Scrubber items`](nsscrubber#Scrubber-items.md).
 
 The following code shows an example implementation of the [`numberOfItems`](nsscrubber/numberofitems.md) datasource method, returning the count of items displayed by the scrubber.
 
+**Swift**:
+
+```swift
+func numberOfItems(for scrubber: NSScrubber) -> Int {
+   return self.scrubberItems.count;
+}
+```
+
+**Objective-C**:
+
+```objc
+- (NSInteger)numberOfItemsForScrubber:(NSScrubber *)theScrubber {
+   return self.scrubberItems.count;
+}
+
+```
+
 In addition to the count of scrubber items, you use the datasource method to provide individual items with the [`scrubber(_:viewForItemAt:)`](nsscrubberdatasource/scrubber(_:viewforitemat:).md) method. An example implementation is shown in the following code.
+
+**Swift**:
+
+```swift
+func scrubber(_ scrubber: NSScrubber, viewForItemAt index: Int) -> NSScrubberItemView {    let itemView = scrubber.makeItem(withIdentifier: "TextScrubberItemIdentifier", owner: self) as! NSScrubberTextItemView
+    itemView.title = String(index)
+    return itemView
+}
+```
+
+**Objective-C**:
+
+```objc
+- (NSScrubberItemView *)scrubber:(NSScrubber *)theScrubber viewForItemAtIndex:(NSInteger)index {
+    NSScrubberTextItemView *itemView = [scrubber makeItemWithIdentifier:textScrubberItemIdentifier owner:self];
+    if (index < 10) {
+        itemView.title = [@(index) stringValue];
+    }
+    return itemView;
+}
+```
 
 To optimize resource usage and performance, a scrubber employs a reuse queue that’s similar to the reuse queue for an [`NSCollectionView`](nscollectionview.md) object.
 
- To respond to user interactions and to visibility, highlighting, and selection changes, implement a delegate object that conforms to the [`NSScrubberDelegate`](nsscrubberdelegate.md) protocol and specify that object in the scrubber’s [`delegate`](nsscrubber/delegate.md) property.
+**Delegate.** To respond to user interactions and to visibility, highlighting, and selection changes, implement a delegate object that conforms to the [`NSScrubberDelegate`](nsscrubberdelegate.md) protocol and specify that object in the scrubber’s [`delegate`](nsscrubber/delegate.md) property.
 
 The following code shows a minimal implementation of the [`scrubber(_:didSelectItemAt:)`](nsscrubberdelegate/scrubber(_:didselectitemat:).md) delegate method for a scrubber.
+
+**Swift**:
+
+```swift
+func scrubber(_ scrubber: NSScrubber, didSelectItemAt index: Int) {
+    // Log the index value for the item the user selected
+    print("\(#function) at index \(index)")
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)scrubber:(NSScrubber *)scrubber didSelectItemAtIndex:(NSInteger)selectedIndex {
+    // Log the index value for the item the user selected    NSLog(@"selectedIndex = %ld", selectedIndex);
+}
+```
 
 ##### Choose a Scrubber Touch Interaction Model
 
@@ -60,23 +115,23 @@ A scrubber offers many built-in permutations for touch interaction. By subclassi
 
 To specify a scrubber’s touch-interaction model, set values for the following, cooperating scrubber properties: [`mode`](nsscrubber/mode-swift.property.md), [`isContinuous`](nsscrubber/iscontinuous.md), and [`itemAlignment`](nsscrubber/itemalignment.md). Here’s how to choose the right permutation of values for these properties:
 
- Decide whether you want the scrubber to  to track horizontal finger movement across the scrubber, or to remain  in place as the finger moves.
+**Scrolling or fixed.** Decide whether you want the scrubber to *scroll* to track horizontal finger movement across the scrubber, or to remain *fixed* in place as the finger moves.
 
 - For scrolling, specify the [`NSScrubber.Mode.free`](nsscrubber/mode-swift.enum/free.md) value for the scrubber’s [`mode`](nsscrubber/mode-swift.property.md) property.
 - For a fixed scrubber, specify the [`NSScrubber.Mode.fixed`](nsscrubber/mode-swift.enum/fixed.md) value for the [`mode`](nsscrubber/mode-swift.property.md) property (this is the default value). In this case, if the user’s finger reaches the left or right edge of the scrubber view and there are items beyond the edge, the scrubber automatically scrolls to bring those items into view.
 
- Decide whether you want item selection to take place only upon a deliberate selection gesture, or continuously during horizontal finger movement on the scrubber.
+**Selection style.** Decide whether you want item selection to take place only upon a deliberate selection gesture, or continuously during horizontal finger movement on the scrubber.
 
-- For deliberate selection, specify a value of [`false`](https://developer.apple.com/documentation/Swift/false) for the scrubber’s [`isContinuous`](nsscrubber/iscontinuous.md) property (this is the default value). In  (scrolling) mode, the user must then tap an item to highlight and select it. In  (non-scrolling) mode, ending interaction with the scrubber, by lifting the finger, selects the most-recently highlighted item. However, if there is already a highlighted item before interaction starts, and the user resumes interacting with the (fixed mode) scrubber on that item, selection changes continuously, tracking the user’s finger — even though the [`isContinuous`](nsscrubber/iscontinuous.md) property value is [`false`](https://developer.apple.com/documentation/Swift/false).
+- For deliberate selection, specify a value of [`false`](https://developer.apple.com/documentation/Swift/false) for the scrubber’s [`isContinuous`](nsscrubber/iscontinuous.md) property (this is the default value). In *free* (scrolling) mode, the user must then tap an item to highlight and select it. In *fixed* (non-scrolling) mode, ending interaction with the scrubber, by lifting the finger, selects the most-recently highlighted item. However, if there is already a highlighted item before interaction starts, and the user resumes interacting with the (fixed mode) scrubber on that item, selection changes continuously, tracking the user’s finger — even though the [`isContinuous`](nsscrubber/iscontinuous.md) property value is [`false`](https://developer.apple.com/documentation/Swift/false).
 - For continuous selection, specify a value of [`true`](https://developer.apple.com/documentation/Swift/true) for the [`isContinuous`](nsscrubber/iscontinuous.md) property. Item selection behavior then depends on the [`mode`](nsscrubber/mode-swift.property.md) and [`itemAlignment`](nsscrubber/itemalignment.md) property values, as described in [`Position-based scrubber item selection`](nsscrubber#Position-based-scrubber-item-selection.md).
 
- The setting in the scrubber’s [`itemAlignment`](nsscrubber/itemalignment.md) property affects two things: 1) item highlighting and selection, and 2) the resting position of scrubber items after manual or automatic scrolling. Available values for this property are [`NSScrubber.Alignment.leading`](nsscrubber/alignment/leading.md), [`NSScrubber.Alignment.center`](nsscrubber/alignment/center.md), [`NSScrubber.Alignment.trailing`](nsscrubber/alignment/trailing.md), and [`NSScrubber.Alignment.none`](nsscrubber/alignment/none.md). See the [`NSScrubber.Alignment`](nsscrubber/alignment.md) enumeration for details on how these constants work.
+**Item alignment.** The setting in the scrubber’s [`itemAlignment`](nsscrubber/itemalignment.md) property affects two things: 1) item highlighting and selection, and 2) the resting position of scrubber items after manual or automatic scrolling. Available values for this property are [`NSScrubber.Alignment.leading`](nsscrubber/alignment/leading.md), [`NSScrubber.Alignment.center`](nsscrubber/alignment/center.md), [`NSScrubber.Alignment.trailing`](nsscrubber/alignment/trailing.md), and [`NSScrubber.Alignment.none`](nsscrubber/alignment/none.md). See the [`NSScrubber.Alignment`](nsscrubber/alignment.md) enumeration for details on how these constants work.
 
 Your choices for scrolling, selection, and alignment jointly impact highlighting and selection behavior. For details on highlighting and selection, see [`Position-based scrubber item selection`](nsscrubber#Position-based-scrubber-item-selection.md). Your choice for alignment also impacts scrubber-item resting-position behavior following a scroll interaction. For details on resting position, see [`Scrubber item resting position`](nsscrubber#Scrubber-item-resting-position.md).
 
 ##### Position Based Scrubber Item Selection
 
-In free mode with continuous selection style (the [`mode`](nsscrubber/mode-swift.property.md) property value is [`NSScrubber.Mode.free`](nsscrubber/mode-swift.enum/free.md) and the [`isContinuous`](nsscrubber/iscontinuous.md) property value is `YES` for this configuration), the scrubber item on the alignment axis is automatically highlighted and selected. The  is the left edge, right edge, or center of the scrubber, as you specify by setting the value of the [`itemAlignment`](nsscrubber/itemalignment.md) property using constants from the [`NSScrubber.Alignment`](nsscrubber/alignment.md) enumeration. Specifying an alignment axis of [`NSScrubber.Alignment.none`](nsscrubber/alignment/none.md) is equivalent to a value of [`NSScrubber.Alignment.center`](nsscrubber/alignment/center.md) for position-based item selection.
+In free mode with continuous selection style (the [`mode`](nsscrubber/mode-swift.property.md) property value is [`NSScrubber.Mode.free`](nsscrubber/mode-swift.enum/free.md) and the [`isContinuous`](nsscrubber/iscontinuous.md) property value is `YES` for this configuration), the scrubber item on the alignment axis is automatically highlighted and selected. The *alignment axis* is the left edge, right edge, or center of the scrubber, as you specify by setting the value of the [`itemAlignment`](nsscrubber/itemalignment.md) property using constants from the [`NSScrubber.Alignment`](nsscrubber/alignment.md) enumeration. Specifying an alignment axis of [`NSScrubber.Alignment.none`](nsscrubber/alignment/none.md) is equivalent to a value of [`NSScrubber.Alignment.center`](nsscrubber/alignment/center.md) for position-based item selection.
 
 In free mode with deliberate selection style (the [`mode`](nsscrubber/mode-swift.property.md) property value is [`NSScrubber.Mode.free`](nsscrubber/mode-swift.enum/free.md) and the [`isContinuous`](nsscrubber/iscontinuous.md) property value is `NO` for this configuration), the system ignores the [`itemAlignment`](nsscrubber/itemalignment.md) property value in terms of item selection.
 
@@ -99,13 +154,13 @@ A scrubber configures the views for its items with the help of two classes, [`NS
 
 ###### Layout Implementation
 
-A  is a concrete implementation of the [`NSScrubberLayout`](nsscrubberlayout.md) abstract class. AppKit provides two concrete, preconfigured layout subclasses: [`NSScrubberFlowLayout`](nsscrubberflowlayout.md) and [`NSScrubberProportionalLayout`](nsscrubberproportionallayout.md). If you use one of these built-in layout types, there’s no additional layout code to write, apart from adding your choice of built-in layout to the scrubber’s [`scrubberLayout`](nsscrubber/scrubberlayout.md) property. This Swift example shows this simple step for the flow layout:
+A *layout* is a concrete implementation of the [`NSScrubberLayout`](nsscrubberlayout.md) abstract class. AppKit provides two concrete, preconfigured layout subclasses: [`NSScrubberFlowLayout`](nsscrubberflowlayout.md) and [`NSScrubberProportionalLayout`](nsscrubberproportionallayout.md). If you use one of these built-in layout types, there’s no additional layout code to write, apart from adding your choice of built-in layout to the scrubber’s [`scrubberLayout`](nsscrubber/scrubberlayout.md) property. This Swift example shows this simple step for the flow layout:
 
 ```swift
 myInformationScrubber.scrubberLayout = NSScrubberFlowLayout()
 ```
 
-To create a custom layout, subclass the [`NSScrubberLayout`](nsscrubberlayout.md) class and implement its callback methods. Unlike a view delegate (such as used for a table view), which provides  on demand, scrubber layout callbacks provide  on demand. Using these callbacks, you specify:
+To create a custom layout, subclass the [`NSScrubberLayout`](nsscrubberlayout.md) class and implement its callback methods. Unlike a view delegate (such as used for a table view), which provides *views* on demand, scrubber layout callbacks provide *view specifications* on demand. Using these callbacks, you specify:
 
 - Scrubber item geometry
 - Scrubber item appearance
@@ -119,8 +174,8 @@ Specify the geometry and appearance for items in your custom scrubber, using the
 
 | Callback method | How to use |
 | --- | --- |
-| [`layoutAttributesForItem(at:)`](nsscrubberlayout/layoutattributesforitem(at:).md) | Return  [`NSScrubberLayoutAttributes`](nsscrubberlayoutattributes.md) instance that specifies the view attribute values for the one scrubber item at the index position requested by the system in the method call. |
-| [`layoutAttributesForItems(in:)`](nsscrubberlayout/layoutattributesforitems(in:).md) | Return the  [`NSScrubberLayoutAttributes`](nsscrubberlayoutattributes.md) instances that, together, specify the per-item view attributes for the items within the visible rectangle requested by the system in the method call. The set you return must contain one layout attributes object for each item in the rectangle. |
+| [`layoutAttributesForItem(at:)`](nsscrubberlayout/layoutattributesforitem(at:).md) | Return *one* [`NSScrubberLayoutAttributes`](nsscrubberlayoutattributes.md) instance that specifies the view attribute values for the one scrubber item at the index position requested by the system in the method call. |
+| [`layoutAttributesForItems(in:)`](nsscrubberlayout/layoutattributesforitems(in:).md) | Return the *set of* [`NSScrubberLayoutAttributes`](nsscrubberlayoutattributes.md) instances that, together, specify the per-item view attributes for the items within the visible rectangle requested by the system in the method call. The set you return must contain one layout attributes object for each item in the rectangle. |
 
 You can explicitly invalidate a layout by calling the [`invalidateLayout()`](nsscrubberlayout/invalidatelayout().md) method. Do this whenever your app changes a scrubber’s information in a way that requires a layout update. For example, if you change the text shown in one or more items, invalidate the layout.
 
@@ -130,7 +185,7 @@ You can specify layout life cycle in terms of the conditions under which a layou
 - [`shouldInvalidateLayoutForHighlightChange`](nsscrubberlayout/shouldinvalidatelayoutforhighlightchange.md)
 - [`shouldInvalidateLayoutForChange(fromVisibleRect:toVisibleRect:)`](nsscrubberlayout/shouldinvalidatelayoutforchange(fromvisiblerect:tovisiblerect:).md)
 
-For example, if you design a scrubber’s layout characteristics to depend on which of its items is selected by the user, return a value of [`true`](https://developer.apple.com/documentation/Swift/true) from the scrubber’s [`shouldInvalidateLayoutForSelectionChange`](nsscrubberlayout/shouldinvalidatelayoutforselectionchange.md) method.A  object is an instance of the [`NSScrubberLayoutAttributes`](nsscrubberlayoutattributes.md) class, which you configure to describe the view for a single item. The class offers the following built-in attributes for you to work with:
+For example, if you design a scrubber’s layout characteristics to depend on which of its items is selected by the user, return a value of [`true`](https://developer.apple.com/documentation/Swift/true) from the scrubber’s [`shouldInvalidateLayoutForSelectionChange`](nsscrubberlayout/shouldinvalidatelayoutforselectionchange.md) method.A *layout attributes* object is an instance of the [`NSScrubberLayoutAttributes`](nsscrubberlayoutattributes.md) class, which you configure to describe the view for a single item. The class offers the following built-in attributes for you to work with:
 
 - [`itemIndex`](nsscrubberlayoutattributes/itemindex.md) — The item’s index position within the scrubber
 - [`frame`](nsscrubberlayoutattributes/frame.md) — The item’s frame rectangle

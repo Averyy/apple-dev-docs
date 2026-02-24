@@ -26,8 +26,8 @@ convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, d
 - `output`: The descriptor of the output.
 - `dictionary`: The descriptor of the dictionary array.
 - `paddingIndex`: The padding index. The operation returns a zero tensor for dictionary items with an index that corresponds to the padding index.
-- `maximumNorm`: The maximum norm. If nonzero, the operation renormalizes any vector with a norm greater than   during forward lookups
-- `normType`: The norm type. If   is nonzero, this value specifies the p-norm where p equals  .
+- `maximumNorm`: The maximum norm. If nonzero, the operation renormalizes any vector with a norm greater than `maximumNorm` during forward lookups
+- `normType`: The norm type. If `normType` is nonzero, this value specifies the p-norm where p equals `norm_type`.
 - `scalesGradientByFrequency`: A Boolean value that specifies that the operation scales calculated gradients based on the number of occurrence of the corresponding index in the input.
 - `filterParameters`: The filter runtime parameters.
 

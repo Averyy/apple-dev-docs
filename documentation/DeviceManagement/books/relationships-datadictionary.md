@@ -18,6 +18,10 @@ object Books.Relationships
 ### Related Objects
 - [object Books.Relationships.BooksGenresRelationship](books/relationships-data.dictionary/booksgenresrelationship.md)
 
+## Properties
+
+- `genres` (Books.Relationships.BooksGenresRelationship)
+
 ## See Also
 
 - [object Books.Attributes](books/attributes-data.dictionary.md)

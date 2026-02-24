@@ -26,7 +26,7 @@ Use `ManagedAudioChannelLayout(tag:)` if no `AudioChannelDescription` are needed
 
 ## Parameters
 
-- `maximumDescriptions`: The maximum number of    this   can hold.   This must be greater than  .
+- `maximumDescriptions`: The maximum number of `AudioChannelDescription` this `ManagedAudioChannelLayout` can hold. This must be greater than `0`.
 
 
 ---

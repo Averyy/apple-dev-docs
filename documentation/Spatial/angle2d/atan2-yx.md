@@ -22,8 +22,8 @@ static func atan2(y: Double, x: Double) -> Angle2D
 
 ## Parameters
 
-- `y`: The source   value.
-- `x`: The source   value
+- `y`: The source `y` value.
+- `x`: The source `z` value
 
 ## See Also
 

@@ -25,7 +25,7 @@ The function creates a session for transferring images between [`CVPixelBuffer`]
 
 ## Parameters
 
-- `allocator`: An allocator for the session.  Pass   to use the default allocator.
+- `allocator`: An allocator for the session.  Pass `NULL` to use the default allocator.
 - `pixelTransferSessionOut`: Points to a variable to receive the new pixel transfer session.
 
 

@@ -26,8 +26,10 @@ An expression that filters a collection using the specified Block.
 
 ## Parameters
 
-- `block`: The Block returns the  .
-- `arguments`: See   for a complete list of arguments.
+- `block`: The Block is applied to the object to be evaluated. The Block takes three arguments and returns a value: - **evaluatedObject**: The object to be evaluated.
+- **expressions**: An array of predicate expressions that evaluates to a collection.
+- **context**: A dictionary that the expression can use to store temporary state for one predicate evaluation. Note that `context` is mutable, and that it can only be accessed during the evaluation of the expression. You must not attempt to retain it for use elsewhere. ] The Block returns the `evaluatedObject`.
+- `arguments`: An array containing `NSExpression` objects that will be used as parameters during the invocation of selector. For a selector taking no parameters, the array should be empty. For a selector taking one or more parameters, the array should contain one `NSExpression` object which will evaluate to an instance of the appropriate type for each parameter. If there is a mismatch between the number of parameters expected and the number you provide during evaluation, an exception may be raised or missing parameters may simply be replaced by `nil` (which occurs depends on how many parameters are provided, and whether you have over- or underflow). See [`init(forFunction:arguments:)`](nsexpression/init(forfunction:arguments:).md) for a complete list of arguments.
 
 ## See Also
 

@@ -22,7 +22,7 @@ struct SparseMatrix_Float
 
 #### Overview
 
-You typically use sparse matrices to represent the sparse coefficient matrix in the matrix equation  A [`SparseMatrix_Float`](sparsematrix_float.md) structure provides a pointer to its underlying data, and information about its structure and attributes.
+You typically use sparse matrices to represent the sparse coefficient matrix in the matrix equation *Ax = b.* A [`SparseMatrix_Float`](sparsematrix_float.md) structure provides a pointer to its underlying data, and information about its structure and attributes.
 
 The Accelerate framework uses the compressed sparse column (CSC) format to store sparse matrices. CSC stores the matrix as a series of column vectors that specifies only the nonzero entries as `(row-index, value)` pairs. For more information, see [`Creating sparse matrices`](creating-sparse-matrices.md).
 

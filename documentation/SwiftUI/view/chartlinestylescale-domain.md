@@ -23,7 +23,7 @@ func chartLineStyleScale<Domain>(domain: Domain) -> some View where Domain : Sca
 
 ## Parameters
 
-- `domain`: The possible data values plotted as line   styles in the chart. You can define the domain with an array for   categorical values (e.g.,  )
+- `domain`: The possible data values plotted as line styles in the chart. You can define the domain with an array for categorical values (e.g., `["A", "B", "C"]`)
 
 ## See Also
 

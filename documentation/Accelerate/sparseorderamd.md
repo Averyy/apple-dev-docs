@@ -22,7 +22,7 @@ var SparseOrderAMD: SparseOrder_t { get }
 
 #### Discussion
 
-There’s a large overhead cost if you use this for QR-based factorization due to explicit formation of .
+There’s a large overhead cost if you use this for QR-based factorization due to explicit formation of *AᵀA*.
 
 ## See Also
 
@@ -35,7 +35,7 @@ There’s a large overhead cost if you use this for QR-based factorization due t
 - [var SparseOrderMTMetis: SparseOrder_t](sparseordermtmetis.md)
   Specifies type of fill-reducing ordering.
 - [var SparseOrderCOLAMD: SparseOrder_t](sparseordercolamd.md)
-  The column AMD ordering for .
+  The column AMD ordering for *AᵀA*.
 
 
 ---

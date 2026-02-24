@@ -24,12 +24,12 @@ This method is invoked automatically by [`underlineGlyphRange(_:underlineType:li
 
 ## Parameters
 
-- `glyphRange`: A range of glyphs, which must belong to a single line fragment rectangle (as returned by  ).
-- `underlineVal`: The style of underlining to draw. This value is a mask derived from the value for  —for example,  . Subclasses can define custom underlining styles.
+- `glyphRange`: A range of glyphs, which must belong to a single line fragment rectangle (as returned by [`lineFragmentRect(forGlyphAt:effectiveRange:)`](nslayoutmanager/linefragmentrect(forglyphat:effectiverange:).md)).
+- `underlineVal`: The style of underlining to draw. This value is a mask derived from the value for [`NSUnderlineStyleAttributeName`](nsunderlinestyleattributename.md)—for example, `(NSUnderlinePatternDash | NSUnderlineStyleThick)`. Subclasses can define custom underlining styles.
 - `baselineOffset`: Specifies the distance from the bottom of the bounding box of the specified glyphs in the specified range to their baseline.
 - `lineRect`: The line fragment rectangle containing the glyphs to draw underlining for.
-- `lineGlyphRange`: The range of all glyphs within  .
-- `containerOrigin`: The origin of the   in its  .
+- `lineGlyphRange`: The range of all glyphs within `lineRect`.
+- `containerOrigin`: The origin of the `lineRectNSTextContainer` in its `NSTextView`.
 
 ## See Also
 

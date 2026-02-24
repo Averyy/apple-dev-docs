@@ -30,7 +30,7 @@ For more information about using heaps, see [`Memory heaps`](memory-heaps.md).
 
 ## Parameters
 
-- `descriptor`: An   instance.
+- `descriptor`: An [`MTLHeapDescriptor`](mtlheapdescriptor.md) instance.
 
 ## See Also
 

@@ -9,6 +9,10 @@ The entitlement the system requires for an app to use the Wi-Fi Infrastructure f
 - iOS 26.2+
 - iPadOS 26.2+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 This entitlement works with the Wi-Fi Infrastructure framework, which enables your app and accessory to share Wi-Fi networks from the host device.

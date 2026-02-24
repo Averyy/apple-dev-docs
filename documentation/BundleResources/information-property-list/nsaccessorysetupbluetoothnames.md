@@ -9,6 +9,10 @@ An array of strings that represent the Bluetooth device names or substrings for 
 - iOS 18.0+
 - iPadOS 18.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 Each entry is a full or partial name which the accessory advertises and helps AccessorySetupKit identify it.

@@ -17,17 +17,17 @@ struct FFCONDITION
 
 #### Overview
 
-Used with the SPRING, DAMPER, INERTIA, and FRICTION effects.A pointer to an array of FFCONDITION structures for an effect is passed in the  member of the FFEFFECT structure. The number of elements in the array must be either one, or equal to the number of axes associated with the effect.
+Used with the SPRING, DAMPER, INERTIA, and FRICTION effects.A pointer to an array of FFCONDITION structures for an effect is passed in the **lpvTypeSpecificParams** member of the FFEFFECT structure. The number of elements in the array must be either one, or equal to the number of axes associated with the effect.
 
-Different types of conditions interpret the parameters differently, but the basic idea is that force resulting from a condition is equal to  where  is a scaling coefficient,  is some metric, and  is the neutral value for that metric.
+Different types of conditions interpret the parameters differently, but the basic idea is that force resulting from a condition is equal to *A(q - q0)* where *A* is a scaling coefficient, *q* is some metric, and *q0* is the neutral value for that metric.
 
-The preceding simplified formula must be adjusted if a nonzero deadband is provided. If the metric is less than , the resulting force is given by the following formula:
+The preceding simplified formula must be adjusted if a nonzero deadband is provided. If the metric is less than **lOffset - lDeadBand**, the resulting force is given by the following formula:
 
- =  * ( - ())
+*force* = **lNegativeCoefficient** * (*q* - (**lOffset - lDeadBand**))
 
-Similarly, if the metric is greater than , the resulting force is given by the following formula:
+Similarly, if the metric is greater than **lOffset + lDeadBand**, the resulting force is given by the following formula:
 
- =  * ( - ())
+*force* = **lPositiveCoefficient** * (*q* - (**lOffset + lDeadBand**))
 
 A spring condition uses axis position as the metric.
 
@@ -35,9 +35,9 @@ A damper condition uses axis velocity as the metric.
 
 An inertia condition uses axis acceleration as the metric.
 
-If the number of FFCONDITION structures in the array is equal to the number of axes for the effect, the first structure applies to the first axis, the second applies to the second axis, and so on. For example, a two-axis spring condition with  set to 0 in both FFCONDITION structures would have the same effect as the joystick self-centering spring. When a condition is defined for each axis in this way, the effect must not be rotated.
+If the number of FFCONDITION structures in the array is equal to the number of axes for the effect, the first structure applies to the first axis, the second applies to the second axis, and so on. For example, a two-axis spring condition with **lOffset** set to 0 in both FFCONDITION structures would have the same effect as the joystick self-centering spring. When a condition is defined for each axis in this way, the effect must not be rotated.
 
-If there is a single FFCONDITION structure for an effect with more than one axis, the direction along which the parameters of the FFCONDITION structure are in effect is determined by the direction parameters passed in the  field of the FFEFFECT structure. For example, a friction condition rotated 45 degrees (in polar coordinates) would resist joystick motion in the northeast-southwest direction but would have no effect on joystick motion in the northwest-southeast direction.
+If there is a single FFCONDITION structure for an effect with more than one axis, the direction along which the parameters of the FFCONDITION structure are in effect is determined by the direction parameters passed in the **rglDirection** field of the FFEFFECT structure. For example, a friction condition rotated 45 degrees (in polar coordinates) would resist joystick motion in the northeast-southwest direction but would have no effect on joystick motion in the northwest-southeast direction.
 
 ## Topics
 
@@ -50,7 +50,7 @@ If there is a single FFCONDITION structure for an effect with more than one axis
 - [var dwPositiveSaturation: DWORD](ffcondition/dwpositivesaturation.md)
   Maximum force output on the positive side of the offset, in the range from 0 through 10,000.
 - [var lDeadBand: LONG](ffcondition/ldeadband.md)
-  Region around  in which the condition is not active, in the range from 0 through 10,000. In other words, the condition is not active between  minus  and  plus .
+  Region around **lOffset** in which the condition is not active, in the range from 0 through 10,000. In other words, the condition is not active between **lOffset** minus **lDeadBand** and **lOffset** plus **lDeadBand**.
 - [var lNegativeCoefficient: LONG](ffcondition/lnegativecoefficient.md)
   Coefficient constant on the negative side of the offset, in the range from -10,000 through 10,000.
 - [var lOffset: LONG](ffcondition/loffset.md)

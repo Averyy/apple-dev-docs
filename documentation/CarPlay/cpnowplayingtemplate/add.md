@@ -18,7 +18,7 @@ func add(_ observer: any CPNowPlayingTemplateObserver)
 
 ## Parameters
 
-- `observer`: An object that implements the   protocol.
+- `observer`: An object that implements the [`CPNowPlayingTemplateObserver`](cpnowplayingtemplateobserver.md) protocol.
 
 ## See Also
 

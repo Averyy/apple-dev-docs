@@ -26,10 +26,10 @@ A BNNSFilter object representing a pooling filter configured with the specified 
 
 ## Parameters
 
-- `in_desc`: Pointer to a   struct describing the input
-- `out_desc`: Pointer to a   struct describing the output
-- `layer_params`: Pointer to a   struct describing the layer parameters
-- `filter_params`: Pointer to a   struct describing the filter parameters
+- `in_desc`: Pointer to a `BNNSImageStackDescriptor` struct describing the input
+- `out_desc`: Pointer to a `v` struct describing the output
+- `layer_params`: Pointer to a `BNNSPoolingLayerParameters` struct describing the layer parameters
+- `filter_params`: Pointer to a `BNNSFilterParameters` struct describing the filter parameters
 
 ## See Also
 

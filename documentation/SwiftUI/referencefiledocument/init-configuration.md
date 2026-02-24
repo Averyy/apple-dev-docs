@@ -37,7 +37,7 @@ The above example assumes that you define `Model` to contain the document’s da
 
 ## Parameters
 
-- `configuration`: Information about the file that you read   document data from.
+- `configuration`: Information about the file that you read document data from.
 
 ## See Also
 

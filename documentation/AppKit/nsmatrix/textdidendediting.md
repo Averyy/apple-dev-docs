@@ -20,7 +20,7 @@ This method’s default behavior is to post an [`textDidEndEditingNotification`]
 
 ## Parameters
 
-- `notification`: The   notification.
+- `notification`: The [`textDidEndEditingNotification`](nscontrol/textdidendeditingnotification.md) notification.
 
 ## See Also
 

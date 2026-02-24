@@ -30,7 +30,7 @@ When the peripheral discovers one or more services, it calls the [`peripheral(_:
 
 ## Parameters
 
-- `serviceUUIDs`: An array of   objects that you are interested in. Each   object represents a UUID that identifies the type of service you want to discover.
+- `serviceUUIDs`: An array of [`CBUUID`](cbuuid.md) objects that you are interested in. Each [`CBUUID`](cbuuid.md) object represents a UUID that identifies the type of service you want to discover.
 
 ## See Also
 

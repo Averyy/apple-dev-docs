@@ -30,9 +30,9 @@ A sample-specific [`CMSampleTimingInfo`](cmsampletiminginfo.md) struct will be r
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
-- `sampleIndex`: Sample index (0 is the first sample in  ).
-- `timingInfoOut`: On output, points to a single   struct to receive the timing info.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
+- `sampleIndex`: Sample index (0 is the first sample in `sbuf`).
+- `timingInfoOut`: On output, points to a single `CMSampleTimingInfo` struct to receive the timing info.
 
 ## See Also
 

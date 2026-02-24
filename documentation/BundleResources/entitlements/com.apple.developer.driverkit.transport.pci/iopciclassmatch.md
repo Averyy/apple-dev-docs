@@ -8,6 +8,10 @@ A key to match PCI devices by class code register.
 **Availability**:
 - macOS 10.15.4+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This value of this key matches the class code register (`0x08`). The default mask for this register is `0xffffff00`.

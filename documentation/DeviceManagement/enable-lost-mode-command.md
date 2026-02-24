@@ -27,6 +27,47 @@ Refer to the following sections to determine supported channels and requirements
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>Footnote</key>
+        <string>Return to Acme, Inc.</string>
+        <key>Message</key>
+        <string>Lock Message</string>
+        <key>PhoneNumber</key>
+        <string>408-555-555</string>
+        <key>RequestType</key>
+        <string>EnableLostMode</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_EnableLostMode</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_EnableLostMode</string>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>00008020-000915083C80012E</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -34,6 +75,10 @@ Refer to the following sections to determine supported channels and requirements
   The command to enable Lost Mode on a device, which provides a message and phone number on the Lock Screen.
 - [object EnableLostModeResponse](enablelostmoderesponse.md)
   A response from the device after it processes the command to enable Lost Mode on a device, which provides a message and phone number on the Lock Screen.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

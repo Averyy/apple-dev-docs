@@ -30,13 +30,13 @@ The caller owns the returned `CMFormatDescription`, and must release it when don
 
 ## Parameters
 
-- `allocator`: Allocator to be used for creating the   object.
-- `timeCodeFormatType`: One of the  .
-- `frameDuration`: Duration of each frame (e.g.  ).
+- `allocator`: Allocator to be used for creating the `CMFormatDescription` object.
+- `timeCodeFormatType`: One of the [`CMTimeCodeFormatType`](cmtimecodeformattype.md).
+- `frameDuration`: Duration of each frame (e.g. `100/2997`).
 - `frameQuanta`: Frames/sec for timecode (e.g. 30) OR frames/tick for counter mode.
-- `flags`:  ,  ,  . For possible values, see  .
-- `extensions`: Keys are always  . Values are always property list objects (i.e.  ). May be NULL.
-- `formatDescriptionOut`: Receives the newly-created  .
+- `flags`: `kCMTimeCodeFlag_DropFrame`, `kCMTimeCodeFlag_24HourMax`, `kCMTimeCodeFlag_NegTimesOK`. For possible values, see [`Video Profile Constants`](video-profile-constants.md).
+- `extensions`: Keys are always `CFStrings`. Values are always property list objects (i.e. `CFData`). May be NULL.
+- `formatDescriptionOut`: Receives the newly-created `CMFormatDescription`.
 
 ## See Also
 

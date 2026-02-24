@@ -10,6 +10,12 @@ A string containing the orientation of the image
 - iPadOS 7.0+
 - tvOS 9.0+
 
+
+
+**Type**: string
+
+**Default**: `Portrait`
+
 #### Discussion
 
 If it is not specified, the default orientation is `Portrait`.

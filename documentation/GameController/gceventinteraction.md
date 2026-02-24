@@ -17,6 +17,10 @@ An interaction that indicates the view’s intent to receive game controller eve
 class GCEventInteraction
 ```
 
+## Mentions
+
+- [Discovering game controllers](discovering-game-controllers.md)
+
 #### Overview
 
 On visionOS, users can interact with your app using a game controller. By default, the system converts game controller actions into pinch events and sends them to the view the user is gazing at, its gesture recognizers, and then up the responder chain.

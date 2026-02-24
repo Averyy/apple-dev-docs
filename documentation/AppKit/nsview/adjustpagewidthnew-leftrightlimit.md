@@ -22,10 +22,10 @@ The default implementation of this method propagates the message to its subviews
 
 ## Parameters
 
-- `newRight`: Returns by indirection a new   value for the right edge of the pending page rectangle in the view’s coordinate system.
-- `oldLeft`: A   value that sets the left edge of the pending page rectangle in the view’s coordinate system.
-- `oldRight`: A   value that sets the right edge of the pending page rectangle in the view’s coordinate system.
-- `rightLimit`: The leftmost   value   can be set to, as calculated using the value of the   property.
+- `newRight`: Returns by indirection a new [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) value for the right edge of the pending page rectangle in the view’s coordinate system.
+- `oldLeft`: A [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) value that sets the left edge of the pending page rectangle in the view’s coordinate system.
+- `oldRight`: A [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) value that sets the right edge of the pending page rectangle in the view’s coordinate system.
+- `rightLimit`: The leftmost [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) value `newRight` can be set to, as calculated using the value of the [`widthAdjustLimit`](nsview/widthadjustlimit.md) property.
 
 ## See Also
 

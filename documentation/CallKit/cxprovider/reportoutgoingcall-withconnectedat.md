@@ -25,7 +25,7 @@ An outgoing call should call this method after calling the [`reportOutgoingCall(
 ## Parameters
 
 - `UUID`: The unique identifier of the call.
-- `dateConnected`: If  , the current time is used.
+- `dateConnected`: The time at which the call connected. A call is considered connected when both caller and callee can start communicating. If `nil`, the current time is used.
 
 ## See Also
 

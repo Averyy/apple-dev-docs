@@ -15,7 +15,7 @@ typealias FFEffectStatusFlag = UInt32
 
 #### Discussion
 
-Effect Parameter flags for use in calls to .
+Effect Parameter flags for use in calls to **FFEffectGetEffectStatus()**.
 
 ## See Also
 

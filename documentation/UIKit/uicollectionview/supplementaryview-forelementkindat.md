@@ -24,8 +24,8 @@ The specified supplementary view, or `nil` if the view could not be found.
 
 ## Parameters
 
-- `elementKind`: The kind of supplementary view to locate. This value is defined by the layout object. This parameter must not be  .
-- `indexPath`: The index path of the supplementary view. This parameter must not be  .
+- `elementKind`: The kind of supplementary view to locate. This value is defined by the layout object. This parameter must not be `nil`.
+- `indexPath`: The index path of the supplementary view. This parameter must not be `nil`.
 
 ## See Also
 

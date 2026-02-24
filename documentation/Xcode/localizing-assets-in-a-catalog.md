@@ -6,7 +6,7 @@ Use asset catalogs to localize colors, images, symbols, watch complications, and
 
 #### Overview
 
-You use  to organize and manage different types of assets, such as images, sprites, textures, stickers, and data. Most types of assets can have multiple variations to support different device characteristics, including variations for the language and region settings.
+You use *asset catalogs* to organize and manage different types of assets, such as images, sprites, textures, stickers, and data. Most types of assets can have multiple variations to support different device characteristics, including variations for the language and region settings.
 
 You can localize certain types of asset catalogs and add localized versions of those assets directly to the catalog in Xcode.
 

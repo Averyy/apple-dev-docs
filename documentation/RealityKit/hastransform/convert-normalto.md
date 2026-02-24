@@ -26,8 +26,8 @@ The normal vector specified relative to `referenceEntity`.
 
 ## Parameters
 
-- `normal`: A vector perpendicular to a surface at a point, given in the   local space of the entity.
-- `referenceEntity`: The entity that defines a frame of reference. Set   this to   to indicate world space.
+- `normal`: A vector perpendicular to a surface at a point, given in the local space of the entity.
+- `referenceEntity`: The entity that defines a frame of reference. Set this to `nil` to indicate world space.
 
 ## See Also
 

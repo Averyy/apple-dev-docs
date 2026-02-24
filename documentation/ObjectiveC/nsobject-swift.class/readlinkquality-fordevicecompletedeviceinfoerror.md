@@ -19,7 +19,7 @@ This delegate gets invoked when an read link quality command complete event occu
 ## Parameters
 
 - `controller`: Controller object that sent this delegate message.
-- `device`: The   device.
+- `device`: The `IOBluetooth` device.
 - `info`: A pointer to the info.
 
 

@@ -11,6 +11,10 @@ A message that tells people why the app is requesting access to their contacts.
 - macOS 10.8+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the user’s contacts.

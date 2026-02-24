@@ -23,7 +23,7 @@ To rename a Wi-Fi SSID with this method, use the option [`ssid`](asaccessory/ren
 
 - `accessory`: The accessory to rename.
 - `renameOptions`: Options that affect the behavior of the rename operation.
-- `completionHandler`: A block or closure that executes after the rename operation completes. The completion handler receives an   instance if the rename operation encounters an error.
+- `completionHandler`: A block or closure that executes after the rename operation completes. The completion handler receives an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) instance if the rename operation encounters an error.
 
 ## See Also
 

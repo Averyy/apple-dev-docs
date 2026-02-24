@@ -9,6 +9,12 @@ A Boolean value that indicates whether an app can be the default navigation app 
 - iOS 18.4+
 - iPadOS 18.4+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 Add the Default Navigation entitlement to your app by following these steps:

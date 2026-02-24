@@ -44,6 +44,13 @@ Specify `com.apple.management.organization-info` as the declaration type.
 - [object ManagementOrganizationInformationProofObject](managementorganizationinformationproofobject.md)
   The additional properties that verify the identity and authenticity of the organization.
 
+## Properties
+
+- `Email` (string): The email address of the contact person for the organization.
+- `Name` (string) *(required)*: The name of the organization.
+- `Proof` (ManagementOrganizationInformationProofObject): The additional properties that verify the identity and authenticity of the organization.
+- `URL` (string): The website of the organization to contact for support.
+
 ## See Also
 
 - [object ManagementProperties](managementproperties.md)

@@ -10,6 +10,11 @@ The default type is `none`, which is synonymous with linear timing.
 
 ##### Ease Types
 
+- **`none`**: Paces the action at a constant rate.
+- **`in`**: Paces the action slower at the beginning.
+- **`out`**: Paces the action slower at the end.
+- **`inout`**: Paces the action slower at the beginning and end.
+
 ##### Declaration
 
 ```other

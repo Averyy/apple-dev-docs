@@ -25,7 +25,7 @@ An initialized `NSXMLDocument` object, or  `nil` if initialization fails because
 
 ## Parameters
 
-- `url`: An   object specifying a URL source.
+- `url`: An [`NSURL`](nsurl.md) object specifying a URL source.
 - `mask`: A bit mask for input options. You can specify multiple options by bit-OR’ing them. See Constants for a list of valid input options.
 
 ## See Also

@@ -31,7 +31,7 @@ Implementation of this method is optional but recommended.
 ## Parameters
 
 - `manager`: The location manager object that generated the update event.
-- `locations`: An array of   objects containing the location data. This array always contains at least one object representing the current location. If updates were deferred or if multiple locations arrived before they could be delivered, the array may contain additional entries. The objects in the array are organized in the order in which they occurred. Therefore, the most recent location update is at the end of the array.
+- `locations`: An array of [`CLLocation`](cllocation.md) objects containing the location data. This array always contains at least one object representing the current location. If updates were deferred or if multiple locations arrived before they could be delivered, the array may contain additional entries. The objects in the array are organized in the order in which they occurred. Therefore, the most recent location update is at the end of the array.
 
 ## Topics
 

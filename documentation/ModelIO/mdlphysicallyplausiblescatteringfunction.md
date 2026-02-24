@@ -21,7 +21,7 @@ class MDLPhysicallyPlausibleScatteringFunction
 
 #### Overview
 
-The set of material properties that define a material’s response to lighting is also called the , or BRDF, for surfaces shaded using that MDLMaterial object. The properties defined by this class, along with some properties inherited from the superclass [`MDLScatteringFunction`](mdlscatteringfunction.md), describe a shading model that more closely simulates real-world lighting physics than traditional shading models. (This shading model is similar to those used in recent game engines and feature films.)
+The set of material properties that define a material’s response to lighting is also called the *Bidirectional Reflectance Distribution Function*, or BRDF, for surfaces shaded using that MDLMaterial object. The properties defined by this class, along with some properties inherited from the superclass [`MDLScatteringFunction`](mdlscatteringfunction.md), describe a shading model that more closely simulates real-world lighting physics than traditional shading models. (This shading model is similar to those used in recent game engines and feature films.)
 
 The valid range for each material property in this shading function is `0.0` to `1.0`, inclusive. Creating a new scattering function object with the inherited [`init()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/init()) method creates a set of material properties with useful default values for this shading model.
 

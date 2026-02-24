@@ -9,6 +9,10 @@ A Boolean value indicating whether a custom keyboard displays standard ASCII cha
 - iOS 8.0+
 - iPadOS 8.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [IDMessageFilterExtensionNetworkURL](information-property-list/nsextension/nsextensionattributes/idmessagefilterextensionnetworkurl.md)

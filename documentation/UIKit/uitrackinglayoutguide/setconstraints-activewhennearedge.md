@@ -19,7 +19,7 @@ func setConstraints(_ trackingConstraints: [NSLayoutConstraint], activeWhenNearE
 
 ## Parameters
 
-- `trackingConstraints`: The constraints to activate when the tracking layout guide is close to  , and to deactivate when it moves away from  . If you pass  , the guide stops tracking the constraints associated with  .
+- `trackingConstraints`: The constraints to activate when the tracking layout guide is close to `edge`, and to deactivate when it moves away from `edge`. If you pass `nil`, the guide stops tracking the constraints associated with `edge`.
 - `edge`: The edge that the tracking layout guide uses to determine whether to activate or deactivate the constraints.
 
 ## See Also

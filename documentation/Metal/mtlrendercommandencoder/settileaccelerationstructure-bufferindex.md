@@ -26,8 +26,8 @@ By default, the acceleration structure at each index is `nil`.
 
 ## Parameters
 
-- `accelerationStructure`: An   instance the command assigns to an entry in the tile shader argument table for acceleration structures.
-- `bufferIndex`: An integer that represents the entry in the tile shader argument table for acceleration structures that stores a record of  .
+- `accelerationStructure`: An [`MTLAccelerationStructure`](mtlaccelerationstructure.md) instance the command assigns to an entry in the tile shader argument table for acceleration structures.
+- `bufferIndex`: An integer that represents the entry in the tile shader argument table for acceleration structures that stores a record of `accelerationStructure`.
 
 
 ---

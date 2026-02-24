@@ -24,10 +24,10 @@ It is safe to call this method from any thread of your app.
 
 ## Parameters
 
-- `bundleIdentifier`: A bundle identifier string. This value corresponds to the value in the   key of the app’s   file. For example, the bundle identifier of the TextEdit app is  .
-- `options`: Options to use when launching the app. Values for this parameter are described in  .
+- `bundleIdentifier`: A bundle identifier string. This value corresponds to the value in the `CFBundleIdentifier` key of the app’s `Info.plist` file. For example, the bundle identifier of the TextEdit app is `com.apple.TextEdit`.
+- `options`: Options to use when launching the app. Values for this parameter are described in [`NSWorkspace.LaunchOptions`](nsworkspace/launchoptions.md).
 - `descriptor`: Additional options specified in an AppleEvent-style descriptor. For example, you could use this parameter to specify additional documents to open when the app is launched.
-- `identifier`: The   are currently unused, and you should pass  .
+- `identifier`: The `launchIdentifiers` are currently unused, and you should pass `NULL`.
 
 ## See Also
 

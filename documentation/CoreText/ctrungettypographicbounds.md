@@ -27,10 +27,10 @@ The typographic width of the run, or if `run` or `range` is invalid, `0`.
 ## Parameters
 
 - `run`: The run for which to calculate the typographic bounds.
-- `range`: The portion of the run to measure. If the length of the range is set to  , then the measure operation continues from the range’s start index to the end of the run.
-- `ascent`: On output, the ascent of the run. This can be set to   if not needed.
-- `descent`: On output, the descent of the run. This can be set to   if not needed.
-- `leading`: On output, the leading of the run. This can be set to   if not needed.
+- `range`: The portion of the run to measure. If the length of the range is set to `0`, then the measure operation continues from the range’s start index to the end of the run.
+- `ascent`: On output, the ascent of the run. This can be set to `NULL` if not needed.
+- `descent`: On output, the descent of the run. This can be set to `NULL` if not needed.
+- `leading`: On output, the leading of the run. This can be set to `NULL` if not needed.
 
 ## See Also
 

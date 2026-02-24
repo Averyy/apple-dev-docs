@@ -33,9 +33,9 @@ Note that this method only works with file paths (not, for example, string repre
 ## Parameters
 
 - `outputName`: Upon return, contains the longest path that matches the receiver.
-- `flag`: If  , the method considers case for possible completions.
+- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), the method considers case for possible completions.
 - `outputArray`: Upon return, contains all matching filenames.
-- `filterTypes`: An array of   objects specifying path extensions to consider for completion. Only paths whose extensions (not including the extension separator) match one of these strings are included in  . Pass   if you don’t want to filter the output.
+- `filterTypes`: An array of `NSString` objects specifying path extensions to consider for completion. Only paths whose extensions (not including the extension separator) match one of these strings are included in `outputArray`. Pass `nil` if you don’t want to filter the output.
 
 ## See Also
 

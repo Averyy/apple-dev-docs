@@ -18,7 +18,7 @@ var faces: ARGeometryElement { get }
 
 #### Discussion
 
-Each element of the buffer-based array is a three-index combination that forms a unique triangle, or . The index refers to that vertex’s position in the [`vertices`](armeshgeometry/vertices.md) array. The [`count`](argeometryelement/count.md) of this property represents the number of faces.
+Each element of the buffer-based array is a three-index combination that forms a unique triangle, or *face*. The index refers to that vertex’s position in the [`vertices`](armeshgeometry/vertices.md) array. The [`count`](argeometryelement/count.md) of this property represents the number of faces.
 
 The following code demonstrates getting the vertices of a particular face:
 

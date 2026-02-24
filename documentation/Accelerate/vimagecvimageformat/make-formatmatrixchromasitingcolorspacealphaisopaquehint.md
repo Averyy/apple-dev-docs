@@ -31,7 +31,7 @@ This function derives values that parameters from the image format type don’t 
 ## Parameters
 
 - `format`: The format type of the image.
-- `matrix`: A   that describes the conversion from RGB to the YpCbCr format.
+- `matrix`: A [`vImage_ARGBToYpCbCrMatrix`](vimage_argbtoypcbcrmatrix.md) that describes the conversion from RGB to the YpCbCr format.
 - `chromaSiting`: The chrominance location.
 - `colorSpace`: The color space of RGB and monochrome images. For YpCbCr images, this is the color space of the RGB image before conversion to YpCbCr using the ARGB-to-YpCbCr conversion matrix. The YpCbCr format RGB primaries and transfer function define the color space.
 - `alphaIsOpaqueHint`: A hint that indicates that the function interprets an image with an alpha channel as opaque.

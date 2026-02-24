@@ -22,6 +22,11 @@ object InstallMediaCommand
 - [object InstallMediaCommand.Command](installmediacommand/command-data.dictionary.md)
   The command to install a book on a device.
 
+## Properties
+
+- `Command` (InstallMediaCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object InstallMediaResponse](installmediaresponse.md)

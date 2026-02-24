@@ -30,7 +30,7 @@ The same context must only be used by a single thread at a time.
 
 ## Parameters
 
-- `function`: The specific function to execute. You may set this to   if there is only one function.
+- `function`: The specific function to execute. You may set this to `nil` if there is only one function.
 - `arguments`: The output and input arguments.
 
 

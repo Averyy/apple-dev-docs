@@ -24,7 +24,7 @@ A newly initialized grid button.
 
 - `titleVariants`: An array of title variants for the button. Each title should be localized and ready for display to the user. When the system displays the button, it selects the title that best fits the available screen space, so arrange the variants from most to least preferred. Always include at least one title in the array.
 - `image`: The image to display on the button. If you provide an animated image, the button uses the first image in the animation sequence.
-- `handler`: The block invoked after the user taps the button. In Swift, the default is  .
+- `handler`: The block invoked after the user taps the button. In Swift, the default is `nil`.
 
 
 ---

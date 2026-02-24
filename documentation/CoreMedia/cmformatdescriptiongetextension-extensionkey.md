@@ -30,8 +30,8 @@ The extension is always a valid property list object. This means that it will be
 
 ## Parameters
 
-- `desc`: The   to examine.
-- `extensionKey`: The key of the extension to return. May not be  .
+- `desc`: The `CMFormatDescription` to examine.
+- `extensionKey`: The key of the extension to return. May not be `NULL`.
 
 ## See Also
 

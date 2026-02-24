@@ -20,7 +20,7 @@ An initialized [`NSCIImageRep`](nsciimagerep.md) object, or `nil` if the object 
 
 ## Parameters
 
-- `image`: The   instance.
+- `image`: The [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) instance.
 
 
 ---

@@ -24,7 +24,7 @@ The location of the interaction specified in the coordinate system of `view`.
 
 ## Parameters
 
-- `view`: The view containing the target coordinate system. To return a point in the window’s coordinate system, specify  .
+- `view`: The view containing the target coordinate system. To return a point in the window’s coordinate system, specify `nil`.
 
 
 ---

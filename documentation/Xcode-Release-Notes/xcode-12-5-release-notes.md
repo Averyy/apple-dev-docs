@@ -6,6 +6,8 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
+---
+
 #### Overview
 
 Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and macOS Big Sur 11.3. The Xcode 12.5 release supports on-device debugging for iOS 9 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 12.5 requires a Mac running macOS Big Sur 11 or later.
@@ -84,7 +86,7 @@ test {
 
 ###### Known Issues
 
-- Xcode fails to launch apps when Nightstand Mode is enabled on Apple Watch. (61351690) : Disable Nightstand Mode on Apple Watch; Go to Settings > General > Nightstand Mode.
+- Xcode fails to launch apps when Nightstand Mode is enabled on Apple Watch. (61351690) **Workaround**: Disable Nightstand Mode on Apple Watch; Go to Settings > General > Nightstand Mode.
 
 ##### Instruments
 
@@ -173,8 +175,8 @@ test {
 
 ###### Known Issues
 
-- Xcode doesn’t build projects with a signing certificate on a smart card, or that is accessed via a [`CryptoTokenKit`](https://developer.apple.com/documentation/CryptoTokenKit) extension. (58266781) (FB7516556) : Instead of signing in Xcode or `xcodebuild`, run `codesign` in a post-build step.
-- OS X 10.11 or earlier may reject code signatures added to universal binaries by Xcode 12.5 running in macOS 11.2 or earlier. (70724583) (FB8830007) : Specify `--digest-algorithm=sha1,sha256` to the `codesign` utility at signing time. In Xcode, specify this using the `OTHER_CODE_SIGN_FLAGS` build setting.
+- Xcode doesn’t build projects with a signing certificate on a smart card, or that is accessed via a [`CryptoTokenKit`](https://developer.apple.com/documentation/CryptoTokenKit) extension. (58266781) (FB7516556) **Workaround**: Instead of signing in Xcode or `xcodebuild`, run `codesign` in a post-build step.
+- OS X 10.11 or earlier may reject code signatures added to universal binaries by Xcode 12.5 running in macOS 11.2 or earlier. (70724583) (FB8830007) **Workaround**: Specify `--digest-algorithm=sha1,sha256` to the `codesign` utility at signing time. In Xcode, specify this using the `OTHER_CODE_SIGN_FLAGS` build setting.
 - If you embed a binary that contains an old code signature in your app, your app may fail to install and launch on devices running iOS 14.5 with the error message “The code signature version is no longer supported.” (77494287) To resolve this issue, first ensure that embedding the binary is necessary for your app to operate. If the binary is a static library, it’s not necessary to embed it. Stop embedding the binary in your app by following these steps: 1. Select your project in the Project Navigator.
 2. Select your app’s target from the Targets list.
 3. In the General tab, under the Frameworks, Libraries, and Embedded Content section; click the Embed pop-up menu next to your static library, and then choose Do Not Embed. If operating your app requires you to embed the binary, you can update its signature by following the instructions documented at [`Using the latest code signature format`](https://developer.apple.com/documentation/Xcode/using-the-latest-code-signature-format).
@@ -199,7 +201,7 @@ test {
 
 ###### Known Issues
 
-- If you rename the default branch in your remote repository and don’t update `HEAD` to point to the renamed branch, source code operations may fail and Xcode may return an error -100. (76070146) : Use the `git` command line tool to re-point your `HEAD`; for example: ```None
+- If you rename the default branch in your remote repository and don’t update `HEAD` to point to the renamed branch, source code operations may fail and Xcode may return an error -100. (76070146) **Workaround**: Use the `git` command line tool to re-point your `HEAD`; for example: ```None
 git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/<your_default_branch_name>
 ```
 
@@ -335,7 +337,7 @@ func outer(x: Int, y: String) {
 
 ###### Known Issues
 
-- iOS Playgrounds may crash on initial execution. (70826934) : Re-execute the Playground.
+- iOS Playgrounds may crash on initial execution. (70826934) **Workaround**: Re-execute the Playground.
 - The compiler may generate incorrect code when you use an `enum` `case` with associated values to satisfy a protocol requirement. (72302307) For example: ```swift
 protocol FileHandlerAction {
   static func setFileURL(_ fileURL: NSURL) -> Self
@@ -344,7 +346,7 @@ protocol FileHandlerAction {
 enum AppAction : FileHandlerAction {
   case setFileURL(NSURL)
 }
-``` : Provide a static method to satisfy the requirement: ```swift
+``` **Workaround**: Provide a static method to satisfy the requirement: ```swift
 enum AppAction : FileHandlerAction {
   case _setFileURL(NSURL)
 
@@ -405,8 +407,8 @@ XCTExpectFailure("…", options: options)
 ###### Known Issues
 
 - When running on a Mac with Apple silicon, Xcode doesn’t provide code coverage information for code in Swift packages. (71769076) (FB8919898)
-- If you run lengthy uninterrupted CPU-bound computation in a test on Apple Watch devices, watchOS may terminate the test runner. (74301580) : Avoid performing heavy CPU-bound computation in your tests on Apple Watch devices.
-- Xcode crashes when you attempt to view test results for an integration. (76126769) : Download the integration’s build logs and open the enclosed result bundle.
+- If you run lengthy uninterrupted CPU-bound computation in a test on Apple Watch devices, watchOS may terminate the test runner. (74301580) **Workaround**: Avoid performing heavy CPU-bound computation in your tests on Apple Watch devices.
+- Xcode crashes when you attempt to view test results for an integration. (76126769) **Workaround**: Download the integration’s build logs and open the enclosed result bundle.
 
 ###### Deprecations
 

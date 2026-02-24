@@ -23,7 +23,7 @@ The receiver is automatically dismissed after this method is invoked.
 ## Parameters
 
 - `actionSheet`: The action sheet containing the button.
-- `buttonIndex`: The position of the clicked button. The button indices start at  .
+- `buttonIndex`: The position of the clicked button. The button indices start at `0`.
 
 
 ---

@@ -24,6 +24,10 @@ struct ReplaceSymbolEffect
 
 A replace transition animates the change from one symbol image to another. You choose from one of the predefined scaling animations: Down-Up, Off-Up, and Up-Up.
 
+- **Down-Up**: The initial symbol scales down as it’s removed, and the new symbol scales up as it’s added.
+- **Off-Up**: The initial symbol is removed with no animation, and the new symbol scales up as it’s added.
+- **Up-Up**: The initial symbol scales up as it’s removed, and the new symbol scales up as it’s added.
+
 ## Topics
 
 ### Accessing symbol effects

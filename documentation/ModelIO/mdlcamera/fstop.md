@@ -21,7 +21,7 @@ var fStop: Float { get set }
 
 #### Discussion
 
-Relative aperture, also called  or , is a measure of the amount of light permitted through a lens to an imaging surface, commonly thought of as the “speed” of the lens. The f-stop is the ratio of the lens’s [`focalLength`](mdlcamera/focallength.md) to the diameter of the entrance pupil. It controls the amount of light that reaches the sensor, as well as the size of out-of-focus parts of the image.
+Relative aperture, also called *f-stop* or *f-number*, is a measure of the amount of light permitted through a lens to an imaging surface, commonly thought of as the “speed” of the lens. The f-stop is the ratio of the lens’s [`focalLength`](mdlcamera/focallength.md) to the diameter of the entrance pupil. It controls the amount of light that reaches the sensor, as well as the size of out-of-focus parts of the image.
 
 The default relative aperture is is `5.6`, simulating an f/5.6 lens.
 

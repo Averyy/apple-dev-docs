@@ -16,7 +16,7 @@ This app provides a simple AR experience demonstrating the environment texturing
 
 ![Screenshots of the sample app, showing UI prompts for placing a virtual object, the shiny virtual sphere, and the virtual sphere showing the reflection of a real object.](https://docs-assets.developer.apple.com/published/c91fbc006b62c26b4e97784ab5dddfc0/Screenshots.png)
 
-Notice the surface of the virtual sphere shows a generally realistic (if not perfectly accurate) reflection of its real-world surroundings. To create reflective virtual surfaces, a renderer (such as SceneKit) needs an  —an image that captures the view in all directions from a certain point in the scene (called an ). Realistically rendering reflections for multiple objects, or moving objects, may require multiple environment textures, each capturing the scene from a different point of view.
+Notice the surface of the virtual sphere shows a generally realistic (if not perfectly accurate) reflection of its real-world surroundings. To create reflective virtual surfaces, a renderer (such as SceneKit) needs an  *environment texture*—an image that captures the view in all directions from a certain point in the scene (called an *environment probe*). Realistically rendering reflections for multiple objects, or moving objects, may require multiple environment textures, each capturing the scene from a different point of view.
 
 ARKit generates environment textures by collecting camera imagery during the AR session. Because ARKit cannot see the scene in all directions, it uses machine learning to extrapolate a realistic environment from available imagery.
 
@@ -43,7 +43,7 @@ With [`ARWorldTrackingConfiguration.EnvironmentTexturing.automatic`](arworldtrac
 
 #### Render Virtual Objects with Reflection
 
-Because this app also uses [`ARSCNView`](arscnview.md) to display AR content, SceneKit automatically uses the appropriate environment texture to render each virtual object in the scene. In SceneKit, any asset using [`SCNMaterial.LightingModel`](https://developer.apple.com/documentation/SceneKit/SCNMaterial/LightingModel-swift.struct) materials automatically uses . With environmental lighting, the shading for each point on a surface depends on nearby light probe textures or the global lighting environment in the direction that point faces.
+Because this app also uses [`ARSCNView`](arscnview.md) to display AR content, SceneKit automatically uses the appropriate environment texture to render each virtual object in the scene. In SceneKit, any asset using [`SCNMaterial.LightingModel`](https://developer.apple.com/documentation/SceneKit/SCNMaterial/LightingModel-swift.struct) materials automatically uses *environmental lighting*. With environmental lighting, the shading for each point on a surface depends on nearby light probe textures or the global lighting environment in the direction that point faces.
 
 The visual effect of environment texturing depends on how you configure the properties of a physically based material. For example, materials with a high [`roughness`](https://developer.apple.com/documentation/SceneKit/SCNMaterial/roughness) pick up some diffuse color from the texture, and materials with low [`roughness`](https://developer.apple.com/documentation/SceneKit/SCNMaterial/roughness) and high [`metalness`](https://developer.apple.com/documentation/SceneKit/SCNMaterial/metalness) reflect their surroundings with a mirror-like finish.
 
@@ -85,9 +85,13 @@ This code applies the rules below to optimally capture the area around each virt
 
 Follow these tips to keep your app’s use of environment texturing realistic and efficient:
 
+**Avoid virtual content that requires accurate reflections, such as mirror-finish surfaces.**
+
 In general, an AR experience doesn’t have all the information needed to produce a perfect imitation of reality. Good AR experiences carefully design content to hide limitations in realism, preserving the illusion that virtual objects inhabit the user’s real-world surroundings.
 
 ARKit environment textures don’t image the environment in all directions around the user, and don’t update in real time, so some kinds of content aren’t well suited for use in AR. For example, a user encountering a virtual mirror may expect to see their own reflection. Design virtual content to use fully-reflective surfaces only in small or highly-detailed parts, and use less reflectivity in large flat surfaces.
+
+**Handle moving objects.**
 
 Rendering a virtual object with realistic reflections require an environment probe that captures a small area around that object. If the object changes position, the corresponding environment probe needs to change to reflect the object’s new surroundings. When manually placing probes, consider one or more of these strategies for handling objects that move:
 
@@ -97,9 +101,13 @@ Rendering a virtual object with realistic reflections require an environment pro
 
 When you display AR content with [`ARSCNView`](arscnview.md), SceneKit automatically interpolates between environment textures for any objects that overlap the extents of multiple environment probes.
 
+**Don’t generate environment textures too often.**
+
 ARKit requires some time to collect camera imagery, and combining and extrapolating that imagery to produce environment textures requires computational resources. Frequently adding new [`AREnvironmentProbeAnchor`](arenvironmentprobeanchor.md) instances to your AR session may not produce noticeable changes in the displayed scene, but does cost battery power and reduce the performance overhead available for other aspects of your AR experience.
 
 This app creates new environment probes whenever the user moves or resizes the virtual object, but limits such updates to occur no more often than once per second. (See the sample `updateEnvironmentProbe(atTime:)` function.)
+
+**Avoid abrupt transitions between different environment textures.**
 
 With [`ARSCNView`](arscnview.md), if the environment probe texture(s) affecting an object change (either because the object moves or because a new texture becomes available for its current position), SceneKit automatically uses a short fade-in animation to transition to the new result. Depending on what environment textures are in use before and after the transition, that change may be jarring to the user.
 

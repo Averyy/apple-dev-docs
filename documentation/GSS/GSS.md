@@ -18,8 +18,8 @@ The open source Generic Security Service Application Programming Interface (GSS-
 
 Using GSS-API, you can:
 
-- Create a security context in which data can be passed between applications. A  represents a “state of trust” between two applications. Applications that share a context recognize each other and permit data transfers as long as the context lasts.
-- Apply one or more types of protection, known as , to the data to be transmitted. For more on security services, see [`Security`](https://developer.apple.com/documentation/Security).
+- Create a security context in which data can be passed between applications. A *context* represents a “state of trust” between two applications. Applications that share a context recognize each other and permit data transfers as long as the context lasts.
+- Apply one or more types of protection, known as *security services*, to the data to be transmitted. For more on security services, see [`Security`](https://developer.apple.com/documentation/Security).
 - Perform data conversion, error-checking, delegation of user privileges, information display, and identity comparison.
 
 See [`RFC 2743`](https://developer.apple.comhttps://tools.ietf.org/html/rfc2743) for the definitive description of the GSS-API 2, and [`RFC 2744`](https://developer.apple.comhttps://tools.ietf.org/html/rfc2744) for a description of the related C bindings.

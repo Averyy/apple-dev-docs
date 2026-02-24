@@ -4,6 +4,11 @@
 
 #### Overview
 
+- **Containing profile atom**: Movie
+- **`part-ID`**: `0x20202020` (universal feature)
+- **`feature-code`**: `'mvsz'`
+- **`feature-value`**: A 32-bit packed structure holding width and height of the largest bounds needed to display the movie
+
 #### Feature Values
 
 A packed structure in a 32-bit value:

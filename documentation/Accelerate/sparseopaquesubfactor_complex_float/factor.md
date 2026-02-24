@@ -33,6 +33,14 @@ The object can be in one of the following states:
 - user may pass this object to `SparseRefactor_Double` with a modified matrix
 4. Symbolic and numeric factorizations are both good - indicated by `.status >= 0`
 
+- **`status`**: Indicates status of factorization object.
+- **`attributes`**: Flags associated with this factorization object. In particular, transpose field indicates whether object is considered to be factorization of A or A^T.
+- **`symbolicFactorization`**: Symbolic Factorization upon which this Numeric Factorization depends.
+- **`userFactorStorage`**: Flag that indicates if user provided storage backing this object. If true, then factor storage must be freed by the user once all references are finished with (though any additional storage allocated due to pivoting will still be freed by `SparseCleanup`).
+- **`numericFactorization`**: Pointer to private internal representation of numeric factor.
+- **`solveWorkspaceRequiredStatic`**: The required size of workspace, in bytes, for a call to `SparseSolve` is `solveWorkspaceRequiredStatic + nrhs * solveWorkspaceRequiredPerRHS` where `nrhs` is the number of right-hand side vectors.
+- **`solveWorkspaceRequiredPerRHS`**: The required size of workspace, in bytes, for a call to `SparseSolve` is `solveWorkspaceRequiredStatic + nrhs * solveWorkspaceRequiredPerRHS` where `nrhs` is the number of right-hand side vectors.
+
 
 ---
 

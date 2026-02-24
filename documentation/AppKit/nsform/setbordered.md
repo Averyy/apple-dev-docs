@@ -20,7 +20,7 @@ The border is drawn as a thin line around the editable text field. An entry can 
 
 ## Parameters
 
-- `flag`:   to display a border around all entries; otherwise,   to show no border around all entries.
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) to display a border around all entries; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) to show no border around all entries.
 
 ## See Also
 

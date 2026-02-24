@@ -29,7 +29,7 @@ Upon success, the method returns a dictionary that maps recipients to their corr
 
 ## Parameters
 
-- `recipients`: The full set of   structures the app requests access for. A non-conforming array throws an   error.
+- `recipients`: The full set of [`MSRecipient`](msrecipient.md) structures the app requests access for. A non-conforming array throws an [`MSCriticalMessagingError.invalidAuthenticationRequest`](mscriticalmessagingerror/invalidauthenticationrequest.md) error.
 
 
 ---

@@ -25,6 +25,45 @@ Use a [`UILocalizedIndexedCollation`](uilocalizedindexedcollation.md) object in 
 
 To prepare the data for a section index, create an indexed-collation object and call [`section(for:collationStringSelector:)`](uilocalizedindexedcollation/section(for:collationstringselector:).md) for each model object to be indexed. That method determines the section in which each of these objects should appear and returns an integer that identifies the section. The table-view controller then puts each object in a local array for its section. For each section array, the controller calls the [`sortedArray(from:collationStringSelector:)`](uilocalizedindexedcollation/sortedarray(from:collationstringselector:).md) method to sort all of the objects in the section. The indexed-collation object is now the data store that the table-view controller uses to provide section-index data to the table view, as shown in the following example code.
 
+**Swift**:
+
+```swift
+func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String! {
+    let currentCollation = UILocalizedIndexedCollation.currentCollation() as UILocalizedIndexedCollation
+    let sectionTitles = currentCollation.sectionTitles as NSArray
+    return sectionTitles.objectAtIndex(section) as String
+}
+ 
+func sectionIndexTitlesForTableView(tableView: UITableView!) -> NSArray! {
+    let currentCollation = UILocalizedIndexedCollation.currentCollation() as UILocalizedIndexedCollation
+    return currentCollation.sectionIndexTitles as NSArray
+}
+ 
+func tableView(tableView: UITableView!, sectionForSectionIndexTitle title: String!, atIndex index: Int) -> Int {
+    let currentCollation = UILocalizedIndexedCollation.currentCollation() as UILocalizedIndexedCollation
+    return currentCollation.sectionForSectionIndexTitleAtIndex(index)
+}
+```
+
+**Objective-C**:
+
+```objc
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return [[[UILocalizedIndexedCollation currentCollation] sectionTitles] objectAtIndex:section];
+}
+ 
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
+{
+    return [[UILocalizedIndexedCollation currentCollation] sectionIndexTitles];
+}
+ 
+- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
+{
+    return [[UILocalizedIndexedCollation currentCollation] sectionForSectionIndexTitleAtIndex:index];
+}
+```
+
 ## Topics
 
 ### Getting the shared instance

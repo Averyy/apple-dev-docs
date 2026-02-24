@@ -22,7 +22,7 @@ init(restriction: AppExtensionPoint.Scope.Restriction = .application)
 
 ## Parameters
 
-- `restriction`: The binding restriction for app extensions. If you don’t specify a   value, only app extensions inside the host app may bind to it.
+- `restriction`: The binding restriction for app extensions. If you don’t specify a value, only app extensions inside the host app may bind to it.
 
 ## See Also
 

@@ -20,7 +20,7 @@ The space uses the specified content builder to form the content.
 
 ## Parameters
 
-- `id`: A string that uniquely identifies the immersive space. Ensure   that identifiers are unique among the immersive spaces in your app.
+- `id`: A string that uniquely identifies the immersive space. Ensure that identifiers are unique among the immersive spaces in your app.
 
 
 ---

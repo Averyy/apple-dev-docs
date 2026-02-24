@@ -18,6 +18,11 @@ object UpdateAutoSignInTokenRequest
 
 This is the request object for the [`Update Sign-In Token`](update-this-token-for-all-associated-users.md) endpoint.
 
+## Properties
+
+- `existingAutoSignInTokenValue` (string): The sign-in token [`value`](https://developer.apple.com/documentation/videosubscriberaccount/vsautosignintoken/value) that needs to be updated.
+- `newAutoSignInTokenValue` (string): The new sign-in token [`value`](https://developer.apple.com/documentation/videosubscriberaccount/vsautosignintoken/value).
+
 ## See Also
 
 - [Update Sign-In Token](update-this-token-for-all-associated-users.md)

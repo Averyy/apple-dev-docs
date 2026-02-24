@@ -59,7 +59,7 @@ After committing a command buffer to a queue, you can use it again by calling it
 
 ##### Command Allocators
 
-The  is a companion type that provides memory for command buffers. You associate a command allocator with one command buffer at a time by calling its [`beginCommandBuffer(allocator:)`](mtl4commandbuffer/begincommandbuffer(allocator:).md) method. When you finish encoding commands to a command buffer, you can apply the allocator to another command buffer by first calling the current command buffer’s [`endCommandBuffer()`](mtl4commandbuffer/endcommandbuffer().md) method and then another command buffer’s [`beginCommandBuffer(allocator:)`](mtl4commandbuffer/begincommandbuffer(allocator:).md) method.
+The *command allocator* is a companion type that provides memory for command buffers. You associate a command allocator with one command buffer at a time by calling its [`beginCommandBuffer(allocator:)`](mtl4commandbuffer/begincommandbuffer(allocator:).md) method. When you finish encoding commands to a command buffer, you can apply the allocator to another command buffer by first calling the current command buffer’s [`endCommandBuffer()`](mtl4commandbuffer/endcommandbuffer().md) method and then another command buffer’s [`beginCommandBuffer(allocator:)`](mtl4commandbuffer/begincommandbuffer(allocator:).md) method.
 
 Each allocator manages the memory that your app needs to encode commands into the command buffer that you associate with it. Like command buffers, you create each new [`MTL4CommandAllocator`](mtl4commandallocator.md) instance by calling a factory method of an [`MTLDevice`](mtldevice.md), such as [`makeCommandAllocator()`](mtldevice/makecommandallocator().md).
 
@@ -69,6 +69,96 @@ Apps can render frames by reusing a series of allocators, one for each frame it 
 
 For example, the sample code project, [`Drawing a triangle with Metal 4`](drawing-a-triangle-with-metal-4.md) (Hello Triangle), works with three frames at the same time:
 
+**Swift**:
+
+```swift
+/// The number of frames the renderer works with at the same time.
+let kMaxFramesInFlight = 3
+
+/// A class that renders each of the app's video frames.
+class Metal4Renderer {
+
+    /// The Metal device the renderer draws with by sending commands to it.
+    let device: MTLDevice
+
+    /// A command queue the app uses to send command buffers to the Metal device.
+    let commandQueue: MTL4CommandQueue
+
+    /// An array of allocators that store commands for each frame
+    /// while the app encodes them and the GPU runs them.
+    var commandAllocators: [MTL4CommandAllocator] = []
+
+    /// A command buffer the app reuses to render each frame.
+    let commandBuffer: MTL4CommandBuffer
+
+    // ...
+}
+
+/// Draws a frame of content to a view's drawable.
+/// - Parameter view: A view with a drawable that the renderer draws into.
+func renderFrameToView(_ view: MTKView) {
+
+    // ...
+
+    // Get the next allocator in the rotation.
+    let frameIndex: Int = Int(frameNumber) % kMaxFramesInFlight
+    let frameAllocator = commandAllocators[frameIndex]
+
+    // Prepare to use or reuse the allocator by resetting it.
+    frameAllocator.reset()
+
+    // Prepare to use or reuse the command buffer for the frame's commands.
+    commandBuffer.beginCommandBuffer(allocator: frameAllocator)
+
+    // ...
+}
+```
+
+**Objective-C**:
+
+```objective-c
+/// The number of frames the renderer works with at the same time.
+#define kMaxFramesInFlight 3
+
+/// A class that renders each of the app's video frames.
+@implementation Metal4Renderer
+{
+    /// The Metal device the renderer draws with by sending commands to it.
+    id<MTLDevice> device;
+
+    /// A command queue the app uses to send command buffers to the Metal device.
+    id<MTL4CommandQueue> commandQueue;
+
+    /// An array of allocators that store commands for each frame
+    /// while the app encodes them and the GPU runs them.
+    id<MTL4CommandAllocator> commandAllocators[kMaxFramesInFlight];
+
+    /// A command buffer the app reuses to render each frame.
+    id<MTL4CommandBuffer> commandBuffer;
+
+    // ...
+}
+
+/// Draws a frame of content to a view's drawable.
+/// - Parameter view: A view with a drawable that the renderer draws into.
+- (void)renderFrameToView:(nonnull MTKView *)view
+{
+    // ...
+
+    // Get the next allocator in the rotation.
+    uint32_t frameIndex = frameNumber % kMaxFramesInFlight;
+    id<MTL4CommandAllocator> frameAllocator = commandAllocators[frameIndex];
+
+    // Prepare to use or reuse the allocator by resetting it.
+    [frameAllocator reset];
+
+    // Prepare to use or reuse the command buffer for the frame's commands.
+    [commandBuffer beginCommandBufferWithAllocator:frameAllocator];
+
+    // ...
+}
+```
+
 At any point, each in-flight frame is in a different part of its life cycle.
 
 - The current frame is what the app displays until the GPU finishes rendering the next frame.
@@ -77,7 +167,7 @@ At any point, each in-flight frame is in a different part of its life cycle.
 
 ##### Command Encoders
 
-The , [`MTL4CommandEncoder`](mtl4commandencoder.md), is a base protocol for other work-specific protocols that Metal provides, including:
+The *command encoder*, [`MTL4CommandEncoder`](mtl4commandencoder.md), is a base protocol for other work-specific protocols that Metal provides, including:
 
 - [`MTL4MachineLearningCommandEncoder`](mtl4machinelearningcommandencoder.md)
 - [`MTL4RenderCommandEncoder`](mtl4rendercommandencoder.md)
@@ -110,7 +200,7 @@ The [`MTL4ComputeCommandEncoder`](mtl4computecommandencoder.md) protocol is a ne
 
 ##### Argument Tables
 
-Metal 4 introduces an  type that stores bindings to resources, such as data buffers, textures, and samplers, on an encoder’s behalf. Argument tables can reduce your app’s memory footprint because:
+Metal 4 introduces an *argument table* type that stores bindings to resources, such as data buffers, textures, and samplers, on an encoder’s behalf. Argument tables can reduce your app’s memory footprint because:
 
 - Metal 4 encoders don’t require memory for storing the binding tables for every resource type, at every stage.
 - Each table consumes only the memory it needs to store its resource bindings.
@@ -136,11 +226,11 @@ Earlier versions of Metal support tracking data hazards for textures and heaps y
 
 In Metal 4, the framework considers all resources untracked. You need to synchronize pipeline stages that can concurrently access a resource if any of the shaders in these pipelines modify it. For example, apps commonly encode a pass that writes to a common buffer that a later pass needs to read from to do its work, such as rendering to a texture.
 
-One of the most efficient ways to synchronize work between two or more passes is to add a . A barrier tells the GPU that it needs to avoid a race condition by delaying the start of a pipeline stage until a previous stage finishes, so that it’s safe to access the results of that stage. For example, if an app encodes a compute pass that produces data that a subsequent render pass consumes in its fragment shader, the app needs to add a barrier between the dispatch stage of the compute pass and the fragment stage of the render pass. In that scenario, the barrier signals to the GPU that it needs to wait before running the fragment stage of the render pass until the dispatch stage of the compute pass finishes modifying common resources.
+One of the most efficient ways to synchronize work between two or more passes is to add a *barrier*. A barrier tells the GPU that it needs to avoid a race condition by delaying the start of a pipeline stage until a previous stage finishes, so that it’s safe to access the results of that stage. For example, if an app encodes a compute pass that produces data that a subsequent render pass consumes in its fragment shader, the app needs to add a barrier between the dispatch stage of the compute pass and the fragment stage of the render pass. In that scenario, the barrier signals to the GPU that it needs to wait before running the fragment stage of the render pass until the dispatch stage of the compute pass finishes modifying common resources.
 
 ##### Texture View Pools
 
-Metal 4 introduces the [`MTLTextureViewPool`](mtltextureviewpool.md) protocol which creates lightweight texture views that can reduce your app’s memory footprint compared to creating the equivalent instances of [`MTLTexture`](mtltexture.md). Each [`MTLTexture`](mtltexture.md) instance is a heavyweight type that stores a texture’s underlying data and metadata. Each texture also has an implicit , which is the default format interpretation of the texture’s underlying data. With a texture view pool, you can create lightweight texture views that interpret and access a texture’s underlying data with a different format than its original. For example, you can create an [`MTLTexture`](mtltexture.md) instance with its [`pixelFormat`](mtltexture/pixelformat.md) equal to [`MTLPixelFormat.rgba32Uint`](mtlpixelformat/rgba32uint.md), and then create a new texture view of the same texture that interprets the underlying data as if its pixel format is [`MTLPixelFormat.rg11b10Float`](mtlpixelformat/rg11b10float.md).
+Metal 4 introduces the [`MTLTextureViewPool`](mtltextureviewpool.md) protocol which creates lightweight texture views that can reduce your app’s memory footprint compared to creating the equivalent instances of [`MTLTexture`](mtltexture.md). Each [`MTLTexture`](mtltexture.md) instance is a heavyweight type that stores a texture’s underlying data and metadata. Each texture also has an implicit *texture view*, which is the default format interpretation of the texture’s underlying data. With a texture view pool, you can create lightweight texture views that interpret and access a texture’s underlying data with a different format than its original. For example, you can create an [`MTLTexture`](mtltexture.md) instance with its [`pixelFormat`](mtltexture/pixelformat.md) equal to [`MTLPixelFormat.rgba32Uint`](mtlpixelformat/rgba32uint.md), and then create a new texture view of the same texture that interprets the underlying data as if its pixel format is [`MTLPixelFormat.rg11b10Float`](mtlpixelformat/rg11b10float.md).
 
 Every texture view has a unique [`MTLResourceID`](mtlresourceid.md), which includes:
 

@@ -20,7 +20,7 @@ init(minimumAngleDelta: Angle = .degrees(1))
 
 ## Parameters
 
-- `minimumAngleDelta`: The minimum delta required before the   gesture starts. The default value is a one-degree angle.
+- `minimumAngleDelta`: The minimum delta required before the gesture starts. The default value is a one-degree angle.
 
 ## See Also
 

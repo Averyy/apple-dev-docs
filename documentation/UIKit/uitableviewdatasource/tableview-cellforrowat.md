@@ -37,7 +37,7 @@ Never call this method yourself. If you want to retrieve cells from your table, 
 ## Parameters
 
 - `tableView`: A table-view object requesting the cell.
-- `indexPath`: An index path locating a row in  .
+- `indexPath`: An index path locating a row in `tableView`.
 
 ## See Also
 

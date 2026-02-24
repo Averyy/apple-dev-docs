@@ -27,9 +27,9 @@ Text with a line through its center.
 
 ## Parameters
 
-- `isActive`: A Boolean value that indicates whether strikethrough   is added. The default value is  .
+- `isActive`: A Boolean value that indicates whether strikethrough is added. The default value is `true`.
 - `pattern`: The pattern of the line.
-- `color`: The color of the strikethrough. If   is  , the   strikethrough uses the default foreground color.
+- `color`: The color of the strikethrough. If `color` is `nil`, the strikethrough uses the default foreground color.
 
 ## See Also
 

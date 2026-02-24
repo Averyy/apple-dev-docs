@@ -34,7 +34,7 @@ To format a single integer, you can use the [`Decimal`](decimal.md) instance met
 
 ## Parameters
 
-- `locale`: The locale to use when formatting or parsing decimal values. Defaults to  .
+- `locale`: The locale to use when formatting or parsing decimal values. Defaults to [`autoupdatingCurrent`](locale/autoupdatingcurrent.md).
 
 
 ---

@@ -21,10 +21,10 @@ The item will be displayed in the system menu bar when the specified binding is 
 
 ## Parameters
 
-- `titleKey`: The localized string key to use for the accessibility   label of the item.
+- `titleKey`: The localized string key to use for the accessibility label of the item.
 - `image`: The image resource to use as the label.
-- `isInserted`: Whether the item is inserted in the menu bar. The item   may or may not be visible, depending on the number of items present.
-- `content`: A   to display when the user selects the item.
+- `isInserted`: Whether the item is inserted in the menu bar. The item may or may not be visible, depending on the number of items present.
+- `content`: A `View` to display when the user selects the item.
 
 ## See Also
 

@@ -20,7 +20,7 @@ func paperMarkupViewControllerDidChangeContentVisibleFrame(_ paperMarkupViewCont
 
 ## Parameters
 
-- `paperMarkupViewController`: The   the user is interacting with.
+- `paperMarkupViewController`: The `PaperMarkupViewController` the user is interacting with.
 
 
 ---

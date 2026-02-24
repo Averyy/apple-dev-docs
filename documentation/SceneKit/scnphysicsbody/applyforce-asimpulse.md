@@ -36,7 +36,7 @@ As with all physical quantities in SceneKit, you need not use realistic force me
 ## Parameters
 
 - `direction`: The direction and magnitude of the force (in newtons) or of the impulse (in newton-seconds).
-- `impulse`:   to apply an instantaneous change in momentum;   to apply a force that affects the body at the end of the simulation step.
+- `impulse`: [`true`](https://developer.apple.com/documentation/Swift/true) to apply an instantaneous change in momentum; [`false`](https://developer.apple.com/documentation/Swift/false) to apply a force that affects the body at the end of the simulation step.
 
 ## See Also
 

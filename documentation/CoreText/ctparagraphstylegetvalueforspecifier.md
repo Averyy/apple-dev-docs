@@ -30,10 +30,10 @@ This function returns the current value of the specifier whether or not the user
 
 ## Parameters
 
-- `paragraphStyle`: The paragraph style from which to get the value. This parameter may not be  .
+- `paragraphStyle`: The paragraph style from which to get the value. This parameter may not be `NULL`.
 - `spec`: The setting specifier for which to get the value.
-- `valueBufferSize`: The size of the buffer pointed to by the   parameter. This value must be at least as large as the size the required by the   value set in the   parameter.
-- `valueBuffer`: On output, the requested setting value. The buffer’s size needs to be at least as large as the value passed into  . This parameter is required and may not be  .
+- `valueBufferSize`: The size of the buffer pointed to by the `valueBuffer` parameter. This value must be at least as large as the size the required by the [`CTParagraphStyleSpecifier`](ctparagraphstylespecifier.md) value set in the `spec` parameter.
+- `valueBuffer`: On output, the requested setting value. The buffer’s size needs to be at least as large as the value passed into `valueBufferSize`. This parameter is required and may not be `NULL`.
 
 
 ---

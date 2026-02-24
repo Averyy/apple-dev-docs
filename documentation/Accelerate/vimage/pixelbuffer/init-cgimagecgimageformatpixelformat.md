@@ -97,7 +97,7 @@ print(cgImageFormat.bitsPerComponent,
 ## Parameters
 
 - `cgImage`: The source image.
-- `cgImageFormat`: The format of the image. Pass an empty   to specify that the function populates   with the properties of the image. Pass a populated   to specify that the function converts the image data to the format you specify.
+- `cgImageFormat`: The format of the image. Pass an empty [`vImage_CGImageFormat`](vimage_cgimageformat.md) to specify that the function populates `cgImageFormat` with the properties of the image. Pass a populated [`vImage_CGImageFormat`](vimage_cgimageformat.md) to specify that the function converts the image data to the format you specify.
 - `pixelFormat`: The pixel format of the initialized buffer.
 
 

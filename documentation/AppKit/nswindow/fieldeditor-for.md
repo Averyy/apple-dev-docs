@@ -31,8 +31,8 @@ The window’s delegate can substitute a custom field editor in place of the win
 
 ## Parameters
 
-- `createFlag`: A freshly created   object doesn’t have a field editor. After a field editor has been created for a window, the   argument is ignored. By passing   for   and testing the return value, however, you can predicate an action on the existence of the field editor.
-- `object`: A text-displaying object for which the delegate (in  ) assigns a custom field editor. Pass   to get the default field editor, which can be the   field editor or a custom field editor returned by the delegate.
+- `createFlag`: If [`true`](https://developer.apple.com/documentation/Swift/true), creates a field editor if one doesn’t exist; if [`false`](https://developer.apple.com/documentation/Swift/false), does not create a field editor. A freshly created `NSWindow` object doesn’t have a field editor. After a field editor has been created for a window, the `createFlag` argument is ignored. By passing [`false`](https://developer.apple.com/documentation/Swift/false) for `createFlag` and testing the return value, however, you can predicate an action on the existence of the field editor.
+- `object`: A text-displaying object for which the delegate (in [`windowWillReturnFieldEditor(_:to:)`](nswindowdelegate/windowwillreturnfieldeditor(_:to:).md)) assigns a custom field editor. Pass `nil` to get the default field editor, which can be the `NSWindow` field editor or a custom field editor returned by the delegate.
 
 ## See Also
 

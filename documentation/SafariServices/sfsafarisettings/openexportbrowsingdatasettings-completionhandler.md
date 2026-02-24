@@ -26,7 +26,7 @@ Call this method when your app is in the foreground, otherwise it returns an err
 
 ## Parameters
 
-- `completionHandler`: The block the system calls after the operation completes, with an optional error parameter if an error occurs.
+- `completionHandler`: The block the system calls after the operation completes, with an optional error parameter if an error occurs. - **error**: An error object indicating the reason for the failure, or `nil` if the system successfully opens the sheet.
 
 
 ---

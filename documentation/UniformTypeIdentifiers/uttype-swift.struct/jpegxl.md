@@ -22,9 +22,9 @@ static var jpegxl: UTType { get }
 
 #### Discussion
 
- public.jpeg-xl
+**UTI:** public.jpeg-xl
 
- public.image
+**conforms to:** public.image
 
 
 ---

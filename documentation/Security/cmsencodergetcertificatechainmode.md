@@ -20,8 +20,8 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 
 ## Parameters
 
-- `cmsEncoder`: The CMSEncoder reference returned by the   function.
-- `chainModeOut`: On return, a constant that indicates which certificate or certificates are to be included in the message. See  .
+- `cmsEncoder`: The CMSEncoder reference returned by the `CMSEncoderCreate` function.
+- `chainModeOut`: On return, a constant that indicates which certificate or certificates are to be included in the message. See [`CMSCertificateChainMode`](cmscertificatechainmode.md).
 
 ## See Also
 

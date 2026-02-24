@@ -22,7 +22,7 @@ func add(_ anObject: Any)
 
 ## Parameters
 
-- `anObject`: The object to add to the end of the array’s content. This value must not be  .
+- `anObject`: The object to add to the end of the array’s content. This value must not be `nil`. > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `anObject` is `nil`.
 
 ## See Also
 

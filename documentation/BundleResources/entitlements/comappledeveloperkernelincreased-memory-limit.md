@@ -10,6 +10,10 @@ A Boolean value that indicates whether core features of your app may perform bet
 - iPadOS 15.0+
 - visionOS 2.5+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Add this entitlement to your app to inform the system that some of your app’s core features may perform better by exceeding the default app memory limit on supported devices. If you use this entitlement, make sure your app still behaves correctly if additional memory isn’t available.

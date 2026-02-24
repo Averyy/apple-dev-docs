@@ -46,7 +46,7 @@ For example, a 4-bit mask has values that range from 0 to 15. These values are s
 - `bitsPerPixel`: The total number of bits in a source pixel.
 - `bytesPerRow`: The number of bytes to use for each horizontal row of the image mask.
 - `provider`: The data source for the image mask.
-- `decode`: Typically a decode array is unnecessary, and you should pass  .
+- `decode`: Typically a decode array is unnecessary, and you should pass `NULL`.
 - `shouldInterpolate`: A Boolean value that specifies whether an edge-smoothing algorithm is applied to the image mask.
 
 

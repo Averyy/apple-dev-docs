@@ -27,7 +27,7 @@ Deletes are processed before inserts in batch operations. This means the indexes
 ## Parameters
 
 - `updates`: The block that performs the relevant insert, delete, reload, or move operations. In addition to modifying the table’s rows, update your table’s data source to reflect your changes. This block has no return value and takes no parameters.
-- `completion`: A completion handler block to execute when all of the operations are finished. This block has no return value and takes the following parameter:
+- `completion`: A completion handler block to execute when all of the operations are finished. This block has no return value and takes the following parameter: - **finished**: A Boolean value indicating whether the animations completed successfully. The value of this parameter is [`false`](https://developer.apple.com/documentation/Swift/false) if the animations were interrupted for any reason.
 
 ## See Also
 

@@ -20,7 +20,7 @@ static func uniformCorners(radius: UICornerRadius) -> UICornerConfiguration
 
 ## Parameters
 
-- `radius`: A   that represents the radius to use for all corners.
+- `radius`: A [`UICornerRadius`](uicornerradius-swift.struct.md) that represents the radius to use for all corners.
 
 ## See Also
 

@@ -16,7 +16,7 @@ init(coder: NSCoder)
 
 ## Parameters
 
-- `coder`: A coder that implements  .
+- `coder`: A coder that implements [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder).
 
 ## See Also
 

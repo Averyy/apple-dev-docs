@@ -26,8 +26,8 @@ This initializer only collects attributes from `nsStr` that exist in the provide
 
 ## Parameters
 
-- `nsStr`: The   to convert.
-- `scope`: The attribute scope of the attributes in  . This can be a nested scope that contains several scopes.
+- `nsStr`: The [`NSAttributedString`](nsattributedstring.md) to convert.
+- `scope`: The attribute scope of the attributes in `nsStr`. This can be a nested scope that contains several scopes.
 
 ## See Also
 

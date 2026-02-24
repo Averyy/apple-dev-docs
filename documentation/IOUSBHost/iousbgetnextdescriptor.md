@@ -26,7 +26,7 @@ This method advances the current descriptor by its length, and validates that th
 ## Parameters
 
 - `configurationDescriptor`: A configuration descriptor that contains the descriptors to iterate through.
-- `currentDescriptor`: A description header within the bounds of  , or  .
+- `currentDescriptor`: A description header within the bounds of `configurationDescriptor`, or `nil`.
 
 ## See Also
 

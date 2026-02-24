@@ -27,10 +27,10 @@ A merge conflict object initialized with the given parameters.
 ## Parameters
 
 - `srcObject`: The source object for the conflict.
-- `newvers`: A value of 0 means the object was deleted and the corresponding snapshot is  .
+- `newvers`: The new version number for the change. A value of 0 means the object was deleted and the corresponding snapshot is `nil`.
 - `oldvers`: The old version number for the change.
-- `cachesnap`: A dictionary containing the values of   held in the persistent store coordinator layer.
-- `persnap`: A dictionary containing the values of   held in the persistent store.
+- `cachesnap`: A dictionary containing the values of `srcObject` held in the persistent store coordinator layer.
+- `persnap`: A dictionary containing the values of `srcObject` held in the persistent store.
 
 ## See Also
 

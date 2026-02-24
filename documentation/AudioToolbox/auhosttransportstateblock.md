@@ -27,6 +27,11 @@ This block returns [`true`](https://developer.apple.com/documentation/Swift/true
 
 The block takes the following parameters:
 
+- **transportStateFlags**: The current state of the audio transport.
+- **currentSamplePosition**: The current position in the host’s timeline, in samples at the audio unit’s output sample rate.
+- **cycleStartBeatPosition**: If cycling, the starting beat position of the cycle.
+- **cycleEndBeatPosition**: If cycling, the ending beat position of the cycle.
+
 ## See Also
 
 - [var musicalContextBlock: AUHostMusicalContextBlock?](auaudiounit/musicalcontextblock.md)

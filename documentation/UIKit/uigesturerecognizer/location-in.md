@@ -28,7 +28,7 @@ The returned value is a generic single-point location for the gesture computed b
 
 ## Parameters
 
-- `view`: A   object on which the gesture took place. Specify   to indicate the window.
+- `view`: A [`UIView`](uiview.md) object on which the gesture took place. Specify `nil` to indicate the window.
 
 ## See Also
 

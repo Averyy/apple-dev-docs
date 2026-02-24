@@ -22,7 +22,7 @@ init(isExpanded: Binding<Bool>, @ViewBuilder content: () -> Content, @ViewBuilde
 
 ## Parameters
 
-- `isExpanded`: A binding to a Boolean value that determines the section’s   expansion state (expanded or collapsed).
+- `isExpanded`: A binding to a Boolean value that determines the section’s expansion state (expanded or collapsed).
 - `content`: The section’s content.
 - `header`: A view to use as the section’s header.
 

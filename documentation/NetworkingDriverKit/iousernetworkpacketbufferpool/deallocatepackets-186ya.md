@@ -24,8 +24,8 @@ After you move one or more packets to the appropriate completion queue, call thi
 
 ## Parameters
 
-- `packets`: An array of packets to deallocate. It is a programmer error to specify   or an invalid pointer for this parameter.
-- `packetsCount`: The number of items in the   parameter.
+- `packets`: An array of packets to deallocate. It is a programmer error to specify `NULL` or an invalid pointer for this parameter.
+- `packetsCount`: The number of items in the `packets` parameter.
 
 ## See Also
 

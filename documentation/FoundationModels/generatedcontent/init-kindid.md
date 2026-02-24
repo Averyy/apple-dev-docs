@@ -25,7 +25,7 @@ This initializer provides a convenient way to create content from its kind repre
 ## Parameters
 
 - `kind`: The kind of content to create.
-- `id`: An optional   to associate with this content.
+- `id`: An optional [`GenerationID`](generationid.md) to associate with this content.
 
 ## See Also
 

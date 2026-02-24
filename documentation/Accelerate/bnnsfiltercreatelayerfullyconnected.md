@@ -26,7 +26,7 @@ Use a fully connected layer to construct each output feature from a linear combi
 
 ##### Applying a Fully Connected Filter with a 2d Weights Matrix
 
-In the case where your input data is a vector and your weights data is a matrix, provide the weights as an  row-major matrix where  is the number of fully connected results, and  is the number of items in the input.
+In the case where your input data is a vector and your weights data is a matrix, provide the weights as an *m x n* row-major matrix where *m* is the number of fully connected results, and *n* is the number of items in the input.
 
 For example, the following code defines a column matrix input that contains four values, a 3 x 4 weights matrix, and a three-element vector that receives the result:
 

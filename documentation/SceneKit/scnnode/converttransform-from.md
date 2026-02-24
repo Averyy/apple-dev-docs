@@ -27,7 +27,7 @@ A transform relative to the node’s coordinate space.
 ## Parameters
 
 - `transform`: A transform relative to the local coordinate space defined by the other node.
-- `node`: Another node in the same scene graph as the node, or   to convert from the scene’s world coordinate space.
+- `node`: Another node in the same scene graph as the node, or `nil` to convert from the scene’s world coordinate space.
 
 ## See Also
 

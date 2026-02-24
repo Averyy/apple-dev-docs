@@ -22,9 +22,9 @@ A subclass can override this method to interact with custom glyph storage.
 
 ## Parameters
 
-- `fragmentRect`: The line fragment rectangle where the glyphs in   are laid out.
+- `fragmentRect`: The line fragment rectangle where the glyphs in `glyphRange` are laid out.
 - `glyphRange`: The range of the specified glyphs.
-- `usedRect`: The portion of  , in the NSTextContainer object’s coordinate system, that actually contains glyphs or other marks that are drawn (including the text container’s line fragment padding). The   must be equal to or contained within  .
+- `usedRect`: The portion of `fragmentRect`, in the NSTextContainer object’s coordinate system, that actually contains glyphs or other marks that are drawn (including the text container’s line fragment padding). The `usedRect` must be equal to or contained within `fragmentRect`.
 - `baselineOffset`: The vertical distance in pixels from the line fragment origin to the baseline on which the glyphs align.
 
 ## See Also

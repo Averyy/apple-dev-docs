@@ -22,8 +22,8 @@ init(eoFill: Bool = false, antialiased: Bool = true)
 
 ## Parameters
 
-- `eoFill`: A Boolean value that indicates whether to use the even-odd   rule for rendering a shape. Pass   to use the non-zero winding   number rule instead.
-- `antialiased`: A Boolean value that indicates whether to use   antialiasing when rendering the edges of a shape.
+- `eoFill`: A Boolean value that indicates whether to use the even-odd rule for rendering a shape. Pass `false` to use the non-zero winding number rule instead.
+- `antialiased`: A Boolean value that indicates whether to use antialiasing when rendering the edges of a shape.
 
 
 ---

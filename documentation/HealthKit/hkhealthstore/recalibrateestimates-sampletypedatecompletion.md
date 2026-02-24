@@ -56,7 +56,8 @@ if sixMinuteWalkType.allowsRecalibrationForEstimates {
 
 - `sampleType`: The sample type to recalibrate.
 - `date`: The effective date for the recalibration.
-- `completion`: A completion block that the system calls after recalibrating the data used by the prediction algorithm. The system passes the following parameters:
+- `completion`: A completion block that the system calls after recalibrating the data used by the prediction algorithm. The system passes the following parameters: - **`success`**: A Boolean value that indicates whether the system successfully recalibrated the sample type’s estimates.
+- **`error`**: If `success` is [`false`](https://developer.apple.com/documentation/Swift/false), this parameter contains error information; otherwise, it’s `nil`.
 
 
 ---

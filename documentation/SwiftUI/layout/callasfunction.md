@@ -35,11 +35,11 @@ BasicVStack { // Implicitly calls callAsFunction.
 }
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in .
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
 
 ## Parameters
 
-- `content`: A   that contains the views to   lay out.
+- `content`: A [`ViewBuilder`](viewbuilder.md) that contains the views to lay out.
 
 
 ---

@@ -16,7 +16,7 @@ class CIFilterGenerator
 
 #### Overview
 
-The `CIFilterGenerator` class provides methods for creating a [`CIFilter`](cifilter-swift.class.md) object by chaining together existing `CIFilter` objects to create complex effects. (A  refers to the `CIFilter` objects that are connected in the `CIFilterGenerator` object.) The complex effect can be encapsulated as a [`CIFilterGenerator`](cifiltergenerator.md) object and saved as a file so that it can be used again. The  contains an archived instance  of all the `CIFilter` objects that are chained together.
+The `CIFilterGenerator` class provides methods for creating a [`CIFilter`](cifilter-swift.class.md) object by chaining together existing `CIFilter` objects to create complex effects. (A **filter chain** refers to the `CIFilter` objects that are connected in the `CIFilterGenerator` object.) The complex effect can be encapsulated as a [`CIFilterGenerator`](cifiltergenerator.md) object and saved as a file so that it can be used again. The **filter generator file** contains an archived instance  of all the `CIFilter` objects that are chained together.
 
 Any filter generator files that you copy to `/Library/Graphics/Image Units/` are loaded when any of the loading methods provided by the [`CIPlugIn`](ciplugin.md) class are invoked. A `CIFilterGenerator` object is registered by its filename or, if present, by a class attribute that you supply in its description.
 

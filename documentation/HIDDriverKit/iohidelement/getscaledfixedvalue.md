@@ -21,7 +21,7 @@ Returns a scaled, IOFixed representation of the element value.
 
 ## Parameters
 
-- `type`: The scale type to use. Scale types are defined by the IOHIDValueScaleType enumerator in -  .
+- `type`: The scale type to use. Scale types are defined by the IOHIDValueScaleType enumerator in - [`IOHIDValueScaleType`](iohidvaluescaletype.md).
 
 ## See Also
 

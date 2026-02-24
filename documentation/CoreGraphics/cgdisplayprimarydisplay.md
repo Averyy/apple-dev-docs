@@ -21,9 +21,9 @@ The primary display in the mirror set. If `display` is not hardware-mirrored, th
 
 #### Discussion
 
-In hardware mirroring, the contents of a single framebuffer are rendered in two or more displays simultaneously. The mirrored displays are said to be in a .
+In hardware mirroring, the contents of a single framebuffer are rendered in two or more displays simultaneously. The mirrored displays are said to be in a *hardware mirroring set*.
 
-At the discretion of the device driver, one of the displays in a hardware mirroring set is designated as the  display. The device driver binds the drawing engine, hardware accelerator, and 3D engine to the primary display and directs all drawing operations to this display.
+At the discretion of the device driver, one of the displays in a hardware mirroring set is designated as the *primary* display. The device driver binds the drawing engine, hardware accelerator, and 3D engine to the primary display and directs all drawing operations to this display.
 
 ## Parameters
 

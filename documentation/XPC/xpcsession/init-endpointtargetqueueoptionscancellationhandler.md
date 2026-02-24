@@ -29,9 +29,9 @@ This will throw a XPCRichError if the specified endpoint is invalid or unavailab
 ## Parameters
 
 - `endpoint`: The endpoint to create a session with.
-- `targetQueue`: The GCD queue onto which session events will be submitted.   This may be a concurrent queue. This parameter is optional, if the target queue is   not specified the target queue will be libdispatch’s default target queue, defined as   .
+- `targetQueue`: The GCD queue onto which session events will be submitted. This may be a concurrent queue. This parameter is optional, if the target queue is not specified the target queue will be libdispatch’s default target queue, defined as `DISPATCH_TARGET_QUEUE_DEFAULT`.
 - `options`: Additional attributes which which to create the session.
-- `cancellationHandler`: The cancellation handler block that will be executed when this session is cancelled.   This parameter is optional. See 
+- `cancellationHandler`: The cancellation handler block that will be executed when this session is cancelled. This parameter is optional. See `setCancellationHandler()`
 
 
 ---

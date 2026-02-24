@@ -25,8 +25,8 @@ func setIntersectionFunctionTables(_ intersectionFunctionTables: [(any MTLInters
 
 ## Parameters
 
-- `intersectionFunctionTables`: An array of   instances to bind.
-- `bufferRange`: The argument buffer table indices to bind each of the   to, in the order they appear.
+- `intersectionFunctionTables`: An array of [`MTLIntersectionFunctionTable`](mtlintersectionfunctiontable.md) instances to bind.
+- `bufferRange`: The argument buffer table indices to bind each of the `intersectionFunctionTables` to, in the order they appear.
 
 ## See Also
 

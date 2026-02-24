@@ -47,8 +47,8 @@ If you want to specify the same adaptation for both dimensions, use the [`presen
 
 ## Parameters
 
-- `horizontalAdaptation`: The adaptation to use in a horizontally   compact size class.
-- `verticalAdaptation`: The adaptation to use in a vertically compact   size class. In a size class that is both horizontally and vertically   compact, SwiftUI uses the   value.
+- `horizontalAdaptation`: The adaptation to use in a horizontally compact size class.
+- `verticalAdaptation`: The adaptation to use in a vertically compact size class. In a size class that is both horizontally and vertically compact, SwiftUI uses the `verticalAdaptation` value.
 
 ## See Also
 

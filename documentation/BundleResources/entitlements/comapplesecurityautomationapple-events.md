@@ -8,6 +8,10 @@ A Boolean value that indicates whether the app may prompt the user for permissio
 **Availability**:
 - macOS 10.7+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Your app doesn’t need the Apple Events entitlement if it only sends Apple events to itself or to other processes signed with the same team ID.

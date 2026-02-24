@@ -22,7 +22,7 @@ func set(_ aDictionary: [String : Any]?, forKey aKey: String)
 
 ## Parameters
 
-- `aDictionary`: The dictionary object to save in the iCloud key-value store. The dictionary   must contain only property list types.
+- `aDictionary`: The dictionary object to save in the iCloud key-value store. The dictionary must contain only property list types.
 - `aKey`: The key to associate with the value.
 
 ## See Also

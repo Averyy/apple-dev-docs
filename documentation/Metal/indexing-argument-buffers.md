@@ -27,6 +27,8 @@ struct My_Aggregate_AB {
 
 If the `[[id(n)]]` attribute is omitted for any argument buffer resource, an index ID is automatically assigned according to preset rules:
 
+**Structure Members**
+
 IDs are assigned to structure members in order, starting at 0, by adding 1 to the highest ID used by the previous structure member. The following example shows automatically assigned index IDs for structure members:
 
 ```metal
@@ -35,6 +37,8 @@ struct MaterialTexture {
     float4 uvScaleOffset; // Assigned to index 1
 };
 ```
+
+**Array Elements**
 
 IDs are assigned to array elements in order, starting at 0, by adding 1 to the highest ID used by the previous array elements. The following example shows automatically assigned index IDs for array elements:
 
@@ -48,6 +52,8 @@ struct Material {
 };
 ```
 
+**Nested Structs and Arrays**
+
 If a structure member or array element is itself a structure or array, its own structure members or array elements are assigned indices according to the previous rules. If an ID is provided for a top-level structure or array, this ID becomes the starting index for nested structure members or array elements. The following example shows automatically assigned index IDs for nested structures and arrays:
 
 ```metal
@@ -57,6 +63,8 @@ struct Material {
     MaterialTexture specular;         // Assigned to indices 6-7
 }
 ```
+
+**Combined Argument Buffer Resources and Regular Resources**
 
 Argument buffer resources are assigned generic indices according to the previous rules. Regular resources are assigned type indices in their respective resource argument tables. The following example shows automatically assigned index IDs for combined argument buffer resources and regular resources:
 

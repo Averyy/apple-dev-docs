@@ -31,7 +31,7 @@ The ending point of the arc (that is, the point where a circle of the specified 
 ## Parameters
 
 - `tangent1End`: The end point, in user space coordinates, for the first tangent line to be used in constructing the arc. (The start point for this tangent line is the path’s current point.)
-- `tangent2End`: The end point, in user space coordinates, for the second tangent line to be used in constructing the arc. (The start point for this tangent line is the   point.)
+- `tangent2End`: The end point, in user space coordinates, for the second tangent line to be used in constructing the arc. (The start point for this tangent line is the `tangent1End` point.)
 - `radius`: The radius of the arc, in user space coordinates.
 - `transform`: An affine transform to apply to the arc before adding to the path. Defaults to the identity transform if not specified.
 

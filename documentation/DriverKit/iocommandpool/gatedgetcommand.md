@@ -25,8 +25,8 @@ The gatedGetCommand method is used to serialize the extraction of a command from
 
 ## Parameters
 
-- `command`: A pointer to a pointer to an IOCommand object where the returned   command will be stored.
-- `blockForCommand`: A bool that indicates whether to block the request until a command   becomes available.
+- `command`: A pointer to a pointer to an IOCommand object where the returned command will be stored.
+- `blockForCommand`: A bool that indicates whether to block the request until a command becomes available.
 
 
 ---

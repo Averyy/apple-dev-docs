@@ -24,8 +24,8 @@ If the store supports incremental updates, call this method to add new credentia
 
 ## Parameters
 
-- `credentialIdentities`: An array of   objects to save to the store.
-- `completion`: An optional completion handler to be called after adding the credential identities. If the operation fails, an error with domain   will be provided and none of the objects in credentialIdentities are saved to the store.
+- `credentialIdentities`: An array of [`ASPasswordCredentialIdentity`](aspasswordcredentialidentity.md) objects to save to the store.
+- `completion`: An optional completion handler to be called after adding the credential identities. If the operation fails, an error with domain [`ASCredentialIdentityStoreErrorDomain`](ascredentialidentitystoreerrordomain.md) will be provided and none of the objects in credentialIdentities are saved to the store.
 
 ## See Also
 

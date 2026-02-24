@@ -62,9 +62,9 @@ SwiftUI views choose their own size, so the layout engine always uses a value th
 
 ## Parameters
 
-- `proposal`: A size proposal for the container. The container’s parent   view that calls this method might call the method more than once   with different proposals to learn more about the container’s   flexibility before deciding which proposal to use for placement.
-- `subviews`: A collection of proxies that represent the   views that the container arranges. You can use the proxies in the   collection to get information about the subviews as you determine   how much space the container needs to display them.
-- `cache`: Optional storage for calculated data that you can share among   the methods of your custom layout container. See    for details.
+- `proposal`: A size proposal for the container. The container’s parent view that calls this method might call the method more than once with different proposals to learn more about the container’s flexibility before deciding which proposal to use for placement.
+- `subviews`: A collection of proxies that represent the views that the container arranges. You can use the proxies in the collection to get information about the subviews as you determine how much space the container needs to display them.
+- `cache`: Optional storage for calculated data that you can share among the methods of your custom layout container. See [`makeCache(subviews:)`](layout/makecache(subviews:).md) for details.
 
 ## See Also
 

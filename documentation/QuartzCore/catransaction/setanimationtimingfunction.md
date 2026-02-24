@@ -25,7 +25,7 @@ This is a convenience method that sets the [`CAMediaTimingFunction`](camediatimi
 
 ## Parameters
 
-- `function`: An instance of  .
+- `function`: An instance of `CAMediaTimingFunction`.
 
 ## See Also
 

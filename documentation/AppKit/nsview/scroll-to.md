@@ -20,7 +20,7 @@ The superview of `clipView` should then send a [`scroll(to:)`](nsclipview/scroll
 
 ## Parameters
 
-- `clipView`: The   object whose superview is to be notified.
+- `clipView`: The [`NSClipView`](nsclipview.md) object whose superview is to be notified.
 - `point`: A point that specifies the new origin of the clip view’s bounds rectangle.
 
 ## See Also

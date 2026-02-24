@@ -31,9 +31,9 @@ Rebinding an already bound buffer causes a Metal error.
 
 ## Parameters
 
-- `buffers`: The   instances to bind to the buffer argument table.
+- `buffers`: The [`MTLBuffer`](mtlbuffer.md) instances to bind to the buffer argument table.
 - `offsets`: An array of offsets, each of which specifies where the data begins, in bytes, from the start of its corresponding buffer.
-- `range`: The argument table indices to bind each of the   to, in the order they appear.
+- `range`: The argument table indices to bind each of the `buffers` to, in the order they appear.
 
 ## See Also
 

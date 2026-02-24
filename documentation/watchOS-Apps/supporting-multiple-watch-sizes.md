@@ -23,6 +23,9 @@ Most watches have rounded corners that may clip scrolling content. Some also ben
 
 The system provides the following tools to help you manage your content:
 
+- **Safe area insets**: Defines the area on the screen where you can safely display content. The safe area is the region below the status bar that avoids the rounded corners.
+- **Scene padding**: Provides the same leading and trailing margin as the navigation and status bars. This padding also ensures that the watch’s bevel doesn’t distort the content.
+
 Apple Watch uses system-defined safe areas to keep content from getting too close to the edge of the screen. By default, SwiftUI views fill the safe area: scrolling content, such as list views, automatically settle within the safe areas. Override the safe area only when necessary, such as when you need content like background images or colors to extend to the screen edges. To disable the safe area, use the [`ignoresSafeArea(_:edges:)`](https://developer.apple.com/documentation/SwiftUI/View/ignoresSafeArea(_:edges:)) view modifier. However, keep most interactive content within the safe area for optimal usability.
 
 The following example demonstrates extending a background image to fill the entire screen while keeping text readable within the safe area:

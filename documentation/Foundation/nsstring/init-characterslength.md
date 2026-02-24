@@ -26,8 +26,8 @@ An initialized `NSString` object containing `length` characters taken from `char
 
 ## Parameters
 
-- `characters`: A C array of UTF-16 code units; the value must not be  .
-- `length`: The number of characters to use from  .
+- `characters`: A C array of UTF-16 code units; the value must not be `NULL`. > ❗ **Important**:  Raises an exception if `characters` is `NULL`, even if `length` is `0`.
+- `length`: The number of characters to use from `characters`.
 
 ## See Also
 

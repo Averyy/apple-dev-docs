@@ -25,10 +25,10 @@ The [`processEditing()`](nstextstorage/processediting().md) method of [`NSTextSt
 ## Parameters
 
 - `textStorage`: The text storage object processing edits.
-- `editMask`: The types of edits done:  ,  , or both.
+- `editMask`: The types of edits done: `NSTextStorageEditedAttributes`, `NSTextStorageEditedCharacters`, or both.
 - `newCharRange`: The range in the final string that was explicitly edited.
 - `delta`: The length delta for the editing changes.
-- `invalidatedCharRange`: The range of characters that changed as a result of attribute fixing. This invalidated range is either equal to   or larger.
+- `invalidatedCharRange`: The range of characters that changed as a result of attribute fixing. This invalidated range is either equal to `newCharRange` or larger.
 
 ## See Also
 

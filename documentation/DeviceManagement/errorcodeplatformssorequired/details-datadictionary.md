@@ -20,6 +20,12 @@ object ErrorCodePlatformSSORequired.Details
 - [object ErrorCodePlatformSSORequired.Details.Package](errorcodeplatformssorequired/details-data.dictionary/package-data.dictionary.md)
   A dictionary that specifies the package that the device uses to install an app with the SSO app extension used for Platform SSO.
 
+## Properties
+
+- `AuthURL` (string) *(required)*: The URL the device uses to create an `ASWebAuthenticationSession` to trigger Platform SSO authentication, once the profile and app are installed.
+- `Package` (ErrorCodePlatformSSORequired.Details.Package) *(required)*: A dictionary that specifies the package that the device uses to install an app with the SSO app extension used for Platform SSO.
+- `ProfileURL` (string) *(required)*: The URL of the profile containing an [`ExtensibleSingleSignOn`](extensiblesinglesignon.md) profile payload that the device uses to configure the SSO extension for Platform SSO.
+
 
 ---
 

@@ -23,7 +23,7 @@ A context object for managing the preview. This object conforms to the [`UIViewC
 
 #### Discussion
 
-A preview, or  in end-user terminology, provides additional content related to the view the user pressed (that is, related to the `sourceView` view).
+A preview, or *peek* in end-user terminology, provides additional content related to the view the user pressed (that is, related to the `sourceView` view).
 
 Calling this method does three things:
 
@@ -37,8 +37,8 @@ The lifetime of this method’s returned context object is managed by the system
 
 ## Parameters
 
-- `delegate`: The delegate object mediates the presentation of views from the preview (peek) view controller and the commit (pop) view controller. In practice, these two are typically the same view controller. The delegate performs this mediation through your implementation of the methods of the   protocol.
-- `sourceView`: When lightly pressed, the source view remains visually sharp while surrounding content blurs. When pressed more deeply, the system calls the   method in your   object, which presents the preview (peek) view from another view controller.
+- `delegate`: The delegate object mediates the presentation of views from the preview (peek) view controller and the commit (pop) view controller. In practice, these two are typically the same view controller. The delegate performs this mediation through your implementation of the methods of the [`UIViewControllerPreviewingDelegate`](uiviewcontrollerpreviewingdelegate.md) protocol.
+- `sourceView`: The view, in the view hierarchy of the receiver of this method call, that invokes a preview when pressed by the user. When lightly pressed, the source view remains visually sharp while surrounding content blurs. When pressed more deeply, the system calls the [`previewingContext(_:viewControllerForLocation:)`](uiviewcontrollerpreviewingdelegate/previewingcontext(_:viewcontrollerforlocation:).md) method in your `delegate` object, which presents the preview (peek) view from another view controller.
 
 ## See Also
 

@@ -25,7 +25,7 @@ func nw_connection_receive(_ connection: nw_connection_t, _ minimum_incomplete_l
 - `connection`: A network connection instance.
 - `minimum_incomplete_length`: The minimum length to receive from the connection, until the content is complete.
 - `maximum_length`: The maximum length to receive from the connection in a single completion.
-- `completion`: The completion delivers the received content, which may be nil if the message is complete or an error occurred, the message context, a flag indicating if the message is complete, and any associated error.
+- `completion`: A receive completion is invoked exactly once for a call to receive. The completion indicates that the requested content has been received (in which case the content is delivered), or else an error has occurred. The completion delivers the received content, which may be nil if the message is complete or an error occurred, the message context, a flag indicating if the message is complete, and any associated error.
 
 ## See Also
 

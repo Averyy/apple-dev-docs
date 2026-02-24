@@ -25,9 +25,9 @@ An app extension should not use the index passed in `searchableIndex` when a cus
 
 ## Parameters
 
-- `searchableIndex`: The index in which to reindex the specified searchable data. To update the state of the items, the delegate or app extension should call   passing in  .
+- `searchableIndex`: The index in which to reindex the specified searchable data. To update the state of the items, the delegate or app extension should call [`indexSearchableItems(_:completionHandler:)`](cssearchableindex/indexsearchableitems(_:completionhandler:).md) passing in `searchableIndex`.
 - `identifiers`: An array of identifiers that specify searchable items.
-- `acknowledgementHandler`: The delegate or app extension must call the acknowledgement handler after all client state information has been saved, so that the indexer can call this method again in case of a crash.
+- `acknowledgementHandler`: The handler to call after all client state has been saved. Note that if the app passes client state information in a batch (for example, by calling [`endBatch(withClientState:completionHandler:)`](cssearchableindex/endbatch(withclientstate:completionhandler:).md)), the acknowledgement handler can be called immediately. The delegate or app extension must call the acknowledgement handler after all client state information has been saved, so that the indexer can call this method again in case of a crash.
 
 ## See Also
 

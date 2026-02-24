@@ -30,7 +30,7 @@ When you provide a custom interface for managing matches, use this method to pro
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameter: - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

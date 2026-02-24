@@ -22,8 +22,8 @@ Sets the orientation of the entity relative to the given reference entity.
 
 ## Parameters
 
-- `orientation`: A new orientation, relative to  .
-- `referenceEntity`: The entity that defines a frame of reference. Set   this to   to indicate world space.
+- `orientation`: A new orientation, relative to `referenceEntity`.
+- `referenceEntity`: The entity that defines a frame of reference. Set this to `nil` to indicate world space.
 
 ## See Also
 

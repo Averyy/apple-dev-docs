@@ -8,8 +8,8 @@ Learn how to set up nodes for collision detection.
 
 SpriteKit supports two kinds of interaction between physics bodies that come into contact or attempt to occupy the same space:
 
-- A  is used when you need to know that two bodies are touching each other. In most cases, you use contacts when you need to make gameplay changes when a collision occurs.
-- A  is used to prevent two objects from interpenetrating each other. When one body strikes another body, SpriteKit automatically computes the results of the collision and applies impulse to the bodies in the collision.
+- A *contact* is used when you need to know that two bodies are touching each other. In most cases, you use contacts when you need to make gameplay changes when a collision occurs.
+- A *collision* is used to prevent two objects from interpenetrating each other. When one body strikes another body, SpriteKit automatically computes the results of the collision and applies impulse to the bodies in the collision.
 
 ##### Interaction Limits
 

@@ -18,8 +18,8 @@ case labeledVideoData(table: MLDataTable, videoColumn: String = __Defaults.video
 
 - `table`: A data table that contains the video file locations and the action annotations.
 - `videoColumn`: The name of the column that contains the URLs to the video files.
-- `labelColumn`: The name of the column that contains the labels of the action the person demonstrates in   the video file.
-- `startTimeColumn`: The name of the column that contains the action’s starting-time index in the video   file.
+- `labelColumn`: The name of the column that contains the labels of the action the person demonstrates in the video file.
+- `startTimeColumn`: The name of the column that contains the action’s starting-time index in the video file.
 - `endTimeColumn `: The name of the column that contains the action’s ending-time index in the video file.
 
 ## See Also

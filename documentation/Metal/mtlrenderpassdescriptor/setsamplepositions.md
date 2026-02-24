@@ -29,7 +29,7 @@ If the length of the array is `0`, the GPU uses the default sample positions for
 
 ## Parameters
 
-- `positions`: An array of programmable sample positions for the render pass with the   the same number of elements as the render pass sample count,   or an empty array to disable custom sample positions.
+- `positions`: An array of programmable sample positions for the render pass with the the same number of elements as the render pass sample count, or an empty array to disable custom sample positions.
 
 ## See Also
 

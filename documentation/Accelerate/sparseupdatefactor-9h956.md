@@ -31,7 +31,7 @@ Supported techniques are:
 ## Parameters
 
 - `updateAlgorithm`: The update algorithm to use
-- `Factorization`: The existing factorization to be updated. The existing factorization will   be modified and will no longer solve  .
+- `Factorization`: The existing factorization to be updated. The existing factorization will be modified and will no longer solve `AX=B`.
 - `updateCount`: Number of updated entries or columns
 - `updatedIndices`: List of updated indices, interpreted as described above
 - `Update`: The updated entries.

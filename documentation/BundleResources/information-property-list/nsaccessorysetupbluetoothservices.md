@@ -9,6 +9,10 @@ An array of strings that represent the hexadecimal values of Bluetooth SIG-defin
 - iOS 18.0+
 - iPadOS 18.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 Each value is a 16- or 128-bit UUID that represents either a Bluetooth Special Interest Group (SIG)-registered service or a custom service.

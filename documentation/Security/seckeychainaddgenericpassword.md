@@ -30,14 +30,14 @@ This function automatically calls the function [`SecKeychainUnlock(_:_:_:_:)`](s
 
 ## Parameters
 
-- `keychain`: A reference to the keychain in which to store a generic password. Pass   to specify the default keychain.
-- `serviceNameLength`: The length of the   character string.
+- `keychain`: A reference to the keychain in which to store a generic password. Pass `NULL` to specify the default keychain.
+- `serviceNameLength`: The length of the `serviceName` character string.
 - `serviceName`: A UTF-8 encoded character string representing the service name.
-- `accountNameLength`: The length of the   character string.
+- `accountNameLength`: The length of the `accountName` character string.
 - `accountName`: A UTF-8 encoded character string representing the account name.
-- `passwordLength`: The length of the   buffer.
+- `passwordLength`: The length of the `passwordData` buffer.
 - `passwordData`: A pointer to a buffer containing the password data to be stored in the keychain. Before calling this function, allocate enough memory for the buffer to hold the data you want to store.
-- `itemRef`: On return, a pointer to a reference to the new keychain item. Pass   if you don’t want to obtain this object. You must allocate the memory for this pointer. You must call the   function to release this object when you are finished using it.
+- `itemRef`: On return, a pointer to a reference to the new keychain item. Pass `NULL` if you don’t want to obtain this object. You must allocate the memory for this pointer. You must call the `CFRelease` function to release this object when you are finished using it.
 
 
 ---

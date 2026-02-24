@@ -20,7 +20,7 @@ func ensureLayout(for range: NSTextRange)
 
 ## Parameters
 
-- `range`: The   that describes the content to lay out.
+- `range`: The [`NSTextRange`](nstextrange.md) that describes the content to lay out.
 
 ## See Also
 

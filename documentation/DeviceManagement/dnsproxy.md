@@ -87,6 +87,13 @@ Beginning with iOS 15, this profile is unsupervised and needs to be installed th
 - [object DNSProxy.ProviderConfiguration](dnsproxy/providerconfiguration-data.dictionary.md)
   The dictionary of vendor-specific configuration items.
 
+## Properties
+
+- `AppBundleIdentifier` (string) *(required)*: The bundle identifier of the app containing the DNS proxy network extension.
+- `DNSProxyUUID` (string): A globally unique identifier for this DNS proxy configuration. The proxy processes DNS lookups traffic for managed apps with the same `DNSProxyUUID` in their app attributes. This key is required for user enrollment.
+- `ProviderBundleIdentifier` (string): The bundle identifier of the DNS proxy network extension to use. Declaring the bundle identifier is useful for apps that contain more than one DNS proxy extension.
+- `ProviderConfiguration` (DNSProxy.ProviderConfiguration): The dictionary of vendor-specific configuration items.
+
 ## See Also
 
 - [object GlobalHTTPProxy](globalhttpproxy.md)

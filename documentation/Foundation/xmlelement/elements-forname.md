@@ -21,7 +21,7 @@ An array of of `NSXMLElement` objects or an empty array if no matching children 
 
 ## Parameters
 
-- `name`: A string specifying the name of the child element nodes to find and return. If   is a qualified name, then this method invokes   with the URI parameter set to the URI associated with the prefix. Otherwise comparison is based on string equality of the qualified or non-qualified name.
+- `name`: A string specifying the name of the child element nodes to find and return. If `name` is a qualified name, then this method invokes [`elements(forLocalName:uri:)`](xmlelement/elements(forlocalname:uri:).md) with the URI parameter set to the URI associated with the prefix. Otherwise comparison is based on string equality of the qualified or non-qualified name.
 
 ## See Also
 

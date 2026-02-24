@@ -21,7 +21,7 @@ An AudioHardwareAggregateDevice representing the newly created aggregate device.
 
 ## Parameters
 
-- `description`: The Dictionary that specifies how to build the aggregate device.   The supported keys are described in the AudioAggregateDevice Constants section of   AudioHardware.h.
+- `description`: The Dictionary that specifies how to build the aggregate device. The supported keys are described in the AudioAggregateDevice Constants section of AudioHardware.h.
 
 
 ---

@@ -26,15 +26,15 @@ A subset of the font created from the supplied parameters.
 
 #### Discussion
 
-For more information on PostScript format, see , which is available from [`http://partners.adobe.com/`](https://developer.apple.comhttp://partners.adobe.com/).
+For more information on PostScript format, see *Adobe Type 1 Font Format*, which is available from [`http://partners.adobe.com/`](https://developer.apple.comhttp://partners.adobe.com/).
 
 ## Parameters
 
 - `subsetName`: The name of the subset.
 - `format`: The PostScript format of the font.
 - `glyphs`: An array that contains the glyphs in the subset.
-- `count`: The number of glyphs specified by the   array.
-- `encoding`: The default encoding for the subset. You can pass   if you do not want to specify an encoding.
+- `count`: The number of glyphs specified by the `glyphs` array.
+- `encoding`: The default encoding for the subset. You can pass `nil` if you do not want to specify an encoding.
 
 ## See Also
 

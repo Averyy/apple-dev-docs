@@ -28,7 +28,7 @@ Supply the values in `data` in the range `0 ... 65535`, the function interprets 
 
 - `entryCountPerSourceChannel`: An array that contains the number of table entries for each dimension of the lookup table.
 - `destinationChannelCount`: The number of destination channels.
-- `data`: The lookup table data. The lookup table must contain the product of the values in   multiplied by  .
+- `data`: The lookup table data. The lookup table must contain the product of the values in [`destinationChannelCount`](vimage/multidimensionallookuptable/destinationchannelcount.md) multiplied by [`destinationChannelCount`](vimage/multidimensionallookuptable/destinationchannelcount.md).
 
 
 ---

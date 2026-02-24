@@ -12,6 +12,13 @@ Apple Pencil is an input accessory for iPad that people rely on for tasks like d
 
 As you optimize your app for iPad, there are many ways you can enhance it with Apple Pencil features. Choose the features that make the most sense in the context of your app, and adopt those features using APIs from PencilKit, SwiftUI, and UIKit.
 
+- ****Drawing****: Apple Pencil integrates seamlessly with PencilKit, a framework that lets you incorporate hand-drawn content into your app. PencilKit provides tools for creating, erasing, and selecting pencil strokes on a drawing canvas. You can also implement drawing with high-precision touches from UIKit. Input from Apple Pencil provides data like azimuth, altitude, roll angle, and the amount of force recorded at its tip, which you can use to create rich drawing experiences.
+- ****Handwriting****: With Apple Pencil, people can enter handwritten text in any text field, and Scribble automatically converts their handwriting into typed text input. Scribble is available in multiple languages and is on by default. You can also customize Scribble behavior to meet your app’s needs using the Scribble API in UIKit.
+- ****Double tap and squeeze****: People can double-tap and squeeze certain models of Apple Pencil to perform actions quickly. People choose which action they want to perform in response to a double tap or squeeze in Settings, or you can implement a custom action that’s specific to your app. You handle a double tap or squeeze using SwiftUI or UIKit.
+- ****Haptics****: Apple Pencil Pro can provide tactile feedback by playing haptics. Used sparingly and consistently, haptic feedback can enhance the experience of using Apple Pencil Pro to perform tasks like snapping objects to a grid. You provide haptic feedback using the sensory feedback API in SwiftUI or the feedback generators API in UIKit.
+- ****Hover****: When a person holds a supported model of Apple Pencil close above the screen without touching it, the pencil can provide information about the distance of the tip from the screen. You can use this hover distance to create more expressive drawing and input experiences with Apple Pencil. You get this information using hover gestures in UIKit.
+- ****Pointers****: Apple Pencil can behave similar to a pointer, like a trackpad or mouse. For example, you can configure your views to provide visual feedback when a person holds Apple Pencil over the view. Add visual feedback to your views during hover using hover events in SwiftUI or pointer interactions in UIKit.
+
 For more details on Apple Pencil features and compatibility, see [`Apple Pencil`](https://developer.apple.comhttps://www.apple.com/apple-pencil/).
 
 ###### Related Videos

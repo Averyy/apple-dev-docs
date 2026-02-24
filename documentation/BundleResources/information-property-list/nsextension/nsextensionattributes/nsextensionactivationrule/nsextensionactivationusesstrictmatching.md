@@ -11,6 +11,10 @@ A Boolean value indicating whether strict or fuzzy matching is used when determi
 - macOS 10.11+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [NSExtensionActivationDictionaryVersion](information-property-list/nsextension/nsextensionattributes/nsextensionactivationrule/nsextensionactivationdictionaryversion.md)

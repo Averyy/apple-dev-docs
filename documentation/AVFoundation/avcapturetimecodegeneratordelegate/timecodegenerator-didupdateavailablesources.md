@@ -21,8 +21,8 @@ func timecodeGenerator(_ generator: AVCaptureTimecodeGenerator, didUpdateAvailab
 
 ## Parameters
 
-- `generator`: The   instance providing the source list update.
-- `availableSources`: An array of   objects representing the available timecode synchronization sources.
+- `generator`: The [`AVCaptureTimecodeGenerator`](avcapturetimecodegenerator.md) instance providing the source list update.
+- `availableSources`: An array of [`AVCaptureTimecode.Source`](avcapturetimecode/source.md) objects representing the available timecode synchronization sources.
 
 ## See Also
 

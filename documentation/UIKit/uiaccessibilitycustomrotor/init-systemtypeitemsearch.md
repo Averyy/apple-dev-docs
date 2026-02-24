@@ -24,7 +24,7 @@ An initialized rotor object.
 
 ## Parameters
 
-- `type`: The type of content navigated by the rotor. For a list of possible values, see  .
+- `type`: The type of content navigated by the rotor. For a list of possible values, see [`UIAccessibilityCustomRotor.SystemRotorType`](uiaccessibilitycustomrotor/systemrotortype-swift.enum.md).
 - `itemSearchBlock`: The block that provides the next or previous rotor for the given type.
 
 ## See Also

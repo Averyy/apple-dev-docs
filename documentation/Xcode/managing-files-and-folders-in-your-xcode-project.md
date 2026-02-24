@@ -41,12 +41,19 @@ The final step is to save your file to the file system. When Xcode prompts you f
 Xcode offers several ways to add existing files and folders to your project. You can:
 
 - Drag the files from the Finder into the Project navigator.
-- Click the Add button (+) in the Project navigator’s filter bar, and choose Add Files to “”.
-- Choose File > Add Files to “”.
+- Click the Add button (+) in the Project navigator’s filter bar, and choose Add Files to “*projectName*”.
+- Choose File > Add Files to “*projectName*”.
 
 Xcode prompts you to select the files and folders to add and configure how you want to add them to your project. If the file you’re adding requires a target, select at least one target. Then, select one of the following options from the Action picker:
 
+- **Copy files to destination**: Copies all files and folders to the project folder before adding them to the Project navigator. Use this option to work on a copy of the files, instead of the original versions.
+- **Move files to destination**: Moves all files and folders to the project folder from the original source. Use this option to work on the original files and remove them from their original location on disk.
+- **Reference files in place**: Leaves the files in their original location on disk, and adds a reference to them from your project. Use this option when you want to store files separately, outside of your Xcode project but you still want to be able to use them in your project.
+
 Next from the Group picker, choose how you want to group folders:
+
+- **Create groups**: Creates a group structure in your project that matches the structure of the selected files and folders on disk. Xcode creates a group in the Project navigator for each folder you add, and it adds the contents of the folder to that group. Choose this option when you want the group structure in Xcode to differ from the directory structure on disk, or you want to reference files outside your project.
+- **Create folders**: Displays the folders in the Project navigator, and either copies, moves, or references files depending on the selection you make in the Action picker. In the Project navigator, each added folder points to a folder in the file system. Choose this option when you want your Project navigator folders to match the file and directory structure on disk, and to minimize changes to your project file when you add or remove files.
 
 When adding a local Swift Package’s folder to your project, perform the following additional steps:
 
@@ -66,11 +73,23 @@ Most new projects contain some structure to organize the project’s content �
 
 In the Project navigator, create and modify groups using direct interaction or menu commands:
 
+- **Create a new group backed by a folder**: Select an item and choose File > New > Group, or Control-click the item and select New Group from the contextual menu.
+- **Create a group and move items to it**: Select the items and choose File > New > Group from Selection, or Control-click the selected items and select New Group from Selection.
+- **Create a new folder**: Select the item and choose File > New > Folder, or Control-click the selected item and select New Folder.
+- **Create a new folder and move items to it**: Select the items and choose File > New > Folder from Selection, or Control-click the selected items and select New Folder from Selection
+- **Rename a file or group**: Double-click the file or group, and enter the new name.
+- **Change a group’s associated folder**: Select the group and choose View > Inspectors > Show File Inspector. Drag the new folder from the Finder to the old folder name under Location in the File inspector.
+- **Create a new group without a folder**: Control-click the item, then press and hold the Option key and select New Group without Folder from the contextual menu.
+- **Create a group without a folder and move items to it**: Control-click the item, then press and hold the Option key and select New Group from Selection without Folder from the contextual menu.
+
 > ❗ **Important**: If a group is associated with a folder, Xcode performs all rename, delete, move, and copy operations on the folder in the file system. For projects under source control, Xcode uses the source-control system to perform the operations and track the changes. If you move files between groups in the same Git repository, Xcode moves the files in the file system. If the files are in different repositories, Xcode copies the files into the folder in the new repository.
 
 ##### Delete Files and Folders
 
 To delete a file or folder from your project, select it and press the Delete key, or select Edit > Delete. Xcode prompts you to choose how to delete any selected items.
+
+- **Move to Trash**: This option removes files and folders from your project and the file system. Choose this option when you no longer need the information in the files.
+- **Remove Reference**: This option removes files and folders only from your project. Xcode doesn’t remove them from the file system.
 
 ##### Convert Groups to Folders
 

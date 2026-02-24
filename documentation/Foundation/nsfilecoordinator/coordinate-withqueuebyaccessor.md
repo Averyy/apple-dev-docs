@@ -61,8 +61,8 @@ For both reading and writing, if there are multiple file presenters involved, th
 ## Parameters
 
 - `intents`: An array of file access intent objects, representing the individual read and write operations.
-- `queue`: The operation queue on which the accessor block is executed. The queue must not be  .
-- `accessor`: Do not attempt to access the files if the error parameter contains a non-  value.
+- `queue`: The operation queue on which the accessor block is executed. The queue must not be `nil`.
+- `accessor`: A [`Block object`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) containing the file operations corresponding to the file access intent objects in the intents array. The accessor block takes the following parameter: - **error**: If an error occurs while waiting for access, this parameter contains an `NSError` object that describes the problem. If access is successfully granted, it is set to `nil`, and you may perform the intended file access. Do not attempt to access the files if the error parameter contains a non-`nil` value.
 
 
 ---

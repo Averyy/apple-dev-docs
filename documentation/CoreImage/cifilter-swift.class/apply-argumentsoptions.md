@@ -24,7 +24,7 @@ If you are implementing a custom filter, this method needs to be called from wit
 
 ## Parameters
 
-- `k`: A   object that contains a kernel function.
+- `k`: A `CIKernel` object that contains a kernel function.
 - `args`: The arguments that are type compatible with the function signature of the kernel function.
 - `dict`: A dictionary that contains options (key-value pairs) to control how the kernel function is evaluated.
 

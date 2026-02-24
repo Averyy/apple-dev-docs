@@ -9,6 +9,10 @@ A dictionary that identifies which apps or installer packages the operating syst
 - Mac Catalyst 16.0+
 - macOS 13.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 The `NSUpdateSecurityPolicy` property list key describes a security policy dictionary that defines the processes and packages that the system allows to modify an app’s bundle. You specify these by Team ID (any package signed by that team), or Team IDs and signing identifiers (to identify a specific executable) signed by a team.
@@ -28,7 +32,7 @@ To add the `NSUpdateSecurityPolicy` key to your app’s `info.plist` file, follo
 
 1. In Xcode, select your app’s target from the Target navigator, and then select the source editor pane in the detail section.
 2. Control-click the last item in the list, and choose Add Row from the drop-down menu.
-3. Edit the text for the new row, replacing the existing text with , and press Return.
+3. Edit the text for the new row, replacing the existing text with *NSUpdateSecurityPolicy*, and press Return.
 4. Control-click  the Type field for the new row and choose Dictionary from the drop-down menu.
 5. Click the disclosure triangle next to the new NSUpdateSecurityPolicy dictionary to open it (the arrow needs to point down). This ensures that in the next steps, the editor adds elements inside the dictionary, and not as separate items parallel to it in the property list.
 
@@ -39,16 +43,16 @@ The newly created, empty `NSUpdateSecurityPolicy` dictionary in your app’s pro
 Next, add one or both subcomponents to the security policy dictionary depending on your app’s update policy requirements. To allow any installer package signed by a specific Team ID, add an `AllowPackages` array to the `NSUpdateSecurityPolicy` dictionary. Using this key, the operating system allows any installer package signed by the specified Team IDs in this array to write content into the app’s bundle.
 
 1. Control-click the NSUpdateSecurityPolicy row in the property list and choose Add Row.
-2. Edit the row name, replacing the default text with  and press Return.
+2. Edit the row name, replacing the default text with *AllowPackages* and press Return.
 3. Control-click the new AllowPackages row’s Type drop-down menu and choose Array.
 4. Control-click the new AllowPackages row and choose Add Row. This adds a new element to the `AllowPackages` array.
 5. Set the value of the new array element to the Team ID of the team whose installers you’re authorizing to update this app.
 6. Repeat steps 4 and 5 for each additional team whose installers you want to authorize.
 
-To allow specific apps from specific teams to write to this app’s bundle, add an `AllowProcesses` dictionary to the `NSUpdateSecurityPolicy` dictionary. Using this key, and it’s subdictionaries, the operating system allows specific apps defined by both a Team ID and signing ID (also called a ) to write content into this app’s bundle.
+To allow specific apps from specific teams to write to this app’s bundle, add an `AllowProcesses` dictionary to the `NSUpdateSecurityPolicy` dictionary. Using this key, and it’s subdictionaries, the operating system allows specific apps defined by both a Team ID and signing ID (also called a *bundle ID*) to write content into this app’s bundle.
 
 1. Control-click the NSUpdateSecurityPolicy row in the property list and choose Add Row.
-2. Edit the row name, replacing the default text with  and press Return.
+2. Edit the row name, replacing the default text with *AllowProcesses* and press Return.
 3. Control-click the new AllowProcesses row’s Type drop-down menu and choose Dictionary.
 4. Control-click the new AllowProcesses row and choose Add Row. This adds a new element to the AllowProcesses dictionary.
 5. Control-click the new row’s Type drop-down menu, and choose Dictionary. Set the new row’s name to be the Team ID of the app or apps you want to allow to update this app’s bundle.

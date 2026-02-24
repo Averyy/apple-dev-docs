@@ -23,7 +23,7 @@ mutating func allocate<T>(as scalarType: T.Type, count: Int) where T : BNNSScala
 ## Parameters
 
 - `scalarType`: The data type.
-- `count`: The allocation size represented by the count of   elements.
+- `count`: The allocation size represented by the count of `scalarType` elements.
 
 
 ---

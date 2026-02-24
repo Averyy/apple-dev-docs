@@ -30,7 +30,7 @@ It’s usually not necessary to create a revocation policy yourself unless you w
 
 ## Parameters
 
-- `revocationFlags`: Flags that specify revocation checking options. See   for a list of possible values.
+- `revocationFlags`: Flags that specify revocation checking options. See [`Revocation Policy Constants`](revocation-policy-constants.md) for a list of possible values.
 
 
 ---

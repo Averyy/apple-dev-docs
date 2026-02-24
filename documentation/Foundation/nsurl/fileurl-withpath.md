@@ -36,7 +36,7 @@ As an alternative, consider using [`fileURL(withPath:isDirectory:)`](nsurl/fileu
 
 ## Parameters
 
-- `path`: The path that the NSURL object will represent.   should be a valid system path, and must not be an empty path. If   begins with a tilde, it must first be expanded with  . If   is a relative path, it is treated as being relative to the current working directory.
+- `path`: The path that the NSURL object will represent. `path` should be a valid system path, and must not be an empty path. If `path` begins with a tilde, it must first be expanded with [`expandingTildeInPath`](nsstring/expandingtildeinpath.md). If `path` is a relative path, it is treated as being relative to the current working directory.
 
 ## See Also
 

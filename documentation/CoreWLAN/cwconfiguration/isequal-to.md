@@ -16,7 +16,7 @@ func isEqual(to configuration: CWConfiguration) -> Bool
 
 #### Return Value
 
- if the objects are equal.
+*YES* if the objects are equal.
 
 #### Discussion
 

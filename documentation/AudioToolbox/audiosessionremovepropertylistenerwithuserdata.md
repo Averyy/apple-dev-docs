@@ -27,13 +27,13 @@ Audio session properties are listed and described in [`Audio Session Property Id
 
 - `inID`: The identifier for the audio session property whose value changes you no longer want to listen for.
 - `inProc`: The name of your property listener callback function.
-- `inClientData`: The same custom data for the property listener callback that you passed when calling the   function.
+- `inClientData`: The same custom data for the property listener callback that you passed when calling the [`AudioSessionAddPropertyListener(_:_:_:)`](audiosessionaddpropertylistener(_:_:_:).md) function.
 
 ## See Also
 
 - [func AudioFileReadPackets(AudioFileID, Bool, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioStreamPacketDescription>?, Int64, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer?) -> OSStatus](audiofilereadpackets(_:_:_:_:_:_:_:).md)
   Reads a fixed duration of audio data from an audio file.
-- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:).md)
+- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:_:).md)
   The UIImage of the audio component’s icon.
 - [func AudioComponentGetLastActiveTime(AudioComponent) -> CFAbsoluteTime](audiocomponentgetlastactivetime(_:).md)
   The time at which the application publishing the component was last active.

@@ -17,7 +17,7 @@ func setValues(_ vals: UnsafePointer<GLint>, for param: NSOpenGLContext.Paramete
 ## Parameters
 
 - `vals`: The new value (or values) for the parameter.
-- `param`: The parameter you want to modify. For a list of parameters, see  .
+- `param`: The parameter you want to modify. For a list of parameters, see [`NSOpenGLContext.Parameter`](nsopenglcontext/parameter.md).
 
 ## See Also
 

@@ -25,7 +25,7 @@ If the `CVPixelBuffer` has a Clean Aperture rectangle then only pixels within th
 
 ## Parameters
 
-- `buffer`: A mutable   for which to calculate and attach statistics.
+- `buffer`: A mutable `CVPixelBuffer` for which to calculate and attach statistics.
 
 
 ---

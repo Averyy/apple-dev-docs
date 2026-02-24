@@ -25,7 +25,7 @@ A `UIHostingController` object initialized with the specified SwiftUI view.
 
 ## Parameters
 
-- `rootView`: The root view of the SwiftUI view hierarchy that   you want to manage using the hosting view controller.
+- `rootView`: The root view of the SwiftUI view hierarchy that you want to manage using the hosting view controller.
 
 ## See Also
 

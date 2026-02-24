@@ -28,7 +28,7 @@ The system calls this method to notify your event service when a new report arri
 - `reportLength`: The length of the report in bytes.
 - `type`: The report type.
 - `report`: A memory descriptor that contains the raw data for the report.
-- `action`: The   object that handles the asynchronous report callback.
+- `action`: The `OSAction` object that handles the asynchronous report callback.
 
 ## See Also
 

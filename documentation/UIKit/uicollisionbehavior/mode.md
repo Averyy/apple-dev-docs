@@ -26,7 +26,7 @@ struct Mode
 - [static var boundaries: UICollisionBehavior.Mode](uicollisionbehavior/mode/boundaries.md)
   Specifies that the dynamic items, associated with the collision behavior, collide only with specified collision boundaries and don’t collide with each other.
 - [static var everything: UICollisionBehavior.Mode](uicollisionbehavior/mode/everything.md)
-  Specifies that the dynamic items, associated with the collision behavior, collide with each other  with specified collision boundaries.
+  Specifies that the dynamic items, associated with the collision behavior, collide with each other *and* with specified collision boundaries.
 ### Initializers
 - [init(rawValue: UInt)](uicollisionbehavior/mode/init(rawvalue:).md)
   Creates a collision behavior mode structure with the specified raw value.

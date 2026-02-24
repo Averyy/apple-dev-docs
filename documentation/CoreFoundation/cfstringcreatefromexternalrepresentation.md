@@ -32,7 +32,7 @@ The [`CFStringCreateExternalRepresentation(_:_:_:_:)`](cfstringcreateexternalrep
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new string. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `data`: The CFData object containing bytes that hold the characters in the specified encoding.
 - `encoding`: The encoding to use when interpreting the bytes in the data argument.
 

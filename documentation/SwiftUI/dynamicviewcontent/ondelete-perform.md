@@ -31,7 +31,7 @@ A view that calls `action` when elements are deleted from the original view.
 
 ## Parameters
 
-- `action`: The action that you want SwiftUI to perform when   elements in the view are deleted. SwiftUI passes a set of indices to the   closure that’s relative to the dynamic view’s underlying collection of   data.
+- `action`: The action that you want SwiftUI to perform when elements in the view are deleted. SwiftUI passes a set of indices to the closure that’s relative to the dynamic view’s underlying collection of data.
 
 ## See Also
 

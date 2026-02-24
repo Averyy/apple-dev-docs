@@ -22,8 +22,8 @@ func MTLSizeMake(_ width: Int, _ height: Int, _ depth: Int) -> MTLSize
 ## Parameters
 
 - `width`: A value for the x-axis dimension.
-- `height`: A value for the y-axis dimension.   Pass   for sizes with one dimension.
-- `depth`: A value for the z-axis dimension.   Pass   for sizes with one or two dimensions.
+- `height`: A value for the y-axis dimension. Pass `1` for sizes with one dimension.
+- `depth`: A value for the z-axis dimension. Pass `1` for sizes with one or two dimensions.
 
 ## See Also
 

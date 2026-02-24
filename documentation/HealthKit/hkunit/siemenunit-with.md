@@ -27,9 +27,21 @@ A HealthKit unit for measuring electrical conductance based on siemens and the p
 
 This method is used to create prefixed versions of siemens. HealthKit often records electrodermal activity in microsiemens, as shown below.
 
+**Swift**:
+
+```swift
+let mcS = HKUnit.siemenUnitWithMetricPrefix(.Micro)
+```
+
+**Objective-C**:
+
+```objc
+HKUnit *mcS = [HKUnit siemenUnitWithMetricPrefix:HKMetricPrefixMicro];
+```
+
 ## Parameters
 
-- `prefix`: A valid metric prefix value. For the complete list of prefix values, see  .
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](hkmetricprefix.md).
 
 ## See Also
 

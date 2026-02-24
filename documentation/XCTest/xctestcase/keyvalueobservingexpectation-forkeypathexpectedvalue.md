@@ -34,7 +34,7 @@ Creates an [`XCTestExpectation`](xctestexpectation.md) that uses Key Value Obser
 
 - `objectToObserve`: The object to observe.
 - `keyPath`: The key path to observe.
-- `expectedValue`: Expected value of the value specified by  . The expectation will fulfill itself when the value at   is equal to  , as tested using  . If   is  , the expectation will be fulfilled by the first change to the key path of the observed object.
+- `expectedValue`: Expected value of the value specified by `keyPath`. The expectation will fulfill itself when the value at `keyPath` is equal to `expectedValue`, as tested using `isEqual:`. If `expectedValue` is `nil`, the expectation will be fulfilled by the first change to the key path of the observed object.
 
 ## See Also
 

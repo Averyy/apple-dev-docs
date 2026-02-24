@@ -30,8 +30,8 @@ The ordering is determined by comparing the values specified by [`key`](nssortde
 
 ## Parameters
 
-- `object1`: The object to compare with  . This object must have a property accessible using the key-path specified by  .
-- `object2`: The object to compare with  . This object must have a property accessible using the key-path specified by  .
+- `object1`: The object to compare with `object2`. This object must have a property accessible using the key-path specified by [`key`](nssortdescriptor/key.md).
+- `object2`: The object to compare with `object1`. This object must have a property accessible using the key-path specified by [`key`](nssortdescriptor/key.md).
 
 ## See Also
 

@@ -42,8 +42,8 @@ This method is called only if the [`URLProtocol`](urlprotocol.md) handling the r
 
 - `session`: The session containing the data (or upload) task.
 - `dataTask`: The data (or upload) task.
-- `proposedResponse`: The default caching behavior. This behavior is determined based on the current caching policy and the values of certain received headers, such as the   and   headers.
-- `completionHandler`: A block that your handler must call, providing either the original proposed response, a modified version of that response, or   to prevent caching the response. If your delegate implements this method, it   call this completion handler; otherwise, your app leaks memory.
+- `proposedResponse`: The default caching behavior. This behavior is determined based on the current caching policy and the values of certain received headers, such as the `Pragma` and `Cache-Control` headers.
+- `completionHandler`: A block that your handler must call, providing either the original proposed response, a modified version of that response, or `NULL` to prevent caching the response. If your delegate implements this method, it *must* call this completion handler; otherwise, your app leaks memory.
 
 
 ---

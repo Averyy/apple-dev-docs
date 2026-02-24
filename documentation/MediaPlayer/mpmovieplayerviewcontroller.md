@@ -76,7 +76,7 @@ To present a movie player view controller modally, you typically use the [`prese
 - [class MPMoviePlayerController](mpmovieplayercontroller.md)
   A type of movie player that manages the playback of a movie from a file or a network stream.
 - [class MPTimedMetadata](mptimedmetadata.md)
-  A  carries time-based information within HTTP streamed media.
+  A *timed metadata object that* carries time-based information within HTTP streamed media.
 - [class MPPlayableContentManager](mpplayablecontentmanager.md)
   A shared content manager for controlling interactions between your media app and system-provided or external media player interfaces.
 - [class MPPlayableContentManagerContext](mpplayablecontentmanagercontext.md)

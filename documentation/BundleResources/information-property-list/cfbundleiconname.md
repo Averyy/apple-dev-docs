@@ -8,6 +8,10 @@ The name of the asset that represents the app icon.
 **Availability**:
 - macOS 10.13+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [CFBundleIcons](information-property-list/cfbundleicons.md)

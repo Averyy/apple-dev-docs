@@ -28,7 +28,7 @@ Removing rights also removes any resources stored along with the rights, such as
 
 ## Parameters
 
-- `handler`: A completion handler to call when the removal operation completes.
+- `handler`: A completion handler to call when the removal operation completes. - **`error`**: An error object that indicates why the removal operation failed, or `nil` if it succeeded.
 
 ## See Also
 

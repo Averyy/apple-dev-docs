@@ -24,7 +24,7 @@ A new matrix.
 ## Parameters
 
 - `matrix`: The source matrix.
-- `row`: The index of the row to replace, which must be a number between   and  , inclusive.
+- `row`: The index of the row to replace, which must be a number between `0` and `2`, inclusive.
 - `vector`: A vector holding the replacement component values.
 
 ## See Also

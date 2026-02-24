@@ -19,7 +19,7 @@ case modelFile(url: URL, detail: PhotogrammetrySession.Request.Detail = .reduced
 
 ## Parameters
 
-- `url`: The location URL in the file system where you want to save the model file.   The request saves a USDZ file if the   ends with  .   If   refers to a directory, the request saves an OBJ object and every texture map there.
+- `url`: The location URL in the file system where you want to save the model file. The request saves a USDZ file if the `url` ends with `.usdz`. If `url` refers to a directory, the request saves an OBJ object and every texture map there.
 - `detail`: The level of detail for the created model.
 - `geometry`: The bounding box or transforms for the generated object.
 

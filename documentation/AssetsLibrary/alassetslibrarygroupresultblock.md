@@ -15,6 +15,8 @@ typealias ALAssetsLibraryGroupResultBlock = (ALAssetsGroup?) -> Void
 
 The block parameter is defined as follows:
 
+- **group**: The group that was added to the assets library.
+
 If the group is not found or not created (for example, because of a name collision), `group` is `nil`.
 
 This block type is used by [`addAssetsGroupAlbum(withName:resultBlock:failureBlock:)`](alassetslibrary/addassetsgroupalbum(withname:resultblock:failureblock:).md) and [`group(for:resultBlock:failureBlock:)`](alassetslibrary/group(for:resultblock:failureblock:).md).

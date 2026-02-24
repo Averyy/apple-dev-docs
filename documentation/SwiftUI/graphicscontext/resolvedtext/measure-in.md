@@ -22,7 +22,7 @@ func measure(in size: CGSize) -> CGSize
 
 ## Parameters
 
-- `size`: The area to place the   view in.
+- `size`: The area to place the [`Text`](text.md) view in.
 
 ## See Also
 

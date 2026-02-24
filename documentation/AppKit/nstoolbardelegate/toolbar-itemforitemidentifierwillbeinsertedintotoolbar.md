@@ -34,7 +34,7 @@ Don’t recycle toolbar items; always provide a new instance, even if the toolba
 
 - `toolbar`: The toolbar for which the item is being requested.
 - `itemIdentifier`: The identifier for the requested item.
-- `flag`:   if the toolbar will insert the item immediately. If this parameter is  , provide a canonical representation for the item. For example, provide a version of the item suitable for display in the toolbar customization sheet.
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) if the toolbar will insert the item immediately. If this parameter is [`false`](https://developer.apple.com/documentation/Swift/false), provide a canonical representation for the item. For example, provide a version of the item suitable for display in the toolbar customization sheet.
 
 ## See Also
 

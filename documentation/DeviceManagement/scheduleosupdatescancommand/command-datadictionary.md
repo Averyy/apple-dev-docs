@@ -14,6 +14,12 @@ The command to schedule a background scan for operating-system updates on a devi
 object ScheduleOSUpdateScanCommand.Command
 ```
 
+## Properties
+
+- `Force` (boolean): If `true`, force a scan to start immediately. Otherwise, the scan starts at a system-determined time.
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

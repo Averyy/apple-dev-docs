@@ -33,7 +33,7 @@ Use this method to add more players to an existing match that doesn’t have eno
 
 - `match`: The match to which GameKit adds the players.
 - `matchRequest`: The configuration for the match.
-- `completionHandler`: This block receives the following parameters:
+- `completionHandler`: The block that GameKit calls when it completes the request. This block receives the following parameters: - **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

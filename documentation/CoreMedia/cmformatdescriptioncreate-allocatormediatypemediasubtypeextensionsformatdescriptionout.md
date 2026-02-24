@@ -32,11 +32,11 @@ Don’t call this method for media types that have specific create functions, su
 
 ## Parameters
 
-- `allocator`: The allocator to use for creating the  .
+- `allocator`: The allocator to use for creating the `CMFormatDescription`.
 - `mediaType`: The type that identifies the media.
 - `mediaSubType`: The type that identifies the subtype of the media.
-- `extensions`: A dictionary of extensions to attach to the description. May be  .
-- `formatDescriptionOut`: Receives the   the function creates.
+- `extensions`: A dictionary of extensions to attach to the description. May be `NULL`.
+- `formatDescriptionOut`: Receives the `CMFormatDescription` the function creates.
 
 
 ---

@@ -27,7 +27,7 @@ This function may be called from any thread of your app.
 
 ## Parameters
 
-- `size`: The size of the new bitmap context. This represents the size of the image returned by the   function.
+- `size`: The size of the new bitmap context. This represents the size of the image returned by the [`UIGraphicsGetImageFromCurrentImageContext()`](uigraphicsgetimagefromcurrentimagecontext().md) function.
 
 ## See Also
 

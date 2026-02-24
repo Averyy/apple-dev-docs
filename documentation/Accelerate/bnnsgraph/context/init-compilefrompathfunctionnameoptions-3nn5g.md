@@ -28,8 +28,8 @@ init(compileFromPath path: String, functionName: String? = nil, options: BNNSGra
 
 ## Parameters
 
-- `path`: The path to the   program file.
-- `functionName`: The name of a specific function to be compiled. Pass   to specify that the function compiles all functions.
+- `path`: The path to the `.mlmodelc` program file.
+- `functionName`: The name of a specific function to be compiled. Pass `nil` to specify that the function compiles all functions.
 - `options`: The compilation options.
 
 

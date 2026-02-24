@@ -32,7 +32,7 @@ The `anchor` parameter determines how the shape will be positioned within the co
 ## Parameters
 
 - `size`: The size to constrain the shape to.
-- `anchor`: The anchor to use to determine how to position the new   shape.
+- `anchor`: The anchor to use to determine how to position the new shape.
 
 
 ---

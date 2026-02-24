@@ -22,7 +22,7 @@ class func deleteCache(withName name: String?)
 
 ## Parameters
 
-- `name`: If   is  , deletes all cache files.
+- `name`: The name of the cache file to delete. If `name` is `nil`, deletes all cache files.
 
 ## See Also
 

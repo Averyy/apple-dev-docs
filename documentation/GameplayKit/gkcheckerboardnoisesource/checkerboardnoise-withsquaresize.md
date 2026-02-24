@@ -29,7 +29,7 @@ To make use of this noise source, create a [`GKNoise`](gknoise.md) object from i
 
 ## Parameters
 
-- `squareSize`: The initial value for the   property, which determines the size of the checkerboard pattern.
+- `squareSize`: The initial value for the [`squareSize`](gkcheckerboardnoisesource/squaresize.md) property, which determines the size of the checkerboard pattern.
 
 ## See Also
 

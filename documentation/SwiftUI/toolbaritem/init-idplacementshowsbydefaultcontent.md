@@ -24,8 +24,8 @@ init(id: String, placement: ToolbarItemPlacement = .automatic, showsByDefault: B
 ## Parameters
 
 - `id`: A unique identifier for this item.
-- `placement`: Which section of the toolbar   the item should be placed in.
-- `showsByDefault`: Whether the item appears by default in the toolbar,   or only shows if the user explicitly adds it via customization.
+- `placement`: Which section of the toolbar the item should be placed in.
+- `showsByDefault`: Whether the item appears by default in the toolbar, or only shows if the user explicitly adds it via customization.
 - `content`: The content of the item.
 
 ## See Also

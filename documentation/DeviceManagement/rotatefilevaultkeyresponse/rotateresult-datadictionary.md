@@ -14,6 +14,10 @@ The result of rotating the personal recovery key.
 object RotateFileVaultKeyResponse.RotateResult
 ```
 
+## Properties
+
+- `EncryptedNewRecoveryKey` (data): A new personal recovery key that is encrypted using a `ReplyEncryptionCertificate` as a CMS-compliant envelope.
+
 ## See Also
 
 - [object RotateFileVaultKeyResponse.ErrorChainItem](rotatefilevaultkeyresponse/errorchainitem.md)

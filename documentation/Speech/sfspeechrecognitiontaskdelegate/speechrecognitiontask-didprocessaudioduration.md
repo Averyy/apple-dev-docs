@@ -20,7 +20,7 @@ optional func speechRecognitionTask(_ task: SFSpeechRecognitionTask, didProcessA
 
 ## Parameters
 
-- `task`: The speech recognition task (an   object) that represents the request.
+- `task`: The speech recognition task (an [`SFSpeechRecognitionTask`](sfspeechrecognitiontask.md) object) that represents the request.
 - `duration`: The seconds of audio input that the recognizer has processed.
 
 ## See Also

@@ -25,7 +25,7 @@ You are responsible for dismissing the payment sheet.
 
 ## Parameters
 
-- `completion`: A block that is called after the sheet is presented. This block is passed the following parameters:
+- `completion`: A block that is called after the sheet is presented. This block is passed the following parameters: - **success**: A Boolean value that indicates whether the payment sheet was successfully presented. [`true`](https://developer.apple.com/documentation/Swift/true) if the payment sheet was presented successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

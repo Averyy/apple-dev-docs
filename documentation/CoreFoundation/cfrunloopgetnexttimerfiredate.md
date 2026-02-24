@@ -27,7 +27,7 @@ The earliest firing time of the run loop timers registered in `mode` for the run
 ## Parameters
 
 - `rl`: The run loop to examine.
-- `mode`: The run loop mode within   to test.
+- `mode`: The run loop mode within `rl` to test.
 
 ## See Also
 

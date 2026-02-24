@@ -21,7 +21,7 @@ optional var firstMipmapInTail: Int { get }
 
 #### Discussion
 
-In a sparse texture, the  is a collection of mipmaps at higher index values that are mapped as a single block of memory. When you map this mipmap into your sparse texture, Metal also maps mipmap levels with larger index values.
+In a sparse texture, the *tail* is a collection of mipmaps at higher index values that are mapped as a single block of memory. When you map this mipmap into your sparse texture, Metal also maps mipmap levels with larger index values.
 
 ## See Also
 

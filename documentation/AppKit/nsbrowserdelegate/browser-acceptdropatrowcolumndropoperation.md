@@ -31,7 +31,7 @@ The delegate should incorporate the pasteboard data from the dragging session (`
 - `info`: The drag session information.
 - `row`: The drop row.
 - `column`: The drop column.
-- `dropOperation`: The drop location relative to  .
+- `dropOperation`: The drop location relative to `row`.
 
 ## See Also
 

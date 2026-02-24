@@ -47,7 +47,7 @@ The watchOS 10 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ###### Known Issues
 
-- Cellular and SOS Waypoints might not appear in the Compass app when the user is in the back country.  (113973758)  Quit and re-launch the app.
+- Cellular and SOS Waypoints might not appear in the Compass app when the user is in the back country.  (113973758) **Workaround:** Quit and re-launch the app.
 
 ##### Complication Picker
 
@@ -241,7 +241,7 @@ The watchOS 10 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ###### Known Issues
 
-- SwiftData models with implicitly unwrapped optional properties will generate a compiler error that all stored properties were not set.  (114140139)  Set the value of non-relationship stored properties in the initializer, and mark relationship properties as optional.
+- SwiftData models with implicitly unwrapped optional properties will generate a compiler error that all stored properties were not set.  (114140139) **Workaround:** Set the value of non-relationship stored properties in the initializer, and mark relationship properties as optional.
 
 ##### Swiftui
 
@@ -290,7 +290,7 @@ The watchOS 10 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ###### Known Issues
 
-- On iOS, using an `Observable` object’s property as a selection value of a `List` inside `NavigationSplitView` may cause a “Simultaneous accesses to …” error when a list selection is made via tap gesture.  (113978783) (FB12981860)  There is no current workaround for `Observable` properties. Alternatives include factoring out the selection value into separate state stored outside the object, or using `ObservableObject` instead.
+- On iOS, using an `Observable` object’s property as a selection value of a `List` inside `NavigationSplitView` may cause a “Simultaneous accesses to …” error when a list selection is made via tap gesture.  (113978783) (FB12981860) **Workaround:** There is no current workaround for `Observable` properties. Alternatives include factoring out the selection value into separate state stored outside the object, or using `ObservableObject` instead.
 
 ##### Symbol Effects
 
@@ -327,7 +327,7 @@ The watchOS 10 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ###### Known Issues
 
-- Changing the watch language or region only updates some of the text in the watch browsing views for Fitness+ Meditations and Time to Walk/Time to Run Workouts.   (113168750)  Change the language or region setting for the watch while Workout app is open to the New Releases view of Time to Walk/Time to Run (Workout app > Time to Walk/Time to Run tile) or while the Mind app is open to the New Releases view of Fitness+ Meditations (Mind app > Fitness+)
+- Changing the watch language or region only updates some of the text in the watch browsing views for Fitness+ Meditations and Time to Walk/Time to Run Workouts.   (113168750) **Workaround:** Change the language or region setting for the watch while Workout app is open to the New Releases view of Time to Walk/Time to Run (Workout app > Time to Walk/Time to Run tile) or while the Mind app is open to the New Releases view of Fitness+ Meditations (Mind app > Fitness+)
 
 ## See Also
 

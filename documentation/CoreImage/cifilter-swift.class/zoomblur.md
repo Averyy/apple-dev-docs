@@ -29,6 +29,10 @@ This method applies the zoom blur filter to an image. This effect mimics the zoo
 
 The zoom blur filter uses the following properties:
 
+- **`amount`**: A `float` representing the zoom-in amount as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
+
 The following code creates a filter that adds a zoom blur to the input image:
 
 ```swift

@@ -30,23 +30,23 @@ This function can be used in headers to declare a UUID constant with `#define`.
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new CFUUID object. Pass   or   to use the current default allocator.
-- `byte0`: Raw byte number  .
-- `byte1`: Raw byte number  .
-- `byte2`: Raw byte number  .
-- `byte3`: Raw byte number  .
-- `byte4`: Raw byte number  .
-- `byte5`: Raw byte number  .
-- `byte6`: Raw byte number  .
-- `byte7`: Raw byte number  .
-- `byte8`: Raw byte number  .
-- `byte9`: Raw byte number  .
-- `byte10`: Raw byte number  .
-- `byte11`: Raw byte number  .
-- `byte12`: Raw byte number  .
-- `byte13`: Raw byte number  .
-- `byte14`: Raw byte number  .
-- `byte15`: Raw byte number  .
+- `alloc`: The allocator to use to allocate memory for the new CFUUID object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `byte0`: Raw byte number `0`.
+- `byte1`: Raw byte number `1`.
+- `byte2`: Raw byte number `2`.
+- `byte3`: Raw byte number `3`.
+- `byte4`: Raw byte number `4`.
+- `byte5`: Raw byte number `5`.
+- `byte6`: Raw byte number `6`.
+- `byte7`: Raw byte number `7`.
+- `byte8`: Raw byte number `8`.
+- `byte9`: Raw byte number `9`.
+- `byte10`: Raw byte number `10`.
+- `byte11`: Raw byte number `11`.
+- `byte12`: Raw byte number `12`.
+- `byte13`: Raw byte number `13`.
+- `byte14`: Raw byte number `14`.
+- `byte15`: Raw byte number `15`.
 
 ## See Also
 

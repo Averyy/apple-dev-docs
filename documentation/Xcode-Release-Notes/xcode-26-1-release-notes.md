@@ -16,13 +16,13 @@ Xcode 26.1.1 includes Swift 6.2.1 and SDKs for iOS 26.1, iPadOS 26.1, tvOS 26.1,
 
 ###### Known Issues
 
-- Simulators may fail to boot during the first build after upgrading macOS.  (152328794)  Execute `xcrun simctl runtime dyld_shared_cache update --all` prior to booting the simulator to ensure dyld shared cache generation has completed.
+- Simulators may fail to boot during the first build after upgrading macOS.  (152328794) **Workaround:** Execute `xcrun simctl runtime dyld_shared_cache update --all` prior to booting the simulator to ensure dyld shared cache generation has completed.
 
 ##### Address Sanitizer
 
 ###### Known Issues
 
-- Address Sanitizer is currently incompatible with hardware memory tagging.  (161649378)  Disable hardware memory tagging when running with Address Sanitizer by un-checking the “Enable Hardware Memory Tagging” box in the “Enhanced Security” capability section of your Xcode project settings.
+- Address Sanitizer is currently incompatible with hardware memory tagging.  (161649378) **Workaround:** Disable hardware memory tagging when running with Address Sanitizer by un-checking the “Enable Hardware Memory Tagging” box in the “Enhanced Security” capability section of your Xcode project settings.
 
 ##### Callkit
 
@@ -41,7 +41,7 @@ Xcode 26.1.1 includes Swift 6.2.1 and SDKs for iOS 26.1, iPadOS 26.1, tvOS 26.1,
 
 ###### Known Issues
 
-- Users interacting with ChatGPT in Xcode may not receive previews of sample code.  (164573607)  Clicking the copy button allows you to access the contents of the sample code.
+- Users interacting with ChatGPT in Xcode may not receive previews of sample code.  (164573607) **Workaround:** Clicking the copy button allows you to access the contents of the sample code.
 
 ##### Devices
 
@@ -119,9 +119,9 @@ Xcode 26.1.1 includes Swift 6.2.1 and SDKs for iOS 26.1, iPadOS 26.1, tvOS 26.1,
 
 ## See Also
 
-- [Xcode 26.4 Beta Release Notes](xcode-26_4-release-notes.md)
+- [Xcode 26.4 Beta 2 Release Notes](xcode-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.3 RC Release Notes](xcode-26_3-release-notes.md)
+- [Xcode 26.3 RC 2 Release Notes](xcode-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [Xcode 26.2 Release Notes](xcode-26_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

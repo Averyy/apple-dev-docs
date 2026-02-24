@@ -25,7 +25,7 @@ A new symbol configuration object with the specified information.
 
 ## Parameters
 
-- `weight`: The symbol image weight variant to select. Specify a value that is comparable to the font weight of any matching text. For a list of possible values, see  .
+- `weight`: The symbol image weight variant to select. Specify a value that is comparable to the font weight of any matching text. For a list of possible values, see [`UIImage.SymbolWeight`](uiimage/symbolweight.md).
 
 ## See Also
 

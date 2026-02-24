@@ -62,25 +62,25 @@ You can also position a stack view based on its first or last baseline, instead 
 
 Common approaches for laying out content using stack views:
 
- You can define the stack view’s position by pinning two of its adjacent edges to its superview. In this case, the stack view’s size grows freely in both dimensions, based on its arranged views. This approach is particularly useful when you want the stack view’s content to appear at its intrinsic content size, and you want to arrange other user-interface elements relative to the stack view.
+**Define the position only.** You can define the stack view’s position by pinning two of its adjacent edges to its superview. In this case, the stack view’s size grows freely in both dimensions, based on its arranged views. This approach is particularly useful when you want the stack view’s content to appear at its intrinsic content size, and you want to arrange other user-interface elements relative to the stack view.
 
 The following image shows a stack view with its leading and top edges pinned to its superview. The labels are first baseline aligned, with an 8-point space between them, left-aligning the stack view’s content in its superview.
 
 ![A horizontal stack view with its leading and top edges pinned to its superview. The stack view contains two labels, a date and a location name. The labels have baseline alignment with an 8-point space between them. With these constraints, the stack view’s content is left-aligned in its superview.](https://docs-assets.developer.apple.com/published/4c542a6429d889aeefa48b0e77a499de/media-2934503%402x.png)
 
- In this case, pin both edges of the stack along its axis to its superview, defining the stack view’s size in that dimension. You also need to pin one of the other edges to define the stack view’s position. The stack view sizes and positions its content along its axis to fill the defined space; however, the unpinned edge moves freely, based on the size of the largest arranged view.
+**Define the stack’s size along its axis.** In this case, pin both edges of the stack along its axis to its superview, defining the stack view’s size in that dimension. You also need to pin one of the other edges to define the stack view’s position. The stack view sizes and positions its content along its axis to fill the defined space; however, the unpinned edge moves freely, based on the size of the largest arranged view.
 
 The following image shows a stack view with the leading, top, and trailing edges pinned to its superview. Using the fill distribution causes the content to resize to fill the view’s width, and because the text field has a lower content-hugging priority than the label, it’s stretched as necessary.
 
 ![A horizontal stack view with a label and a text field. The label is only as wide as the string it contains, but the text field fills the stack view’s width. ](https://docs-assets.developer.apple.com/published/10352ba662ba61314a157ecc2459f47b/media-2934504%402x.png)
 
- This approach is similar to the previous example, but you pin the two edges perpendicular to the stack view’s axis and only one edge along the axis. This lets the stack view grow and shrink along its axis as you add and remove arranged views. Unless you use a [`UIStackView.Distribution.fillEqually`](uistackview/distribution-swift.enum/fillequally.md) distribution, the arranged views are sized according to their intrinsic content size. Perpendicular to the axis, the views are laid out in the defined space based on the stack view’s alignment.
+**Define the stack’s size perpendicular to its axis.** This approach is similar to the previous example, but you pin the two edges perpendicular to the stack view’s axis and only one edge along the axis. This lets the stack view grow and shrink along its axis as you add and remove arranged views. Unless you use a [`UIStackView.Distribution.fillEqually`](uistackview/distribution-swift.enum/fillequally.md) distribution, the arranged views are sized according to their intrinsic content size. Perpendicular to the axis, the views are laid out in the defined space based on the stack view’s alignment.
 
 The following image shows a vertical stack containing four labels and a button. The stack uses 8-point spacing and the center alignment. The stack view’s height grows and shrinks as items are added to or removed from the stack.
 
 ![A vertical stack view with four labels “Item 1” through “Item 4,”  and a button to add more items below. The stack view has a flexible height to account for adding more items. ](https://docs-assets.developer.apple.com/published/5e96135c42fca0709d16ab248917b42a/media-2934505%402x.png)
 
- In this case, you pin all four edges of the stack view, causing the stack view to lay out its content within the provided space.
+**Define the size and position of the stack view.** In this case, you pin all four edges of the stack view, causing the stack view to lay out its content within the provided space.
 
 The following image shows a vertical stack view with all four edges pinned to its superview. By using the center alignment and fill distribution, the stack view ensures that its content is centered horizontally and vertically fills the screen. However, getting the desired layout with this approach requires a couple of additional steps. By default, the stack view vertically stretches the label and not the image view. To resize the image view, lower its content-hugging priority below the label’s content-hugging priority. Additionally, to maintain the image view’s aspect ratio as it resizes, set its Mode to Aspect Fit. Adding an equal width constraint between the image view and the stack view helps ensure the image is sized to fill the available space.
 
@@ -122,9 +122,71 @@ Although the [`arrangedSubviews`](uistackview/arrangedsubviews.md) array always 
 
 The stack view automatically updates its layout whenever views are added, removed, or inserted into the [`arrangedSubviews`](uistackview/arrangedsubviews.md) array, or whenever one of the arranged subviews’s [`isHidden`](uiview/ishidden.md) property changes.
 
+**Swift**:
+
+```swift
+// Appears to remove the first arranged view from the stack.
+// The view is still inside the stack, it's just no longer visible, and no longer contributes to the layout.
+let firstView = stackView.arrangedSubviews[0]
+firstView.isHidden = true
+```
+
+**Objective-C**:
+
+```objc
+// Appears to remove the first arranged view from the stack.
+// The view is still inside the stack, it's just no longer visible, and no longer contributes to the layout.
+UIView * firstView = self.stackView.arrangedSubviews[0];
+firstView.hidden = YES;
+```
+
 The stack view also automatically responds to changes to any of its properties. For example, you can dynamically change the stack’s orientation, by updating the stack view’s [`axis`](uistackview/axis.md) property.
 
+**Swift**:
+
+```swift
+// Toggle between a vertical and horizontal stack.
+if stackView.axis == .horizontal {
+    stackView.axis = .vertical
+}
+else {
+    stackView.axis = .horizontal
+}
+```
+
+**Objective-C**:
+
+```objc
+// Toggle between a vertical and horizontal stack.
+if (self.stackView.axis == UILayoutConstraintAxisHorizontal) {
+    self.stackView.axis = UILayoutConstraintAxisVertical;
+}
+else {
+    self.stackView.axis = UILayoutConstraintAxisHorizontal;
+}
+```
+
 You can animate both changes to the arranged subview’s [`isHidden`](uiview/ishidden.md) property and changes to the stack view’s properties by placing these changes inside an animation block.
+
+**Swift**:
+
+```swift
+// Animates removing the first item in the stack.
+UIView.animate(withDuration: 0.25) { () -> Void in
+    let firstView = stackView.arrangedSubviews[0]
+    firstView.isHidden = true
+}
+```
+
+**Objective-C**:
+
+```objc
+// Animates removing the first item in the stack.
+[UIView animateWithDuration:0.25 animations:^{
+    UIView * firstView = self.stackView.arrangedSubviews[0];
+    firstView.hidden = YES;
+}];
+```
 
 Finally, you can define size-class specific values for many of the stack view’s properties directly in Interface Builder. The system automatically animates these changes whenever the stack view’s size class changes.
 

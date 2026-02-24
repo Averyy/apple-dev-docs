@@ -84,7 +84,7 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ###### Known Issues
 
-- Custom tap gesture callbacks registered using `onTapGesture` might not work as expected on a SwiftUI Map.  (157612948) (FB19394663)  Use `simultaneousGesture(TapGesture().onEnded {})` to register the callback.
+- Custom tap gesture callbacks registered using `onTapGesture` might not work as expected on a SwiftUI Map.  (157612948) (FB19394663) **Workaround:** Use `simultaneousGesture(TapGesture().onEnded {})` to register the callback.
 
 ##### Memory Tools
 
@@ -223,7 +223,7 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ###### Known Issues
 
-- `toolbarForegroundStyle` no longer tints toolbar button labels on watchOS.  (151487439)  Tint the button label directly, using `Text("foo").foregroundStyle(...)`.
+- `toolbarForegroundStyle` no longer tints toolbar button labels on watchOS.  (151487439) **Workaround:** Tint the button label directly, using `Text("foo").foregroundStyle(...)`.
 - `.toolbarVisibility(_:for:)` does not hide the navigation bar on watchOS.  (152326250)
 
 ###### Deprecations
@@ -244,13 +244,13 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ###### Known Issues
 
-- Downloading languages for translation might display incomplete indicators on the download screen resulting in translation features being unavailable.  (148923222)  Reboot the device.
+- Downloading languages for translation might display incomplete indicators on the download screen resulting in translation features being unavailable.  (148923222) **Workaround:** Reboot the device.
 
 ##### Workout
 
 ###### Known Issues
 
-- Users might be unable to end a workout that has been auto-paused.  (155970593)  Resume the Workout, then tap End.
+- Users might be unable to end a workout that has been auto-paused.  (155970593) **Workaround:** Resume the Workout, then tap End.
 
 ##### Workout Buddy
 
@@ -264,7 +264,7 @@ The watchOS 26 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ## See Also
 
-- [watchOS 26.4 Beta Release Notes](watchos-26_4-release-notes.md)
+- [watchOS 26.4 Beta 2 Release Notes](watchos-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [watchOS 26.3 Release Notes](watchos-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

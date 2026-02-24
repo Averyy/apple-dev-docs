@@ -25,7 +25,7 @@ The number of Unicode characters in `string`.
 
 ## Parameters
 
-- `string`: The   with the length (in Unicode characters) you want to know.
+- `string`: The [`JSStringRef`](jsstringref.md) with the length (in Unicode characters) you want to know.
 
 ## See Also
 

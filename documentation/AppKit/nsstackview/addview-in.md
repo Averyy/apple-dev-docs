@@ -18,8 +18,8 @@ func addView(_ view: NSView, in gravity: NSStackView.Gravity)
 
 The location of a newly added view depends on the stack view layout direction and, for a horizontal stack view, on user interface language:
 
-- : A newly added view appears at the trailing edge of the specified gravity area, as determined by the value of the inherited [`userInterfaceLayoutDirection`](nsview/userinterfacelayoutdirection.md) property of the stack view. For a left to right language, a new view appears at the right side of the gravity area.
-- : A newly added view appears at the bottom of the specified gravity area.
+- *Horizontal*: A newly added view appears at the trailing edge of the specified gravity area, as determined by the value of the inherited [`userInterfaceLayoutDirection`](nsview/userinterfacelayoutdirection.md) property of the stack view. For a left to right language, a new view appears at the right side of the gravity area.
+- *Vertical*: A newly added view appears at the bottom of the specified gravity area.
 
 Calling this method updates the stack view’s layout, which can change the stack view size. As a result, views could detach or clip according to the clipping resistance of the stack view and the visibility priorities of its views.
 
@@ -28,7 +28,7 @@ A view in a detached state is not present in the stack view’s view hierarchy, 
 ## Parameters
 
 - `view`: The view to add to the specified gravity area.
-- `gravity`: The gravity area that you are adding the specified view to. Valid values are those in the   enumeration.
+- `gravity`: The gravity area that you are adding the specified view to. Valid values are those in the [`NSStackView.Gravity`](nsstackview/gravity.md) enumeration.
 
 ## See Also
 

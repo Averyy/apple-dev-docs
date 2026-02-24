@@ -20,7 +20,7 @@ For behavioral compatibility with macOS 10.3, certificate details are displayed 
 
 ## Parameters
 
-- `display`: Pass   to display the certificate details, or   to hide them.
+- `display`: Pass [`true`](https://developer.apple.com/documentation/Swift/true) to display the certificate details, or [`false`](https://developer.apple.com/documentation/Swift/false) to hide them.
 
 ## See Also
 

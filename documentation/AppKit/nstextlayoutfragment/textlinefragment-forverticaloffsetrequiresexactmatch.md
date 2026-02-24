@@ -25,7 +25,7 @@ Set `requiresExactMatch` to [`true`](https://developer.apple.com/documentation/S
 ## Parameters
 
 - `verticalOffset`: A float value that indicates a vertical distance, expressed in points, from the layout fragment frame’s origin.
-- `requiresExactMatch`: A Boolean value that indicates whether the method returns an exact match, or returns the closest match if there isn’t an exact match. The default value is  .
+- `requiresExactMatch`: A Boolean value that indicates whether the method returns an exact match, or returns the closest match if there isn’t an exact match. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

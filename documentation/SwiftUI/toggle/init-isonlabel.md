@@ -22,7 +22,7 @@ init(isOn: Binding<Bool>, @ViewBuilder label: () -> Label)
 
 ## Parameters
 
-- `isOn`: A binding to a property that determines whether the toggle is on   or off.
+- `isOn`: A binding to a property that determines whether the toggle is on or off.
 - `label`: A view that describes the purpose of the toggle.
 
 ## See Also

@@ -26,7 +26,7 @@ A fully loaded and initialized Metal texture, or `nil` if an error occurred.
 ## Parameters
 
 - `texture`: A Model I/O texture object containing image data from which to create the texture.
-- `options`: A dictionary describing any additional texture loading steps. See  .
+- `options`: A dictionary describing any additional texture loading steps. See `Texture Loading Options`.
 
 ## See Also
 

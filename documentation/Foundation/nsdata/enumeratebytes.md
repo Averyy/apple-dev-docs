@@ -26,7 +26,9 @@ The enumeration block is called once for each contiguous region of memory in the
 
 ## Parameters
 
-- `block`: The block takes three arguments:
+- `block`: The block to apply to byte ranges in the array. The block takes three arguments: - **bytes**: The bytes for the current range. This pointer is valid until the data object is deallocated.
+- **byteRange**: The range of the current data bytes.
+- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop further processing of the data. The stop argument is an out-only argument. You should only ever set this Boolean to [`true`](https://developer.apple.com/documentation/Swift/true) within the Block.
 
 ## See Also
 

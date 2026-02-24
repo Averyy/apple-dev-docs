@@ -30,7 +30,8 @@ To find players using matchmaking rules, set the rules-related properties in `re
 ## Parameters
 
 - `request`: The configuration for the match.
-- `completionHandler`: This block receives the following parameters:
+- `completionHandler`: The block that GameKit calls when it completes the request. This block receives the following parameters: - **`players`**: The players that join the match. If unsuccessful, this parameter is `nil`.
+- **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

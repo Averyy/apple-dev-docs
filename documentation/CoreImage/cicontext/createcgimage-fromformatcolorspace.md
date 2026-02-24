@@ -25,10 +25,10 @@ func createCGImage(_ image: CIImage, from fromRect: CGRect, format: CIFormat, co
 
 ## Parameters
 
-- `image`: A   image instance for which to create a  .
-- `fromRect`: The   region of the   to use.   This region relative to the cartesean coordinate system of  .   This region will be intersected with integralized and intersected with  .
-- `format`: A   to specify the pixel format of the created  .   For example, if   is specified, then the created   will   be 16 bits-per-component and opaque.
-- `colorSpace`: The   for the output image.   This color space must have either   or     and be compatible with the specified pixel format.
+- `image`: A [`CIImage`](ciimage.md) image instance for which to create a `CGImage`.
+- `fromRect`: The `CGRect` region of the `image` to use. This region relative to the cartesean coordinate system of `image`. This region will be intersected with integralized and intersected with `image.extent`.
+- `format`: A [`CIFormat`](ciformat.md) to specify the pixel format of the created `CGImage`. For example, if `kCIFormatRGBX16` is specified, then the created `CGImage` will be 16 bits-per-component and opaque.
+- `colorSpace`: The `CGColorSpace` for the output image. This color space must have either `CGColorSpaceModel.rgb` or `CGColorSpaceModel.monochrome` and be compatible with the specified pixel format.
 
 ## See Also
 

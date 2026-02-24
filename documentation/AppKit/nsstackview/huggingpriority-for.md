@@ -20,7 +20,7 @@ The Auto Layout priority for the stack view to minimize its size.
 
 ## Parameters
 
-- `orientation`: The user interface axis (horizontal or vertical) whose hugging priority you want to get from the stack view. Valid values are those in the   enumeration.
+- `orientation`: The user interface axis (horizontal or vertical) whose hugging priority you want to get from the stack view. Valid values are those in the [`NSUserInterfaceLayoutOrientation`](nsuserinterfacelayoutorientation.md) enumeration.
 
 ## See Also
 

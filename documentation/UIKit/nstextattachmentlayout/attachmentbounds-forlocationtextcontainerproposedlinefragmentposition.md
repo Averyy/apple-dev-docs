@@ -30,11 +30,11 @@ The framework interprets the bounds origin to match `position` inside `proposedL
 
 ## Parameters
 
-- `attributes`: A dictionary of   attributes.
-- `location`: An   that indicates that start of the string.
-- `textContainer`: The   that contains the source text.
-- `proposedLineFragment`: A   that describes the boundaries of the line fragment.
-- `position`: A   inside  .
+- `attributes`: A dictionary of [`NSAttributedString.Key`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key) attributes.
+- `location`: An [`NSTextLocation`](nstextlocation.md) that indicates that start of the string.
+- `textContainer`: The [`NSTextContainer`](nstextcontainer.md) that contains the source text.
+- `proposedLineFragment`: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that describes the boundaries of the line fragment.
+- `position`: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) inside `proposedLineFragment`.
 
 ## See Also
 

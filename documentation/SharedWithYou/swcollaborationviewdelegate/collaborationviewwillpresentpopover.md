@@ -20,7 +20,7 @@ optional func collaborationViewWillPresentPopover(_ collaborationView: SWCollabo
 
 ## Parameters
 
-- `collaborationView`: The related  .
+- `collaborationView`: The related `SWCollaborationView`.
 
 ## See Also
 

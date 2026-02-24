@@ -20,7 +20,7 @@ Returns `true` ifthe `record` parameter satisfies theconditions in the `searchEl
 
 ## Parameters
 
-- `searchElement`: The search element containing the query you wish to test   with.
+- `searchElement`: The search element containing the query you wish to test `record` with.
 - `record`: The record you wish to test.
 
 ## See Also

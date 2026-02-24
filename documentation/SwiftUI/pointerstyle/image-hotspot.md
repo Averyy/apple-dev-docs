@@ -25,7 +25,7 @@ You may apply this pointer style to a single view or a view hierarchy using the 
 ## Parameters
 
 - `image`: The pointer image.
-- `hotSpot`: The point on the image that represents the location from   which the pointer interaction occurs. For example, the hot spot of   an arrow-shaped pointer is the tip of the arrow.
+- `hotSpot`: The point on the image that represents the location from which the pointer interaction occurs. For example, the hot spot of an arrow-shaped pointer is the tip of the arrow.
 
 ## See Also
 

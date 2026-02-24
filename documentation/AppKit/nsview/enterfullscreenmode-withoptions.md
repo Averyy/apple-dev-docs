@@ -33,7 +33,7 @@ In OS X v 10.5, invoking this method when the view was not in a window would cau
 ## Parameters
 
 - `screen`: The screen the view should cover.
-- `options`: A dictionary of options for the mode. For possible keys, see  .
+- `options`: A dictionary of options for the mode. For possible keys, see `Full Screen Mode Options`.
 
 ## See Also
 

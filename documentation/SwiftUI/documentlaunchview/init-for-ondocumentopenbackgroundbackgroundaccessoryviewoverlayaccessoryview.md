@@ -26,8 +26,8 @@ init(_ title: LocalizedStringKey, for contentTypes: [UTType], @ViewBuilder _ act
 - `actions`: A view builder returning the view’s actions
 - `onDocumentOpen`: A closure that handles an open file.
 - `background`: A background of the view.
-- `backgroundAccessoryView`: A view builder for returning the view’s   background accessory view.
-- `overlayAccessoryView`: A view builder for returning the view’s   overlay accessory view.
+- `backgroundAccessoryView`: A view builder for returning the view’s background accessory view.
+- `overlayAccessoryView`: A view builder for returning the view’s overlay accessory view.
 
 
 ---

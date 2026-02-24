@@ -25,7 +25,7 @@ Callers should wait until the `completionHandler` is executed before issuing ano
 
 ## Parameters
 
-- `datagramArray`: An   of   objects, containing the ordered list of datagrams to write.
+- `datagramArray`: An [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) of [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) objects, containing the ordered list of datagrams to write.
 - `completionHandler`: A handler called when the write request has either succeeded or failed.
 
 ## See Also

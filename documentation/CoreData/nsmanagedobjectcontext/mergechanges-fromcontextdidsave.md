@@ -35,7 +35,7 @@ You can pass a [`NSManagedObjectContextDidSave`](https://developer.apple.com/doc
 
 ## Parameters
 
-- `notification`: An instance of an   notification posted by another context.
+- `notification`: An instance of an [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextDidSave) notification posted by another context.
 
 ## See Also
 

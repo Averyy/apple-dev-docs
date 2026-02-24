@@ -24,8 +24,8 @@ init(source: any AnimationDefinition, name: String = "", bindTarget: BindTarget?
 - `source`: The original animation that this structure modifies.
 - `name`: A textual name for the animation.
 - `bindTarget`: A textual name that identifies the animated property.
-- `blendLayer`: The order in which the framework visually composites the   animation among other running animations.
-- `repeatMode`: An option that determines how the animation repeats   outside the length of the view.
+- `blendLayer`: The order in which the framework visually composites the animation among other running animations.
+- `repeatMode`: An option that determines how the animation repeats outside the length of the view.
 - `fillMode`: The behavior when the animated property reaches its end value.
 - `trimStart`: The optional time, in seconds, at which the source animation plays.
 - `trimEnd`: The optional time, in seconds, at which the source animation stops.

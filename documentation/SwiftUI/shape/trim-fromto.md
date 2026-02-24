@@ -55,8 +55,8 @@ Changing the parameters of `trim(from:to:)` to `.trim(from: 0, to: 1)` draws the
 
 ## Parameters
 
-- `startFraction`: The fraction of the way through drawing this shape   where drawing starts.
-- `endFraction`: The fraction of the way through drawing this shape   where drawing ends.
+- `startFraction`: The fraction of the way through drawing this shape where drawing starts.
+- `endFraction`: The fraction of the way through drawing this shape where drawing ends.
 
 ## See Also
 

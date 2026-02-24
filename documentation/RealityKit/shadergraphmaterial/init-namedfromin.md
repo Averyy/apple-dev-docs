@@ -29,9 +29,9 @@ Supported file formats are USD (.usd, .usda, .usdc, .usdz) and Reality File (.re
 
 ## Parameters
 
-- `name`: The name of the ShaderGraphMaterial within the file.   For USD files, this is the full path of the material prim (such as “/Root/MyMaterial”).
+- `name`: The name of the ShaderGraphMaterial within the file. For USD files, this is the full path of the material prim (such as “/Root/MyMaterial”).
 - `file`: The name of the file within the bundle.
-- `bundle`: The bundle containing the resource. Specify nil to search the app’s main   bundle.
+- `bundle`: The bundle containing the resource. Specify nil to search the app’s main bundle.
 
 
 ---

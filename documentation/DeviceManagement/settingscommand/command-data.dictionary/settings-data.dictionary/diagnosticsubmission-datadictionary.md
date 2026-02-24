@@ -15,6 +15,11 @@ A dictionary that contains diagnostic submission settings.
 object SettingsCommand.Command.Settings.DiagnosticSubmission
 ```
 
+## Properties
+
+- `Enabled` (boolean) *(required)*: If `true`, enables diagnostic submission. If `false`, disables diagnostic submission.
+- `Item` (string) *(required)*: The string that defines this setting type.
+
 ## See Also
 
 - [object SettingsCommand.Command.Settings.AccessibilitySettings](settingscommand/command-data.dictionary/settings-data.dictionary/accessibilitysettings-data.dictionary.md)

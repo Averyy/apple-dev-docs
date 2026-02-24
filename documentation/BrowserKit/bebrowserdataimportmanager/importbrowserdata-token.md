@@ -30,7 +30,7 @@ Call this method from the [`userActivityType`](bebrowserdataimportmanager/userac
 
 ## Parameters
 
-- `token`: A UUID that identifies the import operation. Pass the value from the activity’s info dictionary with the   key.
+- `token`: A UUID that identifies the import operation. Pass the value from the activity’s info dictionary with the [`importTokenUserInfoKey`](bebrowserdataimportmanager/importtokenuserinfokey-3bqve.md) key.
 
 ## See Also
 

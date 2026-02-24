@@ -43,7 +43,7 @@ Xcode 16.1 includes SDKs for iOS 18.1, iPadOS 18.1, tvOS 18.1, watchOS 11.1, mac
 
 ###### Known Issues
 
-- Custom app fonts may fail to be listed at the top of the custom fonts list in the Interface Builder inspector.  (100908086) (FB11662082)  Restarting Xcode will force this list to be recreated.
+- Custom app fonts may fail to be listed at the top of the custom fonts list in the Interface Builder inspector.  (100908086) (FB11662082) **Workaround:** Restarting Xcode will force this list to be recreated.
 - IBInspectable properties are no longer accessible in Interface Builder. Current values in IB Documents are still compiled into the NIBs and used at runtime.  (135140474) (FB15011501)
 
 ##### Localization
@@ -56,7 +56,7 @@ Xcode 16.1 includes SDKs for iOS 18.1, iPadOS 18.1, tvOS 18.1, watchOS 11.1, mac
 
 ###### Known Issues
 
-- Logging does not appear in Xcode when debugging Capture Extensions when using “Attach to Process”.  (129785280)  Use “Attach to Process by PID or Name” in Xcode to debug Capture Extensions.
+- Logging does not appear in Xcode when debugging Capture Extensions when using “Attach to Process”.  (129785280) **Workaround:** Use “Attach to Process by PID or Name” in Xcode to debug Capture Extensions.
 
 ##### Previews
 
@@ -71,7 +71,7 @@ Xcode 16.1 includes SDKs for iOS 18.1, iPadOS 18.1, tvOS 18.1, watchOS 11.1, mac
 
 ###### Known Issues
 
-- On Simulator.app launch with visionOS device, “Simulated Scenes” Control for visionOS can be disabled   (136714857)  Device Restart or Simulator.app restart
+- On Simulator.app launch with visionOS device, “Simulated Scenes” Control for visionOS can be disabled   (136714857) **Workaround:** Device Restart or Simulator.app restart
 
 ##### Testing
 

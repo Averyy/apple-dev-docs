@@ -26,8 +26,8 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `in_formats`: A pointer to a buffer of   instances, with a size of  .
-- `in_num_formats`: The number of stream descriptions in  .
+- `in_formats`: A pointer to a buffer of `IOUserAudioStreamBasicDescription` instances, with a size of `in_num_formats`.
+- `in_num_formats`: The number of stream descriptions in `in_formats`.
 
 ## See Also
 

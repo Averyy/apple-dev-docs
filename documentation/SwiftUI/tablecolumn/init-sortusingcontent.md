@@ -26,7 +26,7 @@ This initializer creates a [`Text`](text.md) view for you, and treats the title 
 ## Parameters
 
 - `text`: The column’s label.
-- `comparator`: The prototype sort comparator to use when representing   this column. When a person taps or clicks the column header,   the containing table’s   incorporates this value,   potentially with a flipped order.
+- `comparator`: The prototype sort comparator to use when representing this column. When a person taps or clicks the column header, the containing table’s `sortOrder` incorporates this value, potentially with a flipped order.
 - `content`: The view content to display for each row in a table.
 
 ## See Also

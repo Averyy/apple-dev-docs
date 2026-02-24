@@ -22,11 +22,11 @@ init(position: SIMD2<Float>, leadingControlPoint: SIMD2<Float>, topControlPoint:
 
 ## Parameters
 
-- `position`: The position of the vertex in the coordinate   space the gradient is interpreted in.
-- `leadingControlPoint`: The Bezier control point of the   vertex’s leading edge.
-- `topControlPoint`: The Bezier control point of the   vertex’s top edge.
-- `trailingControlPoint`: The Bezier control point of the   vertex’s trailing edge.
-- `bottomControlPoint`: The Bezier control point of the   vertex’s bottom edge.
+- `position`: The position of the vertex in the coordinate space the gradient is interpreted in.
+- `leadingControlPoint`: The Bezier control point of the vertex’s leading edge.
+- `topControlPoint`: The Bezier control point of the vertex’s top edge.
+- `trailingControlPoint`: The Bezier control point of the vertex’s trailing edge.
+- `bottomControlPoint`: The Bezier control point of the vertex’s bottom edge.
 
 
 ---

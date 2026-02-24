@@ -26,7 +26,7 @@ The number of NSData objects in `packets` must be exactly equal to the number of
 ## Parameters
 
 - `packets`: An array of NSData objects containing the IP packets to the written.
-- `protocols`: An array of NSNumber objects containing the protocol numbers (e.g. AF_INET or AF_INET6) of the IP packets in   in host byte order.
+- `protocols`: An array of NSNumber objects containing the protocol numbers (e.g. AF_INET or AF_INET6) of the IP packets in `packets` in host byte order.
 
 ## See Also
 

@@ -31,8 +31,8 @@ The `resolve` and `reject` callbacks each typically take a single value, which t
 
 ## Parameters
 
-- `context`: The   the resulting   belongs to.
-- `callback`: A callback block to invoke during initialization of the promise object. The   and   parameters are functions that you can call to notify any pending reactions about the state of the new promise object.
+- `context`: The [`JSContext`](jscontext.md) the resulting [`JSValue`](jsvalue.md) belongs to.
+- `callback`: A callback block to invoke during initialization of the promise object. The `resolve` and `reject` parameters are functions that you can call to notify any pending reactions about the state of the new promise object.
 
 ## See Also
 

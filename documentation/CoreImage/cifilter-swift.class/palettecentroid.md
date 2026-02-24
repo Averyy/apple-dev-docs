@@ -29,6 +29,10 @@ This method applies the palette centroid filter to an image. The filter locates 
 
 The palette centroid filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`paletteImage`**: An image that has the dimensions of *N* x 1 where *N* represents the amount of colors in the image, with type [`CIImage`](ciimage.md).
+- **`perceptual`**: A Boolean value that specifies if the filter applies the color palette in a perceptual color space.
+
 The following code creates a filter that calculates the extent of the palette color:
 
 ```swift

@@ -59,7 +59,7 @@ struct FullScreenCoverPresentedOnDismiss: View {
 
 ## Parameters
 
-- `isPresented`: A binding to a Boolean value that determines whether   to present the sheet.
+- `isPresented`: A binding to a Boolean value that determines whether to present the sheet.
 - `onDismiss`: The closure to execute when dismissing the modal view.
 - `content`: A closure that returns the content of the modal view.
 

@@ -29,7 +29,7 @@ You specify this callback when you create the timer with [`CFRunLoopTimerCreate(
 ## Parameters
 
 - `timer`: The run loop timer that is firing.
-- `info`: The   member of the   structure that was used when creating the run loop timer.
+- `info`: The `info` member of the [`CFRunLoopTimerContext`](cfrunlooptimercontext.md) structure that was used when creating the run loop timer.
 
 
 ---

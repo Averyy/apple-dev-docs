@@ -24,8 +24,8 @@ Call this method to identify the specific supplementary views of your layout tha
 
 ## Parameters
 
-- `elementKind`: A string that identifies the type of the supplementary views. This parameter must not be  .
-- `indexPaths`: An array of   objects. Each index path represents a supplementary view of the given kind whose layout needs to be recomputed.
+- `elementKind`: A string that identifies the type of the supplementary views. This parameter must not be `nil`.
+- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects. Each index path represents a supplementary view of the given kind whose layout needs to be recomputed.
 
 ## See Also
 

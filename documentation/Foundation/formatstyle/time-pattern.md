@@ -40,7 +40,7 @@ let format = duration.formatted(
 
 ## Parameters
 
-- `pattern`: A   that specifies the units to include in the displayed string and the behavior of the units.
+- `pattern`: A [`Duration.TimeFormatStyle.Pattern`](https://developer.apple.com/documentation/Swift/Duration/TimeFormatStyle/Pattern-swift.struct) that specifies the units to include in the displayed string and the behavior of the units.
 
 ## See Also
 

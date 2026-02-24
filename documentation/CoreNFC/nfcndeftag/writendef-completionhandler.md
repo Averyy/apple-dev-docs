@@ -24,7 +24,7 @@ To determine whether the tag is writable, call [`queryNDEFStatus(completionHandl
 ## Parameters
 
 - `ndefMessage`: The NDEF message to write to the tag.
-- `completionHandler`: The handler has the following parameter:
+- `completionHandler`: The handler invoked by the reader session after completing the write request. The session calls `completionHandler` on the dispatch queue provided when creating the [`NFCNDEFReaderSession`](nfcndefreadersession.md). The handler has the following parameter: - **error**: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object if the write request fails. A value of `nil` indicates that the write was successful.
 
 ## See Also
 

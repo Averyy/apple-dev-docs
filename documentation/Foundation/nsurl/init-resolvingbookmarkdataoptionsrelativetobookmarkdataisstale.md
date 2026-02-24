@@ -33,7 +33,7 @@ An NSURL initialized by resolving `bookmarkData`.
 - `bookmarkData`: The bookmark data the URL is derived from.
 - `options`: Options taken into account when resolving the bookmark data.
 - `relativeURL`: The base URL that the bookmark data is relative to.
-- `isStale`: If  , the bookmark data is stale.
+- `isStale`: If [`true`](https://developer.apple.com/documentation/Swift/true), the bookmark data is stale.
 
 ## See Also
 

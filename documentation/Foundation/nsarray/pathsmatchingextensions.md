@@ -26,7 +26,7 @@ An array containing all the pathname elements in the receiving array that have f
 
 ## Parameters
 
-- `filterTypes`: An array of   objects containing filename extensions. The extensions should not include the dot (”.”) character.
+- `filterTypes`: An array of `NSString` objects containing filename extensions. The extensions should not include the dot (”.”) character.
 
 
 ---

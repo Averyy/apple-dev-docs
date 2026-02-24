@@ -30,6 +30,13 @@ object RestrictionsResponse.GlobalRestrictions
 - [object RestrictionsResponse.GlobalRestrictions.Union](restrictionsresponse/globalrestrictions-data.dictionary/union-data.dictionary.md)
   A dictionary that contains unioned restrictions.
 
+## Properties
+
+- `intersection` (RestrictionsResponse.GlobalRestrictions.Intersection): A dictionary of intersected profile restrictions. Intersected restrictions indicate that new restrictions can only reduce the number of strings in the set.
+- `restrictedBool` (RestrictionsResponse.GlobalRestrictions.RestrictedBool): A dictionary of Boolean profile restrictions.
+- `restrictedValue` (RestrictionsResponse.GlobalRestrictions.RestrictedValue): A dictionary of numeric profile restrictions.
+- `union` (RestrictionsResponse.GlobalRestrictions.Union): A dictionary of unioned profile restrictions. Unioned restrictions indicate that new restrictions can add to the set.
+
 ## See Also
 
 - [object RestrictionsResponse.ErrorChainItem](restrictionsresponse/errorchainitem.md)

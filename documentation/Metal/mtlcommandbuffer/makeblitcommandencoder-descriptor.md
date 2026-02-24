@@ -26,7 +26,7 @@ Use an [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md) instance’s methods 
 
 ## Parameters
 
-- `blitPassDescriptor`: An   instance that configures the   the method returns.
+- `blitPassDescriptor`: An [`MTLBlitPassDescriptor`](mtlblitpassdescriptor.md) instance that configures the [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md) the method returns.
 
 ## See Also
 

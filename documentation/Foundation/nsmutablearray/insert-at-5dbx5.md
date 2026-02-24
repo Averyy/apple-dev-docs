@@ -28,8 +28,8 @@ Note that `NSArray` objects are not like C arrays. That is, even though you spec
 
 ## Parameters
 
-- `anObject`: The object to add to the array’s content. This value must not be  .
-- `index`: The index in the array at which to insert  . This value must not be greater than the count of elements in the array.
+- `anObject`: The object to add to the array’s content. This value must not be `nil`. > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `anObject` is `nil`.
+- `index`: The index in the array at which to insert `anObject`. This value must not be greater than the count of elements in the array. > ❗ **Important**:  Raises an `NSRangeException` if `index` is greater than the number of elements in the array.
 
 ## See Also
 

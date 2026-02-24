@@ -21,8 +21,8 @@ func resetCommands(buffer: any MTLIndirectCommandBuffer, range: Range<Int>)
 
 ## Parameters
 
-- `buffer`: An   the command resets.
-- `range`: A range of commands within  .
+- `buffer`: An [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) the command resets.
+- `range`: A range of commands within `buffer`.
 
 
 ---

@@ -25,7 +25,7 @@ The first capture connection that has the specified media type, or `nil` if no c
 
 ## Parameters
 
-- `mediaType`: A media type such as   or  .
+- `mediaType`: A media type such as [`video`](avmediatype/video.md) or [`audio`](avmediatype/audio.md).
 
 ## See Also
 

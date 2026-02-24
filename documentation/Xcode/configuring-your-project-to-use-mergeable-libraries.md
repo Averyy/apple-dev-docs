@@ -8,7 +8,7 @@ Use mergeable dynamic libraries to get app launch times similar to static linkin
 
 In Xcode 14 or earlier, you include code from a separate library in your target using static linking or dynamic linking. You link a static library to your app when you build your target, which can increase both your build time and app size. The dynamic loader resolves dynamic symbols in the executable to point to the appropriate addresses in the dynamic libraries when you run your target, which can increase your app launch time.
 
-In Xcode 15 or later, you can include symbols from a separate,  dynamic library for macOS and iOS app and framework targets. Mergeable dynamic libraries include extra metadata so that Xcode can merge the library into another binary, similar to linking a static library with `-all_load`. When you enable automatic merging, Xcode enables build settings that make app launching fast and keep debugging and development build times fast.
+In Xcode 15 or later, you can include symbols from a separate, *mergeable* dynamic library for macOS and iOS app and framework targets. Mergeable dynamic libraries include extra metadata so that Xcode can merge the library into another binary, similar to linking a static library with `-all_load`. When you enable automatic merging, Xcode enables build settings that make app launching fast and keep debugging and development build times fast.
 
 In this context, a debug or development build is unoptimized, where either the `clang` debug format is `-O0` or the `swiftc` debug format is `-Onone`. A release build uses optimizations. Xcode represents debug builds with a new build setting, `IS_UNOPTIMIZED_BUILD`.
 
@@ -24,19 +24,19 @@ In release builds, the binary is slightly larger, but avoids the overhead of loa
 
 To automatically merge libraries, first open your project in Xcode 15 or later. Then, add the `MERGED_BINARY_TYPE` build setting to your app target, and set the value to `automatic`. With this build setting, Xcode treats mergeable dependencies like normal dynamic libraries in debug builds, but performs steps in release mode to automatically handle merging for direct dependencies. For more information on the `MERGED_BINARY_TYPE` build setting, see [`Create Merged Binary`](build-settings-reference#Create-Merged-Binary.md).
 
-A  is a library that meets two criteria:
+A *direct dependency* is a library that meets two criteria:
 
 - The library is listed in your target’s Link Binary with Libraries build phase.
 - The library is the product of another target in your project.
 
-An  is any other library dependency that doesn’t meet those two criteria — for example, a pre-built library, or a library’s dependencies.
+An *indirect dependency* is any other library dependency that doesn’t meet those two criteria — for example, a pre-built library, or a library’s dependencies.
 
 In release builds:
 
 - Xcode builds direct dependencies of the merged binary target as mergeable. This includes framework and dynamic library (dylib) targets.
 - Xcode combines the mergeable libraries into the merged binary.
 - Xcode also combines any mergeable pre-built XCFrameworks listed in your target’s Link Binary with Libraries build phase.
-- Xcode embeds mergeable target products in either the merged binary product or into a product, such as an app, that contains the merged binary product. Xcode does  include the binaries from the libraries in the embedded copy.
+- Xcode embeds mergeable target products in either the merged binary product or into a product, such as an app, that contains the merged binary product. Xcode does *not* include the binaries from the libraries in the embedded copy.
 
 > **Note**: Xcode does not automatically build indirect dependencies as mergeable in release builds. To configure indirect dependencies for merging, see the [`Manually configure merging`](https://developer.apple.com#Manually-configure-merging) section below.
 

@@ -53,7 +53,7 @@ TextField("TouchBar Demo", text: $placeholder)
 
 ## Parameters
 
-- `presence`: One of the allowed    descriptions.
+- `presence`: One of the allowed [`TouchBarItemPresence`](touchbaritempresence.md) descriptions.
 
 ## See Also
 

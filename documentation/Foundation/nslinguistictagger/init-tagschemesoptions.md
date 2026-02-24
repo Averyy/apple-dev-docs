@@ -32,8 +32,8 @@ Pass any tag schemes to `tagSchemes` that you intend to use with the methods des
 
 ## Parameters
 
-- `tagSchemes`: An array of tag schemes to be used. See   for the possible values.
-- `opts`: Reserved for future use. Specify   for this parameter.
+- `tagSchemes`: An array of tag schemes to be used. See [`NSLinguisticTagScheme`](nslinguistictagscheme.md) for the possible values.
+- `opts`: Reserved for future use. Specify `0` for this parameter.
 
 ## See Also
 

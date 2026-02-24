@@ -24,7 +24,7 @@ This method searches the descriptor cache for the specified descriptor. If the d
 
 ## Parameters
 
-- `forClient`: The current service object. You may specify   for this parameter.
+- `forClient`: The current service object. You may specify `NULL` for this parameter.
 
 ## See Also
 

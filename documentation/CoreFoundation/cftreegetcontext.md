@@ -23,7 +23,7 @@ func CFTreeGetContext(_ tree: CFTree!, _ context: UnsafeMutablePointer<CFTreeCon
 ## Parameters
 
 - `tree`: The tree to examine.
-- `context`: The   structure to be filled in with the context of the specified tree. This value must be a valid C pointer to a   structure-sized block of storage. If the version number of the storage is not a valid   structure version number, the result is undefined.
+- `context`: The [`CFTreeContext`](cftreecontext.md) structure to be filled in with the context of the specified tree. This value must be a valid C pointer to a [`CFTreeContext`](cftreecontext.md) structure-sized block of storage. If the version number of the storage is not a valid [`CFTreeContext`](cftreecontext.md) structure version number, the result is undefined.
 
 ## See Also
 

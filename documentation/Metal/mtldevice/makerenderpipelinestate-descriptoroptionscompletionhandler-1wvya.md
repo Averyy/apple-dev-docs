@@ -26,9 +26,9 @@ Use the graphics-rendering pipeline state to configure a render pass by calling 
 
 ## Parameters
 
-- `descriptor`: An   instance.
-- `options`: An   instance that represents the reflection information you want the method to generate.
-- `completionHandler`: A Swift closure or an Objective-C block the method calls   when it finishes creating the render pipeline state.
+- `descriptor`: An [`MTLMeshRenderPipelineDescriptor`](mtlmeshrenderpipelinedescriptor.md) instance.
+- `options`: An [`MTLPipelineOption`](mtlpipelineoption.md) instance that represents the reflection information you want the method to generate.
+- `completionHandler`: A Swift closure or an Objective-C block the method calls when it finishes creating the render pipeline state.
 
 ## See Also
 

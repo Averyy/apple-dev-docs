@@ -37,7 +37,7 @@ Only some platforms enable flexible inspector columns. If you specify a width th
 ## Parameters
 
 - `min`: The minimum allowed width for the trailing column inspector
-- `ideal`: The initial width of the inspector in the absence of state   restoration.   influences the resulting width on macOS when a   user double-clicks the divider on the leading edge of the inspector.   clicks a divider to readjust
+- `ideal`: The initial width of the inspector in the absence of state restoration. `ideal` influences the resulting width on macOS when a user double-clicks the divider on the leading edge of the inspector. clicks a divider to readjust
 - `max`: The maximum allowed width for the trailing column inspector
 
 ## See Also

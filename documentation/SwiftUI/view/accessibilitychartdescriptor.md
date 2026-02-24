@@ -57,7 +57,7 @@ SomeChartView()
 
 ## Parameters
 
-- `representable`: The    used to describe your chart and its data.
+- `representable`: The [`AXChartDescriptorRepresentable`](axchartdescriptorrepresentable.md) used to describe your chart and its data.
 
 ## See Also
 

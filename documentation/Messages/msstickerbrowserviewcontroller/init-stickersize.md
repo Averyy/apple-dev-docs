@@ -22,7 +22,7 @@ A newly instantiated sticker browser controller.
 
 ## Parameters
 
-- `stickerSize`: A constant that indicates the size of the stickers. For a list of possible values, see  .
+- `stickerSize`: A constant that indicates the size of the stickers. For a list of possible values, see [`MSStickerSize`](msstickersize.md).
 
 ## See Also
 

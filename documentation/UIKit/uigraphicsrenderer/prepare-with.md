@@ -27,7 +27,7 @@ Core Graphics contexts are reused for repeated calls to the [`runDrawingActions(
 ## Parameters
 
 - `context`: The Core Graphics context that the graphics renderer performs drawing actions on.
-- `rendererContext`: The renderer context object that is provided to the   method. This object is of the type returned by the   static method.
+- `rendererContext`: The renderer context object that is provided to the [`runDrawingActions(_:completionActions:)`](uigraphicsrenderer/rundrawingactions(_:completionactions:).md) method. This object is of the type returned by the [`rendererContextClass()`](uigraphicsrenderer/renderercontextclass().md) static method.
 
 ## See Also
 

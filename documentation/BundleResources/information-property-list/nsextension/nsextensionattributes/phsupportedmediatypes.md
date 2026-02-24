@@ -9,6 +9,10 @@ The types of assets a Photo Editing extension can edit.
 - iOS 8.0+
 - iPadOS 8.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [PHProjectExtensionDefinesProjectTypes](information-property-list/nsextension/nsextensionattributes/phprojectextensiondefinesprojecttypes.md)

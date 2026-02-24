@@ -28,13 +28,13 @@ This function is identical to [`CMAudioSampleBufferCreateWithPacketDescriptions(
 
 ## Parameters
 
-- `allocator`: The allocator to use for allocating the   object. Pass   to use the default allocator.
-- `dataBuffer`:   already containing the media data. Must not be  .
-- `formatDescription`: A description of the media data’s format. Can’t be  .
-- `numSamples`: Number of samples in the  . Must not be 0.
-- `presentationTimeStamp`: Timestamp of the first sample in the buffer. Must be a numeric  .
-- `packetDescriptions`: Array of packet descriptions, one for each of  . May be   if the samples are known to have a constant number of frames per packet and a constant size.
-- `sampleBufferOut`: Returned newly created  .
+- `allocator`: The allocator to use for allocating the `CMSampleBuffer` object. Pass `kCFAllocatorDefault` to use the default allocator.
+- `dataBuffer`: `CMBlockBuffer` already containing the media data. Must not be `NULL`.
+- `formatDescription`: A description of the media data’s format. Can’t be `NULL`.
+- `numSamples`: Number of samples in the `CMSampleBuffer`. Must not be 0.
+- `presentationTimeStamp`: Timestamp of the first sample in the buffer. Must be a numeric `CMTime`.
+- `packetDescriptions`: Array of packet descriptions, one for each of `numSamples`. May be `NULL` if the samples are known to have a constant number of frames per packet and a constant size.
+- `sampleBufferOut`: Returned newly created `CMSampleBuffer`.
 
 ## See Also
 

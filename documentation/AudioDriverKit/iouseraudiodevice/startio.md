@@ -28,7 +28,7 @@ All streams added to the device also receive a call to their [`StartIO`](iousera
 
 ## Parameters
 
-- `in_flags`: A   to indicate I/O startup behavior.
+- `in_flags`: A `IOUserAudioStartStopFlag` to indicate I/O startup behavior.
 
 ## See Also
 

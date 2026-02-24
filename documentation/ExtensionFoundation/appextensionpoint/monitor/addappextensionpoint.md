@@ -30,7 +30,7 @@ This method updates the state of the monitor, adding the specified extension poi
 
 ## Parameters
 
-- `appExtensionPoint`: An extension point that you define in your host app. If the   monitor is already tracking the extension point, calling this method has no impact.
+- `appExtensionPoint`: An extension point that you define in your host app. If the monitor is already tracking the extension point, calling this method has no impact.
 
 ## See Also
 

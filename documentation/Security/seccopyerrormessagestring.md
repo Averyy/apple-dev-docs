@@ -26,8 +26,8 @@ A human-readable string describing the result, or `nil` if no string is availabl
 
 ## Parameters
 
-- `status`: A result code of type   returned by a security function. See   for a list of codes.
-- `reserved`: Reserved for future use. Pass   for this parameter.
+- `status`: A result code of type `OSStatus` returned by a security function. See [`Security Framework Result Codes`](security-framework-result-codes.md) for a list of codes.
+- `reserved`: Reserved for future use. Pass `nil` for this parameter.
 
 
 ---

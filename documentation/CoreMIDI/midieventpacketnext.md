@@ -26,7 +26,7 @@ The subsequent packet in the event list.
 
 ## Parameters
 
-- `pkt`: A pointer to a   in an event list.
+- `pkt`: A pointer to a [`MIDIEventPacket`](midieventpacket.md) in an event list.
 
 ## See Also
 

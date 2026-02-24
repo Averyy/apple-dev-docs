@@ -25,9 +25,9 @@ This method will fail with error [`ALAssetsLibraryAccessGloballyDeniedError`](al
 
 ## Parameters
 
-- `types`: The value is a bitfield; you can OR together values from  .
-- `enumerationBlock`: For a description of the block, see  .
-- `failureBlock`: For a description of the block, see  .
+- `types`: The types of asset group over which to enumerate. The value is a bitfield; you can OR together values from [`writeImageData(toSavedPhotosAlbum:metadata:completionBlock:)`](alassetslibrary/writeimagedata(tosavedphotosalbum:metadata:completionblock:).md).
+- `enumerationBlock`: The block to invoke using each asset group in turn. When the enumeration is done, `enumerationBlock` is invoked with `group` set to `nil`. For a description of the block, see [`ALAssetsLibraryGroupsEnumerationResultsBlock`](alassetslibrarygroupsenumerationresultsblock.md).
+- `failureBlock`: The block to invoke if the user denies access to the assets library. For a description of the block, see [`ALAssetsLibraryAccessFailureBlock`](alassetslibraryaccessfailureblock.md).
 
 ## See Also
 

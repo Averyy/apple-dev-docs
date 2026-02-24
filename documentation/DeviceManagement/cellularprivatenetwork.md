@@ -94,6 +94,16 @@ Specify `com.apple.cellularprivatenetwork.managed` as the payload type.
 - [object CellularPrivateNetwork.GeofenceItem](cellularprivatenetwork/geofenceitem.md)
   A geofence for a private network.
 
+## Properties
+
+- `CellularDataPreferred` (boolean): Set to `true` to prefer this private network over Wi-Fi.
+- `CsgNetworkIdentifier` (string): A string using the 3GPP “CSG_ID” format (defined in 3GPP 23.003, Section 4.7). The device uses this value to match a SIM present on the device. All combinations of `NetworkIdentifier` and `CsgNetworkIdentifier` must be unique across all profiles installed on the device.
+- `DataSetName` (string) *(required)*: The name of the private network configuration data set.
+- `EnableNRStandalone` (boolean): Set to `true` if this private network is NR Standalone.
+- `Geofences` ([CellularPrivateNetwork.GeofenceItem]): A list of up to 1000 geofences for private networks. Geofencing is only used on iPhone.
+- `NetworkIdentifier` (string): A string using the 3GPP “Coordinated NID” (option 1 or option 2) format (defined in 3GPP 31.102, Section 12.7.1). The device uses this value to match a SIM present on the device. All combinations of `NetworkIdentifier` and `CsgNetworkIdentifier` must be unique across all profiles installed on the device.
+- `VersionNumber` (string) *(required)*: The version number of this dataset that the system uses to track updates.
+
 ## See Also
 
 - [object Cellular](cellular.md)

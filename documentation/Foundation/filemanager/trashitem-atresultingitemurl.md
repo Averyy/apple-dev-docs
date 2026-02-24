@@ -21,7 +21,7 @@ func trashItem(at url: URL, resultingItemURL outResultingURL: AutoreleasingUnsaf
 ## Parameters
 
 - `url`: The item to move to the trash.
-- `outResultingURL`: On input, a pointer to a URL object. On output, this pointer is set to the item’s location in the trash. The actual name of the item may be changed when moving it to the trash, so use this URL to access it. You may specify   for this parameter if you do not want the information.
+- `outResultingURL`: On input, a pointer to a URL object. On output, this pointer is set to the item’s location in the trash. The actual name of the item may be changed when moving it to the trash, so use this URL to access it. You may specify `nil` for this parameter if you do not want the information.
 
 ## See Also
 

@@ -28,7 +28,7 @@ Popping a navigation item removes the top item from the stack and replaces it wi
 
 ## Parameters
 
-- `animated`:   if the navigation bar should be animated; otherwise,  .
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) if the navigation bar should be animated; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

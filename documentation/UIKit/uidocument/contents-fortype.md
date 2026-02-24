@@ -43,7 +43,7 @@ If you want more control over the saving operation than this method provides—f
 
 ## Parameters
 
-- `typeName`: The file type of the document, a Uniform Type Identifier (UTI). This string typically derives from the   property. If you want to save the document under a different UTI, you can override the   method.
+- `typeName`: The file type of the document, a Uniform Type Identifier (UTI). This string typically derives from the [`fileType`](uidocument/filetype.md) property. If you want to save the document under a different UTI, you can override the [`savingFileType`](uidocument/savingfiletype.md) method.
 
 ## See Also
 

@@ -27,7 +27,7 @@ var SparseFactorizationQR: SparseFactorization_t { get }
 ## See Also
 
 - [var SparseFactorizationCholeskyAtA: SparseFactorization_t](sparsefactorizationcholeskyata.md)
-  A constant that represents  factorization without storing .
+  A constant that represents *QR* factorization without storing *Q*.
 
 
 ---

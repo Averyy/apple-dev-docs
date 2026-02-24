@@ -21,10 +21,10 @@ func setExplicitPaddingWithPaddingLeft(_ paddingLeft: Int, paddingRight: Int, pa
 
 ## Parameters
 
-- `paddingLeft`: See   property.
-- `paddingRight`: See   property.
-- `paddingTop`: See   property.
-- `paddingBottom`: See   property.
+- `paddingLeft`: See `paddingLeft` property.
+- `paddingRight`: See `paddingRight` property.
+- `paddingTop`: See `paddingTop` property.
+- `paddingBottom`: See `paddingBottom` property.
 
 
 ---

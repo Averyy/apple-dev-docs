@@ -22,9 +22,9 @@ optional func parser(_ parser: XMLParser, foundAttributeDeclarationWithName attr
 
 ## Parameters
 
-- `parser`: An   object parsing XML.
+- `parser`: An `NSXMLParser` object parsing XML.
 - `attributeName`: A string that is the name of an attribute.
-- `elementName`: A string that is the name of an element that has the attribute  .
+- `elementName`: A string that is the name of an element that has the attribute `attributeName`.
 - `type`: A string, such as “ENTITY”, “NOTATION”, or “ID”, that indicates the type of the attribute.
 - `defaultValue`: A string that specifies the default value of the attribute.
 

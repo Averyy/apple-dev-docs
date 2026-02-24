@@ -9,6 +9,10 @@ A list of country codes that indicate the regions where your music-streaming app
 - iOS 18.2+
 - iPadOS 18.2+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 Use this information property list key if your app has the [`com.apple.developer.storekit.external-purchase-link-streaming`](entitlements/com.apple.developer.storekit.external-purchase-link-streaming.md) entitlement.

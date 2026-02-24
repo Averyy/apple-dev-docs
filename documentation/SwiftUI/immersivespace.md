@@ -136,6 +136,10 @@ To configure the style of the immersive space that opens at launch, add a scene 
 ### Initializers
 - [init<C>(for: Data.Type, makeContent: (Binding<Data?>) -> C)](immersivespace/init(for:makecontent:).md)
 - [init<C>(for: Data.Type, makeContent: (Binding<Data>) -> C, defaultValue: () -> Data)](immersivespace/init(for:makecontent:defaultvalue:).md)
+- [init(foveatedStreaming: FoveatedStreamingSession)](immersivespace/init(foveatedstreaming:).md)
+  Creates an immersive space to display foveated streaming content.
+- [init<V>(foveatedStreaming: FoveatedStreamingSession, content: () -> V)](immersivespace/init(foveatedstreaming:content:).md)
+  Creates an immersive space to display foveated streaming content alongside `RealityKit` content.
 - [init<C>(id: String, for: Data.Type, makeContent: (Binding<Data?>) -> C)](immersivespace/init(id:for:makecontent:).md)
 - [init<C>(id: String, for: Data.Type, makeContent: (Binding<Data>) -> C, defaultValue: () -> Data)](immersivespace/init(id:for:makecontent:defaultvalue:).md)
 - [init(id:makeContent:)](immersivespace/init(id:makecontent:).md)

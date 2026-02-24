@@ -29,7 +29,7 @@ This method is called whenever an action needs to be invoked by the object. The 
 ## Parameters
 
 - `action`: A selector that identifies a method associated with a command.
-- `sender`: The object calling this method. For the editing menu commands, this is the shared   object. Depending on the context, you can query the sender for information to help you determine the target of the command.
+- `sender`: The object calling this method. For the editing menu commands, this is the shared [`UIApplication`](uiapplication.md) object. Depending on the context, you can query the sender for information to help you determine the target of the command.
 
 ## See Also
 

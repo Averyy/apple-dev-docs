@@ -27,6 +27,22 @@ If you set the value to [`true`](https://developer.apple.com/documentation/Swift
 
 This property doesn’t exist in iOS 12 and earlier, and tvOS 12 and earlier. If you create an indirect command buffer on those systems, it inherits the pipeline state, exactly as if the property existed, with a value of [`true`](https://developer.apple.com/documentation/Swift/true). If you need your app to run on earlier versions of iOS, use an availability attribute to set the property conditionally:
 
+**Swift**:
+
+```swift
+if #available(iOS 13.0, tvOS 13, *) {
+    descriptor.inheritPipelineState = true
+}
+```
+
+**Objective-C**:
+
+```objective-c
+if (@available(iOS 13.0, tvOS 13.0, *)) {
+    descriptor.inheritPipelineState = YES;
+}
+```
+
 ## See Also
 
 - [var inheritBuffers: Bool](mtlindirectcommandbufferdescriptor/inheritbuffers.md)

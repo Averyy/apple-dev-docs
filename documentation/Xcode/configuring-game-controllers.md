@@ -8,7 +8,7 @@ Enhance gameplay input by enabling the discovery, configuration, and use of phys
 
 Game controllers provide physical controls to trigger actions in your game. Apple specifies the look and behavior of the controls to MFi accessory manufacturers, which means you can rely on a consistent set of high-quality controls in all supported game controllers.
 
-A game that supports game controllers enables one or more different  — objects that map physical controls on a device to the inputs your game requires — such as Extended, Micro, and Directional. The game also specifies the preferred order of use for these profiles. After retrieving a profile from the connected game controller, your game periodically requests the device’s current values or installs handlers that the system invokes when those values change.
+A game that supports game controllers enables one or more different *game-controller profiles* — objects that map physical controls on a device to the inputs your game requires — such as Extended, Micro, and Directional. The game also specifies the preferred order of use for these profiles. After retrieving a profile from the connected game controller, your game periodically requests the device’s current values or installs handlers that the system invokes when those values change.
 
 Before you can select the profiles your game supports, follow the steps in [`Add a capability`](adding-capabilities-to-your-app#Add-a-capability.md) to add the Game Controllers capability to your game’s target.
 

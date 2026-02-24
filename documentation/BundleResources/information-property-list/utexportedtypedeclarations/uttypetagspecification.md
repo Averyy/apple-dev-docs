@@ -11,6 +11,10 @@ A dictionary defining one or more equivalent type identifiers.
 - macOS 10.7+
 - visionOS 1.0+
 
+
+
+**Type**: object
+
 ## See Also
 
 - [UTTypeConformsTo](information-property-list/utexportedtypedeclarations/uttypeconformsto.md)

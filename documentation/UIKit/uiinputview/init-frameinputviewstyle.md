@@ -29,7 +29,7 @@ This method is the designated initializer for the view and must be called by you
 ## Parameters
 
 - `frame`: The frame rectangle for the view, measured in points. The origin of the frame is relative to the superview in which you plan to add it.
-- `inputViewStyle`: The style to use when altering the appearance of the view and its subviews. For a list of possible values, see 
+- `inputViewStyle`: The style to use when altering the appearance of the view and its subviews. For a list of possible values, see [`UIInputView.Style`](uiinputview/style.md)
 
 ## See Also
 

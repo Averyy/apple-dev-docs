@@ -27,8 +27,8 @@ When you create a new vibrancy effect, use the same [`UIBlurEffect`](uiblureffec
 
 ## Parameters
 
-- `blurEffect`: The   used by the blurred view the vibrancy effect is attached to.
-- `style`: The style that defines what level of vibrancy to apply to the content. For a list of possible values, see  .
+- `blurEffect`: The [`UIBlurEffect`](uiblureffect.md) used by the blurred view the vibrancy effect is attached to.
+- `style`: The style that defines what level of vibrancy to apply to the content. For a list of possible values, see [`UIVibrancyEffectStyle`](uivibrancyeffectstyle.md).
 
 ## See Also
 

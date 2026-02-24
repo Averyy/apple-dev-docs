@@ -24,7 +24,7 @@ The text provider created by this method uses the default time zone information 
 
 ## Parameters
 
-- `date`: The date object containing the time to display. This parameter must not be  .
+- `date`: The date object containing the time to display. This parameter must not be `nil`.
 
 ## See Also
 

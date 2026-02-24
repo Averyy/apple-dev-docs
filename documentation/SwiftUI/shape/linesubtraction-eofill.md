@@ -34,7 +34,7 @@ Intersected subpaths that are clipped create open subpaths. Closed subpaths that
 ## Parameters
 
 - `other`: The shape to subtract.
-- `eoFill`: Whether to use the even-odd rule for determining   which areas to treat as the interior of the shapes (if true),   or the non-zero rule (if false).
+- `eoFill`: Whether to use the even-odd rule for determining which areas to treat as the interior of the shapes (if true), or the non-zero rule (if false).
 
 ## See Also
 

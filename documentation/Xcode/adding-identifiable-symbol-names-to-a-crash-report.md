@@ -6,7 +6,7 @@ Replace hexadecimal addresses in a crash report with function names and line num
 
 #### Overview
 
-When an app crashes, the operating system collects diagnostic information about what the app was doing at the time of crash. One of the most important parts of the crash report are the thread backtraces, reported as hexadecimal addresses. You translate these thread backtraces into readable function names and line numbers in source code, a process called , then use that information to understand why your app crashed. In many cases, the Crashes organizer in Xcode [`automatically symbolicate the crash reports`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev709125d2e) for you.
+When an app crashes, the operating system collects diagnostic information about what the app was doing at the time of crash. One of the most important parts of the crash report are the thread backtraces, reported as hexadecimal addresses. You translate these thread backtraces into readable function names and line numbers in source code, a process called *symbolication*, then use that information to understand why your app crashed. In many cases, the Crashes organizer in Xcode [`automatically symbolicate the crash reports`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev709125d2e) for you.
 
 ##### Determine If a Crash Report Is Symbolicated
 

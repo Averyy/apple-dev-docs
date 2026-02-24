@@ -27,7 +27,7 @@ A typed instance of the identified model, if known to the context; otherwise, `n
 
 ## Parameters
 
-- `persistentModelID`: The identifier of the model to fetch. For more information, see  .
+- `persistentModelID`: The identifier of the model to fetch. For more information, see [`PersistentIdentifier`](persistentidentifier.md).
 
 ## See Also
 

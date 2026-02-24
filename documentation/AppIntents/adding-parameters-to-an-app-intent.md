@@ -51,7 +51,7 @@ When a person provides input that your app intents use, the input doesn’t alwa
 To make it easy for people to provide your app intents with the right information, restrict parameter values. The system presents known values as a list and prompts the person to select one when it needs to resolve a parameter. To restrict parameter values to a list of known values:
 
 - At compile time, use an enumeration type for the parameter that conforms to the [`AppEnum`](appenum.md) protocol.
-- At runtime, specify an options provider as part of the property wrapper’s declaration. An  is a type you implement that conforms to the [`DynamicOptionsProvider`](dynamicoptionsprovider.md) protocol and provides a set of permitted values at runtime.
+- At runtime, specify an options provider as part of the property wrapper’s declaration. An *options provider* is a type you implement that conforms to the [`DynamicOptionsProvider`](dynamicoptionsprovider.md) protocol and provides a set of permitted values at runtime.
 
 For example, the [`Accelerating app interactions with App Intents`](acceleratingappinteractionswithappintents.md) sample code project uses a dynamic options provider to display a sorted list of location parameters in the Shortcuts app.
 

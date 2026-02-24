@@ -27,7 +27,7 @@ If `range` isn’t within the receiver’s range of bytes, an [`rangeException`]
 ## Parameters
 
 - `buffer`: A buffer into which to copy data.
-- `range`: The range of bytes in the receiver’s data to copy to  . The range must lie within the range of bytes of the receiver’s data.
+- `range`: The range of bytes in the receiver’s data to copy to `buffer`. The range must lie within the range of bytes of the receiver’s data.
 
 ## See Also
 

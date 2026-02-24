@@ -21,9 +21,9 @@ func send(_ data: Data, with transport: GKTransportType) async throws
 
 ## Parameters
 
-- `data`: A   object containing the information to be sent.
+- `data`: A `Data` object containing the information to be sent.
 - `transport`: Determines how the data is sent.
-- `completionHandler`: A block that is called after the data has been sent.
+- `completionHandler`: A block that is called after the data has been sent. - **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is nil. See `GameKit Constants` for a list of error codes specific to GameKit.
 
 ## See Also
 

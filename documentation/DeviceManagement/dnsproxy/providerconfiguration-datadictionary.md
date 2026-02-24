@@ -17,6 +17,10 @@ The dictionary of vendor-specific configuration items.
 object DNSProxy.ProviderConfiguration
 ```
 
+## Properties
+
+- `ANY` (any): Key/value pairs.
+
 
 ---
 

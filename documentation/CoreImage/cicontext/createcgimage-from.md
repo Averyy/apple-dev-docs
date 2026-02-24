@@ -31,8 +31,8 @@ Normally the pixel format of the created CGImage will be 8 bits-per-component. I
 
 ## Parameters
 
-- `image`: A   image instance for which to create a  .
-- `fromRect`: The   region of the   to use.   This region relative to the cartesean coordinate system of  .   This region will be intersected with integralized and intersected with  .
+- `image`: A [`CIImage`](ciimage.md) image instance for which to create a `CGImage`.
+- `fromRect`: The `CGRect` region of the `image` to use. This region relative to the cartesean coordinate system of `image`. This region will be intersected with integralized and intersected with `image.extent`.
 
 ## See Also
 

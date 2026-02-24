@@ -8,6 +8,10 @@ The bundle ID of the watchOS app.
 **Availability**:
 - watchOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key is automatically included in your WatchKit extension’s information property list when you create a watchOS project from a template.

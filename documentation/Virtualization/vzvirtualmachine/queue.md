@@ -25,6 +25,23 @@ Other properties or function calls on [`VZVirtualMachine`](vzvirtualmachine.md) 
 
 The following example shows use of the `VZVirtualMachine.queue` property to check to see if it’s possible to start a VM.
 
+**Swift**:
+
+```swift
+let canStart = virtualMachine.queue.sync {
+    virtualMachine.canStart
+}
+```
+
+**Objective-C**:
+
+```objective-c
+    BOOL canStart = NO;
+    dispatch_sync(virtualMachine.queue, ^{
+        canStart = virtualMachine.canStart;
+    });
+```
+
 ## See Also
 
 - [var state: VZVirtualMachine.State](vzvirtualmachine/state-swift.property.md)

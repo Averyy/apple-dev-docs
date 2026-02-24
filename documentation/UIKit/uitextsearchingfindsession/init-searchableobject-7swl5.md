@@ -20,7 +20,7 @@ Initializes an object to manage the search for the searchable object you specify
 
 ## Parameters
 
-- `searchableObject`: An object that conforms to the   protocol that the session uses to search the text of your app and decorate the found results.
+- `searchableObject`: An object that conforms to the [`UITextSearching`](uitextsearching-53wjq.md) protocol that the session uses to search the text of your app and decorate the found results.
 
 ## See Also
 

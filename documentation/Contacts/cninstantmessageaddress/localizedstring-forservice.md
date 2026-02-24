@@ -25,7 +25,7 @@ A string containing the localized name of service.
 
 ## Parameters
 
-- `service`: The service name whose localized name is being returned. Specify a key name such as  .
+- `service`: The service name whose localized name is being returned. Specify a key name such as [`CNInstantMessageServiceSkype`](cninstantmessageserviceskype.md).
 
 ## See Also
 

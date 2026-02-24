@@ -27,7 +27,7 @@ This method overrides the original timing and duration values only until the cur
 ## Parameters
 
 - `parameters`: The new timing information to apply to the animation. The animator may transition from the previous timing curve to the new timing curve over time to keep the transition from becoming too jarring. For example, if the previous timing curve used a spring animation, the animator may add some of spring behavior to the new animation.
-- `durationFactor`: A multiplying factor to apply to the animation’s original duration. The value of this parameter is multiplied by the original   value to obtain the new duration for the animations.
+- `durationFactor`: A multiplying factor to apply to the animation’s original duration. The value of this parameter is multiplied by the original [`duration`](uiviewpropertyanimator/duration.md) value to obtain the new duration for the animations.
 
 ## See Also
 

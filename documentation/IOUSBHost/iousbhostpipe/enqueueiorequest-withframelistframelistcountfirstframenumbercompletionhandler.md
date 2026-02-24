@@ -25,11 +25,11 @@ This method issues asynchronous isochronous requests. The caller allocates and i
 
 ## Parameters
 
-- `data`: An   object defining the memory to use for the transfer.
-- `frameList`: A pointer to the first element in an   array. The array must contain at least   elements.
-- `frameListCount`: The number of elements in  .
-- `firstFrameNumber`: The frame number the request should begin on. Query the current frame number with  . If  , the transfer starts on the next available frame (XHCI only).
-- `completionHandler`: An   that runs when the request completes, or times out if the call returns successfully. The   doesn’t run if the method returns with an error.
+- `data`: An [`NSMutableData`](https://developer.apple.com/documentation/Foundation/NSMutableData) object defining the memory to use for the transfer.
+- `frameList`: A pointer to the first element in an [`IOUSBHostIsochronousFrame`](iousbhostisochronousframe.md) array. The array must contain at least `frameListCount` elements.
+- `frameListCount`: The number of elements in `frameList`.
+- `firstFrameNumber`: The frame number the request should begin on. Query the current frame number with [`frameNumberWithTime:`](iousbhostobject/framenumberwithtime:.md). If `0`, the transfer starts on the next available frame (XHCI only).
+- `completionHandler`: An [`IOUSBHostIsochronousCompletionHandler`](iousbhostisochronouscompletionhandler.md) that runs when the request completes, or times out if the call returns successfully. The `completionHandler` doesn’t run if the method returns with an error.
 
 ## See Also
 

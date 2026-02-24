@@ -35,9 +35,9 @@ To determine the number of characters in the line:
 
 - `theString`: The string containing the specified range of characters.
 - `range`: The range of characters to consider. The specified range must not exceed the length of the string.
-- `lineBeginIndex`: On return, the index of the first character of the containing line. Pass   if you do not want this result.
-- `lineEndIndex`: On return, the index of the first character of the line after the specified range. Pass   if you do not want this result.
-- `contentsEndIndex`: On return, the index of the last character of the containing line, excluding any line-separator characters. Pass   if you are not interested in this result.
+- `lineBeginIndex`: On return, the index of the first character of the containing line. Pass `NULL` if you do not want this result.
+- `lineEndIndex`: On return, the index of the first character of the line after the specified range. Pass `NULL` if you do not want this result.
+- `contentsEndIndex`: On return, the index of the last character of the containing line, excluding any line-separator characters. Pass `NULL` if you are not interested in this result.
 
 ## See Also
 

@@ -58,7 +58,7 @@ var body: some Scene {
 
 ## Parameters
 
-- `kind`: If given, the kind of group activity association.   You can dynamically remove the group activity’s association   with a view by setting the given   to   instead of  .
+- `kind`: If given, the kind of group activity association. You can dynamically remove the group activity’s association with a view by setting the given `kind` to `nil` instead of `.primary(_:)`.
 
 
 ---

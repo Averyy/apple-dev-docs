@@ -26,7 +26,7 @@ CarPlay calls `completion` after it dismisses the template. The Boolean paramete
 
 ## Parameters
 
-- `animated`: If  , CarPlay animates the dismissal of the template.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), CarPlay animates the dismissal of the template.
 - `completion`: The closure CarPlay calls after it dismisses the template.
 
 ## See Also

@@ -23,7 +23,7 @@ func CGImageDestinationSetProperties(_ idst: CGImageDestination, _ properties: C
 ## Parameters
 
 - `idst`: The image destination to modify
-- `properties`: A dictionary that contains the properties to apply. For a list of possible values, see   and  .
+- `properties`: A dictionary that contains the properties to apply. For a list of possible values, see [`Image Properties`](image-properties.md) and [`Configuring the Image Behaviors`](cgimagedestination#Configuring-the-Image-Behaviors.md).
 
 ## See Also
 

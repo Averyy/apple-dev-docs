@@ -17,7 +17,7 @@ The table style that describes the behavior and appearance of a table with its c
 
 ## Parameters
 
-- `alternatesRowBackgrounds`: Whether the rows should alternate   their backgrounds to help visually distinguish them from each other.
+- `alternatesRowBackgrounds`: Whether the rows should alternate their backgrounds to help visually distinguish them from each other.
 
 ## See Also
 

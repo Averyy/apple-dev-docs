@@ -20,7 +20,7 @@ var kAudioSessionCategory_PlayAndRecord: Int { get }
 
 #### Discussion
 
-Your audio continues with the Silent switch set to silent and with the screen locked. (The switch is called the  on iPhone.)
+Your audio continues with the Silent switch set to silent and with the screen locked. (The switch is called the *Ring/Silent switch* on iPhone.)
 
 This category is appropriate for simultaneous recording and playback, and also for apps that record and play back but not simultaneously. If you want to ensure that sounds such as Messages alerts do not play while your app is recording, use the [`kAudioSessionCategory_RecordAudio`](kaudiosessioncategory_recordaudio.md) category instead.
 

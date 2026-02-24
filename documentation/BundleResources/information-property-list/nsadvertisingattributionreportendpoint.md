@@ -10,6 +10,10 @@ The URL where Private Click Measurement and SKAdNetwork send attribution informa
 - iPadOS 14.5+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key is a string that contains a valid URL containing your domain name. Provide a string in the format `“https://example.com”`, where you replace `example` with your domain name. Include this key in your app for the following two uses:

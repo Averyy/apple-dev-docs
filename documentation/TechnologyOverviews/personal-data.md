@@ -12,7 +12,7 @@ The data people put on their devices belongs to them, and much of it is personal
 
 Before you access any personal data, each Apple technology has specific API you must call to request access to that data. The first time your app calls one of these API, the system displays a special panel to inform the person of your request. The person then uses this panel to grant or deny access, and the system records their choice and typically doesn’t display the panel again. Subsequent requests for access simply return the previously requested choice.
 
-When the system prompts someone to grant or deny a request, the panel displays a  string that you provide. This string is your opportunity to tell the person how you intend to use their data. People use these strings to decide whether or not to grant access, so it’s important to provide a compelling reason for access. Be clear about how your intentions, and communicate the benefits you provide with access to the data. For example, a running app might indicate that it contributes the workout data it collects to the person’s health records.
+When the system prompts someone to grant or deny a request, the panel displays a *usage description* string that you provide. This string is your opportunity to tell the person how you intend to use their data. People use these strings to decide whether or not to grant access, so it’s important to provide a compelling reason for access. Be clear about how your intentions, and communicate the benefits you provide with access to the data. For example, a running app might indicate that it contributes the workout data it collects to the person’s health records.
 
 #### Fetch Different Types of Personal Data
 
@@ -31,11 +31,15 @@ Access or modify someone’s personal data using the appropriate system framewor
 | Game Center friends | [`GameKit`](https://developer.apple.com/documentation/GameKit) | [`NSGKFriendListUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSGKFriendListUsageDescription) |
 | TV provider account information | [`Video Subscriber Account`](https://developer.apple.com/documentation/VideoSubscriberAccount) | [`NSVideoSubscriberAccountUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSVideoSubscriberAccountUsageDescription) |
 
+---
+
 #### Access Environmental Data on Apple Vision Pro
 
 The cameras on Apple Vision Pro generate significant amounts of data about a person’s environment. To protect people’s privacy, visionOS limits the types of information apps can receive directly from these cameras. For example, the system provides a 3D mesh of a person’s environment to detect collisions with virtual content, but it doesn’t provide direct access to the cameras or LiDAR sensor it uses to generate that mesh. Similarly, the system handles many standard hand gestures, and makes hand positions and movements available through special APIs.
 
 Most of the environmental data you receive in visionOS comes from the [`ARKit`](https://developer.apple.com/documentation/ARKit) framework. This framework helps you detect items in a person’s environment in a privacy friendly way. You can perform and track, detect planes, build a mesh of the environment, track objects and images, and much more.
+
+---
 
 #### Verify Someones Identity
 

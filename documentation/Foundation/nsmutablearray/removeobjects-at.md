@@ -38,7 +38,7 @@ If `indexes` is `nil`, this method raises an exception.
 
 ## Parameters
 
-- `indexes`: The indexes of the objects to remove from the array. The locations specified by   must lie within the bounds of the array.
+- `indexes`: The indexes of the objects to remove from the array. The locations specified by `indexes` must lie within the bounds of the array.
 
 ## See Also
 

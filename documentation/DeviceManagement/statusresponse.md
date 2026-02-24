@@ -19,6 +19,17 @@ object StatusResponse
 - [Managing Assets](managing-assets.md)
 - [Managing Users](managing-users.md)
 
+## Properties
+
+- `eventStatus` (string)
+- `eventType` (string)
+- `failures` ([ErrorResponse])
+- `mdmInfo` (MdmInfo)
+- `numCompleted` (int32)
+- `numRequested` (int32)
+- `tokenExpirationDate` (string)
+- `uId` (string)
+
 ## See Also
 
 - [object ErrorResponse](errorresponse.md)

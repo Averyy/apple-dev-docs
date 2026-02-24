@@ -36,7 +36,7 @@ Returning [`true`](https://developer.apple.com/documentation/Swift/true) from th
 
 - `splitViewController`: The split view controller whose interface is collapsing.
 - `secondaryViewController`: The secondary view controller of the split view interface.
-- `primaryViewController`: The primary view controller of the split view interface. If you implement the   method in your delegate, this object is the one that method returns.
+- `primaryViewController`: The primary view controller of the split view interface. If you implement the [`primaryViewController(forCollapsing:)`](uisplitviewcontrollerdelegate/primaryviewcontroller(forcollapsing:).md) method in your delegate, this object is the one that method returns.
 
 ## See Also
 

@@ -10,8 +10,8 @@ To search for and return events and reminders from the Calendar database, you mu
 
 There are two ways to retrieve events and reminders. You can fetch via:
 
-1. , or , and return zero or more events that match a given query.
-2.  and return a single event that corresponds to the given identifier.
+1. *Predicate*, or *search query*, and return zero or more events that match a given query.
+2. *Unique identifier* and return a single event that corresponds to the given identifier.
 
 > **Note**:  Retrieving events from the Calendar database does not necessarily return events in chronological order. To sort an array of [`EKEvent`](ekevent.md) objects by date, call [`sortedArray(using:)`](https://developer.apple.com/documentation/Foundation/NSArray/sortedArray(using:)-9nhh9) on the array, providing the selector for the [`compareStartDate(with:)`](ekevent/comparestartdate(with:).md) method.
 

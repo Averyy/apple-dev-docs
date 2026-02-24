@@ -23,9 +23,9 @@ When this item is removed from the system menu bar by the user, the application 
 
 ## Parameters
 
-- `titleKey`: The localized string key to use for the accessibility   label of the item.
+- `titleKey`: The localized string key to use for the accessibility label of the item.
 - `image`: The image resource to use as the label.
-- `content`: A   to display when the user selects the item.
+- `content`: A `View` to display when the user selects the item.
 
 ## See Also
 

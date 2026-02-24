@@ -34,8 +34,8 @@ This method invokes [`init(format:locale:arguments:)`](nsstring/init(format:loca
 
 ## Parameters
 
-- `format`: A format string. See   for examples of how to use this method, and   for a list of format specifiers. This value must not be  .
-- `argList`: A list of arguments to substitute into  .
+- `format`: A format string. See [`Formatting String Objects`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/Articles/FormatStrings.html#//apple_ref/doc/uid/20000943) for examples of how to use this method, and [`String Format Specifiers`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFStrings/formatSpecifiers.html#//apple_ref/doc/uid/TP40004265) for a list of format specifiers. This value must not be `nil`. > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `format` is `nil`.
+- `argList`: A list of arguments to substitute into `format`.
 
 ## See Also
 

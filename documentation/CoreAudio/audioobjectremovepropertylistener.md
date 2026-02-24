@@ -26,7 +26,7 @@ Unregisters the given AudioObjectPropertyListenerProc from receiving notificatio
 ## Parameters
 
 - `inObjectID`: The AudioObject to unregister the listener from.
-- `inAddress`: The AudioObjectPropertyAddress indicating from which property the listener   should be removed.
+- `inAddress`: The AudioObjectPropertyAddress indicating from which property the listener should be removed.
 - `inListener`: The AudioObjectPropertyListenerProc being removed.
 - `inClientData`: A pointer to client data that is passed to the listener when it is called.
 

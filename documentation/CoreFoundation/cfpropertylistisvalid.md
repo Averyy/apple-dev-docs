@@ -31,7 +31,7 @@ The debugging library version of this function prints out some useful messages.
 ## Parameters
 
 - `plist`: The property list to validate.
-- `format`: A constant that specifies the allowable format of  . See   for possible values.
+- `format`: A constant that specifies the allowable format of `plist`. See [`CFPropertyListFormat`](cfpropertylistformat.md) for possible values.
 
 
 ---

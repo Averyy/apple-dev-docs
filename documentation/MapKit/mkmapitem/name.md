@@ -24,7 +24,7 @@ var name: String? { get set }
 
 Use this property to specify the name associated with the location. For example, if there’s a business at the specified location, use this property to specify the name of the business.
 
-If this map item represents the user’s location, the value in this property is a localized version of .
+If this map item represents the user’s location, the value in this property is a localized version of *Current Location*.
 
 ## See Also
 

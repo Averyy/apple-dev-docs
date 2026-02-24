@@ -33,8 +33,8 @@ The value of the `forSaveOperation` parameter is `NSAutosaveInPlaceOperation` if
 
 ## Parameters
 
-- `autosavingIsImplicitlyCancellable`: The value in the   property while autosaving is happening.
-- `completionHandler`: The block takes one argument:
+- `autosavingIsImplicitlyCancellable`: The value in the [`autosavingIsImplicitlyCancellable`](nsdocument/autosavingisimplicitlycancellable.md) property while autosaving is happening.
+- `completionHandler`: The completion handler block object passed in to be invoked at some point in the future, perhaps after the method invocation has returned. The completion handler must be invoked on the main thread. The block takes one argument: - **`errorOrNil`**: If successful, pass a `nil` error. If not successful, pass an `NSError` object that encapsulates the reason why the document could not be autosaved.
 
 ## See Also
 

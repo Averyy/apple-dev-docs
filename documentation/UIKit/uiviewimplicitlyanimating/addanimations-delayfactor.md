@@ -25,7 +25,7 @@ Use this method to add new animation blocks to your custom animator object. The 
 ## Parameters
 
 - `animation`: A block containing the animations to add to the animator object. This block has no return value and takes no parameters.
-- `delayFactor`: The factor to use for delaying the start of the animations. The value must be between   and  . Multiply this value by the animator’s remaining duration to determine the actual delay in seconds. For example, if the value   and the animator’s duration is  , delay the start of the animations by one second.
+- `delayFactor`: The factor to use for delaying the start of the animations. The value must be between `0.0` and `1.0`. Multiply this value by the animator’s remaining duration to determine the actual delay in seconds. For example, if the value `0.5` and the animator’s duration is `2.0`, delay the start of the animations by one second.
 
 ## See Also
 

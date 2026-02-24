@@ -29,7 +29,7 @@ Symbol images pick up the font styling information associated with the specified
 
 ## Parameters
 
-- `textStyle`: A system text style that determines the initial appearance of your symbol image. For a list of possible values, see  .
+- `textStyle`: A system text style that determines the initial appearance of your symbol image. For a list of possible values, see [`UIFont.TextStyle`](uifont/textstyle.md).
 
 ## See Also
 

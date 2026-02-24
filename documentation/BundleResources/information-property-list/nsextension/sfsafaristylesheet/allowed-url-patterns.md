@@ -8,6 +8,10 @@ The webpages that the style sheet can be injected into.
 **Availability**:
 - macOS 10.11.5+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [Excluded URL Patterns](information-property-list/nsextension/sfsafaristylesheet/excluded-url-patterns.md)

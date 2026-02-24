@@ -21,7 +21,7 @@ The integer index of the menu item or, if no such menu item is in the menu, –1
 ## Parameters
 
 - `target`: An object that is set as the target of a menu item of the menu.
-- `actionSelector`: A selector identifying an action method. If   is  , the first menu item in the menu that has target   is returned.
+- `actionSelector`: A selector identifying an action method. If `actionSelector` is `NULL`, the first menu item in the menu that has target `anObject` is returned.
 
 ## See Also
 

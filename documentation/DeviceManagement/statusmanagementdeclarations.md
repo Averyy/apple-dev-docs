@@ -45,6 +45,10 @@ The name of the declaration status item is `management.declarations`.
 - [object StatusManagementDeclarationsDeclarationsObject](statusmanagementdeclarationsdeclarationsobject.md)
   A collection of the client’s processed declarations.
 
+## Properties
+
+- `management.declarations` (StatusManagementDeclarationsDeclarationsObject) *(required)*: A collection of the client’s processed declarations.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

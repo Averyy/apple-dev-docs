@@ -21,7 +21,7 @@ If you previously tried to remove `subgroup` from `group` in the same save reque
 ## Parameters
 
 - `subgroup`: The subgroup to add.
-- `group`: The parent group in which to add  .
+- `group`: The parent group in which to add `subgroup`.
 
 ## See Also
 

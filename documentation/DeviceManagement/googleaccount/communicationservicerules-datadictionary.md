@@ -22,6 +22,10 @@ object GoogleAccount.CommunicationServiceRules
 - [object GoogleAccount.CommunicationServiceRules.DefaultServiceHandlers](googleaccount/communicationservicerules-data.dictionary/defaultservicehandlers-data.dictionary.md)
   A dictionary of default service handlers.
 
+## Properties
+
+- `DefaultServiceHandlers` (GoogleAccount.CommunicationServiceRules.DefaultServiceHandlers): A dictionary that defines which app to use for audio calls from this account.
+
 
 ---
 

@@ -24,7 +24,7 @@ The receiver’s values are recorded in `printInfo`.
 
 ## Parameters
 
-- `printInfo`: The   object to use.
+- `printInfo`: The `NSPrintInfo` object to use.
 
 ## See Also
 

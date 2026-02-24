@@ -21,8 +21,8 @@ func SCPreferencesUnscheduleFromRunLoop(_ prefs: SCPreferences, _ runLoop: CFRun
 ## Parameters
 
 - `prefs`: The preferences session.
-- `runLoop`: The run loop from which the notification should be unscheduled. Do not pass  .
-- `runLoopMode`: The run loop mode associated with the scheduled notification. Do not pass  .
+- `runLoop`: The run loop from which the notification should be unscheduled. Do not pass `NULL`.
+- `runLoopMode`: The run loop mode associated with the scheduled notification. Do not pass `NULL`.
 
 ## See Also
 

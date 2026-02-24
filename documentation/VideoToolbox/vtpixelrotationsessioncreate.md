@@ -21,7 +21,7 @@ func VTPixelRotationSessionCreate(_ allocator: CFAllocator?, _ pixelRotationSess
 
 ## Parameters
 
-- `allocator`: An allocator for the session. Specify   to use the default allocator.
+- `allocator`: An allocator for the session. Specify `NULL` to use the default allocator.
 - `pixelRotationSessionOut`: On output, an initialized pixel rotation session.
 
 ## See Also

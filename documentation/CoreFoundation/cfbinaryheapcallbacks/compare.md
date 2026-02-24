@@ -28,7 +28,7 @@ var compare: ((UnsafeRawPointer?, UnsafeRawPointer?, UnsafeMutableRawPointer?) -
 
 - `ptr1`: First value to compare.
 - `ptr2`: Second value to compare.
-- `info`: Not used. Should always be  .
+- `info`: Not used. Should always be `NULL`.
 
 ## See Also
 

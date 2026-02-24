@@ -26,7 +26,7 @@ A shading instance filled with a color.
 
 ## Parameters
 
-- `color`: A   instance that defines the color   of the shading.
+- `color`: A [`Color`](color.md) instance that defines the color of the shading.
 
 ## See Also
 

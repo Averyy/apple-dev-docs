@@ -33,7 +33,7 @@ For a list of possible attributes, see [`NSAttributedString.Key`](nsattributedst
 ## Parameters
 
 - `location`: The index for which to return attributes. This value must lie within the bounds of the receiver.
-- `range`: Upon return, the range over which the attributes and values are the same as those at  . This range isn’t necessarily the maximum range covered, and its extent is implementation-dependent. If you need the maximum range, use  . If you don’t need this value, pass  .
+- `range`: Upon return, the range over which the attributes and values are the same as those at `index`. This range isn’t necessarily the maximum range covered, and its extent is implementation-dependent. If you need the maximum range, use [`attributes(at:longestEffectiveRange:in:)`](nsattributedstring/attributes(at:longesteffectiverange:in:).md). If you don’t need this value, pass `NULL`.
 
 ## See Also
 

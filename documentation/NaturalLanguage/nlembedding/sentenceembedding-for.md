@@ -30,7 +30,7 @@ An [`NLEmbedding`](nlembedding.md) if available, otherwise `nil`.
 
 ## Parameters
 
-- `language`: The language of the sentence embedding, such as  . For possible values, see  .
+- `language`: The language of the sentence embedding, such as [`french`](nllanguage/french.md). For possible values, see [`NLLanguage`](nllanguage.md).
 
 ## See Also
 

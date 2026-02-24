@@ -20,7 +20,7 @@ Passing `nil` overrides the specified attribute by removing it from the final at
 
 ## Parameters
 
-- `renderingAttribute`: The   that represents the attribute.
+- `renderingAttribute`: The [`NSAttributedString.Key`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key) that represents the attribute.
 - `value`: The value for the attribute.
 - `textRange`: The range over which to apply the attribute.
 

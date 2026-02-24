@@ -51,7 +51,7 @@ Use a `nil` effect to indicate that the default hover effect should not be modif
 
 ## Parameters
 
-- `effect`: The default hover effect to use for views within   this view.
+- `effect`: The default hover effect to use for views within this view.
 
 ## See Also
 

@@ -28,7 +28,7 @@ If the handshake fails, the task doesn’t call this delegate method.
 
 - `session`: The session of the WebSocket task that opened.
 - `webSocketTask`: The WebSocket task that opened.
-- `protocol`: The protocol picked during the handshake phase. This parameter is   if the server did not pick a protocol, or if the client did not advertise protocols when creating the task.
+- `protocol`: The protocol picked during the handshake phase. This parameter is `nil` if the server did not pick a protocol, or if the client did not advertise protocols when creating the task.
 
 ## See Also
 

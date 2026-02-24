@@ -25,7 +25,7 @@ The framework invokes this callback when [`isCameraAssistanceEnabled`](ninearbyp
 
 - `session`: The session for which the app leverages Camera Assistance.
 - `convergence`: The framework’s state and user recommendations for Camera Assistance.
-- `object`: The peer device or third-party accessory. If  , the status refers to the session.
+- `object`: The peer device or third-party accessory. If `nil`, the status refers to the session.
 
 ## See Also
 

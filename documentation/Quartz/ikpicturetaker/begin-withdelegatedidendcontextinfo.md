@@ -24,9 +24,9 @@ The `returnCode` value is set to `NSOKButton` if the user validates, or to `NSCa
 
 ## Parameters
 
-- `delegate`: The object that will invoke the selector    when the picture taker session terminates.
+- `delegate`: The object that will invoke the selector  `didEndSelector` when the picture taker session terminates.
 - `didEndSelector`: The selector to invoke when the picture taker session terminates.
-- `contextInfo`: Any data that must be passed as an argument to the delegate through   after the picture taker session terminates.
+- `contextInfo`: Any data that must be passed as an argument to the delegate through `didEndSelector` after the picture taker session terminates.
 
 ## See Also
 

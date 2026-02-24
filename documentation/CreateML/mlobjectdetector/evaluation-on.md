@@ -20,7 +20,7 @@ An [`MLObjectDetectorMetrics`](mlobjectdetectormetrics.md) instance that represe
 
 ## Parameters
 
-- `annotatedImages`: An   instance that contains a set of images with object   annotations.
+- `annotatedImages`: An [`MLObjectDetector.DataSource`](mlobjectdetector/datasource.md) instance that contains a set of images with object annotations.
 
 ## See Also
 

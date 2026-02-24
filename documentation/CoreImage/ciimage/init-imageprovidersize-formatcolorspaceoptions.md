@@ -29,13 +29,13 @@ Core Image retains the provider object until the image is deallocated. The image
 
 ## Parameters
 
-- `provider`: An object that implements the   protocol.
+- `provider`: An object that implements the `CIImageProvider` protocol.
 - `width`: The width of the image.
 - `height`: The height of the image.
-- `format`: The   of the provided pixels.
-- `colorSpace`: The color space that the image is defined in.   If  , then the pixels will not be is not color matched to the Core Image working color space.
-- `options`: A dictionary that contains various   keys that affect the resulting  . 
- The option   controls if and how the provider object is called in tiles.   The option   allows additional state to be passed to the provider object.
+- `format`: The [`CIFormat`](ciformat.md) of the provided pixels.
+- `colorSpace`: The color space that the image is defined in. If `nil`, then the pixels will not be is not color matched to the Core Image working color space.
+- `options`: A dictionary that contains various [`CIImageOption`](ciimageoption.md) keys that affect the resulting [`CIImage`](ciimage.md).
+The option [`providerTileSize`](ciimageoption/providertilesize.md) controls if and how the provider object is called in tiles. The option [`providerUserInfo`](ciimageoption/provideruserinfo.md) allows additional state to be passed to the provider object.
 
 ## See Also
 

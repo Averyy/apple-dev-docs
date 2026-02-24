@@ -25,6 +25,14 @@ object StatusManagementDeclarationsDeclarationObject
 - [object StatusManagementDeclarationsStatusReasonObject](statusmanagementdeclarationsstatusreasonobject.md)
   The details of an error in a status report.
 
+## Properties
+
+- `active` (boolean) *(required)*: If `true`, the declaration is active on the device.
+- `identifier` (string) *(required)*: The `identifier` of the declaration this status report refers to.
+- `reasons` ([StatusManagementDeclarationsStatusReasonObject]): The details of any client errors.
+- `server-token` (string) *(required)*: The `ServerToken` of the declaration this status report refers to.
+- `valid` (string) *(required)*: This string defines the validity of the declaration. If it’s `invalid`, the `reasons` property contains more details.
+
 
 ---
 

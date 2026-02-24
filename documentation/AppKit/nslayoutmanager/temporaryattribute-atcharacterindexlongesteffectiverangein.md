@@ -26,8 +26,9 @@ If you don’t need the longest effective range, it’s far more efficient to us
 
 - `attrName`: The name of a temporary attribute.
 - `location`: The index for which to return attributes. This value must not exceed the bounds of the receiver.
-- `range`: If you don’t need this value, pass  .
-- `rangeLimit`: The range over which to search for continuous presence of  . This value must not exceed the bounds of the receiver.
+- `range`: If non-`NULL`: - If the named attribute exists at `location`, on output, contains the maximum range over which the named attribute’s value applies, clipped to `rangeLimit`.
+- If the named attribute does not exist at `location`, on output, contains the maximum range over which the attribute does not exist. If you don’t need this value, pass `NULL`.
+- `rangeLimit`: The range over which to search for continuous presence of `attrName`. This value must not exceed the bounds of the receiver.
 
 ## See Also
 

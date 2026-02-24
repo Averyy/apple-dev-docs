@@ -35,7 +35,7 @@ let image = try await intentFile.withFile(contentType: .png) { url, _ in
 
 - `contentType`: A content type of the returned data.
 - `allowOpenInPlace`: Whether the file should be opened in place, if possible.
-- `fileHandler`: A closure that accepts the file URL as a parameter.   The file is written to a temporary destination and removed   right after the closure returns.
+- `fileHandler`: A closure that accepts the file URL as a parameter. The file is written to a temporary destination and removed right after the closure returns.
 
 
 ---

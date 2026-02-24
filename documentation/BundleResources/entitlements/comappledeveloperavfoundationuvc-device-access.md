@@ -8,6 +8,10 @@ A Boolean value that indicates whether the app can stream USB UVC devices connec
 **Availability**:
 - visionOS 2.1+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 On visionOS, your app must have the this entitlement to discover and use devices of type [`external`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/DeviceType-swift.struct/external) using an [`AVCaptureDevice.DiscoverySession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/DiscoverySession).

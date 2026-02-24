@@ -19,6 +19,14 @@ object ResponseUser
 
 - [Managing Users](managing-users.md)
 
+## Properties
+
+- `clientUserId` (string): The unique identifier for a user in your organization.
+- `email` (string): The user’s email address.
+- `idHash` (string): The hash of the user’s unique store identifier. The `idHash` field is only present when the user has an associated Apple Account.
+- `inviteCode` (string): The invitation code that associates an Apple Account to a user.
+- `status` (string): The current status of the user in the organization.
+
 ## See Also
 
 - [object Asset](asset.md)

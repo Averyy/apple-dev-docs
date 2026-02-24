@@ -16,7 +16,7 @@ func relocateViewport(to textLocation: any NSTextLocation) -> CGFloat
 
 ## Parameters
 
-- `textLocation`: An  .
+- `textLocation`: An `NSTextLocation`.
 
 ## See Also
 

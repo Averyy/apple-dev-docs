@@ -20,6 +20,10 @@ object Printing.UserPrinterList
 - [object Printing.UserPrinterList.Printer](printing/userprinterlist-data.dictionary/printer-data.dictionary.md)
   A printer dictionary.
 
+## Properties
+
+- `Printer` (Printing.UserPrinterList.Printer): A dictionary of printer details.
+
 ## See Also
 
 - [object Printing.DefaultPrinter](printing/defaultprinter-data.dictionary.md)

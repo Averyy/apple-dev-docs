@@ -23,7 +23,7 @@ Creates a configuration for a widget, with no user-configurable options.
 ## Parameters
 
 - `kind`: A unique string that you choose.
-- `provider`: An object that determines the timing of updates   to the widget’s views.
+- `provider`: An object that determines the timing of updates to the widget’s views.
 - `content`: A view that renders the widget.
 
 ## See Also

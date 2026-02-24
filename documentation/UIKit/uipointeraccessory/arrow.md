@@ -20,7 +20,7 @@ Creates a pointer accessory with an arrow shape at the specified position.
 
 ## Parameters
 
-- `position`: One of the available   positions.
+- `position`: One of the available [`UIPointerAccessory.Position`](uipointeraccessory/position-swift.struct.md) positions.
 
 ## See Also
 

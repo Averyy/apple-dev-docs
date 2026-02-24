@@ -20,15 +20,15 @@ The created `NSEvent` object or `nil` if the object could not be created.
 
 ## Parameters
 
-- `type`: One of the following event-type constants:   ,  ,  . If the specified constant is not one of these, an   is raised
-- `location`: The cursor location in the base coordinate system of the window specified by  .
-- `flags`: An integer bit field containing any of the modifier key masks described in  , combined using the C bitwise OR operator.
+- `type`: One of the following event-type constants:  `NSMouseEntered`, `NSMouseExited`, `NSCursorUpdate`. If the specified constant is not one of these, an `NSInternalInconsistencyException` is raised
+- `location`: The cursor location in the base coordinate system of the window specified by `windowNum`.
+- `flags`: An integer bit field containing any of the modifier key masks described in `Getting Unicode Values`, combined using the C bitwise OR operator.
 - `time`: The time the event occurred in seconds since system startup.
-- `wNum`: An integer that identifies the window device associated with the event, which is associated with the   that will receive the event.
-- `unusedPassNil`: The display graphics context of the event. Pass   for this parameter.
+- `wNum`: An integer that identifies the window device associated with the event, which is associated with the `NSWindow` that will receive the event.
+- `unusedPassNil`: The display graphics context of the event. Pass `nil` for this parameter.
 - `eNum`: An identifier for the new event. It’s normally taken from a counter for mouse events, which continually increases as the application runs.
-- `tNum`: A number that identifies the tracking rectangle. This identifier is the same as that returned by the   method  .
-- `data`: Data arbitrarily associated with the tracking rectangle when it was set up using the   method  .
+- `tNum`: A number that identifies the tracking rectangle. This identifier is the same as that returned by the `NSView` method [`addTrackingRect(_:owner:userData:assumeInside:)`](nsview/addtrackingrect(_:owner:userdata:assumeinside:).md).
+- `data`: Data arbitrarily associated with the tracking rectangle when it was set up using the `NSView` method [`addTrackingRect(_:owner:userData:assumeInside:)`](nsview/addtrackingrect(_:owner:userdata:assumeinside:).md).
 
 ## See Also
 

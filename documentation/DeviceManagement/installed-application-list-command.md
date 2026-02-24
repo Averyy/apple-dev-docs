@@ -37,6 +37,192 @@ Refer to the following sections to determine supported channels and requirements
 
 ##### Example Request and Response
 
+**Managed**:
+
+This command lists only managed apps.
+
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>ManagedAppsOnly</key>
+        <true/>
+        <key>RequestType</key>
+        <string>InstalledApplicationList</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_InstalledApplicationList</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_InstalledApplicationList</string>
+    <key>InstalledApplicationList</key>
+    <array>
+        <dict>
+            <key>AdHocCodeSigned</key>
+            <false/>
+            <key>AppStoreVendable</key>
+            <false/>
+            <key>BetaApp</key>
+            <false/>
+            <key>BundleSize</key>
+            <integer>1036288</integer>
+            <key>DeviceBasedVPP</key>
+            <false/>
+            <key>DynamicSize</key>
+            <integer>8192</integer>
+            <key>ExternalVersionIdentifier</key>
+            <integer>0</integer>
+            <key>Identifier</key>
+            <string>com.acme.myenterpriseapp</string>
+            <key>Installing</key>
+            <false/>
+            <key>IsValidated</key>
+            <true/>
+            <key>Name</key>
+            <string>MyEnterpriseApp</string>
+            <key>ShortVersion</key>
+            <string>1.0</string>
+            <key>Version</key>
+            <string>1.0</string>
+        </dict>
+    </array>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>00008020-000915083C80012E</string>
+</dict>
+</plist>
+```
+
+**All**:
+
+This command lists all apps. The example response shows a subset of the full response.
+
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>ManagedAppsOnly</key>
+        <false/>
+        <key>RequestType</key>
+        <string>InstalledApplicationList</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_InstalledApplicationList</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_InstalledApplicationList</string>
+    <key>InstalledApplicationList</key>
+    <array>
+        <dict>
+            <key>BundleSize</key>
+            <integer>1</integer>
+            <key>Identifier</key>
+            <string>com.apple.Safari</string>
+            <key>Installing</key>
+            <false/>
+            <key>Name</key>
+            <string>Safari</string>
+            <key>ShortVersion</key>
+            <string>13.1.2</string>
+            <key>Version</key>
+            <string>13.1.2</string>
+        </dict>
+        <dict>
+            <key>BundleSize</key>
+            <integer>1</integer>
+            <key>Identifier</key>
+            <string>com.apple.Notes</string>
+            <key>Installing</key>
+            <false/>
+            <key>Name</key>
+            <string>Notes</string>
+            <key>ShortVersion</key>
+            <string>4.7</string>
+            <key>Version</key>
+            <string>4.7</string>
+        </dict>
+        <dict>
+            <key>BundleSize</key>
+            <integer>1</integer>
+            <key>Identifier</key>
+            <string>com.apple.AddressBook</string>
+            <key>Installing</key>
+            <false/>
+            <key>Name</key>
+            <string>Contacts</string>
+            <key>ShortVersion</key>
+            <string>12.0</string>
+            <key>Version</key>
+            <string>12.0</string>
+        </dict>
+        <dict>
+            <key>BundleSize</key>
+            <integer>1</integer>
+            <key>Identifier</key>
+            <string>com.apple.mail</string>
+            <key>Installing</key>
+            <false/>
+            <key>Name</key>
+            <string>Mail</string>
+            <key>ShortVersion</key>
+            <string>13.4</string>
+            <key>Version</key>
+            <string>13.4</string>
+        </dict>
+        <dict>
+            <key>BundleSize</key>
+            <integer>1</integer>
+            <key>Identifier</key>
+            <string>com.apple.iCal</string>
+            <key>Installing</key>
+            <false/>
+            <key>Name</key>
+            <string>Calendar</string>
+            <key>ShortVersion</key>
+            <string>11.0</string>
+            <key>Version</key>
+            <string>11.0</string>
+        </dict>
+    </array>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>91FE0F6E-F91C-589A-95E6-02835CE7126D</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -44,6 +230,10 @@ Refer to the following sections to determine supported channels and requirements
   The command to get a list of the installed apps on a device.
 - [object InstalledApplicationListResponse](installedapplicationlistresponse.md)
   A response from the device after it processes the command to get a list of the installed apps on a device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

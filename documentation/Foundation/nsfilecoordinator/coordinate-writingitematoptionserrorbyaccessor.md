@@ -43,10 +43,10 @@ With one exception, do not nest calls to file coordinator methods inside the blo
 
 ## Parameters
 
-- `url`: A URL identifying the file or directory to write to. If other objects or processes are acting on the item at the URL, the actual URL passed to   parameter may be different from the one in this parameter.
-- `options`: One of the writing options described in  . The options you specify partially determine how file presenters are notified and how this file coordinator object waits to execute your block.
-- `outError`: On input, a pointer to a pointer for an error object. If a file presenter encounters an error while preparing for this write operation, that error is returned in this parameter and the block in the   parameter is not executed. If you cancel this operation before the   block is executed, this parameter contains an error object on output.
-- `writer`: A   containing the file operations you want to perform in a coordinated manner. This block receives an   object containing the URL of the item and returns no value. Always use the URL passed into the block instead of the value in the   parameter.
+- `url`: A URL identifying the file or directory to write to. If other objects or processes are acting on the item at the URL, the actual URL passed to `writer` parameter may be different from the one in this parameter.
+- `options`: One of the writing options described in [`NSFileCoordinator.WritingOptions`](nsfilecoordinator/writingoptions.md). The options you specify partially determine how file presenters are notified and how this file coordinator object waits to execute your block.
+- `outError`: On input, a pointer to a pointer for an error object. If a file presenter encounters an error while preparing for this write operation, that error is returned in this parameter and the block in the `writer` parameter is not executed. If you cancel this operation before the `writer` block is executed, this parameter contains an error object on output.
+- `writer`: A [`Block object`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) containing the file operations you want to perform in a coordinated manner. This block receives an [`NSURL`](nsurl.md) object containing the URL of the item and returns no value. Always use the URL passed into the block instead of the value in the `url` parameter.
 
 ## See Also
 

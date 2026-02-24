@@ -25,7 +25,7 @@ Initialization can fail if the [`Core ML`](https://developer.apple.com/documenta
 
 ## Parameters
 
-- `model`: The   model on which to base the Vision request.
+- `model`: The [`Core ML`](https://developer.apple.com/documentation/CoreML) model on which to base the Vision request.
 
 ## See Also
 

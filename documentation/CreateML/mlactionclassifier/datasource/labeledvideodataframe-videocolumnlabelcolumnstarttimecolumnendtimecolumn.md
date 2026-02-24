@@ -20,11 +20,11 @@ The data frame must contain a column of video file paths and a column of labels.
 
 ## Parameters
 
-- `dataFrame`: A   containing video paths and labels.
+- `dataFrame`: A `DataFrame` containing video paths and labels.
 - `videoColumn`: The name of the column containing the video paths. Defaults to “videoPath”.
 - `labelColumn`: The name of the column containing the labels. Defaults to “label”.
-- `startTimeColumn`: The name of the column containing the start time. If   start time is 0.
-- `endTimeColumn`: The name of the column containing the end time. If   end time is the end of the video.
+- `startTimeColumn`: The name of the column containing the start time. If `nil` start time is 0.
+- `endTimeColumn`: The name of the column containing the end time. If `nil` end time is the end of the video.
 
 ## See Also
 

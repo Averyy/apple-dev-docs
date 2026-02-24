@@ -53,7 +53,7 @@ Pivoting on drag is more flexible because it allows a person to change their own
 
 ##### Create a State Object
 
-To implement these transform gestures, the app needs to maintain some state. The [`onChanged(_:)`](https://developer.apple.com/documentation/SwiftUI/Gesture/onChanged(_:)) action passes a delta from the start transform,  the delta from the previous [`onChanged(_:)`](https://developer.apple.com/documentation/SwiftUI/Gesture/onChanged(_:)) call, so the app needs to keep track of the entity’s starting position, rotation, and scale. For example, each time SwiftUI calls the [`onChanged(_:)`](https://developer.apple.com/documentation/SwiftUI/Gesture/onChanged(_:)) action for a drag gesture, the action provides the total distance dragged on each axis since the gesture started. The app also keeps track of whether a gesture is already in progress. Gestures don’t have an `.onStarted` action, so the app keeps track of whether the gesture has already started so it knows if it needs to store the starting position, rotation, or scale. Lastly, the sample app keeps a reference to the pivot entity. By parenting the dragged entity to the pivot entity, the system calculates the dragged entity’s rotation when the app rotates the pivot entity.
+To implement these transform gestures, the app needs to maintain some state. The [`onChanged(_:)`](https://developer.apple.com/documentation/SwiftUI/Gesture/onChanged(_:)) action passes a delta from the start transform, *not* the delta from the previous [`onChanged(_:)`](https://developer.apple.com/documentation/SwiftUI/Gesture/onChanged(_:)) call, so the app needs to keep track of the entity’s starting position, rotation, and scale. For example, each time SwiftUI calls the [`onChanged(_:)`](https://developer.apple.com/documentation/SwiftUI/Gesture/onChanged(_:)) action for a drag gesture, the action provides the total distance dragged on each axis since the gesture started. The app also keeps track of whether a gesture is already in progress. Gestures don’t have an `.onStarted` action, so the app keeps track of whether the gesture has already started so it knows if it needs to store the starting position, rotation, or scale. Lastly, the sample app keeps a reference to the pivot entity. By parenting the dragged entity to the pivot entity, the system calculates the dragged entity’s rotation when the app rotates the pivot entity.
 
 This component only supports dragging a single entity at a time, so there’s no need to store state on a per-entity level. As a result, the app uses a singleton object to store the state instead of a component:
 
@@ -191,9 +191,9 @@ myEntity.components.set(component)
 
 ## See Also
 
-- [Hello World](../visionOS/World.md)
+- [Hello World](../visionos/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](../visionos/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.

@@ -21,7 +21,7 @@ Returns the text range of the section, or `nil` when `documentRange.isEmpty` `tr
 
 ## Parameters
 
-- `selectionGranularity`: One of the possible   options.
+- `selectionGranularity`: One of the possible [`NSTextSelection.Granularity`](nstextselection/granularity-swift.enum.md) options.
 - `location`: A location that encloses the text range of interest.
 
 ## See Also

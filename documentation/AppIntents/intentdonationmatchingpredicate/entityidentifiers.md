@@ -3,16 +3,16 @@
 **Framework**: App Intents  
 **Kind**: method
 
-Delete all transcript records referencing the given AppEntity instance
+Match all transcript records referencing the given AppEntity instances
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
+- iOS 26.4+ (Beta)
+- iPadOS 26.4+ (Beta)
 - Mac Catalyst ?+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS ?+
-- watchOS 9.0+
+- macOS 26.4+ (Beta)
+- tvOS 26.4+ (Beta)
+- visionOS 26.4+ (Beta)
+- watchOS 26.4+ (Beta)
 
 ## Declaration
 

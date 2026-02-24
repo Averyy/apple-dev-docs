@@ -20,7 +20,8 @@ func removeBehavior(_ behavior: UIDynamicBehavior)
 
 ## Parameters
 
-- `behavior`: The dynamic animator ignores your use of this method if you:
+- `behavior`: The dynamic behavior instance that you want to remove from the animator. The dynamic animator ignores your use of this method if you: - Provide a `nil` value
+- Provide a dynamic behavior instance that is not part of the animator’s behavior hierarchy
 
 ## See Also
 

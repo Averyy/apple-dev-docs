@@ -24,7 +24,7 @@ The [`NSScreen`](https://developer.apple.com/documentation/AppKit/NSScreen) obje
 
 ##### Pick a Style for Your Window
 
-AppKit in macOS has a concept called  that you store as a set of flags describing the layout of the frame and controls decorating the outside edges of a window. Use the following value for windows displaying Metal game content:
+AppKit in macOS has a concept called *window style* that you store as a set of flags describing the layout of the frame and controls decorating the outside edges of a window. Use the following value for windows displaying Metal game content:
 
 ```objective-c
 NSWindowStyleMask style= NSWindowStyleMaskClosable
@@ -35,9 +35,14 @@ NSWindowStyleMask style= NSWindowStyleMaskClosable
 
 Here are the parts of the style above and the functionality each adds to your window:
 
+- **[`closable`](https://developer.apple.com/documentation/AppKit/NSWindow/StyleMask-swift.struct/closable)**: A person can close the window.
+- **[`titled`](https://developer.apple.com/documentation/AppKit/NSWindow/StyleMask-swift.struct/titled)**: The window displays a title bar.
+- **[`miniaturizable`](https://developer.apple.com/documentation/AppKit/NSWindow/StyleMask-swift.struct/miniaturizable)**: The window contains a miniaturized (yellow dot) control with which a person can collapse the window into the Dock.
+- **[`resizable`](https://developer.apple.com/documentation/AppKit/NSWindow/StyleMask-swift.struct/resizable)**: A person can resize the window. Note that allowing resizing doesn’t mean you need to resize all your render targets dynamically. In a later section, this article discusses how to adjust your [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer)’s [`drawableSize`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer/drawableSize) to match the pixels onscreen whenever someone resizes your window.
+
 ##### Choose the Content Size of Your Window and Metal View
 
-When you create a new window, you specify its coordinates in points relative to the coordinates of a screen.  are an abstract measurement quantity that don’t correspond to any actual pixel sizes. There are roughly 72 points per inch. For more information on points, see [`High Resolution Guidelines for OS X`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsAnimation/Conceptual/HighResolutionOSX/Explained/Explained.html#//apple_ref/doc/uid/TP40012302-CH4-SW1).
+When you create a new window, you specify its coordinates in points relative to the coordinates of a screen. *Points* are an abstract measurement quantity that don’t correspond to any actual pixel sizes. There are roughly 72 points per inch. For more information on points, see [`High Resolution Guidelines for OS X`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsAnimation/Conceptual/HighResolutionOSX/Explained/Explained.html#//apple_ref/doc/uid/TP40012302-CH4-SW1).
 
 The system manages most issues related to pixel sizes and display resolution for you, and optimizes a person’s experience depending on the device hardware they’re using. Your app need only be concerned with setting up its window as described here.
 

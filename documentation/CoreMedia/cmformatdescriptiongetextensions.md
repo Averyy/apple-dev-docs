@@ -30,7 +30,7 @@ If there are no extensions, the function returns `NULL`. Extensions dictionaries
 
 ## Parameters
 
-- `desc`: The   to examine.
+- `desc`: The `CMFormatDescription` to examine.
 
 ## See Also
 

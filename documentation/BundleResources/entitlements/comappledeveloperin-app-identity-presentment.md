@@ -9,6 +9,10 @@ An entitlement that verifies age or identity.
 - iOS 16.0+
 - iPadOS 16.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 For more information on setting up this entitlement to use with the Verify with Wallet API, see [`Configuring your environment for the Verify with Wallet API`](https://developer.apple.com/documentation/PassKit/configuring-your-environment-for-the-verify-with-wallet-api).

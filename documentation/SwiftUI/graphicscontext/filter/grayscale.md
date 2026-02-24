@@ -30,7 +30,7 @@ This filter is equivalent to the `grayscale` filter primitive defined by the Sca
 
 ## Parameters
 
-- `amount`: An amount that controls the effect. A value of one   makes the image completely gray. A value of zero leaves the   result unchanged. Other values apply a linear multiplier effect.
+- `amount`: An amount that controls the effect. A value of one makes the image completely gray. A value of zero leaves the result unchanged. Other values apply a linear multiplier effect.
 
 ## See Also
 

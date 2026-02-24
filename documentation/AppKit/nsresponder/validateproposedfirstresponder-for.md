@@ -29,7 +29,7 @@ The default implementation returns [`true`](https://developer.apple.com/document
 ## Parameters
 
 - `responder`: The first responder.
-- `event`: The event to validate. May be   if there is no applicable event.
+- `event`: The event to validate. May be `nil` if there is no applicable event.
 
 ## See Also
 

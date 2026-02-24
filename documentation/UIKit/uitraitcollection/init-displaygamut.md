@@ -24,7 +24,7 @@ A new trait collection containing only the gamut value.
 
 ## Parameters
 
-- `displayGamut`: The display gamut for the new trait collection. For a list of possible values, see  .
+- `displayGamut`: The display gamut for the new trait collection. For a list of possible values, see [`UIDisplayGamut`](uidisplaygamut.md).
 
 ## See Also
 

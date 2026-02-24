@@ -32,8 +32,8 @@ This is the designated initializer for [`URLResponse`](urlresponse.md).
 
 - `URL`: The URL for the new object.
 - `MIMEType`: The MIME type.
-- `length`: The expected content length.This value should be   if the expected length is undetermined
-- `name`: The text encoding name. This value may be  .
+- `length`: The expected content length.This value should be `–1` if the expected length is undetermined
+- `name`: The text encoding name. This value may be `nil`.
 
 ## See Also
 

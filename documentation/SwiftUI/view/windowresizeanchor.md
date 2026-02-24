@@ -63,7 +63,7 @@ The default anchor varies by scene type and is used when `anchor` is nil. Genera
 
 ## Parameters
 
-- `anchor`: The window point fixed under programmatic size   changes caused by the content size of the window changing.   Defaults to a system defined value when  .
+- `anchor`: The window point fixed under programmatic size changes caused by the content size of the window changing. Defaults to a system defined value when `nil`.
 
 
 ---

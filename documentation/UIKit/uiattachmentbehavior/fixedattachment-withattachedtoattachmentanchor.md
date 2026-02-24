@@ -30,7 +30,7 @@ The behavior created by this method acts like a solid rod connecting each item t
 
 - `item1`: The first of two dynamic items connected by the attachment behavior.
 - `item2`: The second of two dynamic items connected by the attachment behavior.
-- `point`: The anchor point for both items. Specify this point in the coordinate system of the dynamic animator’s reference view. For more information about coordinate systems, see  .
+- `point`: The anchor point for both items. Specify this point in the coordinate system of the dynamic animator’s reference view. For more information about coordinate systems, see [`UIDynamicAnimator`](uidynamicanimator.md).
 
 ## See Also
 

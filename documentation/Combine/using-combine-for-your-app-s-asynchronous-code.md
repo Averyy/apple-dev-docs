@@ -13,7 +13,7 @@ Your app may use common patterns to handle asynchronous events, such as:
 
 Combine provides compelling equivalents to these patterns, which allow you to eliminate boilerplate implementations, and leverage its many operators. As you adopt Combine elsewhere in your app, converting your asynchronous call points to Combine improves your code’s consistency and readability.
 
-> 💡 **Tip**: You don’t need closure-based asychronicity patterns if you’re using the `async`-`await` features in Swift 5.5 and later. Instead, your code can `await` an asynchronous call, and then execute the code that would have been in the closure. This eliminates the need for both conventional completion handlers and Combine futures. For more information, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in .
+> 💡 **Tip**: You don’t need closure-based asychronicity patterns if you’re using the `async`-`await` features in Swift 5.5 and later. Instead, your code can `await` an asynchronous call, and then execute the code that would have been in the closure. This eliminates the need for both conventional completion handlers and Combine futures. For more information, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in *[`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/)*.
 
 ##### Replace Completion Handler Closures with Futures
 

@@ -28,8 +28,8 @@ A view that invokes the action when the relevant part of a web view’s scroll g
 
 ## Parameters
 
-- `type`: The type of value transformed from a  .
-- `transform`: A closure that transforms a   to your type.
+- `type`: The type of value transformed from a [`ScrollGeometry`](scrollgeometry.md).
+- `transform`: A closure that transforms a [`ScrollGeometry`](scrollgeometry.md) to your type.
 - `action`: A closure to run when the transformed data changes.
 
 ## See Also

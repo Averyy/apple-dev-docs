@@ -21,7 +21,7 @@ class GKComponent
 
 #### Overview
 
-[`GKComponent`](gkcomponent.md) is the abstract superclass for custom component classes you create when building a game with Entity-Component architecture. In this architecture, an  is an object relevant to the game, and a  is an object that handles specific aspects of an entity’s behavior in a general way. Because a component’s scope of functionality is limited, you can reuse the same component class for many different kinds of entities.
+[`GKComponent`](gkcomponent.md) is the abstract superclass for custom component classes you create when building a game with Entity-Component architecture. In this architecture, an *entity* is an object relevant to the game, and a *component* is an object that handles specific aspects of an entity’s behavior in a general way. Because a component’s scope of functionality is limited, you can reuse the same component class for many different kinds of entities.
 
 You create components by subclassing [`GKComponent`](gkcomponent.md) to implement reusable behavior. Then, you build game entities by creating [`GKEntity`](gkentity.md) objects and using the [`addComponent(_:)`](gkentity/addcomponent(_:).md) method to attach instances of your custom component classes.
 

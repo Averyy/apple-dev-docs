@@ -20,7 +20,7 @@ init(floatLiteral value: Float)
 
 #### Discussion
 
-RealityKit automatically draws  for physically based materials using the values of various properties, primarily [`roughness`](physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
+RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
 
 ![An illustration showing a sphere and a cube with rounded corners.](https://docs-assets.developer.apple.com/published/3e6c8711de5c00df45e2911543d778f2/CustomMaterial-Specular-swift-struct-init%28floatLiteral%3A%29-1%402x.png)
 
@@ -38,7 +38,7 @@ The following Metal code demonstrates using the specular `scale` value in a surf
 
 ## Parameters
 
-- `value`: A value from   to   to use as the specular value   for the material.
+- `value`: A value from `0.0` to `1.0` to use as the specular value for the material.
 
 ## See Also
 

@@ -25,7 +25,7 @@ enum InflectionAlternativeAttribute
 
 Use the `inflectionAlternativeAttribute` to provide an alternative phrase for cases where the system can’t achieve unambiguous grammatical agreement.
 
-For example, suppose you want to inflect the masculine form for  in Spanish, , but the system doesn’t know the person’s preferred terms of address. Add an `inflectionAlternative` to your [`LocalizedStringResource`](localizedstringresource.md), setting the alternative word or phrase in single quotation marks. The system uses the alternative when it can’t determine proper grammatical agreement.
+For example, suppose you want to inflect the masculine form for *welcome* in Spanish, *bienvenido*, but the system doesn’t know the person’s preferred terms of address. Add an `inflectionAlternative` to your [`LocalizedStringResource`](localizedstringresource.md), setting the alternative word or phrase in single quotation marks. The system uses the alternative when it can’t determine proper grammatical agreement.
 
 ```swift
 // Define the resource with an inflection alternative.

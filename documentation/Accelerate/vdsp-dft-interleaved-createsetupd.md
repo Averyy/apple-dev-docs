@@ -38,68 +38,68 @@ The following tables show the complete list of supported lengths for different v
 
 | n | `2ⁿ` | `length` (`f * 2ⁿ`) |
 | --- | --- | --- |
-| 3 | 8 |  |
-| 4 | 16 |  |
-| 5 | 32 |  |
-| 6 | 64 |  |
-| 7 | 128 |  |
-| 8 | 256 |  |
-| 9 | 512 |  |
-| 10 | 1024 |  |
-| 11 | 2048 |  |
-| 12 | 4096 |  |
+| 3 | 8 | **8** |
+| 4 | 16 | **16** |
+| 5 | 32 | **32** |
+| 6 | 64 | **64** |
+| 7 | 128 | **128** |
+| 8 | 256 | **256** |
+| 9 | 512 | **512** |
+| 10 | 1024 | **1024** |
+| 11 | 2048 | **2048** |
+| 12 | 4096 | **4096** |
 
 ##### Supported Lengths for F = 3
 
 | n | `2ⁿ` | `length` (`f * 2ⁿ`) |
 | --- | --- | --- |
-| 2 | 4 |  |
-| 3 | 8 |  |
-| 4 | 16 |  |
-| 5 | 32 |  |
-| 6 | 64 |  |
-| 7 | 128 |  |
-| 8 | 256 |  |
+| 2 | 4 | **12** |
+| 3 | 8 | **24** |
+| 4 | 16 | **48** |
+| 5 | 32 | **96** |
+| 6 | 64 | **192** |
+| 7 | 128 | **384** |
+| 8 | 256 | **768** |
 
 ##### Supported Lengths for F = 5
 
 | n | `2ⁿ` | `length` (`f * 2ⁿ`) |
 | --- | --- | --- |
-| 2 | 4 |  |
-| 3 | 8 |  |
-| 4 | 16 |  |
-| 5 | 32 |  |
-| 6 | 64 |  |
-| 7 | 128 |  |
+| 2 | 4 | **20** |
+| 3 | 8 | **40** |
+| 4 | 16 | **80** |
+| 5 | 32 | **160** |
+| 6 | 64 | **320** |
+| 7 | 128 | **640** |
 
 ##### Supported Lengths for F = 9
 
 | n | `2ⁿ` | `length` (`f * 2ⁿ`) |
 | --- | --- | --- |
-| 2 | 4 |  |
-| 3 | 8 |  |
-| 4 | 16 |  |
-| 5 | 32 |  |
-| 6 | 64 |  |
-| 7 | 128 |  |
+| 2 | 4 | **36** |
+| 3 | 8 | **72** |
+| 4 | 16 | **144** |
+| 5 | 32 | **288** |
+| 6 | 64 | **576** |
+| 7 | 128 | **1152** |
 
 ##### Supported Lengths for F = 15
 
 | n | `2ⁿ` | `length` (`f * 2ⁿ`) |
 | --- | --- | --- |
-| 2 | 4 |  |
-| 3 | 8 |  |
-| 4 | 16 |  |
-| 5 | 32 |  |
-| 6 | 64 |  |
-| 7 | 128 |  |
+| 2 | 4 | **60** |
+| 3 | 8 | **120** |
+| 4 | 16 | **240** |
+| 5 | 32 | **480** |
+| 6 | 64 | **960** |
+| 7 | 128 | **1920** |
 
 ## Parameters
 
-- `Previous`: An existing   structure that shares memory and direction with the setup structure that this function returns. Pass   to create an object with newly initialized and allocated memory. To ensure correct operation, if you specify a previous setup structure it must share the same direction as the   parameter.
-- `Length`: For real-to-complex transforms, the number of real elements divided by 2.
-- `Direction`: A flag that specifies the transform direction. Pass   to transform from the time domain to the frequency domain. Pass   to transform from the frequency domain to the time domain.
-- `RealtoComplex`: A flag that specifies the transform type. To transform from complex to complex, pass  . To transform from real to complex, pass  .
+- `Previous`: An existing [`vDSP_DFT_Interleaved_SetupD`](vdsp_dft_interleaved_setupd.md) structure that shares memory and direction with the setup structure that this function returns. Pass `nil` to create an object with newly initialized and allocated memory. To ensure correct operation, if you specify a previous setup structure it must share the same direction as the `Direction` parameter.
+- `Length`: For complex-to-complex transforms, the number of complex elements. For real-to-complex transforms, the number of real elements divided by 2.
+- `Direction`: A flag that specifies the transform direction. Pass [`vDSP_DFT_Direction.FORWARD`](vdsp_dft_direction/forward.md) to transform from the time domain to the frequency domain. Pass [`vDSP_DFT_Direction.INVERSE`](vdsp_dft_direction/inverse.md) to transform from the frequency domain to the time domain.
+- `RealtoComplex`: A flag that specifies the transform type. To transform from complex to complex, pass [`vDSP_DFT_RealtoComplex.interleaved_ComplextoComplex`](vdsp_dft_realtocomplex/interleaved_complextocomplex.md). To transform from real to complex, pass [`vDSP_DFT_RealtoComplex.interleaved_RealtoComplex`](vdsp_dft_realtocomplex/interleaved_realtocomplex.md).
 
 ## See Also
 

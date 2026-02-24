@@ -26,7 +26,7 @@ Metal clips fragments that lie outside this viewport, and optionally clamps frag
 
 ## Parameters
 
-- `viewport`:   to set.
+- `viewport`: [`MTLViewport`](mtlviewport.md) to set.
 
 ## See Also
 

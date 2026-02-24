@@ -30,7 +30,7 @@ The provided completion handler executes on your app’s main thread. The local 
 
 ## Parameters
 
-- `completionHandler`: The completion handler block that processes the results. This parameter can’t be  .
+- `completionHandler`: The completion handler block that processes the results. This parameter can’t be `nil`.
 
 ## See Also
 

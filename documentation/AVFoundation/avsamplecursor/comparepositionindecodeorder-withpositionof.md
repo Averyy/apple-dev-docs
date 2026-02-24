@@ -30,7 +30,7 @@ Undefined results occur if this cursor and the passed in cursor reference differ
 
 ## Parameters
 
-- `cursor`: An instance of   with which to compare positions.
+- `cursor`: An instance of `AVSampleCursor` with which to compare positions.
 
 
 ---

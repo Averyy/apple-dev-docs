@@ -26,7 +26,7 @@ The default implementation forwards the request to the [`propertyCache`](nsatomi
 
 ## Parameters
 
-- `value`: The value for the property identified by  .
+- `value`: The value for the property identified by `key`.
 - `key`: The name of a property.
 
 ## See Also

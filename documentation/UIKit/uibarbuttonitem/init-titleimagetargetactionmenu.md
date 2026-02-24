@@ -25,10 +25,10 @@ A newly initialized [`UIBarButtonItem`](uibarbuttonitem.md).
 
 ## Parameters
 
-- `title`: The item’s title. If  , a title doesn’t appear.
-- `image`: The images displayed on the bar derive from this image. If this image is too large to fit on the bar, it’s scaled to fit. Typically, the size of a toolbar and navigation bar image is   x   points. The system uses the alpha values in the source image to create the images, ignoring opaque values.
-- `target`: The object that receives the   message.
-- `action`: The action to send to   when a person selects this item.
+- `title`: The item’s title. If `nil`, a title doesn’t appear.
+- `image`: The item’s image. If `nil`, an image doesn’t appear. The images displayed on the bar derive from this image. If this image is too large to fit on the bar, it’s scaled to fit. Typically, the size of a toolbar and navigation bar image is `20` x `20` points. The system uses the alpha values in the source image to create the images, ignoring opaque values.
+- `target`: The object that receives the `action` message.
+- `action`: The action to send to `target` when a person selects this item.
 - `menu`: The menu to present. The context menu displays in response to a person tapping the item.
 
 ## See Also

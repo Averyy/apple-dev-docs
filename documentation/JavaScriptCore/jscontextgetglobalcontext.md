@@ -25,7 +25,7 @@ The global context of `ctx`.
 
 ## Parameters
 
-- `ctx`: The   with the global context you want to get.
+- `ctx`: The `JSContextRef` with the global context you want to get.
 
 
 ---

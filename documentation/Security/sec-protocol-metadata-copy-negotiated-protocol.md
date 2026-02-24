@@ -28,7 +28,7 @@ Copy the application protocol negotiated, e.g., via the TLS ALPN extension. The 
 
 ## Parameters
 
-- `metadata`: A   instance.
+- `metadata`: A `sec_protocol_metadata_t` instance.
 
 
 ---

@@ -42,7 +42,7 @@ struct ContentView {
 
 ## Parameters
 
-- `hidden`: Whether the view in a control group toolbar item is   hidden.
+- `hidden`: Whether the view in a control group toolbar item is hidden.
 
 
 ---

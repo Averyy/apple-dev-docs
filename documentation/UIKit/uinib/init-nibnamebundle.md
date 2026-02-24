@@ -29,7 +29,7 @@ The [`UINib`](uinib.md) object looks for the nib file in the bundle’s language
 ## Parameters
 
 - `name`: The name of the nib file, without any leading path information.
-- `bundleOrNil`: The bundle in which to search for the nib file. If you specify  , this method looks for the nib file in the main bundle.
+- `bundleOrNil`: The bundle in which to search for the nib file. If you specify `nil`, this method looks for the nib file in the main bundle.
 
 ## See Also
 

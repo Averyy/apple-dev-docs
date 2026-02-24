@@ -94,7 +94,7 @@ NENetworkRule *rule = [[NENetworkRule alloc] initWithDestinationHost:endpoint
 
 ## Parameters
 
-- `hostEndpoint`: An endpoint instance that contains the port and hostname or domain that the rule matches.   This endpoint must contain a hostname, not an address.
+- `hostEndpoint`: An endpoint instance that contains the port and hostname or domain that the rule matches. This endpoint must contain a hostname, not an address.
 - `protocol`: The protocol that the rule matches.
 
 ## See Also

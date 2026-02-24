@@ -11,6 +11,10 @@ The filename of the storyboard from which to generate the app’s launch image.
 - tvOS 9.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Specify the name of the storyboard file without the filename extension. For example, if the filename of your storyboard is `LaunchScreen.storyboard`, specify “LaunchScreen” as the value for this key.

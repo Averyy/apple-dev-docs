@@ -27,16 +27,16 @@ The address is formatted based on the address’s country code ([`kABPersonAddre
 ## Parameters
 
 - `address`: A dictionary representing the address property to format.
-- `addCountryName`: When   and   doesn’t include a country or region name, the country or region name is added to the return value. (The country or region name is generated from the country code entry in  ; see  .)
+- `addCountryName`: Specifies whether to include the name of the country or region in the returned formatted address. When [`false`](https://developer.apple.com/documentation/Swift/false) and address includes a country or region name, that country or region name is still included in the return value. When [`true`](https://developer.apple.com/documentation/Swift/true) and `address` doesn’t include a country or region name, the country or region name is added to the return value. (The country or region name is generated from the country code entry in `address`; see `Address Property`.)
 
 ## See Also
 
 - [class ABNewPersonViewController](abnewpersonviewcontroller.md)
   A view controller presenting an interface to create a contact.
 - [class ABPersonViewController](abpersonviewcontroller.md)
-  The `ABPersonViewController` class (whose instances are known as ) implements the view used to display a person record (`ABPersonRef`).
+  The `ABPersonViewController` class (whose instances are known as **person view controllers**) implements the view used to display a person record (`ABPersonRef`).
 - [class ABUnknownPersonViewController](abunknownpersonviewcontroller.md)
-  The `ABUnknownPersonViewController` class (whose instances are known as ) implements a view controller used to create a person record from a set of person properties.
+  The `ABUnknownPersonViewController` class (whose instances are known as **unknown-person view controllers**) implements a view controller used to create a person record from a set of person properties.
 
 
 ---

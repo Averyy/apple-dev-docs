@@ -32,7 +32,7 @@ The summary format description will be canonical LPCM and deep enough in sample 
 
 ## Parameters
 
-- `allocator`: The allocator to use. Pass   or   to use the default allocator.
+- `allocator`: The allocator to use. Pass `kCFAllocatorDefault` or `NULL` to use the default allocator.
 - `formatDescriptionArray`: The array of format descriptions to summarize.
 - `flags`: Pass 0.
 - `formatDescriptionOut`: On output, returns the newly created audio format description.

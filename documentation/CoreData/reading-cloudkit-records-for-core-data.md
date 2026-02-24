@@ -16,9 +16,9 @@ To work with records directly, you need to understand the mappings between entit
 
 ##### Read Entities From Record Types
 
-CloudKit doesn’t typically support inheritance, so it provides only a single system field, [`recordType`](https://developer.apple.com/documentation/CloudKit/CKRecord/recordType-6v7au), to hold type information. Core Data stores the name of the  from the inheritance hierarchy in [`recordType`](https://developer.apple.com/documentation/CloudKit/CKRecord/recordType-6v7au).
+CloudKit doesn’t typically support inheritance, so it provides only a single system field, [`recordType`](https://developer.apple.com/documentation/CloudKit/CKRecord/recordType-6v7au), to hold type information. Core Data stores the name of the *root entity* from the inheritance hierarchy in [`recordType`](https://developer.apple.com/documentation/CloudKit/CKRecord/recordType-6v7au).
 
-When you initialize a schema, Core Data adds a custom field to the record type, `CD_entityName`, to store the name of the .
+When you initialize a schema, Core Data adds a custom field to the record type, `CD_entityName`, to store the name of the *current entity*.
 
 ![Layout diagram showing a Post entity with content and title attributes.](https://docs-assets.developer.apple.com/published/95e740430e55a1bded89539a2904d7de/media-3227969%402x.png)
 

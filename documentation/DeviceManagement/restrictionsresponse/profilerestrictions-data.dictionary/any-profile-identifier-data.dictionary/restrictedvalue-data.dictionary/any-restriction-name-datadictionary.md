@@ -18,6 +18,10 @@ A dictionary that contains numeric restriction parameters.
 object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.RestrictedValue.ANY restriction name
 ```
 
+## Properties
+
+- `value` (integer) *(required)*: The value of the restriction.
+
 
 ---
 

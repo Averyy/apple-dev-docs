@@ -15,6 +15,12 @@ The command to query a carrier URL for active eSIM cellular-plan profiles on a d
 object RefreshCellularPlansCommand.Command
 ```
 
+## Properties
+
+- `eSIMServerURL` (string) *(required)*: The carrier’s eSIM server URL to query. Obtain this URL from each carrier separately.
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

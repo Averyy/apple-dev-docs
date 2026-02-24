@@ -23,7 +23,7 @@ func dequeueNotifications(matching notification: Notification, coalesceMask: Int
 ## Parameters
 
 - `notification`: The notification used for matching notifications to remove from the notification queue.
-- `coalesceMask`: A mask indicating what criteria to use when matching attributes of   to attributes of notifications in the queue. The mask is created by combining any of the constants  ,  , and  .
+- `coalesceMask`: A mask indicating what criteria to use when matching attributes of `notification` to attributes of notifications in the queue. The mask is created by combining any of the constants [`none`](notificationqueue/notificationcoalescing/none.md), [`onName`](notificationqueue/notificationcoalescing/onname.md), and [`onSender`](notificationqueue/notificationcoalescing/onsender.md).
 
 ## See Also
 

@@ -24,7 +24,7 @@ This method is called when the system binds a key down event to an action method
 
 ## Parameters
 
-- `aSelector`: The action associated with the key down event. The selector can be an action specified in the input method  dictionary of keys and actions (that is, an action specific to the input method) or one of the   action methods such as   or  . By definition such action methods do not return a value.
+- `aSelector`: The action associated with the key down event. The selector can be an action specified in the input method  dictionary of keys and actions (that is, an action specific to the input method) or one of the `NSResponder` action methods such as `insertNewline:` or `deleteBackward:`. By definition such action methods do not return a value.
 - `sender`: The client object sending the key down event.
 
 ## See Also

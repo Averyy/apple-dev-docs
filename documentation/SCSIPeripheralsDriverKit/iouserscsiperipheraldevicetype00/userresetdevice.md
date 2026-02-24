@@ -20,7 +20,7 @@ A value that indicates the result of the bus reset. [`kIOReturnSuccess`](https:/
 
 ## Parameters
 
-- `response`: A pointer to a   instance. On return, the framework populates this reference with the response from the protocol driver.
+- `response`: A pointer to a [`SCSIServiceResponse`](https://developer.apple.com/documentation/iokit/scsiserviceresponse) instance. On return, the framework populates this reference with the response from the protocol driver.
 
 ## See Also
 

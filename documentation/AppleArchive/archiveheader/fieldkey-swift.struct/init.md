@@ -22,7 +22,7 @@ init(_ key: String)
 
 ## Parameters
 
-- `key`: The string for the key that must have a length of 3 characters that are in the range  .
+- `key`: The string for the key that must have a length of 3 characters that are in the range `32...127`.
 
 
 ---

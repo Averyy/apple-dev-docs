@@ -24,7 +24,7 @@ This method updates the layout information as needed before returning the specif
 
 ## Parameters
 
-- `kind`: The kind of the supplementary view whose attributes you want. The layout object defines the kinds of supplementary views it supports. This parameter must not be  .
+- `kind`: The kind of the supplementary view whose attributes you want. The layout object defines the kinds of supplementary views it supports. This parameter must not be `nil`.
 - `indexPath`: The index path of the supplementary view. Normally, this path
 
 ## See Also

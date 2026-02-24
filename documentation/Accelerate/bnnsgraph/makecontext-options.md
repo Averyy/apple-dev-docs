@@ -74,7 +74,7 @@ On return, `args[0]` contains the values `[8.0, 14.0, 18.0, 20.0, 20.0, 18.0, 14
 ## Parameters
 
 - `options`: The compilation options.
-- `block`: A closure with a   parameter that points to the BNNS Graph builder.
+- `block`: A closure with a `BNNSGraph.Builder` parameter that points to the BNNS Graph builder.
 
 ## See Also
 

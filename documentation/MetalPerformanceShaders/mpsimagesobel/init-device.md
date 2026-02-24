@@ -25,7 +25,7 @@ An initialized Sobel filter object.
 
 #### Discussion
 
-The default color transform matrix is an array of 3 floats set to the  standard: `{0.299f, 0.587f, 0.114f}`.
+The default color transform matrix is an array of 3 floats set to the *BT.601/JPEG* standard: `{0.299f, 0.587f, 0.114f}`.
 
 ## Parameters
 

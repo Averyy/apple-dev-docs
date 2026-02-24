@@ -99,7 +99,7 @@ For more information about how SwiftUI chooses a default toggle style, see the [
 
 ## Parameters
 
-- `style`: The toggle style to set. Use one of the built-in   values, like   or  ,   or a custom style that you define by creating a type that conforms   to the   protocol.
+- `style`: The toggle style to set. Use one of the built-in values, like [`switch`](togglestyle/switch.md) or [`button`](togglestyle/button.md), or a custom style that you define by creating a type that conforms to the [`ToggleStyle`](togglestyle.md) protocol.
 
 ## See Also
 

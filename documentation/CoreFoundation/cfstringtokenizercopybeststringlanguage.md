@@ -35,7 +35,7 @@ ar (Arabic), bg (Bulgarian), cs (Czech), da (Danish), de (German), el (Greek), e
 ## Parameters
 
 - `string`: The string to test to identify the language.
-- `range`: The range of   to use for the test. If  , the first few hundred characters of the string are examined.
+- `range`: The range of `string` to use for the test. If `NULL`, the first few hundred characters of the string are examined.
 
 
 ---

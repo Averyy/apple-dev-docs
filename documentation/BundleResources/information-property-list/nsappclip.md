@@ -9,6 +9,10 @@ A collection of keys that an App Clip uses to get additional capabilities.
 - iOS 14.0+
 - iPadOS 14.0+
 
+
+
+**Type**: object
+
 ## Topics
 
 ### Scheduling and Receiving Temporary Notifications

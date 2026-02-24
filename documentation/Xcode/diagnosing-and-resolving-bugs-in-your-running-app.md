@@ -36,7 +36,7 @@ Add a breakpoint to your code in a location based on problem characteristics, th
 
 ##### Inspect Variables and Execution Sequence Without Pausing
 
-When you develop code, it’s helpful to log actions and variable values so you understand how your code runs and what values your variables have at different points in your app. This is especially true when you develop , or code that executes simultaneously across multiple queues or threads, because bugs can be intermittent and difficult to reproduce. Often, you reproduce a bug in normal execution, but not when stepping through the debugger, because the timing is different between normal execution and debugging. The debugger provides tools to inspect variables without pausing and disturbing the timing of your concurrent code.
+When you develop code, it’s helpful to log actions and variable values so you understand how your code runs and what values your variables have at different points in your app. This is especially true when you develop *concurrent code*, or code that executes simultaneously across multiple queues or threads, because bugs can be intermittent and difficult to reproduce. Often, you reproduce a bug in normal execution, but not when stepping through the debugger, because the timing is different between normal execution and debugging. The debugger provides tools to inspect variables without pausing and disturbing the timing of your concurrent code.
 
 Developers commonly add `print` or `NSLog` statements to see variable values. While this technique works, it adds extra code that isn’t useful after you finish development, and leaves your app with a noisy console that makes diagnosing subsequent bugs more difficult. Instead, use breakpoint actions to know when events in your app take place, and inspect variable values without pausing.
 
@@ -85,13 +85,13 @@ The Network I/O gauge shows how much data your app reads from and writes to the 
 
 ##### Visualize and Diagnose Increasing Memory Usage
 
-Diagnose the cause of memory leaks and abandoned memory with the memory graph. The observable symptom of a memory leak is memory usage that continues to increase over time, even when conditions in the app indicate that memory usage is decreasing. A memory leak can occur in a , which is when objects maintain strong references to each other, but the app no longer references them. These objects remain in memory and the app can’t remove them.  occurs when you create objects and your code still references them, but your app no longer needs them or uses them.
+Diagnose the cause of memory leaks and abandoned memory with the memory graph. The observable symptom of a memory leak is memory usage that continues to increase over time, even when conditions in the app indicate that memory usage is decreasing. A memory leak can occur in a *retain cycle*, which is when objects maintain strong references to each other, but the app no longer references them. These objects remain in memory and the app can’t remove them. *Abandoned memory* occurs when you create objects and your code still references them, but your app no longer needs them or uses them.
 
 ![The Xcode debugger toolbar for a running app, highlighting the Debug Memory Graph button.](https://docs-assets.developer.apple.com/published/298aadf579ae724a68e5cb8051662624/diagnosing-and-resolving-bugs-in-your-running-app-3%402x.png)
 
 To see the memory graph in the debugger, pause your app at a breakpoint and click the Debug Memory Graph button in the debug bar. Alternatively, click the Debug Memory Graph button when the app is running to pause the app and show the memory graph.
 
-The memory graph view replaces the stack trace in the Debug navigator with a list of types, organized by library, each with a list of instances called . Select a node to view its memory graph.
+The memory graph view replaces the stack trace in the Debug navigator with a list of types, organized by library, each with a list of instances called *nodes*. Select a node to view its memory graph.
 
 A node’s memory graph shows all the memory references to that node, and highlights strong references. Control-click any node in the graph to perform more actions, such as accessing Quick Look or printing the description to the console. Choose Focus on Node to show the graph for the selected node. Click a reference to see its details, including the name of the variable, the type of reference, and the source and destination objects in memory.
 

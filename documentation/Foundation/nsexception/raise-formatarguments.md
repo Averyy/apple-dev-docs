@@ -27,8 +27,8 @@ The user-defined dictionary of the generated object is `nil`.
 ## Parameters
 
 - `name`: The name of the exception.
-- `format`: A human-readable message string (that is, the exception reason) with conversion specifications for the variable arguments in  .
-- `argList`: Variable information to be inserted into the formatted exception reason (in the manner of  ).
+- `format`: A human-readable message string (that is, the exception reason) with conversion specifications for the variable arguments in `argList`.
+- `argList`: Variable information to be inserted into the formatted exception reason (in the manner of `vprintf`).
 
 ## See Also
 

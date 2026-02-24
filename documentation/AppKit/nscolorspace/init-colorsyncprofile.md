@@ -20,7 +20,7 @@ The initialized `NSColorSpace` object or `nil` if initialization was not success
 
 ## Parameters
 
-- `prof`: The ColorSync profile to use when initializing the   object. This should be an object of opaque type CMProfileRef. See   for further information on CMProfileRef.
+- `prof`: The ColorSync profile to use when initializing the `NSColorSpace` object. This should be an object of opaque type CMProfileRef. See [`ColorSync Manager`](https://developer.apple.com/documentation/applicationservices/colorsync_manager) for further information on CMProfileRef.
 
 ## See Also
 

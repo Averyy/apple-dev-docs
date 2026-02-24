@@ -10,6 +10,82 @@ The following figure and code show a shareable event that synchronizes graphics 
 
 ![A timeline diagram that shows a shareable synchronization event encoded into two devices. Device A shows graphics-rendering commands, and device B shows compute-processing commands.](https://docs-assets.developer.apple.com/published/8f7ba4dbc1f70a4e848435f95ff8bac8/synchronizing-events-across-multiple-devices-or-processes-1%402x.png)
 
+**Swift**:
+
+```swift
+func setupMultipleDeviceEvent() {
+    // Shareable event
+    sharedEvent = deviceA.makeSharedEvent()
+    
+    // Built-in GPU command queue
+    commandQueueA = deviceA.makeCommandQueue()
+    
+    // External GPU command queue
+    commandQueueB = deviceB.makeCommandQueue()
+}
+
+func renderFrame() {
+    guard
+        let sharedEvent = sharedEvent,
+        let commandBufferA = commandQueueA?.makeCommandBuffer(),
+        let commandBufferB = commandQueueB?.makeCommandBuffer()
+        else { return }
+    
+    // Device A (Graphics Rendering)
+    /* Encode first render pass */
+    commandBufferA.encodeSignalEvent(sharedEvent, value: 1)
+    /* Encode second render pass */
+    commandBufferA.encodeWaitForEvent(sharedEvent, value: 2)
+    /* Encode third render pass */
+    commandBufferA.commit()
+    
+    // Device B (Compute Processing)
+    /* Encode first compute pass */
+    commandBufferB.encodeWaitForEvent(sharedEvent, value: 1)
+    /* Encode second compute pass  */
+    commandBufferB.encodeSignalEvent(sharedEvent, value: 2)
+    /* Encode third compute pass */
+    commandBufferB.commit()
+}
+```
+
+**Objective-C**:
+
+```objective-c
+- (void)setupMultipleDeviceEvent
+{
+    // Shareable event
+    _sharedEvent = [_deviceA newSharedEvent];
+    
+    // Built-in GPU command queue
+    _commandQueueA = [_deviceA newCommandQueue];
+    
+    // External GPU command queue
+    _commandQueueB = [_deviceB newCommandQueue];
+}
+
+- (void)renderFrame
+{
+    // Device A (Graphics Rendering)
+    id<MTLCommandBuffer> commandBufferA = [_commandQueueA commandBuffer];
+    /* Encode first render pass */
+    [commandBufferA encodeSignalEvent:_sharedEvent value:1];
+    /* Encode second render pass  */
+    [commandBufferA encodeWaitForEvent:_sharedEvent value:2];
+    /* Encode third render pass  */
+    [commandBufferA commit];
+    
+    // Device B (Compute Processing)
+    id<MTLCommandBuffer> commandBufferB = [_commandQueueB commandBuffer];
+    /* Encode first compute pass */
+    [commandBufferB encodeWaitForEvent:_sharedEvent value:1];
+    /* Encode second compute pass */
+    [commandBufferB encodeSignalEvent:_sharedEvent value:2];
+    /* Encode third compute pass */
+    [commandBufferB commit];
+}
+```
+
 During setup, the code creates a shareable event ([`MTLSharedEvent`](mtlsharedevent.md)) and command queues on two different devices. Like the example shown in [`Synchronizing events within a single device`](synchronizing-events-within-a-single-device.md), it encodes render commands onto the first queue and compute commands on the second queue.
 
 You call the same methods when signaling and waiting on shared events as you do when working with events on a single device. The only difference is that the queues are associated with different devices and the event being used to synchronize access is a shared event.

@@ -24,7 +24,7 @@ The result of the closure.
 
 ## Parameters
 
-- `access`: A closure containing   document-related operations . Operations in   the closure will be attributed to this user identity.
+- `access`: A closure containing document-related operations . Operations in the closure will be attributed to this user identity.
 
 ## See Also
 

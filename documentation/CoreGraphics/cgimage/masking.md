@@ -32,7 +32,7 @@ If the `mask` parameter is an image, then it serves as an alpha mask for blendin
 
 ## Parameters
 
-- `mask`: A mask. If the mask is an image, it must be in the DeviceGray color space, must not have an alpha component, and may not itself be masked by an image mask or a masking color. If the mask is not the same size as the image specified by the   parameter, the mask is scaled to fit the image.
+- `mask`: A mask. If the mask is an image, it must be in the DeviceGray color space, must not have an alpha component, and may not itself be masked by an image mask or a masking color. If the mask is not the same size as the image specified by the `image` parameter, the mask is scaled to fit the image.
 
 ## See Also
 

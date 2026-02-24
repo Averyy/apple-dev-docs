@@ -11,6 +11,10 @@ The credential types supported by a credential provider extension, and whether i
 - Mac Catalyst 17.0+
 - macOS 14.0+
 
+
+
+**Type**: object
+
 ## Topics
 
 ### Providing credentials

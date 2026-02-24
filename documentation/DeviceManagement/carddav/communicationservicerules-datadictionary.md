@@ -22,6 +22,10 @@ object CardDAV.CommunicationServiceRules
 - [object CardDAV.CommunicationServiceRules.DefaultServiceHandlers](carddav/communicationservicerules-data.dictionary/defaultservicehandlers-data.dictionary.md)
   A dictionary defining the default service handlers for this account.
 
+## Properties
+
+- `DefaultServiceHandlers` (CardDAV.CommunicationServiceRules.DefaultServiceHandlers): A dictionary of service handlers for contacts from this account.
+
 
 ---
 

@@ -8,6 +8,10 @@ The services a watchOS app provides that require it to continue running in the b
 **Availability**:
 - watchOS 3.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 To add this key to the Information Property List, enable your WatchKit extension’s Background Modes capability in Xcode.

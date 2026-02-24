@@ -69,7 +69,7 @@ func classForPage() -> AnyClass {
 
 Override the `draw` method in your subclass to draw your custom graphic, the line. Draw the original content by calling the superclass version of the `draw` method. The `draw` methods for pages and annotations are nearly identical, the only difference being the `in context` parameter for annotations and the `to context` parameter for pages:
 
- [`draw(with:)`](pdfannotation/draw(with:).md) 
+**For annotations, use this** [`draw(with:)`](pdfannotation/draw(with:).md) **method:**
 
 ```swift
 override func draw(with box: PDFDisplayBox, in context: CGContext) {
@@ -78,7 +78,7 @@ override func draw(with box: PDFDisplayBox, in context: CGContext) {
 }
 ```
 
- [`draw(with:)`](pdfpage/draw(with:).md) 
+**For pages, use this** [`draw(with:)`](pdfpage/draw(with:).md) **method:**
 
 ```swift
 override func draw(with box: PDFDisplayBox, to context: CGContext) {

@@ -24,8 +24,8 @@ Also returns by reference in `dict` a dictionary containing document-level attri
 
 ## Parameters
 
-- `wrapper`: The   containing the RTFD document.
-- `dict`: An in-out dictionary containing document-level attributes. On output, this method updates the dictionary to contain any document-specific keys found in the data. Specify   if you don’t want the document attributes.
+- `wrapper`: The [`FileWrapper`](filewrapper.md) containing the RTFD document.
+- `dict`: An in-out dictionary containing document-level attributes. On output, this method updates the dictionary to contain any document-specific keys found in the data. Specify `nil` if you don’t want the document attributes.
 
 ## See Also
 

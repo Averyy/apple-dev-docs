@@ -31,7 +31,7 @@ Use this method if your code receives paths as C strings from system routines.
 ## Parameters
 
 - `str`: A C string representation of a pathname.
-- `len`: The number of characters in  .
+- `len`: The number of characters in `string`.
 
 ## See Also
 

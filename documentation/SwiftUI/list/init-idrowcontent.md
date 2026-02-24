@@ -25,7 +25,7 @@ Creates a list that identifies its rows based on a key path to the identifier of
 
 - `data`: The data for populating the list.
 - `id`: The key path to the data model’s identifier.
-- `rowContent`: A view builder that creates the view for a single row of   the list.
+- `rowContent`: A view builder that creates the view for a single row of the list.
 
 ## See Also
 

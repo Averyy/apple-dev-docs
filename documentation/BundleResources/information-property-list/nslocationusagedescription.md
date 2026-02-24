@@ -10,6 +10,10 @@ A message that tells people why the app is requesting access to their location i
 - iPadOS 6.0+
 - macOS 10.14+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Use this key in a macOS app that accesses the user’s location information. In an iOS app, use [`NSLocationWhenInUseUsageDescription`](information-property-list/nslocationwheninuseusagedescription.md) or [`NSLocationAlwaysAndWhenInUseUsageDescription`](information-property-list/nslocationalwaysandwheninuseusagedescription.md) instead.

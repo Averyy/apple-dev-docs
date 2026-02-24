@@ -34,8 +34,8 @@ Prior to copying an item, the file manager asks its delegate if it should actual
 
 ## Parameters
 
-- `srcPath`: The path to the file or directory you want to move. This parameter must not be  .
-- `dstPath`: The path at which to place the copy of  . This path must include the name of the file or directory in its new location. This parameter must not be  .
+- `srcPath`: The path to the file or directory you want to move. This parameter must not be `nil`.
+- `dstPath`: The path at which to place the copy of `srcPath`. This path must include the name of the file or directory in its new location. This parameter must not be `nil`.
 
 ## See Also
 

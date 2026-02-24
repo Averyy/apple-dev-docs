@@ -32,7 +32,7 @@ Maintain playback by keeping a reference to the generator controller.
 
 ## Parameters
 
-- `configuration`: A set of configuration parameters necessary for initializing and rendering the  .
+- `configuration`: A set of configuration parameters necessary for initializing and rendering the `generatorRenderHandler`.
 - `generatorRenderHandler`: The audio render handler to play. The system runs this handler to generate real-time audio.
 
 ## See Also

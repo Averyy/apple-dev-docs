@@ -49,7 +49,7 @@ Setting an empty string value disables text selection for the view, and a value 
 
 ## Parameters
 
-- `stringKey`: The localized string key to use as a type select   equivalent for a view in a collection.
+- `stringKey`: The localized string key to use as a type select equivalent for a view in a collection.
 
 
 ---

@@ -22,7 +22,7 @@ init(_ titleKey: LocalizedStringKey, systemImage: String, @ViewBuilder content: 
 
 ## Parameters
 
-- `titleKey`: The key for the link’s localized title, which describes   the contents of the menu.
+- `titleKey`: The key for the link’s localized title, which describes the contents of the menu.
 - `systemImage`: The name of the image resource to lookup.
 - `content`: A group of menu items.
 

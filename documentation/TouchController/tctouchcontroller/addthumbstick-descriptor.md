@@ -21,7 +21,7 @@ A new `TCThumbstick` instance.
 
 ## Parameters
 
-- `descriptor`: The   containing the configuration for the thumbstick.
+- `descriptor`: The `TCThumbstickDescriptor` containing the configuration for the thumbstick.
 
 ## See Also
 

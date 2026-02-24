@@ -23,7 +23,7 @@ To look up the names of system symbol images, download the SF Symbols app from [
 ## Parameters
 
 - `name`: The name of the system symbol image.
-- `value`: The value the system uses to customize the symbol’s content, between   and  .
+- `value`: The value the system uses to customize the symbol’s content, between `0` and `1`.
 - `description`: The accessibility description for the symbol image, if any.
 
 ## See Also

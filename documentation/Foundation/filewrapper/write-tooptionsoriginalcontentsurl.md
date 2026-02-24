@@ -27,8 +27,8 @@ func write(to url: URL, options: FileWrapper.WritingOptions = [], originalConten
 ## Parameters
 
 - `url`: URL of the file-system node to which the file wrapper’s contents are written.
-- `options`: Option flags for writing to the node located at  . See   for possible values.
-- `originalContentsURL`: Specify   for this parameter if there is no earlier version of the contents or if you want to ensure that all the contents are written to files.
+- `options`: Option flags for writing to the node located at `url`. See [`FileWrapper.WritingOptions`](filewrapper/writingoptions.md) for possible values.
+- `originalContentsURL`: The location of a previous revision of the contents being written. The default implementation of this method attempts to avoid unnecessary I/O by writing hard links to regular files instead of actually writing out their contents when the contents have not changed.  The child file wrappers must return accurate values when its [`filename`](filewrapper/filename.md) property is accessed for this to work. Use the `NSFileWrapperWritingWithNameUpdating` writing option to increase the likelihood of that. Specify `nil` for this parameter if there is no earlier version of the contents or if you want to ensure that all the contents are written to files.
 
 ## See Also
 

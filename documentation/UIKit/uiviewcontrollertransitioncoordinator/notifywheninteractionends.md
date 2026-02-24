@@ -28,7 +28,7 @@ You can call this method multiple times to register multiple blocks. All of the 
 
 ## Parameters
 
-- `handler`: The block to execute when the transition changes from interactive to noninteractive. The block has no return value and takes the following parameter:
+- `handler`: The block to execute when the transition changes from interactive to noninteractive. The block has no return value and takes the following parameter: - **context**: The contextual information for performing the animations. Use this object to get the animation-related information. For more information, see [`UIViewControllerTransitionCoordinatorContext`](uiviewcontrollertransitioncoordinatorcontext.md).
 
 ## See Also
 

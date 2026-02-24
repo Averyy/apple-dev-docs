@@ -30,7 +30,7 @@ This method allows for component values to be retrieved for an [`NSCalendar.Unit
 
 ## Parameters
 
-- `unit`: The calendar unit for which to retrieve its value. Do not pass   or  .
+- `unit`: The calendar unit for which to retrieve its value. Do not pass [`calendar`](nscalendar/unit/calendar.md) or [`timeZone`](nscalendar/unit/timezone.md).
 
 ## See Also
 

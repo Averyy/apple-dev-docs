@@ -28,13 +28,13 @@ This function automatically calls the function [`SecKeychainUnlock(_:_:_:_:)`](s
 
 ## Parameters
 
-- `itemClass`: A constant identifying the class of item to create. See   for valid constants.
+- `itemClass`: A constant identifying the class of item to create. See [`SecItemClass`](secitemclass.md) for valid constants.
 - `attrList`: A pointer to the list of attributes for the item to create.
-- `length`: The length of the buffer pointed to by the   parameter.
+- `length`: The length of the buffer pointed to by the `data` parameter.
 - `data`: A pointer to a buffer containing the data to store.
-- `keychainRef`: A reference to the keychain in which to add the item. Pass   to specify the default keychain.
-- `initialAccess`: An access object for this keychain item. Use the   function to create an access object or the   function to copy an access object from another keychain item. If you pass   for this parameter, the access defaults to the application creating the item.
-- `itemRef`: On return, a pointer to a reference to the newly created keychain item. This parameter is optional. You must call the   function to release this object when you are finished using it.
+- `keychainRef`: A reference to the keychain in which to add the item. Pass `NULL` to specify the default keychain.
+- `initialAccess`: An access object for this keychain item. Use the [`SecAccessCreate(_:_:_:)`](secaccesscreate(_:_:_:).md) function to create an access object or the [`SecKeychainItemCopyAccess(_:_:)`](seckeychainitemcopyaccess(_:_:).md) function to copy an access object from another keychain item. If you pass `NULL` for this parameter, the access defaults to the application creating the item.
+- `itemRef`: On return, a pointer to a reference to the newly created keychain item. This parameter is optional. You must call the `CFRelease` function to release this object when you are finished using it.
 
 
 ---

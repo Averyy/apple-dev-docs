@@ -20,8 +20,8 @@ You should rarely need to use this method. The [`resetCursorRects()`](nsview/res
 
 ## Parameters
 
-- `rect`: A rectangle defining a region of the view. Must match a value previously specified using  .
-- `object`: An object representing a cursor. Must match a value previously specified using  .
+- `rect`: A rectangle defining a region of the view. Must match a value previously specified using [`addCursorRect(_:cursor:)`](nsview/addcursorrect(_:cursor:).md).
+- `object`: An object representing a cursor. Must match a value previously specified using [`addCursorRect(_:cursor:)`](nsview/addcursorrect(_:cursor:).md).
 
 ## See Also
 

@@ -16,7 +16,7 @@ func setTarget(_ target: Any?)
 
 ## Parameters
 
-- `target`: The target of the receiver. When you select a color in the color panel   sends its action to its target, provided that neither the action nor the target is  . The target is   by default.
+- `target`: The target of the receiver. When you select a color in the color panel `NSColorPanel` sends its action to its target, provided that neither the action nor the target is `nil`. The target is `nil` by default.
 
 ## See Also
 

@@ -22,7 +22,7 @@ func transformSpace(_ baseFromMapTransform: @escaping (Self) -> ProjectiveTransf
 
 ## Parameters
 
-- `baseFromMapTransform`: A closure which takes in the base coordinate space   and returns a transform that represents the modification to that space.
+- `baseFromMapTransform`: A closure which takes in the base coordinate space and returns a transform that represents the modification to that space.
 
 
 ---

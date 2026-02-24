@@ -26,7 +26,7 @@ A new animation resource that you play on an entity by calling the entity’s [`
 
 ## Parameters
 
-- `duration`: The amount of time that the animation should play. If you   omit this parameter, the animation loops indefinitely.
+- `duration`: The amount of time that the animation should play. If you omit this parameter, the animation loops indefinitely.
 
 ## See Also
 

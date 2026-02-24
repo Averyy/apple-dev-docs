@@ -22,7 +22,7 @@ var exposureAdaptationBrighteningSpeedFactor: CGFloat { get set }
 
 #### Discussion
 
-When using a High Dynamic Range (HDR) camera, SceneKit applies a process called  to translate the wide range of luminance values in the visible scene to the narrower range of brightness values that can be shown on a display. When the [`wantsExposureAdaptation`](scncamera/wantsexposureadaptation.md) property is enabled, SceneKit automatically adjusts the tone mapping curve based on the average luminance currently visible to the camera, and creates automatic transitions between exposure levels.
+When using a High Dynamic Range (HDR) camera, SceneKit applies a process called *tone mapping* to translate the wide range of luminance values in the visible scene to the narrower range of brightness values that can be shown on a display. When the [`wantsExposureAdaptation`](scncamera/wantsexposureadaptation.md) property is enabled, SceneKit automatically adjusts the tone mapping curve based on the average luminance currently visible to the camera, and creates automatic transitions between exposure levels.
 
 SceneKit automatically determines the overall duration of exposure-level animations based on the values of this property and the [`exposureAdaptationDarkeningSpeedFactor`](scncamera/exposureadaptationdarkeningspeedfactor.md) property. The default value is `0.4`, resulting in brightening animations that are slightly faster than darkening animations.
 

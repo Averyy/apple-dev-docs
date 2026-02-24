@@ -11,6 +11,10 @@ The custom class that implements an app extension’s primary view or functional
 - macOS 10.10+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key is mutually exclusive with [`NSExtensionMainStoryboard`](information-property-list/nsextension/nsextensionmainstoryboard.md). Typically, Xcode sets the value of this key when creating an App Extension target in your project. If you change the name of the specified class, remember to update the value of this key.

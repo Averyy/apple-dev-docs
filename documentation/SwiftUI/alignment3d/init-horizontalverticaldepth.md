@@ -6,7 +6,7 @@
 Creates a custom alignment value with the specified horizontal, vertical and depth alignment guides.
 
 **Availability**:
-- visionOS 26.0+
+- visionOS 1.0+
 
 ## Declaration
 

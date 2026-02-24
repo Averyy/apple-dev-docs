@@ -24,7 +24,7 @@ func closeWriteWithError(_ error: (any Error)?)
 
 ## Parameters
 
-- `error`: An NSError object indicating to the system the error that led to the closure. If the flow is not being closed due to an error, this parameter should be set to nil. See   below for a list of acceptable error codes.
+- `error`: An NSError object indicating to the system the error that led to the closure. If the flow is not being closed due to an error, this parameter should be set to nil. See `NEAppProxyFlowError` below for a list of acceptable error codes.
 
 ## See Also
 

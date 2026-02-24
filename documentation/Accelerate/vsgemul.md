@@ -20,14 +20,14 @@ Matrix `a` (or its transpose) is multiplied by matrix `b` (or its transpose); th
 
 ## Parameters
 
-- `l`: Number of rows in matrix  ; must be a multiple of 4.
-- `m`: If   = ‘N’,   is the number of columns in matrix   ; if forma = ‘T’,   is the number of rows in matrix  . Also, if   = ‘N’,   is the number of rows in matrix  ; if formb = ‘T’,   is the number of columns in matrix  .   must be a multiple of 4.
-- `n`: Number of columns in the matrix  ; must be a multiple of 4.
-- `a`: A matrix with elements of type  .  If   = ‘N’, the matrix itself is used in the calculation and it has   rows and   columns.  If   = ‘T’, the transpose is used and   has   rows and   columns. Thus the matrix used in the calculation is   by  .
+- `l`: Number of rows in matrix `matrix`; must be a multiple of 4.
+- `m`: If `forma` = ‘N’, `m` is the number of columns in matrix `a` ; if forma = ‘T’, `m` is the number of rows in matrix `a`. Also, if `formb` = ‘N’, `m` is the number of rows in matrix `b`; if formb = ‘T’, `m` is the number of columns in matrix `b`. `m` must be a multiple of 4.
+- `n`: Number of columns in the matrix `matrix`; must be a multiple of 4.
+- `a`: A matrix with elements of type `float`.  If `forma` = ‘N’, the matrix itself is used in the calculation and it has `l` rows and `m` columns.  If `forma` = ‘T’, the transpose is used and `a` has `m` rows and `l` columns. Thus the matrix used in the calculation is `l` by `m`.
 - `forma`: Selector with a value of ‘N’ or ‘T’.
-- `b`: A matrix with elements of type  .  If   = ‘N’, the matrix itself is used in the calculation and it has   rows and   columns.  If   = ‘T’, the transpose is used and   has   rows and   columns. Thus the matrix used in the calculation is   by  .
+- `b`: A matrix with elements of type `float`.  If `formb` = ‘N’, the matrix itself is used in the calculation and it has `m` rows and `n` columns.  If `formb` = ‘T’, the transpose is used and `b` has `n` rows and `m` columns. Thus the matrix used in the calculation is `m` by `n`.
 - `formb`: Selector with a value of ‘N’ or ‘T’.
-- `matrix`: Destination matrix with   rows and   columns.
+- `matrix`: Destination matrix with `l` rows and `n` columns.
 
 ## See Also
 

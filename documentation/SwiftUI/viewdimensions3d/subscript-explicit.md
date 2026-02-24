@@ -26,7 +26,7 @@ Find the depth offset of a particular guide in the corresponding view by using t
 
 This subscript returns `nil` if no value exists for the guide.
 
-For information about using subscripts in Swift to access member elements of a collection, list, or, sequence, see [`Subscripts`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Subscripts.html) in .
+For information about using subscripts in Swift to access member elements of a collection, list, or, sequence, see [`Subscripts`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Subscripts.html) in *The Swift Programming Language*.
 
 
 ---

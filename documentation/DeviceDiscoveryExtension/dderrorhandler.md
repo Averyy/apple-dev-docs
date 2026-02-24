@@ -20,7 +20,7 @@ typealias DDErrorHandler = ((any Error)?) -> Void
 
 ## Parameters
 
-- `inError`: A reference that the framework assigns an error object when the operation fails. When the operation succeeds, the value may be   or  .
+- `inError`: A reference that the framework assigns an error object when the operation fails. When the operation succeeds, the value may be `nil` or [`DDError.Code.success`](dderror/code/success.md).
 
 ## See Also
 

@@ -28,7 +28,7 @@ This is a wrapper for `AHRegisterHelpBook` (which is called only once to registe
 ## Parameters
 
 - `query`: String to search for.
-- `book`: Localized help book to search. When  , all installed help books are searched.
+- `book`: Localized help book to search. When `nil`, all installed help books are searched.
 
 ## See Also
 

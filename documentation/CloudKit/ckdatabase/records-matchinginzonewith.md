@@ -30,8 +30,8 @@ For information on a more configurable way to search a database, see [`CKQueryOp
 
 ## Parameters
 
-- `query`: The query that contains the search parameters. For more information, see  .
-- `zoneID`: The identifier of the record zone to search. If you’re searching a shared database, provide a record zone identifier; otherwise, you can specify   to search all record zones in the database.
+- `query`: The query that contains the search parameters. For more information, see [`CKQuery`](ckquery.md).
+- `zoneID`: The identifier of the record zone to search. If you’re searching a shared database, provide a record zone identifier; otherwise, you can specify `nil` to search all record zones in the database.
 
 ## See Also
 

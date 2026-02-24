@@ -27,8 +27,8 @@ The image at the specified index, or `NULL` if an error occurs. You’re respons
 ## Parameters
 
 - `isrc`: The image source that contains the image data.
-- `index`: The zero-based index of the image you want. If the index is invalid, this method returns  .
-- `options`: A dictionary that specifies additional creation options. For a list of possible values, see  .
+- `index`: The zero-based index of the image you want. If the index is invalid, this method returns `NULL`.
+- `options`: A dictionary that specifies additional creation options. For a list of possible values, see [`Specifying the Read Options`](cgimagesource#Specifying-the-Read-Options.md).
 
 ## See Also
 

@@ -22,7 +22,7 @@ The `selectionDisabled` parameter takes a closure which maps map features, to bo
 
 ## Parameters
 
-- `selectionDisabled`: Determines if selection should be disabled for a given   map feature.
+- `selectionDisabled`: Determines if selection should be disabled for a given map feature.
 
 ## See Also
 

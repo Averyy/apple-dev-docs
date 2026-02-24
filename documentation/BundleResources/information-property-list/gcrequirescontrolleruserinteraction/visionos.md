@@ -10,6 +10,10 @@ A Boolean value you use to indicate that a game controller is required on v
 - iPadOS 15.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [iOS](information-property-list/gcrequirescontrolleruserinteraction/ios.md)

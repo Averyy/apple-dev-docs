@@ -28,6 +28,16 @@ object VPN.AlwaysOn
 - [object VPN.AlwaysOn.TunnelConfigurationElement](vpn/alwayson-data.dictionary/tunnelconfigurationelement.md)
   The dictionary used to configure VPN tunnels.
 
+## Properties
+
+- `AllowAllCaptiveNetworkPlugins` (integer): If `1`, allows traffic from all captive networking apps outside the VPN tunnel to perform captive network handling.
+- `AllowCaptiveWebSheet` (integer): If `1`, allows traffic from Captive Web Sheet outside the VPN tunnel.
+- `AllowedCaptiveNetworkPlugins` ([VPN.AlwaysOn.AllowedCaptiveNetworkPluginElement]): The array of captive networking apps whose traffic is allowed outside the VPN tunnel, to perform captive network handling. Used only when `AllowAllCaptiveNetworkPlugins` is `false`.
+- `ApplicationExceptions` ([VPN.AlwaysOn.ApplicationExceptionElement]): An array that contains an arbitrary number of apps whose connections occur outside the VPN.
+- `ServiceExceptions` ([VPN.AlwaysOn.ServiceExceptionElement]): An array that contains an arbitrary number of service exceptions.
+- `TunnelConfigurations` ([VPN.AlwaysOn.TunnelConfigurationElement]) *(required)*: An array that contains an arbitrary number of tunnel configurations.
+- `UIToggleEnabled` (integer): If `1`, allows the user to disable the VPN configuration.
+
 ## See Also
 
 - [object VPN.DNS](vpn/dns-data.dictionary.md)

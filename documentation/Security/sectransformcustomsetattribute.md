@@ -24,9 +24,9 @@ Unlike the [`SecTransformSetAttribute(_:_:_:_:)`](sectransformsetattribute(_:_:_
 
 ## Parameters
 
-- `ref`: A   that is bound to an instance of a custom transform.
-- `attribute`: The name or the attribute handle of the attribute whose value is to be set. When using a name, see   for a list of valid key names.
-- `type`: The type of data to be retrieved for the attribute. See the discussion on   for details.
+- `ref`: A [`SecTransformImplementationRef`](sectransformimplementationref.md) that is bound to an instance of a custom transform.
+- `attribute`: The name or the attribute handle of the attribute whose value is to be set. When using a name, see [`Transform Attributes`](transform-attributes.md) for a list of valid key names.
+- `type`: The type of data to be retrieved for the attribute. See the discussion on [`SecTransformMetaAttributeType`](sectransformmetaattributetype.md) for details.
 - `value`: The new value for the attribute
 
 

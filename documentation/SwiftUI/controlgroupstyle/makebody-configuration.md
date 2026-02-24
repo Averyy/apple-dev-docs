@@ -27,7 +27,7 @@ This method will be called for each instance of [`ControlGroup`](controlgroup.md
 
 ## Parameters
 
-- `configuration`: The properties of the control group instance   being created.
+- `configuration`: The properties of the control group instance being created.
 
 ## See Also
 

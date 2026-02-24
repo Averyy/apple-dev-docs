@@ -13,6 +13,10 @@ The location URL of the app’s manifest file that contains the names and sizes 
 - tvOS 18.4+
 - visionOS 2.4+
 
+
+
+**Type**: string
+
 #### Discussion
 
 The manifest file contains information that your extension needs to schedule asset downloads, such as the names, URLs, and sizes of the assets. The format and content of the manifest file is your responsibility. The system uses this key to download the manifest file and pass it to your extension. This key is required to use Background Assets.

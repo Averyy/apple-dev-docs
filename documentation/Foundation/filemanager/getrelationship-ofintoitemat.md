@@ -28,10 +28,10 @@ Use this method to determine the relationship between an item and one of the sys
 
 ## Parameters
 
-- `outRelationship`: A pointer to a variable in which to put the relationship between   and  . For a list of possible values, see  .
-- `directory`: The search path directory. For a list of possible values, see  .
-- `domainMask`: The file system domain to search. Specify   for this parameter if you want the file manager to choose the domain that is most appropriate for the specified  .
-- `url`: The URL of the file or directory whose relationship to   is being tested. This parameter must not be  .
+- `outRelationship`: A pointer to a variable in which to put the relationship between `directoryURL` and `otherURL`. For a list of possible values, see [`FileManager.URLRelationship`](filemanager/urlrelationship.md).
+- `directory`: The search path directory. For a list of possible values, see [`FileManager.SearchPathDirectory`](filemanager/searchpathdirectory.md).
+- `domainMask`: The file system domain to search. Specify `0` for this parameter if you want the file manager to choose the domain that is most appropriate for the specified `url`.
+- `url`: The URL of the file or directory whose relationship to `directoryURL` is being tested. This parameter must not be `nil`.
 
 ## See Also
 

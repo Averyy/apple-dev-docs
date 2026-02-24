@@ -31,8 +31,8 @@ A new [`MTLBuffer`](mtlbuffer.md) instance if the method completes successfully;
 ## Parameters
 
 - `pointer`: A pointer to the starting memory address the method copies the initialization data from.
-- `length`: The size of the new buffer, in bytes, and the number of bytes the method copies from  .
-- `options`: An   instance that sets the buffer’s storage and hazard-tracking modes. See   and   for more information.
+- `length`: The size of the new buffer, in bytes, and the number of bytes the method copies from `pointer`.
+- `options`: An [`MTLResourceOptions`](mtlresourceoptions.md) instance that sets the buffer’s storage and hazard-tracking modes. See [`Resource fundamentals`](resource-fundamentals.md) and [`Setting resource storage modes`](setting-resource-storage-modes.md) for more information.
 
 ## See Also
 

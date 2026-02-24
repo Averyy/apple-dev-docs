@@ -43,7 +43,7 @@ The shared session uses the shared [`URLCache`](urlcache.md), [`HTTPCookieStorag
 
 In general, when working with a shared session, you should avoid customizing the cache, cookie storage, or credential storage (unless you are already doing so with [`NSURLConnection`](nsurlconnection.md)). There’s a good chance that you’ll outgrow the capabilities of the default session, at which point you’ll have to rewrite all of those customizations to work with your custom URL sessions.
 
-In other words, if you’re doing  with caches, cookies, authentication, or custom networking protocols, you should probably be using a default session instead of the shared session.
+In other words, if you’re doing *anything* with caches, cookies, authentication, or custom networking protocols, you should probably be using a default session instead of the shared session.
 
 
 ---

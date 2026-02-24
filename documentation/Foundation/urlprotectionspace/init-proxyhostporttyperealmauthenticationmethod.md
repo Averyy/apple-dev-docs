@@ -27,10 +27,10 @@ A new protection space object, with the given host, port, proxyType, realm, and 
 ## Parameters
 
 - `host`: The host of the proxy server for the protection space object.
-- `port`: The port for the protection space object. If   is 0 the default port for the specified proxy type is used, for example, port 80 for HTTP. Note that servers can, and do, treat these values differently.
-- `type`: The type of proxy server. The value of   should be set to one of the values specified in  .
-- `realm`: A string indicating a protocol specific subdivision of the host.   may be   if there is no specified realm or if the protocol doesn’t support realms.
-- `authenticationMethod`: The type of authentication to use.   should be set to one of the values in   or   to use the default,  .
+- `port`: The port for the protection space object. If `port` is 0 the default port for the specified proxy type is used, for example, port 80 for HTTP. Note that servers can, and do, treat these values differently.
+- `type`: The type of proxy server. The value of `proxyType` should be set to one of the values specified in [`NSURLProtectionSpace proxy types`](nsurlprotectionspace-proxy-types.md).
+- `realm`: A string indicating a protocol specific subdivision of the host. `realm` may be `nil` if there is no specified realm or if the protocol doesn’t support realms.
+- `authenticationMethod`: The type of authentication to use. `authenticationMethod` should be set to one of the values in [`NSURLProtectionSpace authentication method constants`](nsurlprotectionspace-authentication-method-constants.md) or `nil` to use the default, [`NSURLAuthenticationMethodDefault`](nsurlauthenticationmethoddefault.md).
 
 ## See Also
 

@@ -34,7 +34,7 @@ The [`autoresizingMask`](nsview/autoresizingmask-swift.property.md) of the retur
 ## Parameters
 
 - `outlineView`: The outline view that sent the message.
-- `tableColumn`: The table column, or   if the row is a group row.
+- `tableColumn`: The table column, or `nil` if the row is a group row.
 - `item`: The item displayed by the returned view.
 
 ## See Also

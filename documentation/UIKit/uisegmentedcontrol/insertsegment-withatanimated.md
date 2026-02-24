@@ -21,8 +21,8 @@ func insertSegment(with image: UIImage?, at segment: Int, animated: Bool)
 ## Parameters
 
 - `image`: An image object to use as the content of the segment.
-- `segment`: The segmented control inserts the new segment immediately before the designated one.
-- `animated`:   if the insertion of the new segment must animate; otherwise,  .
+- `segment`: An index number identifying a segment in the control. `segment` must be a number in the range 0 to the number of segments ([`numberOfSegments`](uisegmentedcontrol/numberofsegments.md)) inclusive; the segmented control pins values exceeding this upper range to the last segment. The segmented control inserts the new segment immediately before the designated one.
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) if the insertion of the new segment must animate; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

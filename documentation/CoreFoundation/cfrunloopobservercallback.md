@@ -28,7 +28,7 @@ You specify this callback when you create the run loop observer with [`CFRunLoop
 
 - `observer`: The run loop observer that is firing.
 - `activity`: The current activity stage of the run loop.
-- `info`: The   member of the   structure that was used when creating the run loop observer.
+- `info`: The `info` member of the [`CFRunLoopObserverContext`](cfrunloopobservercontext.md) structure that was used when creating the run loop observer.
 
 
 ---

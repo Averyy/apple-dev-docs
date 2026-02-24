@@ -26,7 +26,7 @@ Defaults to capturing the visible area of the tab’s web view if not implemente
 
 - `configuration`: An object that specifies how the snapshot is configured.
 - `context`: The context in which the web extension is running.
-- `completionHandler`: A block that must be called upon completion. The block takes two arguments: the captured image of the webpage (or   if capturing failed) and an error, which should be provided if any errors occurred.
+- `completionHandler`: A block that must be called upon completion. The block takes two arguments: the captured image of the webpage (or `nil` if capturing failed) and an error, which should be provided if any errors occurred.
 
 
 ---

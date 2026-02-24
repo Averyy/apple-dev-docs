@@ -22,7 +22,7 @@ func fadeRate(rate: Double, duration: Double, curveType: PHASECurveType)
 ## Parameters
 
 - `rate`: The target playback speed.
-- `duration`: The total time to adjust the playback speed. The framework scales this value by  .
+- `duration`: The total time to adjust the playback speed. The framework scales this value by [`unitsPerSecond`](phaseengine/unitspersecond.md).
 - `curveType`: A selection that specifies a mathematical curve that shapes the playback speed adjustment over time.
 
 ## See Also

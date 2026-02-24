@@ -18,7 +18,7 @@ final func sendSuggestionResponse(_ response: RCSService.SuggestionResponse) asy
 
 ## Parameters
 
-- `response`:   containing the response parameters.
+- `response`: `SuggestionResponse` containing the response parameters.
 
 ## See Also
 

@@ -24,7 +24,7 @@ init(matching components: DateComponents, majorAlignment: MajorValueAlignment<Da
 ## Parameters
 
 - `components`: The components to search for when aligning after the user finishes scrolling.
-- `majorAlignment`: The behavior for aligning to major values. When the user swipes on the chart, the chart will snap to the   next or previous major unit depending on the swipe direction. When enabled, the default major unit is a page.
+- `majorAlignment`: The behavior for aligning to major values. When the user swipes on the chart, the chart will snap to the next or previous major unit depending on the swipe direction. When enabled, the default major unit is a page.
 - `limitBehavior`: The scroll limit behavior.
 
 

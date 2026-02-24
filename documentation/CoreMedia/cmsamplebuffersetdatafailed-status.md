@@ -22,7 +22,7 @@ func CMSampleBufferSetDataFailed(_ sbuf: CMSampleBuffer, status: OSStatus) -> OS
 
 ## Parameters
 
-- `sbuf`: The   being modified.
+- `sbuf`: The `CMSampleBuffer` being modified.
 - `status`: A status describing the failure.
 
 ## See Also

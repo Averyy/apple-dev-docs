@@ -23,7 +23,7 @@ The picture for `person`, or `NULL` if the person has no picture.
 ## Parameters
 
 - `person`: The person record whose picture is being returned.
-- `format`: The size and shape being returned. See  .
+- `format`: The size and shape being returned. See `Image Format`.
 
 ## See Also
 

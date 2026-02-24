@@ -34,7 +34,7 @@ A scene source can contain objects that are not part of its scene graph. To obta
 
 ## Parameters
 
-- `options`: A dictionary containing options that affect scene loading. See   for available keys and values. Pass   to use default options.
+- `options`: A dictionary containing options that affect scene loading. See `Scene Loading Options` for available keys and values. Pass `nil` to use default options.
 
 ## See Also
 

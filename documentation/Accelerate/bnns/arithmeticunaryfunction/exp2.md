@@ -41,7 +41,7 @@ case exp2
 - [BNNS.ArithmeticUnaryFunction.cosh](bnns/arithmeticunaryfunction/cosh.md)
   An operation that calculates the element-wise hyperbolic cosine of its input.
 - [BNNS.ArithmeticUnaryFunction.exp](bnns/arithmeticunaryfunction/exp.md)
-  An operation that calculates the element-wise result of  raised to the power of its input.
+  An operation that calculates the element-wise result of *e* raised to the power of its input.
 - [BNNS.ArithmeticUnaryFunction.floor](bnns/arithmeticunaryfunction/floor.md)
   An operation that calculates the element-wise floor of its input.
 - [BNNS.ArithmeticUnaryFunction.log](bnns/arithmeticunaryfunction/log.md)

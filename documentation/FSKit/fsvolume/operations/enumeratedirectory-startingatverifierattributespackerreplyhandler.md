@@ -30,12 +30,12 @@ When packing, make sure to use acceptable directory entry names and unambiguous 
 
 ## Parameters
 
-- `directory`: The item to enumerate. FSKit guarantees this item is of type  .
-- `cookie`: A value that indicates the location within the directory from which to enumerate. Your implementation defines the semantics of the cookie values; they’re opaque to FSKit. The first call to the enumerate method passes   for this parameter. Subsequent calls pass whatever cookie value you previously passed to the packer’s   parmeter.
-- `verifier`: A tool to detect whether the directory contents changed since the last call to  . Your implementation defines the semantics of the verifier values; they’re opaque to FSKit. The first call to the enumerate method passes   for this parameter. Subsequent calls pass whatever cookie value you previously passed to the packer’s   parmeter.
-- `attributes`: The desired attributes to provide, or   if the caller doesn’t require attributes.
-- `packer`: An object that your implementation uses to enumerate directory items, packing one item per callback to  .
-- `reply`: A block or closure to indicate success or failure. If enumeration succeeds, pass the current verifier and a   error. If enumeration fails, pass the relevant error as the second parameter; FSKit ignores any verifier in this case. For an   Swift implementation, there’s no reply handler; simply return the current verifier or throw an error.
+- `directory`: The item to enumerate. FSKit guarantees this item is of type [`FSItem.ItemType.directory`](fsitem/itemtype/directory.md).
+- `cookie`: A value that indicates the location within the directory from which to enumerate. Your implementation defines the semantics of the cookie values; they’re opaque to FSKit. The first call to the enumerate method passes [`initial`](fsdirectorycookie/initial.md) for this parameter. Subsequent calls pass whatever cookie value you previously passed to the packer’s `nextCookie` parmeter.
+- `verifier`: A tool to detect whether the directory contents changed since the last call to `enumerateDirectory`. Your implementation defines the semantics of the verifier values; they’re opaque to FSKit. The first call to the enumerate method passes [`initial`](fsdirectoryverifier/initial.md) for this parameter. Subsequent calls pass whatever cookie value you previously passed to the packer’s `currentVerifier` parmeter.
+- `attributes`: The desired attributes to provide, or `nil` if the caller doesn’t require attributes.
+- `packer`: An object that your implementation uses to enumerate directory items, packing one item per callback to `enumerateDirectory`.
+- `reply`: A block or closure to indicate success or failure. If enumeration succeeds, pass the current verifier and a `nil` error. If enumeration fails, pass the relevant error as the second parameter; FSKit ignores any verifier in this case. For an `async` Swift implementation, there’s no reply handler; simply return the current verifier or throw an error.
 
 ## See Also
 

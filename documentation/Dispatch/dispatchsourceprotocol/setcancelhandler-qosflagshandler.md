@@ -29,7 +29,7 @@ To safely close a file descriptor or destroy a Mach port, a cancellation handler
 ## Parameters
 
 - `qos`: The quality-of-service to apply to the handler block.
-- `flags`: Configuration flags for the work item. For a list of possible values, see  .
+- `flags`: Configuration flags for the work item. For a list of possible values, see [`DispatchWorkItemFlags`](dispatchworkitemflags.md).
 - `handler`: The event handler block to submit to the source’s target queue.
 
 ## See Also

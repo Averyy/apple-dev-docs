@@ -24,9 +24,41 @@ func vvfmod(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsafe
 
 ##### Parameters
 
-This function calculates , for an integer k such that if x is nonzero, the result has the same sign as y and magnitude less than that of x.
+- **parameter 1**: The output array, *z*.
+- **parameter 2**: The numerators input array, *y*.
+- **parameter 3**: The denominators input array, *x*.
+- **parameter 4**: The number of elements in the arrays.
+
+This function calculates *z=y-k*x*, for an integer k such that if x is nonzero, the result has the same sign as y and magnitude less than that of x.
 
 The following code shows an example of using [`vvfmod(_:_:_:_:)`](vvfmod(_:_:_:_:).md):
+
+**Swift**:
+
+```swift
+var x: [Double] = [7, 4, 3, 4]
+var y: [Double] = [2, 5, 10, 30]
+var z = [Double](repeating: 0, count: x.count)
+var n = Int32(x.count)
+ 
+vvfmod(&z, &y, &x, &n)
+ 
+print(z) // [2.0, 1.0, 1.0, 2.0]
+```
+
+**Objective-C**:
+
+```objc
+double x[] = {7, 4, 3, 4};
+double y[] = {2, 5, 10, 30};
+double z[4];
+int n = 4;
+ 
+vvfmod(z, y, x, &n);
+ 
+NSLog(@"z: [%lf, %lf, %lf, %lf]", z[0], z[1], z[2], z[3]);
+
+```
 
 ## See Also
 

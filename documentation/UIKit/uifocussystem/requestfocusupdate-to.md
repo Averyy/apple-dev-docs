@@ -24,7 +24,7 @@ Use this method to ask the focus engine to update the focus-related information 
 
 ## Parameters
 
-- `environment`: The view, view controller, window, or other object that you want to update. You can specify any object that adopts the   protocol.
+- `environment`: The view, view controller, window, or other object that you want to update. You can specify any object that adopts the [`UIFocusEnvironment`](uifocusenvironment.md) protocol.
 
 ## See Also
 

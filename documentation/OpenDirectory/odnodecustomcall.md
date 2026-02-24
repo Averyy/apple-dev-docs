@@ -23,8 +23,8 @@ The result of the custom call.
 
 - `node`: The node.
 - `customCode`: The custom code to send to the node.
-- `data`: Data required by  . Can be  .
-- `error`: An error reference for error details. Can be  .
+- `data`: Data required by `inCustomCode`. Can be `NULL`.
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

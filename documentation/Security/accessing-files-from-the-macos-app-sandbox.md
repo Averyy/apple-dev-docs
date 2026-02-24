@@ -73,6 +73,39 @@ You only need to create security-scoped bookmarks when your app might try to acc
 
 Create bookmark data from a URL using [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](https://developer.apple.com/documentation/Foundation/NSURL/bookmarkData(options:includingResourceValuesForKeys:relativeTo:)), passing `[]` (Swift) or `0` (Objective-C) as the value for the options parameter. The bookmark Foundation creates refers to a security-scoped URL that grants access to the resource to a process that resolves the bookmark. Your app can pass that bookmark to another process, like a launch agent or an XPC service. Use the following example to access the resource in the receiving process:
 
+**Swift**:
+
+```swift
+do {
+  let location = try URL(resolvingBookmarkData: bookmark)
+  defer {
+    location.stopAccessingSecurityScopedResource()
+  }
+  // Use the resource at the location URL.
+}
+catch let error {
+  // Handle any errors.
+} 
+```
+
+**Objective-C**:
+
+```objc
+BOOL isStale = NO;
+NSError *error = nil;
+NSURL *location = [NSURL URLByResolvingBookmarkData:bookmark
+                                            options:0
+                                      relativeToURL:0
+                                bookmarkDataIsStale:&isStale
+                                              error:&error];
+if (location == nil) {
+  // Handle any errors.
+} else {
+  // Use the resource at the location URL.
+  [location stopAccessingSecurityScopedResource];
+}
+```
+
 The receiving process automatically attempts to extend its sandbox to include the bookmarked resource when it uses the security-scoped URL, as if it called [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/startAccessingSecurityScopedResource()) after resolving the bookmark. To defer extending the process’s sandbox until you explicitly call [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/startAccessingSecurityScopedResource()), pass the option [`withoutImplicitStartAccessing`](https://developer.apple.com/documentation/Foundation/NSURL/BookmarkResolutionOptions/withoutImplicitStartAccessing).
 
 ##### Access Files Related to Documents with Document Relative Bookmarks
@@ -147,6 +180,11 @@ In situations where your app tries to use a file outside of its sandbox, program
 ##### Diagnose Other Reasons Your App Cant Access a File
 
 Your app may not have access to a file even if App Sandbox doesn’t block access. Any of the operating system facilities listed below may restrict access to the file.
+
+- **POSIX permissions**: The read, write, or execute permission flags on the file, or a folder in the file’s path, deny access to the user account running your app. The app receives an error with the domain [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/Foundation/NSPOSIXErrorDomain) and code 13 (`EACCES`).
+- **POSIX.1e access control lists**: The access control list on the file, or a folder in the file’s path, deny access to the user account running your app. The app receives an error with the domain [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/Foundation/NSPOSIXErrorDomain) and code 13 (`EACCES`).
+- **System Integrity Protection**: The operating system prevents software from modifying certain parts of the file system to prevent damage to installed software. The app receives an error with the domain [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/Foundation/NSPOSIXErrorDomain) and code 1 (`EPERM`).
+- **Data protection**: The file has a data protection class that prevents the app opening the file, for example, the file’s data protection class is [`complete`](https://developer.apple.com/documentation/Foundation/FileProtectionType/complete) and the device is locked. The app receives an error with the domain [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/Foundation/NSPOSIXErrorDomain) and code 1 (`EPERM`).
 
 > **Note**:  To determine whether the App Sandbox denied your app access to a file, see [`Discovering and diagnosing App Sandbox violations`](discovering-and-diagnosing-app-sandbox-violations.md).
 

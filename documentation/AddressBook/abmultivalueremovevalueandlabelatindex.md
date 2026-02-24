@@ -26,8 +26,8 @@ This function takes an index. If you have an identifier, use the [`ABMultiValueG
 
 ## Parameters
 
-- `multiValue`: The multivalue property from which to remove the value at  .
-- `index`: Raises an exception when out of bounds.
+- `multiValue`: The multivalue property from which to remove the value at `index`.
+- `index`: The location, in `multiValue`, of the value being removed. Raises an exception when out of bounds.
 
 ## See Also
 

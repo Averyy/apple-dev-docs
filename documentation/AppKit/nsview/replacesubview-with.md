@@ -26,8 +26,8 @@ Calling this method also removes any constraints associated with `oldView` and i
 
 ## Parameters
 
-- `oldView`: The view to be replaced by  . May not be  .
-- `newView`: The view to replace  . May not be  .
+- `oldView`: The view to be replaced by `newView`. May not be `nil`.
+- `newView`: The view to replace `oldView`. May not be `nil`.
 
 ## See Also
 

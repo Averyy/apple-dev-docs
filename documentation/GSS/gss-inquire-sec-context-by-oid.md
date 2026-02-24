@@ -27,7 +27,7 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `context_handle`: The context to inquire about.
 - `desired_object`: The object identifier naming the aspect of the context to examine.
-- `data_set`: A pointer to a buffer set that includes the reference objects. Free this buffer set with   when you are done with it.
+- `data_set`: A pointer to a buffer set that includes the reference objects. Free this buffer set with [`gss_release_buffer_set(_:_:)`](gss_release_buffer_set(_:_:).md) when you are done with it.
 
 ## See Also
 

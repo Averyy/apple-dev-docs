@@ -28,7 +28,8 @@ Function constant values are first looked up by their index, then by their name.
 
 - `name`: The name of the specialized function.
 - `constantValues`: The set of constant values assigned to the function constants. Compilation fails if you don’t provide valid constant values for all required function constants.
-- `completionHandler`: A block of code that Metal calls after it creates the specialized function.
+- `completionHandler`: A block of code that Metal calls after it creates the specialized function. - **function**: A specialized function, or `nil` if an error occurred.
+- **error**: An error object that describes compilation problems, if any. This object contains compiler errors if the specialized function is `nil`, and compiler warnings if Metal created the specialized function with warnings. If Metal created the function without errors or warnings, this error object is `nil`.
 
 ## See Also
 

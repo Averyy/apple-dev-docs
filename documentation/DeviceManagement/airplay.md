@@ -90,6 +90,12 @@ Specify `com.apple.airplay` as the payload type.
 - [object AirPlay.PasswordsItem](airplay/passwordsitem.md)
   The dictionary that defines passwords for AirPlay destinations.
 
+## Properties
+
+- `AllowList` ([AirPlay.AllowListItem]): If present, only AirPlay destinations in this list are available to the device. This allow list applies to supervised devices.
+- `Passwords` ([AirPlay.PasswordsItem]): If present, sets passwords for known AirPlay destinations. Using multiple entries for the same destination, whether within the same payload or across multiple installed payloads, is an error and results in undefined behavior.
+- `Whitelist` ([AirPlay.AllowListItem]): Use `AllowList` instead. This key is deprecated in iOS 14.5 and macOS 11.3.
+
 ## See Also
 
 - [object AirPlaySecurity](airplaysecurity.md)

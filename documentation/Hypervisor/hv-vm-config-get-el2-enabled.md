@@ -21,7 +21,7 @@ func hv_vm_config_get_el2_enabled(_ config: hv_vm_config_t, _ el2_enabled: Unsaf
 ## Parameters
 
 - `config`: The VM’s configuration object.
-- `el2_enabled`: A pointer to a Boolean value that indicates whether the current platform supports EL2. The framework writes this value on success; otherwise  .
+- `el2_enabled`: A pointer to a Boolean value that indicates whether the current platform supports EL2. The framework writes this value on success; otherwise `nil`.
 
 ## See Also
 

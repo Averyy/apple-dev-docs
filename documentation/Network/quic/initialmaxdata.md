@@ -22,7 +22,7 @@ func initialMaxData(_ initialMaxData: Int) -> QUIC
 
 ## Parameters
 
-- `initialMaxData`: The value to use for the    transport parameter on a QUIC connection.
+- `initialMaxData`: The value to use for the `initial_max_data` transport parameter on a QUIC connection.
 
 
 ---

@@ -32,7 +32,7 @@ Properties that an object inherits from its owning object aren’t included.
 
 - `obj`: The object to query.
 - `outProperties`: On successful return, the object’s properties.
-- `deep`: Specify   to include the object’s children; for example, a device’s entities, or an entity’s endpoints.
+- `deep`: Specify `true` to include the object’s children; for example, a device’s entities, or an entity’s endpoints.
 
 ## See Also
 

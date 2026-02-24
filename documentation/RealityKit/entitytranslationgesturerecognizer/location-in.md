@@ -27,7 +27,7 @@ The location is typically the result of a centroid of touches for a gesture, unp
 
 ## Parameters
 
-- `entity`: An entity in whose space the location is computed.   A   entity will result in world space.
+- `entity`: An entity in whose space the location is computed. A `nil` entity will result in world space.
 
 ## See Also
 

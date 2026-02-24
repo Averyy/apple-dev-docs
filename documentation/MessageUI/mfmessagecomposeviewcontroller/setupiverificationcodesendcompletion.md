@@ -88,7 +88,7 @@ extension ViewController: MFMessageComposeViewControllerDelegate {
 
 ## Parameters
 
-- `completion`: A block that’s invoked with a   to determine whether the message was sent. The send completion handler is invoked with   after the SMS successfully transmitted to the sender’s cellular carrier. If the SMS failed to send, the completion handler invoked with  .
+- `completion`: A block that’s invoked with a `BOOL` to determine whether the message was sent. The send completion handler is invoked with `YES` after the SMS successfully transmitted to the sender’s cellular carrier. If the SMS failed to send, the completion handler invoked with `NO`.
 
 
 ---

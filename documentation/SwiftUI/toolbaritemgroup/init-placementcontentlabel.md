@@ -27,7 +27,7 @@ A toolbar item group provided a label wraps its content within a [`ControlGroup`
 
 ## Parameters
 
-- `placement`: Which section of the toolbar   the item should be placed in.
+- `placement`: Which section of the toolbar the item should be placed in.
 - `content`: The content of the item.
 - `label`: The label describing the content of the item.
 

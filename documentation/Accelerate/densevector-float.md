@@ -22,7 +22,7 @@ struct DenseVector_Float
 
 #### Overview
 
-You typically use dense vectors to represent the unknowns vector, , and the right-hand-side vector, , in the matrix equation  A [`DenseVector_Float`](densevector_float.md) structure provides a pointer to its underlying data and a count of its number of elements.
+You typically use dense vectors to represent the unknowns vector, *x*, and the right-hand-side vector, *b*, in the matrix equation *Ax = b.* A [`DenseVector_Float`](densevector_float.md) structure provides a pointer to its underlying data and a count of its number of elements.
 
 The following code shows an example of how to create a dense vector structure from an array of single-precision values. In this case, use [`withUnsafeMutableBufferPointer(_:)`](acceleratemutablebuffer/withunsafemutablebufferpointer(_:).md) to pass a pointer to your collection. The [`DenseVector_Float`](densevector_float.md) structure is valid only during the execution of the closure. Don’t store or return the structure for later use.
 

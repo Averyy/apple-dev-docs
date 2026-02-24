@@ -8,6 +8,10 @@ The name of the folder containing the bundle’s help files.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [CFAppleHelpAnchor](information-property-list/cfapplehelpanchor.md)

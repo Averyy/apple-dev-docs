@@ -30,10 +30,10 @@ Creates an empty `CMBlockBuffer`, i.e. one which has no memory block nor referen
 
 ## Parameters
 
-- `structureAllocator`: Allocator to use for allocating the   object.   will cause the default allocator to be used.
-- `subBlockCapacity`: Number of sub-blocks the new   shall accommodate before expansion occurs. A value of zero means “do the reasonable default”.
+- `structureAllocator`: Allocator to use for allocating the `CMBlockBuffer` object. `NULL` will cause the default allocator to be used.
+- `subBlockCapacity`: Number of sub-blocks the new `CMBlockBuffer` shall accommodate before expansion occurs. A value of zero means “do the reasonable default”.
 - `flags`: Feature and control flags.
-- `blockBufferOut`: Receives newly-created empty   object with retain count of 1. Must not be   .
+- `blockBufferOut`: Receives newly-created empty `CMBlockBuffer` object with retain count of 1. Must not be  `NULL`.
 
 ## See Also
 

@@ -26,7 +26,7 @@ A set of options that describes the specified foreground behavior.
 
 ## Parameters
 
-- `foregroundMode`: The specific foreground behavior; for example,   to immediately   bring the app into the foreground and then perform the app intent’s action.
+- `foregroundMode`: The specific foreground behavior; for example, `ForegroundMode.immediate` to immediately bring the app into the foreground and then perform the app intent’s action.
 
 
 ---

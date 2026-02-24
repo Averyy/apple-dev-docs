@@ -22,8 +22,8 @@ init(_ titleKey: LocalizedStringKey, isExpanded: Binding<Bool>, @ViewBuilder con
 
 ## Parameters
 
-- `titleKey`: The key for the section’s localized title, which describes   the contents of the section.
-- `isExpanded`: A binding to a Boolean value that determines the section’s   expansion state (expanded or collapsed).
+- `titleKey`: The key for the section’s localized title, which describes the contents of the section.
+- `isExpanded`: A binding to a Boolean value that determines the section’s expansion state (expanded or collapsed).
 - `content`: The section’s content.
 
 ## See Also

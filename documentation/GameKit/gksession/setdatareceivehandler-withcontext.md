@@ -24,9 +24,9 @@ The handler must implement a method with the following signature:
 - (void) receiveData:(NSData *)data fromPeer:(NSString *)peer inSession: (GKSession *)session context:(void *)context;
 ```
 
-where  contains the bytes received from a remote peer,  is a string that identifies the peer,  is the session that received the data, and  is the same context that was passed into the original call to [`setDataReceiveHandler(_:withContext:)`](gksession/setdatareceivehandler(_:withcontext:).md).
+where *data* contains the bytes received from a remote peer, *peer* is a string that identifies the peer, *session* is the session that received the data, and *context* is the same context that was passed into the original call to [`setDataReceiveHandler(_:withContext:)`](gksession/setdatareceivehandler(_:withcontext:).md).
 
-> ❗ **Important**:  Data received from other peers should be treated as  data. Be sure to validate the data you receive from the session and write your code carefully to avoid security vulnerabilities. See the [`Secure Coding Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415) for more information.
+> ❗ **Important**:  Data received from other peers should be treated as *untrusted* data. Be sure to validate the data you receive from the session and write your code carefully to avoid security vulnerabilities. See the [`Secure Coding Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415) for more information.
 
 ## Parameters
 

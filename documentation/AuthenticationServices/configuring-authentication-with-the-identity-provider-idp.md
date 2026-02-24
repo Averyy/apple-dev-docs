@@ -16,9 +16,20 @@ The [`accountDisplayName`](asauthorizationproviderextensionloginconfiguration/ac
 
 Federation enables authentication between security domains, such as from a local IdP to a cloud IdP.  You have two options to configure Platform SSO for federation:
 
+- **WS-Trust**: Use when federation for the user won’t change.
+- **Dynamic WS-Trust**: Use when federation for the user can change.
+
 To use WS-Trust, set [`federationType`](asauthorizationproviderextensionloginconfiguration/federationtype-swift.property.md) to [`ASAuthorizationProviderExtensionLoginConfiguration.FederationType.wsTrust`](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/wstrust.md). This federation type sends the WS-Trust request to the URLs in the metadata exchange data (MEX) response. The required configuration values are:
 
+- **[`federationMEXURL`](asauthorizationproviderextensionloginconfiguration/federationmexurl.md)**: The MEX URL for federation.
+- **[`federationRequestURN`](asauthorizationproviderextensionloginconfiguration/federationrequesturn.md)**: The URN for the WS-Trust login request.
+
 To use Dynamic WS-Trust, set [`federationType`](asauthorizationproviderextensionloginconfiguration/federationtype-swift.property.md) to [`ASAuthorizationProviderExtensionLoginConfiguration.FederationType.dynamicWSTrust`](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/dynamicwstrust.md). Dynamic WS-Trust sends a preauthentication to the IdP to determine whether to use federation and where to authenticate. The required configuration values are:
+
+- **[`federationRequestURN`](asauthorizationproviderextensionloginconfiguration/federationrequesturn.md)**: The URN for the WS-Trust login request.
+- **[`federationUserPreauthenticationURL`](asauthorizationproviderextensionloginconfiguration/federationuserpreauthenticationurl.md)**: The URL for the pre-authentication request.
+- **[`federationPredicate`](asauthorizationproviderextensionloginconfiguration/federationpredicate.md)**: The predicate to evaluate the pre-authentication response. If it evaluates to [`true`](https://developer.apple.com/documentation/Swift/true), then the authentication proceeds with WS-Trust. If [`false`](https://developer.apple.com/documentation/Swift/false), the system uses normal password authentication.
+- **[`federationMEXURLKeypath`](asauthorizationproviderextensionloginconfiguration/federationmexurlkeypath.md)**: The key path in the pre-authentication response for the MEX URL, for use only if the `federationPredicate` evaluates to [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ##### Use the Login Manager to Interface with Platform Sso
 
@@ -36,23 +47,23 @@ The loginConfiguration.additionalAuthorizationScopes can be used to differentiat
 
 ##### Migrate From Per User Device Keys to Shared Device Keys
 
-Devices keys represent the device to the IdP. They keys can either be , which means each user on the device has separate keys, or , which means all users on the device use the same keys. Shared device keys enable a device to authenticate with the IdP before a user logs in. Shared keys are available in macOS 14 and later.
+Devices keys represent the device to the IdP. They keys can either be *per-user*, which means each user on the device has separate keys, or *shared*, which means all users on the device use the same keys. Shared device keys enable a device to authenticate with the IdP before a user logs in. Shared keys are available in macOS 14 and later.
 
 The following table summarizes feature availability for per-user device keys and shared device keys:
 
 | Feature | Device Keys  (macOS 13 and later ) | Shared Device Keys |
 | --- | --- | --- |
-|  |  |  |
+| *Authentication* |  |  |
 | Password | ✓ | ✓ |
 | User Secure Enclave key | ✓ | ✓ |
 | SmartCard | ✓ | ✓ |
-|  |  |  |
+| *Create user* |  |  |
 | Password |  | ✓ |
 | SmartCard |  | ✓ |
-|  |  |  |
+| *Unlock with IdP credentials* |  |  |
 | Login window |  | ✓  (Platform SSO 2.0 only) |
 | Screensaver unlock |  | ✓  (Platform SSO 2.0 only) |
-|  |  |  |
+| *Other* |  |  |
 | Group membership | ✓ | ✓ |
 | Network account authorization |  | ✓ |
 

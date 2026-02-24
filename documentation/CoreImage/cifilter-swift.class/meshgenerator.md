@@ -29,6 +29,10 @@ This method generates a mesh generator image. The effect uses an array of line s
 
 The mesh generator filter uses the following properties:
 
+- **`inputMesh`**: An `array` of line segments stored as an array of [`CIVector`](civector.md), each containing a start point and end point.
+- **`color`**: A [`CIColor`](cicolor.md) representing the color used to make the mesh.
+- **`width`**: A `float` representing the width of the line segments as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber)
+
 The following code creates a filter that generates a green star made from mesh segments:
 
 ```swift

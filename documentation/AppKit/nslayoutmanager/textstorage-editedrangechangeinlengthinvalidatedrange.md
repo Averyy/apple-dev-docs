@@ -25,10 +25,10 @@ The [`textStorage(_:edited:range:changeInLength:invalidatedRange:)`](nslayoutman
 ## Parameters
 
 - `str`: The text storage whose information is invalidated.
-- `editedMask`: Specifies the nature of the changes. Its value is made by combining with the C bitwise OR operator the constants described in “Change notifications” in   (  and  ).
+- `editedMask`: Specifies the nature of the changes. Its value is made by combining with the C bitwise OR operator the constants described in “Change notifications” in [`NSTextStorage`](nstextstorage.md) ([`editedAttributes`](nstextstorageeditactions/editedattributes.md) and [`editedCharacters`](nstextstorageeditactions/editedcharacters.md)).
 - `newCharRange`: Indicates the extent of characters resulting from the edits.
-- `delta`: If the   bit of   is set, gives the number of characters added to or removed from the original range (otherwise its value is irrelevant).
-- `invalidatedCharRange`: Represents the range of characters affected after attributes have been fixed. Is either equal to   or larger. For example, deleting a paragraph separator character invalidates the layout information for all characters in the paragraphs that precede and follow the separator.
+- `delta`: If the `NSTextStorageEditedCharacters` bit of `mask` is set, gives the number of characters added to or removed from the original range (otherwise its value is irrelevant).
+- `invalidatedCharRange`: Represents the range of characters affected after attributes have been fixed. Is either equal to `newCharRange` or larger. For example, deleting a paragraph separator character invalidates the layout information for all characters in the paragraphs that precede and follow the separator.
 
 ## See Also
 

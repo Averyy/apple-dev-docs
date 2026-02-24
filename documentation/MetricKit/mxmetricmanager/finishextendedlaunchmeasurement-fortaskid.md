@@ -24,7 +24,7 @@ Use this method on the main thread to end an extended launch task previously sta
 
 ## Parameters
 
-- `taskID`: The task identifier. Must be a unique,   string.
+- `taskID`: The task identifier. Must be a unique, `non-null` string.
 
 ## See Also
 

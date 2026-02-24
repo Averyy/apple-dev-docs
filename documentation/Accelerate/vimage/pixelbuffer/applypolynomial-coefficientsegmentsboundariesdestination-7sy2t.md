@@ -52,7 +52,7 @@ print(dest.array)
 ## Parameters
 
 - `coefficientSegments`: An array that contains the polynomial coefficient array. Each polynomial must be of the same order.
-- `boundaries`: An array of boundary values, in increasing order, that separates adjacent ranges of pixel values.   must contain   elements.
+- `boundaries`: An array of boundary values, in increasing order, that separates adjacent ranges of pixel values. `boundaries` must contain `coefficientSegments.count + 1` elements.
 - `destination`: The destination pixel buffer.
 
 ## See Also

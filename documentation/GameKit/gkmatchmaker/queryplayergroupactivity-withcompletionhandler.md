@@ -26,7 +26,8 @@ Use this method to update your interface. For example, show players the relative
 ## Parameters
 
 - `playerGroup`: A number that uniquely identifies a subset of players in your game.
-- `completionHandler`: This block receives the following parameters:
+- `completionHandler`: The block that GameKit calls when it completes the request. This block receives the following parameters: - **`activity`**: The number of match requests for the player group during the previous 60 seconds.
+- **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

@@ -14,7 +14,7 @@ static let CWLinkQualityDidChange: NSNotification.Name
 
 #### Discussion
 
-Posted when the link quality for any WLAN interface changes. The  for this notification is the corresponding BSD interface name. The  dictionary for this notification contains the current RSSI and current transmit rate for the given CoreWLAN interface.
+Posted when the link quality for any WLAN interface changes. The *object* for this notification is the corresponding BSD interface name. The *userInfo* dictionary for this notification contains the current RSSI and current transmit rate for the given CoreWLAN interface.
 
 ## See Also
 

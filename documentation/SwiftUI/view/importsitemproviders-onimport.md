@@ -17,8 +17,8 @@ func importsItemProviders(_ contentTypes: [UTType], onImport: @escaping ([NSItem
 
 ## Parameters
 
-- `contentTypes`: The types of content that the view supports importing.   An empty array means the view does not currently support importing.
-- `onImport`: A closure that will be called with the imported service   item. Return   to indicate that there was a failure to receive   the items.
+- `contentTypes`: The types of content that the view supports importing. An empty array means the view does not currently support importing.
+- `onImport`: A closure that will be called with the imported service item. Return `false` to indicate that there was a failure to receive the items.
 
 ## See Also
 

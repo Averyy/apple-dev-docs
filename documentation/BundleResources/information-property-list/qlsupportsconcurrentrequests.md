@@ -11,6 +11,12 @@ A Boolean value indicating whether a Quick Look app’s  generator can handle co
 - macOS 10.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 ## See Also
 
 - [QLNeedsToBeRunInMainThread](information-property-list/qlneedstoberuninmainthread.md)

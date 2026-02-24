@@ -27,7 +27,7 @@ func CFStringGetSurrogatePairForLongCharacter(_ character: UTF32Char, _ surrogat
 ## Parameters
 
 - `character`: A UTF-32 character.
-- `surrogates`: The buffer must have space for at least 2 UTF-16 characters.
+- `surrogates`: A buffer to contain the returned surrogate pair. The buffer must have space for at least 2 UTF-16 characters.
 
 ## See Also
 

@@ -33,7 +33,7 @@ The value type depends on the type of the port type, as shown in the following t
 
 ## Parameters
 
-- `key`: The key associated with an output port for the root patch of a composition. This method throws an exception if   is invalid.
+- `key`: The key associated with an output port for the root patch of a composition. This method throws an exception if `key` is invalid.
 - `type`: A string that specifies the class.
 
 ## See Also

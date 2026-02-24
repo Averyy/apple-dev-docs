@@ -20,7 +20,7 @@ final func save(to aimeURL: URL) throws
 
 ## Parameters
 
-- `aimeURL`: The destination URL with extension  .
+- `aimeURL`: The destination URL with extension `.aime`.
 
 ## See Also
 

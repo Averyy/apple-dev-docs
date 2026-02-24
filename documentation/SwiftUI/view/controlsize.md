@@ -65,7 +65,7 @@ struct MyControls: View {
 
 ## Parameters
 
-- `controlSize`: One of the control sizes specified in the    enumeration.
+- `controlSize`: One of the control sizes specified in the [`ControlSize`](controlsize.md) enumeration.
 
 ## See Also
 

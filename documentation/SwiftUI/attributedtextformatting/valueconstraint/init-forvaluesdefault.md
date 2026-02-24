@@ -23,7 +23,7 @@ init(for attribute: AttributeKey.Type, values allowedValues: Set<AttributeKey.Va
 ## Parameters
 
 - `allowedValues`: A set of values that are permitted.
-- `defaultValue`: A single permitted value that is used to   replace any values that are not in the set of  .
+- `defaultValue`: A single permitted value that is used to replace any values that are not in the set of `allowedValues`.
 
 
 ---

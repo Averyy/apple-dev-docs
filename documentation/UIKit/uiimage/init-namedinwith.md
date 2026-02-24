@@ -40,7 +40,7 @@ The system may purge cached image data at any time to free up memory. Purging oc
 ## Parameters
 
 - `name`: The name of the image asset or file.
-- `bundle`: The bundle containing the image file or asset catalog. Specify   to search the app’s main bundle.
+- `bundle`: The bundle containing the image file or asset catalog. Specify `nil` to search the app’s main bundle.
 - `configuration`: The image configuration that you want. Use this parameter to specify traits and other details that define which variant of the image you want. For example, when requesting a custom symbol image, you can specify whether you want the thin, regular, or bold image variant.
 
 ## See Also

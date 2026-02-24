@@ -6,7 +6,7 @@ Adjust the characteristics of a view by applying view modifiers.
 
 #### Overview
 
-In SwiftUI, you assemble views into a hierarchy that describes your app’s user interface. To help you customize the appearance and behavior of your app’s views, you use . For example, you can use modifiers to:
+In SwiftUI, you assemble views into a hierarchy that describes your app’s user interface. To help you customize the appearance and behavior of your app’s views, you use *view modifiers*. For example, you can use modifiers to:
 
 - Add accessibility features to a view.
 - Adjust a view’s styling, layout, and other appearance characteristics.

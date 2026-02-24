@@ -23,11 +23,49 @@ For more guidance on which mode to choose, see [`Choosing a resource storage mod
 
 Create a new [`MTLBuffer`](mtlbuffer.md) with the [`makeBuffer(length:options:)`](mtldevice/makebuffer(length:options:).md) method and set its storage mode in the method’s `options` parameter.
 
+**Swift**:
+
+```swift
+let bufferOptions = MTLResourceOptions.storageModePrivate
+let buffer = device.makeBuffer(length: 256,
+                               options: bufferOptions)
+```
+
+**Objective-C**:
+
+```objective-c
+MTLResourceOptions bufferOptions = MTLResourceStorageModePrivate;
+id <MTLBuffer> buffer = [_device newBufferWithLength:256
+                                             options:bufferOptions];
+```
+
 > **Note**:  The storage mode options in [`MTLResourceOptions`](mtlresourceoptions.md) are equivalent to the storage mode values in [`MTLStorageMode`](mtlstoragemode.md). When you create a new buffer, you can combine multiple resource options but you can set only one storage mode.
 
 ##### Set a Storage Mode for a Texture
 
 Create a new [`MTLTextureDescriptor`](mtltexturedescriptor.md) and set its storage mode in the descriptor’s [`storageMode`](mtlresource/storagemode.md) property. Then create a new [`MTLTexture`](mtltexture.md) with the [`makeTexture(descriptor:)`](mtldevice/maketexture(descriptor:).md) method.
+
+**Swift**:
+
+```swift
+let textureDescriptor = MTLTextureDescriptor.texture2DDescriptor(pixelFormat: .bgra8Unorm,
+                                                                 width: 256,
+                                                                 height: 256,
+                                                                 mipmapped: true)
+textureDescriptor.storageMode = .private
+let texture = device.makeTexture(descriptor: textureDescriptor)
+```
+
+**Objective-C**:
+
+```objective-c
+MTLTextureDescriptor *textureDescriptor = [MTLTextureDescriptor texture2DDescriptorWithPixelFormat:MTLPixelFormatBGRA8Unorm
+                                                                                             width:256
+                                                                                            height:256
+                                                                                         mipmapped:YES];
+textureDescriptor.storageMode = MTLStorageModePrivate;
+id <MTLTexture> texture = [_device newTextureWithDescriptor:textureDescriptor];
+```
 
 ## See Also
 

@@ -31,10 +31,10 @@ If the system throws an exception during this function, it always calls the `byt
 
 - `ctx`: The execution context to use.
 - `bytes`: A pointer to the byte buffer to use as the backing store of the typed array object.
-- `byteLength`: The number of bytes that   points to.
+- `byteLength`: The number of bytes that `bytes` points to.
 - `bytesDeallocator`: The allocator to use to deallocate the external buffer when deallocating the typed array object.
 - `deallocatorContext`: A pointer to pass back to the deallocator.
-- `exception`: A pointer to a   to store an exception in, if any. Pass   to discard any exception.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 

@@ -35,7 +35,7 @@ You can place light probes in a scene and generate their lighting contributions 
 - [static let directional: SCNLight.LightType](scnlight/lighttype/directional.md)
   A light source with a uniform direction and constant intensity.
 - [static let omni: SCNLight.LightType](scnlight/lighttype/omni.md)
-  An omnidirectional light, also known as a .
+  An omnidirectional light, also known as a *point light*.
 - [static let spot: SCNLight.LightType](scnlight/lighttype/spot.md)
   A light source that illuminates a cone-shaped area.
 - [static let area: SCNLight.LightType](scnlight/lighttype/area.md)

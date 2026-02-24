@@ -41,8 +41,8 @@ This function is thread safe.
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
-- `domain`: The domain in which the CFNetService is to be registered; cannot be  . Call   and   to get the registration domain.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the current default allocator.
+- `domain`: The domain in which the CFNetService is to be registered; cannot be `NULL`. Call [`CFNetServiceBrowserCreate(_:_:_:)`](cfnetservicebrowsercreate(_:_:_:).md) and [`CFNetServiceBrowserSearchForDomains(_:_:_:)`](cfnetservicebrowsersearchfordomains(_:_:_:).md) to get the registration domain.
 - `name`: A unique name if the instance will be used to register a service. The name will become part of the instance name in the DNS records that will be created when the service is registered. If the instance will be used to resolve a service, the name should be the name of the machine or service that will be resolved.
 - `port`: Local IP port, in host byte order, on which this service accepts connections. Pass zero to get placeholder service. With a placeholder service, the service will not be discovered by browsing, but a name conflict will occur if another client tries to register the same name. Most applications do not need to use placeholder service.
 

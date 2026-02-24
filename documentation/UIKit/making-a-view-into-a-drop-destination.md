@@ -43,13 +43,13 @@ func dropInteraction(_ interaction: UIDropInteraction, canHandle session: UIDrop
 }
 ```
 
-This example assumes that your drop destination can consume only [`UIImage`](uiimage.md) objects. The method implementation tests for this type in the `return` statement. You can also use this method to refuse a drop session based on the state of your app. The  is a system-managed object that conforms to the [`UIDropSession`](uidropsession.md) protocol. You can access a drop session for information about the items being dropped.
+This example assumes that your drop destination can consume only [`UIImage`](uiimage.md) objects. The method implementation tests for this type in the `return` statement. You can also use this method to refuse a drop session based on the state of your app. The *drop session* is a system-managed object that conforms to the [`UIDropSession`](uidropsession.md) protocol. You can access a drop session for information about the items being dropped.
 
-The [`dropInteraction(_:canHandle:)`](uidropinteractiondelegate/dropinteraction(_:canhandle:).md) method is your app’s only chance to respond to the system’s question about whether your app will  accepting the items. For example, you might preemptively reject a drop session if it contains no data representations your app can consume, or if consuming dragged items is inappropriate given your app state. Your app’s definitive opportunity to accept or reject dropped items is in your implementation of the [`dropInteraction(_:sessionDidUpdate:)`](uidropinteractiondelegate/dropinteraction(_:sessiondidupdate:).md) protocol method.
+The [`dropInteraction(_:canHandle:)`](uidropinteractiondelegate/dropinteraction(_:canhandle:).md) method is your app’s only chance to respond to the system’s question about whether your app will *consider* accepting the items. For example, you might preemptively reject a drop session if it contains no data representations your app can consume, or if consuming dragged items is inappropriate given your app state. Your app’s definitive opportunity to accept or reject dropped items is in your implementation of the [`dropInteraction(_:sessionDidUpdate:)`](uidropinteractiondelegate/dropinteraction(_:sessiondidupdate:).md) protocol method.
 
 ##### Provide the Required Drop Proposal
 
-For a view to be eligible to accept the data from a drop session, you  implement the [`dropInteraction(_:sessionDidUpdate:)`](uidropinteractiondelegate/dropinteraction(_:sessiondidupdate:).md) protocol method. In your implementation, return a drop proposal—a [`UIDropProposal`](uidropproposal.md) object that specifies the drop operation type, a constant from the [`UIDropOperation`](uidropoperation.md) enumeration.
+For a view to be eligible to accept the data from a drop session, you *must* implement the [`dropInteraction(_:sessionDidUpdate:)`](uidropinteractiondelegate/dropinteraction(_:sessiondidupdate:).md) protocol method. In your implementation, return a drop proposal—a [`UIDropProposal`](uidropproposal.md) object that specifies the drop operation type, a constant from the [`UIDropOperation`](uidropoperation.md) enumeration.
 
 Provide a drop proposal like this:
 
@@ -80,7 +80,7 @@ func dropInteraction(_ interaction: UIDropInteraction, performDrop session: UIDr
 }
 ```
 
-The [`dropInteraction(_:performDrop:)`](uidropinteractiondelegate/dropinteraction(_:performdrop:).md) method is a destination app’s only opportunity to request representations of drag items. Receiving the items is potentially time-consuming and proceeds asynchronously.  wait within this method to receive items; instead, return from this method quickly.
+The [`dropInteraction(_:performDrop:)`](uidropinteractiondelegate/dropinteraction(_:performdrop:).md) method is a destination app’s only opportunity to request representations of drag items. Receiving the items is potentially time-consuming and proceeds asynchronously. *Don’t* wait within this method to receive items; instead, return from this method quickly.
 
 > **Note**:  If you don’t employ the [`loadObjects(ofClass:completion:)`](uidropsession/loadobjects(ofclass:completion:).md) convenience method as shown above, which automatically employs the main thread, explicitly dispatch UI work to the main thread. For example, you can use the `DispatchQueue.main.async` function.
 
@@ -95,7 +95,7 @@ The figure above depicts the steps for consuming a drag item, in context:
 1. The user moves their finger onscreen so the touch point of a drag session is within a configured view in your app. The system instantiates a drop session (an object that conforms to the [`UIDropSession`](uidropsession.md) protocol, not shown in the figure) for managing the drop activity.
 2. The system calls the drop interaction delegate’s [`dropInteraction(_:canHandle:)`](uidropinteractiondelegate/dropinteraction(_:canhandle:).md) protocol method. Check whether your app can, and opts to, consume the drag items.
 3. The system calls the delegate’s [`dropInteraction(_:sessionDidEnter:)`](uidropinteractiondelegate/dropinteraction(_:sessiondidenter:).md) protocol method. Prepare to consume the drag items.
-4. The system calls the delegate’s [`dropInteraction(_:sessionDidUpdate:)`](uidropinteractiondelegate/dropinteraction(_:sessiondidupdate:).md) protocol method. Your implementation  return a [`UIDropProposal`](uidropproposal.md) object, or the system ends the session.
+4. The system calls the delegate’s [`dropInteraction(_:sessionDidUpdate:)`](uidropinteractiondelegate/dropinteraction(_:sessiondidupdate:).md) protocol method. Your implementation *must* return a [`UIDropProposal`](uidropproposal.md) object, or the system ends the session.
 5. If the user confirms their intent to complete the drop, the system calls the delegate’s asynchronous [`dropInteraction(_:performDrop:)`](uidropinteractiondelegate/dropinteraction(_:performdrop:).md) protocol method. This is a destination app’s only opportunity to request representations of drag items.
 
 ## See Also

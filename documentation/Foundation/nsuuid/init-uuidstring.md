@@ -26,7 +26,7 @@ A new UUID object. Returns `nil` for invalid strings.
 
 ## Parameters
 
-- `string`: The source string containing the UUID. The standard format for UUIDs represented in ASCII is a string punctuated by hyphens, for example  .
+- `string`: The source string containing the UUID. The standard format for UUIDs represented in ASCII is a string punctuated by hyphens, for example `68753A44-4D6F-1226-9C60-0050E4C00067`.
 
 ## See Also
 

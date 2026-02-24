@@ -35,8 +35,8 @@ For more information about initializing Game Center with a local player, see [`A
 
 ## Parameters
 
-- `viewController`: A view controller that your game presents to the local player so they can perform any necessary actions to finish initialization, or   if the initialization process is complete.
-- `error`: Describes an error if it occurs, or   if the operation completes.
+- `viewController`: A view controller that your game presents to the local player so they can perform any necessary actions to finish initialization, or `nil` if the initialization process is complete.
+- `error`: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

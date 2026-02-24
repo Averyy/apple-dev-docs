@@ -30,7 +30,7 @@ If `key` does not start with “`@`”, invokes [`object(forKey:)`](nsdictionary
 
 ## Parameters
 
-- `key`: The key for which to return the corresponding value. Note that when using key-value coding, the key must be a string (see  ).
+- `key`: The key for which to return the corresponding value. Note that when using key-value coding, the key must be a string (see [`Accessing Object Properties`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/BasicPrinciples.html#//apple_ref/doc/uid/20002170)).
 
 ## See Also
 

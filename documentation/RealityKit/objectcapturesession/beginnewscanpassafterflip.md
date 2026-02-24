@@ -22,7 +22,7 @@ After capturing one side of an object, the session can be paused and the user ca
 
 All captured  images are written to the same output directories and the reconstruction process in [`PhotogrammetrySession`](photogrammetrysession.md) will stitch these multiple captures together automatically.
 
-Note: [`beginNewScanPassAfterFlip()`](objectcapturesession/beginnewscanpassafterflip().md) should be called  the object flipped for best results.
+Note: [`beginNewScanPassAfterFlip()`](objectcapturesession/beginnewscanpassafterflip().md) should be called *after* the object flipped for best results.
 
 See also [`beginNewScanPass()`](objectcapturesession/beginnewscanpass().md) for the case where the object was not flipped but another capture circle at a different height will be performed on the same side instead.
 

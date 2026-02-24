@@ -25,7 +25,7 @@ Call this method when you are ready to submit multiple packets to a completion q
 ## Parameters
 
 - `packets`: An array of network packets you want to add to the queue.
-- `packetCount`: The number of network packets in the   parameter.
+- `packetCount`: The number of network packets in the `packets` parameter.
 
 ## See Also
 

@@ -23,8 +23,8 @@ init(pin0: GeometricPin, pin1: GeometricPin, distanceLimit: ClosedRange<Float>, 
 
 - `pin0`: The local position and orientation on the first entity.
 - `pin1`: The local position and orientation on the second entity.
-- `distanceLimit`: Specifies the minimum and maximum allowed   distance between the two pins.
-- `checksForInternalCollisions`: A Boolean that indicates whether the joint   checks for collisions between the two   instances.
+- `distanceLimit`: Specifies the minimum and maximum allowed distance between the two pins.
+- `checksForInternalCollisions`: A Boolean that indicates whether the joint checks for collisions between the two [`Entity`](entity.md) instances.
 
 
 ---

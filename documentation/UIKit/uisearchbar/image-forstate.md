@@ -25,7 +25,7 @@ The image used for the search bar icon identified by `icon` in the state identif
 ## Parameters
 
 - `icon`: An icon identifier constant.
-- `state`: Valid states are   and  .
+- `state`: A control state. Valid states are [`normal`](uicontrol/state-swift.struct/normal.md) and [`disabled`](uicontrol/state-swift.struct/disabled.md).
 
 ## See Also
 

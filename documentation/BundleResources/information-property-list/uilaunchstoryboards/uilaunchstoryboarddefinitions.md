@@ -9,6 +9,10 @@ An array of dictionaries mapping launch storyboard identifiers to storyboards.
 - iOS 9.0+
 - iPadOS 9.0+
 
+
+
+**Type**: dictionary 
+
 #### Discussion
 
 Each dictionary has [`UILaunchStoryboardFile`](information-property-list/uilaunchstoryboards/uilaunchstoryboarddefinitions/uilaunchstoryboardfile.md) and [`UILaunchStoryboardIdentifier`](information-property-list/uilaunchstoryboards/uilaunchstoryboarddefinitions/uilaunchstoryboardidentifier.md) keys, associating a storyboard file or xib with an identifier.

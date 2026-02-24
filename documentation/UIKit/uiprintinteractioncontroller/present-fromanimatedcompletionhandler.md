@@ -25,9 +25,9 @@ If you call this method when the printing options are already displayed, `UIPrin
 
 ## Parameters
 
-- `item`: The   object that the user tapped for printing. You are encouraged to use the constant   when creating a bar-button item for this purpose.
-- `animated`:   to animate the printing popover view from  ,   to display it immediately.
-- `completion`: A block of type   that you implement to handle the conclusion of the print job (for instance, to reset state) and to handle any errors encountered in printing.
+- `item`: The [`UIBarButtonItem`](uibarbuttonitem.md) object that the user tapped for printing. You are encouraged to use the constant [`UIBarButtonItem.SystemItem.action`](uibarbuttonitem/systemitem/action.md) when creating a bar-button item for this purpose.
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the printing popover view from `item`, [`false`](https://developer.apple.com/documentation/Swift/false) to display it immediately.
+- `completion`: A block of type [`UIPrintInteractionController.CompletionHandler`](uiprintinteractioncontroller/completionhandler.md) that you implement to handle the conclusion of the print job (for instance, to reset state) and to handle any errors encountered in printing.
 
 ## See Also
 

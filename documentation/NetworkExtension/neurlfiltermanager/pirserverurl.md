@@ -21,7 +21,7 @@ var pirServerURL: URL? { get }
 
 Have your URL filter app implementation set up a PIR server, which hosts a URL dataset, that’s reachable at this URL. When making an HTTP request with any of the system networking frameworks, NetworkExtension validates the URL with the specified PIR server before sending the request.
 
-To use the PIR server for URL filtering, make sure the server contains a PIR use case with the name format “.url.filtering” where  is the bundle identifier of your URL filter app.
+To use the PIR server for URL filtering, make sure the server contains a PIR use case with the name format “*bundleidentifier*.url.filtering” where *bundleidentifier* is the bundle identifier of your URL filter app.
 
 ## See Also
 

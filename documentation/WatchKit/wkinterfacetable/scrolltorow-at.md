@@ -16,7 +16,7 @@ func scrollToRow(at index: Int)
 
 ## Parameters
 
-- `index`: The index of the row to be displayed. Specifying an index less than   scrolls to the top of the list. Specifying an index greater than the total number of row controllers scrolls to the bottom of the list.
+- `index`: The index of the row to be displayed. Specifying an index less than `0` scrolls to the top of the list. Specifying an index greater than the total number of row controllers scrolls to the bottom of the list.
 
 ## See Also
 

@@ -17,7 +17,7 @@ init(tableView: NSTableView, cellProvider: @escaping NSTableViewDiffableDataSour
 ## Parameters
 
 - `tableView`: The initialized table view object to connect to the diffable data source.
-- `cellProvider`: A closure that creates and returns each of the cells for the table view from the data the diffable data source provides. This replaces the   delegate method.
+- `cellProvider`: A closure that creates and returns each of the cells for the table view from the data the diffable data source provides. This replaces the [`tableView(_:viewFor:row:)`](nstableviewdelegate/tableview(_:viewfor:row:).md) delegate method.
 
 ## See Also
 

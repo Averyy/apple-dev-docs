@@ -29,7 +29,7 @@ This method estimates which player has the best network connection using a varie
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameter: - **`player`**: The player with the best estimated network performance, or `nil` if GameKit couldn’t determine the best host.
 
 ## See Also
 

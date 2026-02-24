@@ -31,8 +31,8 @@ You can alter this command’s behavior through the `granularity` parameter.
 
 ## Parameters
 
-- `granularity`:   hint to Metal about acceptable the level of precision.
-- `counterHeap`:   to write timestamps into.
+- `granularity`: [`MTL4TimestampGranularity`](mtl4timestampgranularity.md) hint to Metal about acceptable the level of precision.
+- `counterHeap`: [`MTL4CounterHeap`](mtl4counterheap.md) to write timestamps into.
 - `index`: The index value into which Metal writes the timestamp.
 
 

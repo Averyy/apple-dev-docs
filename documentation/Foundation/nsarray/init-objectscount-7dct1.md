@@ -41,7 +41,7 @@ NSArray *stringsArray = [NSArray arrayWithObjects:strings count:2];
 ## Parameters
 
 - `objects`: A C array of objects.
-- `cnt`: The number of values from the   C array to include in the new array. This number will be the count of the new array—it must not be negative or greater than the number of elements in  .
+- `cnt`: The number of values from the `objects` C array to include in the new array. This number will be the count of the new array—it must not be negative or greater than the number of elements in `objects`.
 
 ## See Also
 

@@ -21,6 +21,11 @@ object RemoveMediaCommand
 - [object RemoveMediaCommand.Command](removemediacommand/command-data.dictionary.md)
   The command to remove a previously installed book from a device.
 
+## Properties
+
+- `Command` (RemoveMediaCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object RemoveMediaResponse](removemediaresponse.md)

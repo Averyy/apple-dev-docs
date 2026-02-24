@@ -27,7 +27,7 @@ Typically, this method is called only after you call the [`registerForRemoteNoti
 ## Parameters
 
 - `application`: The app object that initiated the remote-notification registration process.
-- `deviceToken`: APNs device tokens are of variable length. Do not hard-code their size.
+- `deviceToken`: A globally unique token that identifies this device to APNs. Send this token to the server that you use to generate remote notifications. Your server must pass this token unmodified back to APNs when sending those remote notifications. APNs device tokens are of variable length. Do not hard-code their size.
 
 ## See Also
 

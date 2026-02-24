@@ -36,6 +36,10 @@ object StatusAccountListMailIncoming
 - [object StatusAccountListMailIncomingAccountObject](statusaccountlistmailincomingaccountobject.md)
   A status report of the client’s incoming Mail account details.
 
+## Properties
+
+- `account.list.mail.incoming` ([StatusAccountListMailIncomingAccountObject]) *(required)*: A list of status values for the incoming Mail accounts.
+
 ## See Also
 
 - [object StatusAccountListCalDAV](statusaccountlistcaldav.md)

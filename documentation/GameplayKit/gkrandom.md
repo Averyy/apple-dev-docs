@@ -63,7 +63,7 @@ For more information on choosing and using randomizers in GameplayKit, read [`Ra
 - [class GKRandomDistribution](gkrandomdistribution.md)
   A generator for random numbers that fall within a specific range and that exhibit a specific distribution over multiple samplings.
 - [class GKGaussianDistribution](gkgaussiandistribution.md)
-  A generator for random numbers that follow a  (also known as a ) across multiple samplings.
+  A generator for random numbers that follow a *Gaussian distribution* (also known as a *normal distribution*) across multiple samplings.
 - [class GKShuffledDistribution](gkshuffleddistribution.md)
   A generator for random numbers that are uniformly distributed across many samplings, but where short sequences of similar values are unlikely.
 

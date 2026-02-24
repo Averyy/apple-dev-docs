@@ -26,7 +26,7 @@ This function must be called by the owning thread..
 
 - `vcpu`: The instance of the vCPU.
 - `msr`: The ID of the MSR.
-- `enable`: A Boolean value that if   indicates that the guest uses the specified MSR natively.
+- `enable`: A Boolean value that if `true` indicates that the guest uses the specified MSR natively.
 
 ## See Also
 

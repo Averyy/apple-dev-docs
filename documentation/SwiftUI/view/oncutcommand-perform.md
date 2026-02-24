@@ -21,7 +21,7 @@ A view that triggers `action` when a system Cut command occurs.
 
 ## Parameters
 
-- `payloadAction`: An action closure that should delete the selected   data and return    items   corresponding to that data, which should be written to the   Clipboard. If   is  , the Cut command is considered   disabled.
+- `payloadAction`: An action closure that should delete the selected data and return [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) items corresponding to that data, which should be written to the Clipboard. If `action` is `nil`, the Cut command is considered disabled.
 
 ## See Also
 

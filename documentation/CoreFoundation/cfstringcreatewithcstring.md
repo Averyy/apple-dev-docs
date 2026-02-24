@@ -30,8 +30,8 @@ A C string is a string of 8-bit characters terminated with an 8-bit `NULL`. Unic
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new string. Pass   or   to use the current default allocator.
-- `cStr`: The  -terminated C string to be used to create the CFString object. The string must use an 8-bit encoding.
+- `alloc`: The allocator to use to allocate memory for the new string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `cStr`: The `NULL`-terminated C string to be used to create the CFString object. The string must use an 8-bit encoding.
 - `encoding`: The encoding of the characters in the C string. The encoding must specify an 8-bit encoding.
 
 ## See Also

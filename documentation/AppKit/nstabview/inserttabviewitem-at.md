@@ -21,7 +21,7 @@ If there is a delegate and the delegate supports it, sends the delegate the [`ta
 ## Parameters
 
 - `tabViewItem`: The tab view item to be added.
-- `index`: The index at which to insert the tab view item. The   parameter is zero-based.
+- `index`: The index at which to insert the tab view item. The `index` parameter is zero-based.
 
 ## See Also
 

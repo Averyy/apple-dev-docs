@@ -32,7 +32,7 @@ markerOnlySampleBuffer.withUnsafeSampleBuffer { sbuf in
 
 ## Parameters
 
-- `markerTime`: Timestamp at which the marker sample buffer should be considered. Pass    if the marker buffer does not carry timing information.
+- `markerTime`: Timestamp at which the marker sample buffer should be considered. Pass [`invalid`](cmtime/invalid.md) if the marker buffer does not carry timing information.
 - `duration`: Duration of the marker sample buffer.
 
 

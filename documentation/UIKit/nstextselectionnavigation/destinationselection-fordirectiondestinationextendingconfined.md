@@ -29,8 +29,8 @@ If `confined` is `true`, confine any movement to the text element that the selec
 ## Parameters
 
 - `textSelection`: The source selection.
-- `direction`: One of the available   directions.
-- `destination`: One of the available   destinations.
+- `direction`: One of the available [`NSTextSelectionNavigation.Direction`](nstextselectionnavigation/direction.md) directions.
+- `destination`: One of the available [`NSTextSelectionNavigation.Destination`](nstextselectionnavigation/destination.md) destinations.
 - `extending`: Whether this selection extends an existing selection.
 - `confined`: Whether to confine movement to the existing selection.
 

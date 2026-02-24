@@ -24,7 +24,7 @@ If successful, changing the available formats sends a notification to the host t
 
 ## Parameters
 
-- `in_terminal_type`: The   to set.
+- `in_terminal_type`: The [`IOUserAudioStreamTerminalType`](audiodriverkit/iouseraudiostreamterminaltype.md) to set.
 
 ## See Also
 

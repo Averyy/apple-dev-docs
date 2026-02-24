@@ -9,6 +9,12 @@ A Boolean value that indicates whether an app can be the default dialer app on s
 - iOS 26.0+
 - iPadOS 26.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 Add the Default Dialer App entitlement by following these steps:

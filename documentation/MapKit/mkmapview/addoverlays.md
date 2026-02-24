@@ -27,7 +27,7 @@ To remove multiple overlays from a map, use the [`removeOverlays(_:)`](mkmapview
 
 ## Parameters
 
-- `overlays`: An array of objects, each of which needs to conform to the   protocol.
+- `overlays`: An array of objects, each of which needs to conform to the [`MKOverlay`](mkoverlay.md) protocol.
 
 ## See Also
 

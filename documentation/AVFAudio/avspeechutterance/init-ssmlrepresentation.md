@@ -30,7 +30,7 @@ If no voice matches the properties, the utterance uses the voice set in its [`vo
 
 ## Parameters
 
-- `string`: A string to speak that contains valid SSML markup. The initializer returns   if you pass an invalid SSML string.
+- `string`: A string to speak that contains valid SSML markup. The initializer returns `nil` if you pass an invalid SSML string.
 
 ## See Also
 

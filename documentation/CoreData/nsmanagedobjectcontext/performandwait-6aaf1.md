@@ -23,7 +23,7 @@ nonisolated func performAndWait<T>(_ block: @Sendable () throws -> T) rethrows -
 
 #### Discussion
 
-This method supports  — meaning it’s safe to call the method again, from within the closure, before the previous invocation completes.
+This method supports *reentrancy* — meaning it’s safe to call the method again, from within the closure, before the previous invocation completes.
 
 ## Parameters
 

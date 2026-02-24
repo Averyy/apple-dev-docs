@@ -27,8 +27,8 @@ The lowest index of the matching values in the range, or `-1` if no value in the
 ## Parameters
 
 - `theArray`: The array to examine.
-- `range`: The range within   to search. The range must lie within the bounds of   . The range may be empty (length  ). The search progresses from the lowest index defined by the range to the highest.
-- `value`: The value for which to find a match in  . The equal callback provided when   was created is used to compare. If the equal callback was  , pointer equality (in C, ==) is used. If  , or any other value in  , is not understood by the equal callback, the behavior is undefined.
+- `range`: The range within `theArray` to search. The range must lie within the bounds of  `theArray`. The range may be empty (length `0`). The search progresses from the lowest index defined by the range to the highest.
+- `value`: The value for which to find a match in `theArray`. The equal callback provided when `theArray` was created is used to compare. If the equal callback was `NULL`, pointer equality (in C, ==) is used. If `value`, or any other value in `theArray`, is not understood by the equal callback, the behavior is undefined.
 
 ## See Also
 

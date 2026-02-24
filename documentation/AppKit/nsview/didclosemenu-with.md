@@ -21,7 +21,7 @@ This method is called only if the contextual menu had been opened and the view h
 ## Parameters
 
 - `menu`: The menu that was closed.
-- `event`: The event that caused the menu to close, if there was one. If an event did not cause the menu to close, this value is  .
+- `event`: The event that caused the menu to close, if there was one. If an event did not cause the menu to close, this value is `nil`.
 
 ## See Also
 

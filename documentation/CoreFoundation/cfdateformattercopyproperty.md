@@ -27,7 +27,7 @@ A CFType object that is a copy of the property value for `key`, or `NULL` if the
 ## Parameters
 
 - `formatter`: The date formatter to examine.
-- `key`: The property key for the value to obtain. See   for a description of possible values for this parameter.
+- `key`: The property key for the value to obtain. See [`Date Formatter Property Keys`](date-formatter-property-keys.md) for a description of possible values for this parameter.
 
 ## See Also
 

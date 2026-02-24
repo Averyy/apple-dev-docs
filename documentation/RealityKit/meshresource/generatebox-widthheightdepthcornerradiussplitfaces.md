@@ -31,8 +31,8 @@ The method centers the box at the entity’s origin and aligns the box’s faces
 - `width`: The length of the box’s width, in meters, along the x-axis.
 - `height`: The length of the box’s height, in meters, along the y-axis.
 - `depth`: The length of the box’s depth, in meters, along the z-axis.
-- `cornerRadius`: The radius of each corner’s circular arc, in meters.   Values for   can be, at most, equal to the smallest   value of the  ,  , and   parameters.   For example, if the box’s dimensions are   x   x  ,   the corner radius needs to be in the range  .
-- `splitFaces`: A Boolean value that indicates whether you can assign up   to six separate materials, one for each face. If  , you can only   assign one material for all six faces.
+- `cornerRadius`: The radius of each corner’s circular arc, in meters. Values for `cornerRadius` can be, at most, equal to the smallest value of the `width`, `height`, and `depth` parameters. For example, if the box’s dimensions are `3.0` x `4.0` x `5.0`, the corner radius needs to be in the range `[0.0, 1.5]`.
+- `splitFaces`: A Boolean value that indicates whether you can assign up to six separate materials, one for each face. If `false`, you can only assign one material for all six faces.
 
 ## See Also
 

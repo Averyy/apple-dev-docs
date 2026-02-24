@@ -28,7 +28,7 @@ If the data source already contains keypoints, this method just renames the data
 
 ## Parameters
 
-- `targetFrameRate`: The number of frames per second the method uses to extract body landmarks from the   data source.
+- `targetFrameRate`: The number of frames per second the method uses to extract body landmarks from the data source.
 
 ## See Also
 

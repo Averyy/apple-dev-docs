@@ -30,7 +30,7 @@ Each command queue can maintain a list of up to 32 different residency sets. See
 
 ## Parameters
 
-- `residencySet`: A residency set that contains resource allocations, such as  ,  , and   instances.
+- `residencySet`: A residency set that contains resource allocations, such as [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), and [`MTLHeap`](mtlheap.md) instances.
 
 ## See Also
 

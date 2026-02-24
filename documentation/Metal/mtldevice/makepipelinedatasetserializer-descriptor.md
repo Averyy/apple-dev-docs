@@ -26,7 +26,7 @@ A [`MTL4PipelineDataSetSerializer`](mtl4pipelinedatasetserializer.md) instance, 
 
 ## Parameters
 
-- `descriptor`: A   instance that configures   the new   instance.
+- `descriptor`: A [`MTL4PipelineDataSetSerializerDescriptor`](mtl4pipelinedatasetserializerdescriptor.md) instance that configures the new [`MTL4PipelineDataSetSerializer`](mtl4pipelinedatasetserializer.md) instance.
 
 
 ---

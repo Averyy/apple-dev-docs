@@ -20,9 +20,9 @@ It is your responsibility to ensure that each item in the array is a child of th
 
 ## Parameters
 
-- `criteria`: The array of criteria for the row at  . Pass an empty array to force the receiver to query its delegate. This value must not be  .
-- `values`: The array of values for the row at  . Pass an empty array to force the receiver to query its delegate. This value must not be  .
-- `rowIndex`: The index of a row in the receiver.
+- `criteria`: The array of criteria for the row at `rowIndex`. Pass an empty array to force the receiver to query its delegate. This value must not be `nil`. > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `criteria` is `nil`.
+- `values`: The array of values for the row at `rowIndex`. Pass an empty array to force the receiver to query its delegate. This value must not be `nil`. > ❗ **Important**:  Raises an `NSInvalidArgumentException` if `values` is `nil`.
+- `rowIndex`: The index of a row in the receiver. > ❗ **Important**:  Raises an `NSRangeException` if `rowIndex` is equal to or larger than the number of rows, or less than `0`.
 
 ## See Also
 

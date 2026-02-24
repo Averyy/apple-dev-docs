@@ -101,6 +101,10 @@ Support older operating systems and other platforms by adding a [`fallbackURL`](
 {startActivityURL}?a={activityIdentifier}&c={partyCode}
 ```
 
+- **`startActivityURL`**: A URL that you provide and host.
+- **`activityIdentifier`**: The value you specify in your activity definition.
+- **`partyCode`**: A party code you use for matchmaking.
+
 To learn more about universal links, see [`Supporting universal links in your app`](https://developer.apple.com/documentation/Xcode/supporting-universal-links-in-your-app).
 
 #### Start a Game Activity Life Cycle

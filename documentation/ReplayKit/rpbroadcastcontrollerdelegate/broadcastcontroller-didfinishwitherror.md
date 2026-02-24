@@ -26,7 +26,7 @@ Use the returned error to inform the user why the broadcast failed and provide a
 ## Parameters
 
 - `broadcastController`: The current controller instance.
-- `error`: An   error indicating why the broadcast finished.
+- `error`: An [`RPRecordingErrorCode`](rprecordingerrorcode.md) error indicating why the broadcast finished.
 
 
 ---

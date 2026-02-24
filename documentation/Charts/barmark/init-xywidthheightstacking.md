@@ -40,9 +40,9 @@ Chart(data) {
 
 - `x`: The value plotted with x.
 - `y`: The value plotted with y.
-- `width`: The bar width. If   is  , the default bar size will be applied.
-- `height`: The bar height. If   is  , the default bar size will be applied.
-- `stacking`: The stacking method for the bars with the same categorical/date values.   If   is  , the bars will not be stacked.
+- `width`: The bar width. If `width` is `nil`, the default bar size will be applied.
+- `height`: The bar height. If `height` is `nil`, the default bar size will be applied.
+- `stacking`: The stacking method for the bars with the same categorical/date values. If `stacking` is `nil`, the bars will not be stacked.
 
 ## See Also
 

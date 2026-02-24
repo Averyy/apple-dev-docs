@@ -24,8 +24,8 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `out_sample_rates`: A pointer to a buffer of type   whose size corresponds to  . After the call completes, this buffer contains the available sample rates.
-- `in_num_rates`: The number of rates in the   buffer.
+- `out_sample_rates`: A pointer to a buffer of type `double` whose size corresponds to `in_num_rates`. After the call completes, this buffer contains the available sample rates.
+- `in_num_rates`: The number of rates in the `out_sample_rates` buffer.
 
 ## See Also
 

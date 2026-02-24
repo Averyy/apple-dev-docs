@@ -26,8 +26,8 @@ After the nib file has been loaded, the `NSNib` object uses the bundle’s resou
 
 ## Parameters
 
-- `nibName`: The name of the nib file, without any leading path information. Inclusion of the   extension on the nib file name is optional.
-- `bundle`: The bundle in which to search for the nib file. If you specify  , this method looks for the nib file in the main bundle.
+- `nibName`: The name of the nib file, without any leading path information. Inclusion of the `.nib` extension on the nib file name is optional.
+- `bundle`: The bundle in which to search for the nib file. If you specify `nil`, this method looks for the nib file in the main bundle.
 
 ## See Also
 

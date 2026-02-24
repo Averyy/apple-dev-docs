@@ -70,7 +70,7 @@ For guidance with choosing the most accurate and effective categories, see [`Cho
 
 ##### Set the Version Number and Build String
 
-The version number ([`CFBundleShortVersionString`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleShortVersionString)) and build string ([`CFBundleVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleVersion)) uniquely identify the build of your app throughout the system. The version number appears in the App Store. For apps distributed through TestFlight or the App Store, the Xcode Organizer displays crashes and field reports for each build of an app version. For macOS apps, the version number and build string can also appear in the About window, see [`credits`](https://developer.apple.com/documentation/AppKit/NSApplication/AboutPanelOptionKey/credits). The version number and build string are expected to be in the format [Major].[Minor].[Patch] where  is a maintenance release, as in 10.14.1. Both keys are required by the App Store. For macOS apps, you must increment the build string before you distribute a new build.
+The version number ([`CFBundleShortVersionString`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleShortVersionString)) and build string ([`CFBundleVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleVersion)) uniquely identify the build of your app throughout the system. The version number appears in the App Store. For apps distributed through TestFlight or the App Store, the Xcode Organizer displays crashes and field reports for each build of an app version. For macOS apps, the version number and build string can also appear in the About window, see [`credits`](https://developer.apple.com/documentation/AppKit/NSApplication/AboutPanelOptionKey/credits). The version number and build string are expected to be in the format [Major].[Minor].[Patch] where *Patch* is a maintenance release, as in 10.14.1. Both keys are required by the App Store. For macOS apps, you must increment the build string before you distribute a new build.
 
 Increment the version number when you create a new version of your app. For more information, see [`Create a new app version`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/update-your-app/create-a-new-version) in App Store Connect.
 
@@ -98,7 +98,7 @@ For app icon design guidance, see [`Human Interface Guidelines > Foundations > A
 
 ##### Provide a Launch Screen
 
-A , is a user interface file that appears immediately when your app launches, then is quickly replaced with your app’s first screen. For apps and platforms that use them, the launch screen simply enhances the user experience by providing something for people to view while your app launches.
+A *launch screen*, is a user interface file that appears immediately when your app launches, then is quickly replaced with your app’s first screen. For apps and platforms that use them, the launch screen simply enhances the user experience by providing something for people to view while your app launches.
 
 Edit the `LaunchScreen.storyboard` file, which is included in your Xcode project when you create it from a template. Otherwise, you can add a launch screen file to an existing project, see [`Managing files and folders in your Xcode project`](managing-files-and-folders-in-your-xcode-project.md).
 
@@ -106,7 +106,7 @@ For information about designing a launch screen, read [`Launching`](https://deve
 
 ##### Provide Usage Descriptions to Access Protected Resources
 
-The first time your app attempts to access a protected resource, the system prompts for permission. It then generates a dialog that includes the name of your app and a  that you provide. For example, the usage description for accessing location data might be “Your location is used to provide turn-by-turn directions to your destination.” If you grant permission, the system remembers and doesn’t prompt again for that resource. If you deny permission, the access to that resource and any further attempts fail.
+The first time your app attempts to access a protected resource, the system prompts for permission. It then generates a dialog that includes the name of your app and a *usage description* that you provide. For example, the usage description for accessing location data might be “Your location is used to provide turn-by-turn directions to your destination.” If you grant permission, the system remembers and doesn’t prompt again for that resource. If you deny permission, the access to that resource and any further attempts fail.
 
 You must provide usage descriptions in the [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) for all protected resources your app accesses, such as a person‘s location, calendar, reminders, and contacts. Also provide usage descriptions for accessories, such as the camera and microphone.
 

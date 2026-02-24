@@ -62,9 +62,9 @@ Shell scripts have access to the current target’s build settings and the input
 | `SCRIPT_INPUT_FILE` | The absolute path of the file to process. |
 | `OTHER_INPUT_FILE_FLAGS` | Additional command-line flags you assigned to the file in the Compile Sources build phase. |
 | `SCRIPT_INPUT_FILE_COUNT` | The number of paths in the Input Files section of your build rule. |
-| `SCRIPT_INPUT_FILE_` | The absolute path to one of the files in the Input Files section of your build rule. Xcode creates an environment variable for each file, starting with `SCRIPT_INPUT_FILE_0` and increasing the number value sequentially for each subsequent file in the list. |
+| `SCRIPT_INPUT_FILE_`*n* | The absolute path to one of the files in the Input Files section of your build rule. Xcode creates an environment variable for each file, starting with `SCRIPT_INPUT_FILE_0` and increasing the number value sequentially for each subsequent file in the list. |
 | `SCRIPT_OUTPUT_FILE_COUNT` | The number of paths in the Output Files section of your build rule. |
-| `SCRIPT_OUTPUT_FILE_` | The absolute path to one of the files in the Output Files section of your build rule. Xcode creates an environment variable for each file, starting with `SCRIPT_OUTPUT_FILE_0` and increasing the number value sequentially for each subsequent file in the list. |
+| `SCRIPT_OUTPUT_FILE_`*n* | The absolute path to one of the files in the Output Files section of your build rule. Xcode creates an environment variable for each file, starting with `SCRIPT_OUTPUT_FILE_0` and increasing the number value sequentially for each subsequent file in the list. |
 | `SCRIPT_HEADER_VISIBILITY` | A string that indicates a header’s visibility. If the current file is in the public or private section of the target’s Headers build phase, this string contains the value `public` or `private` to indicate its location. |
 | `HEADER_OUTPUT_DIR` | The directory in which to copy header files. If the current file is in a Headers build phase, copy the file to the location in this environment variable. |
 

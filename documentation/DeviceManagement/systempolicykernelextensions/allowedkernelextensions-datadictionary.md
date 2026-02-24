@@ -14,6 +14,10 @@ The dictionary that represents a set of kernel extensions.
 object SystemPolicyKernelExtensions.AllowedKernelExtensions
 ```
 
+## Properties
+
+- `ANY` ([string]): The kernel extension data.
+
 
 ---
 

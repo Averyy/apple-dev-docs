@@ -26,8 +26,8 @@ The UTI array defines the type of documents that can be imported or opened. The 
 
 ## Parameters
 
-- `allowedUTIs`: An array of uniform type identifiers. UTIs are strings that uniquely identify a file’s type. For more information, see  .
-- `mode`: The type of file transfer operation the document picker performs. This argument accepts only the   or   mode.
+- `allowedUTIs`: An array of uniform type identifiers. UTIs are strings that uniquely identify a file’s type. For more information, see [`Uniform Type Identifiers Overview`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_intro/understand_utis_intro.html#//apple_ref/doc/uid/TP40001319).
+- `mode`: The type of file transfer operation the document picker performs. This argument accepts only the [`UIDocumentPickerMode.import`](uidocumentpickermode/import.md) or [`UIDocumentPickerMode.open`](uidocumentpickermode/open.md) mode.
 
 ## See Also
 

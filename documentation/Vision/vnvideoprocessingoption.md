@@ -25,7 +25,7 @@ struct VNVideoProcessingOption
 - [static let frameCadence: VNVideoProcessingOption](vnvideoprocessingoption/framecadence.md)
   A value that indicates the video frame cadence at which to perform the video processing.
 - [static let timeInterval: VNVideoProcessingOption](vnvideoprocessingoption/timeinterval.md)
-  A value that indicates that the video processor should perform a request every -seconds.
+  A value that indicates that the video processor should perform a request every *n*-seconds.
 ### Initializers
 - [init(rawValue: String)](vnvideoprocessingoption/init(rawvalue:).md)
   Creates an option with a string value.

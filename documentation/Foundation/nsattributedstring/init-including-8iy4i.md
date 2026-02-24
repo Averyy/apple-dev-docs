@@ -23,7 +23,7 @@ convenience init<S>(_ attrStr: AttributedString, including scope: KeyPath<Attrib
 ## Parameters
 
 - `attrStr`: The value-type attributed string that provides the text and attributes of the new object.
-- `scope`: A key path that identifies the attribute scope of the attributes in  . This can be a nested scope that contains several scopes.
+- `scope`: A key path that identifies the attribute scope of the attributes in `attrStr`. This can be a nested scope that contains several scopes.
 
 ## See Also
 

@@ -36,7 +36,7 @@ This macro generates the following convenient symbols that you can use when conf
 
 ## Parameters
 
-- `p`: The class and method name to which the method conforms. Specify this value using the format  . Specify the class and method names directly, and do not use a string.
+- `p`: The class and method name to which the method conforms. Specify this value using the format `<class>::<method>`. Specify the class and method names directly, and do not use a string.
 
 ## See Also
 

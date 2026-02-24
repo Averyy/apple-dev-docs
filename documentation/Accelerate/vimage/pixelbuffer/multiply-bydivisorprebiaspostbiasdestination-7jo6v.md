@@ -51,7 +51,7 @@ For example, the following code multiplies each pixel value in an 8-bit planar b
 ## Parameters
 
 - `factor`: The multiplication factor.
-- `divisor`: A value that the function divides the result by. The function treats   as  .
+- `divisor`: A value that the function divides the result by. The function treats `0` as `1`.
 - `preBias`: A value that the function adds to the source before multiplication.
 - `postBias`: A value that the function adds to the result after multiplication.
 - `destination`: The destination pixel buffer.

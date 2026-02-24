@@ -20,7 +20,7 @@ This method changes the poster image that is displayed for the movie.
 
 ## Parameters
 
-- `posterImage`: The image to be displayed. Specifying   removes the existing image, causing the watch interface to display nothing in the space previously occupied by the image.
+- `posterImage`: The image to be displayed. Specifying `nil` removes the existing image, causing the watch interface to display nothing in the space previously occupied by the image.
 
 ## See Also
 

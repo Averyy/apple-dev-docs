@@ -22,7 +22,7 @@ let kCISamplerWrapMode: String
 ## See Also
 
 - [let kCISamplerAffineMatrix: String](kcisampleraffinematrix.md)
-  The key for an affine matrix. The associated value is an `NSArray` object ([]) that defines the transformation to apply to the sampler.
+  The key for an affine matrix. The associated value is an `NSArray` object ([*a b c d tx ty*]) that defines the transformation to apply to the sampler.
 - [let kCISamplerFilterMode: String](kcisamplerfiltermode.md)
   The key for the filtering to use when sampling the image. Possible values are [`kCISamplerFilterNearest`](kcisamplerfilternearest.md) and [`kCISamplerFilterLinear`](kcisamplerfilterlinear.md).
 - [let kCISamplerColorSpace: String](kcisamplercolorspace.md)

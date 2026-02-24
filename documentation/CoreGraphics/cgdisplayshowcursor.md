@@ -25,7 +25,7 @@ If the hide cursor count is `0`, this function shows the cursor regardless of it
 
 ## Parameters
 
-- `display`: This parameter has no effect. By default, you can pass  .
+- `display`: This parameter has no effect. By default, you can pass `kCGDirectMainDisplay`.
 
 ## See Also
 

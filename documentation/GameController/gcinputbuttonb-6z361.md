@@ -22,7 +22,7 @@ var GCInputButtonB: String { get }
 ## See Also
 
 - [var buttonB: GCControllerButtonInput](gcextendedgamepad/buttonb.md)
-  The right face button that uses  or another indicator as its label.
+  The right face button that uses *B* or another indicator as its label.
 - [var GCInputButtonMenu: String](gcinputbuttonmenu-196mn.md)
   The name of the primary menu button element.
 - [var GCInputButtonHome: String](gcinputbuttonhome-7xxwm.md)

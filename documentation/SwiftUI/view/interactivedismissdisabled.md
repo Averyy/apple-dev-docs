@@ -71,7 +71,7 @@ The modifier has no effect on programmatic dismissal, which you can invoke by up
 
 ## Parameters
 
-- `isDisabled`: A Boolean value that indicates whether to   prevent nonprogrammatic dismissal of the containing view hierarchy   when presented in a sheet or popover.
+- `isDisabled`: A Boolean value that indicates whether to prevent nonprogrammatic dismissal of the containing view hierarchy when presented in a sheet or popover.
 
 ## See Also
 

@@ -22,7 +22,7 @@ To determine if a VM is in a state that allows you to stop it, check the VM’s 
 
 ## Parameters
 
-- `completionHandler`: A block called after the VM stopped successfully, or on error. The error parameter passed to the block is   if the stop was successful.
+- `completionHandler`: A block called after the VM stopped successfully, or on error. The error parameter passed to the block is `nil` if the stop was successful.
 
 ## See Also
 

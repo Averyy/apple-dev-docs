@@ -29,6 +29,10 @@ This method applies the image temperature and tint filter to an image. The effec
 
 The temperature and tint filter uses the following properties:
 
+- **`neutral`**: A `vector` containing the source white point as a [`CIVector`](civector.md).
+- **`targetNeutral`**: A vector containing the desired white point as a [`CIVector`](civector.md).
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds an orange hue to the input image:
 
 ```swift

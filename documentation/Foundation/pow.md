@@ -31,7 +31,7 @@ If the result of this operation requires more precision than the `Decimal` type 
 ## Parameters
 
 - `x`: A decimal value.
-- `y`: The power by which to raise  .
+- `y`: The power by which to raise `x`.
 
 
 ---

@@ -34,7 +34,7 @@ Rebinding an already bound buffer causes a Metal error.
 
 ## Parameters
 
-- `buffer`: The   instance to bind to the argument table.
+- `buffer`: The [`MTLBuffer`](mtlbuffer.md) instance to bind to the argument table.
 - `offset`: The number of bytes to skip in the buffer before the first element of data.
 - `index`: The index the buffer binds to in the argument table.
 

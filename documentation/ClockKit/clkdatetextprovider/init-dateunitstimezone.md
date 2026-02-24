@@ -24,9 +24,9 @@ Date values are formatted according to the user’s current locale information.
 
 ## Parameters
 
-- `date`: The date to display. This parameter must not be  .
-- `calendarUnits`: The units to include in the resulting date string. For a list of supported calendar units, see  .
-- `timeZone`: The time zone to use when formatting the date. If you specify  , the text provider uses the time zone currently associated with the user.
+- `date`: The date to display. This parameter must not be `nil`.
+- `calendarUnits`: The units to include in the resulting date string. For a list of supported calendar units, see [`Date Format Options`](clkdatetextprovider#Date-Format-Options.md).
+- `timeZone`: The time zone to use when formatting the date. If you specify `nil`, the text provider uses the time zone currently associated with the user.
 
 ## See Also
 

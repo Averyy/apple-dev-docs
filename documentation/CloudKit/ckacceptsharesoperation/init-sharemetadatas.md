@@ -26,7 +26,7 @@ After initializing the operation, assign a handler to the [`acceptSharesCompleti
 
 ## Parameters
 
-- `shareMetadatas`: The share metadatas to accept. If you specify  , you must assign a value to the   property before you execute the operation.
+- `shareMetadatas`: The share metadatas to accept. If you specify `nil`, you must assign a value to the [`shareMetadatas`](ckacceptsharesoperation/sharemetadatas.md) property before you execute the operation.
 
 ## See Also
 

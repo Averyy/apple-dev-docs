@@ -24,8 +24,8 @@ Override this method and use it to reset your device.
 
 ## Parameters
 
-- `tx`: If  , reset the queue you use to transmit data; otherwise, don’t reset the queue.
-- `rx`: If  , reset the queue you use to receive data; otherwise, don’t reset the queue.
+- `tx`: If `YES`, reset the queue you use to transmit data; otherwise, don’t reset the queue.
+- `rx`: If `YES`, reset the queue you use to receive data; otherwise, don’t reset the queue.
 
 ## See Also
 

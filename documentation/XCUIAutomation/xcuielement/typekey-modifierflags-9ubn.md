@@ -27,8 +27,8 @@ In addition to literal string key representations like `"a"`, `"6"`, and `"["`, 
 
 ## Parameters
 
-- `key`: A string representation of the key to type, or a constant from   for a key that doesn’t have a single-key string equivalent.
-- `flags`: A set of modifier flags ( ) to use when typing the key.
+- `key`: A string representation of the key to type, or a constant from [`XCUIKeyboardKey`](xcuikeyboardkey.md) for a key that doesn’t have a single-key string equivalent.
+- `flags`: A set of modifier flags ([`XCUIElement.KeyModifierFlags`](xcuielement/keymodifierflags.md)) to use when typing the key.
 
 ## See Also
 

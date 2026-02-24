@@ -24,9 +24,9 @@ When the unmap operation completes, the dext calls your [`Complete`](iouserblock
 
 ## Parameters
 
-- `requestID`: An opaque identifier. After the dext completes the request, it calls   and sends this value as a parameter.
+- `requestID`: An opaque identifier. After the dext completes the request, it calls [`Complete`](iouserblockstoragedevice/complete.md) and sends this value as a parameter.
 - `buffer`: A memory buffer containing the block ranges to unmap.
-- `numOfRanges`: The number of ranges in  .
+- `numOfRanges`: The number of ranges in `buffer`.
 
 ## See Also
 

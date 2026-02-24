@@ -26,7 +26,7 @@ The new shape.
 
 ## Parameters
 
-- `points`: An array of 3D points that define the convex polyhedron.   Keep the number of points small to avoid hurting performance.
+- `points`: An array of 3D points that define the convex polyhedron. Keep the number of points small to avoid hurting performance.
 
 ## See Also
 

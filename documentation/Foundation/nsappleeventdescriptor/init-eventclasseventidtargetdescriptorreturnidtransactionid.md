@@ -23,9 +23,9 @@ The initialized Apple event (an instance of `NSAppleEventDescriptor`), or `nil` 
 
 - `eventClass`: The event class to be set in the returned descriptor.
 - `eventID`: The event ID to be set in the returned descriptor.
-- `targetDescriptor`: A pointer to a descriptor that identifies the target application for the Apple event. Passing   results in an Apple event descriptor that has no   attribute (it is valid for an Apple event to have no target address attribute).
-- `returnID`: The return ID to be set in the returned descriptor. If you pass a value of  , the Apple Event Manager assigns the created Apple event a return ID that is unique to the current session. If you pass any other value, the Apple Event Manager assigns that value for the ID.
-- `transactionID`: The transaction ID to be set in the returned descriptor. A transaction is a sequence of Apple events that are sent back and forth between client and server applications, beginning with the client’s initial request for a service. All Apple events that are part of a transaction must have the same transaction ID. You can specify   if the Apple event is not one of a series of interdependent Apple events.
+- `targetDescriptor`: A pointer to a descriptor that identifies the target application for the Apple event. Passing `nil` results in an Apple event descriptor that has no `keyAddressAttr` attribute (it is valid for an Apple event to have no target address attribute).
+- `returnID`: The return ID to be set in the returned descriptor. If you pass a value of `kAutoGenerateReturnID`, the Apple Event Manager assigns the created Apple event a return ID that is unique to the current session. If you pass any other value, the Apple Event Manager assigns that value for the ID.
+- `transactionID`: The transaction ID to be set in the returned descriptor. A transaction is a sequence of Apple events that are sent back and forth between client and server applications, beginning with the client’s initial request for a service. All Apple events that are part of a transaction must have the same transaction ID. You can specify `kAnyTransactionID` if the Apple event is not one of a series of interdependent Apple events.
 
 ## See Also
 

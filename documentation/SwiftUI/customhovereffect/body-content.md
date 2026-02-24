@@ -29,7 +29,7 @@ You implement this method to describe a custom effect to apply to a view. `conte
 
 ## Parameters
 
-- `content`: An empty effect you use to compose the custom   effect.
+- `content`: An empty effect you use to compose the custom effect.
 
 
 ---

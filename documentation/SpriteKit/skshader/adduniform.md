@@ -22,7 +22,7 @@ func addUniform(_ uniform: SKUniform)
 
 #### Discussion
 
-The uniform variable is automatically accessible inside your shader; do not add a declaration for it in your shader’s source code. The uniform  be accessed in the fragment shader.
+The uniform variable is automatically accessible inside your shader; do not add a declaration for it in your shader’s source code. The uniform *must* be accessed in the fragment shader.
 
 ## Parameters
 

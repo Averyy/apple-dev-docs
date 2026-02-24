@@ -22,7 +22,7 @@ init(insertionPoint: String.Index)
 
 ## Parameters
 
-- `insertionPoint`: A  representing the insertion point.
+- `insertionPoint`: A`String.Index` representing the insertion point.
 
 
 ---

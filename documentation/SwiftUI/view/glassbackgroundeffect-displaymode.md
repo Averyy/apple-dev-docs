@@ -25,8 +25,8 @@ Use this modifier to add a glass material that may include thickness, specularit
 
 ## Parameters
 
-- `effect`: A   instance that SwiftUI uses to draw a background of the modified view.
-- `displayMode`: When to display the glass background. The default is  .
+- `effect`: A [`GlassBackgroundEffect`](glassbackgroundeffect.md) instance that SwiftUI uses to draw a background of the modified view.
+- `displayMode`: When to display the glass background. The default is [`GlassBackgroundDisplayMode.always`](glassbackgrounddisplaymode/always.md).
 
 
 ---

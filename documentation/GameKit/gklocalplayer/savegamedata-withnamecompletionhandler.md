@@ -32,7 +32,8 @@ If the `name` parameter is an existing filename, GameKit overwrites the file wit
 
 - `data`: An object that contains the saved game data.
 - `name`: A unique filename for the saved game data.
-- `handler`: The block receives the following parameters:
+- `handler`: The block that this method calls when it completes the request. The block receives the following parameters: - **savedGame**: The saved game.
+- **error**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

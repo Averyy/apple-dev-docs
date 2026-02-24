@@ -29,7 +29,7 @@ The image data is copied before control is returned to your game.
 
 ## Parameters
 
-- `filter`: A Core Image filter that requires a single   parameter and produces an   parameter.
+- `filter`: A Core Image filter that requires a single `inputImage` parameter and produces an `outputImage` parameter.
 
 
 ---

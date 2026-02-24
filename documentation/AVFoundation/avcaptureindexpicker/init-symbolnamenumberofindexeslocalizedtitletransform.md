@@ -26,7 +26,7 @@ Create a picker with this initializer if your app requires specifying a title fo
 
 - `localizedTitle`: A localized title that describes the picker’s action.
 - `symbolName`: The name of the symbol from the SF Symbols library to use to represent this control.
-- `numberOfIndexes`: The number of indexes to pick between. This value must be greater than  .
+- `numberOfIndexes`: The number of indexes to pick between. This value must be greater than `0`.
 - `localizedTitleTransform`: A transformation from index to localized title.
 
 ## See Also

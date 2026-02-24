@@ -7,6 +7,10 @@
 - iOS 17.0+
 - iPadOS 17.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [document-elements](entitlements/com.apple.developer.proximity-reader.identity.read/document-elements.md)

@@ -24,8 +24,8 @@ You cannot call this function until after you have called the [`CMSDecoderFinali
 
 ## Parameters
 
-- `cmsDecoder`: The CMSDecoder reference returned by the   function.
-- `signerIndex`: A number indicating which signer’s email address to return. Signer index numbers start with 0. Use the   function to determine the total number of signers for a message.
+- `cmsDecoder`: The CMSDecoder reference returned by the `CMSDecoderCreate` function.
+- `signerIndex`: A number indicating which signer’s email address to return. Signer index numbers start with 0. Use the [`CMSDecoderGetNumSigners(_:_:)`](cmsdecodergetnumsigners(_:_:).md) function to determine the total number of signers for a message.
 - `signerEmailAddressOut`: On return, points to the email address of the specified signer.
 
 ## See Also

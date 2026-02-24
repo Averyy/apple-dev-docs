@@ -10,7 +10,7 @@ Display content and descriptions, provide channel guides, and support multiple u
 
 #### Overview
 
-Use the TVServices framework to display content prominently on the screen and to speed up user login. You can highlight media and other information from your app in the . For example, a video playback app might show the user’s most recently viewed videos. The system displays your media items when the user selects your app on the tvOS Home Screen; your app doesn’t need to be running. You provide top shelf content using a Top Shelf app extension, which you include in the bundle of your tvOS app.
+Use the TVServices framework to display content prominently on the screen and to speed up user login. You can highlight media and other information from your app in the *top shelf area*. For example, a video playback app might show the user’s most recently viewed videos. The system displays your media items when the user selects your app on the tvOS Home Screen; your app doesn’t need to be running. You provide top shelf content using a Top Shelf app extension, which you include in the bundle of your tvOS app.
 
 Apps that manage multiple user profiles can accelerate the login process by retaining the profile for each Apple TV user. Apple TV supports multiple user accounts, and these accounts are separate from the profiles your app manages. Mapping the system accounts to your own profiles lets users skip profile selection screens and go straight to their content, which provides a better user experience.
 

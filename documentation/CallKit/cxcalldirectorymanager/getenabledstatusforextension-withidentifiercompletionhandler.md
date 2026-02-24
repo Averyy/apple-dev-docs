@@ -26,7 +26,8 @@ func enabledStatusForExtension(withIdentifier identifier: String) async throws -
 ## Parameters
 
 - `identifier`: The identifier for the call extension.
-- `completion`: A block to be executed when the manager is finished determining the enabled status of the specified extension.
+- `completion`: A block to be executed when the manager is finished determining the enabled status of the specified extension. - **enabledStatus**: The enabled status of the extension. For possible values, see [`CXCallDirectoryManager.EnabledStatus`](cxcalldirectorymanager/enabledstatus.md).
+- **error**: If an error occurred, an error object indicating how the check failed, otherwise `nil`.
 
 ## See Also
 

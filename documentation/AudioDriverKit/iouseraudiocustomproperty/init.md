@@ -20,11 +20,11 @@ virtual bool init(IOUserAudioDriver *in_audio_driver, IOUserAudioObjectPropertyA
 
 ## Parameters
 
-- `in_audio_driver`: The   that owns this object.
-- `in_prop_addr`: The   of the custom property.
+- `in_audio_driver`: The [`IOUserAudioDriver`](iouseraudiodriver.md) that owns this object.
+- `in_prop_addr`: The [`IOUserAudioObjectPropertyAddress`](audiodriverkit/iouseraudioobjectpropertyaddress.md) of the custom property.
 - `in_is_property_settable`: A Boolean value that indicates if the property can be set.
-- `in_qualifier_data_type`: The   for custom property’s qualifier data value.
-- `in_data_type`: The   for custom property’s data value.This value can’t be  .
+- `in_qualifier_data_type`: The [`IOUserAudioCustomPropertyDataType`](audiodriverkit/iouseraudiocustompropertydatatype.md) for custom property’s qualifier data value.
+- `in_data_type`: The [`IOUserAudioCustomPropertyDataType`](audiodriverkit/iouseraudiocustompropertydatatype.md) for custom property’s data value.This value can’t be `IOUserAudioCustomPropertyDataType::None`.
 
 ## See Also
 

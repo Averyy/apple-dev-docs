@@ -72,7 +72,7 @@ Note, that any drag supports copy operation by default. In the snippet above, th
 
 ## Parameters
 
-- `configuration`: A value that describes the configuration   of a drag session.
+- `configuration`: A value that describes the configuration of a drag session.
 
 
 ---

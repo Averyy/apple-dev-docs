@@ -26,7 +26,7 @@ This method is invoked after any seeking and change in playback direction. If yo
 
 ## Parameters
 
-- `output`: The   object.
+- `output`: The [`AVPlayerItemOutput`](avplayeritemoutput.md) object.
 
 
 ---

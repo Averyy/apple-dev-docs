@@ -17,7 +17,7 @@ optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, callSetupMode: NS
 ## Parameters
 
 - `device`: The connected Bluetooth hands-free phone or headset.
-- `callSetupMode`: The new value of the call setup indicator. For possible values, see  .
+- `callSetupMode`: The new value of the call setup indicator. For possible values, see [`IOBluetoothHandsFreeIndicatorCallSetup`](iobluetoothhandsfreeindicatorcallsetup.md).
 
 ## See Also
 

@@ -7,6 +7,10 @@
 - iOS 9.0+
 - iPadOS 9.0+
 
+
+
+**Type**: dictionary 
+
 ## Topics
 
 ### Item Configuration

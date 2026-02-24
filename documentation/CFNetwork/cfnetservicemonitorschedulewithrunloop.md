@@ -29,8 +29,8 @@ This function is thread safe.
 
 ## Parameters
 
-- `runLoop`: The run loop on which the monitor is to be scheduled; cannot be  .
-- `runLoopMode`: The mode on which to schedule the monitor; cannot be  .
+- `runLoop`: The run loop on which the monitor is to be scheduled; cannot be `NULL`.
+- `runLoopMode`: The mode on which to schedule the monitor; cannot be `NULL`.
 
 ## See Also
 

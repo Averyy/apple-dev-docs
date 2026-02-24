@@ -16,6 +16,10 @@ The default service handlers.
 object ExchangeActiveSync.CommunicationServiceRules.DefaultServiceHandlers
 ```
 
+## Properties
+
+- `AudioCall` (string): The bundle identifier of the default application to use for audio calls made to contacts from this account.
+
 
 ---
 

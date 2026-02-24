@@ -14,6 +14,15 @@ A printer dictionary.
 object Printing.UserPrinterList.Printer
 ```
 
+## Properties
+
+- `DeviceURI` (string): The device URI.
+- `DisplayName` (string): The display name.
+- `Location` (string): The printer’s location.
+- `Model` (string): The printer’s model.
+- `PPDURL` (string): The printer’s PPDURL.
+- `PrinterLocked` (boolean): If `true`, locks the printer.
+
 
 ---
 

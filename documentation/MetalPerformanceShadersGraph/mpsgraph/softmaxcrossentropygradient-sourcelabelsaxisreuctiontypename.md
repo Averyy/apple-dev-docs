@@ -29,7 +29,7 @@ A valid MPSGraphTensor object.
 - `sourceTensor`: The source tensor.
 - `labelsTensor`: The labels tensor.
 - `axis`: The axis over which the operation computes the softmax reduction.
-- `reductionType`: The type of reduction MPSGraph uses to reduce across all other axes than  . See:  .
+- `reductionType`: The type of reduction MPSGraph uses to reduce across all other axes than `axis`. See: [`MPSGraphLossReductionType`](mpsgraphlossreductiontype.md).
 - `name`: The name for the operation.
 
 

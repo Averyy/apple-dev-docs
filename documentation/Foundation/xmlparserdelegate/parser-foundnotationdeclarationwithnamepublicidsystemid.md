@@ -22,10 +22,10 @@ optional func parser(_ parser: XMLParser, foundNotationDeclarationWithName name:
 
 ## Parameters
 
-- `parser`: An   object parsing XML.
+- `parser`: An `NSXMLParser` object parsing XML.
 - `name`: A string that is the name of the notation.
-- `publicID`: A string specifying the public ID associated with the notation  .
-- `systemID`: A string specifying the system ID associated with the notation  .
+- `publicID`: A string specifying the public ID associated with the notation `name`.
+- `systemID`: A string specifying the system ID associated with the notation `name`.
 
 ## See Also
 

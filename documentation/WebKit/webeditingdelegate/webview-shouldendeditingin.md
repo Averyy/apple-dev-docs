@@ -25,7 +25,7 @@ This method is invoked when a web view attempts to resign as the first responder
 ## Parameters
 
 - `webView`: The web view that the user is editing.
-- `range`: Typically, the current selection, although it might not be. Use the   parameter to help determine whether the user can end editing.
+- `range`: Typically, the current selection, although it might not be. Use the `range` parameter to help determine whether the user can end editing.
 
 ## See Also
 

@@ -26,8 +26,8 @@ A publisher for events of the specified type.
 
 ## Parameters
 
-- `event`: The event, like  .
-- `sourceObject`: The source of the event. Set to   to publish all   events of the given type within the scene.
+- `event`: The event, like `SceneEvents.Update.self`.
+- `sourceObject`: The source of the event. Set to `nil` to publish all events of the given type within the scene.
 
 ## See Also
 

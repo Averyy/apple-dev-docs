@@ -33,7 +33,9 @@ HealthKit stores temporary [`HKDeletedObject`](hkdeletedobject.md) entries, lett
 
 - `objectType`: The type of object to be deleted.
 - `predicate`: A predicate used to filter the objects to be deleted. This method only deletes objects that match the predicate.
-- `completion`: A block that this method calls as soon as the delete operation is complete. This block is passed the following parameters:
+- `completion`: A block that this method calls as soon as the delete operation is complete. This block is passed the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/Swift/true) if the objects were successfully deleted; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- **deletedObjectCount**: The number of objects deleted.
+- **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`.
 
 ## See Also
 

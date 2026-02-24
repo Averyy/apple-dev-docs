@@ -18,7 +18,7 @@ init(preAlert: TimeInterval?, postAlert: TimeInterval?)
 ## Parameters
 
 - `preAlert`: The duration applied before the alarm fires.
-- `postAlert`: The duration applied after the alarm has alerted at least once and   moves back to the countdown state.
+- `postAlert`: The duration applied after the alarm has alerted at least once and moves back to the countdown state.
 
 ## See Also
 

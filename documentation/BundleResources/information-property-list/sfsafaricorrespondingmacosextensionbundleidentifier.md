@@ -10,6 +10,10 @@ A string bundle ID that identifies the corresponding content blocker extension o
 - iPadOS 16.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 To enable extension syncing for your iOS content blocker extension or Safari web extension, specify the bundle ID of the corresponding macOS content blocker extension or Safari web extension.

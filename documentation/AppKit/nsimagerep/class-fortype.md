@@ -20,7 +20,7 @@ A `Class` object for the image representation that can handle the UTI, or `nil` 
 
 ## Parameters
 
-- `type`: The UTI string identifying the desired image type. Some sample image-related UTI strings include “ ”, “ ”, and “ ”. For a list of supported types, see  .
+- `type`: The UTI string identifying the desired image type. Some sample image-related UTI strings include “`public.image`”, “`public.jpeg`”, and “`public.tiff`”. For a list of supported types, see `UTCoreTypes.h`.
 
 ## See Also
 

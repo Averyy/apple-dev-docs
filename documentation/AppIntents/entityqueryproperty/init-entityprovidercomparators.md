@@ -22,9 +22,9 @@ init(_ keyPath: KeyPath<Subject, Property>, entityProvider: @escaping (Entity) -
 
 ## Parameters
 
-- `keyPath`: The keypath to the property that this EntityQueryProperty applies to. The target   property type determines which comparator modifiers will be available.
-- `entityProvider`: Closure which, given a   instance, returns the appropriate    instance to apply  s to.
-- `comparators`: The set of   that this property supports being queried by.
+- `keyPath`: The keypath to the property that this EntityQueryProperty applies to. The target property type determines which comparator modifiers will be available.
+- `entityProvider`: Closure which, given a `Entity` instance, returns the appropriate `Subject` instance to apply `EntityQueryComparator`s to.
+- `comparators`: The set of `EntityQueryComparators` that this property supports being queried by.
 
 ## See Also
 

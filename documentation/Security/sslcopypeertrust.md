@@ -28,7 +28,7 @@ This function is valid any time after a handshake attempt.
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `trust`: On return, a trust management object you can use to evaluate trust for the certificate used by the session. A trust management object includes the certificate to be verified plus the policy or policies to be used in evaluating trust. See   for functions to create and evaluate trust management objects. You must call the   function for this object when you are finished with it.
+- `trust`: On return, a trust management object you can use to evaluate trust for the certificate used by the session. A trust management object includes the certificate to be verified plus the policy or policies to be used in evaluating trust. See [`Certificate, Key, and Trust Services`](certificate-key-and-trust-services.md) for functions to create and evaluate trust management objects. You must call the `CFRelease` function for this object when you are finished with it.
 
 
 ---

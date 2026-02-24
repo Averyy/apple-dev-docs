@@ -6,6 +6,10 @@ Flags that adjust the behavior of the movie import component.
 
 #### Overview
 
+- **`canMovieImportInPlace`**: Set this bit if a movie import component must be able to create a movie from a file without having to write to a separate disk file. Examples include MPEG and AIFF import components.
+- **`movieImportSubTypeIsFileExtension`**: Set this bit if the component’s subtype is a file extension instead of a Macintosh file type. For example, if you require an import component that opens files with an extension of .doc, set this flag and set your component subtype to ’DOC ’.
+- **`canMovieImportFiles`**: Set this bit if a movie import component must import files.
+
 ## See Also
 
 - [Reference movie atom ('rmra')](reference_movie_atom.md)

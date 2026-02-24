@@ -21,7 +21,7 @@ Creates a Look Around preview with a binding to a scene, navigation, road label,
 
 #### Discussion
 
-Navigation refers to the ability to tap-to-navigate to a different vantage point in the Look Around scene and what a person can control through the use of the `allowsNavigation` property. The framework refers to the ability to pan and zoom around the Look Around scene is as  and you can’t restrict it while in the Look Around viewer.
+Navigation refers to the ability to tap-to-navigate to a different vantage point in the Look Around scene and what a person can control through the use of the `allowsNavigation` property. The framework refers to the ability to pan and zoom around the Look Around scene is as *exploring* and you can’t restrict it while in the Look Around viewer.
 
 The Look Around viewer isn’t available on macOS and `allowsNavigation` has no effect; in iOS, exploration is always available in the Look Around viewer and you can’t disable it.
 

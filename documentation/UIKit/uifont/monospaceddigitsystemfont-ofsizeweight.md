@@ -31,8 +31,8 @@ The system font uses proportional spacing. When displaying numerical data, you c
 
 ## Parameters
 
-- `fontSize`: The size (in points) for the font. This value must be greater than  .
-- `weight`: The weight of the font, specified as a font weight constant. For a list of possible values, see  . Avoid passing an arbitrary floating-point number for  , because a font might not include a variant for every weight.
+- `fontSize`: The size (in points) for the font. This value must be greater than `0.0`.
+- `weight`: The weight of the font, specified as a font weight constant. For a list of possible values, see [`UIFont.Weight`](uifont/weight.md). Avoid passing an arbitrary floating-point number for `weight`, because a font might not include a variant for every weight.
 
 ## See Also
 

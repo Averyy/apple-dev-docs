@@ -51,7 +51,7 @@ VStack(spacing: 20) {
 
 ## Parameters
 
-- `accentColor`: The color to use as an accent color. Set the   value to   to use the inherited accent color.
+- `accentColor`: The color to use as an accent color. Set the value to `nil` to use the inherited accent color.
 
 ## See Also
 

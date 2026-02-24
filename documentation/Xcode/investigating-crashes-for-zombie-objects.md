@@ -6,7 +6,7 @@ Identify the signature of a zombie and investigate the cause of the crash.
 
 #### Overview
 
-Once an Objective-C or Swift object no longer has any strong references to it, the object is deallocated. Attempting to further send messages to the object as if it were still a valid object is a “use after free” issue, with the deallocated object still receiving messages called a .
+Once an Objective-C or Swift object no longer has any strong references to it, the object is deallocated. Attempting to further send messages to the object as if it were still a valid object is a “use after free” issue, with the deallocated object still receiving messages called a *zombie object*.
 
 ##### Determine Whether a Crash Report Has Signs of a Zombie
 
@@ -28,7 +28,7 @@ Thread 2 Crashed:
 2   com.apple.CoreFoundation        0x00007fff485feee6 _CFAutoreleasePoolPop + 22
 ```
 
-Another pattern that indicates a zombie object is a stack frame for an , which is a method that an object doesn’t implement. Often this kind of crash looks like code where an unexpected type of object is asked to do something it obviously can’t do, such as a number formatter class trying to play a sound. This is because the operating system reused memory that once held the deallocated object, and that memory now contains a different kind of object. A zombie identified by an unrecognized selector has a call stack with the [`doesNotRecognizeSelector(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/doesNotRecognizeSelector(_:)) method:
+Another pattern that indicates a zombie object is a stack frame for an *unrecognized selector*, which is a method that an object doesn’t implement. Often this kind of crash looks like code where an unexpected type of object is asked to do something it obviously can’t do, such as a number formatter class trying to play a sound. This is because the operating system reused memory that once held the deallocated object, and that memory now contains a different kind of object. A zombie identified by an unrecognized selector has a call stack with the [`doesNotRecognizeSelector(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/doesNotRecognizeSelector(_:)) method:
 
 ```other
 Last Exception Backtrace:

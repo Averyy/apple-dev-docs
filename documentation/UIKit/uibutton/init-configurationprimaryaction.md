@@ -26,7 +26,7 @@ If the primary action contains a title or an image, this method copies them to t
 ## Parameters
 
 - `configuration`: The button configuration.
-- `primaryAction`: The action to perform for the   control event.
+- `primaryAction`: The action to perform for the [`primaryActionTriggered`](uicontrol/event/primaryactiontriggered.md) control event.
 
 ## See Also
 

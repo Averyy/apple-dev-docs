@@ -42,7 +42,8 @@ The code below shows an example of how to load a player’s friends. Create your
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block to call when the request completes. The block receives the following parameters: - **friendPlayers**: An array of [`GKPlayer`](gkplayer.md) objects containing the player identifiers for the players who are friends of the local player. If an error occurs, this value can be non-`nil`. In that case, the array contains the data that GameKit downloads before the error occurs.
+- **error**: If an error occurs, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is `nil`.
 
 ## See Also
 

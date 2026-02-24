@@ -25,19 +25,19 @@ var alpha: Float
 - [var beta: Float](bnnslayerparametersbroadcastmatmul/beta.md)
   A value, that must be either 0.0 or 1.0, you use to scale the existing output before the operation adds it to the result.
 - [var transA: Bool](bnnslayerparametersbroadcastmatmul/transa.md)
-  A Boolean value that transposes the last two dimensions of matrix .
+  A Boolean value that transposes the last two dimensions of matrix *A*.
 - [var transB: Bool](bnnslayerparametersbroadcastmatmul/transb.md)
-  A Boolean value that transposes the last two dimensions of matrix .
+  A Boolean value that transposes the last two dimensions of matrix *B*.
 - [var quadratic: Bool](bnnslayerparametersbroadcastmatmul/quadratic.md)
-  A Boolean value that determines whether the operation multiplies matrix  by itself.
+  A Boolean value that determines whether the operation multiplies matrix *A* by itself.
 - [var a_is_weights: Bool](bnnslayerparametersbroadcastmatmul/a_is_weights.md)
-  A Boolean value that determines whether to treat matrix  as weights.
+  A Boolean value that determines whether to treat matrix *A* as weights.
 - [var b_is_weights: Bool](bnnslayerparametersbroadcastmatmul/b_is_weights.md)
-  A Boolean value that determines whether to treat matrix  as weights.
+  A Boolean value that determines whether to treat matrix *B* as weights.
 - [var iA_desc: BNNSNDArrayDescriptor](bnnslayerparametersbroadcastmatmul/ia_desc.md)
-  The descriptor of matrix .
+  The descriptor of matrix *A*.
 - [var iB_desc: BNNSNDArrayDescriptor](bnnslayerparametersbroadcastmatmul/ib_desc.md)
-  The descriptor of matrix .
+  The descriptor of matrix *B*.
 - [var o_desc: BNNSNDArrayDescriptor](bnnslayerparametersbroadcastmatmul/o_desc.md)
   The descriptor of the output.
 

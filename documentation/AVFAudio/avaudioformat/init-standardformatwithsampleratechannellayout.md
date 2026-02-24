@@ -31,7 +31,7 @@ The returned `AVAudioFormat` instance uses the [`AVAudioCommonFormat.pcmFormatFl
 ## Parameters
 
 - `sampleRate`: The sampling rate, in hertz.
-- `layout`: The channel layout, which must not be  .
+- `layout`: The channel layout, which must not be `nil`.
 
 ## See Also
 

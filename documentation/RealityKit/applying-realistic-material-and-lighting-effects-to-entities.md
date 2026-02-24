@@ -60,11 +60,11 @@ For [`metallic`](physicallybasedmaterial/metallic-swift.property.md) and [`rough
 
 ##### Add a Normal Map
 
- is a real-time rendering technique that captures fine surface details for a model using a texture instead of increasing the number of polygons in the model. It works by storing , which are vectors perpendicular to the surface of the model, from a much higher resolution version of the same 3D object. A normal map stores vectors by storing its `X`, `Y`, and `Z` value as the `R`, `G`, and `B` components of the corresponding pixel in a UV-mapped image. RealityKit uses those normals to do lighting calculations, which results in much more realistic highlights, shadows, and reflections without incurring the computational cost of using a much higher resolution 3D model.
+*Normal mapping* is a real-time rendering technique that captures fine surface details for a model using a texture instead of increasing the number of polygons in the model. It works by storing *surface normals*, which are vectors perpendicular to the surface of the model, from a much higher resolution version of the same 3D object. A normal map stores vectors by storing its `X`, `Y`, and `Z` value as the `R`, `G`, and `B` components of the corresponding pixel in a UV-mapped image. RealityKit uses those normals to do lighting calculations, which results in much more realistic highlights, shadows, and reflections without incurring the computational cost of using a much higher resolution 3D model.
 
 RealityKit’s `PhysicallyBasedMaterial` supports normal maps using the [`normal`](physicallybasedmaterial/normal-swift.property.md) property.
 
-> **Note**: RealityKit uses  which many 3D software packages can create. You can recognize tangent space normal maps by their predominately purple color.
+> **Note**: RealityKit uses *tangent space normal maps,* which many 3D software packages can create. You can recognize tangent space normal maps by their predominately purple color.
 
 To add a `normal` map to your entity, load it as a texture resource, and use the resource to create a `PhysicallyBasedMaterial.Normal` instance, as in this example:
 
@@ -89,7 +89,7 @@ material.blending = .transparent(
 )
 ```
 
-You can also specify opacity using an image texture (sometimes called an  or ). In an alpha map, black pixels represent fully transparent parts of the entity, white pixels represent fully opaque parts of the entity, and gray pixels represent parts of the entity that are partially transparent.
+You can also specify opacity using an image texture (sometimes called an *alpha map* or *transparency map*). In an alpha map, black pixels represent fully transparent parts of the entity, white pixels represent fully opaque parts of the entity, and gray pixels represent parts of the entity that are partially transparent.
 
 ```swift
 if let opacityResource = try? TextureResource.load(named: "entity_opacity") {
@@ -99,17 +99,17 @@ if let opacityResource = try? TextureResource.load(named: "entity_opacity") {
 }
 ```
 
-You can change the behavior of an alpha map to function as a  rather than a transparency map. When using an alpha mask, RealityKit draws every pixel of the entity either fully transparent or fully opaque with no partially transparency. Use the [`opacityThreshold`](physicallybasedmaterial/opacitythreshold.md) property to enable alpha masking. If you specify a value greater than `0.0`, RealityKit uses the image texture as a mask, and renders any pixel with a value of less than or equal to [`opacityThreshold`](physicallybasedmaterial/opacitythreshold.md) as fully transparent. RealityKit draws any pixel value greater than [`opacityThreshold`](physicallybasedmaterial/opacitythreshold.md) as fully opaque.
+You can change the behavior of an alpha map to function as a *mask* rather than a transparency map. When using an alpha mask, RealityKit draws every pixel of the entity either fully transparent or fully opaque with no partially transparency. Use the [`opacityThreshold`](physicallybasedmaterial/opacitythreshold.md) property to enable alpha masking. If you specify a value greater than `0.0`, RealityKit uses the image texture as a mask, and renders any pixel with a value of less than or equal to [`opacityThreshold`](physicallybasedmaterial/opacitythreshold.md) as fully transparent. RealityKit draws any pixel value greater than [`opacityThreshold`](physicallybasedmaterial/opacitythreshold.md) as fully opaque.
 
 ##### Add Specular Highlights
 
-RealityKit automatically draws  for physically based materials using the values of various properties, primarily [`roughness`](physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
+RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
 
 ![An illustration showing a sphere and a cube with rounded corners. Both have a shiny surface and a small white spot labeled “specular highlights” where they reflect the scene’s light source.](https://docs-assets.developer.apple.com/published/0b83dd2d5721a30ef708e7bf6420620b/applying-realistic-material-and-lighting-effects-to-entities-2%402x.png)
 
 While many real-world objects can be accurately and realistically simulated with just the core PBR properties, you can create additional realistic effects by augmenting the specular highlights.
 
-Use the [`specular`](physicallybasedmaterial/specular-swift.property.md) property to simulate the bright highlights found on certain  (nonmetallic) materials like cut gemstones and faceted glass, which have specular highlights much brighter than the ones RealityKit creates from just the core properties.
+Use the [`specular`](physicallybasedmaterial/specular-swift.property.md) property to simulate the bright highlights found on certain *dielectric* (nonmetallic) materials like cut gemstones and faceted glass, which have specular highlights much brighter than the ones RealityKit creates from just the core properties.
 
 Here’s how to specify specular using a single value for the entire material:
 
@@ -158,7 +158,7 @@ if let sheenResource = try? TextureResource.load(named: "entity_sheen") {
 
 ##### Use Anisotropy for Directional Highlights
 
-By default, PBR materials are ; in other words, an entity that uses a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) reflects light uniformly in all directions, mimicking the behavior of most real-world objects. Some objects, including those with many small parallel striations such as vinyl records, CDs, or straight hair, reflect light more in some directions than others, resulting in stretched or oblong specular highlights called  highlights.
+By default, PBR materials are *isotropic*; in other words, an entity that uses a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) reflects light uniformly in all directions, mimicking the behavior of most real-world objects. Some objects, including those with many small parallel striations such as vinyl records, CDs, or straight hair, reflect light more in some directions than others, resulting in stretched or oblong specular highlights called *anisotropic* highlights.
 
 ![An illustration showing 11 metallic spheres in a horizontal row. The left-most sphere is isotropic. The spheres represent increasing anisotropy from left to right, with the sphere furthest to the right displaying a long, stretched highlight.](https://docs-assets.developer.apple.com/published/2eecb2feb22234ad8501e669131a2d52/applying-realistic-material-and-lighting-effects-to-entities-4%402x.png)
 

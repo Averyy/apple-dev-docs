@@ -20,9 +20,9 @@ func processMP4Clip(with mp4ClipURL: URL?, setupInfo: [String : NSObject]?, fini
 
 ## Parameters
 
-- `mp4ClipURL`: URL that points to the location of the movie clip. This parameter is   when an error occurs.
+- `mp4ClipURL`: URL that points to the location of the movie clip. This parameter is `nil` when an error occurs.
 - `setupInfo`: Dictionary that is supplied by the UI extension and contains setup information required for processing. The values contained in the dictionary are defined by the extension developer.
-- `finished`: Boolean value indicating that the app has requested the broadcast to end. Set to   to end the broadcast.
+- `finished`: Boolean value indicating that the app has requested the broadcast to end. Set to [`true`](https://developer.apple.com/documentation/Swift/true) to end the broadcast.
 
 ## See Also
 

@@ -29,9 +29,9 @@ You must not modify the tag information from your block. Instead, use your block
 ## Parameters
 
 - `metadata`: The metadata object that contains the tags to enumerate.
-- `rootPath`: Use the ? character to delimit qualifiers for tags with string values. You may not use this character for arrays and structures.
-- `options`: A dictionary of additional options. Currently, the only supported option is  .
-- `block`: The block to execute for each tag. For more information, see  .
+- `rootPath`: A string that contains the path to the root tag. Specify `NULL` to enumerate the top-level tags in the metadata object. A path consists of the tag’s name, plus optional prefix and parent information. Separate prefix information from other path information using a colon (`:`) character. Separate parent and child tags using the period (`.`) character. For example, the string `“exif:Flash.RedEyeMode”` represents the path to the `RedEyeMode` field of the `Flash` parent structure in the EXIF metadata. When a tag contains an ordered or unordered array, specify elements using a `0`-based index inside square brackets. For example, use the string `“dc.subject[2]”` to access the third element in the `subject` array. When the tag contains an alternate-text array, access elements using an RFC 3066 language code inside square brackets. For example, use the string `“dc.description[de]”` to access the German description information. Use the ? character to delimit qualifiers for tags with string values. You may not use this character for arrays and structures.
+- `options`: A dictionary of additional options. Currently, the only supported option is [`kCGImageMetadataEnumerateRecursively`](kcgimagemetadataenumeraterecursively.md).
+- `block`: The block to execute for each tag. For more information, see [`CGImageMetadataTagBlock`](cgimagemetadatatagblock.md).
 
 ## See Also
 

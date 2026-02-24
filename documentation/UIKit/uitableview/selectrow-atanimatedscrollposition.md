@@ -41,8 +41,8 @@ UITableView *myTableView;  // assume this exists
 ## Parameters
 
 - `indexPath`: An index path identifying a row in the table view.
-- `animated`:   if you want to animate the selection and any change in position;   if the change should be immediate.
-- `scrollPosition`: A constant that identifies a relative position in the table view (top, middle, bottom) for the row when scrolling concludes. See   for descriptions of valid constants.
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) if you want to animate the selection and any change in position; [`false`](https://developer.apple.com/documentation/Swift/false) if the change should be immediate.
+- `scrollPosition`: A constant that identifies a relative position in the table view (top, middle, bottom) for the row when scrolling concludes. See [`UITableView.ScrollPosition`](uitableview/scrollposition.md) for descriptions of valid constants.
 
 ## See Also
 

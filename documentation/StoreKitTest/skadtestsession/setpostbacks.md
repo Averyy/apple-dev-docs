@@ -34,7 +34,7 @@ The array of test postbacks in the test session need to follow the same rules th
 
 ## Parameters
 
-- `postbacks`: An array of one to six test postbacks you add to a test session. The first postback must always be the winning postback with a   value of  . There must be only one winning postback.
+- `postbacks`: An array of one to six test postbacks you add to a test session. The first postback must always be the winning postback with a `didWin` value of `true`. There must be only one winning postback.
 
 ## See Also
 

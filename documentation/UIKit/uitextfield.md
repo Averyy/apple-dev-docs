@@ -99,6 +99,36 @@ Overlay views are small views displayed on the left and right sides of the text 
 
 The following code shows how to add a button as the left overlay of a text field. In this case, the code creates a button and configure its size and contents. The [`leftViewMode`](uitextfield/leftviewmode.md) property specifies when your button is displayed. When the user taps the button, the button calls the configured action method, which in this case is a custom `displayBookmarks:` method.
 
+**Swift**:
+
+```swift
+let overlayButton = UIButton(type: .custom)
+let bookmarkImage = UIImage(systemName: "bookmark")
+overlayButton.setImage(bookmarkImage, for: .normal)
+overlayButton.addTarget(self, action: #selector(displayBookmarks), 
+    for: .touchUpInside)
+overlayButton.sizeToFit()
+        
+// Assign the overlay button to the text field
+textField.leftView = overlayButton
+textField.leftViewMode = .always
+```
+
+**Objective-C**:
+
+```objc
+UIButton *overlayButton = [UIButton buttonWithType:UIButtonTypeCustom];
+UIImage *bookmarkImage = [UIImage systemImageNamed:@"bookmark"];
+[overlayButton setImage:bookmarkImage forState:UIControlStateNormal];
+[overlayButton addTarget:self action:@selector(displayBookmarks)
+        forControlEvents:UIControlEventTouchUpInside];
+[overlayButton sizeToFit];
+
+// Assign the overlay button to the text field
+self.textField.leftView = overlayButton;
+self.textField.leftViewMode = UITextFieldViewModeAlways;
+```
+
 When configuring overlay views, consider whether you want your text field to display the built-in clear button. The clear button provides the user with a convenient way to delete all of the text field’s text. This button is displayed in the right overlay position, but if you provide a custom right overlay view, use the [`rightViewMode`](uitextfield/rightviewmode.md) and [`clearButtonMode`](uitextfield/clearbuttonmode.md) properties to define when your custom overlay should be displayed and when the clear button should be displayed.
 
 ##### Validate Text and Manage the Editing Process

@@ -25,8 +25,8 @@ A configuration catalog that maintains the provided entities in memory.
 
 ## Parameters
 
-- `configurationSets`: The configuration choices that the configuration catalog presents.   Each configuration set needs to have a unique ID from all others.   The configuration catalog stores the array as the   dictionary   property and doesn’t preserve its order.
-- `combinations`: The combinations of in-memory entities and the configurations that can   address them.   The keys you use in    need to match   IDs of configuration sets from the   argument.   The values you use in    need to match   IDs of configurations from the   argument.   There needs to be one   for each possible combination   of configurations.
+- `configurationSets`: The configuration choices that the configuration catalog presents. Each configuration set needs to have a unique ID from all others. The configuration catalog stores the array as the `configurationSets` dictionary property and doesn’t preserve its order.
+- `combinations`: The combinations of in-memory entities and the configurations that can address them. The keys you use in [`configurationSpecifications`](entity/configurationcatalog/configurationcombination/configurationspecifications.md) need to match IDs of configuration sets from the `configurationSets` argument. The values you use in [`configurationSpecifications`](entity/configurationcatalog/configurationcombination/configurationspecifications.md) need to match IDs of configurations from the `configurationSets` argument. There needs to be one [`Entity.ConfigurationCatalog.ConfigurationCombination`](entity/configurationcatalog/configurationcombination.md) for each possible combination of configurations.
 
 
 ---

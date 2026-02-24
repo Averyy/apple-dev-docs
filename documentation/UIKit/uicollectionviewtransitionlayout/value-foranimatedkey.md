@@ -28,7 +28,7 @@ Use this method to retrieve floating-point values that are useful when laying ou
 
 ## Parameters
 
-- `key`: A key whose value you set using the   method.
+- `key`: A key whose value you set using the [`updateValue(_:forAnimatedKey:)`](uicollectionviewtransitionlayout/updatevalue(_:foranimatedkey:).md) method.
 
 ## See Also
 

@@ -27,7 +27,7 @@ The context version number for message ports is currently `0`. Before calling th
 ## Parameters
 
 - `ms`: The message port to examine.
-- `context`: A pointer to the structure into which the context information for   is to be copied. The information being returned is usually the same information you passed to   when creating  . However, if   returned a cached object instead of creating a new object,   is filled with information from the original message port instead of the information you passed to the function.
+- `context`: A pointer to the structure into which the context information for `ms` is to be copied. The information being returned is usually the same information you passed to [`CFMessagePortCreateLocal(_:_:_:_:_:)`](cfmessageportcreatelocal(_:_:_:_:_:).md) when creating `ms`. However, if [`CFMessagePortCreateLocal(_:_:_:_:_:)`](cfmessageportcreatelocal(_:_:_:_:_:).md) returned a cached object instead of creating a new object, `context` is filled with information from the original message port instead of the information you passed to the function.
 
 ## See Also
 

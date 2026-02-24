@@ -23,7 +23,7 @@ init(upstream: Upstream, predicate: @escaping (Publishers.RemoveDuplicates<Upstr
 ## Parameters
 
 - `upstream`: The publisher from which this publisher receives elements.
-- `predicate`: A closure to evaluate whether two elements are equivalent, for purposes of filtering. Return   from this closure to indicate that the second element is a duplicate of the first.
+- `predicate`: A closure to evaluate whether two elements are equivalent, for purposes of filtering. Return `true` from this closure to indicate that the second element is a duplicate of the first.
 
 
 ---

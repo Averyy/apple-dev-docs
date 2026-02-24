@@ -10,6 +10,10 @@ The name of the storyboard file containing the scene’s initial user interface.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Specify the name of the storyboard file without the filename extension. For example, if the filename of your storyboard is `Main.storyboard`, specify `Main` as the value for this key.

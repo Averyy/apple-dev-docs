@@ -25,7 +25,7 @@ This method parses an endpoint descriptor to determine its transfer direction.
 
 ## Parameters
 
-- `descriptor`: An endpoint descriptor to parse. Control endpoints return  .
+- `descriptor`: An endpoint descriptor to parse. Control endpoints return [`kIOUSBEndpointDirectionUnknown`](https://developer.apple.com/documentation/kernel/tiousbendpointdirection/kiousbendpointdirectionunknown).
 
 ## See Also
 

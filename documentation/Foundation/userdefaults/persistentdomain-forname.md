@@ -30,7 +30,7 @@ This method retrieves only the keys and values from the specified domain. It doe
 
 ## Parameters
 
-- `domainName`: The name of the persistent domain. Specify your app’s bundle identifier   to retrieve any app-specific keys. Specify the   identifier to   retrieve keys in the global domain.
+- `domainName`: The name of the persistent domain. Specify your app’s bundle identifier to retrieve any app-specific keys. Specify the [`globalDomain`](userdefaults/globaldomain.md) identifier to retrieve keys in the global domain.
 
 ## See Also
 

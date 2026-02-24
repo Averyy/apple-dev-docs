@@ -27,8 +27,8 @@ In addition to having valid firing conditions, to be successfully enabled a trig
 
 ## Parameters
 
-- `enable`:   to enable the trigger,   to disable it.
-- `completion`: The block executed after the request is processed.
+- `enable`: `TRUE` to enable the trigger, [`false`](https://developer.apple.com/documentation/Swift/false) to disable it.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

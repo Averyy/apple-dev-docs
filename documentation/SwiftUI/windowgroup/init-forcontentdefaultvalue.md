@@ -31,10 +31,10 @@ SwiftUI creates a window from the group when you present a value of the specifie
 
 ## Parameters
 
-- `title`: The   view to use for the group’s title.
+- `title`: The [`Text`](text.md) view to use for the group’s title.
 - `type`: The type of presented data this window group accepts.
-- `content`: A closure that creates the content for each instance   of the group. The closure receives a binding to the value that you   pass into the   action when you open   the window. SwiftUI automatically persists and restores the value   of this binding as part of the state restoration process.
-- `defaultValue`: A closure that returns a default value to present.   SwiftUI calls this closure when it has no data to provide, like   when someone opens a new window from the File > New Window menu   item.
+- `content`: A closure that creates the content for each instance of the group. The closure receives a binding to the value that you pass into the [`openWindow`](environmentvalues/openwindow.md) action when you open the window. SwiftUI automatically persists and restores the value of this binding as part of the state restoration process.
+- `defaultValue`: A closure that returns a default value to present. SwiftUI calls this closure when it has no data to provide, like when someone opens a new window from the File > New Window menu item.
 
 ## See Also
 

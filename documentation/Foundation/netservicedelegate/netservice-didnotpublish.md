@@ -26,7 +26,7 @@ This method may be called long after a [`netServiceWillPublish(_:)`](netserviced
 ## Parameters
 
 - `sender`: The service that could not be published.
-- `errorDict`: A dictionary containing information about the problem. The dictionary contains the keys   and  .
+- `errorDict`: A dictionary containing information about the problem. The dictionary contains the keys `NSNetServicesErrorCode` and `NSNetServicesErrorDomain`.
 
 ## See Also
 

@@ -28,7 +28,7 @@ This method is the designated initializer for the `NSXMLDTD` class. You use this
 ## Parameters
 
 - `data`: A data object containing DTD declarations.
-- `mask`: A bit mask specifying input options; bit-OR multiple options. The current valid options are   and  ; these constants are described in the “Constants” section of the   reference.
+- `mask`: A bit mask specifying input options; bit-OR multiple options. The current valid options are `NSXMLNodePreserveWhitespace` and `NSXMLNodePreserveEntities`; these constants are described in the “Constants” section of the [`XMLNode`](xmlnode.md) reference.
 
 ## See Also
 

@@ -27,7 +27,7 @@ A [`CGFont`](https://developer.apple.com/documentation/CoreGraphics/CGFont) obje
 ## Parameters
 
 - `font`: The font reference.
-- `attributes`: On output, points to a font descriptor containing additional attributes from the font. Can be  . Must be released by the caller.
+- `attributes`: On output, points to a font descriptor containing additional attributes from the font. Can be `NULL`. Must be released by the caller.
 
 ## See Also
 

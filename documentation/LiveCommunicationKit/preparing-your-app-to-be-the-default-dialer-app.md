@@ -8,8 +8,8 @@ Let people configure their device to set your app as the default dialer app.
 
 In addition to adding VoIP calling to your app and preparing it to be the default calling app, LiveCommunicationKit allows you to prepare your app as the default dialer app that can start cellular network conversations:
 
-- A default  app handles incoming and outgoing VoIP conversations, requiring VoIP conversation functionality, and uses LiveCommunicationKit or [`CallKit`](https://developer.apple.com/documentation/CallKit).
-- A default  app uses LiveCommunicationKit and focuses on presenting a dialer interface as the default way for initiating cellular network conversations.
+- A default *calling* app handles incoming and outgoing VoIP conversations, requiring VoIP conversation functionality, and uses LiveCommunicationKit or [`CallKit`](https://developer.apple.com/documentation/CallKit).
+- A default *dialer* app uses LiveCommunicationKit and focuses on presenting a dialer interface as the default way for initiating cellular network conversations.
 
 > ❗ **Important**: To use the [`StartCellularConversationAction`](startcellularconversationaction.md) and [`TelephonyConversationManager`](telephonyconversationmanager.md) API in LiveCommunicationKit, you must add the [`Default Dialer App`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.dialing-app) entitlement to your app. To test your app’s behavior as a default dialer app, your Apple Developer account needs to be registered in the European Union (EU), and the test device must be located within the EU.
 

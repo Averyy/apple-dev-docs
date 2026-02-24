@@ -22,7 +22,7 @@ func set(_ anArray: [Any]?, forKey aKey: String)
 
 ## Parameters
 
-- `anArray`: The array object to save in the iCloud key-value store. The array   must contain only property list types.
+- `anArray`: The array object to save in the iCloud key-value store. The array must contain only property list types.
 - `aKey`: The key to associate with the value.
 
 ## See Also

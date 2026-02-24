@@ -22,7 +22,7 @@ func cleanAperture(originIsAtTopLeft: Bool) -> CGRect
 
 ## Parameters
 
-- `originIsAtTopLeft`: If  , the origin begins at the top-left corner of the rectangle instead of the bottom-left.
+- `originIsAtTopLeft`: If `true`, the origin begins at the top-left corner of the rectangle instead of the bottom-left.
 
 ## See Also
 

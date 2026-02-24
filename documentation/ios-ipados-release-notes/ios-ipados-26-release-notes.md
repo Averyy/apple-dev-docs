@@ -151,7 +151,7 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- On a Dual SIM iPhone with multiple lines enabled, cellular data usage might not update after changing the default line for cellular data.  (152608995)  Restart the device after switching the default cellular data line.
+- On a Dual SIM iPhone with multiple lines enabled, cellular data usage might not update after changing the default line for cellular data.  (152608995) **Workaround:** Restart the device after switching the default cellular data line.
 
 ##### Cloudkit
 
@@ -164,7 +164,7 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Communication Safety might cause hangs in FaceTime when triggered to show an intervention.  (151729870)  Reboot the device.
+- Communication Safety might cause hangs in FaceTime when triggered to show an intervention.  (151729870) **Workaround:** Reboot the device.
 
 ##### Contacts
 
@@ -191,9 +191,9 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- If requestAgeRange triggered the onboarding flow for a parent, selecting Always or Never will lead to the API not responding.  (152187255)  Try calling requestAgeRange again to get a valid response.
-- On iOS, requestAgeRange might incorrectly return notAvailable.  (152194790)  Please try signing out and back in with your Apple Account or wait 24 hours.
-- On macOS, if onboarding leads to the Ask First state, the user is not prompted to share or not share their age range.  (152327536)  Try calling requestAgeRange again to get a valid response.
+- If requestAgeRange triggered the onboarding flow for a parent, selecting Always or Never will lead to the API not responding.  (152187255) **Workaround:** Try calling requestAgeRange again to get a valid response.
+- On iOS, requestAgeRange might incorrectly return notAvailable.  (152194790) **Workaround:** Please try signing out and back in with your Apple Account or wait 24 hours.
+- On macOS, if onboarding leads to the Ask First state, the user is not prompted to share or not share their age range.  (152327536) **Workaround:** Try calling requestAgeRange again to get a valid response.
 
 ##### Documents
 
@@ -252,14 +252,14 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Some instructions and prompts to the model might not lead to expected responses. Use Feedback Assistant to report satisfactory or unsatisfactory cases. When applicable, you can use `LanguageModelSession.logFeedbackAttachment()` to serialize the feedback to a JSON file and attach it to Feedback Assistant.  (152318091)  Refine your instructions and prompts using `#Playground` in Xcode. When applying guided generation with a `@Generable` type, add `@Guide` with a custom description on properties to steer the model’s responses.
-- If `Argument` type is an enum with associated type, tools will encounter a `ToolCallError` with an underlying `decodingFailure` when the model attempts to call it.  (156723065)  Wrap the enum in a struct.
+- Some instructions and prompts to the model might not lead to expected responses. Use Feedback Assistant to report satisfactory or unsatisfactory cases. When applicable, you can use `LanguageModelSession.logFeedbackAttachment()` to serialize the feedback to a JSON file and attach it to Feedback Assistant.  (152318091) **Workaround:** Refine your instructions and prompts using `#Playground` in Xcode. When applying guided generation with a `@Generable` type, add `@Guide` with a custom description on properties to steer the model’s responses.
+- If `Argument` type is an enum with associated type, tools will encounter a `ToolCallError` with an underlying `decodingFailure` when the model attempts to call it.  (156723065) **Workaround:** Wrap the enum in a struct.
 
 ##### Game Center
 
 ###### Known Issues
 
-- User cannot start a Challenge for a leaderboard that has not been published Live via App Store Connect.  (151928236)  Test leaderboard locally using Game Progress Manager in Xcode, or publish a leaderboard as Live before creating an associated challenge.
+- User cannot start a Challenge for a leaderboard that has not been published Live via App Store Connect.  (151928236) **Workaround:** Test leaderboard locally using Game Progress Manager in Xcode, or publish a leaderboard as Live before creating an associated challenge.
 
 ##### Game Controller
 
@@ -318,7 +318,7 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- iCloud Storage for Journaling Suggestions returns after “Delete Data From iCloud”.  (152102605)  Disable Journaling Suggestions, in Settings > Apple Account > iCloud > Saved to iCloud > Journaling Suggestions, before invoking “Delete Data From iCloud”.
+- iCloud Storage for Journaling Suggestions returns after “Delete Data From iCloud”.  (152102605) **Workaround:** Disable Journaling Suggestions, in Settings > Apple Account > iCloud > Saved to iCloud > Journaling Suggestions, before invoking “Delete Data From iCloud”.
 
 ##### Kernel
 
@@ -352,10 +352,10 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- If device is locked and an app is running on the Lock Screen, launching a camera app with Camera Control might not work.  (151153912)  Reboot the device.
+- If device is locked and an app is running on the Lock Screen, launching a camera app with Camera Control might not work.  (151153912) **Workaround:** Reboot the device.
 - Lock Screen controls might be hard to see over lighter wallpaper content.  (151324807)
-- Clock, notifications, and other elements might not display.  (152192129)  Swipe down from the status bar to re-present the Lock Screen, or reboot the device.
-- Devices might not auto sleep while the passcode UI is visible on the Lock Screen.  (152604427)  Dismiss passcode UI or manually lock the device.
+- Clock, notifications, and other elements might not display.  (152192129) **Workaround:** Swipe down from the status bar to re-present the Lock Screen, or reboot the device.
+- Devices might not auto sleep while the passcode UI is visible on the Lock Screen.  (152604427) **Workaround:** Dismiss passcode UI or manually lock the device.
 
 ##### Mail
 
@@ -365,17 +365,17 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- When opening the search field on iPadOS, a blank column will display instead of the message list if the user does not have recent searches or link/document suggestions.  (149789435)  Once the user starts typing in the search field or dismisses the search, the message list will re-appear.
-- The Select button is missing in Search to perform bulk edit actions.  (151313732)  Users can still get into the same state by swiping down with two fingers to select then long-pressing to choose an action.
+- When opening the search field on iPadOS, a blank column will display instead of the message list if the user does not have recent searches or link/document suggestions.  (149789435) **Workaround:** Once the user starts typing in the search field or dismisses the search, the message list will re-appear.
+- The Select button is missing in Search to perform bulk edit actions.  (151313732) **Workaround:** Users can still get into the same state by swiping down with two fingers to select then long-pressing to choose an action.
 
 ##### Maps
 
 ###### Known Issues
 
-- Pinned places, including Home and Work, might be missing icons or display the incorrect icons.  (147263981)  Quit and relaunch Maps.
-- Curated guides do not scroll on iOS, iPadOS, or visionOS when the iPhone is in landscape mode.  (152123749)  On iPhone, view curated guides in portrait mode.
-- Vehicles with a touchpad interface might not be able to start navigation in CarPlay.  (152272727)  Navigation can be started from another available input device, such as iPhone.
-- Custom tap gesture callbacks registered using `onTapGesture` might not work as expected on a SwiftUI Map.  (157612948) (FB19394663)  Use `simultaneousGesture(TapGesture().onEnded {})` to register the callback.
+- Pinned places, including Home and Work, might be missing icons or display the incorrect icons.  (147263981) **Workaround:** Quit and relaunch Maps.
+- Curated guides do not scroll on iOS, iPadOS, or visionOS when the iPhone is in landscape mode.  (152123749) **Workaround:** On iPhone, view curated guides in portrait mode.
+- Vehicles with a touchpad interface might not be able to start navigation in CarPlay.  (152272727) **Workaround:** Navigation can be started from another available input device, such as iPhone.
+- Custom tap gesture callbacks registered using `onTapGesture` might not work as expected on a SwiftUI Map.  (157612948) (FB19394663) **Workaround:** Use `simultaneousGesture(TapGesture().onEnded {})` to register the callback.
 
 ##### Memory Tools
 
@@ -408,10 +408,10 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 ###### Known Issues
 
 - Users on older devices won’t see compatibility messages for polls, so they might be unaware a poll was sent.  (148545742)
-- Expanding Conversation Details causes the list of conversations to collapse.  (149436051)  Closing Conversation Details will bring back the list.
+- Expanding Conversation Details causes the list of conversations to collapse.  (149436051) **Workaround:** Closing Conversation Details will bring back the list.
 - Deleting and reporting as spam a message that was filtered by a Message Filter App extension does not send the spam report to the extension.  (150832702)
-- Devices with “Filter Unknown Senders” on before update might have “Time Sensitive” on by default under the Allow Notifications setting in the Unknown Senders section of Messages Settings.  (150856051)  Enable “Time Sensitive” manually.
-- Messages fail to translate when only the recipient has translation enabled.   (157779997)  Both participants in the conversation must enable translation.
+- Devices with “Filter Unknown Senders” on before update might have “Time Sensitive” on by default under the Allow Notifications setting in the Unknown Senders section of Messages Settings.  (150856051) **Workaround:** Enable “Time Sensitive” manually.
+- Messages fail to translate when only the recipient has translation enabled.   (157779997) **Workaround:** Both participants in the conversation must enable translation.
 
 ##### Metal
 
@@ -426,7 +426,7 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Metal Shader Validation might not work with Metal 4 ray tracing pipelines.  (152520367)  Selectively disable Shader Validation for pipelines using ray tracing. See [`documentation`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage/#Selectively-enable-Shader-Validation).
+- Metal Shader Validation might not work with Metal 4 ray tracing pipelines.  (152520367) **Workaround:** Selectively disable Shader Validation for pipelines using ray tracing. See [`documentation`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage/#Selectively-enable-Shader-Validation).
 
 ##### Metalfx
 
@@ -473,7 +473,7 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Users might experience a spinner issue when clicking the ‘Track’ button on the email banner.  (152329353)  Charge the device overnight and try again afterward.
+- Users might experience a spinner issue when clicking the ‘Track’ button on the email banner.  (152329353) **Workaround:** Charge the device overnight and try again afterward.
 
 ##### Passcode
 
@@ -485,19 +485,19 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- A user on multiple calls on an iPhone without a Dynamic Island will see two Swap buttons, and the one next to the Contact’s name will not be functional.  (152258825)  Use the functional Swap button between the Audio and Mute buttons.
+- A user on multiple calls on an iPhone without a Dynamic Island will see two Swap buttons, and the one next to the Contact’s name will not be functional.  (152258825) **Workaround:** Use the functional Swap button between the Audio and Mute buttons.
 
 ##### Photos
 
 ###### Known Issues
 
-- Existing Social Groups might disappear from the Photos app when manually creating a new one.  (152248578)  Quit and relaunch the Photos app.
+- Existing Social Groups might disappear from the Photos app when manually creating a new one.  (152248578) **Workaround:** Quit and relaunch the Photos app.
 
 ##### Photos Photos Picker
 
 ###### Known Issues
 
-- Invoking search in the Photos picker causes the picker to crash. Or invoking Search in a collection in Photos causes Search to crash.  (152403781)  Use the Photos app to search for the content. Once you’ve found it, you can share or copy it to continue with the workflow. Use Search in the Library tab to find the content.
+- Invoking search in the Photos picker causes the picker to crash. Or invoking Search in a collection in Photos causes Search to crash.  (152403781) **Workaround:** Use the Photos app to search for the content. Once you’ve found it, you can share or copy it to continue with the workflow. Use Search in the Library tab to find the content.
 
 ##### Push to Talk
 
@@ -539,7 +539,7 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- The cursive Welcome text might be missing at the end of Setup Assistant.  (152601626)  Swipe up or tap Get Started to complete setup.
+- The cursive Welcome text might be missing at the end of Setup Assistant.  (152601626) **Workaround:** Swipe up or tap Get Started to complete setup.
 
 ##### Shortcuts
 
@@ -709,7 +709,7 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 ###### Known Issues
 
 - On iOS and iPadOS, inspector does not respect the width applied with `inspectorColumnWidth`.  (145162377)
-- `toolbarForegroundStyle` no longer tints toolbar button labels on watchOS.  (151487439)  Tint the button label directly, using `Text("foo").foregroundStyle(...)`.
+- `toolbarForegroundStyle` no longer tints toolbar button labels on watchOS.  (151487439) **Workaround:** Tint the button label directly, using `Text("foo").foregroundStyle(...)`.
 - On iOS and iPadOS, bordered prominent buttons in toolbars do not have the correct default padding or symbol metrics.  (151792861)
 - `.toolbarVisibility(_:for:)` does not hide the navigation bar on watchOS.  (152326250)
 
@@ -739,7 +739,7 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Downloading languages for translation might display incomplete indicators on the download screen resulting in translation features being unavailable.  (148923222)  Reboot the device.
+- Downloading languages for translation might display incomplete indicators on the download screen resulting in translation features being unavailable.  (148923222) **Workaround:** Reboot the device.
 
 ##### Uikit
 
@@ -749,10 +749,10 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- In apps using `UIToolbar`, the Search bar sometimes does not respond to taps and displays without the magnifying glass, dictation button, or placeholder text.  (151126350)  Quit the app then re-launch it.
-- On iPhone only, the `searchTextField` property of a `UISearchBar` belonging to a `UISearchController` (i.e. `searchController.searchBar.searchTextField`) might not return the same instance when called at different times.   (153550157)  Look for `UISearchBar` or `UISearchController` API equivalent to the `UISearchTextField` API you’re using. If none can be found, you can prevent the issue by setting the `UINavigationItem.searchBarPlacementAllowsToolbarIntegration` property to `false` on the navigation item the search controller has been assigned to.
-- In rare cases after launching an app on iPhone, unusual client code timing of assembling the view controller hierarchy might cause the search bar belonging to a view controller in a tab to disappear from the navigation bar when first switching to that tab.  (156174227)  Set the `searchBarPlacementAllowsToolbarIntegration` property of the UINavigationItem to `false` at the same time you set the `searchController`.
-- In rare cases, the layout calculation from a client’s layout constraint for their search results might change when presenting a `UISearchController` directly (for example, using `-presentViewController:`) after building with the new SDK. This is due to removal of internal constraints with the identifier `UIView-Encapsulated-Layout-Width` and `UIView-Encapsulated-Layout-Height`.  (157208725)  Examine the existing constraints and determine how to modify them to be stable independent of the presence of the encapsulation constraints. Compare the results of `po [<view> _autoLayoutTrace]` with an older SDK and look for views marked with a bullet. If they don’t have a bullet on the new SDK, their encapsulation constraints will have been removed. This will get you started on adjusting your constraints setup.
+- In apps using `UIToolbar`, the Search bar sometimes does not respond to taps and displays without the magnifying glass, dictation button, or placeholder text.  (151126350) **Workaround:** Quit the app then re-launch it.
+- On iPhone only, the `searchTextField` property of a `UISearchBar` belonging to a `UISearchController` (i.e. `searchController.searchBar.searchTextField`) might not return the same instance when called at different times.   (153550157) **Workaround:** Look for `UISearchBar` or `UISearchController` API equivalent to the `UISearchTextField` API you’re using. If none can be found, you can prevent the issue by setting the `UINavigationItem.searchBarPlacementAllowsToolbarIntegration` property to `false` on the navigation item the search controller has been assigned to.
+- In rare cases after launching an app on iPhone, unusual client code timing of assembling the view controller hierarchy might cause the search bar belonging to a view controller in a tab to disappear from the navigation bar when first switching to that tab.  (156174227) **Workaround:** Set the `searchBarPlacementAllowsToolbarIntegration` property of the UINavigationItem to `false` at the same time you set the `searchController`.
+- In rare cases, the layout calculation from a client’s layout constraint for their search results might change when presenting a `UISearchController` directly (for example, using `-presentViewController:`) after building with the new SDK. This is due to removal of internal constraints with the identifier `UIView-Encapsulated-Layout-Width` and `UIView-Encapsulated-Layout-Height`.  (157208725) **Workaround:** Examine the existing constraints and determine how to modify them to be stable independent of the presence of the encapsulation constraints. Compare the results of `po [<view> _autoLayoutTrace]` with an older SDK and look for views marked with a bullet. If they don’t have a bullet on the new SDK, their encapsulation constraints will have been removed. This will get you started on adjusting your constraints setup.
 
 ###### Deprecations
 
@@ -770,13 +770,13 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Apple Watch apps with a `MinimumOSVersion` of watchOS 26 that have an iOS counterpart fail to install to the watch via the Watch app on iPhone.  (153195856)  Use Xcode to install the app directly to the watch.
+- Apple Watch apps with a `MinimumOSVersion` of watchOS 26 that have an iOS counterpart fail to install to the watch via the Watch app on iPhone.  (153195856) **Workaround:** Use Xcode to install the app directly to the watch.
 
 ##### Watch Faces
 
 ###### Known Issues
 
-- Complications configured on watch faces might appear ‘Off’ on the Watch app.   (152324791)  Use Apple Watch directly to edit complications.
+- Complications configured on watch faces might appear ‘Off’ on the Watch app.   (152324791) **Workaround:** Use Apple Watch directly to edit complications.
 
 ##### Weather
 
@@ -830,7 +830,7 @@ The iOS & iPadOS 26 SDK provides support to develop apps for iPhone and iPad run
 
 ## See Also
 
-- [iOS & iPadOS 26.4 Beta Release Notes](ios-ipados-26_4-release-notes.md)
+- [iOS & iPadOS 26.4 Beta 2 Release Notes](ios-ipados-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [iOS & iPadOS 26.3 Release Notes](ios-ipados-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

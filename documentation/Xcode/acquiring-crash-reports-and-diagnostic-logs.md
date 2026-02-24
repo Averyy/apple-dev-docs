@@ -46,7 +46,7 @@ To locate and email crash reports for iOS, iPadOS, tvOS, visionOS, and watchOS a
 To locate and email crash reports for macOS and Mac Catalyst apps:
 
 1. Open the Console app, from Applications > Utilities in Finder.
-2. Select .
+2. Select *Crash Reports*.
 3. Locate crash reports for your app in the list. Logs are listed by your app’s binary name.
 4. Right-click the desired log’s file name.
 5. Select Reveal in Finder.

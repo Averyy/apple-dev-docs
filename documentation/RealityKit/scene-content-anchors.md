@@ -34,7 +34,7 @@ RealityKit anchors all entities in a scene to an anchor target in the same scene
 - [AnchoringComponent.ObjectAnchoringSource](anchoringcomponent/objectanchoringsource.md)
   Defines the source of object anchoring target based on how it is created.
 ### Hand tracking
-- [Happy Beam](../visionOS/happybeam.md)
+- [Happy Beam](../visionos/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
 - [AnchoringComponent.Target.HandLocation](anchoringcomponent/target-swift.enum/handlocation.md)
   Defines the locations of tracked hands to look for.
@@ -58,7 +58,7 @@ RealityKit anchors all entities in a scene to an anchor target in the same scene
   Combine RealityKit’s face detection with PencilKit to implement virtual face-painting.
 - [Occluding virtual content with people](../ARKit/occluding-virtual-content-with-people.md)
   Cover your app’s virtual content with people that ARKit perceives in the camera feed.
-- [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](../visionos/placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [struct BodyTrackingComponent](bodytrackingcomponent.md)
   A component for tracking people in an AR session.
@@ -75,9 +75,9 @@ RealityKit anchors all entities in a scene to an anchor target in the same scene
 
 ## See Also
 
-- [Hello World](../visionOS/World.md)
+- [Hello World](../visionos/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](../visionos/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.

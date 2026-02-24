@@ -32,7 +32,7 @@ This is a convenience method for calling [`CFStreamCreateBoundPair(_:_:_:_:)`](h
 
 ## Parameters
 
-- `bufferSize`: The size of the buffer, in bytes, used to transfer data from   to  .
+- `bufferSize`: The size of the buffer, in bytes, used to transfer data from `inputStream` to `outputStream`.
 - `inputStream`: On return, contains an input stream.
 - `outputStream`: On return, contains an output stream.
 

@@ -16,7 +16,7 @@ func adjustViewport(byVerticalOffset verticalOffset: CGFloat)
 
 ## Parameters
 
-- `verticalOffset`: A   that represents the offset amount to apply to the viewport.
+- `verticalOffset`: A `CGFloat` that represents the offset amount to apply to the viewport.
 
 ## See Also
 

@@ -48,7 +48,7 @@ To pass camera frames to your model, you first need to find the image orientatio
 
 Finally, you invoke the [`VNImageRequestHandler`](https://developer.apple.com/documentation/Vision/VNImageRequestHandler) with the image from the camera and information about the current orientation to make a prediction using your object detector.
 
-Now that the app handles providing  data to your model, it’s time to interpret your model’s .
+Now that the app handles providing *input* data to your model, it’s time to interpret your model’s *output*.
 
 ##### Draw Bounding Boxes to Understand Your Models Behavior
 

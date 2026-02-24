@@ -27,7 +27,7 @@ To create a date object from a string, you should typically use a date formatter
 
 ## Parameters
 
-- `aString`: You must specify all fields of the format string, including the time zone offset, which must have a plus or minus sign prefix.
+- `aString`: A string that specifies a date and time value in the international string representation format—`YYYY-MM-DD HH:MM:SS ±HHMM`, where `±HHMM` is a time zone offset in hours and minutes from UTC (for example, “`2001-03-24 10:45:32 +0600`”). You must specify all fields of the format string, including the time zone offset, which must have a plus or minus sign prefix.
 
 ## See Also
 

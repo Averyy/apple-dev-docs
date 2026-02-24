@@ -23,7 +23,7 @@ This method should perform application-specific manipulation of the image before
 ## Parameters
 
 - `newButtonImage`: The image to set for the button cell.
-- `buttonCell`: The   object that lets the user choose the picker from the color panel—the color picker’s representation in the    of the  .
+- `buttonCell`: The `NSButtonCell` object that lets the user choose the picker from the color panel—the color picker’s representation in the  `NSMatrix` of the `NSColorPanel`.
 
 ## See Also
 

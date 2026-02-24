@@ -26,7 +26,7 @@ Use this method to create an operation that retrieves the next batch of results 
 
 ## Parameters
 
-- `cursor`: The cursor that identifies the previous search. CloudKit passes this value to the completion handler of the previous search. For more information, see the   property.
+- `cursor`: The cursor that identifies the previous search. CloudKit passes this value to the completion handler of the previous search. For more information, see the [`queryCompletionBlock`](ckqueryoperation/querycompletionblock.md) property.
 
 ## See Also
 

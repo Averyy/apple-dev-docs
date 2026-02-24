@@ -66,6 +66,13 @@ Specify `com.apple.gamed` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `GKFeatureAccountModificationAllowed` (boolean): If `true`, allows account modifications.
+- `GKFeatureAddingGameCenterFriendsAllowed` (boolean): If `true`, allows adding Game Center friends.
+- `GKFeatureGameCenterAllowed` (boolean): If `true`, enables Game Center.
+- `GKFeatureMultiplayerGamingAllowed` (boolean): If `true`, allows multiplayer gaming.
+
 ## See Also
 
 - [object ParentalControlsApplicationRestrictions](parentalcontrolsapplicationrestrictions.md)

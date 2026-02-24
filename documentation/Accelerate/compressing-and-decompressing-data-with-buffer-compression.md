@@ -8,7 +8,7 @@ Compress a string, write it to the file system, and decompress the same file usi
 
 The code in this article uses the [`Compression`](https://developer.apple.com/documentation/Compression) framework to encode (compress) and decode (decompress) a string. The code writes the encoded result to the temporary directory that the [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/Foundation/NSTemporaryDirectory()) function returns.
 
-The code in this sample is useful in applications that store or transmit text files where saving or sending smaller files can improve performance and reduce storage overhead. This sample app implements , where it reads the contents of a source buffer in a single step to compress or decompress data.
+The code in this sample is useful in applications that store or transmit text files where saving or sending smaller files can improve performance and reduce storage overhead. This sample app implements *buffer compression*, where it reads the contents of a source buffer in a single step to compress or decompress data.
 
 ##### Create the Source Data
 

@@ -26,7 +26,7 @@ This function is not recommended for general use because of undocumented special
 
 ## Parameters
 
-- `combineState`: Pass   to specify that the actual key and mouse state are merged with the application-specified state in a synthetic event; otherwise, pass  .
+- `combineState`: Pass `true` to specify that the actual key and mouse state are merged with the application-specified state in a synthetic event; otherwise, pass `false`.
 
 ## See Also
 

@@ -27,7 +27,7 @@ The input and output objects for actions are usually instances of [`NSArray`](ht
 
 ## Parameters
 
-- `input`: The input for the receiving action. Should contain one or more objects compatible with one of the types specified in the action’s   property.
+- `input`: The input for the receiving action. Should contain one or more objects compatible with one of the types specified in the action’s [`selectedInputType`](amaction/selectedinputtype.md) property.
 
 ## See Also
 

@@ -6,7 +6,7 @@ Run draw commands that render to different outputs using the same vertex data mu
 
 #### Overview
 
-With , you can encode drawing commands that process the same vertex multiple times, one per render target. Vertex amplification generates copies of a command’s vertex data for each render pipeline. Vertex amplification is more efficient than encoding the command multiple times with the same vertex because the GPU fetches the vertex data only once. The GPU then calls your vertex function multiple times — equal to the amplification multiplier — for each vertex.
+With *vertex amplification*, you can encode drawing commands that process the same vertex multiple times, one per render target. Vertex amplification generates copies of a command’s vertex data for each render pipeline. Vertex amplification is more efficient than encoding the command multiple times with the same vertex because the GPU fetches the vertex data only once. The GPU then calls your vertex function multiple times — equal to the amplification multiplier — for each vertex.
 
 ![A flow diagram that begins with a single instance of vertex data that flows into a single vertex stage. The vertex stage then produces two outputs that flow into two separate,  parallel render pipeline instances.](https://docs-assets.developer.apple.com/published/c63c5aa8cceb65dc6421201c86838cee/improving-rendering-performance-with-vertex-amplification-1%402x.png)
 
@@ -26,6 +26,28 @@ After your app confirms that the GPU supports a vertex amplification multiplier 
 
 Configure an [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) instance’s [`maxVertexAmplificationCount`](mtlrenderpipelinedescriptor/maxvertexamplificationcount.md) property to a multiplier value that the GPU supports. Any encoders you create with the descriptor can support any vertex amplification factor in the range `[1, `[`maxVertexAmplificationCount`](mtlrenderpipelinedescriptor/maxvertexamplificationcount.md)`]`.
 
+**Swift**:
+
+```swift
+let pipelineStateDescriptor = MTLRenderPipelineDescriptor()
+pipelineStateDescriptor.vertexFunction = vertexFunction
+pipelineStateDescriptor.fragmentFunction = fragmentFunction
+pipelineStateDescriptor.maxVertexAmplificationCount = 2
+
+...
+```
+
+**Objective-C**:
+
+```objective-c
+MTLRenderPipelineDescriptor *pipelineStateDescriptor = [[MTLRenderPipelineDescriptor alloc] init];
+pipelineStateDescriptor.vertexFunction = vertexFunction;
+pipelineStateDescriptor.fragmentFunction = fragmentFunction;
+pipelineStateDescriptor.maxVertexAmplificationCount = 2;
+
+...
+```
+
 Continue configuring your pipeline descriptor and create an [`MTLRenderPipelineState`](mtlrenderpipelinestate.md) instance with it that you can assign to a render command encoder.
 
 The example above sets the descriptor’s [`maxVertexAmplificationCount`](mtlrenderpipelinedescriptor/maxvertexamplificationcount.md) property to `2`. Most apps typically set this property to the largest amplification factor the GPU supports. That way, an encoder that uses the pipeline state from that descriptor has the option to use any valid vertex amplification factor for that GPU.
@@ -34,6 +56,18 @@ The example above sets the descriptor’s [`maxVertexAmplificationCount`](mtlren
 
 Configure an [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) instance to apply vertex amplification for subsequent rendering commands by calling its [`setVertexAmplificationCount(_:viewMappings:)`](mtlrendercommandencoder/setvertexamplificationcount(_:viewmappings:).md) method.
 
+**Swift**:
+
+```swift
+renderEncoder.setVertexAmplificationCount(2, viewMappings: nil)
+```
+
+**Objective-C**:
+
+```objective-c
+[renderEncoder setVertexAmplificationCount:2 viewMappings:nil];
+```
+
 Set the vertex amplification count parameter to a value that’s less than or equal to the [`maxVertexAmplificationCount`](mtlrenderpipelinedescriptor/maxvertexamplificationcount.md) property that configures the current render pipeline.
 
 You can also provide an array of [`MTLVertexAmplificationViewMapping`](mtlvertexamplificationviewmapping.md) instances as you configure vertex amplification. Apps typically provide view mappings to render to multiple textures or viewports with vertex amplification.
@@ -41,6 +75,54 @@ You can also provide an array of [`MTLVertexAmplificationViewMapping`](mtlvertex
 The following example sets the [`renderTargetArrayIndexOffset`](mtlvertexamplificationviewmapping/rendertargetarrayindexoffset.md) values to `0` and `1` for the first and second mappings, respectively. It also sets the [`viewportArrayIndexOffset`](mtlvertexamplificationviewmapping/viewportarrayindexoffset.md) values to `1` and `2` for the first and second mappings, respectively.
 
 The GPU adds these offsets to the vertex shader outputs with the corresponding attribute. In this example, the GPU adds `0` and `1` to the output value with the `[[render_target_array_index]]` attribute for the first and second pipeline invocations, respectively. It also adds `1` and `2` to the output value with the `[[viewport_array_index]]` attribute for the first and second pipeline invocations, respectively.
+
+**Swift**:
+
+```swift
+func configureEncoder(_ renderEncoder: MTLRenderCommandEncoder) {
+    // Create two mappings for vertex amplification.
+    var mapping0 = MTLVertexAmplificationViewMapping()
+    var mapping1 = MTLVertexAmplificationViewMapping()
+
+    // Set each mapping's index offset for a render target array.
+    mapping0.renderTargetArrayIndexOffset = 0
+    mapping1.renderTargetArrayIndexOffset = 1
+
+    // Set each mapping's index offset for a viewport array.
+    mapping0.viewportArrayIndexOffset = 1
+    mapping1.viewportArrayIndexOffset = 2
+
+    // Create an array of the two mappings.
+    let mappings = [mapping0, mapping1]
+
+    // Set the vertex amplification multiplier with view mappings.
+    renderEncoder.setVertexAmplificationCount(2, viewMappings: mappings)
+}
+```
+
+**Objective-C**:
+
+```objective-c
+- (void)configureEncoder:(id<MTLRenderCommandEncoder>) renderEncoder {
+    // Create two mappings for vertex amplification.
+    MTLVertexAmplificationViewMapping mapping0;
+    MTLVertexAmplificationViewMapping mapping1;
+
+    // Set each mapping's index offset for a render target array.
+    mapping0.renderTargetArrayIndexOffset = 0;
+    mapping1.renderTargetArrayIndexOffset = 1;
+
+    // Set each mapping's index offset for a viewport array.
+    mapping0.viewportArrayIndexOffset = 1;
+    mapping1.viewportArrayIndexOffset = 2;
+
+    // Create an array of the two mappings.
+    MTLVertexAmplificationViewMapping mappings[] = { mapping0, mapping1 };
+
+    // Set the vertex amplification multiplier.
+    [renderEncoder setVertexAmplificationCount:2 viewMappings:mappings];
+}
+```
 
 See the [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) for information about applying an attribute to a parameter of a GPU function (shader and kernel).
 
@@ -98,7 +180,7 @@ You can also invoke shaders that have these parameters with a draw call that’s
 
 ##### Mark Values Common to All Vertices As Shared
 
-You can help reduce the GPU’s runtime workload by annotating values that are the same for all amplification IDs of a vertex. The Metal compiler detects values that remain consistent across all amplification IDs as  values. You can also tell the compiler which values you consider shared by adding the `[[shared]]` attribute.
+You can help reduce the GPU’s runtime workload by annotating values that are the same for all amplification IDs of a vertex. The Metal compiler detects values that remain consistent across all amplification IDs as *shared* values. You can also tell the compiler which values you consider shared by adding the `[[shared]]` attribute.
 
 By default, the Metal shader compiler looks for shared values by detecting calculations that have the same value for all amplification IDs of a vertex. The compiler instructs the GPU to calculate these values once per vertex so that the GPU doesn’t calculate the same value for every amplification ID. For example, if the shader copies a value directly from an input, the compiler infers that as a shared value.
 
@@ -142,7 +224,7 @@ vertex VertexOut vs_main(VertexIn in[[stage_in]],
 
 The compiler can also infer other calculations as a shared value if a vertex’s calculation result is the same for all amplification IDs.
 
-Conversely, the compiler infers other calculations that vary across amplification IDs as . For example, a calculation that depends on the `[[amplification_id]]` parameter is a nonshared value because the amplification ID changes for each vertex copy.
+Conversely, the compiler infers other calculations that vary across amplification IDs as *nonshared*. For example, a calculation that depends on the `[[amplification_id]]` parameter is a nonshared value because the amplification ID changes for each vertex copy.
 
 ```metal
 struct VertexOut
@@ -207,7 +289,7 @@ vertex VertexOut vs_main(VertexIn in[[stage_in]],
 }
 ```
 
-> **Note**:  The Metal compiler infers all assignments to parameters with built-in attributes as  values, except for assignments to the `[[position]]` attribute.
+> **Note**:  The Metal compiler infers all assignments to parameters with built-in attributes as *shared* values, except for assignments to the `[[position]]` attribute.
 
 The compiler infers other calculations as shared values if it can prove the result is the same for all amplification IDs. However, you can explicitly designate a parameter as a shared value by adding the `[[shared]]` attribute as a hint to the shader compiler.
 
@@ -235,7 +317,7 @@ vertex VertexOut vs_main(VertexIn in[[stage_in]],
 
 ##### Combine Vertex Amplification with Primitive Instancing
 
- is another way to generate copies of vertex data by providing additional data that modifies the original vertices for each instance. For example, you might animate a model by altering its vertex data with a sequence of pose offsets, each corresponding to a frame of animation.
+*Primitive instancing* is another way to generate copies of vertex data by providing additional data that modifies the original vertices for each instance. For example, you might animate a model by altering its vertex data with a sequence of pose offsets, each corresponding to a frame of animation.
 
 Primitive instancing generates a copy of vertex data for each instance. If you encode a draw call with an instance count of `10`, the GPU invokes the render pipeline 10 times, once per instance. Unlike vertex amplification, the GPU recalculates all vertex output values each time it invokes your vertex shader.
 

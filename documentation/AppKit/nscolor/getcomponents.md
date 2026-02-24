@@ -20,7 +20,7 @@ You can invoke this method on `NSColor` objects created from custom color spaces
 
 ## Parameters
 
-- `components`: An array containing the components of the color object as   values.
+- `components`: An array containing the components of the color object as `float` values.
 
 ## See Also
 

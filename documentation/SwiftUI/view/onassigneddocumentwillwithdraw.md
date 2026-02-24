@@ -40,7 +40,7 @@ AssignedDocumentSubmissionButton(documentURL: documentURL)
 
 ## Parameters
 
-- `action`: An asynchronous closure that receives the document URL and   returns a Boolean value indicating whether to proceed. Return   to continue, or   to cancel.
+- `action`: An asynchronous closure that receives the document URL and returns a Boolean value indicating whether to proceed. Return `true` to continue, or `false` to cancel.
 
 ## See Also
 

@@ -26,8 +26,8 @@ class MPMusicPlayerController
 
 Create an instance of a music player to play media items in your app. There are two types of music players:
 
-- An  plays music locally within your app. It isn’t aware of the Music app’s Now Playing item, nor does it affect the Music app’s state. There are two application music players: [`applicationMusicPlayer`](mpmusicplayercontroller/applicationmusicplayer.md) and [`applicationQueuePlayer`](mpmusicplayercontroller/applicationqueueplayer.md). The application queue player provides greater control over the contents of the queue and is the preferred player.
-- The  employs the built-in Music app on your behalf. On instantiation, it takes on the current Music app state, such as the identification of the Now Playing item. If a user switches away from your app while music is playing, that music continues to play. The Music app then has your music player’s most recently-set repeat mode, shuffle mode, playback state, and Now Playing item.
+- An *application music player* plays music locally within your app. It isn’t aware of the Music app’s Now Playing item, nor does it affect the Music app’s state. There are two application music players: [`applicationMusicPlayer`](mpmusicplayercontroller/applicationmusicplayer.md) and [`applicationQueuePlayer`](mpmusicplayercontroller/applicationqueueplayer.md). The application queue player provides greater control over the contents of the queue and is the preferred player.
+- The *system music player* employs the built-in Music app on your behalf. On instantiation, it takes on the current Music app state, such as the identification of the Now Playing item. If a user switches away from your app while music is playing, that music continues to play. The Music app then has your music player’s most recently-set repeat mode, shuffle mode, playback state, and Now Playing item.
 
 Creating a new instance of `MPMusicPlayerController` and not specifying the player type returns a system music player.
 
@@ -41,8 +41,8 @@ The built-in Music and Videos apps can play media from shared libraries using Ho
 
 Users can initiate audio playback commands through an external headset or accessory.
 
-- If you use an , the system sends these commands as remote control events to your app, but you don’t provide code to handle them. The framework receives and handles the remote control events.
-- If you use the , your app uses the Music app to play audio, which means that the Music app is the Now Playing app. The Music app receives and handles the remote control events. For example, if your app plays audio using the system music player, and the user switches from your app to the iOS device’s Now Playing controls, the controls work as expected. That is, they can play or pause audio, or skip to the next and previous items.
+- If you use an *application music player*, the system sends these commands as remote control events to your app, but you don’t provide code to handle them. The framework receives and handles the remote control events.
+- If you use the *system music player*, your app uses the Music app to play audio, which means that the Music app is the Now Playing app. The Music app receives and handles the remote control events. For example, if your app plays audio using the system music player, and the user switches from your app to the iOS device’s Now Playing controls, the controls work as expected. That is, they can play or pause audio, or skip to the next and previous items.
 
 ## Topics
 

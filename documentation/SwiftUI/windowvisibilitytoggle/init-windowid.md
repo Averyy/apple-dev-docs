@@ -16,7 +16,7 @@ init(windowID: String) where Label == DefaultWindowVisibilityToggleLabel
 
 ## Parameters
 
-- `windowID`: The   of the singleton window type that   should be toggled. If this is not a valid id, the toggle will be   disabled and non-functional.
+- `windowID`: The `id` of the singleton window type that should be toggled. If this is not a valid id, the toggle will be disabled and non-functional.
 
 
 ---

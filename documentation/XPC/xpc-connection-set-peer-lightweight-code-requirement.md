@@ -33,7 +33,7 @@ When you set this requirement on a connection, the operating system checks that 
 ## Parameters
 
 - `connection`: The XPC connection.
-- `lwcr`: The lightweight code requirement to test for the peer process’s executable. Create an object of type   that represents the requirement, using keys and values from  .
+- `lwcr`: The lightweight code requirement to test for the peer process’s executable. Create an object of type [`XPC_TYPE_DICTIONARY`](xpc_type_dictionary-swift.var.md) that represents the requirement, using keys and values from [`Defining launch environment and library constraints`](https://developer.apple.com/documentation/Security/defining-launch-environment-and-library-constraints).
 
 ## See Also
 

@@ -23,7 +23,7 @@ optional func application(_ application: UIApplication, performActionFor shortcu
 
 Implement this method to respond to the user’s selection of a Home screen quick action for your app. When finished, call the completion handler, with an appropriate Boolean value.
 
-It’s your responsibility to ensure the system calls this method conditionally, depending on whether or not one of your app launch methods ([`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) or [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md)) has already handled a quick action invocation. The system calls a launch method (before calling this method) when a user selects a quick action for your app and your app  instead of .
+It’s your responsibility to ensure the system calls this method conditionally, depending on whether or not one of your app launch methods ([`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) or [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md)) has already handled a quick action invocation. The system calls a launch method (before calling this method) when a user selects a quick action for your app and your app *launches* instead of *activating*.
 
 The requested quick action might employ code paths different than those used otherwise when your app launches. For example, your app normally launches to display view A, but your app was launched in response to a quick action that needs view B. To handle such cases, upon launch, check whether your app is being launched via a quick action. Perform this check in your [`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) or [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) method by checking for the [`shortcutItem`](uiapplication/launchoptionskey/shortcutitem.md) launch option key. The [`UIApplicationShortcutItem`](uiapplicationshortcutitem.md) object is available as the value of the launch option key.
 
@@ -33,7 +33,7 @@ If you find that your app was indeed launched using a quick action, perform the 
 
 - `application`: Your shared app object.
 - `shortcutItem`: The quick action for which you’re providing an implementation in this method.
-- `completionHandler`: The block you call after your quick action implementation completes, returning   or   depending on the success or failure of your implementation code.
+- `completionHandler`: The block you call after your quick action implementation completes, returning [`true`](https://developer.apple.com/documentation/Swift/true) or [`false`](https://developer.apple.com/documentation/Swift/false) depending on the success or failure of your implementation code. - **succeeded**: A Boolean value that indicates whether or not your implementation succeeded.
 
 ## See Also
 

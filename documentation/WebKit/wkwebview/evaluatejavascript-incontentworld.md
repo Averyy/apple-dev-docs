@@ -26,8 +26,8 @@ The result of the script evaluation, or an error object that contains informatio
 ## Parameters
 
 - `javaScript`: The JavaScript string to evaluate.
-- `frame`: The frame in which to evaluate the JavaScript code. Specify   to target the main frame. If this frame is no longer valid when script evaluation begins, this method returns a   error.
-- `contentWorld`: The namespace in which to evaluate the JavaScript code. This parameter doesn’t apply to changes you make to the underlying web content, such as the document’s DOM structure. Those changes remain visible to all scripts, regardless of which content world you specify. For more information about content worlds, see  .
+- `frame`: The frame in which to evaluate the JavaScript code. Specify `nil` to target the main frame. If this frame is no longer valid when script evaluation begins, this method returns a [`WKError.Code.javaScriptInvalidFrameTarget`](wkerror/code/javascriptinvalidframetarget.md) error.
+- `contentWorld`: The namespace in which to evaluate the JavaScript code. This parameter doesn’t apply to changes you make to the underlying web content, such as the document’s DOM structure. Those changes remain visible to all scripts, regardless of which content world you specify. For more information about content worlds, see [`WKContentWorld`](wkcontentworld.md).
 
 ## See Also
 

@@ -30,7 +30,7 @@ A new [`MTLLibrary`](mtllibrary.md) instance if the method completes successfull
 
 ## Parameters
 
-- `url`: A URL to a Metal library file (ending in  ).
+- `url`: A URL to a Metal library file (ending in `.metallib`).
 
 ## See Also
 

@@ -43,7 +43,7 @@ The provider delivers network updates through an async sequence that you can fil
 - [WINetworkSharingProvider.AccessPointConnection](winetworksharingprovider/accesspointconnection.md)
   A Wi-Fi access point the host is currently connected to, which may be shared with a connected accessory.
 - [WINetworkSharingProvider.AccessPointConnectionEvent](winetworksharingprovider/accesspointconnectionevent.md)
-  An event that occurred, indicating an update to the available shared access points.
+  An event that indicates an update to the available shared access points.
 - [func accessPointConnectionEvents(matching: Predicate<WINetworkSharingProvider.AccessPointConnection>?) -> some Sendable & AsyncSequence<WINetworkSharingProvider.AccessPointConnectionEvent, any Error>
 ](winetworksharingprovider/accesspointconnectionevents(matching:).md)
   Returns an async sequence of access point events containing the currently connected access point(s) and future updates.

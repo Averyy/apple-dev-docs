@@ -3,7 +3,7 @@
 **Framework**: WebKit  
 **Kind**: var
 
-The base URL of the document containing the plug-in’s view. .
+The base URL of the document containing the plug-in’s view. *Required key*.
 
 **Availability**:
 - macOS 10.3+

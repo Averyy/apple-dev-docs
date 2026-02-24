@@ -26,7 +26,7 @@ A new endpoint object.
 
 ## Parameters
 
-- `connection`: Only connections obtained through calls to one of the   functions may be given to this API. Passing any other type of connection is not supported and will result in undefined behavior.
+- `connection`: Only connections obtained through calls to one of the `xpc_connection_create` functions may be given to this API. Passing any other type of connection is not supported and will result in undefined behavior.
 
 ## See Also
 

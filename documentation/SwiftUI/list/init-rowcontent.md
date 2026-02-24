@@ -24,7 +24,7 @@ Creates a list that computes its rows on demand from an underlying collection of
 ## Parameters
 
 - `data`: A collection of identifiable data for computing the list.
-- `rowContent`: A view builder that creates the view for a single row of   the list.
+- `rowContent`: A view builder that creates the view for a single row of the list.
 
 ## See Also
 

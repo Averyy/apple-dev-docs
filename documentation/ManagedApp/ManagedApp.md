@@ -17,9 +17,9 @@ Customize your app for managed deployments by providing configurable features th
 
 #### Overview
 
-This framework defines API to configure managed deployments of your app for installation on multiple devices, using mobile device management (MDM). An administrator determines the configuration of, or , your app for a specific company, school, or government by creating unique configurations for people within an organization.
+This framework defines API to configure managed deployments of your app for installation on multiple devices, using mobile device management (MDM). An administrator determines the configuration of, or *manages*, your app for a specific company, school, or government by creating unique configurations for people within an organization.
 
-The framework works in conjunction with [`Device Management`](https://developer.apple.com/documentation/DeviceManagement) to provide streamlined and secure access to  and . Secrets include passwords, certificates, and identities. Configuration includes general information, for example a server URL and its timeout in seconds.
+The framework works in conjunction with [`Device Management`](https://developer.apple.com/documentation/DeviceManagement) to provide streamlined and secure access to *secrets* and *configuration*. Secrets include passwords, certificates, and identities. Configuration includes general information, for example a server URL and its timeout in seconds.
 
 Enabling managed secrets and configuration lets an MDM admin customize the behavior of your app. For example, an MDM admin could configure an app to skip first-time setup and launch ready to use, with a person already logged in, and their app preferences or job-specific information present.
 

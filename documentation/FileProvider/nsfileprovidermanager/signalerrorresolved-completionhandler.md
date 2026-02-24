@@ -28,7 +28,7 @@ Use this method if any of your extension’s actions fail because of an [`NSFile
 ## Parameters
 
 - `error`: The original error.
-- `completionHandler`: A block that the system calls after resuming the action that triggered the original error. The block takes the following parameters:
+- `completionHandler`: A block that the system calls after resuming the action that triggered the original error. The block takes the following parameters: - **error**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 
 ---

@@ -30,7 +30,7 @@ The delegate can receive this message as a result of transforming a request’s 
 
 - `download`: The URL download object sending the message.
 - `request`: The proposed redirected request. The delegate should inspect the redirected request to verify that it meets its needs, and create a copy with new attributes to return to the connection if necessary.
-- `redirectResponse`: The URL response that caused the redirect. May be   in cases where this method is not being sent as a result of involving the delegate in redirect processing.
+- `redirectResponse`: The URL response that caused the redirect. May be `nil` in cases where this method is not being sent as a result of involving the delegate in redirect processing.
 
 ## See Also
 

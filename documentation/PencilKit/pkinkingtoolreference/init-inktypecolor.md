@@ -28,7 +28,7 @@ This method sets the line width to the value returned by [`defaultWidth(forInkTy
 
 ## Parameters
 
-- `type`: The shape of the tool. You may specify  ,  , or  .
+- `type`: The shape of the tool. You may specify [`PKInkTypeMarker`](pkinktypemarker.md), [`PKInkTypePen`](pkinktypepen.md), or [`PKInkTypePencil`](pkinktypepencil.md).
 - `color`: The color to apply to drawn lines.
 
 ## See Also

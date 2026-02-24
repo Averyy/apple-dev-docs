@@ -36,7 +36,7 @@ If your extension doesn’t recognize the item, you can just report success. The
 - `version`: The version of the item to delete.
 - `options`: The options for deleting the item.
 - `request`: An object that identifies the context of that request, such as the requesting app.
-- `completionHandler`: A block that you call after deleting the item from your remote storage. You pass the following parameter:
+- `completionHandler`: A block that you call after deleting the item from your remote storage. You pass the following parameter: - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

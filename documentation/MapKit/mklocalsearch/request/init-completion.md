@@ -30,7 +30,7 @@ Use this method when initializing your object from [`MKLocalSearchCompleter`](mk
 
 ## Parameters
 
-- `completion`: A search completion object that MapKit obtains from an   object. The search request uses the provided object to set the value of the   property.
+- `completion`: A search completion object that MapKit obtains from an [`MKLocalSearchCompleter`](mklocalsearchcompleter.md) object. The search request uses the provided object to set the value of the [`naturalLanguageQuery`](mklocalsearch/request/naturallanguagequery.md) property.
 
 ## See Also
 

@@ -7,6 +7,10 @@
 - iOS 14.0+
 - iPadOS 14.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [com.apple.developer.carplay-charging](entitlements/com.apple.developer.carplay-charging.md)

@@ -15,6 +15,11 @@ The request used to remove a profile from devices.
 object ClearProfileRequest
 ```
 
+## Properties
+
+- `devices` ([string]): An array of strings containing device serial numbers.
+- `profile_uuid` (string): The unique identifier for a profile.
+
 ## See Also
 
 - [object ClearProfileResponse](clearprofileresponse.md)

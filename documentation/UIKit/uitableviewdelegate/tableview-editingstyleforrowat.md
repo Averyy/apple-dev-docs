@@ -29,7 +29,7 @@ This method allows the delegate to customize the editing style of the cell locat
 ## Parameters
 
 - `tableView`: The table view requesting this information.
-- `indexPath`: An index path locating a row in  .
+- `indexPath`: An index path locating a row in `tableView`.
 
 ## See Also
 

@@ -17,6 +17,12 @@ The command to remove the passcode from a device.
 object ClearPasscodeCommand.Command
 ```
 
+## Properties
+
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+- `UnlockToken` (data) *(required)*: The unlock token value that the device provides in its `TokenUpdateMessage` check-in message.
+
 
 ---
 

@@ -33,7 +33,7 @@ If you call this method while there’s still media data to read, the system thr
 
 ## Parameters
 
-- `timeRanges`: An array of   objects, each representing a single   structure.
+- `timeRanges`: An array of [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) objects, each representing a single [`CMTimeRange`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange) structure.
 
 ## See Also
 

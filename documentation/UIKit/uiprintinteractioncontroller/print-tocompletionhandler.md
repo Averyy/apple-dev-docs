@@ -27,7 +27,7 @@ This method starts the print job and displays the printing progress indicator to
 
 ## Parameters
 
-- `printer`: The printer to use for printing. You can obtain a list of available printers using a   object.
+- `printer`: The printer to use for printing. You can obtain a list of available printers using a [`UIPrinterPickerController`](uiprinterpickercontroller.md) object.
 - `completion`: The block to execute when the print operation finishes.
 
 ## See Also

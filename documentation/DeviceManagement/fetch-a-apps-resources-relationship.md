@@ -7,6 +7,20 @@
 - Device Assignment Services ?+
 - VPP License Management ?+
 
+## Endpoint
+
+`GET https://api.ent.apple.com/v1/catalog/{storefront}/apps/{id}/{relationship}`
+
+## Parameters
+
+- `additionalPlatforms` ([string])
+- `extend` ([string])
+- `include` ([string])
+- `l` (string)
+- `limit` (integer)
+- `platform` (string) *(required)*
+- `relate` ([string])
+
 ## See Also
 
 - [Fetch a books resource's relationship](fetch-a-books-resource's-relationship.md)

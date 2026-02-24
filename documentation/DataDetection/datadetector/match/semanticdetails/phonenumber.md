@@ -22,7 +22,7 @@ case phoneNumber(DataDetector.Match.SemanticDetails.PhoneNumber)
 
 ## Parameters
 
-- `PhoneNumber`: A   structure.
+- `PhoneNumber`: A [`DataDetector.Match.SemanticDetails.PhoneNumber`](datadetector/match/semanticdetails/phonenumber.md) structure.
 
 
 ---

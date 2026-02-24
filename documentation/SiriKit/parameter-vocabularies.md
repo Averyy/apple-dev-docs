@@ -8,6 +8,14 @@ The keys you include in your global vocabulary file to describe app-specific ter
 
 The `ParameterVocabularies` key contains the custom terminology that is global to all users of your app. This key contains an array of dictionaries, each of which defines a set of terms and the intent properties to which those terms apply. The keys for the dictionary are as follows:
 
+- **`ParameterNames`**: (Required) An array of strings, each of which contains a key path for a property name from an intent class. For example, to specify a custom ride option for a ride request intent, specify the key path `INRequestRideIntent.rideOptionName`.
+- **`ParameterVocabulary`**: (Required) An array of dictionaries containing the custom terms to associate with the specified properties. Each dictionary contains the following keys.
+- **`VocabularyItemIdentifier`**: (Required) The string that Siri assigns to the identifier property of the `INSpeakableString` object when it recognizes your custom vocabulary. This identifier applies to all synonyms.
+- **`VocabularyItemSynonyms`**: (Required) An array of dictionaries that define the phrases for Siri to recognize. Use the following keys in the dictionary to specify the phrase, pronunciation hints, and examples:
+- **`VocabularyItemPhrase`**: (Required) A string containing the custom phrase that you want to define. Spell the phrase the same way that your app uses it.
+- **`VocabularyItemPronunciation`**: (Optional) A string containing pronunciation hints for the phrase, formatted in a “sounds like” format. For example, the pronunciation for the phrase “iTunes” might be “eye toons”.
+- **`VocabularyItemExamples`**: (Optional) An array of strings, each of which contains examples of how to use the phrase.
+
 Xcode helps you add terms to your vocabulary file. When you create a property list file with the name `AppIntentVocabulary.plist`, Xcode knows that the file should contain custom vocabulary, and it makes only the relevant keys available in the property list editor. The figure below shows an example of a global vocabulary file in Xcode that contains custom terms for a workout app.
 
 ![Editing the global vocabulary file](https://docs-assets.developer.apple.com/published/9cea7ae6cc69228cd25dc898c1b88a34/media-2910038%402x.png)

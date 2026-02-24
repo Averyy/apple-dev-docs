@@ -42,7 +42,7 @@ Your implementation of this method may use any data in the provided `coder` to a
 
 ## Parameters
 
-- `identifierComponents`: An array of   objects corresponding to the restoration identifiers of the desired view controller and all of its ancestors in the view controller hierarchy. The last value in the array is the restoration identifier of the desired view controller. Earlier entries represent the restoration identifiers of its ancestors.
+- `identifierComponents`: An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects corresponding to the restoration identifiers of the desired view controller and all of its ancestors in the view controller hierarchy. The last value in the array is the restoration identifier of the desired view controller. Earlier entries represent the restoration identifiers of its ancestors.
 - `coder`: The keyed archiver containing the app’s saved state information.
 
 

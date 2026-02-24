@@ -24,7 +24,7 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 ###### Known Issues
 
-- In widgets `Text(_:style:)` doesn’t animate its content by default.  (107582710)  To explicitly request an animation, use the `View.contentTransition(_:)` modifier.
+- In widgets `Text(_:style:)` doesn’t animate its content by default.  (107582710) **Workaround:** To explicitly request an animation, use the `View.contentTransition(_:)` modifier.
 
 ##### Iphone 12 in France
 

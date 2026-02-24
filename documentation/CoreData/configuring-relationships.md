@@ -34,9 +34,17 @@ After creating a pair of relationships, configure each relationship as indicated
 
 The above example shows a `Quake` entity’s `countries` relationship, referring to one or more countries a given earthquake affects. It has an inverse relationship on the `Country` entity called `quakes`, referring to any earthquakes affecting that country.
 
+- **Transient**: Transient relationships aren’t saved to the persistent store. So transient relationships are useful to temporarily store calculated or derived values. Core Data does track changes to transient property values for undo purposes.
+- **Optional**: Optional relationships aren’t required to have any instances of their destination type. A required relationship must point to one or more instances of the destination type.
+- **Destination**: Each relationship points from a source entity (the entity whose relationships you’re editing) to a destination entity. The destination entity is a related type that affects and is affected by the source type.
+
 Setting the same source and destination types creates a reflexive relationship. For example, an `Employee` may manage another `Employee`.
 
+- **Inverse**: Inverse relationships enable Core Data to propagate change in both directions when an instance of either the source or destination type changes. Every relationship must have an inverse.
+
 When creating relationships in the Graph editor, you add inverse relationships between entities in a single step. When creating relationships in the Table editor, you add inverse relationships to each entity individually.
+
+- **Delete Rule**: A relationship’s delete rule specifies how changes propagate across relationships when Core Data deletes a source instance.
 
 Select No Action to delete the source object instance, but leave references to it in any destination object instances, which you update manually.
 
@@ -46,13 +54,17 @@ Select Cascade to delete the source object instance, and with it, all of the des
 
 Select Deny to delete the source object only if it doesn’t point to any destination object instances.
 
+- **Cardinality Type**: Specify a relationship as being To One or To Many, which is known as its cardinality.
+
 Use To One relationships to connect the source with a single instance of the destination type.
 
 Use To Many relationships to connect the source with a mutable set of the destination type, and to optionally specify an arrangement and count:
 
-Arrangement—Select the Ordered checkbox to specify that the relationship has an inherent ordering, and to generate an  mutable set.
+Arrangement—Select the Ordered checkbox to specify that the relationship has an inherent ordering, and to generate an *ordered* mutable set.
 
 Count—You can also place upper and lower limits on the number of destination instances. For optional relationships, the number of instances can be zero or within these bounds.
+
+- **Index in Spotlight**: Includes the field in the Spotlight index. For more information, see [`Core Spotlight`](https://developer.apple.com/documentation/CoreSpotlight).
 
 ## See Also
 

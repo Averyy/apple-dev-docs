@@ -12,9 +12,13 @@ In most cases, you don’t need to do a lot to support Apple Intelligence featur
 
 When you want to enhance your features by using the on-device large language model powering Apple Intelligence, see [`Foundation Models`](foundation-models.md).
 
+---
+
 #### Add Visual Searching Capabilities
 
 To help people find more information about the places and objects around them, [`Integrating your app with visual intelligence`](https://developer.apple.com/documentation/VisualIntelligence/integrating-your-app-with-visual-intelligence). People can use visual intelligence to receive information about objects they scan using the Camera Control [`on supported iPhone models`](https://developer.apple.comhttps://support.apple.com/guide/iphone/use-the-camera-control-iph0c397b154/ios). The framework provides information about what it detects, and uses App Intents to exchange that information with your app.
+
+---
 
 #### Enhance Peoples Writing Process in Your App
 
@@ -24,11 +28,15 @@ To help people improve the quality of their writing, add proofreading and rewrit
 - Display text using the standard text views whenever possible, and use the configuration options to [`Customizing Writing Tools behavior for UIKit views`](https://developer.apple.com/documentation/UIKit/customizing-writing-tools-behavior-for-system-views).
 - Use the Writing Tools API if you have a [`UIWritingToolsResultOptions`](https://developer.apple.com/documentation/UIKit/UIWritingToolsResultOptions) or can’t use the system text views.
 
+---
+
 #### Generate Creative Images From a Concept
 
 To provide a way for people to personalize images, add support for [`Image Playground`](https://developer.apple.com/documentation/ImagePlayground). The framework provides the same interface you see in the [`Image Playground`](https://developer.apple.comhttps://apps.apple.com/us/app/image-playground/id6479176117) app, and lets people generate custom images by typing in what they want, or pairing an existing image with a description. The framework passes that information through an Apple Intelligence model to generate a stylized image for you to use in your app, like for a profile photo.
 
 Your app can also [`ImageCreator`](https://developer.apple.com/documentation/ImagePlayground/ImageCreator), by taking the same type of input to generate images asynchronously and return them to your app.
+
+---
 
 #### Manage Genmoji in Your Apps Text
 

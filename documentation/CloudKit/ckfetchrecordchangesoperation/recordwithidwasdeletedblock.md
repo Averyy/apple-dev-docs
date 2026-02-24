@@ -24,6 +24,8 @@ var recordWithIDWasDeletedBlock: ((CKRecord.ID) -> Void)? { get set }
 
 The block returns no value and takes the following parameters:
 
+- **`recordID`**: The ID of the deleted record.
+
 The operation object executes this block once for each record the server deletes in the record zone after the previous fetch request. Each time the block executes, it executes serially with respect to the other progress blocks of the operation. If there aren’t any deleted records, this block doesn’t execute.
 
 If you intend to use this block to process results, set it before executing the operation or submitting it to a queue.

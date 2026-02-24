@@ -29,7 +29,7 @@ You specify this callback with [`CFMessagePortSetInvalidationCallBack(_:_:)`](cf
 ## Parameters
 
 - `ms`: The message port that has been invalidated.
-- `info`: The   member of the   structure that was used when creating  , if   is a local port;   if   is a remote port.
+- `info`: The `info` member of the [`CFMessagePortContext`](cfmessageportcontext.md) structure that was used when creating `ms`, if `ms` is a local port; `NULL` if `ms` is a remote port.
 
 ## See Also
 

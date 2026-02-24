@@ -25,8 +25,8 @@ A new labeled value object.
 
 ## Parameters
 
-- `label`: A string value for the label portion of the object, or   if the value doesn’t have a label.
-- `value`: A value for the labeled value object. For valid values, see   properties that are arrays of labeled value objects.
+- `label`: A string value for the label portion of the object, or `nil` if the value doesn’t have a label.
+- `value`: A value for the labeled value object. For valid values, see [`CNContact`](cncontact.md) properties that are arrays of labeled value objects.
 
 
 ---

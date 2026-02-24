@@ -37,7 +37,7 @@ See [`subscript(_:)`](mldatatable/subscript(_:)-10r4l.md) from [`MLDataTable`](m
 
 ## Parameters
 
-- `mask`: An untyped column indicating whether elements should be removed   (a default value) or included (any nondefault value) in the derived   column.
+- `mask`: An untyped column indicating whether elements should be removed (a default value) or included (any nondefault value) in the derived column.
 
 ## See Also
 

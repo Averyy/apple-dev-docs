@@ -23,7 +23,7 @@ static func applyActivation(activation: BNNS.ActivationFunction, axes: [Int], in
 ## Parameters
 
 - `activation`: The activation that the function applies.
-- `axes`: The indices of the axes on which the function applies certain activation functions, such as  .
+- `axes`: The indices of the axes on which the function applies certain activation functions, such as [`softmax`](bnnsactivationfunction/softmax.md).
 - `input`: The descriptor of the input.
 - `output`: The descriptor of the output.
 - `batchSize`: The number of input-output pairs.

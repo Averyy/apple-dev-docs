@@ -28,11 +28,11 @@ On return, the caller owns the returned CMBlockBuffer, and must release it when 
 
 ## Parameters
 
-- `allocator`: Allocator to use for allocating the   object. May be  .
-- `videoFormatDescription`: The   to be copied.
-- `stringEncoding`: Pass   or  .
-- `flavor`:   constant or   for QuickTimeMovie flavor.
-- `blockBufferOut`: Receives a new   containing ImageDescription data structure in big-endian byte ordering.
+- `allocator`: Allocator to use for allocating the `CMBlockBuffer` object. May be `NULL`.
+- `videoFormatDescription`: The `CMVideoFormatDescription` to be copied.
+- `stringEncoding`: Pass [`CFStringGetSystemEncoding()`](https://developer.apple.com/documentation/CoreFoundation/CFStringGetSystemEncoding()) or `GetApplicationTextEncoding`.
+- `flavor`: `kCMImageDescriptionFlavor` constant or `NULL` for QuickTimeMovie flavor.
+- `blockBufferOut`: Receives a new `CMBlockBuffer` containing ImageDescription data structure in big-endian byte ordering.
 
 ## See Also
 

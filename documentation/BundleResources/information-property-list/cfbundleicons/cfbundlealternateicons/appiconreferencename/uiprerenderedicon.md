@@ -10,6 +10,10 @@
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [CFBundleIconFiles](information-property-list/cfbundleicons/cfbundlealternateicons/appiconreferencename/cfbundleiconfiles.md)

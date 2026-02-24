@@ -22,16 +22,16 @@ convenience init?(inputA: BNNSNDArrayDescriptor, transposed transposeA: Bool, is
 
 ## Parameters
 
-- `inputA`: The descriptor of matrix  .
-- `transposeA`: A Boolean value that transposes the last two dimensions of matrix  .
-- `aIsWeights`: A Boolean value that determines whether to treat matrix   as weights.
-- `inputB`: The descriptor of matrix  .
-- `transposeB`: A Boolean value that transposes the last two dimensions of matrix  .
-- `bIsWeights`: A Boolean value that determines whether to treat matrix   as weights.
+- `inputA`: The descriptor of matrix *A*.
+- `transposeA`: A Boolean value that transposes the last two dimensions of matrix *A*.
+- `aIsWeights`: A Boolean value that determines whether to treat matrix *A* as weights.
+- `inputB`: The descriptor of matrix *B*.
+- `transposeB`: A Boolean value that transposes the last two dimensions of matrix *B*.
+- `bIsWeights`: A Boolean value that determines whether to treat matrix *B* as weights.
 - `output`: The descriptor of the output.
 - `alpha`: A value to scale the result.
 - `accumulatesToOutput`: A Boolean value that specifies whether to add the result to the existing output.
-- `isQuadratic`: A Boolean value that determines whether the operation multiplies matrix   by itself.
+- `isQuadratic`: A Boolean value that determines whether the operation multiplies matrix *A* by itself.
 - `filterParameters`: The filter runtime parameters.
 
 

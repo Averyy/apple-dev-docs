@@ -30,7 +30,7 @@ Call the [`addTarget(handler:)`](mpremotecommand/addtarget(handler:).md) method 
 
 ## Parameters
 
-- `handler`: A block object to handle the  .
+- `handler`: A block object to handle the [`MPRemoteCommandEvent`](mpremotecommandevent.md).
 
 ## See Also
 

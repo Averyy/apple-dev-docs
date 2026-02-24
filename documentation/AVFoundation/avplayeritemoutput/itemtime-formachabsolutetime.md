@@ -26,7 +26,7 @@ The equivalent time in the item’s timebase.
 
 ## Parameters
 
-- `machAbsoluteTime`: The Mach host time to convert. You typically retrieve this value using the   function.
+- `machAbsoluteTime`: The Mach host time to convert. You typically retrieve this value using the `mach_absolute_time` function.
 
 ## See Also
 

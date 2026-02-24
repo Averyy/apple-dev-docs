@@ -10,6 +10,32 @@ Listing 1 shows how you might implement the event handler in a sprite. The handl
 
 Listing 1. Transitioning to a new scene
 
+**Swift**:
+
+```swift
+override func mouseUp(with event: NSEvent) {
+    run(buttonPressAnimation)
+    let reveal = SKTransition.reveal(with: .down,
+                                     duration: 1)
+    let newScene = GameConfigScene(size: CGSize(width: 1024, height: 768))
+    
+    scene.view.presentScene(newScene,
+                            transition: reveal)
+}
+```
+
+**Obj-C**:
+
+```objc
+- (void)mouseUp:(NSEvent *)theEvent
+{
+    [self runAction: self.buttonPressAnimation];
+    SKTransition *reveal = [SKTransition revealWithDirection:SKTransitionDirectionDown duration:1.0];
+    GameConfigScene *newScene = [[GameConfigScene alloc] initWithSize: CGSizeMake(1024,768)]];
+    [self.scene.view presentScene: newScene transition: reveal];
+}
+```
+
 When the transition occurs, the scene property is immediately updated to point to the new scene. Then, the animation occurs. Finally, the strong reference to the old scene is removed. If you need to keep the scene around after the transition occurs, your app needs to keep its own strong reference to the old scene.
 
 When organizing your game, it can be helpful to create a diagram that shows all the scenes in a game, the transitions that occur between scenes, and the data that must be passed to the new scene when a transition occurs. Unlike view controllers in iOS, SpriteKit does not provide a built-in mechanism for passing data between scenes. If you need to provide data during a scene transition, you need to implement your own mechanism to configure the new scene. Typically, this means defining custom methods and properties on each scene.

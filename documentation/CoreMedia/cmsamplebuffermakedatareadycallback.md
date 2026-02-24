@@ -27,7 +27,7 @@ This callback must make the data ready (e.g. force a scheduled read to finish). 
 ## Parameters
 
 - `sbuf`: The sample buffer to make ready.
-- `makeDataReadyRefcon`: For example, it could point at info about the scheduled read that needs to be forced to finish.
+- `makeDataReadyRefcon`: Client refcon provided to `CMSampleBufferCreate`. For example, it could point at info about the scheduled read that needs to be forced to finish.
 
 
 ---

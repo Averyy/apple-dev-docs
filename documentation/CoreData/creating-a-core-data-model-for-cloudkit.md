@@ -18,10 +18,10 @@ CloudKit doesn’t support all the features of a Core Data model. As you design 
 
 | Core Data model element | CloudKit schema limitation |
 | --- | --- |
-|  | Unique constraints aren’t supported. |
-|  | `Undefined` and [`objectID`](nsmanagedobject/objectid.md) attribute types aren’t supported. |
-|  | All relationships must be optional. Due to operation size limitations, CloudKit may not save relationship changes atomically. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) All relationships must have an inverse, in case the records synchronize out of order. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) CloudKit doesn’t support the Deny deletion rule. |
-|  | Entities in a configuration must not have relationships to entities in another configuration. |
+| **Entities** | Unique constraints aren’t supported. |
+| **Attributes** | `Undefined` and [`objectID`](nsmanagedobject/objectid.md) attribute types aren’t supported. |
+| **Relationships** | All relationships must be optional. Due to operation size limitations, CloudKit may not save relationship changes atomically. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) All relationships must have an inverse, in case the records synchronize out of order. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) CloudKit doesn’t support the Deny deletion rule. |
+| **Configurations** | Entities in a configuration must not have relationships to entities in another configuration. |
 
 For more information about how Core Data translates managed objects to CloudKit records, see [`Reading CloudKit Records for Core Data`](reading-cloudkit-records-for-core-data.md).
 

@@ -23,7 +23,7 @@ If the `animated` property of [`setActive(_:animated:)`](arcoachingoverlayview/s
 ## Parameters
 
 - `active`: A flag you set to indicate whether the coaching overlay should activate or deactivate.
-- `animated`: A flag that when  , fades the coaching overlay in or out. When you pass a value of  , the coaching overlay shows or hides instantly.
+- `animated`: A flag that when [`true`](https://developer.apple.com/documentation/Swift/true), fades the coaching overlay in or out. When you pass a value of [`false`](https://developer.apple.com/documentation/Swift/false), the coaching overlay shows or hides instantly.
 
 ## See Also
 

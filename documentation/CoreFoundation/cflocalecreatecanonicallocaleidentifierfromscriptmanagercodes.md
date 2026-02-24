@@ -26,7 +26,7 @@ A canonical locale identifier created by mapping `lcode` and `rcode` to a locale
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `lcode`: A macOS language code.
 - `rcode`: A macOS region code.
 

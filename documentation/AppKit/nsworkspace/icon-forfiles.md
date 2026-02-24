@@ -26,7 +26,7 @@ You can safely call this method from any thread of your app.
 
 ## Parameters
 
-- `fullPaths`: An array of   objects, each of which contains the full path to a file.
+- `fullPaths`: An array of `NSString` objects, each of which contains the full path to a file.
 
 ## See Also
 

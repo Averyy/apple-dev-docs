@@ -8,6 +8,12 @@ A Boolean value that indicates whether text fields receive AutoFill of one-time 
 **Availability**:
 - macOS 26.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 In macOS 26 and later, all macOS apps that support typing text also enable Security Code AutoFill of delivered codes. These are the one-time codes received by Messages or Mail as part of an authentication flow.

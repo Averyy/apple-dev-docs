@@ -31,7 +31,7 @@ A gesture that triggers `action` when this gesture’s value changes.
 
 ## Parameters
 
-- `action`: The action to perform when this gesture’s value   changes. The   closure’s parameter contains the gesture’s new   value.
+- `action`: The action to perform when this gesture’s value changes. The `action` closure’s parameter contains the gesture’s new value.
 
 ## See Also
 

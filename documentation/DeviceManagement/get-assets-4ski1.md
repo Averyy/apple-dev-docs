@@ -20,6 +20,87 @@ Get the set of assets that your organization manages.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+?pageIndex=0&pricingParam=STDQ&productType=App
+```
+
+**Response**:
+
+```json
+{
+    "assets": [
+        {
+            "adamId": "408709785",
+            "assignedCount": 5000,
+            "availableCount": 10000,
+            "deviceAssignable": true,
+            "pricingParam": "STDQ",
+            "productType": "App",
+            "retiredCount": 0,
+            "revocable": true,
+            "supportedPlatforms": ["iOS"],
+            "totalCount": 15000
+        },
+        {
+            "adamId": "377298193",
+            "assignedCount": 5000,
+            "availableCount": 10000,
+            "deviceAssignable": true,
+            "pricingParam": "STDQ",
+            "productType": "App",
+            "retiredCount": 0,
+            "revocable": true,
+            "supportedPlatforms": ["iOS"],
+            "totalCount": 15000
+        },
+        {
+            "adamId": "361309726",
+            "assignedCount": 5000,
+            "availableCount": 10000,
+            "deviceAssignable": true,
+            "pricingParam": "STDQ",
+            "productType": "App",
+            "retiredCount": 0,
+            "revocable": true,
+            "supportedPlatforms": ["iOS"],
+            "totalCount": 15000
+        },
+        {
+            "adamId": "361304891",
+            "assignedCount": 5000,
+            "availableCount": 10000,
+            "deviceAssignable": true,
+            "pricingParam": "STDQ",
+            "productType": "App",
+            "retiredCount": 0,
+            "revocable": true,
+            "supportedPlatforms": ["iOS"],
+            "totalCount": 15000
+        },
+        {
+            "adamId": "361285480",
+            "assignedCount": 5000,
+            "availableCount": 10000,
+            "deviceAssignable": true,
+            "pricingParam": "STDQ",
+            "productType": "App",
+            "retiredCount": 0,
+            "revocable": true,
+            "supportedPlatforms": ["iOS"],
+            "totalCount": 15000
+        }
+    ],
+    "currentPageIndex": 0,
+    "size": 5,
+    "tokenExpirationDate": "2030-11-08T22:33:22+0000",
+    "totalPages": 1,
+    "uId": "2049025000431439",
+    "versionId": "70e8c740-514c-11eb-bb63-a90b882fcd52"
+}
+```
+
 ## Topics
 
 ### Response
@@ -30,6 +111,23 @@ Get the set of assets that your organization manages.
 ### Content Metadata
 - [Apps and Books for Organizations](apps-and-books-for-organizations.md)
   Get details about apps and books to show to your users.
+
+## Endpoint
+
+`GET https://vpp.itunes.apple.com/mdm/v2/assets`
+
+## Parameters
+
+- `pageIndex` (int32): The requested page index.
+- `productType` (string): The filter for the asset product type.
+- `pricingParam` (string): The filter for the asset product quality.
+- `revocable` (boolean): The filter for asset revocability.
+- `deviceAssignable` (boolean): The filter for asset device assignability.
+- `maxAvailableCount` (int32): The filter for the maximum inclusive assets available count.
+- `minAvailableCount` (int32): The filter for the minimum inclusive assets available count.
+- `maxAssignedCount` (int32): The filter for the maximum inclusive assets assigned count.
+- `minAssignedCount` (int32): The filter for the minimum inclusive assets assigned count.
+- `adamId` (string): The filter for the asset product unique identifier.
 
 ## See Also
 

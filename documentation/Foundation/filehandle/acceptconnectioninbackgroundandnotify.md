@@ -28,7 +28,7 @@ You must call this method from a thread that has an active run loop.
 
 ##### Special Considerations
 
-The receiver must be created by an [`init(fileDescriptor:)`](filehandle/init(filedescriptor:).md) message that takes as an argument a stream-type socket created by the appropriate system routine, . In other words, you must `bind()` the socket, and ensure that the socket has a connection backlog defined by `listen()`.
+The receiver must be created by an [`init(fileDescriptor:)`](filehandle/init(filedescriptor:).md) message that takes as an argument a stream-type socket created by the appropriate system routine, *and that is being listened on*. In other words, you must `bind()` the socket, and ensure that the socket has a connection backlog defined by `listen()`.
 
 The object that will write data to the returned file handle must add itself as an observer of [`NSFileHandleConnectionAccepted`](nsnotification/name-swift.struct/nsfilehandleconnectionaccepted.md).
 

@@ -25,8 +25,8 @@ This method initiates a layout change programmatically, notifying you when the t
 ## Parameters
 
 - `layout`: The new layout object for the collection view.
-- `animated`: Specify   if you want to animate changes from the current layout to the new layout specified by the   parameter. Specify   to make the change without animations.
-- `completion`: The block that’s executed when the layout transition finishes or is terminated by the user. This block takes the following parameter:
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if you want to animate changes from the current layout to the new layout specified by the `layout` parameter. Specify [`false`](https://developer.apple.com/documentation/Swift/false) to make the change without animations.
+- `completion`: The block that’s executed when the layout transition finishes or is terminated by the user. This block takes the following parameter: - **finished**: A Boolean indicating whether the transition completed successfully. This parameter is [`true`](https://developer.apple.com/documentation/Swift/true) if the transition finished and the new layout is installed. It’s [`false`](https://developer.apple.com/documentation/Swift/false) if the user aborted the transition and returned to the old layout.
 
 ## See Also
 

@@ -6,7 +6,7 @@ Manage and use payment cards and other credentials.
 
 #### Overview
 
-You can use the [`SecureElementCredential`](SecureElementCredential.md) framework to store, manage, and use , for example, contactless payment cards, transit passes, and corporate badges, that the system stores in the device’s Secure Element. The person using your app can then authenticate with features like Face ID and Touch ID to use their credentials.
+You can use the [`SecureElementCredential`](SecureElementCredential.md) framework to store, manage, and use *credentials*, for example, contactless payment cards, transit passes, and corporate badges, that the system stores in the device’s Secure Element. The person using your app can then authenticate with features like Face ID and Touch ID to use their credentials.
 
 `SecureElementCredential` provides UIKit and SwiftUI APIs to handle user authentication, and to temporarily give your app exclusive use of the device when presenting the credential. You can also receive notifications of credential-handling events. These include events like proximity to an NFC card reader, or the person performing a credential gesture like double tapping the side button of an iPhone.
 

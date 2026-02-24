@@ -25,6 +25,10 @@ object ManagedApplicationListResponse.ManagedApplicationList
 - [object ManagedApplicationListResponse.ManagedApplicationList.ANY app identifier](managedapplicationlistresponse/managedapplicationlist-data.dictionary/any-app-identifier-data.dictionary.md)
   The bundle identifier of the managed app.
 
+## Properties
+
+- `ANY app identifier` (ManagedApplicationListResponse.ManagedApplicationList.ANY app identifier) *(required)*: The bundle identifier of the managed app.
+
 ## See Also
 
 - [object ManagedApplicationListResponse.ErrorChainItem](managedapplicationlistresponse/errorchainitem.md)

@@ -26,8 +26,8 @@ When this method is called in an animation block defined by the [`beginUpdates()
 
 ## Parameters
 
-- `indexPaths`: An array of   objects identifying the rows to reload.
-- `animation`: The animation constant affects the direction in which both the old and the new rows slide. For example, if the animation constant is  , the old rows slide out to the right and the new cells slide in from the right.
+- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects identifying the rows to reload.
+- `animation`: A constant that indicates how the reloading is to be animated, for example, fade out or slide out from the bottom. See [`UITableView.RowAnimation`](uitableview/rowanimation.md) for descriptions of these constants. The animation constant affects the direction in which both the old and the new rows slide. For example, if the animation constant is [`UITableView.RowAnimation.right`](uitableview/rowanimation/right.md), the old rows slide out to the right and the new cells slide in from the right.
 
 ## See Also
 

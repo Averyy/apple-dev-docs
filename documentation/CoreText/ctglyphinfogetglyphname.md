@@ -26,7 +26,7 @@ A glyph name, if the glyph info object was created with a name; otherwise, `NULL
 
 ## Parameters
 
-- `glyphInfo`: The glyph info object from which to get the glyph name. This parameter must not be  .
+- `glyphInfo`: The glyph info object from which to get the glyph name. This parameter must not be `NULL`.
 
 ## See Also
 

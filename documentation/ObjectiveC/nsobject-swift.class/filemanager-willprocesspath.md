@@ -22,8 +22,8 @@ You can implement this method in your handler to monitor file operations.
 
 ## Parameters
 
-- `fm`: The   object that sent this message.
-- `path`: The path or a file or directory that   is about to attempt to move, copy, rename, delete, or link to.
+- `fm`: The `NSFileManager` object that sent this message.
+- `path`: The path or a file or directory that `manager` is about to attempt to move, copy, rename, delete, or link to.
 
 ## See Also
 

@@ -31,7 +31,7 @@ This function allows the caller to provide OCSPResponse data (which may be obtai
 ## Parameters
 
 - `trust`: The trust evaluation object to modify.
-- `responseData`: Either a   object containing a single DER-encoded OCSPResponse (per  ), or a   of these.
+- `responseData`: Either a [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) object containing a single DER-encoded OCSPResponse (per [`RFC2560`](https://developer.apple.comhttps://tools.ietf.org/html/rfc2560)), or a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) of these.
 
 
 ---

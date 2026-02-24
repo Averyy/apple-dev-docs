@@ -32,7 +32,7 @@ The return value is a single floating point value that contains the sum of the a
 
 - `N`: Number of elements in the vector.
 - `X`: Source vector
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
 
 ## See Also
 

@@ -27,8 +27,8 @@ By default, the texture at each index is `nil`.
 
 ## Parameters
 
-- `textures`: An array of   instances the command assigns to entries in the object shader argument table for textures.
-- `range`: A span of integers that represent the entries in the object shader argument table for textures. Each entry stores a record of the corresponding element in  .
+- `textures`: An array of [`MTLTexture`](mtltexture.md) instances the command assigns to entries in the object shader argument table for textures.
+- `range`: A span of integers that represent the entries in the object shader argument table for textures. Each entry stores a record of the corresponding element in `textures`.
 
 ## See Also
 

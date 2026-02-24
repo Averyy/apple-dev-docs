@@ -35,7 +35,7 @@ Once you fulfill the configuration, your [`UIContextMenuInteractionDelegate`](ht
 
 ## Parameters
 
-- `configuration`: The calculated configuration for the contextual menu. To avoid presenting the contextual menu, pass  .
+- `configuration`: The calculated configuration for the contextual menu. To avoid presenting the contextual menu, pass `nil`.
 
 
 ---

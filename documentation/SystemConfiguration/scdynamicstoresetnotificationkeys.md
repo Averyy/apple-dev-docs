@@ -21,8 +21,8 @@ func SCDynamicStoreSetNotificationKeys(_ store: SCDynamicStore, _ keys: CFArray?
 ## Parameters
 
 - `store`: The dynamic store session being watched.
-- `keys`: An array of keys to be monitored or   if no specific keys are to be monitored.
-- `patterns`: An array of regex(3) pattern strings used to match keys to be monitored or   if no key patterns are to be monitored.
+- `keys`: An array of keys to be monitored or `NULL` if no specific keys are to be monitored.
+- `patterns`: An array of regex(3) pattern strings used to match keys to be monitored or `NULL` if no key patterns are to be monitored.
 
 ## See Also
 

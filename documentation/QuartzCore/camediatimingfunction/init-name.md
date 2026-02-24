@@ -25,7 +25,7 @@ A new instance of `CAMediaTimingFunction` with the timing function specified by 
 
 ## Parameters
 
-- `name`: The timing function to use as specified in  .
+- `name`: The timing function to use as specified in [`Predefined Timing Functions`](predefined-timing-functions.md).
 
 ## See Also
 

@@ -44,12 +44,12 @@ If the relationship is bi-directional (that is, if an inverse relationship is sp
 
 The following points also apply:
 
-- Primitive accessor methods are only supported on  properties. If you invoke a primitive accessor on an unmodeled property, it will instead operate upon a random modeled property. (The debug libraries and frameworks from (available from the [`Apple Developer Website`](https://developer.apple.comhttp://developer.apple.com/)) have assertions to test for passing unmodeled keys to these methods.)
+- Primitive accessor methods are only supported on *modeled* properties. If you invoke a primitive accessor on an unmodeled property, it will instead operate upon a random modeled property. (The debug libraries and frameworks from (available from the [`Apple Developer Website`](https://developer.apple.comhttp://developer.apple.com/)) have assertions to test for passing unmodeled keys to these methods.)
 - You are strongly encouraged to use the dynamically-generated accessors rather than using this method directly (for example, `setPrimitiveName:` instead of `setPrimitiveValue:newName forKey:@"name"`). The dynamic accessors are much more efficient, and allow for compile-time checking.
 
 ## Parameters
 
-- `value`: The new value for the property specified by  .
+- `value`: The new value for the property specified by `key`.
 - `key`: The name of one of the receiver’s properties.
 
 ## See Also

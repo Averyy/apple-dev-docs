@@ -34,9 +34,9 @@ If an error occurs, the method returns `nil` and sets the `error` parameter to a
 
 ## Parameters
 
-- `url`: An   object specifying the document to load.
-- `options`: Attributes for interpreting the document contents. Specify the   or   option to interpret the data as a specific type. When sharing files between different platforms, specify the   or   options for any required text scaling behaviors. Specify the   attribute for plain-text files. Specify the   key to apply document attributes to the returned string. If you specify an empty dictionary, the method identifies the data format from the data itself.
-- `dict`: An in-out dictionary containing document-level attributes. On output, this method updates the dictionary to contain any document-specific keys found in the data. Specify   if you don’t want the document attributes.
+- `url`: An `NSURL` object specifying the document to load.
+- `options`: Attributes for interpreting the document contents. Specify the [`documentType`](nsattributedstring/documentattributekey/documenttype.md) or [`fileType`](nsattributedstring/documentreadingoptionkey/filetype.md) option to interpret the data as a specific type. When sharing files between different platforms, specify the [`sourceTextScaling`](nsattributedstring/documentreadingoptionkey/sourcetextscaling.md) or [`targetTextScaling`](nsattributedstring/documentreadingoptionkey/targettextscaling.md) options for any required text scaling behaviors. Specify the [`characterEncoding`](nsattributedstring/documentattributekey/characterencoding.md) attribute for plain-text files. Specify the [`defaultAttributes`](nsattributedstring/documentattributekey/defaultattributes.md) key to apply document attributes to the returned string. If you specify an empty dictionary, the method identifies the data format from the data itself.
+- `dict`: An in-out dictionary containing document-level attributes. On output, this method updates the dictionary to contain any document-specific keys found in the data. Specify `nil` if you don’t want the document attributes.
 
 ## See Also
 

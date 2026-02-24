@@ -26,9 +26,9 @@ If the factorization is `A=QR` and the system is underdetermined, the solution o
 
 ## Parameters
 
-- `Factored`: A factorization of  .
-- `XB`: On entry, the right-hand sides  . On return, the solution vectors   . If   has dimension  , then   must have dimension  ,   where   and nrhs is the number of right-hand sides to find   solutions for.
-- `workspace`: Scratch space of size   .   This memory must be 16-byte aligned (any allocation returned   by   has this property).
+- `Factored`: A factorization of `A`.
+- `XB`: On entry, the right-hand sides `B`. On return, the solution vectors `X`. If `A` has dimension `m x n`, then `XB` must have dimension `k x nrhs`, where `k=max(m,n)` and nrhs is the number of right-hand sides to find solutions for.
+- `workspace`: Scratch space of size `Factored.solveWorkspaceRequiredStatic + nrhs * Factored.solveWorkspaceRequiredPerRHS * 2`. This memory must be 16-byte aligned (any allocation returned by `malloc()` has this property).
 
 ## See Also
 

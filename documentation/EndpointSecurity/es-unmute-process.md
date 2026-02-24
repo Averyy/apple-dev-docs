@@ -24,7 +24,7 @@ To unmute a subset of events from a process, use [`es_unmute_process_events(_:_:
 
 ## Parameters
 
-- `client`: A previously-muted client. If the call succeeds, this client begins to receive events from the process indicated by  .
+- `client`: A previously-muted client. If the call succeeds, this client begins to receive events from the process indicated by `audit_token`.
 - `audit_token`: The audit token indicating the process to unmute.
 
 ## See Also

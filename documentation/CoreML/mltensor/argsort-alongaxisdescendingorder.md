@@ -36,8 +36,8 @@ await y.shapedArray(of: Int32.self) // is [0, 2, 1]
 
 ## Parameters
 
-- `axis`: The axis along which to sort. The default is  , which sorts the last axis.
-- `descendingOrder`: A Boolean value that determines the sort order. The default is   which   sorts from largest to least.
+- `axis`: The axis along which to sort. The default is `-1`, which sorts the last axis.
+- `descendingOrder`: A Boolean value that determines the sort order. The default is `false` which sorts from largest to least.
 
 ## See Also
 

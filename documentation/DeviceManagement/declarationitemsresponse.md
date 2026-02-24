@@ -30,6 +30,11 @@ object DeclarationItemsResponse
 - [object ManifestDeclaration](manifestdeclaration.md)
   A dictionary that describes a declaration.
 
+## Properties
+
+- `Declarations` (DeclarationItemsResponse.ManifestDeclarationItems) *(required)*: The set of available declarations on the server.
+- `DeclarationsToken` (string) *(required)*: The current value of the declarations token. Clients use this to detect when declarations change so they can refetch the token.
+
 
 ---
 

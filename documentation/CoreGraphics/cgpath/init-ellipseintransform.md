@@ -35,7 +35,7 @@ The ellipse forms a complete subpath of the path—that is, the ellipse drawing 
 ## Parameters
 
 - `rect`: The rectangle that bounds the ellipse.
-- `transform`: A pointer to an affine transformation matrix, or   if no transformation is needed. If specified, Core Graphics applies the transformation to the ellipse before it is added to the path.
+- `transform`: A pointer to an affine transformation matrix, or `NULL` if no transformation is needed. If specified, Core Graphics applies the transformation to the ellipse before it is added to the path.
 
 ## See Also
 

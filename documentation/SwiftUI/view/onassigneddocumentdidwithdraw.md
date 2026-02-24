@@ -37,7 +37,7 @@ AssignedDocumentSubmissionButton(documentURL: documentURL)
 
 ## Parameters
 
-- `action`: An asynchronous closure that receives the document URL and   executes after successful submission withdrawal.
+- `action`: An asynchronous closure that receives the document URL and executes after successful submission withdrawal.
 
 ## See Also
 

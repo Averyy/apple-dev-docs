@@ -22,7 +22,7 @@ Use the [`identity()`](sfchooseidentitypanel/identity().md) method to obtain the
 
 ## Parameters
 
-- `identities`: An array of identity objects (objects of type  . Use the   function (in Security/SecIdentitySearch.h) to find identity objects.
+- `identities`: An array of identity objects (objects of type [`SecIdentity`](https://developer.apple.com/documentation/Security/SecIdentity). Use the [`SecIdentitySearchCopyNext`](https://developer.apple.com/documentation/Security/SecIdentitySearchCopyNext) function (in Security/SecIdentitySearch.h) to find identity objects.
 - `message`: A message string to display in the panel.
 
 ## See Also

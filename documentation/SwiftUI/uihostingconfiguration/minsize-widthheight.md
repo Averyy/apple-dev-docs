@@ -31,8 +31,8 @@ UIHostingConfiguration {
 
 ## Parameters
 
-- `width`: The value to use for the width dimension. A value of    indicates that the system default should be used.
-- `height`: The value to use for the height dimension. A value   of   indicates that the system default should be used.
+- `width`: The value to use for the width dimension. A value of `nil` indicates that the system default should be used.
+- `height`: The value to use for the height dimension. A value of `nil` indicates that the system default should be used.
 
 ## See Also
 

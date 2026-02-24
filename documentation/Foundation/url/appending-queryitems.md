@@ -22,7 +22,7 @@ func appending(queryItems: [URLQueryItem]) -> URL
 
 ## Parameters
 
-- `queryItems`: An array of   instances to append to the URL.
+- `queryItems`: An array of [`URLQueryItem`](urlqueryitem.md) instances to append to the URL.
 
 ## See Also
 

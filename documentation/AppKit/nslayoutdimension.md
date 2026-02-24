@@ -18,6 +18,26 @@ class NSLayoutDimension
 
 Use these constraints to programmatically define your layout using Auto Layout. All sizes are measured in points. In addition to providing size-specific methods for creating constraints, this class adds type information to the methods inherited from [`NSLayoutAnchor`](nslayoutanchor.md). Specifically, the generic methods declared by [`NSLayoutAnchor`](nslayoutanchor.md) must now take a matching [`NSLayoutDimension`](nslayoutdimension.md) object.
 
+**Swift**:
+
+```swift
+// This code works as expected.
+saveButton.widthAnchor.constraint(equalTo: cancelButton.widthAnchor).isActive = true
+
+// This code generates an incompatible pointer type warning.
+saveButton.widthAnchor.constraint(equalTo: cancelButton.leadingAnchor).isActive = true
+```
+
+**Objective-C**:
+
+```objc
+// This code works as expected.
+[self.saveButton.widthAnchor constraintEqualToAnchor:self.cancelButton.widthAnchor].active = YES;
+ 
+// This code generates an incompatible pointer type warning.
+[self.saveButton.widthAnchor constraintEqualToAnchor:self.cancelButton.leadingAnchor].active = YES;
+```
+
 For more information on using layout anchors, see [`NSLayoutAnchor`](nslayoutanchor.md).
 
 ## Topics

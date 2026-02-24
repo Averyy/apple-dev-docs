@@ -22,7 +22,7 @@ init(from decoder: any Decoder) throws
 
 ## Parameters
 
-- `decoder`: The decoder of a previously-encoded   instance.
+- `decoder`: The decoder of a previously-encoded [`Subscribers.Demand`](subscribers/demand.md) instance.
 
 ## See Also
 

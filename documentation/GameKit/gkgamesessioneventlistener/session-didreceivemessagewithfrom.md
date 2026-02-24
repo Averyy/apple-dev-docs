@@ -26,8 +26,8 @@ This event fires after the [`sendMessage(withLocalizedFormatKey:arguments:data:t
 ## Parameters
 
 - `session`: The game session the sending player is associated with.
-- `message`: A   containing the message sent to other players.
-- `data`: Any data associated with the message. The value of this parameter can be  .
+- `message`: A `String` containing the message sent to other players.
+- `data`: Any data associated with the message. The value of this parameter can be `nil`.
 - `player`: The player who sent the message.
 
 ## See Also

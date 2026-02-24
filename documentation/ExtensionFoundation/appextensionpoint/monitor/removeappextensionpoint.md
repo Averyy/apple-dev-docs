@@ -26,7 +26,7 @@ This method updates the state of the monitor, removing the specified extension p
 
 ## Parameters
 
-- `appExtensionPoint`: An extension point that you define in your host app. If the   monitor isn’t currently monitoring the extension point, calling this method has no impact.
+- `appExtensionPoint`: An extension point that you define in your host app. If the monitor isn’t currently monitoring the extension point, calling this method has no impact.
 
 ## See Also
 

@@ -29,6 +29,14 @@ This method applies a CMYK halftone filter to an image. The effect generates an 
 
 The CMYK halftone filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`angle`**: A `float` representing the angle of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`width`**: A `float` representing the distance between dots in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`sharpness`**: A `float` representing the sharpness of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`grayComponentReplacement`**: A `float` representing the grey component to be replaced as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`underColorRemoval`**: A `float` representing the under-color removal value as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code produces an image with visible dots and less color:
 
 ```swift

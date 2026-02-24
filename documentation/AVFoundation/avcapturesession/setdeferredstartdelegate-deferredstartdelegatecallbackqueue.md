@@ -34,7 +34,7 @@ If [`deferredStartDelegate`](avcapturesession/deferredstartdelegate.md) is not `
 
 ## Parameters
 
-- `deferredStartDelegate`: An object conforming to the   protocol that receives events about deferred start.
+- `deferredStartDelegate`: An object conforming to the [`AVCaptureSessionDeferredStartDelegate`](avcapturesessiondeferredstartdelegate.md) protocol that receives events about deferred start.
 - `deferredStartDelegateCallbackQueue`: A dispatch queue on which deferredStart delegate methods are called.
 
 ## See Also

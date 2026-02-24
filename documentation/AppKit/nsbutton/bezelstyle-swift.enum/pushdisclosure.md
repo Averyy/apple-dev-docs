@@ -18,6 +18,22 @@ case pushDisclosure
 
 Use this style of button when you want your button to look like a disclosure button, commonly seen in toolbars on macOS.
 
+**Swift**:
+
+```swift
+let button = NSButton()
+button.title = ""
+button.bezelStyle = .pushDisclosure
+```
+
+**Objective-C**:
+
+```objc
+NSButton *button = [[NSButton alloc] init];
+button.title = @"";
+button.bezelStyle = NSBezelStylePushDisclosure;
+```
+
 For design guidance, see [`Human Interface Guidelines > Buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/buttons).
 
 ## See Also

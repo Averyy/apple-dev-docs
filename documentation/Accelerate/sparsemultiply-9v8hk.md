@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Performs the multiply operation   on a dense matrix of single-precision values and without any internal memory allocations.
+Performs the multiply operation *Y* *= Subfactor * X* on a dense matrix of single-precision values and without any internal memory allocations.
 
 **Availability**:
 - iOS 11.0+
@@ -22,19 +22,19 @@ func SparseMultiply(_ Subfactor: SparseOpaqueSubfactor_Float, _ X: DenseMatrix_F
 
 ## Parameters
 
-- `Subfactor`: The subfactor to multiply by, which   returns.
-- `X`: The matrix  .
-- `Y`: The matrix  .
-- `workspace`: A workspace of size       where   is the number of right-hand-side vectors.
+- `Subfactor`: The subfactor to multiply by, which [`SparseCreateSubfactor(_:_:)`](sparsecreatesubfactor(_:_:)-4renf.md) returns.
+- `X`: The matrix *X*.
+- `Y`: The matrix *Y*.
+- `workspace`: A workspace of size `workspaceRequiredStatic` `+ nrhs *` `workspaceRequiredPerRHS` where `nrhs` is the number of right-hand-side vectors.
 
 ## See Also
 
 - [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseMatrix_Double, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:)-20xvs.md)
-  Performs the multiply operation  , in place on a dense matrix of double-precision values and without any internal memory allocations.
+  Performs the multiply operation *Y* *= Subfactor * X*, in place on a dense matrix of double-precision values and without any internal memory allocations.
 - [func SparseMultiply(SparseOpaqueSubfactor_Float, DenseMatrix_Float, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:)-6thvw.md)
-  Performs the multiply operation  , in place on a dense matrix of single-precision values and without any internal memory allocations.
+  Performs the multiply operation *Y* *= Subfactor * X*, in place on a dense matrix of single-precision values and without any internal memory allocations.
 - [func SparseMultiply(SparseOpaqueSubfactor_Double, DenseMatrix_Double, DenseMatrix_Double, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:_:)-2osop.md)
-  Performs the multiply operation   on a dense matrix of double-precision values and without any internal memory allocations.
+  Performs the multiply operation *Y* *= Subfactor * X* on a dense matrix of double-precision values and without any internal memory allocations.
 - [func SparseMultiply(SparseOpaqueSubfactor_Complex_Float, DenseMatrix_Complex_Float, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:)-6strd.md)
   Perform the multiply operation `Y = Subfactor * X `for complex float values, in place.
 - [func SparseMultiply(SparseOpaqueSubfactor_Complex_Double, DenseMatrix_Complex_Double, UnsafeMutableRawPointer)](sparsemultiply(_:_:_:)-7mdi8.md)

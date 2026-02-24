@@ -12,7 +12,7 @@ The macOS 15.4 SDK provides support to develop apps for Mac computers running Se
 
 ###### Known Issues
 
-- After restoring macOS 15.4, some Apple Intelligence features might not be available or you might see “Downloading support…”.  (145297891)  Restarting your device might resolve the issue.
+- After restoring macOS 15.4, some Apple Intelligence features might not be available or you might see “Downloading support…”.  (145297891) **Workaround:** Restarting your device might resolve the issue.
 
 ##### Automatic Assessment Configuration
 
@@ -24,7 +24,7 @@ The macOS 15.4 SDK provides support to develop apps for Mac computers running Se
 
 ###### Known Issues
 
-- After updating to macOS 15.4 beta, you might experience issues with loading installed drivers.  (145330084) (FB16547388)  Go to System Settings > General > Login Items & Extensions and disable your affected driver extensions. Restart your Mac. After restarting, go back to System Settings > General > Login Items & Extensions and re-enable the affected driver extensions.
+- After updating to macOS 15.4 beta, you might experience issues with loading installed drivers.  (145330084) (FB16547388) **Workaround:** Go to System Settings > General > Login Items & Extensions and disable your affected driver extensions. Restart your Mac. After restarting, go back to System Settings > General > Login Items & Extensions and re-enable the affected driver extensions.
 
 ##### Fskit
 
@@ -42,7 +42,7 @@ The macOS 15.4 SDK provides support to develop apps for Mac computers running Se
 
 ###### Known Issues
 
-- Availability checking is disabled for C APIs in hvf.  (147323772)  To enable availability checking, add this ahead of any headers: ```None
+- Availability checking is disabled for C APIs in hvf.  (147323772) **Workaround:** To enable availability checking, add this ahead of any headers: ```None
  #define BUILD_FOR_APPLE_SDK 1
 ```
 
@@ -94,7 +94,7 @@ The macOS 15.4 SDK provides support to develop apps for Mac computers running Se
 
 ###### Known Issues
 
-- Calling `isEligibleForIntroOffer(for:)` will return false if there is no user account signed in.  (146119524)  The user should sign in with their App Store account to request introductory offer eligibility.
+- Calling `isEligibleForIntroOffer(for:)` will return false if there is no user account signed in.  (146119524) **Workaround:** The user should sign in with their App Store account to request introductory offer eligibility.
 
 ###### Deprecations
 

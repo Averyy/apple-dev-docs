@@ -25,8 +25,8 @@ Override this method to accept and load the data for a document. After `UIDocume
 
 ## Parameters
 
-- `contents`: An object encapsulating the document data to load. This object is either an instance of the   class (for flat files) or the   class (for file packages).
-- `typeName`: The file type of the document, a Uniform Type Identifier (UTI) based on the file extension of  . You can obtain the default value of the file type from the   property.
+- `contents`: An object encapsulating the document data to load. This object is either an instance of the [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) class (for flat files) or the [`FileWrapper`](https://developer.apple.com/documentation/Foundation/FileWrapper) class (for file packages).
+- `typeName`: The file type of the document, a Uniform Type Identifier (UTI) based on the file extension of [`fileURL`](uidocument/fileurl.md). You can obtain the default value of the file type from the [`fileType`](uidocument/filetype.md) property.
 
 ## See Also
 

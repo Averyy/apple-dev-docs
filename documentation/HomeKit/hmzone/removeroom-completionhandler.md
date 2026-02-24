@@ -20,7 +20,7 @@ func removeRoom(_ room: HMRoom) async throws
 ## Parameters
 
 - `room`: The room to remove.
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

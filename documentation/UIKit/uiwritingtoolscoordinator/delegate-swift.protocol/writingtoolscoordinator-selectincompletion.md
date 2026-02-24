@@ -28,10 +28,10 @@ As Writing Tools suggests changes to your view’s text, it calls this method to
 
 ## Parameters
 
-- `writingToolsCoordinator`: The coordinator object making the change   to your view.
-- `ranges`: One or more ranges of text to select. Each range is relative   to the text in your context object, and it’s your responsibility to   match each location to the correct location in your text storage. If   you initialized the context object with the entire contents of your   view’s text storage, you can use the ranges as-is to access that text   storage. However, if you initialized the context object with only a   portion of your view’s text, add the starting location of your context   object’s text to each value to get the correct range for that text storage.
+- `writingToolsCoordinator`: The coordinator object making the change to your view.
+- `ranges`: One or more ranges of text to select. Each range is relative to the text in your context object, and it’s your responsibility to match each location to the correct location in your text storage. If you initialized the context object with the entire contents of your view’s text storage, you can use the ranges as-is to access that text storage. However, if you initialized the context object with only a portion of your view’s text, add the starting location of your context object’s text to each value to get the correct range for that text storage.
 - `context`: The context object you use to identify the associated text storage.
-- `completion`: The completion handler to execute when your delegate finishes updating   the selection. The handler has no parameters or return value. You must   call this handler at some point during the implementation of your method.
+- `completion`: The completion handler to execute when your delegate finishes updating the selection. The handler has no parameters or return value. You must call this handler at some point during the implementation of your method.
 
 ## See Also
 

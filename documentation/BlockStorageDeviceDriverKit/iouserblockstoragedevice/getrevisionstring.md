@@ -20,7 +20,7 @@ A value that indicates the get-revision-string result. Return [`kIOReturnSuccess
 
 ## Parameters
 
-- `revision`: An in/out   parameter. On output, populate this structure with the revision string.
+- `revision`: An in/out [`DeviceString`](devicestring.md) parameter. On output, populate this structure with the revision string.
 
 ## See Also
 

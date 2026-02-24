@@ -28,7 +28,7 @@ FFERR_NOTDOWNLOADED
 ## Parameters
 
 - `effectReference`: An opaque reference handle to an effect object. This is obtained from a previous call to FFDeviceCreateEffect.
-- `pFlags`: The effect is emulated.
+- `pFlags`: Pointer to status flags for the effect. The value can be 0 or one or more of the following constants: FFEGES_PLAYING The effect is playing. FFEGES_EMULATED The effect is emulated.
 
 ## See Also
 

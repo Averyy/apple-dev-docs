@@ -47,7 +47,7 @@ The effect of tracking resembles that of the [`kerning(_:)`](text/kerning(_:).md
 
 ## Parameters
 
-- `tracking`: The amount of additional space, in points, that   the view should add to each character cluster after layout. Value of    sets the tracking to the system default value.
+- `tracking`: The amount of additional space, in points, that the view should add to each character cluster after layout. Value of `0` sets the tracking to the system default value.
 
 ## See Also
 

@@ -32,7 +32,7 @@ To schedule timers, use the methods of the [`DispatchSourceTimer`](dispatchsourc
 
 ## Parameters
 
-- `flags`: Additional flags indicating the behavior of the timer. For a list of possible values, see  .
+- `flags`: Additional flags indicating the behavior of the timer. For a list of possible values, see [`DispatchSource.TimerFlags`](dispatchsource/timerflags.md).
 - `queue`: The dispatch queue to which to execute the installed handlers.
 
 ## See Also

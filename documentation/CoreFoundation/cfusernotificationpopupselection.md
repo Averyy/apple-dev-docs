@@ -20,7 +20,7 @@ A flag that can be used to set the selected element of a pop-up menu when creati
 
 ## Parameters
 
-- `n`: The index of the pop-up menu element to select. The index corresponds to the order in which the pop-up menu elements are listed in the   array of the user notification’s description dictionary.   must be in the range   to  .
+- `n`: The index of the pop-up menu element to select. The index corresponds to the order in which the pop-up menu elements are listed in the [`kCFUserNotificationPopUpTitlesKey`](kcfusernotificationpopuptitleskey.md) array of the user notification’s description dictionary. `idx` must be in the range `0` to `255`.
 
 ## See Also
 

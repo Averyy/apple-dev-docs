@@ -20,8 +20,8 @@ Updates the `UIGestureRecognizer` (and coordinator) to the latest configuration.
 
 ## Parameters
 
-- `recognizer`: An instance of the represented gesture   recognizer.
-- `context`: A context structure containing information about   the current state of the system, such as the current coordinator   instance.
+- `recognizer`: An instance of the represented gesture recognizer.
+- `context`: A context structure containing information about the current state of the system, such as the current coordinator instance.
 
 
 ---

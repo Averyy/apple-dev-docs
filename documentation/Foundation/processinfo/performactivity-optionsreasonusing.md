@@ -26,7 +26,7 @@ The activity will be automatically ended after `block` returns.
 
 ## Parameters
 
-- `options`: Options for the activity. See   for possible values.
+- `options`: Options for the activity. See [`ProcessInfo.ActivityOptions`](processinfo/activityoptions.md) for possible values.
 - `reason`: A string used in debugging to indicate the reason the activity began.
 - `block`: A block containing the work to be performed by the activity.
 

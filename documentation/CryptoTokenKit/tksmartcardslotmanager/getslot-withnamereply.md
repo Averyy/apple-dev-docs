@@ -23,7 +23,7 @@ func getSlot(withName name: String) async -> TKSmartCardSlot?
 ## Parameters
 
 - `name`: The name of the Smart Card reader slot.
-- `reply`: 
+- `reply`: - **slot**: The Smart Card reader slot corresponding to the specified name. If no slot exists with that name, this argument is `nil`.
 
 ## See Also
 

@@ -25,8 +25,8 @@ Filter services can be used to convert the contents of the URL into a format rec
 ## Parameters
 
 - `url`: The URL of the document to open.
-- `options`: The option keys for importing the document. For a list of possible values, see “Option keys for importing documents” in  .
-- `dict`: On return, contains the document attributes. For a list of possible values, see “Document Attributes” in  .
+- `options`: The option keys for importing the document. For a list of possible values, see “Option keys for importing documents” in [`NSAttributedString`](nsattributedstring.md).
+- `dict`: On return, contains the document attributes. For a list of possible values, see “Document Attributes” in [`NSAttributedString`](nsattributedstring.md).
 
 ## See Also
 

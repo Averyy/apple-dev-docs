@@ -28,8 +28,8 @@ Call this method from your NewUserClient method when the system asks you to crea
 ## Parameters
 
 - `provider`: The provider to associate with the new service object. Always specify the current service object as the provider.
-- `propertiesKey`: The name of a property associated with the current service. The value of this property must be an   object, and the dictionary should contain the  ,  , and   matching keys.
-- `result`: The service object for the newly created service. The class of this object is the one you specified using the   in the   dictionary This method retains the object, and you are responsible for releasing it.
+- `propertiesKey`: The name of a property associated with the current service. The value of this property must be an [`OSDictionary`](osdictionary.md) object, and the dictionary should contain the [`kIOClassKey`](https://developer.apple.com/documentation/iokit/kioclasskey), [`kIOUserClassKey`](https://developer.apple.com/documentation/iokit/kiouserclasskey), and [`kIOServiceDEXTEntitlementsKey`](https://developer.apple.com/documentation/iokit/kioservicedextentitlementskey) matching keys.
+- `result`: The service object for the newly created service. The class of this object is the one you specified using the [`kIOClassKey`](https://developer.apple.com/documentation/iokit/kioclasskey) in the `propertiesKey` dictionary This method retains the object, and you are responsible for releasing it.
 
 ## See Also
 

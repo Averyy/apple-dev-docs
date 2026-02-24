@@ -27,8 +27,8 @@ If your custom layout container creates a cache by implementing the [`makeCache(
 
 ## Parameters
 
-- `cache`: Storage for calculated data that you share among   the methods of your custom layout container.
-- `subviews`: A collection of proxy instances that represent the   views arranged by the container. You can use the proxies in the   collection to get information about the subviews as you   calculate values to store in the cache.
+- `cache`: Storage for calculated data that you share among the methods of your custom layout container.
+- `subviews`: A collection of proxy instances that represent the views arranged by the container. You can use the proxies in the collection to get information about the subviews as you calculate values to store in the cache.
 
 ## See Also
 

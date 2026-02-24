@@ -40,7 +40,7 @@ print(stringArrayColumn) // Prints [["Array", "of", "strings", "1"], ["Array", "
 
 ## Parameters
 
-- `column`: An   of elements convertible to an    of   .
+- `column`: An [`MLDataColumn`](mldatacolumn.md) of elements convertible to an [`Array`](https://developer.apple.com/documentation/Swift/Array) of [`String`](https://developer.apple.com/documentation/Swift/String).
 
 ## See Also
 

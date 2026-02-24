@@ -6,7 +6,7 @@ Check whether your Metal app correctly reads and writes to memory by measuring t
 
 #### Overview
 
-The Instruments developer tool and the Metal debugger’s Performance timeline provide bandwidth counters (see [`Analyzing the performance of your Metal app`](analyzing-the-performance-of-your-metal-app.md) and [`Analyzing Apple GPU performance using a visual timeline`](analyzing-apple-gpu-performance-using-a-visual-timeline.md), respectively). The GPU bandwidth counters measure how much, in gigabytes per second, the GPU reads and writes, or  memory.
+The Instruments developer tool and the Metal debugger’s Performance timeline provide bandwidth counters (see [`Analyzing the performance of your Metal app`](analyzing-the-performance-of-your-metal-app.md) and [`Analyzing Apple GPU performance using a visual timeline`](analyzing-apple-gpu-performance-using-a-visual-timeline.md), respectively). The GPU bandwidth counters measure how much, in gigabytes per second, the GPU reads and writes, or *accesses* memory.
 
 You may want your app to use a high amount of bandwidth for some activities — such as copying data quickly to save time — and lower bandwidth for others to save energy or to let the CPU and other processes access memory. If the GPU’s memory bandwidth usage is high when you don’t expect it to be, it may impede the CPU’s memory accesses.
 

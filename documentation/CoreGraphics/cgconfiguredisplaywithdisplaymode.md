@@ -27,10 +27,10 @@ Using this function to change the mode of a display in a mirroring set might cau
 
 ## Parameters
 
-- `config`: A display configuration you aquire by calling  .
+- `config`: A display configuration you aquire by calling [`CGBeginDisplayConfiguration(_:)`](cgbegindisplayconfiguration(_:).md).
 - `display`: The identifier of the display to configure.
 - `mode`: A display mode to configure.
-- `options`: Reserved for future expansion. Pass   for now.
+- `options`: Reserved for future expansion. Pass `NULL` for now.
 
 ## See Also
 

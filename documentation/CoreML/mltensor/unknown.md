@@ -1,9 +1,9 @@
-# -=(_:_:)
+# .==(_:_:)
 
 **Framework**: Core ML  
 **Kind**: op
 
-Computes element-wise subtraction.
+Computes element-wise equality between two tensors.
 
 **Availability**:
 - iOS 18.0+
@@ -17,8 +17,12 @@ Computes element-wise subtraction.
 ## Declaration
 
 ```swift
-static func -= (lhs: inout MLTensor, rhs: MLTensor)
+static func .== (lhs: MLTensor, rhs: MLTensor) -> MLTensor
 ```
+
+#### Return Value
+
+A Boolean tensor where each element is true if `self` is equal to than the corresponding element of `other`, and false otherwise.
 
 #### Discussion
 
@@ -38,14 +42,14 @@ Shapes must be broadcastable, where the broadcasted shape becomes the shape of t
   Returns the negation of the tensor.
 - [static -(_:_:)](mltensor/-(_:_:).md)
   Computes element-wise subtraction.
+- [static func -= (inout MLTensor, MLTensor)](mltensor/-=(_:_:).md)
+  Computes element-wise subtraction.
 - [static func .! (MLTensor) -> MLTensor](mltensor/'.!(_:).md)
   Computes logical not on the tensor’s elements.
 - [static .!=(_:_:)](mltensor/'.!=(_:_:).md)
   Computes element-wise inequality between two tensors.
 - [static func .& (MLTensor, MLTensor) -> MLTensor](mltensor/'.&(_:_:).md)
   Computes element-wise logical AND where both operands are expected contain Boolean scalar elements.
-- [static .==(_:_:)](mltensor/'.==(_:_:).md)
-  Computes element-wise equality between two tensors.
 - [static .>(_:_:)](mltensor/'._(_:_:)-3m3ro.md)
   Computes element-wise greater comparison between two tensors.
 - [static .<(_:_:)](mltensor/'._(_:_:)-6kfoh.md)
@@ -60,4 +64,4 @@ Shapes must be broadcastable, where the broadcasted shape becomes the shape of t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coreml/mltensor/-=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/coreml/mltensor/'.==(_:_:))*

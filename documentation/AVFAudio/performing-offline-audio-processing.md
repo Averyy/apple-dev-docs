@@ -13,7 +13,7 @@ You commonly use [`AVAudioEngine`](avaudioengine.md) to add advanced real-time a
 
 ![Flow diagram showing an app using an audio engine in a real-time context. The audio flows from the app to a player node, then to a mixer node, followed by the output node, and ultimately to the device speaker or connected headphones.](https://docs-assets.developer.apple.com/published/7dde6099f292530041b1e699e27d9ec3/realtime.png)
 
-You can also use `AVAudioEngine` to perform  audio processing by enabling the engine’s offline manual rendering mode.  In this mode, the engine’s input and output nodes are disconnected from the audio hardware and the rendering is driven by your app. You use offline manual rendering mode to perform advanced postprocessing tasks, such as applying effects or performing audio analysis, usually much faster than you can do in real time.
+You can also use `AVAudioEngine` to perform *offline* audio processing by enabling the engine’s offline manual rendering mode.  In this mode, the engine’s input and output nodes are disconnected from the audio hardware and the rendering is driven by your app. You use offline manual rendering mode to perform advanced postprocessing tasks, such as applying effects or performing audio analysis, usually much faster than you can do in real time.
 
 ![Flow diagram showing an app using an audio engine in an offline context. The audio flows from the app to a player node, then to an effect node, followed by the output node, and finally back to the app to write the processed audio to disk.](https://docs-assets.developer.apple.com/published/f6a15fd001f0ceebcd185b9ba077250c/offline.png)
 

@@ -11,6 +11,10 @@ The name of the app extension’s main storyboard file.
 - macOS 10.10+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key is mutually exclusive with [`NSExtensionPrincipalClass`](information-property-list/nsextension/nsextensionprincipalclass.md). Typically, Xcode sets the value of this key when creating an App Extension target in your project. If you change the name of your storyboard file, remember to update the value of this key.

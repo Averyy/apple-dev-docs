@@ -25,7 +25,7 @@ When the central manager makes a connection that matches the options, it calls t
 
 ## Parameters
 
-- `options`: A dictionary that specifies options for connection events. See   for a list of possible options.
+- `options`: A dictionary that specifies options for connection events. See [`Peripheral Connection Options`](peripheral-connection-options.md) for a list of possible options.
 
 ## See Also
 

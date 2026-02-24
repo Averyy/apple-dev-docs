@@ -33,7 +33,7 @@ This function is thread safe. The function gets the data in a thread-safe way, b
 
 ## Parameters
 
-- `theService`: The CFNetService whose domain is to be obtained; cannot be  .
+- `theService`: The CFNetService whose domain is to be obtained; cannot be `NULL`.
 
 ## See Also
 

@@ -10,6 +10,10 @@ An entitlement that indicates the app participates in single sign-on (SSO) durin
 - iPadOS 13.0+
 - macOS 10.15+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Adopt this entitlement to inform the system that your app authenticates the person enrolling a device into device management, reducing the number of times the person needs to sign in to your service. For more information, see [`Onboarding users with account sign-in`](https://developer.apple.com/documentation/DeviceManagement/onboarding-users-with-account-sign-in).

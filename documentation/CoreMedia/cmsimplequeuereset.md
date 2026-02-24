@@ -30,7 +30,7 @@ This function resets the queue to an empty state. `CMSimpleQueueReset` isn’t s
 
 ## Parameters
 
-- `queue`: The queue to reset. Must not be  .
+- `queue`: The queue to reset. Must not be `NULL`.
 
 ## See Also
 

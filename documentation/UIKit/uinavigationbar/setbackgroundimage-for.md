@@ -24,7 +24,7 @@ Equivalent to using [`setBackgroundImage(_:for:barMetrics:)`](uinavigationbar/se
 
 ## Parameters
 
-- `backgroundImage`: The background image to use for  .
+- `backgroundImage`: The background image to use for `barMetrics`.
 - `barMetrics`: A bar metrics constant.
 
 ## See Also

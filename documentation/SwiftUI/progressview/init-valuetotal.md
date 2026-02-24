@@ -30,8 +30,8 @@ This initializer creates a [`Text`](text.md) view on your behalf, and treats the
 ## Parameters
 
 - `title`: The string that describes the task in progress.
-- `value`: The completed amount of the task to this point, in a range   of   to  , or   if the progress is   indeterminate.
-- `total`: The full amount representing the complete scope of the   task, meaning the task is complete if   equals  . The   default value is  .
+- `value`: The completed amount of the task to this point, in a range of `0.0` to `total`, or `nil` if the progress is indeterminate.
+- `total`: The full amount representing the complete scope of the task, meaning the task is complete if `value` equals `total`. The default value is `1.0`.
 
 ## See Also
 

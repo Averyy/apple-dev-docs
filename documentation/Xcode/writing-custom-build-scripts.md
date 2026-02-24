@@ -8,11 +8,11 @@ Extend your Xcode Cloud workflows with custom build scripts that perform custom 
 
 Xcode Cloud leverages your project’s configured schemes and offers settings to create advanced workflows. However, Xcode Cloud workflows can offer even more flexibility to meet your project’s requirements. For example, you might need to install an additional third-party tool to successfully build your project, upload build artifacts to private storage, use a different app icon for nightly builds, and so on.
 
-If you need additional flexibility in your Xcode Cloud workflows, create a  to perform a specific task at a designated time. Xcode Cloud recognizes three different script types:
+If you need additional flexibility in your Xcode Cloud workflows, create a *custom build script* to perform a specific task at a designated time. Xcode Cloud recognizes three different script types:
 
-- A  that runs after Xcode Cloud clones your Git repository.
-- A  that runs before Xcode Cloud runs `xcodebuild`.
-- A  that Xcode Cloud runs after running `xcodebuild`.
+- A *post-clone script* that runs after Xcode Cloud clones your Git repository.
+- A *pre-`xcodebuild` script* that runs before Xcode Cloud runs `xcodebuild`.
+- A *post-`xcodebuild` script* that Xcode Cloud runs after running `xcodebuild`.
 
 For Xcode Cloud to recognize your custom build scripts, you’ll need to place them at a specific location: the `ci_scripts` directory. Xcode Cloud runs your custom build scripts from this directory. Additionally, name the scripts according to conventions listed below. When it starts a new build, Xcode Cloud recognizes your custom build scripts automatically and runs them for every action.
 
@@ -35,6 +35,10 @@ To create the `ci_scripts` directory:
 When Xcode Cloud performs an action you’ve added to a workflow, it performs a series of steps. If you add a custom build script, Xcode Cloud runs it at a specific moment between these steps.
 
 The name of a custom script’s corresponding file determines when Xcode Cloud runs the script; only use the following file names for your scripts:
+
+- **`ci_post_clone.sh`**: The post-clone script runs after Xcode Cloud clones your Git repository. You might use a post-clone script to install an additional tool, or to add a new entry to a property list.
+- **`ci_pre_xcodebuild.sh`**: The pre-`xcodebuild` script runs before Xcode Cloud runs the `xcodebuild` command. You might use a pre-`xcodebuild` script to compile additional dependencies.
+- **`ci_post_xcodebuild.sh`**: The post-`xcodebuild` script runs after Xcode Cloud runs the `xcodebuild` command — even if the `xcodebuild` command fails. You might use a post-`xcodebuild` script to upload artifacts to storage or another service.
 
 ![An illustration that shows the different steps Xcode Cloud performs when it performs an action, including the custom build scripts from left to right.](https://docs-assets.developer.apple.com/published/6dc78b269a115b929a161d8daec31be0/Writing-Custom-Build-Scripts-1%402x.png)
 
@@ -113,7 +117,7 @@ exit 1
 
 ##### Use Helper Scripts in Complex Custom Build Scripts
 
-If your repository contains more than one project, you’ll likely need to configure several Xcode Cloud workflows. Because Xcode Cloud only recognizes one `ci_scripts` directory in your repository — and that directory can only contain the three custom build scripts — you’ll need to add . Helper scripts are shell scripts you place in the `ci_scripts` directory that you can use to split up the tasks of the default build scripts.
+If your repository contains more than one project, you’ll likely need to configure several Xcode Cloud workflows. Because Xcode Cloud only recognizes one `ci_scripts` directory in your repository — and that directory can only contain the three custom build scripts — you’ll need to add *helper scripts*. Helper scripts are shell scripts you place in the `ci_scripts` directory that you can use to split up the tasks of the default build scripts.
 
 You can use the helper scripts to create a more flexible build environment, where you offload most of the logic you want Xcode Cloud to perform in a custom build script into a separate shell script file. For example, you might use environment variables to determine which Xcode Cloud workflow runs the build script, what started the build, the platform of the running build, and so on, to run logic only when applicable.
 

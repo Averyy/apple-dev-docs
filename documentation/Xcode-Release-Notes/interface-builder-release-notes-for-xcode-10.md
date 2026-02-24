@@ -40,7 +40,7 @@ Read these notes when you’re building interfaces in Xcode 10.
 - Controls using named colors from an asset catalog now update as the value of the color changes. (37613468)
 - Image and color inspector properties that reference an asset catalog resource have a navigation button to jump to that resource. Option + click will show the resource in the Assistant Editor. (39661055)
 - Support for new [`NSVisualEffectView`](https://developer.apple.com/documentation/AppKit/NSVisualEffectView) materials introduced in macOS 10.14.
-- Some binaries used by Interface Builder have been renamed for better consistency. Instead of “Interface Builder Cocoa Touch Tool”, “Interface Builder WatchKit Tool”, and “IBAppleTVTool”, they are now called “IBAgent-”. (35400833)
+- Some binaries used by Interface Builder have been renamed for better consistency. Instead of “Interface Builder Cocoa Touch Tool”, “Interface Builder WatchKit Tool”, and “IBAppleTVTool”, they are now called “IBAgent-*[platform]*”. (35400833)
 - On macOS 10.14, the Device Bar and Preview assistant editor allow designing for and previewing in Light Appearance and Dark Appearance.
 - Support for [`NSGridView`](https://developer.apple.com/documentation/AppKit/NSGridView), which manages Auto Layout constraints for its content in a two-dimensional table layout. [`NSGridView`](https://developer.apple.com/documentation/AppKit/NSGridView) is backward deployable to macOS 10.12, or macOS 10.13.4 when using merged cells.
 - Canvas rendering now happens in parallel, and scales based on demand and hardware to improve the performance of edit operations, particularly for large scenes. (36999759)

@@ -25,7 +25,7 @@ Use this method when you want to present a modal loading view to the user when a
 
 ## Parameters
 
-- `directory`: A binding to an optional game synced directory that was returned by calling  .   If this value is  , the view doesn’t display.
+- `directory`: A binding to an optional game synced directory that was returned by calling `GameSaveSyncedDirectory/openDirectory(containerIdentifier:)`. If this value is `nil`, the view doesn’t display.
 - `finishedLoading`: The closure to execute after the loading process completes.
 
 

@@ -32,7 +32,7 @@ Miniaturized windows, windows in the Dock, are considered visible by this method
 ## Parameters
 
 - `sender`: The application object.
-- `hasVisibleWindows`: Indicates whether the   object found any visible windows in your application. You can use this value as an indication of whether the application would do anything if you return  .
+- `hasVisibleWindows`: Indicates whether the `NSApplication` object found any visible windows in your application. You can use this value as an indication of whether the application would do anything if you return [`true`](https://developer.apple.com/documentation/Swift/true).
 
 ## See Also
 

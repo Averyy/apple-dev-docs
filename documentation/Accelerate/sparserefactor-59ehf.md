@@ -30,7 +30,7 @@ The following figure shows two systems of equations where the coefficient matrix
 
 ![A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as two matrix equations, A x equals B. Each matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.](https://docs-assets.developer.apple.com/published/7183115249663e3ee5beedf41262d86d/media-3703909%402x.png)
 
-The following code solves these two systems with refactoring. After factorizing and solving for the coefficient matrix , the code refactors and solves for matrix .
+The following code solves these two systems with refactoring. After factorizing and solving for the coefficient matrix *A0*, the code refactors and solves for matrix *A1*.
 
 ```swift
 /// Define the sparsity structure of matrices `A0` and `A1`.
@@ -100,7 +100,7 @@ On return, `b0Values` contains the values `[1.0, 2.0, 3.0]`, and `b1Values` cont
 - `Matrix`: The matrix that contains numerical data to recompute.
 - `Factored`: The factorization to recompute.
 - `nfoptions`: The numeric factor options, such as the scaling method to use.
-- `workspace`: A pointer to a workspace of size at least   bytes.
+- `workspace`: A pointer to a workspace of size at least `symbolicFactorization.workspaceSize_Double` bytes.
 
 ## See Also
 

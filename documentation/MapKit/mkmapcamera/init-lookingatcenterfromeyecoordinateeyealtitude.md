@@ -31,7 +31,7 @@ This method calculates the required pitch and heading angles to accommodate the 
 ## Parameters
 
 - `centerCoordinate`: The coordinate point on which the framework centers the map.
-- `eyeCoordinate`: The coordinate point at which to place the camera. If the value for this parameter is equal to the value in the   parameter, the framework displays the map as if the camera is looking straight down. If this point is offset from the   value, the framework displays the map with an appropriate heading and pitch angle.
+- `eyeCoordinate`: The coordinate point at which to place the camera. If the value for this parameter is equal to the value in the `centerCoordinate` parameter, the framework displays the map as if the camera is looking straight down. If this point is offset from the `centerCoordinate` value, the framework displays the map with an appropriate heading and pitch angle.
 - `eyeAltitude`: The altitude (in meters) above the ground at which to place the camera.
 
 ## See Also

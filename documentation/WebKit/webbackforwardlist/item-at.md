@@ -20,7 +20,7 @@ The item at the specified index, or `nil` if `index` exceeds the bounds of the b
 
 ## Parameters
 
-- `index`: The index of the item to return. The position of the current item is index  , and the position of any other item is expressed as an offset from index  . For example, the item preceding the current item is at index  , and the item following the current item is at index  .
+- `index`: The index of the item to return. The position of the current item is index `0`, and the position of any other item is expressed as an offset from index `0`. For example, the item preceding the current item is at index `-1`, and the item following the current item is at index `1`.
 
 ## See Also
 

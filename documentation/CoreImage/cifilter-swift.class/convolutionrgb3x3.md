@@ -29,6 +29,10 @@ This method applies a 3 x 3 convolution to the `RGB` components of an image. The
 
 The convolution-RGB 3 x 3 filter uses the following properties:
 
+- **`bias`**: A `float` representing the value that’s added to each output pixel.
+- **`weights`**: A [`CIVector`](civector.md) representing the convolution kernel.
+- **`inputImage`**: A [`CIImage`](ciimage.md) containing the image to process.
+
 > **Note**:  When using a nonzero `bias` value, the output image has an infinite extent. You should crop the output image before attempting to render it.
 
 The following code creates a filter that sharpens the input image:

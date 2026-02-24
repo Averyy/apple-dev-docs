@@ -8,6 +8,12 @@ The action to take on the file or folder.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
+**Default**: `Copy`
+
 ## See Also
 
 - [APDisplayedAsContainer](information-property-list/apfiles/apdisplayedascontainer.md)

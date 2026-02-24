@@ -23,7 +23,7 @@ This is a good place to clean up any initialization work that may have been perf
 
 ## Parameters
 
-- `draggingInfo`: An object of type  , which provides information about the drag event, including the dragged data.
+- `draggingInfo`: An object of type `NSDraggingInfo`, which provides information about the drag event, including the dragged data.
 
 ## See Also
 

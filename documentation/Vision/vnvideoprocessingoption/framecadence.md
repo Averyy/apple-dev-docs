@@ -22,7 +22,7 @@ static let frameCadence: VNVideoProcessingOption
 ## See Also
 
 - [static let timeInterval: VNVideoProcessingOption](vnvideoprocessingoption/timeinterval.md)
-  A value that indicates that the video processor should perform a request every -seconds.
+  A value that indicates that the video processor should perform a request every *n*-seconds.
 
 
 ---

@@ -42,7 +42,7 @@ The system calls the completion handler after it successfully evicts all items, 
 ## Parameters
 
 - `itemIdentifier`: The item’s identifier.
-- `completionHandler`: A block that the system calls after removing the item from disk. The system passes the following parameter:
+- `completionHandler`: A block that the system calls after removing the item from disk. The system passes the following parameter: - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

@@ -20,7 +20,7 @@ func setContent(_ detailViewListContentView: NSView)
 
 ## Parameters
 
-- `detailViewListContentView`: The   for the detail view content.
+- `detailViewListContentView`: The `NSView` for the detail view content.
 
 ## See Also
 

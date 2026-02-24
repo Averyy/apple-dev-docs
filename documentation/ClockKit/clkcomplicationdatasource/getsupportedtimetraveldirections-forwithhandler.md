@@ -31,7 +31,7 @@ In watchOS 7 and later, the system checks the value returned by [`getTimelineEnd
 ## Parameters
 
 - `complication`: The complication tied to the request.
-- `handler`: The handler to execute with the Time Travel directions. This block has no return value and takes the following parameter:
+- `handler`: The handler to execute with the Time Travel directions. This block has no return value and takes the following parameter: - **directions**: The supported time travel directions. You may combine the values of the [`CLKComplicationTimeTravelDirections`](clkcomplicationtimetraveldirections.md) type when specifying this value.
 
 ## Topics
 

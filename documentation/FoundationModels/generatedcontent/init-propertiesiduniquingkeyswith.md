@@ -37,8 +37,8 @@ The following example shows how to choose the first and last values for any dupl
 ## Parameters
 
 - `properties`: A sequence of key-value pairs to use for the new content.
-- `id`: A unique id associated with  .
-- `combine`: A closure that is called with the values to resolve any duplicates   keys that are encountered. The closure returns the desired value for the final content.
+- `id`: A unique id associated with [`GeneratedContent`](generatedcontent.md).
+- `combine`: A closure that is called with the values to resolve any duplicates keys that are encountered. The closure returns the desired value for the final content.
 
 ## See Also
 

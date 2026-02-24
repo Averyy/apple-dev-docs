@@ -20,7 +20,7 @@ func setObject(_ object: Any?, forProperty property: NSSpeechSynthesizer.SpeechP
 
 ## Parameters
 
-- `object`: The property’s new value. The supported properties are listed in  .
+- `object`: The property’s new value. The supported properties are listed in `NSSpeechStatusProperty Dictionary Keys`.
 - `property`: The property to set.
 
 ## See Also

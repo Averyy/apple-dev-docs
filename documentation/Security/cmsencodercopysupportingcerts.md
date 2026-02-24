@@ -24,8 +24,8 @@ A CMS message can contain arbitrary sets of certificates other than or in additi
 
 ## Parameters
 
-- `cmsEncoder`: The CMSEncoder reference returned by the   function.
-- `certsOut`: On return, points to a CFArray of   objects. You must use the   function to free this reference when you are finished using it.
+- `cmsEncoder`: The CMSEncoder reference returned by the `CMSEncoderCreate` function.
+- `certsOut`: On return, points to a CFArray of `SecCertificateRef` objects. You must use the `CFRelease` function to free this reference when you are finished using it.
 
 ## See Also
 

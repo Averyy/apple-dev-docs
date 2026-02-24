@@ -17,7 +17,7 @@ func select(_ record: ABRecord!, byExtendingSelection extend: Bool)
 ## Parameters
 
 - `record`: The record to be selected, or to be added to the current selection.
-- `extend`:   to extend the current selection; otherwise,  .
+- `extend`: [`true`](https://developer.apple.com/documentation/Swift/true) to extend the current selection; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

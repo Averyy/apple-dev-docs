@@ -27,7 +27,11 @@ Line fragment rectangles are always in container coordinates.
 ## Parameters
 
 - `glyphRange`: The glyph range for which to return line fragment rectangles.
-- `block`: The block to apply to the glyph range. The block has five arguments:
+- `block`: The block to apply to the glyph range. The block has five arguments: - **rect**: The current line fragment rectangle.
+- **usedRect**: The portion of the line fragment rectangle that actually contains glyphs or other marks that are drawn (including the text container’s line fragment padding).
+- **textContainer**: The text container in which the glyphs are laid out.
+- **glyphRange**: The range of glyphs laid out in the current line fragment.
+- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop further processing of the array. The stop argument is an out-only argument. You should only set this Boolean to [`true`](https://developer.apple.com/documentation/Swift/true) within the block.
 
 ## See Also
 

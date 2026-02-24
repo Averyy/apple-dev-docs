@@ -20,8 +20,8 @@ You do not use this initializer. Create ML uses this initializer to generate met
 
 ## Parameters
 
-- `averagePrecision`: The   for this  .
-- `meanAveragePrecision`: The   for this  .
+- `averagePrecision`: The `averagePrecision` for this `MLObjectDetectorMetrics`.
+- `meanAveragePrecision`: The `meanAveragePrecision` for this `MLObjectDetectorMetrics`.
 
 
 ---

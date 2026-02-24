@@ -26,7 +26,7 @@ The specified point becomes the start point of a new subpath. The current point 
 
 ## Parameters
 
-- `end`: The point, in user space coordinates, at which   to start a new subpath.
+- `end`: The point, in user space coordinates, at which to start a new subpath.
 
 ## See Also
 

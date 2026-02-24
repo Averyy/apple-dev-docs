@@ -13,6 +13,18 @@ Fetch metadata for genres from the catalog by using their identifiers.
 
 ##### Example
 
+**Request**:
+
+```None
+
+```
+
+**Response**:
+
+```json
+
+```
+
 ## Topics
 
 ### Responses
@@ -21,6 +33,15 @@ Fetch metadata for genres from the catalog by using their identifiers.
   A response that indicates an incorrect authorization header.
 - [object ErrorsResponse](errorsresponse.md)
   The collection of errors that occurred while processing the request.
+
+## Endpoint
+
+`GET https://api.ent.apple.com/v1/catalog/{storefront}/genres#ids`
+
+## Parameters
+
+- `ids` ([string]) *(required)*: The unique identifiers for the genres.
+- `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 
 ## See Also
 

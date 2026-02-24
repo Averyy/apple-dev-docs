@@ -17,6 +17,20 @@ The dictionary that contains PPP settings.
 object VPN.PPP
 ```
 
+## Properties
+
+- `AuthEAPPlugins` ([string]): An array of authentication plugins. For use of RSA SecurID, this array should only have one value: `EAP-RSA`. This key is for use with L2TP and PPTP networks.
+- `AuthName` (string): The VPN account user name. This key is for use with L2TP and PPTP networks.
+- `AuthPassword` (string): If `TokenCard` is `1`, use this password for authentication. This key is for use with L2TP and PPTP networks.
+- `AuthProtocol` ([string]): An array of authentication protocols. For use of RSA SecurID, this array should have one value, `EAP`. This key is for use with L2TP and PPTP networks.
+- `CCPEnabled` (integer): If `1`, enables encryption on the connection. This key is for use with PPTP networks.
+- `CCPMPPE128Enabled` (integer): If `1` and `CCPEnabled` is also `1`, enables CCPMPPE40 encryption.
+- `CCPMPPE40Enabled` (integer): If `1` and `CCPEnabled` is also `1`, enables CCPMPPE128 encryption.
+- `CommRemoteAddress` (string): The IP address or host name of VPN server. This key is for use with L2TP and PPTP networks.
+- `DisconnectOnIdle` (integer): If `1`, disconnects after an on demand connection idles.
+- `DisconnectOnIdleTimer` (integer): The length of time to wait before disconnecting an on demand connection
+- `TokenCard` (integer): If `1`, uses a token card such as an RSA SecurID card for connecting. This key is for use with L2TP networks.
+
 ## See Also
 
 - [object VPN.AlwaysOn](vpn/alwayson-data.dictionary.md)

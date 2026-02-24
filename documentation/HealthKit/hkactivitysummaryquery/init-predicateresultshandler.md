@@ -35,8 +35,10 @@ Activity summary queries can also act as long-running queries. If you assign an 
 
 ## Parameters
 
-- `predicate`: A predicate that filters the activity summaries returned by the query. Pass   to receive all activity samples.
-- `handler`: A block that is called after the initial results have been gathered. This block takes the following parameters:
+- `predicate`: A predicate that filters the activity summaries returned by the query. Pass `nil` to receive all activity samples.
+- `handler`: A block that is called after the initial results have been gathered. This block takes the following parameters: - **query**: A reference to the query calling this block.
+- **activitySummaries**: An array containing the summaries returned by this query, or `nil` if an error occurred.
+- **error**: If an error occurs, this parameter contains an object describing the error; otherwise, it is `nil`.
 
 ## See Also
 

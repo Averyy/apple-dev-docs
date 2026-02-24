@@ -22,7 +22,7 @@ The delegate may replace or modify the list of possible completions by implement
 
 ## Parameters
 
-- `sender`: The control sending the message. May be  .
+- `sender`: The control sending the message. May be `nil`.
 
 ## See Also
 

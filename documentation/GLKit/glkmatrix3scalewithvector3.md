@@ -24,7 +24,7 @@ A new matrix.
 ## Parameters
 
 - `matrix`: The source matrix.
-- `scaleVector`: A vector whose  ,   and   components are used to scale the matrix.
+- `scaleVector`: A vector whose `x`, `y` and `z` components are used to scale the matrix.
 
 ## See Also
 

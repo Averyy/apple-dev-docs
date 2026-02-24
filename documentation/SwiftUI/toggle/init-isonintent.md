@@ -27,9 +27,9 @@ To initialize a toggle with a string variable, use [`init(_:isOn:intent:)`](togg
 
 ## Parameters
 
-- `titleKey`: The key for the toggle’s localized title, that describes   the purpose of the toggle.
+- `titleKey`: The key for the toggle’s localized title, that describes the purpose of the toggle.
 - `isOn`: Whether the toggle is on or off.
-- `intent`: The   to be performed.
+- `intent`: The `AppIntent` to be performed.
 
 ## See Also
 

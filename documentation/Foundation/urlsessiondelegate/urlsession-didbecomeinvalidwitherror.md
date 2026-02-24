@@ -27,7 +27,7 @@ If you invalidate a session by calling its [`finishTasksAndInvalidate()`](urlses
 ## Parameters
 
 - `session`: The session object that was invalidated.
-- `error`: The error that caused invalidation, or   if the invalidation was explicit.
+- `error`: The error that caused invalidation, or `nil` if the invalidation was explicit.
 
 ## See Also
 

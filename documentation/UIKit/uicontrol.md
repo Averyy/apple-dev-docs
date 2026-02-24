@@ -42,6 +42,22 @@ When adding an action method to a control, you specify both the action method an
 
 The signature of an action method takes one of three forms. The `sender` parameter corresponds to the control that calls the action method, and the `event` parameter corresponds to the [`UIEvent`](uievent.md) object that triggered the control-related event.
 
+**Swift**:
+
+```swift
+@IBAction func doSomething()
+@IBAction func doSomething(sender: UIButton)
+@IBAction func doSomething(sender: UIButton, forEvent event: UIEvent)
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction)doSomething;
+- (IBAction)doSomething:(id)sender;
+- (IBAction)doSomething:(id)sender forEvent:(UIEvent*)event;
+```
+
 The system calls action methods when the user interacts with the control in specific ways. The [`UIControl.Event`](uicontrol/event.md) type defines the types of user interactions that a control can report and those interactions mostly correlate to specific touch events within the control. When configuring a control, you must specify which events trigger the calling of your method. For a button control, you might use the [`touchDown`](uicontrol/event/touchdown.md) or [`touchUpInside`](uicontrol/event/touchupinside.md) event to trigger calls to your action method. For a slider, you might care only about changes to the slider’s value, so you might choose to attach your action method to [`valueChanged`](uicontrol/event/valuechanged.md) events.
 
 When a control-specific event occurs, the control calls any associated action methods immediately. The current [`UIApplication`](uiapplication.md) object dispatches action methods and finds an appropriate object to handle the message, following the responder chain, if necessary. For more information about responders and the responder chain, see [`Event Handling Guide for UIKit Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/EventHandling/Conceptual/EventHandlingiPhoneOS/index.html#//apple_ref/doc/uid/TP40009541).
@@ -65,11 +81,11 @@ Controls are accessible by default. To be useful, an accessible user interface e
 
 Controls support the following accessibility attributes:
 
--  A short, localized word or phrase that succinctly describes the control or view, but doesn’t identify the element’s type. Examples are  and .
--  A combination of one or more individual traits, each of which describes a single aspect of an element’s state, behavior, or usage. For example, you might use a combination of the Keyboard Key and the Selected traits to describe an element that behaves like a keyboard key and that’s in a selected state.
--  A brief, localized phrase that describes the results of an action on an element. Examples are  and .
--  The frame of the element in screen coordinates, which the `CGRect` structure specifies for an element’s screen location and size.
--  The current value of an element when the label doesn’t represent the value. For example, the label for a slider might be , but its current value might be .
+- **Label.** A short, localized word or phrase that succinctly describes the control or view, but doesn’t identify the element’s type. Examples are *Add* and *Play*.
+- **Traits.** A combination of one or more individual traits, each of which describes a single aspect of an element’s state, behavior, or usage. For example, you might use a combination of the Keyboard Key and the Selected traits to describe an element that behaves like a keyboard key and that’s in a selected state.
+- **Hint.** A brief, localized phrase that describes the results of an action on an element. Examples are *Adds a title* and *Opens the shopping list*.
+- **Frame.** The frame of the element in screen coordinates, which the `CGRect` structure specifies for an element’s screen location and size.
+- **Value.** The current value of an element when the label doesn’t represent the value. For example, the label for a slider might be *Speed*, but its current value might be *50%*.
 
 The `UIControl` class provides default content for the value and frame attributes. Many controls automatically enable additional specific traits as well. You can configure other accessibility attributes programmatically or with the Identity inspector in Interface Builder.
 

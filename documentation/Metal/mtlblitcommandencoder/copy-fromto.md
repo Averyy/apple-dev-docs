@@ -33,7 +33,7 @@ The command copies all identical mipmap sizes. If both textures are arrays, the 
 ## Parameters
 
 - `sourceTexture`: A texture the command copies data from.
-- `destinationTexture`: Another texture the command copies the data to that has the same pixel format and sample count as  .
+- `destinationTexture`: Another texture the command copies the data to that has the same pixel format and sample count as `sourceTexture`.
 
 ## See Also
 

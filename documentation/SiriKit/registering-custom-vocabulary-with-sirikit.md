@@ -29,7 +29,7 @@ The global vocabulary file contains two keys at the root level:
 - The `IntentPhrases` key contains example phrases for invoking your services. Always include this key.
 - The `ParameterVocabularies` key defines your app’s custom terms that apply to all users of your app and the intent parameters to which they apply. You may omit this key if you don’t have any custom vocabulary terms.
 
-You may specify custom vocabulary terms for  and . You must always associate custom vocabulary terms with a specific property of the corresponding intent object. You may associate the same term with multiple intents. For example, you may associate the same workout name with all of the workout-related intents.
+You may specify custom vocabulary terms for *ride options* and *workout names*. You must always associate custom vocabulary terms with a specific property of the corresponding intent object. You may associate the same term with multiple intents. For example, you may associate the same workout name with all of the workout-related intents.
 
 > ❗ **Important**:  During development, Xcode forwards your global vocabulary to Siri but limits the availability of that vocabulary to your development device. Ingestion of your vocabulary data isn’t instantaneous, so you may need to wait a few minutes before testing any custom vocabulary.
 
@@ -61,6 +61,23 @@ When selecting the vocabulary to register, choose terms that could be misunderst
 Each call to the [`setVocabularyStrings(_:of:)`](https://developer.apple.com/documentation/intents/invocabulary/setvocabularystrings(_:of:)) method replaces any previously registered terms of the same type. As a result, each call to that method must include all of the terms that you want to associate with the user. In addition, you must arrange terms based on priority, placing the most important terms first in the list you provide.
 
 The listing below shows an example that registers a set of custom workout names for the user. The example assumes that the app provides a custom `sortedWorkoutNames` method that sorts the workout names based on how recently the user used them. You execute this code from your iOS app, and not from your Intents app extension.
+
+**Swift**:
+
+```swift
+let workoutNames = self.sortedWorkoutNames()
+let vocabulary = INVocabulary.shared(). 
+    setVocabularyStrings(workoutNames, of: .workoutActivityName)
+```
+
+**Objective-C**:
+
+```objc
+NSOrderedSet* workoutNames = [self sortedWorkoutNames];
+INVocabulary* vocabulary = [INVocabulary sharedVocabulary];
+[vocabulary setVocabularyStrings:workoutNames
+		ofType:INVocabularyStringTypeWorkoutActivityName];
+```
 
 ## Topics
 

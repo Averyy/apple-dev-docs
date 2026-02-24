@@ -34,8 +34,8 @@ If you override this method and don’t invoke the superclass implementation (`s
 
 ## Parameters
 
-- `error`: An object encapsulating information about an error encountered in an attempt to open, save, or revert a document. The error domain is  . The error code is one of the   constants declared in  .
-- `userInteractionPermitted`: If  , no attempt is (or should be) made to present a modal view to the user. This value can be   in cases such as when a save operation fails while the application is being suspended. If this parameter is  , UIKit or your override may present error information to the user in a modal view and (optionally) allow the user to resolve the error.
+- `error`: An object encapsulating information about an error encountered in an attempt to open, save, or revert a document. The error domain is [`NSCocoaErrorDomain`](https://developer.apple.com/documentation/Foundation/NSCocoaErrorDomain). The error code is one of the `enum` constants declared in `FoundationErrors.h`.
+- `userInteractionPermitted`: If [`false`](https://developer.apple.com/documentation/Swift/false), no attempt is (or should be) made to present a modal view to the user. This value can be [`false`](https://developer.apple.com/documentation/Swift/false) in cases such as when a save operation fails while the application is being suspended. If this parameter is [`true`](https://developer.apple.com/documentation/Swift/true), UIKit or your override may present error information to the user in a modal view and (optionally) allow the user to resolve the error.
 
 ## See Also
 

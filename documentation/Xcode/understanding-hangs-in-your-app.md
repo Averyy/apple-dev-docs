@@ -8,7 +8,7 @@ Determine the cause for delays in user interactions by examining the main thread
 
 A discrete user interaction occurs when a person performs a single well-contained interaction and the screen then updates. An example is when someone presses a key on the keyboard and the corresponding letter then appears onscreen. Although the software running on the device needs time to process the incoming user input event and compute the corresponding screen update, it’s usually so quick that a human can’t perceive it and the screen update seems instantaneous.
 
-When the delay in handling a discrete user interaction becomes noticeable, that period of unresponsiveness is known as a . Other common terms for this behavior are  because the app stops updating, and  based on the spinning wait cursor that appears in macOS when an app is unresponsive.
+When the delay in handling a discrete user interaction becomes noticeable, that period of unresponsiveness is known as a *hang*. Other common terms for this behavior are *freeze* because the app stops updating, and *spin* based on the spinning wait cursor that appears in macOS when an app is unresponsive.
 
 Although discrete interactions are less sensitive to delays than continuous interactions, it doesn’t take long for a person to perceive a gap between an action and its reaction as a pause, which breaks their immersive experience. A delay of less than 100 ms in a discrete user interaction is rarely noticeable, but even a few hundred milliseconds can make people feel that an app is unresponsive.
 
@@ -46,13 +46,13 @@ struct MessengerView: View {
 }
 ```
 
-When someone taps the Send button, they touch the screen where the button appears. The operating system registers this as a  event. Similar events exist for other input methods, like mouse-down on macOS.
+When someone taps the Send button, they touch the screen where the button appears. The operating system registers this as a *touch-down* event. Similar events exist for other input methods, like mouse-down on macOS.
 
 As soon as the finger comes in contact with the screen, the touch-down event is sent. Your app’s main thread then determines which view is responsible for handling the event. It compares the event’s location on the screen to the frames of all the views in the view hierarchy to find the one that’s frontmost at that location. Because the user touched the location of your Send button, the view representing that button receives the touch-down event.
 
-When they lift their finger from the screen, the touchscreen registers the finger leaving the screen, and the OS creates a  event and delivers it to your app. The touch-up event goes to the same view that received the corresponding touch-down event, even if the finger has moved to a different position by then. In response to the touch-up event, if the location of the finger is still inside its bounds when the touch-up event occurs, a `Button` calls its `action` closure.
+When they lift their finger from the screen, the touchscreen registers the finger leaving the screen, and the OS creates a *touch-up* event and delivers it to your app. The touch-up event goes to the same view that received the corresponding touch-down event, even if the finger has moved to a different position by then. In response to the touch-up event, if the location of the finger is still inside its bounds when the touch-up event occurs, a `Button` calls its `action` closure.
 
-At this point, the first stage, , or , is complete. The event reaches its destination and the UI framework calls the appropriate event-handling method, which is usually your code, on the selected view. Your design also contributes to how quickly the system delivers events, as you set up the view hierarchy, decide where to place the button, and add any other UI elements, which might include custom views. All of this can have an impact on the speed of event delivery. However, most of the time, this step is fast and not something you need to worry about.
+At this point, the first stage, *event dispatching*, or *event delivery*, is complete. The event reaches its destination and the UI framework calls the appropriate event-handling method, which is usually your code, on the selected view. Your design also contributes to how quickly the system delivers events, as you set up the view hierarchy, decide where to place the button, and add any other UI elements, which might include custom views. All of this can have an impact on the speed of event delivery. However, most of the time, this step is fast and not something you need to worry about.
 
 During the second stage, SwiftUI calls your `send(message:)` method as part of calling the Button’s `action` closure, where your app likely starts some asynchronous work to serialize the message string into a data packet, send it to a backend server, and so on. Your app also needs to add the new message to the list of messages in the current conversation, so it can store it, even if sending the message fails. Additionally, your app needs to update the UI to show the user the result of their action. For instance, you might want to display a message bubble onscreen and clear the text field to prepare it for the next message. For more information on responding asynchronously to UI events, see [`Improving app responsiveness`](improving-app-responsiveness.md).
 
@@ -66,7 +66,7 @@ Because there’s only one thread that can make changes to the UI, you don’t w
 
 ##### Understand the Main Run Loop
 
-Run loops provide a mechanism for threads to wait on input sources and fire input handlers when any of those sources has data or events to process. Any thread can have a run loop. The main thread starts a run loop, the , as soon as an app finishes launching. This is the run loop that processes all incoming user interaction events.
+Run loops provide a mechanism for threads to wait on input sources and fire input handlers when any of those sources has data or events to process. Any thread can have a run loop. The main thread starts a run loop, the *main run loop*, as soon as an app finishes launching. This is the run loop that processes all incoming user interaction events.
 
 A very simplified implementation of a run loop might resemble the following:
 
@@ -122,7 +122,7 @@ A healthy run loop spends most of its time asleep and waiting for events, as in 
 
 In the screenshot above, the run loop is waiting for events (the gray areas) most of the time, and the periods where it’s busy (the light blue areas) are very short.
 
-For this reason, the hang reporting feature on Apple platforms focuses on the main run loop being unresponsive for an extended period of time as a proxy for hangs that the user experiences. More specifically, hang reporting looks at the duration between two  periods of the run loop, also known as the  portion. During a busy period, the run loop can’t process other incoming events, so if it gets too long, the system reports it as a potential hang.
+For this reason, the hang reporting feature on Apple platforms focuses on the main run loop being unresponsive for an extended period of time as a proxy for hangs that the user experiences. More specifically, hang reporting looks at the duration between two *waiting for events* periods of the run loop, also known as the *busy* portion. During a busy period, the run loop can’t process other incoming events, so if it gets too long, the system reports it as a potential hang.
 
 ![An Instruments screenshot showing a main run loop during a hang. The run loop is busy for a period of over 600 ms.](https://docs-assets.developer.apple.com/published/2d823296beb839509b72c42372ea527d/understanding-hangs-in-our-app-3b.png)
 

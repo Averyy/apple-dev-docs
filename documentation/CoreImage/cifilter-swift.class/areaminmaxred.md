@@ -29,6 +29,9 @@ This method applies the area-minimum-maximum-red filter to an image. This effect
 
 The area-minimum-maximum-red filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that specifies the subregion of the image that you want to process.
+
 The following code creates a filter that results in a 1 x 1 pixel image with the red and green color components populated:
 
 ```swift

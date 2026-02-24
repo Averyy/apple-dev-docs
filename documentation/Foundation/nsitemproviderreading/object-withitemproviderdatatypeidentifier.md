@@ -28,7 +28,7 @@ An object created from the given data.
 ## Parameters
 
 - `data`: The data used to create the object.
-- `typeIdentifier`: The uniform type identifier (UTI) representing the data type of  .
+- `typeIdentifier`: The uniform type identifier (UTI) representing the data type of `data`.
 
 
 ---

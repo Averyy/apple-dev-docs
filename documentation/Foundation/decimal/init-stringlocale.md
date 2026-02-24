@@ -23,7 +23,7 @@ init?(string: String, locale: Locale? = nil)
 ## Parameters
 
 - `string`: A string containing a formatted decimal value.
-- `locale`: A locale that indicates the formatting conventions used by  .
+- `locale`: A locale that indicates the formatting conventions used by `string`.
 
 ## See Also
 

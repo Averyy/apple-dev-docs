@@ -26,13 +26,22 @@ This method is called when the user creates a directory. Override this method to
 
 The `createdDirectoryItem` instance that you pass to the completion handler must define the following properties:
 
+- **[`itemIdentifier`](nsfileprovideritemprotocol/itemidentifier.md)**: This identifier may be temporary. If you later receive a permanent identifier from your server, delete the temporary item and add the permanent one.
+- **[`parentItemIdentifier`](nsfileprovideritemprotocol/parentitemidentifier.md)**: Set to the value passed to the `parentItemIdentifier` parameter.
+- **[`filename`](nsfileprovideritemprotocol/filename.md)**: Set to the value passed to the `directoryName` parameter.
+- **[`creationDate`](nsfileprovideritemprotocol/creationdate.md)**: Set to the current date and time.
+- **[`typeIdentifier`](nsfileprovideritemprotocol/typeidentifier.md)**: Set to `public.folder`.
+- **[`childItemCount`](nsfileprovideritemprotocol/childitemcount.md)**: Set to `0`.
+- **[`capabilities`](nsfileprovideritemprotocol/capabilities.md)**: Set to define the actions that the user can perform on the directory (for example, [`allowsAddingSubItems`](nsfileprovideritemcapabilities/allowsaddingsubitems.md), [`allowsReading`](nsfileprovideritemcapabilities/allowsreading.md), and [`allowsWriting`](nsfileprovideritemcapabilities/allowswriting.md)).
+
 The user’s ability to create a directory is controlled by the parent directory’s [`allowsAddingSubItems`](nsfileprovideritemcapabilities/allowsaddingsubitems.md) capability.
 
 ## Parameters
 
 - `directoryName`: The name of the directory to be created.
 - `parentItemIdentifier`: The persistent identifier for the parent directory.
-- `completionHandler`: A block that takes the following parameters:
+- `completionHandler`: A block that takes the following parameters: - **`createdDirectoryItem`**: A provider item that describes the newly created directory, or `nil` if an error occurred.
+- **`error`**: An error object. If an error occurs, pass in an object that describes the error; otherwise, set it to `nil`.
 
 ## See Also
 

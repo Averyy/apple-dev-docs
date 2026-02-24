@@ -24,6 +24,10 @@ object RestrictionsResponse.GlobalRestrictions.RestrictedBool
 - [object RestrictionsResponse.GlobalRestrictions.RestrictedBool.ANY restriction name](restrictionsresponse/globalrestrictions-data.dictionary/restrictedbool-data.dictionary/any-restriction-name-data.dictionary.md)
   A dictionary that contains Boolean restriction parameters.
 
+## Properties
+
+- `ANY restriction name` (RestrictionsResponse.GlobalRestrictions.RestrictedBool.ANY restriction name): The Boolean restriction parameters.
+
 ## See Also
 
 - [object RestrictionsResponse.GlobalRestrictions.Intersection](restrictionsresponse/globalrestrictions-data.dictionary/intersection-data.dictionary.md)

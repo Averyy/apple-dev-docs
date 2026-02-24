@@ -8,24 +8,24 @@ Solve a system with a right-hand-side dense vector using a factored sparse coeff
 
 ### In-place direct solving functions
 - [func SparseSolve(SparseOpaqueFactorization_Double, DenseVector_Double)](sparsesolve(_:_:)-pofy.md)
-  Solves the system  using the supplied double-precision factorization of .
+  Solves the system *Ax = x* using the supplied double-precision factorization of *A*.
 - [func SparseSolve(SparseOpaqueFactorization_Float, DenseVector_Float)](sparsesolve(_:_:)-60ngw.md)
-  Solves the system  using the supplied single-precision factorization of , in place.
+  Solves the system *Ax = b* using the supplied single-precision factorization of *A*, in place.
 ### Out-of-place direct solving functions
 - [func SparseSolve(SparseOpaqueFactorization_Double, DenseVector_Double, DenseVector_Double)](sparsesolve(_:_:_:)-416bj.md)
-  Solves the system  using the supplied double-precision factorization of .
+  Solves the system *Ax = b* using the supplied double-precision factorization of *A*.
 - [func SparseSolve(SparseOpaqueFactorization_Float, DenseVector_Float, DenseVector_Float)](sparsesolve(_:_:_:)-666oh.md)
-  Solves the system  using the supplied single-precision factorization of .
+  Solves the system *Ax = b* using the supplied single-precision factorization of *A*.
 ### In-place direct solving functions with user-defined workspace
 - [func SparseSolve(SparseOpaqueFactorization_Double, DenseVector_Double, UnsafeMutableRawPointer)](sparsesolve(_:_:_:)-14nj.md)
-  Solves the system  using the supplied double-precision factorization of , in place and without any internal memory allocations.
+  Solves the system *Ax = b* using the supplied double-precision factorization of *A*, in place and without any internal memory allocations.
 - [func SparseSolve(SparseOpaqueFactorization_Float, DenseVector_Float, UnsafeMutableRawPointer)](sparsesolve(_:_:_:)-9hs9y.md)
-  Solves the system  using the supplied single-precision factorization of , in place and without any internal memory allocations.
+  Solves the system *Ax = b* using the supplied single-precision factorization of *A*, in place and without any internal memory allocations.
 ### Out-of-place direct solving functions with user-defined workspace
 - [func SparseSolve(SparseOpaqueFactorization_Double, DenseVector_Double, DenseVector_Double, UnsafeMutableRawPointer)](sparsesolve(_:_:_:_:)-7k9ll.md)
-  Solves the system  using the supplied double-precision factorization of , without any internal memory allocations.
+  Solves the system *Ax = b* using the supplied double-precision factorization of *A*, without any internal memory allocations.
 - [func SparseSolve(SparseOpaqueFactorization_Float, DenseVector_Float, DenseVector_Float, UnsafeMutableRawPointer)](sparsesolve(_:_:_:_:)-6bmr8.md)
-  Solves the system  using the supplied single-precision factorization of , without any internal memory allocations.
+  Solves the system *Ax = b* using the supplied single-precision factorization of *A*, without any internal memory allocations.
 ### Complex direct solving functions
 - [func SparseSolve(SparseOpaqueSubfactor_Complex_Float, DenseVector_Complex_Float)](sparsesolve(_:_:)-4fydu.md)
   Solve the equation `Subfactor * x = b` for the vector `x` of complex float values, in place.

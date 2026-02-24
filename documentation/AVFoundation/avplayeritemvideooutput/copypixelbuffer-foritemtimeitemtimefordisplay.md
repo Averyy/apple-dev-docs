@@ -32,7 +32,7 @@ After calling this method, the video output object marks the pixel buffer data a
 ## Parameters
 
 - `itemTime`: The time at which you want to retrieve the image from the item.
-- `outItemTimeForDisplay`: The time by which you intend to use the returned pixel buffer. You may specify   for this parameter if you do not have a specific deadline.
+- `outItemTimeForDisplay`: The time by which you intend to use the returned pixel buffer. You may specify `nil` for this parameter if you do not have a specific deadline.
 
 ## See Also
 

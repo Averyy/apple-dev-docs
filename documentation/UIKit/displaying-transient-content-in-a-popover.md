@@ -14,6 +14,50 @@ You specify the content of a popover using a view controller. You then present y
 
 The following code shows how to present a popover from a bar button item, which acts as the anchor point for the popover. UIKit uses the position of that bar button item to determine where to place the popover and how to orient its arrow. The view controller’s [`UIPopoverPresentationController`](uipopoverpresentationcontroller.md) manages the display of your popover onscreen.
 
+**Swift**:
+
+```swift
+@IBAction func displayOptionsForSelectedItem() {
+   // Load and configure your view controller.
+   let storyboard = UIStoryboard(name: "Main", bundle: nil)
+   let optionsVC = storyboard.instantiateViewController( 
+              withIdentifier: "itemOptionsViewController")
+    
+   // Use the popover presentation style for your view controller.    
+   optionsVC.modalPresentationStyle = .popover
+
+   // Specify the anchor point for the popover.
+   optionsVC.popoverPresentationController?.sourceItem = 
+              optionsControl
+
+   // Present the view controller (in a popover).
+   self.present(optionsVC, animated: true) {
+      // The popover is visible.
+   }
+}
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction)displayOptionsForSelectedItem {
+    // Load and configure your view controller.
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *optionsVC = [storyboard instantiateViewControllerWithIdentifier:@"itemOptionsViewController"];
+    
+    // Use the popover presentation style for your view controller.
+    [optionsVC setModalPresentationStyle:UIModalPresentationPopover];
+    
+    // Specify the anchor point for the popover.
+    [[optionsVC popoverPresentationController] setSourceItem:optionsControl];
+    
+    // Present the view controller (in a popover).
+    [self presentViewController:optionsVC animated:YES completion:^{
+        // The popover is visible.
+    }];
+}
+```
+
 Configure other properties of your view controller’s [`UIPopoverPresentationController`](uipopoverpresentationcontroller.md) object before calling the [`present(_:animated:completion:)`](uiviewcontroller/present(_:animated:completion:).md) method. For example, you might want to assign a delegate to manage the presentation and dismissal of the popover.
 
 ## See Also

@@ -24,7 +24,7 @@ A preference domain is a set of security-related preferences, such as the defaul
 
 ## Parameters
 
-- `domain`: The preference domain for which you wish to set the default keychain. See   for possible domain values.
+- `domain`: The preference domain for which you wish to set the default keychain. See [`SecPreferencesDomain`](secpreferencesdomain.md) for possible domain values.
 - `keychain`: A reference to the keychain you wish to set as default in the specified preference domain.
 
 

@@ -28,8 +28,8 @@ None of the setter functions ([`CMSEncoderSetHasDetachedContent(_:_:)`](cmsencod
 
 ## Parameters
 
-- `cmsEncoder`: The CMSEncoder reference returned by the   function.
-- `content`: The content that you want to add to the message. The content must conform to the type set with the   function (or type   if that function has not been called).
+- `cmsEncoder`: The CMSEncoder reference returned by the `CMSEncoderCreate` function.
+- `content`: The content that you want to add to the message. The content must conform to the type set with the [`CMSEncoderSetEncapsulatedContentType`](cmsencodersetencapsulatedcontenttype.md) function (or type `id-data` if that function has not been called).
 - `contentLen`: The length of the content being added, in bytes.
 
 

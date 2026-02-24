@@ -25,9 +25,9 @@ A major status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) if the call suc
 ## Parameters
 
 - `name`: The GSS name for which you want to change the password.
-- `mech`: The underlying mechanism in use. For example, use   for Kerberos.
-- `attributes`: A dictionary that you use to specify the old and new passwords as string values. Use the keys   and   for the old and new passwords, respectively.
-- `error`: A   pointer that the function sets to point at a new error object if the function call fails. Pass   to ignore this error. When an error does exist, it describes the reason for the failure, and you are responsible for releasing it with  .
+- `mech`: The underlying mechanism in use. For example, use [`GSS_KRB5_MECHANISM`](gss_krb5_mechanism.md) for Kerberos.
+- `attributes`: A dictionary that you use to specify the old and new passwords as string values. Use the keys [`kGSSChangePasswordOldPassword`](kgsschangepasswordoldpassword.md) and [`kGSSChangePasswordNewPassword`](kgsschangepasswordnewpassword.md) for the old and new passwords, respectively.
+- `error`: A `CFErrorRef` pointer that the function sets to point at a new error object if the function call fails. Pass `NULL` to ignore this error. When an error does exist, it describes the reason for the failure, and you are responsible for releasing it with `CFRelease`.
 
 ## See Also
 

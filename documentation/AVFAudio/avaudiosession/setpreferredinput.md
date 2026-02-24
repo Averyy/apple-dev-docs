@@ -28,7 +28,7 @@ You must set a preferred input port only after setting the audio session’s cat
 
 ## Parameters
 
-- `inPort`: An   object that describes the port to use for input.
+- `inPort`: An [`AVAudioSessionPortDescription`](avaudiosessionportdescription.md) object that describes the port to use for input.
 
 ## See Also
 

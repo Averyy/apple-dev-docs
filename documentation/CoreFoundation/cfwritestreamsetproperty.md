@@ -32,7 +32,7 @@ Each type of stream can define a set of properties that either describe or confi
 
 - `stream`: The stream to modify.
 - `propertyName`: The name of the property to set. The available properties for standard Core Foundation streams are listed in Stream Properties.
-- `propertyValue`: The value to which to set the property   for  . The allowed data type of the value depends on the property being set.
+- `propertyValue`: The value to which to set the property `propertyName` for `stream`. The allowed data type of the value depends on the property being set.
 
 ## See Also
 

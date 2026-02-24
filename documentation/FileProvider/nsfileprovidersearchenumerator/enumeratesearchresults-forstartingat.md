@@ -21,8 +21,8 @@ Implement this method to perform your search and deliver pages of results to `ob
 
 ## Parameters
 
-- `observer`: An  , to which your extension provides search results.
-- `page`: An indication of a location within the search results to resume enumeration. This parameter is non-  if you previously provided a   parameter to the observer’s   method. Make sure the page contains whatever information you need to resume the enumeration.
+- `observer`: An [`NSFileProviderSearchEnumerationObserver`](nsfileprovidersearchenumerationobserver.md), to which your extension provides search results.
+- `page`: An indication of a location within the search results to resume enumeration. This parameter is non-`nil` if you previously provided a `nextPage` parameter to the observer’s [`finishEnumerating(upTo:)`](nsfileprovidersearchenumerationobserver/finishenumerating(upto:).md) method. Make sure the page contains whatever information you need to resume the enumeration.
 
 ## See Also
 

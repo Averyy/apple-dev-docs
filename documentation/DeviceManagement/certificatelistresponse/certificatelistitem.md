@@ -19,6 +19,12 @@ A dictionary that contains information about a certificate list item.
 object CertificateListResponse.CertificateListItem
 ```
 
+## Properties
+
+- `CommonName` (string) *(required)*: The certificate’s common name.
+- `Data` (data) *(required)*: The certificate in DER-encoded X.509 format.
+- `IsIdentity` (boolean) *(required)*: If `true`, this is an identity certificate.
+
 ## See Also
 
 - [object CertificateListResponse.ErrorChainItem](certificatelistresponse/errorchainitem.md)

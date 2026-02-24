@@ -37,7 +37,7 @@ where `position` is the user-space coordinates of the pixel applied to the shade
 
 ## Parameters
 
-- `shader`: The shader to apply to   as a color filter.
+- `shader`: The shader to apply to `self` as a color filter.
 - `isEnabled`: Whether the effect is enabled or not.
 
 ## See Also

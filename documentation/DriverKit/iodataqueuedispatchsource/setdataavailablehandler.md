@@ -23,7 +23,7 @@ virtual kern_return_t SetDataAvailableHandler(OSAction *action);
 
 ## Parameters
 
-- `action`: The   instance specifying the callback method. The data queue retains this object until you call this method again or call  . This queue executes the action’s handler method on the action’s own dispatch queue.
+- `action`: The [`OSAction`](osaction.md) instance specifying the callback method. The data queue retains this object until you call this method again or call [`Cancel`](iodataqueuedispatchsource/cancel.md). This queue executes the action’s handler method on the action’s own dispatch queue.
 
 ## See Also
 

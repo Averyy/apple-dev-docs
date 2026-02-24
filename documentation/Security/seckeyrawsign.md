@@ -30,11 +30,11 @@ The behavior this function with [`kSecPaddingNone`](secpadding/ksecpaddingnone.m
 ## Parameters
 
 - `key`: Private key with which to sign the data.
-- `padding`: The type of padding to use. Possible values are listed in  . Use   if the data to be signed is a SHA1 digest of the actual data. If you specify  , the data is signed as-is.
+- `padding`: The type of padding to use. Possible values are listed in [`SecPadding`](secpadding.md). Use [`PKCS1SHA1`](secpadding/pkcs1sha1.md) if the data to be signed is a SHA1 digest of the actual data. If you specify [`kSecPaddingNone`](secpadding/ksecpaddingnone.md), the data is signed as-is.
 - `dataToSign`: The data to be signed. Typically, a digest of the actual data is signed.
-- `dataToSignLen`: Length in bytes of the data in the   buffer. When PKCS1 padding is performed, the maximum length of data that can be signed is 11 bytes less than the value returned by the   function ( ).
+- `dataToSignLen`: Length in bytes of the data in the `dataToSign` buffer. When PKCS1 padding is performed, the maximum length of data that can be signed is 11 bytes less than the value returned by the [`SecKeyGetBlockSize(_:)`](seckeygetblocksize(_:).md) function (`secKeyGetBlockSize() - 11`).
 - `sig`: On return, the digital signature.
-- `sigLen`: On entry, the size of the buffer provided in the   parameter. On return, the amount of data actually placed in the buffer.
+- `sigLen`: On entry, the size of the buffer provided in the `sig` parameter. On return, the amount of data actually placed in the buffer.
 
 
 ---

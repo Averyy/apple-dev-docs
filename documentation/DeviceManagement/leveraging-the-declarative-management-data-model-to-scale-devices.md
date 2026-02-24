@@ -108,6 +108,10 @@ A predicate is a string conforming to Apple’s [`Predicate Programming Guide`](
 
 The predicate expression can include references to declarative device management data such as status items and management properties, that conform to Apple’s Key-Value protocol (see [`About Key-Value Coding`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#//apple_ref/doc/uid/10000107) for more information). Referenced items must appear in the predicate inside of an extension term to correctly delineate them from other predicate terms and allow use of characters not typically allowed in predicate tokens.
 
+- **`@status`**: The key used to reference an entire status item.
+- **`@key`**: The key used to reference a status item object property.
+- **`@property`**: The key used to reference a management property.
+
 This is an example of a predicate that checks whether the device is an iPad:
 
 ```other

@@ -30,10 +30,10 @@ You use this function to create a direct-access data provider that uses callback
 
 ## Parameters
 
-- `info`: A pointer to data of any type, or  . When Core Graphics calls the function specified in the   parameter, it sends this pointer as its first argument.
+- `info`: A pointer to data of any type, or `NULL`. When Core Graphics calls the function specified in the `releaseData` parameter, it sends this pointer as its first argument.
 - `data`: A pointer to the array of data that the provider contains.
 - `size`: A value that specifies the number of bytes that the data provider contains.
-- `releaseData`: A pointer to a release callback for the data provider, or  . Your release function is called when Core Graphics frees the data provider. For more information, see  .
+- `releaseData`: A pointer to a release callback for the data provider, or `NULL`. Your release function is called when Core Graphics frees the data provider. For more information, see [`CGDataProviderReleaseDataCallback`](cgdataproviderreleasedatacallback.md).
 
 ## See Also
 

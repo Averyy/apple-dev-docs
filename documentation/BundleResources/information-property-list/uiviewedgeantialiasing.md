@@ -11,6 +11,10 @@ A Boolean value that indicates whether Core Animation layers use antialiasing wh
 - tvOS 9.0+
 - watchOS 2.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 If `YES`, layers use antialiasing by default; otherwise, they don’t.

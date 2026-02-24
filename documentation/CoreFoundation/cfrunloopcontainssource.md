@@ -32,7 +32,7 @@ If `source` was added to [`commonModes`](cfrunloopmode/commonmodes.md), this fun
 
 - `rl`: The run loop to examine.
 - `source`: The run loop source for which to search.
-- `mode`: The run loop mode of   in which to search. Use the constant   to search for   in the set of objects monitored by all the common modes.
+- `mode`: The run loop mode of `rl` in which to search. Use the constant [`commonModes`](cfrunloopmode/commonmodes.md) to search for `source` in the set of objects monitored by all the common modes.
 
 ## See Also
 

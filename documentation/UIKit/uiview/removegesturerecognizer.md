@@ -24,7 +24,7 @@ This method releases `gestureRecognizer` in addition to detaching it from the vi
 
 ## Parameters
 
-- `gestureRecognizer`: An object whose class descends from the   class.
+- `gestureRecognizer`: An object whose class descends from the [`UIGestureRecognizer`](uigesturerecognizer.md) class.
 
 ## See Also
 

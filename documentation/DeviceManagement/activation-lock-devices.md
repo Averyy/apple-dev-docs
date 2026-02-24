@@ -29,6 +29,10 @@ There are two ways to manage Activation Lock: the Activation Lock request is ava
 - [Creating and Using Bypass Codes](creating-and-using-bypass-codes.md)
   Maintain the bypass code parameters for disabling Activation Lock.
 
+## Endpoint
+
+`POST https://mdmenrollment.apple.com/device/activationlock`
+
 ## Request Body
 
 Request enabling activation lock for a device.

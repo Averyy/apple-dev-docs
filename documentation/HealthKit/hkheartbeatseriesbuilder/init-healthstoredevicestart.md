@@ -22,7 +22,7 @@ init(healthStore: HKHealthStore, device: HKDevice?, start startDate: Date)
 ## Parameters
 
 - `healthStore`: The HealthKit store.
-- `device`: An object representing the device that provided the heartbeat data. Pass   if the app is generating its own data.
+- `device`: An object representing the device that provided the heartbeat data. Pass `nil` if the app is generating its own data.
 - `startDate`: The sample’s start date.
 
 ## See Also

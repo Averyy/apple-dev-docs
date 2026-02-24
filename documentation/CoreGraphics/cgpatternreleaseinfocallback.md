@@ -28,7 +28,7 @@ To learn how to associate your release function with a Quartz pattern, see [`ini
 
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to  .
+- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(info:bounds:matrix:xStep:yStep:tiling:isColored:callbacks:)`](cgpattern/init(info:bounds:matrix:xstep:ystep:tiling:iscolored:callbacks:).md).
 
 ## See Also
 

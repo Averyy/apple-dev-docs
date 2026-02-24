@@ -25,7 +25,7 @@ A renderer of a text drag preview using the specified layout manager, range, and
 
 - `layoutManager`: The layout manager that renders the preview.
 - `range`: The range to render the preview.
-- `unifyRects`: A Boolean value that indicates whether the vertical position and height of the detection rectangles adjust to touch each other. If  , the  ,  , and   properties adjust; otherwise, they don’t. The default value is  .
+- `unifyRects`: A Boolean value that indicates whether the vertical position and height of the detection rectangles adjust to touch each other. If `true`, the [`firstLineRect`](uitextdragpreviewrenderer/firstlinerect.md), [`bodyRect`](uitextdragpreviewrenderer/bodyrect.md), and [`lastLineRect`](uitextdragpreviewrenderer/lastlinerect.md) properties adjust; otherwise, they don’t. The default value is `true`.
 
 ## See Also
 

@@ -26,10 +26,10 @@ This method can be overridden to customize drawing for `rowIndex` when using [`N
 
 ## Parameters
 
-- `column`: The index of the column in the   array.
+- `column`: The index of the column in the [`tableColumns`](nstableview/tablecolumns.md) array.
 - `row`: The row index.
 - `event`: The event.
-- `select`:   if the entered contents should be selected, otherwise  .
+- `select`: [`true`](https://developer.apple.com/documentation/Swift/true) if the entered contents should be selected, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -25,8 +25,8 @@ The tooltip string is obtained dynamically from `owner` by invoking either the `
 ## Parameters
 
 - `rect`: A rectangle defining the region of the view to associate the tooltip with.
-- `owner`: An object from which to obtain the tooltip string. The object should either implement   , or return a suitable string from its   method. It can therefore simply be an   object.
-- `data`: Any additional information you want to pass to  ; it isn’t used if   doesn’t implement this method.
+- `owner`: An object from which to obtain the tooltip string. The object should either implement  [`view:stringForToolTip:point:userData:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/view:stringForToolTip:point:userData:), or return a suitable string from its [`description`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/description) method. It can therefore simply be an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object. > ❗ **Important**:  The view maintains a weak reference to `owner`. You’re responsible for ensuring that `owner` remains valid for as long as it may be needed.
+- `data`: Any additional information you want to pass to [`view:stringForToolTip:point:userData:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/view:stringForToolTip:point:userData:); it isn’t used if `owner` doesn’t implement this method.
 
 ## See Also
 

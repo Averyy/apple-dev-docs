@@ -23,7 +23,7 @@ To begin playback after establishing a playback queue, call [`prepareToPlay()`](
 
 ## Parameters
 
-- `query`: A media query that specifies the collection of media items that you want as the playback queue. See   for a description of query types and how to create them.
+- `query`: A media query that specifies the collection of media items that you want as the playback queue. See [`MPMediaQuery`](mpmediaquery.md) for a description of query types and how to create them.
 
 ## See Also
 

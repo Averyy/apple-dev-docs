@@ -23,7 +23,7 @@ Note that you should not create cycles between parent and child windows. For exa
 ## Parameters
 
 - `childWin`: The child window to order.
-- `place`: -  :   is ordered immediately in front of the window.
+- `place`: - [`NSWindow.OrderingMode.above`](nswindow/orderingmode/above.md): `childWin` is ordered immediately in front of the window. - [`NSWindow.OrderingMode.below`](nswindow/orderingmode/below.md): `childWin` is ordered immediately behind the window.
 
 ## See Also
 

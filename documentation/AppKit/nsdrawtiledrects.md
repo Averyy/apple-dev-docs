@@ -42,10 +42,10 @@ In the preceding example, `mySides` is an array that specifies sides of a rectan
 
 ## Parameters
 
-- `boundsRect`: The bounding rectangle (in the current coordinate system) in which to draw. Since this function is often used to draw the border of a view, this rectangle will typically be that view’s bounds rectangle. Only those parts of   that lie within the   are actually drawn.
+- `boundsRect`: The bounding rectangle (in the current coordinate system) in which to draw. Since this function is often used to draw the border of a view, this rectangle will typically be that view’s bounds rectangle. Only those parts of `boundsRect` that lie within the `clipRect` are actually drawn.
 - `clipRect`: The clipping rectangle to use during drawing.
-- `sides`: The sides of the rectangle for which you want to specify custom gray levels. Each side must have a corresponding entry in the   parameter.
-- `grays`: The gray levels to draw for each of the edges listed in the   parameter.
+- `sides`: The sides of the rectangle for which you want to specify custom gray levels. Each side must have a corresponding entry in the `grays` parameter.
+- `grays`: The gray levels to draw for each of the edges listed in the `sides` parameter.
 - `count`: The number of 1.0-unit-wide slices to draw on the specified sides.
 
 ## See Also

@@ -21,7 +21,7 @@ This function generates a failure when `expression` is `nil`. Otherwise, it retu
 
 ## Parameters
 
-- `expression`: An expression of type  . The expression’s type determines the type of the return value.
+- `expression`: An expression of type `T?`. The expression’s type determines the type of the return value.
 - `message`: An optional description of a failure.
 - `file`: The file where the failure occurs. The default is the filename of the test case where you call this function.
 - `line`: The line number where the failure occurs. The default is the line number where you call this function.

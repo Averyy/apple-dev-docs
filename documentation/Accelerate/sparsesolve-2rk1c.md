@@ -26,9 +26,9 @@ If the factorization is `A=QR` and the system is underdetermined, the solution o
 
 ## Parameters
 
-- `Factored`: A factorization of  .
-- `B`: The right-hand sides   to solve for. If   has dimension  , then    must have dimension  , where nrhs is the number of   right-hand sides to find solutions for.
-- `X`: Matrix in which to return solutions. If   has dimension  , and    has dimension  , then   must have dimension  .
+- `Factored`: A factorization of `A`.
+- `B`: The right-hand sides `B` to solve for. If `A` has dimension `m x n`, then `B` must have dimension `m x nrhs`, where nrhs is the number of right-hand sides to find solutions for.
+- `X`: Matrix in which to return solutions. If `A` has dimension `m x n`, and `B` has dimension `m x nrhs`, then `X` must have dimension `n x nrhs`.
 
 ## See Also
 

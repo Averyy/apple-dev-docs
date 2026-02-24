@@ -21,7 +21,7 @@ Returns an initialized attributed string object, or `nil` if the method can’t 
 ## Parameters
 
 - `data`: The data containing the RTFD content.
-- `dict`: An in-out dictionary containing document-level attributes. On output, this method updates the dictionary to contain any document-specific keys found in the data. Specify   if you don’t want the document attributes.
+- `dict`: An in-out dictionary containing document-level attributes. On output, this method updates the dictionary to contain any document-specific keys found in the data. Specify `nil` if you don’t want the document attributes.
 
 ## See Also
 

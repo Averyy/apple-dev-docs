@@ -28,11 +28,14 @@ The resulting matrix zeroes the second component of the vector `(sqrt(D1)*B1, sq
 
 ## Parameters
 
-- `D1`: Scaling factor  .
-- `D2`: Scaling factor  .
-- `B1`: Scaling factor  .
-- `B2`: Scaling factor  .
-- `P`: :   and   are obtained from matrix  .   is 1.0.   is -1.0.
+- `D1`: Scaling factor `D1`.
+- `D2`: Scaling factor `D2`.
+- `B1`: Scaling factor `B1`.
+- `B2`: Scaling factor `B2`.
+- `P`: A 5-element vector: - **`P[0]`**: Flag value that defines the form of matrix `H`. `-2.0`: matrix `H` contains the identity matrix. `-1.0`: matrix `H` is identical to matrix `SH` (defined by the remaining values in the vector). `0.0`: `H[1,2]` and `H[2,1]` are obtained from matrix `SH`. The remaining values are both `1.0`. `1.0`: `H[1,1]` and `H[2,2]` are obtained from matrix `SH`. `H[1,2]` is 1.0. `H[2,1]` is -1.0. - **`P[1]`**: Contains `SH[1,1]`.
+- **`P[2]`**: Contains `SH[2,1]`.
+- **`P[3]`**: Contains `SH[1,2]`.
+- **`P[4]`**: Contains `SH[2,2]`.
 
 ## See Also
 

@@ -24,7 +24,7 @@ Call this method from your browser app when the authentication attempt fails to 
 
 ## Parameters
 
-- `error`: An error with domain   and a suitable code from   that indicates the reason for the cancelation.
+- `error`: An error with domain [`ASWebAuthenticationSessionErrorDomain`](aswebauthenticationsessionerrordomain.md) and a suitable code from [`ASWebAuthenticationSessionError.Code`](aswebauthenticationsessionerror/code.md) that indicates the reason for the cancelation.
 
 ## See Also
 

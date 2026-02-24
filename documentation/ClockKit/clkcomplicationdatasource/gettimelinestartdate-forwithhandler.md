@@ -25,7 +25,7 @@ If you don’t implement this method, ClockKit doesn’t attempt to retrieve tim
 ## Parameters
 
 - `complication`: The complication tied to the request.
-- `handler`: The handler to execute with the start date. This block has no return value and takes the following parameter:
+- `handler`: The handler to execute with the start date. This block has no return value and takes the following parameter: - **`date`**: The start date for your data. For times before this date, WatchKit dims your data to indicate that the timeline doesn’t continue. If you specify `nil`, ClockKit doesn’t ask for any more past data.
 
 ## See Also
 

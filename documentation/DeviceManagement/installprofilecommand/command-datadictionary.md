@@ -19,6 +19,12 @@ The command to install a configuration profile on a device.
 object InstallProfileCommand.Command
 ```
 
+## Properties
+
+- `Payload` (data) *(required)*: The profile to install, which you can encrypt using any identity certificate installed on the device. You can also sign the profile.
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

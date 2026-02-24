@@ -27,9 +27,9 @@ This initializer creates a [`Text`](text.md) view on your behalf, and treats the
 
 ## Parameters
 
-- `titleKey`: A localized string key that describes the purpose of   selecting an option.
+- `titleKey`: A localized string key that describes the purpose of selecting an option.
 - `systemImage`: The name of the image resource to lookup.
-- `selection`: A binding to a property that determines the   currently-selected option.
+- `selection`: A binding to a property that determines the currently-selected option.
 - `content`: A view that contains the set of options.
 
 ## See Also

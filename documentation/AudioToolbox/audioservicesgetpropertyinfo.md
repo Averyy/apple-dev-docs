@@ -30,10 +30,10 @@ System Sound Services properties are listed and described in [`System Sound Serv
 ## Parameters
 
 - `inPropertyID`: The property you want information about.
-- `inSpecifierSize`: The size of the buffer pointed to by the   parameter. Pass   if no specifier buffer is required.
-- `inSpecifier`: A pointer to a specifier buffer, if such a buffer is required by the property about which you want information. Pass   if no specifier is required.
+- `inSpecifierSize`: The size of the buffer pointed to by the `inSpecifier` parameter. Pass `0` if no specifier buffer is required.
+- `inSpecifier`: A pointer to a specifier buffer, if such a buffer is required by the property about which you want information. Pass `NULL` if no specifier is required.
 - `outPropertyDataSize`: On output, the size, in bytes, of the property value. To get the property value, you need a buffer of at least this size.
-- `outWritable`: On output,   if the property is writable, or   if the property is read only.
+- `outWritable`: On output, `true` if the property is writable, or `false` if the property is read only.
 
 ## See Also
 

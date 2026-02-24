@@ -22,7 +22,7 @@ optional func centralManager(_ central: CBCentralManager, didUpdateANCSAuthoriza
 ## Parameters
 
 - `central`: The central manager providing this information.
-- `peripheral`: The   that caused the event.
+- `peripheral`: The [`CBPeripheral`](cbperipheral.md) that caused the event.
 
 
 ---

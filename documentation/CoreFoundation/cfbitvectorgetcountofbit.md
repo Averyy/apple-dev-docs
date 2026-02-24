@@ -27,7 +27,7 @@ The number of occurrences of `value` in the specified range of `bv`.
 ## Parameters
 
 - `bv`: The bit vector to examine.
-- `range`: The range of bits in   to search.
+- `range`: The range of bits in `bv` to search.
 - `value`: The bit value to count.
 
 ## See Also

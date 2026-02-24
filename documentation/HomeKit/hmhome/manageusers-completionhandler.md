@@ -23,7 +23,7 @@ Only users that have administrator access to the home can call this method. Othe
 
 ## Parameters
 
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

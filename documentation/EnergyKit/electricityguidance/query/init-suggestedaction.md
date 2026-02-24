@@ -19,7 +19,7 @@ init(suggestedAction: ElectricityGuidance.SuggestedAction)
 
 ## Parameters
 
-- `suggestedAction`: The   that you request.
+- `suggestedAction`: The [`ElectricityGuidance.SuggestedAction`](electricityguidance/suggestedaction-swift.enum.md) that you request.
 
 
 ---

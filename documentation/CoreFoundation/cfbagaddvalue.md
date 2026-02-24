@@ -26,8 +26,8 @@ The `value` parameter is retained by `theBag` using the retain callback provided
 
 ## Parameters
 
-- `theBag`: The bag to which   is added.
-- `value`: A CFType object or a pointer value to add to   (or the value itself, if it fits into the size of a pointer).
+- `theBag`: The bag to which `value` is added.
+- `value`: A CFType object or a pointer value to add to `theBag` (or the value itself, if it fits into the size of a pointer).
 
 ## See Also
 

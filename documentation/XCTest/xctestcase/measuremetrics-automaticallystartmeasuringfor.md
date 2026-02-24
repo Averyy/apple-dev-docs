@@ -23,8 +23,8 @@ Performance measurement must be started and stopped exactly once within the bloc
 
 ## Parameters
 
-- `metrics`: An array of performance metrics to measure. Each metric is measured across calls to the block. Pass   to measure the number of seconds taken to execute the  block of code.
-- `automaticallyStartMeasuring`: If  , measurements will not be taken until   is called inside the block.
+- `metrics`: An array of performance metrics to measure. Each metric is measured across calls to the block. Pass [`wallClockTime`](xctperformancemetric/wallclocktime.md) to measure the number of seconds taken to execute the  block of code.
+- `automaticallyStartMeasuring`: If [`false`](https://developer.apple.com/documentation/Swift/false), measurements will not be taken until [`startMeasuring()`](xctestcase/startmeasuring().md) is called inside the block.
 - `block`: A block whose performance is measured.
 
 ## See Also

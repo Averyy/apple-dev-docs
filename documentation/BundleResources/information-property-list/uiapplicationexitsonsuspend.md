@@ -12,6 +12,10 @@ A Boolean value indicating whether the app terminates, rather than moves to the 
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [LSGetAppDiedEvents](information-property-list/lsgetappdiedevents.md)

@@ -25,8 +25,8 @@ An [`NSIndexPath`](nsindexpath.md) object.
 
 ## Parameters
 
-- `item`: An index number identifying an item in a   object in a section identified by the   parameter.
-- `section`: An index number identifying a section in a   object.
+- `item`: An index number identifying an item in a [`UICollectionView`](https://developer.apple.com/documentation/UIKit/UICollectionView) object in a section identified by the `section` parameter.
+- `section`: An index number identifying a section in a [`UICollectionView`](https://developer.apple.com/documentation/UIKit/UICollectionView) object.
 
 ## See Also
 

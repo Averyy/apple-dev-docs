@@ -26,7 +26,7 @@ The result of invoking [`data(using:allowLossyConversion:)`](nsstring/data(using
 
 ## Parameters
 
-- `encoding`: A string encoding. For possible values, see  .
+- `encoding`: A string encoding. For possible values, see [`NSStringEncoding`](nsstringencoding.md).
 
 ## See Also
 

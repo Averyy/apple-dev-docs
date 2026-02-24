@@ -24,7 +24,8 @@ func loadData() async throws -> Data
 
 ## Parameters
 
-- `handler`: The block receives the following parameters:
+- `handler`: The block that this method calls when it completes the request. The block receives the following parameters: - ***data***: The data object that you saved to the file using the [`saveGameData(_:withName:completionHandler:)`](gklocalplayer/savegamedata(_:withname:completionhandler:).md) method
+- ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 
 ---

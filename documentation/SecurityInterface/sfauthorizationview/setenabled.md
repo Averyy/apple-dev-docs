@@ -20,7 +20,7 @@ A disabled view is visible but dimmed.
 
 ## Parameters
 
-- `enabled`: Specifies whether the authorization view should be enabled ( ) or disabled ( ).
+- `enabled`: Specifies whether the authorization view should be enabled ([`true`](https://developer.apple.com/documentation/Swift/true)) or disabled ([`false`](https://developer.apple.com/documentation/Swift/false)).
 
 ## See Also
 

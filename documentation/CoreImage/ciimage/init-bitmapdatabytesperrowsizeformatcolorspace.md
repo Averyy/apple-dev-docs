@@ -28,8 +28,8 @@ The initialized image object.
 - `data`: The bitmap data to use for the image. The data you supply must be premultiplied.
 - `bytesPerRow`: The number of bytes per row.
 - `size`: The size of the image data.
-- `format`: A pixel format constant. See  .
-- `colorSpace`: The color space that the image is defined in. It must be a Quartz 2D color space ( ). Pass   for images that don’t contain color data (such as elevation maps, normal vector maps, and sampled function tables).
+- `format`: A pixel format constant. See `Pixel Formats`.
+- `colorSpace`: The color space that the image is defined in. It must be a Quartz 2D color space ([`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace)). Pass `nil` for images that don’t contain color data (such as elevation maps, normal vector maps, and sampled function tables).
 
 ## See Also
 

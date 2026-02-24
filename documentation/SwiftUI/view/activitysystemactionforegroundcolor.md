@@ -18,7 +18,7 @@ The text color for the auxiliary action button that the system shows next to a L
 
 ## Parameters
 
-- `color`: The text color to use. Pass   to use the system’s default color.
+- `color`: The text color to use. Pass `nil` to use the system’s default color.
 
 ## See Also
 

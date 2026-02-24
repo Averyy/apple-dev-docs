@@ -33,7 +33,7 @@ You must override this method. Do not call `super` in your implementations.
 ## Parameters
 
 - `url`: The URL of a shared document.
-- `completionHandler`: The completion handler takes the following parameter:
+- `completionHandler`: A block to be called as soon as the file is available. The completion handler takes the following parameter: - **error**: If the document was produced, this value is `nil`. Otherwise, it holds an `NSError` object describing the error.
 
 ## See Also
 

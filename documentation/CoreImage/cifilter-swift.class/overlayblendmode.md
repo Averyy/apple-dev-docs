@@ -29,6 +29,9 @@ This method applies the overlay-blend mode filter to an image. The effect create
 
 The overlay-blend mode filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in the background image becoming darker with the input image overlaid on top:
 
 ```swift

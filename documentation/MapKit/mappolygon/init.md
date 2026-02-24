@@ -22,7 +22,7 @@ init(_ polygon: MKPolygon)
 
 ## Parameters
 
-- `polygon`: An   that defines the polygon.
+- `polygon`: An [`MKPolygon`](mkpolygon.md) that defines the polygon.
 
 ## See Also
 

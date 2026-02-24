@@ -18,6 +18,11 @@ object PackageInstallBehaviorObject
 
 - [Installing packages](installing-packages.md)
 
+## Properties
+
+- `Install` (string): A string that specifies when the system installs the package: - `Optional`: The user can install the package after the system activates the configuration.
+- `Required`: The system installs the package after it activates the configuration.
+
 
 ---
 

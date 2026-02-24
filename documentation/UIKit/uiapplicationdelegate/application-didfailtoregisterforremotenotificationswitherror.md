@@ -27,7 +27,7 @@ For more information about how to set up and send remote notifications in your a
 ## Parameters
 
 - `application`: The app object that initiated the remote-notification registration process.
-- `error`: An   object that encapsulates information why registration did not succeed. The app can choose to display this information to the user.
+- `error`: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object that encapsulates information why registration did not succeed. The app can choose to display this information to the user.
 
 ## See Also
 

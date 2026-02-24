@@ -29,7 +29,7 @@ Removing a right also removes any resources stored along with the right, such as
 ## Parameters
 
 - `right`: An instance that represents the right to remove.
-- `handler`: A completion handler to call when the removal operation completes.
+- `handler`: A completion handler to call when the removal operation completes. - **`error`**: An error object that indicates why the removal operation failed, or `nil` if it succeeded.
 
 ## See Also
 

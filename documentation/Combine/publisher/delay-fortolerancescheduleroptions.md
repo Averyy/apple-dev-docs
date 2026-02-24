@@ -65,7 +65,7 @@ The delay affects the delivery of elements and completion, but not of the origin
 ## Parameters
 
 - `interval`: The amount of time to delay.
-- `tolerance`: The allowed tolerance in delivering delayed events. The   publisher may deliver elements this much sooner or later than the interval specifies.
+- `tolerance`: The allowed tolerance in delivering delayed events. The `Delay` publisher may deliver elements this much sooner or later than the interval specifies.
 - `scheduler`: The scheduler to deliver the delayed events.
 - `options`: Options relevant to the scheduler’s behavior.
 

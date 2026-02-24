@@ -20,7 +20,7 @@ var opacityThreshold: Float? { get set }
 
 #### Discussion
 
-In a custom material, `opacityThreshold` helps define how RealityKit renders transparency when using a texture (known as an ) to control opacity. This property is available as an input to the material’s surface shader, but RealityKit doesn’t automatically use this value to render your entity. To render an entity transparent, call `params.surface().set_opacity()` from the surface shader.
+In a custom material, `opacityThreshold` helps define how RealityKit renders transparency when using a texture (known as an *alpha map*) to control opacity. This property is available as an input to the material’s surface shader, but RealityKit doesn’t automatically use this value to render your entity. To render an entity transparent, call `params.surface().set_opacity()` from the surface shader.
 
 When `opacityThreshold` is set, [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) uses the opacity texture as a mask. RealityKit discards pixels with opacity values less than the `opacityThreshold`, and renders opacity values greater than or equal to `opacityThreshold` fully opaque.
 

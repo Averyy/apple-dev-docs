@@ -23,10 +23,10 @@ When this method is called, it creates a new background task to handle the reque
 
 ## Parameters
 
-- `matchOutcome`: The end outcome of the current player in the match. Do not pass   as an argument.
-- `nextParticipant`: The next player in the match who needs to take an action. It must be one of the object’s stored in the match’s   property.
+- `matchOutcome`: The end outcome of the current player in the match. Do not pass `nil` as an argument.
+- `nextParticipant`: The next player in the match who needs to take an action. It must be one of the object’s stored in the match’s [`participants`](gkturnbasedmatch/participants.md) property.
 - `matchData`: A serialized blob of data reflecting the game-specific state for the match.
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block to be called after the data is uploaded to the server. The block receives the following parameters: - ***error***: If an error occurred, this error object describes the error. If the operation was completed successfully, the value is `nil`.
 
 ## See Also
 

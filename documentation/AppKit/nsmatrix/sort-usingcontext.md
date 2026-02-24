@@ -16,7 +16,7 @@ func sort(using compare: (Any, Any, UnsafeMutableRawPointer?) -> Int, context: U
 
 ## Parameters
 
-- `compare`: The function to use when comparing cells. The comparison function is used to compare two elements at a time and should return   if the first element is smaller than the second,   if the first element is larger than the second, and   if the elements are equal.
+- `compare`: The function to use when comparing cells. The comparison function is used to compare two elements at a time and should return `NSOrderedAscending` if the first element is smaller than the second, `NSOrderedDescending` if the first element is larger than the second, and `NSOrderedSame` if the elements are equal.
 - `context`: Context passed to the comparison function as its third argument, each time its called. This allows the comparison to be based on some outside parameter, such as whether character sorting is case-sensitive or case-insensitive.
 
 ## See Also

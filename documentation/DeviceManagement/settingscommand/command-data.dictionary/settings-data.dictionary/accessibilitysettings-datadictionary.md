@@ -16,6 +16,19 @@ A dictionary that contains settings for accessibility.
 object SettingsCommand.Command.Settings.AccessibilitySettings
 ```
 
+## Properties
+
+- `BoldTextEnabled` (boolean): If `true`, the system enables bold text.
+- `GrayscaleEnabled` (boolean): If `true`, the system enables grayscale display.
+- `IncreaseContrastEnabled` (boolean): If `true`, the system enables increase contrast.
+- `Item` (string) *(required)*: Sets various accessibility settings. The system allows only keys with explicitly provided values.
+- `ReduceMotionEnabled` (boolean): If `true`, the system enables reduced motion.
+- `ReduceTransparencyEnabled` (boolean): If `true`, the system enables reduced transparency.
+- `TextSize` (integer): The accessibility text size apps that support dynamic text use. `0` is the smallest value, and `11` is the largest available.
+- `TouchAccommodationsEnabled` (boolean): If `true`, the system enables touch accommodations.
+- `VoiceOverEnabled` (boolean): If `true`, the system enables voiceover.
+- `ZoomEnabled` (boolean): If `true`, the system enables zoom.
+
 ## See Also
 
 - [object SettingsCommand.Command.Settings.AppAnalytics](settingscommand/command-data.dictionary/settings-data.dictionary/appanalytics-data.dictionary.md)

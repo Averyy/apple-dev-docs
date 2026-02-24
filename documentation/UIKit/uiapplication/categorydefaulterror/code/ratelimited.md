@@ -19,6 +19,9 @@ case rateLimited
 
 When you receive an error with this code, the error’s user info dictionary contains these keys:
 
+- **[`statusLastProvidedDateErrorKey`](uiapplication/categorydefaulterror/statuslastprovideddateerrorkey.md)**: The date at which the app most recently received a result indicating whether it’s the default app in a category.
+- **[`retryAvailableDateErrorKey`](uiapplication/categorydefaulterror/retryavailabledateerrorkey.md)**: The date at which the app can next request an updated response.
+
 
 ---
 

@@ -25,7 +25,7 @@ An `NSURLDownload` instance ignores multiple calls to this method.
 ## Parameters
 
 - `path`: The path for the downloaded file.
-- `allowOverwrite`:   if an existing file at   can be replaced,   otherwise.
+- `allowOverwrite`: [`true`](https://developer.apple.com/documentation/Swift/true) if an existing file at `path` can be replaced, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

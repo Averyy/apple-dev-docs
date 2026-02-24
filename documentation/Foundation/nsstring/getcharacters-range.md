@@ -30,8 +30,8 @@ You should always use the [`rangeOfComposedCharacterSequence(at:)`](nsstring/ran
 
 ## Parameters
 
-- `buffer`: Upon return, contains the characters from the receiver.   must be large enough to contain the characters in the range   ( ).
-- `range`: The range of characters to retrieve. The range must not exceed the bounds of the receiver.
+- `buffer`: Upon return, contains the characters from the receiver. `buffer` must be large enough to contain the characters in the range `aRange` (`aRange.length*sizeof(unichar)`).
+- `range`: The range of characters to retrieve. The range must not exceed the bounds of the receiver. > ❗ **Important**:  Raises an `NSRangeException` if any part of `aRange` lies beyond the bounds of the receiver.
 
 ## See Also
 

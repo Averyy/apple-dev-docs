@@ -25,11 +25,11 @@ A host may set this property to describe the presentation latency, in seconds, o
 
 A host should set this property on each active bus, since, for example, the audio routing path to each of multiple output busses may differ. The meaning of this property’s value differs between input and output busses, as described below:
 
-- For  busses, this value describes how long ago the audio arriving on this bus was acquired.
+- For *input* busses, this value describes how long ago the audio arriving on this bus was acquired.
 
 For example, when reading from a file to the first audio unit in a chain, the input presentation latency is zero. For audio input from a device, this initial input latency is the presentation latency of the device itself (i.e. the device’s offset and latency). A second chained audio unit’s input presentation latency is the input presentation latency of the first unit, plus the processing latency of the first unit.
 
-- For  busses, this value describes how long it will be before the output audio of an audio unit is presented.
+- For *output* busses, this value describes how long it will be before the output audio of an audio unit is presented.
 
 For example, when writing to a file, the output presentation latency of the last audio unit in a chain is zero. When the audio from that audio unit is to be played to a device, then that initial presentation latency will be the presentation latency of the device itself (i.e. the I/O buffer size) plus the device’s safety offset and latency. A previously chained audio unit’s output presentation latency is the last unit’s presentation latency plus its processing latency.
 

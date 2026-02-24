@@ -13,6 +13,10 @@ The iCloud services used by the app.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 To add this entitlement to your app, enable the iCloud capability and the iCloud Documents or CloudKit service in Xcode.

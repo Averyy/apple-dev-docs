@@ -31,7 +31,7 @@ Pixel formats are incompatible if they use different renderers; this can happen 
 ## Parameters
 
 - `format`: The pixel format to request for the OpenGL graphics context.
-- `share`: Another OpenGL graphics context whose texture namespace and display lists you want to share with the receiver. If you do not want to share those features with another graphics context, you may pass   for this parameter.
+- `share`: Another OpenGL graphics context whose texture namespace and display lists you want to share with the receiver. If you do not want to share those features with another graphics context, you may pass `nil` for this parameter.
 
 ## See Also
 

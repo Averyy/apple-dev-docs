@@ -26,9 +26,9 @@ func getObjectValue(_ obj: AutoreleasingUnsafeMutablePointer<AnyObject?>?, for s
 
 ## Parameters
 
-- `obj`: On return, contains an instance of  , or   if conversion failed.
+- `obj`: On return, contains an instance of [`NSPersonNameComponents`](nspersonnamecomponents.md), or `nil` if conversion failed.
 - `string`: A string that is parsed to create a person name components object.
-- `error`: If an error occurs, upon return contains an   object in the   with code   that explains why the conversion failed. If you pass in   for error, you are indicating that you are not interested in error information.
+- `error`: If an error occurs, upon return contains an [`NSError`](nserror.md) object in the [`NSCocoaErrorDomain`](nscocoaerrordomain.md) with code [`NSFormattingError`](nsformattingerror-swift.var.md) that explains why the conversion failed. If you pass in `nil` for error, you are indicating that you are not interested in error information.
 
 ## See Also
 

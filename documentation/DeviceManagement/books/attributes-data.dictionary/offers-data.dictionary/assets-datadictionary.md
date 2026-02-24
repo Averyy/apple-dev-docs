@@ -13,6 +13,12 @@
 object Books.Attributes.Offers.Assets
 ```
 
+## Properties
+
+- `duration` (number)
+- `hlsUrl` (string)
+- `size` (number)
+
 ## See Also
 
 - [object Books.Attributes.Offers.Discounts](books/attributes-data.dictionary/offers-data.dictionary/discounts-data.dictionary.md)

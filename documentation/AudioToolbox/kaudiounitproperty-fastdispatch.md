@@ -45,7 +45,7 @@ For example, by calling [`AudioUnitGetProperty(_:_:_:_:_:_:)`](audiounitgetprope
 - [var kAudioUnitProperty_ElementName: AudioUnitPropertyID](kaudiounitproperty_elementname.md)
   The name of the specified element.
 - [var kAudioUnitProperty_FactoryPresets: AudioUnitPropertyID](kaudiounitproperty_factorypresets.md)
-  So-called  (as opposed to user-configured presets) are ones supplied with an audio unit by the manufacturer. You choose the active preset by setting the `kAudioUnitProperty_PresentPreset` property.
+  So-called *factory presets* (as opposed to user-configured presets) are ones supplied with an audio unit by the manufacturer. You choose the active preset by setting the `kAudioUnitProperty_PresentPreset` property.
 - [var kAudioUnitProperty_FrequencyResponse: AudioUnitPropertyID](kaudiounitproperty_frequencyresponse.md)
 
 

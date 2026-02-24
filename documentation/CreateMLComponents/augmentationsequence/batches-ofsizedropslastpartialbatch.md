@@ -27,7 +27,7 @@ An async sequence of batches.
 ## Parameters
 
 - `size`: The number of elements contained in each batch.
-- `dropsLastPartialBatch`: A Boolean value representing whether the last batch should be dropped if it has less   than   elements.
+- `dropsLastPartialBatch`: A Boolean value representing whether the last batch should be dropped if it has less than `size` elements.
 
 ## See Also
 

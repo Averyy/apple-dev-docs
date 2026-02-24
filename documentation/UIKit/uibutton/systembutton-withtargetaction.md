@@ -25,8 +25,8 @@ This method is a convenience constructor for creating a `UIButtonTypeSystem` typ
 ## Parameters
 
 - `image`: The image for a system button.
-- `target`: The object that receives the   message.
-- `action`: The action to send to   when this item is selected.
+- `target`: The object that receives the `action` message.
+- `action`: The action to send to `target` when this item is selected.
 
 
 ---

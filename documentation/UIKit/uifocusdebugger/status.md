@@ -26,6 +26,18 @@ An object the focus debugger uses to output information to the debugger console.
 
 Call this method from the `lldb` debugger using the following command:
 
+**Swift**:
+
+```swift
+po UIFocusDebugger.status()
+```
+
+**Objective-C**:
+
+```objc
+po [UIFocusDebugger status]
+```
+
 The method returns information about the focus system and the currently focused item.
 
 ## See Also

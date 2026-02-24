@@ -24,8 +24,8 @@ This is the last function in the sequence of encoding functions you call when cr
 
 ## Parameters
 
-- `cmsEncoder`: The CMSEncoder reference returned by the   function.
-- `encodedContentOut`: On return, points to the encoded message. You must use the   function to free this reference when you are finished using it.
+- `cmsEncoder`: The CMSEncoder reference returned by the `CMSEncoderCreate` function.
+- `encodedContentOut`: On return, points to the encoded message. You must use the `CFRelease` function to free this reference when you are finished using it.
 
 
 ---

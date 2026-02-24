@@ -24,10 +24,10 @@ This methods is called by the typesetter after the text block is laid out to ret
 
 ## Parameters
 
-- `contentRect`: The actual rectangle in which the text was laid out, as determined by  .
-- `rect`: The initial rectangle in   proposed by the typesetter.
+- `contentRect`: The actual rectangle in which the text was laid out, as determined by [`rectForLayout(at:in:textContainer:characterRange:)`](nstextblock/rectforlayout(at:in:textcontainer:characterrange:).md).
+- `rect`: The initial rectangle in `textContainer` proposed by the typesetter.
 - `textContainer`: The text container being used for the layout.
-- `charRange`: The range of the characters in the   object whose glyphs are to be drawn.
+- `charRange`: The range of the characters in the [`NSTextStorage`](nstextstorage.md) object whose glyphs are to be drawn.
 
 ## See Also
 

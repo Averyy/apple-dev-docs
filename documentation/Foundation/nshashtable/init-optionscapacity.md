@@ -26,7 +26,7 @@ A hash table initialized with options specified by `options` and initial capacit
 
 ## Parameters
 
-- `options`: A bit field that specifies the options for the elements in the hash table. For possible values, see  .
+- `options`: A bit field that specifies the options for the elements in the hash table. For possible values, see [`NSHashTableOptions`](nshashtableoptions.md).
 - `initialCapacity`: The initial number of elements the hash table can hold.
 
 ## See Also

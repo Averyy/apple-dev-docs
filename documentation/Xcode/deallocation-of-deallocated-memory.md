@@ -6,7 +6,7 @@ Detects attempts to free deallocated memory.
 
 #### Overview
 
-Use this check to detect when you call `free` on deallocated memory, commonly referred to as a  error. Attempting to deallocate memory more than once can result in a crash or other unpredictable behavior. Available in Xcode 7 and later.
+Use this check to detect when you call `free` on deallocated memory, commonly referred to as a *double free* error. Attempting to deallocate memory more than once can result in a crash or other unpredictable behavior. Available in Xcode 7 and later.
 
 ##### Deallocation of Freed Memory in C
 

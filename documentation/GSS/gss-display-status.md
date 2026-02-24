@@ -26,10 +26,10 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `status_value`: The status to be examined.
-- `status_type`: The kind of status to be examined. Set to   for a GSS status code, or to   for a mechanism status code.
-- `mech_type`: The mechanism for which to interpret the status value. Set to   to indicate the system default.
+- `status_type`: The kind of status to be examined. Set to [`GSS_C_GSS_CODE`](gss_c_gss_code.md) for a GSS status code, or to [`GSS_C_MECH_CODE`](gss_c_mech_code.md) for a mechanism status code.
+- `mech_type`: The mechanism for which to interpret the status value. Set to [`GSS_C_NO_OID`](gss_c_no_oid.md) to indicate the system default.
 - `message_content`: A pointer the function uses to return a context that is currently always set to zero.
-- `status_string`: A buffer the function fills with the human readable string corresponding to the status code. Release this buffer with a call to   when you are done with it.
+- `status_string`: A buffer the function fills with the human readable string corresponding to the status code. Release this buffer with a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md) when you are done with it.
 
 ## See Also
 

@@ -26,7 +26,7 @@ If you use the [`handleBinding(ofSymbol:handler:)`](scnshadable/handlebinding(of
 
 ## Parameters
 
-- `program`: The   object to bind values for.
+- `program`: The `SCNProgram` object to bind values for.
 - `symbol`: The name of the symbol to bind a value for.
 - `location`: The location of the symbol within the program object to be modified.
 - `programID`: The underlying OpenGL program object in which the binding is made.

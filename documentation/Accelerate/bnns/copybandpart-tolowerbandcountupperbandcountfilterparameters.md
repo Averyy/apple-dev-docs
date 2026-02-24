@@ -24,8 +24,8 @@ static func copyBandPart(_ source: BNNSNDArrayDescriptor, to destination: BNNSND
 
 - `source`: The input descriptor.
 - `destination`: The output descriptor.
-- `lowerBandCount`: The number of subdiagonals that the function copies. Set to   to copy the entire lower triangle.
-- `upperBandCount`: The number of superdiagonals that the function copies. Set to   to copy the entire upper triangle.
+- `lowerBandCount`: The number of subdiagonals that the function copies. Set to `nil` to copy the entire lower triangle.
+- `upperBandCount`: The number of superdiagonals that the function copies. Set to `nil` to copy the entire upper triangle.
 - `filterParameters`: The filter runtime parameters.
 
 ## See Also

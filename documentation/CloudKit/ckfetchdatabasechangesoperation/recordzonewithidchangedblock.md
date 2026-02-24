@@ -24,6 +24,8 @@ var recordZoneWithIDChangedBlock: ((CKRecordZone.ID) -> Void)? { get set }
 
 The closure returns no value and takes the following parameter:
 
+- **`zoneID`**: The ID of the  record zone that contains changes.
+
 ## See Also
 
 - [var recordZoneWithIDWasDeletedBlock: ((CKRecordZone.ID) -> Void)?](ckfetchdatabasechangesoperation/recordzonewithidwasdeletedblock.md)

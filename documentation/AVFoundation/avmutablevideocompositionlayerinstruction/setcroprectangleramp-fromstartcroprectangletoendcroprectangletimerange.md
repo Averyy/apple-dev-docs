@@ -29,9 +29,9 @@ Before the first specified time for which a crop rectangle is set, the crop rect
 
 ## Parameters
 
-- `startCropRectangle`: The crop rectangle to be applied at the starting time of the  .
+- `startCropRectangle`: The crop rectangle to be applied at the starting time of the `timeRange`.
 - `endCropRectangle`: The crop rectangle to be applied at the end time of the timeRange.
-- `timeRange`: The time range over which the value of the opacity is interpolated between   and  .
+- `timeRange`: The time range over which the value of the opacity is interpolated between `startCropRectangle` and `endCropRectangle`.
 
 ## See Also
 

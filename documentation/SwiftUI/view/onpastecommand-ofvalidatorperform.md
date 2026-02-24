@@ -27,9 +27,9 @@ For example, if your app can handle plain text and rich text, but you prefer ric
 
 ## Parameters
 
-- `supportedContentTypes`: The uniform type identifiers that describe the   types of content this view can accept through a paste action.   If the Clipboard doesn’t contain any of the supported types, the   Paste command doesn’t trigger.
-- `validator`: A handler that validates the command. This handler   receives items from the Clipboard with the types you specify in the   . Use this handler to decide whether   the items are valid and preprocess them for the   closure.   If you return   instead, the Paste command doesn’t trigger.
-- `payloadAction`: The action to perform when the Paste command   triggers.
+- `supportedContentTypes`: The uniform type identifiers that describe the types of content this view can accept through a paste action. If the Clipboard doesn’t contain any of the supported types, the Paste command doesn’t trigger.
+- `validator`: A handler that validates the command. This handler receives items from the Clipboard with the types you specify in the `supportedContentTypes`. Use this handler to decide whether the items are valid and preprocess them for the `action` closure. If you return `nil` instead, the Paste command doesn’t trigger.
+- `payloadAction`: The action to perform when the Paste command triggers.
 
 ## See Also
 

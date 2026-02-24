@@ -48,10 +48,10 @@ struct StepperView: View {
 
 ## Parameters
 
-- `value`: A   to a value that you provide.
-- `bounds`: A closed range that describes the upper and lower bounds   permitted by the stepper.
-- `step`: The amount to increment or decrement the stepper when the   user clicks or taps the stepper’s increment or decrement buttons,   respectively.
-- `onEditingChanged`: A closure that’s called when editing begins and   ends. For example, on iOS, the user may touch and hold the increment   or decrement buttons on a stepper which causes the execution   of the   closure at the start and end of   the gesture.
+- `value`: A [`Binding`](binding.md) to a value that you provide.
+- `bounds`: A closed range that describes the upper and lower bounds permitted by the stepper.
+- `step`: The amount to increment or decrement the stepper when the user clicks or taps the stepper’s increment or decrement buttons, respectively.
+- `onEditingChanged`: A closure that’s called when editing begins and ends. For example, on iOS, the user may touch and hold the increment or decrement buttons on a stepper which causes the execution of the `onEditingChanged` closure at the start and end of the gesture.
 - `label`: A view describing the purpose of this stepper.
 
 ## See Also

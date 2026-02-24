@@ -33,9 +33,10 @@ If you attempt to read past the end of file, your handler is passed an empty dat
 ## Parameters
 
 - `fromFileDescriptor`: The file descriptor from which to read the data.
-- `maxLength`: The maximum number of bytes to read from the channel. Specify   to continue reading data until an EOF is reached.
-- `queue`: The dispatch queue on which to submit the   block.
-- `handler`: The handler to execute once the channel is closed. This block has no return value and takes the following parameters:
+- `maxLength`: The maximum number of bytes to read from the channel. Specify `SIZE_MAX` to continue reading data until an EOF is reached.
+- `queue`: The dispatch queue on which to submit the `handler` block.
+- `handler`: The handler to execute once the channel is closed. This block has no return value and takes the following parameters: - **data**: A [`DispatchData`](dispatchdata.md) object containing the data read from the file descriptor.
+- **error**: An `errno` condition if there was an error; otherwise, the value is `0`.
 
 ## See Also
 

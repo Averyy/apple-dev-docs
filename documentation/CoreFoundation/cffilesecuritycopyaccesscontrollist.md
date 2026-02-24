@@ -30,7 +30,7 @@ You can manipulate the `acl_t` object using the acl calls defined in `<sys/acl.h
 
 ## Parameters
 
-- `fileSec`: The   object.
+- `fileSec`: The `CFFileSecurityRef` object.
 - `accessControlList`: A pointer to an acl_t object. The resulting ACL can be freed by calling acl_free(3) macOS Manual Page.
 
 ## See Also

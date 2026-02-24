@@ -22,8 +22,8 @@ func setTexture(_ resourceID: MTLResourceID, index bindingIndex: Int)
 
 ## Parameters
 
-- `resourceID`: The   of the   instance to bind.
-- `bindingIndex`: A valid binding index in the texture binding range.   It is an error for this value to match or exceed the value of property    on the descriptor   from which you created this argument table.
+- `resourceID`: The [`MTLResourceID`](mtlresourceid.md) of the [`MTLTexture`](mtltexture.md) instance to bind.
+- `bindingIndex`: A valid binding index in the texture binding range. It is an error for this value to match or exceed the value of property [`maxTextureBindCount`](mtl4argumenttabledescriptor/maxtexturebindcount.md) on the descriptor from which you created this argument table.
 
 
 ---

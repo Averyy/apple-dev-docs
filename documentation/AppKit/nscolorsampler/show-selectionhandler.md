@@ -20,7 +20,7 @@ This method displays the color-sampling interface and returns immediately. The c
 
 ## Parameters
 
-- `selectionHandler`: The handler block for processing the user-selected color. AppKit calls this block on your app’s main thread. This block has no return value and takes the following parameter:
+- `selectionHandler`: The handler block for processing the user-selected color. AppKit calls this block on your app’s main thread. This block has no return value and takes the following parameter: - **selectedColor**: The selected color.
 
 
 ---

@@ -16,7 +16,7 @@ var HV_GIC_INT_MAINTENANCE: hv_gic_intid_t { get }
 
 #### Discussion
 
-For more information on maintenance interrupts, see  in the [`ARM Generic Interrupt Controller (GIC) v3`](https://developer.apple.comhttps://developer.arm.com/documentation/ihi0069/latest/) specification.
+For more information on maintenance interrupts, see *maintenance interrupts* in the [`ARM Generic Interrupt Controller (GIC) v3`](https://developer.apple.comhttps://developer.arm.com/documentation/ihi0069/latest/) specification.
 
 ## See Also
 

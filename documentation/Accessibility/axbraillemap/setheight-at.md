@@ -22,8 +22,8 @@ func setHeight(_ status: Float, at point: CGPoint)
 
 ## Parameters
 
-- `status`: A floating-point number between   and   that specifies the height of the   pin. A value of   lowers the pin completely, and a value of   raises the   pin completely.
-- `point`: The location of the pin to adjust the height for. The bottom-left of the display   is at  , and the top-right of the display is at  .
+- `status`: A floating-point number between `0.0` and `1.0` that specifies the height of the pin. A value of `0.0` lowers the pin completely, and a value of `1.0` raises the pin completely.
+- `point`: The location of the pin to adjust the height for. The bottom-left of the display is at `{ 0,0 }`, and the top-right of the display is at `{ dimensions.width - 1, dimensions.height - 1}`.
 
 ## See Also
 

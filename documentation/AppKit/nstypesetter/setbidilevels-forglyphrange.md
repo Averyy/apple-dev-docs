@@ -20,7 +20,7 @@ A subclass can override this method to interact with custom glyph storage.
 
 ## Parameters
 
-- `levels`: Values in   can range from 0 to 61 as defined by Unicode Standard Annex #9.
+- `levels`: Values in `levels` can range from 0 to 61 as defined by Unicode Standard Annex #9.
 - `glyphRange`: The range of glyphs for which the bidirectional text levels are desired.
 
 ## See Also

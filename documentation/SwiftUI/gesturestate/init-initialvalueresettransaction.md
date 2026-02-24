@@ -23,7 +23,7 @@ init(initialValue: Value, resetTransaction: Transaction)
 ## Parameters
 
 - `initialValue`: An initial state value.
-- `resetTransaction`: A transaction that provides metadata for view   updates.
+- `resetTransaction`: A transaction that provides metadata for view updates.
 
 ## See Also
 

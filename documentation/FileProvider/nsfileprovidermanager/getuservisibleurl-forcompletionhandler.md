@@ -28,7 +28,8 @@ Calling this method marks the process so that accessing the URL won’t material
 ## Parameters
 
 - `itemIdentifier`: The item’s identifier.
-- `completionHandler`: A block that the system calls after determining the item’s URL. The system passes the following parameters:
+- `completionHandler`: A block that the system calls after determining the item’s URL. The system passes the following parameters: - **`userVisibleFile`**: The URL of the user visible file, or `nil` if an error occurs.
+- **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

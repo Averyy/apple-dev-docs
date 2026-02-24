@@ -23,7 +23,7 @@ struct Normalization
 
 Audio files produced in a production environment where dynamics are already being processed may not need normalization.
 
-Normalization has a CPU cost on  for audio file resources that have a loading strategy of [`AudioFileResource.LoadingStrategy.preload`](audiofileresource/loadingstrategy-swift.enum/preload.md) and a CPU cost on  for audio files that have a loading strategy of [`AudioFileResource.LoadingStrategy.stream`](audiofileresource/loadingstrategy-swift.enum/stream.md).
+Normalization has a CPU cost on *load* for audio file resources that have a loading strategy of [`AudioFileResource.LoadingStrategy.preload`](audiofileresource/loadingstrategy-swift.enum/preload.md) and a CPU cost on *playback* for audio files that have a loading strategy of [`AudioFileResource.LoadingStrategy.stream`](audiofileresource/loadingstrategy-swift.enum/stream.md).
 
 ## Topics
 

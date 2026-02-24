@@ -23,7 +23,7 @@ typealias CFUserNotificationCallBack = (CFUserNotification?, CFOptionFlags) -> V
 ## Parameters
 
 - `userNotification`: The user notification that was dismissed.
-- `responseFlags`: On return, contains flags identifying how the notification was dismissed, the state of any checkboxes, and the selected item of the pop-up menu. See   for details.
+- `responseFlags`: On return, contains flags identifying how the notification was dismissed, the state of any checkboxes, and the selected item of the pop-up menu. See [`CFUserNotificationReceiveResponse(_:_:_:)`](cfusernotificationreceiveresponse(_:_:_:).md) for details.
 
 
 ---

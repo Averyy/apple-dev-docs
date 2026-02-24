@@ -16,7 +16,7 @@ func setAnimates(_ flag: Bool)
 
 ## Parameters
 
-- `flag`: A   value that specifies whether the receiver animates reordering and changes of the data source.
+- `flag`: A `BOOL` value that specifies whether the receiver animates reordering and changes of the data source.
 
 ## See Also
 

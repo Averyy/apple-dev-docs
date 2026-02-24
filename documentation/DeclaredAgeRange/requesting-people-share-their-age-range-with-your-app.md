@@ -41,17 +41,259 @@ do {
 
 > ❗ **Important**: Don’t use [`significantAppChangeApprovalRequired`](AgeRangeService/ParentalControls/significantAppChangeApprovalRequired.md) in iOS 26.1 and earlier and iPadOS 26.1 and earlier. Instead, use both [`isEligibleForAgeFeatures`](AgeRangeService/isEligibleForAgeFeatures.md) and [`requestAgeRange(ageGates:_:_:in:)`](AgeRangeService/requestAgeRange(ageGates:_:_:in:)-2go8c.md) to detect when you need to communicate significant changes to parents and guardians.
 
+**SwiftUI**:
+
+```swift
+import SwiftUI
+import DeclaredAgeRange
+
+@Environment(\.requestAgeRange) var requestAgeRange
+
+func checkParentalNotification() async {
+    do {
+        let isEligible = try await AgeRangeService.shared.isEligibleForAgeFeatures
+        guard isEligible else { return }
+        
+        let response = try await requestAgeRange(ageGates: 18)
+        
+        if case let .sharing(ageRange) = response,
+            let upperBound = ageRange.upperBound,
+            upperBound < 18 {
+            // Person is under 18; notify parent or guardian of significant changes.
+        }
+    } catch {
+        // Handle error.
+    }
+}
+```
+
+**UIKit and AppKit**:
+
+```swift
+// import UIKit for iOS and iPadOS.
+// import AppKit for macOS.
+import DeclaredAgeRange
+
+func checkParentalNotification() async {
+    do {
+        let isEligible = try await AgeRangeService.shared.isEligibleForAgeFeatures
+        guard isEligible else {
+            // Age features not required in this region.
+            return
+        }
+
+        let response = try await AgeRangeService.shared.requestAgeRange(
+            ageGates: 18,
+            in: viewControllerOrWindow // Use UIViewController in UIKit or NSWindow in AppKit.
+        )
+
+        switch response {
+        case let .sharing(ageRange):
+            if let upperBound = ageRange.upperBound, upperBound < 18 {
+                // Person is under 18; notify parent or guardian of significant changes.
+            }
+        case .declinedSharing:
+            // In some regulated regions, the system automatically provides the person's age range — the person can't decline sharing.
+            break
+        }
+    } catch {
+        // Handle error.
+    }
+}
+```
+
 #### Request an Age Range
 
 To ask the system for an age range, call [`requestAgeRange(ageGates:_:_:in:)`](AgeRangeService/requestAgeRange(ageGates:_:_:in:)-2go8c.md) in UIKit, [`requestAgeRange(ageGates:_:_:in:)`](AgeRangeService/requestAgeRange(ageGates:_:_:in:)-4yo3r.md) in AppKit, or use the [`callAsFunction(ageGates:_:_:)`](DeclaredAgeRangeAction/callAsFunction(ageGates:_:_:).md) environment value in SwiftUI.
 
 Define the age gates, which are the minimum ages important to your app, as parameters. You can specify up to three age gates, which create up to four possible age ranges. Each range must be at least two years in duration. Handle the response to determine which age-appropriate features are accessible based on the person’s age range. Check if the response indicates the person is sharing their age range, then use the minimum age you specify to grant access to age-appropriate features:
 
+**SwiftUI**:
+
+```swift
+import SwiftUI
+import DeclaredAgeRange
+
+@Environment(\.requestAgeRange) var requestAgeRange
+
+func checkAgeRange() async {
+    do {
+        let response = try await requestAgeRange(ageGates: 13, 15, 18)
+
+        guard case let .sharing(ageRange) = response else {
+            // Person declined sharing.
+            return
+        }
+
+        guard let lowerBound = ageRange.lowerBound else {
+            // Person is under 13; enable age-appropriate experience.
+            return
+        }
+
+        if lowerBound >= 18 {
+            // Enable features for age 18 and over.
+        } else if lowerBound >= 15 {
+            // Enable features for ages 15-17.
+        } else {
+            // Enable features for ages 13-14.
+        }
+    } catch {
+        // Handle error.
+    }
+}
+```
+
+**UIKit and AppKit**:
+
+```swift
+// import UIKit for iOS and iPadOS.
+// import AppKit for macOS.
+import DeclaredAgeRange
+
+func checkAgeRange() async {
+    do {
+        let response = try await AgeRangeService.shared.requestAgeRange(
+            ageGates: 13, 15, 18,
+            in: viewControllerOrWindow // Use UIViewController in UIKit or NSWindow in AppKit.
+        )
+
+        switch response {
+        case let .sharing(ageRange):
+            guard let lowerBound = ageRange.lowerBound else {
+                // Person is under 13; enable age-appropriate experience.
+                return
+            }
+
+            if lowerBound >= 18 {
+                // Enable features for age 18 and over.
+            } else if lowerBound >= 15 {
+                // Enable features for ages 15-17.
+            } else {
+                // Enable features for ages 13-14.
+            }
+
+        case .declinedSharing:
+            // In some regulated regions, the system automatically provides the person's age range — the person can't decline sharing.
+            break
+        }
+    } catch {
+        // Handle error.
+    }
+}
+```
+
 To identify if a person is under a specific age range, check the `upperBound` value:
+
+**SwiftUI**:
+
+```swift
+import SwiftUI
+import DeclaredAgeRange
+
+@Environment(\.requestAgeRange) var requestAgeRange
+
+func checkAgeRange() async {
+    do {
+        let response = try await requestAgeRange(ageGates: 18)
+
+        guard case let .sharing(ageRange) = response else {
+            // Person declined sharing.
+            return
+        }
+
+        if let upperBound = ageRange.upperBound, upperBound < 18 {
+            // Person is under 18; enable age-appropriate experience.
+            // Notify parents or guardians of significant changes.
+        } else {
+            // Person is over 18; grant full access.
+        }
+    } catch {
+        // Handle error.
+    }
+}
+```
+
+**UIKit and AppKit**:
+
+```swift
+// import UIKit for iOS and iPadOS.
+// import AppKit for macOS.
+import DeclaredAgeRange
+
+func checkAgeRange() async {
+    do {
+        let response = try await AgeRangeService.shared.requestAgeRange(
+            ageGates: 18,
+            in: viewControllerOrWindow // Use UIViewController in UIKit or NSWindow in AppKit.
+        )
+
+        switch response {
+        case let .sharing(ageRange):
+            if let upperBound = ageRange.upperBound, upperBound < 18 {
+                // Person is under 18; enable age-appropriate experience.
+                // Notify parents or guardians of significant changes.
+            } else {
+                // Person is over 18; grant full access.
+            }
+        case .declinedSharing:
+            // In some regulated regions, the system automatically provides the person's age range — the person can't decline sharing.
+            break
+        }
+    } catch {
+        // Handle error.
+    }
+}
+```
 
 #### Handle Errors
 
 The API throws errors when requests fail or the service is unavailable. Handle these errors to provide appropriate fallback experiences:
+
+**SwiftUI**:
+
+```swift
+import SwiftUI
+import DeclaredAgeRange
+
+@Environment(\.requestAgeRange) var requestAgeRange
+
+func checkAgeRange() async {
+    do {
+        let response = try await requestAgeRange(ageGates: 13, 16)
+        // Handle age range request response.
+    } catch AgeRangeService.Error.invalidRequest {
+        // Handle invalid request error.
+    } catch AgeRangeService.Error.notAvailable {
+        // Handle age range not available error.
+    } catch {
+        // Handle other errors.
+    }
+}
+```
+
+**UIKit and AppKit**:
+
+```swift
+// import UIKit for iOS and iPadOS.
+// import AppKit for macOS.
+import DeclaredAgeRange
+
+func checkAgeRange() async {
+    do {
+        let response = try await AgeRangeService.shared.requestAgeRange(
+            ageGates: 13, 16, 
+            in: viewControllerOrWindow // Use UIViewController in UIKit or NSWindow in AppKit.
+        )
+        // Handle age range request response.
+    } catch AgeRangeService.Error.invalidRequest {
+        // Handle invalid request error.
+    } catch AgeRangeService.Error.notAvailable {
+        // Handle age range not available error.
+    } catch {
+        // Handle other errors.
+    }
+}
+```
 
 #### Interpret the Response
 
@@ -92,6 +334,63 @@ if #available(iOS 26.2, macOS 26.2, *) {
 #### Request Permission From Parents or Guardians
 
 When the person’s age range has an `upperBound` value that indicates they’re not yet an adult in their region, check [`activeParentalControls`](AgeRangeService/AgeRange/activeParentalControls.md) to determine if Screen Time or Family Controls restrictions are active. Use PermissionKit to facilitate approval requests from their parent or guardian for specific capabilities, such as messaging. Design your features so that parental controls always take precedence over your own in-app settings:
+
+**SwiftUI**:
+
+```swift
+import SwiftUI
+import DeclaredAgeRange
+
+@Environment(\.requestAgeRange) var requestAgeRange
+
+func checkCommunicationLimits() async {
+    do {
+        let response = try await requestAgeRange(ageGates: 13)
+
+        guard case let .sharing(ageRange) = response else {
+            // Person declined sharing.
+            return
+        }
+
+        if ageRange.activeParentalControls.contains(.communicationLimits) {
+            // Child has communication limits turned on.
+            // Use PermissionKit to request messaging permissions.
+        }
+    } catch {
+        // Handle error.
+    }
+}
+```
+
+**UIKit and AppKit**:
+
+```swift
+// import UIKit for iOS and iPadOS.
+// import AppKit for macOS.
+import DeclaredAgeRange
+
+func checkCommunicationLimits() async {
+    do {
+        let response = try await AgeRangeService.shared.requestAgeRange(
+            ageGates: 13,
+            in: viewControllerOrWindow // Use UIViewController in UIKit or NSWindow in AppKit.
+        )
+
+        switch response {
+        case let .sharing(ageRange):
+            if ageRange.activeParentalControls.contains(.communicationLimits) {
+                // Child has communication limits turned on.
+                // Use PermissionKit to request messaging permissions.
+            }
+        case .declinedSharing:
+            // In some regulated regions, the system automatically provides the person's age range — the person can't decline sharing.
+            break
+        }
+    } catch {
+        // Handle error.
+    }
+}
+```
 
 [`PermissionKit`](https://developer.apple.com/documentation/PermissionKit) also supports scenarios where your app undergoes significant changes, such as if your app’s age rating changes, that require parental or guardian permission before a child can continue using your app. Use the [`ageRatingCode`](https://developer.apple.com/documentation/StoreKit/AppStore/ageRatingCode) property within StoreKit to determine if your app’s age rating changes on a person’s device. If it’s changed, use [`SignificantAppUpdateTopic`](https://developer.apple.com/documentation/PermissionKit/SignificantAppUpdateTopic) to request consent from a parent or guardian for the child to continue using your app.
 

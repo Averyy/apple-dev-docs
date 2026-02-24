@@ -26,7 +26,7 @@ An uppercase string using the `locale`.
 
 ## Parameters
 
-- `locale`: The locale. For strings presented to users, pass the current locale ([   ]). To use the system locale, pass  .
+- `locale`: The locale. For strings presented to users, pass the current locale ([[`NSLocale`](nslocale.md) [`current`](nslocale/current.md)]). To use the system locale, pass `nil`.
 
 ## See Also
 

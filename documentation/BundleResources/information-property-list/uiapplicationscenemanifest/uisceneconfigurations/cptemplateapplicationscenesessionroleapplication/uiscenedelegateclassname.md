@@ -9,6 +9,10 @@ The name of the app-specific class you want UIKit to instantiate and use as the 
 - iOS 13.0+
 - iPadOS 13.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 The delegate class you specify for [`CPTemplateApplicationSceneSessionRoleApplication`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication.md) must adopt the [`CPTemplateApplicationSceneDelegate`](https://developer.apple.com/documentation/CarPlay/CPTemplateApplicationSceneDelegate) protocol.

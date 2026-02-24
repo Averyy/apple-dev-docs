@@ -21,7 +21,7 @@ Quartz Composer invokes this method when the selected composition in the composi
 ## Parameters
 
 - `pickerView`: The composition picker view in which the selection changed.
-- `composition`: The selected composition or   if the previously selected composition is no longer selected.
+- `composition`: The selected composition or `nil` if the previously selected composition is no longer selected.
 
 
 ---

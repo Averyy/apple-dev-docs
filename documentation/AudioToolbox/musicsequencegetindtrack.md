@@ -31,7 +31,7 @@ This function is for accessing only music tracks, not the tempo track.
 
 - `inSequence`: The music sequence to obtain the music track from.
 - `inTrackIndex`: The index for the music track you want to obtain. Music tracks are zero-indexed. Out of bound indexes result in an error.
-- `outTrack`: On output, the music track specified by the   parameter.
+- `outTrack`: On output, the music track specified by the `inTrackIndex` parameter.
 
 ## See Also
 

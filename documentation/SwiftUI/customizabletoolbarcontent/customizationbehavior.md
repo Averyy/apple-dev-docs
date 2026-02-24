@@ -68,7 +68,7 @@ ContentView()
 
 ## Parameters
 
-- `behavior`: The customization behavior of the customizable   toolbar content.
+- `behavior`: The customization behavior of the customizable toolbar content.
 
 
 ---

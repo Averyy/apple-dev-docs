@@ -17,7 +17,7 @@ typealias CMTremorResultHandler = ([CMTremorResult], (any Error)?) -> Void
 ## Parameters
 
 - `tremorResult`: An array of tremor results found by the query.
-- `error`: If an error occurred, this parameter contains information about the error; otherwise it is  .
+- `error`: If an error occurred, this parameter contains information about the error; otherwise it is `nil`.
 
 ## See Also
 

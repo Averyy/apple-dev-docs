@@ -30,7 +30,8 @@ You must call [`endCollection(withEnd:completion:)`](hkworkoutbuilder/endcollect
 
 ## Parameters
 
-- `completion`: A completion handler that the system calls after the HKWorkout object has been created and saved. This handler takes the following parameters:
+- `completion`: A completion handler that the system calls after the HKWorkout object has been created and saved. This handler takes the following parameters: - **workout**: An object that represents the finished workout. If an error occurred, the system sets this parameter to `nil`. If both this  and the `error` parameter are `nil` then finishing the workout succeeded but the workout sample is not available because the device is locked.
+- **error**: If an error occurred, this parameter contains information about the error. Otherwise, it’s `nil`.
 
 ## See Also
 

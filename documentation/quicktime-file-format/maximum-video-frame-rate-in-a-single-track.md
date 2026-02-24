@@ -4,6 +4,11 @@
 
 #### Overview
 
+- **Containing profile atom**: Track (video), movie
+- **`part-ID`**: `0x20202020` (universal feature)
+- **`feature-code`**: `'vfps'`
+- **`feature-value`**: An unsigned fixed-point (16.16) number holding the maximum video frame rate
+
 #### Feature Values
 
 This is an unsigned fixed-point (16.16) number holding the maximum video frame rate. The integer portion of the number can range from `0` to `65535`.

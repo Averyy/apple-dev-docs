@@ -20,10 +20,10 @@ A Core Video result code. See[`Core Video Constants`](core-video-constants.md) f
 
 ## Parameters
 
-- `allocator`: The allocator to use for allocating this buffer pool. Pass   to specify the default allocator.
+- `allocator`: The allocator to use for allocating this buffer pool. Pass `NULL` to specify the default allocator.
 - `poolAttributes`: A Core Foundation dictionary containing the attributes to be used for the pool itself.
 - `openGLBufferAttributes`: A Core Foundation dictionary containing the attributes to be used for creating new OpenGL buffers within the pool.
-- `poolOut`: On output,   points to the new OpenGL buffer pool.
+- `poolOut`: On output, `poolOut` points to the new OpenGL buffer pool.
 
 ## See Also
 

@@ -22,7 +22,7 @@ init(animation: Animation?)
 
 ## Parameters
 
-- `animation`: The animation to perform when the current state   changes.
+- `animation`: The animation to perform when the current state changes.
 
 ## See Also
 

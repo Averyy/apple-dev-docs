@@ -23,8 +23,8 @@ convenience init(inputSize: Int, hiddenSize: Int, layerCount: Int, usesBiases: B
 - `inputSize`: The number of expected features in the input.
 - `hiddenSize`: The number of features in the hidden state.
 - `layerCount`: The number of recurrent layers.
-- `usesBiases`: A Boolean that indicates whether you use bias weights. The default value is  .
-- `isBidirectional`: A Boolean that indicates whether the layer becomes bidirectional. The default value is  .
+- `usesBiases`: A Boolean that indicates whether you use bias weights. The default value is `true`.
+- `isBidirectional`: A Boolean that indicates whether the layer becomes bidirectional. The default value is `false`.
 - `dropout`: The dropout probability rate.
 
 ## See Also

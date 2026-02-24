@@ -33,9 +33,9 @@ You should typically have little reason to use this function (see Getting the Cu
 ## Parameters
 
 - `bundle`: The bundle to examine.
-- `resourceType`: The abstract type of the resources to locate. The type is expressed as a filename extension, such as  .
-- `subDirName`: The name of the subdirectory of the bundle’s Resources directory to search. Pass   to search the standard CFBundle resource locations.
-- `localizationName`: The name of the localization. This value should correspond to the name of one of the bundle’s language-specific resource directories without the   extension. (This parameter is treated literally: If you pass  , the function will not match resources in a   directory in the bundle.)
+- `resourceType`: The abstract type of the resources to locate. The type is expressed as a filename extension, such as `jpg`.
+- `subDirName`: The name of the subdirectory of the bundle’s Resources directory to search. Pass `NULL` to search the standard CFBundle resource locations.
+- `localizationName`: The name of the localization. This value should correspond to the name of one of the bundle’s language-specific resource directories without the `.lproj` extension. (This parameter is treated literally: If you pass `"de"`, the function will not match resources in a `German.lproj` directory in the bundle.)
 
 ## See Also
 

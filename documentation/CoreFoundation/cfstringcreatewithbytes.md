@@ -30,11 +30,11 @@ This function handles character data in an “external representation” format 
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new string. Pass   or   to use the current default allocator.
-- `bytes`: A buffer containing characters in the encoding specified by  . The buffer must   contain a length byte (as in Pascal buffers) or any terminating   character (as in C buffers).
-- `numBytes`: The number of bytes in  .
+- `alloc`: The allocator to use to allocate memory for the new string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `bytes`: A buffer containing characters in the encoding specified by `encoding`. The buffer must *not* contain a length byte (as in Pascal buffers) or any terminating `NULL` character (as in C buffers).
+- `numBytes`: The number of bytes in `bytes`.
 - `encoding`: The string encoding of the characters in the buffer.
-- `isExternalRepresentation`:   if the characters in the byte buffer are in an “external representation” format—that is, whether the buffer contains a BOM (byte order marker). This is usually the case for bytes that are read in from a text file or received over the network. Otherwise, pass  .
+- `isExternalRepresentation`: `true` if the characters in the byte buffer are in an “external representation” format—that is, whether the buffer contains a BOM (byte order marker). This is usually the case for bytes that are read in from a text file or received over the network. Otherwise, pass `false`.
 
 ## See Also
 

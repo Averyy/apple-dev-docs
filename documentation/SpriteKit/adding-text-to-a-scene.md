@@ -12,6 +12,28 @@ Create a new label node by calling the [`labelNodeWithFontNamed:`](sklabelnode/l
 
 By default, the text label is centered horizontally on the label node’s origin, with the font’s baseline passing through the origin. The [`verticalAlignmentMode`](sklabelnode/verticalalignmentmode.md) and [`horizontalAlignmentMode`](sklabelnode/horizontalalignmentmode.md) properties can be used to adjust the label’s position relative to the origin. The following code demonstrates how to create a new text label.
 
+**Swift**:
+
+```swift
+let winner = SKLabelNode(fontNamed: "Chalkduster")
+winner.text = "You Win!"
+winner.fontSize = 65
+winner.fontColor = SKColor.green
+winner.position = CGPoint(x: frame.midX, y: frame.midY)
+   
+addChild(winner)
+```
+
+**Obj-C**:
+
+```objc
+SKLabelNode *winner = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];winner.text = @"You Win!";winner.fontSize = 65;
+winner.fontColor = [SKColor greenColor];
+winner.position = CGPointMake(CGRectGetMidX(self.frame),
+                              CGRectGetMidY(self.frame));   
+[self addChild:winner];
+```
+
 Whenever you change the label node’s properties, the label node is automatically updated the next time the scene is rendered.
 
 

@@ -15,6 +15,11 @@ An object that represents a description attribute.
 object DescriptionAttribute
 ```
 
+## Properties
+
+- `short` (string): The short length description text.
+- `standard` (string) *(required)*: The standard length description text.
+
 ## See Also
 
 - [object Artwork](artwork.md)

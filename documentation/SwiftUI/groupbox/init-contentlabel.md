@@ -20,8 +20,8 @@ init(@ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label)
 
 ## Parameters
 
-- `content`: A   that produces the content for the   group box.
-- `label`: A   that produces a label for the group   box.
+- `content`: A [`ViewBuilder`](viewbuilder.md) that produces the content for the group box.
+- `label`: A [`ViewBuilder`](viewbuilder.md) that produces a label for the group box.
 
 ## See Also
 

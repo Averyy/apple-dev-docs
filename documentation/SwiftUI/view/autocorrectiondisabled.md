@@ -35,7 +35,7 @@ TextField("1234 Main St.", text: $address)
 
 ## Parameters
 
-- `disable`: A Boolean value that indicates whether   autocorrection is disabled for this view. The default value is  .
+- `disable`: A Boolean value that indicates whether autocorrection is disabled for this view. The default value is `true`.
 
 ## See Also
 

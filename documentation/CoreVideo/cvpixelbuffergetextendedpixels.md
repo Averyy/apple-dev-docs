@@ -25,10 +25,10 @@ func CVPixelBufferGetExtendedPixels(_ pixelBuffer: CVPixelBuffer, _ extraColumns
 ## Parameters
 
 - `pixelBuffer`: The pixel buffer whose extended pixel size you want to obtain.
-- `extraColumnsOnLeft`: On output, the pixel row padding to the left.  Pass   if you do not want this information.
-- `extraColumnsOnRight`: On output, the pixel row padding to the right. Pass   if you do not want this information.
-- `extraRowsOnTop`: On output, the pixel row padding to the top.  Pass   if you do not want this information.
-- `extraRowsOnBottom`: On output, the pixel row padding to the bottom. Pass   if you do not want this information.
+- `extraColumnsOnLeft`: On output, the pixel row padding to the left.  Pass `NULL` if you do not want this information.
+- `extraColumnsOnRight`: On output, the pixel row padding to the right. Pass `NULL` if you do not want this information.
+- `extraRowsOnTop`: On output, the pixel row padding to the top.  Pass `NULL` if you do not want this information.
+- `extraRowsOnBottom`: On output, the pixel row padding to the bottom. Pass `NULL` if you do not want this information.
 
 ## See Also
 

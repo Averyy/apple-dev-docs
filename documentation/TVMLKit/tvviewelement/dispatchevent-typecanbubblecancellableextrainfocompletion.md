@@ -24,7 +24,7 @@ Use this method to dispatch events from views and view controllers to JavaScript
 
 ## Parameters
 
-- `type`: The type of TV element to dispatch. For possible values see  .
+- `type`: The type of TV element to dispatch. For possible values see [`TVElementEventType`](tvelementeventtype.md).
 - `canBubble`: A flag that indicates an event is dispatched on the target’s parent nodes after the event has been dispatched on the target.
 - `isCancellable`: A flag to indicate whether the event can be cancelled.
 - `extraInfo`: Extra properties that need to be exposed in the event object.

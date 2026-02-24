@@ -25,8 +25,8 @@ Use this method to create a button to display in an action sheet. In an action s
 ## Parameters
 
 - `title`: The localized string to use as the button title for the action.
-- `style`: The style to apply to the action button. For a list of possible styles and their meanings, see  .
-- `handler`: A block containing the code to execute when the user taps the action button. Use this block to perform whatever action is required to perform the associated task. For information about the format of this block, see  .
+- `style`: The style to apply to the action button. For a list of possible styles and their meanings, see [`WKAlertActionStyle`](wkalertactionstyle.md).
+- `handler`: A block containing the code to execute when the user taps the action button. Use this block to perform whatever action is required to perform the associated task. For information about the format of this block, see [`WKAlertActionHandler`](wkalertactionhandler.md).
 
 
 ---

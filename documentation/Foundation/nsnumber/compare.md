@@ -30,7 +30,7 @@ The [`compare(_:)`](nsnumber/compare(_:).md) method follows the standard C rules
 
 ## Parameters
 
-- `otherNumber`: This value must not be  . If the value is  , the behavior is undefined and may change in future versions of macOS.
+- `otherNumber`: The number to compare to the number object’s value. This value must not be `nil`. If the value is `nil`, the behavior is undefined and may change in future versions of macOS.
 
 ## See Also
 

@@ -16,6 +16,11 @@ The declaration to configure math behavior at the system level.
 object MathSettingsSystemBehaviorObject
 ```
 
+## Properties
+
+- `KeyboardSuggestions` (boolean) *(required)*: Controls whether keyboard suggestions include math solutions. This key is also supported by the keyboard.settings configuration.
+- `MathNotes` (boolean) *(required)*: Controls whether Math Notes is allowed in other apps such as Notes.
+
 ## See Also
 
 - [object MathSettingsCalculatorObject](mathsettingscalculatorobject.md)

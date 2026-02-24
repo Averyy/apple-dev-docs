@@ -49,6 +49,14 @@ Specify `com.apple.configuration.account.caldav` as the declaration type.
 }
 ```
 
+## Properties
+
+- `AuthenticationCredentialsAssetReference` (string): The identifier of an asset declaration that contains the credentials for this account. Set the corresponding asset type to `CredentialUserNameAndPassword`.
+- `HostName` (string) *(required)*: The hostname or IP address of the CalDAV server.
+- `Path` (string): The path for the CalDAV server.
+- `Port` (integer): The port number for the CalDAV server.
+- `VisibleName` (string): The name that apps show to the user for this calendar account. If not present, the system generates a suitable default.
+
 ## See Also
 
 - [object AccountCardDAV](accountcarddav.md)

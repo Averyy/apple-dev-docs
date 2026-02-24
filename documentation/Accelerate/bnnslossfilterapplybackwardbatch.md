@@ -31,7 +31,7 @@ func BNNSLossFilterApplyBackwardBatch(_ filter: BNNSFilter?, _ batch_size: Int, 
 - `labels`: Pointer to the labels data.
 - `labels_stride`: Increment, in values, between labels.
 - `weights`: Pointer to weights delta object.
-- `weights_size`: Set to   for no weight loss scaling, or   for same weight scaling for all samples in the batch.
+- `weights_size`: Set to `0` for no weight loss scaling, or `1` for same weight scaling for all samples in the batch.
 - `out_delta`: The descriptor of the output delta.
 - `out_delta_stride`: Increment, in values, between output delta objects.
 

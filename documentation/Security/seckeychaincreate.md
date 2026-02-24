@@ -27,11 +27,11 @@ The system ensures that a default keychain is created for the user at login, thu
 ## Parameters
 
 - `pathName`: A constant character string representing the POSIX path indicating where to store the keychain.
-- `passwordLength`: An unsigned 32-bit integer representing the length of the buffer pointed to by  . Pass   if the value of   is   and the value of   is  .
-- `password`: A pointer to the buffer containing the password which is used to protect the new keychain. The password must be in canonical UTF-8 encoding. Pass   if the value of   is   and the value of   is  .
-- `promptUser`: A Boolean value representing whether to display a password dialog to the user. Set this value to   to display a password dialog or   otherwise. If you pass  , any values passed for   and   are ignored, and a dialog for the user to enter a password is presented.
-- `initialAccess`: Ignored. Pass   for this parameter.
-- `keychain`: On return, a pointer to a keychain object. You must call the   function to release this object when you are finished using it.
+- `passwordLength`: An unsigned 32-bit integer representing the length of the buffer pointed to by `password`. Pass `0` if the value of `password` is `NULL` and the value of `promptUser` is `TRUE`.
+- `password`: A pointer to the buffer containing the password which is used to protect the new keychain. The password must be in canonical UTF-8 encoding. Pass `NULL` if the value of `passwordLength` is `0` and the value of `promptUser` is `TRUE`.
+- `promptUser`: A Boolean value representing whether to display a password dialog to the user. Set this value to `TRUE` to display a password dialog or `FALSE` otherwise. If you pass `TRUE`, any values passed for `passwordLength` and `password` are ignored, and a dialog for the user to enter a password is presented.
+- `initialAccess`: Ignored. Pass `NULL` for this parameter.
+- `keychain`: On return, a pointer to a keychain object. You must call the `CFRelease` function to release this object when you are finished using it.
 
 
 ---

@@ -21,7 +21,7 @@ func removeChild(_ child: PHASEObject)
 
 ## Parameters
 
-- `child`: The object to remove from the   array.
+- `child`: The object to remove from the [`children`](phaseobject/children.md) array.
 
 ## See Also
 

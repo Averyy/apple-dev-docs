@@ -25,7 +25,7 @@ This method adds a block to the JavaScript execution queue and invokes the compl
 ## Parameters
 
 - `evaluation`: The block to be evaluated in the JavaScript execution queue.
-- `completion`: The callback after the block has been executed.   if the block was evaluated;   otherwise.
+- `completion`: The callback after the block has been executed. [`true`](https://developer.apple.com/documentation/Swift/true) if the block was evaluated; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

@@ -44,8 +44,8 @@ To avoid retain cycles with the target, operate on the closure parameter rather 
 
 ## Parameters
 
-- `target`: The undo manager maintains an unowned reference to the   to prevent retain cycles.
-- `handler`: The closure takes a single argument, the target of the undo operation.
+- `target`: The target of the undo operation. The undo manager maintains an unowned reference to the `target` to prevent retain cycles.
+- `handler`: A closure to execute when an operation is undone. The closure takes a single argument, the target of the undo operation.
 
 ## See Also
 

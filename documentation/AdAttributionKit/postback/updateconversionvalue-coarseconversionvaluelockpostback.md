@@ -27,7 +27,7 @@ static func updateConversionValue(_ fineConversionValue: Int, coarseConversionVa
 ## Parameters
 
 - `fineConversionValue`: An integer that defines the fine conversion value.
-- `coarseConversionValue`: One of the   values.
+- `coarseConversionValue`: One of the [`CoarseConversionValue`](coarseconversionvalue.md) values.
 - `lockPostback`: A Boolean value that indicates whether the system can lock the postback, reducing system time to deliver a signal.
 
 

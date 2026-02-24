@@ -18,7 +18,7 @@ case labeledKeypointsData(table: MLDataTable, sessionIdColumn: String = __Defaul
 
 - `table`: A data table that contains the human body landmark locations and the action annotations.
 - `sessionIdColumn`: The name of the column that contains the action session’s unique identifier.
-- `labelColumn`: The name of the column that contains the labels of the action the person demonstrates in   the session.
+- `labelColumn`: The name of the column that contains the labels of the action the person demonstrates in the session.
 - `featureColumn `: The name of the column that contains the movement data.
 
 ## See Also

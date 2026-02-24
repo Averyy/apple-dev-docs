@@ -24,11 +24,11 @@ For more information on Carbon-Cocoa integration, see Using a Carbon User Interf
 
 ##### Special Considerations
 
-For historical reasons, contrary to normal memory management policy `initWithWindowRef:` does  retain `windowRef`. It is therefore recommended that you make sure you retain `windowRef` before calling this method. If `windowRef` is still valid when the Cocoa window is deallocated, the Cocoa window will release it.
+For historical reasons, contrary to normal memory management policy `initWithWindowRef:` does *not* retain `windowRef`. It is therefore recommended that you make sure you retain `windowRef` before calling this method. If `windowRef` is still valid when the Cocoa window is deallocated, the Cocoa window will release it.
 
 ## Parameters
 
-- `windowRef`: The Carbon   object to use to create the Cocoa window.
+- `windowRef`: The Carbon `WindowRef` object to use to create the Cocoa window.
 
 ## See Also
 

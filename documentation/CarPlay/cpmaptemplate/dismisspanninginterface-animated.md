@@ -22,7 +22,7 @@ When dismissing the panning interface, the system shows the previously hidden ma
 
 ## Parameters
 
-- `animated`: A Boolean value that determines whether to animate the dismissal of the panning interface. Set to   to animate the dismissal.
+- `animated`: A Boolean value that determines whether to animate the dismissal of the panning interface. Set to [`true`](https://developer.apple.com/documentation/Swift/true) to animate the dismissal.
 
 ## See Also
 

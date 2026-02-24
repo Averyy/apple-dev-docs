@@ -24,7 +24,7 @@ Asynchronously creates a cube texture resource from an equirectangular image.
 
 RealityKit samples the source equirectangular image at the specified quality level to generate the cube texture.
 
-The equirectangular image, also known as a , contains a flattened map of the surroundings where:
+The equirectangular image, also known as a *latitude-longitude image*, contains a flattened map of the surroundings where:
 
 - The width is a `360°` clockwise scan along the horizon, starting from behind (+z-axis)
 - The height is a -90° (bottom) to +90° (top) vertical scan
@@ -63,9 +63,9 @@ if let source = CGImageSourceCreateWithURL(url as CFURL, nil),
 ## Parameters
 
 - `cgImage`: The source image.
-- `resourceName`: A unique name for syncing the texture resource across the network.   The name is empty if you don’t include one.
+- `resourceName`: A unique name for syncing the texture resource across the network. The name is empty if you don’t include one.
 - `quality`: The sampling quality the initializer applies as it generates the cube texture.
-- `faceSize`: The dimension of a cube face.   When   is  , RealityKit computes the size based on the equirectangular image’s dimensions.   RealityKit clamps the value to the source image’s height.   For best results, pass values that are one-third of the cubeʻs width or less.
+- `faceSize`: The dimension of a cube face. When `faceSize` is `nil`, RealityKit computes the size based on the equirectangular image’s dimensions. RealityKit clamps the value to the source image’s height. For best results, pass values that are one-third of the cubeʻs width or less.
 - `options`: A configuration for generating the texture.
 
 

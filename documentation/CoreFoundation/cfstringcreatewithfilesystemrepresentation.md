@@ -26,7 +26,7 @@ A string that represents `buffer`. The result is `NULL` if there was a problem i
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new string. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new string. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `buffer`: The C string that you want to convert.
 
 ## See Also

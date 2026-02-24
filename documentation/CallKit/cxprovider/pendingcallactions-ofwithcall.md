@@ -24,7 +24,7 @@ An array of call actions of the specified class for the specified call identifie
 
 ## Parameters
 
-- `callActionClass`: The desired   subclass of returned actions.
+- `callActionClass`: The desired [`CXCallAction`](cxcallaction.md) subclass of returned actions.
 - `callUUID`: The desired call identifier for returned actions.
 
 ## See Also

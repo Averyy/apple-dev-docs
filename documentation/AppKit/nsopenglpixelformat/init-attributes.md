@@ -73,7 +73,7 @@ if(pixFmt == nil) {
 
 ## Parameters
 
-- `attribs`: A 0-terminated array containing Boolean and integer attribute constants. The presence of a Boolean attribute implies a value of   while its absence implies a value of  . Integer constants must be followed by the desired value. For a listing of attribute constants, see the constants in  .
+- `attribs`: A 0-terminated array containing Boolean and integer attribute constants. The presence of a Boolean attribute implies a value of [`true`](https://developer.apple.com/documentation/Swift/true) while its absence implies a value of [`false`](https://developer.apple.com/documentation/Swift/false). Integer constants must be followed by the desired value. For a listing of attribute constants, see the constants in [`OpenGL Pixel Format Attributes`](opengl-pixel-format-attributes.md).
 
 ## See Also
 

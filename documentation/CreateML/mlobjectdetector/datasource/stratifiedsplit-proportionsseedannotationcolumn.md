@@ -20,8 +20,8 @@ An [`MLDataTable`](mldatatable.md) containing the data source’s split contents
 
 ## Parameters
 
-- `proportions`: An array of doubles, each representing a portion of the data source. If these values don’t   add up to  , the method normalizes the numbers so that they do.
-- `seed`: The value the method uses to initialize the random-number generator, which affects how the method   splits the data.
+- `proportions`: An array of doubles, each representing a portion of the data source. If these values don’t add up to `1.0`, the method normalizes the numbers so that they do.
+- `seed`: The value the method uses to initialize the random-number generator, which affects how the method splits the data.
 - `annotationColumn`: The name of the column the method uses to split the data.
 
 

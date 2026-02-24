@@ -24,7 +24,7 @@ func add(_ subscriber: any MXMetricManagerSubscriber)
 
 ## Parameters
 
-- `subscriber`: The object that receives the daily metrics reports. The object must conform to  .
+- `subscriber`: The object that receives the daily metrics reports. The object must conform to [`MXMetricManagerSubscriber`](mxmetricmanagersubscriber.md).
 
 ## See Also
 

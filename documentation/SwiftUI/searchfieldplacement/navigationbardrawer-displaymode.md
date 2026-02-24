@@ -23,7 +23,7 @@ The field appears below any navigation bar title. The system can hide the field 
 
 ## Parameters
 
-- `displayMode`: A control that indicates whether to hide   the search field in response to scrolling.
+- `displayMode`: A control that indicates whether to hide the search field in response to scrolling.
 
 ## See Also
 

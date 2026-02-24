@@ -113,9 +113,9 @@ struct MyView: View {
 
 If an input value changes, SwiftUI notices the change and redraws only the affected parts of your interface. This might involve reinitializing your entire view, but SwiftUI manages that for you.
 
-Because the system may reinitialize a view at any time, it’s important to avoid doing any significant work in your view’s initialization code. It’s often best to omit an explicit initializer, as in the example above, allowing Swift to synthesize a  instead.
+Because the system may reinitialize a view at any time, it’s important to avoid doing any significant work in your view’s initialization code. It’s often best to omit an explicit initializer, as in the example above, allowing Swift to synthesize a *member-wise initializer* instead.
 
-SwiftUI provides many tools to help you manage your app’s data under these constraints, as described in [`Model data`](model-data.md). For information about Swift initializers, see [`Initialization`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Initialization.html) in .
+SwiftUI provides many tools to help you manage your app’s data under these constraints, as described in [`Model data`](model-data.md). For information about Swift initializers, see [`Initialization`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Initialization.html) in *The Swift Programming Language*.
 
 ##### Add Your View to the View Hierarchy
 

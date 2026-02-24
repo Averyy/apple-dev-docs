@@ -8,6 +8,10 @@ A Boolean value that indicates whether to disable all code signing protections w
 **Availability**:
 - macOS 10.7+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 The system causes an app that attempts to directly modify sections of its own executable files on disk to forcefully exit. Use the [`Disable Executable Memory Protection Entitlement`](entitlements/com.apple.security.cs.disable-executable-page-protection.md) to enable this kind of unsafe software update. Even with this entitlement, however, updates that modify some files but not others may cause unexpected app state. Ensure that you perform updates atomically, with the final app bundle swapped out after app exit.

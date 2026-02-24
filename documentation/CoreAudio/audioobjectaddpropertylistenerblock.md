@@ -26,9 +26,9 @@ Registers the given AudioObjectPropertyListenerBlock to receive notifications wh
 ## Parameters
 
 - `inObjectID`: The AudioObject to register the listener with.
-- `inAddress`: The AudioObjectPropertyAddresses indicating which property the listener   should be notified about.
-- `inDispatchQueue`: The dispatch queue on which the listener block will be dispatched. All   listener blocks will be dispatched asynchronously save for those dispatched   from the IO context (of which kAudioDevicePropertyDeviceIsRunning and   kAudioDeviceProcessorOverload are the only examples) which will be   dispatched synchronously. Note that this dispatch queue will be retained   until a matching call to AudioObjectRemovePropertyListenerBlock is made. If   this value is NULL, then the block will be directly invoked.
-- `inListener`: The AudioObjectPropertyListenerBlock to call. Note that this block will be   Block_copy’d and the reference maintained until a matching call to   AudioObjectRemovePropertyListenerBlock is made.
+- `inAddress`: The AudioObjectPropertyAddresses indicating which property the listener should be notified about.
+- `inDispatchQueue`: The dispatch queue on which the listener block will be dispatched. All listener blocks will be dispatched asynchronously save for those dispatched from the IO context (of which kAudioDevicePropertyDeviceIsRunning and kAudioDeviceProcessorOverload are the only examples) which will be dispatched synchronously. Note that this dispatch queue will be retained until a matching call to AudioObjectRemovePropertyListenerBlock is made. If this value is NULL, then the block will be directly invoked.
+- `inListener`: The AudioObjectPropertyListenerBlock to call. Note that this block will be Block_copy’d and the reference maintained until a matching call to AudioObjectRemovePropertyListenerBlock is made.
 
 ## See Also
 

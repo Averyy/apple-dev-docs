@@ -26,7 +26,7 @@ The column and row ordering you use when eliminating variables in a sparse facto
 
 Approximate minimum degree (AMD)-based orderings tend to be fast and provide good quality for small matrices. Conversely, nested dissection-based orderings, such as METIS, are usually considerably slower to compute, but provide better quality orderings for larger problems, and expose more parallelism during the factorization. Use AMD unless the problem is very large (millions of rows and columns) to avoid performing many repeated factorizations. If you’re uncertain, try both and see which gives better performance for your usage.
 
-AMD and METIS provide good orderings for symmetric matrices. You can use them for QR factorizations, but that involves forming  explicitly, which is expensive. Alternatively, column AMD (COLAMD) finds an ordering for  while only working with . For this reason, you can’t use COLAMD for symmetric factorizations.
+AMD and METIS provide good orderings for symmetric matrices. You can use them for QR factorizations, but that involves forming *AᵀA* explicitly, which is expensive. Alternatively, column AMD (COLAMD) finds an ordering for *AᵀA* while only working with *A*. For this reason, you can’t use COLAMD for symmetric factorizations.
 
 ## Topics
 
@@ -42,7 +42,7 @@ AMD and METIS provide good orderings for symmetric matrices. You can use them fo
 - [var SparseOrderMTMetis: SparseOrder_t](sparseordermtmetis.md)
   Specifies type of fill-reducing ordering.
 - [var SparseOrderCOLAMD: SparseOrder_t](sparseordercolamd.md)
-  The column AMD ordering for .
+  The column AMD ordering for *AᵀA*.
 ### Raw Values
 - [init(UInt8)](sparseorder_t/init(_:).md)
 - [init(rawValue: UInt8)](sparseorder_t/init(rawvalue:).md)

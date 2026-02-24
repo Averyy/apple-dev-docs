@@ -27,10 +27,10 @@ If you want to change how file data is saved, you generally override the [`write
 
 ## Parameters
 
-- `contents`: If the object encapsulating the document data is of some other type, you should override this method or   to perform the actual writing of the data.
-- `additionalFileAttributes`: A dictionary of   file attributes to assign to the document file. The default implementation obtains these file attributes by calling  .
+- `contents`: The document data to write to disk. Typically, the data is encapsulated by an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object (if a flat file) or an [`FileWrapper`](https://developer.apple.com/documentation/Foundation/FileWrapper) object (if a file package). If the object encapsulating the document data is of some other type, you should override this method or [`writeContents(_:to:for:originalContentsURL:)`](uidocument/writecontents(_:to:for:originalcontentsurl:).md) to perform the actual writing of the data.
+- `additionalFileAttributes`: A dictionary of [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) file attributes to assign to the document file. The default implementation obtains these file attributes by calling [`fileAttributesToWrite(to:for:)`](uidocument/fileattributestowrite(to:for:).md).
 - `url`: The file URL specifying the location of the document file in the application sandbox.
-- `saveOperation`: A constant that indicates whether the document file is being written the first time or whether it is being overwritten. See   for details.
+- `saveOperation`: A constant that indicates whether the document file is being written the first time or whether it is being overwritten. See [`UIDocument.SaveOperation`](uidocument/saveoperation.md) for details.
 
 ## See Also
 

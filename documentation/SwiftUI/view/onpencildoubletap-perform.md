@@ -82,7 +82,7 @@ For more information about Apple Pencil double-tap gestures, see [`Human Interfa
 
 ## Parameters
 
-- `action`: The action to perform after the user double-taps their   Apple Pencil.
+- `action`: The action to perform after the user double-taps their Apple Pencil.
 
 ## See Also
 

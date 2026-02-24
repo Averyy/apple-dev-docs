@@ -31,7 +31,7 @@ The request handler returns the image in the newly requested size. The requested
 ## Parameters
 
 - `boundsSize`: The original size of the artwork.
-- `requestHandler`: A handler that the system calls for the requested artwork.
+- `requestHandler`: A handler that the system calls for the requested artwork. - **size**: The new size for the image.
 
 
 ---

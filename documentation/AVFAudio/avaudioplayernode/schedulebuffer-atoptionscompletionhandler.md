@@ -25,7 +25,7 @@ func scheduleBuffer(_ buffer: AVAudioPCMBuffer, at when: AVAudioTime?, options: 
 ## Parameters
 
 - `buffer`: The buffer to play.
-- `when`: The time the buffer plays. For more information, see  .
+- `when`: The time the buffer plays. For more information, see [`Scheduling Playback Time`](avaudioplayernode#Scheduling-Playback-Time.md).
 - `options`: The playback options that control buffer scheduling.
 - `completionHandler`: The handler the system calls after the player schedules the buffer for playback on the render thread, or the player stops.
 

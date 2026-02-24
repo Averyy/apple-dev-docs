@@ -31,7 +31,7 @@ This action can only be executed by an [`SKSpriteNode`](skspritenode.md) object.
 ## Parameters
 
 - `texture`: The new texture to use on the sprite.
-- `resize`: If  , the sprite is resized to match the new texture. Otherwise, the size of the sprite is unchanged.
+- `resize`: If [`true`](https://developer.apple.com/documentation/Swift/true), the sprite is resized to match the new texture. Otherwise, the size of the sprite is unchanged.
 
 ## See Also
 

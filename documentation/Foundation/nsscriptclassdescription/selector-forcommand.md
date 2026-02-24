@@ -21,7 +21,7 @@ The selector from the receiver for the command specified by `commandDescription`
 
 ## Parameters
 
-- `commandDescription`: A description for a script command, such as  ,  , or  . Encapsulates the scriptability information for that command, such as its Objective-C selector, its argument names and types, and its return type (if any).
+- `commandDescription`: A description for a script command, such as `duplicate`, `make`, or `move`. Encapsulates the scriptability information for that command, such as its Objective-C selector, its argument names and types, and its return type (if any).
 
 ## See Also
 

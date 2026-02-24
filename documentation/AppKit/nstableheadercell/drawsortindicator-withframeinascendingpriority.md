@@ -23,7 +23,7 @@ Override this method to customize the sorting user interface.
 - `cellFrame`: The cell frame.
 - `controlView`: The control view.
 - `ascending`: If YES the sort indicator is drawn as ascending; otherwise it is drawn as descending.
-- `priority`: If   is 0, this is the primary sort indicator.
+- `priority`: If `priority` is 0, this is the primary sort indicator.
 
 ## See Also
 

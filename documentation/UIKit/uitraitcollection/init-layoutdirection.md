@@ -24,7 +24,7 @@ A new trait collection containing only the layout direction trait.
 
 ## Parameters
 
-- `layoutDirection`: The layout direction for the new trait collection. For a list of possible values, see  .
+- `layoutDirection`: The layout direction for the new trait collection. For a list of possible values, see [`UITraitEnvironmentLayoutDirection`](uitraitenvironmentlayoutdirection.md).
 
 ## See Also
 

@@ -21,7 +21,7 @@ typealias MPSGraphScheduledHandler = ([MPSGraphTensor : MPSGraphTensorData], (an
 
 ## Parameters
 
-- `resultsDictionary`: If no error, the results dictionary produced by the graph operation. If Graph has not yet allocated, the results will be  .
+- `resultsDictionary`: If no error, the results dictionary produced by the graph operation. If Graph has not yet allocated, the results will be `NSNull`.
 - `error`: If an error occurs, more information might be found here.
 
 

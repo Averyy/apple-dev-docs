@@ -30,7 +30,7 @@ optional func urlSession(_ session: URLSession, downloadTask: URLSessionDownload
 - `downloadTask`: The download task.
 - `bytesWritten`: The number of bytes transferred since the last time this delegate method was called.
 - `totalBytesWritten`: The total number of bytes transferred so far.
-- `totalBytesExpectedToWrite`: The expected length of the file, as provided by the   header. If this header was not provided, the value is  .
+- `totalBytesExpectedToWrite`: The expected length of the file, as provided by the `Content-Length` header. If this header was not provided, the value is [`NSURLSessionTransferSizeUnknown`](nsurlsessiontransfersizeunknown.md).
 
 
 ---

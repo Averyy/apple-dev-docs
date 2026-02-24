@@ -34,8 +34,8 @@ The function writes the decompressed data to `dst_buffer`.
 - `dst_size`: Size of the destination buffer in bytes.
 - `src_buffer`: Pointer to a buffer containing all of the compressed source data.
 - `src_size`: Size of the data in the source buffer in bytes.
-- `scratch_buffer`: If   is  , the function creates and manages its own scratch space, but with a possible performance hit.
-- `algorithm`: Set to the desired algorithm:  ,  ,  , or  .
+- `scratch_buffer`: If `scratch_buffer` is not `nil`, this parameter is a pointer to a buffer that the function uses for scratch purposes. The size of this buffer must be at least the size returned by a previous call to [`compression_decode_scratch_buffer_size(_:)`](compression_decode_scratch_buffer_size(_:).md). If `scratch_buffer` is `nil`, the function creates and manages its own scratch space, but with a possible performance hit.
+- `algorithm`: Set to the desired algorithm: [`COMPRESSION_LZ4`](compression_lz4.md), [`COMPRESSION_ZLIB`](compression_zlib.md), [`COMPRESSION_LZMA`](compression_lzma.md), or [`COMPRESSION_LZFSE`](compression_lzfse.md).
 
 ## See Also
 

@@ -16,7 +16,7 @@ func selectItem(at index: Int)
 
 ## Parameters
 
-- `index`: The index of the item you want to select, or   you want to deselect all menu items.
+- `index`: The index of the item you want to select, or `-1` you want to deselect all menu items.
 
 ## See Also
 

@@ -24,7 +24,8 @@ Call this method only on custom subclasses of the [`UIDynamicBehavior`](uidynami
 
 ## Parameters
 
-- `behavior`: The parent behavior ignores your use of this method if you:
+- `behavior`: The dynamic behavior you want to add as a child. The parent behavior ignores your use of this method if you: - Provide a `nil` value
+- Provide a behavior instance that you’ve already added to the behavior
 
 ## See Also
 

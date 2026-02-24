@@ -26,9 +26,9 @@ An initialized `NSString` object containing `length` bytes from `bytes` interpre
 
 ## Parameters
 
-- `bytes`: A buffer of bytes interpreted in the encoding specified by  .
-- `len`: The number of bytes to use from  .
-- `encoding`: The character encoding applied to  . For possible values, see  .
+- `bytes`: A buffer of bytes interpreted in the encoding specified by `encoding`.
+- `len`: The number of bytes to use from `bytes`.
+- `encoding`: The character encoding applied to `bytes`. For possible values, see [`NSStringEncoding`](nsstringencoding.md).
 
 ## See Also
 

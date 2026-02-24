@@ -26,8 +26,8 @@ An initialized scale view.
 
 ## Parameters
 
-- `alignment`: The alignment that describes the positioning of the scale view. The default is  .
-- `scope`: A   value that identifies this namespace and that you can use to associate this control with a map instance.
+- `alignment`: The alignment that describes the positioning of the scale view. The default is [`leading`](https://developer.apple.com/documentation/SwiftUI/HorizontalAlignment/leading).
+- `scope`: A [`Namespace.ID`](https://developer.apple.com/documentation/SwiftUI/Namespace/ID) value that identifies this namespace and that you can use to associate this control with a map instance.
 
 ## See Also
 

@@ -27,6 +27,41 @@ A predicate that matches samples based on the target quantity. This predicate wo
 
 Use this convenience method to create a predicate that matches against a sample’s quantity. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+let targetWeight = HKQuantity(unit: HKUnit.poundUnit(),
+                              doubleValue: 150.0)
+ 
+let underTargetWeight =
+    HKQuery.predicateForQuantitySamplesWithOperatorType(
+        .LessThanOrEqualToPredicateOperatorType,
+        quantity: targetWeight)
+ 
+ 
+let explicitUnderTargetWeight = NSPredicate(format: "%K <= %@",
+                                            HKPredicateKeyPathQuantity,
+                                            targetWeight)
+```
+
+**Objective-C**:
+
+```objc
+HKQuantity *targetWeight =
+[HKQuantity quantityWithUnit:[HKUnit poundUnit]
+                 doubleValue:150.0];
+ 
+NSPredicate *underTargetWeight =
+[HKQuery predicateForQuantitySamplesWithOperatorType:
+    NSLessThanOrEqualToPredicateOperatorType
+    quantity:targetWeight];
+ 
+NSPredicate *explicitUnderTargetWeight =
+[NSPredicate predicateWithFormat:@"%K <= %@",
+ HKPredicateKeyPathQuantity,
+ targetWeight];
+```
+
 ## Parameters
 
 - `operatorType`: The operator type to use when comparing the sample’s quantity to the target quantity.

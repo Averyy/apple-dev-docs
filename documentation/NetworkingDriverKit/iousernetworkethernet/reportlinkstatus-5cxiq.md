@@ -24,8 +24,8 @@ Call this method when you want to notify the network about any changes to the li
 
 ## Parameters
 
-- `linkStatus`: The state of the connection to your device. For a list of possible values, see the constants in  .
-- `activeMediaType`: The media type that your device currently supports. The media type must be one you previously reported using the   method.
+- `linkStatus`: The state of the connection to your device. For a list of possible values, see the constants in [`IOUserNetworkLinkStatus`](iousernetworklinkstatus.md).
+- `activeMediaType`: The media type that your device currently supports. The media type must be one you previously reported using the [`ReportAvailableMediaTypes`](iousernetworkethernet/reportavailablemediatypes.md) method.
 
 ## See Also
 

@@ -20,7 +20,7 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 
 ## Parameters
 
-- `cmsEncoder`: The CMSEncoder reference returned by the   function.
+- `cmsEncoder`: The CMSEncoder reference returned by the [`CMSEncoderCreate(_:)`](cmsencodercreate(_:).md) function.
 - `digestAlgorithm`: A string representing the digest algorithm to use.
 
 

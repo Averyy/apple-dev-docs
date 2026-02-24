@@ -20,7 +20,7 @@ Returns the current location identifier, or `NULL` if no location identifier has
 
 ## Parameters
 
-- `store`: The dynamic store session that should be used for communication with the server. Pass   to use a temporary session.
+- `store`: The dynamic store session that should be used for communication with the server. Pass `NULL` to use a temporary session.
 
 ## See Also
 

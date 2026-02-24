@@ -10,6 +10,10 @@ Define properties that apply to an entire sprite track.
 
 In addition to defining properties for individual sprites, you can also define properties that apply to an entire sprite track. These properties may override default behavior or provide hints to the sprite media handler. The following sprite track properties are supported:
 
+- **`kSpriteTrackPropertyBackgroundColor`**: Specifies a background color for the sprite track. The background color is used for any area that is not covered by regular sprites or background sprites. If you do not specify a background color, the sprite track uses black as the default background color.
+- **`kSpriteTrackPropertyOffscreenBitDepth`**: Specifies a preferred bit depth for the sprite track’s offscreen buffer. The allowable values are 8 and 16. To save memory, you should set the value of this property to the minimum depth needed. If you do not specify a bit depth, the sprite track allocates an offscreen buffer with the depth of the deepest intersecting monitor.
+- **`kSpriteTrackPropertySampleFormat`**: Specifies the sample format for the sprite track. If you do not specify a sample format, the sprite track uses the default format, `kKeyFrameAndSingleOverride`.
+
 To specify sprite track properties, you create a single QT atom container and add a leaf atom for each property you want to specify. To add the properties to a sprite track, you call the media handler function `SetMediaPropertyAtom`. To retrieve a sprite track’s properties, you call the media handler function `GetMediaPropertyAtom`.
 
 The sprite track properties and their corresponding data types are listed in the following table.

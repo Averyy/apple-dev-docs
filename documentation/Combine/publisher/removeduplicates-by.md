@@ -53,7 +53,7 @@ cancellable = points.publisher
 
 ## Parameters
 
-- `predicate`: A closure to evaluate whether two elements are equivalent, for purposes of filtering. Return   from this closure to indicate that the second element is a duplicate of the first.
+- `predicate`: A closure to evaluate whether two elements are equivalent, for purposes of filtering. Return `true` from this closure to indicate that the second element is a duplicate of the first.
 
 ## See Also
 

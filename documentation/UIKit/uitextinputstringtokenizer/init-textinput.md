@@ -28,7 +28,7 @@ The subclass of [`UITextInputStringTokenizer`](uitextinputstringtokenizer.md) sh
 
 ## Parameters
 
-- `textInput`: The document object in the application that adopts the   protocol for the purposes of communicating with the text input system.
+- `textInput`: The document object in the application that adopts the [`UITextInput`](uitextinput.md) protocol for the purposes of communicating with the text input system.
 
 
 ---

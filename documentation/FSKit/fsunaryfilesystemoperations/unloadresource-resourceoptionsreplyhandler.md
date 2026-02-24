@@ -17,9 +17,9 @@ func unloadResource(resource: FSResource, options: FSTaskOptions) async throws
 
 ## Parameters
 
-- `resource`: An   to unload.
-- `options`: An   object specifying options to apply when unloading the resource.
-- `reply`: A block or closure that your implementation invokes when it finishes unloading or encounters an error. If unloading fails, pass an error as the parameter to describe the problem. Otherwise, pass  .
+- `resource`: An [`FSResource`](fsresource.md) to unload.
+- `options`: An [`FSTaskOptions`](fstaskoptions.md) object specifying options to apply when unloading the resource.
+- `reply`: A block or closure that your implementation invokes when it finishes unloading or encounters an error. If unloading fails, pass an error as the parameter to describe the problem. Otherwise, pass `nil`.
 
 ## See Also
 

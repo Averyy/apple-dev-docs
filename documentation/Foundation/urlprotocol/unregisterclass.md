@@ -26,7 +26,7 @@ After this method is invoked, `protocolClass` is no longer consulted by the URL 
 
 ## Parameters
 
-- `protocolClass`: The subclass of   to unregister.
+- `protocolClass`: The subclass of [`URLProtocol`](urlprotocol.md) to unregister.
 
 ## See Also
 

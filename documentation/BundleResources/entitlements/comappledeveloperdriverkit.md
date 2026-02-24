@@ -10,6 +10,10 @@ A Boolean value that indicates whether your extension has permission to run as a
 - iPadOS 16.0+
 - macOS 10.15+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Add this entitlement to every DriverKit driver you create. You must request this entitlement from Apple. For information about how to request the entitlement, see [`System Extensions and DriverKit`](https://developer.apple.comhttps://developer.apple.com/system-extensions/).

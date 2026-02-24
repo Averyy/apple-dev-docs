@@ -21,7 +21,7 @@ var timingFunctions: [CAMediaTimingFunction]? { get set }
 
 #### Discussion
 
-You can use this array to apply ease-in, ease-out, or custom timing curves to the points that lie between two keyframe values. If the number of keyframes in the values property is , then this property should contain `-1` objects.
+You can use this array to apply ease-in, ease-out, or custom timing curves to the points that lie between two keyframe values. If the number of keyframes in the values property is *n*, then this property should contain *n*`-1` objects.
 
 If you provide timing information in the [`keyTimes`](cakeyframeanimation/keytimes.md) property, the timing functions you specify using this property further modify the timing between those values. If you do not assign a value to the [`keyTimes`](cakeyframeanimation/keytimes.md) property, the timing functions modify the default timing provided by the animation object.
 

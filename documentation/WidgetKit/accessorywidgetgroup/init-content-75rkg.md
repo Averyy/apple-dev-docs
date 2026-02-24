@@ -21,7 +21,7 @@ This initializer creates a `Text` view on your behalf. See `Text` for more infor
 
 ## Parameters
 
-- `titleResource`: Resource for the  ’s localized   label.
+- `titleResource`: Resource for the `AccessoryWidgetGroup`’s localized label.
 - `content`: A view builder for the content of the accessory group.
 
 

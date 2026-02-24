@@ -22,7 +22,7 @@ init(host bundleIdentifier: StaticString, name: StaticString)
 
 ## Parameters
 
-- `name`: The name of the host app’s extension point. This name must match the value   in the   portion of an extension point definition.
+- `name`: The name of the host app’s extension point. This name must match the value in the [`AppExtensionPoint.Name`](appextensionpoint/name.md) portion of an extension point definition.
 
 ## See Also
 

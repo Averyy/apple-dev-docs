@@ -105,7 +105,7 @@ struct NLScript
 - [class NLContextualEmbedding](nlcontextualembedding.md)
   A model that computes sequences of embedding vectors for natural language utterances.
 - [struct NLContextualEmbeddingKey](nlcontextualembeddingkey.md)
-  Contextual embedding keys.
+  This class defines properties that you can filter or search for contextual embeddings.
 
 
 ---

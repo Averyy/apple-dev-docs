@@ -22,7 +22,7 @@ func sparseTileSizeInBytes(sparsePageSize: MTLSparsePageSize) -> Int
 
 ## Parameters
 
-- `sparsePageSize`: An   instance.
+- `sparsePageSize`: An [`MTLSparsePageSize`](mtlsparsepagesize.md) instance.
 
 ## See Also
 

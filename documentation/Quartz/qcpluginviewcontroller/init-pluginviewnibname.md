@@ -20,7 +20,7 @@ A `QCPlugInViewController` object.
 
 ## Parameters
 
-- `plugIn`: A   object that uses internal settings.
+- `plugIn`: A `QCPlugIn` object that uses internal settings.
 - `name`: The name of the nib file that contains the view for the custom patch.
 
 

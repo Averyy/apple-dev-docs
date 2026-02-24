@@ -19,8 +19,8 @@ func updateAuthorizationData(_ data: Data?) async throws
 
 ## Parameters
 
-- `data`: New authorization data to use. Pass   to remove authorization data.
-- `completion`: The block executed after the request is processed.
+- `data`: New authorization data to use. Pass `nil` to remove authorization data.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

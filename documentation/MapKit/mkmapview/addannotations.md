@@ -21,7 +21,7 @@ func addAnnotations(_ annotations: [any MKAnnotation])
 
 ## Parameters
 
-- `annotations`: An array of annotation objects. Each object in the array must conform to the   protocol. The map view retains the individual annotation objects.
+- `annotations`: An array of annotation objects. Each object in the array must conform to the [`MKAnnotation`](mkannotation.md) protocol. The map view retains the individual annotation objects.
 
 ## See Also
 

@@ -26,7 +26,7 @@ A new set of effect options with the preferred repeat count.
 
 ## Parameters
 
-- `count`: The preferred number of times to play the effect, or   to request the default number of times. The function may clamp very large or small values.
+- `count`: The preferred number of times to play the effect, or `nil` to request the default number of times. The function may clamp very large or small values.
 
 ## See Also
 

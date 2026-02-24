@@ -28,7 +28,7 @@ Only one action will be performed for each purchase. Descendant views can overri
 
 ## Parameters
 
-- `action`: The action to perform, with the product value and the purchase result   provided as parameters.
+- `action`: The action to perform, with the product value and the purchase result provided as parameters.
 
 ## See Also
 

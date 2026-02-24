@@ -17,8 +17,8 @@ init(destinationName: String, @ViewBuilder label: () -> Label)
 
 ## Parameters
 
-- `destinationName`: The storyboard name of a view for the navigation   link to present.
-- `label`: A view builder to produce a label describing the    to present.
+- `destinationName`: The storyboard name of a view for the navigation link to present.
+- `label`: A view builder to produce a label describing the `destination` to present.
 
 ## See Also
 

@@ -20,10 +20,10 @@ The matrix `x` is transposed into matrix `y`.
 
 ## Parameters
 
-- `height`: Number of rows in matrix   and number of columns in matrix y; must be a multiple of 4.
-- `width`: Number of columns in matrix   and number of rows in matrix y; must be a multiple of 4.
-- `x`: Matrix with   rows and   columns.
-- `y`: Matrix with   rows and   columns.
+- `height`: Number of rows in matrix `x` and number of columns in matrix y; must be a multiple of 4.
+- `width`: Number of columns in matrix `x` and number of rows in matrix y; must be a multiple of 4.
+- `x`: Matrix with `height` rows and `width` columns.
+- `y`: Matrix with `width` rows and `height` columns.
 
 ## See Also
 

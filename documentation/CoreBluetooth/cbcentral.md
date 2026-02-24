@@ -22,7 +22,7 @@ class CBCentral
 
 #### Overview
 
-The [`CBCentral`](cbcentral.md) class represents remote central devices (or ) that have connected to an app implementing the peripheral role on a local device. Remote centrals use universally unique identifiers (UUIDs), represented by [`NSUUID`](https://developer.apple.com/documentation/Foundation/NSUUID) objects, to identify themselves.
+The [`CBCentral`](cbcentral.md) class represents remote central devices (or *centrals*) that have connected to an app implementing the peripheral role on a local device. Remote centrals use universally unique identifiers (UUIDs), represented by [`NSUUID`](https://developer.apple.com/documentation/Foundation/NSUUID) objects, to identify themselves.
 
 ## Topics
 

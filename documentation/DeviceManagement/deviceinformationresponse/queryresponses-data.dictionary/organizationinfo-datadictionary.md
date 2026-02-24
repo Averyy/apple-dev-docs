@@ -19,6 +19,14 @@ The response dictionary that contains organization information.
 object DeviceInformationResponse.QueryResponses.OrganizationInfo
 ```
 
+## Properties
+
+- `OrganizationAddress` (string): The organization’s address. Use the LF character (`&#10`) to insert line breaks. This value is available in iOS 7 and later, macOS 10.11 and later, and tvOS 9 and later.
+- `OrganizationEmail` (string): The organization’s support email address. This value is available in iOS 7 and later, macOS 10.11 and later, and tvOS 9 and later.
+- `OrganizationMagic` (string): A unique identifier for the various services a single organization manages. This value is available in iOS 7 and later, macOS 10.11 and later, and tvOS 9 and later.
+- `OrganizationName` (string) *(required)*: A string that describes the organization operating the MDM server. This value is available in iOS 7 and later, macOS 10.11 and later, and tvOS 9 and later.
+- `OrganizationPhone` (string): The organization’s phone number. This value is available in iOS 7 and later, macOS 10.11 and later, and tvOS 9 and later.
+
 ## See Also
 
 - [object DeviceInformationResponse.QueryResponses.AccessibilitySettings](deviceinformationresponse/queryresponses-data.dictionary/accessibilitysettings-data.dictionary.md)

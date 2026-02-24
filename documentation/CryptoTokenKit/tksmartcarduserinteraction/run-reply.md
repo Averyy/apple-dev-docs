@@ -22,7 +22,8 @@ func run() async throws -> Bool
 
 ## Parameters
 
-- `reply`: The   object is created in the   domain with a code in the   enumeration.
+- `reply`: - **success**: Whether the user interaction was successful.
+- **error**: Contains information about the the error that occurred during the user interaction. The `NSError` object is created in the [`TKErrorDomain`](tkerrordomain.md) domain with a code in the [`TKError.Code`](tkerror/code.md) enumeration.
 
 ## See Also
 

@@ -37,7 +37,7 @@ List {
 
 ## Parameters
 
-- `count`: An integer value to display in the badge.   Set the value to zero to hide the badge.
+- `count`: An integer value to display in the badge. Set the value to zero to hide the badge.
 
 ## See Also
 

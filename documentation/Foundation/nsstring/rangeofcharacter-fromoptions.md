@@ -30,8 +30,8 @@ Invokes [`rangeOfCharacter(from:options:range:)`](nsstring/rangeofcharacter(from
 
 ## Parameters
 
-- `searchSet`: Raises an   if   is  .
-- `mask`: A mask specifying search options. The following options may be specified by combining them with the C bitwise   operator:  ,  .
+- `searchSet`: A character set. This value must not be `nil`. Raises an `NSInvalidArgumentException` if `aSet` is `nil`.
+- `mask`: A mask specifying search options. The following options may be specified by combining them with the C bitwise `OR` operator: [`anchored`](nsstring/compareoptions/anchored.md), [`backwards`](nsstring/compareoptions/backwards.md).
 
 ## See Also
 

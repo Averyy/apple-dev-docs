@@ -21,7 +21,7 @@ The created `NSGlyphInfo` object or `nil` if the object couldn’t be created.
 ## Parameters
 
 - `cid`: A character identifier.
-- `characterCollection`: A string constant representing a character collection. Possible values are described in  .
+- `characterCollection`: A string constant representing a character collection. Possible values are described in [`NSCharacterCollection`](nscharactercollection.md).
 - `string`: The part of the attributed string the returned instance is intended to override.
 
 ## See Also

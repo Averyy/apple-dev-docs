@@ -23,9 +23,9 @@ When creating a translation session configuration it’s best to use `Locale.Lan
 
 ## Parameters
 
-- `source`: The language the source content is in. If   the session tries   to identify the language, and prompt the person to pick the source language if it’s   unclear. All text translated with this session should be in the same source language.
-- `target`: The language to translate content into. If   the session tries to   pick a target language according to the person’s  ,   and the  .
-- `preferredStrategy`: Specify the preferred translation strategy to use. If   is specified,   the framework can still fall back to the   strategy in some cases, such as when   Apple Intelligence isn’t available.
+- `source`: The language the source content is in. If `nil` the session tries to identify the language, and prompt the person to pick the source language if it’s unclear. All text translated with this session should be in the same source language.
+- `target`: The language to translate content into. If `nil` the session tries to pick a target language according to the person’s [`preferredLanguages`](https://developer.apple.com/documentation/Foundation/Locale/preferredLanguages), and the `source`.
+- `preferredStrategy`: Specify the preferred translation strategy to use. If `.highFidelity` is specified, the framework can still fall back to the `.lowLatency` strategy in some cases, such as when Apple Intelligence isn’t available.
 
 ## See Also
 

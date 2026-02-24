@@ -26,7 +26,7 @@ The initialized image object, or `nil` if the object could not be initialized.
 ## Parameters
 
 - `url`: The location of the image file to read.
-- `options`: A dictionary specifying image options. (See  .)
+- `options`: A dictionary specifying image options. (See `Image Dictionary Keys`.)
 
 ## See Also
 

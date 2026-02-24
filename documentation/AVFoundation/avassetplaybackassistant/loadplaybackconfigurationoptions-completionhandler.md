@@ -22,7 +22,7 @@ var playbackConfigurationOptions: [AVAssetPlaybackConfigurationOption] { get asy
 
 ## Parameters
 
-- `completionHandler`: A callback the system invokes with an array of   values that describe capabilities of the asset.
+- `completionHandler`: A callback the system invokes with an array of [`AVAssetPlaybackConfigurationOption`](avassetplaybackconfigurationoption.md) values that describe capabilities of the asset.
 
 
 ---

@@ -6,7 +6,7 @@ Use the transaction manager within Xcode to test in-app purchases without requir
 
 #### Overview
 
-Xcode provides a  that you use with StoreKit Testing in Xcode.  With transaction manager, you can test in-app purchases at any stage of development. Testing in-app purchases before pushing your app live helps you ensure a seamless purchase flow, test various edge cases and logic, and validate that purchases behave correctly.
+Xcode provides a *transaction manager* that you use with StoreKit Testing in Xcode.  With transaction manager, you can test in-app purchases at any stage of development. Testing in-app purchases before pushing your app live helps you ensure a seamless purchase flow, test various edge cases and logic, and validate that purchases behave correctly.
 
 Use the transaction manager to change settings and initiate test conditions, inspect transactions, and simulate different kinds of purchases.
 
@@ -15,6 +15,17 @@ Use the transaction manager to change settings and initiate test conditions, ins
 ##### Change Settings and Initiate Test Conditions
 
 Select your StoreKit configuration file in the Project navigator and choose Editor to change the following settings:
+
+- **Default Storefront**: Sets the [`storefront`](https://developer.apple.com/documentation/StoreKit/Transaction/storefront) property on the transaction.
+- **Default Localization**: Sets the localization  that affects the currency display in the payment sheet and the values that return in the localized properties of [`Product`](https://developer.apple.com/documentation/StoreKit/Product). You provide the localized data in your StoreKit configuration file.
+- **Subscription Renewal Rate**: Changes the rate at which time passes for subscriptions in the test environment compared to real time.
+- **Enable Interrupted Purchases**: Causes the test environment to simulate a condition that prevents the customer from completing a purchase. Conditions that cause an interrupted purchase include a payment card expiring, or a customer needing to approve updated terms and conditions. Choose the Resolve Issue option in Debug > StoreKit > Manage Transactions to simulate the customer resolving the issue.
+- **Enable Billing Retry on Renewal**: Causes the test environment to simulate a condition where the customer’s payment for a renewal doesn’t succeed, and the subscription enters the billing retry state. Choose the Resolve Issue option in Debug > StoreKit > Manage Transactions to simulate a successful billing retry.
+- **Enable Billing Grace Period**: Enables Billing Grace Period for your app in the Xcode testing environment. To test this condition, set Enable Billing Retry on Renewal. When the subscription fails to renew, it goes into the billing retry state with Billing Grace Period enabled.
+- **Enable Ask to Buy**: Causes the test environment to display the Ask to Buy prompt when the tester attempts a purchase. Choose the Approve Transaction or Decline Transaction option in the Debug > StoreKit > Manage Transactions menu to resolve the transaction.
+- **Enable Dialogs**: Turn off this option to run your tests faster. When you turn this option off, you assume the user has confirmed payment. The system then suppresses confirmation animations and interactions during testing. Turn on this option to display all payment dialogs during testing.
+- **Subscription Offers Key**: Provides a key that you use for signing a subscription offer in the test environment. Use this key instead of your regular key to generate the signature on your server. See [`Generating a signature for promotional offers`](https://developer.apple.com/documentation/StoreKit/generating-a-signature-for-promotional-offers) for more information.
+- **Simulate StoreKit failures**: Causes the test environment to apply the error conditions you specify to enable you to test your app’s error handling.
 
 ![A screenshot in Xcode of a selected StoreKit configuration file in the Project navigator of Xcode. The sidebars shows the Configuration Settings option selected, and the main content area lists the various test conditions to test.](https://docs-assets.developer.apple.com/published/8ccc489d2f5c4c8307e3f9f3c4ce2465/storekit-testing-editor%402x.png)
 
@@ -26,15 +37,15 @@ Use the options in the transaction manager to perform steps in an in-app purchas
 
 The transaction manager lists all the transactions for the running app. If you have multiple apps running on multiple devices, select the app in the sidebar to view its transactions. Use the transaction manager to perform these actions:
 
--  — Type a search term in the filter box at the bottom of the dialog to narrow the number of transactions that display.
--  — Click a transaction, then view that transaction’s details in the inspector. Click the jump button next to a product or group to navigate to it in the StoreKit configuration file in Xcode.
--  — Click the plus button on the left of the filter bar. Select the product you want to create a transaction for, and then configure the transaction. Use this feature to test in-app purchases made outside of the device, and to simulate in-app purchases that customers complete on different devices. For more information about creating transactions, see [`Simulate a purchase`](https://developer.apple.com#Simulate-a-purchase).
--  — Select a transaction and click Delete to retest a scenario that the customer can perform only once. For example, customers can purchase a non-consumable product only once, so delete that transaction to retest the purchase. Delete subscription transactions to retest introductory offers. For more information, see [`Implementing introductory offers in your app`](https://developer.apple.com/documentation/StoreKit/implementing-introductory-offers-in-your-app). If your app uses the [`Original API for in-app purchase`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/in-app_purchase/original_api_for_in-app_purchase), refresh the receipt to get an updated receipt without the deleted transaction.
--  — Simulate sending purchase intents to your app to ensure your app processes them correctly. For more information about receiving and handling purchase intents in your app, see [`PurchaseIntent`](https://developer.apple.com/documentation/StoreKit/PurchaseIntent).  For more information about sending a purchase intent in the testing environment, see [`Send a purchase intent`](https://developer.apple.com#Send-a-purchase-intent).
--  — Click Approve or Decline to resolve a pending transaction that’s testing an Ask to Buy scenario.
--  — Click Refund to simulate a customer receiving a refund.
--  — Click Resolve to simulate a customer resolving an interrupted purchase. To simulate the interruption, choose Editor > Enable Interrupted Purchases.
--  — Select a subscription transaction, then click the Request Price Increase Consent button in the toolbar. Test using the price increase sheet that the system presents in your app, or use the buttons to simulate the customer’s response from outside the app, such as from a push notification. Click the Approve button to indicate that the customer accepts the price increase. Click the Decline button to simulate the customer canceling the subscription.
+- **Filter transactions** — Type a search term in the filter box at the bottom of the dialog to narrow the number of transactions that display.
+- **Inspect a transaction** — Click a transaction, then view that transaction’s details in the inspector. Click the jump button next to a product or group to navigate to it in the StoreKit configuration file in Xcode.
+- **Create a transaction** — Click the plus button on the left of the filter bar. Select the product you want to create a transaction for, and then configure the transaction. Use this feature to test in-app purchases made outside of the device, and to simulate in-app purchases that customers complete on different devices. For more information about creating transactions, see [`Simulate a purchase`](https://developer.apple.com#Simulate-a-purchase).
+- **Delete a transaction** — Select a transaction and click Delete to retest a scenario that the customer can perform only once. For example, customers can purchase a non-consumable product only once, so delete that transaction to retest the purchase. Delete subscription transactions to retest introductory offers. For more information, see [`Implementing introductory offers in your app`](https://developer.apple.com/documentation/StoreKit/implementing-introductory-offers-in-your-app). If your app uses the [`Original API for in-app purchase`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/in-app_purchase/original_api_for_in-app_purchase), refresh the receipt to get an updated receipt without the deleted transaction.
+- **Send a purchase intent** — Simulate sending purchase intents to your app to ensure your app processes them correctly. For more information about receiving and handling purchase intents in your app, see [`PurchaseIntent`](https://developer.apple.com/documentation/StoreKit/PurchaseIntent).  For more information about sending a purchase intent in the testing environment, see [`Send a purchase intent`](https://developer.apple.com#Send-a-purchase-intent).
+- **Approve or decline a transaction** — Click Approve or Decline to resolve a pending transaction that’s testing an Ask to Buy scenario.
+- **Refund a transaction** — Click Refund to simulate a customer receiving a refund.
+- **Resolve a transaction** — Click Resolve to simulate a customer resolving an interrupted purchase. To simulate the interruption, choose Editor > Enable Interrupted Purchases.
+- **Test a price increase** — Select a subscription transaction, then click the Request Price Increase Consent button in the toolbar. Test using the price increase sheet that the system presents in your app, or use the buttons to simulate the customer’s response from outside the app, such as from a push notification. Click the Approve button to indicate that the customer accepts the price increase. Click the Decline button to simulate the customer canceling the subscription.
 
 The test environment automatically syncs the transaction changes you make. You don’t need to rebuild and run your app.
 

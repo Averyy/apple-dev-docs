@@ -65,9 +65,9 @@ static func quantize() {
 - `batchSize`: The number of input-output pairs to process.
 - `input`: The descriptor of the input.
 - `output`: The descriptor of the output.
-- `axis`: The index of the axis to which the function applies scale and bias. Set to   to dequantize the entire tensor using scale and bias.
-- `scale`: The scale, set to   for a scale of  .
-- `bias`: The bias, set to   for a bias of  .
+- `axis`: The index of the axis to which the function applies scale and bias. Set to `nil` to dequantize the entire tensor using scale and bias.
+- `scale`: The scale, set to `nil` for a scale of `1.0`.
+- `bias`: The bias, set to `nil` for a bias of `0.0`.
 - `filterParameters`: Runtime filter parameters.
 
 ## See Also

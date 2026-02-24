@@ -11,6 +11,10 @@ A list of merchant IDs your app uses for Apple Pay support.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 The value for this key is an array of strings containing the merchant IDs—typically in reverse domain name notation, starting with the string ‘`merchant`’.

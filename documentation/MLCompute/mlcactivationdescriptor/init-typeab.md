@@ -22,25 +22,37 @@ convenience init?(type activationType: MLCActivationType, a: Float, b: Float)
 
 Use this initializer to create one of the following activation descriptors:
 
+- **Hard Sigmoid**: `f(x) = clamp((x * a) + b, 0, 1)`
+
 Activation type: [`MLCActivationType.hardSigmoid`](mlcactivationtype/hardsigmoid.md)
 
 For common behavior, set `a` to `0.2` and `b` to `0.5`.
+
+- **Hyperbolic tangent (TanH)**: `f(x) = a * tanh(b * x)`
 
 Activation type: [`MLCActivationType.tanh`](mlcactivationtype/tanh.md)
 
 For common behavior, set `a` to `1.0` and `b` to `1.0`.
 
+- **Linear**: `f(x) = a * x + b`
+
 Activation type: [`MLCActivationType.linear`](mlcactivationtype/linear.md)
 
 For common behavior, set `a` to `1.0` and `b` to `0.0`.
+
+- **Parametric Soft Plus**: `f(x) = a * log(1 + e^(b * x))`
 
 Activation type: [`MLCActivationType.softPlus`](mlcactivationtype/softplus.md)
 
 For common behavior, set `a` to `1.0` and `b` to `1.0`.
 
+- **ReLUN**: `f(x) = min((x >= 0 ? x : a * x), b)`
+
 Activation type: [`MLCActivationType.relun`](mlcactivationtype/relun.md)
 
 For common behavior, set `a` to `0.0` and `b` to `6.0`.
+
+- **Threshold**: `f(x) = x`, if `x > a`, else `b`, where:
 
 `a = threshold`
 

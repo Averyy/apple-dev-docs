@@ -8,6 +8,11 @@ Add long short-term memory (LSTM) layers to recurrent neural networks to avoid l
 
 An LSTM layer consists of four gates that manipulate cell-state data:
 
+- **Forget gate**: Controls whether to erase data from the cell-state.
+- **Input gate**: Controls whether to write data to the cell-state.
+- **Candidate gate**: Controls what data to write to the cell-state.
+- **Output gate**: Controls what data to pass as the output hidden state.
+
 The following figure illustrates the components of an LSTM layer. The inputs are the cell-state (c), the hidden state (h), and the input data (x). The outputs are the updated cell-state (c) and hidden state (h):
 
 ![Visualization of an LSTM layer showing the forget gate, input gate, candidate gate, and output gate as boxes that contain a curve that represents the gate’s activation function. The cell state is multiplied by the output of the forget gate, and then added to the product of the outputs of the input gate and candidate gate.](https://docs-assets.developer.apple.com/published/6565aaa85ca2568104335ed3b51b8ac5/media-3633106%402x.png)

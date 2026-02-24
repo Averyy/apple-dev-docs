@@ -19,6 +19,12 @@ The command to remove a previously installed provisioning profile from a device.
 object RemoveProvisioningProfileCommand.Command
 ```
 
+## Properties
+
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+- `UUID` (string) *(required)*: The unique identifier of the provisioning profile to remove.
+
 
 ---
 

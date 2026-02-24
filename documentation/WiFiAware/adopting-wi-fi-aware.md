@@ -19,8 +19,8 @@ If you intend your app to use Wi-Fi Aware capabilities, you need to add the `com
 
 Services are the specific functionality and protocols that your app can either provide to other devices or consume from other devices. There are two supported service roles in Wi-Fi Aware:
 
-- : Your app hosts the service and acts as a server that allows incoming connections from other paired devices. For example, your app publishes its availability to other devices to print documents.
-- : Your app uses the service and acts as the client that makes outgoing connections to other paired devices. For example, your app finds friends to connect to in a game.
+- **Publisher**: Your app hosts the service and acts as a server that allows incoming connections from other paired devices. For example, your app publishes its availability to other devices to print documents.
+- **Subscriber**: Your app uses the service and acts as the client that makes outgoing connections to other paired devices. For example, your app finds friends to connect to in a game.
 
 Wi-Fi Aware can support multiple services simultaneously, and can also act as a publisher, subscriber, or both. As such, your app can:
 
@@ -31,7 +31,7 @@ Wi-Fi Aware can support multiple services simultaneously, and can also act as a 
 
 > **Note**: Your app can only publish a given service at most once per device, so it can’t publish multiple instances of the same service. To minimize resource cost, avoid simultaneously subscribing to the same service multiple times.
 
-Declare the services you want to use with the WiFiAwareServices key in your app’s Information property list. The key’s value is the dictionary where  are names of services your app uses and  are dictionaries of service configuration information, which is in the Info pane of the target editor in Xcode.
+Declare the services you want to use with the WiFiAwareServices key in your app’s Information property list. The key’s value is the dictionary where *keys* are names of services your app uses and *values* are dictionaries of service configuration information, which is in the Info pane of the target editor in Xcode.
 
 Each key under the `WiFiAwareServices` entry is the fully qualified name of a service as it’s sent over the air. It’s populated in the `name` field of the resulting [`WAPublishableService`](wapublishableservice.md) and [`WASubscribableService`](wasubscribableservice.md) structures in the API. For a service name to be valid, it must conform to the rules in [`RFC 6763`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6763#section-4.1.2) and [`RFC 6335`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6335#section-5.1).
 

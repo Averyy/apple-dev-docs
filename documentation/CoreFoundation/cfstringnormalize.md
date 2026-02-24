@@ -23,7 +23,7 @@ func CFStringNormalize(_ theString: CFMutableString!, _ theForm: CFStringNormali
 ## Parameters
 
 - `theString`: The string to be normalized.
-- `theForm`: The form to normalize  .
+- `theForm`: The form to normalize `theString`.
 
 ## See Also
 

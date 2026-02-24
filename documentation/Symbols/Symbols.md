@@ -18,6 +18,11 @@ Apply universal animations to symbol-based images.
 
 The Symbols framework provides access to symbol effects you can use to animate [`SF Symbols`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/sf-symbols) in your AppKit, UIKit, and SwiftUI apps. These animations exhibit different behaviors:
 
+- **Discrete**: An effect that runs from start to finish.
+- **Indefinite**: An effect that lasts until you remove or disable it.
+- **Transition**: An effect that animates a symbol in or out of visibility.
+- **Content Transition**: An effect that replaces one symbol with another symbol, or with a different configuration of itself.
+
 A symbol effect can exhibit multiple types of behavior. For instance, you can add a pulse effect with an option to occur a finite number of times — a discrete behavior. You can also add a pulse effect with an option to loop forever — an indefinite behavior.
 
 ```swift
@@ -42,6 +47,21 @@ Image(systemName: "wifi")
 ```
 
 Now consider an AppKit or UIKit version of the app. You can apply the same effect to animate the search for Wi-Fi networks.
+
+**Swift**:
+
+```swift
+// Add an effect in AppKit and UIKit.
+imageView.addSymbolEffect(.variableColor.reversing)
+```
+
+**Objective-C**:
+
+```objc
+// Add an effect in AppKit and UIKit.
+[self.imageView
+  addSymbolEffect:[[NSSymbolVariableColorEffect effect] effectWithReversing]];
+```
 
 ## Topics
 

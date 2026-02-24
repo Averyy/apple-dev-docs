@@ -56,9 +56,9 @@ float destColor = (  srcTopColor * srcTopAlpha + (1.0 - srcTopAlpha) * srcBottom
 - `srcTopAlpha`: The vImage buffer that provides the source top alpha.
 - `srcBottom`: The vImage buffer that provides the source bottom image.
 - `srcBottomAlpha`: The vImage buffer that provides the source bottom alpha.
-- `alpha`: The source vImage buffer that provides the precalculated alpha values of the composite image. Precalculate these values by calling the function  .
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the  ,  , and   fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass  ; otherwise, pass  .
+- `alpha`: The source vImage buffer that provides the precalculated alpha values of the composite image. Precalculate these values by calling the function [`vImagePremultipliedAlphaBlend_Planar8(_:_:_:_:_:)`](vimagepremultipliedalphablend_planar8(_:_:_:_:_:).md).
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
 
 ## See Also
 

@@ -12,6 +12,10 @@ A message that tells people why the app is requesting access to their reminders.
 - macOS 10.14+
 - watchOS 6.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the person’s reminders.

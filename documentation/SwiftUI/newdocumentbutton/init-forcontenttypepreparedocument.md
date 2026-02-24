@@ -86,7 +86,7 @@ struct TextDocument: FileDocument { ... }
 - `label`: A label for the button.
 - `documentType`: A type of the document to create.
 - `contentType`: An optional content type of the document to create.
-- `prepareDocument`: A closure is called when a user presses the button.   At this point, you can present a document template picker or another UI that allows   users to choose a theme, configuration, or a template   to create a document from.   Return a prepared document, or throw an error if document creation failed.   Return   to request creation of an empty document.
+- `prepareDocument`: A closure is called when a user presses the button. At this point, you can present a document template picker or another UI that allows users to choose a theme, configuration, or a template to create a document from. Return a prepared document, or throw an error if document creation failed. Return `nil` to request creation of an empty document.
 
 
 ---

@@ -39,7 +39,7 @@ return entity;
 ## Parameters
 
 - `entityName`: The name of an entity.
-- `context`: The managed object context to use. Must not be  .
+- `context`: The managed object context to use. Must not be `nil`.
 
 ## See Also
 

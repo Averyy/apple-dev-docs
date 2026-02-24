@@ -31,7 +31,7 @@ This function returns a `CFHTTPMessage` object that you can use to build an HTTP
 
 - `statusCode`: The status code for this message response. The status code can be any of the status codes defined in section 6.1.1 of RFC 2616.
 - `statusDescription`: The description that corresponds to the status code. Pass NULL to use the standard description for the given status code, as found in RFC 2616.
-- `httpVersion`: The HTTP version for this message response. Pass   or  .
+- `httpVersion`: The HTTP version for this message response. Pass `kCFHTTPVersion1_0` or `kCFHTTPVersion1_1`.
 
 ## See Also
 

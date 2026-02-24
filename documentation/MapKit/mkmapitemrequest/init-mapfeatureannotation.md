@@ -19,7 +19,7 @@ init(mapFeatureAnnotation: MKMapFeatureAnnotation)
 
 ## Parameters
 
-- `mapFeatureAnnotation`: The   to use to initialize the map item request.
+- `mapFeatureAnnotation`: The [`MKMapFeatureAnnotation`](mkmapfeatureannotation.md) to use to initialize the map item request.
 
 ## See Also
 

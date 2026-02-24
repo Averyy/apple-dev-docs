@@ -25,7 +25,7 @@ A subclass can override this method to interact with custom glyph storage.
 ## Parameters
 
 - `charRange`: The range of the characters whose glyph range is desired.
-- `actualCharRange`: On return, all characters mapped to those glyphs; may be  .
+- `actualCharRange`: On return, all characters mapped to those glyphs; may be `NULL`.
 
 ## See Also
 

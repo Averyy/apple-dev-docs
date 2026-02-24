@@ -21,8 +21,8 @@ func stopNote(_ note: UInt8, onChannel channel: UInt8)
 
 ## Parameters
 
-- `note`: The note number (key) to stop. The valid range is   to  .
-- `channel`: The channel number to send the event to. The valid range is   to  .
+- `note`: The note number (key) to stop. The valid range is `0` to `127`.
+- `channel`: The channel number to send the event to. The valid range is `0` to `15`.
 
 ## See Also
 

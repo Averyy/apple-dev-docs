@@ -35,7 +35,7 @@ To format a single integer, you can use the [`BinaryFloatingPoint`](https://deve
 
 ## Parameters
 
-- `locale`: The locale to use when formatting or parsing floating-point values. Defaults to  .
+- `locale`: The locale to use when formatting or parsing floating-point values. Defaults to [`autoupdatingCurrent`](locale/autoupdatingcurrent.md).
 
 
 ---

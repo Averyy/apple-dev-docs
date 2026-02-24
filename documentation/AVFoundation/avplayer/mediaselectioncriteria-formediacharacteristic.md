@@ -27,7 +27,7 @@ The [`AVPlayerMediaSelectionCriteria`](avplayermediaselectioncriteria.md) for `m
 
 ## Parameters
 
-- `mediaCharacteristic`: The media characteristic for which the selection criteria is to be returned. Supported values include  ,  , and  .
+- `mediaCharacteristic`: The media characteristic for which the selection criteria is to be returned. Supported values include [`audible`](avmediacharacteristic/audible.md), [`legible`](avmediacharacteristic/legible.md), and [`visual`](avmediacharacteristic/visual.md).
 
 ## See Also
 

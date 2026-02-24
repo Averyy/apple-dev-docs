@@ -28,7 +28,7 @@ The filter will not begin to execute until after the command buffer has been enq
 - `commandBuffer`: A valid command buffer.
 - `source`: A valid texture containing the source image for the filter.
 - `histogram`: A valid buffer to receive the histogram results.
-- `histogramOffset`: The byte offset into the histogram buffer at which to write the histogram results. Must be a multiple of 32 bytes. The histogram results per channel are stored together. The number of channels for which histogram results are stored is determined by the number of channels in the image. If the   value of the   property is   and the source image is RGBA, then only histogram results for RGB channels are stored.
+- `histogramOffset`: The byte offset into the histogram buffer at which to write the histogram results. Must be a multiple of 32 bytes. The histogram results per channel are stored together. The number of channels for which histogram results are stored is determined by the number of channels in the image. If the `histogramForAlpha` value of the [`histogramInfo`](mpsimagehistogram/histograminfo.md) property is [`false`](https://developer.apple.com/documentation/Swift/false) and the source image is RGBA, then only histogram results for RGB channels are stored.
 
 ## See Also
 

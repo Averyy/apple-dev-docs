@@ -28,8 +28,8 @@ You can call this method multiple times to add multiple blocks to the animator. 
 
 ## Parameters
 
-- `animation`: A block containing the animations you want to add to the animator object. This block has no return value and takes no parameters. This parameter must not be  .
-- `delayFactor`: The factor to use for delaying the start of the animations. The value you specify must be between   and  . This value is multiplied by the animator’s remaining duration to determine the actual delay in seconds. For example, specifying the value   when the duration is   results in a one second delay for the start of the animations.
+- `animation`: A block containing the animations you want to add to the animator object. This block has no return value and takes no parameters. This parameter must not be `nil`.
+- `delayFactor`: The factor to use for delaying the start of the animations. The value you specify must be between `0.0` and `1.0`. This value is multiplied by the animator’s remaining duration to determine the actual delay in seconds. For example, specifying the value `0.5` when the duration is `2.0` results in a one second delay for the start of the animations.
 
 ## See Also
 

@@ -30,8 +30,8 @@ If the queue is full, this operation fails.
 
 ## Parameters
 
-- `queue`: The queue on which to enqueue the element. Must not be  .
-- `element`: Element to enqueue. Must not be   (  returns   to indicate an empty queue).
+- `queue`: The queue on which to enqueue the element. Must not be `NULL`.
+- `element`: Element to enqueue. Must not be `NULL` (`CMSimpleQueueDequeue` returns `NULL` to indicate an empty queue).
 
 ## See Also
 

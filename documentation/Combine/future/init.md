@@ -22,7 +22,7 @@ init(_ attemptToFulfill: @escaping (@escaping Future<Output, Failure>.Promise) -
 
 ## Parameters
 
-- `attemptToFulfill`: A   that the publisher invokes when the publisher emits an element or terminates with an error.
+- `attemptToFulfill`: A [`Future.Promise`](future/promise.md) that the publisher invokes when the publisher emits an element or terminates with an error.
 
 ## See Also
 

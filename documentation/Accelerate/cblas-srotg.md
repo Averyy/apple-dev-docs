@@ -28,10 +28,10 @@ Given a vertical matrix containing `a` and `b`, computes the values of `cos θ` 
 
 ## Parameters
 
-- `A`: Single-precision value   . Overwritten on return with result  .
-- `B`: Single-precision value  . Overwritten on return with result   (zero).
-- `C`: Unused on entry. Overwritten on return with the value  .
-- `S`: Unused on entry. Overwritten on return with the value  .
+- `A`: Single-precision value  `a`. Overwritten on return with result `r`.
+- `B`: Single-precision value `b`. Overwritten on return with result `z` (zero).
+- `C`: Unused on entry. Overwritten on return with the value `cos(θ)`.
+- `S`: Unused on entry. Overwritten on return with the value `sin(θ)`.
 
 ## See Also
 

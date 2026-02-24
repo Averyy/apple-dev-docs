@@ -26,7 +26,7 @@ This API is specific to audio format descriptions, and returns `NULL` if used wi
 
 ## Parameters
 
-- `desc`:   being interrogated.
+- `desc`: `CMFormatDescription` being interrogated.
 
 ## See Also
 

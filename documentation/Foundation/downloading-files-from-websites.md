@@ -16,7 +16,7 @@ To download files, you create a [`URLSessionDownloadTask`](urlsessiondownloadtas
 
 Your completion handler may receive a client-side error, indicating a local problem like not being able to reach the network. If there is no client-side error, you also receive a [`URLResponse`](urlresponse.md), which you should inspect to ensure that it indicates a successful response from the server.
 
-If the download is successful, your completion handler receives a URL indicating the location of the downloaded file on the local filesystem. This storage is temporary. If you want to preserve the file, you  copy or move it from this location before returning from the completion handler.
+If the download is successful, your completion handler receives a URL indicating the location of the downloaded file on the local filesystem. This storage is temporary. If you want to preserve the file, you *must* copy or move it from this location before returning from the completion handler.
 
 The following example shows a simple example of creating a download task with a completion handler. If no errors are indicated, the completion handler moves the downloaded file to the app’s `Documents` directory. Start the task by calling [`resume()`](urlsessiontask/resume().md).
 
@@ -80,7 +80,7 @@ private func startDownload(url: URL) {
 
 Once the download starts, you receive periodic progress updates in the [`URLSessionDownloadDelegate`](urlsessiondownloaddelegate.md) method [`urlSession(_:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)`](urlsessiondownloaddelegate/urlsession(_:downloadtask:didwritedata:totalbyteswritten:totalbytesexpectedtowrite:).md). You can use the byte counts provided by this callback to update a progress UI in your app.
 
-The following example shows an implementation of this callback method. This implementation calculates the fractional progress of the download, and uses it to update a label that shows progress as a percentage. Because the callback is performed on an unknown Grand Central Dispatch queue, you  explicitly perform the UI update on the main queue.
+The following example shows an implementation of this callback method. This implementation calculates the fractional progress of the download, and uses it to update a label that shows progress as a percentage. Because the callback is performed on an unknown Grand Central Dispatch queue, you *must* explicitly perform the UI update on the main queue.
 
 Using a delegate method to update download progress in a UI
 
@@ -104,7 +104,7 @@ func urlSession(_ session: URLSession,
 
 ##### Handle Download Completion or Errors in Your Delegate
 
-When you use a delegate instead of a completion handler, you handle the completion of the download by implementing [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](urlsessiondownloaddelegate/urlsession(_:downloadtask:didfinishdownloadingto:).md). Check the `downloadTask`‘s [`response`](urlsessiontask/response.md) property to ensure that the server response indicates success. If so, the `location` parameter provides a local URL where the file has been stored. This location is valid only until the end of the callback. This means you  either read the file immediately, or move it to another location such as the app’s `Documents` directory before you return from the callback method. The following example shows how to preserve the downloaded file.
+When you use a delegate instead of a completion handler, you handle the completion of the download by implementing [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](urlsessiondownloaddelegate/urlsession(_:downloadtask:didfinishdownloadingto:).md). Check the `downloadTask`‘s [`response`](urlsessiontask/response.md) property to ensure that the server response indicates success. If so, the `location` parameter provides a local URL where the file has been stored. This location is valid only until the end of the callback. This means you *must* either read the file immediately, or move it to another location such as the app’s `Documents` directory before you return from the callback method. The following example shows how to preserve the downloaded file.
 
 Saving the downloaded file in the delegate callback
 

@@ -28,9 +28,9 @@ Always call this method from your WatchKit extension’s main thread.
 
 ## Parameters
 
-- `suggestions`: An array of   objects, each of which contains a suggested phrase for input. The user can either select one of the phrases you suggest or input a new text phrase.
-- `inputMode`: The type of input to allow. For a list of possible values, see  .
-- `completion`: The block to execute after the user dismisses the modal interface. This block has no return value and takes the following parameter:
+- `suggestions`: An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which contains a suggested phrase for input. The user can either select one of the phrases you suggest or input a new text phrase.
+- `inputMode`: The type of input to allow. For a list of possible values, see [`WKTextInputMode`](wktextinputmode.md).
+- `completion`: The block to execute after the user dismisses the modal interface. This block has no return value and takes the following parameter: - **results**: An array containing the input from the user, or `nil` if the user canceled the operation. When an array is provided, the value in the array is usually an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object representing the text input. The array can also contain an emoji image, packaged as an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object. You can use the data object to create a corresponding [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) object.
 
 ## See Also
 

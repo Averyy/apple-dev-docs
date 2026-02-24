@@ -20,7 +20,7 @@ init(scene: MKLookAroundScene)
 
 ## Parameters
 
-- `scene`: A  .
+- `scene`: A [`MKLookAroundScene`](mklookaroundscene.md).
 
 ## See Also
 

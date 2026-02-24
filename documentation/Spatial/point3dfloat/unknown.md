@@ -1,9 +1,9 @@
-# ==(_:_:)
+# /=(_:_:)
 
 **Framework**: Spatial  
 **Kind**: op
 
-Returns a Boolean value that indicates whether two points are equal.
+Calculates the division of each element of a point and a scalar value and stores the result in the left-hand-side variable.
 
 **Availability**:
 - iOS 26.0+
@@ -17,15 +17,15 @@ Returns a Boolean value that indicates whether two points are equal.
 ## Declaration
 
 ```swift
-static func == (lhs: Point3DFloat, rhs: Point3DFloat) -> Bool
+static func /= (lhs: inout Point3DFloat, rhs: Float)
 ```
 
 ## Parameters
 
-- `lhs`: The first point to compare.
-- `rhs`: The second point to compare.
+- `lhs`: The first value.
+- `rhs`: The second value.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spatial/point3dfloat/==(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/point3dfloat/_=(_:_:))*

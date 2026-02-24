@@ -35,8 +35,8 @@ This method uses [`dispatch_retain`](https://developer.apple.com/documentation/D
 
 ## Parameters
 
-- `sampleBufferDelegate`: An object conforming to the   protocol that will receive sample buffers after they are captured.
-- `sampleBufferCallbackQueue`: The sampleBufferCallbackQueue parameter may not be  , except when setting the   to  .
+- `sampleBufferDelegate`: An object conforming to the [`AVCaptureVideoDataOutputSampleBufferDelegate`](avcapturevideodataoutputsamplebufferdelegate.md) protocol that will receive sample buffers after they are captured.
+- `sampleBufferCallbackQueue`: The queue on which callbacks should be invoked. You must use a serial dispatch queue, to guarantee that video frames will be delivered in order. The sampleBufferCallbackQueue parameter may not be `NULL`, except when setting the `sampleBufferDelegate` to `nil`.
 
 ## See Also
 

@@ -27,7 +27,7 @@ You can load an entity, and its assets, with configuration choices by calling [`
 
 ## Parameters
 
-- `url`: A URL of a USD or   file.
+- `url`: A URL of a USD or `.reality` file.
 
 
 ---

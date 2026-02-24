@@ -31,9 +31,9 @@ This function is useful when you need your own copy of a string’s character da
 ## Parameters
 
 - `theString`: The string whose contents you wish to access.
-- `buffer`: The buffer must be large enough to contain the converted characters and a   terminator. For example, if the string is  , the buffer must be at least 5 bytes long.
-- `bufferSize`: The length of   in bytes.
-- `encoding`: The string encoding to which the character contents of   should be converted. The encoding must specify an 8-bit encoding.
+- `buffer`: The C string buffer into which to copy the string. On return, the buffer contains the converted characters. If there is an error in conversion, the buffer contains only partial results. The buffer must be large enough to contain the converted characters and a `NUL` terminator. For example, if the string is `Toby`, the buffer must be at least 5 bytes long.
+- `bufferSize`: The length of `buffer` in bytes.
+- `encoding`: The string encoding to which the character contents of `theString` should be converted. The encoding must specify an 8-bit encoding.
 
 ## See Also
 

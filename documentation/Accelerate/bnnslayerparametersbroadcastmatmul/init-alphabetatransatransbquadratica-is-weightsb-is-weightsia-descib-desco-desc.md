@@ -24,13 +24,13 @@ init(alpha: Float, beta: Float, transA: Bool, transB: Bool, quadratic: Bool, a_i
 
 - `alpha`: A value to scale the result.
 - `beta`: A value, that must be either 0.0 or 1.0, you use to scale the existing output before the operation adds it to the result.
-- `transA`: A Boolean value that transposes the last two dimensions of matrix  .
-- `transB`: A Boolean value that transposes the last two dimensions of matrix  .
-- `quadratic`: A Boolean value that determines whether the operation multiplies matrix   by itself.
-- `a_is_weights`: A Boolean value that determines whether to treat matrix   as weights.
-- `b_is_weights`: A Boolean value that determines whether to treat matrix   as weights.
-- `iA_desc`: The descriptor of matrix  .
-- `iB_desc`: The descriptor of matrix  .
+- `transA`: A Boolean value that transposes the last two dimensions of matrix *A*.
+- `transB`: A Boolean value that transposes the last two dimensions of matrix *B*.
+- `quadratic`: A Boolean value that determines whether the operation multiplies matrix *A* by itself.
+- `a_is_weights`: A Boolean value that determines whether to treat matrix *A* as weights.
+- `b_is_weights`: A Boolean value that determines whether to treat matrix *B* as weights.
+- `iA_desc`: The descriptor of matrix *A*.
+- `iB_desc`: The descriptor of matrix *B*.
 - `o_desc`: The descriptor of the output.
 
 ## See Also

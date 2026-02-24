@@ -30,7 +30,7 @@ The dictionary keys are the constant CFString objects that correspond to the loc
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or `kCFAllocatorDefault` to use the current default allocator.
 - `localeID`: The locale ID to use when creating the locale dictionary.
 
 ## See Also

@@ -30,8 +30,8 @@ This function derives values that parameters from the image format type don’t 
 
 ## Parameters
 
-- `imageFormatType`: The format type of the image. See  .
-- `matrix`: A   that describes the conversion from RGB to the YpCbCr format.
+- `imageFormatType`: The format type of the image. See [`Pixel Format Identifiers`](https://developer.apple.com/documentation/CoreVideo/pixel-format-identifiers).
+- `matrix`: A [`vImage_ARGBToYpCbCrMatrix`](vimage_argbtoypcbcrmatrix.md) that describes the conversion from RGB to the YpCbCr format.
 - `cvImageBufferChromaLocation`: The chrominance location.
 - `baseColorspace`: The color space of RGB and monochrome images. For YpCbCr images, this is the color space of the RGB image before conversion to YpCbCr using the ARGB-to-YpCbCr conversion matrix. The YpCbCr format RGB primaries and transfer function define the color space.
 - `alphaIsOneHint`: A hint that indicates that the function interprets an image with an alpha channel as opaque.

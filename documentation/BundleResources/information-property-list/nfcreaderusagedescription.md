@@ -9,6 +9,10 @@ A message that tells people why the app is requesting access to the device’s N
 - iOS 11.0+
 - iPadOS 11.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 > ❗ **Important**:  You’re required to provide this key if your app uses APIs that access the NFC hardware.

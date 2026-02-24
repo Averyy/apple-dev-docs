@@ -26,7 +26,7 @@ See [`UIImagePickerController.CameraCaptureMode`](uiimagepickercontroller/camera
 
 ## Parameters
 
-- `cameraDevice`: A   constant indicating the camera you want to interrogate.
+- `cameraDevice`: A [`UIImagePickerController.CameraDevice`](uiimagepickercontroller/cameradevice-swift.enum.md) constant indicating the camera you want to interrogate.
 
 ## See Also
 

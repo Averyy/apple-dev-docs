@@ -24,8 +24,8 @@ The font descriptor contains a dictionary of attributes that you use to create a
 
 ## Parameters
 
-- `style`: The text style for which to return a font descriptor. See   for available values.
-- `options`: A dictionary you use to further configure the returned font descriptor. See   for a list of valid keys. Pass an empty dictionary to use the default configuration.
+- `style`: The text style for which to return a font descriptor. See [`NSFont.TextStyle`](nsfont/textstyle.md) for available values.
+- `options`: A dictionary you use to further configure the returned font descriptor. See [`NSFont.TextStyleOptionKey`](nsfont/textstyleoptionkey.md) for a list of valid keys. Pass an empty dictionary to use the default configuration.
 
 ## See Also
 

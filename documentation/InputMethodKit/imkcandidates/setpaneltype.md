@@ -16,7 +16,7 @@ func setPanelType(_ panelType: IMKCandidatePanelType)
 
 ## Parameters
 
-- `panelType`: A   constant that represents the style of the candidates window.
+- `panelType`: A [`IMKCandidatePanelType`](imkcandidatepaneltype.md) constant that represents the style of the candidates window.
 
 ## See Also
 

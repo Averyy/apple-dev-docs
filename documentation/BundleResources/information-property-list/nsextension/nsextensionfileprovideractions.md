@@ -10,6 +10,10 @@ The custom actions for a File Provider extension.
 - iPadOS 11.0+
 - visionOS 1.0+
 
+
+
+**Type**: dictionary 
+
 ## Topics
 
 ### Action Configuration

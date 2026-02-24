@@ -25,8 +25,8 @@ func hv_vmx_vcpu_write_vmcs(_ vcpu: hv_vcpuid_t, _ field: UInt32, _ value: UInt6
 ## Parameters
 
 - `vcpu`: The ID of the vCPU.
-- `field`: The ID of the VMCS field. For a list of possible values, see  .
-- `value`: The new value for   in the VMCS.
+- `field`: The ID of the VMCS field. For a list of possible values, see `Virtual Machine Control Structure (VMCS) Field IDs`.
+- `value`: The new value for `field` in the VMCS.
 
 ## See Also
 

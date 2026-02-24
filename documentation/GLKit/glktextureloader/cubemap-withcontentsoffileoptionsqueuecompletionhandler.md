@@ -24,8 +24,8 @@ This method is identical to [`cubeMap(withContentsOfFile:options:)`](glktexturel
 ## Parameters
 
 - `path`: A path to the file to load.
-- `options`: A dictionary that describes any additional steps you want the texture loader to take when loading the texture. See  .
-- `queue`: A dispatch queue that your block is called on when the task completes. If   is passed, the block is called on the main dispatch queue.
+- `options`: A dictionary that describes any additional steps you want the texture loader to take when loading the texture. See [`Texture Loading Options`](texture-loading-options.md).
+- `queue`: A dispatch queue that your block is called on when the task completes. If `NULL` is passed, the block is called on the main dispatch queue.
 - `block`: A block to be called when the task completes.
 
 ## See Also

@@ -26,7 +26,7 @@ The index value immediately after i.
 
 ## Parameters
 
-- `i`: A valid index of the collection. Use a value less than  .
+- `i`: A valid index of the collection. Use a value less than [`endIndex`](scene/anchorcollection/endindex.md).
 
 ## See Also
 

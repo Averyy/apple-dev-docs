@@ -22,7 +22,7 @@ The GreatPlays app provides a navigable hierarchy of plays, acts, and scenes, al
 
 ![Diagram showing how model objects appear in a tree structure.](https://docs-assets.developer.apple.com/published/af312c8ad42197179f5754d8578924d8/ModelHierarchy%402x.png)
 
-For this example, the structure of a single play—Shakespeare’s —is added to the library at launch, from inside the [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didFinishLaunchingWithOptions:)) method.
+For this example, the structure of a single play—Shakespeare’s *Hamlet*—is added to the library at launch, from inside the [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didFinishLaunchingWithOptions:)) method.
 
 > **Note**: When writing an app for the educational market, consider supporting shared iPad, as described in [`Optimizing Apps for Shared iPad`](https://developer.apple.comhttps://developer.apple.com/education/shared-ipad/). This sample app does that by not using any persistent local storage and by setting the [`NSSupportsPurgeableLocalStorage`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW45) key to `YES` in its `Info.plist` file.
 

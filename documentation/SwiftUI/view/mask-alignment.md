@@ -40,8 +40,8 @@ Image(systemName: "envelope.badge.fill")
 
 ## Parameters
 
-- `alignment`: The alignment for   in relation to this view.
-- `mask`: The view whose alpha the rendering system applies to   the specified view.
+- `alignment`: The alignment for `mask` in relation to this view.
+- `mask`: The view whose alpha the rendering system applies to the specified view.
 
 ## See Also
 

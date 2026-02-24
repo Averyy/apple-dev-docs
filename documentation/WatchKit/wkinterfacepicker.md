@@ -26,9 +26,33 @@ Pickers can be configured to display items using one of several styles:
 
 When the user selects a new value, WatchKit calls the picker’s action method to report that new value. The format of the picker’s action method is as follows:
 
+**Swift**:
+
+```swift
+@IBAction func pickerAction(index: Int)
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction)pickerAction:(NSInteger)index
+```
+
 Declare a method of this form in the interface controller class used to receive the picker’s new value. You can change the method name to anything you like. When configuring the picker in Xcode, connect its selector to your custom action method. The parameter represents the index of the item in the array of items you specified when calling the [`setItems(_:)`](wkinterfacepicker/setitems(_:).md) method.
 
 Do not subclass or create instances of this class yourself. Instead, define outlets in your interface controller class and connect them to the corresponding objects in your storyboard file. For example, to refer to a picker object in your interface, define a property with the following syntax in your interface controller class:
+
+**Swift**:
+
+```swift
+@IBOutlet weak var myPicker: WKInterfacePicker!
+```
+
+**Objective-C**:
+
+```objc
+@property (weak, nonatomic) IBOutlet WKInterfacePicker* myPicker;
+```
 
 During the initialization of your interface controller, WatchKit creates a new instance of this class and assigns it to your outlet. At that point, you can use the object in your outlet to make changes to the onscreen picker.
 

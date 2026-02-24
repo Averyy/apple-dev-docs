@@ -24,6 +24,11 @@ object ManagedApplicationFeedbackResponse.ManagedApplicationFeedbackItem
 - [object ManagedApplicationFeedbackResponse.ManagedApplicationFeedbackItem.Feedback](managedapplicationfeedbackresponse/managedapplicationfeedbackitem/feedback-data.dictionary.md)
   A dictionary that contains a managed app’s feedback items.
 
+## Properties
+
+- `Feedback` (ManagedApplicationFeedbackResponse.ManagedApplicationFeedbackItem.Feedback): The app’s feedback.
+- `Identifier` (string) *(required)*: The app’s bundle identifier.
+
 ## See Also
 
 - [object ManagedApplicationFeedbackResponse.ErrorChainItem](managedapplicationfeedbackresponse/errorchainitem.md)

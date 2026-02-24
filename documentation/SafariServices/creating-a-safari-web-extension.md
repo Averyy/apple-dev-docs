@@ -41,6 +41,13 @@ Xcode generates the project, provides default versions of the files you need to 
 
 The project contains default versions of web extension files in the Resources group:
 
+- **`_locales`**: Customize internationalized strings that the extension uses, or add other languages in this folder.
+- **`images`**: Replace the default icons, and add other images for your extension to this folder.
+- **`manifest.json`**: Customize the manifest file to tell the browser about your extension.
+- **`background.js`**: Add or customize JavaScript in this file for activities your extension performs outside a specified webpage or browser window.
+- **`content.js`**: Add or customize JavaScript in this file to inject into webpages.
+- **`popup.html, popup.js, popup.css`**: Customize these files for the pop-up menu that Safari displays when the user clicks or taps your extension’s button in the toolbar.
+
 > 💡 **Tip**:  To use your web extension in other browsers, repackage the files in the Resources group. The other files in the Xcode project are for the iOS or macOS app the system needs to use your web extension in Safari.
 
 See [`Running your Safari web extension`](running-your-safari-web-extension.md) to try out your web extension in Safari.

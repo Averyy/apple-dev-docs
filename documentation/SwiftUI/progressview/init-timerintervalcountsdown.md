@@ -48,7 +48,7 @@ The progress view provided by this initializer omits a descriptive label and pro
 ## Parameters
 
 - `timerInterval`: The date range over which the view progresses.
-- `countsDown`: If   (the default), the view empties as time passes.
+- `countsDown`: If `true` (the default), the view empties as time passes.
 
 ## See Also
 

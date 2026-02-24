@@ -26,7 +26,7 @@ You can adjust this view to provide a different appearance for each subscription
 
 ## Parameters
 
-- `icon`: A closure that takes a   and     and returns a view.
+- `icon`: A closure that takes a [`Product`](https://developer.apple.com/documentation/StoreKit/Product) and [`Product.SubscriptionInfo`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionInfo) and returns a view.
 
 ## See Also
 

@@ -22,7 +22,7 @@ A buffer containing the data for the given property
 ## Parameters
 
 - `address`: An AudioObjectPropertyAddress indicating which property is being queried.
-- `qualifier`: A buffer of data to be used in determining the data of the property being   queried. Note that not all properties require qualification, in which case this value   will be nil.
+- `qualifier`: A buffer of data to be used in determining the data of the property being queried. Note that not all properties require qualification, in which case this value will be nil.
 
 
 ---

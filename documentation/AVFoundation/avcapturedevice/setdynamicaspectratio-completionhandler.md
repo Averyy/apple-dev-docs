@@ -21,8 +21,8 @@ This is the only way of setting [`dynamicAspectRatio`](avcapturedevice/dynamicas
 
 ## Parameters
 
-- `dynamicAspectRatio`: The new   the device should output.
-- `handler`: A block called by the device when   is set to the value specified. If you call   multiple times, the completion handlers are called in FIFO order. The block receives a timestamp which matches that of the first buffer to which all settings have been applied. Note that the timestamp is synchronized to the device clock, and thus must be converted to the   prior to comparison with the timestamps of buffers delivered via an  . You may pass   for the   parameter if you do not need to know when the operation completes.
+- `dynamicAspectRatio`: The new [`AVCaptureDevice.AspectRatio`](avcapturedevice/aspectratio.md) the device should output.
+- `handler`: A block called by the device when `dynamicAspectRatio` is set to the value specified. If you call [`setDynamicAspectRatio(_:completionHandler:)`](avcapturedevice/setdynamicaspectratio(_:completionhandler:).md) multiple times, the completion handlers are called in FIFO order. The block receives a timestamp which matches that of the first buffer to which all settings have been applied. Note that the timestamp is synchronized to the device clock, and thus must be converted to the [`synchronizationClock`](avcapturesession/synchronizationclock.md) prior to comparison with the timestamps of buffers delivered via an [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md). You may pass `nil` for the `handler` parameter if you do not need to know when the operation completes.
 
 ## See Also
 

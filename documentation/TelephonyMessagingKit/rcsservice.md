@@ -18,13 +18,19 @@ final class RCSService
 
 ## Mentions
 
-- [Creating a carrier messaging app](../availability/creating-a-carrier-messaging-app.md)
+- [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
 
 #### Overview
 
 Use the [`TelephonyMessagingSession`](telephonymessagingsession.md) property [`rcsService`](telephonymessagingsession/rcsservice.md) to get an instance of this class.
 
 An `RCSService` sends and receives different kinds of messages, distinguished by the [`content`](rcsmessage/content-swift.property.md) property of [`RCSMessage`](rcsmessage.md):
+
+- **[`RCSMessage.Text`](rcsmessage/text.md)**: Plain text.
+- **[`RCSMessage.FileTransfer`](rcsmessage/filetransfer.md)**: Incoming or outgoing file transfer. To send a file to a receipient, call the [`upload(_:)`](rcsservice/upload(_:).md): method, then send a message of this type. To receive a file, handle the incoming message from the [`incomingMessageNotifications`](rcsservice/incomingmessagenotifications.md) asynchronous sequence, and use its metadata to call [`download(_:)`](rcsservice/download(_:).md).
+- **[`RCSMessage.GeolocationPush`](rcsmessage/geolocationpush.md)**: The sender’s location, as indicated by a latitude and longitude pair.
+- **[`RCSMessage.ComposingIndicator`](rcsmessage/composingindicator.md)**: An indicator that the sender is currently composing a message. Use this content type to provide “is typing” indicators to recipients.
+- **[`RCSMessage.DispositionNotification`](rcsmessage/dispositionnotification.md)**: An update regarding the processing of a message by the recipient app. This includes things like whether delivery suceeded or failed, and whether the app displayed the message to the recipient.
 
 Use the various overloads of `sendMessage(_:to:using:messageID)` to send messages of these types to recipients. The following example shows how to send a plain text message with [`sendMessage(_:to:using:messageID:)`](rcsservice/sendmessage(_:to:using:messageid:)-70q7h.md):
 
@@ -198,14 +204,9 @@ Task {
   Event triggered when group chat is started.
 - [RCSService.GroupChatSubjectUpdatedEvent](rcsservice/groupchatsubjectupdatedevent.md)
   Event triggered when a group’s subject is updated.
-### Structures
-- [RCSService.SendEncryptedMessageRequest](rcsservice/sendencryptedmessagerequest.md)
-  A structure that represents a request to send an encrypted message.
 ### Instance Methods
 - [func sendDeviceSpecifics(to: RCSHandle.URI, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/senddevicespecifics(to:using:messageid:).md)
   Sends device specifics in response to a suggested action to send device specifics.
-- [func sendEncryptedMessageRequest(RCSService.SendEncryptedMessageRequest) async throws -> RCSService.SendEncryptedMessageRequest.Result](rcsservice/sendencryptedmessagerequest(_:).md)
-  Sends an encrypted message to a specified destination.
 
 ## Relationships
 

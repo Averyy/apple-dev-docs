@@ -24,10 +24,10 @@ enum AccessibilityNotification
 
 Accessibility notifications provide a unified, multiplatform way for your app to convey information to someone using an assistive app. Your app can post these types of notifications:
 
--  to convey an announcement to an assistive app
--  to indicate when the layout of a screen changes
--  to indicate when a new view appears that occupies a major portion of the screen
--  to indicate when a scroll action completes
+- *Announcement* to convey an announcement to an assistive app
+- *Layout change* to indicate when the layout of a screen changes
+- *Screen change* to indicate when a new view appears that occupies a major portion of the screen
+- *Page scroll* to indicate when a scroll action completes
 
 For announcement notifications, you can set a priority to specify the announcement’s importance relative to other announcements that are in the queue for an assistive app to speak. For more information, see [`AccessibilityNotification.Announcement`](accessibilitynotification/announcement.md).
 

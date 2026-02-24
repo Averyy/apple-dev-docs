@@ -9,6 +9,10 @@ Remove the Account-Driven Enrollment profile that the MDM server sets, which inc
 - Device Assignment Services ?+
 - VPP License Management ?+
 
+## Endpoint
+
+`DELETE https://mdmenrollment.apple.com/account-driven-enrollment/profile`
+
 ## See Also
 
 - [Assign Account-Driven Enrollment Service Discovery](assign-account-driven-enrollment-profile.md)

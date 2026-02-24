@@ -22,8 +22,8 @@ A newly initialized sticker browser view.
 
 ## Parameters
 
-- `frame`: A rectangular frame for the view, measured in points. The origin of the frame is relative to its superview. This method uses the provided rectangle to set the view’s   and   properties.
-- `stickerSize`: The size of the stickers. For a list of possible values, see  .
+- `frame`: A rectangular frame for the view, measured in points. The origin of the frame is relative to its superview. This method uses the provided rectangle to set the view’s [`center`](https://developer.apple.com/documentation/UIKit/UIView/center) and [`bounds`](https://developer.apple.com/documentation/UIKit/UIView/bounds) properties.
+- `stickerSize`: The size of the stickers. For a list of possible values, see [`MSStickerSize`](msstickersize.md).
 
 ## See Also
 

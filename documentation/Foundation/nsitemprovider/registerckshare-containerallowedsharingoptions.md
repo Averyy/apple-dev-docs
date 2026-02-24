@@ -24,9 +24,9 @@ Use this method when a [`CKShare`](https://developer.apple.com/documentation/Clo
 
 ## Parameters
 
-- `share`: An existing   on the server.
-- `container`: A   the system uses to coordinate all the interactions between your app and the server.
-- `allowedSharingOptions`: The  . The standard option is the default.
+- `share`: An existing [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) on the server.
+- `container`: A [`CKContainer`](https://developer.apple.com/documentation/CloudKit/CKContainer) the system uses to coordinate all the interactions between your app and the server.
+- `allowedSharingOptions`: The [`CKAllowedSharingOptions`](https://developer.apple.com/documentation/CloudKit/CKAllowedSharingOptions). The standard option is the default.
 
 ## See Also
 

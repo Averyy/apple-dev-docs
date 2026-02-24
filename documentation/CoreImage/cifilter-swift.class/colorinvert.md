@@ -29,6 +29,8 @@ This method applies a preconfigured set of effects that invert the colors of an 
 
 The color-invert filter uses the following property:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that inverts the colors of the input image:
 
 ```swift

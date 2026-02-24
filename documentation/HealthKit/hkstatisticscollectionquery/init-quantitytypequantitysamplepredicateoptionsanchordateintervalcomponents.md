@@ -33,11 +33,11 @@ Statistics collection queries can also act as long-running queries. If you assig
 
 ## Parameters
 
-- `quantityType`: The type of sample to search for. This type must be an instance of the   class. You cannot perform statistics collection queries using other sample types.
-- `quantitySamplePredicate`: A predicate that limits the results returned by the query. You can pass   if you want to perform the statistical calculation over all the samples of the specified type.
-- `options`: A list of options that define the type of statistical calculations performed and the way in which data from multiple sources are merged. For a list of valid options, see  .
-- `anchorDate`: Technically, the anchor sets the start time for a single time interval. All other time intervals must align with this interval. The time intervals can extend before or after the anchor date. Each time interval has the same length, and there is no gap between adjacent intervals. Think of time as a number line: The anchor date represents its origin, with the intervals creating tick marks that extend away from the origin in both directions.
-- `intervalComponents`: The date components that define the time interval for each statistics object in the collection. For a collection of sample time intervals, see  .
+- `quantityType`: The type of sample to search for. This type must be an instance of the [`HKQuantityType`](hkquantitytype.md) class. You cannot perform statistics collection queries using other sample types.
+- `quantitySamplePredicate`: A predicate that limits the results returned by the query. You can pass `nil` if you want to perform the statistical calculation over all the samples of the specified type.
+- `options`: A list of options that define the type of statistical calculations performed and the way in which data from multiple sources are merged. For a list of valid options, see [`HKStatisticsOptions`](hkstatisticsoptions.md).
+- `anchorDate`: The date used to anchor the collection’s time intervals. Use this parameter to set the start time for your time intervals. For example, if you are using a day interval, you might create a date object with a time of 2:00 a.m. This value sets the start of the day for each of your time intervals. Technically, the anchor sets the start time for a single time interval. All other time intervals must align with this interval. The time intervals can extend before or after the anchor date. Each time interval has the same length, and there is no gap between adjacent intervals. Think of time as a number line: The anchor date represents its origin, with the intervals creating tick marks that extend away from the origin in both directions.
+- `intervalComponents`: The date components that define the time interval for each statistics object in the collection. For a collection of sample time intervals, see [`intervalComponents`](hkstatisticscollectionquery/intervalcomponents.md).
 
 ## See Also
 

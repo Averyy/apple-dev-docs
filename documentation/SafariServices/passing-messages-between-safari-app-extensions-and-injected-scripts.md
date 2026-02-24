@@ -51,6 +51,26 @@ safari.extension.dispatchMessage("passArray", { "key": myArray });
 
 When the app extension receives the message, the system calls the extension handler’s [`messageReceived(withName:from:userInfo:)`](sfsafariextensionhandling/messagereceived(withname:from:userinfo:).md) method. This method’s parameters include the message name, the page that sends the message, and, if part of the message, a user dictionary:
 
+**Swift**:
+
+```swift
+override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : AnyObject]!) {
+    page.getPropertiesWithCompletionHandler { properties in
+        NSLog("The extension received a message (\(messageName)) from a script injected into (\(properties?.url)) with userInfo (\(userInfo))")
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)messageReceivedWithName:(NSString *)messageName fromPage:(SFSafariPage *)page userInfo:(NSDictionary<NSString *, id> *)userInfo {
+    [page getPagePropertiesWithCompletionHandler:^(SFSafariPageProperties *properties) {
+        NSLog(@"The extension received a message (%@) from a script injected into (%@) with userInfo (%@)", messageName, properties.url, userInfo);
+    }];
+}
+```
+
 In Safari 17 and later, check whether the user is browsing with a profile if you need to limit any extension logic to the profile, such as fetching or storing data. To do that, implement the [`beginRequest(with:)`](https://developer.apple.com/documentation/Foundation/NSExtensionRequestHandling/beginRequest(with:)) method.
 
 ```swift
@@ -72,6 +92,24 @@ Then, get the profile identifier from the `context.inputItems` dictionary using 
 ##### Send Messages to the Injected Script
 
 When the app extension needs to send a message to an injected script, it calls the [`dispatchMessageToScript(withName:userInfo:)`](sfsafaripage/dispatchmessagetoscript(withname:userinfo:).md) method on the target page.
+
+**Swift**:
+
+```swift
+override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : AnyObject]!) {
+    page.dispatchMessageToScript(withName: "simpleMessage", userInfo: nil)
+    page.dispatchMessageToScript(withName: "complexMessage", userInfo: ["myKey": "myValue"])
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)messageReceivedWithName:(NSString *)messageName fromPage:(SFSafariPage *)page userInfo:(NSDictionary<NSString *, id> *)userInfo {
+    [page dispatchMessageToScriptWithName:@"simpleMessage" userInfo:nil];
+    [page dispatchMessageToScriptWithName:@"complexMessage" userInfo:@{@"myKey":@"myValue"}];
+}
+```
 
 The message is a packaged event with a type of `message`. To respond to the message, the injected script registers an event listener for message events using `safari.self.addEventListener.`
 

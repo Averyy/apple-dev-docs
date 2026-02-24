@@ -26,9 +26,16 @@ RFC 7518 Section 4.6.2 and NIST.800-56A sections 5.8.1 and 6.2.2.2 describe the 
 
 Here’s an example of the Concat KDF inputs:
 
+- **Reps**: `1` for a 256-bit key: `00000001`
+- **Z**: The exchanged key:
+
 `3491708C92422BB807EDF2B8183A42737C5DAA6C39BA9535321D51C836D7ADA1`
 
+- **AlgorithmID**: `enc` from header: `A256GCM`, ASCII encoded
+
 Length || data = `00000007||4132353647434D`
+
+- **PartyUInfo**: Prefix: `APPLE`, UTF8 Encoded
 
 Length || data = `00000005||4150504C45`
 
@@ -59,6 +66,8 @@ Final `partyUInfo` length || data:
 Response JWE `apu` header is the base-64 URL encoded `partyUInfo`:
 
 `AAAABUFQUExFAAAAQQSf34Uch3TYF27T8SpbtNWCjpKUSjHGDwoiUz8Yoh1nrQidjfO6iMRZIqrsNERt8JnlI2aUwAlZktJ8DZFGWKaB`````
+
+- **PartyVInfo**: Prefix: `Apple`, UTF8 Encoded Length | data = `00000005||4170706C65`
 
 Device Encryption Public Key:
 
@@ -93,6 +102,9 @@ Final `partyVInfo` length || data:
 The login request `jwe_crypto.apv` header is the base 64 URL encoded `partyVInfo`:
 
 `AAAABUFwcGxlAAAAQQSZwnKvYGpRAeWxxoahZPD_hA3ENSojWVHXWQJEDMsmST_5i7WSqDDAtxvD7UZXis5tXOQ9Gnz2V_-tbO9Ase-SAAAAJEI3RjFGQzMyLTkxMjEtNEUyQS05RTMyLTg0MTdFMDM2NzVERA```
+
+- **SuppPubInfo**: 256 bits in the output key = `00000100`
+- **SuppPrivInfo**: `NULL`
 
 The complete SHA-256 input is:
 

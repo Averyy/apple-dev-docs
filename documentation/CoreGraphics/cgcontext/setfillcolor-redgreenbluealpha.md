@@ -29,10 +29,10 @@ When you call this function, two things happen:
 
 ## Parameters
 
-- `red`: The red intensity value for the color to set. The DeviceRGB color space permits the specification of a value ranging from   (zero intensity) to   (full intensity).
-- `green`: The green intensity value for the color to set. The DeviceRGB color space permits the specification of a value ranging from   (zero intensity) to   (full intensity).
-- `blue`: The blue intensity value for the color to set. The DeviceRGB color space permits the specification of a value ranging from   (zero intensity) to   (full intensity).
-- `alpha`: A value that specifies the opacity level. Values can range from   (transparent) to   (opaque). Values outside this range are clipped to   or  .
+- `red`: The red intensity value for the color to set. The DeviceRGB color space permits the specification of a value ranging from `0.0` (zero intensity) to `1.0` (full intensity).
+- `green`: The green intensity value for the color to set. The DeviceRGB color space permits the specification of a value ranging from `0.0` (zero intensity) to `1.0` (full intensity).
+- `blue`: The blue intensity value for the color to set. The DeviceRGB color space permits the specification of a value ranging from `0.0` (zero intensity) to `1.0` (full intensity).
+- `alpha`: A value that specifies the opacity level. Values can range from `0.0` (transparent) to `1.0` (opaque). Values outside this range are clipped to `0.0` or `1.0`.
 
 ## See Also
 

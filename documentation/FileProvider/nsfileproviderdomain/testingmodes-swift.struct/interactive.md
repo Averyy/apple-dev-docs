@@ -23,6 +23,9 @@ Disable the system’s automatic scheduling and execution of operations. Instead
 
 This testing mode enables the following synchronous methods:
 
+- **[`listAvailableTestingOperations()`](nsfileprovidermanager/listavailabletestingoperations().md)**: Lists all the operations that are ready for scheduling.
+- **[`run(_:)`](nsfileprovidermanager/run(_:).md)**: Asks the system to schedule and execute the specified operations.
+
 The [`interactive`](nsfileproviderdomain/testingmodes-swift.struct/interactive.md) testing mode expects the File Provider extension to repeat the following steps while running tests:
 
 1. Call [`listAvailableTestingOperations()`](nsfileprovidermanager/listavailabletestingoperations().md)to get the list of outstanding operations.

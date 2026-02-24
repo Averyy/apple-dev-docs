@@ -35,7 +35,7 @@ lcEnglishRange.length = 26;
 
 ## Parameters
 
-- `aRange`: The range of characters to add.    is the value of the first character to add;   is the value of the last. If   is  , this method has no effect.
+- `aRange`: The range of characters to add. `aRange.location` is the value of the first character to add; `aRange.location + aRange.length – 1` is the value of the last. If `aRange.length` is `0`, this method has no effect.
 
 ## See Also
 

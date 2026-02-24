@@ -19,7 +19,7 @@ This delegate gets invoked when an RSSI command complete event occurs. This coul
 ## Parameters
 
 - `controller`: Controller object that sent this delegate message.
-- `device`: The   device.
+- `device`: The `IOBluetooth` device.
 - `info`: A pointer to the info.
 
 

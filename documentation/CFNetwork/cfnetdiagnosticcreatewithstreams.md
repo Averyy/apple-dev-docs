@@ -29,9 +29,9 @@ This function is thread safe as long as another thread does not alter the same C
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `readStream`: Reference to a read stream whose connection has failed, or   if you do not want the CFNetDiagnosticRef to have a read stream.
-- `writeStream`: Reference to a write stream whose connection has failed, or   if you do not want the CFNetDiagnosticRef to have a write stream.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `readStream`: Reference to a read stream whose connection has failed, or `NULL` if you do not want the CFNetDiagnosticRef to have a read stream.
+- `writeStream`: Reference to a write stream whose connection has failed, or `NULL` if you do not want the CFNetDiagnosticRef to have a write stream.
 
 ## See Also
 

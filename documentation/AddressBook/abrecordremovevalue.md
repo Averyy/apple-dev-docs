@@ -24,7 +24,7 @@ The value for `property` in `record`.The type of the returned value depends on t
 ## Parameters
 
 - `record`: The record whose value you wish to remove.
-- `property`: The property name in   whose value you wish to remove. May be a pre-defined or program-defined property. See   for a list of properties all records have, and specific ABRecord derived opaque types for any additional properties.
+- `property`: The property name in `record` whose value you wish to remove. May be a pre-defined or program-defined property. See `Common Properties` for a list of properties all records have, and specific ABRecord derived opaque types for any additional properties.
 
 ## See Also
 

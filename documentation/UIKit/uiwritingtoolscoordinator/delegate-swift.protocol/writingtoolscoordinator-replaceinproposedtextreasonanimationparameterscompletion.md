@@ -34,13 +34,13 @@ For interactive changes, Writing Tools works with your delegate to animate the r
 
 ## Parameters
 
-- `writingToolsCoordinator`: The coordinator object providing the changes   to your custom view.
-- `range`: A range of text to update. This range is relative to the text   in your context object, and it’s your responsibility to match that location   to the correct location in your text storage. If you initialized the   context object with the entire contents of your view’s text storage,   you can use   as-is to access that text storage. However, if you   initialized the context object with only a portion of your view’s text,   add the starting location of your context object’s text to this value   to get the correct range for that text storage.
-- `context`: The context object that contains the original text to modify.   Use this object to locate the correct text storage object for your view.
-- `replacementText`: The text to insert in place of the current text at  .   You can insert this text as-is, insert a modified version of this string,   or reject the replacement text altogether.
-- `reason`: The type of replacement Writing Tools performs. This parameter   indicates whether Writing Tools is replacing the text with or without animations.
-- `animationParameters`: The animation parameters for any interactive changes,   or   if the changes aren’t interactive. Use this object to create any   additional animations for the system to run alongside the changes Writing Tools   makes. For example, use it to update other views that contain related information.
-- `completion`: A completion handler to execute with the results of the operation.   The handler has no return value and takes an optional attributed string as   a parameter. If you incorporate the replacement text, either as-is or with   modifications, pass the actual string you incorporated to the completion   block. If you reject the suggested change and leave the original text   unchanged, specify   for this parameter.
+- `writingToolsCoordinator`: The coordinator object providing the changes to your custom view.
+- `range`: A range of text to update. This range is relative to the text in your context object, and it’s your responsibility to match that location to the correct location in your text storage. If you initialized the context object with the entire contents of your view’s text storage, you can use `range` as-is to access that text storage. However, if you initialized the context object with only a portion of your view’s text, add the starting location of your context object’s text to this value to get the correct range for that text storage.
+- `context`: The context object that contains the original text to modify. Use this object to locate the correct text storage object for your view.
+- `replacementText`: The text to insert in place of the current text at `range`. You can insert this text as-is, insert a modified version of this string, or reject the replacement text altogether.
+- `reason`: The type of replacement Writing Tools performs. This parameter indicates whether Writing Tools is replacing the text with or without animations.
+- `animationParameters`: The animation parameters for any interactive changes, or `nil` if the changes aren’t interactive. Use this object to create any additional animations for the system to run alongside the changes Writing Tools makes. For example, use it to update other views that contain related information.
+- `completion`: A completion handler to execute with the results of the operation. The handler has no return value and takes an optional attributed string as a parameter. If you incorporate the replacement text, either as-is or with modifications, pass the actual string you incorporated to the completion block. If you reject the suggested change and leave the original text unchanged, specify `nil` for this parameter.
 
 ## See Also
 

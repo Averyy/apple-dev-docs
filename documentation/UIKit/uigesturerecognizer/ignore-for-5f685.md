@@ -25,8 +25,8 @@ If a touch isn’t part of this gesture you may pass it to this method, causing 
 
 ## Parameters
 
-- `touch`: A   object that is part of the current multi-touch sequence and associated with  .
-- `event`: A   object that includes a reference to  .
+- `touch`: A [`UITouch`](uitouch.md) object that is part of the current multi-touch sequence and associated with `event`.
+- `event`: A [`UIEvent`](uievent.md) object that includes a reference to `touch`.
 
 ## See Also
 

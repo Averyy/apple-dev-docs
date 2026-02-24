@@ -25,7 +25,7 @@ For backward binary compatibility with OS X v10.6 and earlier, the default imple
 - `url`: The location to which the document contents are written.
 - `typeName`: The document type.
 - `saveOperation`: The type of save operation.
-- `completionHandler`: The block takes one argument:
+- `completionHandler`: The completion handler block object passed in to be invoked at some point in the future, perhaps after the method invocation has returned. The completion handler must be invoked on the main thread. The block takes one argument: - **`errorOrNil`**: If successful, pass a `nil` error. If not successful, pass an `NSError` object that encapsulates the reason why the document could not be saved.
 
 ## See Also
 

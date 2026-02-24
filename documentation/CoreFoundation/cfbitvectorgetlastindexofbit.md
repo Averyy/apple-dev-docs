@@ -27,7 +27,7 @@ The index of the last occurrence of `value` in the specified range of `bv`, or `
 ## Parameters
 
 - `bv`: The bit vector to examine.
-- `range`: The range of bits in   to search.
+- `range`: The range of bits in `bv` to search.
 - `value`: The bit value for which to search.
 
 ## See Also

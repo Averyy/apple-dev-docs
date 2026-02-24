@@ -25,7 +25,7 @@ Using `NSUnboldFontMask` returns [`true`](https://developer.apple.com/documentat
 ## Parameters
 
 - `fName`: The name of the font.
-- `someTraits`: The font traits to test, specified by combining the font trait mask values described in   using the C bitwise OR operator.
+- `someTraits`: The font traits to test, specified by combining the font trait mask values described in `Constants` using the C bitwise OR operator.
 
 ## See Also
 

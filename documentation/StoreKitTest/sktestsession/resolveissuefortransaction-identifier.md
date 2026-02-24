@@ -30,7 +30,7 @@ When you call [`resolveIssueForTransaction(identifier:)`](sktestsession/resolvei
 
 ## Parameters
 
-- `identifier`: The transaction   for the transaction that the test environment resolves.
+- `identifier`: The transaction [`identifier`](sktesttransaction/identifier.md) for the transaction that the test environment resolves.
 
 ## See Also
 

@@ -238,7 +238,7 @@ ForEach(planner.pointOfInterestTool.lookupHistory) { element in
 }
 ```
 
-The app displays messages like “Searching  in Yosemite…” and “Searching  in Yosemite…” to let people know which point of interest category the model provided as input to the tool when actively searching for nearby points of interest. In the background, however, the tool executes and provides updates to the view. The view shows a blurred overlay while generating each day plan, then reveals the full itinerary after the search completes.
+The app displays messages like “Searching **hotel** in Yosemite…” and “Searching **restaurant** in Yosemite…” to let people know which point of interest category the model provided as input to the tool when actively searching for nearby points of interest. In the background, however, the tool executes and provides updates to the view. The view shows a blurred overlay while generating each day plan, then reveals the full itinerary after the search completes.
 
 #### Tag Content Dynamically
 

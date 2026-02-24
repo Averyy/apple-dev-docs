@@ -28,7 +28,7 @@ After you call this method, the system generates a [`didChangeNotification`](use
 
 ## Parameters
 
-- `value`: The property-list type to store in the defaults database. If you specify an   array or dictionary type, those collections must similarly contain only property list types.
+- `value`: The property-list type to store in the defaults database. If you specify an array or dictionary type, those collections must similarly contain only property list types.
 - `defaultName`: The key that contains the setting’s name.
 
 ## See Also

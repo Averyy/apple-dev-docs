@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: struct
 
-An attribute scope that defines translation-related attributes for attributed strings.
+A scope that defines translation-specific properties on attributed strings.
 
 **Availability**:
 - iOS 26.4+ (Beta)
@@ -22,7 +22,7 @@ struct TranslationAttributes
 
 #### Overview
 
-Use this scope to access translation-specific attributes when working with [`AttributedString`](attributedstring.md) instances.
+Use this scope to access translation attributes when working with [`AttributedString`](attributedstring.md) instances.
 
 ## Topics
 

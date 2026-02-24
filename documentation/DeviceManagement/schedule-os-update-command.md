@@ -37,6 +37,63 @@ Refer to the following sections to determine supported channels and requirements
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>RequestType</key>
+        <string>ScheduleOSUpdate</string>
+        <key>Updates</key>
+        <array>
+            <dict>
+                <key>InstallAction</key>
+                <string>DownloadOnly</string>
+                <key>ProductKey</key>
+                <string>iOSUpdate17A576</string>
+                <key>ProductVersion</key>
+                <string>13.0</string>
+            </dict>
+        </array>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_ScheduleOSUpdate</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_ScheduleOSUpdate</string>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>00008020-000915083C80012E</string>
+    <key>UpdateResults</key>
+    <array>
+        <dict>
+            <key>InstallAction</key>
+            <string>DownloadOnly</string>
+            <key>ProductKey</key>
+            <string>iOSUpdate17A576</string>
+            <key>Status</key>
+            <string>Downloading</string>
+        </dict>
+    </array>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -44,6 +101,10 @@ Refer to the following sections to determine supported channels and requirements
   The command to schedule an update of the operating system on a device.
 - [object ScheduleOSUpdateResponse](scheduleosupdateresponse.md)
   A response from the device after it processes the command to schedule an update of the operating system on a device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

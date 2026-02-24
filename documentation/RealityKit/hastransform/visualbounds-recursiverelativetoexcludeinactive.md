@@ -30,9 +30,9 @@ The method has complexity `O(n)`, where `n` is the number of entities in the hie
 
 ## Parameters
 
-- `recursive`: A Boolean that you set to   to incorporate the bounds   of all descendants.
-- `referenceEntity`: An entity that defines a frame of reference. Set to    to indicate world space.
-- `excludeInactive`: A Boolean that you set to   to exclude inactive   entities.
+- `recursive`: A Boolean that you set to `true` to incorporate the bounds of all descendants.
+- `referenceEntity`: An entity that defines a frame of reference. Set to `nil` to indicate world space.
+- `excludeInactive`: A Boolean that you set to `true` to exclude inactive entities.
 
 
 ---

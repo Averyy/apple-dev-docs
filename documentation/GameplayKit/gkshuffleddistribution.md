@@ -25,6 +25,30 @@ The behavior of a shuffled distribution is sometimes called “fair” randomiza
 
 The [`GKShuffledDistribution`](gkshuffleddistribution.md) class inherits its entire interface from its superclass—to initialize and use a shuffled distribution, use the methods listed in [`GKRandomDistribution`](gkrandomdistribution.md). A shuffled distribution differs from its superclass in behavior only. Consider the code snippets below:
 
+**Swift**:
+
+```swift
+// Uniform distribution
+let uniform = GKRandomDistribution.d6()
+for _ in 1...100 { print(uniform.nextInt()) }
+ 
+// Shuffled distribution
+let shuffled = GKShuffledDistribution.d6()
+for _ in 1...100 { print(shuffled.nextInt()) }
+```
+
+**Objective-C**:
+
+```objc
+// Uniform distribution
+GKRandomDistribution *uniform = [GKRandomDistribution d6];
+for (int i = 0; i < 100; i++) { NSLog(@"%d", [uniform nextInt]); }
+ 
+// Shuffled distribution
+GKRandomDistribution *shuffled = [GKShuffledDistribution d6];
+for (int i = 0; i < 100; i++) { NSLog(@"%d", [shuffled nextInt]); }
+```
+
 In this example, each distribution generates 100 random integers from a simulated six-sided die. In both cases, the distribution of results is roughly uniform—that is, the number of occurrences of any specific value is about the same as that of any other value. However, the shuffled distribution makes sure not to repeat any one value until it has used all of its possible values. In this example, if the die rolls a 1, the shuffled distribution will not generate another 1 for at least five more rolls.
 
 > ❗ **Important**:  The randomization services provided in GameplayKit are suitable for reliably creating deterministic, pseudorandom gameplay mechanics, but are not cryptographically robust. For cryptography, obfuscation, or cipher uses, use the Security framework, described in [`Cryptographic Services Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/cryptoservices/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011172).
@@ -59,7 +83,7 @@ For more information on choosing and using randomizers in GameplayKit, read [`Ra
 - [class GKRandomDistribution](gkrandomdistribution.md)
   A generator for random numbers that fall within a specific range and that exhibit a specific distribution over multiple samplings.
 - [class GKGaussianDistribution](gkgaussiandistribution.md)
-  A generator for random numbers that follow a  (also known as a ) across multiple samplings.
+  A generator for random numbers that follow a *Gaussian distribution* (also known as a *normal distribution*) across multiple samplings.
 
 
 ---

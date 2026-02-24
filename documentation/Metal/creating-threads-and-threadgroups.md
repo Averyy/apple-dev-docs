@@ -6,9 +6,9 @@ Learn how Metal organizes compute-processing workloads.
 
 #### Overview
 
-A compute pass can run a kernel function over a 1D, 2D, or 3D grid. Each point in the grid represents a , which is a single  instance of your kernel function. For example, in image processing, the grid is typically a 2D matrix of threads—representing the entire image—with each thread corresponding to a single pixel of the image being processed.
+A compute pass can run a kernel function over a 1D, 2D, or 3D grid. Each point in the grid represents a *thread*, which is a single  instance of your kernel function. For example, in image processing, the grid is typically a 2D matrix of threads—representing the entire image—with each thread corresponding to a single pixel of the image being processed.
 
-Each thread belongs to a  that run together and share a common block of memory. You can design your kernel functions so that each thread runs independently, or so that they collaborate as a group on a common working set.
+Each thread belongs to a *threadgroup* that run together and share a common block of memory. You can design your kernel functions so that each thread runs independently, or so that they collaborate as a group on a common working set.
 
 ##### Identification of Threads By Position in Grid
 
@@ -44,7 +44,7 @@ convertToGrayscale(texture2d<half, access::read>  inTexture  [[texture(ComputeTe
 }
 ```
 
-`[[thread_position_in_grid]]` is an . Attribute qualifiers, identifiable by their double square-bracket syntax, allow kernel parameters to be bound to resources and built-in variables — in this case, the thread’s position in the grid to the kernel function.
+`[[thread_position_in_grid]]` is an *attribute qualifier*. Attribute qualifiers, identifiable by their double square-bracket syntax, allow kernel parameters to be bound to resources and built-in variables — in this case, the thread’s position in the grid to the kernel function.
 
 For example, given a grid of 16 x 16 threads partitioned into 2 x 4 threadgroups of 8 x 4 threads, a single thread (shown in [`Figure 2`](compute_passes/creating_threads_and_threadgroups#2929009.md) in red) has a position in the grid of (9,10):
 
@@ -77,11 +77,14 @@ myKernel(uint2 threadgroup_position_in_grid   [[ threadgroup_position_in_grid ]]
 
 ##### Simd Groups
 
-The threads in a threadgroup are further organized into single-instruction, multiple-data (SIMD) groups, also known as  or , that execute concurrently. The threads in a SIMD group execute the same code. Avoid writing code that could cause your kernel function to ; that is, to follow different code paths. A typical example of divergence is caused by using an  statement. Even if a single thread in a SIMD group takes a different path from the others, all threads in that group execute both branches, and the execution time for the group is the sum of the execution time of both branches.
+The threads in a threadgroup are further organized into single-instruction, multiple-data (SIMD) groups, also known as *warps* or *wavefronts*, that execute concurrently. The threads in a SIMD group execute the same code. Avoid writing code that could cause your kernel function to *diverge*; that is, to follow different code paths. A typical example of divergence is caused by using an *if* statement. Even if a single thread in a SIMD group takes a different path from the others, all threads in that group execute both branches, and the execution time for the group is the sum of the execution time of both branches.
 
 The division of threadgroups into SIMD groups is defined by Metal. It remains constant for the duration of a kernel’s execution, across dispatches of a given kernel with the same launch parameters, and from one threadgroup to another within the dispatch.
 
 The number of threads in a SIMD group is returned by the [`threadExecutionWidth`](mtlcomputepipelinestate/threadexecutionwidth.md) of your compute pipeline state object. Attribute qualifiers allow you to access a SIMD group’s scalar index within a threadgroup, and a thread’s scalar index within a SIMD group:
+
+- **`[[simdgroup_index_in_threadgroup]]`**: The unique scalar index of a SIMD group in its threadgroup.
+- **`[[thread_index_in_simdgroup]]`**: The unique scalar index of a thread in its SIMD group, also known as the *lane ID*.
 
 Although threadgroups can be multidimensional, SIMD groups are 1D. Therefore, a thread’s position within a SIMD group is a scalar value for all threadgroup shapes. The SIMD group size remains constant and is unaffected by the threadgroup size.
 

@@ -24,7 +24,7 @@ If `isInvertible` was set to [`true`](https://developer.apple.com/documentation/
 ## Parameters
 
 - `matrix`: A matrix.
-- `isInvertible`: On return, this holds   if the matrix was inverted or   if the matrix is not invertible.
+- `isInvertible`: On return, this holds [`true`](https://developer.apple.com/documentation/Swift/true) if the matrix was inverted or [`false`](https://developer.apple.com/documentation/Swift/false) if the matrix is not invertible.
 
 ## See Also
 

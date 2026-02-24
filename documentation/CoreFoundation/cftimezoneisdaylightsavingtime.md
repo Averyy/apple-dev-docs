@@ -27,7 +27,7 @@ func CFTimeZoneIsDaylightSavingTime(_ tz: CFTimeZone!, _ at: CFAbsoluteTime) -> 
 ## Parameters
 
 - `tz`: The time zone to analyze.
-- `at`: The date in   to test for daylight savings.
+- `at`: The date in `tz` to test for daylight savings.
 
 ## See Also
 

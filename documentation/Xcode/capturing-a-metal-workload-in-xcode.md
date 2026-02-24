@@ -19,6 +19,10 @@ Xcode automatically enables the GPU Frame Capture option if your target links to
 
 The GPU Frame Capture options include the following:
 
+- **Automatically**: Captures Metal or OpenGL ES API usage in your app. If your target doesn’t link to the Metal framework or the OpenGL ES framework, the Metal Capture button doesn’t appear in the debug bar. If your app uses both the Metal  API and the OpenGL ES API, you can click and hold the Capture GPU Frame icon to choose which API usage to capture.
+- **Metal**: Captures only Metal API usage in your app. If your app doesn’t use the Metal API, Xcode disables the Metal Capture button in the debug bar.
+- **Disabled**: Doesn’t capture Metal usage in your app. GPU Frame Capture has a tiny, but measurable, effect on your app’s CPU processing time, so choose this option when you want to test your app’s maximum performance level.
+
 ##### Capture Your Metal Workload While Debugging
 
 While debugging your app, you can capture a GPU trace by following these steps:

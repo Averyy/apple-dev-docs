@@ -24,8 +24,8 @@ Subclasses that use an edit-done button must override this method to change thei
 
 ## Parameters
 
-- `editing`: If   and one of the custom views of the   property is set to the value returned by the   method, the associated navigation controller displays a Done button; otherwise, an Edit button.
-- `animated`: If  , animates the transition; otherwise, does not.
+- `editing`: If [`true`](https://developer.apple.com/documentation/Swift/true), the view controller should display an editable view; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). If [`true`](https://developer.apple.com/documentation/Swift/true) and one of the custom views of the [`navigationItem`](uiviewcontroller/navigationitem.md) property is set to the value returned by the [`editButtonItem`](uiviewcontroller/editbuttonitem.md) method, the associated navigation controller displays a Done button; otherwise, an Edit button.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), animates the transition; otherwise, does not.
 
 ## See Also
 

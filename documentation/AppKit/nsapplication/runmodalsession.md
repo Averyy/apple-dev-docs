@@ -42,7 +42,7 @@ The window is placed on the screen and made key as a result of the [`runModalSes
 
 ## Parameters
 
-- `session`: A pointer to the modal session structure returned by the   method for the window to be displayed.
+- `session`: A pointer to the modal session structure returned by the [`beginModalSession(for:)`](nsapplication/beginmodalsession(for:).md) method for the window to be displayed.
 
 ## See Also
 

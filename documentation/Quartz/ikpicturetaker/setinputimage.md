@@ -20,7 +20,7 @@ The input image is never modified by the picture taker.
 
 ## Parameters
 
-- `image`: An   object.
+- `image`: An `NSImage` object.
 
 ## See Also
 

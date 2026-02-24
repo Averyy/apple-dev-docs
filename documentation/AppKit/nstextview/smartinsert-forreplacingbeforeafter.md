@@ -22,10 +22,10 @@ As part of its implementation, this method calls [`smartInsert(afterStringFor:re
 
 ## Parameters
 
-- `pasteString`: The string that is replacing the characters in  .
-- `charRangeToReplace`: The range of characters which   is replacing.
-- `beforeString`: On return, a pointer to the string with the characters that should be added before  ;   if there are no characters to add, if   is  , or if smart insertion and deletion are disabled.
-- `afterString`: On return, a pointer to the string with the characters that should be added after  ;   if there are no characters to add, if   is  , or if smart insertion and deletion are disabled.
+- `pasteString`: The string that is replacing the characters in `charRange`.
+- `charRangeToReplace`: The range of characters which `aString` is replacing.
+- `beforeString`: On return, a pointer to the string with the characters that should be added before `aString`; `nil` if there are no characters to add, if `aString` is `nil`, or if smart insertion and deletion are disabled.
+- `afterString`: On return, a pointer to the string with the characters that should be added after `aString`; `nil` if there are no characters to add, if `aString` is `nil`, or if smart insertion and deletion are disabled.
 
 ## See Also
 

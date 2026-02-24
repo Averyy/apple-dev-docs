@@ -27,7 +27,7 @@ A gesture with two simultaneous gestures.
 
 ## Parameters
 
-- `other`: A gesture that you want to combine with your gesture   to create a new, combined gesture.
+- `other`: A gesture that you want to combine with your gesture to create a new, combined gesture.
 
 ## See Also
 

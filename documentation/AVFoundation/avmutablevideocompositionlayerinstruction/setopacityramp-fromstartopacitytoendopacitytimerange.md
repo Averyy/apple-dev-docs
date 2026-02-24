@@ -25,9 +25,9 @@ During an opacity ramp, opacity is computed using a linear interpolation. Before
 
 ## Parameters
 
-- `startOpacity`: The opacity to be applied at the start time of  . The value must be between   and  .
-- `endOpacity`: The opacity to be applied at the end time of  . The value must be between   and  .
-- `timeRange`: The time range over which the value of the opacity is interpolated between   and  .
+- `startOpacity`: The opacity to be applied at the start time of `timeRange`. The value must be between `0.0` and `1.0`.
+- `endOpacity`: The opacity to be applied at the end time of `timeRange`. The value must be between `0.0` and `1.0`.
+- `timeRange`: The time range over which the value of the opacity is interpolated between `startOpacity` and `endOpacity`.
 
 ## See Also
 

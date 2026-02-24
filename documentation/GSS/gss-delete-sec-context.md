@@ -30,7 +30,7 @@ This function purges the context and all of its resources from memory, and frees
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `context_handle`: The context to be deleted.
-- `output_token`: A buffer that the function may fill with a token to send to the peer application. Typically, you pass  , indicating that no token is desired, and simply call upon the deletion function to operate locally on both sides of the connection. If a token is created, pass it to the remote peer, and free its memory with a call to  .
+- `output_token`: A buffer that the function may fill with a token to send to the peer application. Typically, you pass [`GSS_C_NO_BUFFER`](gss_c_no_buffer.md), indicating that no token is desired, and simply call upon the deletion function to operate locally on both sides of the connection. If a token is created, pass it to the remote peer, and free its memory with a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md).
 
 ## See Also
 

@@ -26,7 +26,7 @@ An integer containing the number of arguments accepted by the given method.
 
 ## Parameters
 
-- `m`: A pointer to a   data structure. Pass the method in question.
+- `m`: A pointer to a [`Method`](method.md) data structure. Pass the method in question.
 
 ## See Also
 

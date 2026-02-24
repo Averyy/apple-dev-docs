@@ -23,15 +23,15 @@ init(jointNames: [String], name: String = "", isScaleAnimated: Bool = true, isRo
 
 - `jointNames`: The names of the joints in the animated skeletal pose.
 - `name`: A unique name for the animation.
-- `isScaleAnimated`: A Boolean value that indicates whether that animation   interpolates changes to the target’s size.
-- `isRotationAnimated`: A Boolean value that indicates whether that   animation interpolates rotational changes.
-- `isTranslationAnimated`: A Boolean value that indicates whether that   animation interpolates changes to the target object’s position.
+- `isScaleAnimated`: A Boolean value that indicates whether that animation interpolates changes to the target’s size.
+- `isRotationAnimated`: A Boolean value that indicates whether that animation interpolates rotational changes.
+- `isTranslationAnimated`: A Boolean value that indicates whether that animation interpolates changes to the target object’s position.
 - `from`: The state of the target object’s joints before the animation starts.
 - `to`: The state of the target object’s joints after the animation finishes.
 - `by`: An amount that increments the animated joints during the animation.
 - `duration`: The total playback time.
 - `timing`: An option that determines the animation’s pace over time.
-- `isAdditive`: A Boolean value that indicates whether the animation   blends additively with concurrent animations.
+- `isAdditive`: A Boolean value that indicates whether the animation blends additively with concurrent animations.
 - `bindTarget`: A textual name that identifies the particular property that animates.
 - `blendLayer`: The order in which the framework composites the animation into the view.
 - `repeatMode`: An option that determines how the animation repeats.

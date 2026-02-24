@@ -202,6 +202,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [func formStyle<S>(S) -> some View](view/formstyle(_:).md)
   Sets the style for forms in a view hierarchy.
 - [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View](view/foveatedstreamingpausesheet(session:).md)
+  Tells the system to present a sheet with controls for resuming or ending the foveated streaming session when it pauses.
 - [func gameSaveSyncingAlert(directory: Binding<GameSaveSyncedDirectory?>, finishedLoading: () -> Void) -> some View](view/gamesavesyncingalert(directory:finishedloading:).md)
   Presents a modal view while the game synced directory loads.
 - [func glassBackgroundEffect<S>(S, displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(_:displaymode:).md)

@@ -29,7 +29,7 @@ At the conclusion of a snap, the rotation value (as indicated by the [`transform
 ## Parameters
 
 - `item`: The dynamic item that you want to apply a snap behavior to.
-- `point`: The point that you want the dynamic item to snap to. The coordinate system for the   parameter depends on how you initialize the dynamic animator you’re adding the snap behavior to, as described in the overview of  .
+- `point`: The point that you want the dynamic item to snap to. The coordinate system for the `point` parameter depends on how you initialize the dynamic animator you’re adding the snap behavior to, as described in the overview of [`UIDynamicAnimator`](uidynamicanimator.md).
 
 
 ---

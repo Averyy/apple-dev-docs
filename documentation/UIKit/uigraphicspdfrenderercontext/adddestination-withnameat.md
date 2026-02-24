@@ -28,7 +28,7 @@ For an example of how to use internal links, including mapping between coordinat
 
 ## Parameters
 
-- `name`: The name of the destination, used as a reference by the   method.
+- `name`: The name of the destination, used as a reference by the [`setDestinationWithName(_:for:)`](uigraphicspdfrenderercontext/setdestinationwithname(_:for:).md) method.
 - `point`: The location of the destination point, in the PDF coordinate space.
 
 ## See Also

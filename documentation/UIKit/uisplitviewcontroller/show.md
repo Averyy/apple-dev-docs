@@ -28,7 +28,7 @@ After you call this method, you can use the split view controller’s [`transiti
 
 ## Parameters
 
-- `column`: The corresponding column of the split view interface to show. See   for values.
+- `column`: The corresponding column of the split view interface to show. See [`UISplitViewController.Column`](uisplitviewcontroller/column.md) for values.
 
 ## See Also
 

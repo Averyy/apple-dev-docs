@@ -10,6 +10,10 @@ A Boolean value that indicates whether a File Provider extension enumerates its 
 - iPadOS 11.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [NSExtensionFileProviderActions](information-property-list/nsextension/nsextensionfileprovideractions.md)

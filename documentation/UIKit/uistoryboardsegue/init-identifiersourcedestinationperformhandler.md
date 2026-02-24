@@ -31,7 +31,7 @@ You use this method as an alternative to creating a subclass. Your perform handl
 - `identifier`: The identifier you want to associate with this particular instance of the segue. You can use this identifier to differentiate one type of segue from another at runtime.
 - `source`: The view controller visible at the start of the segue.
 - `destination`: The view controller to display after the completion of the segue.
-- `performHandler`: A block to be called when the segue’s   method is called.
+- `performHandler`: A block to be called when the segue’s [`perform()`](uistoryboardsegue/perform().md) method is called.
 
 ## See Also
 

@@ -11,6 +11,10 @@ The information about the app’s scene-based life-cycle support.
 - Mac Catalyst 13.0+
 - visionOS 1.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 The presence of this key indicates that the app supports scenes and doesn’t use an app delegate object to manage transitions to and from the foreground or background.

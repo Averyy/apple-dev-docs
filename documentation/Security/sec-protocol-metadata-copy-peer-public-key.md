@@ -28,7 +28,7 @@ Get the protocol instance peer’s public key.
 
 ## Parameters
 
-- `metadata`: A   instance.
+- `metadata`: A `sec_protocol_metadata_t` instance.
 
 
 ---

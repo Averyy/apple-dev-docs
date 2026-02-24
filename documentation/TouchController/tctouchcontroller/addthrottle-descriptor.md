@@ -21,7 +21,7 @@ A new `TCThrottle` instance.
 
 ## Parameters
 
-- `descriptor`: The   containing the configuration for the throttle.
+- `descriptor`: The `TCThrottleDescriptor` containing the configuration for the throttle.
 
 ## See Also
 

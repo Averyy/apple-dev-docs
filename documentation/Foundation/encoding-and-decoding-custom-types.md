@@ -8,7 +8,7 @@ Make your data types encodable and decodable for compatibility with external rep
 
 Many programming tasks involve sending data over a network connection, saving data to disk, or submitting data to APIs and services. These tasks often require data to be encoded and decoded to and from an intermediate format while the data is being transferred.
 
-The Swift standard library defines a standardized approach to data encoding and decoding. You adopt this approach by implementing the [`Encodable`](https://developer.apple.com/documentation/Swift/Encodable) and [`Decodable`](https://developer.apple.com/documentation/Swift/Decodable) protocols on your custom types. Adopting these protocols lets implementations of the [`Encoder`](https://developer.apple.com/documentation/Swift/Encoder) and [`Decoder`](https://developer.apple.com/documentation/Swift/Decoder) protocols take your data and encode or decode it to and from an external representation such as JSON or property list. To support both encoding and decoding, declare conformance to [`Codable`](https://developer.apple.com/documentation/Swift/Codable), which combines the [`Encodable`](https://developer.apple.com/documentation/Swift/Encodable) and [`Decodable`](https://developer.apple.com/documentation/Swift/Decodable) protocols. This process is known as making your types .
+The Swift standard library defines a standardized approach to data encoding and decoding. You adopt this approach by implementing the [`Encodable`](https://developer.apple.com/documentation/Swift/Encodable) and [`Decodable`](https://developer.apple.com/documentation/Swift/Decodable) protocols on your custom types. Adopting these protocols lets implementations of the [`Encoder`](https://developer.apple.com/documentation/Swift/Encoder) and [`Decoder`](https://developer.apple.com/documentation/Swift/Decoder) protocols take your data and encode or decode it to and from an external representation such as JSON or property list. To support both encoding and decoding, declare conformance to [`Codable`](https://developer.apple.com/documentation/Swift/Codable), which combines the [`Encodable`](https://developer.apple.com/documentation/Swift/Encodable) and [`Decodable`](https://developer.apple.com/documentation/Swift/Decodable) protocols. This process is known as making your types *codable*.
 
 ##### Encode and Decode Automatically
 
@@ -185,6 +185,8 @@ For more information about the container types used when customizing the encodin
 
 ## See Also
 
+- [Using JSON with custom types](using-json-with-custom-types.md)
+  Encode and decode JSON data, regardless of its structure, using Swift’s JSON support.
 - [typealias Codable](../Swift/Codable.md)
   A type that can convert itself into and out of an external representation.
 - [protocol NSCoding](nscoding.md)

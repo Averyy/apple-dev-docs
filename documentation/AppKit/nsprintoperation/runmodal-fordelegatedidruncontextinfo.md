@@ -31,7 +31,7 @@ If you send [`canSpawnSeparateThread`](nsprintoperation/canspawnseparatethread.m
 - `docWindow`: The document window to receive a print progress sheet.
 - `delegate`: The printing delegate object. Messages are sent to this object.
 - `didRunSelector`: The delegate method called after the completion of the print operation.
-- `contextInfo`: A pointer to any data you want passed to the method in the    parameter.
+- `contextInfo`: A pointer to any data you want passed to the method in the  `didRunSelector` parameter.
 
 ## See Also
 

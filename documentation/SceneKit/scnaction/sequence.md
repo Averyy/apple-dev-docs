@@ -40,7 +40,7 @@ SCNAction *sequenceReverse = [sequence reversedAction];
 
 ## Parameters
 
-- `actions`: An array of   objects.
+- `actions`: An array of [`SCNAction`](scnaction.md) objects.
 
 ## See Also
 

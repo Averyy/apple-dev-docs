@@ -25,16 +25,16 @@ If you already have a legacy Safari extension and you want to convert it to a Sa
 
 Modifications are required in these areas:
 
--  Specify these items statically. In a Safari app extension, there’s no validation of contextual menu items before the menu appears.
--  You can have only one toolbar item. In a Safari app extension, the system statically determines the image to display in the toolbar at build time.
--  Remove any extension bars from your legacy Safari extension. A Safari app extension can’t create extension bars.
+- **Context menu item validation.** Specify these items statically. In a Safari app extension, there’s no validation of contextual menu items before the menu appears.
+- **Number of toolbar items.** You can have only one toolbar item. In a Safari app extension, the system statically determines the image to display in the toolbar at build time.
+- **Extension bars.** Remove any extension bars from your legacy Safari extension. A Safari app extension can’t create extension bars.
 
 Rewrites are required in these areas:
 
--  `Info.plist`  Create an Xcode project for your Safari app extension. For data that you previously entered in the Safari Extension Builder interface, enter it instead in the app extension’s `Info.plist` file. For more information, see [`Safari app extension information property list keys`](safari-app-extension-information-property-list-keys.md).
--  A Safari app extension doesn’t have a global HTML page. Instead, pass messages from your injected code into the app extension.
--  In legacy Safari extensions, you used a `safari.application.activeBrowserWindow.activeTab.page` object to send messages. In a Safari app extension, if you specify user data when sending a message, the data must be a dictionary object. For more information about the message-handling process in the native app extension, see [`Passing messages between Safari app extensions and injected scripts`](passing-messages-between-safari-app-extensions-and-injected-scripts.md).
--  Use AppKit views and view controllers to create popovers in native code.
+- **Using an** `Info.plist` **file.** Create an Xcode project for your Safari app extension. For data that you previously entered in the Safari Extension Builder interface, enter it instead in the app extension’s `Info.plist` file. For more information, see [`Safari app extension information property list keys`](safari-app-extension-information-property-list-keys.md).
+- **Working in the native app extension.** A Safari app extension doesn’t have a global HTML page. Instead, pass messages from your injected code into the app extension.
+- **Sending messages.** In legacy Safari extensions, you used a `safari.application.activeBrowserWindow.activeTab.page` object to send messages. In a Safari app extension, if you specify user data when sending a message, the data must be a dictionary object. For more information about the message-handling process in the native app extension, see [`Passing messages between Safari app extensions and injected scripts`](passing-messages-between-safari-app-extensions-and-injected-scripts.md).
+- **Creating popovers.** Use AppKit views and view controllers to create popovers in native code.
 
 ## See Also
 

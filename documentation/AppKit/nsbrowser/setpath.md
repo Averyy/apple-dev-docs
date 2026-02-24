@@ -24,7 +24,7 @@ While parsing `path`, the browser compares each component with the entries in th
 
 ## Parameters
 
-- `path`: The path to display. If   is prefixed by the path separator, the path is absolute, containing the full path from the browser’s first column. Otherwise, the path is relative, extending the browser’s current path starting at the last column.
+- `path`: The path to display. If `path` is prefixed by the path separator, the path is absolute, containing the full path from the browser’s first column. Otherwise, the path is relative, extending the browser’s current path starting at the last column.
 
 ## See Also
 

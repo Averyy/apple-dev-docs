@@ -35,10 +35,10 @@ Each key of `SMPrivilegedExecutables` is a reverse-DNS label for the helper tool
 
 ## Parameters
 
-- `domain`: The job’s domain. The Service Management framework only supports the   domain.
-- `executableLabel`: The label of the privileged executable to install. This label must be one of the keys found in the   dictionary in the application’s  .
-- `auth`: An authorization reference containing the   right.
-- `outError`: An output reference to a   describing the specific error encountered while submitting the executable tool; or,   if successful. It’s the responsibility of the application to release the error reference. This argument may be  .
+- `domain`: The job’s domain. The Service Management framework only supports the [`kSMDomainSystemLaunchd`](ksmdomainsystemlaunchd.md) domain.
+- `executableLabel`: The label of the privileged executable to install. This label must be one of the keys found in the [`SMPrivilegedExecutables`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SMPrivilegedExecutables) dictionary in the application’s `Info.plist`.
+- `auth`: An authorization reference containing the [`kSMRightBlessPrivilegedHelper`](ksmrightblessprivilegedhelper.md) right.
+- `outError`: An output reference to a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) describing the specific error encountered while submitting the executable tool; or, `NULL` if successful. It’s the responsibility of the application to release the error reference. This argument may be `NULL`.
 
 ## See Also
 

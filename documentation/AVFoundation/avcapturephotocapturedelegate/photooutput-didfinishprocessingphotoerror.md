@@ -40,8 +40,8 @@ The photo output calls this method once for each primary image to be delivered i
 ## Parameters
 
 - `output`: The photo output performing the capture.
-- `photo`: This parameter is always non- : if an error prevented successful capture, this object still contains metadata for the intended capture.
-- `error`: If the capture process could not proceed successfully, an error object describing the failure; otherwise,  .
+- `photo`: An object containing the captured image pixel buffer, along with any metadata and attachments captured along with the photo (such as a preview image or depth map). This parameter is always non-`nil`: if an error prevented successful capture, this object still contains metadata for the intended capture.
+- `error`: If the capture process could not proceed successfully, an error object describing the failure; otherwise, `nil`.
 
 ## See Also
 

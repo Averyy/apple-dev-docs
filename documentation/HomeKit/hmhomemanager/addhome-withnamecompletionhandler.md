@@ -20,7 +20,8 @@ func addHome(named homeName: String) async throws -> HMHome
 ## Parameters
 
 - `homeName`: The name of the new home. Must not match the name of an existing home.
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **home**: The newly created home; may be `nil` if creation failed.
+- **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

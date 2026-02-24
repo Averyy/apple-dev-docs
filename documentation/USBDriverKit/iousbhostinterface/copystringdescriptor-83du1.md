@@ -25,7 +25,7 @@ This method uses a `GET_DESCRIPTOR` control request (USB 2.0, section 9.4.3) to 
 ## Parameters
 
 - `index`: The descriptor’s index value.
-- `languageID`: The descriptor’s language ID. You can get the current list of valid language IDs at  .
+- `languageID`: The descriptor’s language ID. You can get the current list of valid language IDs at [`https://www.usb.org/`](https://developer.apple.comhttps://www.usb.org/).
 
 ## See Also
 

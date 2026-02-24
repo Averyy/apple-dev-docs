@@ -36,7 +36,7 @@ Audio processing graph updates are all or none. If this function encounters any 
 ## Parameters
 
 - `inGraph`: 
-- `outIsUpdated`: In input, pass   for synchronous (blocking) behavior, or non-  to have this function return immediately. On output,   if all of the edits were applied to the audio processing graph at the time of function return.
+- `outIsUpdated`: In input, pass `NULL` for synchronous (blocking) behavior, or non-`NULL` to have this function return immediately. On output, `true` if all of the edits were applied to the audio processing graph at the time of function return.
 
 ## See Also
 

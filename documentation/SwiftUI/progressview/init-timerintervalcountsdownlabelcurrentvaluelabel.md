@@ -50,9 +50,9 @@ By default, the progress view empties as time passes from the start of the date 
 ## Parameters
 
 - `timerInterval`: The date range over which the view should progress.
-- `countsDown`: A Boolean value that determines whether the view   empties or fills as time passes. If   (the default), the   view empties.
-- `label`: An optional view that describes the purpose of the progress   view.
-- `currentValueLabel`: A view that displays the current value of the   timer.
+- `countsDown`: A Boolean value that determines whether the view empties or fills as time passes. If `true` (the default), the view empties.
+- `label`: An optional view that describes the purpose of the progress view.
+- `currentValueLabel`: A view that displays the current value of the timer.
 
 ## See Also
 

@@ -22,7 +22,7 @@ struct MLSoundClassifier
 
 A sound classifier is a machine learning model that identifies and categorizes sounds in an app. Create a sound classifier by gathering a dataset of audio files and use them to train a model with [`MLSoundClassifier`](mlsoundclassifier.md).
 
-Assemble an audio dataset by recording or gathering audio files that best represent the sounds you want your app to identify. Additionally, create a  — a group of related noises the sound classifier might hear but aren’t relevant — by collecting or recording example sounds.
+Assemble an audio dataset by recording or gathering audio files that best represent the sounds you want your app to identify. Additionally, create a *negative class* — a group of related noises the sound classifier might hear but aren’t relevant — by collecting or recording example sounds.
 
 For example, say you’re creating a sound classifier to identify laughter and applause. In addition to gathering audio examples of people laughing and clapping, you can add an additional category for background noise. By adding recordings from various settings, such as theaters and amphitheaters, your sound classifier can distinguish the sounds of interest from environmental noises. In other words, the sound classifier won’t predict “Applause” when there isn’t any. Like any classifier, when you request a prediction, a sound classifier always returns one of the categories it learned from a training dataset.
 

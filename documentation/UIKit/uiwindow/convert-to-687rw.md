@@ -25,7 +25,7 @@ The point converted to the coordinate system of `window`.
 ## Parameters
 
 - `point`: A point specifying a location in the logical coordinate system of the current window object.
-- `window`: The window defining the destination coordinate system for  . Specify   to convert the point to the logical coordinate system of the screen, which is measured in points.
+- `window`: The window defining the destination coordinate system for `point`. Specify `nil` to convert the point to the logical coordinate system of the screen, which is measured in points.
 
 ## See Also
 

@@ -37,7 +37,7 @@ For more information, see [`GameplayKit Programming Guide`](https://developer.ap
 
 - `obstacles`: An array of obstacle objects, each of which describes a polygon-shaped impassable area.
 - `bufferRadius`: The distance from obstacle edges that should also be considered impassable.
-- `nodeClass`: The   subclass to use for nodes in the graph.
+- `nodeClass`: The [`GKGraphNode2D`](gkgraphnode2d.md) subclass to use for nodes in the graph.
 
 ## See Also
 

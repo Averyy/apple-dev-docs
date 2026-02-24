@@ -30,7 +30,7 @@ For keys in the dictionary, see [`Dictionary Keys`](cmtime-dictionary-keys.md).
 
 ## Parameters
 
-- `dictionaryRepresentation`: A dictionary created from a call to  .
+- `dictionaryRepresentation`: A dictionary created from a call to [`CMTimeCopyAsDictionary(_:allocator:)`](cmtimecopyasdictionary(_:allocator:).md).
 
 ## See Also
 

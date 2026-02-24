@@ -16,7 +16,7 @@ init(textElement: NSTextElement, range rangeInElement: NSTextRange?)
 
 ## Parameters
 
-- `textElement`: An  .
+- `textElement`: An [`NSTextElement`](nstextelement.md).
 - `rangeInElement`: A range that defines the boundaries of the text for the new layout fragment.
 
 ## See Also

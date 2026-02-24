@@ -11,6 +11,12 @@ A Boolean value that indicates whether the executable opts in to additional secu
 - macOS 26.0+
 - visionOS 26.0+
 
+
+
+**Type**: boolean
+
+**Default**: `true`
+
 #### Discussion
 
 Xcode adds this entitlement to your app or extension when you add the Enhanced Security capability. For more information, see [`Enabling enhanced security for your app`](https://developer.apple.com/documentation/Xcode/enabling-enhanced-security-for-your-app).

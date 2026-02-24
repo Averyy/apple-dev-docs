@@ -22,9 +22,9 @@ init(name: NSNotification.Name, object: Any?, userInfo: [AnyHashable : Any]? = n
 
 ## Parameters
 
-- `name`: The name for the new notification. May not be  .
+- `name`: The name for the new notification. May not be `nil`.
 - `object`: The object for the new notification.
-- `userInfo`: The user information dictionary for the new notification. May be  .
+- `userInfo`: The user information dictionary for the new notification. May be `nil`.
 
 ## See Also
 

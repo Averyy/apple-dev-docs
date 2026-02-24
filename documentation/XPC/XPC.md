@@ -13,13 +13,13 @@ Access a low-level interprocess communication mechanism.
 
 #### Overview
 
-XPC provides a lightweight mechanism for basic interprocess communication. It allows you to create lightweight helper tools, called , that perform work on behalf of your app. The `launchd` system daemon manages these services, launching them on demand, shutting them down when idle, and restarting them if they crash. Benefits of XPC services include:
+XPC provides a lightweight mechanism for basic interprocess communication. It allows you to create lightweight helper tools, called *XPC services*, that perform work on behalf of your app. The `launchd` system daemon manages these services, launching them on demand, shutting them down when idle, and restarting them if they crash. Benefits of XPC services include:
 
 - Centralize work from multiple processes or mediate access to a shared resource.
 - Delegate work so it continues beyond a client’s life cycle.
 - Privilege isolation to narrow the scope of access for different functionality.
 
-Clients that make use of these services rely on peer-to-peer XPC connections to communicate across process boundaries. There are two sides to each connection. One side, the  or server, responds to incoming connection requests and performs tasks. The other side, the client, initiates connections to an XPC service by creating a  with a listener. Once a client establishes a connection to the listener, it sends messages and receives replies from the service.
+Clients that make use of these services rely on peer-to-peer XPC connections to communicate across process boundaries. There are two sides to each connection. One side, the *listener* or server, responds to incoming connection requests and performs tasks. The other side, the client, initiates connections to an XPC service by creating a *session* with a listener. Once a client establishes a connection to the listener, it sends messages and receives replies from the service.
 
 The type of XPC service you build depends on the requirements of the work it performs. The following table summarizes the types of services available and some differences in how they behave:
 

@@ -24,8 +24,8 @@ Apple recommends that you include [`kIOUserNetworkMediaEthernetAuto`](kiousernet
 
 ## Parameters
 
-- `mediaTypes`: An array of   types. For each type, combine a   constant with one or more   constants to indicate the configurations you support.
-- `count`: The number of items in the   array.
+- `mediaTypes`: An array of [`IOUserNetworkMediaType`](iousernetworkmediatype.md) types. For each type, combine a [`Media Type Constants`](media-type-constants.md) constant with one or more [`Configuration Options`](configuration-options.md) constants to indicate the configurations you support.
+- `count`: The number of items in the `mediaTypes` array.
 
 ## See Also
 

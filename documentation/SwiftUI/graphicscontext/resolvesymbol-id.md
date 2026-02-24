@@ -26,7 +26,7 @@ The resolved symbol, or `nil` if SwiftUI can’t find a child view with the give
 
 ## Parameters
 
-- `id`: The value that you used to tag the view when you   define it in the   parameter of the   initializer   .
+- `id`: The value that you used to tag the view when you define it in the `symbols` parameter of the [`Canvas`](canvas.md) initializer [`init(opaque:colorMode:rendersAsynchronously:renderer:symbols:)`](canvas/init(opaque:colormode:rendersasynchronously:renderer:symbols:).md).
 
 ## See Also
 

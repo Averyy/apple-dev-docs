@@ -25,7 +25,7 @@ After calling this method, the app also posts a [`didChangeStatusBarOrientationN
 ## Parameters
 
 - `application`: Your singleton app object.
-- `oldStatusBarOrientation`: A constant that indicates the previous orientation of the app’s user interface; see   for details.
+- `oldStatusBarOrientation`: A constant that indicates the previous orientation of the app’s user interface; see [`Responding to app life-cycle events`](uiapplicationdelegate#Responding-to-app-life-cycle-events.md) for details.
 
 ## See Also
 

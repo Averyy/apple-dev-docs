@@ -12,13 +12,77 @@ When you receive a PKCS #12 file (often with a `p12` extension) on a Mac, the Ke
 
 You can also import a PKCS #12 file directly into your app using the certificate, key, and trust services API. This might be useful if you need to securely communicate a new identity to your app in the field. As a concrete example, suppose your app has fetched such a file from a secure website and stored it locally at a particular file URL. You begin by reading this file into a data object:
 
+**Swift**:
+
+```swift
+let url = <# a URL #>
+let data = try Data.init(contentsOf: url)
+```
+
+**Objective-C**:
+
+```objc
+NSURL *url = <# a URL #>;
+NSData *data = [[NSData alloc] initWithContentsOfURL:url];
+```
+
 An identity is a secret that you guard closely by applying a strong password to the PKCS #12 data. In fact, the CKTS API won’t even import PKCS #12 data that lacks a password. In order to supply the password during import, you create an options dictionary with the password string:
+
+**Swift**:
+
+```swift
+let password = <# a password #>
+let options = [ kSecImportExportPassphrase as String: password ]
+```
+
+**Objective-C**:
+
+```objc
+NSString* password = <# a password #>;
+NSDictionary* options = @{ (id)kSecImportExportPassphrase : password };
+```
 
 > ❗ **Important**:  Do not bundle passwords with your app in any form. Doing so is insecure, because no matter how carefully you try to obscure a password, a motivated attacker will find a way to mimic the operations you use to reveal it for your own purposes. Instead, prompt the user for a password when you need it, or read it from the secure storage offered by a keychain.
 
 Then, use the data and the options in a call to the [`SecPKCS12Import(_:_:_:)`](secpkcs12import(_:_:_:).md) function:
 
+**Swift**:
+
+```swift
+var rawItems: CFArray?
+let status = SecPKCS12Import(data as CFData,
+                             options as CFDictionary,
+                             &rawItems)
+```
+
+**Objective-C**:
+
+```objc
+CFArrayRef rawItems = NULL;
+OSStatus status = SecPKCS12Import((__bridge CFDataRef)data,
+                                  (__bridge CFDictionaryRef)options,
+                                  &rawItems);
+```
+
 Because the PKCS #12 format allows for bundling multiple cryptographic objects together, this function populates an array object. Typically, you iterate over every object in the array, handling each one in turn. In this case, assume that you are interested in only the first item. If the import function returns no error, and if at least one array item exists, you extract that as the first item in the array, which is a dictionary:
+
+**Swift**:
+
+```swift
+guard status == errSecSuccess else { throw <# an error #> }
+let items = rawItems! as! Array<Dictionary<String, Any>>
+let firstItem = items[0]
+```
+
+**Objective-C**:
+
+```objc
+NSArray* items = (NSArray*)CFBridgingRelease(rawItems); // Transfer to ARC
+NSDictionary* firstItem = nil;
+if ((status == errSecSuccess) && ([items count]>0)) {
+    firstItem = items[0];
+}
+```
 
 Notice that in Objective-C, you first pass ownership of the array and its contents to Automatic Reference Counting (ARC), which handles releasing it later. In Swift, the system automatically takes ownership. Either way, this dictionary held by the first item may contain these keys:
 
@@ -30,7 +94,33 @@ Notice that in Objective-C, you first pass ownership of the array and its conten
 
 To get the identity object, use the [`kSecImportItemIdentity`](ksecimportitemidentity.md) key:
 
+**Swift**:
+
+```swift
+let identity = firstItem[kSecImportItemIdentity as String] as! SecIdentity?
+```
+
+**Objective-C**:
+
+```objc
+SecIdentityRef identity =
+    (SecIdentityRef)CFBridgingRetain(firstItem[(id)kSecImportItemIdentity]);
+```
+
 You can additionally read a trust object from the dictionary in a similar way, using the appropriate key. For example:
+
+**Swift**:
+
+```swift
+let trust = firstItem[kSecImportItemTrust as String] as! SecTrust?
+```
+
+**Objective-C**:
+
+```objc
+SecTrustRef trust =
+    (SecTrustRef)CFBridgingRetain(firstItem[(id)kSecImportItemTrust]);
+```
 
 See [`Evaluating a Trust and Parsing the Result`](evaluating-a-trust-and-parsing-the-result.md) for details on how to use the trust to evaluate the certificate.
 

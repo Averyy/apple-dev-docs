@@ -25,8 +25,8 @@ A valid MPSGraphStencilOpDescriptor object
 
 ## Parameters
 
-- `offsets`: See   property.
-- `explicitPadding`: See   property.
+- `offsets`: See `offsets` property.
+- `explicitPadding`: See `explicitPadding` property.
 
 
 ---

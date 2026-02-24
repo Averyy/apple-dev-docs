@@ -26,7 +26,8 @@ Use this method to add media items to a user’s music library. Use the [`Apple 
 ## Parameters
 
 - `productID`: The product identifier for the media item to add.
-- `completionHandler`: A block that the system calls after it plays the media item.
+- `completionHandler`: A block that the system calls after it plays the media item. - **entities**: An array containing the media items added to the user’s music library.
+- **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is `nil`.
 
 
 ---

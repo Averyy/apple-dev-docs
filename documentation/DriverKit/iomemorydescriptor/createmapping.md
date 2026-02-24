@@ -27,12 +27,12 @@ Use this method to map a memory buffer created by another process into the addre
 
 ## Parameters
 
-- `options`: The options to use when mapping the memory into this process. For a list of possible values, see  .
-- `address`: The address in the current process’ memory space at which to place the memory block. Specify a value for this parameter only if you also specified the   option; otherwise, specify  .
-- `offset`: The offset into the buffer to use as the first byte. Specify a value for this parameter only if you want to map from somewhere other than the first byte of the buffer; otherwise, specify  .
-- `length`: The number of bytes accessible to the memory mapping. Specify   to map the entire buffer into memory, or specify a value that is less than the current length of the buffer.
+- `options`: The options to use when mapping the memory into this process. For a list of possible values, see [`Memory Map Options`](3325558-memory_map_options.md).
+- `address`: The address in the current process’ memory space at which to place the memory block. Specify a value for this parameter only if you also specified the [`kIOMemoryMapFixedAddress`](kiomemorymapfixedaddress.md) option; otherwise, specify `0`.
+- `offset`: The offset into the buffer to use as the first byte. Specify a value for this parameter only if you want to map from somewhere other than the first byte of the buffer; otherwise, specify `0`.
+- `length`: The number of bytes accessible to the memory mapping. Specify `0` to map the entire buffer into memory, or specify a value that is less than the current length of the buffer.
 - `alignment`: The byte alignment to use when mapping the memory into your process. Specify only 0 for this parameter.
-- `map`: A variable in which to store the newly created   object. The returned object has a retain count of 1. You are responsible for releasing this object when you are finished with it.
+- `map`: A variable in which to store the newly created [`IOMemoryMap`](iomemorymap.md) object. The returned object has a retain count of 1. You are responsible for releasing this object when you are finished with it.
 
 ## See Also
 

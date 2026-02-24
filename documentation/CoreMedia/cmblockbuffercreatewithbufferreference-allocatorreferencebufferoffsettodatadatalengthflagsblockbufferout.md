@@ -30,12 +30,12 @@ Creates a new `CMBlockBuffer` that refers to (a possibly subset portion of) anot
 
 ## Parameters
 
-- `structureAllocator`: Allocator to use for allocating the   object.   will cause the default allocator to be used.
-- `bufferReference`: The target  . This parameter must not be  . Unless the   is passed, it must not be empty and it must have a data length at least large enough to supply the data subset specified (i.e. offsetToData+dataLength bytes).
-- `offsetToData`: Offset within the target   at which the new   should refer to data.
-- `dataLength`: Number of relevant data bytes, starting at  , within the target  .
+- `structureAllocator`: Allocator to use for allocating the `CMBlockBuffer` object. `NULL` will cause the default allocator to be used.
+- `bufferReference`: The target `CMBlockBuffer`. This parameter must not be `NULL`. Unless the `kCMBlockBufferPermitEmptyReferenceFlag` is passed, it must not be empty and it must have a data length at least large enough to supply the data subset specified (i.e. offsetToData+dataLength bytes).
+- `offsetToData`: Offset within the target `CMBlockBuffer` at which the new `CMBlockBuffer` should refer to data.
+- `dataLength`: Number of relevant data bytes, starting at `offsetToData`, within the target `CMBlockBuffer`.
 - `flags`: Feature and control flags.
-- `blockBufferOut`: Receives newly-created   object with a retain count of 1. Must not be   .
+- `blockBufferOut`: Receives newly-created `CMBlockBuffer` object with a retain count of 1. Must not be  `NULL`.
 
 ## See Also
 

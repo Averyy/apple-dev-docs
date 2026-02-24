@@ -21,7 +21,7 @@ When your app is first launched, ClockKit calls this method to retrieve an appro
 ## Parameters
 
 - `complication`: The complication tied to the request. Use the complication family information in this object to determine which set of templates are valid.
-- `handler`: The handler to execute with the template. This block has no return value and takes the following parameter:
+- `handler`: The handler to execute with the template. This block has no return value and takes the following parameter: - **template**: The template object containing your placeholder data. The data in this template is cached and displayed for your complication.
 
 ## See Also
 

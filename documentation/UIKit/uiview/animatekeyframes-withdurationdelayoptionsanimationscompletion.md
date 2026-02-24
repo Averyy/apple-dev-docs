@@ -26,11 +26,11 @@ If you do not add any keyframes in the `animations` block, the animation proceed
 
 ## Parameters
 
-- `duration`: The duration of the overall animation, measured in seconds. If you specify a negative value or  , changes are made immediately and without animations.
+- `duration`: The duration of the overall animation, measured in seconds. If you specify a negative value or `0`, changes are made immediately and without animations.
 - `delay`: Specifies the time (in seconds) to wait before starting the animation.
-- `options`: A mask of options indicating how you want to perform the animations. For a list of valid constants, see  .
-- `animations`: A block object containing the changes to commit to the views. Typically, you call the   method one or more times from inside this block. You may also change view values directly if you want those changes to animate over the full duration. This block takes no parameters and has no return value. Do not use a   value for this parameter.
-- `completion`: A block object to be executed when the animation sequence ends. This block has no return value and takes a single Boolean argument that indicates whether or not the animations finished before the completion handler was called. If the duration of the animation is 0, this block is performed at the beginning of the next run loop cycle. You can use a   value for this parameter.
+- `options`: A mask of options indicating how you want to perform the animations. For a list of valid constants, see [`UIView.KeyframeAnimationOptions`](uiview/keyframeanimationoptions.md).
+- `animations`: A block object containing the changes to commit to the views. Typically, you call the [`addKeyframe(withRelativeStartTime:relativeDuration:animations:)`](uiview/addkeyframe(withrelativestarttime:relativeduration:animations:).md) method one or more times from inside this block. You may also change view values directly if you want those changes to animate over the full duration. This block takes no parameters and has no return value. Do not use a `nil` value for this parameter.
+- `completion`: A block object to be executed when the animation sequence ends. This block has no return value and takes a single Boolean argument that indicates whether or not the animations finished before the completion handler was called. If the duration of the animation is 0, this block is performed at the beginning of the next run loop cycle. You can use a `nil` value for this parameter.
 
 ## See Also
 

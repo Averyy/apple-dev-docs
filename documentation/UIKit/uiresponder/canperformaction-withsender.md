@@ -32,8 +32,8 @@ For information on the editing menu, see the description of the [`UIMenuControll
 
 ## Parameters
 
-- `action`: A selector that identifies a method associated with a command. For the editing menu, this is one of the editing methods declared by the UIResponderStandardEditActions informal protocol (for example,  ).
-- `sender`: The object calling this method. For the editing menu commands, this is the shared   object. Depending on the context, you can query the sender for information to help you determine whether a command should be enabled.
+- `action`: A selector that identifies a method associated with a command. For the editing menu, this is one of the editing methods declared by the UIResponderStandardEditActions informal protocol (for example, `copy:`).
+- `sender`: The object calling this method. For the editing menu commands, this is the shared [`UIApplication`](uiapplication.md) object. Depending on the context, you can query the sender for information to help you determine whether a command should be enabled.
 
 ## See Also
 

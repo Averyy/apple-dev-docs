@@ -21,7 +21,7 @@ func changePassword(_ oldPassword: String!, toPassword newPassword: String!) thr
 
 ## Parameters
 
-- `oldPassword`: The record’s old password. Can be   if the user has the proper permissions.
+- `oldPassword`: The record’s old password. Can be `nil` if the user has the proper permissions.
 - `newPassword`: The new password.
 
 ## See Also

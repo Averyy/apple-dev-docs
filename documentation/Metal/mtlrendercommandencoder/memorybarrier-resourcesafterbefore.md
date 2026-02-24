@@ -27,9 +27,9 @@ To determine whether a GPU supports memory barriers, see the [`Metal feature set
 
 ## Parameters
 
-- `resources`: An array of   instances the barrier applies to.
-- `after`: The render stages of previous draw commands that modify  .
-- `before`: The render stages of subsequent draw commands that read or modify  .
+- `resources`: An array of [`MTLResource`](mtlresource.md) instances the barrier applies to.
+- `after`: The render stages of previous draw commands that modify `resources`.
+- `before`: The render stages of subsequent draw commands that read or modify `resources`.
 
 ## See Also
 

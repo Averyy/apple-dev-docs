@@ -19,6 +19,13 @@ The check out request details.
 object CheckOutRequest
 ```
 
+## Properties
+
+- `EnrollmentID` (string) *(required)*: The per-enrollment identifier for the device. The system requires this value if the enrollment type is a user enrollment. Available in iOS 13 and later, macOS 10.15 and later, and visionOS 2 and later.
+- `MessageType` (string) *(required)*: The message type, which requires a value of `CheckOut`.
+- `Topic` (string) *(required)*: The topic the device subscribes to.
+- `UDID` (string) *(required)*: The device’s UDID (unique device identifier). The system requires this value if the enrollment type is a device enrollment.
+
 
 ---
 

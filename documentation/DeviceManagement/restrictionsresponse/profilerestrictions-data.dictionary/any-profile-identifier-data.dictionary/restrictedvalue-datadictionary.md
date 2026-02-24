@@ -24,6 +24,10 @@ object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Restricte
 - [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.RestrictedValue.ANY restriction name](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary/restrictedvalue-data.dictionary/any-restriction-name-data.dictionary.md)
   A dictionary that contains numeric restriction parameters.
 
+## Properties
+
+- `ANY restriction name` (RestrictionsResponse.ProfileRestrictions.ANY profile identifier.RestrictedValue.ANY restriction name): The numeric restriction parameters.
+
 ## See Also
 
 - [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Intersection](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary/intersection-data.dictionary.md)

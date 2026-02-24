@@ -39,6 +39,41 @@ You can express anchor offset in these ways:
 
 The following code creates a basic badge and attaches it to an item’s top trailing corner.
 
+**Swift**:
+
+```swift
+let itemSize = NSCollectionLayoutSize(widthDimension: .absolute(44),
+                                     heightDimension: .absolute(44))
+    
+let badgeAnchor = NSCollectionLayoutAnchor(edges: [.top, .trailing],
+                                fractionalOffset: CGPoint(x: 0.3, y: -0.3))
+    
+let badgeSize = NSCollectionLayoutSize(widthDimension: .absolute(20),
+                                      heightDimension: .absolute(20))
+    
+let badge = NSCollectionLayoutSupplementaryItem(layoutSize: badgeSize,
+                                               elementKind: "badge",
+                                           containerAnchor: badgeAnchor)
+    
+let item = NSCollectionLayoutItem(layoutSize: itemSize,
+                          supplementaryItems: [badge])
+
+```
+
+**Objective-C**:
+
+```objc
+NSCollectionLayoutSize *itemSize = [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension absoluteDimension:44.0] heightDimension:[NSCollectionLayoutDimension absoluteDimension:44.0]];
+
+NSCollectionLayoutAnchor *badgeAnchor = [NSCollectionLayoutAnchor layoutAnchorWithEdges: NSDirectionalRectEdgeTop|NSDirectionalRectEdgeTrailing fractionalOffset:CGPointMake(0.3, -0.3)];
+
+NSCollectionLayoutSize *badgeSize = [NSCollectionLayoutSize sizeWithWidthDimension:[NSCollectionLayoutDimension absoluteDimension:20.0] heightDimension:[NSCollectionLayoutDimension absoluteDimension:20.0]];
+
+NSCollectionLayoutSupplementaryItem *badge = [NSCollectionLayoutSupplementaryItem supplementaryItemWithLayoutSize:badgeSize elementKind:ELEMENT_KIND_BADGE containerAnchor:badgeAnchor];
+
+NSCollectionLayoutItem *item = [NSCollectionLayoutItem itemWithLayoutSize:itemSize supplementaryItems:@[badge]];
+```
+
 ## Topics
 
 ### Creating an anchor

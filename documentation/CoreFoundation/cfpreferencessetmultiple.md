@@ -28,9 +28,9 @@ Behavior is undefined if a key is in both `keysToSet` and `keysToRemove`
 
 - `keysToSet`: A dictionary containing the key/value pairs for the preferences  to set.
 - `keysToRemove`: An array containing a list of keys to remove.
-- `applicationID`: The ID of the application whose preferences you wish to modify. Takes the form of a Java package name,  .
-- `userName`:   to modify the current user’s preferences, otherwise   to modify the preferences of all users.
-- `hostName`:   to modify the preferences of the current host, otherwise   to modify the preferences of all hosts.
+- `applicationID`: The ID of the application whose preferences you wish to modify. Takes the form of a Java package name, `com.foosoft`.
+- `userName`: [`kCFPreferencesCurrentUser`](kcfpreferencescurrentuser.md) to modify the current user’s preferences, otherwise [`kCFPreferencesAnyUser`](kcfpreferencesanyuser.md) to modify the preferences of all users.
+- `hostName`: [`kCFPreferencesCurrentHost`](kcfpreferencescurrenthost.md) to modify the preferences of the current host, otherwise [`kCFPreferencesAnyHost`](kcfpreferencesanyhost.md) to modify the preferences of all hosts.
 
 ## See Also
 

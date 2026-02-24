@@ -28,8 +28,8 @@ A `Sequence` of `Date` values, or an empty sequence if no addition could be perf
 
 - `components`: The components to add or subtract.
 - `start`: The starting point of the search.
-- `range`: The range of dates to allow in the result. The sequence terminates if the next result is not contained in this range. If  , all results are allowed.
-- `wrappingComponents`: If  , the component should be incremented and wrap around to zero/one on overflow, and should not cause higher components to be incremented. The default value is  .
+- `range`: The range of dates to allow in the result. The sequence terminates if the next result is not contained in this range. If `nil`, all results are allowed.
+- `wrappingComponents`: If `true`, the component should be incremented and wrap around to zero/one on overflow, and should not cause higher components to be incremented. The default value is `false`.
 
 
 ---

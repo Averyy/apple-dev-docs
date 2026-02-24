@@ -29,6 +29,9 @@ This method applies the straighten filter to an image. The effect rotates the im
 
 The straighten filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`angle`**: A `float` representing the angle to rotate the image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that rotates the image 135 degrees:
 
 ```swift

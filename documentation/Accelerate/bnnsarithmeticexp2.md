@@ -23,7 +23,7 @@ var BNNSArithmeticExp2: BNNSArithmeticFunction { get }
 ## See Also
 
 - [var BNNSArithmeticExp: BNNSArithmeticFunction](bnnsarithmeticexp.md)
-  An operation that calculates the element-wise result of  raised to the power of its input.
+  An operation that calculates the element-wise result of *e* raised to the power of its input.
 - [var BNNSArithmeticLog: BNNSArithmeticFunction](bnnsarithmeticlog.md)
   An operation that calculates the element-wise natural logarithm of its input.
 - [var BNNSArithmeticLog2: BNNSArithmeticFunction](bnnsarithmeticlog2.md)

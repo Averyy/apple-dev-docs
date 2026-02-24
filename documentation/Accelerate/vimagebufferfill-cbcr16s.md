@@ -30,7 +30,7 @@ Fill the dest buffer with the pixel value.
 
 - `dest`: A pointer to a valid and initialized vImage_Buffer struct, that points to a buffer containing destination pixels.
 - `color`: A pixel value to fill the destination buffer.
-- `flags`: \P kvImageNoFlags          Default operation   \p kvImageDoNotTile        Disable internal multithreading.
+- `flags`: \P kvImageNoFlags          Default operation \p kvImageDoNotTile        Disable internal multithreading.
 
 ## See Also
 

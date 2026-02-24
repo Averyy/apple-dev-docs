@@ -20,7 +20,7 @@ static func highlight(_ style: HoverEffectComponent.HighlightHoverEffectStyle) -
 
 ## Parameters
 
-- `style`: A   instance that allows you to customize various aspects of this hover effect.
+- `style`: A [`HoverEffectComponent.HighlightHoverEffectStyle`](hovereffectcomponent/highlighthovereffectstyle.md) instance that allows you to customize various aspects of this hover effect.
 
 
 ---

@@ -24,7 +24,7 @@ An [`MLJob`](mljob.md) that represents the hand action training session.
 
 ## Parameters
 
-- `session`: An   instance that represents the   training session.
+- `session`: An [`MLTrainingSession`](mltrainingsession.md) instance that represents the training session.
 
 ## See Also
 

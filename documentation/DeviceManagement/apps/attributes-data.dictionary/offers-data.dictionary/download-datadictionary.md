@@ -13,6 +13,11 @@
 object Apps.Attributes.Offers.Download
 ```
 
+## Properties
+
+- `type` (string) *(required)*
+- `url` (string) *(required)*
+
 ## See Also
 
 - [object Apps.Attributes.Offers.Assets](apps/attributes-data.dictionary/offers-data.dictionary/assets-data.dictionary.md)

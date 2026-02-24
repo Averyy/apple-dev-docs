@@ -28,11 +28,27 @@ The `suiteName` parameter matches the domain parameter of the corresponding CFPr
 
 Equivalent statements using NSUserDefaults and CFPreferences APIs
 
+**Swift**:
+
+```swift
+let userDefaultsValue = UserDefaults(suiteName: "someDomain")?.object(forKey: "someKey")
+let preferencesValue = CFPreferencesCopyAppValue("someKey" as CFString, "someDomain" as CFString)
+// userDefaultsValue and preferencesValue are equal
+```
+
+**Objective-C**:
+
+```objc
+id userDefaultsValue = [[[NSUserDefaults alloc] initWithSuiteName:@"someDomain"] objectForKey:@"someKey"];
+id preferencesValue = CFPreferencesCopyAppValue(@"someKey", @"someDomain");
+// userDefaultsValue and preferencesValue are equal
+```
+
 In macOS, specify another app’s bundle identifier to search that app’s settings. You can’t search another app’s settings if either app runs in an [`App Sandbox`](https://developer.apple.com/documentation/Security/app-sandbox) and you don’t have the proper entitlements.
 
 ## Parameters
 
-- `suitename`: The name of the app group or suite to add to the search list. To read   and write settings for a shared app group, specify the app group identifier. Don’t   specify the   or your app’s bundle identifier. If you specify  ,   this method returns a defaults object that reads and writes from the current app’s settings.
+- `suitename`: The name of the app group or suite to add to the search list. To read and write settings for a shared app group, specify the app group identifier. Don’t specify the [`globalDomain`](userdefaults/globaldomain.md) or your app’s bundle identifier. If you specify `nil`, this method returns a defaults object that reads and writes from the current app’s settings.
 
 ## See Also
 

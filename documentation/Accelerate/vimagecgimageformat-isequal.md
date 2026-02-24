@@ -26,8 +26,8 @@ A Boolean value that indicates whether two vImage Core Graphics image formats ar
 
 ## Parameters
 
-- `f1`: The first   structure. If   is  , the function uses sRGB.
-- `f2`: The second   structure. If   is  , the function uses sRGB.
+- `f1`: The first [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure. If [`colorSpace`](vimage_cgimageformat/colorspace.md) is `nil`, the function uses sRGB.
+- `f2`: The second [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure. If [`colorSpace`](vimage_cgimageformat/colorspace.md) is `nil`, the function uses sRGB.
 
 ## See Also
 

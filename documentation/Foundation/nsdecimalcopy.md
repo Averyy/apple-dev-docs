@@ -28,8 +28,8 @@ For more information, see [`Number and Value Programming Topics`](https://develo
 
 ## Parameters
 
-- `destination`: A   reference that receives the copied value.
-- `source`: A source   to copy.
+- `destination`: A [`Decimal`](decimal.md) reference that receives the copied value.
+- `source`: A source [`Decimal`](decimal.md) to copy.
 
 ## See Also
 

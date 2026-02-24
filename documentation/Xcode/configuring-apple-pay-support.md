@@ -20,7 +20,7 @@ After you add the Apple Pay capability, Xcode updates your target’s entitlemen
 
 ##### Select or Create a Merchant Identifier
 
-A  uniquely identifies you to Apple Pay as a merchant that’s able to accept payments. To allow your app to submit payment requests, specify at least one merchant identifier in your project’s configuration. After you add the Apple Pay capability, Xcode retrieves any existing merchant identifiers from your developer account and displays them in the capability’s Merchant IDs list. To fetch an updated list of your account’s merchant identifiers, click the refresh button below the list.
+A *merchant identifier* uniquely identifies you to Apple Pay as a merchant that’s able to accept payments. To allow your app to submit payment requests, specify at least one merchant identifier in your project’s configuration. After you add the Apple Pay capability, Xcode retrieves any existing merchant identifiers from your developer account and displays them in the capability’s Merchant IDs list. To fetch an updated list of your account’s merchant identifiers, click the refresh button below the list.
 
 ![A screenshot of the Apple Pay capability after you add it to your target. The Merchant IDs list contains two existing merchant IDs, neither of which are in an enabled state.](https://docs-assets.developer.apple.com/published/87dea7fefaead07d2ee0a2ff1e374a7b/fetched-merchant-ids%402x.png)
 
@@ -46,7 +46,7 @@ Xcode automatically registers the merchant identifier in your developer account,
 
 ##### Create a Payment Processing Certificate
 
-Before you can use your merchant identifier, you must generate a  — a digital certificate that secures transaction data and proves its origin. The Apple Pay servers use the certificate’s public key to encrypt payment data, and you or your payment service provider use the certificate’s private key to decrypt the data and process the payment. For more information on creating the certificate, see [`Create a payment processing certificate`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/configure-apple-pay#create-a-payment-processing-certificate).
+Before you can use your merchant identifier, you must generate a *payment processing certificate* — a digital certificate that secures transaction data and proves its origin. The Apple Pay servers use the certificate’s public key to encrypt payment data, and you or your payment service provider use the certificate’s private key to decrypt the data and process the payment. For more information on creating the certificate, see [`Create a payment processing certificate`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/configure-apple-pay#create-a-payment-processing-certificate).
 
 > **Note**: If you use an e-commerce platform or payment service provider, please contact them for information about using their service with Apple Pay. For a list of supported platforms and providers, see [`Payment Platforms`](https://developer.apple.comhttps://developer.apple.com/apple-pay/payment-platforms/).
 

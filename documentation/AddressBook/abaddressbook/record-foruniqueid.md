@@ -24,7 +24,7 @@ If no record has the given ID, this method returns `nil`.
 
 ## Parameters
 
-- `uniqueId`: The unique ID of the record. This value must not be  ; otherwise, an exception is raised.
+- `uniqueId`: The unique ID of the record. This value must not be `nil`; otherwise, an exception is raised.
 
 
 ---

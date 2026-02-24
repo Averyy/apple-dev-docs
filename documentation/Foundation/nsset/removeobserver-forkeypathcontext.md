@@ -27,8 +27,8 @@ func removeObserver(_ observer: NSObject, forKeyPath keyPath: String, context: U
 ## Parameters
 
 - `observer`: The object to remove as an observer.
-- `keyPath`: A key-path, relative to the set, for which   is registered to receive KVO change notifications. This value must not be  .
-- `context`: Arbitrary data that is passed to   in  .
+- `keyPath`: A key-path, relative to the set, for which `observer` is registered to receive KVO change notifications. This value must not be `nil`.
+- `context`: Arbitrary data that is passed to `observer` in [`observeValue(forKeyPath:of:change:context:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/observeValue(forKeyPath:of:change:context:)).
 
 ## See Also
 

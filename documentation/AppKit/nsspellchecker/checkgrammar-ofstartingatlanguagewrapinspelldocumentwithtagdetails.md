@@ -21,11 +21,11 @@ Location of the first flagged grammatical unit.
 ## Parameters
 
 - `stringToCheck`: String to analyze.
-- `startingOffset`: Location within   at which to start the analysis.
-- `language`: Language use in  . When  , the language selected in the Spelling panel is used.
-- `wrapFlag`:  to have the analysis stop at the end of string.
+- `startingOffset`: Location within `string` at which to start the analysis.
+- `language`: Language use in `string`. When `nil`, the language selected in the Spelling panel is used.
+- `wrapFlag`: [`true`](https://developer.apple.com/documentation/Swift/true) to specify that the analysis continue to the beginning of string when the end is reached. [`false`](https://developer.apple.com/documentation/Swift/false) to have the analysis stop at the end of string.
 - `tag`: An identifier unique within the application used to inform the spell checker which document that text is associated, potentially for many purposes, not necessarily just for ignored words. A value of 0 can be passed in for text not associated with a particular document.
-- `details`: On output, dictionaries describing grammar-analysis details within the flagged grammatical unit. See the   class for information about these dictionaries.
+- `details`: On output, dictionaries describing grammar-analysis details within the flagged grammatical unit. See the [`NSSpellServer`](https://developer.apple.com/documentation/Foundation/NSSpellServer) class for information about these dictionaries.
 
 ## See Also
 

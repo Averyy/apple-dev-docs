@@ -115,7 +115,7 @@ You can fetch contacts using the contact store ([`CNContactStore`](cncontactstor
 
 The Contacts framework provides several ways to constrain contacts that return from a fetch, including predefined predicates and the [`keysToFetch`](cncontactfetchrequest/keystofetch.md) property.
 
-[`CNContact`](cncontact.md) provides predicates for filtering the contacts you want to fetch. For example, to fetch contacts that have the name , use [`predicateForContacts(matchingName:)`](cncontact/predicateforcontacts(matchingname:).md) and pass in `Appleseed`.
+[`CNContact`](cncontact.md) provides predicates for filtering the contacts you want to fetch. For example, to fetch contacts that have the name *Appleseed*, use [`predicateForContacts(matchingName:)`](cncontact/predicateforcontacts(matchingname:).md) and pass in `Appleseed`.
 
 ```swift
 let predicate = CNContact.predicateForContacts(matchingName: "Appleseed")

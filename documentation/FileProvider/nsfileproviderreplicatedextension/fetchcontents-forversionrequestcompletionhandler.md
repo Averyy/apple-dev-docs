@@ -45,9 +45,11 @@ The system considers any other errors to be transient, and automatically retries
 ## Parameters
 
 - `itemIdentifier`: The item to fetch.
-- `requestedVersion`: The version of the item. If this is  , download the latest version.
+- `requestedVersion`: The version of the item. If this is `nil`, download the latest version.
 - `request`: An object that identifies the context of that request, such as the requesting app.
-- `completionHandler`: A block that you call after downloading the item from your remote storage. You pass the following parameters:
+- `completionHandler`: A block that you call after downloading the item from your remote storage. You pass the following parameters: - **`fileContents`**: A URL to the item’s contents.
+- **`item`**: The downloaded item.
+- **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

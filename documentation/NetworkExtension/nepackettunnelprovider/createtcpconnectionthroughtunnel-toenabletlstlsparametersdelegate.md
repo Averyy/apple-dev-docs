@@ -27,8 +27,8 @@ Use this method to create a TCP connection to an endpoint inside the private net
 
 - `remoteEndpoint`: The remote endpoint to connect to.
 - `enableTLS`: A flag indicating if the TLS protocol should be used to secure the communication over the connection.
-- `TLSParameters`: The TLS protocol parameters to use. If   is   and this parameter is nil then the default TLS parameters will be used.
-- `delegate`: An optional delegate object that conforms to the   protocol.
+- `TLSParameters`: The TLS protocol parameters to use. If `enableTLS` is [`true`](https://developer.apple.com/documentation/Swift/true) and this parameter is nil then the default TLS parameters will be used.
+- `delegate`: An optional delegate object that conforms to the [`NWTCPConnectionAuthenticationDelegate`](nwtcpconnectionauthenticationdelegate.md) protocol.
 
 ## See Also
 

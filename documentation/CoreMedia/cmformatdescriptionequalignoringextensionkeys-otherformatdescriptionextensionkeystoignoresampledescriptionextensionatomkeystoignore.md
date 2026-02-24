@@ -36,8 +36,8 @@ For extension atom keys, see [`kCMFormatDescriptionExtension_SampleDescriptionEx
 
 - `formatDescription`: The first description to compare.
 - `otherFormatDescription`: The second description to compare.
-- `formatDescriptionExtensionKeysToIgnore`: A single format description extension key ( ) or an array ( ) of keys.
-- `sampleDescriptionExtensionAtomKeysToIgnore`: A single sample description extension atom key (four-character  ) or an array ( ) of such keys.
+- `formatDescriptionExtensionKeysToIgnore`: A single format description extension key (`CFString`) or an array (`CFArray`) of keys.
+- `sampleDescriptionExtensionAtomKeysToIgnore`: A single sample description extension atom key (four-character `CFString`) or an array (`CFArray`) of such keys.
 
 ## See Also
 

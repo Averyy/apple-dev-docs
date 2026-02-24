@@ -26,7 +26,7 @@ The bundle for `plugIn`. Ownership follows the [`The Get Rule`](https://develope
 
 #### Discussion
 
-You should  use this function to get a plug-in’s bundle. Never attempt to access the plug-in directly as a bundle.
+You should *always* use this function to get a plug-in’s bundle. Never attempt to access the plug-in directly as a bundle.
 
 ## Parameters
 

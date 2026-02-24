@@ -28,7 +28,7 @@ This is a convenience function that calls [`CVBufferSetAttachment(_:_:_:_:)`](cv
 
 - `buffer`: The buffer on which to set the attachments.
 - `theAttachments`: The dictionary of the attachments to set.
-- `attachmentMode`: The attachment mode for this attachment. See   for possible values. Any given attachment key may exist in only one mode at a time.
+- `attachmentMode`: The attachment mode for this attachment. See [`CVAttachmentMode`](cvattachmentmode.md) for possible values. Any given attachment key may exist in only one mode at a time.
 
 ## See Also
 

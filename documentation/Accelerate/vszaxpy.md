@@ -20,11 +20,11 @@ Each element of vector `x` is multiplied by `alpha`, then the corresponding elem
 
 ## Parameters
 
-- `n`: Number of elements in vectors  ,  , and  ; must be a multiple of 4.
+- `n`: Number of elements in vectors `x`, `y`, and `z`; must be a multiple of 4.
 - `alpha`: Multiplier.
-- `x`: Source vector with   elements of type  .
-- `y`: Source vector with   elements of type  .
-- `z`: Source vector with   elements of type  .
+- `x`: Source vector with `n` elements of type `float`.
+- `y`: Source vector with `n` elements of type `float`.
+- `z`: Source vector with `n` elements of type `float`.
 
 ## See Also
 

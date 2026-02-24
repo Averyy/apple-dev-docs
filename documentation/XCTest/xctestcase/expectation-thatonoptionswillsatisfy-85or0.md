@@ -26,7 +26,7 @@ Creates and returns an expectation associated with the test case that a specific
 - `keyPath`: The key path to observe.
 - `observedObject`: The object to observe the key path on.
 - `options`: Options to pass to Foundation when observing changes.
-- `filter`: A syncronous predicate function you use to test observed changes to a key path. If  , the first observed change fulfills the expectation.
+- `filter`: A syncronous predicate function you use to test observed changes to a key path. If `nil`, the first observed change fulfills the expectation.
 
 ## See Also
 

@@ -26,8 +26,8 @@ By default, the texture at each index is `nil`.
 
 ## Parameters
 
-- `texture`: An   instance the command assigns to an entry in the fragment shader argument table for textures.
-- `index`: An integer that represents the entry in the fragment shader argument table for textures that stores a record of  .
+- `texture`: An [`MTLTexture`](mtltexture.md) instance the command assigns to an entry in the fragment shader argument table for textures.
+- `index`: An integer that represents the entry in the fragment shader argument table for textures that stores a record of `texture`.
 
 ## See Also
 

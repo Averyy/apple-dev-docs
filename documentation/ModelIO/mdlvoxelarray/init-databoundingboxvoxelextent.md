@@ -29,7 +29,7 @@ The `boundingBox` parameter relates the integer grid of the newly created voxel 
 
 ## Parameters
 
-- `voxelData`: A data object containing an array of   values, each of which describes the locations of voxels within the specified volume as well as their volumetric relationship to the object modeled by the voxel array.
+- `voxelData`: A data object containing an array of [`MDLVoxelIndex`](mdlvoxelindex.md) values, each of which describes the locations of voxels within the specified volume as well as their volumetric relationship to the object modeled by the voxel array.
 - `boundingBox`: The extent of the voxel array’s volume in world coordinate space.
 - `voxelExtent`: The size of a single voxel in world coordinate space.
 

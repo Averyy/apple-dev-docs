@@ -55,8 +55,8 @@ print(yellowLayer.convert(position, from: redLayer)) // prints (-220.0, -140.0)
 
 ## Parameters
 
-- `p`: A point specifying a location in the coordinate system of  .
-- `l`: The layer with   in its coordinate system. The receiver and   and must share a common parent layer. This parameter may be  .
+- `p`: A point specifying a location in the coordinate system of `l`.
+- `l`: The layer with `p` in its coordinate system. The receiver and `l` and must share a common parent layer. This parameter may be `nil`.
 
 ## See Also
 

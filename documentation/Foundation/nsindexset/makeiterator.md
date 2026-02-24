@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: method
 
-Returns an  over the elements of this .
+Returns an *iterator* over the elements of this *sequence*.
 
 **Availability**:
 - iOS 8.0+

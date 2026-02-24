@@ -18,7 +18,7 @@ Creates a hosting view object from an archive and the specified SwiftUI view.
 ## Parameters
 
 - `coder`: The decoder to use during initialization.
-- `rootView`: The root view of the SwiftUI view hierarchy that   you want to manage using this hosting view.
+- `rootView`: The root view of the SwiftUI view hierarchy that you want to manage using this hosting view.
 
 
 ---

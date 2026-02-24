@@ -25,7 +25,7 @@ Use this function to retrieve a pointer to a keychain object given the path of t
 ## Parameters
 
 - `pathName`: A constant character string representing the POSIX path to the keychain to open.
-- `keychain`: On return, a pointer to the keychain object. You must call the   function to release this object when you are finished using it.
+- `keychain`: On return, a pointer to the keychain object. You must call the `CFRelease` function to release this object when you are finished using it.
 
 
 ---

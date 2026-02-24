@@ -29,7 +29,7 @@ Material property names are not related to their use in rendering. Instead, you 
 
 ## Parameters
 
-- `name`: The   value of a material property in the material.
+- `name`: The [`name`](mdlmaterialproperty/name.md) value of a material property in the material.
 
 ## See Also
 

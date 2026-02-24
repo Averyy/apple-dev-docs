@@ -27,7 +27,7 @@ Monospaced text.
 
 ## Parameters
 
-- `isActive`: A Boolean value that indicates   whether monospaced styling is added. Default value is  .
+- `isActive`: A Boolean value that indicates whether monospaced styling is added. Default value is `true`.
 
 ## See Also
 

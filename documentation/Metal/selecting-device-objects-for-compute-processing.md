@@ -24,11 +24,11 @@ This sample executes an N-body simulation and continuously renders a subset of t
 
 The sample runs in one of two modes, depending on how many GPUs are available to the system.
 
- When only one Metal device is available, the sample executes the simulation and renders the intermediate results serially. The compute simulation and the graphics rendering are performed on the same thread by the same device.
+**Simulation with a single Metal device.** When only one Metal device is available, the sample executes the simulation and renders the intermediate results serially. The compute simulation and the graphics rendering are performed on the same thread by the same device.
 
 ![A flowchart that shows the simulation with a single device on the main thread. The sample simulates a new frame, and if the simulation is complete, the sample renders all simulation data. Otherwise, if the simulation isn’t complete, the sample renders a subset of the simulation data and repeats the process.](https://docs-assets.developer.apple.com/published/61492c1c60f708912c1f36cb388a1796/1-single-device-executation.png)
 
- When multiple Metal devices are available, the sample spawns a second thread to separate the compute processing and graphics rendering work between two GPUs. The threads run concurrently and repeatedly, sharing data as follows:
+**Simulation with multiple Metal devices.** When multiple Metal devices are available, the sample spawns a second thread to separate the compute processing and graphics rendering work between two GPUs. The threads run concurrently and repeatedly, sharing data as follows:
 
 - The simulation thread produces and transfers intermediate results to system memory.
 - The render thread—the main thread—consumes and renders intermediate results from system memory. (All graphics rendering occurs on the main thread.)
@@ -70,7 +70,40 @@ When the sample runs on multiple devices, the view controller assigns the simula
 
 The sample calls the `vm_allocate` function to allocate a page-aligned buffer, `updateAddress`, backed by system memory. The sample then calls the [`makeBuffer(bytesNoCopy:length:options:deallocator:)`](mtldevice/makebuffer(bytesnocopy:length:options:deallocator:).md) method to create a new [`MTLBuffer`](mtlbuffer.md), `_updateBuffer`, backed by the same system memory used for the previous buffer.
 
+```objective-c
+void *updateAddress;
+kern_return_t err = vm_allocate((vm_map_t)mach_task_self(),
+                                (vm_address_t*)&updateAddress,
+                                updateDataSize,
+                                VM_FLAGS_ANYWHERE);
+
+assert(err == KERN_SUCCESS);
+
+_updateBuffer[i] = [_device newBufferWithBytesNoCopy:updateAddress
+                                              length:updateDataSize
+                                             options:MTLResourceStorageModeShared
+                                         deallocator:nil];
+```
+
 Because the app is directly responsible for managing this system memory, the sample calls the `initWithBytesNoCopy:length:deallocator` method to wrap the `updateAddress` buffer in an `NSData` object. This method allows the sample to register a deallocator, `deallocProvidedAddress`, to free the system memory when the app has no more references to the buffer.
+
+```objective-c
+// Block to deallocate memory created with vm_allocate when the NSData object is no
+// longer referenced
+void (^deallocProvidedAddress)(void *bytes, NSUInteger length) =
+    ^(void *bytes, NSUInteger length)
+    {
+        vm_deallocate((vm_map_t)mach_task_self(),
+                      (vm_address_t)bytes,
+                      length);
+    };
+
+// Create a data object to wrap system memory and pass a deallocator to free the
+// memory allocated with vm_allocate when the data object has been released
+_updateData[i] = [[NSData alloc] initWithBytesNoCopy:updateAddress
+                                              length:updateDataSize
+                                         deallocator:deallocProvidedAddress];
+```
 
 ## See Also
 

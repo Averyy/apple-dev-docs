@@ -25,6 +25,10 @@ Use this object to define the universal links you want to associate with your do
 
 The object contains these keys:
 
+- **`defaults`**: The global pattern-matching settings to use as defaults for all universal links in the domain.
+- **`details`**: An array of `Details` objects that define the apps and the universal links they handle for the domain.
+- **`substitutionVariables`**: Custom variables to use for simplifying complex pattern matches. Each name acts as a variable that the system replaces with each string in the associated string array.
+
 Add the JSON code to your `apple-app-site-association` file along with the app identifiers for the apps that you designate to handle universal links for your domain. This example code shows a universal links section in an association file:
 
 ```javascript
@@ -69,6 +73,12 @@ Add the JSON code to your `apple-app-site-association` file along with the app i
 ### Substitution variables
 - [object applinks.SubstitutionVariables](applinks/substitutionvariables-swift.dictionary.md)
   A list of named strings and an associated array of string values that define custom substitution variables to use for URL pattern matching.
+
+## Properties
+
+- `defaults` (applinks.Defaults)
+- `details` ([applinks.Details])
+- `substitutionVariables` (applinks.SubstitutionVariables)
 
 
 ---

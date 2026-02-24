@@ -26,7 +26,7 @@ The default implementation of this method forwards the message up the responder 
 
 ## Parameters
 
-- `presses`: A set of   instances containing changed values.
+- `presses`: A set of [`UIPress`](uipress.md) instances containing changed values.
 - `event`: The event to which the presses belong.
 
 ## See Also

@@ -19,6 +19,14 @@ The dictionary that contains security association parameters.
 object VPN.IKEv2.IKESecurityAssociationParameters
 ```
 
+## Properties
+
+- `DiffieHellmanGroup` (integer): The Diffie-Hellman group. For `AlwaysOn` VPN in iOS 14.2 and later, the minimum allowed value is `14`. `1`, `2`, and `5` are available only in iOS, macOS, and visionOS prior to iOS 26, macOS 26, and visionOS 26.
+- `EncryptionAlgorithm` (string): The encryption algorithm. In watchOS and tvOS, the default value is `AES-256-GCM`. `DES` and `3DES` are available only in iOS, macOS, and visionOS prior to iOS 26, macOS 26, and visionOS 26.
+- `IntegrityAlgorithm` (string): The integrity algorithm. `SHA1-96` and `SHA1-160` are available only in iOS, macOS, and visionOS prior to iOS 26, macOS 26, and visionOS 26.
+- `LifeTimeInMinutes` (integer): The SA lifetime (rekey interval) in minutes.
+- `PostQuantumKeyExchangeMethods` ([integer]): An array of strings representing postquantum key exchange methods the device uses during SA establishment and rekey. You can specify up to seven items, which correspond to ADDKE1 - ADDKE7 from RFC 9370.
+
 ## See Also
 
 - [object VPN.IKEv2.ChildSecurityAssociationParameters](vpn/ikev2-data.dictionary/childsecurityassociationparameters-data.dictionary.md)

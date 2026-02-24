@@ -27,8 +27,8 @@ The record zones you intend to save or delete must all reside in the same databa
 
 ## Parameters
 
-- `recordZonesToSave`: The record zones to save. You can specify   for this parameter.
-- `recordZoneIDsToDelete`: The IDs of the record zones to delete. You can specify   for this parameter.
+- `recordZonesToSave`: The record zones to save. You can specify `nil` for this parameter.
+- `recordZoneIDsToDelete`: The IDs of the record zones to delete. You can specify `nil` for this parameter.
 
 ## See Also
 

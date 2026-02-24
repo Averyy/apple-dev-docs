@@ -32,10 +32,10 @@ To receive turn-based events that this method generates, register a listener tha
 
 ## Parameters
 
-- `matchData`: Your game-specific data representing the match state. For example, include information needed for the next participant to take their turn in this object. Don’t pass   as this parameter.
+- `matchData`: Your game-specific data representing the match state. For example, include information needed for the next participant to take their turn in this object. Don’t pass `nil` as this parameter.
 - `scores`: The final scores that each participant earns in the match. The scores can be for different leaderboards.
 - `achievements`: The achievements that each participant acquires in the match.
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameter: - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

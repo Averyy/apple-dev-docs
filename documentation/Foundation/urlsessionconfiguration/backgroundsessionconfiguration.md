@@ -26,7 +26,7 @@ A URL session configuration object that causes upload and download tasks to be p
 
 ## Parameters
 
-- `identifier`: The unique identifier for the configuration object. This parameter must not be   or an empty string.
+- `identifier`: The unique identifier for the configuration object. This parameter must not be `nil` or an empty string.
 
 
 ---

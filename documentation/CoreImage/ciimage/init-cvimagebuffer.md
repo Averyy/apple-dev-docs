@@ -33,7 +33,7 @@ The `imageBuffer` parameter must be in one of the following formats:
 
 ## Parameters
 
-- `imageBuffer`: A    object in a supported pixel format constant. For more information, see  .
+- `imageBuffer`: A  `CVImageBuffer` object in a supported pixel format constant. For more information, see [`Core Video`](https://developer.apple.com/documentation/CoreVideo).
 
 ## See Also
 

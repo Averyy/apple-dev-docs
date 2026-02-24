@@ -20,7 +20,7 @@ Any subrows of the deleted row are adopted by the parent of the deleted row, or 
 
 ## Parameters
 
-- `rowIndex`: The index of a row in the receiver.
+- `rowIndex`: The index of a row in the receiver. > ❗ **Important**:  Raises an `NSRangeException` if `rowIndex` is less than `0` or greater than or equal to the number of rows.
 
 ## See Also
 

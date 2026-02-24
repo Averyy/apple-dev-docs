@@ -25,7 +25,7 @@ Returns the depth of the specified row to show its hierarchical position in the 
 ## Parameters
 
 - `tableView`: The table view requesting this information.
-- `indexPath`: An index path locating the row in  .
+- `indexPath`: An index path locating the row in `tableView`.
 
 ## See Also
 

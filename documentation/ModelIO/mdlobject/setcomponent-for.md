@@ -25,7 +25,7 @@ Components are the basis for customizable file format and object graph support i
 
 ## Parameters
 
-- `component`: The component to associate with the object. The component class must adopt the protocol specified in the   parameter.
+- `component`: The component to associate with the object. The component class must adopt the protocol specified in the `protocol` parameter.
 - `protocol`: The protocol whose functionality the component provides.
 
 ## See Also

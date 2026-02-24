@@ -30,7 +30,7 @@ The render pipeline you pass to this method needs to be compatible with the rend
 
 ## Parameters
 
-- `pipelineState`: A render pipeline state that you create by calling an   methods (see  ).
+- `pipelineState`: A render pipeline state that you create by calling an [`MTLDevice`](mtldevice.md) methods (see [`Pipeline state creation`](pipeline-state-creation.md)).
 
 
 ---

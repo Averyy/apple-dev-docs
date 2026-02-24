@@ -35,7 +35,7 @@ The [`TextInputAutocapitalization`](textinputautocapitalization.md) struct defin
 
 ## Parameters
 
-- `autocapitalization`: One of the capitalizing behaviors   defined in the   struct or nil.
+- `autocapitalization`: One of the capitalizing behaviors defined in the [`TextInputAutocapitalization`](textinputautocapitalization.md) struct or nil.
 
 ## See Also
 

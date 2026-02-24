@@ -21,7 +21,7 @@ func stopCapture(handler: (((any Error)?) -> Void)? = nil)
 
 ## Parameters
 
-- `handler`: A block that is called when screen capture has stopped.
+- `handler`: A block that is called when screen capture has stopped. - **error**: If an error occurred, this parameter holds an object that explains the error. Otherwise, the value of this parameter is `nil`. See [`RPRecordingErrorCode`](rprecordingerrorcode.md) for a list of error codes to ReplayKit.
 
 ## See Also
 

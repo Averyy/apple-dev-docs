@@ -6,7 +6,7 @@ An efficient and scalable way to represent 3D scenes.
 
 #### Overview
 
-[`Universal Scene Description`](https://developer.apple.comhttps://openusd.org/release/index.html) (, though commonly referred to as ) is an efficient, scalable system for authoring, reading, and streaming graphics data. Originally developed by Pixar for their feature films, it is now a proposed open standard being promoted by the [`Alliance for OpenUSD (AOUSD)`](https://developer.apple.comhttps://aousd.org). Apple and Pixar are both founding members of the AOUSD.
+[`Universal Scene Description`](https://developer.apple.comhttps://openusd.org/release/index.html) (*OpenUSD*, though commonly referred to as *USD*) is an efficient, scalable system for authoring, reading, and streaming graphics data. Originally developed by Pixar for their feature films, it is now a proposed open standard being promoted by the [`Alliance for OpenUSD (AOUSD)`](https://developer.apple.comhttps://aousd.org). Apple and Pixar are both founding members of the AOUSD.
 
 USD is also Apple’s format of choice for 3D Content, including 3D content used for Augmented Reality. You can load USD files in your RealityKit and ARKit apps or import them into your Reality Composer Pro projects. You can even embed USD content in your apps or on web sites using AR Quick Look. USD is also an extensible format, allowing apps that use it to create custom schemas to store and load data needed to support custom features. For an example, see the proposed [`OpenUSD schemas for AR`](usd-schemas-for-ar.md) that Apple created, in conjunction with Pixar, to extend USD to support AR functionality like anchoring.
 

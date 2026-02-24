@@ -26,8 +26,8 @@ A result code if there’s an error (see Result Codes) or `noErr` if the operati
 ## Parameters
 
 - `inAudioFile`: The audio file that contains the user data item you want to remove.
-- `inUserDataID`: The four-character code such as   of the user data item.
-- `inIndex`: An index specifying the chunk to remove. Use this parameter if the file contains more than one user data item with the four-character code that you specified in the   parameter.
+- `inUserDataID`: The four-character code such as `COMM` of the user data item.
+- `inIndex`: An index specifying the chunk to remove. Use this parameter if the file contains more than one user data item with the four-character code that you specified in the `inUserDataID` parameter.
 
 ## See Also
 

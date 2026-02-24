@@ -22,8 +22,8 @@ The Compression framework enables your app to provide lossless compression when 
 
 The framework offers two methods of compression:
 
--  uses a single-step method for compressing files, making it perfect for use with uncompressed files under 8 MB, or compressed files under 1 MB.
--  uses multiple steps for compressing files, making it ideal for compressing larger files or streamed data, such as an incoming audio signal or downloading files.
+- *Buffer compression* uses a single-step method for compressing files, making it perfect for use with uncompressed files under 8 MB, or compressed files under 1 MB.
+- *Stream compression* uses multiple steps for compressing files, making it ideal for compressing larger files or streamed data, such as an incoming audio signal or downloading files.
 
 To use buffer compression, you compress or decompress the input data with one call to the corresponding function. To learn more about buffer compression, including a walk-through of the code used to encode and decode a string, see [`Compressing and decompressing data with buffer compression`](https://developer.apple.com/documentation/Accelerate/compressing-and-decompressing-data-with-buffer-compression).
 
@@ -76,8 +76,6 @@ To use stream compression, you call the compression or decompression function re
   Decompresses the contents of a source buffer into a destination buffer.
 - [struct compression_algorithm](compression_algorithm.md)
   A structure for values that represent compression algorithms.
-### Variables
-- [var COMPRESSION_MAMMOTH: compression_algorithm](compression_mammoth.md)
 
 
 ---

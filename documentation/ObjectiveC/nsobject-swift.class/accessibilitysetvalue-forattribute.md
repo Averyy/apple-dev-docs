@@ -21,7 +21,7 @@ User interface classes must implement this method if any of its attributes are s
 ## Parameters
 
 - `value`: The attribute value to be set.
-- `attribute`: The name of the attribute. See   constants for lists of attribute names.
+- `attribute`: The name of the attribute. See [`NSAccessibility`](https://developer.apple.com/documentation/AppKit/nsaccessibility) constants for lists of attribute names.
 
 ## See Also
 

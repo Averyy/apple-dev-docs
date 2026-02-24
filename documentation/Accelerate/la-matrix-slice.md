@@ -28,7 +28,7 @@ Create a slice of a matrix.
 
 The result object is the slice_rows x slice_cols matrix whose i,jth entry is:
 
-matrix[matrix_first_row + imatrix_col_stride]
+matrix[matrix_first_row + i*matrix_row_stride, matrix_first_col + j*matrix_col_stride]
 
 Slices provide an efficient means to operate on tiles and strides.  These are lightweight objects that reference the storage of the matrix from which they originate.  In most cases, creating a slice does not require any allocation beyond the object representing the slice, nor require copying.  In some less common cases, a copy may be required.
 
@@ -39,10 +39,10 @@ If the slice references indices that are less than zero or greater than or equal
 ## Parameters
 
 - `matrix`: The matrix to be sliced.
-- `matrix_first_row`: The index of the row of the source matrix containing the first element of   new slice matrix.
-- `matrix_first_col`: The index of the column of the source matrix containing the first element   of the slice matrix.
-- `matrix_row_stride`: The offset in the source matrix between rows that will be consecutive in   the slice matrix.
-- `matrix_col_stride`: The offset in the source matrix between columns that will be consecutve in   the slice matrix.
+- `matrix_first_row`: The index of the row of the source matrix containing the first element of new slice matrix.
+- `matrix_first_col`: The index of the column of the source matrix containing the first element of the slice matrix.
+- `matrix_row_stride`: The offset in the source matrix between rows that will be consecutive in the slice matrix.
+- `matrix_col_stride`: The offset in the source matrix between columns that will be consecutve in the slice matrix.
 - `slice_rows`: The number of rows in the slice matrix.
 - `slice_cols`: The number of columns in the slice matrix.
 

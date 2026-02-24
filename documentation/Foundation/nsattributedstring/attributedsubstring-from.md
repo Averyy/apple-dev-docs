@@ -30,7 +30,7 @@ Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `
 
 ## Parameters
 
-- `range`: The range from which to create a new attributed string.   must lie within the bounds of the receiver.
+- `range`: The range from which to create a new attributed string. `aRange` must lie within the bounds of the receiver.
 
 ## See Also
 

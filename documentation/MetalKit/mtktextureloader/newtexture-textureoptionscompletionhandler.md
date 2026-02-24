@@ -28,7 +28,7 @@ func newTexture(texture: MDLTexture, options: [MTKTextureLoader.Option : Any]? =
 ## Parameters
 
 - `texture`: A Model I/O texture object containing image data from which to create the texture.
-- `options`: A dictionary describing any additional texture loading steps. See  .
+- `options`: A dictionary describing any additional texture loading steps. See `Texture Loading Options`.
 - `completionHandler`: A block called when the texture has been loaded and fully initialized.
 
 ## See Also

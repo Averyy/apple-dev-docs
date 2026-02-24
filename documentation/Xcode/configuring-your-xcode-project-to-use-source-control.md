@@ -8,7 +8,7 @@ Sync code changes between team members and development computers by setting up y
 
 When you develop an app with a team, or by yourself using more than one Mac computer, use Xcode’s support for Git source control to share changes between team members and computers.
 
-Xcode uses Git commands to manage your  that tracks a history of your project file changes. If you use a remote repository, Git syncs those changes across other devices. Set up your Xcode project to use Git by creating a new local repository, or by connecting it to an existing remote repository.
+Xcode uses Git commands to manage your *source control repository* that tracks a history of your project file changes. If you use a remote repository, Git syncs those changes across other devices. Set up your Xcode project to use Git by creating a new local repository, or by connecting it to an existing remote repository.
 
 For more information on source control settings, see [`Configuring source control in Xcode`](configuring-source-control-in-xcode.md).
 
@@ -32,13 +32,13 @@ Xcode creates the project folder, initializes a local Git source control reposit
 
 ##### Clone a Project From a Remote Repository
 
-You can also create a local copy, or , of an existing remote Git repository that you can commit changes to using Xcode.
+You can also create a local copy, or *clone*, of an existing remote Git repository that you can commit changes to using Xcode.
 
 First, enter the account information in Xcode settings to access the remote repository. On the Xcode > Settings > Source Control pane, click Add Account. In the dialog, select the type of account and click Continue. For example, select Bitbucket Server or GitHub Enterprise.
 
 ![A screenshot of the account dialog showing Bitbucket Cloud selected and a Continue button.](https://docs-assets.developer.apple.com/published/52d98f7ec907f2691b065d5e2b895893/configuring-your-xcode-project-to-use-source-control-3%402x.png)
 
-In the next dialog, enter your credentials depending on the type of account, and click Sign In. If you need a token, click Create a Token on [] and follow the instructions on the account-specific webpage that appears in your browser.
+In the next dialog, enter your credentials depending on the type of account, and click Sign In. If you need a token, click Create a Token on [*Account Type*] and follow the instructions on the account-specific webpage that appears in your browser.
 
 To clone a remote repository while running Xcode, choose Integrate > Clone or click Clone Git Repository on the Welcome to Xcode window that appears when you first launch Xcode. You can open this window anytime to see other options by choosing Window > Welcome to Xcode.
 
@@ -54,7 +54,7 @@ You can also create a new remote repository for an existing local project or con
 
 In the Source Control navigator, click the Repositories tab. If necessary, expand the repository to show the Remotes folder.
 
-- To create a new remote repository for an existing project, Control-click Remotes and choose New “[]” Remote from the pop-up menu. Enter the information about the remote repository in the dialog and click Create.
+- To create a new remote repository for an existing project, Control-click Remotes and choose New “[*project name*]” Remote from the pop-up menu. Enter the information about the remote repository in the dialog and click Create.
 - To connect a local project to an existing remote repository, Control-click Remotes and choose Add Existing Remote from the pop-up menu. Enter a name and URL for the remote repository and click Add.
 
 ##### Retrieve Changes From a Remote Repository

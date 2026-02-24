@@ -66,6 +66,11 @@ Specify `com.apple.MCX` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `DisableGuestAccount` (boolean): If `true`, the system disables the guest account. This property has no effect if `EnableGuestAccount` is `true`.
+- `EnableGuestAccount` (boolean): If `true`, the system enables the guest account.
+
 ## See Also
 
 - [object CalDAV](caldav.md)

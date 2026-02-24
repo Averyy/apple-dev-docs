@@ -19,6 +19,10 @@ Each Mobile Device Management server must be registered with Apple. This endpoin
 - [object AccountDetail](accountdetail.md)
   The response that contains the details for an account.
 
+## Endpoint
+
+`GET https://mdmenrollment.apple.com/account`
+
 
 ---
 

@@ -27,8 +27,8 @@ A [`JSStringRef`](jsstringref.md) with the result of serialization, or `NULL` if
 
 - `ctx`: The execution context to use.
 - `value`: The value to serialize.
-- `indent`: The number of spaces to indent when nesting. If  , the resulting JSON string doesn’t contain new lines. The size of the indent clamps to 10 spaces.
-- `exception`: A pointer to a   to store an exception in, if any. Pass   to discard any exception.
+- `indent`: The number of spaces to indent when nesting. If `0`, the resulting JSON string doesn’t contain new lines. The size of the indent clamps to 10 spaces.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 

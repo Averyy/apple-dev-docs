@@ -30,6 +30,11 @@ Specify `com.apple.ironwood.support` as the payload type.
 | Allowed in user enrollment | NA |
 | Allow multiple payloads | NA |
 
+## Properties
+
+- `Ironwood Allowed` (boolean): If `false`, disables dictation. Use `allowDictation` in Restrictions instead.
+- `Profanity Allowed` (boolean): If `false`, suppresses profanity. Use `forceAssistantProfanityFilter` in Restrictions instead.
+
 ## See Also
 
 - [object AIMAccount](aimaccount.md)

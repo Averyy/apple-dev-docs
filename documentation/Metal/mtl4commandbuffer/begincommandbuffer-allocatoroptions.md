@@ -34,8 +34,8 @@ The options you provide configure the command buffer only until the command buff
 
 ## Parameters
 
-- `allocator`:   to attach to.
-- `options`:   to configure the command buffer.
+- `allocator`: [`MTL4CommandAllocator`](mtl4commandallocator.md) to attach to.
+- `options`: [`MTL4CommandBufferOptions`](mtl4commandbufferoptions.md) to configure the command buffer.
 
 
 ---

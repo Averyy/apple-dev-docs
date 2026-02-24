@@ -20,9 +20,9 @@ func setImage(_ iconImage: UIImage?, for icon: UISearchBar.Icon, state: UIContro
 
 ## Parameters
 
-- `iconImage`: The image to use for the search bar icon identified by   in the state identified by  .
+- `iconImage`: The image to use for the search bar icon identified by `icon` in the state identified by `state`.
 - `icon`: An icon identifier constant.
-- `state`: Valid states are   and  .
+- `state`: A control state. Valid states are [`normal`](uicontrol/state-swift.struct/normal.md) and [`disabled`](uicontrol/state-swift.struct/disabled.md).
 
 ## See Also
 

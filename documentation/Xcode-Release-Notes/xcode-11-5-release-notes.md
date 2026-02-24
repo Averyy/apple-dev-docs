@@ -18,7 +18,7 @@ Xcode 11.5 is available in the Mac App Store and includes SDKs for iOS 13.5, iPa
 
 ###### Known Issues
 
-- watchOS and tvOS apps with asset catalogs built with Xcode 11.4 or later may experience slower image-loading performance on devices running on watchOS 6.1 or earlier, or when in Dark Mode on tvOS 13.3 or earlier. (62328605 : Add a symbol glyph to the app’s asset catalog.
+- watchOS and tvOS apps with asset catalogs built with Xcode 11.4 or later may experience slower image-loading performance on devices running on watchOS 6.1 or earlier, or when in Dark Mode on tvOS 13.3 or earlier. (62328605 **Workaround**: Add a symbol glyph to the app’s asset catalog.
 
 ###### Resolved Issues
 
@@ -53,7 +53,7 @@ Xcode 11.5 is available in the Mac App Store and includes SDKs for iOS 13.5, iPa
 
 ###### Known Issues
 
-- In a Mac app or an app built with Mac Catalyst, Xcode sometimes does not require a provisioning profile or include the Game Center entitlement. As a result, your app may fail to communicate with Game Center services at runtime. (62903631) : Add the following entitlement to your app’s entitlements plist: ```text
+- In a Mac app or an app built with Mac Catalyst, Xcode sometimes does not require a provisioning profile or include the Game Center entitlement. As a result, your app may fail to communicate with Game Center services at runtime. (62903631) **Workaround**: Add the following entitlement to your app’s entitlements plist: ```text
 <key>com.apple.developer.game-center</key>
 <true/>
 ```

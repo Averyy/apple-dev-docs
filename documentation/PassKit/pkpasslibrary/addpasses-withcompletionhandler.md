@@ -26,7 +26,7 @@ Use this method whenever the user initiates an action that generates a single pa
 ## Parameters
 
 - `passes`: The passes to add.
-- `completion`: The completion handler that PassKit calls after the user selects an action. This handler takes the following parameter:
+- `completion`: The completion handler that PassKit calls after the user selects an action. This handler takes the following parameter: - **`status`**: A  [`PKPassLibraryAddPassesStatus`](pkpasslibraryaddpassesstatus.md) value that indicates whether PassKit adds the passes. If the user selects to review the passes, PassKit sets the status to [`PKPassLibraryAddPassesStatus.shouldReviewPasses`](pkpasslibraryaddpassesstatus/shouldreviewpasses.md). In this case, you must present an instance of [`PKAddPassesViewController`](pkaddpassesviewcontroller.md) to let the user review and add the passes.
 
 ## See Also
 

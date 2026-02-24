@@ -33,7 +33,7 @@ This method performs the same task as the [`fileManager(_:shouldProceedAfterErro
 ## Parameters
 
 - `fileManager`: The file manager object that attempted to remove the item.
-- `error`: The error that occurred while attempting to remove the item at  .
+- `error`: The error that occurred while attempting to remove the item at `URL`.
 - `URL`: The URL for the file or directory that the file manager tried to delete.
 
 ## See Also

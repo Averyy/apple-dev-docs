@@ -27,6 +27,11 @@ To build a mask that leaves out a stripe, create linear gradients from a single 
 
 The linear gradients cause the blur to taper smoothly as it approaches the focused stripe of the image. The Core Image [`CIFilter`](cifilter-swift.class.md) named [`linearGradient()`](cifilter-swift.class/lineargradient().md) generates filters of the desired color. The linear gradient has four parameters:
 
+- **`point0`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the starting position of the gradient.
+- **`point1`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the ending position of the gradient.
+- **`color0`**: A [`CIColor`](cicolor.md) representing the first color to use in the gradient.
+- **`color1`**: A [`CIColor`](cicolor.md) representing the sexond color to use in the gradient.
+
 Compute the start and stop points of the gradient as fractions of the image height, as obtained through [`extent`](ciimage/extent.md). For this particular mask and example image, focus on the area near the middle, in the second quarter of the image. Set the linear gradient’s `point0` and `point1` to reflect the region through which the gradient tapers.
 
 ```swift
@@ -70,6 +75,12 @@ In order to focus on a circular region of an image, you can create a Core Image 
 
 The filter takes four parameters:
 
+- **center**: A CGPoint representing the center of the effect as x and y coordinates.
+- **color0**: A [`CIColor`](cicolor.md) representing the first color to use in the gradient.
+- **color1**: A [`CIColor`](cicolor.md) representing the second color to use in the gradient.
+- **radius0**: A `float` representing the radius of the starting circle to use in the gradient.
+- **radius1**: A `float` representing the radius of the ending circle to use in the gradient.
+
 1. Set the `center` to a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) pointing to the center of the region you want to leave unblurred.
 2. Set the `radius0` to a fraction of the image’s dimension, like `0.2*h` in this example. You can tweak this parameter to determine the size of the sharp region.
 3. Set the `radius1` to a larger fraction of the image’s dimension, like `0.3*h` in this example. Tweaking this parameter changes the extent of the blur’s tapering effect; a larger value makes the blur more gradual, whereas a smaller value makes the image transition more abruptly from sharp (at `inputRadius0`) to blur (at `inputRadius1`).
@@ -91,6 +102,10 @@ This yields a circular mask to use with the [`maskedVariableBlur()`](cifilter-sw
 ##### Masking the Blurred Image to Apply Selective Focus
 
 The final step is applying your choice of mask with the input image. The [`maskedVariableBlur()`](cifilter-swift.class/maskedvariableblur().md) built-in [`CIFilter`](cifilter-swift.class.md) accomplishes this task with the following input parameters:
+
+- **`inputImage`**: Set to the original, unprocessed [`CIImage`](ciimage.md).
+- **`radius`**: A float representing the area of effect.
+- **`mask`**: An image that masks an area on the input image with the type [`CIImage`](ciimage.md)
 
 ```swift
 CIFilter<CIMaskedVariableBlur> *maskedVariableBlur = CIFilter.maskedVariableBlurFilter;

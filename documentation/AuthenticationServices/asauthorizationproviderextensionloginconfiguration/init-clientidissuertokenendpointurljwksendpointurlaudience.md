@@ -16,11 +16,11 @@ init(clientID: String, issuer: String, tokenEndpointURL: URL, jwksEndpointURL: U
 
 ## Parameters
 
-- `clientID`: The OAuth   for the login.
-- `issuer`: The OAuth   for validating the token.
+- `clientID`: The OAuth `client_id` for the login.
+- `issuer`: The OAuth `issuer` for validating the token.
 - `tokenEndpointURL`: The token endpoint for login.
 - `jwksEndpointURL`: The URL that retrieves the JSON Web Key Set (JWKS).
-- `audience`: The OAuth   for embedded assertions.
+- `audience`: The OAuth `audence` for embedded assertions.
 
 ## See Also
 

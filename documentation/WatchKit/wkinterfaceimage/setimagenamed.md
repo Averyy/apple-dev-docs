@@ -22,7 +22,7 @@ When setting images, always try to use images that are sized to fit the availabl
 
 ## Parameters
 
-- `imageName`: The name of the image to be loaded from the Watch app’s bundle. Specify the filename of the image and include the filename extension in the name. You may specify an image file that contains multiple images running as an animation. For information on how to specify an animated image, see  .
+- `imageName`: The name of the image to be loaded from the Watch app’s bundle. Specify the filename of the image and include the filename extension in the name. You may specify an image file that contains multiple images running as an animation. For information on how to specify an animated image, see [`Animating a Series of Images`](wkinterfaceimage#Animating-a-Series-of-Images.md).
 
 ## See Also
 

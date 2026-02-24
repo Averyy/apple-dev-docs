@@ -47,7 +47,7 @@ By default, a [`TextEditor`](texteditor.md) is interactive while other kinds of 
 
 ## Parameters
 
-- `mode`: The keyboard dismissal mode that scrollable content   uses.
+- `mode`: The keyboard dismissal mode that scrollable content uses.
 
 ## See Also
 

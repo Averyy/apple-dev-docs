@@ -38,9 +38,9 @@ The system only invokes this function when converting an object to [`kJSTypeNumb
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The   to convert.
-- `type`: A   that specifies the JavaScript type to convert to.
-- `exception`: A pointer to a   to return an exception in, if any.
+- `object`: The [`JSObjectRef`](jsobjectref.md) to convert.
+- `type`: A [`JSType`](jstype.md) that specifies the JavaScript type to convert to.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to return an exception in, if any.
 
 ## See Also
 

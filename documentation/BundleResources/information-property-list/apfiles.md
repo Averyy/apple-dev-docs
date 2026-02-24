@@ -8,6 +8,10 @@ Describes the files or directories the app installs on the system.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: object
+
 ## Topics
 
 ### Property List Keys

@@ -27,7 +27,7 @@ func authorize(localizedReason: String) async throws
 ## Parameters
 
 - `localizedReason`: A reason for the authorization that the system displays to the user.
-- `handler`: A completion handler called at the end of the authorization process.
+- `handler`: A completion handler called at the end of the authorization process. - **`error`**: If `nil`, the authorization is successful. Otherwise, the error contains information about the failure reason.
 
 ## See Also
 

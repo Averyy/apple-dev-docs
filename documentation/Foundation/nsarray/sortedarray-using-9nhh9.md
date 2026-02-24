@@ -39,7 +39,7 @@ For example, an array of `NSString` objects can be sorted by using the [`caseIns
 
 ## Parameters
 
-- `comparator`: A selector that identifies the method to use to compare two elements at a time. The method should return   if the receiving array is smaller than the argument,   if the receiving array is larger than the argument, and   if they are equal.
+- `comparator`: A selector that identifies the method to use to compare two elements at a time. The method should return `NSOrderedAscending` if the receiving array is smaller than the argument, `NSOrderedDescending` if the receiving array is larger than the argument, and `NSOrderedSame` if they are equal.
 
 ## See Also
 

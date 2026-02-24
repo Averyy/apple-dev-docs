@@ -20,7 +20,7 @@ func isColumnSelected(_ column: Int) -> Bool
 
 ## Parameters
 
-- `column`: The index into the   array that represents the column to test.
+- `column`: The index into the [`tableColumns`](nstableview/tablecolumns.md) array that represents the column to test.
 
 ## See Also
 

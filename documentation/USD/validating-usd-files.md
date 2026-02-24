@@ -10,7 +10,7 @@ Depending on the device, its operating system, and the app, there are three rend
 
 #### Review General and Media Features
 
-Each rendering engine supports a set of general and media attributes that cover fundamental features, such as which file types the renderer supports, and whether it supports , which is a performance optimization where a renderer can inexpensively display a single asset multiple times in a scene.
+Each rendering engine supports a set of general and media attributes that cover fundamental features, such as which file types the renderer supports, and whether it supports *instancing*, which is a performance optimization where a renderer can inexpensively display a single asset multiple times in a scene.
 
 | USD | RealityKit | SceneKit | Storm |
 | --- | --- | --- | --- |
@@ -131,6 +131,13 @@ MaterialX support is available on Reality Composer Pro, visionOS, visionOS Simul
 Textures in the AVIF format are supported in visionOS 2.4, visionOS Simulator 2.4, macOS 15.4, iOS 18.4, iPadOS 18.4 and later.
 
 RealityKit has partial support for some shader features:
+
+- **Texture channel references**: RealityKit supports only a single packed texture per material. You can, however, reference multiple scalar channels within a single texture.
+- **Texture transforms**: RealityKit supports a single `UsdTransform2d` per material. If a material contains multiple `UsdTransform2D` instances, the renderer will use the first one it finds.
+- **Multiple UV sets**: RealityKit supports two UV Sets.
+- **Scale**: RealityKit supports USD texture scaling except for normal map textures.
+- **ColorSpace**: RealityKit supports some known colorSpaces like DisplayP3 and sRGB. Color constants and textures will get conversions applied if colorSpace specifies a known name like “srgb_texture”, “lin_srgb”, “srgb_displayp3”, or “lin_displayp3”.
+- **sourceColorSpace**: If colorSpace is not specified then the sourceColorSpace attribute is used for conversion of color textures, such as “sRGB” or “raw”.
 
 If no colorSpace or sourceColorSpace value is provided then the embedded image color profile is used when loading color textures.
 

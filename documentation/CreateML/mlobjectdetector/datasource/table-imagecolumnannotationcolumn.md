@@ -16,9 +16,9 @@ case table(MLDataTable, imageColumn: String, annotationColumn: String)
 
 ## Parameters
 
-- `table`: An   instance that contains a column of image file locations and a column of   object annotations.
+- `table`: An [`MLDataTable`](mldatatable.md) instance that contains a column of image file locations and a column of object annotations.
 - `imageColumn`: The name of the column in the data table that contains the URL for an image.
-- `annotationColumn`: The name of the column in the data table that contains the object annotations for an   image.
+- `annotationColumn`: The name of the column in the data table that contains the object annotations for an image.
 
 ## See Also
 

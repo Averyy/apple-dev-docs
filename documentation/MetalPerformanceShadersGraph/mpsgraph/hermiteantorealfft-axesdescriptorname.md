@@ -37,9 +37,9 @@ This operation computes the fast Fourier transform of a complex-valued input ten
 
 ## Parameters
 
-- `tensor`: A complex-valued input tensor with reduced size (see Discussion). Must have datatype   or  .
+- `tensor`: A complex-valued input tensor with reduced size (see Discussion). Must have datatype `MPSDataTypeComplexFloat32` or `MPSDataTypeComplexFloat16`.
 - `axes`: An array of numbers that specifies over which axes MPSGraph performs the Fourier transform - all axes must be contained within last four dimensions of the input tensor.
-- `descriptor`: A descriptor that defines the parameters of the Fourier transform operation - see  .
+- `descriptor`: A descriptor that defines the parameters of the Fourier transform operation - see [`MPSGraphFFTDescriptor`](mpsgraphfftdescriptor.md).
 - `name`: The name for the operation.
 
 

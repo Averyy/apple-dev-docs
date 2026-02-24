@@ -18,7 +18,8 @@ func loadDefaultLeaderboardCategoryID() async throws -> String
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block to call when the request completes. The block receives the following parameters: - **categoryID**: The category ID string for the local player’s default leaderboard.
+- **error**: If an error occurrs, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is `nil`.
 
 ## See Also
 

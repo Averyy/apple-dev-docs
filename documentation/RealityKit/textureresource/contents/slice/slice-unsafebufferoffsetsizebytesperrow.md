@@ -25,10 +25,10 @@ static func slice(unsafeBuffer buffer: any MTLBuffer, offset: Int = 0, size: Int
 
 ## Parameters
 
-- `buffer`: The source buffer.   Don’t modify this buffer while using it as the source of a copy operation.
-- `offset`: The byte position in the source buffer where the copying starts.   The offset needs to be a multiple of the destination texture’s pixel size, in bytes.
-- `size`: The number of bytes in the source buffer (starting from  ) available for copying.
-- `bytesPerRow`: The stride in bytes between rows of texture data that RealityKit stores in the source buffer.   The value needs to be a multiple of the destination texture’s pixel size, in bytes.
+- `buffer`: The source buffer. Don’t modify this buffer while using it as the source of a copy operation.
+- `offset`: The byte position in the source buffer where the copying starts. The offset needs to be a multiple of the destination texture’s pixel size, in bytes.
+- `size`: The number of bytes in the source buffer (starting from `offset`) available for copying.
+- `bytesPerRow`: The stride in bytes between rows of texture data that RealityKit stores in the source buffer. The value needs to be a multiple of the destination texture’s pixel size, in bytes.
 
 ## See Also
 

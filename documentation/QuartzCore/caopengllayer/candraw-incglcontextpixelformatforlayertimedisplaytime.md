@@ -25,10 +25,10 @@ This method is called before attempting to render the frame for the layer time s
 
 ## Parameters
 
-- `ctx`: The   in to which the OpenGL content would be drawn.
-- `pf`: The pixel format used when the   was created.
+- `ctx`: The `CGLContextObj` in to which the OpenGL content would be drawn.
+- `pf`: The pixel format used when the `glContext` was created.
 - `t`: The current layer time.
-- `ts`: The display timestamp associated with  . Can be  .
+- `ts`: The display timestamp associated with `timeInterval`. Can be `null`.
 
 ## See Also
 

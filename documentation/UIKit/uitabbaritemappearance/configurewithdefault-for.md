@@ -20,7 +20,7 @@ func configureWithDefault(for style: UITabBarItemAppearance.Style)
 
 ## Parameters
 
-- `style`: The layout style for the appearance attributes. UIKit configures the object with the default appearance attributes for the specified style. For a list of possible values, see  .
+- `style`: The layout style for the appearance attributes. UIKit configures the object with the default appearance attributes for the specified style. For a list of possible values, see [`UITabBarItemAppearance.Style`](uitabbaritemappearance/style.md).
 
 ## See Also
 

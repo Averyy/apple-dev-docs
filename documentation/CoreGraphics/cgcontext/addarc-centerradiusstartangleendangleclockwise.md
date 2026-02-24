@@ -34,7 +34,7 @@ If the current path already contains a subpath, this method adds a line connecti
 - `radius`: The radius of the arc, in user space coordinates.
 - `startAngle`: The angle to the starting point of the arc, measured in radians from the positive x-axis.
 - `endAngle`: The angle to the end point of the arc, measured in radians from the positive x-axis.
-- `clockwise`:   to make a clockwise arc;   to make a counterclockwise arc.
+- `clockwise`: [`true`](https://developer.apple.com/documentation/Swift/true) to make a clockwise arc; [`false`](https://developer.apple.com/documentation/Swift/false) to make a counterclockwise arc.
 
 ## See Also
 

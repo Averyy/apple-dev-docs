@@ -25,7 +25,7 @@ class func removeAllDomains() async throws
 
 ## Parameters
 
-- `completionHandler`: A block that the system calls after removing the domains. It takes the following parameters:
+- `completionHandler`: A block that the system calls after removing the domains. It takes the following parameters: - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

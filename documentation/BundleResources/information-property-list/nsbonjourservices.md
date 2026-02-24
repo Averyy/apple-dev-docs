@@ -12,6 +12,10 @@ Bonjour service types browsed by the app.
 - tvOS 14.0+
 - visionOS 1.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 The value associated with this key is an array of strings that represent Bonjour service types. Include all service types that your app expects to use. Bonjour service type strings look like `_ipp._tcp`, and `_myservice._udp`, where the first substring identifies the application protocol and the second identifies the transport protocol.

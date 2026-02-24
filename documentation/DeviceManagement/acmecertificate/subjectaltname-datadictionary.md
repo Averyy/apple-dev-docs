@@ -19,6 +19,13 @@ The subject’s alternative name details.
 object ACMECertificate.SubjectAltName
 ```
 
+## Properties
+
+- `dNSName` (string): The DNS name.
+- `ntPrincipalName` (string): The NT principal name. Use an other name OID set to `1.3.6.1.4.1.311.20.2.3`.
+- `rfc822Name` (string): The RFC 822 (email address) string.
+- `uniformResourceIdentifier` (string): The Uniform Resource Identifier.
+
 
 ---
 

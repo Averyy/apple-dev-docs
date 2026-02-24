@@ -20,8 +20,8 @@ init<Value>(type: Value.Type, guides: [GenerationGuide<Value>] = []) where Value
 
 ## Parameters
 
-- `type`: A   type
-- `guides`: Generation guides to apply to this  .
+- `type`: A `Generable` type
+- `guides`: Generation guides to apply to this `DynamicGenerationSchema`.
 
 ## See Also
 
@@ -30,6 +30,8 @@ init<Value>(type: Value.Type, guides: [GenerationGuide<Value>] = []) where Value
 - [init(name:description:anyOf:)](dynamicgenerationschema/init(name:description:anyof:).md)
   Creates an any-of schema.
 - [init(name: String, description: String?, properties: [DynamicGenerationSchema.Property])](dynamicgenerationschema/init(name:description:properties:).md)
+  Creates an object schema.
+- [init(name: String, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [DynamicGenerationSchema.Property])](dynamicgenerationschema/init(name:description:representnilexplicitlyingeneratedcontent:properties:).md)
   Creates an object schema.
 - [init(referenceTo: String)](dynamicgenerationschema/init(referenceto:).md)
   Creates an refrence schema.

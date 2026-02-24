@@ -86,6 +86,13 @@ You can create an executable that uses service configuration files by calling th
 }
 ```
 
+## Properties
+
+- `DataAssetReference` (string) *(required)*: The identifier of an asset declaration that contains a reference to the files to use for system service configuration. Ensure that the corresponding asset: - Is of type `com.apple.asset.data`
+- Is a zip archive of an entire directory
+- Has a `Reference` key that includes the `ContentType` and `Hash-SHA-256` keys, which the system requires The system expands the zip archive and stores the data in a well-known location for the service.
+- `ServiceType` (string) *(required)*: The identifier of the system service with managed configuration files. Use a reverse DNS style for this identifier.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

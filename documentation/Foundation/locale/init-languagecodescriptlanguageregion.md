@@ -24,7 +24,7 @@ init(languageCode: Locale.LanguageCode? = nil, script: Locale.Script? = nil, lan
 
 - `languageCode`: A language code, typically created from a two- or three-letter language code specified by ISO 639.
 - `script`: The script to use for the new locale components instance.
-- `languageRegion`: A language region, typically created from a two-letter BCP 47 region subtag like  .
+- `languageRegion`: A language region, typically created from a two-letter BCP 47 region subtag like `US`.
 
 ## See Also
 

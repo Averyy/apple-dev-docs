@@ -26,8 +26,8 @@ An image source. You’re responsible for releasing this type using [`CFRelease`
 
 ## Parameters
 
-- `provider`: The data provider to read from. For more information on data providers, see   and  .
-- `options`: A dictionary that specifies additional creation options. For a list of possible values, see  .
+- `provider`: The data provider to read from. For more information on data providers, see [`CGDataProvider`](https://developer.apple.com/documentation/CoreGraphics/CGDataProvider) and [`Quartz 2D Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066).
+- `options`: A dictionary that specifies additional creation options. For a list of possible values, see [`Specifying the Read Options`](cgimagesource#Specifying-the-Read-Options.md).
 
 ## See Also
 

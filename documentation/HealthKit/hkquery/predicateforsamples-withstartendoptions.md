@@ -27,11 +27,37 @@ A predicate for samples whose start and end dates fall within the specified time
 
 Use this convenience method to create a predicate that compares a sample’s start and end dates with a specified time interval. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+let timeInterval =
+    HKQuery.predicateForSamplesWithStartDate(myStartDate,
+                                             endDate: myEndDate, options: .None)
+ 
+let explicitTimeInterval = NSPredicate(format: "%K >= %@ AND %K < %@",
+                                       HKPredicateKeyPathEndDate, myStartDate,
+                                       HKPredicateKeyPathStartDate, myEndDate)
+```
+
+**Objective-C**:
+
+```objc
+NSPredicate *timeInterval =
+[HKQuery predicateForSamplesWithStartDate:myStartDate
+                                  endDate:myEndDate
+                                  options:HKQueryOptionNone];
+ 
+NSPredicate *explicitTimeInterval =
+[NSPredicate predicateWithFormat:@"%K >= %@ AND %K < %@",
+ HKPredicateKeyPathEndDate, myStartDate,
+ HKPredicateKeyPathStartDate, myEndDate];
+```
+
 ## Parameters
 
 - `startDate`: The start date for the target time interval.
 - `endDate`: The end date for the target time interval.
-- `options`: A constant that specifies how the sample’s start and end date are compared with the target time interval. For a list of possible values, see  .
+- `options`: A constant that specifies how the sample’s start and end date are compared with the target time interval. For a list of possible values, see [`HKQueryOptions`](hkqueryoptions.md).
 
 ## See Also
 

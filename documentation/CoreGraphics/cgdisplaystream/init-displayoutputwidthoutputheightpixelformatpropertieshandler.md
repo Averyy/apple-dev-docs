@@ -24,8 +24,11 @@ Before the stream can be started, it must be added to a run loop. Use the [`runL
 - `display`: The identifier of the display to be streamed.
 - `outputWidth`: The width of the output frames in pixels. The width must not be zero.
 - `outputHeight`: The height of the output frames in pixels. The height must not be zero.
-- `pixelFormat`: The desired Core Media pixel format of the output frame data. The value must be one of the following:
-- `properties`: A dictionary of optional properties for the display stream. See   for the possible keys and values that can be provided in the options dictionary.
+- `pixelFormat`: The desired Core Media pixel format of the output frame data. The value must be one of the following: - `'BGRA'`: Packed Little Endian ARGB8888
+- `'l10r'`: Packed Little Endian ARGB2101010
+- `'420v'`: 2-plane “video” range YCbCr 4:2:0
+- `'420f'`: 2-plane “full” range YCbCr 4:2:0
+- `properties`: A dictionary of optional properties for the display stream. See [`Display Stream Optional Property Keys`](display-stream-optional-property-keys.md) for the possible keys and values that can be provided in the options dictionary.
 - `handler`: A block to be called when new frames are ready.
 
 ## See Also

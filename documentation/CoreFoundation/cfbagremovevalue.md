@@ -22,7 +22,7 @@ func CFBagRemoveValue(_ theBag: CFMutableBag!, _ value: UnsafeRawPointer!)
 
 ## Parameters
 
-- `theBag`: The bag from which   is to be removed.
+- `theBag`: The bag from which `value` is to be removed.
 - `value`: The value to be removed from the collection.
 
 ## See Also

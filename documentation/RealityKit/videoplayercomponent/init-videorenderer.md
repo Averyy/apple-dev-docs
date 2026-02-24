@@ -95,7 +95,7 @@ if let url = Bundle.main.url(forResource: "MyMovie", withExtension: "mp4") {
 
 ## Parameters
 
-- `videoRenderer`: The sample buffer video renderer with the visual contents the component   presents.
+- `videoRenderer`: The sample buffer video renderer with the visual contents the component presents.
 
 ## See Also
 

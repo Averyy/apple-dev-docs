@@ -29,7 +29,7 @@ This method returns an instance of the [`HKQuantityType`](hkquantitytype.md) con
 
 ## Parameters
 
-- `identifier`: A document type identifier. For a list of valid identifiers, see  .
+- `identifier`: A document type identifier. For a list of valid identifiers, see [`HKDocumentTypeIdentifier`](hkdocumenttypeidentifier.md).
 
 ## See Also
 

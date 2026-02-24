@@ -20,7 +20,7 @@ If you unregister the same instance more than once the subsequent invocations ar
 
 ## Parameters
 
-- `handler`: The class instance that conforms to   and provides help content.
+- `handler`: The class instance that conforms to `NSUserInterfaceItemSearching` and provides help content.
 
 ## See Also
 

@@ -21,7 +21,7 @@ init(presentationDescriptor: PresentationDescriptor, isSideloaded: Bool = false)
 ## Parameters
 
 - `presentationDescriptor`: The current presentation commands to use or parse.
-- `isSideloaded`: Signals the player this is a sideloaded dynamic metadata and not real-time - in that case   the player will not delete old commands as playback continues (to support seek)
+- `isSideloaded`: Signals the player this is a sideloaded dynamic metadata and not real-time - in that case the player will not delete old commands as playback continues (to support seek)
 
 
 ---

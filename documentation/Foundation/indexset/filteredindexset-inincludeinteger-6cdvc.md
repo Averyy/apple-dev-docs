@@ -22,7 +22,7 @@ func filteredIndexSet(in range: Range<IndexSet.Element>, includeInteger: (IndexS
 
 ## Parameters
 
-- `range`: A range of integers. For each integer in the range that intersects the integers in the IndexSet, then the   predicate will be invoked.
+- `range`: A range of integers. For each integer in the range that intersects the integers in the IndexSet, then the `includeInteger` predicate will be invoked.
 - `includeInteger`: The predicate which decides if an integer will be included in the result or not.
 
 ## See Also

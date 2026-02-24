@@ -57,6 +57,36 @@ Add both `shaders.metallib` and `libUtility.metallib` to your Xcode project as r
 
 Use the [`makeDynamicLibrary(url:)`](mtldevice/makedynamiclibrary(url:).md) method in your app to load your Metal dynamic library, and then add it to a pipeline descriptor calling the shader functions in your other Metal libraries. The following code example loads a dynamic library and creates an [`MTLComputePipelineDescriptor`](mtlcomputepipelinedescriptor.md) that includes it as a library to load:
 
+**Swift**:
+
+```swift
+fn createComputePipeline(descriptor: MTLComputePipelineDescriptor, dynamicLibrary: URL, device: MTLDevice) throws -> MTLComputePipeline {
+    let library = device.makeDynamicLibrary(url: dynamicLibrary)
+
+    var newDescriptor = descriptor.copy()
+    newDescriptor.insertLibraries.append(library)
+
+    return device.makeComputePipelineState(descriptor: newDescriptor, options: MTLCompilationOption(rawValue: 0), nil)
+}
+```
+
+**Objective-C**:
+
+```objective-c
+-(id<MTLComputePipeline>) createComputePipelineFromDescriptor:(MTLComputePipelineDescriptor*)pipelineDescriptor withDynamicLibrary:(NSURL*)libraryURL forDevice:(id<MTLDevice>)device error:(NSError**) {
+    id<MTLDynamicLibrary> library = [device newDynamicLibraryWithURL:libraryURL error:error];
+    if (library == nil) {
+        return nil;
+    }
+
+    MTLComputePipelineDescriptor* newDescriptor = [pipelineDescriptor copy];
+    newDescriptor.insertLibraries = [pipelineDescriptor.insertLibraries arrayByAddingObject:library];
+
+    id<MTLComputePipelineState> computePipeline = [device newComputePipelineStateWithDescriptor: newDescriptor options: MTLPipelineOptionNone reflection: nil error: error];
+    return computePipeline;
+}
+```
+
 ## See Also
 
 - [Creating a Metal dynamic library](creating-a-metal-dynamic-library.md)

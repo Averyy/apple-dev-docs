@@ -57,8 +57,8 @@ var body: some View {
 
 ## Parameters
 
-- `coordinateSpace`: The coordinate space for the   location values. Defaults to  .
-- `action`: The action to perform whenever the pointer enters,   moves within, or exits the view’s bounds. The   closure   passes the   phase with the pointer’s   coordinates if the pointer is in the view’s bounds; otherwise, it   passes  .
+- `coordinateSpace`: The coordinate space for the location values. Defaults to [`CoordinateSpace.local`](coordinatespace/local.md).
+- `action`: The action to perform whenever the pointer enters, moves within, or exits the view’s bounds. The `action` closure passes the [`HoverPhase.active(_:)`](hoverphase/active(_:).md) phase with the pointer’s coordinates if the pointer is in the view’s bounds; otherwise, it passes [`HoverPhase.ended`](hoverphase/ended.md).
 
 
 ---

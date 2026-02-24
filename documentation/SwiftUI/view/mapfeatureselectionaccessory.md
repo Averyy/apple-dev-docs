@@ -19,7 +19,7 @@ Specifies the selection accessory to display for a `MapFeature`
 
 ## Parameters
 
-- `style`: The map item detail selection accessory style. If  , no   selection accessory will be displayed.
+- `style`: The map item detail selection accessory style. If `nil`, no selection accessory will be displayed.
 
 ## See Also
 

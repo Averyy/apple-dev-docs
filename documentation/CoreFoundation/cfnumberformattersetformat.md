@@ -27,7 +27,7 @@ The format string may override other properties previously set using other funct
 ## Parameters
 
 - `formatter`: The number formatter to modify.
-- `formatString`: The format string to be used by  . See   for more information.
+- `formatString`: The format string to be used by `formatter`. See [`Creating and Using CFNumberFormatter Objects`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDataFormatting/Articles/dfCreatingCFNumberFormatters.html#//apple_ref/doc/uid/TP40002342) for more information.
 
 ## See Also
 

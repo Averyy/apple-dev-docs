@@ -26,7 +26,7 @@ init(group: ModelSortGroup, order: Int32)
 ## Parameters
 
 - `group`: A group the component’s entity belongs to.
-- `order`: An integer value in the range   that   represents when the renderer draws the model relative to other the   models in its group.
+- `order`: An integer value in the range `(Int32.min, Int32.max)` that represents when the renderer draws the model relative to other the models in its group.
 
 
 ---

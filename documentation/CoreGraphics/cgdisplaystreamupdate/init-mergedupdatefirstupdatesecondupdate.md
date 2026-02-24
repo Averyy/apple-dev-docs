@@ -21,8 +21,8 @@ If your app needs to drop a frame without processing it, use this function to me
 
 ## Parameters
 
-- `firstUpdate`: A   reference. This must be the earlier of the two update references.
-- `secondUpdate`: A   reference. This must be the later of the two update references.
+- `firstUpdate`: A [`CGDisplayStreamUpdate`](cgdisplaystreamupdate.md) reference. This must be the earlier of the two update references.
+- `secondUpdate`: A [`CGDisplayStreamUpdate`](cgdisplaystreamupdate.md) reference. This must be the later of the two update references.
 
 ## See Also
 

@@ -24,6 +24,11 @@ object ManagedApplicationAttributesResponse.ApplicationAttributesItem
 - [object ManagedApplicationAttributesResponse.ApplicationAttributesItem.Attributes](managedapplicationattributesresponse/applicationattributesitem/attributes-data.dictionary.md)
   A dictionary that contains a managed app’s attributes.
 
+## Properties
+
+- `Attributes` (ManagedApplicationAttributesResponse.ApplicationAttributesItem.Attributes): The app’s attributes.
+- `Identifier` (string) *(required)*: The app’s bundle identifier. > **Note**:  For a watchOS app, the identifier is the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone to which the watch is paired.
+
 ## See Also
 
 - [object ManagedApplicationAttributesResponse.ErrorChainItem](managedapplicationattributesresponse/errorchainitem.md)

@@ -22,7 +22,7 @@ func hash(into hasher: inout Hasher)
 
 ## Parameters
 
-- `hasher`: The hash function to use when combining the components of   the color.
+- `hasher`: The hash function to use when combining the components of the color.
 
 ## See Also
 

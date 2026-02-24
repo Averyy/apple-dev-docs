@@ -13,11 +13,15 @@ The release or version number of the bundle.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key is a user-visible string for the version of the bundle. The required format is three period-separated integers, such as 10.14.1. The string can only contain numeric characters (0-9) and periods.
 
-Each integer provides information about the release in the format [].[].[]:
+Each integer provides information about the release in the format [*Major*].[*Minor*].[*Patch*]:
 
 - Major: A major revision number.
 - Minor: A minor revision number.

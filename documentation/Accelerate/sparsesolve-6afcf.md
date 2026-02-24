@@ -22,10 +22,10 @@ func SparseSolve(_ Subfactor: SparseOpaqueSubfactor_Complex_Float, _ B: DenseMat
 
 ## Parameters
 
-- `Subfactor`: (Input) The subfactor to solve a system involving, as returned by   .
-- `B`: (Input) The right-hand sides  . If   is  , then   must   have dimension  , where   is the number of right-hand   sides.
-- `X`: (Output) The solutions  . If   is  , and   is  ,   then   must have dimension  .
-- `workspace`: (Scratch) A workspace of size   .   This memory must be 16-byte aligned (any allocation returned   by   has this property).
+- `Subfactor`: (Input) The subfactor to solve a system involving, as returned by `SparseCreateSubfactor()`.
+- `B`: (Input) The right-hand sides `B`. If `Subfactor` is `m x n`, then `B` must have dimension `m x nrhs`, where `nrhs` is the number of right-hand sides.
+- `X`: (Output) The solutions `X`. If `Subfactor` is `m x n`, and `B` is `m x nrhs`, then `X` must have dimension `n x nrhs`.
+- `workspace`: (Scratch) A workspace of size `Subfactor.workspaceRequiredStatic + nrhs * Subfactor.workspaceRequiredPerRHS * 2`. This memory must be 16-byte aligned (any allocation returned by `malloc()` has this property).
 
 ## See Also
 

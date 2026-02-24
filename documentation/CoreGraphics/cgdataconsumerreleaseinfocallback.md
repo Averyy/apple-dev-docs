@@ -28,7 +28,7 @@ For information on how to associate your callback function with a data consumer,
 
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to  .
+- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(info:cbks:)`](cgdataconsumer/init(info:cbks:).md).
 
 ## See Also
 

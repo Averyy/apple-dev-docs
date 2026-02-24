@@ -22,7 +22,7 @@ convenience init(empty type: MLFeatureType)
 
 ## Parameters
 
-- `type`: An   instance that determines the sequence’s element type, which must be either   or  .
+- `type`: An [`MLFeatureType`](mlfeaturetype.md) instance that determines the sequence’s element type, which must be either [`MLFeatureType.string`](mlfeaturetype/string.md) or [`MLFeatureType.int64`](mlfeaturetype/int64.md).
 
 ## See Also
 

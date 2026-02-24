@@ -22,6 +22,9 @@ typealias CMStepQueryHandler = (Int, (any Error)?) -> Void
 
 This block takes two parameters:
 
+- **`numberOfSteps`**: The number of steps that occurred between the start and end times specified by the query.
+- **`error`**: An error object indicating that there was a problem gathering the data or `nil` if the number of steps was determined correctly.
+
 ## See Also
 
 - [func queryStepCountStarting(from: Date, to: Date, to: OperationQueue, withHandler: CMStepQueryHandler)](cmstepcounter/querystepcountstarting(from:to:to:withhandler:).md)

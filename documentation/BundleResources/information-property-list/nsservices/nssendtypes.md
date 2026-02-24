@@ -8,6 +8,10 @@ The data types that the service can read.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [NSReturnTypes](information-property-list/nsservices/nsreturntypes.md)

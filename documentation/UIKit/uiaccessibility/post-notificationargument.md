@@ -25,8 +25,8 @@ Your application might need to post accessibility notifications if you have user
 
 ## Parameters
 
-- `notification`: The notification to post (see “Notifications” in   for a list of notifications).
-- `argument`: The argument specified by the notification. Pass   unless a notification specifies otherwise.
+- `notification`: The notification to post (see “Notifications” in [`UIAccessibility`](uiaccessibility-protocol.md) for a list of notifications).
+- `argument`: The argument specified by the notification. Pass `nil` unless a notification specifies otherwise.
 
 ## See Also
 

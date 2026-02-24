@@ -26,8 +26,8 @@ Returns `true` if an owner UUID was successfully copied, or `false` if there is 
 
 ## Parameters
 
-- `fileSec`: The   object.
-- `ownerUUID`: The address of a   where the results are stored.
+- `fileSec`: The `CFFileSecurityRef` object.
+- `ownerUUID`: The address of a `CFUUIDRef` where the results are stored.
 
 ## See Also
 

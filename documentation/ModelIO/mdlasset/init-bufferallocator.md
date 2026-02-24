@@ -29,7 +29,7 @@ Use this initializer when you want to programmatically populate an asset with co
 
 ## Parameters
 
-- `bufferAllocator`: The allocator object to use for loading or creating mesh data associated with the asset, or   to use a default allocator.
+- `bufferAllocator`: The allocator object to use for loading or creating mesh data associated with the asset, or `nil` to use a default allocator.
 
 ## See Also
 

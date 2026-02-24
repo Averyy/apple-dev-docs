@@ -55,6 +55,8 @@ If you need more customization than is possible with a subclass of [`UICollectio
 
 ![Images showing a row of four rectangles, each representing a mosaic style. On the left, a single cell. Second from left, two equal-size cells. Third from left, one cell occupying two-thirds of the area, and two stacked cells to the left of the larger cell. Last, one cell occupying two-thirds of the area, and two stacked cells to the right of the larger cell.](https://docs-assets.developer.apple.com/published/cba49a90929a4052e9ce4b671ad41ef7/CellLayouts.png)
 
+**Calculate cell dimensions**
+
 The [`prepare()`](uicollectionviewlayout/prepare().md) method is called whenever a layout is invalidated. Override this method to calculate the position and size of every cell, as well as the total dimensions for the entire layout.
 
 ```swift
@@ -136,6 +138,8 @@ override func prepare() {
 }
 ```
 
+**Provide the content size**
+
 Override the [`collectionViewContentSize`](uicollectionviewlayout/collectionviewcontentsize.md) property, providing a size for the collection view.
 
 ```swift
@@ -144,7 +148,9 @@ override var collectionViewContentSize: CGSize {
 }
 ```
 
-Override [`layoutAttributesForElements(in:)`](uicollectionviewlayout/layoutattributesforelements(in:).md), defining the layout attributes for a geometric region. The collection view calls this function periodically to display items, which is known as .
+**Define the layout attributes**
+
+Override [`layoutAttributesForElements(in:)`](uicollectionviewlayout/layoutattributesforelements(in:).md), defining the layout attributes for a geometric region. The collection view calls this function periodically to display items, which is known as *querying by geometric region*.
 
 ```swift
 override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
@@ -170,7 +176,7 @@ override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewL
 }
 ```
 
-Also provide the layout attributes for a specific item by implementing [`layoutAttributesForItem(at:)`](uicollectionviewlayout/layoutattributesforitem(at:).md). The collection view calls this function periodically to display one particular item, which is known as .
+Also provide the layout attributes for a specific item by implementing [`layoutAttributesForItem(at:)`](uicollectionviewlayout/layoutattributesforitem(at:).md). The collection view calls this function periodically to display one particular item, which is known as *querying by index path*.
 
 ```swift
 override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
@@ -179,6 +185,8 @@ override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionVi
 ```
 
 Because these functions are called often, they can affect the performance of your app. To make them as efficient as possible, follow the example code as closely as you can.
+
+**Handle bounds changes**
 
 The [`shouldInvalidateLayout(forBoundsChange:)`](uicollectionviewlayout/shouldinvalidatelayout(forboundschange:).md) function is called for every bounds change from the collection view, or whenever its size or origin changes. This function is also called frequently during scrolling. The default implementation returns `false`, or, if the size and origin change, it returns `true`.
 
@@ -193,7 +201,7 @@ For optimum performance, this sample performs a binary search inside [`layoutAtt
 
 ##### Perform Batch Updates
 
-Tapping the top-right button in the navigation bar triggers the collection view to perform a  of multiple animated operations (insert, delete, move, and reload) of its collection view cells all at the same time.
+Tapping the top-right button in the navigation bar triggers the collection view to perform a *batch update* of multiple animated operations (insert, delete, move, and reload) of its collection view cells all at the same time.
 
 Within a call to [`performBatchUpdates(_:completion:)`](uicollectionview/performbatchupdates(_:completion:).md), the system simultaneously animates all insert, delete, move, and reload operations. In this sample, the app batches updates by processing an array of `PersonUpdate` objects, each of which encapsulates one update:
 

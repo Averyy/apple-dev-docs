@@ -51,6 +51,13 @@ This configuration restricts Siri features.
 }
 ```
 
+## Properties
+
+- `AllowUserGeneratedContent` (boolean): If `false`, disables Siri user-generated content.
+- `AllowWhileLocked` (boolean): If `false`, disables Siri while locked.
+- `Enabled` (boolean): If `false`, disables Siri.
+- `ForceProfanityFilter` (boolean): If `true`, forces Siri profanity filter.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

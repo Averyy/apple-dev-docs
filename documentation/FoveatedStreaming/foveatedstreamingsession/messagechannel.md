@@ -16,7 +16,7 @@ class MessageChannel
 
 #### Overview
 
-Use message channels to communicate with the application streaming foveated content to your visionOS app. You can send data with the [`sendServerMessage(_:)`](foveatedstreamingsession/messagechannel/sendservermessage(_:).md) function and receive data through the [`receivedMessageStream`](foveatedstreamingsession/messagechannel/receivedmessagestream.md) async stream.
+Use message channels to communicate with the application streaming foveated content to your visionOS app. You can send data with the [`sendMessage(_:)`](foveatedstreamingsession/messagechannel/sendmessage(_:).md) function and receive data through the [`receivedMessageStream`](foveatedstreamingsession/messagechannel/receivedmessagestream.md) async stream.
 
 ## Topics
 
@@ -27,13 +27,13 @@ Use message channels to communicate with the application streaming foveated cont
 - [var channelStatus: FoveatedStreamingSession.MessageChannel.ChannelStatus](foveatedstreamingsession/messagechannel/channelstatus-swift.property.md)
   The state of the message channel.
 - [let id: FoveatedStreamingSession.MessageChannel.ID](foveatedstreamingsession/messagechannel/id-swift.property.md)
-  An identifier for the data channel.
+  An identifier for the message channel.
 - [let receivedMessageStream: AsyncStream<Data>](foveatedstreamingsession/messagechannel/receivedmessagestream.md)
   An async stream that yields data objects each time the channel receives a message.
 ### Instance Methods
 - [func disconnect()](foveatedstreamingsession/messagechannel/disconnect.md)
   Manually disconnects and closes the data channel.
-- [func sendServerMessage(Data) throws](foveatedstreamingsession/messagechannel/sendservermessage(_:).md)
+- [func sendMessage(Data) throws](foveatedstreamingsession/messagechannel/sendmessage(_:).md)
   Sends data to the streaming endpoint on this channel.
 ### Enumerations
 - [FoveatedStreamingSession.MessageChannel.ChannelStatus](foveatedstreamingsession/messagechannel/channelstatus-swift.enum.md)

@@ -22,9 +22,9 @@ optional func parser(_ parser: XMLParser, foundElementDeclarationWithName elemen
 
 ## Parameters
 
-- `parser`: An   object parsing XML.
+- `parser`: An `NSXMLParser` object parsing XML.
 - `elementName`: A string that is the name of an element.
-- `model`: A string that specifies a model for  .
+- `model`: A string that specifies a model for `elementName`.
 
 ## See Also
 

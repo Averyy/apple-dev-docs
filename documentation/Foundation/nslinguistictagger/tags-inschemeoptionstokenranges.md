@@ -33,8 +33,8 @@ This is a convenience method for calling [`tags(in:unit:scheme:options:tokenRang
 ## Parameters
 
 - `range`: The range from which to return tags.
-- `tagScheme`: The tag scheme. See   for possible values.
-- `opts`: The linguistic tagger options to use. See   for possible values.
+- `tagScheme`: The tag scheme. See [`NSLinguisticTagScheme`](nslinguistictagscheme.md) for possible values.
+- `opts`: The linguistic tagger options to use. See [`NSLinguisticTagger.Options`](nslinguistictagger/options.md) for possible values.
 - `tokenRanges`: Returns by reference an array of token ranges.
 
 ## See Also

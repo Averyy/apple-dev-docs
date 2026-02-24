@@ -11,6 +11,10 @@ A list of identifiers that specify pass types that your app can access in Wallet
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 The value for this key is an array of pass type identifiers.

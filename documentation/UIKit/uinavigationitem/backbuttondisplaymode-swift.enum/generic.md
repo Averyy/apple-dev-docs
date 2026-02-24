@@ -22,7 +22,7 @@ case generic
 
 When you set the [`backButtonDisplayMode`](uinavigationitem/backbuttondisplaymode-swift.property.md) property to this value, the navigation item attempts to display these titles for its Back button in the following order:
 
-- A generic title, such as 
+- A generic title, such as *Back*
 - No title
 
 The navigation item selects the most appropriate title for the Back button according to the available space. This display mode ignores the values of the [`title`](uinavigationitem/title.md) and [`backButtonTitle`](uinavigationitem/backbuttontitle.md) properties.

@@ -17,6 +17,10 @@ Retrieves the beta enrollment tokens available for the organization.
 - [object SeedBuildToken](seedbuildtoken.md)
   Describes a beta enrollment token available for the given organization.
 
+## Endpoint
+
+`GET https://mdmenrollment.apple.com/os-beta-enrollment/tokens`
+
 ## See Also
 
 - [Activation Lock a Device](activation-lock-devices.md)

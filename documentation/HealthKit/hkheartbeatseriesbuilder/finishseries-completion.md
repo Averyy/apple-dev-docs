@@ -27,7 +27,8 @@ Calling this method before inserting any heartbeats results in an error. Also, c
 
 ## Parameters
 
-- `completion`: The completion handler called by the builder after it attempts to create and save the heartbeat series sample. The completion handler takes the following parameters:
+- `completion`: The completion handler called by the builder after it attempts to create and save the heartbeat series sample. The completion handler takes the following parameters: - **`heartbeatSeries`**: If successful it contains the resuting sample; otherwise, `nil`.
+- **`error`**: If an error occurs, this contains an object that describes the error; otherwise, `nil`.
 
 
 ---

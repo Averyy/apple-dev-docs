@@ -9,6 +9,10 @@ A Boolean value that indicates whether to tag memory that contains only data.
 - iOS 26.0+
 - iPadOS 26.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Adding an additional class of allocations for data improves security at the cost of memory and performance overhead.

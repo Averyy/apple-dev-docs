@@ -26,7 +26,7 @@ This property contains the path, unescaped using the [`replacingPercentEscapes(u
 
 If the receiver contains a file or file reference URL (as determined with [`isFileURL`](nsurl/isfileurl.md)), this property’s value is suitable for input into methods of `NSFileManager` or `NSPathUtilities`. If the path has a trailing slash, it is stripped.
 
-If the receiver contains a file reference URL, this property’s value provides the  for the referenced resource, which may be `nil` if the resource no longer exists.
+If the receiver contains a file reference URL, this property’s value provides the *current path* for the referenced resource, which may be `nil` if the resource no longer exists.
 
 If the [`parameterString`](nsurl/parameterstring.md) property contains a non-`nil` value, the path may be incomplete. If the receiver contains an unencoded semicolon, the path property ends at the character before the semicolon. The remainder of the URL is provided in the [`parameterString`](nsurl/parameterstring.md) property.
 

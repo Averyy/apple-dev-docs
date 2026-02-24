@@ -31,7 +31,7 @@ The default value is `nil`, displaying the text without any case changes.
 
 ## Parameters
 
-- `textCase`: One of the   enumerations; the   default is  .
+- `textCase`: One of the [`Text.Case`](text/case.md) enumerations; the default is `nil`.
 
 ## See Also
 

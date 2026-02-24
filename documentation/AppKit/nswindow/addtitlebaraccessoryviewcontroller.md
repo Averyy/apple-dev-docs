@@ -16,7 +16,7 @@ func addTitlebarAccessoryViewController(_ childViewController: NSTitlebarAccesso
 
 ## Parameters
 
-- `childViewController`: An instance of   containing the view to add, along with where to place it and how it should behave in full screen mode.
+- `childViewController`: An instance of [`NSTitlebarAccessoryViewController`](nstitlebaraccessoryviewcontroller.md) containing the view to add, along with where to place it and how it should behave in full screen mode.
 
 ## See Also
 

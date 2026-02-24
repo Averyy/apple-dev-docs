@@ -27,8 +27,8 @@ Text with a line through its center.
 
 ## Parameters
 
-- `isActive`: A Boolean value that indicates whether the text has a   strikethrough applied.
-- `color`: The color of the strikethrough. If   is  , the   strikethrough uses the default foreground color.
+- `isActive`: A Boolean value that indicates whether the text has a strikethrough applied.
+- `color`: The color of the strikethrough. If `color` is `nil`, the strikethrough uses the default foreground color.
 
 ## See Also
 

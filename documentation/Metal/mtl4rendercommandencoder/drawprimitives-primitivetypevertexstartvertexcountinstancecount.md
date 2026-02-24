@@ -30,10 +30,10 @@ Your vertex shader can use the `vertex_id` value to uniquely identify each verte
 
 ## Parameters
 
-- `primitiveType`: A   represents how the command interprets vertex argument data.
-- `vertexStart`: The lowest value the command passes to your vertex shader function’s parameter with   the   attribute.
-- `vertexCount`: An integer that represents the number of vertices of   the command draws.
-- `instanceCount`: An integer that represents the number of times the command draws   primitives   with   vertices.
+- `primitiveType`: A [`MTLPrimitiveType`](mtlprimitivetype.md) represents how the command interprets vertex argument data.
+- `vertexStart`: The lowest value the command passes to your vertex shader function’s parameter with the `vertex_id` attribute.
+- `vertexCount`: An integer that represents the number of vertices of `primitiveType` the command draws.
+- `instanceCount`: An integer that represents the number of times the command draws `primitiveType` primitives with `vertexCount` vertices.
 
 ## See Also
 

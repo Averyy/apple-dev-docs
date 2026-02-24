@@ -24,7 +24,7 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `in_clock_is_stable`:   if the clock is stable; otherwise,  .
+- `in_clock_is_stable`: `true` if the clock is stable; otherwise, `false`.
 
 ## See Also
 

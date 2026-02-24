@@ -20,8 +20,8 @@ init(allowedParticipantPermissionOptions: CKSharingParticipantPermissionOption, 
 
 ## Parameters
 
-- `allowedParticipantPermissionOptions`: The   setting.
-- `allowedParticipantAccessOptions`: The   setting.
+- `allowedParticipantPermissionOptions`: The [`CKSharingParticipantPermissionOption`](cksharingparticipantpermissionoption.md) setting.
+- `allowedParticipantAccessOptions`: The [`CKSharingParticipantAccessOption`](cksharingparticipantaccessoption.md) setting.
 
 
 ---

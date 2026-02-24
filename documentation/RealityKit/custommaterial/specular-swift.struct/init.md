@@ -22,7 +22,7 @@ init(_ value: PhysicallyBasedMaterial.Specular)
 
 This initializer creates an object by copying the values from an existing [`PhysicallyBasedMaterial.Specular`](physicallybasedmaterial/specular-swift.struct.md) object.
 
-RealityKit automatically draws  for physically based materials using the values of various properties, primarily [`roughness`](physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
+RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
 
 ![An illustration showing a sphere and a cube with rounded corners.](https://docs-assets.developer.apple.com/published/3e6c8711de5c00df45e2911543d778f2/CustomMaterial-Specular-swift-struct-init%28_%3A%29-1%402x.png)
 
@@ -55,7 +55,7 @@ The following Metal code demonstrates using the specular `scale` and `texture` v
 
 ## Parameters
 
-- `value`: The    property from a  .
+- `value`: The [`specular`](physicallybasedmaterial/specular-swift.property.md) property from a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md).
 
 ## See Also
 

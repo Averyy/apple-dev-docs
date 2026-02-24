@@ -26,9 +26,9 @@ The new values are retained by `theArray` using the retain callback provided whe
 
 ## Parameters
 
-- `theArray`: The array to which values from   are added. If   is a limited-capacity array, adding   values from   must not cause the capacity limit of   to be exceeded.
-- `otherArray`: An array providing the values to be added to  .
-- `otherRange`: The range within   from which to add the values to  . The range must not exceed the index space of  .
+- `theArray`: The array to which values from `otherArray` are added. If `theArray` is a limited-capacity array, adding `otherRange.length` values from `otherArray` must not cause the capacity limit of `theArray` to be exceeded.
+- `otherArray`: An array providing the values to be added to `theArray`.
+- `otherRange`: The range within `otherArray` from which to add the values to `theArray`. The range must not exceed the index space of `otherArray`.
 
 ## See Also
 

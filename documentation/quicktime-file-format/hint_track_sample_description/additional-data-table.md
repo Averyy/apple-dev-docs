@@ -23,6 +23,10 @@ Table entries are structured like atoms. The structure of table entries is shown
 
 Tagged entries for the ’rtp ’ data format are defined as follows:
 
+- **`'tims'`**: A 32-bit integer specifying the RTP time scale. This entry is required for RTP data.
+- **`'tsro'`**: A 32-bit integer specifying the offset to add to the stored time stamp when sending RTP packets. If this entry is not present, use a random offset, as specified by the IETF. If this entry is `0`, use an offset of `0` (no offset).
+- **`'snro'`**: A 32-bit integer specifying the offset to add to the sequence number when sending RTP packets. If this entry is not present, a random offset should be used, as specified by the IETF. If this entry is `0`, use an offset of `0` (no offset).
+
 ## See Also
 
 - [Size](hint_track_sample_description/size.md)

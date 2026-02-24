@@ -8,6 +8,10 @@ A string bundle ID that identifies the corresponding iOS app that contains a con
 **Availability**:
 - macOS 13.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 To enable extension syncing for your macOS app that contains a content blocker or Safari web extension, specify the bundle ID of the corresponding iOS app that contains the same content blocker or Safari web extension.

@@ -92,7 +92,7 @@ People can individually enable each of the prescriptions. After they respond, th
 - `store`: The HealthKit store where you’re requesting authorization.
 - `objectType`: The data type you want to read. This type must be a type that requires per-object authorization.
 - `predicate`: An optional predicate that further restricts the objects of interest.
-- `trigger`: A value used to trigger the request. This value must be a    variable.   Any change to the variable triggers a request.
+- `trigger`: A value used to trigger the request. This value must be a [`State`](State.md) variable. Any change to the variable triggers a request.
 - `completion`: A block that the system calls after the request is complete. The system passes the result parameter.
 
 ## See Also

@@ -29,7 +29,7 @@ This method is invoked in any of the `present...` methods of the [`UIPrintIntera
 
 ## Parameters
 
-- `printInteractionController`: The shared instance of   that is managing the print job.
+- `printInteractionController`: The shared instance of [`UIPrintInteractionController`](uiprintinteractioncontroller.md) that is managing the print job.
 
 
 ---

@@ -15,7 +15,7 @@ typealias FFProperty = UInt32
 
 #### Discussion
 
-Used for  and .
+Used for **FFDeviceGetForceFeedbackProperty()** and **FFDeviceSetForceFeedbackProperty()**.
 
 ## See Also
 

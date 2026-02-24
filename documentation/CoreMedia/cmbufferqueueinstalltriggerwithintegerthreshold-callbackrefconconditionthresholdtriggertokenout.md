@@ -30,12 +30,12 @@ This function behaves the same way as [`CMBufferQueueInstallTrigger(_:callback:r
 
 ## Parameters
 
-- `queue`:   on which the trigger is being set.
-- `callback`: Callback to be called when the trigger condition becomes true. Can be  , if client intends only to explicitly test the condition.  Cannot be   if triggerTokenOut is NULL, otherwise the trigger would be meaningless.
-- `refcon`: Refcon to be passed to the triggerCallback. Can be   if the callback doesn’t need it, or is                                    itself  .``
+- `queue`: `CMBufferQueue` on which the trigger is being set.
+- `callback`: Callback to be called when the trigger condition becomes true. Can be `NULL`, if client intends only to explicitly test the condition.  Cannot be `NULL` if triggerTokenOut is NULL, otherwise the trigger would be meaningless.
+- `refcon`: Refcon to be passed to the triggerCallback. Can be `NULL` if the callback doesn’t need it, or is                                    itself `NULL`.``
 - `condition`: The condition to be tested when evaluating the trigger. Must be a valid condition for an integer threshold.
 - `threshold`: The integer value to compare against when evaluating the trigger.
-- `triggerTokenOut`: Address where created trigger token will be written. Can be  , if client has no need to explicitly test or remove the trigger. Cannot be   if triggerCallback is NULL, since the trigger would be meaningless then.
+- `triggerTokenOut`: Address where created trigger token will be written. Can be `NULL`, if client has no need to explicitly test or remove the trigger. Cannot be `NULL` if triggerCallback is NULL, since the trigger would be meaningless then.
 
 ## See Also
 

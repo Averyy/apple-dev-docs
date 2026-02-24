@@ -24,7 +24,7 @@ When implementing a user interface for selecting TIFF compression types, use [`g
 
 ## Parameters
 
-- `compression`: A TIFF compression type. For more information, see the constants in  .
+- `compression`: A TIFF compression type. For more information, see the constants in [`NSBitmapImageRep.TIFFCompression`](nsbitmapimagerep/tiffcompression.md).
 
 ## See Also
 

@@ -26,10 +26,66 @@ This method allocates a contiguous region of memory for the multiarray’s shape
 
 The following code creates a 3 x 3 multiarray and sets its contents to the value 3.14159.
 
+**Swift**:
+
+```swift
+// Create a 2D multiarray with dimension 3 x 3.
+let shape3x3 = [3, 3] as [NSNumber]
+
+guard let multiarray3x3 = try? MLMultiArray(shape: shape3x3, dataType: .float) else {
+    // Handle the error.
+    return
+}
+
+print("Before: \(multiarray3x3)")
+
+// Initialize the multiarray.
+for xCoordinate in 0..<3 {
+    for yCoordinate in 0..<3 {
+        let key = [xCoordinate, yCoordinate] as [NSNumber]
+        multiarray3x3[key] = 3.141_59
+    }
+}
+
+print("After: \(multiarray3x3)")
+
+```
+
+**Objective-C**:
+
+```objc
+NSError *error = nil;
+
+// Create a 2D multiarray with dimension 3 x 3.
+NSArray<NSNumber *> *shape3x3 = @[@3, @3];
+
+MLMultiArray *multiarray3x3 = [[MLMultiArray alloc] initWithShape:shape3x3 dataType:MLMultiArrayDataTypeFloat error: &error];
+if (error != nil) {
+    // Handle the error.
+    return;
+}
+
+NSLog(@"Before: %@\n", multiarray3x3);
+
+// Initialize the multiarray.
+for (int x = 0; x < 3; x++) {
+    for (int y = 0; y < 3; y++) {
+        NSNumber *xSubscript = [NSNumber numberWithInt:x];
+        NSNumber *ySubscript = [NSNumber numberWithInt:y];
+
+        [multiarray3x3 setObject:@3.14159
+               forKeyedSubscript:@[xSubscript, ySubscript]];
+    }
+}
+
+NSLog(@"After: %@\n", multiarray3x3);
+
+```
+
 ## Parameters
 
 - `shape`: An integer array that has an element for each dimension in a multiarray that represents its length.
-- `dataType`: An element type defined by  .
+- `dataType`: An element type defined by [`MLMultiArrayDataType`](mlmultiarraydatatype.md).
 
 ## See Also
 

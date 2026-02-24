@@ -17,11 +17,11 @@ static let givenName: NSTextContentType
 ## See Also
 
 - [static let namePrefix: NSTextContentType](nstextcontenttype/nameprefix.md)
-  A property that defines the content in a text input area as a prefix or title, such as .
+  A property that defines the content in a text input area as a prefix or title, such as *Dr*.
 - [static let name: NSTextContentType](nstextcontenttype/name.md)
   A property that defines the content in a text input area as a name.
 - [static let nameSuffix: NSTextContentType](nstextcontenttype/namesuffix.md)
-  A property that defines the content in a text input area as a suffix, such as .
+  A property that defines the content in a text input area as a suffix, such as *Jr*.
 - [static let middleName: NSTextContentType](nstextcontenttype/middlename.md)
   A property that defines the content in a text input area as a middle name.
 - [static let familyName: NSTextContentType](nstextcontenttype/familyname.md)

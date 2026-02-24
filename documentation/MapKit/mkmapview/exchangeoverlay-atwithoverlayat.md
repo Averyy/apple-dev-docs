@@ -25,8 +25,8 @@ If you need to exchange overlays in other map levels, use the [`exchangeOverlay(
 
 ## Parameters
 
-- `index1`: The index of an overlay in the   map level.
-- `index2`: The index of another overlay in the   map level.
+- `index1`: The index of an overlay in the [`MKOverlayLevel.aboveLabels`](mkoverlaylevel/abovelabels.md) map level.
+- `index2`: The index of another overlay in the [`MKOverlayLevel.aboveLabels`](mkoverlaylevel/abovelabels.md) map level.
 
 ## See Also
 

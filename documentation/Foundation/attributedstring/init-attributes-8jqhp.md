@@ -23,7 +23,7 @@ init(_ substring: Substring, attributes: AttributeContainer = .init())
 ## Parameters
 
 - `substring`: A substring to add attributes to.
-- `attributes`: Attributes to apply to  .
+- `attributes`: Attributes to apply to `substring`.
 
 ## See Also
 

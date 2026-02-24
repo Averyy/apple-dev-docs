@@ -29,7 +29,7 @@ func BNNSFusedFilterApplyMultiInputBatch(_ filter: BNNSFilter?, _ batch_size: In
 - `in_stride`: The increment, in values, between inputs.
 - `out`: A pointer to the output data.
 - `out_stride`: The increment, in values, between outputs.
-- `training`: A Boolean value that you set to   during training.
+- `training`: A Boolean value that you set to `true` during training.
 
 ## See Also
 

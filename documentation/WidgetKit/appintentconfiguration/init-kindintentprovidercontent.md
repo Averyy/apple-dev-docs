@@ -23,8 +23,8 @@ Creates a configuration for a widget by using a custom intent to provide user-co
 ## Parameters
 
 - `kind`: A unique string that you choose.
-- `intent`: A custom intent containing user-editable   parameters.
-- `provider`: An object that determines the timing of updates   to the widget’s views.
+- `intent`: A custom intent containing user-editable parameters.
+- `provider`: An object that determines the timing of updates to the widget’s views.
 - `content`: A view that renders the widget.
 
 ## See Also

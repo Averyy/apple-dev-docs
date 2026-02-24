@@ -30,8 +30,8 @@ This function is not recommended for general use because of undocumented special
 
 ## Parameters
 
-- `filter`: The class of local hardware events to enable after a synthetic event is posted. Pass one of the constants listed in  .
-- `state`: The type of interval during which the filter is applied. Pass one of the constants listed in  .
+- `filter`: The class of local hardware events to enable after a synthetic event is posted. Pass one of the constants listed in [`CGEventFilterMask`](cgeventfiltermask.md).
+- `state`: The type of interval during which the filter is applied. Pass one of the constants listed in [`CGEventSuppressionState`](cgeventsuppressionstate.md).
 
 ## See Also
 

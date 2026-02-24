@@ -24,7 +24,7 @@ If removing the device succeeds, the device’s reference count decrements by on
 
 ## Parameters
 
-- `in_device`: The   to disassociate from the box.
+- `in_device`: The [`IOUserAudioDevice`](iouseraudiodevice.md) to disassociate from the box.
 
 ## See Also
 

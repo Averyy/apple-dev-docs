@@ -22,7 +22,7 @@ func setSamplerStates(_ samplers: [(any MTLSamplerState)?], range: Range<Int>)
 ## Parameters
 
 - `samplers`: An array of samplers the method encodes.
-- `range`: A range of indices within the argument buffer for each element in  .   The values correspond to either the index IDs of declarations in   Metal Shading Language (MSL) or the   property   of   instances.
+- `range`: A range of indices within the argument buffer for each element in `samplers`. The values correspond to either the index IDs of declarations in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instances.
 
 ## See Also
 

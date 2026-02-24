@@ -21,7 +21,7 @@ nonisolated
 
 ## Parameters
 
-- `frame`: The rectangle (in the coordinate system of the graphics context) in which   to draw the drawing.
+- `frame`: The rectangle (in the coordinate system of the graphics context) in which to draw the drawing.
 - `sourceRect`: The rectangle (in the drawing coordinate system) from which to draw.
 - `darkUserInterfaceStyle`: Use a dark user interface style for rendering.
 

@@ -23,7 +23,7 @@ func CTRunGetGlyphs(_ run: CTRun, _ range: CFRange, _ buffer: UnsafeMutablePoint
 ## Parameters
 
 - `run`: The run from which to copy glyphs.
-- `range`: The range of glyphs to copy. If the length of the range is set to  , then the copy operation continues from the range’s start index to the end of the run.
+- `range`: The range of glyphs to copy. If the length of the range is set to `0`, then the copy operation continues from the range’s start index to the end of the run.
 - `buffer`: The buffer the glyphs are copied to. The buffer must be allocated to at least the value specified by the range’s length.
 
 ## See Also

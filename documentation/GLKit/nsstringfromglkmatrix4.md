@@ -19,7 +19,7 @@ func NSStringFromGLKMatrix4(_ matrix: GLKMatrix4) -> String
 
 ## Parameters
 
-- `matrix`: A   matrix.
+- `matrix`: A `4x4` matrix.
 
 ## See Also
 

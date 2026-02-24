@@ -55,9 +55,9 @@ This modifier creates a [`Text`](text.md) view for the title on your behalf, and
 
 ## Parameters
 
-- `isPresented`: A binding to a Boolean value that determines whether to   present the alert. When the user presses or taps one of the alert’s   actions, the system sets this value to   and dismisses.
-- `error`: An optional localized Error that is used to generate the   alert’s title.  The system passes the contents to the modifier’s   closures. You use this data to populate the fields of an alert that   you create that the system displays to the user.
-- `actions`: A   returning the alert’s actions.
+- `isPresented`: A binding to a Boolean value that determines whether to present the alert. When the user presses or taps one of the alert’s actions, the system sets this value to `false` and dismisses.
+- `error`: An optional localized Error that is used to generate the alert’s title.  The system passes the contents to the modifier’s closures. You use this data to populate the fields of an alert that you create that the system displays to the user.
+- `actions`: A [`ViewBuilder`](viewbuilder.md) returning the alert’s actions.
 
 ## See Also
 

@@ -26,8 +26,8 @@ As an alternative, Quartz also supports asynchronous notification—see [`CGRegi
 
 ## Parameters
 
-- `rects`: A pointer to a   variable. On return, the variable contains an array of rectangles that bound the refreshed areas, specified in the global display coordinate space. When you no longer need the array, you should deallocate it by calling  .
-- `count`: A pointer to a   variable. On return, the variable contains the number of entries in the returned array of rectangles.
+- `rects`: A pointer to a `CGRect*` variable. On return, the variable contains an array of rectangles that bound the refreshed areas, specified in the global display coordinate space. When you no longer need the array, you should deallocate it by calling [`CGReleaseScreenRefreshRects(_:)`](cgreleasescreenrefreshrects(_:).md).
+- `count`: A pointer to a `CGRectCount` variable. On return, the variable contains the number of entries in the returned array of rectangles.
 
 ## See Also
 

@@ -20,7 +20,7 @@ The system only applies the tint color to the control’s default state (when th
 
 ## Parameters
 
-- `tintColor`: The tint color for the volume control. If  , the system uses the app’s tint color.
+- `tintColor`: The tint color for the volume control. If `nil`, the system uses the app’s tint color.
 
 
 ---

@@ -14,13 +14,13 @@ An overview of the human interface device (HID) descriptor for interfacing betwe
 
 This document provides a reference for manufacturers of third-party brain-computer interface hardware devices who want to build in firmware support for interfacing with Apple devices, such as an iPhone.
 
-A  establishes a signal link between the brain’s electrical activity and an external hardware component. A  is a proprietary controller component for hardware that maintains a direct connection to an implanted or external brain wave sensor array or other similar technology.
+A *brain-computer interface (BCI)* establishes a signal link between the brain’s electrical activity and an external hardware component. A *BCI hardware device* is a proprietary controller component for hardware that maintains a direct connection to an implanted or external brain wave sensor array or other similar technology.
 
-The BCI hardware device interfaces with a , such as an iPhone, functioning as an input type for system control and interaction with on-device assistive technology features like Switch Control and AssistiveTouch. This technology supports user control of the host computing device and its apps through neural activity corresponding to specific mental states or tasks.
+The BCI hardware device interfaces with a *host computing device*, such as an iPhone, functioning as an input type for system control and interaction with on-device assistive technology features like Switch Control and AssistiveTouch. This technology supports user control of the host computing device and its apps through neural activity corresponding to specific mental states or tasks.
 
 #### Hid Descriptor Background
 
-To be universally compatible, a BCI hardware device needs to translate its complex signals into the  protocol. By identifying as a human interface device through a , the BCI hardware device can be recognized by a host computing device, allowing it to work seamlessly without requiring specialized drivers.
+To be universally compatible, a BCI hardware device needs to translate its complex signals into the *human interface device (HID)* protocol. By identifying as a human interface device through a *HID descriptor*, the BCI hardware device can be recognized by a host computing device, allowing it to work seamlessly without requiring specialized drivers.
 
 - The primary benefit of this approach is that assistive technology features, like switch software for those with limited mobility (including quadriplegia and ALS), can recognize the device as a dedicated accessibility control interface. The HID descriptor this document outlines allows the host computing device (such as an iPhone) to interpret signals more intelligently — not just as generic input, but as specific commands to call accessibility functions or represent BCI-specific data visually in the UI.
 - The descriptor acts as a versatile tool, capable of sending button presses, keyboard events, pointer movements, and an extensible collection of custom neural activity data.
@@ -45,8 +45,8 @@ This report provides real-time data on the interpretability and fidelity of neur
 
 This section defines an input report (report ID = 1) for signal quality (BCI Usage 0x02).
 
-- `signalQuality[0]` represents a .
-- `signalQuality[1]` represents , which you scale from a percentage (`0-100`) to the full `0` to `255` range.
+- `signalQuality[0]` represents a *button number ID*.
+- `signalQuality[1]` represents *neural activity strength*, which you scale from a percentage (`0-100`) to the full `0` to `255` range.
 
 ###### Sending Signal Quality Reports
 
@@ -99,7 +99,7 @@ This section defines an input report (report ID = 2) for 32 buttons (HID Button 
 
 - Each button’s state is a single bit: `0` for button up (released) and `1` for button down (pressed).
 - These 32 individual bits are in 4 bytes (`UInt8 buttons[4]`).
-- The button states are , meaning the report sends the current state of all 32 buttons, not just changes.
+- The button states are *absolute*, meaning the report sends the current state of all 32 buttons, not just changes.
 - For iOS, the button events mappings are as follows:
 
 ```c
@@ -199,7 +199,7 @@ This report functions as a cursor onscreen for features such as Switch Control. 
 This section defines an input report (report ID = 3) for a pointer (HID Generic Desktop Usage Page).
 
 - It includes three 8-bit signed values (`SInt8`) for x, y, and z axis movement. These values range from `-127` to `127`.
-- All x, y, and z values are  (deltas) from the previous state, not absolute positions. For example, a value of `5` for x represents a movement of 5 units to the right, not an absolute coordinate of 5.
+- All x, y, and z values are *relative changes* (deltas) from the previous state, not absolute positions. For example, a value of `5` for x represents a movement of 5 units to the right, not an absolute coordinate of 5.
 
 ###### Sending Pointer Event Reports
 
@@ -280,7 +280,7 @@ void send_bci_item_selection_report(void* hid_user_device, uint8_t item_index, u
 
 ##### Report Id 4 Bci Output Scan Information Report
 
-This report allows the host computing device (such as an iPhone with Switch Control on) to provide feedback and contextual information to the BCI hardware device about the current state of the interval-based sequential navigation process, also known as a . The BCI hardware device can use this information to:
+This report allows the host computing device (such as an iPhone with Switch Control on) to provide feedback and contextual information to the BCI hardware device about the current state of the interval-based sequential navigation process, also known as a *switch scanning mode*. The BCI hardware device can use this information to:
 
 - Understand the context of the scanning cycle (for example, number of items or type of control)
 - Select items using the BCI input item selection report ([`Report ID 4: BCI input item selection report`](brain-computer-interface-hid-reference-for-connecting-to-apple-platforms#Report-ID-4-BCI-input-item-selection-report.md))

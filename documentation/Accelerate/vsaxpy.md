@@ -20,10 +20,10 @@ The elements of `x` are multiplied by `alpha` and added to the corresponding ele
 
 ## Parameters
 
-- `n`: Number of elements in each of the vectors   and  ; must be a multiple of 4.
-- `alpha`: A multiplier for the vector  .
-- `x`: A vector array of   values.
-- `y`: A second vector array of   values.
+- `n`: Number of elements in each of the vectors `x` and `y`; must be a multiple of 4.
+- `alpha`: A multiplier for the vector `x`.
+- `x`: A vector array of `float` values.
+- `y`: A second vector array of `float` values.
 
 ## See Also
 

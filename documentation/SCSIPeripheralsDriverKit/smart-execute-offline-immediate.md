@@ -25,8 +25,8 @@ Use this method in your dext to prefill a 16-byte CDB for the standard SMART SCS
 ## Parameters
 
 - `request`: An object that contains the request information.
-- `extendedTest`:   to perform an extended test;  , otherwise.
-- `response`: An empty   object. On return, the framework populates this object with the response information.
+- `extendedTest`: `true` to perform an extended test; `false`, otherwise.
+- `response`: An empty [`SCSIDeviceInParameters`](scsideviceinparameters.md) object. On return, the framework populates this object with the response information.
 - `senseBufAddr`: The address of the sense buffer.
 
 ## See Also

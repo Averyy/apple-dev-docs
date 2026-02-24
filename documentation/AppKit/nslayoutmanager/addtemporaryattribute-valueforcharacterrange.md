@@ -21,7 +21,7 @@ Raises an [`invalidArgumentException`](https://developer.apple.com/documentation
 ## Parameters
 
 - `attrName`: The name of a temporary attribute.
-- `value`: The temporary attribute value associated with  .
+- `value`: The temporary attribute value associated with `attrName`.
 - `charRange`: The range of characters to which the specified attribute-value pair applies.
 
 ## See Also

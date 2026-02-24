@@ -29,7 +29,7 @@ By default, `rect` is computed as
 
 - `tableView`: The table view that sent the message.
 - `cell`: The cell.
-- `rect`: The proposed active area of the tooltip. You can modify   to provide an alternative active area.
+- `rect`: The proposed active area of the tooltip. You can modify `rect` to provide an alternative active area.
 - `tableColumn`: The table column.
 - `row`: The row index.
 - `mouseLocation`: The mouse location.

@@ -27,7 +27,7 @@ If an error occurs and it’s a network error, periodically resend the request u
 ## Parameters
 
 - `leaderboardIdentifier`: The named leaderboard that is the new default leaderboard for the local player.
-- `completionHandler`: The block receives the following parameter:
+- `completionHandler`: A block to call after retrieving scores from the server. The block receives the following parameter: - ***error***: If an error occurs, this error object describes the error. If the operation completes successfully, the value is `nil`.
 
 ## See Also
 

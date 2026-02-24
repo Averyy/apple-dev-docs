@@ -19,13 +19,13 @@ optional func outlineView(_ outlineView: NSOutlineView, objectValueFor tableColu
 
 The item is located in the specified `tableColumn` of the view.
 
-> ❗ **Important**:  While this method is marked as `@optional` in the protocol,  Do not call [`reloadData()`](nstableview/reloaddata().md) from this method.
+> ❗ **Important**:  While this method is marked as `@optional` in the protocol, **you must implement this method if you are not providing the data for the outline view using Cocoa bindings.** Do not call [`reloadData()`](nstableview/reloaddata().md) from this method.
 
 ## Parameters
 
 - `outlineView`: The outline view that sent the message.
-- `tableColumn`: A column in  .
-- `item`: An item in the data source in the specified   of the view.
+- `tableColumn`: A column in `outlineView`.
+- `item`: An item in the data source in the specified `tableColumn` of the view.
 
 ## See Also
 

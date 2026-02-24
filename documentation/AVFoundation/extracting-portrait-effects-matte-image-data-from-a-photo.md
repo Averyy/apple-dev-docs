@@ -14,6 +14,56 @@ The portrait effects matte is stored in the image file alongside the depth data 
 
 Load the portrait effects matte by using [`Image I/O`](https://developer.apple.com/documentation/ImageIO) to extract an auxiliary image of type [`kCGImageAuxiliaryDataTypePortraitEffectsMatte`](https://developer.apple.com/documentation/ImageIO/kCGImageAuxiliaryDataTypePortraitEffectsMatte). Convert this auxiliary image to an auxiliary information dictionary, which contains the matte as metadata of class [`CGImageMetadata`](https://developer.apple.com/documentation/ImageIO/CGImageMetadata). Generate the portrait effects matte object, [`AVPortraitEffectsMatte`](avportraiteffectsmatte.md), by passing the dictionary to [`init(fromDictionaryRepresentation:)`](avportraiteffectsmatte/init(fromdictionaryrepresentation:).md). From this object, you can generate a [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) object to bring the image into viewable forms, like [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage).
 
+**Swift**:
+
+```swift
+func portraitEffectsMatteImage(at path: String) -> UIImage? {
+    let bundlePath = Bundle.main.bundlePath
+    let fileURL = URL(fileURLWithPath: bundlePath).appendingPathComponent(path)
+        
+    guard let source = CGImageSourceCreateWithURL(fileURL as CFURL, nil),
+          let auxiliaryInfoDict = CGImageSourceCopyAuxiliaryDataInfoAtIndex(source, 0, kCGImageAuxiliaryDataTypePortraitEffectsMatte) as? [AnyHashable: Any] else { return nil }
+        
+    // Create a portrait effects matte from the auxiliary information.
+    if let matteData = try? AVPortraitEffectsMatte(fromDictionaryRepresentation: auxiliaryInfoDict),
+       let matteCIImage = CIImage(portaitEffectsMatte: matteData) {
+        // Return a matte image by using the core image representation.
+        return UIImage(ciImage: matteCIImage)
+    }
+    return nil
+}
+```
+
+**Objective-C**:
+
+```objc
+- (UIImage*) portraitEffectsMatteImageAtPath: (NSString*)path
+{
+    // Convert image path to a file URL:
+    NSString* bundlePath = [NSBundle mainBundle].bundlePath;
+    NSString* filePath = [bundlePath stringByAppendingPathComponent:path];
+    CFURLRef urlRef = CFBridgingRetain([NSURL fileURLWithPath:filePath]);
+    
+    // Get reference to the image data:
+    CGImageSourceRef source = CGImageSourceCreateWithURL(urlRef, nil);
+    
+    // Query for auxiliary data of specific type:
+    CFDictionaryRef auxiliaryInfoDict = CGImageSourceCopyAuxiliaryDataInfoAtIndex(source, 0, kCGImageAuxiliaryDataTypePortraitEffectsMatte);
+    
+    NSDictionary* auxDataDictionary = (__bridge NSDictionary*)auxiliaryInfoDict;
+    if (auxDataDictionary) {
+        AVPortraitEffectsMatte* matteData = [AVPortraitEffectsMatte portraitEffectsMatteFromDictionaryRepresentation:auxDataDictionary error:nil];
+        
+        // Load matte data into Core Image for conversion to UIImage:
+        CIImage* matteCIImage = [CIImage imageWithPortaitEffectsMatte:matteData];
+        return [UIImage imageWithCIImage:matteCIImage];
+    }
+    else {
+        return nil;
+    }
+}
+```
+
 With this matte image, your app can:
 
 - Access the uncompressed pixels of the portrait effects matte in memory.

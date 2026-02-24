@@ -26,13 +26,13 @@ The new CFSocket object, or `NULL` if an error occurred. Ownership follows the [
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
-- `protocolFamily`: The protocol family for the socket. If negative or 0 is passed, the socket defaults to  .
-- `socketType`: The socket type to create. If   is   and   is negative or 0, the socket type defaults to  .
-- `protocol`: The protocol for the socket. If   is   and   is negative or 0, the socket protocol defaults to   if   is   or   if   is  .
-- `callBackTypes`: A bitwise-OR combination of the types of socket activity that should cause   to be called. See   for the possible activity values.
-- `callout`: The function to call when one of the activities indicated by   occurs.
-- `context`: A structure holding contextual information for the CFSocket object. The function copies the information out of the structure, so the memory pointed to by   does not need to persist beyond the function call. Can be  .
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `protocolFamily`: The protocol family for the socket. If negative or 0 is passed, the socket defaults to `PF_INET`.
+- `socketType`: The socket type to create. If `protocolFamily` is `PF_INET` and `socketType` is negative or 0, the socket type defaults to `SOCK_STREAM`.
+- `protocol`: The protocol for the socket. If `protocolFamily` is `PF_INET` and `protocol` is negative or 0, the socket protocol defaults to `IPPROTO_TCP` if `socketType` is `SOCK_STREAM` or `IPPROTO_UDP` if `socketType` is `SOCK_DGRAM`.
+- `callBackTypes`: A bitwise-OR combination of the types of socket activity that should cause `callout` to be called. See [`CFSocketCallBackType`](cfsocketcallbacktype.md) for the possible activity values.
+- `callout`: The function to call when one of the activities indicated by `callBackTypes` occurs.
+- `context`: A structure holding contextual information for the CFSocket object. The function copies the information out of the structure, so the memory pointed to by `context` does not need to persist beyond the function call. Can be `NULL`.
 
 ## See Also
 

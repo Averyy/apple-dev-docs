@@ -18,7 +18,7 @@ var frameSemantics: ARConfiguration.FrameSemantics { get set }
 
 #### Discussion
 
-You can choose whether ARKit reports information about a particular per-frame metric, or . Before enabling a frame sementic, call [`supportsFrameSemantics(_:)`](arconfiguration/supportsframesemantics(_:).md) to ensure device support.
+You can choose whether ARKit reports information about a particular per-frame metric, or *semantic*. Before enabling a frame sementic, call [`supportsFrameSemantics(_:)`](arconfiguration/supportsframesemantics(_:).md) to ensure device support.
 
 ##### Enable 2d Body Detection
 

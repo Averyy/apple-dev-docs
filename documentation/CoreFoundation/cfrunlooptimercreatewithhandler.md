@@ -30,12 +30,12 @@ A timer needs to be added to a run loop mode before it will fire. To add the tim
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `fireDate`: The time at which the timer should first fire. The fine precision (sub-millisecond at most) of the fire date may be adjusted slightly by the timer if there are implementation reasons to do so.
-- `interval`: The firing interval of the timer. If   or negative, the timer fires once and then is automatically invalidated. The fine precision (sub-millisecond at most) of the interval may be adjusted slightly by the timer if implementation reasons to do so exist.
-- `flags`: Currently ignored. Pass   for future compatibility.
-- `order`: A priority index indicating the order in which run loop timers are processed. Run loop timers currently ignore this parameter. Pass  .
-- `block`: The block invoked when the timer fires. The block takes one argument:
+- `interval`: The firing interval of the timer. If `0` or negative, the timer fires once and then is automatically invalidated. The fine precision (sub-millisecond at most) of the interval may be adjusted slightly by the timer if implementation reasons to do so exist.
+- `flags`: Currently ignored. Pass `0` for future compatibility.
+- `order`: A priority index indicating the order in which run loop timers are processed. Run loop timers currently ignore this parameter. Pass `0`.
+- `block`: The block invoked when the timer fires. The block takes one argument: - **`timer`**: The run loop timer that is firing.
 
 ## See Also
 

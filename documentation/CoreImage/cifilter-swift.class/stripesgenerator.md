@@ -29,6 +29,12 @@ This method generates a vertical stripped line pattern as an image.
 
 The stripes generator filter uses the following properties:
 
+- **`center`**: A [`CIVector`](civector.md) representing the center of the image.
+- **`color0`**: A [`CIColor`](cicolor.md) representing the stripes color.
+- **`color1`**: A [`CIColor`](cicolor.md) representing the background color.
+- **`width`**: A `float` representing the width of the lines as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`sharpness`**: A `float` representing the sharpness of the lines as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that generates a black and white vertical striped image:
 
 ```swift

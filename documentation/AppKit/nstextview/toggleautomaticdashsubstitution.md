@@ -20,7 +20,7 @@ Turning on automatic dash substitution enables automatic conversion of sequences
 
 ## Parameters
 
-- `sender`: The control sending the message. May be  .
+- `sender`: The control sending the message. May be `nil`.
 
 ## See Also
 

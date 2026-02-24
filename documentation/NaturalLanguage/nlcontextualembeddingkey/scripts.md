@@ -3,7 +3,7 @@
 **Framework**: Natural Language  
 **Kind**: property
 
-A key that identifies the scripts in a contextual embedding.
+A key that identifies the writing system that the language uses in a contextual embedding.
 
 **Availability**:
 - iOS 12.0+
@@ -23,9 +23,9 @@ static let scripts: NLContextualEmbeddingKey
 ## See Also
 
 - [static let languages: NLContextualEmbeddingKey](nlcontextualembeddingkey/languages.md)
-  A key that identifies the languages in a contextual embedding.
+  A key that identifies the supported languages in a contextual embedding.
 - [static let revision: NLContextualEmbeddingKey](nlcontextualembeddingkey/revision.md)
-  A key that identifies the revision for a contextual embedding.
+  A key that identifies the version number the contextual embedding uses.
 
 
 ---

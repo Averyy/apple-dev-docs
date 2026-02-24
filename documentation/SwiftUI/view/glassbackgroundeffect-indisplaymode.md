@@ -21,9 +21,9 @@ A view with a glass background.
 
 ## Parameters
 
-- `effect`: A   instance that SwiftUI uses to   the fill the background shape that you specify.
-- `shape`: An   instance that SwiftUI draws behind   the view.
-- `displayMode`: When to display the glass background. The default is   .
+- `effect`: A [`GlassBackgroundEffect`](glassbackgroundeffect.md) instance that SwiftUI uses to the fill the background shape that you specify.
+- `shape`: An [`InsettableShape`](insettableshape.md) instance that SwiftUI draws behind the view.
+- `displayMode`: When to display the glass background. The default is [`GlassBackgroundDisplayMode.always`](glassbackgrounddisplaymode/always.md).
 
 
 ---

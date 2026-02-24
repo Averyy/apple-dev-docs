@@ -21,7 +21,7 @@ A new event to be filled in, or `NULL` if the event could not be created. When y
 
 ## Parameters
 
-- `source`: The event source, or   to use a default source.
+- `source`: The event source, or `NULL` to use a default source.
 
 ## See Also
 

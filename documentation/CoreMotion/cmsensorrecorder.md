@@ -27,6 +27,24 @@ Use a sensor recorder to initiate the gathering of accelerometer data. Later, us
 
 To use a sensor recorder, create an instance of this class and call the [`recordAccelerometer(forDuration:)`](cmsensorrecorder/recordaccelerometer(forduration:).md) method to begin recording data. You do not need to stop the recording process explicitly. The system stops recording automatically when the specified time expires and no other apps extend the recording time. The following example shows how to record 20 minutes worth of accelerometer data:
 
+**Swift**:
+
+```swift
+if CMSensorRecorder.isAccelerometerRecordingAvailable() {
+    let recorder = CMSensorRecorder()
+    recorder.recordAccelerometerForDuration(20 * 60)  // Record for 20 minutes
+}
+```
+
+**Objective-C**:
+
+```objc
+if ([CMSensorRecorder isAccelerometerRecordingAvailable]) {
+   CMSensorRecorder* recorder = [[CMSensorRecorder alloc] init];
+   [recorder recordAccelerometerForDuration:(20 * 60)]; // Record for 20 minutes
+}
+```
+
 > ❗ **Important**:  To use this API, you must include the [`NSMotionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMotionUsageDescription) key in your app’s `Info.plist` file and provide a usage description string for this key. The usage description appears in the prompt that the user must accept the first time the system asks the user to access motion data for your app. If you don’t include a usage description string, your app crashes when you call this API.
 
 ## Topics

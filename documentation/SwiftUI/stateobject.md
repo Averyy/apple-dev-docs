@@ -131,7 +131,7 @@ MyInitializableView(name: name, isEnabled: isEnabled)
     .id(hash)
 ```
 
-Be mindful of the performance cost of reinitializing the state object every time the input changes. Also, changing view identity can have side effects. For example, SwiftUI doesn’t automatically animate changes inside the view if the view’s identity changes at the same time. Also, changing the identity resets  state held by the view, including values that you manage as [`State`](state.md), [`FocusState`](focusstate.md), [`GestureState`](gesturestate.md), and so on.
+Be mindful of the performance cost of reinitializing the state object every time the input changes. Also, changing view identity can have side effects. For example, SwiftUI doesn’t automatically animate changes inside the view if the view’s identity changes at the same time. Also, changing the identity resets *all* state held by the view, including values that you manage as [`State`](state.md), [`FocusState`](focusstate.md), [`GestureState`](gesturestate.md), and so on.
 
 ## Topics
 

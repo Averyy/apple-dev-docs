@@ -21,8 +21,8 @@ func sendPressure(_ pressure: UInt8, onChannel channel: UInt8)
 
 ## Parameters
 
-- `pressure`: The value of the pressure. The valid range is   to  .
-- `channel`: The channel number to send the event to. The valid range is   to  .
+- `pressure`: The value of the pressure. The valid range is `0` to `127`.
+- `channel`: The channel number to send the event to. The valid range is `0` to `15`.
 
 ## See Also
 

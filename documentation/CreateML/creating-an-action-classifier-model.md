@@ -6,15 +6,15 @@ Train a machine learning model to recognize a person’s body movements.
 
 #### Overview
 
-An  is a machine learning model that identifies a person’s body movements in a video. For example, an action classifier you train to classify exercise movements can predict “jumping jacks” when you provide it with a video of a person doing jumping jacks.
+An *action classifier* is a machine learning model that identifies a person’s body movements in a video. For example, an action classifier you train to classify exercise movements can predict “jumping jacks” when you provide it with a video of a person doing jumping jacks.
 
 Create an action classifier with Create ML by gathering example videos of individuals performing each action you want the classifier to recognize and identify. For example, to train an exercise action classifier, gather videos of individuals performing various exercises, such as jumping jacks, squats, and lunges.
 
 ![Flow diagram of two stacks of video files labeled squats and lunges flowing into Create ML, which then produces a Core ML model file named “Action Classifier”.](https://docs-assets.developer.apple.com/published/a2a2cb9e649e38d60cbf42c3d0790baf/creating-an-action-classifier-model-1%402x.png)
 
-Create ML uses [`Vision`](https://developer.apple.com/documentation/Vision) during training to find significant points on a person’s body, called , in each frame of a video. Action classifiers learn to recognize the movement patterns of these points over time. For more information about how to use Vision to locate body landmarks, see [`Detecting Human Body Poses in Images`](https://developer.apple.com/documentation/Vision/detecting-human-body-poses-in-images).
+Create ML uses [`Vision`](https://developer.apple.com/documentation/Vision) during training to find significant points on a person’s body, called *landmarks*, in each frame of a video. Action classifiers learn to recognize the movement patterns of these points over time. For more information about how to use Vision to locate body landmarks, see [`Detecting Human Body Poses in Images`](https://developer.apple.com/documentation/Vision/detecting-human-body-poses-in-images).
 
-The Create ML developer tool helps you train, assess, and preview an action classifier model. You can train multiple models in a single project by configuring a  — a combination of training data and parameters — for each. Once you’re satisfied with an action classifier, export it as a Core ML model file to add it to your Xcode project.
+The Create ML developer tool helps you train, assess, and preview an action classifier model. You can train multiple models in a single project by configuring a *model source* — a combination of training data and parameters — for each. Once you’re satisfied with an action classifier, export it as a Core ML model file to add it to your Xcode project.
 
 At runtime, your app uses the action classifier to identify a person’s action by analyzing a series of video frames from a camera or file.
 
@@ -31,7 +31,7 @@ Training an action classifier with the Create ML developer tool follows the same
 
 ##### Choose a Frame Rate
 
-Before you create an action classifier, decide what  the number of video frames, per second — the destination app uses from a camera or file.
+Before you create an action classifier, decide what *frame rate —* the number of video frames, per second — the destination app uses from a camera or file.
 
 > ❗ **Important**: Your app’s frame rate is a significant factor that affects your action classifier and the training data you’ll need to collect.
 
@@ -43,7 +43,7 @@ Once you’ve determined your action classifier’s frame rate, collect training
 
 Collect at least 50 example videos for each action you want the action classifier to identify. Make sure each example video clearly shows a single person performing the action. For videos of multiple people, ensure the individual performing the action is the largest and most dominant person in the frame.
 
-Additionally, collect example videos for a , which is a group of related actions the action classifier might see but aren’t relevant to your app. Negative classes help action classifiers avoid mistaking irrelevant actions for relevant ones.
+Additionally, collect example videos for a *negative class*, which is a group of related actions the action classifier might see but aren’t relevant to your app. Negative classes help action classifiers avoid mistaking irrelevant actions for relevant ones.
 
 See [`Gathering Training Videos for an Action Classifier`](gathering-training-videos-for-an-action-classifier.md) for more details on collecting high-quality training videos and creating negative classes.
 

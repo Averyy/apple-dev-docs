@@ -30,7 +30,7 @@ This method behaves similarly to  [`string(from:)`](cnpostaladdressformatter/str
 ## Parameters
 
 - `postalAddress`: The postal address to format.
-- `style`: The postal formatting style to use. For a list of possible values, see  .
+- `style`: The postal formatting style to use. For a list of possible values, see [`CNPostalAddressFormatterStyle`](cnpostaladdressformatterstyle.md).
 - `attributes`: The default attributes to use. To learn more, see Formatter.
 
 ## See Also

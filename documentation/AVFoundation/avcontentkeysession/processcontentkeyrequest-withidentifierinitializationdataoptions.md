@@ -28,7 +28,7 @@ Either the `identifier` or `initializationData` parameters must be non-`nil`. If
 
 - `identifier`: The container- and protocol-specific identifier used to obtain a key response.
 - `initializationData`: The container- and protocol-specific data used to obtain a key response.
-- `options`: No options are currently defined. Set this value to  .
+- `options`: No options are currently defined. Set this value to `nil`.
 
 
 ---

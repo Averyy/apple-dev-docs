@@ -32,6 +32,10 @@ object StatusTestErrorValue
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
+## Properties
+
+- `test.error-value` (string) *(required)*: The test status error value.
+
 ## See Also
 
 - [object StatusTestArrayValue](statustestarrayvalue.md)

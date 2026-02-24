@@ -28,7 +28,7 @@ The receiver, initialized by combining the left and right expressions using `sel
 
 - `lhs`: The left hand expression.
 - `rhs`: The right hand expression.
-- `selector`: The selector to use. The method defined by the selector must take a single argument and return a   value.
+- `selector`: The selector to use. The method defined by the selector must take a single argument and return a `BOOL` value.
 
 ## See Also
 

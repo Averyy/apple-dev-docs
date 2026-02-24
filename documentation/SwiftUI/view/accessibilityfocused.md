@@ -27,7 +27,7 @@ The modified view.
 
 ## Parameters
 
-- `condition`: The accessibility focus state to bind. When   accessibility focus moves to the accessibility element of the   modified view, the focus value is set to  .   If the value is set to   programmatically, then accessibility   focus will move to accessibility element of the modified view.   The value will be set to   if accessibility focus leaves   the accessibility element of the modified view,   and accessibility focus will be dismissed automatically if the   value is set to   programmatically.
+- `condition`: The accessibility focus state to bind. When accessibility focus moves to the accessibility element of the modified view, the focus value is set to `true`. If the value is set to `true` programmatically, then accessibility focus will move to accessibility element of the modified view. The value will be set to `false` if accessibility focus leaves the accessibility element of the modified view, and accessibility focus will be dismissed automatically if the value is set to `false` programmatically.
 
 ## See Also
 

@@ -23,7 +23,7 @@ func chartSymbolSizeScale<Range>(range: Range, type: ScaleType? = nil) -> some V
 
 ## Parameters
 
-- `range`: The range of symbol size that correspond to the   scale domain.
+- `range`: The range of symbol size that correspond to the scale domain.
 - `type`: The scale type.
 
 ## See Also

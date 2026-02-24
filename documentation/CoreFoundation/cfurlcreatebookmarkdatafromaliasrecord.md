@@ -20,7 +20,7 @@ The bookmark data for the alias record.
 
 ## Parameters
 
-- `allocatorRef`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
+- `allocatorRef`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `aliasRecordDataRef`: The alias record.
 
 ## See Also

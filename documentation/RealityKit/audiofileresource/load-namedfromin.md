@@ -22,7 +22,7 @@ Loads a preconfigured AudioFileResource from a Reality Composer Pro project with
 
 #### Discussion
 
-> ❗ **Important**: The name provided  be unique.
+> ❗ **Important**: The name provided **must** be unique.
 
 
 ---

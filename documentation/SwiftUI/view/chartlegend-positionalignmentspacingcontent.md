@@ -24,8 +24,8 @@ func chartLegend<Content>(position: AnnotationPosition = .automatic, alignment: 
 ## Parameters
 
 - `position`: Configures the position of the legend.
-- `alignment`: Alignment of the legend within the space   available to it. Use   for default alignment.
-- `spacing`: Distance between the legend and the chart.   Use   for the default spacing.
+- `alignment`: Alignment of the legend within the space available to it. Use `nil` for default alignment.
+- `spacing`: Distance between the legend and the chart. Use `nil` for the default spacing.
 - `content`: The content of the legend.
 
 ## See Also

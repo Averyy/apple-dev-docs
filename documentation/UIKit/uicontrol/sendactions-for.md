@@ -24,7 +24,7 @@ You call this method when you want the control to perform the actions associated
 
 ## Parameters
 
-- `controlEvents`: A bitmask with flags that specify the control events for which the control sends action messages. See   for bitmask constants.
+- `controlEvents`: A bitmask with flags that specify the control events for which the control sends action messages. See [`UIControl.Event`](uicontrol/event.md) for bitmask constants.
 
 ## See Also
 

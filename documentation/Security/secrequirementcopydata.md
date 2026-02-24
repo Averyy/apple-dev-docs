@@ -26,7 +26,7 @@ You can extract the binary blob from the [`CFData`](https://developer.apple.com/
 ## Parameters
 
 - `requirement`: A valid code requirement object.
-- `flags`: Optional flags; see   for possible values. Pass   for standard behavior.
+- `flags`: Optional flags; see [`SecCSFlags`](seccsflags.md) for possible values. Pass [`kSecCSDefaultFlags`](seccsflags/kseccsdefaultflags.md) for standard behavior.
 - `data`: On return, the code requirement in the form of a binary blob.
 
 

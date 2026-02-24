@@ -14,6 +14,10 @@ A dictionary that describes disk space the content cache uses.
 object ContentCachingInformationResponse.StatusResponse.CacheDetails
 ```
 
+## Properties
+
+- `Category Name` (integer) *(required)*: The amount of disk space, in bytes, that this category of cached content uses.
+
 ## See Also
 
 - [object ContentCachingInformationResponse.StatusResponse.AlertsForPeerFilterRanges](contentcachinginformationresponse/statusresponse-data.dictionary/alertsforpeerfilterranges-data.dictionary.md)

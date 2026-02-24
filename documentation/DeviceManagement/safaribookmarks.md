@@ -81,6 +81,10 @@ This configuration applies a set of managed bookmarks: two bookmarks and one boo
 - [object SafariBookmarksBookmarkGroupObject](safaribookmarksbookmarkgroupobject.md)
   A group of managed bookmarks.
 
+## Properties
+
+- `ManagedBookmarks` ([SafariBookmarksBookmarkGroupObject]): A dictionary that specifies a set of managed bookmarks.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

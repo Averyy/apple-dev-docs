@@ -22,7 +22,7 @@ init(_ callback: (inout Path) -> ())
 
 ## Parameters
 
-- `callback`: The Swift function that will be called to   initialize the new path.
+- `callback`: The Swift function that will be called to initialize the new path.
 
 ## See Also
 

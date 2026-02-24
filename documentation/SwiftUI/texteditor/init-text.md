@@ -43,7 +43,7 @@ The default text editor doesn’t support rich text, such as styling of individu
 
 ## Parameters
 
-- `text`: A   to the variable containing the   text to edit.
+- `text`: A [`Binding`](binding.md) to the variable containing the text to edit.
 
 
 ---

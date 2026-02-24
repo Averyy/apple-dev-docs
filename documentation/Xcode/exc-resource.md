@@ -10,6 +10,11 @@ If the `Exception Note` field contains `NON-FATAL CONDITION`, this means the ope
 
 The crash report lists the specific resource in the `Exception Subtype` field:
 
+- **`CPU` and `CPU_FATAL`**: A thread in the process used too much CPU over a short period of time.
+- **`MEMORY`**: The process crossed a memory limit imposed by the system. This may be a precursor to termination for excess memory usage.
+- **`IO`**: The process caused an excessive amount of disk writes over a short period of time.
+- **`WAKEUPS`**: Threads in the process woke up too many times per second, which consumes battery life.
+
 Excessive wake-ups can come from calling thread-to-thread communication APIs more often than expected; these APIs include [`perform(_:on:with:waitUntilDone:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/perform(_:on:with:waitUntilDone:)), [`async(execute:)`](https://developer.apple.com/documentation/Dispatch/DispatchQueue/async(execute:)), and [`dispatch_async`](https://developer.apple.com/documentation/Dispatch/dispatch_async). Because the communication that triggers this exception is happening so frequently, crash reports usually include multiple background threads with very similar backtraces that indicate the origin of the thread communication. See [`Modernizing Grand Central Dispatch Usage`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2017/706/) for how to manage concurrent workloads more efficiently.
 
 ## See Also

@@ -23,6 +23,27 @@ class let openSettingsURLString: String
 
 Create a URL from this value and pass it to the [`open(_:options:completionHandler:)`](uiapplication/open(_:options:completionhandler:).md) method to launch the Settings app and display your app’s custom settings, if it has any.
 
+**Swift**:
+
+```swift
+// Create the URL that deep links to your app's custom settings.
+if let url = URL(string: UIApplication.openSettingsURLString) {
+    // Ask the system to open that URL.
+    await UIApplication.shared.open(url)
+}
+```
+
+**Objective-C**:
+
+```objc
+// Create the URL that deep links to your app's custom settings.
+NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
+// Ask the system to open that URL.
+[[UIApplication sharedApplication] openURL:url
+                                   options:@{}
+                         completionHandler:nil];
+```
+
 For design guidance, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/settings/).
 
 ## See Also

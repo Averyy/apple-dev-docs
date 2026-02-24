@@ -22,15 +22,15 @@ func CMAudioSampleBufferCreateWithPacketDescriptionsAndMakeDataReadyHandler(_ al
 
 ## Parameters
 
-- `allocator`: The allocator to use to create a sample buffer object. Pass   to use the default allocator.
-- `dataBuffer`: A block buffer that contains the media data. This argument can be  , such as for a block buffer that doesn’t yet have backing memory or data.
+- `allocator`: The allocator to use to create a sample buffer object. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the default allocator.
+- `dataBuffer`: A block buffer that contains the media data. This argument can be `NULL`, such as for a block buffer that doesn’t yet have backing memory or data.
 - `dataReady`: A Boolean value that indicates whether the buffer already contains the data.
-- `formatDescription`: A description of the media data’s format. Must not be  .
-- `numSamples`: The number of samples in the sample buffer. Must not be  .
-- `presentationTimeStamp`: The timestamp of the first sample in the buffer. Must be a numeric  .
-- `packetDescriptions`: An array of packet descriptions, one for each of sample. This value may   if you know the samples have a constant size and number of frames per packet.
-- `sampleBufferOut`: On return, a new   object.
-- `makeDataReadyHandler`: A block for the system to call to make the data ready for use. This argument can be  .
+- `formatDescription`: A description of the media data’s format. Must not be `NULL`.
+- `numSamples`: The number of samples in the sample buffer. Must not be `0`.
+- `presentationTimeStamp`: The timestamp of the first sample in the buffer. Must be a numeric [`CMTime`](cmtime.md).
+- `packetDescriptions`: An array of packet descriptions, one for each of sample. This value may `NULL` if you know the samples have a constant size and number of frames per packet.
+- `sampleBufferOut`: On return, a new [`CMSampleBuffer`](cmsamplebuffer.md) object.
+- `makeDataReadyHandler`: A block for the system to call to make the data ready for use. This argument can be `NULL`.
 
 ## Topics
 

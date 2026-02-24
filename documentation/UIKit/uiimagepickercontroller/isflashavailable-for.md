@@ -22,7 +22,7 @@ class func isFlashAvailable(for cameraDevice: UIImagePickerController.CameraDevi
 
 ## Parameters
 
-- `cameraDevice`: A   constant indicating the camera whose flash capability you want to know.
+- `cameraDevice`: A [`UIImagePickerController.CameraDevice`](uiimagepickercontroller/cameradevice-swift.enum.md) constant indicating the camera whose flash capability you want to know.
 
 ## See Also
 

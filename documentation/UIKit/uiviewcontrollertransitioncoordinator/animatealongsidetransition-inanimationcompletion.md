@@ -33,9 +33,9 @@ This method returns [`false`](https://developer.apple.com/documentation/Swift/fa
 
 ## Parameters
 
-- `view`: The view (or one of its ancestors) in which the specified animations take place. This parameter must not be  .
-- `animation`: The block has no return value and takes the following parameter:
-- `completion`: The block of code to execute after the transition finishes. You may specify   for this parameter. The block has no return value and takes the following parameter:
+- `view`: The view (or one of its ancestors) in which the specified animations take place. This parameter must not be `nil`.
+- `animation`: A block containing the animations you want to perform. These animations run in the same context as the transition animations and therefore have the same default attributes. You may specify `nil` for this parameter. The block has no return value and takes the following parameter: - **context**: The contextual information for performing the animations. Use this object to get the animation-related information. For more information, see [`UIViewControllerTransitionCoordinatorContext`](uiviewcontrollertransitioncoordinatorcontext.md).
+- `completion`: The block of code to execute after the transition finishes. You may specify `nil` for this parameter. The block has no return value and takes the following parameter: - **context**: The contextual information for performing the animations. Use this object to get the animation-related information. For more information, see [`UIViewControllerTransitionCoordinatorContext`](uiviewcontrollertransitioncoordinatorcontext.md).
 
 ## See Also
 

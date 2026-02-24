@@ -25,10 +25,10 @@ The user explicitly grants access only to items they choose, so photo library ac
 
 - `isPresented`: The binding to whether the Photos picker should be shown.
 - `selection`: All items being shown and selected in the Photos picker.
-- `maxSelectionCount`: The maximum number of items that can be selected. Default is  . Setting it to   means maximum supported by the system.
-- `selectionBehavior`: The selection behavior of the Photos picker. Default is  .
-- `filter`: Types of items that can be shown. Default is  . Setting it to   means all supported types can be shown.
-- `preferredItemEncoding`: The encoding disambiguation policy of selected items. Default is  . Setting it to   means the best encoding determined by the system will be used.
+- `maxSelectionCount`: The maximum number of items that can be selected. Default is `nil`. Setting it to `nil` means maximum supported by the system.
+- `selectionBehavior`: The selection behavior of the Photos picker. Default is `.default`.
+- `filter`: Types of items that can be shown. Default is `nil`. Setting it to `nil` means all supported types can be shown.
+- `preferredItemEncoding`: The encoding disambiguation policy of selected items. Default is `.automatic`. Setting it to `.automatic` means the best encoding determined by the system will be used.
 - `photoLibrary`: The photo library to choose from.
 
 ## See Also

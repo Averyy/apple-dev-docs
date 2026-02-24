@@ -10,6 +10,10 @@ A Boolean value that indicates a widget uses the user’s location information.
 - iPadOS 14.0+
 - macOS 11.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 To access the user’s location information from a widget, set the value to [`true`](https://developer.apple.com/documentation/Swift/true) in the widget extension’s `Info.plist` file.

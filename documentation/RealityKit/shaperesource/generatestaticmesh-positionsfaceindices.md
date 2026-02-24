@@ -30,7 +30,7 @@ The triangle mesh is pre-processed into an optimized format before being used by
 ## Parameters
 
 - `positions`: An array of vertex positions containing discrete points on the mesh.
-- `faceIndices`: An array of integers used to index into the position array.   Each three indices define a polygon in the mesh.
+- `faceIndices`: An array of integers used to index into the position array. Each three indices define a polygon in the mesh.
 
 
 ---

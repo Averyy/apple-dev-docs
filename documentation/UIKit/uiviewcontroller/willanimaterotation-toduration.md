@@ -26,7 +26,7 @@ By the time this method is called, the [`interfaceOrientation`](uiviewcontroller
 
 ## Parameters
 
-- `toInterfaceOrientation`: The new orientation for the user interface. The possible values are described in  .
+- `toInterfaceOrientation`: The new orientation for the user interface. The possible values are described in [`UIInterfaceOrientation`](uiinterfaceorientation.md).
 - `duration`: The duration of the pending rotation, measured in seconds.
 
 ## See Also

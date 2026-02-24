@@ -26,7 +26,7 @@ The map view calls this method at the end of a change to the map’s visible reg
 ## Parameters
 
 - `mapView`: The map view with the visible region that changes.
-- `animated`: If  , the map view animates the change to the new region.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), the map view animates the change to the new region.
 
 ## See Also
 

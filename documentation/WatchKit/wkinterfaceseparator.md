@@ -20,6 +20,18 @@ Use [`WKInterfaceSeparator`](wkinterfaceseparator.md) to manipulate a separator 
 
 Do not subclass or create instances of this class yourself. Instead, define outlets in your interface controller class and connect them to the corresponding objects in your storyboard file. For example, to refer to a separator object in your interface, define a property with the following syntax in your interface controller class:
 
+**Swift**:
+
+```swift
+@IBOutlet weak var mySeparator: WKInterfaceSeparator!
+```
+
+**Objective-C**:
+
+```objc
+@property (weak, nonatomic) IBOutlet WKInterfaceSeparator* mySeparator;
+```
+
 During the initialization of your interface controller, WatchKit creates any needed separator objects and assigns them to their connected outlets. At that point, you can use those objects to make changes to the onscreen text.
 
 ##### Interface Builder Configuration Options

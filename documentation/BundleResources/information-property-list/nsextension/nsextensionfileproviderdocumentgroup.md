@@ -10,6 +10,10 @@ The identifier of a shared container that can be accessed by a Document Picker e
 - iPadOS 8.0+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [NSExtensionFileProviderActions](information-property-list/nsextension/nsextensionfileprovideractions.md)

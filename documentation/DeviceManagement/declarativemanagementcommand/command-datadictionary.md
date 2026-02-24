@@ -19,6 +19,12 @@ The command to enable your server to support declarative management or trigger a
 object DeclarativeManagementCommand.Command
 ```
 
+## Properties
+
+- `Data` (data): The base64-encoded declarative management JSON request using a [`TokensResponse`](tokensresponse.md).
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

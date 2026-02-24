@@ -26,12 +26,12 @@ A new CFError object. Ownership follows the [`The Create Rule`](https://develope
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
-- `domain`: A CFString that identifies the error domain. If this reference is   or is otherwise not a valid CFString, the behavior is undefined.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `domain`: A CFString that identifies the error domain. If this reference is `NULL` or is otherwise not a valid CFString, the behavior is undefined.
 - `code`: A CFIndex that identifies the error code. The code is interpreted within the context of the error domain.
-- `userInfoKeys`: An array of   CFStrings used as keys in creating the userInfo dictionary. The value of this parameter can be   if   is  .
-- `userInfoValues`: An array of   CF types used as values in creating the userInfo dictionary.  The value of this parameter can be   if   is  .
-- `numUserInfoValues`: The number of keys and values in the   and   arrays.
+- `userInfoKeys`: An array of `numUserInfoValues` CFStrings used as keys in creating the userInfo dictionary. The value of this parameter can be `NULL` if `numUserInfoValues` is `0`.
+- `userInfoValues`: An array of `numUserInfoValues` CF types used as values in creating the userInfo dictionary.  The value of this parameter can be `NULL` if `numUserInfoValues` is `0`.
+- `numUserInfoValues`: The number of keys and values in the `userInfoKeys` and `userInfoValues` arrays.
 
 ## See Also
 

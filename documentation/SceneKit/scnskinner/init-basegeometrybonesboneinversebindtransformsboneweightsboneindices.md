@@ -31,10 +31,10 @@ To use the skinner object in a scene, assign it to the [`skinner`](scnnode/skinn
 ## Parameters
 
 - `baseGeometry`: The geometry whose surface the skinner’s animation skeleton deforms.
-- `bones`: An array of   objects, each representing a bone or control point for the animation skeleton.
-- `boneInverseBindTransforms`: An array of   objects containing   transforms, each of which corresponds to a node in the   array. Each value is the inverse of the bone node’s transform from bind space (that is, of the concatenation of all transforms from the skeleton root down to that bone) in the skeleton’s default pose.
-- `boneWeights`: The geometry source defining the influence of each bone on the positions of vertices in the geometry. For details, see the   property.
-- `boneIndices`: The geometry source defining the mapping from bone indices in skeleton data to the skinner’s bones array. For details, see the   property.
+- `bones`: An array of [`SCNNode`](scnnode.md) objects, each representing a bone or control point for the animation skeleton.
+- `boneInverseBindTransforms`: An array of [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) objects containing [`SCNMatrix4`](scnmatrix4-swift.struct.md) transforms, each of which corresponds to a node in the [`bones`](scnskinner/bones.md) array. Each value is the inverse of the bone node’s transform from bind space (that is, of the concatenation of all transforms from the skeleton root down to that bone) in the skeleton’s default pose.
+- `boneWeights`: The geometry source defining the influence of each bone on the positions of vertices in the geometry. For details, see the [`boneWeights`](scnskinner/boneweights.md) property.
+- `boneIndices`: The geometry source defining the mapping from bone indices in skeleton data to the skinner’s bones array. For details, see the [`boneIndices`](scnskinner/boneindices.md) property.
 
 
 ---

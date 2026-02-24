@@ -26,7 +26,7 @@ An array containing the media selection options from `array` that match the `loc
 
 ## Parameters
 
-- `mediaSelectionOptions`: An array of   objects to be filtered.
+- `mediaSelectionOptions`: An array of [`AVMediaSelectionOption`](avmediaselectionoption.md) objects to be filtered.
 - `locale`: The locale that must be matched for a media selection option to be copied to the output array.
 
 ## See Also

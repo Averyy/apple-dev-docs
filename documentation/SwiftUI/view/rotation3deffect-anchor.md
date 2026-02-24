@@ -33,7 +33,7 @@ During an animation, this modifier uses spherical linear interpolation, which pr
 ## Parameters
 
 - `rotation`: A rotation to apply to the view’s content.
-- `anchor`: The unit point within the view about which to perform   the rotation. The default value is  .
+- `anchor`: The unit point within the view about which to perform the rotation. The default value is [`center`](unitpoint3d/center.md).
 
 ## See Also
 

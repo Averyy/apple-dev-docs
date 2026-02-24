@@ -20,8 +20,8 @@ func setIndicatorImage(_ image: UIImage?, forPage page: Int)
 
 ## Parameters
 
-- `image`: The image to use instead of the preferred image. Use   to reset the image to  .
-- `page`: The index of the page. A value that’s greater than or equal to   and less than  .
+- `image`: The image to use instead of the preferred image. Use `nil` to reset the image to [`preferredIndicatorImage`](uipagecontrol/preferredindicatorimage.md).
+- `page`: The index of the page. A value that’s greater than or equal to `0` and less than [`numberOfPages`](uipagecontrol/numberofpages.md).
 
 ## See Also
 

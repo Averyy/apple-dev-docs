@@ -4,6 +4,11 @@
 
 #### Overview
 
+- **Containing profile atom**: Track (video), movie
+- **`part-ID`**: `0x20202020` (universal feature)
+- **`feature-code`**: `'m4vo'`
+- **`feature-value`**: Unsigned `int(32)` where the least significant 8 bits hold the `video_object_type_indication` found in the `VideoObjectLayer` (Described in ISO/IEC 14496-2, subclause 6.2.3). The `VideoObjectLayer` is found in the MPEG-4 Elementary Stream Descriptor Atom within the `'esds'` sample description atom of the video sample description for the QuickTime video codec of type `'mp4v'`.
+
 #### Feature Values
 
 The value is a video object type constant that indicates a set of video tools. The list of video object type constants is defined in specification ISO/IEC 14496-2, subclause 6.3.3. The least significant 8 bits hold the value. The most significant 24 bits should be set to `0`.

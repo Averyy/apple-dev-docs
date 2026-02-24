@@ -30,7 +30,7 @@ You can monitor the status of an export by calling the [`states(updateInterval:)
 
 ## Parameters
 
-- `url`: An output location to write the exported media. You can use the   property of   to determine an appropriate file extension for the specified file type.
+- `url`: An output location to write the exported media. You can use the [`preferredFilenameExtension`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/preferredFilenameExtension) property of [`UTType`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct) to determine an appropriate file extension for the specified file type.
 - `fileType`: The type of file for the session to write.
 - `isolation`: The isolation context.
 

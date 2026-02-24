@@ -22,7 +22,7 @@ An object of the class `toClass` representing the value specified by `value`. Re
 ## Parameters
 
 - `value`: The value to coerce.
-- `toClass`: The class with which to represent  .
+- `toClass`: The class with which to represent `value`.
 
 ## See Also
 

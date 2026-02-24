@@ -29,6 +29,10 @@ This method applies the morphology rectangle minimum filter to an image. The eff
 
 The morphology rectangle minimum filter uses the following properties:
 
+- **width**: A `float` representing the width in pixels of the working area as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **height**: A `float` representing the height in pixels of the working area as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **inputImage**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
+
 The following code creates a filter that adds an intense blur to the palm trees input image:
 
 ```swift

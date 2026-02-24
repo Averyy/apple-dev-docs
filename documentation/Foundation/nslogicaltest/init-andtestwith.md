@@ -21,7 +21,7 @@ An `NSLogicalTest` object initialized to perform an `AND` operation with the `NS
 
 ## Parameters
 
-- `subTests`: An array of   objects representing Boolean expressions.
+- `subTests`: An array of `NSSpecifierTest` objects representing Boolean expressions.
 
 ## See Also
 

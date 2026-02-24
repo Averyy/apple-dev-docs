@@ -26,9 +26,9 @@ You call this method in your implementation of [`enumerateDirectory(_:startingAt
 
 - `name`: The item’s name.
 - `itemType`: The type of the item.
-- `itemID`: The item’s identifier. Typically this is an inode number, or one of the constants defined by   like  .
-- `nextCookie`: A value to indicate the next entry in the directory to enumerate. FSKit passes this value as the   parameter on the next call to  . Use whatever value is appropriate for your implementation; the value is opaque to FSKit.
-- `attributes`: The item’s attributes. Pass   if the enumeration call didn’t request attributes.
+- `itemID`: The item’s identifier. Typically this is an inode number, or one of the constants defined by [`FSItem.Identifier`](fsitem/identifier.md) like [`FSItem.Identifier.rootDirectory`](fsitem/identifier/rootdirectory.md).
+- `nextCookie`: A value to indicate the next entry in the directory to enumerate. FSKit passes this value as the `cookie` parameter on the next call to [`enumerateDirectory(_:startingAt:verifier:attributes:packer:replyHandler:)`](fsvolume/operations/enumeratedirectory(_:startingat:verifier:attributes:packer:replyhandler:).md). Use whatever value is appropriate for your implementation; the value is opaque to FSKit.
+- `attributes`: The item’s attributes. Pass `nil` if the enumeration call didn’t request attributes.
 
 ## See Also
 

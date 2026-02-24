@@ -29,6 +29,66 @@ Refer to the following sections to determine supported channels and requirements
 
 ##### Example Request and Response
 
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>RequestType</key>
+        <string>AvailableOSUpdates</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_AvailableOSUpdates</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>AvailableOSUpdates</key>
+    <array>
+        <dict>
+            <key>AllowsInstallLater</key>
+            <false/>
+            <key>Build</key>
+            <string>17A576</string>
+            <key>DownloadSize</key>
+            <integer>251607570</integer>
+            <key>HumanReadableName</key>
+            <string>iOS 13.0</string>
+            <key>InstallSize</key>
+            <integer>1809842176</integer>
+            <key>IsCritical</key>
+            <false/>
+            <key>ProductKey</key>
+            <string>iOSUpdate17A576</string>
+            <key>ProductName</key>
+            <string>iOS</string>
+            <key>RestartRequired</key>
+            <true/>
+            <key>Version</key>
+            <string>13.0</string>
+        </dict>
+    </array>
+    <key>CommandUUID</key>
+    <string>0001_AvailableOSUpdates</string>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>00008020-000915083C80012E</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -36,6 +96,10 @@ Refer to the following sections to determine supported channels and requirements
   The command to get a list of available operating-system updates for a device.
 - [object AvailableOSUpdatesResponse](availableosupdatesresponse.md)
   A response from the device after it processes the command to get a list of available operating-system updates for a device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

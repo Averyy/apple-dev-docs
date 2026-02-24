@@ -31,7 +31,7 @@ var SparseOrderUser: SparseOrder_t { get }
 - [var SparseOrderMTMetis: SparseOrder_t](sparseordermtmetis.md)
   Specifies type of fill-reducing ordering.
 - [var SparseOrderCOLAMD: SparseOrder_t](sparseordercolamd.md)
-  The column AMD ordering for .
+  The column AMD ordering for *AᵀA*.
 
 
 ---

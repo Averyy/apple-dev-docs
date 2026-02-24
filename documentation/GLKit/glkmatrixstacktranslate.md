@@ -20,9 +20,9 @@ func GLKMatrixStackTranslate(_ stack: GLKMatrixStack, _ tx: Float, _ ty: Float, 
 ## Parameters
 
 - `stack`: A matrix stack.
-- `tx`: The amount to translate the position along the  -axis.
-- `ty`: The amount to translate the position along the  -axis.
-- `tz`: The amount to translate the position along the  -axis.
+- `tx`: The amount to translate the position along the `x`-axis.
+- `ty`: The amount to translate the position along the `y`-axis.
+- `tz`: The amount to translate the position along the `z`-axis.
 
 ## See Also
 

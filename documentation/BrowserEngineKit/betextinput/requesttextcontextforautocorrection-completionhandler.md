@@ -32,7 +32,7 @@ The system calls this to get extra context around the currently selected text. C
 
 ## Parameters
 
-- `completionHandler`: A block you call to supply the context as a  .
+- `completionHandler`: A block you call to supply the context as a [`BETextDocumentContext`](betextdocumentcontext.md).
 
 ## See Also
 

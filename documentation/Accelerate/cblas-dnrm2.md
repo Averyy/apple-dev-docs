@@ -26,9 +26,9 @@ func cblas_dnrm2(_ N: __LAPACK_int, _ X: UnsafePointer<Double>?, _ INCX: __LAPAC
 
 ## Parameters
 
-- `N`: Length of vector  .
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
+- `N`: Length of vector `X`.
+- `X`: Vector `X`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
 
 ## See Also
 

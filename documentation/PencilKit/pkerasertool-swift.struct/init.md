@@ -24,7 +24,7 @@ This initializer creates a new eraser tool object.
 
 ## Parameters
 
-- `eraserType`: A constant that determines how the eraser affects drawn content. For a list of possible values, see  .
+- `eraserType`: A constant that determines how the eraser affects drawn content. For a list of possible values, see [`PKEraserTool.EraserType`](pkerasertool-swift.struct/erasertype-swift.enum.md).
 
 ## See Also
 

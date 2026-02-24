@@ -20,7 +20,7 @@ static func installing(progress: Double?) -> ManagedContentOfferState
 
 ## Parameters
 
-- `progress`: The progress of the install from   to  .   represents indeterminate progress.
+- `progress`: The progress of the install from `0.0` to `1.0`. `nil` represents indeterminate progress.
 
 ## See Also
 

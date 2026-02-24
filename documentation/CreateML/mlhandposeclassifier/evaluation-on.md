@@ -20,7 +20,7 @@ func evaluation(on annotatedImages: MLHandPoseClassifier.DataSource) throws -> M
 
 ## Parameters
 
-- `annotatedImages`: An   instance.
+- `annotatedImages`: An [`MLHandPoseClassifier.DataSource`](mlhandposeclassifier/datasource.md) instance.
 
 ## See Also
 

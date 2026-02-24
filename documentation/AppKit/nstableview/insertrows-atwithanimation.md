@@ -25,7 +25,7 @@ Calling this method multiple times within the same [`beginUpdates()`](nstablevie
 ## Parameters
 
 - `indexes`: The final positions of the new rows to be inserted.
-- `animationOptions`: The animation displayed during the insert. See   for the possible values that can be combined using the C bitwise OR operator.
+- `animationOptions`: The animation displayed during the insert. See [`NSTableView.AnimationOptions`](nstableview/animationoptions.md) for the possible values that can be combined using the C bitwise OR operator.
 
 ## See Also
 

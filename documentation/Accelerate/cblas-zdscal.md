@@ -28,8 +28,8 @@ func cblas_zdscal(_ N: __LAPACK_int, _ ALPHA: Double, _ X: OpaquePointer?, _ INC
 
 - `N`: The number of elements in the vector.
 - `ALPHA`: The constant scaling factor.
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
+- `X`: Vector `x`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
 
 ## See Also
 

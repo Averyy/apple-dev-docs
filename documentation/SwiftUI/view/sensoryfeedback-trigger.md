@@ -43,7 +43,7 @@ When the value changes, the new version of the closure will be called, so any ca
 ## Parameters
 
 - `trigger`: A value to monitor for changes to determine when to play.
-- `feedback`: A closure to determine whether to play the feedback and   what type of feedback to play when   changes.
+- `feedback`: A closure to determine whether to play the feedback and what type of feedback to play when `trigger` changes.
 
 ## See Also
 

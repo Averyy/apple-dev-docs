@@ -26,7 +26,7 @@ This method informs only the specific extension of the tab activation. If the in
 ## Parameters
 
 - `activatedTab`: The tab that has become active.
-- `previousTab`: The tab that was active before. This parameter can be   if there was no previously active tab.
+- `previousTab`: The tab that was active before. This parameter can be `nil` if there was no previously active tab.
 
 
 ---

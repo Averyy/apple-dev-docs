@@ -21,7 +21,7 @@ struct DetectionOptions
 
 ## Parameters
 
-- `sensitivityLevel`: One of  . This value is used to determine how “aggressive” the voice activity detection (VAD) model will be.
+- `sensitivityLevel`: One of [`SpeechDetector.SensitivityLevel`](speechdetector/sensitivitylevel.md). This value is used to determine how “aggressive” the voice activity detection (VAD) model will be.
 
 ## Topics
 

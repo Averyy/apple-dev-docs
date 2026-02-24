@@ -23,7 +23,7 @@ Creates a command with the specified title, subtitle, image, action, property li
 
 - `title`: The title to display for the command.
 - `subtitle`: The subtitle to display alongside the command’s title.
-- `image`: The image to display next to the command’s title. Only the   menu system supports the display of an image, and only when the app is running in iOS.
+- `image`: The image to display next to the command’s title. Only the [`context`](uimenusystem/context.md) menu system supports the display of an image, and only when the app is running in iOS.
 - `action`: The action to take after a person selects the command.
 - `propertyList`: An object that contains data to associate with the command.
 - `alternates`: An array of alternatives for the command.

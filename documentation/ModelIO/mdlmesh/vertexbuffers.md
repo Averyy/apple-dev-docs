@@ -21,7 +21,7 @@ var vertexBuffers: [any MDLMeshBuffer] { get set }
 
 #### Discussion
 
-A mesh contains vertex data organized in one of two designs: as a  or as an . In a structure of arrays, the mesh contains multiple vertex buffers, each of which provides data for a different vertex attribute, and a single vertex is the union of data from the same index in each of the separate buffers. In an array of structures, the mesh contains a single vertex buffer, and each index in the vertex buffer contains data for all vertex attributes. Use the [`vertexDescriptor`](mdlmesh/vertexdescriptor.md) property to determine the structure of the mesh’s vertex data.
+A mesh contains vertex data organized in one of two designs: as a *structure of arrays* or as an *array of structures*. In a structure of arrays, the mesh contains multiple vertex buffers, each of which provides data for a different vertex attribute, and a single vertex is the union of data from the same index in each of the separate buffers. In an array of structures, the mesh contains a single vertex buffer, and each index in the vertex buffer contains data for all vertex attributes. Use the [`vertexDescriptor`](mdlmesh/vertexdescriptor.md) property to determine the structure of the mesh’s vertex data.
 
 ## See Also
 

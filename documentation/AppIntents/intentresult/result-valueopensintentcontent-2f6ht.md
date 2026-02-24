@@ -22,8 +22,8 @@ static func result<Value, Content>(value: Value, opensIntent: some AppIntent, @V
 
 ## Parameters
 
-- `value`: The value produced by the 
-- `opensIntent`: An   to shows the result of current intent
+- `value`: The value produced by the `AppIntent`
+- `opensIntent`: An `AppIntent` to shows the result of current intent
 - `content`: A custom View to display the result
 
 

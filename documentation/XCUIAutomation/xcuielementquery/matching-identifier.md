@@ -28,7 +28,7 @@ A new query that defines a search that extends the search criteria of the receiv
 ## Parameters
 
 - `elementType`: The element type to match.
-- `identifier`: An optional string to match against any one of each element’s identifying properties:  ,  ,  ,  , or  .
+- `identifier`: An optional string to match against any one of each element’s identifying properties: [`identifier`](xcuielementattributes/identifier.md), [`title`](xcuielementattributes/title.md), [`label`](xcuielementattributes/label.md), [`value`](xcuielementattributes/value.md), or [`placeholderValue`](xcuielementattributes/placeholdervalue.md).
 
 ## See Also
 

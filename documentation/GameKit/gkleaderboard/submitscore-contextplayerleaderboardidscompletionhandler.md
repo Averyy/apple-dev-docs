@@ -31,7 +31,7 @@ class func submitScore(_ score: Int, context: Int, player: GKPlayer, leaderboard
 - `context`: An integer value that your game uses.
 - `player`: The player who earns the score.
 - `leaderboardIDs`: The IDs that Game Center uses for the leaderboards to submit the score to.
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block that GameKit calls when this method adds the score. The block receives the following parameters: - **error**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

@@ -13,6 +13,10 @@ The restrictions that apply to the set of assets that download immediately after
 - tvOS 18.4+
 - visionOS 2.4+
 
+
+
+**Type**: object
+
 #### Discussion
 
 This key is required to use Background Assets.

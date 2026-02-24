@@ -29,7 +29,7 @@ A new date, or nil if a date could not be calculated with the given input.
 - `component`: A single component to add.
 - `value`: The value of the specified component to add.
 - `date`: The starting date.
-- `wrappingComponents`: If  , the component should be incremented and wrap around to zero/one on overflow, and should not cause higher components to be incremented. The default value is  .
+- `wrappingComponents`: If `true`, the component should be incremented and wrap around to zero/one on overflow, and should not cause higher components to be incremented. The default value is `false`.
 
 ## See Also
 

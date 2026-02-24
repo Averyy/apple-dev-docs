@@ -29,6 +29,9 @@ This method applies the luminosity-blend mode filter to an image. The effect cre
 
 The luminosity-blend mode filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in the image having accurate gray colors while other colors are added from the background image:
 
 ```swift

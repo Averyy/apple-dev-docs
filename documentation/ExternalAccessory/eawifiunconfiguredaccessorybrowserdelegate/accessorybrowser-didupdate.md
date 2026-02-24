@@ -24,8 +24,8 @@ When the browser state changes, the delegate typically provides feedback to user
 
 ## Parameters
 
-- `browser`: The instance of   that is generating the event.
-- `state`: The current state of the browser. See   for possible values.
+- `browser`: The instance of [`EAWiFiUnconfiguredAccessoryBrowser`](eawifiunconfiguredaccessorybrowser.md) that is generating the event.
+- `state`: The current state of the browser. See [`EAWiFiUnconfiguredAccessoryBrowserState`](eawifiunconfiguredaccessorybrowserstate.md) for possible values.
 
 ## See Also
 

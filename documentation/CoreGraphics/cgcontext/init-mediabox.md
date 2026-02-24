@@ -31,8 +31,8 @@ When you call this function, Core Graphics creates a PDF drawing environment—t
 ## Parameters
 
 - `url`: A Core Foundation URL that specifies where you want to place the resulting PDF file.
-- `mediaBox`: A rectangle that specifies the bounds of the PDF. The origin of the rectangle should typically be  . The   function uses this rectangle as the default page media bounding box. If you pass  ,   uses a default page size of 8.5 by 11 inches (612 by 792 points).
-- `auxiliaryInfo`: A dictionary that specifies any additional information to be used by the PDF context when generating the PDF file, or  . The dictionary is retained by the new context, so on return you may safely release it.
+- `mediaBox`: A rectangle that specifies the bounds of the PDF. The origin of the rectangle should typically be `(0,0)`. The `CGPDFContextCreateWithURL` function uses this rectangle as the default page media bounding box. If you pass `NULL`, `CGPDFContextCreateWithURL` uses a default page size of 8.5 by 11 inches (612 by 792 points).
+- `auxiliaryInfo`: A dictionary that specifies any additional information to be used by the PDF context when generating the PDF file, or `NULL`. The dictionary is retained by the new context, so on return you may safely release it.
 
 ## See Also
 

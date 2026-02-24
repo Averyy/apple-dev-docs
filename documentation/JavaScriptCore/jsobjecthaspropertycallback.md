@@ -40,8 +40,8 @@ If this callback is `NULL`, the system uses the [`getProperty`](jsclassdefinitio
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The   to search for the property.
-- `propertyName`: A   that contains the name of the property to find.
+- `object`: The [`JSObjectRef`](jsobjectref.md) to search for the property.
+- `propertyName`: A [`JSStringRef`](jsstringref.md) that contains the name of the property to find.
 
 ## See Also
 

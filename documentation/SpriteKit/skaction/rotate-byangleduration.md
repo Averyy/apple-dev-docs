@@ -30,6 +30,18 @@ When the action executes, the node’s [`zRotation`](sknode/zrotation.md) proper
 
 This action is reversible; the reverse is created as if the following code is executed:
 
+**Swift**:
+
+```swift
+let action = SKAction.rotate(byAngle: -radians, duration: sec)
+```
+
+**Obj-C**:
+
+```objc
+[SKAction rotateByAngle: -radians duration: sec];
+```
+
 ## Parameters
 
 - `radians`: The amount to rotate the node, in radians.

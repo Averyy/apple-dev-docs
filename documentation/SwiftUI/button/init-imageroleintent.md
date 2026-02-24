@@ -25,10 +25,10 @@ This initializer creates a [`Label`](label.md) view on your behalf, and treats t
 
 ## Parameters
 
-- `title`: A string that describes the purpose of the button’s  .
+- `title`: A string that describes the purpose of the button’s `intent`.
 - `image`: The image resource to lookup.
-- `role`: An optional semantic role describing the button. A value of    means that the button doesn’t have an assigned role.
-- `intent`: The   to execute.
+- `role`: An optional semantic role describing the button. A value of `nil` means that the button doesn’t have an assigned role.
+- `intent`: The `AppIntent` to execute.
 
 ## See Also
 

@@ -22,7 +22,7 @@ func containsAllocation(_ anAllocation: any MTLAllocation) -> Bool
 
 ## Parameters
 
-- `anAllocation`: A resource allocation, such as an  ,  , or  .
+- `anAllocation`: A resource allocation, such as an [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), or [`MTLHeap`](mtlheap.md).
 
 ## See Also
 

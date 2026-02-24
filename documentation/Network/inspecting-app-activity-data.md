@@ -103,6 +103,17 @@ A file exported from iOS or iPadOS contains another set of dictionaries that hav
 
 The dictionary includes the following keys to describe the network activity:
 
+- **`domain`**: The domain of the network connection.
+- **`firstTimeStamp`**: The time of the first connection to this domain.
+- **`context`**: The website that made the connection, if applicable.
+- **`timeStamp`**: The time of the most recent connection.
+- **`domainType`**: When the associated value is `1`, the domain has been identified as potentially collecting information across apps and sites, and potentially profiling users. A value of `2` means that the domain hasn’t been identified as such.
+- **`initiatedType`**: Whether the app (`AppInitiated`) or the user (`NonAppInitiated`) initiated the connection.
+- **`hits`**: The number of times the app contacted the domain in the last seven days.
+- **`type`**: An associated value of `networkActivity` means that this dictionary describes network activity data.
+- **`domainOwner`**: The owner of the domain, if applicable.
+- **`bundleID`**: The bundle identifier of the initiating app.
+
 When deciding how to set the value for the `initiatedType` key, the system attributes connections made from a web browser in your app, like when you instantiate an [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController), to the user. Otherwise, the system considers any connection that your app makes with the [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system), or lower-level interfaces like the [`Network`](Network.md) framework, as app-initiated. This includes user data that you load from a server in direct response to a user action.
 
 You can change the associated value of this key when you make a general network request by setting a property. For example, when creating a [`URLRequest`](https://developer.apple.com/documentation/Foundation/URLRequest), set the [`attribution`](https://developer.apple.com/documentation/Foundation/URLRequest/attribution-swift.property) property; when using an [`NWConnection`](nwconnection.md) instance, call the [`nw_parameters_set_attribution(_:_:)`](nw_parameters_set_attribution(_:_:).md) function. However, only change the attribution for connections that the user directly and completely controls, such as when the user enters a URL or taps or clicks a URL that they can read. For more information about network attribution, see [`Indicating the source of network activity`](indicating-the-source-of-network-activity.md).

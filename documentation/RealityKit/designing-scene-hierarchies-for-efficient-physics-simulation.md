@@ -20,7 +20,7 @@ For scenes created in Reality Composer, minimize the use of groups for objects t
 
 ##### Assign a Physics Origin
 
-By default, RealityKit uses the scene’s root entity as the origin of the physics simulation and simulates objects at their actual size. You can alternatively designate a different entity in your scene to be the  by using the [`physicsOrigin`](arview/physicsorigin.md) property of your [`ARView`](arview.md). Designating an entity as the physics origin means that all physics calculations are relative to the specified entity rather than the scene’s root entity. For more information about when to specify a separate physics origin, see [`Handling different-sized objects in physics simulations`](handling-different-sized-objects-in-physics-simulations.md).
+By default, RealityKit uses the scene’s root entity as the origin of the physics simulation and simulates objects at their actual size. You can alternatively designate a different entity in your scene to be the *physics origin* by using the [`physicsOrigin`](arview/physicsorigin.md) property of your [`ARView`](arview.md). Designating an entity as the physics origin means that all physics calculations are relative to the specified entity rather than the scene’s root entity. For more information about when to specify a separate physics origin, see [`Handling different-sized objects in physics simulations`](handling-different-sized-objects-in-physics-simulations.md).
 
 ```swift
 arView.physicsOrigin = entity
@@ -44,7 +44,7 @@ This example shows how to retrieve a named entity from your Reality Composer sce
 
 ##### Prefer Impulses Over Forces
 
-RealityKit provides two different mechanisms for applying force to an entity:  and . An impulse represents a constant amount of force applied over a specific unit of time. RealityKit applies forces for the entire duration of the current frame, but it applies an impulse all at once. Using forces gives different results depending on the current rendering framerate, while applying an impulse gives consistent results regardless of the framerate. Using impulses results in consistent, predictable behavior on any device at any frame rate.
+RealityKit provides two different mechanisms for applying force to an entity: *forces* and *impulses*. An impulse represents a constant amount of force applied over a specific unit of time. RealityKit applies forces for the entire duration of the current frame, but it applies an impulse all at once. Using forces gives different results depending on the current rendering framerate, while applying an impulse gives consistent results regardless of the framerate. Using impulses results in consistent, predictable behavior on any device at any frame rate.
 
 Additionally, the effect of adding a force isn’t visible until after the next simulation update occurs, while the result of applying an impulse is visible immediately.
 

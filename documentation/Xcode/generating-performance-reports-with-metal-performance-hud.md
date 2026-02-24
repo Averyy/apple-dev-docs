@@ -34,6 +34,15 @@ export MTL_HUD_REPORT_URL=<path>
 
 Each performance report contains a list of collapsable sections. The complete list is below:
 
+- **Report info**: Details basic metadata about the report, such as the duration of data collection, the start and end frames, the total number of frames collected, and memory usage at the beginning and end of the collection period.
+- **Frame interval distribution**: Contains a frame interval distribution table and frame rate statistics, such as 99% high and 1% low.
+- **Performance insights**: Details performance insights if the HUD detects them during data collection. Certain insights also add additional tables, such as a frame encoding table if the HUD detects frequent render target changes.
+- **Top labeled command buffers and encoders**: Contains a table of most GPU-intensive command buffers and encoders with a label.
+- **Metrics**: Contains a table of performance metrics reported by the HUD, including the average, minimum, and maximum values.
+- **Frame timing**: Contains a table of the CPU and GPU times of all command buffers and encoders for the last frame of the report.
+- **Frame encoding**: Contains a table of the CPU encoding sequence for the last frame of the report. Color attachments are color-coded to help you find patterns and opportunities to merge render passes.
+- **Shader compilation**: Contains a table of the shaders compiled and backend compilation time for the duration of the report, as well as an additional table containing all shaders compiled since the app launch.
+
 ## See Also
 
 - [Inspecting live resources at runtime](inspecting-live-resources-at-runtime.md)

@@ -26,7 +26,7 @@ The default implementation of this method does nothing. Subclasses must override
 ## Parameters
 
 - `timeStamp`: The timestamp of the event. Use the timestamp of the report element that is the source of the event.
-- `stylusData`: A structure containing the stylus data. For more information, see  .
+- `stylusData`: A structure containing the stylus data. For more information, see [`IOHIDDigitizerStylusData`](iohiddigitizerstylusdata.md).
 
 ## See Also
 

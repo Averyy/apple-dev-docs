@@ -37,9 +37,9 @@ To determine the number of characters in the paragraph:
 
 - `string`: The string containing the specified range of characters.
 - `range`: The range of characters to consider. The specified range must not exceed the length of the string.
-- `parBeginIndex`: On return, the index of the first character of the containing paragraph. Pass   if you do not want this result.
-- `parEndIndex`: On return, the index of the first character of the paragraph after the specified range. Pass   if you do not want this result.
-- `contentsEndIndex`: On return, the index of the last character of the containing paragraph, excluding any paragraph-separator characters. Pass   if you are not interested in this result.
+- `parBeginIndex`: On return, the index of the first character of the containing paragraph. Pass `NULL` if you do not want this result.
+- `parEndIndex`: On return, the index of the first character of the paragraph after the specified range. Pass `NULL` if you do not want this result.
+- `contentsEndIndex`: On return, the index of the last character of the containing paragraph, excluding any paragraph-separator characters. Pass `NULL` if you are not interested in this result.
 
 
 ---

@@ -24,14 +24,14 @@ This method performs a USB device request (USB 2.0, section 9.3) asynchronously 
 
 ## Parameters
 
-- `bmRequestType`: The characteristics of the device request. See the   macro for information about how to construct this request.
+- `bmRequestType`: The characteristics of the device request. See the [`USBmakebmRequestType`](https://developer.apple.com/documentation/iokit/usbmakebmrequesttype) macro for information about how to construct this request.
 - `bRequest`: The request you want to make.
 - `wValue`: Request-specific data.
 - `wIndex`: Request-specific data.
 - `wLength`: The number of bytes to transfer, if there’s a data stage.
 - `dataBuffer`: The memory descriptor to use for the request’s data phase, if any.
-- `completion`: An   object that contains the method to call when the request finishes.
-- `completionTimeoutMs`: The timeout duration in milliseconds. If you specify  , the request never times out.
+- `completion`: An [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) object that contains the method to call when the request finishes.
+- `completionTimeoutMs`: The timeout duration in milliseconds. If you specify `0`, the request never times out.
 
 ## See Also
 

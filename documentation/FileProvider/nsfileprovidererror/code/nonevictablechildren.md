@@ -25,6 +25,11 @@ The [`NSFileProviderManager`](nsfileprovidermanager.md) throws this error when y
 
 The [`underlyingErrors`](https://developer.apple.com/documentation/Foundation/CocoaError/underlyingErrors) array contains the following possible values:
 
+- **`EBUSY`**: The item has an open file descriptor.
+- **`EMLINK`**: The item has too many hard links.
+- **[`NSFileProviderError.Code.nonEvictable`](nsfileprovidererror/code/nonevictable.md)**: The File Provider has marked the item as nonevictable.
+- **[`NSFileProviderError.Code.unsyncedEdits`](nsfileprovidererror/code/unsyncededits.md)**: The item contains unsynced changes.
+
 Each error has an [`NSURLErrorKey`](https://developer.apple.com/documentation/Foundation/NSURLErrorKey) to identify the file or directory that the error affects.
 
 ## See Also

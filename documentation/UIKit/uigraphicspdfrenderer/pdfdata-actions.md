@@ -30,7 +30,7 @@ You can call this method repeatedly to create multiple PDFs, each of which has i
 
 ## Parameters
 
-- `actions`: A   block that, when invoked by the renderer, executes a set of drawing instructions to create the output PDF.
+- `actions`: A [`UIGraphicsPDFRenderer.DrawingActions`](uigraphicspdfrenderer/drawingactions.md) block that, when invoked by the renderer, executes a set of drawing instructions to create the output PDF.
 
 ## See Also
 

@@ -55,8 +55,8 @@ struct ConfirmEraseItems: View {
 
 ## Parameters
 
-- `isPresented`: A binding to a Boolean value that determines whether   to present the action sheet that you create in the modifier’s    closure. When the user presses or taps the sheet’s default   action button the system sets this value to   dismissing   the sheet.
-- `content`: A closure returning the   to present.
+- `isPresented`: A binding to a Boolean value that determines whether to present the action sheet that you create in the modifier’s `content` closure. When the user presses or taps the sheet’s default action button the system sets this value to `false` dismissing the sheet.
+- `content`: A closure returning the `ActionSheet` to present.
 
 ## See Also
 

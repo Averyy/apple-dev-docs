@@ -10,6 +10,12 @@ A Boolean value that indicates whether your credential provider extension provid
 - iPadOS 17.0+
 - macOS 14.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 ## See Also
 
 - [ProvidesPasskeys](information-property-list/nsextension/nsextensionattributes/ascredentialproviderextensioncapabilities/providespasskeys.md)

@@ -26,7 +26,7 @@ A [`SparseIterativeMethod`](sparseiterativemethod.md) structure that represents 
 
 #### Discussion
 
-Use GMRES to solve  when  is symmetric indefinite or unsymmetric.
+Use GMRES to solve *Ax = b* when *A* is symmetric indefinite or unsymmetric.
 
 For symmetric positive-definite systems, use [`SparseConjugateGradient(_:)`](sparseconjugategradient(_:).md). For rectangular or singular systems, use [`SparseLSMR(_:)`](sparselsmr(_:).md).
 

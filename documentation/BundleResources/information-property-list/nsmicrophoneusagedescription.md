@@ -17,6 +17,10 @@ A message that tells people why the app is requesting access to the device’s m
 
 - [Requesting Authorization for Media Capture on macOS](requesting-authorization-for-media-capture-on-macos.md)
 
+
+
+**Type**: string
+
 #### Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the device’s microphone.

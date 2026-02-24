@@ -25,8 +25,8 @@ The descriptor on autoreleasepool.
 
 ## Parameters
 
-- `kernelSizes`: See   property.
-- `paddingStyle`: See   property.
+- `kernelSizes`: See `kernelSizes` property.
+- `paddingStyle`: See `paddingStyle` property.
 
 
 ---

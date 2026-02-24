@@ -24,7 +24,7 @@ Use this method to create a graphics context for a window or bitmap destination.
 
 ## Parameters
 
-- `attributes`: A dictionary of values associated with the keys described in  . The attributes specify such things as representation format and destination.
+- `attributes`: A dictionary of values associated with the keys described in [`NSGraphicsContext.AttributeKey`](nsgraphicscontext/attributekey.md). The attributes specify such things as representation format and destination.
 
 ## See Also
 

@@ -16,6 +16,14 @@ The endpoint for fetching a configuration declaration.
 - Device Assignment Services ?+
 - VPP License Management ?+
 
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/checkin`
+
+## Parameters
+
+- `identifier` (string) *(required)*: The identifier of the configuration declaration to fetch.
+
 ## See Also
 
 - [declaration/activation/{identifier}](declaration-activation-_identifier_.md)

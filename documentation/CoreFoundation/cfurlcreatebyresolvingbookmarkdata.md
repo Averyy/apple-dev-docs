@@ -38,12 +38,13 @@ For a document-scoped bookmark, any sandboxed app that has access to the bookmar
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `bookmark`: The bookmark data the URL is derived from.
-- `options`: To resolve a security-scoped bookmark to support App Sandbox, you must include (by way of bitwise   operators with any other options in this parameter) the   option.
-- `relativeToURL`: If you are resolving a security-scoped bookmark to obtain a security-scoped URL, use this parameter as follows:
-- `resourcePropertiesToInclude`: An array of resource properties to include when creating the URL. Can be  .
-- `isStale`: If  , the bookmark data is stale.
+- `options`: Options taken into account when resolving the bookmark data. To resolve a security-scoped bookmark to support App Sandbox, you must include (by way of bitwise `OR` operators with any other options in this parameter) the [`cfurlBookmarkResolutionWithSecurityScope`](cfurlbookmarkresolutionoptions/cfurlbookmarkresolutionwithsecurityscope.md) option.
+- `relativeToURL`: The base URL that the bookmark data is relative to. Can be `NULL`. If you are resolving a security-scoped bookmark to obtain a security-scoped URL, use this parameter as follows: - To resolve an app-scoped bookmark, use a value of `nil`.
+- To resolve a document-scoped bookmark, use the *absolute* path (despite this parameter’s name) to the document from which you retrieved the bookmark.
+- `resourcePropertiesToInclude`: An array of resource properties to include when creating the URL. Can be `NULL`.
+- `isStale`: If [`true`](https://developer.apple.com/documentation/Swift/true), the bookmark data is stale.
 - `error`: The error that occurred in the case that the URL cannot be created.
 
 ## See Also

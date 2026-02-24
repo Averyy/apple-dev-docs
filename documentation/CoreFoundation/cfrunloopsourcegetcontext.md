@@ -27,7 +27,7 @@ Run loop sources come in two versions with different-sized context structures. `
 ## Parameters
 
 - `source`: The run loop source to examine.
-- `context`: A pointer to the structure into which the context information for   is to be copied. The information being returned is the same information passed to   when creating  .
+- `context`: A pointer to the structure into which the context information for `source` is to be copied. The information being returned is the same information passed to [`CFRunLoopSourceCreate(_:_:_:)`](cfrunloopsourcecreate(_:_:_:).md) when creating `source`.
 
 ## See Also
 

@@ -18,7 +18,7 @@ func finish(translation: AttributedString?)
 
 ## Parameters
 
-- `translation`: The optional translation result. If   and the source text allows replacement, no replacement takes place. If non-  and the source text doesn’t allow replacement, framework ignores the parameter. It is recommended that providers attempt to preserve any attributes of the source text, but it is not a requirement.
+- `translation`: The optional translation result. If `nil` and the source text allows replacement, no replacement takes place. If non-`nil` and the source text doesn’t allow replacement, framework ignores the parameter. It is recommended that providers attempt to preserve any attributes of the source text, but it is not a requirement.
 
 ## See Also
 

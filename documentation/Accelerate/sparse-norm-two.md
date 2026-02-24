@@ -22,10 +22,10 @@ var SPARSE_NORM_TWO: sparse_norm { get }
 
 #### Discussion
 
-| Matrix element wise | __ |
+| Matrix element wise | *sqrt( sumᵢ,ⱼ (A[i,j])² )*__ |
 | --- | --- |
 | Matrix operator | Largest singular value of matrix, note that the operator [`SPARSE_NORM_TWO`](sparse_norm_two.md) is significantly more expensive than other norm operations.__ |
-| Vector element wise | __ |
+| Vector element wise | *sqrt( sumᵢ (x[i])² )*__ |
 
 ## See Also
 

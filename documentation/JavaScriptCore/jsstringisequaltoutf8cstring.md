@@ -25,7 +25,7 @@ func JSStringIsEqualToUTF8CString(_ a: JSStringRef!, _ b: UnsafePointer<CChar>!)
 
 ## Parameters
 
-- `a`: The   to test.
+- `a`: The [`JSStringRef`](jsstringref.md) to test.
 - `b`: The null-terminated UTF-8 string to test.
 
 ## See Also

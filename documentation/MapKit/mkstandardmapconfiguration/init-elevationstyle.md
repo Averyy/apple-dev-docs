@@ -22,7 +22,7 @@ convenience init(elevationStyle: MKMapConfiguration.ElevationStyle)
 
 ## Parameters
 
-- `elevationStyle`: One of the   modes.
+- `elevationStyle`: One of the [`MKMapConfiguration.ElevationStyle`](mkmapconfiguration/elevationstyle-swift.enum.md) modes.
 
 ## See Also
 

@@ -25,9 +25,9 @@ Use this method to monitor the balance of a specific account.  Provide a `histor
 
 ## Parameters
 
-- `accountID`: A   that identifies a specific account a person has added to the finance store.
-- `token`: An optional   that defines the starting date and time to return records from.
-- `isMonitoring`: A Boolean value that indicates whether the framework should return a   sequence that indicates the changes to the accounts over time. Defaults to  .
+- `accountID`: A [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) that identifies a specific account a person has added to the finance store.
+- `token`: An optional `HistoryToken` that defines the starting date and time to return records from.
+- `isMonitoring`: A Boolean value that indicates whether the framework should return a `History` sequence that indicates the changes to the accounts over time. Defaults to `true`.
 
 ## See Also
 

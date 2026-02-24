@@ -26,9 +26,9 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success or [`GSS_S
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `desired_mech`: The GSS-API mechanism to query.
-- `sasl_mech_name`: A buffer the function fills with the SASL G2 protocol name. Release this buffer with a call to   when you are done with it.
-- `mech_name`: A buffer the function fills with a human readable version of the GSS-API protocol name. Release this buffer with a call to   when you are done with it.
-- `mech_description`: A buffer the function fills with a description of the GSS-API protocol name. Release this buffer with a call to   when you are done with it.
+- `sasl_mech_name`: A buffer the function fills with the SASL G2 protocol name. Release this buffer with a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md) when you are done with it.
+- `mech_name`: A buffer the function fills with a human readable version of the GSS-API protocol name. Release this buffer with a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md) when you are done with it.
+- `mech_description`: A buffer the function fills with a description of the GSS-API protocol name. Release this buffer with a call to [`gss_release_buffer(_:_:)`](gss_release_buffer(_:_:).md) when you are done with it.
 
 ## See Also
 

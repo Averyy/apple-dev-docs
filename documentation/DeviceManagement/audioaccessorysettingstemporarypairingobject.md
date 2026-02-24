@@ -21,6 +21,11 @@ object AudioAccessorySettingsTemporaryPairingObject
 - [object AudioAccessorySettingsTemporaryPairing_ConfigurationObject](audioaccessorysettingstemporarypairing_configurationobject.md)
   A dictionary providing configuration for temporary pairing. Required if `Disabled` isn’t present or is `false`.
 
+## Properties
+
+- `Configuration` (AudioAccessorySettingsTemporaryPairing_ConfigurationObject): A dictionary providing configuration for temporary pairing. Required if `Disabled` isn’t present or is `false`.
+- `Disabled` (boolean): If `true`, temporary pairing of audio accessories is disabled.
+
 
 ---
 

@@ -26,10 +26,10 @@ When you create a compression session, you pass in a callback function to be cal
 ## Parameters
 
 - `outputCallbackRefCon`: The callback’s reference value.
-- `sourceFrameRefCon`: The frame’s reference value, copied from the   argument to  .
-- `status`:   if compression was successful; an error code if compression wasn’t successful.
-- `infoFlags`: The   bit may be set if the frame was dropped.
-- `sampleBuffer`: Contains the compressed frame if compression was successful and the frame wasn’t dropped; otherwise,  .
+- `sourceFrameRefCon`: The frame’s reference value, copied from the `sourceFrameRefCon` argument to [`VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:sourceFrameRefcon:infoFlagsOut:)`](vtcompressionsessionencodeframe(_:imagebuffer:presentationtimestamp:duration:frameproperties:sourceframerefcon:infoflagsout:).md).
+- `status`: `noErr` if compression was successful; an error code if compression wasn’t successful.
+- `infoFlags`: Contains information about the encode operation. The [`asynchronous`](vtencodeinfoflags/asynchronous.md) bit may be set if the encode ran asynchronously. The [`frameDropped`](vtencodeinfoflags/framedropped.md) bit may be set if the frame was dropped.
+- `sampleBuffer`: Contains the compressed frame if compression was successful and the frame wasn’t dropped; otherwise, `NULL`.
 
 ## See Also
 

@@ -29,7 +29,7 @@ Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `
 ## Parameters
 
 - `range`: A range specifying the characters to replace.
-- `str`: A string specifying the characters to replace those in  .
+- `str`: A string specifying the characters to replace those in `range`.
 
 ## See Also
 

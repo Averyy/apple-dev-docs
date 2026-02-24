@@ -30,9 +30,9 @@ The method plays all the animations in the [`availableAnimations`](entity/availa
 ## Parameters
 
 - `animationName`: The name of the animation.
-- `transitionDuration`: The duration in seconds over which the animation   fades in or cross-fades.
-- `startsPaused`: A Boolean that you set to   to return from the call   with the animations paused. Set to   to start the animations right   away.
-- `recursive`: Indicates whether to also play animations on all   descendants of the entity.
+- `transitionDuration`: The duration in seconds over which the animation fades in or cross-fades.
+- `startsPaused`: A Boolean that you set to `true` to return from the call with the animations paused. Set to `false` to start the animations right away.
+- `recursive`: Indicates whether to also play animations on all descendants of the entity.
 
 ## See Also
 

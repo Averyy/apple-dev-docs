@@ -24,7 +24,7 @@ For more details, see [`scopeBarButtonBackgroundImage(for:)`](uisearchbar/scopeb
 
 ## Parameters
 
-- `backgroundImage`: The background image for the scope bar button in  .
+- `backgroundImage`: The background image for the scope bar button in `state`.
 - `state`: A control state.
 
 ## See Also

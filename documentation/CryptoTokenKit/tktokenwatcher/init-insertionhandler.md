@@ -30,7 +30,7 @@ This is the designated initializer.
 
 ## Parameters
 
-- `insertionHandler`: A block to be called each time a token is added. This block takes a single argument:
+- `insertionHandler`: A block to be called each time a token is added. This block takes a single argument: - **tokenID**: The identifier of the added token.
 
 ## See Also
 

@@ -22,8 +22,8 @@ func asyncAfter(deadline: DispatchTime, execute: DispatchWorkItem)
 
 ## Parameters
 
-- `deadline`: The time at which to schedule the work item for execution. Specifying the current time is less efficient than calling the   method directly. Do not specify the value in  ; doing so is undefined.
-- `execute`: The work item containing the task to execute. For information on how to create this work item, see  .
+- `deadline`: The time at which to schedule the work item for execution. Specifying the current time is less efficient than calling the [`async(execute:)`](dispatchqueue/async(execute:).md) method directly. Do not specify the value in [`distantFuture`](dispatchtime/distantfuture.md); doing so is undefined.
+- `execute`: The work item containing the task to execute. For information on how to create this work item, see [`DispatchWorkItem`](dispatchworkitem.md).
 
 ## See Also
 

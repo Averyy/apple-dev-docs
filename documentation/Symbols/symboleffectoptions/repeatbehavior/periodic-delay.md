@@ -26,8 +26,8 @@ A new behavior with the preferred play count and delay using periodic animations
 
 ## Parameters
 
-- `count`: The preferred number of times to play the   effect, or nil to request it play indefinitely. Very   large or small values may be clamped.
-- `delay`: The preferred delay between repetitions,   in seconds, or nil to request the default delay.
+- `count`: The preferred number of times to play the effect, or nil to request it play indefinitely. Very large or small values may be clamped.
+- `delay`: The preferred delay between repetitions, in seconds, or nil to request the default delay.
 
 
 ---

@@ -29,6 +29,13 @@ This filter performs a Canny edge-detection on the input image, producing a blac
 
 The Canny edge-detection filter uses the following properties:
 
+- **`inputImage`**: The [`CIImage`](ciimage.md) to use as an input for the effect.
+- **`gaussianSigma`**: A `float` specifying the sigma of the Gaussian blur to apply, reducing high-frequency noise. Defaults to `1.6`.
+- **`perceptual`**: A `Boolean` specifying whether to use a perceptual color space to compute the edge thresholds. Defaults to `false`.
+- **`thresholdLow`**: A `float` specifying the threshold for weak edges. Defaults to `0.02`.
+- **`thresholdHigh`**: A `float` specifying the threshold for strong edges. Defaults to `0.05`.
+- **`hysteresisPasses`**: The number of hysteresis passes to apply to promote weak edge pixels. Minimum value is `0`, maximum value is `20`, and defaults to `1`.
+
 The following code applies Canny edge-detection to an image:
 
 ```swift

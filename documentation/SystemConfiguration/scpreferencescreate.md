@@ -20,9 +20,9 @@ A reference to the new preferences session. You must release the returned value.
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for this preferences session. If the value is not a valid  , the behavior is undefined. Pass   or   to use the current default  .
+- `allocator`: The allocator to use to allocate memory for this preferences session. If the value is not a valid `CFAllocator`, the behavior is undefined. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the current default `CFAllocator`.
 - `name`: The name of the calling process.
-- `prefsID`: To access the default system preferences, pass in  .
+- `prefsID`: The name of the group of preferences to be accessed or updated. A name that starts with a leading “/” character specifies the absolute path to the file containing the preferences to be accessed. A name that does not start with a leading “/” character specifies a file relative to the default system preferences directory. To access the default system preferences, pass in `NULL`.
 
 ## See Also
 

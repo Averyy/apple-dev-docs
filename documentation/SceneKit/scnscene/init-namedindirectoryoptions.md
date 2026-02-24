@@ -36,7 +36,7 @@ When creating a scene using Xcode’s Scene Editor or an external tool, you shou
 
 - `name`: The name of a scene file in the app bundle.
 - `directory`: The path to the subdirectory of the bundle’s resources directory containing the scene file.
-- `options`: A dictionary of options affecting scene loading, or   for default options. For available keys, see Scene Loading Options.
+- `options`: A dictionary of options affecting scene loading, or `nil` for default options. For available keys, see Scene Loading Options.
 
 ## See Also
 

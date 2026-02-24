@@ -28,6 +28,11 @@ To create your own Thread Border Router, use the ThreadNetwork framework to conf
 
 A Thread network can contain several types of devices that someone can deploy in many combinations:
 
+- **Thread Border Router**: A device that provides a connection between the Thread network and an existing WiFi or Ethernet network. These devices may be standalone, acting solely as routers, or they may support additional functionality. For example, HomePod (second Generation), HomePod Mini, and AppleTV 4K are all examples of Thread Border Routers.
+- **Thread Leader**: A device that manages routers on a Thread network. A Thread network can only have one Thread Leader at any time; member devices select a Thread Leader based on various routing characteristics of the network in order to optimize performance.
+- **End device**: Thread devices located at the endpoints of a Thread network. They can communicate directly with other Thread devices, but don’t operate as routers forwarding packets on their behalf.
+- **Sleepy End device**: End devices that run in low-power mode and are often battery powered. To conserve power they generally only wake up occasionally (which is why they’re referred to as “sleepy”) to report whatever data the device collects. Examples of sleepy devices include battery-powered temperature sensors or air quality monitors.
+
 The following image illustrates the connections between a Border Router, an end device, and a sleepy end device:
 
 ![A Thread Border Router connects wirelessly to two end devices. One is an end device icon that represents a light switch. The other is a sleepy end device icon that represents a wireless, battery-powered sensor.](https://docs-assets.developer.apple.com/published/1c35203952259f42eb47e0efb735ae20/threadnetwork-2%402x.png)

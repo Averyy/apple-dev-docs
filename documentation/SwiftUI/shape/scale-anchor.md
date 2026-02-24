@@ -26,7 +26,7 @@ A scaled form of this shape.
 
 ## Parameters
 
-- `scale`: The multiplication factor used to resize this shape.   A value of   scales the shape to have no size,   scales to half   size in both dimensions,   scales to twice the regular size, and so   on.
+- `scale`: The multiplication factor used to resize this shape. A value of `0` scales the shape to have no size, `0.5` scales to half size in both dimensions, `2` scales to twice the regular size, and so on.
 
 ## See Also
 

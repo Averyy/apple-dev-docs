@@ -57,9 +57,9 @@ The following code shows an example of using this function:
 
 ## Parameters
 
-- `multiplicationAB`: A tuple that contains the vector   and the scalar value   in  .
-- `multiplicationCD`: A tuple that contains the vector   and the scalar value   in  .
-- `result`: The output vector   in  .
+- `multiplicationAB`: A tuple that contains the vector `A` and the scalar value `B` in `E = (A * B) + (C * D)`.
+- `multiplicationCD`: A tuple that contains the vector `C` and the scalar value `D` in `E = (A * B) + (C * D)`.
+- `result`: The output vector `E` in `E = (A * B) + (C * D)`.
 
 ## See Also
 

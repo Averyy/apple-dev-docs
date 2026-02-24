@@ -26,7 +26,7 @@ See [`NSUserInterfaceValidations`](https://developer.apple.com/documentation/App
 
 - `webView`: The web view that sent the message.
 - `item`: The user interface item being validated.
-- `defaultValidation`:   if the web view believes the user interface item is valid; otherwise,  .
+- `defaultValidation`: [`true`](https://developer.apple.com/documentation/Swift/true) if the web view believes the user interface item is valid; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

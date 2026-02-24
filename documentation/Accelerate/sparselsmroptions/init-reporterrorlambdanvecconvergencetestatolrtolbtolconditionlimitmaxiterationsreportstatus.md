@@ -26,9 +26,9 @@ init(reportError: ((UnsafePointer<CChar>) -> Void)?, lambda: Double, nvec: Int32
 - `lambda`: The damping parameter lambda for regularized least squares.
 - `nvec`: The number of vectors to use for local reorthogonalization.
 - `convergenceTest`: The convergence test to use for iterative solve methods.
-- `atol`: The absolute tolerance (default test) or   tolerance (Fong-Saunders test).
+- `atol`: The absolute tolerance (default test) or *A* tolerance (Fong-Saunders test).
 - `rtol`: The relative convergence tolerance (default test only).
-- `btol`: The   tolerance (Fong-Saunders test only).
+- `btol`: The *B* tolerance (Fong-Saunders test only).
 - `conditionLimit`: The condition number limit (Fong-Saunders test only).
 - `maxIterations`: The maximum number of iterations.
 - `reportStatus`: An optional error-reporting routine.

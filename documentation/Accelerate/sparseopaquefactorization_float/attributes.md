@@ -22,7 +22,7 @@ var attributes: SparseAttributes_t
 
 #### Discussion
 
-In particular, the [`transpose`](sparseattributes_t/transpose.md) field indicates whether the object is a factorization of  or .
+In particular, the [`transpose`](sparseattributes_t/transpose.md) field indicates whether the object is a factorization of *A* or *A__ᵀ*.
 
 ## See Also
 

@@ -26,8 +26,8 @@ If you previously registered a class or nib file with the same reuse identifier,
 
 ## Parameters
 
-- `cellClass`: The class of a cell that you want to use in the table (must be a   subclass).
-- `identifier`: The reuse identifier for the cell. This parameter must not be   and must not be an empty string.
+- `cellClass`: The class of a cell that you want to use in the table (must be a [`UITableViewCell`](uitableviewcell.md) subclass).
+- `identifier`: The reuse identifier for the cell. This parameter must not be `nil` and must not be an empty string.
 
 ## See Also
 

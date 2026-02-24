@@ -39,7 +39,7 @@ numbers.publisher
 
 ## Parameters
 
-- `output`: The element to use when replacing  .
+- `output`: The element to use when replacing `nil`.
 
 ## See Also
 

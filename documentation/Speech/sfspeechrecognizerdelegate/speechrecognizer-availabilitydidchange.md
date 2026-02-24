@@ -20,7 +20,7 @@ optional func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabil
 
 ## Parameters
 
-- `speechRecognizer`: The   object whose availability changed.
+- `speechRecognizer`: The [`SFSpeechRecognizer`](sfspeechrecognizer.md) object whose availability changed.
 - `available`: A Boolean value that indicates the new availability of the speech recognizer.
 
 

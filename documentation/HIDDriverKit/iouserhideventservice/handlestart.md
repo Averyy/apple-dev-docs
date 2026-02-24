@@ -25,7 +25,7 @@ The default implemention of this method does nothing.
 
 ## Parameters
 
-- `provider`: The   provider for this object.
+- `provider`: The `IOService` provider for this object.
 
 ## See Also
 

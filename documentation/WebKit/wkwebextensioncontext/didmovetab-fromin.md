@@ -27,7 +27,7 @@ If the window is staying the same, the current window should be specified. This 
 
 - `movedTab`: The tab that was moved.
 - `index`: The old index of the tab within the window.
-- `oldWindow`: The window that the tab was moved from, or   if the tab isn’t moving from an open window.
+- `oldWindow`: The window that the tab was moved from, or `nil` if the tab isn’t moving from an open window.
 
 
 ---

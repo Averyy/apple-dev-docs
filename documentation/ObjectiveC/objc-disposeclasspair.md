@@ -26,7 +26,7 @@ Do not call this function if instances of the `cls` class or any subclass exist.
 
 ## Parameters
 
-- `cls`: The class to be destroyed. This class must have been allocated using  .
+- `cls`: The class to be destroyed. This class must have been allocated using [`objc_allocateClassPair(_:_:_:)`](objc_allocateclasspair(_:_:_:).md).
 
 ## See Also
 

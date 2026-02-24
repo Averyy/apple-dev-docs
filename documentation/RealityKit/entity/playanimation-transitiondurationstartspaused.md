@@ -27,8 +27,8 @@ An animation playback controller that you can use to start and stop the animatio
 ## Parameters
 
 - `animation`: The animation to play.
-- `transitionDuration`: The duration in seconds over which the animation   fades in or cross-fades.
-- `startsPaused`: A Boolean that you set to   to return from the call   with the animation paused. Set to   to start the animation right away.
+- `transitionDuration`: The duration in seconds over which the animation fades in or cross-fades.
+- `startsPaused`: A Boolean that you set to `true` to return from the call with the animation paused. Set to `false` to start the animation right away.
 
 ## See Also
 

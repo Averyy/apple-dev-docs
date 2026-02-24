@@ -26,8 +26,8 @@ You must call [`CMSDecoderFinalizeMessage(_:)`](cmsdecoderfinalizemessage(_:).md
 
 ## Parameters
 
-- `cmsDecoder`: A CMSDecoder reference returned by the   function.
-- `signerIndex`: A number indicating which signer to examine. Signer index numbers start with 0. Use the   function to determine the total number of signers for a message.
+- `cmsDecoder`: A CMSDecoder reference returned by the `CMSDecoderCreate` function.
+- `signerIndex`: A number indicating which signer to examine. Signer index numbers start with 0. Use the [`CMSDecoderGetNumSigners(_:_:)`](cmsdecodergetnumsigners(_:_:).md) function to determine the total number of signers for a message.
 - `timestamp`: The address of an absolute time value where the result should be stored.
 
 

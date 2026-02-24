@@ -22,7 +22,7 @@ To finish the NFC session and dismiss the system-presented UI use `TKSmartCardSl
 ## Parameters
 
 - `message`: Message shown in the system-presented UI
-- `completion`: Completion handler which returns the NFC session of the created slot or an error on failure.   If an NFC slot already exists and current caller is not the initial creator   error is returned.
+- `completion`: Completion handler which returns the NFC session of the created slot or an error on failure. If an NFC slot already exists and current caller is not the initial creator `TKErrorCodeObjectNotFound` error is returned.
 
 
 ---

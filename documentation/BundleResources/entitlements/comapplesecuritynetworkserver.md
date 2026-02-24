@@ -8,6 +8,10 @@ A Boolean value indicating whether your app may listen for incoming network conn
 **Availability**:
 - macOS 10.7+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Use this key to allow other computers to initiate network connections to your sandboxed app.

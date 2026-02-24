@@ -16,7 +16,7 @@ func isEqual(to channel: CWChannel) -> Bool
 
 #### Return Value
 
- if the objects are equal.
+*YES* if the objects are equal.
 
 #### Discussion
 

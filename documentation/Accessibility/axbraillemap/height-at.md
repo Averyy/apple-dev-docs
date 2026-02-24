@@ -26,7 +26,7 @@ A floating-point number between `0.0` and `1.0` that specifies the height of the
 
 ## Parameters
 
-- `point`: The location of the pin to retrieve the height for. The bottom-left of the display   is at  , and the top-right of the display is at  .
+- `point`: The location of the pin to retrieve the height for. The bottom-left of the display is at `{ 0,0 }`, and the top-right of the display is at `{ dimensions.width - 1, dimensions.height - 1}`.
 
 ## See Also
 

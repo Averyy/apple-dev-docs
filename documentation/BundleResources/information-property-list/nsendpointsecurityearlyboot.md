@@ -6,6 +6,10 @@
 **Availability**:
 - macOS 10.15+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [NSEndpointSecurityRebootRequired](information-property-list/nsendpointsecurityrebootrequired.md)

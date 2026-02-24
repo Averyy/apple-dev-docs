@@ -27,7 +27,8 @@ If the specified track time doesn’t map to a sample presentation time, the sys
 ## Parameters
 
 - `trackTime`: The track time of the segment to load.
-- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters:
+- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters: - **segment**: The loaded track segment, or `nil` if an error occurs.
+- **error**: An error object if the request fails; otherwise, `nil`.
 
 ## See Also
 

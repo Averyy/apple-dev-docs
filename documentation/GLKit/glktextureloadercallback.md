@@ -21,6 +21,9 @@ typealias GLKTextureLoaderCallback = (GLKTextureInfo?, (any Error)?) -> Void
 
 The block parameters are defined as follows:
 
+- ***textureInfo***: A texture info object that describes the loaded texture or `nil` if an error occurred.
+- ***error***: If the operation was successful, this value is nil; otherwise, this parameter holds an object that describes the problem that occurred.
+
 ## See Also
 
 - [Texture Loading Options](texture-loading-options.md)

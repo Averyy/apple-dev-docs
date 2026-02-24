@@ -32,6 +32,24 @@ A query can’t be started if the receiver is already running a query or no pred
 
 This method must be called from the receiver’s [`operationQueue`](nsmetadataquery/operationqueue.md) or on the main thread. For example:
 
+**Swift**:
+
+```swift
+let query: NSMetadataQuery = // Initialize and set up a query
+    query.operationQueue?.addOperationWithBlock {
+        query.startQuery()
+}
+```
+
+**Objective-C**:
+
+```objc
+NSMetadataQuery *query = // Initialize and set up a query
+[query.operationQueue addOperationWithBlock:^{
+    [query startQuery];
+}];
+```
+
 ## See Also
 
 - [var isStarted: Bool](nsmetadataquery/isstarted.md)

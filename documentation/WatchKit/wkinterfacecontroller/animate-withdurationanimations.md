@@ -29,7 +29,7 @@ Changes to visible items are animated over the specified duration. If you call t
 ## Parameters
 
 - `duration`: The total duration of the animations, measured in seconds. If you specify a negative value or 0, the changes are made without animating them.
-- `animations`: A block containing the changes to make to objects in the interface. Use this block to change any animatable properties of your interface objects. The block takes no parameters and has no return value. This parameter must not be  .
+- `animations`: A block containing the changes to make to objects in the interface. Use this block to change any animatable properties of your interface objects. The block takes no parameters and has no return value. This parameter must not be `nil`.
 
 
 ---

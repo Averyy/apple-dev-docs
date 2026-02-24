@@ -21,7 +21,7 @@ This method might be invoked if a plug-in is not found, fails to load, or is not
 ## Parameters
 
 - `sender`: The web view that sent this message.
-- `error`: The   dictionary of   may contain additional information about the failure. If the   dictionary is not  , it may contain some or all of these key-value pairs. The value of the   key is a URL string of the   attribute. The value of the   key is a string containing the plug-in’s name. The value for the   key is a URL string of the   attribute. The value of the   key is a string of the   attribute.
+- `error`: The error that occurred during the process of loading that resource. The `userInfo` dictionary of `error` may contain additional information about the failure. If the `userInfo` dictionary is not `nil`, it may contain some or all of these key-value pairs. The value of the `NSErrorFailingURLKey` key is a URL string of the `SRC` attribute. The value of the [`WebKitErrorPlugInNameKey`](webkiterrorpluginnamekey.md) key is a string containing the plug-in’s name. The value for the [`WebKitErrorPlugInPageURLStringKey`](webkiterrorpluginpageurlstringkey.md) key is a URL string of the `PLUGINSPAGE` attribute. The value of the [`WebKitErrorMIMETypeKey`](webkiterrormimetypekey.md) key is a string of the `TYPE` attribute.
 - `dataSource`: The data source for this web view.
 
 ## See Also

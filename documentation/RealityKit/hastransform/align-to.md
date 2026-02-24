@@ -26,8 +26,8 @@ Transformation matrix that has been applied to the `Entity`, in the frame or ref
 
 ## Parameters
 
-- `originPin`: The   to align. It should be one of the pins on the entity.
-- `targetPin`: The   to align to.
+- `originPin`: The `GeometricPin` to align. It should be one of the pins on the entity.
+- `targetPin`: The `GeometricPin` to align to.
 
 ## See Also
 

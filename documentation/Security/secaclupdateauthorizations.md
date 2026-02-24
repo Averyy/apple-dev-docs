@@ -27,7 +27,7 @@ Because an ACL entry is always associated with an access instance, when you modi
 ## Parameters
 
 - `acl`: An ACL object that identifies the access control list entry for which you wish to set authorization tags.
-- `authorizations`: An array of authorization tags. See   for details.
+- `authorizations`: An array of authorization tags. See `CSSM_ACL_AUTHORIZATION_TAG` for details.
 
 
 ---

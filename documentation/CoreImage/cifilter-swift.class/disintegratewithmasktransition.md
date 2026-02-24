@@ -29,6 +29,14 @@ This method applies the disintegrate with mask transition filter to an image. Th
 
 The disintegrate with mask transition filter uses the following properties:
 
+- **`inputImage`**: The starting image with the type [`CIImage`](ciimage.md).
+- **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
+- **`maskImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`shadowRadius`**: A `float` representing the size of the shadow as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`shadowDensity`**: A `float` representing the strength of the shadow as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`shadowOffset`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the size of the shadow from the mask image.
+
 The following code creates a filter that produces a transition between the input and target images starting in the area’s outline in the mask image:
 
 ```swift

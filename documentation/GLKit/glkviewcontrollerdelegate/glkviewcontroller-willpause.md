@@ -19,7 +19,7 @@ optional func glkViewController(_ controller: GLKViewController, willPause pause
 ## Parameters
 
 - `controller`: The controller that is about to change the rendering loop state.
-- `pause`:   if the loop is being paused,   if it is being resumed.
+- `pause`: [`true`](https://developer.apple.com/documentation/Swift/true) if the loop is being paused, [`false`](https://developer.apple.com/documentation/Swift/false) if it is being resumed.
 
 
 ---

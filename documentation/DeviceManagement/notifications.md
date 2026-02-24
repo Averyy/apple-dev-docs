@@ -85,6 +85,10 @@ Specify `com.apple.notificationsettings` as the payload type.
 - [object Notifications.NotificationSettingsItem](notifications/notificationsettingsitem.md)
   The notification settings dictionary.
 
+## Properties
+
+- `NotificationSettings` ([Notifications.NotificationSettingsItem]) *(required)*: An array of notification settings dictionaries.
+
 ## See Also
 
 - [object Accessibility](accessibility.md)

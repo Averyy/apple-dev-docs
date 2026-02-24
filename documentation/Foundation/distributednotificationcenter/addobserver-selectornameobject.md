@@ -22,9 +22,9 @@ This method calls [`addObserver(_:selector:name:object:suspensionBehavior:)`](di
 ## Parameters
 
 - `observer`: An object registering as an observer.
-- `aSelector`: A selector that the notification center sends   to notify when posting the notification.
-- `aName`: The name of the notification for which to register the observer; that is, only notifications with this name are delivered to the observer. When  , the notification center doesn’t use a notification’s name to decide whether to deliver it to the observer.
-- `anObject`: The object whose notifications the observer wants to receive; that is, only notifications sent by this sender are delivered to the observer. When  , the notification center doesn’t use a notification’s sender to decide whether to deliver it to the observer.
+- `aSelector`: A selector that the notification center sends `notificationObserver` to notify when posting the notification.
+- `aName`: The name of the notification for which to register the observer; that is, only notifications with this name are delivered to the observer. When `nil`, the notification center doesn’t use a notification’s name to decide whether to deliver it to the observer.
+- `anObject`: The object whose notifications the observer wants to receive; that is, only notifications sent by this sender are delivered to the observer. When `nil`, the notification center doesn’t use a notification’s sender to decide whether to deliver it to the observer.
 
 ## See Also
 

@@ -33,6 +33,8 @@ init(root: DynamicGenerationSchema, dependencies: [DynamicGenerationSchema]) thr
   Creates a schema for a string enumeration.
 - [init(type: any Generable.Type, description: String?, properties: [GenerationSchema.Property])](generationschema/init(type:description:properties:).md)
   Creates a schema by providing an array of properties.
+- [init(type: any Generable.Type, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [GenerationSchema.Property])](generationschema/init(type:description:representnilexplicitlyingeneratedcontent:properties:).md)
+  Creates a schema by providing an array of properties.
 - [GenerationSchema.Property](generationschema/property.md)
   A property that belongs to a generation schema.
 

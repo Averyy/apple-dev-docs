@@ -20,7 +20,7 @@ convenience init(strokes: [PKStroke])
 
 ## Parameters
 
-- `strokes`: An array of   elements.
+- `strokes`: An array of [`PKStrokeReference`](pkstrokereference.md) elements.
 
 ## See Also
 

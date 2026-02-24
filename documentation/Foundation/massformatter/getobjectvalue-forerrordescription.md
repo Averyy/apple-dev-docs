@@ -32,7 +32,7 @@ You can override this method in a subclass. For more information, see [`Formatte
 
 - `obj`: An output parameter. If overridden, this parameter should contain the object created from the provided string.
 - `string`: A string representation of the object.
-- `error`: An output parameter. If overridden, this parameter should contain a description of any errors that occur. If you do not want to receive error messages, set this parameter to  .
+- `error`: An output parameter. If overridden, this parameter should contain a description of any errors that occur. If you do not want to receive error messages, set this parameter to `NULL`.
 
 ## See Also
 

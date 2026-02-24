@@ -24,6 +24,9 @@ Build and run the sample on an actual device or a simulator device running iOS 1
 
 If you want to add your own streams to test with this sample, add an entry into the `Streams.plist` file in the Xcode project. There are two important keys you need to provide values for:
 
+- **`name`**: The display name of the HLS stream in the sample.
+- **`playlist_url`**: The URL of the HLS stream’s master playlist.
+
 If any of the streams you add aren’t hosted securely, you’ll need to add an Application Transport Security (ATS) exception in the `Info.plist` file in the Xcode project. For more information on ATS and the relevant property list keys see [`NSAppTransportSecurity`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity)
 
 ##### Play a Stream

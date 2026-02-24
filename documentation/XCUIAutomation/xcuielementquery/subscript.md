@@ -23,7 +23,7 @@ subscript(key: String) -> XCUIElement { get }
 
 ## Parameters
 
-- `key`: A string to match against any one of each element’s identifying properties:  ,  ,  ,  , or  .
+- `key`: A string to match against any one of each element’s identifying properties: [`identifier`](xcuielementattributes/identifier.md), [`title`](xcuielementattributes/title.md), [`label`](xcuielementattributes/label.md), [`value`](xcuielementattributes/value.md), or [`placeholderValue`](xcuielementattributes/placeholdervalue.md).
 
 ## See Also
 

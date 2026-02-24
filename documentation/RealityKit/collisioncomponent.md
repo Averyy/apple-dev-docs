@@ -21,7 +21,7 @@ struct CollisionComponent
 
 #### Overview
 
-This component holds the entity’s data related to participating in the scene’s physics simulation. It is also used to calculate collision queries, raycasts, and convex shape casts. Entities can participate in the scene simulation in two different modes: as a  or as a .  A rigid body fully participates in the collision simulation. It affects the velocity and direction of entities it collides. If configured with a rigid body [`mode`](physicsbodycomponent/mode.md) of [`PhysicsBodyMode.dynamic`](physicsbodymode/dynamic.md), it’s own velocity and direction can be affected by other rigid body entities. A trigger entity doesn’t have any impact on the rigid bodies in the scene, but can trigger code or Reality Composer behaviors when a rigid body entity overlaps it.
+This component holds the entity’s data related to participating in the scene’s physics simulation. It is also used to calculate collision queries, raycasts, and convex shape casts. Entities can participate in the scene simulation in two different modes: as a *rigid body* or as a *trigger*.  A rigid body fully participates in the collision simulation. It affects the velocity and direction of entities it collides. If configured with a rigid body [`mode`](physicsbodycomponent/mode.md) of [`PhysicsBodyMode.dynamic`](physicsbodymode/dynamic.md), it’s own velocity and direction can be affected by other rigid body entities. A trigger entity doesn’t have any impact on the rigid bodies in the scene, but can trigger code or Reality Composer behaviors when a rigid body entity overlaps it.
 
 Note the following when considering applying a non-uniform scale to an entity:
 
@@ -31,7 +31,7 @@ Note the following when considering applying a non-uniform scale to an entity:
 
 Turn an entity into a trigger by adding a [`CollisionComponent`](collisioncomponent.md) to it and setting its [`mode`](collisioncomponent/mode-swift.property.md) to [`CollisionComponent.Mode.trigger`](collisioncomponent/mode-swift.enum/trigger.md).
 
-Turn an entity into a  by adding a  [`PhysicsBodyComponent`](physicsbodycomponent.md) to the entity in addition to a [`CollisionComponent`](collisioncomponent.md).  The [`PhysicsBodyComponent`](physicsbodycomponent.md) defines the physical properties of the entity, such as its mass and collision shape.
+Turn an entity into a *rigid body* by adding a  [`PhysicsBodyComponent`](physicsbodycomponent.md) to the entity in addition to a [`CollisionComponent`](collisioncomponent.md).  The [`PhysicsBodyComponent`](physicsbodycomponent.md) defines the physical properties of the entity, such as its mass and collision shape.
 
 The `filter` property defines the entity’s collision filter, which determines which other objects the entity collides with. For more information, see [`Controlling Entity Collisions in RealityKit`](controlling_entity_collisions_in_realitykit.md).
 

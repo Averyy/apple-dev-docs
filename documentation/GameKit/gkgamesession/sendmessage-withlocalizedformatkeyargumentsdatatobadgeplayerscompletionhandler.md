@@ -22,11 +22,11 @@ func sendMessage(withLocalizedFormatKey key: String, arguments: [String], data: 
 ## Parameters
 
 - `key`: A localized string with format tokens.
-- `arguments`: An array containing entries for the format tokens contained by the   parameter.
-- `data`: A   object containing a limited amount of developer determined game information.
-- `players`: A   array containing the players to be messaged.
-- `badgePlayers`: A   indicating whether players are badged when the message is sent.
-- `completionHandler`: A block that is called after the message has been sent.
+- `arguments`: An array containing entries for the format tokens contained by the `key` parameter.
+- `data`: A `Data` object containing a limited amount of developer determined game information.
+- `players`: A `GKCloudPlayer` array containing the players to be messaged.
+- `badgePlayers`: A `Boolean` indicating whether players are badged when the message is sent.
+- `completionHandler`: A block that is called after the message has been sent. - **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is nil. See `GameKit Constants` for a list of error codes specific to GameKit.
 
 ## See Also
 

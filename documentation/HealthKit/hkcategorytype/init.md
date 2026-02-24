@@ -21,7 +21,7 @@ convenience init(_ identifier: HKCategoryTypeIdentifier)
 
 ## Parameters
 
-- `identifier`: An identifier that specifies the type of data to store in the sample. For a complete list of category type identifiers, see  .
+- `identifier`: An identifier that specifies the type of data to store in the sample. For a complete list of category type identifiers, see [`HKCategoryTypeIdentifier`](hkcategorytypeidentifier.md).
 
 
 ---

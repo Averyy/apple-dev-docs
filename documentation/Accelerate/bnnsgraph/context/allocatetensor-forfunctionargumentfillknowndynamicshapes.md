@@ -28,9 +28,9 @@ func allocateTensor(forFunction function: String? = nil, argument: String, fillK
 
 ## Parameters
 
-- `function`: The specific function to create the tensor for. You may set this to   if there is only one function.
+- `function`: The specific function to create the tensor for. You may set this to `nil` if there is only one function.
 - `argument`: The argument to create the tensor for.
-- `fillKnownDynamicShapes`: If  , the function replaces any dynamic shapes   with shapes that will be used on next execution of  , either drawn from default shapes in the    function or supplied by a preceding call to    or  .   Otherwise the function represents dynamically-sized dimensions with a value of   in either shape or stride as appropriate.
+- `fillKnownDynamicShapes`: If `true`, the function replaces any dynamic shapes with shapes that will be used on next execution of `Context`, either drawn from default shapes in the `.mlmodelc` function or supplied by a preceding call to `setDynamicShapes(_:forFunction:)` or `setBatchSize(_:forFunction:)`. Otherwise the function represents dynamically-sized dimensions with a value of `-1` in either shape or stride as appropriate.
 
 
 ---

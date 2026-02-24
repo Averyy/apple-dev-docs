@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: method
 
-Delete the transcript record with the given donation identifier
+Match the transcript record with the given donation identifier
 
 **Availability**:
 - iOS 16.0+
@@ -23,9 +23,9 @@ static func donationIdentifier(_ identifier: IntentDonationIdentifier) -> Intent
 ## See Also
 
 - [static func entityIdentifier(EntityIdentifier) -> IntentDonationMatchingPredicate](intentdonationmatchingpredicate/entityidentifier(_:).md)
-  Delete all transcript records referencing the given AppEntity instance
+  Match all transcript records referencing the given AppEntity instance
 - [static func intentType(any AppIntent.Type, entityIdentifier: EntityIdentifier?) -> IntentDonationMatchingPredicate](intentdonationmatchingpredicate/intenttype(_:entityidentifier:).md)
-  Delete all transcript records for the given AppIntent type, optionally only those referencing a given AppEntity instance identifier
+  Match all transcript records for the given AppIntent type, optionally only those referencing a given AppEntity instance identifier
 
 
 ---

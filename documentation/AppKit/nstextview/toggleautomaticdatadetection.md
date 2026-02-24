@@ -20,7 +20,7 @@ Automatic data detection enables detection of dates, addresses, and phone number
 
 ## Parameters
 
-- `sender`: The control sending the message. May be  .
+- `sender`: The control sending the message. May be `nil`.
 
 ## See Also
 

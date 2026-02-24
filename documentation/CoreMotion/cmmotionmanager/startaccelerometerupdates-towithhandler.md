@@ -29,7 +29,7 @@ You must call [`stopAccelerometerUpdates()`](cmmotionmanager/stopaccelerometerup
 ## Parameters
 
 - `queue`: An operation queue provided by the caller. Because the processed events might arrive at a high rate, using the main operation queue is not recommended.
-- `handler`: A block that is invoked with each update to handle new accelerometer data. The block must conform to the   type.
+- `handler`: A block that is invoked with each update to handle new accelerometer data. The block must conform to the [`CMAccelerometerHandler`](cmaccelerometerhandler.md) type.
 
 ## See Also
 

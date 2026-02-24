@@ -6,7 +6,7 @@ Add, organize, and edit sets of assets in your Xcode project using asset catalog
 
 #### Overview
 
-Asset catalogs help you quickly organize and manage your app’s resources. In an asset catalog, each  represents one resource — like an image, color, or data file — that your app loads at runtime. An asset set contains one or more variations of that resource for different device characteristics, for example, platform, screen size, resolution, appearance, and language. When you refer to a resource in code, the system determines the appropriate variation to display at runtime based on the characteristics of the current device.
+Asset catalogs help you quickly organize and manage your app’s resources. In an asset catalog, each *asset set* represents one resource — like an image, color, or data file — that your app loads at runtime. An asset set contains one or more variations of that resource for different device characteristics, for example, platform, screen size, resolution, appearance, and language. When you refer to a resource in code, the system determines the appropriate variation to display at runtime based on the characteristics of the current device.
 
 ##### Create a New Asset Set
 
@@ -30,7 +30,7 @@ Next, add your resource to the empty asset set. With the new asset set selected 
 
 ![Screenshot of an asset catalog in Xcode. An image set with the name Image contains a single picture of oranges in the 1x well in the detail area.](https://docs-assets.developer.apple.com/published/fde3f2c3641843d417853ca4df14f28c/managing-assets-with-asset-catalogs-2%402x.png)
 
-Asset sets contain one or more  that let you specify variations of your asset for different device characteristics. Each well has a label that describes the specific set of characteristics that apply to it. If you want to provide more variations of your asset, drag each asset file to the corresponding well. You can show additional wells by selecting more options in the Attributes inspector.
+Asset sets contain one or more *wells* that let you specify variations of your asset for different device characteristics. Each well has a label that describes the specific set of characteristics that apply to it. If you want to provide more variations of your asset, drag each asset file to the corresponding well. You can show additional wells by selecting more options in the Attributes inspector.
 
 ##### Create a New Asset Catalog
 

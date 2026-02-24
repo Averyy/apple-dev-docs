@@ -21,10 +21,10 @@ A new mouse event, or `NULL` if the event could not be created. When you no long
 
 ## Parameters
 
-- `source`: An event source taken from another event, or  .
-- `mouseType`: A mouse event type. Pass one of the constants listed in  .
+- `source`: An event source taken from another event, or `NULL`.
+- `mouseType`: A mouse event type. Pass one of the constants listed in [`CGEventType`](cgeventtype.md).
 - `mouseCursorPosition`: The position of the mouse cursor in global coordinates.
-- `mouseButton`: The button that’s changing state. Pass one of the constants listed in  . This parameter is ignored unless the   parameter is  ,  , or  .
+- `mouseButton`: The button that’s changing state. Pass one of the constants listed in [`CGMouseButton`](cgmousebutton.md). This parameter is ignored unless the `mouseType` parameter is `kCGEventOtherMouseDown`, `kCGEventOtherMouseDragged`, or `kCGEventOtherMouseUp`.
 
 ## See Also
 

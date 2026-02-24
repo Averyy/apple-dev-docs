@@ -42,7 +42,7 @@ Chart(data) {
 - `xStart`: The value plotted with x start.
 - `xEnd`: The value plotted with x end.
 - `y`: The value plotted with y.
-- `height`: The bar height.  If   is  , the default bar size will be applied.
+- `height`: The bar height.  If `height` is `nil`, the default bar size will be applied.
 
 ## See Also
 

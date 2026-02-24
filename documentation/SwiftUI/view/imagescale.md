@@ -50,7 +50,7 @@ VStack {
 
 ## Parameters
 
-- `scale`: One of the relative sizes provided by the image scale   enumeration.
+- `scale`: One of the relative sizes provided by the image scale enumeration.
 
 ## See Also
 

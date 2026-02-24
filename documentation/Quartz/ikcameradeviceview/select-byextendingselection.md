@@ -17,7 +17,7 @@ func select(_ indexes: IndexSet!, byExtendingSelection extend: Bool)
 ## Parameters
 
 - `indexes`: The indexes of the files to select.
-- `extend`:   if the selection should be extended, otherwise  .
+- `extend`: [`true`](https://developer.apple.com/documentation/Swift/true) if the selection should be extended, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

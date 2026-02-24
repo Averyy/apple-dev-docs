@@ -31,9 +31,9 @@ If you call this function to retrieve a value that is a Core Foundation object, 
 
 ## Parameters
 
-- `inAudioFileStream`: The ID of the parser from which you wish to obtain data. The parser ID is returned by the   function.
-- `inPropertyID`: A four-character ID indicating the audio file stream property whose value you want to read. See   for possible values.
-- `ioPropertyDataSize`: On input, the size of the buffer in the   parameter. Call the   function to obtain the size of the property value. On output, the number of bytes of the property value returned.
+- `inAudioFileStream`: The ID of the parser from which you wish to obtain data. The parser ID is returned by the [`AudioFileStreamOpen(_:_:_:_:_:)`](audiofilestreamopen(_:_:_:_:_:).md) function.
+- `inPropertyID`: A four-character ID indicating the audio file stream property whose value you want to read. See [`Audio File Stream Properties`](1391506-audio-file-stream-properties.md) for possible values.
+- `ioPropertyDataSize`: On input, the size of the buffer in the `outPropertyData` parameter. Call the [`AudioFileStreamGetPropertyInfo(_:_:_:_:)`](audiofilestreamgetpropertyinfo(_:_:_:_:).md) function to obtain the size of the property value. On output, the number of bytes of the property value returned.
 - `outPropertyData`: On output, the value of the specified property.
 
 ## See Also

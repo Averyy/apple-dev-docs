@@ -25,7 +25,7 @@ A [`JSContextGroupRef`](jscontextgroupref.md) that is the same as `group`.
 
 ## Parameters
 
-- `group`: The   to retain.
+- `group`: The [`JSContextGroupRef`](jscontextgroupref.md) to retain.
 
 ## See Also
 

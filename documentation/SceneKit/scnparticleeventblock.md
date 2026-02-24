@@ -24,7 +24,13 @@ typealias SCNParticleEventBlock = (UnsafeMutablePointer<UnsafeMutableRawPointer>
 
 The block takes the following parameters:
 
+- **data**: An array of floating-point values containing stripes of property data for the system’s particles. The width and format of each data stripe depend on the properties you specify when calling the [`handle(_:forProperties:handler:)`](scnparticlesystem/handle(_:forproperties:handler:).md) method.
+- **dataStride**: An array identifying the offset, in bytes, of each property’s value in the data stripe for each particle. The order of offsets in this array corresponds to the order of the `properties` array you specify when calling the [`handle(_:forProperties:handler:)`](scnparticlesystem/handle(_:forproperties:handler:).md) method.
+- **indices**: An array in which each element is an index that identifies (in the `data` array) the data stripe for each particle affected by the event that caused SceneKit to call the handler block.
+
 When SceneKit calls your handler block for the [`SCNParticleEvent.birth`](scnparticleevent/birth.md) event, you need not use this parameter—at that time, the affected particles are indexed from `0` to the `count` parameter’s value.
+
+- **count**: The number of particles affected by the current event.
 
 Use this block to change properties of individual particles when they are spawned, when they collide with scene geometry, or when they die (that is, reach the end of their life spans and are removed from the scene).
 

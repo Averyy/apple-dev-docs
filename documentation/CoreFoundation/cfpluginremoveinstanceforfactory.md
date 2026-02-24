@@ -26,7 +26,7 @@ If the instance counts of every factory in a plug-in are zero, the plug-in can b
 
 ## Parameters
 
-- `factoryID`: The   object representing the plug-in factory.
+- `factoryID`: The `CFUUID` object representing the plug-in factory.
 
 ## See Also
 

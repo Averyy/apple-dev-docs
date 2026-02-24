@@ -31,7 +31,7 @@ If the array’s contents are all property list objects (`NSString`, `NSData`, `
 ## Parameters
 
 - `url`: The location at which to write the array.
-- `atomically`: If  , the array is written to an auxiliary location, and then the auxiliary location is renamed to  . If  , the array is written directly to  . The   option guarantees that  , if it exists at all, won’t be corrupted even if the system should crash during writing.
+- `atomically`: If [`true`](https://developer.apple.com/documentation/Swift/true), the array is written to an auxiliary location, and then the auxiliary location is renamed to `aURL`. If [`false`](https://developer.apple.com/documentation/Swift/false), the array is written directly to `aURL`. The [`true`](https://developer.apple.com/documentation/Swift/true) option guarantees that `aURL`, if it exists at all, won’t be corrupted even if the system should crash during writing.
 
 ## See Also
 

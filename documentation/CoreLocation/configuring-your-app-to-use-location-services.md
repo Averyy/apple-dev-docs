@@ -76,10 +76,10 @@ Don’t include the [`UIRequiredDeviceCapabilities`](https://developer.apple.com
 
 After you perform the initial checks and verify the authorization status of your app, start the location services you need. Core Location offers several different ways to access location-related information:
 
--  Offer navigation instructions, filter data sets based on location, share someone’s location with friends, or perform other tasks that use someone’s current location. See [`Getting the current location of a device`](getting-the-current-location-of-a-device.md).
--  Alert someone to points-of-interest, deliver location-sensitive reminders, and more. See [`Monitoring the user’s proximity to geographic regions`](monitoring-the-user-s-proximity-to-geographic-regions.md).
--  Offer course-based navigation or display an onscreen compass. See [`Getting heading and course information`](getting-heading-and-course-information.md).
--  Determine someone’s proximity to Bluetooth devices. See [`Determining the proximity to an iBeacon device`](determining-the-proximity-to-an-ibeacon-device.md).
+- **Get the current location.** Offer navigation instructions, filter data sets based on location, share someone’s location with friends, or perform other tasks that use someone’s current location. See [`Getting the current location of a device`](getting-the-current-location-of-a-device.md).
+- **Detect when the device enters or exits a geographical region.** Alert someone to points-of-interest, deliver location-sensitive reminders, and more. See [`Monitoring the user’s proximity to geographic regions`](monitoring-the-user-s-proximity-to-geographic-regions.md).
+- **Determine the current compass heading.** Offer course-based navigation or display an onscreen compass. See [`Getting heading and course information`](getting-heading-and-course-information.md).
+- **Detect nearby iBeacon hardware.** Determine someone’s proximity to Bluetooth devices. See [`Determining the proximity to an iBeacon device`](determining-the-proximity-to-an-ibeacon-device.md).
 
 ## See Also
 

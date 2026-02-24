@@ -26,6 +26,8 @@ Returns a vector of floating point values, each of which is the base-10 logarith
 
 ##### Parameters
 
+- **X**: The source vector.
+
 ## See Also
 
 - [func vexpf(vFloat) -> vFloat](vexpf(_:).md)

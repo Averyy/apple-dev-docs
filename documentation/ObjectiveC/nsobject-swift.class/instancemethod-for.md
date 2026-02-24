@@ -32,7 +32,7 @@ Use this method to ask the class object for the implementation of instance metho
 
 ## Parameters
 
-- `aSelector`: A   that identifies the method for which to return the implementation address. The selector must be non-  and valid for the receiver. If in doubt, use the   method to check before passing the selector to  .
+- `aSelector`: A [`Selector`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Selector.html#//apple_ref/doc/uid/TP40008195-CH48) that identifies the method for which to return the implementation address. The selector must be non-`NULL` and valid for the receiver. If in doubt, use the [`responds(to:)`](nsobjectprotocol/responds(to:).md) method to check before passing the selector to [`method(for:)`](nsobject-swift.class/method(for:).md).
 
 ## See Also
 

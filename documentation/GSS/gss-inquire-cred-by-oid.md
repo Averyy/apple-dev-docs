@@ -27,7 +27,7 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
 - `cred_handle`: The credential to inquire about.
 - `desired_object`: The object identifier of the characteristic of the credential to return.
-- `data_set`: A pointer the function uses to return a set of buffers that contain the results across all of the credential’s mechanisms. If the desired object is not found, this is set to  . Otherwise, call   to free the memory of this object when you are done with it.
+- `data_set`: A pointer the function uses to return a set of buffers that contain the results across all of the credential’s mechanisms. If the desired object is not found, this is set to [`GSS_C_NO_BUFFER_SET`](gss_c_no_buffer_set.md). Otherwise, call [`gss_release_buffer_set(_:_:)`](gss_release_buffer_set(_:_:).md) to free the memory of this object when you are done with it.
 
 ## See Also
 

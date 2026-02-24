@@ -23,7 +23,7 @@ func setIndirectCommandBuffer(_ indirectCommandBuffer: (any MTLIndirectCommandBu
 ## Parameters
 
 - `indirectCommandBuffer`: An indirect command-buffer the method encodes.
-- `index`: The index of an inline, constant-data argument within the argument buffer.   The value corresponds to either the index ID of a declaration in   Metal Shading Language (MSL) or the   property of   an   instance.
+- `index`: The index of an inline, constant-data argument within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
 
 ## See Also
 

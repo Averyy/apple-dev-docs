@@ -24,7 +24,7 @@ init(revolutions: Float, localAxis: SIMD3<Float> = [0, 1, 0], timingFunction: An
 - `revolutions`: The number of rotations to complete before stopping.
 - `localAxis`: A vector that describes the axis of rotation (in local space).
 - `timingFunction`: A timing function that controls the progress of the animation.
-- `isAdditive`: A Boolean value that indicates whether the animation system additively blends   the action’s output with the base value.
+- `isAdditive`: A Boolean value that indicates whether the animation system additively blends the action’s output with the base value.
 
 
 ---

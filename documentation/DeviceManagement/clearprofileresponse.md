@@ -18,6 +18,10 @@ object ClearProfileResponse
 ### Dictionaries
 - [object ClearProfileResponse.Devices](clearprofileresponse/devices-data.dictionary.md)
 
+## Properties
+
+- `devices` (ClearProfileResponse.Devices)
+
 ## See Also
 
 - [object ClearProfileRequest](clearprofilerequest.md)

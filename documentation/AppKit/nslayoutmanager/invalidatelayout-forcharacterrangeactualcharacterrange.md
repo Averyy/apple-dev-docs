@@ -23,7 +23,7 @@ This method only invalidates information; it performs no glyph generation or lay
 ## Parameters
 
 - `charRange`: The range of characters to invalidate.
-- `actualCharRange`: If not  , on output, the actual range invalidated after any necessary expansion.
+- `actualCharRange`: If not `NULL`, on output, the actual range invalidated after any necessary expansion.
 
 ## See Also
 

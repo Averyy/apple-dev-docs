@@ -21,7 +21,7 @@ init<RegexOutput>(name: String, description: String? = nil, type: String.Type, g
 ## Parameters
 
 - `name`: The property’s name.
-- `description`: A natural language description of what content   should be generated for this property.
+- `description`: A natural language description of what content should be generated for this property.
 - `type`: The type this property represents.
 - `guides`: An array of regexes to be applied to this string. If there’re multiple regexes in the array, only the last one will be applied.
 

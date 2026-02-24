@@ -27,7 +27,7 @@ This function uses system APIs instead of examining attributes to determine memb
 
 - `group`: The group record.
 - `member`: The record to check for membership in the group record.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

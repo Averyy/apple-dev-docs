@@ -27,7 +27,7 @@ The physics simulator applies the added torque until the end of the frame interv
 ## Parameters
 
 - `torque`: A torque in newton meters per radian.
-- `referenceEntity`: The reference entity that defines the coordinate   space in which   is defined.
+- `referenceEntity`: The reference entity that defines the coordinate space in which `torque` is defined.
 
 ## See Also
 

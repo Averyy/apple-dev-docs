@@ -20,9 +20,13 @@ Creates a contextual embedding from a model identifier.
 convenience init?(modelIdentifier: String)
 ```
 
+#### Discussion
+
+If you train a custom model with the contextual embedding as the feature layer, keep track of this identifier and use it when loading the custom model in your app.
+
 ## Parameters
 
-- `modelIdentifier`: The model identifier that identifies the embedding model.
+- `modelIdentifier`: A string that uniquely identifies the embedding model.
 
 ## See Also
 

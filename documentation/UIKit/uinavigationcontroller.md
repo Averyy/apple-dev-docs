@@ -35,7 +35,7 @@ Use a navigation interface to mimic the organization of hierarchical data manage
 
 ![A sample navigation interface](https://docs-assets.developer.apple.com/published/ec22a982d6cb1673c1190305d79cb382/media-1965789%402x.png)
 
-A navigation controller object manages the view controllers it contains using an ordered array, known as the . The first view controller in the array is the root view controller and represents the bottom of the stack. The last view controller in the array is the topmost item on the stack, and represents the view controller that the system is currently displaying. You add and remove view controllers from the stack using segues or using the methods of this class. The user can also remove the topmost view controller using the back button in the navigation bar or using a swipe gesture.
+A navigation controller object manages the view controllers it contains using an ordered array, known as the *navigation stack*. The first view controller in the array is the root view controller and represents the bottom of the stack. The last view controller in the array is the topmost item on the stack, and represents the view controller that the system is currently displaying. You add and remove view controllers from the stack using segues or using the methods of this class. The user can also remove the topmost view controller using the back button in the navigation bar or using a swipe gesture.
 
 The navigation controller manages the navigation bar at the top of the interface and an optional toolbar at the bottom of the interface. The navigation bar is always present and is managed by the navigation controller itself, which updates the navigation bar using the content provided by its contained view controllers. When the [`isToolbarHidden`](uinavigationcontroller/istoolbarhidden.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), the navigation controller similarly updates the toolbar with contents provided by the topmost view controller.
 
@@ -104,11 +104,17 @@ The navigation interface remains the same in both horizontally compact and horiz
 
 When configuring segues between view controllers on a navigation stack, the standard Show and Show Detail segues behave as follows:
 
+- **Show segue**: The navigation controller pushes the specified view controller onto its navigation stack.
+- **Show Detail segue**: The navigation controller presents the specified view controller modally.
+
 The behaviors of other segue types are unchanged.
 
 ##### Interface Behaviors
 
 A navigation controller supports the following behaviors for its interface:
+
+- **Supported interface orientations**: A navigation controller object doesn’t consult the view controllers on its navigation stack when determining the supported interface orientations. On iPhone, a navigation controller supports all orientations except portrait upside-down. On iPad, a navigation controller supports all orientations. If the navigation controller has a delegate object, the delegate can specify a different set of supported orientations using the [`navigationControllerSupportedInterfaceOrientations(_:)`](uinavigationcontrollerdelegate/navigationcontrollersupportedinterfaceorientations(_:).md) method.
+- **Presentation context**: A navigation controller defines the presentation context for modally presented view controllers. When the modal transition style is [`UIModalPresentationStyle.currentContext`](uimodalpresentationstyle/currentcontext.md) or [`UIModalPresentationStyle.overCurrentContext`](uimodalpresentationstyle/overcurrentcontext.md), modal presentations from the view controllers in the navigation stack cover the entire navigation interface.
 
 ##### State Preservation
 

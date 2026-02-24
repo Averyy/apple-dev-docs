@@ -31,12 +31,12 @@ This initializer does not generate texel data; the [`MDLNoiseTexture`](mdlnoiset
 
 ## Parameters
 
-- `smoothness`: A value that indicates how similar neighboring texels will be in the resulting texture. The value should be between   and  . A value of   generates a smooth surface.
-- `name`: The   property for the new texture object.
+- `smoothness`: A value that indicates how similar neighboring texels will be in the resulting texture. The value should be between `0.0` and `1.0`. A value of `1.0` generates a smooth surface.
+- `name`: The [`name`](mdlnamed/name.md) property for the new texture object.
 - `textureDimensions`: The texel dimensions (width and height) of the texture image.
 - `channelCount`: The number of channels per texel—for example, 1 for a grayscale texture, 3 for an RGB color texture, or 4 for RGBA.
-- `channelEncoding`: The data format for each channel value per texel—for example, 8-bit integer or 32-bit floating point. For possible values, see  .
-- `grayscale`: If  , all four components of each texel will have equal values. If  , all four values are completely randomized.
+- `channelEncoding`: The data format for each channel value per texel—for example, 8-bit integer or 32-bit floating point. For possible values, see [`MDLTextureChannelEncoding`](mdltexturechannelencoding.md).
+- `grayscale`: If [`true`](https://developer.apple.com/documentation/Swift/true), all four components of each texel will have equal values. If [`false`](https://developer.apple.com/documentation/Swift/false), all four values are completely randomized.
 
 ## See Also
 

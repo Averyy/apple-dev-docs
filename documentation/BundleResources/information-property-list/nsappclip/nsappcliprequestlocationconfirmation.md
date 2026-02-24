@@ -9,6 +9,10 @@ A Boolean value that indicates whether an App Clip can confirm the user’s loca
 - iOS 14.0+
 - iPadOS 14.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Set the value to `true` to allow your App Clip to confirm the user’s location. For more information, see [`Responding to invocations`](https://developer.apple.com/documentation/AppClip/responding-to-invocations).

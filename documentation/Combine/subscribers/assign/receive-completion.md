@@ -22,7 +22,7 @@ final func receive(completion: Subscribers.Completion<Never>)
 
 ## Parameters
 
-- `completion`: A   case indicating whether publishing completed normally or with an error.
+- `completion`: A [`Subscribers.Completion`](subscribers/completion.md) case indicating whether publishing completed normally or with an error.
 
 ## See Also
 

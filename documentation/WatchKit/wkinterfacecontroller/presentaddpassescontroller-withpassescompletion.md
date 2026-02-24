@@ -26,7 +26,7 @@ The user dismisses the interface using the built-in controls. At dismissal time,
 
 ## Parameters
 
-- `passes`: An array of   objects that you want to present to the user.
+- `passes`: An array of [`PKPass`](https://developer.apple.com/documentation/PassKit/PKPass) objects that you want to present to the user.
 - `completion`: The block to execute when the user is ready to dismiss the interface. Use this block to perform any cleanup tasks related to the dismissal of the modal interface. This block has no return value and takes no parameters.
 
 ## See Also

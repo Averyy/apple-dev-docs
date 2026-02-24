@@ -17,7 +17,7 @@ Creates a hosting view object that wraps the specified SwiftUI view.
 
 ## Parameters
 
-- `rootView`: The root view of the SwiftUI view hierarchy that   you want to manage using this hosting view.
+- `rootView`: The root view of the SwiftUI view hierarchy that you want to manage using this hosting view.
 
 ## See Also
 

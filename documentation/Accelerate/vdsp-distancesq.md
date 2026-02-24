@@ -49,9 +49,9 @@ For example, the following code calculates the distance squared between the two 
 ## Parameters
 
 - `__A`: A vector that contains the coordinates of the first point.
-- `__IA`: The distance between the elements in the input vector  .
+- `__IA`: The distance between the elements in the input vector `A`.
 - `__B`: A vector that contains the coordinates of the second point.
-- `__IB`: The distance between the elements in the input vector  .
+- `__IB`: The distance between the elements in the input vector `B`.
 - `__C`: On output, the square of the Euclidean distance between the two points.
 - `__N`: The number of elements to process.
 

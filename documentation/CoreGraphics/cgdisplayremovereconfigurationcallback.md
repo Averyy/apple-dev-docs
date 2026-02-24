@@ -22,7 +22,7 @@ When you call this function, the two arguments must match the registered entry t
 ## Parameters
 
 - `callback`: A pointer to the callback function associated with the registration to be removed.
-- `userInfo`: A pointer to user-defined data associated with the registration to be removed, or  . This is the same pointer that’s passed to the function   when registering the callback.
+- `userInfo`: A pointer to user-defined data associated with the registration to be removed, or `NULL`. This is the same pointer that’s passed to the function [`CGDisplayRegisterReconfigurationCallback(_:_:)`](cgdisplayregisterreconfigurationcallback(_:_:).md) when registering the callback.
 
 ## See Also
 

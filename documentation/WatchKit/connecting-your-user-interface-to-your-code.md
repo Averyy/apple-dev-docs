@@ -6,7 +6,7 @@ Connect the interface objects in your storyboard to outlets and action methods i
 
 #### Overview
 
-The code in your WatchKit extension interacts with your watchOS app’s user interface through , which are instances of a [`WKInterfaceObject`](wkinterfaceobject.md) subclass. Interface objects are not views, but proxy objects for the actual views presented by your watchOS app. The WatchKit framework provides interface objects for most of the items you can add to your storyboard.
+The code in your WatchKit extension interacts with your watchOS app’s user interface through *interface objects*, which are instances of a [`WKInterfaceObject`](wkinterfaceobject.md) subclass. Interface objects are not views, but proxy objects for the actual views presented by your watchOS app. The WatchKit framework provides interface objects for most of the items you can add to your storyboard.
 
 Communication between an interface object and the corresponding view on Apple Watch is one-way: information flows from your code to the view. In other words, you set values on an interface object but you cannot get the view’s current values. If you need to access the current value, you must cache that value in your code.
 

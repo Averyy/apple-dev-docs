@@ -24,8 +24,8 @@ Call [`startRecording(withMicrophoneEnabled:handler:)`](rpscreenrecorder/startre
 
 ## Parameters
 
-- `microphoneEnabled`: Set to   to activate the microphone during the recording. Defaults to  .
-- `handler`: A block that is called when the request completes.
+- `microphoneEnabled`: Set to [`true`](https://developer.apple.com/documentation/Swift/true) to activate the microphone during the recording. Defaults to [`false`](https://developer.apple.com/documentation/Swift/false).
+- `handler`: A block that is called when the request completes. - **`error`**: If an error occurred, this parameter holds an object that explains the error. Otherwise, the value of this parameter is `nil`. See [`RPRecordingErrorCode`](rprecordingerrorcode.md) for a list of error codes specific to ReplayKit.
 
 ## See Also
 

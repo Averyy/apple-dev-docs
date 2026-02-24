@@ -36,6 +36,28 @@ Send event attribution data to the browser only when your app opens an external 
 
 Here’s how you create a [`UIEventAttribution`](uieventattribution.md) object:
 
+**Swift**:
+
+```swift
+let adURL = URL(string: "https://shop.example/tabletStandDeluxe.html")!
+let eventAttribution =
+    UIEventAttribution(sourceIdentifier: 4,
+                       destinationURL: adURL,
+                       sourceDescription: "Banner ad for Tablet Stand Deluxe.",
+                       purchaser: "Shop Example, Inc.")
+```
+
+**Objective-C**:
+
+```objc
+NSURL *adURL = [NSURL URLWithString:@"https://shop.example/tabletStandDeluxe.html"];
+UIEventAttribution *eventAttribution = [[UIEventAttribution alloc]
+                                        initWithSourceIdentifier:4
+                                        destinationURL:adURL
+                                        sourceDescription:@"Banner ad for Tablet Stand Deluxe."
+                                        purchaser:@"Shop Example, Inc."];
+```
+
 ##### Send Event Attribution Data to the Browser
 
 Once you create a [`UIEventAttribution`](uieventattribution.md) object, send it to the browser when your app opens a URL as the result of a user tap. If the external website reports a conversion within 7 days, the browser forwards the data from the [`UIEventAttribution`](uieventattribution.md) object to the specified remote server sometime between 24 and 48 hours after the conversion.
@@ -46,7 +68,57 @@ There are two different ways to send event attribution data when your app opens 
 
 If your app uses [`UIScene`](uiscene.md)-based life cycle management, create a [`UIScene.OpenExternalURLOptions`](uiscene/openexternalurloptions.md) object, assign the event attribution object you created to its [`eventAttribution`](uiapplication/openexternalurloptionskey/eventattribution.md) property, and call [`open(_:options:completionHandler:)`](uiscene/open(_:options:completionhandler:).md):
 
+**Swift**:
+
+```swift
+let sceneOpenURLOptions = UIScene.OpenExternalURLOptions()
+sceneOpenURLOptions.eventAttribution = eventAttribution
+
+self.view.window?.windowScene?.open(adURL,
+                                    options: sceneOpenURLOptions,
+                                    completionHandler: nil)
+```
+
+**Objective-C**:
+
+```objc
+UISceneOpenExternalURLOptions *sceneOpenURLOptions = [[UISceneOpenExternalURLOptions alloc] init];
+sceneOpenURLOptions.eventAttribution = eventAttribution;
+[self.view.window.windowScene openURL:adURL
+                                options:sceneOpenURLOptions
+                    completionHandler:^(BOOL success) {
+    if (success == NO) {
+        // Handle error
+    }
+}];
+```
+
 If your app uses [`UIApplication`](uiapplication.md)-based life cycle management, create a dictionary that contains the [`eventAttribution`](uiapplication/openurloptionskey/eventattribution.md) key with the [`UIEventAttribution`](uieventattribution.md) object you created as its value, and call [`open(_:options:completionHandler:)`](uiapplication/open(_:options:completionhandler:).md), passing the dictionary using the `options` parameter.
+
+**Swift**:
+
+```swift
+let appOpenURLOptions: [UIApplication.OpenExternalURLOptionsKey : Any] = [
+    .eventAttribution: eventAttribution
+]
+UIApplication.shared.open(adURL,
+                          options: appOpenURLOptions,
+                          completionHandler: nil)
+```
+
+**Objective-C**:
+
+```objc
+NSDictionary<NSString *, NSObject *> *appOpenURLOptions = [NSDictionary dictionaryWithObject:eventAttribution forKey:UIApplicationOpenURLOptionsEventAttributionKey];
+
+[[UIApplication sharedApplication] openURL:adURL
+                                   options:appOpenURLOptions
+                         completionHandler:^(BOOL success) {
+    if (success == NO) {
+        // Handle error
+    }
+}];
+```
 
 ##### Send Event Attribution Data to Sfsafariviewcontroller
 

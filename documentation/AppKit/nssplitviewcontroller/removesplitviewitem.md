@@ -20,7 +20,7 @@ After you remove a split view item, the system adjusts the layout of the split v
 
 ## Parameters
 
-- `splitViewItem`: The split view item to remove.
+- `splitViewItem`: The split view item to remove. > ❗ **Important**:  If the split view item is `nil` or isn’t in the [`splitViewItems`](nssplitviewcontroller/splitviewitems.md) array, the system throws an exception.
 
 ## See Also
 

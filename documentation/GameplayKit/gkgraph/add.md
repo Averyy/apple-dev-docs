@@ -25,7 +25,7 @@ Calling this method does not connect the newly added nodes to others in the grap
 
 ## Parameters
 
-- `nodes`: An array of graph node objects—instances of   or of one of its subclasses that adds geometry information.
+- `nodes`: An array of graph node objects—instances of [`GKGraphNode`](gkgraphnode.md) or of one of its subclasses that adds geometry information.
 
 ## See Also
 

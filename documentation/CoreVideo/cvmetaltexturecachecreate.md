@@ -26,10 +26,10 @@ Upon successful creation of the texture cache, this function returns [`kCVReturn
 ## Parameters
 
 - `allocator`: The memory allocator for the texture.
-- `cacheAttributes`: A dictionary specifying options for the cache’s behavior, or   to use default options. For applicable keys and values, see  .
+- `cacheAttributes`: A dictionary specifying options for the cache’s behavior, or `NULL` to use default options. For applicable keys and values, see [`Cache Attributes`](cvmetaltexturecache-cache-attributes.md).
 - `metalDevice`: The Metal device used to create texture objects.
-- `textureAttributes`: A dictionary specifying options for creating textures from the cache, or   to use default options.
-- `cacheOut`: Upon return, contains the newly created texture cache. When this value is  , an error occurred in texture creation.
+- `textureAttributes`: A dictionary specifying options for creating textures from the cache, or `NULL` to use default options.
+- `cacheOut`: Upon return, contains the newly created texture cache. When this value is `NULL`, an error occurred in texture creation.
 
 ## See Also
 

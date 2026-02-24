@@ -40,7 +40,7 @@ A meta event of interest for the `kMusicSequenceType_Seconds` sequence type is t
 ## Parameters
 
 - `inSequence`: The music sequence whose sequence type you want to set.
-- `inType`: The type of sequence to assign to the music sequence. For the list of available sequence types, see  . The default sequence type is  .
+- `inType`: The type of sequence to assign to the music sequence. For the list of available sequence types, see [`MusicSequenceType`](musicsequencetype.md). The default sequence type is `kMusicSequenceType_Beats`.
 
 ## See Also
 

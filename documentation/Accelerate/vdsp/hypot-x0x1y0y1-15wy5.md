@@ -22,7 +22,7 @@ static func hypot<R, S, T, U>(x0: R, x1: S, y0: T, y1: U) -> [Float] where R : A
 
 #### Discussion
 
-This function returns the length of the hypotenuse of  number of triangles, where  is the number of elements in the supplied vectors. The differences between corresponding elements of vectors `x0` and `x1` and vectors `y0` and `y1` define the lengths of the two legs of each triangle.
+This function returns the length of the hypotenuse of *n* number of triangles, where *n* is the number of elements in the supplied vectors. The differences between corresponding elements of vectors `x0` and `x1` and vectors `y0` and `y1` define the lengths of the two legs of each triangle.
 
 The functions use the following operation:
 

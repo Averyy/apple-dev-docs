@@ -21,10 +21,10 @@ The receiver does not retain `notificationObserver`. Therefore, you should alway
 
 ## Parameters
 
-- `observer`: Object registering as an observer. Must not be  .
-- `selector`: Selector that specifies the message the receiver sends   to notify it of the notification posting. Must not be  .
-- `name`: The name of the notification for which to register the observer; that is, only notifications with this name are delivered to the observer. When  , the notification center doesn’t use a notification’s name to decide whether to deliver it to the observer.
-- `object`: The object whose notifications the observer wants to receive; that is, only notifications sent by this sender are delivered to the observer. When  , the notification center doesn’t use a notification’s sender to decide whether to deliver it to the observer.
+- `observer`: Object registering as an observer. Must not be `nil`.
+- `selector`: Selector that specifies the message the receiver sends `notificationObserver` to notify it of the notification posting. Must not be `0`.
+- `name`: The name of the notification for which to register the observer; that is, only notifications with this name are delivered to the observer. When `nil`, the notification center doesn’t use a notification’s name to decide whether to deliver it to the observer.
+- `object`: The object whose notifications the observer wants to receive; that is, only notifications sent by this sender are delivered to the observer. When `nil`, the notification center doesn’t use a notification’s sender to decide whether to deliver it to the observer.
 - `suspensionBehavior`: Notification posting behavior when notification delivery is suspended.
 
 ## See Also

@@ -28,10 +28,10 @@ If the expected classes are all property list types, calling this method is opti
 
 ## Parameters
 
-- `classes`: An   containing Class objects—for example,  .
+- `classes`: An `NSSet` containing Class objects—for example, `[MyObject class]`.
 - `sel`: Specifies which method in the protocol is being configured.
 - `arg`: Specifies the position (starting at index 0) of the parameter for which you are allowing classes. This may be either the position of a parameter in the method itself or the position in its reply block.
-- `ofReply`: Pass   if   is an index into the parameters of the reply block, or   if it is an index into the parameters of the method itself.
+- `ofReply`: Pass [`true`](https://developer.apple.com/documentation/Swift/true) if `arg` is an index into the parameters of the reply block, or [`false`](https://developer.apple.com/documentation/Swift/false) if it is an index into the parameters of the method itself.
 
 
 ---

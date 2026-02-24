@@ -29,7 +29,7 @@ There can be only one session object at a time for a given accessory and protoco
 
 ## Parameters
 
-- `accessory`: The accessory with which you want to communicate. You can get a list of accessory objects from the   object.
+- `accessory`: The accessory with which you want to communicate. You can get a list of accessory objects from the [`EAAccessoryManager`](eaaccessorymanager.md) object.
 - `protocolString`: The protocol to use when communicating with the accessory. This protocol must be one that the accessory understands. All communications with the accessory are expected to use this protocol.
 
 

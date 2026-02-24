@@ -28,7 +28,7 @@ If the result is mutated and is not a unique reference, then the `Data` will sti
 
 - `bytes`: A pointer to the bytes.
 - `count`: The size of the bytes.
-- `deallocator`: Specifies the mechanism to free the indicated buffer, or  .
+- `deallocator`: Specifies the mechanism to free the indicated buffer, or `.none`.
 
 ## See Also
 

@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: case
 
-Specifies an  list type.
+Specifies an *and* list type.
 
 **Availability**:
 - iOS 15.0+
@@ -29,7 +29,7 @@ The rawValue of `and` is 0.
 ## See Also
 
 - [ListFormatStyle.ListType.or](listformatstyle/listtype-swift.enum/or.md)
-  Specifies an  list type.
+  Specifies an *or* list type.
 
 
 ---

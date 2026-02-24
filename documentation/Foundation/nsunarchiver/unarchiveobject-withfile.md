@@ -27,7 +27,7 @@ This convenience method reads the file by invoking the `NSData` method [`dataWit
 
 ## Parameters
 
-- `path`: The path to a file than contains an archive created using  .
+- `path`: The path to a file than contains an archive created using [`NSArchiver`](nsarchiver.md).
 
 ## See Also
 

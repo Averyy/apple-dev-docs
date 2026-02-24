@@ -27,7 +27,7 @@ The next boundary position of a text unit of the given granularity in the given 
 
 - `position`: A text-position object that represents a location in a document.
 - `granularity`: A constant that indicates a certain granularity of text unit.
-- `direction`: A constant that indicates a direction relative to  . The constant can be of type UITextStorageDirection or UITextLayoutDirection.
+- `direction`: A constant that indicates a direction relative to `position`. The constant can be of type UITextStorageDirection or UITextLayoutDirection.
 
 
 ---

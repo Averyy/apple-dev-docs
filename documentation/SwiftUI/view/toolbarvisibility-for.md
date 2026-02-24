@@ -62,7 +62,7 @@ Depending on the specified bars, the requested visibility may not be able to be 
 ## Parameters
 
 - `visibility`: The preferred visibility of the bar.
-- `bars`: The bars to update the visibility of or    if empty.
+- `bars`: The bars to update the visibility of or [`automatic`](toolbarplacement/automatic.md) if empty.
 
 ## See Also
 

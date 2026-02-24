@@ -25,7 +25,7 @@ In some circumstances, you must explicitly call this method. This is the case if
 
 ## Parameters
 
-- `previewing`: The context object that was returned when you registered the view controller by calling the   method.
+- `previewing`: The context object that was returned when you registered the view controller by calling the [`registerForPreviewing(with:sourceView:)`](uiviewcontroller/registerforpreviewing(with:sourceview:).md) method.
 
 ## See Also
 

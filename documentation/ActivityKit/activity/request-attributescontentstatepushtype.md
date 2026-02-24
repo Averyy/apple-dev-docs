@@ -33,7 +33,7 @@ For additional information on starting a Live Activity, see [`Displaying live da
 
 - `attributes`: A set of attributes that describe the Live Activity and its static content.
 - `contentState`: A structure that describes the dynamic content of the Live Activity that changes over time.
-- `pushType`: A value that indicates whether the Live Activity receives updates to its dynamic   content with ActivityKit push notifications. Pass   to start a Live Activity that only receives   updates from the app with the   function.   To start a Live Activity that receives updates to its dynamic content with ActivityKit push   notifications in addition to the   function, pass    to this parameter.
+- `pushType`: A value that indicates whether the Live Activity receives updates to its dynamic content with ActivityKit push notifications. Pass `nil` to start a Live Activity that only receives updates from the app with the [`update(_:)`](activity/update(_:).md) function. To start a Live Activity that receives updates to its dynamic content with ActivityKit push notifications in addition to the [`update(_:)`](activity/update(_:).md) function, pass [`token`](pushtype/token.md) to this parameter.
 
 ## See Also
 

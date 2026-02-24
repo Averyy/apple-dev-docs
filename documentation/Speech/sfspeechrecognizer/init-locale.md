@@ -30,7 +30,7 @@ Even if this method returns a valid speech recognizer object, the speech recogni
 
 ## Parameters
 
-- `locale`: The locale object representing the language you want to use for speech recognition. For a list of languages supported by the speech recognizer, see  .
+- `locale`: The locale object representing the language you want to use for speech recognition. For a list of languages supported by the speech recognizer, see [`supportedLocales()`](sfspeechrecognizer/supportedlocales().md).
 
 ## See Also
 

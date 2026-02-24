@@ -26,6 +26,10 @@ To get started, decide on your container format. Mac products support two distri
 
 To distribute an app in the Mac App Store, you submit the app as an installer package. For direct distribution, you have a choice of various container formats, the most common being:
 
+- **Zip archive (`.zip`)**: You can’t sign a zip archive, so any files or folders you include that aren’t covered by your code signature may be tampered with by an attacker. The person receiving your zip archive opens it with Finder to unarchive the contents, which they optionally move into their preferred location.
+- **Disk image (`.dmg`)**: You can sign a disk image, which protects all files and folders you include from modification after you sign it. The person receiving your disk image opens it in Finder to access its contents, and they may choose to run your app from the disk image or move it to their preferred location. This experience is easiest if your product is a single file or bundle.
+- **Installer package (`.pkg`)**: You need to sign an Installer package, which protects all files and folders you include from modification after you sign it. The person receiving your Installer package opens it in Finder to launch the Installer app, which guides them through the steps needed to install your product. An installer package is the best choice if your product contains multiple components, must be copied to specific locations, or if you need to run custom code during installation.
+
 You can nest these containers. For example, you might want to ship an app inside an installer package on a disk image. To nest containers, work from the lowest-level container to the highest-level container, following the instructions for each container at each step.
 
 Sign your code, and sign each nested container that supports signing. For example, if you ship an app inside an installer package on a disk image, sign the app, create the installer package, sign that package, create the disk image, and then sign the disk image. For more information about signing code for distribution, see [`Creating distribution-signed code for macOS`](creating-distribution-signed-code-for-the-mac.md).
@@ -72,6 +76,10 @@ If your product consists of a single app, use the `productbuild` tool to create 
 ```
 
 Make the following substitutions to this command:
+
+- **`<Identity>`**: Your Installer-signing identity.
+- **`<PathToApp>`**: The path to your app.
+- **`<PathToPackage>`**: The path where `productbuild` creates the Installer package.
 
 If you have a more complex product, you’ll need a more complex Installer package.  For more details on how to work with Installer packages, see the manual pages for `productbuild`, `productsign`, `pkgbuild`, and `pkgutil`.  For instructions on how to read a manual page, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).
 
@@ -138,7 +146,7 @@ For products that you distribute directly, test that the product works correctly
 
 For products that you distribute as zip files or disk image files, consider these additional scenarios:
 
-- The person opens your app without moving it to a different location. In this situation, when the person first opens your app, Gatekeeper randomizes its path as returned from [`bundleURL`](https://developer.apple.com/documentation/Foundation/Bundle/bundleURL) and other API. This measure stops your app from accessing resources outside its bundle (and therefore not sealed by its code signature) using a relative path, as an attacker could control those resources to change your app’s behavior. Gatekeeper only performs this  on first launch, so test the behavior on a subsequent launch too.
+- The person opens your app without moving it to a different location. In this situation, when the person first opens your app, Gatekeeper randomizes its path as returned from [`bundleURL`](https://developer.apple.com/documentation/Foundation/Bundle/bundleURL) and other API. This measure stops your app from accessing resources outside its bundle (and therefore not sealed by its code signature) using a relative path, as an attacker could control those resources to change your app’s behavior. Gatekeeper only performs this *translocation* on first launch, so test the behavior on a subsequent launch too.
 - The person moves your app to a different location, then launches it. Gatekeeper doesn’t translocate your app’s path in this case.
 
 ## See Also

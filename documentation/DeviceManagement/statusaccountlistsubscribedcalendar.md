@@ -36,6 +36,10 @@ object StatusAccountListSubscribedCalendar
 - [object StatusAccountListSubscribedCalendarAccountObject](statusaccountlistsubscribedcalendaraccountobject.md)
   A status report of the client’s subscribed calendar details.
 
+## Properties
+
+- `account.list.subscribed-calendar` ([StatusAccountListSubscribedCalendarAccountObject]) *(required)*: A list of status values for the subscribed calendars.
+
 ## See Also
 
 - [object StatusAccountListCalDAV](statusaccountlistcaldav.md)

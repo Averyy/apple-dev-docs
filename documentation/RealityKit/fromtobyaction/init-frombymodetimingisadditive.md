@@ -26,7 +26,7 @@ init(from: Value, by: Value? = nil, mode: FromToByAction<Value>.TransformMode = 
 ## Parameters
 
 - `from`: Transform set at the start of the animation.
-- `by`: Transform which is used to increment the starting transform. Used to determine the final transform we animate towards.   Set this to   to animate towards the defaultSource transform.
+- `by`: Transform which is used to increment the starting transform. Used to determine the final transform we animate towards. Set this to `nil` to animate towards the defaultSource transform.
 - `mode`: Determines what space the transforms are relative to.
 - `timing`: Controls the progress of the animation.
 - `isAdditive`: Specifies whether you can additively blend the output from the action’s animation.

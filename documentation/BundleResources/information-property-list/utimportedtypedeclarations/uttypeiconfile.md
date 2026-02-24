@@ -11,6 +11,10 @@ The bundle icon resource to associate with this type.
 - macOS 10.5+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [UTTypeConformsTo](information-property-list/utimportedtypedeclarations/uttypeconformsto.md)

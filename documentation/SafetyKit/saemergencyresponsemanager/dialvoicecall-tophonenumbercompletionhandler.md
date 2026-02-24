@@ -15,7 +15,7 @@ Request the system to dial a voice call on behalf of someone involved in a crash
 ## Declaration
 
 ```swift
-func dialVoiceCall(toPhoneNumber phoneNumber: String) async throws -> Bool
+func dialVoiceCall(toPhoneNumber phoneNumber: String, completionHandler handler: @escaping (Bool, (any Error)?) -> Void)
 ```
 
 #### Discussion

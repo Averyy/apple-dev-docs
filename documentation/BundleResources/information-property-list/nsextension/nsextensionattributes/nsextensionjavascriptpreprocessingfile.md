@@ -11,6 +11,10 @@ The name of a JavaScript file supplied by a Share or Action extension.
 - macOS 10.10+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [NSExtensionActionWantsFullScreenPresentation](information-property-list/nsextension/nsextensionactionwantsfullscreenpresentation.md)

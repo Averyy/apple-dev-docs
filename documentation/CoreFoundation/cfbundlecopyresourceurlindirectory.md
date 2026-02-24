@@ -34,8 +34,8 @@ Note that searches are case-sensitive, even on file systems (such as HFS+) that 
 
 - `bundleURL`: The bundle to examine.
 - `resourceName`: The name of the requested resource.
-- `resourceType`: The abstract type of the requested resource. The type is expressed as a filename extension, such as  . Pass   if you don’t need to search by type.
-- `subDirName`: The name of the subdirectory of the bundle’s resources directory  to search. Pass   to search the standard CFBundle resource locations.
+- `resourceType`: The abstract type of the requested resource. The type is expressed as a filename extension, such as `jpg`. Pass `NULL` if you don’t need to search by type.
+- `subDirName`: The name of the subdirectory of the bundle’s resources directory  to search. Pass `NULL` to search the standard CFBundle resource locations.
 
 ## See Also
 

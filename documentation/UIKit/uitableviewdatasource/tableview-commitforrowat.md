@@ -29,8 +29,8 @@ You shouldn’t call [`setEditing(_:animated:)`](uitableview/setediting(_:animat
 ## Parameters
 
 - `tableView`: The table-view object requesting the insertion or deletion.
-- `editingStyle`: The cell editing style corresponding to a insertion or deletion requested for the row specified by  . Possible editing styles are   or  .
-- `indexPath`: An index path locating the row in  .
+- `editingStyle`: The cell editing style corresponding to a insertion or deletion requested for the row specified by `indexPath`. Possible editing styles are [`UITableViewCell.EditingStyle.insert`](uitableviewcell/editingstyle-swift.enum/insert.md) or [`UITableViewCell.EditingStyle.delete`](uitableviewcell/editingstyle-swift.enum/delete.md).
+- `indexPath`: An index path locating the row in `tableView`.
 
 ## See Also
 

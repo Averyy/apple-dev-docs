@@ -22,8 +22,8 @@ func replaceObject(at idx: Int, with object: Any)
 
 ## Parameters
 
-- `idx`: The index of the object to be replaced. This value must not exceed the bounds of the mutable ordered set.
-- `object`: The object with which to replace the object at the index in the ordered set specified by  .
+- `idx`: The index of the object to be replaced. This value must not exceed the bounds of the mutable ordered set. > ❗ **Important**:  Raises an [`rangeException`](nsexceptionname/rangeexception.md) if index is beyond the end of the mutable ordered set.
+- `object`: The object with which to replace the object at the index in the ordered set specified by `idx`.
 
 ## See Also
 

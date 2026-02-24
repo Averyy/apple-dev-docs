@@ -26,7 +26,7 @@ A shaped array of predictions. The shape of the predictions matches the shape of
 
 ## Parameters
 
-- `input`: A shaped array of features. The last dimension must be  .
+- `input`: A shaped array of features. The last dimension must be `inputSize`.
 - `eventHandler`: An event handler.
 
 

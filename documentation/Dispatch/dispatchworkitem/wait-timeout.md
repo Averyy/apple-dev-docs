@@ -30,7 +30,7 @@ This method returns immediately if the current work item has already finished ex
 
 ## Parameters
 
-- `timeout`: The time at which to stop waiting for the dispatch item to finish. Specifying   is equivalent to calling the   method.
+- `timeout`: The time at which to stop waiting for the dispatch item to finish. Specifying [`distantFuture`](dispatchtime/distantfuture.md) is equivalent to calling the [`wait()`](dispatchworkitem/wait().md) method.
 
 ## See Also
 

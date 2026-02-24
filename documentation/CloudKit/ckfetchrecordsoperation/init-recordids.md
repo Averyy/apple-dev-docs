@@ -28,7 +28,7 @@ After initializing the operation, you must associate at least one progress handl
 
 ## Parameters
 
-- `recordIDs`: An array of   objects that represents the records you want to retrieve. If you provide an empty array, you must set the   property before you execute the operation.
+- `recordIDs`: An array of [`CKRecord.ID`](ckrecord/id.md) objects that represents the records you want to retrieve. If you provide an empty array, you must set the [`recordIDs`](ckfetchrecordsoperation/recordids.md) property before you execute the operation.
 
 ## See Also
 

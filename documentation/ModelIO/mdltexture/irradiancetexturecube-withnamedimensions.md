@@ -39,7 +39,7 @@ You can use reflective and irradiance textures with the [`MDLLightProbe`](mdllig
 ## Parameters
 
 - `texture`: The reflective (environment map) cube texture from which to generate an irradiance texture.
-- `name`: The   property for the newly generated texture.
+- `name`: The [`name`](mdlnamed/name.md) property for the newly generated texture.
 - `dimensions`: The size (width and height in texels) of each cube face for the newly generated texture.
 
 ## See Also

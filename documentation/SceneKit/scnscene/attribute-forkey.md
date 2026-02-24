@@ -26,7 +26,7 @@ The scene attribute for the specified key, or `nil` if no such attribute exists.
 
 ## Parameters
 
-- `key`: One of the constants described in   that identifies the attribute to be read.
+- `key`: One of the constants described in [`Scene Attributes`](scene-attributes.md) that identifies the attribute to be read.
 
 ## See Also
 

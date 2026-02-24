@@ -26,7 +26,7 @@ A new [`MTLDepthStencilState`](mtldepthstencilstate.md) instance if the method c
 
 ## Parameters
 
-- `descriptor`: An   instance.
+- `descriptor`: An [`MTLDepthStencilDescriptor`](mtldepthstencildescriptor.md) instance.
 
 
 ---

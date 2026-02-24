@@ -43,7 +43,7 @@ The timeline view updates its content on exactly the dates that you specify, unt
 
 ## Parameters
 
-- `dates`: The sequence of dates at which a timeline view   updates. Use a monotonically increasing sequence of dates,   and ensure that at least one is in the future.
+- `dates`: The sequence of dates at which a timeline view updates. Use a monotonically increasing sequence of dates, and ensure that at least one is in the future.
 
 ## See Also
 

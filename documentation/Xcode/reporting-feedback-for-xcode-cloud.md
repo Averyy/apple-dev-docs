@@ -32,6 +32,12 @@ To review a specific attachment, select the magnifying glass icon on the right o
 
 At a high level, there are 5 different types of logs and build artifacts:
 
+- **Executable build artifacts**: These are the products of building an app or its tests to be run on a specific kind of device or simulator. Examples of these include: product archives and test products. Product archives, such as App Store archive exports, represent the app that you install on a device. Test products, on the other hand, represent executables that run during the testing process.
+- **Text logs from scripts you provide**: These are the logs for the custom scripts you provide. These logs can contain network requests, entries of subcommands that run, as well as credentials used to authenticate to other services.
+- **Text logs from commands initiated by Xcode Cloud**: Xcode Cloud relies on certain command-line tools when processing a build. An example of such a command-line tool is `xcodebuild` which Xcode Cloud uses to archive exports, build products, and run tests. These logs contain the output command-line tools and network requests generate. These logs can contain information from the product source code such as names of classes and methods.
+- **Result bundles**: These are special artifacts that `xcodebuild` subcommands such as `archive`, `build`, and `test` generate. Result bundles contain a summary of events that occur during an `xcodebuild` subcommand and can contain traces of intellectual property. To learn more about bundles, see [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle).
+- **Sysdiagnose logs**: These are special artifacts Xcode Cloud generates in exceptional scenarios, such as a Simulator or virtual machine crash. Sysdiagnose logs contain a collection of logs from diagnostic tools available on different Apple platforms. These logs provide context about the state of the machine just before the crash such as the number of open file handles and the state of different processes.
+
 ##### Remove Attachments and Submit Feedback
 
 Only include attachments you want to share. To remove an attachment you don’t want to share:

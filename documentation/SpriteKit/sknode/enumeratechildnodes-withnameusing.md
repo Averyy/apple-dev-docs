@@ -74,8 +74,8 @@ parentNode.enumerateChildNodes(withName: "SKSpriteNode") {
 
 ## Parameters
 
-- `name`: The name to search for. This may be either the literal name of the node or a customized search string. See  .
-- `block`: A block to execute on nodes that match the   parameter. The block has the signature              .
+- `name`: The name to search for. This may be either the literal name of the node or a customized search string. See `Searching the Node Tree`.
+- `block`: A block to execute on nodes that match the `name` parameter. The block has the signature `(node:` [`SKNode`](sknode.md) `, stop:` [`UnsafeMutablePointer`](https://developer.apple.com/documentation/Swift/UnsafeMutablePointer) `<` [`ObjCBool`](https://developer.apple.com/documentation/ObjectiveC/ObjCBool) `>)`.
 
 ## See Also
 

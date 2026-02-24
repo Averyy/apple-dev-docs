@@ -31,7 +31,7 @@ This type of observation results from a [`VNRecognizeTextRequest`](vnrecognizete
 
 ### Obtaining Recognized Text
 - [func topCandidates(Int) -> [VNRecognizedText]](vnrecognizedtextobservation/topcandidates(_:).md)
-  Requests the  top candidates for a recognized text string.
+  Requests the *n* top candidates for a recognized text string.
 - [class VNRecognizedText](vnrecognizedtext.md)
   Text recognized in an image through a text recognition request.
 

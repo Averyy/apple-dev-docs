@@ -90,11 +90,11 @@ Note that internal memory allocations may occur in the case of pivoted factoriza
 
 ## Parameters
 
-- `symbolicFactor`: A symbolic factorization that returns by calling  .
+- `symbolicFactor`: A symbolic factorization that returns by calling [`SparseFactor(_:_:_:_:_:)`](sparsefactor(_:_:_:_:_:)-68hki.md).
 - `Matrix`: The matrix to factorize.
 - `nfoptions`: The numeric factor options, such as pivoting parameters.
-- `factorStorage`: A pointer to space for storing the factorization of size at least   bytes. Don’t alter this storage during the lifetime of the return value.
-- `workspace`: A pointer to a workspace of size at least   bytes. You can reuse or deallocate the workspace storage after the function returns.
+- `factorStorage`: A pointer to space for storing the factorization of size at least [`factorSize_Double`](sparseopaquesymbolicfactorization/factorsize_double.md) bytes. Don’t alter this storage during the lifetime of the return value.
+- `workspace`: A pointer to a workspace of size at least [`workspaceSize_Double`](sparseopaquesymbolicfactorization/workspacesize_double.md) bytes. You can reuse or deallocate the workspace storage after the function returns.
 
 ## See Also
 

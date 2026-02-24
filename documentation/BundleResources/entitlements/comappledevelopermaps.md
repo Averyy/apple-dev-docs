@@ -8,6 +8,10 @@ A Boolean value that indicates whether the app may provide directions beyond wha
 **Availability**:
 - macOS 10.9+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 To add this entitlement to your app, enable the Maps capability in Xcode.

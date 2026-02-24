@@ -24,8 +24,8 @@ init(name: String, subdirectory: String? = nil, locale: Locale = .current, bundl
 
 - `name`: The name of the resource in the bundle. This should include both the resource name and its extension, to avoid confusion.
 - `subdirectory`: The subdirectory, if any, of the resource.
-- `locale`: The locale of the resource, as provided by the process that creates the resource. This defaults to  .
-- `bundle`: The bundle containing the resource. This defaults to  .
+- `locale`: The locale of the resource, as provided by the process that creates the resource. This defaults to [`current`](locale/current.md).
+- `bundle`: The bundle containing the resource. This defaults to [`main`](bundle/main.md).
 
 
 ---

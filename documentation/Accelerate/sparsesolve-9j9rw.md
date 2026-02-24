@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Solves the system  using the supplied double-precision factorization of , in place.
+Solves the system *AX = B* using the supplied double-precision factorization of *A*, in place.
 
 **Availability**:
 - iOS 11.0+
@@ -66,21 +66,21 @@ bValues.withUnsafeMutableBufferPointer { bPtr in
 
 On return, `bValues` contains the values `[1.0, 2.0, 3.0, 10.0, 20.0, 30.0]`.
 
-If the factorization is , the function returns the solution of minimum norm  for underdetermined systems.
+If the factorization is *A = QR*, the function returns the solution of minimum norm *‖ x ‖₂* for underdetermined systems.
 
-If the factorization is , the function returns the least squares solution  for overdetermined systems.
+If the factorization is *A = QR*, the function returns the least squares solution *minₓ ‖ AX - B ‖₂* for overdetermined systems.
 
-If the factorization is [`SparseFactorizationCholeskyAtA`](sparsefactorizationcholeskyata.md), the factorization is of , and the solution that returns is for the system .
+If the factorization is [`SparseFactorizationCholeskyAtA`](sparsefactorizationcholeskyata.md), the factorization is of *AᵀA*, and the solution that returns is for the system *AᵀAX = B*.
 
 ## Parameters
 
-- `Factored`: The factorization of  .
-- `XB`: On entry, the right-hand-side,  . On return, the solution vectors  . If   has dimension  ,   must have dimension  , where   and   is the number of right-hand-sides to find solutions for.
+- `Factored`: The factorization of *A*.
+- `XB`: On entry, the right-hand-side, *B*. On return, the solution vectors *X*. If *A* has dimension *m x n*, *XB* must have dimension *k x nrhs*, where *k = max(m,n)* and *nrhs* is the number of right-hand-sides to find solutions for.
 
 ## See Also
 
 - [func SparseSolve(SparseOpaqueFactorization_Float, DenseMatrix_Float)](sparsesolve(_:_:)-1jp0k.md)
-  Solves the system  using the supplied single-precision factorization of , in place.
+  Solves the system *AX = B* using the supplied single-precision factorization of *A*, in place.
 
 
 ---

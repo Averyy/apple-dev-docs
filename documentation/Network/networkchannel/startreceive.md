@@ -28,7 +28,7 @@ This may be called before the connection is ready, in which case the receive req
 
 ## Parameters
 
-- `handler`: Called immediately after invoking  . Use   the receive closure to keep receiving partial data until the   message is complete.
+- `handler`: Called immediately after invoking `startReceive`. Use the receive closure to keep receiving partial data until the message is complete.
 
 
 ---

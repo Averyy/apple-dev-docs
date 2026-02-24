@@ -15,6 +15,11 @@ The details for an account-driven enrollment profile.
 object GetAccountDrivenEnrollmentProfileResponse
 ```
 
+## Properties
+
+- `mdm_service_discovery_url` (string): The MDM Service Discovery URL that the MDM server sets for redirection during account-driven enrollment.
+- `last_updated_timestamp` (string): The timestamp of the most-recent update for the MDM Service Discovery URL.
+
 
 ---
 

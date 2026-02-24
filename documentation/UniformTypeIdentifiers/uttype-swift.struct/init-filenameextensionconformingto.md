@@ -41,7 +41,7 @@ A type depends on other attributes in addition to the filename extension, includ
 ## Parameters
 
 - `filenameExtension`: The filename extension.
-- `supertype`: Another type that the resulting type must conform to; for example,   or  .
+- `supertype`: Another type that the resulting type must conform to; for example, [`UTTypeData`](uttypedata.md) or [`UTTypePackage`](uttypepackage.md).
 
 ## See Also
 

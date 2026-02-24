@@ -24,7 +24,7 @@ FSKit restricts calls to this method based on the current value of [`itemDeactiv
 ## Parameters
 
 - `item`: The item to deactivate.
-- `reply`: A block or closure to indicate success or failure. If deactivation fails, pass an error as the one parameter to the reply handler. If deactivation succeeds, pass  . For an   Swift implementation, there’s no reply handler; simply throw an error or return normally.
+- `reply`: A block or closure to indicate success or failure. If deactivation fails, pass an error as the one parameter to the reply handler. If deactivation succeeds, pass `nil`. For an `async` Swift implementation, there’s no reply handler; simply throw an error or return normally.
 
 
 ---

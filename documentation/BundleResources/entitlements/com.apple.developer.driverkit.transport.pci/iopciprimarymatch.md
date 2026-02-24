@@ -8,6 +8,10 @@ A key to match PCI devices by vendor and device ID registers.
 **Availability**:
 - macOS 10.15.4+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This value of this key matches the vendor and device ID (`0x00`) register.

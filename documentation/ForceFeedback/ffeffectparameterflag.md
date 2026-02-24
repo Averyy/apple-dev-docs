@@ -15,7 +15,7 @@ typealias FFEffectParameterFlag = UInt32
 
 #### Discussion
 
-Effect Parameter flags for use in calls to  and .
+Effect Parameter flags for use in calls to **FFEffectGetParameters()** and **FFEffectSetParameters()**.
 
 ## See Also
 

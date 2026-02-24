@@ -29,7 +29,7 @@ A leaderboard object that you initialize with this method ignores the [`playerSc
 
 ## Parameters
 
-- `playerIDs`: An array of   objects that holds the player identifier strings of the players to retrieve.
+- `playerIDs`: An array of `NSString` objects that holds the player identifier strings of the players to retrieve.
 
 ## See Also
 

@@ -16,13 +16,13 @@ The macOS 12 SDK provides support to develop apps for Mac computers running macO
 
 ###### Known Issues
 
-- There might be issues with wakeup when dual monitors are connected. (79839446)  Connect the power adapter that came with the Mac.
+- There might be issues with wakeup when dual monitors are connected. (79839446) **Workaround:** Connect the power adapter that came with the Mac.
 
 ##### Coredata
 
 ###### Known Issues
 
-- `NSExpression` immediately forbids certain operations that have significant side effects, like creating and destroying objects. Additionally, casting string class names into Class objects with `NSConstantValueExpression` is deprecated. (84017178)  Pass temporary objects to `NSExpression` in the context parameter of [`expressionValue(with:context:)`](https://developer.apple.com/documentation/Foundation/NSExpression/expressionValue(with:context:)), or with `NSPredicate` as the `substitutionVariables` parameter of [`evaluate(with:substitutionVariables:)`](https://developer.apple.com/documentation/Foundation/NSPredicate/evaluate(with:substitutionVariables:)). You can create a derived predicate with all the substitution variables replaced (bound), using [`withSubstitutionVariables(_:)`](https://developer.apple.com/documentation/Foundation/NSPredicate/withSubstitutionVariables(_:)) on an existing `NSPredicate` so that code using the object can continue to use a simple `evaluate(with object: Any?)` invocation.
+- `NSExpression` immediately forbids certain operations that have significant side effects, like creating and destroying objects. Additionally, casting string class names into Class objects with `NSConstantValueExpression` is deprecated. (84017178) **Workaround:** Pass temporary objects to `NSExpression` in the context parameter of [`expressionValue(with:context:)`](https://developer.apple.com/documentation/Foundation/NSExpression/expressionValue(with:context:)), or with `NSPredicate` as the `substitutionVariables` parameter of [`evaluate(with:substitutionVariables:)`](https://developer.apple.com/documentation/Foundation/NSPredicate/evaluate(with:substitutionVariables:)). You can create a derived predicate with all the substitution variables replaced (bound), using [`withSubstitutionVariables(_:)`](https://developer.apple.com/documentation/Foundation/NSPredicate/withSubstitutionVariables(_:)) on an existing `NSPredicate` so that code using the object can continue to use a simple `evaluate(with object: Any?)` invocation.
 
 ##### Icloud
 
@@ -76,7 +76,7 @@ The macOS 12 SDK provides support to develop apps for Mac computers running macO
 
 ###### Known Issues
 
-- Applications linking to RealityKit with the iOS 15 or macOS 12 SDKs will fail to launch on a previous OS. (79584511)  Add `OTHER_LD_FLAGS = -weak_framework RealityFoundation` to your Xcode Project settings to allow running RealityKit apps on an older OS.
+- Applications linking to RealityKit with the iOS 15 or macOS 12 SDKs will fail to launch on a previous OS. (79584511) **Workaround:** Add `OTHER_LD_FLAGS = -weak_framework RealityFoundation` to your Xcode Project settings to allow running RealityKit apps on an older OS.
 
 ##### Swiftui
 

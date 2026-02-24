@@ -26,7 +26,7 @@ A reference to a device, or `NULL` if an error occurred.
 
 Call this function to enumerate the devices in the system. To enumerate the entities in the system, walk through the devices and then walk through the device’s entities. When you iterate through the devices and entities in the system, you don’t visit virtual sources and destinations created by other clients.
 
-A device iteration returns devices that are  (they were present in the past but aren’t currently available), while iterations through the system’s sources and destinations don’t include the endpoints of offline devices. Instead, clients typically use [`MIDIGetNumberOfSources()`](midigetnumberofsources().md), [`MIDIGetSource(_:)`](midigetsource(_:).md), [`MIDIGetNumberOfDestinations()`](midigetnumberofdestinations().md) and [`MIDIGetDestination(_:)`](midigetdestination(_:).md).
+A device iteration returns devices that are *offline* (they were present in the past but aren’t currently available), while iterations through the system’s sources and destinations don’t include the endpoints of offline devices. Instead, clients typically use [`MIDIGetNumberOfSources()`](midigetnumberofsources().md), [`MIDIGetSource(_:)`](midigetsource(_:).md), [`MIDIGetNumberOfDestinations()`](midigetnumberofdestinations().md) and [`MIDIGetDestination(_:)`](midigetdestination(_:).md).
 
 ## Parameters
 

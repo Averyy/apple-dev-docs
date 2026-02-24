@@ -30,7 +30,7 @@ func vImageCVImageFormat_SetUserData(_ format: vImageCVImageFormat, _ userData: 
 
 - `format`: The Core Video image format to update.
 - `userData`: The new user data for the format.
-- `userDataReleaseCallback`: The callback the system calls when it releases the   instance or overwrites the   pointer.
+- `userDataReleaseCallback`: The callback the system calls when it releases the [`vImageCVImageFormat`](vimagecvimageformat.md) instance or overwrites the `userData` pointer.
 
 ## See Also
 

@@ -33,6 +33,46 @@ After creating your content object, assign it to a [`UNNotificationRequest`](unn
 
 Listing 1. Creating the content for a local notification
 
+**Swift**:
+
+```swift
+// Configure the notification's payload.
+let content = UNMutableNotificationContent()
+content.title = NSString.localizedUserNotificationString(forKey: "Hello!", arguments: nil)
+content.body = NSString.localizedUserNotificationString(forKey: "Hello_message_body", arguments: nil)
+content.sound = UNNotificationSound.default
+ 
+// Deliver the notification in five seconds.
+let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+let request = UNNotificationRequest(identifier: "FiveSecond", content: content, trigger: trigger) // Schedule the notification.
+let center = UNUserNotificationCenter.current()
+center.add(request) { (error : Error?) in
+     if let theError = error {
+         // Handle any errors
+     }
+}
+```
+
+**Objective-C**:
+
+```objc
+// Configure the notification's payload.
+UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+content.title = [NSString localizedUserNotificationStringForKey:@"Hello!" arguments:nil];
+content.body = [NSString localizedUserNotificationStringForKey:@"Hello_message_body" arguments:nil];
+content.sound = [UNNotificationSound defaultSound];
+ 
+// Deliver the notification in five seconds.
+UNTimeIntervalNotificationTrigger* trigger = [UNTimeIntervalNotificationTrigger
+            triggerWithTimeInterval:5 repeats:NO];
+UNNotificationRequest* request = [UNNotificationRequest requestWithIdentifier:@"FiveSecond"
+            content:content trigger:trigger];
+ 
+// Schedule the notification.
+UNUserNotificationCenter* center = [UNUserNotificationCenter currentNotificationCenter];
+[center addNotificationRequest:request];
+```
+
 > **Note**:  Local notifications always result in user interactions, and the system ignores any interactions for which your app isn’t authorized. For information about how to request authorization for user interactions, see [`Asking permission to use notifications`](asking-permission-to-use-notifications.md).
 
 ##### Localizing the Alert Strings

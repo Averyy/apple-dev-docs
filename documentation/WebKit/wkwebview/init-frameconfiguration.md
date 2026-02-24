@@ -31,7 +31,7 @@ To create a web view with default configuration values, call the inherited [`ini
 ## Parameters
 
 - `frame`: The frame rectangle for the new web view.
-- `configuration`: The configuration of the new web view. This method saves a copy of your configuration object. Changes you make to your original object after calling this method have no effect on the web view’s configuration. For a list of configuration options and their default values, see  .
+- `configuration`: The configuration of the new web view. This method saves a copy of your configuration object. Changes you make to your original object after calling this method have no effect on the web view’s configuration. For a list of configuration options and their default values, see [`WKWebViewConfiguration`](wkwebviewconfiguration.md).
 
 ## See Also
 

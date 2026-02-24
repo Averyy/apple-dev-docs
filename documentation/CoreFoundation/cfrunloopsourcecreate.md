@@ -30,9 +30,9 @@ The run loop source is not automatically added to a run loop. Ownership follows 
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `order`: A priority index indicating the order in which run loop sources are processed. When multiple run loop sources are firing in a single pass through the run loop, the sources are processed in increasing order of this parameter. If the run loop is set to process only one source per loop, only the highest priority source, the one with the lowest   value, is processed. This value is ignored for version 1 sources. Pass 0 unless there is a reason to do otherwise.
-- `context`: A structure holding contextual information for the run loop source. The function copies the information out of the structure, so the memory pointed to by   does not need to persist beyond the function call.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `order`: A priority index indicating the order in which run loop sources are processed. When multiple run loop sources are firing in a single pass through the run loop, the sources are processed in increasing order of this parameter. If the run loop is set to process only one source per loop, only the highest priority source, the one with the lowest `order` value, is processed. This value is ignored for version 1 sources. Pass 0 unless there is a reason to do otherwise.
+- `context`: A structure holding contextual information for the run loop source. The function copies the information out of the structure, so the memory pointed to by `context` does not need to persist beyond the function call.
 
 ## See Also
 

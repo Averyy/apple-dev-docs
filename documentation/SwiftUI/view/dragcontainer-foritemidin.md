@@ -52,7 +52,7 @@ In an example below, an app presents a view with `Fruit` values. `Fruit` does no
 - `itemType`: A type of the dragged items.
 - `itemID`: A closure that provides an item’s identifier.
 - `namespace`: A namespace that identifies the drag container.
-- `payload`: A closure which is called when   a drag operation begins. As an argument, the closure receives either the identifiers   of all the selected items, if the dragged item is a part of selection   or only the identifier of the dragged item, if it is   not part of the selection. Using the passed identifiers, put together the payload to drag,   and return from the closure.   Return an empty   to disable the drag.
+- `payload`: A closure which is called when a drag operation begins. As an argument, the closure receives either the identifiers of all the selected items, if the dragged item is a part of selection or only the identifier of the dragged item, if it is not part of the selection. Using the passed identifiers, put together the payload to drag, and return from the closure. Return an empty `Collection` to disable the drag.
 
 
 ---

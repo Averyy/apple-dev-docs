@@ -27,7 +27,7 @@ The context version number for run loop observers is currently `0`. Before calli
 ## Parameters
 
 - `observer`: The run loop observer to examine.
-- `context`: Upon return, contains the context information for  . This is the same information passed to   when creating  .
+- `context`: Upon return, contains the context information for `observer`. This is the same information passed to [`CFRunLoopObserverCreate(_:_:_:_:_:_:)`](cfrunloopobservercreate(_:_:_:_:_:_:).md) when creating `observer`.
 
 ## See Also
 

@@ -22,7 +22,7 @@ func removeMaterial(at index: Int)
 
 ## Parameters
 
-- `index`: The index of the attached material to be removed.
+- `index`: The index of the attached material to be removed. > ❗ **Important**:  Raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if `index` is beyond the bounds of the [`materials`](scngeometry/materials.md) array.
 
 ## See Also
 

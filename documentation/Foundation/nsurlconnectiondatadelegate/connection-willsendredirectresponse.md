@@ -42,7 +42,7 @@ The delegate should be prepared to receive this message multiple times.
 
 - `connection`: The connection sending the message.
 - `request`: The proposed redirected request. The delegate should inspect the redirected request to verify that it meets its needs, and create a copy with new attributes to return to the connection if necessary.
-- `response`: The URL response that caused the redirect. May be   in cases where this method is called because of URL canonicalization.
+- `response`: The URL response that caused the redirect. May be `nil` in cases where this method is called because of URL canonicalization.
 
 ## See Also
 

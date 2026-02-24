@@ -24,8 +24,8 @@ HealthKit uses the session’s workout activity and location type to fine tune A
 
 ## Parameters
 
-- `activityType`: The type of activity being performed in the workout. For a list of possible activities, see  .
-- `locationType`: A value indicating whether the workout was performed indoors or outdoors. For a list of possible location values, see  .
+- `activityType`: The type of activity being performed in the workout. For a list of possible activities, see [`HKWorkoutActivityType`](hkworkoutactivitytype.md).
+- `locationType`: A value indicating whether the workout was performed indoors or outdoors. For a list of possible location values, see [`HKWorkoutSessionLocationType`](hkworkoutsessionlocationtype.md).
 
 ## See Also
 

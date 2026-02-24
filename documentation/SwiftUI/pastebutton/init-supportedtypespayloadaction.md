@@ -21,8 +21,8 @@ Set the contents of `supportedTypes` in order of your app’s preference for its
 
 ## Parameters
 
-- `supportedTypes`: The exact uniform type identifiers supported   by the button. If the pasteboard doesn’t contain any of the   supported types, the button becomes disabled.
-- `payloadAction`: The handler to call when the user clicks the Paste   button, and the pasteboard has items that conform to   . This closure receives an array of   item providers that you use to inspect and load the pasteboard data.
+- `supportedTypes`: The exact uniform type identifiers supported by the button. If the pasteboard doesn’t contain any of the supported types, the button becomes disabled.
+- `payloadAction`: The handler to call when the user clicks the Paste button, and the pasteboard has items that conform to `supportedTypes`. This closure receives an array of item providers that you use to inspect and load the pasteboard data.
 
 ## See Also
 

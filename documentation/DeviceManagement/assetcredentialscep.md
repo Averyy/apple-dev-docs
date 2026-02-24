@@ -47,6 +47,14 @@ Specify `com.apple.asset.credential.scep` as the declaration type.
 - [object AssetCredentialSCEPReferenceObject](assetcredentialscepreferenceobject.md)
   The external reference for a SCEP asset credential.
 
+## Properties
+
+- `Accessible` (string): The keychain accessibility that determines when the keychain item is available for use, which has these allowed values: - `Default`: The most restrictive accessibility that still satisfies all uses of the asset by configurations that reference it.
+- `AfterFirstUnlock`: The keychain item is only available after the first unlock of the device.
+- `Authentication` (AssetCredentialSCEPAuthenticationObject): The server authentication details.
+- `Reference` (AssetCredentialSCEPReferenceObject) *(required)*: The external reference. Ensure that the asset data: - Is a JSON document that represents the `com.apple.credential.scep` credential type
+- Uses a media type of `application/json`, and if it includes a `ContentType` sub-key, that sub-key media type is also `application/json`
+
 ## See Also
 
 - [object AssetCredentialACME](assetcredentialacme.md)

@@ -72,7 +72,7 @@ The watchOS 10.2 SDK provides support to develop watchOS apps for Apple Watch de
 
 - Fixed: Resolved an issue with programmatically present an alert or sheet simultaneously with dismissing another sheet. The new alert or sheet would not show. Now it will. If you have code that presents the same sheet programmatically from multiple places in your view hierarchy at the same time, that sheet might no longer appear. Make sure that any `sheet` modifiers that are in the view hierarchy at the same time use distinct `isPresented` or `item` bindings.  (106343561) (FB12038918)
 - Fixed: Resolved a possible Swift access conflict crash that could occur with toolbar items.  (113992797)
-- Fixed: To prevent unintentional implicit dependency cycles, ImageRenderer no longer sends Observable updates when the image it produces changes. This change  affect the behavior when a dependency is explicitly declared by observing the ImageRenderer’s publisher.  (116836341)
+- Fixed: To prevent unintentional implicit dependency cycles, ImageRenderer no longer sends Observable updates when the image it produces changes. This change **does not** affect the behavior when a dependency is explicitly declared by observing the ImageRenderer’s publisher.  (116836341)
 
 ## See Also
 

@@ -30,6 +30,20 @@ When the action executes, the node’s [`position`](sknode/position.md) property
 
 This action is reversible; the reverse is created as if the following code is executed:
 
+**Swift**:
+
+```swift
+let negDelta = CGVector(dx: -deltaX, dy: -deltaY)
+let action = SKAction.move(by: negDelta, duration: sec)
+```
+
+**Obj-C**:
+
+```objc
+CGVector negDelta = CGVectorMake(-delta.dx,-delta.dy);
+[SKAction moveBy: negDelta duration: sec];
+```
+
 ## Parameters
 
 - `delta`: A vector that describes the change to apply to the node’s position.

@@ -27,8 +27,8 @@ By default, this property contains an empty array. Assign an array of [`UIDocume
 
 Document browser actions can be accessed in two ways:
 
--  actions appear in the Navigation bar when the user places the browser into the Select mode.
--  actions appear when the user long presses on a document or folder.
+- *Navigation bar* actions appear in the Navigation bar when the user places the browser into the Select mode.
+- *Menu* actions appear when the user long presses on a document or folder.
 
 When triggered, these actions are passed the URLs of the currently selected items.
 

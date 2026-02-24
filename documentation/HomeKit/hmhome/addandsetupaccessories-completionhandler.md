@@ -25,7 +25,7 @@ This method launches an interactive process that first asks the user to provide 
 
 ## Parameters
 
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

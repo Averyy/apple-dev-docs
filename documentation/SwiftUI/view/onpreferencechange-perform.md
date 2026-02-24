@@ -28,7 +28,7 @@ A view that triggers `action` when the value for `key` changes.
 ## Parameters
 
 - `key`: The key to monitor for value changes.
-- `action`: The action to perform when the value for   changes. The    closure passes the new value as its parameter.
+- `action`: The action to perform when the value for `key` changes. The `action` closure passes the new value as its parameter.
 
 
 ---

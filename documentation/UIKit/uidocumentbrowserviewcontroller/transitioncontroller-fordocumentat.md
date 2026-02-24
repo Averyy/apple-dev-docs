@@ -31,7 +31,7 @@ For more about using the transition controller, see [`UIDocumentBrowserTransitio
 
 ## Parameters
 
-- `documentURL`: The URL of a document. Only use URLs provided by the document browser (for example, URLs passed to the delegate’s  method’s completion block).
+- `documentURL`: The URL of a document. Only use URLs provided by the document browser (for example, URLs passed to the delegate’s [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didrequestdocumentcreationwithhandler:).md)method’s completion block).
 
 ## See Also
 

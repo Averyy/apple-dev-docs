@@ -26,9 +26,9 @@ If you call this method when the printing options are already displayed, `UIPrin
 ## Parameters
 
 - `rect`: A rectangle that defines the area from which the printing popover view is animated.
-- `view`: The view providing the coordinate system for  .
-- `animated`:   to animate the printing popover view from  ,   to display it immediately.
-- `completion`: A block of type   that you implement to handle the conclusion of the print job (for instance, to reset state) and to handle any errors encountered in printing.
+- `view`: The view providing the coordinate system for `rect`.
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the printing popover view from `item`, [`false`](https://developer.apple.com/documentation/Swift/false) to display it immediately.
+- `completion`: A block of type [`UIPrintInteractionController.CompletionHandler`](uiprintinteractioncontroller/completionhandler.md) that you implement to handle the conclusion of the print job (for instance, to reset state) and to handle any errors encountered in printing.
 
 ## See Also
 

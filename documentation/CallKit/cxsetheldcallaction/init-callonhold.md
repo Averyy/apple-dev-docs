@@ -24,7 +24,7 @@ A new action for the specified call UUID and whether the call is placed on hold.
 
 ## Parameters
 
-- `callUUID`: The unique identifier for the associated   object of the action.
+- `callUUID`: The unique identifier for the associated [`CXCall`](cxcall.md) object of the action.
 - `onHold`: Whether the call is on hold.
 
 ## See Also

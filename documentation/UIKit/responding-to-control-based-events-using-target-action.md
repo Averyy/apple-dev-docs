@@ -14,19 +14,73 @@ Use `target-action` to connect events directly from controls in your UI to metho
 
 ##### Designate an Object to Handle Control Related Events
 
-When a person interacts with your control, the control needs to know where to send the event. The destination for the event is the . View controllers make good targets because they’re adept at handling user interactions, as well as hosting UI controls.
+When a person interacts with your control, the control needs to know where to send the event. The destination for the event is the *target*. View controllers make good targets because they’re adept at handling user interactions, as well as hosting UI controls.
 
 ![A diagram that depicts the relationship between a control and its corresponding target and action. The control on the left has one arrow pointing to its target on the right, which is a view controller. Underneath this is a parallel arrow pointing from the control on the left to its action method on the right, which is a function with the name buttonTapped.](https://docs-assets.developer.apple.com/published/e4d1af298b6b4942ba4ae92e7b9142e1/media-4142878%402x.png)
 
 ##### Define the Action Methods You Use to Respond to Events
 
-With a control assigned to the target, provide a function to call on that target when the event occurs. This is the  method.
+With a control assigned to the target, provide a function to call on that target when the event occurs. This is the *action* method.
 
 Action methods have a distinct signature:
+
+**Swift**:
+
+```swift
+// UIKit.
+@IBAction func doSomething()
+@IBAction func doSomething(sender: Any)
+@IBAction func doSomething(sender: Any, forEvent event: UIEvent)
+ 
+// AppKit.
+@IBAction func doSomething()
+@IBAction func doSomething(sender: Any)
+```
+
+**Objective-C**:
+
+```objc
+    // UIKit.
+    - (IBAction)doSomething;
+    - (IBAction)doSomething:(id)sender;
+    - (IBAction)doSomething:(id)sender forControlEvents:(UIControlEvents)controlEvents;
+
+    // AppKit.
+    - (IBAction)doSomething;
+    - (IBAction)doSomething:(id)sender;
+```
 
 Xcode uses the `@IBAction` keyword to connect controls in Interface Builder to functions in your code. The keyword also bridges the Swift and Objective-C runtimes, enabling Swift code to call into Objective-C, which is where the target-action functionality lives.
 
 The `sender` parameter defines where the event comes from; for example, a button. Use the generic type `Any` to allow any control to call the action method, or specify the `sender` type when you need more information about the control for event processing. For example, set the `sender` type to [`UISlider`](uislider.md) to read the slider thumb value when someone moves the slider left or right.
+
+**Swift**:
+
+```swift
+// UIKit.
+@IBAction func adjustVolume(sender: UISlider) {
+    print(sender.value)
+}
+
+// AppKit.
+@IBAction func adjustVolume(sender: NSSlider) {
+    NSLog("%@", sender.stringValue)
+}
+```
+
+**Objective-C**:
+
+```objc
+// UIKit.
+- (IBAction)adjustVolume:(UISlider *)sender {
+    NSLog(@"%f", sender.value);
+}
+
+// AppKit.
+- (IBAction)adjustVolume:(NSSlider *)sender {
+    NSLog(@"%@", [sender stringValue]);
+}
+```
 
 UIKit also supports coupling action methods to specific event types (see [`UIControl.Event`](uicontrol/event.md)). For example, to set up target-action for a user dragging their finger inside the bounds of a control, register for the event type [`touchDragInside`](uicontrol/event/touchdraginside.md).
 
@@ -73,7 +127,126 @@ Connecting the target-action this way ensures the method signature and parameter
 
 In UIKit, use the [`addTarget(_:action:for:)`](uicontrol/addtarget(_:action:for:).md) method to set up target-action programmatically on a control:
 
+**Swift**:
+
+```swift
+import UIKit
+
+
+class ViewController: UIViewController {
+    let signInButton = UIButton(type: .system)
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+
+        signInButton.translatesAutoresizingMaskIntoConstraints = false
+        signInButton.setTitle("Sign in", for: .normal)
+        
+        // Target-action.
+        signInButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        
+        view.addSubview(signInButton)
+        signInButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        signInButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
+    
+    @IBAction func buttonTapped(sender: UIButton) {
+        print("Sign in successful 🎉")
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+#import "ViewController.h"
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    UIButton *signInButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [signInButton setTitle:@"Sign in" forState:UIControlStateNormal];
+
+    signInButton.translatesAutoresizingMaskIntoConstraints = false;
+
+    // Target-action.
+    [signInButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:signInButton];
+    [signInButton.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor].active = true;
+    [signInButton.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor].active = true;
+}
+
+- (void)buttonTapped:(UIButton *)sender {
+    NSLog(@"Sign in successful 🎉");
+}
+@end
+```
+
 In AppKit, use the control’s `target` and `action` properties to set target-action programmatically:
+
+**Swift**:
+
+```swift
+import Cocoa
+
+class ViewController: NSViewController {
+    let signInButton = NSButton()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        signInButton.translatesAutoresizingMaskIntoConstraints = false
+        signInButton.title = "Sign in"
+        
+        // Target-action.
+        signInButton.target = self
+        signInButton.action = #selector(buttonTapped(sender:))
+        
+        view.addSubview(signInButton)
+        signInButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        signInButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
+    
+    @IBAction func buttonTapped(sender: NSButton) {
+        print("Sign in successful 🎉")
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+#import "ViewController.h"
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    NSButton *signInButton = [[NSButton alloc] initWithFrame: NSMakeRect(20, 20, 100, 80)];
+    signInButton.translatesAutoresizingMaskIntoConstraints = NO;
+    signInButton.title = @"Sign in";
+    signInButton.bezelStyle = NSBezelStyleRounded;
+    
+    // Target-action.
+    signInButton.target = self;
+    signInButton.action = @selector(buttonTapped:);
+    
+    [self.view addSubview:signInButton];
+    [signInButton.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor].active = YES;
+    [signInButton.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor].active = YES;
+}
+
+- (void)buttonTapped:(NSButton *)sender {
+    NSLog(@"Sign in successful 🎉");
+}
+
+@end
+```
 
 ##### Enable Other Objects to Respond to Control Related Events
 

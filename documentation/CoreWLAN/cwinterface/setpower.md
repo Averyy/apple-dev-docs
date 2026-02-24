@@ -22,7 +22,7 @@ This operation may require an administrator password.
 
 ## Parameters
 
-- `power`: A Boolean value corresponding to the power state.   indicates the “OFF” state.
+- `power`: A Boolean value corresponding to the power state. *NO* indicates the “OFF” state.
 
 ## See Also
 

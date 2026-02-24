@@ -27,8 +27,8 @@ A new font reference with the original traits in the given family, or `NULL` if 
 ## Parameters
 
 - `font`: The original font reference on which to base the new font.
-- `size`: The point size for the font reference. If   is specified, the original font’s size is preserved.
-- `matrix`: The transformation matrix for the font.  In most cases, set this parameter to be  .  If   is specified, the original font’s matrix is preserved.
+- `size`: The point size for the font reference. If `0.0` is specified, the original font’s size is preserved.
+- `matrix`: The transformation matrix for the font.  In most cases, set this parameter to be `NULL`.  If `NULL` is specified, the original font’s matrix is preserved.
 - `family`: The name of the desired family.
 
 ## See Also

@@ -4,6 +4,11 @@
 
 #### Overview
 
+- **Containing profile atom**: Track (video), movie
+- **`part-ID`**: `0x20202020` (universal feature)
+- **`feature-code`**: `'avvb'`
+- **`feature-value`**: Unsigned `int(32)` indicating average video bit rate in bits per second
+
 #### Feature Values
 
 The value is an unsigned 32-bit integer indicating the average video bit rate in bits per second.

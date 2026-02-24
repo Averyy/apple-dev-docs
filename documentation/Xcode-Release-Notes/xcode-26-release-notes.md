@@ -46,8 +46,8 @@ Also in Xcode 26:
 
 - The Related Items menu has been simplified to items to improve editor load times. Assistant Categories like Callers are still available in the Assistant Editor. There is also similar functionality available via editor context menus or in the Find Navigator.  (147335052)
 - Simulators may fail to boot during the first build after upgrading macOS; rebuilding after a short wait typically resolves the issue.  (152328794)
-- Sometimes the “Cancel” button in the Coding Assistant status bar fails to stop the currently executing message.  (152546155)  Use the Coding Assistant navigator directly, and click “Cancel”.
-- Users updating from earlier Xcode 26 betas may experience an error such as “fatal error: ‘iostream’ file not found” when using C++ standard headers.  (152924178) (FB17859821)  In Terminal, execute the command: ```None
+- Sometimes the “Cancel” button in the Coding Assistant status bar fails to stop the currently executing message.  (152546155) **Workaround:** Use the Coding Assistant navigator directly, and click “Cancel”.
+- Users updating from earlier Xcode 26 betas may experience an error such as “fatal error: ‘iostream’ file not found” when using C++ standard headers.  (152924178) (FB17859821) **Workaround:** In Terminal, execute the command: ```None
  sudo rm -rf /Library/Developer/CommandLineTools/usr/include/c++/v1
 ```
 
@@ -55,7 +55,7 @@ Also in Xcode 26:
 
 ###### Known Issues
 
-- Address Sanitizer C++ container overflow checks are no longer disabled by default and cannot be disabled at compile time from Xcode build settings.  (157770563)  Disable the checks at run time by setting the `ASAN_OPTIONS` environment variable to `detect_container_overflow=0` or adding it to your existing `ASAN_OPTIONS`. Add this setting to the Environment Variables list in the Arguments tab of the Run scheme in the scheme editor and in the Configurations tab of any Test Plan that uses Address Sanitizer.
+- Address Sanitizer C++ container overflow checks are no longer disabled by default and cannot be disabled at compile time from Xcode build settings.  (157770563) **Workaround:** Disable the checks at run time by setting the `ASAN_OPTIONS` environment variable to `detect_container_overflow=0` or adding it to your existing `ASAN_OPTIONS`. Add this setting to the Environment Variables list in the Arguments tab of the Run scheme in the scheme editor and in the Configurations tab of any Test Plan that uses Address Sanitizer.
 
 ##### App Intents
 
@@ -97,7 +97,7 @@ Also in Xcode 26:
 
 ###### Known Issues
 
-- When running the mock server (`ba-serve`), the Choose Identity panel might appear behind all other windows and be absent in Mission Control.  (152256482)  Move all other windows out of the way to reveal the panel.
+- When running the mock server (`ba-serve`), the Choose Identity panel might appear behind all other windows and be absent in Mission Control.  (152256482) **Workaround:** Move all other windows out of the way to reveal the panel.
 
 ##### Build System
 
@@ -190,7 +190,7 @@ Also in Xcode 26:
 - When using coding intelligence, the model is unable to view or modify files with identical names simultaneously.   (147450585)
 - Previously deleted files may appear in the modification history as having been deleted by a recent coding assistant conversation.  (152545638)
 - Coding intelligence provides inconsistent results when modifying files that contain thousands of lines.   (152590014)
-- Users interacting with Claude in Xcode might receive an error message about their OAuth token being expired.  (159566701) (FB20014334)  Go to Settings → Intelligence → Claude in Xcode. Sign out. Restart Xcode. Sign back in.
+- Users interacting with Claude in Xcode might receive an error message about their OAuth token being expired.  (159566701) (FB20014334) **Workaround:** Go to Settings → Intelligence → Claude in Xcode. Sign out. Restart Xcode. Sign back in.
 
 ##### Create Ml App
 
@@ -246,7 +246,7 @@ Also in Xcode 26:
 
 ###### Known Issues
 
-- The DestinationVideo sample code doesn’t compile.  (147074640)  Replace `import GroupActivities` with `@preconcurrency import GroupActivities`.
+- The DestinationVideo sample code doesn’t compile.  (147074640) **Workaround:** Replace `import GroupActivities` with `@preconcurrency import GroupActivities`.
 
 ##### Icon Composer
 
@@ -668,9 +668,9 @@ Also in Xcode 26:
 
 ## See Also
 
-- [Xcode 26.4 Beta Release Notes](xcode-26_4-release-notes.md)
+- [Xcode 26.4 Beta 2 Release Notes](xcode-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 26.3 RC Release Notes](xcode-26_3-release-notes.md)
+- [Xcode 26.3 RC 2 Release Notes](xcode-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [Xcode 26.2 Release Notes](xcode-26_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

@@ -21,9 +21,9 @@ If the user denies access to the application, or if no application is allowed to
 
 ## Parameters
 
-- `groupURL`: The URL for an   object.
-- `resultBlock`: For a description of the block, see  .
-- `failureBlock`: For a description of the block, see  .
+- `groupURL`: The URL for an `ALAssetsGroup` object.
+- `resultBlock`: The block invoked after the access operation completes. For a description of the block, see [`ALAssetsLibraryAccessFailureBlock`](alassetslibraryaccessfailureblock.md).
+- `failureBlock`: The block to invoke if the access operation fails—for example, if the user denies access to the application. For a description of the block, see [`ALAssetsGroupFaces`](alassetsgroupfaces.md).
 
 ## See Also
 

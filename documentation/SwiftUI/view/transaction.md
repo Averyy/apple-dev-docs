@@ -79,7 +79,7 @@ Use this modifier on leaf views such as [`Image`](image.md) or [`Button`](button
 
 ## Parameters
 
-- `transform`: The transformation to apply to transactions   within this view.
+- `transform`: The transformation to apply to transactions within this view.
 
 ## See Also
 

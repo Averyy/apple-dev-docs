@@ -24,7 +24,7 @@ CFNetwork diagnostic logs may contain decrypted TLS data and other security-sens
 - If you build an app that enables this logging programmatically, make sure that anyone who receives that app understands the security implications of using it.
 - If you send a log to Apple, redact any security-sensitive information.
 
-> ❗ **Important**:  CFNetwork diagnostic logs may contain information that’s  security-sensitive. Protect these logs accordingly.
+> ❗ **Important**:  CFNetwork diagnostic logs may contain information that’s *extremely* security-sensitive. Protect these logs accordingly.
 
 ##### Enable Logging in Xcode
 

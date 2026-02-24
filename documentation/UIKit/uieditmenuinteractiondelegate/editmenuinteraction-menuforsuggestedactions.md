@@ -50,7 +50,7 @@ func editMenuInteraction(_ interaction: UIEditMenuInteraction, menuFor configura
 
 - `interaction`: The interaction object triggering the menu.
 - `configuration`: The object containing the configuration details for the menu.
-- `suggestedActions`: The array of suggested actions UIKit gathers from the   chain. You should include these actions in the menu you return.
+- `suggestedActions`: The array of suggested actions UIKit gathers from the [`UIResponder`](uiresponder.md) chain. You should include these actions in the menu you return.
 
 ## See Also
 

@@ -40,7 +40,7 @@ If the image was created using the CGBitmapImageContextCreate function, it must 
 ## Parameters
 
 - `cgImage`: The Quartz image to be turned into a texture.
-- `options`: A dictionary that describes any additional steps you want the texture loader to take when loading the texture. See  .
+- `options`: A dictionary that describes any additional steps you want the texture loader to take when loading the texture. See [`Texture Loading Options`](texture-loading-options.md).
 
 ## See Also
 

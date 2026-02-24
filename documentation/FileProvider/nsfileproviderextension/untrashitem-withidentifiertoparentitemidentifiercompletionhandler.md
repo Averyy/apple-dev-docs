@@ -31,8 +31,9 @@ The user’s ability to remove an item from the trash is controlled by the new p
 ## Parameters
 
 - `itemIdentifier`: The item’s persistent identifier.
-- `parentItemIdentifier`: The persistent identifier for the new parent directory, or  .
-- `completionHandler`: A block that takes the following parameters:
+- `parentItemIdentifier`: The persistent identifier for the new parent directory, or `nil`.
+- `completionHandler`: A block that takes the following parameters: - **`untrashedItem`**: A file provider item that represents the changed item, or `nil` if an error occurred.
+- **`error`**: An error object. If an error occurs, pass in an object that describes the error; otherwise, set it to `nil`.
 
 ## See Also
 

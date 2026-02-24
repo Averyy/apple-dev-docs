@@ -8,6 +8,10 @@ The name of the bundle’s HTML help file.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [CFBundleHelpBookName](information-property-list/cfbundlehelpbookname.md)

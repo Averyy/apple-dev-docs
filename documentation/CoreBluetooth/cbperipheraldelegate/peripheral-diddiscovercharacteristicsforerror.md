@@ -28,7 +28,7 @@ Core Bluetooth invokes this method when your app calls the [`discoverCharacteris
 
 - `peripheral`: The peripheral providing this information.
 - `service`: The service to which the characteristics belong.
-- `error`: The reason the call failed, or   if no error occurred.
+- `error`: The reason the call failed, or `nil` if no error occurred.
 
 ## See Also
 

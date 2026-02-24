@@ -14,6 +14,12 @@ A dictionary that indicates a [`ServicesBackgroundTasks`](servicesbackgroundtask
 object StatusServicesBackgroundTaskBackgroundTask_Launchd_DeviceManagementObject
 ```
 
+## Properties
+
+- `asset-identifier` (string) *(required)*: The `Identifier` of the declaration asset that provided the launchd plist for this task.
+- `asset-server-token` (string) *(required)*: The `ServerToken` of the declaration asset that provided the launchd plist for this task.
+- `configuration-identifier` (string) *(required)*: The identifier of the [`ServicesBackgroundTasks`](servicesbackgroundtasks.md) configuration that created this task.
+
 
 ---
 

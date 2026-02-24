@@ -34,8 +34,8 @@ If the size of your data doesn’t match the size of the grid, perform boundary 
 
 ## Parameters
 
-- `threadgroupsPerGrid`: An   instance that represents the number of threads for each grid dimension.
-- `threadsPerThreadgroup`: An   instance that represents the number of threads in a threadgroup.
+- `threadgroupsPerGrid`: An [`MTLSize`](mtlsize.md) instance that represents the number of threads for each grid dimension.
+- `threadsPerThreadgroup`: An [`MTLSize`](mtlsize.md) instance that represents the number of threads in a threadgroup.
 
 ## See Also
 

@@ -31,7 +31,7 @@ This function asks an audio queue’s associated device for a start time to use 
 
 - `inAQ`: The audio queue whose associated audio hardware device’s start time you want to get.
 - `ioRequestedStartTime`: On input, the requested start time. On output, the actual start time.
-- `inFlags`: Reserved for future use. Pass  .
+- `inFlags`: Reserved for future use. Pass `0`.
 
 ## See Also
 

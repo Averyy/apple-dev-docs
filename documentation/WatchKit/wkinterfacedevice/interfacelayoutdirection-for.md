@@ -20,7 +20,7 @@ The user interface layout direction (left-to-right or right-to-left). For a list
 
 ## Parameters
 
-- `semanticContentAttribute`: The semantic content attribute. For a list of possible values, see  .
+- `semanticContentAttribute`: The semantic content attribute. For a list of possible values, see [`WKInterfaceSemanticContentAttribute`](wkinterfacesemanticcontentattribute.md).
 
 ## See Also
 

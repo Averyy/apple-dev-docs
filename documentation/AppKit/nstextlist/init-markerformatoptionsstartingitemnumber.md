@@ -16,8 +16,8 @@ init(markerFormat: NSTextList.MarkerFormat, options: NSTextList.Options = [], st
 
 ## Parameters
 
-- `markerFormat`: One of the possible   formats.
-- `options`: One or more of the possible   options.
+- `markerFormat`: One of the possible [`NSTextList.MarkerFormat`](nstextlist/markerformat-swift.struct.md) formats.
+- `options`: One or more of the possible [`NSTextList.Options`](nstextlist/options.md) options.
 - `startingItemNumber`: An integer that represents the stating item number.
 
 ## See Also

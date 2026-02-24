@@ -19,6 +19,11 @@ A status value for the test status item dictionary.
 object StatusTestDictionaryValueDictionaryObject
 ```
 
+## Properties
+
+- `key1` (string) *(required)*: The value of the first sub-key.
+- `key2` (string): The value of the second sub-key.
+
 
 ---
 

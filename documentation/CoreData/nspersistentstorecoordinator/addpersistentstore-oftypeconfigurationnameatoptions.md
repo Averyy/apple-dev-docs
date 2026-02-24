@@ -30,10 +30,10 @@ The newly created store or, if an error occurs, `nil`.
 
 ## Parameters
 
-- `storeType`: A string constant (such as  ) that specifies the store type—see   for possible values.
-- `configuration`: The name of a configuration in the receiver’s managed object model that will be used by the new store. The configuration can be  , in which case no other configurations are allowed.
+- `storeType`: A string constant (such as `NSSQLiteStoreType`) that specifies the store type—see [`Persistent Store Types`](persistent-store-types.md) for possible values.
+- `configuration`: The name of a configuration in the receiver’s managed object model that will be used by the new store. The configuration can be `nil`, in which case no other configurations are allowed.
 - `storeURL`: The file location of the persistent store.
-- `options`: A dictionary containing key-value pairs that specify whether the store should be read-only, and whether (for an XML store) the XML file should be validated against the DTD before it is read. For key definitions, see   and  . This value may be  .
+- `options`: A dictionary containing key-value pairs that specify whether the store should be read-only, and whether (for an XML store) the XML file should be validated against the DTD before it is read. For key definitions, see [`Store options`](store-options.md) and [`Migration options`](migration-options.md). This value may be `nil`.
 
 ## See Also
 

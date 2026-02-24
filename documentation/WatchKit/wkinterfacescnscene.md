@@ -20,6 +20,18 @@ To provide content for a [`WKInterfaceSCNScene`](wkinterfacescnscene.md) interfa
 
 Do not subclass or create instances of this class yourself. Instead, drag a SceneKit Scene object from your Object Library and add it to your storyboard. Then define an outlet in your interface controller class and connect it to the SceneKit Scene object. For example, to refer to a scene in your interface, define a property with the following syntax in your interface controller class:
 
+**Swift**:
+
+```swift
+@IBOutlet weak var sceneInterface: WKInterfaceSCNScene!
+```
+
+**Objective-C**:
+
+```objc
+@property (weak, nonatomic) IBOutlet WKInterfaceSCNScene* sceneInterface;
+```
+
 During the initialization of your interface controller, WatchKit creates a new instance of this class and assigns it to your outlet. At that point, you can use the object in your outlet to make changes to the SceneKit scene.
 
 The SceneKit scene in your Watch app must be connected to a [`WKInterfaceSCNScene`](wkinterfacescnscene.md) outlet in your WatchKit extension for the scene to be visible in your watchOS app’s user interface.

@@ -22,7 +22,7 @@ init(_ label: VerifyIdentityWithWalletButtonLabel = .verifyIdentity, request: PK
 
 - `label`: The button’s label.
 - `request`: The identity request to make when a person taps the button.
-- `onCompletion`: The completion handler the framework calls when finishing the authorization flow.
+- `onCompletion`: The completion handler the framework calls when finishing the authorization flow. - **`result`**: A result that contains an identity document, if successful; otherwise, an error.
 - `fallback`: A view to display if the app can’t perform an identity request.
 
 ## See Also

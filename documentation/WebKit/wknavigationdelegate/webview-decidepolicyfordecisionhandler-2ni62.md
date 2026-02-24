@@ -32,7 +32,7 @@ If your delegate object implements the [`webView(_:decidePolicyFor:preferences:d
 
 - `webView`: The web view from which the navigation request began.
 - `navigationAction`: Details about the action that triggered the navigation request.
-- `decisionHandler`: A completion handler block to call with the results about whether to allow or cancel the navigation. This handler has no return value and takes the following parameter:
+- `decisionHandler`: A completion handler block to call with the results about whether to allow or cancel the navigation. This handler has no return value and takes the following parameter: - **policy**: A constant that indicates whether to cancel or allow the navigation. For a list of possible values, see [`WKNavigationActionPolicy`](wknavigationactionpolicy.md).
 
 ## See Also
 

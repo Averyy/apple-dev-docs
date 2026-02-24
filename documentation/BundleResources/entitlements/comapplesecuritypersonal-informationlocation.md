@@ -8,6 +8,10 @@ A Boolean value that indicates whether the app may access location information f
 **Availability**:
 - macOS 10.7+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 To add this entitlement to your app, first enable the App Sandbox or Hardened Runtime capability in Xcode, and then select Location.

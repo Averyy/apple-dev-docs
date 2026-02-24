@@ -36,7 +36,7 @@ For more information, see [`CFNetwork Programming Guide`](https://developer.appl
 ## Parameters
 
 - `url`: The URL your application intends to access.
-- `proxySettings`: A dictionary describing the available proxy settings. The dictionary should be in the format returned by  . (See   for more information.)
+- `proxySettings`: A dictionary describing the available proxy settings. The dictionary should be in the format returned by `SystemConfiguration.framework`. (See [`kCFStreamErrorDomainSystemConfiguration`](kcfstreamerrordomainsystemconfiguration.md) for more information.)
 
 ## See Also
 

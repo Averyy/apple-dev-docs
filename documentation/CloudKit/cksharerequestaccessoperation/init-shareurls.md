@@ -26,7 +26,7 @@ A configured [`CKShareRequestAccessOperation`](cksharerequestaccessoperation.md)
 
 ## Parameters
 
-- `shareURLs`: An array of   objects representing the shares to request access to.
+- `shareURLs`: An array of `NSURL` objects representing the shares to request access to.
 
 
 ---

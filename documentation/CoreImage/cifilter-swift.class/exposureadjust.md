@@ -29,6 +29,9 @@ This method applies the exposure-adjust filter to an image. The effect uses mult
 
 The exposure-adjust filter uses the following properties:
 
+- **`ev`**: A `float` representing the amount to adjust the exposure as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds brightness to the input image:
 
 ```swift

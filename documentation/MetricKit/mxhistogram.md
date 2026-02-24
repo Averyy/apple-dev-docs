@@ -20,7 +20,7 @@ class MXHistogram<UnitType> where UnitType : Unit
 
 #### Overview
 
-A  measures the number of times a data point for a variable falls into a specific range of possible values within a set of data. Usually, histograms are depicted as bar charts, in which each bar represents a range of values, and the height of each bar represents the number of times the value of the variable falls within a particular range. In this class, each bar is represented by a .
+A *histogram* measures the number of times a data point for a variable falls into a specific range of possible values within a set of data. Usually, histograms are depicted as bar charts, in which each bar represents a range of values, and the height of each bar represents the number of times the value of the variable falls within a particular range. In this class, each bar is represented by a *bucket*.
 
 A bucket holds the results for a series of measured values, such as all the events occurring between 3 and 5 seconds. MetricKit uses fixed-width buckets that are device-independent with intervals that are based on the type of metric. Use the [`bucketStart`](mxhistogrambucket/bucketstart.md) and [`bucketEnd`](mxhistogrambucket/bucketend.md) properties to find the start and end of an interval.
 

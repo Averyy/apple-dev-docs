@@ -26,7 +26,7 @@ convenience init(subsystem: String, category: String)
 
 ## Parameters
 
-- `subsystem`: An identifier string, in reverse DNS notation, that represents the app subsystem that’s logging information, such as  . The logging system uses this information to categorize and filter related log messages, and to group related logging settings.
+- `subsystem`: An identifier string, in reverse DNS notation, that represents the app subsystem that’s logging information, such as `com.your_company.your_subsystem_name`. The logging system uses this information to categorize and filter related log messages, and to group related logging settings.
 - `category`: A category within the specified subsystem. The system uses this value to categorize and filter related log messages, and to group related logging settings within the subsystem. A category’s logging settings override those of the containing subsystem.
 
 ## See Also

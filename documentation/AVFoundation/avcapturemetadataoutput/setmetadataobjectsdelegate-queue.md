@@ -24,8 +24,8 @@ When new metadata objects are captured from the receiver’s connection, they ar
 
 ## Parameters
 
-- `objectsDelegate`: The delegate object to notify when new metadata objects become available. This object must conform to the   protocol.
-- `objectsCallbackQueue`: The dispatch queue on which to execute the delegate’s methods. This queue must be a serial queue to ensure that metadata objects are delivered in the order in which they were received. If the   parameter is  , you may specify   for this parameter too; otherwise, you must specify a valid dispatch queue.
+- `objectsDelegate`: The delegate object to notify when new metadata objects become available. This object must conform to the [`AVCaptureMetadataOutputObjectsDelegate`](avcapturemetadataoutputobjectsdelegate.md) protocol.
+- `objectsCallbackQueue`: The dispatch queue on which to execute the delegate’s methods. This queue must be a serial queue to ensure that metadata objects are delivered in the order in which they were received. If the `objectsDelegate` parameter is `nil`, you may specify `nil` for this parameter too; otherwise, you must specify a valid dispatch queue.
 
 ## See Also
 

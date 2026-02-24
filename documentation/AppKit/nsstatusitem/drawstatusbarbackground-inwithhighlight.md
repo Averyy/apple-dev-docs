@@ -21,7 +21,7 @@ You can use this method to help a custom status-bar item emulate the behavior of
 ## Parameters
 
 - `rect`: A rectangle defining the area of a custom status-bar item.
-- `highlight`:   to draw the background pattern in the standard highlight pattern,   to not highlight the pattern.
+- `highlight`: [`true`](https://developer.apple.com/documentation/Swift/true) to draw the background pattern in the standard highlight pattern, [`false`](https://developer.apple.com/documentation/Swift/false) to not highlight the pattern.
 
 ## See Also
 

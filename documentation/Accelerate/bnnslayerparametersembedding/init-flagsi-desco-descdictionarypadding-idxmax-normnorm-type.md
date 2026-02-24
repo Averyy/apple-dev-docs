@@ -27,8 +27,8 @@ init(flags: BNNSEmbeddingFlags, i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArr
 - `o_desc`: The descriptor of the output.
 - `dictionary`: The descriptor of the dictionary.
 - `padding_idx`: The padding index. The operation returns a zero tensor for dictionary items with an index that corresponds to the padding index.
-- `max_norm`: The maximum norm. If nonzero, the operation renormalizes any vector with a norm greater than   during forward lookups.
-- `norm_type`: The norm type. If   is nonzero, this value specifies the p-norm where  .
+- `max_norm`: The maximum norm. If nonzero, the operation renormalizes any vector with a norm greater than `max_norm` during forward lookups.
+- `norm_type`: The norm type. If `max_norm` is nonzero, this value specifies the p-norm where `p = norm_type`.
 
 ## See Also
 

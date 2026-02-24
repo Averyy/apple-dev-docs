@@ -24,11 +24,11 @@ init(_ name: String? = nil, schema: Schema? = nil, isStoredInMemoryOnly: Bool = 
 ## Parameters
 
 - `name`: An optional name for the model configuration.
-- `schema`: A schema that maps model classes to the associated data in the   persistent storage. For more information, see  .
-- `isStoredInMemoryOnly`: A Boolean value that determines whether the   associated persistent storage is ephemeral and exists only in memory. The   default value is  .
-- `allowsSave`: A Boolean value that determines whether the associated   persistent storage is writable. The default value is  .
-- `groupContainer`: The option to use for detecting the configuration’s group   container. For possible values, see  .
-- `cloudKitDatabase`: The option to use for detecting the configuration’s   CloudKit database. For possible values, see  .
+- `schema`: A schema that maps model classes to the associated data in the persistent storage. For more information, see [`Schema`](schema.md).
+- `isStoredInMemoryOnly`: A Boolean value that determines whether the associated persistent storage is ephemeral and exists only in memory. The default value is `false`.
+- `allowsSave`: A Boolean value that determines whether the associated persistent storage is writable. The default value is `true`.
+- `groupContainer`: The option to use for detecting the configuration’s group container. For possible values, see [`ModelConfiguration.GroupContainer`](modelconfiguration/groupcontainer-swift.struct.md).
+- `cloudKitDatabase`: The option to use for detecting the configuration’s CloudKit database. For possible values, see [`ModelConfiguration.CloudKitDatabase`](modelconfiguration/cloudkitdatabase-swift.struct.md).
 
 ## See Also
 

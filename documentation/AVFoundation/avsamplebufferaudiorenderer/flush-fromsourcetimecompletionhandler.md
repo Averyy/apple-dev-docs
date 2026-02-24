@@ -29,7 +29,7 @@ This method can be used to replace media data scheduled to be rendered in the fu
 ## Parameters
 
 - `time`: The time used to flush all later sample buffers.
-- `completionHandler`: The block to invoke when the flush operation has either been completed or been interrupted. The block takes one argument:
+- `completionHandler`: The block to invoke when the flush operation has either been completed or been interrupted. The block takes one argument: - **flushSucceeded**: A Boolean value indicating whether the sample buffers were flushed.
 
 ## See Also
 

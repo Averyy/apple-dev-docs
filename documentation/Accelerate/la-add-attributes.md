@@ -32,7 +32,7 @@ This function is not reentrant or thread-safe.  Attempting to add or remove attr
 ## Parameters
 
 - `object`: The object that will have its attributes modified.
-- `attributes`: Attributes which are to be added to the object’s existing attributes   to create its new set of attributes.  This value should be constructed by   or’ing together LA_ATTRIBUTE_* constants.
+- `attributes`: Attributes which are to be added to the object’s existing attributes to create its new set of attributes.  This value should be constructed by or’ing together LA_ATTRIBUTE_* constants.
 
 ## See Also
 

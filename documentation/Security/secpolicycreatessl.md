@@ -30,7 +30,7 @@ The policy object. In Objective-C, call the [`CFRelease`](https://developer.appl
 
 ## Parameters
 
-- `server`: Specify   on the client side to return a policy for SSL server certificates.
+- `server`: Specify `true` on the client side to return a policy for SSL server certificates.
 - `hostname`: If you specify a value for this parameter, the policy will require the specified value to match the host name in the leaf certificate.
 
 

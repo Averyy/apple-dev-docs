@@ -27,7 +27,7 @@ func CFDictionaryContainsValue(_ theDict: CFDictionary!, _ value: UnsafeRawPoint
 ## Parameters
 
 - `theDict`: The dictionary to examine.
-- `value`: The value for which to find matches in  . The value equal callback provided when the dictionary was created is used to compare. If the equal callback was  , pointer equality (in C, ==) is used. If  , or any other value in the dictionary, is not understood by the equal callback, the behavior is undefined.
+- `value`: The value for which to find matches in `theDict`. The value equal callback provided when the dictionary was created is used to compare. If the equal callback was `NULL`, pointer equality (in C, ==) is used. If `value`, or any other value in the dictionary, is not understood by the equal callback, the behavior is undefined.
 
 ## See Also
 

@@ -11,6 +11,12 @@ The minimum Transport Layer Security (TLS) version for network connections.
 - macOS 10.11+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
+**Default**: `TLSv1.2`
+
 #### Discussion
 
 This key is optional. The value is a string, with a default value of `TLSv1.2`.

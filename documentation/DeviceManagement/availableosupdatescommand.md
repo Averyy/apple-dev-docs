@@ -23,6 +23,11 @@ object AvailableOSUpdatesCommand
 - [object AvailableOSUpdatesCommand.Command](availableosupdatescommand/command-data.dictionary.md)
   The command to get a list of available operating-system updates for a device.
 
+## Properties
+
+- `Command` (AvailableOSUpdatesCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object AvailableOSUpdatesResponse](availableosupdatesresponse.md)

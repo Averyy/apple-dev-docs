@@ -20,8 +20,8 @@ Applies the provided content effect and pointer shape to the current region.
 
 ## Parameters
 
-- `effect`: The   to apply to the region.
-- `shape`: The   to use, defaults to  .
+- `effect`: The [`UIPointerEffect`](uipointereffect-swift.enum.md) to apply to the region.
+- `shape`: The [`UIPointerShape`](uipointershape-swift.enum.md) to use, defaults to `nil`.
 
 ## See Also
 

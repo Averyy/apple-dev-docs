@@ -17,7 +17,7 @@ func setActivitySummary(_ activitySummary: HKActivitySummary?, animated: Bool)
 ## Parameters
 
 - `activitySummary`: The new activity summary.
-- `animated`: If  , the change is animated.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), the change is animated.
 
 
 ---

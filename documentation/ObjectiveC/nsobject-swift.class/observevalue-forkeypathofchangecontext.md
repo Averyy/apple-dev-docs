@@ -26,9 +26,9 @@ For an `object` to begin sending change notification messages for the value at `
 
 ## Parameters
 
-- `keyPath`: The key path, relative to  , to the value that has changed.
-- `object`: The source object of the key path  .
-- `change`: A dictionary that describes the changes that have been made to the value of the property at the key path   relative to  . Entries are described in  .
+- `keyPath`: The key path, relative to `object`, to the value that has changed.
+- `object`: The source object of the key path `keyPath`.
+- `change`: A dictionary that describes the changes that have been made to the value of the property at the key path `keyPath` relative to `object`. Entries are described in `Change Dictionary Keys`.
 - `context`: The value that was provided when the observer was registered to receive key-value observation notifications.
 
 

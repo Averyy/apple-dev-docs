@@ -8,6 +8,10 @@ The name of an app’s storyboard resource file.
 **Availability**:
 - macOS 10.10+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [UIApplicationSceneManifest](information-property-list/uiapplicationscenemanifest.md)

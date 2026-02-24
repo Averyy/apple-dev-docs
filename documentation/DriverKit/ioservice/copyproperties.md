@@ -23,7 +23,7 @@ virtual kern_return_t CopyProperties(OSDictionary **properties);
 
 ## Parameters
 
-- `properties`: It is a programmer error to specify   or an invalid pointer for this parameter.
+- `properties`: A variable for storing the properties. On return, the variable contains a dictionary with the properties, or `NULL` if the service has no registered properties. If this method returns a valid dictionary, you are responsible for releasing that dictionary when you are finished with it. It is a programmer error to specify `NULL` or an invalid pointer for this parameter.
 
 ## See Also
 

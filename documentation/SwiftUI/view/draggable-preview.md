@@ -46,8 +46,8 @@ To customize the lift preview, shown while the system transitions to show your c
 
 ## Parameters
 
-- `payload`: A closure that returns a single   class instance or a value conforming to   that   represents the draggable data from this view.
-- `preview`: A   to use as the source for the dragging   preview, once the drag operation has begun. The preview is centered over   the source view.
+- `payload`: A closure that returns a single class instance or a value conforming to `Transferable` that represents the draggable data from this view.
+- `preview`: A [`View`](view.md) to use as the source for the dragging preview, once the drag operation has begun. The preview is centered over the source view.
 
 ## See Also
 

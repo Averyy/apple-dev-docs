@@ -15,6 +15,8 @@ typealias ALAssetsLibraryAssetForURLResultBlock = (ALAsset?) -> Void
 
 The block parameter is defined as follows:
 
+- **asset**: The asset identified by the URL parameter in [`asset(for:resultBlock:failureBlock:)`](alassetslibrary/asset(for:resultblock:failureblock:).md).
+
 If the asset is not found, `asset` is `nil`.
 
 ## See Also

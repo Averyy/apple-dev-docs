@@ -41,7 +41,7 @@ This method does not cache the texture objects it creates.
 ## Parameters
 
 - `names`: An array of strings, each the name (including extension) of an image file.
-- `bundleOrNil`: The bundle the image files are located in, or   to use the main bundle.
+- `bundleOrNil`: The bundle the image files are located in, or `nil` to use the main bundle.
 
 ## See Also
 

@@ -30,7 +30,7 @@ If this function fails, the previous credentials are used.
 - `record`: The record.
 - `username`: The username to use to authenticate with the node.
 - `password`: The password to use to authenticate with the node.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

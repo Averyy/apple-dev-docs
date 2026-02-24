@@ -33,7 +33,7 @@ The iOS & iPadOS 18.4 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- Availability checking is disabled for C APIs in hvf.  (147323772)  To enable availability checking, add this ahead of any headers: ```None
+- Availability checking is disabled for C APIs in hvf.  (147323772) **Workaround:** To enable availability checking, add this ahead of any headers: ```None
  #define BUILD_FOR_APPLE_SDK 1
 ```
 
@@ -85,7 +85,7 @@ The iOS & iPadOS 18.4 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- Calling `isEligibleForIntroOffer(for:)` will return false if there is no user account signed in.  (146119524)  The user should sign in with their App Store account to request introductory offer eligibility.
+- Calling `isEligibleForIntroOffer(for:)` will return false if there is no user account signed in.  (146119524) **Workaround:** The user should sign in with their App Store account to request introductory offer eligibility.
 
 ###### Deprecations
 

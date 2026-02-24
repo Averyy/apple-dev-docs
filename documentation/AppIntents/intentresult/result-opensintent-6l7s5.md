@@ -22,7 +22,7 @@ static func result<OpensAppIntent>(opensIntent: OpensAppIntent) -> Self where Se
 
 ## Parameters
 
-- `opensIntent`: An   to shows the result of current intent
+- `opensIntent`: An `AppIntent` to shows the result of current intent
 
 
 ---

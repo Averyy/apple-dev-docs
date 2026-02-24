@@ -27,7 +27,7 @@ This initializer creates a [`Text`](text.md) view on your behalf, and treats the
 
 ## Parameters
 
-- `titleKey`: The key for the progress view’s localized title that   describes the task in progress.
+- `titleKey`: The key for the progress view’s localized title that describes the task in progress.
 
 ## See Also
 

@@ -30,7 +30,7 @@ When applying complex edits to media containing a semantic segmentation matte, y
 
 ## Parameters
 
-- `pixelBuffer`: A pixel buffer containing a semantic segmentation matting image, represented as   with a   transfer function.
+- `pixelBuffer`: A pixel buffer containing a semantic segmentation matting image, represented as [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_OneComponent8) with a [`kCVImageBufferTransferFunction_Linear`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferTransferFunction_Linear) transfer function.
 
 ## See Also
 

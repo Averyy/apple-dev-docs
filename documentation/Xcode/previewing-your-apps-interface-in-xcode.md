@@ -16,11 +16,107 @@ When you add views to your code, you can display them in the preview canvas. The
 
 The Swift preview macro is a snippet of code that makes and configures your view. You use one of the preview macros — such as [`Preview(_:body:)`](https://developer.apple.com/documentation/SwiftUI/Preview(_:body:)) — to tell Xcode what to display. To manually show or hide the preview canvas, select Editor > Canvas from the Xcode menu.
 
+**SwiftUI**:
+
+```swift
+// A SwiftUI preview.
+#Preview {
+    // The view to preview.
+}
+```
+
+**UIKit**:
+
+```swift
+// A UIKit preview.
+#Preview {
+    // The view or view controller to preview.
+}
+```
+
+**AppKit**:
+
+```swift
+// An AppKit preview.
+#Preview {
+    // The view or view controller to preview.
+}
+```
+
 To add a preview macro to your view:
 
 1. Open the source file of the view you want to display.
 2. Add the `#Preview` macro to the file.
 3. Create and return an instance of the view configuration you want to display in the body of the trailing closure of the macro.
+
+**SwiftUI**:
+
+```swift
+struct ContentView: View {
+    var body: some View {
+        // ...
+    }
+}
+
+// A SwiftUI preview.
+#Preview {
+    ContentView()
+}
+```
+
+**UIKit**:
+
+```swift
+class WeatherViewController: UIViewController {
+    // ...
+}
+
+// A UIKit UIViewController preview.
+#Preview {
+    let viewController = WeatherViewController()
+    viewController.title = "Current Weather"
+    return viewController
+}
+
+class WeatherView: UIView {
+    var icon: UIImage?
+}
+
+// A UIKit UIView preview.
+#Preview {
+    let view = WeatherView()
+    if let image = UIImage(systemName: "sun.max.fill") {
+        view.icon = image
+    }
+    return view
+}
+```
+
+**AppKit**:
+
+```swift
+class WeatherViewController: NSViewController {
+    // ...
+}
+
+// An AppKit NSViewController preview.
+#Preview {
+    let viewController = WeatherViewController()
+    viewController.title = "Current Weather"
+    return viewController
+}
+
+class WeatherView: NSView {
+    var icon: NSImage?
+}
+
+// An AppKit NSView preview.
+#Preview {
+    let view = WeatherView()
+    view.icon = NSImage(symbolName: "sun.max.fill", variableValue: 0.0)
+    return view
+}
+```
 
 ##### Generate Previews Using Intelligence
 
@@ -57,6 +153,10 @@ Use variant mode to see how your view appears in different variations for a give
 
 Preview canvas supports the following variations:
 
+- **Color Scheme Variants**: Displays a light and dark preview of your view.
+- **Orientation Variants**: Displays your view in all the different portrait and landscape orientations.
+- **Dynamic Type Variants**: Displays your view in all the accessibility text sizes for your app.
+
 > **Note**: Because variant mode shows all the values for a given device setting, you can override what variant mode displays by making further changes in Canvas Device Settings. For example, to see how your view appears in different sizes of text in dark appearance, toggle Dynamic Type on, toggle Color Scheme on, and select Dark Appearance under Color Scheme.
 
 ##### Preview on a Specific Device
@@ -81,6 +181,39 @@ For example, you can add a name to more easily track what each preview displays.
 > **Note**: If you add multiple preview and playground macros to a file, you can switch between them using the tabs that appear at the top of the canvas. Xcode uses the name that you pass to the macro as the label for that preview. To add playgrounds to your Swift code, see [`Running code snippets using the playground macro`](running-code-snippets-using-the-playground-macro.md).
 
 You can also control how your preview displays by passing one or more configuration traits as a variadic argument list into the preview macro. For example, to display your view in the landscape left orientation, pass the [`landscapeLeft`](https://developer.apple.com/documentation/DeveloperToolsSupport/PreviewTrait/landscapeLeft) type property into the  [`init(_:traits:body:)`](https://developer.apple.com/documentation/DeveloperToolsSupport/Preview/init(_:traits:body:)-8pemr) preview initializer to tell Xcode which orientation to display.
+
+**SwiftUI**:
+
+```swift
+// A SwiftUI preview with name and orientation.
+#Preview("2x2 grid", traits: .landscapeLeft) {
+    CollageView(layout: .twoByTwoGrid)
+}
+```
+
+**UIKit**:
+
+```swift
+// A UIKit preview with name and orientation.
+#Preview("Camera setting sunning day", traits: .landscapeLeft) {
+    let viewController = CameraViewController()
+    if let image = UIImage(systemName: "sun.max.fill") {
+        viewController.lastImage = image
+    }
+    return viewController
+}
+```
+
+**AppKit**:
+
+```swift
+// An AppKit preview with name and orientation.
+#Preview("Camera setting sunning day", traits: .landscapeLeft) {
+    let viewController = CameraViewController()
+    viewController.lastImage = NSImage(symbolName: "sun.max.fill", variableValue: 0.0)
+    return viewController
+}
+```
 
 ##### Use Inline Dynamic Properties with Previewable
 
@@ -203,6 +336,125 @@ When creating views, pass in only the data the view needs to display. Avoid pass
 Instead, create views with the minimal amount of data they need, favoring simpler, immutable data types. Creating views this way makes testing and previewing your views easier and helps them perform better.
 
 The following example shows how simple data types, like `String` and `enum`, can be used to preview a view in various ways using the preview macro.
+
+**SwiftUI**:
+
+```swift
+struct CollaboratorCell: View {
+    // Construct your view with only the data it needs.
+    let name: String
+    let image: Image?
+    let connectionStatus: ConnectionStatus
+    
+    enum ConnectionStatus {
+        case online
+        case offline
+    }
+
+    // ...
+}
+
+#Preview("Supported cell combinations", traits: .sizeThatFitsLayout) {
+    let image = Image(systemName: "person.circle")
+    VStack {
+        // Then test each scenario in your preview macro.
+        CollaboratorCell(name: "Tom Clark", image: nil, connectionStatus: .offline)
+        CollaboratorCell(name: "Tom Clark", image: image, connectionStatus: .offline)
+        CollaboratorCell(name: "Tom Clark", image: nil, connectionStatus: .online)
+        CollaboratorCell(name: "Tom Clark", image: image, connectionStatus: .online)
+        CollaboratorCell(name: "Tom Long Middle Clark", image: nil, connectionStatus: .offline)
+        CollaboratorCell(name: "Tom Long Middle Clark", image: image, connectionStatus: .online)
+    }
+}
+```
+
+**UIKit**:
+
+```swift
+class CollaboratorCell: UIView {
+    // Construct your view with only the data it needs.
+    let name: String
+    let image: UIImage?
+    let connectionStatus: ConnectionStatus
+    
+    enum ConnectionStatus {
+        case online
+        case offline
+    }
+    
+    // ...
+}
+
+#Preview("Supported cell combinations", traits: .sizeThatFitsLayout) {
+    let image = UIImage(systemName: "person.circle")
+    
+    // Then test each scenario in your preview macro.
+    let cell1 = CollaboratorCell(name: "Tom Clark", image: nil, connectionStatus: .offline)
+    let cell2 = CollaboratorCell(name: "Tom Clark", image: image, connectionStatus: .offline)
+    let cell3 = CollaboratorCell(name: "Tom Clark", image: nil, connectionStatus: .online)
+    let cell4 = CollaboratorCell(name: "Tom Clark", image: image, connectionStatus: .online)
+    let cell5 = CollaboratorCell(name: "Tom Long Middle Clark", image: nil, connectionStatus: .offline)
+    let cell6 = CollaboratorCell(name: "Tom Long Middle Clark", image: image, connectionStatus: .online)
+    
+    // Create a test harness to display.
+    let stackView = UIStackView()
+    stackView.axis = .vertical
+    stackView.spacing = 8.0
+
+    stackView.addArrangedSubview(cell1)
+    stackView.addArrangedSubview(cell2)
+    stackView.addArrangedSubview(cell3)
+    stackView.addArrangedSubview(cell4)
+    stackView.addArrangedSubview(cell5)
+    stackView.addArrangedSubview(cell6)
+
+    return stackView
+}
+```
+
+**AppKit**:
+
+```swift
+class CollaboratorCell: NSView {
+    // Construct your view with only the data it needs.
+    let name: String
+    let image: NSImage?
+    let connectionStatus: ConnectionStatus
+
+    enum ConnectionStatus {
+        case online
+        case offline
+    }
+
+    // ...
+}
+
+#Preview("Supported cell combinations", traits: .sizeThatFitsLayout) {
+    let image = NSImage(systemSymbolName: "person.circle", accessibilityDescription: "A person symbol inside the outline of a circle.")
+
+    // Then test each scenario in your preview macro.
+    let cell1 = CollaboratorCell(name: "Tom Clark", image: nil, connectionStatus: .offline)
+    let cell2 = CollaboratorCell(name: "Tom Clark", image: image, connectionStatus: .offline)
+    let cell3 = CollaboratorCell(name: "Tom Clark", image: nil, connectionStatus: .online)
+    let cell4 = CollaboratorCell(name: "Tom Clark", image: image, connectionStatus: .online)
+    let cell5 = CollaboratorCell(name: "Tom Long Middle Clark", image: nil, connectionStatus: .offline)
+    let cell6 = CollaboratorCell(name: "Tom Long Middle Clark", image: image, connectionStatus: .online)
+
+    // Create a test harness to display.
+    let stackView = NSStackView()
+    stackView.orientation = .vertical
+    stackView.spacing = 8.0
+
+    stackView.addArrangedSubview(cell1)
+    stackView.addArrangedSubview(cell2)
+    stackView.addArrangedSubview(cell3)
+    stackView.addArrangedSubview(cell4)
+    stackView.addArrangedSubview(cell5)
+    stackView.addArrangedSubview(cell6)
+
+    return stackView
+}
+```
 
 ![A screenshot of the preview canvas displaying six previews of a data row view in various test scenario configurations. The preview canvas displays view variations for online and offline status, with and without an avatar image, and long and short display names.](https://docs-assets.developer.apple.com/published/81ff991a6b05b57b33bcff2bfbd8d1fe/dynamically-previewing-7-minimal-data%402x.png)
 

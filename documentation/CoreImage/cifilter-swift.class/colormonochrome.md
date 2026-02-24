@@ -29,6 +29,10 @@ This method applies the color monochrome filter to an image. The effect remaps t
 
 The color monochrome filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`color`**: The color to map the input image colors to, as a [`CIColor`](cicolor.md).
+- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in the colors of the image becoming shades of red:
 
 ```swift

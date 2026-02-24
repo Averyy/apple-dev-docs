@@ -32,8 +32,8 @@ The link established by this function is generally reliable but is not guarantee
 ## Parameters
 
 - `code`: A valid code object representing code running on the system.
-- `flags`: Optional flags; see   and   for possible values. Pass   for standard behavior.
-- `staticCode`: On return, a static code object representing the code in the file system that is the origin of the code specified by the   parameter.
+- `flags`: Optional flags; see [`SecCSFlags`](seccsflags.md) and [`Code Signing Architecture Flags`](code-signing-architecture-flags.md) for possible values. Pass [`kSecCSDefaultFlags`](seccsflags/kseccsdefaultflags.md) for standard behavior.
+- `staticCode`: On return, a static code object representing the code in the file system that is the origin of the code specified by the `code` parameter.
 
 ## See Also
 

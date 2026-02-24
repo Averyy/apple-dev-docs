@@ -43,7 +43,7 @@ The credential session state must be [`CredentialSession.State.wired(credential:
 
 ## Parameters
 
-- `scene`: The   the authentication sheet appears over.
+- `scene`: The [`UIScene`](https://developer.apple.com/documentation/UIKit/UIScene) the authentication sheet appears over.
 - `options`: Options with which to transition the credential to card emulation mode.
 
 ## See Also

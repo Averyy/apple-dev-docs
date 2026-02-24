@@ -23,7 +23,7 @@ virtual kern_return_t SetEnable(bool enable);
 
 ## Parameters
 
-- `enable`: A Boolean value that indicates whether to enable or disable the dispatch source. Specify   to enable it or   to disable it.
+- `enable`: A Boolean value that indicates whether to enable or disable the dispatch source. Specify `true` to enable it or `false` to disable it.
 
 ## See Also
 

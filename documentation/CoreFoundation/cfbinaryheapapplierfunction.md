@@ -23,7 +23,7 @@ typealias CFBinaryHeapApplierFunction = (UnsafeRawPointer?, UnsafeMutableRawPoin
 ## Parameters
 
 - `val`: The current value from the binary heap.
-- `context`: The program-defined context parameter given to the   function.
+- `context`: The program-defined context parameter given to the [`CFBinaryHeapApplyFunction(_:_:_:)`](cfbinaryheapapplyfunction(_:_:_:).md) function.
 
 ## See Also
 

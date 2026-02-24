@@ -17,7 +17,7 @@ init(_ title: Text, isPresented: Binding<Bool>, @ViewBuilder actions: () -> Acti
 ## Parameters
 
 - `title`: The title of the alert.
-- `isPresented`: A binding to a Boolean value that determines whether to   present the alert. When the user presses or taps one of the   alert’s actions, the system sets this value to   and   dismisses.
+- `isPresented`: A binding to a Boolean value that determines whether to present the alert. When the user presses or taps one of the alert’s actions, the system sets this value to `false` and dismisses.
 - `actions`: A view builder returning the actions for the dialog.
 
 

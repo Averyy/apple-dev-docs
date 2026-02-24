@@ -10,6 +10,10 @@ The name of the app’s main storyboard file.
 - iPadOS 5.0+
 - tvOS 9.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [UIApplicationSceneManifest](information-property-list/uiapplicationscenemanifest.md)

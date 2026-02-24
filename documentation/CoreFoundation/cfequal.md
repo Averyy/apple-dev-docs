@@ -30,8 +30,8 @@ Equality is something specific to each Core Foundation opaque type. For example,
 
 ## Parameters
 
-- `cf1`: A CFType object to compare to  .
-- `cf2`: A CFType object to compare to  .
+- `cf1`: A CFType object to compare to `cf2`.
+- `cf2`: A CFType object to compare to `cf1`.
 
 
 ---

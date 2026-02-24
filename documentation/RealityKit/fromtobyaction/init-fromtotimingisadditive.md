@@ -25,10 +25,10 @@ init(from: Value? = nil, to: Value, timing: AnimationTimingFunction = .linear, i
 
 ## Parameters
 
-- `from`: Value set at the start of the animation, or   to use the default source.
+- `from`: Value set at the start of the animation, or `nil` to use the default source.
 - `to`: Value set at the end of the animation.
 - `timing`: Controls the progress of the animation.
-- `isAdditive`: A Boolean value that indicates whether the animation system additively blends   the action’s output with the base value.
+- `isAdditive`: A Boolean value that indicates whether the animation system additively blends the action’s output with the base value.
 
 
 ---

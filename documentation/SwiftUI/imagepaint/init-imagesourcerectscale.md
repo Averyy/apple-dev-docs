@@ -23,7 +23,7 @@ init(image: Image, sourceRect: CGRect = CGRect(x: 0, y: 0, width: 1, height: 1),
 ## Parameters
 
 - `image`: The image to be drawn.
-- `sourceRect`: A unit-space rectangle defining how much of the source   image to draw. The results are undefined if   selects   areas outside the   range in either axis.
+- `sourceRect`: A unit-space rectangle defining how much of the source image to draw. The results are undefined if `sourceRect` selects areas outside the `[0, 1]` range in either axis.
 - `scale`: A scale factor applied to the image during rendering.
 
 

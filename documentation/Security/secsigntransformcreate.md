@@ -24,8 +24,8 @@ This function creates a transform which computes a cryptographic signature. The 
 
 ## Parameters
 
-- `key`: A   with the private key used for signing.
-- `error`: A pointer to a  . This pointer will be set if an error occurred. This value may be   if you do not want an error returned.
+- `key`: A [`SecKey`](seckey.md) with the private key used for signing.
+- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError). This pointer will be set if an error occurred. This value may be `NULL` if you do not want an error returned.
 
 
 ---

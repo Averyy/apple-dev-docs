@@ -30,7 +30,7 @@ To use the newly created material with a 3D object, assign it to the the [`mater
 ## Parameters
 
 - `name`: A descriptive name for the material.
-- `scatteringFunction`: The collection of material properties that define the material’s response to light. For details, see the   property.
+- `scatteringFunction`: The collection of material properties that define the material’s response to light. For details, see the [`scatteringFunction`](mdlmaterial/scatteringfunction.md) property.
 
 
 ---

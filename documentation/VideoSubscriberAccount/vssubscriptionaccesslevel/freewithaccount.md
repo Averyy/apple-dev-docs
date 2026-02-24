@@ -20,7 +20,7 @@ case freeWithAccount
 
 #### Discussion
 
-This value corresponds to content in your availability feed with the  offering type.
+This value corresponds to content in your availability feed with the *account* offering type.
 
 ## See Also
 

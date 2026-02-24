@@ -17,7 +17,7 @@ optional func webView(_ sender: WebView!, resource identifier: Any!, didCancel c
 ## Parameters
 
 - `sender`: The web view that sent this message.
-- `identifier`: An identifier object used to track the resource being loaded by  .
+- `identifier`: An identifier object used to track the resource being loaded by `dataSource`.
 - `challenge`: The authentication challenge that was canceled.
 - `dataSource`: The data source for this web view.
 

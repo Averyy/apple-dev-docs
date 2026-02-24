@@ -37,8 +37,8 @@ let formatted = count.formatted(.byteCount(style: .memory)) // "1 kB"
 
 - `style`: The style of byte count to express, such as memory or file system storage.
 - `allowedUnits`: The units the format style can use to express the byte count.
-- `spellsOutZero`: A Boolean value that indicates whether the format style should spell out zero-byte values as text, like  .
-- `includesActualByteCount`: A Boolean value that indicates whether the format style should include the exact byte count, in addition to expressing it in terms of units. For example,  .
+- `spellsOutZero`: A Boolean value that indicates whether the format style should spell out zero-byte values as text, like `Zero kB`.
+- `includesActualByteCount`: A Boolean value that indicates whether the format style should include the exact byte count, in addition to expressing it in terms of units. For example, `1 kB (1,024 bytes)`.
 
 ## See Also
 

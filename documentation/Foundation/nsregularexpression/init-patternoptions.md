@@ -31,7 +31,7 @@ An instance of `NSRegularExpression` for the specified regular expression and op
 ## Parameters
 
 - `pattern`: The regular expression pattern to compile.
-- `options`: The regular expression options that are applied to the expression during matching. See   for possible values.
+- `options`: The regular expression options that are applied to the expression during matching. See [`NSRegularExpression.Options`](nsregularexpression/options-swift.struct.md) for possible values.
 
 
 ---

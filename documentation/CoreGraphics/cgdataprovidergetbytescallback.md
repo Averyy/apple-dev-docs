@@ -32,7 +32,7 @@ For information on how to associate your callback function with a data provider,
 
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to  .
+- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(version:getBytes:skipForward:rewind:releaseInfo:)`](cgdataprovidersequentialcallbacks/init(version:getbytes:skipforward:rewind:releaseinfo:).md).
 - `buffer`: The Core Graphics buffer into which you copy the specified number of bytes.
 - `count`: The number of bytes to copy.
 

@@ -26,12 +26,12 @@ An initialized scene source object, or `nil` if initialization was not successfu
 
 #### Discussion
 
-The `data` parameter of this method (an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData)) should contain the same data as directly read from a scene file (such as by using the [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) method doc://com.apple.documentation/documentation/foundation/nsdata/init(contentsofurl:)-6foqd). Use this method when you have the contents of a scene file but not the file itself—for example, if your app downloads scene files from the network.
+The `data` parameter of this method (an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData)) should contain the same data as directly read from a scene file (such as by using the [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) method [`init(contentsOfURL:)`](https://developer.apple.com/documentation/foundation/nsdata/init(contentsofurl:)-6foqd)). Use this method when you have the contents of a scene file but not the file itself—for example, if your app downloads scene files from the network.
 
 ## Parameters
 
 - `data`: A data object containing a scene file in a format recognized by SceneKit.
-- `options`: A dictionary containing options that affect scene loading. See   for available keys and values. Pass   to use default options.
+- `options`: A dictionary containing options that affect scene loading. See `Scene Loading Options` for available keys and values. Pass `nil` to use default options.
 
 ## See Also
 

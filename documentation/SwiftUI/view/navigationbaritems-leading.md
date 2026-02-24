@@ -57,7 +57,7 @@ struct FlavorView: View {
 
 ## Parameters
 
-- `leading`: A view that appears on the leading edge of the   title.
+- `leading`: A view that appears on the leading edge of the title.
 
 ## See Also
 

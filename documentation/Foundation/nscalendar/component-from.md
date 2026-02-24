@@ -26,7 +26,7 @@ An `NSInteger` value for the requested component.
 
 ## Parameters
 
-- `unit`: The component to return. For possible values, see  .
+- `unit`: The component to return. For possible values, see [`NSCalendar.Unit`](nscalendar/unit.md).
 - `date`: The date for which to perform the calculation.
 
 ## See Also

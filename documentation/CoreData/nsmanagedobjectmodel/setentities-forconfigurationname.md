@@ -26,7 +26,7 @@ This method raises an exception if the receiver has been used by an object graph
 
 ## Parameters
 
-- `entities`: An array of instances of  .
+- `entities`: An array of instances of `NSEntityDescription`.
 - `configuration`: A name for the configuration.
 
 ## See Also

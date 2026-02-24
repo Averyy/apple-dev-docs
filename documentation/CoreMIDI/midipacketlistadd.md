@@ -33,7 +33,7 @@ The maximum size of a packet list is 65536 bytes. Large sysex messages must be s
 - `curPacket`: A packet pointer returned by a previous call to MIDIPacketListInit or MIDIPacketListAdd for this packet list.
 - `time`: The new event’s time.
 - `nData`: The length of the new event, in bytes.
-- `data`: The new event. May be a single MIDI event, or a partial sys-ex event. Running status is   permitted.
+- `data`: The new event. May be a single MIDI event, or a partial sys-ex event. Running status is *not* permitted.
 
 ## See Also
 

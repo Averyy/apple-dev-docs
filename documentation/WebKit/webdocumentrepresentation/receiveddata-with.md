@@ -21,8 +21,8 @@ Data is loaded incrementally, so this method may be invoked multiple times. The 
 
 ## Parameters
 
-- `data`: An   object containing the data received.
-- `dataSource`: A   object that identifies the request that generated this data.
+- `data`: An `NSData` object containing the data received.
+- `dataSource`: A `WebDataSource` object that identifies the request that generated this data.
 
 ## See Also
 

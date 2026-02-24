@@ -33,7 +33,7 @@ Inserting a barrier ensures that any work you encode with this encoder is comple
 ## Parameters
 
 - `sampleBuffer`: A counter sample buffer where the command stores the sample data.
-- `sampleIndex`: A location within   where the command stores the sample data.
+- `sampleIndex`: A location within `sampleBuffer` where the command stores the sample data.
 - `barrier`: A Boolean value that indicates whether the command inserts a barrier before taking the sample.
 
 ## See Also

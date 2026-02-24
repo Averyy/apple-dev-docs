@@ -33,8 +33,8 @@ In a subclass implementation, evaluate `partialString` according to the context.
 - `partialStringPtr`: The new string to validate.
 - `proposedSelRangePtr`: The selection range that will be used if the string is accepted or replaced.
 - `origString`: The original string, before the proposed change.
-- `origSelRange`: If the user change is a deletion,   contains the range of the deleted characters.
-- `error`: If non- , if validation fails contains an   object that describes the problem.
+- `origSelRange`: The selection range over which the change is to take place. If the user change is a deletion, `origSelRange` contains the range of the deleted characters.
+- `error`: If non-`nil`, if validation fails contains an `NSString` object that describes the problem.
 
 ## See Also
 

@@ -24,15 +24,27 @@ To implement alignment feedback in your custom alignment controller class, set u
 
 1. Create an instance of an `NSAlignmentFeedbackFilter` object. For example:
 
+**Swift**:
+
+```swift
+let self.feedbackFilter = NSAlignmentFeedbackFilter()
+```
+
+**Objective-C**:
+
+```objc
+self.feedbackFilter = [NSAlignmentFeedbackFilter new];
+```
+
 1. Inform the alignment feedback filter object about the event. To do this, call one of the following methods:
 
 - [`update(with:)`](nsalignmentfeedbackfilter/update(with:).md)
 - [`update(withPanRecognizer:)`](nsalignmentfeedbackfilter/update(withpanrecognizer:).md)
 
-1. Store the location of the object before it moves in response to the event. This is considered the  location of the object.
+1. Store the location of the object before it moves in response to the event. This is considered the *previous* location of the object.
 2. Move the object to its new location in response to the event. This is the location where the object will reside if no alignment occurs.
-3. Store the new location of the object. This is considered the  location of the object.
-4. Determine where the object will move to be aligned. This is considered the  location of the object.
+3. Store the new location of the object. This is considered the *default* location of the object.
+4. Determine where the object will move to be aligned. This is considered the *aligned* location of the object.
 5. Request a feedback token based on the previous location, default location, and aligned location. To do this, call one of the following methods:
 
 - [`alignmentFeedbackTokenForMovement(in:previousPoint:alignedPoint:defaultPoint:)`](nsalignmentfeedbackfilter/alignmentfeedbacktokenformovement(in:previouspoint:alignedpoint:defaultpoint:).md) - If the object will be moved both horizontally and vertically to become aligned.

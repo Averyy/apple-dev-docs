@@ -30,7 +30,7 @@ By default, adding obstacles with the [`addObstacles(_:)`](gkobstaclegraph/addob
 ## Parameters
 
 - `startNode`: A node in the graph.
-- `endNode`: Another node in the graph to which the node   is directly connected.
+- `endNode`: Another node in the graph to which the node `startNode` is directly connected.
 
 ## See Also
 

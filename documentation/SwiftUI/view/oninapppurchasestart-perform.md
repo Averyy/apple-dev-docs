@@ -26,7 +26,7 @@ You can remove any actions ancestor views may have added by providing `nil` for 
 
 ## Parameters
 
-- `action`: The action to perform, with the product to be purchased provided as a   parameter.
+- `action`: The action to perform, with the product to be purchased provided as a parameter.
 
 ## See Also
 

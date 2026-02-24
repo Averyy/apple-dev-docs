@@ -31,7 +31,8 @@ To use location push notifications, your app must have the `com.apple.developer.
 
 ## Parameters
 
-- `completion`: The completion handler to call after you start monitoring location pushes. The completion handler takes the following parameters:
+- `completion`: The completion handler to call after you start monitoring location pushes. The completion handler takes the following parameters: - **`token`**: A globally unique token that identifies this device to APNs. Send this `token` to the server that you use to generate location pushes. Your server passes this `token` — unmodified — back to APNs when sending pushes. APNs device tokens are of variable length. Don’t hard-code their size. If an error occurs, `token` is `nil`.
+- **`error`**: If your app is unable to register for location pushes, the system sets this parameter to an error object that contains information about why it failed; otherwise it’s `nil`. The error type is [`CLLocationPushServiceError`](cllocationpushserviceerror-swift.struct.md).
 
 ## See Also
 

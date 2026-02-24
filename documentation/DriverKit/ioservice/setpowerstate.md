@@ -27,7 +27,7 @@ DriverKit calls this method to notify your service when the power state of its p
 
 ## Parameters
 
-- `powerFlags`: The new power state for the service’s provider object. Configure your driver appropriately for the new state. For a list of possible values, see  .
+- `powerFlags`: The new power state for the service’s provider object. Configure your driver appropriately for the new state. For a list of possible values, see [`Service Power Capabilities`](3325571-service_power_capabilities.md).
 
 ## See Also
 

@@ -44,7 +44,7 @@ Here are some examples of usage:
 
 - `newLength`: The new length for the receiver.
 - `padString`: The string with which to extend the receiver.
-- `padIndex`: The index in   from which to start padding.
+- `padIndex`: The index in `padString` from which to start padding.
 
 ## See Also
 

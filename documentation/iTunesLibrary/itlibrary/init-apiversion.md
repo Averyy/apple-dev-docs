@@ -39,7 +39,7 @@ if (library)
 
 ## Parameters
 
-- `requestedAPIVersion`: The version of the iTunesLibrary API that the app is requesting. Provide   if unknown.
+- `requestedAPIVersion`: The version of the iTunesLibrary API that the app is requesting. Provide `"1.0"` if unknown.
 
 ## See Also
 

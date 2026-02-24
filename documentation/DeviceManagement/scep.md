@@ -124,6 +124,10 @@ A SCEP payload automates the request of a client certificate from a SCEP server,
 - [object SCEP.PayloadContent](scep/payloadcontent-data.dictionary.md)
   The SCEP dictionary.
 
+## Properties
+
+- `PayloadContent` (SCEP.PayloadContent) *(required)*: A dictionary containing the SCEP information.
+
 ## See Also
 
 - [object ACMECertificate](acmecertificate.md)

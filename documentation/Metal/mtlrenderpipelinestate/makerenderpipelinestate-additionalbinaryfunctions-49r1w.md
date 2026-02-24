@@ -26,7 +26,7 @@ A new render pipeline state upon success, otherwise `nil`.
 
 ## Parameters
 
-- `binaryFunctionsDescriptor`: A non-  dynamic linking descriptor.
+- `binaryFunctionsDescriptor`: A non-`nil` dynamic linking descriptor.
 
 
 ---

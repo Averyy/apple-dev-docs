@@ -26,7 +26,7 @@ A strategy to always display sign symbols, with the given behavior for zero valu
 
 ## Parameters
 
-- `includingZero`: A Boolean value that determines whether the format style should apply sign characters to zero values. Defaults to  .
+- `includingZero`: A Boolean value that determines whether the format style should apply sign characters to zero values. Defaults to `true`.
 
 ## See Also
 

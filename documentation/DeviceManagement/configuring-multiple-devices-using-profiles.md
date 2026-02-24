@@ -26,6 +26,14 @@ The configuration property list contains the properties listed in the [`TopLevel
 
 Each payload’s contents contain profile-specific keys (see [`Profile-Specific Payload Keys`](profile-specific-payload-keys.md)) and keys that are common to all payloads (see the following list of key definitions).
 
+- **`PayloadType` (String)**: The payload type, specified on each payload domain’s reference page.
+- **`PayloadVersion` (Integer)**: The version of this specific payload.
+- **`PayloadIdentifier` (String)**: The reverse-DNS-style identifier for the payload. This identifier is usually the same as the [`TopLevel`](toplevel.md) value, with an additional component appended.
+- **`PayloadUUID` (String)**: The globally unique identifier for the payload. The actual content is unimportant, but must be globally unique. In macOS, use `uuidgen` to generate UUIDs.
+- **`PayloadDisplayName` (String)**: The human-readable name for the profile payload. The name is displayed on the Detail screen and doesn’t have to be unique.
+- **`PayloadDescription` (String)**: The human-readable description of this payload. This description is shown on the Detail screen.
+- **`PayloadOrganization` (String)**: The human-readable string containing the name of the organization that provided the profile. This value doesn’t need to match the organization payload value in the enclosing dictionary.
+
 ##### Encrypt and Sign a Profile
 
 Encrypting a profile protects its contents from unauthorized access. The encrypted profile can only be decrypted using a private key previously installed on a device. To encrypt a profile:

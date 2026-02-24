@@ -26,7 +26,7 @@ If the attachment exists, the function removes the attachment and decrements the
 
 ## Parameters
 
-- `target`: The   containing the attachment to remove.
+- `target`: The `CMAttachmentBearer` containing the attachment to remove.
 - `key`: Key in the form of a Core Foundation string identifying the desired attachment.
 
 ## See Also

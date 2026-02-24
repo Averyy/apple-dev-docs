@@ -28,14 +28,14 @@ This function automatically calls the function [`SecKeychainUnlock(_:_:_:_:)`](s
 
 ## Parameters
 
-- `keychainOrArray`: A reference to an array of keychains to search, a single keychain, or   to search the user’s default keychain search list.
-- `serviceNameLength`: The length of the   character string.
+- `keychainOrArray`: A reference to an array of keychains to search, a single keychain, or `NULL` to search the user’s default keychain search list.
+- `serviceNameLength`: The length of the `serviceName` character string.
 - `serviceName`: A UTF-8 encoded character string representing the service name.
-- `accountNameLength`: The length of the   character string.
+- `accountNameLength`: The length of the `accountName` character string.
 - `accountName`: A UTF-8 encoded character string representing the account name.
-- `passwordLength`: On return, the length of the buffer pointed to by  .
-- `passwordData`: On return, a pointer to a buffer that holds the password data. Pass   if you want to obtain the item object but not the password data. In this case, you must also pass   in the   parameter. You should use the   function to free the memory pointed to by this parameter.
-- `itemRef`: On return, a pointer to the item object of the generic password. You are responsible for releasing your reference to this object. Pass   if you don’t want to obtain this object.
+- `passwordLength`: On return, the length of the buffer pointed to by `passwordData`.
+- `passwordData`: On return, a pointer to a buffer that holds the password data. Pass `NULL` if you want to obtain the item object but not the password data. In this case, you must also pass `NULL` in the `passwordLength` parameter. You should use the [`SecKeychainItemFreeContent(_:_:)`](seckeychainitemfreecontent(_:_:).md) function to free the memory pointed to by this parameter.
+- `itemRef`: On return, a pointer to the item object of the generic password. You are responsible for releasing your reference to this object. Pass `NULL` if you don’t want to obtain this object.
 
 
 ---

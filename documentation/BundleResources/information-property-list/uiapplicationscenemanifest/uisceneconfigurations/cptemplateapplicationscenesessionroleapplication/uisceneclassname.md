@@ -9,6 +9,10 @@ The name of the scene class you want UIKit to instantiate.
 - iOS 13.0+
 - iPadOS 13.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 CarPlay doesn’t support custom classes. Omit this key or specify [`CPTemplateApplicationScene`](https://developer.apple.com/documentation/CarPlay/CPTemplateApplicationScene) for scenes meant for a CarPlay-enabled vehicle screen.

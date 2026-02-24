@@ -28,9 +28,9 @@ The caller is responsible for freeing the memory the `dataPointer` points to, by
 
 - `dataPointer`: A pointer to data in memory.
 - `shape`: An integer array with an element for each dimension. An element represents the size of the corresponding dimension.
-- `dataType`: An   instance that represents the pointer’s data type.
+- `dataType`: An [`MLMultiArrayDataType`](mlmultiarraydatatype.md) instance that represents the pointer’s data type.
 - `strides`: An integer array with an element for each dimension. An element represents the number of memory locations that span the length of the corresponding dimension.
-- `deallocator`: In Swift, a closure the multiarray calls in its deinitializer. In Objective-C, a block the multiarray calls in its   method.
+- `deallocator`: In Swift, a closure the multiarray calls in its deinitializer. In Objective-C, a block the multiarray calls in its [`dealloc`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/dealloc) method.
 
 ## See Also
 

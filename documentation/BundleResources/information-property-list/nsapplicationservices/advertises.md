@@ -11,6 +11,10 @@ An array of dictionaries, where each dictionary contains a unique identifier.
 - visionOS 1.0+
 - watchOS 9.0+
 
+
+
+**Type**: dictionary 
+
 ## Topics
 
 ### Property List Keys

@@ -26,11 +26,11 @@ The required allocation size for workspace paramter to [`BNNSMatMul(_:_:_:_:_:_:
 
 ## Parameters
 
-- `transA`: A Boolean value that specifies whether the operation should treat   as transposed.
-- `transB`: A Boolean value that specifies whether the operation should treat   as transposed.
+- `transA`: A Boolean value that specifies whether the operation should treat `inputA` as transposed.
+- `transB`: A Boolean value that specifies whether the operation should treat `inputB` as transposed.
 - `alpha`: A value that the operation uses to scale the result.
-- `inputA`: A pointer to the   matrix descriptor.
-- `inputB`: A pointer to the   matrix descriptor.
+- `inputA`: A pointer to the `inputA` matrix descriptor.
+- `inputB`: A pointer to the `inputB` matrix descriptor.
 - `output`: A pointer to the output matrix descriptor.
 - `filter_params`: The filter runtime parameters.
 

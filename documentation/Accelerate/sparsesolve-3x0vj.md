@@ -22,8 +22,8 @@ func SparseSolve(_ Subfactor: SparseOpaqueSubfactor_Complex_Double, _ XB: DenseM
 
 ## Parameters
 
-- `Subfactor`: (Input) The subfactor to solve a system involving, as returned by   .
-- `XB`: (Input/Output) On input, the matrix  . On return it is overwritten   with the matrix  . If   is  , then   must have dimension   , where   and   is the number of right-hand   sides. If  , then only the first   entries are used for   input or output as approriate.
+- `Subfactor`: (Input) The subfactor to solve a system involving, as returned by `SparseCreateSubfactor()`.
+- `XB`: (Input/Output) On input, the matrix `B`. On return it is overwritten with the matrix `X`. If `Subfactor` is `m x n`, then `XB` must have dimension `k x nrhs`, where `k = max(m, n)` and `nrhs` is the number of right-hand sides. If `m != n`, then only the first `min(m,n)` entries are used for input or output as approriate.
 
 ## See Also
 

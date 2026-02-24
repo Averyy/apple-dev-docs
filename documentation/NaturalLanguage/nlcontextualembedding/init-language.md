@@ -20,6 +20,10 @@ Creates a contextual embedding from a language.
 init?(language: NLLanguage)
 ```
 
+#### Discussion
+
+The language the framework uses to find the most recent embedding suitable for the value you specify.
+
 ## Parameters
 
 - `language`: The language the framework uses to find the most recent embedding suitable for the value you specify.

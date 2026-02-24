@@ -23,7 +23,7 @@ A drop interaction that has a delegate.
 
 ## Parameters
 
-- `delegate`: An object that conforms to the   protocol.
+- `delegate`: An object that conforms to the [`UIDropInteractionDelegate`](uidropinteractiondelegate.md) protocol.
 
 
 ---

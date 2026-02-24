@@ -21,7 +21,7 @@ func perform(_ requests: [VNRequest], onImageURL imageURL: URL, orientation: CGI
 
 ## Parameters
 
-- `requests`: An array of   requests to perform.
+- `requests`: An array of [`VNRequest`](vnrequest.md) requests to perform.
 - `imageURL`: A URL pointing to the image on which to perform the request.
 - `orientation`: The orientation of the input image.
 

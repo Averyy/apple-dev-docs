@@ -20,8 +20,8 @@ kern_return_t SetPreferredInputChannelLayout(IOUserAudioChannelLabel *in_channel
 
 ## Parameters
 
-- `in_channel_labels`: An array of   values.
-- `in_num_channels`: The number of items in the   array.
+- `in_channel_labels`: An array of [`IOUserAudioChannelLabel`](audiodriverkit/iouseraudiochannellabel.md) values.
+- `in_num_channels`: The number of items in the `in_channel_labels` array.
 
 ## See Also
 

@@ -41,7 +41,7 @@ let kCIInputDisparityImageKey: String
 - [let kCIInputBrightnessKey: String](kciinputbrightnesskey.md)
   Brightness level.
 - [let kCIInputCenterKey: String](kciinputcenterkey.md)
-  A key for a [`CIVector`](civector.md) object that specifies the center of the area, as   and  - coordinates, to be filtered.
+  A key for a [`CIVector`](civector.md) object that specifies the center of the area, as *x*  and  *y*- coordinates, to be filtered.
 - [let kCIInputColorKey: String](kciinputcolorkey.md)
   A key for a [`CIColor`](cicolor.md) object that specifies a color value.
 - [let kCIInputColor0Key: String](kciinputcolor0key.md)

@@ -50,7 +50,7 @@ You should rarely need to subclass [`UIWindow`](uiwindow.md). The kinds of behav
 
 ##### Understand Keyboard Interactions
 
-Whereas touch events are delivered to the window where they occurred, events that don’t have a relevant coordinate value are delivered to the . Only one window at a time can be the key window, and you can use a window’s [`isKeyWindow`](uiwindow/iskeywindow.md) property to determine its status. Most of the time, your app’s main window is the key window, but UIKit may designate a different window as needed.
+Whereas touch events are delivered to the window where they occurred, events that don’t have a relevant coordinate value are delivered to the *key window*. Only one window at a time can be the key window, and you can use a window’s [`isKeyWindow`](uiwindow/iskeywindow.md) property to determine its status. Most of the time, your app’s main window is the key window, but UIKit may designate a different window as needed.
 
 If you need to know which window is key, observe the [`didBecomeKeyNotification`](uiwindow/didbecomekeynotification.md) and [`didResignKeyNotification`](uiwindow/didresignkeynotification.md) notifications. The system sends those notifications on the main actor in response to key window changes in your app. To force a window become key, or to force a window to resign the key status, call the appropriate methods of this class.
 

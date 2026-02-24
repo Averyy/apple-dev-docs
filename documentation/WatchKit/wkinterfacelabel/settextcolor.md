@@ -24,7 +24,7 @@ The value set by this method represents the default color applied to text. This 
 
 ## Parameters
 
-- `color`: The custom color to be applied to the label’s text. Specifying   removes the custom color and returns the text to the color specified in the storyboard file. The default label color is white.
+- `color`: The custom color to be applied to the label’s text. Specifying `nil` removes the custom color and returns the text to the color specified in the storyboard file. The default label color is white.
 
 ## See Also
 

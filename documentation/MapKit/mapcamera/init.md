@@ -22,7 +22,7 @@ init(_ camera: MKMapCamera)
 
 ## Parameters
 
-- `camera`: An   object.
+- `camera`: An [`MKMapCamera`](mkmapcamera.md) object.
 
 ## See Also
 

@@ -22,9 +22,9 @@ init(alignment: Alignment = .center, horizontalSpacing: CGFloat? = nil, vertical
 
 ## Parameters
 
-- `alignment`: The guide for aligning subviews within the   space allocated for a given cell. The default is   .
-- `horizontalSpacing`: The horizontal distance between each cell, given   in points. The value is   by default, which results in a   default distance between cells that’s appropriate for the platform.
-- `verticalSpacing`: The vertical distance between each cell, given   in points. The value is   by default, which results in a   default distance between cells that’s appropriate for the platform.
+- `alignment`: The guide for aligning subviews within the space allocated for a given cell. The default is [`center`](alignment/center.md).
+- `horizontalSpacing`: The horizontal distance between each cell, given in points. The value is `nil` by default, which results in a default distance between cells that’s appropriate for the platform.
+- `verticalSpacing`: The vertical distance between each cell, given in points. The value is `nil` by default, which results in a default distance between cells that’s appropriate for the platform.
 
 
 ---

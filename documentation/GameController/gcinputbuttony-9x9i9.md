@@ -22,7 +22,7 @@ var GCInputButtonY: String { get }
 ## See Also
 
 - [var buttonY: GCControllerButtonInput](gcextendedgamepad/buttony.md)
-  The top face button that uses  or another indicator as its label.
+  The top face button that uses *Y* or another indicator as its label.
 - [var GCInputButtonMenu: String](gcinputbuttonmenu-196mn.md)
   The name of the primary menu button element.
 - [var GCInputButtonHome: String](gcinputbuttonhome-7xxwm.md)

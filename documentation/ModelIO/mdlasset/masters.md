@@ -21,7 +21,7 @@ var masters: any MDLObjectContainerComponent { get set }
 
 #### Discussion
 
-Some asset formats supported by Model I/O provide , a feature where the asset provides a single definition for an object, then can reuse that definition at multiple points in a scene. For example, an asset describing a scene of a table and chairs could contain mesh and material data for only one chair, then use instancing to place several of the same chair around the table.
+Some asset formats supported by Model I/O provide *instancing*, a feature where the asset provides a single definition for an object, then can reuse that definition at multiple points in a scene. For example, an asset describing a scene of a table and chairs could contain mesh and material data for only one chair, then use instancing to place several of the same chair around the table.
 
 If an object loaded from an asset is an instance of one of that asset’s primary objects, that object’s [`instance`](mdlobject/instance.md) property refers to the primary object.
 

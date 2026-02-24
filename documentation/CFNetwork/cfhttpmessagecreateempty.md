@@ -29,7 +29,7 @@ Call [`CFHTTPMessageAppendBytes(_:_:_:)`](cfhttpmessageappendbytes(_:_:_:).md) t
 
 ## Parameters
 
-- `isRequest`: A flag that determines whether to create an empty message request or an empty message response. Pass   to create an empty request message; pass   to create an empty response message.
+- `isRequest`: A flag that determines whether to create an empty message request or an empty message response. Pass `TRUE` to create an empty request message; pass `FALSE` to create an empty response message.
 
 ## See Also
 

@@ -16,6 +16,11 @@ The command to remotely and immediately shut down a device.
 object ShutDownDeviceCommand.Command
 ```
 
+## Properties
+
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+
 
 ---
 

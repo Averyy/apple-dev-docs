@@ -21,7 +21,7 @@ Returns an OSData representation of the element value.
 
 ## Parameters
 
-- `options`: Optional options to pass in. Options are defined in the IOHIDValueOptions enumerator in -  .
+- `options`: Optional options to pass in. Options are defined in the IOHIDValueOptions enumerator in - [`IOHIDValueOptions`](iohidvalueoptions.md).
 
 ## See Also
 

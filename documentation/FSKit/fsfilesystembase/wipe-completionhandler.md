@@ -21,8 +21,8 @@ This method wraps the `wipefs` functionality from `libutil`. For more informatio
 
 ## Parameters
 
-- `resource`: The   to wipe.
-- `completion`: A block or closure that executes after the wipe operation completes. The completion handler receives a single parameter indicating any error that occurs during the operation. If the value is  , the wipe operation succeeded.
+- `resource`: The [`FSBlockDeviceResource`](fsblockdeviceresource.md) to wipe.
+- `completion`: A block or closure that executes after the wipe operation completes. The completion handler receives a single parameter indicating any error that occurs during the operation. If the value is `nil`, the wipe operation succeeded.
 
 ## See Also
 

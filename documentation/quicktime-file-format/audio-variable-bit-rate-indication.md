@@ -4,6 +4,11 @@
 
 #### Overview
 
+- **Containing profile atom**: Track (sound), movie
+- **`part-ID`**: `0x20202020` (universal feature)
+- **`feature-code`**: `'avbr'`
+- **`feature-value`**: Unsigned `int(32)` holding the value `0` if the audio is constant bit rate or `1` if the audio is variable bit rate
+
 #### Feature Values
 
 The feature value holds one of the following two values: `0` if the audio is constant bit rate, or `1` if the audio is variable bit rate.

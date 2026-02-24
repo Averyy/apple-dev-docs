@@ -28,7 +28,7 @@ This method is functionally equivalent to the [`log(_:)`](logger/log(_:).md) met
 
 ## Parameters
 
-- `message`: The interpolated string that the logger writes to the log. Each of the message’s interpolations can specify individual formatting and privacy options. For more information, see  .
+- `message`: The interpolated string that the logger writes to the log. Each of the message’s interpolations can specify individual formatting and privacy options. For more information, see [`Message Argument Formatters`](message-argument-formatters.md).
 
 ## See Also
 

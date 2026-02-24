@@ -29,10 +29,10 @@ To make use of this noise source, create a [`GKNoise`](gknoise.md) object from i
 
 ## Parameters
 
-- `frequency`: The initial value for the   property, which determines the number and spacing of cells in generated noise.
-- `displacement`: The initial value for the   property, which determines the variety of noise values between cells in generated noise.
-- `distanceEnabled`: The initial value for the   property, which determines whether to add distance values to generated noise.
-- `seed`: The initial value for the   property, which determines the overall structure of generated noise.
+- `frequency`: The initial value for the [`frequency`](gkvoronoinoisesource/frequency.md) property, which determines the number and spacing of cells in generated noise.
+- `displacement`: The initial value for the [`displacement`](gkvoronoinoisesource/displacement.md) property, which determines the variety of noise values between cells in generated noise.
+- `distanceEnabled`: The initial value for the [`isDistanceEnabled`](gkvoronoinoisesource/isdistanceenabled.md) property, which determines whether to add distance values to generated noise.
+- `seed`: The initial value for the [`seed`](gkvoronoinoisesource/seed.md) property, which determines the overall structure of generated noise.
 
 ## See Also
 

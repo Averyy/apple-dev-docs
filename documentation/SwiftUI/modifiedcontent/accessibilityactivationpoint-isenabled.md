@@ -30,7 +30,7 @@ If an activation point is not provided, an activation point will be derived from
 ## Parameters
 
 - `activationPoint`: The accessibility activation point to apply.
-- `isEnabled`: If true the accessibility activation point is applied;   otherwise the accessibility activation point is unchanged.
+- `isEnabled`: If true the accessibility activation point is applied; otherwise the accessibility activation point is unchanged.
 
 
 ---

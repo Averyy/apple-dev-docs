@@ -26,10 +26,10 @@ The created streams are bound to one another, such that any data written to `wri
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new objects. Pass   or   to use the current default allocator.
-- `readStream`: On return, contains a readable stream. Ownership follows the  .
-- `writeStream`: On return, contains a writable stream. Ownership follows the  .
-- `transferBufferSize`: The size of the buffer, in bytes, used to transfer data from   to  .
+- `alloc`: The allocator to use to allocate memory for the new objects. Pass [`kCFAllocatorDefault`](kcfallocatordefault.md) or `NULL` to use the current default allocator.
+- `readStream`: On return, contains a readable stream. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+- `writeStream`: On return, contains a writable stream. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+- `transferBufferSize`: The size of the buffer, in bytes, used to transfer data from `readStream` to `writeStream`.
 
 ## See Also
 

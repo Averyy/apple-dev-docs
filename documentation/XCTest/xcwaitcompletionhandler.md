@@ -17,7 +17,7 @@ Pass a block with this signature to [`waitForExpectations(timeout:handler:)`](xc
 
 ## Parameters
 
-- `error`: The error the waiter object encountered while waiting, which can be a timeout or a failure. See   for a list of possible errors.
+- `error`: The error the waiter object encountered while waiting, which can be a timeout or a failure. See [`XCTestError.Code`](xctesterror/code.md) for a list of possible errors.
 
 ## See Also
 

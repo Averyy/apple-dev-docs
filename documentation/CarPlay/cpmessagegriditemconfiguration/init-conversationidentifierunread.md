@@ -18,7 +18,7 @@ init(conversationIdentifier: String, unread: Bool)
 
 ## Parameters
 
-- `conversationIdentifier`: A value meaningful to your app to identify this conversation.   This identifier is not directly displayed to the user; rather, when the user selects this grid item,   SiriKit will pass this identifier back to your app for your own use.
+- `conversationIdentifier`: A value meaningful to your app to identify this conversation. This identifier is not directly displayed to the user; rather, when the user selects this grid item, SiriKit will pass this identifier back to your app for your own use.
 - `unread`: A Boolean value indicating whether the item shows an unread indicator. The default value of this property is @c NO.
 
 

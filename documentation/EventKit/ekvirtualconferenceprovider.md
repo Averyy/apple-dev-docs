@@ -28,11 +28,11 @@ class EKVirtualConferenceProvider
 
 ##### Providing Room Details
 
-To provide a list of rooms, you provide one or more  that contain details about where a virtual conference takes place. Each room type descriptor includes a user-visible title and an identifier that you choose. EventKit calls [`fetchAvailableRoomTypes(completionHandler:)`](ekvirtualconferenceprovider/fetchavailableroomtypes(completionhandler:).md) on your virtual conference provider to retrieve an array of [`EKVirtualConferenceRoomTypeDescriptor`](ekvirtualconferenceroomtypedescriptor.md) objects.
+To provide a list of rooms, you provide one or more *room type descriptors* that contain details about where a virtual conference takes place. Each room type descriptor includes a user-visible title and an identifier that you choose. EventKit calls [`fetchAvailableRoomTypes(completionHandler:)`](ekvirtualconferenceprovider/fetchavailableroomtypes(completionhandler:).md) on your virtual conference provider to retrieve an array of [`EKVirtualConferenceRoomTypeDescriptor`](ekvirtualconferenceroomtypedescriptor.md) objects.
 
 ##### Providing Conference Details
 
-After EventKit has the room type descriptors, users can add an event that specifies one of your rooms as the location. To identify the virtual conference event, your virtual conference provider creates a  that contains details about the virtual conference. The conference descriptor contains the following:
+After EventKit has the room type descriptors, users can add an event that specifies one of your rooms as the location. To identify the virtual conference event, your virtual conference provider creates a *virtual conference descriptor* that contains details about the virtual conference. The conference descriptor contains the following:
 
 - One or more [`EKVirtualConferenceURLDescriptor`](ekvirtualconferenceurldescriptor.md) objects to specify how the user joins the virtual conference
 - An optional user-visible title that EventKit may display

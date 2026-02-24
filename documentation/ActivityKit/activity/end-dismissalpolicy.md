@@ -25,8 +25,8 @@ End an active Live Activity while your app is in the foreground or while it’s 
 
 ## Parameters
 
-- `content`: The latest and final dynamic content for the Live Activity that ended.   The size of the encoded content can’t exceed 4KB in size.
-- `dismissalPolicy`: Describes how and when the system should dismiss a Live Activity and   and remove it from the Lock Screen.
+- `content`: The latest and final dynamic content for the Live Activity that ended. The size of the encoded content can’t exceed 4KB in size.
+- `dismissalPolicy`: Describes how and when the system should dismiss a Live Activity and and remove it from the Lock Screen.
 
 ## See Also
 

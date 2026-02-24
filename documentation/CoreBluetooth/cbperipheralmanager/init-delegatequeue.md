@@ -28,7 +28,7 @@ For more information, see [`Core Bluetooth Programming Guide`](https://developer
 ## Parameters
 
 - `delegate`: The delegate to receive the peripheral role events.
-- `queue`: The dispatch queue for dispatching the peripheral role events. If the value is  , the peripheral manager dispatches peripheral role events using the main queue.
+- `queue`: The dispatch queue for dispatching the peripheral role events. If the value is `nil`, the peripheral manager dispatches peripheral role events using the main queue.
 
 ## See Also
 

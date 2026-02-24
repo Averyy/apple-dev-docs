@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-Configures the render pass to as .
+Configures the render pass to as *resuming*.
 
 **Availability**:
 - iOS 26.0+

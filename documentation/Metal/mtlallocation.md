@@ -25,7 +25,7 @@ protocol MTLAllocation : NSObjectProtocol
 
 #### Overview
 
-Types that conform to [`MTLAllocation`](mtlallocation.md), including [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), and [`MTLHeap`](mtlheap.md), have underlying memory. You make their memory , or GPU-accessible, by adding an allocation to an [`MTLResidencySet`](mtlresidencyset.md) or calling the appropriate method of a command encoder.
+Types that conform to [`MTLAllocation`](mtlallocation.md), including [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), and [`MTLHeap`](mtlheap.md), have underlying memory. You make their memory *resident*, or GPU-accessible, by adding an allocation to an [`MTLResidencySet`](mtlresidencyset.md) or calling the appropriate method of a command encoder.
 
 See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-resource-management-with-residency-sets.md) for more information.
 

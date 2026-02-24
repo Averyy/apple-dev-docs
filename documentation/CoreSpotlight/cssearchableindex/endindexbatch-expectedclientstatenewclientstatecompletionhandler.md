@@ -28,7 +28,7 @@ func endBatch(withClientState clientState: Data) async throws
 
 - `expectedClientState`: The client state data from the previous batch.
 - `newClientState`: Up to 250 bytes of app-specific data that can help you recover from a crash and resume indexing.
-- `completionHandler`: The block to call with the results. The block receives the following parameter:
+- `completionHandler`: The block to call with the results. The block receives the following parameter: - **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is `nil`.
 
 ## See Also
 

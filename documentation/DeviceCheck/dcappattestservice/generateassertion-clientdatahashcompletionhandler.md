@@ -37,9 +37,10 @@ You provide the key identifier and a hash of the request that includes a challen
 
 ## Parameters
 
-- `keyId`: The identifier you received when generating a cryptographic key by   calling the    method.
-- `clientDataHash`: A SHA256 hash of a unique, single-use data block that   represents the client data to be signed with the attested private key. Should be at least 16 bytes in length.
-- `completionHandler`: A closure that the method calls upon completion with   the following parameters:
+- `keyId`: The identifier you received when generating a cryptographic key by calling the [`generateKey(completionHandler:)`](dcappattestservice/generatekey(completionhandler:).md) method.
+- `clientDataHash`: A SHA256 hash of a unique, single-use data block that represents the client data to be signed with the attested private key. Should be at least 16 bytes in length.
+- `completionHandler`: A closure that the method calls upon completion with the following parameters: - `assertionObject`: A data structure that you send to your server for processing.
+- `error` : A [`DCError`](dcerror-swift.struct.md) instance that indicates the reason for failure, or `nil` on success.
 
 
 ---

@@ -16,7 +16,7 @@ init(url URL: URL, writable: Bool)
 
 ## Parameters
 
-- `URL`: A URL in the system file space that represents the contents of a file system. This parameter uses the   scheme.
+- `URL`: A URL in the system file space that represents the contents of a file system. This parameter uses the `file:` scheme.
 - `writable`: A Boolean value that indicates whether the file system supports writing to the contents of the URL.
 
 

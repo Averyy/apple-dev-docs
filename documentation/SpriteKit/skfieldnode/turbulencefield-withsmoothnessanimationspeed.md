@@ -30,8 +30,8 @@ The acceleration’s magnitude is proportional to a body’s velocity.
 
 ## Parameters
 
-- `smoothness`: The smoothness of the noise used to generate the forces. This parameter should be a value between   and  , where   represents a uniform smoothness.
-- `speed`: The speed at which the noise field should change. A value of   means that the field should not animate at all.
+- `smoothness`: The smoothness of the noise used to generate the forces. This parameter should be a value between `0.0` and `1.0`, where `1.0` represents a uniform smoothness.
+- `speed`: The speed at which the noise field should change. A value of `0.0` means that the field should not animate at all.
 
 ## See Also
 

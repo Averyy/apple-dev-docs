@@ -30,7 +30,7 @@ This method is typically used by frameworks and plug-ins to locate their own bun
 
 ## Parameters
 
-- `identifier`: The identifier for an existing   instance.
+- `identifier`: The identifier for an existing `NSBundle` instance.
 
 ## See Also
 

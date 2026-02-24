@@ -21,7 +21,7 @@ If your delegate maintains a similar auxiliary word list, you may wish to edit t
 
 ## Parameters
 
-- `sender`: The   object that removed the word.
+- `sender`: The `NSSpellServer` object that removed the word.
 - `word`: The word that was removed.
 - `language`: The language of the removed word.
 

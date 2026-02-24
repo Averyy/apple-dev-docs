@@ -30,6 +30,10 @@ Return a nonzero error code if the buffer should be rejected; [`CMBufferQueueEnq
 
 ##### Callback Parameters
 
+- **buf**: The buffer about to be added.
+- **queue**: The queue requesting validation.
+- **validationRefCon**: Contextual data.
+
 ## See Also
 
 - [func CMBufferQueueSetValidationHandler(CMBufferQueue, CMBufferValidationHandler) -> OSStatus](cmbufferqueuesetvalidationhandler(_:_:).md)

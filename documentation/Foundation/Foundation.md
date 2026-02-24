@@ -79,6 +79,8 @@ The Foundation framework provides a base layer of functionality for apps and fra
 - [Foundation Enumerations](foundation-enumerations.md)
 - [Foundation Data Types](foundation-data-types.md)
   This document describes the data types and constants found in the Foundation framework.
+### Protocols
+- [protocol NSPredicateValidating](nspredicatevalidating.md)
 
 
 ---

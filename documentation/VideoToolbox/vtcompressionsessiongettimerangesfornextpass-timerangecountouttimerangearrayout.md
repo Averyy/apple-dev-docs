@@ -28,8 +28,8 @@ It’s an error to call this function when multipass encoding has not been enabl
 ## Parameters
 
 - `session`: The compression session.
-- `timeRangeCountOut`: A pointer to the item count ( ) to receive the number of  .
-- `timeRangeArrayOut`: A pointer to a C array of  . The storage for this array belongs to the compression session and should not be modified.The pointer is valid until the next call to  , or until the compression session is invalidated or finalized.
+- `timeRangeCountOut`: A pointer to the item count ([`CMItemCount`](https://developer.apple.com/documentation/CoreMedia/CMItemCount)) to receive the number of `CMTimeRanges`.
+- `timeRangeArrayOut`: A pointer to a C array of `CMTimeRanges`. The storage for this array belongs to the compression session and should not be modified.The pointer is valid until the next call to [`VTCompressionSessionEndPass(_:furtherPassesRequestedOut:_:)`](vtcompressionsessionendpass(_:furtherpassesrequestedout:_:).md), or until the compression session is invalidated or finalized.
 
 ## See Also
 

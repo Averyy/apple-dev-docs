@@ -20,7 +20,7 @@ func configureWithDefault(for style: UIBarButtonItem.Style)
 
 ## Parameters
 
-- `style`: The button style. For a list of possible values, see  .
+- `style`: The button style. For a list of possible values, see [`UIBarButtonItem.Style`](uibarbuttonitem/style-swift.enum.md).
 
 
 ---

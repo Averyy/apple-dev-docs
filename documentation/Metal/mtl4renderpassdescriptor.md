@@ -23,7 +23,7 @@ class MTL4RenderPassDescriptor
 
 You use render pass descriptors to create instances of [`MTL4RenderCommandEncoder`](mtl4rendercommandencoder.md) and encode draw commands into instances of [`MTL4CommandBuffer`](mtl4commandbuffer.md).
 
-To create render command encoders, you typically call [`renderCommandEncoderWithDescriptor:`](mtl4commandbuffer/rendercommandencoderwithdescriptor:.md). The [`makeRenderCommandEncoder(descriptor:options:)`](mtl4commandbuffer/makerendercommandencoder(descriptor:options:).md) variant of this method allows you to specify additional options to encode a render pass in parallel from multiple CPU cores by creating  and  render passes.
+To create render command encoders, you typically call [`renderCommandEncoderWithDescriptor:`](mtl4commandbuffer/rendercommandencoderwithdescriptor:.md). The [`makeRenderCommandEncoder(descriptor:options:)`](mtl4commandbuffer/makerendercommandencoder(descriptor:options:).md) variant of this method allows you to specify additional options to encode a render pass in parallel from multiple CPU cores by creating *suspending* and *resuming* render passes.
 
 ## Topics
 

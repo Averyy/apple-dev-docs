@@ -21,7 +21,7 @@ class func add(listener: any GKGameSessionEventListener)
 
 ## Parameters
 
-- `listener`: The   object being listened for.
+- `listener`: The `GKGameSessionEventLister` object being listened for.
 
 ## See Also
 

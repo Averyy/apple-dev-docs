@@ -16,6 +16,36 @@ The main entry point for a SwiftUI app is the [`App`](https://developer.apple.co
 
 Each of your app’s scenes contains a part of your interface. An app with a single main window can use a [`WindowGroup`](https://developer.apple.com/documentation/SwiftUI/WindowGroup) scene to display that window’s contents. If your app manages documents, you use a [`DocumentGroup`](https://developer.apple.com/documentation/SwiftUI/DocumentGroup) scene to specify contents of the document windows. Each scene contains the views you want to display in a particular window. At launch time, SwiftUI chooses an appropriate scene and displays it.
 
+**Window-based app**:
+
+```swift
+import SwiftUI
+
+@main
+struct MyApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+```
+
+**Document-based app**:
+
+```swift
+import SwiftUI
+
+@main
+struct MyDocApp: App {
+    var body: some Scene {
+        DocumentGroup(newDocument: MyDocAppDocument()) { file in
+            ContentView(document: file.$document)
+        }
+    }
+}
+```
+
 SwiftUI creates the app structure at launch time, so it’s the only object guaranteed to be present at startup. At startup, initialize the data structures you need to display your app’s initial interface. Keep your initialization code fast to minimize any delays in presenting your interface. If needed, move any noncritical work to background tasks that can finish after your app’s UI appears.
 
 #### Declare Your Interface
@@ -39,7 +69,7 @@ In SwiftUI, your app’s data model is the source of truth, and the way you modi
 
 - Apply the [`Environment`](https://developer.apple.com/documentation/SwiftUI/Environment) property wrapper to create a local reference to a value in the [`EnvironmentValues`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues).
 
-The [`Destination Video`](https://developer.apple.com/documentation/visionOS/destination-video) sample demonstrates how you use data to drive interface changes in a multiplatform app. The app uses SwiftUI to support iOS, iPadOS, macOS, tvOS, and visionOS using the same set of views and controls. See how you can build your app once and deploy it on multiple platforms.
+The [`Destination Video`](https://developer.apple.com/documentation/visionos/destination-video) sample demonstrates how you use data to drive interface changes in a multiplatform app. The app uses SwiftUI to support iOS, iPadOS, macOS, tvOS, and visionOS using the same set of views and controls. See how you can build your app once and deploy it on multiple platforms.
 
 #### Handle Events and Interactions
 
@@ -56,10 +86,10 @@ SwiftUI also supports many other types of events that you might need to support,
 
 SwiftUI offers additional features to help you create the features you want. Use these features to differentiate your app’s content.
 
--  Use an [`Immersive spaces`](https://developer.apple.com/documentation/SwiftUI/Immersive-spaces) in your visionOS app to display content outside of a window or volume. Immersive spaces focus the person’s attention on your app’s content, removing other distractions, and optionally filling their field of vision with the content you supply.
--  SwiftUI includes a [`Canvas`](https://developer.apple.com/documentation/SwiftUI/Canvas) view for drawing outlined or filled paths, images, or text. SwiftUI also provides a variety of views that render specific [`Shapes`](https://developer.apple.com/documentation/SwiftUI/Shapes) directly. Use these views to create custom content in your interface.
--  If you already built an app with [`UIKit integration`](https://developer.apple.com/documentation/SwiftUI/UIKit-integration) or [`AppKit integration`](https://developer.apple.com/documentation/SwiftUI/AppKit-integration), create new views using SwiftUI and adopt them incrementally. If you have a SwiftUI app, you can similarly incorporate existing UIKit or AppKit views into your interface.
--  Some system frameworks provide standard views to use when implementing specific features. For example, you might want to adopt the specific button for initiating payments with Apple Pay. For these external views, use the [`Technology-specific views`](https://developer.apple.com/documentation/SwiftUI/Technology-specific-views) that SwiftUI offers.
+- **Create immersive spaces in visionOS.** Use an [`Immersive spaces`](https://developer.apple.com/documentation/SwiftUI/Immersive-spaces) in your visionOS app to display content outside of a window or volume. Immersive spaces focus the person’s attention on your app’s content, removing other distractions, and optionally filling their field of vision with the content you supply.
+- **Draw shapes and custom graphics in your interface.** SwiftUI includes a [`Canvas`](https://developer.apple.com/documentation/SwiftUI/Canvas) view for drawing outlined or filled paths, images, or text. SwiftUI also provides a variety of views that render specific [`Shapes`](https://developer.apple.com/documentation/SwiftUI/Shapes) directly. Use these views to create custom content in your interface.
+- **Display SwiftUI views in your UIKit or AppKit app, and vice versa.** If you already built an app with [`UIKit integration`](https://developer.apple.com/documentation/SwiftUI/UIKit-integration) or [`AppKit integration`](https://developer.apple.com/documentation/SwiftUI/AppKit-integration), create new views using SwiftUI and adopt them incrementally. If you have a SwiftUI app, you can similarly incorporate existing UIKit or AppKit views into your interface.
+- **Incorporate views from other system frameworks.** Some system frameworks provide standard views to use when implementing specific features. For example, you might want to adopt the specific button for initiating payments with Apple Pay. For these external views, use the [`Technology-specific views`](https://developer.apple.com/documentation/SwiftUI/Technology-specific-views) that SwiftUI offers.
 
 
 ---

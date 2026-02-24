@@ -29,7 +29,7 @@ CarPlay calls `completion` after it presents the template. The Boolean parameter
 ## Parameters
 
 - `templateToPresent`: The template to present modally.
-- `animated`: If  , CarPlay animates the presentation of the template.
+- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), CarPlay animates the presentation of the template.
 - `completion`: The closure CarPlay calls after it presents the template.
 
 ## See Also

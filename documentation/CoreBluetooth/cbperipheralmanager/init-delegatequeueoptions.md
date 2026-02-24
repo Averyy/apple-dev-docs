@@ -28,8 +28,8 @@ This method is the designated initializer for the [`CBPeripheralManager`](cbperi
 ## Parameters
 
 - `delegate`: The delegate to receive the peripheral role events.
-- `queue`: The dispatch queue for dispatching the peripheral role events. If the value is  , the peripheral manager dispatches peripheral role events using the main queue.
-- `options`: An optional dictionary containing initialization options for a peripheral manager. For available options, see  .
+- `queue`: The dispatch queue for dispatching the peripheral role events. If the value is `nil`, the peripheral manager dispatches peripheral role events using the main queue.
+- `options`: An optional dictionary containing initialization options for a peripheral manager. For available options, see [`Peripheral Manager Initialization Options`](peripheral-manager-initialization-options.md).
 
 ## See Also
 

@@ -28,9 +28,9 @@ The strings in the array are in the order they should be presented to the userâ€
 
 ## Parameters
 
-- `range`: The range of a partially entered word in  .
-- `string`: A string in which there is a partially entered word, as located by  .
-- `language`: The language of the of the words that are possible corrections. This string is a ISO 639-1 language code or a combined ISO 639-1 language code and ISO 3166-1 regional code (for example,  ).
+- `range`: The range of a partially entered word in `string`.
+- `string`: A string in which there is a partially entered word, as located by `range`.
+- `language`: The language of the of the words that are possible corrections. This string is a ISO 639-1 language code or a combined ISO 639-1 language code and ISO 3166-1 regional code (for example, `fr_CA`).
 
 ## See Also
 

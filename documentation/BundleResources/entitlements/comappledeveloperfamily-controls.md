@@ -11,6 +11,10 @@ A Boolean value that indicates whether the app can request or revoke authorizati
 - Mac Catalyst 15.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 You must add the Family Controls entitlement to your app before you call the [`AuthorizationCenter`](https://developer.apple.com/documentation/FamilyControls/AuthorizationCenter) class’s [`requestAuthorization(completionHandler:)`](https://developer.apple.com/documentation/FamilyControls/AuthorizationCenter/requestAuthorization(completionHandler:)) or [`revokeAuthorization(completionHandler:)`](https://developer.apple.com/documentation/FamilyControls/AuthorizationCenter/revokeAuthorization(completionHandler:)) methods.

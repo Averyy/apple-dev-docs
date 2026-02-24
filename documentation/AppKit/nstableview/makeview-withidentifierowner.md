@@ -28,7 +28,7 @@ This method is usually called by the delegate in [`tableView(_:viewFor:row:)`](n
 
 ## Parameters
 
-- `identifier`: The view identifier. Must not be  .
+- `identifier`: The view identifier. Must not be `nil`.
 - `owner`: The owner of the NIB that may be loaded and instantiated to create a new view with the specified identifier.
 
 ## See Also

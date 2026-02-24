@@ -18,6 +18,9 @@ let IOBluetoothHandsFreeCallMultiparty: String
 
 The string contains a single digit with one of the following values:
 
+- **`“0”`**: A single-party call.
+- **`“1”`**: A multiple-party call.
+
 ## See Also
 
 - [let IOBluetoothHandsFreeCallDirection: String](iobluetoothhandsfreecalldirection.md)

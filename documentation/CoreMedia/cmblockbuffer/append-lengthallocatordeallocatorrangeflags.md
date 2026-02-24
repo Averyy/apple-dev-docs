@@ -22,10 +22,10 @@ func append(length: Int, allocator: @escaping CMBlockBuffer.CustomBlockAllocator
 
 ## Parameters
 
-- `length`: The length of the memory block in bytes. Must not be zero. This is the size to allocate when you call the   function.
+- `length`: The length of the memory block in bytes. Must not be zero. This is the size to allocate when you call the [`assureBlockMemory()`](cmblockbuffer/assureblockmemory().md) function.
 - `allocator`: An object that allocates a memory block.
 - `deallocator`: An object that deallocates a memory block.
-- `range`: The range within the memory block to which the block buffer should refer to data. If this value is  , the block buffer uses the whole memory block.
+- `range`: The range within the memory block to which the block buffer should refer to data. If this value is `nil`, the block buffer uses the whole memory block.
 - `flags`: Feature and control flags.
 
 ## See Also

@@ -22,9 +22,9 @@ Your app doesn’t receive a callback when the user selects the assistant cell. 
 
 ## Parameters
 
-- `position`: The position of the assistant cell in the list template. For possible values, see  .
-- `visibility`: The visibility of the assistant cell. For possible values, see  .
-- `assistantAction`: The action that Siri performs when the user selects the assistant cell. For possible values, see  .
+- `position`: The position of the assistant cell in the list template. For possible values, see [`CPListItem.AssistantCellPosition`](cplistitem/assistantcellposition.md).
+- `visibility`: The visibility of the assistant cell. For possible values, see [`CPListItem.AssistantCellVisibility`](cplistitem/assistantcellvisibility.md).
+- `assistantAction`: The action that Siri performs when the user selects the assistant cell. For possible values, see [`CPAssistantCellActionType`](cpassistantcellactiontype.md).
 
 
 ---

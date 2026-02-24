@@ -9,6 +9,10 @@ An entitlement that grants access to CoreTelephony services.
 - iOS 10.0+
 - iPadOS 10.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 Add this entitlement to your app, and include specific values in the array, to use [`Core Telephony`](https://developer.apple.com/documentation/CoreTelephony) APIs.

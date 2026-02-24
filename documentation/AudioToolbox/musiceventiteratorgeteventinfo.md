@@ -31,9 +31,9 @@ Pass `NULL` for any output parameter whose information you do not need.
 
 - `inIterator`: The music event iterator whose current event you want information about.
 - `outTimeStamp`: On output, the timestamp of the music event, in beats.
-- `outEventType`: On output, the type of music event. For possible event types, see  .
-- `outEventData`: On output, a reference to the music event data. The type of data is specified by the   parameter. Do not modify the referenced data directly; to change an event, use the   function.
-- `outEventDataSize`: On output, the size, in bytes, of the music event data in the   parameter.
+- `outEventType`: On output, the type of music event. For possible event types, see [`MusicEventType`](musiceventtype.md).
+- `outEventData`: On output, a reference to the music event data. The type of data is specified by the `outEventType` parameter. Do not modify the referenced data directly; to change an event, use the [`MusicEventIteratorSetEventInfo(_:_:_:)`](musiceventiteratorseteventinfo(_:_:_:).md) function.
+- `outEventDataSize`: On output, the size, in bytes, of the music event data in the `outEventData` parameter.
 
 ## See Also
 

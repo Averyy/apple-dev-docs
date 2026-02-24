@@ -24,7 +24,7 @@ static let size: FileAttributeKey
 
 The corresponding value is an [`NSNumber`](nsnumber.md) object containing an `unsigned long long`.
 
-> ❗ **Important**:  If the file has a resource fork, the returned value does  include the size of the resource fork.
+> ❗ **Important**:  If the file has a resource fork, the returned value does *not* include the size of the resource fork.
 
 ## See Also
 

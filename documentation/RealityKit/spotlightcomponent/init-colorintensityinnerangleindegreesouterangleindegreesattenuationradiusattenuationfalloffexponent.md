@@ -25,7 +25,7 @@ init(color: SpotLightComponent.Color = .white, intensity: Float = 6740.94, inner
 - `intensity`: The light’s brightness.
 - `innerAngleInDegrees`: The angle of the cone that emits light at full intensity, in degrees.
 - `outerAngleInDegrees`: The angle of the cone beyond which the spotlight’s intensity is zero.
-- `attenuationRadius`: The distance from the light source where its intensity reaches zero.   Any objects at or beyond this distance do not receive illumination.
+- `attenuationRadius`: The distance from the light source where its intensity reaches zero. Any objects at or beyond this distance do not receive illumination.
 - `attenuationFalloffExponent`: An exponent value for the light’s intensity falloff-transition curve.
 
 

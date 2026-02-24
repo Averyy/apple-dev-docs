@@ -26,7 +26,7 @@ A dictionary of `CGImageDestination`-compatible semantic segmentation matte info
 
 ## Parameters
 
-- `outAuxDataType`: On output, the auxiliary data type to be used when calling the ImageIO framework’s   function. Currently supported auxiliary data types are enumerated in  .
+- `outAuxDataType`: On output, the auxiliary data type to be used when calling the ImageIO framework’s [`CGImageDestinationAddAuxiliaryDataInfo(_:_:_:)`](https://developer.apple.com/documentation/ImageIO/CGImageDestinationAddAuxiliaryDataInfo(_:_:_:)) function. Currently supported auxiliary data types are enumerated in `CGImageProperties`.
 
 ## See Also
 

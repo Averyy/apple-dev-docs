@@ -9,6 +9,10 @@ The path to the content script, relative to the Resources folder in the app exte
 - macOS 10.11.5+
 
 
+
+**Type**: string
+
+
 ---
 
 *[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/sfsafaricontentscript/script)*

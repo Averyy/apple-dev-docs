@@ -17,7 +17,7 @@ func setChildren(_ children: [XMLNode]?)
 
 ## Parameters
 
-- `children`: An array of   objects. Each of these objects must represent comments, processing instructions, or the root element; otherwise, an exception is raised. Pass in   to remove all children.
+- `children`: An array of [`XMLNode`](xmlnode.md) objects. Each of these objects must represent comments, processing instructions, or the root element; otherwise, an exception is raised. Pass in `nil` to remove all children.
 
 ## See Also
 

@@ -8,6 +8,10 @@ An array of dictionaries that identify the USB devices the driver supports.
 **Availability**:
 - macOS 10.15+
 
+
+
+**Type**: dictionary 
+
 #### Discussion
 
 Each element in the array is a dictionary whose keys and values identify a specific type of supported device. The keys in the dictionary correspond to field names of the device descriptor associated with the USB device.

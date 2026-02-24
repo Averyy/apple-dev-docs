@@ -8,6 +8,12 @@ A Boolean value that indicates whether an app can use ARKit to access the main c
 **Availability**:
 - visionOS 2.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 ## See Also
 
 - [Increased performance headroom](entitlements/com.apple.developer.app-compute-category.md)

@@ -208,6 +208,11 @@ See also [`CertificatePreference`](certificatepreference.md) for setting up cert
 </plist>
 ```
 
+## Properties
+
+- `Name` (string) *(required)*: The email address (in RFC 822 format), DNS host name, or other name that uniquely identifies a service requiring this identity.
+- `PayloadCertificateUUID` (string) *(required)*: The UUID of the certificate payload within the same profile to use for the identity credential.
+
 ## See Also
 
 - [object DirectoryService](directoryservice.md)

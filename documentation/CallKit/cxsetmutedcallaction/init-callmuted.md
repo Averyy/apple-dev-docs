@@ -24,7 +24,7 @@ A new action for the specified call UUID and whether the call is muted.
 
 ## Parameters
 
-- `callUUID`: The unique identifier for the associated   object of the action.
+- `callUUID`: The unique identifier for the associated [`CXCall`](cxcall.md) object of the action.
 - `muted`: Whether the call is muted.
 
 ## See Also

@@ -30,7 +30,7 @@ If you override this method, also override [`remove(_:for:options:task:)`](urlcr
 
 - `credential`: The credential to remove.
 - `space`: The protection space from which to remove the credential.
-- `options`: For possible keys, see  . You should use this when trying to delete a credential that has the   policy.
+- `options`: A dictionary containing options to consider when removing the credential. For possible keys, see [`Dictionary key for credential removal options`](dictionary-key-for-credential-removal-options.md). You should use this when trying to delete a credential that has the [`URLCredential.Persistence.synchronizable`](urlcredential/persistence-swift.enum/synchronizable.md) policy. > **Note**:  When credential objects that have a [`URLCredential.Persistence.synchronizable`](urlcredential/persistence-swift.enum/synchronizable.md) policy are removed, the credential will be removed on all devices that contain this credential.
 
 ## See Also
 

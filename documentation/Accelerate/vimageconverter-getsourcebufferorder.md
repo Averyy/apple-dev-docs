@@ -30,7 +30,7 @@ This function describes the identity of each buffer passed in the `srcs` paramet
 
 ## Parameters
 
-- `converter`: A valid   instance to query the source buffer channel names and order of planes.
+- `converter`: A valid [`vImageConverter`](vimageconverter.md) instance to query the source buffer channel names and order of planes.
 
 ## See Also
 

@@ -54,6 +54,10 @@ The profile may contain any payload type other than the following:
 }
 ```
 
+## Properties
+
+- `ProfileURL` (string) *(required)*: The URL of the profile to download and install, which needs to start with `https://`, and must be hosted by the MDM server. If a user enrollment triggers this configuration, the system silently ignores any MDMv1 payloads in macOS where the User Enrollment Mode setting is `forbidden`. In iOS, the system rejects the entire profile.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

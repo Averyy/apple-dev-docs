@@ -28,7 +28,7 @@ This method looks at the current view and its subview hierarchy for the text fie
 
 ## Parameters
 
-- `force`: Specify   to force the first responder to resign, regardless of whether it wants to do so.
+- `force`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to force the first responder to resign, regardless of whether it wants to do so.
 
 
 ---

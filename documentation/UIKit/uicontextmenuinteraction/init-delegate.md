@@ -24,7 +24,7 @@ A new context menu interaction object with the associated delegate.
 
 ## Parameters
 
-- `delegate`: The object that provides the contextual menu and responds to other interaction-related events. This object must adopt the   protocol.
+- `delegate`: The object that provides the contextual menu and responds to other interaction-related events. This object must adopt the [`UIContextMenuInteractionDelegate`](uicontextmenuinteractiondelegate.md) protocol.
 
 ## See Also
 

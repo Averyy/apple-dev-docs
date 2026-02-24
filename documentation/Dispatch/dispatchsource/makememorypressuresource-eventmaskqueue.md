@@ -30,7 +30,7 @@ After creating the dispatch source, use the methods of the [`DispatchSourceProto
 
 ## Parameters
 
-- `eventMask`: The set of events you want to monitor. For a list of possible values, see  .
+- `eventMask`: The set of events you want to monitor. For a list of possible values, see [`DispatchSource.MemoryPressureEvent`](dispatchsource/memorypressureevent.md).
 - `queue`: The dispatch queue to use when executing the installed handlers.
 
 ## See Also

@@ -18,6 +18,11 @@ object AssignProfileResponse
 ### Dictionaries
 - [object AssignProfileResponse.Devices](assignprofileresponse/devices-data.dictionary.md)
 
+## Properties
+
+- `devices` (AssignProfileResponse.Devices)
+- `profile_uuid` (string)
+
 ## See Also
 
 - [object ProfileServiceRequest](profileservicerequest.md)

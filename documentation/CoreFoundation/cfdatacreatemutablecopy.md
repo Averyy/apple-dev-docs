@@ -26,8 +26,8 @@ A CFMutableData object that has the same contents as the original object. Return
 
 ## Parameters
 
-- `allocator`: The CFAllocator object to be used to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `capacity`: Pass   to specify that the maximum capacity is not limited. If non- ,   must be greater than or equal to the length of  .
+- `allocator`: The CFAllocator object to be used to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `capacity`: The maximum number of bytes that the CFData object can contain. The CFData object starts with the same length as the original object, and can grow to contain this number of bytes. Pass `0` to specify that the maximum capacity is not limited. If non-`0`, `capacity` must be greater than or equal to the length of `theData`.
 - `theData`: The CFData object to be copied.
 
 ## See Also

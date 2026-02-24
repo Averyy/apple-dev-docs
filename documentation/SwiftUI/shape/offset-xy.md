@@ -39,8 +39,8 @@ Circle()
 
 ## Parameters
 
-- `x`: The horizontal amount, in points, by which you offset the shape.   Negative numbers are to the left and positive numbers are to the   right.
-- `y`: The vertical amount, in points, by which you offset the shape.   Negative numbers are up and positive numbers are down.
+- `x`: The horizontal amount, in points, by which you offset the shape. Negative numbers are to the left and positive numbers are to the right.
+- `y`: The vertical amount, in points, by which you offset the shape. Negative numbers are up and positive numbers are down.
 
 ## See Also
 

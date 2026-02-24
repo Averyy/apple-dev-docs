@@ -64,7 +64,7 @@ To update the descriptors, call [`reloadComplicationDescriptors()`](clkcomplicat
 
 ## Parameters
 
-- `handler`: In your data source’s implementation, call the handler and pass the complication descriptors for your app. This block takes the following parameter:
+- `handler`: In your data source’s implementation, call the handler and pass the complication descriptors for your app. This block takes the following parameter: - **`descriptors`**: An array containing your app’s complication descriptors.
 
 ## See Also
 

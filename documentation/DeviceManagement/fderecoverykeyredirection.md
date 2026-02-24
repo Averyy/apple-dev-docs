@@ -37,6 +37,11 @@ Note these cautions:
 | Allowed in user enrollment | NA |
 | Allow multiple payloads | NA |
 
+## Properties
+
+- `EncryptCertPayloadUUID` (string) *(required)*: The UUID of a payload within the same profile that contains a certificate used to encrypt the recovery key when it’s sent to the redirected URL. The referenced payload must be of type `com.apple.security.pkcs1`.
+- `RedirectURL` (string) *(required)*: The URL to which FDE recovery keys should be sent instead of to Apple. The URL must begin with https://.
+
 ## See Also
 
 - [object AIMAccount](aimaccount.md)

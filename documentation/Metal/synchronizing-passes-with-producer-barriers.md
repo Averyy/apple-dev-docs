@@ -26,9 +26,187 @@ Start by identifying which memory operations from subsequent passes in the same 
 
 The following code example encodes three compute passes. The first pass runs a single copy command:
 
+**Swift**:
+
+```swift
+func encodeComputeWorkWithProducerBarrier(commandBuffer: MTL4CommandBuffer,
+                                          argumentTable: MTL4ArgumentTable,
+                                          buffers: [MTLBuffer])
+{
+    // === Encode pass 1 ===
+
+    // Create an encoder for the first compute pass.
+    let computeEncoder1: MTL4ComputeCommandEncoder!
+    computeEncoder1 = commandBuffer.makeComputeCommandEncoder()
+
+    // Assign the argument table to the compute encoder.
+    computeEncoder1.setArgumentTable(argumentTable)
+
+    // Add the buffers to the argument table for the dispatch command.
+    let bufferA = buffers[0]
+    let bufferB = buffers[1]
+
+    argumentTable.setAddress(bufferA.gpuAddress, index: 0)
+    argumentTable.setAddress(bufferB.gpuAddress, index: 1)
+
+    // Copy from `bufferA` to `bufferB`, which runs during the blit stage.
+    computeEncoder1.copy(sourceBuffer: bufferA, sourceOffset: 0,
+                         destinationBuffer: bufferB, destinationOffset: 0,
+                         size: copySize)
+
+    // Finalize the first compute pass.
+    computeEncoder1.endEncoding()
+```
+
+**Objective-C**:
+
+```objective-c
+- (void)encodeComputeWorkWithProducerBarrier:(id<MTL4CommandBuffer>)commandBuffer
+                               argumentTable:(id<MTL4ArgumentTable>)argumentTable
+                                     buffers:(id<MTLBuffer> *)buffers
+{
+    // === Encode pass 1 ===
+
+    // Create an encoder for the first compute pass.
+    id<MTL4ComputeCommandEncoder> computeEncoder1;
+    computeEncoder1 = [commandBuffer computeCommandEncoder];
+
+    // Assign the argument table to the compute encoder.
+    [computeEncoder1 setArgumentTable:argumentTable];
+
+    // Add the buffers to the argument table for the dispatch command.
+    id<MTLBuffer> bufferA = buffers[0];
+    id<MTLBuffer> bufferB = buffers[1];
+
+    [argumentTable setAddress:bufferA.gpuAddress atIndex:0];
+    [argumentTable setAddress:bufferB.gpuAddress atIndex:1];
+
+    // Copy from `bufferA` to `bufferB`, which runs during the blit stage.
+    [computeEncoder1 copyFromBuffer:bufferA sourceOffset:0
+                           toBuffer:bufferB destinationOffset:0
+                               size:copySize];
+
+    // Finalize the first compute pass.
+    [computeEncoder1 endEncoding];
+```
+
 The second pass runs a copy command and a dispatch command:
 
+**Swift**:
+
+```swift
+    // === Encode pass 2 ===
+
+    // Create an encoder for the second compute pass.
+    let computeEncoder2: MTL4ComputeCommandEncoder!
+    computeEncoder2 = commandBuffer.makeComputeCommandEncoder()
+
+    // Assign the argument table to the compute encoder.
+    computeEncoder2.setArgumentTable(argumentTable)
+
+    // Copy from `bufferC` to `bufferD`, which runs during the blit stage.
+    let bufferC = buffers[2]
+    let bufferD = buffers[3]
+    argumentTable.setAddress(bufferC.gpuAddress, index: 2)
+    argumentTable.setAddress(bufferD.gpuAddress, index: 3)
+    computeEncoder2.copy(sourceBuffer: bufferC, sourceOffset: 0,
+                         destinationBuffer: bufferD, destinationOffset: 0,
+                         size: copySize)
+
+    // The dispatch in pass 3 needs to wait for
+    // the blit stage in pass 2 to finish.
+
+    // Run a dispatch command that works with `bufferC`,
+    // which the GPU runs during the dispatch stage.
+    computeEncoder2.setComputePipelineState(modifyBufferIndex2ComputePipeline)
+    computeEncoder2.dispatchThreadgroups(threadgroupsPerGrid: threadgroupCount,
+                                         threadsPerThreadgroup: threadsPerThreadgroup)
+
+    // Finalize the second compute pass.
+    computeEncoder2.endEncoding()
+```
+
+**Objective-C**:
+
+```objective-c
+    // === Encode pass 2 ===
+
+    // Create an encoder for the second compute pass.
+    id<MTL4ComputeCommandEncoder> computeEncoder2;
+    computeEncoder2 = [commandBuffer computeCommandEncoder];
+
+    // Assign the argument table to the compute encoder.
+    [computeEncoder2 setArgumentTable:argumentTable];
+
+    // Copy from `bufferC` to `bufferD`, which runs during the blit stage.
+    id<MTLBuffer> bufferC = buffers[2];
+    id<MTLBuffer> bufferD = buffers[3];
+    [argumentTable setAddress:bufferC.gpuAddress atIndex:2];
+    [argumentTable setAddress:bufferD.gpuAddress atIndex:3];
+    [computeEncoder2 copyFromBuffer:bufferC sourceOffset:0
+                           toBuffer:bufferD destinationOffset:0
+                               size:copySize];
+
+    // The dispatch in pass 3 needs to wait for
+    // the blit stage in pass 2 to finish.
+
+    // Run a dispatch command that works with `bufferC`,
+    // which the GPU runs during the dispatch stage.
+    [computeEncoder2 setComputePipelineState:modifyBufferIndex2ComputePipeline];
+    [computeEncoder2 dispatchThreadgroups:threadgroupCount
+                    threadsPerThreadgroup:threadsPerThreadgroup];
+
+    // Finalize the second compute pass.
+    [computeEncoder2 endEncoding];
+```
+
 The third pass runs a single dispatch command:
+
+**Swift**:
+
+```swift
+    // === Encode pass 3 ===
+
+    // Create an encoder for the third compute pass.
+    let computeEncoder3: MTL4ComputeCommandEncoder!
+    computeEncoder3 = commandBuffer.makeComputeCommandEncoder()
+
+    // Assign the argument table to the compute encoder.
+    computeEncoder3.setArgumentTable(argumentTable)
+
+    // Run a dispatch command that works with `bufferD`,
+    // which the GPU runs during the dispatch stage.
+    computeEncoder3.setComputePipelineState(modifyBufferIndex3ComputePipeline)
+    computeEncoder3.dispatchThreadgroups(threadgroupsPerGrid: threadgroupCount,
+                                         threadsPerThreadgroup: threadsPerThreadgroup)
+
+    // Finalize the third compute pass.
+    computeEncoder3.endEncoding()
+}
+```
+
+**Objective-C**:
+
+```objective-c
+    // === Encode pass 3 ===
+
+    // Create an encoder for the third compute pass.
+    id<MTL4ComputeCommandEncoder> computeEncoder3;
+    computeEncoder3 = [commandBuffer computeCommandEncoder];
+
+    // Assign the argument table to the compute encoder.
+    [computeEncoder3 setArgumentTable:argumentTable];
+
+    // Run a dispatch command that works with `bufferD`,
+    // which the GPU runs during the dispatch stage.
+    [computeEncoder3 setComputePipelineState:modifyBufferIndex3ComputePipeline];
+    [computeEncoder3 dispatchThreadgroups:threadgroupCount
+                    threadsPerThreadgroup:threadsPerThreadgroup];
+
+    // Finalize the third compute pass.
+    [computeEncoder3 endEncoding];
+}
+```
 
 The example has at least one access conflict because passes 2 and 3 both access a common resource, `bufferD`:
 
@@ -50,6 +228,64 @@ Each producer queue barrier temporarily blocks the GPU from running the specific
 > ❗ **Important**:  The stages you pass to the `afterStages` parameter of the [`barrier(afterStages:beforeQueueStages:visibilityOptions:)`](mtl4commandencoder/barrier(afterstages:beforequeuestages:visibilityoptions:).md) method apply to the pass you’re encoding and all previous passes, but the stages of the `beforeQueueStages` parameter only apply to subsequent passes.
 
 The following example modifies the code that encodes the second pass by adding a producer queue barrier just before the dispatch command stage in the second pass.
+
+**Swift**:
+
+```swift
+    // Copy from `bufferC` to `bufferD`, which runs during the blit stage.
+    let bufferC = buffers[2]
+    let bufferD = buffers[3]
+    argumentTable.setAddress(bufferC.gpuAddress, index: 2)
+    argumentTable.setAddress(bufferD.gpuAddress, index: 3)
+    computeEncoder2.copy(sourceBuffer: bufferC, sourceOffset: 0,
+                         destinationBuffer: bufferD, destinationOffset: 0,
+                         size: copySize)
+
+    // Add a producer queue barrier that blocks any dispatch stages in subsequent passes
+    // in the queue, not counting this one, from running until the blit stages in all
+    // previous passes finish running, including this one.
+    computeEncoder2.barrier(afterStages: .blit,
+                            beforeQueueStages: .dispatch,
+                            visibilityOptions: .device)
+
+    // Run a dispatch command that works with `bufferC`,
+    // which the GPU runs during the dispatch stage.
+    computeEncoder2.setComputePipelineState(modifyBufferIndex2ComputePipeline)
+    computeEncoder2.dispatchThreadgroups(threadgroupsPerGrid: threadgroupCount,
+                                         threadsPerThreadgroup: threadsPerThreadgroup)
+
+    // Finalize the second compute pass.
+    computeEncoder2.endEncoding()
+```
+
+**Objective-C**:
+
+```objective-c
+    // Copy from `bufferC` to `bufferD`, which runs during the blit stage.
+    id<MTLBuffer> bufferC = buffers[2];
+    id<MTLBuffer> bufferD = buffers[3];
+    [argumentTable setAddress:bufferC.gpuAddress atIndex:2];
+    [argumentTable setAddress:bufferD.gpuAddress atIndex:3];
+    [computeEncoder2 copyFromBuffer:bufferC sourceOffset:0
+                           toBuffer:bufferD destinationOffset:0
+                               size:copySize];
+
+    // Add a producer queue barrier that blocks any dispatch stages in subsequent passes
+    // in the queue, not counting this one, from running until the blit stages in all
+    // previous passes finish running, including this one.
+    [computeEncoder2 barrierAfterStages:MTLStageBlit
+                      beforeQueueStages:MTLStageDispatch
+                      visibilityOptions:MTL4VisibilityOptionDevice];
+
+    // Run a dispatch command that works with `bufferC`,
+    // which the GPU runs during the dispatch stage.
+    [computeEncoder2 setComputePipelineState:modifyBufferIndex2ComputePipeline];
+    [computeEncoder2 dispatchThreadgroups:threadgroupCount
+                    threadsPerThreadgroup:threadsPerThreadgroup];
+
+    // Finalize the second compute pass.
+    [computeEncoder2 endEncoding];
+```
 
 In this example, the barrier prevents the GPU from running the dispatch stage in the third pass until the blit stages in both the first and second pass finish storing their modifications.
 

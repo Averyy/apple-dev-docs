@@ -33,7 +33,7 @@ You must override this method.
 ## Parameters
 
 - `node`: The cache node to update.
-- `managedObject`: The managed object with which to update  .
+- `managedObject`: The managed object with which to update `node`.
 
 ## See Also
 

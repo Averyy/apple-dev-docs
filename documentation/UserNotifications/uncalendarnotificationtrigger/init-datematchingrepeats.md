@@ -31,7 +31,7 @@ If you specify `true` for the `repeats` parameter, you must explicitly remove th
 ## Parameters
 
 - `dateComponents`: The temporal information to use when constructing the trigger. Provide only the date components that are relevant for your trigger.
-- `repeats`: Specify   to deliver the notification one time. Specify   to reschedule the notification request each time the system delivers the notification.
+- `repeats`: Specify [`false`](https://developer.apple.com/documentation/Swift/false) to deliver the notification one time. Specify [`true`](https://developer.apple.com/documentation/Swift/true) to reschedule the notification request each time the system delivers the notification.
 
 
 ---

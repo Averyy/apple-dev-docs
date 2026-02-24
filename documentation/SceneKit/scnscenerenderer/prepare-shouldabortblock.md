@@ -37,8 +37,8 @@ You can observe the progress of this operation with the [`Progress`](https://dev
 
 ## Parameters
 
-- `object`: An  ,  ,  , or   instance.
-- `block`: Pass   for this parameter if you do not need an opportunity to cancel preparing the object.
+- `object`: An [`SCNScene`](scnscene.md), [`SCNNode`](scnnode.md), [`SCNGeometry`](scngeometry.md), or [`SCNMaterial`](scnmaterial.md) instance.
+- `block`: A block that SceneKit calls periodically while preparing the object. The block takes no parameters. Your block should return [`false`](https://developer.apple.com/documentation/Swift/false) to tell SceneKit to continue preparing the object, or [`true`](https://developer.apple.com/documentation/Swift/true) to cancel preparation. Pass `nil` for this parameter if you do not need an opportunity to cancel preparing the object.
 
 ## See Also
 

@@ -28,8 +28,8 @@ To customize the overall appearance of a navigation bar, use [`UIAppearance`](ui
 
 ## Parameters
 
-- `navigationBarClass`: Specify the custom   subclass you want to use, or specify   to use the standard   class.
-- `toolbarClass`: Specify the custom   subclass you want to use, or specify   to use the standard   class.
+- `navigationBarClass`: Specify the custom [`UINavigationBar`](uinavigationbar.md) subclass you want to use, or specify `nil` to use the standard [`UINavigationBar`](uinavigationbar.md) class.
+- `toolbarClass`: Specify the custom [`UIToolbar`](uitoolbar.md) subclass you want to use, or specify `nil` to use the standard [`UIToolbar`](uitoolbar.md) class.
 
 ## See Also
 

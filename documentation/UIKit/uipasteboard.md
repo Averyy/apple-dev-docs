@@ -23,7 +23,7 @@ For sharing data with any other app, use the systemwide general pasteboard. For 
 
 In typical usage, an object in your app writes data to a pasteboard when the user requests a copy, cut, or duplicate operation on a selection in the user interface. Another object in the same or different app then reads that data from the pasteboard and presents it to the user at a new location. This usually happens when the user requests a paste operation.
 
-> ❗ **Important**:  Starting in iOS 14, the system notifies the user when an app gets general pasteboard content that originates in a different app without . The system determines user intent based on user interactions, such as tapping a system-provided control or pressing Command-V. Use the properties and methods below to determine whether pasteboard items match various patterns, such as web search terms, URLs, or numbers, without notifying the user.
+> ❗ **Important**:  Starting in iOS 14, the system notifies the user when an app gets general pasteboard content that originates in a different app without *user intent*. The system determines user intent based on user interactions, such as tapping a system-provided control or pressing Command-V. Use the properties and methods below to determine whether pasteboard items match various patterns, such as web search terms, URLs, or numbers, without notifying the user.
 
 ##### The General Pasteboard and Named Pasteboards
 
@@ -64,7 +64,7 @@ The system notifies the user when you access properties or call methods that pul
 
 ##### Pasteboard Items and Representation Types
 
-When you write an object to a pasteboard, the pasteboard stores it as a . A pasteboard item consists of one or more key-value pairs in which the key identifies the representation type (sometimes called a ) of the value.
+When you write an object to a pasteboard, the pasteboard stores it as a *pasteboard item*. A pasteboard item consists of one or more key-value pairs in which the key identifies the representation type (sometimes called a *pasteboard type*) of the value.
 
 A uniform type identifier frequently functions as the key for a representation type. For example, you can use the [`UTTypeJPEG`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTTypeJPEG) uniform type identifier (a constant for `public.jpeg`) as a representation type key for JPEG data.
 

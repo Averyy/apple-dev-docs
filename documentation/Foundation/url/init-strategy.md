@@ -33,8 +33,8 @@ let url = try? URL(urlString, strategy: .url
 
 ## Parameters
 
-- `value`: The value to parse, as the input type accepted by  . For  , this is  .
-- `strategy`: A parse strategy to apply when parsing  .
+- `value`: The value to parse, as the input type accepted by `strategy`. For [`URL.ParseStrategy`](url/parsestrategy.md), this is [`String`](https://developer.apple.com/documentation/Swift/String).
+- `strategy`: A parse strategy to apply when parsing `value`.
 
 ## See Also
 

@@ -30,10 +30,10 @@ Adds a buffer reference of (a possibly subset portion of) another `CMBlockBuffer
 
 ## Parameters
 
-- `theBuffer`: The existing  .  The target   will be added to the memory being managed by   (the existing  ). Must not be  .
-- `targetBBuf`: The target  . The target   will be added to the memory managed by the   (the existing ).This parameter must not be  . Unless the   is passed, the target   must not be empty and it must have a data length at least large enough to supply the data subset specified (i.e.   +   bytes).
-- `offsetToData`: The reference maintained by the existing   will begin after this offset within the target  .
-- `dataLength`: Number of relevant data bytes, starting at  , within the target  . If zero, the target buffer’s total available   (starting at offsetToData) will be referenced.
+- `theBuffer`: The existing `CMBlockBuffer`.  The target `CMBlockBuffer` will be added to the memory being managed by `theBuffer` (the existing `CMBlockBuffer`). Must not be `NULL`.
+- `targetBBuf`: The target `CMBlockBuffer`. The target `CMBlockBuffer` will be added to the memory managed by the `theBuffer` (the existing`CMBlockBuffer`).This parameter must not be `NULL`. Unless the `kCMBlockBufferPermitEmptyReferenceFlag` is passed, the target `CMBlockBuffer` must not be empty and it must have a data length at least large enough to supply the data subset specified (i.e. `offsetToData` + `dataLength` bytes).
+- `offsetToData`: The reference maintained by the existing `CMBlockBuffer` will begin after this offset within the target `CMBlockBuffer`.
+- `dataLength`: Number of relevant data bytes, starting at `offsetToData`, within the target `CMBlockBuffer`. If zero, the target buffer’s total available `dataLength` (starting at offsetToData) will be referenced.
 - `flags`: Feature and control flags.
 
 ## See Also

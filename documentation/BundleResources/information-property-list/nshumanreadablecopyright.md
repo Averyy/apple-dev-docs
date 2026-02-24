@@ -8,6 +8,10 @@ A human-readable copyright notice for the bundle.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [CFBundleVersion](information-property-list/cfbundleversion.md)

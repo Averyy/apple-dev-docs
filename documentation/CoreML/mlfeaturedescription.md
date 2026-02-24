@@ -22,7 +22,7 @@ class MLFeatureDescription
 
 #### Overview
 
-In Core ML, a  is a single input or output of a model. A model can have any number of  or . Each feature has a name and a value type, which are defined in the feature’s `MLFeatureDescription`. Model authors use feature descriptions to help developers integrate their model properly. Each `MLFeatureDescription` instance has read-only properties that indicate the feature’s name, its type, and whether it’s optional.
+In Core ML, a *feature* is a single input or output of a model. A model can have any number of *input features* or *output features*. Each feature has a name and a value type, which are defined in the feature’s `MLFeatureDescription`. Model authors use feature descriptions to help developers integrate their model properly. Each `MLFeatureDescription` instance has read-only properties that indicate the feature’s name, its type, and whether it’s optional.
 
 For examples of features, see [`Integrating a Core ML Model into Your App`](integrating-a-core-ml-model-into-your-app.md). Note the three input features named `solarPanels`, `greenhouses`, and `size`, and the output feature is named `price`. All four features are of type `Double`.
 

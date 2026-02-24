@@ -26,7 +26,7 @@ To fill the gap, all elements beyond index are moved by subtracting 1 from their
 
 ## Parameters
 
-- `idx`: The index of the object to remove from the mutable ordered set. The value must not exceed the bounds of the set.
+- `idx`: The index of the object to remove from the mutable ordered set. The value must not exceed the bounds of the set. > ❗ **Important**:  Raises an [`rangeException`](nsexceptionname/rangeexception.md) if index is beyond the end of the mutable ordered set.
 
 ## See Also
 

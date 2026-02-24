@@ -23,7 +23,7 @@ func symbol<D>(by value: PlottableValue<D>) -> some ChartContent where D : Plott
 
 ## Parameters
 
-- `value`: The data value.   must be categorial, such as  .
+- `value`: The data value. `value` must be categorial, such as `String`.
 
 ## See Also
 

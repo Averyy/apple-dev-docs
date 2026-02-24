@@ -28,6 +28,28 @@ An enumerator object that lets you access each key in the dictionary.
 
 Here’s how you might use this method.
 
+**Swift**:
+
+```swift
+let enumerator = myDictionary.keyEnumerator()
+
+while let key = enumerator.nextObject() {
+    /* code that uses the returned key */
+}
+
+```
+
+**Objective-C**:
+
+```objc
+NSEnumerator *enumerator = [myDictionary keyEnumerator];
+id key;
+ 
+while ((key = [enumerator nextObject])) {
+    /* code that uses the returned key */
+}
+```
+
 If you use this method with instances of mutable subclasses of [`NSDictionary`](nsdictionary.md), your code should not modify the entries during enumeration. If you intend to modify the entries, use the [`allKeys`](nsdictionary/allkeys.md) property to create a snapshot of the dictionary’s keys. Then use this snapshot to traverse the entries, modifying them along the way.
 
 If you want to enumerate the dictionary’s values rather than its keys, use the [`objectEnumerator()`](nsdictionary/objectenumerator().md) method.

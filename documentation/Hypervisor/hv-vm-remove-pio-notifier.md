@@ -28,7 +28,7 @@ The arguments you provide must match those previously used to add the notifier.
 - `size`: The match-size from the existing notifier.
 - `value`: The value to match against from the existing notifier.
 - `mach_port`: The Mach port from the existing notifier.
-- `flags`: The   option flags from the existing notifier.
+- `flags`: The [`hv_ion_flags_t`](hv_ion_flags_t.md) option flags from the existing notifier.
 
 ## See Also
 

@@ -20,7 +20,7 @@ A local socket port initialized with the provided socket.
 
 ## Parameters
 
-- `family`: The protocol family for the provided socket. Possible values are defined in  , such as  ,  , and  .
+- `family`: The protocol family for the provided socket. Possible values are defined in `<sys/socket.h>`, such as `AF_LOCAL`, `AF_INET`, and `AF_INET6`.
 - `type`: The type of the provided socket.
 - `protocol`: The specific protocol the provided socket uses.
 - `sock`: The previously created socket.

@@ -24,8 +24,8 @@ Note that [`snapshotImage()`](qcrenderer/snapshotimage().md) and [`createSnapsho
 
 ## Parameters
 
-- `composition`: A   object. The composition must  not contain any consumer patches. That is, the composition can receive data, process it, and produce output values, but it cannot perform any rendering.
-- `colorSpace`: A Quartz color space object. This must be an RGB color space. Pass   to use the default RGB color space. The color space is used only for the images produced by the  output image ports of the composition. For more information on Quartz color spaces, see  .
+- `composition`: A [`QCComposition`](qccomposition.md) object. The composition must  not contain any consumer patches. That is, the composition can receive data, process it, and produce output values, but it cannot perform any rendering.
+- `colorSpace`: A Quartz color space object. This must be an RGB color space. Pass `NULL` to use the default RGB color space. The color space is used only for the images produced by the  output image ports of the composition. For more information on Quartz color spaces, see [`Quartz 2D Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066).
 
 ## See Also
 

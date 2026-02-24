@@ -22,7 +22,7 @@ The replaced child node is released.
 ## Parameters
 
 - `index`: An integer identifying the position of a node in the receiver’s list of child nodes.
-- `node`: An   object to replace the object at  .
+- `node`: An [`XMLNode`](xmlnode.md) object to replace the object at `index`.
 
 ## See Also
 

@@ -29,7 +29,7 @@ When a focus update is about to occur, the focus engine calls this method on all
 
 ## Parameters
 
-- `context`: An instance of   class, containing metadata for the focus related update.
+- `context`: An instance of [`UIFocusUpdateContext`](uifocusupdatecontext.md) class, containing metadata for the focus related update.
 
 
 ---

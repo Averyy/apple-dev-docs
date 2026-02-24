@@ -25,16 +25,16 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Fun
 ## Parameters
 
 - `minor_status`: A pointer to the secondary status result that provides additional information in case of failure.
-- `input_cred_handle`: The credential to which the new element should be added. If the   parameter is  , the input credential is modified to include the new element. Otherwise, a new credential that combines the input credential with the new element is returned as the output credential. Specify   to create a new credential with default behavior, in which case the   cannot  be  .
-- `desired_name`: The name of the entity for which the credential is to be acquired. Specify   to get a credential with a default name or use   to create a name object.
-- `desired_mech`: The set of underlying security mechanisms to use with the credential. Use   to get the default set.
-- `cred_usage`: A flag that indicates how the credential will be used. Specify   for context initiation,   for context acceptance, or   for both.
-- `initiator_time_req`: The time in seconds that the credential should remain valid for initiating security contexts. Use   to indicate the maximum allowed duration. The value is ignored for credentials with usage set to  .
-- `acceptor_time_req`: The time in seconds that the credential should remain valid for accepting security contexts. Use   to indicate the maximum allowed duration. The value is ignored for credentials with usage set to  .
-- `output_cred_handle`: A pointer the function uses to return the credential. Set to   to modify the input credential in place. Release the credential’s memory with   when you are done with it.
-- `actual_mechs`: A pointer the function uses to return the actual mechanisms used by the credential. Set to   to ignore this output. If you do receive a set of mechanisms, use   to release its memory when you are done with it.
-- `initiator_time_rec`: A pointer the function uses to return the actual number of seconds for which the credential is valid as an initiator. Set to   to ignore this output.
-- `acceptor_time_rec`: A pointer the function uses to return the actual number of seconds for which the credential is valid as an acceptor. Set to   to ignore this output.
+- `input_cred_handle`: The credential to which the new element should be added. If the `output_cred_handle` parameter is `NULL`, the input credential is modified to include the new element. Otherwise, a new credential that combines the input credential with the new element is returned as the output credential. Specify [`GSS_C_NO_CREDENTIAL`](gss_c_no_credential.md) to create a new credential with default behavior, in which case the `output_cred_handle` cannot  be `NULL`.
+- `desired_name`: The name of the entity for which the credential is to be acquired. Specify [`GSS_C_NO_NAME`](gss_c_no_name.md) to get a credential with a default name or use [`gss_import_name(_:_:_:_:)`](gss_import_name(_:_:_:_:).md) to create a name object.
+- `desired_mech`: The set of underlying security mechanisms to use with the credential. Use `GSS_C_NO_OID_SET` to get the default set.
+- `cred_usage`: A flag that indicates how the credential will be used. Specify [`GSS_C_INITIATE`](gss_c_initiate.md) for context initiation, [`GSS_C_ACCEPT`](gss_c_accept.md) for context acceptance, or [`GSS_C_BOTH`](gss_c_both.md) for both.
+- `initiator_time_req`: The time in seconds that the credential should remain valid for initiating security contexts. Use [`GSS_C_INDEFINITE`](gss_c_indefinite.md) to indicate the maximum allowed duration. The value is ignored for credentials with usage set to [`GSS_C_ACCEPT`](gss_c_accept.md).
+- `acceptor_time_req`: The time in seconds that the credential should remain valid for accepting security contexts. Use [`GSS_C_INDEFINITE`](gss_c_indefinite.md) to indicate the maximum allowed duration. The value is ignored for credentials with usage set to [`GSS_C_INITIATE`](gss_c_initiate.md).
+- `output_cred_handle`: A pointer the function uses to return the credential. Set to `NULL` to modify the input credential in place. Release the credential’s memory with [`gss_release_cred(_:_:)`](gss_release_cred(_:_:).md) when you are done with it.
+- `actual_mechs`: A pointer the function uses to return the actual mechanisms used by the credential. Set to `NULL` to ignore this output. If you do receive a set of mechanisms, use [`gss_release_oid_set(_:_:)`](gss_release_oid_set(_:_:).md) to release its memory when you are done with it.
+- `initiator_time_rec`: A pointer the function uses to return the actual number of seconds for which the credential is valid as an initiator. Set to `NULL` to ignore this output.
+- `acceptor_time_rec`: A pointer the function uses to return the actual number of seconds for which the credential is valid as an acceptor. Set to `NULL` to ignore this output.
 
 ## See Also
 

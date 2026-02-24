@@ -26,7 +26,7 @@ Call this method to disable auto-renewing for a subscription. A subscription wit
 
 ## Parameters
 
-- `identifier`: The transaction   of the auto-renewable subscription.
+- `identifier`: The transaction [`identifier`](sktesttransaction/identifier.md) of the auto-renewable subscription.
 
 ## See Also
 

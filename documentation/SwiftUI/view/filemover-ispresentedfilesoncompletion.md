@@ -28,8 +28,8 @@ In order for the interface to appear, both `isPresented` must be `true` and `fil
 ## Parameters
 
 - `isPresented`: A binding to whether the interface should be shown.
-- `files`: A collection of  s for the files to be moved.
-- `onCompletion`: A callback that will be invoked when the operation has   has succeeded or failed. To access the received URLs, call  .   When the access is no longer required, call  .
+- `files`: A collection of `URL`s for the files to be moved.
+- `onCompletion`: A callback that will be invoked when the operation has has succeeded or failed. To access the received URLs, call `startAccessingSecurityScopedResource`. When the access is no longer required, call `stopAccessingSecurityScopedResource`. - **result**: A `Result` indicating whether the operation succeeded or failed.
 
 ## See Also
 

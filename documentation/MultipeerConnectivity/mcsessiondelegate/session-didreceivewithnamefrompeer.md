@@ -23,7 +23,7 @@ func session(_ session: MCSession, didReceive stream: InputStream, withName stre
 ## Parameters
 
 - `session`: The session through which the byte stream was opened.
-- `stream`: An   object that represents the local endpoint for the byte stream.
+- `stream`: An `NSInputStream` object that represents the local endpoint for the byte stream.
 - `streamName`: The name of the stream, as provided by the originator.
 - `peerID`: The peer ID of the originator of the stream.
 

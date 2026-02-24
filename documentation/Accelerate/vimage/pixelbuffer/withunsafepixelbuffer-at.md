@@ -43,7 +43,7 @@ Use this function to access a single planar pixel buffer from a multiple-plane p
 ## Parameters
 
 - `index`: The index of the plane.
-- `body`: A closure with a   parameter that points to the underlying pixel buffer at the given index.
+- `body`: A closure with a [`vImage.PixelBuffer`](vimage/pixelbuffer.md) parameter that points to the underlying pixel buffer at the given index.
 
 ## See Also
 

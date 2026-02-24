@@ -34,7 +34,7 @@ You can use this method to access specific template header and footer views that
 
 ## Parameters
 
-- `identifier`: A string identifying the header or footer view to be reused. This parameter must not be  .
+- `identifier`: A string identifying the header or footer view to be reused. This parameter must not be `nil`.
 
 ## See Also
 

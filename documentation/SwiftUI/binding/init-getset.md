@@ -29,8 +29,8 @@ For a “computed” binding created using get and set closure parameters, the s
 
 ## Parameters
 
-- `get`: A closure that retrieves the binding value. The closure has no   parameters, and returns a value.
-- `set`: A closure that sets the binding value. The closure has the   following parameter:
+- `get`: A closure that retrieves the binding value. The closure has no parameters, and returns a value.
+- `set`: A closure that sets the binding value. The closure has the following parameter: - newValue: The new value of the binding value.
 
 ## See Also
 

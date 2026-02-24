@@ -24,9 +24,40 @@ func vvremainderf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: Un
 
 ##### Parameters
 
+- **parameter 1**: The output array, *z*.
+- **parameter 2**: The numerators input array, *y*.
+- **parameter 3**: The denominators input array, *x*.
+
 - termparameter 4: The number of elements in the arrays.
 
 The following code shows an example of using [`vvremainderf(_:_:_:_:)`](vvremainderf(_:_:_:_:).md):
+
+**Swift**:
+
+```swift
+var x: [Float] = [7, 4, 3, 4]
+var y: [Float] = [2, 5, 10, 30]
+var z = [Float](repeating: 0, count: x.count)
+var n = Int32(x.count)
+ 
+vvremainderf(&z, &y, &x, &n)
+ 
+print(z) // [2.0, 1.0, 1.0, -2.0]
+```
+
+**Objective-C**:
+
+```objc
+float x[] = {7, 4, 3, 4};
+float y[] = {2, 5, 10, 30};
+float z[4];
+int n = 4;
+ 
+vvremainderf(z, y, x, &n);
+ 
+NSLog(@"z: [%lf, %lf, %lf, %lf]", z[0], z[1], z[2], z[3]);
+
+```
 
 ## See Also
 

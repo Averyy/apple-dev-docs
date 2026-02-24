@@ -44,10 +44,10 @@ CFShow(dateAsString);
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `locale`: The locale to use for localization. If   uses the default system local. Use   to specify the locale of the current user.
-- `dateStyle`: The date style to use when formatting dates. See   for possible values.
-- `timeStyle`: The time style to use when formatting times. See   for possible values.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `locale`: The locale to use for localization. If `NULL` uses the default system local. Use [`CFLocaleCopyCurrent()`](cflocalecopycurrent().md) to specify the locale of the current user.
+- `dateStyle`: The date style to use when formatting dates. See [`Date Formatter Styles`](date_formatter_styles.md) for possible values.
+- `timeStyle`: The time style to use when formatting times. See [`Date Formatter Styles`](date_formatter_styles.md) for possible values.
 
 
 ---

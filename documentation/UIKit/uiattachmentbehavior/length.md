@@ -20,7 +20,7 @@ var length: CGFloat { get set }
 
 #### Discussion
 
-Use this property to adjust the attachment length, if you want to,  creating an attachment. The system sets initial length automatically based on how you initialize the attachment.
+Use this property to adjust the attachment length, if you want to, *after* creating an attachment. The system sets initial length automatically based on how you initialize the attachment.
 
 ## See Also
 

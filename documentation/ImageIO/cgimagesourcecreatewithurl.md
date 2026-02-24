@@ -27,7 +27,7 @@ An image source. You’re responsible for releasing this type using [`CFRelease`
 ## Parameters
 
 - `url`: The URL of the image.
-- `options`: A dictionary that specifies additional creation options. For a list of possible values, see  .
+- `options`: A dictionary that specifies additional creation options. For a list of possible values, see [`Specifying the Read Options`](cgimagesource#Specifying-the-Read-Options.md).
 
 ## See Also
 

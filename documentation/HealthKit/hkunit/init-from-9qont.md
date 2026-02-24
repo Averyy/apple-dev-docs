@@ -27,6 +27,22 @@ The unit object described by the string. If the string does not represent a vali
 
 You can create unit objects using a string representation of that unit, which is a convenient way to create complex, compound units. A few sample units are shown below.
 
+**Swift**:
+
+```swift
+let count = HKUnit(fromString: "count")
+let mass = HKUnit(fromString: "kg")
+let acceleration = HKUnit(fromString: "m/s^2")
+```
+
+**Objective-C**:
+
+```objc
+HKUnit *count = [HKUnit unitFromString:@"count"];
+HKUnit *mass = [HKUnit unitFromString:@"kg"];
+HKUnit *acceleration = [HKUnit unitFromString:@"m/s^2"];
+```
+
 Unit strings use one or more characters to represent the International System of Units (SI). The unit strings for SI units are listed in the following table.
 
 | String | Unit name | Unit type |
@@ -113,7 +129,7 @@ You can create more complex, compound units by mathematically combining multiple
 
 ## Parameters
 
-- `string`: A string representation of the unit, such as  ,  , or  .
+- `string`: A string representation of the unit, such as `count`, `kg`, or `m/s^2`.
 
 ## See Also
 

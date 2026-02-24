@@ -23,7 +23,7 @@ func ODRecordVerifyPassword(_ record: ODRecordRef!, _ password: CFString!, _ err
 
 - `record`: The record.
 - `password`: The password.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

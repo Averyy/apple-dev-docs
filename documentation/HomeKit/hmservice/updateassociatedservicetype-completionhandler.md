@@ -24,7 +24,7 @@ This method is only valid for services of type [`HMServiceTypeOutlet`](hmservice
 ## Parameters
 
 - `serviceType`: The service type of the device that is hooked up to the switch or outlet.
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

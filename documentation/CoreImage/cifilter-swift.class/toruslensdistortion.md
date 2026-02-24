@@ -29,6 +29,12 @@ This method applies the torus lens distortion filter to an image. This effect di
 
 The torus lens distortion filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`radius`**: A `float` representing the amount of pixels the filter uses in the tours as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`refraction`**: A `float` representing the refraction of the glass as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`width`**: A `float` representing the width of the torus ring as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in a torus-shaped object placed over the image:
 
 ```swift

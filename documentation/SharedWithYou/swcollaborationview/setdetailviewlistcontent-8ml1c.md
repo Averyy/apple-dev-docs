@@ -21,7 +21,7 @@ Sets the detail view for the list content from view builder closures.
 
 ## Parameters
 
-- `detailViewListContent`: A   view.
+- `detailViewListContent`: A `ListContent` view.
 
 ## See Also
 

@@ -23,6 +23,40 @@ Each playlist has a name, a set of attributes, and a unique identifier that pers
 
 Users configure playlists using iTunes or by creating a playlist on the device. Playlists are read-only to your iOS app. To obtain playlists, configure a media query that’s grouped by playlist. Each returned media item collection is a media playlist. The following code snippet illustrates this by logging playlist and song names to the Xcode debugger console:
 
+**Swift**:
+
+```swift
+let myPlaylistQuery = MPMediaQuery.playlists()
+let playlists = myPlaylistQuery.collections
+for playlist in playlists! {
+    print(playlist.value(forProperty: MPMediaPlaylistPropertyName)!)
+            
+    let songs = playlist.items
+    for song in songs {
+        let songTitle = song.value(forProperty: MPMediaItemPropertyTitle)
+        print("\t\t", songTitle!)
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+MPMediaQuery *myPlaylistsQuery = [MPMediaQuery playlistsQuery];
+NSArray *playlists = [myPlaylistsQuery collections];
+ 
+for (MPMediaPlaylist *playlist in playlists) {
+    NSLog (@"%@", [playlist valueForProperty: MPMediaPlaylistPropertyName]);
+ 
+    NSArray *songs = [playlist items];
+    for (MPMediaItem *song in songs) {
+        NSString *songTitle =
+            [song valueForProperty: MPMediaItemPropertyTitle];
+        NSLog (@"\t\t%@", songTitle);
+    }
+}
+```
+
 [`MPMediaPropertyPredicate`](mpmediapropertypredicate.md) and [`MPMediaQuery`](mpmediaquery.md) describe the API for building a media query. [`MPMediaEntity`](mpmediaentity.md) describes the methods for querying media playlist property values.
 
 ## Topics

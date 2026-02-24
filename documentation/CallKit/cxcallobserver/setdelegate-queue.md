@@ -20,8 +20,8 @@ func setDelegate(_ delegate: (any CXCallObserverDelegate)?, queue: dispatch_queu
 
 ## Parameters
 
-- `delegate`: An object conforming to the   protocol.
-- `queue`: If  , delegate methods are performed on the main queue.
+- `delegate`: An object conforming to the `CXCallObserverDelegate` protocol.
+- `queue`: The queue on which to execute delegate methods. If `nil`, delegate methods are performed on the main queue. > ❗ **Important**:  Any queue specified is stored as a weak reference.
 
 
 ---

@@ -28,7 +28,7 @@ The availability of region monitoring support is dependent on the hardware prese
 
 ## Parameters
 
-- `regionClass`: A region monitoring class from the MapKit framework. This class must descend from the   class.
+- `regionClass`: A region monitoring class from the MapKit framework. This class must descend from the [`CLRegion`](clregion.md) class.
 
 ## See Also
 

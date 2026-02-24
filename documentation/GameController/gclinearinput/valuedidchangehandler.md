@@ -24,6 +24,10 @@ var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCLinearInput, Floa
 
 The block’s parameters are:
 
+- **element**: The element whose value changed.
+- **input**: The input object that changed.
+- **value**: The value of the input at the time the input object calls this handler.
+
 ## See Also
 
 - [var value: Float](gclinearinput/value.md)

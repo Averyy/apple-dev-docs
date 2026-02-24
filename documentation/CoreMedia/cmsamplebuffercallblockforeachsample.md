@@ -28,7 +28,7 @@ If there are no sample sizes in the provided sample buffer, `kCMSampleBufferErro
 
 ## Parameters
 
-- `sbuf`:   that may contain multiple samples.
+- `sbuf`: `CMSampleBuffer` that may contain multiple samples.
 - `handler`: Block to be called for each individual sample.
 
 ## See Also

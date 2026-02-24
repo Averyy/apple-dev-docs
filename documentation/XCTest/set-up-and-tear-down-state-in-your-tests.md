@@ -31,9 +31,49 @@ When XCTest finishes running all the test methods and the test class completes, 
 
 For state that’s common to all the test methods in your test class and that doesn’t need a reset for each test method, use the [`setUp()`](xctestcase/setup().md) class method on [`XCTestCase`](xctestcase.md).
 
+**Swift**:
+
+```swift
+override class func setUp() {
+    // This is the setUp() class method.
+    // XCTest calls it before calling the first test method.
+    // Set up any overall initial state here.
+}
+```
+
+**Objective-C**:
+
+```objc
++ (void)setUp {
+    // This is the setUp class method.
+    // XCTest calls it before calling the first test method.
+    // Set up any overall initial state here.
+}
+```
+
 XCTest runs `setUp()` once before the test class begins.
 
 If you need to clean up temporary files or capture any data that you want to analyze after the test class is complete, use the [`tearDown()`](xctestcase/teardown().md) class method on `XCTestCase`.
+
+**Swift**:
+
+```swift
+override class func tearDown() {
+    // This is the tearDown() class method.
+    // XCTest calls it after the last test method completes.
+    // Perform any overall cleanup here.
+}
+```
+
+**Objective-C**:
+
+```objc
++ (void)tearDown {
+    // This is the tearDown class method.
+    // XCTest calls it after the last test method completes.
+    // Perform any overall cleanup here.
+ }
+```
 
 ##### Prepare and Tear Down State for Each Test Method
 
@@ -43,9 +83,101 @@ For state that you need in each test method, choose one setup method from [`XCTe
 - If your setup prepares all state synchronously and might throw errors, override [`setUpWithError()`](xctest/setupwitherror().md). This method catches thrown errors and records them as test failures.
 - For tests that prepare state synchronously and don’t need to handle errors, override [`setUp()`](xctest/setup().md).
 
+**Swift**:
+
+```swift
+override func setUp() async throws {
+    // This is the setUp() async instance method.
+    // XCTest calls it before each test method.
+    // Perform any asynchronous setup in this method.
+}
+
+override func setUpWithError() throws {
+    // This is the setUpWithError() instance method.
+    // XCTest calls it before each test method.
+    // Set up any synchronous per-test state that might throw errors here.
+ }
+
+override func setUp() {
+    // This is the setUp() instance method.
+    // XCTest calls it before each test method.
+    // Set up any synchronous per-test state here.
+ }
+```
+
+**Objective-C**:
+
+```objc
+- (void)setUpWithCompletionHandler:(void (^)(NSError * _Nullable))completion {
+    // This is the setUpWithCompletionHandler instance method. 
+    // XCTest calls it before each test method.
+    // Perform any asynchronous setup in this method.
+}
+
+- (BOOL)setUpWithError:(NSError *__autoreleasing  _Nullable *)error {
+    // This is the setUpWithError instance method.
+    // XCTest calls it before each test method.
+    // Set up any synchronous per-test state that might throw errors here.
+    return YES;
+}
+
+- (void)setUp {
+    // This is the setUp instance method.
+    // XCTest calls it before each test method.
+    // Set up any synchronous per-test state here.
+}
+```
+
 XCTest runs the setup methods once before each test method starts: `setUp() async throws` first, then `setUpWithError()`, then `setUp()`.
 
 If you need to clean up temporary files or capture any data that you want to analyze after each test method is complete, override a teardown method from `XCTest`:
+
+**Swift**:
+
+```swift
+override func tearDown() {
+    // This is the tearDown() instance method.
+    // XCTest calls it after each test method.
+    // Perform any synchronous per-test cleanup here.
+ }
+
+override func tearDownWithError() throws {
+    // This is the tearDownWithError() instance method.
+    // XCTest calls it after each test method.
+    // Perform any synchronous per-test cleanup that might throw errors here.
+ }
+
+override func tearDown() async throws {
+    // This is the tearDown() async instance method.
+    // XCTest calls it after each test method.
+    // Perform any asynchronous per-test cleanup here.
+}
+
+```
+
+**Objective-C**:
+
+```objc
+- (void)tearDown {
+    // This is the tearDown instance method.
+    // XCTest calls it after each test method.
+    // Perform any synchronous per-test cleanup here.
+ }
+
+- (BOOL)tearDownWithError:(NSError *__autoreleasing  _Nullable *)error {
+    // This is the tearDownWithError instance method.
+    // XCTest calls it after each test method.
+    // Perform any synchronous per-test cleanup that might throw errors here.
+    return YES;
+}
+
+- (void)tearDownWithCompletionHandler:(void (^)(NSError * _Nullable))completion {
+    // This is the tearDownWithCompletionHandler async instance method.
+    // XCTest calls it after each test method.
+    // Perform any asynchronous per-test cleanup here.
+}
+
+```
 
 XCTest runs the teardown methods once after each test method completes: first `tearDown()`, then `tearDownWithError()`, then `tearDown() async throws`. Avoid preparing state for subsequent tests in the teardown methods. XCTest doesn’t guarantee that it will call teardown methods; if the test crashes before completion, XCTest doesn’t call the teardown blocks or methods.
 
@@ -54,6 +186,54 @@ XCTest runs the teardown methods once after each test method completes: first `t
 ##### Tear Down State After a Specific Test Method
 
 For teardown that you need to complete immediately after a specific test method is complete, add a teardown block to the test method.
+
+**Swift**:
+
+```swift
+func testMethod1() throws {
+    // This is the first test method.
+    // Your testing code goes here.
+    addTeardownBlock {
+        // XCTest executes this when testMethod1() ends.
+    }
+}
+
+func testMethod2() throws {
+    // This is the second test method.
+    // Your testing code goes here.
+    addTeardownBlock {
+        // XCTest executes this last when testMethod2() ends.
+    }
+    addTeardownBlock {
+        // XCTest executes this first when testMethod2() ends.
+    }
+}
+
+```
+
+**Objective-C**:
+
+```objc
+- (void)testMethod1 {
+    // This is the first test method.
+    // Your testing code goes here.
+    [self addTeardownBlock:^{
+        // XCTest executes this when testMethod1() ends.
+    }];
+}
+
+- (void)testMethod2 {
+    // This is the second test method.
+    // Your testing code goes here.
+    [self addTeardownBlock:^{
+        // XCTest executes this last when testMethod2() ends.
+    }];
+    [self addTeardownBlock:^{
+        // XCTest executes this first when testMethod2() ends.
+    }];
+}
+
+```
 
 Your teardown block can call asynchronous Swift code using `await`, and you can throw errors that the test records as test failures.
 

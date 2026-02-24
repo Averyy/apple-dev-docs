@@ -25,7 +25,7 @@ You can use this function to create a “PPP” interface on top of a “modem.�
 ## Parameters
 
 - `interface`: The network interface.
-- `interfaceType`: The type of interface to layer on top of the network interface specified in  .
+- `interfaceType`: The type of interface to layer on top of the network interface specified in `interface`.
 
 ## See Also
 

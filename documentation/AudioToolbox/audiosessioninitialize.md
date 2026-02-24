@@ -25,16 +25,16 @@ Your application must call this function before making any other Audio Session S
 
 ## Parameters
 
-- `inRunLoop`: The run loop  that the interruption listener callback should be run on. Pass   to use the main run loop.
-- `inRunLoopMode`: The mode for the run loop that the interruption listener function will run on. Passing   is equivalent to passing  .
-- `inInterruptionListener`: The interruption listener callback function. The application’s audio session object invokes the callback when the session is interrupted and (if the application is still running) when the interruption ends. Can be  . See  .
+- `inRunLoop`: The run loop  that the interruption listener callback should be run on. Pass `NULL` to use the main run loop.
+- `inRunLoopMode`: The mode for the run loop that the interruption listener function will run on. Passing `NULL` is equivalent to passing `kCFRunLoopDefaultMode`.
+- `inInterruptionListener`: The interruption listener callback function. The application’s audio session object invokes the callback when the session is interrupted and (if the application is still running) when the interruption ends. Can be `NULL`. See [`AudioSessionInterruptionListener`](audiosessioninterruptionlistener.md).
 - `inClientData`: Data that you would like to be passed to your interruption listener callback.
 
 ## See Also
 
 - [func AudioFileReadPackets(AudioFileID, Bool, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioStreamPacketDescription>?, Int64, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer?) -> OSStatus](audiofilereadpackets(_:_:_:_:_:_:_:).md)
   Reads a fixed duration of audio data from an audio file.
-- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:).md)
+- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:_:).md)
   The UIImage of the audio component’s icon.
 - [func AudioComponentGetLastActiveTime(AudioComponent) -> CFAbsoluteTime](audiocomponentgetlastactivetime(_:).md)
   The time at which the application publishing the component was last active.

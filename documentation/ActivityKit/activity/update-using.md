@@ -23,7 +23,7 @@ Use this function to update the Live Activity while your app is in the foregroun
 
 ## Parameters
 
-- `contentState`: The updated dynamic content for the Live Activity. The size of   the encoded content can’t exceed 4KB in size.
+- `contentState`: The updated dynamic content for the Live Activity. The size of the encoded content can’t exceed 4KB in size.
 
 ## See Also
 

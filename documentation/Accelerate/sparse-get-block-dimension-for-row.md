@@ -30,7 +30,7 @@ The dimension of the block of the specified row.
 
 ## Parameters
 
-- `A`: The sparse matrix,  , which must have been created with  ,   ,  , or  . 0 is returned if not met.   holds block dimensions (fixed or variable) set with matrix object creation routine.
+- `A`: The sparse matrix, *A*, which must have been created with [`sparse_matrix_block_create_float(_:_:_:_:)`](sparse_matrix_block_create_float(_:_:_:_:).md),  [`sparse_matrix_block_create_double(_:_:_:_:)`](sparse_matrix_block_create_double(_:_:_:_:).md), [`sparse_matrix_variable_block_create_float(_:_:_:_:)`](sparse_matrix_variable_block_create_float(_:_:_:_:).md), or [`sparse_matrix_variable_block_create_double(_:_:_:_:)`](sparse_matrix_variable_block_create_double(_:_:_:_:).md). 0 is returned if not met. `A` holds block dimensions (fixed or variable) set with matrix object creation routine.
 - `i`: The row to query.
 
 ## See Also

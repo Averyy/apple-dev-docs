@@ -24,7 +24,7 @@ Use this method to create a compound text provider using a format string, with o
 
 ## Parameters
 
-- `formatKey`: Since the format string’s replacement arguments come from other text providers, the only allowable format specifiers are   and variants (for example, reordering specifiers like   are also supported).
+- `formatKey`: The key for the localized format string. This key must appear in the localized string files named `ckcomplication.strings` in the WatchKit extension target. Since the format string’s replacement arguments come from other text providers, the only allowable format specifiers are `%@` and variants (for example, reordering specifiers like `%1@` are also supported).
 - `textProviders`: The text providers that produce the format string’s replacement arguments.
 
 ## See Also

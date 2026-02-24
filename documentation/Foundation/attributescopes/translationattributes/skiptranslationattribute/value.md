@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: typealias
 
-The type of value stored by this attribute.
+A type that stores whether to exclude the associated text range from translation.
 
 **Availability**:
 - iOS 26.4+ (Beta)
@@ -22,7 +22,7 @@ typealias Value = Bool
 
 #### Discussion
 
-A Boolean value indicating whether the associated text range should be excluded from translation. When `true`, the text will not be translated.
+When `true`, the text isn’t translated.
 
 ## See Also
 

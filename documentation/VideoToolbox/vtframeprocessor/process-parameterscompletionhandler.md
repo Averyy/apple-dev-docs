@@ -21,7 +21,7 @@ func process(parameters: any VTFrameProcessorParameters) async throws -> any VTF
 
 ## Parameters
 
-- `parameters`: A   object to specify additional parameters to use during processing. It needs to match the configuration type used during start session.
+- `parameters`: A [`VTFrameProcessorParameters`](vtframeprocessorparameters.md) object to specify additional parameters to use during processing. It needs to match the configuration type used during start session.
 - `completionHandler`: This completion handler is called when the frame processing is completed.  The completion handler will receive the same parameters object that was provided to the original call, as well as an NSError which will contain an error code if processing was not successful.
 
 ## See Also

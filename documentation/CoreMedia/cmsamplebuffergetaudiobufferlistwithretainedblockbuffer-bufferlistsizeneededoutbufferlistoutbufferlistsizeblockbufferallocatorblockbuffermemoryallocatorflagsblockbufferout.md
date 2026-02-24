@@ -34,14 +34,14 @@ The buffers in the `AudioBufferList` will be 16-byte-aligned if `kCMSampleBuffer
 
 ## Parameters
 
-- `sbuf`:   being accessed.
-- `bufferListSizeNeededOut`: Receives the size of the AudioBufferList required to accommodate the data. May be  .
-- `bufferListOut`: Allocated by the caller, sized as specified by  . It’s filled in with pointers into the retained  . May be  .
-- `bufferListSize`: Size of the   allocated by the client. If   isn’t   and   is insufficient,   is returned.
-- `blockBufferStructureAllocator`: Allocator to use when creating the   structure.
-- `blockBufferBlockAllocator`: Allocator to use for memory block held by the  .
+- `sbuf`: `CMSampleBuffer` being accessed.
+- `bufferListSizeNeededOut`: Receives the size of the AudioBufferList required to accommodate the data. May be `NULL`.
+- `bufferListOut`: Allocated by the caller, sized as specified by `bufferListSizeNeededOut`. It’s filled in with pointers into the retained `blockBufferOut`. May be `NULL`.
+- `bufferListSize`: Size of the `bufferListOut` allocated by the client. If `bufferListOut` isn’t `NULL` and `bufferListSize` is insufficient, `kFigSampleBufferError_ArrayTooSmall` is returned.
+- `blockBufferStructureAllocator`: Allocator to use when creating the `CMBlockBuffer` structure.
+- `blockBufferBlockAllocator`: Allocator to use for memory block held by the `CMBlockBuffer`.
 - `flags`: Flags controlling operation.
-- `blockBufferOut`: The retained  .
+- `blockBufferOut`: The retained `CMBlockBuffer`.
 
 ## See Also
 

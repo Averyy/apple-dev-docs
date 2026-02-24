@@ -27,7 +27,7 @@ Don’t call this function directly. The system calls it automatically when inte
 ## Parameters
 
 - `number`: The float value to add to the message.
-- `format`: The format to apply to the float value. You format floating-point numbers as fixed-point, hexadecimal, exponential, or hybrid values. If you don’t specify this parameter, the default format uses a fixed-point value. For more information, see  .
+- `format`: The format to apply to the float value. You format floating-point numbers as fixed-point, hexadecimal, exponential, or hybrid values. If you don’t specify this parameter, the default format uses a fixed-point value. For more information, see [`OSLogFloatFormatting`](oslogfloatformatting.md).
 - `align`: The alignment to apply to the value. Use this parameter to specify the width of the column containing the data, and the alignment of the data within that column. If you don’t specify this parameter, the system doesn’t align the value.
 - `privacy`: The privacy level of the information. If you don’t specify this parameter, the system uses the default rules to determine whether to show the information.
 

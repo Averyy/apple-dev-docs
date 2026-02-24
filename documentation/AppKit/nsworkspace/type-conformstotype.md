@@ -28,7 +28,7 @@ You can safely call this method from any thread of your app.
 
 ## Parameters
 
-- `firstTypeName`: A string containing the UTI that should conform to  .
+- `firstTypeName`: A string containing the UTI that should conform to `secondTypeName`.
 - `secondTypeName`: A string containing a UTI.
 
 ## See Also

@@ -14,9 +14,45 @@ You do the rate conversions in a fragment shader. First, copy the rate map’s t
 
 The following example code asks the rate map for the size of its internal rate data, allocates a Metal buffer just for that data, and copies the data into the buffer.
 
+**Swift**:
+
+```swift
+// Create a buffer for the rate map.
+let rateMapParamSize = rateMap.parameterDataSizeAndAlign
+if let rateMapData = device.makeBuffer(length: rateMapParamSize.size,
+                                       options: MTLResourceOptions.storageModeShared) {
+    // Copy the rate map's data into the buffer.
+    rateMap.copyParameterData(buffer: rateMapData, offset: 0)
+}
+```
+
+**Objective-C**:
+
+```objective-c
+// Create a buffer for the rate map.
+MTLSizeAndAlign rateMapParamSize = _rateMap.parameterBufferSizeAndAlign;
+_rateMapData = [_device newBufferWithLength: rateMapParamSize.size
+                          options:MTLResourceStorageModeShared];
+
+// Copy the rate map's data into the buffer.
+[_rateMap copyParameterDataToBuffer:_rateMapData offset:0];
+```
+
 You need to reserve enough space in the buffer for the data, and specify an offset that’s a multiple of the alignment value returned by [`parameterDataSizeAndAlign`](mtlrasterizationratemap/parameterdatasizeandalign.md). You can copy the data into a Metal buffer that contains other data.
 
 Pass the buffer as an argument to your shader when you encode the command to draw the scaled data:
+
+**Swift**:
+
+```swift
+renderEncoder.setFragmentBuffer(rateMapData, offset: 0, index: 0)
+```
+
+**Objective-C**:
+
+```objective-c
+[renderEncoder setFragmentBuffer:_rateMapData offset:0 atIndex:0];
+```
 
 ##### Convert Between Screen and Physical Coordinates
 

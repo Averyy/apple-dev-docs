@@ -22,7 +22,7 @@ init(rawValue: Int)
 
 ## Parameters
 
-- `rawValue`: The raw value with which to create the   reasons for redaction.
+- `rawValue`: The raw value with which to create the reasons for redaction.
 
 ## See Also
 

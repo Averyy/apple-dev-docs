@@ -25,8 +25,8 @@ This functionality of this delegate method is equivalent to overriding [`UITable
 ## Parameters
 
 - `tableView`: A table view informing the delegate about the new focus.
-- `context`: An instance of the   class, containing metadata for the focus related update.
-- `coordinator`: An instance of the   class, containing metadata for the focus related update.
+- `context`: An instance of the [`UIFocusUpdateContext`](uifocusupdatecontext.md) class, containing metadata for the focus related update.
+- `coordinator`: An instance of the [`UIFocusUpdateContext`](uifocusupdatecontext.md) class, containing metadata for the focus related update.
 
 ## See Also
 

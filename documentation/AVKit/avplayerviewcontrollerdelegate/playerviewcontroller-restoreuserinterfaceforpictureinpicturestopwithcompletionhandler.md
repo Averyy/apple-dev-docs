@@ -29,7 +29,7 @@ Implement this method to reestablish your playback user interface when PiP ends.
 ## Parameters
 
 - `playerViewController`: The player view controller.
-- `completionHandler`: You must call the completion handler with a value of   to allow the system to finish restoring your app’s user interface.
+- `completionHandler`: You must call the completion handler with a value of `true` to allow the system to finish restoring your app’s user interface.
 
 ## See Also
 

@@ -28,6 +28,11 @@ object DeviceLockCommand
 - [object DeviceLockCommand.Command](devicelockcommand/command-data.dictionary.md)
   The command to remotely and immediately lock a device.
 
+## Properties
+
+- `Command` (DeviceLockCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object DeviceLockResponse](devicelockresponse.md)

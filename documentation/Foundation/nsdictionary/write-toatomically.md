@@ -37,7 +37,7 @@ For more information about property lists, see [`Property List Programming Guide
 ## Parameters
 
 - `url`: The URL to which to write the dictionary.
-- `atomically`: If   is  , the dictionary is written to an auxiliary location, and then the auxiliary location is renamed to  . If   is  , the dictionary is written directly to  . The   option guarantees that  , if it exists at all, won’t be corrupted even if the system should crash during writing.   is ignored if   is of a type that cannot be written atomically.
+- `atomically`: A flag that specifies whether the output should be written atomically. If `atomically` is [`true`](https://developer.apple.com/documentation/Swift/true), the dictionary is written to an auxiliary location, and then the auxiliary location is renamed to `url`. If `atomically` is [`false`](https://developer.apple.com/documentation/Swift/false), the dictionary is written directly to `url`. The [`true`](https://developer.apple.com/documentation/Swift/true) option guarantees that `url`, if it exists at all, won’t be corrupted even if the system should crash during writing. `atomically` is ignored if `url` is of a type that cannot be written atomically.
 
 ## See Also
 

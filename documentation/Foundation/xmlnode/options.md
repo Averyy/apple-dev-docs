@@ -51,13 +51,13 @@ The options with “Preserve” in their names are applicable only when external
 - [static var nodePreserveCDATA: XMLNode.Options](xmlnode/options/nodepreservecdata.md)
   Requests that NSXMLNode preserve CDATA blocks where defined in the input XML.
 - [static var nodePreserveCharacterReferences: XMLNode.Options](xmlnode/options/nodepreservecharacterreferences.md)
-  Specifies that character references (`&#``;`) should not be resolved for XML output of this node.
+  Specifies that character references (`&#`*nnn*`;`) should not be resolved for XML output of this node.
 - [static var nodePreserveDTD: XMLNode.Options](xmlnode/options/nodepreservedtd.md)
   Specifies that declarations in a DTD should be preserved until it the DTD is modified. For example, parameter entities are by default expanded; with this option, they are written out as they originally occur in the DTD.
 - [static var nodePreserveEmptyElements: XMLNode.Options](xmlnode/options/nodepreserveemptyelements.md)
   Specifies that empty elements in the input XML be preserved in their contracted or expanded form.
 - [static var nodePreserveEntities: XMLNode.Options](xmlnode/options/nodepreserveentities.md)
-  Specifies that entities (`&``;`) should not be resolved for XML output of this node.
+  Specifies that entities (`&`*xyz*`;`) should not be resolved for XML output of this node.
 - [static var nodePreserveNamespaceOrder: XMLNode.Options](xmlnode/options/nodepreservenamespaceorder.md)
   Requests NSXML to preserve the order of namespace URI definitions as in the source XML.
 - [static var nodePreservePrefixes: XMLNode.Options](xmlnode/options/nodepreserveprefixes.md)

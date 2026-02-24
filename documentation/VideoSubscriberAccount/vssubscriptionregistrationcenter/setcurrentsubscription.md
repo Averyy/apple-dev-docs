@@ -30,7 +30,7 @@ The system throws an exception if you try to set the current subscription to an 
 
 ## Parameters
 
-- `currentSubscription`: A   object that contains the subscription information to set.
+- `currentSubscription`: A [`VSSubscription`](vssubscription.md) object that contains the subscription information to set.
 
 
 ---

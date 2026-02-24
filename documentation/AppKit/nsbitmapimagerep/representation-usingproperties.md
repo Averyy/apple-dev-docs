@@ -20,8 +20,8 @@ A data object containing the receiver’s image data in the specified format. Yo
 
 ## Parameters
 
-- `storageType`: A constant that specifies a file type for bitmap images. It can be  ,  ,  ,  , or  .
-- `properties`: A dictionary that contains key-value pairs specifying image properties. These string constants used as keys and the valid values are described in  .
+- `storageType`: A constant that specifies a file type for bitmap images. It can be [`NSBMPFileType`](nsbmpfiletype.md), [`NSGIFFileType`](nsgiffiletype.md), [`NSJPEGFileType`](nsjpegfiletype.md), [`NSPNGFileType`](nspngfiletype.md), or [`NSTIFFFileType`](nstifffiletype.md).
+- `properties`: A dictionary that contains key-value pairs specifying image properties. These string constants used as keys and the valid values are described in [`NSBitmapImageRep.PropertyKey`](nsbitmapimagerep/propertykey.md).
 
 ## See Also
 

@@ -22,7 +22,7 @@ init?(script: NLScript)
 
 ## Parameters
 
-- `script`: The script the framework uses to find the most recent embedding suitable for the value you specify.
+- `script`: The writing system the framework uses to find the most suitable system embedding for the value you specify; for example, Chinese or Latin.
 
 ## See Also
 

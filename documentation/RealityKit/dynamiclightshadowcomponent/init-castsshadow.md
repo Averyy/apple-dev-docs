@@ -25,7 +25,7 @@ By default, the component makes an entity to stop casting shadows from dynamic l
 
 ## Parameters
 
-- `castsShadow`: A Boolean value that indicates whether an entity   with the component casts a shadow.
+- `castsShadow`: A Boolean value that indicates whether an entity with the component casts a shadow.
 
 
 ---

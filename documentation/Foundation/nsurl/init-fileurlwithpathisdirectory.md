@@ -34,8 +34,8 @@ Invoking this method is equivalent to invoking [`init(scheme:host:path:)`](nsurl
 
 ## Parameters
 
-- `path`: The path that the NSURL object will represent.   should be a valid system path, and must not be an empty path. If   begins with a tilde, it must first be expanded with  . If   is a relative path, it is treated as being relative to the current working directory.
-- `isDir`: A Boolean value that specifies whether   is treated as a directory path when resolving against relative path components. Pass   if the   indicates a directory,   otherwise
+- `path`: The path that the NSURL object will represent. `path` should be a valid system path, and must not be an empty path. If `path` begins with a tilde, it must first be expanded with [`expandingTildeInPath`](nsstring/expandingtildeinpath.md). If `path` is a relative path, it is treated as being relative to the current working directory.
+- `isDir`: A Boolean value that specifies whether `path` is treated as a directory path when resolving against relative path components. Pass [`true`](https://developer.apple.com/documentation/Swift/true) if the `path` indicates a directory, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise
 
 ## See Also
 

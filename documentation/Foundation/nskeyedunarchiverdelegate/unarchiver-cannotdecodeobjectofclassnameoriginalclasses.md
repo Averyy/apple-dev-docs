@@ -31,7 +31,7 @@ The delegate may, for example, load some code to introduce the class to the runt
 ## Parameters
 
 - `unarchiver`: An unarchiver for which the receiver is the delegate.
-- `name`: The name of the class of an object   is trying to decode.
+- `name`: The name of the class of an object `unarchiver` is trying to decode.
 - `classNames`: An array describing the class hierarchy of the encoded object, where the first element is the class name string of the encoded object, the second element is the class name of its immediate superclass, and so on.
 
 ## See Also

@@ -20,7 +20,7 @@ Your [`SFAuthorizationPluginView`](sfauthorizationpluginview.md) instance can us
 
 ## Parameters
 
-- `inUserInformation`: Note:   may be  .
+- `inUserInformation`: A dictionary that contains the following information: - [`SFAuthorizationPluginViewUserNameKey`](sfauthorizationpluginviewusernamekey.md) An [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object containing the selected user’s name - [`SFAuthorizationPluginViewUserShortNameKey`](sfauthorizationpluginviewusershortnamekey.md) An [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object containing the selected user’s short name Note: `inUserInformation` may be `nil`.
 
 ## See Also
 

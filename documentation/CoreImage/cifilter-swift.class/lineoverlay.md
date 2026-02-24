@@ -29,6 +29,13 @@ This method applies the line overlay filter to an image. The effect creats a ske
 
 The line overlay filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`nrNoiseLevel`**: A `float` representing the desired level of noise as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`nrSharpness`**: A `float` representing the desired level of sharpness as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`edgeIntensity`**: A `float` representing the Sobel gradient information for edge tracing as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`threshold`**: A `float` representing the threshold of edge visibilty as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`contrast`**: A `float` representing the desired contrast as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that results in a monochrome image with lines outlining the edges of objects:
 
 ```swift

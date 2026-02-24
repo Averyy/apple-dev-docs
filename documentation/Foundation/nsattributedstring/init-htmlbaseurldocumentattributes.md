@@ -21,8 +21,8 @@ Returns an initialized object, or `nil` if the data can’t be decoded.
 ## Parameters
 
 - `data`: A data object with text in HTML format. The method uses this data to create the attributed string.
-- `base`: An   that represents the base URL for all links within the HTML.
-- `dict`: An in-out dictionary containing document-level attributes. On output, this method updates the dictionary to contain any document-specific keys found in the data. Specify   if you don’t want the document attributes.
+- `base`: An [`NSURL`](nsurl.md) that represents the base URL for all links within the HTML.
+- `dict`: An in-out dictionary containing document-level attributes. On output, this method updates the dictionary to contain any document-specific keys found in the data. Specify `nil` if you don’t want the document attributes.
 
 ## See Also
 

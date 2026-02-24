@@ -37,10 +37,10 @@ Accessing keychain items or performing operations on keys that are protected by 
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to allocate memory for the new allocator using the default allocator.
-- `protection`: Protection class to be used for the item. Use one of the values that go with the   attribute key, namely those listed in  .
-- `flags`: Flags specifying the allowed operations for the item. See  .
-- `error`: On return, if an error occurred, the reference pointed at by this parameter refers to an error object that indicates the reason for failure. The caller is responsible for releasing the error object. Pass   for this parameter to ignore the error.
+- `allocator`: The allocator to use to allocate memory for the new [`SecAccessControl`](secaccesscontrol.md) object. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to allocate memory for the new allocator using the default allocator.
+- `protection`: Protection class to be used for the item. Use one of the values that go with the [`kSecAttrAccessible`](ksecattraccessible.md) attribute key, namely those listed in [`Accessibility Values`](item-attribute-keys-and-values#Accessibility-Values.md).
+- `flags`: Flags specifying the allowed operations for the item. See [`SecAccessControlCreateFlags`](secaccesscontrolcreateflags.md).
+- `error`: On return, if an error occurred, the reference pointed at by this parameter refers to an error object that indicates the reason for failure. The caller is responsible for releasing the error object. Pass `NULL` for this parameter to ignore the error.
 
 
 ---

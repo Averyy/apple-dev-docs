@@ -18,7 +18,7 @@ final func sendMessage(_ content: RCSMessage.GeolocationPush, to destination: RC
 
 ## Parameters
 
-- `content`: The content of the message to send, as an instance of  .
+- `content`: The content of the message to send, as an instance of [`RCSMessage.GeolocationPush`](rcsmessage/geolocationpush.md).
 - `destination`: The destination handle to send the message to.
 - `cellularServiceID`: The service identifier to use for the message.
 - `messageID`: The message identifier to use for the message.

@@ -24,7 +24,7 @@ You must call this method at least once before calling `saveToPreferencesWithCom
 
 ## Parameters
 
-- `completionHandler`: A block that takes an   object. This block will be executed on the caller’s main thread after the load operation is complete. If the configuration does not exist in the Network Extension preferences or is loaded successfully, the error parameter will be nil. If an error occurred while loading the configuration, the error parameter will be set to an   object containing details about the error. See   for a list of possible errors.
+- `completionHandler`: A block that takes an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object. This block will be executed on the caller’s main thread after the load operation is complete. If the configuration does not exist in the Network Extension preferences or is loaded successfully, the error parameter will be nil. If an error occurred while loading the configuration, the error parameter will be set to an `NSError` object containing details about the error. See `NEFilterManagerError` for a list of possible errors.
 
 ## See Also
 

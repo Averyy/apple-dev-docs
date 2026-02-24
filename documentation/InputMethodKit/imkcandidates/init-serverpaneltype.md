@@ -24,7 +24,7 @@ When an input method allocates an `IMKCandidates` object it should initialize th
 
 ## Parameters
 
-- `server`: The   object that manages the candidate and the panel type.
+- `server`: The `IMKServer` object that manages the candidate and the panel type.
 - `panelType`: A panel type for the candidate window.
 
 

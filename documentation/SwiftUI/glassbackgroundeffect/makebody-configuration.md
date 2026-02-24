@@ -21,7 +21,7 @@ A custom effect.
 
 ## Parameters
 
-- `configuration`: An effect configuration you use to build a   custom effect.
+- `configuration`: An effect configuration you use to build a custom effect.
 
 
 ---

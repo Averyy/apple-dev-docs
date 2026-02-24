@@ -26,8 +26,8 @@ If the factorization is A=QR and the system is underdetermined, the solution of 
 
 ## Parameters
 
-- `Factored`: A factorization of  .
-- `xb`: On entry, the right-hand side  . On return, the solution vector   . If A has dimension  , then   must have length  , where   .
+- `Factored`: A factorization of `A`.
+- `xb`: On entry, the right-hand side `b`. On return, the solution vector `x`. If A has dimension `m x n`, then `xb` must have length `k`, where `k=max(m,n)`.
 
 ## See Also
 

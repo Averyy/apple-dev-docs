@@ -34,9 +34,9 @@ This function implements PNG decompression filtering for filter method `0` of th
 - `startScanline`: The starting scanline.
 - `scanlineCount`: The number of scanlines in the buffer.
 - `bitsPerPixel`: The bits per pixel.
-- `filterMethodNumber`: The filter method number. You must pass  , because this is the only filtering method offered by this function.
-- `filterType`: The filtering algorithm to apply to the image data. For filter method  , you can pass any of the constants described in  .
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass  .
+- `filterMethodNumber`: The filter method number. You must pass `0`, because this is the only filtering method offered by this function.
+- `filterType`: The filtering algorithm to apply to the image data. For filter method `0`, you can pass any of the constants described in [`PNG Filter Types`](1515413-png-filter-types.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md).
 
 
 ---

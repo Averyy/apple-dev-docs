@@ -26,9 +26,9 @@ A [`JSObjectRef`](jsobjectref.md) that’s a promise, or `NULL` if an exception 
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `resolve`: A pointer to a   to store the resolve function in for the new promise. Pass   if you don’t want to store the resolve callback.
-- `reject`: A pointer to a   to store the reject function in for the new promise. Pass   if you don’t want to store the reject callback.
-- `exception`: A pointer to a   to store an exception in, if any. Pass   to discard any exception.
+- `resolve`: A pointer to a [`JSObjectRef`](jsobjectref.md) to store the resolve function in for the new promise. Pass `NULL` if you don’t want to store the resolve callback.
+- `reject`: A pointer to a [`JSObjectRef`](jsobjectref.md) to store the reject function in for the new promise. Pass `NULL` if you don’t want to store the reject callback.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 

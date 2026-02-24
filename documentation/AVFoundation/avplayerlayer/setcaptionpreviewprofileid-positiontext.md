@@ -27,9 +27,9 @@ This method enables a preview mode that displays sample caption text using the v
 
 ## Parameters
 
-- `profileID`: The identifier of the accessibility profile to use for caption appearance.   Profile IDs can be obtained from  .   This determines font, color, background, and other visual characteristics.
+- `profileID`: The identifier of the accessibility profile to use for caption appearance. Profile IDs can be obtained from `MACaptionAppearanceCopyProfileIDs()`. This determines font, color, background, and other visual characteristics.
 - `position`: A CGPoint that defines the position (in points) of the caption preview relative to the default positioning of content captions (centered near the bottom of the video). Position values can be negative. (0, 0) represents the default positioning.
-- `text`: Optional custom text to display in the preview. If  , a standard localized preview message will be shown.
+- `text`: Optional custom text to display in the preview. If `nil`, a standard localized preview message will be shown.
 
 
 ---

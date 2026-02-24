@@ -27,9 +27,9 @@ The same table may be passed in for the red, green, and blue channels. The table
 
 - `display`: The identifier of the display to be accessed.
 - `tableSize`: The number of entries in each table.
-- `redTable`: An array of size   containing the values of the red channel in the display’s gamma table. The values should be in the range   to  .
-- `greenTable`: An array of size   containing the values of the green channel in the display’s gamma table. The values should be in the range   to  .
-- `blueTable`: An array of size   containing the values of the blue channel in the display’s gamma table. The values should be in the range   to  .
+- `redTable`: An array of size `tableSize` containing the values of the red channel in the display’s gamma table. The values should be in the range `0.0` to `1.0`.
+- `greenTable`: An array of size `tableSize` containing the values of the green channel in the display’s gamma table. The values should be in the range `0.0` to `1.0`.
+- `blueTable`: An array of size `tableSize` containing the values of the blue channel in the display’s gamma table. The values should be in the range `0.0` to `1.0`.
 
 ## See Also
 

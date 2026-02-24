@@ -20,12 +20,12 @@ func setAngle(_ angle: CGFloat, magnitude: CGFloat)
 
 #### Discussion
 
-Whether you express a push behavior’s force direction in terms of radian angle or with ,  components, the alternate, equivalent values update automatically.
+Whether you express a push behavior’s force direction in terms of radian angle or with *x*, *y* components, the alternate, equivalent values update automatically.
 
 ## Parameters
 
-- `angle`: The default angle is   radians, using standard UIKit geometry.
-- `magnitude`: Setting the   parameter to a negative value reverses the direction of the force.
+- `angle`: The angle, in radians, of the force vector for the push behavior. The default angle is `0` radians, using standard UIKit geometry.
+- `magnitude`: The magnitude of the force vector for the push behavior. The default magnitude is `nil`, equivalent to no force. A force vector with a magnitude of `1.0`, applied to a 100 point x 100 point view whose density value is `1.0`, results in view acceleration of 100 points / second². Setting the [`magnitude`](uipushbehavior/magnitude.md) parameter to a negative value reverses the direction of the force.
 
 ## See Also
 
@@ -40,7 +40,7 @@ Whether you express a push behavior’s force direction in terms of radian angle
 - [func targetOffsetFromCenter(for: any UIDynamicItem) -> UIOffset](uipushbehavior/targetoffsetfromcenter(for:).md)
   Returns the offset, from the center of a dynamic item, at which the push behavior’s force vector is applied.
 - [var pushDirection: CGVector](uipushbehavior/pushdirection.md)
-  The direction of the force vector for the behavior, expressed as  and  components and using standard UIKit geometry.
+  The direction of the force vector for the behavior, expressed as *x* and *y* components and using standard UIKit geometry.
 
 
 ---

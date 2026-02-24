@@ -33,9 +33,9 @@ This method performs the same task as the [`fileManager(_:shouldProceedAfterErro
 ## Parameters
 
 - `fileManager`: The file manager object that attempted to move the item.
-- `error`: The error that occurred while trying to move the item in  .
+- `error`: The error that occurred while trying to move the item in `srcURL`.
 - `srcURL`: The URL of the file or directory that the file manager tried to move.
-- `dstURL`: The URL of the intended destination for the item in  .
+- `dstURL`: The URL of the intended destination for the item in `srcURL`.
 
 ## See Also
 

@@ -23,7 +23,7 @@ A specifier test initialized to evaluate (`obj2`) against an object specified by
 
 - `obj1`: An object specifier.
 - `compOp`: The comparison operation.
-- `obj2`: The object against which to evaluate the object specified by  .
+- `obj2`: The object against which to evaluate the object specified by `obj1`.
 
 ## See Also
 

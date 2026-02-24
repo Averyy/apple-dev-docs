@@ -23,7 +23,7 @@ Use this callback to hide or show interface elements based on which experiences 
 ## Parameters
 
 - `controller`: The experience controller.
-- `availableExperiences`: The current value of  .
+- `availableExperiences`: The current value of [`availableExperiences`](avexperiencecontroller/availableexperiences.md).
 
 ## See Also
 

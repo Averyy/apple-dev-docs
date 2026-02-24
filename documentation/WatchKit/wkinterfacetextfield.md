@@ -45,11 +45,35 @@ Xcode also lets you configure the text field directly in the storyboard. The fol
 
 To dynamically modify a text field at runtime, define an outlet in your interface controller and connect it to the corresponding text field in your storyboard. For example, define a property with the following syntax in your interface controller class:
 
+**Objective-C**:
+
+```objc
+@property (weak, nonatomic) IBOutlet WKInterfaceTextField* myTextField;
+```
+
+**Swift**:
+
+```swift
+@IBOutlet weak var myTextField: WKInterfaceTextField!
+```
+
 During your interface controller’s initialization, WatchKit creates a new instance of the [`WKInterfaceTextField`](wkinterfacetextfield.md) class and assigns it to your outlet. At that point, you can use the object in your outlet to manage the text field.
 
 ##### Receive Text Input
 
 To receive the text entered by the user, connect the text field in the storyboard to an action method defined in your interface controller.
+
+**Swift**:
+
+```swift
+@IBAction func textFieldAction(_ value: NSString?)
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction)textFieldAction:(NSString*) value
+```
 
 WatchKit calls the action method after the user dismisses the text input controller. The `value` parameter contains the string entered by the user. If the user cancels the text input controller, the value is `nil`.
 

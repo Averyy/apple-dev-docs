@@ -25,7 +25,7 @@ An energy formatter unit value. For a list of possible energy formatter unit val
 
 ## Parameters
 
-- `unit`: A valid HealthKit unit object. If the unit is not an energy-type unit, this method throws an exception ( ).
+- `unit`: A valid HealthKit unit object. If the unit is not an energy-type unit, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
 
 ## See Also
 

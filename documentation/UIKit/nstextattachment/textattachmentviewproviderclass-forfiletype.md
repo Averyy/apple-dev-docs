@@ -24,7 +24,7 @@ The text attachment view provider class, or `nil` if the there is no class for t
 
 ## Parameters
 
-- `fileType`: A   that represents the file type.
+- `fileType`: A [`String`](https://developer.apple.com/documentation/Swift/String) that represents the file type.
 
 ## See Also
 

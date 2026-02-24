@@ -92,6 +92,16 @@ Specify `com.apple.ldap.account` as the payload type.
 - [object LDAP.LDAPSearchSettingsItem](ldap/ldapsearchsettingsitem.md)
   An array of search settings dictionaries.
 
+## Properties
+
+- `LDAPAccountDescription` (string): The description of the account.
+- `LDAPAccountHostName` (string) *(required)*: The server’s address.
+- `LDAPAccountPassword` (string): The user’s password. Only use this in encrypted profiles.
+- `LDAPAccountUserName` (string): The user’s user name.
+- `LDAPAccountUseSSL` (boolean): If `true`, the system enables SSL.
+- `LDAPSearchSettings` ([LDAP.LDAPSearchSettingsItem]): An array of search settings dictionaries.
+- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+
 ## See Also
 
 - [object Accounts](accounts.md)

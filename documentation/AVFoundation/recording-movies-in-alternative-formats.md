@@ -14,6 +14,34 @@ If your app shares the captured video using a system share sheet, the system aut
 
 You can change the default format at capture time by specifying it in the output settings for capturing movie files. Each capture device has a dictionary of settings that you adjust to control properties of the output movie file. For example, to capture video in H.264/MPEG-4 AVC, set the output settings key [`AVVideoCodecKey`](avvideocodeckey.md) to [`h264`](avvideocodectype/h264.md), as the example below shows:
 
+**Swift**:
+
+```swift
+import AVFoundation
+
+let movieFileOutput = // Your AVCaptureMovieFileOutput. //
+
+if movieFileOutput.availableVideoCodecTypes.contains(.h264),
+    let connection = movieFileOutput.connection(with: .video) {
+    // Use the H.264 codec to encode the video.
+    movieFileOutput.setOutputSettings([AVVideoCodecKey: AVVideoCodecType.h264], for: connection)
+}
+```
+
+**Objective-C**:
+
+```objc
+#import <AVFoundation/AVFoundation.h>
+
+AVCaptureMovieFileOutput *movieFileOutput = // Your AVCaptureMovieFileOutput. //;
+    
+if ([movieFileOutput.availableVideoCodecTypes containsObject:AVVideoCodecTypeH264]) {
+    AVCaptureConnection* connection = [movieFileOutput connectionWithMediaType:AVMediaTypeVideo];
+    // Use the H.264 codec to encode the video.
+    [movieFileOutput setOutputSettings:@{AVVideoCodecKey: AVVideoCodecTypeH264} forConnection:connection];
+}
+```
+
 For a list of supported capture codecs, see [`AVVideoCodecType`](avvideocodectype.md).
 
 ##### Convert Previously Captured Movie Files

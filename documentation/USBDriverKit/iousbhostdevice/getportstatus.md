@@ -20,7 +20,7 @@ virtual kern_return_t GetPortStatus(uint32_t *portStatus);
 
 ## Parameters
 
-- `portStatus`: A pointer to a variable. On output, the variable contains the port status. For a list of possible values, see  .
+- `portStatus`: A pointer to a variable. On output, the variable contains the port status. For a list of possible values, see [`tIOUSBHostPortStatus`](tiousbhostportstatus.md).
 
 ## See Also
 

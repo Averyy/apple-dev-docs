@@ -243,8 +243,6 @@ struct AVError
   The user information key to retrieve a Boolean value that indicates whether recording finished successfully.
 - [let AVErrorTimeKey: String](averrortimekey.md)
   The user information key to retrieve the error time.
-### Type Properties
-- [static var contentKeyRequestFulfilledWithAdvisoryKey: AVError.Code](averror-swift.struct/contentkeyrequestfulfilledwithadvisorykey.md)
 
 ## Relationships
 

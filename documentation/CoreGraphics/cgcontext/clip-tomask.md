@@ -28,8 +28,8 @@ If the `mask` parameter is an image, then `mask` acts like an alpha mask and is 
 
 ## Parameters
 
-- `rect`: The rectangle to map the   parameter to.
-- `mask`: An image or an image mask. If   is an image, then it must be in the DeviceGray color space, may not have an alpha component, and may not be masked by an image mask or masking color.
+- `rect`: The rectangle to map the `mask` parameter to.
+- `mask`: An image or an image mask. If `mask` is an image, then it must be in the DeviceGray color space, may not have an alpha component, and may not be masked by an image mask or masking color.
 
 ## See Also
 

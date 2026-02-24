@@ -27,7 +27,7 @@ A view that uses the font design you specify.
 
 ## Parameters
 
-- `design`: One of the available font designs.   Providing   removes the effect of any font design   modifier applied higher in the view hierarchy.
+- `design`: One of the available font designs. Providing `nil` removes the effect of any font design modifier applied higher in the view hierarchy.
 
 ## See Also
 

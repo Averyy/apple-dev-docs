@@ -32,7 +32,7 @@ The value passed as `returnCode` is either `NSCancelButton` or `NSOKButton`. The
 - `docWindow`: The window on which to display the sheet.
 - `delegate`: A modal delegate object assigned to handle the closing of the Print panel sheet.
 - `didEndSelector`: The selector to call on the modal delegate object when the sheet is dismissed. The signature of this method is listed in the Discussion section.
-- `contextInfo`: A pointer to context data the   method needs to process the sheet. This data is user-defined and may be  .
+- `contextInfo`: A pointer to context data the `didEndSelector` method needs to process the sheet. This data is user-defined and may be `NULL`.
 
 ## See Also
 

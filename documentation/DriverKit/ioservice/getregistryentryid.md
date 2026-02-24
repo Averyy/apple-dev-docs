@@ -23,7 +23,7 @@ virtual kern_return_t GetRegistryEntryID(uint64_t *registryEntryID);
 
 ## Parameters
 
-- `registryEntryID`: A pointer to an integer that, on return, contains the registry ID for the service. It is a programmer error to specify   or an invalid pointer for this parameter.
+- `registryEntryID`: A pointer to an integer that, on return, contains the registry ID for the service. It is a programmer error to specify `NULL` or an invalid pointer for this parameter.
 
 ## See Also
 

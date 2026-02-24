@@ -14,7 +14,7 @@ Use Accelerate’s discrete cosine transform to remove noise from a signal.
 
 Accelerate’s vDSP module provides functions to perform discrete and fast Fourier transforms (FFTs) on 1D vectors and 2D matrices containing complex numbers. If you want to perform a similar transform on a vector of real numbers, vDSP includes discrete cosine transforms (DCTs).
 
-FFTs and DCTs decompose a signal into its frequency components (known as the  representation of the signal), and the inverse transform rebuilds a signal into its  representation from the frequency components.
+FFTs and DCTs decompose a signal into its frequency components (known as the *frequency-domain* representation of the signal), and the inverse transform rebuilds a signal into its *time-domain* representation from the frequency components.
 
 By zeroing low-magnitude data, such as noise, from the frequency-domain data, you can reconstruct a signal, leaving only its dominant frequencies. The meaningful signals that you’re trying to isolate tend to have their energy packed at a few frequencies. Noise, however, has its energy more uniformly spread across the frequency spectrum (that’s what makes it noise). If you zero out low-magnitude frequency components, you can eliminate much of the noise from the spectrum.
 

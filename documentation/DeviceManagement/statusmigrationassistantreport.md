@@ -33,6 +33,10 @@ object StatusMigrationAssistantReport
 - [object StatusMigrationAssistantReportMigrationAssistantReportObject](statusmigrationassistantreportmigrationassistantreportobject.md)
   The Migration Assistant migration status.
 
+## Properties
+
+- `migration-assistant.report` (StatusMigrationAssistantReportMigrationAssistantReportObject) *(required)*: The Migration Assistant migration status.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

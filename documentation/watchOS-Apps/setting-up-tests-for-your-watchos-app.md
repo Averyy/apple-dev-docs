@@ -20,9 +20,9 @@ Specify a name for the test target, and then choose the WatchKit Extension optio
 
 ![An Xcode screenshot showing the available options for a new target, which include entering a product name and organization identifier, and choosing a team, programming language, project, and target to test. The WatchKit Extension option displays as the target to test.](https://docs-assets.developer.apple.com/published/f73942de59ed5f1e815d28fc44b4e3e0/setting-up-tests-for-your-watchos-app-2%402x.png)
 
-Xcode adds the target and template files to your project, and creates a new scheme to run your tests. Select the new scheme, named [] `WatchKit ExtensionTests`, from the list of schemes in Xcode’s toolbar, and choose Edit Scheme.
+Xcode adds the target and template files to your project, and creates a new scheme to run your tests. Select the new scheme, named [*Project Name*] `WatchKit ExtensionTests`, from the list of schemes in Xcode’s toolbar, and choose Edit Scheme.
 
-Confirm the selected executable is [] `WatchKit App.app`. If not, choose it and click Close.
+Confirm the selected executable is [*Project Name*] `WatchKit App.app`. If not, choose it and click Close.
 
 ![A screenshot of an Xcode scheme editor showing the Info pane for the selected Run action. Options available for selection are: Build Configuration, Executable, Watch Interface, and Launch. The WatchKit App option displays as the executable option.](https://docs-assets.developer.apple.com/published/ccdf40dc85f6b03bf91c204c1c730ad0/setting-up-tests-for-your-watchos-app-3%402x.png)
 

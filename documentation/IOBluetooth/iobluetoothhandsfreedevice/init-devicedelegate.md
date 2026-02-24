@@ -17,7 +17,7 @@ init!(device: IOBluetoothDevice!, delegate: Any!)
 ## Parameters
 
 - `device`: A Bluetooth device.
-- `delegate`: A delegate that conforms to the   protocol.
+- `delegate`: A delegate that conforms to the [`IOBluetoothHandsFreeDeviceDelegate`](iobluetoothhandsfreedevicedelegate.md) protocol.
 
 
 ---

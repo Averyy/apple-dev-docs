@@ -26,7 +26,7 @@ A result code. See `Result Codes`.
 
 ## Parameters
 
-- `queue`:   that will use the validation callback.
+- `queue`: `CMBufferQueue` that will use the validation callback.
 - `callback`: Callback that will validate each buffer enqueued.
 - `refcon`: Context refcon for validation callback.
 

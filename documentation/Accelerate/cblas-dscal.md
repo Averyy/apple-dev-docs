@@ -26,10 +26,10 @@ func cblas_dscal(_ N: __LAPACK_int, _ ALPHA: Double, _ X: UnsafeMutablePointer<D
 
 ## Parameters
 
-- `N`: The number of elements in vector  .
+- `N`: The number of elements in vector `x`.
 - `ALPHA`: The constant scaling factor to multiply by.
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
+- `X`: Vector `x`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
 
 ## See Also
 

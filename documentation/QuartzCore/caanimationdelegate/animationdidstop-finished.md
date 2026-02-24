@@ -25,7 +25,7 @@ The animation may have ended because it has completed its active duration or bec
 
 ## Parameters
 
-- `anim`: The   object that has ended.
+- `anim`: The [`CAAnimation`](caanimation.md) object that has ended.
 - `flag`: A flag indicating whether the animation has completed by reaching the end of its duration.
 
 ## See Also

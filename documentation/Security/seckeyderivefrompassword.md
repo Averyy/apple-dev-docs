@@ -38,7 +38,7 @@ If zero, this defaults to [`kSecAttrPRFHmacAlgSHA1`](ksecattrprfhmacalgsha1.md).
 
 - `password`: The password from which the key should be derived.
 - `parameters`: A set of parameters for deriving the password.
-- `error`: A pointer to a   variable where an error object is stored upon failure. If not  , the caller is responsible for checking this variable and releasing the resulting object if it exists.
+- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) variable where an error object is stored upon failure. If not `NULL`, the caller is responsible for checking this variable and releasing the resulting object if it exists.
 
 
 ---

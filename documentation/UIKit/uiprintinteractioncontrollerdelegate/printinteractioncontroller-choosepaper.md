@@ -27,8 +27,8 @@ This method is intended for apps (typically document-based apps) that have a not
 
 ## Parameters
 
-- `printInteractionController`: The shared instance of   that is managing the print job.
-- `paperList`: An array of   objects that represent combinations of paper sizes and imageable areas supported by the selected printer.
+- `printInteractionController`: The shared instance of [`UIPrintInteractionController`](uiprintinteractioncontroller.md) that is managing the print job.
+- `paperList`: An array of [`UIPrintPaper`](uiprintpaper.md) objects that represent combinations of paper sizes and imageable areas supported by the selected printer.
 
 ## See Also
 

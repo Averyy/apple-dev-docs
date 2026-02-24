@@ -23,7 +23,7 @@ init(value: Value, role: TabRole?, @ViewBuilder content: () -> Content, @ViewBui
 
 ## Parameters
 
-- `value`: The   value which selects this tab.
+- `value`: The `selection` value which selects this tab.
 - `role`: The role defining the semantic purpose of the tab.
 - `content`: The view content of the tab.
 - `label`: The label for the tab’s tab item.

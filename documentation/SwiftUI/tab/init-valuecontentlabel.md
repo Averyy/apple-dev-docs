@@ -23,7 +23,7 @@ init(value: Value, @ViewBuilder content: () -> Content, @ViewBuilder label: () -
 
 ## Parameters
 
-- `value`: The   value which selects this tab.
+- `value`: The `selection` value which selects this tab.
 - `content`: The view content of the tab.
 - `label`: The label for the tab’s tab item.
 

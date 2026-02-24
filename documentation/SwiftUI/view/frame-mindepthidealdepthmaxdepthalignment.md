@@ -36,7 +36,7 @@ If no minimum or maximum constraint is specified in a given dimension, the frame
 - `minDepth`: The minimum depth of the resulting frame.
 - `idealDepth`: The ideal depth of the resulting frame.
 - `maxDepth`: The maximum depth of the resulting frame.
-- `alignment`: The alignment of this view inside the resulting frame.   Note that most alignment values have no apparent effect when the   size of the frame happens to match that of this view.
+- `alignment`: The alignment of this view inside the resulting frame. Note that most alignment values have no apparent effect when the size of the frame happens to match that of this view.
 
 ## See Also
 

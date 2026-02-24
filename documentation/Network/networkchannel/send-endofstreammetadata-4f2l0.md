@@ -23,7 +23,7 @@ func send<Value>(_ value: Value, endOfStream: Bool = false, @ProtocolMetadataBui
 ## Parameters
 
 - `value`: The integer to send on the connection
-- `endOfStream`: Pass true to close the write side of the connection after enqueuing the data to send,   meaning that no more data can be sent
+- `endOfStream`: Pass true to close the write side of the connection after enqueuing the data to send, meaning that no more data can be sent
 - `builder`: An optional builder for specifying metadata
 
 

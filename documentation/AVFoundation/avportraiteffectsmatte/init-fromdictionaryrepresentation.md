@@ -30,7 +30,7 @@ When using the [`Image I/O`](https://developer.apple.com/documentation/ImageIO) 
 
 ## Parameters
 
-- `imageSourceAuxDataInfoDictionary`: A dictionary of information related to primitive portrait effects matte; obtained from  .
+- `imageSourceAuxDataInfoDictionary`: A dictionary of information related to primitive portrait effects matte; obtained from [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/ImageIO/CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)).
 
 ## See Also
 

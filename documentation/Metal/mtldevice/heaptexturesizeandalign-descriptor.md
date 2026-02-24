@@ -30,7 +30,7 @@ Use this method to help estimate an appropriate size for a new heap before you c
 
 ## Parameters
 
-- `desc`: An   instance.
+- `desc`: An [`MTLTextureDescriptor`](mtltexturedescriptor.md) instance.
 
 ## See Also
 

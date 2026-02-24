@@ -21,7 +21,7 @@ This initializer creates a `Label` view on your behalf, and treats the localized
 
 ## Parameters
 
-- `titleKey`: The key for the  ’s localized label.
+- `titleKey`: The key for the `AccessoryWidgetGroup`’s localized label.
 - `image`: The image resource to lookup.
 - `content`: A view builder for the content of the accessory group.
 

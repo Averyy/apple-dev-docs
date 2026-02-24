@@ -31,11 +31,11 @@ If you call this function to retrieve a value that is a Core Foundation object, 
 
 ## Parameters
 
-- `inPropertyID`: An   constant. For a list of these constants, see  .
+- `inPropertyID`: An [`AudioFormatPropertyID`](audioformatpropertyid.md) constant. For a list of these constants, see [`Audio Format Property Identifiers`](1577853-audio-format-property-identifier.md).
 - `inSpecifierSize`: The size of the specifier data.
 - `inSpecifier`: A buffer of data used as an input argument for querying some of the properties.
-- `ioPropertyDataSize`: On input, the size of the   buffer. On output, the number of bytes written to the buffer.
-- `outPropertyData`: The buffer to write the property data to. If the   parameter is   and   is not  , the amount that would have been written is reported.
+- `ioPropertyDataSize`: On input, the size of the `outPropertyData` buffer. On output, the number of bytes written to the buffer.
+- `outPropertyData`: The buffer to write the property data to. If the `outPropertyData` parameter is `NULL` and `ioPropertyDataSize` is not `NULL`, the amount that would have been written is reported.
 
 ## See Also
 

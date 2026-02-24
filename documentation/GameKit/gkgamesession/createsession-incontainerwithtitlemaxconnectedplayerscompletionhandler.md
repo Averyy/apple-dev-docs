@@ -25,10 +25,11 @@ The container name must be a valid iCloud container associated with your app. Af
 
 ## Parameters
 
-- `containerName`: A   value representing the iCloud container for the game session.
-- `title`: A   value representing the title of the game session.
-- `maxPlayers`: An   value indicating the maximum number of players allowed in the game session.
-- `completionHandler`: A block that is called after a new game session has been created.
+- `containerName`: A `String` value representing the iCloud container for the game session.
+- `title`: A `String` value representing the title of the game session.
+- `maxPlayers`: An `Integer` value indicating the maximum number of players allowed in the game session.
+- `completionHandler`: A block that is called after a new game session has been created. - **gameSession**: A `GKGameSession` object containing information about the newly created game session.
+- **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is nil. See `GameKit Constants` for a list of error codes specific to GameKit.
 
 ## See Also
 

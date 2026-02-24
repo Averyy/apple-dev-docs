@@ -90,7 +90,7 @@ In visionOS, most system presentations appear with a breakthrough effect by defa
 
 ## Parameters
 
-- `item`: A binding to an optional source of truth for the sheet.   When   is non- , the system passes the item’s content to   the modifier’s closure. You display this content in a sheet that you   create that the system displays to the user. If   changes,   the system dismisses the sheet and replaces it with a new one   using the same process.
+- `item`: A binding to an optional source of truth for the sheet. When `item` is non-`nil`, the system passes the item’s content to the modifier’s closure. You display this content in a sheet that you create that the system displays to the user. If `item` changes, the system dismisses the sheet and replaces it with a new one using the same process.
 - `onDismiss`: The closure to execute when dismissing the sheet.
 - `content`: A closure returning the content of the sheet.
 

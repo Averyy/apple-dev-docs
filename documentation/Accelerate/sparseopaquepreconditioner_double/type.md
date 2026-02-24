@@ -23,7 +23,7 @@ var type: SparsePreconditioner_t
 ## See Also
 
 - [var apply: (UnsafeMutableRawPointer, CBLAS_TRANSPOSE, DenseMatrix_Double, DenseMatrix_Double) -> Void](sparseopaquepreconditioner_double/apply.md)
-  A function that calculates , where  is the preconditioner.
+  A function that calculates *Y = PX*, where *P* is the preconditioner.
 - [var mem: UnsafeMutableRawPointer](sparseopaquepreconditioner_double/mem.md)
   The unaltered memory pointer that passes as the first parameter of the apply function.
 

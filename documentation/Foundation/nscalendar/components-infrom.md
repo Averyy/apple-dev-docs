@@ -30,7 +30,7 @@ If you want “date information in a given time zone” for the purpose to displ
 
 ## Parameters
 
-- `timezone`: The time zone to use when returning the components. This value overrides the time zone of the receiving  .
+- `timezone`: The time zone to use when returning the components. This value overrides the time zone of the receiving `NSCalendar`.
 - `date`: The date for which to perform the calculation.
 
 ## See Also

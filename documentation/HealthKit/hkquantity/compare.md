@@ -35,7 +35,7 @@ If you need to programmatically check whether a particular unit is compatible wi
 
 ## Parameters
 
-- `quantity`: The quantity to compare. This method throws an exception if the quantities do not have compatible units ( ).
+- `quantity`: The quantity to compare. This method throws an exception if the quantities do not have compatible units ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
 
 ## See Also
 

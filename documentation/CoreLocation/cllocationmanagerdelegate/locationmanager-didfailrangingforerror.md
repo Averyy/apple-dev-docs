@@ -19,9 +19,9 @@ optional func locationManager(_ manager: CLLocationManager, didFailRangingFor be
 
 ## Parameters
 
-- `manager`: The   that corresponds to this delegate.
-- `beaconConstraint`: The   that describes the characteristics of the beacons the location manager is looking for.
-- `error`: An   object that describes the error.
+- `manager`: The [`CLLocationManager`](cllocationmanager.md) that corresponds to this delegate.
+- `beaconConstraint`: The [`CLBeaconIdentityConstraint`](clbeaconidentityconstraint.md) that describes the characteristics of the beacons the location manager is looking for.
+- `error`: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object that describes the error.
 
 ## See Also
 

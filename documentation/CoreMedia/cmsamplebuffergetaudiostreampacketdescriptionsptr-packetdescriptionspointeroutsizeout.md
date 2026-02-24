@@ -34,9 +34,9 @@ This API is specific to audio format sample buffers, and will return `kCMSampleB
 
 ## Parameters
 
-- `sbuf`: The   being modified.
-- `packetDescriptionsPointerOut`: On output, contains pointer to a constant array of  . May be  .
-- `packetDescriptionsSizeOut`: Size in bytes of constant array of  . May be  .
+- `sbuf`: The `CMSampleBuffer` being modified.
+- `packetDescriptionsPointerOut`: On output, contains pointer to a constant array of `AudioStreamPacketDescriptions`. May be `NULL`.
+- `packetDescriptionsSizeOut`: Size in bytes of constant array of `AudioStreamPacketDescriptions`. May be `NULL`.
 
 ## See Also
 

@@ -26,7 +26,7 @@ The value converted to the target coordinate space.
 
 ## Parameters
 
-- `value`: The value to convert between spaces, given in reference to   this coordinate space.
+- `value`: The value to convert between spaces, given in reference to this coordinate space.
 - `targetCoordinateSpace`: The coordinate space the function transforms the value to.
 
 

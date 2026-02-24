@@ -8,6 +8,10 @@ The webpages that the script can’t be injected into.
 **Availability**:
 - macOS 10.11.5+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [Allowed URL Patterns](information-property-list/nsextension/sfsafaricontentscript/allowed-url-patterns.md)

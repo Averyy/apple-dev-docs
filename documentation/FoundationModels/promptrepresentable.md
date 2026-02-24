@@ -20,7 +20,7 @@ protocol PromptRepresentable
 
 #### Overview
 
-> ❗ **Important**: Conformance to this protocol is provided automatically by the `@Generable` macro, you should  override its implementations. Overriding may negatively impact runtime performance and cause bugs.
+> ❗ **Important**: Conformance to this protocol is provided automatically by the `@Generable` macro, you should **not** override its implementations. Overriding may negatively impact runtime performance and cause bugs.
 
 For types that are not [`Generable`](generable.md), you may provide your own implementation.
 

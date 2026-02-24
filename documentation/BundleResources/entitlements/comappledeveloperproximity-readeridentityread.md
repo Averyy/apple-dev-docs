@@ -7,6 +7,10 @@
 - iOS 17.0+
 - iPadOS 17.0+
 
+
+
+**Type**: object
+
 ## Topics
 
 ### Property List Keys

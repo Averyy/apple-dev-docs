@@ -14,9 +14,37 @@ To add tests to your project:
 - Add one or more test methods to the test case.
 - Add one or more test assertions to each test method.
 
-A test method is an instance method on an [`XCTestCase`](xctestcase.md) subclass, with no parameters, no return value, and a name that begins with the lowercase word . Test methods are automatically detected by the XCTest framework in Xcode.
+A test method is an instance method on an [`XCTestCase`](xctestcase.md) subclass, with no parameters, no return value, and a name that begins with the lowercase word *test*. Test methods are automatically detected by the XCTest framework in Xcode.
 
 Listing 1. Example test case and test method
+
+**Swift**:
+
+```swift
+class TableValidationTests: XCTestCase {
+    /// Tests that a new table instance has zero rows and columns.
+    func testEmptyTableRowAndColumnCount() {
+        let table = Table()
+        XCTAssertEqual(table.rowCount, 0, "Row count was not zero.")
+        XCTAssertEqual(table.columnCount, 0, "Column count was not zero.")
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+@interface TableValidationTests: XCTestCase
+@end
+@implementation TableValidationTests
+/// Tests that a new table instance has zero rows and columns.
+- (void)testEmptyTableRowAndColumnCount {
+    Table *table = [[Table alloc] init];
+    XCTAssertEqual(table.rowCount, 0, "Row count was not zero.");
+    XCTAssertEqual(table.columnCount, 0, "Column count was not zero.");
+}
+@end
+```
 
 This example defines an [`XCTestCase`](xctestcase.md) subclass, `TableValidationTests`, with a single test method, `testEmptyTableRowAndColumnCount()`. This test method creates a new instance of a class called `Table`, and checks that its `rowCount` and `columnCount` properties are both equal to 0 after initialization.
 
@@ -24,7 +52,7 @@ This example defines an [`XCTestCase`](xctestcase.md) subclass, `TableValidation
 
 ##### Asserting Test Conditions
 
-You can check (or ) conditions inside test methods to make sure that your code is behaving as expected. Use the `XCTAssert` family of functions to check for Boolean conditions, `nil` or non-`nil` values, expected values, errors, or thrown exceptions.
+You can check (or *assert*) conditions inside test methods to make sure that your code is behaving as expected. Use the `XCTAssert` family of functions to check for Boolean conditions, `nil` or non-`nil` values, expected values, errors, or thrown exceptions.
 
 For example, Listing 1 above uses the [`XCTAssertEqual`](xctassertequal.md) macro to assert that two integers have the same value.
 

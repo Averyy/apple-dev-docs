@@ -25,7 +25,41 @@ When a sound plays in any of the source groups, this class lowers the volume of 
 
 ##### Lower Background Music During a Monologue
 
-When an app plays a monologue, the background music may need to lower, or , to enhance the clarity of the vocals. The following code demonstrates a ducker that configures a group for background music, and another group for the vocals.
+When an app plays a monologue, the background music may need to lower, or *duck*, to enhance the clarity of the vocals. The following code demonstrates a ducker that configures a group for background music, and another group for the vocals.
+
+**Swift**:
+
+```swift
+let bgmGroup = PHASEGroup(identifier: "backgroundMusicGroup")
+let voGroup = PHASEGroup(identifier: "voiceOverGroup")
+
+let ducker = PHASEDucker(engine: myEngine, sourceGroups: [voGroup],
+    targetGroups: [bgmGroup], gain: 0.25, attackTime: 0.25, releaseTime: 0.5,
+    attackCurve: .linear, releaseCurve: .linear)
+
+ducker.activate()
+```
+
+**Objective-C**:
+
+```objc
+PHASEGroup* bgmGroup = [[PHASEGroup alloc] 
+    initWithEngine:_objects->mEngine uid:@"backgroundMusicGroup"];
+PHASEGroup* voGroup = [[PHASEGroup alloc] 
+    initWithEngine:_objects->mEngine uid:@"voiceOverGroup"];
+
+auto ducker = [[PHASEDucker alloc] 
+    initWithEngine:_objects->mEngine
+        sourceGroups:[NSSet setWithObject:voGroup]
+        targetGroups:[NSSet setWithObject:bgmGroup]
+        gain:0.25
+        attackTime:0.25
+        releaseTime:0.5
+        attackCurve:PHASECurveTypeLinear
+        releaseCurve:PHASECurveTypeLinear];
+
+[ducker activate];
+```
 
 When an app sets up the ducking configuration in advance, PHASE automatically lowers the background music at runtime when the vocals play.
 

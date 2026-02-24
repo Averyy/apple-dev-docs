@@ -33,6 +33,10 @@ This method applies the disintegrate transition filter to an image. The effect t
 
 The dissolve transition filter uses the following properties:
 
+- **`inputImage`**: The starting image with the type [`CIImage`](ciimage.md).
+- **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that produces a fade transition from the input image and the target image:
 
 ```swift

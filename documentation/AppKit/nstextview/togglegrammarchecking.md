@@ -16,7 +16,7 @@ func toggleGrammarChecking(_ sender: Any?)
 
 ## Parameters
 
-- `sender`: The control sending the message; may be  .
+- `sender`: The control sending the message; may be `nil`.
 
 ## See Also
 

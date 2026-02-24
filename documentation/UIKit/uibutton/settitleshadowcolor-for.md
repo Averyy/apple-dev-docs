@@ -25,7 +25,7 @@ In general, if a property is not specified for a state, the default is to use th
 ## Parameters
 
 - `color`: The color of the title shadow to use for the specified state.
-- `state`: The state that uses the specified color. The possible values are described in  .
+- `state`: The state that uses the specified color. The possible values are described in [`UIControl.State`](uicontrol/state-swift.struct.md).
 
 ## See Also
 

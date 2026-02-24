@@ -30,8 +30,8 @@ This function is used by a plug-in or host when performing dynamic registration.
 
 ## Parameters
 
-- `factoryUUID`: The   object representing the factory function to register.
-- `plugIn`: The plug-in containing  .
+- `factoryUUID`: The `CFUUID` object representing the factory function to register.
+- `plugIn`: The plug-in containing `functionName`.
 - `functionName`: The name of the factory function to register.
 
 ## See Also

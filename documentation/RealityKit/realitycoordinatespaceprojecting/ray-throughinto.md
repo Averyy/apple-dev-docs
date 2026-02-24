@@ -26,7 +26,7 @@ A 3D ray, expressed in the `realitySpace` coordinate space, which starts at the 
 ## Parameters
 
 - `point`: A point in the provided coordinate space.
-- `space`: The 2D coordinate space in which to interpret the  .
+- `space`: The 2D coordinate space in which to interpret the `point`.
 - `realitySpace`: The 3D coordinate space you want the returned ray in.
 
 

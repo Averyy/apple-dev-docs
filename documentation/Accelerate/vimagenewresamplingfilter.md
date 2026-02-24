@@ -31,7 +31,7 @@ This function creates a reusable resampling filter object  that you can pass to 
 ## Parameters
 
 - `scale`: A scale factor to associated with the resampling filter object. Shear functions to which you pass the resampling filter object use this factor when performing a shear operation. The shear function applies the scale factor  to the entire image, in a direction appropriate to the shear function, either horizontal or vertical.
-- `flags`: This function ignores the   flag.
+- `flags`: The options to use when creating the resampling filter object. You must set exactly one of the following flags to specify how vImage handles pixel locations beyond the edge of the source image:  [`kvImageBackgroundColorFill`](kvimagebackgroundcolorfill.md) or [`kvImageEdgeExtend`](kvimageedgeextend.md). Set the [`kvImageHighQualityResampling`](kvimagehighqualityresampling.md) flag if you want vImage to use a higher quality, but slower, resampling filter. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md). This function ignores the [`kvImageLeaveAlphaUnchanged`](kvimageleavealphaunchanged.md) flag.
 
 ## See Also
 

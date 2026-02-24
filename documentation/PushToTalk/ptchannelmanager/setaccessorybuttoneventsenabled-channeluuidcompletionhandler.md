@@ -24,7 +24,7 @@ func setAccessoryButtonEventsEnabled(_ enabled: Bool, channelUUID: UUID) async t
 
 ## Parameters
 
-- `enabled`: A flag that accessory button events map to begin and end transmission actions. If your app doesn’t map these button events to transmission actions, you can disable them by setting the value to  .
+- `enabled`: A flag that accessory button events map to begin and end transmission actions. If your app doesn’t map these button events to transmission actions, you can disable them by setting the value to [`false`](https://developer.apple.com/documentation/Swift/false).
 - `channelUUID`: The unique channel identifier of the active participant.
 - `completionHandler`: An error that indicates the reason why the system couldn’t set the supported accessory button events.
 

@@ -8,6 +8,10 @@ The webpages that the script can be injected into.
 **Availability**:
 - macOS 10.11.5+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [Excluded URL Patterns](information-property-list/nsextension/sfsafaricontentscript/excluded-url-patterns.md)

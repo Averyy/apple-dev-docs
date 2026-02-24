@@ -27,8 +27,10 @@ func loadEntries(for players: [GKPlayer], timeScope: GKLeaderboard.TimeScope) as
 ## Parameters
 
 - `players`: The players whose scores this method returns.
-- `timeScope`: Specifies the time period for the scores. This parameter is applicable to nonrecurring leaderboards only. For recurring leaderboards, pass   for this parameter.
-- `completionHandler`: The block receives the following parameters:
+- `timeScope`: Specifies the time period for the scores. This parameter is applicable to nonrecurring leaderboards only. For recurring leaderboards, pass [`GKLeaderboard.TimeScope.allTime`](gkleaderboard/timescope-swift.enum/alltime.md) for this parameter.
+- `completionHandler`: A block that GameKit calls when this method loads the scores. The block receives the following parameters: - **localPlayerEntry**: The score for the local player, or `nil` if the player has no score.
+- **entries**: The scores for the players during the specified time period, including the local player’s score if it exists.
+- **error**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

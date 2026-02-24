@@ -26,8 +26,8 @@ The fitted model.
 
 ## Parameters
 
-- `input`: A sequence of annotated windows. Each window’s shape should be    and each annotation’s shape should be  .
-- `validation`: A sequence of annotated validation windows. The feature and annotation shapes should be the   same as the input parameter.
+- `input`: A sequence of annotated windows. Each window’s shape should be `[inputWindowSize, featureSize]` and each annotation’s shape should be `[forecastWindowSize, annotationSize]`.
+- `validation`: A sequence of annotated validation windows. The feature and annotation shapes should be the same as the input parameter.
 - `eventHandler`: An event handler.
 
 ## See Also

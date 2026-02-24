@@ -34,7 +34,7 @@ The destination file URL must meet the following requirements:
 - `download`: The download that needs a file destination where the systems should write the download data.
 - `response`: A response from the server for an HTTP request, or a synthesized response for a blob download.
 - `suggestedFilename`: A string with a filename suggestion to use in creating the file destination.
-- `completionHandler`: A closure you invoke with a destination file URL to begin the download, or   to cancel the download.
+- `completionHandler`: A closure you invoke with a destination file URL to begin the download, or `nil` to cancel the download.
 
 ## See Also
 

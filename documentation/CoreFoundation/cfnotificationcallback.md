@@ -23,10 +23,10 @@ typealias CFNotificationCallback = (CFNotificationCenter?, UnsafeMutableRawPoint
 ## Parameters
 
 - `center`: The notification center handling the notification.
-- `observer`: An arbitrary value, other than  , that identifies the observer.
+- `observer`: An arbitrary value, other than `NULL`, that identifies the observer.
 - `name`: The name of the notification being posted.
-- `object`: An arbitrary value that identifies the object posting the notification. For distributed notifications,   is always a CFString object. This value could be  .
-- `userInfo`: If the notification center is a Darwin notification center, this value must be ignored.
+- `object`: An arbitrary value that identifies the object posting the notification. For distributed notifications, `object` is always a CFString object. This value could be `NULL`.
+- `userInfo`: A dictionary containing additional information regarding the notification. This value could be `NULL`. If the notification center is a Darwin notification center, this value must be ignored.
 
 
 ---

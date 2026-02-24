@@ -24,8 +24,8 @@ A new action for the specified call UUID and call UUID to group with.
 
 ## Parameters
 
-- `callUUID`: The unique identifier for the associated   object of the action.
-- `callUUIDToGroupWith`: If  , the the call associated with the receiver leaves any group it’s currently a member of.
+- `callUUID`: The unique identifier for the associated [`CXCall`](cxcall.md) object of the action.
+- `callUUIDToGroupWith`: The unique identifier of a [`CXCall`](cxcall.md) object for the call associated with the action to group with. If `nil`, the the call associated with the receiver leaves any group it’s currently a member of.
 
 ## See Also
 

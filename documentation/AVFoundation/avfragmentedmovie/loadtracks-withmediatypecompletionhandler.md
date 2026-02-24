@@ -22,7 +22,8 @@ func loadTracks(withMediaType mediaType: AVMediaType) async throws -> [AVFragmen
 ## Parameters
 
 - `mediaType`: The media type of the tracks to load.
-- `completionHandler`: A callback that the system invokes after it finishes the loading operation. It passes the completion handler the following parameters:
+- `completionHandler`: A callback that the system invokes after it finishes the loading operation. It passes the completion handler the following parameters: - **tracks**: An array of tracks, which may be empty if no tracks with the specified media type exist. The value is `nil` if an error occurs.
+- **error**: An error object if the request fails; otherwise, `nil`.
 
 ## See Also
 

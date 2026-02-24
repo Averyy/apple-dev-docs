@@ -23,7 +23,7 @@ Use this macro to free memory that you allocated with [`IOMalloc`](iomalloc.md) 
 
 ## Parameters
 
-- `address`: The pointer to the memory block to free. The memory block must be one that you previously allocated with   or  .
+- `address`: The pointer to the memory block to free. The memory block must be one that you previously allocated with [`IOMalloc`](iomalloc.md) or [`IOMallocZero`](iomalloczero.md).
 - `length`: The size of the memory block, which must match the block’s original allocation size.
 
 ## See Also

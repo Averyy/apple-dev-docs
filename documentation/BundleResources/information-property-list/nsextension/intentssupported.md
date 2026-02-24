@@ -12,6 +12,10 @@ The names of the intents that an extension supports.
 - watchOS 3.2+
 
 
+
+**Type**: string 
+
+
 ---
 
 *[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/intentssupported)*

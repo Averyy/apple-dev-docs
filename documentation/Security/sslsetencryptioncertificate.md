@@ -40,7 +40,7 @@ SSL servers that enforce the SSL3 or TLS1 specification to the letter do not acc
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `certRefs`: A value of type   referring to an array of certificate references. The references are type  , except for  , which is of type  .
+- `certRefs`: A value of type `CFArrayRef` referring to an array of certificate references. The references are type `SecCertificateRef`, except for `certRefs[0]`, which is of type `SecIdentityRef`.
 
 
 ---

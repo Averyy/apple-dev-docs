@@ -23,7 +23,7 @@ This method redraws the receiver. Your code may need to send [`sizeToCells()`](n
 ## Parameters
 
 - `column`: The column at which to insert the new cells.
-- `newCells`: An array of objects to use to fill the new column, starting with the object at index 0. Each object should be an instance of   or one of its subclasses (usually  ).
+- `newCells`: An array of objects to use to fill the new column, starting with the object at index 0. Each object should be an instance of [`NSCell`](nscell.md) or one of its subclasses (usually [`NSActionCell`](nsactioncell.md)).
 
 ## See Also
 

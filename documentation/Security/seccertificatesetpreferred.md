@@ -22,7 +22,7 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 
 - `certificate`: The key to use as the preferred certificate for the specified name and key usage.
 - `name`: A string containing an email address (RFC 822) or other name for which a preferred certificate is requested.
-- `keyUsage`: An array containing a list of usage attributes ( , for example), or   if you want this certificate to be preferred for any usage. See Attribute Item Keys for a complete list of possible usage attributes.
+- `keyUsage`: An array containing a list of usage attributes ([`kSecAttrCanEncrypt`](ksecattrcanencrypt.md), for example), or `NULL` if you want this certificate to be preferred for any usage. See Attribute Item Keys for a complete list of possible usage attributes.
 
 
 ---

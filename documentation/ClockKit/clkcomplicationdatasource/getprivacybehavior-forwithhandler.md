@@ -23,7 +23,7 @@ If you don’t implement this method, ClockKit uses the value [`CLKComplicationP
 ## Parameters
 
 - `complication`: The complication tied to the request.
-- `handler`: The handler to execute with the privacy behavior. This block has no return value and takes the following parameter:
+- `handler`: The handler to execute with the privacy behavior. This block has no return value and takes the following parameter: - **behavior**: The privacy behavior to apply to the specified complication. You can specify different privacy behaviors for different complication families.
 
 ## Topics
 

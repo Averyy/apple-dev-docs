@@ -84,13 +84,13 @@ You may optionally pass a workspace to [`BNNSMatMul(_:_:_:_:_:_:_:_:)`](bnnsmatm
 
 ## Parameters
 
-- `transA`: A Boolean value that specifies whether the operation should treat   as transposed.
-- `transB`: A Boolean value that specifies whether the operation should treat   as transposed.
+- `transA`: A Boolean value that specifies whether the operation should treat `inputA` as transposed.
+- `transB`: A Boolean value that specifies whether the operation should treat `inputB` as transposed.
 - `alpha`: A value that the operation uses to scale the result.
-- `inputA`: A pointer to the   matrix descriptor.
-- `inputB`: A pointer to the   matrix descriptor.
+- `inputA`: A pointer to the `inputA` matrix descriptor.
+- `inputB`: A pointer to the `inputB` matrix descriptor.
 - `output`: A pointer to the output matrix descriptor.
-- `workspace`: An optional pointer to the workspace memory. Use   to calculate the workspace size that operation requires.   doesn’t require any particular alignment for the workspace memory.
+- `workspace`: An optional pointer to the workspace memory. Use [`BNNSMatMulWorkspaceSize(_:_:_:_:_:_:_:)`](bnnsmatmulworkspacesize(_:_:_:_:_:_:_:).md) to calculate the workspace size that operation requires. [`BNNSMatMul(_:_:_:_:_:_:_:_:)`](bnnsmatmul(_:_:_:_:_:_:_:_:).md) doesn’t require any particular alignment for the workspace memory.
 - `filter_params`: The filter runtime parameters.
 
 ## See Also

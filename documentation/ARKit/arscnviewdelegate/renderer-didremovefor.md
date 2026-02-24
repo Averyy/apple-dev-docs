@@ -22,7 +22,7 @@ Depending on the session configuration, ARKit may automatically remove anchors f
 
 ## Parameters
 
-- `renderer`: The   object rendering the scene.
+- `renderer`: The [`ARSCNView`](arscnview.md) object rendering the scene.
 - `node`: The removed SceneKit node.
 - `anchor`: The AR anchor corresponding to the node.
 

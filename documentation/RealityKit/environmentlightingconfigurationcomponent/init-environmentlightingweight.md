@@ -21,7 +21,7 @@ init(environmentLightingWeight: Float = 1.0)
 
 ## Parameters
 
-- `environmentLightingWeight`: A floating-point value in the range  ,   where   indicates no environment-lighting contribution and   indicates full environment-lighting   contribution.
+- `environmentLightingWeight`: A floating-point value in the range `[0.0, 1.0]`, where `0.0` indicates no environment-lighting contribution and `1.0` indicates full environment-lighting contribution.
 
 
 ---

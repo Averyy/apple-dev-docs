@@ -20,7 +20,7 @@ This may be used, for example, to change the plug-in’s appearance when it is s
 
 ## Parameters
 
-- `isSelected`: If  , the plug-in is currently selected. Otherwise, it is not selected.
+- `isSelected`: If [`YES`](yes.md), the plug-in is currently selected. Otherwise, it is not selected.
 
 
 ---

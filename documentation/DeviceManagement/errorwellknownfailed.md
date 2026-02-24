@@ -23,6 +23,12 @@ The schema for a JSON or property list XML document that an MDM server’s 403 r
 
 The MDM server returns this response to reject a well-known service discovery request from a device made during an account driven enrollment.
 
+## Properties
+
+- `code` (string) *(required)*: Indicates that the well-known request has failed.
+- `description` (string): A description of the error. Only use this for logging purposes and don’t display it to the user.
+- `message` (string): A description of the error to display to the user.
+
 ## See Also
 
 - [object ErrorCodePairingTokenMissing](errorcodepairingtokenmissing.md)

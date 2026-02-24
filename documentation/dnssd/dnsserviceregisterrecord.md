@@ -30,13 +30,13 @@ Note that name conflicts occurring for records registered via this call must be 
 
 ## Parameters
 
-- `sdRef`: A DNSServiceRef initialized by  .
-- `RecordRef`: A pointer to an uninitialized DNSRecordRef. Upon succesfull completion of this call, this ref may be passed to   or  . (To deregister ALL records registered on a single connected DNSServiceRef and deallocate each of their corresponding DNSServiceRecordRefs, call  ).
+- `sdRef`: A DNSServiceRef initialized by [`DNSServiceCreateConnection(_:)`](dnsservicecreateconnection(_:).md).
+- `RecordRef`: A pointer to an uninitialized DNSRecordRef. Upon succesfull completion of this call, this ref may be passed to [`DNSServiceUpdateRecord(_:_:_:_:_:_:)`](dnsserviceupdaterecord(_:_:_:_:_:_:).md) or [`DNSServiceRemoveRecord(_:_:_:)`](dnsserviceremoverecord(_:_:_:).md). (To deregister ALL records registered on a single connected DNSServiceRef and deallocate each of their corresponding DNSServiceRecordRefs, call [`DNSServiceRefDeallocate(_:)`](dnsservicerefdeallocate(_:).md)).
 - `flags`: Possible values are kDNSServiceFlagsShared or kDNSServiceFlagsUnique (see flag type definitions for details).
 - `interfaceIndex`: If non-zero, specifies the interface on which to register the record (the index for a given interface is determined via the if_nametoindex() family of calls.) Passing 0 causes the record to be registered on all interfaces. See “Constants for specifying an interface index” for more details.
 - `fullname`: The full domain name of the resource record.
 - `rrtype`: The numerical type of the resource record (e.g. kDNSServiceType_PTR, kDNSServiceType_SRV, and so on).
-- `rrclass`: The class of the resource record (usually  )
+- `rrclass`: The class of the resource record (usually [`kDNSServiceClass_IN`](kdnsserviceclass_in.md))
 - `rdlen`: Length, in bytes, of the rdata.
 - `rdata`: A pointer to the raw rdata, as it is to appear in the DNS record.
 - `ttl`: The time to live of the resource record, in seconds. Most clients should pass 0 to indicate that the system should select a sensible default value.

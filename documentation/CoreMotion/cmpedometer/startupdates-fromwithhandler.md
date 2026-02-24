@@ -30,8 +30,8 @@ It is safe to start the delivery of events using this method and then perform ad
 
 ## Parameters
 
-- `start`: The date from which to start reporting data. You can specify a date in the past to retrieve the data from that time until now. This parameter must not be  .
-- `handler`: The block to execute when data is available. This block is called repeatedly on a background thread as new data arrives. This parameter must not be  . For information about this block, see  .
+- `start`: The date from which to start reporting data. You can specify a date in the past to retrieve the data from that time until now. This parameter must not be `nil`.
+- `handler`: The block to execute when data is available. This block is called repeatedly on a background thread as new data arrives. This parameter must not be `nil`. For information about this block, see [`CMPedometerHandler`](cmpedometerhandler.md).
 
 ## See Also
 

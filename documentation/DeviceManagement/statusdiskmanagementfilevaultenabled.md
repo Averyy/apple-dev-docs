@@ -27,6 +27,10 @@ object StatusDiskManagementFileVaultEnabled
 | Allowed in system scope | macOS |
 | Allowed in user scope | NA |
 
+## Properties
+
+- `diskmanagement.filevault.enabled` (boolean) *(required)*: A Boolean value that specifies the File Vault enabled status on the device.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

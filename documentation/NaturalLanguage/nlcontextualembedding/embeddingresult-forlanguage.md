@@ -22,11 +22,7 @@ func embeddingResult(for string: String, language: NLLanguage?) throws -> NLCont
 
 #### Return Value
 
-An embedding result.
-
-#### Discussion
-
-If the language of the string is unknown, the framework infers it from the string you specify.
+An embedding result. On failure, this method returns nil.
 
 ## Parameters
 

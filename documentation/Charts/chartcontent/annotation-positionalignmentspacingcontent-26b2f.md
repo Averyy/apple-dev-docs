@@ -23,9 +23,9 @@ func annotation<C>(position: AnnotationPosition = .automatic, alignment: Alignme
 
 ## Parameters
 
-- `position`: The location relative to the item being annotated at which   the annotation will be placed.
+- `position`: The location relative to the item being annotated at which the annotation will be placed.
 - `alignment`: The guide for aligning the annotation in the specified position.
-- `spacing`: Distance between the annotation and the annotated content,   or   if you want to use the default distance.
+- `spacing`: Distance between the annotation and the annotated content, or `nil` if you want to use the default distance.
 - `content`: A view builder that creates the annotation.
 
 ## See Also

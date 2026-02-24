@@ -13,6 +13,12 @@ The current version of the Information Property List structure.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
+**Default**: `6.0`
+
 #### Discussion
 
 Xcode adds this key automatically. Don’t change the value.

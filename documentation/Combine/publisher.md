@@ -42,7 +42,7 @@ Every `Publisher` must adhere to this contract for downstream subscribers to fun
 
 ##### Using Operators
 
-Extensions on `Publisher` define a wide variety of  that you compose to create sophisticated event-processing chains. Each operator returns a type that implements the [`Publisher`](publisher.md) protocol Most of these types exist as extensions on the [`Publishers`](publishers.md) enumeration. For example, the [`map(_:)`](publisher/map(_:)-99evh.md) operator returns an instance of [`Publishers.Map`](publishers/map.md).
+Extensions on `Publisher` define a wide variety of *operators* that you compose to create sophisticated event-processing chains. Each operator returns a type that implements the [`Publisher`](publisher.md) protocol Most of these types exist as extensions on the [`Publishers`](publishers.md) enumeration. For example, the [`map(_:)`](publisher/map(_:)-99evh.md) operator returns an instance of [`Publishers.Map`](publishers/map.md).
 
 Use operators to assemble a chain of republishers, optionally ending with a subscriber, that processes elements produced by upstream publishers. Each operator creates and configures an instance of a [`Publisher`](publisher.md) or [`Subscriber`](subscriber.md), and subscribes it to the publisher that you call the method on.
 

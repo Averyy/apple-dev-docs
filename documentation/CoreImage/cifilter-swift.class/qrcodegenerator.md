@@ -29,6 +29,9 @@ This method generates a QR code as an image. QR codes are a high-density matrix 
 
 The QR code generator filter uses the following properties:
 
+- **`message`**: A `string` representing the data to be encoded as a QR Code as [`NSData`](https://developer.apple.com/documentation/Foundation/NSData).
+- **`correctionLevel`**: A single letter `string` representing the error-correction format as an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString). L is 7 percent correction, M is 15 percent correction, Q is 25 percent correction, and H is 30 percent correction.
+
 The following code creates a filter that generates a QR code:
 
 ```swift

@@ -29,7 +29,7 @@ If you need to pass other kinds of parameters to your shader, such as textures a
 ## Parameters
 
 - `buffer`: The buffer to set in the buffer argument table.
-- `offset`: The location, in bytes relative to start of  ,   of the first byte of data for the fragment shader.
+- `offset`: The location, in bytes relative to start of `buffer`, of the first byte of data for the fragment shader.
 - `index`: An index in the buffer argument table. The maximum index is determined when you created the indirect command buffer.
 
 ## See Also

@@ -23,7 +23,7 @@ static var boundaries: UICollisionBehavior.Mode { get }
 - [static var items: UICollisionBehavior.Mode](uicollisionbehavior/mode/items.md)
   Specifies that the dynamic items, associated with the collision behavior, collide only with each other and not with specified collision boundaries.
 - [static var everything: UICollisionBehavior.Mode](uicollisionbehavior/mode/everything.md)
-  Specifies that the dynamic items, associated with the collision behavior, collide with each other  with specified collision boundaries.
+  Specifies that the dynamic items, associated with the collision behavior, collide with each other *and* with specified collision boundaries.
 
 
 ---

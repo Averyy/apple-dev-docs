@@ -35,7 +35,7 @@ This method should return [`NSIntegerMin`](https://developer.apple.com/documenta
 
 ## Parameters
 
-- `player`: An instance of your game’s player class (a custom class implementing the   protocol) representing the player evaluating the game model.
+- `player`: An instance of your game’s player class (a custom class implementing the [`GKGameModelPlayer`](gkgamemodelplayer.md) protocol) representing the player evaluating the game model.
 
 ## See Also
 

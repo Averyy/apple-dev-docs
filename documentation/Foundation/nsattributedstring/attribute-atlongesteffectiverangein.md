@@ -35,9 +35,10 @@ For a list of possible attributes, see [`NSAttributedString.Key`](nsattributedst
 ## Parameters
 
 - `attrName`: The name of an attribute.
-- `location`: The index at which to test for  .
-- `range`: If you don’t need this value, pass  .
-- `rangeLimit`: The range over which to search for continuous presence of  . This value must not exceed the bounds of the receiver.
+- `location`: The index at which to test for `attributeName`.
+- `range`: If non-`NULL`: - If the named attribute exists at `index`, upon return `aRange` contains the full range over which the value of the named attribute is the same as that at `index`, clipped to `rangeLimit`.
+- If the named attribute does not exist at `index`, upon return `aRange` contains the full range over which the attribute does not exist, clipped to `rangeLimit`. If you don’t need this value, pass `NULL`.
+- `rangeLimit`: The range over which to search for continuous presence of `attributeName`. This value must not exceed the bounds of the receiver.
 
 ## See Also
 

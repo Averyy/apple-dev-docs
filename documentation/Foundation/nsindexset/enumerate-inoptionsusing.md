@@ -27,8 +27,9 @@ This method executes synchronously.
 ## Parameters
 
 - `range`: The range to enumerate.
-- `opts`: A bitmask that specifies the options for the enumeration (whether it should be performed concurrently and whether it should be performed in reverse order). See   for the supported values.
-- `block`: The Block takes two arguments:
+- `opts`: A bitmask that specifies the options for the enumeration (whether it should be performed concurrently and whether it should be performed in reverse order). See [`NSEnumerationOptions`](nsenumerationoptions.md) for the supported values.
+- `block`: The Block to apply to elements in the set. The Block takes two arguments: - **idx**: The index of the object.
+- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop further processing of the set. The `stop` argument is an out-only argument. You should only ever set this Boolean to YES within the Block.
 
 ## See Also
 
@@ -37,7 +38,7 @@ This method executes synchronously.
 - [func enumerate(options: NSEnumerationOptions, using: (Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsindexset/enumerate(options:using:).md)
   Executes a given Block over the index set’s indexes, using the specified enumeration options.
 - [func makeIterator() -> NSIndexSetIterator](nsindexset/makeiterator.md)
-  Returns an  over the elements of this .
+  Returns an *iterator* over the elements of this *sequence*.
 - [struct NSIndexSetIterator](nsindexsetiterator.md)
   An iterator suitable for enumerating the elements of an index set.
 

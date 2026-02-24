@@ -21,7 +21,7 @@ Send this message with `children` as `nil` to remove all child nodes.
 
 ## Parameters
 
-- `children`: An array of   objects or   objects of kinds  ,  ,  , or  .
+- `children`: An array of `NSXMLElement` objects or [`XMLNode`](xmlnode.md) objects of kinds [`XMLNode.Kind.element`](xmlnode/kind-swift.enum/element.md), [`XMLNode.Kind.processingInstruction`](xmlnode/kind-swift.enum/processinginstruction.md), [`XMLNode.Kind.text`](xmlnode/kind-swift.enum/text.md), or [`XMLNode.Kind.comment`](xmlnode/kind-swift.enum/comment.md).
 
 ## See Also
 

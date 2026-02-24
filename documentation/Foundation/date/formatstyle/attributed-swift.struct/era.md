@@ -22,7 +22,7 @@ func era(_ format: Date.FormatStyle.Symbol.Era = .abbreviated) -> Date.FormatSty
 
 ## Parameters
 
-- `format`: Set the symbol representation or pass   to remove it.
+- `format`: Set the symbol representation or pass `nil` to remove it.
 
 
 ---

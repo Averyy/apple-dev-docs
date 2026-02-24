@@ -29,6 +29,13 @@ This method applies the tone curve filter to an image. The effect calculates the
 
 The tone curve filter uses the following properties:
 
+- **`point0`**: A v`ector` containing the position of the first point of the tone curve as a [`CIVector`](civector.md).
+- **`point1`**: A v`ector` containing the position of the second point of the tone curve as a [`CIVector`](civector.md).
+- **`point2`**: A `vector` containing the position of the third point of the tone curve as a [`CIVector`](civector.md).
+- **`point3`**: A v`ector` containing the position of the fourth point of the tone curve as a [`CIVector`](civector.md).
+- **`point4`**: A v`ector` containing the position of the fifth point of the tone curve as a [`CIVector`](civector.md).
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds brightness to the input image:
 
 ```swift

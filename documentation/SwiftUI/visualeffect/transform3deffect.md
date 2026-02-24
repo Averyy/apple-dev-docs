@@ -32,7 +32,7 @@ Model3D(url: URL(string: "https://example.com/robot.usdz")!)
 
 ## Parameters
 
-- `transform`: The 3D transformation to apply to the view,   interpreting it as a 3D plane in space.
+- `transform`: The 3D transformation to apply to the view, interpreting it as a 3D plane in space.
 
 ## See Also
 

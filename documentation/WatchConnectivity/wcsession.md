@@ -28,6 +28,26 @@ Your iOS app and watchOS app must both create and configure an instance of this 
 
 To configure and activate the session, assign a [`delegate`](wcsession/delegate.md) to the default session object and call that object’s [`activate()`](wcsession/activate().md) method, as shown in code snippet below. Your WatchKit extension and iOS app must each configure their own session object. Activating the session establishes a connection between the two apps.
 
+**Swift**:
+
+```swift
+if WCSession.isSupported() {
+   let session = WCSession.default
+   session.delegate = self
+   session.activate()
+}
+```
+
+**Objective-C**:
+
+```objc
+if ([WCSession isSupported]) {
+    WCSession* session = [WCSession defaultSession];
+    session.delegate = self;
+    [session activate];
+}
+```
+
 To support the pairing of multiple watches to the same iPhone, the session delegate of both your apps must implement the activation APIs. Implementing the [`session(_:activationDidCompleteWith:error:)`](wcsessiondelegate/session(_:activationdidcompletewith:error:).md) method lets the session know that your app supports asynchronous activation. Implementing the [`sessionDidBecomeInactive(_:)`](wcsessiondelegate/sessiondidbecomeinactive(_:).md) and [`sessionDidDeactivate(_:)`](wcsessiondelegate/sessiondiddeactivate(_:).md) methods in the session delegate of your iOS app is required to manage transitions between different Apple Watches.
 
 > ❗ **Important**:  If your delegate does not implement the appropriate methods for asynchronous activation and activation state changes, your app opts out of multiple Apple Watch support altogether. Opting out has important implications for your app when the user switches from one Apple Watch to another. When a switch occurs, your app’s session is deactivated. When your app subsequently moves to the background, the system terminates your app. (Background execution modes do not prevent the termination of your app.) The next time your app launches, it connects with the new Apple Watch.

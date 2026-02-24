@@ -78,11 +78,97 @@ Give an extension access to “public.example.com”, but deny access to “exam
 
 ##### Configuration Examples
 
+**Disallow all**:
+
+This configuration disables all Safari extensions.
+
+```json
+{
+    "Type": "com.apple.configuration.safari.extensions.settings",
+    "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
+    "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
+    "Payload": {
+        "ManagedExtensions": {
+            "*": {
+                "State": "AlwaysOff"
+            }
+        }
+    }
+}
+```
+
+**Allow one**:
+
+This configuration disables all Safari extensions, except for one that it requires.
+
+```json
+{
+    "Type": "com.apple.configuration.safari.extensions.settings",
+    "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
+    "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
+    "Payload": {
+        "ManagedExtensions": {
+            "*": {
+                "State": "AlwaysOff"
+            },
+            "com.example.WebExtension (ABCDE12345)": {
+                "State": "AlwaysOn"
+            }
+        }
+    }
+}
+```
+
+**Disallow private browsing**:
+
+This configuration allows all Safari extensions, but one isn’t allowed in private browsing.
+
+```json
+{
+    "Type": "com.apple.configuration.safari.extensions.settings",
+    "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
+    "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
+    "Payload": {
+        "ManagedExtensions": {
+            "com.example.WebExtension (ABCDE12345)": {
+                "State": "AlwaysOn",
+                "PrivateBrowsing": "AlwaysOff"
+            }
+        }
+    }
+}
+```
+
+**Disallow domain**:
+
+This configuration allows all Safari extensions, but one isn’t allowed for use with a domain and its sub-domains.
+
+```json
+{
+    "Type": "com.apple.configuration.safari.extensions.settings",
+    "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
+    "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
+    "Payload": {
+        "ManagedExtensions": {
+            "com.example.WebExtension (ABCDE12345)": {
+                "DeniedDomains": [
+                    "*example.org"
+                ]
+            }
+        }
+    }
+}
+```
+
 ## Topics
 
 ### Objects
 - [object SafariExtensionSettingsManagedExtensionsObject](safariextensionsettingsmanagedextensionsobject.md)
   The dictionary that defines the managed extension.
+
+## Properties
+
+- `ManagedExtensions` (SafariExtensionSettingsManagedExtensionsObject): The dictionary of managed extensions settings. Each key in the dictionary represents a composed identifier for a specific managed extension, or you can specify a single “*” character to match any extension. The dictionary values represent the settings that Safari applies to each extension that matches the key. In order for the extension to be managed, its host app needs to be present on the device. The composed identifier of a managed extension uses the format “Identifier (TeamIdentifier)”, for example “com.example.app (ABCD1234)”. Use `codesign -dv <path_to_appex>` to show the information you need to generate this string on macOS, using the path to the extension bundle located in the “PlugIns” folder inside the app bundle. For other platforms, request this information from the app developer.
 
 ## See Also
 

@@ -27,7 +27,7 @@ An empty return value may indicate an error, or it may indicate that the entitle
 
 - `task`: The task whose entitlement you want.
 - `entitlement`: The name of the entitlement to be fetched.
-- `error`: A pointer that the function uses to provide an error object with details if an error occurs. The caller becomes responsible for the object’s memory. Pass   to ignore the error.
+- `error`: A pointer that the function uses to provide an error object with details if an error occurs. The caller becomes responsible for the object’s memory. Pass `NULL` to ignore the error.
 
 
 ---

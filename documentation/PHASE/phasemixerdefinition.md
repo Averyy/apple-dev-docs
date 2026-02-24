@@ -23,6 +23,10 @@ class PHASEMixerDefinition
 
 A mixer combines multiple layers of audio to a single signal for transmission to the output device. The framework creates a mixer when you provide a mixer definition. Instead of creating an instance of this class, instantiate one of the mixer definition subclasses instead:
 
+- **[`PHASEChannelMixerDefinition`](phasechannelmixerdefinition.md)**: When your app outputs sound through a channel mixer, the framework maintains the channel configuration of the source audio. For example, the left and right channels of a stereo input file play on the left and right speakers, respectively.
+- **[`PHASEAmbientMixerDefinition`](phaseambientmixerdefinition.md)**: When your app outputs sound through an ambient mixer, the framework overrides the output channels to give the mixer an orientation, which creates the effect of pointing in a specific direction in 3D space.
+- **[`PHASESpatialMixerDefinition`](phasespatialmixerdefinition.md)**: Audio that your app outputs through a spatial mixer specifies a position and orientation in 3D space. Spatial mixers require the app to define sources that emit audio, and a listener that hears audio. Sound playback changes depending on the relative positions of the listener and sources.
+
 ##### Play a Sound Using a Mixer
 
 To play a sound using a mixer, create a mixer definition and pass it to a sound event. The following code creates a [`PHASEChannelMixerDefinition`](phasechannelmixerdefinition.md) and passes it into a node definition the app can invoke to play the channel-based audio file `drumloopSoundAsset`:

@@ -27,8 +27,8 @@ Use this method to rasterize the renderer’s content to a [`CGContext`](https:/
 
 ## Parameters
 
-- `rasterizationScale`: The scale factor for converting user   interface points to pixels when rasterizing parts of the   view that can’t be represented as native Core Graphics drawing   commands.
-- `renderer`: The closure that sets up the Core Graphics context and   renders the view. This closure receives two parameters: the size of   the view and a function that you invoke in the closure to render the   view at the reported size. This function takes a     parameter, and assumes a bottom-left coordinate space origin.
+- `rasterizationScale`: The scale factor for converting user interface points to pixels when rasterizing parts of the view that can’t be represented as native Core Graphics drawing commands.
+- `renderer`: The closure that sets up the Core Graphics context and renders the view. This closure receives two parameters: the size of the view and a function that you invoke in the closure to render the view at the reported size. This function takes a [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) parameter, and assumes a bottom-left coordinate space origin.
 
 ## See Also
 

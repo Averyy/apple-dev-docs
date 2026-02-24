@@ -26,8 +26,8 @@ If you do call this function, you must call it before the first call to the [`CM
 
 ## Parameters
 
-- `cmsEncoder`: The CMSEncoder reference returned by the   function.
-- `signedAttributes`: Attribute flags as defined in  .
+- `cmsEncoder`: The CMSEncoder reference returned by the `CMSEncoderCreate` function.
+- `signedAttributes`: Attribute flags as defined in [`CMSSignedAttributes`](cmssignedattributes.md).
 
 ## See Also
 

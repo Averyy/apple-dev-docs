@@ -31,7 +31,7 @@ Note that this function searches superclasses for implementations, whereas [`cla
 ## Parameters
 
 - `cls`: A pointer to a class definition. Pass the class that contains the method you want to retrieve.
-- `name`: A pointer of type  . Pass the selector of the method you want to retrieve.
+- `name`: A pointer of type [`SEL`](sel.md). Pass the selector of the method you want to retrieve.
 
 ## See Also
 

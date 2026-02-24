@@ -23,6 +23,22 @@ Sibling layers are referenced by name, using the name property of each layer. Th
 
 For example, to specify that a layer should be horizontally centered in its superview you would use the following:
 
+**Swift**:
+
+```swift
+let theConstraint = CAConstraint(attribute: .midX,
+                                 relativeTo: "superlayer",
+                                 attribute: .midX)
+```
+
+**Objective-C**:
+
+```objc
+theConstraint=[CAConstraint constraintWithAttribute:kCAConstraintMidX
+                                         relativeTo:@"superlayer"
+                                         attribute:kCAConstraintMidX];
+```
+
 A minimum of two relationships must be specified per axis. If you specify constraints for the left and right edges of a layer, the width will vary. If you specify constraints for the left edge and the width, the right edge of the layer will move relative to the superlayer’s frame. Often you’ll specify only a single edge constraint, the layer’s size in the same axis will be used as the second relationship.
 
 > ❗ **Important**:  It is possible to create constraints that result in circular references to the same attributes. In cases where the layout is unable to be computed the behavior is undefined.

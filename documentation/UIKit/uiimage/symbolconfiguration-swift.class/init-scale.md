@@ -25,7 +25,7 @@ A new symbol configuration object with the specified information.
 
 ## Parameters
 
-- `scale`: The symbol image scale variant to select. Use this parameter to make the image appear bigger or smaller than surrounding content. For a list of possible values, see  .
+- `scale`: The symbol image scale variant to select. Use this parameter to make the image appear bigger or smaller than surrounding content. For a list of possible values, see [`UIImage.SymbolScale`](uiimage/symbolscale.md).
 
 ## See Also
 

@@ -69,9 +69,9 @@ For example, a button that allows the user to choose multiple PDF files for the 
 ## Parameters
 
 - `isPresented`: A binding to whether the interface should be shown.
-- `allowedContentTypes`: The list of supported content types which can   be imported.
-- `allowsMultipleSelection`: Whether the importer allows the user to   select more than one file to import.
-- `onCompletion`: A callback that will be invoked when the operation has   succeeded or failed. To access the received URLs, call  .   When the access is no longer required, call  .
+- `allowedContentTypes`: The list of supported content types which can be imported.
+- `allowsMultipleSelection`: Whether the importer allows the user to select more than one file to import.
+- `onCompletion`: A callback that will be invoked when the operation has succeeded or failed. To access the received URLs, call `startAccessingSecurityScopedResource`. When the access is no longer required, call `stopAccessingSecurityScopedResource`. - **result**: A `Result` indicating whether the operation succeeded or failed.
 
 ## See Also
 

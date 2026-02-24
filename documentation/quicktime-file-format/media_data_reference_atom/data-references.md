@@ -9,6 +9,12 @@ An array of data references.
 
 Each data reference is formatted like an atom and contains the following data elements.
 
+- **Size**: A 32-bit integer that specifies the number of bytes in the data reference.
+- **Type**: A 32-bit integer that specifies the type of the data in the data reference. The table below lists valid data reference type values.
+- **Version**: A 1-byte specification of the version of the data reference.
+- **Flags**: A 3-byte space for data reference flags. There is one defined flag, `Self reference`, which indicates that the media’s data is in the same file as the movie atom. On the Macintosh, and other file systems with multi-fork files, set this flag to `1` even if the data resides in a different fork from the movie atom. This flag’s value is `0x0001`.
+- **Data**: The data reference information.
+
 The currently defined data reference types that can be stored in a header atom are as follows:
 
 | Data reference type | Description |

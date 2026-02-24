@@ -29,7 +29,7 @@ The `CGRect` structure’s `y` and `y` values are stored in the vector’s two v
 
 ## Parameters
 
-- `p`: The   structure.
+- `p`: The `CGPoint` structure.
 
 ## See Also
 

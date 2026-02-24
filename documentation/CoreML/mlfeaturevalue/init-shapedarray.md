@@ -22,7 +22,7 @@ convenience init<Scalar>(shapedArray: MLShapedArray<Scalar>) where Scalar : MLSh
 
 ## Parameters
 
-- `shapedArray`: An   instance.
+- `shapedArray`: An [`MLShapedArray`](mlshapedarray.md) instance.
 
 ## See Also
 

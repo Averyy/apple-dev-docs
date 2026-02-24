@@ -26,7 +26,7 @@ To receive a file, start by iterating over items in the [`incomingMessageNotific
 
 ## Parameters
 
-- `content`: The content of the message to send, as an instance of  .
+- `content`: The content of the message to send, as an instance of [`RCSMessage.FileTransfer`](rcsmessage/filetransfer.md).
 - `destination`: The destination handle to send the message to.
 - `cellularServiceID`: The service identifier to use for the message.
 - `messageID`: The message identifier to use for the message.

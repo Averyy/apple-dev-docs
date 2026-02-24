@@ -26,10 +26,10 @@ func CFDateFormatterGetAbsoluteTimeFromString(_ formatter: CFDateFormatter!, _ s
 
 ## Parameters
 
-- `formatter`: The date formatter object to use to parse  .
+- `formatter`: The date formatter object to use to parse `string`.
 - `string`: The string that contains the time to be parsed.
-- `rangep`: Reference to the range within the string specifying the substring to be parsed. If  , the whole string is parsed. On return, the range that defines the extent of the parse (may be less than the given range).
-- `atp`: An absolute time value, returned by reference, that represents  . Ownership follows the  .
+- `rangep`: Reference to the range within the string specifying the substring to be parsed. If `NULL`, the whole string is parsed. On return, the range that defines the extent of the parse (may be less than the given range).
+- `atp`: An absolute time value, returned by reference, that represents `string`. Ownership follows the [`The Get Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
 ## See Also
 

@@ -22,7 +22,7 @@ case type3
 
 #### Description
 
-This is documented in , which is available from [`http://partners.adobe.com/`](https://developer.apple.comhttp://partners.adobe.com/).
+This is documented in *PostScript Language Reference, 3rd edition*, which is available from [`http://partners.adobe.com/`](https://developer.apple.comhttp://partners.adobe.com/).
 
 ## See Also
 

@@ -33,9 +33,9 @@ This is a convenience method for initializing a linguistic tagger, setting the [
 ## Parameters
 
 - `string`: The range from which to return tags.
-- `range`: The linguistic unit. See   for possible values.
-- `unit`: The tag scheme. See   for possible values.
-- `scheme`: The linguistic tagger options to use. See   for possible values.
+- `range`: The linguistic unit. See [`NSLinguisticTaggerUnit`](nslinguistictaggerunit.md) for possible values.
+- `unit`: The tag scheme. See [`NSLinguisticTagScheme`](nslinguistictagscheme.md) for possible values.
+- `scheme`: The linguistic tagger options to use. See [`NSLinguisticTagger.Options`](nslinguistictagger/options.md) for possible values.
 - `options`: Returns by reference an array of token ranges.
 
 ## See Also

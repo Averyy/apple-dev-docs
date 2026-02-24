@@ -56,7 +56,7 @@ In this example, the output shows that the [`print(_:to:)`](publisher/print(_:to
 
 ## Parameters
 
-- `createSubject`: A closure to create a new   each time a subscriber attaches to the multicast publisher.
+- `createSubject`: A closure to create a new [`Subject`](subject.md) each time a subscriber attaches to the multicast publisher.
 
 ## See Also
 

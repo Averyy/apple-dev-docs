@@ -18,6 +18,13 @@ enum {
 };
 ```
 
+**Constant Descriptions**
+
+- **`kQTVRValidPan`**: The setting for using the destination pan angle.
+- **`kQTVRValidTilt`**: The setting for using the destination tilt angle.
+- **`kQTVRValidFOV`**: The setting for using the destination field of view.
+- **`kQTVRValidViewCenter`**: The setting for using the destination view center.
+
 ## See Also
 
 - [majorVersion](link_hot_spot_atom/majorversion.md)

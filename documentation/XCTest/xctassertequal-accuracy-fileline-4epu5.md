@@ -17,9 +17,9 @@ func XCTAssertEqual<T>(_ expression1: @autoclosure () throws -> T, _ expression2
 
 ## Parameters
 
-- `expression1`: An expression of type  , where   conforms to  .
-- `expression2`: A second expression of type  , where   conforms to  .
-- `accuracy`: An expression of type  , where   conforms to  . This parameter describes the maximum difference between   and   for these values to be considered equal.
+- `expression1`: An expression of type `T`, where `T` conforms to [`Numeric`](https://developer.apple.com/documentation/Swift/Numeric).
+- `expression2`: A second expression of type `T`, where `T` conforms to [`Numeric`](https://developer.apple.com/documentation/Swift/Numeric).
+- `accuracy`: An expression of type `T`, where `T` conforms to [`Numeric`](https://developer.apple.com/documentation/Swift/Numeric). This parameter describes the maximum difference between `expression1` and `expression2` for these values to be considered equal.
 - `message`: An optional description of a failure.
 - `file`: The file where the failure occurs. The default is the filename of the test case where you call this function.
 - `line`: The line number where the failure occurs. The default is the line number where you call this function.

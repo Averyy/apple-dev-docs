@@ -22,7 +22,7 @@ func unlock(withCondition condition: Int)
 
 ## Parameters
 
-- `condition`: The user-defined condition for the lock. The value of   is user-defined; see the class description for more information.
+- `condition`: The user-defined condition for the lock. The value of `condition` is user-defined; see the class description for more information.
 
 ## See Also
 

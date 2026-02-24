@@ -21,7 +21,7 @@ func dateSelection(_ selection: UICalendarSelectionSingleDate, didSelectDate dat
 ## Parameters
 
 - `selection`: An object that tracks a date that a user selects from a calendar view.
-- `dateComponents`: Date components that represent a date the user selected, or   if the user deselected a date.
+- `dateComponents`: Date components that represent a date the user selected, or `nil` if the user deselected a date.
 
 
 ---

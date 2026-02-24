@@ -61,7 +61,7 @@ setTunnelNetworkSettings(networkSettings) { error in
 
 Note that the system routing table supersedes the `includedRoutes` and `excludedRoutes` properties. For example, if a table routes traffic to hosts on the local network, those routes supersede these properties.
 
-Also, if an app creates a network connection that routes traffic over a specific network interface, called , then it supersedes the system routing table.
+Also, if an app creates a network connection that routes traffic over a specific network interface, called *scoping*, then it supersedes the system routing table.
 
 ##### Route Additional Traffic Through a Personal Vpn or Packet Tunnel Provider
 

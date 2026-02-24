@@ -6,6 +6,8 @@ Provide timely information and keep people connected to their friends using tech
 
 Staying connected with friends and family is an important part of people’s everyday lives. Embrace technologies that help people interact with the people around them, and keep people informed about events happening all around the world.
 
+---
+
 #### Keep People Informed with Notifications
 
 Notifications are a way to draw someone’s attention to important or time-sensitive information. When your app is running, you can [`Scheduling a notification locally from your app`](https://developer.apple.com/documentation/UserNotifications/scheduling-a-notification-locally-from-your-app) in play a sound or display information at a certain time or place. If your app is running, it receives local notifications quietly so it can display its own interface. If your app isn’t running, the system displays a notification interface to alert the person to the event.
@@ -18,6 +20,8 @@ In addition to keeping people informed about relevant events, [`Implementing Bac
 
 Because push notifications are a potential disruption, apps must receive authorization to deliver them to people’s devices. [`Asking permission to use notifications`](https://developer.apple.com/documentation/UserNotifications/asking-permission-to-use-notifications) at a point in your app’s execution where the request makes sense. For example, you might wait to enable push notifications until the person enables features that rely on them. When requesting authorization, pay attention to the response you get. If someone chooses to deny your request, or limit the types of notifications you can send, make a note on your server to avoid sending any unwanted data.
 
+---
+
 #### Make Your Content Available to Siri
 
 Siri is Apple’s intelligent voice assistant, and people use it regularly to interact with their devices. When you add support for [`App Intents`](https://developer.apple.com/documentation/AppIntents) to your app, you give Siri the ability to interact with your app’s features. For example, if someone asks Siri to “play my favorite playlist” from your music app, Siri finds the requested playlist and instructs your app to start playing music.
@@ -25,6 +29,8 @@ Siri is Apple’s intelligent voice assistant, and people use it regularly to in
 The [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework helps you add the information Siri needs to your app’s existing data structures. You don’t have to rearchitect your code to add Siri support. Instead, you use protocols to turn your app’s existing data types into [`App entities`](https://developer.apple.com/documentation/AppIntents/app-entities), and turn relevant actions into [`App intents`](https://developer.apple.com/documentation/AppIntents/app-intents). Siri uses this information to locate the data and actions it needs to fulfill a request. It then calls your code to actually handle the fulfillment process.
 
 > **Note**: People interact with HomePod speakers primarily using Siri. If your company offers streaming music services, support the [`SiriKit Cloud Media`](https://developer.apple.com/documentation/SiriKitCloudMedia) web service to let people use Siri to stream your music directly to HomePod speakers.
+
+---
 
 #### Share Your Apps Activities
 

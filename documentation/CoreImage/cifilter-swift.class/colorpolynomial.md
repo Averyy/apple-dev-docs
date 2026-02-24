@@ -29,6 +29,12 @@ This method applies the color polynomial filter to an image. The effect calculat
 
 The color polynomial filter uses the following properties:
 
+- **`redCoefficients`**: A vector representing the polynomial coefficients for the red channel as a [`CIVector`](civector.md).
+- **`greenCoefficients`**: A vector representing the polynomial coefficients for the green channel as a [`CIVector`](civector.md).
+- **`blueCoefficients`**: A vector representing the polynomial coefficients for the blue channel as a [`CIVector`](civector.md).
+- **`alphaCoefficients`**: A vector representing the polynomial coefficients for the alpha channel as a [`CIVector`](civector.md).
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds a lighter contrast to the input image:
 
 ```swift

@@ -20,7 +20,7 @@ func removeAllCredentialIdentities() async throws
 
 ## Parameters
 
-- `completion`: An optional completion handler called after removing all existing credential identities. If the operation fails, an error with domain   is provided and none of the existing credential identities are removed from the store.
+- `completion`: An optional completion handler called after removing all existing credential identities. If the operation fails, an error with domain [`ASCredentialIdentityStoreErrorDomain`](ascredentialidentitystoreerrordomain.md) is provided and none of the existing credential identities are removed from the store.
 
 ## See Also
 

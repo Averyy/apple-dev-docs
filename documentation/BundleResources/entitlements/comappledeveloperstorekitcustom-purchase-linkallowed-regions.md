@@ -13,25 +13,28 @@ An entitlement that enables a qualifying app to offer external purchases within 
 - visionOS 26.2+
 - watchOS 26.2+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 This entitlement enables a qualifying app to offer external purchases within the app or at a website of its choice, in specific regions.
 
-If your account receives this entitlement, you can add it to your app by opening the project’s `.entitlements` file in Xcode. Then, add a key named `com.apple.developer.storekit.custom-purchase-link.allowed-regions`, followed by an array that enumerates the two-letter ISO-3166-1 country codes for the allowed regions. The example below describes an entitlement that includes Germany and Italy as the allowed regions that the app supports.
+If your account receives this entitlement, you can add it to your app by opening the project’s `.entitlements` file in Xcode. Then, add a key named `com.apple.developer.storekit.custom-purchase-link.allowed-regions`, followed by an array that enumerates the two-letter ISO-3166-1 country codes for the allowed regions. The example below describes an entitlement that includes Japan as the allowed region that the app supports.
 
 ```None
 <plist>
 <dict>
     <key>com.apple.developer.storekit.custom-purchase-link.allowed-regions</key>
     <array>
-     <string>it</string>
-     <string>de</string>
+     <string>jp</string>
     </array>
 </dict>
 </plist>
 ```
 
-> ❗ **Important**: Provide the regions where you intend to offer this functionality. This must only include regions where Apple has authorized your app to offer alternative payment options.
+> ❗ **Important**: Provide the regions where you intend to offer this functionality. This must only include regions where Apple supports custom purchase link options.
 
 For more information, see [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase).
 

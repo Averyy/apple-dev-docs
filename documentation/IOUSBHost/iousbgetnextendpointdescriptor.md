@@ -26,8 +26,8 @@ This method uses [`IOUSBGetNextAssociatedDescriptorWithType(_:_:_:_:)`](iousbget
 ## Parameters
 
 - `configurationDescriptor`: A configuration descriptor that contains the descriptors to iterate through.
-- `interfaceDescriptor`: An interface descriptor within the bounds of  .
-- `currentDescriptor`: A descriptor pointer within the bounds of  , or  .
+- `interfaceDescriptor`: An interface descriptor within the bounds of `configurationDescriptor`.
+- `currentDescriptor`: A descriptor pointer within the bounds of `configurationDescriptor`, or `nil`.
 
 ## See Also
 

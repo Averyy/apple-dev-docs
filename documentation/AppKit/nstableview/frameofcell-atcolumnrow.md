@@ -28,7 +28,7 @@ The default frame is computed to have a height equal to the [`rect(ofRow:)`](nst
 
 ## Parameters
 
-- `column`: The index in the   array of the column containing the cell whose rectangle you want.
+- `column`: The index in the [`tableColumns`](nstableview/tablecolumns.md) array of the column containing the cell whose rectangle you want.
 - `row`: The index of the row containing the cell whose rectangle you want.
 
 ## See Also

@@ -33,8 +33,8 @@ The `imageBuffer` parameter must be in one of the following formats:
 
 ## Parameters
 
-- `imageBuffer`: A    object in a supported pixel format constant. For more information, see  .
-- `options`: A dictionary that contains options for creating an image object. (See  .) The pixel format is supplied by the   object.)
+- `imageBuffer`: A  `CVImageBuffer` object in a supported pixel format constant. For more information, see [`Core Video`](https://developer.apple.com/documentation/CoreVideo).
+- `options`: A dictionary that contains options for creating an image object. (See `Image Dictionary Keys`.) The pixel format is supplied by the `CVImageBuffer` object.)
 
 ## See Also
 

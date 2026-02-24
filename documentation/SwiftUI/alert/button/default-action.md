@@ -27,7 +27,7 @@ An alert button with the default style.
 ## Parameters
 
 - `label`: The text to display on the button.
-- `action`: A closure to execute when the user taps or presses the   button.
+- `action`: A closure to execute when the user taps or presses the button.
 
 ## See Also
 

@@ -32,7 +32,7 @@ Invoke this method with `NULL` as `value` to simply scan past a decimal integer 
 
 ## Parameters
 
-- `result`: Upon return, contains the scanned value. Contains   or   on overflow.
+- `result`: Upon return, contains the scanned value. Contains `INT_MAX` or `INT_MIN` on overflow.
 
 ## See Also
 

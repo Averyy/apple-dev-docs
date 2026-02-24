@@ -24,8 +24,8 @@ Keep calling this method until the value in the interface parameter is `NULL`.
 
 ## Parameters
 
-- `ref`: The opaque iterator reference you received from the   method.
-- `interface`: A pointer to a variable. On output, this variable contains a pointer to the next   object. When there are no more iterfaces, this method assigns   to the variable.
+- `ref`: The opaque iterator reference you received from the [`CreateInterfaceIterator`](iousbhostdevice/createinterfaceiterator.md) method.
+- `interface`: A pointer to a variable. On output, this variable contains a pointer to the next [`IOUSBHostInterface`](iousbhostinterface.md) object. When there are no more iterfaces, this method assigns `NULL` to the variable.
 
 ## See Also
 

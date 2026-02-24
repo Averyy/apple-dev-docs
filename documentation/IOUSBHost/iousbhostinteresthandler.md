@@ -21,9 +21,9 @@ This is the block for the `kIOGeneralInterest` handler, and handles underlying s
 
 ## Parameters
 
-- `hostObject`: The   of the interest notification.
-- `messageType`: A   enumeration that   or the   family defines.
-- `messageArgument`: An argument for the message, dependent on the message type. If the message data is larger than  ,   contains a pointer to the message data; otherwise,   contains the message data.
+- `hostObject`: The [`IOUSBHostObject`](iousbhostobject.md) of the interest notification.
+- `messageType`: A `messageType` enumeration that `IOKit/IOMessage.h` or the [`IOService`](https://developer.apple.com/documentation/kernel/ioservice) family defines.
+- `messageArgument`: An argument for the message, dependent on the message type. If the message data is larger than `sizeof(void*)`, `messageArgument` contains a pointer to the message data; otherwise, `messageArgument` contains the message data.
 
 ## See Also
 

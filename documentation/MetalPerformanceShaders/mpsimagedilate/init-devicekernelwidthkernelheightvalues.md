@@ -34,7 +34,7 @@ Values should be generally be in the range `[0,1]` with the center pixel tending
 - `device`: The Metal device the filter will run on.
 - `kernelWidth`: The width of the kernel. Must be an odd number.
 - `kernelHeight`: The height of the kernel. Must be an odd number.
-- `values`: The set of values to use as the dilate probe. The values are copied into the filter. To avoid image lightening or darkening, the center value should be  .
+- `values`: The set of values to use as the dilate probe. The values are copied into the filter. To avoid image lightening or darkening, the center value should be `0.0f`.
 
 
 ---

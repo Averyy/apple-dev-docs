@@ -20,7 +20,7 @@ An effect that activates the given hover group.
 
 ## Parameters
 
-- `group`: The   to activate when this view is hovered.   If  , this modifier has no effect.
+- `group`: The `HoverEffectGroup` to activate when this view is hovered. If `nil`, this modifier has no effect.
 
 
 ---

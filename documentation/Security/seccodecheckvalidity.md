@@ -28,8 +28,8 @@ This function is secure against attempts to modify the file system source of the
 ## Parameters
 
 - `code`: The code object to be validated.
-- `flags`: Optional flags; see   for possible values. Pass   for standard behavior.
-- `requirement`: A code requirement specifying additional conditions the code must satisfy to be considered valid. Specify   if you don’t want to impose any additional requirements. Use the   or   function to create a code requirement object. See   for a discussion of code requirements.
+- `flags`: Optional flags; see [`SecCSFlags`](seccsflags.md) for possible values. Pass [`kSecCSDefaultFlags`](seccsflags/kseccsdefaultflags.md) for standard behavior.
+- `requirement`: A code requirement specifying additional conditions the code must satisfy to be considered valid. Specify `NULL` if you don’t want to impose any additional requirements. Use the [`SecRequirementCreateWithString(_:_:_:)`](secrequirementcreatewithstring(_:_:_:).md) or [`SecRequirementCreateWithStringAndErrors(_:_:_:_:)`](secrequirementcreatewithstringanderrors(_:_:_:_:).md) function to create a code requirement object. See [`Code Signing Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005929) for a discussion of code requirements.
 
 
 ---

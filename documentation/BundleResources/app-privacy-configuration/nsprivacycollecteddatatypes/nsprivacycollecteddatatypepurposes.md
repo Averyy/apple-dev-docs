@@ -18,6 +18,10 @@ An array of strings that identify reasons your app or third-party SDK collects p
 
 - [Describing data use in privacy manifests](describing-data-use-in-privacy-manifests.md)
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [NSPrivacyCollectedDataType](app-privacy-configuration/nsprivacycollecteddatatypes/nsprivacycollecteddatatype.md)

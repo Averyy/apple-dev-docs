@@ -24,7 +24,7 @@ If no tick mark is associated with `index`, the method raises `NSRangeException`
 
 ## Parameters
 
-- `index`: The index of the tick mark for which to retrieve the bounds.  The minimum-value tick mark is at index  .
+- `index`: The index of the tick mark for which to retrieve the bounds.  The minimum-value tick mark is at index `0`.
 
 ## See Also
 

@@ -30,8 +30,8 @@ The returned mutable string is identical to the original string except for (perh
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new string. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `maxLength`: The maximum number of Unicode characters that can be stored by the returned object. Pass   if there should be no character limit. Note that initially the returned object still has the same length as the string argument; this parameter simply specifies what the maximum size is. CFString might try to optimize its internal storage by paying attention to this value.
+- `alloc`: The allocator to use to allocate memory for the new string. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `maxLength`: The maximum number of Unicode characters that can be stored by the returned object. Pass `0` if there should be no character limit. Note that initially the returned object still has the same length as the string argument; this parameter simply specifies what the maximum size is. CFString might try to optimize its internal storage by paying attention to this value.
 - `theString`: A string to copy.
 
 ## See Also

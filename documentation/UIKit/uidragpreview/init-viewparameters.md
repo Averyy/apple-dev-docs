@@ -27,8 +27,8 @@ Use this method to display a custom drag item preview based on the provided view
 
 ## Parameters
 
-- `view`: A   object representing the drag item.
-- `parameters`: A   object containing appearance parameters for the drag item preview.
+- `view`: A [`UIView`](uiview.md) object representing the drag item.
+- `parameters`: A [`UIDragPreviewParameters`](uidragpreviewparameters.md) object containing appearance parameters for the drag item preview.
 
 ## See Also
 

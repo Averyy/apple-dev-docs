@@ -29,9 +29,10 @@ Performs glyph generation and layout if needed.
 ## Parameters
 
 - `glyphRange`: The glyph range for which to return enclosing rectangles.
-- `selectedRange`: Selected glyphs within  , which can affect the size of the rectangles. If not interested in selection rectangles, pass   as the selected range.
+- `selectedRange`: Selected glyphs within `glyphRange`, which can affect the size of the rectangles. If not interested in selection rectangles, pass `{NSNotFound, 0}` as the selected range.
 - `textContainer`: The text container in which the glyphs are laid out.
-- `block`: The block to apply to the glyph range. The block has two arguments:
+- `block`: The block to apply to the glyph range. The block has two arguments: - **rect**: The current enclosing rectangle.
+- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop further processing of the array. The stop argument is an out-only argument. You should only set this Boolean to [`true`](https://developer.apple.com/documentation/Swift/true) within the block.
 
 ## See Also
 

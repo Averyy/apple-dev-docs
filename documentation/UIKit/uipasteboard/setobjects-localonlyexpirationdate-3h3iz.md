@@ -20,8 +20,8 @@ func setObjects(_ objects: [any NSItemProviderWriting], localOnly: Bool, expirat
 ## Parameters
 
 - `objects`: An array of item providers for the pasteboard.
-- `localOnly`: If  , the pasteboard items are available to other devices through the Handoff feature; if  , the pasteboard items are only available to the local device.
-- `expirationDate`: An   value that specifies the time and date that you want the system to remove the pasteboard items from the pasteboard.
+- `localOnly`: If [`false`](https://developer.apple.com/documentation/Swift/false), the pasteboard items are available to other devices through the Handoff feature; if [`true`](https://developer.apple.com/documentation/Swift/true), the pasteboard items are only available to the local device.
+- `expirationDate`: An [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) value that specifies the time and date that you want the system to remove the pasteboard items from the pasteboard.
 
 ## See Also
 

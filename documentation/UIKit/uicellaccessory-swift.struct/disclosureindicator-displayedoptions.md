@@ -28,8 +28,8 @@ Use this cell accessory to indicate that users can tap on the cell to disclose a
 
 ## Parameters
 
-- `displayed`: The cell-editing states that the disclosure indicator appears in. This parameter has a default value of  .
-- `options`: Configuration options for the disclosure indicator. See   for possible configuration options.
+- `displayed`: The cell-editing states that the disclosure indicator appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.always`](uicellaccessory-swift.struct/displayedstate/always.md).
+- `options`: Configuration options for the disclosure indicator. See [`UICellAccessory.DisclosureIndicatorOptions`](uicellaccessory-swift.struct/disclosureindicatoroptions.md) for possible configuration options.
 
 ## See Also
 

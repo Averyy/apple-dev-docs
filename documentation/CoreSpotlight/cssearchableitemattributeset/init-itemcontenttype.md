@@ -24,7 +24,7 @@ An attribute set that represents an item of the specified content type.
 
 ## Parameters
 
-- `itemContentType`: The uniform type identifier of the content. For example,   or  .
+- `itemContentType`: The uniform type identifier of the content. For example, `kUTTypePNG` or `kUTTypeMovie`.
 
 
 ---

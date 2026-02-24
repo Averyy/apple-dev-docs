@@ -25,7 +25,7 @@ The toggle will use “On” and “Off” as default value label.
 
 ## Parameters
 
-- `isOn`: A boolean value that describes the current value of the   toggle.
+- `isOn`: A boolean value that describes the current value of the toggle.
 - `action`: The action the toggle performs when pressed.
 - `label`: A view that renders the toggle’s label.
 

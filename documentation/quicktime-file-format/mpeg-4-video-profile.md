@@ -4,6 +4,11 @@
 
 #### Overview
 
+- **Containing profile atom**: Track (video), movie
+- **`part-ID`**: `0x20202020` (universal feature)
+- **`feature-code`**: ’`m4vp'`
+- **`feature-value`**: Unsigned `int(32)` where least significant 8 bits hold the `profile_and_level_indication` from the `visual_object_sequence`, as defined in specification ISO/IEC 14496-2, retrieved from the video parameters for the MPEG-4 video codec description. The top 24 bits must be set to `0`.
+
 #### Feature Values
 
 The least significant 8 bits hold the value. The most significant 24 bits of the feature value should be set to `0`.

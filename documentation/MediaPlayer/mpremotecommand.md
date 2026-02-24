@@ -28,6 +28,38 @@ To respond to a particular event, register a handler with the appropriate [`MPRe
 
 Listing 1. Registering a remote control event handler
 
+**Swift**:
+
+```swift
+// Get the shared command center.
+let commandCenter = MPRemoteCommandCenter.shared()
+
+// Add a handler for the play command.
+commandCenter.playCommand.addTarget { [unowned self] event in
+    if self.player.rate == 0.0 {
+        self.player.play()
+        return .success
+    }
+    return .commandFailed
+}
+```
+
+**Objective-C**:
+
+```objc
+// Get the shared command center.
+MPRemoteCommandCenter *commandCenter = [MPRemoteCommandCenter sharedCommandCenter];
+
+// Add a handler for the play command.
+[commandCenter.playCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent * _Nonnull event) {
+    if (self.player.rate == 0.0) {
+        [self.player play];
+        return MPRemoteCommandHandlerStatusSuccess;
+    }
+    return MPRemoteCommandHandlerStatusCommandFailed;
+}];
+```
+
 If you explicitly don’t want to enable a given command, fetch the command object and set its enabled property to [`false`](https://developer.apple.com/documentation/Swift/false). Disabling a remote command lets the system know that it shouldn’t display any related UI for that command when your app is the Now Playing app.
 
 The framework defines many subclasses to handle specific kinds of commands. Sometimes, these subclasses let you specify other information related to the command. For example, feedback commands let you specify a localized string that describes the meaning of the feedback. When supporting a particular command, be sure to look up the specific class used to handle those events.

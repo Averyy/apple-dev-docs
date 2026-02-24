@@ -16,7 +16,10 @@ func sendDTMF(_ character: String!)
 
 ## Parameters
 
-- `character`: The phone keypad character for the tone. The character must be one of the following:
+- `character`: The phone keypad character for the tone. The character must be one of the following: - `0-9`
+- `#`
+- `*`
+- `A-D`
 
 ## See Also
 

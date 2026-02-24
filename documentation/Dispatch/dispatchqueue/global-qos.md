@@ -28,7 +28,7 @@ Tasks submitted to the returned queue are scheduled concurrently with respect to
 
 ## Parameters
 
-- `qos`: The quality-of-service level to associate with the queue. This value determines the priority at which the system schedules tasks for execution. For a list of possible values, see  .
+- `qos`: The quality-of-service level to associate with the queue. This value determines the priority at which the system schedules tasks for execution. For a list of possible values, see [`DispatchQoS.QoSClass`](dispatchqos/qosclass-swift.enum.md).
 
 ## See Also
 

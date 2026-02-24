@@ -8,6 +8,10 @@ A message that tells people why your app is requesting access to capture system 
 **Availability**:
 - macOS 14.2+
 
+
+
+**Type**: string
+
 #### Discussion
 
 For more information, see [`Capturing system audio with Core Audio taps`](https://developer.apple.com/documentation/CoreAudio/capturing-system-audio-with-core-audio-taps).

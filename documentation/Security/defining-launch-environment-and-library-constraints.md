@@ -6,7 +6,7 @@ Restrict your app’s components to their expected contexts.
 
 #### Overview
 
-You define launch environment and library constraints in constraint dictionaries that you either save in `launchd` property list files, or in separate property list files that you use in code signing. The constraint dictionaries you create contain  and . Facts are assertions that properties of the executable the operating system is launching, or the library your process is loading, match conditions you specify. Operations allow for rich combinations of facts.
+You define launch environment and library constraints in constraint dictionaries that you either save in `launchd` property list files, or in separate property list files that you use in code signing. The constraint dictionaries you create contain *facts* and *operations*. Facts are assertions that properties of the executable the operating system is launching, or the library your process is loading, match conditions you specify. Operations allow for rich combinations of facts.
 
 The top level of a constraint dictionary is implicitly an `$and` operation that includes all of the facts and operations in the dictionary. When one process tries to launch another process — by calling `execve(_:_:_:)` or `posix_spawn(_:_:_:_:_:_:)` — the operating system checks that the executable file satisfies its own self constraint. It also checks that the parent process’s executable satisfies the executable’s parent constraint, and that the responsible process’s executable satsifies the executable’s responsible process constraint. If any of these launch constraints aren’t satisfied, the operating system doesn’t run the program.
 
@@ -18,9 +18,22 @@ Your process can load a dynamic library if all of the facts and operations at th
 
 Construct the launch constraint by adding keys and values that represent constraint facts, and operators that combine facts using logical operations. Use facts from the list below in your launch constraint.
 
+- **`cdhash`**: A binary data sequence that’s the hash of the code directory content of an executable, or an `$in` operator whose parameter is a list of data sequences. An executable satisfies this constraint if its code directory hash is the same as the value in the constraint. For more information about code directory hashes, see [`TN3126: Inside Code Signing: Hashes`](https://developer.apple.com/documentation/Technotes/tn3126-inside-code-signing-hashes).
+
 A single executable file can contain multiple code directory hashes, for different CPU architectures and hash algorithms. Identify an executable’s code directory hash using a collection of valid hashes and the `$in` operation.
 
+- **`entitlements`**: An entitlement query that names an entitlement and gives its expected value. An executable satisfies this constraint if its code signature includes this entitlement with the specified value. For a list of entitlements, see [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements). For information on how to construct an entitlement query, see the `$query` operator below.
+- **`is-init-proc`**: A Boolean value that indicates whether the executable must be the operating system’s initialization process (`launchd`).
+- **`is-sip-protected`**: A Boolean value that indicates whether the executable must be a file protected by System Integrity Protection (SIP).
+- **`launch-type`**: An integer value that describes the context in which the operating system is launching the executable. Launch type 0 is the default, meaning the operating system didn’t set a launch type. Starting in macOS 14.0, Launch Services sets launch type 3 when launching an executable to start an app; for example, when a person clicks an app icon in the Dock. Launch types 1 and 2 are reserved for use by the operating system.
+- **`on-authorized-authapfs-volume`**: A Boolean value that indicates whether the operating system loaded the executable from an authorized, authenticated APFS volume.
+- **`on-system-volume`**: A Boolean value that indicates whether the operating system loaded the executable from the currently-booted system volume.
+- **`signing-identifier`**: A string that’s a code signing identifier, or an `$in` operator whose parameter is a list of strings. An executable satisfies this constraint if its signing identifier is the same as the value in the constraint. The code signing identifier for an executable file is usually the [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier) in the information property list of the bundle that contains the executable.
+- **`team-identifier`**: A string that identifies a registered developer, or an `$in` operator whose parameter is a list of strings. An executable satisfies this constraint if the team that signed the executable matches the value in the constraint.
+
 Team identifiers are present in executables signed by code signing identities for development, TestFlight, App Store, or Developer ID.
+
+- **`validation-category`**: An integer that’s a code signature validation category, or a `$in` operator whose parameter is a list of integers. An executable satisfies this constraint if its signature is consistent with the validation category in the constraint. Use values for the validation category from the table below.
 
 Use values from the table below with the `validation-category` fact.
 

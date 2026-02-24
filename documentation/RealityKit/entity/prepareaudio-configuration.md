@@ -32,7 +32,7 @@ If you want to start playback immediately, use the [`playAudio(configuration:_:)
 
 ## Parameters
 
-- `configuration`: A set of configuration parameters necessary for initializing and rendering the  .
+- `configuration`: A set of configuration parameters necessary for initializing and rendering the `generatorRenderHandler`.
 - `generatorRenderHandler`: The audio render handler to prepare. The system runs this handler to generate real-time audio.
 
 ## See Also

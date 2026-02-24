@@ -25,7 +25,7 @@ Call this method only on the VM’s queue.
 
 ## Parameters
 
-- `completionHandler`: The   parameter passed to the block is   if installation was successful. The framework invokes the block on the VM’s queue. The completion handler returns an   parameter that describes the reason for the failure; the   is   if installation was successful.
+- `completionHandler`: A block the framework calls after installation has completed successfully or has failed. The `error` parameter passed to the block is `nil` if installation was successful. The framework invokes the block on the VM’s queue. The completion handler returns an `error` parameter that describes the reason for the failure; the `error` is `nil` if installation was successful.
 
 ## See Also
 

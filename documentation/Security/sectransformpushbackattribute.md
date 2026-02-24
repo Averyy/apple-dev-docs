@@ -24,8 +24,8 @@ Calling this function stops the flow of data into the specified attribute until 
 
 ## Parameters
 
-- `ref`: A   that is bound to an instance of a custom transform.
-- `attribute`: The name or the attribute handle of the attribute whose value is to be pushed back. When using a name, see   for a list of valid key names.
+- `ref`: A [`SecTransformImplementationRef`](sectransformimplementationref.md) that is bound to an instance of a custom transform.
+- `attribute`: The name or the attribute handle of the attribute whose value is to be pushed back. When using a name, see [`Transform Attributes`](transform-attributes.md) for a list of valid key names.
 - `value`: The value being pushed back.
 
 

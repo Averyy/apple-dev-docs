@@ -17,7 +17,7 @@ func setOverlay(_ layer: CALayer!, forType layerType: String!)
 ## Parameters
 
 - `layer`: A Core Animation layer object.
-- `layerType`: A layer type. See  .
+- `layerType`: A layer type. See [`Overlay Types`](overlay-types.md).
 
 ## See Also
 

@@ -32,7 +32,7 @@ Set a depth bias to improve the quality of techniques such as shadow mapping and
 
 - `depthBias`: A constant bias the render pipeline applies to all fragments.
 - `slopeScale`: A bias coefficient that scales with the depth of the primitive relative to the camera.
-- `clamp`: You can disable the bias clamping functionality by passing  .
+- `clamp`: A value that limits the bias value the render pipeline can apply to a fragment. Pass a positive or negative value to limit the largest magnitude of a positive or negative bias, respectively. You can disable the bias clamping functionality by passing `0.0`.
 
 ## See Also
 

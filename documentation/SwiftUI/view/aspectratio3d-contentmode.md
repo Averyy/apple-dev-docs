@@ -39,8 +39,8 @@ Model3D(named: "Sphere") { resolved in
 
 ## Parameters
 
-- `aspectRatio`: The ratio of width to height to depth to use for   the resulting view. If   is  ,   the resulting view maintains this view’s aspect ratio.
-- `contentMode`: A flag indicating whether this view should fit or   fill the parent context.
+- `aspectRatio`: The ratio of width to height to depth to use for the resulting view. If `aspectRatio` is `nil`, the resulting view maintains this view’s aspect ratio.
+- `contentMode`: A flag indicating whether this view should fit or fill the parent context.
 
 
 ---

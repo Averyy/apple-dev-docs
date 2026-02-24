@@ -29,10 +29,10 @@ To make use of this noise source, create a [`GKNoise`](gknoise.md) object from i
 
 ## Parameters
 
-- `frequency`: The initial value for the   property, which determines the number and size of visible features in any given unit area of generated noise.
-- `octaveCount`: The initial value for the   property, which determines the complexity of generated noise.
-- `lacunarity`: The initial value for the   property, which determines the increase in frequency between octaves and thus the gradation between coarseness and uniformity in generated noise.
-- `seed`: The initial value for the   property, which determines the overall structure of generated noise.
+- `frequency`: The initial value for the `frequency` property, which determines the number and size of visible features in any given unit area of generated noise.
+- `octaveCount`: The initial value for the [`octaveCount`](gkcoherentnoisesource/octavecount.md) property, which determines the complexity of generated noise.
+- `lacunarity`: The initial value for the [`lacunarity`](gkcoherentnoisesource/lacunarity.md) property, which determines the increase in frequency between octaves and thus the gradation between coarseness and uniformity in generated noise.
+- `seed`: The initial value for the [`seed`](gkcoherentnoisesource/seed.md) property, which determines the overall structure of generated noise.
 
 
 ---

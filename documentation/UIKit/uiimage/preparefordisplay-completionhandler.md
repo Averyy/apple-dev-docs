@@ -44,7 +44,7 @@ func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPat
 
 ## Parameters
 
-- `completionHandler`: This completion handler takes one parameter:
+- `completionHandler`: The closure to call when the function finishes preparing the image. This completion handler takes one parameter: - **`image`**: A new version of the image object for display. If the system can’t decode the image, the parameter value is `nil.`
 
 ## See Also
 

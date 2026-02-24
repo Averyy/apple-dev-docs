@@ -30,8 +30,8 @@ This method calculates the elapsed time between the `startDate` and `endDate` va
 
 ## Parameters
 
-- `startDate`: The start time. This parameter must not be  .
-- `endDate`: The end time. This parameter must not be  .
+- `startDate`: The start time. This parameter must not be `nil`.
+- `endDate`: The end time. This parameter must not be `nil`.
 
 ## See Also
 

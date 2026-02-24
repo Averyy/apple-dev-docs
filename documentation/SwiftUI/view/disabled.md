@@ -39,7 +39,7 @@ HStack {
 
 ## Parameters
 
-- `disabled`: A Boolean value that determines whether users can   interact with this view.
+- `disabled`: A Boolean value that determines whether users can interact with this view.
 
 ## See Also
 

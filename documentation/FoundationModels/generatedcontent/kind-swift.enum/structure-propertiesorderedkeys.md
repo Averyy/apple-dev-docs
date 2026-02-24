@@ -20,7 +20,7 @@ case structure(properties: [String : GeneratedContent], orderedKeys: [String])
 
 ## Parameters
 
-- `properties`: A dictionary mapping string keys to   values.
+- `properties`: A dictionary mapping string keys to [`GeneratedContent`](generatedcontent.md) values.
 - `orderedKeys`: An array of keys that specifies the order of properties.
 
 ## See Also

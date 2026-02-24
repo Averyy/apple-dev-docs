@@ -22,7 +22,7 @@ List item reordering is not enabled unless the delegate implements this method a
 
 - `list`: The widget’s list view controller.
 - `row`: The row that was moved.
-- `newIndex`: The new location of  .
+- `newIndex`: The new location of `row`.
 
 ## See Also
 

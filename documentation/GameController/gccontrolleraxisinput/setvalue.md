@@ -21,7 +21,7 @@ func setValue(_ value: Float)
 
 ## Parameters
 
-- `value`: A normalized value ranging from   to   where   is in the dead zone.
+- `value`: A normalized value ranging from `-1` to `1` where `0` is in the dead zone.
 
 ## See Also
 

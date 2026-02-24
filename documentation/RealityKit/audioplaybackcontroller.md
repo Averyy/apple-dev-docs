@@ -22,7 +22,7 @@ A controller that manages an audio playback instance.
 
 #### Overview
 
-You can obtain an audio playback controller by calling an entity’s Entity/prepareAudio(:) method which creates a controller with the associated [`AudioResource`](audioresource.md). To play multiple instances of a resource, call [`playAudio(_:)`](entity/playaudio(_:).md) to obtain new AudioPlaybackControllers.
+You can obtain an audio playback controller by calling an entity’s Entity/prepareAudio(*:) or Entity/playAudio(*:) method which creates a controller with the associated [`AudioResource`](audioresource.md). To play multiple instances of a resource, call [`playAudio(_:)`](entity/playaudio(_:).md) to obtain new AudioPlaybackControllers.
 
 During playback, the audio appears to come from the entity that you used to create the controller. As you move around the MR scene, RealityKit modulates the characteristics of the audio to account for your location.
 

@@ -52,8 +52,8 @@ if graph.size == 0 {
 ## Parameters
 
 - `filename`: The path to the source mlmodelc file.
-- `function`: The name of the function that this operation compiles. Pass   to specify that the operation compiles all the functions in the source file.
-- `options`: The compilation options. Pass   to specify that the operation uses the default set of options.
+- `function`: The name of the function that this operation compiles. Pass `nil` to specify that the operation compiles all the functions in the source file.
+- `options`: The compilation options. Pass `nil` to specify that the operation uses the default set of options.
 
 ## See Also
 

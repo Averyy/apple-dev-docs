@@ -24,7 +24,7 @@ Block to be invoked when a PSK selection event is complete and a PSK identity is
 
 ## Parameters
 
-- `psk_identity`: A   instance carrying the chosen PSK identity, or nil if one does not match.
+- `psk_identity`: A `dispatch_data_t` instance carrying the chosen PSK identity, or nil if one does not match.
 
 
 ---

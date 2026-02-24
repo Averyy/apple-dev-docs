@@ -25,7 +25,7 @@ The receiver should be an `NSXMLNode` object representing a document, element, o
 
 ## Parameters
 
-- `index`: An integer specifying a node position in the receiver’s array of children. If   is out of bounds, an exception is raised.
+- `index`: An integer specifying a node position in the receiver’s array of children. If `index` is out of bounds, an exception is raised.
 
 ## See Also
 

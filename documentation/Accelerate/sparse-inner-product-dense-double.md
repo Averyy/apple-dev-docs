@@ -3,7 +3,7 @@
 **Framework**: Accelerate  
 **Kind**: func
 
-Computes the inner product of sparse vector  with double-precision , with both vectors containing double-precision values.
+Computes the inner product of sparse vector *x* with double-precision *y*, with both vectors containing double-precision values.
 
 **Availability**:
 - iOS 9.0+
@@ -22,7 +22,7 @@ func sparse_inner_product_dense_double(_ nz: sparse_dimension, _ x: UnsafePointe
 
 #### Return Value
 
-The inner product of sparse vector  with dense vector .  Returns zero if `nz` is less than or equal to zero.
+The inner product of sparse vector *x* with dense vector *y*.  Returns zero if `nz` is less than or equal to zero.
 
 #### Discussion
 
@@ -35,27 +35,27 @@ All indices are 0 based (the first element of a pointer is `ptr[0]`).
 ## Parameters
 
 - `nz`: The number of nonzero entries in the sparse vector x.
-- `x`: Pointer to the dense storage for the values of the sparse vector  . The corresponding entry in   holds the index of the value.  Contains   values.
-- `indx`: Pointer to the dense storage for the index values of the sparse vector  . The corresponding entry in   holds the values of the vector.  Contains   values.
-- `y`: Pointer to the dense vector  . Accessed as  , so dimension must be compatible with largest index value in  . The behavior of this function is undefined if this is not met. Negative strides are supported. Note, unlike dense BLAS routines, the pointer points to the last element when stride is negative.
+- `x`: Pointer to the dense storage for the values of the sparse vector *x*. The corresponding entry in `indx` holds the index of the value.  Contains `nz` values.
+- `indx`: Pointer to the dense storage for the index values of the sparse vector *x*. The corresponding entry in *x* holds the values of the vector.  Contains `nz` values.
+- `y`: Pointer to the dense vector *y*. Accessed as `y[indx[0..nz-1]*incy]`, so dimension must be compatible with largest index value in `indx`. The behavior of this function is undefined if this is not met. Negative strides are supported. Note, unlike dense BLAS routines, the pointer points to the last element when stride is negative.
 - `incy`: Increment between valid values in the dense vector y.  Negative strides are supported.
 
 ## See Also
 
 - [func sparse_inner_product_dense_float(sparse_dimension, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafePointer<Float>!, sparse_stride) -> Float](sparse_inner_product_dense_float(_:_:_:_:_:).md)
-  Computes the inner product of sparse vector  with dense vector  with both vectors containing single-precision values.
+  Computes the inner product of sparse vector *x* with dense vector *y,* with both vectors containing single-precision values.
 - [func sparse_inner_product_sparse_double(sparse_dimension, sparse_dimension, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafePointer<Double>!, UnsafePointer<sparse_index>!) -> Double](sparse_inner_product_sparse_double(_:_:_:_:_:_:).md)
-  Computes the inner product of sparse vector  with sparse vector  with both vectors containing double-precision values.
+  Computes the inner product of sparse vector *x* with sparse vector *y,* with both vectors containing double-precision values.
 - [func sparse_inner_product_sparse_float(sparse_dimension, sparse_dimension, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafePointer<Float>!, UnsafePointer<sparse_index>!) -> Float](sparse_inner_product_sparse_float(_:_:_:_:_:_:).md)
-  Computes the inner product of sparse vector  with sparse vector  with both vectors containing single-precision values.
+  Computes the inner product of sparse vector *x* with sparse vector *y,* with both vectors containing single-precision values.
 - [func sparse_vector_add_with_scale_dense_double(sparse_dimension, Double, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<Double>!, sparse_stride)](sparse_vector_add_with_scale_dense_double(_:_:_:_:_:_:).md)
-  Scales the sparse vector  by  and adds the result to the dense vector  with both vectors containing double-precision values.
+  Scales the sparse vector *x* by *alpha* and adds the result to the dense vector *y,* with both vectors containing double-precision values.
 - [func sparse_vector_add_with_scale_dense_float(sparse_dimension, Float, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<Float>!, sparse_stride)](sparse_vector_add_with_scale_dense_float(_:_:_:_:_:_:).md)
-  Scales the sparse vector  by  and adds the result to the dense vector  with both vectors containing single-precision values.
+  Scales the sparse vector *x* by *alpha* and adds the result to the dense vector *y,* with both vectors containing single-precision values.
 - [func sparse_vector_norm_double(sparse_dimension, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, sparse_norm) -> Double](sparse_vector_norm_double(_:_:_:_:).md)
-  Computes the specified norm of the double-precision sparse vector .
+  Computes the specified norm of the double-precision sparse vector *x*.
 - [func sparse_vector_norm_float(sparse_dimension, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, sparse_norm) -> Float](sparse_vector_norm_float(_:_:_:_:).md)
-  Computes the specified norm of the single-precision sparse vector .
+  Computes the specified norm of the single-precision sparse vector *x*.
 
 
 ---

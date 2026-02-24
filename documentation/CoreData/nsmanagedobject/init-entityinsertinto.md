@@ -38,7 +38,7 @@ In many applications, there is no need to subsequently assign a newly-created ma
 
 ##### Special Considerations
 
-If you override [`init(entity:insertInto:)`](nsmanagedobject/init(entity:insertinto:).md), you  ensure that you set `self` to the return value from invocation of `super`’s implementation, as shown in the following example:
+If you override [`init(entity:insertInto:)`](nsmanagedobject/init(entity:insertinto:).md), you *must* ensure that you set `self` to the return value from invocation of `super`’s implementation, as shown in the following example:
 
 ```objc
 - (id)initWithEntity:(NSEntityDescription*)entity insertIntoManagedObjectContext:(NSManagedObjectContext*)context
@@ -53,7 +53,7 @@ If you override [`init(entity:insertInto:)`](nsmanagedobject/init(entity:inserti
 
 ## Parameters
 
-- `entity`: The model associated with  ’s persistent store coordinator must contain  .
+- `entity`: The entity of which to create an instance. The model associated with `context`’s persistent store coordinator must contain `entity`.
 - `context`: The context into which the new instance is inserted.
 
 ## See Also

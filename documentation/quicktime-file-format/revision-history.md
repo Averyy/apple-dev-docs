@@ -81,7 +81,7 @@ Changes to the QuickTime File Format.
 
 ###### Added
 
-- First public release of complete, updated  with information about atoms and atom types.
+- First public release of complete, updated *QuickTime File Format Specification* with information about atoms and atom types.
 - Added licensing information and disclaimer for developers.
 - A QuickTime file may now contain a file type compatibility atom. See [`File type compatibility atom ('ftyp')`](file_type_compatibility_atom.md).
 - A movie atom may now contain a movie profile atom. See [`Movie profile atom ('prfl')`](movie_profile_atom.md).

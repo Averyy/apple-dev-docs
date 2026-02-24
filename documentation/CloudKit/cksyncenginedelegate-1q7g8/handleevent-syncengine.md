@@ -29,7 +29,7 @@ The sync engines provides events serially; your delegate won’t receive the sub
 
 ## Parameters
 
-- `event`: Information about the event. An event may occur for a number of reasons, such as when new data is available or when the device’s iCloud account changes.   For more information, see  .
+- `event`: Information about the event. An event may occur for a number of reasons, such as when new data is available or when the device’s iCloud account changes. For more information, see [`CKSyncEngine.Event`](cksyncengine-5sie5/event.md).
 - `syncEngine`: The sync engine that generates the event.
 
 ## See Also

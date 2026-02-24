@@ -30,7 +30,7 @@ You can’t run any commands that start or end at an index within that range, or
 ## Parameters
 
 - `buffer`: An indirect command buffer the command optimizes.
-- `range`: A range of commands within  .
+- `range`: A range of commands within `indirectCommandBuffer`.
 
 ## See Also
 

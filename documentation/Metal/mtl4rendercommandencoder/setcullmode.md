@@ -22,7 +22,7 @@ func setCullMode(_ cullMode: MTLCullMode)
 
 ## Parameters
 
-- `cullMode`:   to set.
+- `cullMode`: [`MTLCullMode`](mtlcullmode.md) to set.
 
 ## See Also
 

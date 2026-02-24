@@ -22,7 +22,7 @@ func executeActionSet(_ actionSet: HMActionSet) async throws
 ## Parameters
 
 - `actionSet`: The action set to execute.
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

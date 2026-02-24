@@ -21,7 +21,7 @@ This method changes the current translation value of the gesture recognizer. Cha
 ## Parameters
 
 - `translation`: The new translation values to use in the gesture recognizer.
-- `view`: The view in whose coordinate system you specified the new translation value. Specifying   resets the previous translation value.
+- `view`: The view in whose coordinate system you specified the new translation value. Specifying `nil` resets the previous translation value.
 
 ## See Also
 

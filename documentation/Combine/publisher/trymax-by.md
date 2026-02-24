@@ -53,7 +53,7 @@ After this publisher receives a request for more than 0 items, it requests unlim
 
 ## Parameters
 
-- `areInIncreasingOrder`: A throwing closure that receives two elements and returns   if they’re in increasing order. If this closure throws, the publisher terminates with a  .
+- `areInIncreasingOrder`: A throwing closure that receives two elements and returns `true` if they’re in increasing order. If this closure throws, the publisher terminates with a [`Subscribers.Completion.failure(_:)`](subscribers/completion/failure(_:).md).
 
 ## See Also
 

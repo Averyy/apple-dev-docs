@@ -29,6 +29,11 @@ This method applies the nine-part stretched filter to an image. This effect dist
 
 The nine-part stretched filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`growAmount`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the amount of stretching applied.
+- **`breakpoint0`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the lower-left corner of the image to retain before stretching begins.
+- **`breakpoint1`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the upper-right corner of the image to retain after stretching ends.
+
 The following code creates a filter that results in a significantly warped image:
 
 ```swift

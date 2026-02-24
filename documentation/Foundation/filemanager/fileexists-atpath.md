@@ -32,7 +32,7 @@ If the file at `path` is inaccessible to your app, perhaps because one or more p
 
 ## Parameters
 
-- `path`: App Sandbox does not restrict which path values may be passed to this parameter.
+- `path`: The path of the file or directory. If `path` begins with a tilde (`~`), it must first be expanded with [`expandingTildeInPath`](nsstring/expandingtildeinpath.md); otherwise, this method returns [`false`](https://developer.apple.com/documentation/Swift/false). App Sandbox does not restrict which path values may be passed to this parameter.
 
 ## See Also
 

@@ -24,7 +24,7 @@ The default implementation of this method does nothing. Subclasses can override 
 
 ## Parameters
 
-- `completed`:   if the animations completed and the presented view controller was dismissed or   if the animations were canceled and the presented view controller is still visible.
+- `completed`: [`true`](https://developer.apple.com/documentation/Swift/true) if the animations completed and the presented view controller was dismissed or [`false`](https://developer.apple.com/documentation/Swift/false) if the animations were canceled and the presented view controller is still visible.
 
 ## See Also
 

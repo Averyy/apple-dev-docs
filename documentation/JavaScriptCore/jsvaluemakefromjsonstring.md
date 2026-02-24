@@ -26,7 +26,7 @@ A [`JSValueRef`](jsvalueref.md) that contains the parsed value, or `NULL` if the
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `string`: The   that contains the JSON string to parse.
+- `string`: The [`JSStringRef`](jsstringref.md) that contains the JSON string to parse.
 
 ## See Also
 

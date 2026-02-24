@@ -42,7 +42,9 @@ If the request completes successfully, the `data` parameter of the completion ha
 
 - `request`: A URL request object that provides the URL, cache policy, request type, and so on. The body stream and body data in this request object are ignored.
 - `fileURL`: The URL of the file to upload.
-- `completionHandler`: This completion handler takes the following parameters:
+- `completionHandler`: The completion handler to call when the load request is complete. This handler is executed on the delegate queue. If you pass `nil`, only the session delegate methods are called when the task completes, making this method equivalent to the [`uploadTask(with:fromFile:)`](urlsession/uploadtask(with:fromfile:).md) method. This completion handler takes the following parameters: - **`data`**: The data returned by the server.
+- **`response`**: An object that provides response metadata, such as HTTP headers and status code. If you are making an HTTP or HTTPS request, the returned object is actually an [`HTTPURLResponse`](httpurlresponse.md) object.
+- **`error`**: An error object that indicates why the request failed, or `nil` if the request was successful.
 
 ## See Also
 

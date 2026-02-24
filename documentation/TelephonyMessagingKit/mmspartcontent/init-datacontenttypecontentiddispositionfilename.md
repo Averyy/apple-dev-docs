@@ -19,7 +19,7 @@ init(data: Data, contentType: UTType?, contentID: String, disposition: MMSPartCo
 ## Parameters
 
 - `data`: The raw data of the MMS part.
-- `contentType`: The content type of the MMS part, as a  .
+- `contentType`: The content type of the MMS part, as a [`UTType`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct).
 - `contentID`: The identifier of the MMS part.
 - `disposition`: The disposition of the MMS part, indicating whether the part renders inline or as an attachment.
 - `fileName`: The file name of the MMS part.

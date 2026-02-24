@@ -33,7 +33,7 @@ This method raises an [`rangeException`](nsexceptionname/rangeexception.md) exce
 ## Parameters
 
 - `anObject`: An object.
-- `range`: The range of indexes in the array within which to search for  .
+- `range`: The range of indexes in the array within which to search for `anObject`.
 
 ## See Also
 

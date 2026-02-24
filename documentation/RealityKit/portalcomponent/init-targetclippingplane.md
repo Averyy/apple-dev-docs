@@ -30,7 +30,7 @@ This initializer is equivalent to setting [`clippingMode`](portalcomponent/clipp
 ## Parameters
 
 - `target`: A target world entity the portal is looking into.
-- `clippingPlane`: A planar representation of a portal to enable the clipping feature.   When  ,   is  .
+- `clippingPlane`: A planar representation of a portal to enable the clipping feature. When `nil`, [`clippingMode`](portalcomponent/clippingmode-swift.property.md) is [`PortalComponent.ClippingMode.disabled`](portalcomponent/clippingmode-swift.enum/disabled.md).
 
 
 ---

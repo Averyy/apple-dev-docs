@@ -27,9 +27,24 @@ A HealthKit unit for measuring mass in moles.
 
 This method allows the creation of units to measure mass in moles with a given metric prefix and molecular mass. For example, to measure blood glucose in millimoles, you need to use both the correct prefix (milli-) and the [`HKUnitMolarMassBloodGlucose`](hkunitmolarmassbloodglucose.md) constant.).
 
+**Swift**:
+
+```swift
+let millimolesOfBloodGlucose =
+    HKUnit.moleUnitWithMetricPrefix(HKMetricPrefix.Milli,
+                                    molarMass: HKUnitMolarMassBloodGlucose)
+```
+
+**Objective-C**:
+
+```objc
+HKUnit *millimolesOfBloodGlucose =
+[HKUnit moleUnitWithMetricPrefix:HKMetricPrefixMilli molarMass:HKUnitMolarMassBloodGlucose];
+```
+
 ## Parameters
 
-- `prefix`: A valid metric prefix value. For the complete list of prefix values, see  .
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](hkmetricprefix.md).
 - `gramsPerMole`: The molar mass, in grams per mole, of the item to be weighed.
 
 ## See Also

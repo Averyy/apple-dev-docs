@@ -22,7 +22,7 @@ var conditionLimit: Double
 
 #### Discussion
 
-The operation terminates iterations if a computed estimate of `cond(Abar)` exceeds this value. This is to prevent certain small or zero singular values of  or  from coming into effect and causing unwanted growth in the computed solution.
+The operation terminates iterations if a computed estimate of `cond(Abar)` exceeds this value. This is to prevent certain small or zero singular values of *A* or *Abar* from coming into effect and causing unwanted growth in the computed solution.
 
 You can use [`conditionLimit`](sparselsmroptions/conditionlimit.md) and [`lambda`](sparselsmroptions/lambda.md) separately or together to regularize ill-conditioned systems.
 
@@ -33,9 +33,9 @@ Suggested value: [`conditionLimit`](sparselsmroptions/conditionlimit.md) `= 1/(1
 ## See Also
 
 - [var atol: Double](sparselsmroptions/atol.md)
-  The absolute tolerance (default test) or  tolerance (Fong-Saunders test).
+  The absolute tolerance (default test) or *A* tolerance (Fong-Saunders test).
 - [var btol: Double](sparselsmroptions/btol.md)
-  The  tolerance (Fong-Saunders test only).
+  The *B* tolerance (Fong-Saunders test only).
 - [var convergenceTest: SparseLSMRConvergenceTest_t](sparselsmroptions/convergencetest.md)
   The convergence test to use for iterative solve methods.
 - [struct SparseLSMRConvergenceTest_t](sparselsmrconvergencetest_t.md)

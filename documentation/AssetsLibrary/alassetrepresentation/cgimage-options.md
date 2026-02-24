@@ -23,7 +23,7 @@ This method provides a convenient way to obtain a CGImage representation of an a
 
 ## Parameters
 
-- `options`: A dictionary of options as described for   or  .
+- `options`: A dictionary of options as described for [`CGImageSourceCreateWithData(_:_:)`](https://developer.apple.com/documentation/ImageIO/CGImageSourceCreateWithData(_:_:)) or [`CGImageSourceCreateWithURL(_:_:)`](https://developer.apple.com/documentation/ImageIO/CGImageSourceCreateWithURL(_:_:)).
 
 ## See Also
 

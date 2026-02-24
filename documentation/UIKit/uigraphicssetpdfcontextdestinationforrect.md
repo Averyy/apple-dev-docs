@@ -27,7 +27,7 @@ If the current graphics context is not a PDF context, this function does nothing
 
 ## Parameters
 
-- `name`: A named destination in the PDF document. This is the same name you used when creating the jump destination using the   function.
+- `name`: A named destination in the PDF document. This is the same name you used when creating the jump destination using the [`UIGraphicsAddPDFContextDestinationAtPoint(_:_:)`](uigraphicsaddpdfcontextdestinationatpoint(_:_:).md) function.
 - `rect`: A rectangle on the current page of the PDF context.
 
 ## See Also

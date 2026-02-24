@@ -30,7 +30,8 @@ The [`matchData`](gkturnbasedmatch/matchdata.md) properties of the match objects
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameters: - ***matches***: The local player’s matches, or `nil` if there are none. If an error occurs, this parameter may be non-`nil`, containing a subset of the matches that GameKit loads before the error occurs.
+- ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

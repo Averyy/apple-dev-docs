@@ -35,7 +35,8 @@ For the platform to accept the request to confirm the user’s location, you nee
 ## Parameters
 
 - `region`: The expected physical location at the time of the App Clip invocation.
-- `completionHandler`: This parameter is   if the platform was able to determine the user’s physical location at the time of the App Clip invocation.
+- `completionHandler`: A closure called when the platform confirms the expected physical location at the time of the App Clip invocation. The closure takes the following parameters: - **inRegion**: A Boolean value that indicates whether the App Clip invocation happened at the expected physical location.
+- **error**: The error object that describes why the platform couldn’t confirm the user’s physical location. This parameter is `nil` if the platform was able to determine the user’s physical location at the time of the App Clip invocation.
 
 
 ---

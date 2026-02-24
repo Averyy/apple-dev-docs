@@ -22,7 +22,7 @@ func setTexture(_ texture: (any MTLTexture)?, index: Int)
 
 ## Parameters
 
-- `texture`: An   instance to bind to the texture argument table.
+- `texture`: An [`MTLTexture`](mtltexture.md) instance to bind to the texture argument table.
 - `index`: The index the texture binds to in the texture argument table.
 
 ## See Also

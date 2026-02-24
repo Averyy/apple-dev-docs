@@ -12,7 +12,7 @@ Use Create ML Components to analyze a series of video frames and count a person�
 
 #### Overview
 
-This sample app counts a person’s repetitive or periodic body movements () by analyzing a series of video frames and making a prediction with a human body action repetition counter. The counter in this sample can count arbitrary body moves that occur at moderate speed, such as jumping jacks, dance spins, and waving arms.
+This sample app counts a person’s repetitive or periodic body movements (*actions*) by analyzing a series of video frames and making a prediction with a human body action repetition counter. The counter in this sample can count arbitrary body moves that occur at moderate speed, such as jumping jacks, dance spins, and waving arms.
 
 ![A flow diagram that illustrates two people performing jumping jacks in front](https://docs-assets.developer.apple.com/published/e1ad4893d09c542febf69ba875fcad1a/createml-components-framework-overview%402x.png)
 

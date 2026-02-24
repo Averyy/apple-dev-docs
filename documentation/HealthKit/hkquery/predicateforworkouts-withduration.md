@@ -27,6 +27,35 @@ A predicate for matching workouts based on their duration. This predicate works 
 
 Use this convenience method to create a predicate that matches against a workout’s duration. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+// Predicate matching workouts equal to or longer than 30 minutes
+let workout = HKQuery.predicateForWorkoutsWithOperatorType(
+    .GreaterThanOrEqualToPredicateOperatorType,
+    duration: 60.0 * 30.0)
+ 
+ 
+let explicitWorkout = NSPredicate(format: "%K >= %d",
+                                  HKPredicateKeyPathWorkoutDuration, 60 * 30)
+```
+
+**Objective-C**:
+
+```objc
+// Predicate matching workouts equal to or longer than 30 minutes
+NSPredicate *workout =
+    [HKQuery predicateForWorkoutsWithOperatorType:
+ 
+     NSGreaterThanOrEqualToPredicateOperatorType
+      duration:60.0 * 30.0];
+ 
+NSPredicate *explicitWorkout =
+[NSPredicate predicateWithFormat:@"%K >= %d",
+ HKPredicateKeyPathWorkoutDuration,
+ 60 * 30];
+```
+
 ## Parameters
 
 - `operatorType`: The operator type to use when comparing the duration.

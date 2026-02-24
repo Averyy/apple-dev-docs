@@ -21,7 +21,7 @@ func GLKMatrixStackRotateWithVector3(_ stack: GLKMatrixStack, _ radians: Float, 
 
 - `stack`: A matrix stack.
 - `radians`: The angle of the rotation (a positive angle is counterclockwise).
-- `axisVector`: A vector whose  ,  and   coordinates are used as the axis of rotation.
+- `axisVector`: A vector whose `x`,`y` and `z` coordinates are used as the axis of rotation.
 
 ## See Also
 

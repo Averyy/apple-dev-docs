@@ -26,8 +26,8 @@ A calendar object for the calendar identified by `ident`. If the identifier is u
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `identifier`: A calendar identifier. Calendar identifier constants are given in  .
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `identifier`: A calendar identifier. Calendar identifier constants are given in [`CFLocale`](cflocale.md).
 
 ## See Also
 

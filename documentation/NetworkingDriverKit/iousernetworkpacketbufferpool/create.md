@@ -24,12 +24,12 @@ Use this method to create a new packet buffer pool object for your driver, and u
 
 ## Parameters
 
-- `poolOwner`: The object that owns the packet buffer pool. Typically, you specify your custom   object as the owner of a pool, but you may choose a different object.
+- `poolOwner`: The object that owns the packet buffer pool. Typically, you specify your custom [`IOUserNetworkEthernet`](iousernetworkethernet.md) object as the owner of a pool, but you may choose a different object.
 - `name`: The name to assign to the pool.
 - `packetCount`: The number of packets to support in the pool.
-- `bufferCount`: The number of buffers to create to store the packet data. Specify a value that is the same size or larger than the value in  .
+- `bufferCount`: The number of buffers to create to store the packet data. Specify a value that is the same size or larger than the value in `packetCount`.
 - `bufferSize`: The number of bytes in each packet buffer.
-- `pool`: On return, the newly allocated packet buffer pool, or   if an error occurred.
+- `pool`: On return, the newly allocated packet buffer pool, or `NULL` if an error occurred.
 
 ## See Also
 

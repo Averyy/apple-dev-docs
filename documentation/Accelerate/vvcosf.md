@@ -24,9 +24,39 @@ func vvcosf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: UnsafePo
 
 ##### Parameters
 
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
 If `x` is `+/-inf`, the result is `NaN`.
 
 The following code shows an example of using [`vvcosf(_:_:_:)`](vvcosf(_:_:_:).md).
+
+**Swift**:
+
+```swift
+let pi = Float.pi
+var x: [Float] = [-pi, 0, pi]
+var y = [Float](repeating: 0, count: x.count)
+var n = Int32(x.count)
+ 
+vvcosf(&y, &x, &n)
+ 
+print(y) // [-1.0, 0.0, 1.0]
+```
+
+**Objective-C**:
+
+```objc
+float x[] = {-M_PI, 0, M_PI};
+float y[3];
+int n = 3;
+ 
+vvcosf(y, x, &n);
+ 
+NSLog(@"y: [%lf, %lf, %lf]", y[0], y[1], y[2]);
+
+```
 
 ## See Also
 

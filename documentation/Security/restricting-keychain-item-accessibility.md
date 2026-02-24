@@ -32,6 +32,11 @@ The [`kSecAttrAccessible`](ksecattraccessible.md) attribute enables you to contr
 
 In order of decreasing restrictiveness, the choices are:
 
+- ****When Passcode Set****: If the user hasn’t set a passcode, you can’t store an item with this setting. If the user removes the passcode from a device, any items with this setting are automatically deleted from the keychain. You can only access items with this setting if the device is unlocked. Use this setting if your app only needs access to items while running in the foreground.
+- ****When Unlocked****: Items with this setting are only accessible when the device is unlocked. A device without a passcode is considered to always be unlocked. This is the default accessibility when you don’t otherwise specify a setting.
+- ****After First Unlock****: This condition becomes true once the user unlocks the device for the first time after a restart, or if the device does not have a passcode. It remains true until the device restarts again. Use this level of accessibility when your app needs to access the item while running in the background.
+- ****Always****: The item is always accessible, regardless of the locked state of the device. This option isn’t recommended.
+
 Always use the most restrictive option that makes sense for your app. For extremely sensitive data that you never want stored in iCloud, you might choose [`kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly`](ksecattraccessiblewhenpasscodesetthisdeviceonly.md).
 
 ##### Demand User Presence

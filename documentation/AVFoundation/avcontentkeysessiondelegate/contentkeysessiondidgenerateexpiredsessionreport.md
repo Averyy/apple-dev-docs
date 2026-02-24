@@ -26,7 +26,7 @@ This method is invoked when an expired session report is added to the [`storageU
 
 ## Parameters
 
-- `session`: The   object that recorded the generation of an expired session report.
+- `session`: The [`AVContentKeySession`](avcontentkeysession.md) object that recorded the generation of an expired session report.
 
 ## See Also
 

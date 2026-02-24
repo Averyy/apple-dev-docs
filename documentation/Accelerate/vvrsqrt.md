@@ -24,7 +24,35 @@ func vvrsqrt(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsaf
 
 ##### Parameters
 
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
 The following code shows an example of using [`vvrsqrt(_:_:_:)`](vvrsqrt(_:_:_:).md).
+
+**Swift**:
+
+```swift
+var x: [Double] = [100, 10000, 64, 144]
+var y = [Double](repeating: 0, count: x.count)
+var n = Int32(x.count)
+ 
+vvrsqrt(&y, &x, &n)
+ 
+print(y) // [0.1, 0.01, 0.125, 0.0833]
+```
+
+**Objective-C**:
+
+```objc
+double x[] = {100, 10000, 64, 144};
+double y[4];
+int n = 4;
+ 
+vvrsqrt(y, x, &n);
+ 
+NSLog(@"y: [%lf, %lf, %lf, %lf]", y[0], y[1], y[2], y[3]);
+```
 
 ## See Also
 

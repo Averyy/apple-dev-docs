@@ -47,8 +47,8 @@ The DriverKit template provides a default subclass of the [`IOService`](ioservic
 
 The services you create embody one of two roles:
 
-- An  manages information moving to and from the device.
-- A  supports communication with the hardware.
+- An *interface service* manages information moving to and from the device.
+- A *device service* supports communication with the hardware.
 
 Create interface services for devices that communicate using standards-based protocols, such as USB, but which require interpretation or management of the resulting data. An interface service reads and writes data, processes that data, and does something useful with it. For example, a HID interface service processes input reports from a HID device and dispatches events to the system. Interface classes include [`IOUserHIDEventService`](https://developer.apple.com/documentation/HIDDriverKit/IOUserHIDEventService), [`IOHIDInterface`](https://developer.apple.com/documentation/HIDDriverKit/IOHIDInterface), [`IOUserSerial`](https://developer.apple.com/documentation/SerialDriverKit/IOUserSerial), and [`IOUserNetworkEthernet`](https://developer.apple.com/documentation/NetworkingDriverKit/IOUserNetworkEthernet).
 
@@ -183,7 +183,7 @@ The system maintains a registry of installed drivers, and each driver contains i
 - Supports the vendor that created the device
 - Supports the protocols or interfaces (HID, Mass Storage) listed in the device’s configuration data
 
-During its search for drivers, the system uses information from the `IOKitPersonalities` key of each driver’s `Info.plist` file to identify potential matches. This key contains a dictionary of the driver’s —that is, the types of devices it supports. Each key in the dictionary is a descriptive name of the personality, and the value is another dictionary of keys that describe the specific personality. Include the following minimum set of keys for each personality:
+During its search for drivers, the system uses information from the `IOKitPersonalities` key of each driver’s `Info.plist` file to identify potential matches. This key contains a dictionary of the driver’s *personalities*—that is, the types of devices it supports. Each key in the dictionary is a descriptive name of the personality, and the value is another dictionary of keys that describe the specific personality. Include the following minimum set of keys for each personality:
 
 - [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier)—The bundle ID of your driver
 - `IOClass`—The Apple class containing the base behavior

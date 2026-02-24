@@ -13,7 +13,7 @@ Create host-mode user space drivers for USB devices.
 
 With the [`IOUSBHost`](IOUSBHost.md) framework, you can access custom and non–class-compliant USB devices from within your apps. Use this framework to connect to cameras, audio devices, scanners, printers, keyboards, mouse devices, MIDI keyboards, and USB hubs.
 
-This framework refers to the USB Implementers Forum (USB-IF) , Revision 1.0, September 22, 2017. You can view this specification at [`http://www.usb.org/`](https://developer.apple.comhttp://www.usb.org/).
+This framework refers to the USB Implementers Forum (USB-IF) *Universal Serial Bus 3.2 Specification*, Revision 1.0, September 22, 2017. You can view this specification at [`http://www.usb.org/`](https://developer.apple.comhttp://www.usb.org/).
 
 ## Topics
 

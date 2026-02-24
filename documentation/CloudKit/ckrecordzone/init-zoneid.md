@@ -32,7 +32,7 @@ Don’t use this method to create a [`CKRecordZone`](ckrecordzone.md) object tha
 
 ## Parameters
 
-- `zoneID`: The ID for the new zone. This parameter must not be  .
+- `zoneID`: The ID for the new zone. This parameter must not be `nil`.
 
 ## See Also
 

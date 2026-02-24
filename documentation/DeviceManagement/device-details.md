@@ -19,6 +19,10 @@ Get the details on a set of devices.
 - [object DeviceListResponse](devicelistresponse.md)
 - [object DeviceListResponse.Devices](devicelistresponse/devices-data.dictionary.md)
 
+## Endpoint
+
+`POST https://mdmenrollment.apple.com/devices`
+
 ## Request Body
 
 The request for a list of devices.

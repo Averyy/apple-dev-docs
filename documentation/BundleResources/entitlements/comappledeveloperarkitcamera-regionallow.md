@@ -8,6 +8,12 @@ A Boolean value indicating whether your app may access the camera region.
 **Availability**:
 - visionOS 26.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 Camera Region allows developers to create a new SwiftUI element that acts as a frame which people can place anywhere within their view, and then pass camera frames from that specified region back to the app for processing or display. The specified region is fixed and stabilized in space, so if a person moves their head or looks around, they continue to get frames from the space they defined, as long as it’s in their field of view.  Additionally, there’s an optional configurable argument that enables image enhancement, providing a clearer and sharper version of the camera frames than what the default camera frame provides. For more information on how to implement a camera region within your app, refer to [`CameraRegionView`](https://developer.apple.comhttps://developer.apple.com/documentation/visionkit/cameraregionview).

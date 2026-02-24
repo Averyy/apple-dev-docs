@@ -31,7 +31,7 @@ There must be either a focused view or an active graphics context when you call 
 ## Parameters
 
 - `rect`: The bounding rectangle in which to draw the string. In AppKit, the origin of the bounding box is normally in the lower-left corner, but the origin is in the upper-left corner if the focused view is flipped.
-- `attrs`: The text attributes with which to draw the string. These are the same attributes that can be applied to an   object, but in the case of   objects, the attributes apply to the entire string, rather than ranges within the string.
+- `attrs`: The text attributes with which to draw the string. These are the same attributes that can be applied to an `NSAttributedString` object, but in the case of `NSString` objects, the attributes apply to the entire string, rather than ranges within the string.
 
 ## See Also
 

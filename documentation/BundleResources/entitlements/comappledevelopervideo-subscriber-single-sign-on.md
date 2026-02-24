@@ -11,6 +11,10 @@ A Boolean value that indicates whether your app can use the TV Provider Authenti
 - macOS 10.14+
 - tvOS 10.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 This entitlement lets you use the [`Video Subscriber Account`](https://developer.apple.com/documentation/VideoSubscriberAccount) framework.

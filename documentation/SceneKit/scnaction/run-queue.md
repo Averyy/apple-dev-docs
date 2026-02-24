@@ -32,7 +32,7 @@ This action is not reversible; the reverse action executes the same block.
 
 ## Parameters
 
-- `block`: The block to run. The block takes a single parameter:
+- `block`: The block to run. The block takes a single parameter: - **node**: The node on which the action is running.
 - `queue`: The queue to perform the action on.
 
 ## See Also

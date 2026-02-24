@@ -3,7 +3,7 @@
 **Framework**: Address Book UI  
 **Kind**: class
 
-The `ABPersonViewController` class (whose instances are known as ) implements the view used to display a person record (`ABPersonRef`).
+The `ABPersonViewController` class (whose instances are known as **person view controllers**) implements the view used to display a person record (`ABPersonRef`).
 
 **Availability**:
 - iOS 2.0+
@@ -81,7 +81,7 @@ The `ABPersonViewController` class does not support subclassing.
 - [class ABNewPersonViewController](abnewpersonviewcontroller.md)
   A view controller presenting an interface to create a contact.
 - [class ABUnknownPersonViewController](abunknownpersonviewcontroller.md)
-  The `ABUnknownPersonViewController` class (whose instances are known as ) implements a view controller used to create a person record from a set of person properties.
+  The `ABUnknownPersonViewController` class (whose instances are known as **unknown-person view controllers**) implements a view controller used to create a person record from a set of person properties.
 - [func ABCreateStringWithAddressDictionary([AnyHashable : Any], Bool) -> String](abcreatestringwithaddressdictionary(_:_:).md)
   Returns a formatted address from an address property.
 

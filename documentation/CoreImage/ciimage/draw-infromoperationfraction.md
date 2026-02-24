@@ -22,8 +22,8 @@ If the `srcRect` and `dstRect` rectangles have different sizes, the source porti
 
 - `rect`: The rectangle in which to draw the image.
 - `fromRect`: The source rectangle specifying the portion of the image you want to draw. The coordinates of this rectangle must be specified using the image’s own coordinate system.
-- `op`: The compositing operation to use when drawing the image. For details, see  .
-- `delta`: The opacity of the image, specified as a value from   to  . Specifying a value of   draws the image as fully transparent while a value of   draws the image as fully opaque. Values greater than   are interpreted as  .
+- `op`: The compositing operation to use when drawing the image. For details, see [`NSCompositingOperation`](https://developer.apple.com/documentation/AppKit/NSCompositingOperation).
+- `delta`: The opacity of the image, specified as a value from `0.0` to `1.0`. Specifying a value of `0.0` draws the image as fully transparent while a value of `1.0` draws the image as fully opaque. Values greater than `1.0` are interpreted as `1.0`.
 
 ## See Also
 

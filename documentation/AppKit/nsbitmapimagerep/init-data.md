@@ -20,7 +20,7 @@ Returns an initialized [`NSBitmapImageRep`](nsbitmapimagerep.md) if the initiali
 
 ## Parameters
 
-- `data`: A data object containing image data. The contents of   can be any supported bitmap format. For TIFF data, the   is initialized from the first header and image data found in  .
+- `data`: A data object containing image data. The contents of `bitmapData` can be any supported bitmap format. For TIFF data, the [`NSBitmapImageRep`](nsbitmapimagerep.md) is initialized from the first header and image data found in `bitmapData`.
 
 ## See Also
 

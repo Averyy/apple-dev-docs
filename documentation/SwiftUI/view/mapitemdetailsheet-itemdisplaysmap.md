@@ -20,8 +20,8 @@ Presents a map item detail sheet.
 
 ## Parameters
 
-- `item`: When   is non- , a detail sheet is displayed for the   map item.
-- `displaysMap`: If an inline map should be displayed with the place data.   A value of   must be specified if the application UI is not   already showing the place in a map view.
+- `item`: When `item` is non-`nil`, a detail sheet is displayed for the map item.
+- `displaysMap`: If an inline map should be displayed with the place data. A value of `true` must be specified if the application UI is not already showing the place in a map view.
 
 ## See Also
 

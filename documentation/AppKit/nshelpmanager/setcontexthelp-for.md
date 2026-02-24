@@ -20,8 +20,8 @@ When the application enters context-sensitive help mode, if `object` is clicked,
 
 ## Parameters
 
-- `attrString`: Help content to associate with  .
-- `object`: Object to associate with  .
+- `attrString`: Help content to associate with `object`.
+- `object`: Object to associate with `help`.
 
 ## See Also
 

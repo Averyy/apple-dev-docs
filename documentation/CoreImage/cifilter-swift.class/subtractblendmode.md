@@ -29,6 +29,9 @@ This method applies the subtract-blend mode filter to an image. The effect calcu
 
 The subtract-blend mode filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`backgroundImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in the image becoming darker with less detail:
 
 ```swift

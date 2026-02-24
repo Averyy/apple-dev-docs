@@ -70,6 +70,13 @@ Specify `com.apple.appstore` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `DisableSoftwareUpdateNotifications` (boolean): If `true`, the system disables software update notifications. Available in macOS 10.10 and later.
+- `restrict-store-disable-app-adoption` (boolean): If `true`, the system disables app adoption by users. Available in macOS 10.10 and later.
+- `restrict-store-require-admin-to-install` (boolean): If `true`, the system restricts app installations to admin users only. Deprecated in macOS 10.14. Use the `com.apple.SoftwareUpdate` payload key `restrict-software-update-require-admin-to-install` instead.
+- `restrict-store-softwareupdate-only` (boolean): If `true`, the system prevents App Store from launching. Available in macOS 10.14 and later. Restricts installations to software updates only in macOS 10.10 through 10.13.
+
 
 ---
 

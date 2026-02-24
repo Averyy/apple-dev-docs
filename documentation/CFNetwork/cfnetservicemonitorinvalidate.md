@@ -29,7 +29,7 @@ This function is thread safe.
 
 ## Parameters
 
-- `monitor`: CFNetServiceMonitor to invalidate; cannot be  .
+- `monitor`: CFNetServiceMonitor to invalidate; cannot be `NULL`.
 
 ## See Also
 

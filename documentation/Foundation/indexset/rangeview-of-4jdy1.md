@@ -22,7 +22,7 @@ func rangeView<R>(of range: R) -> IndexSet.RangeView where R : RangeExpression, 
 
 ## Parameters
 
-- `range`: A subrange of   to view.
+- `range`: A subrange of `self` to view.
 
 
 ---

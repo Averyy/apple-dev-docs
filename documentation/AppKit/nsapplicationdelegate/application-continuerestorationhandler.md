@@ -29,7 +29,7 @@ If this user activity object was created automatically by having `NSUbiquitousDo
 
 - `application`: The app continuing the user activity.
 - `userActivity`: The activity object containing the data associated with the task the user was performing. Use the data in this object to recreate what the user was doing.
-- `restorationHandler`: A block to execute if your app creates or fetches objects to perform the task. Calling this block is optional and is only needed when specific objects are capable of continuing the activity. You can copy this block and call it at a later time. When calling a saved copy of the block, you must call it from the app’s main thread. This block has no return value and takes the following parameter:
+- `restorationHandler`: A block to execute if your app creates or fetches objects to perform the task. Calling this block is optional and is only needed when specific objects are capable of continuing the activity. You can copy this block and call it at a later time. When calling a saved copy of the block, you must call it from the app’s main thread. This block has no return value and takes the following parameter: - **`restorableObjects`**: An array of [`NSResponder`](nsresponder.md) or [`NSDocument`](nsdocument.md) objects that you created or fetched in order to perform the operation. The system calls the [`restoreUserActivityState(_:)`](nsuseractivityrestoring/restoreuseractivitystate(_:).md) method of each object in the array to perform the operation.
 
 ## See Also
 

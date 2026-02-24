@@ -37,7 +37,7 @@ A download can be resumed only if the following conditions are met:
 
 ## Parameters
 
-- `completionHandler`: This block is not guaranteed to execute in a particular thread context. As such, you may want specify an appropriate dispatch queue in which to perform any work.
+- `completionHandler`: A completion handler that is called when the download has been successfully canceled. If the download is resumable, the completion handler is provided with a `resumeData` object. Your app can later pass this object to a session’s [`downloadTask(withResumeData:)`](urlsession/downloadtask(withresumedata:).md) or [`downloadTask(withResumeData:completionHandler:)`](urlsession/downloadtask(withresumedata:completionhandler:).md) method to create a new task that resumes the download where it left off. This block is not guaranteed to execute in a particular thread context. As such, you may want specify an appropriate dispatch queue in which to perform any work.
 
 
 ---

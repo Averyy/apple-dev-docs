@@ -8,6 +8,10 @@ A Boolean that indicates whether your app has access to smart card slots and sma
 **Availability**:
 - macOS 10.10+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Add this entitlement to your app with a value of `true` if you want to use the [`TKSmartCardSlotManager`](https://developer.apple.com/documentation/CryptoTokenKit/TKSmartCardSlotManager) class. For an app without the entitlement, the slot manager’s [`default`](https://developer.apple.com/documentation/CryptoTokenKit/TKSmartCardSlotManager/default) value is `nil`. The system also requires this entitlement for sandboxed applications that access smart cards using legacy `PCSC` framework APIs.

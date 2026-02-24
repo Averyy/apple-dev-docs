@@ -26,8 +26,8 @@ Defaults to nil if there is no restored value.
 
 ## Parameters
 
-- `key`: The key to read and write the value to in the user defaults   store.
-- `store`: The user defaults store to read and write to. A value   of   will use the user default store from the environment.
+- `key`: The key to read and write the value to in the user defaults store.
+- `store`: The user defaults store to read and write to. A value of `nil` will use the user default store from the environment.
 
 ## See Also
 

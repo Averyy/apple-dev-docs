@@ -22,8 +22,8 @@ If a problem is encountered during generation of the TIFF, [`tiffRepresentation(
 
 ## Parameters
 
-- `comp`: An enum constant that represents a TIFF data-compression scheme. Legal values for   can be found in  .
-- `factor`: Currently only JPEG compression uses a compression factor. JPEG compression in TIFF files is not supported, and   is ignored.
+- `comp`: An enum constant that represents a TIFF data-compression scheme. Legal values for `compression` can be found in [`NSBitmapImageRep.TIFFCompression`](nsbitmapimagerep/tiffcompression.md).
+- `factor`: A `float` value that provides a hint for those compression types that implement variable compression ratios. Currently only JPEG compression uses a compression factor. JPEG compression in TIFF files is not supported, and `factor` is ignored.
 
 ## See Also
 

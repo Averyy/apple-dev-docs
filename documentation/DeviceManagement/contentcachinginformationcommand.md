@@ -20,6 +20,11 @@ object ContentCachingInformationCommand
 - [object ContentCachingInformationCommand.Command](contentcachinginformationcommand/command-data.dictionary.md)
   The command to get the status of the content caches on a device.
 
+## Properties
+
+- `Command` (ContentCachingInformationCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object ContentCachingInformationResponse](contentcachinginformationresponse.md)

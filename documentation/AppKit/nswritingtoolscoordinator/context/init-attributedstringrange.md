@@ -20,8 +20,8 @@ When Writing Tools asks for your view’s current selection, it’s best to crea
 
 ## Parameters
 
-- `attributedString`: A string that contains some or all of the content   from your view’s text storage. This initializer makes a copy of the   string you provide, so you can discard the original when you’re done.
-- `range`: The portion of   you want Writing Tools to   evaluate. If you want Writing Tools to evaluate the entire string you   provided, specify a range with a location of   and a length equal to   your string’s length. If you want Writing Tools to evaluate only part   of the string, provide the appropriate range in this parameter. Writing   Tools suggests changes only to the range of text you specify, but it   can consider text outside that range during the evaluation process.
+- `attributedString`: A string that contains some or all of the content from your view’s text storage. This initializer makes a copy of the string you provide, so you can discard the original when you’re done.
+- `range`: The portion of `attributedString` you want Writing Tools to evaluate. If you want Writing Tools to evaluate the entire string you provided, specify a range with a location of `0` and a length equal to your string’s length. If you want Writing Tools to evaluate only part of the string, provide the appropriate range in this parameter. Writing Tools suggests changes only to the range of text you specify, but it can consider text outside that range during the evaluation process.
 
 
 ---

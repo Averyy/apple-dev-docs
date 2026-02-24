@@ -34,7 +34,7 @@ This action is not reversible; the reverse of this action has the same duration 
 
 - `radians`: The angle to rotate the node to, in radians.
 - `duration`: The duration of the animation.
-- `shortestUnitArc`: If  , the rotation is performed in whichever direction results in the smallest rotation. If  , the rotation is interpolated.
+- `shortestUnitArc`: If [`true`](https://developer.apple.com/documentation/Swift/true), the rotation is performed in whichever direction results in the smallest rotation. If [`false`](https://developer.apple.com/documentation/Swift/false), the rotation is interpolated.
 
 ## See Also
 

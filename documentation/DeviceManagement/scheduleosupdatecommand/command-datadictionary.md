@@ -23,6 +23,12 @@ object ScheduleOSUpdateCommand.Command
 - [object ScheduleOSUpdateCommand.Command.UpdatesItem](scheduleosupdatecommand/command-data.dictionary/updatesitem.md)
   A dictionary that describes the available operating-system updates item.
 
+## Properties
+
+- `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+- `RequestType` (string) *(required)*: The request type for this command.
+- `Updates` ([ScheduleOSUpdateCommand.Command.UpdatesItem]) *(required)*: An array of dictionaries specifying the updates to download or install. If this value is missing, the device applies the default behavior for handling updates. The device ignores this command and an informational error is returned, if a software update is managed by a Declarative Device Management [`SoftwareUpdateEnforcementSpecific`](softwareupdateenforcementspecific.md) configuration, as the configuration takes precedence.
+
 
 ---
 

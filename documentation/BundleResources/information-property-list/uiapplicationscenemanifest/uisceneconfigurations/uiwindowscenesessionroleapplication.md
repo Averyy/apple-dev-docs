@@ -10,6 +10,10 @@ Configurations for scenes you use to display content on the device’s main scre
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 
+
+
+**Type**: dictionary 
+
 #### Discussion
 
 Use this key to specify scene configurations for a session role. Each scene configuration corresponds to one you use for content you display on the device. The first item in the array represents the default scene configuration for this role.

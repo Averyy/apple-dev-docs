@@ -37,6 +37,14 @@ Specify `com.apple.osxserver.account` as the payload type.
 - [object MacOSServerAccount.ConfiguredAccountsItem](macosserveraccount/configuredaccountsitem.md)
   An array of dictionaries containing configured account types and relevant settings
 
+## Properties
+
+- `AccountDescription` (string): The description of the account.
+- `ConfiguredAccounts` ([MacOSServerAccount.ConfiguredAccountsItem]) *(required)*: An array of dictionaries containing configured account types and relevant settings
+- `HostName` (string) *(required)*: The server’s address.
+- `Password` (string): The user’s password.
+- `UserName` (string) *(required)*: The user’s user name.
+
 ## See Also
 
 - [object AIMAccount](aimaccount.md)

@@ -24,8 +24,8 @@ func objc_setAssociatedObject(_ object: Any, _ key: UnsafeRawPointer, _ value: A
 
 - `object`: The source object for the association.
 - `key`: The key for the association.
-- `value`: The value to associate with the key   for  . Pass   to clear an existing association.
-- `policy`: The policy for the association. For possible values, see  .
+- `value`: The value to associate with the key `key` for `object`. Pass `nil` to clear an existing association.
+- `policy`: The policy for the association. For possible values, see [`objc_AssociationPolicy`](objc_associationpolicy.md).
 
 ## See Also
 

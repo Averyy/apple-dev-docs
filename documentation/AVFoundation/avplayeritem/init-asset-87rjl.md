@@ -26,7 +26,7 @@ A new player item, initialized to play `asset`.
 
 ## Parameters
 
-- `asset`: The   to be played.
+- `asset`: The [`AVAsset`](avasset.md) to be played.
 
 ## See Also
 

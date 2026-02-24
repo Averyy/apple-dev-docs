@@ -35,7 +35,7 @@ The initializer may provide a dynamic type if the parameters are valid, but the 
 ## Parameters
 
 - `mimeType`: A string that represents the MIME type.
-- `supertype`: Another   instance that the resulting type must conform to; for example,  .
+- `supertype`: Another [`UTType`](uttype-swift.struct.md) instance that the resulting type must conform to; for example, [`UTTypeData`](uttypedata.md).
 
 ## See Also
 

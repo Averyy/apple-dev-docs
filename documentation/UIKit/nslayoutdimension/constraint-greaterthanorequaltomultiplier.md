@@ -28,9 +28,42 @@ This method defines the relationship `first attribute >= m * second attribute`. 
 
 The constraints produced by the following two examples are identical.
 
+**Swift**:
+
+```swift
+// Creating a constraint using NSLayoutConstraint
+NSLayoutConstraint(item: saveButton,
+                   attribute: .Width,
+                   relatedBy: .GreaterThanOrEqual,
+                   toItem: cancelButton,
+                   attribute: .Width,
+                   multiplier: 2.0,
+                   constant: 0.0).isActive = true
+ 
+// Creating the same constraint using constraintGreaterThanOrEqualToAnchor:multiplier:
+saveButton.widthAnchor.constraintGreaterThanOrEqualToAnchor(cancelButton.widthAnchor, multiplier: 2.0).isActive = true
+```
+
+**Objective-C**:
+
+```objc
+// Creating a constraint using NSLayoutConstraint
+[NSLayoutConstraint
+ constraintWithItem:self.saveButton
+ attribute:NSLayoutAttributeWidth
+ relatedBy:NSLayoutRelationGreaterThanOrEqual
+ toItem:self.cancelButton
+ attribute:NSLayoutAttributeWidth
+ multiplier:2.0
+ constant:0.0].active = YES;
+ 
+// Creating the same constraint using constraintGreaterThanOrEqualToAnchor:multiplier:
+[self.saveButton.widthAnchor constraintGreaterThanOrEqualToAnchor:self.cancelButton.widthAnchor multiplier:2.0].active = YES;
+```
+
 ## Parameters
 
-- `anchor`: A dimension anchor from a  ,  , or   object.
+- `anchor`: A dimension anchor from a [`UIView`](uiview.md), [`NSView`](https://developer.apple.com/documentation/AppKit/NSView), or [`UILayoutGuide`](uilayoutguide.md) object.
 - `m`: The multiplier constant for the constraint.
 
 ## See Also

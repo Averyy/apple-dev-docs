@@ -30,7 +30,7 @@ Use of this initializer is discouraged. Use [`seriesBuilder(for:)`](hkworkoutbui
 ## Parameters
 
 - `healthStore`: The HealthKit store.
-- `device`: An object representing the device that provided the location data. Pass   if the app is generating its own location data (for example, using  ).
+- `device`: An object representing the device that provided the location data. Pass `nil` if the app is generating its own location data (for example, using [`Core Location`](https://developer.apple.com/documentation/CoreLocation)).
 
 ## See Also
 

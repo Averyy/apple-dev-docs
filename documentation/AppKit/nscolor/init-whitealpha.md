@@ -22,8 +22,8 @@ Where possible, it is preferable to specify the colorspace explicitly using the 
 
 ## Parameters
 
-- `white`: The brightness. If the value is outside of the range  , the extended sRGB color space is used.
-- `alpha`: The alpha (opacity), expressed as a floating-point value in the range   (transparent) to   (opaque). Alpha values below   are interpreted as  , and values above   are interpreted as  .
+- `white`: The brightness. If the value is outside of the range `0–1.0`, the extended sRGB color space is used.
+- `alpha`: The alpha (opacity), expressed as a floating-point value in the range `0` (transparent) to `1.0` (opaque). Alpha values below `0` are interpreted as `0.0`, and values above `1.0` are interpreted as `1.0`.
 
 ## See Also
 

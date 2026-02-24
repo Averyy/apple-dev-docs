@@ -29,6 +29,11 @@ object InstalledApplicationListCommand
 - [object InstalledApplicationListCommand.Command](installedapplicationlistcommand/command-data.dictionary.md)
   The command to get a list of the installed apps on a device.
 
+## Properties
+
+- `Command` (InstalledApplicationListCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object InstalledApplicationListResponse](installedapplicationlistresponse.md)

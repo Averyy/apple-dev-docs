@@ -22,7 +22,7 @@ A result code.
 
 - `inObjectID`: The HAL audio object to query.
 - `inAddress`: The property that you are asking about.
-- `outIsSettable`: A Boolean value that indicates whether the property is settable ( ) or not ( ).
+- `outIsSettable`: A Boolean value that indicates whether the property is settable (`true`) or not (`false`).
 
 ## See Also
 
@@ -32,7 +32,7 @@ A result code.
   Asks a HAL audio object to change the value of a specified property.
 - [func AudioFileReadPackets(AudioFileID, Bool, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioStreamPacketDescription>?, Int64, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer?) -> OSStatus](audiofilereadpackets(_:_:_:_:_:_:_:).md)
   Reads a fixed duration of audio data from an audio file.
-- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:).md)
+- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:_:).md)
   The UIImage of the audio component’s icon.
 - [func AudioComponentGetLastActiveTime(AudioComponent) -> CFAbsoluteTime](audiocomponentgetlastactivetime(_:).md)
   The time at which the application publishing the component was last active.

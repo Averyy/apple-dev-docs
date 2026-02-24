@@ -20,7 +20,7 @@ Delegates might implement this method to display or log an error message. If you
 
 ## Parameters
 
-- `webView`: The   object for which this object is the policy delegate.
+- `webView`: The `WebView` object for which this object is the policy delegate.
 - `error`: The error that occurred.
 - `frame`: The frame in which the error occurred.
 

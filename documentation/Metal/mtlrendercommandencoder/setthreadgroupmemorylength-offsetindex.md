@@ -29,7 +29,7 @@ You can only change the threadgroup memory’s size between tile dispatches (see
 ## Parameters
 
 - `length`: The threadgroup memory length, in bytes.
-- `offset`: An integer that represents the location, in bytes, from the start of the buffer at   where the threadgroup memory begins.
+- `offset`: An integer that represents the location, in bytes, from the start of the buffer at `index` where the threadgroup memory begins.
 - `index`: An integer that represents an entry in the buffer argument table.
 
 ## See Also

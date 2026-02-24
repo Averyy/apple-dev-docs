@@ -20,8 +20,8 @@ Use this method if your nib file is at a fixed location (which is not inside eit
 
 ## Parameters
 
-- `windowNibPath`: The full path to the nib file that archives the receiver’s window; cannot be  .
-- `owner`: The nib file’s owner; cannot be  .
+- `windowNibPath`: The full path to the nib file that archives the receiver’s window; cannot be `nil`.
+- `owner`: The nib file’s owner; cannot be `nil`.
 
 ## See Also
 

@@ -26,7 +26,7 @@ This function does not release the memory used by the keychain object. In Object
 
 ## Parameters
 
-- `keychainOrArray`: In macOS 10.3 and later, passing   to this parameter returns an   error code. In OS X 10.2, this parameter was named   and only took a single keychain object. Passing   to this parameter deleted the user’s default keychain.
+- `keychainOrArray`: A single keychain object or a reference to an array of keychains you wish to delete. To delete more than one keychain, create a `CFArray` of keychain references (type `SecKeychainRef`) and pass a reference to the array. In macOS 10.3 and later, passing `NULL` to this parameter returns an `errSecInvalidKeychain` error code. In OS X 10.2, this parameter was named `keychain` and only took a single keychain object. Passing `NULL` to this parameter deleted the user’s default keychain.
 
 
 ---

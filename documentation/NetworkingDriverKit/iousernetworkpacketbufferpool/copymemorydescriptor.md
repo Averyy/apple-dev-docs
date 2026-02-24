@@ -20,7 +20,7 @@ virtual kern_return_t CopyMemoryDescriptor(IOMemoryDescriptor **memory);
 
 ## Parameters
 
-- `memory`: On output, a pointer to a memory descriptor object. It is a programmer error to specify   or an invalid pointer for this parameter.
+- `memory`: On output, a pointer to a memory descriptor object. It is a programmer error to specify `NULL` or an invalid pointer for this parameter.
 
 
 ---

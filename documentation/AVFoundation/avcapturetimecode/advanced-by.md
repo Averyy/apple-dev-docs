@@ -24,7 +24,7 @@ A new [`AVCaptureTimecode`](avcapturetimecode.md) struct with the updated time v
 
 ## Parameters
 
-- `timecode`: The original   to be incremented.
+- `timecode`: The original [`AVCaptureTimecode`](avcapturetimecode.md) to be incremented.
 - `framesToAdd`: The number of frames to add to the timecode.
 
 ## See Also

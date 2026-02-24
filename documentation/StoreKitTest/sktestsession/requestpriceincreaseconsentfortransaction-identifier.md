@@ -64,7 +64,7 @@ To simulate the user canceling their subscription, call [`declinePriceIncreaseFo
 
 ## Parameters
 
-- `identifier`: The transaction   of the auto-renewable subscription to get a pending price increase.
+- `identifier`: The transaction [`identifier`](sktesttransaction/identifier.md) of the auto-renewable subscription to get a pending price increase.
 
 ## See Also
 

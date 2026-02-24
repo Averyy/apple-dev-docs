@@ -32,7 +32,7 @@ Implement this method if a view in the view hierarchy supports a scroll by page 
 
 ## Parameters
 
-- `direction`: A constant that specifies the direction of the scrolling action. See   for descriptions of valid constants.
+- `direction`: A constant that specifies the direction of the scrolling action. See [`UIAccessibilityScrollDirection`](https://developer.apple.com/documentation/UIKit/UIAccessibilityScrollDirection) for descriptions of valid constants.
 
 ## See Also
 

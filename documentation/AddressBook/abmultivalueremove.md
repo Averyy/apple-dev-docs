@@ -21,7 +21,7 @@ func ABMultiValueRemove(_ multiValue: ABMutableMultiValueRef!, _ index: CFIndex)
 ## Parameters
 
 - `multiValue`: The multi-value list you wish to modify.
-- `index`: The index of the entry to be removed. If   is out of bounds, this function raises an exception.
+- `index`: The index of the entry to be removed. If `index` is out of bounds, this function raises an exception.
 
 ## See Also
 

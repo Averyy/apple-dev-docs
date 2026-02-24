@@ -25,7 +25,7 @@ Delegates might implement this method to begin tracking the progress of loading 
 ## Parameters
 
 - `sender`: The web view that sent this message.
-- `request`: The request that initiated this load for  .
+- `request`: The request that initiated this load for `dataSource`.
 - `dataSource`: The data source for this web view.
 
 ## See Also

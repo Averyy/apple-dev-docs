@@ -23,7 +23,7 @@ Passing a value of `–1` for `row` and `NSTableViewDropOn` as the `operation` c
 ## Parameters
 
 - `row`: The target row index.
-- `dropOperation`: The drop operation. Supported values are specified by  .
+- `dropOperation`: The drop operation. Supported values are specified by [`NSTableView.DropOperation`](nstableview/dropoperation.md).
 
 ## See Also
 

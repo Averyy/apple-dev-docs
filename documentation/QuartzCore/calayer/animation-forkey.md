@@ -29,7 +29,7 @@ Use this method to retrieve only animation objects already associated with a lay
 
 ## Parameters
 
-- `key`: A string that specifies the identifier of the animation. This string corresponds to the identifier string you passed to the   method.
+- `key`: A string that specifies the identifier of the animation. This string corresponds to the identifier string you passed to the [`add(_:forKey:)`](calayer/add(_:forkey:).md) method.
 
 ## See Also
 

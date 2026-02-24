@@ -22,7 +22,7 @@ A view with the specified vertical placement.
 
 ## Parameters
 
-- `verticalPlacement`: The vertical placement for a view that’s part of an expanded Live   Activity in the Dynamic Island.
+- `verticalPlacement`: The vertical placement for a view that’s part of an expanded Live Activity in the Dynamic Island.
 
 
 ---

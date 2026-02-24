@@ -25,7 +25,7 @@ For applications to use the lock, `path` must be accessible to—and writable by
 
 ## Parameters
 
-- `path`: All of   up to the last component itself must exist. You can use   to create (and set permissions) for any nonexistent intermediate directories.
+- `path`: All of `path` up to the last component itself must exist. You can use [`FileManager`](filemanager.md) to create (and set permissions) for any nonexistent intermediate directories.
 
 
 ---

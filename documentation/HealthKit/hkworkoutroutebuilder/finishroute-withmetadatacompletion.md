@@ -36,8 +36,9 @@ Additionally, this method invalidates the builder. Any further calls to the buil
 ## Parameters
 
 - `workout`: The workout to associate with the route. You must have already saved this workout to the HealthKit store.
-- `metadata`: Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own custom keys as needed to extend the HealthKit quantity sample’s capabilities.
-- `completion`: A block called after the system has saved the route data. The system passes the block the following parameters:
+- `metadata`: The metadata dictionary can contain extra information describing this sample. The dictionary’s keys are all [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects. The values may be [`HKQuantity`](hkquantity.md), [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), or [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) objects. For a complete list of predefined metadata keys, see [`Metadata Keys`](metadata-keys.md). Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own custom keys as needed to extend the HealthKit quantity sample’s capabilities.
+- `completion`: A block called after the system has saved the route data. The system passes the block the following parameters: - **`workoutRoute`**: The workout route, or `nil` if an error occurred. If successful, the system has already associated the route with the provided workout and saved it to the HealthKit store.
+- **`error`**: An object that describes the error, if an error has occurred; otherwise, `nil`.
 
 ## See Also
 

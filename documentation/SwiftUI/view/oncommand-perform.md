@@ -21,12 +21,12 @@ A view that triggers `action` when the `command` occurs.
 
 #### Discussion
 
-This view or one of the views it contains must be in focus in order for the action to trigger. Other actions for the same command on views  to the view in focus take priority, potentially overriding this action.
+This view or one of the views it contains must be in focus in order for the action to trigger. Other actions for the same command on views *closer* to the view in focus take priority, potentially overriding this action.
 
 ## Parameters
 
-- `selector`: The selector to register for  .
-- `action`: The action to perform. If   is  ,    keeps its association with this view but doesn’t trigger.
+- `selector`: The selector to register for `action`.
+- `action`: The action to perform. If `action` is `nil`, `command` keeps its association with this view but doesn’t trigger.
 
 ## See Also
 

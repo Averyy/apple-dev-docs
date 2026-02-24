@@ -23,9 +23,9 @@ static kern_return_t Create(uint64_t options, uint64_t capacity, uint64_t alignm
 
 ## Parameters
 
-- `options`: The direction in which buffer data moves, relative to your process. For example, specify   if your driver only reads from the buffer. For a list of possible values, see  .
-- `capacity`: The maximum number of bytes to allocate for the memory buffer. The buffer’s initial length is set to the value in this parameter. You can change the length later by calling the   method.
-- `alignment`: The minimum required alignment of the buffer in bytes. For example, specify 256 to align the buffer on an address where bits 0 to 7 are  . Specify   if you don’t require a specific alignment.
+- `options`: The direction in which buffer data moves, relative to your process. For example, specify [`kIOMemoryDirectionIn`](kiomemorydirectionin.md) if your driver only reads from the buffer. For a list of possible values, see `Memory Buffer Options`.
+- `capacity`: The maximum number of bytes to allocate for the memory buffer. The buffer’s initial length is set to the value in this parameter. You can change the length later by calling the [`SetLength`](iobuffermemorydescriptor/setlength.md) method.
+- `alignment`: The minimum required alignment of the buffer in bytes. For example, specify 256 to align the buffer on an address where bits 0 to 7 are `0`. Specify `0` if you don’t require a specific alignment.
 - `memory`: A variable in which to store the newly created buffer memory descriptor.
 
 ## See Also

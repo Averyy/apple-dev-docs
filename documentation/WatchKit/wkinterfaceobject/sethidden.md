@@ -24,7 +24,7 @@ When you hide or show an object in your interface, WatchKit makes a note to upda
 
 ## Parameters
 
-- `hidden`: A Boolean value indicating the visibility of the object. Specify   to hide the object. Specify   to show it.
+- `hidden`: A Boolean value indicating the visibility of the object. Specify [`true`](https://developer.apple.com/documentation/Swift/true) to hide the object. Specify [`false`](https://developer.apple.com/documentation/Swift/false) to show it.
 
 ## See Also
 

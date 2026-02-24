@@ -32,7 +32,7 @@ Some keys expect a complex type. For example, the [`color`](pdfannotationkey/col
 ## Parameters
 
 - `value`: The value to set in the attribute’s dictionary.
-- `key`: A   or appropriate string from the Adobe PDF Specification.
+- `key`: A [`PDFAnnotationKey`](pdfannotationkey.md) or appropriate string from the Adobe PDF Specification.
 
 ## See Also
 

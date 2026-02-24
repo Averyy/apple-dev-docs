@@ -24,9 +24,9 @@ The `labelColumn` and `recordingFileColumn` parameters are optional if the data 
 
 ## Parameters
 
-- `featureColumns`: The names of the feature columns the method includes in the   it   generates.
-- `labelColumn`: The name of the label column. This parameter must not be   if the data source uses   .
-- `recordingFileColumn`: The name of the column with the recording file names. This parameter must not be    if the data source uses   .
+- `featureColumns`: The names of the feature columns the method includes in the [`MLDataTable`](mldatatable.md) it generates.
+- `labelColumn`: The name of the label column. This parameter must not be `nil` if the data source uses [`MLActivityClassifier.DataSource.directoryWithDataAndAnnotation(at:annotationFileName:timeStampColumn:labelStartTimeColumn:labelEndTimeColumn:)`](mlactivityclassifier/datasource/directorywithdataandannotation(at:annotationfilename:timestampcolumn:labelstarttimecolumn:labelendtimecolumn:).md).
+- `recordingFileColumn`: The name of the column with the recording file names. This parameter must not be `nil` if the data source uses [`MLActivityClassifier.DataSource.directoryWithDataAndAnnotation(at:annotationFileName:timeStampColumn:labelStartTimeColumn:labelEndTimeColumn:)`](mlactivityclassifier/datasource/directorywithdataandannotation(at:annotationfilename:timestampcolumn:labelstarttimecolumn:labelendtimecolumn:).md).
 
 ## See Also
 

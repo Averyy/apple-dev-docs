@@ -31,7 +31,7 @@ A text view calls this method if the user taps or long-presses the text attachme
 - `textView`: The text view containing the text attachment.
 - `textAttachment`: The text attachment.
 - `characterRange`: The character range containing the text attachment.
-- `interaction`: The type of interaction that is occurring (for possible values, see  ).
+- `interaction`: The type of interaction that is occurring (for possible values, see [`UITextItemInteraction`](uitextiteminteraction.md)).
 
 ## See Also
 

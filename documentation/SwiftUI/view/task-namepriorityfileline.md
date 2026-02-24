@@ -57,11 +57,11 @@ The task is created by `Task.immediate`. Its action begins execution synchronous
 
 ## Parameters
 
-- `name`: Human readable name for the task. A name will be generated   if this argument is  . This value is a no-op prior to iOS 26.4,   macOS 26.4, watchOS 26.4, tvOS 26.4, and visionOS 26.4.
-- `priority`: The task priority to use when creating the asynchronous   task. The default priority is   .
-- `file`: File name used in default task name. SwiftUI uses the callsite   of .task by default. This value is a no-op prior to iOS 26.4,   macOS 26.4, watchOS 26.4, tvOS 26.4, and visionOS 26.4.
-- `line`: Line number used in default task name. SwiftUI uses the callsite   of .task by default. This value is a no-op prior to iOS 26.4,   macOS 26.4, watchOS 26.4, tvOS 26.4, and visionOS 26.4.
-- `action`: A closure that SwiftUI calls as an asynchronous task   before the view appears. SwiftUI will automatically cancel the task   at some point after the view disappears before the action completes.
+- `name`: Human readable name for the task. A name will be generated if this argument is `nil`. This value is a no-op prior to iOS 26.4, macOS 26.4, watchOS 26.4, tvOS 26.4, and visionOS 26.4.
+- `priority`: The task priority to use when creating the asynchronous task. The default priority is [`userInitiated`](https://developer.apple.com/documentation/Swift/TaskPriority/userInitiated).
+- `file`: File name used in default task name. SwiftUI uses the callsite of .task by default. This value is a no-op prior to iOS 26.4, macOS 26.4, watchOS 26.4, tvOS 26.4, and visionOS 26.4.
+- `line`: Line number used in default task name. SwiftUI uses the callsite of .task by default. This value is a no-op prior to iOS 26.4, macOS 26.4, watchOS 26.4, tvOS 26.4, and visionOS 26.4.
+- `action`: A closure that SwiftUI calls as an asynchronous task before the view appears. SwiftUI will automatically cancel the task at some point after the view disappears before the action completes.
 
 
 ---

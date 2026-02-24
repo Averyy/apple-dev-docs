@@ -23,8 +23,8 @@ When the `shadowImage` parameter is `nil`, the default shadow will be used. When
 
 ## Parameters
 
-- `shadowImage`: The image to use for the toolbar shadow in the position specified by  .
-- `topOrBottom`: A toolbar position constant. You can use this parameter to indicate whether the   is intended for a toolbar at the top or bottom of the view.
+- `shadowImage`: The image to use for the toolbar shadow in the position specified by `topOrBottom`.
+- `topOrBottom`: A toolbar position constant. You can use this parameter to indicate whether the `shadowImage` is intended for a toolbar at the top or bottom of the view.
 
 ## See Also
 

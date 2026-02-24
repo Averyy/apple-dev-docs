@@ -23,6 +23,9 @@ typealias GCGamepadValueChangedHandler = (GCGamepad, GCControllerElement) -> Voi
 
 The block parameters are defined as follows:
 
+- **`gamepad`**: The profile object whose value changed.
+- **`element`**: The element whose value changed.
+
 If multiple elements change values at the same time, the block is called once for each element that changed. The block is called only for the elements directly attached to the profile object; if a child element of one of those elements changes values, the block is called for the parent.
 
 This block type is used by the [`valueChangedHandler`](gcgamepad/valuechangedhandler.md) property.

@@ -25,8 +25,8 @@ init(values: UnsafePointer<CGFloat>, count: Int)
 
 ## Parameters
 
-- `values`: A pointer   values for vector.
-- `count`: The number of   specified by the   parameter.
+- `values`: A pointer `CGFloat` values for vector.
+- `count`: The number of `CGFloats` specified by the `values` parameter.
 
 ## See Also
 

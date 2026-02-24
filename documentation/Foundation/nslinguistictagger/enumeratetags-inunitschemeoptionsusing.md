@@ -33,10 +33,12 @@ This method’s block is called for all tokens intersecting a given range, suppl
 ## Parameters
 
 - `range`: The range to analyze.
-- `unit`: The linguistic unit. For possible values, see  .
-- `scheme`: The tag scheme. For possible values, see  .
-- `options`: The linguistic tagger options to use. See   for possible values.
-- `block`: The block takes the following arguments:
+- `unit`: The linguistic unit. For possible values, see [`NSLinguisticTaggerUnit`](nslinguistictaggerunit.md).
+- `scheme`: The tag scheme. For possible values, see [`NSLinguisticTagScheme`](nslinguistictagscheme.md).
+- `options`: The linguistic tagger options to use. See [`NSLinguisticTagger.Options`](nslinguistictagger/options.md) for possible values.
+- `block`: The block to apply to ranges of the string. The block takes the following arguments: - **tag**: The located linguistic tag.
+- **tokenRange**: The range of the linguistic tag.
+- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop further processing of the set. The `stop` argument is an out-only argument. You should only ever set this Boolean to [`true`](https://developer.apple.com/documentation/Swift/true) within the block.
 
 ## See Also
 

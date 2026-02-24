@@ -21,7 +21,8 @@ func contentRuleList(forIdentifier identifier: String!) async throws -> WKConten
 ## Parameters
 
 - `identifier`: The identifier of the list you want.
-- `completionHandler`: A completion handler block to call with the results of the search. This block has no return value and takes the following parameters:
+- `completionHandler`: A completion handler block to call with the results of the search. This block has no return value and takes the following parameters: - **ruleList**: The [`WKContentRuleList`](wkcontentrulelist.md) object with the specified identifier. This parameter is `nil` if the error occurs during the search.
+- **error**: `nil` on success, or an error object if an error occurs during the search.
 
 ## See Also
 

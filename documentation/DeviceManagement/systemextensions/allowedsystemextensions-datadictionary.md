@@ -14,6 +14,10 @@ A dictionary that maps team identifiers to bundle identifiers that are allowed.
 object SystemExtensions.AllowedSystemExtensions
 ```
 
+## Properties
+
+- `ANY` ([string]): The mapping of team identifiers to arrays of bundle identifiers, where the bundle identifier is that of the system extension to be installed.
+
 ## See Also
 
 - [object SystemExtensions.AllowedSystemExtensionTypes](systemextensions/allowedsystemextensiontypes-data.dictionary.md)

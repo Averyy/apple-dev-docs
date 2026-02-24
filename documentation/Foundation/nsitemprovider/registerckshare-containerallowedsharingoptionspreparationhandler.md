@@ -28,9 +28,9 @@ When the system invokes the share sheet with a `CKShare` that you register with 
 
 ## Parameters
 
-- `container`: A   the system uses to coordinate all the interactions between your app and the server.
-- `allowedSharingOptions`: The  . The standard option is the default.
-- `preparationHandler`: The handler the system calls in your app to create a new  .
+- `container`: A [`CKContainer`](https://developer.apple.com/documentation/CloudKit/CKContainer) the system uses to coordinate all the interactions between your app and the server.
+- `allowedSharingOptions`: The [`CKAllowedSharingOptions`](https://developer.apple.com/documentation/CloudKit/CKAllowedSharingOptions). The standard option is the default.
+- `preparationHandler`: The handler the system calls in your app to create a new [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare).
 
 ## See Also
 

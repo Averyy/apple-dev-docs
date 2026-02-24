@@ -11,6 +11,12 @@
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
+**Default**: `Application`
+
 ## See Also
 
 - [EnvironmentVariables](information-property-list/xpcservice/environmentvariables.md)

@@ -20,7 +20,7 @@ kern_return_t SetWakeOnMagicPacketSupport(bool isSupported);
 
 ## Parameters
 
-- `isSupported`: If  , the device supports waking up when the network receives a magic packet; otherwise, it doesn’t.
+- `isSupported`: If `YES`, the device supports waking up when the network receives a magic packet; otherwise, it doesn’t.
 
 ## See Also
 

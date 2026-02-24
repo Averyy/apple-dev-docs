@@ -47,7 +47,7 @@ If you want to solve the system XA = B, which is less common (but still occurs f
 ## Parameters
 
 - `matrix_system`: A matrix describing the left-hand side of the system.
-- `obj_rhs`: A vector or matrix describing one or more right-hand sides for which the   equations are to be solved.
+- `obj_rhs`: A vector or matrix describing one or more right-hand sides for which the equations are to be solved.
 
 ## See Also
 

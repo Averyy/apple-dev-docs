@@ -75,7 +75,8 @@ After the person responds, the system calls the callback handler on an arbitrary
 
 - `objectType`: The data type you want to read.
 - `predicate`: A predicate that further restricts the data type.
-- `completion`: A completion handler that the system calls after the user responds to the request. The completion handler has the following parameters:
+- `completion`: A completion handler that the system calls after the user responds to the request. The completion handler has the following parameters: - **success**: A Boolean value that indicates whether the request succeeded. This value doesn’t indicate whether the user actually granted permission. The parameter is [`false`](https://developer.apple.com/documentation/Swift/false) if an error occurred while processing the request; otherwise, it’s [`true`](https://developer.apple.com/documentation/Swift/true).
+- **error**: An error object. If an error occurred, this object contains information about the error; otherwise, the system passes `nil`.
 
 ## See Also
 

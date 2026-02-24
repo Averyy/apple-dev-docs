@@ -21,7 +21,7 @@ convenience init(specification specificationData: Data) throws
 
 ## Parameters
 
-- `specificationData`: The contents of a   as a data blob.
+- `specificationData`: The contents of a `.mlmodel` as a data blob.
 
 ## See Also
 

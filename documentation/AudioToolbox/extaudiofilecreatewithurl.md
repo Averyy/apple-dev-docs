@@ -30,10 +30,10 @@ If the file to be created is in a compressed format, you may set the sample rate
 ## Parameters
 
 - `inURL`: The URL of the new audio file.
-- `inFileType`: The type of file to create, specified as a constant from the   enumeration.
+- `inFileType`: The type of file to create, specified as a constant from the [`AudioFileTypeID`](audiofiletypeid.md) enumeration.
 - `inStreamDesc`: The format of the audio data to be written to the file.
-- `inChannelLayout`: The channel layout of the audio data. If non-null, this must be consistent with the number of channels specified by the   parameter.
-- `inFlags`: Flags for creating or opening the file. If the   flag is set, it erases an existing file. If the flag is not set, the function fails fails if the URL points to an existing file.
+- `inChannelLayout`: The channel layout of the audio data. If non-null, this must be consistent with the number of channels specified by the `inStreamDesc` parameter.
+- `inFlags`: Flags for creating or opening the file. If the [`eraseFile`](audiofileflags/erasefile.md) flag is set, it erases an existing file. If the flag is not set, the function fails fails if the URL points to an existing file.
 - `outExtAudioFile`: On output, a newly allocated extended audio file object.
 
 ## See Also

@@ -32,7 +32,7 @@ The.map view doesn’t call this method if the app is running in the background.
 ## Parameters
 
 - `mapView`: The map view that’s tracking the user’s location.
-- `userLocation`: The location object representing the user’s latest location. This property may be  .
+- `userLocation`: The location object representing the user’s latest location. This property may be `nil`.
 
 ## See Also
 

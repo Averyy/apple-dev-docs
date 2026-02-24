@@ -3,7 +3,7 @@
 **Framework**: Natural Language  
 **Kind**: enum
 
-The status of an asset request.
+The availability of the contextual embedding model assets.
 
 **Availability**:
 - iOS 12.0+
@@ -20,17 +20,32 @@ The status of an asset request.
 enum AssetsResult
 ```
 
+#### Overview
+
+The framework downloads models over-the-air, so check asset availability and download them if needed.
+
+```swift
+if !embeddingModel.hasAvailableAssets {
+    let downloadResult = try await embeddingModel.requestAssets()
+    guard downloadResult == .available else {
+       print("Assets are not available locally and failed to be downloaded. Check your network connection and try again later.")
+       return
+   }
+}
+```
+
 ## Topics
 
 ### Getting the result status
 - [NLContextualEmbedding.AssetsResult.available](nlcontextualembedding/assetsresult/available.md)
-  A result that indicates assets are available.
+  A result that indicates that the assets are present on-device.
 - [NLContextualEmbedding.AssetsResult.notAvailable](nlcontextualembedding/assetsresult/notavailable.md)
-  A result that indicates assets aren’t available.
+  A result that indicates that the assets aren’t present on-device.
 - [NLContextualEmbedding.AssetsResult.error](nlcontextualembedding/assetsresult/error.md)
   A result that indicates the framework encounters an error.
 ### Initializers
 - [init?(rawValue: Int)](nlcontextualembedding/assetsresult/init(rawvalue:).md)
+  Creates an embedding key with the given string as its raw value.
 
 ## Relationships
 
@@ -45,7 +60,7 @@ enum AssetsResult
 ## See Also
 
 - [func requestAssets(completionHandler: (NLContextualEmbedding.AssetsResult, (any Error)?) -> Void)](nlcontextualembedding/requestassets(completionhandler:).md)
-  Requests assets for an embedding, if available.
+  Requests embedding model assets and downloads them if available.
 
 
 ---

@@ -26,8 +26,8 @@ Use the [`SecTrustedApplicationCopyData(_:_:)`](sectrustedapplicationcopydata(_:
 
 ## Parameters
 
-- `appRef`: A trusted app from which to retrieve data. Use the   method to create a trusted app instance.
-- `data`: On return, points to an opaque data instance. Call the   method to release the data when you are finished using it.
+- `appRef`: A trusted app from which to retrieve data. Use the [`SecTrustedApplicationCreateFromPath(_:_:)`](sectrustedapplicationcreatefrompath(_:_:).md) method to create a trusted app instance.
+- `data`: On return, points to an opaque data instance. Call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) method to release the data when you are finished using it.
 
 
 ---

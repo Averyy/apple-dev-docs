@@ -20,7 +20,7 @@ Configure all of the relevant properties of the panel before you call this metho
 
 ## Parameters
 
-- `handler`: The block to call after the user closes the panel. This block has no return value and takes a single parameter:
+- `handler`: The block to call after the user closes the panel. This block has no return value and takes a single parameter: - **result**: The action taken by the user. The value of this parameter is [`NSFileHandlingPanelOKButton`](nsfilehandlingpanelokbutton.md) if the user chose the OK button or [`NSFileHandlingPanelCancelButton`](nsfilehandlingpanelcancelbutton.md) if the user chose the Cancel button.
 
 ## See Also
 

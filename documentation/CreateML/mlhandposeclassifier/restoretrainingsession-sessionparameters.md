@@ -24,7 +24,7 @@ An [`MLTrainingSession`](mltrainingsession.md) that represents the hand pose cla
 
 ## Parameters
 
-- `sessionParameters`: The same   instance   that created an existing training session.
+- `sessionParameters`: The same [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance that created an existing training session.
 
 ## See Also
 

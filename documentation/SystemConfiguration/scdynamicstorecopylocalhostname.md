@@ -20,7 +20,7 @@ Returns the current local host name, or `NULL` if the name has not been set or i
 
 ## Parameters
 
-- `store`: The dynamic store session that should be used for communication with the server. Pass   to use a temporary session.
+- `store`: The dynamic store session that should be used for communication with the server. Pass `NULL` to use a temporary session.
 
 ## See Also
 

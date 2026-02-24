@@ -30,12 +30,12 @@ The counter doesn’t track memory operations to data that’s already in the GP
 ## Parameters
 
 - `texture`: A sparse texture instance.
-- `region`: A region within the sparse texture’s  , in sparse tile coordinates.
+- `region`: A region within the sparse texture’s `mipLevel`, in sparse tile coordinates.
 - `mipLevel`: A mipmap level within the sparse texture.
 - `slice`: A slice within the sparse texture.
 - `resetCounters`: A Boolean value that indicates whether the command resets the counters after it completes.
 - `countersBuffer`: A destination buffer where the command stores the sparse texture’s access counter data.
-- `countersBufferOffset`: A starting offset, in bytes, within   where the command writes the first byte of the sparse texture’s access counter data.
+- `countersBufferOffset`: A starting offset, in bytes, within `countersBuffer` where the command writes the first byte of the sparse texture’s access counter data.
 
 ## See Also
 

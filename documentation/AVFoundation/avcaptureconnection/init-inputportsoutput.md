@@ -31,8 +31,8 @@ The [`addInput(_:)`](avcapturesession/addinput(_:).md): or [`addOutput(_:)`](avc
 
 ## Parameters
 
-- `ports`: An array of   instances that relate to   instances.
-- `output`: An   instance.
+- `ports`: An array of [`AVCaptureInput.Port`](avcaptureinput/port.md) instances that relate to [`AVCaptureInput`](avcaptureinput.md) instances.
+- `output`: An [`AVCaptureOutput`](avcaptureoutput.md) instance.
 
 ## See Also
 

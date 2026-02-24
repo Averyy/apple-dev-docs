@@ -24,6 +24,60 @@ class AVPlayerItemMetadataCollector
 
 You can use the HLS `#EXT-X-DATERANGE` tag to define date range metadata in a media playlist. This tag is useful for defining timed metadata for interstitial regions such as advertisements, but can be used to define any timed metadata needed by your stream. To access this metadata when the stream is played using an [`AVPlayer`](avplayer.md), you create an instance of `AVPlayerItemMetadataCollector`, configure its delegate object (see [`AVPlayerItemMetadataCollectorPushDelegate`](avplayeritemmetadatacollectorpushdelegate.md)), and add it as a media data collector to the [`AVPlayerItem`](avplayeritem.md) (see example).
 
+**Swift**:
+
+```swift
+class PlaybackController: NSObject, AVPlayerItemMetadataCollectorPushDelegate {
+    
+    let player = AVPlayer()
+    var playerItem: AVPlayerItem!
+    var metadataCollector: AVPlayerItemMetadataCollector!
+    
+    func prepareToPlay(url: URL) {
+        metadataCollector = AVPlayerItemMetadataCollector()
+        metadataCollector.setDelegate(self, queue: DispatchQueue.main)
+        
+        playerItem = AVPlayerItem(url: url)
+        playerItem.add(metadataCollector)
+        
+        player.replaceCurrentItem(with: playerItem)
+    }
+    
+    func metadataCollector(_ metadataCollector: AVPlayerItemMetadataCollector,
+                           didCollect metadataGroups: [AVDateRangeMetadataGroup],
+                           indexesOfNewGroups: IndexSet,
+                           indexesOfModifiedGroups: IndexSet) {
+        // Process metadata
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+// Adopts AVPlayerItemMetadataCollectorPushDelegate
+@implementation PlaybackController
+ 
+- (void)prepareToPlay:(NSURL *)url {
+    self.metadataCollector = [[AVPlayerItemMetadataCollector alloc] init];
+    [self.metadataCollector setDelegate:self queue:dispatch_get_main_queue()];
+ 
+    self.playerItem = [AVPlayerItem playerItemWithURL:url];
+    [self.playerItem addMediaDataCollector:self.metadataCollector];
+ 
+    self.player = [AVPlayer playerWithPlayerItem:self.playerItem];
+}
+ 
+- (void)metadataCollector:(AVPlayerItemMetadataCollector *)metadataCollector
+didCollectDateRangeMetadataGroups:(NSArray<AVDateRangeMetadataGroup *> *)metadataGroups
+       indexesOfNewGroups:(NSIndexSet *)indexesOfNewGroups
+  indexesOfModifiedGroups:(NSIndexSet *)indexesOfModifiedGroups {
+    // Process metadata
+}
+ 
+@end
+```
+
 Creating an `AVPlayerItemMetadataCollector` as shown in the example, will capture all `#EXT-X-DATERANGE` metadata defined in your stream. If you would like to filter the output to only the metadata of interest, you can create an instance to filter by identifier and/or classifying labels using the [`init(identifiers:classifyingLabels:)`](avplayeritemmetadatacollector/init(identifiers:classifyinglabels:).md) initializer.
 
 ## Topics

@@ -24,8 +24,8 @@ An initialized spring timing parameters object or `nil` if the object could not 
 
 ## Parameters
 
-- `ratio`: The damping ratio to apply to the spring’s motion. To smoothly decelerate the animation without oscillation, specify a value of  . Specify values closer to   to create less damping and more oscillation.
-- `velocity`: For details about how to calculate this velocity, see  .
+- `ratio`: The damping ratio to apply to the spring’s motion. To smoothly decelerate the animation without oscillation, specify a value of `1`. Specify values closer to `0` to create less damping and more oscillation.
+- `velocity`: The target property’s initial rate of change at the start of the spring animation. If the target property doesn’t change, specify a vector with `dx` and `dy` components of `0`. For details about how to calculate this velocity, see [`initialVelocity`](uispringtimingparameters/initialvelocity.md).
 
 ## See Also
 

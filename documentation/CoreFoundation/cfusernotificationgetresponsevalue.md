@@ -21,8 +21,8 @@ The value of the text field identified by `key` and `idx`. Ownership follows the
 ## Parameters
 
 - `userNotification`: The user notification to use.
-- `key`: The dictionary key identifying the text fields to use. Currently, only   is supported.
-- `idx`: The index of the text field value to return. The index corresponds to the order in which text fields are listed in the   array in the user notification’s description dictionary.
+- `key`: The dictionary key identifying the text fields to use. Currently, only [`kCFUserNotificationTextFieldValuesKey`](kcfusernotificationtextfieldvalueskey.md) is supported.
+- `idx`: The index of the text field value to return. The index corresponds to the order in which text fields are listed in the [`kCFUserNotificationTextFieldTitlesKey`](kcfusernotificationtextfieldtitleskey.md) array in the user notification’s description dictionary.
 
 ## See Also
 

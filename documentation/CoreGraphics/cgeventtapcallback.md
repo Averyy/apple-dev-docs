@@ -27,8 +27,8 @@ If the event tap is an passive listener, your callback function may return the e
 
 ## Parameters
 
-- `proxy`: A proxy for the event tap. See  . This callback function may pass this proxy to other functions such as the event-posting routines.
-- `type`: The event type of this event. See  .
+- `proxy`: A proxy for the event tap. See [`CGEventTapProxy`](cgeventtapproxy.md). This callback function may pass this proxy to other functions such as the event-posting routines.
+- `type`: The event type of this event. See [`CGEventType`](cgeventtype.md).
 - `event`: The incoming event. This event is owned by the caller, and you do not need to release it.
 - `refcon`: A pointer to user-defined data. You specify this pointer when you create the event tap. Several different event taps could use the same callback function, each tap with its own user-defined data.
 

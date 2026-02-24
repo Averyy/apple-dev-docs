@@ -21,7 +21,7 @@ var yaw: Double
 
 #### Discussion
 
-A  is a rotation around the y-axis that runs vertically through the controller. The sign of the yaw follows the right-hand rule. If you point your right thumb along the positive axis, the curl of your other fingers points in the positive direction around that axis.
+A *yaw* is a rotation around the y-axis that runs vertically through the controller. The sign of the yaw follows the right-hand rule. If you point your right thumb along the positive axis, the curl of your other fingers points in the positive direction around that axis.
 
 ## See Also
 

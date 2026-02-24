@@ -24,7 +24,7 @@ After you move a packet to the appropriate completion queue, call this method to
 
 ## Parameters
 
-- `packet`: The packet to deallocate. It is a programmer error to specify   or an invalid pointer for this parameter.
+- `packet`: The packet to deallocate. It is a programmer error to specify `NULL` or an invalid pointer for this parameter.
 
 ## See Also
 

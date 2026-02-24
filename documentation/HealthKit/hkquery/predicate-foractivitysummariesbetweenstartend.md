@@ -27,10 +27,31 @@ A predicate for matching activity summaries spanning a range of days.
 
 Use this convenience method to create a predicate that matches activity summaries that fall between the specified days. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
+**Swift**:
+
+```swift
+let forDays =
+    HKQuery.predicateForActivitySummariesBetweenStartDateComponents(startDateComponents, endDateComponents: endDateComponents)
+let explicitForDays =
+    NSPredicate(format: "%K >= %@ AND %K <= %@", HKPredicateKeyPathDateComponents, startDateComponents, HKPredicateKeyPathDateComponents, endDateComponents)
+```
+
+**Objective-C**:
+
+```objc
+NSPredicate *forDay =
+[HKQuery HKQuery.predicateForActivitySummariesBetweenStartDateComponents: startDateComponents endDateComponents:endDateComponents];
+ 
+NSPredicate *explicitforDay =
+[NSPredicate predicateWithFormat:@"%K >= %@ AND %K <= %@",
+ HKPredicateKeyPathDateComponents, startDateComponents,
+ HKPredicateKeyPathDateComponents, endDateComponents];
+```
+
 ## Parameters
 
-- `startDateComponents`: The date components must have a valid   property.
-- `endDateComponents`: The date components must have a valid   property.
+- `startDateComponents`: Date components that uniquely identify the start day as perceived by the user. This day may be longer or shorter than 24 hours (for example, if the user traveled across time zones). The date components must have a valid [`calendar`](https://developer.apple.com/documentation/Foundation/NSDateComponents/calendar) property.
+- `endDateComponents`: Date components that uniquely identify the end day as perceived by the user. This day may be longer or shorter than 24 hours (for example, if the user traveled across time zones). The date components must have a valid [`calendar`](https://developer.apple.com/documentation/Foundation/NSDateComponents/calendar) property.
 
 ## See Also
 

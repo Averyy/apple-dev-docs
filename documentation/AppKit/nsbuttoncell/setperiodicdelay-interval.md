@@ -20,8 +20,8 @@ These values are used if the button is configured (by a [`isContinuous`](nscell/
 
 ## Parameters
 
-- `delay`: The maximum value is 60.0 seconds; if a larger value is supplied, it’s ignored, and 60.0 seconds is used.
-- `interval`: The maximum value is 60.0 seconds; if a larger value is supplied, it’s ignored, and 60.0 seconds is used.
+- `delay`: The amount of time (in seconds) that a continuous button will pause before starting to periodically send action messages to the target object. The maximum value is 60.0 seconds; if a larger value is supplied, it’s ignored, and 60.0 seconds is used.
+- `interval`: The amount of time (in seconds) between each action message. The maximum value is 60.0 seconds; if a larger value is supplied, it’s ignored, and 60.0 seconds is used.
 
 ## See Also
 

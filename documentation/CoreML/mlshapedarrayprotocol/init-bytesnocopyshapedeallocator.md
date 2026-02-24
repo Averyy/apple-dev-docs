@@ -24,7 +24,7 @@ init(bytesNoCopy bytes: UnsafeRawPointer, shape: [Int], deallocator: Data.Deallo
 
 - `bytes`: An unsafe raw pointer to the data.
 - `shape`: An integer array. Each element represents the size of the shaped array’s corresponding dimension.
-- `deallocator`: A  .
+- `deallocator`: A [`Data.Deallocator`](https://developer.apple.com/documentation/Foundation/Data/Deallocator).
 
 ## See Also
 

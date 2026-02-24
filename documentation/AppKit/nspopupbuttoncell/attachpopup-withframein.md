@@ -24,7 +24,7 @@ You normally do not call this method explicitly. It is called by the Application
 
 ## Parameters
 
-- `cellFrame`: The cell’s rectangle, specified in points in the coordinate system of the view in the   parameter. The menu is attached to this rectangle.
+- `cellFrame`: The cell’s rectangle, specified in points in the coordinate system of the view in the `controlView` parameter. The menu is attached to this rectangle.
 - `controlView`: The view in which to display the pop-up button’s menu.
 
 ## See Also

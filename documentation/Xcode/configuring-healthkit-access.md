@@ -26,7 +26,7 @@ After you add the HealthKit capability, Xcode links the [`HealthKit`](https://de
 
 HealthKit uses a fine-grained authorization mechanism to help protect the user’s privacy; your app must request permission to read and, optionally, write each individual sample type it supports. For more information, see [`Authorizing access to health data`](https://developer.apple.com/documentation/HealthKit/authorizing-access-to-health-data).
 
-Before prompting the user for their permission, you must configure your app to include one or more , which accurately and concisely describe why the app needs to read the user’s health data, write health data to their HealthKit store, or both. The presence of these purpose strings is an App Store requirement for any app that integrates with HealthKit. The system displays this information to the user when requesting their permission, along with the specific sample types that your app needs to access, which helps them make an informed decision.
+Before prompting the user for their permission, you must configure your app to include one or more *purpose strings*, which accurately and concisely describe why the app needs to read the user’s health data, write health data to their HealthKit store, or both. The presence of these purpose strings is an App Store requirement for any app that integrates with HealthKit. The system displays this information to the user when requesting their permission, along with the specific sample types that your app needs to access, which helps them make an informed decision.
 
 Follow these steps to add the purpose string for reading health data to your app’s target:
 

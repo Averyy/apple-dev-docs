@@ -22,12 +22,12 @@ Only one indicator at a time may be displayed for a given view, and the only thi
 
 ## Parameters
 
-- `type`: The correction type to display. See   for possible values.
-- `primaryString`: The first string to be displayed, a correction or reversion according to the   of indicator.
+- `type`: The correction type to display. See [`NSSpellChecker.CorrectionIndicatorType`](nsspellchecker/correctionindicatortype.md) for possible values.
+- `primaryString`: The first string to be displayed, a correction or reversion according to the `type` of indicator.
 - `alternativeStrings`: An array of alternative strings to insert. This array may be empty.
 - `rectOfTypedString`: The rectangle of the typed text.
 - `view`: The view in which the correction indicator is to be displayed.
-- `completionBlock`: The Block takes one argument:
+- `completionBlock`: The Block called when a the correction indicator is dismissed. The Block takes one argument: - **acceptedString**: The correction string the user excepted. If the user does not select a correction string nil is returned.
 
 ## See Also
 

@@ -33,6 +33,10 @@ The next time the user logs in, the client sends a new request and the server ca
 - [object UserAuthenticateRequest](userauthenticaterequest.md)
   The user authenticate request details.
 
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/checkin`
+
 ## Request Body
 
 The request object the system sends for the `UserAuthenticate` request.

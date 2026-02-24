@@ -16,7 +16,7 @@ func fixAttachmentAttribute(in range: NSRange)
 
 #### Discussion
 
-The method preserves the attachment attribute on the doc://com.apple.documentation/documentation/appkit/nstextattachment/character special character. The method raises a [`rangeException`](nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the string’s characters.
+The method preserves the attachment attribute on the [`character`](https://developer.apple.com/documentation/UIKit/NSTextAttachment/character) special character. The method raises a [`rangeException`](nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the string’s characters.
 
 ## Parameters
 

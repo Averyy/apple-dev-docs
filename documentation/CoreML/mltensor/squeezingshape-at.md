@@ -32,7 +32,7 @@ y.shape // is [2, 1]
 
 ## Parameters
 
-- `axes`: The axes to remove if the size is  .
+- `axes`: The axes to remove if the size is `1`.
 
 ## See Also
 

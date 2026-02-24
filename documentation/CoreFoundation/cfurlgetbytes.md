@@ -27,8 +27,8 @@ Returns the number of bytes in `buffer` that were filled. If the buffer is of in
 ## Parameters
 
 - `url`: The URL object to convert to a byte representation.
-- `buffer`: The buffer where you want the bytes to be placed. If the buffer is of insufficient size, returns   and no bytes are placed in buffer. If   the needed length is computed and returned. The returned bytes are the original bytes from which the URL was created (  including the base URL). If the URL was created from a string, the bytes are the bytes of the string encoded via UTF-8.
-- `bufferLength`: The number of bytes in  .
+- `buffer`: The buffer where you want the bytes to be placed. If the buffer is of insufficient size, returns `-1` and no bytes are placed in buffer. If `NULL` the needed length is computed and returned. The returned bytes are the original bytes from which the URL was created (*not* including the base URL). If the URL was created from a string, the bytes are the bytes of the string encoded via UTF-8.
+- `bufferLength`: The number of bytes in `buffer`.
 
 ## See Also
 

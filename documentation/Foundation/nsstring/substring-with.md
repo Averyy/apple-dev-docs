@@ -30,7 +30,7 @@ This method detects all invalid ranges (including those with negative lengths). 
 
 ## Parameters
 
-- `range`: Raises an   if (  - 1) or (  +   - 1) lies beyond the end of the receiver.
+- `range`: A range. The range must not exceed the bounds of the receiver. Raises an [`rangeException`](nsexceptionname/rangeexception.md) if (`aRange.location` - 1) or (`aRange.location` + `aRange.length` - 1) lies beyond the end of the receiver.
 
 ## See Also
 

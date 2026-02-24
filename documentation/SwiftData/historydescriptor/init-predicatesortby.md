@@ -27,7 +27,7 @@ If you don’t specify a predicate, any fetch using this descriptor will return 
 
 ## Parameters
 
-- `predicate`: The logical condition that determines whether the history includes a specific model in its results. The default value is  .
+- `predicate`: The logical condition that determines whether the history includes a specific model in its results. The default value is `nil`.
 - `sortBy`: The array of sort descriptors that tell the history how to order its results. The default value is an empty array.
 
 ## See Also

@@ -30,7 +30,7 @@ When you create a [`CIContext`](cicontext.md) object using a Quartz graphics con
 ## Parameters
 
 - `cgctx`: A Quartz graphics context.
-- `options`: A dictionary that contains color space information. You can pass any of the keys defined in   along with the appropriate value.
+- `options`: A dictionary that contains color space information. You can pass any of the keys defined in [`CIContextOption`](cicontextoption.md) along with the appropriate value.
 
 
 ---

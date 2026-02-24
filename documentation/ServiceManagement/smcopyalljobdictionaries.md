@@ -23,7 +23,7 @@ A new array containing all job dictionaries, or `NULL` if an error occurred. The
 
 ## Parameters
 
-- `domain`: The job’s domain (for example,  ).
+- `domain`: The job’s domain (for example, [`kSMDomainSystemLaunchd`](ksmdomainsystemlaunchd.md)).
 
 ## See Also
 

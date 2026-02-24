@@ -16,7 +16,7 @@ func startSpeaking(_ sender: Any?)
 
 ## Parameters
 
-- `sender`: The control sending the message; can be  .
+- `sender`: The control sending the message; can be `nil`.
 
 ## See Also
 

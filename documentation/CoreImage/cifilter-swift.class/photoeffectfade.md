@@ -29,6 +29,8 @@ This method applies a preconfigured set of effects that imitate vintage photogra
 
 The photo effect fade filter uses the following property:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that results in a desaturated image:
 
 ```swift

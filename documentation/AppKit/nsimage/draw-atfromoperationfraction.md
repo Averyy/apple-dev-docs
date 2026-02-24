@@ -23,8 +23,8 @@ Unlike the [`compositeToPoint:fromRect:operation:`](nsimage/compositetopoint:fro
 ## Parameters
 
 - `point`: The location in the current coordinate system at which to draw the image.
-- `fromRect`: The source rectangle specifying the portion of the image you want to draw. The coordinates of this rectangle are specified in the image’s own coordinate system. If you pass in  , the entire image is drawn.
-- `op`: The compositing operation to use when drawing the image. See the   constants.
+- `fromRect`: The source rectangle specifying the portion of the image you want to draw. The coordinates of this rectangle are specified in the image’s own coordinate system. If you pass in `NSZeroRect`, the entire image is drawn.
+- `op`: The compositing operation to use when drawing the image. See the [`NSCompositingOperation`](nscompositingoperation.md) constants.
 - `delta`: The opacity of the image, specified as a value from 0.0 to 1.0. Specifying a value of 0.0 draws the image as fully transparent while a value of 1.0 draws the image as fully opaque. Values greater than 1.0 are interpreted as 1.0.
 
 ## See Also

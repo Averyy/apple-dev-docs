@@ -22,8 +22,8 @@ func setThreadgroupMemoryLength(_ length: Int, index: Int)
 
 ## Parameters
 
-- `length`: The size of the threadgroup memory, in bytes. Use a multiple of   bytes.
-- `index`: An integer that corresponds to the index of the argument you annotate with attribute    in the shader function.
+- `length`: The size of the threadgroup memory, in bytes. Use a multiple of `16` bytes.
+- `index`: An integer that corresponds to the index of the argument you annotate with attribute `[[threadgroup(index)]]` in the shader function.
 
 ## See Also
 

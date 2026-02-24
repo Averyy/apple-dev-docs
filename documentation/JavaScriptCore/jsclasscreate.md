@@ -25,7 +25,7 @@ A [`JSClassRef`](jsclassref.md) with the specified definition suitable for use w
 
 ## Parameters
 
-- `definition`: A   that defines the class.
+- `definition`: A [`JSClassDefinition`](jsclassdefinition.md) that defines the class.
 
 ## See Also
 

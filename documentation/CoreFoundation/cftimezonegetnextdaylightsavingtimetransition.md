@@ -27,7 +27,7 @@ The time in `tz` of the next daylight saving time transition after `at`.
 ## Parameters
 
 - `tz`: The time zone to analyze.
-- `at`: A time in  .
+- `at`: A time in `tz`.
 
 ## See Also
 

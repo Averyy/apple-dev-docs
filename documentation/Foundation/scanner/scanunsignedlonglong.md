@@ -32,7 +32,7 @@ Invoke this method with `NULL` as `unsignedLongLongValue` to simply scan past an
 
 ## Parameters
 
-- `result`: Upon return, contains the scanned value. Contains   on overflow.
+- `result`: Upon return, contains the scanned value. Contains `ULLONG_MAX` on overflow.
 
 ## See Also
 

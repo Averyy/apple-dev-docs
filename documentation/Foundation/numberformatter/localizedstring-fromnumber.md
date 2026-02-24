@@ -27,7 +27,7 @@ An appropriately formatted `NSString`.
 ## Parameters
 
 - `num`: The number to localize
-- `nstyle`: The localization style to use. See   for the supported values.
+- `nstyle`: The localization style to use. See [`NumberFormatter.Style`](numberformatter/style.md) for the supported values.
 
 ## See Also
 

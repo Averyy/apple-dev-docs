@@ -19,8 +19,8 @@ optional func pointerInteraction(_ interaction: UIPointerInteraction, willEnter 
 
 ## Parameters
 
-- `interaction`: This  .
-- `region`: The   that represents the entire surface of the interaction’s view.
+- `interaction`: This [`UIPointerInteraction`](uipointerinteraction.md).
+- `region`: The [`UIPointerRegion`](uipointerregion.md) that represents the entire surface of the interaction’s view.
 - `animator`: The animator the framework runs when the pointer enters the region. Add animations to run them alongside the pointer’s entrance animation.
 
 ## See Also

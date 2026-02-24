@@ -24,6 +24,10 @@ Apps that perform movement disorder monitoring must display an introduction scre
 
 For some types of data, your app must include additional text in the introduction screen. For each of the following situations, add the specified text:
 
+- **Resting tremor data**: “This app is monitoring and collecting your Parkinsonian resting tremor data, only if you self-report or have been clinically diagnosed with resting tremor, and indicate within the app that this is true.”
+- **Choreiform dyskinesia data**: “This app is monitoring and collecting your choreiform dyskinesia data, only if you self-report or have been clinically diagnosed with choreiform dyskinesias, and indicate within the app that this is true.”
+- **Movement disorder data in the background**: “This app is able to collect your movement disorder data even when the app is not active, on screen, or responding to your user input.”
+
 ## See Also
 
 - [Getting movement disorder symptom data](getting-movement-disorder-symptom-data.md)

@@ -36,7 +36,7 @@ UTF-16 and UTF-32 are not considered to be C string encodings, and should not be
 
 ## Parameters
 
-- `encoding`: The encoding for the returned C string. For possible values, see  .
+- `encoding`: The encoding for the returned C string. For possible values, see [`NSStringEncoding`](nsstringencoding.md).
 
 ## See Also
 

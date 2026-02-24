@@ -28,9 +28,9 @@ Block to be invoked when the protocol instance must verify the peer.
 
 ## Parameters
 
-- `metadata`: A   instance.
-- `trust_ref`: A   instance.
-- `complete`: A   to be invoked when verification is complete.
+- `metadata`: A `sec_protocol_metadata_t` instance.
+- `trust_ref`: A `sec_trust_t` instance.
+- `complete`: A `sec_protocol_verify_finish_t` to be invoked when verification is complete.
 
 
 ---

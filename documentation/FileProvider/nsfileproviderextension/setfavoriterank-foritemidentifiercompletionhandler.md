@@ -32,7 +32,8 @@ Always include items with a non-`nil` [`favoriteRank`](nsfileprovideritemprotoco
 
 - `favoriteRank`: A value used to determine the relative order of directories in the Favorites list.
 - `itemIdentifier`: The item’s persistent identifier.
-- `completionHandler`: A block that takes the following parameters:
+- `completionHandler`: A block that takes the following parameters: - **`favoriteItem`**: A file provider item that represents the changed item, or `nil` if an error occurred.
+- **`error`**: An error object. If an error occurs, pass in an object that describes the error; otherwise, set it to `nil`.
 
 ## See Also
 

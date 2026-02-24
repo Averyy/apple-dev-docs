@@ -20,7 +20,7 @@ Initialized `NSSound` instance.
 
 ## Parameters
 
-- `data`: Audio data with which the receiver is to be initialized. The data must have a proper magic number, sound header, and data for the formats the   class supports.
+- `data`: Audio data with which the receiver is to be initialized. The data must have a proper magic number, sound header, and data for the formats the `NSSound` class supports.
 
 ## See Also
 

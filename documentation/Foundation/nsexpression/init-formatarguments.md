@@ -27,7 +27,7 @@ An initialized `NSExpression` object with the specified arguments.
 ## Parameters
 
 - `expressionFormat`: The expression format.
-- `argList`: A list of arguments to be inserted into the   string. The argument list is terminated by  .
+- `argList`: A list of arguments to be inserted into the `expressionFormat` string. The argument list is terminated by `nil`.
 
 ## See Also
 

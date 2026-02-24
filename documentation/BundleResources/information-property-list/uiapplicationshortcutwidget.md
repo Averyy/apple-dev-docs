@@ -11,6 +11,10 @@ The bundle ID of the widget that’s available as a Home screen quick action in 
 - tvOS 9.0+
 - watchOS 2.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [NSExtension](information-property-list/nsextension.md)

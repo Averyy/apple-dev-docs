@@ -27,7 +27,7 @@ Implementations of this method are responsible for setting the state of the anim
 
 ## Parameters
 
-- `finalPosition`: The final position for any view properties. Specify   to leave the view properties unchanged from their current values.
+- `finalPosition`: The final position for any view properties. Specify [`UIViewAnimatingPosition.current`](uiviewanimatingposition/current.md) to leave the view properties unchanged from their current values.
 
 ## See Also
 

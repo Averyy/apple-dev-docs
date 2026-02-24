@@ -24,8 +24,8 @@ An app controller coordinates activity between the JavaScript environments and t
 
 ## Parameters
 
-- `context`: A   object containing information about the JavaScript app.
-- `window`: A   object that presents the application controller’s navigation controller.
+- `context`: A [`TVApplicationControllerContext`](tvapplicationcontrollercontext.md) object containing information about the JavaScript app.
+- `window`: A [`UIWindow`](https://developer.apple.com/documentation/UIKit/UIWindow) object that presents the application controller’s navigation controller.
 - `delegate`: The app controller delegate.
 
 

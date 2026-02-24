@@ -27,7 +27,7 @@ If you only need to control the style’s [`lineWidth`](strokestyle/linewidth.md
 ## Parameters
 
 - `path`: The path to outline.
-- `shading`: The color or pattern to use when outlining the  .
+- `shading`: The color or pattern to use when outlining the `path`.
 - `style`: A style that indicates how to outline the path.
 
 ## See Also

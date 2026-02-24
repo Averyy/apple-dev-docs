@@ -61,9 +61,9 @@ To experiment with GameplayKit in action, see these sample code projects:
 - [protocol GKStrategist](gkstrategist.md)
   A general interface for objects that provide artificial intelligence for use in turn-based (and similar) games.
 - [class GKMinmaxStrategist](gkminmaxstrategist.md)
-  An AI that chooses moves in turn-based games using a  strategy.
+  An AI that chooses moves in turn-based games using a *deterministic* strategy.
 - [class GKMonteCarloStrategist](gkmontecarlostrategist.md)
-  An AI that chooses moves in turn-based games using a  strategy.
+  An AI that chooses moves in turn-based games using a *probabilistic* strategy.
 - [protocol GKGameModel](gkgamemodel.md)
   Implement this protocol to describe your gameplay model so that a strategist object can plan game moves.
 - [protocol GKGameModelPlayer](gkgamemodelplayer.md)
@@ -77,7 +77,7 @@ To experiment with GameplayKit in action, see these sample code projects:
   A node for use in manually creating decision trees, representing a specific question and possible answers, or an action that follows from answering other questions.
 ### Pathfinding
 - [class GKGraph](gkgraph.md)
-  A collection of nodes that describes the navigability of a game world and provides  methods to search for routes through that space.
+  A collection of nodes that describes the navigability of a game world and provides *pathfinding* methods to search for routes through that space.
 - [class GKObstacleGraph](gkobstaclegraph.md)
   A navigation graph for 2D game worlds that creates a minimal network for precise pathfinding around obstacles.
 - [class GKMeshGraph](gkmeshgraph.md)
@@ -157,7 +157,7 @@ To experiment with GameplayKit in action, see these sample code projects:
 - [class GKRandomDistribution](gkrandomdistribution.md)
   A generator for random numbers that fall within a specific range and that exhibit a specific distribution over multiple samplings.
 - [class GKGaussianDistribution](gkgaussiandistribution.md)
-  A generator for random numbers that follow a  (also known as a ) across multiple samplings.
+  A generator for random numbers that follow a *Gaussian distribution* (also known as a *normal distribution*) across multiple samplings.
 - [class GKShuffledDistribution](gkshuffleddistribution.md)
   A generator for random numbers that are uniformly distributed across many samplings, but where short sequences of similar values are unlikely.
 ### Rule Systems

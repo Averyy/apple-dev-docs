@@ -25,7 +25,8 @@ This method uses automatching to recreate a previous match. If you use this meth
 
 ## Parameters
 
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameters: - **`match`**: A new match, or `nil` if an error occurs.
+- **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

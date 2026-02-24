@@ -46,9 +46,9 @@ The number of axes for an effect cannot be changed once it has been set.
 - [var lpvTypeSpecificParams: UnsafeMutableRawPointer!](ffeffect/lpvtypespecificparams.md)
   A pointer to type-specific parameters, or NULL if there are no type-specific parameters.
 - [var rgdwAxes: LPDWORD!](ffeffect/rgdwaxes.md)
-  Pointer to a DWORD array (of  elements) containing identifiers or offsets identifying the axes to which the effect is to be applied.
+  Pointer to a DWORD array (of **cAxes** elements) containing identifiers or offsets identifying the axes to which the effect is to be applied.
 - [var rglDirection: LPLONG!](ffeffect/rgldirection.md)
-  Pointer to a LONG array (of  elements) containing either Cartesian coordinates, polar coordinates, or spherical coordinates.
+  Pointer to a LONG array (of **cAxes** elements) containing either Cartesian coordinates, polar coordinates, or spherical coordinates.
 
 
 ---

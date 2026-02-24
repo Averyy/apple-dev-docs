@@ -62,6 +62,22 @@ To learn more about how the sample app saves data changes, see [`Adding and edit
 
 If the related data is dynamic and unknown to the app — data that comes from an external source such as someone using the app or a remote server — then form a relationship between two model classes instead of a class and enumeration. For instance, the dynamic data in the sample app includes animals and animal categories. An animal can belong to no more than one animal category, and a category can contain zero, one, or more animals.
 
+**iOS**:
+
+![A screenshot of the sample app running in iOS, showing the list of animals that are in the mammal category.](https://docs-assets.developer.apple.com/published/00721de23536f75a264827367d964300/Defining-data-relationships-01%402x.png)
+
+**iPadOS**:
+
+![A screenshot of the sample app running in iPadOS, showing a three-column user interface. The first column shows a list of categories with Mammal highlighted as the selected category. The second column shows the list of animals that are in the Mammal category. The third column shows an animal paw print icon. Under the icon is the text, Select an animal.](https://docs-assets.developer.apple.com/published/00ea836e9c12096a956d233e6e286955/Defining-data-relationships-02%402x.png)
+
+**macOS**:
+
+![A screenshot of the sample app running in macOS, showing a three-column user interface. The first column shows a list of categories with Mammal highlighted as the selected category. The second column shows the list of animals that are in the Mammal category. The third column shows an animal paw print icon. Under the icon is the text, Select an animal.](https://docs-assets.developer.apple.com/published/5c30a1cc8c9622037d0630e2ca7cdbdd/Defining-data-relationships-04%402x.png)
+
+**tvOS**:
+
+![A screenshot of the sample app running in tvOS, showing the list of animals that are in the Mammal category. The first animal, cat, is highlighted.](https://docs-assets.developer.apple.com/published/cde61e1833a6f4e3d189c2e597d8ddd1/Defining-data-relationships-03%402x.png)
+
 To declare this relationship, the `AnimalCategory` class defines the property `animals`, which represents the animals contained in the category. The class also applies the [`Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)`](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md) macro to the `animals` property. This macro defines the relationship between the `AnimalCategory` and `Animal` model classes.
 
 ```swift

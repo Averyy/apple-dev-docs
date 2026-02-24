@@ -27,7 +27,7 @@ Each packet buffer passed should be at least as large as the value of [`vmnet_ma
 
 - `interface`: The interface reference.
 - `packets`: On return, this parameter is populated with an array of packets read.
-- `pktcnt`: The number of packets to read.   On return, this parameter is populated with the number of packets read, or   no packets are available to be read.
+- `pktcnt`: The number of packets to read. On return, this parameter is populated with the number of packets read, or `0` no packets are available to be read.
 
 ## See Also
 

@@ -14,6 +14,10 @@ A dictionary that contains URLs to websites where people using your app can make
 - visionOS 1.0+
 - watchOS 10.4+
 
+
+
+**Type**: object
+
 #### Discussion
 
 Use this information property list key if your app has the [`com.apple.developer.storekit.external-purchase-link`](entitlements/com.apple.developer.storekit.external-purchase-link.md) entitlement.
@@ -64,6 +68,10 @@ The following code example shows a property list entry with keys for more than o
 ```
 
 For more information, see [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase).
+
+## Properties
+
+- `Any Key` (string)
 
 ## See Also
 

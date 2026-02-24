@@ -28,7 +28,7 @@ The system automatically sizes the returned segmented control to fit its content
 
 ## Parameters
 
-- `items`: An array of   objects (for segment titles),   objects (for segment images), or in iOS 14.0 and later   objects.
+- `items`: An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects (for segment titles), [`UIImage`](uiimage.md) objects (for segment images), or in iOS 14.0 and later [`UIAction`](uiaction.md) objects.
 
 ## See Also
 

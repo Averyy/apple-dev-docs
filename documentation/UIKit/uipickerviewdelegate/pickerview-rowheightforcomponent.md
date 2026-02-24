@@ -24,7 +24,7 @@ A float value indicating the height of the row in points.
 ## Parameters
 
 - `pickerView`: The picker view requesting this information.
-- `component`: A zero-indexed number identifying a component of  . Components are numbered left-to-right.
+- `component`: A zero-indexed number identifying a component of `pickerView`. Components are numbered left-to-right.
 
 ## See Also
 

@@ -26,8 +26,8 @@ This method determines a match by comparing the address of `anObject` to the add
 
 ## Parameters
 
-- `anObject`: The object to remove from the array within  .
-- `range`: The range in the array from which to remove  .
+- `anObject`: The object to remove from the array within `aRange`.
+- `range`: The range in the array from which to remove `anObject`. > ❗ **Important**:  Raises an exception `NSRangeException` if `aRange` exceeds the bounds of the array.
 
 ## See Also
 

@@ -25,8 +25,8 @@ It’s important that the `id` of a data element doesn’t change unless you rep
 
 ## Parameters
 
-- `data`: The identified data that the   instance uses to   create map content dynamically.
-- `content`: The map content builder that creates map content   dynamically.
+- `data`: The identified data that the [`ForEach`](foreach.md) instance uses to create map content dynamically.
+- `content`: The map content builder that creates map content dynamically.
 
 ## See Also
 

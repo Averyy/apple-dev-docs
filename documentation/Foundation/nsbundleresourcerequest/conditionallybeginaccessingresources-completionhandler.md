@@ -27,7 +27,7 @@ If the resources marked with the tags managed by the request are already on the 
 
 ## Parameters
 
-- `completionHandler`: The block takes the following parameter:
+- `completionHandler`: A block called when the availability of the resources has been checked. The block takes the following parameter: - **resourcesAvailable**: Returns [`true`](https://developer.apple.com/documentation/Swift/true) if all of the resources marked with the tags managed by the request are already on the device. Returns [`false`](https://developer.apple.com/documentation/Swift/false) if any of the resources are not on the device.
 
 ## See Also
 

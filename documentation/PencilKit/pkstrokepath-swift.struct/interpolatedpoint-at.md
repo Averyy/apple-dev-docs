@@ -24,7 +24,7 @@ A [`PKStrokePoint`](pkstrokepoint-swift.struct.md) interpolated from the supplie
 
 ## Parameters
 
-- `parametricValue`: The on-curve location   where interpolation occurs.
+- `parametricValue`: The on-curve location `[0, count-1]` where interpolation occurs.
 
 ## See Also
 

@@ -22,7 +22,7 @@ init(for technologies: AccessibilityTechnologies) where Value == Bool
 
 ## Parameters
 
-- `technologies`: One of the available  .
+- `technologies`: One of the available [`AccessibilityTechnologies`](accessibilitytechnologies.md).
 
 ## See Also
 

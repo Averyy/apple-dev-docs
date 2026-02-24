@@ -13,7 +13,7 @@ optional func testSuiteDidFinish(_ testSuite: XCTestSuite)
 
 ## Parameters
 
-- `testSuite`: The test suite that finished executing. Additional information about the suite can be retrieved from the test suite’s associated  .
+- `testSuite`: The test suite that finished executing. Additional information about the suite can be retrieved from the test suite’s associated [`XCTestRun`](xctestrun.md).
 
 ## See Also
 

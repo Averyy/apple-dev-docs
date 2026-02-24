@@ -22,7 +22,7 @@ typealias CFTreeReleaseCallBack = (UnsafeRawPointer?) -> Void
 
 ## Parameters
 
-- `info`: The program-supplied information pointer provided in a   structure.
+- `info`: The program-supplied information pointer provided in a [`CFTreeContext`](cftreecontext.md) structure.
 
 ## See Also
 

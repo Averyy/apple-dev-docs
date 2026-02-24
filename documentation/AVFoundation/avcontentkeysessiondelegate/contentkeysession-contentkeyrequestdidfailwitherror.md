@@ -24,7 +24,7 @@ optional func contentKeySession(_ session: AVContentKeySession, contentKeyReques
 
 - `session`: The content key session that initiated the content key request.
 - `keyRequest`: The content key request that failed.
-- `err`: An instance of   that describes the failure that occurred.
+- `err`: An instance of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) that describes the failure that occurred.
 
 ## See Also
 

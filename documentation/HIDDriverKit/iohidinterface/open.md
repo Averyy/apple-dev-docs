@@ -22,8 +22,8 @@ virtual kern_return_t Open(IOService *forClient, IOOptionBits options, OSAction 
 ## Parameters
 
 - `forClient`: The client that opened the interface.
-- `options`: Options to use when opening the session. Specify   for no options.
-- `action`: The   object that handles the asynchronous report callback. The action’s callback must conform to the   method.
+- `options`: Options to use when opening the session. Specify `0` for no options.
+- `action`: The `OSAction` object that handles the asynchronous report callback. The action’s callback must conform to the [`ReportAvailable`](iohidinterface/reportavailable.md) method.
 
 ## See Also
 

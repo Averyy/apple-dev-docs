@@ -8,7 +8,10 @@ Arrange your training videos in multiple folders with labels that describe actio
 
 The Create ML developer tool accepts several data-source types for an action classifier, each with its own file-system arrangement. Typically, you use one of these two types:
 
-If you’ve trimmed all your example video files and they demonstrate a single action one or more times, you can use either data-source type. Otherwise, if you haven’t trimmed all your videos or if one or more is a  video — a video file that contains two or more distinct actions — you must use annotated videos.
+- **Labeled folders**: A collection of single-action video files you group into labeled folders
+- **Annotated videos**: A collection of single- or multi-action video files with an accompanying annotation file you group into a single folder
+
+If you’ve trimmed all your example video files and they demonstrate a single action one or more times, you can use either data-source type. Otherwise, if you haven’t trimmed all your videos or if one or more is a *montage* video — a video file that contains two or more distinct actions — you must use annotated videos.
 
 For more information about the action-classifier data-source types the Create ML API supports, see [`MLActionClassifier.DataSource`](mlactionclassifier/datasource.md).
 
@@ -32,9 +35,15 @@ Create a folder and place all your example video files in it. Then, create an an
 
 Each entry in the annotation file must have these categories:
 
+- **`label`**: A name or label that describes the action
+- **`video`**: The file name or path of the video that contains the example action
+
 To mark the beginning and ending of an example video clip within a larger video file, your annotation file can also include time-index categories:
 
-Use the `start` and `end` time indices for a  video, which is a video that demonstrates two or more different types of action. If your annotation file omits the `start` category, Create ML defaults to the beginning of every video file for every entry. If your annotation file omits the `end` category, Create ML defaults to the end of every video.
+- **`start`**: The starting-time index in the video file
+- **`end`**: The ending-time index in the video file
+
+Use the `start` and `end` time indices for a *montage* video, which is a video that demonstrates two or more different types of action. If your annotation file omits the `start` category, Create ML defaults to the beginning of every video file for every entry. If your annotation file omits the `end` category, Create ML defaults to the end of every video.
 
 > ❗ **Important**: If you use a `start` or `end` category for any annotation entry, you must provide a value for that category in all annotation entries.
 

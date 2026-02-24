@@ -29,7 +29,7 @@ Changes are processed incrementally as the [`insertRows(at:withAnimation:)`](nst
 ## Parameters
 
 - `indexes`: An index set containing the rows to remove.
-- `animationOptions`: The animation displayed during the insert. See   for the possible values that can be combined using the C bitwise OR operator.
+- `animationOptions`: The animation displayed during the insert. See [`NSTableView.AnimationOptions`](nstableview/animationoptions.md) for the possible values that can be combined using the C bitwise OR operator.
 
 ## See Also
 

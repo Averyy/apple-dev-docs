@@ -26,7 +26,7 @@ The system determines an unused Protocol and Service Multiplexer (PSM) at the ti
 
 ## Parameters
 
-- `encryptionRequired`:   if the service requires link encryption before a stream can be established.   if the service supports use over an unsecured link.
+- `encryptionRequired`: [`true`](https://developer.apple.com/documentation/Swift/true) if the service requires link encryption before a stream can be established. [`false`](https://developer.apple.com/documentation/Swift/false) if the service supports use over an unsecured link.
 
 ## See Also
 

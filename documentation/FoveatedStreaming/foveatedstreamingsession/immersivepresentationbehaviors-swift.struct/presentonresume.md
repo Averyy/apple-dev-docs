@@ -11,7 +11,7 @@ Opens the immersive space when the session resumes.
 ## Declaration
 
 ```swift
-static func presentOnResume(_ action: OpenFoveatedStreamingSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors
+static func presentOnResume(_ action: OpenImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors
 ```
 
 ## Parameters

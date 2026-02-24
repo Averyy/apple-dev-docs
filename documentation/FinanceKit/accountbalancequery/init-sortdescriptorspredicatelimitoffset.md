@@ -17,8 +17,8 @@ init(sortDescriptors: [SortDescriptor<AccountBalance>] = [], predicate: Predicat
 
 ## Parameters
 
-- `sortDescriptors`: An array of   sort descriptors.
-- `predicate`: A   to filter the   records with.
+- `sortDescriptors`: An array of [`AccountBalance`](accountbalance.md) sort descriptors.
+- `predicate`: A [`Predicate`](https://developer.apple.com/documentation/Foundation/Predicate) to filter the `Account` records with.
 - `limit`: An integer that indicates the maximum number of  records to return.
 - `offset`: An integer that indicates the number of records to offset the result by.
 

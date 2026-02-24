@@ -60,7 +60,7 @@ Available performance heat map options include the following:
 | Raytracing Latency | Visualizes the latency of ray-tracing instructions, which go through the ray-tracing unit. |
 | Draw ID | Color codes different draws within a render pass. |
 
-The color intensity in the heat maps represents the significance of the values. For example, red means  in the Shader Execution Cost heat map, and  in the Thread Divergence heat map.
+The color intensity in the heat maps represents the significance of the values. For example, red means *more expensive* in the Shader Execution Cost heat map, and *more divergent* in the Thread Divergence heat map.
 
 ##### View and Adjust the Value Range of Performance Heat Maps
 

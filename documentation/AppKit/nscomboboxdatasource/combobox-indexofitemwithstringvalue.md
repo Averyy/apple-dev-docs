@@ -26,7 +26,7 @@ An `NSComboBox` object uses this method to synchronize the pop-up list’s selec
 ## Parameters
 
 - `comboBox`: The combo box.
-- `string`: The string to match against the items in the combo box.  If the datasource implements , this is the string returned by that method. Otherwise, it is the text that the user has typed.
+- `string`: The string to match against the items in the combo box.  If the datasource implements[`comboBox(_:completedString:)`](nscomboboxdatasource/combobox(_:completedstring:).md), this is the string returned by that method. Otherwise, it is the text that the user has typed.
 
 ## See Also
 

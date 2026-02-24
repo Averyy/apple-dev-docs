@@ -27,7 +27,7 @@ The size of each step depends on the receiver’s enabled `AVPlayerItemTrack` ob
 
 ## Parameters
 
-- `stepCount`: A positive number steps forward, a negative number steps backward.
+- `stepCount`: The number of steps by which to move. A positive number steps forward, a negative number steps backward.
 
 ## See Also
 

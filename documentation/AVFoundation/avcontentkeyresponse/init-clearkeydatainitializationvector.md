@@ -31,7 +31,7 @@ Use the results of this initializer when the content key session creates a key r
 ## Parameters
 
 - `keyData`: The key used for decrypting content.
-- `initializationVector`: The initialization vector used for decrypting content. This value is   when the initialization vector is contained in the media to be decrypted.
+- `initializationVector`: The initialization vector used for decrypting content. This value is `nil` when the initialization vector is contained in the media to be decrypted.
 
 ## See Also
 

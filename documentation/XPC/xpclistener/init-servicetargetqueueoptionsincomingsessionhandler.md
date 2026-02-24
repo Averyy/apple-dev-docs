@@ -30,7 +30,7 @@ When the `incomingSessionHandler` returns, the system automatically activates th
 ## Parameters
 
 - `service`: The Mach service or XPC service name that clients use to connect to the service.
-- `targetQueue`: The dispatch queue that events arrive on. This may be a concurrent queue. If  , the listeners uses  .
+- `targetQueue`: The dispatch queue that events arrive on. This may be a concurrent queue. If [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0), the listeners uses `DISPATCH_TARGET_QUEUE_DEFAULT`.
 - `options`: Configuration options for the listener, such as creating it in an inactive state.
 - `incomingSessionHandler`: A handler that the system calls when a client connects to the XPC service.
 

@@ -60,11 +60,11 @@ struct ContentView: View {
 
 ## Parameters
 
-- `p1x`: The x-coordinate of the first control point of the cubic   Bézier curve.
-- `p1y`: The y-coordinate of the first control point of the cubic   Bézier curve.
-- `p2x`: The x-coordinate of the second control point of the cubic   Bézier curve.
-- `p2y`: The y-coordinate of the second control point of the cubic   Bézier curve.
-- `duration`: The length of time, expressed in seconds, the animation   takes to complete.
+- `p1x`: The x-coordinate of the first control point of the cubic Bézier curve.
+- `p1y`: The y-coordinate of the first control point of the cubic Bézier curve.
+- `p2x`: The x-coordinate of the second control point of the cubic Bézier curve.
+- `p2y`: The y-coordinate of the second control point of the cubic Bézier curve.
+- `duration`: The length of time, expressed in seconds, the animation takes to complete.
 
 ## See Also
 

@@ -29,6 +29,8 @@ This method applies the median filter to an image. The effect computes the media
 
 The median filter uses the following properties:
 
+- **inputImage**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
+
 The following code creates a filter that refines the detail in the input image:
 
 ```swift

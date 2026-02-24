@@ -8,6 +8,10 @@ A Boolean that indicates whether the app supports ephemeral browsing when conduc
 **Availability**:
 - macOS 10.15+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Set the corresponding value to `YES` to indicate that your browser app, when handling authentication requests, offers ephemeral browsing.

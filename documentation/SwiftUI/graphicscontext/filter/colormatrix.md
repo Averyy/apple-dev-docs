@@ -39,7 +39,7 @@ A' = a1 ✕ R + a2 ✕ G + a3 ✕ B + a4 ✕ A + a5
 
 ## Parameters
 
-- `matrix`: A   instance used by the filter.
+- `matrix`: A [`ColorMatrix`](colormatrix.md) instance used by the filter.
 
 ## See Also
 

@@ -23,7 +23,7 @@ You can implement this method to do set-up tasks related to the print job. For e
 
 ## Parameters
 
-- `printInteractionController`: The shared instance of   that is managing the print job.
+- `printInteractionController`: The shared instance of [`UIPrintInteractionController`](uiprintinteractioncontroller.md) that is managing the print job.
 
 ## See Also
 

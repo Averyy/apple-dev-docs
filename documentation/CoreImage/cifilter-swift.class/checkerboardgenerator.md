@@ -29,6 +29,12 @@ This method generates a checkerboard pattern as an image. The effect requires th
 
 The checkerboard generator filter uses the following properties:
 
+- **`center`**: A `vector` representing the center of the image as a [`CIVector`](civector.md).
+- **`color0`**: A [`CIColor`](cicolor.md) representing the first color of the pattern.
+- **`color1`**: A [`CIColor`](cicolor.md) representing the second color of the pattern.
+- **`sharpness`**: A `float` representing the sharpness of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`width`**: A `float` representing the width of the checkerboard squares as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that generates a black-and-white checkered pattern:
 
 ```swift

@@ -35,11 +35,11 @@ struct MyApp: App {
 
 ## Parameters
 
-- `idealSize`: A value which determines how windows derived from   this scene should size themselves when zooming.
+- `idealSize`: A value which determines how windows derived from this scene should size themselves when zooming.
 
 ## See Also
 
-- [Positioning and sizing windows](../visionOS/positioning-and-sizing-windows.md)
+- [Positioning and sizing windows](../visionos/positioning-and-sizing-windows.md)
   Influence the initial geometry of windows that your app presents.
 - [func defaultSize(_:)](scene/defaultsize(_:).md)
   Sets a default size for a window.

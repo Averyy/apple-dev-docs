@@ -25,8 +25,8 @@ If a button press isn’t part of this gesture you may pass it to this method, c
 
 ## Parameters
 
-- `button`: A   object that is part of the current button press event and associated with  .
-- `event`: A   object that includes a reference to  .
+- `button`: A [`UIButton`](uibutton.md) object that is part of the current button press event and associated with `event`.
+- `event`: A [`UIEvent`](uievent.md) object that includes a reference to `touch`.
 
 ## See Also
 

@@ -25,7 +25,7 @@ A new data table.
 
 ## Parameters
 
-- `maxLength`: The largest number of rows to use from the beginning of the   data table. The default value is  .
+- `maxLength`: The largest number of rows to use from the beginning of the data table. The default value is `10`.
 
 ## See Also
 

@@ -22,7 +22,7 @@ func thresholdedReLU(alpha: Float) -> BNNSGraph.Builder.Tensor<T>
 
 ## Parameters
 
-- `alpha`: The   value.
+- `alpha`: The `alpha` value.
 
 
 ---

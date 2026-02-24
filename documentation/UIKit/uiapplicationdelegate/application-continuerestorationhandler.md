@@ -53,7 +53,7 @@ Intents may launch your app under the following circumstances:
 
 - `application`: The shared app object that controls and coordinates your app.
 - `userActivity`: The activity object containing the data associated with the task the user was performing. Use the data to continue the user’s activity in your iOS app.
-- `restorationHandler`: A block to execute if your app creates objects to perform the task the user was performing. Calling this block is optional and you can copy this block and call it at a later time. When calling a saved copy of the block, you must call it from the app’s main thread. This block has no return value and takes the following parameter:
+- `restorationHandler`: A block to execute if your app creates objects to perform the task the user was performing. Calling this block is optional and you can copy this block and call it at a later time. When calling a saved copy of the block, you must call it from the app’s main thread. This block has no return value and takes the following parameter: - **restorableObjects**: An array of objects that conform to [`UIUserActivityRestoring`](uiuseractivityrestoring.md) that represent the objects you created or fetched in order to perform the operation. The system calls the [`restoreUserActivityState(_:)`](uiuseractivityrestoring/restoreuseractivitystate(_:).md) method of each object in the array to give it a chance to perform the operation.
 
 ## See Also
 

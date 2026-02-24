@@ -26,7 +26,7 @@ If the store action for the given stencil attachment was set to [`MTLStoreAction
 
 ## Parameters
 
-- `storeAction`: The desired store action for the stencil attachment. This value can’t be  .
+- `storeAction`: The desired store action for the stencil attachment. This value can’t be [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md).
 
 ## See Also
 

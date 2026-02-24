@@ -21,7 +21,7 @@ Call this function to determine which pixel arrangements and characteristics the
 
 ## Parameters
 
-- `options`: Specific options you want the formats of the color textures to be supported with.   The function returns only color formats that are supported with the specified options.
+- `options`: Specific options you want the formats of the color textures to be supported with. The function returns only color formats that are supported with the specified options.
 
 
 ---

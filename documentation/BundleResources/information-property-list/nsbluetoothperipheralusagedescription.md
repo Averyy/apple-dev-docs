@@ -9,6 +9,10 @@ A message that tells people why the app is requesting the ability to connect to 
 - iOS 6.0+
 - iPadOS 6.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 For apps with a deployment target of iOS 13 and later, use [`NSBluetoothAlwaysUsageDescription`](information-property-list/nsbluetoothalwaysusagedescription.md) instead.

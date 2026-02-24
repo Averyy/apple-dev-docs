@@ -41,8 +41,8 @@ To hide a row separators, use [`listRowSeparator(_:edges:)`](view/listrowseparat
 
 ## Parameters
 
-- `color`: The color to use to tint the row separators, or   to   use the default color for the current list style.
-- `edges`: The set of row edges for which the tint applies.   The list style might decide to not display certain separators,   typically the top edge. The default is  .
+- `color`: The color to use to tint the row separators, or `nil` to use the default color for the current list style.
+- `edges`: The set of row edges for which the tint applies. The list style might decide to not display certain separators, typically the top edge. The default is [`all`](verticaledge/set/all.md).
 
 ## See Also
 

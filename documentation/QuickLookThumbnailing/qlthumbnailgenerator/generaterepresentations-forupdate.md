@@ -29,7 +29,9 @@ Use this method if you want to create a file icon or low-quality thumbnail quick
 ## Parameters
 
 - `request`: The request that contains information about the thumbnail that you want to create.
-- `updateHandler`: The handler takes the following parameters:
+- `updateHandler`: The handler to call successively for each requested representation of a thumbnail. QuickLookThumbnailing calls the `updateHandler` in order of lower quality to higher quality thumbnail types. If a better quality thumbnail becomes available before a lower quality one, the framework may skip the call to the `updateHandler` for the lower quality thumbnail. You can rely on QuickLookThumbnailing to call the `updateHandler` at least once by the time it finishes the creation of thumbnails with either the best requested thumbnail, or an error object. The handler takes the following parameters: - **`thumbnail`**: A thumbnail that is successfully generated or `nil` if `QLThumbnailGenerator` is unable to generate a thumbnail.
+- **`type`**: The type of the generated thumbnail representation.
+- **`error`**: An error object that indicates why the thumbnail generation failed, or `nil` if the thumbnail generation succeeded.
 
 ## See Also
 

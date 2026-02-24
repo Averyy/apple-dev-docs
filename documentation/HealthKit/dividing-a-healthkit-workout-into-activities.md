@@ -14,6 +14,9 @@ To model these activities in HealthKit, use the [`HKWorkoutActivity`](hkworkouta
 
 [`HKWorkoutActivity`](hkworkoutactivity.md) instances have two main use cases:
 
+- **Multisport workouts**: For workouts with an [`HKWorkoutActivityType.swimBikeRun`](hkworkoutactivitytype/swimbikerun.md) activity type, you can use [`HKWorkoutActivity`](hkworkoutactivity.md) instances to represent the [`HKWorkoutActivityType.swimming`](hkworkoutactivitytype/swimming.md), [`HKWorkoutActivityType.cycling`](hkworkoutactivitytype/cycling.md), and [`HKWorkoutActivityType.running`](hkworkoutactivitytype/running.md) portions of the workout. You can also use activities to mark the [`HKWorkoutActivityType.transition`](hkworkoutactivitytype/transition.md) between these activities.
+- **Interval training**: Use [`HKWorkoutActivity`](hkworkoutactivity.md) instances to represent the active portions of the workout. You can create an interval workout for any [`HKWorkoutActivityType`](hkworkoutactivitytype.md); however, all workout activities must use the same activity type as the containing workout. You can’t mix activities within a single workout.
+
 > **Note**:  All [`HKWorkout`](hkworkout.md) objects have at least one associated [`HKWorkoutActivity`](hkworkoutactivity.md). If you don’t explicitly add an activity to a workout, HealthKit adds an activity that matches the workout’s activity type. This means you can use [`predicateForWorkoutActivities(workoutActivityType:)`](hkquery/predicateforworkoutactivities(workoutactivitytype:).md) to filter for all the workouts that track an activity type. For example, filtering for workout activities that use [`HKWorkoutActivityType.running`](hkworkoutactivitytype/running.md) includes regular running workouts, running interval training, and [`HKWorkoutActivityType.swimBikeRun`](hkworkoutactivitytype/swimbikerun.md) workouts that include a running activity.
 
 ##### Mark Transitions

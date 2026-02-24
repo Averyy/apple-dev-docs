@@ -21,7 +21,7 @@ init(uiImage: UIImage)
 
 ## Parameters
 
-- `uiImage`: The UIKit image to wrap with a SwiftUI    instance.
+- `uiImage`: The UIKit image to wrap with a SwiftUI [`Image`](image.md) instance.
 
 ## See Also
 

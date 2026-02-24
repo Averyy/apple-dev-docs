@@ -17,6 +17,11 @@ The get bootstrap token request details.
 object GetBootstrapTokenRequest
 ```
 
+## Properties
+
+- `AwaitingConfiguration` (boolean): If `true`, the device is awaiting a [`Device Configured`](device-configured-command.md) command before proceeding through Setup Assistant.
+- `MessageType` (string) *(required)*: The message type, which requires a value of `GetBootstrapToken`.
+
 ## See Also
 
 - [object GetBootstrapTokenResponse](getbootstraptokenresponse.md)

@@ -42,7 +42,7 @@ For more information about creating scenes for your app extension, see [`Includi
 
 - `id`: The unique identifier for this scene.
 - `content`: A closure that provides the contents of the scene.
-- `onConnection`: A closure that you use to accept a scene-specific XPC connection.   The closure returns a Boolean value that indicates whether you successfully completed   the connection. Return   if you successfully configured the XPC connection,   or   if you didn’t.
+- `onConnection`: A closure that you use to accept a scene-specific XPC connection. The closure returns a Boolean value that indicates whether you successfully completed the connection. Return `true` if you successfully configured the XPC connection, or `false` if you didn’t.
 
 
 ---

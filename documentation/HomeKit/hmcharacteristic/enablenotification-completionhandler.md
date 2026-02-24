@@ -25,8 +25,8 @@ HomeKit delivers notifications to the accessory delegate using the [`accessory(_
 
 ## Parameters
 
-- `enable`:   to enable notifications,   to disable notifications.
-- `completion`: The block executed after the request is processed.
+- `enable`: [`true`](https://developer.apple.com/documentation/Swift/true) to enable notifications, [`false`](https://developer.apple.com/documentation/Swift/false) to disable notifications.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

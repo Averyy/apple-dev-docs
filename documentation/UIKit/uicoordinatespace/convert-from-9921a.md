@@ -25,7 +25,7 @@ A rectangle specified in the coordinate space of the current object.
 ## Parameters
 
 - `rect`: A rectangle in the specified coordinate space.
-- `coordinateSpace`: The coordinate space in which   is specified.
+- `coordinateSpace`: The coordinate space in which `rect` is specified.
 
 ## See Also
 

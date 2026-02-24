@@ -25,7 +25,7 @@ A point specified in the target coordinate space.
 ## Parameters
 
 - `point`: A point specified in the coordinate system of the current object.
-- `coordinateSpace`: The coordinate space into which   is to be converted.
+- `coordinateSpace`: The coordinate space into which `point` is to be converted.
 
 ## See Also
 

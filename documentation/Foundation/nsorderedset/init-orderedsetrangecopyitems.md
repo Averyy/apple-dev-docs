@@ -27,8 +27,8 @@ An initialized ordered set containing the objects in the ordered set.
 ## Parameters
 
 - `set`: An ordered set.
-- `range`: The range of objects in   to add to the ordered set.
-- `flag`: If   the objects are copied to the ordered set; otherwise  .
+- `range`: The range of objects in `orderedSet` to add to the ordered set.
+- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true) the objects are copied to the ordered set; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

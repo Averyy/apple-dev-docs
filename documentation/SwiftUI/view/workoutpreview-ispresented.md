@@ -38,7 +38,7 @@ struct WorkoutPreviewer: View {
 
 ## Parameters
 
-- `workout`: The   the preview displays
+- `workout`: The `WorkoutContainer` the preview displays
 - `isPresented`: A binding to a Boolean value that determines whether to present the preview
 
 ## See Also

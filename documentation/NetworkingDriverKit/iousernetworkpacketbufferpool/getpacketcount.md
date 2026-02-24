@@ -20,7 +20,7 @@ virtual kern_return_t GetPacketCount(uint32_t *count);
 
 ## Parameters
 
-- `count`: On output, the number of network packets supported by the pool. It is a programmer error to specify   or an invalid pointer for this parameter.
+- `count`: On output, the number of network packets supported by the pool. It is a programmer error to specify `NULL` or an invalid pointer for this parameter.
 
 ## See Also
 

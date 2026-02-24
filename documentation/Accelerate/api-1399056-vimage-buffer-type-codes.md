@@ -53,11 +53,11 @@ Constants that specify the contents of vImage buffers.
 - [var kvImageBufferTypeCode_Indexed: Int](kvimagebuffertypecode_indexed.md)
   The buffer contains data in an indexed colorspace.
 - [var kvImageBufferTypeCode_LAB_A: Int](kvimagebuffertypecode_lab_a.md)
-  If the image has a LAB color model, the buffer contains the  channel.
+  If the image has a LAB color model, the buffer contains the *a** channel.
 - [var kvImageBufferTypeCode_LAB_B: Int](kvimagebuffertypecode_lab_b.md)
-  If the image has a LAB color model, the buffer contains the  channel.
+  If the image has a LAB color model, the buffer contains the *b** channel.
 - [var kvImageBufferTypeCode_LAB_L: Int](kvimagebuffertypecode_lab_l.md)
-  If the image has a LAB color model, the buffer contains the  channel.
+  If the image has a LAB color model, the buffer contains the *L** channel.
 - [var kvImageBufferTypeCode_Luminance: Int](kvimagebuffertypecode_luminance.md)
   The buffer contains only luminance data.
 - [var kvImageBufferTypeCode_Monochrome: Int](kvimagebuffertypecode_monochrome.md)
@@ -70,11 +70,11 @@ Constants that specify the contents of vImage buffers.
   If the image has a RGB color model, the buffer contains the red channel.
 - [var kvImageBufferTypeCode_UniqueFormatCount: Int](kvimagebuffertypecode_uniqueformatcount.md)
 - [var kvImageBufferTypeCode_XYZ_X: Int](kvimagebuffertypecode_xyz_x.md)
-  If the image has a XYZ color model, the buffer contains the  channel.
+  If the image has a XYZ color model, the buffer contains the *X* channel.
 - [var kvImageBufferTypeCode_XYZ_Y: Int](kvimagebuffertypecode_xyz_y.md)
-  If the image has a XYZ color model, the buffer contains the  channel.
+  If the image has a XYZ color model, the buffer contains the *Y* channel.
 - [var kvImageBufferTypeCode_XYZ_Z: Int](kvimagebuffertypecode_xyz_z.md)
-  If the image has a XYZ color model, the buffer contains the  channel.
+  If the image has a XYZ color model, the buffer contains the *Z* channel.
 
 ## See Also
 

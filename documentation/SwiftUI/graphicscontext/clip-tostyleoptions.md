@@ -26,9 +26,9 @@ Call this method to add a shape to the array of clip shapes that the context use
 
 ## Parameters
 
-- `path`: A   that defines the shape of the clipping mask.
-- `style`: A   that defines how to rasterize the shape.
-- `options`: Clip options that tell SwiftUI how to interpret the    as a clip shape. For example, you can invert the clip   shape by setting the   option.
+- `path`: A [`Path`](path.md) that defines the shape of the clipping mask.
+- `style`: A [`FillStyle`](fillstyle.md) that defines how to rasterize the shape.
+- `options`: Clip options that tell SwiftUI how to interpret the `path` as a clip shape. For example, you can invert the clip shape by setting the [`inverse`](graphicscontext/clipoptions/inverse.md) option.
 
 ## See Also
 

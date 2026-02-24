@@ -26,7 +26,7 @@ Returns `nil` if the string isn’t a valid UUID representation.
 
 ## Parameters
 
-- `string`: The string representation of a UUID, such as  .
+- `string`: The string representation of a UUID, such as `E621E1F8-C36C-495A-93FC-0C247A3E6E5F`.
 
 ## See Also
 

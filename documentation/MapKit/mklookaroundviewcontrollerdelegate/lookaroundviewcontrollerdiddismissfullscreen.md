@@ -20,7 +20,7 @@ optional func lookAroundViewControllerDidDismissFullScreen(_ viewController: MKL
 
 ## Parameters
 
-- `viewController`: The  .
+- `viewController`: The [`MKLookAroundViewController`](mklookaroundviewcontroller.md).
 
 ## See Also
 

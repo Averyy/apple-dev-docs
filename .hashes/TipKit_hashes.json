@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-02-20T17:42:31.502487",
+    "last_updated": "2026-02-24T07:32:06.877536",
     "total_pages": 380,
-    "session_id": "2026-02-20T17:41:55.719175"
+    "session_id": "2026-02-24T07:31:34.939337"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/TipKit.json": {
       "hash": "12072ffd70529c6a38850d19ec5e5db8dcd7e06cb005ab2892719e8cc584e38b",
-      "last_checked": "2026-02-20T17:41:56.099042",
+      "last_checked": "2026-02-24T07:31:35.373760",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"14e13bc89c529cd64d619809dd9d7921\"",
       "file_path": "documentation/TipKit/TipKit.md"
     },
     "https://developer.apple.com/documentation/TipKit": {
       "hash": "12072ffd70529c6a38850d19ec5e5db8dcd7e06cb005ab2892719e8cc584e38b",
-      "last_checked": "2026-02-20T17:41:56.000842",
+      "last_checked": "2026-02-24T07:31:35.271707",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"14e13bc89c529cd64d619809dd9d7921\"",
       "file_path": "documentation/TipKit/TipKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/highlightingappfeatureswithtipkit.json": {
       "hash": "606937bf7eecff36982d6bf968aa0956789dc3699b0329355f9ea0380971b678",
-      "last_checked": "2026-02-20T17:41:56.374650",
+      "last_checked": "2026-02-24T07:31:35.602621",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"38db57760a6037332984369ad42701c2\"",
       "file_path": "documentation/TipKit/highlightingappfeatureswithtipkit.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip.json": {
       "hash": "aa327221be4b736b0256f16415ee3fa04627f1885e697f46ac19a465ead3138e",
-      "last_checked": "2026-02-20T17:41:56.607062",
+      "last_checked": "2026-02-24T07:31:35.916251",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"fc94d4dea50d482cdc03a2227866bb88\"",
       "file_path": "documentation/TipKit/tip.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipgroup.json": {
       "hash": "b2f80713e07541dbb66b0883000c5d8803a932b1e21b3a69c37f23b8ae797eaa",
-      "last_checked": "2026-02-20T17:41:56.816805",
+      "last_checked": "2026-02-24T07:31:36.230660",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"2f98cf20f7602c6a0bebfce9b1a787d4\"",
       "file_path": "documentation/TipKit/tipgroup.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configure(_:).json": {
       "hash": "b5dc4f1fe9e371adcc2263ee4565b2ccb476b713d09ca946bb46ca8ea60e38ae",
-      "last_checked": "2026-02-20T17:41:57.021111",
+      "last_checked": "2026-02-24T07:31:36.413918",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"31a78ae221e2e01490b62b75764efcb3\"",
       "file_path": "documentation/TipKit/tips/configure.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption/cloudkitcontainer(_:).json": {
       "hash": "f66dddd834b0e6d5761d5ff269a00e3c5e7d71f469015b1b540b7ed78dc2c1c8",
-      "last_checked": "2026-02-20T17:41:57.218066",
+      "last_checked": "2026-02-24T07:31:36.548053",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"34a245ffe9b80662e56f710ca4ea8303\"",
       "file_path": "documentation/TipKit/tips/configurationoption/cloudkitcontainer.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption/datastorelocation(_:).json": {
       "hash": "e28163c7d41436a927fa8eb235763a7ba0c13cbbb2fd2e1a1ec99d52b145c9d5",
-      "last_checked": "2026-02-20T17:41:57.426208",
+      "last_checked": "2026-02-24T07:31:36.730740",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"c599b0b4b6b08fe4f59abb7e88e86a41\"",
       "file_path": "documentation/TipKit/tips/configurationoption/datastorelocation.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption/displayfrequency(_:).json": {
       "hash": "032a05480bd551177f89092ced6f3d99a097e23a44c6ccb4e577b7baed2b33fc",
-      "last_checked": "2026-02-20T17:41:57.623458",
+      "last_checked": "2026-02-24T07:31:37.044552",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"1799a8e3280cadbd3a8e2c454c6b885a\"",
       "file_path": "documentation/TipKit/tips/configurationoption/displayfrequency.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipview.json": {
       "hash": "cc392ad8724b00a4f4a1d4582d6340ee4c158814e3c48489dff204f7c5f12c9f",
-      "last_checked": "2026-02-20T17:41:57.812904",
+      "last_checked": "2026-02-24T07:31:37.223931",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"000b7e36148ad2379dc00f6bcebbbd28\"",
       "file_path": "documentation/TipKit/tipview.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuiview.json": {
       "hash": "32fed798d8b720fa320f11c1401ff7dfba401aee17097fe3feb78253b867f12b",
-      "last_checked": "2026-02-20T17:41:58.027167",
+      "last_checked": "2026-02-24T07:31:37.411862",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"6d7509024423b32b405876e463b54ba5\"",
       "file_path": "documentation/TipKit/tipuiview.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuipopoverviewcontroller.json": {
       "hash": "37de23a3417a79e79ed6bee7542dde142957c11ce0da29da2f2ce1e78de551f1",
-      "last_checked": "2026-02-20T17:41:58.219341",
+      "last_checked": "2026-02-24T07:31:37.770637",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"e8ebbaa05bacea2f9e342e11410829f6\"",
       "file_path": "documentation/TipKit/tipuipopoverviewcontroller.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionviewcell.json": {
       "hash": "f7a5f5f2b1baaff98da046ee3695ef73627aa7f895403c80079fe9b1fbfd8d44",
-      "last_checked": "2026-02-20T17:41:58.425278",
+      "last_checked": "2026-02-24T07:31:37.969188",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"45558ed2c408692f633f53d7dacacfa7\"",
       "file_path": "documentation/TipKit/tipuicollectionviewcell.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionreusableview.json": {
       "hash": "443b562a3eff1e8e5c5af88933fe18c6ae409ba33d1f3d8695afa0432ce560bc",
-      "last_checked": "2026-02-20T17:41:58.636221",
+      "last_checked": "2026-02-24T07:31:38.139548",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"51efec0e0d0a0af7368ff65ea9edd653\"",
       "file_path": "documentation/TipKit/tipuicollectionreusableview.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipnsview.json": {
       "hash": "b48b7b66ef3ec4509a89d858c569851eaae76033baa10b950db250249718cef9",
-      "last_checked": "2026-02-20T17:41:58.846754",
+      "last_checked": "2026-02-24T07:31:38.262618",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"74d85e031a6991afb3544effbe6083f5\"",
       "file_path": "documentation/TipKit/tipnsview.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipnspopover.json": {
       "hash": "c4c22e6e2cef69322359eb77f07ce639fe7892b5a6853239933098ecfccb0f23",
-      "last_checked": "2026-02-20T17:41:59.056212",
+      "last_checked": "2026-02-24T07:31:38.577237",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"6574c8a333427f6cc1b512f81d99412c\"",
       "file_path": "documentation/TipKit/tipnspopover.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/rule.json": {
       "hash": "50f7b14024b79d1fb2609e01599a63dba0bcbc9bb509346a6bbaec7a9d6ecd48",
-      "last_checked": "2026-02-20T17:41:59.251088",
+      "last_checked": "2026-02-24T07:31:38.864399",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"88dbfd7268f3a3388bfef33fd1e14853\"",
       "file_path": "documentation/TipKit/tips/rule.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/parameter.json": {
       "hash": "45cbd8570fca5f4ab52a7fb27a71ddc3db289c74ba983d808aa99c30f7bdfa56",
-      "last_checked": "2026-02-20T17:41:59.438415",
+      "last_checked": "2026-02-24T07:31:39.026604",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"90f91f33945c7156196818d82b7a8749\"",
       "file_path": "documentation/TipKit/tips/parameter.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/event.json": {
       "hash": "4b899bbff3af6665f7f371d4b3c96650349c47e564e3099054088323008b3f82",
-      "last_checked": "2026-02-20T17:41:59.772552",
+      "last_checked": "2026-02-24T07:31:39.321396",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"d7d32d82faf21b1630c45a8ba6437ca0\"",
       "file_path": "documentation/TipKit/tips/event.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipviewstyle.json": {
       "hash": "d87b85015696686922a4ed803f5dca99ab586ebbe91bb690e0368822dbad026c",
-      "last_checked": "2026-02-20T17:41:59.998094",
+      "last_checked": "2026-02-24T07:31:39.495681",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"b3db1a2c1dae1cf2a7d856f190391c84\"",
       "file_path": "documentation/TipKit/tipviewstyle.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipviewstyleconfiguration.json": {
       "hash": "d1f8f6dc3528d9ada9e14719502a19a49e27256ceb77cdafc725941f0944f147",
-      "last_checked": "2026-02-20T17:42:00.201610",
+      "last_checked": "2026-02-24T07:31:39.653467",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"b9c8c36553dd9a7d0f875df3e7fb0a1f\"",
       "file_path": "documentation/TipKit/tipviewstyleconfiguration.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/minitipviewstyle.json": {
       "hash": "17e17d4d47e15bdf7e270a32d82c37a3483f987c19a406a1f7bd6f435d0487d4",
-      "last_checked": "2026-02-20T17:42:00.412787",
+      "last_checked": "2026-02-24T07:31:39.969344",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"349af74b20e2dce5c95fcb04f7be4511\"",
       "file_path": "documentation/TipKit/minitipviewstyle.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/showalltipsfortesting().json": {
       "hash": "f343ca75f17a5fa48eb124c85cb8281c3e2629f558654c168656beb66148a383",
-      "last_checked": "2026-02-20T17:42:00.629866",
+      "last_checked": "2026-02-24T07:31:40.193658",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"21e2e2cf90f27be348b91fb94a474989\"",
       "file_path": "documentation/TipKit/tips/showalltipsfortesting.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/showtipsfortesting(_:).json": {
       "hash": "fb1727a8bc552c4ad1fbd81ef555ec3417c64db1cbf2c2493c1bb9bf6c46b271",
-      "last_checked": "2026-02-20T17:42:00.838449",
+      "last_checked": "2026-02-24T07:31:40.383510",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"e0cc6bdcb01f54fa3db15878d93c14eb\"",
       "file_path": "documentation/TipKit/tips/showtipsfortesting.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/hidealltipsfortesting().json": {
       "hash": "24823863f4b6d6bddb2b2c4b68d9a72a663c30914a6c51ed2009284dd618f9ba",
-      "last_checked": "2026-02-20T17:42:01.037304",
+      "last_checked": "2026-02-24T07:31:40.566474",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"47824ec142d114ad06c78d7efed552b0\"",
       "file_path": "documentation/TipKit/tips/hidealltipsfortesting.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/hidetipsfortesting(_:).json": {
       "hash": "1fae612e1e11a42ca930b7a7199815bf99b6602ab90c39ec8670c49191d4cc95",
-      "last_checked": "2026-02-20T17:42:01.247690",
+      "last_checked": "2026-02-24T07:31:40.744942",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"e3ba2c859d891622c0165f857081eeb3\"",
       "file_path": "documentation/TipKit/tips/hidetipsfortesting.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/resetdatastore().json": {
       "hash": "b066806b517bc3b8213e2801fe1ec2f62878701ff032c160d94d03789e1bf764",
-      "last_checked": "2026-02-20T17:42:01.446941",
+      "last_checked": "2026-02-24T07:31:40.871597",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"96ae17f4de5c08caf993c38b7955f2d5\"",
       "file_path": "documentation/TipKit/tips/resetdatastore.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/anytip.json": {
       "hash": "70bb51a2fddef8e84ad215c99cdb004ed39dbc9fa588f22652750395881db33d",
-      "last_checked": "2026-02-20T17:42:01.635931",
+      "last_checked": "2026-02-24T07:31:41.051528",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"6efe73e6ebeb73554c882d397bcc477e\"",
       "file_path": "documentation/TipKit/anytip.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipkiterror.json": {
       "hash": "08d64efcb1431e8b10b4904c1a135a03b3aa4c6140f7af09b8393e562140b744",
-      "last_checked": "2026-02-20T17:42:01.857478",
+      "last_checked": "2026-02-24T07:31:41.363313",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"5310086cacbae7084134e802e68e39ba\"",
       "file_path": "documentation/TipKit/tipkiterror.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipoption.json": {
       "hash": "f2e18190668e9e0b97a585bf9cd3a61ed82a79c1aecf403a8230f3f3e9ca2b48",
-      "last_checked": "2026-02-20T17:42:02.069853",
+      "last_checked": "2026-02-24T07:31:41.551404",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"6b598e496c1ddf3e53ddd6b4a0accddb\"",
       "file_path": "documentation/TipKit/tipoption.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips.json": {
       "hash": "1636362e9f7a700cbf912ec73de6dd8de993d61882d02dd430c1b914b778c98e",
-      "last_checked": "2026-02-20T17:42:02.281519",
+      "last_checked": "2026-02-24T07:31:41.761160",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"aa56db88522b1c05387f054597db0079\"",
       "file_path": "documentation/TipKit/tips.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/title.json": {
       "hash": "2e5cacb67542b91d5159094239104437879ada86f63bd2263f2b39376b65c57c",
-      "last_checked": "2026-02-20T17:42:02.481097",
+      "last_checked": "2026-02-24T07:31:41.941450",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"14fcf287b25804c3de026f1d1f5bf9be\"",
       "file_path": "documentation/TipKit/tip/title.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/message.json": {
       "hash": "d8bac9a26d476e023af32bff5eab953c10dc88db52d0605a60926922eabfc7ac",
-      "last_checked": "2026-02-20T17:42:02.696625",
+      "last_checked": "2026-02-24T07:31:42.241750",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"b88115a0a11339be983423813ab789f0\"",
       "file_path": "documentation/TipKit/tip/message.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/image.json": {
       "hash": "11cb9f0881422ec74b62ff3d34bfa18ecc02ab54aff3ed32f739114730b83adc",
-      "last_checked": "2026-02-20T17:42:02.892476",
+      "last_checked": "2026-02-24T07:31:42.420226",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"ddba170fd2718d42e3481b9b94e32359\"",
       "file_path": "documentation/TipKit/tip/image.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/id.json": {
       "hash": "5e4e8b3c3df7916b54b13b250369fb90ecc4b74465bfcde43322b0680e9e09ff",
-      "last_checked": "2026-02-20T17:42:03.133090",
+      "last_checked": "2026-02-24T07:31:42.601122",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"f1ea983fc1138cf02f425b0fff381d1e\"",
       "file_path": "documentation/TipKit/tip/id.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/rules.json": {
       "hash": "8b63b2a1f8cb10699a8c5dbd672f95c363842d83f479dcc0d4a613c73df75950",
-      "last_checked": "2026-02-20T17:42:03.329398",
+      "last_checked": "2026-02-24T07:31:42.770222",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"e41e37f1e3c3fb8c76e86c3393ece537\"",
       "file_path": "documentation/TipKit/tip/rules.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/rule.json": {
       "hash": "50b6fde00fcceb1a45a7134b970865067e9e13c3a7e5e47e174e7122f8df2d53",
-      "last_checked": "2026-02-20T17:42:03.533873",
+      "last_checked": "2026-02-24T07:31:43.080829",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"dceb86d4245416ca9271c32cd69b2f2c\"",
       "file_path": "documentation/TipKit/tip/rule.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/event.json": {
       "hash": "b6dfb51b339509ebe4e8c29210559cbba5dcedfefdd461e48a3383998264aae1",
-      "last_checked": "2026-02-20T17:42:03.747486",
+      "last_checked": "2026-02-24T07:31:43.276864",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"d456699fed926b312737dff5192e98dc\"",
       "file_path": "documentation/TipKit/tip/event.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/options.json": {
       "hash": "8c9e230ce3b3ca4a8137ffe7fdf97ecca2224fa2c23c15274df9c23bf1454bf5",
-      "last_checked": "2026-02-20T17:42:03.948748",
+      "last_checked": "2026-02-24T07:31:43.592446",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"74be62236212b445b0acd784658662c2\"",
       "file_path": "documentation/TipKit/tip/options.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/option.json": {
       "hash": "d68d8381395c6a45c7b2a701529a78e93aa54cc63676174ac93d585a729055f4",
-      "last_checked": "2026-02-20T17:42:04.143691",
+      "last_checked": "2026-02-24T07:31:43.791273",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"310f54793cf0362ba25138a0b7a4ba51\"",
       "file_path": "documentation/TipKit/tip/option.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/ignoresdisplayfrequency.json": {
       "hash": "5f550dc7370e884bd3d39d729d0defdeee63318c68cfed80a29bb751a2311dd2",
-      "last_checked": "2026-02-20T17:42:04.366379",
+      "last_checked": "2026-02-24T07:31:44.019241",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"6909ef5115d5a7d60dcacf806640ea25\"",
       "file_path": "documentation/TipKit/tip/ignoresdisplayfrequency.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/maxdisplaycount.json": {
       "hash": "c2ced1a7015a396760e82b16ad699fd84a254792ab408717ec9991980f3ab924",
-      "last_checked": "2026-02-20T17:42:04.566655",
+      "last_checked": "2026-02-24T07:31:44.248550",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"31efb2794c8b29ad1fab679338c333ca\"",
       "file_path": "documentation/TipKit/tip/maxdisplaycount.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/maxdisplayduration.json": {
       "hash": "12a8b04679f352756a0b17cd182a698b36469f64f916deae5cc5c03d22b2b7bf",
-      "last_checked": "2026-02-20T17:42:04.769582",
+      "last_checked": "2026-02-24T07:31:44.372996",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"1f411f7a0b09bd5eb40f57d72947c0b2\"",
       "file_path": "documentation/TipKit/tip/maxdisplayduration.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/actions.json": {
       "hash": "48f0c909f5ee0da293a49ed070612c7c1b093e7de0e7d2f5545bdcc7e3e319c2",
-      "last_checked": "2026-02-20T17:42:04.964420",
+      "last_checked": "2026-02-24T07:31:44.557727",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"b900567e7ee4cbe1c6362c607e5e9916\"",
       "file_path": "documentation/TipKit/tip/actions.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/action.json": {
       "hash": "05f64c4f1b2366afc2d7d869aa349f1f48c4997e179c6abf7e532802509737d0",
-      "last_checked": "2026-02-20T17:42:05.192847",
+      "last_checked": "2026-02-24T07:31:44.772997",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"0c29ec9fcf2ec19ad67eadc3e6cacdb1\"",
       "file_path": "documentation/TipKit/tip/action.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/status-swift.property.json": {
       "hash": "9ef2be9fa4a74951057c16e9948ea228dc6b9233ba5dee4c53962d1c7b3afc64",
-      "last_checked": "2026-02-20T17:42:05.386485",
+      "last_checked": "2026-02-24T07:31:44.953936",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"a2b3509cde0af9ad5168e743eb24a0e5\"",
       "file_path": "documentation/TipKit/tip/status-swiftproperty.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/statusupdates.json": {
       "hash": "bc3b163a112e310c0794b5aeb794ec5def7339b7b1c01b357e59a4d48204bf9c",
-      "last_checked": "2026-02-20T17:42:05.577831",
+      "last_checked": "2026-02-24T07:31:45.144265",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"5b3329a9f698cbdc6d1310652b29b30c\"",
       "file_path": "documentation/TipKit/tip/statusupdates.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/shoulddisplay.json": {
       "hash": "353c82e430b8236fa716c44a6c36266fd74977ef156b546dddd708af4bd59b67",
-      "last_checked": "2026-02-20T17:42:05.763747",
+      "last_checked": "2026-02-24T07:31:45.295210",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"a8c6acb658e9efc5a81746cd2c5e5929\"",
       "file_path": "documentation/TipKit/tip/shoulddisplay.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/shoulddisplayupdates.json": {
       "hash": "587aa9348573742fe5b12375a3bd3e1766938953b167627516acfcee3f24d746",
-      "last_checked": "2026-02-20T17:42:05.968041",
+      "last_checked": "2026-02-24T07:31:45.474915",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"f058f4809755426b054f6f895227bbd5\"",
       "file_path": "documentation/TipKit/tip/shoulddisplayupdates.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/status-swift.typealias.json": {
       "hash": "59a6882a7fc752a782da5e66ee852b4b678763410ead577fcaaff9a30213a5c8",
-      "last_checked": "2026-02-20T17:42:06.184107",
+      "last_checked": "2026-02-24T07:31:45.636555",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"580125880811d5780c294c4e7c9e8d04\"",
       "file_path": "documentation/TipKit/tip/status-swifttypealias.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/invalidationreason.json": {
       "hash": "422348cbe1f3c116889bed7d24e1ed864814f296e982fce21143299504ea91bd",
-      "last_checked": "2026-02-20T17:42:06.398646",
+      "last_checked": "2026-02-24T07:31:45.826528",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"2653e9cd01350c4d576b610bbfa52f7b\"",
       "file_path": "documentation/TipKit/tip/invalidationreason.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/invalidate(reason:).json": {
       "hash": "dc49901e0041ab0fdbc1ee42fb3421dc093eec0bf1dbcabb46bc9dfa9878e8f7",
-      "last_checked": "2026-02-20T17:42:06.598491",
+      "last_checked": "2026-02-24T07:31:46.032557",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"977250a080b597ff6029decfac7e1d9b\"",
       "file_path": "documentation/TipKit/tip/invalidate-reason.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tip/reseteligibility().json": {
       "hash": "514cc25e137015d90db110e9336be5e8f44fbf542bdc6b8706b19ab727299d99",
-      "last_checked": "2026-02-20T17:42:06.784419",
+      "last_checked": "2026-02-24T07:31:46.207973",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"20585f517bdf091ee978146c99d3bca8\"",
       "file_path": "documentation/TipKit/tip/reseteligibility.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipgroup/init(_:_:).json": {
       "hash": "24075c81e0900a0d2e9cd60ee2a5e850aa70cc265d59d1245653cb1055e9ce8e",
-      "last_checked": "2026-02-20T17:42:07.029639",
+      "last_checked": "2026-02-24T07:31:46.402686",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"d49ed41066e5c655a1994260992e06d7\"",
       "file_path": "documentation/TipKit/tipgroup/init.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipgroup/priority.json": {
       "hash": "600bf1d1079c7ecd24cc0c1070400e274c83847acc9c94ce25de39eff79f1d50",
-      "last_checked": "2026-02-20T17:42:07.246721",
+      "last_checked": "2026-02-24T07:31:46.566568",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"502592f9198854274a42142b8a13ea72\"",
       "file_path": "documentation/TipKit/tipgroup/priority.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipgroup/currenttip.json": {
       "hash": "5718a915795d3f8857ba2aa3dddcd430e0ae8cb8bb894fbe35b8c23611fce20c",
-      "last_checked": "2026-02-20T17:42:07.444828",
+      "last_checked": "2026-02-24T07:31:46.691740",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"807b52195a034ec4b7babc63d46f10de\"",
       "file_path": "documentation/TipKit/tipgroup/currenttip.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipgroup/currenttipupdates.json": {
       "hash": "064f0c33d00a922d2adf45b0bd829698951bc00ab96f72012cc10ac08ad4a7b7",
-      "last_checked": "2026-02-20T17:42:07.651371",
+      "last_checked": "2026-02-24T07:31:46.873869",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"85f214637b92e757c5efc5d43093b5c1\"",
       "file_path": "documentation/TipKit/tipgroup/currenttipupdates.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipview/init(_:arrowedge:action:).json": {
       "hash": "219b38bc2ee4184878575803dfe754578b7f03c890d095fcdf89c1a749a2b1a6",
-      "last_checked": "2026-02-20T17:42:07.859046",
+      "last_checked": "2026-02-24T07:31:47.055361",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"310d3cdeb3015ec525002b22686b2790\"",
       "file_path": "documentation/TipKit/tipview/init-arrowedgeaction.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuiview/init(_:arrowedge:actionhandler:).json": {
       "hash": "0d74f0796931b23a193f53039ab88e6b9c16fea20d129a3acd07a5347a76d61a",
-      "last_checked": "2026-02-20T17:42:08.501105",
+      "last_checked": "2026-02-24T07:31:47.609088",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"873981b51b64e9091e274532d3dff01d\"",
       "file_path": "documentation/TipKit/tipuiview/init-arrowedgeactionhandler.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuiview/backgroundcolor.json": {
       "hash": "69278f6b85038c869629a8a10fce9917f71439eef707c86974faa9deb2ecbab5",
-      "last_checked": "2026-02-20T17:42:08.718272",
+      "last_checked": "2026-02-24T07:31:47.796373",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"8ecdf6b0eec54cb7acbea530eda551e0\"",
       "file_path": "documentation/TipKit/tipuiview/backgroundcolor.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuiview/backgroundstyle.json": {
       "hash": "63ba1f5212ef85a50adb38fb184dcbe6ffda7bde943f5cb5909b9ee3577f4263",
-      "last_checked": "2026-02-20T17:42:08.957267",
+      "last_checked": "2026-02-24T07:31:47.914318",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"59b502046df62f7a597e9ea8a6b68cde\"",
       "file_path": "documentation/TipKit/tipuiview/backgroundstyle.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuiview/cornerradius.json": {
       "hash": "3624a547e3c864f0fc4f4984ae454d1528a5bc5a860ad6c37b76d2c90af37209",
-      "last_checked": "2026-02-20T17:42:09.148204",
+      "last_checked": "2026-02-24T07:31:48.077505",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"c98f30c973514c3be616a39b6d48a7bd\"",
       "file_path": "documentation/TipKit/tipuiview/cornerradius.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuiview/imagesize.json": {
       "hash": "af061538a6fe14d1fc0acad75ecdafa9e4a158f23f69b62fbc6dd6d130a2cf67",
-      "last_checked": "2026-02-20T17:42:09.338342",
+      "last_checked": "2026-02-24T07:31:48.245686",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"68039f9f8266e4475fcacbb21627c770\"",
       "file_path": "documentation/TipKit/tipuiview/imagesize.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuiview/imagestyle.json": {
       "hash": "2eb43a0eea9aabf462c2be50a231d6c3413c5474d1ecc27274bf239235ac68bc",
-      "last_checked": "2026-02-20T17:42:09.552454",
+      "last_checked": "2026-02-24T07:31:48.419785",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"646dff45d9f27071efa351440a400f3f\"",
       "file_path": "documentation/TipKit/tipuiview/imagestyle.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuiview/viewstyle.json": {
       "hash": "b2f317e0fbcc6a645040c9d75eb67ff88001f1cc6f11b03e4a758e0ad91985ea",
-      "last_checked": "2026-02-20T17:42:09.778987",
+      "last_checked": "2026-02-24T07:31:48.580890",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"3469b7ea480b7f70268308b4484e4466\"",
       "file_path": "documentation/TipKit/tipuiview/viewstyle.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuipopoverviewcontroller/init(_:sourceitem:actionhandler:).json": {
       "hash": "9bf4cc32c46c0eaa7207554bbd3527cd0ed8ecfbb193b98f6a090863018fd981",
-      "last_checked": "2026-02-20T17:42:09.973966",
+      "last_checked": "2026-02-24T07:31:48.771285",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"00d0406b7418ad1d645bdb5dcaff5ca8\"",
       "file_path": "documentation/TipKit/tipuipopoverviewcontroller/init-sourceitemactionhandler.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuipopoverviewcontroller/init(coder:).json": {
       "hash": "85288ddbe3dddb74d1bad4e5a60768b1fa482aa037e98e50f8e457c33d7c72d8",
-      "last_checked": "2026-02-20T17:42:10.195706",
+      "last_checked": "2026-02-24T07:31:48.930853",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"b30ced20cd158c16b3bf6ef03fed190c\"",
       "file_path": "documentation/TipKit/tipuipopoverviewcontroller/init-coder.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuipopoverviewcontroller/init(nibname:bundle:).json": {
       "hash": "df039fb0bb4409627ef868078805e69474eee2eb3f9446dec5904cdb42249e14",
-      "last_checked": "2026-02-20T17:42:10.392236",
+      "last_checked": "2026-02-24T07:31:49.117175",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"177c10a17580db0795ab2869b100635a\"",
       "file_path": "documentation/TipKit/tipuipopoverviewcontroller/init-nibnamebundle.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuipopoverviewcontroller/backgroundcolor.json": {
       "hash": "2ae4d6475fd5af83bc001866a6f3d7713ca2da9a5f372168eac4bc1a0adca63e",
-      "last_checked": "2026-02-20T17:42:10.575821",
+      "last_checked": "2026-02-24T07:31:49.260551",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"938257ff6f2a72af786babc6dc71acfa\"",
       "file_path": "documentation/TipKit/tipuipopoverviewcontroller/backgroundcolor.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuipopoverviewcontroller/backgroundstyle.json": {
       "hash": "c5a4c22014604de5e5307a716686b2aba68e794a3a35f3c1d34de5af49df3750",
-      "last_checked": "2026-02-20T17:42:10.789978",
+      "last_checked": "2026-02-24T07:31:49.413300",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"47dd8acb33a053380051580cb420c4b5\"",
       "file_path": "documentation/TipKit/tipuipopoverviewcontroller/backgroundstyle.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuipopoverviewcontroller/imagesize.json": {
       "hash": "073c6c03eacc7f51d9a92d8844d67fbf2616fe21e33f5a3c22b3434361107420",
-      "last_checked": "2026-02-20T17:42:11.001852",
+      "last_checked": "2026-02-24T07:31:49.568814",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"fc68a1d0824315830fed35e7514e363b\"",
       "file_path": "documentation/TipKit/tipuipopoverviewcontroller/imagesize.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuipopoverviewcontroller/imagestyle.json": {
       "hash": "07eddd4126ccfe7a02af511e5f1be6da4b6b2b22b1eba72768c2b812e7a74e6b",
-      "last_checked": "2026-02-20T17:42:11.195886",
+      "last_checked": "2026-02-24T07:31:49.704586",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"9591ee2045edc4afc57069696e291e3d\"",
       "file_path": "documentation/TipKit/tipuipopoverviewcontroller/imagestyle.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuipopoverviewcontroller/presentationdelegate.json": {
       "hash": "7ff8f5c0ff21c411009d34283f48bd29155e3c6b237865f6cd265256f0f21fc5",
-      "last_checked": "2026-02-20T17:42:11.397566",
+      "last_checked": "2026-02-24T07:31:49.833222",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"6278ac3cddad270b42f55f04ccf0d00a\"",
       "file_path": "documentation/TipKit/tipuipopoverviewcontroller/presentationdelegate.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuipopoverviewcontroller/sourceitem.json": {
       "hash": "eb51af3f7a3028a9dfc326d791bbee1aed455f3722b14f4e67539f68c8e76f7f",
-      "last_checked": "2026-02-20T17:42:11.590792",
+      "last_checked": "2026-02-24T07:31:49.970547",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"a24dcb7de5f74e39182fd521142f4ffc\"",
       "file_path": "documentation/TipKit/tipuipopoverviewcontroller/sourceitem.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuipopoverviewcontroller/viewstyle.json": {
       "hash": "e3ef6949a2e36d2d5927fc767ca7ad569928135d76402c98d1d3ef49cb735fc7",
-      "last_checked": "2026-02-20T17:42:11.784065",
+      "last_checked": "2026-02-24T07:31:50.132468",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"8c234c2a8ba33ac01e27e35ea1a63d22\"",
       "file_path": "documentation/TipKit/tipuipopoverviewcontroller/viewstyle.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionviewcell/init(coder:).json": {
       "hash": "7ef410bd1a6c5507d23725791ebef7ab2ea975f7f292f16a9b8b5ec3c2c92bb1",
-      "last_checked": "2026-02-20T17:42:11.982963",
+      "last_checked": "2026-02-24T07:31:50.307993",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"4b02dcc10df9a9967e0a2ddcc50dbbcf\"",
       "file_path": "documentation/TipKit/tipuicollectionviewcell/init-coder.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionviewcell/init(frame:).json": {
       "hash": "69234b621432070201e0d7e46c8166d5d62a070ef6ea919001f78491e26aa183",
-      "last_checked": "2026-02-20T17:42:12.192616",
+      "last_checked": "2026-02-24T07:31:50.526949",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"1b7f1287d95c0d7ec2cc4338ff0f4b68\"",
       "file_path": "documentation/TipKit/tipuicollectionviewcell/init-frame.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionviewcell/backgroundcolor.json": {
       "hash": "23fe2dd33b84cc854d86cf39273d238d5e3dd836fb4140cec21f1e450bd7ada3",
-      "last_checked": "2026-02-20T17:42:12.408073",
+      "last_checked": "2026-02-24T07:31:50.688318",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"b093201e12a09c4f6dfc7149cf789eb2\"",
       "file_path": "documentation/TipKit/tipuicollectionviewcell/backgroundcolor.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionviewcell/backgroundstyle.json": {
       "hash": "8ab7804e1c918bdbc513cfce1283507774219a2200d2cb7a56a132e5804c48a9",
-      "last_checked": "2026-02-20T17:42:12.597906",
+      "last_checked": "2026-02-24T07:31:50.851988",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"8feb3787f5132f8a3a7f73270725011f\"",
       "file_path": "documentation/TipKit/tipuicollectionviewcell/backgroundstyle.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionviewcell/cornerradius.json": {
       "hash": "6ede82ea5a40e453e4f855b776cceac016aa77904886a2d218484f79e717b3bd",
-      "last_checked": "2026-02-20T17:42:12.790411",
+      "last_checked": "2026-02-24T07:31:51.028219",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"c255442eaffe424c7c9997863785de46\"",
       "file_path": "documentation/TipKit/tipuicollectionviewcell/cornerradius.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionviewcell/imagesize.json": {
       "hash": "cd9a391bbd9253d48cbc6d259c322847f20a55be1412b111006a2aae4dd48c01",
-      "last_checked": "2026-02-20T17:42:12.998167",
+      "last_checked": "2026-02-24T07:31:51.201362",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"a22322b8a1984e20478b247bd2f9af80\"",
       "file_path": "documentation/TipKit/tipuicollectionviewcell/imagesize.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionviewcell/imagestyle.json": {
       "hash": "81cf77ae629a326d27c497ee6413e35271c3d81f3b7a876434ce1146eaf4121b",
-      "last_checked": "2026-02-20T17:42:13.200742",
+      "last_checked": "2026-02-24T07:31:51.368233",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"2816e83ec1d8b1240a1904b85de7b02e\"",
       "file_path": "documentation/TipKit/tipuicollectionviewcell/imagestyle.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionviewcell/viewstyle.json": {
       "hash": "30a9f2ab68f973920cbdbee8c64bc189926347ecdbfe4fdf89a3b0b2709f1b01",
-      "last_checked": "2026-02-20T17:42:13.403103",
+      "last_checked": "2026-02-24T07:31:51.521115",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"7e0779f48923dd67614ecfa725b2e2a6\"",
       "file_path": "documentation/TipKit/tipuicollectionviewcell/viewstyle.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionviewcell/configuretip(_:arrowedge:actionhandler:).json": {
       "hash": "39fe5e8aa74077055c3cfd746a05a3a465b5eea8f0a7023b344a83662a7e8304",
-      "last_checked": "2026-02-20T17:42:13.619271",
+      "last_checked": "2026-02-24T07:31:51.664331",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"3ed74eb09caa49cf605ef95df8951b4f\"",
       "file_path": "documentation/TipKit/tipuicollectionviewcell/configuretip-arrowedgeactionhandler.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionreusableview/init(coder:).json": {
       "hash": "c1ce7fe77c1847df98aba71633c8d1a689d0806ac8ebe11aab10c8f313ef1db6",
-      "last_checked": "2026-02-20T17:42:13.832015",
+      "last_checked": "2026-02-24T07:31:51.803488",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"55d854524247415d3474d09ce83e7f11\"",
       "file_path": "documentation/TipKit/tipuicollectionreusableview/init-coder.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionreusableview/init(frame:).json": {
       "hash": "593318fc3e2dbb8534c2c1c122cbbd611bfb7b78bef3158c9faf56bb7d84e805",
-      "last_checked": "2026-02-20T17:42:14.026587",
+      "last_checked": "2026-02-24T07:31:51.918570",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"9e91b767efd443ef2c3bd68c4c41d9f9\"",
       "file_path": "documentation/TipKit/tipuicollectionreusableview/init-frame.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionreusableview/backgroundstyle.json": {
       "hash": "7cf601fe830cab83260cfc176b92a8b870d30c23d47aa71819b3ac753e8292fb",
-      "last_checked": "2026-02-20T17:42:14.249643",
+      "last_checked": "2026-02-24T07:31:52.040579",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"a756e552817ac90f9716a8f95a080451\"",
       "file_path": "documentation/TipKit/tipuicollectionreusableview/backgroundstyle.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionreusableview/cornerradius.json": {
       "hash": "11475633ebf8c09c211f37e8c61428ba622821bc02345cb7b7479a64b24237ef",
-      "last_checked": "2026-02-20T17:42:14.456611",
+      "last_checked": "2026-02-24T07:31:52.193078",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"d35affe20e9dd01214a9a0decb2353ce\"",
       "file_path": "documentation/TipKit/tipuicollectionreusableview/cornerradius.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionreusableview/imagesize.json": {
       "hash": "f8b442ea6923d3147efd4e7f6e5fcd9ef251966a07e0b7d00be4ce8fb72475de",
-      "last_checked": "2026-02-20T17:42:14.642798",
+      "last_checked": "2026-02-24T07:31:52.378488",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"4664651acdf591eac79f946dcc1682c4\"",
       "file_path": "documentation/TipKit/tipuicollectionreusableview/imagesize.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionreusableview/imagestyle.json": {
       "hash": "b964be5b8c996e38c4b494c9b69bd5edd9ba4826fc2ce535db4f498dcc5a40bc",
-      "last_checked": "2026-02-20T17:42:14.842823",
+      "last_checked": "2026-02-24T07:31:52.563395",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"46981d2e52a3fefa7e7097c9d261490a\"",
       "file_path": "documentation/TipKit/tipuicollectionreusableview/imagestyle.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionreusableview/viewstyle.json": {
       "hash": "eb0a85ac97acc7547e535384d1c2f60e7eeacfd844c62f64b07b00f2432419f9",
-      "last_checked": "2026-02-20T17:42:15.079145",
+      "last_checked": "2026-02-24T07:31:52.719721",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"3d548ea6d979fa82c385babe32d72ea2\"",
       "file_path": "documentation/TipKit/tipuicollectionreusableview/viewstyle.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipuicollectionreusableview/configuretip(_:arrowedge:actionhandler:).json": {
       "hash": "a76a71fe9d7c0aa8f9756d012c8f7f98ffda0ccfa1dea50b280aa55b7bd5bca8",
-      "last_checked": "2026-02-20T17:42:15.276213",
+      "last_checked": "2026-02-24T07:31:52.842411",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"c5887cc401aac2ff5bd57ea80c11c29c\"",
       "file_path": "documentation/TipKit/tipuicollectionreusableview/configuretip-arrowedgeactionhandler.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipnsview/init(_:arrowedge:actionhandler:).json": {
       "hash": "75bd8ab80d95ead36472930342e7513a6d845e940a7702cc43d866cc9e366235",
-      "last_checked": "2026-02-20T17:42:15.511358",
+      "last_checked": "2026-02-24T07:31:53.006552",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"0a7b500fce2c9a2db0d8ae8aafa66fba\"",
       "file_path": "documentation/TipKit/tipnsview/init-arrowedgeactionhandler.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipnsview/backgroundcolor.json": {
       "hash": "b997179d1fe433f58d65e0de1def9addad05e155e203e9407724c4306d57e178",
-      "last_checked": "2026-02-20T17:42:15.703806",
+      "last_checked": "2026-02-24T07:31:53.133003",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"248ab37ba7bcfb12f65b42a621bc31ce\"",
       "file_path": "documentation/TipKit/tipnsview/backgroundcolor.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipnsview/backgroundstyle.json": {
       "hash": "41d23cdd2f60b48bf75080c9b29a86376ffea345180091760fb081efade6fc67",
-      "last_checked": "2026-02-20T17:42:15.916446",
+      "last_checked": "2026-02-24T07:31:53.317746",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"327fff96f03aa0f1fde8ecc68852cac2\"",
       "file_path": "documentation/TipKit/tipnsview/backgroundstyle.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipnsview/cornerradius.json": {
       "hash": "8c87d32c6039758ac8c97f38a7fa086439ced15dcaf562a0d6c09bd81a23da99",
-      "last_checked": "2026-02-20T17:42:16.110248",
+      "last_checked": "2026-02-24T07:31:53.498351",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"f85c16d158b47d599608d335d86085f9\"",
       "file_path": "documentation/TipKit/tipnsview/cornerradius.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipnsview/imagesize.json": {
       "hash": "caf1f51cd4e77605d9cba645830ba0485791fd6356d9aa7a45649eaab5585ee6",
-      "last_checked": "2026-02-20T17:42:16.334070",
+      "last_checked": "2026-02-24T07:31:53.628395",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"6c2d180904f38ecfebe203112d21c174\"",
       "file_path": "documentation/TipKit/tipnsview/imagesize.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipnsview/imagestyle.json": {
       "hash": "b7323fe57cc9f53b63ea1ba8c61d7e52922328e3454ce9c3462773b45f4fd1af",
-      "last_checked": "2026-02-20T17:42:16.535424",
+      "last_checked": "2026-02-24T07:31:53.751145",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"3ffb7e40c491572d9589be9645ccb996\"",
       "file_path": "documentation/TipKit/tipnsview/imagestyle.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipnsview/viewstyle.json": {
       "hash": "d9dea22d38e57686e682b20ac1161a1f5361037001e3c9ef8358de9c4125bc6d",
-      "last_checked": "2026-02-20T17:42:16.712494",
+      "last_checked": "2026-02-24T07:31:53.883904",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"e601da25a8eb0a4d34237b3cef73b8aa\"",
       "file_path": "documentation/TipKit/tipnsview/viewstyle.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipnspopover/init(_:delegate:actionhandler:).json": {
       "hash": "68a24819d691516659d7374d9fdc17d24e0fd364ab5795db5298b84091beb201",
-      "last_checked": "2026-02-20T17:42:16.913011",
+      "last_checked": "2026-02-24T07:31:54.016192",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"3761fac31e9daa05087fab53b5b11b6d\"",
       "file_path": "documentation/TipKit/tipnspopover/init-delegateactionhandler.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipnspopover/backgroundcolor.json": {
       "hash": "df338fc159cdb5917807d7ec179a0fef13657e1442ae290efdf3bc0bb265fa03",
-      "last_checked": "2026-02-20T17:42:17.080786",
+      "last_checked": "2026-02-24T07:31:54.140105",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"9233750a0eede9c384cf94ce35526af1\"",
       "file_path": "documentation/TipKit/tipnspopover/backgroundcolor.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipnspopover/backgroundstyle.json": {
       "hash": "8fd6be9b013f1a941020c304183f66ff2f91c3fe7f692a0a5b0ac3dd982461d1",
-      "last_checked": "2026-02-20T17:42:17.263154",
+      "last_checked": "2026-02-24T07:31:54.312450",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"4b4e316d6a63871ded5952bcb08f2d73\"",
       "file_path": "documentation/TipKit/tipnspopover/backgroundstyle.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipnspopover/cornerradius.json": {
       "hash": "31a741d31a9afc41480e8d2d6a12bea0d7b7423c566be8aca7e6ff871598b109",
-      "last_checked": "2026-02-20T17:42:17.431678",
+      "last_checked": "2026-02-24T07:31:54.443684",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"4b9fe4bacb061bbe19693ca1befe620d\"",
       "file_path": "documentation/TipKit/tipnspopover/cornerradius.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipnspopover/imagesize.json": {
       "hash": "e317eeb76217213c15fbb30656390d3303d5931aa0932a514a7a5984505350a0",
-      "last_checked": "2026-02-20T17:42:17.599650",
+      "last_checked": "2026-02-24T07:31:54.605231",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"13132a0a1dc860618c1682eedc1224ce\"",
       "file_path": "documentation/TipKit/tipnspopover/imagesize.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipnspopover/imagestyle.json": {
       "hash": "3c4cf4185f9f9a21941eed9e8ae4127700a9a769f0c82584ef58d8b9518e817c",
-      "last_checked": "2026-02-20T17:42:17.768893",
+      "last_checked": "2026-02-24T07:31:54.726215",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"2616d3a394d3e061f7394c0c3100f046\"",
       "file_path": "documentation/TipKit/tipnspopover/imagestyle.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipnspopover/viewstyle.json": {
       "hash": "a4fa02004ff2b63def95580190ea255ca7b5eb0630a0f1c6ae93bf00474fb25e",
-      "last_checked": "2026-02-20T17:42:17.941842",
+      "last_checked": "2026-02-24T07:31:54.888740",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"ab9a32713caf6b9eb9322c20bc153327\"",
       "file_path": "documentation/TipKit/tipnspopover/viewstyle.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/rule/compoundoperation.json": {
       "hash": "574aaccebee34e6b6490963c9a79638d07a26cb48330bb3cfd5083f5505f5204",
-      "last_checked": "2026-02-20T17:42:18.121937",
+      "last_checked": "2026-02-24T07:31:55.161511",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"efe1092e021b5cc0f76f1f0a7cc74e8e\"",
       "file_path": "documentation/TipKit/tips/rule/compoundoperation.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/parameteroption/transient.json": {
       "hash": "4330e6b1e6b77070d056ca094e2c3c6829286fa3dd2db93fb39b805e7875dc9c",
-      "last_checked": "2026-02-20T17:42:18.268620",
+      "last_checked": "2026-02-24T07:31:55.280411",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"b848ddb967237227209aeda7b0d65acf\"",
       "file_path": "documentation/TipKit/tips/parameteroption/transient.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/event/init(id:)-99edo.json": {
       "hash": "15eded44e183cc3a39af6c90847814ee0241e4975b5fe65c21d538234b6a1e89",
-      "last_checked": "2026-02-20T17:42:18.406579",
+      "last_checked": "2026-02-24T07:31:55.411836",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"a939a37aebd81eadda73b56e161e633b\"",
       "file_path": "documentation/TipKit/tips/event/init-id-99edo.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/event/init(id:donationlimit:)-7tgi1.json": {
       "hash": "f39e5fcfe1ccbea318f2f0db95078450fb2b54a5f5e52027bb72a361bf4564dc",
-      "last_checked": "2026-02-20T17:42:18.595446",
+      "last_checked": "2026-02-24T07:31:55.547977",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"aa63f0393ad2009d474cfc3eea46fb0a\"",
       "file_path": "documentation/TipKit/tips/event/init-iddonationlimit-7tgi1.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/event/init(id:)-3edd4.json": {
       "hash": "148c406a18450fa2f9323aad7ee6fdcfaff9fa46be62f74b628b4206a087ca2f",
-      "last_checked": "2026-02-20T17:42:18.769959",
+      "last_checked": "2026-02-24T07:31:55.699581",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"087d8a899177f2677eec75e67e4a6c2c\"",
       "file_path": "documentation/TipKit/tips/event/init-id-3edd4.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/event/init(id:donationlimit:)-1d1hy.json": {
       "hash": "77aa243baa1abc0a29cf756094893f733751e0aeaa781c9da39a6928f4c2c1fa",
-      "last_checked": "2026-02-20T17:42:18.942449",
+      "last_checked": "2026-02-24T07:31:55.827547",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"bc6e0674da438108074b3ba798ddc5a3\"",
       "file_path": "documentation/TipKit/tips/event/init-iddonationlimit-1d1hy.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/event/donation.json": {
       "hash": "9fb53526c4d4a066ef77490bb480bb39d2bac892fb87bb673d922d47d958e1d6",
-      "last_checked": "2026-02-20T17:42:19.151929",
+      "last_checked": "2026-02-24T07:31:55.957026",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"441914f007615991dd7cef63db017725\"",
       "file_path": "documentation/TipKit/tips/event/donation.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/event/donations.json": {
       "hash": "4cdc854e7f15b605efb764e65c83ae509f95bcef4f5eae904ee8307eaf15afbc",
-      "last_checked": "2026-02-20T17:42:19.331666",
+      "last_checked": "2026-02-24T07:31:56.075622",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"7b5f8630400d3044c108f4c5103da38f\"",
       "file_path": "documentation/TipKit/tips/event/donations.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/event/donate().json": {
       "hash": "6254119e842a829a13d2368bf79a861af47d6d266696afc4186c3cdfe2465003",
-      "last_checked": "2026-02-20T17:42:19.491023",
+      "last_checked": "2026-02-24T07:31:56.217204",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"1fd104f3586eb104726db9c5eef685bc\"",
       "file_path": "documentation/TipKit/tips/event/donate.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/event/donate(_:).json": {
       "hash": "cd6e8b1e643b250ae33d7b964f8fac81f404ae11eaffe883095dec5b1673b729",
-      "last_checked": "2026-02-20T17:42:19.641607",
+      "last_checked": "2026-02-24T07:31:56.376335",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"b62029d125d388866d7af976cdc6e1b9\"",
       "file_path": "documentation/TipKit/tips/event/donate.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/event/senddonation(_:).json": {
       "hash": "dc9f093f903ed16e3c320df75162ab1e4e68c4a100c7ce9cba2038693386c2c7",
-      "last_checked": "2026-02-20T17:42:19.785224",
+      "last_checked": "2026-02-24T07:31:56.516252",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"70029a0b9b5a512a83aee8ca3a9565a1\"",
       "file_path": "documentation/TipKit/tips/event/senddonation.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/event/senddonation(_:_:).json": {
       "hash": "6e095db0581de1e46e37105bd1f54dd8f10c842f6d55a9204a0075e9c26cfc32",
-      "last_checked": "2026-02-20T17:42:19.987811",
+      "last_checked": "2026-02-24T07:31:56.647907",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"a4582ca2deba23e5d82a03d8431685cd\"",
       "file_path": "documentation/TipKit/tips/event/senddonation.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/event/deletedonations().json": {
       "hash": "b92edfaac1f07678838eb31d9ec101f96bab9f00248618aac23e645675a0dd5b",
-      "last_checked": "2026-02-20T17:42:20.127433",
+      "last_checked": "2026-02-24T07:31:56.771922",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"32d0c519dd182652b38a0287f7fdc0ad\"",
       "file_path": "documentation/TipKit/tips/event/deletedonations.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipviewstyle/body.json": {
       "hash": "2238295fb4ae905470d5190b7976aa5f15ecb663f289d92ee656b96b793f2e93",
-      "last_checked": "2026-02-20T17:42:20.283375",
+      "last_checked": "2026-02-24T07:31:56.882425",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"29d14208a0964ea56bff210afddadc0b\"",
       "file_path": "documentation/TipKit/tipviewstyle/body.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipviewstyle/makebody(configuration:).json": {
       "hash": "6e991a290a8e328da282409f471498414c4e5cbcd878cb986867e6b22ebff62a",
-      "last_checked": "2026-02-20T17:42:20.423097",
+      "last_checked": "2026-02-24T07:31:57.021990",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"6c79a3e586e2177d8f59e01472761c08\"",
       "file_path": "documentation/TipKit/tipviewstyle/makebody-configuration.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipviewstyle/configuration.json": {
       "hash": "84b447fa3b93c501b20c840a3153aa872b302978b6f235ca7db65c1bccb3d235",
-      "last_checked": "2026-02-20T17:42:20.589669",
+      "last_checked": "2026-02-24T07:31:57.140360",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"dbdc06e3d1a338e7f0c92c294a0eac12\"",
       "file_path": "documentation/TipKit/tipviewstyle/configuration.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipviewstyle/minitip.json": {
       "hash": "3fef087d8ef3a2aa2060296a1c0ac59f49bb729cdf901f4de69a9715450f8194",
-      "last_checked": "2026-02-20T17:42:20.720023",
+      "last_checked": "2026-02-24T07:31:57.275091",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"ea6b7a4d47484ca02d9b16ea6f3bdf4b\"",
       "file_path": "documentation/TipKit/tipviewstyle/minitip.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipviewstyleconfiguration/actions.json": {
       "hash": "8eef62b2c952edc0e3f464fe09d715628da6247ee42e3f2975edaefce7cc6366",
-      "last_checked": "2026-02-20T17:42:20.884942",
+      "last_checked": "2026-02-24T07:31:57.403275",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"31111bde53491157fd3eade1d97174fc\"",
       "file_path": "documentation/TipKit/tipviewstyleconfiguration/actions.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipviewstyleconfiguration/image.json": {
       "hash": "662407746542bf6da24cb47ff1088df8bfd4cba5dfc52b5811f80e30d8bc8edf",
-      "last_checked": "2026-02-20T17:42:21.049604",
+      "last_checked": "2026-02-24T07:31:57.514741",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"0a7e8686446027a42f3aa7caf87480fa\"",
       "file_path": "documentation/TipKit/tipviewstyleconfiguration/image.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipviewstyleconfiguration/message.json": {
       "hash": "575c16e904aac3f0915b4eeb587a84b2141d0795a4ed4f9cb87353abfb0fd4b7",
-      "last_checked": "2026-02-20T17:42:21.241980",
+      "last_checked": "2026-02-24T07:31:57.642273",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"5086357ac05ec2feabc8929cd2696cd8\"",
       "file_path": "documentation/TipKit/tipviewstyleconfiguration/message.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipviewstyleconfiguration/tip.json": {
       "hash": "8af5063a517db201eda12c65806d6e9a763f36f10d751d830143efac15036b0a",
-      "last_checked": "2026-02-20T17:42:21.439318",
+      "last_checked": "2026-02-24T07:31:57.785045",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"09166dc06517bf406798bbb9ac98f12e\"",
       "file_path": "documentation/TipKit/tipviewstyleconfiguration/tip.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipviewstyleconfiguration/title.json": {
       "hash": "f1aed1d09afdf27663fe277b9c0ff5782cb0b8c0c7ee2e68e232c54144682081",
-      "last_checked": "2026-02-20T17:42:21.578358",
+      "last_checked": "2026-02-24T07:31:57.979111",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"b87de3170983ed5a99265510ea0985c7\"",
       "file_path": "documentation/TipKit/tipviewstyleconfiguration/title.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipkiterror/description.json": {
       "hash": "b62dabb9bb6e755b0727a11be861ffa9b8d2d7650765cd54299926e9f3e59ead",
-      "last_checked": "2026-02-20T17:42:21.809422",
+      "last_checked": "2026-02-24T07:31:58.169548",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"07ae0fc7e760ed9a7f4bfd3c3676b00a\"",
       "file_path": "documentation/TipKit/tipkiterror/description.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipkiterror/invalidpredicatevaluetype.json": {
       "hash": "be82b58b5d7cecf5f302d93f3906d5a806ddefb65558d41fd66edbef443b21fe",
-      "last_checked": "2026-02-20T17:42:21.979324",
+      "last_checked": "2026-02-24T07:31:58.285659",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"ff69f4029674e1375ec1b7a53b795226\"",
       "file_path": "documentation/TipKit/tipkiterror/invalidpredicatevaluetype.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipkiterror/missinggroupcontainerentitlements.json": {
       "hash": "550ccf9484a2119361e39c0ba1361afa5f1d84b6994401069d8a3840c8094e26",
-      "last_checked": "2026-02-20T17:42:22.133500",
+      "last_checked": "2026-02-24T07:31:58.416241",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"dcac3741e580a2b491efccafbfcb4633\"",
       "file_path": "documentation/TipKit/tipkiterror/missinggroupcontainerentitlements.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipkiterror/tipsdatastorealreadyconfigured.json": {
       "hash": "4bd5cdb1c2e2f26c11302bd3223f61b650843f257a6b856aaa9563a8a9d67721",
-      "last_checked": "2026-02-20T17:42:22.310264",
+      "last_checked": "2026-02-24T07:31:58.572973",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"c0959cf1f93facd4860116a8ea1805c9\"",
       "file_path": "documentation/TipKit/tipkiterror/tipsdatastorealreadyconfigured.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/ignoresdisplayfrequency.json": {
       "hash": "ed62583fae8121ccb12238bf7109a0b27b9c18c6ea33a18043227bc19081ba6a",
-      "last_checked": "2026-02-20T17:42:22.464397",
+      "last_checked": "2026-02-24T07:31:58.694095",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"a80e259bc2d3930d7cb57e3a7e648f62\"",
       "file_path": "documentation/TipKit/tips/ignoresdisplayfrequency.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/maxdisplaycount.json": {
       "hash": "f8acb8b66e009ef9a7791c49562e0e00720dd4c752cd57e1ecd51d81e8ed6b96",
-      "last_checked": "2026-02-20T17:42:22.639345",
+      "last_checked": "2026-02-24T07:31:58.826904",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"4bbfc66f1e78be2a419dbdef6b87ddfa\"",
       "file_path": "documentation/TipKit/tips/maxdisplaycount.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/maxdisplayduration.json": {
       "hash": "cb7fb1145122b075b9278e8a2b56a7b88d1638bb44852931c00d15c0d1ff12da",
-      "last_checked": "2026-02-20T17:42:22.799007",
+      "last_checked": "2026-02-24T07:31:59.002437",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"e911e201e8d72e0948240f4a1f5afde1\"",
       "file_path": "documentation/TipKit/tips/maxdisplayduration.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption.json": {
       "hash": "44d9c9e16ad94c90b32ffa824f2482a3f8e06c26a7563367f81df82bf26e31c0",
-      "last_checked": "2026-02-20T17:42:22.959760",
+      "last_checked": "2026-02-24T07:31:59.139692",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"b639e20630b0210fdcb5439dd84baed9\"",
       "file_path": "documentation/TipKit/tips/configurationoption.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/action.json": {
       "hash": "840560f82de79c77f7b6ebbf1126e2d79d435a788a1f63ab79c5a73ee42ed821",
-      "last_checked": "2026-02-20T17:42:23.117393",
+      "last_checked": "2026-02-24T07:31:59.284986",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"570e21c42f2425d6dcb129df30da2239\"",
       "file_path": "documentation/TipKit/tips/action.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/donationtimerange.json": {
       "hash": "61de6796295fc6b2e391d85861c8c2f24ec1cc809659ea0c15aa0dafba684185",
-      "last_checked": "2026-02-20T17:42:23.271362",
+      "last_checked": "2026-02-24T07:31:59.445563",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"fc28864c725053084854c792144fc8e4\"",
       "file_path": "documentation/TipKit/tips/donationtimerange.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/donationlimit.json": {
       "hash": "7f7792e0d5b43fe56997f1bdd067089d622deb17c3c143346a5d3260c7cd2de7",
-      "last_checked": "2026-02-20T17:42:23.423574",
+      "last_checked": "2026-02-24T07:31:59.599090",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"d4c75e9229652d21d224beef9825a75a\"",
       "file_path": "documentation/TipKit/tips/donationlimit.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/emptydonation.json": {
       "hash": "3f57efc8f9032baa9d9115ac0a050a1267351f5bf0f77ce20fc9081ef7ad51e2",
-      "last_checked": "2026-02-20T17:42:23.561191",
+      "last_checked": "2026-02-24T07:31:59.709163",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"4a7bdb5e2bada5e284b7b29a87c10e88\"",
       "file_path": "documentation/TipKit/tips/emptydonation.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/parameteroption.json": {
       "hash": "2bca8b23d318631635944ed5f903fea52ad6f742bfed3fc1b72712b4403a7f31",
-      "last_checked": "2026-02-20T17:42:23.719230",
+      "last_checked": "2026-02-24T07:31:59.861139",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"2eefe8653037717adc4cc0c4d56a0885\"",
       "file_path": "documentation/TipKit/tips/parameteroption.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/status.json": {
       "hash": "94d228c44f82fb258bc7ecc7ff0dba9a04e57a0ccf0a78cf827e12fad358bdb2",
-      "last_checked": "2026-02-20T17:42:23.876552",
+      "last_checked": "2026-02-24T07:32:00.028890",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"c52f668e37a560e71bceb662086925f1\"",
       "file_path": "documentation/TipKit/tips/status.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/invalidationreason.json": {
       "hash": "e4a596c8d8265179e2ce4c6d044452f619095535bc2db03fb2b54905c6dcb188",
-      "last_checked": "2026-02-20T17:42:24.082084",
+      "last_checked": "2026-02-24T07:32:00.238066",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"7474fe7b5f8815345347a619338946cc\"",
       "file_path": "documentation/TipKit/tips/invalidationreason.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/action/init(id:perform:_:).json": {
       "hash": "6d8a4e9da102665616b94604326a52de26f47a5625d7a8a0a87c279d1d771fc4",
-      "last_checked": "2026-02-20T17:42:24.258242",
+      "last_checked": "2026-02-24T07:32:00.359106",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"1152dbf4ebe4ee199dde92806b1dbbe7\"",
       "file_path": "documentation/TipKit/tips/action/init-idperform.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/action/init(id:title:perform:).json": {
       "hash": "8222c8e0b7a96498a7abddf284e588b5ff063d23c9965e23824eda8d10e123f6",
-      "last_checked": "2026-02-20T17:42:24.406981",
+      "last_checked": "2026-02-24T07:32:00.488104",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"383099cd869353bc98bf04f40f679d3f\"",
       "file_path": "documentation/TipKit/tips/action/init-idtitleperform.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipgroup/priority/firstavailable.json": {
       "hash": "35e6383e0c2031852f82db7de000949835a57046fb4b1b9d0a1955825428f850",
-      "last_checked": "2026-02-20T17:42:24.554048",
+      "last_checked": "2026-02-24T07:32:00.616389",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"b100a413f1f27e921153dcd29508dce2\"",
       "file_path": "documentation/TipKit/tipgroup/priority/firstavailable.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipgroup/priority/ordered.json": {
       "hash": "c31166aa9e00b90f34164822df4d47777bae513547cfb6abfdb3e0f285171928",
-      "last_checked": "2026-02-20T17:42:24.748765",
+      "last_checked": "2026-02-24T07:32:00.792656",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"1a43b5815acf3669b0fa19145d4488d5\"",
       "file_path": "documentation/TipKit/tipgroup/priority/ordered.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/rule/compoundoperation/conjunction.json": {
       "hash": "615518d92232ba5aba9ceb00a9406161036a4d747384edfb338be7489c0911b5",
-      "last_checked": "2026-02-20T17:42:24.897900",
+      "last_checked": "2026-02-24T07:32:00.908267",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"38c38ba03ab1f2b4299edb50762dd583\"",
       "file_path": "documentation/TipKit/tips/rule/compoundoperation/conjunction.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/rule/compoundoperation/disjunction.json": {
       "hash": "01085e6de0138526a6b43a2e171dba44d5e1bc0030e54761a0b6bd00db6c642a",
-      "last_checked": "2026-02-20T17:42:25.043242",
+      "last_checked": "2026-02-24T07:32:01.033416",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"ae5dc5a74143710a9c7ad1bd4681ec75\"",
       "file_path": "documentation/TipKit/tips/rule/compoundoperation/disjunction.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/event/donation/date.json": {
       "hash": "e7c82bbaff06c19bffdff3de7e4f221c1d7cc188f4459bd131ea7b8ca964dab4",
-      "last_checked": "2026-02-20T17:42:25.193973",
+      "last_checked": "2026-02-24T07:32:01.151603",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"d5f0c78cd8228b9f8107c1423cb10847\"",
       "file_path": "documentation/TipKit/tips/event/donation/date.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/event/donation/subscript(dynamicmember:).json": {
       "hash": "c39f29e61882592835fb23ec879ea11a4ab597908ad7a35407dd6c56ef9d1da5",
-      "last_checked": "2026-02-20T17:42:25.344803",
+      "last_checked": "2026-02-24T07:32:01.286660",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"67c745c392cef27a919b794a920de185\"",
       "file_path": "documentation/TipKit/tips/event/donation/subscript-dynamicmember.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/ignoresdisplayfrequency/init(_:).json": {
       "hash": "c99244a7620da013129f4c5a67c9f2c72c18256ff18edb784a05c776bf3d49d4",
-      "last_checked": "2026-02-20T17:42:25.500983",
+      "last_checked": "2026-02-24T07:32:01.409597",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"867ebb1f145c57b9f62ad083e040687a\"",
       "file_path": "documentation/TipKit/tips/ignoresdisplayfrequency/init.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/maxdisplaycount/init(_:).json": {
       "hash": "cdeb7187b2e688a75a0c963de1eaf4ae84c31ccbe3ee48df795b4a01c6600d7e",
-      "last_checked": "2026-02-20T17:42:25.659857",
+      "last_checked": "2026-02-24T07:32:01.522876",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"711ce737fdfdd5ea7e04236a6567f6a0\"",
       "file_path": "documentation/TipKit/tips/maxdisplaycount/init.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/maxdisplayduration/init(_:).json": {
       "hash": "2c7bc7b3e6299e6de0efa6a05bc230bd01e520726d193c709dc036b5f3910cd1",
-      "last_checked": "2026-02-20T17:42:25.813237",
+      "last_checked": "2026-02-24T07:32:01.680379",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"da51c2c074435953030b5a3bd70bb7f2\"",
       "file_path": "documentation/TipKit/tips/maxdisplayduration/init.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption/cloudkitcontainer.json": {
       "hash": "88dadc4ad8e696d2b8c4b68f81e3f0ebdc13c5e1fcff2937aee9bfa7410ed221",
-      "last_checked": "2026-02-20T17:42:25.970212",
+      "last_checked": "2026-02-24T07:32:01.818648",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"6c23134216edd203147a125ffcef3b1b\"",
       "file_path": "documentation/TipKit/tips/configurationoption/cloudkitcontainer.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption/datastorelocation.json": {
       "hash": "54be0a8902985f4e580379aa8038b18534f06dc1a5e249ddd6f21adfa09e26c4",
-      "last_checked": "2026-02-20T17:42:26.143953",
+      "last_checked": "2026-02-24T07:32:02.008209",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"19af7afc19a2b09865b49de3f016b286\"",
       "file_path": "documentation/TipKit/tips/configurationoption/datastorelocation.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption/displayfrequency.json": {
       "hash": "60662f0a7dcaef423d4df0fa66a38689fdc445a4e329b365d2eff861d1677cc0",
-      "last_checked": "2026-02-20T17:42:26.306352",
+      "last_checked": "2026-02-24T07:32:02.128885",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"d2678ba405ad066e81a840334fa74d30\"",
       "file_path": "documentation/TipKit/tips/configurationoption/displayfrequency.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/action/handler.json": {
       "hash": "5a790ab0547e87f625eeac8e988368a5c29e01badba64b478d54c17703d8124f",
-      "last_checked": "2026-02-20T17:42:26.467918",
+      "last_checked": "2026-02-24T07:32:02.240978",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"2cc2e45839bce293714db285eb1607ff\"",
       "file_path": "documentation/TipKit/tips/action/handler.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/action/id.json": {
       "hash": "49e1fe7d0ab5bc1e441a4e27dea2cfcfeb5af082ddc6ba23545d18185cf6370d",
-      "last_checked": "2026-02-20T17:42:26.623219",
+      "last_checked": "2026-02-24T07:32:02.378418",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"22b0ebbf36ede3e2b63c975f29bb49bd\"",
       "file_path": "documentation/TipKit/tips/action/id.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/action/index.json": {
       "hash": "397a617afe88d7273101d5f4c415f89c6756fa857042d881267ae482cc054f94",
-      "last_checked": "2026-02-20T17:42:26.762220",
+      "last_checked": "2026-02-24T07:32:02.511760",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"63443d16d642e88819c9f094cf5e6948\"",
       "file_path": "documentation/TipKit/tips/action/index.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/action/label.json": {
       "hash": "2a292c5b46f6ceeb19e5fc9fab83e1334ece3ff00a76ce2bb165c0ea6c2bd904",
-      "last_checked": "2026-02-20T17:42:26.908606",
+      "last_checked": "2026-02-24T07:32:02.631967",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"0d334ac3d88ca9b8fd3e63328138a4c8\"",
       "file_path": "documentation/TipKit/tips/action/label.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/donationtimerange/day.json": {
       "hash": "9ee66b6fda6d1fa597525c994c8d269a2d18b1df3fe8b8bd9eae983e7dc5502a",
-      "last_checked": "2026-02-20T17:42:27.064903",
+      "last_checked": "2026-02-24T07:32:02.747484",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"fca674f93b2abcc8827044272a3ecf82\"",
       "file_path": "documentation/TipKit/tips/donationtimerange/day.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/donationtimerange/hour.json": {
       "hash": "bad11a1ee82d0a46bb1f5da92cce0135437b2062f19eed1f97f2e6dd8aa9478e",
-      "last_checked": "2026-02-20T17:42:27.256053",
+      "last_checked": "2026-02-24T07:32:02.891165",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"33d573d5e3450e1dbd97a23b005fc259\"",
       "file_path": "documentation/TipKit/tips/donationtimerange/hour.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/donationtimerange/minute.json": {
       "hash": "49b65b6a5326e630ff79c70996ca2233702087851ffc15af28eb9352528c7f91",
-      "last_checked": "2026-02-20T17:42:27.401930",
+      "last_checked": "2026-02-24T07:32:03.034183",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"367d5f10fb7229e6714e34f025fad7d2\"",
       "file_path": "documentation/TipKit/tips/donationtimerange/minute.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/donationtimerange/week.json": {
       "hash": "e6abccac58a99d46d4160bdef604125874a6cde4e58a5a913ed5b35871b1866f",
-      "last_checked": "2026-02-20T17:42:27.538411",
+      "last_checked": "2026-02-24T07:32:03.172634",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"27137a3463d0e8dcc6ee8cd7505988d2\"",
       "file_path": "documentation/TipKit/tips/donationtimerange/week.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/donationtimerange/days(_:).json": {
       "hash": "11516b79f25dd00484f5168ddaf01c05193283bbf36c29c664dc1bb190eb56f3",
-      "last_checked": "2026-02-20T17:42:27.669210",
+      "last_checked": "2026-02-24T07:32:03.354155",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"e4b829d3097668588b29b000e72d412b\"",
       "file_path": "documentation/TipKit/tips/donationtimerange/days.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/donationtimerange/hours(_:).json": {
       "hash": "eec270d8ffe03ab76caa5dab46bcdbf027c3b1e152458d4c6a130ea632fb564c",
-      "last_checked": "2026-02-20T17:42:27.811182",
+      "last_checked": "2026-02-24T07:32:03.534764",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"2738ec74ed1095e844abc0d4a90641ee\"",
       "file_path": "documentation/TipKit/tips/donationtimerange/hours.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/donationtimerange/minutes(_:).json": {
       "hash": "fc9c6d5c2c7c2a5a2f9e4aa6a6e68802ba0fb75fa0afadf5bf104c5eeed2c066",
-      "last_checked": "2026-02-20T17:42:27.973548",
+      "last_checked": "2026-02-24T07:32:03.648897",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"5c9483d00a57a4c50ff47b72062ef66a\"",
       "file_path": "documentation/TipKit/tips/donationtimerange/minutes.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/donationtimerange/weeks(_:).json": {
       "hash": "f2d8e53aed2649aaa3f775958be876f3e6591afaa563000e40b40704553d9d68",
-      "last_checked": "2026-02-20T17:42:28.120364",
+      "last_checked": "2026-02-24T07:32:03.835901",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"180d12f05c0559bdc60d754ee7bbd117\"",
       "file_path": "documentation/TipKit/tips/donationtimerange/weeks.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/donationlimit/init(maximumcount:maximumage:).json": {
       "hash": "6cd18ec8bfc65cbd5f0d583b5de2b8940beaafc0c57b60aaec9a545ea1e0aa8f",
-      "last_checked": "2026-02-20T17:42:28.259631",
+      "last_checked": "2026-02-24T07:32:03.976055",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"39077447532f23e93516f68c72fdf7b2\"",
       "file_path": "documentation/TipKit/tips/donationlimit/init-maximumcountmaximumage.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/donationlimit/maximumage.json": {
       "hash": "ffd3bd8d181cdb408b542402dc0f078ccb49b6ea4303b91c838861a83b2ceb32",
-      "last_checked": "2026-02-20T17:42:28.434591",
+      "last_checked": "2026-02-24T07:32:04.114941",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"83d8489ccf2742930f21a1a0a0d1dc0c\"",
       "file_path": "documentation/TipKit/tips/donationlimit/maximumage.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/donationlimit/maximumcount.json": {
       "hash": "e596d0bce2ab6d5cea8715a279d20c49102f7e373a17e5ae67c54f01791d0e57",
-      "last_checked": "2026-02-20T17:42:28.588144",
+      "last_checked": "2026-02-24T07:32:04.245800",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"755f511ddfc52a0a4759736f94464383\"",
       "file_path": "documentation/TipKit/tips/donationlimit/maximumcount.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/status/available.json": {
       "hash": "1ba2438e5ee6c1dc3066ee1d91f2ea57aa1c30193fd732f7caf1094346a2615a",
-      "last_checked": "2026-02-20T17:42:28.786118",
+      "last_checked": "2026-02-24T07:32:04.433530",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"cd3799d04fe6e999fcfa21a28a9bf423\"",
       "file_path": "documentation/TipKit/tips/status/available.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/status/invalidated(_:).json": {
       "hash": "4bf77c77cf2afea984e1bbd93bd4fbae1729ec841fbceb99414c6ee428f14ba8",
-      "last_checked": "2026-02-20T17:42:29.044820",
+      "last_checked": "2026-02-24T07:32:04.577317",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"ea3c71800920d847bca9723a490d6df4\"",
       "file_path": "documentation/TipKit/tips/status/invalidated.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/status/pending.json": {
       "hash": "e7978c1e73e21cfbc28cdb6a65ae90669895853ed7a981633cf61d57cdd9ee4b",
-      "last_checked": "2026-02-20T17:42:29.211542",
+      "last_checked": "2026-02-24T07:32:04.717781",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"859ee8ddd69586216d465adbdcc10571\"",
       "file_path": "documentation/TipKit/tips/status/pending.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/invalidationreason/actionperformed.json": {
       "hash": "3ef8a057295faa3ec4328e5c1564f125f40e0313586cd7d34e137a10f1b36a2e",
-      "last_checked": "2026-02-20T17:42:29.363993",
+      "last_checked": "2026-02-24T07:32:04.874100",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"e03c8811d22fad854201e836f156d373\"",
       "file_path": "documentation/TipKit/tips/invalidationreason/actionperformed.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/invalidationreason/displaycountexceeded.json": {
       "hash": "33c8a279562fc3ab11b75f9b463e8833d94cd08c88c6d23cd12957eecde83808",
-      "last_checked": "2026-02-20T17:42:29.506696",
+      "last_checked": "2026-02-24T07:32:05.078906",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"c562bdacf8a03ad13da0d0cc85955a10\"",
       "file_path": "documentation/TipKit/tips/invalidationreason/displaycountexceeded.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/invalidationreason/displaydurationexceeded.json": {
       "hash": "c65ea7d7d547ad9304460649b36a50faf66a222d33f1e960772f60dba99ac24b",
-      "last_checked": "2026-02-20T17:42:29.670568",
+      "last_checked": "2026-02-24T07:32:05.215215",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"c709425ae0600b85a5bc81d46ddd6317\"",
       "file_path": "documentation/TipKit/tips/invalidationreason/displaydurationexceeded.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/invalidationreason/tipclosed.json": {
       "hash": "67ff3102b926acacd270ba6e2a5d72013aa1f53b7d2244d2c7d9cb68272ad125",
-      "last_checked": "2026-02-20T17:42:29.830490",
+      "last_checked": "2026-02-24T07:32:05.351960",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"e811a0cec3160754007b39b6c4cde6f9\"",
       "file_path": "documentation/TipKit/tips/invalidationreason/tipclosed.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption/cloudkitcontainer/automatic.json": {
       "hash": "a84aa83e13de7e1d624eac05cbe0c169b282733b9e94d9b84fdd1b371f455f71",
-      "last_checked": "2026-02-20T17:42:29.975738",
+      "last_checked": "2026-02-24T07:32:05.478447",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"75665a3cf3da998ffaa20ee2cbe77e31\"",
       "file_path": "documentation/TipKit/tips/configurationoption/cloudkitcontainer/automatic.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption/cloudkitcontainer/named(_:).json": {
       "hash": "5cd2ff492b6a3aeb0ab5ecd947ee5cbaea6f66bdf9cd5cc4586ab34afba51b19",
-      "last_checked": "2026-02-20T17:42:30.149997",
+      "last_checked": "2026-02-24T07:32:05.674538",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"5084a17c6b67a1ee9a0994f3acd71c0c\"",
       "file_path": "documentation/TipKit/tips/configurationoption/cloudkitcontainer/named.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption/datastorelocation/applicationdefault.json": {
       "hash": "49febefeb7db8c08305751e9ee932599c29930d06fb14a5b3f164527ae17fa7b",
-      "last_checked": "2026-02-20T17:42:30.323597",
+      "last_checked": "2026-02-24T07:32:05.796440",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"a4f7e77d9243a691f84aef838ff87b68\"",
       "file_path": "documentation/TipKit/tips/configurationoption/datastorelocation/applicationdefault.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption/datastorelocation/groupcontainer(identifier:).json": {
       "hash": "432adbc6a6becaeee6a2436a445220b50d91085e83ed0c7a671c505aa46bccfa",
-      "last_checked": "2026-02-20T17:42:30.545334",
+      "last_checked": "2026-02-24T07:32:05.933817",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"d3b7637098110e85219a9c16938d3654\"",
       "file_path": "documentation/TipKit/tips/configurationoption/datastorelocation/groupcontainer-identifier.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption/datastorelocation/url(_:).json": {
       "hash": "5e6c5782e3d585c16963b1ea3a9e191b6d113fa99aba49f0d2229bc6e5424ca3",
-      "last_checked": "2026-02-20T17:42:30.707662",
+      "last_checked": "2026-02-24T07:32:06.116033",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"9b7121b26523537dcaaf8a732c116895\"",
       "file_path": "documentation/TipKit/tips/configurationoption/datastorelocation/url.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption/displayfrequency/daily.json": {
       "hash": "3af1203bb5e4fd793d21f6d3c161a2ee579da75cfec1bc3fc5df1a84d16603b2",
-      "last_checked": "2026-02-20T17:42:30.868952",
+      "last_checked": "2026-02-24T07:32:06.238722",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"8491463638e0a404387308be296e33de\"",
       "file_path": "documentation/TipKit/tips/configurationoption/displayfrequency/daily.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption/displayfrequency/hourly.json": {
       "hash": "68676138ee4ea3c204222baaa3327e3d799953eee4925c5ac0f6765da811e198",
-      "last_checked": "2026-02-20T17:42:31.016837",
+      "last_checked": "2026-02-24T07:32:06.404737",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"687347a535fb27489c2c20c3baac084d\"",
       "file_path": "documentation/TipKit/tips/configurationoption/displayfrequency/hourly.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption/displayfrequency/immediate.json": {
       "hash": "def6c8f1bb36b6827f82eedc18a8181694dff145a70d9db8973912efa6632b6b",
-      "last_checked": "2026-02-20T17:42:31.188914",
+      "last_checked": "2026-02-24T07:32:06.589128",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"7e6bd734aebdd41e9fde6932abc2c938\"",
       "file_path": "documentation/TipKit/tips/configurationoption/displayfrequency/immediate.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption/displayfrequency/monthly.json": {
       "hash": "662936cc8b148be18fcab2542c85370d2f14020a53057fe7dbab8fb7721e639b",
-      "last_checked": "2026-02-20T17:42:31.325211",
+      "last_checked": "2026-02-24T07:32:06.718472",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"5e1d150b31cd1f8b1faf23a57a51ea5f\"",
       "file_path": "documentation/TipKit/tips/configurationoption/displayfrequency/monthly.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tips/configurationoption/displayfrequency/weekly.json": {
       "hash": "d6a27d4a9d51a01d0e37acdc152a2fbb2ff1f6c329b2befd44bd3592bffaf451",
-      "last_checked": "2026-02-20T17:42:31.467537",
+      "last_checked": "2026-02-24T07:32:06.856895",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"8b087c7ee9cf84348fb6d34279fc5920\"",
       "file_path": "documentation/TipKit/tips/configurationoption/displayfrequency/weekly.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipview/init(_:ispresented:arrowedge:action:).json": {
       "hash": "47844ef026dbe465e530105dfb449b1dffb87c9e34f6f5931765907e71c496eb",
-      "last_checked": "2026-02-20T17:42:08.069469",
+      "last_checked": "2026-02-24T07:31:47.230589",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"bb93fdbda1e3dd5da462deb2460b48aa\"",
       "file_path": "documentation/TipKit/tipview/init-ispresentedarrowedgeaction.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/tipview/init(_:ispresented:arrowedge:anchorid:action:).json": {
       "hash": "acc4ab718ed47fa320ab791569b1378c66b5e3aaceb131098a29d7db4dc8dbc2",
-      "last_checked": "2026-02-20T17:42:08.281949",
+      "last_checked": "2026-02-24T07:31:47.422228",
       "status": "unchanged",
-      "session_id": "2026-02-20T17:41:55.719175",
+      "session_id": "2026-02-24T07:31:34.939337",
       "etag": "W/\"7912b3b23562c43879ef52838d8185d6\"",
       "file_path": "documentation/TipKit/tipview/init-ispresentedarrowedgeanchoridaction.md"
     },

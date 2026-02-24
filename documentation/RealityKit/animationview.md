@@ -21,7 +21,7 @@ struct AnimationView
 
 #### Overview
 
-This structure creates a variation of an existing animation by overriding its configuration. The term  in the name signifies that the variation represents a new visual perspective of the existing animation.
+This structure creates a variation of an existing animation by overriding its configuration. The term *view* in the name signifies that the variation represents a new visual perspective of the existing animation.
 
 ##### Create a Clip of an Animation
 
@@ -55,7 +55,7 @@ myModelEntity.playAnimation(clipResource)
 
 ##### Define a View in Relation to the Animation Source
 
-The source animation’s timing properties define a  on which the [`trimDuration`](animationview/trimduration.md), [`delay`](animationview/delay.md), and [`speed`](animationview/speed.md) properties operate to derive the view. The [`trimDuration`](animationview/trimduration.md) property specifies which animation data the view displays. If [`trimDuration`](animationview/trimduration.md) exceeds the length of the source animation’s timeline, the animation plays according to the characteristics of [`repeatMode`](animationview/repeatmode.md). The [`delay`](animationview/delay.md) property defines a waiting period before the animation begins, and the [`speed`](animationview/speed.md) determines how fast the view plays in relation to the original pace.
+The source animation’s timing properties define a *timeline* on which the [`trimDuration`](animationview/trimduration.md), [`delay`](animationview/delay.md), and [`speed`](animationview/speed.md) properties operate to derive the view. The [`trimDuration`](animationview/trimduration.md) property specifies which animation data the view displays. If [`trimDuration`](animationview/trimduration.md) exceeds the length of the source animation’s timeline, the animation plays according to the characteristics of [`repeatMode`](animationview/repeatmode.md). The [`delay`](animationview/delay.md) property defines a waiting period before the animation begins, and the [`speed`](animationview/speed.md) determines how fast the view plays in relation to the original pace.
 
 ## Topics
 

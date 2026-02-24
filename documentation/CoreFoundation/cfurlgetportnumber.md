@@ -26,7 +26,7 @@ The port number of `anURL`, or `-1` if no port number exists.
 
 ## Parameters
 
-- `anURL`: The   object to examine.
+- `anURL`: The `CFURL` object to examine.
 
 ## See Also
 

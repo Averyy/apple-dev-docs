@@ -24,7 +24,7 @@ convenience init<OptionsProvider>(description: LocalizedStringResource? = nil, d
 
 - `description`: Additional details about this parameter.
 - `defaultValue`: The default value for this parameter. People can specify a different value.
-- `currencyCodes`: A list of selectable currency symbols for this parameter. Use ISO 4217 currency codes.   The default value is an empty array which offers all currency codes to a person.
+- `currencyCodes`: A list of selectable currency symbols for this parameter. Use ISO 4217 currency codes. The default value is an empty array which offers all currency codes to a person.
 - `inclusiveRange`: The allowed minimum and maximum values for this parameter.
 - `requestValueDialog`: A prompt that asks a person to provide the parameter value.
 - `inputConnectionBehavior`: An enum that indicates how this parameter receives the output from a preceding app intent.

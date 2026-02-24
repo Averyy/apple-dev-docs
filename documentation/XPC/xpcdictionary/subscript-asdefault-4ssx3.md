@@ -28,7 +28,7 @@ The value associated with key in the dictionary; otherwise, [`nil`](https://deve
 
 - `key`: The key the look up in the dictionary.
 - `type`: The expected type for the returned value.
-- `defaultValue`: The value to use if no value for   exists or if conversion to   fails.
+- `defaultValue`: The value to use if no value for `key` exists or if conversion to `type` fails.
 
 ## See Also
 

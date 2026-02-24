@@ -25,7 +25,7 @@ A result code if there’s an error (see Result Codes) or `noErr` if the operati
 
 #### Discussion
 
-In this function,  refers to:
+In this function, *user data* refers to:
 
 - Chunks in AIFF, CAF, and WAVE files
 - Resources in Sound Designer II files
@@ -34,7 +34,7 @@ In this function,  refers to:
 ## Parameters
 
 - `inAudioFile`: The audio file whose user data items are to be counted.
-- `inUserDataID`: The four-character code (such as  ) of the user data item.
+- `inUserDataID`: The four-character code (such as `COMM`) of the user data item.
 - `outNumberItems`: On output, a pointer to the number of user data items of this type in the file.
 
 ## See Also

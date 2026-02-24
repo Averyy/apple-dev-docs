@@ -23,7 +23,7 @@ Use this method to create a new critical message recipient. When delivering mess
 
 ## Parameters
 
-- `phoneNumber`: A phone number that conforms to the  , without any non-numeric characters such as parentheses, periods, dashes, or a plus character (+) that introduces a country code.
+- `phoneNumber`: A phone number that conforms to the [`E.164 — international public telecommunication numbering plan`](https://developer.apple.comhttps://www.itu.int/rec/T-REC-E.164-201011-I/en), without any non-numeric characters such as parentheses, periods, dashes, or a plus character (+) that introduces a country code.
 
 
 ---

@@ -63,7 +63,7 @@ This page is specific to the Developer Transition Kit. For additional macOS 11 c
 
 ###### Known Issues
 
-- You might experience difficulty adding a printer. (64512490)  Open `/System/Library/CoreServices/` in Finder and select the AddPrinter app. Choose Get Info from the File menu, then enable the “Open using Rosetta” option. Restart your Mac and try adding the printer again.
+- You might experience difficulty adding a printer. (64512490) **Workaround:** Open `/System/Library/CoreServices/` in Finder and select the AddPrinter app. Choose Get Info from the File menu, then enable the “Open using Rosetta” option. Restart your Mac and try adding the printer again.
 
 ##### Pro Display Xdr
 
@@ -75,7 +75,7 @@ This page is specific to the Developer Transition Kit. For additional macOS 11 c
 
 ###### Known Issues
 
-- You might receive a Download failed error when attempting to use Software Update. (65198213)  Download the full installer or the restore image instead of using Software Update.
+- You might receive a Download failed error when attempting to use Software Update. (65198213) **Workaround:** Download the full installer or the restore image instead of using Software Update.
 - A full installer update is required to update from macOS 11 Big Sur beta 5 to beta 7. Installing via Software Update is supported if your Developer Transition Kit is running beta 3, 4, or 6. (67997566)
 
 ###### New Features

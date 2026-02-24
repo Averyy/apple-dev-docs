@@ -23,7 +23,7 @@ Adds the specified list of entity as children to this entity.
 ## Parameters
 
 - `array`: The child entities to add to the collection.
-- `preservingWorldTransforms`:   to preserve the world transform.   to   preserve the relative transform. (Use   if the   entities should keep its effective location and size in   the scene!)
+- `preservingWorldTransforms`: `true` to preserve the world transform. `false` to preserve the relative transform. (Use `true` if the entities should keep its effective location and size in the scene!)
 
 
 ---

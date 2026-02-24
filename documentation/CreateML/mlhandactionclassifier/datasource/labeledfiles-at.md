@@ -29,7 +29,7 @@ In this example, a hand action classifier would have at least two class labels:
 
 ## Parameters
 
-- `at`: The URL to a folder in the file system that contains folders of hand action videos. The data source   uses each file’s name before the first period as its classification label.
+- `at`: The URL to a folder in the file system that contains folders of hand action videos. The data source uses each file’s name before the first period as its classification label.
 
 ## See Also
 

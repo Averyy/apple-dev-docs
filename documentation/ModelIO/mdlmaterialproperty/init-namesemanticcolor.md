@@ -29,8 +29,8 @@ A material property with a color value uses a uniform color for all pixels rende
 
 ## Parameters
 
-- `name`: A descriptive name for the material property. For details, see the   property.
-- `semantic`: The semantic meaning for the material property’s value. For details, see the   property.
+- `name`: A descriptive name for the material property. For details, see the [`name`](mdlmaterialproperty/name.md) property.
+- `semantic`: The semantic meaning for the material property’s value. For details, see the [`semantic`](mdlmaterialproperty/semantic.md) property.
 - `color`: The color value for the material property.
 
 ## See Also

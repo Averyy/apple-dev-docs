@@ -35,9 +35,9 @@ If [`usesLineFragmentOrigin`](https://developer.apple.com/documentation/UIKit/NS
 ## Parameters
 
 - `rect`: The bounding rectangle in which to draw the string.
-- `options`: Additional drawing options to apply to the string during rendering. For a list of possible values, see  .
-- `attributes`: The text attributes with which to draw the string. These are the same attributes that can be applied to an   object, but in the case of   objects, the attributes apply to the entire string, rather than ranges within the string.
-- `context`: A context object with information about how to adjust the font tracking and scaling information. On return, the specified object contains information about the actual values used to render the string. This parameter may be  .
+- `options`: Additional drawing options to apply to the string during rendering. For a list of possible values, see [`NSStringDrawingOptions`](https://developer.apple.com/documentation/UIKit/NSStringDrawingOptions).
+- `attributes`: The text attributes with which to draw the string. These are the same attributes that can be applied to an `NSAttributedString` object, but in the case of `NSString` objects, the attributes apply to the entire string, rather than ranges within the string.
+- `context`: A context object with information about how to adjust the font tracking and scaling information. On return, the specified object contains information about the actual values used to render the string. This parameter may be `nil`.
 
 ## See Also
 

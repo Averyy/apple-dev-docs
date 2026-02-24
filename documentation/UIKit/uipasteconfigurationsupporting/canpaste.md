@@ -23,7 +23,7 @@ optional func canPaste(_ itemProviders: [NSItemProvider]) -> Bool
 
 ## Parameters
 
-- `itemProviders`: An array of   objects.
+- `itemProviders`: An array of [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) objects.
 
 ## See Also
 

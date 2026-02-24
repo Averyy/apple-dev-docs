@@ -26,7 +26,7 @@ A new ordered set containing cnt objects from the list of objects specified by `
 
 ## Parameters
 
-- `objects`: If the same object appears more than once in objects, it is added only once to the returned ordered set. Each object receives a retain message as it is added to the set.
+- `objects`: A C array of objects to add to the new ordered set. If the same object appears more than once in objects, it is added only once to the returned ordered set. Each object receives a retain message as it is added to the set.
 - `cnt`: The number of objects from objects to add to the new set.
 
 ## See Also

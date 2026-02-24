@@ -28,7 +28,7 @@ Export a secret, e.g., a cryptographic key, derived from the protocol metadata u
 
 ## Parameters
 
-- `metadata`: A   instance.
+- `metadata`: A `sec_protocol_metadata_t` instance.
 - `label_len`: Length of the KDF label string.
 - `label`: KDF label string.
 - `exporter_length`: Length of the secret to be exported.

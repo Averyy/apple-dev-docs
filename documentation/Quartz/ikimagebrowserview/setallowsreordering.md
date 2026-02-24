@@ -16,7 +16,7 @@ func setAllowsReordering(_ flag: Bool)
 
 ## Parameters
 
-- `flag`: A   value that specifies whether the user can reorder items.
+- `flag`: A `BOOL` value that specifies whether the user can reorder items.
 
 ## See Also
 

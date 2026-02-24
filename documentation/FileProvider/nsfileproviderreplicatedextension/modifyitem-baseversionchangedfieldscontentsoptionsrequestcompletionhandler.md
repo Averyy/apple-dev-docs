@@ -34,7 +34,10 @@ The system calls this method when the user modifies an item—for example, movin
 - `newContents`: A URL for the local copy of the item’s new contents.
 - `options`: The modification options.
 - `request`: An object that identifies the context of that request, such as the requesting app.
-- `completionHandler`: A block that you call after uploading the changes to your remote storage. You pass the following parameters:
+- `completionHandler`: A block that you call after uploading the changes to your remote storage. You pass the following parameters: - **`item`**: The newly modified item.
+- **`stillPendingFields`**: Any fields that you haven’t yet applied. If you can apply all the fields at once, pass an empty `NSFileProviderItemField` instance.
+- **`shouldFetchContent`**: A Boolean value that indicates whether the system should fetch the item’s content from your remote storage.
+- **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

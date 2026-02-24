@@ -20,7 +20,7 @@ The type of the row at `rowIndex`.
 
 ## Parameters
 
-- `rowIndex`: The index of a row in the receiver.
+- `rowIndex`: The index of a row in the receiver. > ❗ **Important**:  Raises an `NSRangeException` if `rowIndex` is less than `0` or greater than or equal to the number of rows.
 
 ## See Also
 

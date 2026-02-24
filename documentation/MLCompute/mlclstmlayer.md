@@ -22,6 +22,10 @@ class MLCLSTMLayer
 
 Use this class to create an LSTM layer with one of the following configurations:
 
+- **Unidirectional single layer**: The input weights, hidden weights, and biases are arrays of 4 tensors that describe the specified weights for the input, hidden, cell, and output gates.
+- **Unidirectional stacked layers**: The input weights, hidden weights and biases are arrays of [`layerCount`](mlclstmdescriptor/layercount.md) `* 4` tensors that describe the specified weights for the input, hidden, cell, and output gates, for `layer0...layer(layerCount - 1)`.
+- **Bidirectional single layer**: The input weights, hidden weights, and biases are arrays of 8 tensors, where the backward time weights and biases follow the forward time weights.
+
 ## Topics
 
 ### Creating LSTM Layers

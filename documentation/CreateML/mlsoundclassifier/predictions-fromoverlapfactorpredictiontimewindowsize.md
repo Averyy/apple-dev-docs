@@ -25,8 +25,8 @@ An array of prediction labels for the audio files.
 ## Parameters
 
 - `audioFiles`: An array of audio-file URLs you want the sound classifier to categorize.
-- `overlapFactor`: The amount of overlap between successive analysis windows when the model analyzes a block of   audio data.
-- `predictionTimeWindowSize`: The duration of the audio buffer the method sends to the model for each   prediction.
+- `overlapFactor`: The amount of overlap between successive analysis windows when the model analyzes a block of audio data.
+- `predictionTimeWindowSize`: The duration of the audio buffer the method sends to the model for each prediction.
 
 ## See Also
 

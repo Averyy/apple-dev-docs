@@ -24,10 +24,10 @@ Call this method when you want the system to display one of your app’s scenes.
 
 ## Parameters
 
-- `sceneSession`: The session whose scene you want to activate. Specify   when you want the system to create a new scene for your app.
+- `sceneSession`: The session whose scene you want to activate. Specify `nil` when you want the system to create a new scene for your app.
 - `userActivity`: A user activity object to dispatch to the session’s scene. Use this object to communicate details about a task you want the scene to perform.
-- `options`: Information for the system to use when creating or activating the scene. For information about how to create this object, see  .
-- `errorHandler`: An error handler block to execute if a problem occurs. The method doesn’t execute this block when it successfully activates the scene. This block has no return value and has the following parameter:
+- `options`: Information for the system to use when creating or activating the scene. For information about how to create this object, see [`UIScene.ActivationRequestOptions`](uiscene/activationrequestoptions.md).
+- `errorHandler`: An error handler block to execute if a problem occurs. The method doesn’t execute this block when it successfully activates the scene. This block has no return value and has the following parameter: - **error**: The [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object describing the problem that occurred.
 
 ## See Also
 

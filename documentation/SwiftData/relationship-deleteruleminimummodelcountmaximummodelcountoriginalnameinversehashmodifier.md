@@ -62,13 +62,13 @@ For more information about defining relationships between models, see [`Defining
 
 ## Parameters
 
-- `options`: A list of options to apply to the annotated property to customize its behavior. For possible values, see  .
-- `deleteRule`: The rule to apply when you delete the relationship’s owning persistent model. For possible values, see  . The default value is  .
-- `minimumModelCount`: The minimum number of models the relationship can reference. The default value is  .
-- `maximumModelCount`: The maximum number of models the relationship can reference. The default value is  .
-- `originalName`: The previous name of the attribute, if it’s different to the one in the current schema version. The default value is  .
-- `inverse`: The key path of the relationship that represents the inverse of this relationship. The default value is  .
-- `hashModifier`: A unique hash value that represents the most recent version of the annotated property. The default value is  .
+- `options`: A list of options to apply to the annotated property to customize its behavior. For possible values, see [`Schema.Relationship.Option`](schema/relationship/option.md).
+- `deleteRule`: The rule to apply when you delete the relationship’s owning persistent model. For possible values, see [`Schema.Relationship.DeleteRule`](schema/relationship/deleterule-swift.enum.md). The default value is [`Schema.Relationship.DeleteRule.nullify`](schema/relationship/deleterule-swift.enum/nullify.md).
+- `minimumModelCount`: The minimum number of models the relationship can reference. The default value is `0`.
+- `maximumModelCount`: The maximum number of models the relationship can reference. The default value is `0`.
+- `originalName`: The previous name of the attribute, if it’s different to the one in the current schema version. The default value is `nil`.
+- `inverse`: The key path of the relationship that represents the inverse of this relationship. The default value is `nil`.
+- `hashModifier`: A unique hash value that represents the most recent version of the annotated property. The default value is `nil`.
 
 ## See Also
 

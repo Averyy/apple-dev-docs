@@ -28,8 +28,8 @@ This method returns [`false`](https://developer.apple.com/documentation/Swift/fa
 
 ## Parameters
 
-- `keyPath`: The observed property on an  .
-- `expectedValue`: The desired value, which must conform to  .
+- `keyPath`: The observed property on an [`XCUIElement`](xcuielement.md).
+- `expectedValue`: The desired value, which must conform to `Equatable`.
 - `timeout`: The length of time in seconds to wait for the observed property to equal the expected value.
 
 ## See Also

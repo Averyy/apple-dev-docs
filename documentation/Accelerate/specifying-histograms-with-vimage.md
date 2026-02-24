@@ -10,7 +10,7 @@ Calculate the histogram of one image, and apply it to a second image.
 
 #### Overview
 
- is an image-processing operation that calculates the histogram of a reference image and applies it to an input image. The operation changes the colors and tones of the input image to match those of the reference image.
+*Histogram specification* is an image-processing operation that calculates the histogram of a reference image and applies it to an input image. The operation changes the colors and tones of the input image to match those of the reference image.
 
 The example below shows a source image (bottom left) and a histogram reference image (top left), with the histogram specification output on the right.
 

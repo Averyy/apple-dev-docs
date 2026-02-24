@@ -21,8 +21,8 @@ A Live Activity consists of two components: static attributes and dynamic conten
 
 For alarms, these components serve distinct purposes:
 
-- : Your app provides this content through [`AlarmAttributes`](alarmattributes.md), including information such as tint color and button labels that remain constant.
-- : AlarmKit provides this content through [`AlarmPresentationState`](alarmpresentationstate.md), including system-managed information such as the alarm [`fireDate`](alarmpresentationstate/mode-swift.enum/countdown/firedate.md) and current presentation mode.
+- **Static attributes**: Your app provides this content through [`AlarmAttributes`](alarmattributes.md), including information such as tint color and button labels that remain constant.
+- **Dynamic content**: AlarmKit provides this content through [`AlarmPresentationState`](alarmpresentationstate.md), including system-managed information such as the alarm [`fireDate`](alarmpresentationstate/mode-swift.enum/countdown/firedate.md) and current presentation mode.
 
 The system automatically updates the [`AlarmPresentationState`](alarmpresentationstate.md) as the alarm transitions between different states, such as [`Alarm.State.countdown`](alarm/state-swift.enum/countdown.md), [`Alarm.State.alerting`](alarm/state-swift.enum/alerting.md), and [`Alarm.State.paused`](alarm/state-swift.enum/paused.md).
 

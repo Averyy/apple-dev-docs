@@ -10,7 +10,7 @@ Xcode projects often contain many images, and need to manage multiple variations
 
 ##### Create a New Image Set
 
-An  represents one image that you intend to load at runtime. Each image set contains multiple variations of a single image that you customize to support different device characteristics. If you have multiple images in your app, you need to create an image set for each image.
+An *image set* represents one image that you intend to load at runtime. Each image set contains multiple variations of a single image that you customize to support different device characteristics. If you have multiple images in your app, you need to create an image set for each image.
 
 To create an image set, generate an image asset outside of Xcode, then import it into an asset catalog. The system converts the image format into the most appropriate representation when you build the project.
 

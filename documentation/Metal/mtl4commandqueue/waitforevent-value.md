@@ -22,7 +22,7 @@ func waitForEvent(_ event: any MTLEvent, value: UInt64)
 
 ## Parameters
 
-- `event`:   to wait on.
+- `event`: [`MTLEvent`](mtlevent.md) to wait on.
 - `value`: The specific value to wait for.
 
 

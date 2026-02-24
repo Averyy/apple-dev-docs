@@ -32,6 +32,10 @@ object StatusDeviceSerialNumber
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
+## Properties
+
+- `device.identifier.serial-number` (string) *(required)*: The device’s serial number.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

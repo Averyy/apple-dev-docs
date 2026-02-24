@@ -33,7 +33,7 @@ The data must be in one of the 5 supported encodings listed in the JSON specific
 ## Parameters
 
 - `data`: A data object containing JSON data.
-- `opt`: For possible values, see  .
+- `opt`: Options for reading the JSON data and creating the Foundation objects. For possible values, see [`JSONSerialization.ReadingOptions`](jsonserialization/readingoptions.md).
 
 ## See Also
 

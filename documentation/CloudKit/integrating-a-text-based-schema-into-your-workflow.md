@@ -61,13 +61,23 @@ list-type:
 
 Additional details and guidelines for creating roles, record types, type names, field names, data types and permissions are listed below.
 
+- **`create-role`**: Creates a new role and grants create, read, or write permissions on record types.
+- **`record-type`**: Creates a new record, composed of fields and their types, and grants permissions to roles.
+- **`type-name`**: The identifier for the record type. Use double quotes around the name if it’s a reserved word.
+- **`field-name`**: The identifier for a field within a record type. Use double quotes around the name if it’s a reserved word.
+- **`field-options`**: The options define additional attributes of the field.
+
 `QUERYABLE` - Maintains an index to optimize equality lookups on the field.
 
 `SORTABLE` - Maintains an index optimizing for range searches on the field.
 
 `SEARCHABLE` - Maintains a text search index on the field.
 
+- **`data-type`**: The data type for the field in the record.
+
 Avoid using the `NUMBER` type, which is only for when a field is implicitly added to a schema by a record modification on a sandbox container. If such a field has been implicitly added to a type in your schema, the `PREFERRED AS` syntax allows you to explicitly indicate which type the `NUMBER` should be treated as (`INT64` or `DOUBLE`). Once you assign `NUMBER` as a `PREFERRED AS` type, future definitions must not change that type.
+
+- **`GRANT`**: The `GRANT` clause defines permission on the record type in the `PUBLIC` database. Unless your schema explicitly grants permissions, a type has no security privileges available in the `PUBLIC` database, making the type unusable.
 
 The grammar uses these conventions:
 
@@ -80,7 +90,7 @@ Identifiers must follow existing CloudKit naming conventions and restrictions. U
 
 - The first character must be one of `a-z` or `A-Z`.
 - Subsequent characters must be one of `a-z`, `A-Z`, `0-9`, or `_` (underscore).
-- Use double quotes around identifiers to include keywords and reserved words in the syntax definition. For example, to create a type called , define it as “grant”. The reserved words in the CloudKit Schema Language are: grant, preferred, queryable, sortable, and searchable.
+- Use double quotes around identifiers to include keywords and reserved words in the syntax definition. For example, to create a type called *grant*, define it as “grant”. The reserved words in the CloudKit Schema Language are: grant, preferred, queryable, sortable, and searchable.
 
 Also, CloudKit reserves identifiers starting with a leading underscore as system-defined identifiers. For example, all record types have an implicitly defined `___recordID` field. Use double quotes when referring to such system fields as well.
 
@@ -131,6 +141,10 @@ RECORD TYPE ApplicationType  (
 Then the `__createTime` field remains on the record type (since it’s a required system field), but CloudKit drops the index on the field, and the user query performance may degrade or fail as a result.
 
 Additionally, all record types have these implicitly defined roles:
+
+- **`“_creator”`**: The user that created a given record (“Creator” in the dashboard).
+- **`”_world”`**: All users (“World” in the dashboard).
+- **`”_icloud”`**: All authenticated users (“Authenticated” in the dashboard).
 
 For types that you wish to use in a `PUBLIC` database, include the following grants:
 

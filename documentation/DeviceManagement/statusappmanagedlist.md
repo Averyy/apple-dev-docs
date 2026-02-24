@@ -60,6 +60,10 @@ object StatusAppManagedList
 - [object StatusAppManagedListAppObject](statusappmanagedlistappobject.md)
   A dictionary that describes a declarative managed app.
 
+## Properties
+
+- `app.managed.list` ([StatusAppManagedListAppObject]) *(required)*: An array of dictionaries that describe the device’s declarative managed apps.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

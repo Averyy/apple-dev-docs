@@ -34,10 +34,10 @@ To create implementations that work well with Siri and Apple Intelligence:
 - For your [`AppEntity`](appentity.md) implementation, use the [`AppEntity(schema:)`](appentity(schema:).md) macro.
 - For your  [`AppEnum`](appenum.md) implementation, use the [`AppEnum(schema:)`](appenum(schema:).md) macro.
 
-Each macro requires you to provide a `schema` value to generate app intent, app entity, or app enum code that Apple Intelligence can understand. The value you provide to the macros, the , has two parts:
+Each macro requires you to provide a `schema` value to generate app intent, app entity, or app enum code that Apple Intelligence can understand. The value you provide to the macros, the *assistant schema*, has two parts:
 
-- The  that describes a collection of APIs for specific functionality; for example, the `.photos` domain if an app has photos or video functionality.
-- The , an action or a content type within the domain, the specific API for the app intent, app entity, or app enum you create.
+- The *App intent domain* that describes a collection of APIs for specific functionality; for example, the `.photos` domain if an app has photos or video functionality.
+- The *schema*, an action or a content type within the domain, the specific API for the app intent, app entity, or app enum you create.
 
 For example, an app intent that opens a photo from a photo library uses `@AppIntent(schema: .photos.openAsset)` to make sure the intent provides necessary metadata that allows Apple Intelligence to understand it well.
 

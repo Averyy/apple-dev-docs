@@ -30,7 +30,7 @@ Calling this method is equivalent to, but not necessarily implemented as, settin
 
 ## Parameters
 
-- `dateFormatTemplate`: For full details, see  .
+- `dateFormatTemplate`: A string containing date format patterns (such as “MM” or “h”). For full details, see [`Date and Time Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html#//apple_ref/doc/uid/10000039i).
 
 ## See Also
 

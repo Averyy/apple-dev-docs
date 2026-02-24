@@ -22,9 +22,9 @@ init(settlingDuration: TimeInterval, dampingRatio: Double, epsilon: Double = 0.0
 
 ## Parameters
 
-- `settlingDuration`: The approximate time it will take for the spring   to come to rest.
-- `dampingRatio`: The amount of drag applied as a fraction of the amount   needed to produce critical damping.
-- `epsilon`: The threshhold for how small all subsequent values need to   be before the spring is considered to have settled.
+- `settlingDuration`: The approximate time it will take for the spring to come to rest.
+- `dampingRatio`: The amount of drag applied as a fraction of the amount needed to produce critical damping.
+- `epsilon`: The threshhold for how small all subsequent values need to be before the spring is considered to have settled.
 
 ## See Also
 

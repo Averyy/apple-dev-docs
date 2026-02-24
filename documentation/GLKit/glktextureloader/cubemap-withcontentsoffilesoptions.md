@@ -31,8 +31,8 @@ This class method loads the texture into the sharegroup attached to the current 
 
 ## Parameters
 
-- `paths`: An array of   or   objects that provide the paths to the six files that make up the cube map.
-- `options`: A dictionary that describes any additional steps you want the texture loader to take when loading the texture. See  .
+- `paths`: An array of [`URL`](https://developer.apple.com/documentation/Foundation/URL) or `String` objects that provide the paths to the six files that make up the cube map.
+- `options`: A dictionary that describes any additional steps you want the texture loader to take when loading the texture. See [`Texture Loading Options`](texture-loading-options.md).
 
 ## Topics
 

@@ -3,7 +3,7 @@
 **Framework**: Security  
 **Kind**: var
 
-If true, the certificate’s key usage must allow it to be used  for encryption.
+If true, the certificate’s key usage must allow it to be used *only* for encryption.
 
 **Availability**:
 - macOS 10.7+

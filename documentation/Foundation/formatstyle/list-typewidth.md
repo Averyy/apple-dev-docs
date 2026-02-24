@@ -39,8 +39,8 @@ let formatted = items.formatted(
 
 ## Parameters
 
-- `type`: The list type to apply, such as cumulative ( ) or alternative ( ) elements.
-- `width`: The width to use when formatting, such as   or  .
+- `type`: The list type to apply, such as cumulative ([`ListFormatStyle.ListType.and`](listformatstyle/listtype-swift.enum/and.md)) or alternative ([`ListFormatStyle.ListType.or`](listformatstyle/listtype-swift.enum/or.md)) elements.
+- `width`: The width to use when formatting, such as [`ListFormatStyle.Width.standard`](listformatstyle/width-swift.enum/standard.md) or [`ListFormatStyle.Width.narrow`](listformatstyle/width-swift.enum/narrow.md).
 
 ## See Also
 

@@ -23,8 +23,8 @@ case labeledVideoDataFrame(DataFrame, videoColumn: String = __Defaults.videoColu
 - `dataFrame`: A data frame that contains the locations of annotations for each hand action video file.
 - `videoColumn`: The name of the column in the data frame that contains the video filenames.
 - `labelColumn`: The name of the column in the data frame that contains the hand action label names.
-- `startTimeColumn`: The name of the column in the data frame that contains the hand action’s starting-time   index in the video file. Otherwise  , if every video example starts at the beginning of the video   file.
-- `endTimeColumn`: The name of the column in the data frame that contains the hand action’s ending-time in   the video file. Otherwise  , if every video example ends at the end of the video file.
+- `startTimeColumn`: The name of the column in the data frame that contains the hand action’s starting-time index in the video file. Otherwise `nil`, if every video example starts at the beginning of the video file.
+- `endTimeColumn`: The name of the column in the data frame that contains the hand action’s ending-time in the video file. Otherwise `nil`, if every video example ends at the end of the video file.
 
 ## See Also
 

@@ -23,7 +23,7 @@ A new matrix that is the transpose of the original matrix.
 
 ## Parameters
 
-- `matrix`: A   matrix.
+- `matrix`: A `4x4` matrix.
 
 ## See Also
 

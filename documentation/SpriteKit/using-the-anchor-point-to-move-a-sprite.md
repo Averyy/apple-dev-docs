@@ -18,6 +18,18 @@ Although you are moving the frame, you do this because you want the correspondin
 
 The following code shows how to place the anchor point on the rocket’s nose cone. Usually, you set the anchor point when the sprite node is initialized, because it corresponds to the artwork. However, you can set this property at any time. The frame is immediately updated, and the node onscreen is updated the next time the scene is rendered.
 
+**Swift**:
+
+```swift
+rocket.anchorPoint = CGPoint(x: 0.5, y: 1.0)
+```
+
+**Obj-C**:
+
+```objc
+rocket.anchorPoint = CGPointMake(0.5,1.0);
+```
+
 ## See Also
 
 - [var size: CGSize](skspritenode/size.md)

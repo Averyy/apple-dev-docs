@@ -6,7 +6,7 @@ Optimize your app’s performance by grouping your resources into argument buffe
 
 #### Overview
 
-Use argument buffers to gather multiple resources into a single shader argument. An  is a Metal buffer that contains references to other Metal resources, including [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), [`MTLSamplerState`](mtlsamplerstate.md), and [`MTLAccelerationStructure`](mtlaccelerationstructure.md) instances. Argument buffers use less overhead than assigning each resource individually. This is especially true for resources that don’t change between frames because you can assign the argument buffer once and reuse it many times.
+Use argument buffers to gather multiple resources into a single shader argument. An *argument buffer* is a Metal buffer that contains references to other Metal resources, including [`MTLBuffer`](mtlbuffer.md), [`MTLTexture`](mtltexture.md), [`MTLSamplerState`](mtlsamplerstate.md), and [`MTLAccelerationStructure`](mtlaccelerationstructure.md) instances. Argument buffers use less overhead than assigning each resource individually. This is especially true for resources that don’t change between frames because you can assign the argument buffer once and reuse it many times.
 
 > **Note**:  You need to use argument buffers to bind resources to pipelines composed of shaders that you compile with the [`Metal shader converter`](https://developer.apple.comhttps://developer.apple.com/metal/shader-converter/).
 
@@ -89,11 +89,15 @@ Finally, argument buffers allow Metal to index resources dynamically at function
 
 Use the [`argumentBuffersSupport`](mtldevice/argumentbufferssupport.md) property of the [`MTLDevice`](mtldevice.md) instance to get its tier.
 
+**Common Tier 1 and Tier 2 Limits**
+
 On iOS and tvOS, the maximum number of unique samplers per app is `96`, and for macOS, `1024` or greater, depending on the device and OS version.` `These limits are only applicable to samplers that have their [`supportArgumentBuffers`](mtlsamplerdescriptor/supportargumentbuffers.md) property set to [`true`](https://developer.apple.com/documentation/Swift/true). Use the [`MTLDevice`](mtldevice.md)`.`[`maxArgumentBufferSamplerCount`](mtldevice/maxargumentbuffersamplercount.md) property to get the exact maximum number of unique samplers per app for a device.
 
 Metal considers an [`MTLSamplerState`](mtlsamplerstate.md) instance unique if the configuration of its originating [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) properties is unique. For example, if two samplers have equal [`minFilter`](mtlsamplerdescriptor/minfilter.md) values but different [`magFilter`](mtlsamplerdescriptor/magfilter.md) values, Metal considers them different instances.
 
 For the maximum number of entries in each function argument table, see [`Metal feature set tables`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf).
+
+**Tier 1 Limits**
 
 For Tier 1, Metal imposes resource limits on the maximum combined number of resources set within an argument buffer and set individually, per graphics or compute function. Metal counts the argument buffer entries against the maximum buffer entries in each function argument table. For example, if a kernel function uses four individual textures and one argument buffer with eight textures, the total number of textures for that kernel function is 12. Tier 1 argument buffers can’t include writable textures.
 
@@ -102,6 +106,8 @@ Other Tier 1 limits on argument buffers are:
 - Need to be immutable because the GPU can’t modify the contents of an argument buffer
 - Need to be CPU-accessible, so set the buffer’s storage mode to either [`MTLStorageMode.shared`](mtlstoragemode/shared.md) or [`MTLStorageMode.managed`](mtlstoragemode/managed.md)
 - Can’t be accessible through pointer indexing, or include pointers to other argument buffers, in MSL
+
+**Tier 2 Limits**
 
 GPUs that support Tier 2 argument buffers have significantly higher limits that enable more capabilities in your app.
 

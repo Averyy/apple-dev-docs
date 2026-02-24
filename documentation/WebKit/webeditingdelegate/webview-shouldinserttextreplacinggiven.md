@@ -26,7 +26,7 @@ This method may perform an alternate action—for example, insert different text
 
 - `webView`: The web view that the user is editing.
 - `text`: The text to insert.
-- `range`: The portion of the document that will be replaced with  .
+- `range`: The portion of the document that will be replaced with `text`.
 - `action`: Indicates the type of user action that initiated the insertion.
 
 ## See Also

@@ -18,7 +18,7 @@ func xattrs(of item: FSItem) async throws -> [FSFileName]
 ## Parameters
 
 - `item`: The item from which to get extended attributes.
-- `reply`: A block or closure to indicate success or failure. If getting the list of extended attributes succeeds, pass the xattrs as an array of   instances and a   error. If getting the attriubtes fails, pass   along with the relevant error. For an   Swift implementation, there’s no reply handler; simply return the byte count or throw an error.
+- `reply`: A block or closure to indicate success or failure. If getting the list of extended attributes succeeds, pass the xattrs as an array of [`FSFileName`](fsfilename.md) instances and a `nil` error. If getting the attriubtes fails, pass `nil` along with the relevant error. For an `async` Swift implementation, there’s no reply handler; simply return the byte count or throw an error.
 
 ## See Also
 

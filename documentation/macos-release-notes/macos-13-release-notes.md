@@ -28,7 +28,7 @@ The macOS 13 SDK provides support to develop apps for Mac computers running macO
 
 ###### Known Issues
 
-- Third-party security products using the Endpoint Security API might lose Full Disk Access authorization and stop functioning, even though the product remains visible in System Settings. This issue doesn’t affect authorization granted via MDM. (100857507)  Go to System Settings > Privacy & Security > Full Disk Access, select the security product, use the minus (-) button to remove, and then use the plus (+) button to re-add the affected security product. A system restart might be required to restore expected functionality.
+- Third-party security products using the Endpoint Security API might lose Full Disk Access authorization and stop functioning, even though the product remains visible in System Settings. This issue doesn’t affect authorization granted via MDM. (100857507) **Workaround:** Go to System Settings > Privacy & Security > Full Disk Access, select the security product, use the minus (-) button to remove, and then use the plus (+) button to re-add the affected security product. A system restart might be required to restore expected functionality.
 
 ##### File System
 
@@ -72,13 +72,13 @@ The macOS 13 SDK provides support to develop apps for Mac computers running macO
 
 ###### Known Issues
 
-- The `MTLResource.gpuHandle` is deprecated. (92862429)  Use [`gpuResourceID`](https://developer.apple.com/documentation/Metal/MTLAccelerationStructure/gpuResourceID) instead, which functions as a replacement.
+- The `MTLResource.gpuHandle` is deprecated. (92862429) **Workaround:** Use [`gpuResourceID`](https://developer.apple.com/documentation/Metal/MTLAccelerationStructure/gpuResourceID) instead, which functions as a replacement.
 
 ##### Metal Offline Compiler
 
 ###### Known Issues
 
-- `MetalFX` effect outputs aren’t designed to be consumed by the CPU. Outputting to a texture that is read only by the CPU might result in synchronization issues. (91515075)  If a CPU reading of the `MetalFX` output is desired, instead of encoding the `MetalFX` effect as the last item in a command buffer, encode a dummy blit that consumes the `MetalFX` output texture (a 1-pixel region blit is fine) in the command buffer. After the command buffer with the dummy blit is finished, reading of the `MetalFX` effect output texture with CPU synchronizes correctly.
+- `MetalFX` effect outputs aren’t designed to be consumed by the CPU. Outputting to a texture that is read only by the CPU might result in synchronization issues. (91515075) **Workaround:** If a CPU reading of the `MetalFX` output is desired, instead of encoding the `MetalFX` effect as the last item in a command buffer, encode a dummy blit that consumes the `MetalFX` output texture (a 1-pixel region blit is fine) in the command buffer. After the command buffer with the dummy blit is finished, reading of the `MetalFX` effect output texture with CPU synchronizes correctly.
 
 ##### Networking
 
@@ -120,7 +120,7 @@ The macOS 13 SDK provides support to develop apps for Mac computers running macO
 
 ###### Known Issues
 
-- `Network.framework` resolved an issue that could cause `NWBrowser`, `NWConnection`, `NWConnectionGroup`, `NWEthernetChannel`, `NWListener`, and `NWPathMonitor` to trigger a retain cycle when various Handler blocks are set. Starting with macOS 13, iOS 16, watchOS 9, and tvOS 16, if software using `Network.framework` targets these releases as the minimum OS, the object releases any blocks they captured once cancelled, breaking the retain cycle. (89677097)  For software targeting older versions, the retain cycle can be broken by setting the handler blocks to `nil` after canceling the object.
+- `Network.framework` resolved an issue that could cause `NWBrowser`, `NWConnection`, `NWConnectionGroup`, `NWEthernetChannel`, `NWListener`, and `NWPathMonitor` to trigger a retain cycle when various Handler blocks are set. Starting with macOS 13, iOS 16, watchOS 9, and tvOS 16, if software using `Network.framework` targets these releases as the minimum OS, the object releases any blocks they captured once cancelled, breaking the retain cycle. (89677097) **Workaround:** For software targeting older versions, the retain cycle can be broken by setting the handler blocks to `nil` after canceling the object.
 
 ##### Swiftui
 

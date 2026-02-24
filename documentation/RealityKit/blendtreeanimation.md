@@ -23,7 +23,7 @@ struct BlendTreeAnimation<Value> where Value : AnimatableData
 
 This structure provides a way to form a single animation by mixing several other animations together. You define a source node for each animation, and a weight, which determines how much each individual animation takes effect in the resulting animation.
 
-To create the blended animation, you define a  that sprouts from [`root`](blendtreeanimation/root.md), which consists of one or more blend-tree nodes ([`BlendTreeNode`](blendtreenode.md)). Each node may be one of the following conforming types:
+To create the blended animation, you define a *blend tree* that sprouts from [`root`](blendtreeanimation/root.md), which consists of one or more blend-tree nodes ([`BlendTreeNode`](blendtreenode.md)). Each node may be one of the following conforming types:
 
 - [`BlendTreeBlendNode`](blendtreeblendnode.md), which branches the tree for every element in [`sources`](blendtreeblendnode/sources.md)
 - [`BlendTreeSourceNode`](blendtreesourcenode.md), which defines one of the animations to blend via its [`source`](blendtreesourcenode/source.md) property

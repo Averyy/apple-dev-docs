@@ -29,6 +29,8 @@ This method applies the sRGB-tone-curve-to-linear filter to an image. The effect
 
 The sRGB-tone-curve-to-linear filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that converts from sRGB to linear color space.
 
 ```swift

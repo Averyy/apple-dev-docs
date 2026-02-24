@@ -32,9 +32,9 @@ Note that if the item carries multiple metadata tracks containing metadata with 
 
 ## Parameters
 
-- `output`: The   source.
-- `groups`: An array of   that contain metadata items with requested identifiers, according to the format descriptions associated with the underlying tracks.
-- `track`: An instance of   that indicates the source of the metadata items in the group.
+- `output`: The [`AVPlayerItemMetadataOutput`](avplayeritemmetadataoutput.md) source.
+- `groups`: An array of `AVTimedMetadataGroups` that contain metadata items with requested identifiers, according to the format descriptions associated with the underlying tracks.
+- `track`: An instance of [`AVPlayerItemTrack`](avplayeritemtrack.md) that indicates the source of the metadata items in the group.
 
 
 ---

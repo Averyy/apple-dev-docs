@@ -22,10 +22,10 @@ init(_ titleKey: LocalizedStringKey, image: ImageResource, @ViewBuilder content:
 
 ## Parameters
 
-- `titleKey`: The key for the link’s localized title, which describes   the contents of the menu.
+- `titleKey`: The key for the link’s localized title, which describes the contents of the menu.
 - `image`: The name of the image resource to lookup.
 - `content`: A group of menu items.
-- `primaryAction`: The action to perform on primary   interaction with the menu.
+- `primaryAction`: The action to perform on primary interaction with the menu.
 
 ## See Also
 

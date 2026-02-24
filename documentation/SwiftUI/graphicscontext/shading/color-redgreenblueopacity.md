@@ -26,11 +26,11 @@ A shading instance filled with a color.
 
 ## Parameters
 
-- `colorSpace`: The RGB color space used to define the color. The   default is  .
+- `colorSpace`: The RGB color space used to define the color. The default is [`Color.RGBColorSpace.sRGB`](color/rgbcolorspace/srgb.md).
 - `red`: The red component of the color.
 - `green`: The green component of the color.
 - `blue`: The blue component of the color.
-- `opacity`: The opacity of the color. The default is  , which   means fully opaque.
+- `opacity`: The opacity of the color. The default is `1`, which means fully opaque.
 
 ## See Also
 

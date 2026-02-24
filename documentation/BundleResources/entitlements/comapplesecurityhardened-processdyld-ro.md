@@ -11,6 +11,12 @@ An entitlement that marks memory used for internal platform state as read-only.
 - macOS 26.0+
 - visionOS 26.0+
 
+
+
+**Type**: boolean
+
+**Default**: `true`
+
 #### Overview
 
 When you add this entitlement to your app or extension with the value `true`, the kernel and dynamic loader ensure that all memory regions that the system uses to manage internal state are read-only.

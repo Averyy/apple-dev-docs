@@ -24,7 +24,7 @@ A session is reachable when the iOS app or WatchKit extension to which it belong
 
 ## Parameters
 
-- `session`: The session object of the current process. Use the   property of this object to determine the reachability of the counterpart session.
+- `session`: The session object of the current process. Use the [`isReachable`](wcsession/isreachable.md) property of this object to determine the reachability of the counterpart session.
 
 ## See Also
 

@@ -26,7 +26,7 @@ Clients may try to resolve again upon receiving this error. For example, a DNS r
 ## Parameters
 
 - `sender`: The service that did not resolve.
-- `errorDict`: A dictionary containing information about the problem. The dictionary contains the keys   and  .
+- `errorDict`: A dictionary containing information about the problem. The dictionary contains the keys [`errorCode`](netservice/errorcode-swift.type.property.md) and [`errorDomain`](netservice/errordomain.md).
 
 ## See Also
 

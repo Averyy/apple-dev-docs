@@ -33,8 +33,8 @@ When you request an EXIF or IPTC property, this function fills in the namespace,
 ## Parameters
 
 - `metadata`: The metadata object to search.
-- `dictionaryName`: The metadata subdictionary to which the image property belongs. For example, specify   for image properties that are part of the image’s EXIF metadata.
-- `propertyName`: The name of the property. For example, specify  ,  , or  . If the specified property is unsupported by the metadata object, this function logs a warning.
+- `dictionaryName`: The metadata subdictionary to which the image property belongs. For example, specify [`kCGImagePropertyExifDictionary`](kcgimagepropertyexifdictionary.md) for image properties that are part of the image’s EXIF metadata.
+- `propertyName`: The name of the property. For example, specify [`kCGImagePropertyTIFFOrientation`](kcgimagepropertytifforientation.md), [`kCGImagePropertyExifDateTimeOriginal`](kcgimagepropertyexifdatetimeoriginal.md), or [`kCGImagePropertyIPTCKeywords`](kcgimagepropertyiptckeywords.md). If the specified property is unsupported by the metadata object, this function logs a warning.
 
 ## See Also
 

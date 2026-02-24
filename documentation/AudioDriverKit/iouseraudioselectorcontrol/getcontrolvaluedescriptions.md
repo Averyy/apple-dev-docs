@@ -24,8 +24,8 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `out_control_value_descriptions`: A pointer to a buffer of type  , with a size of  . On return, this buffer contains the value descriptions.
-- `in_num_value_descriptions`: The number of descriptions in  .
+- `out_control_value_descriptions`: A pointer to a buffer of type [`IOUserAudioSelectorValueDescription`](iouseraudioselectorvaluedescription.md), with a size of `in_num_value_descriptions`. On return, this buffer contains the value descriptions.
+- `in_num_value_descriptions`: The number of descriptions in `out_control_value_descriptions`.
 
 ## See Also
 

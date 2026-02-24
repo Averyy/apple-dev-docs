@@ -24,8 +24,8 @@ Note that a single rectangle may occupy multiple displays, either by overlapping
 ## Parameters
 
 - `delta`: The distance, in pixel unites, that the display area has moved.
-- `count`: The number of rectangles in the   parameter.
-- `rectArray`: A list of the rectangles in the moved areas, specified in the global display coordinate space. The origin is the upper-left corner of the main display. The rectangles describe the area prior to the move operation. You should not modify or deallocate memory pointed to by  .
+- `count`: The number of rectangles in the `rectArray` parameter.
+- `rectArray`: A list of the rectangles in the moved areas, specified in the global display coordinate space. The origin is the upper-left corner of the main display. The rectangles describe the area prior to the move operation. You should not modify or deallocate memory pointed to by `rectArray`.
 - `userParameter`: The user data you specify when you register this callback.
 
 ## See Also

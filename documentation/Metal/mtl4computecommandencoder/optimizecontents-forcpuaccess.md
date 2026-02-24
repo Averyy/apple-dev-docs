@@ -31,7 +31,7 @@ You typically use this command for:
 
 ## Parameters
 
-- `texture`: A   instance the command optimizes for CPU access.
+- `texture`: A [`MTLTexture`](mtltexture.md) instance the command optimizes for CPU access.
 
 ## See Also
 

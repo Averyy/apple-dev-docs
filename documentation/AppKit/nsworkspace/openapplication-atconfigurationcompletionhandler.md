@@ -20,7 +20,8 @@ func openApplication(at applicationURL: URL, configuration: NSWorkspace.OpenConf
 
 - `applicationURL`: A URL specifying the location of the app in the file system.
 - `configuration`: The options that indicate how you want to launch the app.
-- `completionHandler`: The completion handler block to call asynchronously with the results. AppKit executes the completion handler on a concurrent queue. The handler block has no return value and takes the following parameters:
+- `completionHandler`: The completion handler block to call asynchronously with the results. AppKit executes the completion handler on a concurrent queue. The handler block has no return value and takes the following parameters: - **app**: On success, this parameter contains a reference to the launched app. If the app wasn’t launched, this parameter is `nil`.
+- **error**: On failure, this parameter contains an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object indicating the reason for the failure. If the app launched successfully, this parameter is `nil`.
 
 ## See Also
 

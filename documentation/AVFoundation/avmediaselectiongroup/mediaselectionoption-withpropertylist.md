@@ -26,7 +26,7 @@ An [`AVMediaSelectionOption`](avmediaselectionoption.md) object containing the p
 
 ## Parameters
 
-- `plist`: A property list previously obtained from an option in the group using   ( ).
+- `plist`: A property list previously obtained from an option in the group using [`propertyList()`](avmediaselectionoption/propertylist().md) (`AVMediaSelectionOption`).
 
 ## See Also
 

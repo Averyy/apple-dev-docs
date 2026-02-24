@@ -46,7 +46,7 @@ HStack {
 
 ## Parameters
 
-- `blendMode`: The   for compositing this view.
+- `blendMode`: The [`BlendMode`](blendmode.md) for compositing this view.
 
 ## See Also
 

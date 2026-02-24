@@ -31,7 +31,7 @@ let batch = try  MLArrayBatchProvider(dictionary: ["age": [30, 35, 29],
 
 ## Parameters
 
-- `dictionary`: A dictionary which maps feature names to an array of values. The error case occurs when all the arrays do not have the same length or the values in an aray are not expressible as an  .
+- `dictionary`: A dictionary which maps feature names to an array of values. The error case occurs when all the arrays do not have the same length or the values in an aray are not expressible as an [`MLFeatureValue`](mlfeaturevalue.md).
 
 ## See Also
 

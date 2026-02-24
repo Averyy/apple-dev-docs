@@ -26,7 +26,7 @@ To configure the actions for a given category, create a UIUserNotificationAction
 
 - `application`: The app object that received the remote notification.
 - `identifier`: The identifier associated with the custom action.
-- `userInfo`: A dictionary that contains information related to the remote notification. This dictionary originates from the provider as a JSON-defined dictionary, which iOS converts to an   object before calling this method. The contents of the dictionary are the remote notification payload, which consists only of property-list objects plus  . For more information about the contents of the remote notification dictionary, see  .
+- `userInfo`: A dictionary that contains information related to the remote notification. This dictionary originates from the provider as a JSON-defined dictionary, which iOS converts to an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) object before calling this method. The contents of the dictionary are the remote notification payload, which consists only of property-list objects plus [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull). For more information about the contents of the remote notification dictionary, see [`Local and Remote Notification Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/index.html#//apple_ref/doc/uid/TP40008194).
 - `completionHandler`: The block to execute when you are finished performing the specified action. You must call this block at the end of your method.
 
 ## See Also

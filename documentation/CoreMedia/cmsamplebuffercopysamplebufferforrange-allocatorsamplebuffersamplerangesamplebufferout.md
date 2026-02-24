@@ -30,10 +30,10 @@ A result code. See [`Sample Buffer Error Codes`](sample-buffer-errors.md).
 
 ## Parameters
 
-- `allocator`: The allocator to use for allocating the   object. Pass   to use the default allocator.
+- `allocator`: The allocator to use for allocating the `CMSampleBuffer` object. Pass `kCFAllocatorDefault` to use the default allocator.
 - `sbuf`: The sample buffer containing the original samples.
-- `sampleRange`: The range of samples to copy from  , where sample 0 is the first sample in the  .``
-- `sampleBufferOut`: On output, points to the newly created  .
+- `sampleRange`: The range of samples to copy from `sbuf`, where sample 0 is the first sample in the `sbuf`.``
+- `sampleBufferOut`: On output, points to the newly created `CMSampleBuffer`.
 
 ## See Also
 

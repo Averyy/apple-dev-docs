@@ -59,6 +59,12 @@ The top level of a test report provides you with a high level summary of the tes
 
 Further information can be found under the additional sections of the report:
 
+- **Insights**: Reports common failure patterns and long running tests found while analyzing results across multiple configurations and run destinations.
+- **Coverage**: The code coverage report for your tests. For more information on code coverage, see [`Determining how much code your tests cover`](determining-how-much-code-your-tests-cover.md).
+- **Tests**: An outline view that displays the results of your tests organized under test plans, test types, and test functions.
+- **Log**: Logs the system generates about the app and test installation process, launch actions, test actions, and post-testing processes such as the generation of code coverage reports.
+- **Build**: Logs the build system produces while building your targets.
+
 When you run tests with `xcodebuild` in Terminal, the command outputs an Xcode Test Results (`.xcresults`) bundle that contains session results, code coverage (if enabled), and other logs. You can open this file in Xcode to view or share it with other members of your development team.
 
 #### Run a Single Test Function
@@ -89,7 +95,7 @@ When you pass one or more collections to a `@Test` macro that supports parameter
 
 #### Run a Group of the Test Functions
 
-To run test functions defined under a common type or suite, move the pointer over the diamond icon alongside the type’s declaration in the editor gutter, and click the gray play icon. In Swift Testing, a  is any type that includes the definition for one or more test functions.
+To run test functions defined under a common type or suite, move the pointer over the diamond icon alongside the type’s declaration in the editor gutter, and click the gray play icon. In Swift Testing, a *test suite* is any type that includes the definition for one or more test functions.
 
 ![A screenshot of Xcode display a test suite in the source editor. The icon for running the test functions in that type is visible.](https://docs-assets.developer.apple.com/published/0e33879583f08c6edaa55551aaa2185f/running-tests-and-interpreting-results-group-of-test-from-source%402x.png)
 
@@ -117,7 +123,11 @@ To run all of the test functions associated with a tag or a single test function
 
 #### Run Testing Repeatedly to Determine Reliability
 
-Control-click the diamond icon next to a test function or test suite type and select “Run  Repeatedly”. In the panel that appears, choose when to stop running the test. Options include:
+Control-click the diamond icon next to a test function or test suite type and select “Run ** Repeatedly”. In the panel that appears, choose when to stop running the test. Options include:
+
+- **Stop after failure**: Run the test until the first time it fails, or it reaches maximum repetitions.
+- **Stop after success**: Run the test until the first time it passes, or it reaches maximum repetitions.
+- **Stop after maximum repetitions**: Run the test the specified number of times, regardless of its outcome.
 
 Choose the maximum number of times to repeat the test, whether to pause execution if the test fails, and whether to restart the test runner for each repetition. Finally, click Run to repeatedly run the test.
 

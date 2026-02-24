@@ -27,8 +27,8 @@ func newTexture(cgImage: CGImage, options: [MTKTextureLoader.Option : Any]? = ni
 
 ## Parameters
 
-- `cgImage`: The   from which to load image data.
-- `options`: A dictionary describing any additional texture loading steps. See  .
+- `cgImage`: The [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) from which to load image data.
+- `options`: A dictionary describing any additional texture loading steps. See `Texture Loading Options`.
 - `completionHandler`: A block called when the texture has been loaded and fully initialized.
 
 ## See Also

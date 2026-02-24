@@ -26,7 +26,7 @@ The image to use as a preview for the item.
 
 - `activityViewController`: The activity view controller object requesting information about the data item.
 - `activityType`: The selected activity type.
-- `size`: The suggested size for the thumbnail image, in points. You should provide an image using the appropriate   for the screen. Images provided at the suggested size will result in the best experience.
+- `size`: The suggested size for the thumbnail image, in points. You should provide an image using the appropriate [`scale`](uiscreen/scale.md) for the screen. Images provided at the suggested size will result in the best experience.
 
 ## See Also
 

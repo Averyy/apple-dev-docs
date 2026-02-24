@@ -23,7 +23,7 @@ The session’s event handler receives events when this picker displays and dism
 
 ## Parameters
 
-- `completionHandler`: A block or closure that the picker calls when it completes the operation. The completion handler receives an   instance if the picker encounters an error.
+- `completionHandler`: A block or closure that the picker calls when it completes the operation. The completion handler receives an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) instance if the picker encounters an error.
 
 ## See Also
 

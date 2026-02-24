@@ -26,8 +26,8 @@ Returns `true` if the owner ID property was successfully set, otherwise `false`.
 
 ## Parameters
 
-- `fileSec`: The   object to modify.
-- `owner`: An integer of type  .
+- `fileSec`: The `CFFileSecurityRef` object to modify.
+- `owner`: An integer of type `uid_t`.
 
 ## See Also
 

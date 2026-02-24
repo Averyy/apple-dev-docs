@@ -28,7 +28,7 @@ You do not call this method directly. Instead, you override it when you want to 
 ## Parameters
 
 - `bounds`: The bounding rectangle of the slider.
-- `rect`: The drawing rectangle for the slider’s track, as returned by the   method.
+- `rect`: The drawing rectangle for the slider’s track, as returned by the [`trackRect(forBounds:)`](uislider/trackrect(forbounds:).md) method.
 - `value`: The current value of the slider.
 
 ## See Also

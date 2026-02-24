@@ -32,7 +32,7 @@ Metal doesn’t guarantee that command buffers you commit to the command queue a
 
 ## Parameters
 
-- `drawable`:   instance to signal.
+- `drawable`: [`MTLDrawable`](mtldrawable.md) instance to signal.
 
 
 ---

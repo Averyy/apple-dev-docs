@@ -26,7 +26,7 @@ A font that uses fixed-width numeric characters.
 
 #### Discussion
 
-This modifier only affects numeric characters, and leaves all other characters unchanged. If the base font doesn’t support fixed-width, or  digits, the font remains unchanged.
+This modifier only affects numeric characters, and leaves all other characters unchanged. If the base font doesn’t support fixed-width, or *monospace* digits, the font remains unchanged.
 
 The following example shows two text fields arranged in a [`VStack`](vstack.md). Both text fields specify the 12-point system font, with the second adding the `monospacedDigit()` modifier to the font. Because the text includes the digit 1, normally a narrow character in proportional fonts, the second text field becomes wider than the first.
 

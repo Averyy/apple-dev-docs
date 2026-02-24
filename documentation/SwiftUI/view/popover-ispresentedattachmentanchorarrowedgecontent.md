@@ -59,9 +59,9 @@ In visionOS, most system presentations appear with a breakthrough effect by defa
 
 ## Parameters
 
-- `isPresented`: A binding to a Boolean value that determines whether   to present the popover content that you return from the modifier’s    closure.
-- `attachmentAnchor`: The positioning anchor that defines the   attachment point of the popover. The default is   .
-- `arrowEdge`: The edge of the   that defines the   location of the popover’s arrow. The default is  , which results in the system allowing   any arrow edge.
+- `isPresented`: A binding to a Boolean value that determines whether to present the popover content that you return from the modifier’s `content` closure.
+- `attachmentAnchor`: The positioning anchor that defines the attachment point of the popover. The default is [`bounds`](anchor/source/bounds.md).
+- `arrowEdge`: The edge of the `attachmentAnchor` that defines the location of the popover’s arrow. The default is `nil`, which results in the system allowing any arrow edge.
 - `content`: A closure returning the content of the popover.
 
 ## See Also

@@ -6,7 +6,7 @@ Prevent multiple commands that can access the same resources simultaneously by c
 
 #### Overview
 
-By design, GPUs can run multiple commands in parallel. Many of those commands access underlying memory of resources, including buffers and textures, with read and write operations. Commands can have an  when one or more of them has a memory write, or , operation and at least one other command has a memory read, or , operation.
+By design, GPUs can run multiple commands in parallel. Many of those commands access underlying memory of resources, including buffers and textures, with read and write operations. Commands can have an *access conflict* when one or more of them has a memory write, or *store*, operation and at least one other command has a memory read, or *load*, operation.
 
 Synchronize commands submitted to an [`MTL4CommandQueue`](mtl4commandqueue.md) instance when they have an access conflict with a resource. Access conflicts can cause problems in your app, such as nondeterministic behavior. For example, without synchronization, a draw command that reads from a texture to get the results of an earlier draw command might start loading from the texture’s memory before the other command finishes writing its output to that texture.
 
@@ -55,7 +55,7 @@ By default, an [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) encodes
 
 Metal provides several built-in resource ordering guarantees within compute and render passes, which your app doesn’t need to synchronize.
 
-For example, you don’t need to synchronize compute or render passes when they access an instance of an atomic type because they serially access those instances. See section 2.6  in the [`Metal Shading Language Specification (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) for more information.
+For example, you don’t need to synchronize compute or render passes when they access an instance of an atomic type because they serially access those instances. See section 2.6 *Atomic Data Types* in the [`Metal Shading Language Specification (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) for more information.
 
 Render passes also order memory operations for specific cases, including:
 
@@ -68,6 +68,15 @@ Render passes also order memory operations for specific cases, including:
 You can address access conflicts with one or more synchronization mechanisms. Each synchronization mechanism forces the GPU to pause before it runs a stage that accesses a resource, until another stage finishes. This means the memory operations from one stage completely finish before another stage can run its memory operations.
 
 You can choose one of the following synchronization mechanisms, which are in order of increasing scope:
+
+- **Intrapass barriers**: An intrapass barrier has the smallest scope because it only applies to commands within the same pass. For more information, see [`Synchronizing stages within a pass`](synchronizing-stages-within-a-pass.md).
+- **Fences**: A fence synchronizes resource memory operations across different passes within a command queue. Update a fence from a producing pass that modifies one or more resources, and then wait for that fence in a consuming pass that needs the output in those resources from the producing pass. For more information, see [`Synchronizing passes with a fence`](synchronizing-passes-with-a-fence.md).
+- **Intraqueue barriers**: An intraqueue barrier also synchronizes resource memory operations across different passes within a command queue, but is more coarse than a fence. Metal has two kinds of intraqueue barrier that synchronize different dependencies - A consumer queue barrier indicates which stages of a pass depend on and consume output from specific stages of one or more previous passes in the same queue. For more information, see [`Synchronizing passes with consumer barriers`](synchronizing-passes-with-consumer-barriers.md).
+- A producer queue barrier indicates which stages of the a pass produce output that subsequent passes on the same queue depend on. For more information, see [`Synchronizing passes with producer barriers`](synchronizing-passes-with-producer-barriers.md).
+- **Events**: An [`MTLEvent`](mtlevent.md) instance synchronizes resource memory operations in passes across all command queues.
+- **Shared events**: An [`MTLSharedEvent`](mtlsharedevent.md) instance has the largest scope because it synchronizes resource memory operations from other parts of the app, including: - Code that runs on the CPU
+- Passes in any command queue from the same [`MTLDevice`](mtldevice.md) instance
+- Passes in any command queue from other [`MTLDevice`](mtldevice.md) instances
 
 > 💡 **Tip**:  Select the synchronizing mechanism with smallest scope that can resolve the access conflict because larger scopes pause the GPU from doing more work than smaller scopes.
 

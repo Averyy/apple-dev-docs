@@ -79,9 +79,10 @@ This presents the standard HomeKit UI for locating and adding new accessories to
 
 When your app enters the standard accessory association flow, which is the same one that the Home app uses, the user follows these steps:
 
-1.  This code comes packaged with the device, or is available in the HAS display for the accessory.
-2.  This includes both real and simulated devices that can access the local area network.
-4.  HomeKit provides a default name and room for each service, one page per service, that the user can accept or change.
+1. **Scan or enter the new device’s HomeKit setup code.** This code comes packaged with the device, or is available in the HAS display for the accessory.
+2. **Select from a list of devices on the network that don’t already have an existing HomeKit association.** This includes both real and simulated devices that can access the local area network.
+3. **Wait for HomeKit to verify that the setup code entered in step 1 matches the device’s code.**
+4. **Assign a name and room to each service associated with the device.** HomeKit provides a default name and room for each service, one page per service, that the user can accept or change.
 
 Each item that the user names in step 4 appears in the Home app as an “accessory”. However, in HomeKit, these are [`HMService`](https://developer.apple.comhttps://developer.apple.com/documentation/homekit/hmservice) instances. They are owned by an [`HMAccessory`](https://developer.apple.comhttps://developer.apple.com/documentation/homekit/hmaccessory) instance that represents the physical device that you selected in step 2. To maintain a user experience consistent with the Home app, the sample app UI (and the rest of this article) also refers to each [`HMService`](https://developer.apple.comhttps://developer.apple.com/documentation/homekit/hmservice) instance as an accessory.
 

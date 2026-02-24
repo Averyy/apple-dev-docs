@@ -30,7 +30,7 @@ This does not take into account pixel aspect ratio or clean aperture tags.
 
 ## Parameters
 
-- `videoDesc`:   being interrogated.
+- `videoDesc`: `CMVideoFormatDescription` being interrogated.
 
 ## See Also
 

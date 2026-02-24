@@ -27,10 +27,10 @@ The return value indicates success or failure of the drag operation to the syste
 
 ## Parameters
 
-- `outlineView`: The outline view that sent the message.   must have previously allowed a drop.
+- `outlineView`: The outline view that sent the message. `outlineView` must have previously allowed a drop.
 - `info`: An object that contains more information about this dragging operation.
 - `item`: The parent of the item over which the cursor was placed when the mouse button was released.
-- `index`: The index of the child of   over which the cursor was placed when the mouse button was released.
+- `index`: The index of the child of `item` over which the cursor was placed when the mouse button was released.
 
 ## See Also
 

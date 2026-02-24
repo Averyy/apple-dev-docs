@@ -20,7 +20,7 @@ When you call this method, the color well displays the standard color panel and 
 
 ## Parameters
 
-- `exclusive`:   to deactivate any other color wells;   to keep them active. If a color panel is active with   set to   and another is subsequently activated with   set to  , the exclusive setting of the first panel is ignored.
+- `exclusive`: [`true`](https://developer.apple.com/documentation/Swift/true) to deactivate any other color wells; [`false`](https://developer.apple.com/documentation/Swift/false) to keep them active. If a color panel is active with `exclusive` set to [`true`](https://developer.apple.com/documentation/Swift/true) and another is subsequently activated with `exclusive` set to [`false`](https://developer.apple.com/documentation/Swift/false), the exclusive setting of the first panel is ignored.
 
 ## See Also
 

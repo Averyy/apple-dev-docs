@@ -23,7 +23,7 @@ A new `2x2` matrix.
 
 ## Parameters
 
-- `matrix`: A   matrix.
+- `matrix`: A `4x4` matrix.
 
 ## See Also
 

@@ -24,7 +24,7 @@ If `fontSize` is 0 or negative, returns the boldface system font at the default 
 
 ## Parameters
 
-- `fontSize`: The desired font size specified in points. If you specify   or a negative number for this parameter, the method returns the system font at the default size.
+- `fontSize`: The desired font size specified in points. If you specify `0.0` or a negative number for this parameter, the method returns the system font at the default size.
 
 ## See Also
 

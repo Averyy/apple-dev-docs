@@ -29,6 +29,11 @@ This method applies the color cube with color space filter to an image. The effe
 
 The color cube with color space filter uses the following properties:
 
+- **`cubeData`**: Data containing a 3-dimensional color table of floating-point premultiplied RGBA values. The cells are organized in a standard ordering. The columns and rows of the data are indexed by red and green, respectively. Each data plane is followed by the next higher plane in the data, with planes indexed by blue.
+- **`colorSpace`**: A [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) representing the color space for the color cube.
+- **`cubeDimension`**: The dimension of the color cube.
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds brightness to the input image:
 
 ```swift

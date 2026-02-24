@@ -11,6 +11,12 @@ An integer value that indicates the level of additional runtime security protect
 - macOS 26.0+
 - visionOS 26.0+
 
+
+
+**Type**: integer
+
+**Default**: `2`
+
 #### Discussion
 
 Add this entitlement with the value `2` to your app or extension to instruct the system to protect against particular attacks that target the dynamic loader and Mach messaging.

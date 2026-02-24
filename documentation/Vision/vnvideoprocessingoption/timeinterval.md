@@ -3,7 +3,7 @@
 **Framework**: Vision  
 **Kind**: property
 
-A value that indicates that the video processor should perform a request every -seconds.
+A value that indicates that the video processor should perform a request every *n*-seconds.
 
 **Availability**:
 - iOS 14.0+

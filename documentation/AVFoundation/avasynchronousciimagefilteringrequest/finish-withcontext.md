@@ -32,7 +32,7 @@ By default, you can pass `nil` for the `context` parameter to use a default rend
 ## Parameters
 
 - `filteredImage`: A Core Image image representing the output of whatever filters you’ve applied to the source image.
-- `context`: A Core Image context to be used for rendering the output image, or   to use a default context provided by AVFoundation.
+- `context`: A Core Image context to be used for rendering the output image, or `nil` to use a default context provided by AVFoundation.
 
 ## See Also
 

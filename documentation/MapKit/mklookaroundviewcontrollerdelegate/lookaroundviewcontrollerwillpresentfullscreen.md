@@ -20,7 +20,7 @@ optional func lookAroundViewControllerWillPresentFullScreen(_ viewController: MK
 
 ## Parameters
 
-- `viewController`: The  .
+- `viewController`: The [`MKLookAroundViewController`](mklookaroundviewcontroller.md).
 
 ## See Also
 

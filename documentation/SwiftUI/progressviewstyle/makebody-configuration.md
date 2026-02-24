@@ -28,7 +28,7 @@ The view hierarchy calls this method for each progress view where this style is 
 
 ## Parameters
 
-- `configuration`: The properties of the progress view being   created.
+- `configuration`: The properties of the progress view being created.
 
 ## See Also
 

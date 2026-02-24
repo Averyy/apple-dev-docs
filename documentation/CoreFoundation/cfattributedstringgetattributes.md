@@ -33,8 +33,8 @@ Note that the returned attribute dictionary might change in unpredictable ways i
 ## Parameters
 
 - `aStr`: The attributed string to examine.
-- `loc`: The location in   at which to determine the attributes.   must not exceed the bounds of  .
-- `effectiveRange`: If not  , upon return contains a range including   over which exactly the same set of attributes apply as at  .
+- `loc`: The location in `str` at which to determine the attributes. `loc` must not exceed the bounds of `str`.
+- `effectiveRange`: If not `NULL`, upon return contains a range including `loc` over which exactly the same set of attributes apply as at `loc`.
 
 ## See Also
 

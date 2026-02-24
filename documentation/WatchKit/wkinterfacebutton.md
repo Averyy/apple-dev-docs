@@ -20,9 +20,33 @@ The content of a button’s tappable area is filled with text and an optional ba
 
 Do not subclass or create instances of this class yourself. Instead, define outlets in your interface controller class and connect them to the corresponding objects in your storyboard file. For example, to refer to a button object in your interface, define a property with the following syntax in your interface controller class:
 
+**Swift**:
+
+```swift
+@IBOutlet weak var myButton: WKInterfaceButton!
+```
+
+**Objective-C**:
+
+```objc
+@property (weak, nonatomic) IBOutlet WKInterfaceButton* myButton;
+```
+
 During the initialization of your interface controller, WatchKit creates a new instance of this class and assigns it to your outlet. At that point, you can use the object in your outlet to make changes to the onscreen button.
 
 To respond to taps in the button, declare a method of this form in the interface controller class that manages the button:
+
+**Swift**:
+
+```swift
+@IBAction func buttonAction()
+```
+
+**Objective-C**:
+
+```objc
+- (IBAction)buttonAction
+```
 
 You can change the name of your action method to anything you like. In your Xcode storyboard, connect the button’s selector to the custom action method defined in your class.
 

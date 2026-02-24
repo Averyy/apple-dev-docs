@@ -26,7 +26,7 @@ This initializer is useful when a window has been loaded but no window controlle
 
 ## Parameters
 
-- `window`: The window object to manage; can be  .
+- `window`: The window object to manage; can be `nil`.
 
 ## See Also
 

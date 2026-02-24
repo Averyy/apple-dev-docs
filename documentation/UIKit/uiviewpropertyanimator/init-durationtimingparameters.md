@@ -31,7 +31,7 @@ The animator object returned by this method begins in the [`UIViewAnimatingState
 ## Parameters
 
 - `duration`: The duration of the animation, in seconds.
-- `parameters`: The object providing the timing information. This object must adopt the   protocol.
+- `parameters`: The object providing the timing information. This object must adopt the [`UITimingCurveProvider`](uitimingcurveprovider.md) protocol.
 
 ## See Also
 

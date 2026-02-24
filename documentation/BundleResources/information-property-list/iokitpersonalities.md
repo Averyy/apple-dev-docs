@@ -8,9 +8,13 @@ One or more groups of attributes that tell the system about the devices your dri
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
-This key contains a dictionary of driver , each of which specifies how to pair the driver to a device. Each key in the dictionary is a string you designate as the name of a specific personality, and the system doesn’t use your key names internally. The value of each key is a dictionary of attributes that describe the specific device to match with the driver. Thus, each key and dictionary combination represents a single personality of the driver. The system uses these personalities to match the driver to an attached device.
+This key contains a dictionary of driver *personalities*, each of which specifies how to pair the driver to a device. Each key in the dictionary is a string you designate as the name of a specific personality, and the system doesn’t use your key names internally. The value of each key is a dictionary of attributes that describe the specific device to match with the driver. Thus, each key and dictionary combination represents a single personality of the driver. The system uses these personalities to match the driver to an attached device.
 
 During the matching process, the system compares the attributes in each personality dictionary to data it obtained from the attached device. For example, if the personality dictionary includes the `VendorID` key, the system compares that key to the vendor information from the device. The system picks the driver that is compatible with the device and provides the best overall match. It then uses additional information from the personality dictionary to load and run the driver.
 

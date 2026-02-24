@@ -35,8 +35,8 @@ This method is a compatibility method. If a subclass overrides this method and d
 ## Parameters
 
 - `partialString`: The text currently in a cell.
-- `newString`: If   needs to be modified, upon return contains the replacement string.
-- `error`: If non- , if validation fails contains an   object that describes the problem.
+- `newString`: If `partialString` needs to be modified, upon return contains the replacement string.
+- `error`: If non-`nil`, if validation fails contains an `NSString` object that describes the problem.
 
 ## See Also
 

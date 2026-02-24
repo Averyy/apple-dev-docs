@@ -33,8 +33,8 @@ This method returns [`false`](https://developer.apple.com/documentation/Swift/fa
 
 ## Parameters
 
-- `animation`: The animation you specify must take place in a view descended from the container view.
-- `completion`: The block of code to execute after the transition finishes. You may specify   for this parameter. The block has no return value and takes the following parameter:
+- `animation`: A block containing the animations you want to perform. These animations run in the same context as the transition animations and therefore have the same default attributes. You may specify `nil` for this parameter. The block has no return value and takes the following parameter: - **context**: The contextual information for performing the animations. Use this object to get the animation-related information, including the container view in which to run your animations. For more information, see [`UIViewControllerTransitionCoordinatorContext`](uiviewcontrollertransitioncoordinatorcontext.md). The animation you specify must take place in a view descended from the container view.
+- `completion`: The block of code to execute after the transition finishes. You may specify `nil` for this parameter. The block has no return value and takes the following parameter: - **context**: The contextual information for performing the animations. Use this object to get the animation-related information, including the container view in which to run your animations. For more information, see [`UIViewControllerTransitionCoordinatorContext`](uiviewcontrollertransitioncoordinatorcontext.md).
 
 ## See Also
 

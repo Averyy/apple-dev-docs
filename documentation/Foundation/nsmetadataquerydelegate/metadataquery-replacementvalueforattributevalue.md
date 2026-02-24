@@ -30,7 +30,7 @@ The delegate implementation of this method could convert specific query attribut
 
 ## Parameters
 
-- `query`: The query that produced the result object with  .
+- `query`: The query that produced the result object with `attrName`.
 - `attrName`: The attribute in question.
 - `attrValue`: The attribute value to replace.
 

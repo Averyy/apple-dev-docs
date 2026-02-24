@@ -30,8 +30,8 @@ Prior to linking each item, the file manager asks its delegate if it should actu
 
 ## Parameters
 
-- `srcURL`: The file URL that identifies the source of the link. The URL in this parameter must not be a file reference URL; it must specify the actual path to the item. The value in this parameter must not be  .
-- `dstURL`: The file URL that specifies where you want to create the hard link. The URL in this parameter must not be a file reference URL; it must specify the actual path to the item. The value in this parameter must not be  .
+- `srcURL`: The file URL that identifies the source of the link. The URL in this parameter must not be a file reference URL; it must specify the actual path to the item. The value in this parameter must not be `nil`.
+- `dstURL`: The file URL that specifies where you want to create the hard link. The URL in this parameter must not be a file reference URL; it must specify the actual path to the item. The value in this parameter must not be `nil`.
 
 ## See Also
 

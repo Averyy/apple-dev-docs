@@ -18,6 +18,9 @@ The data format field contains the format of the timed metadata media, which is 
 
 The metadata sample description must contain a metadata key table atom and optionally contains a bit rate atom following the standard sample description atom header, defined below. Other atoms may be introduced in the future.
 
+- **Metadata key table**: An atom containing a table of keys and mappings to payload data in the corresponding timed metadata media samples.
+- **Bit rate atom**: An optional atom that contains data that signals the bit rate of a media stream.
+
 ## Topics
 
 ### Describing timed metadata

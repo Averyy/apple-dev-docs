@@ -30,8 +30,8 @@ This function accesses one of the characters of a string written to an in-line b
 
 ## Parameters
 
-- `buf`: The initialized CFStringInlineBuffer structure in which the characters are stored. You should initialize the structure with the   function.
-- `idx`: The location of a character in the in-line buffer  . This index is relative to the range specified when   was created.
+- `buf`: The initialized CFStringInlineBuffer structure in which the characters are stored. You should initialize the structure with the [`CFStringInitInlineBuffer(_:_:_:)`](cfstringinitinlinebuffer(_:_:_:).md) function.
+- `idx`: The location of a character in the in-line buffer `buf`. This index is relative to the range specified when `buf` was created.
 
 ## See Also
 

@@ -11,6 +11,10 @@ A Boolean value that indicates whether the app supports the Command-P keyboard s
 - Mac Catalyst 15.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 When the value for this key is `YES`, the system adds the Command-P keyboard shortcut to the app. When someone enters Command-P while using the app, the system calls the [`printContent(_:)`](https://developer.apple.com/documentation/UIKit/UIResponderStandardEditActions/printContent(_:)) method on the first responder that implements the method found in the responder chain.

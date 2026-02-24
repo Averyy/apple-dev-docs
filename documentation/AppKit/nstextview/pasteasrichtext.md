@@ -20,7 +20,7 @@ The text is inserted at the insertion point if there is one, otherwise replacing
 
 ## Parameters
 
-- `sender`: The control that sent the message; may be  .
+- `sender`: The control that sent the message; may be `nil`.
 
 ## See Also
 

@@ -26,7 +26,7 @@ You discover accessories to add to a home using the [`HMAccessoryBrowser`](hmacc
 ## Parameters
 
 - `accessory`: The accessory to add to the home.
-- `completion`: The block executed after the request is processed.
+- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 

@@ -33,7 +33,7 @@ Text("The time is \(myDate, format: Date.FormatStyle(date: .omitted, time:.compl
 ## Parameters
 
 - `input`: The instance to format and append.
-- `format`: A format style to use when converting   into an attributed   string representation.
+- `format`: A format style to use when converting `input` into an attributed string representation.
 
 ## See Also
 

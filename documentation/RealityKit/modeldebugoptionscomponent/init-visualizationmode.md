@@ -21,7 +21,7 @@ init(visualizationMode: ModelDebugOptionsComponent.VisualizationMode = .none)
 
 ## Parameters
 
-- `visualizationMode`: The portion of the rendering process to use as the   entity’s surface texture.
+- `visualizationMode`: The portion of the rendering process to use as the entity’s surface texture.
 
 
 ---

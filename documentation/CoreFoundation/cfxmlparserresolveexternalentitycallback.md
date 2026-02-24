@@ -26,7 +26,7 @@ If this callback is not defined, the parser uses its internal routines to try an
 
 - `parser`: The CFXMLParser object making the callback.
 - `extID`: The identifier for the external entity.
-- `info`: The program-defined context data you specified in the   structure when creating the parser.
+- `info`: The program-defined context data you specified in the [`CFXMLParserContext`](cfxmlparsercontext.md) structure when creating the parser.
 
 ## See Also
 

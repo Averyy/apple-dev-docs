@@ -25,7 +25,7 @@ A HealthKit unit object, or `nil` if the unit parameter is not a valid length fo
 
 ## Parameters
 
-- `lengthFormatterUnit`: A valid length formatter unit value. For a list of possible length formatter unit values, see  .
+- `lengthFormatterUnit`: A valid length formatter unit value. For a list of possible length formatter unit values, see [`LengthFormatter.Unit`](https://developer.apple.com/documentation/Foundation/LengthFormatter/Unit).
 
 ## See Also
 

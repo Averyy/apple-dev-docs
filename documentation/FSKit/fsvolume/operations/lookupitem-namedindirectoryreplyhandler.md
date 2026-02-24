@@ -25,7 +25,7 @@ If no item matching `name` exists in the directory indicated by `directory`, com
 
 - `name`: The name of the item to look up.
 - `directory`: The directory in which to look up the item.
-- `reply`: A block or closure to indicate success or failure. If lookup succeeds, pass the found   and its   (as saved within the file system), along with a   error. If lookup fails, pass the relevant error as the third parameter; any   or   are ignored in this case. For an   Swift implementation, there’s no reply handler; simply return the   and   as a tuple or throw an error.
+- `reply`: A block or closure to indicate success or failure. If lookup succeeds, pass the found [`FSItem`](fsitem.md) and its [`FSFileName`](fsfilename.md) (as saved within the file system), along with a `nil` error. If lookup fails, pass the relevant error as the third parameter; any [`FSItem`](fsitem.md) or [`FSFileName`](fsfilename.md) are ignored in this case. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSItem`](fsitem.md) and [`FSFileName`](fsfilename.md) as a tuple or throw an error.
 
 ## See Also
 

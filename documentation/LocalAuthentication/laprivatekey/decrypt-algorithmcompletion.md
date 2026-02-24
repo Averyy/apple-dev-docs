@@ -28,7 +28,8 @@ func decrypt(_ data: Data, algorithm: SecKeyAlgorithm) async throws -> Data
 
 - `data`: The data to decrypt.
 - `algorithm`: The algorithm to use to decrypt the data.
-- `handler`: A completion handler to call when the decryption operation completes.
+- `handler`: A completion handler to call when the decryption operation completes. - **`data`**: The decrypted data.
+- **`error`**: An error object that indicates why the decryption failed, or `nil` if it succeeded.
 
 ## See Also
 

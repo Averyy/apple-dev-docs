@@ -24,7 +24,7 @@ A system-default template image.
 
 ## Parameters
 
-- `traitCollection`: The trait collection that describes the image to retrieve. Pass   to use traits that describe the main screen.
+- `traitCollection`: The trait collection that describes the image to retrieve. Pass `nil` to use traits that describe the main screen.
 
 ## See Also
 

@@ -46,9 +46,9 @@ Simulator is useful during development, but it doesn’t provide certain CarPlay
 
 For example, you can’t use Simulator to test:
 
-- . A user often interacts with CarPlay without first unlocking their iPhone. Your CarPlay-enabled app must perform its primary functions when the iPhone is in a locked state.
-- . Users interact with certain CarPlay features using Siri exclusively. Ensure that your CarPlay-enabled app works as you expect throughout these interactions.
-- . You CarPlay app must be a good audio citizen. Be mindful that audio may come from other sources when CarPlay is active. If your CarPlay-enabled app isn’t playing audio, deactivate its audio session. For example, an audio navigation prompt should cause the vehicle’s radio volume to lower and then rise again after the prompt finishes.
+- **When iOS locks the iPhone**. A user often interacts with CarPlay without first unlocking their iPhone. Your CarPlay-enabled app must perform its primary functions when the iPhone is in a locked state.
+- **Siri**. Users interact with certain CarPlay features using Siri exclusively. Ensure that your CarPlay-enabled app works as you expect throughout these interactions.
+- **Audio behavior**. You CarPlay app must be a good audio citizen. Be mindful that audio may come from other sources when CarPlay is active. If your CarPlay-enabled app isn’t playing audio, deactivate its audio session. For example, an audio navigation prompt should cause the vehicle’s radio volume to lower and then rise again after the prompt finishes.
 
 ## See Also
 

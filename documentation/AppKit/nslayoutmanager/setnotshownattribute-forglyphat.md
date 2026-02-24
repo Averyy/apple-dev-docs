@@ -24,7 +24,7 @@ This method is used by the layout mechanism and should be invoked only during ty
 
 ## Parameters
 
-- `flag`: If  , the glyph is not shown; if  , it is shown.
+- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), the glyph is not shown; if [`false`](https://developer.apple.com/documentation/Swift/false), it is shown.
 - `glyphIndex`: Index of the glyph whose attribute is set.
 
 ## See Also

@@ -26,7 +26,7 @@ When encoding, an archiver consults its own translation map before using the cla
 
 ## Parameters
 
-- `codedName`: The name of the class that   uses in place of  .
+- `codedName`: The name of the class that `NSKeyedArchiver` uses in place of `cls`.
 - `cls`: The class for which to set up a translation mapping.
 
 ## See Also

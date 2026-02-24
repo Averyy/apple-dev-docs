@@ -30,7 +30,7 @@ In most cases, you should use [`AudioFileWritePackets(_:_:_:_:_:_:_:)`](audiofil
 ## Parameters
 
 - `inAudioFile`: The audio file to which you want to write bytes of data.
-- `inUseCache`: Set to   if you want to cache the data. Otherwise, set to  .
+- `inUseCache`: Set to `true` if you want to cache the data. Otherwise, set to `false`.
 - `inStartingByte`: The byte offset where the audio data should be written.
 - `ioNumBytes`: On input, a pointer the number of bytes to write. On output, a pointer to the number of bytes actually written.
 - `inBuffer`: A pointer to a buffer containing the bytes to be written.

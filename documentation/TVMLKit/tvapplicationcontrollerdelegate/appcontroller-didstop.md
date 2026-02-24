@@ -16,7 +16,7 @@ optional func appController(_ appController: TVApplicationController, didStop op
 
 ## Parameters
 
-- `appController`: The   object that has stopped.
+- `appController`: The [`TVApplicationController`](tvapplicationcontroller.md) object that has stopped.
 - `options`: The launch options passed to the app controller.
 
 ## See Also

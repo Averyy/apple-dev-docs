@@ -24,7 +24,7 @@ An [`NSTextLayoutFragment`](nstextlayoutfragment.md).
 
 ## Parameters
 
-- `position`: A   that describes the position in the coordinate system for the text container.
+- `position`: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) that describes the position in the coordinate system for the text container.
 
 ## See Also
 

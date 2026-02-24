@@ -47,7 +47,7 @@ Soup Chef uses the three parameters to define the different shortcut types. A sh
 
 These types define the schema that Siri uses to identify requests the user makes; for example, “Order tomato soup with cheese.” The parameter combination for this example is: `soup` and `toppings`.
 
-Soup Chef marks each shortcut type with ; this way, the system doesn’t need to open the app to handle the intent. When marked this way, the system uses Soup Chef’s Intents app extension to handle the order. This provides a better user experience because the user never leaves their current screen.
+Soup Chef marks each shortcut type with *Supports background execution*; this way, the system doesn’t need to open the app to handle the intent. When marked this way, the system uses Soup Chef’s Intents app extension to handle the order. This provides a better user experience because the user never leaves their current screen.
 
 ##### Define Custom Responses
 
@@ -137,7 +137,7 @@ override func restoreUserActivityState(_ activity: NSUserActivity) {
 
 Ordering soup based on suggestions from Siri is a great start to expediting soup orders, but Soup Chef goes one step further by letting the user set a voice phrase for a particular order, and adding that phrase to Siri. Afterward, the user can ask Siri to place the order by saying the phrase. For example, the user can add to Siri the phrase, “Clam chowder time,” for the shortcut that orders clam chowder with croutons. The next time the user craves clam chowder, they say to Siri, “Clam chowder time,” and Siri tells Soup Chef to place an order for clam chowder with croutons.
 
-Users can set custom phrases in the Shortcuts app. To make the experience better, however, Soup Chef provides the option to add the phrase directly from the app. From the order history, the user can tap a previous order to view its details. At the bottom of the order details is an  button that, when tapped, lets the user set a new phrase. Soup Chef also provides a suggested phrase to help inspire the user.
+Users can set custom phrases in the Shortcuts app. To make the experience better, however, Soup Chef provides the option to add the phrase directly from the app. From the order history, the user can tap a previous order to view its details. At the bottom of the order details is an *Add to Siri* button that, when tapped, lets the user set a new phrase. Soup Chef also provides a suggested phrase to help inspire the user.
 
 ```swift
 addShortcutButton = INUIAddVoiceShortcutButton(style: .automaticOutline)

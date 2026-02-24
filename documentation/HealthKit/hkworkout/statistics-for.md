@@ -27,7 +27,7 @@ If there are no matching quantity values, this method returns `nil`.
 
 ## Parameters
 
-- `quantityType`: The type of   objects used to calculate the statistics.
+- `quantityType`: The type of [`HKQuantitySample`](hkquantitysample.md) objects used to calculate the statistics.
 
 ## See Also
 

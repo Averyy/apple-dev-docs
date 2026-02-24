@@ -26,7 +26,7 @@ The default implementation of this method forwards the message up the responder 
 
 ## Parameters
 
-- `motion`: An event-subtype constant indicating the kind of motion. A common motion is shaking, which is indicated by  .
+- `motion`: An event-subtype constant indicating the kind of motion. A common motion is shaking, which is indicated by [`UIEvent.EventSubtype.motionShake`](uievent/eventsubtype/motionshake.md).
 - `event`: An object representing the event associated with the motion.
 
 ## See Also

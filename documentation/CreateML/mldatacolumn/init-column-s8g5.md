@@ -40,7 +40,7 @@ print(dictionaryColumn) // Prints [[1: one, 2: two, 3: three], [5: five, 4: four
 
 ## Parameters
 
-- `column`: An   of elements convertible to  .
+- `column`: An [`MLDataColumn`](mldatacolumn.md) of elements convertible to [`MLDataValue.DictionaryType`](mldatavalue/dictionarytype.md).
 
 ## See Also
 

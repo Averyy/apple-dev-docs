@@ -48,7 +48,7 @@ Some asynchronous activities, such as saving, need to do work on the main thread
 
 ## Parameters
 
-- `waitSynchronously`: If  , the method does not return until previous activities are complete and the passed-in block has been invoked. If  , the method might return before passed-in block is invoked. It might instead be invoked later, on the main thread, after previous activities are complete.
+- `waitSynchronously`: If [`true`](https://developer.apple.com/documentation/Swift/true), the method does not return until previous activities are complete and the passed-in block has been invoked. If [`false`](https://developer.apple.com/documentation/Swift/false), the method might return before passed-in block is invoked. It might instead be invoked later, on the main thread, after previous activities are complete.
 - `block`: A block that performs work that might result in the presentation of a modal dialog.
 
 ## See Also

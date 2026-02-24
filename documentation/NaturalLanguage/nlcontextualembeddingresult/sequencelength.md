@@ -23,9 +23,9 @@ var sequenceLength: Int { get }
 ## See Also
 
 - [var language: NLLanguage](nlcontextualembeddingresult/language.md)
-  The resulting language.
+  The language that the framework identified or used when processing the input string.
 - [var string: String](nlcontextualembeddingresult/string.md)
-  The string value.
+  A copy of the input string used to generate the embedding vectors.
 
 
 ---

@@ -27,7 +27,7 @@ The system calls the specified action only when the zoom slider changes the devi
 ## Parameters
 
 - `device`: The capture device to control.
-- `action`: An action the system calls on the main actor to respond to changes to the device’s   property.
+- `action`: An action the system calls on the main actor to respond to changes to the device’s [`videoZoomFactor`](avcapturedevice/videozoomfactor.md) property.
 
 ## See Also
 

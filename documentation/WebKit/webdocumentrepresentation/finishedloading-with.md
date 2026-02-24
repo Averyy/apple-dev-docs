@@ -17,7 +17,7 @@ func finishedLoading(with dataSource: WebDataSource!)
 
 ## Parameters
 
-- `dataSource`: A   object that identifies the request that finished loading.
+- `dataSource`: A `WebDataSource` object that identifies the request that finished loading.
 
 ## See Also
 

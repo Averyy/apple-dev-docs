@@ -26,7 +26,7 @@ A string representation of `anURL`. Ownership follows the get rule. See [`The Ge
 
 ## Parameters
 
-- `anURL`: The   object to convert into a   object.
+- `anURL`: The `CFURL` object to convert into a `CFString` object.
 
 ## See Also
 

@@ -26,7 +26,8 @@ When you run the query, it calls the data handler once for each voltage measurem
 ## Parameters
 
 - `ecg`: The electrocardiogram sample whose voltages you want to access.
-- `dataHandler`: A block that the query calls repeatedly to return the voltage data. The handler takes the following parameters:
+- `dataHandler`: A block that the query calls repeatedly to return the voltage data. The handler takes the following parameters: - **`query`**: The query that returned the results.
+- **result**: An enumeration that contains a result value.
 
 
 ---

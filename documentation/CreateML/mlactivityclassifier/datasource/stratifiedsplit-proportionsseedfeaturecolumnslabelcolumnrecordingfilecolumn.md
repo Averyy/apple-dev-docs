@@ -20,7 +20,7 @@ A new [`MLDataTable`](mldatatable.md) instance.
 
 ## Parameters
 
-- `proportions`: An array of proportions, each in the range  .
+- `proportions`: An array of proportions, each in the range `[0.0, 1.0]`.
 - `seed`: A seed number for the random-number generator.
 - `featureColumns`: The names of the feature columns the method includes in the data table.
 - `labelColumn`: The name of the label column the methods stratifies.

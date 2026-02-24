@@ -24,7 +24,7 @@ Use this method to create a text provider that returns localized strings.
 
 ## Parameters
 
-- `textKey`: The key for the desired text. This key must appear in the localized string files named   in the WatchKit extension target.
+- `textKey`: The key for the desired text. This key must appear in the localized string files named `ckcomplication.strings` in the WatchKit extension target.
 
 ## See Also
 

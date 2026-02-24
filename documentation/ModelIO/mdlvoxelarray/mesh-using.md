@@ -31,7 +31,7 @@ The `allocator` parameter controls vertex data allocation for the mesh. For exam
 
 ## Parameters
 
-- `allocator`: An object responsible for allocating mesh vertex data. If  , Model I/O uses an internal allocator object.
+- `allocator`: An object responsible for allocating mesh vertex data. If `nil`, Model I/O uses an internal allocator object.
 
 
 ---

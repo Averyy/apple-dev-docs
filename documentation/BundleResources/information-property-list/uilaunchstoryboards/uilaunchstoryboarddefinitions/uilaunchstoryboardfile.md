@@ -9,6 +9,10 @@ A launch storyboard file or xib.
 - iOS 9.0+
 - iPadOS 9.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [UILaunchStoryboardIdentifier](information-property-list/uilaunchstoryboards/uilaunchstoryboarddefinitions/uilaunchstoryboardidentifier.md)

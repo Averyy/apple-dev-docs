@@ -28,7 +28,7 @@ Obtain the server name offered by a client or server during connection establish
 
 ## Parameters
 
-- `metadata`: A   instance.
+- `metadata`: A `sec_protocol_metadata_t` instance.
 
 
 ---

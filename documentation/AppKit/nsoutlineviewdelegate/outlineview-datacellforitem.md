@@ -32,7 +32,7 @@ If you return a cell for the `nil` table column, prepare the other corresponding
 ## Parameters
 
 - `outlineView`: The outline view that sent the message.
-- `tableColumn`: The table column that requires the cell. This value can be  .
+- `tableColumn`: The table column that requires the cell. This value can be `nil`.
 - `item`: The item that requires the cell.
 
 ## See Also

@@ -28,7 +28,7 @@ Touch-related properties may remain estimated because of hardware considerations
 
 ## Parameters
 
-- `touches`: The array of   objects containing the updated properties. In each touch object, UIKit updates the   property by removing the bit flag for each property that was updated.
+- `touches`: The array of [`UITouch`](uitouch.md) objects containing the updated properties. In each touch object, UIKit updates the [`estimatedPropertiesExpectingUpdates`](uitouch/estimatedpropertiesexpectingupdates.md) property by removing the bit flag for each property that was updated.
 
 ## See Also
 

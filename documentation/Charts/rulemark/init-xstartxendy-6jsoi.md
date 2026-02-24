@@ -42,7 +42,7 @@ See the second code example in [`RuleMark`](rulemark.md) for the setup of the st
 
 - `xStart`: The value plotted with x start.
 - `xEnd`: The value plotted with x end.
-- `y`: The y position.   If   is  , the rule will be centered vertically by default.
+- `y`: The y position.   If `y` is `nil`, the rule will be centered vertically by default.
 
 
 ---

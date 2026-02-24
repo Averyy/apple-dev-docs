@@ -27,7 +27,7 @@ A CFData object that contains a copy of the stream data. You are responsible for
 ## Parameters
 
 - `stream`: A PDF stream.
-- `format`: On return, contains a constant that specifies the format of the data returned— ,  , or  .
+- `format`: On return, contains a constant that specifies the format of the data returned—[`CGPDFDataFormat.raw`](cgpdfdataformat/raw.md), [`CGPDFDataFormat.jpegEncoded`](cgpdfdataformat/jpegencoded.md), or [`CGPDFDataFormat.JPEG2000`](cgpdfdataformat/jpeg2000.md).
 
 ## See Also
 

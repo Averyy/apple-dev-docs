@@ -105,7 +105,7 @@ The [`openURL`](https://developer.apple.com/documentation/SwiftUI/EnvironmentVal
 
 ###### Known Issues
 
-- [`MusicKit`](https://developer.apple.com/documentation/MusicKit) functionality, such as loading content with music requests, doesn’t work in simulated devices. (78559381) : Test your app’s `MusicKit` functionality on a physical device.
+- [`MusicKit`](https://developer.apple.com/documentation/MusicKit) functionality, such as loading content with music requests, doesn’t work in simulated devices. (78559381) **Workaround**: Test your app’s `MusicKit` functionality on a physical device.
 
 ## See Also
 

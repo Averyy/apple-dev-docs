@@ -20,7 +20,7 @@ virtual kern_return_t SetEnable(bool isEnable);
 
 ## Parameters
 
-- `isEnable`: If  , prepare the queue to run.
+- `isEnable`: If `YES`, prepare the queue to run.
 
 
 ---

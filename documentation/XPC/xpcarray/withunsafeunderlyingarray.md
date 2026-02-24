@@ -26,7 +26,7 @@ The return value, if any, of the closure.
 
 ## Parameters
 
-- `closure`: A closure that takes an   parameter. If   has a return value, that value is also used as the return value for the withUnsafeUnderlyingArray(body:) function.
+- `closure`: A closure that takes an [`xpc_object_t`](xpc_object_t.md) parameter. If `closure` has a return value, that value is also used as the return value for the withUnsafeUnderlyingArray(body:) function.
 
 ## See Also
 

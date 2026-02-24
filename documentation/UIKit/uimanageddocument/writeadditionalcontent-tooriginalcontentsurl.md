@@ -34,7 +34,7 @@ Additional content isn’t supported on iCloud.
 
 ## Parameters
 
-- `content`: This is the object returned from  .
+- `content`: An object that represents the additional content for the document. This is the object returned from [`additionalContent(for:)`](uimanageddocument/additionalcontent(for:).md).
 - `absoluteURL`: The URL to which to write the additional content.
 - `absoluteOriginalContentsURL`: The current URL of the document that’s being saved.
 

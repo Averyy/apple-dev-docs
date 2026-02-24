@@ -24,7 +24,7 @@ This method removes all entities of the specified type from the app’s indexes.
 
 ## Parameters
 
-- `entityType`: One of your app’s entity types. For example, specify    to delete all instances of   you added to the index.
+- `entityType`: One of your app’s entity types. For example, specify `MyEntity.Type` to delete all instances of `MyEntity` you added to the index.
 
 ## See Also
 

@@ -29,7 +29,7 @@ Virtual sources and destinations don’t have entities.
 ## Parameters
 
 - `inEndpoint`: The endpoint to query.
-- `outEntity`: On exit, the endpoint’s owning entity, or   if none.
+- `outEntity`: On exit, the endpoint’s owning entity, or `NULL` if none.
 
 ## See Also
 

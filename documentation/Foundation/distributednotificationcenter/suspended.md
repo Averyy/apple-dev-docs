@@ -23,7 +23,7 @@ The [`NSApplication`](https://developer.apple.com/documentation/AppKit/NSApplica
 
 ## Parameters
 
-- `suspended`:   suspends notification delivery,   resumes it.
+- `suspended`: [`true`](https://developer.apple.com/documentation/Swift/true) suspends notification delivery, [`false`](https://developer.apple.com/documentation/Swift/false) resumes it.
 
 ## See Also
 

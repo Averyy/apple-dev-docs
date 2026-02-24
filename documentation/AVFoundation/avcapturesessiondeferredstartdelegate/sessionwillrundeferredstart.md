@@ -25,7 +25,7 @@ Delegates receive this message when the session has finished the deferred start.
 
 ## Parameters
 
-- `session`: The   instance that runs the deferred start.
+- `session`: The [`AVCaptureSession`](avcapturesession.md) instance that runs the deferred start.
 
 ## See Also
 

@@ -24,7 +24,7 @@ An array of dictionaries of labeled images.
 
 ## Parameters
 
-- `proportions`: An array of proportions, each in the range  .
+- `proportions`: An array of proportions, each in the range `[0.0, 1.0]`.
 - `seed`: A seed number for the random-number generator.
 
 ## See Also

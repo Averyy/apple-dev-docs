@@ -17,11 +17,11 @@ AVFoundation supports monitoring playback state with Observation, but it doesnâ€
 AVPlayer.isObservationEnabled = true
 ```
 
-Perform this opt-in early in your app lifecycle, such as in your main [`App`](https://developer.apple.com/documentation/SwiftUI/App) structure or [`UIApplicationDelegate`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate) (in a mixed UIKit and SwiftUI app). This setting is global to your app and must be set  creating playback objects. Attempting to change its value after creating these objects results in AVFoundation throwing an exception.
+Perform this opt-in early in your app lifecycle, such as in your main [`App`](https://developer.apple.com/documentation/SwiftUI/App) structure or [`UIApplicationDelegate`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate) (in a mixed UIKit and SwiftUI app). This setting is global to your app and must be set *before* creating playback objects. Attempting to change its value after creating these objects results in AVFoundation throwing an exception.
 
 #### Store Playback State
 
-You define a single source of truth in your app using a SwiftUI [`State`](https://developer.apple.com/documentation/SwiftUI/State) variable. This property wrapper always instantiates its default value when SwiftUI creates a view. When using it to store playback objects, either directly or as part of a custom `@Observable` model object, avoid performance issues or other potential side effects by deferring the creation of these objects by using the doc://com.apple.documentation/documentation/swiftui/view/task(priority:_:) modifier. For example, in a simple playback case you could define a state variable to hold a player object and initialize it like shown below:
+You define a single source of truth in your app using a SwiftUI [`State`](https://developer.apple.com/documentation/SwiftUI/State) variable. This property wrapper always instantiates its default value when SwiftUI creates a view. When using it to store playback objects, either directly or as part of a custom `@Observable` model object, avoid performance issues or other potential side effects by deferring the creation of these objects by using the [`task(priority:_:)`](https://developer.apple.com/documentation/swiftui/view/task(priority:_:)) modifier. For example, in a simple playback case you could define a state variable to hold a player object and initialize it like shown below:
 
 ```swift
 struct PlayerView: View {

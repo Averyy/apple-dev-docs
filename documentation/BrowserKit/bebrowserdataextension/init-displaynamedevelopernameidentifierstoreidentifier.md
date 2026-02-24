@@ -20,7 +20,7 @@ init(displayName: String, developerName: String, identifier: String, storeIdenti
 - `displayName`: The localized display name of the extension.
 - `developerName`: The name of the extension’s developer.
 - `identifier`: A unique identifier for the extension.
-- `storeIdentifier`: The App Store identifier for the extension, or   if not available.
+- `storeIdentifier`: The App Store identifier for the extension, or `nil` if not available.
 
 
 ---

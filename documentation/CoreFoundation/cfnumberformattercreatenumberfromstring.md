@@ -26,11 +26,11 @@ A new number that represents the given string. Returns `NULL` if there was a pro
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 - `formatter`: The number formatter to use.
 - `string`: The string to parse.
-- `rangep`: A reference to a range that specifies the substring of    to be parsed. If  , the whole string is parsed. On return, contains the range of the actual extent of the parse (may be less than the given range).
-- `options`: Specifies various configuration options to change the behavior of the parse. Currently,   is the only possible value for this parameter.
+- `rangep`: A reference to a range that specifies the substring of  `string` to be parsed. If `NULL`, the whole string is parsed. On return, contains the range of the actual extent of the parse (may be less than the given range).
+- `options`: Specifies various configuration options to change the behavior of the parse. Currently, [`parseIntegersOnly`](cfnumberformatteroptionflags/parseintegersonly.md) is the only possible value for this parameter.
 
 ## See Also
 

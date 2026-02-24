@@ -44,7 +44,7 @@ struct RootView: View {
 
 ## Parameters
 
-- `action`: A closure to run when the state of the window’s   interactive resize changes.
+- `action`: A closure to run when the state of the window’s interactive resize changes.
 
 
 ---

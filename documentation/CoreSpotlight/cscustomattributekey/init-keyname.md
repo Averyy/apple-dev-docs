@@ -28,7 +28,7 @@ To create custom attribute key names, use a reverse DNS format that includes you
 
 ## Parameters
 
-- `keyName`: The name of the custom attribute for use as a key in a  . The key name must be a string that contains only ASCII characters and no punctuation other than the underscore (that is “_”). The prefix   is reserved.
+- `keyName`: The name of the custom attribute for use as a key in a [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md). The key name must be a string that contains only ASCII characters and no punctuation other than the underscore (that is “_”). The prefix `kMD` is reserved.
 
 ## See Also
 

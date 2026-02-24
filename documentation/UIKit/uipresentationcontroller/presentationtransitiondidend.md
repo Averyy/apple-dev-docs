@@ -26,7 +26,7 @@ For an example of how to implement this method, see [`Add custom views to a pres
 
 ## Parameters
 
-- `completed`:   if the animations completed and the presented view controller is now visible or   if the animations were canceled and the presenting view controller is still visible.
+- `completed`: [`true`](https://developer.apple.com/documentation/Swift/true) if the animations completed and the presented view controller is now visible or [`false`](https://developer.apple.com/documentation/Swift/false) if the animations were canceled and the presenting view controller is still visible.
 
 ## See Also
 

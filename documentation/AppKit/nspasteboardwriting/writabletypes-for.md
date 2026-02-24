@@ -27,7 +27,7 @@ To change the default behavior, implement -writingOptionsForType:pasteboard: and
 
 ## Parameters
 
-- `pasteboard`: You can use this argument to provide different options based on the pasteboard name, if you need to.
+- `pasteboard`: A pasteboard. You can use this argument to provide different options based on the pasteboard name, if you need to.
 
 ## See Also
 

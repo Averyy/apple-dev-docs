@@ -32,7 +32,7 @@ This function opens a stream created by [`compressionStream(appendingTo:flags:th
 
 - `compressedStream`: The output stream that the function reopens and receives the compressed data.
 - `flags`: Flags that control the behavior of the operation.
-- `threadCount`: The number of worker threads that the operation uses, set to   for default.
+- `threadCount`: The number of worker threads that the operation uses, set to `0` for default.
 - `body`: A closure with the archive byte stream passed as a parameter.
 
 ## See Also

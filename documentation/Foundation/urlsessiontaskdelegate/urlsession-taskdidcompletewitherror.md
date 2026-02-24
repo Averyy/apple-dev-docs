@@ -35,7 +35,7 @@ The only errors your delegate receives through the `error` parameter are client-
 
 - `session`: The session containing the task that has finished transferring data.
 - `task`: The task that has finished transferring data.
-- `error`: If an error occurred, an error object indicating how the transfer failed, otherwise  .
+- `error`: If an error occurred, an error object indicating how the transfer failed, otherwise `NULL`.
 
 
 ---

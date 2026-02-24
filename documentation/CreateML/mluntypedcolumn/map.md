@@ -25,7 +25,7 @@ A new `MLDataColumn` typed to the return type of `lazyTransform`.
 
 ## Parameters
 
-- `lazyTransform`: A thread-safe element transformation function. The   implementation of the transform you provide should accept an    of the column and return a transformed value of a type that conforms to   .
+- `lazyTransform`: A thread-safe element transformation function. The implementation of the transform you provide should accept an `Element` of the column and return a transformed value of a type that conforms to [`MLDataValueConvertible`](mldatavalueconvertible.md).
 
 ## See Also
 

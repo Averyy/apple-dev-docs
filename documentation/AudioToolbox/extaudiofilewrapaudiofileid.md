@@ -30,7 +30,7 @@ Allocates a new extended audio file object that wraps an existing audio file obj
 ## Parameters
 
 - `inFileID`: The audio file object to wrap.
-- `inForWriting`: Use   if you intend to write to the audio file,   otherwise.
+- `inForWriting`: Use `true` if you intend to write to the audio file, `false` otherwise.
 - `outExtAudioFile`: On output, a newly allocated extended audio file object.
 
 ## See Also

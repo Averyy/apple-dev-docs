@@ -31,7 +31,7 @@ An example where this method might be called is when you want a single-tap gestu
 
 ## Parameters
 
-- `otherGestureRecognizer`: Another gesture-recognizer object (an instance of a subclass of  ).
+- `otherGestureRecognizer`: Another gesture-recognizer object (an instance of a subclass of [`UIGestureRecognizer`](uigesturerecognizer.md)).
 
 ## See Also
 

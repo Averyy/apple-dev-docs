@@ -27,7 +27,7 @@ Use this call to create a display link for a set of displays identified by the C
 
 - `displayArray`: A pointer to an array of Core Graphics display IDs representing all the active monitors you want to use with this display link.
 - `count`: The number of displays in the display array.
-- `displayLinkOut`: On output,   points to the newly created display link.
+- `displayLinkOut`: On output, `displayLinkOut` points to the newly created display link.
 
 ## See Also
 

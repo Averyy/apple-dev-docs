@@ -30,10 +30,10 @@ The `isDirectory` argument specifies whether or not the new path component point
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
-- `url`: The   object to which to append a path component.
-- `pathComponent`: The path component to append to  .
-- `isDirectory`: A Boolean value that specifies whether the string is treated as a directory path when resolving against relative path components. Pass   if the new component indicates a directory,   otherwise.
+- `allocator`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `url`: The `CFURL` object to which to append a path component.
+- `pathComponent`: The path component to append to `url`.
+- `isDirectory`: A Boolean value that specifies whether the string is treated as a directory path when resolving against relative path components. Pass `true` if the new component indicates a directory, `false` otherwise.
 
 ## See Also
 

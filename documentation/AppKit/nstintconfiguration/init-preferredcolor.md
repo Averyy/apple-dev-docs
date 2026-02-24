@@ -20,7 +20,7 @@ Use this tint configuration for custom colors designed to match app-specific acc
 
 ## Parameters
 
-- `color`: The color used when the system accent color is  .
+- `color`: The color used when the system accent color is `Multicolor`.
 
 ## See Also
 

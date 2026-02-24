@@ -21,8 +21,8 @@ The removed `NSXMLNode` object is autoreleased.
 
 ## Parameters
 
-- `index`: An integer identifying a position in the receiver’s array of children. If   is less than zero or greater than the number of children minus one, an out-of-bounds exception is raised.
-- `node`: An   object to replace the one at  ; it must represent a comment, a processing instruction, or the root element.
+- `index`: An integer identifying a position in the receiver’s array of children. If `index` is less than zero or greater than the number of children minus one, an out-of-bounds exception is raised.
+- `node`: An [`XMLNode`](xmlnode.md) object to replace the one at `index`; it must represent a comment, a processing instruction, or the root element.
 
 ## See Also
 

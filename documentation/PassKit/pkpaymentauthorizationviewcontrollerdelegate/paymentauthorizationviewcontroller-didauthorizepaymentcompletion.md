@@ -26,7 +26,7 @@ This method is called after the payment request is authorized. You submit the pa
 
 - `controller`: The payment authorization view controller.
 - `payment`: The authorized payment. This object contains the payment token you need to submit to your payment processor, as well as the billing and shipping information required by the payment request.
-- `completion`: This block takes the following parameters:
+- `completion`: The completion block to call with the result of authorizing the payment. This block takes the following parameters: - **`status`**: The authorization status for the payment. For values, see [`PKPaymentAuthorizationStatus`](pkpaymentauthorizationstatus.md).
 
 ## See Also
 

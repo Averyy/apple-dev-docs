@@ -21,6 +21,10 @@ This service may return the same device more than once. You must resolve duplica
 - [object SyncDeviceRequest](syncdevicerequest.md)
   The request to sync the list of devices.
 
+## Endpoint
+
+`POST https://mdmenrollment.apple.com/devices/sync`
+
 ## Request Body
 
 The request to sync the list of devices.

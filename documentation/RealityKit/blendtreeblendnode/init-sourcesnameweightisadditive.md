@@ -23,8 +23,8 @@ init(sources: [any BlendTreeNode], name: String = "", weight: BlendWeight = .val
 
 - `sources`: The nodes that branch from this node to form part of a blend tree.
 - `name`: A textual name for the node.
-- `weight`: A normalized percentage that designates how much this node’s   animation influences the tree’s blended animation.
-- `isAdditive`: A Boolean value that indicates whether the animation   builds on the current state of the target entity or resets the state   before running.
+- `weight`: A normalized percentage that designates how much this node’s animation influences the tree’s blended animation.
+- `isAdditive`: A Boolean value that indicates whether the animation builds on the current state of the target entity or resets the state before running.
 
 
 ---

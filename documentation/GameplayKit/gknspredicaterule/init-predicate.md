@@ -27,6 +27,22 @@ A new predicate-based rule object.
 
 Rules based on [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) objects typically test information in the [`state`](gkrulesystem/state.md) dictionary of the rule system evaluating the rule. For example, the following code creates a rule you might use to determine whether an enemy character in a game behaves aggressively.
 
+**Swift**:
+
+```swift
+// MyNSPredicateRule is a GKNSPredicateRule subclass
+let healthTest = NSPredicate(format: "$player.health > 50")
+let rule = MyNSPredicateRule(predicate: healthTest)
+```
+
+**Objective-C**:
+
+```objc
+// MyNSPredicateRule is a GKNSPredicateRule subclass
+NSPredicate *healthTest = [NSPredicate predicateWithFormat:@"$player.health > 50"];
+MyNSPredicateRule *rule = [MyNSPredicateRule alloc] initWithPredicate:healthTest];
+```
+
 This example presumes the rule system’s state dictionary contains an object for the key `player`, which in turn exposes a numeric value for the key `health`. The [`GKNSPredicateRule`](gknspredicaterule.md) class by itself does nothing in its [`performAction(in:)`](gkrule/performaction(in:).md) method—to create actions for predicate-based rules, you must subclass [`GKNSPredicateRule`](gknspredicaterule.md).
 
 For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).

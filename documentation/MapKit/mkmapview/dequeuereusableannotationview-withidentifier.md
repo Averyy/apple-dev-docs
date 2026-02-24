@@ -29,7 +29,7 @@ For performance reasons, it’s best practice to reuse [`MKAnnotationView`](mkan
 
 ## Parameters
 
-- `identifier`: A string identifying the annotation view for the map view to reuse. This string is the same one you specify when initializing the annotation view using the   method.
+- `identifier`: A string identifying the annotation view for the map view to reuse. This string is the same one you specify when initializing the annotation view using the [`init(annotation:reuseIdentifier:)`](mkannotationview/init(annotation:reuseidentifier:).md) method.
 
 ## See Also
 

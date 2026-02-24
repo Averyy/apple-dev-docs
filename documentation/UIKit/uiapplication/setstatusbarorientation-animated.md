@@ -22,8 +22,8 @@ Calling this method changes the value of the  [`statusBarOrientation`](uiapplica
 
 ## Parameters
 
-- `interfaceOrientation`: A specific orientation of the status bar. See   for details. The default value is  .
-- `animated`:   if the transition to the new orientation should be animated;   if it should be immediate, without animation.
+- `interfaceOrientation`: A specific orientation of the status bar. See [`UIInterfaceOrientation`](uiinterfaceorientation.md) for details. The default value is [`UIInterfaceOrientation.portrait`](uiinterfaceorientation/portrait.md).
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) if the transition to the new orientation should be animated; [`false`](https://developer.apple.com/documentation/Swift/false) if it should be immediate, without animation.
 
 ## See Also
 

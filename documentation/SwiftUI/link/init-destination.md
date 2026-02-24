@@ -32,7 +32,7 @@ Link("Visit Example Co",
 
 ## Parameters
 
-- `titleKey`: The key for the localized title that describes the   purpose of this link.
+- `titleKey`: The key for the localized title that describes the purpose of this link.
 - `destination`: The URL for the link.
 
 ## See Also

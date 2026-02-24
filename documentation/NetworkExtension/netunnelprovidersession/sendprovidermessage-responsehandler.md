@@ -25,7 +25,7 @@ func sendProviderMessage(_ messageData: Data, responseHandler: ((Data?) -> Void)
 
 ## Parameters
 
-- `messageData`: An   object containing the message to be sent.
+- `messageData`: An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing the message to be sent.
 - `responseHandler`: An optional block that handles the response from the Tunnel Provider extension. Pass nil if no response is expected.
 
 

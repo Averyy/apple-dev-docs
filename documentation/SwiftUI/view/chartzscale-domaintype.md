@@ -21,7 +21,7 @@ func chartZScale<Domain>(domain: Domain, type: ScaleType? = nil) -> some View wh
 
 ## Parameters
 
-- `domain`: The possible data values along the z axis in the   chart. You can define the domain with a   for numeric values (e.g.,  ).
+- `domain`: The possible data values along the z axis in the chart. You can define the domain with a `ClosedRange` for numeric values (e.g., `0 ... 500`).
 - `type`: The scale type.
 
 

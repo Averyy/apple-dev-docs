@@ -24,7 +24,7 @@ For controls that contain configurable text or image content, use this property 
 
 ## Parameters
 
-- `contentAlignment`: A constant that specifies the horizontal alignment of text or images within the control. For a list of possible values, see  .
+- `contentAlignment`: A constant that specifies the horizontal alignment of text or images within the control. For a list of possible values, see [`UIControl.ContentHorizontalAlignment`](uicontrol/contenthorizontalalignment-swift.enum.md).
 
 ## See Also
 

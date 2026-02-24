@@ -13,6 +13,10 @@ The URL schemes supported by this type.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [CFBundleTypeRole](information-property-list/cfbundleurltypes/cfbundletyperole.md)

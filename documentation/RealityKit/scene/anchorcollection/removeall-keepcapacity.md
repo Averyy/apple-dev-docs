@@ -22,7 +22,7 @@ Removes all anchors from the collection.
 
 ## Parameters
 
-- `keepCapacity`: Pass true to keep the existing capacity of the array   after removing its elements. The default value is false.
+- `keepCapacity`: Pass true to keep the existing capacity of the array after removing its elements. The default value is false.
 
 ## See Also
 

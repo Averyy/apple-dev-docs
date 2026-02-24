@@ -35,7 +35,7 @@ HealthKit executes queries asynchronously on a background queue. Most queries au
 
 ## Parameters
 
-- `query`: A concrete subclass of the   class (any of the classes  ,  ,  ,  ,  ,  , or  ).
+- `query`: A concrete subclass of the [`HKQuery`](hkquery.md) class (any of the classes [`HKSampleQuery`](hksamplequery.md), [`HKAnchoredObjectQuery`](hkanchoredobjectquery.md), [`HKCorrelationQuery`](hkcorrelationquery.md), [`HKObserverQuery`](hkobserverquery.md), [`HKSourceQuery`](hksourcequery.md), [`HKStatisticsQuery`](hkstatisticsquery.md), or [`HKStatisticsCollectionQuery`](hkstatisticscollectionquery.md)).
 
 ## See Also
 

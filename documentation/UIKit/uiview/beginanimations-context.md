@@ -30,7 +30,7 @@ Use of this method is discouraged in iOS 4.0 and later. You should use the block
 ## Parameters
 
 - `animationID`: An application-supplied identifier for the animations.
-- `context`: Custom data that you want to associate with this set of animations. information that is passed to the animation delegate messages—the selectors set using the   and   methods.
+- `context`: Custom data that you want to associate with this set of animations. information that is passed to the animation delegate messages—the selectors set using the [`setAnimationWillStart(_:)`](uiview/setanimationwillstart(_:).md) and [`setAnimationDidStop(_:)`](uiview/setanimationdidstop(_:).md) methods.
 
 ## See Also
 

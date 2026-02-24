@@ -26,7 +26,7 @@ Use the compute pipeline state to configure a compute pass by calling the [`setC
 
 ## Parameters
 
-- `computeFunction`: An   instance.
+- `computeFunction`: An [`MTLFunction`](mtlfunction.md) instance.
 - `completionHandler`: A Swift closure or an Objective-C block the method calls when it finishes creating the compute pipeline state.
 
 ## See Also

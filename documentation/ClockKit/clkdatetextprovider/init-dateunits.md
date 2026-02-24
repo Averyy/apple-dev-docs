@@ -24,8 +24,8 @@ The text provider created by this method uses the default time zone information 
 
 ## Parameters
 
-- `date`: The date to display. This parameter must not be  .
-- `calendarUnits`: The units to include in the resulting date string. For a list of supported calendar units, see  .
+- `date`: The date to display. This parameter must not be `nil`.
+- `calendarUnits`: The units to include in the resulting date string. For a list of supported calendar units, see [`Date Format Options`](clkdatetextprovider#Date-Format-Options.md).
 
 ## See Also
 

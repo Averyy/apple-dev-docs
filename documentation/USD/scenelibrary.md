@@ -6,7 +6,7 @@ Metadata that partitions an asset into scene-based units.
 
 #### Overview
 
-Set a prim’s `kind` metadata to `sceneLibrary` to create a  Partitioning an asset’s contents into multiple scenes offers the following benefits:
+Set a prim’s `kind` metadata to `sceneLibrary` to create a *scene.* Partitioning an asset’s contents into multiple scenes offers the following benefits:
 
 - Prims segment content into distinct parts that have differing utilities and lifetimes.
 - Unlike USD [`Variant Sets`](https://developer.apple.comhttps://openusd.org/docs/Authoring-Variants.html), you can mark each scene active or inactive independently.

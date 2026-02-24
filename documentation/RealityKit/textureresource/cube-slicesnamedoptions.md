@@ -53,8 +53,8 @@ await MainActor.run {
 
 ## Parameters
 
-- `slices`: The source images for each cube face in [ ,  ,  ,  ,  ,  ] order.   All images need to be square, and of equal size.
-- `resourceName`: A unique name for syncing the texture resource across the network.   The name is empty if you don’t include one.
+- `slices`: The source images for each cube face in [`+X`, `-X`, `+Y`, `-Y`, `+Z`, `-Z`] order. All images need to be square, and of equal size.
+- `resourceName`: A unique name for syncing the texture resource across the network. The name is empty if you don’t include one.
 - `options`: A configuration for generating the texture.
 
 

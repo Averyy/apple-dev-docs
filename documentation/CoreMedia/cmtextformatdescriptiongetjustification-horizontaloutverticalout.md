@@ -30,9 +30,9 @@ For possible values see [`CMTextJustificationValue`](cmtextjustificationvalue.md
 
 ## Parameters
 
-- `desc`:   being interrogated.
-- `horizontaJustificationlOut`: Horizontal justification mode. May be  .
-- `verticalJustificationOut`: Vertical justification mode. May be  .
+- `desc`: `CMFormatDescription` being interrogated.
+- `horizontaJustificationlOut`: Horizontal justification mode. May be `NULL`.
+- `verticalJustificationOut`: Vertical justification mode. May be `NULL`.
 
 ## See Also
 

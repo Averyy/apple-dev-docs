@@ -23,7 +23,7 @@ func CFBitVectorSetBits(_ bv: CFMutableBitVector!, _ range: CFRange, _ value: CF
 ## Parameters
 
 - `bv`: The bit vector to modify.
-- `range`: The range of bits to set. The range must not exceed  , where   is the count of the vector.
+- `range`: The range of bits to set. The range must not exceed `0…N-1`, where `N` is the count of the vector.
 - `value`: The bit value to which to set the range of bits.
 
 ## See Also

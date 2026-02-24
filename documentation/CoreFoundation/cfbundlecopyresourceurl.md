@@ -36,8 +36,8 @@ CFBundleCopyResourceURL(bundle, CFSTR("Water1"), CFSTR("aiff"), CFSTR("WaterSoun
 
 - `bundle`: The bundle to examine.
 - `resourceName`: The name of the requested resource.
-- `resourceType`: The abstract type of the requested resource. The type is expressed as a filename extension, such as  . Pass   if   is the complete name of the file you’re looking for, including any extension.
-- `subDirName`: The name of the subdirectory of the bundle’s resources directory to search. Pass   to search the standard CFBundle resource locations.
+- `resourceType`: The abstract type of the requested resource. The type is expressed as a filename extension, such as `jpg`. Pass `NULL` if `resourceName` is the complete name of the file you’re looking for, including any extension.
+- `subDirName`: The name of the subdirectory of the bundle’s resources directory to search. Pass `NULL` to search the standard CFBundle resource locations.
 
 ## See Also
 

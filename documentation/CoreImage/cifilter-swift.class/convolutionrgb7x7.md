@@ -29,6 +29,10 @@ This method applies a 7 x 7 convolution to the `RGB` components image. The effec
 
 The convolution-RGB 7 x 7 filter uses the following properties:
 
+- **`inputImage`**: A [`CIImage`](ciimage.md) containing the image to process.
+- **`weights`**: A [`CIVector`](civector.md) representing the convolution kernel.
+- **`bias`**: A `float` representing the value that’s added to each output pixel.
+
 > **Note**:  When using a nonzero `bias` value, the output image has an infinite extent. You should crop the output image before attempting to render it.
 
 The following code creates a filter that highlights edges in the input image:

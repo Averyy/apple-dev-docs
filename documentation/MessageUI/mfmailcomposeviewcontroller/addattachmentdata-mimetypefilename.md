@@ -23,9 +23,9 @@ This method attaches the specified data after the message body, but before the u
 
 ## Parameters
 
-- `attachment`: The data to attach. Typically, this is the contents of a file that you want to include. This parameter must not be  .
-- `mimeType`: The MIME type of the specified data. (For example, the MIME type for a JPEG image is  .) For a list of valid MIME types, see  . This parameter must not be  .
-- `filename`: The preferred filename to associate with the data. This is the default name applied to the file when it is transferred to its destination. Any path separator ( ) characters in the filename are converted to underscore ( ) characters prior to transmission. This parameter must not be  .
+- `attachment`: The data to attach. Typically, this is the contents of a file that you want to include. This parameter must not be `nil`.
+- `mimeType`: The MIME type of the specified data. (For example, the MIME type for a JPEG image is `image/jpeg`.) For a list of valid MIME types, see [`http://www.iana.org/assignments/media-types/`](https://developer.apple.comhttp://www.iana.org/assignments/media-types/). This parameter must not be `nil`.
+- `filename`: The preferred filename to associate with the data. This is the default name applied to the file when it is transferred to its destination. Any path separator (`/`) characters in the filename are converted to underscore (`_`) characters prior to transmission. This parameter must not be `nil`.
 
 ## See Also
 

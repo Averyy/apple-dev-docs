@@ -26,7 +26,7 @@ TextField("Enter your email", text: $emailAddress)
 
 ## Parameters
 
-- `textContentType`: One of the content types available in the     structure that identify the semantic meaning expected for a text-entry   area. These include support for email addresses, location names, URLs,   and telephone numbers, to name just a few.
+- `textContentType`: One of the content types available in the [`WKTextContentType`](https://developer.apple.com/documentation/WatchKit/WKTextContentType) structure that identify the semantic meaning expected for a text-entry area. These include support for email addresses, location names, URLs, and telephone numbers, to name just a few.
 
 ## See Also
 

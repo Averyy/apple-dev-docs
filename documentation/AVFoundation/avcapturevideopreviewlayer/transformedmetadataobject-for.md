@@ -30,7 +30,7 @@ The conversion takes orientation, mirroring, layer bounds and video gravity into
 
 ## Parameters
 
-- `metadataObject`: The metadata object whose visual properties you want to convert. The metadata object must originate from the same   as the preview layer.
+- `metadataObject`: The metadata object whose visual properties you want to convert. The metadata object must originate from the same [`AVCaptureInput`](avcaptureinput.md) as the preview layer.
 
 ## See Also
 

@@ -25,10 +25,10 @@ func loadSoundBankInstrument(at bankURL: URL, program: UInt8, bankMSB: UInt8, ba
 
 ## Parameters
 
-- `bankURL`: The URL for a soundbank file, either a DLS bank ( ) or a SoundFont bank ( ).
+- `bankURL`: The URL for a soundbank file, either a DLS bank (`.dls`) or a SoundFont bank (`.sf2`).
 - `program`: The program number for the instrument to load.
-- `bankMSB`: The most significant bit for the bank number for the instrument to load. This is usually   for melodic instruments and   for percussion instruments.
-- `bankLSB`: The least significant bit for the bank number for the instrument to load. This is often   and represents the bank variation.
+- `bankMSB`: The most significant bit for the bank number for the instrument to load. This is usually `0x79` for melodic instruments and `0x78` for percussion instruments.
+- `bankLSB`: The least significant bit for the bank number for the instrument to load. This is often `0` and represents the bank variation.
 
 ## See Also
 

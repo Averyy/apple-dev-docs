@@ -32,7 +32,9 @@ Active energy samples contribute to Apple Watch’s activity monitoring.
 - `totalEnergy`: A quantity object containing the total energy burned during the specified time period.
 - `startDate`: A date object representing the activity’s start time.
 - `endDate`: A date object representing the activity’s end time.
-- `resultsHandler`: A block that is called as soon as the calculations are complete. This block is passed the following parameters:
+- `resultsHandler`: A block that is called as soon as the calculations are complete. This block is passed the following parameters: - **restingEnergy**: A quantity object containing the resting portion of the total energy.
+- **activeEnergy**: A quantity object containing the active portion of the total energy.
+- **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`.
 
 ## See Also
 

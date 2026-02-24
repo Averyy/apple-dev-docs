@@ -23,7 +23,7 @@ Use this method to dismiss a menu programmatically. The document interaction con
 
 ## Parameters
 
-- `animated`: Specify   to animate the dismissal of the currently active menu or   to dismiss it immediately.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the dismissal of the currently active menu or [`false`](https://developer.apple.com/documentation/Swift/false) to dismiss it immediately.
 
 ## See Also
 

@@ -77,7 +77,7 @@ class ContrastStretchImageProcessorKernel: CIImageProcessorKernel {
 ## Parameters
 
 - `cvPixelBuffer`: The destination Core Video pixel buffer.
-- `cvImageFormat`: A   that specifies the pixel format of the destination buffer.
+- `cvImageFormat`: A [`vImageCVImageFormat`](vimagecvimageformat.md) that specifies the pixel format of the destination buffer.
 - `cgImageFormat`: The Core Graphics format of the source buffer.
 
 ## See Also

@@ -16,7 +16,7 @@ init(rawValue: UInt)
 
 ## Parameters
 
-- `rawValue`: The   value to specify a frame decode operation status.
+- `rawValue`: The `UInt` value to specify a frame decode operation status.
 
 
 ---

@@ -25,7 +25,7 @@ A pointer to the Unicode character buffer that serves as the backing store of `s
 
 ## Parameters
 
-- `string`: The   with the backing store you want to access.
+- `string`: The [`JSStringRef`](jsstringref.md) with the backing store you want to access.
 
 ## See Also
 

@@ -36,9 +36,61 @@ More recent GPUs have higher version numbers and support larger feature sets. A 
 
 The code below shows how to test whether a GPU supports a particular GPU family:
 
+**Swift**:
+
+```swift
+if #available(macOS 10.15, *) {
+    if self.device.supportsFamily(.familyMac2) {
+        // Enable features that require Mac family 2.
+    }
+}
+else {
+    // Fallback on earlier OS versions.
+}
+```
+
+**Objective-C**:
+
+```objective-c
+if (@available(macOS 10.15, *)) {
+    if ([device supportsFamily:MTLGPUFamilyMac2])
+    {
+        // Enable features that require Mac family 2.
+    }
+}
+else
+{
+    // Fallback on earlier OS versions.
+}
+```
+
 ##### Determine Metal Version Availability
 
 Each new Metal release adds new features for supported GPUs. In addition to checking for a GPU with the correct family, ensure that the features your app needs are also there. Use `available` statements to query whether the framework supports the features you need, as shown in the code below.
+
+**Swift**:
+
+```swift
+if #available(macOS 10.15, iOS 13, tvOS 13, *) {
+    // Enable newer features.
+}
+else
+{
+    // Fallback on earlier OS versions.
+}
+```
+
+**Objective-C**:
+
+```objective-c
+if (@available(macOS 10.15, iOS 13, tvOS 13, *)) {
+    // Enable newer features.
+}
+else
+{
+    // Fallback on earlier OS versions.
+}
+```
 
 ##### Find Variations in a Gpu Family
 
@@ -46,9 +98,45 @@ GPUs in the same family can vary in small ways. Some features aren’t supported
 
 For example, the argument buffer feature has two tiers of support; the second tier is significantly better than the first. The code below shows how to test for tier 2 support:
 
+**Swift**:
+
+```swift
+if self.device.argumentBuffersSupport == .tier2
+{
+    // Enable tier 2 argument buffer support in renderer.
+}
+```
+
+**Objective-C**:
+
+```objective-c
+if (device.argumentBuffersSupport == MTLArgumentBuffersTier2)
+{
+    // Enable tier 2 argument buffer support in renderer.
+}
+```
+
 ##### Discover Feature Availability in Earlier Operating Systems
 
-If the GPU Family API isn’t available, test for features using . A feature set combines a Metal GPU family number with a software revision number. For example, to test for the first release of Metal that supported Apple family 4 GPUs, use [`MTLFeatureSet.iOS_GPUFamily4_v1`](mtlfeatureset/ios_gpufamily4_v1.md), as shown here:
+If the GPU Family API isn’t available, test for features using *feature sets*. A feature set combines a Metal GPU family number with a software revision number. For example, to test for the first release of Metal that supported Apple family 4 GPUs, use [`MTLFeatureSet.iOS_GPUFamily4_v1`](mtlfeatureset/ios_gpufamily4_v1.md), as shown here:
+
+**Swift**:
+
+```swift
+if self.device.supportsFeatureSet(.iOS_GPUFamily4_v1)
+{
+    // Enable family 4 rendering path.
+}
+```
+
+**Objective-C**:
+
+```objective-c
+if ([device supportsFeatureSet: MTLFeatureSet_iOS_GPUFamily4_v1])
+{
+    // Enable family 4 rendering path.
+}
+```
 
 Metal added new feature set enumerations in new versions of Apple operating systems to support new software features and GPU families, so there are many different enumeration values representing different collections of features. If a GPU supports a feature set, it supports all features provided by earlier members of the same family, and all features in earlier software revisions. For example, [`MTLFeatureSet.iOS_GPUFamily4_v2`](mtlfeatureset/ios_gpufamily4_v2.md) is version 2 of family 4, so it supports the same features as version 1, as well as all features supported by families 1, 2, and 3. You don’t need to test for those feature sets separately. Test for feature sets, from newest to oldest, until you successfully find a feature set that your app and the GPU both support.
 

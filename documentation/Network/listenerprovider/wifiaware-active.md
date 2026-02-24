@@ -30,7 +30,7 @@ NetworkListener(for: .wifiAware(.connecting(to:service, from:.selected(devices))
 ## Parameters
 
 - `action`: The specific Wi-Fi Aware operation to perform, and the service & devices to perform it on.
-- `requestedDuration`: Optional duration requested to keep the   publishing. The default value of   instructs the system to stay active for long enough to guarantee the action completes with all nearby target devices.
+- `requestedDuration`: Optional duration requested to keep the `NetworkListener` publishing. The default value of `nil` instructs the system to stay active for long enough to guarantee the action completes with all nearby target devices.
 
 
 ---

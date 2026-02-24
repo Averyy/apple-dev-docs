@@ -31,7 +31,7 @@ If the keychain is locked, the system asks the user for a password or other toke
 ## Parameters
 
 - `certificate`: The certificate object for the certificate to add to the keychain.
-- `keychain`: The keychain object for the keychain to which you want to add the certificate. Pass   to add the certificate to the default keychain.
+- `keychain`: The keychain object for the keychain to which you want to add the certificate. Pass `NULL` to add the certificate to the default keychain.
 
 
 ---

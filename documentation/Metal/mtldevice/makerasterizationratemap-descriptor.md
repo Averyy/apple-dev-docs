@@ -26,7 +26,7 @@ A new [`MTLRasterizationRateMapDescriptor`](mtlrasterizationratemapdescriptor.md
 
 ## Parameters
 
-- `descriptor`: An   instance.
+- `descriptor`: An [`MTLRasterizationRateMapDescriptor`](mtlrasterizationratemapdescriptor.md) instance.
 
 ## See Also
 

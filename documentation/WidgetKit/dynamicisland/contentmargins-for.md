@@ -41,7 +41,7 @@ dynamicIsland
 ## Parameters
 
 - `edges`: The edges that should use custom content margins.
-- `length`: The value for the custom content margin for the specified  .
+- `length`: The value for the custom content margin for the specified `edges`.
 - `mode`: The presentation of the Dynamic Island that the custom content margins apply to.
 
 ## See Also

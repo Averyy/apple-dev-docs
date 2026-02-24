@@ -24,7 +24,7 @@ A result code. See [`Secure Transport Result Codes`](secure-transport-result-cod
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `config`: The predefined configuration you want to apply to the SSL session. You can configure enabled protocol versions, enabled cipher suites, and the   session option.
+- `config`: The predefined configuration you want to apply to the SSL session. You can configure enabled protocol versions, enabled cipher suites, and the [`SSLSessionOption.fallback`](sslsessionoption/fallback.md) session option.
 
 
 ---

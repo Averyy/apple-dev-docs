@@ -22,7 +22,7 @@ func update(parameters: inout ForceEffectParameters)
 
 ## Parameters
 
-- `parameters`: On input, the rigid body parameters declared in  .   On output, the computed forces and torques.
+- `parameters`: On input, the rigid body parameters declared in [`parameterTypes`](forceeffectprotocol/parametertypes.md). On output, the computed forces and torques.
 
 ## See Also
 

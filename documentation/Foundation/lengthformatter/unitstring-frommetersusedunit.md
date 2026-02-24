@@ -31,7 +31,7 @@ This method selects the correct unit based on the formatter’s locale, the magn
 ## Parameters
 
 - `numberInMeters`: The length’s value in meters.
-- `unitp`: An output parameter. This will hold the   value that corresponds to the returned units.
+- `unitp`: An output parameter. This will hold the [`LengthFormatter.Unit`](lengthformatter/unit.md) value that corresponds to the returned units.
 
 ## See Also
 

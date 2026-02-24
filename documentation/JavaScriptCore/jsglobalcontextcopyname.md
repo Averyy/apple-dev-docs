@@ -29,7 +29,7 @@ JavaScriptCore exposes the name of [`JSGlobalContextRef`](jsglobalcontextref.md)
 
 ## Parameters
 
-- `ctx`: The   with the name you want to get.
+- `ctx`: The [`JSGlobalContextRef`](jsglobalcontextref.md) with the name you want to get.
 
 ## See Also
 

@@ -23,8 +23,8 @@ This method is called by the system when the Filter Data Provider indicates that
 
 ## Parameters
 
-- `flow`: An   object containing details about the flow that requires remediation.
-- `completionHandler`: A block that must be called when the Filter Control Provider has made a decision about the flow. The   object passed to this block contains the decision that the Filter Control Provider made about the flow.
+- `flow`: An [`NEFilterFlow`](nefilterflow.md) object containing details about the flow that requires remediation.
+- `completionHandler`: A block that must be called when the Filter Control Provider has made a decision about the flow. The [`NEFilterControlVerdict`](nefiltercontrolverdict.md) object passed to this block contains the decision that the Filter Control Provider made about the flow.
 
 ## See Also
 

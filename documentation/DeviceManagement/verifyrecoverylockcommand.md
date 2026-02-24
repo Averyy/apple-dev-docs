@@ -20,6 +20,11 @@ object VerifyRecoveryLockCommand
 - [object VerifyRecoveryLockCommand.Command](verifyrecoverylockcommand/command-data.dictionary.md)
   The command to verify the device’s Recovery Lock password.
 
+## Properties
+
+- `Command` (VerifyRecoveryLockCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object VerifyRecoveryLockResponse](verifyrecoverylockresponse.md)

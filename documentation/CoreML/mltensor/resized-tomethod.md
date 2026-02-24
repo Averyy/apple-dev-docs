@@ -41,7 +41,7 @@ The tensor must be either a 4-dimensional float tensor of shape `[batch, channel
 ## Parameters
 
 - `size`: The new size for the spatial dimensions of the tensor. The size must be positive.
-- `method`: The resize method. The default value is  .
+- `method`: The resize method. The default value is `.nearest`.
 
 ## See Also
 

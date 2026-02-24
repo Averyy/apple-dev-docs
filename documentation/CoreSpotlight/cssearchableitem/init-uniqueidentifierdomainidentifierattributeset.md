@@ -24,9 +24,9 @@ A searchable item that’s associated with the specified identifier, domain iden
 
 ## Parameters
 
-- `uniqueIdentifier`: The unique identifier for the item. If you specify  , an identifier is generated automatically.
+- `uniqueIdentifier`: The unique identifier for the item. If you specify `NULL`, an identifier is generated automatically.
 - `domainIdentifier`: An identifier for a domain, such as an album, that helps you group items together in a way that makes sense.
-- `attributeSet`: A set of properties that specify the metadata you want to display about an item in a search result. See   for the types of properties you can use.
+- `attributeSet`: A set of properties that specify the metadata you want to display about an item in a search result. See [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md) for the types of properties you can use.
 
 ## See Also
 

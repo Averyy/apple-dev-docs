@@ -27,6 +27,13 @@ A one-dimensional [`CIImage`](ciimage.md) containing the colors.
 
 This filter uses the k-means clustering algorithm to find the most common colors in an input image. The result is a [`CIImage`](ciimage.md) with `count` x 1 dimensions. Each `RGBA` pixel in the result image represents the center of a k-means cluster. The `RGB` components contain the color and the alpha component represents the weight of the color. You typically use the [`kMeans()`](cifilter-swift.class/kmeans().md) filter in conjunction with the [`palettize()`](cifilter-swift.class/palettize().md) filter to produce an image with a reduced number of colors.
 
+- **`inputImage`**: A [`CIImage`](ciimage.md) to process.
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) specifying the area of the image to analyze.
+- **`means`**: An optional [`CIImage`](ciimage.md) containing a set of colors to use as seeds for the k-means clustering.
+- **`count`**: The number of k-means color clusters that should be created. Maximum is `128`, and default is `8`.
+- **`passes`**: The number of k-means passes that should run. Maximum is `20`, and default is `5`.
+- **`perceptual`**: Whether the k-means color palette should use a perceptual color space.
+
 > 💡 **Tip**:  The colors in the result of the [`kMeans()`](cifilter-swift.class/kmeans().md) filter have an alpha component that indicates the weight of the color. You should set this value one using [`settingAlphaOne(in:)`](ciimage/settingalphaone(in:).md) before using the palette.
 
 The following code example uses the [`kMeans()`](cifilter-swift.class/kmeans().md) filter followed by the [`palettize()`](cifilter-swift.class/palettize().md) filter to reduce the colors in the image to four:

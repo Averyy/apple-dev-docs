@@ -21,7 +21,7 @@ class func loadAllManagersFromPreferences() async throws -> [NERelayManager]
 
 ## Parameters
 
-- `completionHandler`: A block that receives an array of   objects. If the system failed to read any   configurations read from the disk, the array is passes to the block is empty. The   passed to this block is   if the load operation succeeded, non-  otherwise.
+- `completionHandler`: A block that receives an array of [`NERelayManager`](nerelaymanager.md) objects. If the system failed to read any [`NERelay`](nerelay.md) configurations read from the disk, the array is passes to the block is empty. The [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) passed to this block is `nil` if the load operation succeeded, non-`nil` otherwise.
 
 
 ---

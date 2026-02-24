@@ -23,7 +23,7 @@ virtual kern_return_t SetHandler(OSAction *action);
 
 ## Parameters
 
-- `action`: The   object that contains your custom callback method. The dispatch source object retains your action object until you call this method again or cancel the dispatch source.
+- `action`: The [`OSAction`](osaction.md) object that contains your custom callback method. The dispatch source object retains your action object until you call this method again or cancel the dispatch source.
 
 ## See Also
 

@@ -24,7 +24,7 @@ The visionOS 1.2 SDK provides support for developing apps for Apple Vision Pro d
 
 ###### Known Issues
 
-- Developers might see session interruption notifications that are not relevant to their app.  (125360716)  Developers should filter notifications against their audio session of choice like so: `NotificationCenter.default.addObserver(forName: AVAudioSession.interruptionNotification, object: AVAudioSession.sharedInstance(), queue: nil) { ... }`
+- Developers might see session interruption notifications that are not relevant to their app.  (125360716) **Workaround:** Developers should filter notifications against their audio session of choice like so: `NotificationCenter.default.addObserver(forName: AVAudioSession.interruptionNotification, object: AVAudioSession.sharedInstance(), queue: nil) { ... }`
 
 ##### Storekit
 

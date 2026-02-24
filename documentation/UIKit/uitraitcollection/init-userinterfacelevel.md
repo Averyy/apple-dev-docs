@@ -23,7 +23,7 @@ A new trait collection containing only the user interface level trait.
 
 ## Parameters
 
-- `userInterfaceLevel`: The user interface level for the trait collection. For a list of possible values, see  .
+- `userInterfaceLevel`: The user interface level for the trait collection. For a list of possible values, see [`UIUserInterfaceLevel`](uiuserinterfacelevel.md).
 
 ## See Also
 

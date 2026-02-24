@@ -91,7 +91,7 @@ Here’s an example implementation of this method using OpenGL to draw an overla
 ## Parameters
 
 - `time`: The rendering time, in seconds, of the composition frame.
-- `arguments`: An optional dictionary that can contain   or   and the associated values. (See   or more information.)
+- `arguments`: An optional dictionary that can contain `QCRendererEventKey` or `QCRendererMouseLocationKey` and the associated values. (See [`QCRenderer`](qcrenderer.md) or more information.)
 
 
 ---

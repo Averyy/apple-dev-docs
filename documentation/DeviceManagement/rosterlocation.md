@@ -15,6 +15,15 @@ A location’s properties and their values.
 object RosterLocation
 ```
 
+## Properties
+
+- `name` (string): The location name. Maximum length 1024 UTF-8 characters.
+- `op_date` (string): The time stamp, in iSO 8601 format, when the location was added, updated, or deleted.
+- `source` (string): The data source where the location was created.
+- `source_system_identifier` (string): The identifier configured by organization for the location. Maximum length 256 UTF-8 characters.
+- `status` (string): The status of the location.
+- `unique_identifier` (string): The unique identifier for the location. Maximum length 256 UTF-8 characters.
+
 ## See Also
 
 - [object BaseRosterLocation](baserosterlocation.md)

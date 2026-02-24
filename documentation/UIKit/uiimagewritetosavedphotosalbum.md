@@ -29,7 +29,11 @@ When used on an iOS device without a camera, this method adds the image to the S
 
 - `image`: The image to write to the Camera Roll album.
 - `completionTarget`: Optionally, the object whose selector should be called after the image has been written to the Camera Roll album.
-- `completionSelector`: The method selector of the   object to call. This optional method should conform to the following signature:
+- `completionSelector`: The method selector of the `completionTarget` object to call. This optional method should conform to the following signature: ```objc
+- (void)image:(UIImage *)image
+    didFinishSavingWithError:(NSError *)error
+                 contextInfo:(void *)contextInfo;
+```
 - `contextInfo`: An optional pointer to any context-specific data that you want passed to the completion selector.
 
 ## See Also

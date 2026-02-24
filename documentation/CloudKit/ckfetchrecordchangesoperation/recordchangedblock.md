@@ -24,6 +24,8 @@ var recordChangedBlock: ((CKRecord) -> Void)? { get set }
 
 The block returns no value and takes the following parameters:
 
+- **`record`**: The changed record. If you specify a value for the [`desiredKeys`](ckfetchrecordchangesoperation/desiredkeys.md) property, the record only contains the fields in the [`desiredKeys`](ckfetchrecordchangesoperation/desiredkeys.md) property.
+
 The operation object executes this block once for each record in the zone with changes since the previous fetch request. Each time the block executes, it executes serially with respect to the other progress blocks of the operation. If no records change, the block doesn’t execute.
 
 If you intend to use this block to process results, set it before executing the operation or submitting it to a queue.

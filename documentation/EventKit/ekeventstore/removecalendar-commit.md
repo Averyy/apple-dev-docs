@@ -27,7 +27,7 @@ This method raises an exception if `calendar` belongs to another event store.
 ## Parameters
 
 - `calendar`: The calendar to remove.
-- `commit`:   to remove the calendar immediately; otherwise, the change is batched until the   method is invoked.
+- `commit`: [`true`](https://developer.apple.com/documentation/Swift/true) to remove the calendar immediately; otherwise, the change is batched until the [`commit()`](ekeventstore/commit().md) method is invoked.
 
 ## See Also
 

@@ -21,7 +21,7 @@ A newly-initialized `NEAppRule` object.
 ## Parameters
 
 - `signingIdentifier`: The signing identifier of the app that matches the rule. For apps that are signed using Xcode, the app’s signing identifier is equivalent to the app’s bundle identifier.
-- `designatedRequirement`: The designated requirement of the app that matches the rule. The designated requirement for an app can be obtained using the   command-line developer tool.
+- `designatedRequirement`: The designated requirement of the app that matches the rule. The designated requirement for an app can be obtained using the `codesign` command-line developer tool.
 
 ## See Also
 

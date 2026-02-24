@@ -20,8 +20,8 @@ A new storyboard object.
 
 ## Parameters
 
-- `name`: The name of the storyboard file, without the filename extension. This method raises an exception if this parameter’s value is  .
-- `storyboardBundleOrNil`: The bundle used to resolve references to resources, typically images, in the archived controllers represented in the storyboard file. If you specify  , AppKit uses the app’s main bundle.
+- `name`: The name of the storyboard file, without the filename extension. This method raises an exception if this parameter’s value is `nil`.
+- `storyboardBundleOrNil`: The bundle used to resolve references to resources, typically images, in the archived controllers represented in the storyboard file. If you specify `nil`, AppKit uses the app’s main bundle.
 
 ## See Also
 

@@ -24,7 +24,7 @@ An [`MLTrainingSession`](mltrainingsession.md) that represents the image classif
 
 ## Parameters
 
-- `sessionParameters`: Training session parameters. See   for the defaults.
+- `sessionParameters`: Training session parameters. See `MLTrainingSessionParameters` for the defaults.
 
 ## See Also
 

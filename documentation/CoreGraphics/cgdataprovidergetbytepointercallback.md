@@ -32,7 +32,7 @@ For information on how to associate your function with a direct-access data prov
 
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to  .
+- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to `CGDataProviderCreateDirectAccess`.
 
 ## See Also
 

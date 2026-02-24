@@ -22,8 +22,8 @@ A search display controller initialized with the given search bar and contents c
 
 ## Parameters
 
-- `searchBar`: The search bar must not currently be associated with another search display controller.
-- `viewController`: The view controller must not currently be associated with another search display controller.
+- `searchBar`: A search bar. The search bar must not currently be associated with another search display controller.
+- `viewController`: The view controller that manages display of the original contents that are to be searched. The view controller must not currently be associated with another search display controller.
 
 
 ---

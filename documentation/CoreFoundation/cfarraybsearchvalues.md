@@ -32,11 +32,11 @@ The return value is one of the following:
 
 ## Parameters
 
-- `theArray`: An array, sorted from least to greatest according to the   function.
-- `range`: The range within   to search. The range must not exceed the bounds of  . The range may be empty (length  ).
-- `value`: The value for which to find a match in  . If  , or any other value in  , is not understood by the   callback, the behavior is undefined.
-- `comparator`: The function with the comparator function type signature that is used in the binary search operation to compare values in   with the given value. If there are values in the range that the   function does not expect or cannot properly compare, the behavior is undefined.
-- `context`: A pointer-sized program-defined value, which is passed as the third argument to the   function, but is otherwise unused by this function. If the context is not what is expected by the   function, the behavior is undefined.
+- `theArray`: An array, sorted from least to greatest according to the `comparator` function.
+- `range`: The range within `theArray` to search. The range must not exceed the bounds of `theArray`. The range may be empty (length `0`).
+- `value`: The value for which to find a match in `theArray`. If `value`, or any other value in `theArray`, is not understood by the `comparator` callback, the behavior is undefined.
+- `comparator`: The function with the comparator function type signature that is used in the binary search operation to compare values in `theArray` with the given value. If there are values in the range that the `comparator` function does not expect or cannot properly compare, the behavior is undefined.
+- `context`: A pointer-sized program-defined value, which is passed as the third argument to the `comparator` function, but is otherwise unused by this function. If the context is not what is expected by the `comparator` function, the behavior is undefined.
 
 ## See Also
 

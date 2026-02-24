@@ -51,10 +51,42 @@ When you use Xcode to create an application, Xcode adds an `application-identifi
 
 `SecItemCopyMatching` blocks the calling thread, so it can cause your app’s UI to hang if called from the main thread. Instead, call `SecItemCopyMatching` from a background dispatch queue or `async` function:
 
+**Swift**:
+
+```swift
+func findKeychainItem(attributes attrs: CFDictionaryRef, _ completion: @escaping (OSStatus, CFTypeRef?) -> Void) {
+    backgroundQueue.async {
+        var item: CFTypeRef?
+        let result = SecItemCopyMatching(attrs, &item)
+        completion(result, item)
+    }
+}
+
+```
+
+**Objective-C**:
+
+```objc
+- (void)findKeychainItemWithAttributes:(NSDictionary *)attributes completion:(void(^)(OSStatus status, CFTypeRef item))completion {
+    dispatch_async(backgroundQueue, ^{
+        CFDictionaryRef attrs = (__bridge CFDictionaryRef)attributes;
+        CFTypeRef item = NULL;
+        OSStatus result = SecItemCopyMatching(attrs, &item);
+        completion(result, item);
+        CFRelease(item);
+    });
+}
+
+
+```
+
 ## Parameters
 
-- `query`: A dictionary that describes the search. A typical   dictionary consists of:
-- `result`: On return, a reference to the found items. The exact type of the result depends on the return type values supplied in  , as discussed in  .
+- `query`: A dictionary that describes the search. A typical `query` dictionary consists of: - **The item’s class.** Specify the kind of item you want, for example a password, a certificate, or a cryptographic key, using one of the class values in [`Item class keys and values`](item-class-keys-and-values.md).
+- **Attributes.** Narrow the search by indicating the attributes that the found item or items should have. The more attributes you specify, the more refined the results, but not all attributes apply to all item classes. For the attributes applicable to the keychain item you’re searching for, see the entry for the item’s class in [`Item class values`](item-class-keys-and-values#Item-class-values.md).
+- **Search parameters.** Condition the search in a variety of ways. For example, you can limit the results to a specific number of items, control case sensitivity when matching string attributes, or search only among a particular set of items. See [`Search attribute keys and values`](search-attribute-keys-and-values.md) for the complete list of possible search parameters.
+- **One or more return types.** Use the keys found in [`Item return result keys`](item-return-result-keys.md) to indicate whether you seek the item’s attributes, the item’s data, a reference to the data, a persistent reference to the data, or a combination of these. When you specify more than one return type, the search returns a dictionary containing each of the types you request. When your search allows multiple results, they’re all returned together in an array of items.
+- `result`: On return, a reference to the found items. The exact type of the result depends on the return type values supplied in `query`, as discussed in [`Item return result keys`](item-return-result-keys.md).
 
 
 ---

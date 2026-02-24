@@ -21,9 +21,10 @@ Returns an interface reference, or `NULL` if an error occurred.
 
 ## Parameters
 
-- `interface_desc`: An XPC dictionary describing parameters of the interface.   Supported keys are described in  .
+- `interface_desc`: An XPC dictionary describing parameters of the interface. Supported keys are described in [`interface_desc XPC Dictionary Keys`](interface_desc_xpc_dictionary_keys.md).
 - `queue`: The queue on which the handler is scheduled.
-- `handler`: A block to be executed after interface is started.
+- `handler`: A block to be executed after interface is started. - status: `vmnet` on success, or `vmnet` on failure.
+- interface_param: On success, this argument contains an XPC dictionary containing information about the interface. Possible keys are described in [`interface_param XPC Dictionary Keys`](interface_param_xpc_dictionary_keys.md).
 
 ## See Also
 

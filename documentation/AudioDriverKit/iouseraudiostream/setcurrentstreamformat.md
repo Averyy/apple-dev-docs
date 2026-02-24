@@ -26,7 +26,7 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `in_format`: A pointer to an   to use as the new format.
+- `in_format`: A pointer to an `IOIUserAudioStreamBasicDescription` to use as the new format.
 
 ## See Also
 

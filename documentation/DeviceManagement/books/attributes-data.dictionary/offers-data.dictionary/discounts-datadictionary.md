@@ -13,6 +13,14 @@
 object Books.Attributes.Offers.Discounts
 ```
 
+## Properties
+
+- `modeType` (string)
+- `numOfPeriods` (integer)
+- `price` (number)
+- `priceFormatted` (string)
+- `recurringSubscriptionPeriod` (string)
+
 ## See Also
 
 - [object Books.Attributes.Offers.Assets](books/attributes-data.dictionary/offers-data.dictionary/assets-data.dictionary.md)

@@ -35,7 +35,7 @@ This deprecated function takes as a parameter a display mode dictionary. Startin
 
 ## Parameters
 
-- `config`: A display configuration, acquired by calling  .
+- `config`: A display configuration, acquired by calling [`CGBeginDisplayConfiguration(_:)`](cgbegindisplayconfiguration(_:).md).
 - `display`: The identifier of the display being configured.
 - `mode`: A display mode dictionary (see the discussion below).
 

@@ -31,7 +31,7 @@ Calling this method is not recommended; for most use cases, this information is 
 ## Parameters
 
 - `charIndex`: The position of the initial character.
-- `tagScheme`: The tag scheme. See   for possible values.
+- `tagScheme`: The tag scheme. See [`NSLinguisticTagScheme`](nslinguistictagscheme.md) for possible values.
 - `tokenRange`: The token range.
 - `sentenceRange`: The range of the sentence.
 - `scores`: Returns by reference an array of numeric scores indicating the likelihood that the range matches the tag scheme.

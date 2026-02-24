@@ -12,6 +12,10 @@ A list of alternate icons for the Home screen and Settings app.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 The value of this key is different in iOS and tvOS.
@@ -24,6 +28,10 @@ In iOS, the value of the key is a dictionary. The key for each dictionary entry 
 
 ### Property List Keys
 - [AppIconReferenceName](information-property-list/cfbundleicons/cfbundlealternateicons/appiconreferencename.md)
+
+## Properties
+
+- `Any Key` (AppIconReferenceName)
 
 ## See Also
 

@@ -30,7 +30,7 @@ Music track property values are always accessed by reference.
 ## Parameters
 
 - `inTrack`: The music track that you want to set a property value for.
-- `inPropertyID`: The identifier for the music track property that you want to set. See   for possible values.
+- `inPropertyID`: The identifier for the music track property that you want to set. See [`Music Track Properties`](1515456-music-track-properties.md) for possible values.
 - `inData`: The new property value.
 - `inLength`: The size of the new property value.
 

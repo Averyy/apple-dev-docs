@@ -21,15 +21,15 @@ The created query.
 
 ## Parameters
 
-- `allocator`: The memory allocator to use. If  , the default allocator is used.
+- `allocator`: The memory allocator to use. If `NULL`, the default allocator is used.
 - `node`: The node.
-- `recordTypeOrList`: The type or types of record to query. Can be a   object for a single type or a   object containing   objects for multiple types.
+- `recordTypeOrList`: The type or types of record to query. Can be a `CFString` object for a single type or a `CFArray` object containing `CFString` objects for multiple types.
 - `attribute`: The name of the attribute to query.
 - `matchType`: The type of query.
-- `queryValueOrList`: The value or values to query in the attribute. Can be a   object or a   object for a single value, or a   containing   and   objects for multiple values.
-- `returnAttributeOrList`: The attribute or attributes to be returned from the query. Can be a   object for a single attribute or a   object containing   objects for multiple attributes. Passing   is equivalent to passing  .
+- `queryValueOrList`: The value or values to query in the attribute. Can be a `CFString` object or a `CFData` object for a single value, or a `CFArray` containing `CFString` and `CFData` objects for multiple values.
+- `returnAttributeOrList`: The attribute or attributes to be returned from the query. Can be a `CFString` object for a single attribute or a `CFArray` object containing `CFString` objects for multiple attributes. Passing `NULL` is equivalent to passing `kODAttributeTypeStandardOnly`.
 - `maxResults`: The maximum number of values to be returned.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

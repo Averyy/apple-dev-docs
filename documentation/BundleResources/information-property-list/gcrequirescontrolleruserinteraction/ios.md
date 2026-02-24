@@ -10,6 +10,10 @@ A Boolean value you use to indicate that a game controller is recommended on
 - iPadOS 15.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [visionOS](information-property-list/gcrequirescontrolleruserinteraction/visionos.md)

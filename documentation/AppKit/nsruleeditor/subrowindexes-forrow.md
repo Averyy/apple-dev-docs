@@ -24,7 +24,7 @@ Rows are numbered starting at `0`.
 
 ## Parameters
 
-- `rowIndex`: The index of a row in the receiver, or   to get the top-level rows.
+- `rowIndex`: The index of a row in the receiver, or `-1` to get the top-level rows. > ❗ **Important**:  Raises an `NSRangeException` if `rowIndex` is less than `-1` or greater than or equal to the number of rows.
 
 ## See Also
 

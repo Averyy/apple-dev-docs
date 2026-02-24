@@ -26,7 +26,7 @@ The request’s outcome. For more information, see [`ASAuthorizationResult`](asa
 ## Parameters
 
 - `request`: The authorization request to perform.
-- `options`: Additional options that customize the request’s behavior. For more information, see  .
+- `options`: Additional options that customize the request’s behavior. For more information, see [`ASAuthorizationController.RequestOptions`](asauthorizationcontroller/requestoptions.md).
 
 ## See Also
 

@@ -16,7 +16,7 @@ func setVideoGravity(_ videoGravity: WKVideoGravity)
 
 ## Parameters
 
-- `videoGravity`: The resizing option for the movie. For a list of possible values, see the   type. Defaults to  .
+- `videoGravity`: The resizing option for the movie. For a list of possible values, see the [`WKVideoGravity`](wkvideogravity.md) type. Defaults to [`WKVideoGravity.resizeAspect`](wkvideogravity/resizeaspect.md).
 
 ## See Also
 

@@ -9,6 +9,12 @@ The entitlement the system requires for an app to use the EnergyKit framework.
 - iOS 26.0+
 - iPadOS 26.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 This entitlement works with the [`EnergyKit`](https://developer.apple.com/documentation/EnergyKit) framework, which provides insights and suggestions to manage home device electricity usage.

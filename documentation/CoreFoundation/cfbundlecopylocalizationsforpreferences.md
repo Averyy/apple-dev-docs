@@ -31,7 +31,7 @@ This is not the same as [`CFBundleCopyPreferredLocalizationsFromArray(_:)`](cfbu
 ## Parameters
 
 - `locArray`: An array of possible localizations to search.
-- `prefArray`: An array of preferred localizations. If  , the user’s actual preferred localizations will be used.
+- `prefArray`: An array of preferred localizations. If `NULL`, the user’s actual preferred localizations will be used.
 
 ## See Also
 

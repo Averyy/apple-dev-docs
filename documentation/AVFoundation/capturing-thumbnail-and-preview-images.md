@@ -8,10 +8,10 @@ Enable delivery of reduced-size images with the main image in a photo capture.
 
 Generating your own preview or thumbnail images from high-resolution source images can be difficult and time-consuming. Instead, use [`AVCapturePhotoOutput`](avcapturephotooutput.md) to get easy, fast preview and thumbnail generation as part of your capture process.
 
-In the capture system, the names  and  have specific meanings:
+In the capture system, the names *preview* and *thumbnail* have specific meanings:
 
-- A  is a reduced-size (screen resolution or smaller) version of the photo, in an uncompressed format, delivered only in memory for purposes of displaying feedback shortly after capture. For example, the system Camera app displays a preview image of the last captured photo.
-- A  is a smaller version of the photo, encoded in a compressed format and embedded in the output image file for use by other software. For example, image browsers reading a folder full of images can preview the contents of many files without reading and decoding each file’s entire contents.
+- A *preview image* is a reduced-size (screen resolution or smaller) version of the photo, in an uncompressed format, delivered only in memory for purposes of displaying feedback shortly after capture. For example, the system Camera app displays a preview image of the last captured photo.
+- A *thumbnail image* is a smaller version of the photo, encoded in a compressed format and embedded in the output image file for use by other software. For example, image browsers reading a folder full of images can preview the contents of many files without reading and decoding each file’s entire contents.
 
 You can add preview images, thumbnail images, or both with minor additions to any [`AVCapturePhotoOutput`](avcapturephotooutput.md) workflow (see [`Capturing still and Live Photos`](capturing-still-and-live-photos.md) and related topics).
 

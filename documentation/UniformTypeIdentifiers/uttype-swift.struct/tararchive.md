@@ -22,9 +22,9 @@ static var tarArchive: UTType { get }
 
 #### Discussion
 
- public.tar-archive
+**UTI:** public.tar-archive
 
- public.data, public.archive
+**conforms to:** public.data, public.archive
 
 
 ---

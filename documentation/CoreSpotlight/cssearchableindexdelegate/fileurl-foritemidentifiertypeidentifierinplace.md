@@ -31,9 +31,9 @@ Produce the URL as quickly as possible so the app receiving the data can update 
 ## Parameters
 
 - `searchableIndex`: The index containing the requested searchable item.
-- `itemIdentifier`: The unique identifier of the searchable item. Use this value to locate   the item in your content.
-- `typeIdentifier`: The type of data that you must provide. This parameter contains one of   the values from the   or    property of the item’s   attribute set.
-- `inPlace`: A Boolean that indicates whether to return the URL of the original file or a   copy of the original file. This parameter is   for types you specified in the    property of the item’s   attributes. If this parameter is  , create a copy of the file and return its URL.
+- `itemIdentifier`: The unique identifier of the searchable item. Use this value to locate the item in your content.
+- `typeIdentifier`: The type of data that you must provide. This parameter contains one of the values from the [`providerFileTypeIdentifiers`](cssearchableitemattributeset/providerfiletypeidentifiers.md) or [`providerInPlaceFileTypeIdentifiers`](cssearchableitemattributeset/providerinplacefiletypeidentifiers.md) property of the item’s attribute set.
+- `inPlace`: A Boolean that indicates whether to return the URL of the original file or a copy of the original file. This parameter is `true` for types you specified in the [`providerInPlaceFileTypeIdentifiers`](cssearchableitemattributeset/providerinplacefiletypeidentifiers.md) property of the item’s attributes. If this parameter is `false`, create a copy of the file and return its URL.
 
 ## See Also
 

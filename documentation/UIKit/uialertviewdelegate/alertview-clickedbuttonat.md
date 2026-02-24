@@ -23,7 +23,7 @@ The receiver is automatically dismissed after this method is invoked.
 ## Parameters
 
 - `alertView`: The alert view containing the button.
-- `buttonIndex`: The index of the button that was clicked. The button indices start at  .
+- `buttonIndex`: The index of the button that was clicked. The button indices start at `0`.
 
 
 ---

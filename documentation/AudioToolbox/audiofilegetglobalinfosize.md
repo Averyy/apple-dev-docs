@@ -29,9 +29,9 @@ This function can be used to get information about the capabilities of Audio Fil
 
 ## Parameters
 
-- `inPropertyID`: The property whose data size you want to get. For possible values, see  .
+- `inPropertyID`: The property whose data size you want to get. For possible values, see [`Audio File Global Info Properties`](1576495-audio-file-global-info-propertie.md).
 - `inSpecifierSize`: The size of the specifier data.
-- `inSpecifier`: A pointer to a   (a pointer to a buffer containing some data which is different for each property. The type of the data required is described in the description of each property.)
+- `inSpecifier`: A pointer to a *specifier* (a pointer to a buffer containing some data which is different for each property. The type of the data required is described in the description of each property.)
 - `outDataSize`: A pointer to the size in bytes of the current value of the property. To get the size of the property value,  you need a buffer of this size.
 
 ## See Also

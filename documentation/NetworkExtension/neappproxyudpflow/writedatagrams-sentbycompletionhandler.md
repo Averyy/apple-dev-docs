@@ -20,9 +20,9 @@ func writeDatagrams(_ datagrams: [Data], sentBy remoteEndpoints: [NWEndpoint]) a
 
 ## Parameters
 
-- `datagrams`: An array of   objects containing datagram payloads to be written.
-- `remoteEndpoints`: An array of   objects containing the source endpoints of the datagram payloads in  .
-- `completionHandler`: A block that will be executed by the system on an internal system thread when the data is written into the receive buffer of the socket associated with the flow. If an error occurs while writing the data then a non-nil   object is passed to the block. See   in   for a list of possible errors.
+- `datagrams`: An array of [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) objects containing datagram payloads to be written.
+- `remoteEndpoints`: An array of [`NWEndpoint`](nwendpoint.md) objects containing the source endpoints of the datagram payloads in `datagrams`.
+- `completionHandler`: A block that will be executed by the system on an internal system thread when the data is written into the receive buffer of the socket associated with the flow. If an error occurs while writing the data then a non-nil [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object is passed to the block. See `NEAppProxyFlowError` in [`NEAppProxyFlow`](neappproxyflow.md) for a list of possible errors.
 
 ## See Also
 

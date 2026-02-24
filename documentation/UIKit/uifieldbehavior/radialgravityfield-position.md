@@ -30,7 +30,7 @@ When setting the [`strength`](uifieldbehavior/strength.md) of the field, positiv
 
 ## Parameters
 
-- `position`: The location of the gravitation force in the reference coordinate system. You can change this value later by modifying the   property.
+- `position`: The location of the gravitation force in the reference coordinate system. You can change this value later by modifying the [`position`](uifieldbehavior/position.md) property.
 
 ## See Also
 

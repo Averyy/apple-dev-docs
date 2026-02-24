@@ -32,7 +32,7 @@ This function modifies the depth stencil state, viewports, vertex amplification 
 
 ## Parameters
 
-- `value`: The value to use when updating the stencil texture in the  .
+- `value`: The value to use when updating the stencil texture in the [`MTLRenderCommandEncoder`](https://developer.apple.com/documentation/Metal/MTLRenderCommandEncoder).
 
 ## See Also
 

@@ -33,8 +33,8 @@ This is the designated initializer for [`URLProtocol`](urlprotocol.md).
 ## Parameters
 
 - `request`: The URL request for the URL protocol object. This request is retained.
-- `cachedResponse`: A cached response for the request; it may be   if there is no existing cached response for the request.
-- `client`: An object that provides an implementation of the   protocol that this instance uses to communicate with the URL Loading System. This client object is retained.
+- `cachedResponse`: A cached response for the request; it may be `nil` if there is no existing cached response for the request.
+- `client`: An object that provides an implementation of the [`URLProtocolClient`](urlprotocolclient.md) protocol that this instance uses to communicate with the URL Loading System. This client object is retained.
 
 ## See Also
 

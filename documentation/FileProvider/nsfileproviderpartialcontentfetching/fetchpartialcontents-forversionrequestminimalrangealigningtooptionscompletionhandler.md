@@ -88,7 +88,11 @@ If the user cancels the operation, the system calls the progress item’s [`canc
 - `requestedRange`: The range given as a starting location and a length in bytes.
 - `alignment`: A system defined alignment value. The start and end of the range of data you provide must be multiples of this value. The alignment value may change across reboots; however, the system guarantees that it’s a power of two.
 - `options`: Options for the fetch range.
-- `completionHandler`: A block that you call after downloading the item from your remote storage. You pass the following parameters:
+- `completionHandler`: A block that you call after downloading the item from your remote storage. You pass the following parameters: - **`fileContents`**: A URL to the item’s contents.
+- **`item`**: The downloaded item.
+- **`retrievedRange`**: The range that your file provider extension is providing. This must be properly aligned, and must cover the requested range.
+- **`flags`**: A flag that provides additional information about the provided content.
+- **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

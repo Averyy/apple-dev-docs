@@ -8,6 +8,10 @@ The label for an Action extension’s toolbar item.
 **Availability**:
 - macOS 10.10+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [NSExtensionServiceAllowsToolbarItem](information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowstoolbaritem.md)

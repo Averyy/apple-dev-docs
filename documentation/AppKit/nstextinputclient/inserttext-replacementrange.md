@@ -25,7 +25,7 @@ This method is the entry point for inserting text typed by the user and is gener
 
 ## Parameters
 
-- `string`: The text to insert, either an   or   instance.
+- `string`: The text to insert, either an `NSString` or `NSAttributedString` instance.
 - `replacementRange`: The range of content to replace in the receiver’s text storage.
 
 ## See Also

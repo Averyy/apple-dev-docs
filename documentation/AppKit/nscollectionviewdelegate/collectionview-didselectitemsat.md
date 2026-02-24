@@ -24,7 +24,7 @@ This method is not called when you set the selection programmatically using the 
 ## Parameters
 
 - `collectionView`: The collection view notifying you of the selection change.
-- `indexPaths`: The set of   objects corresponding to the items that are now selected.
+- `indexPaths`: The set of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects corresponding to the items that are now selected.
 
 ## See Also
 

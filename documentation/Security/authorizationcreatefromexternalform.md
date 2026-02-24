@@ -26,7 +26,7 @@ When passing an authorization reference between processes, use this function to 
 ## Parameters
 
 - `extForm`: A pointer to the external representation of the authorization reference you retrieve from the calling process.
-- `authorization`: A pointer to an authorization reference. On return, this points to the local copy of the authorization reference. The Security Server allocates the authorization reference for you, so you do not need to call the function  .
+- `authorization`: A pointer to an authorization reference. On return, this points to the local copy of the authorization reference. The Security Server allocates the authorization reference for you, so you do not need to call the function [`AuthorizationCreate(_:_:_:_:)`](authorizationcreate(_:_:_:_:).md).
 
 
 ---

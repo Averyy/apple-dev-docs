@@ -22,7 +22,7 @@ Creates a new button with the specified type, registers the primary action event
 ## Parameters
 
 - `buttonType`: The type of button.
-- `primaryAction`: The action to perform when the button is selected. The button registers this action for the   control event and sets the title and image properties to the action’s title and image.
+- `primaryAction`: The action to perform when the button is selected. The button registers this action for the [`primaryActionTriggered`](uicontrol/event/primaryactiontriggered.md) control event and sets the title and image properties to the action’s title and image.
 
 ## See Also
 

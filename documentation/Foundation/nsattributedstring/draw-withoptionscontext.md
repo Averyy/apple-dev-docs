@@ -37,8 +37,8 @@ This method uses the baseline origin by default, so it renders the string as a s
 ## Parameters
 
 - `rect`: The bounding rectangle in which to draw the string.
-- `options`: Additional drawing options to apply to the string during rendering. For a list of possible values, see  .
-- `context`: A context object with information about how to adjust the font tracking and scaling information. On return, the specified object contains information about the actual values used to render the string. This parameter may be  .
+- `options`: Additional drawing options to apply to the string during rendering. For a list of possible values, see [`NSStringDrawingOptions`](https://developer.apple.com/documentation/UIKit/NSStringDrawingOptions).
+- `context`: A context object with information about how to adjust the font tracking and scaling information. On return, the specified object contains information about the actual values used to render the string. This parameter may be `nil`.
 
 ## See Also
 

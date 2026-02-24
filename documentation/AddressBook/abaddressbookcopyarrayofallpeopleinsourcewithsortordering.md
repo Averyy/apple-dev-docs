@@ -24,7 +24,7 @@ An array of all person records in the address book database, sorted by `sortOrde
 
 - `addressBook`: The address book whose person records are being returned.
 - `source`: The source whose records are being returned.
-- `sortOrdering`: Indicates whether to sort by first name or by last name. See  .
+- `sortOrdering`: Indicates whether to sort by first name or by last name. See [`Sort Order`](1619730-sort-order.md).
 
 ## See Also
 

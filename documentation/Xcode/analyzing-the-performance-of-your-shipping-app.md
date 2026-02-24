@@ -18,7 +18,7 @@ The Xcode Organizer shows a title, description, and graph for each type of metri
 
 ![A labeled screenshot of the Hang Rate metric pane in the Xcode Organizer. From left to right are the list of metrics and reports, the metric UI with a bar graph showing the hang rate for the past 12 app versions, and data for the latest app version.](https://docs-assets.developer.apple.com/published/470a1a1e4b68f6a672fd7c01b63b330c/analyzing-the-performance-of-your-shipping-app-1%402x.png)
 
-Metrics that show   in the detail section include an associated margin of error because the existing data is limited. Use this margin of error to determine the upper and lower bounds of the displayed value. The margin of error decreases as data increases. The release date information in this section provides the date when the selected app version is ready for sale.
+Metrics that show *limited usage*  in the detail section include an associated margin of error because the existing data is limited. Use this margin of error to determine the upper and lower bounds of the displayed value. The margin of error decreases as data increases. The release date information in this section provides the date when the selected app version is ready for sale.
 
 ##### Compare Performance with a Previous App Release
 
@@ -74,7 +74,7 @@ For more details about how to use the data in the Organizer panes to improve the
   Model, measure, and boost the performance of your app by using a continuous-improvement cycle.
 - [Profiling apps using Instruments](https://developer.apple.com/tutorials/instruments)
   Use Instruments to analyze the performance, resource usage, and behavior of your apps. Learn how to improve responsiveness, reduce memory usage, and analyze complex behavior over time.
-- [Creating a performance plan for your visionOS app](../visionOS/creating-a-performance-plan-for-visionos-app.md)
+- [Creating a performance plan for your visionOS app](../visionos/creating-a-performance-plan-for-visionos-app.md)
   Identify your app’s performance and power goals and create a plan to measure and assess them.
 
 

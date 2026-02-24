@@ -33,7 +33,7 @@ This will return null if the `CGColorSpace` is not `kCGColorSpaceModelRGB`. The 
 - `green`: The color’s unpremultiplied green component value.
 - `blue`: The color’s unpremultiplied blue component value.
 - `alpha`: The color’s alpha (opacity) value between 0 and 1.
-- `colorSpace`: The color’s   which must have  .
+- `colorSpace`: The color’s `CGColorSpace` which must have `kCGColorSpaceModelRGB`.
 
 ## See Also
 

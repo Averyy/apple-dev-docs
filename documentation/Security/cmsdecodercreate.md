@@ -24,7 +24,7 @@ This is the first function in a sequence of decoder functions that you call to g
 
 ## Parameters
 
-- `cmsDecoderOut`: On return, points to a CMSDecoder reference. You must use the   function to free this reference when you are finished using it.
+- `cmsDecoderOut`: On return, points to a CMSDecoder reference. You must use the `CFRelease` function to free this reference when you are finished using it.
 
 ## See Also
 

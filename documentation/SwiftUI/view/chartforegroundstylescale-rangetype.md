@@ -23,7 +23,7 @@ func chartForegroundStyleScale<Range>(range: Range, type: ScaleType? = nil) -> s
 
 ## Parameters
 
-- `range`: The range of foreground styles that correspond to the   scale domain.
+- `range`: The range of foreground styles that correspond to the scale domain.
 - `type`: The scale type.
 
 ## See Also

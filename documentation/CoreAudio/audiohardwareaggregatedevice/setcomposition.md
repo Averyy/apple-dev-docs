@@ -17,7 +17,7 @@ func setComposition(_ composition: [String : Any]) throws
 
 ## Parameters
 
-- `composition`: A Dictionary that describes the composition of the aggregate   device.
+- `composition`: A Dictionary that describes the composition of the aggregate device.
 
 
 ---

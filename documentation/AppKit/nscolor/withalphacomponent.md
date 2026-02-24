@@ -24,7 +24,7 @@ A subclass with explicit opacity components should override this method to retur
 
 ## Parameters
 
-- `alpha`: The opacity value of the new   object.
+- `alpha`: The opacity value of the new `NSColor` object.
 
 ## See Also
 

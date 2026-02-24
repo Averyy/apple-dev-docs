@@ -20,7 +20,7 @@ func startTrackingCaptureRequest(using settings: AVCapturePhotoSettings)
 
 ## Parameters
 
-- `settings`: A settings object that the system passes   for this capture request.
+- `settings`: A settings object that the system passes [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) for this capture request.
 
 ## See Also
 

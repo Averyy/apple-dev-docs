@@ -30,8 +30,8 @@ The [`children`](hashierarchy/children.md) collections of both the old and new p
 
 ## Parameters
 
-- `parent`: The new parent entity. Use   to detach the entity from its   current parent.
-- `preservingWorldTransform`: A Boolean that you set to   to preserve   the entity’s world transform, or   to preserve its relative   transform. Use   when you want a model to keep its effective   location and size within a scene.
+- `parent`: The new parent entity. Use `nil` to detach the entity from its current parent.
+- `preservingWorldTransform`: A Boolean that you set to `true` to preserve the entity’s world transform, or `false` to preserve its relative transform. Use `true` when you want a model to keep its effective location and size within a scene.
 
 ## See Also
 

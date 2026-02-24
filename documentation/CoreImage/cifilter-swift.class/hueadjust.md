@@ -29,6 +29,9 @@ This method applies the hue-adjust filter to an image. The effect changes the hu
 
 The hue-adjust filter uses the following properties:
 
+- **`angle`**: A `float` representing the angle in radians to adjust the current hue of the image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that shifts the hue of the image by 5 radians.
 
 ```swift

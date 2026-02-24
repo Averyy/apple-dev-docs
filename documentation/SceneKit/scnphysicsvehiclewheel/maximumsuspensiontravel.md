@@ -22,7 +22,7 @@ var maximumSuspensionTravel: CGFloat { get set }
 
 #### Discussion
 
- is the total distance a wheel is allowed to move (in both directions), in the coordinate system of the node containing the vehicle’s chassis. The default suspension travel is `500.0`.
+*Travel* is the total distance a wheel is allowed to move (in both directions), in the coordinate system of the node containing the vehicle’s chassis. The default suspension travel is `500.0`.
 
 ## See Also
 

@@ -21,6 +21,10 @@ object APN.DefaultsData
 - [object APN.DefaultsData.ApnsItem](apn/defaultsdata-data.dictionary/apnsitem.md)
   A dictionary that describes an APN configuration.
 
+## Properties
+
+- `apns` ([APN.DefaultsData.ApnsItem]) *(required)*: An array of APN dictionaries (`APN.DefaultsData.Apns`).
+
 
 ---
 

@@ -24,7 +24,7 @@ UIKit calls this method at the end of a transition to let you know the results. 
 
 ## Parameters
 
-- `transitionCompleted`: Contains the value   if the transition completed successfully and the new view controller is now displayed or   if the transition was canceled and the original view controller is still visible.
+- `transitionCompleted`: Contains the value [`true`](https://developer.apple.com/documentation/Swift/true) if the transition completed successfully and the new view controller is now displayed or [`false`](https://developer.apple.com/documentation/Swift/false) if the transition was canceled and the original view controller is still visible.
 
 ## See Also
 

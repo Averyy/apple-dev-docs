@@ -30,6 +30,8 @@ init(type: any Generable.Type, description: String? = nil, properties: [Generati
   Creates a schema by providing an array of dynamic schemas.
 - [init(type:description:anyOf:)](generationschema/init(type:description:anyof:).md)
   Creates a schema for a string enumeration.
+- [init(type: any Generable.Type, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [GenerationSchema.Property])](generationschema/init(type:description:representnilexplicitlyingeneratedcontent:properties:).md)
+  Creates a schema by providing an array of properties.
 - [GenerationSchema.Property](generationschema/property.md)
   A property that belongs to a generation schema.
 

@@ -33,6 +33,11 @@ By default, the file is named `PrivacyInfo.xcprivacy`; this is the required file
 
 At the top level of this property list file, add the following keys to the dictionary:
 
+- **[`NSPrivacyTracking`](app-privacy-configuration/nsprivacytracking.md)**: A Boolean that indicates whether your app or third-party SDK uses data for tracking as defined under the App Tracking Transparency framework. When set to `true` you need to provide a list of internet domains in `NSPrivacyTrackingDomains`. For more information, see [`User Privacy and Data Use`](https://developer.apple.comhttps://developer.apple.com/app-store/user-privacy-and-data-use/).
+- **[`NSPrivacyTrackingDomains`](app-privacy-configuration/nsprivacytrackingdomains.md)**: An array of strings that lists the internet domains your app or third-party SDK connects to that engage in tracking. If the user has not granted tracking permission through the App Tracking Transparency framework, network requests to these domains fail and your app receives an error. To provide a list of internet domains in `NSPrivacyTrackingDomains`, set `NSPrivacyTracking` to `true`.
+- **[`NSPrivacyCollectedDataTypes`](app-privacy-configuration/nsprivacycollecteddatatypes.md)**: An array of dictionaries that describes the data types your app or third-party SDK collects. For information on the keys and values to use in the dictionaries, see [`Describing data use in privacy manifests`](describing-data-use-in-privacy-manifests.md).
+- **[`NSPrivacyAccessedAPITypes`](app-privacy-configuration/nsprivacyaccessedapitypes.md)**: An array of dictionaries that describe the API types your app or third-party SDK accesses that have been designated as APIs that require reasons to access. For information on the keys and values to use in the dictionaries, see [`Describing use of required reason API`](describing-use-of-required-reason-api.md).
+
 ## Topics
 
 ### Essentials

@@ -21,7 +21,7 @@ var skinWidth: Float
 
 #### Discussion
 
-A small skin, known as the , is maintained around the controller’s volume to avoid rounding and precision issues with collision detection. Specify this value relative to the entity’s coordinate system.
+A small skin, known as the *contact offset*, is maintained around the controller’s volume to avoid rounding and precision issues with collision detection. Specify this value relative to the entity’s coordinate system.
 
 ## See Also
 

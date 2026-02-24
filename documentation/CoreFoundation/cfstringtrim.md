@@ -23,7 +23,7 @@ func CFStringTrim(_ theString: CFMutableString!, _ trimString: CFString!)
 ## Parameters
 
 - `theString`: The string to trim. If this value is not a CFMutableString object, an assertion is raised.
-- `trimString`: The string to trim from  . The characters of the trim string are treated as a substring and not individually; for example, if the mutable characters are “abc X” and the trim string is “XY”, the mutable characters are not affected.
+- `trimString`: The string to trim from `theString`. The characters of the trim string are treated as a substring and not individually; for example, if the mutable characters are “abc X” and the trim string is “XY”, the mutable characters are not affected.
 
 ## See Also
 

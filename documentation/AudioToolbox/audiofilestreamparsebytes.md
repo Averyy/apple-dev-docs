@@ -31,10 +31,10 @@ When you provide data to the parser, the parser looks for property data and audi
 
 ## Parameters
 
-- `inAudioFileStream`: The ID of the parser to which you wish to pass data. The parser ID is returned by the   function.
+- `inAudioFileStream`: The ID of the parser to which you wish to pass data. The parser ID is returned by the [`AudioFileStreamOpen(_:_:_:_:_:)`](audiofilestreamopen(_:_:_:_:_:).md) function.
 - `inDataByteSize`: The number of bytes of data to be parsed.
 - `inData`: The data to be parsed.
-- `inFlags`: An audio file stream flag. If there is a discontinuity from the last data you passed to the parser, set the    flag.
+- `inFlags`: An audio file stream flag. If there is a discontinuity from the last data you passed to the parser, set the  [`discontinuity`](audiofilestreamparseflags/discontinuity.md) flag.
 
 ## See Also
 

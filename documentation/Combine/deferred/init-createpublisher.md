@@ -22,7 +22,7 @@ init(createPublisher: @escaping () -> DeferredPublisher)
 
 ## Parameters
 
-- `createPublisher`: The closure to execute when calling  .
+- `createPublisher`: The closure to execute when calling `subscribe(_:)`.
 
 
 ---

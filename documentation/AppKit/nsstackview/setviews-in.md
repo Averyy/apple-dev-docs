@@ -23,7 +23,7 @@ A view in a detached state is not present in the stack view’s view hierarchy, 
 ## Parameters
 
 - `views`: The array of views you are specifying for the gravity area.
-- `gravity`: The gravity area that you’re specifying the array of views for.  Valid values are those in the   enumeration, according to the stack view’s layout direction.
+- `gravity`: The gravity area that you’re specifying the array of views for.  Valid values are those in the [`NSStackView.Gravity`](nsstackview/gravity.md) enumeration, according to the stack view’s layout direction.
 
 ## See Also
 

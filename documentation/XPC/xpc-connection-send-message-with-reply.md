@@ -29,7 +29,7 @@ If the given GCD queue is a concurrent queue, XPC cannot guarantee that there wi
 - `connection`: The connection over which the message shall be sent.
 - `message`: The message to send. This must be a dictionary object.
 - `replyq`: The GCD queue to which the reply handler will be submitted. This may be a concurrent queue.
-- `handler`: The handler block to invoke when a reply to the message is received from the connection. If the remote service exits prematurely before the reply was received, the   error will be returned. If the connection went invalid before the message could be sent, the   error will be returned.
+- `handler`: The handler block to invoke when a reply to the message is received from the connection. If the remote service exits prematurely before the reply was received, the [`XPC_ERROR_CONNECTION_INTERRUPTED`](xpc_error_connection_interrupted-swift.var.md) error will be returned. If the connection went invalid before the message could be sent, the [`XPC_ERROR_CONNECTION_INVALID`](xpc_error_connection_invalid-swift.var.md) error will be returned.
 
 ## See Also
 

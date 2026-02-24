@@ -28,7 +28,7 @@ func tokenVector(at index: String.Index) -> ([Double], Range<String.Index>)?
 ## See Also
 
 - [func enumerateTokenVectors(in: Range<String.Index>, using: ([Double], Range<String.Index>) -> Bool)](nlcontextualembeddingresult/enumeratetokenvectors(in:using:).md)
-  Iterates over the embedding vectors for the range you specify.
+  Iterates over the embedding vectors corresponding to the subword tokens within the specified range of the input string.
 
 
 ---

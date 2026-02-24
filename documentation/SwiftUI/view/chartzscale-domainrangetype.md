@@ -21,8 +21,8 @@ func chartZScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType? =
 
 ## Parameters
 
-- `domain`: The possible data values along the z axis in the   chart. You can define the domain with a   for numeric values.
-- `range`: The range of x positions that correspond to the scale   domain. By default the range is determined by the dimension of the plot   area.
+- `domain`: The possible data values along the z axis in the chart. You can define the domain with a `ClosedRange` for numeric values.
+- `range`: The range of x positions that correspond to the scale domain. By default the range is determined by the dimension of the plot area.
 - `type`: The scale type.
 
 

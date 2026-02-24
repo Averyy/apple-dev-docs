@@ -23,8 +23,8 @@ func chartSymbolSizeScale<Domain, Range>(domain: Domain, range: Range, type: Sca
 
 ## Parameters
 
-- `domain`: The possible data values plotted as symbol sizes in   the chart. You can define the domain with an array for   categorical values (e.g.,  )
-- `range`: The range of symbol size that correspond to the   scale domain.
+- `domain`: The possible data values plotted as symbol sizes in the chart. You can define the domain with an array for categorical values (e.g., `["A", "B", "C"]`)
+- `range`: The range of symbol size that correspond to the scale domain.
 - `type`: The scale type.
 
 ## See Also

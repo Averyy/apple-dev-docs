@@ -25,7 +25,7 @@ Creates a physics body component deriving mass properties from shape and mass.
 - `shapes`: The shape for which to estimate the rotational inertia and center of mass.
 - `mass`: The mass of the object in kilograms.
 - `material`: The material properties, like friction.
-- `mode`: The simulation mode that indicates how a body responds to   forces.
+- `mode`: The simulation mode that indicates how a body responds to forces.
 
 ## See Also
 

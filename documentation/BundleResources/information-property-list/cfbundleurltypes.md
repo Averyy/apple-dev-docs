@@ -13,6 +13,10 @@ A list of URL schemes (http, ftp, and so on) supported by the app.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: dictionary 
+
 ## Topics
 
 ### Property List Keys

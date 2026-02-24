@@ -21,11 +21,14 @@ case orientation
 
 ##### Demand Target
 
+- **Source**: The model space orientation of the constrained joint from the FK demands pose.
+- **Target**: The rotation component of [`target`](ikcomponent/constraint/target.md).
+
 The rotation weight of [`animationOverrideWeight`](ikcomponent/constraint/animationoverrideweight.md) determines how the rotation target is calculated:
 
-- A weight of  uses the `Source`.
-- A weight of  uses the `Target`.
-- A weight  results in a spherical linear interpolation between the `Source` and `Target`.
+- A weight of **`0`** uses the `Source`.
+- A weight of **`1`** uses the `Target`.
+- A weight **between `0` and `1`** results in a spherical linear interpolation between the `Source` and `Target`.
 
 
 ---

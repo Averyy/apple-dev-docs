@@ -22,7 +22,7 @@ Calling this method when there’s no modal template displayed has no effect.
 
 ## Parameters
 
-- `animated`: A Boolean value that indicates whether the system animates the dismissal of the template. Set to   to animate the transition.
+- `animated`: A Boolean value that indicates whether the system animates the dismissal of the template. Set to [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition.
 
 ## See Also
 

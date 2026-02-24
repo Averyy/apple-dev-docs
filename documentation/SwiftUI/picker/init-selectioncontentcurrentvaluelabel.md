@@ -27,8 +27,8 @@ This initializer creates a [`Text`](text.md) view on your behalf, and treats the
 
 ## Parameters
 
-- `titleKey`: A localized string key that describes the purpose of   selecting an option.
-- `selection`: A binding to a property that determines the   currently-selected option.
+- `titleKey`: A localized string key that describes the purpose of selecting an option.
+- `selection`: A binding to a property that determines the currently-selected option.
 - `content`: A view that contains the set of options.
 - `currentValueLabel`: A view that represents the current value of the picker.
 

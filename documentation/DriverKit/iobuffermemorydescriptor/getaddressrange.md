@@ -23,7 +23,7 @@ kern_return_t GetAddressRange(IOAddressSegment *range);
 
 ## Parameters
 
-- `range`: An   structure that you provide. On return, this structure contains the address and length of the memory buffer.
+- `range`: An [`IOAddressSegment`](ioaddresssegment.md) structure that you provide. On return, this structure contains the address and length of the memory buffer.
 
 ## See Also
 

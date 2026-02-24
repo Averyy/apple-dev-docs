@@ -43,6 +43,45 @@ The following code example illustrates capturing a bracket of three RAW images w
 
 Listing 1. Capturing a Multi-Exposure Bracket
 
+**Swift**:
+
+```swift
+func captureRAWAutoExposureBracket() {
+    guard myCapturePhotoOutput.maxBracketedCapturePhotoCount >= 3 else { return }
+    
+    // Specify a 3-shot bracket, where exposure compensation varies between each shot.
+    let makeSettings = AVCaptureAutoExposureBracketedStillImageSettings.autoExposureSettingsWithExposureTargetBias
+    let bracketedStillImageSettings = [-2, 0, 2].map { makeSettings(Float($0))! }
+    let rawFormat = myCapturePhotoOutput.availableRawPhotoCVPixelFormatTypes.first!.unsignedIntValue as OSType
+    
+    let settings = AVCapturePhotoBracketSettings(format: nil, rawPixelFormatType: rawFormat, bracketedSettings: bracketedStillImageSettings)
+    settings.lensStabilizationEnabled = myCapturePhotoOutput.lensStabilizationDuringBracketedCaptureSupported
+    
+    myCapturePhotoOutput.capturePhotoWithSettings(settings, delegate: self)
+    // Three RAW photos will be delivered.
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)captureRAWAutoExposureBracket {
+    if ( myCapturePhotoOutput.maxBracketedCapturePhotoCount < 3 ) { return; }
+ 
+    // Specify a 3-shot bracket, where exposure compensation varies between each shot.
+    NSArray *bracketedStillImageSettings = @[ [AVCaptureAutoExposureBracketedStillImageSettings autoExposureSettingsWithExposureTargetBias:-2.],
+                              [AVCaptureAutoExposureBracketedStillImageSettings autoExposureSettingsWithExposureTargetBias:0.],
+                              [AVCaptureAutoExposureBracketedStillImageSettings autoExposureSettingsWithExposureTargetBias:2.] ];
+     OSType rawFormat = [[myCapturePhotoOutput.availableRawPhotoCVPixelFormatTypes firstObject] intValue];
+ 
+    AVCapturePhotoBracketSettings *settings = [[AVCapturePhotoBracketSettings alloc] initWithFormat:nil rawPixelFormatType:rawFormat bracketedSettings:bracketedStillImageSettings];
+    settings.lensStabilizationEnabled = myCapturePhotoOutput.isLensStabilizationDuringBracketedCaptureSupported;
+ 
+    [myCapturePhotoOutput capturePhotoWithSettings:settings delegate:self];
+    // Three RAW photos will be delivered to the delegate.
+}
+```
+
 ## Topics
 
 ### Creating a bracket settings object

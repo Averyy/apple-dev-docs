@@ -30,10 +30,10 @@ This function takes a path name in the form of a native character string, resolv
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
-- `buffer`: The character bytes to convert into a   object. This should be the path as you would use in POSIX function calls.
+- `allocator`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `buffer`: The character bytes to convert into a `CFURL` object. This should be the path as you would use in POSIX function calls.
 - `bufLen`: The number of bytes in the buffer.
-- `isDirectory`: A Boolean value that specifies whether the string is treated as a directory path when resolving against relative path components. Pass   if the pathname indicates a directory,   otherwise.
+- `isDirectory`: A Boolean value that specifies whether the string is treated as a directory path when resolving against relative path components. Pass `true` if the pathname indicates a directory, `false` otherwise.
 - `baseURL`: The URL against which to resolve the path.
 
 ## See Also

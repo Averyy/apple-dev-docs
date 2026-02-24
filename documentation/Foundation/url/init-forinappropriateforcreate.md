@@ -22,9 +22,9 @@ init(for directory: FileManager.SearchPathDirectory, in domain: FileManager.Sear
 
 ## Parameters
 
-- `directory`: The search path for the commonly used directory, such as   or  .
-- `domain`: The file system domain to search, which the values in   define. Specify only one domain for this parameter. You may not specify   with this initializer.
-- `url`: The initializer ignores this parameter unless the directory parameter contains the value   and the domain parameter contains the value  .
+- `directory`: The search path for the commonly used directory, such as [`FileManager.SearchPathDirectory.desktopDirectory`](filemanager/searchpathdirectory/desktopdirectory.md) or [`FileManager.SearchPathDirectory.downloadsDirectory`](filemanager/searchpathdirectory/downloadsdirectory.md).
+- `domain`: The file system domain to search, which the values in [`FileManager.SearchPathDomainMask`](filemanager/searchpathdomainmask.md) define. Specify only one domain for this parameter. You may not specify [`allDomainsMask`](filemanager/searchpathdomainmask/alldomainsmask.md) with this initializer.
+- `url`: The file URL for determining the location of the returned URL. Only the volume of this parameter is relevant. The initializer ignores this parameter unless the directory parameter contains the value [`FileManager.SearchPathDirectory.itemReplacementDirectory`](filemanager/searchpathdirectory/itemreplacementdirectory.md) and the domain parameter contains the value [`userDomainMask`](filemanager/searchpathdomainmask/userdomainmask.md).
 - `shouldCreate`: A Boolean value that indicates whether the initializer creates the directory if it doesn’t already exist.
 
 ## See Also

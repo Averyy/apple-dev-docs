@@ -41,18 +41,18 @@ CVOpenGLESTextureCacheCreateTextureFromImage(kCFAllocatorDefault, textureCache, 
 
 ## Parameters
 
-- `allocator`: The   to use for allocating the texture object. This parameter can be  .
+- `allocator`: The [`CFAllocator`](https://developer.apple.com/documentation/CoreFoundation/CFAllocator) to use for allocating the texture object. This parameter can be `NULL`.
 - `textureCache`: The texture cache object that will manage the texture.
-- `sourceImage`: The   that you want to create a texture from.
-- `textureAttributes`: A   containing the attributes to be used for creating the   objects. This parameter can be  .
-- `target`: The target texture.   and   are the only targets currently supported.
-- `internalFormat`: The number of color components in the texture. Examples are  ,  ,  ,  , and  .
+- `sourceImage`: The [`CVImageBuffer`](cvimagebuffer.md) that you want to create a texture from.
+- `textureAttributes`: A [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) containing the attributes to be used for creating the [`CVOpenGLESTexture`](cvopenglestexture.md) objects. This parameter can be `NULL`.
+- `target`: The target texture. `GL_TEXTURE_2D` and `GL_RENDERBUFFER` are the only targets currently supported.
+- `internalFormat`: The number of color components in the texture. Examples are `GL_RGBA`, `GL_LUMINANCE`, `GL_RGBA8_OES`, `GL_RED`, and `GL_RG`.
 - `width`: The width of the texture image.
 - `height`: The height of the texture image.
-- `format`: The format of the pixel data. Examples are   and  .
-- `type`: The data type of the pixel data. One example is  .
-- `planeIndex`: The plane of the   to map bind.  Ignored for non-planar  s.
-- `textureOut`: A pointer to a   where the newly created texture object will be placed.
+- `format`: The format of the pixel data. Examples are `GL_RGBA` and `GL_LUMINANCE`.
+- `type`: The data type of the pixel data. One example is `GL_UNSIGNED_BYTE`.
+- `planeIndex`: The plane of the [`CVImageBuffer`](cvimagebuffer.md) to map bind.  Ignored for non-planar [`CVImageBuffer`](cvimagebuffer.md)s.
+- `textureOut`: A pointer to a [`CVOpenGLESTexture`](cvopenglestexture.md) where the newly created texture object will be placed.
 
 ## See Also
 

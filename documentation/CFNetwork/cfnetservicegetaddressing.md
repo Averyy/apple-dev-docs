@@ -33,7 +33,7 @@ This function gets the data in a thread-safe way, but the data itself is not saf
 
 ## Parameters
 
-- `theService`: The CFNetService whose IP addressing is to be obtained; cannot be  .
+- `theService`: The CFNetService whose IP addressing is to be obtained; cannot be `NULL`.
 
 ## See Also
 

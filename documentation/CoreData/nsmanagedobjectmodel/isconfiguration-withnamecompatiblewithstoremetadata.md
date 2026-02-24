@@ -30,7 +30,7 @@ This method compares the version information in the store metadata with the enti
 
 ## Parameters
 
-- `configuration`: The name of a configuration in the receiver. Pass   to specify no configuration.
+- `configuration`: The name of a configuration in the receiver. Pass `nil` to specify no configuration.
 - `metadata`: Metadata for a persistent store.
 
 ## See Also

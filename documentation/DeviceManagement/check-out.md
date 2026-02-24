@@ -38,6 +38,10 @@ On success, the server needs to respond with a `200 OK` status.
 - [object CheckOutRequest](checkoutrequest.md)
   The check out request details.
 
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/checkin`
+
 ## Request Body
 
 The request object the system sends for the `CheckOut` request.

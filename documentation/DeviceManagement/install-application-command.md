@@ -49,6 +49,105 @@ Refer to the following sections to determine supported channels and requirements
 
 ##### Example Request and Response
 
+**Enterprise**:
+
+This command installs an enterprise app.
+
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>ManagementFlags</key>
+        <integer>0</integer>
+        <key>ManifestURL</key>
+        <string>https://yourmdmhost.example.com/files/myenterpriseapp.plist</string>
+        <key>RequestType</key>
+        <string>InstallApplication</string>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_InstallApplication</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_InstallApplication</string>
+    <key>Identifier</key>
+    <string>com.acme.myenterpriseapp</string>
+    <key>State</key>
+    <string>Installing</string>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>00008020-000915083C80012E</string>
+</dict>
+</plist>
+```
+
+**App Store**:
+
+This command installs an App Store app.
+
+**Request**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Command</key>
+    <dict>
+        <key>ManagementFlags</key>
+        <integer>0</integer>
+        <key>Options</key>
+        <dict>
+            <key>PurchaseMethod</key>
+            <integer>1</integer>
+        </dict>
+        <key>RequestType</key>
+        <string>InstallApplication</string>
+        <key>iTunesStoreID</key>
+        <integer>1096834193</integer>
+    </dict>
+    <key>CommandUUID</key>
+    <string>0001_InstallApplication</string>
+</dict>
+</plist>
+```
+
+**Response**:
+
+```plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CommandUUID</key>
+    <string>0001_InstallApplication</string>
+    <key>Identifier</key>
+    <string>com.apple.TVRemote</string>
+    <key>State</key>
+    <string>Installing</string>
+    <key>Status</key>
+    <string>Acknowledged</string>
+    <key>UDID</key>
+    <string>00008020-000915083C80012E</string>
+</dict>
+</plist>
+```
+
 ## Topics
 
 ### Commands and responses
@@ -56,6 +155,10 @@ Refer to the following sections to determine supported channels and requirements
   The command to install a third-party app on a device.
 - [object InstallApplicationResponse](installapplicationresponse.md)
   A response from the device after it processes the command to install a third-party app on a device.
+
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

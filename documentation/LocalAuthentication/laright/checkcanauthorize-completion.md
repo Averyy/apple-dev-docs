@@ -26,7 +26,7 @@ func checkCanAuthorize() async throws
 
 ## Parameters
 
-- `handler`: A completion handler called when the authorization check finishes.
+- `handler`: A completion handler called when the authorization check finishes. - **`error`**: If `nil`, the right can be authorized.
 
 ## See Also
 

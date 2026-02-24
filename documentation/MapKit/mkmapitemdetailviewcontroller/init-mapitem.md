@@ -24,7 +24,7 @@ Displays an inline map with the place data.
 
 ## Parameters
 
-- `mapItem`: The map item to display, or   to indicate the item is loading.
+- `mapItem`: The map item to display, or `nil` to indicate the item is loading.
 
 ## See Also
 

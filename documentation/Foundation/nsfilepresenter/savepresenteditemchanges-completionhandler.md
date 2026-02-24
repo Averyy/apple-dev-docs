@@ -28,7 +28,7 @@ The file coordinator calls this method to ensure that all objects trying to acce
 
 ## Parameters
 
-- `completionHandler`: The   to call after you save your changes. If you saved your changes successfully, pass   for the block’s   parameter; otherwise, pass an error object indicating why the changes could not be saved.
+- `completionHandler`: The [`Block object`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) to call after you save your changes. If you saved your changes successfully, pass `nil` for the block’s `errorOrNil` parameter; otherwise, pass an error object indicating why the changes could not be saved.
 
 ## See Also
 

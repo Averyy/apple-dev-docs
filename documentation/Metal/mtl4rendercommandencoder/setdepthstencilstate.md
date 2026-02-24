@@ -22,7 +22,7 @@ func setDepthStencilState(_ depthStencilState: (any MTLDepthStencilState)?)
 
 ## Parameters
 
-- `depthStencilState`: The   instance to set.
+- `depthStencilState`: The [`MTLDepthStencilState`](mtldepthstencilstate.md) instance to set.
 
 ## See Also
 

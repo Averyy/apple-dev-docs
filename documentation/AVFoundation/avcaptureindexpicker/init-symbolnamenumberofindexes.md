@@ -26,7 +26,7 @@ Create a picker with this initializer when the control’s values don’t requir
 
 - `localizedTitle`: A localized title that describes the picker’s action.
 - `symbolName`: The name of the symbol from the SF Symbols library to use to represent this control.
-- `numberOfIndexes`: The number of indexes to pick between. This value must be greater than  .
+- `numberOfIndexes`: The number of indexes to pick between. This value must be greater than `0`.
 
 ## See Also
 

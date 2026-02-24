@@ -26,7 +26,7 @@ Call this function when your application no longer needs the authorization refer
 ## Parameters
 
 - `authorization`: The authorization reference to free.
-- `flags`: A bit mask. In most cases, pass the constant  . To remove all shared and non-shared authorizations, pass the constant  .
+- `flags`: A bit mask. In most cases, pass the constant [`kAuthorizationFlagDefaults`](authorizationflags/kauthorizationflagdefaults.md). To remove all shared and non-shared authorizations, pass the constant [`destroyRights`](authorizationflags/destroyrights.md).
 
 
 ---

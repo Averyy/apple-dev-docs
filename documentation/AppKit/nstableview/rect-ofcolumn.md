@@ -28,7 +28,7 @@ You can use this method to update a single column more efficiently than sending 
 
 ## Parameters
 
-- `column`: The index in the   array of a column in the table view.
+- `column`: The index in the [`tableColumns`](nstableview/tablecolumns.md) array of a column in the table view.
 
 ## See Also
 

@@ -20,7 +20,7 @@ Accepting [`mouseExited(with:)`](nscursor/mouseexited(with:).md) event messages 
 
 ## Parameters
 
-- `flag`:   if the receiver accepts future   event messages; otherwise it ignores them.
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver accepts future [`mouseExited(with:)`](nscursor/mouseexited(with:).md) event messages; otherwise it ignores them.
 
 ## See Also
 

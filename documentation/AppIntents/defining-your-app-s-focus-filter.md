@@ -20,7 +20,7 @@ Use App Intents to define your app’s Focus filters, act on changes from the sy
 
 Configure the iOS and App Intents extension targets to include your development team and a [`bundle identifier`](https://developer.apple.comhttps://developer.apple.com/account/resources/identifiers/bundleId/). The bundle identifier needs to support the App Groups capability.
 
-If you’re using a suite name other than , modify it in the following files: `Repository.swift`, `ExampleAppIntentsExtension.entitlements`, and `ExampleChatApp.entitlements`.
+If you’re using a suite name other than *group.exampleChatApp*, modify it in the following files: `Repository.swift`, `ExampleAppIntentsExtension.entitlements`, and `ExampleChatApp.entitlements`.
 
 ##### Create a Focus Filter
 

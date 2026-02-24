@@ -23,6 +23,28 @@ var resetHandler: CHHapticEngine.ResetHandler { get set }
 
 If the handler has to reset itself after a server failure, the system calls this block asynchronously. In this block, release all haptic pattern players and recreate them. The system preserves [`CHHapticPattern`](chhapticpattern.md) objects and [`CHHapticEngine`](chhapticengine.md) properties across restarts. Consider trying to restart the engine inside the reset block.
 
+**Swift**:
+
+```swift
+self.hapticEngine.resetHandler = {
+    print("Engine reset --> Restarting!")
+    do {
+        try self.hapticEngine.start()
+    } catch {
+        print("Failed to restart the engine: \(error)")
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+self.hapticEngine.resetHandler = ^{ 
+    NSLog(@"Engine reset --> Restarting!");
+    [self.hapticEngine startAndReturnError:&error];
+};
+```
+
 Callbacks to this block arrive on a non-main thread, so handle them in a thread-safe manner.
 
 ## See Also

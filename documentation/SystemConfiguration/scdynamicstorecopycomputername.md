@@ -20,8 +20,8 @@ The current computer name, or `NULL` if the name has not been set or if an error
 
 ## Parameters
 
-- `store`: The dynamic store session that should be used for communication with the server. Pass   to use a temporary session.
-- `nameEncoding`: A pointer to memory that, on output, is filled with the encoding associated with the computer or host name, if it is non- .
+- `store`: The dynamic store session that should be used for communication with the server. Pass `NULL` to use a temporary session.
+- `nameEncoding`: A pointer to memory that, on output, is filled with the encoding associated with the computer or host name, if it is non-`NULL`.
 
 ## See Also
 

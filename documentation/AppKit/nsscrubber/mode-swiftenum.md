@@ -16,7 +16,7 @@ enum Mode
 
 #### Overview
 
-Scrolling is either  or . For details on how to choose the correct scrolling mode for your app, see [`Choose a scrubber touch-interaction model`](nsscrubber#Choose-a-scrubber-touch-interaction-model.md).
+Scrolling is either *fixed* or *free*. For details on how to choose the correct scrolling mode for your app, see [`Choose a scrubber touch-interaction model`](nsscrubber#Choose-a-scrubber-touch-interaction-model.md).
 
 ## Topics
 

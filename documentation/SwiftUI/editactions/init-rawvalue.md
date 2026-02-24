@@ -22,7 +22,7 @@ init(rawValue: Int)
 
 ## Parameters
 
-- `rawValue`: The raw value with which to create the   collection edits.
+- `rawValue`: The raw value with which to create the collection edits.
 
 ## See Also
 

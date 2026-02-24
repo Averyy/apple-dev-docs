@@ -26,8 +26,8 @@ This method parses endpoint descriptors to determine mult.
 
 - `usbDeviceSpeed`: The operational speed of the device.
 - `descriptor`: The endpoint descriptor to parse.
-- `companionDescriptor`: The companion descriptor to parse, or  .
-- `sspCompanionDescriptor`: The SSP companion descriptor to parse, or  .
+- `companionDescriptor`: The companion descriptor to parse, or `NULL`.
+- `sspCompanionDescriptor`: The SSP companion descriptor to parse, or `NULL`.
 
 ## See Also
 

@@ -32,6 +32,48 @@ A value transformer can take inputs of one type and return a value of a differen
 
 The following example defines a new value transformer that takes an object and returns a string based on the object’s class type. This transformer isn’t reversible because it doesn’t make sense to transform a class name into an object.
 
+**Swift**:
+
+```swift
+class ClassNameTransformer: ValueTransformer {
+    override class func transformedValueClass() -> AnyClass {
+        return NSString.self
+    }
+    
+    override class func allowsReverseTransformation() -> Bool {
+        return false
+    }
+    
+    override func transformedValue(_ value: Any?) -> Any? {
+        return (value as AnyObject).className
+    }
+}
+
+extension NSValueTransformerName {
+    static let classNameTransformerName = NSValueTransformerName(rawValue: "ClassNameTransformer")
+}
+
+ValueTransformer.setValueTransformer(ClassNameTransformer(), forName: .classNameTransformerName)
+```
+
+**Objective-C**:
+
+```objc
+@interface ClassNameTransformer: NSValueTransformer {}
+@end
+@implementation ClassNameTransformer
++ (Class)transformedValueClass { 
+    return [NSString class]; 
+}
++ (BOOL)allowsReverseTransformation { 
+    return NO; 
+}
+- (id)transformedValue:(id)value {
+    return (value == nil) ? nil : NSStringFromClass([value class]);
+}
+@end
+```
+
 ## Topics
 
 ### Using the Name-Based Registry

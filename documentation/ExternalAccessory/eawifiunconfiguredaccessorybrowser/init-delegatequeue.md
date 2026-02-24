@@ -28,7 +28,7 @@ This method is the designated initializer for `EAWiFiUnconfiguredAccessoryBrowse
 ## Parameters
 
 - `delegate`: The object that you use to receive browser-related events.
-- `queue`: The dispatch queue on which the delegate would like to receive events. If  , the events will be on the main queue.
+- `queue`: The dispatch queue on which the delegate would like to receive events. If `nil`, the events will be on the main queue.
 
 
 ---

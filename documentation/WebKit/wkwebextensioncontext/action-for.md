@@ -24,7 +24,7 @@ The returned object represents the action specific to the tab when provided; oth
 
 ## Parameters
 
-- `tab`: The tab for which to retrieve the extension action, or   to get the default action.
+- `tab`: The tab for which to retrieve the extension action, or `nil` to get the default action.
 
 ## See Also
 

@@ -21,7 +21,7 @@ struct AudioConverterPrimeInfo
 
 #### Overview
 
-Some audio data format conversions, particularly those involving sample-rate conversion, yield higher quality output when leading or trailing frames are available to the converter. The appropriate number of these so-called  depends on the input audio data format.
+Some audio data format conversions, particularly those involving sample-rate conversion, yield higher quality output when leading or trailing frames are available to the converter. The appropriate number of these so-called *priming frames* depends on the input audio data format.
 
 You specify leading or trailing frames in the `leadingFrames` and `trailingFrames` fields of an `AudioConverterPrimeInfo` structure. You then configure your audio converter by calling the [`AudioConverterSetProperty(_:_:_:_:)`](audioconvertersetproperty(_:_:_:_:).md) function for the [`kAudioConverterPrimeInfo`](kaudioconverterprimeinfo.md) property, specifying this structure as the property value. You also indicate to the converter which priming option to use by setting the [`kAudioConverterPrimeMethod`](kaudioconverterprimemethod.md) property.
 

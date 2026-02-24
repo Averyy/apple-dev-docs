@@ -30,7 +30,7 @@ You must send an [`availableType(from:)`](nspasteboard/availabletype(from:).md) 
 
 ## Parameters
 
-- `type`: The pasteboard data type to read. You should generally specify a value for this parameter. If you specify  , the filename extension (in combination with the   function) is used to determine the type.
+- `type`: The pasteboard data type to read. You should generally specify a value for this parameter. If you specify `nil`, the filename extension (in combination with the `NSCreateFileContentsPboardType` function) is used to determine the type.
 - `filename`: The file to receive the pasteboard data.
 
 ## See Also

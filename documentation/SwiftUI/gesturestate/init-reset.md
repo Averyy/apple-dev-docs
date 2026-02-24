@@ -22,7 +22,7 @@ init(reset: @escaping (Value, inout Transaction) -> Void)
 
 ## Parameters
 
-- `reset`: A closure that provides a  .
+- `reset`: A closure that provides a [`Transaction`](transaction.md).
 
 ## See Also
 

@@ -8,6 +8,10 @@ The name of the function to call to unload the plug-in code from memory.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [CFPlugInDynamicRegisterFunction](information-property-list/cfplugindynamicregisterfunction.md)

@@ -23,6 +23,9 @@ typealias Callback = ((any MTLTexture)?, (any Error)?) -> Void
 
 The block parameters are defined as follows:
 
+- **texture**: A [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) object, or `nil` if an error occurred.
+- **error**: If the operation was successful, this value is `nil`; otherwise, this parameter holds an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object that describes the problem that occurred.
+
 ## See Also
 
 - [MTKTextureLoader.ArrayCallback](mtktextureloader/arraycallback.md)

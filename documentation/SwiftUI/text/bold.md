@@ -27,7 +27,7 @@ Bold text.
 
 ## Parameters
 
-- `isActive`: A Boolean value that indicates   whether text has bold styling.
+- `isActive`: A Boolean value that indicates whether text has bold styling.
 
 ## See Also
 

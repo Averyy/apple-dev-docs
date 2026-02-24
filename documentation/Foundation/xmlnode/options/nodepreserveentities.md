@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-Specifies that entities (`&``;`) should not be resolved for XML output of this node.
+Specifies that entities (`&`*xyz*`;`) should not be resolved for XML output of this node.
 
 **Availability**:
 - Mac Catalyst 13.0+

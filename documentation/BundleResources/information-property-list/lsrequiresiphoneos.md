@@ -9,6 +9,10 @@ A Boolean value indicating whether the app must run in iOS.
 - iOS 2.0+
 - iPadOS 2.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [LSMinimumSystemVersion](information-property-list/lsminimumsystemversion.md)

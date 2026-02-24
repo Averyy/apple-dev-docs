@@ -34,8 +34,8 @@ When you’re done with the buffer set descriptor created by this function, call
 
 ## Parameters
 
-- `minor_status`: A pointer to the secondary status result that provides additional information in case of failure. Typically, a failure results from an inability to allocate memory which is communicated by the minor status  .
-- `buffer_set`: On failure, the reference is unchanged.
+- `minor_status`: A pointer to the secondary status result that provides additional information in case of failure. Typically, a failure results from an inability to allocate memory which is communicated by the minor status [`ENOMEM`](https://developer.apple.com/documentation/Foundation/POSIXError/ENOMEM).
+- `buffer_set`: A pointer to a buffer set descriptor reference. When the function successfully allocates a buffer set descriptor, it sets the reference to point at it. The descriptor itself is initialized with zero length and a `NULL` pointer. On failure, the reference is unchanged.
 
 ## See Also
 

@@ -22,9 +22,9 @@ init(_ dynamicOptionsProvider: Provider, title: LocalizedStringResource, systemI
 
 ## Parameters
 
-- `dynamicOptionsProvider`: The object that provides the dynamic options   for an App Shortcut.
+- `dynamicOptionsProvider`: The object that provides the dynamic options for an App Shortcut.
 - `title`: A localized string that represents the title for the collection of dynamic options in the Shortcuts app.
-- `systemImageName`: The name of the system image for the collection   of App Shortcuts.
+- `systemImageName`: The name of the system image for the collection of App Shortcuts.
 
 
 ---

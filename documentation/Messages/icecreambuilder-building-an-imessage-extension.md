@@ -107,7 +107,7 @@ conversation.insert(message) { error in
 }
 ```
 
-The [`insert(_:completionHandler:)`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msconversation/insert(_:completionhandler:)-3g248) method used in this code will place the composed message into the conversation field, but will  send it immediately, requiring the user to still tap the send button. If you prefer to send the message immediately then use the [`send(_:completionHandler:)`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msconversation/send(_:completionhandler:)-9krz) method instead. This method is available on iOS 11 and above.
+The [`insert(_:completionHandler:)`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msconversation/insert(_:completionhandler:)-3g248) method used in this code will place the composed message into the conversation field, but will *not* send it immediately, requiring the user to still tap the send button. If you prefer to send the message immediately then use the [`send(_:completionHandler:)`](https://developer.apple.comhttps://developer.apple.com/documentation/messages/msconversation/send(_:completionhandler:)-9krz) method instead. This method is available on iOS 11 and above.
 
 ## See Also
 

@@ -40,8 +40,8 @@ MLTensor(concatenating: [t3, t4], alongAxis: 1) // has shape [2, 6]
 
 ## Parameters
 
-- `tensors`: The tensors to concatenate. All tensors must have the same rank and all dimensions except   must be equal.
-- `axis`: The axis along which to concatenate. Negative values wrap around but must be in the range  , where    is the rank of the provided tensors.
+- `tensors`: The tensors to concatenate. All tensors must have the same rank and all dimensions except `axis` must be equal.
+- `axis`: The axis along which to concatenate. Negative values wrap around but must be in the range `[-rank, rank)`, where `rank` is the rank of the provided tensors.
 
 ## See Also
 

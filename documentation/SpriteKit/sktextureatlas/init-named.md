@@ -30,7 +30,7 @@ If the texture atlas cannot be found, an exception is thrown.
 
 ## Parameters
 
-- `name`: The name of the texture atlas, without the   extension.
+- `name`: The name of the texture atlas, without the `.atlas` extension.
 
 ## See Also
 

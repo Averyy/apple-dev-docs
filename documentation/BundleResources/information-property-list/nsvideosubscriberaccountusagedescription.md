@@ -8,6 +8,10 @@ A message that tells people why the app is requesting access to their TV provide
 **Availability**:
 - tvOS 9.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the user’s TV provider account.

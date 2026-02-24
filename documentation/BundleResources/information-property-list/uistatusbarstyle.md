@@ -10,6 +10,12 @@ The style of the status bar as the app launches.
 - iPadOS 2.0+
 - Mac Catalyst 2.0+
 
+
+
+**Type**: string
+
+**Default**: `UIStatusBarStyleDefault`
+
 ## See Also
 
 - [UIStatusBarHidden](information-property-list/uistatusbarhidden.md)

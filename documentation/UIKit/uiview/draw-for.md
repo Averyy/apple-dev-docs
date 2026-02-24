@@ -26,7 +26,7 @@ For more information about how to implement a custom drawing routine for printed
 ## Parameters
 
 - `rect`: A rectangle that defines the area for drawing printable content.
-- `formatter`: An instance of   obtained by calling the   method.
+- `formatter`: An instance of [`UIViewPrintFormatter`](uiviewprintformatter.md) obtained by calling the [`viewPrintFormatter()`](uiview/viewprintformatter().md) method.
 
 ## See Also
 

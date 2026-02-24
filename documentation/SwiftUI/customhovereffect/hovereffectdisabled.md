@@ -45,7 +45,7 @@ struct ScaleAndFadeEffect: CustomHoverEffect {
 
 ## Parameters
 
-- `isDisabled`: A Boolean value that determines whether the hover effect   is disabled or not. Specifying   takes precedence over  .   Default:  .
+- `isDisabled`: A Boolean value that determines whether the hover effect is disabled or not. Specifying `true` takes precedence over `false`. Default: `true`.
 
 ## See Also
 

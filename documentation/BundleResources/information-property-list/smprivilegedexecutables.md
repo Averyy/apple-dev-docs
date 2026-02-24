@@ -8,6 +8,10 @@ The Service Management tools owned by the app.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: object
+
 ## See Also
 
 - [SMAuthorizedClients](information-property-list/smauthorizedclients.md)

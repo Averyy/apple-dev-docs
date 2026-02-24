@@ -55,8 +55,8 @@ VStack {
 
 ## Parameters
 
-- `opaque`: A Boolean value that indicates whether the image is opaque.   The default is  ; if set to  , the alpha channel of the   image must be  .
-- `colorMode`: One of the working color space and storage formats   defined in  . The default is   .
+- `opaque`: A Boolean value that indicates whether the image is opaque. The default is `false`; if set to `true`, the alpha channel of the image must be `1`.
+- `colorMode`: One of the working color space and storage formats defined in [`ColorRenderingMode`](colorrenderingmode.md). The default is [`ColorRenderingMode.nonLinear`](colorrenderingmode/nonlinear.md).
 
 ## See Also
 

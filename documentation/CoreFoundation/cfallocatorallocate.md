@@ -26,9 +26,9 @@ A pointer to the newly allocated memory.
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate the memory. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate the memory. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `size`: The size of the memory to allocate.
-- `hint`: A bitfield containing flags that suggest how memory is to be allocated.   indicates no hints. No hints are currently defined, so only   should be passed for this value.
+- `hint`: A bitfield containing flags that suggest how memory is to be allocated. `0` indicates no hints. No hints are currently defined, so only `0` should be passed for this value.
 
 ## See Also
 

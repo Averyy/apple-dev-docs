@@ -29,7 +29,7 @@ The containing list’s style applies the tint as appropriate. For example, watc
 
 ## Parameters
 
-- `tint`: The color to use to tint the content. Use   to   avoid overriding the inherited tint.
+- `tint`: The color to use to tint the content. Use `nil` to avoid overriding the inherited tint.
 
 ## See Also
 

@@ -30,9 +30,9 @@ You must supply a count of the bytes in the buffer. This function always copies 
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `bytes`: A pointer to the byte buffer that contains the raw data to be copied into  .
-- `length`: The number of bytes in the buffer ( ).
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `bytes`: A pointer to the byte buffer that contains the raw data to be copied into `theData`.
+- `length`: The number of bytes in the buffer (`bytes`).
 
 ## See Also
 

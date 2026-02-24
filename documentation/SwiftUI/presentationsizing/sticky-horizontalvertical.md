@@ -41,8 +41,8 @@ ContentView()
 
 ## Parameters
 
-- `horizontal`: A boolean indicating whether to maintain the largest   size horizontally
-- `vertical`: A boolean indicating whether to maintain the largest size   vertically
+- `horizontal`: A boolean indicating whether to maintain the largest size horizontally
+- `vertical`: A boolean indicating whether to maintain the largest size vertically
 
 ## See Also
 

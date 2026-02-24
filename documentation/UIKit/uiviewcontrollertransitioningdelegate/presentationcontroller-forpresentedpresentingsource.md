@@ -31,8 +31,8 @@ If you don’t implement this method, or if your implementation of this method r
 ## Parameters
 
 - `presented`: The view controller being presented.
-- `presenting`: The view controller that is presenting the view controller in the   parameter. The object in this parameter could be the root view controller of the window, a parent view controller that is marked as defining the current context, or the last view controller that was presented. This view controller may or may not be the same as the one in the   parameter. This parameter may also be   to indicate that the presenting view controller will be determined later.
-- `source`: The view controller whose   method was called to initiate the presentation process.
+- `presenting`: The view controller that is presenting the view controller in the `presented` parameter. The object in this parameter could be the root view controller of the window, a parent view controller that is marked as defining the current context, or the last view controller that was presented. This view controller may or may not be the same as the one in the `source` parameter. This parameter may also be `nil` to indicate that the presenting view controller will be determined later.
+- `source`: The view controller whose [`present(_:animated:completion:)`](uiviewcontroller/present(_:animated:completion:).md) method was called to initiate the presentation process.
 
 
 ---

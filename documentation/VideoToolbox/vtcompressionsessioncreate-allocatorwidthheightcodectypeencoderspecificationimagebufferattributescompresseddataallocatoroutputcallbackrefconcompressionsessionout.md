@@ -25,14 +25,14 @@ The session outputs compressed frames through the output callback.
 
 ## Parameters
 
-- `allocator`: An allocator for the session. Pass   to use the default allocator.
+- `allocator`: An allocator for the session. Pass `NULL` to use the default allocator.
 - `width`: The pixel width of video frames.
 - `height`: The pixel height of video frames.
 - `codecType`: The codec type.
-- `encoderSpecification`: A video encoder to use. Pass   to let VideoToolbox choose an encoder.
-- `sourceImageBufferAttributes`: Using pixel buffers not allocated by VideoToolbox increases the chance that you’ll have to copy image data.
-- `compressedDataAllocator`: In MacOS 10.12 and later, using a   may trigger an extra buffer copy.
-- `outputCallback`: Pass   only if you’ll be calling   for encoding frames.
+- `encoderSpecification`: A video encoder to use. Pass `NULL` to let VideoToolbox choose an encoder.
+- `sourceImageBufferAttributes`: Required attributes for source pixel buffers, used when creating a pixel buffer pool for source frames. If you don’t want VideoToolbox to create one for you, pass `NULL`. Using pixel buffers not allocated by VideoToolbox increases the chance that you’ll have to copy image data.
+- `compressedDataAllocator`: An allocator for the compressed data. Pass `NULL` to use the default allocator. In MacOS 10.12 and later, using a `compressedDataAllocator` may trigger an extra buffer copy.
+- `outputCallback`: The callback to invoke with compressed frames. The system may call this function asynchronously, on a different thread from the one that calls [`VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:sourceFrameRefcon:infoFlagsOut:)`](vtcompressionsessionencodeframe(_:imagebuffer:presentationtimestamp:duration:frameproperties:sourceframerefcon:infoflagsout:).md). Pass `NULL` only if you’ll be calling [`VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:infoFlagsOut:outputHandler:)`](vtcompressionsessionencodeframe(_:imagebuffer:presentationtimestamp:duration:frameproperties:infoflagsout:outputhandler:).md) for encoding frames.
 - `outputCallbackRefCon`: Client-defined reference value for the output callback.
 - `compressionSessionOut`: A pointer to a variable to receive the new compression session.
 

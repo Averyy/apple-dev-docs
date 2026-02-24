@@ -20,7 +20,7 @@ case split(strategy: MLSplitStrategy)
 
 ## Parameters
 
-- `strategy`: An   instance.
+- `strategy`: An [`MLSplitStrategy`](mlsplitstrategy.md) instance.
 
 ## See Also
 

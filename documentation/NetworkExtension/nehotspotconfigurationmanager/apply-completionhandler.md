@@ -35,8 +35,8 @@ Furthermore, joining a Wi-Fi network doesn’t guarantee that the network is ful
 
 ## Parameters
 
-- `configuration`: The configuration to apply to the Wi-Fi network; see  .
-- `completionHandler`: A completion handler called by the method that takes a single argument indicating the outcome of the operation. A value of   indicates the user refuses to accept the new configuration.
+- `configuration`: The configuration to apply to the Wi-Fi network; see [`NEHotspotConfiguration`](nehotspotconfiguration.md).
+- `completionHandler`: A completion handler called by the method that takes a single argument indicating the outcome of the operation. A value of [`NEHotspotConfigurationError.userDenied`](nehotspotconfigurationerror/userdenied.md) indicates the user refuses to accept the new configuration.
 
 ## See Also
 

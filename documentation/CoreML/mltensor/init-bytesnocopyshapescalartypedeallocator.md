@@ -22,7 +22,7 @@ init(bytesNoCopy bytes: UnsafeRawBufferPointer, shape: [Int], scalarType: any ML
 
 ## Parameters
 
-- `bytes`: A pointer to the C-contiguous memory address for the tensor. Expecting the data to be zero-offset, alignment to match   the alignment of the scalar type, and byte count to be equal or greater than the given shape’s contiguous size.
+- `bytes`: A pointer to the C-contiguous memory address for the tensor. Expecting the data to be zero-offset, alignment to match the alignment of the scalar type, and byte count to be equal or greater than the given shape’s contiguous size.
 - `shape`: The shape of the tensor.
 - `scalarType`: The scalar type.
 - `deallocator`: Specifies the mechanism to free the indicated buffer.

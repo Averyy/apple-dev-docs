@@ -22,8 +22,8 @@ The interglyph spacing in the specified range when sent to a printer. If the fon
 
 - `layoutMgr`: The layout manager that will do the drawing.
 - `nominallySpacedGlyphsRange`: The range of the glyphs whose spacing is desired.
-- `packedGlyphs`: The glyphs as they are packed for sending to be drawn in  .
-- `packedGlyphsCount`: The number of glyphs in  .
+- `packedGlyphs`: The glyphs as they are packed for sending to be drawn in `layoutMgr`.
+- `packedGlyphsCount`: The number of glyphs in `packedGlyphs`.
 
 ## See Also
 

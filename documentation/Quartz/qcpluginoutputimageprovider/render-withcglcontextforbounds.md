@@ -22,7 +22,7 @@ optional func render(withCGLContext cgl_ctx: CGLContextObj!, forBounds bounds: N
 
 The view port is set for you. The model view and projection  matrixes are set to the identity.
 
-Your OpenGL code should save and restore all states  for those that are part of `GL_CURRENT_BIT` (vertex position, color, texture, and so on). Also use CGL macros instead of changing the current context, by including this statement:
+Your OpenGL code should save and restore all states *except* for those that are part of `GL_CURRENT_BIT` (vertex position, color, texture, and so on). Also use CGL macros instead of changing the current context, by including this statement:
 
 `#import <OpenGL/CGLMacro.h>`
 

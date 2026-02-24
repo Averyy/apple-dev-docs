@@ -8,6 +8,10 @@ A Boolean value indicating whether an OpenGL app may utilize the integrated GPU.
 **Availability**:
 - macOS 10.7+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [UIAppSupportsHDR](information-property-list/uiappsupportshdr.md)

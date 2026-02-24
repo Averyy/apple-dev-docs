@@ -26,6 +26,10 @@ The sample requires three arguments:
 ./AVAddDisplayMaskTrack <input-path> <output-path> <display-mask-type>
 ```
 
+- **`<input-path>`**: The path to the existing source QuickTime movie file with a video track.
+- **`<output-path>`**: The path to the new output QuickTime movie file, which includes the source movie file’s media tracks with the additional display mask rectangle timed metadata track.
+- **`<display-mask-type>`**: An integer type for the display mask. There are only two types, `1` or `2`; the default is `1` if the third argument isn’t provided or not a valid value.
+
 The `display-mask-type` argument indicates the display mask to write to the movie file:
 
 - Type 1 display mask is a static square that’s 75 percent of the shorter side of the video’s dimensions, and centered on the video frame for the entire duration of the movie. For example, if the video’s dimensions are 1920 x 1080, then the display mask is 810 x 810 (1080 `*` 0.75 = 810), and centered at (960, 540).

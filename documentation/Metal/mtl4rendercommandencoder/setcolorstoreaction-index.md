@@ -22,7 +22,7 @@ func setColorStoreAction(_ storeAction: MTLStoreAction, index colorAttachmentInd
 
 ## Parameters
 
-- `storeAction`: A store action for the color attachment that   can’t be  .
+- `storeAction`: A store action for the color attachment that can’t be [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md).
 - `colorAttachmentIndex`: The index of a color attachment.
 
 ## See Also

@@ -21,8 +21,8 @@ func setDelegate(_ delegate: (any AVPlayerItemOutputPullDelegate)?, queue delega
 
 ## Parameters
 
-- `delegate`: The delegate object for the receiver. You may specify   for this parameter.
-- `delegateQueue`: The dispatch queue on which to call delegate methods. If you specify   for this parameter, the video output object calls the delegate on the dispatch queue for your app’s main thread.
+- `delegate`: The delegate object for the receiver. You may specify `nil` for this parameter.
+- `delegateQueue`: The dispatch queue on which to call delegate methods. If you specify `nil` for this parameter, the video output object calls the delegate on the dispatch queue for your app’s main thread.
 
 ## See Also
 

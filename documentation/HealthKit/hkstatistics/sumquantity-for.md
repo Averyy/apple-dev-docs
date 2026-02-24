@@ -25,7 +25,7 @@ If both the [`cumulativeSum`](hkstatisticsoptions/cumulativesum.md) option and t
 
 ## Parameters
 
-- `source`: A data source from the statistics object’s   array.
+- `source`: A data source from the statistics object’s [`sources`](hkstatistics/sources.md) array.
 
 ## See Also
 

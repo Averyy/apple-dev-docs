@@ -22,7 +22,7 @@ func makeRenderPipelineState(additionalBinaryFunctions: MTLRenderPipelineFunctio
 
 ## Parameters
 
-- `additionalBinaryFunctions`: An   instance, which contains   arrays for vertex, fragment, and tile shaders.
+- `additionalBinaryFunctions`: An [`MTLRenderPipelineFunctionsDescriptor`](mtlrenderpipelinefunctionsdescriptor.md) instance, which contains [`MTLFunction`](mtlfunction.md) arrays for vertex, fragment, and tile shaders.
 
 
 ---

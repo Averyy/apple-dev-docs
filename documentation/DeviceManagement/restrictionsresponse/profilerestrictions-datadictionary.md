@@ -24,6 +24,10 @@ object RestrictionsResponse.ProfileRestrictions
 - [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary.md)
   A dictionary that contains profile restrictions in effect.
 
+## Properties
+
+- `ANY profile identifier` (RestrictionsResponse.ProfileRestrictions.ANY profile identifier): The profile identifiers. This dictionary is only available if `ProfileRestrictions` is `true` in the command.
+
 ## See Also
 
 - [object RestrictionsResponse.ErrorChainItem](restrictionsresponse/errorchainitem.md)

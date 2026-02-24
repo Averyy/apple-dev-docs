@@ -22,8 +22,8 @@ static func result<Value>(value: Value, opensIntent: some AppIntent, dialog: Int
 
 ## Parameters
 
-- `value`: The value produced by the 
-- `opensIntent`: An app intent to open the originating app and show the   intent’s result.
+- `value`: The value produced by the `AppIntent`
+- `opensIntent`: An app intent to open the originating app and show the intent’s result.
 - `dialog`: A custom success dialog
 - `snippetIntent`: The intent responsible for presenting a snippet for this result
 

@@ -27,7 +27,7 @@ This method acquires the service’s workloop lock and performs an appropriate U
 - `dataBuffer`: The data buffer to use for the request. When transferring data to the device, this buffer contains the data to send. When receiving data from the device, this buffer is empty initially.
 - `dataBufferLength`: The length of the data buffer.
 - `bytesTransferred`: A pointer to a variable. On output, this variable contains the number of bytes that were actually transferred.
-- `completionTimeoutMs`: The timeout value in milliseconds. Specify   if you don’t want the request to time out. You must specify   when transferring data on an interrupt endpoint.
+- `completionTimeoutMs`: The timeout value in milliseconds. Specify `0` if you don’t want the request to time out. You must specify `0` when transferring data on an interrupt endpoint.
 
 ## See Also
 

@@ -32,7 +32,7 @@ Currently, the supported data detectors `checkingTypes` are:  [`date`](nstextche
 
 ## Parameters
 
-- `checkingTypes`: The checking types. The supported checking types are a subset of the types  . Those constants can be combined using the C-bitwise OR operator.
+- `checkingTypes`: The checking types. The supported checking types are a subset of the types [`NSTextCheckingResult.CheckingType`](nstextcheckingresult/checkingtype.md). Those constants can be combined using the C-bitwise OR operator.
 
 ## See Also
 

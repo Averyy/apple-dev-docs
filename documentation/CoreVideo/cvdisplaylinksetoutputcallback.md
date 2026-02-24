@@ -26,7 +26,7 @@ The display link invokes this callback whenever it wants you to output a frame.
 ## Parameters
 
 - `displayLink`: The display link whose output callback you want to set.
-- `callback`: The callback function to set for this display link. See   for more information about implementing this function.
+- `callback`: The callback function to set for this display link. See [`CVDisplayLinkOutputCallback`](cvdisplaylinkoutputcallback.md) for more information about implementing this function.
 - `userInfo`: A pointer to user data.
 
 ## See Also

@@ -26,7 +26,7 @@ Whenever this method is called, the system then calls the [`perform()`](nsstoryb
 
 ## Parameters
 
-- `identifier`: The unique identifier for the storyboard segue. See the   property.
+- `identifier`: The unique identifier for the storyboard segue. See the [`identifier`](nsstoryboardsegue/identifier-swift.property.md) property.
 - `sourceController`: The starting/containing view controller or window controller for the storyboard segue.
 - `destinationController`: The ending/contained view controller or window controller for the storyboard segue.
 

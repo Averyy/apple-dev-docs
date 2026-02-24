@@ -31,7 +31,7 @@ This function can be used to find executables other than your main executable. T
 ## Parameters
 
 - `bundle`: The bundle to examine.
-- `executableName`: The name of  ’s auxiliary executable code.
+- `executableName`: The name of `bundle`’s auxiliary executable code.
 
 ## See Also
 

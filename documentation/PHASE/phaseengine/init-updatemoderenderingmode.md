@@ -23,7 +23,7 @@ An engine that you configure with [`PHASEEngine.RenderingMode.local`](phaseengin
 ## Parameters
 
 - `updateMode`: An option that controls the timing of internal framework updates.
-- `renderingMode`: Defines where the engine applies rendering. See   for more info.
+- `renderingMode`: Defines where the engine applies rendering. See [`PHASEEngine.RenderingMode`](phaseengine/renderingmode.md) for more info.
 
 ## See Also
 

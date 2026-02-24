@@ -26,15 +26,15 @@ This function is identical to [`CMSampleBufferCreate(allocator:dataBuffer:dataRe
 
 ## Parameters
 
-- `allocator`: The allocator to use for allocating the   object. Pass   to use the default allocator.
-- `dataBuffer`:   that already contains the media data. Must not be  .
-- `formatDescription`: A description of the media data’s format. Can be  .
-- `numSamples`: Number of samples in the  . Can be 0.
-- `numSampleTimingEntries`: Number of entries in sampleTimingArray. Must be 0, 1, or  .
-- `sampleTimingArray`: Array of   structs, one struct per sample. If all samples have the same duration and are in presentation order, you can pass a single   struct with duration set to the duration of one sample,   set to the presentation time of the numerically earliest sample, and   set to  . The behavior is undefined if samples in a   (or even in multiple buffers in the same stream) have the same  . Can be  .
-- `numSampleSizeEntries`: Number of entries in  . Must be 0, 1, or  .
-- `sampleSizeArray`: Must be   if the samples are non-contiguous in the buffer (eg. non-interleaved audio, where the channel values for a single sample are scattered through the buffer).
-- `sampleBufferOut`: Returned newly created  .
+- `allocator`: The allocator to use for allocating the `CMSampleBuffer` object. Pass `kCFAllocatorDefault` to use the default allocator.
+- `dataBuffer`: `CMBlockBuffer` that already contains the media data. Must not be `NULL`.
+- `formatDescription`: A description of the media data’s format. Can be `NULL`.
+- `numSamples`: Number of samples in the `CMSampleBuffer`. Can be 0.
+- `numSampleTimingEntries`: Number of entries in sampleTimingArray. Must be 0, 1, or `numSamples`.
+- `sampleTimingArray`: Array of `CMSampleTimingInfo` structs, one struct per sample. If all samples have the same duration and are in presentation order, you can pass a single `CMSampleTimingInfo` struct with duration set to the duration of one sample, `presentationTimeStamp` set to the presentation time of the numerically earliest sample, and `decodeTimeStamp` set to `kCMTimeInvalid`. The behavior is undefined if samples in a `CMSampleBuffer` (or even in multiple buffers in the same stream) have the same `presentationTimeStamp`. Can be `NULL`.
+- `numSampleSizeEntries`: Number of entries in `sampleSizeArray`. Must be 0, 1, or `numSamples`.
+- `sampleSizeArray`: Array of size entries, one entry per sample. If all samples have the same size, you can pass a single size entry containing the size of one sample. Can be `NULL`. Must be `NULL` if the samples are non-contiguous in the buffer (eg. non-interleaved audio, where the channel values for a single sample are scattered through the buffer).
+- `sampleBufferOut`: Returned newly created `CMSampleBuffer`.
 
 ## See Also
 

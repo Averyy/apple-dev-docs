@@ -32,8 +32,8 @@ The values of the preference key from both views are combined and made visible t
 ## Parameters
 
 - `key`: The preference key type whose value is to be read.
-- `alignment`: An optional alignment to use when positioning the   overlay view relative to the original view.
-- `transform`: A function that produces the overlay view from   the preference value read from the original view.
+- `alignment`: An optional alignment to use when positioning the overlay view relative to the original view.
+- `transform`: A function that produces the overlay view from the preference value read from the original view.
 
 ## See Also
 

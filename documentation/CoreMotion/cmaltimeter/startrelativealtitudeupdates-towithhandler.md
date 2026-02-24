@@ -25,8 +25,8 @@ If altitude data isn’t available on the current device, this method does nothi
 
 ## Parameters
 
-- `queue`: The operation queue on which to execute your handler block. The altimeter object stores a strong reference to this object. This parameter must not be  .
-- `handler`: The handler block to execute when new altitude data is available. This parameter must not be  . For information about the format of this block, see  .
+- `queue`: The operation queue on which to execute your handler block. The altimeter object stores a strong reference to this object. This parameter must not be `nil`.
+- `handler`: The handler block to execute when new altitude data is available. This parameter must not be `nil`. For information about the format of this block, see [`CMAltitudeHandler`](cmaltitudehandler.md).
 
 ## See Also
 

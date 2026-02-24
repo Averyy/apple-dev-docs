@@ -11,6 +11,10 @@ The minimum number of attachments that the app extension supports.
 - macOS 10.10+
 - visionOS 1.0+
 
+
+
+**Type**: integer
+
 ## See Also
 
 - [NSExtensionActivationSupportsAttachmentsWithMaxCount](information-property-list/nsextension/nsextensionattributes/nsextensionactivationrule/nsextensionactivationsupportsattachmentswithmaxcount.md)

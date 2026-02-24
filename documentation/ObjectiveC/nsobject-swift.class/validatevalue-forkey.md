@@ -42,7 +42,7 @@ See [`Adding Validation`](https://developer.apple.comhttps://developer.apple.com
 
 ## Parameters
 
-- `ioValue`: A pointer to a new value for the property identified by  . This method may modify or replace the value in order to make it valid.
+- `ioValue`: A pointer to a new value for the property identified by `inKey`. This method may modify or replace the value in order to make it valid.
 - `inKey`: The name of one of the receiver’s properties. The key must specify an attribute or a to-one relationship.
 
 ## See Also

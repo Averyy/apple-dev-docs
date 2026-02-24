@@ -27,7 +27,8 @@ func right(forIdentifier identifier: String) async throws -> LAPersistedRight
 ## Parameters
 
 - `identifier`: The unique identifier of the right.
-- `handler`: A completion handler to call when the right access completes.
+- `handler`: A completion handler to call when the right access completes. - **`right`**: The right that matches the `identifier` you supply.
+- **`error`**: An error object that indicates why the `right` parameter is `nil`, or `nil` if the right parameter is non-`nil`.
 
 ## See Also
 

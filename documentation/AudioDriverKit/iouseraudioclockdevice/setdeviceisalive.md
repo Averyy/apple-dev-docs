@@ -24,7 +24,7 @@ A `true` value means the device is ready and available. `false` means the device
 
 ## Parameters
 
-- `in_is_alive`:   if the device is alive; otherwise,  .
+- `in_is_alive`: `true` if the device is alive; otherwise, `false`.
 
 ## See Also
 

@@ -42,9 +42,9 @@ struct RecipeList: View {
 
 ## Parameters
 
-- `filter`: A predicate on 
+- `filter`: A predicate on `Element`
 - `descriptors`: Sort orders for the result.
-- `transaction`: A transaction to use for user interface changes that   result from changes to the fetched results.
+- `transaction`: A transaction to use for user interface changes that result from changes to the fetched results.
 
 ## See Also
 

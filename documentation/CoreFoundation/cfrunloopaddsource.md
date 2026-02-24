@@ -32,7 +32,7 @@ If `rl` already contains `source` in `mode`, this function does nothing.
 
 - `rl`: The run loop to modify.
 - `source`: The run loop source to add. The source is retained by the run loop.
-- `mode`: The run loop mode to which to add  . Use the constant   to add   to the set of objects monitored by all the common modes.
+- `mode`: The run loop mode to which to add `source`. Use the constant [`commonModes`](cfrunloopmode/commonmodes.md) to add `source` to the set of objects monitored by all the common modes.
 
 ## See Also
 

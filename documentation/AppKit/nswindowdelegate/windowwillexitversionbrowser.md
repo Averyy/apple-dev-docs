@@ -17,7 +17,7 @@ optional func windowWillExitVersionBrowser(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: An   notification.
+- `notification`: An [`willExitVersionBrowserNotification`](nswindow/willexitversionbrowsernotification.md) notification.
 
 ## See Also
 

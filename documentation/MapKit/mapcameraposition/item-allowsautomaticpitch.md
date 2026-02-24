@@ -26,7 +26,7 @@ Returns a new [`MapCameraPosition`](mapcameraposition.md).
 
 ## Parameters
 
-- `item`: The   to center the map on.
+- `item`: The [`MKMapItem`](mkmapitem.md) to center the map on.
 - `allowsAutomaticPitch`: A Boolean value that indicates whether the camera selects a pitch automatically.
 
 ## See Also

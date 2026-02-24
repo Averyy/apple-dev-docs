@@ -25,6 +25,16 @@ object Resource
 - [object Resource.Relationships](resource/relationships-data.dictionary.md)
 - [object Resource.Views](resource/views-data.dictionary.md)
 
+## Properties
+
+- `attributes` (Resource.Attributes): The attribute metadata for the resource.
+- `href` (string): The relative location for the resource, if it may be fetched directly.
+- `id` (string) *(required)*: The identifier of the resource.
+- `meta` (Resource.Meta): Contextual data about the resource.
+- `relationships` (Resource.Relationships): The relationships for the resource.
+- `type` (string) *(required)*: The type of the resource.
+- `views` (Resource.Views): The views for the resource.
+
 ## See Also
 
 - [object Relationship](relationship.md)

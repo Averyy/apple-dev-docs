@@ -27,7 +27,7 @@ Use [`init(url:)`](sfsafariviewcontroller/init(url:).md) to initialize an instan
 
 ## Parameters
 
-- `URL`: The URL to navigate to. The URL must use the   or   scheme.
+- `URL`: The URL to navigate to. The URL must use the `http` or `https` scheme.
 - `configuration`: The configuration for the new view controller.
 
 ## See Also

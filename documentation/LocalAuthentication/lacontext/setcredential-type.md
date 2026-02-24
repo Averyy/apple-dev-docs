@@ -25,8 +25,8 @@ func setCredential(_ credential: Data?, type: LACredentialType) -> Bool
 
 ## Parameters
 
-- `credential`: Setting this parameter to   removes any existing credential of the specified type.
-- `type`: The type of the specified credential. For possible values, see  .
+- `credential`: The credential to be used when evaluating the authentication context. Setting this parameter to `nil` removes any existing credential of the specified type.
+- `type`: The type of the specified credential. For possible values, see [`LACredentialType`](lacredentialtype.md).
 
 ## See Also
 

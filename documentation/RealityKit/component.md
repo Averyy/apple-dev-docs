@@ -110,7 +110,7 @@ You can also define custom component types. When you do, register that type with
 
 ## See Also
 
-- [Understanding the modular architecture of RealityKit](../visionOS/understanding-the-realitykit-modular-architecture.md)
+- [Understanding the modular architecture of RealityKit](../visionos/understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.
 - [Building an immersive experience with RealityKit](building-an-immersive-experience-with-realitykit.md)
   Use systems and postprocessing effects to create a realistic underwater scene.

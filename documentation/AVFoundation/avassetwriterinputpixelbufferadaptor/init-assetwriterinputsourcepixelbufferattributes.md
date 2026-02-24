@@ -25,8 +25,8 @@ To take advantage of the efficiency of appending buffers created from the adapto
 
 ## Parameters
 
-- `input`: The system raises an error if you specify an input that’s already connected to a pixel buffer adaptor.
-- `sourcePixelBufferAttributes`: A dictionary that describes the attributes of pixel buffers that the input’s pixel buffer pool vends. If your app doesn’t need a pixel buffer pool for allocating buffers, set this value to  .
+- `input`: An asset writer input that accepts [`video`](avmediatype/video.md) as its media type. The system raises an error if you specify an input that’s already connected to a pixel buffer adaptor.
+- `sourcePixelBufferAttributes`: A dictionary that describes the attributes of pixel buffers that the input’s pixel buffer pool vends. If your app doesn’t need a pixel buffer pool for allocating buffers, set this value to `nil`.
 
 
 ---

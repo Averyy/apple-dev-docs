@@ -28,7 +28,7 @@ This method is a wrapper for `AHRegisterHelpBook` (which is called only once to 
 ## Parameters
 
 - `anchor`: Location of the desired text.
-- `book`: Help book containing the anchor. When  , all installed help books are searched.
+- `book`: Help book containing the anchor. When `nil`, all installed help books are searched.
 
 ## See Also
 

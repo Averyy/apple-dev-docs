@@ -22,7 +22,7 @@ func SCNetworkInterfaceSetMediaOptions(_ interface: SCNetworkInterface, _ subtyp
 
 - `interface`: The network interface.
 - `subtype`: The media subtype to set (for example, “autoselect” or “100baseTX”).
-- `options`: The media options to set (for example, “half-duplex” or “full-duplex”). If  , the active options are not returned.
+- `options`: The media options to set (for example, “half-duplex” or “full-duplex”). If `NULL`, the active options are not returned.
 
 ## See Also
 

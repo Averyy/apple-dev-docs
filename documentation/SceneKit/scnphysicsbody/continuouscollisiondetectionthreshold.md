@@ -24,8 +24,8 @@ var continuousCollisionDetectionThreshold: CGFloat { get set }
 
 SceneKit’s physics engine can employ two kinds of collision detection:
 
-- With  collision detection, when SceneKit simulates physics before rendering each frame (see [`timeStep`](scnphysicsworld/timestep.md) and [`SCNSceneRendererDelegate`](scnscenerendererdelegate.md)), it updates the position of each physics body based on the body’s velocity during that time interval, then checks to see whether the body at its new position intersects other bodies.
-- With  collision detection, SceneKit calculates the volume that will be traversed by a body during each frame, then checks to see whether that volume intersects other bodies.
+- With *discrete* collision detection, when SceneKit simulates physics before rendering each frame (see [`timeStep`](scnphysicsworld/timestep.md) and [`SCNSceneRendererDelegate`](scnscenerendererdelegate.md)), it updates the position of each physics body based on the body’s velocity during that time interval, then checks to see whether the body at its new position intersects other bodies.
+- With *continuous* collision detection, SceneKit calculates the volume that will be traversed by a body during each frame, then checks to see whether that volume intersects other bodies.
 
 This property’s value defaults to `0.0`, resulting in discrete collision detection at all times. When this value is nonzero, SceneKit applies continuous collision whenever the body travels more than the specified distance within one [`timeStep`](scnphysicsworld/timestep.md).
 

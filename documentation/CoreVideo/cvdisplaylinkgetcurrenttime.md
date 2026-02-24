@@ -26,7 +26,7 @@ You use this call to obtain the timestamp of the frame that is currently being d
 ## Parameters
 
 - `displayLink`: The display link whose current time you want to obtain.
-- `outTime`: A pointer to a   structure. Note that you must set the version in the structure (currently 0) before calling to indicate which version of the timestamp structure you want.
+- `outTime`: A pointer to a `CVTimeStamp` structure. Note that you must set the version in the structure (currently 0) before calling to indicate which version of the timestamp structure you want.
 
 ## See Also
 

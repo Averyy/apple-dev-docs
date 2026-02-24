@@ -24,6 +24,11 @@ typealias SCNBindingBlock = (UInt32, UInt32, SCNNode?, SCNRenderer) -> Void
 
 The block takes the following parameters:
 
+- **`programID`**: The OpenGL program identifier for the current [`SCNProgram`](scnprogram.md) instance, as used by OpenGL functions such as `glValidateProgram`.
+- **`location`**: The OpenGL location index for the symbol to be bound or unbound, as used by OpenGL functions such as `glUniform`.
+- **`renderedNode`**: The [`SCNNode`](scnnode.md) object being rendered.
+- **`renderer`**: The [`SCNRenderer`](scnrenderer.md) object responsible for rendering.
+
 Call [`handleBinding(ofSymbol:handler:)`](scnshadable/handlebinding(ofsymbol:handler:).md) or [`handleUnbinding(ofSymbol:handler:)`](scnshadable/handleunbinding(ofsymbol:handler:).md) to associate a handler block with a GLSL symbol for a SceneKit geometry or material.
 
 ## See Also

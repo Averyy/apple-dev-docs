@@ -16,7 +16,7 @@ func replaceTextContainer(_ newContainer: NSTextContainer)
 
 ## Parameters
 
-- `newContainer`: The new text container. This method raises   if   is  .
+- `newContainer`: The new text container. This method raises `NSInvalidArgumentException` if `aTextContainer` is `nil`.
 
 ## See Also
 

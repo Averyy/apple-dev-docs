@@ -22,7 +22,7 @@ Before invoking this method, you should check the [`isEditable`](alasset/isedita
 ## Parameters
 
 - `videoPathURL`: An URL that specifies the location of video data.
-- `completionBlock`: If the application is not able to edit the asset, the completion blocks return a   asset URL and an  .
+- `completionBlock`: The block invoked after the save operation completes. If the application is able to edit the asset, the completion block returns the same asset URL as the receiver, because a new asset is not created. If the application is not able to edit the asset, the completion blocks return a `nil` asset URL and an `ALAssetsLibraryWriteFailedError`.
 
 ## See Also
 

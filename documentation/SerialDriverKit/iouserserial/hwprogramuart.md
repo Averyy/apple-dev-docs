@@ -26,7 +26,7 @@ Override this method and use it to program your hardware with the specified info
 
 - `baudRate`: The baud rate requested by the system.
 - `nDataBits`: The number of data bits to transmit.
-- `nHalfStopBits`: The number of half stop bits. For example, specify   to generate   stop bits.
+- `nHalfStopBits`: The number of half stop bits. For example, specify `3` to generate `1.5` stop bits.
 - `parity`: The parity setting to use during communication. For a list of possible values, see Parity Options.
 
 ## See Also

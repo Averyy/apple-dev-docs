@@ -9,6 +9,10 @@ An entitlement required for app extensions to perform a one-time transfer of on-
 - iOS 26.1+
 - iPadOS 26.1+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 Use this entitlement with the app extension that implements the [`AppMigrationExtension`](https://developer.apple.com/documentation/AppMigrationKit/AppMigrationExtension) protocol from the [`AppMigrationKit`](https://developer.apple.com/documentation/AppMigrationKit) framework.

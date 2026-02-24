@@ -11,6 +11,12 @@ A string value that indicates the level of additional runtime security protectio
 - macOS 26.4+ (Beta)
 - visionOS 26.4+ (Beta)
 
+
+
+**Type**: string
+
+**Default**: `*`
+
 #### Discussion
 
 The default value for this entitlement is the `*` wildcard.

@@ -22,7 +22,7 @@ init(upstream: Upstream, createSubject: @escaping () -> SubjectType)
 
 ## Parameters
 
-- `createSubject`: A closure that returns a   each time a subscriber attaches to the multicast publisher.
+- `createSubject`: A closure that returns a [`Subject`](subject.md) each time a subscriber attaches to the multicast publisher.
 
 
 ---

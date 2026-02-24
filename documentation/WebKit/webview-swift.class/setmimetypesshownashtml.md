@@ -16,7 +16,7 @@ class func setMIMETypesShownAsHTML(_ MIMETypes: [Any]!)
 
 ## Parameters
 
-- `MIMETypes`: An array of   objects representing the MIME types. Typically, you create the   array by adding additional types to the array returned by the   class method.
+- `MIMETypes`: An array of `NSString` objects representing the MIME types. Typically, you create the `MIMETypes` array by adding additional types to the array returned by the [`mimeTypesShownAsHTML()`](webview-swift.class/mimetypesshownashtml().md) class method.
 
 ## See Also
 

@@ -11,7 +11,7 @@ Opens the immersive space when the session connects.
 ## Declaration
 
 ```swift
-static func presentOnConnect(_ action: OpenFoveatedStreamingSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors
+static func presentOnConnect(_ action: OpenImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors
 ```
 
 ## Parameters

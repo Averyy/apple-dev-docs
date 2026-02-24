@@ -24,7 +24,7 @@ A new data table.
 
 ## Parameters
 
-- `proportions`: An array of proportions, each in the range  .
+- `proportions`: An array of proportions, each in the range `[0.0, 1.0]`.
 - `seed`: A seed number for the random-number generator. The default value is the current epoch time in milliseconds.
 - `labelColumn`: The name of the column with the labels.
 - `textColumn`: The name of the column with the text data.

@@ -28,8 +28,6 @@ This class coordinates the transfer of browsing data by presenting the framework
 ### Creating an import manager
 - [init()](bebrowserdataimportmanager/init.md)
   Initializes an import manager.
-- [init(windowScene: UIWindowScene?)](bebrowserdataimportmanager/init(windowscene:).md)
-  Initializes an import manager for a window scene.
 ### Importing browser data
 - [func importBrowserData(token: UUID) -> AsyncThrowingStream<BEBrowserData, any Error>](bebrowserdataimportmanager/importbrowserdata(token:).md)
   Imports another app’s browsing data as a stream.
@@ -44,6 +42,9 @@ This class coordinates the transfer of browsing data by presenting the framework
   A constant that identifies the launch activity for data import requests.
 - [class let userActivityType: String](bebrowserdataimportmanager/useractivitytype-8xgjo.md)
   A constant that identifies the launch activity for data import requests.
+### Initializers
+- [init(scene: UIWindowScene?)](bebrowserdataimportmanager/init(scene:).md)
+  Initializes an import manager for a window scene.
 
 ## Relationships
 

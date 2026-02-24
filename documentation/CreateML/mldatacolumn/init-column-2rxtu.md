@@ -32,7 +32,7 @@ print(intsColumn) // Prints [1, 2, 3, 4, 5]
 
 ## Parameters
 
-- `column`: An   of elements convertible to an    of   .
+- `column`: An [`MLDataColumn`](mldatacolumn.md) of elements convertible to an [`Array`](https://developer.apple.com/documentation/Swift/Array) of [`Int`](https://developer.apple.com/documentation/Swift/Int).
 
 ## See Also
 

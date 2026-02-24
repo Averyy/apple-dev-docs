@@ -26,9 +26,9 @@ func getObjectValue(_ obj: AutoreleasingUnsafeMutablePointer<AnyObject?>?, for s
 
 ## Parameters
 
-- `obj`: If the receiver is able to parse  , upon return contains a date representation of  .
+- `obj`: If the receiver is able to parse `string`, upon return contains a date representation of `string`.
 - `string`: The string to parse.
-- `rangep`: If the receiver is able to parse  , upon return contains the range of   used to create the date.
+- `rangep`: If the receiver is able to parse `string`, upon return contains the range of `string` used to create the date.
 
 ## See Also
 

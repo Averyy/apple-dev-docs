@@ -16,7 +16,7 @@ static func custom(_ value: Double) -> ImmersiveContentBrightness
 
 ## Parameters
 
-- `value`: The value of the brightness. Provide a value   between 0 and 1. Larger values correspond to a brighter environment.
+- `value`: The value of the brightness. Provide a value between 0 and 1. Larger values correspond to a brighter environment.
 
 ## See Also
 

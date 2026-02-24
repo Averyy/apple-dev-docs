@@ -21,7 +21,7 @@ class MTLStencilDescriptor
 
 #### Overview
 
-A stencil test is a comparison between a masked reference value and a masked value stored in a stencil attachment. (A value is  by performing a logical AND operation on it with the [`readMask`](mtlstencildescriptor/readmask.md) value.) The [`MTLStencilDescriptor`](mtlstencildescriptor.md) object defines how to update the contents of the stencil attachment, based on the results of the stencil test and the depth test.
+A stencil test is a comparison between a masked reference value and a masked value stored in a stencil attachment. (A value is *masked* by performing a logical AND operation on it with the [`readMask`](mtlstencildescriptor/readmask.md) value.) The [`MTLStencilDescriptor`](mtlstencildescriptor.md) object defines how to update the contents of the stencil attachment, based on the results of the stencil test and the depth test.
 
 The [`stencilCompareFunction`](mtlstencildescriptor/stencilcomparefunction.md) property defines the stencil test. The [`stencilFailureOperation`](mtlstencildescriptor/stencilfailureoperation.md), [`depthFailureOperation`](mtlstencildescriptor/depthfailureoperation.md), and [`depthStencilPassOperation`](mtlstencildescriptor/depthstencilpassoperation.md) properties specify what to do to a stencil value stored in the stencil attachment for three different test outcomes: if the stencil test fails, if the stencil test passes and the depth test fails, or if both stencil and depth tests succeed, respectively. [`writeMask`](mtlstencildescriptor/writemask.md) determines which stencil bits can be modified as the result of a stencil operation.
 

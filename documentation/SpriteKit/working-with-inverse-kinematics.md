@@ -6,7 +6,7 @@ Gain fine-tuned control of objects that are connected by joints.
 
 #### Overview
 
-Inverse kinematics (IK) is the use of equations to drive a system of connected components so that an  can reach a desired position. Imagine a robot arm formed of a series of sections hinged together. With traditional animation techniques, if you wanted the hand of the arm to reach to a specified position, you would have to code the rotations for each of the joints, which is a complex and time-consuming task. With IK, you simply need to specify the required position of the hand (which would be the end effector), and each individual joint is rotated to achieve the final position. In SpriteKit, complex IK animations can be generated with very little code.
+Inverse kinematics (IK) is the use of equations to drive a system of connected components so that an *end effector* can reach a desired position. Imagine a robot arm formed of a series of sections hinged together. With traditional animation techniques, if you wanted the hand of the arm to reach to a specified position, you would have to code the rotations for each of the joints, which is a complex and time-consuming task. With IK, you simply need to specify the required position of the hand (which would be the end effector), and each individual joint is rotated to achieve the final position. In SpriteKit, complex IK animations can be generated with very little code.
 
 ##### Set Up the Joints and Constraints
 

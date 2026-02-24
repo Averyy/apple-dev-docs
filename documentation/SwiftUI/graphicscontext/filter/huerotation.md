@@ -30,7 +30,7 @@ This filter is equivalent to the `hue-rotate` filter primitive defined by the Sc
 
 ## Parameters
 
-- `angle`: The amount by which to rotate the hue value of each   pixel.
+- `angle`: The amount by which to rotate the hue value of each pixel.
 
 ## See Also
 

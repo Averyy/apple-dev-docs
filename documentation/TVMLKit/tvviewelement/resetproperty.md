@@ -20,7 +20,7 @@ This method can be used to reset a resettable property to its default value afte
 
 ## Parameters
 
-- `resettableProperty`: A property that can be reset to its default value. For possible values, see  .
+- `resettableProperty`: A property that can be reset to its default value. For possible values, see [`TVElementResettableProperty`](tvelementresettableproperty.md).
 
 ## See Also
 

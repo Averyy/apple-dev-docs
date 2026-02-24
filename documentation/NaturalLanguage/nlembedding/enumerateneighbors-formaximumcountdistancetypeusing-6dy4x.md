@@ -24,9 +24,10 @@ func enumerateNeighbors(for vector: [Double], maximumCount maxCount: Int, distan
 ## Parameters
 
 - `vector`: A location in the vocabulary space.
-- `maxCount`: The largest number of times the method calls  .
-- `distanceType`: A means of calculating distance that determines which formula the method uses to evaluate a neighbor’s distance from  .
-- `block`: The closure returns a Boolean that indicates whether to stop enumerating neighbors.
+- `maxCount`: The largest number of times the method calls `block`.
+- `distanceType`: A means of calculating distance that determines which formula the method uses to evaluate a neighbor’s distance from `vector`.
+- `block`: A closure with the following parameters: - **`String`**: A neighboring string.
+- **`NLDistance`**: The distance from `vector` to the neighboring string. The closure returns a Boolean that indicates whether to stop enumerating neighbors.
 
 ## See Also
 

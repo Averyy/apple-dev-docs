@@ -29,6 +29,12 @@ This method applies the triangle kaleidoscope filter to an image. The effect pro
 
 The triangle kaleidoscope tile filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`decay`**: A `float` representing the intensity of the color fade from the center of the triangle as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`point`**: A set of coordinates marking the center of the triangular area of the input image as a [`CIVector`](civector.md).
+- **`rotation`**: A `float` representing the angle of rotation of the triangle as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`size`**: A `float` representing the size in pixels of the triangle as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that produces a triangle tile of the input image, creating an optical illusion:
 
 ```swift

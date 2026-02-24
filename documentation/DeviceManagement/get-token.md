@@ -51,6 +51,10 @@ For the service type `com.apple.watch.pairing`, the MDM server requests this tok
 - [object GetTokenResponse](gettokenresponse.md)
   The get token response details.
 
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/checkin`
+
 ## Request Body
 
 The request object the system sends for the `GetToken` request.

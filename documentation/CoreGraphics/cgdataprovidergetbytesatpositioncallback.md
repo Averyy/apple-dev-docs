@@ -30,7 +30,7 @@ When Core Graphics is ready to receive data from the provider, your function is 
 
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to  .
+- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(directInfo:size:callbacks:)`](cgdataprovider/init(directinfo:size:callbacks:).md).
 - `buffer`: The Core Graphics buffer into which you copy the specified number of bytes.
 - `position`: Specifies the relative location in the data provider at which to begin copying data.
 - `count`: The number of bytes to copy.

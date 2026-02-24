@@ -30,7 +30,7 @@ If the buffer contains out-of-presentation-order samples, any gaps in the presen
 
 ## Parameters
 
-- `sbuf`: The   being interrogated .
+- `sbuf`: The `CMSampleBuffer` being interrogated .
 
 ## See Also
 

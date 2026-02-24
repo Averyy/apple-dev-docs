@@ -30,7 +30,7 @@ This method is a designated initializer of `NSOrderedSet`.
 
 ## Parameters
 
-- `objects`: If the same object appears more than once in objects, it is added only once to the returned ordered set.
+- `objects`: A C array of objects to add to the new set. If the same object appears more than once in objects, it is added only once to the returned ordered set.
 - `cnt`: The number of objects from objects to add to the new ordered set.
 
 ## See Also

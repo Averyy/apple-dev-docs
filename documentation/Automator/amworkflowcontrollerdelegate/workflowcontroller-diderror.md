@@ -18,7 +18,7 @@ optional func workflowController(_ controller: AMWorkflowController, didError er
 ## Parameters
 
 - `controller`: The controller object sending the message.
-- `error`: If a workflow error occurs, upon return contains an instance of   that describes the problem.
+- `error`: If a workflow error occurs, upon return contains an instance of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) that describes the problem.
 
 
 ---

@@ -29,9 +29,11 @@ You may find this method useful in some situations (typically if you are using C
 
 ## Parameters
 
-- `delegate`: An object that can serve as the receiver’s delegate. It should implement the method specified by  .
-- `didCommitSelector`: A selector that is invoked on delegate. The method specified by the selector must have the same signature as the following method:
-- `contextInfo`: Contextual information that is sent as the   argument to delegate when   is invoked.
+- `delegate`: An object that can serve as the receiver’s delegate. It should implement the method specified by `didCommitSelector`.
+- `didCommitSelector`: A selector that is invoked on delegate. The method specified by the selector must have the same signature as the following method: ```objc
+- (void)editor:(id)editor didCommit:(BOOL)didCommit contextInfo:(void  *)contextInfo
+```
+- `contextInfo`: Contextual information that is sent as the `contextInfo` argument to delegate when `didCommitSelector` is invoked.
 
 ## See Also
 

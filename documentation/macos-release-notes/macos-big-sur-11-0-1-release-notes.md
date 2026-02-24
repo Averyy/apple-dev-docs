@@ -18,7 +18,7 @@ The macOS 11 SDK provides support to develop apps for Macs running macOS Big Sur
 
 ###### Known Issues
 
-- You might be unable to pair certain braille displays using Bluetooth. (69794099)  Connect these devices using USB instead.
+- You might be unable to pair certain braille displays using Bluetooth. (69794099) **Workaround:** Connect these devices using USB instead.
 
 ##### Appkit
 
@@ -40,15 +40,15 @@ The macOS 11 SDK provides support to develop apps for Macs running macOS Big Sur
 
 ###### Known Issues
 
-- When updating from macOS Big Sur 11 beta 2 to macOS Big Sur 11 beta 3 or later, you might be offered an unexpectedly large download rather than an incremental software update. (65753086)  Under the “Another update is available” text, click the “More info…” link. This reveals the incremental update where you can click the Install Now button.
+- When updating from macOS Big Sur 11 beta 2 to macOS Big Sur 11 beta 3 or later, you might be offered an unexpectedly large download rather than an incremental software update. (65753086) **Workaround:** Under the “Another update is available” text, click the “More info…” link. This reveals the incremental update where you can click the Install Now button.
 - You might need to adjust Energy Saver settings so your Mac doesn’t go to sleep while preparing to install macOS Big Sur 11.0.1. (63166401)
-- If macOS Big Sur 11.0.1 is installed into the same APFS container as previous versions of macOS Catalina 10.15, system software updates can no longer be installed on the previous versions of macOS. (64411484)  Update the previous version of macOS Catalina to 10.15.6 or later.
+- If macOS Big Sur 11.0.1 is installed into the same APFS container as previous versions of macOS Catalina 10.15, system software updates can no longer be installed on the previous versions of macOS. (64411484) **Workaround:** Update the previous version of macOS Catalina to 10.15.6 or later.
 
 ##### Kernel
 
 ###### Known Issues
 
-- Installing a new kernel extension requires signing in as an Admin user. You must also restart your Mac to load the extension. Kernel extensions using certain deprecated KPIs won’t be loaded. For more information, see [`Deprecated Kernel Extensions and System Extension Alternatives`](https://developer.apple.comhttps://developer.apple.com/support/kernel-extensions/). (55068348)  During development, you can temporarily disable System Integrity Protection to allow these deprecated kernel extensions to load.
+- Installing a new kernel extension requires signing in as an Admin user. You must also restart your Mac to load the extension. Kernel extensions using certain deprecated KPIs won’t be loaded. For more information, see [`Deprecated Kernel Extensions and System Extension Alternatives`](https://developer.apple.comhttps://developer.apple.com/support/kernel-extensions/). (55068348) **Workaround:** During development, you can temporarily disable System Integrity Protection to allow these deprecated kernel extensions to load.
 - New in macOS Big Sur 11.0.1, the system ships with a built-in dynamic linker cache of all system-provided libraries. As part of this change, copies of dynamic libraries are no longer present on the filesystem. Code that attempts to check for dynamic library presence by looking for a file at a path or enumerating a directory will fail. Instead, check for library presence by attempting to `dlopen()` the path, which will correctly check for the library in the cache. (62986286)
 - Use only absolute paths with the `--volume-root` option of `kmutil`, and don’t use a trailing `/`. (63773848)
 - Symbols exported by both xnu and Apple kernel extensions will change. Recompile your kernel extension with each update to macOS Big Sur 11.0.1 to ensure compatibility. (64262563)
@@ -76,7 +76,7 @@ The macOS 11 SDK provides support to develop apps for Macs running macOS Big Sur
 - New APIs are available for using `os_log` from Swift as part of the [`os`](https://developer.apple.com/documentation/os) framework: - A new type [`Logger`](https://developer.apple.com/documentation/os/Logger) can be instantiated using a subsystem and category and provides methods for logging at different levels ([`debug(_:)`](https://developer.apple.com/documentation/os/Logger/debug(_:)), [`error(_:)`](https://developer.apple.com/documentation/os/Logger/error(_:)), [`fault(_:)`](https://developer.apple.com/documentation/os/Logger/fault(_:))).
 - The `Logger` APIs support specifying most formatting and privacy options supported by legacy `os_log` APIs.
 - The new APIs provide significant performance improvements over the legacy APIs.
-- You can now pass Swift string interpolation to the `os_log` function.  The new APIs can’t be back deployed; however, the existing `os_log` API remains available for back deployment. (22539144)
+- You can now pass Swift string interpolation to the `os_log` function. **Note:** The new APIs can’t be back deployed; however, the existing `os_log` API remains available for back deployment. (22539144)
 
 ##### Mac Catalyst
 
@@ -158,13 +158,13 @@ func style(_ slider: UISlider) {
 
 - macOS Big Sur 11 beta improves system security by requiring an administrator password when a certificate trust settings change is made in the admin trust domain. Running as the root user alone is no longer sufficient to modify certificate trust. User trust domain settings continue to require confirmation by entering the password for the user’s account. This change may affect you if one of the following is true: - You have written scripts which call `/usr/bin/security add-trusted-cert -d ...` as root.
 - Your process runs as root and calls the SecTrustSettingsSetTrustSettings function to trust a certificate.
-- Workflows that add trust settings in the admin trust domain, such as for an enterprise root certificate, may require modification if the user can’t authenticate as an administrator at the time settings are changed. (21855995)  Use Apple Configurator 2 to create and install a configuration profile containing your root certificate.
+- Workflows that add trust settings in the admin trust domain, such as for an enterprise root certificate, may require modification if the user can’t authenticate as an administrator at the time settings are changed. (21855995) **Workaround:** Use Apple Configurator 2 to create and install a configuration profile containing your root certificate.
 
 ##### Swiftui
 
 ###### Known Issues
 
-- [`ProgressView`](https://developer.apple.com/documentation/SwiftUI/ProgressView) generic type signature has changed, adding the [`currentValueLabel`](https://developer.apple.com/documentation/SwiftUI/GaugeStyleConfiguration/currentValueLabel-swift.property) generic parameter. This change doesn’t require any source changes, but it causes apps compiled using an earlier beta SDK to quit unexpectedly. (63580200)  Re-compile apps for macOS Big Sur 11 Beta 6 or later to resolve this issue.
+- [`ProgressView`](https://developer.apple.com/documentation/SwiftUI/ProgressView) generic type signature has changed, adding the [`currentValueLabel`](https://developer.apple.com/documentation/SwiftUI/GaugeStyleConfiguration/currentValueLabel-swift.property) generic parameter. This change doesn’t require any source changes, but it causes apps compiled using an earlier beta SDK to quit unexpectedly. (63580200) **Workaround:** Re-compile apps for macOS Big Sur 11 Beta 6 or later to resolve this issue.
 
 ###### New Features
 
@@ -310,8 +310,8 @@ NavigationView {
 
 ###### Known Issues
 
-- You might experience kernel panics when using earlier versions of Parallels Desktop 16. (67358596)  Upgrade to the most-recent version of Parallels Desktop 16.
-- Some third-party scripts might produce unexpected results due to the change in macOS version from 10.x to 11. (62477208)  Set `SYSTEM_VERSION_COMPAT=1` in the calling environment, for example: `$ SYSTEM_VERSION_COMPAT=1 legacy_script.pl`
+- You might experience kernel panics when using earlier versions of Parallels Desktop 16. (67358596) **Workaround:** Upgrade to the most-recent version of Parallels Desktop 16.
+- Some third-party scripts might produce unexpected results due to the change in macOS version from 10.x to 11. (62477208) **Workaround:** Set `SYSTEM_VERSION_COMPAT=1` in the calling environment, for example: `$ SYSTEM_VERSION_COMPAT=1 legacy_script.pl`
 
 ##### Time Machine
 
@@ -335,7 +335,7 @@ NavigationView {
 
 ###### Known Issues
 
-- [`isPassLibraryAvailable()`](https://developer.apple.com/documentation/PassKit/PKPassLibrary/isPassLibraryAvailable()) doesn’t ensure uniform availability of pass library functionality between platforms and devices. (60697880)  Call a more specific API to check available functionality, such as [`canAddPasses()`](https://developer.apple.com/documentation/PassKit/PKAddPassesViewController/canAddPasses()).
+- [`isPassLibraryAvailable()`](https://developer.apple.com/documentation/PassKit/PKPassLibrary/isPassLibraryAvailable()) doesn’t ensure uniform availability of pass library functionality between platforms and devices. (60697880) **Workaround:** Call a more specific API to check available functionality, such as [`canAddPasses()`](https://developer.apple.com/documentation/PassKit/PKAddPassesViewController/canAddPasses()).
 
 ###### New Features
 
@@ -358,7 +358,7 @@ API_AVAILABLE(macos(10.16), ios(14.0), watchos(7.0))
 
 ###### Known Issues
 
-- Legacy Xcode versions prior to 11.5 might unexpectedly quit when launched. (59991056)  Run the following command in Terminal: `defaults write com.apple.dt.Xcode DVTDisableMainThreadChecker 1`, then deselect Main Thread Checker in the Diagnostic tab of the Run and Test actions for each scheme in your project.
+- Legacy Xcode versions prior to 11.5 might unexpectedly quit when launched. (59991056) **Workaround:** Run the following command in Terminal: `defaults write com.apple.dt.Xcode DVTDisableMainThreadChecker 1`, then deselect Main Thread Checker in the Diagnostic tab of the Run and Test actions for each scheme in your project.
 
 ###### New Features
 

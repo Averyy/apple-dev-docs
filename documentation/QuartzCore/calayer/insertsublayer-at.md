@@ -22,7 +22,7 @@ func insertSublayer(_ layer: CALayer, at idx: UInt32)
 ## Parameters
 
 - `layer`: The sublayer to be inserted into the current layer.
-- `idx`: The index at which to insert  . This value must be a valid 0-based index into the   array.
+- `idx`: The index at which to insert `aLayer`. This value must be a valid 0-based index into the [`sublayers`](calayer/sublayers.md) array.
 
 ## See Also
 

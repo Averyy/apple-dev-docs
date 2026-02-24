@@ -21,7 +21,7 @@ var inverseBindPoseMatrix: simd_float4x4
 
 #### Discussion
 
-> **Note**: The bind pose matrix transforms a vertex from a joint’s local coordinate space to the position of that vertex in the model’s bind pose. This property is the  bind pose matrix, so it transforms a vertex from its position in the model’s bind pose to the local coordinate space of this joint.
+> **Note**: The bind pose matrix transforms a vertex from a joint’s local coordinate space to the position of that vertex in the model’s bind pose. This property is the *inverse* bind pose matrix, so it transforms a vertex from its position in the model’s bind pose to the local coordinate space of this joint.
 
 
 ---

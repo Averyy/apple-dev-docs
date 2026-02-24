@@ -52,7 +52,7 @@ The function should return the color mapping to the destination pixel, typically
 ## Parameters
 
 - `shader`: The shader to apply as a layer effect.
-- `maxSampleOffset`: If the shader function samples from the   layer at locations not equal to the destination position,   this value must specify the maximum sampling distance in   each axis, for all source pixels.
+- `maxSampleOffset`: If the shader function samples from the layer at locations not equal to the destination position, this value must specify the maximum sampling distance in each axis, for all source pixels.
 - `isEnabled`: Whether the effect is enabled or not.
 
 ## See Also

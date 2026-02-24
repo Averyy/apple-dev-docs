@@ -18,6 +18,26 @@ class NSLayoutYAxisAnchor
 
 [`NSLayoutYAxisAnchor`](nslayoutyaxisanchor.md) adds type information to the methods inherited from [`NSLayoutAnchor`](nslayoutanchor.md). Specifically, the generic methods declared by [`NSLayoutAnchor`](nslayoutanchor.md) must now take a matching [`NSLayoutYAxisAnchor`](nslayoutyaxisanchor.md) object.
 
+**Swift**:
+
+```swift
+// This constraint is valid
+cancelButton.topAnchor.constraintEqualToAnchor(saveButton.topAnchor, constant: 8.0).isActive = true
+ 
+// This constraint generates an incompatible pointer type warning
+cancelButton.topAnchor.constraintEqualToAnchor(saveButton.trailingAnchor, constant: 8.0).isActive = true
+```
+
+**Objective-C**:
+
+```objc
+// This constraint is valid
+[self.cancelButton.leadingAnchor constraintEqualToAnchor:self.saveButton.trailingAnchor  constant: 8.0].active = true;
+ 
+// This constraint generates an incompatible pointer type warning
+[self.cancelButton.topAnchor constraintEqualToAnchor:self.saveButton.trailingAnchor constant: 8.0].active = true;
+```
+
 For more information on using layout anchors, see [`NSLayoutAnchor`](nslayoutanchor.md).
 
 ## Topics

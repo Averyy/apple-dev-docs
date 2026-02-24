@@ -19,7 +19,7 @@ func pauseTrip(for reason: CPNavigationSession.PauseReason, description: String?
 ## Parameters
 
 - `reason`: The reason for pausing the trip.
-- `description`: An optional description of the pause reason. To use a system-provided value, set this parameter to  .
+- `description`: An optional description of the pause reason. To use a system-provided value, set this parameter to `nil`.
 
 ## See Also
 

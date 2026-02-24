@@ -25,7 +25,7 @@ An initialized CIFilterShape object, or `nil` if the method fails.
 
 ## Parameters
 
-- `r`: A rectangle. Core Image uses the rectangle specified by integer parts of the values in the   data structure.
+- `r`: A rectangle. Core Image uses the rectangle specified by integer parts of the values in the `CGRect` data structure.
 
 
 ---

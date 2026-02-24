@@ -20,7 +20,7 @@ A progress mark represents a percentage of the animation completed. When the ani
 
 ## Parameters
 
-- `progressMark`: A   value (typed as NSAnimationProgress) between 0.0 and 1.0. Values outside that range are pinned to 0.0 or 1.0, whichever is nearest.
+- `progressMark`: A `float` value (typed as NSAnimationProgress) between 0.0 and 1.0. Values outside that range are pinned to 0.0 or 1.0, whichever is nearest.
 
 ## See Also
 

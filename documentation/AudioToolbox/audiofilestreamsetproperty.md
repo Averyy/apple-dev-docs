@@ -29,7 +29,7 @@ Currently, there are no settable properties.
 
 ## Parameters
 
-- `inAudioFileStream`: The ID of the parser to which you wish to pass data. The parser ID is returned by the   function.
+- `inAudioFileStream`: The ID of the parser to which you wish to pass data. The parser ID is returned by the [`AudioFileStreamOpen(_:_:_:_:_:)`](audiofilestreamopen(_:_:_:_:_:).md) function.
 - `inPropertyID`: The ID of the audio file stream property whose value is to be set.
 - `inPropertyDataSize`: The size, in bytes, of the property data.
 - `inPropertyData`: The property data.

@@ -20,10 +20,10 @@ A dictionary of attributes.
 
 ## Parameters
 
-- `textLayoutManager`: The  .
+- `textLayoutManager`: The `NSTextLayoutManager`.
 - `link`: The link.
-- `location`: The   of the link.
-- `renderingAttributes`: A dictionary of attributes whose keys are   values.
+- `location`: The [`NSTextLocation`](nstextlocation.md) of the link.
+- `renderingAttributes`: A dictionary of attributes whose keys are [`NSAttributedString.Key`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key) values.
 
 ## See Also
 

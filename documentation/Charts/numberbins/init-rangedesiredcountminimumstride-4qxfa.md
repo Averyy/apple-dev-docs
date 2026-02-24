@@ -28,7 +28,7 @@ The inferred bins.
 ## Parameters
 
 - `range`: The range the bins should cover.
-- `desiredCount`: The desired number of bins for the given data.   If  , infer the number automatically from data.
+- `desiredCount`: The desired number of bins for the given data. If `nil`, infer the number automatically from data.
 - `minimumStride`: The minimum allowed bin size.
 
 

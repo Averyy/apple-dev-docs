@@ -24,7 +24,7 @@ An `OSStatus` result code.
 
 ## Parameters
 
-- `dest`: The destination with pending events to cancel. If  , the operation applies to all destinations.
+- `dest`: The destination with pending events to cancel. If [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0), the operation applies to all destinations.
 
 ## See Also
 

@@ -26,10 +26,10 @@ Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success (any su
 
 ## Parameters
 
-- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns  , and the query begins and will last indefinitely until the client terminates the query by passing this DNSServiceRef to  .
+- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md), and the query begins and will last indefinitely until the client terminates the query by passing this DNSServiceRef to [`DNSServiceRefDeallocate(_:)`](dnsservicerefdeallocate(_:).md).
 - `flags`: kDNSServiceFlagsForceMulticast or kDNSServiceFlagsLongLivedQuery. Pass kDNSServiceFlagsLongLivedQuery to create a “long-lived” unicast query to a unicast DNS server that implements the protocol. This flag has no effect on link-local multicast queries.
 - `interfaceIndex`: The interface on which to issue the query. Passing 0 causes the query to be sent on all active interfaces via Multicast or the primary interface via Unicast.
-- `protocol`: * If “hostname” is a wide-area unicast DNS hostname (i.e. not a “.local.” name) but this host has no routable IPv6 address, then the call will not try to look up IPv6 addresses for “hostname”, since any addresses it found would be unlikely to be of any use anyway. Similarly, if this host has no routable IPv4 address, the call will not try to look up IPv4 addresses for “hostname”.
+- `protocol`: Pass in [`kDNSServiceProtocol_IPv4`](kdnsserviceprotocol_ipv4.md) to look up IPv4 addresses, or kDNSServiceProtocol_IPv6 to look up IPv6 addresses, or both to look up both kinds. If neither flag is set, the system will apply an intelligent heuristic, which is (currently) that it will attempt to look up both, except: * If “hostname” is a wide-area unicast DNS hostname (i.e. not a “.local.” name) but this host has no routable IPv6 address, then the call will not try to look up IPv6 addresses for “hostname”, since any addresses it found would be unlikely to be of any use anyway. Similarly, if this host has no routable IPv4 address, the call will not try to look up IPv4 addresses for “hostname”.
 - `hostname`: The fully qualified domain name of the host to be queried for.
 - `callBack`: The function to be called when the query succeeds or fails asynchronously.
 - `context`: An application context pointer which is passed to the callback function (may be NULL).

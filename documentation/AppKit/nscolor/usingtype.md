@@ -24,7 +24,7 @@ Before accessing the details of an [`NSColor`](nscolor.md) object, use this meth
 
 ## Parameters
 
-- `type`: The type of color object that you want. For example, if you want a color object containing RGB components, specify  .
+- `type`: The type of color object that you want. For example, if you want a color object containing RGB components, specify [`NSColor.ColorType.componentBased`](nscolor/colortype/componentbased.md).
 
 ## See Also
 

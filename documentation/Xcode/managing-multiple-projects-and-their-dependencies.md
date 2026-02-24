@@ -24,7 +24,7 @@ To create a workspace and add projects to it:
 
 1. In Xcode, choose File > New > Workspace.
 2. Specify a name for the workspace and save it to the file system.
-3. In the Project navigator, Control-click in the empty space and choose Add Files to “”.
+3. In the Project navigator, Control-click in the empty space and choose Add Files to “*workspaceName*”.
 4. In the sheet that appears, select an Xcode project (a file with a `.xcodeproj` filename extension).
 5. Click Add to add the project to the workspace.
 
@@ -38,7 +38,7 @@ By default, a project in a workspace can’t refer to targets, files, or product
 
 1. Open your Project navigator in your Xcode project.
 2. Click the Add button (+) at the bottom of the Project navigator.
-3. Choose Add Files to “”.
+3. Choose Add Files to “*projectName*”.
 4. Select another Xcode project (`.xcodeproj` filename extension) from the file dialog.
 5. Click Add.
 

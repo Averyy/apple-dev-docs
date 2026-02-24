@@ -18,7 +18,7 @@ Creates a new zoom stepper with the scope you specify.
 
 ## Parameters
 
-- `scope`: A   value that identifies this namespace.
+- `scope`: A [`Namespace.ID`](https://developer.apple.com/documentation/SwiftUI/Namespace/ID) value that identifies this namespace.
 
 
 ---

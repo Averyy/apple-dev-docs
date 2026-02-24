@@ -22,7 +22,8 @@ func selectChallengeablePlayers(_ players: [GKPlayer]) async throws -> [GKPlayer
 ## Parameters
 
 - `players`: A list of players that GameKit uses to find players who are eligible to earn the achievement.
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: A block that GameKit calls when this method completes. The block receives the following parameters: - **`challengeablePlayers`**: The players in the `players` parameter who are able to earn the achievement.
+- **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 

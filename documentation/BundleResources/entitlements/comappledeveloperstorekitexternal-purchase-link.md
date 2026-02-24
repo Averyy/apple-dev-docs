@@ -14,6 +14,10 @@ A Boolean value that indicates whether your app can include a link that directs 
 - visionOS 1.1+
 - watchOS 10.4+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 The [`com.apple.developer.storekit.external-purchase-link`](entitlements/com.apple.developer.storekit.external-purchase-link.md) entitlement enables qualifying apps to include a link that directs people using the app to a website to make an external purchase. For more information, see [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase).

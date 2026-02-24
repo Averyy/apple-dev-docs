@@ -22,8 +22,8 @@ init(for provider: Provider, using parameters: NWParameters? = nil)
 
 ## Parameters
 
-- `provider`: A BrowserProvider that describes the kind of   service to browse for, the browse descriptor,   and parameter configuration.
-- `parameters`: The parameters that will be used while   browsing.
+- `provider`: A BrowserProvider that describes the kind of service to browse for, the browse descriptor, and parameter configuration.
+- `parameters`: The parameters that will be used while browsing.
 
 
 ---

@@ -22,8 +22,8 @@ static func result<Value, OpensAppIntent>(value: Value, opensIntent: OpensAppInt
 
 ## Parameters
 
-- `value`: The value produced by the 
-- `opensIntent`: An   to shows the result of current intent
+- `value`: The value produced by the `AppIntent`
+- `opensIntent`: An `AppIntent` to shows the result of current intent
 - `dialog`: A custom success dialog
 
 

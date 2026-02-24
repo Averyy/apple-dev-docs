@@ -27,6 +27,9 @@ The converted [`CIImage`](ciimage.md).
 
 This filter converts an image from CIELAB color space to RGB. The CIELAB color space expresses color as three values: L* for the perceptual lightness, and a*b* for the colors red, green, blue, and yellow. The RGB color space expresses colors using the intensities of the three primary colors: red, green, and blue.
 
+- **`inputImage`**: A [`CIImage`](ciimage.md) containing the `RGB` image.
+- **`normalize`**: If true, the three input channels are in the range 0 to 1. If false, the L* channel is in the range 0 to 100, and the a*b* channels are in the range -128 to 128.
+
 The following code applies the `convertLabToRGBFilter` to an image with the `normalize` flag set to the `true`:
 
 ```swift

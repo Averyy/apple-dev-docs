@@ -6,7 +6,7 @@ Use vectors to calculate geometric values, calculate dot products and cross prod
 
 #### Overview
 
-A vector is comparable to a fixed-length array containing integer or floating-point values. The simd framework provides support for , that is, vectors that contain up to eight double-precision or sixteen single-precision values.
+A vector is comparable to a fixed-length array containing integer or floating-point values. The simd framework provides support for *small vectors*, that is, vectors that contain up to eight double-precision or sixteen single-precision values.
 
 The simd framework includes a wide-range of functions to operate on vectors that includes data type conversion, logical and bitwise operations, and mathematical operations.
 
@@ -60,7 +60,7 @@ Calculating the distance between two points using the Pythagorean theorem is a c
 
 ###### Calculate Length
 
-The length functions, for example, [`simd_length`](https://developer.apple.com/documentation/simd/simd_length-3ob5d), return the length of a vector. The following illustration shows how the length of a vector, , is calculated as the square root of the sum of the squares of its two values.
+The length functions, for example, [`simd_length`](https://developer.apple.com/documentation/simd/simd_length-3ob5d), return the length of a vector. The following illustration shows how the length of a vector, *A*, is calculated as the square root of the sum of the squares of its two values.
 
 ![Illustration showing how the length of vector A, at coordinates 4, 3, is calculated using the Pythagorean theorem.](https://docs-assets.developer.apple.com/published/c51a691216e52f62505599a4d4517f3f/media-2972222%402x.png)
 
@@ -101,10 +101,10 @@ if simd_distance_squared(a, target) < simd_distance_squared(b, target) {
 
 The simd framework provides functions for calculating vectors that describe reflections and refractions in two-, three-, and four-dimensional space. The image below shows:
 
-- An , described by the vector `simd_double2(x: 1.5, y: -1)`, traveling toward the center of the image.
-- A , described by the vector `simd_double2(x: 0, y: 1)`, that’s perpendicular to the interface between the two media.
-- The , computed by simd, traveling away from the center of the image.
-- The , computed by simd, traveling away from the center of the image.
+- An *incident ray*, described by the vector `simd_double2(x: 1.5, y: -1)`, traveling toward the center of the image.
+- A *normal*, described by the vector `simd_double2(x: 0, y: 1)`, that’s perpendicular to the interface between the two media.
+- The *reflected ray*, computed by simd, traveling away from the center of the image.
+- The *refracted ray*, computed by simd, traveling away from the center of the image.
 
 ![Image showing incident, reflected, and refracted rays and a normal, and their relationship to an object surface.](https://docs-assets.developer.apple.com/published/dc9dd1c74b811f839f45b218927a9dfc/media-2969455%402x.png)
 

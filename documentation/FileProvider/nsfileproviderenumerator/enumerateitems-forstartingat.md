@@ -26,9 +26,9 @@ func enumerateItems(for observer: any NSFileProviderEnumerationObserver, startin
 
 The system requests an enumerator in the following situations:
 
--  The system requests an enumerator when a document browser displays the contents of a directory. For performance reasons, the system may retain the enumerator even after the browser has moved to a different directory.
--  The system requests an enumerator when a file presenter begins managing an item. The enumerator is invalidated after the file presenter is removed.
--  The system requests an enumerator when it begins indexing the working set. It invalidates the enumerator after the indexing operation has completed.
+- **For directories.** The system requests an enumerator when a document browser displays the contents of a directory. For performance reasons, the system may retain the enumerator even after the browser has moved to a different directory.
+- **For files.** The system requests an enumerator when a file presenter begins managing an item. The enumerator is invalidated after the file presenter is removed.
+- **For the working set.** The system requests an enumerator when it begins indexing the working set. It invalidates the enumerator after the indexing operation has completed.
 
 Once requested, an enumerator is used to provide both the content and any changes for an item. When the system is finished with the item, it calls the enumerator’s [`invalidate()`](nsfileproviderenumerator/invalidate().md) method. For example, if you return an enumerator that provides the content of a directory, as long as the enumerator is active, the system also uses it to enumerate changes to the directory.
 

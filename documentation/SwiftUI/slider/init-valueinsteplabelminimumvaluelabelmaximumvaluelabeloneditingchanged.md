@@ -28,12 +28,12 @@ The slider calls `onEditingChanged` when editing begins and ends. For example, o
 
 ## Parameters
 
-- `value`: The selected value within  .
+- `value`: The selected value within `bounds`.
 - `bounds`: The range of the valid values.
 - `step`: The distance between each valid value.
-- `label`: A   that describes the purpose of the instance. Not all   slider styles show the label, but even in those cases, SwiftUI   uses the label for accessibility. For example, VoiceOver uses the   label to identify the purpose of the slider.
-- `minimumValueLabel`: A view that describes  .
-- `maximumValueLabel`: A view that describes  .
+- `label`: A `View` that describes the purpose of the instance. Not all slider styles show the label, but even in those cases, SwiftUI uses the label for accessibility. For example, VoiceOver uses the label to identify the purpose of the slider.
+- `minimumValueLabel`: A view that describes `bounds.lowerBound`.
+- `maximumValueLabel`: A view that describes `bounds.upperBound`.
 - `onEditingChanged`: A callback for when editing begins and ends.
 
 ## See Also

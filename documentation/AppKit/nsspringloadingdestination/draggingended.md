@@ -21,7 +21,7 @@ This method is called when a drag operation has ended. If the destination object
 
 ## Parameters
 
-- `draggingInfo`: An object of type  , which provides information about the drag event, including the dragged data.
+- `draggingInfo`: An object of type `NSDraggingInfo`, which provides information about the drag event, including the dragged data.
 
 ## See Also
 

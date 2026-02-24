@@ -25,7 +25,7 @@ Use this method to animate drops to any view in your app. For example, you might
 ## Parameters
 
 - `dragItem`: The item that you want to drop.
-- `target`: The location at which to drop the item, specified as a point in a view. You can also use the   object to specify a final transform to apply to the content.
+- `target`: The location at which to drop the item, specified as a point in a view. You can also use the [`UIDragPreviewTarget`](uidragpreviewtarget.md) object to specify a final transform to apply to the content.
 
 ## See Also
 

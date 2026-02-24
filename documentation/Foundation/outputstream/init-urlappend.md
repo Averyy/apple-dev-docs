@@ -31,7 +31,7 @@ The stream must be opened before it can be used.
 ## Parameters
 
 - `url`: The URL to the file the output stream will write to.
-- `shouldAppend`:   if newly written data should be appended to any existing file contents, otherwise  .
+- `shouldAppend`: [`true`](https://developer.apple.com/documentation/Swift/true) if newly written data should be appended to any existing file contents, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

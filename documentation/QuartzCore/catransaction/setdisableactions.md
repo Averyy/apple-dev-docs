@@ -25,7 +25,7 @@ This is a convenience method that invokes [`setValue(_:forKey:)`](catransaction/
 
 ## Parameters
 
-- `flag`:  , if actions should be disabled.
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true), if actions should be disabled.
 
 ## See Also
 

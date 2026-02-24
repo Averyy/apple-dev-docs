@@ -20,7 +20,7 @@ If the window is not resizable, this method will not resize the window. The fram
 
 ## Parameters
 
-- `string`: A string representation of a frame rectangle, previously accessed using  .
+- `string`: A string representation of a frame rectangle, previously accessed using [`frameDescriptor`](nswindow/framedescriptor.md).
 
 ## See Also
 

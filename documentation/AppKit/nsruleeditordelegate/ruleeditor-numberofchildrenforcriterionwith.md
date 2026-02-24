@@ -28,7 +28,7 @@ The delegate must implement this method.
 
 - `editor`: The rule editor that sent the message.
 - `criterion`: The criterion for which the number of children is required.
-- `rowType`: The type of row of  .
+- `rowType`: The type of row of `criterion`.
 
 ## See Also
 

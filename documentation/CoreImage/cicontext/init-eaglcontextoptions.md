@@ -27,7 +27,7 @@ The OpenGL ES context must support OpenGL ES 2.0. All drawing performed using th
 ## Parameters
 
 - `eaglContext`: The EAGL context to render to.
-- `options`: A dictionary that contains options for creating a   object. You can pass any of the keys defined in   along with the appropriate value.
+- `options`: A dictionary that contains options for creating a [`CIContext`](cicontext.md) object. You can pass any of the keys defined in [`CIContextOption`](cicontextoption.md) along with the appropriate value.
 
 ## See Also
 

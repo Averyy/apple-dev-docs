@@ -22,7 +22,7 @@ var suspensionDamping: CGFloat { get set }
 
 #### Discussion
 
- measures the tendency of the suspension to oscillate after a shock—in other words, for the vehicle to bounce up and down after running over a bump. The default damping ratio of `2.3` causes the wheel to return to its neutral position quickly after a shock. Values lower than `1.0` result in more oscillation.
+*Damping ratio* measures the tendency of the suspension to oscillate after a shock—in other words, for the vehicle to bounce up and down after running over a bump. The default damping ratio of `2.3` causes the wheel to return to its neutral position quickly after a shock. Values lower than `1.0` result in more oscillation.
 
 ## See Also
 

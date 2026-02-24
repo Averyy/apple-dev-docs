@@ -24,7 +24,7 @@ Enable or disable TLS session resumption.
 
 ## Parameters
 
-- `options`: A   instance.
+- `options`: A `sec_protocol_options_t` instance.
 - `resumption_enabled`: Flag to enable or disable TLS session resumption.
 
 

@@ -71,6 +71,12 @@ This payload allows administrators to specify optional text displayed in the Log
 </plist>
 ```
 
+## Properties
+
+- `AssetTagInformation` (string): The asset tag information for the device, displayed in the Login Window and Lock Screen.
+- `IfLostReturnToMessage` (string): Deprecated. Use `LockScreenFootnote` instead.
+- `LockScreenFootnote` (string): The footnote displayed in the Login Window and Lock Screen.
+
 ## See Also
 
 - [object Declarations](declarations.md)

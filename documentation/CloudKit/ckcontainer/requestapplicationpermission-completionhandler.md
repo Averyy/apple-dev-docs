@@ -30,7 +30,7 @@ This method runs asynchronously, and the system calls your completion handler on
 
 ## Parameters
 
-- `applicationPermission`: The permission to request. This permission applies only to the current container. For a list of possible values, see  .
+- `applicationPermission`: The permission to request. This permission applies only to the current container. For a list of possible values, see [`CKContainer.ApplicationPermissions`](ckcontainer/applicationpermissions.md).
 - `completionHandler`: The handler to execute with the outcome.
 
 ## See Also

@@ -21,7 +21,7 @@ A text node with a value of an empty string is removed. When you process an inpu
 
 ## Parameters
 
-- `preserve`:   if CDATA sections are left alone as text nodes,   otherwise.
+- `preserve`: [`true`](https://developer.apple.com/documentation/Swift/true) if CDATA sections are left alone as text nodes, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

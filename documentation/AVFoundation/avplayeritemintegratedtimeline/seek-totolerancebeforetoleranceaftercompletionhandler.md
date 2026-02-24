@@ -25,7 +25,7 @@ func seek(to time: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime) asyn
 - `time`: A time represented in the integrated time domain.
 - `toleranceBefore`: A tolerance before the target time to allow.
 - `toleranceAfter`: A tolerance after the target time to allow.
-- `completionHandler`: A callback the system invokes after the seek completes. It passes a Boolean value of   if the playhead moved to the new time.
+- `completionHandler`: A callback the system invokes after the seek completes. It passes a Boolean value of `true` if the playhead moved to the new time.
 
 ## See Also
 

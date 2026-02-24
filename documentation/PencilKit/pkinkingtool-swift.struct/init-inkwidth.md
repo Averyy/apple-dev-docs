@@ -20,7 +20,7 @@ init(ink: PKInk, width: CGFloat)
 
 ## Parameters
 
-- `ink`: The shape of the tool, which can be  ,  , or  .
+- `ink`: The shape of the tool, which can be [`PKInkTypeMarker`](pkinktypemarker.md), [`PKInkTypePen`](pkinktypepen.md), or [`PKInkTypePencil`](pkinktypepencil.md).
 - `width`: The width of a line drawn with the tool.
 
 ## See Also

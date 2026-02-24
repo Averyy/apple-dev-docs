@@ -51,9 +51,9 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 
 ###### Known Issues
 
-- Previews in packages can fail when previewing inside of a package that is both the dependent of a package and the dependency of a package when used by an app. (103716225)  Create and select a scheme targeting just that package when using SwiftUI previews for a file in that package.
+- Previews in packages can fail when previewing inside of a package that is both the dependent of a package and the dependency of a package when used by an app. (103716225) **Workaround:** Create and select a scheme targeting just that package when using SwiftUI previews for a file in that package.
 - When a pre-build scheme action (such as compiling a package plugin) encounters an error, the status message at the top of Xcode’s workspace window sometimes doesn’t update.  This leaves the previous status showing, possibly causing confusion if the previous status was “Build Succeeded.” (104306342)
-- Previews in packages can fail when previewing inside of a package that is both the dependent of a package and the dependency of a package when used by an app. (104683595)  Create and select a scheme targeting just that package when using SwiftUI previews for a file in that package.
+- Previews in packages can fail when previewing inside of a package that is both the dependent of a package and the dependency of a package when used by an app. (104683595) **Workaround:** Create and select a scheme targeting just that package when using SwiftUI previews for a file in that package.
 
 ##### C++ Standard Library
 
@@ -175,7 +175,7 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 
 ###### Known Issues
 
-- Repeated Build & Run targeting iOS 16.1 and later simulator runtimes may sometimes result in a hung launch. (101990080)  Reboot the simulator device and reattempt the launch.
+- Repeated Build & Run targeting iOS 16.1 and later simulator runtimes may sometimes result in a hung launch. (101990080) **Workaround:** Reboot the simulator device and reattempt the launch.
 
 ##### Source Control
 
@@ -187,7 +187,7 @@ Xcode 14.3 includes Swift 5.8 and SDKs for iOS 16.4, iPadOS 16.4, tvOS 16.4, wat
 
 ###### Known Issues
 
-- The branch history view may display an incomplete branch history in rare cases. (96024292)  Select a different branch, then, once again, select the desired branch.
+- The branch history view may display an incomplete branch history in rare cases. (96024292) **Workaround:** Select a different branch, then, once again, select the desired branch.
 
 ##### Source Editor
 
@@ -248,7 +248,7 @@ class ViewController {
 
   func dismiss() { ... }
 }
-``` In Swift 5 language modes, implicit `self` is permitted for `weak self` captures in  closures even before `self` is unwrapped. For example, this code compiles successfully in Swift 5 language mode: ```swift
+``` In Swift 5 language modes, implicit `self` is permitted for `weak self` captures in *non-escaping* closures even before `self` is unwrapped. For example, this code compiles successfully in Swift 5 language mode: ```swift
 class ExampleClass {
   func makeArray() -> [String] {
     // `Array.map` takes a non-escaping closure:
@@ -337,10 +337,10 @@ class ExampleClass {
 ###### Known Issues
 
 - When attempting to launch an application in a watchOS UI test under Xcode Cloud, the test may fail with an error message that the application `has not loaded accessibility`. (90334748)
-- Adding an auto-created test plan as part of a Run, Profile, Analyze, or Archive action leads to a crash when the project file is re-opened. (90378346)  Delete the scheme that was modified within the xcshareddata directory.
+- Adding an auto-created test plan as part of a Run, Profile, Analyze, or Archive action leads to a crash when the project file is re-opened. (90378346) **Workaround:** Delete the scheme that was modified within the xcshareddata directory.
 - Swift files aren’t displaying code coverage data after running tests in the coverage report. (104935416)
-- Manually adding, then removing a test plan, to a project that has an auto-created test plan causes the Test Navigator to display “No Test Plan” even though an auto-created test plan is actually backing the project. (105433014)  Close and re-open the project.
-- Sometimes adding a test plan to a scheme results in the test plan not being listed within the scheme or test navigator on a subsequent project opening. (105455341)  Open and close the Scheme Editor to cause Xcode to persist changes to the Scheme’s contents to the .xcscheme file backing it.
+- Manually adding, then removing a test plan, to a project that has an auto-created test plan causes the Test Navigator to display “No Test Plan” even though an auto-created test plan is actually backing the project. (105433014) **Workaround:** Close and re-open the project.
+- Sometimes adding a test plan to a scheme results in the test plan not being listed within the scheme or test navigator on a subsequent project opening. (105455341) **Workaround:** Open and close the Scheme Editor to cause Xcode to persist changes to the Scheme’s contents to the .xcscheme file backing it.
 
 ##### Ui Testing
 
@@ -363,7 +363,7 @@ class ExampleClass {
 
 ###### Known Issues
 
-- Connecting Slack may not complete successfully when using Xcode’s UI to connect. (106153362)  Connect Slack from Xcode Cloud’s web UI.
+- Connecting Slack may not complete successfully when using Xcode’s UI to connect. (106153362) **Workaround:** Connect Slack from Xcode Cloud’s web UI.
 
 ##### Xcode Previews
 

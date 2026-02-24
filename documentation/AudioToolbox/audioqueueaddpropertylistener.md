@@ -30,7 +30,7 @@ Use this function to let your application respond to property value changes in a
 ## Parameters
 
 - `inAQ`: The audio queue that you want to assign a property listener callback to.
-- `inID`: The ID of the property whose changes you want to respond to. See  .
+- `inID`: The ID of the property whose changes you want to respond to. See [`AudioQueuePropertyID`](audioqueuepropertyid.md).
 - `inProc`: The callback to be invoked when the property value changes.
 - `inUserData`: Custom data for the property listener callback.
 

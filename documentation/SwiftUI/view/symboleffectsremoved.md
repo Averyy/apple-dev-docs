@@ -40,7 +40,7 @@ VStack {
 
 ## Parameters
 
-- `isEnabled`: Whether to remove inherited symbol   effects or not.
+- `isEnabled`: Whether to remove inherited symbol effects or not.
 
 ## See Also
 

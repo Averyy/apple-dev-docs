@@ -37,8 +37,8 @@ To calculate the bounding rectangle, this method uses the baseline origin by def
 ## Parameters
 
 - `size`: The width and height constraints to apply when computing the string’s bounding rectangle.
-- `options`: Additional drawing options to apply to the string during rendering. For a list of possible values, see  .
-- `context`: A context object with information about how to adjust the font tracking and scaling information. On return, the specified object contains information about the actual values used to render the string. This parameter may be  .
+- `options`: Additional drawing options to apply to the string during rendering. For a list of possible values, see [`NSStringDrawingOptions`](https://developer.apple.com/documentation/UIKit/NSStringDrawingOptions).
+- `context`: A context object with information about how to adjust the font tracking and scaling information. On return, the specified object contains information about the actual values used to render the string. This parameter may be `nil`.
 
 ## See Also
 

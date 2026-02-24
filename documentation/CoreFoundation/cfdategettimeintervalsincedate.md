@@ -26,8 +26,8 @@ The number of elapsed seconds between `theDate` and `otherDate`. The result is p
 
 ## Parameters
 
-- `theDate`: The date to compare to  .
-- `otherDate`: The date to compare to  .
+- `theDate`: The date to compare to `otherDate`.
+- `otherDate`: The date to compare to `theDate`.
 
 ## See Also
 

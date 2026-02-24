@@ -45,7 +45,7 @@ struct CardDeck: View {
 
 ## Parameters
 
-- `gestureState`: The manipulation gesture state that’s updated by a   manipulation gesture added to a different view.
+- `gestureState`: The manipulation gesture state that’s updated by a manipulation gesture added to a different view.
 
 
 ---

@@ -22,7 +22,7 @@ Implement this method to prepare the app’s state for the [`toExperience`](avex
 
 ## Parameters
 
-- `controller`: The  .
+- `controller`: The `AVExperienceController`.
 - `context`: Contains information about the transition.
 
 ## See Also

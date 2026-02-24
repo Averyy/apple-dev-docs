@@ -82,7 +82,7 @@ For more information, see [`Identifying the cause of common crashes`](identifyin
 
 ##### Pause Automatically When the System Detects a Runtime Issue
 
-Xcode has tools called  to detect several different types of runtime issues: updating the user interface outside the main thread, updating variables from different threads unsafely, accessing addresses unsafely, and executing code that results in undefined behavior. Configure your scheme to enable sanitizers to detect these issues with static analysis at build time. When you disable the sanitizers and your app encounters one of these issues, your app crashes and Xcode may not clearly identify where the issue occurs.
+Xcode has tools called *sanitizers* to detect several different types of runtime issues: updating the user interface outside the main thread, updating variables from different threads unsafely, accessing addresses unsafely, and executing code that results in undefined behavior. Configure your scheme to enable sanitizers to detect these issues with static analysis at build time. When you disable the sanitizers and your app encounters one of these issues, your app crashes and Xcode may not clearly identify where the issue occurs.
 
 ![Xcode displaying an app crashed due to a main thread runtime issue.](https://docs-assets.developer.apple.com/published/c116f770ce869e3713a69387f090ac48/setting-breakpoints-to-pause-your-running-app-10%402x.png)
 

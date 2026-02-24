@@ -39,7 +39,7 @@ For more background, see the first example used in [`PointMark`](pointmark.md) w
 
 ## Parameters
 
-- `x`: The x position.  If   is  , the bar will be centered horizontally by default.
+- `x`: The x position.  If `x` is `nil`, the bar will be centered horizontally by default.
 - `y`: The value plotted with y.
 
 ## See Also

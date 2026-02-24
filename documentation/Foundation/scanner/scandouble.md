@@ -32,7 +32,7 @@ Invoke this method with `NULL` as `doubleValue` to simply scan past a double val
 
 ## Parameters
 
-- `result`: Upon return, contains the scanned value. Contains   or   on overflow, or   on underflow.
+- `result`: Upon return, contains the scanned value. Contains `HUGE_VAL` or `–HUGE_VAL` on overflow, or `0.0` on underflow.
 
 ## See Also
 

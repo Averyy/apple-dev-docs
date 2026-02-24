@@ -45,8 +45,8 @@ The resulting view shows only the portion of the text that lies within the bound
 
 ## Parameters
 
-- `shape`: The clipping shape to use for this view. The   fills   the view’s frame, while maintaining its aspect ratio.
-- `style`: The fill style to use when rasterizing  .
+- `shape`: The clipping shape to use for this view. The `shape` fills the view’s frame, while maintaining its aspect ratio.
+- `style`: The fill style to use when rasterizing `shape`.
 
 ## See Also
 

@@ -8,6 +8,10 @@ A dictionary that specifies the minimum size of the floating window in which Fin
 **Availability**:
 - ProVideo Workflow Extensions 1.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 See [`Designing Workflow Extensions`](https://developer.apple.com/documentation/Professional-Video-Applications/designing-workflow-extensions).

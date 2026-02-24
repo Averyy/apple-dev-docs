@@ -19,9 +19,9 @@ If the user denies access to the application, or if no application is allowed to
 
 ## Parameters
 
-- `assetURL`: An asset URL previously retrieved from an   object.
-- `resultBlock`: For a description of the block, see  .
-- `failureBlock`: For a description of the block, see  .
+- `assetURL`: An asset URL previously retrieved from an [`ALAsset`](alasset.md) object.
+- `resultBlock`: The block to invoke using the asset identified by `assetURL`. For a description of the block, see [`ALAssetsLibraryAssetForURLResultBlock`](alassetslibraryassetforurlresultblock.md).
+- `failureBlock`: The block to invoke if the user denies access to the assets library. For a description of the block, see [`ALAssetsLibraryAccessFailureBlock`](alassetslibraryaccessfailureblock.md).
 
 
 ---

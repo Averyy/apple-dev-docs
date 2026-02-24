@@ -21,7 +21,7 @@ To create a Safari app extension:
 1. Launch Xcode and either open an existing project containing a macOS app or create a new one.
 2. Choose File > New > Target.
 3. From the list of templates in the Application Extension section, select Safari Extension, and click Next.
-4. Enter a product name for your extension, such as .
+4. Enter a product name for your extension, such as *My Extension*.
 5. From the Type menu, choose Safari App Extension.
 6. Make sure that your app project is selected in the Project menu, and that your macOS app target is selected in the Embed in Application menu.
 7. Click Finish.

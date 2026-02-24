@@ -18,6 +18,18 @@ The object that configures various automatic Software Update functionality.
 object SoftwareUpdateSettingsAutomaticActionsObject
 ```
 
+## Properties
+
+- `Download` (string): Specifies whether the user can control automatic downloads of available updates: - `Allowed` - the user can enable or disable automatic downloads.
+- `AlwaysOn` - automatic downloads are always enabled.
+- `AlwaysOff` - automatic downloads are always disabled.
+- `InstallOSUpdates` (string): Specifies whether the user can control automatic installation of available updates: - `Allowed` - the user can enable or disable automatic installation.
+- `AlwaysOn` - automatic installations are always enabled.
+- `AlwaysOff` - automatic installations are always disabled.
+- `InstallSecurityUpdate` (string): Specifies whether the user can control automatic installation of available security updates: - `Allowed` - the user can enable or disable automatic installation.
+- `AlwaysOn` - automatic installations are always enabled.
+- `AlwaysOff` - automatic installations are always disabled.
+
 ## See Also
 
 - [object SoftwareUpdateSettingsBetaObject](softwareupdatesettingsbetaobject.md)

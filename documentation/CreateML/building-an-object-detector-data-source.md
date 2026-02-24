@@ -14,6 +14,9 @@ The general tasks for structuring data for training an object detector are the f
 
 Create ML accepts several data-source types for an object detector. Two major kinds of data are inherent in any labeled data set:
 
+- **Images**: A collection of images that contain objects to train from.
+- **Annotations**: Structured text data that defines the bounding box and labels of each object within the data set.
+
 These kinds of data represent the two steps required to build an annotated data set to train an object detector model. First, collect the images you wish to train on. Second, annotate them with labeled bounding boxes that show the location of the objects you want your model to recognize. Both of these steps, as well as how to combine this data into a data source, are detailed below.
 
 For more information about the object detector data-source types the Create ML API supports, see [`MLObjectDetector`](mlobjectdetector.md).

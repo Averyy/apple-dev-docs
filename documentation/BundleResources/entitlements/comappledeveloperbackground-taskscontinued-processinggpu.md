@@ -9,6 +9,12 @@ The entitlement the system requires for a continuous background task to use the 
 - iOS 26.0+
 - iPadOS 26.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 This entitlement works with [`BGContinuedProcessingTask`](https://developer.apple.com/documentation/BackgroundTasks/BGContinuedProcessingTask), which allows your app’s critical work to complete even when the app goes into the background before the task finishes.

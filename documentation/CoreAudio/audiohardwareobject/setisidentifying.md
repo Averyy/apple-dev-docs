@@ -17,7 +17,7 @@ func setIsIdentifying(_ isIdentifying: Bool) throws
 
 ## Parameters
 
-- `isIdentifying`: A Bool where a value of true indicates that the object’s hardware is   drawing attention to itself. A value of false indicates that this function is turned off.
+- `isIdentifying`: A Bool where a value of true indicates that the object’s hardware is drawing attention to itself. A value of false indicates that this function is turned off.
 
 
 ---

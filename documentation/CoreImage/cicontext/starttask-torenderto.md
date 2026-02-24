@@ -25,8 +25,8 @@ The asynchronous [`CIRenderTask`](cirendertask.md) to render the image to the sp
 
 ## Parameters
 
-- `image`:   to prepare to render.
-- `destination`: The   to which to render.
+- `image`: [`CIImage`](ciimage.md) to prepare to render.
+- `destination`: The [`CIRenderDestination`](cirenderdestination.md) to which to render.
 
 ## See Also
 

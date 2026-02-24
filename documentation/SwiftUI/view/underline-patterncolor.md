@@ -27,9 +27,9 @@ A view where text has a line running along its baseline.
 
 ## Parameters
 
-- `isActive`: A Boolean value that indicates whether underline   is added. The default value is  .
-- `pattern`: The pattern of the line. The default value is  .
-- `color`: The color of the underline. If   is  , the   underline uses the default foreground color.
+- `isActive`: A Boolean value that indicates whether underline is added. The default value is `true`.
+- `pattern`: The pattern of the line. The default value is `solid`.
+- `color`: The color of the underline. If `color` is `nil`, the underline uses the default foreground color.
 
 ## See Also
 

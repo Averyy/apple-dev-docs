@@ -16,7 +16,7 @@ After you’ve measured your app’s size, you may discover that it’s larger t
 
 ##### Identify and Remove Unused Assets
 
-Next, look inside your app’s IPA file to find out if your app contains unused assets or unnecessary files. First follow the steps described in [`Reducing your app’s size`](reducing-your-app-s-size.md) to create a  IPA file for each of your app’s variants. Then do the following:
+Next, look inside your app’s IPA file to find out if your app contains unused assets or unnecessary files. First follow the steps described in [`Reducing your app’s size`](reducing-your-app-s-size.md) to create a *thinned* IPA file for each of your app’s variants. Then do the following:
 
 1. Open Finder and navigate to the IPA file that you want to inspect.
 2. Change the extension of the IPA file to ZIP. (An IPA file is just a ZIP archive that has a particular structure when unzipped.)

@@ -23,7 +23,7 @@ kern_return_t DequeueWithCoalesce(bool *sendDataServiced, IODataQueueClientDeque
 
 ## Parameters
 
-- `sendDataServiced`: A Boolean value that indicates that this method would have sent a notification. Initialize the value to  , and then make one or more calls to this method. If the value is   after all of those calls, call the   method yourself to deliver the notification.
+- `sendDataServiced`: A Boolean value that indicates that this method would have sent a notification. Initialize the value to `false`, and then make one or more calls to this method. If the value is `true` after all of those calls, call the [`SendDataServiced`](iodataqueuedispatchsource/senddataserviced.md) method yourself to deliver the notification.
 - `callback`: The callback that you use to process the dequeued data.
 
 ## See Also

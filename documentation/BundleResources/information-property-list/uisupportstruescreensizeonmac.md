@@ -8,6 +8,10 @@ A Boolean value that indicates whether your iPad app supports arbitrary screen s
 **Availability**:
 - macOS 12.1+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 To declare support for arbitrary screen sizes and resolutions when running your iPad app in macOS, add this key to your app’s `Info.plist` file and set its value to [`true`](https://developer.apple.com/documentation/Swift/true). This key has no effect when:

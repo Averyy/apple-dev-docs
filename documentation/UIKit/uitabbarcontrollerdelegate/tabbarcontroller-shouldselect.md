@@ -28,7 +28,7 @@ The tab bar controller calls this method in response to the user tapping a tab b
 
 ## Parameters
 
-- `tabBarController`: The tab bar controller containing  .
+- `tabBarController`: The tab bar controller containing `viewController`.
 - `viewController`: The view controller belonging to the tab that was tapped by the user.
 
 ## See Also

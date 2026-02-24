@@ -27,7 +27,7 @@ Generally, this method will be called from [`keyDown(with:)`](nsresponder/keydow
 
 - `outlineView`: The outline view that sent the message.
 - `event`: The event that caused the message to be sent.
-- `searchString`: The string for which searching is to proceed. The search string is   if no type select has begun.
+- `searchString`: The string for which searching is to proceed. The search string is `nil` if no type select has begun.
 
 ## See Also
 

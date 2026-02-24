@@ -11,6 +11,12 @@ A Boolean value that indicates whether the process opts in to type-aware memory 
 - macOS 26.0+
 - visionOS 26.0+
 
+
+
+**Type**: boolean
+
+**Default**: `true`
+
 #### Discussion
 
 When you add this entitlement to your app or extension, the system uses the type-aware memory allocator for memory your app or extension requests. In addition to this entitlement, set the build settings `CLANG_ENABLE_C_TYPED_ALLOCATOR_SUPPORT` and `CLANG_ENABLE_CPLUSPLUS_TYPED_ALLOCATOR_SUPPORT` to `YES`, so the compiler rewrites memory allocations in your code to use the type-aware allocator.

@@ -28,7 +28,8 @@ Calls to this method must be balanced with calls to [`endSession()`](tksmartcard
 
 ## Parameters
 
-- `reply`: The   object is created in the   domain with a code in the   enumeration.
+- `reply`: - **success**: Whether the session could be established successfully.
+- **error**: Contains information about the error preventing the transaction from being established. The `NSError` object is created in the [`TKErrorDomain`](tkerrordomain.md) domain with a code in the [`TKError.Code`](tkerror/code.md) enumeration.
 
 ## See Also
 

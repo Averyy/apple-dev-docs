@@ -25,7 +25,8 @@ The session calls `resultHandler` on the dispatch queue that you provided when c
 ## Parameters
 
 - `apdu`: An application protocol data unit to send to the tag.
-- `resultHandler`: A handler that the reader session invokes after the operation completes. The handler receives a   with the cases:
+- `resultHandler`: A handler that the reader session invokes after the operation completes. The handler receives a [`Result`](https://developer.apple.com/documentation/Swift/Result) with the cases: - **`success`**: A instance of [`NFCISO7816ResponseAPDU`](nfciso7816responseapdu.md) containing the response from the tag.
+- **`failure`**: An [`Error`](https://developer.apple.com/documentation/Swift/Error) object indicating that a communication issue with the tag occurred.
 
 ## See Also
 

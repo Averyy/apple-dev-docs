@@ -13,6 +13,10 @@ The document file types the app supports.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: string 
+
 ## See Also
 
 - [CFBundleTypeIconFile](information-property-list/cfbundledocumenttypes/cfbundletypeiconfile.md)

@@ -26,9 +26,9 @@ Call this method to add a shape to the array of clip shapes that the context use
 
 ## Parameters
 
-- `opacity`: A value that SwiftUI uses to multiply the alpha channel of   the rasterized layer that you define in the   closure. The   alpha values that result define the clip shape.
-- `options`: A set of options that tell SwiftUI how to interpret the   clip shape. For example, you can invert the clip   shape by setting the   option.
-- `content`: A closure that receives as input a new  ,   which represents a new transparency layer. The alpha channel of   content that you draw into this context, multiplied by the    parameter, defines the clip shape.
+- `opacity`: A value that SwiftUI uses to multiply the alpha channel of the rasterized layer that you define in the `content` closure. The alpha values that result define the clip shape.
+- `options`: A set of options that tell SwiftUI how to interpret the clip shape. For example, you can invert the clip shape by setting the [`inverse`](graphicscontext/clipoptions/inverse.md) option.
+- `content`: A closure that receives as input a new [`GraphicsContext`](graphicscontext.md), which represents a new transparency layer. The alpha channel of content that you draw into this context, multiplied by the `opacity` parameter, defines the clip shape.
 
 ## See Also
 

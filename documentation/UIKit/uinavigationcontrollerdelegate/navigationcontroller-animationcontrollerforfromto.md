@@ -26,12 +26,12 @@ The animator object responsible for managing the transition animations, or `nil`
 
 Implement this delegate method when you want to provide a custom animated transition between view controllers as they are added to or removed from the navigation stack. The object you return should be capable of configuring and performing noninteractive animations for the specified view controllers for the specified type of operation over a fixed period of time.
 
-If you want to allow the user to perform interactive transitions, you must  implement the [`navigationController(_:interactionControllerFor:)`](uinavigationcontrollerdelegate/navigationcontroller(_:interactioncontrollerfor:).md) method.
+If you want to allow the user to perform interactive transitions, you must *also* implement the [`navigationController(_:interactionControllerFor:)`](uinavigationcontrollerdelegate/navigationcontroller(_:interactioncontrollerfor:).md) method.
 
 ## Parameters
 
 - `navigationController`: The navigation controller whose navigation stack is changing.
-- `operation`: The type of transition operation that is occurring. For a list of possible values, see the   constants.
+- `operation`: The type of transition operation that is occurring. For a list of possible values, see the [`UINavigationController.Operation`](uinavigationcontroller/operation.md) constants.
 - `fromVC`: The currently visible view controller.
 - `toVC`: The view controller that should be visible at the end of the transition.
 

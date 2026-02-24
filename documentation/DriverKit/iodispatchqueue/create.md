@@ -28,8 +28,8 @@ Creates a new dispatch queue object. All queues are currently serial, executing 
 ## Parameters
 
 - `name`: The name of the queue.
-- `options`: No options are currently defined. Specify   for this parameter.
-- `priority`: No priorities are currently defined. Specify   for this parameter.
+- `options`: No options are currently defined. Specify `0` for this parameter.
+- `priority`: No priorities are currently defined. Specify `0` for this parameter.
 - `queue`: The created queue.
 
 ## See Also

@@ -6,6 +6,8 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
+---
+
 #### Overview
 
 Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big Sur 11.3. The Xcode 13 release supports on-device debugging for iOS 9 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 13 requires a Mac running macOS 11.3 or later.
@@ -18,7 +20,7 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 
 - You can now use `cktool` on the command line to interact with your [`CloudKit`](https://developer.apple.com/documentation/CloudKit) database schema and records. For a list of available commands, run `man cktool` or `xcrun cktool --help`. (68114031)
 - You can now use `TextureConverter` on the command line to compress textures to all Metal compressed texture formats. For a list of available commands, run `xcrun TextureConverter --help`. (70481436)
-- The Xcode 13’s XIP archive is now approximately 15% smaller for the same content. You can expand the archive using Archive Utility, or with `xip` on the command line. : Other methods of expanding the archive may produce a broken Xcode app. (78714333)
+- The Xcode 13’s XIP archive is now approximately 15% smaller for the same content. You can expand the archive using Archive Utility, or with `xip` on the command line. *Note*: Other methods of expanding the archive may produce a broken Xcode app. (78714333)
 
 ###### Resolved Issues
 
@@ -39,7 +41,7 @@ static NSNumber * const answerToLife = @42
 plutil -convert objc SomePlist.plist
 ``` To generate an accompanying `.h` header file, add the optional `-header` flag, as shown in the following command: ```shell
 plutil -convert objc -header SomePlist.plist
-``` : In constant dictionaries, you can only use an `NSString` as a key. Using any other type results in an error: ```objc
+``` **Note**: In constant dictionaries, you can only use an `NSString` as a key. Using any other type results in an error: ```objc
 static NSDictionary * const myConstantDictionary = @{ @42 : @@"answer to life" }; // This throws an error, the initializer element isn't a compile-time constant.
 ```
 - You can now configure the `C++20` and `GNU++20` C++ language dialects in Xcode’s build settings. (50900425)
@@ -105,7 +107,7 @@ HEADER_SEARCH_PATHS = $(SRCROOT)/include \
 ###### Known Issues
 
 - Create ML app machine learning model training performance may be unexpectedly reduced when running in macOS Monterey. (82415543)
-- Quitting the Create ML app or closing a project while training is still running may result in the loss of training progress. (82460651) : Pause training before quitting the app or closing a project.
+- Quitting the Create ML app or closing a project while training is still running may result in the loss of training progress. (82460651) **Workaround**: Pause training before quitting the app or closing a project.
 
 ##### Create Ml
 
@@ -335,7 +337,7 @@ HEADER_SEARCH_PATHS = $(SRCROOT)/include \
 
 ###### Known Issues
 
-- Importing the TabularData framework in an Xcode Playground targeting macOS may result in missing symbols. (77162151) : If your use case permits, set the playground’s platform to iOS.
+- Importing the TabularData framework in an Xcode Playground targeting macOS may result in missing symbols. (77162151) **Workaround**: If your use case permits, set the playground’s platform to iOS.
 - Xcode Playgrounds don’t support Swift Concurrency language constructs. (79408099)
 
 ##### Previews
@@ -390,19 +392,19 @@ HEADER_SEARCH_PATHS = $(SRCROOT)/include \
 
 ###### Known Issues
 
-- Running `notarytool submit` with large `.zip` files may result in `notarytool` permanently hanging. (78513932) : Submit your app as a `.pkg` or `.dmg`, submit several small `.zip` files, or use `altool`.
+- Running `notarytool submit` with large `.zip` files may result in `notarytool` permanently hanging. (78513932) **Workaround**: Submit your app as a `.pkg` or `.dmg`, submit several small `.zip` files, or use `altool`.
 - If you don’t have permission to use a cloud certificate’s type, signing with that certificate fails and presents an error of “<VALID_CERT_TYPE>_Managed is unknown”, even though the certificate type is known. (78538221)
-- Xcode may incorrectly try to reuse a build number during the distribution workflow when App Store Connect rejects a build after upload. (78838509) : Manually increment your app’s build number before rebuilding.
-- Xcode doesn’t correctly re-sign watchOS apps when exporting them using local signing from the Organizer in macOS 11. (82944652) : Export the app using cloud signing, or export in macOS 12.
+- Xcode may incorrectly try to reuse a build number during the distribution workflow when App Store Connect rejects a build after upload. (78838509) **Workaround**: Manually increment your app’s build number before rebuilding.
+- Xcode doesn’t correctly re-sign watchOS apps when exporting them using local signing from the Organizer in macOS 11. (82944652) **Workaround**: Export the app using cloud signing, or export in macOS 12.
 
 ##### Simulator
 
 ###### Known Issues
 
-- Shazam Catalog recognition doesn’t work in simulated devices. (77564423) : Use a physical device.
-- [`MusicKit`](https://developer.apple.com/documentation/MusicKit) functionality, such as loading content with music requests, doesn’t work in simulated devices. (78559381) : Test your app’s MusicKit functionality on a physical device.
-- Simulated iPhone mini devices might incorrectly render partial screen updates resulting in visual glitches. (82423740) (FB9569039) : Use a non-mini simulated device.
-- Some content may disappear or visual artifacts may appear when the content updates in Always On mode in simulated watchOS devices. (82732227) : Test on device to confirm Always On behavior.
+- Shazam Catalog recognition doesn’t work in simulated devices. (77564423) **Workaround**: Use a physical device.
+- [`MusicKit`](https://developer.apple.com/documentation/MusicKit) functionality, such as loading content with music requests, doesn’t work in simulated devices. (78559381) **Workaround**: Test your app’s MusicKit functionality on a physical device.
+- Simulated iPhone mini devices might incorrectly render partial screen updates resulting in visual glitches. (82423740) (FB9569039) **Workaround**: Use a non-mini simulated device.
+- Some content may disappear or visual artifacts may appear when the content updates in Always On mode in simulated watchOS devices. (82732227) **Workaround**: Test on device to confirm Always On behavior.
 
 ##### Source Control
 
@@ -417,15 +419,15 @@ HEADER_SEARCH_PATHS = $(SRCROOT)/include \
 
 ###### Known Issues
 
-- Xcode’s pull request feature doesn’t work with forked repositories. You can’t submit pull requests to an upstream repository. (60009682) : Submit pull requests between branches within a single repository instead.
+- Xcode’s pull request feature doesn’t work with forked repositories. You can’t submit pull requests to an upstream repository. (60009682) **Workaround**: Submit pull requests between branches within a single repository instead.
 - When adding a comment to a pull request’s activity view, the layout sometimes visibly re-draws, making the view jump. (75595247)
-- Deleting a pull request from its activity view may not update locally to display the deletion. However, the deletion does take place on the server. (76704508) : Close the pull request view. You can also confirm the pull request deletion on your source control provider’s web interface.
+- Deleting a pull request from its activity view may not update locally to display the deletion. However, the deletion does take place on the server. (76704508) **Workaround**: Close the pull request view. You can also confirm the pull request deletion on your source control provider’s web interface.
 - Creating pull request comments for lines outside of diffs throws an error. (78275800)
-- Xcode may offer an option to “decline” a pull request hosted on GitHub. This action may not be possible or allowed on a given repository. (78475833) : Use the GitHub website to close the pull request rather than declining it.
+- Xcode may offer an option to “decline” a pull request hosted on GitHub. This action may not be possible or allowed on a given repository. (78475833) **Workaround**: Use the GitHub website to close the pull request rather than declining it.
 - PR code comments may occasionally clip in the PR Activity View. (78484455)
-- When multiple remotes are configured on a repository, the target branch selector in a pull request may not populate with available branches. (78491019) : Remove remotes other than `origin`.
-- Adding commits to a PR in Xcode doesn’t update the Changes navigator until you re-launch Xcode. (81229110) : Re-launch Xcode.
-- Creating a new project with a Git repository sometimes fails to initialize a repo. (81874148) : Remove the hidden .git folder from the root level of the project folder, add author name and email address in the Source Control preferences tab in Xcode, and create a new Git repository from the Source Control menu in Xcode.
+- When multiple remotes are configured on a repository, the target branch selector in a pull request may not populate with available branches. (78491019) **Workaround**: Remove remotes other than `origin`.
+- Adding commits to a PR in Xcode doesn’t update the Changes navigator until you re-launch Xcode. (81229110) **Workaround**: Re-launch Xcode.
+- Creating a new project with a Git repository sometimes fails to initialize a repo. (81874148) **Workaround**: Remove the hidden .git folder from the root level of the project folder, add author name and email address in the Source Control preferences tab in Xcode, and create a new Git repository from the Source Control menu in Xcode.
 - If you close a project with an active and published PR while in a PR view and then re-open the project quickly, Xcode may display an error dialog. (82401004)
 
 ##### Source Editor
@@ -635,7 +637,7 @@ foo()  // No 'try' needed.
 ``` However, the next example was accepted as well, even though the call to `foo()` can throw and the call site isn’t marked with `try`: ```swift
 func foo(_: (() throws -> ())? = { throw myError }) rethrows {}
 foo()  // 'try' *should* be required here.
-``` In the new behavior, the first example is accepted because the default argument is syntactically written as `nil`, which is known not to throw. The second example is correctly rejected because it’s missing a `try`, since the default argument  throw.
+``` In the new behavior, the first example is accepted because the default argument is syntactically written as `nil`, which is known not to throw. The second example is correctly rejected because it’s missing a `try`, since the default argument *can* throw.
 - Swift now supports Task local values. Using the `@TaskLocal` wrapper API, you can now bind and access values related to a running Task. The values are carried implicitly along with the Task’s execution and are inherited by child tasks. ([`SE-0311`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0311-task-locals.md), 78269874)
 - Swift has significantly restructured the Task API to account for changes to the design in [`SE-0304`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0304-structured-concurrency.md). (78269970)
 - Declarations inside an actor that would normally be actor-isolated can explicitly become non-isolated using the `nonisolated` keyword. You can use declarations to conform to synchronous protocol requirements. (78331401) For example: ```swift
@@ -750,15 +752,15 @@ func h(actor: MyActor) async {
 ###### Known Issues
 
 - Swift Concurrency requires a deployment target of macOS 12, iOS 15, tvOS 15, and watchOS 8 or newer. (70738378)
-- Swift libraries may fail to build for iOS targets that use armv7. (74120874) : Increase the platform dependency of the package to [`v12`](https://developer.apple.com/documentation/PackageDescription/SupportedPlatform/IOSVersion/v12) or later.
+- Swift libraries may fail to build for iOS targets that use armv7. (74120874) **Workaround**: Increase the platform dependency of the package to [`v12`](https://developer.apple.com/documentation/PackageDescription/SupportedPlatform/IOSVersion/v12) or later.
 - `os_activity` APIs don’t track activity in Swift `async` code, and may produce incomplete information about that activity. (76080222)
 - Swift tasks won’t have their priority escalated in response to awaiting on their handles. (76127624)
 - The Swift compiler might crash when declaring an extension of a generic struct, enum, or class if the type has a `where` clause with a same-type requirement, and the extension has a `where` clause that constrains a generic parameter to a concrete type. (79570734)
-- Swift libraries depending on Combine may fail to build for targets including armv7 and i386 architectures. (82183186, 82189214) : Use an updated version of the library that isn’t impacted (if available) or remove armv7 and i386 support (for example, increase the deployment target of the library to iOS 11 or higher).
-- In macOS apps, the `free` function takes a non-optional argument, which might break existing code. (83133387) (FB9626044) : Define a wrapper for `free` that forwards the call to the SDK’s `free` only on non-optional arguments. For example: ```None
+- Swift libraries depending on Combine may fail to build for targets including armv7 and i386 architectures. (82183186, 82189214) **Workaround**: Use an updated version of the library that isn’t impacted (if available) or remove armv7 and i386 support (for example, increase the deployment target of the library to iOS 11 or higher).
+- In macOS apps, the `free` function takes a non-optional argument, which might break existing code. (83133387) (FB9626044) **Workaround**: Define a wrapper for `free` that forwards the call to the SDK’s `free` only on non-optional arguments. For example: ```None
 if let value = value { Darwin.free(value) }
 ```
-- Availability checks in iPhone and iPad apps on a Mac with Apple silicon always return `true`. This causes iOS apps running in macOS 11 Big Sur to see iOS 15 APIs as available, resulting in crashes. This only affects apps available in the Mac App Store built with the “My Mac (Designed for iPhone)” or “My Mac (Designed for iPad)” run destination. It doesn’t affect Mac Catalyst apps. (83378814) : Use the following code to check for iOS 15 availability: ```None
+- Availability checks in iPhone and iPad apps on a Mac with Apple silicon always return `true`. This causes iOS apps running in macOS 11 Big Sur to see iOS 15 APIs as available, resulting in crashes. This only affects apps available in the Mac App Store built with the “My Mac (Designed for iPhone)” or “My Mac (Designed for iPad)” run destination. It doesn’t affect Mac Catalyst apps. (83378814) **Workaround**: Use the following code to check for iOS 15 availability: ```None
         if #available(iOS 15, *), ProcessInfo.processInfo.operatingSystemVersion.majorVersion >= 15 {
 ```
 
@@ -792,7 +794,7 @@ func test(obj: MyStruct) {
 
 - Improved the diagnostic information that Swift Package Manager returns when file paths in package manifests are invalid. Specifying a nonexistent or invalid path for a source file or resource now produces an error. (60708059, 60745311, 64176116)
 - Improved target-based dependency resolution. A more intuitive `.product(name:, package:)` syntax is now accepted, where `package` is the package name as defined by the package URL. (65048461)
-- Linking Swift packages from application extension targets or watchOS applications no longer emits unresolvable warnings about linking to libraries not safe for use in application extensions. This means that code referencing APIs annotated as unavailable for use in app extensions must now themselves be annotated as unavailable for use in application extensions, in order to allow that code to be used in both apps  app extensions. (66928265)
+- Linking Swift packages from application extension targets or watchOS applications no longer emits unresolvable warnings about linking to libraries not safe for use in application extensions. This means that code referencing APIs annotated as unavailable for use in app extensions must now themselves be annotated as unavailable for use in application extensions, in order to allow that code to be used in both apps *and* app extensions. (66928265)
 - Fixed an issue that caused debug symbols to be removed from libraries that were built from Swift packages, making crash logs downloaded from TestFlight difficult to debug if their contents referenced those libraries. (67310056)
 - Xcode no longer passes testing search paths to all targets. With this change, Swift package library targets (but not test targets) which import `XCTest` or `StoreKitTest` must now explicitly reference those frameworks in the package manifest using linker settings: ```swift
 linkerSettings: [.linkedFramework("XCTest")]
@@ -833,7 +835,7 @@ linkerSettings: [.linkedFramework("XCTest")]
 - Test timeouts are now enabled by default in all newly-created test plans. Test plans created by converting a scheme require manually enabling test timeouts to preserve the existing behavior. (64861872)
 - [`XCUIAutomation`](https://developer.apple.com/documentation/XCUIAutomation) now support using the `swipeUp`, `swipeDown`, `swipeLeft`, and `swipeRight` family of methods in macOS. (65229961)
 - Performance tests now support collecting glitch metrics when using the `XCTOSSignpostMetric` for an animation `os_signpost` interval in macOS. (69345790)
-- XCTest now supports test repetition. (69470788, 71428753, 72078437) There are three test repetition modes. Up Until Maximum Repetitions repeats a test up to the specified maximum regardless of the status. Until Failure repeats a test until it fails. Retry on Failure retries a test until it succeeds. Enable test repetition in your test plan, `xcodebuild`, or by running your test from the test diamond by Control-clicking and selecting Run  Repeatedly to bring up the test repetition dialog. When using `xcodebuild`, pass `-test-iterations` with a number to run a test a fixed number of times, or combine it with `-retry-tests-on-failure` or `-run-tests-until-failure` to use one of the other stopping conditions. For example, to run your test with repetition from the command line, start with the base `xcodebuild` command to run your test, and add the flags `-test-iterations` set to 100 and `-run-tests-until-failure`: ```shell
+- XCTest now supports test repetition. (69470788, 71428753, 72078437) There are three test repetition modes. Up Until Maximum Repetitions repeats a test up to the specified maximum regardless of the status. Until Failure repeats a test until it fails. Retry on Failure retries a test until it succeeds. Enable test repetition in your test plan, `xcodebuild`, or by running your test from the test diamond by Control-clicking and selecting Run *<testName>* Repeatedly to bring up the test repetition dialog. When using `xcodebuild`, pass `-test-iterations` with a number to run a test a fixed number of times, or combine it with `-retry-tests-on-failure` or `-run-tests-until-failure` to use one of the other stopping conditions. For example, to run your test with repetition from the command line, start with the base `xcodebuild` command to run your test, and add the flags `-test-iterations` set to 100 and `-run-tests-until-failure`: ```shell
 xcodebuild test -project MyProject.xcodeproj -scheme MyProject -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.0' -test-iterations 100 -run-tests-until-failure
 ``` In a Test Plan, configure your test plan to use test repetitions and go to the test plan. Click Configurations, then under Test Execution, set Test Repetition Mode and also set Maximum Test Repetitions. The options for Test Repetition Mode are: Until Failure, Retry on Failure, and Up until Maximum Repetitions. Maximum Test Repetitions must be a positive integer. Setting test repetitions with `xcodebuild` or the test diamond overrides any test plan setting.
 - A new transparent screen overlay indicates the activity while automation is running, and displays text describing how to stop the automation. If you interact with the device while automation is running, the overlay fades away to allow you to better see the screen contents. This new behavior is present in macOS 12, iOS 15, tvOS 15, and watchOS 8. In macOS, or when using automation on devices with a password, you must run the automation from an admin account, and must authenticate to authorize the automation. This authorization is cached for eight hours. You no longer need to authorize the Xcode Helper app to use Accessibility when running in macOS 12. (71297492)
@@ -876,13 +878,13 @@ func test_customIssueMatcher() {
 
 ###### Known Issues
 
-- Attempting to run unit or UI tests for Watch apps crashes Xcode when the Run scheme action’s executable is set to None. (74928871) : Set the Run scheme action’s executable to a valid WatchKit app target built by the scheme.
-- UI Test Recording fails to generate code for iOS Simulator targets if recording starts after code execution has stopped at a user-defined breakpoint. (77924295) : With no breakpoint set, place your cursor within a test method and press the record button.
+- Attempting to run unit or UI tests for Watch apps crashes Xcode when the Run scheme action’s executable is set to None. (74928871) **Workaround**: Set the Run scheme action’s executable to a valid WatchKit app target built by the scheme.
+- UI Test Recording fails to generate code for iOS Simulator targets if recording starts after code execution has stopped at a user-defined breakpoint. (77924295) **Workaround**: With no breakpoint set, place your cursor within a test method and press the record button.
 - UI Test Recording fails to generate code for targets in a simulated watchOS device. (78024399)
-- UI Test Recording fails on watchOS devices, and presents an alert saying “Unable to install .” (78024956)
-- Swift async test methods aren’t executed on the main queue as non-async test methods are. (78176413) : Add the `@MainActor` attribute to affected async test methods or classes.
-- UI tests may time out and display the error “Timed out while requesting automation session for ” while starting in watchOS and tvOS simulators that weren’t already booted when the test action initiated. (78475446)
-- You can only call XCTest UI automation APIs (such as `XCUIApplication`) from the main thread. XCTest UI automation APIs might fail when used in `async` Swift test methods that don’t include `@MainActor`. (80386414) : Include `@MainActor` on affected test methods or classes.
+- UI Test Recording fails on watchOS devices, and presents an alert saying “Unable to install *<watch app name>*.” (78024956)
+- Swift async test methods aren’t executed on the main queue as non-async test methods are. (78176413) **Workaround**: Add the `@MainActor` attribute to affected async test methods or classes.
+- UI tests may time out and display the error “Timed out while requesting automation session for *<bundle ID>*” while starting in watchOS and tvOS simulators that weren’t already booted when the test action initiated. (78475446)
+- You can only call XCTest UI automation APIs (such as `XCUIApplication`) from the main thread. XCTest UI automation APIs might fail when used in `async` Swift test methods that don’t include `@MainActor`. (80386414) **Workaround**: Include `@MainActor` on affected test methods or classes.
 
 ## See Also
 

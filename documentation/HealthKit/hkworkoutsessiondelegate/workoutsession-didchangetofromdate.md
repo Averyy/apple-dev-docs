@@ -29,8 +29,8 @@ For a list of possible session states, see [`HKWorkoutSessionState`](hkworkoutse
 ## Parameters
 
 - `workoutSession`: The workout session that changed.
-- `toState`: The session’s new state. For a list of possible values, see  .
-- `fromState`: The session’s previous state. For a list of possible values, see  .
+- `toState`: The session’s new state. For a list of possible values, see [`HKWorkoutSessionState`](hkworkoutsessionstate.md).
+- `fromState`: The session’s previous state. For a list of possible values, see [`HKWorkoutSessionState`](hkworkoutsessionstate.md).
 - `date`: A date object indicating when the state change occurred.
 
 ## See Also

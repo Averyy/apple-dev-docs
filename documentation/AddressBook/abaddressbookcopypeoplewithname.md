@@ -23,7 +23,7 @@ Array containing person records (`ABRecordRef` objects) that match `name`.
 ## Parameters
 
 - `addressBook`: The address book in which to search.
-- `name`: The search term. Examples:  ,  ,  .
+- `name`: The search term. Examples: `"Mary"`, `"Smi"`, `"Hu Yan"`.
 
 ## See Also
 

@@ -28,7 +28,7 @@ Additional image formats can be saved by using the `NSBitmapImageRep` method [`r
 
 ## Parameters
 
-- `comp`: The type of compression to use. For a list of values, see the constants in  .
+- `comp`: The type of compression to use. For a list of values, see the constants in `NSBitmapImageRep`.
 - `factor`: Provides a hint for compression types that implement variable compression ratios. Currently, only JPEG compression uses a compression factor.
 
 ## See Also

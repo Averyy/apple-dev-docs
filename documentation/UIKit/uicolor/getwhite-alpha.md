@@ -29,8 +29,8 @@ If the color is in a compatible color space, it converts into grayscale format a
 
 ## Parameters
 
-- `white`: On return, the grayscale component of the color object. On applications linked for iOS 10 or later, an extended range gray color space specifies the grayscale component and can have any value. Values between   and   are inside the sRGB color gamut. On earlier versions of iOS, the specified value is always between   and  .
-- `alpha`: On return, the opacity component of the color object, specified as a value between   and  .
+- `white`: On return, the grayscale component of the color object. On applications linked for iOS 10 or later, an extended range gray color space specifies the grayscale component and can have any value. Values between `0.0` and `1.0` are inside the sRGB color gamut. On earlier versions of iOS, the specified value is always between `0.0` and `1.0`.
+- `alpha`: On return, the opacity component of the color object, specified as a value between `0.0` and `1.0`.
 
 ## See Also
 

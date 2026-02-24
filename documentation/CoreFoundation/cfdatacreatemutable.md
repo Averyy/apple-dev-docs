@@ -30,8 +30,8 @@ This function creates an empty (that is, content-less) CFMutableData object. You
 
 ## Parameters
 
-- `allocator`: The CFAllocator object to be used to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `capacity`: Pass   to specify that the maximum capacity is not limited. The value must not be negative.
+- `allocator`: The CFAllocator object to be used to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `capacity`: The maximum number of bytes that the CFData object can contain. The CFData object starts empty and can grow to contain this number of values (and it can have less). Pass `0` to specify that the maximum capacity is not limited. The value must not be negative.
 
 ## See Also
 

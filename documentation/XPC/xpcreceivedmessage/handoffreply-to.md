@@ -32,7 +32,7 @@ You can only call this method from the context of a message handler closure, or 
 ## Parameters
 
 - `queue`: The dispatch queue where message processing continues. The queue must be an immutible queue hierarchy.
-- `continuation`: The closure to perform on  .
+- `continuation`: The closure to perform on `queue`.
 
 ## See Also
 

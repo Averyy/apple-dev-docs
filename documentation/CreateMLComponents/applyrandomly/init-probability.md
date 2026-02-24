@@ -22,7 +22,7 @@ init<Input>(probability: Double = 0.5, @AugmentationBuilder<Input> _ augmentatio
 
 ## Parameters
 
-- `probability`: The probability of applying the transformation. Must be greater than or equal to 0 and less   than or equal to 1, the default value is 0.5.
+- `probability`: The probability of applying the transformation. Must be greater than or equal to 0 and less than or equal to 1, the default value is 0.5.
 - `augmentation`: The transformer to apply randomly.
 
 

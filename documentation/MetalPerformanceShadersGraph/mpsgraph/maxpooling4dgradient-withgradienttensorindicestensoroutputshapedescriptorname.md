@@ -30,7 +30,7 @@ With this API MPSGraph computes the max-pooling gradient efficiently by reusing 
 ## Parameters
 
 - `gradient`: An input gradient tensor.
-- `indices`: Indices tensor returned from  .
+- `indices`: Indices tensor returned from [`maxPooling4DReturnIndices(_:descriptor:name:)`](mpsgraph/maxpooling4dreturnindices(_:descriptor:name:).md).
 - `outputShape`: The shape of the destination gradient.
 - `descriptor`: A pooling operation descriptor that specifies pooling window sizes, strides, dilation rates, paddings and layouts.
 - `name`: The name for the operation.

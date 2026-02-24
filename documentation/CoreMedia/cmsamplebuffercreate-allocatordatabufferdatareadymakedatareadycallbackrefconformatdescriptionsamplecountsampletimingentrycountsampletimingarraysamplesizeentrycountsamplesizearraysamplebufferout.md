@@ -92,18 +92,18 @@ Example of usage for uncompressed non-interleaved audio:
 
 ## Parameters
 
-- `allocator`: The allocator to use for allocating the   object. Pass   to use the default allocator.
-- `dataBuffer`:   for the media data. This can be  , a   with no backing memory, a   with backing memory but no data yet, or a   that already contains the media data. If   contains the media data,   should be  . The Boolean   should also be   if the   is   and   is 0.
+- `allocator`: The allocator to use for allocating the `CMSampleBuffer` object. Pass `kCFAllocatorDefault` to use the default allocator.
+- `dataBuffer`: `CMBlockBuffer` for the media data. This can be `NULL`, a `CMBlockBuffer` with no backing memory, a `CMBlockBuffer` with backing memory but no data yet, or a `CMBlockBuffer` that already contains the media data. If `CMBlockBuffer` contains the media data, `dataReady` should be `true`. The Boolean `dataReady` should also be `true` if the `dataBuffer` is `Null` and `numSamples` is 0.
 - `dataReady`: Indicates whether or not the block buffer already contains the media data.
-- `makeDataReadyCallback`: Callback that   should call to make the data ready. Can be  .
-- `makeDataReadyRefcon`: Refcon   should pass to the callback.
-- `formatDescription`: A description of the media data’s format. Can be  .
-- `numSamples`: Number of samples in the  . Can be zero.
-- `numSampleTimingEntries`: Number of entries in  . Must be 0, 1, or  .
-- `sampleTimingArray`: Array of   structs, one struct per sample. If all samples have the same duration and are in presentation order, you can pass a single   struct with duration set to the duration of one sample,   set to the presentation time of the numerically earliest sample, and   set to  . Behavior is undefined if samples in a   (or even in multiple buffers in the same stream) have the same  . Can be  .
-- `numSampleSizeEntries`: Number of entries in  . Must be 0, 1, or  .
-- `sampleSizeArray`: Array of size entries, one entry per sample. If all samples have the same size, you can pass a single size entry containing the size of one sample. Can be  . Must be   if the samples are non-contiguous in the buffer (for example, non-interleaved audio, where the channel values for a single sample are scattered through the buffer).
-- `sampleBufferOut`: On output, points to the newly created  .
+- `makeDataReadyCallback`: Callback that `CMSampleBufferMakeDataReady` should call to make the data ready. Can be `NULL`.
+- `makeDataReadyRefcon`: Refcon `CMSampleBufferMakeDataReady` should pass to the callback.
+- `formatDescription`: A description of the media data’s format. Can be `NULL`.
+- `numSamples`: Number of samples in the `CMSampleBuffer`. Can be zero.
+- `numSampleTimingEntries`: Number of entries in `sampleTimingArray`. Must be 0, 1, or `numSamples`.
+- `sampleTimingArray`: Array of `CMSampleTimingInfo` structs, one struct per sample. If all samples have the same duration and are in presentation order, you can pass a single `CMSampleTimingInfo` struct with duration set to the duration of one sample, `presentationTimeStamp` set to the presentation time of the numerically earliest sample, and `decodeTimeStamp` set to `kCMTimeInvalid`. Behavior is undefined if samples in a `CMSampleBuffer` (or even in multiple buffers in the same stream) have the same `presentationTimeStamp`. Can be `NULL`.
+- `numSampleSizeEntries`: Number of entries in `sampleSizeArray`. Must be 0, 1, or `numSamples`.
+- `sampleSizeArray`: Array of size entries, one entry per sample. If all samples have the same size, you can pass a single size entry containing the size of one sample. Can be `NULL`. Must be `NULL` if the samples are non-contiguous in the buffer (for example, non-interleaved audio, where the channel values for a single sample are scattered through the buffer).
+- `sampleBufferOut`: On output, points to the newly created `CMSampleBuffer`.
 
 ## Topics
 

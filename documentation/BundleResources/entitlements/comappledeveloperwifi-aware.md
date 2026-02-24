@@ -9,6 +9,10 @@ The entitlement the system requires for an app to use the Wi-Fi Aware framework.
 - iOS 26.0+
 - iPadOS 26.0+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 This entitlement works with the [`Wi-Fi Aware`](https://developer.apple.com/documentation/WiFiAware) framework, which enables devices to securely discover, pair, and communicate with nearby devices without an internet connection or access point.

@@ -21,7 +21,7 @@ struct MLBoostedTreeClassifier
 
 #### Overview
 
-A boosted tree classifier combines several [`MLDecisionTreeClassifier`](mldecisiontreeclassifier.md) models (a technique known as ) by training each model to correct the errors of the preceding model.
+A boosted tree classifier combines several [`MLDecisionTreeClassifier`](mldecisiontreeclassifier.md) models (a technique known as *ensemble learning*) by training each model to correct the errors of the preceding model.
 
 This model is useful for handling numerical and categorical features, but is less suitable for sparse data such as text.
 

@@ -8,6 +8,10 @@ The color to use for the bezel around the extension when it appears as a Quick A
 **Availability**:
 - macOS 10.14+
 
+
+
+**Type**: string
+
 #### Discussion
 
 This key is used in conjunction with the [`NSExtensionServiceAllowsTouchBarItem`](information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowstouchbaritem.md) key.

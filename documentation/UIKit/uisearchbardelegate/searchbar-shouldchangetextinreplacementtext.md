@@ -26,7 +26,7 @@ optional func searchBar(_ searchBar: UISearchBar, shouldChangeTextIn range: NSRa
 
 - `searchBar`: The search bar that is being edited.
 - `range`: The range of the text to be changed.
-- `text`: The text to replace existing text in  .
+- `text`: The text to replace existing text in `range`.
 
 ## See Also
 

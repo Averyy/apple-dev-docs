@@ -16,7 +16,7 @@ var draggingFormation: NSDraggingFormation { get set }
 
 #### Discussion
 
-Setting this value causes the dragging formation to change immediately, provided a valid destination has not overriden the behavior. If the dragging session hasn’t started yet, the dragging items will animate into formation immediately upon start. It is  recommended to never change the formation when starting a drag.
+Setting this value causes the dragging formation to change immediately, provided a valid destination has not overriden the behavior. If the dragging session hasn’t started yet, the dragging items will animate into formation immediately upon start. It is *highly* recommended to never change the formation when starting a drag.
 
 The default value is [`NSDraggingFormation.none`](nsdraggingformation/none.md).
 

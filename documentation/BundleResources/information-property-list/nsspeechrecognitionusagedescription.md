@@ -11,6 +11,10 @@ A message that tells people why the app is requesting to send user data to Apple
 - macOS 10.15+
 - visionOS 1.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that send user data to Apple’s speech recognition servers.

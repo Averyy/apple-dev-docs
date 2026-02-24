@@ -36,7 +36,7 @@ The video decoder needs to retain the pixel buffer manager and use it to allocat
 
 - `codecType`: The codec type for the requested decoder.
 - `videoFormatDescription`: An object that describes the video data.
-- `videoDecoderSpecifications`: A dictionary that contains video decoder specification values, which may be empty. See   for a list of keys to use.
+- `videoDecoderSpecifications`: A dictionary that contains video decoder specification values, which may be empty. See [`Decompression Properties`](https://developer.apple.com/documentation/VideoToolbox/decompression-properties) for a list of keys to use.
 - `extensionDecoderPixelBufferManager`: A pixel buffer manager.
 
 ## See Also

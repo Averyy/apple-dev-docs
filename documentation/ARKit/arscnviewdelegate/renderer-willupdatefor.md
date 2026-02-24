@@ -22,7 +22,7 @@ Depending on the session configuration, ARKit may automatically update anchors i
 
 ## Parameters
 
-- `renderer`: The   object rendering the scene.
+- `renderer`: The [`ARSCNView`](arscnview.md) object rendering the scene.
 - `node`: The updated SceneKit node.
 - `anchor`: The AR anchor corresponding to the node.
 

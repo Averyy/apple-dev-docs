@@ -21,7 +21,7 @@ The `NSTask` object converts both `path` and the strings in `arguments` to appro
 
 ## Parameters
 
-- `arguments`: An array of   objects that supplies the arguments to the task. If   is  , the system raises an  .
+- `arguments`: An array of `NSString` objects that supplies the arguments to the task. If `arguments` is `nil`, the system raises an `NSInvalidArgumentException`.
 
 ## See Also
 

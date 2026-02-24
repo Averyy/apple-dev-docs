@@ -16,7 +16,7 @@ func cachedScanResults() -> Set<CWNetwork>?
 
 #### Discussion
 
-Returns  in the case of an error.
+Returns *nil* in the case of an error.
 
 ## See Also
 

@@ -22,7 +22,7 @@ class func setDefaultFormatterBehavior(_ behavior: NumberFormatter.Behavior)
 
 ## Parameters
 
-- `behavior`: An   constant that indicates the revision of the class providing the default behavior.
+- `behavior`: An `NSNumberFormatterBehavior` constant that indicates the revision of the class providing the default behavior.
 
 ## See Also
 

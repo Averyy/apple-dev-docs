@@ -22,7 +22,7 @@ When the override expires, the effect will respond to hover events again. If the
 
 ## Parameters
 
-- `trigger`: A value to observe for changes. The override will be   reapplied whenever this value changes.
+- `trigger`: A value to observe for changes. The override will be reapplied whenever this value changes.
 
 
 ---

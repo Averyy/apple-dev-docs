@@ -31,8 +31,8 @@ To customize the lift preview, shown while the system transitions to show your c
 
 ## Parameters
 
-- `data`: A closure that returns a single     that represents the draggable data from this view.
-- `preview`: A   to use as the source for the dragging   preview, once the drag operation has begun. The preview is centered over   the source view.
+- `data`: A closure that returns a single [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) that represents the draggable data from this view.
+- `preview`: A [`View`](view.md) to use as the source for the dragging preview, once the drag operation has begun. The preview is centered over the source view.
 
 ## See Also
 

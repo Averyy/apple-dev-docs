@@ -26,7 +26,7 @@ Use this method to animate drops where you incorporate the dragged items into an
 
 - `dragItem`: The dragged item that you want to animate into position.
 - `indexPath`: The index path in the collection view at which to incorporate the item.
-- `rect`: The destination rectangle to use for the animation. Specify the rectangle in the coordinate system of the cell at the specified  . UIKit animates the drag item to the specified rectangle.
+- `rect`: The destination rectangle to use for the animation. Specify the rectangle in the coordinate system of the cell at the specified `indexPath`. UIKit animates the drag item to the specified rectangle.
 
 ## See Also
 

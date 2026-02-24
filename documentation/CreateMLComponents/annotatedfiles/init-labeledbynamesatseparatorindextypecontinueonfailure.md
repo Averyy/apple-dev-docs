@@ -42,7 +42,7 @@ When we specify separator as “-” and index as 1, it would produce two labels
 - `separator`: The separator used in the name. Default value is “.”
 - `index`: Index of the label in the file name. Default value is 0.
 - `type`: Type of files.
-- `continueOnFailure`: A Boolean value indicating whether to continue reading files after   encountering a file that is not readable. The default value is  .
+- `continueOnFailure`: A Boolean value indicating whether to continue reading files after encountering a file that is not readable. The default value is `false`.
 
 ## See Also
 

@@ -25,7 +25,7 @@ See [`NSControl`](nscontrol.md) for more information about the text delegate met
 
 ## Parameters
 
-- `notification`: The   to post to the default notification center.
+- `notification`: The [`textDidEndEditingNotification`](nscontrol/textdidendeditingnotification.md) to post to the default notification center.
 
 ## See Also
 

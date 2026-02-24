@@ -26,7 +26,7 @@ A new buffer map object.
 ## Parameters
 
 - `bytes`: A pointer to the data buffer to be managed by the buffer map.
-- `deallocator`: The block has no parameters and no return value.
+- `deallocator`: Model I/O calls this block when the buffer map object is deallocated. Use this block to unmap a shared buffer or perform other cleanup tasks. The block has no parameters and no return value.
 
 
 ---

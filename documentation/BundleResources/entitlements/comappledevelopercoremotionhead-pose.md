@@ -11,6 +11,10 @@ An entitlement that enables someone’s head movement to determine the orientati
 - macOS 15.0+
 - tvOS 18.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 This entitlement changes the orientation of spatial audio output to match the person’s head pose via compatible AirPods for the following APIs:

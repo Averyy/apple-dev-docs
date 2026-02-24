@@ -28,7 +28,7 @@ Don’t call this method directly. The system calls your custom method when a ne
 - `reportLength`: The length of the report in bytes.
 - `type`: The report type.
 - `report`: A memory descriptor that contains the raw data for the report.
-- `action`: The   object that handles the asynchronous report callback.
+- `action`: The `OSAction` object that handles the asynchronous report callback.
 
 ## See Also
 

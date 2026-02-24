@@ -16,6 +16,18 @@ The response dictionary that contains the devices accessibility settings.
 object DeviceInformationResponse.QueryResponses.AccessibilitySettings
 ```
 
+## Properties
+
+- `BoldTextEnabled` (boolean): If `true`, the device has enabled bold text.
+- `GrayscaleEnabled` (boolean): If `true`, the device has enabled grayscale display.
+- `IncreaseContrastEnabled` (boolean): If `true`, the device has enabled increase contrast.
+- `ReduceMotionEnabled` (boolean): If `true`, the device has enabled reduced motion.
+- `ReduceTransparencyEnabled` (boolean): If `true`, the device has enabled reduced transparency.
+- `TextSize` (integer): The accessibility text size apps that support dynamic text use. 0 is the smallest value, and 11 is the largest available. `-1` indicates that the current size is unknown or hasn’t been explicitly set.
+- `TouchAccommodationsEnabled` (boolean): If `true`, the device has enabled touch accommodations.
+- `VoiceOverEnabled` (boolean): If `true`, the device has enabled voiceover.
+- `ZoomEnabled` (boolean): If `true`, the device has enabled zoom.
+
 ## See Also
 
 - [object DeviceInformationResponse.QueryResponses.AutoSetupAdminAccountsItem](deviceinformationresponse/queryresponses-data.dictionary/autosetupadminaccountsitem.md)

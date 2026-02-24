@@ -21,7 +21,7 @@ typealias MLCGraphCompletionHandler = (MLCTensor?, (any Error)?, TimeInterval) -
 ## Parameters
 
 - `resultTensor`: The result tensor.
-- `error`: An error if one occured, otherwise  .
+- `error`: An error if one occured, otherwise `nil`.
 - `executionTime`: The execution time.
 
 ## See Also

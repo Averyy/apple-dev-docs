@@ -24,7 +24,7 @@ func encode(commandBuffer: any MTLCommandBuffer, primaryTexture: any MTLTexture,
 - `commandBuffer`: A valid command buffer to receive the encoded kernel.
 - `primaryTexture`: A valid texture containing the primary source image.
 - `secondaryTexture`: A valid texture containing the secondary source image.
-- `destinationTexture`: A valid texture to be overwritten by the result image.   may not alias   nor  .
+- `destinationTexture`: A valid texture to be overwritten by the result image. `destinationTexture` may not alias `primaryTexture` nor `secondaryTexture`.
 
 ## See Also
 

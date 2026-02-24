@@ -33,7 +33,7 @@ Rectangle().fill(.linearGradient(
 
 ## Parameters
 
-- `space`: The color space the new gradient will use to   interpolate its constituent colors.
+- `space`: The color space the new gradient will use to interpolate its constituent colors.
 
 
 ---

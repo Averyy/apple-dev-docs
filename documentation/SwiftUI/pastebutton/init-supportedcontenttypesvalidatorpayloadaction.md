@@ -21,9 +21,9 @@ Set the contents of `supportedContentTypes` in order of your app’s preference 
 
 ## Parameters
 
-- `supportedContentTypes`: The exact uniform type identifiers supported   by the button. If the pasteboard doesn’t contain any of the   supported types, the button becomes disabled.
-- `validator`: A handler that receives those contents of the pasteboard   that conform to  . Load and inspect these   items to determine whether to validate the button. If you load a   valid item, return it from this closure. If the pasteboard doesn’t   contain any valid items, return   to invalidate the button.
-- `payloadAction`: The handler called when the user clicks the button.   This closure receives the preprocessed result of  .
+- `supportedContentTypes`: The exact uniform type identifiers supported by the button. If the pasteboard doesn’t contain any of the supported types, the button becomes disabled.
+- `validator`: A handler that receives those contents of the pasteboard that conform to `supportedContentTypes`. Load and inspect these items to determine whether to validate the button. If you load a valid item, return it from this closure. If the pasteboard doesn’t contain any valid items, return `nil` to invalidate the button.
+- `payloadAction`: The handler called when the user clicks the button. This closure receives the preprocessed result of `validator`.
 
 ## See Also
 

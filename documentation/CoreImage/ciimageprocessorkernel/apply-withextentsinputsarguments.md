@@ -35,9 +35,9 @@ This method will return `nil` and an error if:
 
 ## Parameters
 
-- `extents`: The array of bounding rectangles  that the   can produce.   Each rectangle in the array is an object created using     This method will return   if a rectangle in the array is empty.
-- `inputs`: An array of   objects to use as input.
-- `arguments`: This dictionary contains any additional parameters that the processor needs to   produce its output. The argument objects can be of any type but in order for   CoreImage  to cache intermediates, they must be of the following immutable types:   ,  ,  ,  ,  ,  ,  ,   ,  ,  ,  , or  .
+- `extents`: The array of bounding rectangles  that the `CIImageProcessorKernel` can produce. Each rectangle in the array is an object created using `/CIVector/vectorWithCGRect:` This method will return `CIImage.emptyImage` if a rectangle in the array is empty.
+- `inputs`: An array of [`CIImage`](ciimage.md) objects to use as input.
+- `arguments`: This dictionary contains any additional parameters that the processor needs to produce its output. The argument objects can be of any type but in order for CoreImage  to cache intermediates, they must be of the following immutable types: `NSArray`, `NSDictionary`, `NSNumber`, `NSValue`, `NSData`, `NSString`, `NSNull`, [`CIVector`](civector.md), [`CIColor`](cicolor.md), `CGImage`, `CGColorSpace`, or `MLModel`.
 
 
 ---

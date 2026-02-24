@@ -23,7 +23,7 @@ A new `TCControlImage` instance.
 
 - `texture`: The Metal texture to use for the image.
 - `size`: The size of the image in points.
-- `highlightTexture`: The Metal texture to use for the image when highlighted. May be  .
+- `highlightTexture`: The Metal texture to use for the image when highlighted. May be `nil`.
 - `offset`: The offset from the center of the parent control in points.
 - `tintColor`: The color tint to apply to the texture. The color ref is retained.
 

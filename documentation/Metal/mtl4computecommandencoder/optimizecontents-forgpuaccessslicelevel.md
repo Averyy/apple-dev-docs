@@ -31,9 +31,9 @@ You typically run this command for:
 
 ## Parameters
 
-- `texture`: A   the command optimizes for GPU access.
-- `slice`: A slice within  .
-- `level`: A mipmap level within  .
+- `texture`: A [`MTLTexture`](mtltexture.md) the command optimizes for GPU access.
+- `slice`: A slice within `texture`.
+- `level`: A mipmap level within `texture`.
 
 ## See Also
 

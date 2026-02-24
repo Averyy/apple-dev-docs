@@ -27,7 +27,7 @@ The number of bytes copied is the smaller of the `length` parameter and the [`le
 ## Parameters
 
 - `buffer`: A buffer into which to copy data.
-- `length`: The number of bytes from the start of the receiver’s data to copy to  .
+- `length`: The number of bytes from the start of the receiver’s data to copy to `buffer`.
 
 ## See Also
 

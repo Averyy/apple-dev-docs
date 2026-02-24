@@ -45,7 +45,7 @@ let formatted = duration.formatted(
 - `width`: The width of the unit and the spacing between the value and the unit.
 - `maximumUnitCount`: The maximum number of duration units, if any, to include in the output string.
 - `zeroValueUnits`: The strategy for handling leading units with zero values.
-- `valueLengthLimits`: The padding and truncating behavior of the unit value, as a bounded range of   values. The lower bound, if any, expresses the minimum number of digits for all units. The higher bound, if any, expresses the maximum. The style applies leading zeros to units with less than the minimum number of digits, and truncates units above the maximum digits. Defaults to  , which applies no minimum or maximum.
+- `valueLengthLimits`: The padding and truncating behavior of the unit value, as a bounded range of `Int` values. The lower bound, if any, expresses the minimum number of digits for all units. The higher bound, if any, expresses the maximum. The style applies leading zeros to units with less than the minimum number of digits, and truncates units above the maximum digits. Defaults to `nil`, which applies no minimum or maximum.
 - `fractionalPart`: The strategy for displaying a duration if a formatted string can’t represent it exactly with the allowed units.
 
 ## See Also

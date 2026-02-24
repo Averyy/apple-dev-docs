@@ -29,7 +29,7 @@ This initializer throws an error if `additionalHeaderFields` includes a “forbi
 
 - `url`: A URL beginning with HTTP or HTTPS that points to the authentication webpage.
 - `callback`: An object that describes when the session calls its completion handler.
-- `preferredBrowserSession`: The preferred data-sharing behavior of the browser session. For more information, see  .
+- `preferredBrowserSession`: The preferred data-sharing behavior of the browser session. For more information, see [`WebAuthenticationSession.BrowserSession`](webauthenticationsession/browsersession.md).
 - `additionalHeaderFields`: A dictionary containing additional header fields to send when loading the initial URL.
 
 ## See Also

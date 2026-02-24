@@ -21,7 +21,7 @@ func setFrameUsingName(_ name: NSWindow.FrameAutosaveName, force: Bool) -> Bool
 ## Parameters
 
 - `name`: The name of the frame to read.
-- `force`:   to use   on a non-resizable window;   to fail on a non-resizable window.
+- `force`: [`true`](https://developer.apple.com/documentation/Swift/true) to use [`setFrameUsingName(_:)`](nswindow/setframeusingname(_:).md) on a non-resizable window; [`false`](https://developer.apple.com/documentation/Swift/false) to fail on a non-resizable window.
 
 ## See Also
 

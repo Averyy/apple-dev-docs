@@ -22,9 +22,9 @@ A newly initialized trip preview text configuration.
 
 ## Parameters
 
-- `startButtonTitle`: The title to display on the start button. Set to   to display the system-provided title.
-- `additionalRoutesButtonTitle`: The title to display on the routes button. Set to   to display the system-provided title.
-- `overviewButtonTitle`: The title to display on the overview button. Set to   to display the system-provided title.
+- `startButtonTitle`: The title to display on the start button. Set to `nil` to display the system-provided title.
+- `additionalRoutesButtonTitle`: The title to display on the routes button. Set to `nil` to display the system-provided title.
+- `overviewButtonTitle`: The title to display on the overview button. Set to `nil` to display the system-provided title.
 
 
 ---

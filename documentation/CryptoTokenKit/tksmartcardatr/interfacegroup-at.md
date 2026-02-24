@@ -26,7 +26,7 @@ The interface group at the specified index, or `nil` if not present.
 
 ## Parameters
 
-- `index`: The index of the desired interface group.
+- `index`: The index of the desired interface group. > ❗ **Important**:  Interface group indexes start at `1`, as specified by ISO 7816-3.
 
 ## See Also
 

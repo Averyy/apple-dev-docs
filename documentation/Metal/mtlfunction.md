@@ -23,7 +23,7 @@ protocol MTLFunction : NSObjectProtocol, Sendable
 
 Use [`MTLFunction`](mtlfunction.md) instances to specify which shaders a Metal pipeline calls when the GPU executes commands that specify that pipeline. For more information on creating pipeline states, see [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) and [`MTLComputePipelineDescriptor`](mtlcomputepipelinedescriptor.md).
 
-An [`MTLFunction`](mtlfunction.md) instance is a  function if the shader contains function constants, otherwise it is a  function.
+An [`MTLFunction`](mtlfunction.md) instance is a *specialized* function if the shader contains function constants, otherwise it is a *nonspecialized* function.
 
 Don’t use standard allocation and initialization techniques to create an [`MTLFunction`](mtlfunction.md) instance. Instead, use the function creation methods provided by the [`MTLLibrary`](mtllibrary.md) protocol. To create a nonspecialized function, call the [`makeFunction(name:)`](mtllibrary/makefunction(name:).md) method.
 

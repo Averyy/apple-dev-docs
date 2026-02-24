@@ -20,7 +20,7 @@ func statusBarHidden(_ hidden: Bool = true) -> some View
 
 ## Parameters
 
-- `hidden`: A Boolean value that indicates whether to hide the   status bar.
+- `hidden`: A Boolean value that indicates whether to hide the status bar.
 
 ## See Also
 

@@ -27,9 +27,9 @@ The system calls this delegate method on the main queue. Retrieve information fr
 
 ## Parameters
 
-- `scrollView`: The   object that receives the scroll update.
+- `scrollView`: The [`BEScrollView`](bescrollview.md) object that receives the scroll update.
 - `scrollUpdate`: Information about the scroll update. You need to retrieve the information from this object immediately on the main thread when the system calls your delegate method, otherwise the values may change.
-- `completion`: A block that you call when you finish processing the scroll update. Pass   as the parameter if you handled the scroll event and the scroll view doesn’t need to react to it;   otherwise.
+- `completion`: A block that you call when you finish processing the scroll update. Pass `true` as the parameter if you handled the scroll event and the scroll view doesn’t need to react to it; `false` otherwise.
 
 
 ---

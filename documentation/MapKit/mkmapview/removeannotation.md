@@ -27,7 +27,7 @@ Removing an annotation object disassociates it from the map view entirely, preve
 
 ## Parameters
 
-- `annotation`: The annotation object to remove. This object needs to conform to the   protocol.
+- `annotation`: The annotation object to remove. This object needs to conform to the [`MKAnnotation`](mkannotation.md) protocol.
 
 ## See Also
 

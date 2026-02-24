@@ -26,7 +26,7 @@ The default implementation of this method forwards the message up the responder 
 
 ## Parameters
 
-- `presses`: A set of   instances that represent the presses associated with the event. The phase of each press is set to  .
+- `presses`: A set of [`UIPress`](uipress.md) instances that represent the presses associated with the event. The phase of each press is set to [`UIPress.Phase.cancelled`](uipress/phase-swift.enum/cancelled.md).
 - `event`: The event to which the presses belong.
 
 ## See Also

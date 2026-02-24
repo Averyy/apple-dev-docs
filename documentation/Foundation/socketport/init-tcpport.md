@@ -24,7 +24,7 @@ This method creates an IPv4 port, not an IPv6 port.
 
 ## Parameters
 
-- `port`: The port number for the newly created socket port to listen on. If   is 0, the system will assign a port number.
+- `port`: The port number for the newly created socket port to listen on. If `port` is 0, the system will assign a port number.
 
 ## See Also
 

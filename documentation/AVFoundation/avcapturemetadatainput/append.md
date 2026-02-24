@@ -19,7 +19,7 @@ func append(_ metadata: AVTimedMetadataGroup) throws
 
 ## Parameters
 
-- `metadata`: A timed group of metadata. To denote a period of no metadata, pass an empty  .
+- `metadata`: A timed group of metadata. To denote a period of no metadata, pass an empty [`AVTimedMetadataGroup`](avtimedmetadatagroup.md).
 
 
 ---

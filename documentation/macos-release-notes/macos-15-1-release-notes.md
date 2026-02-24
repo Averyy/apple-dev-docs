@@ -76,7 +76,7 @@ The macOS 15.1 SDK provides support to develop apps for Mac computers running Se
 
 ###### Known Issues
 
-- macOS apps might crash with an exception related to duplicate toolbar items. This often happens when either (A) `NavigationSplitView`s are nested or (B) toolbars with `id`s are specified (`View.toolbar(id:...)`) and a new window is created with the same identified toolbar.  (134589426)  (A) Use apply `.toolbar(removing: .sidebarToggle)` within the sidebar column of the inner `NavigationSplitView`. (B) Temporarily stop using identified toolbars until this issue is addressed. Alternatively, sometimes it might be possible to workaround (B) by moving toolbar items around or rendering them after a short delay.
+- macOS apps might crash with an exception related to duplicate toolbar items. This often happens when either (A) `NavigationSplitView`s are nested or (B) toolbars with `id`s are specified (`View.toolbar(id:...)`) and a new window is created with the same identified toolbar.  (134589426) **Workaround:** (A) Use apply `.toolbar(removing: .sidebarToggle)` within the sidebar column of the inner `NavigationSplitView`. (B) Temporarily stop using identified toolbars until this issue is addressed. Alternatively, sometimes it might be possible to workaround (B) by moving toolbar items around or rendering them after a short delay.
 - On macOS 15.1, Tabs in TabViews that use the .sidebarAdaptable style might not be selected when the Tab label is clicked.  (137277517) (FB15383066)
 
 ##### System Integrity Protection

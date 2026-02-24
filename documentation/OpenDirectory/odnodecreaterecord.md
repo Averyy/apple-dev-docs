@@ -30,8 +30,8 @@ If any of the attributes in `inAttributes` fails to be set, the record is delete
 - `node`: The node.
 - `recordType`: The record’s type.
 - `recordName`: The record’s name.
-- `attributeDict`: A dictionary of key-value pairs representing attributes for the record. Can be  .
-- `error`: An error reference for error details. Can be  .
+- `attributeDict`: A dictionary of key-value pairs representing attributes for the record. Can be `NULL`.
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

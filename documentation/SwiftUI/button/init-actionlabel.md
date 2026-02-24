@@ -24,7 +24,7 @@ init(action: @escaping @MainActor () -> Void, @ViewBuilder label: () -> Label)
 ## Parameters
 
 - `action`: The action to perform when the user triggers the button.
-- `label`: A view that describes the purpose of the button’s  .
+- `label`: A view that describes the purpose of the button’s `action`.
 
 ## See Also
 

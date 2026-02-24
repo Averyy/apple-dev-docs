@@ -22,6 +22,29 @@ Listing 1 shows a typical implementation for when you plan to use a constant-siz
 
 Listing 1. Creating a constant-sized scene
 
+**Swift**:
+
+```swift
+func createSceneContent() {
+    scene.scaleMode = .aspectFit
+    scene.backgroundColor = .black
+    // Add additional scene contents here.  
+   ...
+}
+```
+
+**Obj-C**:
+
+```objc
+- (void)createSceneContent  
+{      
+    self.scaleMode = SKSceneScaleModeAspectFit;      
+    self.backgroundColor = [SKColor blackColor];  
+    // Add additional scene contents here.  
+    ...
+}
+```
+
 ##### Update Your Graphics on Scene Resize
 
 If you expect a scene’s size to change at runtime, then the initial scene size should be used to determine which art assets to use, as well as any game logic that is dependent on the scene size. Your game should also override the scene’s [`didChangeSize(_:)`](skscene/didchangesize(_:).md) method, which is called whenever the scene changes size. When this method is called, you should update the scene’s contents to match the new size.

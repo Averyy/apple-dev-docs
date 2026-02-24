@@ -37,7 +37,7 @@ You specify your app’s notification types at app launch using [`UNNotification
 ## Parameters
 
 - `center`: The shared user notification center object that received the notification.
-- `response`: The user’s response to the notification. This object contains the original notification and the identifier string for the selected action. If the action allowed the user to provide a textual response, this parameter contains a   object.
+- `response`: The user’s response to the notification. This object contains the original notification and the identifier string for the selected action. If the action allowed the user to provide a textual response, this parameter contains a [`UNTextInputNotificationResponse`](untextinputnotificationresponse.md) object.
 - `completionHandler`: The block to execute when you have finished processing the user’s response. You must execute this block at some point after processing the user’s response to let the system know that you are done. The block has no return value or parameters.
 
 

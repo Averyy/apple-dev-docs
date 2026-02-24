@@ -30,12 +30,12 @@ If `stringToFind` is the empty string (zero length), nothing is found.
 
 ## Parameters
 
-- `theString`: The string in which to to search for  .
-- `stringToFind`: The substring to search for in  .
-- `rangeToSearch`: A range of the characters to search in  . The specified range must not exceed the length of the string.
-- `searchOptions`: The option flags to control the search behavior. See   for possible values. The flags   and   are ignored.
-- `locale`: The locale argument affects the equality checking algorithm. For example, for the Turkish locale, case-insensitive compare matches “I” to “ı” (Unicode code point U+0131, Latin Small Dotless I), not the normal “i” character.
-- `result`: On return, if the function result is   contains the starting location and length of the found substring. You may pass   if you only want to know if the   contains  .
+- `theString`: The string in which to to search for `stringToFind`.
+- `stringToFind`: The substring to search for in `theString`.
+- `rangeToSearch`: A range of the characters to search in `theString`. The specified range must not exceed the length of the string.
+- `searchOptions`: The option flags to control the search behavior. See [`String Comparison Flags`](string-comparison-flags.md) for possible values. The flags [`compareNumerically`](cfstringcompareflags/comparenumerically.md) and [`compareForcedOrdering`](cfstringcompareflags/compareforcedordering.md) are ignored.
+- `locale`: The locale to use for the search comparison. `NULL` specifies the canonical locale (the return value from [`CFLocaleGetSystem()`](cflocalegetsystem().md)). The locale argument affects the equality checking algorithm. For example, for the Turkish locale, case-insensitive compare matches “I” to “ı” (Unicode code point U+0131, Latin Small Dotless I), not the normal “i” character.
+- `result`: On return, if the function result is `true` contains the starting location and length of the found substring. You may pass `NULL` if you only want to know if the `theString` contains `stringToFind`.
 
 ## See Also
 

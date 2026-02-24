@@ -49,7 +49,7 @@ if let outputImage = vignettedImage {
 ## Parameters
 
 - `url`: The location of a RAW image file.
-- `options`: An options dictionary.  You can pass any of the keys defined in  .
+- `options`: An options dictionary.  You can pass any of the keys defined in [`RAW Image Options`](raw-image-options.md).
 
 ## See Also
 

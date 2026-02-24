@@ -34,8 +34,8 @@ You must call [`SSLSetIOFuncs(_:_:_:)`](sslsetiofuncs(_:_:_:).md) prior to calli
 ## Parameters
 
 - `context`: An SSL session context reference.
-- `readFunc`: A pointer to your read callback function. See   for information on defining this function.
-- `writeFunc`: A pointer to your write callback function. See   for information on defining this function.
+- `readFunc`: A pointer to your read callback function. See [`SSLReadFunc`](sslreadfunc.md) for information on defining this function.
+- `writeFunc`: A pointer to your write callback function. See [`SSLWriteFunc`](sslwritefunc.md) for information on defining this function.
 
 
 ---

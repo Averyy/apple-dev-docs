@@ -63,9 +63,9 @@ You may also set `isShowingOffer` to `false` to programmatically dismiss the sub
 
 ## Parameters
 
-- `isPresented`: A binding to a Boolean value that you can set to    to show a sheet with subscription offers for Apple Music.
-- `options`: Options to use for loading the subscription offer for   Apple Music.
-- `onLoadCompletion`: The function to call upon completing the initial   loading process for this subscription offer. The subscription   offer UI becomes visible when it calls this function with the   error argument as  . If there is an error in the   loading process, the subscription offer calls this function with   a non-  error, and it resets the   binding   to  .
+- `isPresented`: A binding to a Boolean value that you can set to `true` to show a sheet with subscription offers for Apple Music.
+- `options`: Options to use for loading the subscription offer for Apple Music.
+- `onLoadCompletion`: The function to call upon completing the initial loading process for this subscription offer. The subscription offer UI becomes visible when it calls this function with the error argument as `nil`. If there is an error in the loading process, the subscription offer calls this function with a non-`nil` error, and it resets the `isPresented` binding to `false`.
 
 ## See Also
 

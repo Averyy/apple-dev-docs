@@ -27,7 +27,7 @@ By default, new Action Extensions are not enabled in macOS. After running this s
 
 The system makes Action Extensions available depending on the type of data that the user has selected in Finder. For example, if the user selects a `PNG` file, Action Extensions that support images are shown. Each of the extensions in this sample operate on different kinds of input content:
 
-- `ThumbnailAction` operates on  kind of image.
+- `ThumbnailAction` operates on *any* kind of image.
 - `RemoveOpacityAction` operates specifically on PNG images.
 - `UppercaseAction` operates on text.
 

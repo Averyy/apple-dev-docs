@@ -25,7 +25,7 @@ An initialized video output object.
 
 ## Parameters
 
-- `pixelBufferAttributes`: The pixel buffer attributes required for video output. For a list of pixel buffer attributes you can include in this dictionary, see the   header file in the Core Video framework.
+- `pixelBufferAttributes`: The pixel buffer attributes required for video output. For a list of pixel buffer attributes you can include in this dictionary, see the `CVPixelBuffer.h` header file in the Core Video framework.
 
 ## See Also
 

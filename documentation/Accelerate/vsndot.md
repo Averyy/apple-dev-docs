@@ -25,12 +25,12 @@ For i = 0 to n-1, the dot product of vectors `x`[i] and `y`[i] is computed.  The
 
 ## Parameters
 
-- `n`: Number of dot products to compute, and number of elements in vector   ; must be a multiple of 4.
+- `n`: Number of dot products to compute, and number of elements in vector `s` ; must be a multiple of 4.
 - `m`: Number of elements in the vectors whose dot products are computed; must be a multiple of 4.
-- `s`: Destination vector; the   dot products are accumulated or stored here.
+- `s`: Destination vector; the `n` dot products are accumulated or stored here.
 - `isw`: A key that selects one of the four variants of this function: see Discussion below.
-- `x`: A matrix whose rows are   floating-point vectors, each containing   values.
-- `y`: A second matrix whose rows are   floating-point vectors, each containing   values.
+- `x`: A matrix whose rows are `n` floating-point vectors, each containing `m` values.
+- `y`: A second matrix whose rows are `n` floating-point vectors, each containing `m` values.
 
 ## See Also
 

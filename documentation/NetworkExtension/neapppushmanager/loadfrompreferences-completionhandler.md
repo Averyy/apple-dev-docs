@@ -19,7 +19,7 @@ func loadFromPreferences() async throws
 
 ## Parameters
 
-- `completionHandler`: A completion block that the framework calls after it loads the configuration. If loading failed, the   parameter indicates the reason for the failure; otherwise, this parameter is  .
+- `completionHandler`: A completion block that the framework calls after it loads the configuration. If loading failed, the `error` parameter indicates the reason for the failure; otherwise, this parameter is `nil`.
 
 ## See Also
 

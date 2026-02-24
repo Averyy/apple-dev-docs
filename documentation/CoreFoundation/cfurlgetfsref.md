@@ -26,8 +26,8 @@ The function cannot create an `FSRef` object if any of the leading path parts sp
 
 ## Parameters
 
-- `url`: The   object to convert to a file or directory object.
-- `fsRef`: Upon return, contains the file or directory object representing  .
+- `url`: The `CFURL` object to convert to a file or directory object.
+- `fsRef`: Upon return, contains the file or directory object representing `url`.
 
 ## See Also
 

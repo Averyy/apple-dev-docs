@@ -22,7 +22,7 @@ optional func resetTextureAccessCounters(_ texture: any MTLTexture, region: MTLR
 ## Parameters
 
 - `texture`: A sparse texture instance.
-- `region`: A region within the sparse texture’s  , in sparse tile coordinates.
+- `region`: A region within the sparse texture’s `mipLevel`, in sparse tile coordinates.
 - `mipLevel`: A mipmap level within the sparse texture.
 - `slice`: A slice within the sparse texture.
 

@@ -22,7 +22,7 @@ Creates a configuration for a control that uses a custom app intent to provide u
 ## Parameters
 
 - `kind`: A string that uniquely identifies the type of control.
-- `provider`: An object that provides a value to the control template.   The provider uses your custom intent to prepare this value.
+- `provider`: An object that provides a value to the control template. The provider uses your custom intent to prepare this value.
 - `content`: A template that renders the control.
 
 

@@ -24,6 +24,23 @@ Implement this method to provide a meaningful title to the [`UICloudSharingContr
 
 [`itemTitle(for:)`](uicloudsharingcontrollerdelegate/itemtitle(for:).md) is called only when creating a new share. For an existing share, the title is retrieved from the share using the [`CKShareTitleKey`](https://developer.apple.com/documentation/CloudKit/CKShareTitleKey-9yavd) key, which is set when a new share is saved.
 
+**Swift**:
+
+```swift
+func itemTitle(for csc: UICloudSharingController) -> String? {
+  return "Untitled"
+}
+```
+
+**Objective-C**:
+
+```objc
+- (nullable NSString *)itemTitleForCloudSharingController:(UICloudSharingController *)csc
+{
+  return @"Untitled";
+}
+```
+
 ## See Also
 
 - [func itemType(for: UICloudSharingController) -> String?](uicloudsharingcontrollerdelegate/itemtype(for:).md)

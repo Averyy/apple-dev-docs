@@ -42,7 +42,7 @@ The resulting chart automatically scales and labels the axes based on the data, 
 
 - `x`: The horizontal position for the mark.
 - `y`: The vertical position for the mark.
-- `stacking`: The way in which the chart stacks area regions. The   default is  .
+- `stacking`: The way in which the chart stacks area regions. The default is [`standard`](markstackingmethod/standard.md).
 
 ## See Also
 

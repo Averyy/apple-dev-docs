@@ -29,6 +29,9 @@ This method applies a color map filter to an image. The effect transforms source
 
 The color map filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`gradientImage`**: An image representing the gradient of colors to be mapped to the input image colors with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds the gradient image colors to the input image:
 
 ```swift

@@ -26,7 +26,7 @@ The duration of each frame represented in `CMTime` format.
 
 ## Parameters
 
-- `timeCodeFormatDescription`:   being interrogated.
+- `timeCodeFormatDescription`: `CMTimeCodeFormatDescription` being interrogated.
 
 ## See Also
 

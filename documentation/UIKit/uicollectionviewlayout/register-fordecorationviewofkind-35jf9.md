@@ -28,8 +28,8 @@ If you previously registered a class or nib file with the same kind string, the 
 
 ## Parameters
 
-- `nib`: The nib object containing the cell definition. The nib file must contain only one top-level object and that object must be of the type  .
-- `elementKind`: The element kind of the decoration view. You can use this string to distinguish between decoration views with different purposes in the layout. This parameter must not be   and must not be an empty string.
+- `nib`: The nib object containing the cell definition. The nib file must contain only one top-level object and that object must be of the type [`UICollectionReusableView`](uicollectionreusableview.md).
+- `elementKind`: The element kind of the decoration view. You can use this string to distinguish between decoration views with different purposes in the layout. This parameter must not be `nil` and must not be an empty string.
 
 ## See Also
 

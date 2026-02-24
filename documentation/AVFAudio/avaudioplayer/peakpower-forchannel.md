@@ -30,7 +30,7 @@ Before asking the player for its peak power value, you must call [`updateMeters(
 
 ## Parameters
 
-- `channelNumber`: The audio channel with the peak power value you want to obtain. Channel numbers are zero-indexed. A monaural signal, or the left channel of a stereo signal, has channel number  .
+- `channelNumber`: The audio channel with the peak power value you want to obtain. Channel numbers are zero-indexed. A monaural signal, or the left channel of a stereo signal, has channel number `0`.
 
 ## See Also
 

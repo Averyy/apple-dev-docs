@@ -25,8 +25,8 @@ The initialized image object.
 
 ## Parameters
 
-- `image`: A Quartz 2D image ( ) object. For more information, see   and  .
-- `options`: A dictionary specifying image options. (See  .)
+- `image`: A Quartz 2D image ([`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage)) object. For more information, see [`Quartz 2D Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066) and [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage).
+- `options`: A dictionary specifying image options. (See `Image Dictionary Keys`.)
 
 ## See Also
 

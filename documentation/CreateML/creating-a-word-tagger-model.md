@@ -6,9 +6,9 @@ Train a machine learning model to tag individual words in natural language text.
 
 #### Overview
 
-A  is a machine learning model that’s been trained to classify natural language text at the word level.
+A *word tagger* is a machine learning model that’s been trained to classify natural language text at the word level.
 
-You train a word tagger by showing it multiple examples of sentences containing words you’ve already tagged — for example, Apple product names like  and .
+You train a word tagger by showing it multiple examples of sentences containing words you’ve already tagged — for example, Apple product names like *iPad* and *iPhone*.
 
 ##### Import Your Data
 

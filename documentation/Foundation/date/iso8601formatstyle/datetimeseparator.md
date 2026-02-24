@@ -43,7 +43,7 @@ For more information about ISO 8601 formatted dates, see the [`Date.ISO8601Forma
 
 ## Parameters
 
-- `separator`: Possible values are   and  .
+- `separator`: Possible values are `space` and `standard`.
 
 ## See Also
 

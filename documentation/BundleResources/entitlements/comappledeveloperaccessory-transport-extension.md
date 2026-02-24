@@ -9,6 +9,10 @@ A Boolean value that indicates whether your app can exchange sensitive informati
 - iOS 26.2+
 - iPadOS 26.2+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Set the value of this entitlement to `true` to enable your app to use the [`Accessory Transport Extension`](https://developer.apple.com/documentation/AccessoryTransportExtension) framework. This framework allows you to send sensitive information to accessories you’ve discovered and set up with [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit).

@@ -24,7 +24,7 @@ Returns `nil` when `attributedString` contains attributes not mappable to [`NSTe
 
 ## Parameters
 
-- `attributedString`: The attributed string to map into an  .
+- `attributedString`: The attributed string to map into an [`NSTextElement`](nstextelement.md).
 
 ## See Also
 

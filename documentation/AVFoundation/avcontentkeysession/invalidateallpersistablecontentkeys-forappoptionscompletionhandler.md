@@ -23,7 +23,7 @@ func invalidateAllPersistableContentKeys(forApp appIdentifier: Data, options: [A
 ## Parameters
 
 - `appIdentifier`: An opaque identifier for the app.
-- `options`: See   for supported options.
+- `options`: Additional data necessary to generate the server playback context. Pass `nil` to indicate no additional options. See [`AVContentKeySessionServerPlaybackContextOption`](avcontentkeysessionserverplaybackcontextoption.md) for supported options.
 - `handler`: The completion handler callback.
 
 ## See Also

@@ -26,8 +26,8 @@ The `value` parameter is retained by `theArray` using the retain callback provid
 
 ## Parameters
 
-- `theArray`: The array to which   is to be added. If   is a limited-capacity array and it is full before this operation, the behavior is undefined.
-- `value`: A CFType object or a pointer value to add to  .
+- `theArray`: The array to which `value` is to be added. If `theArray` is a limited-capacity array and it is full before this operation, the behavior is undefined.
+- `value`: A CFType object or a pointer value to add to `theArray`.
 
 ## See Also
 

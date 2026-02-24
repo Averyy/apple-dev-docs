@@ -30,7 +30,7 @@ Note that this method only works with file paths (not, for example, string repre
 
 ## Parameters
 
-- `paths`: An array of   objects specifying paths to add to the receiver.
+- `paths`: An array of `NSString` objects specifying paths to add to the receiver.
 
 ## See Also
 

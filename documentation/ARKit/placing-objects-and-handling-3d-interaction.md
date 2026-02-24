@@ -253,7 +253,7 @@ func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera
 
 #### Restore an Interrupted Ar Experience
 
-When a session is interrupted, ARKit asks if you want to try to restore the AR experience. You do that by opting in to , by overriding [`sessionShouldAttemptRelocalization(_:)`](arsessionobserver/sessionshouldattemptrelocalization(_:).md) and returning `true`.
+When a session is interrupted, ARKit asks if you want to try to restore the AR experience. You do that by opting in to *relocalization*, by overriding [`sessionShouldAttemptRelocalization(_:)`](arsessionobserver/sessionshouldattemptrelocalization(_:).md) and returning `true`.
 
 ```swift
 func sessionShouldAttemptRelocalization(_ session: ARSession) -> Bool {

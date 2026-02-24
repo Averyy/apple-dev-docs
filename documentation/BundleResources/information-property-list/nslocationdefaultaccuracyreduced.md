@@ -11,6 +11,12 @@ A Boolean value that indicates whether the app requests reduced location accurac
 - visionOS 1.0+
 - watchOS 7.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 #### Discussion
 
 Include this key in your information property list to set your app’s default behavior for location accuracy when it calls the Core Location framework. Set the key value to `true` to prompt the user for reduced accuracy by default; set it to `false` to prompt for full location accuracy. If you don’t include that key in your `Info.plist`, that’s equivalent to setting it to `false`.

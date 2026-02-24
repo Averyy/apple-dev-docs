@@ -27,9 +27,9 @@ The range representing the location and length of `dataToFind` within `searchRan
 ## Parameters
 
 - `theData`: The data object within which to search.
-- `dataToFind`: The data to find. Must not be  .
-- `searchRange`: The range within   to be searched.
-- `compareOptions`: A bit mask specifying search options. The   options can be specified singly or combined with the C bitwise   operator
+- `dataToFind`: The data to find. Must not be `NULL`.
+- `searchRange`: The range within `theData` to be searched.
+- `compareOptions`: A bit mask specifying search options. The [`CFDataSearchFlags`](cfdatasearchflags.md) options can be specified singly or combined with the C bitwise `OR` operator
 
 ## See Also
 

@@ -29,7 +29,7 @@ To check if there is an installed app that can handle a scheme, call the [`canOp
 
 ## Parameters
 
-- `url`: A URL (Universal Resource Locator). UIKit supports many common schemes, including the  ,  ,  ,  , and   schemes. You can also employ custom URL schemes associated with apps installed on the device.
+- `url`: A URL (Universal Resource Locator). UIKit supports many common schemes, including the `http`, `https`, `tel`, `facetime`, and `mailto` schemes. You can also employ custom URL schemes associated with apps installed on the device.
 
 ## See Also
 

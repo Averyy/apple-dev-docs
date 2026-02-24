@@ -31,7 +31,7 @@ You may call this method without blocking the current thread after you’ve asyn
 
 ## Parameters
 
-- `mediaCharacteristic`: The media characteristic according to which the asset filters its asset tracks. For valid values, see  .
+- `mediaCharacteristic`: The media characteristic according to which the asset filters its asset tracks. For valid values, see [`AVMediaCharacteristic`](avmediacharacteristic.md).
 
 ## See Also
 

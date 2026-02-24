@@ -27,7 +27,7 @@ Returns a data object that contains the persistable content key.
 ## Parameters
 
 - `keyVendorResponse`: The response returned from the key vendor.
-- `options`: Additional information required to obtain the persistable content key. The value of this parameter is   when no additional information is required.
+- `options`: Additional information required to obtain the persistable content key. The value of this parameter is `nil` when no additional information is required.
 
 
 ---

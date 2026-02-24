@@ -6,9 +6,9 @@ Review how people launch your App Clip with invocation URLs, default and demo li
 
 #### Overview
 
-People launch your App Clip by performing an  — for example, by scanning an App Clip Code or tapping a Smart App Banner on a website. Upon launch, the App Clip receives an  that determines what information appears on the App Clip card. To offer the best launch experience for a person’s current context, use the invocation URL on launch to update the UI of your App Clip.
+People launch your App Clip by performing an *invocation* — for example, by scanning an App Clip Code or tapping a Smart App Banner on a website. Upon launch, the App Clip receives an *invocation URL* that determines what information appears on the App Clip card. To offer the best launch experience for a person’s current context, use the invocation URL on launch to update the UI of your App Clip.
 
-To configure invocation URLs and the metadata that appears on the App Clip card, create the required  in [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/login). For more advanced use cases — for example, to associate an App Clip with a physical location or to create an App Clip for multiple businesses — configure optional .
+To configure invocation URLs and the metadata that appears on the App Clip card, create the required *default App Clip experience* in [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/login). For more advanced use cases — for example, to associate an App Clip with a physical location or to create an App Clip for multiple businesses — configure optional *advanced App Clip experiences*.
 
 > ❗ **Important**:  In some cases, the App Clip doesn’t receive an invocation URL upon launch. Make sure to handle this use case in your code. For more information on responding to invocations where the invocation URL isn’t available, refer to  [`Ensure your code handles all invocations`](responding-to-invocations#Ensure-your-code-handles-all-invocations.md).
 
@@ -126,7 +126,7 @@ Consider the previous example for a coffee shop’s App Clip: It would use the d
 
 ##### Take Advantage of Url Prefix Matching
 
-In general, try to register as few URLs as possible, and register generic URLs to take advantage of . Upon invocation, the system matches the invocation URL against URLs you registered as part of your advanced App Clip experiences. The system then chooses the App Clip experience with the URL that has the most specific matching prefix. This means that you can register one URL to cover many cases.
+In general, try to register as few URLs as possible, and register generic URLs to take advantage of *URL prefix matching*. Upon invocation, the system matches the invocation URL against URLs you registered as part of your advanced App Clip experiences. The system then chooses the App Clip experience with the URL that has the most specific matching prefix. This means that you can register one URL to cover many cases.
 
 Consider the example for a coffee shop. By registering one advanced App Clip experience with `https://example.com` as its invocation URL, it’s possible to handle invocation URLs, for example:
 

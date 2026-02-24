@@ -21,6 +21,21 @@ The properties for which [`SKEmitterNode`](skemitternode.md) offers a keyframe s
 
 The following code demonstrates using [`particleScaleSequence`](skemitternode/particlescalesequence.md) to animate the scale of an emitter node’s particles over their lifetime. Initially, the particles’ scale is `0.2` and then increases to `0.7` one-quarter of the way through the sequence. Three-quarters of the way through the sequence, the scale reaches its minimum size, `0.1`. It remains at this size until it dies.
 
+**Swift**:
+
+```swift
+let scaleSequence = SKKeyframeSequence(keyframeValues: [0.2, 0.7, 0.1],
+                                       times: [0.0, 0.250, 0.75])
+myEmitter.particleScaleSequence = scaleSequence
+```
+
+**Obj-C**:
+
+```objc
+SKKeyframeSequence  *scaleSequence = [[SKKeyframeSequence alloc] initWithKeyframeValues:@[@0.2,@0.7,@0.1] times:@[@0.0,@0.250,@0.75]];
+myEmitter.particleScaleSequence = scaleSequence;
+```
+
 ## See Also
 
 - [var particleAction: SKAction?](skemitternode/particleaction.md)

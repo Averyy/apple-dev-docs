@@ -29,6 +29,10 @@ You specify velocities in the coordinate space of the physics simulation defined
 
 The behavior of an entity with a physics motion component depends on the entity’s [`mode`](physicsbodycomponent/mode.md) setting:
 
+- **[`PhysicsBodyMode.static`](physicsbodymode/static.md)**: The physics simulation ignores the velocities. The entity doesn’t move.
+- **[`PhysicsBodyMode.kinematic`](physicsbodymode/kinematic.md)**: The physics simulation moves the body according to the values you set for [`angularVelocity`](physicsmotioncomponent/angularvelocity.md) and [`linearVelocity`](physicsmotioncomponent/linearvelocity.md).
+- **[`PhysicsBodyMode.dynamic`](physicsbodymode/dynamic.md)**: The physics simulation overwrites the velocity values based on simulation, and ignores any values that you write.
+
 ## Topics
 
 ### Creating the motion component

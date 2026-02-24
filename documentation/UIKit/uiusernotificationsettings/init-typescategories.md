@@ -28,8 +28,8 @@ After creating a new settings object, register that object by calling the [`regi
 
 ## Parameters
 
-- `types`: The notification types that your app supports. For a list of possible values, see the constants for the   type.
-- `categories`: A set of   objects that define the groups of actions a notification may include.
+- `types`: The notification types that your app supports. For a list of possible values, see the constants for the [`UIUserNotificationType`](uiusernotificationtype.md) type.
+- `categories`: A set of [`UIUserNotificationCategory`](uiusernotificationcategory.md) objects that define the groups of actions a notification may include.
 
 
 ---

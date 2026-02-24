@@ -25,7 +25,7 @@ The converted rectangle.
 ## Parameters
 
 - `rect`: A rectangle specified in the local coordinate system (bounds) of the receiver.
-- `view`: The view that is the target of the conversion operation. If   is  , this method instead converts to window base coordinates. Otherwise, both   and the receiver must belong to the same   object.
+- `view`: The view that is the target of the conversion operation. If `view` is `nil`, this method instead converts to window base coordinates. Otherwise, both `view` and the receiver must belong to the same [`UIWindow`](uiwindow.md) object.
 
 ## See Also
 

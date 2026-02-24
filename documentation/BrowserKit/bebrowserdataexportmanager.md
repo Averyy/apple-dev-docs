@@ -21,7 +21,7 @@ class BEBrowserDataExportManager
 
 #### Overview
 
-This class coordinates the transfer of browsing data by presenting an  when someone exports data through your app’s UI (see [`requestExport(for:token:completionHandler:)`](bebrowserdataexportmanager/requestexport(for:token:completionhandler:).md)). Call this class’s [`exportBrowserData:completionHandler:`](bebrowserdataexportmanager/exportbrowserdata:completionhandler:.md) to stream browsing data to the system. For more information and details about the export sheet, see [`Transferring browsing data to another browser`](transferring-browsing-data-to-another-browser.md).
+This class coordinates the transfer of browsing data by presenting an *export sheet* when someone exports data through your app’s UI (see [`requestExport(for:token:completionHandler:)`](bebrowserdataexportmanager/requestexport(for:token:completionhandler:).md)). Call this class’s [`exportBrowserData:completionHandler:`](bebrowserdataexportmanager/exportbrowserdata:completionhandler:.md) to stream browsing data to the system. For more information and details about the export sheet, see [`Transferring browsing data to another browser`](transferring-browsing-data-to-another-browser.md).
 
 ## Topics
 

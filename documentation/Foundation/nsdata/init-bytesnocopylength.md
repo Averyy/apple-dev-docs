@@ -30,8 +30,8 @@ The returned object takes ownership of the `bytes` pointer and frees it on deall
 
 ## Parameters
 
-- `bytes`: A buffer containing data for the new object.   must point to a memory block allocated with  .
-- `length`: The number of bytes to hold from  . This value must not exceed the length of  .
+- `bytes`: A buffer containing data for the new object. `bytes` must point to a memory block allocated with `malloc`.
+- `length`: The number of bytes to hold from `bytes`. This value must not exceed the length of `bytes`.
 
 ## See Also
 

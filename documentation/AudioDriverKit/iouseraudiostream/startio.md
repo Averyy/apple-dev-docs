@@ -26,7 +26,7 @@ Subclass and override this method to handle hardware-specific tasks during I/O s
 
 ## Parameters
 
-- `in_flags`: A   to indicate I/O startup behavior.
+- `in_flags`: A `IOUserAudioStartStopFlag` to indicate I/O startup behavior.
 
 ## See Also
 

@@ -30,7 +30,7 @@ In most cases, you can simply use [`init(name:size:)`](uifont/init(name:size:).m
 ## Parameters
 
 - `descriptor`: The font descriptor to match.
-- `pointSize`: The size in points to which the font is scaled. If greater than 0.0, it has precedence over   in  .
+- `pointSize`: The size in points to which the font is scaled. If greater than 0.0, it has precedence over `UIFontDescriptorSizeAttribute` in `descriptor`.
 
 ## See Also
 

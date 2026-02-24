@@ -19,6 +19,13 @@ object ServiceConfigResponse
 - [object ServiceConfigResponse.Limits](serviceconfigresponse/limits-data.dictionary.md)
 - [object ServiceConfigResponse.Urls](serviceconfigresponse/urls-data.dictionary.md)
 
+## Properties
+
+- `errorCodes` ([ResponseErrorCode])
+- `limits` (ServiceConfigResponse.Limits)
+- `notificationTypes` ([string])
+- `urls` (ServiceConfigResponse.Urls)
+
 ## See Also
 
 - [object ErrorResponse](errorresponse.md)

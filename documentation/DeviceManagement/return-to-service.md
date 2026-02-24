@@ -35,6 +35,10 @@ The device sends the `ReturnToService` message when the user triggers a return t
 - [object ReturnToServiceResponse](returntoserviceresponse.md)
   The return-to-service response details.
 
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/checkin`
+
 ## Request Body
 
 The request object the system sends for the `ReturnToService` request.

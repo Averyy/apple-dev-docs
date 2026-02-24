@@ -26,8 +26,8 @@ You may assign any `name`/`value` pair you wish to a range of characters. Raises
 
 ## Parameters
 
-- `name`: A string specifying the attribute name. Attribute keys can be supplied by another framework or can be custom ones you define. For information about the system-supplied attribute keys, see the Constants section in  .
-- `value`: The attribute value associated with  .
+- `name`: A string specifying the attribute name. Attribute keys can be supplied by another framework or can be custom ones you define. For information about the system-supplied attribute keys, see the Constants section in [`NSAttributedString`](nsattributedstring.md).
+- `value`: The attribute value associated with `name`.
 - `range`: The range of characters to which the specified attribute/value pair applies.
 
 ## See Also

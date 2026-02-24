@@ -23,7 +23,8 @@ func loadMetadata(for format: AVMetadataFormat) async throws -> [AVMetadataItem]
 ## Parameters
 
 - `format`: The format of the metadata items to load.
-- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters:
+- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters: - **metadata**: The loaded metadata, or an empty array if no metadata items for the specified format exist. The value is `nil` if an error occurs.
+- **error**: An error object if the request fails; otherwise, nil.
 
 ## See Also
 

@@ -30,7 +30,7 @@ SceneKit does not define any requirements for the contents of the `key` paramete
 ## Parameters
 
 - `animation`: The animation object to be added.
-- `key`: An string identifying the animation for later retrieval. You may pass   if you don’t need to reference the animation later.
+- `key`: An string identifying the animation for later retrieval. You may pass `nil` if you don’t need to reference the animation later.
 
 ## See Also
 

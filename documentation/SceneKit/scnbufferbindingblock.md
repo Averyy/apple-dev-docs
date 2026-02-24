@@ -24,6 +24,11 @@ typealias SCNBufferBindingBlock = (any SCNBufferStream, SCNNode, any SCNShadable
 
 The block takes the following parameters:
 
+- **buffer**: An object that provides write access to the buffer. Use the [`writeBytes(_:count:)`](scnbufferstream/writebytes(_:count:).md) method on this object to write data for use by the shader.
+- **node**: The node to be rendered using the shader program.
+- **shadable**: The material or geometry to be rendered using the shader program.
+- **renderer**: The view (or other SceneKit renderer) responsible for rendering.
+
 ## See Also
 
 - [func handleBinding(ofBufferNamed: String, frequency: SCNBufferFrequency, handler: SCNBufferBindingBlock)](scnprogram/handlebinding(ofbuffernamed:frequency:handler:).md)

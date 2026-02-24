@@ -20,6 +20,11 @@
 object StatusReport.Error
 ```
 
+## Properties
+
+- `Reasons` ([StatusReason])
+- `StatusItem` (string) *(required)*
+
 
 ---
 

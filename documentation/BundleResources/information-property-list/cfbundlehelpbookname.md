@@ -8,6 +8,10 @@ The name of the help file that will be opened in Help Viewer.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [CFAppleHelpAnchor](information-property-list/cfapplehelpanchor.md)

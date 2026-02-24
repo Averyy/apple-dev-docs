@@ -40,8 +40,8 @@ If the destination buffer is full and the return value is not [`COMPRESSION_STAT
 
 ## Parameters
 
-- `stream`: A pointer to an allocated and fully initialized   structure.
-- `flags`: A constant of type  ; this should be   if there is no further input data, or   otherwise.
+- `stream`: A pointer to an allocated and fully initialized [`compression_stream`](compression_stream.md) structure.
+- `flags`: A constant of type [`compression_stream_flags`](compression_stream_flags.md); this should be [`COMPRESSION_STREAM_FINALIZE`](compression_stream_finalize.md) if there is no further input data, or `0` otherwise.
 
 ## See Also
 

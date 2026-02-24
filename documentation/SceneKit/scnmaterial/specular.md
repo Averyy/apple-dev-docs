@@ -24,7 +24,7 @@ var specular: SCNMaterialProperty { get }
 
 Specular shading describes the amount and color of light reflected by the material directly toward the viewer, forming a bright highlight on the surface and simulating a glossy or shiny appearance. You adjust the sharpness of specular highlights using the material’s [`shininess`](scnmaterial/shininess.md) property.
 
-By default, the specular property’s [`contents`](scnmaterialproperty/contents.md) object is a black color, causing the material to appear dull or matte. Changing the specular property’s contents to a brighter color causes specular highlights to appear in that color, making the surface appear shiny. When you apply a texture to the specular property, the texture image becomes a —the brightness of each pixel in the image determines the tendency of each point on the material’s surface to create specular highlights when lit.
+By default, the specular property’s [`contents`](scnmaterialproperty/contents.md) object is a black color, causing the material to appear dull or matte. Changing the specular property’s contents to a brighter color causes specular highlights to appear in that color, making the surface appear shiny. When you apply a texture to the specular property, the texture image becomes a *specular map*—the brightness of each pixel in the image determines the tendency of each point on the material’s surface to create specular highlights when lit.
 
 The figure below shows a material (with a texture for its [`diffuse`](scnmaterial/diffuse.md) property) before and after providing a specular map image. Notice that the bright specular highlights appear only on portions of the surface where the specular map image is white.
 

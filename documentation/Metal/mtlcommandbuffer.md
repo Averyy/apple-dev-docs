@@ -31,7 +31,7 @@ protocol MTLCommandBuffer : NSObjectProtocol
 A command buffer represents a chunk of work for the GPU that stores the commands you encode to it, as well as any resources those commands need. You primarily use a command buffer to:
 
 - Create command encoders and call their methods to add commands to the buffer
-- Optionally reserve a place for the command buffer in its command queue by  the command buffer, even before you encode any commands into it
+- Optionally reserve a place for the command buffer in its command queue by *enqueuing* the command buffer, even before you encode any commands into it
 - Submit, or commit_,_ the contents of the command buffer to the command queue that creates it to run on the GPU device the queue represents
 
 Create a command encoder from an [`MTLCommandQueue`](mtlcommandqueue.md) instance by calling its [`makeCommandBuffer()`](mtlcommandqueue/makecommandbuffer().md) method. Typically, you create one or more command queues when your app launches and then keep them throughout your app’s lifetime.

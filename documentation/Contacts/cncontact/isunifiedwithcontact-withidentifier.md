@@ -25,7 +25,7 @@ func isUnifiedWithContact(withIdentifier contactIdentifier: String) -> Bool
 
 ## Parameters
 
-- `contactIdentifier`: An identifier for an existing contact. If this string is empty, the method returns  .
+- `contactIdentifier`: An identifier for an existing contact. If this string is empty, the method returns [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

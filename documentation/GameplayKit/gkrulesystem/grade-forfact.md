@@ -31,7 +31,7 @@ If the specified fact is not in the [`facts`](gkrulesystem/facts.md) array, this
 
 ## Parameters
 
-- `fact`: An object representing a truth claimed or rejected by the rule system. For details, see the   property.
+- `fact`: An object representing a truth claimed or rejected by the rule system. For details, see the [`facts`](gkrulesystem/facts.md) property.
 
 ## See Also
 

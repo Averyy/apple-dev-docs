@@ -36,7 +36,7 @@ If your file provider loses synchronization, but you aren’t interested in pres
 ## Parameters
 
 - `itemIdentifier`: The identifier of the item to reimport. The system reimports the item and all of its children.
-- `completionHandler`: A block called by the system immediately after receiving the request. The completion handler takes the following parameters:
+- `completionHandler`: A block called by the system immediately after receiving the request. The completion handler takes the following parameters: - **error**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

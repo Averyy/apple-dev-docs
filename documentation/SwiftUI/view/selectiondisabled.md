@@ -52,7 +52,7 @@ Picker("Flavor", selection: $selectedFlavor) {
 
 ## Parameters
 
-- `isDisabled`: A Boolean value that determines whether users can   select this view.
+- `isDisabled`: A Boolean value that determines whether users can select this view.
 
 ## See Also
 

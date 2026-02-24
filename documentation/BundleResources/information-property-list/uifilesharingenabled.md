@@ -12,6 +12,10 @@ A Boolean value indicating whether the app shares files.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 If you set this key to `YES`, your app can share files with the user. Place the files in a `Documents` folder located in the app’s home directiory. The default value is `NO`.

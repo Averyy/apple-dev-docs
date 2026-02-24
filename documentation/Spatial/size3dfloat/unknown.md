@@ -1,9 +1,9 @@
-# ==(_:_:)
+# /=(_:_:)
 
 **Framework**: Spatial  
 **Kind**: op
 
-Returns a Boolean value that indicates whether two sizes are equal.
+Calculates the element-wise division of a size and a scalar value and stores the result in the left-hand-side variable.
 
 **Availability**:
 - iOS 26.0+
@@ -17,15 +17,15 @@ Returns a Boolean value that indicates whether two sizes are equal.
 ## Declaration
 
 ```swift
-static func == (lhs: Size3DFloat, rhs: Size3DFloat) -> Bool
+static func /= (lhs: inout Size3DFloat, rhs: Float)
 ```
 
 ## Parameters
 
-- `lhs`: The first size to compare.
-- `rhs`: The second size to compare.
+- `lhs`: The first value.
+- `rhs`: The second value.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spatial/size3dfloat/==(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/size3dfloat/_=(_:_:))*

@@ -24,8 +24,8 @@ Use state transitions to perform actions related to your view or text storage. W
 
 ## Parameters
 
-- `writingToolsCoordinator`: The coordinator object providing   information to your custom view.
-- `completion`: A handler to execute when your delegate finishes processing   the change of state. The handler has no parameters or return value. You   must call this handler at some point during the implementation of your method.
+- `writingToolsCoordinator`: The coordinator object providing information to your custom view.
+- `completion`: A handler to execute when your delegate finishes processing the change of state. The handler has no parameters or return value. You must call this handler at some point during the implementation of your method.
 
 
 ---

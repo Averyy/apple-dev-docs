@@ -29,6 +29,30 @@ Use this class to configure alerts and action sheets with the message that you w
 
 In addition to displaying a message to a user, you can associate actions with your alert controller to give people a way to respond. For each action you add using the [`addAction(_:)`](uialertcontroller/addaction(_:).md) method, the alert controller configures a button with the action details. When a person taps that action, the alert controller executes the block you provided when creating the action object. The following code shows how to configure an alert with a single action.
 
+**Swift**:
+
+```swift
+let alert = UIAlertController(title: "My Alert", message: "This is an alert.", preferredStyle: .alert) 
+alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in 
+NSLog("The \"OK\" alert occured.")
+}))
+self.present(alert, animated: true, completion: nil)
+```
+
+**Objective-C**:
+
+```objc
+UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
+                               message:@"This is an alert."
+                               preferredStyle:UIAlertControllerStyleAlert];
+ 
+UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+   handler:^(UIAlertAction * action) {}];
+ 
+[alert addAction:defaultAction];
+[self presentViewController:alert animated:YES completion:nil];
+```
+
 When configuring an alert with the [`UIAlertController.Style.alert`](uialertcontroller/style/alert.md) style, you can also add text fields to the alert interface. The alert controller lets you provide a block for configuring your text fields prior to display. The alert controller maintains a reference to each text field so that you can access its value later.
 
 > ❗ **Important**:  The [`UIAlertController`](uialertcontroller.md) class is intended to be used as-is and doesn’t support subclassing. The view hierarchy for this class is private and must not be modified.

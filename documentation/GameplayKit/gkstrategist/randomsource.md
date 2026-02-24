@@ -24,11 +24,11 @@ var randomSource: (any GKRandom)? { get set }
 
 A strategist class uses this random source when you call the [`bestMoveForActivePlayer()`](gkstrategist/bestmoveforactiveplayer().md) method. Different strategist classes use randomization in different ways:
 
-- A  strategy, such as that of the [`GKMinmaxStrategist`](gkminmaxstrategist.md) class, can reach states where multiple moves are rated the most desirable. In such cases, the strategist can randomly choose from among the best possible moves, making the behavior of a computer-controlled player appear more natural and unpredictable.
+- A *deterministic* strategy, such as that of the [`GKMinmaxStrategist`](gkminmaxstrategist.md) class, can reach states where multiple moves are rated the most desirable. In such cases, the strategist can randomly choose from among the best possible moves, making the behavior of a computer-controlled player appear more natural and unpredictable.
 
 If this property is set to `nil` (the default), the [`GKMinmaxStrategist`](gkminmaxstrategist.md) class method does not randomize—that is, when repeatedly presented with the same set of equally-optimal moves, the [`bestMoveForActivePlayer()`](gkstrategist/bestmoveforactiveplayer().md) method always makes the same choice.
 
-- A  strategy, such as that of the [`GKMonteCarloStrategist`](gkmontecarlostrategist.md) class,  a random source in order to randomly explore the set of possible moves.
+- A *probabilistic* strategy, such as that of the [`GKMonteCarloStrategist`](gkmontecarlostrategist.md) class, *requires* a random source in order to randomly explore the set of possible moves.
 
 If this property is set to `nil` (the default), the [`GKMonteCarloStrategist`](gkmontecarlostrategist.md) class throws an exception when you call the [`bestMoveForActivePlayer()`](gkstrategist/bestmoveforactiveplayer().md) method.
 

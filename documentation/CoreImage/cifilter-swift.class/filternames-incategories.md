@@ -29,7 +29,7 @@ When you pass more than one filter category, this method returns the intersectio
 
 ## Parameters
 
-- `categories`: One or more of the filter category keys defined in  . Pass   to get all filters in all categories.
+- `categories`: One or more of the filter category keys defined in [`Filter Category Keys`](filter-category-keys.md). Pass `nil` to get all filters in all categories.
 
 ## See Also
 

@@ -47,7 +47,7 @@ If you want to display a preview beside the context menu, use [`contextMenu(menu
 
 ## Parameters
 
-- `menuItems`: A closure that produces the menu’s contents. You   can deactivate the context menu by returning nothing from the closure.
+- `menuItems`: A closure that produces the menu’s contents. You can deactivate the context menu by returning nothing from the closure.
 
 ## See Also
 

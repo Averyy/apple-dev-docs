@@ -27,7 +27,7 @@ This method is called to give a widget an opportunity to update its contents and
 
 ## Parameters
 
-- `completionHandler`: The block takes the following parameter:
+- `completionHandler`: A block to be called when the widget’s content has been updated. The block takes the following parameter: - **result**: A value of type `NCUpdateResult` that describes the result of the update procedure. ([`NCUpdateResult`](ncupdateresult.md) lists the possible values of `result`.)
 
 ## See Also
 

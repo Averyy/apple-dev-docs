@@ -8,7 +8,12 @@ Create a service configuration entry point to your MDM server to access to frequ
 
 Add an unauthenticated HTTPS request entry point to your server to make it easier to access useful information about your MDM server. Create the entry point using the endpoint `/MDMServiceConfig`; for example, `https://mdm.example.com/MDMServiceConfig`. The server code should return a UTF-8 JSON-encoded hash (`Content-Type: application/json; charset=UTF8`) with the following values in the body of its response:
 
+- **`dep_anchor_certs_url`**: The URL a device uses to obtain the certificates required to trust the URL specified by the `dep_enrollment_url` key. This value has the same format as the `anchor_certs` value in the DEP profile, except the body needs to be UTF-8 JSON-encoded for transfer. The decoded body of the response from this URL should be usable in a Device Enrollment Program (DEP) profile under the `anchor_certs` key without any modification.
+
 Provide this URL even if the MDM server doesn’t require additional certificates because it’s using a trusted SSL certificate. However, provide either an empty body (`Content-Length: 0`) or an empty array JSON string (`'[]'`) .
+
+- **`dep_enrollment_url`**: The URL a device uses to begin MDM enrollment with the MDM server. This is also the URL to use for the `url` key when defining a DEP profile using `https://mdmenrollment.apple.com/profile`.
+- **`trust_profile_url`**: The URL a device uses to obtain a Trust Profile for the MDM server, as a fully-formed `.mobileconfig` profile with only payloads of type `com.apple.security.root`.
 
 Omit this key if the MDM server doesn’t require a Trust Profile because it’s using a trusted SSL certificate. Don’t return a URL that would generate an empty profile.
 

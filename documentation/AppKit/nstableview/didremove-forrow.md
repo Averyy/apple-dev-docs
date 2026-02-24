@@ -23,7 +23,7 @@ The subclass can implement this method to be alerted when `rowView` has been rem
 ## Parameters
 
 - `rowView`: The row view.
-- `row`: The row index. The index is   for rows that are being deleted from the table, and no longer have a valid row; otherwise it is the valid row that is being removed due to it being moved off screen.
+- `row`: The row index. The index is `-1` for rows that are being deleted from the table, and no longer have a valid row; otherwise it is the valid row that is being removed due to it being moved off screen.
 
 ## See Also
 

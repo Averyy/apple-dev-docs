@@ -9,6 +9,10 @@ The default launch screen configuration.
 - iOS 14.0+
 - iPadOS 14.0+
 
+
+
+**Type**: string
+
 #### Discussion
 
 Provide the identifier, stored in the [`UILaunchScreenIdentifier`](information-property-list/uilaunchscreens/uilaunchscreendefinitions/uilaunchscreenidentifier.md) key, of one of the launch screen definitions in your [`UILaunchScreenDefinitions`](information-property-list/uilaunchscreens/uilaunchscreendefinitions.md) array. The system displays the named launch screen when launching your app in response to a URL scheme that you don’t enumerate in the [`UIURLToLaunchStoryboardAssociations`](information-property-list/uilaunchstoryboards/uiurltolaunchstoryboardassociations.md) dictionary, or when the user launches your app directly.

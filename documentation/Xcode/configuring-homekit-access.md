@@ -22,7 +22,7 @@ After you add the HomeKit capability, Xcode links the `HomeKit` framework to you
 
 To help protect the security and privacy of the user’s home automation network, your app requires the user’s explicit permission before it can control HomeKit accessories on that network. The system prompts the user for their permission the first time your app uses the HomeKit framework, which is when you initialize [`HMHomeManager`](https://developer.apple.com/documentation/HomeKit/HMHomeManager).
 
-The App Store requires your app to include a , which accurately and concisely describes the reasons the app needs access to the user’s network. The system displays this information to the user when requesting their permission, which helps them make an informed decision. Follow these steps to add the purpose string to your target:
+The App Store requires your app to include a *purpose string*, which accurately and concisely describes the reasons the app needs access to the user’s network. The system displays this information to the user when requesting their permission, which helps them make an informed decision. Follow these steps to add the purpose string to your target:
 
 1. In the Project navigator, select your target’s `Info.plist` file.
 2. Move the mouse pointer over the “Information Property List” key.

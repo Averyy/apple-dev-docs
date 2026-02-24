@@ -18,7 +18,7 @@ func removeAccessory(_ accessory: ASAccessory) async throws
 ## Parameters
 
 - `accessory`: The accessory to remove.
-- `completionHandler`: A block or closure that executes after the remove operation completes. The completion handler receives an   instance if the remove operation encounters an error.
+- `completionHandler`: A block or closure that executes after the remove operation completes. The completion handler receives an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) instance if the remove operation encounters an error.
 
 ## See Also
 

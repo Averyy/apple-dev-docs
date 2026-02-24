@@ -29,7 +29,7 @@ If your source string includes custom attributes defined by conformers to [`Mark
 - `url`: The URL to load Markdown-formatted data from.
 - `scope`: An attribute scope to associate with the attributed string.
 - `options`: Options that affect how the initializer interprets formatting in the Markdown string. This parameter defaults to no options.
-- `baseURL`: The base URL to use when resolving Markdown URLs. The initializer treats URLs as being relative to this URL. If this value is  , the initializer doesn’t resolve URLs. The default is  .
+- `baseURL`: The base URL to use when resolving Markdown URLs. The initializer treats URLs as being relative to this URL. If this value is `nil`, the initializer doesn’t resolve URLs. The default is `nil`.
 
 ## See Also
 

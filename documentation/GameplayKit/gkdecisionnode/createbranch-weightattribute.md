@@ -31,6 +31,27 @@ This method adds a random branch to the decision tree; when you use the findActi
 
 You can use this method to add some unpredictability to an otherwise deterministic decision; for example, a strategy combat game might use this method to choose an attack at random after other criteria have been satisfied. Here, the “Psychic Strike” attack will randomly occur 10% of the time (because its weight is 1 and the sum of all  weights for the node it branches from is 10):
 
+**Swift**:
+
+```swift
+ 
+let lastNode: GKDecisionNode = /* a node created earlier */
+ 
+lastNode.createBranch(withWeight: 5, attribute: "Pound")
+lastNode.createBranch(withWeight: 4, attribute: "Barrier")
+lastNode.createBranch(withWeight: 1, attribute: "Psychic Strike")
+```
+
+**Objective-C**:
+
+```objc
+GKDecisionNode *lastNode = /* a node created earlier */
+ 
+[lastNode createBranchWithWeight:5 attribute:@"Pound"];
+[lastNode createBranchWithWeight:4 attribute:@"Barrier"];
+[lastNode createBranchWithWeight:1 attribute:@"Psychic Strike"];
+```
+
 ## Parameters
 
 - `weight`: The relative probability that a random choice should follow this branch.

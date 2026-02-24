@@ -21,7 +21,7 @@ func value(forAnnotationKey key: PDFAnnotationKey) -> Any?
 
 ## Parameters
 
-- `key`: A   or appropriate string from the Adobe PDF Specification.
+- `key`: A [`PDFAnnotationKey`](pdfannotationkey.md) or appropriate string from the Adobe PDF Specification.
 
 ## See Also
 

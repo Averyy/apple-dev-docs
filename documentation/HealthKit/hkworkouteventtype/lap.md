@@ -29,9 +29,9 @@ Lap events partition a workout into segments of equal distance (for example, lap
 
 When you receive lap events from the HealthKit store, examine the event’s [`dateInterval`](hkworkoutevent/dateinterval.md) property to interpret the lap correctly:
 
- Older lap events (created before iOS 11 and watchOS 4) have a zero-duration date interval that marks the end of the lap. Each lap is assumed to start when the previous lap ends, and laps fill the entire workout completely.****
+**Zero-duration intervals.** Older lap events (created before iOS 11 and watchOS 4) have a zero-duration date interval that marks the end of the lap. Each lap is assumed to start when the previous lap ends, and laps fill the entire workout completely.****
 
- Newer lap events use the date interval to mark the start and the duration of the lap. These events have a nonzero duration, and they do not need to fill the workout; however, you should ideally mark any rest periods between laps using [`HKWorkoutEventType.pause`](hkworkouteventtype/pause.md) and [`HKWorkoutEventType.resume`](hkworkouteventtype/resume.md) events.
+**Nonzero-duration intervals.** Newer lap events use the date interval to mark the start and the duration of the lap. These events have a nonzero duration, and they do not need to fill the workout; however, you should ideally mark any rest periods between laps using [`HKWorkoutEventType.pause`](hkworkouteventtype/pause.md) and [`HKWorkoutEventType.resume`](hkworkouteventtype/resume.md) events.
 
 ## See Also
 

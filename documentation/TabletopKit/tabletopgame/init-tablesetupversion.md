@@ -21,7 +21,7 @@ Players can only join multiplayer games when their rules version matches other p
 
 ## Parameters
 
-- `tableSetup`: The initial arrangement of seats, equipment,   and counters during gameplay.
+- `tableSetup`: The initial arrangement of seats, equipment, and counters during gameplay.
 - `version`: The version of rules for this game.
 
 ## See Also

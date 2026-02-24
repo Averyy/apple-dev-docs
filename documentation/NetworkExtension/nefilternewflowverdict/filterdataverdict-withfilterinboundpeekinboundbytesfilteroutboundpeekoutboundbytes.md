@@ -25,9 +25,9 @@ A `NEFilterNewFlowVerdict` object.
 ## Parameters
 
 - `filterInbound`: A Boolean indicating whether or not the filter needs to see inbound data for the flow.
-- `peekInboundBytes`: The number of inbound bytes that the filter needs to see in the subsequent call to -[   ].
+- `peekInboundBytes`: The number of inbound bytes that the filter needs to see in the subsequent call to -[[`NEFilterDataProvider`](nefilterdataprovider.md) `handleInboundDataFromFlow:readBytesStartOffset:readBytes:`].
 - `filterOutbound`: A Boolean indicating whether or not the filter needs to see outbound data for the flow.
-- `peekOutboundBytes`: The number of outbound bytes that the filter needs to see in the subsequent call to -[   :].
+- `peekOutboundBytes`: The number of outbound bytes that the filter needs to see in the subsequent call to -[[`NEFilterDataProvider`](nefilterdataprovider.md) `handleOutboundDataFromFlow:readBytesStartOffset:readBytes`:].
 
 ## See Also
 

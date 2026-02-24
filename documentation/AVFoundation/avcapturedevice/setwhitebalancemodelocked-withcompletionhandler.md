@@ -27,8 +27,8 @@ Before changing the value the white balance gains, you must call [`lockForConfig
 
 ## Parameters
 
-- `whiteBalanceGains`: The white balance gains to set. Pass a value of   to leave the current white balance unchanged.
-- `handler`: You can pass   for this parameter if you don’t require this information.
+- `whiteBalanceGains`: The white balance gains to set. Pass a value of [`currentWhiteBalanceGains`](avcapturedevice/currentwhitebalancegains.md) to leave the current white balance unchanged.
+- `handler`: A callback the system invokes when the adjustment to the white balance is complete and the [`whiteBalanceMode`](avcapturedevice/whitebalancemode-swift.property.md) set to a locked state. If you call this method multiple times, the system calls the completion handlers in FIFO order. The system passes a time value that matches that of the first buffer to which its applied all settings. It synchronizes the timestamp to the device clock, and you must convert the timestamp to the [`synchronizationClock`](avcapturesession/synchronizationclock.md) prior to comparison with the timestamps of buffers delivered through an [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md). You can pass `nil` for this parameter if you don’t require this information.
 
 ## Topics
 

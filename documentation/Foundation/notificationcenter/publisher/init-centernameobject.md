@@ -24,7 +24,7 @@ init(center: NotificationCenter, name: Notification.Name, object: AnyObject? = n
 
 - `center`: The notification center to publish notifications for.
 - `name`: The name of the notification to publish.
-- `object`: The object posting the named notfication. If  , the publisher emits elements for any object producing a notification with the given name.
+- `object`: The object posting the named notfication. If `nil`, the publisher emits elements for any object producing a notification with the given name.
 
 
 ---

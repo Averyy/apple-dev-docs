@@ -20,9 +20,9 @@ The elements of `x` are copied to the corresponding elements of `y`.
 
 ## Parameters
 
-- `n`: Number of elements in vectors   and  ; must be a multiple of 4.
-- `x`: A vector array of   values.
-- `y`: A second vector array of   values.
+- `n`: Number of elements in vectors `x` and `y`; must be a multiple of 4.
+- `x`: A vector array of `float` values.
+- `y`: A second vector array of `float` values.
 
 ## See Also
 

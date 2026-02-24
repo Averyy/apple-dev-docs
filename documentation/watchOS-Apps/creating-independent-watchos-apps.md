@@ -21,6 +21,9 @@ People can purchase watchOS apps directly from the App Store on Apple Watch. The
 
 When you create a watchOS project in Xcode, you have two choices:
 
+- **Watch-only App**: Use this option to create an app that’s only available on Apple Watch, with no related iPhone app.
+- **Watch App with New Companion iOS App**: Use this option to create a watchOS app and an iOS app that deliver similar or related experiences.
+
 ![A screenshot of Xcode’s new project sheet, with the Watch-only App option in a selected state.](https://docs-assets.developer.apple.com/published/226bc2583485631dfbe6dcfbc9284800/creating-independent-watchos-apps-1%402x.png)
 
 ##### Create a Watch Only App
@@ -51,6 +54,9 @@ The other three targets represent the functional portions of your project: your 
 ##### Create a Watch App with a Companion Ios App
 
 If you create a watchOS app with a companion iOS app, the resulting watchOS app can either be dependent upon, or independent of, the iOS app.
+
+- **Dependent watchOS app**: Your watchOS app relies on the companion iOS app to function properly. By default, Xcode creates a dependent watchOS app when you create a watchOS app with a companion iOS app. When a watchOS app is dependent, people need to purchase and install both versions of the app.
+- **Independent watchOS app**: Your watchOS app doesn’t need the companion iOS app to operate properly. People can choose to install the watchOS app, the iOS app, or both. To create an independent watchOS app, you need to convert a dependent watchOS app.
 
 The system downloads and installs the watchOS app directly to Apple Watch for both dependent and independent apps. However, the user can’t launch a dependent watchOS app until the iOS app finishes installing on iPhone.
 

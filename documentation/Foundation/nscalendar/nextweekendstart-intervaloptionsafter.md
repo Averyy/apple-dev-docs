@@ -32,7 +32,7 @@ Note that a particular calendar day may not necessarily fall entirely within a w
 
 - `datep`: Upon return, contains the starting date of the next weekend period.
 - `tip`: Upon return, contains the time interval of the next weekend period.
-- `options`: Options for the calculation. If you specify a backward search option ( ), the starting date and time interval range of the preceding weekend period will be returned by reference instead.
+- `options`: Options for the calculation. If you specify a backward search option ([`searchBackwards`](nscalendar/options/searchbackwards.md)), the starting date and time interval range of the preceding weekend period will be returned by reference instead.
 - `date`: The date for which to perform the calculation.
 
 ## See Also

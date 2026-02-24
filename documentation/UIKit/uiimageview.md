@@ -57,8 +57,8 @@ An image view can store an animated image sequence and play all or part of that 
 
 Consider the following tips when displaying a sequence of animated images:
 
--  When scaling is required, the image view scales each image in the sequence separately. If the images are different sizes, scaling may not yield the results you want.
--  Make sure the [`scale`](uiimage/scale.md) property of each image contains the same value.
+- **All images in the sequence should have the same size.** When scaling is required, the image view scales each image in the sequence separately. If the images are different sizes, scaling may not yield the results you want.
+- **All images in the sequence should use the same content scale factor.** Make sure the [`scale`](uiimage/scale.md) property of each image contains the same value.
 
 ##### Respond to Touch Events
 
@@ -70,16 +70,16 @@ For more information about handling events, see [`Event Handling Guide for UIKit
 
 Image scaling and alpha blending are two relatively expensive operations that can impact your app’s performance. To maximize performance of your image view code, consider the following tips:
 
--  If you expect certain large images to be displayed frequently in a scaled-down thumbnail view, consider creating the scaled-down images in advance and storing them in a thumbnail cache. Doing so alleviates the need for each image view to scale them separately.
--  Rather than assigning a large image to an image view, created a scaled version that matches the current size of the image view. You can also create a resizable image object using the [`UIImage.ResizingMode.tile`](uiimage/resizingmode-swift.enum/tile.md) option, which tiles the image instead of scaling it.
--  Unless you’re intentionally working with images that contain transparency (drawing UI elements, for example), make sure the [`isOpaque`](uiview/isopaque.md) property of your image view is set to [`true`](https://developer.apple.com/documentation/Swift/true). For more information about how transparency is determined, see [`Determine the final transparency of the image`](uiimageview#Determine-the-final-transparency-of-the-image.md).
+- **Cache scaled versions of frequently used images.** If you expect certain large images to be displayed frequently in a scaled-down thumbnail view, consider creating the scaled-down images in advance and storing them in a thumbnail cache. Doing so alleviates the need for each image view to scale them separately.
+- **Use images whose size is close to the size of the image view.** Rather than assigning a large image to an image view, created a scaled version that matches the current size of the image view. You can also create a resizable image object using the [`UIImage.ResizingMode.tile`](uiimage/resizingmode-swift.enum/tile.md) option, which tiles the image instead of scaling it.
+- **Make your image view opaque whenever possible.** Unless you’re intentionally working with images that contain transparency (drawing UI elements, for example), make sure the [`isOpaque`](uiview/isopaque.md) property of your image view is set to [`true`](https://developer.apple.com/documentation/Swift/true). For more information about how transparency is determined, see [`Determine the final transparency of the image`](uiimageview#Determine-the-final-transparency-of-the-image.md).
 
 ##### Debug Issues with Your Image View
 
 If your image view isn’t displaying what you expected, use the following tips to help diagnose the problem:
 
--  Use the [`init(named:in:compatibleWith:)`](uiimage/init(named:in:compatiblewith:).md) method of [`UIImage`](uiimage.md) to load images from asset catalogs or your app’s bundle. For images outside of your app’s bundle, use the [`imageWithContentsOfFile:`](uiimage/imagewithcontentsoffile:.md) method.
--  The [`UIImageView`](uiimageview.md) class doesn’t draw its content using the [`draw(_:)`](uiview/draw(_:).md) method. Use image views only to present images. To do custom drawing involving images, subclass [`UIView`](uiview.md) directly and draw your image there.
+- **Load images using the correct method.** Use the [`init(named:in:compatibleWith:)`](uiimage/init(named:in:compatiblewith:).md) method of [`UIImage`](uiimage.md) to load images from asset catalogs or your app’s bundle. For images outside of your app’s bundle, use the [`imageWithContentsOfFile:`](uiimage/imagewithcontentsoffile:.md) method.
+- **Don’t use image views for custom drawing.** The [`UIImageView`](uiimageview.md) class doesn’t draw its content using the [`draw(_:)`](uiview/draw(_:).md) method. Use image views only to present images. To do custom drawing involving images, subclass [`UIView`](uiview.md) directly and draw your image there.
 
 ##### Interface Builder Attributes
 

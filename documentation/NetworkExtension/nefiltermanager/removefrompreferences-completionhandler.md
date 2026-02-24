@@ -24,7 +24,7 @@ After the configuration is removed from the preferences the `NEFilterManager` ob
 
 ## Parameters
 
-- `completionHandler`: A block that takes an   object. This block will be executed on the caller’s main thread after the removal operation is complete. If the configuration does not exist in the Network Extension preferences or an error occurs while removing it, the error parameter will be set to an   object containing details about the error. See   for a list of possible errors. If the configuration is removed successfully the error parameter will be set to nil.
+- `completionHandler`: A block that takes an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object. This block will be executed on the caller’s main thread after the removal operation is complete. If the configuration does not exist in the Network Extension preferences or an error occurs while removing it, the error parameter will be set to an `NSError` object containing details about the error. See `NEFilterManagerError` for a list of possible errors. If the configuration is removed successfully the error parameter will be set to nil.
 
 ## See Also
 

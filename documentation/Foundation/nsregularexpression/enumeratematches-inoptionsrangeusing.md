@@ -49,9 +49,11 @@ If [`withoutAnchoringBounds`](nsregularexpression/matchingoptions/withoutanchori
 ## Parameters
 
 - `string`: The string.
-- `options`: The matching options to report. See   for the supported values.
+- `options`: The matching options to report. See [`NSRegularExpression.MatchingOptions`](nsregularexpression/matchingoptions.md) for the supported values.
 - `range`: The range of the string to test.
-- `block`: The Block returns void.
+- `block`: The Block enumerates the matches of the regular expression in the string. The block takes three arguments: - **result**: An [`NSTextCheckingResult`](nstextcheckingresult.md) specifying the match. This result gives the overall matched range via its [`range`](nstextcheckingresult/range.md) property, and the range of each individual capture group via its [`range(at:)`](nstextcheckingresult/range(at:).md) method. The range {`NSNotFound`, 0} is returned if one of the capture groups did not participate in this particular match.
+- **flags**: The current state of the matching progress. See [`NSRegularExpression.MatchingFlags`](nsregularexpression/matchingflags.md) for the possible values.
+- **stop**: A reference to a Boolean value. The Block can set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop further processing of the array. The stop argument is an out-only argument. You should only ever set this Boolean to [`true`](https://developer.apple.com/documentation/Swift/true) within the Block. The Block returns void.
 
 ## See Also
 

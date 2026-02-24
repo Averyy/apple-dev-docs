@@ -6,7 +6,7 @@ Protect system resources and user data from compromised apps by restricting acce
 
 #### Overview
 
-The  is an access control technology that macOS provides and enforces at the kernel level. The sandbox’s primary function is to contain damage to the system and the user’s data if the user executes a compromised app. While the sandbox doesn’t prevent attacks against your app, it does reduce the harm a successful attack can cause by restricting your app to the minimum set of privileges it requires to function properly.
+The *App Sandbox* is an access control technology that macOS provides and enforces at the kernel level. The sandbox’s primary function is to contain damage to the system and the user’s data if the user executes a compromised app. While the sandbox doesn’t prevent attacks against your app, it does reduce the harm a successful attack can cause by restricting your app to the minimum set of privileges it requires to function properly.
 
 A sandboxed app must explicitly state its intent to access a restricted resource or protected file location, otherwise the system prohibits any attempts it makes at runtime. Xcode’s App Sandbox capability allows you to state that intent by enabling the privileges that your app requires.
 
@@ -53,7 +53,7 @@ The following table describes the resource access entitlements the App Sandbox s
 
 ##### Enable Managed File Access
 
-The first time the user launches your sandboxed app, the system creates its  — a folder in `~/Library/Containers` that your app has exclusive read-write access to.
+The first time the user launches your sandboxed app, the system creates its *container* — a folder in `~/Library/Containers` that your app has exclusive read-write access to.
 
 To minimize the risk to user data, the system restricts your app’s file system access to just its container, but that container does include a number of symbolic links that resolve to common user folders, such as `~/Downloads` and `~/Pictures`. However, the system considers those sensitive folders and requires that your app include certain entitlements before it grants access to the resolved locations of the symbolic links. An unauthorized attempt to access one of those folders results in an “Operation not permitted” error.
 

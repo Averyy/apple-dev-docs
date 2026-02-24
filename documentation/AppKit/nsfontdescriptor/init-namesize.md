@@ -20,8 +20,8 @@ The new font descriptor.
 
 ## Parameters
 
-- `fontName`: The value for  .
-- `size`: The value for  .
+- `fontName`: The value for `NSFontNameAttribute`.
+- `size`: The value for `NSFontSizeAttribute`.
 
 ## See Also
 

@@ -23,8 +23,8 @@ The window displays the view that you specify.
 
 ## Parameters
 
-- `title`: The   view to use for the window’s title in system   menus and in the window’s title bar. Provide a title that   describes the purpose of the window.
-- `id`: A unique string identifier that you can use to   open the window.
+- `title`: The [`Text`](text.md) view to use for the window’s title in system menus and in the window’s title bar. Provide a title that describes the purpose of the window.
+- `id`: A unique string identifier that you can use to open the window.
 - `content`: The view content to display in the window.
 
 

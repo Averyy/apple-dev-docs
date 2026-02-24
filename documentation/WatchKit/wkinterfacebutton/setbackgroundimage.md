@@ -20,7 +20,7 @@ If `image` is a template image, the button tints that image using the current ba
 
 ## Parameters
 
-- `image`: The image to be displayed behind the button’s title text. The image is displayed behind the button’s title text. Specifying   removes the existing image. You may specify an image object that contains multiple images running as an animation. The image is scaled as needed to fill the button’s content area.
+- `image`: The image to be displayed behind the button’s title text. The image is displayed behind the button’s title text. Specifying `nil` removes the existing image. You may specify an image object that contains multiple images running as an animation. The image is scaled as needed to fill the button’s content area.
 
 ## See Also
 

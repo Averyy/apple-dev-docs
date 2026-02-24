@@ -24,7 +24,7 @@ var width: Measurement<UnitType>.FormatStyle.UnitWidth
 
 The `width` property specifies the display of the measurement unit. The possible values are [`abbreviated`](measurement/formatstyle/unitwidth/abbreviated.md), [`narrow`](measurement/formatstyle/unitwidth/narrow.md), and [`wide`](measurement/formatstyle/unitwidth/wide.md). The format style represents the unit in the shortest notation available.
 
-The following example shows  in each width for the `en_US` locale.
+The following example shows *100 degrees Fahrenheit* in each width for the `en_US` locale.
 
 ```swift
 let temperatureMeasurement = Measurement<UnitTemperature>(value: 100, unit: .fahrenheit)

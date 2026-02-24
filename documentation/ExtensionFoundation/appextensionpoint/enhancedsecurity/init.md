@@ -19,7 +19,7 @@ init(_ value: Bool = true)
 
 ## Parameters
 
-- `value`:   if the extension point requires extra security, or   if it doesn’t.
+- `value`: `true` if the extension point requires extra security, or `false` if it doesn’t.
 
 
 ---

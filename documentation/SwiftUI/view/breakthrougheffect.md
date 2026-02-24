@@ -72,7 +72,7 @@ This also applies to RealityKit presentations using `RealityKit/PresentationComp
 
 ## Parameters
 
-- `effect`: The type of effect to apply when the view is occluded by   other content.
+- `effect`: The type of effect to apply when the view is occluded by other content.
 
 
 ---

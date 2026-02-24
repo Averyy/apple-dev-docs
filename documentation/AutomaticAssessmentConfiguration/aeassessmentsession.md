@@ -23,7 +23,35 @@ Use the [`AEAssessmentSession`](aeassessmentsession.md) class to manage an asses
 
 To create an assessment session, pass a new [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) instance to the [`init(configuration:)`](aeassessmentsession/init(configuration:).md) method. Then, provide the session with a delegate that conforms to the [`AEAssessmentSessionDelegate`](aeassessmentsessiondelegate.md) protocol:
 
+**Swift**:
+
+```swift
+let config = AEAssessmentConfiguration()
+let session = AEAssessmentSession(configuration: config)
+session.delegate = self
+```
+
+**Objective-C**:
+
+```objc
+AEAssessmentConfiguration *config = [AEAssessmentConfiguration new];
+AEAssessmentSession *session = [[AEAssessmentSession alloc] initWithConfiguration:config];
+session.delegate = self;
+```
+
 You can indicate exceptions to the restrictions imposed by an assessment session by setting the properties of the configuration instance, or you can use the default restrictions as shown above. The session tells its delegate about state changes during its life cycle. To start a session, call the session’s [`begin()`](aeassessmentsession/begin().md) method:
+
+**Swift**:
+
+```swift
+session.begin()
+```
+
+**Objective-C**:
+
+```objc
+[session begin];
+```
 
 The method returns immediately, and the session starts disabling system features. After achieving the desired state, the session calls its delegate’s [`assessmentSessionDidBegin(_:)`](aeassessmentsessiondelegate/assessmentsessiondidbegin(_:).md) method. Only after receiving this callback is it safe to begin your assessment. Be sure to keep a strong reference to the session as long as you want it to remain active. If the system deallocates an active session, the session automatically ends.
 
@@ -31,9 +59,43 @@ The method returns immediately, and the session starts disabling system features
 
 After completing an assessment and hiding all sensitive information, call the session’s [`end()`](aeassessmentsession/end().md) method:
 
+**Swift**:
+
+```swift
+session.end()
+```
+
+**Objective-C**:
+
+```objc
+[session end];
+```
+
 After making the call, wait for the session to call its delegate’s [`assessmentSessionDidEnd(_:)`](aeassessmentsessiondelegate/assessmentsessiondidend(_:).md) method before reporting assessment completion to the user.
 
 During assessment, the session’s delegate might receive an [`assessmentSession(_:wasInterruptedWithError:)`](aeassessmentsessiondelegate/assessmentsession(_:wasinterruptedwitherror:).md) callback to indicate a failure. If this happens, immediately stop the assessment, hide all sensitive content, and end the session. Because it might take time for your app to finalize the assessment, the session relies on your app to call the session’s [`end()`](aeassessmentsession/end().md) method:
+
+**Swift**:
+
+```swift
+func assessmentSession(_ session: AEAssessmentSession, wasInterruptedWithError error: Error) {
+    // Hide sensitive UI and optionally store assessment progress.
+
+    // End the session.
+    session.end()
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)assessmentSession:(AEAssessmentSession *)session wasInterruptedWithError:(NSError *)error {
+    // Hide sensitive UI and optionally store assessment progress.
+
+    // End the session.
+    [session end];
+}
+```
 
 ## Topics
 

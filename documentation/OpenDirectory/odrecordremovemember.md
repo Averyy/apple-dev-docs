@@ -23,7 +23,7 @@ func ODRecordRemoveMember(_ group: ODRecordRef!, _ member: ODRecordRef!, _ error
 
 - `group`: The group record.
 - `member`: The record to remove.
-- `error`: An error reference for error details. Can be  .
+- `error`: An error reference for error details. Can be `NULL`.
 
 ## See Also
 

@@ -31,7 +31,8 @@ func generateBestRepresentation(for request: QLThumbnailGenerator.Request) async
 ## Parameters
 
 - `request`: The request that contains information about the thumbnail that you want to create.
-- `completionHandler`: The completion handler takes the following parameters:
+- `completionHandler`: The completion handler to call when the thumbnail generation completes. It is always called when `QLThumbnailGenerator` finishes the generation of a requested thumbnail. The completion handler takes the following parameters: - **`thumbnail`**: The most representative version of the requested thumbnail or `nil` if `QLThumbnailGenerator` was unable to generate a thumbnail.
+- **`error`**: An error object that indicates why the thumbnail generation failed, or `nil` if the thumbnail generation succeeded.
 
 ## See Also
 

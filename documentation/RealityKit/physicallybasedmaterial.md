@@ -26,7 +26,7 @@ struct PhysicallyBasedMaterial
 
 #### Overview
 
-In RealityKit, a  is an object that defines the surface properties of a rendered 3D object. A Physically Based Rendering (PBR) material is a material that closely approximates the way light reflects off of real-world objects. Use [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) to create highly realistic-looking objects for your AR scenes.
+In RealityKit, a *material* is an object that defines the surface properties of a rendered 3D object. A Physically Based Rendering (PBR) material is a material that closely approximates the way light reflects off of real-world objects. Use [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) to create highly realistic-looking objects for your AR scenes.
 
 Many of the properties for [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) provide the option to use more than one type of data to specify that property. You can set an object’s [`baseColor`](physicallybasedmaterial/basecolor-swift.property.md) using a specific color for the entire material, or you can use an image that UV-maps on to the entity.
 

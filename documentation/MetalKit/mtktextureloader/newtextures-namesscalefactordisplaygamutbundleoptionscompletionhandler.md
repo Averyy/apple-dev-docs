@@ -23,11 +23,11 @@ func newTextures(names: [String], scaleFactor: CGFloat, displayGamut: NSDisplayG
 ## Parameters
 
 - `names`: An array of strings, each the name of a texture in an asset catalog.
-- `scaleFactor`: In macOS, pass the   value of the window where you plan to display texture content.
-- `displayGamut`: To determine the appropriate parameter value, pass the widest   value that returns   when queried against the   method of  .
+- `scaleFactor`: The scale factor of texture to request. In iOS and tvOS, pass the [`contentsScale`](https://developer.apple.com/documentation/QuartzCore/CALayer/contentsScale) value of the view where you plan to display texture content. In macOS, pass the [`backingScaleFactor`](https://developer.apple.com/documentation/AppKit/NSWindow/backingScaleFactor) value of the window where you plan to display texture content.
+- `displayGamut`: The version of the texture based on the *Gamut* trait in Xcode. To determine the appropriate parameter value, pass the widest `NSDisplayGamut` value that returns [`true`](https://developer.apple.com/documentation/Swift/true) when queried against the `canRepresentDisplayGamut:` method of `NSWindow`.
 - `bundle`: The resource bundle containing the asset catalog to load textures from.
-- `options`: When using this method, the texture loader ignores the  ,  ,  , and   options.
-- `completionHandler`: A block called after all assets have been processed. See the   signature to determine whether each texture has successfully loaded.
+- `options`: A dictionary describing any additional texture loading steps. See `Texture Loading Options`. When using this method, the texture loader ignores the [`generateMipmaps`](mtktextureloader/option/generatemipmaps.md), [`SRGB`](mtktextureloader/option/srgb.md), [`cubeLayout`](mtktextureloader/option/cubelayout.md), and [`origin`](mtktextureloader/option/origin.md) options.
+- `completionHandler`: A block called after all assets have been processed. See the [`MTKTextureLoader.ArrayCallback`](mtktextureloader/arraycallback.md) signature to determine whether each texture has successfully loaded.
 
 ## See Also
 

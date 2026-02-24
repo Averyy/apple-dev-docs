@@ -30,7 +30,7 @@ Attachments can then be added/removed directly by the caller, using Core Foundat
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
 - `createIfNecessary`: Specifies whether an empty array should be created (if there are no sample attachments yet).
 
 ## See Also

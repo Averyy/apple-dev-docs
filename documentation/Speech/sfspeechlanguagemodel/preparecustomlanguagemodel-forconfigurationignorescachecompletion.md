@@ -20,9 +20,9 @@ class func prepareCustomLanguageModel(for asset: URL, configuration: SFSpeechLan
 
 ## Parameters
 
-- `asset`: The URL of a file containing custom training data. Create this file with  .
+- `asset`: The URL of a file containing custom training data. Create this file with [`export(to:)`](sfcustomlanguagemodeldata/export(to:).md).
 - `configuration`: An object listing the URLs at which this method should create the language model and compiled vocabulary from the training data.
-- `ignoresCache`: If  , the language model identified by the configuration will be recreated even if the   file is unchanged.
+- `ignoresCache`: If `true`, the language model identified by the configuration will be recreated even if the `asset` file is unchanged.
 - `completion`: Called when the language model has been created.
 
 ## See Also

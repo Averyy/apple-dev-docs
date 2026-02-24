@@ -22,8 +22,8 @@ For each item expanded, posts an item expanded notification.
 
 ## Parameters
 
-- `item`: Starting in OS X version 10.5,  passing   will expand each item under the root in the outline view.
-- `expandChildren`: If  , recursively expands   and its children. If  , expands   only (identical to  ).
+- `item`: An item in the receiver. Starting in OS X version 10.5,  passing `'nil'` will expand each item under the root in the outline view.
+- `expandChildren`: If [`true`](https://developer.apple.com/documentation/Swift/true), recursively expands `item` and its children. If [`false`](https://developer.apple.com/documentation/Swift/false), expands `item` only (identical to [`expandItem(_:)`](nsoutlineview/expanditem(_:).md)).
 
 ## See Also
 

@@ -20,7 +20,7 @@ A result code.
 
 ## Parameters
 
-- `inGraph`: The   object to get the subgraph from.
+- `inGraph`: The `AUGraph` object to get the subgraph from.
 - `inNode`: The node that represents the subgraph.
 - `outSubGraph`: The subgraph.
 

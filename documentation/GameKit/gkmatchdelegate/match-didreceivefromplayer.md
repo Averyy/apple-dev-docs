@@ -22,7 +22,7 @@ optional func match(_ match: GKMatch, didReceive data: Data, fromPlayer playerID
 
 You define your own format for data packets that you transmit and receive over the network.
 
-> ❗ **Important**:  You need to treat data you receive from other players as  data. Be sure to validate the data you receive from the match and write your code carefully to avoid security vulnerabilities.
+> ❗ **Important**:  You need to treat data you receive from other players as *untrusted* data. Be sure to validate the data you receive from the match and write your code carefully to avoid security vulnerabilities.
 
 ## Parameters
 

@@ -27,6 +27,12 @@ object IntelligenceSettingsAppsObject
 - [object IntelligenceSettingsApps_SafariObject](intelligencesettingsapps_safariobject.md)
   If present, configures Safari intelligence features.
 
+## Properties
+
+- `Mail` (IntelligenceSettingsApps_MailObject): If present, configures Mail Intelligence features.
+- `Notes` (IntelligenceSettingsApps_NotesObject): If present, configures Notes Intelligence features.
+- `Safari` (IntelligenceSettingsApps_SafariObject): If present, configures Safari intelligence features.
+
 
 ---
 

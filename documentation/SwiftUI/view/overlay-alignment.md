@@ -44,7 +44,7 @@ Image(systemName: "folder")
 ## Parameters
 
 - `overlay`: The view to layer in front of this view.
-- `alignment`: The alignment for   in relation to this view.
+- `alignment`: The alignment for `overlay` in relation to this view.
 
 ## See Also
 

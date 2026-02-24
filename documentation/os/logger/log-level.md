@@ -26,8 +26,8 @@ func log(level: OSLogType, _ message: OSLogMessage)
 
 ## Parameters
 
-- `level`: The message’s log level, which determines the severity of the message and whether the system persists it to disk. For possible values, see  .
-- `message`: The interpolated string that the logger writes to the log. Each of the message’s interpolations can specify individual formatting and privacy options. For more information, see  .
+- `level`: The message’s log level, which determines the severity of the message and whether the system persists it to disk. For possible values, see [`OSLogType`](oslogtype.md).
+- `message`: The interpolated string that the logger writes to the log. Each of the message’s interpolations can specify individual formatting and privacy options. For more information, see [`Message Argument Formatters`](message-argument-formatters.md).
 
 ## See Also
 

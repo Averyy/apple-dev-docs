@@ -28,8 +28,8 @@ If your collection view supports interactive reordering of its cells, a user can
 
 ## Parameters
 
-- `displayed`: The cell-editing states that the reorder accessory appears in. This parameter has a default value of  .
-- `options`: Configuration options for the reorder accessory. See   for possible configuration options.
+- `displayed`: The cell-editing states that the reorder accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.whenEditing`](uicellaccessory-swift.struct/displayedstate/whenediting.md).
+- `options`: Configuration options for the reorder accessory. See [`UICellAccessory.ReorderOptions`](uicellaccessory-swift.struct/reorderoptions.md) for possible configuration options.
 
 ## See Also
 

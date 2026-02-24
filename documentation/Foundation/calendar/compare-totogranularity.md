@@ -28,7 +28,7 @@ func compare(_ date1: Date, to date2: Date, toGranularity component: Calendar.Co
 
 - `date1`: A date to compare.
 - `date2`: A date to compare.
-- `component`: A granularity to compare. For example, pass   to check if two dates are in the same hour.
+- `component`: A granularity to compare. For example, pass `.hour` to check if two dates are in the same hour.
 
 ## See Also
 

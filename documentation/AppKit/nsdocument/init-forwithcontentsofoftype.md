@@ -28,8 +28,8 @@ After reading the contents from the specified autosave file, this method updates
 
 ## Parameters
 
-- `urlOrNil`: The location for the document’s file. This value is   for an autosaved document that the user never explicitly saved.
-- `contentsURL`: The URL of the file that contains the document’s contents. When loading an autosaved document, this URL contains the location of the autosave file. The contents of this file replace the contents of the file in  .
+- `urlOrNil`: The location for the document’s file. This value is `nil` for an autosaved document that the user never explicitly saved.
+- `contentsURL`: The URL of the file that contains the document’s contents. When loading an autosaved document, this URL contains the location of the autosave file. The contents of this file replace the contents of the file in `absoluteDocumentURL`.
 - `typeName`: The string that identifies the document type.
 
 ## See Also

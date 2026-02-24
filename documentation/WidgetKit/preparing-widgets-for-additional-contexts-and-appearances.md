@@ -10,6 +10,10 @@ Widgets change their appearance to best fit their context. For example, widgets 
 
 WidgetKit uses three different rendering modes:
 
+- **[`accented`](widgetrenderingmode/accented.md)**: Divides the widget’s view hierarchy into an accent group and a primary group, and then applies a solid color to each group. Use the [`widgetAccentable(_:)`](https://developer.apple.com/documentation/SwiftUI/View/widgetAccentable(_:)) view modifier to group views into the accent group. To learn more about using the `accented` rendering mode and making your widget fit the system’s look across Apple platforms, refer to [`Optimizing your widget for accented rendering mode and Liquid Glass`](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md).
+- **[`vibrant`](widgetrenderingmode/vibrant.md)**: Desaturates text, images, and gauges into monochrome and creates a vibrant effect by coloring your content appropriately for the Lock Screen background or a macOS desktop. Note that people can also color the Lock Screen to a colored tint and WidgetKit uses a red tint for widgets that appear on iPhone in StandBy in low-light conditions.
+- **[`fullColor`](widgetrenderingmode/fullcolor.md)**: Doesn’t change the color of your complication’s views in this rendering mode. Use gradients and full-color images, text, and gauges.
+
 The following table shows the rendering modes for each widget you need to support:
 
 | Widget size | [`fullColor`](widgetrenderingmode/fullcolor.md) | [`accented`](widgetrenderingmode/accented.md) | [`vibrant`](widgetrenderingmode/vibrant.md) |

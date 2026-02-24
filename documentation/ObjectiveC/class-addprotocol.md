@@ -27,7 +27,7 @@ func class_addProtocol(_ cls: AnyClass?, _ protocol: Protocol) -> Bool
 ## Parameters
 
 - `cls`: The class to modify.
-- `protocol`: The protocol to add to  .
+- `protocol`: The protocol to add to `cls`.
 
 ## See Also
 

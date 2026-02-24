@@ -22,7 +22,7 @@ Replaces the existing anchor collection with a provided sequence.
 
 ## Parameters
 
-- `entities`: A sequence of anchors to replace the existing   collection.
+- `entities`: A sequence of anchors to replace the existing collection.
 
 ## See Also
 

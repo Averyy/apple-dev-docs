@@ -27,7 +27,7 @@ The context version number for run loop timers is currently 0. Before calling th
 ## Parameters
 
 - `timer`: The run loop timer to examine.
-- `context`: A pointer to the structure into which the context information for   is to be copied. The information being returned is the same information passed to   when creating  .
+- `context`: A pointer to the structure into which the context information for `timer` is to be copied. The information being returned is the same information passed to [`CFRunLoopTimerCreate(_:_:_:_:_:_:_:)`](cfrunlooptimercreate(_:_:_:_:_:_:_:).md) when creating `timer`.
 
 ## See Also
 

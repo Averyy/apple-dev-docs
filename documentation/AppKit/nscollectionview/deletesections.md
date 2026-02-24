@@ -22,7 +22,7 @@ When inserting or deleting multiple sections and items, you can animate all of y
 
 ## Parameters
 
-- `sections`: An index set containing the indexes of the sections that you want to delete. This parameter must not be  .
+- `sections`: An index set containing the indexes of the sections that you want to delete. This parameter must not be `nil`.
 
 ## See Also
 

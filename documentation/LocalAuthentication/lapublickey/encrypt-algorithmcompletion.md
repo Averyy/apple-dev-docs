@@ -28,7 +28,8 @@ func encrypt(_ data: Data, algorithm: SecKeyAlgorithm) async throws -> Data
 
 - `data`: The data to encrypt.
 - `algorithm`: The algorithm to use to encrypt the data.
-- `handler`: A completion handler to call when the encryption operation completes.
+- `handler`: A completion handler to call when the encryption operation completes. - **`data`**: The encrypted data.
+- **`error`**: An error object that indicates why the encryption failed, or `nil` if it succeeded.
 
 ## See Also
 

@@ -34,7 +34,7 @@ center.removeAllPendingNotificationRequests()
 
 ## Parameters
 
-- `categories`: A set of   objects, each of which contains the actions that are displayed with the notification interface. This parameter must contain all of your app’s supported categories.
+- `categories`: A set of [`UNNotificationCategory`](unnotificationcategory.md) objects, each of which contains the actions that are displayed with the notification interface. This parameter must contain all of your app’s supported categories.
 
 ## See Also
 

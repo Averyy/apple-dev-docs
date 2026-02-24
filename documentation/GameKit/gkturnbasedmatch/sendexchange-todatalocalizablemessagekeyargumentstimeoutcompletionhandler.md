@@ -34,10 +34,11 @@ Implement the [`player(_:receivedExchangeRequest:for:)`](gkturnbasedeventlistene
 
 - `participants`: The other participants, excluding the local player and inactive participants, that GameKit sends the exchange request to.
 - `data`: The data that GameKit sends to the other participants.
-- `key`: The identifier for looking up the translated message in the default   file. If you use a formatted string with specifiers, provide the arguments.
+- `key`: The identifier for looking up the translated message in the default `Localized.strings` file. If you use a formatted string with specifiers, provide the arguments.
 - `arguments`: A list of arguments to substitute into the localized string if it’s formatted and contains specifiers.
 - `timeout`: The length of time a participant has to respond to the exchange request. The maximum value is 90 days.
-- `completionHandler`: The block receives the following parameters:
+- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameters: - **exchange**: The exchange object that GameKit passes to the other participants.
+- ***error***: Describes an error if it occurs, or `nil` if the operation completes. An error occurs if any of the participants are inactive.
 
 ## See Also
 

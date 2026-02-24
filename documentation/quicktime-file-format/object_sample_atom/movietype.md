@@ -21,6 +21,14 @@ enum ObjectUITypes {
 };
 ```
 
+**Constant Descriptions**
+
+- **`kGrabberScrollerUI`**: The default controller, which displays a hand for dragging and rotation arrows when the cursor is along the edges of the object window.
+- **`kOldJoyStickUI`**: A joystick controller, which displays a joystick-like interface for spinning the object. With this controller, the direction of panning is reversed from the direction of the grabber.
+- **`kJoystickUI`**: A joystick controller, which displays a joystick-like interface for spinning the object. With this controller, the direction of panning is consistent with the direction of the grabber.
+- **`kGrabberUI`**: A grabber-only interface, which displays a hand for dragging but does not display rotation arrows when the cursor is along the edges of the object window.
+- **`kAbsoluteUI`**: An absolute controller, which displays a finger for pointing. The absolute controller switches views based on a row-and-column grid mapped into the object window.
+
 ## See Also
 
 - [majorVersion](object_sample_atom/majorversion.md)

@@ -4,6 +4,11 @@
 
 #### Overview
 
+- **Containing profile atom**: Track (video), movie
+- **`part-ID`**: `0x20202020` (universal feature)
+- **`feature-code`**: `'vvfp'`
+- **`feature-value`**: Unsigned `int(32)` holding the value `0` if the frame rate is constant or the value `1` if the frame durations vary
+
 #### Feature Values
 
 The feature value holds one of the following two values: `0` if all video samples have the same display duration, or `1` if any video samples vary in duration.

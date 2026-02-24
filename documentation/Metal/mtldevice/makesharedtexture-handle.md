@@ -32,7 +32,7 @@ Call this method from the same [`MTLDevice`](mtldevice.md) instance that created
 
 ## Parameters
 
-- `sharedHandle`: An   instance, typically from another process using the same GPU device.
+- `sharedHandle`: An [`MTLSharedTextureHandle`](mtlsharedtexturehandle.md) instance, typically from another process using the same GPU device.
 
 ## See Also
 

@@ -23,7 +23,7 @@ When your delegate receives this message, your game should create a new [`GKMatc
 
 ## Parameters
 
-- `playersToInvite`: An array of   objects containing the player identifiers for the players to initially invite to the game.
+- `playersToInvite`: An array of `NSString` objects containing the player identifiers for the players to initially invite to the game.
 
 ## See Also
 

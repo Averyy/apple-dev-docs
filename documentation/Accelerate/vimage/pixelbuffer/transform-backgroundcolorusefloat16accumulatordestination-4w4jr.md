@@ -23,8 +23,8 @@ func transform(_ transform: CGAffineTransform, backgroundColor: Pixel_16F16F? = 
 ## Parameters
 
 - `transform`: The affine transformation matrix.
-- `backgroundColor`: An optional background color. If you pass  , the operation uses the   flag to extend the edges of the image infinitely.
-- `useFloat16Accumulator`: A Boolean value that specifies that the function uses faster, but lower-precision, internal arithmetic. For more information, see  .
+- `backgroundColor`: An optional background color. If you pass `nil`, the operation uses the [`kvImageEdgeExtend`](kvimageedgeextend.md) flag to extend the edges of the image infinitely.
+- `useFloat16Accumulator`: A Boolean value that specifies that the function uses faster, but lower-precision, internal arithmetic. For more information, see [`kvImageUseFP16Accumulator`](kvimageusefp16accumulator.md).
 - `destination`: The destination pixel buffer.
 
 ## See Also

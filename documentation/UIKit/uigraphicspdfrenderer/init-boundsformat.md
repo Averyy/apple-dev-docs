@@ -29,7 +29,7 @@ Use this initializer to create a PDF renderer when you want to override the defa
 ## Parameters
 
 - `bounds`: The bounds of the Core Graphics context available to the renderer, with values in points.
-- `format`: A   object that encapsulates the format applied to the renderer’s context.
+- `format`: A [`UIGraphicsPDFRendererFormat`](uigraphicspdfrendererformat.md) object that encapsulates the format applied to the renderer’s context.
 
 
 ---

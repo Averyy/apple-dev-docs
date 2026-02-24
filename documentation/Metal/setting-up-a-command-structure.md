@@ -24,13 +24,25 @@ Create objects that are expensive to allocate during initialization, not in time
 
 To make a command queue, call the device’s [`makeCommandQueue()`](mtldevice/makecommandqueue().md) function.
 
+**Swift**:
+
+```swift
+commandQueue = device.makeCommandQueue()
+```
+
+**Objective-C**:
+
+```objective-c
+commandQueue = [device newCommandQueue];
+```
+
 Then use the same command queue throughout your app to hold command buffers. The figure below illustrates the command queue that contains command buffers:
 
 ![A diagram that depicts a command queue’s relationship to the command buffers it contains. A box representing a command queue contains two boxes representing command buffers, numbered in ascending order. The first box contains two boxes representing commands, numbered in ascending order. The second box contains one box representing a single command.](https://docs-assets.developer.apple.com/published/e4410f1f785637e3936881b01c9af215/setting-up-a-command-structure-2%402x.png)
 
 ###### Make One or More Pipeline Objects
 
-A  tells Metal how to process your commands. The pipeline object encapsulates functions that you write in the Metal shading language. To use a pipeline in your Metal workflow, follow these steps:
+A *pipeline object* tells Metal how to process your commands. The pipeline object encapsulates functions that you write in the Metal shading language. To use a pipeline in your Metal workflow, follow these steps:
 
 1. Write Metal shader functions that process your data.
 2. Create a pipeline object that contains your shaders.
@@ -59,6 +71,20 @@ If you’re performing animation as part of a rendering loop, do this for each f
 
 Create a command buffer by calling [`makeCommandBuffer()`](mtlcommandqueue/makecommandbuffer().md) on the command queue.
 
+**Swift**:
+
+```swift
+guard let commandBuffer = commandQueue.makeCommandBuffer() else { 
+    return 
+}
+```
+
+**Objective-C**:
+
+```objective-c
+id <MTLCommandBuffer> commandBuffer = [commandQueue commandBuffer];
+```
+
 For single-threaded apps, create a single command buffer containing the commands. The figure below illustrates the command buffer’s relationship to the commands it contains:
 
 ![A diagram depicting a command’s relationship to the command buffer that contains it. A box labeled Command buffer contains a series of boxes representing commands, numbered in ascending order to indicate their insertion order from left to right.  ](https://docs-assets.developer.apple.com/published/571ca85ee804499bc66432d2146cc911/setting-up-a-command-structure-4%402x.png)
@@ -78,6 +104,18 @@ For a complete rendering example, see [`Drawing a triangle with Metal 4`](drawin
 ###### Commit a Command Buffer
 
 To submit your commands to run on the GPU, commit the command buffer to the GPU.
+
+**Swift**:
+
+```swift
+commandBuffer.commit()
+```
+
+**Objective-C**:
+
+```objective-c
+[commandBuffer commit];
+```
 
 Committing a command buffer doesn’t run its commands immediately. Instead, Metal schedules the buffer’s commands to run only after you commit prior command buffers that are waiting in the queue. If you don’t explicitly enqueue a command buffer, Metal does that for you when you commit the buffer.
 

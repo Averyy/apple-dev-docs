@@ -49,7 +49,7 @@ for await appName in NSWorkspace.shared.notificationCenter.notifications (
 ## Parameters
 
 - `name`: A notification name. The sequence includes only notifications with this name.
-- `object`: A source object of notifications. Specify a sender object to deliver only notifications from that sender. When  , the notification center doesn’t consider the sender as a criteria for delivery.
+- `object`: A source object of notifications. Specify a sender object to deliver only notifications from that sender. When `nil`, the notification center doesn’t consider the sender as a criteria for delivery.
 
 ## See Also
 

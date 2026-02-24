@@ -21,7 +21,7 @@ The [`matchingDescriptors`](nsfontcollection/matchingdescriptors.md) for the giv
 ## Parameters
 
 - `family`: The font family whose descriptors are matched.
-- `options`: A dictionary containing any combination of the   keys or  .
+- `options`: A dictionary containing any combination of the `Matching Descriptors Options` keys or `nil`.
 
 ## See Also
 

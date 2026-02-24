@@ -23,7 +23,7 @@ The entry point for your authorization plug-in is the [`AuthorizationPluginCreat
 
 Call the [`SetResult`](authorizationcallbacks/setresult.md) function to report the authorization decision.
 
-Communicate auxiliary information by setting and getting  and . Hints are data values for use during authorization; for example, you can use a hint to pass an intermediate value from one mechanism to a subsequent mechanism. Hints aren’t preserved as part of the authorization result. You set hints by calling [`SetHintValue`](authorizationcallbacks/sethintvalue.md), and retrieve them by calling [`GetHintValue`](authorizationcallbacks/gethintvalue.md).
+Communicate auxiliary information by setting and getting *hints* and *context data*. Hints are data values for use during authorization; for example, you can use a hint to pass an intermediate value from one mechanism to a subsequent mechanism. Hints aren’t preserved as part of the authorization result. You set hints by calling [`SetHintValue`](authorizationcallbacks/sethintvalue.md), and retrieve them by calling [`GetHintValue`](authorizationcallbacks/gethintvalue.md).
 
 Context data is information that can be useful to an application, such as a user name the person enters during the authorization process. Each mechanism in the authorization can add, read, or modify context data, which the Security Server preserves. The Security Server can also make context data available to the authorization client when authorization is complete. You set context data by calling [`SetContextValue`](authorizationcallbacks/setcontextvalue.md), and retrieve them by calling [`GetContextValue`](authorizationcallbacks/getcontextvalue.md).
 

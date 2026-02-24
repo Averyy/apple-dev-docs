@@ -79,6 +79,10 @@ Specify `com.apple.loginitems.managed` as the payload type.
 - [object LoginItemsManagedItems.LoginItem](loginitemsmanageditems/loginitem.md)
   A dictionary with the details about a login item.
 
+## Properties
+
+- `AutoLaunchedApplicationDictionary-managed` ([LoginItemsManagedItems.LoginItem]) *(required)*: An array of login item dictionaries.
+
 ## See Also
 
 - [object LoginWindowLoginItems](loginwindowloginitems.md)

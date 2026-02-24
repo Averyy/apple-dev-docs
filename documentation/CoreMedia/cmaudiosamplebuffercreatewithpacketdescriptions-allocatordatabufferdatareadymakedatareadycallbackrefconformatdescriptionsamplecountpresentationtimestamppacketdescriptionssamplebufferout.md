@@ -30,16 +30,16 @@ Provides an optimization over `CMSampleBufferCreate`() when the caller already h
 
 ## Parameters
 
-- `allocator`: The allocator to use for allocating the   object. Pass   to use the default allocator.
-- `dataBuffer`:   for the media data. This can be  , a   with no backing memory, a   with backing memory but no data yet, or a   that already contains the media data. If   contains the media data,   should be  .
-- `dataReady`: Indicates whether or not the   already contains the media data.
-- `makeDataReadyCallback`: Callback that   should call to make the data ready. Can be  .
-- `makeDataReadyRefcon`: The reference constant,  , that this function should pass to the callback.
-- `formatDescription`: A description of the media data’s format. Can’t be  .
-- `numSamples`: Number of samples in the  . Must not be 0.
-- `presentationTimeStamp`: Timestamp of the first sample in the buffer. Must be a numeric  .
-- `packetDescriptions`: Array of  , one for each of  . May be   if the samples are known to have a constant number of frames per packet and a constant size.
-- `sampleBufferOut`: On output, points to the newly created  .
+- `allocator`: The allocator to use for allocating the `CMSampleBuffer` object. Pass `kCFAllocatorDefault` to use the default allocator.
+- `dataBuffer`: `CMBlockBuffer` for the media data. This can be `NULL`, a `CMBlockBuffer` with no backing memory, a `CMBlockBuffer` with backing memory but no data yet, or a `CMBlockBuffer` that already contains the media data. If `CMBlockBuffer` contains the media data, `dataReady` should be `true`.
+- `dataReady`: Indicates whether or not the `BlockBuffer` already contains the media data.
+- `makeDataReadyCallback`: Callback that `CMSampleBufferMakeDataReady` should call to make the data ready. Can be `NULL`.
+- `makeDataReadyRefcon`: The reference constant, [`CMSampleBufferMakeDataReady(_:)`](cmsamplebuffermakedataready(_:).md), that this function should pass to the callback.
+- `formatDescription`: A description of the media data’s format. Can’t be `NULL`.
+- `numSamples`: Number of samples in the `CMSampleBuffer`. Must not be 0.
+- `presentationTimeStamp`: Timestamp of the first sample in the buffer. Must be a numeric `CMTime`.
+- `packetDescriptions`: Array of `packetDescriptions`, one for each of `numSamples`. May be `NULL` if the samples are known to have a constant number of frames per packet and a constant size.
+- `sampleBufferOut`: On output, points to the newly created `CMSampleBuffer`.
 
 ## Topics
 

@@ -26,7 +26,7 @@ A new binding.
 
 ## Parameters
 
-- `animation`: An animation sequence performed when the binding   value changes.
+- `animation`: An animation sequence performed when the binding value changes.
 
 ## See Also
 

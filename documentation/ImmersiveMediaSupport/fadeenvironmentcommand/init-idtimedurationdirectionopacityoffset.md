@@ -22,7 +22,7 @@ init(id: Int, time: CMTime, duration: CMTime, direction: FadeEnvironmentCommand.
 
 - `id`: The unique ID of this command.
 - `time`: The time this command starts during playback.
-- `duration`: The duration of the command. This can be   if the command doesn’t have a specific duration.
+- `duration`: The duration of the command. This can be `.zero` if the command doesn’t have a specific duration.
 - `direction`: The fade direction for this command instance.
 - `opacity`: The fade opacity.
 - `offset`: The offset from the start time of this command.

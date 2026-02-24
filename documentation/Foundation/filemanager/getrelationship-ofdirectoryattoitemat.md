@@ -28,9 +28,9 @@ Use this method to determine the relationship between an item and a directory wh
 
 ## Parameters
 
-- `outRelationship`: A pointer to a variable in which to put the relationship between   and  . For a list of possible values, see  .
-- `directoryURL`: The URL of the directory that potentially contains the item in  . The URL in this parameter must specify a directory. This parameter must not be  .
-- `otherURL`: The URL of the file or directory whose relationship to   is being tested. This parameter must not be  .
+- `outRelationship`: A pointer to a variable in which to put the relationship between `directoryURL` and `otherURL`. For a list of possible values, see [`FileManager.URLRelationship`](filemanager/urlrelationship.md).
+- `directoryURL`: The URL of the directory that potentially contains the item in `otherURL`. The URL in this parameter must specify a directory. This parameter must not be `nil`.
+- `otherURL`: The URL of the file or directory whose relationship to `directoryURL` is being tested. This parameter must not be `nil`.
 
 ## See Also
 

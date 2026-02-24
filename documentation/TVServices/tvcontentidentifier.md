@@ -20,7 +20,7 @@ Every content identifier is represented by two parts: a string identifier ([`ide
 
 When designing your content identifiers, follow this guidance:
 
-- A given content identifier must be unique for a particular content item, across  past, current, and future content items, even if the user no longer has access to that item.
+- A given content identifier must be unique for a particular content item, across *all* past, current, and future content items, even if the user no longer has access to that item.
 - The uniqueness of a content identifier comes from the uniqueness of its two parts. The [`identifier`](tvcontentidentifier/identifier.md) property of a content identifier need not be universally unique across all of the app’s content identifiers, as long as items that share the same identifier string are contained in different containers.
 
 ## Topics

@@ -29,7 +29,7 @@ When writing data to the pasteboard, you can use the `NSData` object as the firs
 ## Parameters
 
 - `range`: The range.
-- `dict`: A required dictionary specifying the document attributes. The dictionary contains values from   and must at least contain  .
+- `dict`: A required dictionary specifying the document attributes. The dictionary contains values from `Document Types` and must at least contain [`documentType`](nsattributedstring/documentattributekey/documenttype.md).
 
 ## See Also
 

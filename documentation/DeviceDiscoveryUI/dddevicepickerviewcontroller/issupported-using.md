@@ -20,7 +20,7 @@ Returns a Boolean value that indicates whether the current device supports devic
 
 ## Parameters
 
-- `browseDescriptor`: A descriptor for your application service. To create an application service descriptor, call   and provide a name for the service.
+- `browseDescriptor`: A descriptor for your application service. To create an application service descriptor, call `NWBrowser.Descriptor.applicationService(name:options:)` and provide a name for the service.
 
 ## See Also
 

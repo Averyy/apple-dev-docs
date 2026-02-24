@@ -26,7 +26,7 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `in_transport_type`: The   to set for the audio box.
+- `in_transport_type`: The `IOUserAudioTransportType` to set for the audio box.
 
 ## See Also
 

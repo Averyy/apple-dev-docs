@@ -46,7 +46,7 @@ struct NoEqualForegroundAndBackground: AttributedTextValueConstraint {
 }
 ```
 
-When this constrain function accesses `container.foregroundColor`, the system establishes that the background color depends on the foreground color. At that time, it checks if the [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md) this constraint is part of defines constraints on the foreground color  `NoEqualForegroundAndBackground` and applies them. Thus, when the access to `container.foregroundColor` returns, this function reads the constrained value.
+When this constrain function accesses `container.foregroundColor`, the system establishes that the background color depends on the foreground color. At that time, it checks if the [`AttributedTextFormattingDefinition`](attributedtextformattingdefinition.md) this constraint is part of defines constraints on the foreground color *above* `NoEqualForegroundAndBackground` and applies them. Thus, when the access to `container.foregroundColor` returns, this function reads the constrained value.
 
 
 ---

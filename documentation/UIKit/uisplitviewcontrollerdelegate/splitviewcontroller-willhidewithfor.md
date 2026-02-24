@@ -25,7 +25,7 @@ When the split view controller rotates from a landscape to portrait orientation,
 - `svc`: The split view controller that owns the specified view controller.
 - `aViewController`: The view controller being hidden.
 - `barButtonItem`: A button you can add to your toolbar.
-- `pc`: The popover controller that uses taps in   to display the specified view controller.
+- `pc`: The popover controller that uses taps in `barButtonItem` to display the specified view controller.
 
 ## See Also
 

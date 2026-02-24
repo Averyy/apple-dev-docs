@@ -19,8 +19,8 @@ func setDate(_ date: Date, animated: Bool)
 
 ## Parameters
 
-- `date`: An   object representing the new date to display in the date picker.
-- `animated`:   to animate the setting of the new date, otherwise  . The animation rotates the wheels until the new date and time is shown under the highlight rectangle.
+- `date`: An `NSDate` object representing the new date to display in the date picker.
+- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the setting of the new date, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The animation rotates the wheels until the new date and time is shown under the highlight rectangle.
 
 ## See Also
 

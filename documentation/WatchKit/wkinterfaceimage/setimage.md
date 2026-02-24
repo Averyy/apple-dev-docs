@@ -22,7 +22,7 @@ When setting images, always try to use images that are sized to fit the availabl
 
 ## Parameters
 
-- `image`: The image to be displayed. Specifying   removes the existing image, causing the watch interface to display nothing in the space previously occupied by the image. You may specify a template image or an animated image sequence for this parameter.  For information on how to specify an animated image, see  .
+- `image`: The image to be displayed. Specifying `nil` removes the existing image, causing the watch interface to display nothing in the space previously occupied by the image. You may specify a template image or an animated image sequence for this parameter.  For information on how to specify an animated image, see [`Animating a Series of Images`](wkinterfaceimage#Animating-a-Series-of-Images.md).
 
 ## See Also
 

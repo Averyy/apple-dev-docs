@@ -26,7 +26,7 @@ A new compute pipeline state object upon success, otherwise this method throws.
 ## Parameters
 
 - `descriptor`: A compute pipeline state descriptor describing the pipeline this compiler creates.
-- `compilerTaskOptions`: A description of the compilation process itself, providing parameters that   influence execution of the compilation process.
+- `compilerTaskOptions`: A description of the compilation process itself, providing parameters that influence execution of the compilation process.
 
 
 ---

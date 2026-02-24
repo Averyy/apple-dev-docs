@@ -35,7 +35,7 @@ let requests = await center.pendingNotificationRequests()
 
 ## Parameters
 
-- `completionHandler`: A block for processing notification requests. This block may be executed on a background thread. The block has no return value and takes a single parameter.
+- `completionHandler`: A block for processing notification requests. This block may be executed on a background thread. The block has no return value and takes a single parameter. - **requests**: An array of [`UNNotificationRequest`](unnotificationrequest.md) objects representing the scheduled notification requests. If there are no scheduled requests, this array is empty.
 
 ## See Also
 

@@ -22,7 +22,7 @@ class PersonNameComponentsFormatter
 
 #### Overview
 
-Each locale has its own set of rules and conventions for how personal names are structured and represented. These rules vary widely across different locales in a several ways, including the sort and display order of given and family names, the use of salutations and honorifics, and other concerns related to the grammar, spelling, punctuation, and formatting. About the only thing that  consistent across all locales is that personal names are significant and meaningful. For this reason, names deserve careful and respectful treatment—perhaps more than any other kind of information your app interacts with.
+Each locale has its own set of rules and conventions for how personal names are structured and represented. These rules vary widely across different locales in a several ways, including the sort and display order of given and family names, the use of salutations and honorifics, and other concerns related to the grammar, spelling, punctuation, and formatting. About the only thing that *is* consistent across all locales is that personal names are significant and meaningful. For this reason, names deserve careful and respectful treatment—perhaps more than any other kind of information your app interacts with.
 
 Formatters can be configured to represent names in a variety of styles, which are described in detail below.
 
@@ -33,10 +33,10 @@ Formatters can be configured to represent names in a variety of styles, which ar
 
 When determining how to represent a name in a particular style, a formatter takes a number of factors into consideration, in order of priority:
 
-1.  Scripts may specify a strict sort or display order of given and family names, and the availability of styles.
-2.  Users can enable and configure the display of short names, as well as whether or not to display nicknames when available. Users can also override the default sort and display order of given and family names for their current locale.
-3.  Locales specify a default sort and display order for given and family names.
-4.  The style property value set for the `NSPersonNameComponentsFormatter` object.
+1. **Script derived behaviors** Scripts may specify a strict sort or display order of given and family names, and the availability of styles.
+2. **User specified preferences** Users can enable and configure the display of short names, as well as whether or not to display nicknames when available. Users can also override the default sort and display order of given and family names for their current locale.
+3. **Locale derived defaults** Locales specify a default sort and display order for given and family names.
+4. **Developer specified configuration** The style property value set for the `NSPersonNameComponentsFormatter` object.
 
 When the behavior specified in one factor conflicts with any other factors, the behavior specified by the factor with the most precedence is used. For example, the U.S. English (`en-US`) locale specifies that names be displayed in “given name followed by the family name” (for example,“John Appleseed”). This behavior would be overridden if the user changed their system preferences to have names displayed as family name followed by given name (for example, “Appleseed, John”), because user-specified preferences take precedence over locale-derived defaults. Furthermore, if the name to be formatted were Japanese (for example, given name: “泰夫”, family name: “木田”), the behavior derived for the name’s script (CJK, for Chinese, Japanese, and Korean languages) would take precedence over any locale-derived defaults or user-specified preferences to have the name displayed as family name followed by given name (for example, “木田 泰夫”).
 
@@ -47,6 +47,11 @@ These considerations extend to the availability of certain formatter styles as w
 ##### Styles
 
 `NSPersonNameComponentsFormatter` can be configured to format names in the following styles:
+
+- **[`PersonNameComponentsFormatter.Style.default`](personnamecomponentsformatter/style-swift.enum/default.md)**: The minimally necessary features for differentiation in a casual setting. Equivalent to [`PersonNameComponentsFormatter.Style.medium`](personnamecomponentsformatter/style-swift.enum/medium.md).
+- **[`PersonNameComponentsFormatter.Style.short`](personnamecomponentsformatter/style-swift.enum/short.md)**: Relies on user preferences and language defaults to display shortened form appropriate for display in space-constrained settings.
+- **[`PersonNameComponentsFormatter.Style.long`](personnamecomponentsformatter/style-swift.enum/long.md)**: The fully qualified name complete with all known components.
+- **[`PersonNameComponentsFormatter.Style.abbreviated`](personnamecomponentsformatter/style-swift.enum/abbreviated.md)**: The maximally abbreviated form of a name.
 
 |  | `namePrefix` | `givenName` | `middleName` | `familyName` | `nameSuffix` | `nickname` |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -91,13 +96,13 @@ Short style is not available for names in CJK script and is restricted to Given 
 
 |  | Given Name - Family Initial | Family Name - Given Initial | Given Name Only | Family Name Only |
 | --- | --- | --- | --- | --- |
-| Arabic (ar-SA) |  |  | أحمد | محمﺩﺍلمصﺭﻱ |
-| Chinese (zh-Hans) |  |  |  |  |
+| Arabic (ar-SA) | *N/A* | *N/A* | أحمد | محمﺩﺍلمصﺭﻱ |
+| Chinese (zh-Hans) | *N/A* | *N/A* | *N/A* | *N/A* |
 | English (en-US) | Jonathan A | J Appleseed | Jonathan | Appleseed |
 | French (fr-FR) | Jean-Philippe d | J de Zélicourt | Jean-Philippe | de Zélicourt |
 | German (de-DE) | Max M | M Mustermann | Max | Mustermann |
-| Hindi (hi-IN) |  |  | रिय | साहिल |
-| Japanese (ja-JP) |  |  |  |  |
+| Hindi (hi-IN) | *N/A* | *N/A* | रिय | साहिल |
+| Japanese (ja-JP) | *N/A* | *N/A* | *N/A* | *N/A* |
 | Spanish (es-ES) | José Ramiro M | J Martín González de Rivera | José Ramiro | Martín González de Rivera |
 | Thai (th-TH) | สมชาย ร | ส รัตนเรืองรองบวรทิพย์ | สมชาย | รัตนเรืองรองบวรทิพย์ |
 
@@ -135,7 +140,7 @@ If the Abbreviated style is unavailable, the Short style is used instead—unles
 
 |  | Abbreviated style |
 | --- | --- |
-| Arabic (ar-SA) |  |
+| Arabic (ar-SA) | *N/A* |
 | Chinese (zh-Hans) | 杨 |
 | English (en-US) | JMA |
 | French (fr-FR) | Jd |

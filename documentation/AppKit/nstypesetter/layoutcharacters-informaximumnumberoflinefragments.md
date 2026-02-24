@@ -26,7 +26,7 @@ The layout process can be interrupted when the number of line fragments exceeds 
 
 - `characterRange`: The range of the characters to lay out.
 - `layoutManager`: The layout manager that does the drawing.
-- `maxNumLines`: The maximum number of line fragments to lay out. Specify   for unlimited number of line fragments.
+- `maxNumLines`: The maximum number of line fragments to lay out. Specify `NSUIntegerMax` for unlimited number of line fragments.
 
 
 ---

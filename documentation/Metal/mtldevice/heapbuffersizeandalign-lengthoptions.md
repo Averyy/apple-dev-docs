@@ -31,7 +31,7 @@ Use this method to help estimate an appropriate size for a new heap before you c
 ## Parameters
 
 - `length`: The size of the buffer, in bytes.
-- `options`: An   instance for a would-be buffer’s storage and hazard tracking modes. See   and   for more information.
+- `options`: An [`MTLResourceOptions`](mtlresourceoptions.md) instance for a would-be buffer’s storage and hazard tracking modes. See [`Resource fundamentals`](resource-fundamentals.md) and [`Setting resource storage modes`](setting-resource-storage-modes.md) for more information.
 
 ## See Also
 

@@ -31,7 +31,7 @@ Loading an [`Entity`](entity.md) with this method blocks the main actor because 
 ## Parameters
 
 - `url`: A file URL representing the file to load.
-- `resourceName`: A unique name the method assigns to the resource it loads,   for use in network synchronization.
+- `resourceName`: A unique name the method assigns to the resource it loads, for use in network synchronization.
 
 ## See Also
 

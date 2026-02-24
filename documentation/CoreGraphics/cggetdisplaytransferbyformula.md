@@ -26,14 +26,14 @@ For information about the gamma transfer formula, see the description of the fun
 ## Parameters
 
 - `display`: The identifier of the display to access.
-- `redMin`: The minimum value of the red channel in the gamma table. The value is a number in the interval  .
-- `redMax`: The maximum value of the red channel in the gamma table. The value is a number in the interval  .
+- `redMin`: The minimum value of the red channel in the gamma table. The value is a number in the interval `[0, redMax]`.
+- `redMax`: The maximum value of the red channel in the gamma table. The value is a number in the interval `[redMin, 1]`.
 - `redGamma`: A positive value used to compute the red channel in the gamma table.
-- `greenMin`: The minimum value of the green channel in the gamma table. The value is a number in the interval  .
-- `greenMax`: The maximum value of the green channel in the gamma table. The value is a number in the interval  .
+- `greenMin`: The minimum value of the green channel in the gamma table. The value is a number in the interval `[0, greenMax]`.
+- `greenMax`: The maximum value of the green channel in the gamma table. The value is a number in the interval `[greenMin, 1]`.
 - `greenGamma`: A positive value used to compute the green channel in the gamma table.
-- `blueMin`: The minimum value of the blue channel in the gamma table. The value is a number in the interval  .
-- `blueMax`: The maximum value of the blue channel in the gamma table. The value is a number in the interval  .
+- `blueMin`: The minimum value of the blue channel in the gamma table. The value is a number in the interval `[0, blueMax]`.
+- `blueMax`: The maximum value of the blue channel in the gamma table. The value is a number in the interval `[blueMin, 1]`.
 - `blueGamma`: A positive value used to compute the blue channel in the gamma table.
 
 ## See Also

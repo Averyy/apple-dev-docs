@@ -20,7 +20,7 @@ init(_ value: PhysicallyBasedMaterial.EmissiveColor)
 
 ## Parameters
 
-- `value`: The    property   from a  .
+- `value`: The [`emissiveColor`](physicallybasedmaterial/emissivecolor-swift.property.md) property from a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md).
 
 ## See Also
 

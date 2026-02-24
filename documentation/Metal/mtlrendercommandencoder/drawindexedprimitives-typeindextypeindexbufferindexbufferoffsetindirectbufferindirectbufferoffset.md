@@ -30,12 +30,12 @@ The method records the encoder’s current rendering state and resources the com
 
 ## Parameters
 
-- `primitiveType`: See the   method and its siblings for more information about setting an entry in the vertex shader argument table for buffers.
-- `indexType`: An   instance that represents the index’s format, including   and  .
-- `indexBuffer`: An   instance that contains the vertex indices of the   format.
-- `indexBufferOffset`: An integer that represents the location that’s a multiple of the index size from the start of   where the vertex indices begin.
-- `indirectBuffer`: An   instance with data that matches the layout of the   structure.
-- `indirectBufferOffset`: See the   to check for offset alignment requirements for buffers in   and   address space.
+- `primitiveType`: An [`MTLPrimitiveType`](mtlprimitivetype.md) instance that represents how the command interprets vertex argument data. See the [`setVertexBuffer(_:offset:index:)`](mtlrendercommandencoder/setvertexbuffer(_:offset:index:).md) method and its siblings for more information about setting an entry in the vertex shader argument table for buffers.
+- `indexType`: An [`MTLIndexType`](mtlindextype.md) instance that represents the index’s format, including [`MTLIndexType.uint16`](mtlindextype/uint16.md) and [`MTLIndexType.uint32`](mtlindextype/uint32.md).
+- `indexBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance that contains the vertex indices of the `indexType` format.
+- `indexBufferOffset`: An integer that represents the location that’s a multiple of the index size from the start of `indexBuffer` where the vertex indices begin.
+- `indirectBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance with data that matches the layout of the [`MTLDrawIndexedPrimitivesIndirectArguments`](mtldrawindexedprimitivesindirectarguments.md) structure.
+- `indirectBufferOffset`: An integer that represents the location, in bytes, from the start of `indirectBuffer` where the indirect arguments structure begins. See the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) to check for offset alignment requirements for buffers in `device` and `constant` address space.
 
 ## See Also
 

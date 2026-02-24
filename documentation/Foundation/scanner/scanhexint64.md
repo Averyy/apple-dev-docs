@@ -32,7 +32,7 @@ Invoke this method with `NULL` as `result` to simply scan past a hexadecimal lon
 
 ## Parameters
 
-- `result`: Upon return, contains the scanned value. Contains   or   on overflow.
+- `result`: Upon return, contains the scanned value. Contains `HUGE_VAL` or `–HUGE_VAL` on overflow.
 
 ## See Also
 

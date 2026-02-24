@@ -27,9 +27,9 @@ When using [`AVCapturePhotoOutput`](avcapturephotooutput.md) to capture photos, 
 
 ## Parameters
 
-- `duration`: Changes made to the exposure duration may result in changes to   or  .
-- `ISO`: Pass a value of   to leave the current ISO unchanged.
-- `handler`: You can pass   for this parameter if you don’t require this information.
+- `duration`: The exposure duration. Pass a value of [`currentExposureDuration`](avcapturedevice/currentexposureduration.md) to leave the current exposure duration unchanged. Changes made to the exposure duration may result in changes to [`activeVideoMinFrameDuration`](avcapturedevice/activevideominframeduration.md) or [`activeVideoMaxFrameDuration`](avcapturedevice/activevideomaxframeduration.md).
+- `ISO`: The exposure ISO value. Pass a value of [`currentISO`](avcapturedevice/currentiso.md) to leave the current ISO unchanged.
+- `handler`: A callback the system invokes when the adjustment to the exposure duration and ISO is complete. If you call this method multiple times, the system calls the completion handlers in FIFO order. The system passes a time value that matches that of the first buffer to which its applied all settings. It synchronizes the timestamp to the device clock, and you must convert the timestamp to the [`synchronizationClock`](avcapturesession/synchronizationclock.md) prior to comparison with the timestamps of buffers delivered through an [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md). You can pass `nil` for this parameter if you don’t require this information.
 
 ## Topics
 

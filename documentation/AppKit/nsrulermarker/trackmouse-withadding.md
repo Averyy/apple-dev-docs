@@ -39,7 +39,7 @@ See [`Ruler and Paragraph Style Programming Topics`](https://developer.apple.com
 ## Parameters
 
 - `mouseDownEvent`: The event that represents the user manipulation being attempted on the ruler marker.
-- `isAdding`:   to indicate that the receiver is a new marker being added to its ruler view,   otherwise.
+- `isAdding`: [`true`](https://developer.apple.com/documentation/Swift/true) to indicate that the receiver is a new marker being added to its ruler view, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
 
 ## See Also
 

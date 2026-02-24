@@ -31,7 +31,7 @@ See [`Flag Options`](nsregularexpression#Flag-Options.md) for the format of `tem
 ## Parameters
 
 - `string`: The string to search for values within.
-- `options`: The matching options to use. See   for possible values.
+- `options`: The matching options to use. See [`NSRegularExpression.MatchingOptions`](nsregularexpression/matchingoptions.md) for possible values.
 - `range`: The range of the string to search.
 - `templ`: The substitution template used when replacing matching instances.
 

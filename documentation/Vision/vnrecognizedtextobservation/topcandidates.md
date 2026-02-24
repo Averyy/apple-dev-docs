@@ -3,7 +3,7 @@
 **Framework**: Vision  
 **Kind**: method
 
-Requests the  top candidates for a recognized text string.
+Requests the *n* top candidates for a recognized text string.
 
 **Availability**:
 - iOS 13.0+
@@ -21,11 +21,11 @@ func topCandidates(_ maxCandidateCount: Int) -> [VNRecognizedText]
 
 #### Return Value
 
-An array of the  top candidates, sorted by decreasing confidence score.
+An array of the *n* top candidates, sorted by decreasing confidence score.
 
 #### Discussion
 
-This function returns no more than  candidates, but it may return fewer than  candidates.
+This function returns no more than *n* candidates, but it may return fewer than *n* candidates.
 
 ## Parameters
 

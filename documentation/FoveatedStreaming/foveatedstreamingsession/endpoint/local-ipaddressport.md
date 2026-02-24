@@ -11,7 +11,7 @@ Connects to a local endpoint by IP address and port number.
 ## Declaration
 
 ```swift
-static func local(ipAddress: String, port: Int) -> FoveatedStreamingSession.Endpoint
+static func local(ipAddress: any IPAddress, port: NWEndpoint.Port) -> FoveatedStreamingSession.Endpoint
 ```
 
 #### Discussion

@@ -22,7 +22,7 @@ func CFCharacterSetIntersect(_ theSet: CFMutableCharacterSet!, _ theOtherSet: CF
 
 ## Parameters
 
-- `theSet`: The source character set, modified by intersection with  .
+- `theSet`: The source character set, modified by intersection with `theOtherSet`.
 - `theOtherSet`: The character set with which the intersection is formed.
 
 ## See Also

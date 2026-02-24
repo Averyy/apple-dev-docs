@@ -29,7 +29,7 @@ Per the [`configureReport`](ioreporter/configurereport.md) documentation, each r
 
 ## Parameters
 
-- `reporters`: An   of   objects.
+- `reporters`: An `OSSet` of `IOReporter` objects.
 - `channels`: The full list of channels to configure.
 - `action`: The action to perform.
 - `outCount`: Count of updated reporters.

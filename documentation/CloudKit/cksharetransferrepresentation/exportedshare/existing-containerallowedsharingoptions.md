@@ -30,9 +30,9 @@ When your app invokes the share sheet with a [`CKShare`](ckshare.md) registered 
 
 ## Parameters
 
-- `share`: The existing   object.
-- `container`: The   for the share.
-- `allowedSharingOptions`: The  . The   option is the default.
+- `share`: The existing [`CKShare`](ckshare.md) object.
+- `container`: The [`CKContainer`](ckcontainer.md) for the share.
+- `allowedSharingOptions`: The [`CKAllowedSharingOptions`](ckallowedsharingoptions.md). The [`standard`](ckallowedsharingoptions/standard.md) option is the default.
 
 ## See Also
 

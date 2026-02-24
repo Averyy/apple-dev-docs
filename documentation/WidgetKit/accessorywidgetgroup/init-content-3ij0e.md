@@ -21,7 +21,7 @@ This initializer creates a `Text` view on your behalf, and treats the label simi
 
 ## Parameters
 
-- `title`: A string for the label of  .
+- `title`: A string for the label of `AccessoryWidgetGroup`.
 - `content`: A view builder for the content of the accessory group.
 
 

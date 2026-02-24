@@ -26,7 +26,7 @@ func setProperty(_ property: Any?, forKey key: Stream.PropertyKey) -> Bool
 
 ## Parameters
 
-- `property`: The value for  .
+- `property`: The value for `key`.
 - `key`: The key for one of the receiver’s properties. See Constants for a description of the available property-key constants and expected values.
 
 ## See Also

@@ -16,7 +16,7 @@ typealias MTLDeviceNotificationHandler = @Sendable (any MTLDevice, MTLDeviceNoti
 
 ## Parameters
 
-- `device`: An   that represents the GPU that’s sending the notification.
+- `device`: An [`MTLDevice`](mtldevice.md) that represents the GPU that’s sending the notification.
 - `notifyName`: A notification that represents a change to a GPU device in the system.
 
 ## See Also

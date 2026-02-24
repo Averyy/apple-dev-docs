@@ -25,7 +25,7 @@ func class_replaceProperty(_ cls: AnyClass?, _ name: UnsafePointer<CChar>, _ att
 - `cls`: The class to modify.
 - `name`: The name of the property.
 - `attributes`: An array of property attributes.
-- `attributeCount`: The number of attributes in  .
+- `attributeCount`: The number of attributes in `attributes`.
 
 ## See Also
 

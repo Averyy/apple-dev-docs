@@ -26,7 +26,7 @@ A new string that represents `date` in the specified format. Returns `NULL` if t
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `formatter`: The date formatter object that specifies the format of the returned string.
 - `date`: The date object for which to create a string representation.
 

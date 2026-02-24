@@ -23,9 +23,9 @@ func scrollTransition(_ configuration: ScrollTransitionConfiguration = .interact
 
 ## Parameters
 
-- `configuration`: The configuration controlling how the   transition will be applied. The configuration will be applied both   while the view is coming into view and while it is disappearing (the   transition is symmetrical).
-- `axis`: The axis of the containing scroll view over which the   transition will be applied. The default value of   uses the   axis of the innermost containing scroll view, or   if   the innermost scroll view is scrollable along both axes.
-- `transition`: A closure that applies visual effects as a function of   the provided phase.
+- `configuration`: The configuration controlling how the transition will be applied. The configuration will be applied both while the view is coming into view and while it is disappearing (the transition is symmetrical).
+- `axis`: The axis of the containing scroll view over which the transition will be applied. The default value of `nil` uses the axis of the innermost containing scroll view, or `.vertical` if the innermost scroll view is scrollable along both axes.
+- `transition`: A closure that applies visual effects as a function of the provided phase.
 
 ## See Also
 

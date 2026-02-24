@@ -35,7 +35,7 @@ Note that the system applies the provided custom content margins to content that
 ## Parameters
 
 - `edges`: The edges that use the custom content margins.
-- `length`: The length of the custom margin for the given  .
+- `length`: The length of the custom margin for the given `edges`.
 
 
 ---

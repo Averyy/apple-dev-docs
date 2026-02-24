@@ -20,6 +20,18 @@ Use [`WKInterfaceDate`](wkinterfacedate.md) when you want to display date or tim
 
 Do not subclass or create instances of this class yourself. Instead, define outlets in your interface controller class and connect them to the corresponding objects in your storyboard file. For example, to refer to a date object in your interface, define a property with the following syntax in your interface controller class:
 
+**Swift**:
+
+```swift
+@IBOutlet weak var myDate: WKInterfaceDate!
+```
+
+**Objective-C**:
+
+```objc
+@property (weak, nonatomic) IBOutlet WKInterfaceDate* myDate;
+```
+
 During the initialization of your interface controller, WatchKit creates any needed date objects and assigns them to their connected outlets. After those objects are set, you can use them to make changes to the onscreen date and time information.
 
 ##### Interface Builder Configuration Options

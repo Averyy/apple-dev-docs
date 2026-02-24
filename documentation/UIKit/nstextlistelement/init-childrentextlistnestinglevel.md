@@ -20,8 +20,8 @@ convenience init?(children: [NSTextListElement], textList: NSTextList, nestingLe
 
 ## Parameters
 
-- `children`: An array of   elements.
-- `textList`: The   to add elements to.
+- `children`: An array of [`NSTextListElement`](nstextlistelement.md) elements.
+- `textList`: The [`NSTextList`](nstextlist.md) to add elements to.
 - `nestingLevel`: An integer value that describes the level of nesting of these elements.
 
 ## See Also

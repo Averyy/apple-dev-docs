@@ -42,6 +42,10 @@ Although a device can send the `TokenUpdate` message multiple times, it might se
 - [object TokenUpdateRequest](tokenupdaterequest.md)
   The token update request details.
 
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/checkin`
+
 ## Request Body
 
 The request object the system sends for the `TokenUpdate` request.

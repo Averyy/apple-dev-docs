@@ -27,9 +27,9 @@ A valid MPSGraphTensor object.
 
 - `tensor`: The input tensor.
 - `paddingMode`: The parameter that defines the padding mode.
-- `leftPadding`: The parameter that defines how much padding the operation applies to the input tensor before each dimension - must be of size  .
-- `rightPadding`: The parameter that defines how much padding the operation applies to the input tensor after each dimension - must be of size  .
-- `constantValue`: The constant value the operation uses when  .
+- `leftPadding`: The parameter that defines how much padding the operation applies to the input tensor before each dimension - must be of size `rank(tensor)`.
+- `rightPadding`: The parameter that defines how much padding the operation applies to the input tensor after each dimension - must be of size `rank(tensor)`.
+- `constantValue`: The constant value the operation uses when `paddingMode = MPSGraphPaddingModeConstant`.
 - `name`: The name for the operation.
 
 

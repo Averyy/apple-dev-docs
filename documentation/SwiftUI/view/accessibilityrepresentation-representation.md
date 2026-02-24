@@ -44,7 +44,7 @@ SwiftUI hides the view that you provide in the `representation` closure and make
 
 ## Parameters
 
-- `representation`: A hidden view that the accessibility   system uses to generate accessibility elements.
+- `representation`: A hidden view that the accessibility system uses to generate accessibility elements.
 
 ## See Also
 

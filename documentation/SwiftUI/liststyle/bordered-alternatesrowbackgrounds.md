@@ -20,7 +20,7 @@ Bordered lists are expected to be inset from their outer containers, but do not 
 
 ## Parameters
 
-- `alternatesRowBackgrounds`: Whether the rows should alternate   their backgrounds to help visually distinguish them from each other.
+- `alternatesRowBackgrounds`: Whether the rows should alternate their backgrounds to help visually distinguish them from each other.
 
 ## See Also
 

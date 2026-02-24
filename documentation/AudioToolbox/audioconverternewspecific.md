@@ -31,8 +31,8 @@ This function is identical to [`AudioConverterNew(_:_:_:)`](audioconverternew(_:
 
 - `inSourceFormat`: The format of the source audio to be converted.
 - `inDestinationFormat`: The destination format to which the audio is to be converted.
-- `inNumberClassDescriptions`: The number of class descriptions supplied in the   parameter.
-- `inClassDescriptions`: A list of   objects that specify the codec to use.
+- `inNumberClassDescriptions`: The number of class descriptions supplied in the `inClassDescriptions` parameter.
+- `inClassDescriptions`: A list of `AudioClassDescription` objects that specify the codec to use.
 - `outAudioConverter`: On return, a new audio converter object.
 
 ## See Also

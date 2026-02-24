@@ -28,6 +28,10 @@ object TokensResponse
 - [object SynchronizationTokens](synchronizationtokens.md)
   The server’s synchronization token.
 
+## Properties
+
+- `SyncTokens` (SynchronizationTokens) *(required)*: A dictionary of synchronization tokens that describes the state of different types of data on the server. The client uses these tokens to determine which endpoints it needs to use to fetch new or updated data on the server.
+
 
 ---
 

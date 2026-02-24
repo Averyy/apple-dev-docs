@@ -27,8 +27,8 @@ The window group uses the given view as a template to form the content of each w
 
 ## Parameters
 
-- `id`: A string that uniquely identifies the window group. Identifiers   must be unique among the window groups in your app.
-- `makeContent`: A closure that creates the content for each instance   of the group.
+- `id`: A string that uniquely identifies the window group. Identifiers must be unique among the window groups in your app.
+- `makeContent`: A closure that creates the content for each instance of the group.
 
 
 ---

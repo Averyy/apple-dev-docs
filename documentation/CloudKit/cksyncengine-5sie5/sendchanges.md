@@ -30,7 +30,7 @@ Use this method to request the sync engine sends all pending local changes to th
 
 ## Parameters
 
-- `options`: The options to use when sending changes. For more information, see  .
+- `options`: The options to use when sending changes. For more information, see [`CKSyncEngine.SendChangesOptions`](cksyncengine-5sie5/sendchangesoptions.md).
 
 ## See Also
 

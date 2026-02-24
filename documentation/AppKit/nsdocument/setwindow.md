@@ -20,7 +20,7 @@ This method is invoked automatically during the loading of any nib for which thi
 
 ## Parameters
 
-- `window`: The window to which the receiver’s   outlet points.
+- `window`: The window to which the receiver’s `window` outlet points.
 
 ## See Also
 

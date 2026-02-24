@@ -32,7 +32,7 @@ The maximum size of an event list is 65,536 bytes. Send large SysEx messages in 
 
 - `evtlist`: The event list to which to add the event.
 - `listSize`: The event list’s capacity, in bytes.
-- `curPacket`: A packet pointer returned by a previous call to   or   for this packet list.
+- `curPacket`: A packet pointer returned by a previous call to [`MIDIEventListInit(_:_:)`](midieventlistinit(_:_:).md) or [`MIDIEventListAdd(_:_:_:_:_:_:)`](midieventlistadd(_:_:_:_:_:_:).md) for this packet list.
 - `time`: The new event’s time.
 - `wordCount`: The number of valid MIDI 32-bit words.
 - `words`: The new event, which may be a single MIDI event or a partial SysEx event.

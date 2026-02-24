@@ -42,10 +42,10 @@ The elements in the array must have already been sorted using the comparator `cm
 
 ## Parameters
 
-- `obj`: If this value is  , throws an  .
-- `r`: If   exceeds the bounds of the array (if the location plus length of the range is greater than the count of the array), throws an  .
-- `opts`: If you specify both   and  , throws an  .
-- `cmp`: If this value is  , throws an  .
+- `obj`: An object for which to search in the array. If this value is `nil`, throws an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md).
+- `r`: The range within the array to search for `obj`. If `r` exceeds the bounds of the array (if the location plus length of the range is greater than the count of the array), throws an [`rangeException`](nsexceptionname/rangeexception.md).
+- `opts`: Options for the search. For possible values, see [`NSBinarySearchingOptions`](nsbinarysearchingoptions.md). If you specify both [`firstEqual`](nsbinarysearchingoptions/firstequal.md) and [`lastEqual`](nsbinarysearchingoptions/lastequal.md), throws an `NSInvalidArgumentException`.
+- `cmp`: A comparator block used to compare the object `obj` with elements in the array. If this value is `NULL`, throws an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md).
 
 ## See Also
 

@@ -29,11 +29,11 @@ For details of this operation and parameters, refer to documentation of [`single
 
 ## Parameters
 
-- `source`: A tensor that contains the source data   with the data layout [T,N,I].   In case   and   then the layout is [T,N,H] and   for   and   the layout is [T,N,2H].
-- `recurrentWeight`: A tensor containing the recurrent weights  . For   the layout is [2,H,H] and otherwise it is [H,H].   Note: For   this tensor must have a static shape.
+- `source`: A tensor that contains the source data `x[t]` with the data layout [T,N,I]. In case `inputWeight = nil` and `bidirectional = NO` then the layout is [T,N,H] and for `inputWeight = nil` and `bidirectional = YES` the layout is [T,N,2H].
+- `recurrentWeight`: A tensor containing the recurrent weights `R`. For `bidirectional` the layout is [2,H,H] and otherwise it is [H,H]. Note: For `bidirectional` this tensor must have a static shape.
 - `sourceGradient`: The input gradient, that is the gradient of a tensor with respect to the first output of the forward pass.
-- `zState`: The second output of     with  .
-- `initState`: The initial internal state of the RNN   - optional, if missing the operation assumes zeroes. For   the layout is [N,2H] and otherwise it is [N,H].
+- `zState`: The second output of [`singleGateRNN(_:recurrentWeight:inputWeight:bias:initState:mask:descriptor:name:)`](mpsgraph/singlegaternn(_:recurrentweight:inputweight:bias:initstate:mask:descriptor:name:).md) with `descriptor.training = YES`.
+- `initState`: The initial internal state of the RNN `h[-1]` - optional, if missing the operation assumes zeroes. For `bidirectional` the layout is [N,2H] and otherwise it is [N,H].
 - `descriptor`: A descriptor that defines the parameters for the RNN operation.
 - `name`: The name for the operation.
 

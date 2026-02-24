@@ -18,7 +18,7 @@ Xcode 11.4.1 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, an
 
 ###### Known Issues
 
-- iOS apps with asset catalogs built with Xcode 11.4 may experience slower image loading performance in Dark Mode when deployed to devices running iOS 13.3 or earlier. (61200701) (FB7648891) : Add a symbol glyph to the app’s asset catalog.
+- iOS apps with asset catalogs built with Xcode 11.4 may experience slower image loading performance in Dark Mode when deployed to devices running iOS 13.3 or earlier. (61200701) (FB7648891) **Workaround**: Add a symbol glyph to the app’s asset catalog.
 
 ##### Instruments
 
@@ -46,7 +46,7 @@ Xcode 11.4.1 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, an
 
 ###### Known Issues
 
-- Automatic signing may fail to make changes to app IDs that use a seed prefix and not a team ID prefix. (59672760) (FB7593038) : Adjust your app ID manually on the [`Apple Developer`](https://developer.apple.comhttps://developer.apple.com/account) website, then return to Xcode to generate a provisioning profile.
+- Automatic signing may fail to make changes to app IDs that use a seed prefix and not a team ID prefix. (59672760) (FB7593038) **Workaround**: Adjust your app ID manually on the [`Apple Developer`](https://developer.apple.comhttps://developer.apple.com/account) website, then return to Xcode to generate a provisioning profile.
 
 ###### Resolved Issues
 

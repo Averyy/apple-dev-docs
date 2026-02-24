@@ -10,7 +10,7 @@ Implement custom linear interpolation to prevent the ringing effects associated 
 
 #### Overview
 
-Most vImage geometry operations, such as scale and rotate, use a process known as  to prevent image artifacts. vImage resamples with kernels that combine data from a target pixel and other nearby pixels to calculate a value for the destination pixel.
+Most vImage geometry operations, such as scale and rotate, use a process known as *resampling* to prevent image artifacts. vImage resamples with kernels that combine data from a target pixel and other nearby pixels to calculate a value for the destination pixel.
 
 Because resampling involves evaluating the kernel at fractional pixel locations, the process relies on a family of kernel matrices for use at different fractional distances through a given pixel. This sample code app provides a function that generates this family of kernels – unlike operations such as convolution and morphology, which apply a single kernel matrix at the center of each pixel.
 
@@ -73,7 +73,7 @@ The shear functions that scale an image are both 1D, and therefore the resamplin
 
 The function generates a set of kernel values based on a set of distances that the pixel being transformed supplies –- read from `inPointer`. The system assigns the generated kernel values to `outPointer`.
 
-In the following example, the kernel values are inversely proportional to the distance; the further a pixel is from the transformed pixel, the smaller the corresponding kernel value. After calculating the kernel values, the values  (normalize) so that their sum is `1.0`. This normalization step ensures the final image is the same brightness as the original.
+In the following example, the kernel values are inversely proportional to the distance; the further a pixel is from the transformed pixel, the smaller the corresponding kernel value. After calculating the kernel values, the values *scale* (normalize) so that their sum is `1.0`. This normalization step ensures the final image is the same brightness as the original.
 
 ```swift
 func kernelFunc(inPointer: UnsafePointer<Float>?,

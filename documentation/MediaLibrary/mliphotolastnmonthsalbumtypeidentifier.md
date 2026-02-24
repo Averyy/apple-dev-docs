@@ -3,7 +3,7 @@
 **Framework**: Media Library  
 **Kind**: var
 
-The media group that represents the recent content album in iPhoto, known as the Last  Months album. The value for  is usually 12 (settable in iPhoto > Preferences > General).
+The media group that represents the recent content album in iPhoto, known as the Last *N* Months album. The value for *N* is usually 12 (settable in iPhoto > Preferences > General).
 
 **Availability**:
 - Mac Catalyst 13.0+

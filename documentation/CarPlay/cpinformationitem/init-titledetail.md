@@ -19,7 +19,7 @@ init(title: String?, detail: String?)
 ## Parameters
 
 - `title`: The text that the template displays as the item’s title.
-- `detail`: The text that the template displays below or beside the title, depending on the template’s layout. See   for more information.
+- `detail`: The text that the template displays below or beside the title, depending on the template’s layout. See [`CPInformationTemplateLayout`](cpinformationtemplatelayout.md) for more information.
 
 
 ---

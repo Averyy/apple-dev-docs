@@ -22,7 +22,7 @@ mutating func append<SourceType>(_ buffer: UnsafeBufferPointer<SourceType>)
 
 ## Parameters
 
-- `buffer`: The buffer of bytes to append. The size is calculated from   and  .
+- `buffer`: The buffer of bytes to append. The size is calculated from `SourceType` and `buffer.count`.
 
 ## See Also
 

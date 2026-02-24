@@ -19,8 +19,8 @@ init(ssid SSID: String, eapSettings: NEHotspotEAPSettings)
 
 ## Parameters
 
-- `SSID`: The SSID of the WPA/WPA2 enterprise Wi-Fi network. See  .
-- `eapSettings`: EAP settings. For details, see  .
+- `SSID`: The SSID of the WPA/WPA2 enterprise Wi-Fi network. See [`ssid`](nehotspotconfiguration/ssid.md).
+- `eapSettings`: EAP settings. For details, see [`NEHotspotEAPSettings`](nehotspoteapsettings.md).
 
 ## See Also
 

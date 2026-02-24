@@ -27,6 +27,11 @@ object ManifestURL.ItemsItem
 - [object ManifestURL.ItemsItem.Metadata](manifesturl/itemsitem/metadata-data.dictionary.md)
   The metadata for an application or package manifest item.
 
+## Properties
+
+- `assets` ([ManifestURL.ItemsItem.AssetsItem]) *(required)*: An array of dictionaries that describe an item to install.
+- `metadata` (ManifestURL.ItemsItem.Metadata) *(required)*: The metadata for an application or package manifest item.
+
 
 ---
 

@@ -54,11 +54,14 @@ WidgetKit configures the label so that the watch face presents a unified look. F
 
 The following widget families support widget labels:
 
+- **[`WidgetFamily.accessoryCorner`](https://developer.apple.com/documentation/WidgetKit/WidgetFamily/accessoryCorner)**: In watchOS, this widget-based complication can display a [`Gauge`](Gauge.md), a [`ProgressView`](ProgressView.md), or a [`Text`](Text.md). Adding a label to an accessory corner causes the main SwiftUI view to shrink to make space for the label. If you pass a view containing multiple, valid subviews, the system picks which view to display as the widget label.
+- **[`WidgetFamily.accessoryCircular`](https://developer.apple.com/documentation/WidgetKit/WidgetFamily/accessoryCircular)**: In watchOS, the widget-based complication can display either an [`Image`](Image.md) or a [`Text`](Text.md). To pass both an image and text, wrap those views in a container.
+
 However, WidgetKit only renders the label along the bezel on the Infograph watch face (the top circular complication). On all other circular complications — including widgets on all other platforms — WidgetKit ignores the label.
 
 ## Parameters
 
-- `label`: A view that WidgetKit can display alongside the   accessory family widget’s main SwiftUI view. You can use a   ,   ,   ,   , or   a container with multiple subviews.
+- `label`: A view that WidgetKit can display alongside the accessory family widget’s main SwiftUI view. You can use a [`Image`](Image.md), [`Text`](Text.md), [`Gauge`](Gauge.md), [`ProgressView`](ProgressView.md), or a container with multiple subviews.
 
 ## See Also
 

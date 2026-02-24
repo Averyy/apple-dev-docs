@@ -27,8 +27,8 @@ A  result code.
 
 - `inAudioConverter`: The audio converter to get property information from.
 - `inPropertyID`: The property you want information about.
-- `outSize`: On output, the size of the property value in bytes. Can be   on output.
-- `outWritable`: On output, a Boolean value indicating whether the property value is writable ( ) or not ( ). Can be   on output.
+- `outSize`: On output, the size of the property value in bytes. Can be `NULL` on output.
+- `outWritable`: On output, a Boolean value indicating whether the property value is writable (`true`) or not (`false`). Can be `NULL` on output.
 
 ## See Also
 

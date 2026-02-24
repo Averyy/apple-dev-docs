@@ -26,7 +26,7 @@ func CGSizeMakeWithDictionaryRepresentation(_ dict: CFDictionary, _ size: Unsafe
 
 ## Parameters
 
-- `dict`: A dictionary that was previously returned from the function  .
+- `dict`: A dictionary that was previously returned from the function [`CGSizeCreateDictionaryRepresentation(_:)`](cgsizecreatedictionaryrepresentation(_:).md).
 - `size`: On return, the size created from the specified dictionary.
 
 ## See Also

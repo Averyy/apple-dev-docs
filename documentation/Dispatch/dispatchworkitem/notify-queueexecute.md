@@ -22,7 +22,7 @@ func notify(queue: DispatchQueue, execute: DispatchWorkItem)
 
 ## Parameters
 
-- `queue`: The queue on which to execute the work item in the   parameter.
+- `queue`: The queue on which to execute the work item in the `execute` parameter.
 - `execute`: The work item to execute after the completion of the current work item.
 
 ## See Also

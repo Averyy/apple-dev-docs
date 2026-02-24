@@ -28,14 +28,14 @@ The method records the encoder’s current rendering state and resources the com
 
 ## Parameters
 
-- `primitiveType`: See the   method and its siblings for more information about setting an entry in the vertex shader argument table for buffers.
-- `indexCount`: An integer that represents the number of vertices the command reads from   for each instance.
-- `indexType`: An   instance that represents the index’s format, including   and  .
-- `indexBuffer`: An   instance that contains the   vertex indices of the   format.
-- `indexBufferOffset`: An integer that represents the location that’s a multiple of the index size from the start of   where the vertex indices begin.
-- `instanceCount`: An integer that represents the number of times the command draws   with   vertices.
-- `baseVertex`: For more information about the   argument attribute for vertex shaders, see the  .
-- `baseInstance`: For more information about the   argument attribute for vertex shaders, see the  .
+- `primitiveType`: An [`MTLPrimitiveType`](mtlprimitivetype.md) instance that represents how the command interprets vertex argument data. See the [`setVertexBuffer(_:offset:index:)`](mtlrendercommandencoder/setvertexbuffer(_:offset:index:).md) method and its siblings for more information about setting an entry in the vertex shader argument table for buffers.
+- `indexCount`: An integer that represents the number of vertices the command reads from `indexBuffer` for each instance.
+- `indexType`: An [`MTLIndexType`](mtlindextype.md) instance that represents the index’s format, including [`MTLIndexType.uint16`](mtlindextype/uint16.md) and [`MTLIndexType.uint32`](mtlindextype/uint32.md).
+- `indexBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance that contains the `indexCount` vertex indices of the `indexType` format.
+- `indexBufferOffset`: An integer that represents the location that’s a multiple of the index size from the start of `indexBuffer` where the vertex indices begin.
+- `instanceCount`: An integer that represents the number of times the command draws `primitiveType` with `indexCount` vertices.
+- `baseVertex`: The lowest value the command passes to your vertex shader’s parameter with the `vertex_id` attribute. The command assigns each vertex a unique `vertex_id` value that increases from `baseVertex` through `(baseVertex + indexCount - 1)`. Your shader can use that value to identify each vertex in the `primitiveType` instance. For more information about the `vertex_id` argument attribute for vertex shaders, see the [`Metal Shading Language Specification (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
+- `baseInstance`: The lowest value the command passes to your vertex shader’s parameter with the `instance_id` attribute. The command assigns each drawing instance a unique `instance_id` value that increases from `baseInstance` through `(baseInstance + instanceCount - 1)`. Your shader can use that value to identify which instance the vertex belongs to. For more information about the `instance_id` argument attribute for vertex shaders, see the [`Metal Shading Language Specification (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 
 ## See Also
 

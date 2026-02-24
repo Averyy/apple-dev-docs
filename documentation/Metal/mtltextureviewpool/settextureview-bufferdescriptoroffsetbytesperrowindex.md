@@ -30,9 +30,9 @@ This method creates a lightweight texture view over a buffer, according to a des
 
 ## Parameters
 
-- `buffer`: An   instance for which to create a new texture view.
+- `buffer`: An [`MTLBuffer`](mtlbuffer.md) instance for which to create a new texture view.
 - `descriptor`: A descriptor specifying properties of the texture view to create.
-- `offset`: A byte offset, within the   parameter, at which the data for the texture view starts.
+- `offset`: A byte offset, within the `buffer` parameter, at which the data for the texture view starts.
 - `bytesPerRow`: The number of bytes between adjacent rows of pixels in the source buffer’s memory.
 - `index`: An index of a slot in the table into which this method writes the new texture view.
 

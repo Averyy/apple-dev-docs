@@ -27,7 +27,7 @@ Each image in an image asset must have a unique configuration. If the asset alre
 ## Parameters
 
 - `image`: The image you want to register with the image asset.
-- `configuration`: The image configuration details to associate with  .
+- `configuration`: The image configuration details to associate with `image`.
 
 ## See Also
 

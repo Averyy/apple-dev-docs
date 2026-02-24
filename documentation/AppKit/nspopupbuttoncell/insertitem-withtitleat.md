@@ -25,7 +25,7 @@ Because this method searches for duplicate items, it should not be used if you a
 ## Parameters
 
 - `title`: The title of the new item. If an item with the same title already exists in the menu, the existing item is removed and the new one is added
-- `index`: The zero-based index at which to insert the item. Specifying   inserts the item at the top of the menu.
+- `index`: The zero-based index at which to insert the item. Specifying `0` inserts the item at the top of the menu.
 
 ## See Also
 

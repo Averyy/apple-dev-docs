@@ -18,7 +18,7 @@ class NSAccessibilityCustomRotor
 
 Assistive apps, like VoiceOver, provide interfaces to quickly search apps for content of a specific type. For example, in a web browser, a user can quickly explore a list of navigational links or buttons using VoiceOver’s content menus.
 
-[`NSAccessibilityCustomRotor`](nsaccessibilitycustomrotor.md) provides a way for apps to vend their own content menus. For example, Pages can create a  custom rotor that allows assistive apps to search the Pages document for all headings.
+[`NSAccessibilityCustomRotor`](nsaccessibilitycustomrotor.md) provides a way for apps to vend their own content menus. For example, Pages can create a *Headings* custom rotor that allows assistive apps to search the Pages document for all headings.
 
 ## Topics
 

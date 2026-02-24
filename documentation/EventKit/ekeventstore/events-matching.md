@@ -35,7 +35,7 @@ This method is synchronous. For asynchronous behavior, run the method on another
 
 ## Parameters
 
-- `predicate`: A search predicate created with  .
+- `predicate`: A search predicate created with [`predicateForEvents(withStart:end:calendars:)`](ekeventstore/predicateforevents(withstart:end:calendars:).md).
 
 ## See Also
 

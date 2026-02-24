@@ -35,7 +35,7 @@ An incoming call may be disallowed by the system if, for example, the caller han
 
 - `UUID`: The unique identifier of the call.
 - `update`: The information for the call.
-- `completion`: A block to be executed once the call is allowed or disallowed by the system. The block is executed on the delegate queue set by the   method, or on a private serial queue if none is specified.
+- `completion`: A block to be executed once the call is allowed or disallowed by the system. The block is executed on the delegate queue set by the [`setDelegate(_:queue:)`](cxprovider/setdelegate(_:queue:).md) method, or on a private serial queue if none is specified. - **error**: If an error occurred, an error object indicating that the call was disallowed by the system, otherwise `nil`.
 
 ## See Also
 

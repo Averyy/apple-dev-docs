@@ -24,9 +24,42 @@ func vvcosisin(_: OpaquePointer, _: UnsafePointer<Double>, _: UnsafePointer<Int3
 
 ##### Parameters
 
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
 This function calculates the complex number on the unit circle corresponding to the angle given by each element of a vector.
 
 The following code shows an example of using [`vvcosisin(_:_:_:)`](vvcosisin(_:_:_:).md).
+
+**Swift**:
+
+```swift
+struct DoubleComplex {
+    public var real: Double
+    public var imag: Double
+}
+ 
+let pi = Double.pi
+var x: [Double] = [-pi * 0.5, 0, pi * 0.5]
+let y = [DoubleComplex](repeating: DoubleComplex(real: 0, imag: 0), 
+                        count: x.count)
+var n = Int32(x.count)
+ 
+vvcosisin(OpaquePointer(y), &x, &n)
+```
+
+**Objective-C**:
+
+```objc
+#include <complex.h>
+
+double x[] = {-M_PI_2, 0, M_PI_2};
+complex double y[3];
+int n = 3;
+ 
+vvcosisin(y, x, &n);
+```
 
 On return, for each array element in `y`, `real` is the cosine of `x` and `imag` is the sine of x.
 

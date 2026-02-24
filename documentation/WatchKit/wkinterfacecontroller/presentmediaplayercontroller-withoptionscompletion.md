@@ -37,9 +37,11 @@ Any audio you play using this method is routed to a paired Bluetooth audio devic
 
 ## Parameters
 
-- `URL`: If you specify a URL for a file on a remote server, this method downloads the file first and displays a progress indicator showing the progress of the operation. Because WatchKit uses App Transport Security (ATS) when downloading files from a web server, the file must be on a secure server, and the URL must use the   scheme. If your server does not support ATS–level security, download the file yourself before playing it.
-- `options`: An optional dictionary of playback options for the media file. For a list of keys to include in the dictionary, see  .
-- `completion`: The block to execute when playback ends. Use this block to determine the status of playback and to perform any cleanup. This block has no return value and takes the following parameters:
+- `URL`: The URL of the media file you want to play. The URL must specify a file; streamed media is not supported. The file may contain audio, video, or both. If you specify a URL for a file on a remote server, this method downloads the file first and displays a progress indicator showing the progress of the operation. Because WatchKit uses App Transport Security (ATS) when downloading files from a web server, the file must be on a secure server, and the URL must use the `https` scheme. If your server does not support ATS–level security, download the file yourself before playing it.
+- `options`: An optional dictionary of playback options for the media file. For a list of keys to include in the dictionary, see [`Media Player Options`](media-player-options.md).
+- `completion`: The block to execute when playback ends. Use this block to determine the status of playback and to perform any cleanup. This block has no return value and takes the following parameters: - **didPlayToEnd**: A Boolean value indicating whether the media file finished playing. The value is [`true`](https://developer.apple.com/documentation/Swift/true) if the end of the media file was reached or [`false`](https://developer.apple.com/documentation/Swift/false) if playback ended prematurely.
+- **endTime**: The time (in seconds) at which playback ended. When the `didPlayToEnd` parameter is [`false`](https://developer.apple.com/documentation/Swift/false), you can use the value in this property to determine when playback stopped. You might use that value as the start time if you play the content again.
+- **error**: An error object if a problem occurred. Use the error object to determine the cause of the problem and take any appropriate actions, such as notifying the user.
 
 ## See Also
 

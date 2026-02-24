@@ -22,8 +22,8 @@ To add custom presentation animation, Implement it in this method.
 
 ## Parameters
 
-- `viewController`: The view controller that is being presented in place of the one in the   parameter.
-- `fromViewController`: The view controller that is the parent of the one in the   parameter.
+- `viewController`: The view controller that is being presented in place of the one in the `fromViewController` parameter.
+- `fromViewController`: The view controller that is the parent of the one in the `viewController` parameter.
 
 ## See Also
 

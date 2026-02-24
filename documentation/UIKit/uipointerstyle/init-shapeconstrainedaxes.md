@@ -20,8 +20,8 @@ Morphs the pointer into the provided shape when hovering over the current region
 
 ## Parameters
 
-- `shape`: The   to use, defaults to  .
-- `constrainedAxes`: An array of   directions in which to constrain the pointer. The default is no constraints.
+- `shape`: The [`UIPointerShape`](uipointershape-swift.enum.md) to use, defaults to `nil`.
+- `constrainedAxes`: An array of [`UIAxis`](uiaxis.md) directions in which to constrain the pointer. The default is no constraints.
 
 ## See Also
 

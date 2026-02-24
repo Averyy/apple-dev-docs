@@ -26,11 +26,11 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 ## Parameters
 
 - `key`: Public key with which to verify the data.
-- `padding`: The type of padding used. Possible values are listed in  . Use   if you are verifying a PKCS1-style signature with DER encoding of the digest type and the signed data is a SHA1 digest of the actual data. Specify   if no padding was used.
+- `padding`: The type of padding used. Possible values are listed in [`SecPadding`](secpadding.md). Use [`PKCS1SHA1`](secpadding/pkcs1sha1.md) if you are verifying a PKCS1-style signature with DER encoding of the digest type and the signed data is a SHA1 digest of the actual data. Specify [`kSecPaddingNone`](secpadding/ksecpaddingnone.md) if no padding was used.
 - `signedData`: The data for which the signature is being verified. Typically, a digest of the actual data is signed.
-- `signedDataLen`: Length in bytes of the data in the   buffer.
+- `signedDataLen`: Length in bytes of the data in the `signedData` buffer.
 - `sig`: The digital signature to be verified.
-- `sigLen`: Length of the data in the   buffer.
+- `sigLen`: Length of the data in the `sig` buffer.
 
 
 ---

@@ -25,14 +25,14 @@ The `MPSGraphConvolution2DOpDescriptor` on autoreleasepool.
 
 ## Parameters
 
-- `strideInX`: See   property.
-- `strideInY`: See   property.
-- `dilationRateInX`: See   property.
-- `dilationRateInY`: See   property.
-- `groups`: See   property.
-- `paddingStyle`: See   property.
-- `dataLayout`: See   property.
-- `weightsLayout`: See   property.
+- `strideInX`: See [`strideInX`](mpsgraphconvolution2dopdescriptor/strideinx.md) property.
+- `strideInY`: See [`strideInY`](mpsgraphconvolution2dopdescriptor/strideiny.md) property.
+- `dilationRateInX`: See [`dilationRateInX`](mpsgraphconvolution2dopdescriptor/dilationrateinx.md) property.
+- `dilationRateInY`: See [`dilationRateInY`](mpsgraphconvolution2dopdescriptor/dilationrateiny.md) property.
+- `groups`: See [`groups`](mpsgraphconvolution2dopdescriptor/groups.md) property.
+- `paddingStyle`: See [`paddingStyle`](mpsgraphconvolution2dopdescriptor/paddingstyle.md) property.
+- `dataLayout`: See [`dataLayout`](mpsgraphconvolution2dopdescriptor/datalayout.md) property.
+- `weightsLayout`: See [`weightsLayout`](mpsgraphconvolution2dopdescriptor/weightslayout.md) property.
 
 
 ---

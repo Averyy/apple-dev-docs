@@ -26,10 +26,10 @@ A new [`MTLSize`](mtlsize.md) instance.
 
 ## Parameters
 
-- `textureType`: An   instance.
-- `pixelFormat`: An   instance.
+- `textureType`: An [`MTLTextureType`](mtltexturetype.md) instance.
+- `pixelFormat`: An [`MTLPixelFormat`](mtlpixelformat.md) instance.
 - `sampleCount`: The number of samples for each pixel.
-- `sparsePageSize`: An   instance.
+- `sparsePageSize`: An [`MTLSparsePageSize`](mtlsparsepagesize.md) instance.
 
 ## See Also
 

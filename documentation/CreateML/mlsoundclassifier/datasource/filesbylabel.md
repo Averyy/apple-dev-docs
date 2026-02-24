@@ -53,7 +53,7 @@ The value for each label key is an array of URLs to audio files of laughter and 
 
 ## Parameters
 
-- `dictionary`: A dictionary that contains a collection of labeled audio files. Each of the dictionary’s   keys is a label, and each key’s value is an array of audio-file URLs.
+- `dictionary`: A dictionary that contains a collection of labeled audio files. Each of the dictionary’s keys is a label, and each key’s value is an array of audio-file URLs.
 
 ## See Also
 

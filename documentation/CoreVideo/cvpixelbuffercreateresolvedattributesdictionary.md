@@ -34,9 +34,9 @@ Some mismatched attributes cannot be resolved. Calling this function results in 
 
 ## Parameters
 
-- `allocator`: The allocator to use to create the pixel buffer. Pass   to specify the default allocator.
+- `allocator`: The allocator to use to create the pixel buffer. Pass `NULL` to specify the default allocator.
 - `attributes`: An array of Core Foundation dictionaries containing pixel buffer attribute key-value pairs.
-- `resolvedDictionaryOut`: On output, the consolidated dictionary. Ownership follows the  .
+- `resolvedDictionaryOut`: On output, the consolidated dictionary. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 

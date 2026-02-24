@@ -25,9 +25,9 @@ You can provide a `nil` parameter to the `heap` argument only when you perform u
 
 ## Parameters
 
-- `buffer`: A placement sparse  .
-- `heap`: An   you allocate with type  .
-- `operations`: An array of   instances to perform.
+- `buffer`: A placement sparse [`MTLBuffer`](mtlbuffer.md).
+- `heap`: An [`MTLHeap`](mtlheap.md) you allocate with type [`MTLHeapType.placement`](mtlheaptype/placement.md).
+- `operations`: An array of [`MTL4UpdateSparseBufferMappingOperation`](mtl4updatesparsebuffermappingoperation.md) instances to perform.
 
 
 ---

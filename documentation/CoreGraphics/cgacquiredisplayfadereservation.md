@@ -27,7 +27,7 @@ During the fade reservation interval, the application has exclusive rights to us
 
 ## Parameters
 
-- `seconds`: The desired number of seconds to reserve the fade hardware. An application can specify any value in the interval  .
+- `seconds`: The desired number of seconds to reserve the fade hardware. An application can specify any value in the interval `(0, kCGMaxDisplayReservationInterval]`.
 - `token`: A pointer to storage (provided by the caller) for a fade reservation token. On return, the storage contains a new token.
 
 ## See Also

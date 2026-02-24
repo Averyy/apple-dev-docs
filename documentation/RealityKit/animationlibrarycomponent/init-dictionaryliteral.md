@@ -32,7 +32,7 @@ let animationLibrary: AnimationLibraryComponent = [
 
 ## Parameters
 
-- `elements`: A list of key-value pairs that make up the dictionary.   Each key is a unique animation name, and each value is an animation resource.
+- `elements`: A list of key-value pairs that make up the dictionary. Each key is a unique animation name, and each value is an animation resource.
 
 ## See Also
 

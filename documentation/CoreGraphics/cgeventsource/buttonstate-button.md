@@ -21,8 +21,8 @@ If `true`, the button is down. If `false`, the button is up.
 
 ## Parameters
 
-- `stateID`: The source state to access. Pass one of the constants listed in  .
-- `button`: The mouse button to test. Pass one of the constants listed in  .
+- `stateID`: The source state to access. Pass one of the constants listed in [`CGEventSourceStateID`](cgeventsourcestateid.md).
+- `button`: The mouse button to test. Pass one of the constants listed in [`CGMouseButton`](cgmousebutton.md).
 
 ## See Also
 

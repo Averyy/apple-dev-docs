@@ -99,7 +99,7 @@ struct TestResult: Codable {
 
 ##### Share Diagnosis Keys with the Server
 
-A user with a diagnosis for COVID-19 can upload  to the server. Each instance of the app periodically downloads diagnosis keys to search the device’s private interaction data for matching interactions.
+A user with a diagnosis for COVID-19 can upload *diagnosis keys* to the server. Each instance of the app periodically downloads diagnosis keys to search the device’s private interaction data for matching interactions.
 
 This project simulates a remote server with which the app communicates. There is a single `Server` object in the app that stores the received diagnosis keys and provides them on demand. The sample server does not partition the data by region. It maintains a single list of keys, and provides the entire list upon request.
 
@@ -221,7 +221,7 @@ manager.requestPreAuthorizedDiagnosisKeys { (error) in
 }
 ```
 
-> ❗ **Important**: PHAs must notify users that they’ve tested positive  the app calls `requestPreAuthorizedDiagnosisKeys(completionHandler:)`. They must also notify users that their keys are being submitted to the PHA’s key server.
+> ❗ **Important**: PHAs must notify users that they’ve tested positive *before* the app calls `requestPreAuthorizedDiagnosisKeys(completionHandler:)`. They must also notify users that their keys are being submitted to the PHA’s key server.
 
 ##### Detect Exposure Notifications Api Version at Runtime
 

@@ -68,8 +68,8 @@ It is undefined behavior to mutate the pixel buffer directly without using `.wit
 
 ## Parameters
 
-- `pixelBuffer`: The backing pixel buffer. It must be backed by  .
-- `shape`: The shape of the MLShapedArray. The last dimension of   must match the pixel buffer’s   width. The product of the rest of the dimensions must match the height.
+- `pixelBuffer`: The backing pixel buffer. It must be backed by `IOSurface`.
+- `shape`: The shape of the MLShapedArray. The last dimension of `shape` must match the pixel buffer’s width. The product of the rest of the dimensions must match the height.
 
 ## See Also
 

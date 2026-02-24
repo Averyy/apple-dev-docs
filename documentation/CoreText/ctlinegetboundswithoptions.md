@@ -27,7 +27,7 @@ The bounds of the line as specified by the type and options, such that the coord
 ## Parameters
 
 - `line`: The line for which you calculate the bounds.
-- `options`: Desired options or   if none.
+- `options`: Desired options or `0` if none.
 
 ## See Also
 

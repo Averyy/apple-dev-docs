@@ -22,8 +22,8 @@ Creates an anchor entity that targets a plane with the given characteristics.
 
 ## Parameters
 
-- `alignment`: The alignment of the plane to target, like    or   .
-- `classification`: The classification of the target plane to look for,   like   or   .
+- `alignment`: The alignment of the plane to target, like [`horizontal`](anchoringcomponent/target-swift.enum/alignment/horizontal.md) or [`vertical`](anchoringcomponent/target-swift.enum/alignment/vertical.md).
+- `classification`: The classification of the target plane to look for, like [`floor`](anchoringcomponent/target-swift.enum/classification/floor.md) or [`ceiling`](anchoringcomponent/target-swift.enum/classification/ceiling.md).
 - `minimumBounds`: The minimum size of the target plane.
 
 ## See Also

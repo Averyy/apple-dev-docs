@@ -20,7 +20,7 @@ The dext calls this method to indicate completion of an asynchronous call to met
 
 ## Parameters
 
-- `requestID`: An opaque identifier, originally provided in the corresponding   call.
+- `requestID`: An opaque identifier, originally provided in the corresponding `DoAsync…` call.
 - `status`: The status of the request.
 
 ## See Also

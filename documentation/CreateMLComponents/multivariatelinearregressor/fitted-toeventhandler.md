@@ -26,7 +26,7 @@ The fitted linear regressor model.
 
 ## Parameters
 
-- `input`: A sequence of examples used for fitting the regressor. For faster processing, instead of passing a   sequence of shaped arrays, consider passing a single shaped array containing all the training examples. For   example instead of passing   shaped arrays with shape  , pass a single shaped array with shape   . See  .
+- `input`: A sequence of examples used for fitting the regressor. For faster processing, instead of passing a sequence of shaped arrays, consider passing a single shaped array containing all the training examples. For example instead of passing `N` shaped arrays with shape `[M]`, pass a single shaped array with shape `[N, M]`. See [`fitted(to:validateOn:eventHandler:)`](multivariatelinearregressor/fitted(to:validateon:eventhandler:)-82szq.md).
 - `eventHandler`: An event handler. This method reports mean squared errors.
 
 ## See Also

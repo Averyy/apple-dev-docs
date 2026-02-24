@@ -24,6 +24,10 @@ typealias LoadHandler = @Sendable (NSItemProvider.CompletionHandler?, AnyClass?,
 
 Use this block when registering a type-specific coercion handler with the [`registerItem(forTypeIdentifier:loadHandler:)`](nsitemprovider/registeritem(fortypeidentifier:loadhandler:).md) method. The parameters for this block are as follows:
 
+- **completionHandler**: The completion handler to call with the resulting data. For information about this block, see [`NSItemProvider.CompletionHandler`](nsitemprovider/completionhandler.md).
+- **expectedValueClass**: The expected class of the item being loaded. Convert the item provider’s data to this type and pass the resulting object as the first parameter of the `completionHandler` block.
+- **options**: A dictionary with options for how to provide the requested item. For example, the dictionary may contain the pixel dimensions of a requested image. For information about the supported keys, see [`Options Dictionary Key`](options-dictionary-key.md).
+
 When a client calls the [`loadItem(forTypeIdentifier:options:completionHandler:)`](nsitemprovider/loaditem(fortypeidentifier:options:completionhandler:).md) method and requests the appropriate type, the item provider executes your block. In your implementation, create an object of the expected type and execute the block in the `completionHandler` parameter, passing the newly created object as the first parameter of that block. If there is an error, pass `nil` for the object and provide an appropriate [`NSError`](nserror.md) object explaining what happened.
 
 This type of block is also used for generating preview images. In the case of a preview image, the `expectedValueClass` is always a [`NSData`](nsdata.md), [`NSURL`](nsurl.md), [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) (in iOS), or [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) (in macOS) class.

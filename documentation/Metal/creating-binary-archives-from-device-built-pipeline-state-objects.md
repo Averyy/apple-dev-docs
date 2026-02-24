@@ -18,9 +18,73 @@ This article explains how to serialize an [`MTLBinaryArchive`](mtlbinaryarchive.
 
 Create an instance of [`MTLBinaryArchive`](mtlbinaryarchive.md) from an [`MTLBinaryArchiveDescriptor`](mtlbinaryarchivedescriptor.md) with a `nil` [`url`](mtlbinaryarchivedescriptor/url.md) property. This instructs Metal to create, rather than load, a binary archive. After creating the archive, add all pipeline descriptors you use in your encoder to the binary archive. The following code example performs these steps for an [`MTLDevice`](mtldevice.md) instance named `device` and an [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) instance named `pipelineStateDescriptor`:
 
+**Swift**:
+
+```swift
+do {
+    let archiveDescriptor = MTLBinaryArchiveDescriptor()
+    let archive = device.makeBinaryArchive(descriptor: archiveDescriptor)
+    try archive.addRenderPipelineFunctions(descriptor: pipelineStateDescriptor)
+}
+catch {
+    print("Failed to create binary archive: \(error)")
+}
+```
+
+**Objective-C**:
+
+```objective-c
+MTLBinaryArchiveDescriptor *archiveDescriptor = [[MTLBinaryArchiveDescriptor alloc] init];
+id<MTLBinaryArchive> archive = [_device newBinaryArchiveWithDescriptor:archiveDescriptor error:&error];
+NSAssert(archive, @"Failed to create binary archive: %@", error);
+
+BOOL success = [archive addRenderPipelineFunctionsWithDescriptor:pipelineStateDescriptor error:&error];
+```
+
 > 💡 **Tip**:  If you’re adding binary archive serialization to an existing app, create your render pipeline state after creating your binary archive instance in the app. When you do, Metal can take advantage of optimizations that increase shader compilation speed, and reduce memory usage.
 
 After adding pipeline descriptors to the binary archive, serialize it to storage. The following code example shows how to serialize an [`MTLBinaryArchive`](mtlbinaryarchive.md) instance to device storage:
+
+**Swift**:
+
+```swift
+fn serializeBinary(archive: MTLBinaryArchive, name: String) throws {
+    var success = false;
+    var directory: URL? = FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+
+#if os(macOS)
+    directory = URL(string: Bundle.main.bundleIdentifier, relativeTo: directory).absoluteURL;
+    if directory == nil {
+        throw
+    }
+    FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true, attributes: nil)
+#endif
+
+    let url = directory.appendingPathComponent("\(name).binary.metallib"
+    archive.serialize(to: url.absoluteURL)
+}
+```
+
+**Objective-C**:
+
+```objective-c
+-(BOOL) serializeBinaryArchive:(id<MTLBinaryArchive>)archive named:(NSString*)name error:(NSError**)error {
+    BOOL success = false;
+
+    NSURL* directory = [[NSFileManager defaultManager] URLForDirectory:NSApplicationSupportDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:error];
+#if TARGET_OS_OSX
+    directory = [[NSURL URLWithString:[[NSBundle mainBundle] bundleIdentifier] relativeToURL:directory] absoluteURL];
+    success = [[NSFileManager defaultManager] createDirectoryAtURL:directory withIntermediateDirectories:YES attributes:nil error:error];
+    if (!success) {
+        return NO;
+    }
+#endif
+
+    NSURL* url = [directory URLByAppendingPathComponent:[NSString stringWithFormat:@"%@.binary.metallib", name]];  
+    success = [archive serializeToURL:url error:error];
+    return success;    
+}
+```
 
 > **Note**:  In macOS, store resources outside your application bundle and within an appropriate directory. Storing runtime-created resources inside an application bundle can cause code-signing and verification errors when rebuilding. For more information on how to discover and diagnose these issues, see [`Testing a release build`](https://developer.apple.com/documentation/Xcode/testing-a-release-build).
 
@@ -52,7 +116,7 @@ Note that binary archives still contain a Metal IR slice, `air64_v26`. Metal may
 
 ##### Copy and Modify the Configuration Script
 
-The pipeline state that Metal builds during binary serialization is a , a JSON file with the extension `mtlp-json`. This is the data you retrieve from the binary archive and modify to compile new binary slices. Start by extracting the Metal binaries and configuration script from the archive using the `metal-source` command-line tool in Terminal.
+The pipeline state that Metal builds during binary serialization is a *pipeline configuration script*, a JSON file with the extension `mtlp-json`. This is the data you retrieve from the binary archive and modify to compile new binary slices. Start by extracting the Metal binaries and configuration script from the archive using the `metal-source` command-line tool in Terminal.
 
 ```shell
 % xcrun metal-source -flatbuffers=json device-compiled.binary.metallib -o extracted-source
@@ -101,6 +165,36 @@ applegpu_g12p applegpu_g13p applegpu_g13g applegpu_g14p applegpu_g14g applegpu_g
 To use this newly created Metal binary archive, you need to add it to your Xcode project’s bundle resources. Add the `precompiled.binary.metallib` archive to your project’s Copy Bundle Resources build phase. For instructions, see [`Customizing the build phases of a target`](https://developer.apple.com/documentation/Xcode/customizing-the-build-phases-of-a-target).
 
 For Metal to take advantage of precompiled binaries, load them with [`makeBinaryArchive(descriptor:)`](mtldevice/makebinaryarchive(descriptor:).md) and provide an [`MTLBinaryArchiveDescriptor`](mtlbinaryarchivedescriptor.md) with a [`url`](mtlbinaryarchivedescriptor/url.md) pointing to the binary archive. Then add them to a pipeline descriptor instance’s [`binaryArchives`](mtlrenderpipelinedescriptor/binaryarchives.md) property.
+
+**Swift**:
+
+```swift
+let archiveDescriptor = MTLBinaryArchiveDescriptor()
+archiveDescriptor.url = Bundle.main.url(forResource: "precompiled.binary", withExtension: "metallib", subdirectory: nil)
+if archiveDescriptor.url == nil {
+    // Throw an appropriate error for your app failing to locate the binary archive.
+}
+
+let archive = device.makeBinaryArchive(descriptor: archiveDescriptor)
+pipelineDescriptor.binaryArchives.append(archive)
+```
+
+**Objective-C**:
+
+```objective-c
+MTLBinaryArchiveDescriptor* archiveDescriptor = [[MTLBinaryArchiveDescriptor alloc] init];
+archiveDescriptor.url = [[NSBundle main] URLForResource:@"precompiled.binary" withExtension:@"metallib" subdirectory:nil];
+if (archiveDescriptor.url == nil) {
+    // Handle failing to load the binary archive.
+}
+
+id<MTLBinaryArchive> archive = [device newBinaryArchiveWithDescriptor:archiveDescriptor error:error];
+if (archive == nil) {
+    // Handle failing to load the binary archive.
+}
+
+pipelineDescriptor.binaryArchives = [pipelineDescriptor.binaryArchives arrayByAddingObject:archive];
+```
 
 > 💡 **Tip**:  Failing to load a binary archive isn’t a fatal error in Metal, and it falls back on the compilation of Metal IR at runtime. To cause a failure from the Metal system when an expected binary archive doesn’t load, configure your pipeline with an [`MTLPipelineOption`](mtlpipelineoption.md) of [`failOnBinaryArchiveMiss`](mtlpipelineoption/failonbinaryarchivemiss.md).
 

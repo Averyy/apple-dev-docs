@@ -26,11 +26,11 @@ Call this method from your event service to dispatch a keyboard event to the sys
 ## Parameters
 
 - `timeStamp`: The timestamp of the event. Use the timestamp of the report element that is the source of the event.
-- `x`: The X value, specified in the range   to  .
-- `y`: The Y value, specified in the range   to  .
+- `x`: The X value, specified in the range `0` to `1`.
+- `y`: The Y value, specified in the range `0` to `1`.
 - `buttonState`: The current button state, if any.
-- `options`: Additional options for pointer events. Specify   for no options. For a list of other values, see  .
-- `accelerate`: A Boolean value indicating whether to apply the acceleration algorithm to the pointer event. Specify   if you don’t want to apply that logic.
+- `options`: Additional options for pointer events. Specify `0` for no options. For a list of other values, see [`IOHIDPointerEventOptions`](iohidpointereventoptions.md).
+- `accelerate`: A Boolean value indicating whether to apply the acceleration algorithm to the pointer event. Specify `false` if you don’t want to apply that logic.
 
 ## See Also
 

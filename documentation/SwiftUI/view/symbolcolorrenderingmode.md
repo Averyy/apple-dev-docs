@@ -27,7 +27,7 @@ A view that specifies the color rendering mode for symbol images.
 
 ## Parameters
 
-- `mode`: The color rendering mode, or nil to use the   default mode.
+- `mode`: The color rendering mode, or nil to use the default mode.
 
 
 ---

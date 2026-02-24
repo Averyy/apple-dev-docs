@@ -36,7 +36,7 @@ After you create the task, you must start it by calling its [`resume()`](urlsess
 
 ## Parameters
 
-- `request`: A URL request object that provides the URL, cache policy, request type, and so on. The body stream and body data in this request object are ignored, and the session calls its delegate’s   method to provide the body data.
+- `request`: A URL request object that provides the URL, cache policy, request type, and so on. The body stream and body data in this request object are ignored, and the session calls its delegate’s [`urlSession(_:task:needNewBodyStream:)`](urlsessiontaskdelegate/urlsession(_:task:neednewbodystream:).md) method to provide the body data.
 
 ## See Also
 

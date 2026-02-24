@@ -26,7 +26,7 @@ This method raises an [`rangeException`](nsexceptionname/rangeexception.md) when
 
 ## Parameters
 
-- `range`: Index range to add. Must be in the range  .
+- `range`: Index range to add. Must be in the range `0 .. NSNotFound - 1`.
 
 ## See Also
 

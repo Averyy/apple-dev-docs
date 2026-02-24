@@ -12,6 +12,10 @@ The permitted list of domains the extension can use when scheduling the initial 
 - tvOS 18.4+
 - visionOS 2.4+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 This key is required to use Background Assets.

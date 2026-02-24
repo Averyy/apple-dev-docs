@@ -25,7 +25,7 @@ A MLUntypedColumn of type MultiArray from the specified MLUntypedColumn if the g
 
 ## Parameters
 
-- `multiArrays`: A MLUntypedColumn from which to create a MLUntypedColumn with type   MLDataValue.DictionaryType
+- `multiArrays`: A MLUntypedColumn from which to create a MLUntypedColumn with type MLDataValue.DictionaryType
 
 ## See Also
 

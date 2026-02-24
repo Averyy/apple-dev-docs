@@ -72,6 +72,12 @@ Specify `com.apple.systempreferences` as the payload type.
 </plist>
 ```
 
+## Properties
+
+- `DisabledPreferencePanes` ([string]): The list of disabled System Preferences panes.
+- `DisabledSystemSettings` ([string]): The list of disabled System Settings extensions. All other items will be enabled. When `DisabledSystemSettings` is specified, the device ignores `DisabledPreferencePanes` and `EnabledPreferencePanes`. > **Note**:  A given System Settings extension can supply more than one section in System Settings; disabling such an extension disables all sections it supplies.
+- `EnabledPreferencePanes` ([string]): The list of enabled System Preferences panes.
+
 ## See Also
 
 - [object AIMAccount](aimaccount.md)

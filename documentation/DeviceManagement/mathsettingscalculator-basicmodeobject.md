@@ -16,6 +16,10 @@ The declaration to configure basic mode in the calculator app.
 object MathSettingsCalculator_BasicModeObject
 ```
 
+## Properties
+
+- `AddSquareRoot` (boolean) *(required)*: Add the square root button to the basic calculator by replacing the +/- button. Normally, the square root button is available in scientific mode, so this key can be used to make it available when the scientific mode is restricted.
+
 ## See Also
 
 - [object MathSettingsCalculator_InputModesObject](mathsettingscalculator_inputmodesobject.md)

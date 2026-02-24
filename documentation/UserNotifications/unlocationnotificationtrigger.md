@@ -26,6 +26,30 @@ When configuring the region, use the [`notifyOnEntry`](https://developer.apple.c
 
 Listing 1. Creating a location-based trigger
 
+**Swift**:
+
+```swift
+let center = CLLocationCoordinate2D(latitude: 37.335400, longitude: -122.009201)
+let region = CLCircularRegion(center: center, radius: 2000.0, identifier: "Headquarters")
+region.notifyOnEntry = true
+region.notifyOnExit = false
+let trigger = UNLocationNotificationTrigger(region: region, repeats: false)
+```
+
+**Objective-C**:
+
+```objc
+CLLocationCoordinate2D center = CLLocationCoordinate2DMake(37.335400, -122.009201);
+
+CLCircularRegion* region = [[CLCircularRegion alloc] initWithCenter:center
+         isn’t  radius:2000.0 identifier:@"Headquarters"];
+region.notifyOnEntry = YES;
+region.notifyOnExit = NO;
+
+UNLocationNotificationTrigger* trigger = [UNLocationNotificationTrigger
+                 triggerWithRegion:region repeats:NO];
+```
+
 The system doesn’t immediately trigger region-based notifications when the edge of the boundary is crossed. The system applies heuristics to ensure that the boundary crossing represents a deliberate event and isn’t the result of spurious location data. For more information about the heuristics, see [`Monitoring the user’s proximity to geographic regions`](https://developer.apple.com/documentation/CoreLocation/monitoring-the-user-s-proximity-to-geographic-regions).
 
 ## Topics

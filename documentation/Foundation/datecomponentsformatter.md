@@ -26,6 +26,32 @@ An [`DateComponentsFormatter`](datecomponentsformatter.md) object takes quantiti
 
 To use this class, create an instance, configure its properties, and call one of its methods to generate an appropriate string. The properties of this class let you configure the calendar and specify the date and time units you want displayed in the resulting string. The listing below shows how to configure a formatter to create the string “About 5 minutes remaining”.
 
+**Swift**:
+
+```swift
+let formatter = DateComponentsFormatter()
+formatter.unitsStyle = .full
+formatter.includesApproximationPhrase = true
+formatter.includesTimeRemainingPhrase = true
+formatter.allowedUnits = [.minute]
+ 
+// Use the configured formatter to generate the string.
+let outputString = formatter.string(from: 300.0)
+```
+
+**Objective-C**:
+
+```objc
+NSDateComponentsFormatter *formatter = [[NSDateComponentsFormatter alloc] init];
+formatter.unitsStyle = NSDateComponentsFormatterUnitsStyleFull;
+formatter.includesApproximationPhrase = YES;
+formatter.includesTimeRemainingPhrase = YES;
+formatter.allowedUnits = NSCalendarUnitMinute;
+ 
+// Use the configured formatter to generate the string.
+NSString* outputString = [formatter stringFromTimeInterval:300.0];
+```
+
 The methods of this class may be called safely from any thread of your app. It is also safe to share a single instance of this class from multiple threads, with the caveat that you should not change the configuration of the object while another thread is using it to generate a string.
 
 > 💡 **Tip**:  In Swift, you can use [`Date.RelativeFormatStyle`](date/relativeformatstyle.md) rather than [`DateComponentsFormatter`](datecomponentsformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.

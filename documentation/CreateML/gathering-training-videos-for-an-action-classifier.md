@@ -6,13 +6,13 @@ Collect quality example videos that effectively train action classifiers.
 
 #### Overview
 
-Create a robust action classifier by collecting high-quality videos that clearly show a person performing each action you want the classifier to recognize. In addition, gather videos of unrelated actions the classifier might witness. Use these to create a  of irrelevant actions, so the classifier distinguishes between these two types.
+Create a robust action classifier by collecting high-quality videos that clearly show a person performing each action you want the classifier to recognize. In addition, gather videos of unrelated actions the classifier might witness. Use these to create a *negative class* of irrelevant actions, so the classifier distinguishes between these two types.
 
 For general information about how to create an action classifier, see [`Creating an Action Classifier Model`](creating-an-action-classifier-model.md).
 
 ##### Collect Videos for Each Action
 
-Action classifiers learn from example videos of a human performing an action. Create ML uses the [`Vision`](https://developer.apple.com/documentation/Vision) framework to locate key body parts, called , in each video frame. Action classifiers learn how to recognize a human body’s movements by tracking these landmarks frame by frame. Keep the landmarks clearly visible by applying the following guidelines as you record example videos, or when assessing videos from other sources.
+Action classifiers learn from example videos of a human performing an action. Create ML uses the [`Vision`](https://developer.apple.com/documentation/Vision) framework to locate key body parts, called *landmarks*, in each video frame. Action classifiers learn how to recognize a human body’s movements by tracking these landmarks frame by frame. Keep the landmarks clearly visible by applying the following guidelines as you record example videos, or when assessing videos from other sources.
 
 - Keep the camera still.
 - Record one person at a time.

@@ -28,7 +28,7 @@ If the [`stop`](dispatchio/closeflags/stop.md) option is specified in the flags 
 
 ## Parameters
 
-- `flags`: The options to use when closing the channel. For a list of possible values, see  .
+- `flags`: The options to use when closing the channel. For a list of possible values, see [`DispatchIO.CloseFlags`](dispatchio/closeflags.md).
 
 ## See Also
 

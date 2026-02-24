@@ -41,7 +41,7 @@ You can override the default value that this method returns for a particular gui
 
 ## Parameters
 
-- `context`: The context of the view that you apply   the alignment guide to. The context gives you the view’s dimensions,   as well as the values of other alignment guides that apply to the   view, including both built-in and custom guides. You can use any of   these values, if helpful, to calculate the value for your custom   guide.
+- `context`: The context of the view that you apply the alignment guide to. The context gives you the view’s dimensions, as well as the values of other alignment guides that apply to the view, including both built-in and custom guides. You can use any of these values, if helpful, to calculate the value for your custom guide.
 
 
 ---

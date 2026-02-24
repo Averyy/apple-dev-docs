@@ -18,7 +18,7 @@ optional func mapTemplateDidBeginPitchGesture(_ mapTemplate: CPMapTemplate)
 
 ## Parameters
 
-- `mapTemplate`: The   the gesture applies to.
+- `mapTemplate`: The [`CPMapTemplate`](cpmaptemplate.md) the gesture applies to.
 
 
 ---

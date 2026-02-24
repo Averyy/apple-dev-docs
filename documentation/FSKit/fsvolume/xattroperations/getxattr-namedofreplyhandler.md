@@ -19,7 +19,7 @@ func xattr(named name: FSFileName, of item: FSItem) async throws -> Data
 
 - `name`: The extended attribute name.
 - `item`: The item for which to get the extended attribute.
-- `reply`: A block or closure to indicate success or failure. If getting the attribute succeeds, pass an data instance containing the extended attribute data and a   error. If getting the attribute fails, pass the relevant error as the second parameter; FSKit ignores any data in this case. For an   Swift implementation, there’s no reply handler; simply return the data or throw an error.
+- `reply`: A block or closure to indicate success or failure. If getting the attribute succeeds, pass an data instance containing the extended attribute data and a `nil` error. If getting the attribute fails, pass the relevant error as the second parameter; FSKit ignores any data in this case. For an `async` Swift implementation, there’s no reply handler; simply return the data or throw an error.
 
 ## See Also
 

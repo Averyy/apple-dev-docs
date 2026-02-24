@@ -27,7 +27,7 @@ A string containing the formatted `byteCount` value.
 ## Parameters
 
 - `byteCount`: The byte count.
-- `countStyle`: The formatter style. See   for possible values.
+- `countStyle`: The formatter style. See [`ByteCountFormatter.CountStyle`](bytecountformatter/countstyle-swift.enum.md) for possible values.
 
 ## See Also
 

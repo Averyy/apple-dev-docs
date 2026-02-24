@@ -27,7 +27,7 @@ In some cases, (for example, a [`Data`](data.md) backed by a `dispatch_data_t`, 
 
 ## Parameters
 
-- `block`: The closure to invoke for each region of data. You may stop the enumeration by setting the   parameter to  .
+- `block`: The closure to invoke for each region of data. You may stop the enumeration by setting the `stop` parameter to `true`.
 
 ## See Also
 

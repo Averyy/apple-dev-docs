@@ -22,7 +22,7 @@ static let domain: HTTPCookiePropertyKey
 
 #### Discussion
 
-If this cookie attribute is missing, the domain is inferred from the value for `NSHTTPCookieOriginURL`. If you do not specify a value for `NSHTTPCookieOriginURL`, you  specify a value for `NSHTTPCookieDomain`.
+If this cookie attribute is missing, the domain is inferred from the value for `NSHTTPCookieOriginURL`. If you do not specify a value for `NSHTTPCookieOriginURL`, you *must* specify a value for `NSHTTPCookieDomain`.
 
 ## See Also
 

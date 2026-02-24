@@ -30,7 +30,7 @@ Determines whether the given `CMBlockBuffer` is empty, i.e., devoid of any `memo
 
 ## Parameters
 
-- `theBuffer`:   to examine. Must not be  .
+- `theBuffer`: `CMBlockBuffer` to examine. Must not be `NULL`.
 
 ## See Also
 

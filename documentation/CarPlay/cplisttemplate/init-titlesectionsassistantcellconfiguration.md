@@ -25,8 +25,8 @@ Your app doesn’t receive a callback when the user selects the assistant cell. 
 ## Parameters
 
 - `title`: The title that the navigation bar displays while the template is visible.
-- `sections`: An array of sections, each with zero or more list items. For more information, see  .
-- `assistantCellConfiguration`: The object that provides the configuration attributes for the assistant cell, such as position and visibility. For more information, see  .
+- `sections`: An array of sections, each with zero or more list items. For more information, see [`CPListSection`](cplistsection.md).
+- `assistantCellConfiguration`: The object that provides the configuration attributes for the assistant cell, such as position and visibility. For more information, see [`CPAssistantCellConfiguration`](cpassistantcellconfiguration.md).
 
 ## See Also
 

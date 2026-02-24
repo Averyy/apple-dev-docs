@@ -28,7 +28,7 @@ You can also test subscription expiration by accelerating the time in the testin
 
 ## Parameters
 
-- `productIdentifier`: The   of the auto-renewable subscription to expire.
+- `productIdentifier`: The [`productIdentifier`](sktesttransaction/productidentifier.md) of the auto-renewable subscription to expire.
 
 ## See Also
 

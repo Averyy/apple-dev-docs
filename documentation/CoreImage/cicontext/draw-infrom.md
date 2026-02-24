@@ -29,7 +29,7 @@ In macOS, you need to be aware of whether the [`CIContext`](cicontext.md) object
 
 - `image`: A Core Image image object.
 - `inRect`: The rectangle in the context destination to draw into. The image is scaled to fill the destination rectangle.
-- `fromRect`: The subregion of the image that you want to draw into the context, with the origin and target size defined by the   parameter. This rectangle is always in pixel dimensions.
+- `fromRect`: The subregion of the image that you want to draw into the context, with the origin and target size defined by the `dest` parameter. This rectangle is always in pixel dimensions.
 
 
 ---

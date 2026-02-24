@@ -24,6 +24,10 @@ object RestrictionsResponse.GlobalRestrictions.RestrictedValue
 - [object RestrictionsResponse.GlobalRestrictions.RestrictedValue.ANY restriction name](restrictionsresponse/globalrestrictions-data.dictionary/restrictedvalue-data.dictionary/any-restriction-name-data.dictionary.md)
   A dictionary that contains numeric restriction parameters.
 
+## Properties
+
+- `ANY restriction name` (RestrictionsResponse.GlobalRestrictions.RestrictedValue.ANY restriction name): The numeric restriction parameters.
+
 ## See Also
 
 - [object RestrictionsResponse.GlobalRestrictions.Intersection](restrictionsresponse/globalrestrictions-data.dictionary/intersection-data.dictionary.md)

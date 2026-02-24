@@ -21,7 +21,7 @@ typealias MTLIOCommandBufferHandler = @Sendable (any MTLIOCommandBuffer) -> Void
 
 ## Parameters
 
-- `inputOutputCommandBuffer`: The   instance that has finished executing is calling your completion handler.
+- `inputOutputCommandBuffer`: The [`MTLIOCommandBuffer`](mtliocommandbuffer.md) instance that has finished executing is calling your completion handler.
 
 ## See Also
 

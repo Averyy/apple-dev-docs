@@ -27,7 +27,7 @@ mutating func insert(_ entity: Entity, beforeIndex index: Int)
 ## Parameters
 
 - `entity`: The entity to add to the collection.
-- `index`: The index of an entity to insert in front   of. If   is provided, the entity   will be appended.
+- `index`: The index of an entity to insert in front of. If `endIndex` is provided, the entity will be appended.
 
 
 ---

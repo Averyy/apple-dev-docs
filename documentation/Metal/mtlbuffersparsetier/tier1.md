@@ -24,7 +24,7 @@ case tier1
 Tier 1 sparse buffers allow the following:
 
 - Partial memory backing at sparse page granularity.
-- Defined behavior for accessing an  buffer range.
+- Defined behavior for accessing an *unbacked* buffer range.
 
 An unbacked buffer range indicates a range within the buffer that doesn’t have memory backing at a given point in time. Accessing an unbacked buffer range of a sparse buffer produces the following results:
 

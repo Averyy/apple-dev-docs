@@ -21,7 +21,7 @@ class func radianAngleUnit(with prefix: HKMetricPrefix) -> Self
 
 ## Parameters
 
-- `prefix`: A valid metric prefix value. For the complete list of prefix values, see  .
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](hkmetricprefix.md).
 
 ## See Also
 

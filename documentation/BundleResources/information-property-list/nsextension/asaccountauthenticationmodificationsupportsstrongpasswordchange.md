@@ -10,6 +10,10 @@ A Boolean value that indicates whether the extension supports upgrading a userâ€
 - iPadOS 14.0+
 - visionOS 1.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [ASAccountAuthenticationModificationPasswordGenerationRequirements](information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements.md)

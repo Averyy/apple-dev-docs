@@ -34,7 +34,7 @@ This modifier has no effect on operation system versions prior to iOS 17, watchO
 
 ## Parameters
 
-- `isRemovable`: If  , the widget supports removal of the container background in   contexts that prefer no backgrounds. If  , the system doesn’t remove the background.
+- `isRemovable`: If `true`, the widget supports removal of the container background in contexts that prefer no backgrounds. If `false`, the system doesn’t remove the background.
 
 ## See Also
 

@@ -27,7 +27,7 @@ No filter service is invoked until the data is actually requested, so invoking t
 ## Parameters
 
 - `data`: The data to be placed on the pasteboard.
-- `type`: The type of data in the   parameter.
+- `type`: The type of data in the `data` parameter.
 
 ## See Also
 

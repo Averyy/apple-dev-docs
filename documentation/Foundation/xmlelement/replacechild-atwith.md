@@ -21,7 +21,7 @@ The replaced XML node object is released upon removal.
 
 ## Parameters
 
-- `index`: An integer identifying a position in the receiver’s list of children. An exception is raised if   is out of bounds.
+- `index`: An integer identifying a position in the receiver’s list of children. An exception is raised if `index` is out of bounds.
 - `node`: An XML node object that will replace the current child.
 
 ## See Also

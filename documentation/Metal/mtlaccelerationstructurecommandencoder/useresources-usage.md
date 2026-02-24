@@ -30,7 +30,7 @@ Call this method before issuing any dispatch calls that may access the resource.
 ## Parameters
 
 - `resources`: An array of resources within an argument buffer.
-- `usage`: Options that indicate how a GPU function accesses each resource in  .
+- `usage`: Options that indicate how a GPU function accesses each resource in `resources`.
 
 ## See Also
 

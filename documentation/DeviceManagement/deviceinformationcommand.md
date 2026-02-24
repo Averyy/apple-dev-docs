@@ -30,6 +30,11 @@ object DeviceInformationCommand
 - [object DeviceInformationCommand.Command](deviceinformationcommand/command-data.dictionary.md)
   The command to get detailed information about a device.
 
+## Properties
+
+- `Command` (DeviceInformationCommand.Command) *(required)*: The command dictionary.
+- `CommandUUID` (string) *(required)*: The unique identifier of the command.
+
 ## See Also
 
 - [object DeviceInformationResponse](deviceinformationresponse.md)

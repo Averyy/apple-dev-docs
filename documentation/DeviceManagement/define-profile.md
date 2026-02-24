@@ -19,6 +19,10 @@ This service defines a profile with Apple’s servers that can then be assigned 
 - [object DefineProfileResponse](defineprofileresponse.md)
 - [object DefineProfileResponse.Devices](defineprofileresponse/devices-data.dictionary.md)
 
+## Endpoint
+
+`POST https://mdmenrollment.apple.com/profile`
+
 ## Request Body
 
 A profile’s properties and their values.

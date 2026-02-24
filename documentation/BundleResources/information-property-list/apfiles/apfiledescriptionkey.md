@@ -8,6 +8,10 @@ A short description of the file or folder that appears in the Info window.
 **Availability**:
 - macOS 10.0+
 
+
+
+**Type**: string
+
 ## See Also
 
 - [APDisplayedAsContainer](information-property-list/apfiles/apdisplayedascontainer.md)

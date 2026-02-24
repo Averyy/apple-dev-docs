@@ -21,7 +21,7 @@ The encoded endpoint interval.
 
 #### Discussion
 
-This method parses an endpoint descriptor and returns the service interval as  in  microframes.
+This method parses an endpoint descriptor and returns the service interval as *n* in *(2^(n-1))* microframes.
 
 ## Parameters
 

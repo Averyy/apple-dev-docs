@@ -66,10 +66,10 @@ For detailed information about what gets preserved, see [`About the UI preservat
 
 During the preservation process, UIKit calls the [`encodeRestorableState(with:)`](uistaterestoring/encoderestorablestate(with:).md) method of each preserved view and view controller. Use this method to preserve the information that you need to return the view or view controller to its current state.
 
--  save details about the visual state of views and controls.
--  save references to child view controllers that you also want to preserve.
--  save information that can be discarded without affecting the user’s data.
--  include data that’s already in your app’s persistent storage. Instead, include an identifier that you can use to locate that data later.
+- **Do** save details about the visual state of views and controls.
+- **Do** save references to child view controllers that you also want to preserve.
+- **Do** save information that can be discarded without affecting the user’s data.
+- **Don’t** include data that’s already in your app’s persistent storage. Instead, include an identifier that you can use to locate that data later.
 
 State preservation isn’t a substitute for saving your app’s data to disk. UIKit can discard state preservation data at its discretion, allowing your app to return to its default state. Use the preservation process to store information about the state of your app’s user interface, such as the currently selected row of a table. Don’t use it to store the data contained in that table.
 

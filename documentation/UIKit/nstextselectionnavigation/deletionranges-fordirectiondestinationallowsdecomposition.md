@@ -29,9 +29,9 @@ The selection after deletion contains a zero-length range starting at the locati
 ## Parameters
 
 - `textSelection`: The text selection.
-- `direction`: The   to consider when calculating the deletion ranges.
-- `destination`: The   that describes the scope of the text selection to consider when calculating the deletion ranges.
-- `allowsDecomposition`: A Boolean value that determines if this method operates on composite characters which may be present depending on the characteristics of the script used by  .
+- `direction`: The [`NSTextSelectionNavigation.Direction`](nstextselectionnavigation/direction.md) to consider when calculating the deletion ranges.
+- `destination`: The [`NSTextSelectionNavigation.Destination`](nstextselectionnavigation/destination.md) that describes the scope of the text selection to consider when calculating the deletion ranges.
+- `allowsDecomposition`: A Boolean value that determines if this method operates on composite characters which may be present depending on the characteristics of the script used by `textSelection`.
 
 
 ---

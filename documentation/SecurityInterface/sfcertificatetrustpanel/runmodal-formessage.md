@@ -24,7 +24,7 @@ Note that changing the user trust settings does not affect the results of a trus
 
 ## Parameters
 
-- `trust`: A trust management object. Use the   function (in Security/SecTrust.h) to create the trust management object.
+- `trust`: A trust management object. Use the [`SecTrustCreateWithCertificates(_:_:_:)`](https://developer.apple.com/documentation/Security/SecTrustCreateWithCertificates(_:_:_:)) function (in Security/SecTrust.h) to create the trust management object.
 - `message`: A message string to display in the panel.
 
 ## See Also

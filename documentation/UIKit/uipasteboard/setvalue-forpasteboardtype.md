@@ -24,7 +24,7 @@ Use this method to put an object—such as an [`NSString`](https://developer.app
 ## Parameters
 
 - `value`: The object to be written to the pasteboard.
-- `pasteboardType`: A string identifying the representation type of the pasteboard item. If the type is a UTI, it must be compatible with the class of  ; otherwise, nothing is written to the pasteboard.
+- `pasteboardType`: A string identifying the representation type of the pasteboard item. If the type is a UTI, it must be compatible with the class of `value`; otherwise, nothing is written to the pasteboard.
 
 ## See Also
 

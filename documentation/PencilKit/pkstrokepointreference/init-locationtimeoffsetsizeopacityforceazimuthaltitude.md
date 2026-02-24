@@ -23,7 +23,7 @@ init(location: CGPoint, timeOffset: TimeInterval, size: CGSize, opacity: CGFloat
 - `location`: The location of this point.
 - `timeOffset`: The time offset since the start of this stoke path in seconds.
 - `size`: The size of this point.
-- `opacity`: The opacity of this point, ranging from   to  .
+- `opacity`: The opacity of this point, ranging from `0` to `2`.
 - `force`: The amount of force used to create this point.
 - `azimuth`: The azimuth of this point in radians.
 - `altitude`: The altitude of this point in radians.

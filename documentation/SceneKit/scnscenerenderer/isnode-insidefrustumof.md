@@ -27,7 +27,7 @@ func isNode(_ node: SCNNode, insideFrustumOf pointOfView: SCNNode) -> Bool
 
 #### Discussion
 
-Any node containing a camera or spotlight may serve as a point of view (see the [`pointOfView`](scnscenerenderer/pointofview.md) property for details). Such a node defines a —a portion of the scene’s coordinate space, shaped like a truncated pyramid, that encloses all points visible from that point of view.
+Any node containing a camera or spotlight may serve as a point of view (see the [`pointOfView`](scnscenerenderer/pointofview.md) property for details). Such a node defines a *viewing frustum*—a portion of the scene’s coordinate space, shaped like a truncated pyramid, that encloses all points visible from that point of view.
 
 Use this method to test whether a node lies within the viewing frustum defined by another node (which may or may not be the scene renderer’s current [`pointOfView`](scnscenerenderer/pointofview.md) node). For example, in a game scene containing multiple camera nodes, you could use this method to determine which camera is currently best for viewing a moving player character.
 
@@ -36,7 +36,7 @@ Note that this method does not perform occlusion testing. That is, it returns [`
 ## Parameters
 
 - `node`: The node whose visibility is to be tested.
-- `pointOfView`: A node defining a point of view, as used by the   property.
+- `pointOfView`: A node defining a point of view, as used by the [`pointOfView`](scnscenerenderer/pointofview.md) property.
 
 ## See Also
 

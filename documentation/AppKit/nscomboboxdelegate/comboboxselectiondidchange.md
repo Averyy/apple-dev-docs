@@ -17,7 +17,7 @@ optional func comboBoxSelectionDidChange(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: A notification named   .
+- `notification`: A notification named  [`selectionDidChangeNotification`](nscombobox/selectiondidchangenotification.md).
 
 ## See Also
 

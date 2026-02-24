@@ -24,7 +24,7 @@ The attributes dictionary can specify the font, text color, text shadow color, a
 
 ## Parameters
 
-- `attributes`: The text attributes of the title for  .
+- `attributes`: The text attributes of the title for `state`.
 - `state`: A control state.
 
 ## See Also

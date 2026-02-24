@@ -41,11 +41,11 @@ url = CFURLCreateWithString(kCFAllocatorDefault, urlString, NULL);
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
-- `originalString`: The   object to copy.
-- `charactersToLeaveUnescaped`: Characters whose percent escape sequences you want to leave intact. Pass   to specify that all illegal characters be escaped.
-- `legalURLCharactersToBeEscaped`: Legal characters to be escaped. Pass   to specify that no legal characters be replaced.
-- `encoding`: The encoding to use for the translation. If you are uncertain of the correct encoding, you should use UTF-8 ( ), which is the encoding designated by RFC 2396 as the correct encoding for use in URLs.
+- `allocator`: The allocator to use to allocate memory for the new `CFString` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `originalString`: The `CFString` object to copy.
+- `charactersToLeaveUnescaped`: Characters whose percent escape sequences you want to leave intact. Pass `NULL` to specify that all illegal characters be escaped.
+- `legalURLCharactersToBeEscaped`: Legal characters to be escaped. Pass `NULL` to specify that no legal characters be replaced.
+- `encoding`: The encoding to use for the translation. If you are uncertain of the correct encoding, you should use UTF-8 ([`CFStringBuiltInEncodings.UTF8`](cfstringbuiltinencodings/utf8.md)), which is the encoding designated by RFC 2396 as the correct encoding for use in URLs.
 
 ## See Also
 

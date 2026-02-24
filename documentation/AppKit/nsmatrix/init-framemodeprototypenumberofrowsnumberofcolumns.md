@@ -21,8 +21,8 @@ This method is the designated initializer for matrices that add cells by copying
 ## Parameters
 
 - `frameRect`: The matrix’s frame.
-- `mode`: The tracking mode for the matrix; this can be one of the modes described in  .
-- `cell`: An instance of a subclass of  , which the new matrix copies when it creates new cells.
+- `mode`: The tracking mode for the matrix; this can be one of the modes described in [`NSMatrix.Mode`](nsmatrix/mode-swift.enum.md).
+- `cell`: An instance of a subclass of [`NSCell`](nscell.md), which the new matrix copies when it creates new cells.
 - `rowsHigh`: The number of rows in the matrix.
 - `colsWide`: The number of columns in the matrix.
 

@@ -9,6 +9,10 @@ A Boolean value indicating whether the app supports game mode.
 - iOS 18.0+
 - iPadOS 18.0+
 
+
+
+**Type**: boolean
+
 ## See Also
 
 - [AVGameBypassSystemSpatialAudio](information-property-list/avgamebypasssystemspatialaudio.md)

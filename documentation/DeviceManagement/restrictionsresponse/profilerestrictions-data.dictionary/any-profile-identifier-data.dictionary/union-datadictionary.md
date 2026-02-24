@@ -24,6 +24,10 @@ object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Union
 - [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Union.ANY restriction name](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary/union-data.dictionary/any-restriction-name-data.dictionary.md)
   A dictionary that contains unioned restriction parameters.
 
+## Properties
+
+- `ANY restriction name` (RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Union.ANY restriction name): The unioned restriction parameters.
+
 ## See Also
 
 - [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Intersection](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary/intersection-data.dictionary.md)

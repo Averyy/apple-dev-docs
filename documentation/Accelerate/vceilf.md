@@ -28,6 +28,8 @@ Returns a vector of floating-point values, each of which is the ceiling of the c
 
 ##### Parameters
 
+- **parameter 2**: The input array, A.
+
 ## See Also
 
 - [func vcopysignf(vFloat, vFloat) -> vFloat](vcopysignf(_:_:).md)

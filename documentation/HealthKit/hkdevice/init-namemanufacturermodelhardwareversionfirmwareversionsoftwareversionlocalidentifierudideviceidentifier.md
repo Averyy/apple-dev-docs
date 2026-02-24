@@ -42,7 +42,7 @@ When creating devices for new samples, it is best to provide values for as many 
 - `firmwareVersion`: A string identifying the version of the firmware that is installed on the device.
 - `softwareVersion`: A string identifying the version of the software that is running on the device.
 - `localIdentifier`: A string that uniquely identifies the device. Each health and fitness peripheral should have a separate local identifier for each iOS device it connects to. For example, a heart-rate monitor would have a different identifier when connected to Apple Watch than when connected to iPhone.
-- `UDIDeviceIdentifier`: If the device object represents a medical device, use the device identifier portion of the Food and Drug Administration Unique Device Identifier (UDI). If the device does not have a UDI, pass  .
+- `UDIDeviceIdentifier`: If the device object represents a medical device, use the device identifier portion of the Food and Drug Administration Unique Device Identifier (UDI). If the device does not have a UDI, pass `nil`. > ❗ **Important**:  To protect the user’s privacy, this string must not contain the production identifier portion of the device UDI. If your app requires the production identifier, you must track it outside of HealthKit.
 
 ## See Also
 

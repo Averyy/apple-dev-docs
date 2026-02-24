@@ -26,6 +26,9 @@ The token consists of these 4 items: the consumer key, the consumer secret, the 
 
 The server tokens can be deployed automatically or manually.
 
+- **Automatically**: The MDM server must automatically decrypt this file when it’s uploaded to the system, using the private key for the DEP web services.
+- **Manually**: Use the private key and an S/MIME encryption utility to manually decrypt the encrypted token file before it is uploaded to the MDM server. The MDM server then uses the plain-text token file for authentication with the DEP services.
+
 ##### Use the Oauth Credentials
 
 Each service request to the MDM enrollment service must include an `X-ADM-Auth-Session` header. If the request does not have a valid `X-ADM-Auth-Session` header, or the auth token has expired, the server returns an `HTTP 401 Unauthorized` error. A new `X-ADM-Auth-Session` can be requested by using the `https://mdmenrollment.apple.com/session` endpoint. This endpoint supports the OAuth 1.0a protocol for accessing protected resources.

@@ -36,6 +36,33 @@ The GPU device schedules each command buffer — along with tasks from other com
 
 You can use the command buffer’s [`kernelEndTime`](mtlcommandbuffer/kernelendtime.md) and [`kernelStartTime`](mtlcommandbuffer/kernelstarttime.md) properties to calculate how much time the CPU spends scheduling the command buffer.
 
+**Swift**:
+
+```swift
+commandBuffer.addScheduledHandler { commandBuffer in
+    let start = commandBuffer.kernelStartTime
+    let end = commandBuffer.kernelEndTime
+
+    let scheduleDuration = end - start
+
+    /* ... */
+}
+```
+
+**Objective-C**:
+
+```objective-c
+[commandBuffer addScheduledHandler:^(id<MTLCommandBuffer> commandBuffer) {
+    CFTimeInterval start = commandBuffer.kernelStartTime;
+    CFTimeInterval end = commandBuffer.kernelEndTime;
+
+    CFTimeInterval scheduleDuration = end - start;
+
+    /* ... */
+}];
+
+```
+
 ## Parameters
 
 - `block`: A Swift closure or an Objective-C block that Metal calls after it schedules the command buffer to run on the GPU.

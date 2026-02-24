@@ -111,9 +111,9 @@ WebKit constants affecting multiple classes.
 - [let WebKitErrorPlugInNameKey: String](webkiterrorpluginnamekey.md)
 - [let WebKitErrorPlugInPageURLStringKey: String](webkiterrorpluginpageurlstringkey.md)
 - [let WebPlugInAttributesKey: String](webpluginattributeskey.md)
-  The `NSDictionary` object containing all names and values of all attributes of the plug-in’s associated HTML element, as well as all names and values of the parameters to be passed to the plug-in. For example, this dictionary will contain all `PARAM` elements within an `APPLET` element. If attribute and parameter names conflict, the attributes of an element take precedence over any of its parameters. All keys and values in this dictionary must be of type `NSString`. .
+  The `NSDictionary` object containing all names and values of all attributes of the plug-in’s associated HTML element, as well as all names and values of the parameters to be passed to the plug-in. For example, this dictionary will contain all `PARAM` elements within an `APPLET` element. If attribute and parameter names conflict, the attributes of an element take precedence over any of its parameters. All keys and values in this dictionary must be of type `NSString`. *Required key*.
 - [let WebPlugInBaseURLKey: String](webpluginbaseurlkey.md)
-  The base URL of the document containing the plug-in’s view. .
+  The base URL of the document containing the plug-in’s view. *Required key*.
 - [let WebPlugInContainerKey: String](webplugincontainerkey.md)
   An object that conforms to the `WebPlugInContainer` informal protocol. This object is used for callbacks from the plug-in to the enclosing application. If `WebPlugInContainerKey` is `nil`, no callbacks will occur.
 - [let WebPlugInContainingElementKey: String](webplugincontainingelementkey.md)

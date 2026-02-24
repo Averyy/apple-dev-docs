@@ -28,8 +28,8 @@ Compare peer information for two `sec_protocol_metadata` instances. This compari
 
 ## Parameters
 
-- `metadataA`: A   instance.
-- `metadataB`: A   instance.
+- `metadataA`: A `sec_protocol_metadata_t` instance.
+- `metadataB`: A `sec_protocol_metadata_t` instance.
 
 
 ---

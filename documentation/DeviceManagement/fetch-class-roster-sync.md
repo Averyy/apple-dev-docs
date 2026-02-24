@@ -15,6 +15,10 @@ This sync service uses a cursor that is returned by the full class-roster servic
 
 This service may return the same class more than once. You can identify duplicates by matching their `unique_identifier` values.
 
+## Endpoint
+
+`POST https://mdmenrollment.apple.com/roster/class/sync`
+
 ## Request Body
 
 The object containing the request information.

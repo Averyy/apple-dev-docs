@@ -29,7 +29,7 @@ This method returns an instance of the [`HKCategoryType`](hkcategorytype.md) con
 
 ## Parameters
 
-- `identifier`: A category type identifier. For a list of valid identifiers, see  .
+- `identifier`: A category type identifier. For a list of valid identifiers, see [`HKCategoryTypeIdentifier`](hkcategorytypeidentifier.md).
 
 ## See Also
 

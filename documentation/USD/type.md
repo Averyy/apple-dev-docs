@@ -10,6 +10,9 @@ The default value is `serial`.
 
 ##### Order Options
 
+- **`serial`**: Executes in order with each action waiting for the prior action to complete before starting.
+- **`parallel`**: Executes all actions concurrently.
+
 ##### Declaration
 
 ```other

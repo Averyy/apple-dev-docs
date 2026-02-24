@@ -21,8 +21,8 @@ func highlight(for URL: URL) async throws -> SWHighlight
 
 ## Parameters
 
-- `URL`: The URL that the system uses to find the  .
-- `completionHandler`: Returns the  . The system invokes the completion handler on the main thread.
+- `URL`: The URL that the system uses to find the [`SWHighlight`](swhighlight.md).
+- `completionHandler`: Returns the [`SWHighlight`](swhighlight.md). The system invokes the completion handler on the main thread.
 
 ## See Also
 

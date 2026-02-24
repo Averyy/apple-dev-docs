@@ -28,7 +28,7 @@ Copy a retained reference to the underlying `SecCertificateRef` instance.
 
 ## Parameters
 
-- `certificate`: A   instance.
+- `certificate`: A `sec_certificate_t` instance.
 
 
 ---

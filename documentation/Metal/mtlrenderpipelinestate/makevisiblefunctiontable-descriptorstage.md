@@ -22,8 +22,8 @@ func makeVisibleFunctionTable(descriptor: MTLVisibleFunctionTableDescriptor, sta
 
 ## Parameters
 
-- `descriptor`: An   instance that configures the visible function table the method creates.
-- `stage`: An   instance that represents the render pass stage the visible function table applies to.
+- `descriptor`: An [`MTLVisibleFunctionTableDescriptor`](mtlvisiblefunctiontabledescriptor.md) instance that configures the visible function table the method creates.
+- `stage`: An [`MTLRenderStages`](mtlrenderstages.md) instance that represents the render pass stage the visible function table applies to.
 
 ## See Also
 

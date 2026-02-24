@@ -32,12 +32,12 @@ This function interprets the provided bytes using the specified string encoding 
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.
-- `relativeURLBytes`: The character bytes that represent a relative URL to convert into a   object.
-- `length`: The number of bytes in  .
-- `encoding`: The string encoding of the   string. This encoding is also used to interpret percent escape sequences.
-- `baseURL`: The URL to which   is relative.
-- `useCompatibilityMode`: If  , the rules historically used on the web are used to resolve the string specified by the   parameter against  . These rules are generally listed in the RFC as optional or alternate interpretations. Otherwise, the strict rules from the RFC are used.
+- `alloc`: The allocator to use to allocate memory for the new `CFURL` object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `relativeURLBytes`: The character bytes that represent a relative URL to convert into a `CFURL` object.
+- `length`: The number of bytes in `relativeURLBytes`.
+- `encoding`: The string encoding of the `relativeURLBytes` string. This encoding is also used to interpret percent escape sequences.
+- `baseURL`: The URL to which `relativeURLBytes` is relative.
+- `useCompatibilityMode`: If `true`, the rules historically used on the web are used to resolve the string specified by the `relativeURLBytes` parameter against `baseURL`. These rules are generally listed in the RFC as optional or alternate interpretations. Otherwise, the strict rules from the RFC are used.
 
 ## See Also
 

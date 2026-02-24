@@ -16,6 +16,10 @@ The declaration to configure scientific mode in the calculator app.
 object MathSettingsCalculator_ScientificModeObject
 ```
 
+## Properties
+
+- `Enabled` (boolean) *(required)*: Controls whether the mode is enabled.
+
 ## See Also
 
 - [object MathSettingsCalculator_BasicModeObject](mathsettingscalculator_basicmodeobject.md)

@@ -13,7 +13,7 @@ class XCTestRun
 
 #### Overview
 
-`XCTestRun` classifies failures in explicit test assertions as , and failures from unrelated or uncaught exceptions as .
+`XCTestRun` classifies failures in explicit test assertions as *expected*, and failures from unrelated or uncaught exceptions as *unexpected*.
 
 ## Topics
 

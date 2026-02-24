@@ -31,7 +31,7 @@ If this function returns true, this does not mean that the bundle is definitivel
 ## Parameters
 
 - `bundle`: The bundle to examine.
-- `error`: Upon return, if an error occurs contains a CFError that describes the problem. Ownership follows the  .
+- `error`: Upon return, if an error occurs contains a CFError that describes the problem. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 

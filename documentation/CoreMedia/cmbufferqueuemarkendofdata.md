@@ -30,7 +30,7 @@ All subsequent Enqueues will be rejected until [`CMBufferQueueReset(_:)`](cmbuff
 
 ## Parameters
 
-- `queue`: The   being marked.
+- `queue`: The `CMBufferQueue` being marked.
 
 ## See Also
 

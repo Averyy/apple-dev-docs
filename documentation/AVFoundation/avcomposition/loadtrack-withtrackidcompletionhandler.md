@@ -23,7 +23,8 @@ func loadTrack(withTrackID trackID: CMPersistentTrackID) async throws -> AVCompo
 ## Parameters
 
 - `trackID`: The identifier of the track to load.
-- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters:
+- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters: - **track**: The loaded track, or `nil` if no track with the specified identifier exists or if an error occurs.
+- **error**: An error object if the request fails; otherwise, `nil`.
 
 ## See Also
 

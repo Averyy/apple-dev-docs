@@ -30,7 +30,7 @@ Consider this lexicon as a supplement to a more complete lexicon of your own des
 
 ## Parameters
 
-- `completionHandler`: Code that you write to make use of the returned   object.
+- `completionHandler`: Code that you write to make use of the returned `UILexicon` object.
 
 
 ---

@@ -36,11 +36,11 @@ Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of 
 
 ## Parameters
 
-- `primitiveType`: A   representing how the command interprets vertex argument data.
-- `indexType`: A   instance that represents the index format.
-- `indexBuffer`: GPUAddress of a   instance that contains   indices of   format.   You are responsible for ensuring this address is aligned to 2 bytes if the   format is   , and aligned to 4 bytes if the format is   .
-- `indexBufferLength`: An integer that represents the length of  , in bytes. You are responsible for   ensuring this this size is a multiple of 2 if the   format is  ,   and a multiple of 4 if the format is  .   If this draw call causes Metal to read indices at or beyond the  , Metal   continues to execute them assigning a value of   to the   attribute.
-- `indirectBuffer`: GPUAddress of an   instance with data that matches the layout of the    structure. This address requires 4-byte alignment.
+- `primitiveType`: A [`MTLPrimitiveType`](mtlprimitivetype.md) representing how the command interprets vertex argument data.
+- `indexType`: A [`MTLIndexType`](mtlindextype.md) instance that represents the index format.
+- `indexBuffer`: GPUAddress of a [`MTLBuffer`](mtlbuffer.md) instance that contains `indexCount` indices of `indexType` format. You are responsible for ensuring this address is aligned to 2 bytes if the `indexType` format is [`MTLIndexType.uint16`](mtlindextype/uint16.md), and aligned to 4 bytes if the format is [`MTLIndexType.uint32`](mtlindextype/uint32.md).
+- `indexBufferLength`: An integer that represents the length of `indexBuffer`, in bytes. You are responsible for ensuring this this size is a multiple of 2 if the `indexType` format is [`MTLIndexType.uint16`](mtlindextype/uint16.md), and a multiple of 4 if the format is [`MTLIndexType.uint32`](mtlindextype/uint32.md). If this draw call causes Metal to read indices at or beyond the `indexBufferLength`, Metal continues to execute them assigning a value of `0` to the `vertex_id` attribute.
+- `indirectBuffer`: GPUAddress of an [`MTLBuffer`](mtlbuffer.md) instance with data that matches the layout of the [`MTLDrawIndexedPrimitivesIndirectArguments`](mtldrawindexedprimitivesindirectarguments.md) structure. This address requires 4-byte alignment.
 
 ## See Also
 

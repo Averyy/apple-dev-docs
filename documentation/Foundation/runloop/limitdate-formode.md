@@ -30,7 +30,7 @@ The run loop is entered with an immediate timeout, so the run loop does not bloc
 
 ## Parameters
 
-- `mode`: The run loop mode to search. You may specify custom modes or use one of the modes listed in  .
+- `mode`: The run loop mode to search. You may specify custom modes or use one of the modes listed in `Run Loop Modes`.
 
 ## See Also
 

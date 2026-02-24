@@ -25,6 +25,12 @@ object StatusManagementDeclarationsStatusReasonObject
 - [object StatusManagementDeclarationsStatusReason_DetailsObject](statusmanagementdeclarationsstatusreason_detailsobject.md)
   A dictionary that contains further details about an error.
 
+## Properties
+
+- `code` (string) *(required)*: The error code for this error.
+- `description` (string): The description for this error.
+- `details` (StatusManagementDeclarationsStatusReason_DetailsObject): A dictionary that contains further details about this error.
+
 
 ---
 

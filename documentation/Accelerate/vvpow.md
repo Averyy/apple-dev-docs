@@ -24,7 +24,38 @@ func vvpow(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: UnsafeP
 
 ##### Parameters
 
+- **parameter 1**: The output array, *z*.
+- **parameter 2**: The exponent input array, *y*.
+- **parameter 3**: The base input array, *x*.
+- **parameter 4**: The number of elements in the arrays.
+
 The following code shows an example of using [`vvpow(_:_:_:_:)`](vvpow(_:_:_:_:).md):
+
+**Swift**:
+
+```swift
+var x: [Double] = [3, 2, 10, 6]
+var y: [Double] = [2, 4, 3, 2]
+var z = [Double](repeating: 0, count: x.count)
+var n = Int32(x.count)
+ 
+vvpow(&z, &y, &x, &n)
+ 
+print(z) // [9.0, 16.0, 1000.0, 36.0]
+```
+
+**Objective-C**:
+
+```objc
+double x[] = {3, 2, 10, 6};
+double y[] = {2, 4, 3, 2};
+double z[4];
+int n = 4;
+ 
+vvpow(z, y, x, &n);
+ 
+NSLog(@"z: [%lf, %lf, %lf, %lf]", z[0], z[1], z[2], z[3]);
+```
 
 The following special values of `x` and `y` produce the given value of `z`:
 

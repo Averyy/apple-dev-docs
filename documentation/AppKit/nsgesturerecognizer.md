@@ -35,6 +35,20 @@ During the gesture recognition process, a gesture recognizer calls the action me
 
 A gesture recognizer has only one action method and one target object, and the method must conform to one of the following signatures:
 
+**Swift**:
+
+```swift
+func handleGesture() { }
+func handleGesture(gestureRecognizer: NSGestureRecognizer) { }
+```
+
+**Objective-C**:
+
+```objc
+- (void)handleGesture;
+- (void)handleGesture:(NSGestureRecognizer *)gestureRecognizer;
+```
+
 When your code needs additional information about the particulars of a gesture, define your action method to include the gesture recognizer parameter. You almost always want the gesture recognizer object when handling continuous gestures. For example, for a rotation gesture, you would use the gesture recognizer object to get the updated rotation value. You can also use the gesture recognizer object to get the location of where the gesture occurred.
 
 ##### State Transitions

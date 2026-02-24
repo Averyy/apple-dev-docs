@@ -51,7 +51,7 @@ The first view, with a negative offset, grows downward to handle the lowered tex
 
 ## Parameters
 
-- `baselineOffset`: The amount to shift the text vertically (up   or down) relative to its baseline.
+- `baselineOffset`: The amount to shift the text vertically (up or down) relative to its baseline.
 
 ## See Also
 

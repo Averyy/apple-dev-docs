@@ -29,6 +29,9 @@ This method applies the morphology minimum filter to an image. The effect target
 
 The morphology minimum filter uses the following properties:
 
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
+
 The following code creates a filter that adds a blur that adds darkness to the input image:
 
 ```swift

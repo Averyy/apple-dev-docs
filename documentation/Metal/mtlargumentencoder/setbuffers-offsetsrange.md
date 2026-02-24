@@ -22,8 +22,8 @@ func setBuffers(_ buffers: [(any MTLBuffer)?], offsets: [Int], range: Range<Int>
 ## Parameters
 
 - `buffers`: An array of buffers the method encodes.
-- `offsets`: An array of byte offsets for each element in  .
-- `range`: A range of indices within the argument buffer for each element in  .   The values correspond to either the index IDs of declarations in   Metal Shading Language (MSL) or the   property   of   instances.
+- `offsets`: An array of byte offsets for each element in `buffers`.
+- `range`: A range of indices within the argument buffer for each element in `buffers`. The values correspond to either the index IDs of declarations in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instances.
 
 ## See Also
 

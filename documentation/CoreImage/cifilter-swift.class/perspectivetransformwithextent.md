@@ -29,6 +29,13 @@ This method applies the perspective transform with extent filter to an image. Th
 
 The perspective transform with extent filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`topLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the top-left corner of the output image.
+- **`topRight`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the top-right corner of the output image.
+- **`bottomLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the bottom-left corner of the output image.
+- **`bottomRight`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the bottom-right corner of the output image.
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) representing the dimensions of the output image.
+
 The following code creates a filter that changes the perspective of the input image:
 
 ```swift

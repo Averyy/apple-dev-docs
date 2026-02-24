@@ -22,7 +22,7 @@ Insertion of the node increases the indexes of sibling nodes after it by the cou
 ## Parameters
 
 - `children`: An array of XML node objects to add as children of the receiver.
-- `index`: An integer identifying a position in the receiver’s list of children. An exception is raised if   is out of bounds.
+- `index`: An integer identifying a position in the receiver’s list of children. An exception is raised if `index` is out of bounds.
 
 ## See Also
 

@@ -42,8 +42,8 @@ Not all devices support multiple iterations.
 ## Parameters
 
 - `effectReference`: An opaque reference handle to an effect object. This is obtained from a previous call to FFDeviceCreateEffect.
-- `iterations`: To play the effect exactly once, pass 1. To play the effect repeatedly until explicitly stopped, pass INFINITE. To play the effect until explicitly stopped without re-articulating the envelope, modify the effect parameters with the FFEffect_SetParameters method, and change the dwDuration member to INFINITE.
-- `flags`: Do not automatically download the effect.
+- `iterations`: Number of times to play the effect in sequence. The envelope is re-articulated with each iteration. To play the effect exactly once, pass 1. To play the effect repeatedly until explicitly stopped, pass INFINITE. To play the effect until explicitly stopped without re-articulating the envelope, modify the effect parameters with the FFEffect_SetParameters method, and change the dwDuration member to INFINITE.
+- `flags`: Flags that describe how the effect should be played by the device. The value can be 0 or one or more of the following values: FFES_SOLO All other effects on the device should be stopped before the specified effect is played. If this flag is omitted, the effect is mixed with existing effects already started on the device. FFES_NODOWNLOAD Do not automatically download the effect.
 
 ## See Also
 

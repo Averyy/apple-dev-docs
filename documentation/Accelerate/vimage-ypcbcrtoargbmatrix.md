@@ -39,15 +39,15 @@ The vImage library uses this matrix to convert from YpCbCr to RGB using the foll
   Creates a 3 x 3 zero matrix for converting Y’CbCr signals to RGB.
 ### Conversion matrix elements
 - [var Yp: Float](vimage_ypcbcrtoargbmatrix/yp.md)
-  The  value in the conversion matrix.
+  The *Yp* value in the conversion matrix.
 - [var Cr_R: Float](vimage_ypcbcrtoargbmatrix/cr_r.md)
-  The  value in the conversion matrix.
+  The *Cr_R* value in the conversion matrix.
 - [var Cr_G: Float](vimage_ypcbcrtoargbmatrix/cr_g.md)
-  The  value in the conversion matrix.
+  The *Cr_G* value in the conversion matrix.
 - [var Cb_G: Float](vimage_ypcbcrtoargbmatrix/cb_g.md)
-  The  value in the conversion matrix.
+  The *Cb_G* value in the conversion matrix.
 - [var Cb_B: Float](vimage_ypcbcrtoargbmatrix/cb_b.md)
-  The  value in the conversion matrix.
+  The *Cb_B* value in the conversion matrix.
 ### Conversion matrices
 - [var kvImage_YpCbCrToARGBMatrix_ITU_R_601_4: UnsafePointer<vImage_YpCbCrToARGBMatrix>!](kvimage_ypcbcrtoargbmatrix_itu_r_601_4.md)
   Y’CbCr-to-RGB conversion matrix for ITU Recommendation BT.601-4.

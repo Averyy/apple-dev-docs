@@ -23,7 +23,7 @@ An instance of OSSet containing the objects provided, with a retain count of 1; 
 
 #### Discussion
 
-`objects` must be non-`NULL`, and `count` must be nonzero. If `capacity` is nonzero, it must be greater than or equal to `count`. The new OSSet will grow as needed to accommodate more objects ([`CFMutableSet`](https://developer.apple.com/documentation/CoreFoundation/CFMutableSet), for which the initial capacity is a hard limit).
+`objects` must be non-`NULL`, and `count` must be nonzero. If `capacity` is nonzero, it must be greater than or equal to `count`. The new OSSet will grow as needed to accommodate more objects (*unlike*[`CFMutableSet`](https://developer.apple.com/documentation/CoreFoundation/CFMutableSet), for which the initial capacity is a hard limit).
 
 The objects in `objects` are retained for storage in the new set, not copied.
 
@@ -31,7 +31,7 @@ The objects in `objects` are retained for storage in the new set, not copied.
 
 - `values`: A C array of OSMetaClassBase-derived objects.
 - `count`: The number of objects to be placed into the set.
-- `capacity`: The initial storage capacity of the new set object. If 0,   is used; otherwise this value must be greater than or equal to  .
+- `capacity`: The initial storage capacity of the new set object. If 0, `count` is used; otherwise this value must be greater than or equal to `count`.
 
 
 ---

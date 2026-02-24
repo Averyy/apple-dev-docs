@@ -22,7 +22,7 @@ init(_ identifier: String)
 
 ## Parameters
 
-- `identifier`: The measurement system’s BCP 47 identifier, like   or  .
+- `identifier`: The measurement system’s BCP 47 identifier, like `metric` or `ussystem`.
 
 
 ---

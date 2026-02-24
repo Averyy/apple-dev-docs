@@ -23,7 +23,7 @@ struct MPSImageHistogramInfo
 
 ### Fields
 - [var numberOfHistogramEntries: Int](mpsimagehistograminfo/numberofhistogramentries.md)
-  Specifies the number of histogram entries () for each channel.
+  Specifies the number of histogram entries (*bins*) for each channel.
 - [var histogramForAlpha: ObjCBool](mpsimagehistograminfo/histogramforalpha.md)
   Specifies whether the histogram for the alpha channel should be computed or not.
 - [var minPixelValue: vector_float4](mpsimagehistograminfo/minpixelvalue.md)

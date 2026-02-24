@@ -33,7 +33,7 @@ For some games, merely identifying winning and losing states of the game model a
 
 ## Parameters
 
-- `player`: An instance of your game’s player class (a custom class implementing the   protocol) representing the player evaluating the game model.
+- `player`: An instance of your game’s player class (a custom class implementing the [`GKGameModelPlayer`](gkgamemodelplayer.md) protocol) representing the player evaluating the game model.
 
 ## See Also
 

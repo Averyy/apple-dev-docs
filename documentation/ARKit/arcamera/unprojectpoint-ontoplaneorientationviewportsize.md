@@ -26,7 +26,7 @@ If you display AR content with SceneKit, the [`ARSCNView`](arscnview.md) class p
 
 ## Parameters
 
-- `point`: The coordinate space for this point has its origin is in the upper left corner and a size matching the   parameter.
+- `point`: The point in 2D view space to project onto a plane. The coordinate space for this point has its origin is in the upper left corner and a size matching the `viewportSize` parameter.
 - `planeTransform`: A transform matrix specifying the position and orientation of a plane (with infinite extent) in 3D world space. The plane is the xz-plane of the local coordinate space this transform defines.
 - `orientation`: The orientation in which the camera image is to be presented.
 - `viewportSize`: The size, in points, of the view in which the camera image is to be presented.

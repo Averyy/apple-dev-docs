@@ -28,11 +28,40 @@ A user-readable string representing the date.
 
 This method uses a date formatter configured with the specified time zone and format options. The following code examples produce the same string value:
 
+**Swift**:
+
+```swift
+let date = Date()
+var string: String
+ 
+let formatter = ISO8601DateFormatter()
+string = formatter.string(from: date)
+ 
+if let GMT = TimeZone(abbreviation: "GMT") {
+    let options: ISO8601DateFormatter.Options = [.withInternetDateTime, .withDashSeparatorInDate, .withColonSeparatorInTime, .withTimeZone]
+    string = ISO8601DateFormatter.string(from: date, timeZone: GMT, formatOptions: options)
+}
+```
+
+**Objective-C**:
+
+```objc
+NSDate *date = [NSDate date];
+NSString *string;
+ 
+NSISO8601DateFormatter *formatter = [[NSISO8601DateFormatter alloc] init];
+string = [formatter stringFromDate:date];
+ 
+NSTimeZone *GMT = [NSTimeZone timeZoneWithAbbreviation: @"GMT"];
+NSISO8601DateFormatOptions options = NSISO8601DateFormatWithInternetDateTime | NSISO8601DateFormatWithDashSeparatorInDate | NSISO8601DateFormatWithColonSeparatorInTime | NSISO8601DateFormatWithTimeZone;
+string = [NSISO8601DateFormatter stringFromDate:date timeZone:GMT formatOptions:options];
+```
+
 ## Parameters
 
 - `date`: The date to be represented.
 - `timeZone`: The time zone used.
-- `formatOptions`: The options used. For possible values, see  .
+- `formatOptions`: The options used. For possible values, see [`ISO8601DateFormatter.Options`](iso8601dateformatter/options.md).
 
 ## See Also
 

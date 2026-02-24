@@ -33,7 +33,7 @@ The system calls this method after a user has lifted their finger; the row is hi
 ## Parameters
 
 - `tableView`: A table view informing the delegate about the impending selection.
-- `indexPath`: An index path locating the row in  .
+- `indexPath`: An index path locating the row in `tableView`.
 
 ## See Also
 

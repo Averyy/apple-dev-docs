@@ -25,11 +25,11 @@ This method is called when a drag enters the bounds of the spring-loading destin
 
 This method provides an opportunity to perform work in preparation for spring-loading becoming engaged.
 
-Note that you  implement either this method or [`springLoadingUpdated(_:)`](nsspringloadingdestination/springloadingupdated(_:).md) to enable spring-loading.
+Note that you *must* implement either this method or [`springLoadingUpdated(_:)`](nsspringloadingdestination/springloadingupdated(_:).md) to enable spring-loading.
 
 ## Parameters
 
-- `draggingInfo`: An object of type  , which provides information about the drag event, including the dragged data.
+- `draggingInfo`: An object of type `NSDraggingInfo`, which provides information about the drag event, including the dragged data.
 
 ## See Also
 

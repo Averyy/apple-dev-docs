@@ -21,7 +21,7 @@ Replaces the deprecated [`selectColumn:byExtendingSelection:`](nstableview/selec
 ## Parameters
 
 - `indexes`: The column indexes to select.
-- `extend`:   if the selection should be extended,   if the current selection should be changed.
+- `extend`: [`true`](https://developer.apple.com/documentation/Swift/true) if the selection should be extended, [`false`](https://developer.apple.com/documentation/Swift/false) if the current selection should be changed.
 
 ## See Also
 

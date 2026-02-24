@@ -52,7 +52,7 @@ Access the temporary directory with the URL property [`temporaryDirectory`](url/
 
 Only use the temporary directory for files that you don’t need to persist between launches of the app, because the system may purge this directory when your app isn’t running. There’s no guarantee of when or if the system will clear the directory, however, so delete temporary files as soon as you know you don’t need them.
 
-For files that persist longer than temporary files, but are still purgeable, use the  directory. In the caches directory, store files the app doesn’t require to operate, but that improve performance, such as database cache files and transient, downloadable content.
+For files that persist longer than temporary files, but are still purgeable, use the *caches* directory. In the caches directory, store files the app doesn’t require to operate, but that improve performance, such as database cache files and transient, downloadable content.
 
 Access the caches directory with the URL property [`cachesDirectory`](url/cachesdirectory.md) or the file manager search path [`FileManager.SearchPathDirectory.cachesDirectory`](filemanager/searchpathdirectory/cachesdirectory.md). As with the temporary directory, the system may purge this directory when your app isn’t running. Your app needs to either be able to operate without these files, or regenerate them as needed. Additionally, invalidate and delete cache files when you can, and don’t waste storage on unnecessary files.
 

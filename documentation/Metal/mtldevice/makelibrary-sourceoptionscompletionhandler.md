@@ -30,8 +30,8 @@ Because there’s no search path to find other functions, the source may only im
 
 ## Parameters
 
-- `source`: A string that contains source code for one or more Metal functions. For information about writing source in Metal Shading Language (MSL), see the  .
-- `options`: An   instance that affects the compilation of the source code in the string.
+- `source`: A string that contains source code for one or more Metal functions. For information about writing source in Metal Shading Language (MSL), see the [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
+- `options`: An [`MTLCompileOptions`](mtlcompileoptions.md) instance that affects the compilation of the source code in the string.
 - `completionHandler`: A Swift closure or an Objective-C block the method calls when the library finishes loading.
 
 ## See Also

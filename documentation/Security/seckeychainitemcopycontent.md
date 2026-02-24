@@ -33,10 +33,10 @@ If the keychain item data is encrypted, this function decrypts the data before r
 ## Parameters
 
 - `itemRef`: A reference to the keychain item to modify.
-- `itemClass`: On return, points to the item’s class. Pass   if it is not required. See   for valid constants.
-- `attrList`: On entry, the list of attributes to get in this item; on return the attributes are filled in. Pass   if you don’t need to retrieve any attributes. You must call   when you no longer need the attributes and data.
-- `length`: On return, the length of the buffer pointed to by the   parameter.
-- `outData`: On return, a pointer to a buffer containing the data in this item. Pass   if you don’t need this data. You must call   when you no longer need the attributes and data.
+- `itemClass`: On return, points to the item’s class. Pass `NULL` if it is not required. See [`SecItemClass`](secitemclass.md) for valid constants.
+- `attrList`: On entry, the list of attributes to get in this item; on return the attributes are filled in. Pass `NULL` if you don’t need to retrieve any attributes. You must call [`SecKeychainItemFreeContent(_:_:)`](seckeychainitemfreecontent(_:_:).md) when you no longer need the attributes and data.
+- `length`: On return, the length of the buffer pointed to by the `outData` parameter.
+- `outData`: On return, a pointer to a buffer containing the data in this item. Pass `NULL` if you don’t need this data. You must call [`SecKeychainItemFreeContent(_:_:)`](seckeychainitemfreecontent(_:_:).md) when you no longer need the attributes and data.
 
 
 ---

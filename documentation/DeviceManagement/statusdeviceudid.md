@@ -32,6 +32,10 @@ object StatusDeviceUDID
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
+## Properties
+
+- `device.identifier.udid` (string) *(required)*: The device’s UDID. This value is always available on the device channel. This value is only available on user channels whose organization matches that of the device channel.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

@@ -18,6 +18,11 @@ A status report that contains details about the reason for a pending software up
 object StatusSoftwareUpdateInstallReasonDictionaryObject
 ```
 
+## Properties
+
+- `declaration-id` (string): The identifier of the declaration that caused the software update to occur. This key is present only if the `reason` array contains the `declaration` value.
+- `reason` ([string]) *(required)*: A list of reasons for the pending software update. An empty list indicates that no software update is pending.
+
 
 ---
 

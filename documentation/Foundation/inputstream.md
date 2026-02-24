@@ -30,7 +30,7 @@ class InputStream
 
 ##### Subclassing Notes
 
-`NSInputStream` is an abstract superclass of a  consisting of concrete subclasses of `NSStream` that provide standard read-only access to stream data. Although `NSInputStream` is probably sufficient for most situations requiring access to stream data, you can create a subclass of `NSInputStream` if you want more specialized behavior (for example, you want to record statistics on the data in a stream).
+`NSInputStream` is an abstract superclass of a *class cluster* consisting of concrete subclasses of `NSStream` that provide standard read-only access to stream data. Although `NSInputStream` is probably sufficient for most situations requiring access to stream data, you can create a subclass of `NSInputStream` if you want more specialized behavior (for example, you want to record statistics on the data in a stream).
 
 ###### Methods to Override
 

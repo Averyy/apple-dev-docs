@@ -27,7 +27,7 @@ Do not use this initializer for creating instances of [`XMLDTDNode`](xmldtdnode.
 
 ## Parameters
 
-- `kind`: An   constant of type   that indicates the type of node. See Constants for a list of valid NSXMLNodeKind constants.
+- `kind`: An `enum` constant of type [`XMLNode.Kind`](xmlnode/kind-swift.enum.md) that indicates the type of node. See Constants for a list of valid NSXMLNodeKind constants.
 
 ## See Also
 

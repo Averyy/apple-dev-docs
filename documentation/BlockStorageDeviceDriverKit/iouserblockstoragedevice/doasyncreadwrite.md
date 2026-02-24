@@ -24,12 +24,12 @@ When the read or write operation completes, the dext calls your [`CompleteIO`](i
 
 ## Parameters
 
-- `requestID`: An opaque identifier. After the dext completes the request, it calls   and sends this value as a parameter.
+- `requestID`: An opaque identifier. After the dext completes the request, it calls [`CompleteIO`](iouserblockstoragedevice/completeio.md) and sends this value as a parameter.
 - `dmaAddr`: The DMA address of the data buffer.
 - `size`: The size of the data buffer.
 - `lba`: The start logical block number.
 - `numOfBlocks`: The number of blocks to read or write.
-- `options`: Data transfer options. These can be any combination of   values (defined in  ) combined together with the logical   operator.
+- `options`: Data transfer options. These can be any combination of `kIOUserStorage…` values (defined in [`IOUserStorageOptions`](iouserstorageoptions.md)) combined together with the logical `OR` operator.
 
 ## See Also
 

@@ -26,7 +26,8 @@ The container name must be a unique string associated with the app.
 ## Parameters
 
 - `containerName`: String containing a unique container name associated with the app.
-- `handler`: A block that is called after the player information is retrieved.
+- `handler`: A block that is called after the player information is retrieved. - **player**: The GKCloudPlayer object representing the currently signed-in player.
+- **error**: If an error occurred, this parameter holds an error object that explains the error. Otherwise, the value of this parameter is `nil`. See `GameKit Constants`for a list of error codes specific to GameKit.
 
 
 ---

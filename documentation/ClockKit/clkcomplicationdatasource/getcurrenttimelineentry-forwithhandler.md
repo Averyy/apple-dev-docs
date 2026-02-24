@@ -27,7 +27,7 @@ Your implementation of this method must create a timeline entry with the data to
 ## Parameters
 
 - `complication`: The complication tied to the request. Use the complication family information in this object to determine which set of templates are valid.
-- `handler`: The handler to execute with the current data. This block has no return value and takes the following parameter:
+- `handler`: The handler to execute with the current data. This block has no return value and takes the following parameter: - **`updateInterval`**: The [`CLKComplicationTimelineEntry`](clkcomplicationtimelineentry.md) object to display right now.
 
 ## See Also
 

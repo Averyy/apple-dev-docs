@@ -29,7 +29,7 @@ After you request a photo capture with the [`capturePhoto(with:delegate:)`](avca
 ## Parameters
 
 - `JPEGSampleBuffer`: A sample buffer containing the JPEG photo capture result to be formatted for output.
-- `previewPhotoSampleBuffer`: An optional additional sample buffer containing a preview-resolution version of the photo capture result, to be added to the JPEG output as a thumbnail image. Pass   to skip adding a preview image to the output.
+- `previewPhotoSampleBuffer`: An optional additional sample buffer containing a preview-resolution version of the photo capture result, to be added to the JPEG output as a thumbnail image. Pass `nil` to skip adding a preview image to the output.
 
 ## See Also
 

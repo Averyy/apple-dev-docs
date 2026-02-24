@@ -24,7 +24,7 @@ You use this method to adjust the position of a title or image within the given 
 
 ## Parameters
 
-- `adjustment`: The positioning offset for the segment that   and   identify.
+- `adjustment`: The positioning offset for the segment that `leftCenterRightOrAlone` and `barMetrics` identify.
 - `leftCenterRightOrAlone`: An identifier for a segment type.
 - `barMetrics`: Bar metrics.
 

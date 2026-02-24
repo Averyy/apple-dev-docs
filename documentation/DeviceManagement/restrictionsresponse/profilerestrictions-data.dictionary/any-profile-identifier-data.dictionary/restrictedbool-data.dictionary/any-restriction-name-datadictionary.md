@@ -18,6 +18,10 @@ A dictionary that contains Boolean restriction parameters.
 object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.RestrictedBool.ANY restriction name
 ```
 
+## Properties
+
+- `value` (boolean) *(required)*: The value of the restriction.
+
 
 ---
 

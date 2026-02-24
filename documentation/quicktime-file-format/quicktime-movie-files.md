@@ -20,7 +20,7 @@ The file format is extensible, and from time to time new atom types are introduc
 
 > ❗ **Important**: Generally speaking, atoms can be present in any order. Do not conclude that a particular atom is not present until you have parsed all the atoms in the file.
 
-An exception is the file type atom, which typically identifies the file as a QuickTime movie. If present, this atom precedes any movie atom, movie data, preview, or free space atoms. If you encounter one of these other atom types prior to finding a file type atom, you may assume the file type atom is not present. (This atom is introduced in the  for 2004, and is not present in QuickTime movie files created prior to 2004).
+An exception is the file type atom, which typically identifies the file as a QuickTime movie. If present, this atom precedes any movie atom, movie data, preview, or free space atoms. If you encounter one of these other atom types prior to finding a file type atom, you may assume the file type atom is not present. (This atom is introduced in the *QuickTime File Format Specification* for 2004, and is not present in QuickTime movie files created prior to 2004).
 
 While other atoms can be in any order, unless specified in this documentation, for practical reasons there is a recommended order that you should use when creating a QuickTime movie file. For example, the atom containing the movie resource should precede any atoms containing the movie’s sample data. If you follow this recommended atom order, it is possible to play a movie over a network while the movie file is in the process of downloading.
 

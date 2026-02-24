@@ -11,7 +11,7 @@ Browse notable changes in [`Apple Intelligence`](https://developer.apple.comhttp
 #### February 2025
 
 - Use [`ImageCreator`](https://developer.apple.com/documentation/ImagePlayground/ImageCreator) to generate images programmatically from your app on devices that support the capability.  The system’s generative models use your provided description to generate one or more images and return them to your code. The [`ImagePlaygroundConcept`](https://developer.apple.com/documentation/ImagePlayground/ImagePlaygroundConcept) type includes text you use to describe the image you wish to create, and [`ImagePlaygroundStyle`](https://developer.apple.com/documentation/ImagePlayground/ImagePlaygroundStyle) sets the style to apply to that image.
-- Learn how to  doc://com.apple.documentation/documentation/corespotlight/enable-apple-intelligence-summaries using a Spotlight delegate app extension in your app.
+- Learn how to  [`Enabling Apple Intelligence summarization and prioritization`](https://developer.apple.com/documentation/corespotlight/enable-apple-intelligence-summaries) using a Spotlight delegate app extension in your app.
 - Learn about    [`Adopting Smart Reply in your messaging or email app`](https://developer.apple.com/documentation/UIKit/adopting-smart-reply-in-your-messaging-or-email-app) to give Apple Intelligence the context of your messaging or mail thread, and insert the generated response back into your app’s UI. Use [`UIMessageConversationContext`](https://developer.apple.com/documentation/UIKit/UIMessageConversationContext) for messaging, and [`UIMailConversationContext`](https://developer.apple.com/documentation/UIKit/UIMailConversationContext) for email.
 
 #### January 2025

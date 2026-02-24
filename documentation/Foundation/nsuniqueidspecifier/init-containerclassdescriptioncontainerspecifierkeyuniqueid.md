@@ -28,7 +28,7 @@ Invokes the super class’s [`init(containerClassDescription:containerSpecifier:
 - `classDesc`: The class description for the new object.
 - `container`: The container for the new object.
 - `property`: The property for the new object.
-- `uniqueID`:  must be an instance of   or  . The type should match the declared type of the attribute of the specified scriptable class whose four-character code is  .
+- `uniqueID`: The unique ID for the new object. `uniqueID` must be an instance of `NSNumber` or `NSString`. The type should match the declared type of the attribute of the specified scriptable class whose four-character code is `'ID  '`.
 
 ## See Also
 

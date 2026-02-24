@@ -20,7 +20,7 @@ You can specify the origin as (`NSMinX(typographicBounds) + glyphOrigin.x, NSMin
 
 ## Parameters
 
-- `point`: The origin as a  .
+- `point`: The origin as a `CGPoint`.
 - `context`: The drawing context.
 
 

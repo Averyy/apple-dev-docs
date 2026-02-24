@@ -38,8 +38,8 @@ Chart(cars) {
 ## Parameters
 
 - `value`: The data used for positioning marks.
-- `axis`: The axis to position marks along. Set this to    to use a default configuration.
-- `span`: The span of the positioned marks. Use this to control   the total amount space available to the marks.
+- `axis`: The axis to position marks along. Set this to `nil` to use a default configuration.
+- `span`: The span of the positioned marks. Use this to control the total amount space available to the marks.
 
 ## See Also
 

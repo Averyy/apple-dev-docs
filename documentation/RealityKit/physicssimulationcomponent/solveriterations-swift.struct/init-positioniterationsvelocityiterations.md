@@ -21,8 +21,8 @@ init(positionIterations: Int = 6, velocityIterations: Int = 1)
 
 ## Parameters
 
-- `positionIterations`: The number of position iterations the solver performs,   in the inclusive range  .   The default value is  .
-- `velocityIterations`: The number of velocity iterations the solver performs,   in the inclusive range  .   The default value is  .
+- `positionIterations`: The number of position iterations the solver performs, in the inclusive range `[1, 255]`. The default value is `6`.
+- `velocityIterations`: The number of velocity iterations the solver performs, in the inclusive range `[1, 255]`. The default value is `1`.
 
 
 ---

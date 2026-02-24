@@ -175,12 +175,8 @@ input.elementValueDidChangeHandler = { (input, element) in
 
 - [Game Controller updates](../Updates/GameController.md)
   Learn about important changes to Game Controller.
-- [GCSupportsControllerUserInteraction](../BundleResources/Information-Property-List/GCSupportsControllerUserInteraction.md)
-  A Boolean value indicating whether the app supports a game controller.
-- [GCSupportedGameControllers](../BundleResources/Information-Property-List/GCSupportedGameControllers.md)
-  The types of game controller profiles that the app supports or requires.
-- [GCSupportsMultipleMicroGamepads](../BundleResources/Information-Property-List/GCSupportsMultipleMicroGamepads.md)
-  A Boolean value indicating whether the physical Apple TV Remote and the Apple TV Remote app operate as separate game controllers.
+- [Discovering game controllers](discovering-game-controllers.md)
+  Implement connection and input handling to provide seamless physical controller support for players.
 
 
 ---

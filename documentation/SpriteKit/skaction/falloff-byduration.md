@@ -30,6 +30,18 @@ When the action executes, the field node’s [`falloff`](skfieldnode/falloff.md)
 
 This action is reversible; the reverse is created as if the following code is executed:
 
+**Swift**:
+
+```swift
+let action = SKAction.falloff(by: -falloff, duration: sec)
+```
+
+**Obj-C**:
+
+```objc
+[SKAction falloffBy: -falloff duration: sec];
+```
+
 ## Parameters
 
 - `falloff`: The value to add to the falloff.

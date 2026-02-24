@@ -35,9 +35,9 @@ This method will return `nil` and an error if:
 
 ## Parameters
 
-- `extent`: The bounding   of pixels that the   can produce.   This method will return   if extent is empty.
-- `inputs`: An array of   objects to use as input.
-- `arguments`: This dictionary contains any additional parameters that the processor needs to   produce its output. The argument objects can be of any type but in order for   CoreImage  to cache intermediates, they must be of the following immutable types:   ,  ,  ,  ,  ,  ,  ,   ,  ,  ,  , or  .
+- `extent`: The bounding `CGRect` of pixels that the `CIImageProcessorKernel` can produce. This method will return `/CIImage/emptyImage` if extent is empty.
+- `inputs`: An array of [`CIImage`](ciimage.md) objects to use as input.
+- `arguments`: This dictionary contains any additional parameters that the processor needs to produce its output. The argument objects can be of any type but in order for CoreImage  to cache intermediates, they must be of the following immutable types: `NSArray`, `NSDictionary`, `NSNumber`, `NSValue`, `NSData`, `NSString`, `NSNull`, [`CIVector`](civector.md), [`CIColor`](cicolor.md), `CGImage`, `CGColorSpace`, or `MLModel`.
 
 ## See Also
 

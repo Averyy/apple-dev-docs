@@ -29,6 +29,39 @@ Use this method to specify a possible result of testing this node’s attribute 
 
 The `value` parameter is a specific value for this node’s attribute, so this method is useful for questions that must have one of a few specific answers. (If a question has many possible answers, see the [`createBranch(predicate:attribute:)`](gkdecisionnode/createbranch(predicate:attribute:).md) method instead.) For example, a strategy combat game might use this method to choose an attack based on the type of opponent:
 
+**Swift**:
+
+```swift
+ 
+enum MyEnemyType: Int {
+    case Water, Electric, Fire
+}
+ 
+let tree = GKDecisionTree(attribute: "HP?")
+let root = tree.rootNode
+ 
+root.createBranch(withValue: MyEnemyType.Water.rawValue, attribute: "Water Blast")
+root.createBranch(withValue: MyEnemyType.Electric.rawValue, attribute: "Electric Shock"];
+root.createBranch(withValue: MyEnemyType.Fire.rawValue, attribute: "Fire"];
+```
+
+**Objective-C**:
+
+```objc
+typedef NS_ENUM(NSInteger, MyEnemyType) {
+    MyEnemyTypeWater,
+    MyEnemyTypeElectric,
+    MyEnemyTypeFire
+};
+ 
+GKDecisionTree *tree = [[GKDecisionTree alloc] initWithAttribute:@"Type?"];
+GKDecisionNode *root = tree.rootNode;
+ 
+[root createBranchWithValue:@(MyEnemyTypeWater) attribute:@"Water Blast"];
+[root createBranchWithValue:@(MyEnemyTypeElectric) attribute:@"Electric Shock"];
+[root createBranchWithValue:@(MyEnemyTypeFire) attribute:@"Fire"];
+```
+
 ## Parameters
 
 - `value`: The value for this node’s attribute that should result in following the newly created branch.

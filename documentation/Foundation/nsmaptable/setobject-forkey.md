@@ -22,8 +22,8 @@ func setObject(_ anObject: ObjectType?, forKey aKey: KeyType?)
 
 ## Parameters
 
-- `anObject`: The value for  .
-- `aKey`: The key for  .
+- `anObject`: The value for `aKey`.
+- `aKey`: The key for `anObject`.
 
 ## See Also
 

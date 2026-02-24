@@ -38,7 +38,7 @@ The default implementation of this method returns `nil`.
 
 - `value`: The vector to animate towards.
 - `time`: The amount of time since the start of the animation.
-- `context`: An instance of   that provides access   to state and the animation environment.
+- `context`: An instance of [`AnimationContext`](animationcontext.md) that provides access to state and the animation environment.
 
 
 ---

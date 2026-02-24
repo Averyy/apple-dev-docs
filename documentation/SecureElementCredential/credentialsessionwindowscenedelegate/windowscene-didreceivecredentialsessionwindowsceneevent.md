@@ -19,7 +19,7 @@ func windowScene(_ windowScene: UIWindowScene, didReceiveCredentialSessionWindow
 ## Parameters
 
 - `windowScene`: The scene object connected to your app.
-- `event`: The   that initiated the new scene.
+- `event`: The [`CredentialSessionWindowSceneEvent`](credentialsessionwindowsceneevent.md) that initiated the new scene.
 
 ## See Also
 

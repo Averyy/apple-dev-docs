@@ -89,7 +89,7 @@ try AVAudioSession.sharedInstance().setPreferredMicrophoneInjectionMode(mode)
 
 When turned on during an active call, the system plays the app’s audio locally and adds it to the microphone’s input stream.
 
-> **Note**: The `AVAudioSession/setPreferredMicrophoneInjectionMode(_:)` method uses the word  to indicate that an app can set its preference, but a person ultimately determines whether they allow the feature’s use.
+> **Note**: The `AVAudioSession/setPreferredMicrophoneInjectionMode(_:)` method uses the word *preferred* to indicate that an app can set its preference, but a person ultimately determines whether they allow the feature’s use.
 
 #### Monitor the Availability of Calls
 

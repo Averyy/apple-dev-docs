@@ -27,7 +27,7 @@ To use the objects for detection in a world-tracking AR session, provide this se
 ## Parameters
 
 - `name`: The name of an AR Resource Group from your Xcode project’s main asset catalog.
-- `bundle`: The bundle from which to load asset catalog resources, or   to use your app’s main bundle.
+- `bundle`: The bundle from which to load asset catalog resources, or `nil` to use your app’s main bundle.
 
 ## See Also
 

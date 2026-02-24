@@ -20,11 +20,11 @@ init(validation: MLSoundClassifier.ModelParameters.ValidationData = __Defaults.v
 
 ## Parameters
 
-- `validation`: A validation dataset represented by an    instance.
-- `maxIterations`: The largest number of iterations the training session can use to train the sound   classifier.
-- `overlapFactor`: The default value is  , which represents a 50% overlap.
+- `validation`: A validation dataset represented by an [`MLSoundClassifier.ModelParameters.ValidationData`](mlsoundclassifier/modelparameters-swift.struct/validationdata.md) instance.
+- `maxIterations`: The largest number of iterations the training session can use to train the sound classifier.
+- `overlapFactor`: A proportion of overlap the training session uses to analyze two consecutive windows in the audio data. The proportion must be in the range `[0.0, 1.0)`. Higher proportions generate more training data but also increase the training time. The default value is `0.5`, which represents a 50% overlap.
 - `algorithm`: An algorithm the training session uses to train the sound classifier.
-- `featureExtractionTimeWindowSize`: A time duration, in seconds, the feature-extraction session uses for   each audio sample it reads from an audio file in a dataset. The value must be in the range   .
+- `featureExtractionTimeWindowSize`: A time duration, in seconds, the feature-extraction session uses for each audio sample it reads from an audio file in a dataset. The value must be in the range `[0.5, 15.0]`.
 
 ## See Also
 

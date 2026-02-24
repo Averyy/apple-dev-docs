@@ -27,7 +27,7 @@ The attribute specified by `attribute` of the current token, or `NULL` if the cu
 ## Parameters
 
 - `tokenizer`: A CFStringTokenizer object.
-- `attribute`: The token attribute to obtain. The value must be  , or  .
+- `attribute`: The token attribute to obtain. The value must be `kCFStringTokenizerAttributeLatinTranscription`, or `kCFStringTokenizerAttributeLanguage`.
 
 ## See Also
 

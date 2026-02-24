@@ -41,8 +41,8 @@ While App Store Connect provides the most accurate measurements of your app’s 
 
 This process creates a folder with your app’s artifacts:
 
-- A  IPA file for older devices. This single IPA file contains assets and binaries for all variants of your app.
--  IPA files for each variant of your app. These files contain assets and binaries for only one variant.
+- A *universal* IPA file for older devices. This single IPA file contains assets and binaries for all variants of your app.
+- *Thinned* IPA files for each variant of your app. These files contain assets and binaries for only one variant.
 
 The output folder for your exported app also contains the app size report: a file named `App Thinning Size Report.txt`. This report lists the compressed and uncompressed sizes for each of your app’s IPA files. The uncompressed size is equivalent to the size of the installed app on the device, and the compressed size is the download size of your app. The following shows the beginning of the app size report for a sample app:
 

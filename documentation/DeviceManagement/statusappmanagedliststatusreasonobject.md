@@ -23,6 +23,12 @@ object StatusAppManagedListStatusReasonObject
 - [object StatusAppManagedListStatusReason_DetailsObject](statusappmanagedliststatusreason_detailsobject.md)
   A dictionary that contains additional details about a declarative managed app’s error state.
 
+## Properties
+
+- `code` (string) *(required)*: A code for the state.
+- `description` (string): A description of the state.
+- `details` (StatusAppManagedListStatusReason_DetailsObject): A dictionary that contains additional details about the state.
+
 ## See Also
 
 - [object StatusAppManagedListManagedConfigurationObject](statusappmanagedlistmanagedconfigurationobject.md)

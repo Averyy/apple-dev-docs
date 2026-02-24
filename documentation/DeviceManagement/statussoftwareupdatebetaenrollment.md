@@ -29,6 +29,10 @@ object StatusSoftwareUpdateBetaEnrollment
 | Allowed in system scope | iOS, macOS, Shared iPad |
 | Allowed in user scope | NA |
 
+## Properties
+
+- `softwareupdate.beta-enrollment` (string) *(required)*: The device’s enrolled beta program name, or an empty string if there’s no enrolled beta program.
+
 ## See Also
 
 - [object StatusReport](statusreport.md)

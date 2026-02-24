@@ -52,11 +52,11 @@ The above example returns `nil` for other guides to indicate that they don’t h
 
 ## Parameters
 
-- `guide`: The   guide that the method calculates   the position of.
-- `bounds`: The region that the container view’s parent allocates to the   container view, specified in the parent’s coordinate space.
+- `guide`: The [`HorizontalAlignment`](horizontalalignment.md) guide that the method calculates the position of.
+- `bounds`: The region that the container view’s parent allocates to the container view, specified in the parent’s coordinate space.
 - `proposal`: A proposed size for the container.
-- `subviews`: A collection of proxy instances that represent the   views arranged by the container. You can use the proxies in the   collection to get information about the subviews as you determine   where to place the guide.
-- `cache`: Optional storage for calculated data that you can share among   the methods of your custom layout container. See    for details.
+- `subviews`: A collection of proxy instances that represent the views arranged by the container. You can use the proxies in the collection to get information about the subviews as you determine where to place the guide.
+- `cache`: Optional storage for calculated data that you can share among the methods of your custom layout container. See [`makeCache(subviews:)`](layout/makecache(subviews:).md) for details.
 
 ## See Also
 

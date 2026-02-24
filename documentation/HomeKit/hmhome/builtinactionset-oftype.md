@@ -29,7 +29,7 @@ Returns `nil` if no action set is found.
 
 ## Parameters
 
-- `actionSetType`: Type of the builtin action set. Supported action set types are  ,  ,   and  .
+- `actionSetType`: Type of the builtin action set. Supported action set types are [`HMActionSetTypeWakeUp`](hmactionsettypewakeup.md), [`HMActionSetTypeSleep`](hmactionsettypesleep.md), [`HMActionSetTypeHomeDeparture`](hmactionsettypehomedeparture.md) and [`HMActionSetTypeHomeArrival`](hmactionsettypehomearrival.md).
 
 ## See Also
 

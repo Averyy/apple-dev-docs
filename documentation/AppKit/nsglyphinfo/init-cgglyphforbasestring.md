@@ -20,7 +20,7 @@ A glyph info object for the specified glyph or `nil` if the glyph information is
 
 ## Parameters
 
-- `glyph`: The requested   object.
+- `glyph`: The requested [`CGGlyph`](https://developer.apple.com/documentation/CoreGraphics/CGGlyph) object.
 - `font`: The font containing the glyph.
 - `string`: A string containing the character represented by the glyph.
 

@@ -23,7 +23,7 @@ If this function fails, the previous credentials for the node are used.
 
 ## Parameters
 
-- `inRecordType`: The record type that uses the credentials. Can be  . The default value is  .
+- `inRecordType`: The record type that uses the credentials. Can be `nil`. The default value is `kODRecordTypeUsers`.
 - `inRecordName`: The username to use to authenticate with the node.
 - `inPassword`: The password to use to authenticate with the node.
 

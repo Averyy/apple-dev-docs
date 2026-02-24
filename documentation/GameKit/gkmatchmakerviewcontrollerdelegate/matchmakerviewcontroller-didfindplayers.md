@@ -27,7 +27,7 @@ The view controller returns the list of players to your game by calling this met
 ## Parameters
 
 - `viewController`: The view controller that performed the matchmaking.
-- `playerIDs`: An array of   objects containing player identifier for the matched players.
+- `playerIDs`: An array of `NSString` objects containing player identifier for the matched players.
 
 ## See Also
 

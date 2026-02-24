@@ -28,6 +28,13 @@ We note that AMD-based orderings tend to be fast and provide good quality for sm
 
 The AMD and MeTiS orderings provide good orderings for symmetric (Hermitian) matrices. They can be used for the QR factorizations, but this involves forming A^TA explicitly, which is expensive. COLAMD on the other hand finds an ordering for `A^T A` whilst only working with A. For this reason, COLAMD cannot be used for symmetric (Hermitian) factorizations.
 
+- **`SparseOrderDefault`**: Default ordering (AMD for symmetric factorizations, COLAMD for QR/CholeskyAtA, and MT-METIS for LU. Defaults may change in future releases if better algorithms become available).
+- **`SparseOrderUser`**: User-supplied ordering, or identity if options->order is NULL
+- **`SparseOrderAMD`**: AMD ordering. Large overhead cost if used for QR-based factorization due to explicit formation of `A^T A`.
+- **`SparseOrderMetis`**: MeTiS Nested Dissection ordering. Large overhead cost if used for QR-based factorization due to explicit formation of `A^T A`.
+- **`SparseOrderMTMetis`**: MT-MeTiS Nested Dissection ordering. Similar to `SparseOrderMetis`, but uses multiple threads to increase performance at cost of slightly worse ordering quality.
+- **`SparseOrderCOLAMD`**: Column AMD ordering for `A^T A`. Not valid for symmetric (Hermitian) factorizations (use AMD instead).
+
 ## See Also
 
 - [var SparseOrderDefault: SparseOrder_t](sparseorderdefault.md)
@@ -39,7 +46,7 @@ The AMD and MeTiS orderings provide good orderings for symmetric (Hermitian) mat
 - [var SparseOrderMetis: SparseOrder_t](sparseordermetis.md)
   METIS nested dissection ordering.
 - [var SparseOrderCOLAMD: SparseOrder_t](sparseordercolamd.md)
-  The column AMD ordering for .
+  The column AMD ordering for *AᵀA*.
 
 
 ---

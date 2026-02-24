@@ -33,11 +33,11 @@ If the keychain item data is encrypted, this function decrypts the data before r
 ## Parameters
 
 - `itemRef`: A reference to the keychain item from which you wish to retrieve data or attributes.
-- `info`: A pointer to a list of tags and formats of attributes to retrieve. You can call   to obtain a list of all possible attribute tags and formats for the item’s class. Pass   if you don’t wish to retrieve any attributes.
-- `itemClass`: On return, the item’s class. Pass   if not required. See   for valid constants.
-- `attrList`: On return, the retrieved attributes and their values .  Pass   if not required. You must call the function   when you no longer need the attributes and values.
-- `length`: On return, the actual length of the data returned in the   parameter.
-- `outData`: On return, the data in this item. Pass   if not required. You must call the function   when you no longer need the data.
+- `info`: A pointer to a list of tags and formats of attributes to retrieve. You can call [`SecKeychainAttributeInfoForItemID(_:_:_:)`](seckeychainattributeinfoforitemid(_:_:_:).md) to obtain a list of all possible attribute tags and formats for the item’s class. Pass `NULL` if you don’t wish to retrieve any attributes.
+- `itemClass`: On return, the item’s class. Pass `NULL` if not required. See [`SecItemClass`](secitemclass.md) for valid constants.
+- `attrList`: On return, the retrieved attributes and their values .  Pass `NULL` if not required. You must call the function [`SecKeychainItemFreeAttributesAndData(_:_:)`](seckeychainitemfreeattributesanddata(_:_:).md) when you no longer need the attributes and values.
+- `length`: On return, the actual length of the data returned in the `outData` parameter.
+- `outData`: On return, the data in this item. Pass `NULL` if not required. You must call the function [`SecKeychainItemFreeAttributesAndData(_:_:)`](seckeychainitemfreeattributesanddata(_:_:).md) when you no longer need the data.
 
 
 ---

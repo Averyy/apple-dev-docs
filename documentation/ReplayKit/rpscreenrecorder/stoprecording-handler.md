@@ -49,7 +49,8 @@ sharedRecorder.stopRecording { previewViewController, error in
 
 ## Parameters
 
-- `handler`: A block that is called when the request completes.
+- `handler`: A block that is called when the request completes. - **`previewViewController`**: An instance of the `RPPreviewViewController` class.
+- **`error`**: If an error occurred, this parameter holds an object that explains the error. Otherwise, the value of this parameter is `nil`. See [`RPRecordingErrorCode`](rprecordingerrorcode.md) for a list of error codes to ReplayKit.
 
 ## See Also
 

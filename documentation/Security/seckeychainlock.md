@@ -24,7 +24,7 @@ Your application should not call this function unless you are responding to a us
 
 ## Parameters
 
-- `keychain`: A reference to the keychain to lock. Pass   to lock the default keychain.
+- `keychain`: A reference to the keychain to lock. Pass `NULL` to lock the default keychain.
 
 
 ---

@@ -39,9 +39,9 @@ For any one CFNetServiceBrowser, only one domain search or one service search ca
 
 ## Parameters
 
-- `browser`: The CFNetServiceBrowser, obtained by previously calling  , that is to perform the search; cannot be  .
-- `domain`: The domain to search for the service type; cannot be  . To get the domains that are available for searching, call  .
-- `error`: A pointer to a   structure, that, if an error occurs, will be set to the error and the error’s domain and passed to your callback function. Pass   if you don’t want to receive the error that may occur as a result of this particular call.
+- `browser`: The CFNetServiceBrowser, obtained by previously calling [`CFNetServiceBrowserCreate(_:_:_:)`](cfnetservicebrowsercreate(_:_:_:).md), that is to perform the search; cannot be `NULL`.
+- `domain`: The domain to search for the service type; cannot be `NULL`. To get the domains that are available for searching, call [`CFNetServiceBrowserSearchForDomains(_:_:_:)`](cfnetservicebrowsersearchfordomains(_:_:_:).md).
+- `error`: A pointer to a [`CFStreamError`](https://developer.apple.com/documentation/CoreFoundation/CFStreamError) structure, that, if an error occurs, will be set to the error and the error’s domain and passed to your callback function. Pass `NULL` if you don’t want to receive the error that may occur as a result of this particular call.
 
 ## See Also
 

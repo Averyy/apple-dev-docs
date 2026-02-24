@@ -23,7 +23,7 @@ The principal class of the plug-in must implement the `NSDockTilePlugIn` protoco
 
 ## Parameters
 
-- `dockTile`: The dock tile associated with the application, or   if the application has been removed from the Dock.
+- `dockTile`: The dock tile associated with the application, or `nil` if the application has been removed from the Dock.
 
 
 ---

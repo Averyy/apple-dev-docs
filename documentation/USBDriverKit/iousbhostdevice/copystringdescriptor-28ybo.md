@@ -24,8 +24,8 @@ This method searches the descriptor cache for the specified descriptor. If the d
 
 ## Parameters
 
-- `index`: The descriptor index value. This parameter corresponds to the low byte of   of the   control request (USB 2.0, section 9.4.8).
-- `languageID`: The descriptor language ID. This parameter corresponds to the   value of the   control request (USB 2.0, section 9.4.8).
+- `index`: The descriptor index value. This parameter corresponds to the low byte of `wValue` of the `SET_DESCRIPTOR` control request (USB 2.0, section 9.4.8).
+- `languageID`: The descriptor language ID. This parameter corresponds to the `wIndex` value of the `SET_DESCRIPTOR` control request (USB 2.0, section 9.4.8).
 
 ## See Also
 

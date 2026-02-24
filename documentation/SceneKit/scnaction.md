@@ -30,13 +30,13 @@ To create an action, call the class method for the action you are interested in.
 
 Most actions allow you to change a node’s properties, such as its position, rotation, or scale. Many of these actions are animated by SceneKit, meaning that they change the properties of the associated node over more than one frame of animation rendered by the scene. When an action is animated, the [`duration`](scnaction/duration.md) property states how long that action takes to complete in seconds and its [`timingMode`](scnaction/timingmode.md) property defines the rate at which the animation executes. The action’s [`speed`](scnaction/speed.md) property allows you to adjust the timing of the animation by increasing or decreasing its playback speed.
 
-Many actions can be , allowing you to create another action object that reverses the effect of that action. For example, if an action object moves a node `20` units in the positive X direction of its parent’s local coordinate space, the reversed action moves the node `20` units in the negative X direction. To create a reversed action object, call an action object’s [`reversed()`](scnaction/reversed().md) method.
+Many actions can be *reversed*, allowing you to create another action object that reverses the effect of that action. For example, if an action object moves a node `20` units in the positive X direction of its parent’s local coordinate space, the reversed action moves the node `20` units in the negative X direction. To create a reversed action object, call an action object’s [`reversed()`](scnaction/reversed().md) method.
 
 Some actions include other actions as children:
 
-- A  has multiple child actions. Each action in the sequence begins after the previous action ends.
-- A  has multiple child actions. All actions stored in the group begin executing at the same time.
-- A  stores a single child action. When the child action completes, it is restarted.
+- A *sequence action* has multiple child actions. Each action in the sequence begins after the previous action ends.
+- A *group action* has multiple child actions. All actions stored in the group begin executing at the same time.
+- A *repeating action* stores a single child action. When the child action completes, it is restarted.
 
 You can nest groups, sequences, and repeating actions. By combining actions together, you can add sophisticated behaviors to a node.
 

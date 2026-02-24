@@ -24,6 +24,10 @@ var touchedDidChangeHandler: ((any GCPhysicalInputElement, any GCTouchedStateInp
 
 Use this property to get the latest state of the touch input. The block’s parameters are:
 
+- **element**: The element whose value changes.
+- **input**: The input of the element that changes.
+- **touched**: A Boolean value that indicates whether the user touches the button.
+
 ## See Also
 
 - [var isTouched: Bool](gctouchedstateinput/istouched.md)

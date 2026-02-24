@@ -27,8 +27,8 @@ You use this method to create a stand-alone DTD which you can thereafter query a
 
 ## Parameters
 
-- `url`: An   object identifying a URL source.
-- `mask`: A bit mask specifying input options; bit-OR multiple options. The current valid options are   and  ; these constants are described in the “Constants” section of the   reference.
+- `url`: An [`NSURL`](nsurl.md) object identifying a URL source.
+- `mask`: A bit mask specifying input options; bit-OR multiple options. The current valid options are `NSXMLNodePreserveWhitespace` and `NSXMLNodePreserveEntities`; these constants are described in the “Constants” section of the [`XMLNode`](xmlnode.md) reference.
 
 ## See Also
 

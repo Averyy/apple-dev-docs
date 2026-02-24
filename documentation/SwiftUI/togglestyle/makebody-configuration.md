@@ -91,7 +91,7 @@ Apply the custom style closer to the toggle than the modified style because Swif
 
 ## Parameters
 
-- `configuration`: The properties of the toggle, including a   label and a binding to the toggle’s state.
+- `configuration`: The properties of the toggle, including a label and a binding to the toggle’s state.
 
 ## See Also
 

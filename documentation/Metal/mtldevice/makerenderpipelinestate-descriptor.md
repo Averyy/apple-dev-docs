@@ -30,7 +30,7 @@ Use the graphics-rendering pipeline state to configure a render pass by calling 
 
 ## Parameters
 
-- `descriptor`: An   instance.
+- `descriptor`: An [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) instance.
 
 ## See Also
 

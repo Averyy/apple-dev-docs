@@ -25,8 +25,8 @@ This initializer is an alternative to [`init(castsShadow:)`](groundingshadowcomp
 
 ## Parameters
 
-- `castsShadow`: A Boolean value that indicates whether the component’s   entity casts a shadow on the environment and other model entities.
-- `receivesShadow`: A Boolean value that indicates whether the   component’s entity receives shadows from other model entities.
+- `castsShadow`: A Boolean value that indicates whether the component’s entity casts a shadow on the environment and other model entities.
+- `receivesShadow`: A Boolean value that indicates whether the component’s entity receives shadows from other model entities.
 
 
 ---

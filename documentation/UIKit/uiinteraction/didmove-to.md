@@ -21,7 +21,7 @@ func didMove(to view: UIView?)
 
 ## Parameters
 
-- `view`: The view that owns and contains the interaction in its interaction array. If the view is  , the interaction’s owner removed the interaction from its interactions array.
+- `view`: The view that owns and contains the interaction in its interaction array. If the view is `nil`, the interaction’s owner removed the interaction from its interactions array.
 
 ## See Also
 

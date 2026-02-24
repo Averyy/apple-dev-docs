@@ -24,9 +24,9 @@ A new inking tool with the specified type, color, and width.
 
 ## Parameters
 
-- `type`: The shape of the tool. You may specify  ,  , or  .
+- `type`: The shape of the tool. You may specify [`PKInkTypeMarker`](pkinktypemarker.md), [`PKInkTypePen`](pkinktypepen.md), or [`PKInkTypePencil`](pkinktypepencil.md).
 - `color`: The color to apply to drawn lines.
-- `width`: The base width to apply to any drawn lines. The value in the   parameter and input from Apple Pencil affects the final actual width.
+- `width`: The base width to apply to any drawn lines. The value in the `inkType` parameter and input from Apple Pencil affects the final actual width.
 
 ## See Also
 

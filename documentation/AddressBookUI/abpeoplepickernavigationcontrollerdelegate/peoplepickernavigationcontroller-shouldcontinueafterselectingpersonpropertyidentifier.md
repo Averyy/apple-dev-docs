@@ -29,7 +29,7 @@ This method is called with an identifier. If you need an index, use the [`ABMult
 - `peoplePicker`: The people-picker navigation controller with which the user interacted.
 - `person`: The person whose contact information item the user selected.
 - `property`: The property the user selected.
-- `identifier`: The identifier for the value the user selected if   is a multivalue property; otherwise,  .
+- `identifier`: The identifier for the value the user selected if `property` is a multivalue property; otherwise, `kABMultiValueInvalidIdentifier`.
 
 ## See Also
 

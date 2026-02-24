@@ -21,8 +21,8 @@ Creates a new `MERAWProcessor` matching the given `CMVideoFormatDescriptionRef`.
 
 ## Parameters
 
-- `formatDescription`: A   describing the video data that was decoded to produce the RAW input for the video RAW processor.
-- `extensionPixelBufferManager`: An   instance that should be retained by the new   instance and used for output pixelBuffer configuration and allocation.
+- `formatDescription`: A `CMVideoFormatDescription` describing the video data that was decoded to produce the RAW input for the video RAW processor.
+- `extensionPixelBufferManager`: An `MERAWProcessorPixelBufferManager` instance that should be retained by the new `MERAWProcessor` instance and used for output pixelBuffer configuration and allocation.
 
 
 ---

@@ -23,7 +23,7 @@ An array of arrays, with each inner array holding the representation types for a
 
 ## Parameters
 
-- `itemSet`: An index set with each integer value identifying a pasteboard item positionally in the pasteboard. Pass in   to request all pasteboard items.
+- `itemSet`: An index set with each integer value identifying a pasteboard item positionally in the pasteboard. Pass in `nil` to request all pasteboard items.
 
 ## See Also
 

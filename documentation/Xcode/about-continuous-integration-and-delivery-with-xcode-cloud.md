@@ -6,7 +6,7 @@ Learn how continuous integration and delivery with Xcode Cloud helps you create 
 
 #### Overview
 
-Xcode consists of a suite of tools you use to build, test, and release apps and frameworks for Apple platforms. When you add features and support more devices and platforms, your app or framework and its codebase grow in complexity, making it harder to ensure its quality. With Xcode Cloud, you can adopt  (CI/CD), a standard practice to monitor, ensure, and improve the quality of your apps and frameworks.
+Xcode consists of a suite of tools you use to build, test, and release apps and frameworks for Apple platforms. When you add features and support more devices and platforms, your app or framework and its codebase grow in complexity, making it harder to ensure its quality. With Xcode Cloud, you can adopt *continuous integration and delivery* (CI/CD), a standard practice to monitor, ensure, and improve the quality of your apps and frameworks.
 
 Xcode Cloud is a CI/CD system that uses Git for source control and provides you with an integrated system that ensures the quality and stability of your codebase. It also helps you publish apps efficiently. By combining [`Xcode`](https://developer.apple.comhttps://developer.apple.com/xcode/) with Apple’s cloud infrastructure for building and testing your code — along with [`TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/) and [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com) — Xcode Cloud makes it easy for you to:
 
@@ -25,7 +25,7 @@ You don’t need to introduce every aspect of continuous integration and deliver
 
 Changes to your app’s code can be difficult to manage. This is especially true when you work on several changes at the same time. To help you organize, manage, and document source code changes, Xcode supports source control with Git. By using source control, you improve your project’s quality by tracking and reviewing code changes.
 
-Because source control plays such a fundamental role in CI/CD, Xcode Cloud requires your code to be in a Git repository. It supports the following  (SCM) providers:
+Because source control plays such a fundamental role in CI/CD, Xcode Cloud requires your code to be in a Git repository. It supports the following *source code management* (SCM) providers:
 
 - [`Bitbucket Cloud`](https://developer.apple.comhttps://bitbucket.org) and [`Bitbucket Server`](https://developer.apple.comhttps://bitbucket.org/product/enterprise)
 - [`GitHub`](https://developer.apple.comhttps://github.com) and [`GitHub Enterprise`](https://developer.apple.comhttps://github.com/enterprise)
@@ -59,7 +59,7 @@ The flip side to continuous integration (CI) is continuous delivery (CD). While 
 
 Source control with Git helps you manage changes to your code. For example, Git branches enable you to make a change without affecting your verified, stable codebase. Additionally, branches are helpful when you develop your app or framework as a team. However, merging changes, resolving conflicts, and verifying code changes can be time-consuming.
 
-To make code review and merging easier, SCM providers offer support for  (PRs), also known as . When you create a PR, you inform your team that a change is ready for review, and you and your team can take a look at each other’s code changes, and provide and address feedback before merging branches.
+To make code review and merging easier, SCM providers offer support for *pull requests* (PRs), also known as *merge requests*. When you create a PR, you inform your team that a change is ready for review, and you and your team can take a look at each other’s code changes, and provide and address feedback before merging branches.
 
 ![A figure that illustrates a collaborative software development workflow with Git. A team member creates a PR, gathers feedback, addresses the feedback, and eventually merges branches.](https://docs-assets.developer.apple.com/published/352978554e67a633b443c9a585695f1f/About-Continuous-Integration-and-Delivery-with-Xcode-Cloud-4%402x.png)
 

@@ -29,7 +29,7 @@ This method executes asynchronously, returning immediately and executing the pro
 
 ## Parameters
 
-- `completionHandler`: The block to execute with the results. This block may be executed on a background thread. The block has no return value and takes the following parameter:
+- `completionHandler`: The block to execute with the results. This block may be executed on a background thread. The block has no return value and takes the following parameter: - **notifications**: An array of [`UNNotification`](unnotification.md) objects representing the local and remote notifications of your app that have been delivered and are still visible in Notification Center. If none of your app’s notifications are visible in Notification Center, the array is empty.
 
 ## See Also
 

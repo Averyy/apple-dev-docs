@@ -27,7 +27,7 @@ If you don’t implement this method, ClockKit doesn’t animate the transitions
 ## Parameters
 
 - `complication`: The complication tied to the request. Use the complication family information in this object to determine which set of templates are valid.
-- `handler`: The handler to execute with the animation behavior. This block has no return value and takes the following parameter:
+- `handler`: The handler to execute with the animation behavior. This block has no return value and takes the following parameter: - **behavior**: The animation behavior to use. For a list of possible values, see [`CLKComplicationTimelineAnimationBehavior`](clkcomplicationtimelineanimationbehavior.md).
 
 ## Topics
 

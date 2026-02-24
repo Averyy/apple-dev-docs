@@ -12,9 +12,23 @@ The tint color to apply to the background of the navigation bar.
 - visionOS 1.0+
 - watchOS 2.0+
 
+
+
+**Type**: object
+
 #### Discussion
 
 The possible dictionary keys and values are:
+
+- **`Blue`**: The blue RGB color value that ranges from `0.0` to `1.0`. The default value is `0.0`.
+- **`Green`**: The green RGB color value that ranges from `0.0` to `1.0`. The default value is `0.0`.
+- **`Red`**: The red RGB color value that ranges from `0.0` to `1.0`. The default value is `0.0`.
+
+## Properties
+
+- `Blue` (number)
+- `Green` (number)
+- `Red` (number)
 
 
 ---

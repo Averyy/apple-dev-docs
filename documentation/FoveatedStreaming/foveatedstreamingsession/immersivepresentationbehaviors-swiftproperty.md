@@ -17,11 +17,13 @@ final var immersivePresentationBehaviors: FoveatedStreamingSession.ImmersivePres
 
 #### Discussion
 
-For example, you can use this to automatically present the FoveatedStreamingSpace on connect, or automatically dismiss the FoveatedStreamingSpace on disconnect.
+Use this property to control when the immersive space displaying the streamed content is presented and dismissed, or remove automatic presentation entirely. The default value is an empty array, indicating no automatic presentation behavior.
+
+Some of the presentation behaviors you can use are as follows:
 
 ```swift
-// Acquire these actions from your SwiftUI environment.
-@Environment(\.openFoveatedStreamingSpace) var open
+// Acquire open and dismiss actions from your SwiftUI environment.
+@Environment(\.openImmersiveSpace) var open
 @Environment(\.dismissImmersiveSpace) var dismiss
 
 let session: FoveatedStreamingSession
@@ -35,7 +37,7 @@ session.immersivePresentationBehaviors = .automatic(open, dismiss)
 session.immersivePresentationBehaviors = [.presentOnConnect(open), .dismissOnDisconnect(dismiss)]
 
 // Disable all automatic presentation behaviors.
-// You must manually call `openFoveatedStreamingSpace` and `dismissImmersiveSpace` to control presentation.
+// You must manually call `open` and `dismiss` to control presentation.
 session.immersivePresentationBehaviors = []
 ```
 

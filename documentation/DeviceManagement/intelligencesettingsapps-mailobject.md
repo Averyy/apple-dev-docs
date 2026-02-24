@@ -17,6 +17,11 @@ If present, configures Mail Intelligence features.
 object IntelligenceSettingsApps_MailObject
 ```
 
+## Properties
+
+- `AllowSmartReplies` (boolean): If `false`, disables Mail Smart Replies.
+- `AllowSummary` (boolean): If `false`, disables Mail Summary.
+
 ## See Also
 
 - [object IntelligenceSettingsApps_NotesObject](intelligencesettingsapps_notesobject.md)

@@ -25,7 +25,7 @@ Use this method to monitor changes to the shared networks list and respond to sy
 
 ## Parameters
 
-- `predicate`: An optional predicate for filtering the shared networks list. The default is  , meaning   you receive all networks.
+- `predicate`: An optional predicate for filtering the shared networks list. The default is `nil`, meaning you receive all networks.
 
 ## See Also
 

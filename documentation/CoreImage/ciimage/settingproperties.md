@@ -29,7 +29,7 @@ When you create an image, Core Image sets an image’s properties to a metadata 
 
 ## Parameters
 
-- `properties`: A dictionary of metadata properties akin to the   function.
+- `properties`: A dictionary of metadata properties akin to the `CGImageSourceCopyPropertiesAtIndex()` function.
 
 ## See Also
 

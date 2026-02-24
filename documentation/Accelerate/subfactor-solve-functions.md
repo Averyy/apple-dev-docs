@@ -2,46 +2,46 @@
 
 **Framework**: Accelerate
 
-Solve systems with the equation .
+Solve systems with the equation *Subfactor * X = B*.
 
 ## Topics
 
 ### Matrix-solving functions
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseMatrix_Double)](sparsesolve(_:_:)-2oyl1.md)
-  Solves the equation  in place for the matrix of double-precision values .
+  Solves the equation *Subfactor * X = B* in place for the matrix of double-precision values *X*.
 - [func SparseSolve(SparseOpaqueSubfactor_Float, DenseMatrix_Float)](sparsesolve(_:_:)-2tyws.md)
-  Solves the equation  in place for the matrix of single-precision values .
+  Solves the equation *Subfactor * X = B* in place for the matrix of single-precision values *X*.
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseMatrix_Double, DenseMatrix_Double)](sparsesolve(_:_:_:)-1lads.md)
-  Solves the equation  for the matrix of double-precision values .
+  Solves the equation *Subfactor * X = B* for the matrix of double-precision values *X*.
 - [func SparseSolve(SparseOpaqueSubfactor_Float, DenseMatrix_Float, DenseMatrix_Float)](sparsesolve(_:_:_:)-76z89.md)
-  Solves the equation  for the matrix of single-precision values .
+  Solves the equation *Subfactor * X = B* for the matrix of single-precision values *X*.
 ### Matrix-solving functions with user-defined workspace
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseMatrix_Double, UnsafeMutableRawPointer)](sparsesolve(_:_:_:)-8k0w9.md)
-  Solves the equation  in place for the matrix of double-precision values , without any internal memory allocations.
+  Solves the equation *Subfactor * X = B* in place for the matrix of double-precision values *X*, without any internal memory allocations.
 - [func SparseSolve(SparseOpaqueSubfactor_Float, DenseMatrix_Float, UnsafeMutableRawPointer)](sparsesolve(_:_:_:)-9kp2g.md)
-  Solves the equation  in place for the matrix of single-precision values , without any internal memory allocations.
+  Solves the equation *Subfactor * X = B* in place for the matrix of single-precision values *X*, without any internal memory allocations.
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseMatrix_Double, DenseMatrix_Double, UnsafeMutableRawPointer)](sparsesolve(_:_:_:_:)-90z8f.md)
-  Solves the equation  for the matrix of double-precision values , without any internal memory allocations.
+  Solves the equation *Subfactor * X = B* for the matrix of double-precision values *X*, without any internal memory allocations.
 - [func SparseSolve(SparseOpaqueSubfactor_Float, DenseMatrix_Float, DenseMatrix_Float, UnsafeMutableRawPointer)](sparsesolve(_:_:_:_:)-1hhdi.md)
-  Solves the equation  for the matrix of single-precision values , without any internal memory allocations.
+  Solves the equation *Subfactor * X = B* for the matrix of single-precision values *X*, without any internal memory allocations.
 ### Vector-solving functions
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseVector_Double)](sparsesolve(_:_:)-87v8w.md)
-  Solves the equation  in place for the vector of double-precision values .
+  Solves the equation *Subfactor * X = B* in place for the vector of double-precision values *X*.
 - [func SparseSolve(SparseOpaqueSubfactor_Float, DenseVector_Float)](sparsesolve(_:_:)-6pxrq.md)
-  Solves the equation  in place for the vector of single-precision values .
+  Solves the equation *Subfactor * X = B* in place for the vector of single-precision values *X*.
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseVector_Double, DenseVector_Double)](sparsesolve(_:_:_:)-g0wb.md)
-  Solves the equation  in place for the vector of double-precision values .
+  Solves the equation *Subfactor * X = B* in place for the vector of double-precision values *X*.
 - [func SparseSolve(SparseOpaqueSubfactor_Float, DenseVector_Float, DenseVector_Float)](sparsesolve(_:_:_:)-5mq7s.md)
-  Solves the equation  in place for the vector of single-precision values .
+  Solves the equation *Subfactor * X = B* in place for the vector of single-precision values *X*.
 ### Vector-solving functions with user-defined workspace
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseVector_Double, UnsafeMutableRawPointer)](sparsesolve(_:_:_:)-7auge.md)
-  Solves the equation  for the vector of double-precision values , in place and without any internal memory allocations.
+  Solves the equation *Subfactor * X = B* for the vector of double-precision values *X*, in place and without any internal memory allocations.
 - [func SparseSolve(SparseOpaqueSubfactor_Float, DenseVector_Float, UnsafeMutableRawPointer)](sparsesolve(_:_:_:)-1xw9b.md)
-  Solves the equation  for the vector of single-precision values , in place and without any internal memory allocations.
+  Solves the equation *Subfactor * X = B* for the vector of single-precision values *X*, in place and without any internal memory allocations.
 - [func SparseSolve(SparseOpaqueSubfactor_Double, DenseVector_Double, DenseVector_Double, UnsafeMutableRawPointer)](sparsesolve(_:_:_:_:)-eaq9.md)
-  Solves the equation  for the vector of double-precision values , without any internal memory allocations.
+  Solves the equation *Subfactor * X = B* for the vector of double-precision values *X*, without any internal memory allocations.
 - [func SparseSolve(SparseOpaqueSubfactor_Float, DenseVector_Float, DenseVector_Float, UnsafeMutableRawPointer)](sparsesolve(_:_:_:_:)-2p6e3.md)
-  Solves the equation  for the vector of single-precision values , without any internal memory allocations.
+  Solves the equation *Subfactor * X = B* for the vector of single-precision values *X*, without any internal memory allocations.
 ### Complex subfactor-solving functions
 - [func SparseSolve(SparseOpaqueSubfactor_Complex_Double, DenseMatrix_Complex_Double)](sparsesolve(_:_:)-3x0vj.md)
   Solve the equation `Subfactor * X = B` for the matrix `X` of complex double values, in place.

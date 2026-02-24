@@ -24,6 +24,10 @@ object RestrictionsResponse.GlobalRestrictions.Intersection
 - [object RestrictionsResponse.GlobalRestrictions.Intersection.ANY restriction name](restrictionsresponse/globalrestrictions-data.dictionary/intersection-data.dictionary/any-restriction-name-data.dictionary.md)
   A dictionary that contains intersected restriction parameters.
 
+## Properties
+
+- `ANY restriction name` (RestrictionsResponse.GlobalRestrictions.Intersection.ANY restriction name): The intersected restriction parameters.
+
 ## See Also
 
 - [object RestrictionsResponse.GlobalRestrictions.RestrictedBool](restrictionsresponse/globalrestrictions-data.dictionary/restrictedbool-data.dictionary.md)

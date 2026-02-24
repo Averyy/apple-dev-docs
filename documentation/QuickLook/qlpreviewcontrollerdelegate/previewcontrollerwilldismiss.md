@@ -19,7 +19,7 @@ optional func previewControllerWillDismiss(_ controller: QLPreviewController)
 
 ## Parameters
 
-- `controller`: The   that’s about to close.
+- `controller`: The [`QLPreviewController`](qlpreviewcontroller.md) that’s about to close.
 
 ## See Also
 

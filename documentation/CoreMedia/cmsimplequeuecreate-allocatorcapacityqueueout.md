@@ -31,8 +31,8 @@ On return, the caller owns the returned `CMSimpleQueue`, and must release it whe
 ## Parameters
 
 - `allocator`: Allocator used to allocate storage for the queue.
-- `capacity`: Capacity of the queue (maximum number of elements holdable at any given time). Required (must not be  ). Must be a positive value.
-- `queueOut`: On output, a reference to the newly created queue. Must not be  .
+- `capacity`: Capacity of the queue (maximum number of elements holdable at any given time). Required (must not be `0`). Must be a positive value.
+- `queueOut`: On output, a reference to the newly created queue. Must not be `NULL`.
 
 
 ---

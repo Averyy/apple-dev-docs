@@ -10,6 +10,10 @@ The default value is `flowing`.
 
 ##### Wrap Modes
 
+- **`singleLine`**: Displays text in a single line.
+- **`hardBreaks`**: Breaks the text only at the text string’s line breaks.
+- **`flowing`**: Breaks the text as needed to fit within the bounding box.
+
 ##### Declaration
 
 ```other

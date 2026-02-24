@@ -22,7 +22,7 @@ You can use this enum case to get an entity’s relative transform in its parent
 let transformInWindowSpace = windowEntity.transformMatrix(relativeTo: .scene)
 ```
 
-> **Note**: If an entity is parented under an , calling `Entity/transformMatrix(relativeTo:)-70l1k` with the case `scene` returns `nil`.
+> **Note**: If an entity is parented under an **immersive space**, calling `Entity/transformMatrix(relativeTo:)-70l1k` with the case `scene` returns `nil`.
 
 
 ---

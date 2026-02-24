@@ -22,7 +22,7 @@ typealias CGFunctionReleaseInfoCallback = (UnsafeMutableRawPointer?) -> Void
 
 ## Parameters
 
-- `info`: The   parameter passed to  .
+- `info`: The `info` parameter passed to [`init(info:domainDimension:domain:rangeDimension:range:callbacks:)`](cgfunction/init(info:domaindimension:domain:rangedimension:range:callbacks:).md).
 
 ## See Also
 

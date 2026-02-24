@@ -20,7 +20,7 @@ init(_ value: CustomMaterial.AmbientOcclusion)
 
 ## Parameters
 
-- `value`: The ambient occlusion property from a  .
+- `value`: The ambient occlusion property from a `CustomMaterial`.
 
 ## See Also
 

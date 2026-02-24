@@ -26,7 +26,7 @@ A new CFUUID object. Ownership follows the [`The Create Rule`](https://developer
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new CFUUID object. Pass   or   to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new CFUUID object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
 
 ## See Also
 

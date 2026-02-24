@@ -20,8 +20,8 @@ init(pageID: AssignableDocument.Page.ID, boxes: [AssignableDocument.QuestionBox]
 ## Parameters
 
 - `pageID`: The page ID this question is for.
-- `boxes`: The question boxes associated with this   question. Treated as a set.
-- `maxScore`: An optional maximum score value   for this question.
+- `boxes`: The question boxes associated with this question. Treated as a set.
+- `maxScore`: An optional maximum score value for this question.
 
 
 ---

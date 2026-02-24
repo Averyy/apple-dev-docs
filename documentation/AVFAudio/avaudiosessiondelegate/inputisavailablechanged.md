@@ -17,7 +17,7 @@ optional func inputIsAvailableChanged(_ isInputAvailable: Bool)
 
 ## Parameters
 
-- `isInputAvailable`:   if audio input is now available, or   if it is not.
+- `isInputAvailable`: [`true`](https://developer.apple.com/documentation/Swift/true) if audio input is now available, or [`false`](https://developer.apple.com/documentation/Swift/false) if it is not.
 
 ## See Also
 

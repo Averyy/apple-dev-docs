@@ -24,9 +24,9 @@ If the `options` argument includes `kAbortSynchronous`, this method blocks all n
 
 ## Parameters
 
-- `options`: Options for how to abort the requests. For a list of possible values, see  .
-- `withError`: The error value to report for each request. Specify   for this parameter.
-- `forClient`: The service that initiated the requests. Specify a non   value for this parameter only for pipes associated with a control endpoint; specify   for other endpoint types. For a control endpoint, you can also specify   to abort all requests.
+- `options`: Options for how to abort the requests. For a list of possible values, see [`IOUSBAbortOptions`](iousbabortoptions.md).
+- `withError`: The error value to report for each request. Specify `kIOReturnAborted` for this parameter.
+- `forClient`: The service that initiated the requests. Specify a non `NULL` value for this parameter only for pipes associated with a control endpoint; specify `NULL` for other endpoint types. For a control endpoint, you can also specify `NULL` to abort all requests.
 
 ## See Also
 

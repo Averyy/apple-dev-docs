@@ -23,7 +23,7 @@ func CFSetRemoveValue(_ theSet: CFMutableSet!, _ value: UnsafeRawPointer!)
 ## Parameters
 
 - `theSet`: The set to modify.
-- `value`: The value to remove from  .
+- `value`: The value to remove from `theSet`.
 
 ## See Also
 

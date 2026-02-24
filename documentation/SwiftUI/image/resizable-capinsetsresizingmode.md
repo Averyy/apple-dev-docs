@@ -30,7 +30,7 @@ An image, with the new resizing behavior set.
 
 ## Parameters
 
-- `capInsets`: Inset values that indicate a portion of the image that   SwiftUI doesn’t resize.
+- `capInsets`: Inset values that indicate a portion of the image that SwiftUI doesn’t resize.
 - `resizingMode`: The mode by which SwiftUI resizes the image.
 
 

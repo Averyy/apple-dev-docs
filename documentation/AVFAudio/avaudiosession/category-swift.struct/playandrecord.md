@@ -21,7 +21,7 @@ static let playAndRecord: AVAudioSession.Category
 
 #### Discussion
 
-Your audio continues with the Silent switch set to silent and with the screen locked. (The switch is called the  on iPhone.) To continue playing audio when your app transitions to the background (for example, when the screen locks), add the `audio` value to the [`UIBackgroundModes`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/plist/info/UIBackgroundModes) key in your information property list file.
+Your audio continues with the Silent switch set to silent and with the screen locked. (The switch is called the *Ring/Silent switch* on iPhone.) To continue playing audio when your app transitions to the background (for example, when the screen locks), add the `audio` value to the [`UIBackgroundModes`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/plist/info/UIBackgroundModes) key in your information property list file.
 
 This category is appropriate for simultaneous recording and playback, and also for apps that record and play back, but not simultaneously.
 

@@ -30,7 +30,7 @@ This method retrieves only the keys and values from the specified domain. It doe
 
 ## Parameters
 
-- `domainName`: The name of the volatile domain. For example, specify the    identifier to retrieve the command-line settings.
+- `domainName`: The name of the volatile domain. For example, specify the [`argumentDomain`](userdefaults/argumentdomain.md) identifier to retrieve the command-line settings.
 
 ## See Also
 

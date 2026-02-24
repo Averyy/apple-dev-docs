@@ -26,8 +26,8 @@ Depending on the implementation of the equal callback specified when creating `t
 
 ## Parameters
 
-- `theBag`: The bag in which   is to be set.
-- `value`: The value to be set in the collection. If this value already exists in  , it is replaced. You may pass the value itself instead of a pointer to it if the value is pointer-size or less. If   is fixed-size and the value is beyond its capacity, the behavior is undefined.
+- `theBag`: The bag in which `value` is to be set.
+- `value`: The value to be set in the collection. If this value already exists in `theBag`, it is replaced. You may pass the value itself instead of a pointer to it if the value is pointer-size or less. If `theBag` is fixed-size and the value is beyond its capacity, the behavior is undefined.
 
 ## See Also
 

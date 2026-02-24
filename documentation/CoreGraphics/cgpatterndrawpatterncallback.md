@@ -30,7 +30,7 @@ To learn how to associate your drawing function with a Quartzpattern, see [`init
 
 ## Parameters
 
-- `info`: A generic pointer to private data associated with the pattern. This is the same pointer you supplied to  .
+- `info`: A generic pointer to private data associated with the pattern. This is the same pointer you supplied to [`init(info:bounds:matrix:xStep:yStep:tiling:isColored:callbacks:)`](cgpattern/init(info:bounds:matrix:xstep:ystep:tiling:iscolored:callbacks:).md).
 - `context`: The graphics context for drawing the pattern cell.
 
 ## See Also

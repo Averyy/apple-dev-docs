@@ -18,7 +18,7 @@ func sharingViewController(_ viewController: GKGameSessionSharingViewController,
 ## Parameters
 
 - `viewController`: The sharing view controller to be dismissed.
-- `error`: An optional GameKit error. This parameter is   if the sharing view controller is successfully dismissed.
+- `error`: An optional GameKit error. This parameter is `nil` if the sharing view controller is successfully dismissed.
 
 
 ---

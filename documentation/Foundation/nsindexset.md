@@ -24,7 +24,7 @@ class NSIndexSet
 
 In Swift, this type bridges to [`IndexSet`](indexset.md); use [`NSIndexSet`](nsindexset.md) when you need reference semantics or other Foundation-specific behavior.
 
-The `NSIndexSet` class represents an immutable collection of unique unsigned integers, known as  because of the way they are used. This collection is referred to as an . Indexes must be in the range `0 .. NSNotFound - 1`.
+The `NSIndexSet` class represents an immutable collection of unique unsigned integers, known as **indexes** because of the way they are used. This collection is referred to as an **index set**. Indexes must be in the range `0 .. NSNotFound - 1`.
 
 You use index sets in your code to store indexes into some other data structure. For example, given an `NSArray` object, you could use an index set to identify a subset of objects in that array.
 
@@ -105,7 +105,7 @@ The mutable subclass of `NSIndexSet` is [`NSMutableIndexSet`](nsmutableindexset.
 - [func enumerate(in: NSRange, options: NSEnumerationOptions, using: (Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsindexset/enumerate(in:options:using:).md)
   Executes a given Block using the indexes in the specified range, using the specified enumeration options.
 - [func makeIterator() -> NSIndexSetIterator](nsindexset/makeiterator.md)
-  Returns an  over the elements of this .
+  Returns an *iterator* over the elements of this *sequence*.
 - [struct NSIndexSetIterator](nsindexsetiterator.md)
   An iterator suitable for enumerating the elements of an index set.
 ### Default Implementations

@@ -30,7 +30,7 @@ Calling this method is equivalent to passing a [`Date.ISO8601FormatStyle`](date/
 
 ## Parameters
 
-- `style`: A customized   to apply. By default, the method applies an unmodified ISO 8601 format style.
+- `style`: A customized [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md) to apply. By default, the method applies an unmodified ISO 8601 format style.
 
 ## See Also
 

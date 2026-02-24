@@ -9,6 +9,10 @@ A Boolean value that indicates whether your app supports displaying navigation c
 - iOS 15.4+
 - iPadOS 15.4+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 To declare support for displaying navigation content in the CarPlay Instruments Cluster, add this key and set its value to YES. You specify the scene configurations using the [`CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md) key.

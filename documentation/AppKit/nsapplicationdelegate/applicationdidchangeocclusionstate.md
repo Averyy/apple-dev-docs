@@ -21,7 +21,7 @@ Upon receiving this method, you can query the application for its occlusion stat
 
 ## Parameters
 
-- `notification`: A notification named  . Calling the   method of this notification returns the   object itself.
+- `notification`: A notification named [`didChangeOcclusionStateNotification`](nsapplication/didchangeocclusionstatenotification.md). Calling the [`object`](https://developer.apple.com/documentation/Foundation/NSNotification/object) method of this notification returns the `NSApplication` object itself.
 
 
 ---

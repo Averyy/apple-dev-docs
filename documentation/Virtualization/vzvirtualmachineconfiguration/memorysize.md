@@ -16,7 +16,7 @@ var memorySize: UInt64 { get set }
 
 #### Discussion
 
-The value in this property represents the  available to the guest operating system. This physical memory doesn’t necessarily map to the physical memory of the host computer. Instead, it’s a contiguous block of virtual memory that the host system reserves, but doesn’t allocate immediately, for the guest system. The guest operating system treats this memory as its physical memory and allocates pages from it as needed.
+The value in this property represents the *physical memory* available to the guest operating system. This physical memory doesn’t necessarily map to the physical memory of the host computer. Instead, it’s a contiguous block of virtual memory that the host system reserves, but doesn’t allocate immediately, for the guest system. The guest operating system treats this memory as its physical memory and allocates pages from it as needed.
 
 The value of this property must be a multiple of 1 MB. The value must also be greater than or equal to the value in [`minimumAllowedMemorySize`](vzvirtualmachineconfiguration/minimumallowedmemorysize.md), and less than or equal to the value in [`maximumAllowedMemorySize`](vzvirtualmachineconfiguration/maximumallowedmemorysize.md).
 

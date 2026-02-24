@@ -29,6 +29,8 @@ This method applies the saliency map filter to an image. The effect generates a 
 
 The saliency map filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that produces an image that’s easier for computers to analyze:
 
 ```swift

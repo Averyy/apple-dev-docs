@@ -27,7 +27,7 @@ For curve operations, the order of the points is controlPoint1 (`points`[0]), co
 ## Parameters
 
 - `index`: The index of the desired path element.
-- `points`: On input, a C-style array containing up to three   data types, or   if you do not want the points. On output, the data points associated with the specified path element.
+- `points`: On input, a C-style array containing up to three `NSPoint` data types, or `NULL` if you do not want the points. On output, the data points associated with the specified path element.
 
 ## See Also
 

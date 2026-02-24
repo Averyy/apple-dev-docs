@@ -30,7 +30,7 @@ If the callback function returns an error, iteration will stop immediately and t
 
 ## Parameters
 
-- `queue`:   that may contain multiple buffers.
+- `queue`: `CMBufferQueue` that may contain multiple buffers.
 - `callback`: Function to be called for each buffer. The callback may modify buffer attachments but should not modify sort-affecting properties (eg, timestamps). The callback should not make other calls to the buffer queue.
 - `refcon`: Reference constant supplied to the callback function.
 

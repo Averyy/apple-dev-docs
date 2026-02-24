@@ -26,7 +26,7 @@ class UNNotificationCategory
 
 #### Overview
 
-A [`UNNotificationCategory`](unnotificationcategory.md) object defines a type of notification that your executable can receive. You create category objects to define your app’s  — notifications that have action buttons the user can select in response to the notification. Each category object you create stores the actions and other behaviors associated with a specific type of notification. Register your category objects using the [`setNotificationCategories(_:)`](unusernotificationcenter/setnotificationcategories(_:).md) method of [`UNUserNotificationCenter`](unusernotificationcenter.md). You can register as many category objects as you need.
+A [`UNNotificationCategory`](unnotificationcategory.md) object defines a type of notification that your executable can receive. You create category objects to define your app’s *actionable notifications* — notifications that have action buttons the user can select in response to the notification. Each category object you create stores the actions and other behaviors associated with a specific type of notification. Register your category objects using the [`setNotificationCategories(_:)`](unusernotificationcenter/setnotificationcategories(_:).md) method of [`UNUserNotificationCenter`](unusernotificationcenter.md). You can register as many category objects as you need.
 
 > **Note**:  When someone performs a Double Tap gesture while viewing a notification on Apple Watch Series 9 or Apple Watch Ultra 2, the system invokes the first nondestructive action. A nondestructive action doesn’t include the [`destructive`](unnotificationactionoptions/destructive.md) option, and won’t delete user data or change the app irrevocably.
 

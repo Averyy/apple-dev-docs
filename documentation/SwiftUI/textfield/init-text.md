@@ -23,7 +23,7 @@ init(_ titleKey: LocalizedStringKey, text: Binding<String>)
 
 ## Parameters
 
-- `titleKey`: The key for the localized title of the text field,   describing its purpose.
+- `titleKey`: The key for the localized title of the text field, describing its purpose.
 - `text`: The text to display and edit.
 
 ## See Also

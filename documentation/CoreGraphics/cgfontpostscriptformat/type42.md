@@ -22,7 +22,7 @@ case type42
 
 #### Description
 
-This is documented in , which is available from [`http://partners.adobe.com/`](https://developer.apple.comhttp://partners.adobe.com/).
+This is documented in *Adobe Technical Note 5012, The Type 42 Font Format Specification*, which is available from [`http://partners.adobe.com/`](https://developer.apple.comhttp://partners.adobe.com/).
 
 ## See Also
 

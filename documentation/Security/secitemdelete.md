@@ -44,9 +44,34 @@ By default, this function deletes all items matching the specified query. You ca
 
 `SecItemDelete` blocks the calling thread, so it can cause your app’s UI to hang if called from the main thread. Instead, call `SecItemDelete` from a background dispatch queue or `async` function:
 
+**Swift**:
+
+```swift
+private func deleteKeychainItem(searchAttributes attrs: CFDictionary, _ completion: @escaping (OSStatus) -> Void) {
+    queue.async {
+        let result = SecItemDelete(attrs)
+        completion(result)
+    }
+}
+```
+
+**Objective-C**:
+
+```objc
+- (void)deleteKeychainItemWithAttributes:(CFDictionaryRef)attrs completion:(void(^)(OSStatus status))completion {
+    dispatch_async(backgroundQueue, ^{
+        OSStatus deleteResult = SecItemDelete(attrs);
+        completion(deleteResult);
+    });
+}
+
+```
+
 ## Parameters
 
-- `query`: A dictionary that describes the search for the keychain items you want to delete. A typical   dictionary consists of:
+- `query`: A dictionary that describes the search for the keychain items you want to delete. A typical `query` dictionary consists of: - **The item’s class.** Specify the kind of item you want, for example a password, a certificate, or a cryptographic key, using one of the class values in [`Item class keys and values`](item-class-keys-and-values.md).
+- **Attributes.** Narrow the search by indicating the attributes that the found item or items should have. The more attributes you specify, the more refined the results, but not all attributes apply to all item classes. For the attributes applicable to the keychain item you’re deleting, see the entry for the item’s class in [`Item class values`](item-class-keys-and-values#Item-class-values.md).
+- **Search parameters.** Condition the search in a variety of ways. For example, you can limit the results to a specific number of items, control case sensitivity when matching string attributes, or search only among a particular set of items. See [`Search attribute keys and values`](search-attribute-keys-and-values.md) for the complete list of possible search parameters.
 
 
 ---

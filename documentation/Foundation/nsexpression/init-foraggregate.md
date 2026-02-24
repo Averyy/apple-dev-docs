@@ -26,7 +26,7 @@ A new expression that contains the expressions in `collection`.
 
 ## Parameters
 
-- `subexpressions`: A collection object (an instance of  ,  , or  ) that contains further expressions.
+- `subexpressions`: A collection object (an instance of `NSArray`, `NSSet`, or `NSDictionary`) that contains further expressions.
 
 ## See Also
 

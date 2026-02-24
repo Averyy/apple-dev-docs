@@ -26,7 +26,7 @@ You can use this method in conjunction with [`remove(from:forMode:)`](netservice
 ## Parameters
 
 - `aRunLoop`: The run loop to which to add the receiver.
-- `mode`: The run loop mode to which to add the receiver. Possible values for   are discussed in the “Constants” section of  .
+- `mode`: The run loop mode to which to add the receiver. Possible values for `mode` are discussed in the “Constants” section of [`RunLoop`](runloop.md).
 
 ## See Also
 

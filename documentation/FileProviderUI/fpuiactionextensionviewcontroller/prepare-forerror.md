@@ -24,7 +24,7 @@ While your file provider is enumerating its content, the system calls this metho
 
 ## Parameters
 
-- `error`: An object representing the authentication error. Your File Provider extension can pass additional information in the error’s   property.
+- `error`: An object representing the authentication error. Your File Provider extension can pass additional information in the error’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) property.
 
 ## See Also
 

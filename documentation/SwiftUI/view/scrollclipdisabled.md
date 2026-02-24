@@ -52,6 +52,14 @@ struct ContentView: View {
 
 The scroll view in the above example clips when the content view’s `disabled` input is `false`, as it does if you omit the modifier, but not when the input is `true`:
 
+**True**:
+
+![A horizontal row of uniformly sized, evenly spaced, vertically aligned squares inside a bounding box that’s about twice the height of the squares, and almost four times the width. From left to right, three squares appear in full, while only the first quarter of a fourth square appears at the far right. All the squares have shadows that fade away before reaching the top or the bottom of the bounding box.](https://docs-assets.developer.apple.com/published/23cda091f3e746fa9686504edf6a628d/View-scrollClipDisabled-1-iOS%402x.png)
+
+**False**:
+
+![A horizontal row of uniformly sized, evenly spaced, vertically aligned squares inside a bounding box that’s about twice the height of the squares, and almost four times the width. From left to right, three squares appear in full, while only the first quarter of a fourth square appears at the far right. All the squares have shadows that are visible in between squares, but clipped at the top and bottom of the squares.](https://docs-assets.developer.apple.com/published/baa7d5ffc1c8089b1fe13b41d7207c6e/View-scrollClipDisabled-2-iOS%402x.png)
+
 While you might want to avoid clipping parts of views that exceed the bounds of the scroll view, like the shadows in the above example, you typically still want the scroll view to clip at some point. Create custom clipping by using the [`clipShape(_:style:)`](view/clipshape(_:style:).md) modifier to add a different clip shape. The following code disables the default clipping and then adds rectangular clipping that exceeds the bounds of the scroll view by the default padding amount:
 
 ```swift
@@ -65,7 +73,7 @@ ScrollView(.horizontal) {
 
 ## Parameters
 
-- `disabled`: A Boolean value that specifies whether to disable   scroll view clipping.
+- `disabled`: A Boolean value that specifies whether to disable scroll view clipping.
 
 ## See Also
 

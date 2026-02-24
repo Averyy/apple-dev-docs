@@ -26,9 +26,9 @@ A new number formatter, localized to the given locale, which will format numbers
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or   to use the current default allocator.
-- `locale`: A locale to use for localization. If  , the function uses the default system locale. Use   to specify the locale of the current user.
-- `style`: A number style. See   for possible values.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `locale`: A locale to use for localization. If `NULL`, the function uses the default system locale. Use [`CFLocaleCopyCurrent()`](cflocalecopycurrent().md) to specify the locale of the current user.
+- `style`: A number style. See [`Number Formatter Styles`](number-formatter-styles.md) for possible values.
 
 
 ---

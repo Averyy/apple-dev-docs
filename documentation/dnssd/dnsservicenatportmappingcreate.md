@@ -45,7 +45,7 @@ NOTE: There are two unusual aspects of how the DNSServiceNATPortMappingCreate AP
 
 ## Parameters
 
-- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns  , and the nat port mapping will last indefinitely until the client terminates the port mapping request by passing this DNSServiceRef to  .
+- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md), and the nat port mapping will last indefinitely until the client terminates the port mapping request by passing this DNSServiceRef to [`DNSServiceRefDeallocate(_:)`](dnsservicerefdeallocate(_:).md).
 - `flags`: Currently ignored, reserved for future use.
 - `interfaceIndex`: The interface on which to create port mappings in a NAT gateway. Passing 0 causes the port mapping request to be sent on the primary interface.
 - `protocol`: To request a port mapping, pass in kDNSServiceProtocol_UDP, or kDNSServiceProtocol_TCP, or (kDNSServiceProtocol_UDP | kDNSServiceProtocol_TCP) to map both. The local listening port number must also be specified in the internalPort parameter. To just discover the NAT gateway’s external IP address, pass zero for protocol, internalPort, externalPort and ttl.

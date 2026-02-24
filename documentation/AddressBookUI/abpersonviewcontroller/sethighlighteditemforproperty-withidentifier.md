@@ -19,7 +19,7 @@ func setHighlightedItemForProperty(_ property: ABPropertyID, withIdentifier iden
 ## Parameters
 
 - `property`: The property to highlight.
-- `identifier`: When   is a multi-value property, the value to highlight.
+- `identifier`: When `property` is a multi-value property, the value to highlight.
 
 ## See Also
 

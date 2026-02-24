@@ -34,9 +34,9 @@ Use these keys with calls to the [`SecPolicyCopyProperties(_:)`](secpolicycopypr
 - [let kSecPolicyKU_CRLSign: CFString](ksecpolicyku_crlsign.md)
   If true, the certificate’s key usage must allow it to be used for signing certificate revocation lists (CRLs).
 - [let kSecPolicyKU_EncipherOnly: CFString](ksecpolicyku_encipheronly.md)
-  If true, the certificate’s key usage must allow it to be used  for encryption.
+  If true, the certificate’s key usage must allow it to be used *only* for encryption.
 - [let kSecPolicyKU_DecipherOnly: CFString](ksecpolicyku_decipheronly.md)
-  If true, the certificate’s key usage must allow it to be used  for decryption.
+  If true, the certificate’s key usage must allow it to be used *only* for decryption.
 
 
 ---

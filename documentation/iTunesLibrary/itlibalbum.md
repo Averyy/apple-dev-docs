@@ -17,11 +17,11 @@ class ITLibAlbum
 
 #### Overview
 
-A  is a track that iTunes associates with an album. See [`ITLibMediaItem`](itlibmediaitem.md).
+A *media item* is a track that iTunes associates with an album. See [`ITLibMediaItem`](itlibmediaitem.md).
 
-A  is an album with tracks from more than one source.
+A *compilation* is an album with tracks from more than one source.
 
-If an album is part of a , [`discNumber`](itlibalbum/discnumber.md) is the index of the album in the set.
+If an album is part of a *multiple-disc set*, [`discNumber`](itlibalbum/discnumber.md) is the index of the album in the set.
 
 To retrieve an [`ITLibAlbum`](itlibalbum.md) instance, use the [`album`](itlibmediaitem/album.md) property of [`ITLibMediaItem`](itlibmediaitem.md).
 

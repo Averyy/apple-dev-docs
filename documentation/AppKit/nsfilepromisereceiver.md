@@ -18,7 +18,37 @@ class NSFilePromiseReceiver
 
 Because [`NSFilePromiseReceiver`](nsfilepromisereceiver.md) implements the [`NSPasteboardReading`](nspasteboardreading.md) protocol, you receive all file promises on the drag pasteboard as follows:
 
+**Swift**:
+
+```swift
+let filePromises = draggingPasteboard.readObjects(forClasses: [NSFilePromiseReceiver.self], options: nil)
+```
+
+**Objective-C**:
+
+```objc
+NSArray<NSFilePromiseReceiver*> filePromises = [draggingPasteboard readObjectsForClasses:@[[NSFilePromiseReceiver class]] options:nil];
+```
+
 Likewise, you can enumerate dragged items by calling the following:
+
+**Swift**:
+
+```swift
+draggingInfo.enumerateDraggingItems(options: [], for: view, classes: [NSFilePromiseReceiver.self], searchOptions: [:], using: {(draggingItem, idx, stop) in
+    let filePromiseReceiver = draggingItem.item
+    // Use filePromiseReceiver here for your task.
+}
+```
+
+**Objective-C**:
+
+```objc
+[draggingInfo enumerateDraggingItemsWithOptions:0 forView:view classes:@[[NSFilePromiseReceiver class]] searchOptions:@{} usingBlock:^(NSDraggingItem* draggingItem, NSInteger idx, BOOL* stop) {
+    NSFilePromiseReceiver* filePromiseReceiver = draggingItem.item
+    // Use filePromiseReceiver here for your task.
+}];
+```
 
 > **Note**:  A non-item-based drag source may promise multiple files on the same pasteboard item. To be compatible with these drag sources, many [`NSFilePromiseReceiver`](nsfilepromisereceiver.md) methods return an array of values. Multiple-file item-based promises result in one [`NSFilePromiseReceiver`](nsfilepromisereceiver.md) per promised file.
 

@@ -20,8 +20,8 @@ Call this method when you want the layout object to recompute attributes for one
 
 ## Parameters
 
-- `elementKind`: A string that identifies the type of the decoration views. This parameter must not be   or an empty string.
-- `indexPaths`: A set of   objects. Each index path contains the section in which the decoration view appears.
+- `elementKind`: A string that identifies the type of the decoration views. This parameter must not be `nil` or an empty string.
+- `indexPaths`: A set of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects. Each index path contains the section in which the decoration view appears.
 
 ## See Also
 

@@ -33,7 +33,7 @@ In order to use messages on top of a bytestream protocol, add [`WebSocket Option
 ## Parameters
 
 - `connection`: A network connection instance.
-- `completion`: The completion delivers the received content, which may be nil if the message is complete or an error occurred, the message context, a flag indicating if the message is complete, and any associated error.
+- `completion`: A receive completion is invoked exactly once for a call to receive. The completion indicates that the requested content has been received (in which case the content is delivered), or else an error has occurred. The completion delivers the received content, which may be nil if the message is complete or an error occurred, the message context, a flag indicating if the message is complete, and any associated error.
 
 ## See Also
 

@@ -18,6 +18,64 @@ class NSLayoutAnchor<AnchorType> where AnchorType : AnyObject
 
 Use these constraints to programatically define your layout using Auto Layout. Instead of creating [`NSLayoutConstraint`](nslayoutconstraint.md) objects directly, start with an [`NSView`](nsview.md) or [`NSLayoutGuide`](nslayoutguide.md) object you wish to constrain, and select one of that object’s anchor properties. These properties correspond to the main [`NSLayoutConstraint.Attribute`](nslayoutconstraint/attribute.md) values used in Auto Layout, and provide an appropriate [`NSLayoutAnchor`](nslayoutanchor.md) subclass for creating constraints to that attribute. Use the anchor’s methods to construct your constraint.
 
+**Swift**:
+
+```swift
+// Creating constraints using NSLayoutConstraint
+NSLayoutConstraint(item: subview,
+                   attribute: .leading,
+                   relatedBy: .equal,
+                   toItem: view,
+                   attribute: .leadingMargin,
+                   multiplier: 1.0,
+                   constant: 0.0).isActive = true
+
+NSLayoutConstraint(item: subview,
+                   attribute: .trailing,
+                   relatedBy: .equal,
+                   toItem: view,
+                   attribute: .trailingMargin,
+                   multiplier: 1.0,
+                   constant: 0.0).isActive = true
+
+
+// Creating the same constraints using Layout Anchors
+let margins = view.layoutMarginsGuide
+
+subview.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
+subview.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
+
+```
+
+**Objective-C**:
+
+```objc
+// Creating constraints using NSLayoutConstraint
+[NSLayoutConstraint
+ constraintWithItem:subview
+ attribute:NSLayoutAttributeLeading
+ relatedBy:NSLayoutRelationEqual
+ toItem:self.view
+ attribute:NSLayoutAttributeLeadingMargin
+ multiplier:1.0
+ constant:0.0].active = YES;
+ 
+[NSLayoutConstraint
+ constraintWithItem:subview
+ attribute:NSLayoutAttributeTrailing
+ relatedBy:NSLayoutRelationEqual
+ toItem:self.view
+ attribute:NSLayoutAttributeTrailingMargin
+ multiplier:1.0
+ constant:0.0].active = YES;
+ 
+// Creating the same constraints using Layout Anchors
+NSLayoutGuide *margin = self.view.layoutMarginsGuide;
+ 
+[subview.leadingAnchor constraintEqualToAnchor:margin.leadingAnchor].active = YES;
+[subview.trailingAnchor constraintEqualToAnchor:margin.trailingAnchor].active = YES;
+```
+
 As you can see from these examples, the [`NSLayoutAnchor`](nslayoutanchor.md) class provides several advantages over using the [`NSLayoutConstraint`](nslayoutconstraint.md) API directly.
 
 - The code is cleaner, more concise, and easier to read.

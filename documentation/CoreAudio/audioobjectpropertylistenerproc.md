@@ -27,8 +27,8 @@ Listeners will be called when possibly many properties have changed. Consequentl
 
 - `inObjectID`: The AudioObject whose properties have changed.
 - `inNumberAddresses`: The number of elements in the inAddresses array.
-- `inAddresses`: An array of AudioObjectPropertyAddresses indicating which properties   changed.
-- `inClientData`: A pointer to client data established when the listener proc was registered   with the AudioObject.
+- `inAddresses`: An array of AudioObjectPropertyAddresses indicating which properties changed.
+- `inClientData`: A pointer to client data established when the listener proc was registered with the AudioObject.
 
 ## See Also
 

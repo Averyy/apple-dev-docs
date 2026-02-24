@@ -22,8 +22,8 @@ init(scope: CKSyncEngine.SendChangesOptions.Scope = .all, operationGroup: CKOper
 
 ## Parameters
 
-- `scope`: The scope of the changes to send. Defaults to  .
-- `operationGroup`: The operation group to use for the underlying CloudKit operations. If  , a default operation group will be created.
+- `scope`: The scope of the changes to send. Defaults to [`CKSyncEngine.SendChangesOptions.Scope.all`](cksyncengine-5sie5/sendchangesoptions/scope-swift.enum/all.md).
+- `operationGroup`: The operation group to use for the underlying CloudKit operations. If `nil`, a default operation group will be created.
 
 
 ---

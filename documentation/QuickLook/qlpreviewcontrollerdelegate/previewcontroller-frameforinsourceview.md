@@ -49,9 +49,9 @@ To produce a full-screen fade animation rather than a zoom, return a value of [`
 
 ## Parameters
 
-- `controller`: The   that’s requesting the frame for the preview item.
+- `controller`: The [`QLPreviewController`](qlpreviewcontroller.md) that’s requesting the frame for the preview item.
 - `item`: The item to preview or dismiss.
-- `view`: Provide   in this parameter to indicate that you’re specifying the   origin point in screen coordinates.
+- `view`: The [`UIView`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/iPhone/RN-iPhoneSDK/index.html#//apple_ref/doc/uid/TP40007428-CH1-SW18) object that contains the preview item as you display it in your app. By providing a view object to the `view` parameter, you indicate to the [`QLPreviewController`](qlpreviewcontroller.md) that you’re specifying the returned [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) object’s origin point relative to that view. Provide `nil` in this parameter to indicate that you’re specifying the [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) origin point in screen coordinates.
 
 ## See Also
 

@@ -27,8 +27,8 @@ The delegate must implement this method.
 ## Parameters
 
 - `editor`: The rule editor that sent the message.
-- `index`: The index of the requested child criterion. This value must be in the range from   up to (but not including) the number of children, as reported by the delegate in  .
-- `criterion`: The parent of the requested child, or   if the rule editor is requesting a root criterion.
+- `index`: The index of the requested child criterion. This value must be in the range from `0` up to (but not including) the number of children, as reported by the delegate in [`ruleEditor(_:numberOfChildrenForCriterion:with:)`](nsruleeditordelegate/ruleeditor(_:numberofchildrenforcriterion:with:).md).
+- `criterion`: The parent of the requested child, or `nil` if the rule editor is requesting a root criterion.
 - `rowType`: The type of the row.
 
 ## See Also

@@ -23,7 +23,7 @@ func chartForegroundStyleScale<Domain>(domain: Domain, type: ScaleType? = nil) -
 
 ## Parameters
 
-- `domain`: The possible data values plotted as foreground style   in the chart. You can define the domain with a   for number   or   values (e.g.,  ), and with an array for categorical   values (e.g.,  )
+- `domain`: The possible data values plotted as foreground style in the chart. You can define the domain with a `ClosedRange` for number or `Date` values (e.g., `0 ... 500`), and with an array for categorical values (e.g., `["A", "B", "C"]`)
 - `type`: The scale type.
 
 ## See Also

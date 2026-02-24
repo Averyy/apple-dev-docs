@@ -24,7 +24,7 @@ func CFBundleGetDataPointersForNames(_ bundle: CFBundle!, _ symbolNames: CFArray
 
 - `bundle`: The bundle to examine.
 - `symbolNames`: A CFArray object containing CFString objects representing the symbol names to search for.
-- `stbl`: A C array into which this function stores the data pointers for the symbols specified in  . The array contains   for any names in   that cannot be found.
+- `stbl`: A C array into which this function stores the data pointers for the symbols specified in `symbolNames`. The array contains `NULL` for any names in `symbolNames` that cannot be found.
 
 ## See Also
 

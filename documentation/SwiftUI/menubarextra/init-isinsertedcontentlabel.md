@@ -16,9 +16,9 @@ init(isInserted: Binding<Bool>, @ViewBuilder content: () -> Content, @ViewBuilde
 
 ## Parameters
 
-- `isInserted`: Whether the item is inserted in the menu bar.   The item may or may not be visible, depending on the number of items   present.
-- `content`: A   to display when the user selects the item.
-- `label`: A   to use as the label in the system menu bar.
+- `isInserted`: Whether the item is inserted in the menu bar. The item may or may not be visible, depending on the number of items present.
+- `content`: A `View` to display when the user selects the item.
+- `label`: A `View` to use as the label in the system menu bar.
 
 ## See Also
 

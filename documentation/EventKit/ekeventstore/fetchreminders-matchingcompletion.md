@@ -35,8 +35,8 @@ This method fetches reminders asynchronously.
 
 ## Parameters
 
-- `predicate`: A search predicate created with  .
-- `completion`: A closure that receives the reminders that match  .
+- `predicate`: A search predicate created with [`predicateForReminders(in:)`](ekeventstore/predicateforreminders(in:).md).
+- `completion`: A closure that receives the reminders that match `predicate`.
 
 ## See Also
 

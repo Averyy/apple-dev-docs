@@ -28,7 +28,7 @@ An initialized [`UIProgressView`](uiprogressview.md) object.
 
 ## Parameters
 
-- `style`: A constant that specifies the style of the object to be created. See   for descriptions of the style constants.
+- `style`: A constant that specifies the style of the object to be created. See [`UIProgressView.Style`](uiprogressview/style.md) for descriptions of the style constants.
 
 ## See Also
 

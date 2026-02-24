@@ -26,7 +26,7 @@ It’s important that the `id` of a data element doesn’t change, unless SwiftU
 
 ## Parameters
 
-- `data`: The data that the   instance uses to create mark items   dynamically.
+- `data`: The data that the [`ForEach`](foreach.md) instance uses to create mark items dynamically.
 - `id`: The key path to the provided data’s identifier.
 - `content`: The builder that creates ticks dynamically.
 

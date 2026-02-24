@@ -30,7 +30,7 @@ A Boolean indicating whether the trigger condition is True.
 
 ## Parameters
 
-- `queue`:   on which the trigger is tested.
+- `queue`: `CMBufferQueue` on which the trigger is tested.
 - `triggerToken`: Trigger to test.
 
 ## See Also

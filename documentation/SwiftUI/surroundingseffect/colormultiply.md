@@ -21,7 +21,7 @@ Use this with the [`preferredSurroundingsEffect(_:)`](view/preferredsurroundings
 
 ## Parameters
 
-- `color`: The color to bias the passthrough toward. The opacity of the   color is ignored. Use the extended color space to brighten the   passthrough.
+- `color`: The color to bias the passthrough toward. The opacity of the color is ignored. Use the extended color space to brighten the passthrough.
 
 
 ---

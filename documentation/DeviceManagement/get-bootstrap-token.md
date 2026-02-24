@@ -38,6 +38,10 @@ Requires a device enrolled using Automated Device Enrollment.
 - [object GetBootstrapTokenResponse](getbootstraptokenresponse.md)
   The get bootstrap token response details.
 
+## Endpoint
+
+`PUT https://yourmdmhost.example.com/checkin`
+
 ## Request Body
 
 The request object the system sends for the `GetBootstrapToken` request.

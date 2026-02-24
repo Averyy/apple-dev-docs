@@ -29,13 +29,13 @@ Computes `A←αX*conjg(X') + βA`.
 ## Parameters
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
-- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are   or  .
-- `N`: The order of matrix  .
-- `ALPHA`: The scaling factor for vector  .
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
-- `A`: Matrix  .
-- `LDA`: Leading dimension of matrix  .
+- `UPLO`: Specifies whether to use the upper or lower triangle from the matrix. Valid values are `'U'` or `'L'`.
+- `N`: The order of matrix `A`.
+- `ALPHA`: The scaling factor for vector `X`.
+- `X`: Vector `X`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
+- `A`: Matrix `A`.
+- `LDA`: Leading dimension of matrix `A`.
 
 ## See Also
 

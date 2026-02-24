@@ -42,10 +42,10 @@ This table lists the presets and their configurations:
 | Preset | [`SpeechTranscriber.ReportingOption.volatileResults`](speechtranscriber/reportingoption/volatileresults.md) | [`SpeechTranscriber.ReportingOption.fastResults`](speechtranscriber/reportingoption/fastresults.md) | [`SpeechTranscriber.ReportingOption.alternativeTranscriptions`](speechtranscriber/reportingoption/alternativetranscriptions.md) | [`SpeechTranscriber.ResultAttributeOption.audioTimeRange`](speechtranscriber/resultattributeoption/audiotimerange.md) |
 | --- | --- | --- | --- | --- |
 | `transcription` | No | No | No | No |
-| `transcriptionWithAlternatives` | No | No |  | No |
-| `timeIndexedTranscriptionWithAlternatives` | No | No |  |  |
-| `progressiveTranscription` |  |  | No | No |
-| `timeIndexedProgressiveTranscription` |  |  | No |  |
+| `transcriptionWithAlternatives` | No | No | **Yes** | No |
+| `timeIndexedTranscriptionWithAlternatives` | No | No | **Yes** | **Yes** |
+| `progressiveTranscription` | **Yes** | **Yes** | No | No |
+| `timeIndexedProgressiveTranscription` | **Yes** | **Yes** | No | **Yes** |
 
 ## Topics
 

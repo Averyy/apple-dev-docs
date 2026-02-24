@@ -47,7 +47,7 @@ Implement the capabilities you need using the types of the [`Network Extension`]
 
 #### Advertise a Device Using Bonjour
 
-Bonjour is Apple’s implementation of , a process that simplifies device setup and interactions on a local network. With Bonjour, apps can browse for devices on the network without knowing specific network addresses. Bonjour provides a list of available devices that support the requested capability. For example, the system printing panel looks for printers on the local network and presents them as relevant targets for a print job.
+Bonjour is Apple’s implementation of *zero-configuration networking*, a process that simplifies device setup and interactions on a local network. With Bonjour, apps can browse for devices on the network without knowing specific network addresses. Bonjour provides a list of available devices that support the requested capability. For example, the system printing panel looks for printers on the local network and presents them as relevant targets for a print job.
 
 To make your app’s custom capabilities available on the network, use the [`Network`](https://developer.apple.com/documentation/Network) framework to advertise them using Bonjour. Specifically, configure a [`NWListener`](https://developer.apple.com/documentation/Network/NWListener) to handle incoming requests from other devices. To place a request to your capability, clients configure an [`NWConnection`](https://developer.apple.com/documentation/Network/NWConnection) object with the specific [`NWEndpoint`](https://developer.apple.com/documentation/Network/NWEndpoint) you advertise using Bonjour.
 

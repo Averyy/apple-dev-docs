@@ -21,7 +21,7 @@ The created `NSGlyphInfo` object or `nil` if the object couldn’t be created.
 ## Parameters
 
 - `glyph`: The identifier of the glyph.
-- `font`: The font object to be associated with the returned   object,
+- `font`: The font object to be associated with the returned `NSGlyphInfo` object,
 - `string`: The part of the attributed string the returned instance is intended to override.
 
 ## See Also

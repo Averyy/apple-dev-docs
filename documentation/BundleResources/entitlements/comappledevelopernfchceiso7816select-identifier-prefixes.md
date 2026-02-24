@@ -9,6 +9,10 @@ An array of identifier strings the app handles with the card session API.
 - iOS 17.4+
 - iPadOS 17.4+
 
+
+
+**Type**: string 
+
 #### Discussion
 
 Set this value to include identifier strings for which the app handles ISO7816 `SELECT` requests. You can use a mix of the following identifier types:

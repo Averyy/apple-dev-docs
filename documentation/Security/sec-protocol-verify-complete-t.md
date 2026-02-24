@@ -24,7 +24,7 @@ Block to be invoked when verification is complete.
 
 ## Parameters
 
-- `result`: A   indicating if verification succeeded or failed.
+- `result`: A `bool` indicating if verification succeeded or failed.
 
 
 ---

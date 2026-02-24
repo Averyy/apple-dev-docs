@@ -22,9 +22,9 @@ When specifying the location of a character in your context object, provide a lo
 
 ## Parameters
 
-- `writingToolsCoordinator`: The coordinator object requesting   information from your custom view.
-- `point`: A point in your view’s coordinate space. Find the   location of the text under this point, if any.
-- `completion`: A handler to execute with the required information.   This handler has no return value and takes an    and    as parameters. Set the range to the character’s location in one of your    objects, which you specify using   the   parameter.   You must call this handler at some point during your method’s implementation.
+- `writingToolsCoordinator`: The coordinator object requesting information from your custom view.
+- `point`: A point in your view’s coordinate space. Find the location of the text under this point, if any.
+- `completion`: A handler to execute with the required information. This handler has no return value and takes an [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange-c.struct) and [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) as parameters. Set the range to the character’s location in one of your [`NSWritingToolsCoordinator.Context`](nswritingtoolscoordinator/context.md) objects, which you specify using the [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) parameter. You must call this handler at some point during your method’s implementation.
 
 ## See Also
 

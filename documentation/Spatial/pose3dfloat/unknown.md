@@ -1,9 +1,9 @@
-# ==(_:_:)
+# *=(_:_:)
 
 **Framework**: Spatial  
 **Kind**: op
 
-Returns a Boolean value that indicates whether two poses are equal.
+Calculates the concatenation of poses and stores the result in the left-hand-side variable.
 
 **Availability**:
 - iOS 26.0+
@@ -17,15 +17,15 @@ Returns a Boolean value that indicates whether two poses are equal.
 ## Declaration
 
 ```swift
-static func == (lhs: Pose3DFloat, rhs: Pose3DFloat) -> Bool
+static func *= (lhs: inout Pose3DFloat, rhs: Pose3DFloat)
 ```
 
 ## Parameters
 
-- `lhs`: The first pose to compare.
-- `rhs`: The second pose to compare.
+- `lhs`: The first value.
+- `rhs`: The second value.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spatial/pose3dfloat/==(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/pose3dfloat/*=(_:_:))*

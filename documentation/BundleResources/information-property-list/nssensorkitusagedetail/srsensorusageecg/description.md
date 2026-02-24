@@ -9,6 +9,10 @@ An explanatory string that details the manner in which your study uses the senso
 - iOS 17.4+
 - iPadOS 17.4+
 
+
+
+**Type**: string
+
 #### Discussion
 
 The Research Sensor & Usage Data Request workflow displays this property’s text below the banner titled “How the study will use this data”. The user approves or denies your app’s ability to read the sensor’s data based on the text you provide.

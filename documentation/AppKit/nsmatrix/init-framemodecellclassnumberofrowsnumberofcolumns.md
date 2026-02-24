@@ -25,8 +25,8 @@ This method is the designated initializer for matrices that add cells by creatin
 ## Parameters
 
 - `frameRect`: The matrix’s frame.
-- `mode`: The tracking mode for the matrix; this can be one of the modes described in  .
-- `factoryId`: The class to use for any cells that the matrix creates and uses. This can be obtained by sending a   message to the desired subclass of  .
+- `mode`: The tracking mode for the matrix; this can be one of the modes described in [`NSMatrix.Mode`](nsmatrix/mode-swift.enum.md).
+- `factoryId`: The class to use for any cells that the matrix creates and uses. This can be obtained by sending a `class` message to the desired subclass of [`NSCell`](nscell.md).
 - `rowsHigh`: The number of rows in the matrix.
 - `colsWide`: The number of columns in the matrix.
 

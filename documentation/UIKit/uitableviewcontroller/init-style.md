@@ -28,7 +28,7 @@ If you use the standard `init` method to initialize a [`UITableViewController`](
 
 ## Parameters
 
-- `style`: A constant that specifies the style of table view that the controller object is to manage (  or  ).
+- `style`: A constant that specifies the style of table view that the controller object is to manage ([`UITableView.Style.plain`](uitableview/style-swift.enum/plain.md) or [`UITableView.Style.grouped`](uitableview/style-swift.enum/grouped.md)).
 
 ## See Also
 

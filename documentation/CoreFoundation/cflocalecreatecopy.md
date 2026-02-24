@@ -26,7 +26,7 @@ A new locale that is a copy of `locale`. Returns `NULL` if there was a problem c
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `locale`: The locale object to copy.
 
 ## See Also

@@ -19,10 +19,10 @@ The GLKit framework provides functions and classes that reduce the effort requir
 
 GLKit provides functionality in four key areas:
 
--  allows your app to easily load textures from a variety of sources. Textures can even be loaded asynchronously in the background with just a few lines of code. For more information, see [`GLKTextureLoader`](glktextureloader.md).
--  provide commonly used vector, quaternion and matrix operations. These implementations are optimized to provide great performance.
--  provide standard implementations of common shader effects. You configure the effect and the associated vertex data; the effect creates and loads an appropriate shader. GLKit includes three effects: The [`GLKBaseEffect`](glkbaseeffect.md) class implements a critical subset of the OpenGL ES 1.1 shading and lighting model, the [`GLKReflectionMapEffect`](glkreflectionmapeffect.md) class extends the base effect to include reflection mapping support, and the [`GLKSkyboxEffect`](glkskyboxeffect.md) class provides an implementation of a skybox effect.
--  provide a standard implementation of an OpenGL ES view and a corresponding view controller. This reduces the amount of code needed to create an iOS app that use OpenGL ES. For more information, see [`GLKView`](glkview.md) and [`GLKViewController`](glkviewcontroller.md).
+- *Texture loading* allows your app to easily load textures from a variety of sources. Textures can even be loaded asynchronously in the background with just a few lines of code. For more information, see [`GLKTextureLoader`](glktextureloader.md).
+- *Math libraries* provide commonly used vector, quaternion and matrix operations. These implementations are optimized to provide great performance.
+- *Effects* provide standard implementations of common shader effects. You configure the effect and the associated vertex data; the effect creates and loads an appropriate shader. GLKit includes three effects: The [`GLKBaseEffect`](glkbaseeffect.md) class implements a critical subset of the OpenGL ES 1.1 shading and lighting model, the [`GLKReflectionMapEffect`](glkreflectionmapeffect.md) class extends the base effect to include reflection mapping support, and the [`GLKSkyboxEffect`](glkskyboxeffect.md) class provides an implementation of a skybox effect.
+- *Views and View Controllers* provide a standard implementation of an OpenGL ES view and a corresponding view controller. This reduces the amount of code needed to create an iOS app that use OpenGL ES. For more information, see [`GLKView`](glkview.md) and [`GLKViewController`](glkviewcontroller.md).
 
 On iOS, GLKit requires an OpenGL ES 2.0 context. In macOS, GLKit requires an OpenGL context that supports the OpenGL 3.2 Core Profile.
 

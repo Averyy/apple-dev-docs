@@ -29,11 +29,11 @@ On return, the contents of vector Y are replaced with the result. The value comp
 ## Parameters
 
 - `N`: Number of elements in the vectors.
-- `ALPHA`: Scaling factor for the values in  .
-- `X`: Input vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
-- `Y`: Input vector  .
-- `INCY`: Stride within  . For example, if   is 7, every 7th element is used.
+- `ALPHA`: Scaling factor for the values in `X`.
+- `X`: Input vector `X`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
+- `Y`: Input vector `Y`.
+- `INCY`: Stride within `Y`. For example, if `incY` is 7, every 7th element is used.
 
 ## See Also
 

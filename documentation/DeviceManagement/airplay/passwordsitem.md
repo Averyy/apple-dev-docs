@@ -16,6 +16,12 @@ The dictionary that defines passwords for AirPlay destinations.
 object AirPlay.PasswordsItem
 ```
 
+## Properties
+
+- `DeviceID` (string): The device ID of the AirPlay destination; used in macOS. Deprecated in macOS 15 and later as tvOS 18 AirPlay destinations don’t support it; use `DeviceName` instead.
+- `DeviceName` (string): The name of the AirPlay destination; used in iOS, and available in macOS 15 and later.
+- `Password` (string) *(required)*: The password for the AirPlay destination.
+
 ## See Also
 
 - [object AirPlay.AllowListItem](airplay/allowlistitem.md)

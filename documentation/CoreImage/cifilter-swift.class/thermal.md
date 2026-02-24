@@ -29,6 +29,8 @@ This method applies a preconfigured set of effects that make it appear like a th
 
 The thermal filter uses the following property:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+
 The following code creates a filter that adds a thermal effect to the input image:
 
 ```swift

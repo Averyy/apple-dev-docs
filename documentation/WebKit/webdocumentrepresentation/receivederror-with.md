@@ -21,8 +21,8 @@ The `error` argument contains details on the error that occurred.
 
 ## Parameters
 
-- `error`: An   object that indicates what error occurred.
-- `dataSource`: A   object that identifies the request that caused this error.
+- `error`: An `NSError` object that indicates what error occurred.
+- `dataSource`: A `WebDataSource` object that identifies the request that caused this error.
 
 ## See Also
 

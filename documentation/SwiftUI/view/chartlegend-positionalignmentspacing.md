@@ -24,8 +24,8 @@ Configures the legend for charts.
 ## Parameters
 
 - `position`: Configures the position of the legend.
-- `alignment`: Alignment of the legend within the space   available to it. Use   for default alignment.
-- `spacing`: Distance between the legend and the chart.   Use   for the default spacing.
+- `alignment`: Alignment of the legend within the space available to it. Use `nil` for default alignment.
+- `spacing`: Distance between the legend and the chart. Use `nil` for the default spacing.
 
 ## See Also
 

@@ -20,8 +20,8 @@ The default implementation returns a delay of `0.2` and an interval of `0.025` s
 
 ## Parameters
 
-- `delay`: On input, a pointer to a floating-point variable. On output, the variable contains the current delay (measured in seconds) before messages are sent. This parameter must not be  .
-- `interval`: On input, a pointer to a floating point variable. On output, the variable contains the interval (measured in seconds) at which messages are sent. This parameter must not be  .
+- `delay`: On input, a pointer to a floating-point variable. On output, the variable contains the current delay (measured in seconds) before messages are sent. This parameter must not be `NULL`.
+- `interval`: On input, a pointer to a floating point variable. On output, the variable contains the interval (measured in seconds) at which messages are sent. This parameter must not be `NULL`.
 
 ## See Also
 

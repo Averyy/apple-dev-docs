@@ -8,7 +8,17 @@ Help users navigate between interface controllers.
 
 WatchKit supports three styles for navigating between scenes in watchOS.
 
+- **Paged navigation**: A paged interface contains two or more independent interface controllers, displaying one at any given time. By default, the user swipes left or right to navigate between the scenes. A Page Control at the bottom of the screen shows the user’s current position among the pages. To switch to vertical paging, set the interface controller’s Page Direction attribute in the Attributes inspector.
+- **Push navigation**: A push interface starts with a single root interface controller. Controls from the current interface *push* a new scene onto the screen. Similarly, you can *pop* back to a previous controller. Push navigations are particularly useful for displaying hierarchical information; for example, when the user selects an item from a list, you can push the detailed view for that item.
+- **Modal Presentations**: Use a modal presentation to interrupt the user’s workflow to request input or display additional information.  The modal presentation itself can consist of a single screen or a paged layout containing multiple screens.
+
 WatchKit also supports several standard interfaces for gathering input or displaying specific types of information. To present these interfaces, use the methods listed below:
+
+- **Alert and action sheets**: Use the [`presentAlert(withTitle:message:preferredStyle:actions:)`](wkinterfacecontroller/presentalert(withtitle:message:preferredstyle:actions:).md) method to display alerts and request user input using a standard interface.
+- **Text input**: Use the [`presentTextInputController(withSuggestions:allowedInputMode:completion:)`](wkinterfacecontroller/presenttextinputcontroller(withsuggestions:allowedinputmode:completion:).md) method to receive text input from the user. This method presents a controller with relevant input options, which may include predefined phrases, dictation, and Scribble.
+- **Video and audio playback**: Use the [`presentMediaPlayerController(with:options:completion:)`](wkinterfacecontroller/presentmediaplayercontroller(with:options:completion:).md) method to play audio and video.
+- **Audio recording**: Use the [`presentAudioRecorderController(withOutputURL:preset:options:completion:)`](wkinterfacecontroller/presentaudiorecordercontroller(withoutputurl:preset:options:completion:).md) method to display the standard audio recording interface.
+- **PassKit passes**: Use the [`presentAddPassesController(withPasses:completion:)`](wkinterfacecontroller/presentaddpassescontroller(withpasses:completion:).md) method to display an interface for adding passes to the user’s Apple Watch.
 
 The standard interfaces have built-in buttons so users can dismiss them at any time. Many of the interfaces also have a dismiss method that you can use to close the interface programmatically. While an interface is active, your app doesn’t have direct control over the interactions with that interface. Use actions or a completion handler for tasks related to the interface itself.
 
@@ -55,7 +65,7 @@ Alternatively, you can programmatically initiate the push transition by calling 
 }
 ```
 
-When pushing a new interface controller onto the screen, use the segue’s  to pass data to the new interface controller:
+When pushing a new interface controller onto the screen, use the segue’s *context* to pass data to the new interface controller:
 
 - For segues defined in the Storyboard, override the interface controller’s [`contextForSegue(withIdentifier:)`](wkinterfacecontroller/contextforsegue(withidentifier:).md) method (or one of the related methods) to provide the context.
 - For programatically triggered segues, pass the data as the `context` parameter of the [`pushController(withName:context:)`](wkinterfacecontroller/pushcontroller(withname:context:).md) method.

@@ -22,7 +22,7 @@ init(_ value: T, animatedValue: T? = nil)
 ## Parameters
 
 - `value`: A value that reflects the state of the animated property before or after an animation.
-- `animatedValue`: A value that represents the state of the animated   property as an animation progresses.
+- `animatedValue`: A value that represents the state of the animated property as an animation progresses.
 
 
 ---

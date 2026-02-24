@@ -27,6 +27,9 @@ typealias CMDeviceMotionHandler = (CMDeviceMotion?, (any Error)?) -> Void
 
 Blocks of type `CMDeviceMotionHandler` are called when there is device-motion data to process. You pass the block into [`startDeviceMotionUpdates(to:withHandler:)`](cmmotionmanager/startdevicemotionupdates(to:withhandler:).md) as the second argument. Blocks of this type return no value but take two arguments:
 
+- **`motion`**: A [`CMDeviceMotion`](cmdevicemotion.md) object, which encapsulates other objects and a structure representing attitude, rotation rate, gravity, and user acceleration.
+- **`error`**: An error object representing an error encountered in providing device-motion data. If an error occurs, you should stop device-motion data updates and inform the user of the problem. If there is no error, this argument is `nil`. Core Motion errors are of the [`CMErrorDomain`](cmerrordomain.md) domain and the [`CMError`](cmerror.md) type.
+
 ## See Also
 
 - [var showsDeviceMovementDisplay: Bool](cmmotionmanager/showsdevicemovementdisplay.md)

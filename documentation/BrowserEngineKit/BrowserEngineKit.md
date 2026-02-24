@@ -18,7 +18,7 @@ If you use [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebV
 Whether you use [`WebKit`](https://developer.apple.com/documentation/WebKit) or write your own alternative browser engine, you need to:
 
 - Request the entitlement to act as a person’s default web browser. For more information, see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/Xcode/preparing-your-app-to-be-the-default-browser).
-- Watch for the [`MarketplaceKitURIScheme`](https://developer.apple.com/documentation/MarketplaceKit/MarketplaceKitURIScheme) within web content to support alternative distribution apps that install from a website. For more information, see [`Enabling alternative distribution app installation in a browser`](https://developer.apple.com/documentation/appdistribution/enabling-alternative-distribution-app-installation-in-a-browser).
+- Watch for the [`MarketplaceKitURIScheme`](https://developer.apple.com/documentation/MarketplaceKit/MarketplaceKitURIScheme) within web content to support alternative distribution apps that install from a website. For more information, see [`Enabling alternative distribution app installation in a browser`](https://developer.apple.com/documentation/marketplacekit/enabling-alternative-distribution-app-installation-in-a-browser).
 
 ##### Build a Multi Process Browser
 
@@ -39,6 +39,9 @@ In your browser app, launch extensions as the person browses web content to make
 To distribute an app that uses an alternative browser engine, request the relevant entitlements for your developer account. You must also request an entitlement if your app isn’t a web browser but embeds an alternative browser engine for in-app browsing.
 
 Support for alternative browser engines varies by geographic region:
+
+- **European Union**: To request the entitlements in the EU for an iOS or iPadOS app, see [`Using alternative browser engines in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines).
+- **Japan**: To request the entitlements in Japan for an iOS app, see [`Using alternative browser engines in Japan`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines-jp). Also, your app needs to adopt the [`Enable Hardware Memory Tagging`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations) entitlement. In apps that aren’t browsers, you can embed only an alternative browser engine of which you have ownership; for more information, see [`Embedded Browser Engine Association Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.embedded-web-browser-engine.engine-association).
 
 ## Topics
 

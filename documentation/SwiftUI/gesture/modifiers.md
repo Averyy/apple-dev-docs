@@ -25,7 +25,7 @@ The gesture receives updates while the user presses the modifier keys that corre
 
 ## Parameters
 
-- `modifiers`: A set of flags that correspond to the modifier   keys that the user needs to hold down.
+- `modifiers`: A set of flags that correspond to the modifier keys that the user needs to hold down.
 
 
 ---

@@ -22,7 +22,7 @@ class func load(from fileURL: URL, completionHandler: @escaping @Sendable (Resul
 ## Parameters
 
 - `fileURL`: A file URL that indicates the macOS restore image to load.
-- `completionHandler`: The system invokes the completion handler on an arbitrary thread.
+- `completionHandler`: A block called after the restore image successfully loaded or has failed to load. The `error` parameter passed to the block is `nil` if the restore image loads successfully. The system invokes the completion handler on an arbitrary thread.
 
 ## See Also
 

@@ -24,7 +24,7 @@ If the end of the string being spoken is reached before the specified pause poin
 
 ## Parameters
 
-- `boundary`: Boundary at which to pause speech. The supported bound types are listed in  .
+- `boundary`: Boundary at which to pause speech. The supported bound types are listed in [`NSSpeechSynthesizer.Boundary`](nsspeechsynthesizer/boundary.md).
 
 ## See Also
 

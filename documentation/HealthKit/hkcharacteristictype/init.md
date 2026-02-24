@@ -21,7 +21,7 @@ convenience init(_ identifier: HKCharacteristicTypeIdentifier)
 
 ## Parameters
 
-- `identifier`: An identifier that specifies the type of characteristic data. For a complete list of characteristic type identifiers, see  .
+- `identifier`: An identifier that specifies the type of characteristic data. For a complete list of characteristic type identifiers, see [`HKCharacteristicTypeIdentifier`](hkcharacteristictypeidentifier.md).
 
 
 ---

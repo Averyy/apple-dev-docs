@@ -22,7 +22,7 @@ var summary: String? { get set }
 
 #### Discussion
 
-Provide a string that includes a brief description of the main takeaways or insights that the chart offers, for example, 
+Provide a string that includes a brief description of the main takeaways or insights that the chart offers, for example, *“The chart shows that fuel efficiency decreases as vehicle weight increases.”*
 
 
 ---

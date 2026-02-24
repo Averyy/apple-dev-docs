@@ -25,7 +25,7 @@ The `Element` at the given index.
 
 ## Parameters
 
-- `index`: A row number of the column, beginning with  .
+- `index`: A row number of the column, beginning with `0`.
 
 ## See Also
 

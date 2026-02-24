@@ -25,7 +25,7 @@ This method reenables the automatic presentation of Apple Pay passes when the de
 
 ## Parameters
 
-- `requestToken`: The token you receive when you call the   method. If you pass in an invalid request token, the system ignores the end request.
+- `requestToken`: The token you receive when you call the [`PKPassLibrary`](pkpasslibrary.md) method. If you pass in an invalid request token, the system ignores the end request.
 
 ## See Also
 

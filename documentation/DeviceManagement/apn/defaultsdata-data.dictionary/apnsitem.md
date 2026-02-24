@@ -15,6 +15,14 @@ A dictionary that describes an APN configuration.
 object APN.DefaultsData.ApnsItem
 ```
 
+## Properties
+
+- `apn` (string) *(required)*: The access point name.
+- `password` (data): The password for the user. For obfuscation purposes, the system encodes the password. If missing, the device prompts for the password during profile installation.
+- `proxy` (string): The IP address or URL of the APN proxy.
+- `proxyPort` (integer): The port number of the APN proxy.
+- `username` (string): The user name. If missing, the device prompts for it during profile installation.
+
 
 ---
 

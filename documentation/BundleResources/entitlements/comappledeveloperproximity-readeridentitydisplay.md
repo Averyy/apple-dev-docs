@@ -7,6 +7,12 @@
 - iOS 17.0+
 - iPadOS 17.0+
 
+
+
+**Type**: boolean
+
+**Default**: `NO`
+
 ## See Also
 
 - [Pass Type IDs Entitlement](entitlements/com.apple.developer.pass-type-identifiers.md)

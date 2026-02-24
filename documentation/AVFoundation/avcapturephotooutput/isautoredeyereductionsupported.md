@@ -26,7 +26,7 @@ In iOS 12 and later, AVFoundation applies a red-eye reduction effect only when n
 - When doing a bracketed capture
 - When taking a picture with depth on the dual camera
 
-When taking RAW + processed (JPEG or HEIC) still-photo capture with auto red-eye reduction enabled, AVFoundation applies correction to only the processed photo,  the RAW photo.
+When taking RAW + processed (JPEG or HEIC) still-photo capture with auto red-eye reduction enabled, AVFoundation applies correction to only the processed photo, *not* the RAW photo.
 
 ## See Also
 

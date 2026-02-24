@@ -15,7 +15,7 @@ typealias FFEffectStartFlag = UInt32
 
 #### Discussion
 
-Effect Parameter flags for use in calls to .
+Effect Parameter flags for use in calls to **FFEffectStart()**.
 
 ## See Also
 

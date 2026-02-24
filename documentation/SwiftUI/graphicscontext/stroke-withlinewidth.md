@@ -27,8 +27,8 @@ When you call this method, all [`StrokeStyle`](strokestyle.md) properties other 
 ## Parameters
 
 - `path`: The path to outline.
-- `shading`: The color or pattern to use when outlining the  .
-- `lineWidth`: The width of the stroke, which defaults to  .
+- `shading`: The color or pattern to use when outlining the `path`.
+- `lineWidth`: The width of the stroke, which defaults to `1`.
 
 ## See Also
 

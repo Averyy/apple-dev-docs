@@ -24,6 +24,10 @@ object WellKnown
 - [object WellKnown.AvailableServer](wellknown/availableserver.md)
   The configuration details for an authentication server.
 
+## Properties
+
+- `Servers` ([WellKnown.AvailableServer]) *(required)*: A list of available servers.
+
 
 ---
 

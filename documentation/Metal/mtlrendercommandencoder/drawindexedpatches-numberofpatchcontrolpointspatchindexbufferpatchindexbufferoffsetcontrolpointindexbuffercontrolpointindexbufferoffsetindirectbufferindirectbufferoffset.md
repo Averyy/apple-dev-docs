@@ -28,13 +28,13 @@ The method records the encoder’s current rendering state and resources the com
 
 ## Parameters
 
-- `numberOfPatchControlPoints`: The number of control points for each patch, which needs to be in the range  .
-- `patchIndexBuffer`: An   instance that contains the indices to patches.
-- `patchIndexBufferOffset`: An integer that represents the location, in bytes, from the start of   where the patch indices begin.
-- `controlPointIndexBuffer`: An   instance that contains the indices to control points.
-- `controlPointIndexBufferOffset`: An integer that represents the location, in bytes, from the start of   where the control point indices begin.
-- `indirectBuffer`: An   instance with data that matches the layout of the   structure.
-- `indirectBufferOffset`: See the   to check for offset alignment requirements for buffers in   and   address space.
+- `numberOfPatchControlPoints`: The number of control points for each patch, which needs to be in the range `[0, 32]`.
+- `patchIndexBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance that contains the indices to patches.
+- `patchIndexBufferOffset`: An integer that represents the location, in bytes, from the start of `patchIndexBuffer` where the patch indices begin.
+- `controlPointIndexBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance that contains the indices to control points.
+- `controlPointIndexBufferOffset`: An integer that represents the location, in bytes, from the start of `controlPointIndexBuffer` where the control point indices begin.
+- `indirectBuffer`: An [`MTLBuffer`](mtlbuffer.md) instance with data that matches the layout of the [`MTLDrawPatchIndirectArguments`](mtldrawpatchindirectarguments.md) structure.
+- `indirectBufferOffset`: An integer that represents the location, in bytes, from the start of `indirectBuffer` where the indirect arguments structure begins. See the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) to check for offset alignment requirements for buffers in `device` and `constant` address space.
 
 ## See Also
 

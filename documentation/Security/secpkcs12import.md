@@ -35,8 +35,8 @@ Your application can import a PKCS #12–formatted blob (a file with extension `
 ## Parameters
 
 - `pkcs12_data`: The PKCS #12 data you wish to decode.
-- `options`: A dictionary of key-value pairs specifying options for the function. See   for a list of valid keys.
-- `items`: On return, an array of   key-value dictionaries. The function returns one dictionary for each item (identity or certificate) in the PKCS #12 blob. For a list of dictionary keys, see  .
+- `options`: A dictionary of key-value pairs specifying options for the function. See [`Keychain Import and Export Options`](keychain-import-and-export-options.md) for a list of valid keys.
+- `items`: On return, an array of `CFDictionary` key-value dictionaries. The function returns one dictionary for each item (identity or certificate) in the PKCS #12 blob. For a list of dictionary keys, see [`PKCS #12 Import Item Keys`](pkcs-12-import-item-keys.md).
 
 
 ---

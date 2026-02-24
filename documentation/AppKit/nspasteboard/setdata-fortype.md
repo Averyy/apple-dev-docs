@@ -21,7 +21,7 @@ func setData(_ data: Data?, forType dataType: NSPasteboard.PasteboardType) -> Bo
 ## Parameters
 
 - `data`: The data to write to the pasteboard.
-- `dataType`: The type of data in the   parameter. The type must have been declared by a previous   message.
+- `dataType`: The type of data in the `data` parameter. The type must have been declared by a previous [`declareTypes(_:owner:)`](nspasteboard/declaretypes(_:owner:).md) message.
 
 ## See Also
 

@@ -25,15 +25,15 @@ func barrier(afterEncoderStages: MTLStages, beforeEncoderStages: MTLStages, visi
 
 #### Discussion
 
-Encode a barrier that guarantees that any subsequent work you encode in the , corresponding to `beforeEncoderStages`, doesn’t begin until all prior commands in this command encoder, corresponding to `afterEncoderStages`, completes.
+Encode a barrier that guarantees that any subsequent work you encode in the *current command encoder*, corresponding to `beforeEncoderStages`, doesn’t begin until all prior commands in this command encoder, corresponding to `afterEncoderStages`, completes.
 
 When calling this method, it’s your responsibility to ensure parameters `afterEncoderStages` and `beforeEncoderStages` contain a combination of [`MTLStages`](mtlstages.md) for which this encoder can encode commands. For example, for a [`MTL4ComputeCommandEncoder`](mtl4computecommandencoder.md) instance, you can provide any combination of [`dispatch`](mtlstages/dispatch.md), [`blit`](mtlstages/blit.md) and [`accelerationStructure`](mtlstages/accelerationstructure.md).
 
 ## Parameters
 
-- `afterEncoderStages`:   mask that represents the stages of work to wait for.   This argument only applies to subsequent work you encode in the current command encoder.
-- `beforeEncoderStages`:   mask that represents the stages of work that wait.   This argument only applies to work you encode in the current command encoder prior to   this barrier.
-- `visibilityOptions`:   of the barrier, controlling cache flush behavior.
+- `afterEncoderStages`: [`MTLStages`](mtlstages.md) mask that represents the stages of work to wait for. This argument only applies to subsequent work you encode in the current command encoder.
+- `beforeEncoderStages`: [`MTLStages`](mtlstages.md) mask that represents the stages of work that wait. This argument only applies to work you encode in the current command encoder prior to this barrier.
+- `visibilityOptions`: [`MTL4VisibilityOptions`](mtl4visibilityoptions.md) of the barrier, controlling cache flush behavior.
 
 
 ---

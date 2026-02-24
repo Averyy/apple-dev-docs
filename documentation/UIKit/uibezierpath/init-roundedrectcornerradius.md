@@ -30,7 +30,7 @@ This method creates a closed subpath, proceeding in a clockwise direction (relat
 ## Parameters
 
 - `rect`: The rectangle that defines the basic shape of the path.
-- `cornerRadius`: The radius of each corner oval. A value of   results in a rectangle without rounded corners. Values larger than half the rectangle’s width or height are clamped appropriately to half the width or height.
+- `cornerRadius`: The radius of each corner oval. A value of `0` results in a rectangle without rounded corners. Values larger than half the rectangle’s width or height are clamped appropriately to half the width or height.
 
 ## See Also
 

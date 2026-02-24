@@ -103,7 +103,7 @@ Custom attributes listed in the definition’s [`Scope`](attributedtextformattin
 
 ## Parameters
 
-- `attributedContent`: An attributed string to style and display,   in accordance with its attributes.
+- `attributedContent`: An attributed string to style and display, in accordance with its attributes.
 
 ## See Also
 

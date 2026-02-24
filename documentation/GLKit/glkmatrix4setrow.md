@@ -28,7 +28,7 @@ The last component of rows `0` through `2` correspond to the translation values 
 ## Parameters
 
 - `matrix`: The source matrix.
-- `row`: The index of the row to replace, which must be a number between   and  , inclusive.
+- `row`: The index of the row to replace, which must be a number between `0` and `3`, inclusive.
 - `vector`: A vector holding the replacement component values.
 
 ## See Also

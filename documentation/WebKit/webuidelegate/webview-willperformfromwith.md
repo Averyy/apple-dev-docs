@@ -21,7 +21,7 @@ This method is invoked after the last invocation of the [`webView(_:dragSourceAc
 ## Parameters
 
 - `webView`: The web view that sent the message.
-- `action`: The drag-source action to perform. See   for a list of actions.
+- `action`: The drag-source action to perform. See [`WebDragSourceAction`](webdragsourceaction.md) for a list of actions.
 - `point`: The point at which the drag began, specified in the coordinates of the web view.
 - `pasteboard`: The drag pasteboard.
 

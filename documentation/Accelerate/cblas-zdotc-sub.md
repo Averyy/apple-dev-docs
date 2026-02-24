@@ -28,11 +28,11 @@ Computes conjg(X) * Y.
 
 ## Parameters
 
-- `N`: Number of elements in vectors   and  .
-- `X`: Vector  .
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
-- `Y`: Vector  .
-- `INCY`: Stride within  . For example, if   is 7, every 7th element is used.
+- `N`: Number of elements in vectors `X` and `Y`.
+- `X`: Vector `X`.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
+- `Y`: Vector `Y`.
+- `INCY`: Stride within `Y`. For example, if `incY` is 7, every 7th element is used.
 - `DOTC`: The result vector.
 
 ## See Also

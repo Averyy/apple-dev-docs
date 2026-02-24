@@ -21,8 +21,8 @@ func fill(buffer: any MTLBuffer, range: Range<Int>, value: UInt8)
 
 ## Parameters
 
-- `buffer`: A buffer instance the command assigns each byte in   to  .
-- `range`: A range of bytes within the   the command assigns   to. The range’s   property needs to be greater than  . The range’s  ,  , and   properties need to be a multiple of   in macOS, but can be any value in iOS and tvOS.
+- `buffer`: A buffer instance the command assigns each byte in `range` to `value`.
+- `range`: A range of bytes within the `buffer` the command assigns `value` to. The range’s [`count`](https://developer.apple.com/documentation/Swift/Collection/count) property needs to be greater than `0`. The range’s [`count`](https://developer.apple.com/documentation/Swift/Collection/count), [`lowerBound`](https://developer.apple.com/documentation/Swift/Range/lowerBound), and [`upperBound`](https://developer.apple.com/documentation/Swift/Range/upperBound) properties need to be a multiple of `4` in macOS, but can be any value in iOS and tvOS.
 - `value`: The value to write to each byte.
 
 

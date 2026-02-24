@@ -20,7 +20,7 @@ A flag that can be used either to set the state of a checkbox when creating a us
 
 ## Parameters
 
-- `i`: The index of the checkbox to set or test. The index corresponds to the order in which the checkbox titles are listed in the   array of the user notification’s description dictionary.   must be in the range   to  .
+- `i`: The index of the checkbox to set or test. The index corresponds to the order in which the checkbox titles are listed in the [`kCFUserNotificationCheckBoxTitlesKey`](kcfusernotificationcheckboxtitleskey.md) array of the user notification’s description dictionary. `idx` must be in the range `0` to `7`.
 
 ## See Also
 

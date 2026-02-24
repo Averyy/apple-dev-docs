@@ -27,7 +27,7 @@ Returns a newly initialized document browser view controller.
 
 ## Parameters
 
-- `allowedContentTypes`: For more information about UTIs, see  .
+- `allowedContentTypes`: An array of uniform type identifiers (UTIs). The document browser can open only the document types that these UTIs specify.  If you pass `nil`, the browser uses the document types that the `CFBundleDocumentTypes` key specifies in the app’s `Info.plist` file. For detailed instructions about setting the `CFBundleDocumentTypes` key, see the [`Set the supported document types`](setting-up-a-document-browser-app#Set-the-supported-document-types.md) section of [`Setting up a document browser app`](setting-up-a-document-browser-app.md). For more information about UTIs, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers).
 
 ## See Also
 

@@ -28,8 +28,9 @@ You can only activate a provisioned pass, and it must be in the [`PKPaymentPassA
 ## Parameters
 
 - `paymentPass`: The payment pass to activate.
-- `activationData`: PassKit encodes the data as Base64 and then sends it to the payment network. The framework treats this data as an opaque value.
-- `completion`: This block takes the following parameters:
+- `activationData`: The one-time cryptographic password. PassKit encodes the data as Base64 and then sends it to the payment network. The framework treats this data as an opaque value.
+- `completion`: The completion block that PassKit calls after activation. This block takes the following parameters: - **`success`**: [`true`](https://developer.apple.com/documentation/Swift/true) if the authorization succeeds; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- **`error`**: If `success` is [`false`](https://developer.apple.com/documentation/Swift/false), a description of the error.
 
 ## See Also
 

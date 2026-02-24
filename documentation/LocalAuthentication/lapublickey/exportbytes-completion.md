@@ -26,7 +26,8 @@ var bytes: Data { get async throws }
 
 ## Parameters
 
-- `handler`: A completion handler to call when the export operation completes.
+- `handler`: A completion handler to call when the export operation completes. - **`data`**: The data that represents the public key.
+- **`error`**: An error object that indicates why the export operation failed, or `nil` if it succeeded.
 
 ## See Also
 

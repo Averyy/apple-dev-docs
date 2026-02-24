@@ -26,9 +26,9 @@ The pixel buffer that contains the image.
 
 ## Parameters
 
-- `instances`: An indexed set of selected instances, where   is the background.
+- `instances`: An indexed set of selected instances, where `0` is the background.
 - `requestHandler`: A request handler containing an image to be masked.
-- `croppedToInstancesExtent`: Crops the image to the smallest rectangle containing all instances. Default is  .
+- `croppedToInstancesExtent`: Crops the image to the smallest rectangle containing all instances. Default is `false`.
 
 ## See Also
 

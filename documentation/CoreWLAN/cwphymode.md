@@ -31,6 +31,7 @@ enum CWPHYMode
   IEEE 802.11ac PHY.
 ### Enumeration Cases
 - [CWPHYMode.mode11ax](cwphymode/mode11ax.md)
+- [CWPHYMode.mode11be](cwphymode/mode11be.md)
 ### Initializers
 - [init?(rawValue: Int)](cwphymode/init(rawvalue:).md)
 

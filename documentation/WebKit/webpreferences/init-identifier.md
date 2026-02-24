@@ -26,7 +26,7 @@ Typically, you do not invoke this method directly. Instead, you set the preferen
 
 ## Parameters
 
-- `anIdentifier`: A unique identifier for the   object
+- `anIdentifier`: A unique identifier for the [`WebPreferences`](webpreferences.md) object
 
 ## See Also
 

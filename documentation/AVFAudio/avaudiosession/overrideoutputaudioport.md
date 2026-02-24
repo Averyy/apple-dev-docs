@@ -29,7 +29,7 @@ If you’d prefer to permanently enable this behavior, you should instead set th
 
 ## Parameters
 
-- `portOverride`: The override option for audio output. For a list of constants, see  .
+- `portOverride`: The override option for audio output. For a list of constants, see [`AVAudioSession.PortOverride`](avaudiosession/portoverride.md).
 
 ## Topics
 

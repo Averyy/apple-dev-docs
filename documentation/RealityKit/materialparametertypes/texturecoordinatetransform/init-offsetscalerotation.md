@@ -23,7 +23,7 @@ init(offset: SIMD2<Float> = .init(), scale: SIMD2<Float> = .init(1, 1), rotation
 
 - `offset`: The amount to offset the UV texture coordinates.
 - `scale`: The amount to scale the UV texture coordinates.
-- `rotation`: The amount to rotate the UV texture coordinates in   radians.
+- `rotation`: The amount to rotate the UV texture coordinates in radians.
 
 
 ---

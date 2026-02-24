@@ -20,8 +20,8 @@ A text provider initialized with the specified date and time zone value.
 
 ## Parameters
 
-- `date`: The date object containing the time to display. This parameter must not be  .
-- `timeZone`: The time zone to use when formatting the date. If you specify  , the text provider uses the default time zone currently associated with the user.
+- `date`: The date object containing the time to display. This parameter must not be `nil`.
+- `timeZone`: The time zone to use when formatting the date. If you specify `nil`, the text provider uses the default time zone currently associated with the user.
 
 ## See Also
 

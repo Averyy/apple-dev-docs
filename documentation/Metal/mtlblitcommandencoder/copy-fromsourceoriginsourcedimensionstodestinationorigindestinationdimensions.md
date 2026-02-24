@@ -27,11 +27,11 @@ This command applies reshapes if `sourceTensor` and `destinationTensor` are not 
 ## Parameters
 
 - `sourceTensor`: A tensor instance that this command copies data from.
-- `sourceOrigin`: An array of offsets, in elements, to the first element of the slice of   that this command copies data from.
-- `sourceDimensions`: An array of sizes, in elements, of the slice   that this command copies data from.
+- `sourceOrigin`: An array of offsets, in elements, to the first element of the slice of `sourceTensor` that this command copies data from.
+- `sourceDimensions`: An array of sizes, in elements, of the slice `sourceTensor` that this command copies data from.
 - `destinationTensor`: A tensor instance that this command copies data to.
-- `destinationOrigin`: An array of offsets, in elements, to the first element of the slice of   that this command copies data to.
-- `destinationDimensions`: An array of sizes, in elements, of the slice of   that this command copies data to.
+- `destinationOrigin`: An array of offsets, in elements, to the first element of the slice of `destinationTensor` that this command copies data to.
+- `destinationDimensions`: An array of sizes, in elements, of the slice of `destinationTensor` that this command copies data to.
 
 ## See Also
 

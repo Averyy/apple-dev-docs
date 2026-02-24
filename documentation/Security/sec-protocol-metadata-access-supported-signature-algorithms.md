@@ -28,7 +28,7 @@ Get the signature algorithms supported by the peer. Clients may call this in res
 
 ## Parameters
 
-- `metadata`: A   instance.
+- `metadata`: A `sec_protocol_metadata_t` instance.
 - `handler`: A block to invoke one or more times with OCSP data
 
 

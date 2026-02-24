@@ -14,6 +14,10 @@ A dictionary containing the results of the command.
 object VerifyFirmwarePasswordResponse.VerifyFirmwarePassword
 ```
 
+## Properties
+
+- `PasswordVerified` (boolean) *(required)*: If ‘true’, the provided password matched the firmware password set for the device.
+
 ## See Also
 
 - [object VerifyFirmwarePasswordResponse.ErrorChainItem](verifyfirmwarepasswordresponse/errorchainitem.md)

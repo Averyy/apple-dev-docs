@@ -51,6 +51,11 @@ Specify `com.apple.management.server-capabilities` as the declaration type.
 - [object ManagementServerCapabilitiesSupportedFeaturesObject](managementservercapabilitiessupportedfeaturesobject.md)
   A dictionary that contains the server’s optional protocol features.
 
+## Properties
+
+- `SupportedFeatures` (ManagementServerCapabilitiesSupportedFeaturesObject) *(required)*: A dictionary that contains the server’s optional protocol features. Each dictionary item uses the key name to represent a feature, and the value to hold the feature’s associated parameters. This protocol reserves keys with a prefix of `com.apple.`, which appear as subkeys in this dictionary.
+- `Version` (string) *(required)*: The server’s protocol version.
+
 ## See Also
 
 - [object ManagementOrganizationInformation](managementorganizationinformation.md)

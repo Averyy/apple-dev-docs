@@ -20,8 +20,8 @@ This method serves as a callback function, giving the delegate the ability to ad
 
 ## Parameters
 
-- `appController`: The   object that is evaluating the JavaScript context.
-- `jsContext`: The   object being evaluated.
+- `appController`: The [`TVApplicationController`](tvapplicationcontroller.md) object that is evaluating the JavaScript context.
+- `jsContext`: The [`JSContext`](https://developer.apple.com/documentation/JavaScriptCore/JSContext) object being evaluated.
 
 ## See Also
 

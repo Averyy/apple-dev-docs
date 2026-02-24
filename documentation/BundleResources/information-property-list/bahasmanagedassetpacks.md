@@ -13,6 +13,10 @@ A Boolean value that indicates whether you let the system automatically manage y
 - tvOS 26.0+
 - visionOS 26.0+
 
+
+
+**Type**: boolean
+
 #### Discussion
 
 Set this key to `YES` if you want the system to automatically download your asset packs and keep them up to date in the background.

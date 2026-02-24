@@ -14,6 +14,11 @@ A dictionary defining a site for the allow list.
 object ParentalControlsContentFilter.SiteAllowListItem
 ```
 
+## Properties
+
+- `address` (string) *(required)*: The site prefix, including the `http(s)` scheme.
+- `pageTitle` (string): The site page title.
+
 ## See Also
 
 - [object ParentalControlsContentFilter.SiteWhitelistItem](parentalcontrolscontentfilter/sitewhitelistitem.md)

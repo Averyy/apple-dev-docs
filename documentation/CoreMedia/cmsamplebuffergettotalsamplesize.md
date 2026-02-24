@@ -26,7 +26,7 @@ Total size in bytes of sample data in the `CMSampleBuffer`. If there are no samp
 
 ## Parameters
 
-- `sbuf`: The   being interrogated.
+- `sbuf`: The `CMSampleBuffer` being interrogated.
 
 ## See Also
 

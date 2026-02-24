@@ -30,7 +30,7 @@ If the associated audio device is not already running, this function starts it.
 ## Parameters
 
 - `inAQ`: The audio queue to start.
-- `inStartTime`: To specify a start time relative to the timeline of the associated audio device, use the   field of the   structure. Use   to indicate that the audio queue should start as soon as possible.
+- `inStartTime`: The time at which the audio queue should start. To specify a start time relative to the timeline of the associated audio device, use the `mSampleTime` field of the `AudioTimeStamp` structure. Use `NULL` to indicate that the audio queue should start as soon as possible.
 
 ## See Also
 

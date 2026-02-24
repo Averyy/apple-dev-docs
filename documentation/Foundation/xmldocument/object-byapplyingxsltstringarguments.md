@@ -17,7 +17,7 @@ func object(byApplyingXSLTString xslt: String, arguments: [String : String]?) th
 
 #### Return Value
 
-Depending on intended output, the method returns an `NSXMLDocument` object  an [`NSData`](nsdata.md) data containing transformed XML or HTML markup. If the message is supposed to create plain text or RTF, then an `NSData` object is returned, otherwise an XML document object. The method returns  `nil` if XSLT processing did not succeed.
+Depending on intended output, the method returns an `NSXMLDocument` object *or* an [`NSData`](nsdata.md) data containing transformed XML or HTML markup. If the message is supposed to create plain text or RTF, then an `NSData` object is returned, otherwise an XML document object. The method returns  `nil` if XSLT processing did not succeed.
 
 #### Discussion
 
@@ -26,7 +26,7 @@ Depending on intended output, the method returns an `NSXMLDocument` object  an [
 ## Parameters
 
 - `xslt`: A string object containing the XSLT pattern rules and templates.
-- `arguments`: A dictionary containing   key-value pairs that are passed as runtime parameters to the XSLT processor. Pass in   if you have no parameters to pass.
+- `arguments`: A dictionary containing [`NSString`](nsstring.md) key-value pairs that are passed as runtime parameters to the XSLT processor. Pass in `nil` if you have no parameters to pass. > **Note**:  Several XML websites discuss XSLT parameters, including O’Reilly Media’s [`http://www.xml.com`](https://developer.apple.comhttp://www.xml.com).
 
 ## See Also
 

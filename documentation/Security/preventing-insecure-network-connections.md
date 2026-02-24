@@ -38,7 +38,7 @@ A secure server establishes its identity using an X.509 digital certificate. A c
 ATS requires all of these things, and then provides extended security checks:
 
 - The server certificate must be signed with either a Rivest-Shamir-Adleman (RSA) key of at least 2048 bits, or an Elliptic-Curve Cryptography (ECC) key of at least 256 bits.
-- The certificate must use the Secure Hash Algorithm 2 (SHA-2) with a digest length, sometimes called a , of at least 256 bits (that is, SHA-256 or greater).
+- The certificate must use the Secure Hash Algorithm 2 (SHA-2) with a digest length, sometimes called a *fingerprint*, of at least 256 bits (that is, SHA-256 or greater).
 - The connection must use Transport Layer Security (TLS) protocol version 1.2 or later.
 - Data must be exchanged using either the AES-128 or the AES-256 symmetric cipher.
 - The link must support perfect forward secrecy (PFS) through Elliptic Curve Diffie-Hellman Ephemeral (ECDHE) key exchange.
@@ -83,7 +83,7 @@ You might only need to limit your ATS exception to a single domain. For example,
 
 ![None](https://docs-assets.developer.apple.com/published/15237498eed9ac779b0b43b1bc161735/media-3138690%402x.png)
 
-> **Note**:  Global exceptions don’t apply to any domains that you add to the [`NSExceptionDomains`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSExceptionDomains) dictionary. So you can invert the previous example—allowing insecure traffic on all domains  `example.com`—by placing [`NSAllowsArbitraryLoads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSAllowsArbitraryLoads) at the top level, and including an empty `example.com` dictionary as an exception domain.
+> **Note**:  Global exceptions don’t apply to any domains that you add to the [`NSExceptionDomains`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSExceptionDomains) dictionary. So you can invert the previous example—allowing insecure traffic on all domains *except* `example.com`—by placing [`NSAllowsArbitraryLoads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSAllowsArbitraryLoads) at the top level, and including an empty `example.com` dictionary as an exception domain.
 
 You can use the `nscurl` command line tool to connect to a server using different combinations of ATS exceptions. This helps you quickly narrow down the source of any ATS failures you have and figure out what exceptions you need. See [`Identifying the Source of Blocked Connections`](identifying-the-source-of-blocked-connections.md) for details.
 

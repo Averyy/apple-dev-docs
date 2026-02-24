@@ -17,7 +17,7 @@ func endSheet(_ sheet: NSWindow, returnCode: Int)
 ## Parameters
 
 - `sheet`: The sheet whose modal session you want to end.
-- `returnCode`: The return code to send to the delegate. You can use one of the return codes defined in   or a custom value that you define.
+- `returnCode`: The return code to send to the delegate. You can use one of the return codes defined in [`NSApplication.ModalResponse`](nsapplication/modalresponse.md) or a custom value that you define.
 
 ## See Also
 

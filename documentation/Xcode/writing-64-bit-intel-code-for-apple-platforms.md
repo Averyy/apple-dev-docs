@@ -39,6 +39,10 @@ The Swift calling convention uses several registers that don’t have special me
 
 Synchronous functions fall into three areas:
 
+- **Returns a value indirectly**: The first indirect return address is passed in `rax`. Additional indirect return addresses are passed as normal arguments that precede all other arguments, for example, the second is in `rdi`, the third is in `rsi`, and so on.
+- **Context parameter that fits in a single integer register**: Examples are closures and class methods. Functions receive this context in `r13`. `r13` is preserved by such calls; after the call, it must hold the same value that the caller passed in.
+- **Throws `Error`**: These functions use `r12` for this purpose. The caller must set `r12` to zero prior to the call; if `r12` is non-zero after return, the function is throwing an error, and the value in `r12` is that error. `r12` is no longer a callee-saved register for such calls.
+
 Asynchronous Swift functions receive the address of their async frame in `r14`. `r14` is no longer a callee-saved register for such calls.
 
 ##### Handle Data Types and Data Alignment Properly

@@ -22,9 +22,9 @@ A result code.
 
 - `inObjectID`: The HAL audio object to query.
 - `inAddress`: The property whose payload size you want.
-- `inQualifierDataSize`: A   value indicating the size of the buffer pointed to by the   parameter. Not all properties require qualification; in such a case you set this parameter to  .
-- `inQualifierData`: A buffer of data to be used in determining the value of the property being queried. Not all properties require qualification; in such a case you set this parameter to  .
-- `outDataSize`: A   value indicating the size, in bytes, of the payload for the given property.
+- `inQualifierDataSize`: A `UInt32` value indicating the size of the buffer pointed to by the `inQualifierData` parameter. Not all properties require qualification; in such a case you set this parameter to `0`.
+- `inQualifierData`: A buffer of data to be used in determining the value of the property being queried. Not all properties require qualification; in such a case you set this parameter to `NULL`.
+- `outDataSize`: A `UInt32` value indicating the size, in bytes, of the payload for the given property.
 
 ## See Also
 
@@ -32,7 +32,7 @@ A result code.
   Gets the value for a specified property.
 - [func AudioFileReadPackets(AudioFileID, Bool, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioStreamPacketDescription>?, Int64, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer?) -> OSStatus](audiofilereadpackets(_:_:_:_:_:_:_:).md)
   Reads a fixed duration of audio data from an audio file.
-- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:).md)
+- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:_:).md)
   The UIImage of the audio component’s icon.
 - [func AudioComponentGetLastActiveTime(AudioComponent) -> CFAbsoluteTime](audiocomponentgetlastactivetime(_:).md)
   The time at which the application publishing the component was last active.

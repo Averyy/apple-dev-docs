@@ -32,7 +32,7 @@ Causes the record to be flushed from the daemon’s cache (as well as all other 
 - `interfaceIndex`: Specifies the interface of the record in question. The caller must specify the interface. This API (by design) causes increased network traffic, so it requires the caller to be precise about which record should be reconfirmed. It is not possible to pass zero for the interface index to perform a “wildcard” reconfirmation, where *all* matching records are reconfirmed.
 - `fullname`: The resource record’s full domain name.
 - `rrtype`: The resource record’s type (e.g. kDNSServiceType_PTR, kDNSServiceType_SRV, and so on).
-- `rrclass`: The class of the resource record (usually  ).
+- `rrclass`: The class of the resource record (usually [`kDNSServiceClass_IN`](kdnsserviceclass_in.md)).
 - `rdlen`: The length, in bytes, of the resource record rdata.
 - `rdata`: The raw rdata of the resource record.
 

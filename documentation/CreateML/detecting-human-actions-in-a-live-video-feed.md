@@ -12,7 +12,7 @@ Identify body movements by sending a person’s pose data from a series of video
 
 #### Overview
 
-This sample app recognizes a person’s body moves, called , by analyzing a series of video frames with [`Vision`](https://developer.apple.com/documentation/Vision) and predicting the name of the movement by applying an action classifier. The action classifier in this sample recognizes three exercises:
+This sample app recognizes a person’s body moves, called *actions*, by analyzing a series of video frames with [`Vision`](https://developer.apple.com/documentation/Vision) and predicting the name of the movement by applying an action classifier. The action classifier in this sample recognizes three exercises:
 
 - Jumping jacks
 - Lunges
@@ -20,7 +20,7 @@ This sample app recognizes a person’s body moves, called , by analyzing a seri
 
 ![Flow diagram that illustrates the purpose of an action classifier starting with a human performing jumping jacks in front of the device’s camera and ending with a prediction label.](https://docs-assets.developer.apple.com/published/75929e2897662f60b99a1231b050d753/detecting-human-actions-1%402x.png)
 
-The app continually presents its current action prediction on top of a live, full-screen video feed from the device’s camera. When the app recognizes one or more people in the frame, it overlays a wireframe body pose on each person. At the same time, the app predicts the  person’s current action; typically this is the person closest to the camera.
+The app continually presents its current action prediction on top of a live, full-screen video feed from the device’s camera. When the app recognizes one or more people in the frame, it overlays a wireframe body pose on each person. At the same time, the app predicts the *prominent* person’s current action; typically this is the person closest to the camera.
 
 ![A diagram that represents the sample app’s main view.](https://docs-assets.developer.apple.com/published/7884307fabe284474a34bad3c1e1e742/detecting-human-actions-2%402x.png)
 

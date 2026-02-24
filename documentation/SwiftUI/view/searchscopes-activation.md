@@ -76,7 +76,7 @@ For more information about using searchable modifiers, see [`Adding a search int
 
 - `scope`: The active scope of the search field.
 - `activation`: The activation style of the search field’s scopes.
-- `scopes`: A view builder that represents the scoping options   SwiftUI uses to populate a  .
+- `scopes`: A view builder that represents the scoping options SwiftUI uses to populate a [`Picker`](picker.md).
 
 ## See Also
 

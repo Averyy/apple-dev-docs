@@ -22,7 +22,7 @@ init(ranges: RangeSet<String.Index>)
 
 ## Parameters
 
-- `ranges`: A range-set of   representing the selection.
+- `ranges`: A range-set of `String.Index` representing the selection.
 
 
 ---

@@ -31,7 +31,7 @@ When registering a service that runs in asynchronous mode, this function returns
 
 When registering a service that runs in synchronous mode, this function blocks until an error occurs, in which case this function returns `FALSE`. Until this function returns `FALSE`, the service is available on the network. To force this function to return `FALSE`, thereby shutting down the service, call [`CFNetServiceCancel(_:)`](cfnetservicecancel(_:).md) from another thread.
 
-The `options` parameter is a bit flag for specifying service registration options. Currently, `kCFNetServiceFlagNoAutoRename` is the only supported registration option. If this bit is set and a service of the same name is running, the registration will fail. If this bit is not set and a service of the same name is running, the service that is being registered will be renamed automatically by appending `(``)` to the service name, where  is a number that is incremented until the service can be registered with a unique name.
+The `options` parameter is a bit flag for specifying service registration options. Currently, `kCFNetServiceFlagNoAutoRename` is the only supported registration option. If this bit is set and a service of the same name is running, the registration will fail. If this bit is not set and a service of the same name is running, the service that is being registered will be renamed automatically by appending `(`*n*`)` to the service name, where *n* is a number that is incremented until the service can be registered with a unique name.
 
 ##### Special Considerations
 
@@ -39,9 +39,9 @@ This function is thread safe.
 
 ## Parameters
 
-- `theService`: Network service to register; cannot be  . The registration will fail if the service doesn’t have a domain, a type, a name, and an IP address.
-- `options`: Bit flags for specifying registration options. Currently, the only registration option is  . For details, see  .
-- `error`: Pointer to a   structure that will be set to an error code and the error code’s domain if an error occurs; or   if you don’t want to receive the error code and its domain.
+- `theService`: Network service to register; cannot be `NULL`. The registration will fail if the service doesn’t have a domain, a type, a name, and an IP address.
+- `options`: Bit flags for specifying registration options. Currently, the only registration option is `kCFNetServiceFlagNoAutoRename`. For details, see `CFNetService Registration Options`.
+- `error`: Pointer to a [`CFStreamError`](https://developer.apple.com/documentation/CoreFoundation/CFStreamError) structure that will be set to an error code and the error code’s domain if an error occurs; or `NULL` if you don’t want to receive the error code and its domain.
 
 ## See Also
 

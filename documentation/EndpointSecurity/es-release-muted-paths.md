@@ -16,7 +16,7 @@ func es_release_muted_paths(_ muted_paths: UnsafeMutablePointer<es_muted_paths_t
 
 ## Parameters
 
-- `muted_paths`: An   structure, previously populated by a call to  , to release.
+- `muted_paths`: An [`es_muted_paths_t`](es_muted_paths_t.md) structure, previously populated by a call to [`es_muted_paths_events(_:_:)`](es_muted_paths_events(_:_:).md), to release.
 
 ## See Also
 

@@ -26,8 +26,8 @@ A new mutable attributed string. Ownership follows the [`The Create Rule`](https
 
 ## Parameters
 
-- `alloc`: An allocator to be used to allocate memory for the new attributed string. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `maxLength`: Pass   to specify that the maximum length is not limited. The value must not be negative.
+- `alloc`: An allocator to be used to allocate memory for the new attributed string. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `maxLength`: The limit on the length of the new attributed string. The string starts empty and can grow to this length (it can be shorter). Pass `0` to specify that the maximum length is not limited. The value must not be negative.
 
 ## See Also
 

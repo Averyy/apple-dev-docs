@@ -26,7 +26,7 @@ The number of elements currently in the queue. Returns `0` if there is an error.
 
 ## Parameters
 
-- `queue`: The queue the function is interrogating. Must not be  .
+- `queue`: The queue the function is interrogating. Must not be `NULL`.
 
 ## See Also
 

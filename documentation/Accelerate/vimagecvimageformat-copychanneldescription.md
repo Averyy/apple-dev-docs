@@ -28,9 +28,9 @@ func vImageCVImageFormat_CopyChannelDescription(_ format: vImageCVImageFormat, _
 
 ## Parameters
 
-- `format`: The   to copy the channel description into.
-- `desc`: A pointer to a new   to use for the channel type.
-- `type`: The type of the channel that you want to set information about, for example,  .
+- `format`: The [`vImageCVImageFormat`](vimagecvimageformat.md) to copy the channel description into.
+- `desc`: A pointer to a new [`vImageChannelDescription`](vimagechanneldescription.md) to use for the channel type.
+- `type`: The type of the channel that you want to set information about, for example, [`kvImageBufferTypeCode_Luminance`](kvimagebuffertypecode_luminance.md).
 
 ## See Also
 

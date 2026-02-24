@@ -25,7 +25,7 @@ An initialized font metrics object.
 
 ## Parameters
 
-- `textStyle`: The text style that you want to apply to the font. For example, you might specify   for your app’s main content.
+- `textStyle`: The text style that you want to apply to the font. For example, you might specify [`body`](uifont/textstyle/body.md) for your app’s main content.
 
 ## See Also
 

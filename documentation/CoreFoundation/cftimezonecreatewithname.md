@@ -26,9 +26,9 @@ A time zone corresponding to `name`, or `NULL` if no match was found. Ownership 
 
 ## Parameters
 
-- `allocator`: The allocator object to use to allocate memory for the new time zone. Pass   or kCFAllocatorDefault to use the current default allocator.
-- `name`: The name or abbreviation of the time zone to obtain. The name may be in any of the formats understood by the system, for example “EST”, “Etc/GMT-2”, “America/Argentina/Buenos_Aires”, “Europe/Monaco”, “US/Pacific”, or “posixrules”. For a complete list of system names, you can see the output of   .
-- `tryAbbrev`: If  , assumes   is not an abbreviation and searches the time zone information directory for a matching name. If  , tries to resolve   using the abbreviation dictionary first before searching the information dictionary.
+- `allocator`: The allocator object to use to allocate memory for the new time zone. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
+- `name`: The name or abbreviation of the time zone to obtain. The name may be in any of the formats understood by the system, for example “EST”, “Etc/GMT-2”, “America/Argentina/Buenos_Aires”, “Europe/Monaco”, “US/Pacific”, or “posixrules”. For a complete list of system names, you can see the output of  [`CFTimeZoneCopyKnownNames()`](cftimezonecopyknownnames().md).
+- `tryAbbrev`: If `false`, assumes `name` is not an abbreviation and searches the time zone information directory for a matching name. If `true`, tries to resolve `name` using the abbreviation dictionary first before searching the information dictionary.
 
 ## See Also
 

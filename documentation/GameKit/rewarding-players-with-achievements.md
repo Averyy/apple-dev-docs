@@ -6,7 +6,7 @@ Use achievements to motivate players and engage them more in your game.
 
 #### Overview
 
-An  is a collectible item that a player receives as a reward for successfully reaching a particular goal in your game. Achievements provide players an additional way of engaging with your game, tracking gameplay progress, and sharing that progress with friends. You define the achievements available to players in your game, and Game Center saves the progress players make toward earning them. Players can view your game achievements and track their progress in the dashboard.
+An *achievement* is a collectible item that a player receives as a reward for successfully reaching a particular goal in your game. Achievements provide players an additional way of engaging with your game, tracking gameplay progress, and sharing that progress with friends. You define the achievements available to players in your game, and Game Center saves the progress players make toward earning them. Players can view your game achievements and track their progress in the dashboard.
 
 ![An image of an iPhone screen in landscape layout, showing the Achievements section of the dashboard with three achievements — one completed, one in-progress, and one locked.](https://docs-assets.developer.apple.com/published/ae95236da22d2a840c22fac2b1e99bee/media-3729930%402x.png)
 

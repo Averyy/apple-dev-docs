@@ -26,7 +26,7 @@ The value to use whenever the information pointer is retained, which is usually 
 
 ## Parameters
 
-- `info`: The program-supplied information pointer provided in a   structure.
+- `info`: The program-supplied information pointer provided in a [`CFTreeContext`](cftreecontext.md) structure.
 
 ## See Also
 

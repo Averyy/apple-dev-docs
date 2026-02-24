@@ -27,8 +27,8 @@ This method looks for a recycled item object of the specified type and returns i
 
 ## Parameters
 
-- `identifier`: The reuse identifier for the specified item. This is the identifier you specified when registering the item. This parameter must not be  .
-- `indexPath`: The index path specifying the location of the item. The data source object receives this information in its   method and you should just pass it along.
+- `identifier`: The reuse identifier for the specified item. This is the identifier you specified when registering the item. This parameter must not be `nil`.
+- `indexPath`: The index path specifying the location of the item. The data source object receives this information in its [`collectionView(_:itemForRepresentedObjectAt:)`](nscollectionviewdatasource/collectionview(_:itemforrepresentedobjectat:).md) method and you should just pass it along.
 
 ## See Also
 

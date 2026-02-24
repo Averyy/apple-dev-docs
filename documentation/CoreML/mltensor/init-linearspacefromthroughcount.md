@@ -22,9 +22,9 @@ init(linearSpaceFrom start: Float, through end: Float, count: Int)
 
 ## Parameters
 
-- `start`: The starting value to use for the sequence. If the sequence contains any values, the first one is  .
-- `end`: An end value to limit the sequence.   is the last element of the resulting sequence.
-- `count`: The number of values in the resulting sequence.   must be positive and greater than  .
+- `start`: The starting value to use for the sequence. If the sequence contains any values, the first one is `start`.
+- `end`: An end value to limit the sequence. `end` is the last element of the resulting sequence.
+- `count`: The number of values in the resulting sequence. `count` must be positive and greater than `1`.
 
 ## See Also
 

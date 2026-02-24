@@ -24,7 +24,7 @@ A new appearance object containing appropriate default values for the specified 
 
 ## Parameters
 
-- `style`: The layout style for the appearance attributes. UIKit uses this value to configure the default appearance attributes. For a list of possible values, see  .
+- `style`: The layout style for the appearance attributes. UIKit uses this value to configure the default appearance attributes. For a list of possible values, see [`UITabBarItemAppearance.Style`](uitabbaritemappearance/style.md).
 
 ## See Also
 

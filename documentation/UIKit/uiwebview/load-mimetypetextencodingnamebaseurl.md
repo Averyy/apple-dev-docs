@@ -19,7 +19,7 @@ func load(_ data: Data, mimeType MIMEType: String, textEncodingName: String, bas
 
 - `data`: The content for the main page.
 - `MIMEType`: The MIME type of the content.
-- `textEncodingName`: The IANA encoding name as in   or  .
+- `textEncodingName`: The IANA encoding name as in `utf-8` or `utf-16`.
 - `baseURL`: The base URL for the content.
 
 ## See Also

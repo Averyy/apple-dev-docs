@@ -8,11 +8,11 @@ Manage the addition and removal of apps available on your alternative marketplac
 
 When your app completes Notarization in App Store Connect, you can host it for download on your website or distribute it on an app marketplace. Either case requires you to facilitate getting the approved app to the location that it installs from.
 
-The developer of an approved app can download it and provide it manually, either to the alternative marketplace, or to their web server back end. The approved app is in the form of an , which the distributor of the app needs to assemble before the system can install it onto a device. For more information on the assembly process, see [`Ingesting an alternative distribution package`](ingesting-an-alternative-distribution-package.md).
+The developer of an approved app can download it and provide it manually, either to the alternative marketplace, or to their web server back end. The approved app is in the form of an *alternative distribution package*, which the distributor of the app needs to assemble before the system can install it onto a device. For more information on the assembly process, see [`Ingesting an alternative distribution package`](ingesting-an-alternative-distribution-package.md).
 
 Or, the developer can enable notifications in App Store Connect to send the app to the marketplace(s) they choose. When notifications are enabled, App Store Connect sends newly available app versions automatically to the alternative marketplace(s) that the developer chooses.
 
-To receive notifications in an alternative app marketplace that you develop, implement an endpoint, or , and define the webhook URL in App Store Connect. The three conditions under which App Store Connect sends a notification are:
+To receive notifications in an alternative app marketplace that you develop, implement an endpoint, or *webook*, and define the webhook URL in App Store Connect. The three conditions under which App Store Connect sends a notification are:
 
 - A new app version is available.
 - An app version needs to be removed.
@@ -31,7 +31,7 @@ When a new app version passes notarization for an app that installs from your ma
 
 #### Set Up Your Notification Webhook
 
-A  is an endpoint that you create on your marketplace server, which receives HTTP POST requests from App Store Connect. The POST requests describe important events about your app or the apps that your marketplace distributes.
+A *notification webhook* is an endpoint that you create on your marketplace server, which receives HTTP POST requests from App Store Connect. The POST requests describe important events about your app or the apps that your marketplace distributes.
 
 To invoke your webhook, App Store Connect needs to know your server’s webhook endpoint URL. To set up your webhook endpoint the first time, provide the URL to the [`Add a marketplace webhook configuration`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-marketplaceWebhooks) endpoint:
 
@@ -83,7 +83,7 @@ When App Store Connect sends a notification to your webhook, it does so in the f
 | `AppVersionUnavailable` | A request to remove the alternative distribution package for a specific app version. |
 | `AppUnavailable` | A request to remove all alternative distribution packages for an app. |
 
-Each type has a specific data set, or , composed of `attributes` that drive the different action you take.
+Each type has a specific data set, or *schema*, composed of `attributes` that drive the different action you take.
 
 In rare circumstances, your webhook may receive a duplicate notification. Your webhook can filter out duplicate notifications by discarding them. Specifically, if you receive a notification of type `AlternativeDistributionPackageVersionAvailable` that describes a package that your webhook already ingested, discard it. Similarly, if you receive a notification of type `AppVersionsUnavailable` or `AppUnavailable` for an app or version that’s already unavailable, discard it.
 

@@ -27,6 +27,9 @@ This method applies the row average filter to an image. This effect calculates t
 
 The row average filter uses the following properties:
 
+- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that specifies the subregion of the image that you want to process.
+
 The following code creates a filter that calculates the row average for the middle section of an image:
 
 ```swift

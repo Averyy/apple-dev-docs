@@ -21,7 +21,7 @@ class MTLStitchedLibraryDescriptor
 
 #### Overview
 
-An [`MTLStitchedLibraryDescriptor`](mtlstitchedlibrarydescriptor.md) describes a library of new stitched functions. A  is a visible function you create by composing other Metal shader functions together in a function graph.
+An [`MTLStitchedLibraryDescriptor`](mtlstitchedlibrarydescriptor.md) describes a library of new stitched functions. A *stitched function* is a visible function you create by composing other Metal shader functions together in a function graph.
 
 Configure a stitched library descriptor by assigning an array of one or more [`MTLFunctionStitchingGraph`](mtlfunctionstitchinggraph.md) instances, each describing a stitched function, to the [`functionGraphs`](mtlstitchedlibrarydescriptor/functiongraphs.md) property. Then assign an [`MTLFunction`](mtlfunction.md) array that includes all the functions the graphs depend on to the [`functions`](mtlstitchedlibrarydescriptor/functions.md) property.
 

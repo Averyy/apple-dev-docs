@@ -26,7 +26,7 @@ A [`JSValueRef`](jsvalueref.md) of the Boolean type that represents the value of
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `boolean`: The Boolean value to assign to the newly created  .
+- `boolean`: The Boolean value to assign to the newly created [`JSValueRef`](jsvalueref.md).
 
 ## See Also
 

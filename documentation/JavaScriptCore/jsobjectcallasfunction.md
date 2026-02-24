@@ -26,11 +26,11 @@ The [`JSValueRef`](jsvalueref.md) that results from calling `object` as a functi
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `object`: The   to call as a function.
-- `thisObject`: The object to use as  , or   to use the global object as  .
-- `argumentCount`: An integer count of the number of arguments in  .
-- `arguments`: A   array of arguments to pass to the function. Pass   if   is  .
-- `exception`: A pointer to a   to store an exception in, if any. Pass   to discard any exception.
+- `object`: The [`JSObjectRef`](jsobjectref.md) to call as a function.
+- `thisObject`: The object to use as `this`, or `NULL` to use the global object as `this`.
+- `argumentCount`: An integer count of the number of arguments in `arguments`.
+- `arguments`: A [`JSValueRef`](jsvalueref.md) array of arguments to pass to the function. Pass `NULL` if `argumentCount` is `0`.
+- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 

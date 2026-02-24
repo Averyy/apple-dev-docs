@@ -16,7 +16,7 @@ func setDraggingDestinationDelegate(_ delegate: Any!)
 
 ## Parameters
 
-- `delegate`: The delegate ( ) to set.
+- `delegate`: The delegate ([`NSDraggingDestination`](https://developer.apple.com/documentation/AppKit/NSDraggingDestination)) to set.
 
 ## See Also
 

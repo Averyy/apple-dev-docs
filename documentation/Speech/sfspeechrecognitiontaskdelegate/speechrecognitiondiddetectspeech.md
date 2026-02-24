@@ -20,7 +20,7 @@ optional func speechRecognitionDidDetectSpeech(_ task: SFSpeechRecognitionTask)
 
 ## Parameters
 
-- `task`: The speech recognition task (an   object) that represents the request.
+- `task`: The speech recognition task (an [`SFSpeechRecognitionTask`](sfspeechrecognitiontask.md) object) that represents the request.
 
 ## See Also
 

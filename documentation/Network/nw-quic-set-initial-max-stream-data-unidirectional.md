@@ -23,7 +23,7 @@ func nw_quic_set_initial_max_stream_data_unidirectional(_ options: nw_protocol_o
 ## Parameters
 
 - `options`: A QUIC protocol options instance.
-- `initial_max_stream_data_unidirectional`: The value of the   transport parameter.
+- `initial_max_stream_data_unidirectional`: The value of the `initial_max_stream_data_uni` transport parameter.
 
 ## See Also
 

@@ -25,7 +25,7 @@ init(_ titleKey: LocalizedStringKey, systemImage: String, value: Value, role: Ta
 
 - `titleKey`: The localized string key label for the tab’s tab item.
 - `systemImage`: The system image for the tab’s tab item.
-- `value`: The   value which selects this tab.
+- `value`: The `selection` value which selects this tab.
 - `role`: The role defining the semantic purpose of the tab.
 - `content`: The view content of the tab.
 

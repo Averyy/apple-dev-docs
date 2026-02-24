@@ -35,15 +35,15 @@ with optional use of the transposed form of `A`.
 ## Parameters
 
 - `ORDER`: Specifies row-major (C) or column-major (Fortran) data ordering.
-- `TRANSA`: Specifies whether to transpose matrix  .
-- `M`: Number of rows in matrix  .
-- `N`: Number of columns in matrix  .
-- `ALPHA`: Scaling factor for the product of matrix   and vector  .
+- `TRANSA`: Specifies whether to transpose matrix `A`.
+- `M`: Number of rows in matrix `A`.
+- `N`: Number of columns in matrix `A`.
+- `ALPHA`: Scaling factor for the product of matrix `A` and vector `X`.
 - `A`: Matrix A.
-- `LDA`: The size of the first dimension of matrix  ; if you are passing a matrix  , the value should be  .
+- `LDA`: The size of the first dimension of matrix `A`; if you are passing a matrix `A[m][n]`, the value should be `m`.
 - `X`: Vector X.
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
-- `BETA`: Scaling factor for vector  .
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
+- `BETA`: Scaling factor for vector `Y`.
 - `Y`: Vector Y
 - `INCY`: Stride within Y. For example, if incY is 7, every 7th element is used.
 

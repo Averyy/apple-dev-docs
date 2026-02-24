@@ -24,7 +24,7 @@ init(@ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label, prima
 
 - `content`: A group of menu items.
 - `label`: A view describing the content of the menu.
-- `primaryAction`: The action to perform on primary   interaction with the menu.
+- `primaryAction`: The action to perform on primary interaction with the menu.
 
 ## See Also
 

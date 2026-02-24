@@ -32,7 +32,7 @@ Extract and work with subfactors.
   Represents a sub-factor of the factorization (for example,  `L` from `LDL^T`).
 ### Subfactor Solve and Operation Functions
 - [Subfactor Solve Functions](subfactor-solve-functions.md)
-  Solve systems with the equation .
+  Solve systems with the equation *Subfactor * X = B*.
 - [Subfactor Multiplication Functions](subfactor-multiplication-functions.md)
   Multiply subfactors by matrices and vectors.
 

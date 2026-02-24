@@ -20,7 +20,7 @@ When the browser view displays the QuickLook panel it sets itself as the QuickLo
 
 ## Parameters
 
-- `flag`:  , if the view can display the QuickLook panel, otherwise  .
+- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true), if the view can display the QuickLook panel, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -28,6 +28,10 @@ Before creating a complication, decide on the data you want to display. Each wat
 
 Consider the following:
 
+- **Can you display your data with the available templates?**: When building a complication, you must fit your data into one of the provided templates. You can choose which template to use for each family, but for many templates, you only have a few characters or a small image. Graphic complications provide richer information using gauges and color, but you’re still limited by the amount and type of data you can display.
+- **Do you already use notifications to convey timely information to the user?**: If you’re using notifications to deliver updates, a complication might serve as a more unobtrusive way to deliver the same data. For example, a sports app might post updated scores to a complication rather than sending notifications when the scores change.
+- **How much data can you provide in advance?**: If possible, provide a timeline that contains all the complication updates for the near future. The complication can then use data from the timeline without requiring additional background update tasks. You can always add to or replace this timeline. However, if you update your timeline too frequently, you may exhaust your complication’s budget for background tasks and data transfers.
+
 The system gives larger background budgets to watchOS apps with complications on the active watch face. However, it still limits the background tasks to about four tasks per hour. Alternatively, you can generate the complication data on your server, and send it to the watch using push notifications. This strategy lets you move complex and time consuming tasks off the watch; however, the system limits you to 50 complication push notifications per day. Be sure that your complications can provide useful and timely information within these constraints.
 
 ##### Set Up and Design Your Complications

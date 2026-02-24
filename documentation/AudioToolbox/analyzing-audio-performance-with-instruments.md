@@ -16,6 +16,17 @@ From Xcode’s Product menu, choose Profile, or press Command-I. After Instrumen
 
 The Audio System Trace template includes the following instrument tracks:
 
+- **Points of Interest**: Indicates locations in the trace to which you may want to pay special attention.
+- **System Load**: Tracks the performance and current load of the system.
+- **Thread State Trace**: Tracks each time the operating system scheduler makes a decision that may impact your app’s threads.
+- **Virtual Memory Trace**: Tracks virtual memory activity per thread.
+- **System Call Trace**: Records system calls and their duration.
+- **Thermal State**: Records the device’s thermal state.
+- **Audio Client**: Tracks information about the timing of I/O process callbacks in your app.
+- **Audio Statistics**: Records engine jitter, which quantifies how late an I/O cycle was relative to its anticipated deadline and the number of concurrent audio threads.
+- **Audio Server**: Tracks engine timestamp and I/O cycle load and related points of interest.
+- **Hangs**: Labels intervals by severity, measuring the duration of main thread blockage.
+
 ##### Explore the Audio System Trace Instruments
 
 Audio System Trace instruments include tracks to help you isolate where glitches are occurring and identify the cause of audio performance issues. You can view the audio system performance captured in an audio system trace in two ways:
@@ -55,6 +66,13 @@ The table below describes the colors and associated jitter times in the Audio St
 
 The Audio Statistics track’s detail pane includes the following menu items:
 
+- **Engine ID**: An identifier for an I/O entity within Audio Server.
+- **Min/Max Sample Time**: The shortest and longest sample times recorded for an engine.
+- **Min/Max Host Time**: The earliest and latest host timestamps for an engine.
+- **Min/Max Jitter**: The range of jitter values recorded for an engine.
+- **Std Dev Jitter**: The standard deviation from the mean jitter value during a recording.
+- **Count**: The number of events recorded in the run of the instrument tool.
+
 ##### Identify Glitches with the Audio Server Track
 
 The Audio Server track provides Engine Time Stamp and I/O Cycle Load graphs, and related points of interest. Engine timestamp refers to the time when the audio engine processes audio, and it can help determine where a delay or other problem occurred in the audio processing chain. I/O cycle load refers to the time the system spends processing an audio buffer relative to the available time to process that buffer.
@@ -78,6 +96,12 @@ A ring buffer is a fixed-size data structure where the last element connects to 
 ![A screenshot of the tracks in the template. It shows a callout to the zero timestamp selection at the bottom of the screen, and the detail pane updates with the Zero Time Stamp events. ](https://docs-assets.developer.apple.com/published/74742b558a3fc4404d49d47e52827547/media-4311862%402x.png)
 
 The following menu items describe the zero timestamp information in the Audio Server track’s detail pane shown above:
+
+- **Sample Time**: A running count of the total number of samples the driver has processed in the buffer.
+- **Frame Count**: The number of frames processed.
+- **Host Time**: The point when the buffer wraps.
+- **Actual Host Ticks per Frame**: The number of host ticks per audio frame.
+- **Jitter**: The deviation (in microseconds) from the expected timestamp.
 
 ##### Inspect the Audio Client Track
 

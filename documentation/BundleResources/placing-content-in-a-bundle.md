@@ -6,7 +6,7 @@ Place bundle content in the correct location based on its type.
 
 #### Overview
 
-A  is a directory with a standardized hierarchical structure that typically contains executable code and the resources used by that code. Bundles fulfill many different roles: apps, app extensions, frameworks, and plug-ins are all bundles. Bundles can also contain other bundles; for example, an app may contain an app extension.
+A *bundle* is a directory with a standardized hierarchical structure that typically contains executable code and the resources used by that code. Bundles fulfill many different roles: apps, app extensions, frameworks, and plug-ins are all bundles. Bundles can also contain other bundles; for example, an app may contain an app extension.
 
 A bundle has a set of standard locations to hold content. The correct location to place content within a bundle depends on the content type. For example, you must place an app extension in the location reserved for plug-ins and a storyboard in the location reserved for resources. Not all locations are appropriate on all platforms and, similarly, not all platforms support all content types.
 

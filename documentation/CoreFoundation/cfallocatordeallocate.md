@@ -30,8 +30,8 @@ You must use the same allocator to deallocate memory as was used to allocate it.
 
 ## Parameters
 
-- `allocator`: The allocator that was used to allocate the block of memory pointed to by  .
-- `ptr`: An untyped pointer to a block of memory to deallocate using  .
+- `allocator`: The allocator that was used to allocate the block of memory pointed to by `ptr`.
+- `ptr`: An untyped pointer to a block of memory to deallocate using `allocator`.
 
 ## See Also
 

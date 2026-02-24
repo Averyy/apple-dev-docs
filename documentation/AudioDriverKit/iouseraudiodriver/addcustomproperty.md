@@ -20,7 +20,7 @@ kern_return_t AddCustomProperty(IOUserAudioCustomProperty *in_custom_property);
 
 ## Parameters
 
-- `in_custom_property`: An   object to add to the  .
+- `in_custom_property`: An [`IOUserAudioCustomProperty`](iouseraudiocustomproperty.md) object to add to the [`IOUserAudioDriver`](iouseraudiodriver.md).
 
 ## See Also
 

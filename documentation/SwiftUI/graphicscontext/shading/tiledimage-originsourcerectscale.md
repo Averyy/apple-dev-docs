@@ -26,9 +26,9 @@ A shading instance filled with a tiled image.
 
 ## Parameters
 
-- `image`: An   to use as fill.
-- `origin`: The point in the current user space where SwiftUI   places the bottom left corner of the part of the image   defined by  . The image repeats as needed.
-- `sourceRect`: A unit space subregion of the image. The default   is a unit rectangle, which selects the whole image.
+- `image`: An [`Image`](image.md) to use as fill.
+- `origin`: The point in the current user space where SwiftUI places the bottom left corner of the part of the image defined by `sourceRect`. The image repeats as needed.
+- `sourceRect`: A unit space subregion of the image. The default is a unit rectangle, which selects the whole image.
 - `scale`: A factor that you can use to control the image size.
 
 

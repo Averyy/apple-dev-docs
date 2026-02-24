@@ -24,7 +24,7 @@ The blur effect to be used by a UIVisualEffectView object.
 
 ## Parameters
 
-- `style`: The intensity of the blur effect. See   for valid options.
+- `style`: The intensity of the blur effect. See [`UIBlurEffect.Style`](uiblureffect/style.md) for valid options.
 
 
 ---

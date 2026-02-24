@@ -30,7 +30,7 @@ func setChannelDescriptor(_ channelDescriptor: PTChannelDescriptor, channelUUID:
 
 - `channelDescriptor`: The channel description.
 - `channelUUID`: The channel identifier.
-- `completionHandler`: The completion handler.
+- `completionHandler`: The completion handler. - **`error`**: An error, if any, that indicates the reason why the system couldn’t set the channel descriptor.
 
 
 ---

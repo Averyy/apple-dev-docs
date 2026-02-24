@@ -33,11 +33,80 @@ An alternate way to compose SMS messages is to create and open a URL that uses t
 
 Before presenting the message compose view controller, always call the [`canSendText()`](mfmessagecomposeviewcontroller/cansendtext().md) method to see if the person configured the current device to send messages. If the user’s device isn’t set up to send or receive messages, you can notify the user or disable the messaging features in your application. You shouldn’t attempt to use this interface if the [`canSendText()`](mfmessagecomposeviewcontroller/cansendtext().md) method returns [`false`](https://developer.apple.com/documentation/Swift/false). If messaging is available, you can also use the [`canSendAttachments()`](mfmessagecomposeviewcontroller/cansendattachments().md) and [`canSendSubject()`](mfmessagecomposeviewcontroller/cansendsubject().md) methods to determine if those specific messaging features are available.
 
+**Swift**:
+
+```swift
+if !MFMessageComposeViewController.canSendText() {
+    print("SMS services are not available")
+}
+
+```
+
+**Obj-C**:
+
+```objc
+if (![MFMessageComposeViewController canSendText]) {
+   NSLog(@"Message services are not available.");
+}
+```
+
 ##### Configuring and Displaying the Composition Interface
 
 After verifying that message services are available, you can create and configure the message composition view controller and then present it like any other view controller. Use the methods of this class to specify the message’s recipients and the contents of the message. If attachments or a subject line are supported, you can set values for them as well. The sample code below shows how to configure the composition interface and present it modally. Always assign a delegate to the [`messageComposeDelegate`](mfmessagecomposeviewcontroller/messagecomposedelegate.md) property, because the delegate is responsible for dismissing the composition interface later. The delegate object must conform to the [`MFMessageComposeViewControllerDelegate`](mfmessagecomposeviewcontrollerdelegate.md) protocol.
 
+**Swift**:
+
+```swift
+let composeVC = MFMessageComposeViewController()
+composeVC.messageComposeDelegate = self
+ 
+// Configure the fields of the interface.
+composeVC.recipients = ["4085551212"]
+composeVC.body = "Hello from California!"
+ 
+// Present the view controller modally.
+self.present(composeVC, animated: true, completion: nil)
+
+```
+
+**Obj-C**:
+
+```objc
+MFMessageComposeViewController* composeVC = [[MFMessageComposeViewController alloc] init];
+composeVC.messageComposeDelegate = self;
+ 
+// Configure the fields of the interface.
+composeVC.recipients = @[@"14085551212"];
+composeVC.body = @"Hello from California!";
+ 
+// Present the view controller modally.
+[self present:composeVC animated:YES completion:nil];
+
+```
+
 The message compose view controller isn’t dismissed automatically. When the user taps the buttons to send the message or cancel the interface, the message compose view controller calls the [`messageComposeViewController(_:didFinishWith:)`](mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller(_:didfinishwith:).md) method of its delegate. Your implementation of that method must dismiss the view controller explicitly, as shown in the sample code below. You can also use this method to check the result of the operation.
+
+**Swift**:
+
+```swift
+func messageComposeViewController(controller: MFMessageComposeViewController,
+                                  didFinishWithResult result: MessageComposeResult) {
+    // Check the result or perform other tasks.
+    
+    // Dismiss the message compose view controller.
+    controller.dismissViewControllerAnimated(true, completion: nil)}
+
+```
+
+**Obj-C**:
+
+```objc
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller
+                 didFinishWithResult:(MessageComposeResult)result {
+   // Check the result or perform other tasks.    // Dismiss the message compose view controller.
+   [self dismissViewControllerAnimated:YES completion:nil];}
+
+```
 
 For more information on how to present and dismiss view controllers, see [`View Controller Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/index.html#//apple_ref/doc/uid/TP40007457).
 

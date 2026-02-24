@@ -26,7 +26,7 @@ A dictionary that contains, at a minimum, values for the [`NSStoreTypeKey`](nsst
 
 ## Parameters
 
-- `storeType`: The type of the store. If  , Core Data automatically attempts to determine the store class to use.
+- `storeType`: The type of the store. If `nil`, Core Data automatically attempts to determine the store class to use.
 - `url`: The file URL of the store.
 - `options`: A dictionary that contains options for the store.
 

@@ -21,7 +21,7 @@ An [`NSBitmapImageRep`](nsbitmapimagerep.md), or `nil`, if the conversion fails.
 ## Parameters
 
 - `targetSpace`: The new color space.
-- `renderingIntent`: The rendering intent specifies how to handle colors that are not located within the target color space. The supported values are  .
+- `renderingIntent`: The rendering intent specifies how to handle colors that are not located within the target color space. The supported values are [`NSColorRenderingIntent`](nscolorrenderingintent.md).
 
 ## See Also
 

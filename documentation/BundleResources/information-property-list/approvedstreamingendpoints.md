@@ -9,6 +9,14 @@ A dictionary of streaming endpoints in visionOS to which [`connect(endpoint:)`](
 - visionOS 26.4+ (Beta)
 
 
+
+**Type**: object
+
+## Properties
+
+- `Any Key` (string)
+
+
 ---
 
 *[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/information-property-list/approvedstreamingendpoints)*

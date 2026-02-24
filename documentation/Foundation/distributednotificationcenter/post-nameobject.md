@@ -21,8 +21,8 @@ This method invokes [`postNotificationName(_:object:userInfo:deliverImmediately:
 
 ## Parameters
 
-- `aName`: Name of the notification to post. Must not be  .
-- `anObject`: Sender of the notification. May be  .
+- `aName`: Name of the notification to post. Must not be `nil`.
+- `anObject`: Sender of the notification. May be `nil`.
 
 ## See Also
 

@@ -55,7 +55,7 @@ struct ContentView: View {
 
 ## Parameters
 
-- `duration`: The length of time, expressed in seconds, that   the animation takes to complete.
+- `duration`: The length of time, expressed in seconds, that the animation takes to complete.
 
 ## See Also
 

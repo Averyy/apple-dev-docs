@@ -18,7 +18,7 @@ func getLineFragmentRect(_ lineFragmentRect: NSRectPointer, usedRect lineFragmen
 
 - `lineFragmentRect`: On return, the calculated line fragment rectangle.
 - `lineFragmentUsedRect`: On return, the used rectangle (the portion of the line fragment rectangle that actually contains marks).
-- `paragraphSeparatorGlyphRange`: The range of glyphs under consideration. A   with length 0 indicates an extra line fragment (which occurs if the last character in the paragraph is a line separator).
+- `paragraphSeparatorGlyphRange`: The range of glyphs under consideration. A `paragraphSeparatorGlyphRange` with length 0 indicates an extra line fragment (which occurs if the last character in the paragraph is a line separator).
 - `lineOrigin`: The origin point of the line fragment rectangle.
 
 ## See Also

@@ -33,7 +33,7 @@ This function is thread safe as long as another thread does not alter the same C
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass   or kCFAllocatorDefault to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `url`: CFURLRef that refers to the failed connection.
 
 ## See Also

@@ -6,7 +6,7 @@ Reduce the storage footprint of your shaders, and potentially reduce their compi
 
 #### Overview
 
-By default, the Metal compiler optimizes your shader code for runtime speed. For example, the compiler may use  or , techniques that make copies of executable code to avoid branch penalties at runtime. Depending on the specifics of your shader code, these runtime-optimization efforts can significantly increase your shader library’s binary size and your shaders’ compile time.
+By default, the Metal compiler optimizes your shader code for runtime speed. For example, the compiler may use *inlining* or *loop unrolling*, techniques that make copies of executable code to avoid branch penalties at runtime. Depending on the specifics of your shader code, these runtime-optimization efforts can significantly increase your shader library’s binary size and your shaders’ compile time.
 
 You can change the compiler’s optimization setting so that it prioritizes minimizing a binary’s size. The compiler avoids the techniques that duplicate code, minimizing your shader library’s size and typically shortening compile time as well.
 

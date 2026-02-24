@@ -8,7 +8,7 @@ Allow Xcode Cloud to access your GitHub repository.
 
 When you first configure your project or workspace to use Xcode Cloud, you need to allow Xcode Cloud to access your Git repository. It uses this access to automatically build and test your code when you make changes to the codebase.
 
-If you host your code as part of a GitHub organization, the person who first configures a project to use Xcode Cloud must be an . If you don’t use a GitHub organization, the person who first configures a project to use Xcode Cloud must have the  permission. If you don’t have the required role or permission, see [`Connect Xcode Cloud to an admin-managed Git repository`](configuring-xcode-cloud-for-your-team#Connect-Xcode-Cloud-to-an-admin-managed-Git-repository.md).
+If you host your code as part of a GitHub organization, the person who first configures a project to use Xcode Cloud must be an *organization owner*. If you don’t use a GitHub organization, the person who first configures a project to use Xcode Cloud must have the *admin* permission. If you don’t have the required role or permission, see [`Connect Xcode Cloud to an admin-managed Git repository`](configuring-xcode-cloud-for-your-team#Connect-Xcode-Cloud-to-an-admin-managed-Git-repository.md).
 
 To allow Xcode Cloud to access your repository on [`GitHub`](https://developer.apple.comhttps://github.com):
 

@@ -25,7 +25,7 @@ Use of this method is discouraged in iOS 4.0 and later. Instead, you should use 
 
 ## Parameters
 
-- `fromCurrentState`: Specify   if animations should begin from their currently visible state; otherwise,  .
+- `fromCurrentState`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if animations should begin from their currently visible state; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
 
 ## See Also
 

@@ -24,8 +24,8 @@ For animated transitions, the duration of the animation is specified by the valu
 
 ## Parameters
 
-- `hidden`: Specify   to hide the navigation bar or   to show it.
-- `animated`: Specify   if you want to animate the change in visibility or   if you want the navigation bar to appear immediately.
+- `hidden`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to hide the navigation bar or [`false`](https://developer.apple.com/documentation/Swift/false) to show it.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if you want to animate the change in visibility or [`false`](https://developer.apple.com/documentation/Swift/false) if you want the navigation bar to appear immediately.
 
 ## See Also
 

@@ -33,8 +33,8 @@ This initializer calls through to [`init(request:cachedResponse:client:)`](urlpr
 ## Parameters
 
 - `task`: A task containing a URL request to be performed by the protocol.
-- `cachedResponse`: A cached response for the task; may be   if there is no existing cached response for the task.
-- `client`: An object that provides an implementation of the   protocol that this instance uses to communicate with the URL loading system. This client object is retained.
+- `cachedResponse`: A cached response for the task; may be `nil` if there is no existing cached response for the task.
+- `client`: An object that provides an implementation of the [`URLProtocolClient`](urlprotocolclient.md) protocol that this instance uses to communicate with the URL loading system. This client object is retained.
 
 ## See Also
 

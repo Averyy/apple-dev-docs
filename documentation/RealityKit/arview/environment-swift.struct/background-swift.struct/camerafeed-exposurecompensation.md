@@ -18,7 +18,7 @@ static func cameraFeed(exposureCompensation: Float = 0.0) -> ARView.Environment.
 
 ## Parameters
 
-- `exposureCompensation`: The exposure compensation used on the   camera feed to lighten or darken it.
+- `exposureCompensation`: The exposure compensation used on the camera feed to lighten or darken it.
 
 ## See Also
 

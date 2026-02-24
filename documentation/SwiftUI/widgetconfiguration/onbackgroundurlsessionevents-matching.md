@@ -34,7 +34,7 @@ When a widget initiates a background network request, the system delivers events
 
 ## Parameters
 
-- `urlSessionEvent`: A closure that takes a string parameter called    and a closure called  .
+- `urlSessionEvent`: A closure that takes a string parameter called `identifier` and a closure called `completion`.
 
 ## See Also
 

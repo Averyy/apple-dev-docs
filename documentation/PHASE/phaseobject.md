@@ -29,6 +29,10 @@ This class models a member of your app’s scene by defining a 3D position and o
 
 The following subclasses derive from this class:
 
+- **[`PHASESource`](phasesource.md)**: An object that plays audio from a 3D location and orientation in a scene.
+- **[`PHASEListener`](phaselistener.md)**: A central point of reference that defines the area within the scene that’s most audible to the user.
+- **[`PHASEOccluder`](phaseoccluder.md)**: An object with a shape and position that blocks audio from reaching the listener.
+
 The [`children`](phaseobject/children.md) array holds instances of this class to position and orient them relatively.
 
 ## Topics

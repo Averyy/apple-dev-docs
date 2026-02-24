@@ -27,7 +27,7 @@ The split view controller calls this method when the system is preparing to show
 ## Parameters
 
 - `svc`: The split view controller whose column is being shown.
-- `column`: The column to be shown. See   for possible values.
+- `column`: The column to be shown. See [`UISplitViewController.Column`](uisplitviewcontroller/column.md) for possible values.
 
 ## See Also
 

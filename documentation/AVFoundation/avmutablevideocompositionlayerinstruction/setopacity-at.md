@@ -25,7 +25,7 @@ Sets a fixed opacity to apply from the specified time until the next time at whi
 
 ## Parameters
 
-- `opacity`: The opacity to be applied at  . The value must be between   and  .
+- `opacity`: The opacity to be applied at `time`. The value must be between `0.0` and `1.0`.
 - `time`: A time value within the time range of the composition instruction.
 
 ## See Also

@@ -20,7 +20,7 @@ This method removes a view from a stack view whether the view is attached or det
 
 ## Parameters
 
-- `view`: The view you want to remove from the stack view.
+- `view`: The view you want to remove from the stack view. > ❗ **Important**:  If you attempt to remove a view that is not in the stack view, the system raises an exception.
 
 ## See Also
 

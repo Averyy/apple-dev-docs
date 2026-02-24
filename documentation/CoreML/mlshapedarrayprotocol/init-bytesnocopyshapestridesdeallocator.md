@@ -26,7 +26,7 @@ init(bytesNoCopy bytes: UnsafeRawPointer, shape: [Int], strides: [Int], dealloca
 - `bytes`: An unsafe raw pointer to the data.
 - `shape`: An integer array. Each element represents the size of the shaped array’s corresponding dimension.
 - `strides`: An integer array. Each element represents the number of memory locations that span the shaped array’s corresponding dimension.
-- `deallocator`: A  .
+- `deallocator`: A [`Data.Deallocator`](https://developer.apple.com/documentation/Foundation/Data/Deallocator).
 
 ## See Also
 

@@ -22,7 +22,7 @@ func render(atTime time: TimeInterval, arguments: [AnyHashable : Any]!) -> Bool
 
 You need to call this method each time you want to render a frame of the composition.
 
-All OpenGL states are preserved   the following:
+All OpenGL states are preserved  *except* the following:
 
 - States defined by `GL_CURRENT_BIT`
 - Textures on each unit and the environment mode
@@ -35,7 +35,7 @@ If you are interleaving OpenGL code with rendering of a composition, make sure t
 ## Parameters
 
 - `time`: The time, in seconds, at which  to render a composition frame. The time must be a positive value or zero.
-- `arguments`: An optional dictionary that can have any of the entries defined in  .
+- `arguments`: An optional dictionary that can have any of the entries defined in [`Rendering Arguments`](rendering-arguments.md).
 
 
 ---

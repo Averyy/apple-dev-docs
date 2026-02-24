@@ -33,9 +33,9 @@ Thread-safety: This function should be called in the same thread as the preview 
 ## Parameters
 
 - `preview`: The preview request object.
-- `size`: The size of the preview; if   is   the size is in pixels, otherwise it’s in points.
-- `isBitmap`:   if the preview uses a bitmap-based graphics context,   otherwise. This value of this parameter affects the interpretation of the   parameter.
-- `properties`: A dictionary containing properties for the preview response.   lists the current property keys and describes their values.
+- `size`: The size of the preview; if `isBitmap` is `true` the size is in pixels, otherwise it’s in points.
+- `isBitmap`: `true` if the preview uses a bitmap-based graphics context, `false` otherwise. This value of this parameter affects the interpretation of the `size` parameter.
+- `properties`: A dictionary containing properties for the preview response. `Preview Properties` lists the current property keys and describes their values.
 
 ## See Also
 

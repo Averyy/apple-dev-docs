@@ -22,8 +22,8 @@ func makeLibrary(stitchedDescriptor descriptor: MTLStitchedLibraryDescriptor) as
 
 ## Parameters
 
-- `descriptor`: An   instance.
-- `completionHandler`: A Swift closure or Objective-C block  the method calls   when the library finishes loading.
+- `descriptor`: An [`MTLStitchedLibraryDescriptor`](mtlstitchedlibrarydescriptor.md) instance.
+- `completionHandler`: A Swift closure or Objective-C block  the method calls when the library finishes loading.
 
 ## See Also
 

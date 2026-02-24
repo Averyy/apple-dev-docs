@@ -28,8 +28,8 @@ If the provided target is `nil`, the search begins with the first responder of t
 
 ## Parameters
 
-- `action`: The desired action message. May be  , in which case this method will return  .
-- `target`: The target object to check. Specify   if you want to search the responder chain starting with the current first responder.
+- `action`: The desired action message. May be `nil`, in which case this method will return `nil`.
+- `target`: The target object to check. Specify `nil` if you want to search the responder chain starting with the current first responder.
 - `sender`: The potential sender for the action message.
 
 ## See Also

@@ -36,7 +36,7 @@ If you call this function to retrieve a value that is a Core Foundation object, 
 ## Parameters
 
 - `inAQ`: The audio queue that you want to get a property value from.
-- `inID`: The ID of the property whose value you want to get. See  .
+- `inID`: The ID of the property whose value you want to get. See [`AudioQueuePropertyID`](audioqueuepropertyid.md).
 - `outData`: On output, the desired property value.
 - `ioDataSize`: On input, the maximum bytes of space the caller expects to receive. On output, the actual data size of the property value.
 

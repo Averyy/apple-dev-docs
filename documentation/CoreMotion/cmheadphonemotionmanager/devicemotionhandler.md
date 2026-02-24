@@ -22,6 +22,9 @@ typealias DeviceMotionHandler = (CMDeviceMotion?, (any Error)?) -> Void
 
 The system calls `CMDeviceMotionHandler` blocks when there is device-motion data to process. You pass the block into [`startDeviceMotionUpdates(to:withHandler:)`](cmheadphonemotionmanager/startdevicemotionupdates(to:withhandler:).md) as the second argument. Blocks of this type return no value, but take two arguments:
 
+- **`motion`**: A [`CMHeadphoneMotionManager`](cmheadphonemotionmanager.md) object, which encapsulates other objects and a structure representing attitude, rotation rate, gravity, and user acceleration.
+- **`error`**: An error object representing an error when providing gyroscope data. If an error occurs, you should stop gyroscope updates and inform the user of the problem. If there is no error, this argument is `nil`. Core Motion errors are of the [`CMErrorDomain`](cmerrordomain.md) domain and the [`CMError`](cmerror.md) type.
+
 ## See Also
 
 - [func headphoneMotionManagerDidConnect(CMHeadphoneMotionManager)](cmheadphonemotionmanagerdelegate/headphonemotionmanagerdidconnect(_:).md)

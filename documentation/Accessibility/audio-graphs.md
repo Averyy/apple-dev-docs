@@ -10,7 +10,7 @@ Charts and graphs help users quickly identify important features and trends in d
 
 ![An illustration of an audio graph that shows data points modulating in pitch along the y-axis as a slider moves in time along the x-axis.](https://docs-assets.developer.apple.com/published/ff287c418eb62bd9916511190687db82/audio_graphs-1%402x.png)
 
-An  turns the data in your chart into an audible representation by encoding the data on each axis as audio. Typically, the audio graph represents the x-axis as time, and the y-axis as pitch. For example, an audible representation of a scatter plot that shows a linear downward trend might be a series of individual tones descending in pitch over time. An audible representation of a stock chart might be a single continuous tone with a pitch that modulates up or down with the stock price (y-axis) as the audio plays over time (x-axis).
+An *audio graph* turns the data in your chart into an audible representation by encoding the data on each axis as audio. Typically, the audio graph represents the x-axis as time, and the y-axis as pitch. For example, an audible representation of a scatter plot that shows a linear downward trend might be a series of individual tones descending in pitch over time. An audible representation of a stock chart might be a single continuous tone with a pitch that modulates up or down with the stock price (y-axis) as the audio plays over time (x-axis).
 
 > **Note**: Session 10122: [`Bring accessibility to charts in your app`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10122)
 

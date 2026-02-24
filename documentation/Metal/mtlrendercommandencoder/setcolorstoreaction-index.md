@@ -28,7 +28,7 @@ This method changes the render command encoder’s store action for a color atta
 
 ## Parameters
 
-- `storeAction`: A store action for the color attachment that can’t be  .
+- `storeAction`: A store action for the color attachment that can’t be [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md).
 - `colorAttachmentIndex`: The index of a color attachment.
 
 ## See Also

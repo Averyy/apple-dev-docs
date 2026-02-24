@@ -8,6 +8,20 @@ Encode and decode Distinguished Encoding Rules (DER) and Basic Encoding Rules (B
 
 You use an ASN.1 coder to encode and decode both DER and BER data streams based on templates that you supply, which in turn are based upon ASN.1 specifications. You must import this API explicitly:
 
+**Swift**:
+
+```swift
+import Security.SecAsn1Coder
+import Security.SecAsn1Templates
+```
+
+**Objective-C**:
+
+```objc
+#import <Security/SecAsn1Coder.h>
+#import <Security/SecAsn1Templates.h>
+```
+
 ## Topics
 
 ### Encoding

@@ -26,6 +26,20 @@ xcrun safari-web-extension-packager /path/to/extension
 
 If the packager needs more information, it asks you interactively, or you can provide the following command-line options:
 
+- **`--project-location`**: Save the generated app and Xcode project to the file path.
+- **`--rebuild-project`**: Rebuild the existing Safari web extension Xcode project at the file path with different options or platforms. Use this option to add iOS to your existing macOS project.
+- **`--app-name`**: Use the value to name the generated app and the Xcode project.
+- **`--bundle-identifier`**: Use the value as the bundle identifier for the generated app. This identifier is unique to your app in your developer account. A reverse-DNS-style identifier is recommended (for example, `com.company.extensionName`).
+- **`--swift`**: Use Swift in the generated app.
+- **`--objc`**: Use Objective-C in the generated app.
+- **`--ios-only`**: Create an iOS-only project.
+- **`--macos-only`**: Create a macOS-only project.
+- **`--copy-resources`**: Copy the extension files into the generated project. If you don’t specify this parameter, the project references the original extension files.
+- **`--no-open`**: Don’t open the generated Xcode project when complete.
+- **`--no-prompt`**: Don’t show the confirmation prompt.
+- **`--force`**: Overwrite the output directory, if one exists.
+- **`--help`**: Print the help text.
+
 > ❗ **Important**:  By default, the packager creates a reference in the Xcode project to the resources in the path you provide. As a result, changes you make to the original extension update your packaged Safari web extension and vice versa. If you prefer to keep your original and packaged extensions separate, use the `--copy-resources` option to make a copy of the original files.
 
 New Xcode projects require you to select either the Swift or Objective-C language for native development. For your Safari web extension, you may not need to make any native customizations at all because your extension uses the JavaScript, HTML, and CSS you provide. If you are unsure of which language to use, select Swift.

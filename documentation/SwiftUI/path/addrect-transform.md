@@ -27,7 +27,7 @@ This is a convenience function that adds a rectangle to a path, starting by movi
 ## Parameters
 
 - `rect`: A rectangle, specified in user space coordinates.
-- `transform`: An affine transform to apply to the rectangle   before adding to the path. Defaults to the identity   transform if not specified.
+- `transform`: An affine transform to apply to the rectangle before adding to the path. Defaults to the identity transform if not specified.
 
 ## See Also
 

@@ -22,7 +22,7 @@ init(_ configuration: CKSyncEngine.Configuration)
 
 ## Parameters
 
-- `configuration`: The attributes of the new sync engine, such as the associated database and the object to use as the engine’s delegate. For more information, see  .
+- `configuration`: The attributes of the new sync engine, such as the associated database and the object to use as the engine’s delegate. For more information, see [`CKSyncEngine.Configuration`](cksyncengine-5sie5/configuration.md).
 
 ## See Also
 

@@ -23,8 +23,8 @@ func setBuffer(_ buffer: (any MTLBuffer)?, offset: Int, index: Int)
 ## Parameters
 
 - `buffer`: A buffer the method encodes.
-- `offset`: A byte offset for  .
-- `index`: The index of a buffer within the argument buffer.   The value corresponds to either the index ID of a declaration in   Metal Shading Language (MSL) or the   property of   an   instance.
+- `offset`: A byte offset for `buffer`.
+- `index`: The index of a buffer within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
 
 ## See Also
 

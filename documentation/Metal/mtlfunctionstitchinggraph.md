@@ -21,7 +21,7 @@ class MTLFunctionStitchingGraph
 
 #### Overview
 
-An [`MTLFunctionStitchingGraph`](mtlfunctionstitchinggraph.md) instance describes the function graph for a stitched function. A  is a visible function you create by composing other Metal shader functions together in a function graph. A function stitching graph contains nodes for the function’s arguments and any functions it calls in the implementation. Data flows from the arguments to the end of the graph until the stitched function evaluates all of the graph’s nodes.
+An [`MTLFunctionStitchingGraph`](mtlfunctionstitchinggraph.md) instance describes the function graph for a stitched function. A *stitched function* is a visible function you create by composing other Metal shader functions together in a function graph. A function stitching graph contains nodes for the function’s arguments and any functions it calls in the implementation. Data flows from the arguments to the end of the graph until the stitched function evaluates all of the graph’s nodes.
 
 The graph in the figure below constructs a new function that adds numbers from two source arrays, storing the result in a third array. The function’s parameters are pointers to the source and destination arrays, and an index for performing the array lookup. The graph uses three separate MSL functions to construct the stitched function: a function to look up a value from an array, a function that adds two numbers together, and a function that stores a value to an array.
 
@@ -64,6 +64,64 @@ The MSL code below implements the functions in the example graph above, as well 
 ```
 
 The following code creates the graph above:
+
+**Swift**:
+
+```swift
+// Load the functions from the library.
+let functions = [
+    library.makeFunction(name: "add"),
+    library.makeFunction(name: "lookup"),
+    library.makeFunction(name: "store")
+]
+
+// Create nodes for the input parameters.
+let srcA = MTLFunctionStitchingInputNode.init(argumentIndex: 0)
+let srcB = MTLFunctionStitchingInputNode.init(argumentIndex: 1)
+let dest = MTLFunctionStitchingInputNode.init(argumentIndex: 2)
+let index = MTLFunctionStitchingInputNode.init(argumentIndex: 3)
+
+// Create nodes for the functions.
+let lookup_a = MTLFunctionStitchingFunctionNode.init(name: "read", arguments: [srcA, index], controlDependencies: [])
+let lookup_b = MTLFunctionStitchingFunctionNode.init(name: "read", arguments: [srcB, index], controlDependencies: [])
+let sum = MTLFunctionStitchingFunctionNode.init(name: "add", arguments: [lookup_a, lookup_b], controlDependencies: [])
+let store = MTLFunctionStitchingFunctionNode.init(name: "store", arguments: [sum, dest, index], controlDependencies: [])
+
+// Create the stitching graph.
+let graph = MTLFunctionStitchingGraph.init(functionName: "add_arrays", nodes: [lookup_a, lookup_b, sum, store], outputNode: nil, attributes: [])
+```
+
+**Objective-C**:
+
+```objective-c
+// Load the functions from the library.
+NSArray *functions = @[
+    [library newFunctionWithName:@"add"],
+    [library newFunctionWithName:@"lookup"],
+    [library newFunctionWithName:@"store"],
+];
+
+// Create nodes for the input parameters.
+MTLFunctionStitchingInputNode *srcA = [[MTLFunctionStitchingInputNode alloc] initWithArgumentIndex:0];
+MTLFunctionStitchingInputNode *srcB = [[MTLFunctionStitchingInputNode alloc] initWithArgumentIndex:1];
+MTLFunctionStitchingInputNode *dest = [[MTLFunctionStitchingInputNode alloc] initWithArgumentIndex:2];
+MTLFunctionStitchingInputNode *index = [[MTLFunctionStitchingInputNode alloc] initWithArgumentIndex:3];
+
+// Create nodes for the functions.
+MTLFunctionStitchingFunctionNode *lookup_a =
+    [[MTLFunctionStitchingFunctionNode alloc] initWithName:@"read" arguments:@[srcA, index] controlDependencies:@[]];
+MTLFunctionStitchingFunctionNode *lookup_b =
+    [[MTLFunctionStitchingFunctionNode alloc] initWithName:@"read" arguments:@[srcB, index] controlDependencies:@[]];
+MTLFunctionStitchingFunctionNode *sum =
+    [[MTLFunctionStitchingFunctionNode alloc] initWithName:@"add" arguments:@[lookup_a, lookup_b] controlDependencies:@[]];
+MTLFunctionStitchingFunctionNode *store =
+    [[MTLFunctionStitchingFunctionNode alloc] initWithName:@"store" arguments:@[sum, dest, index] controlDependencies:@[]];
+
+// Create the stitching graph.
+MTLFunctionStitchingGraph *graph =
+    [[MTLFunctionStitchingGraph alloc] initWithFunctionName:@"add_arrays" nodes:@[lookup_a, lookup_b, sum, store]
+                                                 outputNode:nil attributes:@[]];
+```
 
 ## Topics
 

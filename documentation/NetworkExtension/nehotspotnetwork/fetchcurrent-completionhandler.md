@@ -31,7 +31,7 @@ This method also requires the app to have the [`Access Wi-Fi Information Entitle
 
 ## Parameters
 
-- `completionHandler`: A Swift closure or an ObjectiveC block that receives an   instance that contains the current SSID, BSSID, and security type.   This call doesn’t populate other fields in the object.   The block executes on the main thread and only after the call obtains the current Wi-Fi parameters from the system.   If any of the criteria discussed below aren’t fulfilled, the   parameter received by completion handler is  .
+- `completionHandler`: A Swift closure or an ObjectiveC block that receives an [`NEHotspotNetwork`](nehotspotnetwork.md) instance that contains the current SSID, BSSID, and security type. This call doesn’t populate other fields in the object. The block executes on the main thread and only after the call obtains the current Wi-Fi parameters from the system. If any of the criteria discussed below aren’t fulfilled, the `currentNetwork` parameter received by completion handler is `nil`.
 
 
 ---

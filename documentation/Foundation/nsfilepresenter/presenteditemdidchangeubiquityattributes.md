@@ -26,7 +26,7 @@ To specify the ubiquity attributes that trigger notifications, implement your fi
 
 ## Parameters
 
-- `attributes`: The set of ubiquity attributes that have changed. For information about valid ubiquity attributes, see the   property.
+- `attributes`: The set of ubiquity attributes that have changed. For information about valid ubiquity attributes, see the [`observedPresentedItemUbiquityAttributes`](nsfilepresenter/observedpresenteditemubiquityattributes.md) property.
 
 ## See Also
 

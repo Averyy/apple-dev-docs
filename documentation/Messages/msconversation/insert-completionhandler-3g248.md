@@ -44,7 +44,7 @@ If the message was initialized using the session from an existing message, a new
 ## Parameters
 
 - `message`: The message object to be inserted.
-- `completionHandler`: A block that is called as soon as the insertion is complete. This block is passed the following parameter:
+- `completionHandler`: A block that is called as soon as the insertion is complete. This block is passed the following parameter: - **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`. The system validates the message before inserting it. Errors occur if the message is invalid. Otherwise, the message is inserted into the Messages app’s input field.
 
 ## See Also
 

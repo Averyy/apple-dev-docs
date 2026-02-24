@@ -35,7 +35,7 @@ If the trust object has not yet been evaluated, the result type is [`SecTrustRes
 ## Parameters
 
 - `trust`: The trust object from which results should be obtained
-- `result`: A pointer that the function sets to point at a value that is the result type. See   for possible values.
+- `result`: A pointer that the function sets to point at a value that is the result type. See [`SecTrustResultType`](sectrustresulttype.md) for possible values.
 
 
 ---

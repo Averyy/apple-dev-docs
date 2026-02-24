@@ -30,7 +30,7 @@ As a performance optimization, this function executes blocks on the current thre
 
 ## Parameters
 
-- `block`: The block that contains the work to perform. This block has no return value and no parameters. This parameter cannot be  .
+- `block`: The block that contains the work to perform. This block has no return value and no parameters. This parameter cannot be `NULL`.
 
 ## See Also
 

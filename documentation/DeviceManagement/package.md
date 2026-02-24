@@ -59,6 +59,11 @@ This configuration installs a required package.
 - [object PackageInstallBehaviorObject](packageinstallbehaviorobject.md)
   Specifies the install behavior of the package.
 
+## Properties
+
+- `InstallBehavior` (PackageInstallBehaviorObject): A dictionary that describes how and when to install the package.
+- `ManifestURL` (string) *(required)*: The URL of the manifest document for the package that the device downloads. The manifest is returned as a [`ManifestURL`](manifesturl.md) property list. The `url` property of the manifest must point to the package (.pkg) file to install.
+
 ## See Also
 
 - [object AccountCalDAV](accountcaldav.md)

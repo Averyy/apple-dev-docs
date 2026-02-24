@@ -25,7 +25,7 @@ func isEqual(to otherConfiguration: UIImage.SymbolConfiguration?) -> Bool
 
 ## Parameters
 
-- `otherConfiguration`: The other configuration object. Specify   to compare the current configuration object to the configuration object in the   property.
+- `otherConfiguration`: The other configuration object. Specify `nil` to compare the current configuration object to the configuration object in the [`unspecified`](uiimage/symbolconfiguration-swift.class/unspecified.md) property.
 
 
 ---

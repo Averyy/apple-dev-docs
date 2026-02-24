@@ -24,9 +24,42 @@ func vvcosisinf(_: OpaquePointer, _: UnsafePointer<Float>, _: UnsafePointer<Int3
 
 ##### Parameters
 
+- **parameter 1**: The output array, *y*.
+- **parameter 2**: The input array, *x*.
+- **parameter 3**: The number of elements in the arrays.
+
 This function calculates the complex number on the unit circle corresponding to the angle given by each element of a vector.
 
 The following code shows an example of using [`vvcosisinf(_:_:_:)`](vvcosisinf(_:_:_:).md).
+
+**Swift**:
+
+```swift
+struct FloatComplex {
+    public var real: Float
+    public var imag: Float
+} 
+ 
+let pi = Float.pi
+var x: [Float] = [-pi * 0.5, 0, pi * 0.5]
+let y = [FloatComplex](repeating: FloatComplex(real: 0, imag: 0), 
+                       count: x.count)
+var n = Int32(x.count)
+ 
+vvcosisinf(OpaquePointer(y), &x, &n)
+```
+
+**Objective-C**:
+
+```objc
+#include <complex.h>
+ 
+float x[] = {-M_PI_2, 0, M_PI_2};
+complex float y[3];
+int n = 3;
+  
+vvcosisinf(y, x, &n);
+```
 
 On return, for each array element in `y`, `real` is the cosine of `x` and `imag` is the sine of x.
 

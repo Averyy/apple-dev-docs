@@ -22,8 +22,8 @@ static func rect(uniformTopCorners: Edge.Corner.Style, uniformBottomCorners: Edg
 
 ## Parameters
 
-- `uniformTopCorners`: The corner style to be applied on the top two   corners uniformly. This shape will first resolve the two corners   individually, then pick the largest resolved radius out of the two and   apply it uniformly to achieve the symmetric look.
-- `uniformBottomCorners`: The corner style to be applied on the bottom   two corners uniformly. This shape will first resolve the two corners   individually, then pick the largest resolved radius out of the two and   apply it uniformly to achieve the symmetric look.
+- `uniformTopCorners`: The corner style to be applied on the top two corners uniformly. This shape will first resolve the two corners individually, then pick the largest resolved radius out of the two and apply it uniformly to achieve the symmetric look.
+- `uniformBottomCorners`: The corner style to be applied on the bottom two corners uniformly. This shape will first resolve the two corners individually, then pick the largest resolved radius out of the two and apply it uniformly to achieve the symmetric look.
 
 
 ---

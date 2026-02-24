@@ -17,6 +17,41 @@ Disassociate assets from client user IDs and serial numbers.
 
 ##### Example Request and Response
 
+**Request**:
+
+```None
+{
+    "assets": [
+        {
+            "adamId": "408709785",
+            "pricingParam": "STDQ"
+        },
+        {
+            "adamId": "377298193",
+            "pricingParam": "STDQ"
+        }
+    ],
+    "clientUserIds": [
+        "client-1",
+        "client-2"
+    ],
+    "serialNumbers": [
+        "serial-1",
+        "serial-2"
+    ]
+}
+```
+
+**Response**:
+
+```json
+{
+    "eventId": "ed3edfc3-e617-465e-b309-a17925266e14",
+    "tokenExpirationDate": "2030-11-08T22:33:22+0000",
+    "uId": "2049025000431439"
+}
+```
+
 ## Topics
 
 ### Request and Response
@@ -26,6 +61,10 @@ Disassociate assets from client user IDs and serial numbers.
   The response that contains the event identifier.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
+
+## Endpoint
+
+`POST https://vpp.itunes.apple.com/mdm/v2/assets/disassociate`
 
 ## Request Body
 

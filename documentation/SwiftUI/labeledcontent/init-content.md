@@ -26,7 +26,7 @@ This initializer creates a [`Text`](text.md) label on your behalf, and treats th
 
 ## Parameters
 
-- `titleKey`: The key for the view’s localized title, that describes   the purpose of the view.
+- `titleKey`: The key for the view’s localized title, that describes the purpose of the view.
 - `content`: The value content being labeled.
 
 ## See Also

@@ -36,11 +36,11 @@ The vImage library uses this matrix to convert from YpCbCr to RGB using the foll
 
 ## Parameters
 
-- `Yp`: The   in the conversion matrix.
-- `Cr_R`: The   in the conversion matrix.
-- `Cr_G`: The   in the conversion matrix.
-- `Cb_G`: The   in the conversion matrix.
-- `Cb_B`: The   in the conversion matrix.
+- `Yp`: The `Yp` in the conversion matrix.
+- `Cr_R`: The `Cr_R` in the conversion matrix.
+- `Cr_G`: The `Cr_G` in the conversion matrix.
+- `Cb_G`: The `Cb_G` in the conversion matrix.
+- `Cb_B`: The `Cb_B` in the conversion matrix.
 
 ## See Also
 

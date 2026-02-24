@@ -26,13 +26,13 @@ func cblas_csrot(_ N: __LAPACK_int, _ X: OpaquePointer?, _ INCX: __LAPACK_int, _
 
 ## Parameters
 
-- `N`: The number of elements in vectors   and  .
-- `X`: Vector  . Modified on return.
-- `INCX`: Stride within  . For example, if   is 7, every 7th element is used.
-- `Y`: Vector  . Modified on return.
-- `INCY`: Stride within  . For example, if   is 7, every 7th element is used.
-- `C`: The value   in the Givens rotation matrix.
-- `S`: The value   in the Givens rotation matrix.
+- `N`: The number of elements in vectors `X` and `Y`.
+- `X`: Vector `X`. Modified on return.
+- `INCX`: Stride within `X`. For example, if `incX` is 7, every 7th element is used.
+- `Y`: Vector `Y`. Modified on return.
+- `INCY`: Stride within `Y`. For example, if `incY` is 7, every 7th element is used.
+- `C`: The value `cos(θ)` in the Givens rotation matrix.
+- `S`: The value `sin(θ)` in the Givens rotation matrix.
 
 ## See Also
 

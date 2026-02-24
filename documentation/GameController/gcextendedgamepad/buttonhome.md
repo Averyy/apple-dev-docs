@@ -30,13 +30,13 @@ If the system doesn’t process the main menu events, it passes the events to yo
 - [var buttonOptions: GCControllerButtonInput?](gcextendedgamepad/buttonoptions.md)
   The controller’s secondary menu button element.
 - [var buttonA: GCControllerButtonInput](gcextendedgamepad/buttona.md)
-  The bottom face button that uses  or another indicator as its label.
+  The bottom face button that uses *A* or another indicator as its label.
 - [var buttonB: GCControllerButtonInput](gcextendedgamepad/buttonb.md)
-  The right face button that uses  or another indicator as its label.
+  The right face button that uses *B* or another indicator as its label.
 - [var buttonX: GCControllerButtonInput](gcextendedgamepad/buttonx.md)
-  The left face button that uses  or another indicator as its label.
+  The left face button that uses *X* or another indicator as its label.
 - [var buttonY: GCControllerButtonInput](gcextendedgamepad/buttony.md)
-  The top face button that uses  or another indicator as its label.
+  The top face button that uses *Y* or another indicator as its label.
 
 
 ---

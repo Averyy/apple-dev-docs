@@ -65,7 +65,7 @@ var body: some View {
 
 ## Parameters
 
-- `selection`: A binding to a property that determines the   currently-selected option.
+- `selection`: A binding to a property that determines the currently-selected option.
 - `content`: A view that contains the set of options.
 - `label`: A view that describes the purpose of selecting an option.
 - `currentValueLabel`: A view that represents the current value of the picker.

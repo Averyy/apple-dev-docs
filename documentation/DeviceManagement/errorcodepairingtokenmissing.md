@@ -26,6 +26,13 @@ The system returns this response when an Apple Watch enrolls in MDM, but the wat
 - [object ErrorCodePairingTokenMissing.Details](errorcodepairingtokenmissing/details-data.dictionary.md)
   A dictionary that contains additional data about the token-missing error code.
 
+## Properties
+
+- `code` (string) *(required)*: Indicates that the pairing token, which the system requires to enroll the watch, is missing.
+- `description` (string): A description of the error. Only use this for logging purposes and don’t display it to the user.
+- `details` (ErrorCodePairingTokenMissing.Details) *(required)*: A dictionary that contains additional data about the error code.
+- `message` (string): A description of the error to display to the user.
+
 ## See Also
 
 - [object ErrorCodePlatformSSORequired](errorcodeplatformssorequired.md)

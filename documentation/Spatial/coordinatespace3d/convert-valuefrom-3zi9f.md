@@ -26,7 +26,7 @@ The value converted from the source space to this one.
 
 ## Parameters
 
-- `value`: The value the function converts between spaces given in reference to   the  .
+- `value`: The value the function converts between spaces given in reference to the `sourceCoordinateSpace`.
 
 
 ---

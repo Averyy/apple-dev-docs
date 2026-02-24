@@ -23,7 +23,7 @@ init(content view: Content)
 
 ## Parameters
 
-- `view`: A   to render.
+- `view`: A [`View`](view.md) to render.
 
 
 ---

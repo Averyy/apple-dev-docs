@@ -21,7 +21,7 @@ class MDLScatteringFunction
 
 #### Overview
 
-The set of material properties that define a material’s response to lighting is also called the , or BRDF, for surfaces shaded using that [`MDLMaterial`](mdlmaterial.md) object. The set of properties defined by the [`MDLScatteringFunction`](mdlscatteringfunction.md) class itself describes a Lambertian shading model with Blinn-Phong specular response; subclasses can define a set of properties for other shading models.
+The set of material properties that define a material’s response to lighting is also called the *Bidirectional Reflectance Distribution Function*, or BRDF, for surfaces shaded using that [`MDLMaterial`](mdlmaterial.md) object. The set of properties defined by the [`MDLScatteringFunction`](mdlscatteringfunction.md) class itself describes a Lambertian shading model with Blinn-Phong specular response; subclasses can define a set of properties for other shading models.
 
 Creating a new scattering function object with the inherited [`init()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/init()) method creates a set of material properties with useful default values for this shading model.
 

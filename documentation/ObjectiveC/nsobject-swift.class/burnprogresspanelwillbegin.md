@@ -20,7 +20,7 @@ If the delegate implements this method it will receive the message immediately b
 
 ## Parameters
 
-- `aNotification`: 	Always 
+- `aNotification`: 	Always `DRBurnProgressPanelDidFinishNotification`
 
 
 ---

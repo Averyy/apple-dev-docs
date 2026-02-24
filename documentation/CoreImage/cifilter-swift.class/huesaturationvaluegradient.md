@@ -29,6 +29,12 @@ This method generates a hue-saturation-value gradient image. The filter creates 
 
 The hue-saturation-value gradient uses the following properties:
 
+- **`colorSpace`**: A [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) representing the color space for the generated color wheel.
+- **`dither`**: A `boolean` value specifying whether the distort the generated output.
+- **`radius`**: A `float` representing the distance from the center of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`softness`**: A `float` representing the softness of the generated color wheel as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`value`**: A `float` representing the lightness of the hue-saturation gradient as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+
 The following code creates a filter that generates a color-space image:
 
 ```swift

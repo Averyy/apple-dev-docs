@@ -27,7 +27,7 @@ func request(_ transaction: CXTransaction) async throws
 ## Parameters
 
 - `transaction`: A transaction that contains actions to be performed.
-- `completion`: Code to be executed after the transaction is completed. The callback is executed on the queue specified when the call controller was initialized.
+- `completion`: Code to be executed after the transaction is completed. The callback is executed on the queue specified when the call controller was initialized. - **error**: If an error occurred, an error object indicating how the transaction failed, otherwise `nil`.
 
 ## See Also
 

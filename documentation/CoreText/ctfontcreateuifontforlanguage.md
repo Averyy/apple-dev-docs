@@ -31,8 +31,8 @@ The only required parameter is the `uiType` selector; the other parameters have 
 ## Parameters
 
 - `uiType`: A  constant specifying the intended user-interface use for the requested font reference. See Enumerations for possible values.
-- `size`: The point size for the font reference. If   is specified, the default size for the requested user-interface type is used.
-- `language`: Language specifier string to select a font for a particular localization. If   is specified, the current system language is used. The format of the language identifier should conform to the RFC 3066bis standard.
+- `size`: The point size for the font reference. If `0.0` is specified, the default size for the requested user-interface type is used.
+- `language`: Language specifier string to select a font for a particular localization. If `NULL` is specified, the current system language is used. The format of the language identifier should conform to the RFC 3066bis standard.
 
 ## See Also
 
